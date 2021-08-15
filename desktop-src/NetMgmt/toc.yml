@@ -1,9 +1,9 @@
 - name: Gerenciamento de Rede
   href: network-management.md
   items:
-    - name: O que há de novo no gerenciamento de rede
+    - name: Novidades no gerenciamento de rede
       href: what-s-new-in-network-management.md
-    - name: Sobre o gerenciamento de rede
+    - name: Sobre o Gerenciamento de Rede
       href: about-network-management.md
       items:
         - name: Grupos de funções de gerenciamento de rede
@@ -23,9 +23,9 @@
               href: local-group-functions.md
             - name: Funções de mensagem
               href: message-functions.md
-            - name: Funções de netfile
+            - name: Funções NetFile
               href: netfile-functions.md
-            - name: Funções do utilitário remoto
+            - name: Funções do Utilitário Remoto
               href: remote-utility-functions.md
             - name: Funções de agendamento
               href: schedule-functions.md
@@ -43,12 +43,12 @@
               href: user-functions.md
             - name: Funções modais do usuário
               href: user-modal-functions.md
-            - name: Funções de usuário da estação de trabalho e estação de trabalho
+            - name: Funções de usuário de estação de trabalho e estação de trabalho
               href: workstation-and-workstation-user-functions.md
         - name: Requisitos de segurança da função de gerenciamento de rede
           href: security-requirements-for-the-network-management-functions.md
           items:
-            - name: Requisitos para funções de gerenciamento de rede em controladores de Domínio do Active Directory
+            - name: Requisitos para funções de gerenciamento de rede Domínio do Active Directory controladores
               href: requirements-for-network-management-functions-on-active-directory-domain-controllers.md
             - name: Requisitos para funções de gerenciamento de rede em servidores e estações de trabalho
               href: requirements-for-network-management-functions-on-servers-and-workstations.md
@@ -61,11 +61,11 @@
               href: network-management-function-buffers.md
             - name: Comprimentos do buffer da função de gerenciamento de rede
               href: network-management-function-buffer-lengths.md
-            - name: Alinhamento de dados de API
+            - name: Alinhamento de dados da API
               href: api-data-alignment.md
             - name: Cadeias de caracteres inseridas
               href: embedded-strings.md
-            - name: Identificadores de retomada de enumeração
+            - name: Alças de retomada de enumeração
               href: enumeration-resume-handles.md
             - name: Status da função
               href: function-status.md
@@ -80,9 +80,9 @@
     - name: Usando o gerenciamento de rede
       href: using-network-management.md
       items:
-        - name: Pesquisando o nome completo de um usuário
+        - name: Procurando o nome completo de um usuário
           href: looking-up-a-users-full-name.md
-        - name: Forçando um usuário a alterar a senha de logon
+        - name: Forçar um usuário a alterar a senha de logon
           href: forcing-a-user-to-change-the-logon-password.md
         - name: Alterando elementos de informações do usuário
           href: changing-elements-of-user-information.md
@@ -90,7 +90,7 @@
           href: creating-a-new-computer-account.md
         - name: Criando um grupo local e adicionando um usuário
           href: creating-a-local-group-and-adding-a-user.md
-        - name: Pesquisando texto para números de código de erro
+        - name: Procurando texto para números de código de erro
           href: looking-up-text-for-error-code-numbers.md
     - name: Referência de gerenciamento de rede
       href: network-management-reference.md
@@ -143,7 +143,7 @@
               href: netconfigget.md
             - name: NetConfigGetAll
               href: netconfiggetall.md
-            - name: Netconfigset
+            - name: NetConfigSet
               href: netconfigset.md
             - name: NetCreateProvisioningPackage
               href: /windows/desktop/api/Lmjoin/nf-lmjoin-netcreateprovisioningpackage

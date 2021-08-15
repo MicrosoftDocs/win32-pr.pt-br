@@ -26,12 +26,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: bd152d1dffbc4cf956129dfd886186dda0b33084
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fec2a5a00ebeb805085daba3b3a707bbe739eba6dbaca3c5945fb49152c7e6c2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105810816"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118980396"
 ---
 # <a name="jet_dbinfomiscbkinfodiffprev-property"></a>Propriedade JET_DBINFOMISC. bkinfoDiffPrev
 
@@ -40,7 +40,7 @@ Obtém informações sobre o último backup diferencial bem-sucedido. Redefinir 
 **Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration

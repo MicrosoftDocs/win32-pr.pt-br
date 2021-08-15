@@ -1,19 +1,19 @@
 ---
-description: O Windows GDI+ expõe uma API simples que consiste em cerca de 600 funções. Essas funções de API simples são encapsuladas pela classe Graphics Text C++.
+description: Windows GDI+ expõe uma API simples que consiste em cerca de 600 funções. Essas funções de API simples são encapsuladas pela classe Graphics Text C++.
 ms.assetid: 70d35c08-08d9-46a6-a6df-76d989551866
 title: Funções de texto
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b308b500c98a447ab747999fc42c485939054a11
-ms.sourcegitcommit: 91530c19d26ba4c57a6af1f37b57f211f580464e
+ms.openlocfilehash: ea8ab1cbb8e6d6651e3457ff7a7617977262be33247988e4bb221a4596e02002
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112395541"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118977346"
 ---
 # <a name="text-functions"></a>Funções de texto
 
-O Windows GDI+ expõe uma API simples que consiste em cerca de 600 funções, que são implementadas em Gdiplus.dll e declaradas em Gdiplusflat. h. As funções na API Flat do GDI+ são encapsuladas por uma coleção de cerca de 40 classes C++. É recomendável que você não chame diretamente as funções na API simples. Sempre que você fizer chamadas para GDI+, deverá fazer isso chamando os métodos e funções fornecidos pelos invólucros do C++. O Microsoft Product Support Services não fornecerá suporte para código que chama a API simples diretamente. Para obter mais informações sobre como usar esses métodos de wrapper, consulte [GDI+ Flat API](-gdiplus-flatapi-flat.md). As funções de API simples a seguir são encapsuladas pela classe [**Graphics**](/windows/desktop/api/gdiplusgraphics/nl-gdiplusgraphics-graphics) Text C++.
+Windows GDI+ expõe uma API simples que consiste em cerca de 600 funções, que são implementadas em Gdiplus.dll e declaradas em Gdiplusflat. h. as funções no GDI+ API simples são encapsuladas por uma coleção de cerca de 40 classes C++. É recomendável que você não chame diretamente as funções na API simples. sempre que você fizer chamadas para GDI+, deverá fazer isso chamando os métodos e funções fornecidos pelos invólucros do C++. O Microsoft Product Support Services não fornecerá suporte para código que chama a API simples diretamente. para obter mais informações sobre como usar esses métodos de wrapper, consulte [GDI+ API simples](-gdiplus-flatapi-flat.md). As funções de API simples a seguir são encapsuladas pela classe [**Graphics**](/windows/desktop/api/gdiplusgraphics/nl-gdiplusgraphics-graphics) Text C++.
 
 ## <a name="text-functions-and-corresponding-wrapper-methods"></a>Funções de texto e métodos de wrapper correspondentes
 

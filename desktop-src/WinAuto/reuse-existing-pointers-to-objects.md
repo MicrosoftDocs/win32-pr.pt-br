@@ -4,20 +4,20 @@ description: Reutilizar ponteiros existentes para objetos
 ms.assetid: 7e1610c6-89b2-4e7e-aee5-94a6cab87a22
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c151b8d957fb82718721ad81b452a81a2c71ec84
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 14571234ee937d2237d3102316665f15a9ab55415042ddaeda749bfaa21e4807
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105760555"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119998116"
 ---
 # <a name="reuse-existing-pointers-to-objects"></a>Reutilizar ponteiros existentes para objetos
 
-Nesse cenário, o servidor responde a uma solicitação [**de \_ cliente OBJID**](object-identifiers.md) usando o mesmo ponteiro de interface [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) a cada vez.
+Nesse cenário, o servidor responde a uma [**solicitação OBJID \_ CLIENT**](object-identifiers.md) usando o mesmo ponteiro de interface [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) a cada vez.
 
-No código de exemplo a seguir, o objeto de controle é recuperado dos dados da janela extra e um método do controle é chamado para recuperar o objeto de servidor de acessibilidade (a classe AccServer definida pelo aplicativo), se houver. Se o servidor de acessibilidade ainda não existir, ele será criado.
+No código de exemplo a seguir, o objeto de controle é recuperado dos dados extras da janela e um método do controle é chamado para recuperar o objeto de servidor de acessibilidade (a classe AccServer definida pelo aplicativo), se for o caso. Se o servidor de acessibilidade ainda não existir, ele será criado.
 
-Quando o objeto de servidor de acessibilidade é criado, ele tem uma contagem de referência de 1. [**LresultFromObject**](/windows/desktop/api/Oleacc/nf-oleacc-lresultfromobject) incrementa a contagem de referência várias vezes, mas essas referências serão liberadas quando o cliente for concluído com o objeto. O servidor libera sua referência quando a janela de controle é destruída.
+Quando o objeto do servidor de acessibilidade é criado, ele tem uma contagem de referência de 1. [**LresultFromObject**](/windows/desktop/api/Oleacc/nf-oleacc-lresultfromobject) incrementa a contagem de referência várias vezes, mas essas referências serão liberadas quando o cliente for concluído com o objeto . O servidor libera sua referência quando a janela de controle é destruída.
 
 
 ```C++
@@ -65,9 +65,9 @@ case WM_DESTROY:
 
 
 
- 
+ 
 
- 
+ 
 
 
 

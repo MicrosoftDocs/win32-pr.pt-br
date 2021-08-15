@@ -1,10 +1,10 @@
 ---
-title: Aplicar-grupo-política estendida à direita
-description: Direito estendido usado pelo mecanismo de Política de Grupo para determinar se um GPO se aplica a um usuário ou computador.
+title: Direito estendido Apply-Group-Policy
+description: Direito estendido usado pelo Política de Grupo para determinar se um GPO se aplica a um usuário ou computador.
 ms.assetid: f6b09ecc-0fcd-409b-adeb-a8744f811427
 ms.tgt_platform: multiple
 keywords:
-- Aplicar-grupo-política do esquema do AD estendido
+- Esquema do AD direito estendido Apply-Group-Policy
 topic_type:
 - apiref
 api_name:
@@ -13,24 +13,24 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9e7ee574b10a9bb4579cd3ac0f9366aeb28ed5a1
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 08d93d77253f9bb0e45ab40acdd91efecc286d94bb982cb350f99161a5f5fb1a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105769094"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118959505"
 ---
-# <a name="apply-group-policy-extended-right"></a>Aplicar-grupo-política estendida à direita
+# <a name="apply-group-policy-extended-right"></a>Direito estendido Apply-Group-Policy
 
-Direito estendido usado pelo mecanismo de Política de Grupo para determinar se um GPO se aplica a um usuário ou computador.
+Direito estendido usado pelo Política de Grupo para determinar se um GPO se aplica a um usuário ou computador.
 
 
 
 | Entrada | Valor |
 |--------------|--------------------------------------|
-| CN           | Aplicar política de grupo                   |
+| CN           | Apply-Group-Policy                   |
 | Display-Name | Aplicar Política de Grupo                   |
-| GUID de direitos  | edacfd8f-ffb3-11d1-b41d-00a0c968f939 |
+| RIGHTS-GUID  | edacfd8f-ffb3-11d1-b41d-00a0c968f939 |
 
 
 
@@ -49,8 +49,8 @@ Direito estendido usado pelo mecanismo de Política de Grupo para determinar se 
 
 | Entrada | Valor |
 |-------------------------|---------------------------------------------------------------------|
-| Applies-To              | [**Grupo-política-contêiner**](c-grouppolicycontainer.md)<br/> |
-| Localização-exibição-ID | 47                                                                  |
+| Applies-To              | [**Group-Policy-Container**](c-grouppolicycontainer.md)<br/> |
+| Localization-Display-ID | 47                                                                  |
 
 
 
@@ -60,8 +60,8 @@ Direito estendido usado pelo mecanismo de Política de Grupo para determinar se 
 
 | Entrada | Valor |
 |-------------------------|---------------------------------------------------------------------|
-| Applies-To              | [**Grupo-política-contêiner**](c-grouppolicycontainer.md)<br/> |
-| Localização-exibição-ID | 47                                                                  |
+| Applies-To              | [**Group-Policy-Container**](c-grouppolicycontainer.md)<br/> |
+| Localization-Display-ID | 47                                                                  |
 
 
 
@@ -71,8 +71,8 @@ Direito estendido usado pelo mecanismo de Política de Grupo para determinar se 
 
 | Entrada | Valor |
 |-------------------------|---------------------------------------------------------------------|
-| Applies-To              | [**Grupo-política-contêiner**](c-grouppolicycontainer.md)<br/> |
-| Localização-exibição-ID | 47                                                                  |
+| Applies-To              | [**Group-Policy-Container**](c-grouppolicycontainer.md)<br/> |
+| Localization-Display-ID | 47                                                                  |
 
 
 
@@ -82,8 +82,8 @@ Direito estendido usado pelo mecanismo de Política de Grupo para determinar se 
 
 | Entrada | Valor |
 |-------------------------|---------------------------------------------------------------------|
-| Applies-To              | [**Grupo-política-contêiner**](c-grouppolicycontainer.md)<br/> |
-| Localização-exibição-ID | 47                                                                  |
+| Applies-To              | [**Group-Policy-Container**](c-grouppolicycontainer.md)<br/> |
+| Localization-Display-ID | 47                                                                  |
 
 
 
@@ -93,8 +93,8 @@ Direito estendido usado pelo mecanismo de Política de Grupo para determinar se 
 
 | Entrada | Valor |
 |-------------------------|---------------------------------------------------------------------|
-| Applies-To              | [**Grupo-política-contêiner**](c-grouppolicycontainer.md)<br/> |
-| Localização-exibição-ID | 47                                                                  |
+| Applies-To              | [**Group-Policy-Container**](c-grouppolicycontainer.md)<br/> |
+| Localization-Display-ID | 47                                                                  |
 
 
 
@@ -104,8 +104,8 @@ Direito estendido usado pelo mecanismo de Política de Grupo para determinar se 
 
 | Entrada | Valor |
 |-------------------------|---------------------------------------------------------------------|
-| Applies-To              | [**Grupo-política-contêiner**](c-grouppolicycontainer.md)<br/> |
-| Localização-exibição-ID | 47                                                                  |
+| Applies-To              | [**Group-Policy-Container**](c-grouppolicycontainer.md)<br/> |
+| Localization-Display-ID | 47                                                                  |
 
 
 

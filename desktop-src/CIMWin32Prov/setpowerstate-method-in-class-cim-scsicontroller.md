@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: fe3792b056b41a062a60307bb033fa7e2bce05a4
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 250c7ce327986f98f06b807af23f3577abccff34554879fef6ea8ee001f21108
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104501076"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119700356"
 ---
 # <a name="setpowerstate-method-of-the-cim_scsicontroller-class"></a>Método SetPowerState da classe CIM \_ SCSIController
 
@@ -102,7 +102,7 @@ Especifica quando o estado de energia deve ser definido, seja como um valor de d
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retornará 0 (zero) se for bem-sucedido, 1 (um) se o *PowerState* e a solicitação de *tempo* especificados não forem suportados e outro valor se ocorrer algum outro erro.
 

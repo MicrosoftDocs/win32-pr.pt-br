@@ -8,12 +8,12 @@ keywords:
 - WWS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c69b5a70c6ed7ea00450092a6b34362426aaab38
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: b4c202c2fac54413294a7802d75b780128d3e7f2dc2916f67308a4c608e9a713
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104005193"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119083100"
 ---
 # <a name="untypedserviceexample"></a>UnTypedServiceExample
 
@@ -504,9 +504,9 @@ clean:
     $(CLEANUP)
 ```
 
- 
+ 
 
- 
+ 
 
 
 

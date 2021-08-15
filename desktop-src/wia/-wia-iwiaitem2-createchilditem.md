@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Wia.h
-ms.openlocfilehash: 0002a6110894491a8d6efabb5a142b7c81adc820
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e7d7215f528c36f6b4f5883be19d5d37c8b76d4d8ad9cacbcaa7a63397337c7d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105808231"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118965565"
 ---
 # <a name="iwiaitem2createchilditem-method"></a>Método IWiaItem2:: createchilditem
 
@@ -100,7 +100,7 @@ Recebe o endereço de um ponteiro para a interface [**IWiaItem2**](-wia-iwiaitem
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **HRESULT**
 
@@ -120,9 +120,9 @@ Se *lCreationFlags* for copiar \_ \_ \_ valores de propriedade pai e *lItemFlags
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                     |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                               |
-| parâmetro<br/>                   | <dl> <dt>WIA. h</dt> </dl>   |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                     |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                               |
+| Cabeçalho<br/>                   | <dl> <dt>WIA. h</dt> </dl>   |
 | INSERI<br/>                      | <dl> <dt>WIA. idl</dt> </dl> |
 
 

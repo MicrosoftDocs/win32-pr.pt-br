@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 6a96a1ce53b850ec8feeba282055e8111b275bfd
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: 8a211014137f35c39a6b89cd16f0e27687b4daafd89841f752312f459531cab2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104988590"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118986436"
 ---
 # <a name="loop---vs"></a>loop-vs
 
@@ -29,7 +29,7 @@ Iniciar um loop... bloco [ENDLOOP](endloop---vs.md) .
 
 
 
- 
+ 
 
 Em que:
 
@@ -46,14 +46,14 @@ Em que:
 
 
 
- 
+ 
 
 -   O [registro do contador de loop](dx9-graphics-reference-asm-vs-registers-loop-counter.md) (al) mantém a contagem de loops atual e pode ser usado para endereçamento relativo em c ( [registro inteiro constante](dx9-graphics-reference-asm-vs-registers-constant-integer.md) \# ) ou [registros de saída](dx9-graphics-reference-asm-vs-registers-vs-3-0.md) (o \# ) dentro do bloco de loop.
 -   i \# . x especifica a contagem de iteração. O intervalo legal é \[ 0, 255 \] . Observe que essa instrução não incrementa nem Decrementa o valor de i \# . x.
 -   i \# . y especifica o valor inicial do registro do [contador de loop](dx9-graphics-reference-asm-vs-registers-loop-counter.md) (al). O intervalo legal é \[ 0, 255 \] . Observe que essa instrução não incrementa nem Decrementa o valor de i \# . y.
 -   i \# . z especifica o tamanho Step/Stride. O intervalo legal é \[ -128, 127 \] .
 -   i \# . w não é usado e deve ser definido como 0.
--   Blocos de loop podem ser aninhados. Consulte [limites de aninhamento de controle de fluxo](dx9-graphics-reference-asm-vs-instructions-flow-control.md).
+-   Blocos de loop podem ser aninhados. consulte [Flow limites de aninhamento de controle](dx9-graphics-reference-asm-vs-instructions-flow-control.md).
 -   Quando aninhado, o valor do [registro do contador de loop](dx9-graphics-reference-asm-vs-registers-loop-counter.md) (al) refere-se ao bloco de loops de circunscrição imediato.
 -   Os blocos de loops podem estar completamente dentro de um \* bloco If ou completamente em torno dele. Não é permitido ampliar.
 
@@ -75,9 +75,9 @@ endloop
 [Instruções do sombreador de vértice](dx9-graphics-reference-asm-vs-instructions.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

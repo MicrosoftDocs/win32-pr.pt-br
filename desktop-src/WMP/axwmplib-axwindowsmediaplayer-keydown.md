@@ -47,8 +47,8 @@ O manipulador associado a esse evento é do tipo **AxWMPLib. \_ WMPOCXEvents \_ 
 
 | Propriedade    | Descrição                                                                                                                                                                                                                                                                                                                                                                          |
 |-------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| nKeyCode    | System. Int16Specifies que a chave física é pressionada. Para obter os valores possíveis, consulte comentários.<br/>                                                                                                                                                                                                                                                                                    |
-| nShiftState | O campo do sistema. Int16a com os bits menos significativos correspondentes à tecla SHIFT (bit 0), a tecla CTRL (bit 1) e a tecla ALT (bit 2). Esses bits correspondem aos valores 1, 2 e 4, respectivamente. O argumento Shift indica o estado dessas chaves. Alguns, todos ou nenhum dos bits podem ser definidos, indicando que algumas, todas ou nenhuma das chaves são pressionadas.<br/> |
+| nKeyCode    | System.Int16 Especifica qual chave física é pressionada. Para valores possíveis, consulte Comentários.<br/>                                                                                                                                                                                                                                                                                    |
+| nShiftState | Campo de bits System.Int16A com os bits menos significativos correspondentes à tecla SHIFT (bit 0), à tecla CTRL (bit 1) e à tecla ALT (bit 2). Esses bits correspondem aos valores 1, 2 e 4, respectivamente. O argumento shift indica o estado dessas chaves. Alguns, todos ou nenhum dos bits podem ser definidos, indicando que algumas, todas ou nenhuma das chaves são pressionadas.<br/> |
 
 
 
@@ -56,7 +56,7 @@ O manipulador associado a esse evento é do tipo **AxWMPLib. \_ WMPOCXEvents \_ 
 
 ## <a name="remarks"></a>Comentários
 
-A propriedade **nKeyCode** especifica uma chave física. As tabelas a seguir mostram os valores possíveis para as chaves principais em um teclado padrão.
+A **propriedade nKeyCode** especifica uma chave física. As tabelas a seguir mostram os valores possíveis para as teclas principais em um teclado padrão.
 
 Valores para as chaves principais.
 
@@ -64,7 +64,7 @@ Valores para as chaves principais.
 
 | Chave                     | Valor   |
 |-------------------------|---------|
-| A-Z                     | 65-90   |
+| A a Z                     | 65-90   |
 | 0-9                     | 48-56   |
 | F1-F12                  | 112-123 |
 | ESC                     | 27      |
@@ -76,15 +76,15 @@ Valores para as chaves principais.
 | SPACE                   | 32      |
 | BACKSPACE               | 8       |
 | Enter                   | 13      |
-| Windows tecla de logotipo, esquerda  | 91      |
-| tecla de logotipo Windows, direita | 92      |
+| Windows de logotipo, à esquerda  | 91      |
+| Windows de logotipo, à direita | 92      |
 | Chave do aplicativo         | 93      |
 
 
 
  
 
-Valores para as chaves do teclado numérico.
+Valores para as chaves do painel de números.
 
 
 
@@ -92,11 +92,11 @@ Valores para as chaves do teclado numérico.
 |-------------------|--------|
 | 0-9               | 96-105 |
 | NUM LOCK          | 144    |
-| DIVIDIR (/)        | 111    |
-| MULTIPLICAr ( \* )     | 106    |
-| Subtrair (-)      | 109    |
-| ADICIONAR (+)           | 107    |
-| Separador (Enter) | 108    |
+| DIVIDE (/)        | 111    |
+| MULTIPLY ( \* )     | 106    |
+| SUBTRACT (-)      | 109    |
+| ADD (+)           | 107    |
+| SEPARADOR (Enter) | 108    |
 | DECIMAL (.)       | 110    |
 
 
@@ -110,7 +110,7 @@ Valores para as chaves de navegação.
 | Chave         | Valor |
 |-------------|-------|
 | INSERT      | 45    |
-| Delete (excluir)      | 46    |
+| DELETE      | 46    |
 | HOME        | 36    |
 | END         | 35    |
 | PAGE UP     | 33    |

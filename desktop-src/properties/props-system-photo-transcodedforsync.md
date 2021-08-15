@@ -1,19 +1,19 @@
 ---
-description: Um VT \_ bool que indica se a imagem foi transcodificada para sincronização com um dispositivo externo.
+description: Um BOOL de VT que indica se a \_ imagem foi transcodificada para sincronização com um dispositivo externo.
 ms.assetid: c7f50095-97ad-4e21-bd7c-de4cf595badb
-title: System. Photo. TranscodedForSync
+title: System.Photo.TranscodedForSync
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5b617c79514f9aaef7e27514e84fa297a0497da3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6c4d88b3022d803b5e45d4b630525281c20f602b7ab770183a934df54748044e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104171561"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118969975"
 ---
-# <a name="systemphototranscodedforsync"></a>System. Photo. TranscodedForSync
+# <a name="systemphototranscodedforsync"></a>System.Photo.TranscodedForSync
 
-Um VT \_ bool que indica se a imagem foi transcodificada para sincronização com um dispositivo externo.
+Um BOOL de VT que indica se a \_ imagem foi transcodificada para sincronização com um dispositivo externo.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7-windows-vista"></a>Windows 10, versão 1703, Windows 10, versão 1607, Windows 10, versão 1511, Windows 10, versão 1507, Windows 8.1, Windows 8, Windows 7, Windows Vista
 
@@ -32,13 +32,13 @@ propertyDescription
 
 ## <a name="remarks"></a>Comentários
 
-Os valores de PKEY são definidos em Propkey. h.
+Os valores PKEY são definidos em Propkey.h.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[propertyDescription](./propdesc-schema-propertydescription.md)
+[Propertydescription](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -47,19 +47,19 @@ Os valores de PKEY são definidos em Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[numberFormat](./propdesc-schema-numberformat.md)
+[Numberformat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -74,7 +74,7 @@ Os valores de PKEY são definidos em Propkey. h.
 [editControl](./propdesc-schema-editcontrol.md)
 </dt> <dt>
 
-[filterControl](./propdesc-schema-filtercontrol.md)
+[Filtercontrol](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
 [queryControl](./propdesc-schema-querycontrol.md)

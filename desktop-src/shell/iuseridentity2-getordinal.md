@@ -1,7 +1,7 @@
 ---
-description: Não há suporte para GetOrdinal e ele pode ser alterado ou indisponível no futuro. Em vez disso, use contas de usuário com troca rápida de usuário e Área de Trabalho Remota.
+description: Não há suporte para GetOrdinal e podem ser alterados ou não disponíveis no futuro. Em vez disso, use Contas de Usuário com Troca rápida de usuário e Área de Trabalho Remota.
 ms.assetid: 20b1c1d0-b09f-43a8-9026-9cdbac28c108
-title: 'Método IUserIdentity2:: GetOrdinal (Msident. h)'
+title: Método IUserIdentity2::GetOrdinal (Msident.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - COM
 api_location:
 - Msident.dll
-ms.openlocfilehash: f5a7e875e92342363722858b3ac714171cb547b6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d5453a083a1db23e042d24c3da4cd2948ff70f813fcc9026a00324eade467918
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104968024"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118968965"
 ---
-# <a name="iuseridentity2getordinal-method"></a>Método IUserIdentity2:: GetOrdinal
+# <a name="iuseridentity2getordinal-method"></a>Método IUserIdentity2::GetOrdinal
 
-\[Não há suporte para **GetOrdinal** e ele pode ser alterado ou indisponível no futuro. Em vez disso, use [contas de usuário com troca rápida de usuário e área de trabalho remota](fastuserswitching.md).\]
+\[**Não há suporte para GetOrdinal** e podem ser alterados ou não disponíveis no futuro. Em vez disso, [use Contas de Usuário com a Opção de](fastuserswitching.md)Usuário Rápida e Área de Trabalho Remota .\]
 
-Obtém o número ordinal desta identidade.
+Obtém o número ordinal dessa identidade.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -41,24 +41,24 @@ HRESULT GetOrdinal(
 
 <dl> <dt>
 
-*dwOrdinal* \[ fora\]
+*dwOrdinal* \[ out\]
 </dt> <dd>
 
-Tipo: **DWORD \** _
+Tipo: **DWORD \***
 
-Um ponteiro para um valor _ *DWORD** que recebe o número ordinal para essa identidade.
+Um ponteiro para um **valor DWORD** que recebe o número ordinal para essa identidade.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **HRESULT**
 
-Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
+Se esse método for bem-sucedido, ele **retornará S \_ OK.** Caso contrário, ele retornará um **código de erro HRESULT.**
 
 ## <a name="remarks"></a>Comentários
 
-O ordinal determina a ordem das identidades na lista de identidades, mas pode não persistir em operações nas identidades. Para obter um valor exclusivo para uma identidade, chame [**GetCookie**](iuseridentity-getcookie.md).
+O ordinal determina a ordem das identidades na lista de identidade, mas pode não persistir em todas as operações nas identidades. Para obter um valor exclusivo para uma identidade, chame [**GetCookie**](iuseridentity-getcookie.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -68,10 +68,10 @@ O ordinal determina a ordem das identidades na lista de identidades, mas pode n�
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                             |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                   |
-| Fim do suporte do cliente<br/>    | Windows 2000 Professional<br/>                                                   |
-| Fim do suporte do servidor<br/>    | Windows 2000 Server<br/>                                                         |
-| parâmetro<br/>                   | <dl> <dt>Msident. h</dt> </dl>   |
-| INSERI<br/>                      | <dl> <dt>Msident. idl</dt> </dl> |
+| Fim do suporte ao cliente<br/>    | Windows 2000 Professional<br/>                                                   |
+| Fim do suporte ao servidor<br/>    | Windows 2000 Server<br/>                                                         |
+| Cabeçalho<br/>                   | <dl> <dt>Msident.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>Msident.idl</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Msident.dll</dt> </dl> |
 
 
@@ -83,7 +83,7 @@ O ordinal determina a ordem das identidades na lista de identidades, mas pode n�
 [**IUserIdentity2**](iuseridentity2.md)
 </dt> <dt>
 
-[**GetCookie**](iuseridentity-getcookie.md)
+[**Getcookie**](iuseridentity-getcookie.md)
 </dt> </dl>
 
  

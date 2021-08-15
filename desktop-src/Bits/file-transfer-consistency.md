@@ -4,12 +4,12 @@ description: O BITS garante que a versão do arquivo que ele transfere seja cons
 ms.assetid: ba82f172-a3ac-49d6-bccd-7d0b68ba66de
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 533bc0c0db9708528d4ae919572d6e4c1d251ac8
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 608566f6e9927fdcb39133c30720a46ead869f36d3084c950b9ed86379c4b749
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103822298"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118959495"
 ---
 # <a name="file-transfer-consistency"></a>Consistência de transferência de arquivo
 
@@ -23,9 +23,9 @@ Para carregamentos, se o tamanho do arquivo ou o carimbo de data/hora for altera
 
 O BITS não sincroniza solicitações de transferência quando um ou mais usuários solicitam que o mesmo arquivo seja transferido para o mesmo local. O BITS transfere o arquivo para cada solicitação separadamente.
 
- 
+ 
 
- 
+ 
 
 
 

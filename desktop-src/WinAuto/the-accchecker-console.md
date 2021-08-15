@@ -8,12 +8,12 @@ keywords:
 - linha de comando, AccChecker
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 34ef010b2079d364c43bf2a6e47b0e3b0f24bb37
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 0d370f1b4ba5c3d9752015425e12f48311c66dfd8928c6b9fe0f011c48ee6c8d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103822338"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118994026"
 ---
 # <a name="the-accchecker-console"></a>O console do AccChecker
 
@@ -79,7 +79,7 @@ A seguir estão vários exemplos de linha de comando do console AccChecker.
 
 -   Executar todas as verificações em uma janela com um nome especificado.
 
-    **AccCheckConsole-janela "sem título – bloco de notas"**
+    **AccCheckConsole-janela "sem título-Bloco de notas"**
 
 -   Executar um subconjunto das verificações em um HWND, especificando um arquivo de supressão.
 
@@ -87,7 +87,7 @@ A seguir estão vários exemplos de linha de comando do console AccChecker.
 
 -   Execute todas as verificações de uma nova DLL de verificação.
 
-    **AccCheckConsole-janela "sem título-bloco de notas" VerificationRoutine1.dll**
+    **AccCheckConsole-janela "sem título-Bloco de notas" VerificationRoutine1.dll**
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

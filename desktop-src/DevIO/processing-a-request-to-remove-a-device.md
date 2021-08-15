@@ -1,23 +1,23 @@
 ---
-description: Um aplicativo recebe um \_ evento de dispositivo DBT DEVICEQUERYREMOVE quando um recurso no sistema decidiu remover um dispositivo especificado.
+description: Um aplicativo recebe um evento de dispositivo DBT DEVICEQUERYREMOVE quando um recurso no sistema decide \_ remover um dispositivo especificado.
 ms.assetid: 66f6c9f4-93fa-4ee8-adf8-cde4e63f9fb7
-title: Processando uma solicitação para remover um dispositivo
+title: Processamento de uma solicitação para remover um dispositivo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 03f6f1089cae0e4c9db964e3877cac8f8f8d8da4
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 6432ba2709dd05589acd5f8e0a2d1de6547216c9d24d4c9d742b9ad6dcc838e9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104089198"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118956775"
 ---
-# <a name="processing-a-request-to-remove-a-device"></a>Processando uma solicitação para remover um dispositivo
+# <a name="processing-a-request-to-remove-a-device"></a>Processamento de uma solicitação para remover um dispositivo
 
-Um aplicativo recebe um evento de dispositivo [DBT \_ DEVICEQUERYREMOVE](dbt-devicequeryremove.md) quando um recurso no sistema decidiu remover um dispositivo especificado. Quando o aplicativo recebe esse evento, ele deve determinar se ele está usando o dispositivo especificado e cancelar ou se preparar para a remoção.
+Um aplicativo recebe um evento de dispositivo [DBT \_ DEVICEQUERYREMOVE](dbt-devicequeryremove.md) quando um recurso no sistema decide remover um dispositivo especificado. Quando o aplicativo recebe esse evento, ele deve determinar se está usando o dispositivo especificado e cancelar ou se preparar para a remoção.
 
-No exemplo a seguir, um aplicativo mantém um identificador aberto, hFile, para o arquivo ou dispositivo representado por FileName. O aplicativo registra a notificação de eventos do dispositivo no dispositivo subjacente chamando a função [**RegisterDeviceNotification**](/windows/desktop/api/Winuser/nf-winuser-registerdevicenotificationa) , usando um filtro de notificação de tipo de **\_ \_ identificador DEVTYP DBT** e especificando a variável hFile no membro do **\_ identificador dbch** do filtro.
+No exemplo a seguir, um aplicativo mantém um controle aberto, hFile, para o arquivo ou dispositivo representado por FileName. O aplicativo registra-se para notificação de evento do dispositivo no dispositivo subjacente chamando a função [**RegisterDeviceNotification,**](/windows/desktop/api/Winuser/nf-winuser-registerdevicenotificationa) usando um filtro de notificação de tipo **\_ \_ HANDLE DEVTYP DBT** e especificando a variável hFile no membro **do identificador dbch \_** do filtro.
 
-O aplicativo processa o evento de dispositivo [DBT \_ DEVICEQUERYREMOVE](dbt-devicequeryremove.md) fechando o identificador de arquivo aberto para o dispositivo que será removido. Caso a remoção desse dispositivo seja cancelada, o aplicativo processa o evento de dispositivo [DBT \_ DEVICEQUERYREMOVEFAILED](dbt-devicequeryremovefailed.md) para reabrir o identificador para o dispositivo. Depois que o dispositivo tiver sido removido do sistema, o aplicativo processará os eventos de dispositivo [DBT \_ DEVICEREMOVECOMPLETE](dbt-deviceremovecomplete.md) e [DBT \_ DEVICEREMOVEPENDING](dbt-deviceremovepending.md) cancelando o registro de seu identificador de notificação para o dispositivo e fechando qualquer identificador que ainda esteja aberto no dispositivo.
+O aplicativo processa o evento de dispositivo [DBT \_ DEVICEQUERYREMOVE](dbt-devicequeryremove.md) fechando o handle de arquivo aberto para o dispositivo que deve ser removido. Caso a remoção desse dispositivo seja cancelada, o aplicativo processa o evento de dispositivo [DBT \_ DEVICEQUERYREMOVEFAILED](dbt-devicequeryremovefailed.md) para reabrir o handle para o dispositivo. Depois que o dispositivo tiver sido removido do sistema, o aplicativo processa os eventos do dispositivo [DBT \_ DEVICEREMOVECOMPLETE](dbt-deviceremovecomplete.md) e [DBT \_ DEVICEREMOVEPENDING,](dbt-deviceremovepending.md) removendo o registro do seu handle de notificação para o dispositivo e fechando todos os alças que ainda estão abertos para o dispositivo.
 
 
 ```C++

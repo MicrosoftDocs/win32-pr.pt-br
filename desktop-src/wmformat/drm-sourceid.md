@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e3ea60249ea9326499de7eaa7422d9362e7f0b2d
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 80d9294cfdc76ff9210ad080bf3079bdfdb70ffb64faf35e2ef3e4164064a2b5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104006494"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119085937"
 ---
 # <a name="drm_sourceid"></a>\_SourceID DRM
 
@@ -33,7 +33,7 @@ O **atributo \_ SourceID DRM** contém um identificador que associa o conteúdo 
 
 ## <a name="remarks"></a>Comentários
 
-Os identificadores de origem são usados para diferenciar o conteúdo protegido de forma não padrão de conteúdo protegido usando o DRM padrão de mídia do Windows.
+os identificadores de origem são usados para diferenciar o conteúdo protegido de forma não padrão de conteúdo protegido usando o DRM de mídia padrão Windows.
 
 ## <a name="see-also"></a>Confira também
 
@@ -42,9 +42,9 @@ Os identificadores de origem são usados para diferenciar o conteúdo protegido 
 [**Lista de Atributos**](attribute-list.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

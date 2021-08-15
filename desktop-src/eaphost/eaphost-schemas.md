@@ -4,12 +4,12 @@ description: Descreve o esquema EAPHost e o esquema herdado para criar o XML de 
 ms.assetid: d4572866-7e2b-4e7c-afe1-66394b549bc4
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5dbe40f447618a9ca0da89875521349101c1191f
-ms.sourcegitcommit: c20a43b333f03175ac23823c55f3204bfe8cd243
+ms.openlocfilehash: c4eb9f09a0f1380ad0373ec1171b0b0ea9101af87335d25287969d9a5f7f2da9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "104365333"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118984226"
 ---
 # <a name="eaphost-and-legacy-schema"></a>EAPHost e esquema herdado
 
@@ -37,7 +37,7 @@ Os termos "configuração do método" e "Propriedades da conexão" são usados d
 
 
 
- 
+ 
 
 ## <a name="legacy-schema"></a>Esquema herdado
 
@@ -50,17 +50,17 @@ Os termos "configuração do método" e "Propriedades da conexão" são usados d
 | [eapconnectionpropertiesv1](eapconnectionpropertiesv1schema-schema.md)           | Contém elementos de esquema de configuração comuns.                                               |
 | [eapuserpropertiesv1](eapuserpropertiesv1schema-schema.md)                       | Contém elementos de esquema de credencial comuns.                                                  |
 | [eaptlsconnectionpropertiesv1](eaptlsconnectionpropertiesv1schema-schema.md)     | É usado com EAP-TLS para descrever os dados de configuração de autenticação.                          |
-| [eaptlsconnectionpropertiesv2](eaptlsconnectionpropertiesv2schema-schema.md)     | É usado com EAP-TLS para descrever os dados de configuração de autenticação a partir do Windows 7. |
+| [eaptlsconnectionpropertiesv2](eaptlsconnectionpropertiesv2schema-schema.md)     | é usado com EAP-TLS para descrever os dados de configuração de autenticação a partir do Windows 7. |
 | [eaptlsuserpropertiesv1](eaptlsuserpropertiesv1schema-schema.md)                 | É usado com EAP-TLS para descrever as credenciais de autenticação e as opções de credenciais.          |
 | [mschapv2connectionpropertiesv1](mschapv2connectionpropertiesv1schema-schema.md) | É usado com MS-CHAPv2 para descrever os dados de configuração de autenticação.                        |
 | [mschapv2userpropertiesv1](mschapv2userpropertiesv1schema-schema.md)             | É usado com MS-CHAPv2 para descrever as credenciais de autenticação e as opções de credenciais.        |
 | [mspeapconnectionpropertiesv1](mspeapconnectionpropertiesv1schema-schema.md)     | É usado com o PEAPv0 para descrever os dados de configuração de autenticação.                           |
-| [mspeapconnectionpropertiesv2](mspeapconnectionpropertiesv2schema-schema.md)     | É usado com o PEAPv0 para descrever os dados de configuração de autenticação que começam com o Windows 7.  |
+| [mspeapconnectionpropertiesv2](mspeapconnectionpropertiesv2schema-schema.md)     | é usado com o PEAPv0 para descrever os dados de configuração de autenticação a partir do Windows 7.  |
 | [mspeapuserpropertiesv1](mspeapuserpropertiesv1schema-schema.md)                 | É usado com o PEAPv0 para descrever as credenciais de autenticação e as opções de credenciais.           |
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -69,9 +69,9 @@ Os termos "configuração do método" e "Propriedades da conexão" são usados d
 [Revisão do EAPHost e exemplos de esquema herdados](eaphost-schemas.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

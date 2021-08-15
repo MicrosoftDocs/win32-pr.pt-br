@@ -1,11 +1,11 @@
 ---
-title: atributo DHCP-Unique-Key
-description: O atributo DHCP-Unique-key não está sendo usado no momento.
+title: Atributo dhcp-Unique-Key
+description: O atributo dhcp-Unique-Key não é usado no momento.
 ms.assetid: 5b627db8-cdda-4fd4-9c21-a996df51ddac
 ms.tgt_platform: multiple
 keywords:
-- DHCP-atributo de chave exclusiva-esquema do AD
-- Esquema de AD do atributo dhcpUniqueKey
+- Esquema do AD do atributo dhcp-Unique-Key
+- Esquema do AD do atributo dhcpUniqueKey
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a23f43393efc19042861ea6a680d91581d73959e
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 6ea9400c4f156cc67120f8862e7f0a3aa48b8857c4ce7e3b7027492482d39bad
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105754885"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118961705"
 ---
-# <a name="dhcp-unique-key-attribute"></a>atributo DHCP-Unique-Key
+# <a name="dhcp-unique-key-attribute"></a>Atributo dhcp-Unique-Key
 
-O atributo **DHCP-Unique-Key** não está sendo usado no momento.
+O **atributo dhcp-Unique-Key** não é usado no momento.
 
 
 
 | Entrada | Valor |
 |-------------------|--------------------------------------|
-| CN                | Chave exclusiva do DHCP                      |
-| LDAP-Display-Name | dhcpUniqueKey                        |
+| CN                | dhcp-Unique-Key                      |
+| Ldap-Display-Name | dhcpUniqueKey                        |
 | Tamanho              | \-                                   |
 | Privilégio de atualização  | \-                                   |
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.698               |
-| System-ID-GUID    | 963d273a-48be-11d1-a9c3-0000f80367c1 |
+| System-Id-Guid    | 963d273a-48be-11d1-a9c3-0000f80367c1 |
 | Syntax            | [**Intervalo**](s-interval.md)       |
 
 
@@ -58,10 +58,10 @@ O atributo **DHCP-Unique-Key** não está sendo usado no momento.
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | True                                         |
+| Tem valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
-| No catálogo global      | Falso                                        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
+| No Catálogo Global      | Falso                                        |
+| Descritor de segurança NT | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
@@ -79,10 +79,10 @@ O atributo **DHCP-Unique-Key** não está sendo usado no momento.
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | True                                         |
+| Tem valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
-| No catálogo global      | Falso                                        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
+| No Catálogo Global      | Falso                                        |
+| Descritor de segurança NT | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
@@ -100,10 +100,10 @@ O atributo **DHCP-Unique-Key** não está sendo usado no momento.
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | True                                         |
+| Tem valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
-| No catálogo global      | Falso                                        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
+| No Catálogo Global      | Falso                                        |
+| Descritor de segurança NT | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
@@ -121,7 +121,7 @@ O atributo **DHCP-Unique-Key** não está sendo usado no momento.
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | True                                         |
+| É de valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
 | No catálogo global      | Falso                                        |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
@@ -142,7 +142,7 @@ O atributo **DHCP-Unique-Key** não está sendo usado no momento.
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | True                                         |
+| É de valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
 | No catálogo global      | Falso                                        |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
@@ -163,7 +163,7 @@ O atributo **DHCP-Unique-Key** não está sendo usado no momento.
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | True                                         |
+| É de valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
 | No catálogo global      | Falso                                        |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |

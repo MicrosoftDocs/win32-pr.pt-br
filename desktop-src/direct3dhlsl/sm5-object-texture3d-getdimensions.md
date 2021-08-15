@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 7a700e0ff065e5f4758241ee0c8252965209a21f
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 8a7dd6248b7b6effc08e510ea56da6426c41dc54418bf7ee5da8cdc3c9ad965a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104989255"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118985706"
 ---
 # <a name="texture3dgetdimensions-function"></a>Função Texture3D:: GetDimensions
 
@@ -85,9 +85,9 @@ O número de níveis de mipmap (também requer *MipLevel* ).
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Nothing
+Nada
 
 ## <a name="remarks"></a>Comentários
 
@@ -122,7 +122,7 @@ Essa função tem suporte para os seguintes tipos de sombreadores:
 
 
 
-| Vértice | Envoltória | Domínio | Geometria | 16x16 | Computação |
+| Vértice | Envoltória | Domínio | Geometry | 16x16 | Computação |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | x     | x       |
 

@@ -231,7 +231,7 @@
                   href: deleteextractedfiles.md
                 - name: DllGetVersion
                   href: dllgetversion.md
-                - name: Extração
+                - name: Extract
                   href: extract.md
                 - name: FCIAddFile
                   href: /windows/desktop/api/Fci/nf-fci-fciaddfile
@@ -512,7 +512,7 @@
           items:
             - name: Método GetNumericalProperty
               href: /windows/desktop/api/Fhcfg/nf-fhcfg-ifhtarget-getnumericalproperty
-            - name: Método getstringproperty
+            - name: Método GetStringProperty
               href: /windows/desktop/api/Fhcfg/nf-fhcfg-ifhtarget-getstringproperty
     - name: Arquivos
       href: files.md
@@ -599,7 +599,7 @@
           href: pimestylefromattr.md
         - name: RGBFromIMEColorStyle
           href: rgbfromimecolorstyle.md
-    - name: Suporte ao cliente do Low-Level de gráficos
+    - name: Suporte ao cliente Low-Level gráficos
       href: '-dxgkernel-low-level-client-support.md'
       items:
         - name: DCIBeginAccess
@@ -758,14 +758,14 @@
           href: '-dxgkernel-ntgdiddupdateoverlay.md'
         - name: NtGdiDdWaitForVerticalBlank
           href: '-dxgkernel-ntgdiddwaitforverticalblank.md'
-    - name: Suporte de cliente variado Low-Level
+    - name: Suporte ao cliente Low-Level diversos
       href: '-win32-misclowlevelclientsupport.md'
       items:
         - name: __C_specific_handler
           href: '--c-specific-handler2.md'
-        - name: Rotina de _alldiv
+        - name: _alldiv rotina
           href: '-win32-alldiv.md'
-        - name: Rotina de _chkstk
+        - name: _chkstk rotina
           href: '-win32-chkstk.md'
         - name: _lclose
           href: /windows/desktop/api/winbase/nf-winbase-_lclose
@@ -843,27 +843,27 @@
           href: /windows/desktop/api/comppkgsup/nf-comppkgsup-unregisterserverforpmp
         - name: WINNLSEnableIME
           href: /windows/desktop/api/Winnls32/nf-winnls32-winnlsenableime
-    - name: FICHEIRO
+    - name: Mshtml
       href: mshtml2.md
       items:
-        - name: IWebBrowser2
+        - name: Iwebbrowser2
           href: /windows/desktop/api/Exdisp/nn-exdisp-iwebbrowser2
           items:
             - name: Propriedade HWND
               href: /previous-versions//mt725310(v=vs.85)
-            - name: Propriedade TheaterMode
+            - name: PropriedadeModmode
               href: /windows/desktop/api/Exdisp/nf-exdisp-iwebbrowser2-get_theatermode
             - name: Propriedade ToolBar
               href: /previous-versions//mt725312(v=vs.85)
     - name: Instalação
       href: installation.md
       items:
-        - name: Instalar
+        - name: CoInstall
           href: /windows/desktop/api/objbase/nf-objbase-coinstall
           items:
             - name: CSPLATFORM
               href: /previous-versions//bb432231(v=vs.85)
-            - name: QUERYCONTEXT
+            - name: Querycontext
               href: /previous-versions//bb432414(v=vs.85)
             - name: TYSPEC
               href: tyspec.md
@@ -910,19 +910,19 @@
           href: reload-config.md
         - name: SxsLookupClrGuid
           href: sxslookupclrguid.md
-        - name: UninstallComponent
+        - name: DesinstalarComponent
           href: uninstallcomponent.md
         - name: VerifyCatalogFile
           href: verifycatalogfile.md
-    - name: Pass-Through de destino iSCSI
+    - name: ISCSI Target Pass-Through
       href: /powershell/module/iscsi
       items:
         - name: SENSE_DATA
           href: sense-data.md
-    - name: VM Java
+    - name: Java VM
       href: java-vm.md
       items:
-        - name: DownloadJavaEX
+        - name: BaixarJavaEX
           href: downloadjavaex.md
         - name: JAVA_TRUST
           href: /windows/win32/api/Capi/ns-capi-java_trust
@@ -930,7 +930,7 @@
           href: notifybrowsershutdown.md
         - name: ShowJavaConsole
           href: showjavaconsole.md
-    - name: Depuração do Jet
+    - name: Depuração de Jet
       href: jet-debugging.md
       items:
         - name: CchLszOfId2
@@ -950,12 +950,12 @@
           href: msdelta-createdeltab.md
         - name: DeltaFree
           href: msdelta-deltafree.md
-    - name: MSN
+    - name: Msn
       href: msn.md
       items:
-        - name: Determinando se o MSN está no estado de entrada
+        - name: Determinando se o MSN está no estado de login
           href: determining-if-msn-is-in-the-signin-state.md
-    - name: 'MSXML 1,0 (obsoleto)'
+    - name: MSXML 1.0 (obsoleto)
       href: msxml-1-0.md
       items:
         - name: IXMLElementCollection
@@ -963,7 +963,7 @@
           items:
             - name: Método item
               href: /windows/desktop/api/Msxml/nf-msxml-ixmlelementcollection-item
-            - name: Método de get_length
+            - name: Get_length método
               href: /windows/desktop/api/Msxml/nf-msxml-ixmlelementcollection-get_length
     - name: Rede
       href: networking.md
@@ -985,7 +985,7 @@
               href: /windows/win32/api/Lmaccess/ns-lmaccess-netlogon_info_4
         - name: ResumeSuspendedDownload
           href: /previous-versions//bb432423(v=vs.85)
-        - name: Mecanismo de NDR de RPC
+        - name: Mecanismo NDR RPC
           href: rpc-ndr-engine.md
           items:
             - name: NdrComplexArrayBufferSize
@@ -1017,7 +1017,7 @@
       items:
         - name: DA_GET_NFS_ATTRIBUTES
           href: da-get-nfs-attributes.md
-    - name: OpenCL
+    - name: Opencl
       href: opencl.md
     - name: PatchAPI
       href: patchapi.md
@@ -1041,12 +1041,12 @@
           href: csciscscenabled.md
         - name: CSCQueryDatabaseStatus
           href: cscquerydatabasestatus.md
-    - name: Biblioteca de registro offline
+    - name: Biblioteca de Registro Offline
       href: offline-registry-library-portal.md
       items:
         - name: Sobre a biblioteca de registro offline
           href: about-the-offline-registry-library.md
-        - name: Funções da biblioteca do registro offline
+        - name: Funções de biblioteca de registro offline
           href: offline-registry-library-functions.md
           items:
             - name: ORCloseHive
@@ -1232,7 +1232,7 @@
         - name: Central de Segurança do Windows
           href: windows-security-center.md
           items:
-            - name: Enumerações da central de segurança do Windows
+            - name: Segurança do Windows Enumerações do Center
               href: windows-security-center-enumerations.md
               items:
                 - name: WSC_SECURITY_PRODUCT_STATE
@@ -1243,7 +1243,7 @@
                   href: /windows/win32/api/Wscapi/ne-wscapi-wsc_security_provider_health
                 - name: WSC_SECURITY_SIGNATURE_STATUS
                   href: /windows/win32/api/Iwscapi/ne-iwscapi-wsc_security_signature_status
-            - name: Interfaces da central de segurança do Windows
+            - name: Segurança do Windows Interfaces do Center
               href: windows-security-center-interfaces.md
               items:
                 - name: IWscProduct
@@ -1268,7 +1268,7 @@
                       href: /windows/desktop/api/Iwscapi/nf-iwscapi-iwscproductlist-initialize
                     - name: método Item
                       href: /windows/desktop/api/Iwscapi/nf-iwscapi-iwscproductlist-get_item
-            - name: Funções da central de segurança do Windows
+            - name: Segurança do Windows Funções do Center
               href: windows-security-center-functions.md
               items:
                 - name: WscGetSecurityProviderHealth
@@ -1351,7 +1351,7 @@
                   href: /windows/desktop/api/Filehc/nf-filehc-initializecache
                 - name: InsertFile
                   href: /windows/desktop/api/Filehc/nf-filehc-insertfile
-                - name: Invalidaname
+                - name: InvalidateName
                   href: /windows/desktop/api/Filehc/nf-filehc-invalidatename
                 - name: ProduceDotStuffedContext
                   href: /windows/desktop/api/Filehc/nf-filehc-producedotstuffedcontext
@@ -1373,7 +1373,7 @@
       items:
         - name: AddLocalAlternateComputerName
           href: addlocalalternatecomputername.md
-        - name: Biblioteca de aux
+        - name: Biblioteca Aux
           href: aux-library.md
           items:
             - name: AuxKlibInitialize
@@ -1399,7 +1399,7 @@
               href: resolvedelayloadedapi.md
             - name: ResolveDelayLoadsFromDll
               href: resolvedelayloadsfromdll.md
-        - name: Detectando retornos de chamada Kernel-Mode
+        - name: Detectando Kernel-Mode retornos de chamada
           href: detecting-kernel-mode-callbacks.md
         - name: Notificação de carregamento de DLL
           href: dll-load-notification.md
@@ -1444,11 +1444,11 @@
               href: /previous-versions//dn877135(v=vs.85)
             - name: EncodeSystemPointer
               href: /previous-versions//bb432255(v=vs.85)
-        - name: RegDeleteKeyEx (API-MS-Win)
+        - name: RegDeleteKeyEx (Api-ms-win)
           href: /previous-versions//ee361587(v=vs.85)
         - name: RegDeleteKeyEx (KernelBase)
           href: /previous-versions//ee125877(v=vs.85)
-        - name: Biblioteca de tempo de execução
+        - name: Biblioteca em tempo de executar
           href: run-time-library.md
           items:
             - name: RtlExtendedIntegerMultiply
@@ -1468,9 +1468,9 @@
           items:
             - name: Chamando APIs internas
               href: calling-internal-apis.md
-            - name: Obtendo a ID da sessão de console ativa
+            - name: Obter a ID da sessão do Console Ativo
               href: getting-the-active-console-session-id.md
-            - name: Obtendo a ID de sessão do processo atual
+            - name: Obter a ID da sessão do processo atual
               href: getting-the-session-id-of-the-current-process.md
             - name: IOCTL_TCP_QUERY_INFORMATION_EX
               href: /windows/desktop/api/Tcpioctl/ni-tcpioctl-ioctl_tcp_query_information_ex
@@ -1623,7 +1623,7 @@
               href: iprovidepropertybuilder-executebuilder.md
             - name: Método MapPropertyToBuilder
               href: iprovidepropertybuilder-mappropertytobuilder.md
-    - name: Política do modo de segurança do Windows
+    - name: Windows Política de modo seguro
       href: windows-lockdown-policy.md
       items:
         - name: WLDP_HOST_ID

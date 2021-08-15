@@ -3,18 +3,18 @@ title: album.csv
 description: album.csv
 ms.assetid: 7308e849-7227-480e-937a-8e9091bdec98
 keywords:
-- Armazenamentos online do Windows Media Player, album.csv
+- Windows Media Player lojas online album.csv
 - lojas online, album.csv
 - Digite 1 lojas online, album.csv
 - album.csv
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b8f8b71dc080e6983817d4e6f146249875887ed9
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 750926a3d01f8d65d7ed11c69436049e39ea3dabf0e446ede8a8c9dcecc53bec
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105781063"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120004196"
 ---
 # <a name="albumcsv"></a>album.csv
 

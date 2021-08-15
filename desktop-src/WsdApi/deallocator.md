@@ -4,12 +4,12 @@ ms.assetid: 58228dfd-1d4b-41e5-b423-a54525021c22
 title: elemento dealocador
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 692ed2e57b3e649c0ee7af171f205c949496f9b4
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 2e9a27f768d0c9d854d13bd58c0c797234a0526c4abb95a0c5f4fb553466a6ba
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107994933"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118991746"
 ---
 # <a name="deallocator-element"></a>elemento dealocador
 
@@ -46,7 +46,7 @@ O tipo de desalocação deve ser colocado em um par de <deallocator></deallocato
 -   nenhum
 -   WSDFreeLinkedMemory
 -   CoTaskMemFree
--   free
+-   livre
 -   excluir
 -   deleteArray
 -   Versão
@@ -55,7 +55,7 @@ O tipo de desalocação deve ser colocado em um par de <deallocator></deallocato
 
 
 
-| Label | Valor |
+| Rótulo | Valor |
 |-------------------------------------|---------------|
 | Sistema mínimo com suporte<br/> | Windows Vista |
 | Pode estar vazio                        | Sim           |

@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e50e3c187a4cb3b2a465257b408a1f5603c756ba
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 52d631e2f342302f8089a43a329ac3982cf7874b46ab0f60d3e4399855f573e0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104499999"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118960745"
 ---
 # <a name="ms-ds-ingress-claims-transformation-policy-attribute"></a>atributo ms-DS-ingress-Claims-Transformation-Policy
 
@@ -53,7 +53,7 @@ Este é um link para um objeto de política de transformação de declarações 
 | ID do link                | 2190                                                 |
 | MAPI-Id                | \-                                                   |
 | System-Only            | Falso                                                |
-| É de valor único       | True                                                 |
+| É de valor único       | Verdadeiro                                                 |
 | É indexado             | Falso                                                |
 | No catálogo global      | Falso                                                |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                         |

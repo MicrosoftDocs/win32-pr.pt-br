@@ -26,12 +26,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 37fbb7fc4c1e05e06bb8ef24aed7d9fc0faef085
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0f5a3709224e2c231ea35b53d2af823d19ec083974a0fbb4acd7a124d35153f5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105789417"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118982626"
 ---
 # <a name="columnstreamposition-property"></a>Propriedade ColumnStream. Position
 
@@ -40,7 +40,7 @@ Obtém ou define a posição atual no fluxo.
 **Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration

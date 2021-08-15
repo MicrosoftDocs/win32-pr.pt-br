@@ -4,21 +4,21 @@ ms.assetid: 7d82d67f-aad8-4e5b-ac65-87d75774e613
 title: Funções de dispositivo para aplicativos DirectSound
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3829817f8b00c7288aceb8d0b6d418d5793ae580
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 3037b767d7ddfb96d892c789608f23523efed465535258c336496f3f23d82f19
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103920125"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118957325"
 ---
 # <a name="device-roles-for-directsound-applications"></a>Funções de dispositivo para aplicativos DirectSound
 
 > [!Note]  
-> A [API MMDevice](mmdevice-api.md) dá suporte a funções de dispositivo. No entanto, a interface do usuário no Windows Vista não implementa o suporte para esse recurso. O suporte da interface do usuário para funções de dispositivo pode ser implementado em uma versão futura do Windows. Para obter mais informações, consulte [funções de dispositivo no Windows Vista](device-roles-in-windows-vista.md).
+> A [API MMDevice](mmdevice-api.md) dá suporte a funções de dispositivo. no entanto, a interface do usuário no Windows Vista não implementa o suporte para esse recurso. O suporte da interface do usuário para funções de dispositivo pode ser implementado em uma versão futura do Windows. para obter mais informações, consulte [funções de dispositivo no Windows Vista](device-roles-in-windows-vista.md).
 
  
 
-A API do DirectSound não fornece um meio para um aplicativo selecionar o [dispositivo de ponto de extremidade de áudio](audio-endpoint-devices.md) que o usuário atribuiu a uma função de [dispositivo](device-roles.md)específica. No entanto, no Windows Vista, as APIs de áudio principais podem ser usadas em conjunto com um aplicativo DirectSound para habilitar a seleção de dispositivos com base na função do dispositivo. Com a ajuda das principais APIs de áudio, o aplicativo pode identificar o dispositivo de ponto de extremidade de áudio atribuído a uma função específica, obter o GUID do dispositivo DirectSound para o dispositivo de ponto de extremidade e chamar a função **DirectSoundCreate** ou **DirectSoundCaptureCreate** para criar uma instância de interface **IDirectSound** ou **IDirectSoundCapture** que encapsula o dispositivo de ponto de extremidade. Para obter mais informações sobre o DirectSound, consulte a documentação do SDK do Windows.
+A API do DirectSound não fornece um meio para um aplicativo selecionar o [dispositivo de ponto de extremidade de áudio](audio-endpoint-devices.md) que o usuário atribuiu a uma função de [dispositivo](device-roles.md)específica. no entanto, no Windows Vista, as APIs de áudio principais podem ser usadas em conjunto com um aplicativo DirectSound para habilitar a seleção de dispositivos com base na função do dispositivo. Com a ajuda das principais APIs de áudio, o aplicativo pode identificar o dispositivo de ponto de extremidade de áudio atribuído a uma função específica, obter o GUID do dispositivo DirectSound para o dispositivo de ponto de extremidade e chamar a função **DirectSoundCreate** ou **DirectSoundCaptureCreate** para criar uma instância de interface **IDirectSound** ou **IDirectSoundCapture** que encapsula o dispositivo de ponto de extremidade. para obter mais informações sobre o DirectSound, consulte a documentação do SDK do Windows.
 
 O exemplo de código a seguir mostra como obter o GUID do dispositivo DirectSound para o dispositivo de renderização ou de captura que está atualmente atribuído a uma função de dispositivo específica:
 
@@ -97,13 +97,13 @@ O exemplo de código anterior Obtém o GUID do dispositivo DirectSound por:
 -   Criar uma instância de interface [**IMMDevice**](/windows/desktop/api/Mmdeviceapi/nn-mmdeviceapi-immdevice) que representa o dispositivo de ponto de extremidade de áudio que tem a direção de fluxo de dados e a função de dispositivo especificadas.
 -   Abrindo o repositório de propriedades do dispositivo de ponto de extremidade de áudio.
 -   Obtendo a propriedade [**PKEY \_ AudioEndpoint \_ GUID**](pkey-audioendpoint-guid.md) do repositório de propriedades. O valor da propriedade é uma representação de cadeia de caracteres do GUID do dispositivo DirectSound para o dispositivo de ponto de extremidade de áudio.
--   Chamar a função [**CLSIDFromString**](https://www.bing.com/search?q=**CLSIDFromString**) para converter a representação da cadeia de caracteres do GUID do dispositivo em uma estrutura de GUID. Para obter mais informações sobre o **CLSIDFromString**, consulte a documentação do SDK do Windows.
+-   Chamar a função [**CLSIDFromString**](https://www.bing.com/search?q=**CLSIDFromString**) para converter a representação da cadeia de caracteres do GUID do dispositivo em uma estrutura de GUID. para obter mais informações sobre o **CLSIDFromString**, consulte a documentação do SDK do Windows.
 
 Depois de obter um GUID de dispositivo da função GetDirectSoundGuid, o aplicativo pode chamar **DirectSoundCreate** ou **DIRECTSOUNDCAPTURECREATE** com esse GUID para criar o dispositivo de captura ou a renderização do DirectSound que encapsula o dispositivo de ponto de extremidade de áudio. Quando o DirectSound cria um dispositivo dessa forma, ele sempre atribui o fluxo de áudio do dispositivo à sessão padrão — a sessão de áudio específica do processo que é identificada pelo valor GUID da sessão GUID \_ NULL.
 
-Se o aplicativo exigir que o DirectSound atribua o fluxo a uma sessão de áudio de processo cruzado ou a uma sessão com um GUID de sessão não **nulo** , ele deverá chamar o método [**IMMDevice:: Activate**](/windows/desktop/api/Mmdeviceapi/nf-mmdeviceapi-immdevice-activate) para criar um objeto **IDirectSound** ou **IDirectSoundCapture** em vez de usar a técnica mostrada no exemplo de código anterior. Para obter um exemplo de código que mostra como usar o método **Activate** para especificar uma sessão de áudio de processo cruzado ou um GUID de sessão não **nulo** para um fluxo, consulte [funções de dispositivo para aplicativos do DirectShow](device-roles-for-directshow-applications.md). O exemplo de código nessa seção mostra como criar um filtro do DirectShow, mas, com pequenas modificações, o código pode ser adaptado para criar um dispositivo DirectSound.
+Se o aplicativo exigir que o DirectSound atribua o fluxo a uma sessão de áudio de processo cruzado ou a uma sessão com um GUID de sessão não **nulo** , ele deverá chamar o método [**IMMDevice:: Activate**](/windows/desktop/api/Mmdeviceapi/nf-mmdeviceapi-immdevice-activate) para criar um objeto **IDirectSound** ou **IDirectSoundCapture** em vez de usar a técnica mostrada no exemplo de código anterior. para obter um exemplo de código que mostra como usar o método **Activate** para especificar uma sessão de áudio de processo cruzado ou um GUID de sessão não **nulo** para um fluxo, consulte [funções de dispositivo para aplicativos DirectShow](device-roles-for-directshow-applications.md). o exemplo de código nessa seção mostra como criar um filtro de DirectShow, mas, com pequenas modificações, o código pode ser adaptado para criar um dispositivo DirectSound.
 
-A função GetDirectSoundGuid no exemplo de código anterior chama a função [**CoCreateInstance**](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance) para criar um enumerador para os dispositivos de ponto de extremidade de áudio no sistema. A menos que o programa de chamada chamou anteriormente a função [**CoInitialize**](/windows/desktop/api/objbase/nf-objbase-coinitialize) ou [**CoInitializeEx**](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializeex) para inicializar a biblioteca com, a chamada **CoCreateInstance** falhará. Para obter mais informações sobre **CoCreateInstance**, **CoInitialize** e **CoInitializeEx**, consulte a documentação do SDK do Windows.
+A função GetDirectSoundGuid no exemplo de código anterior chama a função [**CoCreateInstance**](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance) para criar um enumerador para os dispositivos de ponto de extremidade de áudio no sistema. A menos que o programa de chamada chamou anteriormente a função [**CoInitialize**](/windows/desktop/api/objbase/nf-objbase-coinitialize) ou [**CoInitializeEx**](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializeex) para inicializar a biblioteca com, a chamada **CoCreateInstance** falhará. para obter mais informações sobre **CoCreateInstance**, **coinitialize** e **CoInitializeEx**, consulte a documentação do SDK do Windows.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

@@ -14,12 +14,12 @@ api_type:
 api_location:
 - PortableDeviceGUIDs.lib
 - PortableDeviceGUIDs.dll
-ms.openlocfilehash: 362672daad835a2e843edeaf6dc517884c25f1ad
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d6389b426aca52f20b082ed4730778432bdbe56c4a6a1e0a4495060f13dbb5d9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105752138"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118963675"
 ---
 # <a name="iportabledevicevaluesgetguidvalue-method"></a>Método IPortableDeviceValues:: getguidvalue
 
@@ -55,7 +55,7 @@ Ponteiro para o valor **GUID** recuperado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
 

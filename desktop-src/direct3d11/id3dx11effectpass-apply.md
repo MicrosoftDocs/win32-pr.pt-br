@@ -1,11 +1,11 @@
 ---
-title: Método ID3DX11EffectPass Apply (D3dx11effect. h)
-description: Defina o estado contido em uma passagem para o dispositivo.
+title: Método ID3DX11EffectPass Apply (D3dx11effect.h)
+description: De definir o estado contido em uma passagem para o dispositivo.
 ms.assetid: d67fe968-bfb2-4f3a-b393-3f72f680211f
 keywords:
 - Aplicar o método Direct3D 11
 - Aplicar o método Direct3D 11, interface ID3DX11EffectPass
-- Interface ID3DX11EffectPass Direct3D 11, método Apply
+- ID3DX11EffectPass interface Direct3D 11 , método Apply
 topic_type:
 - apiref
 api_name:
@@ -24,9 +24,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119046044"
 ---
-# <a name="id3dx11effectpassapply-method"></a>Método ID3DX11EffectPass:: apply
+# <a name="id3dx11effectpassapply-method"></a>Método ID3DX11EffectPass::Apply
 
-Defina o estado contido em uma passagem para o dispositivo.
+De definir o estado contido em uma passagem para o dispositivo.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -47,7 +47,7 @@ HRESULT Apply(
 *Sinalizadores* 
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
 Não utilizado.
 
@@ -58,7 +58,7 @@ Não utilizado.
 
 Tipo: **[ **ID3D11DeviceContext**](/windows/desktop/api/D3D11/nn-d3d11-id3d11devicecontext)\***
 
-O [**ID3D11DeviceContext**](/windows/desktop/api/D3D11/nn-d3d11-id3d11devicecontext) para aplicar a passagem.
+O [**ID3D11DeviceContext ao**](/windows/desktop/api/D3D11/nn-d3d11-id3d11devicecontext) que aplicar a passagem.
 
 </dd> </dl>
 
@@ -66,12 +66,12 @@ O [**ID3D11DeviceContext**](/windows/desktop/api/D3D11/nn-d3d11-id3d11devicecont
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Retorna um dos seguintes [códigos de retorno do Direct3D 11](d3d11-graphics-reference-returnvalues.md).
+Retorna um dos códigos de [retorno do Direct3D 11 a seguir.](d3d11-graphics-reference-returnvalues.md)
 
 ## <a name="remarks"></a>Comentários
 
 > [!Note]  
-> O SDK do DirectX não fornece nenhum binário compilado para efeitos. Você deve usar a fonte Effects 11 para criar seu aplicativo de tipo de efeitos. Para obter mais informações sobre como usar a fonte Effects 11, consulte [diferenças entre os efeitos 10 e os efeitos 11](d3d11-graphics-programming-guide-effects-differences.md).
+> O SDK do DirectX não fornece binários compilados para efeitos. Você deve usar a origem efeitos 11 para criar seu aplicativo do tipo efeitos. Para obter mais informações sobre como usar a origem dos Efeitos 11, consulte [Diferenças entre efeitos 10 e efeitos 11.](d3d11-graphics-programming-guide-effects-differences.md)
 
  
 
@@ -81,8 +81,8 @@ Retorna um dos seguintes [códigos de retorno do Direct3D 11](d3d11-graphics-ref
 
 | Requisito | Valor |
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3dx11effect. h</dt> </dl>                                                    |
-| Biblioteca<br/> | <dl> <dt>N/A (uma biblioteca Effects 11 está disponível online como fonte compartilhada.)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>D3dx11effect.h</dt> </dl>                                                    |
+| Biblioteca<br/> | <dl> <dt>N/A (uma biblioteca effects 11 está disponível online como fonte compartilhada.)</dt> </dl> |
 
 
 

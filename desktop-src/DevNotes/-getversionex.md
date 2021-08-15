@@ -1,7 +1,7 @@
 ---
 description: Obtém informações sobre a versão do sistema operacional.
 ms.assetid: 1af2c320-6e0b-4692-858b-a2c921ed7ce7
-title: Função _GetVersionEx
+title: _GetVersionEx função
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - Msmdun80.dll
 - Sqlunirl.dll
-ms.openlocfilehash: dd4b33bee4a5f1c2a72ef7494176fe2979b4a7cd
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2e3047edfaf2dabe591172dd3ca292f41aeefa90774231b417f5405e3aeb18c9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105752929"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118956285"
 ---
 # <a name="_getversionex-function"></a>\_Função GetVersionEx
 
-\[Essa função é um wrapper sobre a função **GetVersionEx** . Essa função pode ser alterada ou não estar disponível no futuro. Os aplicativos devem chamar **GetVersionEx** diretamente.\]
+\[Essa função é um wrapper sobre a **função GetVersionEx.** Essa função pode ser alterada ou não disponível no futuro. Os aplicativos devem **chamar GetVersionEx** diretamente.\]
 
 Obtém informações sobre a versão do sistema operacional. Consulte [**GetVersionEx**](/windows/win32/api/sysinfoapi/nf-sysinfoapi-getversionexa).
 
@@ -59,7 +59,7 @@ BOOL _GetVersionEx(
 
 <dl> <dt>
 
-[**GetVersionEx**](/windows/win32/api/sysinfoapi/nf-sysinfoapi-getversionexa)
+[**Getversionex**](/windows/win32/api/sysinfoapi/nf-sysinfoapi-getversionexa)
 </dt> </dl>
 
  

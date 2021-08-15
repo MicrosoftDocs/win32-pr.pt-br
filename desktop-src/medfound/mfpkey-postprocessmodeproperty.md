@@ -4,12 +4,12 @@ ms.assetid: c6dab7f6-4a3e-45bb-b81c-5f4c39f9e954
 title: Propriedade MFPKEY_POSTPROCESSMODE (Wmcodecdsp. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a4002deae63f1bdaea09ca31dd95bfec1cb594fc
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: dce916d0b74c25ae2a57a43acde128ce8c45e7eb42860c3d7a2f129ea2d5b3c4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105760654"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118973545"
 ---
 # <a name="mfpkey_postprocessmode-property"></a>\_Propriedade CREATEprocessmode do MFPKEY
 
@@ -51,7 +51,7 @@ Como o valor dessa propriedade vai de 0 a 4, a complexidade da decodificação, 
 | Requisito | Valor |
 |-------------------|-----------------------------------------------------------------------------------------|
 | Cliente<br/> | Windows Vista ou Windows 7<br/>                                                   |
-| parâmetro<br/> | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Cabeçalho<br/> | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
 
 
 

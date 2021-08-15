@@ -5,12 +5,12 @@ ms.assetid: c55e4881-ca98-4393-a72e-f3ced687b7ca
 title: Glossário da API do Tablet PC
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6ec2c047061f8c842f4725875d045e4895927bc1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 394b935bb36fbd4c8e4dfa429b4da341c72f5467d9023e772ef898df4a59bb47
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104501832"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118967573"
 ---
 # <a name="tablet-pc-api-glossary"></a>Glossário da API do Tablet PC
 
@@ -254,7 +254,7 @@ Um mecanismo que reconhece e processa a entrada de tinta como comandos do sistem
 
 </dd> <dt>
 
-<span id="tablet.tablet_glossary_microsoft_windows_journal_note_reader"></span><span id="TABLET.TABLET_GLOSSARY_MICROSOFT_WINDOWS_JOURNAL_NOTE_READER"></span>**Leitor de notas do diário do Microsoft Windows**
+<span id="tablet.tablet_glossary_microsoft_windows_journal_note_reader"></span><span id="TABLET.TABLET_GLOSSARY_MICROSOFT_WINDOWS_JOURNAL_NOTE_READER"></span>**leitor de anotações do Microsoft Windows Journal**
 </dt> <dd>
 
 Um componente que usa um fluxo que contém um arquivo. jnt e retorna um fluxo contendo o conteúdo do arquivo em formato XML que está de acordo com o esquema de leitor de nota do diário.
@@ -299,7 +299,7 @@ Uma unidade de tinta interpretada por um reconhecedor. Para idiomas ocidentais, 
 <span id="tablet.tablet_glossary_recognizer"></span><span id="TABLET.TABLET_GLOSSARY_RECOGNIZER"></span>**reconhecedor**
 </dt> <dd>
 
-Um módulo de software que reconhece e processa componentes de um idioma ou grupo de idiomas relacionados, ou uma classe de objetos relacionados, como notas musicais, gestos do sistema e formas geométricas.
+Um módulo de software que reconhece e processa componentes de um idioma ou grupo de linguagens relacionadas ou uma classe de objetos relacionados, como notas músicais, gestos do sistema e formas geométricas.
 
 </dd> <dt>
 
@@ -310,52 +310,52 @@ Informações específicas do aplicativo que o reconhecedor usa para executar o 
 
 </dd> <dt>
 
-<span id="tablet.tablet_glossary_sketch_ink_object"></span><span id="TABLET.TABLET_GLOSSARY_SKETCH_INK_OBJECT"></span>**objeto de tinta do esboço**
+<span id="tablet.tablet_glossary_sketch_ink_object"></span><span id="TABLET.TABLET_GLOSSARY_SKETCH_INK_OBJECT"></span>**objeto de tinta de esboço**
 </dt> <dd>
 
-Um objeto OLE que representa a tinta que é interpretada como um desenho em vez de uma palavra.
+Um objeto OLE que representa a tinta interpretada como um desenho em vez de uma palavra.
 
 </dd> <dt>
 
 <span id="tablet.tablet_glossary_system_dictionary"></span><span id="TABLET.TABLET_GLOSSARY_SYSTEM_DICTIONARY"></span>**dicionário do sistema**
 </dt> <dd>
 
-Uma lista de palavras que contém todas as palavras escritas normalmente em um idioma.
+Uma lista de palavras que contém todas as palavras comumente escritas em um idioma.
 
 </dd> <dt>
 
 <span id="tablet.tablet_glossary_system_gesture"></span><span id="TABLET.TABLET_GLOSSARY_SYSTEM_GESTURE"></span>**gesto do sistema**
 </dt> <dd>
 
-Um equivalente de caneta de uma mensagem de mouse tradicional, como clique com o botão esquerdo ou clique duas vezes.
+Uma caneta equivalente a uma mensagem tradicional do mouse, como clique com o botão esquerdo ou clique duas vezes.
 
 </dd> <dt>
 
-<span id="tablet.tablet_glossary_tablet_pc_managed_library"></span><span id="TABLET.TABLET_GLOSSARY_TABLET_PC_MANAGED_LIBRARY"></span>**Biblioteca gerenciada do Tablet PC**
+<span id="tablet.tablet_glossary_tablet_pc_managed_library"></span><span id="TABLET.TABLET_GLOSSARY_TABLET_PC_MANAGED_LIBRARY"></span>**Biblioteca Gerenciada de TABLET PC**
 </dt> <dd>
 
-Um conjunto de objetos gerenciados que estende o Microsoft .NET Framework para fornecer suporte para entrada e saída de manuscrito no Tablet PC e no intercâmbio de dados com outros computadores.
+Um conjunto de objetos gerenciados que estende o microsoft .NET Framework para fornecer suporte para entrada e saída de manuscrito em tablet pc e intercâmbio de dados com outros computadores.
 
 </dd> <dt>
 
-<span id="tablet.tablet_glossary_text_ink_object"></span><span id="TABLET.TABLET_GLOSSARY_TEXT_INK_OBJECT"></span>**objeto de tinta de texto**
+<span id="tablet.tablet_glossary_text_ink_object"></span><span id="TABLET.TABLET_GLOSSARY_TEXT_INK_OBJECT"></span>**objeto text ink**
 </dt> <dd>
 
-Um objeto OLE que representa a tinta que é interpretada como uma palavra.
+Um objeto OLE que representa tinta interpretada como uma palavra.
 
 </dd> <dt>
 
-<span id="tablet.tablet_glossary_user_dictionary"></span><span id="TABLET.TABLET_GLOSSARY_USER_DICTIONARY"></span>**dicionário do usuário**
+<span id="tablet.tablet_glossary_user_dictionary"></span><span id="TABLET.TABLET_GLOSSARY_USER_DICTIONARY"></span>**dicionário de usuário**
 </dt> <dd>
 
-Uma lista de palavras que contém palavras adicionadas ao dicionário por usuários.
+Uma lista de palavras que contém palavras adicionadas ao dicionário pelos usuários.
 
 </dd> <dt>
 
 <span id="tablet.tablet_glossary_word_list"></span><span id="TABLET.TABLET_GLOSSARY_WORD_LIST"></span>**lista de palavras**
 </dt> <dd>
 
-Um arquivo que contém uma coleção de palavras que compõem um dicionário de aplicativo.
+Um arquivo que contém uma coleção de palavras que comem um dicionário de aplicativos.
 
 </dd> </dl>
 

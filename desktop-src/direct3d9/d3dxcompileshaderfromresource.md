@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: de94754004cc42bcc6914d9513588a71a1a593dd
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: b137419394f422dba08a4580d8e126361d97a78b747551e0305bb0a248312177
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108115804"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118988672"
 ---
 # <a name="d3dxcompileshaderfromresource-function"></a>Função D3DXCompileShaderFromResource
 
@@ -108,7 +108,7 @@ Ponteiro para um perfil de sombreador que determina o conjunto de instruções d
 
 </dd> <dt>
 
-*Flags* \[in\]
+*Sinalizadores* \[ de no\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
@@ -161,7 +161,7 @@ Se a função for bem sucedido, o valor de retorno será D3D \_ OK. Se a funçã
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

@@ -1,11 +1,11 @@
 ---
-title: Telefone-pager-outro atributo
+title: Telefone atributo Telefone-Pager-Other
 description: Uma lista de números de pager alternativos.
 ms.assetid: 4e01440f-782f-459f-8937-8c75b11fc271
 ms.tgt_platform: multiple
 keywords:
-- Phone-pager-outro esquema do AD de atributos
-- Esquema de AD do atributo otherPager
+- Telefone-Pager-Other atributo AD Schema
+- Esquema do AD do atributo otherPager
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e2826b9b57e4349063abf8ccefd3ef4a69a307e5
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 7e9865e3713d0591715aa4f3c975f3cbdd095192b81916ed27b48763ed418a27
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104370004"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118960135"
 ---
-# <a name="phone-pager-other-attribute"></a>Telefone-pager-outro atributo
+# <a name="phone-pager-other-attribute"></a>Telefone atributo Telefone-Pager-Other
 
 Uma lista de números de pager alternativos.
 
@@ -29,14 +29,14 @@ Uma lista de números de pager alternativos.
 
 | Entrada | Valor |
 |-------------------|----------------------------------------------------------------------------------|
-| CN                | Telefone-pager-outro                                                                |
-| LDAP-Display-Name | otherPager                                                                       |
+| CN                | Telefone-Pager-Other                                                                |
+| Ldap-Display-Name | otherPager                                                                       |
 | Tamanho              | \-                                                                               |
 | Privilégio de atualização  | Administrador de domínio ou proprietário da conta.                                           |
 | Frequência de atualização  | Quando o registro do usuário é criado e sempre que o número de telefone precisa ser alterado. |
 | Attribute-Id      | 1.2.840.113556.1.2.118                                                           |
-| System-ID-GUID    | f0f8ffa4-1191-11d0-a060-00aa006c33ed                                             |
-| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md)                                      |
+| System-Id-Guid    | f0f8ffa4-1191-11d0-a060-00aa006c33ed                                             |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md)                                      |
 
 
 
@@ -58,10 +58,10 @@ Uma lista de números de pager alternativos.
 | ID do link                | \-                                                                 |
 | MAPI-Id                | 0x8C6E                                                             |
 | System-Only            | Falso                                                              |
-| É de valor único       | Falso                                                              |
+| Tem valor único       | Falso                                                              |
 | É indexado             | Falso                                                              |
-| No catálogo global      | Falso                                                              |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                       |
+| No Catálogo Global      | Falso                                                              |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                       |
 | Range-Lower            | 1                                                                  |
 | Range-Upper            | 64                                                                 |
 | Search-Flags           | 0x00000000                                                         |
@@ -79,10 +79,10 @@ Uma lista de números de pager alternativos.
 | ID do link                | \-                                                                 |
 | MAPI-Id                | 0x8C6E                                                             |
 | System-Only            | Falso                                                              |
-| É de valor único       | Falso                                                              |
+| Tem valor único       | Falso                                                              |
 | É indexado             | Falso                                                              |
-| No catálogo global      | Falso                                                              |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                       |
+| No Catálogo Global      | Falso                                                              |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                       |
 | Range-Lower            | 1                                                                  |
 | Range-Upper            | 64                                                                 |
 | Search-Flags           | 0x00000000                                                         |
@@ -100,10 +100,10 @@ Uma lista de números de pager alternativos.
 | ID do link                | \-                                                                 |
 | MAPI-Id                | 0x8C6E                                                             |
 | System-Only            | Falso                                                              |
-| É de valor único       | Falso                                                              |
+| Tem valor único       | Falso                                                              |
 | É indexado             | Falso                                                              |
-| No catálogo global      | Falso                                                              |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                       |
+| No Catálogo Global      | Falso                                                              |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                       |
 | Range-Lower            | 1                                                                  |
 | Range-Upper            | 64                                                                 |
 | Search-Flags           | 0x00000000                                                         |

@@ -3,7 +3,7 @@ title: Mensagem de CB_FINDSTRINGEXACT (WinUser. h)
 description: Localiza a primeira cadeia de caracteres da caixa de listagem em uma caixa de combinação que corresponde à cadeia de caracteres especificada no parâmetro lParam.
 ms.assetid: 9065af9f-b18e-4fd5-a8cc-f780f8d0fb05
 keywords:
-- Controles de CB_FINDSTRINGEXACT de mensagens do Windows
+- controles de Windows de mensagem de CB_FINDSTRINGEXACT
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7f99d85c7dddb95bdfb168443d6f977c22273a87
-ms.sourcegitcommit: dc2f43e0f23f4a4ce239118cf9a5180f3ff0dd1d
+ms.openlocfilehash: 95010548601350b666ee65da4bd048127917dc9c1e80ac26ead844d8597a7a18
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "108327171"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119079140"
 ---
 # <a name="cb_findstringexact-message"></a>\_Mensagem de FINDSTRINGEXACT CB
 
@@ -43,7 +43,7 @@ Um ponteiro para a cadeia de caracteres terminada em nulo para pesquisa. A pesqu
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O valor de retorno é o índice de base zero do item correspondente. Se a pesquisa não for bem-sucedida, será CB \_ Err.
 
@@ -59,9 +59,9 @@ Se você criar a caixa de combinação com um estilo desenhado pelo proprietári
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                                     |
-| parâmetro<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                                           |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                                     |
+| Cabeçalho<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
 
 
 

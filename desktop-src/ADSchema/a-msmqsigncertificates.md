@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8dd7e81cf145ac249b78e0a3e20be657df68b4af
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 89ee82a5a2bf64acc315dfb535ca6897261ef0cb26f5e249a8c8593cc492b53c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103825162"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119081740"
 ---
 # <a name="msmq-sign-certificates-attribute"></a>Atributo MSMQ-Sign-Certificates
 
@@ -58,9 +58,9 @@ Esse atributo contém um número de certificados. Um usuário pode gerar um cert
 | ID do link                | \-                                                                                            |
 | MAPI-Id                | \-                                                                                            |
 | System-Only            | Falso                                                                                         |
-| É de valor único       | True                                                                                          |
+| É de valor único       | Verdadeiro                                                                                          |
 | É indexado             | Falso                                                                                         |
-| No catálogo global      | True                                                                                          |
+| No catálogo global      | Verdadeiro                                                                                          |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                  |
 | Range-Lower            | \-                                                                                            |
 | Range-Upper            | \-                                                                                            |
@@ -79,9 +79,9 @@ Esse atributo contém um número de certificados. Um usuário pode gerar um cert
 | ID do link                | \-                                                                                            |
 | MAPI-Id                | \-                                                                                            |
 | System-Only            | Falso                                                                                         |
-| É de valor único       | True                                                                                          |
+| É de valor único       | Verdadeiro                                                                                          |
 | É indexado             | Falso                                                                                         |
-| No catálogo global      | True                                                                                          |
+| No catálogo global      | Verdadeiro                                                                                          |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                  |
 | Range-Lower            | \-                                                                                            |
 | Range-Upper            | \-                                                                                            |
@@ -100,15 +100,15 @@ Esse atributo contém um número de certificados. Um usuário pode gerar um cert
 | ID do link                | \-                                                                                            |
 | MAPI-Id                | \-                                                                                            |
 | System-Only            | Falso                                                                                         |
-| É de valor único       | True                                                                                          |
+| É de valor único       | Verdadeiro                                                                                          |
 | É indexado             | Falso                                                                                         |
-| No catálogo global      | True                                                                                          |
+| No catálogo global      | Verdadeiro                                                                                          |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                  |
 | Range-Lower            | \-                                                                                            |
 | Range-Upper            | \-                                                                                            |
 | Search-Flags           | 0x00000000                                                                                    |
 | System-Flags           | 0x00000010                                                                                    |
-| Classes usadas em        | [**MSMQ-migrado-usuário**](c-msmqmigrateduser.md)<br/> [**Usuário**](c-user.md)<br/> |
+| Classes usadas em        | [**MSMQ-Migrated-User**](c-msmqmigrateduser.md)<br/> [**Usuário**](c-user.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Esse atributo contém um número de certificados. Um usuário pode gerar um cert
 | ID do link                | \-                                                                                            |
 | MAPI-Id                | \-                                                                                            |
 | System-Only            | Falso                                                                                         |
-| É de valor único       | True                                                                                          |
+| Tem valor único       | Verdadeiro                                                                                          |
 | É indexado             | Falso                                                                                         |
-| No catálogo global      | True                                                                                          |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                  |
+| No Catálogo Global      | Verdadeiro                                                                                          |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                  |
 | Range-Lower            | \-                                                                                            |
 | Range-Upper            | \-                                                                                            |
 | Search-Flags           | 0x00000000                                                                                    |
 | System-Flags           | 0x00000010                                                                                    |
-| Classes usadas em        | [**MSMQ-migrado-usuário**](c-msmqmigrateduser.md)<br/> [**Usuário**](c-user.md)<br/> |
+| Classes usadas em        | [**MSMQ-Migrated-User**](c-msmqmigrateduser.md)<br/> [**Usuário**](c-user.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Esse atributo contém um número de certificados. Um usuário pode gerar um cert
 | ID do link                | \-                                                                                            |
 | MAPI-Id                | \-                                                                                            |
 | System-Only            | Falso                                                                                         |
-| É de valor único       | True                                                                                          |
+| Tem valor único       | Verdadeiro                                                                                          |
 | É indexado             | Falso                                                                                         |
-| No catálogo global      | True                                                                                          |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                  |
+| No Catálogo Global      | Verdadeiro                                                                                          |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                  |
 | Range-Lower            | \-                                                                                            |
 | Range-Upper            | \-                                                                                            |
 | Search-Flags           | 0x00000000                                                                                    |
 | System-Flags           | 0x00000010                                                                                    |
-| Classes usadas em        | [**MSMQ-migrado-usuário**](c-msmqmigrateduser.md)<br/> [**Usuário**](c-user.md)<br/> |
+| Classes usadas em        | [**MSMQ-Migrated-User**](c-msmqmigrateduser.md)<br/> [**Usuário**](c-user.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Esse atributo contém um número de certificados. Um usuário pode gerar um cert
 | ID do link                | \-                                                                                            |
 | MAPI-Id                | \-                                                                                            |
 | System-Only            | Falso                                                                                         |
-| É de valor único       | True                                                                                          |
+| Tem valor único       | Verdadeiro                                                                                          |
 | É indexado             | Falso                                                                                         |
-| No catálogo global      | True                                                                                          |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                  |
+| No Catálogo Global      | Verdadeiro                                                                                          |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                  |
 | Range-Lower            | \-                                                                                            |
 | Range-Upper            | \-                                                                                            |
 | Search-Flags           | 0x00000000                                                                                    |
 | System-Flags           | 0x00000010                                                                                    |
-| Classes usadas em        | [**MSMQ-migrado-usuário**](c-msmqmigrateduser.md)<br/> [**Usuário**](c-user.md)<br/> |
+| Classes usadas em        | [**MSMQ-Migrated-User**](c-msmqmigrateduser.md)<br/> [**Usuário**](c-user.md)<br/> |
 
 
 

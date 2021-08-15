@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: b6aa6aa71b1738a815beee9cdc7c0f47118eb27f
-ms.sourcegitcommit: 168d11879cb9fd89d26f826482725c0a626be00f
+ms.openlocfilehash: 6f05d67477bb7e6c89eddfe0a68ad47d83760762fc68cddf6f73c731886f88d1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "103664130"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119697446"
 ---
 # <a name="cgenericlistaddbefore-method-wxlisth---pos-plist-parameters"></a>Método CGenericList. AddBefore (Wxlist. h)-Pos, parâmetros do pList
 
@@ -57,7 +57,7 @@ Ponteiro para a lista a ser inserida.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retornará **true** se for bem-sucedido. Caso contrário, retornará **false**.
 
@@ -65,7 +65,7 @@ Retornará **true** se for bem-sucedido. Caso contrário, retornará **false**.
 
 | Requisito | Valor |
 |-|-|
-| parâmetro | Wxlist. h (incluir fluxos. h) |
+| parâmetro | Wxlist. h (incluir Fluxos. h) |
 | Biblioteca| Strmbase. lib (compilações de varejo); Strmbasd. lib (compilações de depuração) |
 
 ## <a name="see-also"></a>Confira também

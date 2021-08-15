@@ -4,12 +4,12 @@ ms.assetid: 1564F6F2-844F-4392-9EB5-AA46059D514C
 title: Visores e conteúdo
 ms.topic: article
 ms.date: 02/03/2020
-ms.openlocfilehash: 9cda367067ea860ce6a42a16e81d38393937276a
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: a103df916e5880380064250d05806169ff4187e6a8be0b22d2dd72d92343f38f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104551726"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118787031"
 ---
 # <a name="viewports-and-content"></a>Visores e conteúdo
 
@@ -27,7 +27,7 @@ A [manipulação direta](direct-manipulation-portal.md) usa *visores*, *conteúd
 Um *visor* é uma região dentro de uma janela que pode receber e processar a entrada de interações do usuário. O visor representa a região do conteúdo que pode ser vista pelo usuário final em um determinado momento (também chamado de clipe de conteúdo). O visor tem várias funções:
 
 - Ele gerencia o estado de interação (por exemplo, quando o conteúdo está pronto para ser manipulado, quando o conteúdo está passando por manipulação, quando o conteúdo está na animação inércia) e mapeia a entrada para transformações de saída.
-- Ele contém o conteúdo que se move em resposta à interação do usuário. Isso pode ser um elemento HTML div (rolagem), uma lista de panorâmica (a tela inicial do Windows 8) ou o menu pop-up para um controle SELECT.
+- Ele contém o conteúdo que se move em resposta à interação do usuário. isso pode ser um elemento HTML div (rolagem), uma lista de panorâmica (a Windows 8 tela inicial) ou o menu pop-up para um controle select.
 
 Um visor é criado chamando [**createviewport**](/windows/win32/api/DirectManipulation/nf-directmanipulation-idirectmanipulationmanager-createviewport). Várias visores podem ser criadas em uma única janela para produzir uma experiência de interface do usuário rica.
 
@@ -111,64 +111,64 @@ O sistema de coordenadas é muito útil em cenários RTL, onde você deseja desc
 
 Você quase sempre usará [**SetSnapCoordinate**](/windows/win32/api/DirectManipulation/nf-directmanipulation-idirectmanipulationprimarycontent-setsnapcoordinate) com o parâmetro *Origin* definido para evitar a configuração de pontos de ajuste fora da área de conteúdo.
 
-Por exemplo, se o visor for 200 x 200 e o conteúdo for 1000x200 e a interface for RTL, o visor terá sua borda esquerda em x = 800 quando o visor for apresentado pela primeira vez. Chame [**SetSnapCoordinate**](/windows/win32/api/DirectManipulation/nf-directmanipulation-idirectmanipulationprimarycontent-setsnapcoordinate) com `SetSnapCoordinate(DIRECTMANIPULATION_MOTION_TRANSLATEX, DIRECTMANIPULATION_COORDINATE_MIRRORED, 1000.0)` para especificar que os pontos de ajuste devem ser calculados da ordem direita para a esquerda, começando da borda direita do conteúdo.
+Por exemplo, se o viewport for 200x200 e o conteúdo for 1000x200 e a interface for RTL, o viewport terá sua borda esquerda em x=800 quando o viewport for apresentado pela primeira vez. Chame [**SetSnapCoordinate com**](/windows/win32/api/DirectManipulation/nf-directmanipulation-idirectmanipulationprimarycontent-setsnapcoordinate) para especificar que os pontos de snap devem ser calculados da ordem da direita para a esquerda, começando na `SetSnapCoordinate(DIRECTMANIPULATION_MOTION_TRANSLATEX, DIRECTMANIPULATION_COORDINATE_MIRRORED, 1000.0)` borda DIREITA do conteúdo.
 
 ## <a name="behaviors"></a>Comportamentos
 
-Um *comportamento* é um objeto que pode ser anexado a um visor para modificar como a [manipulação direta](direct-manipulation-portal.md) manipula a transformação de saída do conteúdo primário ou secundário de um visor. Um objeto de comportamento pode afetar um ou mais aspectos de uma manipulação, como a forma como a entrada é processada ou como a animação inércia é aplicada. Por exemplo, um comportamento de rolagem afeta a animação inércia executando uma animação de rolagem em direção a uma extremidade do conteúdo primário. Um comportamento de configuração de slide cruzado afeta o processamento de entrada de manipulação direta que detecta quando uma ação de slide cruzado está sendo executada.
+Um *comportamento* é um objeto que pode ser anexado [](direct-manipulation-portal.md) a um viewport para modificar como a Manipulação Direta manipula a transformação de saída do conteúdo primário ou secundário de um viewport. Um objeto de comportamento pode afetar um ou mais aspectos de uma manipulação, como como a entrada é processada ou como a animação de inércia é aplicada. Por exemplo, um comportamento de autoscroll afeta a animação de inércia executando uma animação de rolagem para uma extremidade do conteúdo primário. Um comportamento de configuração entre slides afeta o processamento de entrada de Manipulação Direta, que detecta quando uma ação entre slides está sendo executada.
 
-Um objeto de comportamento é criado chamando [**CreateBehavior**](/windows/win32/api/DirectManipulation/nf-directmanipulation-idirectmanipulationmanager2-createbehavior), adicionado a um visor e, em seguida, seu comportamento é configurado de forma assíncrona. A remoção do comportamento do visor remove seus efeitos.
+Um objeto de comportamento é criado chamando [**CreateBehavior**](/windows/win32/api/DirectManipulation/nf-directmanipulation-idirectmanipulationmanager2-createbehavior), adicionado a um viewport e, em seguida, seu comportamento é configurado de forma assíncrona. Remover o comportamento do viewport remove seus efeitos.
 
 ## <a name="coordinate-system"></a>Sistema de coordenadas
 
-Há três sistemas principais de coordenadas empregados pela [manipulação direta](direct-manipulation-portal.md):
+Há três sistemas de coordenadas principais empregados pela [Manipulação Direta:](direct-manipulation-portal.md)
 
 - Sistema de coordenadas do cliente – descreve o retângulo da janela do cliente. As unidades estão em pixels.
-- Sistema de coordenadas do visor – descreve o retângulo de uma região dentro do cliente que pode processar a entrada. As unidades são definidas pelo aplicativo (usando [**SetViewportRect**](/windows/win32/api/DirectManipulation/nf-directmanipulation-idirectmanipulationviewport-setviewportrect)).
-- Sistema de coordenadas de conteúdo-descreve o retângulo ou o tamanho do conteúdo primário. As unidades são definidas pelo aplicativo (usando [**SetContentRect**](/windows/win32/api/DirectManipulation/nf-directmanipulation-idirectmanipulationcontent-setcontentrect)).
+- Sistema de coordenadas do viewport – descreve o retângulo de uma região dentro do cliente que pode processar a entrada. As unidades são definidas pelo aplicativo (usando [**SetViewportRect**](/windows/win32/api/DirectManipulation/nf-directmanipulation-idirectmanipulationviewport-setviewportrect)).
+- Sistema de coordenadas de conteúdo – descreve o retângulo ou o tamanho do conteúdo primário. As unidades são definidas pelo aplicativo (usando [**SetContentRect**](/windows/win32/api/DirectManipulation/nf-directmanipulation-idirectmanipulationcontent-setcontentrect)).
 
-Para todos os três sistemas, as coordenadas são definidas em relação à respectiva origem de cima para a esquerda e são positivas crescentes à direita e abaixo. Esses sistemas de coordenadas são ilustrados no próximo diagrama. Somente a seção do conteúdo dentro do retângulo do visor pode ser vista ou manipulada pelo usuário final.
+Para todos os três sistemas, as coordenadas são definidas em relação à respectiva origem superior esquerda e são positivas aumentando para a direita e para baixo. Esses sistemas de coordenadas são ilustrados no próximo diagrama. Somente a seção do conteúdo dentro do retângulo do viewport pode ser vista ou manipulada pelo usuário final.
 
-![diagrama mostrando como as coordenadas de conteúdo, cliente e visor interagem](images/dm-art-7.png)
+![diagrama mostrando como as coordenadas de conteúdo, cliente e viewport interagem](images/dm-art-7.png)
 
 ## <a name="transforms"></a>Transformações
 
-A [manipulação direta](direct-manipulation-portal.md) mantém várias transformações diferentes que contribuem para a saída geral exibida.
+[A Manipulação](direct-manipulation-portal.md) Direta mantém várias transformação diferentes que contribuem para a saída geral exibida.
 
-- *Transformação de conteúdo* – a transformação inicial calculada pela [manipulação direta](direct-manipulation-portal.md) com base em uma manipulação ou inércia. Ele captura os efeitos de pontos de encaixe, trilhos, overpan padrão (manipulação), inércia (prebounce padrão) e animações de ZoomToRect.
-- *Transformação de saída* -a transformação Visual final ou saída. É a combinação do conteúdo, bem como as transformações de sincronização.
-- *Sincronizar transformação* – calculada quando você chama [**SyncContentTransform**](/windows/win32/api/DirectManipulation/nf-directmanipulation-idirectmanipulationcontent-synccontenttransform). Ele ajuda a [manipulação direta](direct-manipulation-portal.md) a aplicar uma nova transformação de conteúdo fornecida pelo aplicativo, mantendo também a transformação saída existente.
-- *Exibir transformação* – aplicada pelo aplicativo como parte do pós-processamento. Consulte [**SyncDisplayTransform**](/windows/win32/api/DirectManipulation/nf-directmanipulation-idirectmanipulationviewport-syncdisplaytransform) para obter mais detalhes.
+- *Transformação de* conteúdo – a transformação inicial computada pela [Manipulação Direta](direct-manipulation-portal.md) com base em uma manipulação ou inércia. Ele captura os efeitos das animações snap points, railing, overpan (manipulação), overbounce padrão (inércia) e ZoomToRect.
+- *Transformação de saída* – o visual final ou a transformação de saída. É a combinação do conteúdo, bem como das transformaçãos de sincronização.
+- *Transformação de* sincronização – calculada quando você chama [**SyncContentTransform.**](/windows/win32/api/DirectManipulation/nf-directmanipulation-idirectmanipulationcontent-synccontenttransform) Ele ajuda [a Manipulação Direta](direct-manipulation-portal.md) a aplicar uma nova transformação de conteúdo fornecida pelo aplicativo, mantendo também a transformação de saída existente.
+- *Transformação de* exibição – aplicada pelo aplicativo como parte do pós-processamento. Consulte [**SyncDisplayTransform para**](/windows/win32/api/DirectManipulation/nf-directmanipulation-idirectmanipulationviewport-syncdisplaytransform) obter mais detalhes.
 
-Como a transformação de saída tem como objetivo deslocar uma superfície visualmente na tela, a [manipulação direta](direct-manipulation-portal.md) executa o arredondamento necessário nos componentes de transformação de saída para que o texto e outros conteúdos sempre sejam renderizados/compostos em um limite de pixels integral. O mecanismo de arredondamento depende de vários fatores, incluindo a velocidade do movimento e a presença de Área de Trabalho Remota. O mecanismo de arredondamento para conteúdo secundário corresponde ao conteúdo principal, ao mesmo tempo em que leva em conta a diferença no movimento entre os dois. Os clientes de [**GetOutputTransform**](/windows/win32/api/DirectManipulation/nf-directmanipulation-idirectmanipulationcontent-getoutputtransform) não devem depender do mecanismo de arredondamento exato da transformação de saída, pois vários fatores afetam isso.
+Como a transformação de saída destina-se a deslocar uma superfície visualmente na [tela,](direct-manipulation-portal.md) a Manipulação Direta executa o arredondamento necessário nos componentes de transformação de saída para que o texto e outros conteúdos sejam sempre renderizados/compostos em um limite de pixel integral. O mecanismo de arredondamento depende de vários fatores, incluindo a velocidade do movimento e a presença de Área de Trabalho Remota. O mecanismo de arredondamento para conteúdo secundário corresponde ao conteúdo primário, levando em conta a diferença no movimento entre os dois. Os clientes [**de GetOutputTransform**](/windows/win32/api/DirectManipulation/nf-directmanipulation-idirectmanipulationcontent-getoutputtransform) não devem depender do mecanismo de arredondamento exato da transformação de saída, pois vários fatores a afetam.
 
 > [!Note]
 >
-> Isso significa que os componentes de uma transformação de conteúdo podem não ser integrantes e podem conter deslocamentos de sub-pixel. Os clientes que usam a [manipulação direta](direct-manipulation-portal.md) são incentivados a usar o [**GetOutputTransform**](/windows/win32/api/DirectManipulation/nf-directmanipulation-idirectmanipulationcontent-getoutputtransform) para calcular a transformação visual correta a ser aplicada ao conteúdo ao usar o modo de atualização manual. Ao usar o modo de atualização automática usando o compositor interno, a manipulação direta aplica automaticamente essa transformação em nome do cliente. Essa transformação é gerada pela manipulação direta para garantir resultados visualmente agradáveis ao compor a saída Visual.
+> Isso significa que os componentes de uma transformação de conteúdo podem não ser integrais e podem conter deslocamentos de sub pixel. Os clientes [que usam a](direct-manipulation-portal.md) Manipulação Direta são incentivados a usar o [**GetOutputTransform**](/windows/win32/api/DirectManipulation/nf-directmanipulation-idirectmanipulationcontent-getoutputtransform) para calcular a transformação visual correta a ser aplicada ao conteúdo ao usar o modo de atualização manual. Ao usar o modo de atualização automática usando o compositor integrado, a Manipulação Direta aplica automaticamente essa transformação em nome do cliente. Essa transformação é gerada pela Manipulação Direta para garantir resultados visualmente desagradados ao compor a saída visual.
 
-## <a name="viewport-state"></a>Estado do visor
+## <a name="viewport-state"></a>Estado do viewport
 
-À medida que a entrada é processada, o visor gerencia o estado de interação e o mapeamento de entrada para transformações de saída. Verifique o estado de interação do visor chamando [**GetStatus**](/windows/win32/api/DirectManipulation/nf-directmanipulation-idirectmanipulationviewport-getstatus).
+Conforme a entrada é processada, o viewport gerencia o estado de interação e o mapeamento da entrada para as transformação de saída. Verifique o estado de interação do viewport chamando [**GetStatus**](/windows/win32/api/DirectManipulation/nf-directmanipulation-idirectmanipulationviewport-getstatus).
 
-![diagrama mostrando os Estados de interação do directmanipulation](images/dm-states-diagram.png)
+![diagrama mostrando os estados de interação de directmanipulation](images/dm-states-diagram.png)
 
-- Compilando – o visor está sendo criado e ainda não é capaz de processar a entrada. Para processar a entrada, chame [**IDirectManipulationViewport:: Enable**](/windows/win32/api/DirectManipulation/nf-directmanipulation-idirectmanipulationviewport-enable). Se **Enable** não for chamado, o visor vai para o estado Disabled.
+- Criação – o viewport está sendo criado e ainda não é capaz de processar a entrada. Para processar a entrada, chame [**IDirectManipulationViewport::Enable**](/windows/win32/api/DirectManipulation/nf-directmanipulation-idirectmanipulationviewport-enable). Se **Habilitar** não for chamado, o viewport irá para o estado Desabilitado.
 
     > [!Note]  
     > Esse é o estado inicial da interação.
 
-- Habilitado – o visor está pronto para processar a entrada. Quando um contato é inativo (o [**setcontact**](/windows/win32/api/DirectManipulation/nf-directmanipulation-idirectmanipulationviewport-setcontact) é chamado) e uma manipulação é detectada, o visor faz a transição para em execução.
+- Habilitado – o viewport está pronto para processar a entrada. Quando um contato é baixado [**(SetContact**](/windows/win32/api/DirectManipulation/nf-directmanipulation-idirectmanipulationviewport-setcontact) é chamado) e uma manipulação é detectada, o viewport faz a transição para Em execução.
 
-- Em execução – o visor está processando a entrada e atualizando o conteúdo no momento. Quando o contato é levantado, o visor faz a transição para inércia, se configurado.
+- Em execução – atualmente, o viewport está izando a entrada e atualizando o conteúdo. Quando o contato é retirado, o viewport faz a transição para Inércia, se configurado.
 
-- Inércia – o conteúdo está sendo movido em uma animação inércia. Quando o inércia for concluído, o visor passará para pronto. Se a desabilitação automática tiver sido definida no visor, ela fará a transição de inércia para pronto e, em seguida, para desabilitada.
+- Inércia – o conteúdo está se movendo em uma animação de inércia. Depois que a inércia for concluída, o viewport fará a transição para Pronto. Se a desabilitação automática tiver sido definida no viewport, ela fará a transição de Inércia para Pronto e, em seguida, para Desabilitado.
 
-- Pronto – o visor está pronto para processar a entrada. Quando um contato é inativo (o [**setcontact**](/windows/win32/api/DirectManipulation/nf-directmanipulation-idirectmanipulationviewport-setcontact) é chamado) e uma manipulação é detectada, o visor faz a transição para em execução.
+- Pronto – o viewport está pronto para processar a entrada. Quando um contato é baixado [**(SetContact**](/windows/win32/api/DirectManipulation/nf-directmanipulation-idirectmanipulationviewport-setcontact) é chamado) e uma manipulação é detectada, o viewport faz a transição para Em execução.
 
-- Suspenso – o visor pode se tornar suspenso quando sua entrada for promovida para um pai na cadeia [**setcontact**](/windows/win32/api/DirectManipulation/nf-directmanipulation-idirectmanipulationviewport-setcontact) . Isso é discutido com mais detalhes em [vários visores: teste de clique e hierarquia do visor](directmanipulation-multiple-vieports.md).
+- Suspenso – o viewport pode se tornar Suspenso quando sua entrada foi promovida a um pai na [**cadeia SetContact.**](/windows/win32/api/DirectManipulation/nf-directmanipulation-idirectmanipulationviewport-setcontact) Isso é discutido em mais detalhes em Vários [viewports: teste de impacto e hierarquia do viewport](directmanipulation-multiple-vieports.md).
 
-- Desabilitado – o visor não processará a entrada nem fará retornos de chamada. Um visor pode ser desabilitado de vários Estados chamando [**IDirectManipulationViewport::D isaptod**](/windows/win32/api/DirectManipulation/nf-directmanipulation-idirectmanipulationviewport-disable). Se a desabilitação automática tiver sido definida no visor, ela passará automaticamente para desabilitada depois que uma manipulação for processada. Para reabilitar um visor desabilitado, chame [**IDirectManipulationViewport:: Enable**](/windows/win32/api/DirectManipulation/nf-directmanipulation-idirectmanipulationviewport-enable).
+- Desabilitado – o viewport não processará a entrada nem fará retornos de chamada. Um viewport pode ser desabilitado de vários estados chamando [**IDirectManipulationViewport::D isable.**](/windows/win32/api/DirectManipulation/nf-directmanipulation-idirectmanipulationviewport-disable) Se a desabilitação automática tiver sido definida no viewport, ela fará a transição automaticamente para Desabilitada depois que uma manipulação for processada. Para habilitar um viewport desabilitado, chame [**IDirectManipulationViewport::Enable**](/windows/win32/api/DirectManipulation/nf-directmanipulation-idirectmanipulationviewport-enable).
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
-[Vários visores: teste de clique e hierarquia de visor](directmanipulation-multiple-vieports.md), [**ActivateConfiguration**](/windows/win32/api/DirectManipulation/nf-directmanipulation-idirectmanipulationviewport-activateconfiguration), [**GetOutputTransform**](/windows/win32/api/DirectManipulation/nf-directmanipulation-idirectmanipulationcontent-getoutputtransform), [**SyncDisplayTransform**](/windows/win32/api/DirectManipulation/nf-directmanipulation-idirectmanipulationviewport-syncdisplaytransform)
+[Vários viewports: teste de acerto](directmanipulation-multiple-vieports.md)e hierarquia do viewport, [**ActivateConfiguration,**](/windows/win32/api/DirectManipulation/nf-directmanipulation-idirectmanipulationviewport-activateconfiguration) [**GetOutputTransform,**](/windows/win32/api/DirectManipulation/nf-directmanipulation-idirectmanipulationcontent-getoutputtransform) [**SyncDisplayTransform**](/windows/win32/api/DirectManipulation/nf-directmanipulation-idirectmanipulationviewport-syncdisplaytransform)

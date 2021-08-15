@@ -1,11 +1,11 @@
 ---
-title: atributo ms-COM-UserPartitionSetLink
-description: Um link usado para associar um usuário a um particionado COM+.
+title: Atributo ms-COM-UserPartitionSetLink
+description: Um link usado para associar um usuário a um PartitionSet COM+.
 ms.assetid: 7abd1274-0352-45c1-91e9-27ed8687208c
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD do atributo ms-COM-UserPartitionSetLink
-- Esquema de AD do atributo msCOM-UserPartitionSetLink
+- Esquema do AD do atributo ms-COM-UserPartitionSetLink
+- Esquema do AD do atributo msCOM-UserPartitionSetLink
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4da547f257bf3a4fa472c6b48ccbcb47a1f2b984
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 97ab8caf90a7b689b5822fb768d3478ca26944478c3429372f0797f89fb3df27
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104370024"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118961085"
 ---
-# <a name="ms-com-userpartitionsetlink-attribute"></a>atributo ms-COM-UserPartitionSetLink
+# <a name="ms-com-userpartitionsetlink-attribute"></a>Atributo ms-COM-UserPartitionSetLink
 
-Um link usado para associar um usuário a um particionado COM+.
+Um link usado para associar um usuário a um PartitionSet COM+.
 
 
 
 | Entrada | Valor |
 |-------------------|-----------------------------------------|
-| CN                | MS-COM-UserPartitionSetLink             |
-| LDAP-Display-Name | msCOM-UserPartitionSetLink              |
+| CN                | ms-COM-UserPartitionSetLink             |
+| Ldap-Display-Name | msCOM-UserPartitionSetLink              |
 | Tamanho              | \-                                      |
 | Privilégio de atualização  | \-                                      |
 | Frequência de atualização  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.1426                 |
-| System-ID-GUID    | 8e940c8a-e477-4367-b08d-ff2ff942dcd7    |
-| Syntax            | [**Objeto (DS-DN)**](s-object-ds-dn.md) |
+| System-Id-Guid    | 8e940c8a-e477-4367-b08d-ff2ff942dcd7    |
+| Syntax            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
 
@@ -57,10 +57,10 @@ Um link usado para associar um usuário a um particionado COM+.
 | ID do link                | 1048                                                                                             |
 | MAPI-Id                | \-                                                                                               |
 | System-Only            | Falso                                                                                            |
-| É de valor único       | True                                                                                             |
+| Tem valor único       | Verdadeiro                                                                                             |
 | É indexado             | Falso                                                                                            |
-| No catálogo global      | Falso                                                                                            |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                     |
+| No Catálogo Global      | Falso                                                                                            |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                     |
 | Range-Lower            | \-                                                                                               |
 | Range-Upper            | \-                                                                                               |
 | Search-Flags           | 0x00000000                                                                                       |
@@ -78,10 +78,10 @@ Um link usado para associar um usuário a um particionado COM+.
 | ID do link                | 1048                                                                                             |
 | MAPI-Id                | \-                                                                                               |
 | System-Only            | Falso                                                                                            |
-| É de valor único       | True                                                                                             |
+| Tem valor único       | Verdadeiro                                                                                             |
 | É indexado             | Falso                                                                                            |
-| No catálogo global      | Falso                                                                                            |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                     |
+| No Catálogo Global      | Falso                                                                                            |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                     |
 | Range-Lower            | \-                                                                                               |
 | Range-Upper            | \-                                                                                               |
 | Search-Flags           | 0x00000000                                                                                       |
@@ -99,10 +99,10 @@ Um link usado para associar um usuário a um particionado COM+.
 | ID do link                | 1048                                                                                             |
 | MAPI-Id                | \-                                                                                               |
 | System-Only            | Falso                                                                                            |
-| É de valor único       | True                                                                                             |
+| Tem valor único       | Verdadeiro                                                                                             |
 | É indexado             | Falso                                                                                            |
-| No catálogo global      | Falso                                                                                            |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                     |
+| No Catálogo Global      | Falso                                                                                            |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                     |
 | Range-Lower            | \-                                                                                               |
 | Range-Upper            | \-                                                                                               |
 | Search-Flags           | 0x00000000                                                                                       |
@@ -120,10 +120,10 @@ Um link usado para associar um usuário a um particionado COM+.
 | ID do link                | 1048                                                                                             |
 | MAPI-Id                | \-                                                                                               |
 | System-Only            | Falso                                                                                            |
-| É de valor único       | True                                                                                             |
+| Tem valor único       | Verdadeiro                                                                                             |
 | É indexado             | Falso                                                                                            |
-| No catálogo global      | Falso                                                                                            |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                     |
+| No Catálogo Global      | Falso                                                                                            |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                     |
 | Range-Lower            | \-                                                                                               |
 | Range-Upper            | \-                                                                                               |
 | Search-Flags           | 0x00000000                                                                                       |
@@ -141,10 +141,10 @@ Um link usado para associar um usuário a um particionado COM+.
 | ID do link                | 1048                                                                                             |
 | MAPI-Id                | \-                                                                                               |
 | System-Only            | Falso                                                                                            |
-| É de valor único       | True                                                                                             |
+| Tem valor único       | Verdadeiro                                                                                             |
 | É indexado             | Falso                                                                                            |
-| No catálogo global      | Falso                                                                                            |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                     |
+| No Catálogo Global      | Falso                                                                                            |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                     |
 | Range-Lower            | \-                                                                                               |
 | Range-Upper            | \-                                                                                               |
 | Search-Flags           | 0x00000000                                                                                       |

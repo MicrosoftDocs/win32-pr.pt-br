@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Scanprofile.h
-ms.openlocfilehash: 34cd00f626bea3b8f1350950f0d2012ce019068e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7fd54e3e1cd45c3631df9b069ddf3c2e897037efb2870d00946f0a002e12f145
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105763968"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118965775"
 ---
 # <a name="iscanprofilegetallpropids-method"></a>Método IScanProfile:: GetAllPropIDs
 
@@ -43,24 +43,24 @@ HRESULT GetAllPropIDs(
 *número* \[ de entrada, saída\]
 </dt> <dd>
 
-Tipo: **ULONG \** _
+Tipo: **ULONG \***
 
 O número de IDs de propriedade solicitadas ou retornadas.
 
 </dd> <dt>
 
-_ppid * \[ out\]
+*PPID* \[ fora\]
 </dt> <dd>
 
-Tipo: **Propid \** _
+Tipo: **Propid \***
 
 Um ponteiro para uma matriz de IDs de propriedade.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Tipo: _ *HRESULT**
+Tipo: **HRESULT**
 
 Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
 
@@ -70,9 +70,9 @@ Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, e
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                        |
-| parâmetro<br/>                   | <dl> <dt>ScanProfile. h</dt> </dl>    |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                              |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                        |
+| Cabeçalho<br/>                   | <dl> <dt>ScanProfile. h</dt> </dl>    |
 | INSERI<br/>                      | <dl> <dt>Scanprofiles. idl</dt> </dl> |
 
 

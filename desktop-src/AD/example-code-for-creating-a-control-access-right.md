@@ -5,16 +5,16 @@ ms.assetid: b1b644ee-c38a-47da-8a0a-31a06361f35a
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 41410a16da7566fd71052d9cc33d9f11fa0112e3
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 86720df8ac16b298cc35ba4d816fb3ec1f7f87d024588791cc1bfe138e2a7d55
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103915949"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118962405"
 ---
 # <a name="example-code-for-creating-a-control-access-right"></a>Exemplo de código para criar um direito de acesso de controle
 
-O exemplo a seguir Visual Basic cria um objeto **controlAccessRight** no contêiner Extended-Rights.
+o exemplo a seguir Visual Basic cria um objeto **controlAccessRight** no contêiner Extended-Rights.
 
 
 ```VB
@@ -258,9 +258,9 @@ hr = CreateExtendedRight(L"myexright", L"My Extended Right",
 
 
 
- 
+ 
 
- 
+ 
 
 
 

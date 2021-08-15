@@ -4,12 +4,12 @@ ms.assetid: faba5cb7-745e-4fdf-a3e0-62132da4a843
 title: Configurando valores do pool de aplicativos COM+
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 98922699fff7af7146250bdb504a1f46be08718e
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 25d3407cd644b68cfc3ef279a9e67603aa1dc2db85302b22dbf0c6ae7219fd3b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104163966"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119128968"
 ---
 # <a name="configuring-com-application-pooling-values"></a>Configurando valores do pool de aplicativos COM+
 
@@ -32,7 +32,7 @@ Para configurar o pool de aplicativos COM+ para um aplicativo COM+, use as segui
 
 ## <a name="visual-basic"></a>Visual Basic
 
-A função a seguir no Visual Basic demonstra como você pode definir o valor do pool de aplicativos COM+ (representado por sua propriedade ConcurrentApps) para qualquer aplicativo de servidor do COM+ que você escolher. Para usá-lo de Visual Basic, adicione uma referência à biblioteca de tipos de administrador do COM+.
+a função a seguir no Visual Basic demonstra como você pode definir o valor do pool de aplicativos com+ (representado por sua propriedade ConcurrentApps) para qualquer aplicativo de servidor do com+ que você escolher. para usá-lo de Visual Basic, adicione uma referência à biblioteca de tipos de administrador do COM+.
 
 
 ```VB
@@ -78,7 +78,7 @@ End Function
 
 
 
-Para usar a função, forneça um valor de cadeia de caracteres para o nome do aplicativo do servidor COM+ e um valor inteiro para a configuração Desired Application pooling. O código de Visual Basic a seguir mostra como definir o valor do pool de aplicativos como 15 para o aplicativo chamado "MyApplication":
+Para usar a função, forneça um valor de cadeia de caracteres para o nome do aplicativo do servidor COM+ e um valor inteiro para a configuração Desired Application pooling. o código de Visual Basic a seguir mostra como definir o valor do pool de aplicativos como 15 para o aplicativo chamado "MyApplication":
 
 
 ```VB

@@ -12,16 +12,16 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: acb5bcfa589139e2c69e75124253f9d9a7b53a87
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 8ba7d9e26a9741f80caed84d2a4ee4198eae05736aa8dee91019452cc3345ddf
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108118494"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119693116"
 ---
 # <a name="locationdispcivicaddressreportfactorystatus-property"></a>Propriedade LocationDisp. CivicAddressReportFactory. status
 
-\[O modelo de objeto de API de localização está disponível para uso nos sistemas operacionais especificados na seção requisitos. Ele poderá ser alterado ou ficar indisponível em versões subsequentes. Em vez disso, para acessar o local de um site, use a [API de localização geográfica do W3C](/previous-versions/windows/internet-explorer/ie-developer/samples/gg589513(v=vs.85)). Para acessar o local de um aplicativo de área de trabalho, use a API [**Windows. Devices. geolocalização**](/uwp/api/Windows.Devices.Geolocation) .\]
+\[O modelo de objeto de API de localização está disponível para uso nos sistemas operacionais especificados na seção requisitos. Ele poderá ser alterado ou ficar indisponível em versões subsequentes. Em vez disso, para acessar o local de um site, use a [API de localização geográfica do W3C](/previous-versions/windows/internet-explorer/ie-developer/samples/gg589513(v=vs.85)). Para acessar o local de um aplicativo de área de trabalho, use o [**Windows. API de dispositivos. geolocalização**](/uwp/api/Windows.Devices.Geolocation) .\]
 
 O status atual do relatório.
 
@@ -46,9 +46,9 @@ Esta propriedade é um **número** somente leitura (sem sinal).
 |------------------------------------------------------------------------------------------------------|----------------------------------|
 | <span id="0"></span><dl> <dt>**0**</dt> </dl> | Relatório sem suporte.<br/> |
 | <span id="1"></span><dl> <dt>**1**</dt> </dl> | Erro.<br/>                |
-| <span id="2"></span><dl> <dt>**2**</dt> </dl> | Acesso negado.<br/>        |
-| <span id="3"></span><dl> <dt>**Beta**</dt> </dl> | Inicializando.<br/>         |
-| <span id="4"></span><dl> <dt>**quatro**</dt> </dl> | Running.<br/>              |
+| <span id="2"></span><dl> <dt>**2**</dt> </dl> | Acesso negado<br/>        |
+| <span id="3"></span><dl> <dt>**3**</dt> </dl> | Inicializando.<br/>         |
+| <span id="4"></span><dl> <dt>**4**</dt> </dl> | Running.<br/>              |
 
 
 
@@ -64,7 +64,7 @@ Para obter um exemplo de como usar essa propriedade, consulte [escutando eventos
 
 | Requisito | Valor |
 |-------------------------------------|--------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/> |
+| Cliente mínimo com suporte<br/> | \[somente aplicativos de área de trabalho Windows 7\]<br/> |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                  |
 
 

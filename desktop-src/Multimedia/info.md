@@ -3,7 +3,7 @@ title: comando info
 description: O comando info recupera uma descrição de hardware de um dispositivo. Todos os dispositivos MCI reconhecem este comando.
 ms.assetid: cdd6628b-bff8-4a0d-9dad-a63321f584ea
 keywords:
-- Multimídia do Windows de comando de informações
+- comando de informações Windows multimídia
 topic_type:
 - apiref
 api_name:
@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c6d401efca6a59d1ed3cbf433d7c33311678705d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f15675923f37a80ce694a400f18113f5178a54a3f75664008644919c6d9fc128
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104369857"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119690466"
 ---
 # <a name="info-command"></a>comando info
 
@@ -76,7 +76,7 @@ A tabela a seguir lista os sinalizadores que podem ser especificados no parâmet
 | algoritmo de áudio | Retorna o nome do algoritmo de compactação de áudio atual.                                                                                                                                       |
 | qualidade de áudio   | Retorna o nome do descritor de qualidade de áudio atual. Isso pode retornar "desconhecido" se o aplicativo tiver definido parâmetros para valores específicos que não correspondam a qualidades definidas.       |
 | direitos autorais       | Recupera o aviso de direitos autorais do arquivo MIDI do evento meta de direitos autorais.                                                                                                                            |
-| arquivo            | Recupera o nome do arquivo usado pelo dispositivo composto. Se o dispositivo for aberto sem um arquivo e o comando de [carregamento](load.md) não tiver sido usado, uma cadeia de caracteres nula será retornada.                  |
+| file            | Recupera o nome do arquivo usado pelo dispositivo composto. Se o dispositivo for aberto sem um arquivo e o comando de [carregamento](load.md) não tiver sido usado, uma cadeia de caracteres nula será retornada.                  |
 | identidade de informações   | Produz um identificador exclusivo para o CD de áudio atualmente carregado no Player que está sendo consultado.                                                                                                        |
 | UPC de informações        | Produz o código do produto universal (UPC) que é codificado em um CD de áudio. O UPC é uma cadeia de caracteres de dígitos. Ele pode não estar disponível para todos os CDs.                                                    |
 | input           | Recupera a descrição do dispositivo de entrada atual. Retorna "None" se um dispositivo de entrada não estiver definido.                                                                                               |
@@ -131,7 +131,7 @@ info mysound product
 
 <dl> <dt>
 
-[MCI](mci.md)
+[Mci](mci.md)
 </dt> <dt>
 
 [Cadeias de caracteres de comando MCI](mci-command-strings.md)

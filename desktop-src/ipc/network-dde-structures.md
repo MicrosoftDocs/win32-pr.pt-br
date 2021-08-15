@@ -1,23 +1,23 @@
 ---
-description: 'A seguinte estrutura é usada com DDE de rede:'
+description: 'A seguinte estrutura é usada com o DDE de rede:'
 ms.assetid: 1cbfd363-4fe4-452a-950d-637e9b96ca16
 title: Estruturas DDE de rede
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 81780ad389e2e18c28afd88b7056067861667483
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 25b7a44a3b2c4fe153b15566b41b9a8f22a4d95e488697db1423396349a6c886
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105780273"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118756048"
 ---
 # <a name="network-dde-structures"></a>Estruturas DDE de rede
 
-\[Não há mais suporte para DDE de rede. Nddeapi.dll está presente no Windows Vista, mas todas as chamadas de função retornam NDDE \_ não \_ implementado.\]
+\[Não há mais suporte para DDE de rede. Nddeapi.dll está presente no Windows Vista, mas todas as chamadas de função retornam NDDE \_ NOT \_ IMPLEMENTED.\]
 
-A seguinte estrutura é usada com DDE de rede:
+A seguinte estrutura é usada com o DDE de rede:
 
--   [**NDDESHAREINFO**](nddeshareinfo-str.md)
+-   [**NDINFOAREINFO**](nddeshareinfo-str.md)
 
  
 

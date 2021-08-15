@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre: método API. JetResetTableSequential'
-title: Método API. JetResetTableSequential
+description: 'Saiba mais sobre: Método Api.JetResetTableSequential'
+title: Método Api.JetResetTableSequential
 TOCTitle: 'JetResetTableSequential method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Api.JetResetTableSequential(Microsoft.Isam.Esent.Interop.JET_SESID,Microsoft.Isam.Esent.Interop.JET_TABLEID,Microsoft.Isam.Esent.Interop.ResetTableSequentialGrbit)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.api.jetresettablesequential(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: b45ca118894015df7cda56201733cdaad9b88d69
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: aaa918dba29802e89c8ca2a50e53e7a02e75b62a2bccf034c59c0cb25302ee64
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104171762"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117902929"
 ---
-# <a name="apijetresettablesequential-method"></a>Método API. JetResetTableSequential
+# <a name="apijetresettablesequential-method"></a>Método Api.JetResetTableSequential
 
-Notifica o mecanismo de banco de dados de que o aplicativo não está mais verificando o índice inteiro no qual o cursor está posicionado. Essa chamada reverte uma notificação enviada por [JetSetTableSequential (JET_SESID, JET_TABLEID, SetTableSequentialGrbit)](./api.jetsettablesequential-method.md).
+Notifica o mecanismo de banco de dados de que o aplicativo não está mais digitalizando todo o índice em que o cursor está posicionado. Essa chamada inverte uma notificação enviada por [JetSetTableSequential(JET_SESID, JET_TABLEID, SetTableSequentialGrbit)](./api.jetsettablesequential-method.md).
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -65,21 +65,21 @@ public static void JetResetTableSequential(
 #### <a name="parameters"></a>Parâmetros
 
   - sesid  
-    Tipo: [Microsoft.ISAM.ESENT.Interop.JET_SESID](./jet-sesid-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)  
     
     A sessão a ser usada.
 
 <!-- end list -->
 
-  - TableID  
-    Tipo: [Microsoft.ISAM.ESENT.Interop.JET_TABLEID](./jet-tableid-structure.md)  
+  - Tableid  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_TABLEID](./jet-tableid-structure.md)  
     
     O cursor que estava acessando os dados.
 
 <!-- end list -->
 
   - grbit  
-    Tipo: [Microsoft. ISAM. ESENT. Interop. ResetTableSequentialGrbit](./resettablesequentialgrbit-enumeration.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.ResetTableSequentialGrbit](./resettablesequentialgrbit-enumeration.md)  
     
     Reservado para uso futuro.
 
@@ -91,4 +91,4 @@ public static void JetResetTableSequential(
 
 [Membros da API](./api-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

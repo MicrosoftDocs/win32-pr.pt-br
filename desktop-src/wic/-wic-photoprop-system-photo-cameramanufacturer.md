@@ -1,21 +1,21 @@
 ---
-description: A política de metadados de foto para a propriedade System. Photo. CameraManufacturer.
+description: A política de metadados de foto para a propriedade System.Photo.CameraManufacturer.
 ms.assetid: 6710161c-4835-4385-9d4c-566acc000925
-title: Política de metadados de foto System. Photo. CameraManufacturer
+title: System.Photo.CameraManufacturer Photo Metadata Policy
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fd1d2765b6c787b7d7ad421300f1c3492669830b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 37744420babedf6b398cdf3ab9007c3895c09d33b9254221b5ba4760ab917a0f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105793224"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119087082"
 ---
-# <a name="systemphotocameramanufacturer-photo-metadata-policy"></a>Política de metadados de foto System. Photo. CameraManufacturer
+# <a name="systemphotocameramanufacturer-photo-metadata-policy"></a>System.Photo.CameraManufacturer Photo Metadata Policy
 
-A política de metadados de foto para a propriedade [System. Photo. CameraManufacturer](../properties/props-system-photo-cameramanufacturer.md) .
+A política de metadados de foto para a [propriedade System.Photo.CameraManufacturer.](../properties/props-system-photo-cameramanufacturer.md)
 
-### <a name="pkey"></a>PKEY
+### <a name="pkey"></a>Pkey
 
 PKEY \_ Photo \_ CameraManufacturer
 
@@ -25,31 +25,31 @@ JPEG, TIFF
 
 ### <a name="read-only"></a>Somente leitura
 
-No
+Não
 
-### <a name="output-propvariant-type"></a>Tipo de PROPVARIANT de saída
+### <a name="output-propvariant-type"></a>Tipo PROPVARIANT de saída
 
-LPWStr do VT \_
+VT \_ LPWSTR
 
 ### <a name="input-type"></a>Tipo de entrada
 
 Cadeia de caracteres.
 
-### <a name="conflict-resolution-policy"></a>Política de resolução de conflito
+### <a name="conflict-resolution-policy"></a>Política de resolução de conflitos
 
-Os valores de esquemas diferentes são reconciliados.
+Valores de esquemas diferentes são reconciliados.
 
 ### <a name="jpeg-policy"></a>Política JPEG
 
-### <a name="read-paths"></a>Caminhos de leitura
+### <a name="read-paths"></a>Ler caminhos
 
 
 
 | Ordem | Caminho                   | Formato de disco |
 |-------|------------------------|-------------|
-| 1     | /App1/IFD/{UShort = 271} | ascii       |
-| 2     | /XMP/TIFF: Make         | Unicode     |
-| 3     | /XMP/TIFF: Make         | Unicode     |
+| 1     | /app1/ifd/{ushort=271} | ascii       |
+| 2     | /xmp/tiff:Make         | Unicode     |
+| 3     | /xmp/tiff:make         | Unicode     |
 
 
 
@@ -61,9 +61,9 @@ Os valores de esquemas diferentes são reconciliados.
 
 | Ordem | Caminho                   | Formato de disco |
 |-------|------------------------|-------------|
-| 1     | /App1/IFD/{UShort = 271} | ascii       |
-| 2     | /XMP/TIFF: Make         | Unicode     |
-| 3     | /XMP/TIFF: Make         | Unicode     |
+| 1     | /app1/ifd/{ushort=271} | ascii       |
+| 2     | /xmp/tiff:Make         | Unicode     |
+| 3     | /xmp/tiff:make         | Unicode     |
 
 
 
@@ -75,9 +75,9 @@ Os valores de esquemas diferentes são reconciliados.
 
 | Ordem | Caminho                   |
 |-------|------------------------|
-| 1     | /App1/IFD/{UShort = 271} |
-| 2     | /XMP/TIFF: Make         |
-| 3     | /XMP/TIFF: Make         |
+| 1     | /app1/ifd/{ushort=271} |
+| 2     | /xmp/tiff:Make         |
+| 3     | /xmp/tiff:make         |
 
 
 
@@ -85,15 +85,15 @@ Os valores de esquemas diferentes são reconciliados.
 
 ### <a name="tiff-policy"></a>Política TIFF
 
-### <a name="read-paths"></a>Caminhos de leitura
+### <a name="read-paths"></a>Ler caminhos
 
 
 
 | Ordem | Caminho               | Formato de disco |
 |-------|--------------------|-------------|
-| 1     | /IFD/{UShort = 271}  | ascii       |
-| 2     | /IFD/XMP/TIFF: Make | Unicode     |
-| 3     | /IFD/XMP/TIFF: Make | Unicode     |
+| 1     | /ifd/{ushort=271}  | ascii       |
+| 2     | /ifd/xmp/tiff:Make | Unicode     |
+| 3     | /ifd/xmp/tiff:make | Unicode     |
 
 
 
@@ -105,9 +105,9 @@ Os valores de esquemas diferentes são reconciliados.
 
 | Ordem | Caminho               | Formato de disco |
 |-------|--------------------|-------------|
-| 1     | /IFD/{UShort = 271}  | ascii       |
-| 2     | /IFD/XMP/TIFF: Make | Unicode     |
-| 3     | /IFD/XMP/TIFF: Make | Unicode     |
+| 1     | /ifd/{ushort=271}  | ascii       |
+| 2     | /ifd/xmp/tiff:Make | Unicode     |
+| 3     | /ifd/xmp/tiff:make | Unicode     |
 
 
 
@@ -119,9 +119,9 @@ Os valores de esquemas diferentes são reconciliados.
 
 | Ordem | Caminho               |
 |-------|--------------------|
-| 1     | /IFD/{UShort = 271}  |
-| 2     | /IFD/XMP/TIFF: Make |
-| 3     | /IFD/XMP/TIFF: Make |
+| 1     | /ifd/{ushort=271}  |
+| 2     | /ifd/xmp/tiff:Make |
+| 3     | /ifd/xmp/tiff:make |
 
 
 
@@ -133,7 +133,7 @@ Os valores de esquemas diferentes são reconciliados.
 
 <dl> <dt>
 
-[System. Photo. CameraManufacturer](../properties/props-system-photo-cameramanufacturer.md)
+[System.Photo.CameraManufacturer](../properties/props-system-photo-cameramanufacturer.md)
 </dt> </dl>
 
  

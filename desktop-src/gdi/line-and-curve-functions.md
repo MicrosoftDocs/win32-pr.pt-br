@@ -4,12 +4,12 @@ ms.assetid: 90f123e2-c3c7-4ba1-a42b-7d6bc0074d5b
 title: Funções de linha e curva
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b7bf04160e8b9cc0a5c2fb28378bce82a1c7650a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3a033f8c094f47f35c1a2d9f2a40587c0aba8e12ef8032ab17bac9f713a73133
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104988799"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118760227"
 ---
 # <a name="line-and-curve-functions"></a>Funções de linha e curva
 

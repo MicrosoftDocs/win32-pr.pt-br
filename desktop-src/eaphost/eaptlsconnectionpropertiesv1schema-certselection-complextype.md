@@ -14,12 +14,12 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: ba22df8dca61696f214e495542319168183dd2bf
-ms.sourcegitcommit: b0ebdefc3dcd5c04bede94091833aa1015a2f95c
+ms.openlocfilehash: 375ea26fddf07f8d775617c0a2167ed02aa8160de8cc5dde49a92f37f57a335e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "104294506"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118984126"
 ---
 # <a name="certselection-complex-type"></a>Tipo complexo CertSelection
 
@@ -52,8 +52,8 @@ O tipo complexo **CertSelection** determina como o usuário seleciona um certifi
 
 | Função | Versão mínima do sistema operacional com suporte |
 |------|------------------------------|
-| Cliente<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>       |
+| Servidor<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/> |
 
 
 

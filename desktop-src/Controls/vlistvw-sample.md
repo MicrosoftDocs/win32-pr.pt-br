@@ -4,12 +4,12 @@ ms.assetid: 5e1d13a6-ae11-4729-b0fc-0a1620cf0738
 description: 'Saiba mais sobre: exemplo de VListVW'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7445f83d08641179f9ee0e5b3aeeee5a613f1f6b
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: fefcd39c44e79ab4eec23f7becf202d1a3cd3566f6be9496e9fd61b577c87f4a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105753562"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118957555"
 ---
 # <a name="vlistvw-sample"></a>Exemplo de VListVW
 
@@ -40,7 +40,7 @@ O exemplo de VListVW mostra como implementar um controle de exibição de lista 
 
 ## <a name="downloading-the-sample"></a>Baixando o exemplo
 
-O exemplo VListVW está disponível no GitHub no repositório de [exemplos clássico do Windows](https://github.com/microsoft/Windows-classic-samples). Os exemplos de itens de controle de exibição de lista podem ser encontrados [aqui](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/winui/controls/common/vlistvw)
+o exemplo de VListVW está disponível no github no [repositório de amostras clássicas do Windows](https://github.com/microsoft/Windows-classic-samples). Os exemplos de itens de controle de exibição de lista podem ser encontrados [aqui](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/winui/controls/common/vlistvw)
 
  
 
@@ -51,9 +51,9 @@ Para criar o exemplo usando o prompt de comando:
 1.  Abra a janela do prompt de comando e navegue até o diretório do projeto.
 2.  Digite `msbuild [project file]`.
 
-Para criar o exemplo usando o Visual Studio:
+Para criar o exemplo usando Visual Studio:
 
-1.  Abra o Windows Explorer e navegue até o diretório do projeto.
+1.  abra Windows Explorer e navegue até o diretório do projeto.
 2.  Clique duas vezes no ícone do arquivo. vcproj para abrir o projeto no Visual Studio.
 3.  No menu **Compilar** , selecione **Compilar solução** para compilar a solução.
 

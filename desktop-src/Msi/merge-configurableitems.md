@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - Mergemod.dll
-ms.openlocfilehash: 9224aa1cd649971894d78371369b16c6b377cbcc
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 179594ba7fe7691edb9abe1f72d104742fe9bc9e3a4a23b728ad8607b94c444a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105759383"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119013034"
 ---
 # <a name="mergeconfigurableitems-property"></a>Merge.ConfigPropriedade urableItems
 
@@ -49,7 +49,7 @@ Consulte [**obter \_**](/windows/desktop/api/Mergemod/nf-mergemod-imsmmerge2-get
 | Requisito | Valor |
 |--------------------|-----------------------------------------------------------------------------------------|
 | Versão<br/> | Mergemod.dll 2,0 ou posterior<br/>                                                    |
-| parâmetro<br/>  | <dl> <dt>Mergemod. h</dt> </dl>   |
+| Cabeçalho<br/>  | <dl> <dt>Mergemod. h</dt> </dl>   |
 | DLL<br/>     | <dl> <dt>Mergemod.dll</dt> </dl> |
 
 

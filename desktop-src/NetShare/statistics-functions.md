@@ -1,19 +1,19 @@
 ---
-description: O sistema operacional Windows acumula um conjunto de estatísticas operacionais para estações de trabalho e servidores a partir do momento em que o serviço de estação de trabalho ou servidor é iniciado.
+description: o sistema operacional Windows acumula um conjunto de estatísticas operacionais para estações de trabalho e servidores a partir do momento em que o serviço de estação de trabalho ou servidor é iniciado.
 ms.assetid: 4e0217bf-7550-40a2-b47c-8e898a586005
 title: Funções de estatísticas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ce62e12f3c4894ba86ff5e5aaaa38801d272195c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2261f0c4f8f8249b401e658759827d6471d3ac47b6eb10df769ad5f37d8ce7af
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105810293"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119063586"
 ---
 # <a name="statistics-functions"></a>Funções de estatísticas
 
-O sistema operacional Windows acumula um conjunto de estatísticas operacionais para estações de trabalho e servidores a partir do momento em que o serviço de estação de trabalho ou servidor é iniciado. Para recuperar essas estatísticas, você pode chamar a função de estatísticas de gerenciamento de rede a seguir.
+o sistema operacional Windows acumula um conjunto de estatísticas operacionais para estações de trabalho e servidores a partir do momento em que o serviço de estação de trabalho ou servidor é iniciado. Para recuperar essas estatísticas, você pode chamar a função de estatísticas de gerenciamento de rede a seguir.
 
 
 

@@ -3,9 +3,9 @@ title: Método IWMPMediaCollection2 createQuery
 description: O método createQuery retorna uma interface IWMPQuery que representa uma nova consulta.
 ms.assetid: a12da325-e77e-4e44-93d1-5e9c5733ea44
 keywords:
-- método createQuery Windows Media Player
+- Windows Media Player do método createQuery
 - método createQuery Windows Media Player, interface IWMPMediaCollection2
-- Interface IWMPMediaCollection2 Windows Media Player, método createQuery
+- Windows Media Player de interface IWMPMediaCollection2, método createQuery
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 318b27a20ba801e1fbed58ff79c5bed7841f8c29
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 1644748008e2b222fef0101a96892d480ad4723b9892b94e0e69c387b54e53d7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105781240"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120000086"
 ---
 # <a name="iwmpmediacollection2createquery-method"></a>Método IWMPMediaCollection2:: createQuery
 
@@ -49,7 +49,7 @@ Implements IWMPMediaCollection2.createQuery
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Uma interface **WMPLib. IWMPQuery** que representa uma nova consulta vazia.
 

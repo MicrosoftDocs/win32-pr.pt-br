@@ -4,12 +4,12 @@ ms.assetid: bcf86ece-2673-4ed8-98fd-cd0e2154b4a8
 title: Atributo MF_BYTESTREAM_CONTENT_TYPE (Mfobjects. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7d7413fa6fd2ce74530432d60976e3c7ebf702af
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 901f3d9d2b46e503bcf8f66127eb94383710a7c1055c04fccb97f6d935d463b2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105758081"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118974005"
 ---
 # <a name="mf_bytestream_content_type-attribute"></a>\_Atributo de \_ tipo de conteúdo MF bytes \_
 
@@ -31,9 +31,9 @@ A constante de GUID para esse atributo é exportada de mfuuid. lib.
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Aplicativos de \[ aplicativos \| UWP do Windows Vista desktop\]<br/>                                                    |
-| Servidor mínimo com suporte<br/> | Aplicativos do Windows Server 2008 \[ Desktop aplicativos \| UWP\]<br/>                                              |
-| parâmetro<br/>                   | <dl> <dt>Mfobjects. h (incluir Mfidl. h)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Aplicativos de aplicativos UWP do vista desktop \|\]<br/>                                                    |
+| Servidor mínimo com suporte<br/> | Windows \[Aplicativos da área de trabalho do servidor 2008 \| aplicativo UWP\]<br/>                                              |
+| Cabeçalho<br/>                   | <dl> <dt>Mfobjects. h (incluir Mfidl. h)</dt> </dl> |
 
 
 

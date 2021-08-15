@@ -3,9 +3,9 @@ title: Propriedade IWMPControls currentPosition
 description: A propriedade currentPosition Obtém ou define a posição atual no item de mídia em segundos desde o início.
 ms.assetid: 48f5241e-7528-485e-bf47-d655ba842af2
 keywords:
-- Propriedade currentPosition Windows Media Player
-- Propriedade currentPosition Windows Media Player, interface IWMPControls
-- Interface IWMPControls Windows Media Player, Propriedade currentPosition
+- Windows Media Player da propriedade currentPosition
+- propriedade currentPosition Windows Media Player, interface IWMPControls
+- Windows Media Player de interface IWMPControls, propriedade currentPosition
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fee8c2c8244d6034069f21033978ce2883ff852d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ac8eca861240256899fa19513fc1fb64cd540d47acb213f718674ebbda2d5f17
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105761319"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119053663"
 ---
 # <a name="iwmpcontrolscurrentposition-property"></a>Propriedade IWMPControls:: currentPosition
 

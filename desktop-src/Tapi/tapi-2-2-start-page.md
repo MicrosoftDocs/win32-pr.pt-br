@@ -4,12 +4,12 @@ ms.assetid: 02bfe923-9915-439e-ac7c-a570416d054a
 title: Interface de programação de aplicativo de telefonia versão 2,2
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8e0dc158210350979105d765dc939f600f61d8bb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5ea4317fbf603c4b0185440d71db5861db59af9dd7c5ae1e8fe49664100bb329
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104169818"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119060264"
 ---
 # <a name="telephony-application-programming-interface-version-22"></a>Interface de programação de aplicativo de telefonia versão 2,2
 
@@ -35,7 +35,7 @@ A TAPI/C foi projetada para uso por programadores C/C++. A experiência de desen
 
 ## <a name="run-time-requirements"></a>Requisitos de tempo de execução
 
-A TAPI versão 2,2 permite o desenvolvimento de aplicativos de comunicação para os sistemas operacionais Windows Server 2003, Windows XP, Windows 2000, Windows NT, Windows me, Windows 98 e Windows 95. Para obter mais informações sobre quais sistemas operacionais dão suporte a uma função específica, consulte a seção requisitos da documentação para essa função.
+a TAPI versão 2,2 permite o desenvolvimento de aplicativos de comunicação para os sistemas operacionais Windows Server 2003, Windows XP, Windows 2000, Windows NT, Windows Me, Windows 98 e Windows 95. Para obter mais informações sobre quais sistemas operacionais dão suporte a uma função específica, consulte a seção requisitos da documentação para essa função.
 
 ## <a name="in-this-section"></a>Nesta seção
 

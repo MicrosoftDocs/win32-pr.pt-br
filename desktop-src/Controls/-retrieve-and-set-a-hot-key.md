@@ -4,12 +4,12 @@ description: Este tópico demonstra como recuperar ou definir a combinação de 
 ms.assetid: F3643196-F847-4EE4-97ED-75AF52D4FF8D
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2d453433917c211bc787f70a5d9344f1a477858e
-ms.sourcegitcommit: a716ca2a6a22a400f02c6b31699cf4da83ee3619
+ms.openlocfilehash: fac5d0bab71fea11fe3d2aba23405f6d7ee7fb1ed8c78f2578f034ae9c84cad8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "105750313"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119079490"
 ---
 # <a name="how-to-retrieve-and-set-a-hot-key"></a>Como recuperar e definir uma tecla de atalho
 
@@ -19,12 +19,12 @@ Este tópico demonstra como recuperar ou definir a combinação de teclas para u
 
 ### <a name="technologies"></a>Tecnologias
 
--   [Controles do Windows](window-controls.md)
+-   [Windows Controles](window-controls.md)
 
 ### <a name="prerequisites"></a>Pré-requisitos
 
 -   C/C++
--   Programação da interface do usuário do Windows
+-   Windows Programação de interface do usuário
 
 ## <a name="instructions"></a>Instruções
 

@@ -1,21 +1,21 @@
 ---
-description: A política de metadados de foto para a propriedade System. Photo. SubjectDistance.
+description: A política de metadados de foto para a propriedade System.Photo.SubjectDistance.
 ms.assetid: 8d5acd7e-7227-4a79-890a-43e6dace3864
-title: Política de metadados de foto System. Photo. SubjectDistance
+title: Política de metadados de foto System.Photo.SubjectDistance
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3335b17f45cce7dc60881dc7ea8d9ffecc711016
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 86ec1868b1e33c4bcaaaea9a9203cc73733646cc82dade52c86b0c8caec4a704
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103829494"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118964765"
 ---
-# <a name="systemphotosubjectdistance-photo-metadata-policy"></a>Política de metadados de foto System. Photo. SubjectDistance
+# <a name="systemphotosubjectdistance-photo-metadata-policy"></a>Política de metadados de foto System.Photo.SubjectDistance
 
-A política de metadados de foto para a propriedade [System. Photo. SubjectDistance](../properties/props-system-photo-subjectdistance.md) .
+A política de metadados de foto para a [propriedade System.Photo.SubjectDistance.](../properties/props-system-photo-subjectdistance.md)
 
-### <a name="pkey"></a>PKEY
+### <a name="pkey"></a>Pkey
 
 PKEY \_ Photo \_ SubjectDistance
 
@@ -25,25 +25,25 @@ JPEG, TIFF
 
 ### <a name="read-only"></a>Somente leitura
 
-Yes
+Sim
 
-### <a name="output-propvariant-type"></a>Tipo de PROPVARIANT de saída
+### <a name="output-propvariant-type"></a>Tipo PROPVARIANT de saída
 
-R8 de VT \_
+VT \_ R8
 
-### <a name="conflict-resolution-policy"></a>Política de resolução de conflito
+### <a name="conflict-resolution-policy"></a>Política de resolução de conflitos
 
-Esse valor é gerado em System. Photo. SubjectDistanceNumerator e System. Photo. SubjectDistanceDenominator. Ele não pode ser gravado diretamente. Os valores de esquemas diferentes são reconciliados.
+Esse valor é gerado de System.Photo.SubjectDistanceNumerator e System.Photo.SubjectDistanceDenominator. Ele não pode ser gravado diretamente. Valores de esquemas diferentes são reconciliados.
 
 ### <a name="jpeg-policy"></a>Política JPEG
 
-### <a name="read-paths"></a>Caminhos de leitura
+### <a name="read-paths"></a>Ler caminhos
 
 
 
 | Ordem | Caminho                          | Formato de disco |
 |-------|-------------------------------|-------------|
-| 1     | /App1/IFD/EXIF/{UShort = 37382} |             |
+| 1     | /app1/ifd/exif/{ushort=37382} |             |
 | 2     | /xmp/exif:SubjectDistance     |             |
 
 
@@ -56,7 +56,7 @@ Esse valor é gerado em System. Photo. SubjectDistanceNumerator e System. Photo.
 
 | Ordem | Caminho                          | Formato de disco |
 |-------|-------------------------------|-------------|
-| 1     | /App1/IFD/EXIF/{UShort = 37382} |             |
+| 1     | /app1/ifd/exif/{ushort=37382} |             |
 | 2     | /xmp/exif:SubjectDistance     |             |
 
 
@@ -69,7 +69,7 @@ Esse valor é gerado em System. Photo. SubjectDistanceNumerator e System. Photo.
 
 | Ordem | Caminho                          |
 |-------|-------------------------------|
-| 1     | /App1/IFD/EXIF/{UShort = 37382} |
+| 1     | /app1/ifd/exif/{ushort=37382} |
 | 2     | /xmp/exif:subjectdistance     |
 
 
@@ -78,13 +78,13 @@ Esse valor é gerado em System. Photo. SubjectDistanceNumerator e System. Photo.
 
 ### <a name="tiff-policies"></a>Políticas TIFF
 
-### <a name="read-paths"></a>Caminhos de leitura
+### <a name="read-paths"></a>Ler caminhos
 
 
 
 | Ordem | Caminho                          | Formato de disco |
 |-------|-------------------------------|-------------|
-| 1     | /IFD/EXIF/{UShort = 37382}      |             |
+| 1     | /ifd/exif/{ushort=37382}      |             |
 | 2     | /ifd/xmp/exif:SubjectDistance |             |
 
 
@@ -97,7 +97,7 @@ Esse valor é gerado em System. Photo. SubjectDistanceNumerator e System. Photo.
 
 | Ordem | Caminho                          | Formato de disco |
 |-------|-------------------------------|-------------|
-| 1     | /IFD/EXIF/{UShort = 37382}      |             |
+| 1     | /ifd/exif/{ushort=37382}      |             |
 | 2     | /ifd/xmp/exif:SubjectDistance |             |
 
 
@@ -110,7 +110,7 @@ Esse valor é gerado em System. Photo. SubjectDistanceNumerator e System. Photo.
 
 | Ordem | Caminho                          |
 |-------|-------------------------------|
-| 1     | /IFD/EXIF/{UShort = 37382}      |
+| 1     | /ifd/exif/{ushort=37382}      |
 | 2     | /ifd/xmp/exif:subjectdistance |
 
 
@@ -123,7 +123,7 @@ Esse valor é gerado em System. Photo. SubjectDistanceNumerator e System. Photo.
 
 <dl> <dt>
 
-[System. Photo. SubjectDistance](../properties/props-system-photo-subjectdistance.md)
+[System.Photo.SubjectDistance](../properties/props-system-photo-subjectdistance.md)
 </dt> </dl>
 
  

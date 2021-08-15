@@ -4,18 +4,18 @@ ms.assetid: 3280d6cf-2741-40fe-8aa5-9f5be96d9fb8
 title: Introdução com auxiliar de IP
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 566ed4503c9bbafaee846aebf30c31993f7ce7e0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 134ca2df12a7d2d2cbd2d0a64f1da07c8aeecd4980fea791bfc19ca018cd87be
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103837414"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119014154"
 ---
 # <a name="getting-started-with-ip-helper"></a>Introdução com auxiliar de IP
 
 Veja a seguir um guia passo a passo para a programação de introdução usando a API (interface de programação de aplicativo) auxiliar de IP. Ele foi projetado para fornecer uma compreensão das funções auxiliares de IP e estruturas de dados básicas e como elas funcionam juntas.
 
-O aplicativo usado para ilustração é um aplicativo auxiliar de IP muito básico. Exemplos de código mais avançados estão incluídos nos exemplos incluídos no SDK (Software Development Kit) do Microsoft Windows.
+O aplicativo usado para ilustração é um aplicativo auxiliar de IP muito básico. exemplos de código mais avançados estão incluídos nos exemplos incluídos no Microsoft Windows Software Development Kit (SDK).
 
 A primeira etapa é a mesma para a maioria dos aplicativos auxiliares de IP.
 
@@ -38,7 +38,7 @@ O código-fonte completo para este exemplo de auxiliar de IP básico.
 
 ## <a name="advanced-ip-helper-samples"></a>Exemplos do auxiliar de IP avançado
 
-Vários exemplos mais avançados de auxiliares de IP estão incluídos no Microsoft Windows Software Development Kit (SDK). Por padrão, o código-fonte de exemplo do auxiliar de IP é instalado pelo SDK do Windows lançado para o Windows 7 no seguinte diretório:
+vários exemplos mais avançados de auxiliares de IP estão incluídos no Microsoft Windows Software Development Kit (SDK). por padrão, o código-fonte de exemplo do auxiliar de IP é instalado pelo SDK do Windows liberado para o Windows 7 no seguinte diretório:
 
 *C: \\ arquivos de programas \\ Microsoft SDKs \\ Windows \\ v 7.0 \\ amostras \\ NetDs \\ IPHelp*
 
@@ -74,7 +74,7 @@ Os exemplos mais avançados listados abaixo são encontrados nos seguintes diret
 
 -   NetInfo
 
-    Esse diretório contém um programa de exemplo que demonstra como usar as novas APIs auxiliares de IP introduzidas no Windows Vista e versões posteriores para exibir/alterar informações de endereço e de interface para IPv4 e IPv6.
+    esse diretório contém um programa de exemplo que demonstra como usar as novas APIs auxiliares de IP introduzidas no Windows Vista e versões posteriores para exibir/alterar informações de endereço e de interface para IPv4 e IPv6.
 
  
 

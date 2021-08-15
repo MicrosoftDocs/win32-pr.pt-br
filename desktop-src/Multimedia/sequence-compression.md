@@ -7,12 +7,12 @@ keywords:
 - VCM (Gerenciador de compactação de vídeo), compactação de sequência
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8485c31361540ae0e0e9569453bc610d10d88d3d
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 5c930c1f2a3e73e21e63195129221aaa28017e5a8d59122be9d8cbf956b828bd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103916220"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119688866"
 ---
 # <a name="sequence-compression"></a>Compactação de sequência
 
@@ -22,9 +22,9 @@ Antes que um aplicativo possa começar a compactar uma sequência de quadros, el
 
 Quando um aplicativo conclui a compactação de uma sequência, ele pode usar o **ICSeqCompressFrameEnd** para liberar recursos do sistema alocados para **ICSeqCompressFrameStart**. Para liberar os recursos alocados para a estrutura **COMPVARS** , o aplicativo pode usar a função [**ICCompressorFree**](/windows/desktop/api/Vfw/nf-vfw-iccompressorfree) .
 
- 
+ 
 
- 
+ 
 
 
 

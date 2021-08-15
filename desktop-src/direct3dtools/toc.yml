@@ -1,9 +1,9 @@
 - name: Ferramentas para elementos gráficos do DirectX
   href: dx-graphics-tools.md
   items:
-    - name: Depuração remota de aplicativos DirectX
+    - name: Depurando aplicativos DirectX remotamente
       href: debugging-directx-apps-remotely.md
-    - name: Ferramenta de Effect-Compiler
+    - name: Effect-Compiler de dados
       href: fxc.md
       items:
         - name: Syntax
@@ -13,7 +13,7 @@
     - name: Referência da interface de captura de diagnóstico do Direct3D
       href: vspixengine-reference.md
       items:
-        - name: Interfaces de interface de captura de diagnóstico Direct3D
+        - name: Interfaces de interface de captura de diagnóstico do Direct3D
           href: vspixengine-interfaces.md
           items:
             - name: INewFramesCallback
@@ -46,7 +46,7 @@
             - name: IPixelHistoryCallback
               href: ipixelhistorycallback.md
               items:
-                - name: ResultCallback
+                - name: Resultcallback
                   href: ipixelhistorycallback-resultcallback-dword-pixelhistoryoperation-arr.md
             - name: IPixelHistoryRequest
               href: ipixelhistoryrequest.md
@@ -70,7 +70,7 @@
             - name: IFrameBufferCallback
               href: iframebuffercallback.md
               items:
-                - name: ResultCallback
+                - name: Resultcallback
                   href: iframebuffercallback-resultcallback-dword-dword-dword-dword-double-dword-byte-arr.md
             - name: IFrameBufferRequest
               href: iframebufferrequest.md
@@ -107,7 +107,7 @@
             - name: IGenericBufferDataCallback
               href: igenericbufferdatacallback.md
               items:
-                - name: ResultCallback
+                - name: Resultcallback
                   href: igenericbufferdatacallback-resultcallback-dword-byte-arr-bstr.md
             - name: IGenericBufferDataRequest
               href: igenericbufferdatarequest.md
@@ -117,7 +117,7 @@
             - name: IBufferObjectDataCallback
               href: ibufferobjectdatacallback.md
               items:
-                - name: ResultCallback
+                - name: Resultcallback
                   href: ibufferobjectdatacallback-resultcallback-bstr.md
             - name: IBufferObjectDataRequest
               href: ibufferobjectdatarequest.md
@@ -127,7 +127,7 @@
             - name: ITextureCallback
               href: itexturecallback.md
               items:
-                - name: ResultCallback
+                - name: Resultcallback
                   href: itexturecallback-resultcallback.md
             - name: ITextureRequest
               href: itexturerequest.md
@@ -144,7 +144,7 @@
             - name: IPipeLineStagesCallback
               href: ipipelinestagescallback.md
               items:
-                - name: ResultCallback
+                - name: Resultcallback
                   href: ipipelinestagescallback-resultcallback-pipelinestagesid-eventid-dword-dword-dword-dword-byte-arr.md
                 - name: MeshDataVertCallback
                   href: ipipelinestagescallback-meshdatavertcallback-uint-uint-meshdatabufferlayoutentry-arr-uint-uint-byte-arr-uint-byte-arr-uint-uint-uint-uint-bool-uint-uint.md
@@ -186,7 +186,7 @@
             - name: ICallStackCallback
               href: icallstackcallback.md
               items:
-                - name: ResultCallback
+                - name: Resultcallback
                   href: icallstackcallback-resultcallback-dword-callstackframe-arr.md
             - name: ICallStackRequest
               href: icallstackrequest.md
@@ -201,7 +201,7 @@
             - name: ISourceFileInfoCallback
               href: isourcefileinfocallback.md
               items:
-                - name: ResultCallback
+                - name: Resultcallback
                   href: isourcefileinfocallback-resultcallback-dword-sourcefileinfo-arr.md
             - name: ISourceFileInfoRequest
               href: isourcefileinforequest.md
@@ -211,7 +211,7 @@
             - name: IRunExperimentCallback
               href: irunexperimentcallback.md
               items:
-                - name: ResultCallback
+                - name: Resultcallback
                   href: irunexperimentcallback-resultcallback-dword.md
             - name: IRunActionCallback
               href: irunactioncallback.md
@@ -226,7 +226,7 @@
             - name: IFrameListCallback
               href: iframelistcallback.md
               items:
-                - name: ResultCallback
+                - name: Resultcallback
                   href: iframelistcallback-resultcallback-dword-dword-arr-dword-arr.md
             - name: IFrameListRequest
               href: iframelistrequest.md
@@ -236,7 +236,7 @@
             - name: ISummaryCallback
               href: isummarycallback.md
               items:
-                - name: ResultCallback
+                - name: Resultcallback
                   href: isummarycallback-resultcallback-dword-summaryitem-arr.md
             - name: ISummaryRequest
               href: isummaryrequest.md

@@ -1,5 +1,5 @@
 ---
-description: Define o tipo que contém informações sobre o título em uma nota do diário.
+description: Define o tipo que contém informações sobre o título em uma nota de Diário.
 ms.assetid: 8289456b-c969-4079-bcb5-36949faa65e0
 title: Tipo complexo TitleInfoType
 ms.topic: reference
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: f358f0e9282914dc202297c8e3bf2fed1ab588a9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d001b8bbae1b52b7ec168b0438be4eae3313b231f34869ca37d528ed8e2e958a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104171838"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118966745"
 ---
 # <a name="titleinfotype-complex-type"></a>Tipo complexo TitleInfoType
 
-Define o tipo que contém informações sobre o título em uma nota do diário.
+Define o tipo que contém informações sobre o título em uma nota de Diário.
 
 ``` syntax
 <xs:complexType name="TitleInfoType" />
@@ -33,7 +33,7 @@ Define o tipo que contém informações sobre o título em uma nota do diário.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Somente aplicativos de área de trabalho do Windows XP Tablet PC Edition \[\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho do XP Tablet PC \[ Edition\]<br/> |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                     |
 
 
