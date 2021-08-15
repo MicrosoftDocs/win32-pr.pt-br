@@ -1,6 +1,6 @@
 ---
-title: Método SetProperty IBackgroundCopyJob5 (Deliveryoptimization. h)
-description: Um método genérico para definir propriedades de trabalho de otimização de entrega (DO).
+title: Método IBackgroundCopyJob5 SetProperty (Deliveryoptimization.h)
+description: Um método genérico para definir Otimização de Entrega propriedades de trabalho (DO).
 ms.assetid: 9A8CCE04-B3EB-43CC-A135-7054EC40ABEC
 keywords:
 - Método SetProperty
@@ -24,9 +24,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118542679"
 ---
-# <a name="ibackgroundcopyjob5setproperty-method"></a>Método IBackgroundCopyJob5:: SetProperty
+# <a name="ibackgroundcopyjob5setproperty-method"></a>Método IBackgroundCopyJob5::SetProperty
 
-Um método genérico para definir propriedades de trabalho de otimização de entrega (DO).
+Um método genérico para definir Otimização de Entrega propriedades de trabalho (DO).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -44,23 +44,23 @@ HRESULT SetProperty(
 
 <dl> <dt>
 
-*PropertyId* \[ no\]
+*PropertyId* \[ Em\]
 </dt> <dd>
 
-A ID da propriedade que está sendo definida como um [**BITS_JOB_PROPERTY_ID**](bits-job-property-id.md) valor de enumeração.
+A ID da propriedade que está sendo definida especificada como um [**valor BITS_JOB_PROPERTY_ID**](bits-job-property-id.md) enum.
 
 </dd> <dt>
 
-*PropertyValue* \[ no\]
+*PropertyValue* \[ Em\]
 </dt> <dd>
 
-O valor da propriedade que está sendo definida. Para manter um valor cujo tipo é apropriado para a propriedade, esse valor é especificado por meio da União de [**BITS_JOB_PROPERTY_VALUE**](bits-job-property-value-.md) que é composta por todos os tipos de propriedade conhecidos.
+O valor da propriedade que está sendo definida. Para manter um valor cujo tipo é apropriado para a propriedade [](bits-job-property-value-.md) , esse valor é especificado por meio da união BITS_JOB_PROPERTY_VALUE que é composta por todos os tipos de propriedade conhecidos.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor retornado
 
-O método retorna os valores de retorno a seguir.
+O método retorna os seguintes valores de retorno.
 
 
 
@@ -78,11 +78,11 @@ O método retorna os valores de retorno a seguir.
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 10, \[ somente aplicativos da área de trabalho da versão 1709\]<br/>                                           |
-| Servidor mínimo com suporte<br/> | Windows Servidor, versão 1709 \[ aplicativos da área de trabalho\]<br/>                                       |
-| parâmetro<br/>                   | <dl> <dt>Deliveryoptimization. h</dt> </dl>   |
-| INSERI<br/>                      | <dl> <dt>DeliveryOptimization. idl</dt> </dl> |
-| Biblioteca<br/>                  | <dl> <dt>Dosvc. lib</dt> </dl>                |
+| Cliente mínimo com suporte<br/> | Windows 10, versão 1709 somente para \[ aplicativos da área de trabalho\]<br/>                                           |
+| Servidor mínimo com suporte<br/> | Windows Servidor, versão 1709 somente \[ aplicativos da área de trabalho\]<br/>                                       |
+| Cabeçalho<br/>                   | <dl> <dt>Deliveryoptimization.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>DeliveryOptimization.idl</dt> </dl> |
+| Biblioteca<br/>                  | <dl> <dt>Dosvc.lib</dt> </dl>                |
 | DLL<br/>                      | <dl> <dt>Dosvc.dll</dt> </dl>                |
 | IID<br/>                      | IID_IBackgroundCopyJob5 é definido como E847030C-BBBA-4657-AF6D-484AA42BF1FE<br/>              |
 
@@ -95,7 +95,7 @@ O método retorna os valores de retorno a seguir.
 [**IBackgroundCopyJob5**](ibackgroundcopyjob5.md)
 </dt> <dt>
 
-[**IBackgroundCopyJob5:: GetProperty**](ibackgroundcopyjob5-getproperty.md)
+[**IBackgroundCopyJob5::GetProperty**](ibackgroundcopyjob5-getproperty.md)
 </dt> </dl>
 
  

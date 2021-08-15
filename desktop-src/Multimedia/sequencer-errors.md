@@ -18,12 +18,12 @@ keywords:
 - Erros do sequenciador MCI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7dd7d55d3b49be3d641f7396148d98766b224a58
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: bea7e5b38d5541041e8ec065c8cad31f9d31ed1bfa9f22562aba1bf1ff04039b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103635882"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118371124"
 ---
 # <a name="sequencer-errors"></a>Erros do Sequencer
 
@@ -44,11 +44,11 @@ Os seguintes valores de retorno adicionais são definidos para sequenciais MCI:
 
 
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

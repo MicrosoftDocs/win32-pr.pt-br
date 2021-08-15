@@ -17,12 +17,12 @@ keywords:
 - WinEvents
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 93e6973356fe6be922e73eef70e5107b6dcabe0a
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: de5b95d7daa3570e8b4b9b1d61c7c5f5590c6456d83190195e57af66811f1672
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104366072"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118324792"
 ---
 # <a name="design-custom-properties-events-and-control-patterns"></a>Criar propriedades personalizadas, eventos e padrões de controle
 
@@ -112,6 +112,6 @@ Embora este tópico se concentre em como registrar Propriedades personalizadas d
 [Visão Geral de Padrões de Controle de Automação de Interface de Usuário](uiauto-controlpatternsoverview.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

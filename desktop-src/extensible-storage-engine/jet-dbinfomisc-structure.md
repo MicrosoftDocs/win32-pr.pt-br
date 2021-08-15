@@ -15,17 +15,17 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 649e16e956e5dcd272e6201f779cdddd352a7bef
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6c7684fe69cff252d75ea2cceb0872044e8a011b39e88375d6eb576cb1b5360e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104501322"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118486329"
 ---
 # <a name="jet_dbinfomisc-structure"></a>Estrutura JET_DBINFOMISC
 
 
-_**Aplica-se a:** Windows | Windows Server_
+_**Aplica-se a:** Windows | Windows Servidor_
 
 ## <a name="jet_dbinfomisc-structure"></a>Estrutura JET_DBINFOMISC
 
@@ -236,25 +236,25 @@ Dá suporte à infraestrutura ESE e não pode ser usada em seu código.
 
 **dwMajorVersion**
 
-Representa os números de versão do Windows NT quando os índices dos bancos de dados foram atualizados. Usado para atualizar índices.
+representa os números de versão de Windows NT quando os índices de bancos de dados foram atualizados. Usado para atualizar índices.
 
 **dwMinorVersion**
 
-Representa os números de versão do Windows NT quando os índices dos bancos de dados foram atualizados. Usado para atualizar índices.
+representa os números de versão de Windows NT quando os índices de bancos de dados foram atualizados. Usado para atualizar índices.
 
 **dwBuildNumber**
 
-Representa os números de versão do Windows NT quando os índices dos bancos de dados foram atualizados. Usado para atualizar índices.
+representa os números de versão de Windows NT quando os índices de bancos de dados foram atualizados. Usado para atualizar índices.
 
 **lSPNumber**
 
-Representa os números de versão do Windows NT quando os índices dos bancos de dados foram atualizados. Usado para atualizar índices.
+Representa os Windows NT de versão quando os índices de bancos de dados foram atualizados. Usado para atualizar índices.
 
 **cbPageSize**
 
 Tamanho da página do banco de dados. 0 significa que o tamanho da página é de 4 KB.
 
-Esse valor será recuperado somente se JET_DbInfoMisc foi passado para [JetGetDatabaseInfo](./jetgetdatabaseinfo-function.md) ou [JetGetDatabaseFileInfo](./jetgetdatabasefileinfo-function.md).
+Esse valor será recuperado somente se JET_DbInfoMisc foi passado para [JetGetDatabaseInfo](./jetgetdatabaseinfo-function.md) ou [JetGetDatabaseFileInfo.](./jetgetdatabasefileinfo-function.md)
 
 ### <a name="requirements"></a>Requisitos
 
@@ -266,15 +266,15 @@ Esse valor será recuperado somente se JET_DbInfoMisc foi passado para [JetGetDa
 <tbody>
 <tr class="odd">
 <td><p><strong>Cliente</strong></p></td>
-<td><p>Requer o Windows Vista, o Windows XP ou o Windows 2000 Professional.</p></td>
+<td><p>Requer Windows Vista, Windows XP ou Windows 2000 Professional.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Servidor</strong></p></td>
-<td><p>Requer o Windows Server 2008, o Windows Server 2003 ou o Windows 2000 Server.</p></td>
+<td><p>Requer Windows Server 2008, Windows Server 2003 ou Windows 2000 Server.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Cabeçalho</strong></p></td>
-<td><p>Declarado em ESENT. h.</p></td>
+<td><p>Declarado em Esent.h.</p></td>
 </tr>
 </tbody>
 </table>

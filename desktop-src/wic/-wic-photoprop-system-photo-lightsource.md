@@ -1,23 +1,23 @@
 ---
-description: A política de metadados de foto para a propriedade System. Photo. claridade.
+description: A política de metadados de foto para a propriedade System.Photo.LightSource.
 ms.assetid: 051a49ad-bb4c-459f-ae52-dc359a03a14a
-title: Política de metadados de foto System. Photo. Lightexception
+title: Política de metadados de foto System.Photo.LightSource
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ec9b3d31f01cdd2bea8d3fabbbc730a41f1fb0da
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 195d165a6a929c8e0b4bf2dd165a5f22068a8b75e8ea4dfcddb5b8979900b035
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104506155"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118204718"
 ---
-# <a name="systemphotolightsource-photo-metadata-policy"></a>Política de metadados de foto System. Photo. Lightexception
+# <a name="systemphotolightsource-photo-metadata-policy"></a>Política de metadados de foto System.Photo.LightSource
 
-A política de metadados de foto para a propriedade [System. Photo. claridade](../properties/props-system-photo-lightsource.md) .
+A política de metadados de foto para a [propriedade System.Photo.LightSource.](../properties/props-system-photo-lightsource.md)
 
-### <a name="pkey"></a>PKEY
+### <a name="pkey"></a>Pkey
 
-\_Claridade da foto PKEY \_
+PKEY \_ Photo \_ LightSource
 
 ### <a name="containers"></a>Contêineres
 
@@ -25,30 +25,30 @@ JPEG, TIFF
 
 ### <a name="read-only"></a>Somente leitura
 
-No
+Não
 
-### <a name="output-propvariant-type"></a>Tipo de PROPVARIANT de saída
+### <a name="output-propvariant-type"></a>Tipo PROPVARIANT de saída
 
-\_UI4 VT
+VT \_ UI4
 
 ### <a name="input-type"></a>Tipo de entrada
 
 UShort
 
-### <a name="conflict-resolution-policy"></a>Política de resolução de conflito
+### <a name="conflict-resolution-policy"></a>Política de resolução de conflitos
 
-Os valores de esquemas diferentes são reconciliados.
+Valores de esquemas diferentes são reconciliados.
 
 ### <a name="jpeg-policy"></a>Política JPEG
 
-### <a name="read-paths"></a>Caminhos de leitura
+### <a name="read-paths"></a>Ler caminhos
 
 
 
 | Ordem | Caminho                          | Formato de disco |
 |-------|-------------------------------|-------------|
-| 1     | /App1/IFD/EXIF/{UShort = 37384} | ushort      |
-| 2     | /XMP/EXIF: claridade         | Unicode     |
+| 1     | /app1/ifd/exif/{ushort=37384} | ushort      |
+| 2     | /xmp/exif:LightSource         | Unicode     |
 
 
 
@@ -60,8 +60,8 @@ Os valores de esquemas diferentes são reconciliados.
 
 | Ordem | Caminho                          | Formato de disco |
 |-------|-------------------------------|-------------|
-| 1     | /App1/IFD/EXIF/{UShort = 37384} | ushort      |
-| 2     | /XMP/EXIF: claridade         | Unicode     |
+| 1     | /app1/ifd/exif/{ushort=37384} | ushort      |
+| 2     | /xmp/exif:LightSource         | Unicode     |
 
 
 
@@ -73,8 +73,8 @@ Os valores de esquemas diferentes são reconciliados.
 
 | Ordem | Caminho                          |
 |-------|-------------------------------|
-| 1     | /App1/IFD/EXIF/{UShort = 37384} |
-| 2     | /XMP/EXIF: claridade         |
+| 1     | /app1/ifd/exif/{ushort=37384} |
+| 2     | /xmp/exif:lightsource         |
 
 
 
@@ -82,14 +82,14 @@ Os valores de esquemas diferentes são reconciliados.
 
 ### <a name="tiff-policies"></a>Políticas TIFF
 
-### <a name="read-paths"></a>Caminhos de leitura
+### <a name="read-paths"></a>Ler caminhos
 
 
 
 | Ordem | Caminho                      | Formato de disco |
 |-------|---------------------------|-------------|
-| 1     | /IFD/EXIF/{UShort = 37384}  | ushort      |
-| 2     | /IFD/XMP/EXIF: claridade | Unicode     |
+| 1     | /ifd/exif/{ushort=37384}  | ushort      |
+| 2     | /ifd/xmp/exif:LightSource | Unicode     |
 
 
 
@@ -101,8 +101,8 @@ Os valores de esquemas diferentes são reconciliados.
 
 | Ordem | Caminho                      | Formato de disco |
 |-------|---------------------------|-------------|
-| 1     | /IFD/EXIF/{UShort = 37384}  | ushort      |
-| 2     | /IFD/XMP/EXIF: claridade | Unicode     |
+| 1     | /ifd/exif/{ushort=37384}  | ushort      |
+| 2     | /ifd/xmp/exif:LightSource | Unicode     |
 
 
 
@@ -114,8 +114,8 @@ Os valores de esquemas diferentes são reconciliados.
 
 | Ordem | Caminho                      |
 |-------|---------------------------|
-| 1     | /IFD/EXIF/{UShort = 37384}  |
-| 2     | /IFD/XMP/EXIF: claridade |
+| 1     | /ifd/exif/{ushort=37384}  |
+| 2     | /ifd/xmp/exif:lightsource |
 
 
 
@@ -127,7 +127,7 @@ Os valores de esquemas diferentes são reconciliados.
 
 <dl> <dt>
 
-[Sistema. foto. Lightname](../properties/props-system-photo-lightsource.md)
+[System.Photo.LightSource](../properties/props-system-photo-lightsource.md)
 </dt> </dl>
 
  

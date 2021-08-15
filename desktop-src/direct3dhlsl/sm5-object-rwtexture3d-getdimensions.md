@@ -1,6 +1,6 @@
 ---
-title: 'Função RWTexture3D:: GetDimensions'
-description: 'Retorna as dimensões do recurso. | Função RWTexture3D:: GetDimensions'
+title: Função RWTexture3D::GetDimensions
+description: Retorna as dimensões do recurso. | Função RWTexture3D::GetDimensions
 ms.assetid: ba70b955-1e80-4f27-84f1-fc9d26a1f1ab
 keywords:
 - Função GetDimensions HLSL
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 499ab493851257030921e9d55f4873eef8726915
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 2fcd1f5e5fb1ab87193c2946e68a8144f34a7275c9ad90e87e9cc7e960336e14
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104298242"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118509204"
 ---
-# <a name="rwtexture3dgetdimensions-function"></a>Função RWTexture3D:: GetDimensions
+# <a name="rwtexture3dgetdimensions-function"></a>Função RWTexture3D::GetDimensions
 
 Retorna as dimensões do recurso.
 
@@ -38,28 +38,28 @@ void GetDimensions(
 
 <dl> <dt>
 
-*Largura* \[ fora\]
+*Largura* \[ out\]
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
 A largura do recurso, em texels.
 
 </dd> <dt>
 
-*Altura* \[ fora\]
+*Altura* \[ out\]
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
 A altura do recurso, em texels.
 
 </dd> <dt>
 
-*Profundidade* \[ fora\]
+*Profundidade* \[ out\]
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
 A profundidade do recurso, em texels.
 
@@ -90,7 +90,7 @@ Essa função tem suporte para os seguintes tipos de sombreadores:
 
 
 
-| Vértice | Envoltória | Domínio | Geometria | 16x16 | Computação |
+| Vértice | Casco | Domínio | Geometry | Pixel | Computação |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | x     | x       |
 

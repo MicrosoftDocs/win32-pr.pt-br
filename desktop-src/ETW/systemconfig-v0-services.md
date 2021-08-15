@@ -1,7 +1,7 @@
 ---
-description: Classe SystemConfig_V0_Services-essa classe é a classe de tipo de evento para eventos de configuração de serviço.
+description: SystemConfig_V0_Services classe - essa classe é a classe de tipo de evento para eventos de configuração de serviço.
 ms.assetid: 1e6c2061-f1a2-4253-a0c4-4b45b2feceda
-title: Classe SystemConfig_V0_Services
+title: SystemConfig_V0_Services classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -23,7 +23,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118393785"
 ---
-# <a name="systemconfig_v0_services-class"></a>\_Classe de \_ Serviços SystemConfig V0
+# <a name="systemconfig_v0_services-class"></a>Classe SystemConfig \_ V0 \_ Services
 
 Essa classe é a classe de tipo de evento para eventos de configuração de serviço.
 
@@ -44,20 +44,20 @@ class SystemConfig_V0_Services : SystemConfig_V0
 
 ## <a name="members"></a>Membros
 
-A classe **SystemConfig \_ V0 \_ Services** tem estes tipos de membros:
+A **classe SystemConfig \_ V0 \_ Services** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **SystemConfig \_ V0 \_ Services** tem essas propriedades.
+A **classe SystemConfig \_ V0 \_ Services** tem essas propriedades.
 
 <dl> <dt>
 
 **DisplayName**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: matriz **char16**
+Tipo de dados: **matriz char16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -66,14 +66,14 @@ Tipo de acesso: Somente leitura
 Qualificadores: **WmiDataId** (2), **Max** (256)
 </dt> </dl>
 
-Nome de exibição do serviço. O nome é, por caso, preservado no Gerenciador de controle de serviço. No entanto, as comparações do nome para exibição nunca fazem diferenciação de maiúsculas e minúsculas.
+Nome de exibição do serviço. O nome é preservado em caso no Gerenciador de Controle de Serviço. No entanto, as comparações do nome para exibição nunca fazem diferenciação de maiúsculas e minúsculas.
 
 </dd> <dt>
 
-**ProcessId**
+**Processid**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -89,7 +89,7 @@ Identificador do processo no qual o serviço é executado.
 **ProcessName**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: matriz **char16**
+Tipo de dados: **matriz char16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -105,7 +105,7 @@ Nome do processo no qual o serviço é executado.
 **ServiceName**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: matriz **char16**
+Tipo de dados: **matriz char16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -125,7 +125,7 @@ Identificador exclusivo do serviço. O identificador fornece uma indicação da 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Nenhum compatível<br/>                            |
-| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/> |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/> |
 
 
 

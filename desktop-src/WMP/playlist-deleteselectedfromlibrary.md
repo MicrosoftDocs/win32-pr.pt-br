@@ -1,9 +1,9 @@
 ---
-title: PLAYLIST. deleteSelectedFromLibrary
-description: O método deleteSelectedFromLibrary exclui o item selecionado da lista de reprodução e da biblioteca.
+title: PLAYLIST.deleteSelectedFromLibrary
+description: O método deleteSelectedFromLibrary exclui o item selecionado da playlist e da biblioteca.
 ms.assetid: 04775d62-91dc-4c08-a864-0301fbc1995f
 keywords:
-- PLAYLIST. deleteSelectedFromLibrary Windows Media Player
+- PLAYLIST.deleteSelectedFromLibrary Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: d08699edfb7811503a1df8fcc2c622e234a0aaaf
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 489525b96ddff6fc68cfaeac8749bf400e5ff5ad674f111aef6a37f3d98bec3f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105765640"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117747069"
 ---
-# <a name="playlistdeleteselectedfromlibrary"></a>PLAYLIST. deleteSelectedFromLibrary
+# <a name="playlistdeleteselectedfromlibrary"></a>PLAYLIST.deleteSelectedFromLibrary
 
-O método **deleteSelectedFromLibrary** exclui o item selecionado da lista de reprodução e da biblioteca.
+O **método deleteSelectedFromLibrary** exclui o item selecionado da playlist e da biblioteca.
 
 ``` syntax
         elementID.deleteSelectedFromLibrary()
@@ -42,7 +42,7 @@ Esse método não retorna um valor.
 
 | Requisito | Valor |
 |--------------------|------------------------------------------------------|
-| Versão<br/> | Windows Media Player versão 7,0 ou posterior<br/> |
+| Versão<br/> | Windows Media Player versão 7.0 ou posterior<br/> |
 
 
 
@@ -53,7 +53,7 @@ Esse método não retorna um valor.
 [**Elemento PLAYLIST**](playlist-element.md)
 </dt> <dt>
 
-[**PLAYLIST. deleteSelected**](playlist-deleteselected.md)
+[**PLAYLIST.deleteSelected**](playlist-deleteselected.md)
 </dt> </dl>
 
  

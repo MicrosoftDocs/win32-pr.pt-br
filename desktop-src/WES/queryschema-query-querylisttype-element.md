@@ -1,9 +1,9 @@
 ---
 title: Elemento Query (QueryListType)
-description: Define um conjunto de seletores e supressers que são usados para incluir eventos no ou excluir eventos do conjunto de resultados.
+description: Define um conjunto de seletores e supressores que são usados para incluir eventos no ou excluir eventos do conjunto de resultados.
 ms.assetid: 2491d7b7-6fbb-4230-92cf-4bef3d2a51cc
 keywords:
-- EventLog de elemento de consulta
+- Elemento Query EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: c105a43d325c0399c681ca9093f1d62d3fb2b973
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f6e6b3519a09e404e979e7164b178e0cad937bd74a305cc249ba57de65b3c465
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455618"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120005176"
 ---
 # <a name="query-querylisttype-element"></a>Elemento Query (QueryListType)
 
-Define um conjunto de seletores e supressers que são usados para incluir eventos no ou excluir eventos do conjunto de resultados.
+Define um conjunto de seletores e supressores que são usados para incluir eventos no ou excluir eventos do conjunto de resultados.
 
 ``` syntax
 <xs:element name="Query"
@@ -30,7 +30,7 @@ Define um conjunto de seletores e supressers que são usados para incluir evento
  />
 ```
 
-O elemento **Query** é definido pelo tipo complexo [**QueryListType**](queryschema-querylisttype-complextype.md) .
+O **elemento Query** é definido pelo [**tipo complexo QueryListType.**](queryschema-querylisttype-complextype.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -38,8 +38,8 @@ O elemento **Query** é definido pelo tipo complexo [**QueryListType**](querysch
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
 
 
 
@@ -50,7 +50,7 @@ O elemento **Query** é definido pelo tipo complexo [**QueryListType**](querysch
 **Elemento pai**
 </dt> <dt>
 
-[**Consulta**](queryschema-querylist-element.md)
+[**QueryList**](queryschema-querylist-element.md)
 </dt> </dl>
 
  

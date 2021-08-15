@@ -3,8 +3,8 @@ title: Aquisição de licença não silenciosa
 description: Aquisição de licença não silenciosa
 ms.assetid: 3b3fce53-9202-4e55-82d5-7c70ea833087
 keywords:
-- SDK do Windows Media Format, aquisição de licença não silenciosa
-- SDK do Windows Media Format, licenças
+- Windows SDK do formato de mídia, aquisição de licença não silenciosa
+- Windows SDK do formato de mídia, licenças
 - DRM (gerenciamento de direitos digitais), aquisição de licença não silenciosa
 - DRM (gerenciamento de direitos digitais), aquisição de licença não silenciosa
 - DRM (gerenciamento de direitos digitais), licenças
@@ -15,12 +15,12 @@ keywords:
 - licenças, aquisição de licença não silenciosa
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: adb8d7c4865e74fd5ce383cff8317de905828afe
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: e92c9350e429a1fe4b6218878d2211b355c1569b39284161f9f3abceac1afc6d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104498800"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117846422"
 ---
 # <a name="non-silent-license-acquisition"></a>Aquisição de licença não silenciosa
 
@@ -44,9 +44,9 @@ Para executar a aquisição de licença não silenciosa, use as seguintes etapas
 [**Usando o modelo de evento Media Foundation**](using-the-media-foundation-model.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

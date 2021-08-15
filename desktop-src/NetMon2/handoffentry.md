@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - Netmon.h
-ms.openlocfilehash: 7c04c7bc90fdd0f36beb6aed26a6b84c077eff5f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 692b9e925442920a67434f74c9e8a8ebd225fc417cbbf419b6eb568aa9eee2df
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104501347"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117981409"
 ---
 # <a name="handoffentry-structure"></a>Estrutura HANDOFFENTRY
 
 A estrutura **HANDOFFENTRY** define uma entrada de protocolo específica em uma estrutura de **entrega** .
 
-Essa estrutura é preenchida por Monitor de Rede com base nas informações de um arquivo. ini fornecido pelo usuário fornecido ao chamar a função [**Createentregatable**](createhandofftable.md) . Essa estrutura nunca deve ser modificada explicitamente por um aplicativo.
+Essa estrutura é preenchida por Monitor de Rede com base nas informações de um arquivo de .ini fornecido pelo usuário fornecido ao chamar a função [**Createentregatable**](createhandofftable.md) . Essa estrutura nunca deve ser modificada explicitamente por um aplicativo.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -54,21 +54,21 @@ Assinatura que identifica essa entrada como uma entrada de tabela de entrega.
 **como \_ ProtIdentNumber**
 </dt> <dd>
 
-Número de protocolo fornecido pelo arquivo. ini fornecido pelo usuário.
+Número de protocolo fornecido pelo arquivo de .ini fornecido pelo usuário.
 
 </dd> <dt>
 
 **como \_ ProtocolHandle**
 </dt> <dd>
 
-Identificador de protocolo criado usando o nome do protocolo fornecido pelo arquivo. ini fornecido pelo usuário.
+Identificador de protocolo criado usando o nome do protocolo fornecido pelo usuário fornecido .ini arquivo.
 
 </dd> <dt>
 
 **como \_ ProtocolData**
 </dt> <dd>
 
-Dados de instância de protocolo fornecidos pelo arquivo. ini fornecido pelo usuário.
+Dados de instância de protocolo fornecidos pelo arquivo de .ini fornecido pelo usuário.
 
 </dd> </dl>
 

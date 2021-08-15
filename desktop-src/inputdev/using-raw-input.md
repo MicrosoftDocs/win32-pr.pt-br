@@ -14,12 +14,12 @@ keywords:
 - entrada bruta do game pad
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 637137481fd930214beb04d2c75a7a2921d8b5fa
-ms.sourcegitcommit: ae1241c7d27e0bd128dfa40ca0b4187728b2a9e0
+ms.openlocfilehash: ed7c020af77c20e191f0c71a2e89f66d13dddb9e85c3753ff1789e02729e0495
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "105791293"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117884303"
 ---
 # <a name="using-raw-input"></a>Usando a entrada bruta
 

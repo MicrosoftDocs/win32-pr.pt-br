@@ -1,5 +1,5 @@
 ---
-title: Funções (referência de HLSL)
+title: Funções (referência HLSL)
 description: As funções encapsulam instruções HLSL.
 ms.assetid: b6f934e5-eac7-4859-b1d0-698632011e1d
 ms.topic: article
@@ -9,23 +9,23 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 59b0bfcb2079329d4d7ad7c02e7e5a326d22c236
-ms.sourcegitcommit: cba7f424a292fd7f3a8518947b9466439b455419
+ms.openlocfilehash: 37086a030ad902f2bfb5deab52ffba620e97890bd13e7c6957170572087ce7c4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "104293604"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118514574"
 ---
-# <a name="functions-hlsl-reference"></a>Funções (referência de HLSL)
+# <a name="functions-hlsl-reference"></a>Funções (referência HLSL)
 
-As funções encapsulam instruções HLSL. Isso permite que você depure um conjunto de funções e, em seguida, reutilize-as em sombreadores ou efeitos. Talvez você queira criar uma função que encapsula a funcionalidade de um sombreador de vértice, sombreador de pixel ou sombreador de textura. Em outras ocasiões, convém escrever uma função auxiliar que executa uma tarefa comumente usada e, em seguida, chamar essa função auxiliar a partir de sua função de sombreador. As regras para escrever funções de sombreador para HLSL são muito parecidas com a gravação de funções de C.
+As funções encapsulam instruções HLSL. Isso permite que você depure um conjunto de funções e as reutilize entre sombreadores ou efeitos. Talvez você queira criar uma função que encapsula a funcionalidade de um sombreador de vértice, sombreador de pixel ou sombreador de textura. Outras vezes, talvez você queira escrever uma função auxiliar que executa alguma tarefa comumente usada e, em seguida, chamar essa função auxiliar de sua função de sombreador. As regras para escrever funções de sombreador para HLSL são muito semelhantes à escrita de funções C.
 
 -   [Sintaxe](dx-graphics-hlsl-function-syntax.md)
 -   [Parâmetros](dx-graphics-hlsl-function-parameters.md)
 -   [Instrução Return](dx-graphics-hlsl-return.md)
 -   [Assinaturas](dx-graphics-hlsl-signatures.md)
 
-O HLSL também tem várias [**funções intrínsecas internas (DirectX HLSL)**](dx-graphics-hlsl-intrinsic-functions.md). Como todas as funções intrínsecas são testadas e otimizadas para desempenho, é recomendável usar uma função intrínseca onde for possível, em vez de criar sua própria função.
+O HLSL também tem várias funções intrínsecas [**(DirectX HLSL)**](dx-graphics-hlsl-intrinsic-functions.md). Como todas as funções intrínsecas são testadas e otimizadas para desempenho, é uma boa prática usar uma função intrínseca sempre que possível, em vez de criar sua própria função.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -34,9 +34,9 @@ O HLSL também tem várias [**funções intrínsecas internas (DirectX HLSL)**](
 [Sintaxe de linguagem (DirectX HLSL)](dx-graphics-hlsl-language-syntax.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

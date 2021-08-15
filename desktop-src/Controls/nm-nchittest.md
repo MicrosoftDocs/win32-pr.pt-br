@@ -3,7 +3,7 @@ title: NM_NCHITTEST código de notificação (commctrl. h)
 description: NM_NCHITTEST código de notificação – enviado por um controle rebar quando o controle recebe uma \_ mensagem do WM NCHITTEST. Esse código de notificação é enviado na forma de uma mensagem de notificação do WM \_ .
 ms.assetid: 0e088b14-b912-4f60-9d25-cd0a0ba264c3
 keywords:
-- NM_NCHITTEST de código de notificação controles do Windows
+- NM_NCHITTEST código de notificação Windows controles
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 68ede0ac017fbe5146cd68e51e2a38c7f66c7898
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: ab16a835e5e321b916f27b6c79141495f3c05cd4ca8e979e77fef50f84e2ca83
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108112314"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118410687"
 ---
 # <a name="nm_nchittest-notification-code"></a>\_Código de notificação nm NCHITTEST
 
@@ -55,8 +55,8 @@ A menos que especificado de outra forma, retorna zero para permitir que o contro
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
 | parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 

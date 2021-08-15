@@ -1,5 +1,5 @@
 ---
-description: A \_ Propriedade NewEnum de assinantes recupera uma interface IEnumVARIANT em um objeto que pode ser usado para enumerar a coleção. Essa propriedade é oculta em Visual Basic Scripting Edition (VBScript).
+description: A \_ Propriedade NewEnum de assinantes recupera uma interface IEnumVARIANT em um objeto que pode ser usado para enumerar a coleção. essa propriedade é oculta no Visual Basic scripting Edition (VBScript).
 ms.assetid: 99d7ddd3-a552-4125-b220-d1b28f20d1ed
 title: Propriedade Signers._NewEnum
 ms.topic: reference
@@ -13,18 +13,18 @@ api_type:
 - COM
 api_location:
 - Capicom.dll
-ms.openlocfilehash: 91007e7ce282cb44267927f54ab26f8f930028f0
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 866b85d8bfd5eee89a8c8766acb10baa024aa35e4f81b7d7289a6430d345fa6c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105811786"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118898393"
 ---
 # <a name="signers_newenum-property"></a>Assinantes. \_ Propriedade NewEnum
 
 \[A propriedade **\_ NewEnum** está disponível para uso nos sistemas operacionais especificados na seção requisitos. Em vez disso, use uma coleção de objetos CmsSigner. Para obter mais informações, consulte a [**classe CmsSigner**](/dotnet/api/system.security.cryptography.pkcs.cmssigner?view=dotnet-plat-ext-3.1&preserve-view=true) no namespace [**System. Security. Cryptography. Pkcs**](/dotnet/api/system.security.cryptography.pkcs?view=dotnet-plat-ext-3.1&preserve-view=true) .\]
 
-A propriedade **\_ NewEnum** recupera uma interface [**IEnumVARIANT**](/windows/win32/api/oaidl/nn-oaidl-ienumvariant) em um objeto que pode ser usado para enumerar a coleção. Essa propriedade é oculta em Visual Basic Scripting Edition (VBScript).
+A propriedade **\_ NewEnum** recupera uma interface [**IEnumVARIANT**](/windows/win32/api/oaidl/nn-oaidl-ienumvariant) em um objeto que pode ser usado para enumerar a coleção. essa propriedade é oculta no Visual Basic scripting Edition (VBScript).
 
 ## <a name="syntax"></a>Syntax
 
@@ -41,7 +41,7 @@ Uma interface [**IEnumVARIANT**](/windows/win32/api/oaidl/nn-oaidl-ienumvariant)
 
 ## <a name="remarks"></a>Comentários
 
-Essa propriedade é usada automaticamente internamente quando você usa a `For Each In` construção em Visual Basic Scripting Edition (VBScript).
+essa propriedade é usada automaticamente internamente quando você usa a `For Each In` construção no Visual Basic scripting Edition (VBScript).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -49,7 +49,7 @@ Essa propriedade é usada automaticamente internamente quando você usa a `For E
 
 | Requisito | Valor |
 |----------------------------|----------------------------------------------------------------------------------------|
-| Redistribuível<br/> | CAPICOM 2,0 ou posterior no Windows Server 2003 e no Windows XP<br/>                  |
+| Redistribuível<br/> | capicom 2,0 ou posterior no Windows Server 2003 e Windows XP<br/>                  |
 | DLL<br/>             | <dl> <dt>Capicom.dll</dt> </dl> |
 
 

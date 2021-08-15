@@ -14,12 +14,12 @@ dev_langs:
 - JScript
 - VB
 - other
-ms.openlocfilehash: 2a6b6c75f10ed44650d4c565f4a9d831c465a6b3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d55293b45c32d976f045e657d9e055fe5ad5c8c81311d4fdc560c3283807dd8d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104010647"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118491691"
 ---
 # <a name="esentquotaexception-constructor"></a>Construtor EsentQuotaException
 
@@ -39,12 +39,12 @@ Incluir membros herdados
 <tbody>
 <tr class="odd">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Método protegido" alt="Protected method" /></td>
-<td><a href="dn319648(v=exchg.10).md">EsentQuotaException (SerializationInfo, StreamingContext)</a></td>
-<td>Inicializa uma nova instância da classe EsentQuotaException. Esse construtor é usado para desserializar uma exceção serializada.</td>
+<td><a href="dn319648(v=exchg.10).md">EsentQuotaException(SerializationInfo, StreamingContext)</a></td>
+<td>Inicializa uma nova instância da classe EsentQuotaException. Esse construtor é usado para desserlizar uma exceção serializada.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Método protegido" alt="Protected method" /></td>
-<td><a href="dn319867(v=exchg.10).md">EsentQuotaException (cadeia de caracteres, JET_err)</a></td>
+<td><a href="dn319867(v=exchg.10).md">EsentQuotaException(String, JET_err)</a></td>
 <td>Inicializa uma nova instância da classe EsentQuotaException.</td>
 </tr>
 </tbody>
@@ -59,6 +59,6 @@ Parte superior
 
 [Classe EsentQuotaException](./esentquotaexception-class.md)
 
-[Membros do EsentQuotaException](./esentquotaexception-members.md)
+[Membros EsentQuotaException](./esentquotaexception-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

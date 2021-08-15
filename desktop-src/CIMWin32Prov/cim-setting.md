@@ -1,8 +1,8 @@
 ---
-description: A \_ classe de configuração CIM representa parâmetros operacionais e relacionados à configuração para um ou mais elementos do sistema gerenciado.
+description: A classe Configuração cim representa parâmetros operacionais e relacionados à \_ configuração para um ou mais elementos do sistema gerenciado.
 ms.assetid: 57c46b00-96c4-4df1-82ad-01f7b4f75ced
 ms.tgt_platform: multiple
-title: Classe CIM_Setting (provedores WMI CIMWin32)
+title: CIM_Setting classe (Provedores WMI CIMWin32)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -24,12 +24,12 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118421307"
 ---
-# <a name="cim_setting-class-cimwin32-wmi-providers"></a>Classe CIM_Setting (provedores WMI CIMWin32)
+# <a name="cim_setting-class-cimwin32-wmi-providers"></a>CIM_Setting classe (Provedores WMI CIMWin32)
 
-A classe de **\_ configuração CIM** representa parâmetros operacionais e relacionados à configuração para um ou mais elementos do sistema gerenciado. Um elemento de sistema gerenciado pode ter vários objetos de configuração associados a ele. Os valores operacionais atuais para os parâmetros de um elemento são refletidos pelas propriedades no próprio elemento ou por propriedades em suas associações. Essas propriedades não precisam ter os mesmos valores presentes no objeto Setting. Por exemplo, um modem pode ter uma taxa de baud de configuração de 56 quilobytes por segundo, mas operando a 19,2 quilobytes por segundo.
+A **classe \_ Configuração cim** representa parâmetros operacionais e relacionados à configuração para um ou mais elementos do sistema gerenciado. Um elemento do sistema gerenciado pode ter vários objetos de configuração associados a ele. Os valores operacionais atuais para parâmetros de um elemento são refletidos por propriedades no próprio elemento ou por propriedades em suas associações. Essas propriedades não devem ser os mesmos valores presentes no objeto de configuração. Por exemplo, um modem pode ter uma taxa de tempo de configuração de 56 quilobytes por segundo, mas estar operando em 19,2 quilobytes por segundo.
 
 > [!IMPORTANT]
-> As classes DMTF (Distributed Management Task Force) CIM (modelo CIM) são as classes pai nas quais as classes WMI são criadas. Atualmente, o WMI dá suporte apenas aos [esquemas de versão do CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> As classes CIM (Distributed Management Task Force) do DMTF (Distributed Management Task Force) modelo CIM são as classes pai nas quais as classes WMI são criadas. Atualmente, o WMI dá suporte apenas aos esquemas de versão [do CIM 2.x.](https://dmtf.org/standards/cim/schemas)
 
  
 
@@ -49,13 +49,13 @@ class CIM_Setting
 
 ## <a name="members"></a>Membros
 
-A classe de **\_ configuração CIM** tem estes tipos de membros:
+A **classe \_ Configuração** cim tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe de **\_ configuração CIM** tem essas propriedades.
+A **classe \_ Configuração cim** tem essas propriedades.
 
 <dl> <dt>
 
@@ -68,10 +68,10 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
+Qualificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
 </dt> </dl>
 
-Breve descrição textual do objeto atual.
+Descrição textual curta do objeto atual.
 
 </dd> <dt>
 
@@ -88,7 +88,7 @@ Descrição textual do objeto atual.
 
 </dd> <dt>
 
-**SettingID**
+**Settingid**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
@@ -97,7 +97,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
+Qualificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
 Identificador pelo qual o objeto atual é conhecido.
@@ -106,9 +106,9 @@ Identificador pelo qual o objeto atual é conhecido.
 
 ## <a name="remarks"></a>Comentários
 
-O WMI não implementa essa classe. Para classes WMI derivadas da **\_ configuração de CIM**, consulte [classes Win32](win32-provider.md).
+O WMI não implementa essa classe. Para classes WMI derivadas da **\_ Configuração cim,** consulte [Classes Win32](win32-provider.md).
 
-Esta documentação é derivada das descrições da classe CIM publicadas pela DMTF. A Microsoft pode ter feito alterações para corrigir erros secundários, obedecer aos padrões de documentação do Microsoft SDK ou fornecer mais informações.
+Esta documentação é derivada das descrições da classe CIM publicadas pelo DMTF. A Microsoft pode ter feito alterações para corrigir erros secundários, estar em conformidade com os padrões de documentação do SDK da Microsoft ou fornecer mais informações.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -118,8 +118,8 @@ Esta documentação é derivada das descrições da classe CIM publicadas pela D
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| Namespace<br/>                | Raiz \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Namespace<br/>                | RAIZ \\ CIMV2<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 

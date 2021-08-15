@@ -1,17 +1,17 @@
 ---
 description: Identifica o componente que gerou um evento de captura.
 ms.assetid: DCCF3054-AF14-44C7-84C0-B03E35B5D90A
-title: Atributo MF_CAPTURE_ENGINE_EVENT_GENERATOR_GUID (Mfcaptureengine. h)
+title: MF_CAPTURE_ENGINE_EVENT_GENERATOR_GUID atributo (Mfcaptureengine.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cb9a5068db357523a626404910fb7d752ea0b621
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 88efff7cea540c1fae2c14d44dd7676c4f523b562a66a4c4f4bc4dffea59d5e4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105760602"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118474464"
 ---
-# <a name="mf_capture_engine_event_generator_guid-attribute"></a>\_Atributo de \_ \_ GUID do gerador de eventos do mecanismo de \_ captura MF \_
+# <a name="mf_capture_engine_event_generator_guid-attribute"></a>Atributo GUID DO GERADOR DE EVENTOS DO MECANISMO DE CAPTURA \_ \_ \_ \_ \_ DE MF
 
 Identifica o componente que gerou um evento de captura.
 
@@ -21,9 +21,9 @@ Identifica o componente que gerou um evento de captura.
 
 ## <a name="remarks"></a>Comentários
 
-Esse atributo aparece em alguns eventos do mecanismo de captura. Para obter esse atributo, chame [**IMFAttributes:: GetGUID**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getguid) no objeto de evento. O objeto de evento é passado para o aplicativo por meio do método [**IMFCaptureEngineOnEventCallback:: OnEvent**](/windows/desktop/api/mfcaptureengine/nf-mfcaptureengine-imfcaptureengineoneventcallback-onevent) .
+Esse atributo aparece em alguns eventos do mecanismo de captura. Para obter esse atributo, chame [**IMFAttributes::GetGUID**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getguid) no objeto de evento. O objeto de evento é passado para o aplicativo por meio do [**método IMFCaptureEngineOnEventCallback::OnEvent.**](/windows/desktop/api/mfcaptureengine/nf-mfcaptureengine-imfcaptureengineoneventcallback-onevent)
 
-O valor é um identificador de interface para o componente que gerou o evento. Por exemplo, o valor **IID \_ IMFCapturePreviewSink** indica o coletor de visualização ([**IMFCapturePreviewSink**](/windows/desktop/api/mfcaptureengine/nn-mfcaptureengine-imfcapturepreviewsink)). Nem todo evento de captura contém esse atributo.
+O valor é um identificador de interface para o componente que gerou o evento. Por exemplo, o valor **\_ IID IMFCapturePreviewSink** indica o sink de visualização ([**IMFCapturePreviewSink**](/windows/desktop/api/mfcaptureengine/nn-mfcaptureengine-imfcapturepreviewsink)). Nem todo evento de captura contém esse atributo.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -31,9 +31,9 @@ O valor é um identificador de interface para o componente que gerou o evento. P
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                                   |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                         |
-| parâmetro<br/>                   | <dl> <dt>Mfcaptureengine. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[Windows 8 somente aplicativos da área de trabalho\]<br/>                                                   |
+| Servidor mínimo com suporte<br/> | \[Windows Server 2012 somente aplicativos da área de trabalho\]<br/>                                         |
+| Cabeçalho<br/>                   | <dl> <dt>Mfcaptureengine.h</dt> </dl> |
 
 
 
@@ -41,13 +41,13 @@ O valor é um identificador de interface para o componente que gerou o evento. P
 
 <dl> <dt>
 
-[Lista alfabética de atributos de Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
-[Atributos do mecanismo de captura](capture-engine-attributes.md)
+[Atributos do Mecanismo de Captura](capture-engine-attributes.md)
 </dt> <dt>
 
-[**IMFCaptureEngine:: Initialize**](/windows/desktop/api/mfcaptureengine/nf-mfcaptureengine-imfcaptureengine-initialize)
+[**IMFCaptureEngine::Initialize**](/windows/desktop/api/mfcaptureengine/nf-mfcaptureengine-imfcaptureengine-initialize)
 </dt> </dl>
 
  

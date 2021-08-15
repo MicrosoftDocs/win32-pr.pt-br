@@ -6,12 +6,12 @@ keywords:
 - Função AVIStreamInfo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3cc7ecd606a33503557e7c7209bff68015756523
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 38c56e1bd34fb9b0555c4eb0ed86944be3b7603645865144ac053604cd515cb8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "103917301"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118371646"
 ---
 # <a name="reading-from-a-stream"></a>Lendo de um fluxo
 
@@ -36,6 +36,6 @@ A função [**AVIStreamRead**](/windows/desktop/api/Vfw/nf-vfw-avistreamread) n�
 [Operações de fluxo](stream-operations.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

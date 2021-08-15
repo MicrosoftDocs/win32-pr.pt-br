@@ -1,5 +1,5 @@
 ---
-description: 'Você cria um objeto de buffer de vértice chamando o método IDirect3DDevice9:: CreateVertexBuffer, que aceita cinco parâmetros.'
+description: Crie um objeto de buffer de vértice chamando o método IDirect3DDevice9::CreateVertexBuffer, que aceita cinco parâmetros.
 ms.assetid: 95116ef5-af88-47e7-abf7-1ade9735e2a7
 title: Criando um buffer de vértice (Direct3D 9)
 ms.topic: article
@@ -13,7 +13,7 @@ ms.locfileid: "118527670"
 ---
 # <a name="creating-a-vertex-buffer-direct3d-9"></a>Criando um buffer de vértice (Direct3D 9)
 
-Você cria um objeto de buffer de vértice chamando o método [**IDirect3DDevice9:: CreateVertexBuffer**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-createvertexbuffer) , que aceita cinco parâmetros. O primeiro parâmetro especifica o tamanho do buffer de vértice, em bytes. Use o operador sizeof para determinar o tamanho de um formato de vértice, em bytes. Considere o seguinte formato de vértice personalizado.
+Crie um objeto de buffer de vértice chamando o método [**IDirect3DDevice9::CreateVertexBuffer,**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-createvertexbuffer) que aceita cinco parâmetros. O primeiro parâmetro especifica o comprimento do buffer de vértice, em bytes. Use o operador sizeof para determinar o tamanho de um formato de vértice, em bytes. Considere o seguinte formato de vértice personalizado.
 
 
 ```
@@ -30,17 +30,17 @@ struct CUSTOMVERTEX {
 
 
 
-Para criar um buffer de vértice para conter quatro estruturas CUSTOMVERTEX, especifique \[ 4 \* sizeof (CustomVertex) \] para o parâmetro *Length* .
+Para criar um buffer de vértice para conter quatro estruturas CUSTOMVERTEX, especifique \[ 4 \* sizeof(CUSTOMVERTEX) \] para o *parâmetro* Length.
 
-O segundo parâmetro é um conjunto de controles de uso. Entre outras coisas, seu valor determina se o buffer de vértice é capaz de conter informações de recorte-na forma de sinalizadores de clipes – para vértices que existem fora da área de exibição. Para criar um buffer de vértice que não pode conter sinalizadores de clipe, inclua o \_ sinalizador D3DUSAGE DONOTCLIP para o parâmetro *Usage* . O \_ sinalizador D3DUSAGE DONOTCLIP é aplicado somente se você também indicar que o buffer de vértice conterá vértices transformados – o \_ sinalizador D3DFVF XYZRHW está incluído no parâmetro *FVF* . O método [**IDirect3DDevice9:: CreateVertexBuffer**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-createvertexbuffer) ignora o sinalizador D3DUSAGE \_ DONOTCLIP se você indicar que o buffer conterá vértices não transformados (o \_ sinalizador D3DFVF XYZ). Os sinalizadores de recorte ocupam memória adicional, tornando um buffer de vértice com capacidade de recorte ligeiramente maior do que um buffer de vértice incapaz de conter sinalizadores de recorte. Como esses recursos são alocados quando o buffer de vértice é criado, você deve solicitar um buffer de vértice com capacidade de recorte antes do tempo.
+O segundo parâmetro é um conjunto de controles de uso. Entre outras coisas, seu valor determina se o buffer de vértice é capaz de conter informações de recorte – na forma de sinalizadores de clipe – para vértices que existem fora da área de exibição. Para criar um buffer de vértice que não pode conter sinalizadores de clipe, inclua o sinalizador D3DUSAGE \_ DONOTCLIP para o *parâmetro* Usage. O sinalizador D3DUSAGE DONOTCLIP será aplicado somente se você também indicar que o buffer de vértice conterá vértices transformados – o sinalizador \_ XYZRHW D3DFVF está incluído no parâmetro \_ *FVF.* O método [**IDirect3DDevice9::CreateVertexBuffer**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-createvertexbuffer) ignorará o sinalizador D3DUSAGE DONOTCLIP se você indicar que o buffer conterá vértices nãotransformados (o sinalizador \_ XYZ D3DFVF). \_ Os sinalizadores de recorte ocupam memória adicional, tornando um buffer de vértice com capacidade de recorte um pouco maior do que um buffer de vértice incapaz de conter sinalizadores de recorte. Como esses recursos são alocados quando o buffer de vértice é criado, você deve solicitar um buffer de vértice com capacidade de recorte com antecedência.
 
-O terceiro parâmetro, *FVF*, é uma combinação de [D3DFVF](d3dfvf.md) que descreve o formato de vértice do buffer de vértice. Se você especificar 0 para esse parâmetro, o buffer de vértice será um buffer de vértice não FVF. Para obter mais informações, consulte [buffers de vértices do FVF (Direct3D 9)](fvf-vertex-buffers.md). O quarto parâmetro descreve a classe de memória na qual posicionar o buffer de vértice.
+O terceiro parâmetro, *FVF*, é uma combinação de [D3DFVF](d3dfvf.md) que descreve o formato de vértice do buffer de vértice. Se você especificar 0 para esse parâmetro, o buffer de vértice será um buffer de vértice não FVF. Para obter mais informações, consulte [Buffers de vértice FVF (Direct3D 9)](fvf-vertex-buffers.md). O quarto parâmetro descreve a classe de memória na qual colocar o buffer de vértice.
 
-O parâmetro final que [**IDirect3DDevice9:: CreateVertexBuffer**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-createvertexbuffer) aceita é o endereço de uma variável que será preenchida com um ponteiro para a nova interface [**IDirect3DVertexBuffer9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dvertexbuffer9) do objeto de buffer de vértice, se a chamada for realizada com sucesso.
+O parâmetro final que [**IDirect3DDevice9::CreateVertexBuffer**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-createvertexbuffer) aceita é o endereço de uma variável que será preenchida com um ponteiro para a nova interface [**IDirect3DVertexBuffer9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dvertexbuffer9) do objeto de buffer de vértice, se a chamada for bem-sucedida.
 
 Você não pode produzir sinalizadores de clipe para um buffer de vértice que foi criado sem suporte para eles.
 
-O exemplo de código C++ a seguir mostra como a criação de um buffer de vértice pode ser semelhante ao código.
+O exemplo de código C++ a seguir mostra a aparência da criação de um buffer de vértice no código.
 
 
 ```

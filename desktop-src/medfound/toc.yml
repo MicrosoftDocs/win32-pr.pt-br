@@ -443,29 +443,29 @@
                 - name: Divisor de ASF
                   href: asf-splitter.md
                   items:
-                    - name: Criando o objeto divisor ASF
+                    - name: Criando o objeto divisor de ASF
                       href: creating-the-asf-splitter-object.md
-                    - name: Configurando o objeto divisor ASF
+                    - name: Configurando o objeto divisor de ASF
                       href: configuring-the-asf-splitter-object.md
-                    - name: Gerando exemplos de fluxo de um objeto de dados ASF existente
+                    - name: Gerando amostras de fluxo de um objeto de dados ASF existente
                       href: generating-stream-samples-from-an-existing-asf-data-object.md
                 - name: Multiplexador ASF
                   href: asf-multiplexer.md
                   items:
-                    - name: Criando o objeto multiplexador
+                    - name: Criando o objeto Multiplexador
                       href: creating-the-multiplexer-object.md
                     - name: Gerando novos pacotes de dados ASF
                       href: generating-new-asf-data-packets.md
-                    - name: Ing Data in the Encoder
+                    - name: Processando dados no codificador
                       href: processing-data-in-the-encoder.md
                 - name: Indexador ASF
                   href: asf-index-object.md
                   items:
                     - name: Criação e configuração do indexador
                       href: indexer-creation-and-configuration.md
-                    - name: Usando o indexador para buscar dentro de um arquivo ASF
+                    - name: Usando o indexador para buscar em um arquivo ASF
                       href: using-the-indexer-to-seek.md
-                    - name: Usando o indexador para escrever um novo índice
+                    - name: Usando o indexador para gravar um novo índice
                       href: using-the-indexer-to-write-a-new-index.md
         - name: Captura de áudio/vídeo
           href: audio-video-capture.md
@@ -477,7 +477,7 @@
               items:
                 - name: Enumerando dispositivos de captura de vídeo
                   href: enumerating-video-capture-devices.md
-                - name: Manipulando a perda de dispositivo de vídeo
+                - name: Lidando com a perda de dispositivo de vídeo
                   href: handling-video-device-loss.md
                 - name: Como definir o formato de captura de vídeo
                   href: how-to-set-the-video-capture-format.md
@@ -489,66 +489,66 @@
             - name: Como reproduzir arquivos de mídia com Media Foundation
               href: how-to-play-unprotected-media-files.md
               items:
-                - name: 'Etapa 1: Declarar a classe CPlayer'
+                - name: 'Etapa 1: declarar a classe CPlayer'
                   href: step-1--declare-the-cplayer-class.md
-                - name: 'Etapa 2: Criar o objeto CPlayer'
+                - name: 'Etapa 2: criar o objeto CPlayer'
                   href: step-2--create-the-cplayer-object.md
-                - name: 'Etapa 3: Abrir um arquivo de mídia'
+                - name: 'Etapa 3: abrir um arquivo de mídia'
                   href: step-3--open-a-media-file.md
-                - name: 'Etapa 4: Criar a sessão de mídia'
+                - name: 'Etapa 4: criar a sessão de mídia'
                   href: step-4--create-the-media-session.md
-                - name: 'Etapa 5: Manipular eventos de sessão de mídia'
+                - name: 'Etapa 5: manipular eventos de sessão de mídia'
                   href: step-5--handle-media-session-events.md
-                - name: 'Etapa 6: Controlar a reprodução'
+                - name: 'Etapa 6: controle de reprodução'
                   href: step-6--control-playback.md
-                - name: 'Etapa 7: Desligar sessão de mídia'
+                - name: 'Etapa 7: desligar a sessão de mídia'
                   href: step-7--shut-down-the-media-session.md
                 - name: Exemplo de reprodução de sessão de mídia
                   href: media-session-playback-example.md
                   items:
-                    - name: player.cpp
+                    - name: Player. cpp
                       href: player-cpp.md
-                    - name: player.h
+                    - name: Player. h
                       href: player-h.md
-                    - name: player.rc
+                    - name: Player. rc
                       href: player-rc.md
-                    - name: resource.h
+                    - name: recurso. h
                       href: resource-h.md
-                    - name: winmain.cpp
+                    - name: WinMain. cpp
                       href: winmain-cpp.md
             - name: Como reproduzir arquivos de mídia protegidos
               href: how-to-play-protected-media-files.md
-            - name: Como encontrar a duração de um arquivo de mídia
+            - name: Como localizar a duração de um arquivo de mídia
               href: how-to-find-the-duration-of-a-media-file.md
-            - name: 'Busca, Avançar e reprodução inversa'
+            - name: 'procurando, Avançar e reversão'
               href: seeking--fast-forward--and-reverse-play.md
             - name: Como definir a hora de parada da reprodução
               href: how-to-set-the-playback-stop-time-.md
-            - name: Renderização de vídeo aprimorada
+            - name: Processador de vídeo aprimorado
               href: enhanced-video-renderer.md
               items:
-                - name: Usando o filtro DirectShow EVR
+                - name: usando o filtro de EVR de DirectShow
                   href: using-the-directshow-evr-filter.md
-                - name: Usando o sink de mídia EVR
+                - name: Usando o coletor de mídia do EVR
                   href: using-the-evr-media-sink.md
                 - name: Usando os controles de exibição de vídeo
                   href: using-the-video-display-controls.md
-                - name: Usando os controles de Mixer vídeo
+                - name: usando os controles de Mixer de vídeo
                   href: using-the-video-mixer-controls.md
                 - name: Negociação de tipo de mídia EVR
                   href: evr-media-type-negotiation.md
                 - name: Mixers personalizados
                   href: custom-mixers.md
-                - name: Como escrever um apresentador de EVR
+                - name: Como escrever um apresentador EVR
                   href: how-to-write-an-evr-presenter.md
-            - name: Renderização de áudio de streaming
+            - name: Processador de streaming de áudio
               href: streaming-audio-renderer.md
             - name: MFPlay
               href: using-mfplay-for-audio-video-playback.md
               items:
-                - name: Ponto de Partida com MFPlay
+                - name: Introdução com MFPlay
                   href: getting-started-with-mfplay.md
-                - name: 'Tutorial do MFPlay: Reprodução de vídeo'
+                - name: 'Tutorial do MFPlay: reprodução de vídeo'
                   href: mfplay-tutorial--video-playback.md
                 - name: Gerenciando a sessão de áudio
                   href: managing-the-audio-session.md
@@ -573,7 +573,7 @@
               href: hardware-overlay-support.md
             - name: Relatório de pressão de memória
               href: memory-pressure-reporting.md
-            - name: Interfaces de vídeo do Direct3D
+            - name: Interfaces de vídeo Direct3D
               href: direct3d-video-interfaces.md
               items:
                 - name: IDirect3D9ExOverlayExtension
@@ -588,7 +588,7 @@
                       href: /windows/desktop/api/d3d9/nf-d3d9-idirect3dauthenticatedchannel9-configure
                     - name: GetCertificate
                       href: /windows/desktop/api/d3d9/nf-d3d9-idirect3dauthenticatedchannel9-getcertificate
-                    - name: GetCertificateSize
+                    - name: Getcertificate
                       href: /windows/desktop/api/d3d9/nf-d3d9-idirect3dauthenticatedchannel9-getcertificatesize
                     - name: NegotiateKeyExchange
                       href: /windows/desktop/api/d3d9/nf-d3d9-idirect3dauthenticatedchannel9-negotiatekeyexchange
@@ -605,7 +605,7 @@
                       href: /windows/desktop/api/d3d9/nf-d3d9-idirect3dcryptosession9-finishsessionkeyrefresh
                     - name: GetCertificate
                       href: /windows/desktop/api/d3d9/nf-d3d9-idirect3dcryptosession9-getcertificate
-                    - name: GetCertificateSize
+                    - name: Getcertificate
                       href: /windows/desktop/api/d3d9/nf-d3d9-idirect3dcryptosession9-getcertificatesize
                     - name: GetEncryptionBltKey
                       href: /windows/desktop/api/d3d9/nf-d3d9-idirect3dcryptosession9-getencryptionbltkey
@@ -629,7 +629,7 @@
                   items:
                     - name: BeginFrame
                       href: idirect3ddxvadevice9-beginframe.md
-                    - name: EndFrame
+                    - name: Quadro de fim
                       href: idirect3ddxvadevice9-endframe.md
                     - name: Execute (executar)
                       href: idirect3ddxvadevice9-execute.md
@@ -640,7 +640,7 @@
                   items:
                     - name: CreateDXVADevice
                       href: idirect3dvideodevice9-createdxvadevice.md
-                    - name: Createsurface
+                    - name: CreateSurface
                       href: idirect3dvideodevice9-createsurface.md
                     - name: GetDXVACompressedBufferInfo
                       href: idirect3dvideodevice9-getdxvacompressedbufferinfo.md
@@ -856,7 +856,7 @@
                   href: /windows/win32/api/dxvahd/ne-dxvahd-dxvahd_stream_state
                 - name: DXVAHD_SURFACE_TYPE
                   href: /windows/win32/api/dxvahd/ne-dxvahd-dxvahd_surface_type
-            - name: Comandos de Proteção de Conteúdo
+            - name: Proteção de Conteúdo comandos
               href: content-protection-commands.md
               items:
                 - name: D3DAUTHENTICATEDCONFIGURE_CRYPTOSESSION
@@ -869,7 +869,7 @@
                   href: d3dauthenticatedconfigure-protection.md
                 - name: D3DAUTHENTICATEDCONFIGURE_SHAREDRESOURCE
                   href: d3dauthenticatedconfigure-sharedresource.md
-            - name: Consultas de Proteção de Conteúdo
+            - name: Proteção de Conteúdo consultas
               href: content-protection-queries.md
               items:
                 - name: D3DAUTHENTICATEDQUERY_ACCESSIBILITYATTRIBUTES
@@ -901,7 +901,7 @@
         - name: APIs de vídeo do Direct3D 11
           href: direct3d-11-video-apis.md
           items:
-            - name: Dando suporte à decodificação de vídeo do Direct3D 11 no Media Foundation
+            - name: Suporte à decodificação de vídeo do Direct3D 11 Media Foundation
               href: supporting-direct3d-11-video-decoding-in-media-foundation.md
             - name: GPU-Based Proteção de Conteúdo com vídeo D3D11
               href: gpu-based-content-protection-d3d11.md
@@ -913,7 +913,7 @@
                   items:
                     - name: GetCertificate
                       href: /windows/desktop/api/d3d11/nf-d3d11-id3d11authenticatedchannel-getcertificate
-                    - name: Getcertificate
+                    - name: GetCertificateSize
                       href: /windows/desktop/api/d3d11/nf-d3d11-id3d11authenticatedchannel-getcertificatesize
                     - name: GetChannelHandle
                       href: /windows/desktop/api/d3d11/nf-d3d11-id3d11authenticatedchannel-getchannelhandle
@@ -922,11 +922,11 @@
                   items:
                     - name: GetCertificate
                       href: /windows/desktop/api/d3d11/nf-d3d11-id3d11cryptosession-getcertificate
-                    - name: Getcertificate
+                    - name: GetCertificateSize
                       href: /windows/desktop/api/d3d11/nf-d3d11-id3d11cryptosession-getcertificatesize
                     - name: GetCryptoSessionHandle
                       href: /windows/desktop/api/d3d11/nf-d3d11-id3d11cryptosession-getcryptosessionhandle
-                    - name: Getcryptotype
+                    - name: GetCryptoType
                       href: /windows/desktop/api/d3d11/nf-d3d11-id3d11cryptosession-getcryptotype
                     - name: GetDecoderProfile
                       href: /windows/desktop/api/d3d11/nf-d3d11-id3d11cryptosession-getdecoderprofile
@@ -1334,7 +1334,7 @@
                   href: /windows/desktop/api/d3d11_1/ns-d3d11_1-d3d11_key_exchange_hw_protection_input_data
                 - name: D3D11_KEY_EXCHANGE_HW_PROTECTION_OUTPUT_DATA
                   href: /windows/desktop/api/d3d11_1/ns-d3d11_1-d3d11_key_exchange_hw_protection_output_data
-                - name: D3D11_FEATURE_DATA_D3D11_OPTIONS4 (d3d11_4.h)
+                - name: D3D11_FEATURE_DATA_D3D11_OPTIONS4 (d3d11_4. h)
                   href: /windows/desktop/api/d3d11_4/ns-d3d11_4-d3d11_feature_data_d3d11_options4
                 - name: D3D11_FEATURE_DATA_VIDEO_DECODER_HISTOGRAM
                   href: /windows/desktop/api/d3d11_4/ns-d3d11_4-d3d11_feature_data_video_decoder_histogram
@@ -1399,9 +1399,9 @@
         - name: APIs de vídeo do Direct3D 12
           href: direct3d-12-video-apis.md
           items:
-            - name: Visão geral do vídeo do Direct3D 12
+            - name: Visão geral em vídeo do Direct3D 12
               href: direct3d-12-video-overview.md
-            - name: Histogramas de decodificar vídeo do Direct3D
+            - name: Histogramas de decodificação de vídeo Direct3D
               href: direct3d-video-decode-histograms.md
             - name: Estimativa de movimento de vídeo do Direct3D
               href: direct3d-video-motion-estimation.md
@@ -1480,15 +1480,15 @@
                       href: /windows/desktop/api/d3d12video/nf-d3d12video-id3d12videodecodecommandlist-beginevent
                     - name: 'ID3D12VideoDecodeCommandList::BeginQuery'
                       href: /windows/desktop/api/d3d12video/nf-d3d12video-id3d12videodecodecommandlist-beginquery
-                    - name: 'ID3D12VideoDecodeCommandList::ClearState'
+                    - name: 'ID3D12VideoDecodeCommandList:: Clearstate'
                       href: /windows/desktop/api/d3d12video/nf-d3d12video-id3d12videodecodecommandlist-clearstate
-                    - name: 'ID3D12VideoDecodeCommandList::Close'
+                    - name: 'ID3D12VideoDecodeCommandList:: fechar'
                       href: /windows/desktop/api/d3d12video/nf-d3d12video-id3d12videodecodecommandlist-close
                     - name: 'ID3D12VideoDecodeCommandList::D ecodeFrame'
                       href: /windows/desktop/api/d3d12video/nf-d3d12video-id3d12videodecodecommandlist-decodeframe
                     - name: 'ID3D12VideoDecodeCommandList::D iscardResource'
                       href: /windows/desktop/api/d3d12video/nf-d3d12video-id3d12videodecodecommandlist-discardresource
-                    - name: 'ID3D12VideoDecodeCommandList::EndEvent'
+                    - name: 'ID3D12VideoDecodeCommandList:: endEvent'
                       href: /windows/desktop/api/d3d12video/nf-d3d12video-id3d12videodecodecommandlist-endevent
                     - name: 'ID3D12VideoDecodeCommandList::EndQuery'
                       href: /windows/desktop/api/d3d12video/nf-d3d12video-id3d12videodecodecommandlist-endquery
@@ -1795,54 +1795,54 @@
                   href: /windows/desktop/api/d3d12video/ns-d3d12video-d3d12_video_size_range
             - name: GUIDs de vídeo do Direct3D 12
               href: direct3d-12-video-guids.md
-        - name: 'Aceleração de vídeo do DirectX 2,0'
+        - name: Aceleração de vídeo do DirectX 2.0
           href: directx-video-acceleration-2-0.md
           items:
-            - name: 'Sobre o DXVA 2,0'
+            - name: Sobre o DXVA 2.0
               href: about-dxva-2-0.md
-            - name: Gerenciador de Dispositivos Direct3D
+            - name: Direct3D Gerenciador de Dispositivos
               href: direct3d-device-manager.md
-            - name: 'Suporte a DXVA 2,0 no DirectShow'
+            - name: Suporte ao DXVA 2.0 no DirectShow
               href: supporting-dxva-2-0-in-directshow.md
-            - name: 'Suporte a DXVA 2,0 no Media Foundation'
+            - name: Suporte ao DXVA 2.0 no Media Foundation
               href: supporting-dxva-2-0-in-media-foundation.md
-            - name: Processamento de vídeo de DXVA
+            - name: Processamento de vídeo DXVA
               href: dxva-video-processing.md
             - name: DXVA-HD
               href: dxva-hd.md
               items:
-                - name: Criando um processador de vídeo de DXVA-HD
+                - name: Criando um processador de vídeo DXVA-HD
                   href: creating-a-dxva-hd-video-processor.md
-                - name: Verificando os formatos de DXVA-HD com suporte
+                - name: Verificando os formatos DXVA-HD com suporte
                   href: checking-supported-dxva-hd-formats.md
-                - name: Criando superfícies de vídeo de DXVA-HD
+                - name: Criando superfícies de vídeo DXVA-HD
                   href: creating-dxva-hd-video-surfaces.md
-                - name: Definindo Estados de DXVA-HD
+                - name: Definindo estados DXVA-HD
                   href: setting-dxva-hd-states.md
-                - name: Executando o blit DXVA-HD
+                - name: Executando o DXVA-HD Blit
                   href: performing-the-dxva-hd-blit.md
         - name: Codificando e criando arquivos
           href: encoding-and-file-authoring.md
           items:
-            - name: Visão geral da codificação no Media Foundation
+            - name: Visão geral da codificação em Media Foundation
               href: overview-of-encoding-in-media-foundation.md
-            - name: API de transcodificação
+            - name: API de transcodificar
               href: transcode-api.md
               items:
-                - name: Sobre a API de transcodificação
+                - name: Sobre a API transcódigo
                   href: about-the-transcode-api.md
-                - name: Usando a API de transcodificação
+                - name: Usando a API transcódigo
                   href: fast-transcode-objects.md
-                - name: 'Tutorial: codificando um arquivo MP4'
+                - name: 'Tutorial: Codificando um arquivo MP4'
                   href: tutorial--encoding-an-mp4-file-.md
-                - name: 'Tutorial: codificando um arquivo WMA'
+                - name: 'Tutorial: Codificando um arquivo WMA'
                   href: tutorial--converting-an-mp3-file-to-a-wma-file.md
-            - name: Gravador do coletor
+            - name: Sink Writer
               href: sink-writer.md
               items:
-                - name: Usando o gravador do coletor
+                - name: Usando o Sink Writer
                   href: using-the-sink-writer.md
-                - name: 'Tutorial: usando o gravador de coletor para codificar vídeo'
+                - name: 'Tutorial: Usando o Sink Writer para codificar vídeo'
                   href: tutorial--using-the-sink-writer-to-encode-video.md
         - name: Metadados de mídia
           href: media-metadata.md
@@ -1851,24 +1851,24 @@
               href: shell-metadata-providers.md
             - name: Propriedades de metadados para Arquivos de mídia
               href: metadata-properties-for-media-files.md
-            - name: provedores de metadados no Windows Vista
+            - name: Provedores de metadados no Windows Vista
               href: metadata-providers-in-windows-vista.md
-        - name: Rede em Media Foundation
+        - name: Rede no Media Foundation
           href: networking-in-media-foundation.md
           items:
-            - name: Recursos de origem da rede
+            - name: Recursos de origem de rede
               href: network-source-features.md
-            - name: Suporte de proxy para fontes de rede
+            - name: Suporte a proxy para fontes de rede
               href: proxy-support-for-network-sources.md
               items:
-                - name: Configurações de configuração do localizador de Proxy
+                - name: Configuração do localizador de proxy Configurações
                   href: proxy-locator-configuration-settings.md
                 - name: Como configurar o localizador de proxy
                   href: how-to-configure-the-proxy-locator.md
-            - name: Autenticação de origem da rede
+            - name: Autenticação de origem de rede
               href: network-source-authentication.md
               items:
-                - name: Configurando um Gerenciador de credenciais
+                - name: Definindo um Gerenciador de Credenciais
                   href: setting-a-credential-manager.md
                 - name: Usando o cache de credenciais
                   href: using-the-credential-cache.md
@@ -1878,24 +1878,24 @@
               href: how-to-get-events-from-the-network-source.md
             - name: Protocolos compatíveis
               href: supported-protocols.md
-            - name: Log de cliente
+            - name: Registro em log do cliente
               href: client-logging.md
-        - name: Gerenciador de proteção de saída
+        - name: Gerenciador de Proteção de Saída
           href: output-protection-manager.md
           items:
-            - name: Usando o Gerenciador de proteção de saída
+            - name: Usando o Gerenciador de Proteção de Saída
               href: using-output-protection-manager.md
             - name: Revogação de certificado OPM
               href: opm-certificate-revocation.md
-            - name: Código de exemplo OPM
+            - name: Código de exemplo do OPM
               href: opm-example-code.md
-            - name: Referência de programação de OPM
+            - name: Referência de programação do OPM
               href: opm-programming-reference.md
               items:
-                - name: Interfaces OPM
+                - name: OPM Interfaces
                   href: opm-interfaces.md
                   items:
-                    - name: Método
+                    - name: IOPMVideoOutput
                       href: /windows/desktop/api/opmapi/nn-opmapi-iopmvideooutput
                       items:
                         - name: Configurar
@@ -1919,7 +1919,7 @@
                       href: destroyopmprotectedoutput.md
                     - name: GetCertificate
                       href: getcertificate.md
-                    - name: Getcertificate
+                    - name: GetCertificateSize
                       href: getcertificatesize.md
                     - name: GetCOPPCompatibleOPMInformation
                       href: getcoppcompatibleopminformation.md
@@ -1980,7 +1980,7 @@
                       href: /windows/win32/api/opmapi/ns-opmapi-opm_set_protection_level_parameters
                     - name: OPM_STANDARD_INFORMATION
                       href: /windows/win32/api/ksopmapi/ns-ksopmapi-opm_standard_information
-                - name: Enumerações de OPM
+                - name: Enumerações do OPM
                   href: opm-enumerations.md
                   items:
                     - name: Sinalizadores de tipo de barramento OPM
@@ -1989,7 +1989,7 @@
                       href: opm-connector-type-flags.md
                     - name: Sinalizadores de tipo de proteção OPM
                       href: opm-protection-type-flags.md
-                    - name: Sinalizadores de status OPM
+                    - name: Sinalizadores de status do OPM
                       href: opm-status-flags.md
                     - name: OPM_ACP_PROTECTION_LEVEL
                       href: /windows/win32/api/opmapi/ne-opmapi-opm_acp_protection_level
@@ -2001,7 +2001,7 @@
                       href: /windows/win32/api/opmapi/ne-opmapi-opm_image_aspect_ratio_en300294
                     - name: OPM_VIDEO_OUTPUT_SEMANTICS
                       href: /windows/win32/api/opmapi/ne-opmapi-opm_video_output_semantics
-                - name: Comandos OPM
+                - name: Comandos do OPM
                   href: opm-commands.md
                   items:
                     - name: OPM_SET_ACP_AND_CGMSA_SIGNALING
@@ -2012,7 +2012,7 @@
                       href: opm-set-protection-level.md
                     - name: OPM_SET_PROTECTION_LEVEL_ACCORDING_TO_CSS_DVD
                       href: opm-set-protection-level-according-to-css-dvd.md
-                - name: Solicitações de status OPM
+                - name: Solicitações de status do OPM
                   href: opm-status-requests.md
                   items:
                     - name: OPM_GET_ACP_AND_CGMSA_SIGNALING
@@ -2042,45 +2042,45 @@
         - name: Codificações de mídia do Windows
           href: windows-media-codecs.md
           items:
-            - name: sobre os codecs de mídia Windows
+            - name: Sobre os codecs Windows de mídia
               href: about-the-windows-media-codecs.md
-            - name: Usando os objetos codec e DSP
+            - name: Usando os objetos Codec e DSP
               href: decidinghowtousethewindowsmediaaudioandvideocodecs.md
             - name: Métodos de codificação
               href: encodingmethods.md
-            - name: Implementação de codec
+            - name: Implementação do Codec
               href: codecimplementation.md
-            - name: O modelo de buffer de buckets vazados
+            - name: O modelo de buffer de bucket vazado
               href: the-leaky-bucket-buffer-model.md
-            - name: Trabalhando com codec DMOs
+            - name: Trabalhando com DMOs codec
               href: workingwithcodecdmos.md
               items:
-                - name: DMO Algumas
+                - name: DMO Básico
                   href: dmobasics-ebet.md
-                - name: Criando uma instância do codec DMOs
+                - name: Inciando DMOs codec
                   href: instantiatingcodecdmos.md
-                - name: trabalhando com buffers de mídia DMO
+                - name: Trabalhando com buffers DMO mídia
                   href: workingwithmediabuffers.md
-                - name: trabalhando com tipos de mídia DMO
+                - name: Trabalhando com DMO de mídia
                   href: workingwithmediatypes.md
-                - name: Trabalhando com exemplos e buffers de mídia de MFT
+                - name: Trabalhando com buffers e exemplos de mídia MFT
                   href: workingwithmftmediabuffersandsamples.md
-                - name: Configurando o codec DMOs
+                - name: Configurando DMOs codec
                   href: enumeratingsupportedformats.md
-                - name: processando o Codec DMO entrada e saída
+                - name: Ing Codec DMO entrada e saída
                   href: processingsamples.md
-                - name: Usando os codecs de mídia do Windows no DirectShow
+                - name: Usando os codecs de mídia de janela DirectShow
                   href: usingthecodecdmoswithdirectshow.md
-            - name: Trabalhando com codec MFTs
+            - name: Trabalhando com MFTs codec
               href: workingwithcodecmfts.md
               items:
-                - name: Criando uma instância do codec MFTs
+                - name: Instançando MFTs codec
                   href: instantiatingcodecmfts.md
                 - name: Trabalhando com tipos de mídia MFT
                   href: workingwithmftmediatypes.md
-                - name: Configurando o codec MFTs
+                - name: Configurando MFTs do Codec
                   href: configuringcodecmfts.md
-                - name: Entrada e saída de MFT do codec de processamento
+                - name: Ing Codec MFT Input and Output
                   href: processingcodecmftinputandoutput.md
             - name: Trabalhando com áudio
               href: workingwithaudio.md
@@ -2089,107 +2089,107 @@
                   href: choosinganaudiocodec.md
                 - name: Configurando a decodificação de áudio
                   href: configuringaudiodecoding.md
-                - name: Configurando codificação de áudio
+                - name: Configurando a codificação de áudio
                   href: configuringaudioencoding.md
                   items:
-                    - name: Localizando tipos de saída do codificador de áudio
+                    - name: Localizar tipos de saída do codificador de áudio
                       href: findingaudioencoderoutputtypes.md
-                    - name: 'configurando a codificação de áudio padrão, Professional ou sem perdas'
+                    - name: 'Configurando a codificação de áudio padrão, Professional ou sem perda'
                       href: configuring-standard--professional--or-lossless-audio-encoding.md
                     - name: Enumerando tipos de áudio para modos de codificação específicos
                       href: enumeratingaudiotypesforspecificencodingmodes.md
-                - name: usando o Codec de voz de áudio de mídia Windows
+                - name: Usando o codec Windows de áudio de mídia
                   href: usingthewindowsmediaaudio9voicecodec.md
-                - name: Decodificando para S/PDIF
+                - name: Decodificação para S/PDIF
                   href: decodingtospdif.md
                 - name: Usando High-Definition áudio
                   href: usinghighdefinitionaudio.md
-                - name: Usando uma lista de decisões de edição para codificação de voz
+                - name: Usando uma lista de decisão de edição para codificação de voz
                   href: usingavoiceeditingdecisionlist.md
             - name: Trabalhando com vídeo
               href: workingwithvideo.md
               items:
                 - name: Escolhendo um codec de vídeo
                   href: choosingavideocodec.md
-                - name: Configurando decodificação de vídeo
+                - name: Configurando a decodificação de vídeo
                   href: configuringvideodecoding.md
                 - name: Configurando a codificação de vídeo
                   href: configuringvideoencoding.md
-                - name: Inserção de quadro-chave forçada
+                - name: Inserção forçada de quadro-chave
                   href: forcedkeyframeinsertion.md
-                - name: Codificação de vídeo entrelaçado
+                - name: Codificação de vídeo entrelaçadas
                   href: interlacedvideoencoding.md
-                - name: usando o perfil do Windows Media Video 9 avançado
+                - name: Usando o perfil avançado Windows Media Video 9
                   href: usingthewindowsmediavideo9advancedprofilecodec.md
-                - name: 'usando o Codec de imagem do Windows Media Video 9,1'
+                - name: Usando o codec de imagem Windows Media Video 9.1
                   href: usingthewindowsmediavideo9imagecodec.md
-                - name: usando o Codec de tela Windows Media Video 9
+                - name: Usando o codec de tela Windows Media Video 9
                   href: usingthewindowsmediavideo9screencodec.md
-                - name: Usando dados privados do codec de vídeo
+                - name: Usando dados privados do Codec de Vídeo
                   href: usingvideocodecprivatedata.md
                 - name: Codificação de vídeo com compactação temporal
                   href: videoencodingwithtemporalcompression.md
-            - name: Armazenando mídia compactada em arquivos AVI
+            - name: Armazenar mídia compactada em arquivos AVI
               href: storingcompressedmediainavifiles.md
-            - name: Usando a codificação de VBR
+            - name: Usando a codificação VBR
               href: usingvbrencoding.md
-            - name: Usando a codificação Two-Pass
+            - name: Usando Two-Pass codificação
               href: usingtwoencodingpasses.md
-            - name: Obtendo estatísticas de codificação
+            - name: Obter estatísticas de codificação
               href: gettingencodingstatistics.md
             - name: Usando extensões de unidade de dados
               href: usingdataunitextensions.md
-            - name: Constantes IPropertyBag de codec e DSP
+            - name: Constantes Codec e DSP IPropertyBag
               href: codecanddspproperties.md
               items:
-                - name: Sobre o analisador de sumários
+                - name: Sobre o Analisador de Conteúdo
                   href: about-toc-parser.md
                   items:
-                    - name: Visão geral do analisador de Sumário
+                    - name: Visão geral do Analisador de Tabela de Conteúdo
                       href: overview-of-toc-parser.md
-                - name: Guia de programação do analisador de Sumário
+                - name: Guia de Programação do Analisador de Tabela de Conteúdo
                   href: toc-parser-programming-guide.md
                   items:
-                    - name: Inserindo um sumário em um arquivo de vídeo
+                    - name: Incorporação de um conteúdo em um arquivo de vídeo
                       href: embedding-a-table-of-contents-in-a-video-file.md
-                    - name: Lendo um Sumário de um arquivo de vídeo
+                    - name: Lendo um tabela de conteúdo de um arquivo de vídeo
                       href: reading-a-table-of-contents-from-a-video-file.md
-                    - name: Gerando um sumário automaticamente
+                    - name: Gerando um tabela de conteúdo automaticamente
                       href: generating-a-table-of-contents-automatically.md
                       items:
-                        - name: Função BuildGraph para gerar um sumário
+                        - name: Função BuildGraph para gerar um tabela de conteúdo
                           href: buildgraph-method-for-generating-a-table-of-contents.md
-                        - name: Função RunGraphAndWait para gerar um sumário
+                        - name: Função RunGraphAndWait para gerar um tabela de conteúdo
                           href: rungraphandwait-method-for-generating-a-table-of-contents.md
-                        - name: Função GetToc para gerar um sumário
+                        - name: Função GetToc para gerar um tabela de conteúdo
                           href: gettoc-method-for-generating-a-table-of-contents.md
-                    - name: O tipo de posição de um sumário
+                    - name: O tipo de posição de um índice
                       href: the-position-type-of-a-table-of-contents.md
-                - name: Referência do analisador de Sumário
+                - name: Referência do Analisador de Tabela de Conteúdo
                   href: toc-parser-reference.md
                   items:
-                    - name: Objetos do analisador de Sumário
+                    - name: Tabela de objetos do analisador de conteúdo
                       href: toc-parser-objects.md
                       items:
-                        - name: Identificadores de classe para o analisador de Sumário
+                        - name: Identificadores de classe para o analisador de tabela de conteúdo
                           href: class-identifiers-for-toc-parser.md
-                        - name: Gerador de Sumário
+                        - name: Gerador de tabela de conteúdo
                           href: /previous-versions/ee264297(v=vs.85)
-                    - name: Interfaces do analisador de Sumário
+                    - name: Interfaces do Analisador de Tabela de Conteúdo
                       href: toc-parser-interfaces.md
                       items:
                         - name: IToc
                           href: /windows/desktop/api/wmcodecdsp/nn-wmcodecdsp-itoc
                           items:
-                            - name: Addentrylist
+                            - name: AddEntryList
                               href: /windows/desktop/api/wmcodecdsp/nf-wmcodecdsp-itoc-addentrylist
                             - name: AddEntryListByIndex
                               href: /windows/desktop/api/wmcodecdsp/nf-wmcodecdsp-itoc-addentrylistbyindex
-                            - name: GetContext
+                            - name: Getcontext
                               href: /windows/desktop/api/wmcodecdsp/nf-wmcodecdsp-itoc-getcontext
                             - name: GetDescription
                               href: /windows/desktop/api/wmcodecdsp/nf-wmcodecdsp-itoc-getdescription
-                            - name: Getdescriptor
+                            - name: GetDescriptor
                               href: /windows/desktop/api/wmcodecdsp/nf-wmcodecdsp-itoc-getdescriptor
                             - name: GetEntryListByIndex
                               href: /windows/desktop/api/wmcodecdsp/nf-wmcodecdsp-itoc-getentrylistbyindex
@@ -2197,16 +2197,16 @@
                               href: /windows/desktop/api/wmcodecdsp/nf-wmcodecdsp-itoc-getentrylistcount
                             - name: RemoveEntryListByIndex
                               href: /windows/desktop/api/wmcodecdsp/nf-wmcodecdsp-itoc-removeentrylistbyindex
-                            - name: SetContext
+                            - name: Setcontext
                               href: /windows/desktop/api/wmcodecdsp/nf-wmcodecdsp-itoc-setcontext
                             - name: SetDescription
                               href: /windows/desktop/api/wmcodecdsp/nf-wmcodecdsp-itoc-setdescription
-                            - name: Setdescriptor
+                            - name: SetDescriptor
                               href: /windows/desktop/api/wmcodecdsp/nf-wmcodecdsp-itoc-setdescriptor
                         - name: ITocCollection
                           href: /windows/desktop/api/wmcodecdsp/nn-wmcodecdsp-itoccollection
                           items:
-                            - name: AddEntry
+                            - name: Addentry
                               href: /windows/desktop/api/wmcodecdsp/nf-wmcodecdsp-itoccollection-addentry
                             - name: AddEntryByIndex
                               href: /windows/desktop/api/wmcodecdsp/nf-wmcodecdsp-itoccollection-addentrybyindex
@@ -2221,7 +2221,7 @@
                           items:
                             - name: GetDescriptionData
                               href: /windows/desktop/api/wmcodecdsp/nf-wmcodecdsp-itocentry-getdescriptiondata
-                            - name: Getdescriptor
+                            - name: GetDescriptor
                               href: /windows/desktop/api/wmcodecdsp/nf-wmcodecdsp-itocentry-getdescriptor
                             - name: GetSubEntries
                               href: /windows/desktop/api/wmcodecdsp/nf-wmcodecdsp-itocentry-getsubentries
@@ -2229,16 +2229,16 @@
                               href: /windows/desktop/api/wmcodecdsp/nf-wmcodecdsp-itocentry-gettitle
                             - name: SetDescriptionData
                               href: /windows/desktop/api/wmcodecdsp/nf-wmcodecdsp-itocentry-setdescriptiondata
-                            - name: Setdescriptor
+                            - name: SetDescriptor
                               href: /windows/desktop/api/wmcodecdsp/nf-wmcodecdsp-itocentry-setdescriptor
                             - name: SetSubEntries
                               href: /windows/desktop/api/wmcodecdsp/nf-wmcodecdsp-itocentry-setsubentries
-                            - name: SetTitle
+                            - name: Settitle
                               href: /windows/desktop/api/wmcodecdsp/nf-wmcodecdsp-itocentry-settitle
                         - name: ITocEntryList
                           href: /windows/desktop/api/wmcodecdsp/nn-wmcodecdsp-itocentrylist
                           items:
-                            - name: AddEntry
+                            - name: Addentry
                               href: /windows/desktop/api/wmcodecdsp/nf-wmcodecdsp-itocentrylist-addentry
                             - name: AddEntryByIndex
                               href: /windows/desktop/api/wmcodecdsp/nf-wmcodecdsp-itocentrylist-addentrybyindex
@@ -2267,36 +2267,36 @@
                               href: /windows/desktop/api/wmcodecdsp/nf-wmcodecdsp-itocparser-removetocbyindex
                             - name: RemoveTocByType
                               href: /windows/desktop/api/wmcodecdsp/nf-wmcodecdsp-itocparser-removetocbytype
-                    - name: Estruturas do analisador de Sumário
+                    - name: Tabela de estruturas do analisador de conteúdo
                       href: toc-parser-structures.md
                       items:
                         - name: TOC_DESCRIPTOR
                           href: /windows/win32/api/wmcodecdsp/ns-wmcodecdsp-toc_descriptor
                         - name: TOC_ENTRY_DESCRIPTOR
                           href: /windows/win32/api/wmcodecdsp/ns-wmcodecdsp-toc_entry_descriptor
-                    - name: Enumerações do analisador de Sumário
+                    - name: Tabela de enumerações do analisador de conteúdo
                       href: toc-parser-enumerations.md
                       items:
                         - name: TOC_POS_TYPE
                           href: /windows/desktop/api/wmcodecdsp/ne-wmcodecdsp-toc_pos_type
-                    - name: Funções do analisador de Sumário
+                    - name: Funções do Analisador de Tabela de Conteúdo
                       href: toc-parser-functions.md
-            - name: Windows Perguntas frequentes sobre o codec de mídia
+            - name: Windows Perguntas frequentes sobre Codec de Mídia
               href: frequentlyaskedquestions.md
               items:
-                - name: Como um fluxo de vídeo codificado usando a taxa de bits baseada em qualidade tem menos quadros do que o fluxo original?
+                - name: Como um fluxo de vídeo codificado usando a VBR baseada em qualidade pode ter menos quadros do que o fluxo original?
                   href: howcanavideostreamencodedusingqualitybasedvbrhavef.md
                 - name: Como fazer descompactar fluxos de um arquivo AVI ou outro arquivo sobre o qual não tenho informações de formato?
                   href: howdoidecompresswindowsmediacontentfromanaviorothe.md
-                - name: tenho um arquivo AVI contendo um fluxo de vídeo de mídia Windows. Como posso convertê-lo em um arquivo WMV?
+                - name: Tenho um arquivo AVI que contém um fluxo Windows Vídeo de Mídia. Como convertê-lo em um arquivo WMV?
                   href: ihaveanavifilecontainingawindowsmediavideostreamho.md
-                - name: 'Quando uso a VBR com restrição de pico, a taxa média de bits recuperada do objeto codec é maior do que a taxa de bits de pico. Como isso é possível?'
+                - name: 'Quando uso o VBR com restrição de pico, a taxa média de bits recuperada do objeto codec é maior do que a taxa de bits de pico. Como isso é possível?'
                   href: whenusingpeakconstrainedvbrtheaveragebitrateretrie.md
-                - name: Por que um decodificador não aceita o formato de entrada que eu defini?
+                - name: Por que um decodificador não aceita o formato de entrada que defini?
                   href: whydoesadecoderdmonotaccepttheinputformatthatiset.md
-                - name: Por que o codificador de áudio não reportará tipos de entrada com suporte?
+                - name: Por que o codificador de áudio não relata nenhum tipo de entrada com suporte?
                   href: whydoestheaudioencoderdmoreportnosupportedinputtyp.md
-                - name: 'Por que o codificador de vídeo rejeita um formato de saída que tento definir, quando recuperei o formato do mesmo objeto?'
+                - name: Por que o codificador de vídeo rejeita um formato de saída que tento definir quando recuperei o formato do mesmo objeto?
                   href: whydoesthevideoencoderdmorejectanoutputformatthati.md
     - name: Exemplos de SDK do Media Foundation
       href: media-foundation-sdk-samples.md
@@ -2309,7 +2309,7 @@
           href: decoder-sample.md
         - name: Exemplo de DXVA-HD
           href: dxva-hd-sample.md
-        - name: Exemplo de DXVA2_VideoProc
+        - name: DXVA2_VideoProc exemplo
           href: dxva2-videoproc-sample.md
         - name: Exemplo de EVRPresenter
           href: evrpresenter-sample.md
@@ -2319,9 +2319,9 @@
           href: mfcapturetofile-sample.md
         - name: Exemplo de MFPlayer2
           href: mfplayer2-sample.md
-        - name: Exemplo de MFT_AudioDelay
+        - name: MFT_AudioDelay exemplo
           href: mft-audiodelay-sample.md
-        - name: Exemplo de MFT_Grayscale
+        - name: MFT_Grayscale exemplo
           href: mft-grayscale-sample.md
         - name: Exemplo de MPEG1Source
           href: mpeg1source-sample.md
@@ -2333,18 +2333,18 @@
           href: simplecapture-sample.md
         - name: Exemplo de SimplePlay
           href: simpleplay-sample.md
-        - name: Exemplo de transcodificação
+        - name: Exemplo de transcódigo
           href: transcode-sample.md
         - name: Exemplo de VideoThumbnail
           href: videothumbnail-sample.md
-        - name: Exemplo de WavSink
+        - name: Exemplo wavsink
           href: wavsink-sample.md
-        - name: Exemplo de WavSource
+        - name: Exemplo wavSource
           href: wavsource-sample.md
     - name: Referência de programação do Media Foundation
       href: media-foundation-programming-reference.md
       items:
-        - name: Objetos codec
+        - name: Objetos de codec
           href: codecobjects.md
           items:
             - name: Decodificador AAC
@@ -2353,19 +2353,19 @@
               href: aac-encoder.md
             - name: Decodificador de vídeo DV
               href: dv-video-decoder.md
-            - name: Dolby Audio Decoder
+            - name: Decodificador de áudio Dolby
               href: dolby-audio-decoder.md
-            - name: Codificador de Áudio Digital Dolby
+            - name: Codificador de áudio digital Dolby
               href: dolby-digital-audio-encoder.md
-            - name: Decodificador de vídeo H.264
+            - name: Decodificador de vídeo H. 264
               href: h-264-video-decoder.md
-            - name: Codificador de vídeo H.264
+            - name: Codificador de vídeo H. 264
               href: h-264-video-encoder.md
-            - name: Decodificador de vídeo H.265/HEVC
+            - name: Decodificador de vídeo H. 265/HEVC
               href: h-265---hevc-video-decoder.md
-            - name: Codificador de vídeo H.265/HEVC
+            - name: Codificador de vídeo H. 265/HEVC
               href: h-265---hevc-video-encoder.md
-            - name: Codificador de Áudio MP3
+            - name: Codificador de áudio MP3
               href: mp3-audio-encoder.md
             - name: Decodificador de áudio MPEG
               href: mpeg-audio-decoder-mft.md
@@ -2373,66 +2373,66 @@
               href: mpeg-2-audio-encoder.md
             - name: Decodificador de vídeo MPEG-2
               href: mpeg-2-video-decoder.md
-            - name: Decodificador de vídeo mpeg-4 parte 2
+            - name: Decodificador de vídeo MPEG-4 parte 2
               href: mpeg4part2videodecoder.md
             - name: Windows Decodificador de áudio de mídia
               href: windowsmediaaudiodecoder.md
             - name: Windows Codificador de áudio de mídia
               href: windowsmediaaudioencoder.md
-            - name: Windows Decodificador de voz de áudio de mídia
+            - name: Windows Codificador de voz de áudio de mídia
               href: windowsmediaaudiovoicedecoder.md
             - name: Windows Codificador de voz de áudio de mídia
               href: windowsmediaaudiovoiceencoder.md
-            - name: Windows Decodificador mp3 de mídia
+            - name: Windows Decodificador MP3 de mídia
               href: windows-media-mp3-decoder.md
-            - name: Windows Decodificador MPEG4 V1/V2 de mídia
+            - name: Windows Decodificador de mídia MPEG4 V1/V2
               href: windowsmediampeg4decoder.md
-            - name: Windows Decodificador MPEG-4 V3 de mídia
+            - name: Windows Decodificador de mídia MPEG-4 v3
               href: windowsmediampeg4v3decoder.md
-            - name: Windows Codificador de Vídeo de Mídia 7/8
+            - name: Windows Codificador de vídeo de mídia 7/8
               href: windows-media-video-7-and-8-encoders.md
-            - name: Windows Decodificador do Vídeo de Mídia 9
+            - name: Windows Decodificador de vídeo de mídia 9
               href: windowsmediavideo9decoder.md
-            - name: Windows Codificador de Vídeo de Mídia 9
+            - name: Windows Codificador de vídeo de mídia 9
               href: windowsmediavideo9encoder.md
-            - name: Windows Decodificador de tela do Vídeo de Mídia 9
+            - name: Windows Decodificador de tela vídeo de mídia 9
               href: windowsmediavideo9screendecoder.md
-            - name: Windows Codificador de tela do Vídeo de Mídia 9
+            - name: Windows Codificador de tela de vídeo de mídia 9
               href: windowsmediavideo9screenencoder.md
-        - name: Processadores de sinal digital
+        - name: Processadores de sinais digitais
           href: windowsmediadigitalsignalprocessors.md
           items:
-            - name: Audio Resampler DSP
+            - name: DSP de reamostragem de áudio
               href: audioresampler.md
-            - name: DSP (Transformação Controle de Cores)
+            - name: DSP de transformação de controle de cores
               href: colorcontroltransform.md
-            - name: DSP do Conversor de Cores
+            - name: DSP de conversor de cores
               href: colorconverter.md
-            - name: DSP do Conversor de Taxa de Quadros
+            - name: Conversor de taxa de quadros DSP
               href: framerateconverter.md
-            - name: DSP do Resizer de Vídeo
+            - name: DSP de redimensionador de vídeo
               href: videoresizer.md
-            - name: MFT do Processador de Vídeo
+            - name: MFT do processador de vídeo
               href: video-processor-mft.md
             - name: Estabilização de Vídeo MFT
               href: video-stabilization-mft.md
-            - name: DSP de Captura de Voz
+            - name: DSP de captura de voz
               href: voicecapturedmo.md
-        - name: Fontes de mídia e sinks
+        - name: Fontes de mídia e coletores
           href: media-sources-and-sinks.md
           items:
-            - name: Origem do arquivo MP3
+            - name: Origem de arquivo MP3
               href: mp3-file-source.md
-            - name: MPEG-4 File Sink
+            - name: Coletor de arquivos MPEG-4
               href: mpeg-4-file-sink.md
-            - name: Origem do arquivo MPEG-4
+            - name: Fonte de arquivo MPEG-4
               href: mpeg-4-file-source.md
             - name: Fonte de mídia SAMI
               href: sami-media-source.md
-        - name: Media Foundation atributos
+        - name: Atributos de Media Foundation
           href: media-foundation-attributes.md
           items:
-            - name: Lista alfabética de Media Foundation atributos
+            - name: Lista alfabética de atributos de Media Foundation
               href: alphabetical-list-of-media-foundation-attributes.md
               items:
                 - name: EVRConfig_AllowBatching
@@ -3568,15 +3568,15 @@
               href: /windows/win32/api/mfobjects/ne-mfobjects-mf_attribute_type
             - name: MF_ATTRIBUTES_MATCH_TYPE
               href: /windows/win32/api/mfobjects/ne-mfobjects-mf_attributes_match_type
-            - name: enumeração MF_CAPTURE_ENGINE_DEVICE_TYPE dados
+            - name: Enumeração de MF_CAPTURE_ENGINE_DEVICE_TYPE
               href: /windows/desktop/api/mfcaptureengine/ne-mfcaptureengine-mf_capture_engine_device_type
-            - name: enumeração MF_CAPTURE_ENGINE_SINK_TYPE dados
+            - name: Enumeração de MF_CAPTURE_ENGINE_SINK_TYPE
               href: /windows/desktop/api/mfcaptureengine/ne-mfcaptureengine-mf_capture_engine_sink_type
-            - name: enumeração MF_CAPTURE_ENGINE_STREAM_CATEGORY dados
+            - name: Enumeração de MF_CAPTURE_ENGINE_STREAM_CATEGORY
               href: /windows/desktop/api/mfcaptureengine/ne-mfcaptureengine-mf_capture_engine_stream_category
             - name: MF_CONNECT_METHOD
               href: /windows/win32/api/mfidl/ne-mfidl-mf_connect_method
-            - name: MF_CUSTOM_DECODE_UNIT_TYPE enumeração
+            - name: Enumeração de MF_CUSTOM_DECODE_UNIT_TYPE
               href: mf-custom-decode-unit-type-enum.md
             - name: MF_FILE_ACCESSMODE
               href: /windows/win32/api/mfobjects/ne-mfobjects-mf_file_accessmode
@@ -4036,7 +4036,7 @@
               href: mevideocapturedevicepreempted.md
             - name: MEVideoCaptureDeviceRemoved
               href: mevideocapturedeviceremoved.md
-        - name: Media Foundation Functions
+        - name: Media Foundation funções
           href: media-foundation-functions.md
           items:
             - name: CreateNamedPropertyStore
@@ -4585,9 +4585,9 @@
               href: /windows/desktop/api/mfapi/nf-mfapi-unpack2uint32asuint64
             - name: UnpackRatio
               href: /windows/desktop/api/mfapi/nf-mfapi-unpackratio
-            - name: UnpackSize
+            - name: Desempacotar
               href: /windows/desktop/api/mfapi/nf-mfapi-unpacksize
-        - name: Media Foundation Interfaces
+        - name: Interfaces Media Foundation
           href: media-foundation-interfaces.md
           items:
             - name: IAdvancedMediaCapture
@@ -4625,14 +4625,14 @@
             - name: IDirectXVideoAccelerationService
               href: /windows/desktop/api/dxva2api/nn-dxva2api-idirectxvideoaccelerationservice
               items:
-                - name: Createsurface
+                - name: CreateSurface
                   href: /windows/desktop/api/dxva2api/nf-dxva2api-idirectxvideoaccelerationservice-createsurface
             - name: IDirectXVideoDecoder
               href: /windows/desktop/api/dxva2api/nn-dxva2api-idirectxvideodecoder
               items:
                 - name: BeginFrame
                   href: /windows/desktop/api/dxva2api/nf-dxva2api-idirectxvideodecoder-beginframe
-                - name: EndFrame
+                - name: Quadro de fim
                   href: /windows/desktop/api/dxva2api/nf-dxva2api-idirectxvideodecoder-endframe
                 - name: Execute (executar)
                   href: /windows/desktop/api/dxva2api/nf-dxva2api-idirectxvideodecoder-execute
@@ -4642,7 +4642,7 @@
                   href: /windows/desktop/api/dxva2api/nf-dxva2api-idirectxvideodecoder-getcreationparameters
                 - name: GetVideoDecoderService
                   href: /windows/desktop/api/dxva2api/nf-dxva2api-idirectxvideodecoder-getvideodecoderservice
-                - name: Releasebuffer
+                - name: ReleaseBuffer
                   href: /windows/desktop/api/dxva2api/nf-dxva2api-idirectxvideodecoder-releasebuffer
             - name: IDirectXVideoDecoderService
               href: /windows/desktop/api/dxva2api/nn-dxva2api-idirectxvideodecoderservice
@@ -4660,7 +4660,7 @@
               items:
                 - name: GetAvailableSurfaceTypeByIndex
                   href: /windows/desktop/api/dxva2api/nf-dxva2api-idirectxvideomemoryconfiguration-getavailablesurfacetypebyindex
-                - name: SetSurfaceType
+                - name: Setsurfacetype
                   href: /windows/desktop/api/dxva2api/nf-dxva2api-idirectxvideomemoryconfiguration-setsurfacetype
             - name: IDirectXVideoProcessor
               href: /windows/desktop/api/dxva2api/nn-dxva2api-idirectxvideoprocessor
@@ -4755,11 +4755,11 @@
             - name: IMFActivate
               href: /windows/desktop/api/mfobjects/nn-mfobjects-imfactivate
               items:
-                - name: ActivateObject
+                - name: Ativarobject
                   href: /windows/desktop/api/mfobjects/nf-mfobjects-imfactivate-activateobject
-                - name: DetachObject
+                - name: Desanexarobject
                   href: /windows/desktop/api/mfobjects/nf-mfobjects-imfactivate-detachobject
-                - name: ShutdownObject
+                - name: Shutdownobject
                   href: /windows/desktop/api/mfobjects/nf-mfobjects-imfactivate-shutdownobject
             - name: IMFASFContentInfo
               href: /windows/desktop/api/wmcontainer/nn-wmcontainer-imfasfcontentinfo
@@ -4770,13 +4770,13 @@
                   href: /windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfcontentinfo-generateheader
                 - name: GeneratePresentationDescriptor
                   href: /windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfcontentinfo-generatepresentationdescriptor
-                - name: GetHeaderSize
+                - name: Getheadize
                   href: /windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfcontentinfo-getheadersize
-                - name: Getprofile
+                - name: GetProfile
                   href: /windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfcontentinfo-getprofile
                 - name: ParseHeader
                   href: /windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfcontentinfo-parseheader
-                - name: Setprofile
+                - name: SetProfile
                   href: /windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfcontentinfo-setprofile
             - name: IMFASFIndexer
               href: /windows/desktop/api/wmcontainer/nn-wmcontainer-imfasfindexer
@@ -4818,7 +4818,7 @@
                   href: /windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfmultiplexer-getflags
                 - name: GetNextPacket
                   href: /windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfmultiplexer-getnextpacket
-                - name: Getstatistics
+                - name: GetStatistics
                   href: /windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfmultiplexer-getstatistics
                 - name: Inicializar
                   href: /windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfmultiplexer-initialize
@@ -4847,7 +4847,7 @@
                   href: /windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfmutualexclusion-removerecord
                 - name: RemoveStreamFromRecord
                   href: /windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfmutualexclusion-removestreamfromrecord
-                - name: Tipo de
+                - name: SetType
                   href: /windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfmutualexclusion-settype
             - name: IMFASFProfile
               href: /windows/desktop/api/wmcontainer/nn-wmcontainer-imfasfprofile
@@ -4868,7 +4868,7 @@
                   href: /windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfprofile-getmutualexclusion
                 - name: GetMutualExclusionCount
                   href: /windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfprofile-getmutualexclusioncount
-                - name: GetStream
+                - name: Getstream
                   href: /windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfprofile-getstream
                 - name: GetStreamByNumber
                   href: /windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfprofile-getstreambynumber
@@ -4912,7 +4912,7 @@
                   href: /windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfstreamconfig-addpayloadextension
                 - name: Clone
                   href: /windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfstreamconfig-clone
-                - name: GetMediaType
+                - name: Getmediatype
                   href: /windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfstreamconfig-getmediatype
                 - name: GetPayloadExtension
                   href: /windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfstreamconfig-getpayloadextension
@@ -4920,11 +4920,11 @@
                   href: /windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfstreamconfig-getpayloadextensioncount
                 - name: GetStreamNumber
                   href: /windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfstreamconfig-getstreamnumber
-                - name: Getstreamtype
+                - name: GetStreamType
                   href: /windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfstreamconfig-getstreamtype
                 - name: RemoveAllPayloadExtensions
                   href: /windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfstreamconfig-removeallpayloadextensions
-                - name: SetMediaType
+                - name: Setmediatype
                   href: /windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfstreamconfig-setmediatype
                 - name: SetStreamNumber
                   href: /windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfstreamconfig-setstreamnumber
@@ -4935,7 +4935,7 @@
                   href: /windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfstreamprioritization-addstream
                 - name: Clone
                   href: /windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfstreamprioritization-clone
-                - name: GetStream
+                - name: Getstream
                   href: /windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfstreamprioritization-getstream
                 - name: GetStreamCount
                   href: /windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfstreamprioritization-getstreamcount
@@ -4975,7 +4975,7 @@
             - name: IMFAsyncCallback
               href: /windows/desktop/api/mfobjects/nn-mfobjects-imfasynccallback
               items:
-                - name: Parameters
+                - name: Getparameters
                   href: /windows/desktop/api/mfobjects/nf-mfobjects-imfasynccallback-getparameters
                 - name: Invoke
                   href: /windows/desktop/api/mfobjects/nf-mfobjects-imfasynccallback-invoke
@@ -5210,7 +5210,7 @@
             - name: IMFCaptureEngineOnEventCallback
               href: /windows/desktop/api/mfcaptureengine/nn-mfcaptureengine-imfcaptureengineoneventcallback
               items:
-                - name: Onevent
+                - name: OnEvent
                   href: /windows/desktop/api/mfcaptureengine/nf-mfcaptureengine-imfcaptureengineoneventcallback-onevent
             - name: IMFCaptureEngineOnSampleCallback
               href: /windows/desktop/api/mfcaptureengine/nn-mfcaptureengine-imfcaptureengineonsamplecallback
@@ -5234,13 +5234,13 @@
             - name: IMFCapturePreviewSink
               href: /windows/desktop/api/mfcaptureengine/nn-mfcaptureengine-imfcapturepreviewsink
               items:
-                - name: GetMirrorState
+                - name: Getespelhostate
                   href: /windows/desktop/api/mfcaptureengine/nf-mfcaptureengine-imfcapturepreviewsink-getmirrorstate
-                - name: GetRotation
+                - name: Getrotation
                   href: /windows/desktop/api/mfcaptureengine/nf-mfcaptureengine-imfcapturepreviewsink-getrotation
                 - name: SetCustomSink
                   href: /windows/desktop/api/mfcaptureengine/nf-mfcaptureengine-imfcapturepreviewsink-setcustomsink
-                - name: SetMirrorState
+                - name: Setespelhostate
                   href: /windows/desktop/api/mfcaptureengine/nf-mfcaptureengine-imfcapturepreviewsink-setmirrorstate
                 - name: SetRenderHandle
                   href: /windows/desktop/api/mfcaptureengine/nf-mfcaptureengine-imfcapturepreviewsink-setrenderhandle
@@ -5255,7 +5255,7 @@
             - name: IMFCaptureRecordSink
               href: /windows/desktop/api/mfcaptureengine/nn-mfcaptureengine-imfcapturerecordsink
               items:
-                - name: GetRotation
+                - name: Getrotation
                   href: /windows/desktop/api/mfcaptureengine/nf-mfcaptureengine-imfcapturerecordsink-getrotation
                 - name: SetCustomSink
                   href: /windows/desktop/api/mfcaptureengine/nf-mfcaptureengine-imfcapturerecordsink-setcustomsink
@@ -5302,7 +5302,7 @@
                   href: /windows/desktop/api/mfcaptureengine/nf-mfcaptureengine-imfcapturesource-getdevicestreamcategory
                 - name: GetDeviceStreamCount
                   href: /windows/desktop/api/mfcaptureengine/nf-mfcaptureengine-imfcapturesource-getdevicestreamcount
-                - name: GetMirrorState
+                - name: Getespelhostate
                   href: /windows/desktop/api/mfcaptureengine/nf-mfcaptureengine-imfcapturesource-getmirrorstate
                 - name: GetService
                   href: /windows/desktop/api/mfcaptureengine/nf-mfcaptureengine-imfcapturesource-getservice
@@ -5314,7 +5314,7 @@
                   href: /windows/desktop/api/mfcaptureengine/nf-mfcaptureengine-imfcapturesource-removeeffect
                 - name: SetCurrentDeviceMediaType
                   href: /windows/desktop/api/mfcaptureengine/nf-mfcaptureengine-imfcapturesource-setcurrentdevicemediatype
-                - name: SetMirrorState
+                - name: Setespelhostate
                   href: /windows/desktop/api/mfcaptureengine/nf-mfcaptureengine-imfcapturesource-setmirrorstate
             - name: IMFCdmSuspendNotify
               href: /windows/desktop/api/mfmediaengine/nn-mfmediaengine-imfcdmsuspendnotify
@@ -5359,7 +5359,7 @@
             - name: IMFCollection
               href: /windows/desktop/api/mfobjects/nn-mfobjects-imfcollection
               items:
-                - name: Addelement
+                - name: AddElement
                   href: /windows/desktop/api/mfobjects/nf-mfobjects-imfcollection-addelement
                 - name: GetElement
                   href: /windows/desktop/api/mfobjects/nf-mfobjects-imfcollection-getelement
@@ -5393,7 +5393,7 @@
               items:
                 - name: 'IMFContentDecryptionModuleAccess::CreateContentDecryptionModule'
                   href: /windows/desktop/api/mfcontentdecryptionmodule/nf-mfcontentdecryptionmodule-imfcontentdecryptionmoduleaccess-createcontentdecryptionmodule
-                - name: 'IMFContentDecryptionModuleAccess::GetConfiguration'
+                - name: 'IMFContentDecryptionModuleAccess:: GetConfiguration'
                   href: /windows/desktop/api/mfcontentdecryptionmodule/nf-mfcontentdecryptionmodule-imfcontentdecryptionmoduleaccess-getconfiguration
                 - name: 'IMFContentDecryptionModuleAccess::GetKeySystem'
                   href: /windows/desktop/api/mfcontentdecryptionmodule/nf-mfcontentdecryptionmodule-imfcontentdecryptionmoduleaccess-getkeysystem
@@ -5411,11 +5411,11 @@
                   href: /windows/desktop/api/mfcontentdecryptionmodule/nf-mfcontentdecryptionmodule-imfcontentdecryptionmodulesession-close
                 - name: 'IMFContentDecryptionModuleSession::GenerateRequest'
                   href: /windows/desktop/api/mfcontentdecryptionmodule/nf-mfcontentdecryptionmodule-imfcontentdecryptionmodulesession-generaterequest
-                - name: 'IMFContentDecryptionModuleSession::GetExpiration'
+                - name: 'IMFContentDecryptionModuleSession:: Expires'
                   href: /windows/desktop/api/mfcontentdecryptionmodule/nf-mfcontentdecryptionmodule-imfcontentdecryptionmodulesession-getexpiration
                 - name: 'IMFContentDecryptionModuleSession::GetKeyStatuses '
                   href: /windows/desktop/api/mfcontentdecryptionmodule/nf-mfcontentdecryptionmodule-imfcontentdecryptionmodulesession-getkeystatuses
-                - name: 'IMFContentDecryptionModuleSession::GetSessionId'
+                - name: 'IMFContentDecryptionModuleSession:: GetSessionID'
                   href: /windows/desktop/api/mfcontentdecryptionmodule/nf-mfcontentdecryptionmodule-imfcontentdecryptionmodulesession-getsessionid
                 - name: 'IMFContentDecryptionModuleSession::Load '
                   href: /windows/desktop/api/mfcontentdecryptionmodule/nf-mfcontentdecryptionmodule-imfcontentdecryptionmodulesession-load
@@ -5426,9 +5426,9 @@
             - name: 'IMFContentDecryptionModuleSessionCallbacks '
               href: /windows/desktop/api/mfcontentdecryptionmodule/nn-mfcontentdecryptionmodule-imfcontentdecryptionmodulesessioncallbacks
               items:
-                - name: 'IMFContentDecryptionModuleSessionCallbacks:: keymessage'
+                - name: 'IMFContentDecryptionModuleSessionCallbacks::KeyMessage'
                   href: /windows/desktop/api/mfcontentdecryptionmodule/nf-mfcontentdecryptionmodule-imfcontentdecryptionmodulesessioncallbacks-keymessage
-                - name: 'IMFContentDecryptionModuleSessionCallbacks:: keystatuschanged'
+                - name: 'IMFContentDecryptionModuleSessionCallbacks::KeyStatusChanged'
                   href: /windows/desktop/api/mfcontentdecryptionmodule/nf-mfcontentdecryptionmodule-imfcontentdecryptionmodulesessioncallbacks-keystatuschanged
             - name: IMFContentDecryptorContext
               href: /windows/desktop/api/mfidl/nn-mfidl-imfcontentdecryptorcontext
@@ -5444,7 +5444,7 @@
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfcontentenabler-cancel
                 - name: GetEnableData
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfcontentenabler-getenabledata
-                - name: Getenabletype
+                - name: GetEnableType
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfcontentenabler-getenabletype
                 - name: GetEnableURL
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfcontentenabler-getenableurl
@@ -5498,9 +5498,9 @@
                   href: /windows/desktop/api/mfobjects/nf-mfobjects-imfdxgibuffer-getresource
                 - name: GetSubresourceIndex
                   href: /windows/desktop/api/mfobjects/nf-mfobjects-imfdxgibuffer-getsubresourceindex
-                - name: Getunknown
+                - name: GetUnknown
                   href: /windows/desktop/api/mfobjects/nf-mfobjects-imfdxgibuffer-getunknown
-                - name: Não desconhecido
+                - name: SetUnknown
                   href: /windows/desktop/api/mfobjects/nf-mfobjects-imfdxgibuffer-setunknown
             - name: IMFDXGIDeviceManager
               href: /windows/desktop/api/mfobjects/nn-mfobjects-imfdxgidevicemanager
@@ -5534,7 +5534,7 @@
               items:
                 - name: BeginFinalize
                   href: /windows/desktop/api/mfidl/nf-mfidl-imffinalizablemediasink-beginfinalize
-                - name: Endfinalize
+                - name: EndFinalize
                   href: /windows/desktop/api/mfidl/nf-mfidl-imffinalizablemediasink-endfinalize
             - name: IMFGetService
               href: /windows/desktop/api/mfidl/nn-mfidl-imfgetservice
@@ -5597,7 +5597,7 @@
                   href: /windows/desktop/api/mfsharingengine/nf-mfsharingengine-imfimagesharingengine-setsource
                 - name: GetDevice
                   href: /windows/desktop/api/mfsharingengine/nf-mfsharingengine-imfimagesharingengine-getdevice
-                - name: Desligar
+                - name: Shutdown
                   href: /windows/desktop/api/mfsharingengine/nf-mfsharingengine-imfimagesharingengine-shutdown
             - name: IMFImageSharingEngineClassFactory
               href: /windows/desktop/api/mfsharingengine/nn-mfsharingengine-imfimagesharingengineclassfactory
@@ -5609,7 +5609,7 @@
               items:
                 - name: BindAccess
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfinputtrustauthority-bindaccess
-                - name: Getdecryptr
+                - name: GetDecrypter
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfinputtrustauthority-getdecrypter
                 - name: GetPolicy
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfinputtrustauthority-getpolicy
@@ -5720,7 +5720,7 @@
                   href: /windows/desktop/api/mfmediaengine/nf-mfmediaengine-imfmediaengine-setsourceelements
                 - name: Setvolume
                   href: /windows/desktop/api/mfmediaengine/nf-mfmediaengine-imfmediaengine-setvolume
-                - name: Desligar
+                - name: Shutdown
                   href: /windows/desktop/api/mfmediaengine/nf-mfmediaengine-imfmediaengine-shutdown
                 - name: TransferVideoFrame
                   href: /windows/desktop/api/mfmediaengine/nf-mfmediaengine-imfmediaengine-transfervideoframe
@@ -5875,15 +5875,15 @@
             - name: IMFMediaEngineSrcElements
               href: /windows/desktop/api/mfmediaengine/nn-mfmediaengine-imfmediaenginesrcelements
               items:
-                - name: AddElement
+                - name: Addelement
                   href: /windows/desktop/api/mfmediaengine/nf-mfmediaengine-imfmediaenginesrcelements-addelement
-                - name: GetLength
+                - name: Getlength
                   href: /windows/desktop/api/mfmediaengine/nf-mfmediaengine-imfmediaenginesrcelements-getlength
-                - name: Getmedia
+                - name: GetMedia
                   href: /windows/desktop/api/mfmediaengine/nf-mfmediaengine-imfmediaenginesrcelements-getmedia
                 - name: GetType
                   href: /windows/desktop/api/mfmediaengine/nf-mfmediaengine-imfmediaenginesrcelements-gettype
-                - name: GetURL
+                - name: Geturl
                   href: /windows/desktop/api/mfmediaengine/nf-mfmediaengine-imfmediaenginesrcelements-geturl
                 - name: RemoveAllElements
                   href: /windows/desktop/api/mfmediaengine/nf-mfmediaengine-imfmediaenginesrcelements-removeallelements
@@ -5919,14 +5919,14 @@
                   href: /windows/desktop/api/mfmediaengine/nf-mfmediaengine-imfmediaerror-geterrorcode
                 - name: GetExtendedErrorCode
                   href: /windows/desktop/api/mfmediaengine/nf-mfmediaengine-imfmediaerror-getextendederrorcode
-                - name: Seterrorcode
+                - name: SetErrorCode
                   href: /windows/desktop/api/mfmediaengine/nf-mfmediaengine-imfmediaerror-seterrorcode
                 - name: SetExtendedErrorCode
                   href: /windows/desktop/api/mfmediaengine/nf-mfmediaengine-imfmediaerror-setextendederrorcode
             - name: IMFMediaEvent
               href: /windows/desktop/api/mfobjects/nn-mfobjects-imfmediaevent
               items:
-                - name: Getextendedattribute
+                - name: GetExtendedType
                   href: /windows/desktop/api/mfobjects/nf-mfobjects-imfmediaevent-getextendedtype
                 - name: GetStatus
                   href: /windows/desktop/api/mfobjects/nf-mfobjects-imfmediaevent-getstatus
@@ -5941,7 +5941,7 @@
                   href: /windows/desktop/api/mfobjects/nf-mfobjects-imfmediaeventgenerator-begingetevent
                 - name: EndGetEvent
                   href: /windows/desktop/api/mfobjects/nf-mfobjects-imfmediaeventgenerator-endgetevent
-                - name: GetEvent
+                - name: Getevent
                   href: /windows/desktop/api/mfobjects/nf-mfobjects-imfmediaeventgenerator-getevent
                 - name: QueueEvent
                   href: /windows/desktop/api/mfobjects/nf-mfobjects-imfmediaeventgenerator-queueevent
@@ -5956,7 +5956,7 @@
                   href: /windows/desktop/api/mfobjects/nf-mfobjects-imfmediaeventqueue-begingetevent
                 - name: EndGetEvent
                   href: /windows/desktop/api/mfobjects/nf-mfobjects-imfmediaeventqueue-endgetevent
-                - name: GetEvent
+                - name: Getevent
                   href: /windows/desktop/api/mfobjects/nf-mfobjects-imfmediaeventqueue-getevent
                 - name: QueueEvent
                   href: /windows/desktop/api/mfobjects/nf-mfobjects-imfmediaeventqueue-queueevent
@@ -5964,14 +5964,14 @@
                   href: /windows/desktop/api/mfobjects/nf-mfobjects-imfmediaeventqueue-queueeventparamvar
                 - name: QueueEventParamUnk
                   href: /windows/desktop/api/mfobjects/nf-mfobjects-imfmediaeventqueue-queueeventparamunk
-                - name: Desligar
+                - name: Shutdown
                   href: /windows/desktop/api/mfobjects/nf-mfobjects-imfmediaeventqueue-shutdown
             - name: IMFMediaKeys
               href: /windows/desktop/api/mfmediaengine/nn-mfmediaengine-imfmediakeys
               items:
                 - name: Método CreateSession
                   href: imfmediakeys-createsession.md
-                - name: método de get_KeySystem
+                - name: get_KeySystem método
                   href: /windows/desktop/api/mfmediaengine/nf-mfmediaengine-imfmediakeys-get_keysystem
                 - name: Método GetSuspendNotify
                   href: /windows/desktop/api/mfmediaengine/nf-mfmediaengine-imfmediakeys-getsuspendnotify
@@ -5982,9 +5982,9 @@
               items:
                 - name: Método Close
                   href: imfmediakeysession-close.md
-                - name: método de get_KeySystem
+                - name: get_KeySystem método
                   href: /windows/desktop/api/mfmediaengine/nf-mfmediaengine-imfmediakeysession-get_keysystem
-                - name: método de get_SessionId
+                - name: get_SessionId método
                   href: imfmediakeysession-get-sessionid.md
                 - name: Método GetError
                   href: imfmediakeysession-geterror.md
@@ -5993,11 +5993,11 @@
             - name: IMFMediaKeySessionNotify
               href: /windows/desktop/api/mfmediaengine/nn-mfmediaengine-imfmediakeysessionnotify
               items:
-                - name: Método keyadded
+                - name: Método KeyAdded
                   href: /windows/desktop/api/mfmediaengine/nf-mfmediaengine-imfmediakeysessionnotify-keyadded
-                - name: Método keyerror
+                - name: Método KeyError
                   href: /windows/desktop/api/mfmediaengine/nf-mfmediaengine-imfmediakeysessionnotify-keyerror
-                - name: Método keymessage
+                - name: Método KeyMessage
                   href: /windows/desktop/api/mfmediaengine/nf-mfmediaengine-imfmediakeysessionnotify-keymessage
             - name: IMFMediaSession
               href: /windows/desktop/api/mfidl/nn-mfidl-imfmediasession
@@ -6006,7 +6006,7 @@
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfmediasession-cleartopologies
                 - name: Fechar
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfmediasession-close
-                - name: Getclock
+                - name: GetClock
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfmediasession-getclock
                 - name: GetFullTopology
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfmediasession-getfulltopology
@@ -6014,9 +6014,9 @@
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfmediasession-getsessioncapabilities
                 - name: Pausar
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfmediasession-pause
-                - name: Settopology
+                - name: SetTopology
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfmediasession-settopology
-                - name: Desligar
+                - name: Shutdown
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfmediasession-shutdown
                 - name: Iniciar
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfmediasession-start
@@ -6037,7 +6037,7 @@
               items:
                 - name: AddStreamSink
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfmediasink-addstreamsink
-                - name: Getcaracterísticas
+                - name: GetCharacteristics
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfmediasink-getcharacteristics
                 - name: GetPresentationClock
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfmediasink-getpresentationclock
@@ -6051,7 +6051,7 @@
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfmediasink-removestreamsink
                 - name: SetPresentationClock
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfmediasink-setpresentationclock
-                - name: Desligar
+                - name: Shutdown
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfmediasink-shutdown
             - name: IMFMediaSinkPreroll
               href: /windows/desktop/api/mfidl/nn-mfidl-imfmediasinkpreroll
@@ -6063,13 +6063,13 @@
               items:
                 - name: CreatePresentationDescriptor
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfmediasource-createpresentationdescriptor
-                - name: Getcaracterísticas
+                - name: GetCharacteristics
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfmediasource-getcharacteristics
                 - name: Pausar
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfmediasource-pause
                 - name: RemoteCreatePresentationDescriptor
                   href: remotecreatepresentationdescriptor.md
-                - name: Desligar
+                - name: Shutdown
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfmediasource-shutdown
                 - name: Iniciar
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfmediasource-start
@@ -6078,9 +6078,9 @@
             - name: IMFMediaSourceEx
               href: /windows/desktop/api/mfidl/nn-mfidl-imfmediasourceex
               items:
-                - name: GetSourceAttributes
+                - name: Getsourceattributes
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfmediasourceex-getsourceattributes
-                - name: GetStreamAttributes
+                - name: Getstreamattributes
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfmediasourceex-getstreamattributes
                 - name: SetD3DManager
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfmediasourceex-setd3dmanager
@@ -6093,7 +6093,7 @@
                   href: /windows/desktop/api/mfmediaengine/nf-mfmediaengine-imfmediasourceextension-getactivesourcebuffers
                 - name: Método GetDuration
                   href: imfmediasourceextension-getduration.md
-                - name: Método GetReadyState
+                - name: Método getpreparestate
                   href: imfmediasourceextension-getreadystate.md
                 - name: Método GetSourceBuffer
                   href: /windows/desktop/api/mfmediaengine/nf-mfmediaengine-imfmediasourceextension-getsourcebuffer
@@ -6103,7 +6103,7 @@
                   href: imfmediasourceextension-istypesupported.md
                 - name: Método RemoveSourceBuffer
                   href: imfmediasourceextension-removesourcebuffer.md
-                - name: Método SetDuration
+                - name: Método setduration
                   href: imfmediasourceextension-setduration.md
                 - name: Método SetEndOfStream
                   href: imfmediasourceextension-setendofstream.md
@@ -6129,7 +6129,7 @@
             - name: IMFMediaStream
               href: /windows/desktop/api/mfidl/nn-mfidl-imfmediastream
               items:
-                - name: GetMediaSource
+                - name: Getmedianame
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfmediastream-getmediasource
                 - name: GetStreamDescriptor
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfmediastream-getstreamdescriptor
@@ -6140,20 +6140,20 @@
             - name: IMFMediaStreamSourceSampleRequest
               href: imfmediastreamsourcesamplerequest.md
               items:
-                - name: Método SetSample
+                - name: Método setsample
                   href: imfmediastreamsourcesamplerequest-setsample.md
             - name: IMFMediaTimeRange
               href: /windows/desktop/api/mfmediaengine/nn-mfmediaengine-imfmediatimerange
               items:
-                - name: Addrange
+                - name: AddRange
                   href: /windows/desktop/api/mfmediaengine/nf-mfmediaengine-imfmediatimerange-addrange
                 - name: Limpar
                   href: /windows/desktop/api/mfmediaengine/nf-mfmediaengine-imfmediatimerange-clear
-                - name: ContainsTime
+                - name: Contém
                   href: /windows/desktop/api/mfmediaengine/nf-mfmediaengine-imfmediatimerange-containstime
                 - name: GetEnd
                   href: /windows/desktop/api/mfmediaengine/nf-mfmediaengine-imfmediatimerange-getend
-                - name: Getlength
+                - name: GetLength
                   href: /windows/desktop/api/mfmediaengine/nf-mfmediaengine-imfmediatimerange-getlength
                 - name: GetStart
                   href: /windows/desktop/api/mfmediaengine/nf-mfmediaengine-imfmediatimerange-getstart
@@ -6162,9 +6162,9 @@
               items:
                 - name: FreeRepresentation
                   href: /windows/desktop/api/mfobjects/nf-mfobjects-imfmediatype-freerepresentation
-                - name: GetMajorType
+                - name: Getmajortype
                   href: /windows/desktop/api/mfobjects/nf-mfobjects-imfmediatype-getmajortype
-                - name: GetRepresentation
+                - name: Getrepresentation
                   href: /windows/desktop/api/mfobjects/nf-mfobjects-imfmediatype-getrepresentation
                 - name: IsCompressedFormat
                   href: /windows/desktop/api/mfobjects/nf-mfobjects-imfmediatype-iscompressedformat
@@ -6175,7 +6175,7 @@
               items:
                 - name: GetCurrentMediaType
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfmediatypehandler-getcurrentmediatype
-                - name: GetMajorType
+                - name: Getmajortype
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfmediatypehandler-getmajortype
                 - name: GetMediaTypeByIndex
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfmediatypehandler-getmediatypebyindex
@@ -6198,9 +6198,9 @@
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfmetadata-getallpropertynames
                 - name: GetLanguage
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfmetadata-getlanguage
-                - name: Getproperty
+                - name: GetProperty
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfmetadata-getproperty
-                - name: SetLanguage
+                - name: Setlanguage
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfmetadata-setlanguage
                 - name: SetProperty
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfmetadata-setproperty
@@ -6212,7 +6212,7 @@
             - name: IMFMuxStreamAttributesManager
               href: /windows/desktop/api/mfobjects/nn-mfobjects-imfmuxstreamattributesmanager
               items:
-                - name: Método GetAttributes
+                - name: Método getAttributes
                   href: /windows/desktop/api/mfobjects/nf-mfobjects-imfmuxstreamattributesmanager-getattributes
                 - name: Método GetStreamCount
                   href: /windows/desktop/api/mfobjects/nf-mfobjects-imfmuxstreamattributesmanager-getstreamcount
@@ -6221,7 +6221,7 @@
               items:
                 - name: Método GetStreamCount
                   href: /windows/desktop/api/mfobjects/nf-mfobjects-imfmuxstreamsamplemanager-getstreamcount
-                - name: Método GetSample
+                - name: Método getsample
                   href: /windows/desktop/api/mfobjects/nf-mfobjects-imfmuxstreamsamplemanager-getsample
                 - name: Método GetStreamConfiguration
                   href: /windows/desktop/api/mfobjects/nf-mfobjects-imfmuxstreamsamplemanager-getstreamconfiguration
@@ -6243,24 +6243,24 @@
             - name: IMFNetCredential
               href: /windows/desktop/api/mfidl/nn-mfidl-imfnetcredential
               items:
-                - name: Getpassword
+                - name: GetPassword
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfnetcredential-getpassword
-                - name: Getuser
+                - name: GetUser
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfnetcredential-getuser
                 - name: LoggedOnUser
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfnetcredential-loggedonuser
-                - name: Setpassword
+                - name: SetPassword
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfnetcredential-setpassword
-                - name: Setuser
+                - name: SetUser
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfnetcredential-setuser
             - name: IMFNetCredentialCache
               href: /windows/desktop/api/mfidl/nn-mfidl-imfnetcredentialcache
               items:
-                - name: Getcredential
+                - name: GetCredential
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfnetcredentialcache-getcredential
-                - name: SetBad
+                - name: Não válido
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfnetcredentialcache-setgood
-                - name: SetUserOptions
+                - name: Setuseroptions
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfnetcredentialcache-setuseroptions
             - name: IMFNetCredentialManager
               href: /windows/desktop/api/mfidl/nn-mfidl-imfnetcredentialmanager
@@ -6269,7 +6269,7 @@
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfnetcredentialmanager-begingetcredentials
                 - name: EndGetCredentials
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfnetcredentialmanager-endgetcredentials
-                - name: SetBad
+                - name: Não válido
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfnetcredentialmanager-setgood
             - name: IMFNetCrossOriginSupport
               href: /windows/desktop/api/mfidl/nn-mfidl-imfnetcrossoriginsupport
@@ -6476,7 +6476,7 @@
                   href: /windows/desktop/api/mfplay/nf-mfplay-imfpmediaplayer-setvideosourcerect
                 - name: Setvolume
                   href: /windows/desktop/api/mfplay/nf-mfplay-imfpmediaplayer-setvolume
-                - name: Desligar
+                - name: Shutdown
                   href: /windows/desktop/api/mfplay/nf-mfplay-imfpmediaplayer-shutdown
                 - name: Stop
                   href: /windows/desktop/api/mfplay/nf-mfplay-imfpmediaplayer-stop
@@ -6531,15 +6531,15 @@
               items:
                 - name: AddClockStateSink
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfpresentationclock-addclockstatesink
-                - name: Gettime
+                - name: GetTime
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfpresentationclock-gettime
-                - name: GetTimeSource
+                - name: Gettimename
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfpresentationclock-gettimesource
                 - name: Pausar
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfpresentationclock-pause
                 - name: RemoveClockStateSink
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfpresentationclock-removeclockstatesink
-                - name: SetTimeSource
+                - name: SetTime
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfpresentationclock-settimesource
                 - name: Iniciar
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfpresentationclock-start
@@ -6573,15 +6573,15 @@
             - name: IMFQualityAdvise
               href: /windows/desktop/api/mfidl/nn-mfidl-imfqualityadvise
               items:
-                - name: SetDropMode
+                - name: Setdropmode
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfqualityadvise-setdropmode
                 - name: SetQualityLevel
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfqualityadvise-setqualitylevel
-                - name: GetDropMode
+                - name: Getdropmode
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfqualityadvise-getdropmode
                 - name: GetQualityLevel
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfqualityadvise-getqualitylevel
-                - name: DropTime
+                - name: Removetime
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfqualityadvise-droptime
             - name: IMFQualityAdvise2
               href: /windows/desktop/api/mfidl/nn-mfidl-imfqualityadvise2
@@ -6608,14 +6608,14 @@
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfqualitymanager-notifyqualityevent
                 - name: NotifyTopology
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfqualitymanager-notifytopology
-                - name: Desligar
+                - name: Shutdown
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfqualitymanager-shutdown
             - name: IMFRateControl
               href: /windows/desktop/api/mfidl/nn-mfidl-imfratecontrol
               items:
                 - name: GetRate
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfratecontrol-getrate
-                - name: Setrate
+                - name: SetRate
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfratecontrol-setrate
             - name: IMFRateSupport
               href: /windows/desktop/api/mfidl/nn-mfidl-imfratesupport
@@ -6663,23 +6663,23 @@
               items:
                 - name: GetRemoteHost
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfremoteproxy-getremotehost
-                - name: GetRemoteObject
+                - name: Getremoteobject
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfremoteproxy-getremoteobject
             - name: IMFSAMIStyle
               href: /windows/desktop/api/mfidl/nn-mfidl-imfsamistyle
               items:
-                - name: GetSelectedStyle
+                - name: Getselecionadostyle
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfsamistyle-getselectedstyle
                 - name: GetStyleCount
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfsamistyle-getstylecount
-                - name: GetStyles
+                - name: Getstyles
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfsamistyle-getstyles
-                - name: SetSelectedStyle
+                - name: Setselecionou
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfsamistyle-setselectedstyle
             - name: IMFSample
               href: /windows/desktop/api/mfobjects/nn-mfobjects-imfsample
               items:
-                - name: AddBuffer
+                - name: Addbuffer
                   href: /windows/desktop/api/mfobjects/nf-mfobjects-imfsample-addbuffer
                 - name: ConvertToContiguousBuffer
                   href: /windows/desktop/api/mfobjects/nf-mfobjects-imfsample-converttocontiguousbuffer
@@ -6693,7 +6693,7 @@
                   href: /windows/desktop/api/mfobjects/nf-mfobjects-imfsample-getsampleduration
                 - name: GetSampleFlags
                   href: /windows/desktop/api/mfobjects/nf-mfobjects-imfsample-getsampleflags
-                - name: GetSampleTime
+                - name: Getsampletime
                   href: /windows/desktop/api/mfobjects/nf-mfobjects-imfsample-getsampletime
                 - name: GetTotalLength
                   href: /windows/desktop/api/mfobjects/nf-mfobjects-imfsample-gettotallength
@@ -6705,7 +6705,7 @@
                   href: /windows/desktop/api/mfobjects/nf-mfobjects-imfsample-setsampleduration
                 - name: SetSampleFlags
                   href: /windows/desktop/api/mfobjects/nf-mfobjects-imfsample-setsampleflags
-                - name: SetSampleTime
+                - name: Setamostratime
                   href: /windows/desktop/api/mfobjects/nf-mfobjects-imfsample-setsampletime
             - name: 'IMFSampleAllocatorControl '
               href: /windows/desktop/api/mfidl/nn-mfidl-imfsampleallocatorcontrol
@@ -6721,7 +6721,7 @@
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfsamplegrabbersinkcallback-onprocesssample
                 - name: OnSetPresentationClock
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfsamplegrabbersinkcallback-onsetpresentationclock
-                - name: Onshutdown
+                - name: OnShutdown
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfsamplegrabbersinkcallback-onshutdown
             - name: IMFSampleGrabberSinkCallback2
               href: /windows/desktop/api/mfidl/nn-mfidl-imfsamplegrabbersinkcallback2
@@ -6755,7 +6755,7 @@
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfsavejob-beginsave
                 - name: CancelSave
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfsavejob-cancelsave
-                - name: Fim de salvar
+                - name: EndSave
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfsavejob-endsave
                 - name: GetProgress
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfsavejob-getprogress
@@ -6778,7 +6778,7 @@
             - name: IMFSeekInfo
               href: /windows/desktop/api/mfidl/nn-mfidl-imfseekinfo
               items:
-                - name: GetNearestKeyFrames
+                - name: GetNekeyFrames
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfseekinfo-getnearestkeyframes
             - name: IMFSensorActivitiesReport
               href: /windows/desktop/api/mfidl/nn-mfidl-imfsensoractivitiesreport
@@ -6804,7 +6804,7 @@
             - name: IMFSensorActivityReport
               href: /windows/desktop/api/mfidl/nn-mfidl-imfsensoractivityreport
               items:
-                - name: Método getfriendlyname
+                - name: Método GetFriendlyName
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfsensoractivityreport-getfriendlyname
                 - name: Método GetSymbolicLink
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfsensoractivityreport-getsymboliclink
@@ -6817,17 +6817,17 @@
               items:
                 - name: Método GetDeviceId
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfsensordevice-getdeviceid
-                - name: Método DeviceType
+                - name: Método GetDeviceType
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfsensordevice-getdevicetype
                 - name: Método GetFlags
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfsensordevice-getflags
                 - name: Método GetSymbolicLink
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfsensordevice-getsymboliclink
-                - name: Método getdeviceattributes
+                - name: Método GetDeviceAttributes
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfsensordevice-getdeviceattributes
                 - name: Método GetStreamAttributesCount
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfsensordevice-getstreamattributescount
-                - name: Método getstreamattributes
+                - name: Método GetStreamAttributes
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfsensordevice-getstreamattributes
                 - name: Método SetSensorDeviceMode
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfsensordevice-setsensordevicemode
@@ -6836,7 +6836,7 @@
             - name: IMFSensorGroup
               href: /windows/desktop/api/mfidl/nn-mfidl-imfsensorgroup
               items:
-                - name: Método createmediate
+                - name: Método CreateMediaSource
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfsensorgroup-createmediasource
                 - name: Método GetFlags
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfsensorgroup-getflags
@@ -6855,20 +6855,20 @@
             - name: IMFSensorProcessActivity
               href: /windows/desktop/api/mfidl/nn-mfidl-imfsensorprocessactivity
               items:
-                - name: Método getprocessid
+                - name: Método GetProcessId
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfsensorprocessactivity-getprocessid
-                - name: Método getstreamingstate
+                - name: Método GetStreamingState
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfsensorprocessactivity-getstreamingstate
-                - name: Método getstreamingmode
+                - name: Método GetStreamingMode
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfsensorprocessactivity-getstreamingmode
-                - name: Método reporttime
+                - name: Método GetReportTime
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfsensorprocessactivity-getreporttime
             - name: IMFSensorProfileCollection
               href: /windows/desktop/api/mfidl/nn-mfidl-imfsensorprofilecollection
               items:
                 - name: Método GetProfile
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfsensorprofilecollection-getprofile
-                - name: Método addprofile
+                - name: Método AddProfile
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfsensorprofilecollection-addprofile
                 - name: Método FindProfile
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfsensorprofilecollection-findprofile
@@ -6879,7 +6879,7 @@
             - name: IMFSensorProfile
               href: /windows/desktop/api/mfidl/nn-mfidl-imfsensorprofile
               items:
-                - name: Método getprofileid
+                - name: Método GetProfileId
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfsensorprofile-getprofileid
                 - name: Método AddProfileFilter
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfsensorprofile-addprofilefilter
@@ -6930,7 +6930,7 @@
               items:
                 - name: GetShutdownStatus
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfshutdown-getshutdownstatus
-                - name: Desligar
+                - name: Shutdown
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfshutdown-shutdown
             - name: IMFSignedLibrary
               href: /windows/desktop/api/mfidl/nn-mfidl-imfsignedlibrary
@@ -6942,11 +6942,11 @@
               items:
                 - name: GetMasterVolume
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfsimpleaudiovolume-getmastervolume
-                - name: Getmudo
+                - name: GetMute
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfsimpleaudiovolume-getmute
                 - name: SetMasterVolume
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfsimpleaudiovolume-setmastervolume
-                - name: SetMute
+                - name: Sem áudio
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfsimpleaudiovolume-setmute
             - name: IMFSinkWriter
               href: /windows/desktop/api/mfreadwrite/nn-mfreadwrite-imfsinkwriter
@@ -6961,7 +6961,7 @@
                   href: /windows/desktop/api/mfreadwrite/nf-mfreadwrite-imfsinkwriter-flush
                 - name: GetServiceForStream
                   href: /windows/desktop/api/mfreadwrite/nf-mfreadwrite-imfsinkwriter-getserviceforstream
-                - name: GetStatistics
+                - name: Getstatistics
                   href: /windows/desktop/api/mfreadwrite/nf-mfreadwrite-imfsinkwriter-getstatistics
                 - name: NotifyEndOfSegment
                   href: /windows/desktop/api/mfreadwrite/nf-mfreadwrite-imfsinkwriter-notifyendofsegment
@@ -6976,9 +6976,9 @@
             - name: IMFSinkWriterCallback
               href: /windows/desktop/api/mfreadwrite/nn-mfreadwrite-imfsinkwritercallback
               items:
-                - name: OnFinalize
+                - name: Onfinalize
                   href: /windows/desktop/api/mfreadwrite/nf-mfreadwrite-imfsinkwritercallback-onfinalize
-                - name: OnMarker
+                - name: Onmarcer
                   href: /windows/desktop/api/mfreadwrite/nf-mfreadwrite-imfsinkwritercallback-onmarker
             - name: IMFSinkWriterCallback2
               href: /windows/desktop/api/mfreadwrite/nn-mfreadwrite-imfsinkwritercallback2
@@ -7012,11 +7012,11 @@
                   href: /windows/desktop/api/mfmediaengine/nf-mfmediaengine-imfsourcebuffer-getappendwindowend
                 - name: Método GetAppendWindowStart
                   href: /windows/desktop/api/mfmediaengine/nf-mfmediaengine-imfsourcebuffer-getappendwindowstart
-                - name: Método GetBuffered
+                - name: Método getbuffered
                   href: /windows/desktop/api/mfmediaengine/nf-mfmediaengine-imfsourcebuffer-getbuffered
                 - name: Método GetTimeStampOffset
                   href: /windows/desktop/api/mfmediaengine/nf-mfmediaengine-imfsourcebuffer-gettimestampoffset
-                - name: Método GetUpdating
+                - name: Método getupdating
                   href: /windows/desktop/api/mfmediaengine/nf-mfmediaengine-imfsourcebuffer-getupdating
                 - name: Método remove
                   href: imfsourcebuffer-remove.md
@@ -7060,7 +7060,7 @@
                   href: /windows/desktop/api/mfreadwrite/nf-mfreadwrite-imfsourcereader-getcurrentmediatype
                 - name: GetNativeMediaType
                   href: /windows/desktop/api/mfreadwrite/nf-mfreadwrite-imfsourcereader-getnativemediatype
-                - name: GetPresentationAttribute
+                - name: Getpresentationattribute
                   href: /windows/desktop/api/mfreadwrite/nf-mfreadwrite-imfsourcereader-getpresentationattribute
                 - name: GetServiceForStream
                   href: /windows/desktop/api/mfreadwrite/nf-mfreadwrite-imfsourcereader-getserviceforstream
@@ -7077,9 +7077,9 @@
             - name: IMFSourceReaderCallback
               href: /windows/desktop/api/mfreadwrite/nn-mfreadwrite-imfsourcereadercallback
               items:
-                - name: Onevent
+                - name: OnEvent
                   href: /windows/desktop/api/mfreadwrite/nf-mfreadwrite-imfsourcereadercallback-onevent
-                - name: OnFlush
+                - name: Enflush
                   href: /windows/desktop/api/mfreadwrite/nf-mfreadwrite-imfsourcereadercallback-onflush
                 - name: OnReadSample
                   href: /windows/desktop/api/mfreadwrite/nf-mfreadwrite-imfsourcereadercallback-onreadsample
@@ -7599,9 +7599,9 @@
                   href: /windows/desktop/api/evr/nf-evr-imfvideodisplaycontrol-repaintvideo
                 - name: SetAspectRatioMode
                   href: /windows/desktop/api/evr/nf-evr-imfvideodisplaycontrol-setaspectratiomode
-                - name: Setbordercolor
+                - name: SetBorderColor
                   href: /windows/desktop/api/evr/nf-evr-imfvideodisplaycontrol-setbordercolor
-                - name: Em tela inteira
+                - name: SetFullscreen
                   href: /windows/desktop/api/evr/nf-evr-imfvideodisplaycontrol-setfullscreen
                 - name: SetRenderingPrefs
                   href: /windows/desktop/api/evr/nf-evr-imfvideodisplaycontrol-setrenderingprefs
@@ -7655,7 +7655,7 @@
               items:
                 - name: GetCurrentMediaType
                   href: /windows/desktop/api/evr/nf-evr-imfvideopresenter-getcurrentmediatype
-                - name: ProcessMessage
+                - name: Processmessage
                   href: /windows/desktop/api/evr/nf-evr-imfvideopresenter-processmessage
             - name: IMFVideoProcessor
               href: /windows/desktop/api/evr9/nn-evr9-imfvideoprocessor
@@ -7666,7 +7666,7 @@
                   href: /windows/desktop/api/evr9/nf-evr9-imfvideoprocessor-getbackgroundcolor
                 - name: GetFilteringRange
                   href: /windows/desktop/api/evr9/nf-evr9-imfvideoprocessor-getfilteringrange
-                - name: Getfiltervalue
+                - name: GetFilteringValue
                   href: /windows/desktop/api/evr9/nf-evr9-imfvideoprocessor-getfilteringvalue
                 - name: GetProcAmpRange
                   href: /windows/desktop/api/evr9/nf-evr9-imfvideoprocessor-getprocamprange
@@ -7678,7 +7678,7 @@
                   href: /windows/desktop/api/evr9/nf-evr9-imfvideoprocessor-getvideoprocessormode
                 - name: SetBackgroundColor
                   href: /windows/desktop/api/evr9/nf-evr9-imfvideoprocessor-setbackgroundcolor
-                - name: Setfiltervalue
+                - name: SetFilteringValue
                   href: /windows/desktop/api/evr9/nf-evr9-imfvideoprocessor-setfilteringvalue
                 - name: SetProcAmpValues
                   href: /windows/desktop/api/evr9/nf-evr9-imfvideoprocessor-setprocampvalues
@@ -7687,13 +7687,13 @@
             - name: IMFVideoProcessorControl
               href: /windows/desktop/api/mfidl/nn-mfidl-imfvideoprocessorcontrol
               items:
-                - name: Setbordercolor
+                - name: SetBorderColor
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfvideoprocessorcontrol-setbordercolor
                 - name: SetConstrictionSize
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfvideoprocessorcontrol-setconstrictionsize
                 - name: SetDestinationRectangle
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfvideoprocessorcontrol-setdestinationrectangle
-                - name: Setmirror
+                - name: SetMirror
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfvideoprocessorcontrol-setmirror
                 - name: SetRotation
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfvideoprocessorcontrol-setrotation
@@ -7720,7 +7720,7 @@
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfvideosampleallocator-allocatesample
                 - name: InitializeSampleAllocator
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfvideosampleallocator-initializesampleallocator
-                - name: Setdirectxmanager
+                - name: SetDirectXManager
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfvideosampleallocator-setdirectxmanager
                 - name: UninitializeSampleAllocator
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfvideosampleallocator-uninitializesampleallocator
@@ -8656,7 +8656,7 @@
               href: /windows/desktop/api/mfplay/ns-mfplay-mfp_stop_event
             - name: MFPinholeCameraIntrinsic_IntrinsicModel
               href: /windows/win32/api/mfapi/ns-mfapi-mfpinholecameraintrinsic_intrinsicmodel
-            - name: MFPinholeCameraIntrinsics
+            - name: MF VouleCameraIntrinsics
               href: /windows/win32/api/mfapi/ns-mfapi-mfpinholecameraintrinsics
             - name: MFRatio
               href: /windows/win32/api/mfobjects/ns-mfobjects-mfratio
@@ -8707,5 +8707,5 @@
           items:
             - name: DXVAHD_COLOR
               href: /windows/desktop/api/dxvahd/ns-dxvahd-dxvahd_color_rgba
-            - name: MFPaletteEntry Union
+            - name: União MFPaletteEntry
               href: /windows/desktop/api/mfobjects/mfobjects/ns-mfobjects-mfargb

@@ -1,10 +1,10 @@
 ---
-title: Enumeração de WMDRMNET_POLICY_TYPE (wmdrmsdk. h)
-description: O \_ tipo de \_ enumeração tipo de política WMDRMNET lista os tipos de políticas que estão disponíveis para operações do Windows Media DRM para dispositivos de rede.
+title: WMDRMNET_POLICY_TYPE enumeração (Wmdrmsdk.h)
+description: O tipo de enumeração WMDRMNET POLICY TYPE lista os tipos de políticas que estão disponíveis para Windows DRM de \_ Mídia para operações de \_ Dispositivos de Rede.
 ms.assetid: 83e9e247-3bd8-4857-97b6-95b3cd5ad25c
 keywords:
-- Formato de mídia do Windows de enumeração de WMDRMNET_POLICY_TYPE
-- Formato de mídia do Windows de enumeração
+- WMDRMNET_POLICY_TYPE formato de mídia das janelas de enumeração
+- formato de mídia das janelas de enumeração
 topic_type:
 - apiref
 api_name:
@@ -15,18 +15,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 964a3e938caa312f02f21074f046f3cf88d72de6
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8aec574717abb51117b142b8450ad7548d84766b4138f76a4296982422462fbc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105751306"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118697808"
 ---
-# <a name="wmdrmnet_policy_type-enumeration"></a>Enumeração de tipo de \_ política WMDRMNET \_
+# <a name="wmdrmnet_policy_type-enumeration"></a>Enumeração DE TIPO DE POLÍTICA WMDRMNET \_ \_
 
-O tipo de enumeração **\_ \_ tipo de política WMDRMNET** lista os tipos de políticas que estão disponíveis para operações do Windows Media DRM para dispositivos de rede.
+O tipo de enumeração **WMDRMNET \_ POLICY \_ TYPE** lista os tipos de políticas que estão disponíveis para operações Windows DRM de Mídia para Dispositivos de Rede.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 
 ```C++
@@ -42,17 +42,17 @@ typedef enum WMDRMNET_POLICY_TYPE {
 
 <dl> <dt>
 
-<span id="WMDRMNET_POLICY_TYPE_UNDEFINED"></span><span id="wmdrmnet_policy_type_undefined"></span>**\_tipo de política WMDRMNET \_ \_ indefinido**
+<span id="WMDRMNET_POLICY_TYPE_UNDEFINED"></span><span id="wmdrmnet_policy_type_undefined"></span>**TIPO DE POLÍTICA WMDRMNET \_ \_ \_ INDEFINIDO**
 </dt> <dd>
 
-Não há suporte para tipos de política indefinidos.
+Não há suporte para tipos de política indefinido.
 
 </dd> <dt>
 
-<span id="WMDRMNET_POLICY_TYPE_TRANSCRYPTPLAY"></span><span id="wmdrmnet_policy_type_transcryptplay"></span>**\_tipo de política WMDRMNET \_ \_ TRANSCRYPTPLAY**
+<span id="WMDRMNET_POLICY_TYPE_TRANSCRYPTPLAY"></span><span id="wmdrmnet_policy_type_transcryptplay"></span>**TIPO DE POLÍTICA WMDRMNET \_ \_ \_ TRANSCRYPTPLAY**
 </dt> <dd>
 
-A política rege a capacidade de converter o conteúdo protegido pelo Windows Media DRM em dados protegidos do Windows Media DRM para dispositivos de rede e reproduzi-los novamente em um dispositivo Networked.
+A política rege a capacidade de converter o conteúdo protegido pelo DRM de mídia Windows em um DRM de mídia Windows protegido para dados de Dispositivos de Rede e reproduzi-lo em um dispositivo em rede.
 
 </dd> </dl>
 
@@ -66,7 +66,7 @@ Nenhum.
 
 | Requisito | Valor |
 |-------------------|---------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>Wmdrmsdk. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>Wmdrmsdk.h</dt> </dl> |
 
 
 
@@ -77,7 +77,7 @@ Nenhum.
 [**Tipos de enumeração**](drm-enumeration-types.md)
 </dt> <dt>
 
-[**política de WMDRMNET \_**](wmdrmnet-policy.md)
+[**POLÍTICA \_ WMDRMNET**](wmdrmnet-policy.md)
 </dt> </dl>
 
  

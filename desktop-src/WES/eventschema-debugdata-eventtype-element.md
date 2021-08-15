@@ -1,6 +1,6 @@
 ---
 title: Elemento DebugData (EventType)
-description: Contém os dados que podem ser registrados para eventos de pré-processamento (pré-processador de rastreamento de software) do Windows.
+description: contém os dados que podem ser registrados para Windows eventos de pré-processamento (pré-processador de rastreamento de software).
 ms.assetid: df7b1a84-95a3-4e56-9be8-3123366c4932
 keywords:
 - EventLog do elemento DebugData
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: d8c04874c67ff496997d36e7fd614eee1a6dbfa1
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 8c11d9e7d900c62e9dea59934058de9019cc31b6fa0e414f1310eff43c410858
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105763398"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120005536"
 ---
 # <a name="debugdata-eventtype-element"></a>Elemento DebugData (EventType)
 
-Contém os dados que podem ser registrados para eventos de pré-processamento (pré-processador de rastreamento de software) do Windows.
+contém os dados que podem ser registrados para Windows eventos de pré-processamento (pré-processador de rastreamento de software).
 
 ``` syntax
 <xs:element name="DebugData"
@@ -38,8 +38,8 @@ O elemento **DebugData** é definido pelo tipo complexo [**EventType**](eventsch
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/> |
 
 
 

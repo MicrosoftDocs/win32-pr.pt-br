@@ -15,12 +15,12 @@ api_type:
 - COM
 api_location:
 - Wbemdisp.dll
-ms.openlocfilehash: 63ae9e529de010e0a0ca7b8bc1da7dc8dc4891b3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0cbb765241fabb86a14a5d74f7a839d5d81b017856b6da349b9ec04fd8535a4a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104296591"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118312710"
 ---
 # <a name="swbemsecurityauthenticationlevel-property"></a>Propriedade SWbemSecurity. AuthenticationLevel
 
@@ -30,7 +30,7 @@ Para obter uma explicação dessa sintaxe, consulte [convenções de documento p
 
 Esta propriedade é de leitura/gravação.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 ```VB
@@ -43,7 +43,7 @@ SWbemSecurity.AuthenticationLevel As Integer
 
 ## <a name="remarks"></a>Comentários
 
-A configuração authenticationLevel permite solicitar o nível de autenticação DCOM e privacidade a ser usada em uma conexão. O intervalo de configurações não é autenticado para autenticação criptografada por pacote.
+A configuração authenticationLevel permite solicitar o nível de autenticação DCOM e privacidade a ser usada em uma conexão. Configurações intervalo de sem autenticação para autenticação criptografada por pacote.
 
 
 

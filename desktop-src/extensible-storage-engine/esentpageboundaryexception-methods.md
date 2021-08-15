@@ -1,5 +1,5 @@
 ---
-description: 'Saiba mais sobre: métodos EsentPageBoundaryException'
+description: 'Saiba mais sobre: Métodos EsentPageBoundaryException'
 title: 'Métodos EsentPageBoundaryException '
 TOCTitle: EsentPageBoundaryException methods
 ms:assetid: Methods.T:Microsoft.Isam.Esent.Interop.EsentPageBoundaryException
@@ -7,19 +7,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55102521
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: b3df0466e91f6c665defe560fc62b3f21cba5e32
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1dbcabd021c809a47cb7dd3a1b90531f8dc79beb828ae91a5ab2d1b34c6853b7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103922408"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118492338"
 ---
 # <a name="esentpageboundaryexception-methods"></a>Métodos EsentPageBoundaryException 
 
 Incluir membros protegidos  
 Incluir membros herdados  
 
-O tipo [EsentPageBoundaryException](./esentpageboundaryexception-class.md) expõe os membros a seguir.
+O [tipo EsentPageBoundaryException](./esentpageboundaryexception-class.md) expõe os membros a seguir.
 
 ## <a name="methods"></a>Métodos
 
@@ -44,7 +44,7 @@ O tipo [EsentPageBoundaryException](./esentpageboundaryexception-class.md) expõ
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><a href="/dotnet/api/system.exception.getbaseexception#System_Exception_GetBaseException">GetBaseException</a></td>
+<td><a href="/dotnet/api/system.exception.getbaseexception#System_Exception_GetBaseException">Getbaseexception</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="even">
@@ -59,12 +59,12 @@ O tipo [EsentPageBoundaryException](./esentpageboundaryexception-class.md) expõ
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><a href="/dotnet/api/system.exception.gettype#System_Exception_GetType">GetType</a></td>
+<td><a href="/dotnet/api/system.exception.gettype#System_Exception_GetType">Gettype</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Método protegido" alt="Protected method" /></td>
-<td><a href="/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">MemberwiseClone</a></td>
+<td><a href="/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Memberwiseclone</a></td>
 <td>(Herdado do <a href="/dotnet/api/system.object">objeto</a>.)</td>
 </tr>
 <tr class="even">
@@ -84,4 +84,4 @@ Parte superior
 
 [Classe EsentPageBoundaryException](./esentpageboundaryexception-class.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

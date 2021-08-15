@@ -1,19 +1,19 @@
 ---
-title: Escuta IAgentNotifySinkEx
-description: Escuta IAgentNotifySinkEx
+title: IAgentNotifySinkEx ListeningState
+description: IAgentNotifySinkEx ListeningState
 ms.assetid: e303b299-0dd0-419a-87a9-1490fe6cf54a
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2fee8f931030cbd68cd148fc57360d8b0ccf7624
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 21d3926741f83f66ab6133874ec47783976c0ddb6d3fbd2ee91c6e584813147a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104498724"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117692602"
 ---
-# <a name="iagentnotifysinkexlisteningstate"></a>IAgentNotifySinkEx:: Listeningstate
+# <a name="iagentnotifysinkexlisteningstate"></a>IAgentNotifySinkEx::ListeningState
 
-\[O Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
+\[O Microsoft Agent foi preterido a partir Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
 
 ``` syntax
 HRESULT ListeningState(
@@ -23,7 +23,7 @@ HRESULT ListeningState(
 );
 ```
 
-Notifica um aplicativo cliente quando o modo de escuta é alterado.
+Notifica um aplicativo cliente quando o modo de escuta muda.
 
 -   Sem valor de retorno.
 
@@ -39,7 +39,7 @@ O caractere para o qual o estado de escuta foi alterado.
 <span id="bListening"></span><span id="blistening"></span><span id="BLISTENING"></span>*bListening*
 </dt> <dd>
 
-O estado do modo de escuta. **Verdadeiro** indica que o modo de escuta foi iniciado; **False**, que o modo de escuta terminou.
+O estado do modo de escuta. **True** indica que o modo de escuta foi iniciado; **False**, que o modo de escuta terminou.
 
 </dd> <dt>
 
@@ -52,14 +52,14 @@ A causa do evento, que pode ser um dos valores a seguir.
 
 | Valor                                                                             | Descrição                                                                    |
 |-----------------------------------------------------------------------------------|--------------------------------------------------------------------------------|
-| **const LSCOMPLETE Long sem sinal** **\_ causa \_ PROGRAMDISABLED = 1;**<br/>    | O modo de escuta foi desativado pelo código do programa.                                 |
-| **const LSCOMPLETE Long sem sinal** **\_ causa \_ PROGRAMTIMEDOUT = 2;**<br/>    | O modo de escuta (ativado pelo código do programa) atingiu o tempo limite.                          |
-| **const LSCOMPLETE Long sem sinal** **\_ causa \_ USERTIMEDOUT = 3;**<br/>       | O modo de escuta (ativado pela chave de escuta) atingiu o tempo limite.                     |
-| **const LSCOMPLETE Long sem sinal** **\_ causa \_ USERRELEASEDKEY = 4;**<br/>    | O modo de escuta foi desativado porque o usuário liberou a chave de escuta.     |
-| **const LSCOMPLETE Long sem sinal** **\_ causa \_ USERUTTERANCEENDED = 5;**<br/> | O modo de escuta foi desativado porque o usuário terminou de falar.              |
-| **const LSCOMPLETE Long sem sinal** **\_ causa \_ CLIENTDEACTIVATED = 6;**<br/>  | O modo de escuta foi desativado porque o cliente ativo de entrada foi desativado. |
-| **const LSCOMPLETE Long sem sinal** **\_ causa \_ DEFAULTCHARCHANGE = 7**<br/>   | O modo de escuta foi desativado porque o caractere padrão foi alterado.       |
-| **const LSCOMPLETE longo sem sinal** **\_ causa o \_ userdesabilitoud = 8**<br/>        | O modo de escuta foi desativado porque o usuário desabilitou a entrada de fala.          |
+| **const unsigned long** **LSCOMPLETE \_ CAUSE \_ PROGRAMDISABLED = 1;**<br/>    | O modo de escuta foi desligado pelo código do programa.                                 |
+| **const unsigned long** **LSCOMPLETE \_ CAUSE \_ PROGRAMTIMEDOUT = 2;**<br/>    | O modo de escuta (ligado pelo código do programa) tempou.                          |
+| **const unsigned long** **LSCOMPLETE \_ CAUSE \_ USERTIMEDOUT = 3;**<br/>       | O modo de escuta (ligado pela tecla De escuta) tempou.                     |
+| **const unsigned long** **LSCOMPLETE \_ CAUSE \_ USERRELEASEDKEY = 4;**<br/>    | O modo de escuta foi desligado porque o usuário liberou a tecla Listening.     |
+| **const unsigned long** **LSCOMPLETE \_ CAUSE \_ USERUTTERANCEENDED = 5;**<br/> | O modo de escuta foi desligado porque o usuário terminou de falar.              |
+| **const unsigned long** **LSCOMPLETE \_ CAUSE \_ CLIENTDEACTIVATED = 6;**<br/>  | O modo de escuta foi desativado porque o cliente ativo de entrada foi desativado. |
+| **const unsigned long** **LSCOMPLETE \_ CAUSE \_ DEFAULTCHARCHANGE = 7**<br/>   | O modo de escuta foi desligado porque o caractere padrão foi alterado.       |
+| **const unsigned long** **LSCOMPLETE \_ CAUSE \_ USERDISABLED = 8**<br/>        | O modo de escuta foi desativado porque o usuário desabilitou a entrada de fala.          |
 
 
 
@@ -67,13 +67,13 @@ A causa do evento, que pode ser um dos valores a seguir.
 
 </dd> </dl>
 
-Esse evento é enviado a todos os clientes quando o modo de escuta começa depois que o usuário pressiona a tecla de escuta ou quando seu tempo limite termina, ou quando o cliente de entrada-ativo chama o método [**IAgentCharacterEx:: Listen**](iagentcharacterex--listen.md) com **true** ou **false**.
+Esse evento é enviado a todos os clientes quando o modo de escuta começa depois que o usuário pressiona a tecla Listening ou quando seu tempo-final termina ou quando o cliente ativo de entrada chama o método [**IAgentCharacterEx::Listen**](iagentcharacterex--listen.md) com **True** ou **False.**
 
 O evento retorna valores para os clientes que atualmente têm esse caractere carregado. Todos os outros clientes recebem um caractere nulo (cadeia de caracteres vazia).
 
 ## <a name="see-also"></a>Consulte Também
 
-[**IAgentCharacterEx:: escutar**](iagentcharacterex--listen.md)
+[**IAgentCharacterEx::Listen**](iagentcharacterex--listen.md)
 
 
  

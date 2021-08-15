@@ -3,7 +3,7 @@ title: Mensagem de EM_PASTESPECIAL (RichEdit. h)
 description: Cola um formato de área de transferência específico em um controle de edição rico.
 ms.assetid: b4b9c1a7-943d-4dc8-bcb9-054c984b82ba
 keywords:
-- Controles de EM_PASTESPECIAL de mensagens do Windows
+- controles de Windows de mensagem de EM_PASTESPECIAL
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9375dd4a333f0e29d5e8f2721409244cf80f1233
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 2dc1af4dd0566cdf8e256b34f87fcc52ea855bc521c87cbe390e02b8b1cf7b06
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103824530"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118412797"
 ---
 # <a name="em_pastespecial-message"></a>\_Mensagem em PASTESPECIAL
 
@@ -43,7 +43,7 @@ Ponteiro para uma estrutura [**REPASTESPECIAL**](/windows/desktop/api/Richedit/n
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Essa mensagem não retorna um valor.
 
@@ -53,9 +53,9 @@ Essa mensagem não retorna um valor.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
 
 
 

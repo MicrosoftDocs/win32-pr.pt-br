@@ -1,5 +1,5 @@
 ---
-description: A interface IAMTimelineSrc fornece métodos para manipular e definir propriedades em objetos de origem nos serviços de edição do DirectShow (DES).
+description: a interface IAMTimelineSrc fornece métodos para manipular e definir propriedades em objetos de origem em serviços de edição DirectShow (DES).
 ms.assetid: 39a64718-1fac-4d90-8340-b712d3bad2ec
 title: Interface IAMTimelineSrc (QEdit. h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 25733b1353bc0cbd92c40335a8d342473b03a806
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5d2ad5684df6298bde458e87ff322b21622139930fa9aaf994fda0e7ba7e987e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105812827"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118399193"
 ---
 # <a name="iamtimelinesrc-interface"></a>Interface IAMTimelineSrc
 
@@ -28,7 +28,7 @@ ms.locfileid: "105812827"
 
  
 
-A `IAMTimelineSrc` interface fornece métodos para manipular e definir propriedades em objetos de origem nos [serviços de edição do DirectShow](directshow-editing-services.md) (des). Um objeto de origem representa um fluxo de uma fonte de mídia.
+a `IAMTimelineSrc` interface fornece métodos para manipular e definir propriedades em objetos de origem em [serviços de edição de DirectShow](directshow-editing-services.md) (DES). Um objeto de origem representa um fluxo de uma fonte de mídia.
 
 Você pode usar uma parte dos dados em um arquivo de origem definindo as horas de início e de parada de mídia. Esses valores especificam o início e o fim do objeto de origem, em relação à origem da mídia original. As horas de mídia podem diferir das horas de início e parada do objeto na linha do tempo, permitindo a reprodução de movimento rápido ou lento. (Com fontes de áudio, ocorre a mudança de densidade.)
 
@@ -83,7 +83,7 @@ A interface **IAMTimelineSrc** tem esses métodos.
  
 
 > [!Note]  
-> Para obter o QEdit. h, baixe a [atualização SDK do Microsoft Windows para Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). O QEdit. h não está disponível no SDK do Microsoft Windows para Windows 7 e .NET Framework 3,5 Service Pack 1.
+> para obter o Qedit. h, baixe a [atualização SDK do Microsoft Windows para Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit. h não está disponível no SDK do Microsoft Windows para Windows 7 e .NET Framework 3,5 Service Pack 1.
 
  
 

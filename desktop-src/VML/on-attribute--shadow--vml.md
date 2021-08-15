@@ -1,26 +1,26 @@
 ---
-title: Em atributo (sombra) (VML)
-description: Em atributo (sombra) (VML)
+title: No Atributo (Sombra)(VML)
+description: No Atributo (Sombra)(VML)
 ms.assetid: 234fe63e-8a4a-4067-9d05-a8990d1cee5c
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 83df69d8c90c99839f55836941746717a205d07a
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 6fda4d33fbd22d2a7913f13ae8ad874ba3240944f06303f020888aeaafaee88f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103917512"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118345847"
 ---
-# <a name="on-attribute-shadowvml"></a>Em atributo (sombra) (VML)
+# <a name="on-attribute-shadowvml"></a>No Atributo (Sombra)(VML)
 
-Este tópico descreve a VML, um recurso que foi preterido a partir do Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem de VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
+Este tópico descreve o VML, um recurso que foi preterido a partir Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem do VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
 
 > [!Note]  
-> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [conteúdo arquivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obter informações, recomendações e orientações sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
+> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [Conteúdo arquivado.](/previous-versions/windows/internet-explorer/ie-developer/) Para obter informações, recomendações e diretrizes sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center.](https://msdn.microsoft.com/ie/)
 
- 
+ 
 
-Determina se uma sombra será exibida. Leitura/gravação. **VgTriState**.
+Determina se uma sombra será exibida. Leitura/gravação. **VgTriState.**
 
 **Aplica-se a**
 
@@ -28,19 +28,19 @@ Determina se uma sombra será exibida. Leitura/gravação. **VgTriState**.
 
 **Sintaxe de marca**
 
-<v: *Element* em = " *expression* " >
+<v: *elemento* on=" *expressão* ">
 
 **Sintaxe do script**
 
-*elemento* . on = "*expression*"
+*elemento* .on="*expression*"
 
-*expressão* = de *elemento*. on
+*expressão* = *elemento*.on
 
 **Comentários**
 
-Se **for true**, a sombra será exibida. O valor padrão é **Falso**.
+Se **True**, a sombra será exibida. O valor padrão é **Falso**.
 
-*Atributo padrão da VML*
+*Atributo padrão VML*
 
 **Exemplo**
 
@@ -61,6 +61,6 @@ A sombra será exibida.
 
 
 
- 
+ 
 
- 
+ 

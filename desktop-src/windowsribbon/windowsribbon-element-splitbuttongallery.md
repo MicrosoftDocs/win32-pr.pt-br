@@ -3,7 +3,7 @@ title: Elemento SplitButtonGallery
 description: Representa um controle Dividir Galeria de Botões com um menu suspenso baseado em galeria.
 ms.assetid: 65b6af50-6d9a-4285-b2d9-26dfb904d0b8
 keywords:
-- Elemento SplitButtonGallery Da Faixa de Opções do Windows
+- Elemento SplitButtonGallery Windows Faixa de Opções
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: f5f8767135b9472acba333b1cdfa6ab102e9b7f4
-ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
+ms.openlocfilehash: c28c2f87a1d8fb165f02ad71c96b38bcbb381bb3590bd9bff98b3feb364044bc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111444827"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117850806"
 ---
 # <a name="splitbuttongallery-element"></a>Elemento SplitButtonGallery
 
@@ -182,17 +182,17 @@ Opcional.
 
 Pode ocorrer uma ou mais vezes para cada [**elemento ControlGroup**](windowsribbon-element-controlgroup.md), [**Group**](windowsribbon-element-group.md), [**MenuGroup**](windowsribbon-element-menugroup.md)ou [**SplitButton.**](windowsribbon-element-splitbutton.md)
 
-**SplitButtonGallery dá** suporte [aos modos de aplicativo](ribbon-applicationmodes.md).
+**SplitButtonGallery dá suporte** [a modos de aplicativo](ribbon-applicationmodes.md).
 
 [Interface do usuário \_ PKEY \_ BooleanValue](windowsribbon-reference-properties-uipkey-booleanvalue.md) é usado por um aplicativo para consultar o estado de alternância para o controle de botão de **um SplitButtonGallery**.
 
-A captura de tela a seguir ilustra o controle [Galeria](windowsribbon-controls-splitbuttongallery.md) de Botões divididos da Faixa de Opções Microsoft Paint para Windows 7.
+A captura de tela a seguir ilustra o controle [Galeria](windowsribbon-controls-splitbuttongallery.md) de Botões de Divisão da Faixa de Opções Microsoft Paint para Windows 7.
 
 ![captura de tela de um controle de galeria de botões divididos no Microsoft Paint para Windows 7.](images/controls/splitbuttongallery.png)
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo a seguir demonstra a marcação básica para a [Galeria de Botões divididos.](windowsribbon-controls-splitbuttongallery.md)
+O exemplo a seguir demonstra a marcação básica para a Galeria [de Botões divididos.](windowsribbon-controls-splitbuttongallery.md)
 
 Esta seção de código mostra as declarações de Comando **SplitButtonGallery,** com um Grupo associado que funciona como o contêiner pai para o elemento **SplitButtonGallery.** [](windowsribbon-element-group.md)
 
@@ -241,8 +241,8 @@ Esta seção de código mostra as declarações **de controle SplitButtonGallery
 ## <a name="element-information"></a>Informações do elemento
 
 
-- **Sistema mínimo com suporte**: Windows 7 
-- **Pode estar vazio**: não
+- **Sistema mínimo com suporte:** Windows 7 
+- **Pode estar vazio:** Não
 
 
 
@@ -250,16 +250,16 @@ Esta seção de código mostra as declarações **de controle SplitButtonGallery
 
 <dl> <dt>
 
-[Controle da Galeria de botões de divisão](windowsribbon-controls-splitbuttongallery.md)
+[Controle Dividir Galeria de Botões](windowsribbon-controls-splitbuttongallery.md)
 </dt> <dt>
 
 [Trabalhando com galerias](ribbon-controls-galleries.md)
 </dt> <dt>
 
-[**Setmodos**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setmodes)
+[**SetModes**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setmodes)
 </dt> <dt>
 
-[Exemplo de galeria](windowsribbon-gallerysample.md)
+[Exemplo da Galeria](windowsribbon-gallerysample.md)
 </dt> </dl>
 
  

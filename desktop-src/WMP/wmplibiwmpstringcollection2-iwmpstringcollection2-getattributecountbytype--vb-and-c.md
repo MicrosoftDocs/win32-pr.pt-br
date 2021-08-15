@@ -3,9 +3,9 @@ title: Método IWMPStringCollection2 getAttributeCountByType
 description: O método getAttributeCountByType retorna o número de atributos associados ao índice de coleção de cadeia de caracteres especificado, ao nome do atributo e ao idioma.
 ms.assetid: 30312039-3676-4322-b6f6-fb86098bf578
 keywords:
-- método getAttributeCountByType Windows Media Player
+- Windows Media Player do método getAttributeCountByType
 - método getAttributeCountByType Windows Media Player, interface IWMPStringCollection2
-- Interface IWMPStringCollection2 Windows Media Player, método getAttributeCountByType
+- Windows Media Player de interface IWMPStringCollection2, método getAttributeCountByType
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e9bb60fdd843fb3f45b6e4e3aff444a8a915fa0f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c236d03cad0612d8306b8ccde370136cb9b31acca82e0aa52761ed56fb4b9bb3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105780246"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118330910"
 ---
 # <a name="iwmpstringcollection2getattributecountbytype-method"></a>Método IWMPStringCollection2:: getAttributeCountByType
 
@@ -78,7 +78,7 @@ O **System. String** que é o nome do idioma. Se o valor for definido como NULL 
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O **System. Int32** que é a contagem.
 

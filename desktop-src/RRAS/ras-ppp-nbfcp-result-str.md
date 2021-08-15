@@ -1,9 +1,9 @@
 ---
-title: Estrutura de RAS_PPP_NBFCP_RESULT (Rassapi. h)
-description: A estrutura de resultado do NBFCP do RAS \_ PPP \_ \_ é usada para relatar o resultado de uma operação de projeção NBF (PPP NetBEUI Framer) para uma porta.
+title: RAS_PPP_NBFCP_RESULT estrutura (Rassapi.h)
+description: A estrutura RAS PPP NBFCP RESULT é usada para relatar o resultado de uma operação de projeção \_ \_ de PPP \_ NetBEUI Framer (NBF) para uma porta.
 ms.assetid: 670bf125-cad5-481f-89e4-858e636316bd
 keywords:
-- RAS da estrutura de RAS_PPP_NBFCP_RESULT
+- ras RAS_PPP_NBFCP_RESULT estrutura de RAS_PPP_NBFCP_RESULT
 topic_type:
 - apiref
 api_name:
@@ -14,18 +14,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ddcb1cfe28a72e390cedbcc35fa299dddbfb8634
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e415e6aea75dcf78d19d776e4df0a6edf704db473eacf0c8ddbb366ffbf65947
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104085662"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117789590"
 ---
-# <a name="ras_ppp_nbfcp_result-structure"></a>\_Estrutura de \_ resultado de NBFCP RAS PPP \_
+# <a name="ras_ppp_nbfcp_result-structure"></a>Estrutura RAS \_ PPP \_ NBFCP \_ RESULT
 
-\[A estrutura de **resultado do RAS \_ PPP \_ NBFCP \_** não tem suporte no Windows Vista.\]
+\[A **estrutura RAS PPP \_ \_ NBFCP \_ RESULT** não tem suporte desde Windows Vista.\]
 
-A estrutura de **\_ resultado do \_ NBFCP \_ do RAS PPP** é usada para relatar o resultado de uma operação de projeção NBF (PPP NetBEUI Framer) para uma porta.
+A **estrutura RAS PPP \_ \_ NBFCP \_ RESULT** é usada para relatar o resultado de uma operação de projeção de PPP NetBEUI Framer (NBF) para uma porta.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -45,24 +45,24 @@ typedef struct _RAS_PPP_NBFCP_RESULT {
 
 <dl> <dt>
 
-**dwError**
+**Dwerror**
 </dt> <dd>
 
-Indica os resultados da operação de projeção NBF. Um valor sem \_ erro indica êxito; nesse caso, o membro **wszWksta** contém o nome do computador remoto. Se a operação de projeção não foi bem-sucedida, **dwError** é um código de erro de Winerror. h ou Raserror. h.
+Indica os resultados da operação de projeção NBF. Um valor de NO \_ ERROR indica êxito; nesse caso, o membro **wszWksta** contém o nome do computador remoto. Se a operação de projeção não tiver sido bem-sucedida, **dwError** será um código de erro de Winerror.h ou Raserror.h.
 
 </dd> <dt>
 
 **dwNetBiosError**
 </dt> <dd>
 
-Ignorar este membro no servidor; Ele é relevante apenas no cliente.
+Ignore esse membro no servidor; ele é relevante apenas no cliente.
 
 </dd> <dt>
 
-**szName**
+**Szname**
 </dt> <dd>
 
-Ignorar este membro no servidor; Ele é relevante apenas no cliente.
+Ignore esse membro no servidor; ele é relevante apenas no cliente.
 
 </dd> <dt>
 
@@ -81,9 +81,9 @@ Uma cadeia de caracteres Unicode terminada em nulo que especifica o nome NetBIOS
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                           |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                 |
-| Fim do suporte do cliente<br/>    | Windows XP<br/>                                                                |
-| Fim do suporte do servidor<br/>    | Windows Server 2003<br/>                                                       |
-| parâmetro<br/>                   | <dl> <dt>Rassapi. h</dt> </dl> |
+| Fim do suporte ao cliente<br/>    | Windows XP<br/>                                                                |
+| Fim do suporte ao servidor<br/>    | Windows Server 2003<br/>                                                       |
+| Cabeçalho<br/>                   | <dl> <dt>Rassapi.h</dt> </dl> |
 
 
 
@@ -91,16 +91,16 @@ Uma cadeia de caracteres Unicode terminada em nulo que especifica o nome NetBIOS
 
 <dl> <dt>
 
-[Visão geral do serviço de acesso remoto (RAS)](about-remote-access-service.md)
+[Visão geral do RAS (Serviço de Acesso Remoto)](about-remote-access-service.md)
 </dt> <dt>
 
-[Estruturas de administração do servidor RAS](ras-server-administration-structures.md)
+[Estruturas de administração de servidor RAS](ras-server-administration-structures.md)
 </dt> <dt>
 
-[**\_Porta RAS \_ 1**](ras-port-1-str.md)
+[**PORTA RAS \_ \_ 1**](ras-port-1-str.md)
 </dt> <dt>
 
-[**\_resultado da \_ projeção do RAS PPP \_**](ras-ppp-projection-result-str.md)
+[**RESULTADO DA \_ \_ PROJEÇÃO RAS \_ PPP**](ras-ppp-projection-result-str.md)
 </dt> <dt>
 
 [**RasAdminPortGetInfo**](rasadminportgetinfo.md)

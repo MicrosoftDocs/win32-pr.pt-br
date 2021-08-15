@@ -1,9 +1,9 @@
 ---
-title: Estrutura de CD3DX12_PIPELINE_STATE_STREAM_FLAGS (D3dx12. h)
-description: Uma estrutura auxiliar usada para descrever os sinalizadores de estado do pipeline como um único objeto adequado para uma descrição de fluxo.
+title: CD3DX12_PIPELINE_STATE_STREAM_FLAGS (D3dx12.h)
+description: Uma estrutura auxiliar usada para descrever sinalizadores de estado de pipeline como um único objeto adequado para uma descrição de fluxo.
 ms.assetid: EF67936B-315A-4B3F-9E07-7CF4C5EE47CF
 keywords:
-- Estrutura de CD3DX12_PIPELINE_STATE_STREAM_FLAGS
+- CD3DX12_PIPELINE_STATE_STREAM_FLAGS estrutura
 topic_type:
 - apiref
 api_name:
@@ -22,9 +22,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118530703"
 ---
-# <a name="cd3dx12_pipeline_state_stream_flags-structure"></a>\_Estrutura de \_ sinalizadores de fluxo de estado do pipeline CD3DX12 \_ \_
+# <a name="cd3dx12_pipeline_state_stream_flags-structure"></a>Estrutura DE SINALIZADORES DE FLUXO \_ DE ESTADO DE PIPELINE CD3DX12 \_ \_ \_
 
-Uma estrutura auxiliar usada para descrever os sinalizadores de estado do pipeline como um único objeto adequado para uma descrição de fluxo.
+Uma estrutura auxiliar usada para descrever sinalizadores de estado de pipeline como um único objeto adequado para uma descrição de fluxo.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -44,37 +44,37 @@ struct CD3DX12_PIPELINE_STATE_STREAM_FLAGS {
 
 <dl> <dt>
 
-**\_Sinalizadores de \_ fluxo de estado do pipeline CD3DX12 \_ \_**
+**SINALIZADORES DE FLUXO DE ESTADO DO PIPELINE CD3DX12 \_ \_ \_ \_**
 </dt> <dd>
 
-Cria uma nova instância não inicializada de um CD3DX12 de \_ sinalizadores de \_ fluxo de estado de pipeline \_ \_ .
+Cria uma nova instância, não reinicializada, de um SINALIZADOR DE FLUXO DE ESTADO DE PIPELINE CD3DX12. \_ \_ \_ \_
 
 </dd> <dt>
 
-**\_ \_ \_ \_ Sinalizadores de fluxo de estado de pipeline CD3DX12 ( \_ sinalizadores de estado de pipeline D3D12 \_ \_ const &i)**
+**SINALIZADORES DE FLUXO DE ESTADO DE PIPELINE CD3DX12 \_ \_ \_ \_ (D3D12 \_ PIPELINE \_ STATE \_ FLAGS const &i)**
 </dt> <dd>
 
-Cria uma nova instância de um CD3DX12 \_ de fluxo de estado de pipeline \_ \_ \_ , inicializada com um tipo de subobjeto dos sinalizadores de tipo de subobjeto de **estado de \_ pipeline \_ \_ \_ \_ D3D12** e dados de subobjeto copiados de *i*, uma estrutura de [**\_ sinalizadores de \_ estado \_ de pipeline D3D12**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_pipeline_state_flags) .
+Cria uma nova instância de UM SINALIZADOR DE FLUXO DE ESTADO DE PIPELINE CD3DX12, inicializado com um tipo de subobjeto de SINALIZADORES DE TIPO DE SUBOBJETO DE ESTADO DE PIPELINE \_ D3D12 e dados de subobjeto \_ \_ \_ **\_ \_ \_ \_ \_ copiados** de *i*, uma estrutura [**D3D12 \_ PIPELINE \_ STATE \_ FLAGS.**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_pipeline_state_flags)
 
 </dd> <dt>
 
-**Operator = ( \_ sinalizadores de estado do pipeline D3D12 \_ \_ const& i)**
+**operator=(D3D12 \_ PIPELINE \_ STATE \_ FLAGS const& i)**
 </dt> <dd>
 
 Operador de atribuição de cópia.
 
 </dd> <dt>
 
-**D3D12 \_ do operador \_ \_ sinalizadores de estado do pipeline () const**
+**operador D3D12 \_ PIPELINE \_ STATE \_ FLAGS() const**
 </dt> <dd>
 
-Conversão implícita em uma estrutura de [**\_ sinalizadores de \_ estado \_ do pipeline D3D12**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_pipeline_state_flags) .
+Conversão implícita em uma [**estrutura D3D12 \_ PIPELINE STATE \_ \_ FLAGS.**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_pipeline_state_flags)
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-\_ \_ \_ \_ Os sinalizadores de fluxo de estado do pipeline CD3DX12 é uma especialização de typedef do modelo de [**\_ \_ \_ \_ subobjeto Stream do estado do pipeline CD3DX12**](cd3dx12-pipeline-state-stream-subobject.md) e é definido da seguinte maneira:
+OS SINALIZADORES DE FLUXO DE ESTADO DE PIPELINE CD3DX12 é uma especialização typedef do modelo \_ \_ \_ \_ [**\_ \_ \_ \_ SUBOBJECT DE**](cd3dx12-pipeline-state-stream-subobject.md) FLUXO DE ESTADO DO PIPELINE CD3DX12 e é definido da seguinte forma:
 
 
 ```C++
@@ -91,7 +91,7 @@ typedef CD3DX12_PIPELINE_STATE_STREAM_SUBOBJECT<D3D12_PIPELINE_STATE_FLAGS, D3D1
 
 | Requisito | Valor |
 |-------------------|-------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>D3dx12. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>D3dx12.h</dt> </dl> |
 
 
 
@@ -102,10 +102,10 @@ typedef CD3DX12_PIPELINE_STATE_STREAM_SUBOBJECT<D3D12_PIPELINE_STATE_FLAGS, D3D1
 [Estruturas auxiliares do D3D12](helper-structures-for-d3d12.md)
 </dt> <dt>
 
-[**Subobjeto de fluxo do estado do \_ pipeline CD3DX12 \_ \_ \_**](cd3dx12-pipeline-state-stream-subobject.md)
+[**CD3DX12 \_ PIPELINE \_ STATE \_ STREAM \_ SUBOBJECT**](cd3dx12-pipeline-state-stream-subobject.md)
 </dt> <dt>
 
-[**\_Tipo de \_ subobjeto de estado de pipeline D3D12 \_ \_**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_pipeline_state_subobject_type)
+[**TIPO DE \_ \_ \_ SUBOBJETO DE ESTADO DO PIPELINE D3D12 \_**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_pipeline_state_subobject_type)
 </dt> </dl>
 
  

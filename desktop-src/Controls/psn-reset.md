@@ -1,9 +1,9 @@
 ---
-title: PSN_RESET código de notificação (Prsht. h)
-description: Notifica uma página que a folha de propriedades está prestes a ser destruída. Esse código de notificação é enviado na forma de uma mensagem de notificação do WM \_ .
+title: PSN_RESET de notificação (Prsht.h)
+description: Notifica uma página de que a folha de propriedades está prestes a ser destruída. Esse código de notificação é enviado na forma de uma mensagem WM \_ NOTIFY.
 ms.assetid: 75448852-8a5e-41a7-92b6-00692e771a06
 keywords:
-- PSN_RESET de código de notificação controles do Windows
+- PSN_RESET código de notificação Windows Controles
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5642a5354d934b37ee58007a9fb260befe201edd
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: fb9f14b037d8757469497e644d870a887e6db36172b171f31b00d5615ff39532
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105748254"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118409806"
 ---
-# <a name="psn_reset-notification-code"></a>\_Código de notificação de redefinição de PSN
+# <a name="psn_reset-notification-code"></a>Código de \_ notificação PSN RESET
 
-Notifica uma página que a folha de propriedades está prestes a ser destruída. Esse código de notificação é enviado na forma de uma mensagem de [**\_ notificação do WM**](wm-notify.md) .
+Notifica uma página de que a folha de propriedades está prestes a ser destruída. Esse código de notificação é enviado na forma de uma mensagem [**WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -41,28 +41,28 @@ PSN_RESET
 *lParam* 
 </dt> <dd>
 
-Ponteiro para uma estrutura [**PSHNOTIFY**](/windows/desktop/api/Prsht/ns-prsht-pshnotify) que contém informações sobre o código de notificação.
+Ponteiro para uma [**estrutura PSHNOTIFY**](/windows/desktop/api/Prsht/ns-prsht-pshnotify) que contém informações sobre o código de notificação.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Sem valor de retorno.
 
 ## <a name="remarks"></a>Comentários
 
-Todas as alterações feitas desde o último código de notificação de [ \_ aplicação de PSN](psn-apply.md) são canceladas, exceto no caso de [**PSH \_ AEROWIZARD**](/windows/desktop/api/Prsht/ns-prsht-propsheetheadera_v2), que não oferece suporte a esse código de notificação.
+Todas as alterações feitas desde o último código de notificação [PSN \_ APPLY](psn-apply.md) são canceladas, exceto no caso do [**PSH \_ AEROWIZARD,**](/windows/desktop/api/Prsht/ns-prsht-propsheetheadera_v2)que não dá suporte a esse código de notificação.
 
-O membro **lParam** da estrutura [**PSHNOTIFY**](/windows/desktop/api/Prsht/ns-prsht-pshnotify) apontada por *lParam* será definido como **true** se o usuário clicar no botão **X** no canto superior direito da folha de propriedades. Será **false** se o usuário clicou no botão **Cancelar** . A estrutura **PSHNOTIFY** contém uma estrutura [**NMHDR**](/windows/desktop/api/richedit/ns-richedit-nmhdr) como seu primeiro membro, **HDR**. O membro **hwndFrom** dessa estrutura **NMHDR** contém o identificador para a folha de propriedades.
+O **membro lParam** da estrutura [**PSHNOTIFY**](/windows/desktop/api/Prsht/ns-prsht-pshnotify) apontada por *lParam* será definido como **TRUE** se o usuário clicou no **botão X** no canto superior direito da folha de propriedades. Será FALSE **se** o usuário clicou no **botão** Cancelar. A **estrutura PSHNOTIFY** contém uma [**estrutura NMHDR**](/windows/desktop/api/richedit/ns-richedit-nmhdr) como seu primeiro membro, **hdr**. O **membro hwndFrom** dessa estrutura **NMHDR** contém o handle para a folha de propriedades.
 
 Um aplicativo pode usar esse código de notificação como uma oportunidade para executar operações de limpeza.
 
 > [!Note]  
-> A folha de propriedades está no processo de manipulação da lista de páginas quando o código de \_ notificação de redefinição de PSN é enviado. Não tente adicionar, remover ou inserir páginas enquanto manipula este código de notificação. Isso terá resultados imprevisíveis.
+> A folha de propriedades está no processo de manipular a lista de páginas quando o código de notificação \_ PSN RESET é enviado. Não tente adicionar, remover ou inserir páginas ao manipular esse código de notificação. Isso terá resultados imprevisíveis.
 
  
 
-Não chame a função [**EndDialog**](/windows/desktop/api/winuser/nf-winuser-enddialog) ao processar este código de notificação.
+Não chame a [**função EndDialog**](/windows/desktop/api/winuser/nf-winuser-enddialog) ao processar esse código de notificação.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -70,9 +70,9 @@ Não chame a função [**EndDialog**](/windows/desktop/api/winuser/nf-winuser-en
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                     |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                               |
-| parâmetro<br/>                   | <dl> <dt>Prsht. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                     |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                               |
+| Cabeçalho<br/>                   | <dl> <dt>Prsht.h</dt> </dl> |
 
 
 

@@ -4,18 +4,18 @@ ms.assetid: 45d8b729-1e9d-40c0-8306-9a475262ac40
 title: Tipos de arquivo e associações de arquivo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0bf84bbf44475d32768d2359d3723952ada843c7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: dd096aa81970ee1baff27ae87368d26827fd8d0b46f6bdd7c69190d5ddfc56f7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104169447"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118459189"
 ---
 # <a name="file-types-and-file-associations"></a>Tipos de arquivo e associações de arquivo
 
 Esta seção sobre tipos de arquivo e associações de arquivo é organizada da seguinte maneira:
 
--   [registro de Aplicativo](app-registration.md)
+-   [Registro do aplicativo](app-registration.md)
 -   [Tipos de arquivo](fa-file-types.md)
 -   [Como escolher uma extensão de tipo de arquivo](how-to-choose-a-file-type-extension.md)
 -   [Como definir atributos de tipo de arquivo](how-to-define-file-type-attributes.md)
@@ -34,7 +34,7 @@ Esta seção sobre tipos de arquivo e associações de arquivo é organizada da 
 
 ## <a name="additional-resources"></a>Recursos adicionais
 
--   Definir o acesso do programa e padrões do computador (SPAD) é um painel de controle do Windows que permite aos usuários com privilégio administrativo definir um padrão de máquina e ocultar ou mostrar um aplicativo. Aplicativos de mídia, email, navegador, Messenger e Java são exemplos de aplicativos registrados em SPAD. Defina os programas padrão (SYDP) como um painel de controle do Windows, que funciona com privilégios limitados e permite que os usuários definam um padrão de usuário. Qualquer aplicativo pode ser registrado no SYDP. Para obter informações sobre o registro de aplicativo SPAD e SYDP, consulte [diretrizes para associações de arquivo e programas padrão](appguide-fa-defpro.md)e [definir o acesso do programa e padrões do computador (SPAD)](cpl-setprogramaccess.md).
+-   definir o acesso do programa e padrões do computador (SPAD) é um painel de controle Windows que permite aos usuários com privilégio administrativo definir um padrão de computador e ocultar ou mostrar um aplicativo. Aplicativos de mídia, email, navegador, Messenger e Java são exemplos de aplicativos registrados em SPAD. definir os programas padrão (SYDP) é um painel de controle Windows, que funciona com privilégios limitados e permite que os usuários definam um padrão de usuário. Qualquer aplicativo pode ser registrado no SYDP. Para obter informações sobre o registro de aplicativo SPAD e SYDP, consulte [diretrizes para associações de arquivo e programas padrão](appguide-fa-defpro.md)e [definir o acesso do programa e padrões do computador (SPAD)](cpl-setprogramaccess.md).
 -   Para obter informações conceituais relacionadas, consulte [visão geral de verbos e associações de arquivo](fa-verbs.md).
 -   Para criar um armazenamento de dados do Shell, consulte [implementando as interfaces de objeto de pasta básica](nse-implement.md).
 

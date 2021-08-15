@@ -1,37 +1,37 @@
 ---
-description: O exemplo de declarações automáticas aborda um cenário hipotético de um assessor de seguros.
+description: O exemplo declarações automáticas aborda um cenário hipotético para um avaliador de seguros.
 ms.assetid: bec4333a-62ca-4254-a39b-04bc2c556992
 title: Exemplo de formulário de declarações automáticas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 71c5ff78a3c38036ef9352660b4d7959e2ad87e5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2fe22545d60ad4116e2607f3fcf01feb94dbfecaa74bc591288e4d91b6d3d465
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104297027"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117857113"
 ---
 # <a name="auto-claims-form-sample"></a>Exemplo de formulário de declarações automáticas
 
-O exemplo de declarações automáticas aborda um cenário hipotético de um assessor de seguros. O trabalho do assessor exige que ele visite os clientes em sua residência ou empresa e insira suas informações de declaração em um formulário. Para aumentar a produtividade do assessor, seu departamento de ti desenvolve um aplicativo de Tablet que permite que ele Insira informações de declaração com rapidez e precisão por meio de dois controles de tinta: os controles [InkEdit](/previous-versions/ms835842(v=msdn.10)) e [InkPicture](/previous-versions/ms583740(v=vs.100)) .
+O exemplo declarações automáticas aborda um cenário hipotético para um avaliador de seguros. O trabalho do avaliador exige que ele ou ela visite com clientes em sua casa ou empresa e insira suas informações de declaração em um formulário. Para aumentar a produtividade do avaliador, seu departamento de IT desenvolve um aplicativo de tablet que permite que ele insira informações de declaração com rapidez e precisão por meio de dois controles de tinta: [inkEdit](/previous-versions/ms835842(v=msdn.10)) e [InkPicture.](/previous-versions/ms583740(v=vs.100))
 
-Neste exemplo, um controle [InkEdit](/previous-versions/ms835842(v=msdn.10)) é usado para cada campo de entrada de texto. Um usuário insere as informações relevantes sobre uma apólice de seguro e veículo nesses campos com uma caneta. O controle [InkPicture](/previous-versions/ms583740(v=vs.100)) é usado para adicionar tinta em uma imagem do automóvel para realçar áreas danificadas do automóvel. O exemplo de declarações automáticas está disponível para \# o C e o Microsoft Visual Basic .net. Este tópico descreve o Visual Basic .NET.
+Neste exemplo, um controle [InkEdit](/previous-versions/ms835842(v=msdn.10)) é usado para cada campo de entrada de texto. Um usuário ins muita informação relevante sobre uma política de seguro e um veículo nesses campos com uma caneta. O [controle InkPicture](/previous-versions/ms583740(v=vs.100)) é usado para adicionar tinta sobre uma imagem de automóvel para realçar áreas danificadas do automóvel. O exemplo de Declarações Automáticas está disponível para C \# e Microsoft Visual Basic .NET. Este tópico descreve o Visual Basic .NET.
 
-A classe autodeclarations é definida como uma subclasse de [System. Windows. Forms. Form](/dotnet/api/system.windows.forms.form?view=netcore-3.1) , e uma classe aninhada é definida para criar e gerenciar camadas de tinta para diferentes tipos de danos. Quatro manipuladores de eventos são definidos para executar as seguintes tarefas:
+A Classe AutoClaims é definida como uma subclasse de [System.Windows. Forms.Form](/dotnet/api/system.windows.forms.form?view=netcore-3.1) e uma classe aninhada é definida para criar e gerenciar camadas de tinta para diferentes tipos de danos. Quatro manipuladores de eventos são definidos para executar as seguintes tarefas:
 
--   Inicializando as camadas de formulário e de tinta.
--   Redesenhando o controle [InkPicture](/previous-versions/ms583740(v=vs.100)) .
--   Selecionando uma camada de tinta na caixa de listagem.
+-   Inicializando as camadas de formulário e tinta.
+-   Redesenhar o [controle InkPicture.](/previous-versions/ms583740(v=vs.100))
+-   Selecionando uma camada de tinta por meio da caixa de listagem.
 -   Alterando a visibilidade de uma camada de tinta.
 
 > [!Note]  
-> As versões deste exemplo estão disponíveis em C \# e Visual Basic .net. A versão discutida nesta seção é Visual Basic .NET. Os conceitos são os mesmos entre as versões.
+> As versões deste exemplo estão disponíveis em C \# e Visual Basic .NET. A versão discutida nesta seção é Visual Basic .NET. Os conceitos são os mesmos entre versões.
 
  
 
-## <a name="defining-the-form-and-ink-layers"></a>Definindo as camadas de formulário e de tinta
+## <a name="defining-the-form-and-ink-layers"></a>Definindo as camadas de formulário e tinta
 
-Você precisa importar o namespace [Microsoft. Ink](/previous-versions/ms826516(v=msdn.10)) :
+Você precisa importar o namespace [Microsoft.Ink:](/previous-versions/ms826516(v=msdn.10))
 
 
 ```VB
@@ -48,7 +48,7 @@ using Microsoft.Ink;
 
 
 
-Em seguida, na classe autodeclarations, uma classe aninhada `InkLayer` é definida e uma matriz de quatro `InkLayer` objetos é declarada. (InkLayer contém um objeto [Microsoft. Ink. Ink](/previous-versions/ms583670(v=vs.100)) para armazenar a tinta e valores de [System. Drawing. Color](/dotnet/api/system.drawing.color?view=netcore-3.1) e **booliano** para armazenar a cor e o estado oculto da camada.) Um quinto objeto Ink é declarado para lidar com a tinta para o [InkPicture](/previous-versions/ms583740(v=vs.100)) quando todas as camadas de tinta estiverem ocultas.
+Em seguida, na Classe AutoClaims, uma classe aninhada é definida e uma `InkLayer` matriz de quatro objetos é `InkLayer` declarada. (InkLayer contém um objeto [Microsoft.Ink.Ink](/previous-versions/ms583670(v=vs.100)) para armazenar tinta e os valores [System.Drawing.Color](/dotnet/api/system.drawing.color?view=netcore-3.1) e **Boolean** para armazenar a cor e o estado oculto da camada.) Um quinto objeto Ink é declarado para manipular tinta para [o InkPicture](/previous-versions/ms583740(v=vs.100)) quando todas as camadas de tinta estão ocultas.
 
 
 ```VB
@@ -86,11 +86,11 @@ bool selectedHidden = false;
 
 
 
-Cada camada tem seu próprio objeto de [tinta](/previous-versions/ms583670(v=vs.100)) . Há quatro áreas discretas de interesse no formulário de declaração (corpo, Windows, pneus e faróis), de modo que quatro objetos InkLayer são usados. Um usuário pode exibir qualquer combinação de camadas ao mesmo tempo.
+Cada camada tem seu próprio [objeto Ink.](/previous-versions/ms583670(v=vs.100)) Há quatro áreas discretas de interesse no formulário de declaração (corpo, janelas, roupas e luzes), portanto, quatro objetos InkLayer são usados. Um usuário pode exibir qualquer combinação de camadas ao mesmo tempo.
 
-## <a name="initializing-the-form-and-ink-layers"></a>Inicializando o formulário e as camadas de tinta
+## <a name="initializing-the-form-and-ink-layers"></a>Inicializando as camadas de formulário e tinta
 
-O `Load` manipulador de eventos Inicializa o objeto de [tinta](/previous-versions/ms583670(v=vs.100)) e os quatro `InkLayer` objetos.
+O `Load` manipulador de eventos inicializa o objeto [Ink](/previous-versions/ms583670(v=vs.100)) e os quatro `InkLayer` objetos.
 
 
 ```VB
@@ -123,7 +123,7 @@ inkLayers[3] = new InkLayer(new Ink(), Color.Aqua, false);
 
 
 
-Em seguida, selecione a primeira entrada (corpo) na caixa de listagem.
+Em seguida, selecione a primeira entrada (Corpo) na caixa de listagem.
 
 
 ```VB
@@ -141,7 +141,7 @@ lstAnnotationLayer.SelectedIndex = 0;
 
 
 
-Por fim, defina a cor da tinta para o controle [InkPicture](/previous-versions/ms583740(v=vs.100)) para a entrada da caixa de listagem selecionada no momento.
+Por fim, de definir a cor da tinta para [o controle InkPicture](/previous-versions/ms583740(v=vs.100)) como a entrada da caixa de listagem selecionada no momento.
 
 
 ```VB
@@ -158,9 +158,9 @@ inkPictVehicle.DefaultDrawingAttributes.Color = inkLayers[lstAnnotationLayer.Sel
 
 
 
-## <a name="redrawing-the-inkpicture-control"></a>Redesenhando o controle InkPicture
+## <a name="redrawing-the-inkpicture-control"></a>Redesenhar o controle InkPicture
 
-No manipulador de eventos de [pintura](/dotnet/api/system.windows.forms.control.paint?view=netcore-3.1) herdado do controle [InkPicture](/previous-versions/ms583740(v=vs.100)) , as camadas de tinta são verificadas para determinar quais estão ocultas. Se uma camada não estiver oculta, o procedimento de evento a exibirá usando o método [draw](/previous-versions/ms828488(v=msdn.10)) da propriedade [Renderer](/previous-versions/ms582196(v=vs.100)) . Se você examinar o pesquisador de objetos, verá que a propriedade Microsoft. Ink. InkPicture. Renderer é definida como um objeto [Microsoft. Ink. Renderer](/previous-versions/ms828481(v=msdn.10)) :
+No manipulador [de eventos herdado](/previous-versions/ms583740(v=vs.100)) do Controle InkPicture Paint, as camadas de tinta são verificadas para determinar quais estão ocultas. [](/dotnet/api/system.windows.forms.control.paint?view=netcore-3.1) Se uma camada não estiver oculta, o procedimento de evento a exibirá usando o método Draw da [propriedade](/previous-versions/ms828488(v=msdn.10)) [Renderer.](/previous-versions/ms582196(v=vs.100)) Se você procurar no Pesquisador de Objetos, verá que a propriedade Microsoft.Ink.InkPicture.Renderer está definida como um objeto [Microsoft.Ink.Renderer:](/previous-versions/ms828481(v=msdn.10))
 
 
 ```VB
@@ -199,9 +199,9 @@ private void inkPictVehicle_Paint(object sender, System.Windows.Forms.PaintEvent
 
 
 
-## <a name="selecting-an-ink-layer-through-the-list-box"></a>Selecionando uma camada de tinta na caixa de listagem
+## <a name="selecting-an-ink-layer-through-the-list-box"></a>Selecionando uma camada de tinta por meio da caixa de listagem
 
-Quando o usuário seleciona um item na caixa de listagem, o manipulador de eventos [SelectedIndexChanged](/dotnet/api/system.windows.forms.listbox.selectedindexchanged?view=netcore-3.1) primeiro verifica se a seleção foi alterada e se o controle [InkPicture](/previous-versions/ms583740(v=vs.100)) não está coletando tinta no momento. Em seguida, ele define a cor da tinta do controle InkPicture como a cor apropriada para a camada de tinta selecionada. Além disso, ele atualiza a caixa de seleção Ocultar camada para refletir o status oculto da camada de tinta selecionada. Por fim, o método de [atualização](/dotnet/api/system.windows.forms.control.refresh?view=netcore-3.1) herdado do controle InkPicture é usado para exibir apenas as camadas desejadas dentro do controle.
+Quando o usuário seleciona um item na caixa de listagem, o manipulador de eventos [SelectedIndexChanged](/dotnet/api/system.windows.forms.listbox.selectedindexchanged?view=netcore-3.1) primeiro verifica se a seleção foi alterada e se o controle [InkPicture](/previous-versions/ms583740(v=vs.100)) não está coletando tinta no momento. Em seguida, ele define a cor da tinta do controle InkPicture para a cor apropriada para a camada de tinta selecionada. Além disso, ele atualiza a caixa de seleção Ocultar Camada para refletir o status oculto da camada de tinta selecionada. Por fim, o método Refresh [](/dotnet/api/system.windows.forms.control.refresh?view=netcore-3.1) herdado do controle InkPicture é usado para exibir apenas as camadas desejadas dentro do controle .
 
 
 ```VB
@@ -284,11 +284,11 @@ private void lstAnnotationLayer_SelectedIndexChanged(object sender, System.Event
 
 ## <a name="changing-the-visibility-of-an-ink-layer"></a>Alterando a visibilidade de uma camada de tinta
 
-O `CheckedChanged` manipulador de eventos primeiro verifica se a seleção foi alterada e se o controle [InkPicture](/previous-versions/ms583740(v=vs.100)) não está coletando tinta no momento. Em seguida, ele atualiza o status oculto da camada de tinta selecionada, define o InkEnabled do controle InkPicture como **false**,.
+O manipulador de eventos primeiro verifica se a seleção foi alterada e se o `CheckedChanged` controle [InkPicture](/previous-versions/ms583740(v=vs.100)) não está coletando tinta no momento. Em seguida, ele atualiza o status oculto da camada de tinta selecionada, define InkEnabled do controle InkPicture como **FALSE**, .
 
-Em seguida, a propriedade InkEnabled do controle InkPicture é definida como **false** antes de atualizar sua propriedade Ink.
+Em seguida, a propriedade InkEnabled do controle InkPicture é definida como **FALSE** antes de atualizar sua propriedade Ink.
 
-Por fim, o controle [InkPicture](/previous-versions/ms583740(v=vs.100)) é habilitado ou desabilitado para a parte específica do veículo com base em se a caixa de seleção Ocultar camada está marcada e o método de [atualização](/dotnet/api/system.windows.forms.control.refresh?view=netcore-3.1) do controle InkPicture é usado para exibir apenas as camadas desejadas dentro do controle.
+Por fim, o controle [InkPicture](/previous-versions/ms583740(v=vs.100)) é habilitado ou desabilitado para a parte específica do veículo com base [](/dotnet/api/system.windows.forms.control.refresh?view=netcore-3.1) em se a caixa de seleção Ocultar Camada está marcada e o método Refresh do controle InkPicture é usado para exibir apenas as camadas desejadas dentro do controle.
 
 
 ```VB
@@ -373,13 +373,13 @@ private void chHideLayer_CheckedChanged(object sender, System.EventArgs e)
 
 ## <a name="closing-the-form"></a>Fechando o formulário
 
-No código gerado pelo Windows Form Designer, os controles [InkEdit](/previous-versions/ms835842(v=msdn.10)) e [InkPicture](/previous-versions/ms583740(v=vs.100)) são adicionados à lista de componentes do formulário quando o formulário é inicializado. Quando o formulário é fechado, os controles InkEdit e InkPicture são descartados, bem como os outros componentes do formulário, pelo método [Dispose](/previous-versions/dotnet/netframework-3.5/ms571303(v=vs.90)) do formulário. O método Dispose do formulário também descarta os objetos de [tinta](/previous-versions/ms583670(v=vs.100)) criados para o formulário.
+No código gerado Windows Designer de Formulário, os controles [InkEdit](/previous-versions/ms835842(v=msdn.10)) e [InkPicture](/previous-versions/ms583740(v=vs.100)) são adicionados à lista de componentes do formulário quando o formulário é inicializado. Quando o formulário é fechado, os controles InkEdit e InkPicture são descartados, bem como os outros componentes do formulário, pelo método [Dispose do](/previous-versions/dotnet/netframework-3.5/ms571303(v=vs.90)) formulário. O método Dispose do formulário também descarta os objetos [Ink](/previous-versions/ms583670(v=vs.100)) criados para o formulário.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[Microsoft. Ink. Ink](/previous-versions/ms583670(v=vs.100))
+[Microsoft.Ink.Ink](/previous-versions/ms583670(v=vs.100))
 </dt> <dt>
 
 [Controle InkPicture](inkpicture-control.md)

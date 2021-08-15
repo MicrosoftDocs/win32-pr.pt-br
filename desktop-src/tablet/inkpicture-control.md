@@ -13,11 +13,11 @@ ms.locfileid: "118451095"
 ---
 # <a name="inkpicture-control"></a>Controle InkPicture
 
-O [controle InkPicture](inkpicture-control-reference.md) permite que você coloque uma imagem (formato .jpg, .bmp, .png ou .gif) em um aplicativo ao que os usuários podem adicionar tinta. Ele destina-se a cenários em que a tinta não precisa ser reconhecida como texto, mas é armazenada como tinta.
+O [controle InkPicture](inkpicture-control-reference.md) permite que você coloque uma imagem (.jpg, .bmp, .png ou formato .gif) em um aplicativo ao que os usuários podem adicionar tinta. Ele destina-se a cenários em que a tinta não precisa ser reconhecida como texto, mas é armazenada como tinta.
 
 Os usuários adicionam tinta a uma camada transparente usando uma caneta. Os usuários podem rea tamanho de [uma janela inkPicture](inkpicture-control-reference.md) sem perder nenhuma informação de tinta, mesmo que a tinta seja cortada ao reacortar.
 
-O [controle InkPicture inclui](inkpicture-control-reference.md) suporte básico à impressão; no entanto, cabe a você implementar a visualização de impressão ou outros recursos avançados de impressão.
+O [controle InkPicture inclui](inkpicture-control-reference.md) suporte básico à impressão; no entanto, cabe a você implementar a visualização de impressão ou outras funcionalidades avançadas de impressão.
 
 A implementação gerenciada (.NET Framework) [do InkPicture](/previous-versions/ms583740(v=vs.100)) herda da [classe PictureBox.](/dotnet/api/system.windows.forms.picturebox?view=netcore-3.1)
 

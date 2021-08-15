@@ -4,16 +4,16 @@ description: IAgentPropertySheet SetPage
 ms.assetid: 52451a45-4f05-4209-ac3a-b4f2d90b3e74
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0b84f9b9d5f74170644488cc2049376ecf409997
-ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
+ms.openlocfilehash: bf67c3ecb10ec5a8372a00e11d356e4b050b50be4a0563d9c4ebeefcd8040f1c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113120741"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118476786"
 ---
-# <a name="iagentpropertysheetsetpage"></a>IAgentPropertySheet:: SetPage
+# <a name="iagentpropertysheetsetpage"></a>IAgentPropertySheet::SetPage
 
-\[O Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
+\[O Microsoft Agent foi preterido a partir Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
 
 ``` syntax
 HRESULT SetPage(
@@ -36,9 +36,9 @@ Um BSTR que define a página atual da propriedade. O parâmetro pode ser um dos 
 
 |                 | Descrição            |
 |-----------------|------------------------|
-| **Palestra**    | A página de entrada de fala. |
-| **Der**    | A página saída.       |
-| **Internacionais** | A página de direitos autorais.    |
+| **"Fala"**    | A página Entrada de Fala. |
+| **"Saída"**    | A página Saída.       |
+| **"Copyright"** | A página Direitos Autorais.    |
 
 
 
@@ -48,7 +48,7 @@ Um BSTR que define a página atual da propriedade. O parâmetro pode ser um dos 
 
 ## <a name="see-also"></a>Consulte Também
 
-[**IAgentPropertySheet:: GetPage**](iagentpropertysheet--getpage.md)
+[**IAgentPropertySheet::GetPage**](iagentpropertysheet--getpage.md)
 
 
  

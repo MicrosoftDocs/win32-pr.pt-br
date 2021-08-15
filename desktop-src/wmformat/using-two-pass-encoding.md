@@ -1,36 +1,36 @@
 ---
-title: Usando a codificação Two-Pass (SDK do Windows Media Format 11)
-description: Usando a codificação Two-Pass
+title: Usando Two-Pass codificação (SDK Windows Media Format 11)
+description: Usando Two-Pass codificação
 ms.assetid: 55fc768b-15f0-4236-ad0d-3792ccaa9b4f
 keywords:
-- ASF (Advanced Systems Format), codificação de duas passagens
-- ASF (formato de sistemas avançados), codificação de duas passagens
-- codificação de dois passos, sobre
-- 2-passar codificação, sobre
-- codecs, codificação em duas passagens
-- codificação de duas passagens, interface IWMWriterPreprocess
-- 2-passar codificação, interface IWMWriterPreprocess
+- ASF (Advanced Systems Format), codificação de duas passs
+- ASF (Formato de Sistemas Avançados), codificação de duas passs
+- codificação de duas passs, sobre
+- Codificação de duas passs, sobre
+- codecs, codificação de duas passs
+- codificação de duas passs, interface IWMWriterPreprocess
+- Codificação de duas passs, interface IWMWriterPreprocess
 - IWMWriterPreprocess
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1c3794856f47c1656cc53006268c41a063cdde96
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: fd0683af636197b3f8116fca4dea85ce15609d2c99b0d9e0c11dfe0a2662a424
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "104499227"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117653831"
 ---
-# <a name="using-two-pass-encoding-windows-media-format-11-sdk"></a>Usando a codificação Two-Pass (SDK do Windows Media Format 11)
+# <a name="using-two-pass-encoding-windows-media-format-11-sdk"></a>Usando Two-Pass codificação (SDK Windows Media Format 11)
 
-Alguns codecs dão suporte à codificação de duas passagens para determinados formatos. Em alguns casos, um codec requer que um formato especificado seja codificado usando duas passagens. Quando a codificação de duas passagens é usada, você envia os exemplos do fluxo para o codec antes da passagem de codificação. O codec analisa os exemplos e configura a passagem de codificação com base na análise. Isso resulta em um arquivo codificado com mais eficiência.
+Alguns codecs são suportados com codificação de duas passs para determinados formatos. Em alguns casos, um codec requer que um formato especificado seja codificado usando duas passagens. Quando a codificação de duas passs é usada, você envia os exemplos do fluxo para o codec antes da passagem da codificação. O codec analisa os exemplos e configura a passagem de codificação com base na análise. Isso resulta em um arquivo codificado com mais eficiência.
 
-Para determinar se um codec dá suporte à codificação de uma passagem, ou de duas passagens, ou ambos, para um determinado formato, chame [**IWMCodecInfo3:: SetCodecEnumerationSetting**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmcodecinfo3-setcodecenumerationsetting) com g \_ wszNumPasses e o valor apropriado e, em seguida, enumere os formatos para ver se aquele que você deseja é retornado. Para obter mais informações sobre os codecs de mídia do Windows que dão suporte à codificação de duas passagens, consulte [escolhendo um método de codificação](choosing-an-encoding-method.md).
+Para determinar se um codec dá suporte à codificação de uma passagem ou duas passagens ou ambos, para um determinado formato, chame [**IWMCodecInfo3::SetCodecEnumerationSetting**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmcodecinfo3-setcodecenumerationsetting) com g wszNumPasses e o valor apropriado e, em seguida, enumere os formatos para ver se o que você deseja é \_ retornado. Para obter mais informações sobre Windows codecs de mídia que suportam codificação de duas passs, consulte Escolhendo um método [de codificação](choosing-an-encoding-method.md).
 
-Você pode usar codificação de duas passagens com o SDK de formato de mídia do Windows chamando métodos da interface [**IWMWriterPreprocess**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmwriterpreprocess) .
+Você pode usar a codificação de duas passões com o SDK Windows Media Format chamando métodos da interface [**IWMWriterPreprocess.**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmwriterpreprocess)
 
-Nos casos em que a codificação de duas passagens é necessária para um determinado formato, mas o aplicativo não executa uma passagem de pré-processamento, a primeira chamada para [**WriteSample**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmwriter-writesample) falhará com o NS \_ E o número de \_ \_ passagens inválido \_ .
+Nos casos em que a codificação de duas passagens é necessária para um formato específico, mas o aplicativo não executa uma passagem de pré-processamento, a primeira chamada para [**WriteSample**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmwriter-writesample) falhará com NS \_ E INVALID NUM \_ \_ \_ PASSES.
 
-A função de exemplo a seguir demonstra como executar a codificação de duas passagens. Essa função é chamada depois que o gravador tiver sido definido com um perfil e iniciado. Para obter mais informações sobre como usar esse código, consulte [usando os exemplos de código](using-the-code-examples.md).
+A função de exemplo a seguir demonstra como executar a codificação de duas passões. Essa função é chamada depois que o autor é definido com um perfil e iniciado. Para obter mais informações sobre como usar esse código, [consulte Usando os exemplos de código](using-the-code-examples.md).
 
 
 ```C++
@@ -90,7 +90,7 @@ Exit:
 
 <dl> <dt>
 
-[**Gravando arquivos ASF**](writing-asf-files.md)
+[**Escrevendo arquivos ASF**](writing-asf-files.md)
 </dt> </dl>
 
  

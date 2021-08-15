@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5a648ffda41c472426282a2d6feb4a975628e190
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 93dd8e80bf600ed72e6095d089889a886388cbd128b6bc377df0928ea57865bd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105757002"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118360477"
 ---
 # <a name="glcolor4fv-function"></a>função glColor4fv
 
@@ -40,7 +40,7 @@ void WINAPI glColor4fv(
 
 <dl> <dt>
 
-*l* 
+*v* 
 </dt> <dd>
 
 Um ponteiro para uma matriz que contém valores vermelho, verde, azul e alfa.

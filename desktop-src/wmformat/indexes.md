@@ -3,16 +3,16 @@ title: Índices
 description: Índices
 ms.assetid: 54c694f6-3c10-4d7c-bcd1-f2b17d652e8e
 keywords:
-- SDK do Windows Media Format, índices
+- Windows SDK do formato de mídia, índices
 - ASF (Advanced Systems Format), índices
 - ASF (formato de sistemas avançados), índices
-- SDK do Windows Media Format, índices temporais
+- Windows SDK do formato de mídia, índices temporais
 - ASF (Advanced Systems Format), índices temporais
 - ASF (formato de sistemas avançados), índices temporais
-- SDK do Windows Media Format, índices baseados em quadros
+- Windows SDK do formato de mídia, índices baseados em quadros
 - ASF (Advanced Systems Format), índices baseados em quadros
 - ASF (formato de sistemas avançados), índices baseados em quadros
-- SDK do Windows Media Format, códigos de tempo SMPTE
+- Windows SDK do formato de mídia, códigos de tempo SMPTE
 - Formato de sistema avançado (ASF), códigos de tempo SMPTE
 - ASF (formato de sistemas avançados), códigos de tempo SMPTE
 - índices, sobre
@@ -21,18 +21,18 @@ keywords:
 - Códigos de tempo SMPTE, índices
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5d2e5a194f9c495720cbc40ccdb192509723eee0
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 71af891ba2986d3ece1eb2d4cc7eb7ff4086c06eee1f60eabb2210bdc8b6bacd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103822908"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118702479"
 ---
 # <a name="indexes"></a>Índices
 
 Um requisito comum para aplicativos que lêem arquivos de mídia digital é a capacidade de buscar um ponto específico no conteúdo. A busca pode ser difícil porque não há nenhuma garantia de que os vários fluxos em um arquivo tenham amostras com horas de início simultâneas. Esse problema é resolvido com o uso de *índices*. Um índice é um objeto em um arquivo ASF que equivale a exemplos de vídeo com seus tempos de apresentação. Nenhum índice é necessário para fluxos de áudio porque os dados de áudio estão mais bem conectados com o tempo de apresentação do que os dados de vídeo.
 
-O objeto indexador do Windows Media Format SDK pode criar três tipos diferentes de índices: índices temporais, índices baseados em quadros e índices de código de tempo SMPTE.
+o objeto indexador do SDK do formato de mídia Windows pode criar três tipos diferentes de índices: índices temporais, índices baseados em quadros e índices de código de tempo SMPTE.
 
 Os índices temporais são o tipo mais comum. Eles simplesmente correspondem a exemplos de vídeo com os tempos de apresentação correspondentes.
 
@@ -58,9 +58,9 @@ Um arquivo ASF pode conter um índice de cada tipo para cada fluxo de vídeo que
 [**Lendo arquivos com o leitor síncrono**](reading-files-with-the-synchronous-reader.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

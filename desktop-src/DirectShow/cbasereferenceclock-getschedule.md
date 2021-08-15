@@ -1,7 +1,7 @@
 ---
-description: O método getschedule recupera um ponteiro para o objeto de agendamento do relógio.
+description: O método GetSchedule recupera um ponteiro para o objeto de agendamento do relógio.
 ms.assetid: ae509f16-d85f-4365-8cf2-c6585cbbdc3d
-title: Método CBaseReferenceClock. getschedule (Refclock. h)
+title: Método CBaseReferenceClock.GetSchedule (Refclock.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: a37cdb3e18f3ab71b144af071233aee5a6a3a93d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6be5c4ed76573428967138682b478a54859e4ca97213f132ff805a0e83be0b50
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105752509"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117822832"
 ---
-# <a name="cbasereferenceclockgetschedule-method"></a>Método CBaseReferenceClock. getschedule
+# <a name="cbasereferenceclockgetschedule-method"></a>Método CBaseReferenceClock.GetSchedule
 
 O `GetSchedule` método recupera um ponteiro para o objeto de agendamento do relógio.
 
@@ -40,9 +40,9 @@ CAMSchedule* GetSchedule();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna a variável de membro [**CBaseReferenceClock:: m \_ pSchedule**](cbasereferenceclock-m-pschedule.md) .
+Retorna a [**variável de membro CBaseReferenceClock::m \_ pSchedule.**](cbasereferenceclock-m-pschedule.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,8 +50,8 @@ Retorna a variável de membro [**CBaseReferenceClock:: m \_ pSchedule**](cbasere
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Refclock. h (incluir fluxos. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Refclock.h (incluir Fluxos.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a949edbdad2f25d748e5af64ebe408c79c7372b9
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: bd36fc09ff8161ba8fb72d3b55b9351b0a7d2a6bd3f3f11a71c15a8d9422f6c4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105811890"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117816496"
 ---
 # <a name="idwritefontfacegetgdicompatibleglyphmetrics-method"></a>Método IDWriteFontFace:: GetGdiCompatibleGlyphMetrics
 
@@ -121,7 +121,7 @@ Um valor BOOL que indica se a fonte está sendo usada em uma execução lateral.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **HRESULT**
 
