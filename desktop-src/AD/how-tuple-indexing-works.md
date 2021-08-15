@@ -9,12 +9,12 @@ keywords:
 - Active Directory, Active Directory de otimização da pesquisa
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6607b9a50ef0ec367bea95f82afd89aa39fbf5b1
-ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.openlocfilehash: 5b9d15bad8de15e4f559123d2d3cb3b6b9ec6446328e6ed4c4c52cf18355d634
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "103640396"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118188029"
 ---
 # <a name="how-tuple-indexing-works"></a>Como funciona a indexação de tupla
 
@@ -44,12 +44,12 @@ Os índices de tupla funcionam dividindo uma cadeia de caracteres em *tuplas*. P
 > [!Note]  
 > O diretório será interrompido em 32767 caracteres ao expandir uma cadeia de caracteres para indexação de tupla.
 
- 
+ 
 
 Um índice de tupla conterá uma entrada para cada uma dessas tuplas. Portanto, se um usuário procurar `*cto*` , o servidor de Active Directory pesquisará todas as correspondências para "CTO" no índice e, nesse caso, localizará um ponteiro de volta para o registro que tinha um atributo (tupla indexada) com um valor de "Directory".
 
 Se a cadeia de caracteres de pesquisa medial ( `*cto*` no exemplo anterior) for específica o suficiente, a pesquisa será bastante eficiente, pois reduz consideravelmente o número de objetos que o servidor de Active Directory deve inspecionar para executar a consulta.
 
- 
+ 
 
- 
+ 

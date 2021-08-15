@@ -1,21 +1,21 @@
 ---
-description: Emitindo o comando GetNumObjects
+description: Emanando o comando GetNumObjects
 ms.assetid: d06690e4-f592-4b17-a5f1-baec2accc8dd
-title: Emitindo o comando GetNumObjects
+title: Emanando o comando GetNumObjects
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bd68e571b6d7003262709050d442c64a4d2461fd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e3ece98e409ab4ee2774c4efdba0c84c06c60e373b5ed15aee77f5dee65d9101
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105762400"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118194006"
 ---
-# <a name="issuing-the-getnumobjects-command"></a>Emitindo o comando GetNumObjects
+# <a name="issuing-the-getnumobjects-command"></a>Emanando o comando GetNumObjects
 
-O exemplo nesta seção invoca o comando **GetNumObjects** MTP. (Para obter uma descrição completa desse comando e de seus parâmetros, consulte a [especificação do MTP](https://www.usb.org/sites/default/files/MTPv1_1.zip).)
+O exemplo nesta seção invoca o **comando GetNumObjects** MTP. (Para uma descrição completa desse comando e seus parâmetros, consulte a [especificação MTP](https://www.usb.org/sites/default/files/MTPv1_1.zip).)
 
-Antes de invocar este comando, você deve primeiro configurar os parâmetros de comando.
+Antes de invocar esse comando, primeiro você deve configurar os parâmetros de comando.
 
 
 ```
@@ -109,7 +109,7 @@ HRESULT SendGetNumObjects(IPortableDevice* pDevice)
 
 
 
-Depois que os parâmetros são configurados, o aplicativo invoca o comando.
+Depois que os parâmetros são definidos, o aplicativo invoca o comando .
 
 
 ```C++
@@ -123,7 +123,7 @@ Depois que os parâmetros são configurados, o aplicativo invoca o comando.
 
 
 
-Depois que o aplicativo chama o comando, ele processa a resposta do driver MTP.
+Depois que o aplicativo invoca o comando , ele processa a resposta do driver MTP.
 
 
 ```C++
@@ -187,7 +187,7 @@ Depois que o aplicativo chama o comando, ele processa a resposta do driver MTP.
 
 <dl> <dt>
 
-[Suporte a extensões de MTP](supporting-mtp-extensions.md)
+[Suporte a extensões MTP](supporting-mtp-extensions.md)
 </dt> </dl>
 
  

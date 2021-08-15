@@ -4,12 +4,12 @@ ms.assetid: EBEFED1F-D0B8-4C7E-B1FB-CDE3BDFD99AA
 title: Codificador de áudio MPEG-2
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2454e542ba59f4955668bd1fcefbf5dbc0f11551
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 935b6438c79e9bf78a230f707f8930f859c3fa491dab0326208d5cf79b53f474
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103827541"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118240005"
 ---
 # <a name="mpeg-2-audio-encoder"></a>Codificador de áudio MPEG-2
 
@@ -371,22 +371,22 @@ Camada 2
 
  
 
-<dl> \* Somente mono  
+<dl> \* Somente Mono  
 \*\* Somente estéreo  
 </dl>
 
-### <a name="example-media-types"></a>Exemplos de tipos de mídia
+### <a name="example-media-types"></a>Tipos de mídia de exemplo
 
-Aqui está um exemplo dos tipos de mídia que são necessários para codificar o PCM de inteiro de 16 bits, áudio estéreo de 48 kHz na taxa de bits padrão.
+Aqui está um exemplo dos tipos de mídia necessários para codificar o PCM inteiro de 16 bits, áudio estéreo de 48 kHz na taxa de bits padrão.
 
 Tipo de mídia de saída:
 
 | Atributo                                                                           | Valor                   |
 |-------------------------------------------------------------------------------------|-------------------------|
-| [\_ \_ tipo principal MF \_ MT](mf-mt-major-type-attribute.md)                               | **\_Áudio MFMediaType**  |
-| [subtipo MF \_ MT \_](mf-mt-subtype-attribute.md)                                      | **MFAudioFormat \_ MPEG** |
-| [\_amostras de áudio MF MT \_ \_ \_ por \_ segundo](mf-mt-audio-samples-per-second-attribute.md) | 48000                   |
-| [\_canais de \_ número de áudio MF MT \_ \_](mf-mt-audio-num-channels-attribute.md)              | 2                       |
+| [MF \_ MT \_ MAJOR \_ TYPE](mf-mt-major-type-attribute.md)                               | **Áudio MFMediaType \_**  |
+| [SUBTIPO \_ MF MT \_](mf-mt-subtype-attribute.md)                                      | **MFAudioFormat \_ MPEG** |
+| [AMOSTRAS \_ DE ÁUDIO MT \_ \_ MT POR \_ \_ SEGUNDO](mf-mt-audio-samples-per-second-attribute.md) | 48000                   |
+| [CANAIS NUM DE ÁUDIO \_ MF MT \_ \_ \_](mf-mt-audio-num-channels-attribute.md)              | 2                       |
 
 
 
@@ -396,13 +396,13 @@ Tipo de mídia de entrada:
 
 | Atributo                                                                                | Valor                  |
 |------------------------------------------------------------------------------------------|------------------------|
-| [\_ \_ tipo principal MF \_ MT](mf-mt-major-type-attribute.md)                                    | **\_Áudio MFMediaType** |
-| [subtipo MF \_ MT \_](mf-mt-subtype-attribute.md)                                           | **\_PCM MFAudioFormat** |
-| [\_bits de áudio MF MT \_ \_ \_ por \_ amostra](mf-mt-audio-bits-per-sample-attribute.md)            | 16                     |
-| [\_amostras de áudio MF MT \_ \_ \_ por \_ segundo](mf-mt-audio-samples-per-second-attribute.md)      | 48000                  |
-| [\_canais de \_ número de áudio MF MT \_ \_](mf-mt-audio-num-channels-attribute.md)                   | 2                      |
-| [\_alinhamento de \_ bloco de áudio MF MT \_ \_](mf-mt-audio-block-alignment-attribute.md)             | 4                      |
-| [áudio do MF \_ MT \_ média de \_ \_ bytes \_ por \_ segundo](mf-mt-audio-avg-bytes-per-second-attribute.md) | 192000                 |
+| [MF \_ MT \_ MAJOR \_ TYPE](mf-mt-major-type-attribute.md)                                    | **Áudio MFMediaType \_** |
+| [SUBTIPO \_ MF MT \_](mf-mt-subtype-attribute.md)                                           | **MFAudioFormat \_ PCM** |
+| [BITS DE \_ ÁUDIO MT \_ MT \_ POR \_ \_ EXEMPLO](mf-mt-audio-bits-per-sample-attribute.md)            | 16                     |
+| [AMOSTRAS \_ DE ÁUDIO MT \_ \_ MT POR \_ \_ SEGUNDO](mf-mt-audio-samples-per-second-attribute.md)      | 48000                  |
+| [CANAIS NUM DE ÁUDIO \_ MF MT \_ \_ \_](mf-mt-audio-num-channels-attribute.md)                   | 2                      |
+| [ALINHAMENTO DO \_ BLOCO DE ÁUDIO MT \_ \_ \_ MT](mf-mt-audio-block-alignment-attribute.md)             | 4                      |
+| [BYTES MF \_ MT \_ AUDIO \_ AVG \_ POR \_ \_ SEGUNDO](mf-mt-audio-avg-bytes-per-second-attribute.md) | 192000                 |
 
 
 
@@ -414,17 +414,17 @@ Tipo de mídia de entrada:
 
 | Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                                |
+| Cliente mínimo com suporte<br/> | \[Windows 8 somente aplicativos da área de trabalho\]<br/>                                                |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                 |
 | DLL<br/>                      | <dl> <dt>Msmpeg2enc.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 <dl> <dt>
 
-[Objetos de codec](codecobjects.md)
+[Objetos codec](codecobjects.md)
 </dt> </dl>
 
  

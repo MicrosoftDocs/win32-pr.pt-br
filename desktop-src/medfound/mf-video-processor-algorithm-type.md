@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - mfidl.h
-ms.openlocfilehash: 604fee61ae4b6a34d876de8c2863ee6dddad73d0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 885c3e9c34fa787a6877fd37eef81f470be395225594b90b2f5516a8e773eb88
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105781236"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118244134"
 ---
 # <a name="mf_video_processor_algorithm_type-enumeration"></a>\_Enumeração de \_ tipo de algoritmo do processador de vídeo MF \_ \_
 
 Define algoritmos para o processador de vídeo que é usado pelo [ \_ algoritmo do \_ processador \_ de vídeo MF](mf-video-processor-algorithm.md).
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 
 ```C++
@@ -60,13 +60,13 @@ O processador de vídeo sempre será processado internamente no AYUV e usará fi
 
 | Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 8.1 \[ apenas aplicativos de área de trabalho\]<br/>                                         |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012 R2\]<br/>                              |
+| Cliente mínimo com suporte<br/> | Windows 8.1 \[ somente aplicativos da área de trabalho\]<br/>                                         |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 \[Somente aplicativos da área de trabalho R2\]<br/>                              |
 | INSERI<br/>                      | <dl> <dt>Mfidl. idl</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 <dl> <dt>
 

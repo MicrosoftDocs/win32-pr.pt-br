@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - gdi32.dll
-ms.openlocfilehash: 87139f0b485ef3c01e5196db85b36faeb662e4d6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c84738fe37661d2a593432b571c6022b0369e28ee3b2a3cb028b8eb84276a21a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104089735"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117879373"
 ---
 # <a name="getsuggestedopmprotectedoutputarraysize-function"></a>Função GetSuggestedOPMProtectedOutputArraySize
 
@@ -59,7 +59,7 @@ Recebe o tamanho que deve ser alocado para a matriz, em número de elementos da 
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se o método for bem-sucedido, ele retornará o **status \_ êxito**. Caso contrário, ele retorna um código de erro **NTSTATUS** .
 
@@ -73,8 +73,8 @@ Esta função não tem biblioteca de importação associada. Para chamar essa fu
 
 | Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                 |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                       |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                 |
 | DLL<br/>                      | <dl> <dt>Gdi32.dll</dt> </dl> |
 
 

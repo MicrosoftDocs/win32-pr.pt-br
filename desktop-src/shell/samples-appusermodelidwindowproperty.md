@@ -9,12 +9,12 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: 42544992248143c95ae905db39fe854b27751862
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a6a4b0daca8b6bd4147c1e36d921b58b3802d975e678e49a9b9153761e61820d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104968098"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118219876"
 ---
 # <a name="application-user-model-id-appid-window-property-sample"></a>Exemplo da propriedade da janela de ID do modelo de usuário do aplicativo (AppID)
 
@@ -23,13 +23,13 @@ Demonstra como controlar o comportamento de agrupamento da barra de tarefas de j
 Este tópico inclui as seções a seguir.
 
 -   [Descrição](#description)
--   [Requisitos](#requirements)
+-   [Requirements](#requirements)
 -   [Baixando o exemplo](#downloading-the-sample)
 -   [Compilando o exemplo](#building-the-sample)
 -   [Executando o exemplo](#running-the-sample)
 -   [Tópicos relacionados](#related-topics)
 
-## <a name="description"></a>Description
+## <a name="description"></a>Descrição
 
 Este exemplo mostra como definir a propriedade [System.AppUserModel.ID](../properties/props-system-appusermodel-id.md) por meio do uso da implementação de [**IPropertyStore**](/windows/win32/api/propsys/nn-propsys-ipropertystore) da janela, que é obtida por meio de [**SHGetPropertyStoreForWindow**](/windows/win32/api/shellapi/nf-shellapi-shgetpropertystoreforwindow).
 
@@ -48,7 +48,7 @@ Este exemplo mostra como definir a propriedade [System.AppUserModel.ID](../prope
 
 ## <a name="downloading-the-sample"></a>Baixando o exemplo
 
-| Localização      | URL do caminho                                                                                             |
+| Location      | URL do caminho                                                                                             |
 |---------------|------------------------------------------------------------------------------------------------------|
 | GitHub  | [Exemplo de AppUserModelIDWindowProperty](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/winui/shell/appshellintegration/AppUserModelIDWindowProperty) |
 
@@ -58,18 +58,18 @@ Este exemplo mostra como definir a propriedade [System.AppUserModel.ID](../prope
 Para criar o exemplo do prompt de comando:
 
 1.  Abra a janela do prompt de comando e navegue até o diretório do projeto **AppUserModelIDWindowProperty** .
-2.  Digite `msbuild AppUserModelIDWindowProperty.sln`.
+2.  Insira `msbuild AppUserModelIDWindowProperty.sln`.
 
-Para criar o exemplo usando Microsoft Visual Studio (preferencial):
+para criar o exemplo usando Microsoft Visual Studio (preferencial):
 
-1.  Abra o Windows Explorer e navegue até o diretório do projeto **AppUserModelIDWindowProperty** .
+1.  abra Windows Explorer e navegue até o diretório do projeto **AppUserModelIDWindowProperty** .
 2.  Clique duas vezes no ícone do arquivo AppUserModelIDWindowProperty. sln para abrir o projeto no Visual Studio.
-3.  No menu **Compilar** , selecione **Compilar solução**.
+3.  No menu **Compilar**, selecione **Compilar Solução**.
 
 ## <a name="running-the-sample"></a>Executando o exemplo
 
-1.  Navegue até o diretório que contém o novo executável, usando o prompt de comando ou o Windows Explorer.
-2.  Na linha de comando, digite `AppUserModelIDWindowProperty.exe` . Como alternativa, no Windows Explorer, clique duas vezes no ícone para AppUserModelIDWindowProperty.exe.
+1.  navegue até o diretório que contém o novo executável, usando o prompt de comando ou o gerenciador de Windows.
+2.  Na linha de comando, digite `AppUserModelIDWindowProperty.exe` . como alternativa, no Windows Explorer, clique duas vezes no ícone para AppUserModelIDWindowProperty.exe.
 3.  Para demonstrar o efeito que as IDs de modelo de usuário do aplicativo (AppUserModelIDs) têm no agrupamento da barra de tarefas, inicie pelo menos três instâncias do aplicativo ao mesmo tempo.
 4.  Use o menu para definir um AppUserModelID diferente em cada uma das três janelas. Observe que cada AppUserModelID separado resulta em um botão de barra de tarefas separado e que o Windows pode alterar sua identidade em tempo de execução.
 5.  Defina pelo menos duas janelas para o segundo AppUserModelID. Observe que ambos se movem para o mesmo grupo da barra de tarefas.

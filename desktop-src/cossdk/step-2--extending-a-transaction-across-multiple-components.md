@@ -4,12 +4,12 @@ ms.assetid: 20a30e87-e209-45ae-bf1b-722568758c47
 title: 'Etapa 2: estendendo uma transação entre vários componentes'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 99c6fc80016904a3ea51b7aea7fa0ec93edc47a6
-ms.sourcegitcommit: bf526e267d3991892733bdd229c66d5365cf244a
+ms.openlocfilehash: 96aa168eca7bfba29a4b00a6cd24b45d06c7610c76d47a4d6454e77295e57bc4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "104297836"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117915799"
 ---
 # <a name="step-2-extending-a-transaction-across-components"></a>Etapa 2: estendendo uma transação entre componentes
 
@@ -20,9 +20,9 @@ Nesta etapa, você aprenderá sobre o seguinte:
 -   Fluxo de transações
 -   Como vários objetos votam em uma transação
 
-## <a name="description"></a>Descrição
+## <a name="description"></a>Description
 
-[Etapa 1: a criação de um componente transacional](step-1--creating-a-transactional-component.md) mostra como escrever um componente transacional simples que atualiza informações de autor no banco de dados de Microsoft SQL Server pubs. A etapa 2 mostra o que acontece quando uma transação é estendida entre vários componentes.
+[etapa 1: a criação de um componente transacional](step-1--creating-a-transactional-component.md) mostra como escrever um componente transacional simples que atualiza informações de autor no banco de dados de Microsoft SQL Server Pubs. A etapa 2 mostra o que acontece quando uma transação é estendida entre vários componentes.
 
 Ao manter o modelo de programação COM+, o `UpdateAuthorAddress` chama outro componente no decorrer de concluir seu trabalho. O segundo componente, `ValidateAuthorAddress` , valida o endereço do autor e retorna os resultados para seu chamador, `UpdateAuthorAddress` .
 

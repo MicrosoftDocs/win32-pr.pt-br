@@ -4,12 +4,12 @@ ms.assetid: f0b2192d-4bb7-4ba2-8dd0-35a20183ea31
 title: DocumentSeparatorSheet
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 38195c2d1c52e5c02d9da4844b5fa981866a61bc
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 7b87b77258872975fc256eb204b4f799f583f5018faf14789294676dabae968b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112409159"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118971555"
 ---
 # <a name="documentseparatorsheet"></a>DocumentSeparatorSheet
 
@@ -19,13 +19,13 @@ Descreve o uso de folha de separador para um documento. As folhas separadores de
 
 -   [Informações do elemento](#element-information)
 -   [Conteúdo estrutural](#structural-content)
--   [linguagem XML conteúdo (XML)](#extensible-markup-language-xml-content)
+-   [conteúdo linguagem XML (XML)](#extensible-markup-language-xml-content)
 
 ## <a name="element-information"></a>Informações do elemento
 
 
 
-| Name | Valor |
+| Nome | Valor |
 |----------------------------|---------------------|
 | Tipo de elemento <br/>   | Recurso<br/>  |
 | Prefixo de definição de scoping <br/> | Documento<br/> |
@@ -68,7 +68,7 @@ A tabela a seguir descreve as características das variáveis definidas na estru
 
  
 
-## <a name="extensible-markup-language-xml-content"></a>linguagem XML conteúdo (XML)
+## <a name="extensible-markup-language-xml-content"></a>conteúdo linguagem XML (XML)
 
 As palavras-chave public Print Schema são definidas no https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords namespace . O conteúdo linguagem XML XML (public linguagem XML) para essa palavra-chave é definido abaixo:
 

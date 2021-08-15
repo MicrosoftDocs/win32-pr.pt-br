@@ -7,12 +7,12 @@ keywords:
 - Exemplos de Active Directory Active Directory, pesquisando uma floresta
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d6c2fb0cde0f42167b19141ad178ea80ff8795b8
-ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.openlocfilehash: c92c71afeecebf96ba123e909ad408835de083b8d45cb259a7b371b8214cc5b5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "103640406"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118190283"
 ---
 # <a name="example-code-for-searching-a-forest"></a>Exemplo de código para pesquisar uma floresta
 
@@ -98,6 +98,6 @@ return hr;
 
 
 
- 
+ 
 
- 
+ 

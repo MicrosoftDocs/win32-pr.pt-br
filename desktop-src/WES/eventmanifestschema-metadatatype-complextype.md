@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 69b140a2b65d47d563fd88f49d6818efc13613f4
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 392e0bb2940c36b541f63f55dac418312489f231d785f82014ade82c20602fbd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104009725"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118343594"
 ---
 # <a name="metadatatype-complex-type"></a>Tipo complexo de MetadataType
 
@@ -107,8 +107,8 @@ Define os tipos de metadados que você pode definir na seção de metadados do m
 
 | Elemento                                                                       | Type                                                                       | Descrição                                                                                                                                                      |
 |-------------------------------------------------------------------------------|----------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**meios**](eventmanifestschema-channels-metadatatype-element.md)         | [**ChannelListType**](eventmanifestschema-channellisttype-complextype.md) | Define uma lista de canais para os quais os provedores podem registrar eventos. Um provedor pode, então, importar um ou mais dos canais em seu manifesto.<br/>               |
-| [**palavras-chave**](eventmanifestschema-keywords-metadatatype-element.md)         | [](eventmanifestschema-keywordlisttype-complextype.md) | Define uma lista de palavras-chave que determinam a categoria de eventos que o provedor grava.<br/>                                                            |
+| [**canais**](eventmanifestschema-channels-metadatatype-element.md)         | [**ChannelListType**](eventmanifestschema-channellisttype-complextype.md) | Define uma lista de canais para os quais os provedores podem registrar eventos. Um provedor pode, então, importar um ou mais dos canais em seu manifesto.<br/>               |
+| [**Palavras-chave**](eventmanifestschema-keywords-metadatatype-element.md)         | [](eventmanifestschema-keywordlisttype-complextype.md) | Define uma lista de palavras-chave que determinam a categoria de eventos que o provedor grava.<br/>                                                            |
 | [**alcançar**](eventmanifestschema-levels-metadatatype-element.md)             | [**LevelListType**](eventmanifestschema-levellisttype-complextype.md)     | Define uma lista de níveis que especificam a severidade de um evento.<br/>                                                                                       |
 | **message**                                                                   |                                                                            | Define uma cadeia de caracteres de mensagem.<br/>                                                                                                                             |
 | **mensagem de**                                                              |                                                                            | Define uma lista de cadeias de caracteres de mensagem.<br/>                                                                                                                    |
@@ -129,7 +129,7 @@ Define os tipos de metadados que você pode definir na seção de metadados do m
 | mid     | xs:string                                                         | Não usado.<br/>                                                                               |
 | name    | anyURI                                                            | O URI do arquivo meta. <br/>                                                              |
 | símbolo  | [**CSymbolType**](eventmanifestschema-csymboltype-simpletype.md) | O nome simbólico que você deseja que o compilador de mensagem crie para essa cadeia de caracteres de mensagem.<br/> |
-| value   | [**UInt32type**](eventmanifestschema-hexint32type-simpletype.md) | O número a ser usado como o identificador da mensagem para esta mensagem.<br/>                           |
+| valor   | [**UInt32type**](eventmanifestschema-hexint32type-simpletype.md) | O número a ser usado como o identificador da mensagem para esta mensagem.<br/>                           |
 
 
 
@@ -143,8 +143,8 @@ Embora você possa criar um manifesto que contenha uma seção de metadados, o s
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/> |
 
 
 

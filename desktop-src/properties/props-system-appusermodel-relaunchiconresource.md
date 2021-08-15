@@ -4,19 +4,19 @@ ms.assetid: 3559d1f5-988c-41d9-ba9a-dfa4ba643ee2
 title: System. AppUserModel. RelaunchIconResource
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fc79c246fef7be5641c6488dcc34169cd5bbf98b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5b43394bd5ee7dca6084526224dac268500f6881317215d63d6fc0e9a126c5b8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105756520"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118970835"
 ---
 # <a name="systemappusermodelrelaunchiconresource"></a>System. AppUserModel. RelaunchIconResource
 
 Especifica o ícone usado para o atalho criado na barra de tarefas quando o usuário escolhe fixar um aplicativo na barra de tarefas ou iniciar uma nova instância por meio da lista de atalhos do botão. Esse é o ícone usado para o grupo da barra de tarefas e é mostrado para um aplicativo fixado, independentemente de o aplicativo estar em execução ou não. Isso deve ser especificado em um dos seguintes formatos:
 
 -   Formato de recurso padrão, como "% systemdir% \\ system32 \\shell32.dll,-128". O caractere '-' antes da ID do recurso é necessário. Não use o caractere ' @ ' na frente da cadeia de caracteres do caminho.
--   Caminho direto para um arquivo de ícone, como "% ProgramFiles% \\ Microsoft \\ notepad \\ Notepad. ico, 0". Observe que, como os arquivos. ico podem conter vários recursos de ícone, uma ID de recurso é necessária na cadeia de caracteres. Se o arquivo. ico for uma única imagem, use "0" (sem o caractere "-") como a ID do recurso.
+-   caminho direto para um arquivo de ícone, como "% programfiles% \\ Microsoft \\ Bloco de notas \\ Bloco de notas. ico, 0". Observe que, como os arquivos. ico podem conter vários recursos de ícone, uma ID de recurso é necessária na cadeia de caracteres. Se o arquivo. ico for uma única imagem, use "0" (sem o caractere "-") como a ID do recurso.
 
 [System. AppUserModel. RelaunchIconResource]() é uma propriedade opcional. Se não estiver definido, o ícone do destino do comando de reinicialização ([System. AppUserModel. RelaunchCommand](./props-system-appusermodel-relaunchcommand.md)) será usado. No entanto, como isso pode levar a resultados indesejados, é altamente recomendável que você forneça um ícone explicitamente por meio dessa propriedade.
 

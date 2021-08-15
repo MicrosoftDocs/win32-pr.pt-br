@@ -1,19 +1,19 @@
 ---
-title: Funções do Gerenciador de roteador (transporte)
-description: Use as funções a seguir para administrar os gerenciadores de roteador. Essas funções também permitem que um desenvolvedor Leia e grave as informações globais para os gerenciadores de roteadores e as informações globais para clientes de roteador (como protocolos de roteamento).
+title: Funções do Gerenciador de Roteador (Transporte)
+description: Use as funções a seguir para administrar os gerenciadores de roteador. Essas funções também permitem que um desenvolvedor leia e escreva as informações globais para os gerenciadores de roteador e as informações globais para clientes de roteador (como protocolos de roteamento).
 ms.assetid: c1093241-604d-498d-a358-f8e8585b95cd
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a94ccc97f3f2dce90cde57853cfbed97f870e01b
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 1780f980972943f796c635a58829d9363a0ccd4e36d371306665f5d4d7ba8b5b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103823075"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117787616"
 ---
-# <a name="router-manager-transport-functions"></a>Funções do Gerenciador de roteador (transporte)
+# <a name="router-manager-transport-functions"></a>Funções do Gerenciador de Roteador (Transporte)
 
-Use as funções a seguir para administrar os gerenciadores de roteador. Essas funções também permitem que um desenvolvedor Leia e grave as informações globais para os gerenciadores de roteadores e as informações globais para clientes de roteador (como protocolos de roteamento).
+Use as funções a seguir para administrar os gerenciadores de roteador. Essas funções também permitem que um desenvolvedor leia e escreva as informações globais para os gerenciadores de roteador e as informações globais para clientes de roteador (como protocolos de roteamento).
 
 
 
@@ -28,11 +28,11 @@ Use as funções a seguir para administrar os gerenciadores de roteador. Essas f
 
 
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

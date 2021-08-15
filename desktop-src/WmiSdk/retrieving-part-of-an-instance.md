@@ -2,25 +2,25 @@
 description: Uma recuperação de instância parcial é quando o WMI recupera apenas um subconjunto das propriedades de uma instância.
 ms.assetid: 6cc26b26-adc9-4a8a-b51e-9db94eb4295f
 ms.tgt_platform: multiple
-title: Recuperando parte de uma instância do WMI
+title: Recuperando parte de uma instância WMI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4d9d547ec2bbb7e3b53e22177cc0c48794dff22a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7f8cce9d809e5203b7c00f2b2297403f835d98f37ff86641e297673ee50e579f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104165214"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118316210"
 ---
-# <a name="retrieving-part-of-a-wmi-instance"></a>Recuperando parte de uma instância do WMI
+# <a name="retrieving-part-of-a-wmi-instance"></a>Recuperando parte de uma instância WMI
 
-Uma recuperação de instância parcial é quando o WMI recupera apenas um subconjunto das propriedades de uma instância. Por exemplo, o WMI pode recuperar apenas as propriedades **Name** e **Key** . O uso mais comum da recuperação de instância parcial é em enumerações grandes que têm várias propriedades.
+Uma recuperação de instância parcial é quando o WMI recupera apenas um subconjunto das propriedades de uma instância. Por exemplo, o WMI pode recuperar apenas as **propriedades Name** **e Key.** O uso mais comum da recuperação de instância parcial está em enumerações grandes que têm várias propriedades.
 
-## <a name="retrieving-part-of-a-wmi-instance-using-powershell"></a>Recuperando parte de uma instância do WMI usando o PowerShell
+## <a name="retrieving-part-of-a-wmi-instance-using-powershell"></a>Recuperando parte de uma instância WMI usando o PowerShell
 
-Você pode recuperar uma propriedade individual de uma instância usando [Get-WmiObject](https://technet.microsoft.com/library/dd315379.aspx); a própria propriedade pode ser recuperada e exibida de várias maneiras. Assim como na recuperação de uma instância, o PowerShell retornará, por padrão, todas as instâncias de uma determinada classe; Você deve especificar um valor específico se desejar recuperar apenas uma única instância.
+Você pode recuperar uma propriedade individual de uma instância usando [Get-WmiObject](https://technet.microsoft.com/library/dd315379.aspx); a propriedade em si pode ser recuperada e exibida de várias maneiras. Assim como com a recuperação de uma instância, o PowerShell retornará por padrão todas as instâncias de uma determinada classe; você deverá especificar um valor específico se desejar recuperar apenas uma única instância.
 
-O exemplo de código a seguir exibe o número de série do volume para uma instância da classe do disco [**\_ lógico do Win32**](/windows/desktop/CIMWin32Prov/win32-logicaldisk) .
+O exemplo de código a seguir exibe o número de série do volume para uma instância da [**classe \_ LogicalDisk do Win32.**](/windows/desktop/CIMWin32Prov/win32-logicaldisk)
 
 
 ```PowerShell
@@ -38,16 +38,16 @@ $myDisk.DeviceID
 
 
 
-## <a name="retrieving-part-of-a-wmi-instance-using-c-systemmanagement"></a>Recuperando parte de uma instância do WMI usando C# (System. Management)
+## <a name="retrieving-part-of-a-wmi-instance-using-c-systemmanagement"></a>Recuperando parte de uma instância WMI usando C# (System.Management)
 
-Você pode recuperar uma propriedade individual de uma instância criando um novo [ManagementObject](/dotnet/api/system.management.managementobject) usando os detalhes de uma instância específica. Em seguida, você pode recuperar implicitamente uma ou mais propriedades da instância com o método [GetPropertyValue](/dotnet/api/system.management.managementbaseobject.getpropertyvalue#System_Management_ManagementBaseObject_GetPropertyValue_System_String_) .
+Você pode recuperar uma propriedade individual de uma instância criando um [novo ManagementObject](/dotnet/api/system.management.managementobject) usando os detalhes de uma instância específica. Em seguida, você pode recuperar implicitamente uma ou mais propriedades da instância com o [método GetPropertyValue.](/dotnet/api/system.management.managementbaseobject.getpropertyvalue#System_Management_ManagementBaseObject_GetPropertyValue_System_String_)
 
 > [!Note]  
-> **System. Management** foi o namespace .net original usado para acessar o WMI; no entanto, as APIs nesse namespace geralmente são mais lentas e não são dimensionadas em relação às suas contrapartes mais modernas de **Microsoft. Management. Infrastructure** .
+> **System.Management era** o namespace original do .NET usado para acessar o WMI; no entanto, as APIs nesse namespace geralmente são mais lentas e não são tão dimensionamento em relação às contrapartes mais modernas **do Microsoft.Management.Infrastructure.**
 
  
 
-O exemplo de código a seguir exibe o número de série do volume para uma instância da classe do disco [**\_ lógico do Win32**](/windows/desktop/CIMWin32Prov/win32-logicaldisk) .
+O exemplo de código a seguir exibe o número de série do volume para uma instância da [**classe \_ LogicalDisk do Win32.**](/windows/desktop/CIMWin32Prov/win32-logicaldisk)
 
 
 ```CSharp
@@ -60,11 +60,11 @@ Console.WriteLine(myProperty);
 
 
 
-## <a name="retrieving-part-of-a-wmi-instance-using-vbscript"></a>Recuperando parte de uma instância do WMI usando o VBScript
+## <a name="retrieving-part-of-a-wmi-instance-using-vbscript"></a>Recuperando parte de uma instância WMI usando VBScript
 
 Você pode recuperar uma propriedade individual de uma instância usando [**GetObject**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-getobject).
 
-O exemplo de código a seguir exibe o número de série do volume para uma instância da classe do disco [**\_ lógico do Win32**](/windows/desktop/CIMWin32Prov/win32-logicaldisk) .
+O exemplo de código a seguir exibe o número de série do volume para uma instância da [**classe \_ LogicalDisk do Win32.**](/windows/desktop/CIMWin32Prov/win32-logicaldisk)
 
 
 ```VB
@@ -73,40 +73,40 @@ MsgBox (GetObject("WinMgmts:Win32_LogicalDisk='C:'").VolumeSerialNumber)
 
 
 
-## <a name="retrieving-part-of-a-wmi-instance-using-c"></a>Recuperando parte de uma instância do WMI usando C++
+## <a name="retrieving-part-of-a-wmi-instance-using-c"></a>Recuperando parte de uma instância WMI usando C++
 
 O procedimento a seguir é usado para solicitar uma recuperação de instância parcial usando C++.
 
 **Para solicitar uma recuperação de instância parcial usando C++**
 
-1.  Crie um objeto [**IWbemContext**](/windows/desktop/api/WbemCli/nn-wbemcli-iwbemcontext) com uma chamada para [**CoCreateInstance**](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance).
+1.  Crie um [**objeto IWbemContext**](/windows/desktop/api/WbemCli/nn-wbemcli-iwbemcontext) com uma chamada para [**CoCreateInstance**](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance).
 
     Um objeto de contexto é um objeto que o WMI usa para passar mais informações para um provedor WMI. Nesse caso, você está usando o objeto [**IWbemContext**](/windows/desktop/api/WbemCli/nn-wbemcli-iwbemcontext) para instruir o provedor a processar uma recuperação de instância parcial.
 
-2.  Adicione \_ \_ obter \_ extensões, \_ \_ obter \_ \_ solicitação de cliente ext \_ e quaisquer outros valores nomeados que descrevam as propriedades que você deseja recuperar para o objeto [**IWbemContext**](/windows/desktop/api/WbemCli/nn-wbemcli-iwbemcontext) .
+2.  Adicione GET EXTENSIONS, GET EXT CLIENT REQUEST e quaisquer outros valores nomeados que descrevam as propriedades que você deseja recuperar para o \_ \_ \_ \_ \_ objeto \_ \_ \_ [**IWbemContext.**](/windows/desktop/api/WbemCli/nn-wbemcli-iwbemcontext)
 
-    A tabela a seguir lista os valores nomeados diferentes usados na sua chamada de recuperação.
+    A tabela a seguir lista os diferentes valores nomeados que usam na chamada de recuperação.
 
     
 
     | Valor nomeado                              | Descrição                                                                                                                                                                                                                                                                 |
     |------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-    | \_\_OBTER \_ extensões<br/>           | **VT \_ BOOL** definido como **Variant \_ true**. Usado para sinalizar que as operações de recuperação de instância parcial estão sendo usadas. Isso permite uma verificação rápida e única sem a necessidade de enumerar o objeto de contexto inteiro. Se qualquer um dos outros valores for usado, este deverá ser.<br/> |
-    | \_\_OBTER \_ Propriedades ext. \_<br/>      | [**SafeArray**](/windows/win32/api/oaidl/ns-oaidl-safearray) de cadeias de caracteres que listam as propriedades a serem recuperadas. Não pode ser especificado simultaneamente \_ \_ \_ somente com \_ as chaves Get ext \_ .<br/> Um asterisco " \* " é um nome de propriedade inválido para \_ \_ Propriedades de get \_ ext \_ .<br/>                    |
-    | \_\_OBTER \_ \_ chaves ext \_ somente<br/>      | **VT \_ BOOL** definido como **Variant \_ true**. Indica que somente as chaves devem ser fornecidas no objeto retornado. Não pode ser especificado simultaneamente com \_ \_ \_ \_ as propriedades Get ext. Em vez disso, tem precedência sobre \_ \_ obter \_ \_ Propriedades ext.<br/>                            |
-    | \_\_OBTER \_ \_ solicitação de cliente ext \_<br/> | **VT \_ BOOL** definido como **Variant \_ true**. Indica que o chamador foi aquele que escreveu o valor no objeto de contexto e que ele não foi propagado de outra operação dependente.<br/>                                                                        |
+    | \_\_OBTER \_ EXTENSÕES<br/>           | **VT \_ BOOL** definido como **VARIANT \_ TRUE.** Usado para sinalizar que as operações de recuperação de instância parcial estão sendo usadas. Isso permite uma verificação rápida e única sem precisar enumerar todo o objeto de contexto. Se qualquer um dos outros valores for usado, esse deverá ser.<br/> |
+    | \_\_OBTER \_ PROPRIEDADES EXT \_<br/>      | [**SAFEARRAY**](/windows/win32/api/oaidl/ns-oaidl-safearray) de cadeias de caracteres listando as propriedades a serem recuperadas. Não pode ser especificado simultaneamente apenas \_ \_ com GET EXT \_ \_ \_ KEYS.<br/> Um asterisco " \* " é um nome de propriedade inválido para GET EXT \_ \_ \_ \_ PROPERTIES.<br/>                    |
+    | \_\_OBTER \_ SOMENTE CHAVES EXT \_ \_<br/>      | **VT \_ BOOL** definido como **VARIANT \_ TRUE.** Indica que apenas as chaves devem ser fornecidas no objeto retornado. Não pode ser especificado simultaneamente com \_ \_ GET EXT \_ \_ PROPERTIES. Em vez disso, tem precedência sobre \_ \_ GET EXT \_ \_ PROPERTIES.<br/>                            |
+    | \_\_OBTER \_ SOLICITAÇÃO \_ DO CLIENTE \_ EXT<br/> | **VT \_ BOOL** definido como **VARIANT \_ TRUE.** Indica que o chamador foi aquele que escreveu o valor no objeto de contexto e que ele não foi propagado de outra operação dependente.<br/>                                                                        |
 
     
 
      
 
-3.  Passe o objeto de contexto [**IWbemContext**](/windows/desktop/api/WbemCli/nn-wbemcli-iwbemcontext) em qualquer chamada para [**IWbemServices:: GetObject**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-getobject), [**IWbemServices:: GetObjectAsync**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-getobjectasync), [**IWbemServices:: CreateInstanceEnum**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-createinstanceenum)ou [**IWbemServices:: CreateInstanceEnumAsync**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-createinstanceenumasync) por meio do parâmetro *pCtx* .
+3.  Passe o objeto de contexto [**IWbemContext**](/windows/desktop/api/WbemCli/nn-wbemcli-iwbemcontext) em qualquer chamada para [**IWbemServices::GetObject**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-getobject), [**IWbemServices::GetObjectAsync**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-getobjectasync), [**IWbemServices::CreateInstanceEnum ou**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-createinstanceenum) [**IWbemServices::CreateInstanceEnumAsync**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-createinstanceenumasync) por meio do *parâmetro pCtx.*
 
-    Passar o objeto [**IWbemContext**](/windows/desktop/api/WbemCli/nn-wbemcli-iwbemcontext) instrui o provedor para permitir recuperações de instância parcial. Em uma recuperação de instância completa, você definiria *pCtx* como um valor **nulo** . Se o provedor não oferecer suporte à recuperação de instância parcial, você receberá uma mensagem de erro.
+    Passar o [**objeto IWbemContext**](/windows/desktop/api/WbemCli/nn-wbemcli-iwbemcontext) instrui o provedor a permitir recuperações de instância parcial. Em uma recuperação de instância completa, você definiria *pCtx* como um **valor nulo.** Se o provedor não dá suporte à recuperação de instância parcial, você receberá uma mensagem de erro.
 
-Se o provedor não puder cumprir a operação de instância parcial, o provedor continuará como se você não inseriu o objeto de contexto ou, caso contrário, retornará o **\_ \_ \_ parâmetro WBEM E sem suporte**.
+Se o provedor não puder estar em conformidade com a operação de instância parcial, o provedor prosseguirá como se você não tivesse inserir o objeto de contexto ou retornará **WBEM \_ E \_ UNSUPPORTED \_ PARAMETER**.
 
-O exemplo a seguir descreve como executar uma recuperação de instância completa do [**\_ LogicalDisk do Win32**](/windows/desktop/CIMWin32Prov/win32-logicaldisk)e, em seguida, executa uma recuperação de instância parcial da propriedade **Win32 \_ LogicalDisk. Caption** .
+O exemplo a seguir descreve como executar uma recuperação de instância completa do [**Win32 \_ LogicalDisk**](/windows/desktop/CIMWin32Prov/win32-logicaldisk)e, em seguida, executa uma recuperação de instância parcial da propriedade **\_ LogicalDisk.Caption do Win32.**
 
 
 ```C++
@@ -300,7 +300,7 @@ void main(void)
 
 
 
-Quando executado, o exemplo de código anterior grava as informações a seguir. A primeira descrição do objeto é da recuperação de instância completa. A segunda descrição do objeto é da recuperação de instância parcial. A última seção mostra que você receberá um valor **nulo** se solicitar uma propriedade que não foi solicitada na chamada [**GetObject**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-getobject) original.
+Quando executado, o exemplo de código anterior grava as informações a seguir. A primeira descrição do objeto é da recuperação de instância completa. A segunda descrição do objeto é da recuperação de instância parcial. A última seção mostra  que você receberá um valor nulo se solicitar uma propriedade que não foi solicitada na chamada [**GetObject**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-getobject) original.
 
 ``` syntax
 Successfully connected to namespace

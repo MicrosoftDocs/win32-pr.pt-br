@@ -4,12 +4,12 @@ ms.assetid: 40641167-12de-4008-80e4-2fb758146421
 title: Processando solicitações de certificado
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2f70a25d9ca633247c3995677825dc011b2b38d8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5be2c8e8acacbb001803cf3ce8d7e1263e920673eb912a04105ec8bb2772953a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104567929"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117977396"
 ---
 # <a name="processing-certificate-requests"></a>Processando solicitações de certificado
 

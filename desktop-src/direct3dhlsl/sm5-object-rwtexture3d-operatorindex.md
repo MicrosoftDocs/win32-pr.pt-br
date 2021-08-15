@@ -1,9 +1,9 @@
 ---
-title: 'Função RWTexture3D:: Operator'
+title: Função RWTexture3D::Operator
 description: Retorna uma variável de recurso de um RWTexture3D.
 ms.assetid: 0b4ea895-ac34-49e5-80e6-74229c33bfe9
 keywords:
-- Função Operator HLSL
+- Função de operador HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: e41ff4db387c4d0926083419082fd589005d96a6
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: 8db7073ef20976ecb6c39839d5639a1f0fcfe1fad765c2cf9b0ecdf086622b9c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "104967246"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118509132"
 ---
-# <a name="rwtexture3doperator--function"></a>Função RWTexture3D:: Operator
+# <a name="rwtexture3doperator--function"></a>Função RWTexture3D::Operator
 
-Retorna uma variável de recurso de um [**RWTexture3D**](sm5-object-rwtexture3d.md).
+Retorna uma variável de recurso [**de um RWTexture3D.**](sm5-object-rwtexture3d.md)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -36,7 +36,7 @@ R Operator[](
 
 <dl> <dt>
 
-*pos* \[ no\]
+*pos* \[ Em\]
 </dt> <dd>
 
 Tipo: **uint3**
@@ -45,7 +45,7 @@ A posição do índice. Contém as coordenadas (x, y, z).
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **R**
 
@@ -57,7 +57,7 @@ Essa função tem suporte para os seguintes tipos de sombreadores:
 
 
 
-| Vértice | Envoltória | Domínio | Geometria | 16x16 | Computação |
+| Vértice | Casco | Domínio | Geometry | Pixel | Computação |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | x     | x       |
 

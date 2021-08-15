@@ -5,12 +5,12 @@ ms.assetid: 2dd5a293-047a-4639-9c95-7074578952be
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a935d2a44d3350d8c24ca3bdb388f0a4bd8f16ee
-ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.openlocfilehash: 9811a365f321a0fb81b770e87a0987bac4c52d7bc681c44c90c35cbd3e7a1d7a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "103917125"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118188724"
 ---
 # <a name="group-objects"></a>Agrupar objetos
 
@@ -31,7 +31,7 @@ Um grupo é representado como um objeto de [**grupo**](/windows/desktop/ADSchema
 </thead>
 <tbody>
 <tr class="odd">
-<td><strong>cn</strong></td>
+<td><strong>Hong</strong></td>
 <td>O <strong>CN</strong> (ou nome comum) é um atributo de valor único que é o nome distinto relativo do objeto. O <strong>CN</strong> é o nome do grupo em Active Directory Domain Services. Assim como acontece com todos os outros objetos, o <strong>CN</strong> de um grupo deve ser exclusivo entre os objetos irmãos no contêiner que contém o grupo.<br/></td>
 </tr>
 <tr class="even">
@@ -59,11 +59,11 @@ Um grupo é representado como um objeto de [**grupo**](/windows/desktop/ADSchema
 </tr>
 <tr class="even">
 <td><strong>objectSid</strong></td>
-<td>O atributo <strong>objectSid</strong> é um atributo de valor único que especifica o Sid (identificador de segurança) do grupo. O SID é um valor exclusivo usado para identificar o grupo como uma entidade de segurança. É um valor binário que o sistema define quando o grupo é criado.<br/> Cada grupo tem um SID exclusivo que o domínio do Windows NT/Windows 2000 Server emite, que é armazenado no atributo <strong>objectSid</strong> do objeto de grupo no diretório. Cada vez que um usuário faz logon, o sistema recupera o SID para os grupos dos quais o usuário é membro e o coloca no token de acesso do usuário. O sistema usa os SIDs no token de acesso do usuário para identificar o usuário e suas associações de grupo em todas as interações subsequentes com a segurança do Windows NT/Windows 2000.<br/> Quando um SID é usado como o identificador exclusivo para um usuário ou grupo, ele não pode nunca ser usado novamente para identificar outro usuário ou grupo.<br/></td>
+<td>O atributo <strong>objectSid</strong> é um atributo de valor único que especifica o Sid (identificador de segurança) do grupo. O SID é um valor exclusivo usado para identificar o grupo como uma entidade de segurança. É um valor binário que o sistema define quando o grupo é criado.<br/> cada grupo tem um SID exclusivo que os problemas de domínio do servidor Windows NT/Windows 2000 são armazenados no atributo <strong>objectsid</strong> do objeto de grupo no diretório. Cada vez que um usuário faz logon, o sistema recupera o SID para os grupos dos quais o usuário é membro e o coloca no token de acesso do usuário. o sistema usa os SIDs no token de acesso do usuário para identificar o usuário e suas associações de grupo em todas as interações subsequentes com segurança Windows NT/Windows 2000.<br/> Quando um SID é usado como o identificador exclusivo para um usuário ou grupo, ele não pode nunca ser usado novamente para identificar outro usuário ou grupo.<br/></td>
 </tr>
 <tr class="odd">
 <td><strong>sAMAccountName</strong></td>
-<td>O atributo <strong>sAMAccountName</strong> é um atributo de valor único que é o nome de logon usado para dar suporte a clientes e servidores de uma versão anterior (Windows 95, Windows 98 e LAN Manager). O <strong>sAMAccountName</strong> deve ter menos de 20 caracteres para dar suporte a clientes e servidores de uma versão anterior.<br/> O <strong>sAMAccountName</strong> deve ser exclusivo entre todos os objetos de entidade de segurança em um domínio.<br/></td>
+<td>o atributo <strong>sAMAccountName</strong> é um atributo de valor único que é o nome de logon usado para dar suporte a clientes e servidores de uma versão anterior (Windows 95, Windows 98 e LAN Manager). O <strong>sAMAccountName</strong> deve ter menos de 20 caracteres para dar suporte a clientes e servidores de uma versão anterior.<br/> O <strong>sAMAccountName</strong> deve ser exclusivo entre todos os objetos de entidade de segurança em um domínio.<br/></td>
 </tr>
 </tbody>
 </table>
@@ -78,13 +78,13 @@ Há dois tipos de grupos definidos por Active Directory Domain Services, *grupos
 
 Um grupo de segurança fornece um agrupamento lógico de objetos e o próprio grupo pode ser usado como uma entidade de segurança em uma ACL (lista de controle de acesso). Quando um grupo de segurança recebe acesso a um objeto, todos os membros do grupo de segurança recebem automaticamente o mesmo acesso ao objeto. Os grupos de segurança com escopo universal também podem ser usados como uma entidade de email. Enviar uma mensagem de email para um grupo de segurança universal envia a mensagem a todos os membros do grupo.
 
-Um grupo de distribuição também fornece um agrupamento lógico de objetos, mas não pode fornecer nenhum privilégio de acesso. Os grupos de distribuição não estão habilitados para segurança e não podem ser usados como uma entidade de segurança em uma ACL. Os grupos de distribuição são usados somente para fins de agrupamento. Por exemplo, as listas de distribuição podem ser usadas com aplicativos de email, como o Exchange, para enviar emails a uma coleção de usuários.
+Um grupo de distribuição também fornece um agrupamento lógico de objetos, mas não pode fornecer nenhum privilégio de acesso. Os grupos de distribuição não estão habilitados para segurança e não podem ser usados como uma entidade de segurança em uma ACL. Os grupos de distribuição são usados somente para fins de agrupamento. por exemplo, as listas de distribuição podem ser usadas com aplicativos de email, como Exchange, para enviar emails a uma coleção de usuários.
 
 Para obter mais informações sobre tipos de grupo no Active Directory Domain Services, consulte o tópico [tipos de grupo](/previous-versions/windows/it-pro/windows-server-2003/cc781446(v=ws.10)) no [Microsoft TechNet](https://technet.microsoft.com/default.aspx).
 
 ## <a name="group-scope"></a>Escopo do Grupo
 
-Há três escopos de grupo que são definidos por Active Directory Domain Services, *Universal*, *global* e *domínio local*. O escopo do grupo define quais tipos de objeto podem pertencer ao grupo, a quais tipos de grupos o grupo pode ser membro e o escopo dos objetos aos quais os grupos de segurança podem receber acesso. Quando o nível funcional do domínio é definido como modo misto do Windows 2000, os grupos de segurança com escopo universal não podem ser criados.
+Há três escopos de grupo que são definidos por Active Directory Domain Services, *Universal*, *global* e *domínio local*. O escopo do grupo define quais tipos de objeto podem pertencer ao grupo, a quais tipos de grupos o grupo pode ser membro e o escopo dos objetos aos quais os grupos de segurança podem receber acesso. quando o nível funcional do domínio é definido como Windows modo misto de 2000, os grupos de segurança com escopo universal não podem ser criados.
 
 A tabela a seguir lista os três escopos de grupo e mais informações sobre cada escopo para um grupo de segurança.
 

@@ -4,12 +4,12 @@ description: As funções de gerenciamento de rede podem ser agrupadas da seguin
 ms.assetid: dd159e2e-f37e-46b2-b980-008b73d40b39
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5a169d097fbe86c95aa9aa3120c3f732a8edd2c0
-ms.sourcegitcommit: 89f99926f946dc6c5ea600fb7c41f6b19ceac516
+ms.openlocfilehash: b9e9aba93607e3609f0d20f7208184f169fb871ee67f5f2917445683f70e4f04
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "105813135"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117796957"
 ---
 # <a name="network-management-functions"></a>Funções de gerenciamento de rede
 
@@ -43,14 +43,14 @@ As funções de gerenciamento de rede podem ser agrupadas da seguinte maneira.
 
  
 
-## <a name="azure-active-directory-join-information-functions"></a>Azure Active Directory funções de informações de junção
+## <a name="azure-active-directory-join-information-functions"></a>Azure Active Directory Funções de informações de junção
 
 
 
 | Função                                                       | Descrição                                                                                                                                                                                                                                                     |
 |----------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**NetFreeAadJoinInformation**](/windows/desktop/api/lmjoin/nf-lmjoin-netfreeaadjoininformation) | Libera a memória alocada para a estrutura [**de \_ \_ informações de junção DSREG**](/windows/desktop/api/lmjoin/ns-lmjoin-dsreg_join_info) especificada, que contém informações de junção para um locatário e que você recuperou chamando a função [**NetGetAadJoinInformation**](/windows/desktop/api/lmjoin/nf-lmjoin-netgetaadjoininformation) . |
-| [**NetGetAadJoinInformation**](/windows/desktop/api/lmjoin/nf-lmjoin-netgetaadjoininformation)   | Recupera as informações de junção para o locatário especificado. Essa função examina as informações de junção de Microsoft Azure Active Directory e a conta de trabalho que o usuário atual adicionou.                                                                     |
+| [**NetGetAadJoinInformation**](/windows/desktop/api/lmjoin/nf-lmjoin-netgetaadjoininformation)   | Recupera as informações de junção para o locatário especificado. essa função examina as informações de junção de Microsoft Azure Active Directory e a conta de trabalho que o usuário atual adicionou.                                                                     |
 
 
 
@@ -71,8 +71,8 @@ As funções de gerenciamento de rede podem ser agrupadas da seguinte maneira.
 | [**NetProvisionComputerAccount**](/windows/desktop/api/Lmjoin/nf-lmjoin-netprovisioncomputeraccount)                   | Provisiona uma conta de computador para uso posterior em uma operação de ingresso no domínio offline.                                                                                                                                                                                       |
 | [**NetRemoveAlternateComputerName**](/windows/desktop/api/Lmjoin/nf-lmjoin-netremovealternatecomputername)             | Remove um nome alternativo para o computador especificado.                                                                                                                                                                                                                   |
 | [**NetRenameMachineInDomain**](/windows/desktop/api/Lmjoin/nf-lmjoin-netrenamemachineindomain)                         | Altera o nome de um computador em um domínio.                                                                                                                                                                                                                             |
-| [**NetRequestOfflineDomainJoin**](/windows/desktop/api/Lmjoin/nf-lmjoin-netrequestofflinedomainjoin)                   | Executa localmente em um computador para modificar uma imagem do sistema operacional Windows montada em um volume. O registro é carregado para a imagem e os dados de blob de provisionamento são gravados onde podem ser recuperados durante a fase de conclusão de uma operação de ingresso no domínio offline.     |
-| [**NetRequestProvisioningPackageInstall**](/windows/desktop/api/Lmjoin/nf-lmjoin-netrequestprovisioningpackageinstall) | Executa localmente em um computador para modificar uma imagem do sistema operacional Windows montada em um volume. O registro é carregado da imagem e os dados do pacote de provisionamento são gravados onde podem ser recuperados durante a fase de conclusão de uma operação de ingresso no domínio offline. |
+| [**NetRequestOfflineDomainJoin**](/windows/desktop/api/Lmjoin/nf-lmjoin-netrequestofflinedomainjoin)                   | é executado localmente em um computador para modificar um Windows imagem do sistema operacional montada em um volume. O registro é carregado para a imagem e os dados de blob de provisionamento são gravados onde podem ser recuperados durante a fase de conclusão de uma operação de ingresso no domínio offline.     |
+| [**NetRequestProvisioningPackageInstall**](/windows/desktop/api/Lmjoin/nf-lmjoin-netrequestprovisioningpackageinstall) | é executado localmente em um computador para modificar um Windows imagem do sistema operacional montada em um volume. O registro é carregado da imagem e os dados do pacote de provisionamento são gravados onde podem ser recuperados durante a fase de conclusão de uma operação de ingresso no domínio offline. |
 | [**NetSetPrimaryComputerName**](/windows/desktop/api/Lmjoin/nf-lmjoin-netsetprimarycomputername)                       | Define o nome do computador primário para o computador especificado.                                                                                                                                                                                                              |
 | [**NetUnjoinDomain**](/windows/desktop/api/Lmjoin/nf-lmjoin-netunjoindomain)                                           | Desassocia um computador de um grupo de trabalho ou domínio.                                                                                                                                                                                                                        |
 | [**Netvalidaname**](/windows/desktop/api/Lmjoin/nf-lmjoin-netvalidatename)                                           | Verifica a validade de um nome de computador, nome de grupo de trabalho ou nome de domínio.                                                                                                                                                                                               |
@@ -145,14 +145,14 @@ As funções de gerenciamento de rede podem ser agrupadas da seguinte maneira.
 | [**NetMessageBufferSend**](/windows/desktop/api/Lmmsg/nf-lmmsg-netmessagebuffersend)   | Envia uma mensagem para um alias de mensagem registrado.                                  |
 | [**NetMessageNameAdd**](/windows/desktop/api/Lmmsg/nf-lmmsg-netmessagenameadd)         | Registra um alias de mensagem na tabela de nome da mensagem.                            |
 | [**NetMessageNameDel**](/windows/desktop/api/Lmmsg/nf-lmmsg-netmessagenamedel)         | Exclui um alias de mensagem da tabela de nome da mensagem.                            |
-| [**NetMessageNameEnum**](/windows/desktop/api/Lmmsg/nf-lmmsg-netmessagenameenum)       | Lista todos os aliases de mensagens armazenados na tabela nome da mensagem.                 |
-| [**NetMessageNameGetInfo**](/windows/desktop/api/Lmmsg/nf-lmmsg-netmessagenamegetinfo) | Retorna informações sobre um alias de mensagem específico na tabela de nomes de mensagem. |
+| [**NetMessageNameEnum**](/windows/desktop/api/Lmmsg/nf-lmmsg-netmessagenameenum)       | Lista todos os aliases de mensagem armazenados na tabela de nomes de mensagem.                 |
+| [**NetMessageNameGetInfo**](/windows/desktop/api/Lmmsg/nf-lmmsg-netmessagenamegetinfo) | Retorna informações sobre um alias de mensagem específico na tabela de nome da mensagem. |
 
 
 
  
 
-## <a name="netfile-functions"></a>Funções de netfile
+## <a name="netfile-functions"></a>Funções NetFile
 
 
 
@@ -166,13 +166,13 @@ As funções de gerenciamento de rede podem ser agrupadas da seguinte maneira.
 
  
 
-## <a name="remote-utility-functions"></a>Funções do utilitário remoto
+## <a name="remote-utility-functions"></a>Funções do Utilitário Remoto
 
 
 
 | Função                                                       | Descrição                                                                             |
 |----------------------------------------------------------------|-----------------------------------------------------------------------------------------|
-| [**NetRemoteComputerSupports**](/windows/desktop/api/Lmremutl/nf-lmremutl-netremotecomputersupports) | Consulta o redirecionador para recuperar os recursos opcionais aos quais um sistema remoto dá suporte. |
+| [**NetRemoteComputerSupports**](/windows/desktop/api/Lmremutl/nf-lmremutl-netremotecomputersupports) | Consulta o redirecionador para recuperar os recursos opcionais compatíveis com um sistema remoto. |
 | [**NetRemoteTOD**](/windows/desktop/api/Lmremutl/nf-lmremutl-netremotetod)                           | Permite que os aplicativos acessem as informações de hora do dia em um servidor remoto.          |
 
 
@@ -186,11 +186,11 @@ As funções de gerenciamento de rede podem ser agrupadas da seguinte maneira.
 | Função                                                                     | Descrição                                                      |
 |------------------------------------------------------------------------------|------------------------------------------------------------------|
 | [**NetScheduleJobAdd**](/windows/desktop/api/Lmat/nf-lmat-netschedulejobadd)                               | Envia um trabalho para ser executado em uma data e hora futuras especificadas.        |
-| [**NetScheduleJobDel**](/windows/desktop/api/Lmat/nf-lmat-netschedulejobdel)                               | Cancela um intervalo de trabalhos na fila para execução em um computador.             |
-| [**NetScheduleJobEnum**](/windows/desktop/api/Lmat/nf-lmat-netschedulejobenum)                             | Lista os trabalhos em fila em um computador especificado.                   |
+| [**NetScheduleJobDel**](/windows/desktop/api/Lmat/nf-lmat-netschedulejobdel)                               | Cancela um intervalo de trabalhos na fila para executar em um computador.             |
+| [**NetScheduleJobEnum**](/windows/desktop/api/Lmat/nf-lmat-netschedulejobenum)                             | Lista os trabalhos na fila em um computador especificado.                   |
 | [**NetScheduleJobGetInfo**](/windows/desktop/api/Lmat/nf-lmat-netschedulejobgetinfo)                       | Retorna informações sobre um trabalho específico na fila em um computador. |
-| [**GetNetScheduleAccountInformation**](/windows/desktop/api/AtAcct/nf-atacct-getnetscheduleaccountinformation) | Recupera o nome da conta de serviço AT.                           |
-| [**SetNetScheduleAccountInformation**](/windows/desktop/api/AtAcct/nf-atacct-setnetscheduleaccountinformation) | Define o nome e a senha da conta de serviço AT.                   |
+| [**GetNetScheduleAccountInformation**](/windows/desktop/api/AtAcct/nf-atacct-getnetscheduleaccountinformation) | Recupera o nome da conta do Serviço AT.                           |
+| [**SetNetScheduleAccountInformation**](/windows/desktop/api/AtAcct/nf-atacct-setnetscheduleaccountinformation) | Define o nome e a senha da conta do Serviço AT.                   |
 
 
 
@@ -202,7 +202,7 @@ As funções de gerenciamento de rede podem ser agrupadas da seguinte maneira.
 
 | Função                                       | Descrição                                                                        |
 |------------------------------------------------|------------------------------------------------------------------------------------|
-| [**NetServerDiskEnum**](/windows/desktop/api/Lmserver/nf-lmserver-netserverdiskenum) | Retorna uma lista de unidades de disco locais em um servidor.                                   |
+| [**NetServerDiskEnum**](/windows/desktop/api/Lmserver/nf-lmserver-netserverdiskenum) | Retorna uma lista de unidades de disco local em um servidor.                                   |
 | [**NetServerEnum**](/windows/desktop/api/Lmserver/nf-lmserver-netserverenum)         | Lista todos os servidores visíveis de um tipo específico (ou tipos) no domínio especificado. |
 | [**NetServerGetInfo**](/windows/desktop/api/Lmserver/nf-lmserver-netservergetinfo)   | Retorna informações de configuração sobre um servidor especificado.                        |
 | [**NetServerSetInfo**](/windows/desktop/api/Lmserver/nf-lmserver-netserversetinfo)   | Define os parâmetros operacionais de um servidor.                                        |
@@ -217,13 +217,13 @@ As funções de gerenciamento de rede podem ser agrupadas da seguinte maneira.
 
 | Função                                                     | Descrição                                                                                                                                                                                                                                                                                                                 |
 |--------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**NetServerComputerNameAdd**](/windows/desktop/api/Lmserver/nf-lmserver-netservercomputernameadd) | Associa um nome de servidor emulado a cada um dos protocolos de transporte nos quais um servidor está ativo. (Combina a funcionalidade da função [**NetServerTransportEnum**](/windows/desktop/api/Lmserver/nf-lmserver-netservertransportenum) e da função [**NetServerTransportAddEx**](/windows/desktop/api/Lmserver/nf-lmserver-netservertransportaddex) .)                                            |
-| [**NetServerComputerNameDel**](/windows/desktop/api/Lmserver/nf-lmserver-netservercomputernamedel) | Desconecta cada protocolo de transporte de rede de um nome de servidor emulado definido por uma chamada anterior para a função **NetServerComputerNameAdd** .                                                                                                                                                                               |
-| [**NetServerTransportAdd**](/windows/desktop/api/Lmserver/nf-lmserver-netservertransportadd)       | Associa o servidor especificado ao protocolo de transporte. (Essa função dá suporte apenas ao nível de informação [**\_ \_ \_ 0**](/windows/desktop/api/Lmserver/ns-lmserver-server_transport_info_0) de informações de transporte do servidor.)                                                                                                                                                |
-| [**NetServerTransportAddEx**](/windows/desktop/api/Lmserver/nf-lmserver-netservertransportaddex)   | Associa o servidor especificado ao protocolo de transporte. (Essa função estendida dá suporte às informações de [**transporte do servidor \_ \_ info \_ 1**](/windows/desktop/api/Lmserver/ns-lmserver-server_transport_info_1), [**Server \_ Transport \_ info \_ 2**](/windows/desktop/api/Lmserver/ns-lmserver-server_transport_info_2)e [**Server \_ Transport \_ info \_ 3**](/windows/desktop/api/Lmserver/ns-lmserver-server_transport_info_3) .) |
+| [**NetServerComputerNameAdd**](/windows/desktop/api/Lmserver/nf-lmserver-netservercomputernameadd) | Vincula um nome de servidor emulado a cada um dos protocolos de transporte nos quais um servidor está ativo. (Combina a funcionalidade da função [**NetServerTransportEnum**](/windows/desktop/api/Lmserver/nf-lmserver-netservertransportenum) e da [**função NetServerTransportAddEx.)**](/windows/desktop/api/Lmserver/nf-lmserver-netservertransportaddex)                                            |
+| [**NetServerComputerNameDel**](/windows/desktop/api/Lmserver/nf-lmserver-netservercomputernamedel) | Desconecta cada protocolo de transporte de rede de um nome de servidor emulado definido por uma chamada anterior para a **função NetServerComputerNameAdd.**                                                                                                                                                                               |
+| [**NetServerTransportAdd**](/windows/desktop/api/Lmserver/nf-lmserver-netservertransportadd)       | Vincula o servidor especificado ao protocolo de transporte. (Essa função dá suporte apenas ao nível de informações [**SERVER \_ TRANSPORT INFO \_ \_ 0.)**](/windows/desktop/api/Lmserver/ns-lmserver-server_transport_info_0)                                                                                                                                                |
+| [**NetServerTransportAddEx**](/windows/desktop/api/Lmserver/nf-lmserver-netservertransportaddex)   | Vincula o servidor especificado ao protocolo de transporte. (Essa função estendida dá suporte aos níveis de informações [**SERVER \_ TRANSPORT INFO \_ \_ 1,**](/windows/desktop/api/Lmserver/ns-lmserver-server_transport_info_1) [**SERVER TRANSPORT INFO \_ \_ \_ 2**](/windows/desktop/api/Lmserver/ns-lmserver-server_transport_info_2)e [**SERVER TRANSPORT INFO \_ \_ \_ 3.)**](/windows/desktop/api/Lmserver/ns-lmserver-server_transport_info_3) |
 | [**NetServerTransportDel**](/windows/desktop/api/Lmserver/nf-lmserver-netservertransportdel)       | Desconecta o protocolo de transporte do servidor.                                                                                                                                                                                                                                                                         |
 | [**NetServerTransportEnum**](/windows/desktop/api/Lmserver/nf-lmserver-netservertransportenum)     | Enumera os protocolos de transporte gerenciados pelo servidor.                                                                                                                                                                                                                                                                   |
-| [**NetWkstaTransportEnum**](/windows/desktop/api/Lmwksta/nf-lmwksta-netwkstatransportenum)       | Lista os protocolos de transporte que são gerenciados pelo redirecionador.                                                                                                                                                                                                                                                           |
+| [**NetWkstaTransportEnum**](/windows/desktop/api/Lmwksta/nf-lmwksta-netwkstatransportenum)       | Lista os protocolos de transporte gerenciados pelo redirecionador.                                                                                                                                                                                                                                                           |
 
 
 
@@ -236,9 +236,9 @@ As funções de gerenciamento de rede podem ser agrupadas da seguinte maneira.
 | Função                               | Descrição                                                                               |
 |----------------------------------------|-------------------------------------------------------------------------------------------|
 | [**NetUseAdd**](/windows/desktop/api/Lmuse/nf-lmuse-netuseadd)         | Cria uma conexão entre um computador local e um servidor.                               |
-| [**NetUseDel**](/windows/desktop/api/Lmuse/nf-lmuse-netusedel)         | Finaliza uma conexão com um recurso compartilhado.                                                   |
+| [**NetUseDel**](/windows/desktop/api/Lmuse/nf-lmuse-netusedel)         | Encerra uma conexão com um recurso compartilhado.                                                   |
 | [**NetUseEnum**](/windows/desktop/api/Lmuse/nf-lmuse-netuseenum)       | Lista todas as conexões atuais entre o computador local e os recursos em servidores remotos. |
-| [**NetUseGetInfo**](/windows/desktop/api/Lmuse/nf-lmuse-netusegetinfo) | Retorna informações sobre uma conexão a um recurso compartilhado.                              |
+| [**NetUseGetInfo**](/windows/desktop/api/Lmuse/nf-lmuse-netusegetinfo) | Retorna informações sobre uma conexão com um recurso compartilhado.                              |
 
 
 
@@ -250,13 +250,13 @@ As funções de gerenciamento de rede podem ser agrupadas da seguinte maneira.
 
 | Função                                               | Descrição                                                         |
 |--------------------------------------------------------|---------------------------------------------------------------------|
-| [**NetUserAdd**](/windows/desktop/api/Lmaccess/nf-lmaccess-netuseradd)                       | Adiciona uma conta de usuário e atribui um nível de senha e de privilégio.     |
-| [**NetUserChangePassword**](/windows/desktop/api/Lmaccess/nf-lmaccess-netuserchangepassword) | Altera a senha de um usuário para um domínio ou servidor de rede especificado. |
+| [**NetUserAdd**](/windows/desktop/api/Lmaccess/nf-lmaccess-netuseradd)                       | Adiciona uma conta de usuário e atribui um nível de senha e privilégio.     |
+| [**NetUserChangePassword**](/windows/desktop/api/Lmaccess/nf-lmaccess-netuserchangepassword) | Altera a senha de um usuário para um servidor de rede ou domínio especificado. |
 | [**NetUserDel**](/windows/desktop/api/Lmaccess/nf-lmaccess-netuserdel)                       | Exclui uma conta de usuário do servidor.                             |
 | [**NetUserEnum**](/windows/desktop/api/Lmaccess/nf-lmaccess-netuserenum)                     | Lista todas as contas de usuário em um servidor.                                |
-| [**NetUserGetGroups**](/windows/desktop/api/Lmaccess/nf-lmaccess-netusergetgroups)           | Retorna uma lista de nomes de grupos globais aos quais um usuário pertence.       |
+| [**NetUserGetGroups**](/windows/desktop/api/Lmaccess/nf-lmaccess-netusergetgroups)           | Retorna uma lista de nomes de grupo globais aos quais um usuário pertence.       |
 | [**NetUserGetInfo**](/windows/desktop/api/Lmaccess/nf-lmaccess-netusergetinfo)               | Retorna informações sobre uma conta de usuário específica em um servidor.    |
-| [**NetUserGetLocalGroups**](/windows/desktop/api/Lmaccess/nf-lmaccess-netusergetlocalgroups) | Retorna uma lista de nomes de grupos locais aos quais um usuário pertence.        |
+| [**NetUserGetLocalGroups**](/windows/desktop/api/Lmaccess/nf-lmaccess-netusergetlocalgroups) | Retorna uma lista de nomes de grupo local aos quais um usuário pertence.        |
 | [**NetUserSetGroups**](/windows/desktop/api/Lmaccess/nf-lmaccess-netusersetgroups)           | Define associações de grupo global para uma conta de usuário especificada.         |
 | [**NetUserSetInfo**](/windows/desktop/api/Lmaccess/nf-lmaccess-netusersetinfo)               | Define a senha e outros elementos de uma conta de usuário.             |
 
@@ -264,13 +264,13 @@ As funções de gerenciamento de rede podem ser agrupadas da seguinte maneira.
 
  
 
-## <a name="user-modals-functions"></a>Funções de modal do usuário
+## <a name="user-modals-functions"></a>Funções modais do usuário
 
 
 
 | Função                                     | Descrição                                                                                                                                                                                             |
 |----------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**NetUserModalsGet**](/windows/desktop/api/Lmaccess/nf-lmaccess-netusermodalsget) | Retorna informações globais para todos os usuários e grupos globais no banco de dados de segurança, que é o banco de dados SAM (Gerenciador de contas de segurança) ou, no caso de controladores de domínio, o Active Directory. |
+| [**NetUserModalsGet**](/windows/desktop/api/Lmaccess/nf-lmaccess-netusermodalsget) | Retorna informações globais para todos os usuários e grupos globais no banco de dados de segurança, que é o banco de dados SAM (gerenciador de contas de segurança) ou, no caso de controladores de domínio, o Active Directory. |
 | [**NetUserModalsSet**](/windows/desktop/api/Lmaccess/nf-lmaccess-netusermodalsset) | Define informações globais para todos os usuários e grupos globais no banco de dados de segurança.                                                                                                                       |
 
 
@@ -283,22 +283,22 @@ As funções de gerenciamento de rede podem ser agrupadas da seguinte maneira.
 
 | Função                                                               | Descrição                                                                                                                                                                                                                     |
 |------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**NetValidatePasswordPolicyFree**](/windows/desktop/api/Lmaccess/nf-lmaccess-netvalidatepasswordpolicyfree) | Libera a memória que a função [**NetValidatePasswordPolicy**](/windows/desktop/api/Lmaccess/nf-lmaccess-netvalidatepasswordpolicy) aloca para o parâmetro *OutputArg* ,                                                                                      |
-| [**NetValidatePasswordPolicy**](/windows/desktop/api/Lmaccess/nf-lmaccess-netvalidatepasswordpolicy)         | Permite que um aplicativo Verifique a conformidade de senha em relação a um banco de dados de conta fornecido pelo aplicativo e verifique se as senhas atendem aos requisitos de complexidade, duração, comprimento mínimo e reutilização de histórico de uma política de senha. |
+| [**NetValidatePasswordPolicyFree**](/windows/desktop/api/Lmaccess/nf-lmaccess-netvalidatepasswordpolicyfree) | Libera a memória alocada pela [**função NetValidatePasswordPolicy**](/windows/desktop/api/Lmaccess/nf-lmaccess-netvalidatepasswordpolicy) para o *parâmetro OutputArg,*                                                                                      |
+| [**NetValidatePasswordPolicy**](/windows/desktop/api/Lmaccess/nf-lmaccess-netvalidatepasswordpolicy)         | Permite que um aplicativo verifique a conformidade de senha em relação a um banco de dados de conta fornecido pelo aplicativo e verifique se as senhas atendem aos requisitos de complexidade, de idade, de comprimento mínimo e de reutilização de histórico de uma política de senha. |
 
 
 
  
 
-## <a name="workstation-and-workstation-user-functions"></a>Funções de usuário da estação de trabalho e estação de trabalho
+## <a name="workstation-and-workstation-user-functions"></a>Funções de usuário de estação de trabalho e estação de trabalho
 
 
 
 | Função                                           | Descrição                                                                         |
 |----------------------------------------------------|-------------------------------------------------------------------------------------|
-| [**NetWkstaGetInfo**](/windows/desktop/api/Lmwksta/nf-lmwksta-netwkstagetinfo)         | Retorna informações sobre os elementos de configuração para uma estação de trabalho.             |
+| [**NetWkstaGetInfo**](/windows/desktop/api/Lmwksta/nf-lmwksta-netwkstagetinfo)         | Retorna informações sobre os elementos de configuração de uma estação de trabalho.             |
 | [**NetWkstaSetInfo**](/windows/desktop/api/Lmwksta/nf-lmwksta-netwkstasetinfo)         | Configura uma estação de trabalho.                                                           |
-| [**NetWkstaUserEnum**](/windows/desktop/api/Lmwksta/nf-lmwksta-netwkstauserenum)       | Lista informações sobre todos os usuários conectados no momento à estação de trabalho.           |
+| [**NetWkstaUserEnum**](/windows/desktop/api/Lmwksta/nf-lmwksta-netwkstauserenum)       | Lista informações sobre todos os usuários atualmente conectados à estação de trabalho.           |
 | [**NetWkstaUserGetInfo**](/windows/desktop/api/Lmwksta/nf-lmwksta-netwkstausergetinfo) | Retorna informações sobre um usuário conectado no momento.                             |
 | [**NetWkstaUserSetInfo**](/windows/desktop/api/Lmwksta/nf-lmwksta-netwkstausersetinfo) | Define as informações específicas do usuário para os elementos de configuração de uma estação de trabalho. |
 
@@ -320,7 +320,7 @@ As funções de gerenciamento de rede podem ser agrupadas da seguinte maneira.
 -   [**NetAuditWrite**](netauditwrite.md)
 -   [**NetConfigGet**](netconfigget.md)
 -   [**NetConfigGetAll**](netconfiggetall.md)
--   [**Netconfigset**](netconfigset.md)
+-   [**NetConfigSet**](netconfigset.md)
 -   [**NetErrorLogClear**](neterrorlogclear.md)
 -   [**NetErrorLogRead**](neterrorlogread.md)
 -   [**NetErrorLogWrite**](neterrorlogwrite.md)
@@ -337,7 +337,7 @@ As funções de gerenciamento de rede podem ser agrupadas da seguinte maneira.
 
 <dl> <dt>
 
-[Funções de rede do Windows](/windows/desktop/WNet/windows-networking-functions)
+[Windows Funções de rede](/windows/desktop/WNet/windows-networking-functions)
 </dt> </dl>
 
  

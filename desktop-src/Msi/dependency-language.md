@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - Mergemod.dll
-ms.openlocfilehash: fd1d6aad071879b6559ed1472c0463f8f87dd4cc
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3d41bf7b6cd0d6da360804159d6d81435175cfba15752b2ad87599abf79f3374
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105751205"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118378866"
 ---
 # <a name="dependencylanguage-property"></a>Propriedade dependência. Language
 
@@ -49,7 +49,7 @@ Consulte [**a \_ função obter linguagem (objeto de dependência)**](/windows/w
 | Requisito | Valor |
 |--------------------|-----------------------------------------------------------------------------------------|
 | Versão<br/> | Mergemod.dll 1,0 ou posterior<br/>                                                    |
-| parâmetro<br/>  | <dl> <dt>Mergemod. h</dt> </dl>   |
+| Cabeçalho<br/>  | <dl> <dt>Mergemod. h</dt> </dl>   |
 | DLL<br/>     | <dl> <dt>Mergemod.dll</dt> </dl> |
 
 

@@ -1,19 +1,19 @@
 ---
-description: Este artigo contém tabelas de frequência para ajuste de TV analógica internacional para a França. Os índices de frequência não são adequados para números de canal.
+description: Este artigo contém tabelas de frequência para ajuste de TV análogo internacional para a França. Índices de frequência não são adequados para números de canal.
 ms.assetid: 852ead0e-3539-483d-943d-1779f7358ba5
 title: França
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 825efa71702dfe617325586d657665a302076369
-ms.sourcegitcommit: 51ef825fb48f15e1aa30e8795988f10dc2b2155c
+ms.openlocfilehash: 5f977adeb65300d4e064604c11318e962778db6e6893535cd650cccf4016de0f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "112068104"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118401499"
 ---
 # <a name="france"></a>França
 
-Para obter uma explicação das tabelas a seguir, consulte [tabelas e atribuições](tables-and-assignments.md).
+Para uma explicação das tabelas a seguir, consulte [Tabelas e Atribuições](tables-and-assignments.md).
 
 Os índices de frequência nas tabelas da França não são adequados para uso como números de canal.
 
@@ -431,7 +431,7 @@ Os índices de frequência nas tabelas da França não são adequados para uso c
 
 <dl> <dt>
 
-[Ajuste de TV analógica internacional](international-analog-tv-tuning.md)
+[Ajuste de TV análogo internacional](international-analog-tv-tuning.md)
 </dt> </dl>
 
  

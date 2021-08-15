@@ -1,6 +1,6 @@
 ---
-title: Função DsBackupFree (Ntdsbcli. h)
-description: Libera a memória alocada pelas funções de backup e restauração Active Directory Domain Services.
+title: Função DsBackupFree (Ntdsbcli.h)
+description: Libera a memória alocada pelo Active Directory Domain Services funções de backup e restauração.
 ms.assetid: cde2a530-60e6-440c-9d4e-a90d55846973
 ms.tgt_platform: multiple
 keywords:
@@ -15,18 +15,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 27855eeb3417eede371357528457248857c3e626
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 682bc8d8c4938544c85d22658b1ea175223a6e89d07416aa1fa3717285c67892
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103824346"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118191889"
 ---
 # <a name="dsbackupfree-function"></a>Função DsBackupFree
 
-\[Essa função está disponível para uso nos sistemas operacionais especificados na seção requisitos. Ele poderá ser alterado ou ficar indisponível em versões subsequentes. A partir do Windows Vista, use [serviço de cópias de sombra de volume (VSS)](../vss/volume-shadow-copy-service-overview.md) em vez disso.\]
+\[Essa função está disponível para uso nos sistemas operacionais especificados na seção Requisitos. Ele poderá ser alterado ou ficar indisponível em versões subsequentes. Começando com Windows Vista, use [Serviço de Cópias de Sombra de Volume (VSS)](../vss/volume-shadow-copy-service-overview.md) em vez disso.\]
 
-A função **DsBackupFree** libera a memória alocada pelas funções de backup e restauração de Active Directory Domain Services. As funções a seguir alocam memória que deve ser liberada com a função **DsBackupFree** .
+A **função DsBackupFree** libera a memória alocada pelo Active Directory Domain Services funções de backup e restauração. As funções a seguir alocam memória que deve ser liberada com a **função DsBackupFree.**
 
 -   [**DsBackupGetBackupLogs**](dsbackupgetbackuplogs.md)
 -   [**DsBackupGetDatabaseNames**](dsbackupgetdatabasenames.md)
@@ -48,7 +48,7 @@ VOID NTDSBCLI_API DsBackupFree(
 
 <dl> <dt>
 
-*pvBuffer* \[ no\]
+*pvBuffer* \[ Em\]
 </dt> <dd>
 
 Ponteiro para o buffer de memória a ser liberado.
@@ -67,8 +67,8 @@ Essa função não retorna um valor.
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| parâmetro<br/>                   | <dl> <dt>Ntdsbcli. h</dt> </dl>   |
-| Biblioteca<br/>                  | <dl> <dt>Ntdsbcli. lib</dt> </dl> |
+| parâmetro<br/>                   | <dl> <dt>Ntdsbcli.h</dt> </dl>   |
+| Biblioteca<br/>                  | <dl> <dt>Ntdsbcli.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Ntdsbcli.dll</dt> </dl> |
 
 
@@ -89,7 +89,7 @@ Essa função não retorna um valor.
 [**DsRestoreGetDatabaseLocations**](dsrestoregetdatabaselocations.md)
 </dt> <dt>
 
-[Fazendo backup de um servidor de Active Directory](backing-up-an-active-directory-server.md)
+[Fazer o back-up de um servidor do Active Directory](backing-up-an-active-directory-server.md)
 </dt> <dt>
 
 [Funções de backup de diretório](directory-backup-functions.md)

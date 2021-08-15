@@ -4,12 +4,12 @@ ms.assetid: b705b8bc-dc2c-4cee-8306-f494b0f96cbf
 title: FORMSOF termo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 20504a7a36c7f0cb9c69b9513f33446501641bc7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c1ffcbd832833a506db99236bf26921a4b0145ffe5bfccaed8fff59103370291
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105762403"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117863439"
 ---
 # <a name="formsof-term"></a>FORMSOF termo
 
@@ -22,7 +22,7 @@ FORMSOF (<generation_type>,<match_words>)
 
 
 
-O tipo de geração especifica como o Microsoft Windows Search escolhe as formas de palavra alternativas. O valor de **Inflexde** escolhe formulários de inflexão alternativos para as palavras de correspondência. Se a palavra for um verbo, as dezenases alternativas serão usadas. Se a palavra for um substantivo, os formulários singular, plural e Possessive serão usados para detectar correspondências.
+o tipo de geração especifica como o Microsoft Windows Search escolhe os formatos de palavra alternativos. O valor de **Inflexde** escolhe formulários de inflexão alternativos para as palavras de correspondência. Se a palavra for um verbo, as dezenases alternativas serão usadas. Se a palavra for um substantivo, os formulários singular, plural e Possessive serão usados para detectar correspondências.
 
 O valor de corresponder \_ palavras é uma ou mais palavras, separadas por vírgulas.
 

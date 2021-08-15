@@ -1,19 +1,19 @@
 ---
-description: O <url> elemento Especifica uma URL para o local para esse conector de pesquisa.
+description: O <url> elemento especifica uma URL para o local desse conector de pesquisa.
 ms.assetid: fdc9e138-2e98-4f01-ab7b-0c3dfad5a4dd
-title: Elemento URL simpleLocation (esquema do conector de pesquisa)
+title: Elemento simpleLocation url (esquema do conector de pesquisa)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7c40f45ccecb9a1fb81a64f6d749c5050ed1958a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fce95943017f4905414f65b75086d4babdf3750505fece0b73255e0e63623e9b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105794561"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118226321"
 ---
-# <a name="simplelocation-url-element-search-connector-schema"></a>Elemento URL simpleLocation (esquema do conector de pesquisa)
+# <a name="simplelocation-url-element-search-connector-schema"></a>Elemento simpleLocation url (esquema do conector de pesquisa)
 
-O <url> elemento Especifica uma URL para o local para esse conector de pesquisa. Esse valor pode ser uma URL file://regular, conforme definido no RFC 1738 ( https://www.ietf.org/rfc/rfc1738.txt) documento ou ou uma URL que usa o protocolo KnownFolders:. Este elemento não tem elementos filho e nenhum atributo.
+O <url> elemento especifica uma URL para o local desse conector de pesquisa. Esse valor pode ser uma URL de file:// regular conforme definido no RFC 1738 ( documento ou uma URL que usa o https://www.ietf.org/rfc/rfc1738.txt) protocolo knownfolders: . Esse elemento não tem nenhum elemento filho e nenhum atributos.
 
 ## <a name="syntax"></a>Syntax
 
@@ -53,7 +53,7 @@ O <url> elemento Especifica uma URL para o local para esse conector de pesquisa.
 
 ## <a name="remarks"></a>Comentários
 
-Consulte [KNOWNFOLDERID](/windows/desktop/shell/knownfolderid) para obter uma lista de GUIDs de pasta conhecidos. Use o seguinte formato para o valor desse elemento ao usar o protocolo KnownFolder:.
+Consulte [KNOWNFOLDERID para](/windows/desktop/shell/knownfolderid) ver uma lista de GUIDs de pasta conhecidos. Use o seguinte formato para o valor desse elemento ao usar o protocolo knownfolder: .
 
 
 ```
@@ -62,54 +62,54 @@ Consulte [KNOWNFOLDERID](/windows/desktop/shell/knownfolderid) para obter uma li
 
 
 
-A tabela a seguir mostra os GUIDs de pasta conhecidos do Windows 7.
+A tabela a seguir mostra as Windows 7 GUIDs de pasta conhecida.
 
 
 
 | Pasta conhecida                     | GUID                                         |
 |----------------------------------|----------------------------------------------|
-| PASTA de \_ AdminTools             | {724EF170-A42D-4FEF-9F-26-B6-0E-84-6F-BA-4F} |
-| PASTA de \_ AppUpdates             | {a305ce99-f527-492b-8B-1a-7e-76-fa-98-D6-E4} |
-| PASTA de \_ AddNewPrograms         | {de61d971-5ebc-4F02-a3-a9-6C-82-89-5E-5C-04} |
-| PASTA de \_ CDBurning              | {9E52AB10-F80D-49DF-AC-B8-43 -30-F5-68-78-55} |
-| PASTA de \_ ChangeRemovePrograms   | {df7266ac-9274-4867-8D-55-3B-D6-61-de-87-2D} |
-| PASTA de \_ CommonAdminTools       | {D0384E7D-BAC3-4797-8F-14-CB-A2-29-B3-92-B5} |
-| PASTA de \_ CommonOEMLinks         | {C1BAE2D0-10DF-4334-SER-DD-7A-A2-0B-22-7A-9D} |
-| PASTA de \_ commonprograms         | {0139D44E-6AFE-49F2-86-90-3D-AF-CA-E6-FF-B8} |
-| PASTA de \_ CommonStartMenu        | {A4115719-D62E-491D-AA-7C-E7-4B-8B-E3-B0-67} |
-| PASTA de \_ CommonStartup          | {82A5EA35-D9CD-47C5-96 -29-E1-5D-2F-71-4E-6E} |
-| PASTA de \_ CommonTemplates        | {B94237E7-57AC-4347-91-51-B0-8C-6C-32-D1-F7} |
-| PASTA de \_ ComputerFolder         | {0AC0837C-BBF8-452A-85-0D-79-D0-8E-66-7C-A7} |
-| PASTA de \_ ConflictFolder         | {4bfefb45-347d-4006-a5-is-AC-0c-B0-56-71-92} |
-| PASTA de \_ ConnectionsFolder      | {6F0CD92B-2E97-45D1-88-FF-B0-D1-86-B8-DE-DD} |
-| Contatos de FOLDERid \_               | {56784854-C6CB-462b-81-69-88-E3-50-AC-B8-82} |
-| PASTA de \_ ControlPanelFolder     | {82A74AEB-AEB4-465C-A0-14-D0-97-EE-34-6D-63} |
-| Cookies FOLDERid \_                | {2B0F765D-C0E9-4171-90-8E-08-A6-11-B8-4F-F6} |
-| Área de \_ trabalho da pasta                | {B4BFCC3A-DB2C-424C-B0-29-7F-E9-9A-87-C6-41} |
-| PASTA de \_ DeviceMetadataStore    | {5ce4a5e9-e4eb-479d-B8-9F-13-0c-02-88-61-55} |
-| Documentos de FOLDERid \_              | {FDD39AD0-238F-46AF-AD-B4-6C-85-48-03-69-C7} |
-| PASTA de \_ DocumentsLibrary       | {7b0db17d-9cd2-4a93-97-33 -46-CC-89-02-2e-7C} |
-| Downloads de FOLDERid \_              | {374de290-123f-4565-91-64-39-C4-92-5E-46-7B} |
-| Favoritos da PASTAid \_              | {1777F761-68AD-4D8A-87-BD-30-B7-59-FA-33-DD} |
-| Fontes FOLDERid \_                  | {FD228CB7-AE11-4AE3-86-4C-16-F3-91-0A-B8-FE} |
-| Jogos de PASTAid \_                  | {cac52c1a-b53d-4edc-92-D7-6B-2e-8a-C1-94-34} |
-| PASTA de \_ GameTasks              | {54fae61-4dd8-4787 -80-B6-9-2 -20-C4-B7-0}     |
-| Histórico de FOLDERid \_                | {D9DC8A3B-B784-432E-A7-81-5A-11-30-A7-59-63} |
-| \_Grupo doméstico da pasta              | {52528a6b-b9e3-4Add-B6-d-58-8C-2D-BA-84-2D}  |
-| PASTA de \_ ImplicitAppShortcuts   | {bcb5256f-79f6-4cee-B7-25-DC-34-E4-2-FD-46}  |
-| PASTA de \_ InternetCache          | {352481E8-33BE-4251-BA-85-60-07-CA-ED-CF-9D} |
-| PASTA de \_ InternetFolder         | {4D9F7874-4E0C-4904-96-7B-40-B0-D2-0C-3E-4B} |
-| Bibliotecas FOLDERid \_              | {1b3ea5dc-b587-4786-B4-EF-BD-1D-C3-32-AE-AE} |
-| Links de FOLDERid \_                  | {bfb9d5e0-c6a9-404c-B2-B2-AE-6D-B6-AF-49-68} |
-| PASTA de \_ LocalAppData           | {F1B32785-6FBA-4FCF-9D-55-7B-8E-7F-15-70-91} |
-| PASTA de \_ LocalAppDataLow        | {A520A1A4-1780-4FF6-BD-18-16-73-43-C5-AF-16} |
-| PASTA de \_ LocalizedResourcesDir  | {2A00375E-224C-49DE-B8-D1-44-0D-F7-EF-3D-DC} |
-| PASTA de \_ músicas                  | {4BD8D571-6D19-48D3-IS-97-42-22-20-08-0E-43} |
-| PASTA de \_ MusicLibrary           | {2112ab0a-c86a-4FFE-a3-68-d-E9-6e-47-1-2e}   |
-| PASTA de os \_ Netbastidores                | {C5ABBF53-E17F-4121-89-00-86-62-6F-C2-C9-73} |
-| PASTA de \_ NetworkFolder          | {D20BEEC4-5CA8-4905-AE-3B-BF-25-1E-A0-9B-53} |
-| PASTA de \_ OriginalImages         | {2C36C0AA-5812-4b87-BF-D0-4C-D0-DF-B1-9B-39} |
-| Metaálbums de FOLDERid \_            | {69D2CF90-FC33-4FB7-9A-0C-EB-B0-F0-FC-B4-3C} |
+| FOLDERID \_ AdminTools             | {724EF170-A42D-4FEF-9F-26-B6-0E-84-6F-BA-4F} |
+| FOLDERID \_ AppUpdates             | {a305ce99-f527-492b-8b-1a-7e-76-fa-98-d6-e4} |
+| FOLDERID \_ AddNewPrograms         | {de61d971-5ebc-4f02-a3-a9-6c-82-89-5e-5c-04} |
+| FOLDERID \_ CDBoning              | {9E52AB10-F80D-49DF-AC-B8-43-30-F5-68-78-55} |
+| FOLDERID \_ ChangeRemovePrograms   | {df7266ac-9274-4867-8d-55-3b-d6-61-de-87-2d} |
+| FOLDERID \_ CommonAdminTools       | {D0384E7D-BAC3-4797-8F-14-CB-A2-29-B3-92-B5} |
+| FOLDERID \_ CommonOEMLinks         | {C1BAE2D0-10DF-4334-BE-DD-7A-A2-0B-22-7A-9D} |
+| FOLDERID \_ CommonPrograms         | {0139D44E-6AFE-49F2-86-90-3D-AF-CA-E6-FF-B8} |
+| FOLDERID \_ CommonStartMenu        | {A4115719-D62E-491D-AA-7C-E7-4B-8B-E3-B0-67} |
+| FOLDERID \_ CommonStartup          | {82A5EA35-D9CD-47C5-96-29-E1-5D-2F-71-4E-6E} |
+| FOLDERID \_ CommonTemplates        | {B94237E7-57AC-4347-91-51-B0-8C-6C-32-D1-F7} |
+| FOLDERID \_ ComputerFolder         | {0AC0837C-BBF8-452A-85-0D-79-D0-8E-66-7C-A7} |
+| FOLDERID \_ ConflictFolder         | {4bfefb45-347d-4006-a5-be-ac-0c-b0-56-71-92} |
+| FOLDERID \_ ConnectionsFolder      | {6F0CD92B-2E97-45D1-88-FF-B0-D1-86-B8-DE-DD} |
+| Contatos \_ FOLDERID               | {56784854-c6cb-462b-81-69-88-e3-50-ac-b8-82} |
+| Controle \_ FOLDERIDPanelFolder     | {82A74AEB-AEB4-465C-A0-14-D0-97-EE-34-6D-63} |
+| FOLDERID \_ Cookies                | {2B0F765D-C0E9-4171-90-8E-08-A6-11-B8-4F-F6} |
+| FOLDERID \_ Desktop                | {B4BFCC3A-DB2C-424C-B0-29-7F-E9-9A-87-C6-41} |
+| FOLDERID \_ DeviceMetadataStore    | {5ce4a5e9-e4eb-479d-b8-9f-13-0c-02-88-61-55} |
+| Documentos \_ FOLDERID              | {FDD39AD0-238F-46AF-AD-B4-6C-85-48-03-69-C7} |
+| FOLDERID \_ DocumentsLibrary       | {7b0db17d-9cd2-4a93-97-33-46-cc-89-02-2e-7c} |
+| Downloads de FOLDERID \_              | {374de290-123f-4565-91-64-39-c4-92-5e-46-7b} |
+| Favoritos de FOLDERID \_              | {1777F761-68AD-4D8A-87-BD-30-B7-59-FA-33-DD} |
+| Fontes \_ FOLDERID                  | {FD228CB7-AE11-4AE3-86-4C-16-F3-91-0A-B8-FE} |
+| Jogos \_ FOLDERID                  | {ar52c1a-b53d-4edc-92-d7-6b-2e-8a-c1-94-34} |
+| FOLDERID \_ GameTasks              | {54fae61-4dd8-4787-80-b6-9-2-20-c4-b7-0}     |
+| Histórico \_ de FOLDERID                | {D9DC8A3B-B784-432E-A7-81-5A-11-30-A7-59-63} |
+| FOLDERID \_ HomeGroup              | {52528a6b-b9e3-4add-b6-d-58-8c-2d-ba-84-2d}  |
+| FOLDERID \_ ImplicitAppShortcuts   | {bcb5256f-79f6-4cee-b7-25-dc-34-e4-2-fd-46}  |
+| FOLDERID \_ InternetCache          | {352481E8-33BE-4251-BA-85-60-07-CA-ED-CF-9D} |
+| FOLDERID \_ InternetFolder         | {4D9F7874-4E0C-4904-96-7B-40-B0-D2-0C-3E-4B} |
+| Bibliotecas \_ FOLDERID              | {1b3ea5dc-b587-4786-b4-ef-bd-1d-c3-32-ae-ae} |
+| FOLDERID \_ Links                  | {bfb9d5e0-c6a9-404c-b2-b2-ae-6d-b6-af-49-68} |
+| FOLDERID \_ LocalAppData           | {F1B32785-6FBA-4FCF-9D-55-7B-8E-7F-15-70-91} |
+| FOLDERID \_ LocalAppDataLow        | {A520A1A4-1780-4FF6-BD-18-16-73-43-C5-AF-16} |
+| FOLDERID \_ LocalizedResourcesDir  | {2A00375E-224C-49DE-B8-D1-44-0D-F7-EF-3D-DC} |
+| FOLDERID \_ Music                  | {4BD8D571-6D19-48D3-BE-97-42-22-20-08-0E-43} |
+| FOLDERID \_ MusicLibrary           | {2112ab0a-c86a-4ffe-a3-68-d-e9-6e-47-1-2e}   |
+| FOLDERID \_ Net Projeto                | {C5ABBF53-E17F-4121-89-00-86-62-6F-C2-C9-73} |
+| FOLDERID \_ NetworkFolder          | {D20BEEC4-5CA8-4905-AE-3B-BF-25-1E-A0-9B-53} |
+| FOLDERID \_ OriginalImages         | {2C36C0AA-5812-4b87-bf-d0-4c-d0-df-b1-9b-39} |
+| FOLDERID \_ PhotoAlbums            | {69D2CF90-FC33-4FB7-9A-0C-EB-B0-F0-FC-B4-3C} |
 | Imagens de FOLDERid \_               | {33E28130-4E1E-4676-83-5A-98-39-5C-3B-C3-BB} |
 | PASTA de \_ PicturesLibrary        | {a990ae9f-a03b-4e80-94-BC-99-12-D7-50-41-4}  |
 | Listas de reprodução da FOLDERid \_              | {DE92C1C7-837F-4F69-A3-BB-86-E6-31-20-4A-23} |
@@ -159,14 +159,14 @@ A tabela a seguir mostra os GUIDs de pasta conhecidos do Windows 7.
 | PASTA de \_ SystemX86              | {D65231B0-B2F1-4857-A4-CE-A8-E7-C6-EA-7D-27} |
 | Modelos FOLDERid \_              | {A63293E8-664E-48DB-A0-79-DF-75-9E-05-09-F7} |
 | PASTA de os \_ Userfixados             | {9e3995ab-1f9c-4f13-B8-27 -48-B2-4B-6C-71-74} |
-| PASTA de \_ UsersFiles             | {f3ce0f7c-4901-4acc-86-48-D5-D4-4B-04-EF-8F} |
-| PASTA de \_ UsersLibraries         | {a302545d-definitivamente-464b-AB-E8-61-C8-64-8D-93-9B} |
-| PASTA de os perfis de user \_           | {0762D272-C50A-4BB0-A3-82-69-7D-CD-72-9B-80} |
-| FOLDERid \_ Userprogramfiles       | {5cd7aee2-2219-4A67-B8-5D-6C-9c-E1-56 -60-CB} |
-| PASTA de \_ UserProgramFilesCommon | {bcbd3057-ca5c-4622-B4-2D-BC-56-DB-0A-E5-16} |
-| Vídeos de FOLDERid \_                 | {18989B1D-99B5-455B-84-1C-AB-7C-74-E4-DD-FC} |
-| FOLDERid \_ VideosLibrary {        | 491e922f-5643-4af4-a7-EB-4e-7a-13-8D-81-74}  |
-| FOLDERid \_ Windows {              | F38BF404-1D43-42F2-93-05 -67-DE-0B-28-FC-23}  |
+| PASTA de \_ UsersFiles             | {f3ce0f7c-4901-4acc-86-48-d5-d4-4b-04-ef-8f} |
+| Usuários \_ FOLDERIDLibraries         | {a302545d-definitely-464b-ab-e8-61-c8-64-8d-93-9b} |
+| FOLDERID \_ UserProfiles           | {0762D272-C50A-4BB0-A3-82-69-7D-CD-72-9B-80} |
+| FOLDERID \_ UserProgramFiles       | {5cd7aee2-2219-4a67-b8-5d-6c-9c-e1-56-60-cb} |
+| FOLDERID \_ UserProgramFilesCommon | {bcbd3057-ca5c-4622-b4-2d-bc-56-db-0a-e5-16} |
+| Vídeos de \_ FOLDERID                 | {18989B1D-99B5-455B-84-1C-AB-7C-74-E4-DD-FC} |
+| FOLDERID \_ VideosLibrary {        | 491e922f-5643-4af4-a7-eb-4e-7a-13-8d-81-74}  |
+| FOLDERID \_ Windows {              | F38BF404-1D43-42F2-93-05-67-DE-0B-28-FC-23}  |
 
 
 

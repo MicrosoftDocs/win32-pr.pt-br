@@ -3,7 +3,7 @@ title: Área de edição. Border
 description: O atributo Border especifica ou recupera um valor que indica se o controle da caixa de edição tem uma borda. Só pode ser definido em tempo de design.
 ms.assetid: c2de5f45-af49-4780-8fda-2593a46669f5
 keywords:
-- Admy. Border do Windows Media Player
+- Windows Media Player de mymy. Border
 topic_type:
 - apiref
 api_name:
@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ae6d36c9077665a95512bc5374a35275e690f903
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8cbd1c1ad8d2e75e886252147f4675bfa9ff901fe042a3b49a28a2a96ab2955a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105784209"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118340037"
 ---
 # <a name="editboxborder"></a>Área de edição. Border
 

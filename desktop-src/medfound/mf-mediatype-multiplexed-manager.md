@@ -4,12 +4,12 @@ ms.assetid: 5C36956D-336A-4956-8793-D86DC792E906
 title: Atributo MF_MEDIATYPE_MULTIPLEXED_MANAGER (Mfidl. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: aa96c74bbff8f4858c8467fcd13253cfedf2f5dc
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: fe00e8824997a0af89099c7fbaad4a2378b44c3360bad0d4b8808023355da2d5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "104172472"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118973685"
 ---
 # <a name="mf_mediatype_multiplexed_manager-attribute"></a>\_Atributo do \_ Gerenciador de MediaType do MF \_
 
@@ -29,9 +29,9 @@ Passe esse valor em [**IMFAttributes:: getunknown**](/windows/desktop/api/mfobje
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10, versão 1703\]<br/>                          |
+| Cliente mínimo com suporte<br/> | Windows 10, \[ somente aplicativos da área de trabalho da versão 1703\]<br/>                          |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                          |
-| parâmetro<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
 
 
 

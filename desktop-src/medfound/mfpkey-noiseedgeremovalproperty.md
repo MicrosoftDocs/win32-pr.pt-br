@@ -4,12 +4,12 @@ ms.assetid: fdb4f3a8-1447-4e1e-a208-0f9b717f7626
 title: Propriedade MFPKEY_NOISEEDGEREMOVAL (Wmcodecdsp. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 30acd92bae7693d0714e42d6b4f832a521557bf2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 128ab89cd12c31186cf99e0c01454986bfe950a3d0a68b6196db6df205dea02a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104165385"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118242553"
 ---
 # <a name="mfpkey_noiseedgeremoval-property"></a>\_Propriedade MFPKEY NOISEEDGEREMOVAL
 
@@ -39,13 +39,13 @@ Se o codec for definido para remover bordas ruidosas, ele duplicará as linhas a
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                                             |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                    |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho XP\]<br/>                                             |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                    |
 | parâmetro<br/>                   | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 <dl> <dt>
 

@@ -1,11 +1,11 @@
 ---
-title: Método IBasicDevice UniqueDeviceName
-description: Recupera o nome do dispositivo exclusivo do dispositivo (UDN).
+title: Método UniqueDeviceName de IBasicDevice
+description: Recupera o UDN (nome exclusivo do dispositivo).
 ms.assetid: 393EFF96-69E1-4081-905D-D8CC47B5FC4A
 keywords:
-- API de streaming de mídia do método UniqueDeviceName
-- API de streaming de mídia do método UniqueDeviceName, interface IBasicDevice
-- API de streaming de mídia da interface IBasicDevice, método UniqueDeviceName
+- API de Streaming de Mídia do método UniqueDeviceName
+- API de Streaming de Mídia do método UniqueDeviceName, interface IBasicDevice
+- API de Streaming de Mídia da interface IBasicDevice, método UniqueDeviceName
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 4b3103640fd49880dc5ae5ca881618ac1091de62
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 7b70fbc2021cf717cdb49d8a222aa33ad4e9213f297364b81af065c3bbeaed99
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104364798"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118972315"
 ---
-# <a name="ibasicdeviceuniquedevicename-method"></a>Método IBasicDevice:: UniqueDeviceName
+# <a name="ibasicdeviceuniquedevicename-method"></a>Método IBasicDevice::UniqueDeviceName
 
-Recupera o nome do dispositivo exclusivo do dispositivo (UDN).
+Recupera o UDN (nome exclusivo do dispositivo).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -41,16 +41,16 @@ HRESULT UniqueDeviceName(
 
 <dl> <dt>
 
-*valor* \[ do fora\]
+*value* \[ out\]
 </dt> <dd>
 
-Recebe um ponteiro para o modelo s do dispositivo UDN.
+Recebe um ponteiro para o UDN do modelo do dispositivo.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
+O método retorna um **HRESULT.** Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
 
 
 

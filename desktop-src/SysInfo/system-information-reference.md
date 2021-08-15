@@ -1,25 +1,25 @@
 ---
-description: 'Os seguintes elementos são usados com as informações do sistema:'
+description: 'Os seguintes elementos são usados com informações do sistema:'
 ms.assetid: 29467115-e779-44fe-91ba-6e1526b5dfff
-title: Referência de informações do sistema
+title: Informações do Sistema Referência
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 384e39a1fedd25f8a7a11ecb47716d5d4eeab725
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5616a39b0d3a516082781b2b9df7b79be254b71f53fe0da7ac172958f6fa5231
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103829296"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117763377"
 ---
-# <a name="system-information-reference"></a>Referência de informações do sistema
+# <a name="system-information-reference"></a>Informações do Sistema Referência
 
-Os seguintes elementos são usados com as informações do sistema:
+Os seguintes elementos são usados com informações do sistema:
 
--   [Funções de informações do sistema](system-information-functions.md)
--   [Estruturas de informações do sistema](system-information-structures.md)
--   [Macros de informações do sistema](system-information-macros.md)
--   [Tipos de enumeração de informações do sistema](system-information-enumeration-types.md)
--   [**Constantes de máquina de arquivo de imagem**](image-file-machine-constants.md)
+-   [Informações do Sistema Funções](system-information-functions.md)
+-   [Informações do Sistema Estruturas](system-information-structures.md)
+-   [Informações do Sistema Macros](system-information-macros.md)
+-   [Informações do Sistema Tipos de enumeração](system-information-enumeration-types.md)
+-   [**Constantes do computador do arquivo de imagem**](image-file-machine-constants.md)
 
  
 

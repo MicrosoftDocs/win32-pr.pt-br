@@ -1,5 +1,5 @@
 ---
-description: Entenda os conceitos comuns quando você deseja estender Windows Explorer, que é uma das muitas opções de extensibilidade na interface do usuário do Windows Shell.
+description: Entenda os conceitos comuns quando você deseja estender Windows Explorer, que é uma das muitas opções de extensibilidade na interface do usuário Windows Shell.
 title: Conceitos do Common Explorer
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,12 +9,12 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: db9b46bf944992a16b6a1b8a9bcad581ec7d661b
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 5bd0c641e1e265b50180aa6ce4e98eeafbf3f6dc86f4f499dee5267161842e9b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112404929"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118050517"
 ---
 # <a name="common-explorer-concepts"></a>Conceitos do Common Explorer
 
@@ -50,7 +50,7 @@ Assim como as pastas do sistema de arquivos, a coleção de pastas virtuais gera
 
 Ao contrário das pastas do sistema de arquivos, os usuários não podem criar novas pastas virtuais por conta própria. Eles só podem instalar aqueles criados por desenvolvedores que não são da Microsoft. O número de pastas virtuais normalmente é muito menor do que o número de pastas do sistema de arquivos. Para ver uma discussão sobre como implementar pastas virtuais, consulte [Extensões de namespace](nse-works.md).
 
-Você pode ver uma representação visual de como o namespace é estruturado na Barra do Explorer do Windows Explorer. Por exemplo, a captura de tela a seguir Windows Explorer um namespace relativamente simples.
+Você pode ver uma representação visual de como o namespace é estruturado na Barra do Explorer do Windows Explorer. Por exemplo, a captura de tela a seguir Windows Explorer mostra um namespace relativamente simples.
 
 ![captura de tela mostrando uma exibição do namespace do shell](images/prog1.png)
 
@@ -80,7 +80,7 @@ typedef struct _SHITEMID {
 
 O **membro abID** é o identificador do objeto. O comprimento de **abID** não está definido e seu valor é determinado pela pasta que contém o objeto . Como não há nenhuma definição padrão de como os **valores abID** são atribuídos por pastas, eles são significativos apenas para o objeto de pasta associado. Os aplicativos devem simplesmente tratá-los como um token que identifica um objeto em uma pasta específica. Como o comprimento de **abID** varia, o **membro cb** mantém o tamanho da estrutura [**DEMID,**](/windows/desktop/api/Shtypes/ns-shtypes-shitemid) em bytes.
 
-Como as IDs de item não são úteis para fins de exibição, a pasta que contém o objeto normalmente atribui a ele um nome de exibição. Esse é o nome usado pelo Windows Explorer quando exibe o conteúdo de uma pasta. Para obter mais informações sobre como os nomes de exibição são tratados, consulte [Obter informações de uma pasta](folder-info.md).
+Como as IDs de item não são úteis para fins de exibição, a pasta que contém o objeto normalmente atribui a ele um nome de exibição. Esse é o nome usado pelo Windows Explorer quando ele exibe o conteúdo de uma pasta. Para obter mais informações sobre como os nomes de exibição são tratados, consulte [Obter informações de uma pasta](folder-info.md).
 
 ### <a name="item-id-lists"></a>Listas de IDs de Item
 
@@ -100,15 +100,15 @@ As PIDLs completas são usadas com pouca pouca segurança. Muitas funções e m�
 
 As PIDLs relativas mais usadas, *PIDLs* de nível único, são relativas à pasta pai do objeto. Eles contêm apenas a ID do item do objeto e um **NULL de terminação.** As PIDLs de vários níveis também são usadas para muitas finalidades. Eles contêm duas ou mais IDs de item e normalmente definem um caminho de uma pasta pai para um objeto por meio de uma série de uma ou mais subpastas. Observe que um PIDL de nível único ainda pode ser um PIDL totalmente qualificado. Em particular, os objetos da área de trabalho são filhos da área de trabalho, portanto, suas PIDLs totalmente qualificadas contêm apenas uma ID de item.
 
-Conforme discutido em [Obter a ID](folder-id.md)de uma pasta, a API do Shell fornece várias maneiras de recuperar o PIDL de um objeto. Depois de tê-lo, você costuma apenas usá-lo para identificar o objeto ao chamar outras funções e métodos da API do Shell. Nesse contexto, o conteúdo interno de um PIDL é opaco e irrelevante. Para os fins desta discussão, imagine PIDLs como tokens que representam objetos de namespace específicos e concentre-se em como usá-los para tarefas comuns.
+Conforme discutido em [Obter a ID](folder-id.md)de uma pasta, a API do Shell fornece várias maneiras de recuperar o PIDL de um objeto. Depois de usá-lo, você geralmente apenas o usa para identificar o objeto quando chama outras funções e métodos da API do Shell. Nesse contexto, o conteúdo interno de um PIDL é opaco e irrelevante. Para os fins desta discussão, pense em PIDLs como tokens que representam objetos de namespace específicos e concentre-se em como usá-los para tarefas comuns.
 
 ### <a name="allocating-pidls"></a>Alocando PIDLs
 
-Embora PIDLs tenha alguma semelhança com os caminhos, usá-los requer uma abordagem um pouco diferente. A principal diferença é em como alocar e desalocar memória para eles.
+Embora as PIDLs tenham alguma similaridade com caminhos, usá-los requer uma abordagem um pouco diferente. A principal diferença está em como alocar e desalocar memória para eles.
 
-Assim como a cadeia de caracteres usada para um caminho, a memória deve ser alocada para um PIDL. Se um aplicativo criar um PIDL, ele deverá alocar memória suficiente para a estrutura [**ITEMIDLIST**](/windows/desktop/api/Shtypes/ns-shtypes-itemidlist) . Para a maioria dos casos discutidos aqui, o Shell cria o PIDL e manipula a alocação de memória. Independentemente do que alocou o PIDL, o aplicativo geralmente é responsável por desalocar o PIDL quando ele não é mais necessário.
+Assim como a cadeia de caracteres usada para um caminho, a memória deve ser alocada para um PIDL. Se um aplicativo criar um PIDL, ele deverá alocar memória suficiente para a [**estrutura ITEMIDLIST.**](/windows/desktop/api/Shtypes/ns-shtypes-itemidlist) Para a maioria dos casos discutidos aqui, o Shell cria o PIDL e lida com a alocação de memória. Independentemente do que alocou o PIDL, o aplicativo geralmente é responsável por desalocar o PIDL quando ele não é mais necessário.
 
-Use a função [**CoTaskMemAlloc**](/windows/win32/api/combaseapi/nf-combaseapi-cotaskmemalloc) para alocar o PIDL e a função [**CoTaskMemFree**](/windows/win32/api/combaseapi/nf-combaseapi-cotaskmemfree) para desalocá-lo.
+Use a [**função CoTaskMemAlloc**](/windows/win32/api/combaseapi/nf-combaseapi-cotaskmemalloc) para alocar o PIDL e a [**função CoTaskMemFree**](/windows/win32/api/combaseapi/nf-combaseapi-cotaskmemfree) para desalocar.
 
  
 

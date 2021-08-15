@@ -7,12 +7,12 @@ keywords:
 - Efeitos de segurança em Active Directory Domain Services Active Directory
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3be628acd1709985aeaa9539bfa527de674732ef
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 9d8f5599afbc8552f9708fcfa953a069f429a152c4f0fff37546ffb7d9f6b809
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103822271"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118188201"
 ---
 # <a name="how-security-affects-operations-in-active-directory-domain-services"></a>Como a segurança afeta as operações no Active Directory Domain Services
 
@@ -25,9 +25,9 @@ Para obter mais informações sobre contextos de segurança e os efeitos do cont
 -   [Controle de acesso e criação de objeto](access-control-and-object-creation.md)
 -   [Exclusão de controle de acesso e objeto](access-control-and-object-deletion.md)
 
- 
+ 
 
- 
+ 
 
 
 

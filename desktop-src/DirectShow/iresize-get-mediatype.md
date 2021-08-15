@@ -14,12 +14,12 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: b03bad7f8686fd580f7dd5fc347c347ade1c1c97
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d9e23c78a25f1cda141cb0c3ce55688c12bdf3aab447aca596326e01544b4e8c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105759533"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117818227"
 ---
 # <a name="iresizeget_mediatype-method"></a>Método IResize:: get \_ MediaType
 
@@ -52,7 +52,7 @@ Ponteiro para uma estrutura de [**\_ \_ tipo de mídia am**](/windows/win32/api/
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
 
@@ -66,7 +66,7 @@ Se o tipo de mídia de saída não tiver sido definido, retorne um tipo de mídi
  
 
 > [!Note]  
-> Para obter o QEdit. h, baixe a [atualização SDK do Microsoft Windows para Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). O QEdit. h não está disponível no SDK do Microsoft Windows para Windows 7 e .NET Framework 3,5 Service Pack 1.
+> para obter o Qedit. h, baixe a [atualização SDK do Microsoft Windows para Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit. h não está disponível no SDK do Microsoft Windows para Windows 7 e .NET Framework 3,5 Service Pack 1.
 
  
 
@@ -77,7 +77,7 @@ Se o tipo de mídia de saída não tiver sido definido, retorne um tipo de mídi
 | Requisito | Valor |
 |--------------------|-----------------------------------------------------------------------------------------|
 | Versão<br/> | DirectX 9,0 ou posterior<br/>                                                         |
-| parâmetro<br/>  | <dl> <dt>QEdit. h</dt> </dl>      |
+| Cabeçalho<br/>  | <dl> <dt>QEdit. h</dt> </dl>      |
 | Biblioteca<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
 
 

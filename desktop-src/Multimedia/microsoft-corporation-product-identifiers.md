@@ -3,18 +3,18 @@ title: Identificadores de produtos da Microsoft Corporation
 description: Identificadores de produtos da Microsoft Corporation
 ms.assetid: ef5403ea-1aaf-4791-865a-49d9feb44a4f
 keywords:
-- Multimídia do Windows, identificadores de produtos
+- Windows multimídia, identificadores de produtos
 - multimídia, identificadores de produtos
 - identificadores de produtos
 - identificadores de produtos de multimídia
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e3bfd9c777281a07ebd25b6b0df3f0f4336ea638
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: b0edba7b1c7cfb0716726ac15c4cf0154b7fe6d08d31667c1296f8fadcaefd48
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104363958"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117802826"
 ---
 # <a name="microsoft-corporation-product-identifiers"></a>Identificadores de produtos da Microsoft Corporation
 
@@ -31,18 +31,18 @@ ms.locfileid: "104363958"
 | Porta de entrada MIDI compatível com MPU 401       | MM \_ MPU401 \_ midia                  |
 | Porta de saída MIDI compatível com MPU 401      | MM \_ MPU401 \_ MidiOut                 |
 | Codec do MS ADPCM                           | MM \_ MSFT \_ ACM \_ MSADPCM              |
-| Sintetizador de FM estéreo de placa de áudio da MS     | MM \_ MSFT \_ WSS \_ FMSYNTH \_ estéreo      |
-| Porta AUX de placa de áudio da MS                  | MM \_ MSFT \_ WSS \_ aux                  |
-| Driver de mixer de placa de áudio da MS              | \_mixer do \_ WSS \_ MSFT do mm                |
-| Entrada de formato de onda da placa de áudio da MS            | a \_ \_ Wave do WSS do MSFT mm \_               |
-| Saída da Wave da placa de áudio da MS           | MM \_ de \_ onda do WSS do MSFT \_              |
+| Sintetizador de FM estéreo de placa de áudio da MS     | MM \_ MSFT \_ WSS \_ \_ estéreo FMSYNTH      |
+| Porta AUX de placa de áudio da MS                  | \_ \_ WSS AUX MSFT \_                  |
+| Driver de mixer de placa de áudio da MS              | \_MIXER de \_ WSS do MSFT MM \_                |
+| Entrada de formato de onda da placa de áudio da MS            | MM \_ MSFT \_ WSS \_ wavee               |
+| Saída da Wave da placa de áudio da MS           | MM \_ MSFT \_ WSS \_ waveout              |
 | Gerenciador de compactação de áudio MS             | \_MSACM de MSFT mm \_                     |
 | Filtro MS                                | MM \_ MSFT \_ ACM \_ MSFILTER             |
-| Porta AUX de áudio do MS OEM                    | MM \_ MSFT \_ WSS \_ OEM \_ aux             |
-| Driver de mixer de placa de áudio do MS OEM          | \_mixer de \_ \_ OEM WSS do MSFT \_           |
-| Sintetizador de FM estéreo de placa de áudio do MS OEM | MM \_ MSFT \_ WSS \_ OEM \_ FMSYNTH \_ estéreo |
-| Entrada de formato de onda da placa de áudio do MS OEM        | \_entrada de \_ \_ OEM MSFT \_          |
-| Saída de Wave de placa de áudio do MS OEM       | MM \_ MSFT \_ WSS \_ OEM \_ Wave out         |
+| Porta AUX de áudio do MS OEM                    | MM \_ MSFT \_ WSS \_ OEM \_ AUX             |
+| Driver de mixer de placa de áudio do MS OEM          | MIXER do MM \_ MSFT \_ WSS \_ OEM \_           |
+| Sintetizador de FM estéreo de placa de áudio do MS OEM | MM \_ MSFT \_ WSS \_ \_ estéreo de FMSYNTH OEM \_ |
+| Entrada de formato de onda da placa de áudio do MS OEM        | MM \_ MSFT \_ WSS \_ \_ wave OEM          |
+| Saída de Wave de placa de áudio do MS OEM       | MM \_ MSFT \_ WSS wave out do \_ OEM \_         |
 | Driver AUX (CD) do MS baunilha               | \_CD de \_ \_ aux genérico MSFT mm \_          |
 | AUX do driver do MS baunilha (linha em)          | \_linha de \_ \_ aux genérico do MSFT \_ mm        |
 | Driver AUX (MIC) do MS baunilha              | o \_ \_ \_ MIC auxiliar genérico do MSFT mm \_         |
@@ -62,11 +62,11 @@ ms.locfileid: "104363958"
 
 
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

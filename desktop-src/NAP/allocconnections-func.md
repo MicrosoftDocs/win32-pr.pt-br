@@ -1,6 +1,6 @@
 ---
-title: Função AllocConnections (NapUtil. h)
-description: Aloca memória para um número especificado de estruturas de conexões.
+title: Função AllocConnections (NapUtil.h)
+description: Aloca memória para um número especificado de estruturas de Conexões.
 ms.assetid: 0e0075ed-6e4c-43f7-af40-c6dea2808d05
 keywords:
 - Função AllocConnections NAP
@@ -14,21 +14,21 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3e29521d2fea6eec3765a3a34210b896f1baa4db
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: cf86a44b81ef12234fdac675aa55d36c5e1a336b4316382c3fd322cf0d6ba87a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103645249"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117800197"
 ---
 # <a name="allocconnections-function"></a>Função AllocConnections
 
 > [!Note]  
-> A plataforma de proteção de acesso à rede não está disponível a partir do Windows 10
+> A plataforma de Proteção de Acesso à Rede não está disponível a partir do Windows 10
 
  
 
-A função **AllocConnections** aloca memória para um número especificado de estruturas de [**conexões**](connections-struct.md) .
+A **função AllocConnections** aloca memória para um número especificado de estruturas [**de Conexões.**](connections-struct.md)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -46,21 +46,21 @@ NAPAPI HRESULT WINAPI AllocConnections(
 
 <dl> <dt>
 
-*conexões* \[ do entrada, saída\]
+*conexões* \[ in, out\]
 </dt> <dd>
 
-Um ponteiro para uma matriz de estruturas de [**conexões**](connections-struct.md) alocadas recentemente.
+Um ponteiro para uma matriz de estruturas de [**Conexões recém-alocadas.**](connections-struct.md)
 
 </dd> <dt>
 
-*connectionsCount* \[ no\]
+*connectionsCount* \[ Em\]
 </dt> <dd>
 
-O número de estruturas para alocar a *conexões*.
+O número de estruturas a alocar para *conexões*.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 
 
@@ -76,11 +76,11 @@ O número de estruturas para alocar a *conexões*.
 
 ## <a name="remarks"></a>Comentários
 
-Todas as interfaces COM com suporte do sistema NAP usam regras de gerenciamento de memória COM padrão e os alocadores de memória COM (**CoTaskMemAlloc** e **CoTaskMemFree**):
+Todas as interfaces COM com suporte pelo sistema NAP usam regras de gerenciamento de memória COM padrão e alocadores de memória COM (**CoTaskMemAlloc** e **CoTaskMemFree**):
 
--   **Em** parâmetros são alocados e liberados pelo chamador.
--   Os parâmetros de **saída** são alocados pelo receptor e liberados pelo chamador usando **CoTaskMem**.
--   Os parâmetros **in/out** são alocados pelo chamador, liberados e realocados pelo receptor e, por fim, liberados pelo chamador, usando **CoTaskMem**.
+-   **Em,** os parâmetros são alocados e liberados pelo chamador.
+-   **Os** parâmetros out são alocados pelo chamador e liberados pelo chamador usando **CoTaskMem.**
+-   **Os parâmetros** de saída são alocados pelo chamador, liberados e realocados pelo chamador e, por fim, liberados pelo chamador, usando **CoTaskMem.**
 
 Todas as funções NAP para liberar memória também liberam todos os ponteiros inseridos.
 
@@ -90,9 +90,9 @@ Todas as funções NAP para liberar memória também liberam todos os ponteiros 
 
 | Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                 |
-| parâmetro<br/>                   | <dl> <dt>NapUtil. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                 |
+| Cabeçalho<br/>                   | <dl> <dt>NapUtil.h</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Qutil.dll</dt> </dl> |
 
 

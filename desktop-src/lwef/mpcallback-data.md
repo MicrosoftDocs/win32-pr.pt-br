@@ -3,8 +3,8 @@ title: Estrutura de MPCALLBACK_DATA (MpClient. h)
 description: Dados passados para a função de retorno de chamada.
 ms.assetid: EA8E6C1E-F80B-4247-B073-C78D49A354CF
 keywords:
-- Recursos do ambiente Windows herdado da estrutura de MPCALLBACK_DATA
-- Ponteiro de estrutura de PMPCALLBACK_DATA recursos de ambiente herdados do Windows
+- recursos de ambiente de Windows herdado da estrutura de MPCALLBACK_DATA
+- Windows recursos de ambiente herdados do ponteiro de estrutura do PMPCALLBACK_DATA
 topic_type:
 - apiref
 api_name:
@@ -15,12 +15,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9741ca479eeb9770a3ae8c2aedbc51a8a2643033
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1d1eb129101c341485a1e6b5763a0325cbf586a6e51e5e2875b4465696c39df8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104085507"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117883648"
 ---
 # <a name="mpcallback_data-structure"></a>\_Estrutura de dados MPCALLBACK
 
@@ -283,9 +283,9 @@ Quando **digite**  ==  **MPCALLBACK \_ MALWARETOAST**. Consulte [**\_ dados do M
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                            |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>MpClient. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 8 \[ somente aplicativos da área de trabalho\]<br/>                                            |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 \[ somente aplicativos da área de trabalho\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>MpClient. h</dt> </dl> |
 
 
 

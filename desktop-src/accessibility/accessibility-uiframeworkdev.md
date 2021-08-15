@@ -1,14 +1,14 @@
 ---
-description: Saiba mais sobre como desenvolver estruturas de interface do usuário acessíveis para Windows com esta visão geral dos recursos de acessibilidade do Windows que você pode incorporar à sua estrutura de interface do usuário.
+description: Saiba mais sobre como desenvolver estruturas de interface do usuário acessíveis para Windows com esta visão geral dos Windows recursos de acessibilidade que você pode incorporar à sua estrutura de interface do usuário.
 title: Desenvolvimento de estruturas da interface do usuário acessíveis para Windows
 ms.topic: article
 ms.date: 04/18/2019
-ms.openlocfilehash: d18881913b2a366f086e45473e0f67e57ead66a2
-ms.sourcegitcommit: 6fc8a7419bd01787cf6a1c52c355a4a2d1aec471
+ms.openlocfilehash: 2f80221a8fbe1cb088307ba23ff686d1f70b4b61ea33d5133c43f1c662037cc0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "111988841"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117737765"
 ---
 # <a name="developing-accessible-ui-frameworks-for-windows"></a>Desenvolvimento de estruturas da interface do usuário acessíveis para Windows
 

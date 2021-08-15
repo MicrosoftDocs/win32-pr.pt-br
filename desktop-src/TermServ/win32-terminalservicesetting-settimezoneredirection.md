@@ -1,12 +1,12 @@
 ---
 title: Método SetTimeZoneRedirection da classe Win32_TerminalServiceSetting
-description: O método SetTimeZoneRedirection define a propriedade TimeZoneRedirection, que permite que o computador cliente redirecione suas configurações de fuso horário para a sessão de Serviços de Área de Trabalho Remota.
+description: O método SetTimeZoneRedirection define a propriedade TimeZoneRedirection, que permite que o computador cliente redirecione suas configurações de fuso horário para a Serviços de Área de Trabalho Remota sessão.
 ms.assetid: 4ae149b7-b7de-4530-a142-7253dd1e0d07
 ms.tgt_platform: multiple
 keywords:
-- Serviços de Área de Trabalho Remota do método SetTimeZoneRedirection
-- Método SetTimeZoneRedirection Serviços de Área de Trabalho Remota, classe Win32_TerminalServiceSetting
-- Classe Win32_TerminalServiceSetting Serviços de Área de Trabalho Remota, método SetTimeZoneRedirection
+- Método SetTimeZoneRedirection Serviços de Área de Trabalho Remota
+- Método SetTimeZoneRedirection Serviços de Área de Trabalho Remota , Win32_TerminalServiceSetting classe
+- Win32_TerminalServiceSetting classe Serviços de Área de Trabalho Remota , método SetTimeZoneRedirection
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2761567c724abf129ac881188bc468b228d7fd11
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 802cd4741f4ea30f378492075f69dfa21dfce54688fbc7ff9e72b957689d7c7d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105766940"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117755637"
 ---
 # <a name="settimezoneredirection-method-of-the-win32_terminalservicesetting-class"></a>Método SetTimeZoneRedirection da classe Win32 \_ TerminalServiceSetting
 
-O método **SetTimeZoneRedirection** define a propriedade **TimeZoneRedirection** , que permite que o computador cliente redirecione suas configurações de fuso horário para a sessão de serviços de área de trabalho remota.
+O **método SetTimeZoneRedirection** define a propriedade **TimeZoneRedirection,** que permite que o computador cliente redirecione suas configurações de fuso horário para a Serviços de Área de Trabalho Remota sessão.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -43,10 +43,10 @@ uint32 SetTimeZoneRedirection(
 
 <dl> <dt>
 
-*TimeZoneRedirection* \[ no\]
+*TimeZoneRedirection* \[ Em\]
 </dt> <dd>
 
-O novo valor para a propriedade **TimeZoneRedirection** .
+O novo valor para a **propriedade TimeZoneRedirection.**
 
 <dt>
 
@@ -57,7 +57,7 @@ O novo valor para a propriedade **TimeZoneRedirection** .
 
 </dt> <dd>
 
-Desabilita a propriedade **TimeZoneRedirection** . Nenhum redirecionamento de fuso horário ocorre.
+Desabilita a **propriedade TimeZoneRedirection.** Nenhum redirecionamento de fuso horário ocorre.
 
 </dd> <dt>
 
@@ -68,21 +68,21 @@ Desabilita a propriedade **TimeZoneRedirection** . Nenhum redirecionamento de fu
 
 </dt> <dd>
 
-Habilita a propriedade **TimeZoneRedirection** . O fuso horário do cliente é redirecionado para o fuso horário da sessão.
+Habilita a **propriedade TimeZoneRedirection.** O fuso horário do cliente é redirecionado para o fuso horário da sessão.
 
 </dd> </dl> </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna 0 em caso de êxito; caso contrário, retorna um código de erro WMI. Consulte [serviços de área de trabalho remota códigos de erro do provedor WMI](terminal-services-wmi-provider-error-codes.md) para obter uma lista desses valores.
+Retorna 0 em caso de êxito; caso contrário, retornará um código de erro WMI. Consulte Serviços de Área de Trabalho Remota códigos de erro do provedor [WMI](terminal-services-wmi-provider-error-codes.md) para ver uma lista desses valores.
 
 ## <a name="remarks"></a>Comentários
 
-Por padrão, o fuso horário para a sessão de Serviços de Área de Trabalho Remota é o mesmo que o fuso horário do servidor Host da Sessão da Área de Trabalho Remota (Host da Sessão RD). Os computadores cliente não podem redirecionar informações de fuso horário.
+Por padrão, o fuso horário da Serviços de Área de Trabalho Remota é o mesmo que o fuso horário do servidor Host da Sessão da Área de Trabalho Remota (Host da Sessão RD). Os computadores cliente não podem redirecionar informações de fuso horário.
 
-Se o redirecionamento de fuso horário estiver desabilitado, as novas sessões herdarão o fuso horário do servidor. Quando uma sessão é reconectada, a sessão retém o fuso horário que tinha antes de se desconectar.
+Se o redirecionamento de fuso horário estiver desabilitado, novas sessões herdarão o fuso horário do servidor. Quando uma sessão se reconecta, a sessão retém o fuso horário que tinha antes da desconexão.
 
-Os arquivos de formato MOF (MOF) contêm as definições de classes de Instrumentação de Gerenciamento do Windows (WMI). Os arquivos MOF não são instalados como parte do SDK (Software Development Kit) do Microsoft Windows. Eles são instalados no servidor quando você adiciona a função associada usando o Gerenciador do Servidor. Para obter mais informações sobre arquivos MOF, consulte [formato MOF (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
+arquivos Managed Object Format (MOF) contêm as definições para classes WMI (Instrumentação de Gerenciamento de Windows). Os arquivos MOF não são instalados como parte do Microsoft Windows Software Development Kit (SDK). Eles são instalados no servidor quando você adiciona a função associada usando o Gerenciador do Servidor. Para obter mais informações sobre arquivos MOF, [consulte Managed Object Format (MOF).](/windows/desktop/WmiSdk/managed-object-format--mof-)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -92,8 +92,8 @@ Os arquivos de formato MOF (MOF) contêm as definições de classes de Instrumen
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| Namespace<br/>                | \\TerminalServices da CIMv2 raiz \\<br/>                                                |
-| MOF<br/>                      | <dl> <dt>TSCfgWmi. mof</dt> </dl> |
+| Namespace<br/>                | \\CiMv2 \\ TerminalServices raiz<br/>                                                |
+| MOF<br/>                      | <dl> <dt>TSCfgWmi.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>TSCfgWmi.dll</dt> </dl> |
 
 
@@ -102,7 +102,7 @@ Os arquivos de formato MOF (MOF) contêm as definições de classes de Instrumen
 
 <dl> <dt>
 
-[**\_TerminalServiceSetting Win32**](win32-terminalservicesetting.md)
+[**Win32 \_ TerminalServiceSetting**](win32-terminalservicesetting.md)
 </dt> </dl>
 
  

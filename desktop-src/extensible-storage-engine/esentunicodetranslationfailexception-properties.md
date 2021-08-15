@@ -1,25 +1,25 @@
 ---
-description: 'Saiba mais sobre: Propriedades de EsentUnicodeTranslationFailException'
-title: Propriedades de EsentUnicodeTranslationFailException
+description: 'Saiba mais sobre: propriedades EsentUnicodeTranslationFailException'
+title: Propriedades EsentUnicodeTranslationFailException
 TOCTitle: EsentUnicodeTranslationFailException properties
 ms:assetid: Properties.T:Microsoft.Isam.Esent.Interop.EsentUnicodeTranslationFailException
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentunicodetranslationfailexception_properties(v=EXCHG.10)
 ms:contentKeyID: 55103162
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: dd5b132e22228836247d956d1ea377f52225f06d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2ccb5452e393a1ef5a528e99c396bc0370c40ea1dec195af3106e34149db4050
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104560662"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118257026"
 ---
-# <a name="esentunicodetranslationfailexception-properties"></a>Propriedades de EsentUnicodeTranslationFailException
+# <a name="esentunicodetranslationfailexception-properties"></a>Propriedades EsentUnicodeTranslationFailException
 
 Incluir membros protegidos  
 Incluir membros herdados  
 
-O tipo [EsentUnicodeTranslationFailException](./esentunicodetranslationfailexception-class.md) expõe os membros a seguir.
+O [tipo EsentUnicodeTranslationFailException](./esentunicodetranslationfailexception-class.md) expõe os membros a seguir.
 
 ## <a name="properties"></a>Propriedades
 
@@ -40,16 +40,16 @@ O tipo [EsentUnicodeTranslationFailException](./esentunicodetranslationfailexcep
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
 <td><a href="dn274313(v=exchg.10).md">Erro</a></td>
-<td>Obtém o erro de ESENT subjacente para esta exceção. (Herdado de <a href="dn274314(v=exchg.10).md">EsentErrorException</a>.)</td>
+<td>Obtém o erro Esent subjacente para essa exceção. (Herdado de <a href="dn274314(v=exchg.10).md">EsentErrorException</a>.)</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
-<td><a href="/dotnet/api/system.exception.helplink#System_Exception_HelpLink">HelpLink</a></td>
+<td><a href="/dotnet/api/system.exception.helplink#System_Exception_HelpLink">Helplink</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.protproperty(exchg.10).gif" title="Propriedade protegida" alt="Protected property" /></td>
-<td><a href="/dotnet/api/system.exception.hresult#System_Exception_HResult">Resultado</a></td>
+<td><a href="/dotnet/api/system.exception.hresult#System_Exception_HResult">HResult</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="odd">
@@ -69,7 +69,7 @@ O tipo [EsentUnicodeTranslationFailException](./esentunicodetranslationfailexcep
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
-<td><a href="/dotnet/api/system.exception.stacktrace#System_Exception_StackTrace">Pilha</a></td>
+<td><a href="/dotnet/api/system.exception.stacktrace#System_Exception_StackTrace">StackTrace</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="odd">
@@ -89,4 +89,4 @@ Parte superior
 
 [Classe EsentUnicodeTranslationFailException](./esentunicodetranslationfailexception-class.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

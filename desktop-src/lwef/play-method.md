@@ -1,19 +1,19 @@
 ---
-title: Método play (recursos de ambiente herdado do Windows)
+title: método Play (recursos de ambiente de Windows herdados)
 description: Método play
 ms.assetid: 7e89341a-b4d3-4bea-8e7f-31c649ff06b3
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b1d06f4275d7b4c0959a59536c8b20a95c14ab1c
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: 980c13cbf11e86a25485558fb3ff2ade703010eb180e86291f206ea152f3c0be
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "105813225"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118247082"
 ---
-# <a name="play-method-legacy-windows-environment-features"></a>Método play (recursos de ambiente herdado do Windows)
+# <a name="play-method-legacy-windows-environment-features"></a>método Play (recursos de ambiente de Windows herdados)
 
-\[O Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
+\[o Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
 
 <dl> <dt>
 

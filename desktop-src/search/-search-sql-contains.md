@@ -4,12 +4,12 @@ ms.assetid: 53083966-54cc-4a16-a161-caa663bea7ea
 title: Predicado CONTAINS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 908f4c67d5c1d5bcf00c60bd8cb271928682a907
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b6c821431bb5f00319fe47414dcce5240775f2ce78335998c1bb30b84dc9fe17
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103826907"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117863709"
 ---
 # <a name="contains-predicate"></a>Predicado CONTAINS
 
@@ -23,7 +23,7 @@ Veja a seguir a sintaxe básica do predicado CONTAINS:
 
 A referência de coluna de texto completo \_ é opcional. Com ele, você pode limitar a pesquisa a uma única coluna ou a um grupo de colunas no qual o predicado CONTAINS é testado. Quando a coluna FULLTEXT é especificada como "ALL" ou " \* ", todas as propriedades de texto indexado são pesquisadas. Embora a coluna não precise ser uma propriedade de texto, os resultados poderão ser insignificantes se a coluna for outro tipo de dados. O nome da coluna pode ser um [identificador](-search-sql-identifiers.md)regular ou delimitado, e você deve separá-lo da condição por uma vírgula. Se nenhuma coluna de texto completo for especificada, a coluna System. Search. Content, que é o corpo do documento, será usada.
 
-A parte LCID do predicado especifica a localidade de pesquisa. Isso instrui o mecanismo de pesquisa a usar o separador de palavras apropriado e formulários de inflexão para a consulta de pesquisa. Para especificar a localidade, forneça o identificador de código do idioma padrão do Windows (LCID). Por exemplo, 1033 é o LCID para o Estados Unidos-Inglês. Coloque o LCID como o último item dentro dos parênteses da cláusula CONTAINS. Para obter informações importantes sobre a pesquisa e os idiomas, consulte [usando pesquisas localizadas](-search-sql-usinglocsearches.md).
+A parte LCID do predicado especifica a localidade de pesquisa. Isso instrui o mecanismo de pesquisa a usar o separador de palavras apropriado e formulários de inflexão para a consulta de pesquisa. para especificar a localidade, forneça o Windows identificador de código de idioma padrão (LCID). Por exemplo, 1033 é o LCID para o Estados Unidos-Inglês. Coloque o LCID como o último item dentro dos parênteses da cláusula CONTAINS. Para obter informações importantes sobre a pesquisa e os idiomas, consulte [usando pesquisas localizadas](-search-sql-usinglocsearches.md).
 
 > [!NOTE]  
 > A localidade de pesquisa padrão é a localidade padrão do sistema.

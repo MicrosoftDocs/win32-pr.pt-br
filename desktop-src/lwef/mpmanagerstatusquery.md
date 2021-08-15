@@ -3,7 +3,7 @@ title: Função MpManagerStatusQuery (MpClient. h)
 description: Retorna informações de status sobre vários componentes do Malware Protection Manager. | Função MpManagerStatusQuery (MpClient. h)
 ms.assetid: E993FD8B-A35D-41C1-9522-1B9F0BC10B3D
 keywords:
-- Recursos do ambiente Windows herdado da função MpManagerStatusQuery
+- recursos de ambiente de Windows herdado da função MpManagerStatusQuery
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ad2e28bab1794b53695872310a3a7cf5d088f1a1
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 9d05751f30e1579ef8b12e31a4f858469b1c997cf9c29d7643c0600a133840fd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104298099"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117883371"
 ---
 # <a name="mpmanagerstatusquery-function"></a>Função MpManagerStatusQuery
 
@@ -61,7 +61,7 @@ Ponteiro para uma estrutura que retorna informações de status sobre as última
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **HRESULT**
 
@@ -75,9 +75,9 @@ Se a função falhar, o valor de retorno será um código **HRESULT** com falha.
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                    |
-| parâmetro<br/>                   | <dl> <dt>MpClient. h</dt> </dl>   |
+| Cliente mínimo com suporte<br/> | Windows 8 \[ somente aplicativos da área de trabalho\]<br/>                                              |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 \[ somente aplicativos da área de trabalho\]<br/>                                    |
+| Cabeçalho<br/>                   | <dl> <dt>MpClient. h</dt> </dl>   |
 | DLL<br/>                      | <dl> <dt>MpClient.dll</dt> </dl> |
 
 

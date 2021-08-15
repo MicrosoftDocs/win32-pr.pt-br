@@ -7,16 +7,16 @@ keywords:
 - AD de grupos, obtendo o nome do estilo de conta de domínio de um grupo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8758e61072b862f7c4cd1581b8d54dafb38915be
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 1cc1b5a076ab3e63059fb79fa784039a8fb2ffb0b1c6396392140b64fa36e16f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103822277"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118189085"
 ---
 # <a name="getting-the-domain-account-style-name-of-a-group"></a>Obtendo o nome de Account-Style de domínio de um grupo
 
-Usuários, grupos, computadores e outras entidades de segurança podem ser representados no formulário conta de domínio. A conta de domínio (o nome de logon usado em versões anteriores do Windows NT) tem o seguinte formato:
+Usuários, grupos, computadores e outras entidades de segurança podem ser representados no formulário conta de domínio. conta de domínio (o nome de logon usado em versões anteriores do Windows NT) tem o seguinte formato:
 
 
 ```C++
@@ -25,9 +25,9 @@ Usuários, grupos, computadores e outras entidades de segurança podem ser repre
 
 
 
-Em que " <domain> " é o nome do domínio do Windows NT que contém o usuário e " <account> " é a propriedade **sAMAccountName** do usuário especificado. Por exemplo: "fabrikam \\ jeffsmith".
+em que " <domain> " é o nome do domínio de Windows NT que contém o usuário e " <account> " é a propriedade **samAccountName** do usuário especificado. Por exemplo: "fabrikam \\ jeffsmith".
 
-O formulário conta de domínio pode especificar o confiável em uma ACE em um descritor de segurança. Ele também é usado para o nome de logon em computadores que executam o Windows versão NT 4,0 e anterior.
+O formulário conta de domínio pode especificar o confiável em uma ACE em um descritor de segurança. ele também é usado para o nome de logon em computadores que executam o Windows versão NT 4,0 e anterior.
 
 
 ```C++
@@ -126,9 +126,9 @@ return hr;
 
 
 
- 
+ 
 
- 
+ 
 
 
 

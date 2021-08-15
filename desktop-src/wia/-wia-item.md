@@ -1,5 +1,5 @@
 ---
-description: Os dispositivos de hardware da aquisição de imagens do Windows (WIA) são representados como árvores hierárquicas de objetos de item. O item raiz nessa árvore representa o próprio dispositivo, enquanto os itens filho representam imagens, pastas ou ambientes de verificação.
+description: Windows Os dispositivos de hardware de aquisição de imagem (WIA) são representados como árvores hierárquicas de objetos de item. O item raiz nessa árvore representa o próprio dispositivo, enquanto os itens filho representam imagens, pastas ou ambientes de verificação.
 ms.assetid: 240557d6-665e-4879-8c6e-f564ca61e031
 title: Objeto Item
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Wiascr.dll
-ms.openlocfilehash: 6af0642a47db9d3a7a1c30aea76be22ea5ce1d07
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2b5b32603f334148fede3bc2866367817fd3dcd5ab33aaa40bab84fe3cf49624
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103647486"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118208929"
 ---
 # <a name="item-object"></a>Objeto Item
 
-Os dispositivos de hardware da aquisição de imagens do Windows (WIA) são representados como árvores hierárquicas de objetos de **Item** . O item raiz nessa árvore representa o próprio dispositivo, enquanto os itens filho representam imagens, pastas ou ambientes de verificação.
+Windows Os dispositivos de hardware de aquisição de imagem (WIA) são representados como árvores hierárquicas de objetos de **Item** . O item raiz nessa árvore representa o próprio dispositivo, enquanto os itens filho representam imagens, pastas ou ambientes de verificação.
 
 Use o objeto **Item** para transferir dados para um arquivo, para navegar na árvore de itens de um determinado dispositivo ou para recuperar informações sobre uma imagem ou um dispositivo.
 
@@ -70,7 +70,7 @@ O objeto **Item** tem essas propriedades.
 | [**ThumbHeight**](-wia-iwiadispatchitem-thumbheight.md)<br/>         | Somente leitura<br/> | A altura, em pixels, da imagem em miniatura. Essa propriedade retornará-1 se este item não oferecer suporte a miniaturas. <br/>                                                                                                                               |
 | [**Thumbnail**](-wia-iwiadispatchitem-thumbnail.md)<br/>             | Somente leitura<br/> | O caminho e o nome do arquivo da imagem em miniatura. Essa propriedade será **nula** se o item não oferecer suporte a miniaturas ou se um caminho não puder ser compilado. <br/>                                                                                                  |
 | [**ThumbWidth**](-wia-iwiadispatchitem-thumbwidth.md)<br/>           | Somente leitura<br/> | A largura, em pixels, da imagem em miniatura. Essa propriedade retornará-1 se este item não oferecer suporte a miniaturas. <br/>                                                                                                                                |
-| [**Momento**](-wia-iwiadispatchitem-time.md)<br/>                       | Somente leitura<br/> | A hora atual. Aplica-se somente a dispositivos. <br/>                                                                                                                                                                                                      |
+| [**Tempo**](-wia-iwiadispatchitem-time.md)<br/>                       | Somente leitura<br/> | A hora atual. Aplica-se somente a dispositivos. <br/>                                                                                                                                                                                                      |
 | [**Largura**](-wia-iwiadispatchitem-width.md)<br/>                     | Somente leitura<br/> | A largura, em pixels, do item. <br/>                                                                                                                                                                                                              |
 
 
@@ -101,8 +101,8 @@ Use qualquer um dos seguintes para recuperar uma referência ao objeto:
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 2000 Professional, \[ somente aplicativos da área de trabalho do Windows XP\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                                          |
+| Cliente mínimo com suporte<br/> | Windows 2000 Professional, \[ somente aplicativos de área de trabalho do Windows XP\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                                          |
 | DLL<br/>                      | <dl> <dt>Wiascr.dll (versão 4,90 ou posterior)</dt> </dl> |
 
 

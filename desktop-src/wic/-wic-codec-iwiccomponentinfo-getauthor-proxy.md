@@ -14,12 +14,12 @@ api_type:
 api_location:
 - Windowscodecs.dll
 - Wincodec.lib
-ms.openlocfilehash: f181a567ae4089870d324c7a7e0d67a34b965b5a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c83d42f499c8f821f5b342f08749a2167aac9cc61334fe2fc2d9e9134b5e2b49
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105773036"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118206667"
 ---
 # <a name="iwiccomponentinfo_getauthor_proxy-function"></a>\_Função de proxy IWICComponentInfo Getauthor \_
 
@@ -46,9 +46,9 @@ HRESULT IWICComponentInfo_GetAuthor_Proxy(
 *Isso \_ PTR* \[\]
 </dt> <dd>
 
-Tipo: **[**IWICComponentInfo**](/windows/desktop/api/Wincodec/nn-wincodec-iwiccomponentinfo) \** _
+Tipo: **[ **IWICComponentInfo**](/windows/desktop/api/Wincodec/nn-wincodec-iwiccomponentinfo)\***
 
-Ponteiro para este objeto [_ *IWICComponentInfo* *](/windows/desktop/api/Wincodec/nn-wincodec-iwiccomponentinfo) .
+Ponteiro para este objeto [**IWICComponentInfo**](/windows/desktop/api/Wincodec/nn-wincodec-iwiccomponentinfo) .
 
 </dd> <dt>
 
@@ -64,7 +64,7 @@ O tamanho do buffer *wzAuthor* .
 *wzAuthor* \[ entrada, saída\]
 </dt> <dd>
 
-Tipo: **WCHAR \** _
+Tipo: **WCHAR \***
 
 Um ponteiro que recebe o nome do autor do componente.
 
@@ -72,18 +72,18 @@ A cadeia de caracteres retornada é específica da localidade, 1033 por padrão.
 
 </dd> <dt>
 
-_pcchActual * \[ out\]
+*pcchActual* \[ fora\]
 </dt> <dd>
 
-Tipo: **uint \** _
+Tipo: **uint \***
 
 Um ponteiro que recebe o comprimento real do nome de autores do componente.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Tipo: _ *HRESULT**
+Tipo: **HRESULT**
 
 Se essa função for bem sucedido, ela retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
 
@@ -95,8 +95,8 @@ Se essa função for bem sucedido, ela retornará **S \_ OK**. Caso contrário, 
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows XP com SP2, \[ somente aplicativos da área de trabalho do Windows Vista\]<br/>                                                                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                                                                                             |
+| Cliente mínimo com suporte<br/> | Windows XP com SP2, somente aplicativos do Windows Vista \[ desktop\]<br/>                                                                                              |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                                                                                             |
 | DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec. lib</dt> </dl> |
 
 

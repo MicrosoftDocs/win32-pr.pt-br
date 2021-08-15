@@ -3,7 +3,7 @@ title: Mensagem de EM_SETUIANAME (RichEdit. h)
 description: Define o nome de um controle de edição rico para a automação da interface do usuário (UIA).
 ms.assetid: 60506FEE-9708-4668-8846-42B0B696DD9A
 keywords:
-- Controles de EM_SETUIANAME de mensagens do Windows
+- controles de Windows de mensagem de EM_SETUIANAME
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b0102b792a9eccfc6116acc3a534b00fb64b7ee5
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 603d59b7bf246ee8ed7987d42399281ac1b0520ef27e206f2f8eeddf8f363d87
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918615"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118412321"
 ---
 # <a name="em_setuianame-message"></a>\_Mensagem em SETUIANAME
 
@@ -50,7 +50,7 @@ Um ponteiro para a cadeia de caracteres de nome terminada em nulo.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 TRUE se o nome de UIA for definido com êxito; caso contrário, FALSE.
 
@@ -60,8 +60,8 @@ TRUE se o nome de UIA for definido com êxito; caso contrário, FALSE.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                            |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                  |
+| Cliente mínimo com suporte<br/> | Windows 8 \[ somente aplicativos da área de trabalho\]<br/>                                            |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 \[ somente aplicativos da área de trabalho\]<br/>                                  |
 | parâmetro<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
 
 

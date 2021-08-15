@@ -4,12 +4,12 @@ ms.assetid: ba29a71a-7509-49c7-93d2-f0a699532706
 title: BLOBs de chave pública do Diffie-Hellman versão 3
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: df7228e4b4a786dc0eb25d1ba199b5c20923dd8e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 21515e370fba1c63ab3d852a88ad45b974683a3ca5ba3c3ad258733593fb6e5c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105756859"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117767413"
 ---
 # <a name="diffie-hellman-version-3-public-key-blobs"></a>BLOBs de chave pública do Diffie-Hellman versão 3
 
@@ -50,7 +50,7 @@ A tabela a seguir descreve cada componente do BLOB de chave.
 | Q            | O valor Q está localizado diretamente após o valor P e deve ser sempre o comprimento em bytes do campo [**DHPUBKEY \_ VER3**](/windows/win32/api/wincrypt/ns-wincrypt-dhpubkey_ver3) **bitlenQ** dividido por oito (formato [*little-endian*](../secgloss/l-gly.md) ). Se o valor de bitlenQ for 0, o valor estará ausente do BLOB.                                                                                                                                                                                                                                                                                                                                                                 |
 | G            | O valor G está localizado diretamente após o valor Q e deve ser sempre o comprimento, em bytes, do campo [**DHPUBKEY \_ VER3**](/windows/win32/api/wincrypt/ns-wincrypt-dhpubkey_ver3) **bitlenP** (tamanho de bit P) dividido por oito. Se o comprimento dos dados for um ou mais bytes menores do que P dividido por 8, os dados deverão ser preenchidos com os bytes necessários (de valor zero) para tornar os dados o comprimento desejado (o formato [*little-endian*](../secgloss/l-gly.md) ).                                                                                                                                                                                                                              |
 | J            | O valor J está localizado diretamente após o valor G e deve ser sempre o comprimento em bytes do campo [**DHPUBKEY \_ VER3**](/windows/win32/api/wincrypt/ns-wincrypt-dhpubkey_ver3) **bitlenJ** dividido por oito (formato [*little-endian*](../secgloss/l-gly.md) ). Se o valor de bitlenQ for 0, o valor estará ausente do BLOB.                                                                                                                                                                                                                                                                                                                                                                 |
-| S            | O valor Y, (G ^ X) mod P, está localizado diretamente após o valor J e deve ser sempre o comprimento em bytes do campo [**DHPUBKEY \_ VER3**](/windows/win32/api/wincrypt/ns-wincrypt-dhpubkey_ver3) **bitlenP** (tamanho de bit P) dividido por oito. Se o comprimento dos dados que resulta do cálculo de (G ^ X) mod P for um ou mais bytes menores que P dividido por 8, os dados deverão ser preenchidos com os bytes necessários (de valor zero) para tornar os dados o comprimento desejado ([*little-endian*](../secgloss/l-gly.md) ). Quando essa estrutura é usada com [**CryptSetKeyParam**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptsetkeyparam) com o valor *dwParam* de KP \_ pub \_ params, esse valor não é incluído no BLOB. |
+| Y            | O valor Y, (G ^ X) mod P, está localizado diretamente após o valor J e deve ser sempre o comprimento em bytes do campo [**DHPUBKEY \_ VER3**](/windows/win32/api/wincrypt/ns-wincrypt-dhpubkey_ver3) **bitlenP** (tamanho de bit P) dividido por oito. Se o comprimento dos dados que resulta do cálculo de (G ^ X) mod P for um ou mais bytes menores que P dividido por 8, os dados deverão ser preenchidos com os bytes necessários (de valor zero) para tornar os dados o comprimento desejado ([*little-endian*](../secgloss/l-gly.md) ). Quando essa estrutura é usada com [**CryptSetKeyParam**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptsetkeyparam) com o valor *dwParam* de KP \_ pub \_ params, esse valor não é incluído no BLOB. |
 
 
 

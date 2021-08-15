@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 72816ed0c426f6ff3fa92c30a1ec31757c0a02fd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 684edfbcd830cd0e2f6b70162d045c1f8035dc7e4477ace1c39220bc076215cf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104501159"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117860233"
 ---
 # <a name="folderitemapplication-property"></a>Propriedade FolderItem. Application
 
@@ -43,7 +43,7 @@ Uma variável do tipo [**IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatc
 
 A propriedade **Application** retorna o objeto Automation com suporte do aplicativo que contém o controle WebBrowser, se esse objeto estiver acessível. Caso contrário, essa propriedade retornará o objeto de automação do controle WebBrowser.
 
-Use essa propriedade com os comandos **set** e **CreateObject** ou com o comando **GetObject** para criar e manipular uma instância do aplicativo do Windows Internet Explorer.
+Use essa propriedade com os comandos **Set** e **CreateObject** ou com o comando **getobject** para criar e manipular uma instância do Windows aplicativo Internet Explorer.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -51,7 +51,7 @@ Use essa propriedade com os comandos **set** e **CreateObject** ou com o comando
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 2000 Professional, \[ somente aplicativos da área de trabalho do Windows XP\]<br/>                                         |
+| Cliente mínimo com suporte<br/> | Windows 2000 Professional, \[ somente aplicativos de área de trabalho do Windows XP\]<br/>                                         |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                           |
 | Cabeçalho<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                           |
 | INSERI<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                         |

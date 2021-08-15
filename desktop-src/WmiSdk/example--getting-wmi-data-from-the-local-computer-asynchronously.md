@@ -1,52 +1,52 @@
 ---
-description: Você pode usar os exemplos de procedimento e código neste tópico para criar um aplicativo cliente WMI completo que executa inicialização COM, conecta-se ao WMI no computador local, obtém dados de forma assíncrona e, em seguida, limpa.
+description: Você pode usar os exemplos de procedimento e código neste tópico para criar um aplicativo cliente WMI completo que executa a inicialização COM, conecta-se ao WMI no computador local, obtém dados de forma assíncrona e, em seguida, limpa.
 ms.assetid: 1e11ca27-e67d-486c-8fc5-a10382edfff3
 ms.tgt_platform: multiple
-title: 'Exemplo: obtendo dados do WMI do computador local de forma assíncrona'
+title: 'Exemplo: Obter dados WMI do computador local de forma assíncrona'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a5acf8df91b5ff279d70a9f76f0a353df90e8ff3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 67eb71247816319553389c451dd2e7ad268c49ee7aadeaddc118a3f08448171b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104091785"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118319424"
 ---
-# <a name="example-getting-wmi-data-from-the-local-computer-asynchronously"></a>Exemplo: obtendo dados do WMI do computador local de forma assíncrona
+# <a name="example-getting-wmi-data-from-the-local-computer-asynchronously"></a>Exemplo: Obter dados WMI do computador local de forma assíncrona
 
-Você pode usar os exemplos de procedimento e código neste tópico para criar um aplicativo cliente WMI completo que executa inicialização COM, conecta-se ao WMI no computador local, obtém dados de forma assíncrona e, em seguida, limpa. Este exemplo obtém o nome do sistema operacional no computador local e o exibe.
+Você pode usar os exemplos de procedimento e código neste tópico para criar um aplicativo cliente WMI completo que executa a inicialização COM, conecta-se ao WMI no computador local, obtém dados de forma assíncrona e, em seguida, limpa. Este exemplo obtém o nome do sistema operacional no computador local e o exibe.
 
-O procedimento a seguir é usado para executar o aplicativo WMI. As etapas de 1 a 5 contêm todas as etapas necessárias para configurar e conectar-se ao WMI, e as etapas 6 e sete são onde o nome do sistema operacional é recuperado de forma assíncrona.
+O procedimento a seguir é usado para executar o aplicativo WMI. As etapas 1 a 5 contêm todas as etapas necessárias para configurar e se conectar ao WMI, e as etapas 6 e 7 são onde o nome do sistema operacional é recuperado de forma assíncrona.
 
 **Para obter dados WMI do computador local de forma assíncrona**
 
-1.  Inicialize parâmetros COM com uma chamada para [**CoInitializeEx**](/windows/win32/api/combaseapi/nf-combaseapi-coinitializeex).
+1.  Inicialize parâmetros COM com uma chamada para [**CoInitializeEx.**](/windows/win32/api/combaseapi/nf-combaseapi-coinitializeex)
 
-    Para obter mais informações, consulte [Inicializando com para um aplicativo WMI](initializing-com-for-a-wmi-application.md).
+    Para obter mais informações, consulte [Inicializando COM para um aplicativo WMI](initializing-com-for-a-wmi-application.md).
 
 2.  Inicialize a segurança do processo COM chamando [**CoInitializeSecurity**](/windows/win32/api/combaseapi/nf-combaseapi-coinitializesecurity).
 
-    Para obter mais informações, consulte [definindo o nível de segurança do processo padrão usando C++](setting-the-default-process-security-level-using-c-.md).
+    Para obter mais informações, consulte [Definindo o nível de segurança do processo padrão usando C++.](setting-the-default-process-security-level-using-c-.md)
 
-3.  Obtenha o localizador inicial para o WMI chamando [**CoCreateInstance**](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance).
+3.  Obtenha o localizador inicial para o WMI chamando [**CoCreateInstance.**](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance)
 
-    Para obter mais informações, consulte [criando uma conexão com um namespace do WMI](creating-a-connection-to-a-wmi-namespace.md).
+    Para obter mais informações, consulte [Criando uma conexão com um namespace WMI](creating-a-connection-to-a-wmi-namespace.md).
 
-4.  Obtenha um ponteiro para [**IWbemServices**](/windows/desktop/api/WbemCli/nn-wbemcli-iwbemservices) para o \\ namespace raiz cimv2 no computador local chamando [**IWbemLocator:: ConnectServer**](/windows/desktop/api/Wbemcli/nf-wbemcli-iwbemlocator-connectserver). Para obter mais informações sobre como se conectar a um computador remoto, consulte [exemplo: obtendo dados WMI de um computador remoto](example--getting-wmi-data-from-a-remote-computer.md).
+4.  Obtenha um ponteiro para [**IWbemServices**](/windows/desktop/api/WbemCli/nn-wbemcli-iwbemservices) para o namespace raiz cimv2 no computador local chamando \\ [**IWbemLocator::ConnectServer**](/windows/desktop/api/Wbemcli/nf-wbemcli-iwbemlocator-connectserver). Para obter mais informações sobre como se conectar a um computador remoto, consulte [Exemplo: Obter dados WMI de um computador remoto.](example--getting-wmi-data-from-a-remote-computer.md)
 
-    Para obter mais informações, consulte [criando uma conexão com um namespace do WMI](creating-a-connection-to-a-wmi-namespace.md).
+    Para obter mais informações, consulte [Criando uma conexão com um namespace WMI](creating-a-connection-to-a-wmi-namespace.md).
 
-5.  Defina a segurança do proxy de [**IWbemServices**](/windows/desktop/api/WbemCli/nn-wbemcli-iwbemservices) para que o serviço WMI possa representar o cliente chamando [**CoSetProxyBlanket**](/windows/win32/api/combaseapi/nf-combaseapi-cosetproxyblanket).
+5.  De definir a segurança de proxy de [**IWbemServices**](/windows/desktop/api/WbemCli/nn-wbemcli-iwbemservices) para que o serviço WMI possa representar o cliente chamando [**CoSetProxyBlanket**](/windows/win32/api/combaseapi/nf-combaseapi-cosetproxyblanket).
 
-    Para obter mais informações, consulte [definindo os níveis de segurança em uma conexão WMI](setting-the-security-levels-on-a-wmi-connection.md).
+    Para obter mais informações, consulte [Definindo os níveis de segurança em uma conexão WMI](setting-the-security-levels-on-a-wmi-connection.md).
 
-6.  Use o ponteiro de [**IWbemServices**](/windows/desktop/api/WbemCli/nn-wbemcli-iwbemservices) para fazer solicitações ao WMI. Este exemplo usa o método [**IWbemServices:: ExecQueryAsync**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-execqueryasync) para receber os dados de forma assíncrona. Sempre que você receber dados de forma assíncrona, deverá fornecer uma implementação de [**IWbemObjectSink**](iwbemobjectsink.md). Este exemplo fornece a implementação na classe QuerySink. O código de implementação e o código do arquivo de cabeçalho para essa classe são fornecidos seguindo o exemplo principal. O método **IWbemServices:: ExecQueryAsync** chama o método QuerySink:: indica sempre que os dados são recebidos.
+6.  Use o [**ponteiro IWbemServices**](/windows/desktop/api/WbemCli/nn-wbemcli-iwbemservices) para fazer solicitações ao WMI. Este exemplo usa o [**método IWbemServices::ExecQueryAsync**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-execqueryasync) para receber os dados de forma assíncrona. Sempre que receber dados de forma assíncrona, você deverá fornecer uma implementação [**de IWbemObjectSink.**](iwbemobjectsink.md) Este exemplo fornece a implementação na classe QuerySink. O código de implementação e o código de arquivo de header para essa classe são fornecidos seguindo o exemplo principal. O **método IWbemServices::ExecQueryAsync** chama o método QuerySink::Indicate sempre que os dados são recebidos.
 
-    Para obter mais informações sobre como criar uma solicitação WMI, consulte [manipulando informações de classe e instância](manipulating-class-and-instance-information.md) e [chamando um método](calling-a-method.md).
+    Para obter mais informações sobre como criar uma solicitação WMI, consulte [Manipulando](manipulating-class-and-instance-information.md) informações de classe e instância e [chamando um método](calling-a-method.md).
 
-7.  Aguarde até que os dados sejam recuperados de forma assíncrona. Use o método [**IWbemServices:: CancelAsyncCall**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-cancelasynccall) para interromper manualmente a chamada assíncrona.
+7.  Aguarde até que os dados sejam recuperados de forma assíncrona. Use o [**método IWbemServices::CancelAsyncCall**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-cancelasynccall) para interromper manualmente a chamada assíncrona.
 
-O exemplo de código a seguir obtém dados do WMI do computador local de forma assíncrona.
+O exemplo de código a seguir obtém dados WMI do computador local de forma assíncrona.
 
 
 ```C++
@@ -205,7 +205,7 @@ int main(int argc, char **argv)
 
 
 
-O arquivo de cabeçalho a seguir é usado para a classe QuerySink. A classe QuerySink é usada no exemplo de código anterior.
+O arquivo de header a seguir é usado para a classe QuerySink. A classe QuerySink é usada no exemplo de código anterior.
 
 
 ```C++

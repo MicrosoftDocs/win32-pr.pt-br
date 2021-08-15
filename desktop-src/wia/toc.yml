@@ -3,12 +3,12 @@
   items:
     - name: Informações legais
       href: '-wia-legal-information.md'
-    - name: 'Considerações de segurança: aquisição de imagem do Windows'
+    - name: 'considerações de segurança: aquisição de imagem de Windows'
       href: '-wia-security-considerations.md'
     - name: Referência
       href: '-wia-reference.md'
       items:
-        - name: 'O que há de novo na aquisição de imagens do Windows (WIA) 2,0'
+        - name: 'o que há de novo na WIA (Windows Image Acquisition) 2,0'
           href: '-wia-whatsnew-longhorn.md'
         - name: Interface de programação de aplicativo WIA
           href: '-wia-wia-application-programming-interface.md'
@@ -222,7 +222,7 @@
                 - name: IWiaImageFilter
                   href: '-wia-iwiaimagefilter.md'
                   items:
-                    - name: Aplicarproperties
+                    - name: ApplyProperties
                       href: '-wia-iwiaimagefilter-applyproperties.md'
                     - name: FilterPreviewImage
                       href: '-wia-iwiaimagefilter-filterpreviewimage.md'
@@ -235,15 +235,15 @@
                   items:
                     - name: AnalyzeItem
                       href: /windows/desktop/api/wia_xp/nf-wia_xp-iwiaitem-analyzeitem
-                    - name: Createchilditem
+                    - name: CreateChildItem
                       href: /windows/desktop/api/wia_xp/nf-wia_xp-iwiaitem-createchilditem
                     - name: DeleteItem
                       href: /windows/desktop/api/wia_xp/nf-wia_xp-iwiaitem-deleteitem
                     - name: DeviceCommand
                       href: /windows/desktop/api/wia_xp/nf-wia_xp-iwiaitem-devicecommand
-                    - name: DeviceDlg
+                    - name: Devicedlg
                       href: /windows/desktop/api/wia_xp/nf-wia_xp-iwiaitem-devicedlg
-                    - name: Diagnóstica
+                    - name: Diagnostic
                       href: /windows/desktop/api/wia_xp/nf-wia_xp-iwiaitem-diagnostic
                     - name: DumpDrvItemData
                       href: /windows/desktop/api/wia_xp/nf-wia_xp-iwiaitem-dumpdrvitemdata
@@ -259,7 +259,7 @@
                       href: /windows/desktop/api/wia_xp/nf-wia_xp-iwiaitem-enumregistereventinfo
                     - name: FindItemByName
                       href: /windows/desktop/api/wia_xp/nf-wia_xp-iwiaitem-finditembyname
-                    - name: GetItemType
+                    - name: Getitemtype
                       href: /windows/desktop/api/wia_xp/nf-wia_xp-iwiaitem-getitemtype
                     - name: GetRootItem
                       href: /windows/desktop/api/wia_xp/nf-wia_xp-iwiaitem-getrootitem
@@ -268,15 +268,15 @@
                   items:
                     - name: CheckExtension
                       href: '-wia-iwiaitem2-checkextension.md'
-                    - name: Createchilditem
+                    - name: CreateChildItem
                       href: '-wia-iwiaitem2-createchilditem.md'
                     - name: DeleteItem
                       href: '-wia-iwiaitem2-deleteitem.md'
                     - name: DeviceCommand
                       href: '-wia-iwiaitem2-devicecommand.md'
-                    - name: DeviceDlg
+                    - name: Devicedlg
                       href: '-wia-iwiaitem2-devicedlg.md'
-                    - name: Diagnóstica
+                    - name: Diagnostic
                       href: '-wia-iwiaitem2-diagnostic.md'
                     - name: EnumChildItems
                       href: '-wia-iwiaitem2-enumchilditems.md'
@@ -286,11 +286,11 @@
                       href: '-wia-iwiaitem2-enumregistereventinfo.md'
                     - name: FindItemByName
                       href: '-wia-iwiaitem2-finditembyname.md'
-                    - name: GetExtension
+                    - name: Getextension
                       href: '-wia-iwiaitem2-getextension.md'
                     - name: GetItemCategory
                       href: '-wia-iwiaitem2-getitemcategory.md'
-                    - name: GetItemType
+                    - name: Getitemtype
                       href: '-wia-iwiaitem2-getitemtype.md'
                     - name: GetParentItem
                       href: '-wia-iwiaitem2-getparentitem.md'
@@ -310,7 +310,7 @@
                 - name: IWiaLog
                   href: /windows/desktop/api/wia_xp/nn-wia_xp-iwialog
                   items:
-                    - name: Resultado
+                    - name: Hresult
                       href: /windows/desktop/api/wia_xp/nf-wia_xp-iwialog-hresult
                     - name: InitializeLog
                       href: /windows/desktop/api/wia_xp/nf-wia_xp-iwialog-initializelog
@@ -319,7 +319,7 @@
                 - name: IWiaLogEx
                   href: /windows/desktop/api/wia_xp/nn-wia_xp-iwialogex
                   items:
-                    - name: Resultado
+                    - name: Hresult
                       href: /windows/desktop/api/wia_xp/nf-wia_xp-iwialogex-hresult
                     - name: hResultEx
                       href: /windows/desktop/api/wia_xp/nf-wia_xp-iwialogex-hresultex
@@ -406,7 +406,7 @@
                       href: /windows/desktop/api/Wiavideo/nf-wiavideo-iwiavideo-createvideobywiadevid
                     - name: DestroyVideo
                       href: /windows/desktop/api/Wiavideo/nf-wiavideo-iwiavideo-destroyvideo
-                    - name: Getcurrentstate
+                    - name: GetCurrentState
                       href: /windows/desktop/api/Wiavideo/nf-wiavideo-iwiavideo-getcurrentstate
                     - name: ImagesDirectory
                       href: /windows/desktop/api/Wiavideo/nf-wiavideo-iwiavideo-get_imagesdirectory
@@ -414,7 +414,7 @@
                       href: /windows/desktop/api/Wiavideo/nf-wiavideo-iwiavideo-pause
                     - name: Reproduzir
                       href: /windows/desktop/api/Wiavideo/nf-wiavideo-iwiavideo-play
-                    - name: PreviewVisible
+                    - name: VisualizaçãoVisível
                       href: /windows/desktop/api/Wiavideo/nf-wiavideo-iwiavideo-get_previewvisible
                     - name: ResizeVideo
                       href: /windows/desktop/api/Wiavideo/nf-wiavideo-iwiavideo-resizevideo
@@ -462,33 +462,33 @@
             - name: Constantes
               href: '-wia-constants.md'
               items:
-                - name: Constantes de Propriedade do dispositivo Camera
+                - name: Constantes de propriedade do dispositivo de câmera
                   href: '-wia-wiaitempropcameradevice.md'
-                - name: Constantes da Propriedade Item WIA da câmera
+                - name: Constantes de propriedade de item WIA da câmera
                   href: '-wia-wiaitempropcameraitem.md'
-                - name: Constantes de propriedade de dispositivo comum
+                - name: Constantes comuns de propriedade do dispositivo
                   href: '-wia-wiaitempropcommondevice.md'
-                - name: Constantes de propriedade de item WIA comuns
+                - name: Constantes comuns de propriedade de item WIA
                   href: '-wia-wiaitempropcommonitem.md'
-                - name: Constantes da propriedade de informações do dispositivo
+                - name: Constantes de propriedade de informações do dispositivo
                   href: '-wia-wiadeviceinfoprop.md'
                 - name: Códigos de erro
                   href: '-wia-error-codes.md'
-                - name: Constantes da intenção de imagem
+                - name: Constantes de intenção de imagem
                   href: '-wia-imageintentconstants.md'
                 - name: Atributos de propriedade
                   href: '-wia-property-attributes.md'
-                - name: Constantes de propriedade de dispositivo do scanner
+                - name: Constantes de propriedade do dispositivo do scanner
                   href: '-wia-wiaitempropscannerdevice.md'
-                - name: Constantes da propriedade item do scanner WIA
+                - name: Constantes de propriedade de item WIA do scanner
                   href: '-wia-wiaitempropscanneritem.md'
                 - name: Constantes de propriedade de dispositivo WIA de vídeo
                   href: '-wia-wiaitempropvideodevice.md'
-                - name: 'GUIDs de categoria de item WIA 2,0'
+                - name: GUIDs da categoria de item WIA 2.0
                   href: '-wia-wia2-itemcategoryguids.md'
-                - name: 'Constantes de tamanho de página WIA 2,0'
+                - name: Constantes de tamanho de página WIA 2.0
                   href: '-wia-wia2-pagesizeconstants.md'
-                - name: Comandos do dispositivo WIA
+                - name: Comandos de dispositivo WIA
                   href: '-wia-wia-device-commands.md'
                 - name: Especificadores de tipo de dispositivo WIA
                   href: '-wia-wia-device-type-specifiers.md'
@@ -496,7 +496,7 @@
                   href: '-wia-wia-event-identifiers.md'
                 - name: Sinalizadores de tipo de item WIA
                   href: '-wia-wia-item-type-flags.md'
-                - name: Constantes da propriedade WIA
+                - name: Constantes de propriedade WIA
                   href: '-wia-wia-property-constants.md'
                 - name: WiaFlag
                   href: '-wia-wiaflag.md'
@@ -507,7 +507,7 @@
               href: '-wia-syntax-conventions.md'
             - name: Usando objetos de coleção WIA
               href: '-wia-using-wia-collection-objects.md'
-            - name: Definições de constante da propriedade WIA
+            - name: Definições constantes da propriedade WIA
               href: '-wia-wia-property-constant-definitions.md'
             - name: WiaItemPropertyId
               href: '-wia-wiaitempropertyid.md'
@@ -527,7 +527,7 @@
                   href: '-wia-iwiadeviceinfo-create.md'
                 - name: GetPropById
                   href: '-wia-iwiadeviceinfo-getpropbyid.md'
-                - name: ID
+                - name: Id
                   href: '-wia-iwiadeviceinfo-id.md'
                 - name: Fabricante
                   href: '-wia-iwiadeviceinfo-manufacturer.md'
@@ -558,7 +558,7 @@
                   href: '-wia-iwiadispatchitem-height.md'
                 - name: ItemType
                   href: '-wia-iwiadispatchitem-itemtype.md'
-                - name: Name
+                - name: Nome
                   href: '-wia-iwiadispatchitem-name.md'
                 - name: PictureHeight
                   href: '-wia-iwiadispatchitem-pictureheight.md'
@@ -570,9 +570,9 @@
                   href: '-wia-iwiadispatchitem-thumbheight.md'
                 - name: Thumbnail
                   href: '-wia-iwiadispatchitem-thumbnail.md'
-                - name: ThumbWidth
+                - name: Thumbwidth
                   href: '-wia-iwiadispatchitem-thumbwidth.md'
-                - name: Hora
+                - name: Tempo
                   href: '-wia-iwiadispatchitem-time.md'
                 - name: Transferência
                   href: '-wia-iwiadispatchitem-transfer.md'
@@ -585,7 +585,7 @@
                   href: '-wia-iwia-create.md'
                 - name: Dispositivos
                   href: '-wia-iwia-devices.md'
-            - name: WIA
+            - name: Wia
               href: '-wia-wia.md'
               items:
                 - name: Criar
@@ -598,25 +598,25 @@
                   href: '-wia--iwiaevents-ondevicedisconnected.md'
                 - name: OnTransferComplete
                   href: '-wia--iwiaevents-ontransfercomplete.md'
-    - name: Visões gerais e tutoriais
+    - name: Visão geral e tutoriais
       href: bumper-wia-overviews-and-tutorials.md
       items:
-        - name: Sobre a aquisição de imagens do Windows
+        - name: Sobre a aquisição Windows imagem
           href: '-wia-about-windows-image-acquisition.md'
           items:
-            - name: Arquitetura WIA
+            - name: Arquitetura do WIA
               href: '-wia-wia-architecture.md'
-            - name: Compatibilidade do STI
+            - name: Compatibilidade COM OLS
               href: '-wia-sti-compatibility.md'
-            - name: Compatibilidade com TWAIN
+            - name: Compatibilidade com o LTD
               href: '-wia-twain-compatibility.md'
-            - name: Gerenciador de Dispositivos WIA
+            - name: WiA Gerenciador de Dispositivos
               href: '-wia-wia-device-manager.md'
-            - name: Biblioteca de serviço minidriver WIA
+            - name: Biblioteca de Serviços do Minidriver wia
               href: '-wia-wia-minidriver-service-library.md'
-            - name: Minidriver WIA
+            - name: WIA Minidriver
               href: '-wia-wia-minidriver.md'
-        - name: Usando a aquisição de imagens do Windows
+        - name: Usando a aquisição Windows imagem
           href: '-wia-using-windows-image-acquisition.md'
           items:
             - name: Usando objetos de dispositivo WIA
@@ -626,19 +626,19 @@
                   href: '-wia-selecting-a-device.md'
                 - name: Dispositivos de câmera WIA
                   href: '-wia-wia-camera-devices.md'
-                - name: Sobre a árvore de itens do IWiaItem2
+                - name: Sobre a árvore de itens IWiaItem2
                   href: '-wia-about-item-tree.md'
-                - name: 'Dispositivos do scanner WIA no WIA 1,0'
+                - name: Dispositivos de scanner WIA no WIA 1.0
                   href: '-wia-wia-scanner-devices.md'
             - name: Adquirindo imagens
               href: '-wia-acquiring-images.md'
             - name: Navegando em uma árvore de itens
               href: '-wia-navigating-an-item-tree.md'
-            - name: Registrando eventos WIA
+            - name: Registrando eventos wia
               href: '-wia-registering-wia-events.md'
             - name: Usando enumeradores WIA
               href: '-wia-using-wia-enumerators.md'
-            - name: Lendo e definindo propriedades WIA
+            - name: Lendo e configurando propriedades do WIA
               href: '-wia-reading-and-setting-wia-properties.md'
               items:
                 - name: Validação da propriedade WIA

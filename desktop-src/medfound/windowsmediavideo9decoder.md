@@ -1,60 +1,60 @@
 ---
-description: O decodificador Windows Media Video 9 decodifica fluxos de vídeo que foram codificados pelo codificador de vídeo do Windows Media.
+description: o decodificador Windows media Video 9 decodifica fluxos de vídeo que foram codificados pelo codificador de vídeo de mídia Windows.
 ms.assetid: 08f68d1c-c226-4bf6-abd0-fce0f9ddbc05
-title: Decodificador do Windows Media Video 9 (Wmcodecdsp. h)
+title: Windows Decodificador de vídeo de mídia 9 (Wmcodecdsp. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 96d89e05f82ce503016a10d5591a23bc673d0db5
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b251b46c94ef88283577dbd8268c3275d8ed6aab9321c98e115a42501e2729ed
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105798232"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118237258"
 ---
-# <a name="windows-media-video-9-decoder"></a>Decodificador do Windows Media Video 9
+# <a name="windows-media-video-9-decoder"></a>Windows Decodificador de vídeo de mídia 9
 
-O decodificador Windows Media Video 9 decodifica fluxos de vídeo que foram codificados pelo [**codificador de vídeo do Windows Media**](windowsmediavideo9encoder.md). O codificador e o decodificador dão suporte às quatro categorias de vídeo codificadas a seguir.
+o decodificador Windows media Video 9 decodifica fluxos de vídeo que foram codificados pelo [**codificador de vídeo de mídia Windows**](windowsmediavideo9encoder.md). O codificador e o decodificador dão suporte às quatro categorias de vídeo codificadas a seguir.
 
--   Perfil simples do Windows Media Video 9
--   Perfil principal do Windows Media Video 9
--   Perfil avançado do Windows Media Video 9
--   Imagem do vídeo 9,1 do Windows Media
+-   Windows Perfil simples de vídeo de mídia 9
+-   Windows Perfil principal do vídeo de mídia 9
+-   Windows Perfil avançado de vídeo de mídia 9
+-   Windows Imagem de vídeo de mídia 9,1
 
 ## <a name="class-identifier"></a>Identificador de classe
 
-O CLSID (identificador de classe) para o decodificador de vídeo do Windows Media é representado pela constante **CLSID \_ CWMVDecMediaObject**. Você pode criar uma instância do decodificador de vídeo chamando **CoCreateInstance**.
+o identificador de classe (CLSID) para o decodificador de vídeo de mídia Windows é representado pela constante **CLSID \_ CWMVDecMediaObject**. Você pode criar uma instância do decodificador de vídeo chamando **CoCreateInstance**.
 
 ## <a name="interfaces"></a>Interfaces
 
-Um objeto de decodificador de vídeo expõe a interface [**IMediaObject**](/previous-versions/windows/desktop/api/mediaobj/nn-mediaobj-imediaobject) para que o objeto possa ser usado como um objeto de mídia DirectX (DMO) e expõe a interface [**IMFTransform**](/windows/desktop/api/mftransform/nn-mftransform-imftransform) para que o objeto possa ser usado como uma Media Foundation transformação (MFT).
+um objeto de decodificador de vídeo expõe a interface [**IMediaObject**](/previous-versions/windows/desktop/api/mediaobj/nn-mediaobj-imediaobject) para que o objeto possa ser usado como um objeto de mídia DirectX (DMO) e expõe a interface [**IMFTransform**](/windows/desktop/api/mftransform/nn-mftransform-imftransform) para que o objeto possa ser usado como uma Media Foundation transformação (MFT).
 
-Um decodificador de vídeo se comporta como um DMO ou um MFT dependendo de quais interfaces você obtém e qual versão do Windows está sendo executada. A tabela a seguir mostra as condições sob as quais um decodificador de vídeo se comporta como um DMO ou um MFT.
+um decodificador de vídeo se comporta como um DMO ou um MFT dependendo de quais interfaces você obtém e qual versão do Windows está sendo executada. a tabela a seguir mostra as condições sob as quais um decodificador de vídeo se comporta como um DMO ou um MFT.
 
 
 
 | Sistema operacional            | Comportamento do decodificador                                                                                                                                                      |
 |-----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Windows XP                  | Um decodificador de vídeo do Windows Media sempre se comporta como DMO.                                                                                                                |
-| Windows Vista e Windows 7 | Por padrão, um decodificador de vídeo do Windows Media se comporta como DMO. Se você obtiver uma interface [**IMFTransform**](/windows/desktop/api/mftransform/nn-mftransform-imftransform) em um decodificador de vídeo, ele se comporta como um MFT. |
+| Windows XP                  | um decodificador de vídeo de mídia Windows sempre se comporta como um DMO.                                                                                                                |
+| Windows Vista e Windows 7 | por padrão, um decodificador de vídeo de mídia Windows se comporta como um DMO. Se você obtiver uma interface [**IMFTransform**](/windows/desktop/api/mftransform/nn-mftransform-imftransform) em um decodificador de vídeo, ele se comporta como um MFT. |
 
 
 
  
 
-A partir do Windows 7, o decodificador de vídeo do Windows Media implementa a interface [**IDMOQualityControl**](/previous-versions/windows/desktop/api/mediaobj/nn-mediaobj-idmoqualitycontrol) .
+a partir do Windows 7, o decodificador de vídeo de mídia Windows implementa a interface [**IDMOQualityControl**](/previous-versions/windows/desktop/api/mediaobj/nn-mediaobj-idmoqualitycontrol) .
 
 ## <a name="input-formats"></a>Formatos de entrada
 
-A tabela a seguir mostra os códigos de quatro caracteres (FOURCC) que correspondem às categorias de entrada codificada que são suportadas pelo decodificador de vídeo do Windows Media.
+a tabela a seguir mostra os códigos de quatro caracteres (fourcc) que correspondem às categorias de entrada codificada que são suportadas pelo decodificador de vídeo de mídia Windows.
 
 
 
 | Categoria                               | FOURCC                                   |
 |----------------------------------------|------------------------------------------|
-| Perfil simples do Windows Media Video 9   | "WMV3"                                   |
-| Perfil principal do Windows Media Video 9     | "WMV3"                                   |
-| Perfil avançado do Windows Media Video 9 | "WVC1"                                   |
-| Imagem do vídeo 9,1 do Windows Media          | "WMVP" para 9,1, "WVP2" para 9,1 versão 2 |
+| Windows Perfil simples de vídeo de mídia 9   | "WMV3"                                   |
+| Windows Perfil principal do vídeo de mídia 9     | "WMV3"                                   |
+| Windows Perfil avançado de vídeo de mídia 9 | "WVC1"                                   |
+| Windows Imagem de vídeo de mídia 9,1          | "WMVP" para 9,1, "WVP2" para 9,1 versão 2 |
 
 
 
@@ -62,7 +62,7 @@ A tabela a seguir mostra os códigos de quatro caracteres (FOURCC) que correspon
 
 ## <a name="output-formats"></a>Formatos de saída
 
-O decodificador de vídeo do Windows Media dá suporte aos seguintes subtipos de mídia de saída quando ele está atuando como um DMO.
+o decodificador de vídeo de mídia Windows dá suporte aos seguintes subtipos de mídia de saída quando ele está agindo como um DMO.
 
 -   MEDIASUBTYPE \_ NV12
 -   MEDIASUBTYPE \_ YV12
@@ -76,7 +76,7 @@ O decodificador de vídeo do Windows Media dá suporte aos seguintes subtipos de
 -   MEDIASUBTYPE \_ RGB555
 -   MEDIASUBTYPE \_ RGB8
 
-O decodificador de vídeo do Windows Media dá suporte aos seguintes subtipos de mídia de saída quando ele está atuando como um MFT.
+o decodificador de vídeo de mídia Windows dá suporte aos seguintes subtipos de mídia de saída quando ele está atuando como um MFT.
 
 -   MFVideoFormat \_ NV12
 -   MFVideoFormat \_ YV12
@@ -92,7 +92,7 @@ O decodificador de vídeo do Windows Media dá suporte aos seguintes subtipos de
 
 ## <a name="properties"></a>Propriedades
 
-O decodificador de vídeo do Windows Media dá suporte às propriedades a seguir.
+o decodificador de vídeo de mídia Windows dá suporte às propriedades a seguir.
 
 
 
@@ -161,7 +161,7 @@ Somente gravação.<br />
 <td><strong>g_wszWMVCNeedsDrain</strong></td>
 <td>Especifica se o decodificador deve ser drenado.<br/> <dl> Windows 8<br />
 Somente leitura.<br />
-</dl> Essa propriedade é usada pelo tempo de execução do Windows Media Format. O tipo de propriedade é <strong>VARIANT_BOOL</strong>. Se o valor for <strong>VARIANT_TRUE</strong>, o decodificador deverá ser esgotado após uma descontinuidade. Para obter mais informações sobre como descarregar uma MFT, consulte <a href="basic-mft-processing-model.md">modelo básico de processamento de MFT</a>.<br/>
+</dl> essa propriedade é usada pelo tempo de execução do Windows Media format. O tipo de propriedade é <strong>VARIANT_BOOL</strong>. Se o valor for <strong>VARIANT_TRUE</strong>, o decodificador deverá ser esgotado após uma descontinuidade. Para obter mais informações sobre como descarregar uma MFT, consulte <a href="basic-mft-processing-model.md">modelo básico de processamento de MFT</a>.<br/>
 <blockquote>
 [!Note]<br />
 Para consultar essa propriedade, use a interface <a href="/windows/desktop/com/ipropertybag-and-ipersistpropertybag"><strong>IPropertyBag</strong></a> .
@@ -177,7 +177,7 @@ Para consultar essa propriedade, use a interface <a href="/windows/desktop/com/i
 
 ## <a name="remarks"></a>Comentários
 
-A resolução máxima permitida pelo decodificador do Windows Media Video 9 é 4096x4096.
+a resolução máxima permitida pelo decodificador Windows Media Video 9 é 4096x4096.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -191,7 +191,7 @@ A resolução máxima permitida pelo decodificador do Windows Media Video 9 é 4
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 <dl> <dt>
 

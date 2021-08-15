@@ -3,7 +3,7 @@ title: PLAYLIST. statusColor
 description: O atributo statusColor especifica ou recupera a cor da linha de status no elemento PLAYLIST.
 ms.assetid: 31e32a69-1b77-42fe-9edc-45532ee51c27
 keywords:
-- PLAYLIST. statusColor Windows Media Player
+- Windows Media Player de PLAYLIST. statusColor
 topic_type:
 - apiref
 api_name:
@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 23df2ca06a196db032993de7a75fae61cbcda5df
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8363c8b466d2b6fe6cf8d0858256e3974fcb8f5ea34c73c724e13eb9008f56e9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105812195"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118335650"
 ---
 # <a name="playliststatuscolor"></a>PLAYLIST. statusColor
 
