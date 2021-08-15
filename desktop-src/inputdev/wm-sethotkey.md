@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f7ed27a91ddf9506cd12b988db4bd141a988c13e
-ms.sourcegitcommit: 3d9dce1bd6c84e2b51759e940aa95aa9b459cd20
+ms.openlocfilehash: 4b6c9d4bdb4a59181fe3a413cca6861bc3663367cca9e7b34e0647de88978b0b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "103663827"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118482513"
 ---
 # <a name="wm_sethotkey-message"></a>\_Mensagem de SETtecla do WM
 
@@ -67,7 +67,7 @@ Este parâmetro não é usado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O valor de retorno é um dos seguintes.
 
@@ -104,7 +104,7 @@ Essas teclas de acesso não estão relacionadas às teclas de acesso definidas p
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                                               |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                     |
-| Cabeçalho<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
 
 
 

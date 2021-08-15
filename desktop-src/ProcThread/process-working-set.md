@@ -4,16 +4,16 @@ ms.assetid: 6017ef59-d2e9-4245-a406-8965024dbb35
 title: Conjunto de trabalho do processo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: aaded3d0b5f8c6ad552cc728c68ad0407391c343
-ms.sourcegitcommit: b01ad017c152c6756f3638623fe335877644d414
+ms.openlocfilehash: a345df46f4d36e8400112c54492d7844c7a46b5d5ae125a3d9103db9cbcc18c7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "111549898"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117793504"
 ---
 # <a name="process-working-set"></a>Conjunto de trabalho do processo
 
-O *conjunto de* trabalho de um programa é uma coleção dessas páginas em seu espaço de endereço virtual que foram referenciadas recentemente. Ele inclui dados compartilhados e privados. Os dados compartilhados incluem páginas que contêm todas as instruções que seu aplicativo executa, incluindo aquelas em suas DLLs e as DLLs do sistema. À medida que o tamanho do conjunto de trabalho aumenta, a demanda de memória aumenta.
+O *conjunto de* trabalho de um programa é uma coleção dessas páginas em seu espaço de endereço virtual que foram referenciadas recentemente. Ele inclui dados compartilhados e privados. Os dados compartilhados incluem páginas que contêm todas as instruções que seu aplicativo executa, incluindo aquelas em suas DLLs e nas DLLs do sistema. À medida que o tamanho do conjunto de trabalho aumenta, a demanda de memória aumenta.
 
 Um processo tem um tamanho mínimo do conjunto de trabalho associado e o tamanho máximo do conjunto de trabalho. Cada vez que você chama [**CreateProcess**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-createprocessa), ele reserva o tamanho mínimo do conjunto de trabalho para o processo. O gerenciador de memória virtual tenta manter memória suficiente para o conjunto de trabalho mínimo residente quando o processo está ativo, mas não mantém mais do que o tamanho máximo.
 

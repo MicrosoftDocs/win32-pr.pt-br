@@ -1,21 +1,21 @@
 ---
-title: Acessibilidade Ativa e o dimensionamento de tela do Windows Vista
-description: O Windows Vista permite que os usuários alterem a configuração de pontos por polegada (DPI) para que a maioria dos elementos da interface do usuário na tela pareçam maiores.
+title: Acessibilidade Ativa e Windows o dimensionamento de tela Vista
+description: Windows O Vista permite que os usuários alterem a configuração de pontos por polegada (DPI) para que a maioria dos elementos da interface do usuário na tela pareçam maiores.
 ms.assetid: c781fefd-09f0-4340-b3d3-f4e57308f392
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6db8e192dc01d4c7d75f19741cdfac7b3b08d22c
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: acf9c1ff6755507541c08b34e183dd751e0941fc646a1f691e4488884e572c79
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104454232"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118327056"
 ---
-# <a name="active-accessibility-and-windows-vista-screen-scaling"></a>Acessibilidade Ativa e o dimensionamento de tela do Windows Vista
+# <a name="active-accessibility-and-windows-vista-screen-scaling"></a>Acessibilidade Ativa e Windows o dimensionamento de tela Vista
 
-O Windows Vista permite que os usuários alterem a configuração de pontos por polegada (DPI) para que a maioria dos elementos da interface do usuário na tela pareçam maiores. Embora esse recurso tenha sido muito disponível no Microsoft Windows, em versões anteriores, o dimensionamento precisava ser implementado por aplicativos. No Windows Vista, o Gerenciador de Janelas da Área de Trabalho executa o dimensionamento padrão para todos os aplicativos que não manipulam seu próprio dimensionamento. Os aplicativos cliente Microsoft Acessibilidade Ativa devem levar esse recurso em conta.
+Windows O Vista permite que os usuários alterem a configuração de pontos por polegada (DPI) para que a maioria dos elementos da interface do usuário na tela pareçam maiores. embora esse recurso tenha sido muito disponível no Microsoft Windows, nas versões anteriores, o dimensionamento precisava ser implementado por aplicativos. no Windows Vista, o Gerenciador de Janelas da Área de Trabalho executa o dimensionamento padrão para todos os aplicativos que não manipulam seu próprio dimensionamento. Os aplicativos cliente Microsoft Acessibilidade Ativa devem levar esse recurso em conta.
 
-## <a name="scaling-in-windows-vista"></a>Dimensionamento no Windows Vista
+## <a name="scaling-in-windows-vista"></a>dimensionamento no Windows Vista
 
 A configuração padrão de DPI é 96, o que significa que 96 pixels ocupam uma largura ou altura de uma polegada de conceito. A medida exata de uma "polegada" depende do tamanho e da resolução física do monitor. Por exemplo, em um monitor de 12 polegadas de largura, com uma resolução horizontal de 1280 pixels, uma linha horizontal de 96 pixels se estende cerca de 9/10 de uma polegada.
 
@@ -50,6 +50,6 @@ A solução está em duas partes:
 
 Se seu aplicativo executa comunicação direta entre processos com aplicativos que não reconhecem dpi, você pode ter convertido entre coordenadas lógicas e físicas usando as funções [**PhysicalToLogicalPoint**](/windows/win32/api/winuser/nf-winuser-physicaltologicalpoint) e [**LogicalToPhysicalPoint**](/windows/win32/api/winuser/nf-winuser-logicaltophysicalpoint) .
 
- 
+ 
 
- 
+ 

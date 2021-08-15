@@ -4,12 +4,12 @@ ms.assetid: df7bb9a3-5949-4a4a-8835-c5b1d01b5cb3
 title: Evento MESourceCharacteristicsChanged (Mfobjects. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 659e9eea0352d131aac4959b2952e8426ae408a7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fd69be00727ec3f1f635b82fb6c8e29c4016959ced480be4e9de6b8a83cfe8cb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105788616"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117877363"
 ---
 # <a name="mesourcecharacteristicschanged-event"></a>Evento MESourceCharacteristicsChanged
 
@@ -46,9 +46,9 @@ Os atributos a seguir são definidos para este evento.
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                                     |
-| parâmetro<br/>                   | <dl> <dt>Mfobjects. h (incluir Mfidl. h)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                                           |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                                     |
+| Cabeçalho<br/>                   | <dl> <dt>Mfobjects. h (incluir Mfidl. h)</dt> </dl> |
 
 
 

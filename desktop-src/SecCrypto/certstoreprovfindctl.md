@@ -12,12 +12,12 @@ api_name:
 api_type:
 - UserDefined
 api_location: ''
-ms.openlocfilehash: 9454f918c9cbc5b6f90642d46fbb33573b70457f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f3064b42961196a7522fba6d08ac684aa4421b26727cdf229854351c777a4b56
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105756153"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117769993"
 ---
 # <a name="certstoreprovfindctl-callback-function"></a>Função de retorno de chamada CertStoreProvFindCTL
 
@@ -85,7 +85,7 @@ Em uma localização bem-sucedida, um ponteiro para a CTL encontrada é retornad
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retornará **true** se a função for bem-sucedida ou **false** se falhar.
 
@@ -95,8 +95,8 @@ Retornará **true** se a função for bem-sucedida ou **false** se falhar.
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>          |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho XP\]<br/>          |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/> |
 
 
 

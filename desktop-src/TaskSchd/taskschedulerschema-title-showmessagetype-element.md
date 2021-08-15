@@ -1,9 +1,9 @@
 ---
-title: Elemento Title (defaultmessagetype)
+title: Elemento Title (showMessageType)
 description: Contém o título da caixa de mensagem.
 ms.assetid: 089d2043-41ed-4050-b794-af24ab7ac8b9
 keywords:
-- Elemento de título Agendador de Tarefas
+- Elemento Title Agendador de Tarefas
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: ca5baa7135579ff673ba9b01a672a126924d1d49
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 4e5fe72b791a963e78d49ace14f7edec1210dc3bf23a5f7cee9550e6f6db53e8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104085278"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118355673"
 ---
-# <a name="title-showmessagetype-element"></a>Elemento Title (defaultmessagetype)
+# <a name="title-showmessagetype-element"></a>Elemento Title (showMessageType)
 
 Contém o título da caixa de mensagem.
 
@@ -30,7 +30,7 @@ Contém o título da caixa de mensagem.
  />
 ```
 
-O elemento **title** é definido pelo tipo complexo [**exmessagetype**](taskschedulerschema-showmessagetype-complextype.md) .
+O **elemento Title** é definido pelo tipo complexo [**showMessageType.**](taskschedulerschema-showmessagetype-complextype.md)
 
 ## <a name="parent-element"></a>Elemento pai
 
@@ -38,15 +38,15 @@ O elemento **title** é definido pelo tipo complexo [**exmessagetype**](tasksche
 
 | Elemento                                                                                  | Derivado de                                                               | Descrição                                               |
 |------------------------------------------------------------------------------------------|----------------------------------------------------------------------------|-----------------------------------------------------------|
-| [**Exmessage (The Action)**](taskschedulerschema-showmessage-actiongroup-element.md) | [**defaultmessagetype**](taskschedulerschema-showmessagetype-complextype.md) | Representa uma ação que mostra uma caixa de mensagem.<br/> |
+| [**ShowMessage (actionGroup)**](taskschedulerschema-showmessage-actiongroup-element.md) | [**showMessageType**](taskschedulerschema-showmessagetype-complextype.md) | Representa uma ação que mostra uma caixa de mensagem.<br/> |
 
 
 
 ## <a name="remarks"></a>Comentários
 
-Para desenvolvimento em C++, consulte a [**Propriedade Title de IShowMessageAction**](/windows/desktop/api/taskschd/nf-taskschd-ishowmessageaction-get_title).
+Para desenvolvimento em C++, consulte [**Propriedade Title de IShowMessageAction**](/windows/desktop/api/taskschd/nf-taskschd-ishowmessageaction-get_title).
 
-Para o desenvolvimento de scripts, consulte o " [**nome do email". título**](showmessageaction-title.md).
+Para desenvolvimento de scripts, [**consulte ShowMessageAction.Title**](showmessageaction-title.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,8 +54,8 @@ Para o desenvolvimento de scripts, consulte o " [**nome do email". título**](sh
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
 
 
 

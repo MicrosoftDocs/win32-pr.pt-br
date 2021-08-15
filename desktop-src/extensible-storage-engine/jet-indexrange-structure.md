@@ -15,17 +15,17 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: ecbd8151be8ef278fc1bddc12323f41abd05b09e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b5b68e7ebf6df39757ab39947201b945e35a3ece85518a3cb202525033cdd214
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105790248"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118485594"
 ---
 # <a name="jet_indexrange-structure"></a>Estrutura de JET_INDEXRANGE
 
 
-_**Aplica-se a:** Windows | Windows Server_
+_**Aplica-se a:** Windows | Windows Servidor_
 
 ## <a name="jet_indexrange-structure"></a>Estrutura de JET_INDEXRANGE
 
@@ -91,11 +91,11 @@ Cada estrutura de **JET_INDEXRANGE** que é passada para [JetIntersectIndexes](.
 <tbody>
 <tr class="odd">
 <td><p><strong>Cliente</strong></p></td>
-<td><p>Requer o Windows Vista, o Windows XP ou o Windows 2000 Professional.</p></td>
+<td><p>requer o Windows Vista, Windows XP ou Windows 2000 Professional.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Servidor</strong></p></td>
-<td><p>Requer o Windows Server 2008, o Windows Server 2003 ou o Windows 2000 Server.</p></td>
+<td><p>requer o Windows server 2008, Windows server 2003 ou Windows servidor 2000.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Cabeçalho</strong></p></td>

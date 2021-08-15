@@ -1,25 +1,25 @@
 ---
-description: 'Saiba mais sobre: Propriedades de EsentLogTornWriteDuringHardRestoreException'
-title: Propriedades de EsentLogTornWriteDuringHardRestoreException
+description: 'Saiba mais sobre: Propriedades EsentLogTornWriteDuringHardRestoreException'
+title: Propriedades EsentLogTornWriteDuringHardRestoreException
 TOCTitle: EsentLogTornWriteDuringHardRestoreException properties
 ms:assetid: Properties.T:Microsoft.Isam.Esent.Interop.EsentLogTornWriteDuringHardRestoreException
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentlogtornwriteduringhardrestoreexception_properties(v=EXCHG.10)
 ms:contentKeyID: 55102168
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 5b84061b74568a697d4c5b53eb390365f37faea1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 26abf05b5b6a56340c07066286c035a34b64ad4f0fa96967a8e4f41a6f92fb86
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104561731"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118776405"
 ---
-# <a name="esentlogtornwriteduringhardrestoreexception-properties"></a>Propriedades de EsentLogTornWriteDuringHardRestoreException
+# <a name="esentlogtornwriteduringhardrestoreexception-properties"></a>Propriedades EsentLogTornWriteDuringHardRestoreException
 
 Incluir membros protegidos  
 Incluir membros herdados  
 
-O tipo [EsentLogTornWriteDuringHardRestoreException](./esentlogtornwriteduringhardrestoreexception-class.md) expõe os membros a seguir.
+O [tipo EsentLogTornWriteDuringHardRestoreException](./esentlogtornwriteduringhardrestoreexception-class.md) expõe os membros a seguir.
 
 ## <a name="properties"></a>Propriedades
 
@@ -40,16 +40,16 @@ O tipo [EsentLogTornWriteDuringHardRestoreException](./esentlogtornwriteduringha
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
 <td><a href="dn274313(v=exchg.10).md">Erro</a></td>
-<td>Obtém o erro de ESENT subjacente para esta exceção. (Herdado de <a href="dn274314(v=exchg.10).md">EsentErrorException</a>.)</td>
+<td>Obtém o erro Esent subjacente para essa exceção. (Herdado de <a href="dn274314(v=exchg.10).md">EsentErrorException</a>.)</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
-<td><a href="/dotnet/api/system.exception.helplink#System_Exception_HelpLink">HelpLink</a></td>
+<td><a href="/dotnet/api/system.exception.helplink#System_Exception_HelpLink">Helplink</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.protproperty(exchg.10).gif" title="Propriedade protegida" alt="Protected property" /></td>
-<td><a href="/dotnet/api/system.exception.hresult#System_Exception_HResult">Resultado</a></td>
+<td><a href="/dotnet/api/system.exception.hresult#System_Exception_HResult">HResult</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="odd">
@@ -69,7 +69,7 @@ O tipo [EsentLogTornWriteDuringHardRestoreException](./esentlogtornwriteduringha
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
-<td><a href="/dotnet/api/system.exception.stacktrace#System_Exception_StackTrace">Pilha</a></td>
+<td><a href="/dotnet/api/system.exception.stacktrace#System_Exception_StackTrace">StackTrace</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="odd">
@@ -89,4 +89,4 @@ Parte superior
 
 [Classe EsentLogTornWriteDuringHardRestoreException](./esentlogtornwriteduringhardrestoreexception-class.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -3,7 +3,7 @@ title: comando colar
 description: O comando Paste copia o conteúdo da área de transferência no espaço de trabalho. Dispositivos de vídeo digital reconhecem este comando.
 ms.assetid: c09418e1-2535-40d1-8912-e5ece91ee673
 keywords:
-- comando colar multimídia do Windows
+- comando paste Windows multimídia
 topic_type:
 - apiref
 api_name:
@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 482fd744d7e6e163059330148b6e3f081d435880
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 73b93f042193c50a810ac23285224ddd234a23b2070f8db2d56d216fee037c37
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104009054"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118373211"
 ---
 # <a name="paste-command"></a>comando colar
 

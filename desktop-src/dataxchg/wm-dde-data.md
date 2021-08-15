@@ -1,9 +1,9 @@
 ---
 title: Mensagem de WM_DDE_DATA (DDE. h)
-description: Um aplicativo de servidor troca dinâmica de dados (DDE) posta uma \_ mensagem de dados DDE do WM \_ em um aplicativo cliente DDE para passar um item de dados para o cliente ou notificar o cliente sobre a disponibilidade de um item de dados.
+description: um aplicativo de servidor troca dinâmica de dados (DDE) posta uma \_ mensagem de dados dde do WM \_ em um aplicativo cliente dde para passar um item de dados para o cliente ou notificar o cliente sobre a disponibilidade de um item de dados.
 ms.assetid: ed6a65d3-b2a3-45f2-9600-291ce2ec8c0a
 keywords:
-- Troca de dados de mensagem WM_DDE_DATA
+- WM_DDE_DATA Exchange de dados da mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9f045ff07e01023e6535eb00dcb78400e4c9519a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 0200737a9b25a123954498941ad117e5465f58f5313daa8caf90674751355ed6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105812098"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117736273"
 ---
 # <a name="wm_dde_data-message"></a>\_Mensagem de dados DDE do WM \_
 
-Um aplicativo de servidor troca dinâmica de dados (DDE) posta uma mensagem de **\_ \_ dados DDE do WM** em um aplicativo cliente DDE para passar um item de dados para o cliente ou notificar o cliente sobre a disponibilidade de um item de dados.
+um aplicativo de servidor troca dinâmica de dados (DDE) posta uma mensagem de **\_ \_ dados dde do WM** em um aplicativo cliente dde para passar um item de dados para o cliente ou notificar o cliente sobre a disponibilidade de um item de dados.
 
 Para postar essa mensagem, chame a função [**CreateMessage**](/windows/desktop/api/winuser/nf-winuser-postmessagea) com os parâmetros a seguir.
 
@@ -91,7 +91,7 @@ Depois de processar uma mensagem de **\_ \_ dados DDE do WM** em que o objeto de
 |-------------------------------------|------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                                           |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                 |
-| Cabeçalho<br/>                   | <dl> <dt>DDE. h (incluir Windows. h)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Dde. h (incluir Windows. h)</dt> </dl> |
 
 
 

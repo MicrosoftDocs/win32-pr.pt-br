@@ -4,12 +4,12 @@ ms.assetid: 7515acb5-4526-40f7-abb7-822a073ac7dc
 title: Mensagem de WM_CANCELJOURNAL (WinUser. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3a5676472d12c8cef2a03e508eca6bb742596a36
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8672f86393275c46383c6eb27c7eb1884178b86635ea93bf758de16521e6d2c7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105811656"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117849332"
 ---
 # <a name="wm_canceljournal-message"></a>Mensagem do WM \_ CANCELJOURNAL
 
@@ -40,7 +40,7 @@ Este parâmetro não é usado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **void**
 
@@ -66,7 +66,7 @@ Observe que as combinações de teclas mencionadas acima (CTRL + ESC ou CTRL + A
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                                               |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                     |
-| Cabeçalho<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
 
 
 

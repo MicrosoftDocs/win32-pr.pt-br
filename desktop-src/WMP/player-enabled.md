@@ -1,6 +1,6 @@
 ---
 title: Player. habilitado
-description: A propriedade Enabled especifica ou recupera um valor que indica se o controle do Windows Media Player está habilitado.
+description: a propriedade enabled especifica ou recupera um valor que indica se o controle de Windows Media Player está habilitado.
 ms.assetid: 65fea4d2-3330-4cce-bdaf-fae00304271a
 keywords:
 - Player. habilitado Windows Media Player
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d002d1f1420d17d4b1a0b7dd3028b0f2dc0f6f7b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 804baa0dbb887cd389214c1c90e7a438e3529d7b7609cf3162091d2bf52cb17d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105790480"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117747591"
 ---
 # <a name="playerenabled"></a>Player. habilitado
 
-A propriedade **Enabled** especifica ou recupera um valor que indica se o controle do Windows Media Player está habilitado.
+a propriedade **enabled** especifica ou recupera um valor que indica se o controle de Windows Media Player está habilitado.
 
 ## <a name="syntax"></a>Syntax
 
@@ -37,8 +37,8 @@ Esta propriedade é um **booliano** de leitura/gravação.
 
 | Valor | Descrição                                           |
 |-------|-------------------------------------------------------|
-| true  | Padrão. O controle do Windows Media Player está habilitado. |
-| false | O controle do Windows Media Player está desabilitado.         |
+| true  | Padrão. o controle Windows Media Player está habilitado. |
+| false | o controle Windows Media Player está desabilitado.         |
 
 
 
@@ -46,7 +46,7 @@ Esta propriedade é um **booliano** de leitura/gravação.
 
 ## <a name="remarks"></a>Comentários
 
-Se **habilitado** for igual a false, durante a reprodução de tela inteira, o Windows Media Player ocultará os controles de usuário.
+se **habilitado** for igual a false, durante a reprodução de tela inteira Windows Media Player ocultará os controles de usuário.
 
 ## <a name="requirements"></a>Requisitos
 

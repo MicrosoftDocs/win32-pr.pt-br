@@ -1,55 +1,55 @@
 ---
-title: Scripts LDIF
-description: O LDAP Data Interchange Format (LDIF) é um padrão IETF (Internet Engineering Task Force) que define como importar e exportar dados de diretório entre servidores de diretório que usam provedores de serviço LDAP.
+title: LDIF Scripts
+description: O LDIF (Formato de Intercâmbio de Dados LDAP) é um padrão IETF (Internet Engineering Task Force) que define como importar e exportar dados de diretório entre servidores de diretório que usam provedores de serviços LDAP.
 ms.assetid: a87d0d34-96c0-4cef-a38e-30a7e2291a7a
 ms.tgt_platform: multiple
 keywords:
-- Active Directory de scripts LDIF
-- Scripts LDIF Active Directory, sobre
+- LDIF Scripts Active Directory
+- Scripts LDIF do Active Directory, sobre
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e228e48770e1190065a16c95b4011f794127fbdd
-ms.sourcegitcommit: 3e70ae762629e244028b437420ed50b5850db4e3
+ms.openlocfilehash: 8ad45c51fc16b3c19c3e59f4cfba2e006d4df900c20ce7ddc1b801478a22982c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "103917015"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118187080"
 ---
-# <a name="ldif-scripts"></a>Scripts LDIF
+# <a name="ldif-scripts"></a>LDIF Scripts
 
-O LDAP Data Interchange Format (LDIF) é um padrão IETF (Internet Engineering Task Force) que define como importar e exportar dados de diretório entre servidores de diretório que usam provedores de serviço LDAP. O Windows 2000 e o Windows Server 2003 incluem um utilitário de linha de comando, LDIFDE, que pode ser usado para importar objetos de diretório para Active Directory Domain Services usando arquivos LDIF. O LDIFDE permite que você defina um filtro para uma cadeia de caracteres específica a fim de Pesquisar e listar objetos de diretório no Active Directory Domain Services como arquivos LDIF que podem ser lidos facilmente por administradores de esquema.
+O LDIF (Formato de Intercâmbio de Dados LDAP) é um padrão IETF (Internet Engineering Task Force) que define como importar e exportar dados de diretório entre servidores de diretório que usam provedores de serviços LDAP. Windows 2000 e Windows Server 2003 incluem um utilitário de linha de comando, LDIFDE, que pode ser usado para importar objetos de diretório para Active Directory Domain Services usando arquivos LDIF. O LDIFDE permite definir um filtro para uma cadeia de caracteres específica para pesquisar e listar objetos de diretório no Active Directory Domain Services como arquivos LDIF que podem ser lidos facilmente por administradores de esquema.
 
-Ao importar um arquivo Unicode, o LDIFDE importa o arquivo como Unicode se ele contiver o identificador Unicode no início do arquivo. Se você quiser importar um arquivo como Unicode quando ele não contiver o identificador Unicode no início do arquivo, você poderá usar a opção-u para forçá-lo a ser importado como Unicode.
+Ao importar um arquivo Unicode, o LDIFDE importa o arquivo como Unicode se ele contém o identificador Unicode no início do arquivo. Se você quiser importar um arquivo como Unicode quando ele não contém o identificador Unicode no início do arquivo, poderá usar a opção -u para forçá-lo a ser importado como Unicode.
 
-O modo padrão para exportar arquivos é ANSI. Se houver entradas Unicode, elas serão convertidas no formato base 64. Para exportar um arquivo para o formato Unicode, use a opção-u.
+O modo padrão para exportar arquivos é ANSI. Se houver entradas Unicode, elas serão convertidas no formato base 64. Para exportar um arquivo para o formato Unicode, use a opção -u.
 
-Um arquivo LDIF deve aplicar alterações de esquema quando há dependências entre os atributos que são adicionados. Por exemplo, atributos de link de encaminhamento devem ser adicionados antes do atributo back link correspondente. Você também deve atualizar o cache de esquema antes de adicionar classes que dependem de atributos ou classes adicionadas anteriormente no script de LDIF. Para obter mais informações, consulte o exemplo de código a seguir.
+Um arquivo LDIF deve aplicar alterações de esquema quando há dependências entre os atributos que são adicionados. Por exemplo, atributos de link de encaminhamento devem ser adicionados antes do atributo de link voltar correspondente. Você também deve atualizar o cache de esquema antes de adicionar classes que dependem de atributos ou classes adicionadas anteriormente no script LDIF. Para obter mais informações, consulte o exemplo de código a seguir.
 
-Lembre-se de que, para valores binários, você deve codificar os valores como Base64. A codificação Base64 é definida em IETF RFC 2045, seção 6,8.
+Esteja ciente de que, para valores binários, você deve codificar os valores como base64. A codificação Base64 é definida no IETF RFC 2045, Seção 6.8.
 
-Para obter mais informações sobre o formato dos arquivos LDIF, consulte [a especificação técnica do formato LDIF (LDAP Data Interchange Format)](https://www.ietf.org/rfc/rfc2849.txt) (RFC 2849) no site da Internet Engineering Task Force.
+Para obter mais informações sobre o formato de arquivos LDIF, consulte O LDIF (Formato de Intercâmbio de Dados [LDAP) –](https://www.ietf.org/rfc/rfc2849.txt) Especificação Técnica (RFC 2849) no site da Força de Tarefa de Engenharia da Internet.
 
-## <a name="ntds-specific-ldif-changetypes"></a>ChangeTypes LDIF específico de NTDS
+## <a name="ntds-specific-ldif-changetypes"></a>Tipos de alteração LDIF específicos do NTDS
 
-É melhor usar ntdsSchema \* ChangeTypes em vez de chamar LDIFDE-k. A opção-k de ldifde ignora um conjunto maior de erros LDAP. A lista completa de erros ignorados é a seguinte:
+É melhor usar ntdsSchema changetypes em vez de \* chamar ldifde -k. A opção -k de ldifde ignora um conjunto maior de erros LDAP. A lista completa de erros ignorados é a seguinte:
 
 -   O objeto já é um membro do grupo.
--   Uma violação de classe de objeto (ou seja, a classe de objeto especificada não existe), se o objeto que está sendo importado não tiver outros atributos.
--   o objeto já existe (o **LDAP \_ já \_ existe**)
--   violação de restrição **( \_ \_ violação de restrição de LDAP**)
--   o atributo ou o valor já existe (**\_ atributo \_ ou \_ valor LDAP \_ existe**)
--   nenhum objeto desse tipo (**LDAP \_ não é \_ tal \_ objeto**)
+-   Uma violação de classe de objeto (o que significa que a classe de objeto especificada não existe), se o objeto que está sendo importado não tiver outros atributos.
+-   O objeto já existe (**LDAP \_ JÁ \_ EXISTE**)
+-   violação de restrição (**LDAP \_ CONSTRAINT \_ VIOLATION**)
+-   atributo ou valor já existe (**LDAP \_ ATTRIBUTE OR VALUE \_ \_ \_ EXISTS**)
+-   nenhum objeto (**LDAP \_ NO SUCH \_ \_ OBJECT**)
 
-Os ChangeTypes a seguir são projetados especificamente para operações de atualização de esquema.
+Os tipos de alteração a seguir são projetados especificamente para operações de atualização de esquema.
 
 
 
-| ChangeType                      | Descrição                                                                                                                                                                                                                                                                              |
+| Changetype                      | Descrição                                                                                                                                                                                                                                                                              |
 |---------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **ntdsSchemaAdd**<br/>    | **ntdsSchemaAdd** corresponde a **Add** em um arquivo LDIF. A única diferença é que o **ntdsSchemaAdd** faria com que o LDIFDE ignorasse uma operação de **adição** se o objeto já existir no esquema. (O **LDAP \_ já \_ existe** é ignorado.)<br/>                                   |
-| **ntdsSchemaModify**<br/> | **ntdsSchemaModify** corresponde a **Modify** em um arquivo LDIF. A única diferença é que o **ntdsSchemaModify** faria com que o LDIFDE ignorasse uma operação de **modificação** se o objeto não fosse encontrado no esquema. (**LDAP \_ não \_ tal \_ objeto** é ignorado.)<br/>                        |
-| **ntdsSchemaDelete**<br/> | **ntdsSchemaDelete** corresponde a **delete** em um arquivo LDIF. A única diferença é que o **ntdsSchemaDelete** faria com que o LDIFDE ignorasse uma operação de **exclusão** se o objeto não fosse encontrado no esquema. (**LDAP \_ não \_ tal \_ objeto** é ignorado.)<br/>                        |
-| **ntdsSchemaModRdn**<br/> | **ntdsSchemaModRdn** corresponde a **modrdn** em um arquivo LDIF. A única diferença é que o **ntdsSchemaModRdn** faria com que o LDIFDE ignorasse uma operação de nome diferenciado de Modify-Relative se o objeto não for encontrado no esquema. (**LDAP \_ não \_ tal \_ objeto** é ignorado.)<br/> |
+| **ntdsSchemaAdd**<br/>    | **ntdsSchemaAdd** corresponde a **adicionar** em um arquivo LDIF. A única diferença é que **ntdsSchemaAdd** faria com que ldifde ignorasse uma operação **de** adoção se o objeto já existir no esquema. (**LDAP \_ ALREADY \_ EXISTS** é ignorado.)<br/>                                   |
+| **ntdsSchemaModify**<br/> | **ntdsSchemaModify** corresponde a **modificar em** um arquivo LDIF. A única diferença é que **ntdsSchemaModify** faria com que ldifde ignorasse uma operação **de** modificação se o objeto não fosse encontrado no esquema. (**LDAP \_ NO SUCH \_ \_ OBJECT** é ignorado.)<br/>                        |
+| **ntdsSchemaDelete**<br/> | **ntdsSchemaDelete corresponde** à **exclusão em** um arquivo LDIF. A única diferença é que **ntdsSchemaDelete** faria com  que ldifde ignorasse uma operação de exclusão se o objeto não fosse encontrado no esquema. (**LDAP \_ NO SUCH \_ \_ OBJECT** é ignorado.)<br/>                        |
+| **ntdsSchemaModRdn**<br/> | **ntdsSchemaModRdn** corresponde a **modrdn em** um arquivo LDIF. A única diferença é que **ntdsSchemaModRdn** faria com que ldifde ignorasse uma operação modify-relative-distinguished-name se o objeto não fosse encontrado no esquema. (**LDAP \_ NO SUCH \_ \_ OBJECT** é ignorado.)<br/> |
 
 
 
@@ -59,16 +59,16 @@ Os ChangeTypes a seguir são projetados especificamente para operações de atua
 
 O exemplo de código a seguir inclui:
 
--   Myschemaext. ldf é um script de LDIF que contém novos atributos e classes. Lembre-se de que esse arquivo é uma versão modificada do arquivo gerado a partir de Lgetattcls.vbs. Além disso, lembre-se de que o atributo **My-Test-Attribute-DN-FL** foi movido para frente do **meu-Test-Attribute-DN-BL** porque o link voltar (**meu-Test-Attribute-DN-BL**) depende do link de encaminhamento (**meu-Test-Attribute-DN-FL**). Além disso, o atributo operacional **schemaUpdateNow** é definido em dois locais para disparar atualizações do cache de esquema, de modo que os atributos e as classes dependentes estarão disponíveis para adicionar as duas classes no script.
+-   Myschemaext.ldf é um script LDIF que contém novos atributos e classes. Esteja ciente de que esse arquivo é uma versão modificada do arquivo gerado de Lgetattcls.vbs. Além disso, esteja ciente de que o atributo **My-Test-Attribute-DN-FL** foi movido à frente de **My-Test-Attribute-DN-BL** porque o link de fundo (**My-Test-Attribute-DN-BL**) depende do link de avanço (**My-Test-Attribute-DN-FL**). Além disso, o atributo **operacional schemaUpdateNow** é definido em dois locais para disparar atualizações do cache de esquema para que atributos e classes dependentes estarão disponíveis para adicionar as duas classes no script.
     > [!Note]  
-    > Consulte o tópico [obtendo uma ID de link](obtaining-a-link-id.md) para obter informações sobre a origem da ID nas instruções LinkId:.
+    > Consulte o tópico [Obtendo uma ID de](obtaining-a-link-id.md) link para obter informações sobre a origem da ID nas instruções linkID:.
 
      
 
--   Lgetattcls.vbs é um arquivo VBScript que gera o script LDIF usado como ponto de partida para Myschemaext. ldf. Lembre-se de que o caminho do esquema atual é substituído por CN = Schema, CN = Configuration, DC = MyOrg, DC = com. Você pode substituir DC = MyOrg, DC = com para refletir o DN (nome distinto) a ser publicado no script de LDIF, garantindo que LSETATTCLS.VBS reflita a alteração em seu **sFromDN** para que o DN correto seja substituído quando o script de LDIF for aplicado. Além disso, lembre-se de que o script usa um prefixo para localizar as classes e os atributos que você também deve definir e usar um prefixo para todas as classes e atributos. Para obter mais informações, consulte [nomenclatura de atributos e classes](naming-attributes-and-classes.md). Além disso, o script gera apenas os atributos necessários para os objetos **attributeSchema** e **classSchema** para o arquivo LDIF.
--   Lsetattcls.vbs é um arquivo VBScript que usa o script Myschemaext. ldf para adicionar novos atributos e classes no script. Verifique se o mestre de esquema pode ser gravado antes de executar o script.
+-   Lgetattcls.vbs é um arquivo VBScript que gera o script LDIF usado como o ponto de partida para Myschemaext.ldf. Esteja ciente de que o caminho do esquema atual é substituído por CN=Schema,CN=Configuration,DC=myorg,DC=com. Você pode substituir DC=myorg,DC=com para refletir o DN (nome diferenciado) a ser publicado no script LDIF para garantir que LSETATTCLS.VBS reflita a alteração em **seu sFromDN** para que o DN correto seja substituído quando o script LDIF for aplicado. Também esteja ciente de que o script usa um prefixo para encontrar as classes e atributos que você também deve definir e usar um prefixo para todas as suas classes e atributos. Para obter mais informações, consulte [Nomeando atributos e classes](naming-attributes-and-classes.md). Além disso, o script só saída os atributos necessários para os **objetos attributeSchema** e **classSchema** para o arquivo LDIF.
+-   Lsetattcls.vbs é um arquivo VBScript que usa o script Myschemaext.ldf para adicionar os novos atributos e classes no script. Verifique se o mestre de esquema é capaz de ser gravado antes de executar o script.
 
-## <a name="myschemaextldf"></a>MYSCHEMAEXT. LDF
+## <a name="myschemaextldf"></a>MYSCHEMAEXT. Ldf
 
 ``` syntax
 dn: CN=My-Test-Attribute-CaseExactString,CN=Schema,CN=Configuration,DC=myorg,DC=com

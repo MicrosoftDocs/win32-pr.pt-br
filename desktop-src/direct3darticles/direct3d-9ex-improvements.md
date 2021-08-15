@@ -1,23 +1,23 @@
 ---
 title: Aprimoramentos do Direct3D 9Ex
-description: Este tópico descreve o suporte adicionado ao Windows 7 para o modo invertido presente e suas estatísticas atuais associadas no Direct3D 9Ex e no Gerenciador de Janelas da Área de Trabalho.
+description: este tópico descreve o suporte adicionado do Windows 7 para o modo invertido presente e suas estatísticas atuais associadas no Direct3D 9ex e Gerenciador de Janelas da Área de Trabalho.
 ms.assetid: cb92a162-57eb-4aee-af7a-c8ece37075a7
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 42eef10b6caaa959cb750f073c97a0f665384463
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: f3221b805f07408b27e19a00a42ca0c4733ea725bd32a51b5b3e340b48d2070f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104366471"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118796961"
 ---
 # <a name="direct3d-9ex-improvements"></a>Aprimoramentos do Direct3D 9Ex
 
-Este tópico descreve o suporte adicionado ao Windows 7 para o modo invertido presente e suas estatísticas atuais associadas no Direct3D 9Ex e no Gerenciador de Janelas da Área de Trabalho. Os aplicativos de destino incluem aplicativos de apresentação baseados em taxas de vídeo ou quadros. Os aplicativos que usam o modo de flip do Direct3D 9Ex presente reduzem a carga de recursos do sistema quando o DWM está habilitado. As melhorias de estatísticas atuais associadas ao modo Inverter apresentam a habilitação dos aplicativos do Direct3D 9Ex para controlar melhor a taxa de apresentação, fornecendo comentários em tempo real e mecanismos de correção. São incluídas explicações e ponteiros detalhados para recursos de exemplo.
+este tópico descreve o suporte adicionado do Windows 7 para o modo invertido presente e suas estatísticas atuais associadas no Direct3D 9ex e Gerenciador de Janelas da Área de Trabalho. Os aplicativos de destino incluem aplicativos de apresentação baseados em taxas de vídeo ou quadros. Os aplicativos que usam o modo de flip do Direct3D 9Ex presente reduzem a carga de recursos do sistema quando o DWM está habilitado. As melhorias de estatísticas atuais associadas ao modo Inverter apresentam a habilitação dos aplicativos do Direct3D 9Ex para controlar melhor a taxa de apresentação, fornecendo comentários em tempo real e mecanismos de correção. São incluídas explicações e ponteiros detalhados para recursos de exemplo.
 
 Este tópico inclui as seções a seguir.
 
--   [O que melhorou sobre o Direct3D 9Ex para Windows 7](#whats-improved-about-direct3d-9ex-for-windows-7)
+-   [o que melhorou sobre o Direct3D 9ex para Windows 7](#whats-improved-about-direct3d-9ex-for-windows-7)
 -   [Apresentação do modo de flip do Direct3D 9EX](#direct3d-9ex-flip-mode-presentation)
 -   [Modelo de programação e APIs](#programming-model-and-apis)
     -   [Como optar pelo modelo de inversão do Direct3D 9Ex](#how-to-opt-into-the-direct3d-9ex-flip-model)
@@ -25,22 +25,22 @@ Este tópico inclui as seções a seguir.
     -   [Sincronização de quadros de aplicativos de modelo do Direct3D 9Ex flip](#frame-synchronization-of-direct3d-9ex-flip-model-applications)
     -   [Sincronização de quadros para aplicativos em janelas quando o DWM está desativado](#frame-synchronization-for-windowed-applications-when-dwm-is-off)
 -   [Passo a passo de um modelo do Direct3D 9Ex flip e apresentar estatísticas de exemplo](#walk-through-of-a-direct3d-9ex-flip-model-and-present-statistics-sample)
-    -   [Resumo das recomendações de programação para sincronização de quadros](#summary-of-programming-recommendations-for-frame-synchronization)
+    -   [resumo de Recomendações de programação para sincronização de quadros](#summary-of-programming-recommendations-for-frame-synchronization)
 -   [Conclusão sobre os aprimoramentos do Direct3D 9Ex](#conclusion-about-direct3d-9ex-improvements)
 -   [Plano de ação](#call-to-action)
 -   [Tópicos relacionados](#related-topics)
 
-## <a name="whats-improved-about-direct3d-9ex-for-windows-7"></a>O que melhorou sobre o Direct3D 9Ex para Windows 7
+## <a name="whats-improved-about-direct3d-9ex-for-windows-7"></a>o que melhorou sobre o Direct3D 9ex para Windows 7
 
-A apresentação do modo Inverter do Direct3D 9Ex é um modo aprimorado de apresentação de imagens no Direct3D 9Ex que efetivamente transfere imagens renderizadas para o Windows 7 Gerenciador de Janelas da Área de Trabalho (DWM) para composição. A partir do Windows Vista, o DWM compõe toda a área de trabalho. Quando o DWM está habilitado, os aplicativos de modo em janela apresentam seu conteúdo na área de trabalho usando um método chamado modo blt presente para DWM (ou modelo BLT). Com o modelo BLT, o DWM mantém uma cópia da superfície do Direct3D 9Ex renderizada para composição de área de trabalho. Quando o aplicativo é atualizado, o novo conteúdo é copiado para a superfície do DWM por meio de um blt. Para aplicativos que contêm conteúdo de Direct3D e GDI, os dados GDI também são copiados na superfície do DWM.
+a apresentação do modo inverter do direct3d 9ex é um modo aprimorado de apresentar imagens no Direct3D 9ex, que efetivamente transfere imagens renderizadas para Windows 7 Gerenciador de Janelas da Área de Trabalho (DWM) para composição. a partir do Windows Vista, o DWM compõe toda a área de trabalho. Quando o DWM está habilitado, os aplicativos de modo em janela apresentam seu conteúdo na área de trabalho usando um método chamado modo blt presente para DWM (ou modelo BLT). Com o modelo BLT, o DWM mantém uma cópia da superfície do Direct3D 9Ex renderizada para composição de área de trabalho. Quando o aplicativo é atualizado, o novo conteúdo é copiado para a superfície do DWM por meio de um blt. Para aplicativos que contêm conteúdo de Direct3D e GDI, os dados GDI também são copiados na superfície do DWM.
 
-Disponível no Windows 7, o modo flip presente para DWM (ou flip Model) é um novo método de apresentação que essencialmente habilita a passagem de identificadores de superfícies de aplicativos entre aplicativos de modo em janelas e DWM. Além de salvar recursos, o flip Model dá suporte a estatísticas de apresentação avançadas.
+disponível no Windows 7, o modo Flip presente para o DWM (ou o Flip Model) é um novo método de apresentação que essencialmente habilita a passagem de identificadores de superfícies de aplicativos entre aplicativos de modo em janelas e DWM. Além de salvar recursos, o flip Model dá suporte a estatísticas de apresentação avançadas.
 
-As estatísticas atuais são informações de tempo de quadro que os aplicativos podem usar para sincronizar fluxos de áudio e vídeo e recuperar-se de falhas de reprodução de vídeo. As informações de tempo de quadro em estatísticas atuais permitem que os aplicativos ajustem a taxa de apresentação de seus quadros de vídeo para uma apresentação mais suave. No Windows Vista, em que o DWM mantém uma cópia correspondente da superfície do quadro para composição de área de trabalho, os aplicativos podem usar as estatísticas atuais fornecidas pelo DWM. Esse método de obtenção de estatísticas presentes ainda estará disponível no Windows 7 para aplicativos existentes.
+As estatísticas atuais são informações de tempo de quadro que os aplicativos podem usar para sincronizar fluxos de áudio e vídeo e recuperar-se de falhas de reprodução de vídeo. As informações de tempo de quadro em estatísticas atuais permitem que os aplicativos ajustem a taxa de apresentação de seus quadros de vídeo para uma apresentação mais suave. no Windows Vista, em que o DWM mantém uma cópia correspondente da superfície do quadro para composição de área de trabalho, os aplicativos podem usar as estatísticas atuais fornecidas pelo DWM. esse método de obtenção de estatísticas presentes ainda estará disponível no Windows 7 para aplicativos existentes.
 
-No Windows 7, os aplicativos baseados no Direct3D 9Ex que adotam o flip Model devem usar APIs D3D9Ex para obter estatísticas atuais. Quando o DWM está habilitado, o modo em janela e o modo exclusivo de tela inteira aplicativos do Direct3D 9Ex podem esperar as mesmas informações de estatísticas presentes ao usar o flip Model. As estatísticas do Direct3D 9Ex flip Model presente permitem que os aplicativos consultem as estatísticas atuais em tempo real, em vez de após o quadro ter sido mostrado na tela; as mesmas informações de estatísticas presentes estão disponíveis para aplicativos habilitados para o modo de Flip-Model de janela como aplicativos de tela inteira; um sinalizador adicionado nas APIs D3D9Ex permite que os aplicativos de modelo de inversão descartem com eficiência quadros atrasados no momento da apresentação.
+no Windows 7, os aplicativos baseados no Direct3D 9ex que adotam o Flip Model devem usar APIs D3D9Ex para obter estatísticas atuais. Quando o DWM está habilitado, o modo em janela e o modo exclusivo de tela inteira aplicativos do Direct3D 9Ex podem esperar as mesmas informações de estatísticas presentes ao usar o flip Model. As estatísticas do Direct3D 9Ex flip Model presente permitem que os aplicativos consultem as estatísticas atuais em tempo real, em vez de após o quadro ter sido mostrado na tela; as mesmas informações de estatísticas presentes estão disponíveis para aplicativos habilitados para o modo de Flip-Model de janela como aplicativos de tela inteira; um sinalizador adicionado nas APIs D3D9Ex permite que os aplicativos de modelo de inversão descartem com eficiência quadros atrasados no momento da apresentação.
 
-O modelo de flip do Direct3D 9Ex deve ser usado por novos aplicativos de apresentação baseados em taxas de vídeo ou quadros direcionados ao Windows 7. Devido à sincronização entre o DWM e o tempo de execução do Direct3D 9Ex, os aplicativos que usam o modelo de flip devem especificar entre 2 e 4 buffers de reversão para garantir uma apresentação suave. Esses aplicativos que usam informações de estatísticas atuais se beneficiarão do uso dos aprimoramentos de estatísticas presentes do flip Model habilitado.
+o modelo de Flip do Direct3D 9ex deve ser usado por novos aplicativos de apresentação baseados em taxa de vídeo ou de quadros direcionados Windows 7. Devido à sincronização entre o DWM e o tempo de execução do Direct3D 9Ex, os aplicativos que usam o modelo de flip devem especificar entre 2 e 4 buffers de reversão para garantir uma apresentação suave. Esses aplicativos que usam informações de estatísticas atuais se beneficiarão do uso dos aprimoramentos de estatísticas presentes do flip Model habilitado.
 
 ## <a name="direct3d-9ex-flip-mode-presentation"></a>Apresentação do modo de flip do Direct3D 9EX
 
@@ -66,7 +66,7 @@ Os aplicativos podem tirar proveito do modo Inverter do Direct3D 9Ex presente na
 
 ## <a name="programming-model-and-apis"></a>Modelo de programação e APIs
 
-Nova taxa de vídeo ou quadro-os aplicativos medir que usam as APIs do Direct3D 9Ex no Windows 7 podem tirar proveito da memória e da economia de energia e da apresentação aprimorada oferecida pelo modo invertido presente durante a execução no Windows 7. (Ao executar em versões anteriores do Windows, o tempo de execução do Direct3D usa como padrão o aplicativo para o modo blt presente.)
+nova taxa de vídeo ou quadro-os aplicativos medir que usam as APIs do Direct3D 9ex no Windows 7 podem aproveitar a memória e a economia de energia e a apresentação aprimorada oferecida pelo modo Flip presente ao ser executado no Windows 7. (ao executar em versões anteriores do Windows, o tempo de execução do Direct3D usa como padrão o aplicativo para o modo Blt presente.)
 
 O modo Inverter significa que o aplicativo pode aproveitar os comentários de estatísticas e os mecanismos de correção presentes em tempo real quando o DWM está ativado. No entanto, os aplicativos que usam o modo flip presente devem estar cientes das limitações quando usam a renderização simultânea da API GDI.
 
@@ -74,7 +74,7 @@ Você pode modificar os aplicativos existentes para aproveitar o modo invertido 
 
 ### <a name="how-to-opt-into-the-direct3d-9ex-flip-model"></a>Como optar pelo modelo de inversão do Direct3D 9Ex
 
-Os aplicativos do Direct3D 9Ex destinados ao Windows 7 podem optar pelo flip Model criando a cadeia de permuta com o valor de enumeração [**D3DSWAPEFFECT \_ FLIPEX**](/windows/desktop/direct3d9/d3dswapeffect) . Para aceitar o modelo de inversão, os aplicativos especificam a estrutura de [**\_ parâmetros D3DPRESENT**](/windows/desktop/direct3d9/d3dpresent-parameters) e passam um ponteiro para essa estrutura quando chamam a API [**IDirect3D9Ex:: CreateDeviceEx**](/windows/desktop/api/d3d9/nf-d3d9-idirect3d9ex-createdeviceex) . Esta seção descreve como os aplicativos destinados ao Windows 7 usam **IDirect3D9Ex:: CreateDeviceEx** para aceitar o modelo de inversão. Para obter mais informações sobre a API **IDirect3D9Ex:: CreateDeviceEx** , consulte **IDirect3D9Ex:: CreateDeviceEx no MSDN**.
+os aplicativos do Direct3D 9ex direcionados Windows 7 podem optar pelo Flip Model criando a cadeia de permuta com o valor de enumeração [**D3DSWAPEFFECT \_ FLIPEX**](/windows/desktop/direct3d9/d3dswapeffect) . Para aceitar o modelo de inversão, os aplicativos especificam a estrutura de [**\_ parâmetros D3DPRESENT**](/windows/desktop/direct3d9/d3dpresent-parameters) e passam um ponteiro para essa estrutura quando chamam a API [**IDirect3D9Ex:: CreateDeviceEx**](/windows/desktop/api/d3d9/nf-d3d9-idirect3d9ex-createdeviceex) . esta seção descreve como os aplicativos direcionados Windows 7 usam **IDirect3D9Ex:: CreateDeviceEx** para aceitar o modelo de inversão. Para obter mais informações sobre a API **IDirect3D9Ex:: CreateDeviceEx** , consulte **IDirect3D9Ex:: CreateDeviceEx no MSDN**.
 
 Para sua conveniência, a sintaxe [**dos \_ parâmetros D3DPRESENT**](/windows/desktop/direct3d9/d3dpresent-parameters) e [**IDirect3D9Ex:: CreateDeviceEx**](/windows/desktop/api/d3d9/nf-d3d9-idirect3d9ex-createdeviceex) é repetida aqui.
 
@@ -108,27 +108,27 @@ typedef struct D3DPRESENT_PARAMETERS {
 } D3DPRESENT_PARAMETERS, *LPD3DPRESENT_PARAMETERS;
 ```
 
-Ao modificar aplicativos do Direct3D 9Ex para o Windows 7 para optar pelo flip Model, você deve considerar os seguintes itens sobre os membros especificados dos [**\_ parâmetros D3DPRESENT**](/windows/desktop/direct3d9/d3dpresent-parameters):
+ao modificar aplicativos do Direct3D 9ex para Windows 7 para optar pelo Flip Model, você deve considerar os seguintes itens sobre os membros especificados dos [**\_ parâmetros D3DPRESENT**](/windows/desktop/direct3d9/d3dpresent-parameters):
 
 <dl> <dt>
 
 **BackBufferCount**
 </dt> <dd>
 
-(Somente Windows 7)
+(somente Windows 7)
 
 Quando **SwapEffect** é definido como o novo \_ tipo de efeito de cadeia de permuta D3DSWAPEFFECT FLIPEX, a contagem de buffers de fundo deve ser igual ou maior que 2, para evitar uma penalidade de desempenho de aplicativo como resultado da espera do buffer presente anterior a ser liberado pelo DWM.
 
 Quando o aplicativo também usa as estatísticas atuais associadas ao D3DSWAPEFFECT \_ FLIPEX, recomendamos que você defina a contagem de buffers de fundo como de 2 a 4.
 
-Usar D3DSWAPEFFECT \_ FLIPEX no Windows Vista ou versões anteriores do sistema operacional retornará falha de [**CreateDeviceEx**](/windows/desktop/api/d3d9/nf-d3d9-idirect3d9ex-createdeviceex).
+usar D3DSWAPEFFECT \_ FLIPEX no Windows Vista ou versões anteriores do sistema operacional retornará falha de [**CreateDeviceEx**](/windows/desktop/api/d3d9/nf-d3d9-idirect3d9ex-createdeviceex).
 
 </dd> <dt>
 
 **SwapEffect**
 </dt> <dd>
 
-(Somente Windows 7)
+(somente Windows 7)
 
 O novo \_ tipo de efeito de cadeia de permuta D3DSWAPEFFECT FLIPEX designa quando um aplicativo está adotando o modo invertido presente no DWM. Ele permite que o aplicativo tenha uso mais eficiente de memória e energia, além de permitir que o aplicativo aproveite as estatísticas de tela inteira em modo de janela. O comportamento do aplicativo de tela inteira não é afetado. Se a janela estiver definida como **true** e **SwapEffect** estiver definida como D3DSWAPEFFECT \_ FLIPEX, o tempo de execução criará um buffer de fundo extra e girará qualquer identificador que pertença ao buffer que se torna o buffer frontal no momento da apresentação.
 
@@ -137,7 +137,7 @@ O novo \_ tipo de efeito de cadeia de permuta D3DSWAPEFFECT FLIPEX designa quand
 **Sinalizadores**
 </dt> <dd>
 
-(Somente Windows 7)
+(somente Windows 7)
 
 O sinalizador de [ \_ \_ BackBuffer D3DPRESENTFLAG bloqueáveis](/windows/desktop/direct3d9/d3dpresentflag) não pode ser definido se **SwapEffect** está definido como o novo tipo de efeito de cadeia de permuta [**D3DSWAPEFFECT \_ FLIPEX**](/windows/desktop/direct3d9/d3dswapeffect) .
 
@@ -201,7 +201,7 @@ HRESULT PresentEx(
 );
 ```
 
-Ao modificar seu aplicativo Direct3D 9Ex para o Windows 7, você deve considerar as seguintes informações sobre os sinalizadores de apresentação [D3DPRESENT](/windows/desktop/direct3d9/d3dpresent) especificados:
+ao modificar seu aplicativo Direct3D 9ex para o Windows 7, você deve considerar as seguintes informações sobre os sinalizadores de apresentação [D3DPRESENT](/windows/desktop/direct3d9/d3dpresent) especificados:
 
 <dl> <dt>
 
@@ -210,7 +210,7 @@ Ao modificar seu aplicativo Direct3D 9Ex para o Windows 7, você deve considerar
 
 Esse sinalizador está disponível somente no modo de tela inteira ou
 
-(Somente Windows 7)
+(somente Windows 7)
 
 Quando o aplicativo define o membro **SwapEffect** dos [**\_ parâmetros D3DPRESENT**](/windows/desktop/direct3d9/d3dpresent-parameters) para [**D3DSWAPEFFECT \_ FLIPEX**](/windows/desktop/direct3d9/d3dswapeffect) em uma chamada para [**CreateDeviceEx**](/windows/desktop/api/d3d9/nf-d3d9-idirect3d9ex-createdeviceex).
 
@@ -219,7 +219,7 @@ Quando o aplicativo define o membro **SwapEffect** dos [**\_ parâmetros D3DPRES
 [D3DPRESENT \_ FORCEIMMEDIATE](/windows/desktop/direct3d9/d3dpresent)
 </dt> <dd>
 
-(Somente Windows 7)
+(somente Windows 7)
 
 Esse sinalizador só poderá ser especificado se o aplicativo definir o membro **SwapEffect** dos [**\_ parâmetros D3DPRESENT**](/windows/desktop/direct3d9/d3dpresent-parameters) para [**D3DSWAPEFFECT \_ FLIPEX**](/windows/desktop/direct3d9/d3dswapeffect) em uma chamada para [**CreateDeviceEx**](/windows/desktop/api/d3d9/nf-d3d9-idirect3d9ex-createdeviceex). O aplicativo pode usar esse sinalizador para atualizar imediatamente uma superfície com vários quadros posteriormente na fila do DWM presente, essencialmente ignorando os quadros intermediários.
 
@@ -257,7 +257,7 @@ HRESULT GetLastPresentCount(
 );
 ```
 
-Ao modificar seu aplicativo Direct3D 9Ex para o Windows 7, você deve considerar as seguintes informações sobre a estrutura [**D3DPRESENTSTATS**](/windows/desktop/direct3d9/d3dpresentstats) :
+ao modificar seu aplicativo Direct3D 9ex para o Windows 7, você deve considerar as seguintes informações sobre a estrutura [**D3DPRESENTSTATS**](/windows/desktop/direct3d9/d3dpresentstats) :
 
 -   O valor de PresentCount que o [**GetLastPresentCount**](/windows/desktop/api/d3d9/nf-d3d9-idirect3dswapchain9ex-getlastpresentcount) retorna não é atualizado quando uma chamada [**PresentEx**](/windows/desktop/api/d3d9/nf-d3d9-idirect3ddevice9ex-presentex) com D3DPRESENT \_ DONOTWAIT especificado no parâmetro *dwFlags* retorna uma falha.
 -   Quando [**PresentEx**](/windows/desktop/api/d3d9/nf-d3d9-idirect3ddevice9ex-presentex) é chamado com D3DPRESENT \_ DONOTFLIP, uma chamada [**GetPresentStatistics**](/previous-versions/windows/desktop/legacy/bb205901(v=vs.85)) é executada com sucesso, mas não retorna uma estrutura de [**D3DPRESENTSTATS**](/windows/desktop/direct3d9/d3dpresentstats) atualizada quando o aplicativo está no modo de janela.
@@ -277,13 +277,13 @@ typedef struct _D3DPRESENTSTATS {
 
 ### <a name="frame-synchronization-for-windowed-applications-when-dwm-is-off"></a>Sincronização de quadros para aplicativos em janelas quando o DWM está desativado
 
-Quando o DWM está desativado, os aplicativos em janelas são exibidos diretamente na tela do monitor sem passar por uma cadeia invertida. No Windows Vista, não há suporte para obter informações de estatísticas de quadro para aplicativos em janelas quando o DWM está desativado. Para manter uma API em que os aplicativos não precisam reconhecer o DWM, o Windows 7 retornará informações de estatísticas de quadro para aplicativos em janelas quando o DWM estiver desativado. As estatísticas de quadro retornadas quando o DWM está desativado são apenas estimativas.
+Quando o DWM está desativado, os aplicativos em janelas são exibidos diretamente na tela do monitor sem passar por uma cadeia invertida. no Windows Vista, não há suporte para obter informações de estatísticas de quadro para aplicativos em janelas quando o DWM está desativado. para manter uma API em que os aplicativos não precisam ser compatíveis com o dwm, Windows 7 retornará informações de estatísticas de quadro para aplicativos em janelas quando o DWM estiver desativado. As estatísticas de quadro retornadas quando o DWM está desativado são apenas estimativas.
 
 ## <a name="walk-through-of-a-direct3d-9ex-flip-model-and-present-statistics-sample"></a>Walk-Through de um modelo do Direct3D 9Ex flip e apresentar estatísticas de exemplo
 
 **Para aceitar o exemplo de apresentação do FlipEx para Direct3D 9Ex**
 
-1.  Verifique se o aplicativo de exemplo está em execução na versão do sistema operacional Windows 7 ou posterior.
+1.  verifique se o aplicativo de exemplo está em execução na versão do sistema operacional Windows 7 ou posterior.
 2.  Defina o membro **SwapEffect** dos [**\_ parâmetros D3DPRESENT**](/windows/desktop/direct3d9/d3dpresent-parameters) como [**D3DSWAPEFFECT \_ FLIPEX**](/windows/desktop/direct3d9/d3dswapeffect) em uma chamada para [**CreateDeviceEx**](/windows/desktop/api/d3d9/nf-d3d9-idirect3d9ex-createdeviceex).
 
 
@@ -542,7 +542,7 @@ VOID Render()
 
     O quadro A é direcionado para entrar na tela na contagem de intervalos de sincronização de 1, mas foi detectado que foi mostrado na contagem de intervalos de sincronização de 4. Portanto, ocorreu um problema. Três quadros subsequentes são apresentados com o intervalo de D3DPRESENT \_ \_ FORCEIMMEDIATE. A falha deve levar um total de 8 chamadas presentes antes de ser recuperada-o próximo quadro será mostrado de acordo com sua contagem de intervalos de sincronização de destino.
 
-### <a name="summary-of-programming-recommendations-for-frame-synchronization"></a>Resumo das recomendações de programação para sincronização de quadros
+### <a name="summary-of-programming-recommendations-for-frame-synchronization"></a>resumo de Recomendações de programação para sincronização de quadros
 
 -   Crie uma lista de backup de todas as IDs de LastPresentCount (obtidas via [**GetLastPresentCount**](/windows/desktop/api/d3d9/nf-d3d9-idirect3dswapchain9ex-getlastpresentcount)) e a PresentRefreshCount estimada associada de todos os presentes enviados.
     > [!Note]  
@@ -572,11 +572,11 @@ VOID Render()
 
 ## <a name="conclusion-about-direct3d-9ex-improvements"></a>Conclusão sobre os aprimoramentos do Direct3D 9Ex
 
-No Windows 7, os aplicativos que exibem a taxa de quadros de vídeo ou medidor durante a apresentação podem optar pelo flip Model. Os aprimoramentos de estatísticas atuais que estão associados ao flip Model Direct3D 9Ex podem beneficiar os aplicativos que sincronizam a apresentação por taxa de quadros, com comentários em tempo real para detecção e recuperação de problemas. Os desenvolvedores que adotam o modelo do Direct3D 9Ex flip devem ter como destino um HWND separado do conteúdo do GDI e da sincronização de taxa de quadros em conta. Consulte os detalhes neste tópico e a documentação do MSDN. Para obter mais documentação, consulte [DirectX Developer Center no MSDN](/previous-versions/windows/apps/hh452744(v=win.10)).
+no Windows 7, os aplicativos que exibem a taxa de quadros de vídeo ou medidor durante a apresentação podem optar pelo Flip Model. Os aprimoramentos de estatísticas atuais que estão associados ao flip Model Direct3D 9Ex podem beneficiar os aplicativos que sincronizam a apresentação por taxa de quadros, com comentários em tempo real para detecção e recuperação de problemas. Os desenvolvedores que adotam o modelo do Direct3D 9Ex flip devem ter como destino um HWND separado do conteúdo do GDI e da sincronização de taxa de quadros em conta. Consulte os detalhes neste tópico e a documentação do MSDN. Para obter mais documentação, consulte [DirectX Developer Center no MSDN](/previous-versions/windows/apps/hh452744(v=win.10)).
 
 ## <a name="call-to-action"></a>Plano de ação
 
-Incentivamos você a usar o modelo de inversão do Direct3D 9Ex e suas estatísticas atuais no Windows 7 ao criar aplicativos que tentam sincronizar a taxa de quadros de apresentação ou se recuperar de falhas de exibição.
+incentivamos você a usar o modelo de inversão do Direct3D 9ex e suas estatísticas atuais no Windows 7 ao criar aplicativos que tentam sincronizar a taxa de quadros de apresentação ou se recuperar de falhas de exibição.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

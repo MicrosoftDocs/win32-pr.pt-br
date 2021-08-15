@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - Npptools.dll
-ms.openlocfilehash: a0019bfaf802b5d4dc80d73e75affa3c50d95de1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bb83fffc219cb7cc82b2b20d6672cef0b74a6cf108577126e4200a3342edaa2d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105759062"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118364064"
 ---
 # <a name="setnetworkinfoinblob-function"></a>Função SetNetworkInfoInBlob
 
@@ -54,7 +54,7 @@ Ponteiro para a estrutura [NETWORKINFO](networkinfo.md) alocada pelo usuário qu
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se a função for bem-sucedida, o valor de retorno será NMERR com \_ êxito.
 

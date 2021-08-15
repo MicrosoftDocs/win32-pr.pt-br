@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 84df645e8aa71b6c1156a41f953823bdbee1f871
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: bb73d557bfb419fd3dd00baac1ee4cf91a91ca0cdbe0eb14e9acd3c3c6bc8ec2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103824282"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118354916"
 ---
 # <a name="taskserviceconnecteddomain-property"></a>Propriedade TaskService. ConnectedDomain
 
@@ -46,8 +46,8 @@ O domínio ao qual o computador [**TargetServer**](taskservice-targetserver.md) 
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                          |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                    |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                          |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                    |
 | Biblioteca de tipos<br/>             | <dl> <dt>Taskschd. tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 

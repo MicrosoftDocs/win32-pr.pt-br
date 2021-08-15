@@ -14,12 +14,12 @@ keywords:
 - Parte do RIFF
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c5e13fd50d98ea8042bb143c135d839b9b570475
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 6e099b49656e52fabed748ed397a12c3408a8325312c6c2457827a6b08725b48
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103916161"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118372679"
 ---
 # <a name="performing-file-io-on-riff-files"></a>Executando e/s de arquivo em arquivos RIFF
 
@@ -151,9 +151,9 @@ void ReversePlay()
 
 
 
- 
+ 
 
- 
+ 
 
 
 

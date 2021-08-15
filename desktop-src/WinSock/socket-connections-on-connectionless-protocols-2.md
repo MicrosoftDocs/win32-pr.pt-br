@@ -4,12 +4,12 @@ ms.assetid: 7d69c82e-51cb-4e54-8097-744e211eb032
 title: Conexões de soquete em protocolos sem conexão
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8a4d436b1fda94291342716e0edf814dacf09818
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 71f17ea7240990c47822e5e9f904964fa133d0e8461f10974563a354fea54eb6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105791387"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117740334"
 ---
 # <a name="socket-connections-on-connectionless-protocols"></a>Conexões de soquete em protocolos sem conexão
 

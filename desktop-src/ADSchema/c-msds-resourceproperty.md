@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 05f8ca200eb58646fdaea79a81c07cc08cdf44df
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 11c390a0d9f4a9d54af58430d54ded84bf8b524c66c036fe93992891fd3034f8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103824909"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118422537"
 ---
 # <a name="ms-ds-resource-property-class"></a>classe de propriedade ms-DS-Resource
 
@@ -64,9 +64,9 @@ Uma instância dessa classe mantém a definição de uma propriedade em recursos
 
 
 
-## <a name="windows-server-2012-attributes"></a>Atributos do Windows Server 2012
+## <a name="windows-server-2012-attributes"></a>Windows Server 2012 Atributos
 
-Essa classe contém os seguintes atributos para o Windows Server 2012:
+Essa classe contém os seguintes atributos para Windows Server 2012:
 
 
 
@@ -94,7 +94,7 @@ Essa classe contém os seguintes atributos para o Windows Server 2012:
 | [**FRS-Computer-Reference-BL**](a-frscomputerreferencebl.md)                                    | Falso     | [**Início**](c-top.md)<br/>                                                   |
 | [**FRS-member-Reference-BL**](a-frsmemberreferencebl.md)                                        | Falso     | [**Início**](c-top.md)<br/>                                                   |
 | [**FSMO-função-proprietário**](a-fsmoroleowner.md)                                                       | Falso     | [**Início**](c-top.md)<br/>                                                   |
-| [**Tipo de instância**](a-instancetype.md)                                                          | True      | [**Início**](c-top.md)<br/>                                                   |
+| [**Tipo de instância**](a-instancetype.md)                                                          | Verdadeiro      | [**Início**](c-top.md)<br/>                                                   |
 | [**É-crítico-System-Object**](a-iscriticalsystemobject.md)                                    | Falso     | [**Início**](c-top.md)<br/>                                                   |
 | [**É excluído**](a-isdeleted.md)                                                                | Falso     | [**Início**](c-top.md)<br/>                                                   |
 | [**Is-member-of-DL**](a-memberof.md)                                                            | Falso     | [**Início**](c-top.md)<br/>                                                   |
@@ -148,18 +148,18 @@ Essa classe contém os seguintes atributos para o Windows Server 2012:
 | [**ms-DS-revelado-List-BL**](a-msds-revealedlistbl.md)                                          | Falso     | [**Início**](c-top.md)<br/>                                                   |
 | [**ms-DS-Tasks-for-AZ-role-BL**](a-msds-tasksforazrolebl.md)                                    | Falso     | [**Início**](c-top.md)<br/>                                                   |
 | [**ms-DS-Tasks-for-AZ-Task-BL**](a-msds-tasksforaztaskbl.md)                                    | Falso     | [**Início**](c-top.md)<br/>                                                   |
-| [**ms-DS-TDO-egresso-BL**](a-msds-tdoegressbl.md)                                                | Falso     | [**Início**](c-top.md)<br/>                                                   |
+| [**ms-DS-TDO-Egress-BL**](a-msds-tdoegressbl.md)                                                | Falso     | [**Início**](c-top.md)<br/>                                                   |
 | [**ms-DS-TDO-ingress-BL**](a-msds-tdoingressbl.md)                                              | Falso     | [**Início**](c-top.md)<br/>                                                   |
-| [**Referência de tipo ms-DS-Value**](a-msds-valuetypereference.md)                                  | True      | **ms-DS-Resource-Property**                                                       |
+| [**Referência de tipo ms-DS-Value**](a-msds-valuetypereference.md)                                  | Verdadeiro      | **ms-DS-Resource-Property**                                                       |
 | [**ms-DS-Value-Type-Reference-BL**](a-msds-valuetypereferencebl.md)                             | Falso     | [**Início**](c-top.md)<br/>                                                   |
 | [**Ms-Exch-Owner-BL**](a-ownerbl.md)                                                            | Falso     | [**Início**](c-top.md)<br/>                                                   |
 | [**msSFU-30-POSIX-membro de**](a-mssfu30posixmemberof.md)                                       | Falso     | [**Início**](c-top.md)<br/>                                                   |
 | [**netboot-SCP-BL**](a-netbootscpbl.md)                                                         | Falso     | [**Início**](c-top.md)<br/>                                                   |
 | [**Não Security-Member-BL**](a-nonsecuritymemberbl.md)                                          | Falso     | [**Início**](c-top.md)<br/>                                                   |
-| [**NT-Security-Descriptor**](a-ntsecuritydescriptor.md)                                         | True      | [**Início**](c-top.md)<br/>                                                   |
+| [**NT-Security-Descriptor**](a-ntsecuritydescriptor.md)                                         | Verdadeiro      | [**Início**](c-top.md)<br/>                                                   |
 | [**Obj-dist-Name**](a-distinguishedname.md)                                                     | Falso     | [**Início**](c-top.md)<br/>                                                   |
-| [**Objeto-categoria**](a-objectcategory.md)                                                      | True      | [**Início**](c-top.md)<br/>                                                   |
-| [**Classe de objeto**](a-objectclass.md)                                                            | True      | [**Início**](c-top.md)<br/>                                                   |
+| [**Objeto-categoria**](a-objectcategory.md)                                                      | Verdadeiro      | [**Início**](c-top.md)<br/>                                                   |
+| [**Classe de objeto**](a-objectclass.md)                                                            | Verdadeiro      | [**Início**](c-top.md)<br/>                                                   |
 | [**GUID do objeto**](a-objectguid.md)                                                              | Falso     | [**Início**](c-top.md)<br/>                                                   |
 | [**Versão do objeto**](a-objectversion.md)                                                        | Falso     | [**Início**](c-top.md)<br/>                                                   |
 | [**Outros objetos bem conhecidos**](a-otherwellknownobjects.md)                                      | Falso     | [**Início**](c-top.md)<br/>                                                   |
@@ -189,13 +189,13 @@ Essa classe contém os seguintes atributos para o Windows Server 2012:
 | [**USN-DSA-Last-obj-removido**](a-usndsalastobjremoved.md)                                       | Falso     | [**Início**](c-top.md)<br/>                                                   |
 | [**USN-entre sites**](a-usnintersite.md)                                                          | Falso     | [**Início**](c-top.md)<br/>                                                   |
 | [**USN-Last-obj-REM**](a-usnlastobjrem.md)                                                      | Falso     | [**Início**](c-top.md)<br/>                                                   |
-| [**USN-fonte**](a-usnsource.md)                                                                | Falso     | [**Início**](c-top.md)<br/>                                                   |
-| [**WBEM-caminho**](a-wbempath.md)                                                                  | Falso     | [**Início**](c-top.md)<br/>                                                   |
-| [**Objetos bem conhecidos**](a-wellknownobjects.md)                                                 | Falso     | [**Início**](c-top.md)<br/>                                                   |
-| [**Quando-alterado**](a-whenchanged.md)                                                            | Falso     | [**Início**](c-top.md)<br/>                                                   |
-| [**Quando-criado**](a-whencreated.md)                                                            | Falso     | [**Início**](c-top.md)<br/>                                                   |
-| [**WWW-Home-Page**](a-wwwhomepage.md)                                                           | Falso     | [**Início**](c-top.md)<br/>                                                   |
-| [**WWW-página-outro**](a-url.md)                                                                  | Falso     | [**Início**](c-top.md)<br/>                                                   |
+| [**USN-Source**](a-usnsource.md)                                                                | Falso     | [**Início**](c-top.md)<br/>                                                   |
+| [**Wbem-Path**](a-wbempath.md)                                                                  | Falso     | [**Início**](c-top.md)<br/>                                                   |
+| [**Objetos conhecidos**](a-wellknownobjects.md)                                                 | Falso     | [**Início**](c-top.md)<br/>                                                   |
+| [**Quando alterado**](a-whenchanged.md)                                                            | Falso     | [**Início**](c-top.md)<br/>                                                   |
+| [**Quando criado**](a-whencreated.md)                                                            | Falso     | [**Início**](c-top.md)<br/>                                                   |
+| [**WWW-Home Page**](a-wwwhomepage.md)                                                           | Falso     | [**Início**](c-top.md)<br/>                                                   |
+| [**WWW-Page-Other**](a-url.md)                                                                  | Falso     | [**Início**](c-top.md)<br/>                                                   |
 
 
 

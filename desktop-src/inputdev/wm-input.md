@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 04/17/2020
-ms.openlocfilehash: ffe64a5ca79bbe886ddae31661c06dae695259a7
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5d317ba21c69b22ae9c6b7cb5be0be84cd15f561b34ec65f1f99e7335cd1badb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104369497"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117884283"
 ---
 # <a name="wm_input-message"></a>Mensagem de entrada do WM \_
 
@@ -59,7 +59,7 @@ Um identificador **HRAWINPUT** para a estrutura [**rawinput**](/windows/win32/ap
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se um aplicativo processar essa mensagem, ele deverá retornar zero.
 
@@ -71,9 +71,9 @@ A entrada bruta está disponível somente quando o aplicativo chama [**RegisterR
 
 | Requisito | Valor |
 |--------------------------|-------------------------------------------|
-| Cliente mínimo com suporte | \[Somente aplicativos da área de trabalho do Windows XP\] |
-| Servidor mínimo com suporte | \[Somente aplicativos da área de trabalho do Windows Server 2003\] |
-| parâmetro | <dl> <dt>**WinUser. h (incluir Windows. h)**</dt> </dl> |
+| Cliente mínimo com suporte | Windows \[Somente aplicativos da área de trabalho XP\] |
+| Servidor mínimo com suporte | Windows \[Somente aplicativos da área de trabalho do servidor 2003\] |
+| Cabeçalho | <dl> <dt>**Winuser. h (incluir Windows. h)**</dt> </dl> |
 
 ## <a name="see-also"></a>Confira também
 

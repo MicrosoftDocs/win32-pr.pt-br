@@ -1,5 +1,5 @@
 ---
-description: 'Saiba mais sobre: classe EsentInstanceUnavailableDueToFatalLogDiskFullException'
+description: 'Saiba mais sobre: Classe EsentInstanceUnavailableDueToFatalLogDiskFullException'
 title: Classe EsentInstanceUnavailableDueToFatalLogDiskFullException
 TOCTitle: EsentInstanceUnavailableDueToFatalLogDiskFullException class
 ms:assetid: T:Microsoft.Isam.Esent.Interop.EsentInstanceUnavailableDueToFatalLogDiskFullException
@@ -24,29 +24,29 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 5bf38de025abd8770919400cd6fb9e999817a936
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f7e263678bc6c6b56e851f928210be59ebd3d9a0fa3cfd764043061f26bd82ad
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105768534"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118494883"
 ---
 # <a name="esentinstanceunavailableduetofatallogdiskfullexception-class"></a>Classe EsentInstanceUnavailableDueToFatalLogDiskFullException
 
-Classe base para JET_err. InstanceUnavailableDueToFatalLogDiskFull exceções.
+Classe base para JET_err. Exceções InstanceUnavailableDueToFatalLogDiskFull.
 
 ## <a name="inheritance-hierarchy"></a>Hierarquia de herança
 
 [System.Object](/dotnet/api/system.object)  
-  [System. Exception](/dotnet/api/system.exception)  
-    [Microsoft. ISAM. ESENT. EsentException](./esentexception-class.md)  
-      [Microsoft. ISAM. ESENT. Interop. EsentErrorException](./esenterrorexception-class.md)  
-        [Microsoft. ISAM. ESENT. Interop. EsentOperationException](./esentoperationexception-class.md)  
-          [Microsoft. ISAM. ESENT. Interop. EsentFatalException](./esentfatalexception-class.md)  
-            Microsoft. ISAM. ESENT. Interop. EsentInstanceUnavailableDueToFatalLogDiskFullException  
+  [System.Exception](/dotnet/api/system.exception)  
+    [Microsoft.Isam.Esent.EsentException](./esentexception-class.md)  
+      [Microsoft.Isam.Esent.Interop.EsentErrorException](./esenterrorexception-class.md)  
+        [Microsoft.Isam.Esent.Interop.EsentOperationException](./esentoperationexception-class.md)  
+          [Microsoft.Isam.Esent.Interop.EsentFatalException](./esentfatalexception-class.md)  
+            Microsoft.Isam.Esent.Interop.EsentInstanceUnavailableDueToFatalLogDiskFullException  
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Syntax
 
@@ -72,6 +72,6 @@ Qualquer membro estático público (Shared no Visual Basic) desse tipo é seguro
 
 #### <a name="reference"></a>Referência
 
-[Membros do EsentInstanceUnavailableDueToFatalLogDiskFullException](./esentinstanceunavailableduetofatallogdiskfullexception-members.md)
+[Membros EsentInstanceUnavailableDueToFatalLogDiskFullException](./esentinstanceunavailableduetofatallogdiskfullexception-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -3,9 +3,9 @@ title: Evento Player. MediaCollectionAttributeStringRemoved
 description: O evento MediaCollectionAttributeStringRemoved ocorre quando um valor de atributo é removido da biblioteca. | Evento Player. MediaCollectionAttributeStringRemoved
 ms.assetid: f1253996-10d1-42fa-89f9-1e52ca830aea
 keywords:
-- Evento MediaCollectionAttributeStringRemoved do Windows Media Player
-- Evento MediaCollectionAttributeStringRemoved Windows Media Player, classe Player
-- Classe de jogador Windows Media Player, evento MediaCollectionAttributeStringRemoved
+- Windows Media Player de eventos MediaCollectionAttributeStringRemoved
+- Windows Media Player de eventos MediaCollectionAttributeStringRemoved, classe Player
+- classe de jogador Windows Media Player, evento MediaCollectionAttributeStringRemoved
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b1b85dfd566c507f6ae5557134ac95544e42d688
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8b89e46d4dbe86f185fb636b5c8de453e2addbf83c92d1231b5f067ce0b3b1d9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105782414"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117747402"
 ---
 # <a name="playermediacollectionattributestringremoved-event"></a>Evento Player. MediaCollectionAttributeStringRemoved
 
@@ -46,7 +46,7 @@ Player.MediaCollectionAttributeStringRemoved(
 *bstrAttribName* 
 </dt> <dd>
 
-**Cadeia de caracteres** que especifica o nome do atributo. Para obter informações sobre os atributos com suporte do Windows Media Player, consulte a [referência de atributo](attribute-reference.md)do Windows Media Player.
+**Cadeia de caracteres** que especifica o nome do atributo. para obter informações sobre os atributos com suporte pelo Windows Media Player, consulte a [referência de atributo](attribute-reference.md)Windows Media Player.
 
 </dd> <dt>
 
@@ -57,7 +57,7 @@ Player.MediaCollectionAttributeStringRemoved(
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse evento não retorna um valor.
 
@@ -65,7 +65,7 @@ Esse evento não retorna um valor.
 
 Quando um item de mídia é removido da biblioteca, seus metadados são removidos do objeto **mediacollection** e esse evento é acionado para cada atributo removido.
 
-O valor dos parâmetros de evento é especificado pelo Windows Media Player e pode ser acessado ou transmitido para um método em um arquivo JScript importado usando o nome de parâmetro fornecido. Esse nome de parâmetro deve ser digitado exatamente como mostrado, incluindo a capitalização.
+o valor dos parâmetros de evento é especificado por Windows Media Player e pode ser acessado ou passado para um método em um arquivo de JScript importado usando o nome de parâmetro fornecido. Esse nome de parâmetro deve ser digitado exatamente como mostrado, incluindo a capitalização.
 
 **Windows Media Player 10 Mobile:** Não há suporte para esse evento.
 

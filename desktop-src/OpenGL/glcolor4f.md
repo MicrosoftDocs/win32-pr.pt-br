@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 99da276debf24f5025e0433ce789bdbced0006a7
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 2928471cfd1f7b6783db899d2670f2e1c434dc0ce714a5f975083b21b5d7034b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105778413"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118360487"
 ---
 # <a name="glcolor4f-function"></a>função glColor4f
 
@@ -64,7 +64,7 @@ O novo valor azul para a cor atual.
 
 </dd> <dt>
 
-*Alfa* 
+*alfa* 
 </dt> <dd>
 
 O novo valor alfa para a cor atual.

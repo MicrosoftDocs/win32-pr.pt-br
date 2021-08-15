@@ -3,7 +3,7 @@ title: Mensagem de MCIWNDM_GETZOOM (VFW. h)
 description: A \_ mensagem getzoom do MCIWNDM recupera o valor de zoom atual usado por um dispositivo MCI. Você pode enviar essa mensagem explicitamente ou usando a macro MCIWndGetZoom.
 ms.assetid: 92db8df2-515a-4616-a0f5-245d466ba379
 keywords:
-- Multimídia do Windows de mensagem MCIWNDM_GETZOOM
+- mensagem de MCIWNDM_GETZOOM Windows multimídia
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fcb4ae1883787f1b86dcc17f2d4a3e0e0ee29ced
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 52c247230ffe6269f77b906d874a4cf82a21ed8d3388ffa18193417603e45fbd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104454983"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118374137"
 ---
 # <a name="mciwndm_getzoom-message"></a>\_Mensagem GETzoom do MCIWNDM
 

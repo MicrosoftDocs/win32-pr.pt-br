@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f01ebb231404188235236442df1d4916814f0636
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: abd9381d58c533341539e0957f787e166572ec60d4009aa34f84a327ba3a34ca
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105756271"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118426749"
 ---
 # <a name="ms-ds-executescriptpassword-attribute"></a>atributo ms-DS-ExecuteScriptPassword
 
@@ -57,8 +57,8 @@ Usado durante a renomeação do domínio. Esse valor não pode ser gravado ou li
 |------------------------|---------------------------------------------------------------|
 | ID do link                | \-                                                            |
 | MAPI-Id                | \-                                                            |
-| System-Only            | True                                                          |
-| É de valor único       | True                                                          |
+| System-Only            | Verdadeiro                                                          |
+| É de valor único       | Verdadeiro                                                          |
 | É indexado             | Falso                                                         |
 | No catálogo global      | Falso                                                         |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                  |
@@ -78,8 +78,8 @@ Usado durante a renomeação do domínio. Esse valor não pode ser gravado ou li
 |------------------------|---------------------------------------------------------------|
 | ID do link                | \-                                                            |
 | MAPI-Id                | \-                                                            |
-| System-Only            | True                                                          |
-| É de valor único       | True                                                          |
+| System-Only            | Verdadeiro                                                          |
+| É de valor único       | Verdadeiro                                                          |
 | É indexado             | Falso                                                         |
 | No catálogo global      | Falso                                                         |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                  |
@@ -99,8 +99,8 @@ Usado durante a renomeação do domínio. Esse valor não pode ser gravado ou li
 |------------------------|---------------------------------------------------------------|
 | ID do link                | \-                                                            |
 | MAPI-Id                | \-                                                            |
-| System-Only            | True                                                          |
-| É de valor único       | True                                                          |
+| System-Only            | Verdadeiro                                                          |
+| É de valor único       | Verdadeiro                                                          |
 | É indexado             | Falso                                                         |
 | No catálogo global      | Falso                                                         |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                  |
@@ -108,7 +108,7 @@ Usado durante a renomeação do domínio. Esse valor não pode ser gravado ou li
 | Range-Upper            | 64                                                            |
 | Search-Flags           | 0x00000000                                                    |
 | System-Flags           | 0x00000011                                                    |
-| Classes usadas em        | [**Entre referências-contêiner**](c-crossrefcontainer.md)<br/> |
+| Classes usadas em        | [**Cross-Ref-Container**](c-crossrefcontainer.md)<br/> |
 
 
 
@@ -120,16 +120,16 @@ Usado durante a renomeação do domínio. Esse valor não pode ser gravado ou li
 |------------------------|---------------------------------------------------------------------------------------------------------|
 | ID do link                | \-                                                                                                      |
 | MAPI-Id                | \-                                                                                                      |
-| System-Only            | True                                                                                                    |
-| É de valor único       | True                                                                                                    |
+| System-Only            | Verdadeiro                                                                                                    |
+| Tem valor único       | Verdadeiro                                                                                                    |
 | É indexado             | Falso                                                                                                   |
-| No catálogo global      | Falso                                                                                                   |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                            |
+| No Catálogo Global      | Falso                                                                                                   |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                            |
 | Range-Lower            | 0                                                                                                       |
 | Range-Upper            | 64                                                                                                      |
 | Search-Flags           | 0x00000000                                                                                              |
 | System-Flags           | 0x00000011                                                                                              |
-| Classes usadas em        | [**Computador**](c-computer.md)<br/> [**Entre referências-contêiner**](c-crossrefcontainer.md)<br/> |
+| Classes usadas em        | [**Computador**](c-computer.md)<br/> [**Cross-Ref-Container**](c-crossrefcontainer.md)<br/> |
 
 
 
@@ -141,16 +141,16 @@ Usado durante a renomeação do domínio. Esse valor não pode ser gravado ou li
 |------------------------|---------------------------------------------------------------------------------------------------------|
 | ID do link                | \-                                                                                                      |
 | MAPI-Id                | \-                                                                                                      |
-| System-Only            | True                                                                                                    |
-| É de valor único       | True                                                                                                    |
+| System-Only            | Verdadeiro                                                                                                    |
+| Tem valor único       | Verdadeiro                                                                                                    |
 | É indexado             | Falso                                                                                                   |
-| No catálogo global      | Falso                                                                                                   |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                            |
+| No Catálogo Global      | Falso                                                                                                   |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                            |
 | Range-Lower            | 0                                                                                                       |
 | Range-Upper            | 64                                                                                                      |
 | Search-Flags           | 0x00000000                                                                                              |
 | System-Flags           | 0x00000011                                                                                              |
-| Classes usadas em        | [**Computador**](c-computer.md)<br/> [**Entre referências-contêiner**](c-crossrefcontainer.md)<br/> |
+| Classes usadas em        | [**Computador**](c-computer.md)<br/> [**Cross-Ref-Container**](c-crossrefcontainer.md)<br/> |
 
 
 
@@ -162,16 +162,16 @@ Usado durante a renomeação do domínio. Esse valor não pode ser gravado ou li
 |------------------------|---------------------------------------------------------------------------------------------------------|
 | ID do link                | \-                                                                                                      |
 | MAPI-Id                | \-                                                                                                      |
-| System-Only            | True                                                                                                    |
-| É de valor único       | True                                                                                                    |
+| System-Only            | Verdadeiro                                                                                                    |
+| Tem valor único       | Verdadeiro                                                                                                    |
 | É indexado             | Falso                                                                                                   |
-| No catálogo global      | Falso                                                                                                   |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                            |
+| No Catálogo Global      | Falso                                                                                                   |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                            |
 | Range-Lower            | 0                                                                                                       |
 | Range-Upper            | 64                                                                                                      |
 | Search-Flags           | 0x00000000                                                                                              |
 | System-Flags           | 0x00000011                                                                                              |
-| Classes usadas em        | [**Computador**](c-computer.md)<br/> [**Entre referências-contêiner**](c-crossrefcontainer.md)<br/> |
+| Classes usadas em        | [**Computador**](c-computer.md)<br/> [**Cross-Ref-Container**](c-crossrefcontainer.md)<br/> |
 
 
 

@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 59faf801b7f6f70e92c55a1d2a27857ed6ecb0c9
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: edb3a616d0c687b0dc5514b0dcf54ff5832ffc2a9175f99328bec025c8bde53f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104163660"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118423582"
 ---
 # <a name="rid-available-pool-attribute"></a>RID-disponível-atributo de pool
 
@@ -58,7 +58,7 @@ O espaço do qual os pools RID são alocados.
 | ID do link                | \-                                             |
 | MAPI-Id                | \-                                             |
 | System-Only            | Falso                                          |
-| É de valor único       | True                                           |
+| É de valor único       | Verdadeiro                                           |
 | É indexado             | Falso                                          |
 | No catálogo global      | Falso                                          |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                   |
@@ -79,7 +79,7 @@ O espaço do qual os pools RID são alocados.
 | ID do link                | \-                                             |
 | MAPI-Id                | \-                                             |
 | System-Only            | Falso                                          |
-| É de valor único       | True                                           |
+| É de valor único       | Verdadeiro                                           |
 | É indexado             | Falso                                          |
 | No catálogo global      | Falso                                          |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                   |
@@ -100,7 +100,7 @@ O espaço do qual os pools RID são alocados.
 | ID do link                | \-                                             |
 | MAPI-Id                | \-                                             |
 | System-Only            | Falso                                          |
-| É de valor único       | True                                           |
+| É de valor único       | Verdadeiro                                           |
 | É indexado             | Falso                                          |
 | No catálogo global      | Falso                                          |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                   |
@@ -121,7 +121,7 @@ O espaço do qual os pools RID são alocados.
 | ID do link                | \-                                             |
 | MAPI-Id                | \-                                             |
 | System-Only            | Falso                                          |
-| É de valor único       | True                                           |
+| É de valor único       | Verdadeiro                                           |
 | É indexado             | Falso                                          |
 | No catálogo global      | Falso                                          |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                   |
@@ -142,7 +142,7 @@ O espaço do qual os pools RID são alocados.
 | ID do link                | \-                                             |
 | MAPI-Id                | \-                                             |
 | System-Only            | Falso                                          |
-| É de valor único       | True                                           |
+| É de valor único       | Verdadeiro                                           |
 | É indexado             | Falso                                          |
 | No catálogo global      | Falso                                          |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                   |
@@ -163,7 +163,7 @@ O espaço do qual os pools RID são alocados.
 | ID do link                | \-                                             |
 | MAPI-Id                | \-                                             |
 | System-Only            | Falso                                          |
-| É de valor único       | True                                           |
+| É de valor único       | Verdadeiro                                           |
 | É indexado             | Falso                                          |
 | No catálogo global      | Falso                                          |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                   |

@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - Npptools.dll
-ms.openlocfilehash: b2e8989264a042368b37926bbb502f48ab2fb04b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a920d6ffc135855826719e31613119a27671e334d5a75ce7dba29c2b140816fc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104501888"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118363747"
 ---
 # <a name="setnpppatternfilterinblob-function"></a>Função SetNPPPatternFilterInBlob
 
@@ -62,7 +62,7 @@ O identificador para um BLOB de erro que especifica onde ocorreu o erro (se houv
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se a função **SetNPPPatternFilterInBlob** for bem-sucedida, o valor de retorno será NMERR com \_ êxito.
 

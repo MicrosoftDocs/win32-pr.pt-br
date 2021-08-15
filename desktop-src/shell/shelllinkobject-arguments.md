@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: c9b8a32eb4b935b5164ef91bf299777b36d7e53d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3124e76ec8ba46f3e8915ac24c080c3e28caad620f7de1d100eaa7bb2316d851
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104171175"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117857587"
 ---
 # <a name="shelllinkobjectarguments-property"></a>Propriedade ShellLinkObject. Arguments
 
@@ -42,9 +42,9 @@ os argumentos do link.
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo a seguir usa **argumentos** para recuperar os argumentos de um link para o Internet Explorer encontrado no menu Iniciar do usuário. O uso adequado é mostrado para JScript, VBScript e Visual Basic.
+o exemplo a seguir usa **argumentos** para recuperar os argumentos de um link para o Internet Explorer encontrado no menu Iniciar do usuário. o uso adequado é mostrado para JScript, VBScript e Visual Basic.
 
-JScript
+JScript:
 
 
 ```JScript
@@ -182,7 +182,7 @@ End Sub
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Somente aplicativos de área de trabalho do Windows 2000 Professional com SP3 \[\]<br/>                                           |
+| Cliente mínimo com suporte<br/> | Windows 2000 Professional somente com \[ aplicativos da área de trabalho do SP3\]<br/>                                           |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                          |
 | Cabeçalho<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                          |
 | INSERI<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                        |

@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55102556
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 80e9d7e193942aef5b28f7a6e8662a74b780b088
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ac4073fa620230a1dc420912696e0a9679f9fa7b86bfa2c792061b3d7d58071c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104010409"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118774884"
 ---
 # <a name="esentrecoveredwithoutundodatabasesconsistentexception-members"></a>Membros do EsentRecoveredWithoutUndoDatabasesConsistentException
 
@@ -73,7 +73,7 @@ Parte superior
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.protproperty(exchg.10).gif" title="Propriedade protegida" alt="Protected property" /></td>
-<td><a href="/dotnet/api/system.exception.hresult#System_Exception_HResult">Resultado</a></td>
+<td><a href="/dotnet/api/system.exception.hresult#System_Exception_HResult">HResult</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="odd">
@@ -93,7 +93,7 @@ Parte superior
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
-<td><a href="/dotnet/api/system.exception.stacktrace#System_Exception_StackTrace">Pilha</a></td>
+<td><a href="/dotnet/api/system.exception.stacktrace#System_Exception_StackTrace">StackTrace</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="odd">

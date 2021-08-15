@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c950260a5ed29d100bf61a47120f58ee2f45d8ff
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 4fb53fa34ff3723fc8539f547627b985ea2884b0dffd7d83a431e26acb25a2d8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103644437"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118359524"
 ---
 # <a name="glindexf-function"></a>função glIndexf
 

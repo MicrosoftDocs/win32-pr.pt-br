@@ -4,12 +4,12 @@ ms.assetid: 4f46b8c3-1e12-447c-87f4-bbe2c305f77a
 title: Verbos e associações de arquivo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b398b168afe66c3ddd1abe4c78863fbf67ffcbd8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a144051b04ef2d9a2c9877b53e1680d4274afc92d3fc87fbcb531b02a0f94946
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104563850"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117860783"
 ---
 # <a name="verbs-and-file-associations"></a>Verbos e associações de arquivo
 
@@ -20,7 +20,7 @@ Este tópico é organizado da seguinte maneira:
 -   [Introdução aos menus de atalho para objetos do sistema de arquivos](#introduction-to-shortcut-menus-for-file-system-objects)
     -   [Adicionar comandos a um menu de atalho](#add-commands-to-a-shortcut-menu)
 -   [Verbos do menu de atalho](#shortcut-menu-verbs)
--   [Transmitir itens de sistema que não são de arquivos e resultados de OpenSearch.](#stream-non-file-system-items-and-opensearch-results)
+-   [transmitir itens de sistema sem arquivos e resultados de OpenSearch.](#stream-non-file-system-items-and-opensearch-results)
 -   [Registrar um aplicativo para lidar com tipos de arquivo arbitrários](#register-an-application-to-handle-arbitrary-file-types)
 -   [Recursos adicionais](#additional-resources)
 -   [Tópicos relacionados](#related-topics)
@@ -33,7 +33,7 @@ O exemplo a seguir ilustra um menu de atalho padrão exibido ao clicar com o bot
 
 ![captura de tela do menu de atalho padrão](images/context-menu/context-filesystemobjects.png)
 
-O motivo pelo qual um menu de atalho padrão é exibido para **MyFile.xyz-MS** é devido ao fato de que **. xyz-MS** não é membro de um tipo de arquivo registrado. Por outro lado, **. txt** é um tipo de arquivo registrado. Se você clicar com o botão direito do mouse em um arquivo **. txt** , verá um menu de atalho com três comandos adicionais em sua seção superior: **Imprimir**, **Editar** e **abrir com**.
+O motivo pelo qual um menu de atalho padrão é exibido para **MyFile.xyz-MS** é devido ao fato de que **. xyz-MS** não é membro de um tipo de arquivo registrado. Por outro lado, **.txt** é um tipo de arquivo registrado. Se você clicar com o botão direito do mouse em um arquivo de **.txt** , verá um menu de atalho com três comandos adicionais em sua seção superior: **Imprimir**, **Editar** e **abrir com**.
 
 ![captura de tela do menu de atalho para um arquivo com um tipo de arquivo registrado](images/context-menu/context-registeredfiletype.png)
 
@@ -47,7 +47,7 @@ Um manipulador de menu de atalho é um manipulador de tipo de arquivo que adicio
 
 Cada comando no menu de atalho é identificado no registro por seu verbo. Esses verbos são os mesmos usados pelo [**ShellExecuteEx**](/windows/desktop/api/Shellapi/nf-shellapi-shellexecuteexa) ao iniciar aplicativos programaticamente.
 
-Um verbo é uma cadeia de caracteres de texto simples que é usada pelo shell para identificar o comando associado. Cada verbo corresponde à cadeia de caracteres de comando usada para iniciar o comando em uma janela de console ou arquivo de lote (. bat).
+Um verbo é uma cadeia de caracteres de texto simples que é usada pelo shell para identificar o comando associado. Cada verbo corresponde à cadeia de caracteres de comando usada para iniciar o comando em uma janela de console ou em um arquivo de lote (.bat).
 
 Por exemplo, o verbo Open normalmente inicia um programa para abrir um arquivo. A cadeia de caracteres de comando geralmente tem a seguinte aparência:
 
@@ -62,11 +62,11 @@ Se qualquer elemento da cadeia de caracteres de comando contiver ou puder conter
 
 Os verbos também podem ter um nome de exibição associado a eles, que é exibido no menu de atalho em vez da própria cadeia de caracteres de verbo. Por exemplo, a cadeia de caracteres de exibição para openas é **aberta com**. Assim como as cadeias de menu normais, a inclusão de um caractere de e comercial na cadeia de caracteres de exibição permite a seleção de teclado do comando.
 
-## <a name="stream-non-file-system-items-and-opensearch-results"></a>Transmitir itens de sistema que não são de arquivos e resultados de OpenSearch.
+## <a name="stream-non-file-system-items-and-opensearch-results"></a>transmitir itens de sistema sem arquivos e resultados de OpenSearch.
 
-No Windows 7 e posterior, há suporte para a conexão de fontes externas para o cliente Windows por meio do protocolo [OpenSearch](http://www.opensearch.org/) . Isso permite que os usuários pesquisem um armazenamento de dados remoto e exibam os resultados de dentro do Windows Explorer. O padrão OpenSearch v 1.1 define formatos de arquivo simples que podem ser usados para descrever como um cliente deve consultar o serviço Web para o armazenamento de dados e como o serviço deve retornar resultados a serem processados pelo cliente.
+no Windows 7 e posterior, há suporte para a conexão de fontes externas para o cliente Windows por meio do protocolo [OpenSearch](http://www.opensearch.org/) . isso permite que os usuários pesquisem um armazenamento de dados remoto e exibam os resultados de dentro do Windows Explorer. o padrão OpenSearch v 1.1 define formatos de arquivo simples que podem ser usados para descrever como um cliente deve consultar o serviço web para o armazenamento de dados e como o serviço deve retornar os resultados a serem processados pelo cliente.
 
-Talvez seja necessário transmitir itens que não sejam do sistema de arquivos para evitar a necessidade de baixar itens no caso de resultados de [OpenSearch](http://www.opensearch.org/) . O recurso de pesquisa federada permite pesquisar itens de locais de sistemas que não são de arquivos que dão suporte a OpenSearch, como o SharePoint e outros sites de backup de serviços da Web, por exemplo. Ao invocar verbos nesses itens, o sistema baixa uma versão temporária do item e a passa para a implementação do verbo. Os implementadores de verbo são incentivados a evitar a necessidade de baixar o arquivo registrando o conjunto de esquemas de URL que o verbo dá suporte para transmitir os itens. Os verbos fazem isso usando a chave do registro **SupportedProtocols** .
+talvez seja necessário transmitir itens que não sejam do sistema de arquivos para evitar a necessidade de baixar itens no caso de resultados de [OpenSearch](http://www.opensearch.org/) . o recurso de pesquisa federada permite pesquisar itens de locais de sistema que não são de arquivos que dão suporte a OpenSearch, como SharePoint e outros sites de backup de serviços da web, por exemplo. Ao invocar verbos nesses itens, o sistema baixa uma versão temporária do item e a passa para a implementação do verbo. Os implementadores de verbo são incentivados a evitar a necessidade de baixar o arquivo registrando o conjunto de esquemas de URL que o verbo dá suporte para transmitir os itens. Os verbos fazem isso usando a chave do registro **SupportedProtocols** .
 
 ## <a name="register-an-application-to-handle-arbitrary-file-types"></a>Registrar um aplicativo para lidar com tipos de arquivo arbitrários
 
@@ -108,7 +108,7 @@ HKEY_CLASSES_ROOT
 [Escolhendo um verbo estático ou dinâmico para o menu de atalho](shortcut-choose-method.md)
 </dt> <dt>
 
-[Criando manipuladores de menu de atalho](context-menu-handlers.md)
+[Como Criar Manipuladores do Menu de Atalho](context-menu-handlers.md)
 </dt> <dt>
 
 [Personalizando um menu de atalho usando verbos dinâmicos](shortcut-menu-using-dynamic-verbs.md)

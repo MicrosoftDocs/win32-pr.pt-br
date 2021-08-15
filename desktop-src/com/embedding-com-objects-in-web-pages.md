@@ -4,12 +4,12 @@ description: Você pode usar objetos COM em páginas da Web. Para fazer isso, pr
 ms.assetid: 7e2c9da7-aeae-4206-8be9-1303240b2b1d
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4762dd01d4bc07aab5c0b146c56cdb1aec3cb28f
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 5d13a92bd2de152e71ac4284ce37b977e8305f25dcb2aef5eb94d6019d115812
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104292033"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117736887"
 ---
 # <a name="embedding-com-objects-in-web-pages"></a>Inserindo objetos COM em páginas da Web
 
@@ -17,7 +17,7 @@ Você pode usar objetos COM em páginas da Web. Para fazer isso, primeiro crie u
 
 Para criar uma instância de objeto COM em uma página da Web, você pode usar uma marca de objeto. Como alternativa, se a linguagem de script fornecer uma maneira nativa de criar objetos COM, você poderá criar uma instância de objeto usando script.
 
-Observe que a inserção de objetos COM em páginas da Web só funciona com navegadores que dão suporte a ActiveX e COM, por exemplo, o Internet Explorer.
+observe que a inserção de objetos COM em páginas da web só funciona com navegadores que dão suporte a ActiveX e COM, por exemplo, o Internet Explorer.
 
 O exemplo a seguir ilustra o uso da marca OBJECT para inserir um objeto COM em uma página da Web:
 
@@ -36,7 +36,7 @@ O exemplo a seguir ilustra o uso da marca OBJECT para inserir um objeto COM em u
  
 ```
 
-Você também pode criar uma instância de objeto COM no script, se a linguagem de script fornecer uma maneira de criar objetos COM. Por exemplo, o VBScript fornece o método CreateObject e o JScript fornece o objeto ActiveXobject. A criação de objetos no script é ilustrada nos exemplos a seguir.
+Você também pode criar uma instância de objeto COM no script, se a linguagem de script fornecer uma maneira de criar objetos COM. por exemplo, o VBScript fornece o método CreateObject e JScript fornece o objeto activexobject. A criação de objetos no script é ilustrada nos exemplos a seguir.
 
 ``` syntax
 <SCRIPT LANGUAGE = "VBScript">
@@ -50,9 +50,9 @@ Você também pode criar uma instância de objeto COM no script, se a linguagem 
  
 ```
 
-Além do método CreateObject e do objeto ActiveXobject, o VBScript e o JScript fornecem o método GetObject, que retorna uma instância de objeto.
+além do método CreateObject e do objeto activexobject, tanto o VBScript quanto o JScript fornecem o método getobject, que retorna uma instância de objeto.
 
-Depois que um objeto COM tiver sido criado, você poderá referenciá-lo em scripts subsequentes usando o identificador especificado no atributo ID da marca do objeto. No exemplo anterior, esse identificador foi especificado como "vid". Observe que o script que usa o objeto COM deve aparecer após a marca de objeto ou o script que cria a instância do objeto; caso contrário, o identificador de objeto será indefinido. O script a seguir usa o objeto objXL para exibir as informações de versão do Microsoft Excel.
+Depois que um objeto COM tiver sido criado, você poderá referenciá-lo em scripts subsequentes usando o identificador especificado no atributo ID da marca do objeto. No exemplo anterior, esse identificador foi especificado como "vid". Observe que o script que usa o objeto COM deve aparecer após a marca de objeto ou o script que cria a instância do objeto; caso contrário, o identificador de objeto será indefinido. O script a seguir usa o objeto objXL para exibir as informações de versão para Microsoft Excel.
 
 ``` syntax
 <SCRIPT LANGUAGE = "VBScript">
@@ -70,9 +70,9 @@ Se você estiver escrevendo scripts inseridos em uma página da Web, o navegador
 [Criando scripts com objetos COM](scripting-with-com-objects.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,27 +1,27 @@
 ---
-description: O exemplo a seguir ilustra o uso das funções do VirtualAlloc e do VirtualFree no reservando e confirmando a memória conforme necessário para uma matriz dinâmica.
+description: O exemplo a seguir ilustra o uso das funções VirtualAlloc e VirtualFree na reserva e confirmação de memória conforme necessário para uma matriz dinâmica.
 ms.assetid: f46bd57d-7684-4a08-8ac7-de204aecb207
-title: Reservando e confirmando memória
+title: Reservando e comando memória
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 66ff5853d01561454265e1ee2102fbf6ebd9bb04
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 615f3c4321dc432b5ef83a841cea12215563e7d103443512a4d3b2c553849540
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105782796"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118386274"
 ---
-# <a name="reserving-and-committing-memory"></a>Reservando e confirmando memória
+# <a name="reserving-and-committing-memory"></a>Reservando e comando memória
 
-O exemplo a seguir ilustra o uso das funções do [**VirtualAlloc**](/windows/win32/api/memoryapi/nf-memoryapi-virtualalloc) e do [**VirtualFree**](/windows/win32/api/memoryapi/nf-memoryapi-virtualfree) no reservando e confirmando a memória conforme necessário para uma matriz dinâmica. Primeiro, o **VirtualAlloc** é chamado para reservar um bloco de páginas com **NULL** especificado como o parâmetro de endereço base, forçando o sistema a determinar o local do bloco. Posteriormente, o **VirtualAlloc** é chamado sempre que for necessário confirmar uma página dessa região reservada e o endereço base da próxima página a ser confirmada for especificado.
+O exemplo a seguir ilustra o uso das funções [**VirtualAlloc**](/windows/win32/api/memoryapi/nf-memoryapi-virtualalloc) e [**VirtualFree**](/windows/win32/api/memoryapi/nf-memoryapi-virtualfree) na reserva e confirmação de memória conforme necessário para uma matriz dinâmica. Primeiro, **VirtualAlloc** é chamado para reservar um bloco de páginas com **NULL** especificado como o parâmetro de endereço base, forçando o sistema a determinar o local do bloco. Posteriormente, **VirtualAlloc** é chamado sempre que é necessário fazer commit de uma página dessa região reservada e o endereço base da próxima página a ser confirmado é especificado.
 
-O exemplo usa a sintaxe de manipulação de exceção estruturada para confirmar páginas da região reservada. Sempre que ocorre uma exceção de falha de página durante a execução do bloco **\_ \_ try** , a função Filter na expressão que antecede o bloco **\_ \_ Except** é executada. Se a função de filtro puder alocar outra página, a execução continuará no bloco **\_ \_ try** no ponto em que a exceção ocorreu. Caso contrário, o manipulador de exceção no bloco **\_ \_ Except** será executado. Para obter mais informações, consulte [manipulação de exceção estruturada](../debug/structured-exception-handling.md).
+O exemplo usa a sintaxe estruturada de tratamento de exceções para fazer commit de páginas da região reservada. Sempre que ocorre uma exceção de falha de página durante a execução do bloco **\_ \_ try,** a função de filtro na expressão anterior ao bloco **\_ \_ except** é executada. Se a função de filtro puder alocar outra página, a execução continuará no **\_ \_ bloco try** no ponto em que a exceção ocorreu. Caso contrário, o manipulador de exceção no **\_ \_ bloco except** será executado. Para obter mais informações, consulte [Tratamento de exceções estruturadas.](../debug/structured-exception-handling.md)
 
-Como uma alternativa à alocação dinâmica, o processo pode simplesmente confirmar a região inteira, em vez de apenas reservá-la. Ambos os métodos resultam no mesmo uso de memória física porque as páginas confirmadas não consomem nenhum armazenamento físico até serem acessadas pela primeira vez. A vantagem da alocação dinâmica é que ela minimiza o número total de páginas confirmadas no sistema. Para alocações muito grandes, a confirmação de uma alocação inteira pode fazer com que o sistema fique sem páginas confirmadas, resultando em falhas de alocação de memória virtual.
+Como alternativa à alocação dinâmica, o processo pode simplesmente fazer commit de toda a região em vez de apenas reservá-la. Ambos os métodos resultam no mesmo uso de memória física porque as páginas comprometidas não consomem nenhum armazenamento físico até que sejam acessadas pela primeira vez. A vantagem da alocação dinâmica é que ela minimiza o número total de páginas comprometidas no sistema. Para alocações muito grandes, a pré-confirmação de uma alocação inteira pode fazer com que o sistema fique sem páginas committable, resultando em falhas de alocação de memória virtual.
 
-A função [**ExitProcess**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-exitprocess) no bloco **\_ \_ Except** libera automaticamente as alocações de memória virtual, portanto, não é necessário liberar explicitamente as páginas quando o programa termina nesse caminho de execução. A função [**VirtualFree**](/windows/win32/api/memoryapi/nf-memoryapi-virtualfree) libera as páginas reservadas e confirmadas se o programa for criado com a manipulação de exceção desabilitada. Essa função usa **a \_ liberação mem** para desconfirmar e liberar toda a região de páginas reservadas e confirmadas.
+A [**função ExitProcess**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-exitprocess) no bloco except libera automaticamente as alocações de memória virtual, portanto, não é necessário liberar explicitamente as páginas quando o programa terminar por meio desse caminho de execução. **\_ \_** A [**função VirtualFree**](/windows/win32/api/memoryapi/nf-memoryapi-virtualfree) liberará as páginas reservadas e comprometidas se o programa for criado com o tratamento de exceção desabilitado. Essa função usa **MEM \_ RELEASE** para delimitar e liberar toda a região de páginas reservadas e comprometidas.
 
-O exemplo de C++ a seguir demonstra a alocação de memória dinâmica usando um manipulador de exceção estruturado.
+O exemplo C++ a seguir demonstra a alocação de memória dinâmica usando um manipulador de exceção estruturado.
 
 
 ```C++

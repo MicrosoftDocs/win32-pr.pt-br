@@ -4,12 +4,12 @@ ms.assetid: 4c0df747-627d-4937-a117-d43137d5d081
 title: IFilterSample
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 10f66bf32c4abe25038aa6b2a3b6d879ba65cf7a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f015166d0366152d07a5fb8d182edcb5422112c66f016219970fef9b889df3ab
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105785054"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117863729"
 ---
 # <a name="ifiltersample"></a>IFilterSample
 
@@ -34,27 +34,27 @@ Este tópico inclui as seções a seguir.
 
 Este exemplo está disponível no local a seguir.
 
-| Local      | URL do caminho                                                                  |
+| Localização      | URL do caminho                                                                  |
 |---------------|---------------------------------------------------------------------------|
 | GitHub        | [IFilterSample](https://github.com/Microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/winui/WindowsSearch/IFilterSample)          |
 
 > [!NOTE]  
-> Para todas as versões do Windows, incluindo o Windows 7, é recomendável baixar os exemplos diretamente do GitHub para obter a versão mais atualizada.
+> para todas as versões do Windows, incluindo o Windows 7, é recomendável baixar os exemplos diretamente do GitHub para a versão mais atualizada.
 
 ## <a name="building-the-sample"></a>Compilando o exemplo
 
-1. Abra o Windows Explorer e navegue até o diretório do projeto **FilterBase** .
+1. abra Windows Explorer e navegue até o diretório do projeto **FilterBase** .
 2. Clique duas vezes no ícone do arquivo FilterBase. sln para abrir o projeto no Visual Studio.
 
     > [!NOTE]  
-    > O arquivo sln foi criado em uma versão mais antiga do Visual Studio, portanto, a atualização será necessária se você estiver executando o Visual Studio 2012 ou mais recente. Isso não afetará o comportamento do exemplo.
+    > o arquivo sln foi criado em uma versão mais antiga do Visual Studio, assim, a atualização será necessária se você estiver executando o Visual Studio 2012 ou mais recente. Isso não afetará o comportamento do exemplo.
 
-3. No menu **Compilar** , selecione **Compilar solução**.
+3. No menu **Compilar**, selecione **Compilar Solução**.
 
 ## <a name="running-the-sample"></a>Executando o exemplo
 
-1. Navegue até o diretório que contém o novo executável, usando a janela de prompt de comando ou o Windows Explorer.
-2. No prompt de comando, digite `FilterBase.exe` ou, no Windows Explorer, clique duas vezes no ícone para FilterBase.exe.
+1. navegue até o diretório que contém o novo executável, usando a janela de Prompt de comando ou Windows Explorer.
+2. no prompt de comando, digite `FilterBase.exe` ou, no Windows Explorer, clique duas vezes no ícone para FilterBase.exe.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

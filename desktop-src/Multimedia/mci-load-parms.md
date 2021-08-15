@@ -3,7 +3,7 @@ title: Estrutura de MCI_LOAD_PARMS (mmsystem. h)
 description: A \_ estrutura de parâmetros de carregamento MCI \_ contém o nome de arquivo a ser carregado para o \_ comando de carregamento MCI.
 ms.assetid: 371d11cc-44db-496b-b51a-66d7b919b794
 keywords:
-- Multimídia do Windows da estrutura de MCI_LOAD_PARMS
+- estrutura de MCI_LOAD_PARMS Windows multimídia
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 04697a52eb9f8bb33db6063eb47e791be674f1d2
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d52a5c875bbbfff6f94857bc7337a0cba1473571bfdb8edc8ccfa8f3f1a471fd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103645011"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118375001"
 ---
 # <a name="mci_load_parms-structure"></a>Estrutura de parâmetros de \_ carga MCI \_
 

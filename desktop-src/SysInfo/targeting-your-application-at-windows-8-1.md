@@ -1,26 +1,26 @@
 ---
-description: No Windows 8.1 e no Windows 10, as funções GetVersion e GetVersionEx foram preteridas.
+description: No Windows 8.1 e Windows 10, as funções GetVersion e GetVersionEx foram preterida.
 ms.assetid: E7A1A16A-95B3-4B45-81AD-A19E33F15AE4
 title: Direcionando seu aplicativo para Windows
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a0bd280451e5a1dd6a5162dd7b9ccb34495d22be
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e045dff2f46501c4715e2ffebe484dfeadb3aa9f276d79c7e7c1afdbec6ba7e3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104297340"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117763107"
 ---
 # <a name="targeting-your-application-for-windows"></a>Direcionando seu aplicativo para Windows
 
-No Windows 8.1 e no Windows 10, as funções [**GetVersion**](/windows/win32/api/sysinfoapi/nf-sysinfoapi-getversion) e [**GetVersionEx**](/windows/win32/api/sysinfoapi/nf-sysinfoapi-getversionexa) foram preteridas. No Windows 10, a função [**VerifyVersionInfo**](/windows/win32/api/winbase/nf-winbase-verifyversioninfoa) também foi preterida. Embora você ainda possa chamar as funções preteridas, se seu aplicativo não direcionar especificamente Windows 8.1 ou Windows 10, as funções retornarão a versão do Windows 8 (6,2).
+No Windows 8.1 e Windows 10, as funções [**GetVersion**](/windows/win32/api/sysinfoapi/nf-sysinfoapi-getversion) e [**GetVersionEx**](/windows/win32/api/sysinfoapi/nf-sysinfoapi-getversionexa) foram preterida. No Windows 10, a [**função VerifyVersionInfo**](/windows/win32/api/winbase/nf-winbase-verifyversioninfoa) também foi preterida. Embora você ainda possa chamar as funções preterida, se o aplicativo não for especificamente destinado a Windows 8.1 ou Windows 10, as funções retornarão a versão Windows 8 (6.2).
 
 > [!Note]  
-> As funções [**GetVersion**](/windows/win32/api/sysinfoapi/nf-sysinfoapi-getversion), [**GetVersionEx**](/windows/win32/api/sysinfoapi/nf-sysinfoapi-getversionexa), [**VerifyVersionInfo**](/windows/win32/api/winbase/nf-winbase-verifyversioninfoa)e [auxiliar de versão](version-helper-apis.md) são apenas para aplicativos de área de trabalho. Os aplicativos universais do Windows podem usar a propriedade [**AnalyticsInfo. VERSIONINFO**](/uwp/api/windows.system.profile.analyticsinfo.versioninfo) para logs de telemetria e diagnóstico.
+> [**As funções GetVersion,**](/windows/win32/api/sysinfoapi/nf-sysinfoapi-getversion) [**GetVersionEx,**](/windows/win32/api/sysinfoapi/nf-sysinfoapi-getversionexa) [**VerifyVersionInfo**](/windows/win32/api/winbase/nf-winbase-verifyversioninfoa)e [Version Helper](version-helper-apis.md) são apenas para aplicativos da área de trabalho. Aplicativos Windows universal podem usar a [**propriedade AnalyticsInfo.VersionInfo**](/uwp/api/windows.system.profile.analyticsinfo.versioninfo) para telemetria e logs de diagnóstico.
 
-Para que seu aplicativo seja direcionado Windows 8.1 ou Windows 10, você precisará incluir um [manifesto de aplicativo (executável)](/windows/compatibility/application-executable-manifest) para o executável do aplicativo. Em seguida, na [seção **&lt; compatibilidade &gt;**](../SbsCs/application-manifests.md#compatibility) do manifesto, você precisará adicionar um elemento **&lt; supportedOS &gt;** para cada versão do Windows que você deseja declarar para o suporte do seu aplicativo.
+Para que seu aplicativo seja Windows 8.1 ou Windows 10, você precisará incluir um manifesto do aplicativo [(executável)](/windows/compatibility/application-executable-manifest) para o executável do aplicativo. Em seguida, [ **&lt; &gt;**](../SbsCs/application-manifests.md#compatibility) na seção de compatibilidade do manifesto, você precisará adicionar um elemento **&lt; supportedOS &gt;** para cada versão Windows que você deseja declarar que seu aplicativo dá suporte.
 
-O exemplo a seguir mostra um arquivo de manifesto de aplicativo para um aplicativo que dá suporte a todas as versões do Windows do Windows Vista para o Windows 10:
+O exemplo a seguir mostra um arquivo de manifesto do aplicativo para um aplicativo que dá suporte a todas as versões do Windows do Windows Vista para Windows 10:
 
 ```XML
 <!-- example.exe.manifest -->
@@ -66,21 +66,21 @@ O exemplo a seguir mostra um arquivo de manifesto de aplicativo para um aplicati
 </assembly>
 ```
 
-A declaração de suporte para Windows 8.1 ou Windows 10 em seu manifesto de aplicativo não terá nenhum efeito ao executar seu aplicativo em sistemas operacionais anteriores.
+Declarar suporte para Windows 8.1 ou Windows 10 no manifesto do aplicativo não terá nenhum efeito ao executar seu aplicativo em sistemas operacionais anteriores.
 
-O manifesto do aplicativo acima também inclui uma [seção **&lt; &gt; TrustInfo**](/previous-versions/bb756929(v=msdn.10)), que especifica como o sistema deve tratá-lo em relação ao [UAC (controle de conta de usuário)](/windows/security/identity-protection/user-account-control/how-user-account-control-works). Adicionar **TrustInfo** não é essencial, mas é altamente recomendável, mesmo quando seu aplicativo não precisa de nenhum comportamento específico relacionado ao UAC. Em particular, se você não adicionar **TrustInfo** , as versões x86 de 32 bits do seu aplicativo estarão sujeitas à [virtualização de arquivos do UAC](/windows/security/identity-protection/user-account-control/how-user-account-control-works#virtualization), o que permite que as gravações em pastas com privilégios de administrador, como as pastas de sistema do Windows, tenham êxito quando elas falharem, mas as redireciona para uma pasta "VirtualStore" específica do usuário.
+O manifesto do aplicativo acima também inclui uma [ **&lt; seção trustInfo &gt;**](/previous-versions/bb756929(v=msdn.10)), que especifica como o sistema deve tratá-lo em relação ao [UAC (Controle](/windows/security/identity-protection/user-account-control/how-user-account-control-works)de Conta de Usuário). Adicionar **trustInfo** não é essencial, mas é altamente recomendável, mesmo quando seu aplicativo não precisa de nenhum comportamento específico relacionado ao UAC. Em particular, se você não adicionar **trustInfo,** as versões x86 de 32 bits do seu aplicativo estarão sujeitas à virtualização de arquivo [UAC,](/windows/security/identity-protection/user-account-control/how-user-account-control-works#virtualization)que permite que as gravações em pastas com privilégios de administrador, como as pastas do sistema Windows, sejam bem-sucedidas quando falharem de outra forma, mas as redireciona para uma pasta "VirtualStore" específica do usuário.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[Obtendo a versão do sistema](getting-the-system-version.md)
+[Obter a versão do sistema](getting-the-system-version.md)
 </dt> <dt>
 
 [Funções auxiliares de versão](version-helper-apis.md)
 </dt> <dt>
 
-[OSVERSIONINFO](/windows/desktop/api/winnt/ns-winnt-osversioninfoa)
+[Osversioninfo](/windows/desktop/api/winnt/ns-winnt-osversioninfoa)
 </dt> <dt>
 
 [OSVERSIONINFOEX](/windows/desktop/api/winnt/ns-winnt-osversioninfoexa)

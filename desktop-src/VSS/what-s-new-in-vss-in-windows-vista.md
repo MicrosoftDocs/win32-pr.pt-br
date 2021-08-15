@@ -1,21 +1,21 @@
 ---
 description: Windows Vista.
 ms.assetid: 3b16744d-b9c2-4462-a409-de94d9103c39
-title: O que há de novo no VSS no Windows Vista
+title: o que há de novo no VSS no Windows Vista
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 122caa350ede984d5b05eb7eedd6039d82a76f1d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bc9e0780b092b2bed0235ba62377da9a4f7f0b53bded9e3f7feb5d412f5ab982
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105788825"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117751138"
 ---
-# <a name="whats-new-in-vss-in-windows-vista"></a>O que há de novo no VSS no Windows Vista
+# <a name="whats-new-in-vss-in-windows-vista"></a>o que há de novo no VSS no Windows Vista
 
-O Windows Vista apresenta as seguintes alterações na Serviço de Cópias de Sombra de Volume.
+Windows O Vista apresenta as seguintes alterações na Serviço de Cópias de Sombra de Volume.
 
-Observe que todas as alterações do Windows Vista também se aplicam ao Windows Server 2008 e ao Windows Vista com Service Pack 1 (SP1).
+observe que todas as alterações do Windows vista também se aplicam ao Windows Server 2008 e ao Windows Vista com Service Pack 1 (SP1).
 
 ## <a name="new-vss-interfaces"></a>Novas interfaces VSS
 
@@ -91,7 +91,7 @@ ATTR de VOLSNAP do VSS \_ \_ \_ não \_ transacionada
 
 ## <a name="vss-event-tracing-and-logging"></a>Rastreamento e log de eventos do VSS
 
--   O arquivo de rastreamento do VSS agora pode estar localizado em qualquer volume local. Nas versões do Windows anteriores ao Windows Vista, o arquivo de rastreamento do VSS não pôde ser localizado em um volume que estava no conjunto de cópias de sombra.
+-   O arquivo de rastreamento do VSS agora pode estar localizado em qualquer volume local. nas versões do Windows anteriores ao Windows Vista, o arquivo de rastreamento do VSS não pôde ser localizado em um volume que estava no conjunto de cópias de sombra.
 -   Muitas entradas de log de eventos foram refeitas para torná-las mais claras.
 -   Todas as entradas do log de eventos do VSS agora contêm informações de contexto.
 
@@ -106,7 +106,7 @@ Os aplicativos ou serviços podem usar a chave do registro FilesNotToSnapshot pa
 
 ## <a name="backup-and-restore-application-compatibility"></a>Compatibilidade de aplicativos de backup e restauração
 
-Os desenvolvedores de aplicativos de backup e restauração precisam estar cientes de determinados recursos novos no Windows Vista e no Windows Server 2008. Para obter uma lista de verificação de compatibilidade de aplicativos, consulte [compatibilidade de aplicativos para backup e restauração](application-compatibility-for-backup-and-restore.md).
+os desenvolvedores de aplicativos de backup e restauração precisam estar cientes de determinados recursos novos no Windows Vista e no Windows Server 2008. Para obter uma lista de verificação de compatibilidade de aplicativos, consulte [compatibilidade de aplicativos para backup e restauração](application-compatibility-for-backup-and-restore.md).
 
  
 

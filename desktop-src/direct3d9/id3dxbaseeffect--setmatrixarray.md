@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: ae603708be4b34c9aa12722fe282df470c85d476
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 58da45fe25618317c1826ad89f7138361d02fb67b00745dee73e08161f1656e3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108107424"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118522013"
 ---
 # <a name="id3dxbaseeffectsetmatrixarray-method"></a>Método ID3DXBaseEffect:: SetMatrixArray
 
@@ -92,7 +92,7 @@ Se as matrizes de destino forem menores do que as matrizes de origem, os compone
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

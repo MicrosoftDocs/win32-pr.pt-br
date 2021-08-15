@@ -17,12 +17,12 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 8441802a03ad94886841d04192a7e2f77bb8e6d6
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 396b82b9bfc767fc73615a59a4d1e8577c5afb14a7a95f25298e33465174306d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105814528"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117722204"
 ---
 # <a name="span-idvspixengineigenericbufferdatacallbackspanigenericbufferdatacallback-interface"></a><span id="vspixengine.igenericbufferdatacallback"></span>Interface IGenericBufferDataCallback
 
@@ -34,7 +34,7 @@ A interface **IGenericBufferDataCallback** herda da interface [**IUnknown**](/wi
 
 -   [Métodos](#methods)
 
-### <a name="span-idmethodsspanmethods"></a><span id="methods"></span>Maneiras
+### <a name="span-idmethodsspanmethods"></a><span id="methods"></span>Métodos
 
 A interface **IGenericBufferDataCallback** tem esses métodos.
 
@@ -44,7 +44,7 @@ A interface **IGenericBufferDataCallback** tem esses métodos.
 
 ## <a name="requirements"></a>Requisitos
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>parâmetro</p></td><td>Vspixengine. h</td></tr></tbody></table>
+<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Cabeçalho</p></td><td>Vspixengine. h</td></tr></tbody></table>
 
  
 

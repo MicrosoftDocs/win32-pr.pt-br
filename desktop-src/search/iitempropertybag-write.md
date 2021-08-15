@@ -1,5 +1,5 @@
 ---
-description: Faz com que uma ou mais propriedades sejam salvas no recipiente de propriedades. A interface IItemPropertyBag tem suporte apenas no Windows XP e no Windows Server 2003 e não deve mais ser usada.
+description: Faz com que uma ou mais propriedades sejam salvas no recipiente de propriedades. a interface IItemPropertyBag tem suporte apenas no Windows XP e no Windows Server 2003 e não deve mais ser usada.
 ms.assetid: 35491fbc-fb1c-4bad-86e8-9f19856ed7cb
 title: 'Método IItemPropertyBag:: Write'
 ms.topic: reference
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 7df66487bba0c2bbef40cf3642754dff56f65835
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e8860653244cef53739c7d104405a176c1ec63d2de1d3434b1d25e3206c431aa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104090050"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117863105"
 ---
 # <a name="iitempropertybagwrite-method"></a>Método IItemPropertyBag:: Write
 
-Faz com que uma ou mais propriedades sejam salvas no recipiente de propriedades. A interface [**IItemPropertyBag**](iitempropertybag.md) tem suporte apenas no Windows XP e no windows Server 2003 e não deve mais ser usada.
+Faz com que uma ou mais propriedades sejam salvas no recipiente de propriedades. a interface [**IItemPropertyBag**](iitempropertybag.md) tem suporte apenas no Windows XP e no Windows Server 2003 e não deve mais ser usada.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -61,15 +61,15 @@ Ponteiro para uma **variante** cujo tipo depende do tipo de dados das informaç�
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se o método for bem sucedido, ele retornará S \_ OK. Caso contrário, ele retorna um código de erro **HRESULT** .
 
 ## <a name="remarks"></a>Comentários
 
-A interface [**IItemPropertyBag**](iitempropertybag.md) tem suporte apenas no Windows XP e no windows Server 2003 e não deve mais ser usada.
+a interface [**IItemPropertyBag**](iitempropertybag.md) tem suporte apenas no Windows XP e no Windows Server 2003 e não deve mais ser usada.
 
-Para visualizar os anexos com um manipulador de protocolo de terceiros em computadores que executam o Windows XP ou o Windows Server 2003, pode ser necessário usar a interface [**IItemPropertyBag**](iitempropertybag.md) e as seguintes APIs: as interfaces [**ISearchProtocolUI**](-search-isearchprotocolui.md), [**IItemPreviewerExt**](-search-iitempreviewerext.md) e [**ISEARCHITEM**](-search-isearchitem.md) , as estruturas [**LINKINFO**](-search-linkinfo.md) e [**MyProp**](/windows/desktop/api/subsmgr/ns-subsmgr-itemprop) e a enumeração [**LinkId**](-search-linktype.md) .
+para visualizar os anexos com um manipulador de protocolo de terceiros em computadores que executam o Windows XP ou o Windows Server 2003, pode ser necessário usar a interface [**IItemPropertyBag**](iitempropertybag.md) e as seguintes APIs: as interfaces [**ISearchProtocolUI**](-search-isearchprotocolui.md), [**IItemPreviewerExt**](-search-iitempreviewerext.md) e [**ISearchItem**](-search-isearchitem.md) , as estruturas [**LINKINFO**](-search-linkinfo.md) e [**myprop**](/windows/desktop/api/subsmgr/ns-subsmgr-itemprop) e a enumeração [**linkid**](-search-linktype.md) .
 
 ## <a name="requirements"></a>Requisitos
 
@@ -77,9 +77,9 @@ Para visualizar os anexos com um manipulador de protocolo de terceiros em comput
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows XP com SP2\]<br/> |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/> |
-| Redistribuível<br/>          | Windows Desktop Search (WDS) 3,0<br/>          |
+| Cliente mínimo com suporte<br/> | Windows XP somente com \[ aplicativos de área de trabalho do SP2\]<br/> |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/> |
+| Redistribuível<br/>          | Windows Pesquisa de desktop (WDS) 3,0<br/>          |
 
 
 

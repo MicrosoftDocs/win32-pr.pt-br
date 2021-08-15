@@ -1,25 +1,25 @@
 ---
-title: Como percorrer a árvore de automação da interface do usuário
-description: Este tópico contém um código de exemplo que mostra como usar a interface IUIAutomationTreeWalker para percorrer e examinar os elementos na árvore de automação da interface do usuário da Microsoft.
+title: Como andar pela árvore Automação da Interface do Usuário dados
+description: Este tópico contém um código de exemplo que mostra como usar a interface IUIAutomationTreeWalker para examinar e examinar os elementos na árvore Automação da Interface do Usuário Microsoft.
 ms.assetid: 41ca783d-56d1-4ad5-8f07-c265ff2e07bd
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2ed5c6c1bec961d4f0df83687cd19eecba6ed179
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 16fe6539a24f271f5c1e8042b1be9933a77f1118b27730d510026de1852d7938
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103822556"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118324444"
 ---
-# <a name="how-to-walk-the-ui-automation-tree"></a>Como percorrer a árvore de automação da interface do usuário
+# <a name="how-to-walk-the-ui-automation-tree"></a>Como andar pela árvore Automação da Interface do Usuário dados
 
-Este tópico contém um código de exemplo que mostra como usar a interface [**IUIAutomationTreeWalker**](/windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomationtreewalker) para percorrer e examinar os elementos na árvore de automação da interface do usuário da Microsoft. Ele aborda os seguintes tópicos:
+Este tópico contém um código de exemplo que mostra como usar a interface [**IUIAutomationTreeWalker**](/windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomationtreewalker) para examinar e examinar os elementos na árvore Automação da Interface do Usuário Microsoft. Ele aborda os seguintes tópicos:
 
--   [Percorrendo os descendentes de um elemento](#walking-through-descendants-of-an-element)
--   [Percorrendo elementos ancestrais](#walking-through-ancestor-elements)
+-   [Como passar por descendentes de um elemento](#walking-through-descendants-of-an-element)
+-   [Como passar pelos elementos ancestrais](#walking-through-ancestor-elements)
 -   [Tópicos relacionados](#related-topics)
 
-## <a name="walking-through-descendants-of-an-element"></a>Percorrendo os descendentes de um elemento
+## <a name="walking-through-descendants-of-an-element"></a>Como passar por descendentes de um elemento
 
 O exemplo de código a seguir é uma função recursiva que percorre todos os descendentes de um elemento de interface do usuário e exibe seus tipos de controle em uma lista hierárquica.
 
@@ -74,7 +74,7 @@ cleanup:
 
 
 
-## <a name="walking-through-ancestor-elements"></a>Percorrendo elementos ancestrais
+## <a name="walking-through-ancestor-elements"></a>Como passar pelos elementos ancestrais
 
 O exemplo de código a seguir é uma função que percorre os ancestrais de um elemento para identificar o elemento pai. Isso é útil quando você precisa identificar a janela pai de um controle. A função retorna **NULL** para elementos de nível superior; ou seja, elementos cujo pai é a área de trabalho.
 
@@ -153,18 +153,18 @@ cleanup:
 
 <dl> <dt>
 
-**Conceitua**
+**Conceitual**
 </dt> <dt>
 
 [Obtendo elementos da automação interface do usuário](uiauto-obtainingelements.md)
 </dt> <dt>
 
-[Tópicos de instruções para clientes de automação da interface do usuário](uiauto-howto-topics-for-uiautomation-clients.md)
+[Tópicos de ida e Automação da Interface do Usuário clientes](uiauto-howto-topics-for-uiautomation-clients.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

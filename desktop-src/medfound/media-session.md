@@ -4,12 +4,12 @@ ms.assetid: dac99908-be90-415d-8837-2f97d573feb5
 title: Sessão de mídia
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b3df4597e5461788f990f620875bce946570ab97
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: fd54b08b6fda774ac08db46122569c1559dc23eb04d766e6e082b7d010663713
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "105798471"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117877901"
 ---
 # <a name="media-session"></a>Sessão de mídia
 
@@ -27,7 +27,7 @@ Esta seção descreve a sessão de mídia do ponto de vista da arquitetura. Ele 
 | [Como controlar os Estados de apresentação](how-to-control-presentation-states.md)                 | Descreve os controles de transporte de sessão de mídia: reproduzir, pausar e parar.                                                                           |
 | [Usando fontes de mídia com a sessão de mídia](using-media-sources-with-the-media-session.md) | Como usar as fontes de mídia com a sessão de mídia.                                                                                                 |
 | [Controle de taxa](rate-control.md)                                                             | Descreve como controlar a taxa de reprodução.                                                                                                          |
-| [Gerenciamento de qualidade de vídeo](video-quality-management.md)                                     | Descreve melhorias no pipeline de vídeo no Windows 7.                                                                                       |
+| [Gerenciamento de qualidade de vídeo](video-quality-management.md)                                     | descreve as melhorias no pipeline de vídeo no Windows 7.                                                                                       |
 | [Sessão de mídia do PMP](pmp-media-session.md)                                                   | Descreve como criar a sessão de mídia dentro de um processo de caminho de mídia protegido (PMP).                                                           |
 
 

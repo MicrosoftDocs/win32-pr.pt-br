@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Capicom.dll
-ms.openlocfilehash: b02503590a64c1c14e3f66dc5d07d9d61034bd60
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5a27bc08f658e317b41380b2dabd9aadc13e8b50bd4985c0fd13211fa81fd507
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105762022"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117770433"
 ---
 # <a name="certificatestatusapplicationpolicies-method"></a>Método CertificateStatus. ApplicationPolicies
 
-\[O CAPICOM é um componente somente de 32 bits que está disponível para uso nos seguintes sistemas operacionais: Windows Server 2008, Windows Vista e Windows XP. Em vez disso, use a [**estrutura X509ChainStatus**](/dotnet/api/system.security.cryptography.x509certificates.x509chainstatus?view=netcore-3.1) no namespace [**System. Security. Cryptography. X509Certificates**](/dotnet/api/system.security.cryptography.x509certificates.publickey.-ctor?view=netcore-3.1) .\]
+\[o capicom é um componente somente de 32 bits que está disponível para uso nos seguintes sistemas operacionais: Windows Server 2008, Windows Vista e Windows XP. Em vez disso, use a [**estrutura X509ChainStatus**](/dotnet/api/system.security.cryptography.x509certificates.x509chainstatus?view=netcore-3.1) no namespace [**System. Security. Cryptography. X509Certificates**](/dotnet/api/system.security.cryptography.x509certificates.publickey.-ctor?view=netcore-3.1) .\]
 
 O método **ApplicationPolicies** retorna uma coleção de [**OIDs**](oids.md) que representa as políticas de aplicativo usadas para criar o objeto de [**cadeia**](chain.md) .
 
@@ -39,7 +39,7 @@ CertificateStatus.ApplicationPolicies()
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Uma coleção de [**OIDs**](oids.md) . Cada objeto de [**OID**](oid.md) na coleção representa um OID de política de aplicativo.
 
@@ -55,7 +55,7 @@ Adicione OIDs de política de aplicativo à coleção para especificar as polít
 |----------------------------------|----------------------------------------------------------------------------------------|
 | Fim do suporte do cliente<br/> | Windows Vista<br/>                                                               |
 | Fim do suporte do servidor<br/> | Windows Server 2008<br/>                                                         |
-| Redistribuível<br/>       | CAPICOM 2,0 ou posterior no Windows Server 2003 e no Windows XP<br/>                  |
+| Redistribuível<br/>       | capicom 2,0 ou posterior no Windows Server 2003 e Windows XP<br/>                  |
 | DLL<br/>                   | <dl> <dt>Capicom.dll</dt> </dl> |
 
 

@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9531028abdaa2d835c255053972f1fc2c4cf106d
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: d04c0a2c228f3134e5ff88eb3d7c5ca1a5fc9bc10a867efc9e6638380ff84144
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103919587"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118424444"
 ---
 # <a name="ms-tsls-property01-attribute"></a>Atributo MS-TSLS-Property01
 
@@ -56,7 +56,7 @@ Espaço reservado para Propriedade do Terminal Server 01.
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
 | É de valor único       | Falso                             |
-| É indexado             | True                              |
+| É indexado             | Verdadeiro                              |
 | No catálogo global      | Falso                             |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |
 | Range-Lower            | 0                                 |
@@ -77,7 +77,7 @@ Espaço reservado para Propriedade do Terminal Server 01.
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
 | É de valor único       | Falso                             |
-| É indexado             | True                              |
+| É indexado             | Verdadeiro                              |
 | No catálogo global      | Falso                             |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |
 | Range-Lower            | 0                                 |
@@ -98,7 +98,7 @@ Espaço reservado para Propriedade do Terminal Server 01.
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
 | É de valor único       | Falso                             |
-| É indexado             | True                              |
+| É indexado             | Verdadeiro                              |
 | No catálogo global      | Falso                             |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |
 | Range-Lower            | 0                                 |

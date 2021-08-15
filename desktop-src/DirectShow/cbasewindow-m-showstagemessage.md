@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: ccf358eba577c0ee950f8628090a2f3024297fe3
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 37897747d9a144935055d734cbc02fdade611b3b1abbdddcc6efc25129f55279
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105789715"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117822356"
 ---
 # <a name="cbasewindowm_showstagemessage-member"></a>Membro de CBaseWindow:: m \_ ShowStageMessage
 
@@ -46,7 +46,7 @@ O método [**CBaseWindow::D osetwindowforeground**](cbasewindow-dosetwindowforeg
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Winutil. h (incluir fluxos. h)</dt> </dl>                                                                                   |
+| parâmetro<br/>  | <dl> <dt>Winutil. h (incluir Fluxos. h)</dt> </dl>                                                                                   |
 | Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
 
 

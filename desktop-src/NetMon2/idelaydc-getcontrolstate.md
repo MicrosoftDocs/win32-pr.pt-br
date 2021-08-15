@@ -14,12 +14,12 @@ api_type:
 api_location:
 - Ndisnpp.dll
 - Rmtnpp.dll
-ms.openlocfilehash: 825112ec9a33ef176d5a69765837214249e33102
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 34302215cf0e773d7713f56233d38462071f1dde725a85478688cfb9ca2a4f45
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108110764"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118365889"
 ---
 # <a name="idelaydcgetcontrolstate-method"></a>Método IDelaydC:: getcontrolstate
 
@@ -65,8 +65,8 @@ Se o método não for bem-sucedido, o valor de retorno será um dos seguintes c�
 
 | Código de retorno                                                                                          | Descrição                                                                                                                           |
 |------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**NMERR \_ não \_ conectado**</dt> </dl> | O NPP não está conectado à rede. Chame [IDelaydC:: Connect](idelaydc-connect.md) para conectar o NPP à rede.<br/> |
-| <dl> <dt>**NMERR \_ não \_ atrasada**</dt> </dl>   | O NPP está conectado à rede, mas não com o método [IDelaydC:: Connect](idelaydc-connect.md) .<br/>                     |
+| <dl> <dt>**NMERR \_ não \_ conectado**</dt> </dl> | O NPP não está conectado à rede. chame [IDelaydC:: Conexão](idelaydc-connect.md) para conectar o NPP à rede.<br/> |
+| <dl> <dt>**NMERR \_ não \_ atrasada**</dt> </dl>   | o NPP está conectado à rede, mas não com o método [IDelaydC:: Conexão](idelaydc-connect.md) .<br/>                     |
 
 
 
@@ -91,14 +91,14 @@ Os métodos usados para iniciar, pausar e parar a captura são listados na lista
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 
 [IDelaydC](idelaydc.md)
 </dt> <dt>
 
-[IDelaydC:: conectar](idelaydc-connect.md)
+[IDelaydC:: Conexão](idelaydc-connect.md)
 </dt> <dt>
 
 [IDelaydC::P ause](idelaydc-pause.md)

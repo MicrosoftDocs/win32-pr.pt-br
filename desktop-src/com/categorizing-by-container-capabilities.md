@@ -1,21 +1,21 @@
 ---
-title: Categorizando por recursos de contêiner
-description: Os componentes geralmente exigem determinada funcionalidade do contêiner e não funcionarão com um contêiner que não forneça o suporte.
+title: Categorizando por funcionalidades de contêiner
+description: Os componentes geralmente exigem determinada funcionalidade do contêiner e não funcionarão com um contêiner que não oferece suporte.
 ms.assetid: 11002f3e-17de-4e05-a2df-0c9e6326846d
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 987546c20ff77a40666bb74689466a15fab989a6
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 67811a40c2c1bbffd4529b3f7c885a0d3e2bea19bda04035ffb80b601c266807
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104006086"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118310883"
 ---
-# <a name="categorizing-by-container-capabilities"></a>Categorizando por recursos de contêiner
+# <a name="categorizing-by-container-capabilities"></a>Categorizando por funcionalidades de contêiner
 
-Os componentes geralmente exigem determinada funcionalidade do contêiner e não funcionarão com um contêiner que não forneça o suporte. A interface do usuário deve filtrar os componentes que exigem a funcionalidade para a qual o contêiner não dá suporte. Para fazer isso, os componentes podem ser categorizados pela funcionalidade de contêiner necessária.
+Os componentes geralmente exigem determinada funcionalidade do contêiner e não funcionarão com um contêiner que não oferece suporte. A interface do usuário deve filtrar componentes que exigem a funcionalidade que o contêiner não dá suporte. Para fazer isso, os componentes podem ser categorizados pela funcionalidade de contêiner necessária.
 
-Um exemplo de componentes que exigem funcionalidade do contêiner e não funcionam em contêineres que não dão suporte a essa funcionalidade são controles OLE de quadro simples. A categorização por recursos de contêiner é realizada por uma chave de registro adicional na chave CLSID do componente:
+Um exemplo de componentes que exigem funcionalidade do contêiner e não funcionam em contêineres que não suportam essa funcionalidade são controles OLE de quadro simples. A categorização por funcionalidades de contêiner é realizada por uma chave adicional do Registro dentro da chave CLSID do componente:
 
 ``` syntax
 ;The CLSID for "Simple Frame Control" is {123456FF-ABCD-4321-0101-00000000000C}HKEY_CASSES_ROOT\CLSID\{12346FF-ABCD-4321-0101-00000000000C}\Implemented Categories
@@ -25,9 +25,9 @@ HKEY_CLASSES_ROOT\CLSID\{123456FF-ABCD-4321-0101-00000000000C}Required Categorie
  
 ```
 
-Como mostrado neste exemplo, um componente pode pertencer a categorias de componentes que indicam a funcionalidade com suporte, bem como categorias de componentes que indicam a funcionalidade necessária.
+Conforme mostrado neste exemplo, um componente pode pertencer a categorias de componente que indicam a funcionalidade com suporte, bem como a categorias de componente que indicam a funcionalidade necessária.
 
-No exemplo a seguir, o controle Button é um controle OLE genérico que não dá suporte a nenhuma funcionalidade adicional. Ele funcionará em qualquer contêiner de controle OLE.
+No exemplo a seguir, o controle de botão é um controle OLE genérico que não dá suporte a nenhuma funcionalidade adicional. Ele funcionará em qualquer contêiner de controle OLE.
 
 ``` syntax
 HKEY_CLASSES_ROOT\CLSID\{...CLSID_Button...}\Implemented Categories
@@ -35,7 +35,7 @@ HKEY_CLASSES_ROOT\CLSID\{...CLSID_Button...}\Implemented Categories\{...CATID_Co
  
 ```
 
-Compare o exemplo anterior com o próximo exemplo no qual o MyDBControl pode usar Visual Basic vinculação de dados se o contêiner oferecer suporte a ele. No entanto, ele foi definido para que funcione em contêineres que não suportam Visual Basic Associação de dados (talvez por uma API de banco de dado diferente):
+Compare o exemplo anterior com o próximo exemplo no qual o MyDBControl poderá usar Visual Basic de dados se o contêiner for compatível com ele. No entanto, ele foi definido para que funcione em contêineres que não são Visual Basic associação de dados (talvez por uma API de banco de dados diferente):
 
 ``` syntax
 HKEY_CLASSES_ROOT\CLSID\{...CLSID_MyDBControl...}\Implemented Categories
@@ -44,7 +44,7 @@ HKEY_CLASSES_ROOT\CLSID\{...CLSID_MyDBControl...}\Implemented Categories\{...CAT
  
 ```
 
-O controle GroupBox é um controle Frame simples. Ele se baseia no contêiner que implementa a interface [**ISimpleFrameSite**](/windows/desktop/api/OCIdl/nn-ocidl-isimpleframesite) e funcionará corretamente apenas nesses contêineres:
+O controle GroupBox é um controle de quadro simples. Ele se baseia no contêiner que implementa a interface [**ISimpleFrameSite**](/windows/desktop/api/OCIdl/nn-ocidl-isimpleframesite) e funcionará corretamente somente nesses contêineres:
 
 ``` syntax
 HKEY_CLASSES_ROOT\CLSID\{...CLSID_GroupBox...}\Implemented Categories
@@ -54,7 +54,7 @@ HKEY_CLASSES_ROOT\CLSID\{...CLSID_GroupBox...}\Required Categories\{...CATID_Sim
  
 ```
 
-Um contêiner que dá suporte a Visual Basic controles associados a dados, mas não dá suporte a controles de quadro simples especificaria \_ o controle CATID e \_ o CATID VBDatabound para a interface do usuário do controle de inserção. A lista de controles exibida para o usuário contém o botão CLSID \_ e CLSID \_ MyDBControl. A caixa de caixa do CLSID \_ não seria exibida.
+Um contêiner que dá suporte Visual Basic controles de limite de dados, mas não dá suporte a controles de quadro simples, especificaria o Controle CATID e \_ CATID VBDatabound para a interface do usuário do controle \_ de inserção. A lista de controles exibidos para o usuário conteria o botão CLSID \_ e o ClSID \_ MyDBControl. ClSID \_ GroupBox não seria exibido.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -63,7 +63,7 @@ Um contêiner que dá suporte a Visual Basic controles associados a dados, mas n
 [Associando ícones a uma categoria](associating-icons-with-a-category.md)
 </dt> <dt>
 
-[Categorizando por recursos de componente](categorizing-by-component-capabilities.md)
+[Categorizando por funcionalidades de componente](categorizing-by-component-capabilities.md)
 </dt> <dt>
 
 [Classes e associações padrão](default-classes-and-associations.md)
@@ -72,12 +72,12 @@ Um contêiner que dá suporte a Visual Basic controles associados a dados, mas n
 [Definindo categorias de componentes](defining-component-categories.md)
 </dt> <dt>
 
-[O Gerenciador de categorias de componentes](the-component-categories-manager.md)
+[O Gerenciador de Categorias de Componentes](the-component-categories-manager.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

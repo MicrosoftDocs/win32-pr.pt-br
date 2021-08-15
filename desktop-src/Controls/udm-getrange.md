@@ -3,7 +3,7 @@ title: Mensagem de UDM_GETRANGE (commctrl. h)
 description: Recupera as posições mínima e máxima (intervalo) para um controle acima-abaixo.
 ms.assetid: fd42538a-8d96-4a9c-a1db-07c3e9afef84
 keywords:
-- Controles de UDM_GETRANGE de mensagens do Windows
+- controles de Windows de mensagem de UDM_GETRANGE
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b6fd8467ad4494bea92a4c1f9a68d675ef1471f5
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d13811f383886e0e4985eb3f2f5093eec53cb0745349a36ca133fa3de9656773
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104163627"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118408096"
 ---
 # <a name="udm_getrange-message"></a>Mensagem do UDM \_ GETrange
 
@@ -35,7 +35,7 @@ Recupera as posições mínima e máxima (intervalo) para um controle acima-abai
 *lParam* 
 </dt> <dd>Deve ser zero.</dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O valor de retorno é um valor de 32 bits que contém as posições mínima e máxima. O [**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) é a posição máxima do controle e o [**HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) é a posição mínima.
 
@@ -45,8 +45,8 @@ O valor de retorno é um valor de 32 bits que contém as posições mínima e m�
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
 | parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 

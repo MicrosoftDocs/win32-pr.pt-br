@@ -27,12 +27,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 398b6b0e2b7e4684481f13f73bdd94ef4cd76829
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 316daec5b6bb186756f8597a63ee35d18125181b6575ae24c8ba8fae63f53d3a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104502378"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117814496"
 ---
 # <a name="tcpip_typegroup2-class"></a>\_Classe tcpip TypeGroup2
 
@@ -322,8 +322,8 @@ Opção de escala da janela no cabeçalho TCP.
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/> |
 
 
 

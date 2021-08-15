@@ -12,12 +12,12 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 281d91b1679b2a944996bb1c85060d16c4e0b966
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9abc4415eef014697376c9df4b89af47037a99df5c9ab5a3c74a3d7825b344c1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105785183"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117863969"
 ---
 # <a name="iitempreviewerextgetrelatedpart-method"></a>Método IItemPreviewerExt:: GetRelatedPart
 
@@ -71,13 +71,13 @@ Um valor inteiro longo sem sinal que contém o índice de base zero da parte do 
 *pInfo* \[ out, retval\]
 </dt> <dd>
 
-Tipo: **[**LINKINFO**](-search-linkinfo.md) \** _
+Tipo: **[ **LINKINFO**](-search-linkinfo.md)\***
 
-Recebe um ponteiro para a estrutura [_ *LINKINFO* *](-search-linkinfo.md) na qual o método retorna informações sobre a transação. *pInfo* não deve ser um ponteiro **nulo** .
+Recebe um ponteiro para a estrutura [**LINKINFO**](-search-linkinfo.md) na qual o método retorna informações sobre a transação. *pInfo* não deve ser um ponteiro **nulo** .
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **HRESULT**
 
@@ -85,9 +85,9 @@ Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, e
 
 ## <a name="remarks"></a>Comentários
 
-A interface [**IItemPreviewerExt**](-search-iitempreviewerext.md) tem suporte apenas no Windows XP e no windows Server 2003 e não deve mais ser usada.
+a interface [**IItemPreviewerExt**](-search-iitempreviewerext.md) tem suporte apenas no Windows XP e no Windows Server 2003 e não deve mais ser usada.
 
-Para visualizar os anexos com um manipulador de protocolo de terceiros em computadores que executam o Windows XP ou o Windows Server 2003, pode ser necessário usar a interface [**IItemPreviewerExt**](-search-iitempreviewerext.md) e as seguintes APIs: as interfaces [**ISearchProtocolUI**](-search-isearchprotocolui.md), [**IItemPropertyBag**](iitempropertybag.md) e [**ISearchItem**](-search-isearchitem.md) , a estrutura [**LINKINFO**](-search-linkinfo.md) e a enumeração [**LinkId**](-search-linktype.md) .
+para visualizar os anexos com um manipulador de protocolo de terceiros em computadores que executam o Windows XP ou o Windows Server 2003, pode ser necessário usar a interface [**IItemPreviewerExt**](-search-iitempreviewerext.md) e as seguintes APIs: as interfaces [**ISearchProtocolUI**](-search-isearchprotocolui.md), [**IItemPropertyBag**](iitempropertybag.md) e [**ISearchItem**](-search-isearchitem.md) , a estrutura [**LINKINFO**](-search-linkinfo.md) e a enumeração [**linkid**](-search-linktype.md) .
 
 ## <a name="requirements"></a>Requisitos
 
@@ -95,9 +95,9 @@ Para visualizar os anexos com um manipulador de protocolo de terceiros em comput
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows XP com SP2\]<br/> |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/> |
-| Redistribuível<br/>          | Windows Desktop Search (WDS) 3,0<br/>          |
+| Cliente mínimo com suporte<br/> | Windows XP somente com \[ aplicativos de área de trabalho do SP2\]<br/> |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/> |
+| Redistribuível<br/>          | Windows Pesquisa de desktop (WDS) 3,0<br/>          |
 
 
 

@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 645e6ae1e1cb84991b352c250b137cd3ae2491f0
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 22b36e1836570a10647f5b737a68afa1e65a4dce80fe9d49061a3eee8a799651
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105780372"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117729448"
 ---
 # <a name="id3dxskininfoupdateskinnedmesh-method"></a>Método ID3DXSkinInfo:: UpdateSkinnedMesh
 
@@ -79,7 +79,7 @@ Ponteiro para o buffer que contém os vértices de destino.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 

@@ -4,8 +4,8 @@ description: O método Step faz com que o item de mídia de vídeo atual congele
 ms.assetid: f717c583-4073-45a9-b05d-7134d02724a4
 keywords:
 - método Step Windows Media Player
-- método Step Windows Media Player, classe Controls
-- Classe Controls do Windows Media Player, método Step
+- método step Windows Media Player, classe Controls
+- classe Controls Windows Media Player, método step
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 43fc50ea28bde95efef6e6261788fdcc62df6089
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 4626ff80aee55ad6c22be7580a07ef2319afb6792a8c11b815d72af23b5727fc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105811122"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118839821"
 ---
 # <a name="controlsstep-method"></a>Método Controls. Step
 
@@ -49,7 +49,7 @@ Controls.step(
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 
