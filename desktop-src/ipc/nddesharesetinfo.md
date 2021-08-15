@@ -15,12 +15,12 @@ api_type:
 - DllExport
 api_location:
 - Nddeapi.dll
-ms.openlocfilehash: cee7660a58e8f2747a800650b79db20f95504f87
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ccfa8cc80f60477e8512ac43f0e93825642dd0603ee398e232bbb67d6979a4c2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105761903"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118481696"
 ---
 # <a name="nddesharesetinfo-function"></a>Função NDdeShareSetInfo
 
@@ -90,7 +90,7 @@ O índice de parâmetro a ser modificado. A implementação atual não dá supor
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se a função for realizada com sucesso, o valor de retorno será NDDE \_ nenhum \_ erro.
 
@@ -115,7 +115,7 @@ Se a função falhar, o valor de retorno será um código de erro, que pode ser 
 
 <dl> <dt>
 
-[Visão geral de troca dinâmica de dados de rede](network-dynamic-data-exchange.md)
+[visão geral de troca dinâmica de dados de rede](network-dynamic-data-exchange.md)
 </dt> <dt>
 
 [Funções DDE de rede](network-dde-functions.md)

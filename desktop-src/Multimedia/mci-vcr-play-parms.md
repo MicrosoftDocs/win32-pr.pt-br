@@ -1,5 +1,5 @@
 ---
-title: MCI_VCR_PLAY_PARMS estrutura (Vcr.h)
+title: MCI_VCR_PLAY_PARMS (Vcr.h)
 description: A estrutura MCI \_ VCR PLAY PARMS contém parâmetros para o \_ \_ comando MCI PLAY para gravadores de gravação de \_ vídeo.
 ms.assetid: e180c203-3113-4fdb-bcf1-ea3e45e646e2
 keywords:

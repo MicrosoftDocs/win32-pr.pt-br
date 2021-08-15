@@ -4,12 +4,12 @@ ms.assetid: be025c86-46b5-4f50-a3af-0408bb3c9b5b
 title: SENSOR_CATEGORY_MOTION (sensores. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1edcb1b5f0a6d02c481774d18ee111ad4ca5e5cf
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8a66d57c8406ad1344d696f63e574484943ea68a6654f63c3d7d38e904aaa44e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105756372"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118889484"
 ---
 # <a name="sensor_category_motion"></a>\_movimento de categoria do sensor \_
 
@@ -21,7 +21,7 @@ Essa categoria inclui os seguintes tipos de sensor definidos pela plataforma.
 
 
 
-| Tipo de sensor                                                                                                                                                                                                                                                                                              | Description                                                          |
+| Tipo de sensor                                                                                                                                                                                                                                                                                              | Descrição                                                          |
 |:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------|
 | <span id="SENSOR_TYPE_ACCELEROMETER_1D"></span><span id="sensor_type_accelerometer_1d"></span><dl> <dt>**Sensor \_ Digite \_ acelerômetro \_ 1D**</dt> <dt>{C04D2387-7340-4CC2-991E-3B18CB8EF2F4}</dt> </dl> | Acelerômetros de um eixo.<br/>                                  |
 | <span id="SENSOR_TYPE_ACCELEROMETER_2D"></span><span id="sensor_type_accelerometer_2d"></span><dl> <dt>**Sensor \_ Digite o \_ acelerômetro \_ 2D**</dt> <dt>{B2C517A8-F6B5-4BA6-A423-5DF560B4CC07}</dt> </dl> | Acelerômetros de dois eixos.<br/>                                  |
@@ -44,7 +44,7 @@ Essa categoria inclui os seguintes campos de dados definidos pela plataforma.
 
 
 
-| Nome do campo de dados e PID                                                                                                                                                                                                                                                                                                                                                                               | Description                                                                                     |
+| Nome do campo de dados e PID                                                                                                                                                                                                                                                                                                                                                                               | Descrição                                                                                     |
 |:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:------------------------------------------------------------------------------------------------|
 | <span id="SENSOR_DATA_TYPE_ACCELERATION_X_G"></span><span id="sensor_data_type_acceleration_x_g"></span><dl> <dt>**Sensor \_ \_Aceleração de tipo de dados \_ \_ X \_ G**</dt> <dt>(PID = 2)</dt> </dl>                                                                                                         | **R8 de VT \_**<br/> Aceleração do eixo X, em *g*.<br/>                                 |
 | <span id="SENSOR_DATA_TYPE_ACCELERATION_Y_G"></span><span id="sensor_data_type_acceleration_y_g"></span><dl> <dt>**Sensor \_ \_ \_ Aceleração de \_ \_ tipo de dados Y**</dt> <dt>(PID = 3)</dt> </dl>                                                                                                         | **R8 de VT \_**<br/> Aceleração do eixo Y, em *g*.<br/>                                 |
@@ -66,9 +66,9 @@ Essa categoria inclui os seguintes campos de dados definidos pela plataforma.
 
 | Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>                                           |
+| Cliente mínimo com suporte<br/> | \[somente aplicativos de área de trabalho Windows 7\]<br/>                                           |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                            |
-| parâmetro<br/>                   | <dl> <dt>Sensores. h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Sensores. h</dt> </dl> |
 
 
 

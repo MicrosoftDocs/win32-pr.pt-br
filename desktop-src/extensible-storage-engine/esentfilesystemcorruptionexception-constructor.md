@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: fad504c9757bbf3188426619e2bbe59a32a4ddf3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1b2bac9d13cddd5b8139c736979234af1e05f205b1484fcad5068788c835c19d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104171085"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119973456"
 ---
 # <a name="esentfilesystemcorruptionexception-constructor"></a>Construtor EsentFileSystemCorruptionException
 
 Inicializa uma nova instância da classe EsentFileSystemCorruptionException.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -58,6 +58,6 @@ public EsentFileSystemCorruptionException()
 
 [Classe EsentFileSystemCorruptionException](./esentfilesystemcorruptionexception-class.md)
 
-[Membros do EsentFileSystemCorruptionException](./esentfilesystemcorruptionexception-members.md)
+[Membros EsentFileSystemCorruptionException](./esentfilesystemcorruptionexception-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

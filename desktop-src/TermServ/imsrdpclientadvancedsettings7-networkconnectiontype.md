@@ -1,14 +1,14 @@
 ---
 title: Propriedade IMsRdpClientAdvancedSettings7 NetworkConnectionType
-description: Obtém ou define o tipo de conexão de rede usado entre o cliente e o servidor. As informações do tipo de conexão de rede passadas para o servidor ajudam o servidor a ajustar vários parâmetros com base no tipo de conexão de rede.
+description: Obtém ou define o tipo de conexão de rede usado entre o cliente e o servidor. As informações de tipo de conexão de rede passadas para o servidor ajudam o servidor a ajustar vários parâmetros com base no tipo de conexão de rede.
 ms.assetid: 4dd4fa17-f121-412d-a30d-1c01f4c892b0
 ms.tgt_platform: multiple
 keywords:
-- Serviços de Área de Trabalho Remota da propriedade NetworkConnectionType
-- Propriedade NetworkConnectionType Serviços de Área de Trabalho Remota, interface IMsRdpClientAdvancedSettings7
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientAdvancedSettings7, Propriedade NetworkConnectionType
-- Propriedade NetworkConnectionType Serviços de Área de Trabalho Remota, interface IMsRdpClientAdvancedSettings8
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientAdvancedSettings8, Propriedade NetworkConnectionType
+- Propriedade NetworkConnectionType Serviços de Área de Trabalho Remota
+- A propriedade NetworkConnectionType Serviços de Área de Trabalho Remota , interface IMsRdpClientAdvancedSettings7
+- Interface IMsRdpClientAdvancedSettings7 Serviços de Área de Trabalho Remota , propriedade NetworkConnectionType
+- A propriedade NetworkConnectionType Serviços de Área de Trabalho Remota , interface IMsRdpClientAdvancedSettings8
+- Interface IMsRdpClientAdvancedSettings8 Serviços de Área de Trabalho Remota , propriedade NetworkConnectionType
 topic_type:
 - apiref
 api_name:
@@ -31,11 +31,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118352153"
 ---
-# <a name="imsrdpclientadvancedsettings7networkconnectiontype-property"></a>Propriedade IMsRdpClientAdvancedSettings7:: NetworkConnectionType
+# <a name="imsrdpclientadvancedsettings7networkconnectiontype-property"></a>Propriedade IMsRdpClientAdvancedSettings7::NetworkConnectionType
 
-Obtém ou define o tipo de conexão de rede usado entre o cliente e o servidor. As informações do tipo de conexão de rede passadas para o servidor ajudam o servidor a ajustar vários parâmetros com base no tipo de conexão de rede.
+Obtém ou define o tipo de conexão de rede usado entre o cliente e o servidor. As informações de tipo de conexão de rede passadas para o servidor ajudam o servidor a ajustar vários parâmetros com base no tipo de conexão de rede.
 
-Esta propriedade é de leitura/gravação.
+Essa propriedade é leitura/gravação.
 
 ## <a name="syntax"></a>Syntax
 
@@ -60,7 +60,7 @@ O tipo de conexão de rede.
 
 <span id="CONNECTION_TYPE_MODEM"></span><span id="connection_type_modem"></span>
 
-<span id="CONNECTION_TYPE_MODEM"></span><span id="connection_type_modem"></span>**Conexão \_ do Digite \_ modem** (1 (0x1))
+<span id="CONNECTION_TYPE_MODEM"></span><span id="connection_type_modem"></span>**CONNECTION \_ TIPO \_ MODEM** (1 (0x1))
 
 
 </dt> <dd>
@@ -71,18 +71,18 @@ Modem (56 Kbps)
 
 <span id="CONNECTION_TYPE_BROADBAND_LOW"></span><span id="connection_type_broadband_low"></span>
 
-<span id="CONNECTION_TYPE_BROADBAND_LOW"></span><span id="connection_type_broadband_low"></span>**Conexão \_ do \_Banda larga \_ de tipo baixa** (2 (0x2))
+<span id="CONNECTION_TYPE_BROADBAND_LOW"></span><span id="connection_type_broadband_low"></span>**CONNECTION \_ TYPE \_ BROADBAND \_ LOW** (2 (0x2))
 
 
 </dt> <dd>
 
-Banda larga de baixa velocidade (256 kbps a 2 Mbps)
+Banda larga de baixa velocidade (256 Kbps a 2 Mbps)
 
 </dd> <dt>
 
 <span id="CONNECTION_TYPE_SATELLITE"></span><span id="connection_type_satellite"></span>
 
-<span id="CONNECTION_TYPE_SATELLITE"></span><span id="connection_type_satellite"></span>**Conexão \_ do TIPO \_ satélite** (3 (0x3))
+<span id="CONNECTION_TYPE_SATELLITE"></span><span id="connection_type_satellite"></span>**CONNECTION \_ TYPE \_ SATELLITE** (3 (0x3))
 
 
 </dt> <dd>
@@ -93,7 +93,7 @@ Satélite (2 Mbps a 16 Mbps, com alta latência)
 
 <span id="CONNECTION_TYPE_BROADBAND_HIGH"></span><span id="connection_type_broadband_high"></span>
 
-<span id="CONNECTION_TYPE_BROADBAND_HIGH"></span><span id="connection_type_broadband_high"></span>**Conexão \_ do \_Banda larga \_ de tipo alta** (4 (0x4))
+<span id="CONNECTION_TYPE_BROADBAND_HIGH"></span><span id="connection_type_broadband_high"></span>**CONNECTION \_ TYPE \_ BROADBAND \_ HIGH** (4 (0x4))
 
 
 </dt> <dd>
@@ -104,18 +104,18 @@ Banda larga de alta velocidade (2 Mbps a 10 Mbps)
 
 <span id="CONNECTION_TYPE_WAN"></span><span id="connection_type_wan"></span>
 
-<span id="CONNECTION_TYPE_WAN"></span><span id="connection_type_wan"></span>**Conexão \_ do Digite \_ Wan** (5 (0x5))
+<span id="CONNECTION_TYPE_WAN"></span><span id="connection_type_wan"></span>**CONNECTION \_ TYPE \_ WAN** (5 (0x5))
 
 
 </dt> <dd>
 
-WAN (rede de longa distância) (10 Mbps ou superior, com alta latência)
+WAN (rede de área larga) (10 Mbps ou superior, com alta latência)
 
 </dd> <dt>
 
 <span id="CONNECTION_TYPE_LAN"></span><span id="connection_type_lan"></span>
 
-<span id="CONNECTION_TYPE_LAN"></span><span id="connection_type_lan"></span>**Conexão \_ do TIPO \_ LAN** (6 (0x6))
+<span id="CONNECTION_TYPE_LAN"></span><span id="connection_type_lan"></span>**CONNECTION \_ TYPE \_ LAN** (6 (0x6))
 
 
 </dt> <dd>

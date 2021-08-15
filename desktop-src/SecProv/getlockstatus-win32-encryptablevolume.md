@@ -1,5 +1,5 @@
 ---
-description: Indica se o conteúdo do volume pode ser acessado do Windows.
+description: Indica se o conteúdo do volume pode ser acessado de Windows.
 ms.assetid: 54b2a41b-11c6-40ec-97fa-74996c15554e
 title: Método GetLockStatus da classe Win32_EncryptableVolume
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Root\CIMV2\Security\MicrosoftVolumeEncryption
-ms.openlocfilehash: 3e81f77c37904f26e87f22b8e2b3b88763fe86cc
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: caa213dbebc7db07851bc8df41b5d9379d3dfe97ee207f9b2578b0567fd9b65b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105757989"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118892012"
 ---
 # <a name="getlockstatus-method-of-the-win32_encryptablevolume-class"></a>Método GetLockStatus da classe Win32 \_ EncryptableVolume
 
-O método **GetLockStatus** da classe [**Win32 \_ EncryptableVolume**](win32-encryptablevolume.md) indica se o conteúdo do volume pode ser acessado do Windows.
+O método **GetLockStatus** da classe [**Win32 \_ EncryptableVolume**](win32-encryptablevolume.md) indica se o conteúdo do volume pode ser acessado de Windows.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -44,13 +44,13 @@ uint32 GetLockStatus(
 
 Tipo: **UInt32**
 
-Especifica se o conteúdo do volume pode ser acessado do Windows.
+Especifica se o conteúdo do volume pode ser acessado de Windows.
 
 
 
 | Valor                                                                                                                                                                                                                           | Significado                                                                                                                                                                                                                                                                                                                                                                                                               |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="Unlocked"></span><span id="unlocked"></span><span id="UNLOCKED"></span><dl> <dt>**Desbloqueado**</dt> <dt>0</dt> </dl> | Para um HDD padrão:<br/> O conteúdo completo do volume pode ser acessado. Um volume desbloqueado está totalmente descriptografado ou tem a chave de criptografia disponível em apagar no disco. O volume que contém o sistema operacional em execução atual (por exemplo, o volume do Windows em execução) é sempre acessível e não pode ser bloqueado.<br/> Para um EHDD:<br/> A banda é desbloqueada perpétuamente.<br/> |
+| <span id="Unlocked"></span><span id="unlocked"></span><span id="UNLOCKED"></span><dl> <dt>**Desbloqueado**</dt> <dt>0</dt> </dl> | Para um HDD padrão:<br/> O conteúdo completo do volume pode ser acessado. Um volume desbloqueado está totalmente descriptografado ou tem a chave de criptografia disponível em apagar no disco. o volume que contém o sistema operacional em execução atual (por exemplo, o volume Windows em execução) é sempre acessível e não pode ser bloqueado.<br/> Para um EHDD:<br/> A banda é desbloqueada perpétuamente.<br/> |
 | <span id="Locked"></span><span id="locked"></span><span id="LOCKED"></span><dl> <dt>**Bloqueado**</dt> em <dt>1</dt> </dl>         | Para um HDD padrão:<br/> Toda ou uma parte do conteúdo do volume não está acessível. Um volume bloqueado deve ser parcialmente ou totalmente criptografado e não deve ter a chave de criptografia disponível no disco não criptografado.<br/> Para um EHDD:<br/> A banda está desbloqueada ou bloqueada.<br/>                                                                                                             |
 
 
@@ -59,7 +59,7 @@ Especifica se o conteúdo do volume pode ser acessado do Windows.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **UInt32**
 
@@ -81,7 +81,7 @@ Use [**UnlockWithExternalKey**](unlockwithexternalkey-win32-encryptablevolume.md
 
 O volume que contém o sistema operacional em execução no momento é sempre acessível e não pode ser bloqueado.
 
-Os arquivos de formato MOF (MOF) contêm as definições de classes de Instrumentação de Gerenciamento do Windows (WMI). Os arquivos MOF não são instalados como parte do SDK do Windows. Eles são instalados no servidor quando você adiciona a função associada usando o Gerenciador do Servidor. Para obter mais informações sobre arquivos MOF, consulte [formato MOF (MOF)](../wmisdk/managed-object-format--mof-.md).
+os arquivos de formato MOF (MOF) contêm as definições de classes de Instrumentação de Gerenciamento do Windows (WMI). os arquivos MOF não são instalados como parte do SDK do Windows. Eles são instalados no servidor quando você adiciona a função associada usando o Gerenciador do Servidor. Para obter mais informações sobre arquivos MOF, consulte [formato MOF (MOF)](../wmisdk/managed-object-format--mof-.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -89,8 +89,8 @@ Os arquivos de formato MOF (MOF) contêm as definições de classes de Instrumen
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows Vista Enterprise, Windows Vista Ultimate \[ Desktop apps somente\]<br/>                       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                                    |
+| Cliente mínimo com suporte<br/> | Windows vista Enterprise, \[ somente aplicativos de área de trabalho do vista Ultimate Windows\]<br/>                       |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                                    |
 | Namespace<br/>                | \\MicrosoftVolumeEncryption de \\ segurança \\ cimv2 raiz<br/>                                             |
 | MOF<br/>                      | <dl> <dt>Win32 \_ encryptablevolume. mof</dt> </dl> |
 

@@ -4,16 +4,16 @@ description: COM define um conjunto de propriedades comuns padrão para armazena
 ms.assetid: ceed6d66-7327-4781-a5dc-9058e671138a
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bb318daba7e0ad03ff176853877fe416ddeda799
-ms.sourcegitcommit: fc240ac77d4c40a9f3a27714d7b852abbd234774
+ms.openlocfilehash: a54f942d0c7f6c7d1ebc37feda80d55420ea6c8aaf896f4df15df2a5b7e7c0ad
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2019
-ms.locfileid: "104364526"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118886822"
 ---
 # <a name="the-summary-information-property-set"></a>O conjunto de propriedades de informações de resumo
 
-COM define um conjunto de propriedades comuns padrão para armazenar informações de resumo sobre documentos. O conjunto de propriedades de informações de resumo deve ser armazenado em um objeto de fluxo. Ou seja, esse conjunto de propriedades deve ser armazenado como um conjunto de propriedades simples. Para obter mais informações, consulte [armazenamento e objetos de fluxo para um conjunto de propriedades](storage-vs--stream-for-a-property-set.md).
+COM define um conjunto de propriedades comuns padrão para armazenar informações de resumo sobre documentos. O conjunto de propriedades de informações de resumo deve ser armazenado em um objeto de fluxo. Ou seja, esse conjunto de propriedades deve ser armazenado como um conjunto de propriedades simples. para obter mais informações, consulte [Armazenamento e objetos de fluxo para um conjunto de propriedades](storage-vs--stream-for-a-property-set.md).
 
 Por exemplo, para criar um conjunto de propriedades simples ANSI, você chamaria [**IPropertySetStorage:: Create**](/windows/desktop/api/Propidl/nf-propidl-ipropertysetstorage-create) para criar o conjunto de propriedades, especificando **PROPSETFLAG \_ ANSI** (Simple é o tipo padrão de Property Set) e, em seguida, gravará nele com uma chamada para [**IPropertyStorage:: WriteMultiple**](/windows/desktop/api/Propidl/nf-propidl-ipropertystorage-writemultiple). Para ler o conjunto de propriedades, você chamaria [**IPropertyStorage:: ReadMultiple**](/windows/desktop/api/Propidl/nf-propidl-ipropertystorage-readmultiple).
 
@@ -56,9 +56,9 @@ A tabela a seguir lista os nomes de propriedade de cadeia de caracteres para o c
 [Implementando o conjunto de propriedades de informações de resumo](implementing-the-summary-information-property-set.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

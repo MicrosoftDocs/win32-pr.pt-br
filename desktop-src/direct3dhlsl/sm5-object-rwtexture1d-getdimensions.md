@@ -1,6 +1,6 @@
 ---
-title: 'Função RWTexture1D:: GetDimensions'
-description: 'Retorna as dimensões do recurso. | Função RWTexture1D:: GetDimensions'
+title: Função RWTexture1D::GetDimensions
+description: Retorna as dimensões do recurso. | Função RWTexture1D::GetDimensions
 ms.assetid: 1bbd53ed-9396-4e8e-b2f3-3bd85f6e1a90
 keywords:
 - Função GetDimensions HLSL
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: b65f0113ecf2c91786e45c35f5e8e832744bc952
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: eb779d071f471abe92b18ef456a2a016536a5231ccf327f8ebd175be8e5ff224
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104968282"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118509288"
 ---
-# <a name="rwtexture1dgetdimensions-function"></a>Função RWTexture1D:: GetDimensions
+# <a name="rwtexture1dgetdimensions-function"></a>Função RWTexture1D::GetDimensions
 
 Retorna as dimensões do recurso.
 
@@ -36,18 +36,18 @@ void GetDimensions(
 
 <dl> <dt>
 
-*Largura* \[ fora\]
+*Largura* \[ out\]
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
 A largura do recurso, em texels.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Nothing
+Nada
 
 ## <a name="remarks"></a>Comentários
 
@@ -66,7 +66,7 @@ Essa função tem suporte para os seguintes tipos de sombreadores:
 
 
 
-| Vértice | Envoltória | Domínio | Geometria | 16x16 | Computação |
+| Vértice | Casco | Domínio | Geometry | Pixel | Computação |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | x     | x       |
 

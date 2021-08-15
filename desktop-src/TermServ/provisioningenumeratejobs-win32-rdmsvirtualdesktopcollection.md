@@ -1,5 +1,5 @@
 ---
-title: Método ProvisioningEnumerateJobs da classe Win32_RDMSVirtualDesktopCollection dados
+title: Método ProvisioningEnumerateJobs da classe Win32_RDMSVirtualDesktopCollection
 description: Enumera trabalhos de provisionamento de área de trabalho virtual para esse serviço.
 ms.assetid: 4bd2b03f-ba8c-483e-af09-270424f9b1ed
 ms.tgt_platform: multiple

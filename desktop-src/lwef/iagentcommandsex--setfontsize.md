@@ -13,7 +13,7 @@ ms.locfileid: "118477198"
 ---
 # <a name="iagentcommandsexsetfontsize"></a>IAgentCommandsEx::SetFontSize
 
-\[O Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
+\[O Microsoft Agent foi preterido a partir Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
 
 ``` syntax
 HRESULT SetFontSize(
@@ -34,7 +34,7 @@ Tamanho da fonte.
 
 </dd> </dl>
 
-Essa propriedade determina o tamanho do ponto da fonte usada para exibir texto no menu pop-up do caractere quando o aplicativo cliente está ativo de entrada. O valor padrão para a configuração de fonte é baseado na configuração de fonte de menu para a configuração de ID de idioma do caractere ou se essa não for a configuração de idioma padrão do usuário. Se não for input-active, [](/windows/desktop/lwef/the-command-object) [](caption-property.md) o texto de Legenda de Comando do aplicativo cliente aparecerá no tamanho do ponto especificado para o cliente de entrada ativa.
+Essa propriedade determina o tamanho do ponto da fonte usada para exibir texto no menu pop-up do caractere quando o aplicativo cliente está ativo de entrada. O valor padrão para a configuração de fonte é baseado na configuração de fonte de menu para a configuração de ID de idioma do caractere ou se essa não for a configuração de idioma padrão do usuário. Se não for input-active, [](/windows/desktop/lwef/the-command-object) [](caption-property.md) o texto da Legenda de Comando do aplicativo cliente será exibido no tamanho do ponto especificado para o cliente de entrada ativa.
 
 Essa propriedade se aplica somente ao uso do caractere pelo aplicativo cliente; A configuração não afeta outros clientes do caractere ou outros caracteres do aplicativo cliente.
 

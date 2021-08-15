@@ -1,9 +1,9 @@
 ---
-title: BOTÃO de fundo.
-description: O atributo de exibição de fundo especifica ou recupera um valor que indica se o myButton exibe apenas os botões ou exibe o bitmap completo especificado no atributo Image.
+title: BUTTONGROUP.showBackground
+description: O atributo showBackground especifica ou recupera um valor que indica se BUTTONGROUP exibe apenas os botões ou exibe o bitmap completo especificado no atributo de imagem.
 ms.assetid: 5c3fc873-937c-4dad-ac18-e7a37004ee1e
 keywords:
-- Windows Media Player de botão. tudo em segundo plano
+- BUTTONGROUP.showBackground Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -19,9 +19,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118342669"
 ---
-# <a name="buttongroupshowbackground"></a>BOTÃO de fundo.
+# <a name="buttongroupshowbackground"></a>BUTTONGROUP.showBackground
 
-O atributo de exibição de **fundo** especifica ou recupera um valor que indica se o **MyButton** exibe apenas os botões ou exibe o bitmap completo especificado no atributo **Image** .
+O **atributo showBackground** especifica ou recupera um valor que indica se **BUTTONGROUP** exibe apenas os botões ou exibe o bitmap completo especificado no atributo **de** imagem.
 
 ``` syntax
         elementID.showBackground
@@ -29,13 +29,13 @@ O atributo de exibição de **fundo** especifica ou recupera um valor que indica
 
 ## <a name="possible-values"></a>Valores possíveis
 
-Esse atributo é um **booliano** de leitura/gravação.
+Esse atributo é um booliana **de leitura/gravação.**
 
 
 
 | Valor | Descrição                                                                                |
 |-------|--------------------------------------------------------------------------------------------|
-| true  | Os botões são exibidos e a área não ocupada pelos botões é desenhada a partir do bitmap de imagem. |
+| true  | Os botões são exibidos e a área não ocupada pelos botões é desenhada do bitmap de imagem. |
 | false | Padrão. Somente os botões são exibidos.                                                   |
 
 
@@ -44,9 +44,9 @@ Esse atributo é um **booliano** de leitura/gravação.
 
 ## <a name="remarks"></a>Comentários
 
-Quando o modo de **fundo** for true, toda a **imagem** principal ficará visível.
+Quando **showBackground** for true, toda a imagem **principal** ficará visível.
 
-Quando a cor do **plano de fundo** for falsa, somente as áreas correspondentes às cores **mappingImage** atribuídas serão renderizadas. Em outras palavras, somente **BUTTONELEMENTs** com seus **mappingColor** atribuídos estarão visíveis.
+Quando **showBackground** for false, somente as áreas correspondentes ao **mapeamento atribuídoImagem** de cores serão renderizadas. Em outras palavras, somente **BUTTONELEMENTs** com **seu mappingColor** atribuído ficará visível.
 
 Se um valor inválido for especificado, o estado anterior será mantido.
 
@@ -56,7 +56,7 @@ Se um valor inválido for especificado, o estado anterior será mantido.
 
 | Requisito | Valor |
 |--------------------|------------------------------------------------------|
-| Versão<br/> | Windows Media Player versão 7,0 ou posterior<br/> |
+| Versão<br/> | Windows Media Player versão 7.0 ou posterior<br/> |
 
 
 
@@ -64,16 +64,16 @@ Se um valor inválido for especificado, o estado anterior será mantido.
 
 <dl> <dt>
 
-[**Elemento de botão**](buttongroup-element.md)
+[**Elemento BUTTONGROUP**](buttongroup-element.md)
 </dt> <dt>
 
-[**BUTTONelement. mappingColor**](buttonelement-mappingcolor.md)
+[**BUTTONELEMENT.mappingColor**](buttonelement-mappingcolor.md)
 </dt> <dt>
 
-[**BUTTON. Image**](buttongroup-image.md)
+[**BUTTONGROUP.image**](buttongroup-image.md)
 </dt> <dt>
 
-[**BUTTON. mappingImage**](buttongroup-mappingimage.md)
+[**BUTTONGROUP.mappingImage**](buttongroup-mappingimage.md)
 </dt> </dl>
 
  

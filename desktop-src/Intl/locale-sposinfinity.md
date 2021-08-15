@@ -1,5 +1,5 @@
 ---
-description: LOCALE \_ SPOSINFINITY
+description: SPOSINFINITY de localidade \_
 ms.assetid: e3bb9a2a-8cf6-4919-b958-4583ccf1d592
 title: LOCALE_SPOSINFINITY
 ms.topic: article
@@ -11,9 +11,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118391109"
 ---
-# <a name="locale_sposinfinity"></a>LOCALE \_ SPOSINFINITY
+# <a name="locale_sposinfinity"></a>SPOSINFINITY de localidade \_
 
-**Windows Vista e posterior:** Valor da cadeia de caracteres para "infinito positivo", por exemplo, "Infinito" para a localidade inglês (Estados Unidos). Não há limite para o número de caracteres permitido para a cadeia de caracteres.
+**Windows Vista e posterior:** Valor da cadeia de caracteres para "infinito positivo", por exemplo, "infinito" para a localidade em inglês (Estados Unidos). Não há nenhum limite para o número de caracteres permitidos para a cadeia.
 
  
 

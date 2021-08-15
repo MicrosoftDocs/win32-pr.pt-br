@@ -17,7 +17,7 @@ Esse evento notifica o controle [DirectoryList de](directorylist-control.md) que
 
 Esse evento deve ser publicado por um [Controle PushButton](pushbutton-control.md) localizado na mesma caixa de diálogo que o controle que assina esse evento. O evento deve ser autor na [tabela ControlEvent](controlevent-table.md).
 
-Esse ControlEvent exige que a interface do usuário seja executado no [*nível completo da interface do*](f-gly.md) usuário. Esse evento não funcionará com uma interface [*do usuário reduzida ou*](r-gly.md) interface do usuário [*básica.*](b-gly.md) Para obter informações, consulte [Interface do Usuário níveis de dados](user-interface-levels.md).
+Esse ControlEvent exige que a interface do usuário seja executado no [*nível completo da interface do*](f-gly.md) usuário. Esse evento não funcionará com uma interface [*do usuário reduzida ou*](r-gly.md) interface do usuário [*básica.*](b-gly.md) Para obter informações, consulte [Interface do Usuário níveis](user-interface-levels.md).
 
 Observe que, se esse ControlEvent for chamado novamente quando uma nova pasta já existir, uma segunda pasta não será criada. Nesse caso, chamar DirectoryListNew seleciona o nome da nova pasta existente para edição.
 

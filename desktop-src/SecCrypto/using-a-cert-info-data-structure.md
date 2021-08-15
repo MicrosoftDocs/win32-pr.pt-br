@@ -4,12 +4,12 @@ ms.assetid: 3e058ca7-9334-4fde-afe1-93d5ea3a9697
 title: Usando uma estrutura de dados CERT_INFO
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ace9356a1a21bf72f01afe14cec00daeb1757206
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 61c7ef533e4f93941950dc525136a4566af522f8f9527430ce35aade25650313
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105800073"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118897148"
 ---
 # <a name="using-a-cert_info-data-structure"></a>Usando uma estrutura de dados de informações de certificado \_
 

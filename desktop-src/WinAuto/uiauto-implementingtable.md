@@ -1,17 +1,17 @@
 ---
 title: Padrão de controle de tabela
-description: Descreve as diretrizes e convenções para implementar o ITableProvider, incluindo informações sobre propriedades e métodos. O padrão de controle Table é usado para dar suporte a controles que atuam como contêineres para uma coleção de elementos filho.
+description: Descreve diretrizes e convenções para implementar ITableProvider, incluindo informações sobre propriedades e métodos. O padrão de controle Tabela é usado para dar suporte a controles que atuam como contêineres para uma coleção de elementos filho.
 ms.assetid: 81a1a316-cdd6-4490-8de2-1b6db52d84e6
 keywords:
-- Automação da interface do usuário, implementando o padrão de controle de tabela
-- Automação da interface do usuário, padrão de controle de tabela
-- Automação da interface do usuário, ITableProvider
+- Automação da Interface do Usuário, implementando o padrão de controle Tabela
+- Automação da Interface do Usuário, Padrão de controle de tabela
+- Automação da Interface do Usuário,ITableProvider
 - ITableProvider
-- Implementando padrões de controle de tabela de automação de IU
+- implementando padrões Automação da Interface do Usuário controle tabela
 - Padrões de controle de tabela
 - padrões de controle, ITableProvider
-- padrões de controle, implementação da tabela de automação da interface do usuário
-- padrões de controle, tabela
+- padrões de controle, implementando Automação da Interface do Usuário Tabela
+- padrões de controle, Tabela
 - interfaces, ITableProvider
 ms.topic: article
 ms.date: 05/31/2018
@@ -24,9 +24,9 @@ ms.locfileid: "118324121"
 ---
 # <a name="table-control-pattern"></a>Padrão de controle de tabela
 
-Descreve as diretrizes e convenções para implementar o [**ITableProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-itableprovider), incluindo informações sobre propriedades e métodos. O padrão de controle **Table** é usado para dar suporte a controles que atuam como contêineres para uma coleção de elementos filho.
+Descreve diretrizes e convenções para implementar [**ITableProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-itableprovider), incluindo informações sobre propriedades e métodos. O **padrão de** controle Tabela é usado para dar suporte a controles que atuam como contêineres para uma coleção de elementos filho.
 
-Os filhos do elemento container devem implementar [**ITableItemProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-itableitemprovider) e ser organizados em um sistema de coordenadas lógico bidimensional que possa ser percorrido por linha e coluna. Esse padrão de controle é análogo a [**IGridProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-igridprovider) com a distinção de que qualquer controle que implementa [**ITableProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-itableprovider) também deve expor uma relação de cabeçalho de coluna e/ou linha para cada elemento filho. Para obter exemplos de controles que implementam esse padrão de controle, consulte [tipos de controle e seus padrões de controle com suporte](uiauto-controlpatternmapping.md).
+Os filhos do elemento de contêiner devem implementar [**ITableItemProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-itableitemprovider) e ser organizados em um sistema de coordenadas lógica bidimensional que pode ser percorrido por linha e coluna. Esse padrão de controle é análogo a [**IGridProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-igridprovider) com a distinção de que qualquer controle que implemente [**ITableProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-itableprovider) também deve expor uma relação de coluna e/ou de título de linha para cada elemento filho. Para exemplos de controles que implementam esse padrão de controle, consulte [Tipos de controle e seus padrões de controle com suporte](uiauto-controlpatternmapping.md).
 
 Este tópico inclui as seções a seguir.
 
@@ -36,35 +36,35 @@ Este tópico inclui as seções a seguir.
 
 ## <a name="implementation-guidelines-and-conventions"></a>Diretrizes e convenções de implementação
 
-Ao implementar o padrão de controle de **tabela** , observe as seguintes diretrizes e convenções:
+Ao implementar o padrão **de controle** Tabela, observe as seguintes diretrizes e convenções:
 
--   O acesso ao conteúdo de células individuais é por meio de um sistema de coordenadas lógica bidimensional ou uma matriz fornecida pela implementação de [**IGridProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-igridprovider)necessária e simultânea.
--   Um cabeçalho de coluna ou de linha pode estar contido em um objeto de tabela ou ser um objeto de cabeçalho separado que está associado a um objeto de tabela.
--   Cabeçalhos de coluna e linha podem incluir um cabeçalho principal, bem como quaisquer cabeçalhos de suporte.
+-   O acesso ao conteúdo de células individuais é por meio de um sistema de coordenadas lógica bidimensional ou matriz fornecida pela implementação simultânea necessária de [**IGridProvider.**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-igridprovider)
+-   Uma coluna ou um header de linha pode estar contido em um objeto de tabela ou ser um objeto de header separado associado a um objeto de tabela.
+-   Os headers de coluna e linha podem incluir um header primário, bem como todos os headers de suporte.
     > [!Note]  
-    > esse conceito se torna evidente em uma planilha Microsoft Excel em que um usuário definiu uma coluna de **nome** . Agora, esta coluna tem dois cabeçalhos, incluindo o primeiro cabeçalho de **nome** definido pelo usuário e a designação alfanumérica para aquela coluna atribuída pelo aplicativo.
+    > Esse conceito fica evidente em uma planilha Microsoft Excel em que um usuário definiu uma **coluna Nome.** Essa coluna agora tem dois  títulos, incluindo o título Nome definido pelo usuário e a designação alfanumérico para essa coluna atribuída pelo aplicativo.
 
      
 
--   Consulte [padrão de controle de grade](uiauto-implementinggrid.md) para funcionalidade de grade relacionada.
+-   Confira [Padrão de Controle de Grade](uiauto-implementinggrid.md) para ver a funcionalidade de grade relacionada.
 
-    A imagem a seguir mostra uma tabela com cabeçalhos de coluna complexos.
+    A imagem a seguir mostra uma tabela com os headers de coluna complexos.
 
-    ![tabela com cabeçalhos de coluna complexos](images/uia-valuepattern-colorpicker.jpg)
+    ![tabela com headers de coluna complexos](images/uia-valuepattern-colorpicker.jpg)
 
-    A imagem a seguir mostra uma tabela com uma propriedade [**ITableProvider:: RowOrColumnMajor**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-itableprovider-get_roworcolumnmajor) ambígua.
+    A imagem a seguir mostra uma tabela com uma propriedade [**ITableProvider::RowOrColumnMajor**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-itableprovider-get_roworcolumnmajor) ambígua.
 
-    ![tabela com uma propriedade RowOrColumnMajor ambígua](images/uia-tablepattern-roworcolumnmajorproperty.jpg)
+    ![table com uma propriedade roworcolumnmajor ambígua](images/uia-tablepattern-roworcolumnmajorproperty.jpg)
 
 ## <a name="required-members-for-itableprovider"></a>Membros necessários para **ITableProvider**
 
-As propriedades e os métodos a seguir são necessários para implementar a interface [**ITableProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-itableprovider) .
+As seguintes propriedades e métodos são necessários para implementar a interface [**ITableProvider.**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-itableprovider)
 
 
 
 | Membros necessários                                                   | Tipo de membro | Observações |
 |--------------------------------------------------------------------|-------------|-------|
-| [**RowOrColumnMajor**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-itableprovider-get_roworcolumnmajor) | Propriedade    | Nenhum  |
+| [**Roworcolumnmajor**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-itableprovider-get_roworcolumnmajor) | Propriedade    | Nenhum  |
 | [**GetColumnHeaders**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-itableprovider-getcolumnheaders) | Método      | Nenhum  |
 | [**GetRowHeaders**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-itableprovider-getrowheaders)       | Método      | Nenhum  |
 
@@ -72,13 +72,13 @@ As propriedades e os métodos a seguir são necessários para implementar a inte
 
  
 
-Este padrão de controle não tem eventos associados.
+Esse padrão de controle não tem eventos associados.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-**Conceitua**
+**Conceitual**
 </dt> <dt>
 
 [Tipos de controle e seus padrões de controle com suporte](uiauto-controlpatternmapping.md)

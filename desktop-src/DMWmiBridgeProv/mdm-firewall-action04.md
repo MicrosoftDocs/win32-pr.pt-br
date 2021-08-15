@@ -1,10 +1,10 @@
 ---
-title: Classe MDM_Firewall_Action04
-description: A \_ classe Action04 do MDM firewall \_ é usada para definir as configurações do Windows Defender firewall.
+title: MDM_Firewall_Action04 classe
+description: A classe Action04 do Firewall do MDM \_ é usada para definir as \_ configurações Windows Defender Firewall.
 ms.assetid: d0704662-ac2b-4ff5-a2c1-8f2bc7835488
 keywords:
-- Classe MDM_Firewall_Action04
-- Classe MDM_Firewall_Action04, descrita
+- MDM_Firewall_Action04 classe
+- MDM_Firewall_Action04 classe, descrita
 topic_type:
 - apiref
 api_name:
@@ -18,18 +18,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b1eede757f6a3e129300e6d81a28d34248dda1f5
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f8af0b646b362174d91b95c1ace9ebed13b632c113dafcab9f7eb5cc9470b73e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104454925"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119694856"
 ---
-# <a name="mdm_firewall_action04-class"></a>\_ \_ Classe ACTION04 do MDM firewall
+# <a name="mdm_firewall_action04-class"></a>Classe \_ Action04 do Firewall \_ MDM
 
-\[Algumas informações estão relacionadas ao produto de pré-lançamento que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não faz nenhuma garantia, expressa ou implícita, com relação às informações fornecidas aqui.\]
+\[Algumas informações estão relacionadas ao produto pré-lançado, que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não oferece garantias, expressas ou implícitas, das informações aqui fornecidas.\]
 
-A \_ classe Action04 do MDM firewall \_ é usada para definir as configurações do Windows Defender firewall.
+A classe Action04 do Firewall do MDM \_ é usada para definir as \_ configurações Windows Defender Firewall.
 
 A sintaxe a seguir é simplificada do código MOF e inclui todas as propriedades herdadas.
 
@@ -47,13 +47,13 @@ class MDM_Firewall_Action04
 
 ## <a name="members"></a>Membros
 
-A **classe \_ \_ Action04 do MDM firewall** tem estes tipos de membros:
+A **classe \_ \_ Action04 do Firewall MDM** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A **classe \_ \_ Action04 do MDM firewall** tem essas propriedades.
+A **classe \_ \_ Action04 do Firewall MDM** tem essas propriedades.
 
 <dl> <dt>
 
@@ -71,7 +71,7 @@ Qualificadores: [ **chave**](/windows/desktop/WmiSdk/key-qualifier)
 
 </dd> <dt>
 
-**ParentID**
+**Parentid**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
@@ -91,7 +91,7 @@ Qualificadores: [ **chave**](/windows/desktop/WmiSdk/key-qualifier)
 Tipo de dados: **sint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> </dl>
@@ -102,10 +102,10 @@ Tipo de acesso: leitura/gravação
 
 | Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10\]<br/>                                                     |
+| Cliente mínimo com suporte<br/> | \[Windows 10 somente aplicativos da área de trabalho\]<br/>                                                     |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                       |
-| Namespace<br/>                | \\Dmmap de \\ MDM \\ cimv2 raiz<br/>                                                              |
-| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv1. mof</dt> </dl> |
+| Namespace<br/>                | \\Cimv2 \\ mdm \\ dmmap raiz<br/>                                                              |
+| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv1.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>DMWmiBridgeProv.dll</dt> </dl>  |
 
 

@@ -1,6 +1,6 @@
 ---
-title: Notificações de controle de TrackBar
-description: Notificações de controle de TrackBar
+title: Notificações de controle da barra de faixas
+description: Notificações de controle da barra de faixas
 ms.assetid: 82c501b2-37a3-4e15-a9d9-e978f984a3ea
 ms.topic: article
 ms.date: 05/31/2018
@@ -11,15 +11,15 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118414828"
 ---
-# <a name="trackbar-control-notifications"></a>Notificações de controle de TrackBar
+# <a name="trackbar-control-notifications"></a>Notificações de controle da barra de faixas
 
 ## <a name="in-this-section"></a>Nesta seção
 
--   [NM \_ CUSTOMDRAW (TrackBar)](nm-customdraw-trackbar.md)
--   [NM \_ RELEASEDCAPTURE (TrackBar)](nm-releasedcapture-trackbar-.md)
+-   [NM \_ CUSTOMDRAW (trackbar)](nm-customdraw-trackbar.md)
+-   [NM \_ RELEASEDCAPTURE (trackbar)](nm-releasedcapture-trackbar-.md)
 -   [TRBN \_ THUMBPOSCHANGING](trbn-thumbposchanging.md)
--   [HSCROLL do WM \_](wm-hscroll.md)
--   [VSCROLL do WM \_](wm-vscroll.md)
+-   [WM \_ HSCROLL](wm-hscroll.md)
+-   [WM \_ VSCROLL](wm-vscroll.md)
 
  
 

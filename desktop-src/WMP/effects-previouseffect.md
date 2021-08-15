@@ -1,9 +1,9 @@
 ---
-title: EFFECTs. previousEffect
+title: EFFECTS.previousEffect
 description: O método previousEffect exibe a visualização anterior, ignorando as predefinições.
 ms.assetid: f1cfef29-0241-4028-b047-4f17bf0e9250
 keywords:
-- EFFECTs. previousEffect Windows Media Player
+- EFFECTS.previousEffect Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -20,9 +20,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118339971"
 ---
-# <a name="effectspreviouseffect"></a>EFFECTs. previousEffect
+# <a name="effectspreviouseffect"></a>EFFECTS.previousEffect
 
-O método **previousEffect** exibe a visualização anterior, ignorando as predefinições.
+O **método previousEffect** exibe a visualização anterior, ignorando as predefinições.
 
 ``` syntax
         elementID.previousEffect()
@@ -38,7 +38,7 @@ Esse método não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-Esse método exibe a visualização anterior na ordem de criação. Se a visualização atual for a primeira na ordem de criação e, se **allowAll** for false, a última visualização será feita atual.
+Esse método exibe a visualização anterior na ordem de autor. Se a visualização atual for a primeira na ordem de autor e se **allowAll** for false, a última visualização será atualizada.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -46,7 +46,7 @@ Esse método exibe a visualização anterior na ordem de criação. Se a visuali
 
 | Requisito | Valor |
 |--------------------|------------------------------------------------------|
-| Versão<br/> | Windows Media Player versão 7,0 ou posterior<br/> |
+| Versão<br/> | Windows Media Player versão 7.0 ou posterior<br/> |
 
 
 
@@ -54,13 +54,13 @@ Esse método exibe a visualização anterior na ordem de criação. Se a visuali
 
 <dl> <dt>
 
-[**Elemento EFFECTs**](effects-element.md)
+[**Elemento EFFECTS**](effects-element.md)
 </dt> <dt>
 
-[**EFFECTs. nextEffect**](effects-nexteffect.md)
+[**EFFECTS.nextEffect**](effects-nexteffect.md)
 </dt> <dt>
 
-[**EFFECTs. allowAll**](effects-allowall.md)
+[**EFFECTS.allowAll**](effects-allowall.md)
 </dt> </dl>
 
  

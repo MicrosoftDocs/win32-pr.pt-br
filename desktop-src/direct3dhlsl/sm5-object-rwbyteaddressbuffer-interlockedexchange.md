@@ -1,9 +1,9 @@
 ---
-title: 'Função RWByteAddressBuffer:: InterlockedExchange'
+title: Função RWByteAddressBuffer::InterlockedExchange
 description: Troca um valor, atomicamente.
 ms.assetid: a50f4cba-a7a2-44b0-9de7-003b4c7a947f
 keywords:
-- HLSL da função InterlockedExchange
+- Função InterlockedExchange HLSL
 topic_type:
 - apiref
 api_name:
@@ -38,28 +38,28 @@ void InterlockedExchange(
 
 <dl> <dt>
 
-*dest* \[ no\]
+*dest* \[ Em\]
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
 O endereço de destino.
 
 </dd> <dt>
 
-*valor* \[ do no\]
+*value* \[ Em\]
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
 O valor de entrada.
 
 </dd> <dt>
 
-*\_ valor original* \[\]
+*valor \_ original* \[ out\]
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
 O valor original.
 
@@ -71,13 +71,13 @@ Essa função não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-Esta operação só pode ser executada em recursos de tipo escalar e variáveis de memória compartilhada. Há três usos possíveis para essa função. A primeira é quando R é um tipo de variável de memória compartilhada. Nesse caso, a função executa a operação no registro de memória compartilhada referenciado pelo dest. O segundo cenário é quando R é um tipo de variável de recurso. Nesse cenário, a função executa a operação no local do recurso referenciado pelo dest. Por fim, o terceiro cenário é quando R é um tipo de variável local. Nesse cenário, a função reduz para a operação executada usando operações locais. Esta operação só está disponível quando o R é legível e gravável.
+Essa operação só pode ser executada em recursos de tipo escalar e variáveis de memória compartilhada. Há três usos possíveis para essa função. A primeira é quando R é um tipo de variável de memória compartilhada. Nesse caso, a função executa a operação no registro de memória compartilhada referenciado por dest. O segundo cenário é quando R é um tipo de variável de recurso. Nesse cenário, a função executa a operação no local do recurso referenciado por dest. Por fim, o terceiro cenário é quando R é um tipo de variável local. Nesse cenário, a função reduz para a operação executada usando operações locais. Essa operação só está disponível quando o R é acessível e pode ser escrito.
 
 Essa função tem suporte nos seguintes tipos de sombreadores:
 
 
 
-| VS  | HS  | DS  | GS  | PS  | CS  |
+| VS  | Hs  | DS  | GS  | PS  | CS  |
 |-----|-----|-----|-----|-----|-----|
 |  x  |  x  |  x  |  x  | x   | x   |
 

@@ -1,11 +1,11 @@
 ---
-title: Atributo SAM-Account-Type
+title: SAM-atributo de tipo de conta
 description: Esse atributo contém informações sobre cada objeto de tipo de conta.
 ms.assetid: 00479b89-1d96-4ace-bbd8-053ca9e548b0
 ms.tgt_platform: multiple
 keywords:
-- Esquema do AD do atributo SAM-Account-Type
-- Esquema do AD do atributo sAMAccountType
+- SAM-tipo de conta do atributo AD Schema
+- Esquema de AD do atributo sAMAccountType
 topic_type:
 - apiref
 api_name:
@@ -21,36 +21,36 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118423383"
 ---
-# <a name="sam-account-type-attribute"></a>Atributo SAM-Account-Type
+# <a name="sam-account-type-attribute"></a>SAM-atributo de tipo de conta
 
-Esse atributo contém informações sobre cada objeto de tipo de conta. Você pode enumerar uma lista de tipos de conta ou usar a API exibir informações para criar uma lista. Como computadores, contas de usuário normais e contas de confiança também podem ser enumerados como objetos de usuário, os valores dessas contas devem ser um intervalo contíguo.
+Esse atributo contém informações sobre cada objeto de tipo de conta. Você pode enumerar uma lista de tipos de conta ou pode usar a API de informações de exibição para criar uma lista. Como computadores, contas de usuário normais e contas de confiança também podem ser enumerados como objetos de usuário, os valores dessas contas devem ser um intervalo contíguo.
 
 Os valores possíveis para esse atributo são os seguintes:
 
--   OBJETO \_ DE DOMÍNIO SAM \_ 0X0
--   OBJETOS \_ DE GRUPO SAM \_ 0X10000000
--   OBJETO \_ SAM NON SECURITY GROUP \_ \_ \_ 0X10000001
--   OBJETO \_ ALIAS \_ SAM 0x20000000
--   OBJETO SAM \_ NON \_ SECURITY ALIAS \_ \_ 0X20000001
--   OBJETO \_ DE USUÁRIO SAM \_ 0x30000000
--   CONTA DE USUÁRIO NORMAL DO SAM \_ \_ \_ 0X30000000
--   Conta \_ DE COMPUTADOR SAM \_ 0x30000001
--   CONTA \_ CONFIÁVEL \_ SAM 0X30000002
--   GRUPO BÁSICO DO APLICATIVO SAM \_ \_ \_ 0X40000000
--   GRUPO DE CONSULTAS DO APLICATIVO SAM \_ \_ \_ 0X40000001
--   TIPO DE CONTA SAM \_ \_ MAX \_ 0x7fffffff
+-   \_Objeto de domínio Sam \_ 0x0
+-   \_Objeto de grupo Sam \_ 0x10000000
+-   SAM \_ \_ objeto de \_ grupo não segurança \_ 0x10000001
+-   \_Objeto de alias Sam \_ 0x20000000
+-   \_Objeto de \_ alias de não segurança Sam \_ \_ 0x20000001
+-   \_Objeto de usuário Sam \_ 0x30000000
+-   \_Conta de usuário normal do Sam \_ \_ 0x30000000
+-   0x30000001 da conta do \_ computador Sam \_
+-   \_0x30000002 de \_ conta confiável Sam
+-   \_Grupo básico do aplicativo Sam \_ \_ 0x40000000
+-   \_Grupo de consulta do aplicativo Sam \_ \_ 0x40000001
+-   \_Tipo de conta Sam máx. \_ \_ 0x7FFFFFFF
 
 
 
 | Entrada | Valor |
 |-------------------|-----------------------------------------------------------------|
-| CN                | Tipo de conta SAM                                                |
-| Ldap-Display-Name | sAMAccountType                                                  |
+| CN                | SAM-tipo de conta                                                |
+| LDAP-Display-Name | sAMAccountType                                                  |
 | Tamanho              | \-                                                              |
 | Privilégio de atualização  | Esse valor é definido pelo sistema.                                |
 | Frequência de atualização  | Isso é definido pelo sistema operacional quando o objeto é criado. |
 | Attribute-Id      | 1.2.840.113556.1.4.302                                          |
-| System-Id-Guid    | 6e7b626c-64f2-11d0-afd2-00c04fd930c9                            |
+| System-ID-GUID    | 6e7b626c-64f2-11d0-afd2-00c04fd930c9                            |
 | Syntax            | [**Enumeração**](s-enumeration.md)                            |
 
 
@@ -73,15 +73,15 @@ Os valores possíveis para esse atributo são os seguintes:
 | ID do link                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| Tem valor único       | Verdadeiro                                                         |
+| É de valor único       | Verdadeiro                                                         |
 | É indexado             | Verdadeiro                                                         |
-| No Catálogo Global      | Verdadeiro                                                         |
-| Descritor de segurança NT | O:BAG:BAD:S:                                                 |
+| No catálogo global      | Verdadeiro                                                         |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000001                                                   |
 | System-Flags           | 0x00000012                                                   |
-| Classes usadas em        | [**Entidade de segurança**](c-securityprincipal.md)<br/> |
+| Classes usadas em        | [**Segurança-principal**](c-securityprincipal.md)<br/> |
 
 
 
@@ -94,15 +94,15 @@ Os valores possíveis para esse atributo são os seguintes:
 | ID do link                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| Tem valor único       | Verdadeiro                                                         |
+| É de valor único       | Verdadeiro                                                         |
 | É indexado             | Verdadeiro                                                         |
-| No Catálogo Global      | Verdadeiro                                                         |
-| Descritor de segurança NT | O:BAG:BAD:S:                                                 |
+| No catálogo global      | Verdadeiro                                                         |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000001                                                   |
 | System-Flags           | 0x00000012                                                   |
-| Classes usadas em        | [**Entidade de segurança**](c-securityprincipal.md)<br/> |
+| Classes usadas em        | [**Segurança-principal**](c-securityprincipal.md)<br/> |
 
 
 
@@ -115,7 +115,7 @@ Os valores possíveis para esse atributo são os seguintes:
 | ID do link                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| Tem valor único       | Verdadeiro                                                         |
+| É de valor único       | Verdadeiro                                                         |
 | É indexado             | Verdadeiro                                                         |
 | No Catálogo Global      | Verdadeiro                                                         |
 | Descritor de segurança NT | O:BAG:BAD:S:                                                 |

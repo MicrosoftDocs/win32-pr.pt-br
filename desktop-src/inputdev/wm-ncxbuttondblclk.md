@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1455f6d6c2fa40f34bbfbe00e0c7a30daa52f375
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 46b5b0deb3efb84af2bdd862377411d86328ee7ef72242a6e27759b819cdab2e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105789416"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118482636"
 ---
 # <a name="wm_ncxbuttondblclk-message"></a>Mensagem do WM \_ NCXBUTTONDBLCLK
 
@@ -65,7 +65,7 @@ Um ponteiro para uma estrutura de [**pontos**](/previous-versions//dd162808(v=vs
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se um aplicativo processar essa mensagem, ele deverá retornar **true**. Para obter mais informações sobre como processar o valor de retorno, consulte a seção comentários.
 
@@ -100,7 +100,7 @@ Por padrão, a função [**DefWindowProc**](/windows/desktop/api/winuser/nf-winu
 
 Uma janela não precisa ter o estilo **cs \_ DBLCLKS** para receber mensagens do **WM \_ NCXBUTTONDBLCLK** . O sistema gera uma mensagem do **WM \_ NCXBUTTONDBLCLK** quando o usuário pressiona, libera e novamente pressiona um botão X dentro do limite de tempo de clique duplo do sistema. Clicar duas vezes em um desses botões gera quatro mensagens: [**WM \_ NCXBUTTONDOWN**](wm-ncxbuttondown.md), [**WM \_ NCXBUTTONUP**](wm-ncxbuttonup.md), **WM \_ NCXBUTTONDBLCLK** e **WM \_ NCXBUTTONUP** novamente.
 
-Ao contrário das mensagens do [**WM \_ NCLBUTTONDBLCLK**](wm-nclbuttondblclk.md), do [**WM \_ NCMBUTTONDBLCLK**](wm-ncmbuttondblclk.md)e do [**WM \_ NCRBUTTONDBLCLK**](wm-ncrbuttondblclk.md) , um aplicativo deve retornar **true** dessa mensagem se a processar. Isso permitirá que o software que simula essa mensagem em sistemas Windows anteriores ao Windows 2000 determine se o procedimento de janela processou a mensagem ou chamou [**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) para processá-la.
+Ao contrário das mensagens do [**WM \_ NCLBUTTONDBLCLK**](wm-nclbuttondblclk.md), do [**WM \_ NCMBUTTONDBLCLK**](wm-ncmbuttondblclk.md)e do [**WM \_ NCRBUTTONDBLCLK**](wm-ncrbuttondblclk.md) , um aplicativo deve retornar **true** dessa mensagem se a processar. isso permitirá que o software que simula essa mensagem em sistemas Windows anteriores a Windows 2000 para determinar se o procedimento de janela processou a mensagem ou se chamou [**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) para processá-la.
 
 ## <a name="requirements"></a>Requisitos
 

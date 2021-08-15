@@ -1,9 +1,9 @@
 ---
 title: Tipo complexo dailyScheduleType
-description: Define os elementos filho e as informações de sequenciamento para o elemento ScheduleByDay.
+description: Define os elementos filho e informações de sequenciamento para o elemento ScheduleByDay.
 ms.assetid: e0b1b09f-d72a-4a85-9059-4a917bc0104a
 keywords:
-- Agendador de Tarefas tipo complexo dailyScheduleType
+- tipo complexo dailyScheduleType Agendador de Tarefas
 topic_type:
 - apiref
 api_name:
@@ -22,7 +22,7 @@ ms.locfileid: "118357168"
 ---
 # <a name="dailyscheduletype-complex-type"></a>Tipo complexo dailyScheduleType
 
-Define os elementos filho e as informações de sequenciamento para o elemento [**ScheduleByDay**](taskschedulerschema-schedulebyday-calendartriggertype-element.md) .
+Define os elementos filho e informações de sequenciamento para o [**elemento ScheduleByDay.**](taskschedulerschema-schedulebyday-calendartriggertype-element.md)
 
 ``` syntax
 <xs:complexType name="dailyScheduleType">
@@ -53,7 +53,7 @@ Define os elementos filho e as informações de sequenciamento para o elemento [
 
 | Elemento                                                                            | Type | Descrição                                                          |
 |------------------------------------------------------------------------------------|------|----------------------------------------------------------------------|
-| [**DaysInterval**](taskschedulerschema-daysinterval-dailyscheduletype-element.md) |      | Especifica o intervalo entre os dias no agendamento. <br/> |
+| [**DaysInterval**](taskschedulerschema-daysinterval-dailyscheduletype-element.md) |      | Especifica o intervalo entre os dias na agenda. <br/> |
 
 
 
@@ -63,8 +63,8 @@ Define os elementos filho e as informações de sequenciamento para o elemento [
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
 
 
 
@@ -72,7 +72,7 @@ Define os elementos filho e as informações de sequenciamento para o elemento [
 
 <dl> <dt>
 
-[Tipos complexos de esquema de Agendador de Tarefas](task-scheduler-schema-complex-types.md)
+[Agendador de Tarefas complexos de esquema](task-scheduler-schema-complex-types.md)
 </dt> <dt>
 
 [Agendador de Tarefas](task-scheduler-start-page.md)

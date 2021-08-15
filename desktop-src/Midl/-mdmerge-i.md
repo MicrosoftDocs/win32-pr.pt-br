@@ -1,6 +1,6 @@
 ---
-title: /i switch (MDMERGE)
-description: A opção /i especifica o diretório que contém arquivos de metadados a serem mesclados.
+title: opção/i (MDMERGE)
+description: A opção/i especifica o diretório que contém os arquivos de metadados a serem mesclados.
 ms.assetid: 52CFCB90-555F-487E-BB42-76B6DFC5DA93
 keywords:
 - /i alternar MIDL
@@ -19,22 +19,22 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118385464"
 ---
-# <a name="i-switch"></a>/i switch
+# <a name="i-switch"></a>opção/i
 
-A **opção /i** especifica o diretório que contém arquivos de metadados a serem mesclados.
+A opção **/i** especifica o diretório que contém os arquivos de metadados a serem mesclados.
 
 ``` syntax
 mdmerge /i metadata_directory
 ```
 
-## <a name="switch-options"></a>Opções de opção
+## <a name="switch-options"></a>Opções de comutação
 
 <dl> <dt>
 
-*diretório de \_ metadados* 
+*diretório de metadados \_* 
 </dt> <dd>
 
-Especifica o diretório que contém arquivos de metadados a serem mesclados.
+Especifica o diretório que contém os arquivos de metadados a serem mesclados.
 
 </dd> </dl>
 
@@ -42,7 +42,7 @@ Especifica o diretório que contém arquivos de metadados a serem mesclados.
 
 ## <a name="examples"></a>Exemplos
 
-**Diretório de metadados mdmerge /i \_**
+**diretório de metadados mdmerge/i \_**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -59,7 +59,7 @@ Especifica o diretório que contém arquivos de metadados a serem mesclados.
 
 <dl> <dt>
 
-[Sintaxe geral da linha de comando MIDL](general-midl-command-line-syntax.md)
+[Sintaxe de linha de comando MIDL geral](general-midl-command-line-syntax.md)
 </dt> </dl>
 
  

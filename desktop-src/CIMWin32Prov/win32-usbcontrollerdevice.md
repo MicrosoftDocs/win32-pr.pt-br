@@ -1,8 +1,8 @@
 ---
-description: A \_ classe WMI de associação do Win32 USBControllerDevice relaciona um controlador USB (barramento serial universal) e a \_ instância de LogicalDevice CIM conectada a ele.
+description: A classe WMI de associação Win32 USBControllerDevice relaciona um controlador USB (barramento serial universal) e \_ a instância logicalDevice cim conectada a \_ ele.
 ms.assetid: a0c64984-9116-4cb8-86e0-38c897cb7119
 ms.tgt_platform: multiple
-title: Classe Win32_USBControllerDevice
+title: Win32_USBControllerDevice classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -21,16 +21,16 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 9bf72c92a4ae23ac7750cdd52914e86f5dbcdd01
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 3a7627426a094d8c335032363b3213aeca19e400d5761d23ede8b7cecf0dcab5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105753797"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118007256"
 ---
-# <a name="win32_usbcontrollerdevice-class"></a>\_Classe Win32 USBControllerDevice
+# <a name="win32_usbcontrollerdevice-class"></a>Classe Win32 \_ USBControllerDevice
 
-A [classe WMI](../wmisdk/retrieving-a-class.md) de associação do **Win32 \_ USBCONTROLLERDEVICE** relaciona um controlador USB (barramento serial universal) e a instância de [**\_ LogicalDevice CIM**](cim-logicaldevice.md) conectada a ele.
+A classe [WMI](../wmisdk/retrieving-a-class.md) de associação **Win32 \_ USBControllerDevice** relaciona um controlador USB (barramento serial universal) e a [**instância \_ logicalDevice cim**](cim-logicaldevice.md) conectada a ele.
 
 A sintaxe a seguir é simplificada do código MOF (Managed Object Format) e inclui todas as propriedades herdadas. As propriedades são listadas em ordem alfabética, não em ordem MOF.
 
@@ -52,28 +52,28 @@ class Win32_USBControllerDevice : CIM_ControlledBy
 
 ## <a name="members"></a>Membros
 
-A classe **Win32 \_ USBControllerDevice** tem estes tipos de membros:
+A **classe Win32 \_ USBControllerDevice** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **Win32 \_ USBControllerDevice** tem essas propriedades.
+A **classe Win32 \_ USBControllerDevice** tem essas propriedades.
 
 <dl> <dt>
 
-**Accessstate**
+**AccessState**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Indica se o controlador está ativando ou acessando ativamente o dispositivo. Essas informações são necessárias quando um dispositivo lógico pode ser acessado ou acessado por meio de vários controladores.
+Indica se o controlador está ativamente no comando ou acessando o dispositivo. Essas informações são necessárias quando um dispositivo lógico pode ser comandos por vários controladores ou acessados por meio de vários controladores.
 
-Essa propriedade é herdada do [**CIM \_ ControlledBy**](cim-controlledby.md).
+Essa propriedade é herdada de [**CIM \_ ControlledBy.**](cim-controlledby.md)
 
 <dt>
 
@@ -100,7 +100,7 @@ Essa propriedade é herdada do [**CIM \_ ControlledBy**](cim-controlledby.md).
 
 </dd> <dt>
 
-**Antecedent**
+**Antecedente**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **CIM \_ USBController**
@@ -109,51 +109,51 @@ Tipo de dados: **CIM \_ USBController**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**Key**](../wmisdk/key-qualifier.md), [**override**](../wmisdk/standard-qualifiers.md) ("Antecedent"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("CIM \| CIM \_ USBController")
+Qualificadores: [**key**](../wmisdk/key-qualifier.md), [**Override**](../wmisdk/standard-qualifiers.md) ("Antecedent"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("CIM \| CIM \_ USBController")
 </dt> </dl>
 
-Um [**\_ USBController CIM**](cim-usbcontroller.md) que representa o controlador USB (barramento serial universal) associado a este dispositivo.
+Um [**\_ USBController CIM**](cim-usbcontroller.md) que representa o controlador USB (Barramento Serial Universal) associado a este dispositivo.
 
 </dd> <dt>
 
-**Depende**
+**Dependente**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados **: \_ LogicalDevice CIM**
+Tipo de dados: **Cim \_ LogicalDevice**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**Key**](../wmisdk/key-qualifier.md), [**override**](../wmisdk/standard-qualifiers.md) ("dependent"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("CIM \| CIM \_ LogicalDevice")
+Qualificadores: [**key**](../wmisdk/key-qualifier.md), [**Override**](../wmisdk/standard-qualifiers.md) ("Dependent"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("CIM \| CIM \_ LogicalDevice")
 </dt> </dl>
 
-Um [**\_ LogicalDevice CIM**](cim-logicaldevice.md) que descreve o dispositivo lógico conectado ao controlador USB (barramento serial universal).
+Um [**\_ LogicalDevice CIM que**](cim-logicaldevice.md) descreve o dispositivo lógico conectado ao controlador USB (Barramento Serial Universal).
 
 </dd> <dt>
 
 **NegotiatedDataWidth**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**unidades**](../wmisdk/standard-qualifiers.md) ("bits")
+Qualificadores: [**Unidades**](../wmisdk/standard-qualifiers.md) ("bits")
 </dt> </dl>
 
-Quando várias larguras de dados de barramento ou conexão são possíveis, essa propriedade define a que está em uso entre os dispositivos. A largura dos dados é especificada em bits. Se a largura dos dados não for negociada ou se essas informações não estiverem disponíveis ou importantes para o gerenciamento de dispositivos, a propriedade deverá ser definida como 0 (zero).
+Quando várias larguras de dados de conexão ou barramento são possíveis, essa propriedade define aquela em uso entre os dispositivos. A largura dos dados é especificada em bits. Se a largura dos dados não for negociada ou se essas informações não estão disponíveis ou importantes para o gerenciamento de dispositivos, a propriedade deve ser definida como 0 (zero).
 
-Essa propriedade é herdada do [**CIM \_ DeviceConnection**](cim-deviceconnection.md).
+Essa propriedade é herdada de [**\_ DEVICEConnection cim**](cim-deviceconnection.md).
 
 </dd> <dt>
 
 **NegotiatedSpeed**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt64**
+Tipo de dados: **uint64**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -162,49 +162,49 @@ Tipo de acesso: Somente leitura
 Qualificadores: [**unidades**](../wmisdk/standard-qualifiers.md) ("bits por segundo")
 </dt> </dl>
 
-Quando várias velocidades de barramento ou conexão são possíveis, essa propriedade define a que está sendo usada entre os dispositivos. A velocidade é especificada em bits por segundo. Se as velocidades de conexão ou de barramento não forem negociadas ou se essas informações não estiverem disponíveis ou importantes para o gerenciamento de dispositivos, a propriedade deverá ser definida como 0 (zero).
+Quando várias velocidades de conexão ou barramento são possíveis, essa propriedade define aquela que está sendo usada entre os dispositivos. A velocidade é especificada em bits por segundo. Se as velocidades de conexão ou barramento não são negociadas ou se essas informações não estão disponíveis ou importantes para o gerenciamento de dispositivos, a propriedade deve ser definida como 0 (zero).
 
-Para obter mais informações sobre como usar valores de **UInt64** em scripts, consulte [scripts no WMI](../wmisdk/creating-a-wmi-script.md).
+Para obter mais informações sobre como **usar valores uint64** em scripts, consulte [Scripts no WMI](../wmisdk/creating-a-wmi-script.md).
 
-Essa propriedade é herdada do [**CIM \_ DeviceConnection**](cim-deviceconnection.md).
+Essa propriedade é herdada de [**\_ DEVICEConnection cim**](cim-deviceconnection.md).
 
 </dd> <dt>
 
 **NumberOfHardResets**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Número de redefinições de hardware emitidas pelo controlador. Uma reinicialização forçada retorna o dispositivo para seu estado de inicialização ou inicialização. Todos os dados e informações de estado do dispositivo interno são perdidos.
+Número de redefinições de disco rígido emitidas pelo controlador. Uma redefinição de disco rígido retorna o dispositivo para seu estado de inicialização ou inicialização. Todas as informações de estado do dispositivo interno e os dados são perdidos.
 
-Essa propriedade é herdada do [**CIM \_ ControlledBy**](cim-controlledby.md).
+Essa propriedade é herdada de [**CIM \_ ControlledBy.**](cim-controlledby.md)
 
 </dd> <dt>
 
 **NumberOfSoftResets**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Número de redefinições reversível emitidas pelo controlador. Uma redefinição reversível não limpa completamente o estado e os dados atuais do dispositivo. A semântica exata depende do dispositivo e dos protocolos e mecanismos usados para se comunicar com ele.
+Número de redefinições suaves emitidas pelo controlador. Uma redefinição suave não limpa completamente o estado e os dados atuais do dispositivo. A semântica exata depende do dispositivo e dos protocolos e mecanismos usados para se comunicar com ele.
 
-Essa propriedade é herdada do [**CIM \_ ControlledBy**](cim-controlledby.md).
+Essa propriedade é herdada de [**CIM \_ ControlledBy.**](cim-controlledby.md)
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-A classe **Win32 \_ USBControllerDevice** é derivada de [**CIM \_ ControlledBy**](cim-controlledby.md).
+A **classe Win32 \_ USBControllerDevice** é derivada de [**CIM \_ ControlledBy.**](cim-controlledby.md)
 
-Para obter uma discussão sobre como usar o, consulte o artigo [exibindo dispositivos USB usando o WMI](https://devblogs.microsoft.com/powershell/displaying-usb-devices-using-wmi/) . Para obter uma discussão sobre como usar classes de associação, consulte o artigo [Get-USB – usando classes de associação WMI no PowerShell](https://devblogs.microsoft.com/powershell/get-usb-using-wmi-association-classes-in-powershell/) .
+Para uma discussão sobre como usar, consulte o artigo no blog [Exibindo dispositivos USB usando wmi.](https://devblogs.microsoft.com/powershell/displaying-usb-devices-using-wmi/) Para obter uma discussão sobre como usar classes de associação, consulte o [artigo Get-USB – Using WMI Association Classes in PowerShell](https://devblogs.microsoft.com/powershell/get-usb-using-wmi-association-classes-in-powershell/) ( Usando classes de associação WMI no PowerShell).
 
 ## <a name="examples"></a>Exemplos
 
@@ -225,8 +225,8 @@ gwmi Win32_USBControllerDevice |%{[wmi]($_.Dependent)} | Sort Manufacturer,Descr
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| Namespace<br/>                | Raiz \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Namespace<br/>                | RAIZ \\ CIMV2<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -235,7 +235,7 @@ gwmi Win32_USBControllerDevice |%{[wmi]($_.Dependent)} | Sort Manufacturer,Descr
 
 <dl> <dt>
 
-[**\_CONTROLLEDBY CIM**](cim-controlledby.md)
+[**CIM \_ ControlledBy**](cim-controlledby.md)
 </dt> <dt>
 
 [Classes de hardware do sistema de computador](computer-system-hardware-classes.md)

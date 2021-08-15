@@ -21,7 +21,7 @@ ms.locfileid: "118434615"
 ---
 # <a name="asfleakybucketpairs"></a>ASFLeakyBucketPairs
 
-O **atributo ASFLeakyBucketPairs** é um atributo opcional que descreve os requisitos de buffer para um arquivo de taxa de bits variável.
+O atributo **ASFLeakyBucketPairs** é um atributo opcional que descreve os requisitos de buffer para um arquivo de taxa de bits variável.
 
 ## <a name="global-constant"></a>Constante global
 
@@ -29,7 +29,7 @@ g \_ wszASFLeakyBucketPairs
 
 ## <a name="data-type"></a>Tipo de Dados
 
-**TIPO WMT \_ \_ BINARY**
+**WMT \_ tipo \_ binário**
 
 ## <a name="remarks"></a>Comentários
 
@@ -43,7 +43,7 @@ struct
 };
 ```
 
-Em *que wReserved* deve ser igual a zero e *bucket* é uma matriz de estruturas [**WM \_ LEAKY BUCKET \_ \_ PAIR.**](/previous-versions/windows/desktop/api/wmsdkidl/ns-wmsdkidl-wm_leaky_bucket_pair) A matriz deve conter pelo menos duas entradas, mas pode ser maior. O objeto de leitor usa esse atributo para determinar a quantidade de conteúdo a ser armazenado em buffer antes da reprodução.
+Em que *wReserved* deve ser igual a zero e *Bucket* é uma matriz de estruturas de [**\_ \_ \_ pares de buckets de vazamento do WM**](/previous-versions/windows/desktop/api/wmsdkidl/ns-wmsdkidl-wm_leaky_bucket_pair) . A matriz deve conter pelo menos duas entradas, mas pode ser maior. O objeto leitor usa esse atributo para determinar a quantidade de conteúdo a ser armazenada em buffer antes da reprodução.
 
 ## <a name="see-also"></a>Confira também
 

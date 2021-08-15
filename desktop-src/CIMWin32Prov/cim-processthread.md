@@ -1,8 +1,8 @@
 ---
-description: A classe \_ PROCESSThread cim representa um link entre um processo e os threads em execução no contexto do processo.
+description: A \_ classe CIM ProcessThread representa um link entre um processo e os threads em execução no contexto do processo.
 ms.assetid: e71543c5-d9b3-4f98-93a6-08f977a26305
 ms.tgt_platform: multiple
-title: CIM_ProcessThread classe
+title: Classe CIM_ProcessThread
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -23,12 +23,12 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118421882"
 ---
-# <a name="cim_processthread-class"></a>Classe CIM \_ ProcessThread
+# <a name="cim_processthread-class"></a>\_Classe CIM ProcessThread
 
-A **classe \_ PROCESSThread cim** representa um link entre um processo e os threads em execução no contexto do processo.
+A classe **CIM \_ ProcessThread** representa um link entre um processo e os threads em execução no contexto do processo.
 
 > [!IMPORTANT]
-> As classes CIM (Distributed Management Task Force) modelo CIM DMTF são as classes pai nas quais as classes WMI são criadas. Atualmente, o WMI dá suporte apenas aos esquemas de versão [do CIM 2.x.](https://dmtf.org/standards/cim/schemas)
+> As classes DMTF (Distributed Management Task Force) CIM (modelo CIM) são as classes pai nas quais as classes WMI são criadas. Atualmente, o WMI dá suporte apenas aos [esquemas de versão do CIM 2. x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -47,45 +47,45 @@ class CIM_ProcessThread : CIM_Component
 
 ## <a name="members"></a>Membros
 
-A **classe CIM \_ ProcessThread** tem estes tipos de membros:
+A classe **CIM \_ ProcessThread** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A **classe CIM \_ ProcessThread** tem essas propriedades.
+A classe **CIM \_ ProcessThread** tem essas propriedades.
 
 <dl> <dt>
 
-**Groupcomponent**
+**GroupComponent**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **Processo CIM \_**
+Tipo de dados **: \_ processo CIM**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**Max**](/windows/desktop/WmiSdk/standard-qualifiers) (1), [**Min**](/windows/desktop/WmiSdk/standard-qualifiers) (1), [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("GroupComponent")
+Qualificadores: [**Max**](/windows/desktop/WmiSdk/standard-qualifiers) (1), [**min**](/windows/desktop/WmiSdk/standard-qualifiers) (1), [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("GroupComponent")
 </dt> </dl>
 
-Um [**processo CIM \_**](cim-process.md) que descreve o processo.
+Um [**\_ processo CIM**](cim-process.md) que descreve o processo.
 
 </dd> <dt>
 
 **PartComponent**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **\_ Thread CIM**
+Tipo de dados **: \_ thread CIM**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**Substituir**](/windows/desktop/WmiSdk/standard-qualifiers) ("PartComponent"), [**Fraco**](/windows/desktop/WmiSdk/standard-qualifiers)
+Qualificadores: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("PartComponent"), [**fraca**](/windows/desktop/WmiSdk/standard-qualifiers)
 </dt> </dl>
 
-Um [**\_ Thread CIM**](cim-thread.md) que descreve o thread em execução no contexto do processo.
+Um [**\_ thread CIM**](cim-thread.md) que descreve o thread em execução no contexto do processo.
 
 </dd> </dl>
 
@@ -93,7 +93,7 @@ Um [**\_ Thread CIM**](cim-thread.md) que descreve o thread em execução no con
 
 O WMI não implementa essa classe.
 
-Esta documentação é derivada das descrições da classe CIM publicadas pelo DMTF. A Microsoft pode ter feito alterações para corrigir erros secundários, estar em conformidade com os padrões de documentação do SDK da Microsoft ou fornecer mais informações.
+Esta documentação é derivada das descrições da classe CIM publicadas pela DMTF. A Microsoft pode ter feito alterações para corrigir erros secundários, obedecer aos padrões de documentação do Microsoft SDK ou fornecer mais informações.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -103,8 +103,8 @@ Esta documentação é derivada das descrições da classe CIM publicadas pelo D
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| Namespace<br/>                | RAIZ \\ CIMV2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
+| Namespace<br/>                | Raiz \\ cimv2<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -113,7 +113,7 @@ Esta documentação é derivada das descrições da classe CIM publicadas pelo D
 
 <dl> <dt>
 
-[**Componente \_ CIM**](cim-component.md)
+[**\_Componente CIM**](cim-component.md)
 </dt> </dl>
 
  

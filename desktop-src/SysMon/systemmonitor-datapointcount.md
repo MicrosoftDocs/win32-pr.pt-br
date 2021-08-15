@@ -1,11 +1,11 @@
 ---
-title: Propriedade SystemMonitor.DataPointCount
+title: Propriedade SystemMonitor. DataPointCount
 description: Recupera ou define o número de pontos de dados exibidos em um grafo de linha.
 ms.assetid: bc1a86c2-635b-4e93-ac96-e7be4b1d375a
 keywords:
 - Propriedade DataPointCount SysMon
 - Propriedade DataPointCount SysMon, objeto SystemMonitor
-- Objeto SystemMonitor SysMon , propriedade DataPointCount
+- Objeto SystemMonitor SysMon, Propriedade DataPointCount
 topic_type:
 - apiref
 api_name:
@@ -23,7 +23,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118882617"
 ---
-# <a name="systemmonitordatapointcount-property"></a>Propriedade SystemMonitor.DataPointCount
+# <a name="systemmonitordatapointcount-property"></a>Propriedade SystemMonitor. DataPointCount
 
 Recupera ou define o número de pontos de dados exibidos em um grafo de linha.
 
@@ -38,11 +38,11 @@ Property DataPointCount As Long
 
 ## <a name="property-value"></a>Valor da propriedade
 
-Número de pontos de dados exibidos na exibição de um grafo de linha. O valor padrão é 100 pontos de dados. O intervalo válido de valores é de 2 a 1.000.
+Número de pontos de dados exibidos na exibição de um gráfico de linhas. O valor padrão é 100 pontos de dados. O intervalo válido de valores é de 2 a 1.000.
 
 ## <a name="remarks"></a>Comentários
 
-Essa propriedade será usada somente se [**SystemMonitor.DataSourceType**](systemmonitor-datasourcetype.md) **for sysmonCurrentActivity**.
+Essa propriedade será usada somente se [**SystemMonitor. DataSourceType**](systemmonitor-datasourcetype.md) for **sysmonCurrentActivity**.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,9 +50,9 @@ Essa propriedade será usada somente se [**SystemMonitor.DataSourceType**](syste
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                  |
-| DLL<br/>                      | <dl> <dt>Sysmon.ocx</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                  |
+| DLL<br/>                      | <dl> <dt>Sysmon. ocx</dt> </dl> |
 
 
 

@@ -3,7 +3,7 @@ title: Propriedade de contagem IWMPStringCollection
 description: A propriedade count obtém o número de itens na coleção de cadeias de caracteres.
 ms.assetid: 0ba2d158-fa54-46a8-9124-8a412e71bd09
 keywords:
-- count property Windows Media Player
+- propriedade count Windows Media Player
 - count property Windows Media Player interface , IWMPStringCollection
 - Interface IWMPStringCollection Windows Media Player , propriedade count
 topic_type:

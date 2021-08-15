@@ -3,7 +3,7 @@ title: GetSelectionEnd de edição
 description: O método getSelectionEnd recupera a posição final do texto selecionado no controle admy.
 ms.assetid: 82a445da-3c50-41b7-8ac8-da6c860056ba
 keywords:
-- Admy. getSelectionEnd Windows Media Player
+- GetSelectionEnd Windows Media Player de edição
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: f27c2974360e7e77becfa67a27b4e96b529ad1e5
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8dff56bda802286ed76ba3b448478dfa57d005c13baf229612e190bbf163b25a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105811113"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118838840"
 ---
 # <a name="editboxgetselectionend"></a>GetSelectionEnd de edição
 

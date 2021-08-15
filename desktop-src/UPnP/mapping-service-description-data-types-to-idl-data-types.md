@@ -1,5 +1,5 @@
 ---
-title: Mapeando tipos de dados de descrição de serviço para tipos de dados IDL
+title: Mapeando tipos de dados de descrição do serviço para tipos de dados IDL
 description: A tabela a seguir mostra o mapeamento de tipos de dados XML especificados em uma descrição de serviço para os tipos de dados correspondentes usados em IDL.
 ms.assetid: eeb86177-8c3b-47f1-bbe1-f9aabd2dde76
 ms.topic: article
@@ -11,7 +11,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118347626"
 ---
-# <a name="mapping-service-description-data-types-to-idl-data-types"></a>Mapeando tipos de dados de descrição de serviço para tipos de dados IDL
+# <a name="mapping-service-description-data-types-to-idl-data-types"></a>Mapeando tipos de dados de descrição do serviço para tipos de dados IDL
 
 A tabela a seguir mostra o mapeamento de tipos de dados XML especificados em uma descrição de serviço para os tipos de dados correspondentes usados em IDL.
 
@@ -21,8 +21,8 @@ A tabela a seguir mostra o mapeamento de tipos de dados XML especificados em uma
 |---------------|----------------|
 | bin    | SAFEARRAY      |
 | bin.hex       | SAFEARRAY      |
-| booleano       | BOOL de variante \_  |
-| char          | WCHAR \_ t       |
+| booleano       | VARIANT \_ BOOL  |
+| char          | wchar \_ t       |
 | date          | DATE           |
 | dateTime      | DATE           |
 | dateTime.tz   | DATE           |

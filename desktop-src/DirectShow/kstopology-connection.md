@@ -1,7 +1,7 @@
 ---
-description: Este tópico aplica-se ao Windows XP Service Pack 2 ou posterior. A estrutura de conexão do KSTOPOLOGY \_ descreve uma conexão de nó em um filtro de streaming de kernel (KS). Um nó pode ser conectado a outro nó dentro do filtro ou a um PIN no filtro.
+description: Este tópico se aplica ao Windows XP Service Pack 2 ou posterior. A estrutura KSTOPOLOGY \_ CONNECTION descreve uma conexão de nó dentro de um filtro de streaming de kernel (KS). Um nó pode ser conectado a outro nó dentro do filtro ou a um pino no filtro.
 ms.assetid: 8fca47b7-4c52-46db-809c-77a0e3414276
-title: Estrutura de KSTOPOLOGY_CONNECTION (KS. h)
+title: KSTOPOLOGY_CONNECTION estrutura (Ks.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - Ks.h
-ms.openlocfilehash: f523d378a54311845781c144b33e131d5875e41e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 80a7b6f046edd1cd7f602487a11d6a79c375276814f9374f4142d148699bb8b3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105767672"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118397240"
 ---
-# <a name="kstopology_connection-structure"></a>Estrutura de conexão do KSTOPOLOGY \_
+# <a name="kstopology_connection-structure"></a>Estrutura KSTOPOLOGY \_ CONNECTION
 
-Este tópico aplica-se ao Windows XP Service Pack 2 ou posterior.
+Este tópico se aplica ao Windows XP Service Pack 2 ou posterior.
 
-A estrutura de **\_ conexão do KSTOPOLOGY** descreve uma conexão de nó em um filtro de streaming de kernel (KS). Um nó pode ser conectado a outro nó dentro do filtro ou a um PIN no filtro.
+A **estrutura KSTOPOLOGY \_ CONNECTION** descreve uma conexão de nó dentro de um filtro de streaming de kernel (KS). Um nó pode ser conectado a outro nó dentro do filtro ou a um pino no filtro.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -47,28 +47,28 @@ typedef struct {
 **FromNode**
 </dt> <dd>
 
-Índice do nó upstream na conexão. Se a conexão upstream for um PIN, em vez de um nó, o valor será KSFILTER \_ nó.
+Índice do nó upstream na conexão. Se a conexão upstream for um pin, em vez de um nó, o valor será KSFILTER \_ NODE.
 
 </dd> <dt>
 
 **FromNodePin**
 </dt> <dd>
 
-Se o valor do campo **FromNode** for KSFILTER \_ nó, esse campo especificará o índice do pino upstream. Caso contrário, esse campo será ignorado.
+Se o valor do **campo FromNode** for KSFILTER NODE, esse campo especificará o \_ índice do pino upstream. Caso contrário, esse campo será ignorado.
 
 </dd> <dt>
 
 **ToNode**
 </dt> <dd>
 
-Índice do nó downstream na conexão. Se a conexão downstream for um PIN, em vez de um nó, o valor será KSFILTER \_ nó.
+Índice do nó downstream na conexão. Se a conexão downstream for um pin, em vez de um nó, o valor será KSFILTER \_ NODE.
 
 </dd> <dt>
 
 **ToNodePin**
 </dt> <dd>
 
-Se o valor do campo **tonode** for KSFILTER \_ node, esse campo especificará o índice do PIN do downstream. Caso contrário, esse campo será ignorado.
+Se o valor do campo **ToNode** for KSFILTER NODE, esse campo especificará o \_ índice do pino downstream. Caso contrário, esse campo será ignorado.
 
 </dd> </dl>
 
@@ -78,7 +78,7 @@ Se o valor do campo **tonode** for KSFILTER \_ node, esse campo especificará o 
 
 | Requisito | Valor |
 |-------------------|---------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>KS. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>Ks.h</dt> </dl> |
 
 
 
@@ -86,10 +86,10 @@ Se o valor do campo **tonode** for KSFILTER \_ node, esse campo especificará o 
 
 <dl> <dt>
 
-[Estruturas do DirectShow](directshow-structures.md)
+[DirectShow Estruturas](directshow-structures.md)
 </dt> <dt>
 
-[**IKsTopologyInfo:: get \_ ConnectionInfo**](/previous-versions/windows/desktop/api/Vidcap/nf-vidcap-ikstopologyinfo-get_connectioninfo)
+[**IKsTopologyInfo::get \_ ConnectionInfo**](/previous-versions/windows/desktop/api/Vidcap/nf-vidcap-ikstopologyinfo-get_connectioninfo)
 </dt> </dl>
 
  

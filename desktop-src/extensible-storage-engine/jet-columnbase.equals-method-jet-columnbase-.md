@@ -31,8 +31,8 @@ ms.locfileid: "118487184"
 
 Retorna um valor que indica se essa instância é igual a outra instância.
 
-**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -58,27 +58,27 @@ public bool Equals(
 #### <a name="parameters"></a>Parâmetros
 
   - outros  
-    Tipo: [Microsoft.Isam.Esent.Interop.JET_COLUMNBASE](./jet-columnbase-class.md)  
+    Tipo: [Microsoft.ISAM.ESENT.Interop.JET_COLUMNBASE](./jet-columnbase-class.md)  
     
-    Uma instância a ser comparada com essa instância.
+    Uma instância para comparar com esta instância.
 
 #### <a name="return-value"></a>Valor retornado
 
-Tipo: [System.Boolean](/dotnet/api/system.boolean)  
-True se as duas instâncias são iguais.  
+Tipo: [System. Boolean](/dotnet/api/system.boolean)  
+True se as duas instâncias forem iguais.  
 
 #### <a name="implements"></a>Implementações
 
-[IEquatable. \<T\> Equals(T)](/dotnet/api/system.iequatable-1.equals#System_IEquatable_1_Equals__0_)  
+[IEquatable \<T\> . Equals (T)](/dotnet/api/system.iequatable-1.equals#System_IEquatable_1_Equals__0_)  
 
 ## <a name="see-also"></a>Confira também
 
 #### <a name="reference"></a>Referência
 
-[JET_COLUMNBASE classe](./jet-columnbase-class.md)
+[Classe JET_COLUMNBASE](./jet-columnbase-class.md)
 
-[JET_COLUMNBASE membros](./jet-columnbase-members.md)
+[Membros do JET_COLUMNBASE](./jet-columnbase-members.md)
 
-[Sobrecarga igual a](./jet-columnbase.equals-method.md)
+[Sobrecarga de Equals](./jet-columnbase.equals-method.md)
 
-[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)

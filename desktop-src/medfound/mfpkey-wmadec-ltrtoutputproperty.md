@@ -1,39 +1,39 @@
 ---
 description: Especifica se o decodificador deve executar Lt-Rt dobra para baixo.
 ms.assetid: ce1dc4ea-4326-40ab-bb30-ff1a34f06d79
-title: Propriedade MFPKEY_WMADEC_LTRTOUTPUT (Wmcodecdsp. h)
+title: MFPKEY_WMADEC_LTRTOUTPUT propriedade (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d4f4a83d2529ce3b37282be35924b48288d4df45
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d76d086fd0f57262d249784fcabc5a98e8a18668cf0697618f3fbbe5528a2cc1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104091067"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119713806"
 ---
-# <a name="mfpkey_wmadec_ltrtoutput-property"></a>\_Propriedade MFPKEY WMADEC \_ LTRTOUTPUT
+# <a name="mfpkey_wmadec_ltrtoutput-property"></a>Propriedade MFPKEY \_ WALTC \_ LTRTOUTPUT
 
 Especifica se o decodificador deve executar Lt-Rt dobra para baixo.
 
 ## <a name="constant-for-ipropertybag"></a>Constante para IPropertyBag
 
-Disponível apenas usando [**IPropertyStore**](/windows/win32/api/propsys/nn-propsys-ipropertystore).
+Disponível somente usando [**IPropertyStore.**](/windows/win32/api/propsys/nn-propsys-ipropertystore)
 
 ## <a name="data-type"></a>Tipo de Dados
 
-**BOOL do VT \_**
+**BOOL da VT \_**
 
 ## <a name="default-value"></a>Valor padrão
 
-**VARIANTE \_ falso**
+**VARIANT \_ FALSE**
 
 ## <a name="remarks"></a>Comentários
 
-Se essa propriedade tiver um valor de variante \_ false e a saída for estéreo, o decodificador de áudio usará a dobra de canal simples. Se essa propriedade tiver um valor de VARIANT \_ true, o decodificador de áudio executará Lt-Rt (em matriz) com dobra para estéreo e qualquer decodificador Dolby Surround poderá ser usado para decodificar o surround em matriz. Por exemplo, o decodificador de áudio poderia executar Lt-Rt dobrar no conteúdo 5,1 ou 7,1.
+Se essa propriedade tiver um valor de VARIANT FALSE e a saída for estéreo, o \_ decodificador de áudio usará uma dobra de canal simples para baixo. Se essa propriedade tiver um valor de VARIANT TRUE, o Lt-Rt decodificador de áudio executará uma dobra (matrizizada) para baixo em estéreo e, em seguida, qualquer decodificador Surround Dolby poderá ser usado para decodificar o surround matriz. \_ Por exemplo, o decodificador de áudio pode executar Lt-Rt dobra para baixo no conteúdo 5.1 ou 7.1.
 
-Essa propriedade tem suporte apenas quando o decodificador está agindo como um DMO (objeto de mídia do DirectX). Não há suporte para nenhuma dobra de nenhum tipo quando o decodificador está agindo como uma Media Foundation transformação (MFT).
+Essa propriedade só tem suporte quando o decodificador está atuando como um objeto de mídia directX (DMO). Nenhuma dobra para baixo de qualquer tipo é suportada quando o decodificador está atuando como uma transformação Media Foundation (MFT).
 
-No Windows Vista, se você obtiver uma interface **IPropertyStore** em um decodificador de áudio, o decodificador atuará como um MFT. Consequentemente, essa propriedade não pode ser usada no Windows Vista. Para obter informações sobre quando um decodificador atua como um DMO ou uma MFT, consulte as páginas de referência do codec individual em [objetos de codec](codecobjects.md).
+No Windows Vista, se você obter uma interface **IPropertyStore** em um decodificador de áudio, o decodificador atuará como um MFT. Consequentemente, essa propriedade não pode ser usada no Windows Vista. Para obter informações sobre quando um decodificador atua como um DMO ou um MFT, consulte as páginas de referência de codec individuais em [Objetos Codec](codecobjects.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -41,9 +41,9 @@ No Windows Vista, se você obtiver uma interface **IPropertyStore** em um decodi
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                                             |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                    |
-| parâmetro<br/>                   | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho XP\]<br/>                                             |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                    |
+| Cabeçalho<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 
@@ -51,7 +51,7 @@ No Windows Vista, se você obtiver uma interface **IPropertyStore** em um decodi
 
 <dl> <dt>
 
-[Propriedades de Media Foundation](media-foundation-properties.md)
+[Media Foundation propriedades](media-foundation-properties.md)
 </dt> </dl>
 
  

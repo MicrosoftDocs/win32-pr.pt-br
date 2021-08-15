@@ -4,7 +4,7 @@ description: O redirecionador do Registro isola aplicativos de 32 bits e 64 bits
 ms.assetid: b3989f79-0439-485a-96c1-4f2227d48653
 keywords:
 - Guia de programação Windows de 64 bits Windows de 64 bits, redirecionador de registro
-- Programação do Windows de 64 bits do Windows registro
+- Programação de Windows de 64 bits do Windows registro
 - programação de Windows redirecionamento de 64 bits
 - Wow64 64 bits Windows programação, redirecionador de registro
 ms.topic: article
@@ -18,7 +18,7 @@ ms.locfileid: "118561502"
 ---
 # <a name="registry-redirector"></a>Redirecionador de Registro
 
-O redirecionador do Registro isola aplicativos de 32 bits e 64 bits fornecendo exibições lógicas separadas de determinadas partes do Registro no WOW64. O redirecionador do Registro intercepta chamadas de registro de 32 bits e 64 bits para suas respectivas exibições lógicas do Registro e as mapeia para o local do Registro físico correspondente. O processo de redirecionamento é transparente para o aplicativo. Portanto, um aplicativo de 32 bits pode acessar dados do Registro como se estivesse em execução em um Windows de 32 bits, mesmo se os dados fossem armazenados em um local diferente em um Windows de 64 bits.
+O redirecionador do Registro isola aplicativos de 32 bits e 64 bits fornecendo exibições lógicas separadas de determinadas partes do Registro no WOW64. O redirecionador do Registro intercepta chamadas de registro de 32 bits e 64 bits para suas respectivas exibições lógicas do Registro e as mapeia para o local do Registro físico correspondente. O processo de redirecionamento é transparente para o aplicativo. Portanto, um aplicativo de 32 bits pode acessar dados do Registro como se estivesse em execução em um Windows de 32 bits, mesmo se os dados fossem armazenados em um local diferente no Windows de 64 Windows.
 
 **Windows 10 no ARM:** Além da exibição lógica de 32 bits para aplicativos x86, o Windows 10 no ARM inclui uma exibição lógica separada para aplicativos ARM de 32 bits.
 
@@ -31,7 +31,7 @@ O cenário a seguir ilustra o uso dessas exibições lógicas:
 -   Um aplicativo x86 de 32 bits verifica a existência da seguinte chave do Registro: **HKEY \_ LOCAL MACHINE Software \_ \\ \\ Hello**. Se a chave não existir, o aplicativo a criará com um valor padrão de "Olá, mundo x86 de 32 bits"; caso contrário, ele lê e exibe o valor.
 -   O mesmo aplicativo é modificado para gravar "Olá, mundo de 64 bits" em vez de "Olá, mundo x86 de 32 bits" e recompilado como um aplicativo x64 ou ARM64 de 64 bits.
 -   **Windows 10 no ARM:** O mesmo aplicativo é modificado para gravar "Olá, mundo arm de 32 bits" e recompilado como um aplicativo ARM de 32 bits.
--   Quando o aplicativo x86 de 32 bits é executado em um Windows de 64 bits, ele exibe "Olá, mundo x86 de 32 bits". Quando o aplicativo de 64 bits é executado, ele exibe "Olá, mundo de 64 bits". **Windows 10 no ARM:** Quando o aplicativo ARM de 32 bits é executado no Windows ARM de 64 bits, ele exibe "Olá, mundo arm de 32 bits". Todos os aplicativos chamam as mesmas funções do Registro com o mesmo handle predefinido e o mesmo nome de chave; A diferença é que cada aplicativo opera em sua exibição lógica do Registro e cada exibição é mapeada para um local físico separado do Registro, o que mantém todas as versões da cadeia de caracteres intactas.
+-   Quando o aplicativo x86 de 32 bits é executado em um Windows de 64 bits, ele exibe "Olá, mundo x86 de 32 bits". Quando o aplicativo de 64 bits é executado, ele exibe "Olá, mundo de 64 bits". **Windows 10 no ARM:** Quando o aplicativo ARM de 32 bits é executado no arm64 de 64 bits Windows, ele exibe "Olá, mundo arm de 32 bits". Todos os aplicativos chamam as mesmas funções do Registro com o mesmo handle predefinido e o mesmo nome de chave; A diferença é que cada aplicativo opera em sua exibição lógica do Registro e cada exibição é mapeada para um local físico separado do Registro, o que mantém todas as versões da cadeia de caracteres intactas.
 
 As chaves redirecionadas são mapeadas para locais físicos **em Wow6432Node.** Por exemplo, **HKEY \_ LOCAL MACHINE \_ \\ Software** é redirecionado para **HKEY LOCAL MACHINE Software \_ \_ \\ \\ Wow6432Node**. No entanto, o local físico das chaves redirecionadas deve ser considerado reservado pelo sistema. Os aplicativos não devem acessar diretamente a localização física de uma chave, pois esse local pode mudar. Para obter mais informações, [consulte Acessando uma exibição de registro alternativa.](accessing-an-alternate-registry-view.md)
 

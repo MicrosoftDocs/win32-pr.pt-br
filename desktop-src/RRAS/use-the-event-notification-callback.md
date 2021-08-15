@@ -4,12 +4,12 @@ description: O procedimento a seguir descreve as etapas que o cliente deve usar 
 ms.assetid: e079c585-6457-4c2c-82bd-e95d233c4aa6
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 85a650a762600c254979aaea974379b4021d0d73
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: a524c162aed66fec2112c3d0aeb61743b94c2eee131a10f935dba876a480baae
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104005740"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120127816"
 ---
 # <a name="use-the-event-notification-callback"></a>Usar o retorno de chamada de notificação de evento
 
@@ -217,9 +217,9 @@ EntityEventCallback (
 
 
 
- 
+ 
 
- 
+ 
 
 
 

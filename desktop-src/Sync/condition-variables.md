@@ -4,12 +4,12 @@ ms.assetid: fef9bab0-cd69-4812-869a-b43a10772d86
 title: Variáveis de condição
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 711fad7d80c1c5e06fc6e496198cd298b190daba
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ed05d7ee98b4f5c5a65e633f7d1647b6c624840f9740efb639959c1500bec591
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105754484"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118886355"
 ---
 # <a name="condition-variables"></a>Variáveis de condição
 

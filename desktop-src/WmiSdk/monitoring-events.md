@@ -189,16 +189,16 @@ O procedimento a seguir descreve como criar um consumidor de eventos permanente.
 
 3.  Crie uma instância da classe que representa o consumidor de evento permanente que você deseja usar.
 
-    As classes de consumidor de eventos são derivadas da [**\_ \_ classe EventConsumer**](--eventconsumer.md). De acordo com as propriedades que a instância do consumidor do evento requer.
+    As classes de consumidor de eventos são derivadas da classe [**\_ \_ EventConsumer**](--eventconsumer.md). Defina as propriedades que a instância de consumidor de evento requer.
 
-4.  Registre o consumidor com COM usando o **utilitário regsvr32.**
-5.  Crie uma instância da classe de filtro de evento [**\_ \_ EventFilter**](--eventfilter.md).
+4.  Registre o consumidor com o com usando o utilitário **regsvr32** .
+5.  Crie uma instância da classe de filtro de eventos [**\_ \_ EventFilter**](--eventfilter.md).
 
-    De definir os campos necessários para a instância de filtro de evento. Os campos necessários para [**\_ \_ EventFilter**](--eventfilter.md) são **Name**, **QueryLanguage** e **Query**. A **propriedade Name** pode ser qualquer nome exclusivo para uma instância dessa classe. A **propriedade QueryLanguage** é sempre definida como "WQL". A **propriedade Consulta é** uma cadeia de caracteres que contém uma consulta de evento. Um evento é gerado quando a consulta de um consumidor de evento permanente falha. A origem do evento é WinMgmt, a ID do evento é 10 e o tipo de evento é Error.
+    Defina os campos obrigatórios para a instância de filtro de eventos. Os campos obrigatórios para [**\_ \_ EventFilter**](--eventfilter.md) são **Name**, **QueryLanguage** e **Query**. A propriedade **Name** pode ser qualquer nome exclusivo para uma instância dessa classe. A propriedade **QueryLanguage** é sempre definida como "WQL". A propriedade de **consulta** é uma cadeia de caracteres que contém uma consulta de evento. Um evento é gerado quando uma consulta do consumidor de evento permanente falha. A origem do evento é WinMgmt, a ID do evento é 10 e o tipo de evento é Error.
 
-6.  Crie uma instância da classe [**\_ \_ FilterToConsumerBinding**](--filtertoconsumerbinding.md) para associar um consumidor de eventos lógicos a um filtro de evento.
+6.  Crie uma instância da classe [**\_ \_ FilterToConsumerBinding**](--filtertoconsumerbinding.md) para associar um consumidor de evento lógico a um filtro de eventos.
 
-    O WMI usa uma associação para encontrar o consumidor de eventos associado ao evento que corresponde aos critérios especificados no filtro de evento. O WMI usa o provedor de consumidor de eventos para encontrar o aplicativo de consumidor de eventos permanente para iniciar.
+    O WMI usa uma associação para localizar o consumidor de eventos associado ao evento que corresponde aos critérios especificados no filtro de eventos. O WMI usa o provedor de consumidor de eventos para encontrar o aplicativo de consumidor de evento permanente a ser iniciado.
 
  
 

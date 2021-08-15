@@ -3,7 +3,7 @@ title: comando Restore
 description: O comando Restore copia uma imagem ainda de um arquivo para o buffer de quadros. Esse é o inverso do comando Capture. Dispositivos de vídeo digital reconhecem este comando.
 ms.assetid: e84a478a-3e0f-4767-94d7-eb3c79c31b8b
 keywords:
-- comando restaurar multimídia do Windows
+- comando restore Windows multimídia
 topic_type:
 - apiref
 api_name:
@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e2d7f0f236b26e3e73807b32485442d597e93d40
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 55e82fdec2480cfe2fc1b41901872aef7e41ee468d1adc3924df17a27e40031e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918013"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119689186"
 ---
 # <a name="restore-command"></a>comando Restore
 
@@ -77,7 +77,7 @@ Retornará zero se for bem-sucedido ou um erro de outra forma.
 
 ## <a name="remarks"></a>Comentários
 
-Os dispositivos podem reconhecer uma variedade de formatos de imagem; um bitmap independente de dispositivo do Windows é sempre reconhecido.
+Os dispositivos podem reconhecer uma variedade de formatos de imagem; um bitmap independente de dispositivo Windows é sempre reconhecido.
 
 ## <a name="requirements"></a>Requisitos
 

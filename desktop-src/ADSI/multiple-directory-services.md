@@ -7,12 +7,12 @@ keywords:
 - ADSI de vários serviços de diretório
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ccc2e174fc1b07564f1cca6c12093a289a0c865a
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 852888a6d3c0d8be9dbb8309efc57f4d29a60d83a21463a13c435e840fb96acc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104291792"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117839436"
 ---
 # <a name="multiple-directory-services"></a>Vários serviços de diretório
 
@@ -22,9 +22,9 @@ A maioria das empresas já tem muitos diretórios diferentes em vigor. Por exemp
 
 Esses problemas são abordados na ADSI, pois há um conjunto único, consistente e aberto de interfaces que podem ser usadas para gerenciar e usar qualquer serviço de diretório que tenha um provedor ADSI.
 
- 
+ 
 
- 
+ 
 
 
 

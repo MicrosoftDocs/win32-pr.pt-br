@@ -1,7 +1,7 @@
 ---
-description: Converte uma cadeia de caracteres hexadecimal em uma cadeia de caracteres de pacote binário.
+description: Converte uma cadeia de caracteres hexadecimal em uma cadeia de caracteres empacotada binária.
 ms.assetid: 1f5fabf3-0729-44f8-bda7-a10b98c6e933
-title: Método Utilities. HexToBinary
+title: Método Utilities.HexToBinary
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - COM
 api_location:
 - Capicom.dll
-ms.openlocfilehash: 79276f206cebc0490bff0ba9d44810bed83bce70
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c44290a38d041acf17dfe1a9e3e274674d9d5c15091cfa5767e6974e72bb2b71
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105760379"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118896382"
 ---
-# <a name="utilitieshextobinary-method"></a>Método Utilities. HexToBinary
+# <a name="utilitieshextobinary-method"></a>Método Utilities.HexToBinary
 
-\[O método **HexToBinary** está disponível para uso nos sistemas operacionais especificados na seção requisitos.\]
+\[O **método HexToBinary** está disponível para uso nos sistemas operacionais especificados na seção Requisitos.\]
 
-O método **HexToBinary** converte uma cadeia de caracteres hexadecimal em uma cadeia de caracteres de pacote binário.
+O **método HexToBinary** converte uma cadeia de caracteres hexadecimal em uma cadeia de caracteres empacotada binária.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -41,16 +41,16 @@ Utilities.HexToBinary( _
 
 <dl> <dt>
 
-*HexString* \[ no\]
+*HexString* \[ Em\]
 </dt> <dd>
 
-A cadeia de caracteres hexadecimal a ser convertida em uma cadeia de caracteres de pacote binário.
+A cadeia de caracteres hexadecimal a ser convertida em uma cadeia de caracteres empacotada binária.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Uma cadeia de caracteres de pacote binário equivalente à cadeia de caracteres hexadecimal especificada.
+Uma cadeia de caracteres empacotada binária que é equivalente à cadeia de caracteres hexadecimal especificada.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -58,7 +58,7 @@ Uma cadeia de caracteres de pacote binário equivalente à cadeia de caracteres 
 
 | Requisito | Valor |
 |----------------------------|----------------------------------------------------------------------------------------|
-| Redistribuível<br/> | CAPICOM 2,0 ou posterior no Windows Server 2003 e no Windows XP<br/>                  |
+| Redistribuível<br/> | CAPICOM 2.0 ou posterior no Windows Server 2003 e Windows XP<br/>                  |
 | DLL<br/>             | <dl> <dt>Capicom.dll</dt> </dl> |
 
 

@@ -1,11 +1,11 @@
 ---
-title: Atributo ms-DS-KeyVersionNumber
-description: O número de versão kerberos da chave atual para essa conta. Esse é um atributo construído.
+title: atributo ms-DS-keyversionnumber
+description: O número de versão do Kerberos da chave atual para esta conta. Este é um atributo construído.
 ms.assetid: 21bd40d9-df90-4f46-90e7-582e86eef760
 ms.tgt_platform: multiple
 keywords:
-- Atributo AD MS-DS-KeyVersionNumber
-- Atributo AD MSDS-KeyVersionNumber
+- Esquema de AD do atributo ms-DS-keyversionnumber
+- Esquema de AD do atributo msDS-keyversionnumber
 topic_type:
 - apiref
 api_name:
@@ -21,21 +21,21 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118425842"
 ---
-# <a name="ms-ds-keyversionnumber-attribute"></a>Atributo ms-DS-KeyVersionNumber
+# <a name="ms-ds-keyversionnumber-attribute"></a>atributo ms-DS-keyversionnumber
 
-O número de versão kerberos da chave atual para essa conta. Esse é um atributo construído.
+O número de versão do Kerberos da chave atual para esta conta. Este é um atributo construído.
 
 
 
 | Entrada | Valor |
 |-------------------|--------------------------------------|
-| CN                | ms-DS-KeyVersionNumber               |
-| Ldap-Display-Name | msDS-KeyVersionNumber                |
+| CN                | ms-DS-keyversionnumber               |
+| LDAP-Display-Name | msDS-keyversionnumber                |
 | Tamanho              | \-                                   |
 | Privilégio de atualização  | \-                                   |
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.1782              |
-| System-Id-Guid    | c523e9c0-33b5-4ac8-8923-b57b927f42f6 |
+| System-ID-GUID    | c523e9c0-33b5-4ac8-8923-b57b927f42f6 |
 | Syntax            | [**Enumeração**](s-enumeration.md) |
 
 
@@ -57,15 +57,15 @@ O número de versão kerberos da chave atual para essa conta. Esse é um atribut
 | ID do link                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Verdadeiro                                                         |
-| Tem valor único       | Verdadeiro                                                         |
+| É de valor único       | Verdadeiro                                                         |
 | É indexado             | Falso                                                        |
-| No Catálogo Global      | Falso                                                        |
-| Descritor de segurança NT | O:BAG:BAD:S:                                                 |
+| No catálogo global      | Falso                                                        |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
 | System-Flags           | 0x00000014                                                   |
-| Classes usadas em        | [**Entidade de segurança**](c-securityprincipal.md)<br/> |
+| Classes usadas em        | [**Segurança-principal**](c-securityprincipal.md)<br/> |
 
 
 
@@ -78,15 +78,15 @@ O número de versão kerberos da chave atual para essa conta. Esse é um atribut
 | ID do link                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Verdadeiro                                                         |
-| Tem valor único       | Verdadeiro                                                         |
+| É de valor único       | Verdadeiro                                                         |
 | É indexado             | Falso                                                        |
-| No Catálogo Global      | Falso                                                        |
-| Descritor de segurança NT | O:BAG:BAD:S:                                                 |
+| No catálogo global      | Falso                                                        |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
 | System-Flags           | 0x00000014                                                   |
-| Classes usadas em        | [**Entidade de segurança**](c-securityprincipal.md)<br/> |
+| Classes usadas em        | [**Segurança-principal**](c-securityprincipal.md)<br/> |
 
 
 
@@ -99,15 +99,15 @@ O número de versão kerberos da chave atual para essa conta. Esse é um atribut
 | ID do link                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Verdadeiro                                                         |
-| Tem valor único       | Verdadeiro                                                         |
+| É de valor único       | Verdadeiro                                                         |
 | É indexado             | Falso                                                        |
-| No Catálogo Global      | Falso                                                        |
-| Descritor de segurança NT | O:BAG:BAD:S:                                                 |
+| No catálogo global      | Falso                                                        |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
 | System-Flags           | 0x00000014                                                   |
-| Classes usadas em        | [**Entidade de segurança**](c-securityprincipal.md)<br/> |
+| Classes usadas em        | [**Segurança-principal**](c-securityprincipal.md)<br/> |
 
 
 

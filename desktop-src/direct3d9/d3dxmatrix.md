@@ -1,7 +1,7 @@
 ---
-description: Estrutura D3DXMATRIX (D3dx9math.h) – uma matriz 4x4 que contém métodos e sobrecargas de operador.
+description: Estrutura D3DXMATRIX (D3dx9math. h) – uma matriz 4x4 que contém métodos e sobrecargas de operador.
 ms.assetid: 0911088b-50cf-4c4a-996e-351386fc359b
-title: Estrutura D3DXMATRIX (D3dx9math.h)
+title: Estrutura D3DXMATRIX (D3dx9math. h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -20,7 +20,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118525327"
 ---
-# <a name="d3dxmatrix-structure-d3dx9mathh"></a>Estrutura D3DXMATRIX (D3dx9math.h)
+# <a name="d3dxmatrix-structure-d3dx9mathh"></a>Estrutura D3DXMATRIX (D3dx9math. h)
 
 Uma matriz 4x4 que contém métodos e sobrecargas de operador.
 
@@ -39,26 +39,26 @@ typedef struct D3DXMATRIX {
 
 <dl> <dt>
 
-**\_Ij**
+**\_Ligatura**
 </dt> <dd>
 
-Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
+Tipo: **[ **float**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-O componente (i, j) da matriz, em que i é o número da linha e j é o número da coluna. Por exemplo, \_ 34 significa o mesmo que \[ um , o componente na terceira linha e na quarta \] coluna.
+O componente (i, j) da matriz, onde é o número da linha e j é o número da coluna. Por exemplo, \_ 34 significa o mesmo que \[ um ₃ ₄ \] , o componente na terceira linha e a quarta coluna.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-Os programadores C não podem usar a estrutura D3DXMATRIX, eles devem usar a [**estrutura D3DMATRIX.**](d3dmatrix.md) Os programadores C++ podem aproveitar construtores sobrecarregados e operadores de atribuição, unários e binários (incluindo igualdade).
+Os programadores C não podem usar a estrutura D3DXMATRIX, eles devem usar a estrutura [**D3DMATRIX**](d3dmatrix.md) . Os programadores do C++ podem aproveitar os construtores sobrecarregados e os operadores de atribuição, unário e binário (incluindo igualdade).
 
-No D3DX, o \_ elemento 34 de uma matriz de projeção não pode ser um número negativo. Se o aplicativo precisar usar um valor negativo nesse local, ele deverá dimensionar toda a matriz de projeção em -1.
+No D3DX, o \_ elemento 34 de uma matriz de projeção não pode ser um número negativo. Se seu aplicativo precisar usar um valor negativo nesse local, ele deverá dimensionar toda a matriz de projeção em-1 em vez disso.
 
 ### <a name="d3dxmatrix-extensions"></a>Extensões D3DXMATRIX
 
-**D3DXMATRIX** tem as seguintes extensões C++.
+O **D3DXMATRIX** tem as seguintes extensões C++.
 
 
 ```
@@ -122,7 +122,7 @@ typedef struct _D3DMATRIX D3DXMATRIX, *LPD3DXMATRIX;
 
 | Requisito | Valor |
 |-------------------|----------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>D3dx9math.h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>D3dx9math. h</dt> </dl> |
 
 
 

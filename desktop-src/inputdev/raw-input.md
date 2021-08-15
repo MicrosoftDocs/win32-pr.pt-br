@@ -3,19 +3,19 @@ title: Entrada bruta
 description: Esta seção descreve como o sistema fornece entrada bruta para seu aplicativo e como um aplicativo recebe e processa essa entrada.
 ms.assetid: vs|winui|~\winui\windowsuserinterface\userinput\rawinput.htm
 keywords:
-- Interface do usuário do Windows, entrada do usuário
-- Interface do usuário do Windows, entrada bruta
+- Windows Interface do usuário, entrada do usuário
+- Windows Interface do usuário, entrada bruta
 - entrada do usuário, entrada bruta
 - capturando entrada do usuário, entrada bruta
 - entrada bruta
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e88de70dd2b635cf7dda90f23686b9916c99be4f
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: e1e26d67f2b014ce22c2d01cb4738cca4e041c59e417a216f0d75ffef6e6e4b0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104365942"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118482752"
 ---
 # <a name="raw-input"></a>Entrada bruta
 

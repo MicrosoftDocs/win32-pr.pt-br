@@ -1,7 +1,7 @@
 ---
-description: O método \_ put Filter especifica um filtro de origem para o detector de mídia usar.
+description: O \_ método de filtro Put especifica um filtro de origem para o detector de mídia a ser usado.
 ms.assetid: 59382cb0-c472-48b8-9cc5-52f9dbc61a07
-title: Método IMediaDet::p ut_Filter (Qedit.h)
+title: 'IMediaDet: método de ut_Filter de:p (QEdit. h)'
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -21,17 +21,17 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118398113"
 ---
-# <a name="imediadetput_filter-method"></a>Método de filtro IMediaDet::p ut \_
+# <a name="imediadetput_filter-method"></a>Método de filtro IMediaDet::p UT \_
 
 > [!Note]  
 > \[Preterido. Essa API pode ser removida de versões futuras do Windows.\]
 
  
 
-O `put_Filter` método especifica um filtro de origem para o detector de mídia usar.
+O `put_Filter` método especifica um filtro de origem para o detector de mídia a ser usado.
 
 > [!IMPORTANT]
-> Não adicione o filtro de origem ao seu próprio grafo de filtro ou use um filtro que já está em um grafo de filtro. O objeto do detector de mídia cria automaticamente um grafo de filtro interno e colocar o filtro em outro grafo pode causar resultados inesperados.
+> Não adicione o filtro de origem ao seu próprio grafo de filtro ou use um filtro que já esteja em um grafo de filtro. O objeto do detector de mídia cria automaticamente um gráfico de filtro interno e colocar o filtro em outro grafo pode causar resultados inesperados.
 
  
 
@@ -50,7 +50,7 @@ HRESULT put_Filter(
 
 <dl> <dt>
 
-*newVal* \[ Em\]
+*newVal* \[ no\]
 </dt> <dd>
 
 Ponteiro para a interface **IUnknown** do filtro de origem.
@@ -59,15 +59,15 @@ Ponteiro para a interface **IUnknown** do filtro de origem.
 
 ## <a name="return-value"></a>Valor retornado
 
-Retorna um **valor HRESULT.** Os possíveis valores incluem os seguintes:
+Retorna um valor **HRESULT** . Os possíveis valores incluem os seguintes:
 
 
 
-| Código de retorno                                                                                   | Description                                     |
+| Código de retorno                                                                                   | Descrição                                     |
 |-----------------------------------------------------------------------------------------------|-------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>          | Êxito.<br/>                             |
-| <dl> <dt>**E \_ NOINTERFACE**</dt> </dl> | *newVal* não aponta para um filtro.<br/> |
-| <dl> <dt>**PONTEIRO \_ E**</dt> </dl>     | Argumento de ponteiro **NULL.**<br/>           |
+| <dl> <dt>**E \_ NOinterface**</dt> </dl> | *newVal* não aponta para um filtro.<br/> |
+| <dl> <dt>**\_ponteiro E**</dt> </dl>     | Argumento de ponteiro **nulo** .<br/>           |
 
 
 
@@ -75,15 +75,15 @@ Retorna um **valor HRESULT.** Os possíveis valores incluem os seguintes:
 
 ## <a name="remarks"></a>Comentários
 
-Para a maioria dos aplicativos, é mais simples chamar o [**método \_ Filename IMediaDet::p ut**](imediadet-put-filename.md) com o nome de um arquivo de origem.
+Para a maioria dos aplicativos, é mais simples chamar o método [**IMediaDet::p UT \_ filename**](imediadet-put-filename.md) com o nome de um arquivo de origem.
 
 > [!Note]  
-> O arquivo de título Qedit.h não é compatível com os headers direct3D posteriores à versão 7.
+> O arquivo de cabeçalho QEdit. h não é compatível com cabeçalhos do Direct3D posteriores à versão 7.
 
  
 
 > [!Note]  
-> Para obter o Qedit.h, baixe [o Microsoft Windows SDK Update para Windows Vista e .NET Framework 3.0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). O Qedit.h não está disponível no SDK do Microsoft Windows para Windows 7 e .NET Framework 3.5 Service Pack 1.
+> para obter o Qedit. h, baixe a [atualização SDK do Microsoft Windows para Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit. h não está disponível no SDK do Microsoft Windows para Windows 7 e .NET Framework 3,5 Service Pack 1.
 
  
 
@@ -93,8 +93,8 @@ Para a maioria dos aplicativos, é mais simples chamar o [**método \_ Filename 
 
 | Requisito | Valor |
 |--------------------|-----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
-| Biblioteca<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>QEdit. h</dt> </dl>      |
+| Biblioteca<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
 
 
 
@@ -102,7 +102,7 @@ Para a maioria dos aplicativos, é mais simples chamar o [**método \_ Filename 
 
 <dl> <dt>
 
-[**IMediaDet Interface**](imediadet.md)
+[**Interface IMediaDet**](imediadet.md)
 </dt> <dt>
 
 [Códigos de erro e êxito](error-and-success-codes.md)

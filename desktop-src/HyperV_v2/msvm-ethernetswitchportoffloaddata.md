@@ -38,12 +38,12 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: fd60e98c8df12b539bb51c60b34e7931b762dc03
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e6e2de8571d665dc86393708b2afcf73fc4885f0b4de26624daafcdccff995b1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105764687"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119681476"
 ---
 # <a name="msvm_ethernetswitchportoffloaddata-class"></a>\_Classe Msvm EthernetSwitchPortOffloadData
 
@@ -343,7 +343,7 @@ Qualificadores: **WmiDataId** (9), **InterfaceVersion** (2), **InterfaceRevision
 Indica se VMMQ está ativo.
 
 > [!Note]  
-> Essa propriedade foi adicionada no Windows 10, versão 1703.
+> essa propriedade foi adicionada em Windows 10, versão 1703.
 
  
 
@@ -352,7 +352,7 @@ Indica se VMMQ está ativo.
 **VmmqQueuePairs**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -364,7 +364,7 @@ Qualificadores: **WmiDataId** (10), **InterfaceVersion** (2), **InterfaceRevisio
 Indica quantas filas são usadas para VRSS/VMMQ.
 
 > [!Note]  
-> Essa propriedade foi adicionada no Windows 10, versão 1703 e Windows Server 2016.
+> Essa propriedade foi adicionada Windows 10, versão 1703 e Windows Server 2016.
 
  
 
@@ -373,39 +373,39 @@ Indica quantas filas são usadas para VRSS/VMMQ.
 **VMQId**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
 Qualificadores: **WmiDataId** (4), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
-O identificador da fila da máquina virtual atual que é atribuído à porta. Isso será válido se **VMQOffloadUsage** não for zero.
+O identificador de fila da máquina virtual atual atribuído à porta. Isso será válido se **VMQOffloadUsage** não for zero.
 
 </dd> <dt>
 
 **VMQOffloadUsage**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
 Qualificadores: **WmiDataId** (3), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
-O uso de descarregamento da VMQ (fila de máquina virtual) atual.
+A VMQ (fila de máquina virtual) atual descarrega o uso.
 
 </dd> <dt>
 
 **VrssEnabled**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -426,7 +426,7 @@ Indica se o vRSS está ativo.
 **VrssExcludePrimaryProcessor**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -435,7 +435,7 @@ Tipo de acesso: Somente leitura
 Qualificadores: **WmiDataId** (13), **InterfaceVersion** (3), **InterfaceRevision** (0)
 </dt> </dl>
 
-Indica se a CPU de VMQ primária foi excluída da tabela de indireção VRSS/VMMQ.
+Indica se a CPU da VMQ primária é excluída da tabela de indcisão VRSS/VMMQ.
 
 > [!Note]  
 > Adicionado no Windows 10, versão 1709.
@@ -447,7 +447,7 @@ Indica se a CPU de VMQ primária foi excluída da tabela de indireção VRSS/VMM
 **VrssIndependentHostSpreading**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -456,7 +456,7 @@ Tipo de acesso: Somente leitura
 Qualificadores: **WmiDataId** (14), **InterfaceVersion** (3), **InterfaceRevision** (0)
 </dt> </dl>
 
-Indica se a dispersão de VRSS/VMMQ do lado do host ocorre, independentemente das configurações de RSS da NIC virtual.
+Indica se a propagação vrSS/VMMQ do lado do host ocorre, independentemente das configurações de RSS da NIC virtual.
 
 > [!Note]  
 > Adicionado no Windows 10, versão 1709.
@@ -468,7 +468,7 @@ Indica se a dispersão de VRSS/VMMQ do lado do host ocorre, independentemente da
 **VrssMinQueuePairs**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -489,7 +489,7 @@ Indica o número mínimo de filas usadas para VRSS/VMMQ.
 **VrssQueueSchedulingMode**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -498,7 +498,7 @@ Tipo de acesso: Somente leitura
 Qualificadores: **WmiDataId** (12), **InterfaceVersion** (3), **InterfaceRevision** (0)
 </dt> </dl>
 
-Indica como as filas VRSS/VMMQ são direcionadas para processadores de host diferentes.
+Indica como as filas VRSS/VMMQ são guiadas para processadores de host diferentes.
 
 > [!Note]  
 > Adicionado no Windows 10, versão 1709.
@@ -510,7 +510,7 @@ Indica como as filas VRSS/VMMQ são direcionadas para processadores de host dife
 **VrssVmbusChannelAffinityPolicy**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -519,7 +519,7 @@ Tipo de acesso: Somente leitura
 Qualificadores: **WmiDataId** (15), **InterfaceVersion** (3), **InterfaceRevision** (0)
 </dt> </dl>
 
-Indica como os canais VMBus são relacionados para os processadores de host.
+Indica como os canais de Vmbus são afiliados aos processadores de host.
 
 > [!Note]  
 > Adicionado no Windows 10, versão 1709.
@@ -534,10 +534,10 @@ Indica como os canais VMBus são relacionados para os processadores de host.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                                    |
-| Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[Windows 8 somente aplicativos da área de trabalho\]<br/>                                                              |
+| Servidor mínimo com suporte<br/> | \[Windows Server 2012 somente aplicativos da área de trabalho\]<br/>                                                    |
+| Namespace<br/>                | Virtualização \\ raiz \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 

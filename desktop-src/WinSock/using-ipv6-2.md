@@ -15,7 +15,7 @@ ms.locfileid: "118559202"
 
 No Windows XP posteriormente, uma nova ferramenta de linha de comando é fornecida para configurar e gerenciar IPv4. Essa ferramenta usa o comando "netsh interface ip" para configurar e gerenciar IPv4.
 
-No Windows XP com Service Pack 1 (SP1) e posterior, essa nova ferramenta de linha de comando foi aprimorada para dar suporte à configuração e ao gerenciamento do IPv6. Essa ferramenta aprimorada é o comando "netsh interface ipv6". As alterações de configuração feitas usando Netsh.exe comandos são permanentes e não são perdidas quando o computador ou o protocolo IPv6 é reiniciado.
+No Windows XP com o Service Pack 1 (SP1) e posterior, essa nova ferramenta de linha de comando foi aprimorada para dar suporte à configuração e ao gerenciamento do IPv6. Essa ferramenta aprimorada é o comando "netsh interface ipv6". As alterações de configuração feitas usando Netsh.exe comandos são permanentes e não são perdidas quando o computador ou o protocolo IPv6 é reiniciado.
 
 O comando a seguir está disponível no Windows XP com SP1 e posterior para consultar e configurar o IPv6 em um computador local:
 
@@ -31,7 +31,7 @@ Os comandos mais antigos a seguir estão disponíveis no Windows XP
 
 Essas ferramentas mais antigas também foram fornecidas no IPv6 Technology Preview para Windows 2000
 
-As alterações de configuração que usam essas ferramentas mais antigas podem ser mantidas colocando-as como linhas de comando em um arquivo de script de comando (.cmd) que é executado depois de reiniciar o computador ou o protocolo IPv6. Para restabelecer as alterações de configuração automaticamente após a reinicialização, é possível usar o Windows Tarefas Agendadas para executar o arquivo .cmd quando o computador é iniciado.
+As alterações de configuração que usam essas ferramentas mais antigas podem ser mantidas colocando-as como linhas de comando em um arquivo de script de comando (.cmd) que é executado após reiniciar o computador ou o protocolo IPv6. Para restabelecer as alterações de configuração automaticamente após a reinicialização, é possível usar o Windows Tarefas Agendadas para executar o arquivo .cmd quando o computador é iniciado.
 
 Essas ferramentas mais antigas não são fornecidas no Windows Server 2003 e posterior. A ferramenta "netsh interface ipv6" é fornecida para configurar e gerenciar o IPv6 na linha de comando no Windows Server 2003 e posterior.
 

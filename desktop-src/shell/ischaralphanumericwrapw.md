@@ -22,12 +22,12 @@ ms.locfileid: "118452991"
 ---
 # <a name="ischaralphanumericwrapw-function"></a>Função IsCharAlphaNumericWrapW
 
-\[**IsCharAlphaNumericWrapW** está disponível para uso no Windows XP. Ele não estará disponível nas versões subsequentes. Você deve usar [**IsCharAlphaNumericW**](/windows/win32/api/winuser/nf-winuser-ischaralphanumerica) em seu lugar.\]
+\[o **IsCharAlphaNumericWrapW** está disponível para uso no Windows XP. Ele não estará disponível nas versões subsequentes. Você deve usar [**IsCharAlphaNumericW**](/windows/win32/api/winuser/nf-winuser-ischaralphanumerica) em seu lugar.\]
 
-Determina se um caractere é um caractere alfabético ou numérico. Essa determinação se baseia na semântica do idioma selecionado pelo usuário durante a instalação ou por meio Painel de Controle.
+Determina se um caractere é um caractere alfabético ou numérico. Essa determinação se baseia na semântica do idioma selecionado pelo usuário durante a instalação ou por meio do painel de controle.
 
 > [!Note]  
-> **IsCharAlphaNumericWrapW** é um wrapper para a **função IsCharAlphaNumericW.** Consulte a [**página IsCharAlphaNumeric para**](/windows/win32/api/winuser/nf-winuser-ischaralphanumerica) ver mais observações de uso.
+> **IsCharAlphaNumericWrapW** é um wrapper para a função **IsCharAlphaNumericW** . Consulte a página [**IsCharAlphaNumeric**](/windows/win32/api/winuser/nf-winuser-ischaralphanumerica) para ver mais observações de uso.
 
  
 
@@ -46,7 +46,7 @@ BOOL IsCharAlphaNumericWrapW(
 
 <dl> <dt>
 
-*ch* \[ Em\]
+*ch* \[ no\]
 </dt> <dd>
 
 Tipo: **WCHAR**
@@ -57,7 +57,7 @@ O caractere Unicode a ser testado.
 
 ## <a name="return-value"></a>Valor retornado
 
-Tipo: **BOOL**
+Tipo: **bool**
 
 Se o caractere for alfanumérico, o valor de retorno será diferente de zero.
 
@@ -65,9 +65,9 @@ Se o caractere não for alfanumérico, o valor de retorno será zero. Para obter
 
 ## <a name="remarks"></a>Comentários
 
-**IsCharAlphaNumericWrapW fornece** a capacidade de usar cadeias de caracteres Unicode em sistemas operacionais anteriores Windows XP. O método preferencial é usar [**IsCharAlphaNumericW**](/windows/win32/api/winuser/nf-winuser-ischaralphanumerica) em conjunto com o MSLU (Microsoft Layer for Unicode).
+o **IsCharAlphaNumericWrapW** fornece a capacidade de usar cadeias de caracteres Unicode em sistemas operacionais anteriores ao Windows XP. O método preferencial é usar [**IsCharAlphaNumericW**](/windows/win32/api/winuser/nf-winuser-ischaralphanumerica) em conjunto com a camada Microsoft para Unicode (MSLU).
 
-**IsCharAlphaNumericWrapW deve** ser chamado diretamente do Shlwapi.dll, usando o ordinal 28.
+**IsCharAlphaNumericWrapW** deve ser chamado diretamente do Shlwapi.dll, usando o ordinal 28.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -75,9 +75,9 @@ Se o caractere não for alfanumérico, o valor de retorno será zero. Para obter
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 2000 Professional, Windows somente aplicativos da \[ área de trabalho XP\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                                          |
-| DLL<br/>                      | <dl> <dt>Shlwapi.dll (versão 5.0 ou posterior)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 2000 Professional, \[ somente aplicativos de área de trabalho do Windows XP\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                                          |
+| DLL<br/>                      | <dl> <dt>Shlwapi.dll (versão 5,0 ou posterior)</dt> </dl> |
 
 
 

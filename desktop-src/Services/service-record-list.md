@@ -4,12 +4,12 @@ ms.assetid: c0ee43e2-af9b-4578-9017-46a5ed50b938
 title: Lista de registros de serviço
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1143625de977c7e5c488c5cc56620adc3a5454db
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5ef0bdebed5e302b1dc59bea6494fd812ec506e7e6d2531634b2a6686b86bc98
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105762892"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118888850"
 ---
 # <a name="service-record-list"></a>Lista de registros de serviço
 

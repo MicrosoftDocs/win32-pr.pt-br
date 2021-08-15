@@ -1,6 +1,6 @@
 ---
 title: Elemento Connections
-description: Saiba mais sobre o elemento Connections. Esse elemento coleta e contém zero ou mais elementos connection.
+description: Saiba mais sobre o elemento Connections. Esse elemento coleta e contém zero ou mais elementos de conexão.
 ms.assetid: 2c199338-892f-4d8c-bf33-4a19f362de3e
 keywords:
 - Elemento Connections EAPHost
@@ -23,7 +23,7 @@ ms.locfileid: "118498214"
 ---
 # <a name="connections-element"></a>Elemento Connections
 
-O **elemento Connections** coleta e contém zero ou mais elementos [**connection.**](eapconnectionpropertiesv1schema-connection-connections-element.md)
+O elemento **Connections** coleta e contém zero ou mais elementos [**Connection**](eapconnectionpropertiesv1schema-connection-connections-element.md) .
 
 ``` syntax
 <xs:element name="Connections">
@@ -54,17 +54,17 @@ O **elemento Connections** coleta e contém zero ou mais elementos [**connection
 
 
 
-| Elemento                                                                              | Digite   | Description                                                                                                                                                                                |
+| Elemento                                                                              | Type   | Descrição                                                                                                                                                                                |
 |--------------------------------------------------------------------------------------|--------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**Eap**](baseeapconnectionpropertiesv1schema-eap-element.md)                       |        | Identifica o elemento de configuração de EAP.<br/>                                                                                                                                       |
-| [**Conexão**](eapconnectionpropertiesv1schema-connection-connections-element.md) |        | Define cada definição de configuração e a associa a um nome. O [**elemento Connection**](eapconnectionpropertiesv1schema-connection-connections-element.md) é opcional.<br/> |
+| [**EAP**](baseeapconnectionpropertiesv1schema-eap-element.md)                       |        | Identifica o elemento de configuração EAP.<br/>                                                                                                                                       |
+| [**Conexão**](eapconnectionpropertiesv1schema-connection-connections-element.md) |        | Define cada definição de configuração e a associa a um nome. O elemento [**Connection**](eapconnectionpropertiesv1schema-connection-connections-element.md) é opcional.<br/> |
 | [**Nome**](eapconnectionpropertiesv1schema-name-connection-element.md)              | string | Captura o nome da conexão que está sendo definida, auxiliando na identificação de várias conexões.<br/>                                                                     |
 
 
 
 ## <a name="remarks"></a>Comentários
 
-O **elemento Connections** não é usado com métodos herdado por meio das APIs EAPHost.
+O elemento **Connections** não é usado com métodos herdados por meio de APIs EAPHost.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -72,8 +72,8 @@ O **elemento Connections** não é usado com métodos herdado por meio das APIs 
 
 | Função | Versão mínima do sistema operacional com suporte |
 |------|------------------------------|
-| Cliente<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
-| Servidor<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
+| Cliente<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>       |
+| Servidor<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/> |
 
 
 

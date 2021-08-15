@@ -36,7 +36,7 @@ Usado com RODCs para definir quais usuários, computadores e grupos não têm pe
 | Frequência de atualização  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.1926                 |
 | System-ID-GUID    | 15585999-fd49-4D66-b25d-eeb96aba8174    |
-| Sintaxe            | [**Objeto (DS-DN)**](s-object-ds-dn.md) |
+| Syntax            | [**Objeto (DS-DN)**](s-object-ds-dn.md) |
 
 
 

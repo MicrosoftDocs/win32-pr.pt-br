@@ -1,7 +1,7 @@
 ---
-description: Indica se o contexto do Tablet está na parte superior do gancho.
+description: Indica se o contexto do tablet está no gancho mais alto.
 ms.assetid: b4aaee47-3d77-49cd-9600-f41764b9fb85
-title: 'Método ITabletContextP:: IsTopMostHook'
+title: Método ITabletContextP::IsTopMostHook
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -21,9 +21,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118449799"
 ---
-# <a name="itabletcontextpistopmosthook-method"></a>Método ITabletContextP:: IsTopMostHook
+# <a name="itabletcontextpistopmosthook-method"></a>Método ITabletContextP::IsTopMostHook
 
-Indica se o contexto do Tablet está na parte superior do gancho.
+Indica se o contexto do tablet está no gancho mais alto.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -47,7 +47,7 @@ Esse método pode retornar um desses valores.
 | Código de retorno                                                                            | Descrição                               |
 |----------------------------------------------------------------------------------------|-------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>   | Êxito.<br/>                       |
-| <dl> <dt>**E \_ falha**</dt> </dl> | Ocorreu um erro não especificado.<br/> |
+| <dl> <dt>**E \_ FAIL**</dt> </dl> | Ocorreu um erro não especificado.<br/> |
 
 
 
@@ -59,7 +59,7 @@ Esse método pode retornar um desses valores.
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do XP Tablet PC Edition\]<br/>                          |
+| Cliente mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho do XP Tablet PC \[ Edition\]<br/>                          |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                              |
 | Biblioteca<br/>                  | <dl> <dt>Wisptis.exe</dt> </dl> |
 
@@ -69,7 +69,7 @@ Esse método pode retornar um desses valores.
 
 <dl> <dt>
 
-[**Interface ITabletContextP**](itabletcontextp.md)
+[**ITabletContextP Interface**](itabletcontextp.md)
 </dt> </dl>
 
  

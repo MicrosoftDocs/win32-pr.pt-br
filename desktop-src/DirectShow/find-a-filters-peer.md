@@ -1,7 +1,7 @@
 ---
-description: Localizar um par de filtros
+description: Encontrar um par de filtros
 ms.assetid: 74d9fe65-f7f4-4971-9550-27884ac4146b
-title: Localizar um par de filtros
+title: Encontrar um par de filtros
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 60d2f20a7145d2365e7ee1ec261ea861ddc5fa1eb01d0c3b2503f6f53fa25815
@@ -11,11 +11,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118401760"
 ---
-# <a name="find-a-filters-peer"></a>Localizar um par de filtros
+# <a name="find-a-filters-peer"></a>Encontrar um par de filtros
 
-Dado um filtro, você pode percorrer o grafo localizando os filtros aos quais ele está conectado. Comece enumerando os Pins do filtro. Para cada PIN, verifique se esse PIN está conectado a outro PIN. Nesse caso, consulte o outro PIN para seu filtro proprietário. Você pode percorrer o grafo na direção de upstream enumerando os Pins de entrada do filtro ou na direção do downstream enumerando os Pins de saída.
+Dado um filtro, você pode percorrer o grafo encontrando os filtros aos quais ele está conectado. Comece enumerando os pinos do filtro. Para cada pino, verifique se esse pino está conectado a outro pino. Em caso afirmado, consulte o outro pin para seu filtro de propriedade. Você pode ver o grafo na direção upstream enumerando os pinos de entrada do filtro ou na direção downstream enumerando os pinos de saída.
 
-A função a seguir pesquisa upstream ou downstream em busca de um filtro conectado. Ele retorna o primeiro filtro de correspondência que ele encontra:
+A função a seguir pesquisa upstream ou downstream para um filtro conectado. Ele retorna o primeiro filtro correspondente que encontra:
 
 
 ```C++
@@ -76,7 +76,7 @@ HRESULT GetNextFilter(
 
 
 
-A função chama [**IBaseFilter:: EnumPins**](/windows/desktop/api/Strmif/nf-strmif-ibasefilter-enumpins) para enumerar os Pins do primeiro filtro. Para cada PIN, ele chama [**IPin:: QueryDirection**](/windows/desktop/api/Strmif/nf-strmif-ipin-querydirection) para verificar se o PIN corresponde à direção especificada (entrada ou saída). Nesse caso, a função determina se o PIN está conectado a outro PIN, chamando o método [**IPin:: ConnectedTo**](/windows/desktop/api/Strmif/nf-strmif-ipin-connectedto) . Por fim, ele chama [**IPin:: QueryPinInfo**](/windows/desktop/api/Strmif/nf-strmif-ipin-querypininfo) no PIN conectado. Esse método retorna uma estrutura que contém, entre outras coisas, um ponteiro para o filtro proprietário do PIN. Esse ponteiro é retornado para o chamador no parâmetro *ppNext* . O chamador deve liberar o ponteiro.
+A função chama [**IBaseFilter::EnumPins**](/windows/desktop/api/Strmif/nf-strmif-ibasefilter-enumpins) para enumerar os pinos do primeiro filtro. Para cada pino, ele chama [**IPin::QueryDirection**](/windows/desktop/api/Strmif/nf-strmif-ipin-querydirection) para verificar se o pino corresponde à direção especificada (entrada ou saída). Nesse caso, a função determina se esse pino está conectado a outro pino, chamando o [**método IPin::ConnectedTo.**](/windows/desktop/api/Strmif/nf-strmif-ipin-connectedto) Por fim, ele [**chama IPin::QueryPinInfo**](/windows/desktop/api/Strmif/nf-strmif-ipin-querypininfo) no pino conectado. Esse método retorna uma estrutura que contém, entre outras coisas, um ponteiro para o filtro de propriedade desse pino. Esse ponteiro é retornado ao chamador no *parâmetro ppNext.* O chamador deve liberar o ponteiro.
 
 O código a seguir mostra como chamar essa função:
 
@@ -93,9 +93,9 @@ if (SUCCEEDED(GetNextFilter(pF, PINDIR_INPUT, &pUpstream)))
 
 
 
-Um filtro pode estar conectado a dois ou mais filtros em qualquer direção. Por exemplo, pode ser um filtro de divisão, com vários filtros downstream. Ou pode ser um filtro Mux, com vários filtros upstream a partir dele. Portanto, talvez você queira coletar todos eles em uma lista.
+Um filtro pode ser conectado a dois ou mais filtros em qualquer direção. Por exemplo, pode ser um filtro divisor, com vários filtros downstream dele. Ou pode ser um filtro mux, com vários filtros upstream dele. Portanto, talvez você queira coletar todos eles em uma lista.
 
-O código a seguir mostra uma maneira possível de implementar tal função. ele usa a classe DirectShow [**CGenericList**](cgenericlist.md) ; Você poderia escrever uma função equivalente usando alguma outra estrutura de dados.
+O código a seguir mostra uma maneira possível de implementar essa função. Ele usa a classe DirectShow [**CGenericList;**](cgenericlist.md) você pode escrever uma função equivalente usando alguma outra estrutura de dados.
 
 
 ```C++
@@ -178,7 +178,7 @@ void AddFilterUnique(CFilterList &FilterList, IBaseFilter *pNew)
 
 
 
-Para complicar as coisas de certa forma, um filtro pode ter várias conexões de PIN com o mesmo filtro. Para evitar colocar duplicatas na lista, consulte cada ponteiro **IBaseFilter** para **IUnknown** e compare os ponteiros **IUnknown** . Pelas regras de COM, dois ponteiros de interface se referem ao mesmo objeto se e somente se retornarem ponteiros **IUnknown** idênticos. No exemplo anterior, a função AddFilterUnique lida com esse detalhe.
+Para complicar um pouco, um filtro pode ter várias conexões de pino com o mesmo filtro. Para evitar colocar duplicatas na lista, consulte cada ponteiro **IBaseFilter** para **IUnknown** e compare os ponteiros **IUnknown.** Pelas regras de COM, dois ponteiros de interface se referem ao mesmo objeto se e somente se retornarem ponteiros **IUnknown** idênticos. No exemplo anterior, a função AddFilterUnique trata desse detalhe.
 
 O exemplo a seguir mostra como usar a função GetPeerFilters:
 
@@ -204,7 +204,7 @@ if (SUCCEEDED(hr))
 
 <dl> <dt>
 
-[Técnicas de Graph-Building geral](general-graph-building-techniques.md)
+[Técnicas Graph-Building geral](general-graph-building-techniques.md)
 </dt> </dl>
 
  

@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: c4c245e27897cb88e00beb35ad2d54790233c6e9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 808038dfffe06830e17cdec73139971e07e9776cfdebe54e4c55a0a7ff3b6c7a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105788652"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119975886"
 ---
 # <a name="esentbadcolumnidexception-constructor"></a>Construtor EsentBadColumnIdException
 
 Inicializa uma nova instância da classe EsentBadColumnIdException.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -58,6 +58,6 @@ public EsentBadColumnIdException()
 
 [Classe EsentBadColumnIdException](./esentbadcolumnidexception-class.md)
 
-[Membros do EsentBadColumnIdException](./esentbadcolumnidexception-members.md)
+[Membros EsentBadColumnIdException](./esentbadcolumnidexception-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

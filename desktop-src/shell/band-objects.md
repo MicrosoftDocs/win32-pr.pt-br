@@ -118,24 +118,24 @@ Os objetos de banda podem enviar comandos para seu contêiner por meio da interf
 
 -   \_PUSHCHEVRON DBID
 
-    [Versão 5](versions.md). Exiba um menu de divisa. O contêiner envia uma [**mensagem \_ PUSHCHEVRON RB**](../controls/rb-pushchevron.md) e o objeto Band recebe uma notificação [RBN \_ CHEVRONPUSHED](../controls/rbn-chevronpushed.md) que solicita que ele exiba o menu de divisa. Defina o parâmetro *nCmdExecOpt* do método [**IOleCommandTarget:: exec**](/windows/win32/api/docobj/nf-docobj-iolecommandtarget-exec) como o identificador de banda recebido na chamada mais recente para [**IDeskBand:: GetBandInfo**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ideskband). De definir o parâmetro *pvaIn* do método **IOleCommandTarget::Exec** para o tipo VT I4 com um valor \_ definido pelo aplicativo. Ele passa de volta para o objeto de banda como o *valor lAppValue* da notificação RBN \_ CHEVRONPUSHED.
+    [Versão 5](versions.md). Exiba um menu de divisa. O contêiner envia uma [**mensagem \_ PUSHCHEVRON RB**](../controls/rb-pushchevron.md) e o objeto Band recebe uma notificação [RBN \_ CHEVRONPUSHED](../controls/rbn-chevronpushed.md) que solicita que ele exiba o menu de divisa. Defina o parâmetro *nCmdExecOpt* do método [**IOleCommandTarget:: exec**](/windows/win32/api/docobj/nf-docobj-iolecommandtarget-exec) como o identificador de banda recebido na chamada mais recente para [**IDeskBand:: GetBandInfo**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ideskband). Defina o parâmetro *pvaIn* do método **IOleCommandTarget:: exec** como o \_ tipo VT i4 com um valor definido pelo aplicativo. Ele passa de volta para o objeto Band como o valor *lAppValue* da \_ notificação RBN CHEVRONPUSHED.
 
 ### <a name="band-registration"></a>Registro de banda
 
-Um objeto de banda deve ser registrado como um servidor em processo OLE que dá suporte ao threading de apartment. O valor padrão do servidor é uma cadeia de caracteres de texto de menu. Para Barras do Explorer, ele aparecerá no submenu Barra do **Explorer** do menu Internet Explorer **Exibição.** Para faixas de ferramentas, ele aparecerá no submenu **Barras** de Ferramentas do menu Internet Explorer **Exibição.** Para faixas de mesa, ele aparecerá **no** submenu Barras de Ferramentas do menu de atalho da barra de tarefas. Assim como com os recursos de menu, colocar uma & na frente de uma letra fará com que ela seja sublinhada e habilita os atalhos de teclado. Por exemplo, a cadeia de caracteres de menu para a Barra vertical do Explorer mostrada no primeiro gráfico é "Exemplo &Barra vertical do Explorer".
+Um objeto de banda deve ser registrado como um servidor em processo OLE que dá suporte ao Threading Apartment. O valor padrão para o servidor é uma cadeia de caracteres de texto de menu. Para barras do Explorer, ele aparecerá no submenu **barra do Explorer** do menu **Exibir** do Internet Explorer. Para as faixas de ferramentas, ela aparecerá no submenu **barras de ferramentas** do menu **Exibir** do Internet Explorer. Para faixas de escrivaninha, ela aparecerá no submenu **barras de ferramentas** do menu de atalho da barra de tarefas. Assim como os recursos de menu, colocar um e comercial (&) na frente de uma letra fará com que ele seja sublinhado e habilite atalhos de teclado. Por exemplo, a cadeia de menu para a barra vertical do Explorer mostrada no primeiro elemento gráfico é "exemplo &barra vertical do Explorer".
 
-Inicialmente, Internet Explorer recupera uma enumeração dos objetos da Barra do Explorer registrados do Registro usando as categorias de componente. Para aumentar o desempenho, ele armazena em cache essa enumeração, fazendo com que as Barras do Explorer adicionadas posteriormente sejam ignoradas. Para forçar Windows Internet Explorer recriar o cache e reconhecer uma nova Barra do Explorer, exclua as seguintes chaves do Registro durante o registro da nova Barra do Explorer:
+Inicialmente, o Internet Explorer recupera uma enumeração dos objetos de barra do Gerenciador registrados do registro usando as categorias de componente. Para aumentar o desempenho, ele armazena em cache essa enumeração, fazendo com que as barras do Explorer adicionadas subsequentemente sejam ignoradas. para forçar Windows Internet Explorer a recriar o cache e reconhecer uma nova barra do explorer, exclua as seguintes chaves do registro durante o registro da nova barra do explorer:
 
-**HKEY \_ Software \_ DE USUÁRIO** ATUAL Microsoft Windows categorias de componente PostSetup descartadas do \\  \\  \\  \\ **CurrentVersion** \\ **Explorer** \\  \\  \\  \\ **{00021493-0000-0000-C000-00000000046}** \\ **Enum**
+**HKEY \_ Software de \_ usuário atual** \\  \\ **Microsoft** \\ **Windows** \\ **CurrentVersion** \\ **Explorer**, \\ **descartada** \\ , categorias de componente de instalação de **createsetup** \\  \\ **{00021493-0000-0000-C000-000000000046}** \\ **Enum**
 
-**HKEY \_ Software \_ DE USUÁRIO** ATUAL Microsoft Windows categorias de componente PostSetup descartadas do \\  \\  \\  \\ **CurrentVersion** \\ **Explorer** \\  \\  \\  \\ **{00021494-0000-0000-C000-00000000046}** \\ **Enum**
+**HKEY \_ Software de \_ usuário atual** \\  \\ **Microsoft** \\ **Windows** \\ **CurrentVersion** \\ **Explorer**, \\ **descartada** \\ , categorias de componente de instalação de **createsetup** \\  \\ **{00021494-0000-0000-C000-000000000046}** \\ **Enum**
 
 > [!Note]  
-> Como um cache da Barra do Explorer é criado para cada usuário, seu aplicativo de instalação pode precisar enumerar todos os hives do registro de usuário ou adicionar um stub por usuário para ser executado quando o usuário faz logo depois.
+> Como um cache da barra do Explorer é criado para cada usuário, o aplicativo de instalação pode precisar enumerar todos os hives do registro do usuário ou adicionar um stub por usuário para ser executado quando o usuário fizer logon pela primeira vez.
 
  
 
-Em geral, a entrada básica do Registro para um objeto de banda será exibida da seguinte maneira.
+Em geral, a entrada de registro básica para um objeto de banda será exibida da seguinte maneira.
 
 ```
 HKEY_CLASSES_ROOT
@@ -147,7 +147,7 @@ HKEY_CLASSES_ROOT
             ThreadingModel = Apartment
 ```
 
-As faixas de ferramentas também devem ter o CLSID do objeto registrado com Internet Explorer. Para fazer isso, atribua um valor em **HKEY \_ LOCAL \_ MACHINE** \\ **Software** \\ **Microsoft** \\ **Internet Explorer** Toolbar chamado com \\  o GUID CLSID do objeto da banda de ferramentas, conforme mostrado aqui. Seu valor de dados é ignorado, portanto, o tipo de valor não é importante.
+As faixas de ferramentas também devem ter o CLSID do seu objeto registrado no Internet Explorer. Para fazer isso, atribua um valor em **HKEY \_ local \_ Machine** \\ **software** \\ **Microsoft** \\ **Internet Explorer** \\ **barra de ferramentas** chamado com o GUID CLSID do objeto de faixa de ferramenta, conforme mostrado aqui. Seu valor de dados é ignorado, portanto, o tipo de valor não é importante.
 
 ```
 HKEY_LOCAL_MACHINE
@@ -158,7 +158,7 @@ HKEY_LOCAL_MACHINE
                {Your Band Object's CLSID GUID}
 ```
 
-Há vários valores opcionais que também podem ser adicionados ao Registro. Por exemplo, o valor a seguir será necessário se você quiser usar a Barra do Explorer para exibir HTML O valor mostrado não é um exemplo, mas o valor real que deve ser usado.
+Há vários valores opcionais que também podem ser adicionados ao registro. Por exemplo, o valor a seguir será necessário se você quiser usar a barra do Explorer para exibir HTML o valor mostrado não é um exemplo, mas o valor real que deve ser usado.
 
 ```
 HKEY_CLASSES_ROOT
@@ -169,7 +169,7 @@ HKEY_CLASSES_ROOT
                (Default) = {4D5C8C2A-D075-11D0-B416-00C04FB90376}
 ```
 
-Usado em conjunto com o valor mostrado acima, o valor opcional a seguir também será necessário se você quiser usar a Barra do Explorer para exibir HTML. Esse valor deve ser definido como o local do arquivo que contém o conteúdo HTML para a Barra do Explorer.
+Usado em conjunto com o valor mostrado acima, o valor opcional a seguir também será necessário se você quiser usar a barra do Explorer para exibir HTML. Esse valor deve ser definido como o local do arquivo que contém o conteúdo HTML da barra do Explorer.
 
 ```
 HKEY_CLASSES_ROOT
@@ -180,7 +180,7 @@ HKEY_CLASSES_ROOT
                Url
 ```
 
-Outro valor opcional define a largura ou a altura padrão da Barra do Explorer, dependendo se ela é vertical ou horizontal, respectivamente.
+Outro valor opcional define a largura ou a altura padrão da barra do Explorer, dependendo se ela é vertical ou horizontal, respectivamente.
 
 ```
 HKEY_CURRENT_USER
@@ -192,9 +192,9 @@ HKEY_CURRENT_USER
                   BarSize
 ```
 
-O valor BarSize deve ser definido como a largura ou a altura da barra. O valor requer oito bytes e é colocado no Registro como um valor binário. Os primeiros quatro bytes especificam o tamanho em pixels, em formato hexadecimal, começando do byte mais à esquerda. Os últimos quatro bytes são reservados e devem ser definidos como zero.
+O valor de barras deve ser definido como a largura ou altura da barra. O valor requer oito bytes e é colocado no registro como um valor binário. Os primeiros quatro bytes especificam o tamanho em pixels, em formato hexadecimal, a partir do byte mais à esquerda. Os últimos quatro bytes são reservados e devem ser definidos como zero.
 
-Por exemplo, as entradas completas do Registro para uma Barra do Explorer com capacidade para HTML com uma largura padrão de 291 pixels (0x123) são mostradas aqui.
+Por exemplo, as entradas de registro completas para uma barra do Explorer com capacidade para HTML com uma largura padrão de pixels de 291 (0x123) são mostradas aqui.
 
 ```
 HKEY_CLASSES_ROOT
@@ -218,60 +218,60 @@ HKEY_CURRENT_USER
                   BarSize = 23 01 00 00 00 00 00 00
 ```
 
-Você pode manipular o registro de CATID de um objeto de banda programaticamente. Crie um objeto gerenciador de categorias de componente (CLSID \_ StdComponentCategoriesMgr) e solicite um ponteiro para sua interface [**ICatRegister.**](/windows/win32/api/comcat/nn-comcat-icatregister) Passe a CLSID e CATID do objeto de banda [**para ICatRegister::RegisterClassImplCategories.**](/windows/win32/api/comcat/nf-comcat-icatregister-registerclassimplcategories)
+Você pode manipular o registro do CATID de um objeto de banda programaticamente. Crie um objeto do Gerenciador de categorias de componente (CLSID \_ StdComponentCategoriesMgr) e solicite um ponteiro para sua interface [**ICatRegister**](/windows/win32/api/comcat/nn-comcat-icatregister) . Passe o CLSID e o CATID do objeto de banda para [**ICatRegister:: RegisterClassImplCategories**](/windows/win32/api/comcat/nf-comcat-icatregister-registerclassimplcategories).
 
 ### <a name="a-simple-example-of-a-custom-explorer-bar"></a>Um exemplo simples de uma barra personalizada do Explorer
 
-Este exemplo passa pela implementação da barra vertical do Explorer de exemplo mostrada na introdução.
+Este exemplo percorre a implementação da barra vertical do Explorer de exemplo mostrada na introdução.
 
 O procedimento básico para criar uma barra personalizada do Explorer é o seguinte.
 
-1.  [Implemente as funções necessárias para a DLL.](#dll-functions)
+1.  [Implemente as funções necessárias para a dll](#dll-functions).
 2.  [Implemente as interfaces COM necessárias.](#required-interface-implementations)
 3.  [Implemente as interfaces COM opcionais desejadas.](#optional-interface-implementations)
-4.  [Registre a CLSID do objeto e, se necessário, a categoria de componente.](#clsid-registration)
-5.  Crie uma janela filho de Internet Explorer, dimensionada para se ajustar à região de exibição da Barra do Explorer.
+4.  [Registre o CLSID do objeto e, se necessário, a categoria do componente.](#clsid-registration)
+5.  Crie uma janela filho do Internet Explorer, dimensionada para caber na região de exibição da barra do Explorer.
 6.  [Use a janela filho para exibir informações e interagir com o usuário.](#the-window-procedure)
 
-A implementação muito simples usada no exemplo de Barra do Explorer pode realmente ser usada para o tipo de Barra do Explorer ou uma banda de mesa simplesmente registrando-a para a categoria de componente apropriada. Implementações mais sofisticadas precisarão ser personalizadas para cada região de exibição e contêiner de cada tipo de objeto. No entanto, grande parte dessa personalização pode ser realizada ao pegar o código de exemplo e estendê-lo aplicando técnicas de programação Windows familiares à janela filho. Por exemplo, você pode adicionar controles para interação do usuário ou gráficos para uma exibição mais rica.
+A implementação muito simples usada na amostra da barra do Gerenciador poderia ser realmente usada para qualquer tipo de barra do Explorer ou uma faixa de escrivaninha, simplesmente registrando-a para a categoria de componente apropriada. Implementações mais sofisticadas precisarão ser personalizadas para a região de exibição e o contêiner de cada tipo de objeto. no entanto, grande parte dessa personalização pode ser realizada com o código de exemplo e sua extensão, aplicando técnicas de programação de Windows familiares à janela filho. Por exemplo, você pode adicionar controles para interação do usuário ou gráficos para uma exibição mais rica.
 
-### <a name="dll-functions"></a>Funções DLL
+### <a name="dll-functions"></a>Funções de DLL
 
 Todos os três objetos são empacotados em uma única DLL, que expõe as funções a seguir.
 
--   [**Dllmain**](../dlls/dllmain.md)
--   [**Dllcanunloadnow**](/windows/win32/api/combaseapi/nf-combaseapi-dllcanunloadnow)
--   [**Dllgetclassobject**](/windows/win32/api/combaseapi/nf-combaseapi-dllgetclassobject)
--   [**Dllregisterserver**](/windows/win32/api/olectl/nf-olectl-dllregisterserver)
+-   [**DllMain**](../dlls/dllmain.md)
+-   [**DllCanUnloadNow**](/windows/win32/api/combaseapi/nf-combaseapi-dllcanunloadnow)
+-   [**DllGetClassObject**](/windows/win32/api/combaseapi/nf-combaseapi-dllgetclassobject)
+-   [**DllRegisterServer**](/windows/win32/api/olectl/nf-olectl-dllregisterserver)
 
-As três primeiras funções são implementações padrão e não serão discutidas aqui. A implementação de Fábrica de Classes também é padrão.
+As três primeiras funções são implementações padrão e não serão discutidas aqui. A implementação da fábrica de classes também é padrão.
 
 ### <a name="required-interface-implementations"></a>Implementações de interface necessárias
 
-O exemplo de Barra vertical do Explorer implementa as quatro interfaces necessárias: [**IUnknown,**](/windows/win32/api/unknwn/nn-unknwn-iunknown) [**IObjectWithSite,**](/windows/win32/api/ocidl/nn-ocidl-iobjectwithsite) [**IPersistStream**](/windows/win32/api/objidl/nn-objidl-ipersiststream)e [**IDeskBand**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ideskband) como parte da classe CExplorerBar. As implementações de construtor, destruidor **e IUnknown** são simples e não serão discutidas aqui. Consulte o código de exemplo para obter detalhes.
+O exemplo de barra vertical do Explorer implementa as quatro interfaces necessárias: [**IUnknown**](/windows/win32/api/unknwn/nn-unknwn-iunknown), [**IObjectWithSite**](/windows/win32/api/ocidl/nn-ocidl-iobjectwithsite), [**IPersistStream**](/windows/win32/api/objidl/nn-objidl-ipersiststream)e [**IDeskBand**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ideskband) como parte da classe CExplorerBar. As implementações do Construtor, destruidor e **IUnknown** são simples e não serão discutidas aqui. Consulte o código de exemplo para obter detalhes.
 
 As interfaces a seguir são discutidas em detalhes.
 
--   [Iobjectwithsite](#iobjectwithsite)
--   [Ipersiststream](#ipersiststream)
+-   [IObjectWithSite](#iobjectwithsite)
+-   [IPersistStream](#ipersiststream)
 -   [IDeskBand](#ideskband)
 
-### <a name="iobjectwithsite"></a>Iobjectwithsite
+### <a name="iobjectwithsite"></a>IObjectWithSite
 
-Quando o usuário seleciona uma Barra do Explorer, o contêiner chama o método [**IObjectWithSite::SetSite**](/windows/win32/api/ocidl/nf-ocidl-iobjectwithsite-setsite) do objeto de banda correspondente. O *parâmetro website* será definido como o ponteiro [**IUnknown do**](/windows/win32/api/unknwn/nn-unknwn-iunknown) site.
+Quando o usuário seleciona uma barra do Explorer, o contêiner chama o método [**IObjectWithSite:: SetSite**](/windows/win32/api/ocidl/nf-ocidl-iobjectwithsite-setsite) do objeto de banda correspondente. O parâmetro *punkSite* será definido como o ponteiro [**IUnknown**](/windows/win32/api/unknwn/nn-unknwn-iunknown) do site.
 
-Em geral, uma [**implementação de SetSite**](/windows/win32/api/ocidl/nf-ocidl-iobjectwithsite-setsite) deve executar as seguintes etapas:
+Em geral, uma implementação de [**SetSite**](/windows/win32/api/ocidl/nf-ocidl-iobjectwithsite-setsite) deve executar as seguintes etapas:
 
-1.  Libere qualquer ponteiro do site que está sendo mantido no momento.
-2.  Se o ponteiro passado para [**SetSite for**](/windows/win32/api/ocidl/nf-ocidl-iobjectwithsite-setsite) definido como **NULL,** a banda será removida. **SetSite** pode retornar S \_ OK.
-3.  Se o ponteiro passado para [**SetSite**](/windows/win32/api/ocidl/nf-ocidl-iobjectwithsite-setsite) for não **NULL,** um novo site será definido. **SetSite** deve fazer o seguinte:
-    1.  Chame [**QueryInterface**](/windows/win32/api/unknwn/nf-unknwn-iunknown-queryinterface(q)) no site para sua interface [**IOleWindow.**](/windows/win32/api/oleidl/nn-oleidl-iolewindow)
-    2.  Chame [**IOleWindow::GetWindow**](/windows/win32/api/oleidl/nf-oleidl-iolewindow-getwindow) para obter o handle da janela pai. Salve o alça para uso posterior. Libere [**IOleWindow**](/windows/win32/api/oleidl/nn-oleidl-iolewindow) se ele não for mais necessário.
-    3.  Crie a janela do objeto de banda como um filho da janela obtida na etapa anterior. Não o crie como uma janela visível.
-    4.  Se o objeto de banda implementar [**IInputObject**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-iinputobject), chame [**QueryInterface**](/windows/win32/api/unknwn/nf-unknwn-iunknown-queryinterface(q)) no site para sua interface [**IInputObjectSite.**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-iinputobjectsite) Armazene o ponteiro para essa interface para uso posterior.
-    5.  Se todas as etapas são bem-sucedidas, retorne S \_ OK. Caso não, retorne o código de erro definido pelo OLE indicando o que falhou.
+1.  Libere qualquer ponteiro de site que esteja sendo mantido no momento.
+2.  Se o ponteiro passado para [**SetSite**](/windows/win32/api/ocidl/nf-ocidl-iobjectwithsite-setsite) for definido como **NULL**, a banda será removida. **SetSite** pode retornar S \_ OK.
+3.  Se o ponteiro passado para [**SetSite**](/windows/win32/api/ocidl/nf-ocidl-iobjectwithsite-setsite) for não **nulo**, um novo site será definido. **SetSite** deve fazer o seguinte:
+    1.  Chame [**QueryInterface**](/windows/win32/api/unknwn/nf-unknwn-iunknown-queryinterface(q)) no site para sua interface [**IOleWindow**](/windows/win32/api/oleidl/nn-oleidl-iolewindow) .
+    2.  Chame [**IOleWindow:: GetWindow**](/windows/win32/api/oleidl/nf-oleidl-iolewindow-getwindow) para obter o identificador da janela pai. Salve o identificador para uso posterior. Libere [**IOleWindow**](/windows/win32/api/oleidl/nn-oleidl-iolewindow) se não for mais necessário.
+    3.  Crie a janela do objeto de banda como um filho da janela obtida na etapa anterior. Não a crie como uma janela visível.
+    4.  Se o objeto Band implementar [**IInputObject**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-iinputobject), chame [**QueryInterface**](/windows/win32/api/unknwn/nf-unknwn-iunknown-queryinterface(q)) no site para sua interface [**IInputObjectSite**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-iinputobjectsite) . Armazene o ponteiro para esta interface para uso posterior.
+    5.  Se todas as etapas forem bem-sucedidas, retorne as S \_ OK. Caso contrário, retorne o código de erro definido por OLE indicando o que falhou.
 
-O exemplo da Barra do Explorer implementa [**SetSite**](/windows/win32/api/ocidl/nf-ocidl-iobjectwithsite-setsite) da seguinte maneira. No código *a seguir, \_ m pSite* é uma variável de membro privado que contém o ponteiro [**IInputObjectSite**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-iinputobjectsite) e *m \_ hwndParent* contém o handle da janela pai. Neste exemplo, a criação da janela também é tratada. Se a janela não existir, esse método criará a janela da Barra do Explorer como um filho de tamanho apropriado da janela pai obtida por **SetSite**. O handle da janela filho é armazenado *em m \_ hwnd.*
+O exemplo da barra do Explorer implementa [**SetSite**](/windows/win32/api/ocidl/nf-ocidl-iobjectwithsite-setsite) da seguinte maneira. No código m a seguir, *\_ pSite* é uma variável de membro particular que contém o ponteiro [**IInputObjectSite**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-iinputobjectsite) e *m \_ hwndParent* mantém a alça da janela pai. Neste exemplo, a criação de janela também é tratada. Se a janela não existir, esse método criará a janela da barra do Explorer como um filho de tamanho adequado da janela pai obtida por **SetSite**. O identificador da janela filho é armazenado na *\_ HWND do m*.
 
 
 ```C++
@@ -336,7 +336,7 @@ STDMETHODIMP CDeskBand::SetSite(IUnknown *pUnkSite)
 
 
 
-A implementação [**getSite**](/windows/win32/api/ocidl/nf-ocidl-iobjectwithsite-getsite) do exemplo simplesmente envolve uma chamada para o método [**QueryInterface**](/windows/win32/api/unknwn/nf-unknwn-iunknown-queryinterface(q)) do site, usando o ponteiro do site salvo por [**SetSite**](/windows/win32/api/ocidl/nf-ocidl-iobjectwithsite-setsite).
+A implementação do [**GetSite**](/windows/win32/api/ocidl/nf-ocidl-iobjectwithsite-getsite) de exemplo simplesmente encapsula uma chamada para o método [**QueryInterface**](/windows/win32/api/unknwn/nf-unknwn-iunknown-queryinterface(q)) do site, usando o ponteiro do site salvo por [**SetSite**](/windows/win32/api/ocidl/nf-ocidl-iobjectwithsite-setsite).
 
 
 ```C++
@@ -359,23 +359,23 @@ STDMETHODIMP CDeskBand::GetSite(REFIID riid, void **ppv)
 
 
 
-### <a name="ipersiststream"></a>Ipersiststream
+### <a name="ipersiststream"></a>IPersistStream
 
-Internet Explorer chamará a interface [**IPersistStream**](/windows/win32/api/objidl/nn-objidl-ipersiststream) da Barra do Explorer para permitir que a Barra do Explorer carregue ou salve dados persistentes. Se não houver dados persistentes, os métodos ainda deverão retornar um código de êxito. A interface **IPersistStream** herda de [**IPersist,**](/windows/win32/api/objidl/nn-objidl-ipersist)portanto, cinco métodos devem ser implementados.
+O Internet Explorer chamará a interface [**IPersistStream**](/windows/win32/api/objidl/nn-objidl-ipersiststream) da barra do Explorer para permitir que a barra do Explorer carregue ou salve dados persistentes. Se não houver dados persistentes, os métodos ainda devem retornar um código de êxito. A interface **IPersistStream** herda de [**IPersist**](/windows/win32/api/objidl/nn-objidl-ipersist), portanto, cinco métodos devem ser implementados.
 
--   [**IPersist::GetClassID**](/windows/win32/api/objidl/nf-objidl-ipersist-getclassid)
--   [**IPersistStream::IsDirty**](/windows/win32/api/objidl/nf-objidl-ipersiststream-isdirty)
--   [**IPersistStream::Load**](/windows/win32/api/objidl/nf-objidl-ipersiststream-load)
--   [**IPersistStream::Save**](/windows/win32/api/objidl/nf-objidl-ipersiststream-save)
--   [**IPersistStream::GetSizeMax**](/windows/win32/api/objidl/nf-objidl-ipersiststream-getsizemax)
+-   [**IPersist:: GetClassID**](/windows/win32/api/objidl/nf-objidl-ipersist-getclassid)
+-   [**IPersistStream:: IsDirty**](/windows/win32/api/objidl/nf-objidl-ipersiststream-isdirty)
+-   [**IPersistStream:: Load**](/windows/win32/api/objidl/nf-objidl-ipersiststream-load)
+-   [**IPersistStream:: Save**](/windows/win32/api/objidl/nf-objidl-ipersiststream-save)
+-   [**IPersistStream:: GetSizeMax**](/windows/win32/api/objidl/nf-objidl-ipersiststream-getsizemax)
 
-O exemplo de Barra do Explorer não usa nenhum dado persistente e tem apenas uma implementação mínima [**de IPersistStream.**](/windows/win32/api/objidl/nn-objidl-ipersiststream) [**IPersist::GetClassID**](/windows/win32/api/objidl/nf-objidl-ipersist-getclassid) retorna o CLSID do objeto (CLSID SampleExplorerBar) e o restante retorna S OK, S FALSE ou \_ E \_ \_ \_ NOTIMPL.
+A amostra da barra do Gerenciador não usa nenhum dado persistente e tem apenas uma implementação mínima de [**IPersistStream**](/windows/win32/api/objidl/nn-objidl-ipersiststream). [**IPersist:: GetClassID**](/windows/win32/api/objidl/nf-objidl-ipersist-getclassid) retorna o CLSID do objeto (CLSID \_ SampleExplorerBar) e o resto retorna S \_ OK, s \_ false ou E \_ NOTIMPL.
 
 ### <a name="ideskband"></a>IDeskBand
 
-A [**interface IDeskBand**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ideskband) é específica para objetos de banda. Além de seu único método, ele herda de [**IDockingWindow**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-idockingwindow), que, por sua vez, herda de [**IOleWindow.**](/windows/win32/api/oleidl/nn-oleidl-iolewindow)
+A interface [**IDeskBand**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ideskband) é específica para objetos de banda. Além de seu único método, ele herda de [**IDockingWindow**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-idockingwindow), que por sua vez herda de [**IOleWindow**](/windows/win32/api/oleidl/nn-oleidl-iolewindow).
 
-Há dois métodos [**IOleWindow:**](/windows/win32/api/oleidl/nn-oleidl-iolewindow) [**GetWindow**](/windows/win32/api/oleidl/nf-oleidl-iolewindow-getwindow) e [**IOleWindow::ContextSensitiveHelp.**](/windows/win32/api/oleidl/nf-oleidl-iolewindow-contextsensitivehelp) A implementação do exemplo da Barra do Explorer de **GetWindow** retorna a alça de janela filho da Barra do Explorer, *m \_ hwnd*. A Ajuda contextista não é implementada, **portanto, ContextSensitiveHelp** retorna **E \_ NOTIMPL.**
+Há dois métodos [**IOleWindow**](/windows/win32/api/oleidl/nn-oleidl-iolewindow) : [**GetWindow**](/windows/win32/api/oleidl/nf-oleidl-iolewindow-getwindow) e [**IOleWindow:: ContextSensitiveHelp**](/windows/win32/api/oleidl/nf-oleidl-iolewindow-contextsensitivehelp). A implementação de exemplo da barra do Explorer de **GetWindow** retorna o identificador da janela filho da barra do Explorer, *m \_ hWnd*. A ajuda contextual não está implementada, portanto **ContextSensitiveHelp** retorna **E \_ NOTIMPL**.
 
 A interface [**IDockingWindow**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-idockingwindow) tem três métodos.
 
@@ -383,7 +383,7 @@ A interface [**IDockingWindow**](/windows/desktop/api/shobjidl_core/nn-shobjidl_
 -   [**IDockingWindow::CloseDW**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-idockingwindow-closedw)
 -   [**IDockingWindow::ResizeBorderDW**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-idockingwindow-resizeborderdw)
 
-O [**método ResizeBorderDW**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-idockingwindow-resizeborderdw) não é usado com nenhum tipo de objeto de banda e sempre deve retornar E \_ NOTIMPL. O [**método ShowDW**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-idockingwindow-showdw) mostra ou oculta a janela da Barra do Explorer, dependendo do valor de seu parâmetro.
+O método [**ResizeBorderDW**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-idockingwindow-resizeborderdw) não é usado com nenhum tipo de objeto Band e sempre deve retornar e \_ NOTIMPL. O método [**ShowDW**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-idockingwindow-showdw) mostra ou oculta a janela da barra do Explorer, dependendo do valor de seu parâmetro.
 
 
 ```C++
@@ -400,7 +400,7 @@ STDMETHODIMP CDeskBand::ShowDW(BOOL fShow)
 
 
 
-O [**método CloseDW**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-idockingwindow-closedw) destrói a janela da Barra do Explorer.
+O método [**CloseDW**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-idockingwindow-closedw) destrói a janela da barra do Gerenciador.
 
 
 ```C++
@@ -419,7 +419,7 @@ STDMETHODIMP CDeskBand::CloseDW(DWORD)
 
 
 
-O método restante, [**GetBandInfo,**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ideskband)é específico de **IDeskBand.** Internet Explorer o usa para especificar o identificador e o modo de exibição da Barra do Explorer. Internet Explorer também pode solicitar uma ou mais informações da Barra do Explorer preenchendo o **membro dwMask** da estrutura [**DESKBANDINFO**](/windows/desktop/api/shobjidl_core/ns-shobjidl_core-deskbandinfo) que é passada como o terceiro parâmetro. **GetBandInfo** deve armazenar o identificador e o modo de exibição e preencher a estrutura **DESKBANDINFO** com os dados solicitados. O exemplo de Barra do Explorer implementa **GetBandInfo,** conforme mostrado no exemplo de código a seguir.
+O método restante, [**GetBandInfo**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ideskband), é específico para **IDeskBand**. O Internet Explorer usa-o para especificar o identificador e o modo de exibição da barra do Explorer. O Internet Explorer também pode solicitar uma ou mais partes de informações da barra do Explorer preenchendo o membro **dwMask** da estrutura [**DESKBANDINFO**](/windows/desktop/api/shobjidl_core/ns-shobjidl_core-deskbandinfo) que é passada como o terceiro parâmetro. **GetBandInfo** deve armazenar o identificador e o modo de exibição e preencher a estrutura **DESKBANDINFO** com os dados solicitados. O exemplo da barra do Explorer implementa **GetBandInfo** conforme mostrado no exemplo de código a seguir.
 
 
 ```C++
@@ -479,25 +479,25 @@ STDMETHODIMP CDeskBand::GetBandInfo(DWORD dwBandID, DWORD, DESKBANDINFO *pdbi)
 
 
 
-### <a name="optional-interface-implementations"></a>Implementações de interface opcionais
+### <a name="optional-interface-implementations"></a>Implementações de interface opcional
 
-Há duas interfaces que não são necessárias, mas que podem ser úteis para implementar: [**IInputObject**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-iinputobject) e [**IContextMenu.**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-icontextmenu) O exemplo da Barra do Explorer implementa **IInputObject.** Consulte a documentação para obter informações sobre como implementar **IContextMenu**.
+Há duas interfaces que não são necessárias, mas que podem ser úteis para implementar: [**IInputObject**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-iinputobject) e [**IContextMenu**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-icontextmenu). O exemplo da barra do Gerenciador implementa **IInputObject**. Consulte a documentação para obter informações sobre como implementar o **IContextMenu**.
 
 ### <a name="iinputobject"></a>IInputObject
 
-A interface [**IInputObject**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-iinputobject) deve ser implementada se um objeto de banda aceitar a entrada do usuário. Internet Explorer implementa [**IInputObjectSite**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-iinputobjectsite) e usa **IInputObject** para manter o foco de entrada do usuário adequado quando ele tiver mais de uma janela contida. Há três métodos que precisam ser implementados por uma Barra do Explorer.
+A interface [**IInputObject**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-iinputobject) deve ser implementada se um objeto Band aceitar entrada do usuário. O Internet Explorer implementa [**IInputObjectSite**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-iinputobjectsite) e usa o **IInputObject** para manter o foco de entrada do usuário adequado quando ele tem mais de uma janela contida. Há três métodos que precisam ser implementados por uma barra do Explorer.
 
 -   [**IInputObject::UIActivateIO**](/windows/win32/api/shobjidl_core/nf-shobjidl_core-iinputobject-uiactivateio)
 -   [**IInputObject::HasFocusIO**](/windows/win32/api/shobjidl_core/nf-shobjidl_core-iinputobject-hasfocusio)
 -   [**IInputObject::TranslateAcceleratorIO**](/windows/win32/api/shobjidl_core/nf-shobjidl_core-iinputobject-translateacceleratorio)
 
-Internet Explorer [**chama UIActivateIO**](/windows/win32/api/shobjidl_core/nf-shobjidl_core-iinputobject-uiactivateio) para informar à Barra do Explorer que ele está sendo ativado ou desativado. Quando ativado, o exemplo da Barra do Explorer chama [**SetFocus**](/windows/win32/api/winuser/nf-winuser-setfocus) para definir o foco como sua janela.
+O Internet Explorer chama [**UIActivateIO**](/windows/win32/api/shobjidl_core/nf-shobjidl_core-iinputobject-uiactivateio) para informar à barra do Explorer que está sendo ativada ou desativada. Quando ativado, o exemplo da barra do Explorer chama [**SetFocus**](/windows/win32/api/winuser/nf-winuser-setfocus) para definir o foco para sua janela.
 
-Internet Explorer chama [**HasFocusIO**](/windows/win32/api/shobjidl_core/nf-shobjidl_core-iinputobject-hasfocusio) quando está tentando determinar qual janela tem foco. Se a janela da Barra do Explorer ou um de seus descendentes tiver foco, **HasFocusIO** deverá retornar S \_ OK. Caso não, ele deverá retornar S \_ FALSE.
+O Internet Explorer chama [**HasFocusIO**](/windows/win32/api/shobjidl_core/nf-shobjidl_core-iinputobject-hasfocusio) quando está tentando determinar qual janela tem o foco. Se a janela da barra do Explorer ou um de seus descendentes tiver foco, **HasFocusIO** deverá retornar s \_ OK. Caso contrário, ele deve retornar S \_ false.
 
-[**TranslateAcceleratorIO**](/windows/win32/api/shobjidl_core/nf-shobjidl_core-iinputobject-translateacceleratorio) permite que o objeto processe aceleradores de teclado. O exemplo de Barra do Explorer não implementa esse método, portanto, ele retorna S \_ FALSE.
+[**TranslateAcceleratorIO**](/windows/win32/api/shobjidl_core/nf-shobjidl_core-iinputobject-translateacceleratorio) permite que o objeto processe aceleradores de teclado. A amostra da barra do Gerenciador não implementa esse método, portanto, retorna S \_ false.
 
-A implementação da barra de exemplo [**de IInputObjectSite**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-iinputobjectsite) é a seguinte.
+A implementação da barra de exemplo do [**IInputObjectSite**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-iinputobjectsite) é a seguinte.
 
 
 ```C++
@@ -524,9 +524,9 @@ STDMETHODIMP CDeskBand::TranslateAcceleratorIO(MSG *)
 
 
 
-### <a name="clsid-registration"></a>Registro CLSID
+### <a name="clsid-registration"></a>Registro de CLSID
 
-Assim como com todos os objetos COM, o CLSID da Barra do Explorer deve ser registrado. Para que o objeto funcione corretamente com Internet Explorer, ele também deve ser registrado para a categoria de componente apropriada (CATID \_ InfoBand). A seção de código relevante para a Barra do Explorer é mostrada no exemplo de código a seguir.
+Assim como acontece com todos os objetos COM, o CLSID da barra do Explorer deve ser registrado. Para que o objeto funcione corretamente com o Internet Explorer, ele também deve ser registrado para a categoria de componente apropriada (CATID \_ InfoBand). A seção de código relevante para a barra do Gerenciador é mostrada no exemplo de código a seguir.
 
 
 ```C++
@@ -602,7 +602,7 @@ HRESULT RegisterServer()
 
 O registro de objetos de banda no exemplo usa procedimentos COM normais.
 
-Além do CLSID, o servidor de objetos de banda também deve ser registrado para uma ou mais categorias de componente. Na verdade, essa é a principal diferença na implementação entre os exemplos de barra vertical e horizontal do Explorer. Esse processo é tratado criando um objeto gerenciador de categorias de componente (CLSID \_ StdComponentCategoriesMgr) e usando o método [**ICatRegister::RegisterClassImplCategories**](/windows/win32/api/comcat/nf-comcat-icatregister-registerclassimplcategories) para registrar o servidor de objetos de banda. Neste exemplo, o registro de categoria de componente é tratado passando CLSID e CATID da amostra da Barra do Explorer para uma função privada,**RegisterComCat,** conforme mostrado no exemplo de código a seguir.
+Além do CLSID, o servidor de objeto de banda também deve ser registrado para uma ou mais categorias de componente. Essa é, na verdade, a principal diferença na implementação entre as amostras de barra vertical e horizontal do Explorer. Esse processo é tratado pela criação de um objeto do Gerenciador de categorias de componente (CLSID \_ StdComponentCategoriesMgr) e usando o método [**ICatRegister:: RegisterClassImplCategories**](/windows/win32/api/comcat/nf-comcat-icatregister-registerclassimplcategories) para registrar o servidor de objeto de banda. Neste exemplo, o registro de categoria de componente é manipulado passando o CLSID de exemplo da barra do Explorer e o CATID para uma função particular —**RegisterComCat**— conforme mostrado no exemplo de código a seguir.
 
 
 ```C++
@@ -624,13 +624,13 @@ HRESULT RegisterComCat()
 
 ### <a name="the-window-procedure"></a>O procedimento de janela
 
-Como um objeto de banda usa uma janela filho para sua exibição, ele deve implementar um procedimento de janela para lidar com Windows mensagens. O exemplo de banda tem funcionalidade mínima, portanto, seu procedimento de janela lida apenas com cinco mensagens:
+como um objeto band usa uma janela filho para sua exibição, ele deve implementar um procedimento de janela para manipular Windows mensagens. O exemplo de banda tem funcionalidade mínima, portanto, seu procedimento de janela manipula apenas cinco mensagens:
 
--   [**WM \_ NCCREATE**](../winmsg/wm-nccreate.md)
--   [**WM \_ PAINT**](../gdi/wm-paint.md)
--   [**COMANDO \_ WM**](../menurc/wm-command.md)
+-   [**NCCREATE do WM \_**](../winmsg/wm-nccreate.md)
+-   [**pintura do WM \_**](../gdi/wm-paint.md)
+-   [**comando do WM \_**](../menurc/wm-command.md)
 -   [**WM \_ SETFOCUS**](../inputdev/wm-setfocus.md)
--   [**WM \_ KILLFOCUS**](../inputdev/wm-killfocus.md)
+-   [**KILLFOCUS do WM \_**](../inputdev/wm-killfocus.md)
 
 O procedimento pode ser facilmente expandido para acomodar mensagens adicionais para dar suporte a mais recursos.
 
@@ -685,7 +685,7 @@ LRESULT CALLBACK CDeskBand::WndProc(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM 
 
 
 
-O manipulador \_ WM COMMAND simplesmente retorna zero. O manipulador WM \_ PAINT cria a exibição de texto simples mostrada no exemplo da Barra do Explorer na introdução.
+O manipulador de comandos do WM \_ simplesmente retorna zero. O manipulador de pintura do WM \_ cria a exibição de texto simples mostrada no exemplo da barra do Explorer na introdução.
 
 
 ```C++
@@ -757,7 +757,7 @@ void CDeskBand::OnPaint(const HDC hdcIn)
 
 
 
-Os manipuladores WM SETFOCUS e WM KILLFOCUS informam o site de uma alteração de foco chamando o método \_ \_ [**IInputObjectSite::OnFocusChangeIS**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-iinputobjectsite-onfocuschangeis) do site.
+Os \_ manipuladores do WM SETFOCUS e do WM KILLFOCUS informam \_ o site de uma alteração de foco chamando o método [**IInputObjectSite:: OnFocusChangeIS**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-iinputobjectsite-onfocuschangeis) do site.
 
 
 ```C++
@@ -774,7 +774,7 @@ void CDeskBand::OnFocus(const BOOL fFocus)
 
 
 
-Os objetos de banda fornecem uma maneira flexível e poderosa de estender os recursos de Internet Explorer criando barras personalizadas do Explorer. A implementação de uma faixa de suporte permite que você estenda os recursos das janelas normais. Embora alguma programação COM seja necessária, ela serve, em última análise, para fornecer uma janela filho para sua interface do usuário. A partir daí, a maior parte da implementação pode usar técnicas Windows programação familiar. Embora o exemplo discutido aqui tenha apenas funcionalidade limitada, ele ilustra todos os recursos necessários de um objeto de banda e pode ser prontamente estendido para criar uma interface do usuário exclusiva e poderosa.
+Os objetos de banda fornecem uma maneira flexível e eficiente de estender os recursos do Internet Explorer Criando barras personalizadas do Explorer. A implementação de uma banda de mesa permite que você estenda os recursos das janelas normais. Embora alguma programação COM seja necessária, ela finalmente serve para fornecer uma janela filho para a interface do usuário. a partir daí, a maior parte da implementação pode usar técnicas de programação Windows familiares. Embora o exemplo discutido aqui tenha apenas uma funcionalidade limitada, ele ilustra todos os recursos necessários de um objeto de banda e pode ser prontamente estendido para criar uma interface de usuário exclusiva e poderosa.
 
  
 

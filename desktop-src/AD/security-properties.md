@@ -8,16 +8,16 @@ keywords:
 - AD atributos de segurança do usuário
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c51000aefdf9ec0f26406607bd781ac4d87b6106
-ms.sourcegitcommit: 25bf66769c2087b1a87d6db5930b604cb57e0f98
+ms.openlocfilehash: 5dfe23252002f2ffbbba3f8e8a8faf5a2d36ce348bdbd7503c0d99a816a81902
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "103917759"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119024884"
 ---
 # <a name="user-security-attributes"></a>Atributos de segurança do usuário
 
-Além de nomear Propriedades para objetos de usuário, por exemplo, [**objectGUID**](/windows/desktop/ADSchema/a-objectguid), [**objectSid**](/windows/desktop/ADSchema/a-objectsid), [**CN**](/windows/desktop/ADSchema/a-cn), [**distinguishedName**](/windows/desktop/ADSchema/a-distinguishedname)e assim por diante, há outras propriedades de segurança usadas para logon, acesso à rede e controle de acesso. Essas propriedades são usadas pelo sistema de segurança do Windows 2000. Essas propriedades podem ser exibidas e gerenciadas pelo snap-in Active Directory usuário e computadores.
+Além de nomear Propriedades para objetos de usuário, por exemplo, [**objectGUID**](/windows/desktop/ADSchema/a-objectguid), [**objectSid**](/windows/desktop/ADSchema/a-objectsid), [**CN**](/windows/desktop/ADSchema/a-cn), [**distinguishedName**](/windows/desktop/ADSchema/a-distinguishedname)e assim por diante, há outras propriedades de segurança usadas para logon, acesso à rede e controle de acesso. essas propriedades são usadas pelo sistema de segurança Windows 2000. Essas propriedades podem ser exibidas e gerenciadas pelo snap-in Active Directory usuário e computadores.
 
 <dl> <dt>
 
@@ -31,7 +31,7 @@ O atributo [**accountExpires**](/windows/desktop/ADSchema/a-accountexpires) espe
 <span id="altSecurityIdentities"></span><span id="altsecurityidentities"></span><span id="ALTSECURITYIDENTITIES"></span>[**altSecurityIdentities**](/windows/desktop/ADSchema/a-altsecurityidentities)
 </dt> <dd>
 
-O atributo [**altSecurityIdentities**](/windows/desktop/ADSchema/a-altsecurityidentities) é um atributo com vários valores que contém mapeamentos para certificados X. 509 ou contas de usuário Kerberos externas para esse usuário para fins de autenticação. Vários pacotes de segurança, incluindo o pacote de autenticação de chave pública e o Kerberos, usam esses dados para autenticar usuários quando eles apresentam a forma alternativa de identificação, como certificado, tíquete Kerberos do UNIX e assim por diante. Crie um token do Windows 2000 com base na conta de usuário correspondente, de modo que eles possam acessar os recursos do sistema.
+O atributo [**altSecurityIdentities**](/windows/desktop/ADSchema/a-altsecurityidentities) é um atributo com vários valores que contém mapeamentos para certificados X. 509 ou contas de usuário Kerberos externas para esse usuário para fins de autenticação. vários pacotes de segurança, incluindo o pacote de autenticação de chave pública e o Kerberos, usam esses dados para autenticar usuários quando eles apresentam a forma alternativa de identificação, como certificado, UNIX tíquete Kerberos e assim por diante. crie um token Windows 2000 com base na conta de usuário correspondente, de modo que eles possam acessar os recursos do sistema.
 
 Para certificados X. 509, os valores devem ser os nomes do emissor e da entidade em certificados do 509v3, emitidos por uma autoridade de certificação pública externa, que é mapeada para a conta de usuário usada para encontrar uma conta para autenticação. O pacote SSL (Schannel) usa a seguinte sintaxe: X509: <somecertinfotype> somecertinfo. Por exemplo, o valor a seguir especifica o DN do emissor " \<I\> " com o DN "c = US, O = InternetCA, CN = APublicCertificateAuthority" e o DN do assunto " \<S\> " com o DN "c = US, o = Fabrikam, ou = Sales, CN = Jeff Smith".
 
@@ -72,14 +72,14 @@ Não replicado. O atributo [**badPwdCount**](/windows/desktop/ADSchema/a-badpwdc
 <span id="codePage"></span><span id="codepage"></span><span id="CODEPAGE"></span>[**Código**](/windows/desktop/ADSchema/a-codepage)
 </dt> <dd>
 
-O atributo [**CodePage**](/windows/desktop/ADSchema/a-codepage) especifica a página de código para o idioma escolhido pelo usuário. Esse valor não é usado pelo Windows 2000.
+O atributo [**CodePage**](/windows/desktop/ADSchema/a-codepage) especifica a página de código para o idioma escolhido pelo usuário. esse valor não é usado pelo Windows 2000.
 
 </dd> <dt>
 
 <span id="countryCode"></span><span id="countrycode"></span><span id="COUNTRYCODE"></span>[**countryCode**](/windows/desktop/ADSchema/a-countrycode)
 </dt> <dd>
 
-O atributo [**CountryCode**](/windows/desktop/ADSchema/a-countrycode) especifica o código de país/região para o idioma do usuário. Esse valor não é usado pelo Windows 2000.
+O atributo [**CountryCode**](/windows/desktop/ADSchema/a-countrycode) especifica o código de país/região para o idioma do usuário. esse valor não é usado pelo Windows 2000.
 
 </dd> <dt>
 
@@ -136,7 +136,7 @@ Não replicado. O atributo [**LastLogon**](/windows/desktop/ADSchema/a-lastlogon
 <span id="lmPwdHistory"></span><span id="lmpwdhistory"></span><span id="LMPWDHISTORY"></span>[**lmPwdHistory**](/windows/desktop/ADSchema/a-lmpwdhistory)
 </dt> <dd>
 
-O atributo [**lmPwdHistory**](/windows/desktop/ADSchema/a-lmpwdhistory) é o histórico de senha do usuário no formato unidirecional do LM (LAN Manager). O LM OWF é usado para compatibilidade com clientes do LAN Manager 2. x, Windows 95 e Windows 98. Esse atributo é usado somente pelo sistema operacional. Lembre-se de que você não pode derivar a senha de texto não criptografado da forma OWF da senha.
+O atributo [**lmPwdHistory**](/windows/desktop/ADSchema/a-lmpwdhistory) é o histórico de senha do usuário no formato unidirecional do LM (LAN Manager). o LM OWF é usado para compatibilidade com clientes do LAN Manager 2. x, Windows 95 e Windows 98. Esse atributo é usado somente pelo sistema operacional. Lembre-se de que você não pode derivar a senha de texto não criptografado da forma OWF da senha.
 
 </dd> <dt>
 
@@ -180,138 +180,138 @@ Esse atributo não é armazenado — é um atributo de back-link calculado.
 <span id="ntPwdHistory"></span><span id="ntpwdhistory"></span><span id="NTPWDHISTORY"></span>[**ntPwdHistory**](/windows/desktop/ADSchema/a-ntpwdhistory)
 </dt> <dd>
 
-O atributo [**ntPwdHistory**](/windows/desktop/ADSchema/a-ntpwdhistory) é o histórico de senha do usuário no formato One-Way do Windows NT (OWF). O Windows 2000 usa o Windows NT OWF. Esse atributo é usado somente pelo sistema operacional. Lembre-se de que você não pode derivar a senha de texto não criptografado de volta da forma OWF da senha.
+o atributo [**ntPwdHistory**](/windows/desktop/ADSchema/a-ntpwdhistory) é o histórico de senha do usuário em Windows NT formato unidirecional (OWF). Windows 2000 usa o Windows NT OWF. Esse atributo é usado somente pelo sistema operacional. Esteja ciente de que você não pode derivar a senha de texto não criptografado do formulário OWF da senha.
 
 </dd> <dt>
 
 <span id="otherMailbox"></span><span id="othermailbox"></span><span id="OTHERMAILBOX"></span>[**otherMailbox**](/windows/desktop/ADSchema/a-othermailbox)
 </dt> <dd>
 
-O atributo [**otherMailbox**](/windows/desktop/ADSchema/a-othermailbox) é um atributo com vários valores que contém outros endereços de email adicionais em um formulário, por exemplo, "CCMAIL: JeffSmith".
+O [**atributo otherMailbox**](/windows/desktop/ADSchema/a-othermailbox) é um atributo com vários valores que contém outros endereços de email adicionais em um formulário, por exemplo, "CCMAIL: JeffSmith".
 
 </dd> <dt>
 
 <span id="PasswordExpirationDate"></span><span id="passwordexpirationdate"></span><span id="PASSWORDEXPIRATIONDATE"></span>[**PasswordExpirationDate**](/windows/desktop/ADSI/iadsuser-property-methods)
 </dt> <dd>
 
-A data de expiração da senha não é um atributo no objeto de usuário. É um valor calculado com base na soma de [**pwdLastSet**](/windows/desktop/ADSchema/a-pwdlastset) para o usuário e [**maxPwdAge**](/windows/desktop/ADSchema/a-maxpwdage) do domínio do usuário. Para obter a data de expiração da senha, obtenha a propriedade [**IADsUser. PasswordExpirationDate**](/windows/desktop/ADSI/iadsuser-property-methods) . Não é possível modificar este atributo para um usuário; em vez disso, defina a propriedade [**IADsDomain. MaxPasswordAge**](/windows/desktop/ADSI/iadsdomain-property-methods) para alterar a configuração do domínio.
+A data de expiração da senha não é um atributo no objeto de usuário. É um valor calculado com base na soma de [**pwdLastSet**](/windows/desktop/ADSchema/a-pwdlastset) para o usuário e [**maxPwdAge**](/windows/desktop/ADSchema/a-maxpwdage) do domínio do usuário. Para obter a data de validade da senha, obter a [**propriedade IADsUser.PasswordExpirationDate.**](/windows/desktop/ADSI/iadsuser-property-methods) Você não pode modificar esse atributo para um usuário; Em vez disso, de definir [**a propriedade IADsDomain.MaxPasswordAge**](/windows/desktop/ADSI/iadsdomain-property-methods) para alterar a configuração do domínio.
 
 </dd> <dt>
 
 <span id="primaryGroupID"></span><span id="primarygroupid"></span><span id="PRIMARYGROUPID"></span>[**primaryGroupId**](/windows/desktop/ADSchema/a-primarygroupid)
 </dt> <dd>
 
-O atributo [**primaryGroupId**](/windows/desktop/ADSchema/a-primarygroupid) é um atributo de valor único que contém o [**primaryGroupToken**](/windows/desktop/ADSchema/a-primarygrouptoken) do grupo que é o grupo primário do objeto. O grupo primário do objeto não está incluído no atributo [**memberOf**](/windows/desktop/ADSchema/a-memberof) . Por exemplo, por padrão, o grupo primário de um objeto de usuário é o **primaryGroupToken** do grupo de usuários do domínio, mas o grupo de usuários do domínio não faz parte do atributo **memberOf** do objeto do usuário.
+O [**atributo primaryGroupId**](/windows/desktop/ADSchema/a-primarygroupid) é um atributo de valor único que contém [**o primaryGroupToken**](/windows/desktop/ADSchema/a-primarygrouptoken) do grupo que é o grupo primário do objeto . O grupo primário do objeto não está incluído no [**atributo memberOf.**](/windows/desktop/ADSchema/a-memberof) Por exemplo, por padrão, o grupo principal de um objeto de usuário é **o primaryGroupToken** do grupo Usuários do Domínio, mas o grupo Usuários do Domínio não faz parte do atributo **memberOf** do objeto de usuário.
 
 </dd> <dt>
 
-<span id="profilePath"></span><span id="profilepath"></span><span id="PROFILEPATH"></span>[**profilepath**](/windows/desktop/ADSchema/a-profilepath)
+<span id="profilePath"></span><span id="profilepath"></span><span id="PROFILEPATH"></span>[**profilePath**](/windows/desktop/ADSchema/a-profilepath)
 </dt> <dd>
 
-O atributo [**ProfilePath**](/windows/desktop/ADSchema/a-profilepath) especifica um caminho para o perfil do usuário. Esse valor pode ser uma cadeia de caracteres nula, um caminho absoluto local ou um caminho UNC.
+O [**atributo profilePath**](/windows/desktop/ADSchema/a-profilepath) especifica um caminho para o perfil do usuário. Esse valor pode ser uma cadeia de caracteres nula, um caminho absoluto local ou um caminho UNC.
 
 </dd> <dt>
 
 <span id="pwdLastSet"></span><span id="pwdlastset"></span><span id="PWDLASTSET"></span>[**pwdLastSet**](/windows/desktop/ADSchema/a-pwdlastset)
 </dt> <dd>
 
-O atributo [**pwdLastSet**](/windows/desktop/ADSchema/a-pwdlastset) especifica quando a senha foi alterada pela última vez. Esse valor é armazenado como um inteiro grande que representa o número de intervalos de 100 a nanossegundos desde 1º de janeiro de 1601 (UTC).
+O [**atributo pwdLastSet**](/windows/desktop/ADSchema/a-pwdlastset) especifica quando a senha foi alterada pela última vez. Esse valor é armazenado como um inteiro grande que representa o número de intervalos de 100 nanossegundos desde 1º de janeiro de 1601 (UTC).
 
-O sistema usa o valor desse atributo e o atributo [**maxPwdAge**](/windows/desktop/ADSchema/a-maxpwdage) do domínio que contém o objeto de usuário para calcular a data de validade da senha. Ou seja, a soma de [**pwdLastSet**](/windows/desktop/ADSchema/a-pwdlastset) para o usuário e **maxPwdAge** do domínio do usuário.
+O sistema usa o valor desse atributo e o atributo [**maxPwdAge**](/windows/desktop/ADSchema/a-maxpwdage) do domínio que contém o objeto de usuário para calcular a data de expiração da senha. Ou seja, a soma de [**pwdLastSet**](/windows/desktop/ADSchema/a-pwdlastset) para o usuário e **maxPwdAge** do domínio do usuário.
 
-Esse atributo controla se o usuário deve alterar a senha quando o usuário fizer logon no próximo. Se [**pwdLastSet**](/windows/desktop/ADSchema/a-pwdlastset) for zero, o padrão, o usuário deverá alterar a senha no próximo logon. O valor-1 indica que o usuário não precisa alterar a senha no próximo logon. O sistema define esse valor como-1 depois que o usuário tiver definido a senha.
+Esse atributo controla se o usuário deve alterar a senha quando o usuário faz logo em seguida. Se [**pwdLastSet**](/windows/desktop/ADSchema/a-pwdlastset) for zero, o padrão será que o usuário deverá alterar a senha no próximo logon. O valor -1 indica que o usuário não precisa alterar a senha no próximo logon. O sistema define esse valor como -1 depois que o usuário define a senha.
 
 </dd> <dt>
 
 <span id="sAMAccountType"></span><span id="samaccounttype"></span><span id="SAMACCOUNTTYPE"></span>[**sAMAccountType**](/windows/desktop/ADSchema/a-samaccounttype)
 </dt> <dd>
 
-O atributo [**sAMAccountType**](/windows/desktop/ADSchema/a-samaccounttype) especifica um inteiro que representa o tipo de conta. Isso é definido pelo sistema operacional quando o objeto é criado.
+O [**atributo sAMAccountType**](/windows/desktop/ADSchema/a-samaccounttype) especifica um inteiro que representa o tipo de conta. Isso é definido pelo sistema operacional quando o objeto é criado.
 
 </dd> <dt>
 
-<span id="scriptPath"></span><span id="scriptpath"></span><span id="SCRIPTPATH"></span>[**scriptPath**](/windows/desktop/ADSchema/a-scriptpath)
+<span id="scriptPath"></span><span id="scriptpath"></span><span id="SCRIPTPATH"></span>[**Scriptpath**](/windows/desktop/ADSchema/a-scriptpath)
 </dt> <dd>
 
-O atributo [**ScriptPath**](/windows/desktop/ADSchema/a-scriptpath) especifica o caminho do script de logon do usuário,. cmd,. exe ou o arquivo. bat. A cadeia de caracteres pode ser nula.
+O [**atributo scriptPath**](/windows/desktop/ADSchema/a-scriptpath) especifica o caminho do script de logon do usuário, .cmd, .exe ou .bat arquivo. A cadeia de caracteres pode ser nula.
 
 </dd> <dt>
 
-<span id="unicodePwd"></span><span id="unicodepwd"></span><span id="UNICODEPWD"></span>[**unicodePwd**](/windows/desktop/ADSchema/a-unicodepwd)
+<span id="unicodePwd"></span><span id="unicodepwd"></span><span id="UNICODEPWD"></span>[**Unicodepwd**](/windows/desktop/ADSchema/a-unicodepwd)
 </dt> <dd>
 
-O atributo [**unicodePwd**](/windows/desktop/ADSchema/a-unicodepwd) é a senha do usuário.
+O [**atributo unicodePwd**](/windows/desktop/ADSchema/a-unicodepwd) é a senha do usuário.
 
-Para definir a senha do usuário, use o método [**IADsUser. ChangePassword**](/windows/desktop/api/iads/nf-iads-iadsuser-changepassword) , se o seu script ou aplicativo permitir que o usuário altere sua própria senha ou o método [**IADsUser. SetPassword**](/windows/desktop/api/iads/nf-iads-iadsuser-setpassword) , se o seu script ou aplicativo estiver permitindo que um administrador redefina uma senha.
+Para definir a senha do usuário, use o método [**IADsUser.ChangePassword,**](/windows/desktop/api/iads/nf-iads-iadsuser-changepassword) se o script ou o aplicativo permitir que o usuário altere sua própria senha ou o método [**IADsUser.SetPassword,**](/windows/desktop/api/iads/nf-iads-iadsuser-setpassword) se o script ou o aplicativo estiver permitindo que um administrador redefina uma senha.
 
-A senha do usuário no formato One-Way do Windows NT (OWF). O Windows 2000 usa o Windows NT OWF. Esse atributo é usado somente pelo sistema operacional. Lembre-se de que você não pode derivar a senha de texto não criptografado de volta da forma OWF da senha.
+A senha do usuário Windows NT formato único (OWF). Windows 2000 usa o Windows NT OWF. Esse atributo é usado apenas pelo sistema operacional. Esteja ciente de que você não pode derivar a senha de texto não criptografado do formulário OWF da senha.
 
 </dd> <dt>
 
-<span id="userAccountControl"></span><span id="useraccountcontrol"></span><span id="USERACCOUNTCONTROL"></span>[**userAccountControl**](/windows/desktop/ADSchema/a-useraccountcontrol)
+<span id="userAccountControl"></span><span id="useraccountcontrol"></span><span id="USERACCOUNTCONTROL"></span>[**Useraccountcontrol**](/windows/desktop/ADSchema/a-useraccountcontrol)
 </dt> <dd>
 
-O atributo [**userAccountControl**](/windows/desktop/ADSchema/a-useraccountcontrol) especifica sinalizadores que controlam o comportamento de senha, bloqueio, desabilitação/habilitação, script e diretório base para o usuário. Esse atributo também contém um sinalizador que indica o tipo de conta do objeto. O objeto de usuário geralmente tem a \_ conta normal da UF \_ definida.
+O [**atributo userAccountControl**](/windows/desktop/ADSchema/a-useraccountcontrol) especifica sinalizadores que controlam senha, bloqueio, desabilitar/habilitar, script e comportamento de diretório home para o usuário. Esse atributo também contém um sinalizador que indica o tipo de conta do objeto . O objeto de usuário geralmente tem a CONTA NORMAL DE UF \_ \_ definida.
 
-Os sinalizadores a seguir são definidos em Lmaccess. h.
+Os sinalizadores a seguir são definidos em Lmaccess.h.
 
 
 
 | Sinalizador                     | Descrição                                                                                                                                                      |
 |--------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| SCRIPT da UF \_               | O script de logon executado. Esse valor deve ser definido para o LAN Manager 2,0 ou o Windows NT.                                                                             |
+| SCRIPT DE UF \_               | O script de logon executado. Esse valor deve ser definido para LAN Manager 2.0 ou Windows NT.                                                                             |
 | UF \_ ACCOUNTDISABLE       | A conta de usuário está desabilitada.                                                                                                                                    |
-| UF \_ HOMEDIR \_ necessária    | O diretório base é necessário. Esse valor é ignorado no Windows NT e no Windows 2000.                                                                            |
-| UF \_ passwd \_ NOTREQD      | Nenhuma senha é necessária.                                                                                                                                         |
-| UF \_ passwd \_ não \_ alterar | O usuário não pode alterar a senha.                                                                                                                             |
-| bloqueio da UF \_              | A conta está bloqueada no momento. Esse valor pode ser limpo para desbloquear uma conta bloqueada anteriormente. Esse valor não pode ser usado para bloquear uma conta bloqueada anteriormente. |
-| UF \_ não \_ expira em \_ passwd | Representa a senha, que nunca deve expirar na conta.                                                                                               |
+| UF \_ HOMEDIR \_ OBRIGATÓRIO    | O diretório home é necessário. Esse valor é ignorado em Windows NT e Windows 2000.                                                                            |
+| UF \_ PASSWD \_ NOTREQD      | Nenhuma senha é necessária.                                                                                                                                         |
+| A UNIVERSIDADE \_ PASSWD \_ NÃO PODE \_ MUDAR | O usuário não pode alterar a senha.                                                                                                                             |
+| BLOQUEIO DE UF \_              | A conta está bloqueada no momento. Esse valor pode ser limpo para desbloquear uma conta bloqueada anteriormente. Esse valor não pode ser usado para bloquear uma conta bloqueada anteriormente. |
+| A UNIVERSIDADE \_ NÃO \_ \_ EXPIRARÁ PASSWD | Representa a senha, que nunca deve expirar na conta.                                                                                               |
 
 
 
- 
+ 
 
-Os sinalizadores a seguir descrevem o tipo de conta. Somente um valor pode ser definido. Você não pode alterar o tipo de conta.
+Os sinalizadores a seguir descrevem o tipo de conta. Somente um valor pode ser definido. Não é possível alterar o tipo de conta.
 
 
 
 | Sinalizador                            | Descrição                                                                                                                                                                                                                                     |
 |---------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| \_conta normal da UF \_             | Esse é um tipo de conta padrão que representa um usuário típico.                                                                                                                                                                                  |
-| UF \_ \_ duplicado de \_ conta temporária    | Essa é uma conta para usuários cuja conta primária está em outro domínio. Essa conta fornece acesso de usuário a esse domínio, mas não a qualquer domínio que confie nesse domínio. O gerente de usuário refere-se a esse tipo de conta como uma conta de usuário local. |
-| conta de confiança da UF \_ Workstation \_ \_ | Essa é uma conta de computador para um servidor Windows NT Workstation/Windows 2000 Professional ou Windows NT Server/Windows 2000 que é membro deste domínio.                                                                                     |
-| \_conta de \_ confiança do servidor UF \_      | Essa é uma conta de computador para um controlador de domínio de backup do Windows NT que é membro deste domínio.                                                                                                                                           |
-| conta de confiança de domínio da UF \_ \_ \_ | Essa é uma permissão para confiar em uma conta para um domínio do Windows NT que confia em outros domínios.                                                                                                                                                            |
+| CONTA NORMAL DA UF \_ \_             | Esse é um tipo de conta padrão que representa um usuário típico.                                                                                                                                                                                  |
+| CONTA \_ \_ DUPLICADA TEMP DA UF \_    | Essa é uma conta para usuários cuja conta primária está em outro domínio. Essa conta fornece acesso de usuário a esse domínio, mas não a nenhum domínio que confie nesse domínio. O Gerenciador de Usuários refere-se a esse tipo de conta como uma conta de usuário local. |
+| CONTA CONFIÁVEL DA ESTAÇÃO \_ \_ DE TRABALHO \_ DA UF | Essa é uma conta de computador para uma estação de trabalho do Windows NT/Windows 2000 Professional ou Windows NT Server/Windows 2000 Server que seja membro desse domínio.                                                                                     |
+| CONTA \_ DE CONFIANÇA DO \_ SERVIDOR \_ DA UNIVERSIDADE      | Essa é uma conta de computador para Windows NT controlador de domínio de backup que é membro desse domínio.                                                                                                                                           |
+| CONTA \_ DE CONFIANÇA INTERDOMÍNIO \_ \_ DA UNIVERSIDADE | Essa é uma permissão para confiar em uma conta de Windows NT domínio que confia em outros domínios.                                                                                                                                                            |
 
 
 
- 
+ 
 
 </dd> <dt>
 
 <span id="userCertificate"></span><span id="usercertificate"></span><span id="USERCERTIFICATE"></span>[**userCertificate**](/windows/desktop/ADSchema/a-usercertificate)
 </dt> <dd>
 
-O atributo [**userCertificate**](/windows/desktop/ADSchema/a-usercertificate) é um atributo com valores múltiplos que contém os certificados X509v3 codificados por der emitidos para o usuário. Lembre-se de que esse atributo contém os certificados de chave pública emitidos para esse usuário pelo serviço de certificado da Microsoft.
+O [**atributo userCertificate**](/windows/desktop/ADSchema/a-usercertificate) é um atributo com vários valores que contém os certificados X509v3 codificados em DER emitidos para o usuário. Esteja ciente de que esse atributo contém os certificados de chave pública emitidos para esse usuário pelo Serviço de Certificado da Microsoft.
 
 </dd> <dt>
 
 <span id="userSharedFolder"></span><span id="usersharedfolder"></span><span id="USERSHAREDFOLDER"></span>[**userSharedFolder**](/windows/desktop/ADSchema/a-usersharedfolder)
 </dt> <dd>
 
-O atributo [**userSharedFolder**](/windows/desktop/ADSchema/a-usersharedfolder) especifica um caminho UNC para a pasta de documentos compartilhados do usuário. O caminho deve ser um caminho UNC de rede do diretório de compartilhamento do servidor de formulário \\ \\ \\ \\ . Esse valor pode ser uma cadeia de caracteres nula.
+O [**atributo userSharedFolder**](/windows/desktop/ADSchema/a-usersharedfolder) especifica um caminho UNC para a pasta de documentos compartilhados do usuário. O caminho deve ser um caminho UNC de rede do diretório de \\ \\ compartilhamento do \\ servidor de \\ formulário. Esse valor pode ser uma cadeia de caracteres nula.
 
 </dd> <dt>
 
-<span id="userWorkstations"></span><span id="userworkstations"></span><span id="USERWORKSTATIONS"></span>[**userestações de trabalho**](/windows/desktop/ADSchema/a-userworkstations)
+<span id="userWorkstations"></span><span id="userworkstations"></span><span id="USERWORKSTATIONS"></span>[**userWorkstations**](/windows/desktop/ADSchema/a-userworkstations)
 </dt> <dd>
 
-O atributo [**Userestações de trabalho**](/windows/desktop/ADSchema/a-userworkstations) é um atributo de valor único que contém os nomes NetBIOS das estações de trabalho das quais o usuário pode fazer logon. Cada nome NetBIOS é separado por uma vírgula.
+O [**atributo userWorkstations**](/windows/desktop/ADSchema/a-userworkstations) é um atributo de valor único que contém os nomes NetBIOS das estações de trabalho nas quais o usuário pode fazer logoff. Cada nome NetBIOS é separado por uma vírgula.
 
-Se nenhum valor for definido, isso indicará que não há restrição. Para desabilitar logons de todas as estações de trabalho para essa conta, defina o valor da UF \_ ACCOUNTDISABLE (definido em Lmaccess. h) no atributo [**userAccountControl**](/windows/desktop/ADSchema/a-useraccountcontrol) .
+Se nenhum valor for definido, isso indicará que não há restrição. Para desabilitar logons de todas as estações de trabalho para essa conta, de definir o valor DE \_ LMA ACCOUNTDISABLE (definido em Lmaccess.h) no [**atributo userAccountControl.**](/windows/desktop/ADSchema/a-useraccountcontrol)
 
 </dd> </dl>
 
- 
+ 
 
- 
+ 
