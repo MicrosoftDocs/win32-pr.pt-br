@@ -1,9 +1,9 @@
 ---
-title: Atributo de taxa de quadros (SDK do Windows Media Player)
+title: atributo de taxa de quadros (SDK do Windows Media Player)
 description: A taxa de quadros é um valor decimal que especifica a taxa de quadros (em quadros por segundo) para um arquivo de vídeo.
 ms.assetid: 9ca54620-f877-4934-8fda-e5ae31566128
 keywords:
-- Atributo de taxa de quadros Windows Media Player
+- Windows Media Player de atributo de taxa de quadros
 topic_type:
 - apiref
 api_name:
@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e00b1a0e43de379a0a125b80304150b451c3b881
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c0749c8f719557c97bb165f091e54729fd8dd198fb3737ff9f49f6152bf61e84
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105794469"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118339140"
 ---
 # <a name="framerate-attribute"></a>Atributo de taxa de quadros
 

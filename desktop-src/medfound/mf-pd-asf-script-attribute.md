@@ -1,19 +1,19 @@
 ---
-description: Especifica uma lista de comandos de script e os parâmetros para um arquivo ASF (Advanced Systems Format). Esse atributo corresponde ao objeto de comando de script no cabeçalho ASF, definido na especificação ASF.
+description: Especifica uma lista de comandos de script e os parâmetros para um arquivo ASF (Advanced Systems Format). Esse atributo corresponde ao Objeto de Comando de Script no header do ASF, definido na especificação do ASF.
 ms.assetid: c85c9da4-f0b5-4055-a645-2a71cabbe4a3
-title: Atributo MF_PD_ASF_SCRIPT (Wmcontainer. h)
+title: MF_PD_ASF_SCRIPT atributo (Wmcontainer.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 03de86298d28183aa57cc80b451c4e46bb054de2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b98a078b0196add597ab184703306a7b2eba260082e3544ae84697b70bf71822
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105798271"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118740717"
 ---
-# <a name="mf_pd_asf_script-attribute"></a>\_Atributo de script MF PD \_ ASF \_
+# <a name="mf_pd_asf_script-attribute"></a>Atributo MF \_ PD \_ ASF \_ SCRIPT
 
-Especifica uma lista de comandos de script e os parâmetros para um arquivo ASF (Advanced Systems Format). Esse atributo corresponde ao objeto de comando de script no cabeçalho ASF, definido na especificação ASF.
+Especifica uma lista de comandos de script e os parâmetros para um arquivo ASF (Advanced Systems Format). Esse atributo corresponde ao Objeto de Comando de Script no header do ASF, definido na especificação do ASF.
 
 ## <a name="data-type"></a>Tipo de dados
 
@@ -23,14 +23,14 @@ Matriz de bytes
 
 Esse atributo se aplica a descritores de apresentação para conteúdo ASF.
 
-O método [**IMFASFContentInfo:: GeneratePresentationDescriptor**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfcontentinfo-generatepresentationdescriptor) cria o descritor de apresentação e gera esse atributo a partir do cabeçalho de objeto de comando de script. A tabela a seguir mostra o formato do blob:
+O [**método IMFASFContentInfo::GeneratePresentationDescriptor**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfcontentinfo-generatepresentationdescriptor) cria o descritor de apresentação e gera esse atributo do header do Objeto de Comando de Script. A tabela a seguir mostra o formato do blob:
 
 
 
-| Campo de objeto de comando de script | Tipo de dados    | Tamanho    | Descrição               |
+| Campo Objeto de Comando de Script | Tipo de dados    | Tamanho    | Descrição               |
 |-----------------------------|--------------|---------|---------------------------|
 | Contagem de comandos              | **DWORD**    | 4 bytes | Número de comandos de script |
-| Tipo de comando, comandos      | **MINUCIOSA**\[\] | Varia  | Matriz de comandos de script  |
+| Tipo de comando, comandos      | **Byte**\[\] | Varia  | Matriz de comandos de script  |
 
 
 
@@ -40,13 +40,13 @@ O primeiro **DWORD** é o número de comandos de script, seguidos por uma matriz
 
 
 
-| Campo de objeto de comando de script | Tipo de dados     | Tamanho    | Descrição                                                              |
+| Campo Objeto de Comando de Script | Tipo de dados     | Tamanho    | Descrição                                                              |
 |-----------------------------|---------------|---------|--------------------------------------------------------------------------|
-| Comprimento do nome do comando         | **DWORD**     | 4 bytes | Tamanho da cadeia de caracteres do comando, em bytes, incluindo o caractere nulo.      |
-| Nome do comando                | **WCHAR**\[\] | Varia  | Cadeia de caracteres terminada em nulo que contém o comando de script.                 |
-| Comprimento do nome do tipo de comando    | **DWORD**     | 4 bytes | Tamanho da cadeia de caracteres do tipo de comando, em bytes, incluindo o caractere nulo. |
-| Nome do tipo de comando           | **WCHAR**\[\] | Varia  | Cadeia de caracteres terminada em nulo que contém o tipo de comando.                   |
-| Tempo da apresentação           | **DWORD**     | 4 bytes | Hora da apresentação do comando em milissegundos.                        |
+| Comprimento do nome do comando         | **DWORD**     | 4 bytes | Tamanho da cadeia de caracteres de comando, em bytes, incluindo o caractere NULL.      |
+| Nome do comando                | **Wchar**\[\] | Varia  | Cadeia de caracteres terminada em nulo que contém o comando de script.                 |
+| Comprimento do nome do tipo de comando    | **DWORD**     | 4 bytes | Tamanho da cadeia de caracteres de tipo de comando, em bytes, incluindo o caractere NULL. |
+| Nome do tipo de comando           | **Wchar**\[\] | Varia  | Cadeia de caracteres terminada em nulo que contém o tipo de comando.                   |
+| Tempo da apresentação           | **DWORD**     | 4 bytes | Tempo de apresentação do comando em milissegundos.                        |
 
 
 
@@ -58,9 +58,9 @@ O primeiro **DWORD** é o número de comandos de script, seguidos por uma matriz
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                     |
-| parâmetro<br/>                   | <dl> <dt>Wmcontainer. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                           |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                     |
+| parâmetro<br/>                   | <dl> <dt>Wmcontainer.h</dt> </dl> |
 
 
 
@@ -68,13 +68,13 @@ O primeiro **DWORD** é o número de comandos de script, seguidos por uma matriz
 
 <dl> <dt>
 
-[Lista alfabética de atributos de Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
-[**IMFAttributes:: getBlob**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getblob)
+[**IMFAttributes::GetBlob**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getblob)
 </dt> <dt>
 
-[**IMFAttributes:: setBlob**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setblob)
+[**IMFAttributes::SetBlob**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setblob)
 </dt> <dt>
 
 [**IMFPresentationDescriptor**](/windows/desktop/api/mfidl/nn-mfidl-imfpresentationdescriptor)
@@ -83,7 +83,7 @@ O primeiro **DWORD** é o número de comandos de script, seguidos por uma matriz
 [Atributos do descritor de apresentação](presentation-descriptor-attributes.md)
 </dt> <dt>
 
-[Objeto de cabeçalho ASF](asf-file-structure.md)
+[Objeto de header ASF](asf-file-structure.md)
 </dt> <dt>
 
 [Descritores de apresentação](presentation-descriptors.md)

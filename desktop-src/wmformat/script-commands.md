@@ -25,7 +25,7 @@ ms.locfileid: "118197523"
 ---
 # <a name="script-commands"></a>Comandos de script
 
-Os comandos de script com suporte pelo SDK Windows Formato de Mídia são pares de cadeias de caracteres de nome e valor simples. Por exemplo, um comando de script comum é "URL", que é usado por Windows Media Player e outros aplicativos em reprodução para abrir páginas da Web. A outra metade do par de scripts para o comando "URL" contém uma URL (uniform resource locator) válida, como `https://www.adatum.com` . Nenhum suporte é fornecido pelos objetos desse SDK para comandos específicos; seu aplicativo deve incluir lógica para lidar com os comandos que você usar. Você pode usar os comandos com suporte do Windows Media Player para manter a compatibilidade com a maioria dos jogadores.
+Os comandos de script com suporte do SDK Windows Formato de Mídia são pares de cadeias de caracteres de nome e valor simples. Por exemplo, um comando de script comum é "URL", que é usado por Windows Media Player e outros aplicativos em reprodução para abrir páginas da Web. A outra metade do par de scripts para o comando "URL" contém uma URL (uniform resource locator) válida, como `https://www.adatum.com` . Nenhum suporte é fornecido pelos objetos desse SDK para comandos específicos; seu aplicativo deve incluir lógica para lidar com os comandos que você usar. Você pode usar os comandos com suporte do Windows Media Player para manter a compatibilidade com a maioria dos jogadores.
 
 Os comandos de script podem ser entregues de duas maneiras: em um fluxo de script ou no header do arquivo.
 

@@ -4,12 +4,12 @@ ms.assetid: ff10ed8a-d73b-4d9b-b224-9ecfcc37d5af
 title: System. Image. ResolutionUnit
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dd8b148b074d7e033fe21ab50b1fdbd000fd0a2f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 702351e001c52c03a7610f73cc1f92c7e3da0afc57652a7344271dd1263dc869
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104169571"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118726494"
 ---
 # <a name="systemimageresolutionunit"></a>System. Image. ResolutionUnit
 

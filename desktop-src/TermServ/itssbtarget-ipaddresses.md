@@ -31,12 +31,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c8b3902840b24bc49ae3bda0510c8355afb67810
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: e2ff06e60f125590154a17cb7467deae3611a617b684e9068439c9e15609d8fe
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104364816"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118351242"
 ---
 # <a name="itssbtargetipaddresses-property"></a>Propriedade ITsSbTarget:: IpAddresss
 
@@ -69,7 +69,7 @@ Um ponteiro para uma variável **DWORD** que contém o número de endereços IP 
 
 ## <a name="remarks"></a>Comentários
 
-Essa propriedade era conhecida anteriormente como **TargetExternalIpAddresses** no Windows Server 2008 R2.
+essa propriedade era conhecida anteriormente como **TargetExternalIpAddresses** no Windows Server 2008 R2.
 
 Se o número de endereços IP externos for desconhecido, você poderá chamar esse método com *SOCKADDR* definido como **NULL**. O método será retornado, no parâmetro *numAddresses* , o número de estruturas [**\_ ConnectionPoint tssd**](/windows/win32/api/sessdirpublictypes/ns-sessdirpublictypes-tssd_connectionpoint) necessárias para receber todos os endereços IP externos. Aloque a matriz para *SOCKADDR* com base nesse número e, em seguida, chame o método novamente, configurando *SOCKADDR* para a matriz alocada recentemente e *numAddresses* para o número retornado pela primeira chamada.
 
@@ -100,7 +100,7 @@ Se o número de endereços IP externos for desconhecido, você poderá chamar es
 <td>IID_ITsSbTarget é definido como:
 <ul>
 <li>16616ECC-272D-411D-B324-126893033856</li>
-<li>e85e10ea-db0b-4752-b456-5fd5840901c0 no Windows Server 2008 R2</li>
+<li>e85e10ea-db0b-4752-b456-5fd5840901c0 no servidor Windows 2008 R2</li>
 </ul></td>
 </tr>
 </tbody>

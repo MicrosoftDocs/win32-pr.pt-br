@@ -4,12 +4,12 @@ ms.assetid: 78cef367-b007-46d5-bb7f-2b3f7eed9926
 title: Objetos de resultados assíncronos personalizados
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: de5a0109b47255bc14fcccafbbb09c419848b5a3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7212152de737a0af8e290b2c837b40cd4ad68840a49df79db148b4691068678b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104164206"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118742922"
 ---
 # <a name="custom-asynchronous-result-objects"></a>Objetos de resultados assíncronos personalizados
 

@@ -153,12 +153,12 @@ api_type:
 - COM
 api_location:
 - Microsoft.Interop.Security.Azroles.dll
-ms.openlocfilehash: 07db9e4463d39bfb0a9e090b6f735c07b76afbe8
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ca12c0529cde75c40b8fc83426facc643a977432b24e056413a5681d26d6f4ba
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105756568"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118913074"
 ---
 # <a name="microsoftinteropsecurityazrolesiazauthorizationstore2-interface"></a>Interface Microsoft. Interop. Security. AzRoles. IAzAuthorizationStore2
 
@@ -219,7 +219,7 @@ A interface **Microsoft. Interop. Security. AzRoles. IAzAuthorizationStore2** te
 
 
 
-| Propriedade                                                                                          | Tipo de acesso           | Descrição                                                                                                                   |
+| Propriedade                                                                                          | Tipo de acesso           | Description                                                                                                                   |
 |:--------------------------------------------------------------------------------------------------|:----------------------|:------------------------------------------------------------------------------------------------------------------------------|
 | **Microsoft. Interop. Security. Azroles. IAzAuthorizationStore2. ApplicationData**<br/>          | Leitura/gravação<br/> | [**Propriedade ApplicationData de AzAuthorizationStore**](/windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-get_applicationdata)<br/>                   |
 | **Microsoft. Interop. Security. Azroles. IAzAuthorizationStore2. ApplicationGroups**<br/>        | Somente leitura<br/>  | [**Propriedade ApplicationGroups de AzAuthorizationStore**](/windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-get_applicationgroups)<br/>               |

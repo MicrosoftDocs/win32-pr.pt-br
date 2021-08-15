@@ -1,5 +1,5 @@
 ---
-description: 'Saiba mais sobre: classe EsentSPAvailExtCacheOutOfSyncException'
+description: 'Saiba mais sobre: Classe EsentSPAvailExtCacheOutOfSyncException'
 title: Classe EsentSPAvailExtCacheOutOfSyncException
 TOCTitle: EsentSPAvailExtCacheOutOfSyncException class
 ms:assetid: T:Microsoft.Isam.Esent.Interop.EsentSPAvailExtCacheOutOfSyncException
@@ -24,31 +24,31 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 858646a446266f94fd218a418d94222493ea923b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 34c609727063c0f0470b9b3c9055ed7c9d06e9c0a7aadee20edb00e4e73c8f54
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105787669"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118770349"
 ---
 # <a name="esentspavailextcacheoutofsyncexception-class"></a>Classe EsentSPAvailExtCacheOutOfSyncException
 
-Classe base para JET_err. SPAvailExtCacheOutOfSync exceções.
+Classe base para JET_err. Exceções SPAvailExtCacheOutOfSync.
 
 ## <a name="inheritance-hierarchy"></a>Hierarquia de herança
 
 [System.Object](/dotnet/api/system.object)  
-  [System. Exception](/dotnet/api/system.exception)  
-    [Microsoft. ISAM. ESENT. EsentException](./esentexception-class.md)  
-      [Microsoft. ISAM. ESENT. Interop. EsentErrorException](./esenterrorexception-class.md)  
-        [Microsoft. ISAM. ESENT. Interop. EsentApiException](./esentapiexception-class.md)  
-          [Microsoft. ISAM. ESENT. Interop. EsentObsoleteException](./esentobsoleteexception-class.md)  
-            Microsoft. ISAM. ESENT. Interop. EsentSPAvailExtCacheOutOfSyncException  
+  [System.Exception](/dotnet/api/system.exception)  
+    [Microsoft.Isam.Esent.EsentException](./esentexception-class.md)  
+      [Microsoft.Isam.Esent.Interop.EsentErrorException](./esenterrorexception-class.md)  
+        [Microsoft.Isam.Esent.Interop.EsentApiException](./esentapiexception-class.md)  
+          [Microsoft.Isam.Esent.Interop.EsentObsoleteException](./esentobsoleteexception-class.md)  
+            Microsoft.Isam.Esent.Interop.EsentSPAvailExtCacheOutOfSyncException  
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ``` vb
 'Declaration
@@ -72,6 +72,6 @@ Qualquer membro estático público (Shared no Visual Basic) desse tipo é seguro
 
 #### <a name="reference"></a>Referência
 
-[Membros do EsentSPAvailExtCacheOutOfSyncException](./esentspavailextcacheoutofsyncexception-members.md)
+[Membros EsentSPAvailExtCacheOutOfSyncException](./esentspavailextcacheoutofsyncexception-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

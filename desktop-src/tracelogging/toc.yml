@@ -1,22 +1,22 @@
 - name: TraceLogging
   href: trace-logging-portal.md
   items:
-    - name: Sobre o TraceLogging
+    - name: Sobre TraceLogging
       href: trace-logging-about.md
     - name: Usando TraceLogging
       href: tracelogging-using-tracelogging.md
       items:
-        - name: TraceLogging C/C++ Início Rápido
+        - name: RastreamentoLogging C/C++ Início Rápido
           href: tracelogging-native-quick-start.md
-        - name: Início Rápido gerenciados TraceLogging
+        - name: TraceLogging Managed Início Rápido
           href: tracelogging-managed-quick-start.md
-        - name: Registrar e exibir eventos de TraceLogging
+        - name: Registrar e exibir eventos traceLogging
           href: tracelogging-record-and-display-tracelogging-events.md
-        - name: Exemplos de Tracelogging C/C++
+        - name: Exemplos de rastreamento do C/C++
           href: tracelogging-c-cpp-tracelogging-examples.md
-        - name: Exemplos do .NET Tracelogging
+        - name: Exemplos de rastreamento do .NET
           href: tracelogging-net-examples.md
-        - name: Exemplo de log de Plataforma Universal do Windows
+        - name: Exemplo de registro em log Windows plataforma universal
           href: universal-windows-platform-logging-examples.md
     - name: Referência de TraceLogging
       href: trace-logging-reference.md
@@ -41,7 +41,7 @@
                   href: /previous-versions/windows/desktop/legacy/dn975132(v=vs.85)
                 - name: Método IsStarted
                   href: /previous-versions/windows/desktop/legacy/dn975133(v=vs.85)
-                - name: Método de provedor
+                - name: Método do provedor
                   href: /windows/desktop/api/traceloggingactivity/nf-traceloggingactivity-traceloggingactivity-provider
                 - name: Método SetRelatedActivity
                   href: /windows/desktop/api/traceloggingactivity/nf-traceloggingactivity-traceloggingactivity-setrelatedactivity
@@ -64,7 +64,7 @@
                   href: /previous-versions/windows/desktop/legacy/dn975137(v=vs.85)
                 - name: Método IsStarted
                   href: /previous-versions/windows/desktop/legacy/dn975138(v=vs.85)
-                - name: Método de provedor
+                - name: Método do provedor
                   href: /windows/desktop/api/traceloggingactivity/nf-traceloggingactivity-traceloggingthreadactivity-provider
             - name: TraceLoggingThreadActivityIdSetter
               href: /windows/desktop/api/traceloggingactivity/nl-traceloggingactivity-traceloggingthreadactivityidsetter
@@ -90,10 +90,10 @@
               href: /windows/desktop/api/traceloggingprovider/nf-traceloggingprovider-traceloggingsetinformation
             - name: TraceLoggingUnregister
               href: /windows/desktop/api/traceloggingprovider/nf-traceloggingprovider-traceloggingunregister
-        - name: TraceLogging macros
+        - name: TraceLogging Macros
           href: trace-logging-macros.md
           items:
-            - name: TraceLogging macros de wrapper
+            - name: TraceLogging Wrapper Macros
               href: tracelogging-wrapper-macros.md
               items:
                 - name: TraceLoggingBinary

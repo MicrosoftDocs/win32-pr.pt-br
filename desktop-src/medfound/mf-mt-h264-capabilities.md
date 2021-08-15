@@ -4,12 +4,12 @@ ms.assetid: 59EF18D6-6063-4EF3-BBFB-51A966CFF09E
 title: Atributo MF_MT_H264_CAPABILITIES (Mfapi. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b67f796e09d4b57667a3d8f7c7c0fa888eba7894
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 138cfa32fc50ebb02ca4d399a178b338e58016c64ae3486d7f7b4a76f3e47afe
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103837156"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118741758"
 ---
 # <a name="mf_mt_h264_capabilities-attribute"></a>Atributo de recursos do MF \_ MT \_ H264 \_
 
@@ -41,8 +41,8 @@ Esse atributo também é usado com [codificadores de câmera H. 264 UVC 1,5](cam
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Aplicativos de \[ aplicativos da área de trabalho do Windows 8 \| UWP\]<br/>                                  |
-| Servidor mínimo com suporte<br/> | Aplicativos do Windows Server 2012 \[ Desktop aplicativos \| UWP\]<br/>                        |
+| Cliente mínimo com suporte<br/> | Windows 8 \[ aplicativos UWP de aplicativos de desktop \|\]<br/>                                  |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 \[ aplicativos UWP de aplicativos de desktop \|\]<br/>                        |
 | parâmetro<br/>                   | <dl> <dt>Mfapi. h</dt> </dl> |
 
 

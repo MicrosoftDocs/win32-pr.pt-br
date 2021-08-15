@@ -12,12 +12,12 @@ api_type:
 - COM
 api_location:
 - Capicom.dll
-ms.openlocfilehash: 12ab8fcf61d30b47fc809fb05e1ffa524bb2488e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5d27a89d51840e70563854b3cc7f9084b6bd42cb5707630755e771d610c64a91
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105748864"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118901343"
 ---
 # <a name="publickey-object"></a>Objeto PublicKey
 
@@ -46,7 +46,7 @@ O objeto **PublicKey** tem essas propriedades.
 | [**Algoritmo**](publickey-algorithm.md)<br/>                 | Somente leitura<br/> | Recupera o objeto [**OID**](oid.md) que identifica o algoritmo usado pela chave pública. Essa é a propriedade padrão.<br/> |
 | [**EncodedKey**](publickey-encodedkey.md)<br/>               | Somente leitura<br/> | Recupera um objeto [**EncodedData**](encodeddata.md) que fornece acesso ao valor da chave pública.<br/>                 |
 | [**EncodedParameters**](publickey-encodedparameters.md)<br/> | Somente leitura<br/> | Recupera um objeto [**EncodedData**](encodeddata.md) que fornece acesso aos parâmetros do algoritmo de chave pública.<br/>  |
-| [**Comprimento**](publickey-length.md)<br/>                       | Somente leitura<br/> | Recupera o comprimento da chave pública em bits.<br/>                                                                             |
+| [**Muito**](publickey-length.md)<br/>                       | Somente leitura<br/> | Recupera o comprimento da chave pública em bits.<br/>                                                                             |
 
 
 
@@ -64,7 +64,7 @@ O objeto **PublicKey** é usado pelo método [**Certificate. PublicKey**](certif
 
 | Requisito | Valor |
 |----------------------------|----------------------------------------------------------------------------------------|
-| Redistribuível<br/> | CAPICOM 2,0 ou posterior no Windows Server 2003 e no Windows XP<br/>                  |
+| Redistribuível<br/> | capicom 2,0 ou posterior no Windows Server 2003 e Windows XP<br/>                  |
 | DLL<br/>             | <dl> <dt>Capicom.dll</dt> </dl> |
 
 

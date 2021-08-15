@@ -4,22 +4,22 @@ ms.assetid: c48f4584-732a-468d-a651-2c09ce3c9ddd
 title: Msival2.exe
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9b70ca2ccdeaf72c5191f292a8fa3f9b4de5dd9a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c8ed1228413d5b2fab0dfab79ea4546a9d15e74c8c62e9b1ca9751699f469854
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104172019"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118943873"
 ---
 # <a name="msival2exe"></a>Msival2.exe
 
 Msival2.exe é um utilitário de linha de comando que pode executar um conjunto de [avaliadores de consistência internos-ICES](internal-consistency-evaluators-ices.md).
 
-Essa ferramenta só está disponível nos [componentes SDK do Windows para desenvolvedores de Windows Installer](platform-sdk-components-for-windows-installer-developers.md).
+essa ferramenta só está disponível nos [componentes SDK do Windows para desenvolvedores de Windows Installer](platform-sdk-components-for-windows-installer-developers.md).
 
 Para obter mais informações sobre ICEs e o arquivo CUB, consulte [usando avaliadores de consistência internos](using-internal-consistency-evaluators.md).
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 **Msival2** *{Database} {arquivo Cub} \[ -f \] \[ -l {logfile} \] \[ -i {ID do Ice} \[ : {ID do Ice}. \] \] ..*
 
@@ -43,7 +43,7 @@ Msival2.exe usa as seguintes opções de linha de comando que não diferenciam m
 
 <dl> <dt>
 
-[Ferramentas de desenvolvimento Windows Installer](windows-installer-development-tools.md)
+[Windows Ferramentas de desenvolvimento do instalador](windows-installer-development-tools.md)
 </dt> <dt>
 
 [Avaliadores de consistência internos-ICEs](internal-consistency-evaluators-ices.md)

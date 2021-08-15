@@ -4,25 +4,25 @@
     - name: Sobre Active Directory Domain Services
       href: about-active-directory-domain-services.md
       items:
-        - name: Conceitos principais do Active Directory Domain Services
+        - name: Principais conceitos de Active Directory Domain Services
           href: core-concepts-of-active-directory-domain-services.md
           items:
             - name: Atributos
               href: attributes.md
             - name: Contêineres e folhas
               href: containers-and-leaves.md
-            - name: Nomes de objetos e identidades
+            - name: Nomes e identidades de objeto
               href: object-names-and-identities.md
-            - name: Contextos de nomenclatura e partições de diretório
+            - name: Nomeando contextos e partições de diretório
               href: naming-contexts-and-partitions.md
               items:
-                - name: Sobre partições de diretório de aplicativo
+                - name: Sobre partições do Diretório do Aplicativo
                   href: about-application-directory-partitions.md
             - name: Árvores de domínio
               href: domain-trees.md
             - name: Florestas
               href: forests.md
-            - name: Servidores de Active Directory e DNS dinâmico
+            - name: Servidores do Active Directory e DNS dinâmico
               href: active-directory-servers-and-dynamic-dns.md
             - name: Replicação e integridade de dados
               href: replication-and-data-integrity.md
@@ -32,42 +32,42 @@
                   items:
                     - name: Recursos do modelo de replicação para Active Directory Domain Services
                       href: features-of-the-replication-model-for-active-directory-domain-services.md
-                    - name: Por que Active Directory Domain Services usa esse modelo de replicação
+                    - name: Por Active Directory Domain Services usa esse modelo de replicação
                       href: why-active-directory-domain-services-uses-this-replication-model.md
-                    - name: Um modelo de replicação do programador no Active Directory Domain Services
+                    - name: Um modelo de replicação do programador Active Directory Domain Services
                       href: a-programmerampaposs-model-of-replication-in-active-directory-domain-services.md
-                - name: Comportamento de replicação no Active Directory Domain Services
+                - name: Comportamento de replicação Active Directory Domain Services
                   href: replication-behavior-in-active-directory-domain-services.md
                   items:
-                    - name: Impacto em aplicativos Directory-Enabled
+                    - name: Impacto sobre aplicativos Directory-Enabled aplicativos
                       href: impact-on-directory-enabled-applications.md
                 - name: Detectando e evitando a latência de replicação
                   href: detecting-and-avoiding-replication-latency.md
                   items:
-                    - name: O que você pode saber e quando você pode conhecê-lo?
+                    - name: O que você pode saber e quando você pode saber?
                       href: what-can-you-know-and-when-can-you-know-it.md
                     - name: Localidade temporal
                       href: temporal-locality.md
                     - name: Sinalização fora de banda
                       href: out-of-band-signaling.md
-                    - name: Data e hora de efetivação
+                    - name: Data e hora efetivas
                       href: effective-date-and-time.md
                     - name: Somas de verificação e contagens de objetos
                       href: checksums-and-object-counts.md
                     - name: GUIDs de consistência
                       href: consistency-guids.md
-                    - name: Estratégias de controle de versão e fallback
+                    - name: Estratégias de fallback e de versão
                       href: versioning-and-fallback-strategies.md
-        - name: Arquitetura de Active Directory Domain Services
+        - name: Active Directory Domain Services arquitetura
           href: active-directory-domain-services-architecture.md
           items:
-            - name: Agente do sistema de diretório
+            - name: Agente do Sistema de Diretório
               href: directory-system-agent.md
             - name: Modelo de dados
               href: data-model.md
             - name: Esquema
               href: schema.md
-            - name: Modelo de administração
+            - name: Modelo de Administração
               href: administration-model.md
             - name: Catálogo Global
               href: global-catalog.md
@@ -83,9 +83,9 @@
         - name: Esquema do Active Directory
           href: active-directory-schema.md
           items:
-            - name: Sobre o esquema de Active Directory
+            - name: Sobre o esquema do Active Directory
               href: about-the-active-directory-schema.md
-            - name: Read-Only DCs e o esquema de Active Directory
+            - name: Read-Only DCs e o esquema do Active Directory
               href: rodc-and-active-directory-schema.md
             - name: Implementação de esquema
               href: schema-implementation.md
@@ -97,14 +97,14 @@
               items:
                 - name: 'Classes estruturais, abstratas e auxiliares'
                   href: structural-abstract-and-auxiliary-classes.md
-                - name: Herança de classe no esquema de Active Directory
+                - name: Herança de classe no esquema do Active Directory
                   href: class-inheritance-in-the-active-directory-schema.md
                 - name: Classe de objeto e categoria de objeto
                   href: object-class-and-object-category.md
-            - name: Características dos atributos
+            - name: Características de atributos
               href: characteristics-of-attributes.md
               items:
-                - name: Sintaxes para atributos em Active Directory Domain Services
+                - name: Sintaxes para atributos no Active Directory Domain Services
                   href: syntaxes-for-attributes-in-active-directory-domain-services.md
                 - name: Atributos indexados
                   href: indexed-attributes.md
@@ -117,52 +117,52 @@
     - name: Usar o Active Directory Domain Services
       href: using-active-directory-domain-services.md
       items:
-        - name: Associando a Active Directory Domain Services
+        - name: Associação a Active Directory Domain Services
           href: binding-to-active-directory-domain-services.md
           items:
             - name: Associação sem servidor e RootDSE
               href: serverless-binding-and-rootdse.md
               items:
-                - name: Código de exemplo para obter o nome distinto do domínio
+                - name: Código de exemplo para obter o nome diferenciado do domínio
                   href: example-code-for-getting-the-distinguished-name-of-the-domain.md
-            - name: Associação ao catálogo global
+            - name: Associação ao Catálogo Global
               href: binding-to-the-global-catalog.md
               items:
-                - name: Exemplo de código para pesquisar uma floresta
+                - name: Código de exemplo para pesquisar uma floresta
                   href: example-code-for-searching-a-forest.md
-            - name: Usando objectGUID para associar a um objeto
+            - name: Usando objectGUID para se vincular a um objeto
               href: using-objectguid-to-bind-to-an-object.md
               items:
-                - name: Exemplo de código para criar uma representação de cadeia de caracteres vinculável de um GUID
+                - name: Código de exemplo para criar uma representação de cadeia de caracteres a vincável de um GUID
                   href: example-code-for-creating-a-bindable-string-representation-of-a-guid.md
                 - name: Lendo o objectGUID de um objeto e criando uma representação de cadeia de caracteres do GUID
                   href: reading-an-objectampaposs-objectguid-and-creating-a-string-representation-of-the-guid.md
-            - name: Associação a objetos Well-Known usando WKGUID
+            - name: Associação a Well-Known objetos usando WKGUID
               href: binding-to-well-known-objects-using-wkguid.md
               items:
-                - name: Exemplo de código para associação a objetos bem conhecidos
+                - name: Código de exemplo para associação a objetos conhecidos
                   href: example-code-for-binding-to-well-known-objects.md
             - name: Associação a um objeto usando um SID
               href: binding-to-an-object-using-a-sid.md
-            - name: Habilitando a associação de Rename-Safe com a propriedade otherWellKnownObjects
+            - name: Habilitando Rename-Safe associação com a outra propriedadeWellKnownObjects
               href: enabling-rename-safe-binding-with-the-otherwellknownobjects-property.md
               items:
-                - name: Exemplo de código para criar um objeto de contêiner
+                - name: Código de exemplo para criar um objeto de contêiner
                   href: example-code-for-creating-a-container-object.md
             - name: Autenticação
               href: authentication.md
-        - name: Pesquisando no Active Directory Domain Services
+        - name: Pesquisando em Active Directory Domain Services
           href: searching-in-active-directory-domain-services.md
           items:
             - name: Decidindo o que encontrar
               href: deciding-what-to-find.md
               items:
-                - name: Código de exemplo para pesquisa de usuários
+                - name: Código de exemplo para pesquisar usuários
                   href: example-code-for-searching-for-users.md
-            - name: Decidindo onde Pesquisar
+            - name: Decidindo onde pesquisar
               href: where-to-search.md
               items:
-                - name: Pesquisando o conteúdo do domínio
+                - name: Pesquisando conteúdo do domínio
                   href: searching-domain-contents.md
                 - name: Pesquisando o catálogo global
                   href: searching-global-catalog-contents.md
@@ -171,11 +171,11 @@
             - name: Criando um filtro de consulta
               href: creating-a-query-filter.md
               items:
-                - name: Localizando objetos por classe
+                - name: Encontrando objetos por classe
                   href: finding-objects-by-class.md
-                - name: Localizando objetos por nome
+                - name: Localizar objetos por nome
                   href: finding-objects-by-name.md
-                - name: Localizando uma lista de atributos a serem consultados
+                - name: Localizar uma lista de atributos a consultar
                   href: finding-a-list-of-attributes-to-query.md
                 - name: Verificando a sintaxe do filtro de consulta
                   href: checking-the-query-filter-syntax.md
@@ -194,27 +194,27 @@
               href: specifying-other-search-options.md
             - name: Processando os resultados da pesquisa
               href: processing-query-results.md
-            - name: Efeitos de segurança na pesquisa
+            - name: Efeitos da segurança na pesquisa
               href: effects-of-security-on-queries.md
             - name: Criando consultas eficientes
               href: creating-efficient-queries.md
             - name: Como funciona a indexação de tupla
               href: how-tuple-indexing-works.md
-            - name: 'Cadeias de caracteres de pesquisa inicial, média e final'
+            - name: 'Cadeias de caracteres de pesquisa inicial, medial e final'
               href: search-string-types.md
             - name: Indicações
               href: referrals.md
               items:
-                - name: Quando as referências são geradas
+                - name: Quando as indicações são geradas
                   href: when-referrals-are-generated.md
-                - name: Criando uma referência externa
+                - name: Criando uma indicação externa
                   href: creating-an-external-referral.md
                   items:
-                    - name: Exemplo de código para criar um objeto crossRef externo
+                    - name: Código de exemplo para criar um objeto crossRef externo
                       href: example-code-for-creating-an-external-crossref-object.md
             - name: Enumerando controladores de domínio
               href: enumerating-domain-controllers.md
-        - name: Criando e excluindo objetos no Active Directory Domain Services
+        - name: Criando e excluindo objetos em Active Directory Domain Services
           href: creating-and-deleting-objects-in-active-directory-domain-services.md
           items:
             - name: Recuperando objetos excluídos
@@ -224,35 +224,35 @@
         - name: Movendo objetos
           href: moving-objects.md
           items:
-            - name: Exemplo de código para mover um objeto
+            - name: Código de exemplo para mover um objeto
               href: example-code-for-moving-an-object.md
-        - name: Lendo e gravando atributos de objetos no Active Directory Domain Services
+        - name: Lendo e escrevendo atributos de objetos em Active Directory Domain Services
           href: reading-and-writing-attributes-of-objects-in-active-directory-domain-services.md
           items:
             - name: Determinando um tipo de atributo
               href: determining-an-attribute-type.md
-        - name: Controlando o acesso a objetos no Active Directory Domain Services
+        - name: Controlando o acesso a objetos Active Directory Domain Services
           href: controlling-access-to-objects-in-active-directory-domain-services.md
           items:
-            - name: Como o controle de acesso funciona no Active Directory Domain Services
+            - name: Como o controle de acesso funciona Active Directory Domain Services
               href: how-access-control-works-in-active-directory-domain-services.md
               items:
                 - name: Controlando o acesso a objetos e suas propriedades
                   href: controlling-access-to-objects-and-their-properties.md
-                - name: Direitos de acesso para objetos de Active Directory Domain Services
+                - name: Direitos de acesso para Active Directory Domain Services objetos
                   href: access-rights-for-active-directory-domain-services-objects.md
                 - name: Contextos de segurança e Active Directory Domain Services
                   href: security-contexts-and-active-directory-domain-services.md
-            - name: Como a segurança afeta as operações no Active Directory Domain Services
+            - name: Como a segurança afeta as operações Active Directory Domain Services
               href: how-security-affects-operations-in-active-directory-domain-services.md
               items:
                 - name: Controle de acesso e operações de leitura
                   href: access-control-and-read-operations.md
-                - name: Controle de acesso e operações de gravação
+                - name: Operações de gravação e controle de acesso
                   href: access-control-and-write-operations.md
                 - name: Controle de acesso e criação de objeto
                   href: access-control-and-object-creation.md
-                - name: Exclusão de controle de acesso e objeto
+                - name: Controle de acesso e exclusão de objeto
                   href: access-control-and-object-deletion.md
             - name: APIs para trabalhar com descritores de segurança
               href: apis-for-working-with-security-descriptors.md
@@ -263,22 +263,22 @@
                   href: using-idirectoryobject-to-get-a-security-descriptor.md
                 - name: Componentes do descritor de segurança
                   href: security-descriptor-components.md
-                - name: Recuperando a DACL de um objeto
+                - name: Recuperando DACL de um objeto
                   href: retrieving-an-objectampaposs-dacl.md
                 - name: Recuperando a SACL de um objeto
                   href: retrieving-an-objectampaposs-sacl.md
                 - name: Lendo o descritor de segurança de um objeto
                   href: reading-an-objectampaposs-security-descriptor.md
-                - name: Exemplo de código para criar um descritor de segurança
+                - name: Código de exemplo para criar um descritor de segurança
                   href: example-code-for-creating-a-security-descriptor.md
-                - name: Código de exemplo para enumerar a ACL de um objeto no Active Directory Domain Services
+                - name: Código de exemplo para enumerar a ACL de um objeto em Active Directory Domain Services
                   href: example-code-for-enumerating-the-acl-of-an-active-directory-object.md
-            - name: Configurando direitos de acesso em um objeto
+            - name: Definindo direitos de acesso em um objeto
               href: setting-access-rights-on-an-object.md
               items:
                 - name: Código de exemplo para definir uma ACE em um objeto de diretório
                   href: example-code-for-setting-an-ace-on-a-directory-object.md
-                - name: Configurando direitos de acesso em todo o objeto
+                - name: Definindo direitos de acesso no objeto inteiro
                   href: setting-access-rights-on-the-entire-object.md
                   items:
                     - name: Código de exemplo para definir direitos de propriedade de leitura em um objeto
@@ -295,14 +295,14 @@
                   items:
                     - name: Código de exemplo para definir permissões em operações de objeto filho
                       href: example-code-for-setting-permissions-on-child-object-operations.md
-            - name: Como os descritores de segurança são definidos em novos objetos de diretório
+            - name: Como descritores de segurança são definidos em novos objetos de diretório
               href: how-security-descriptors-are-set-on-new-directory-objects.md
             - name: Criando um descritor de segurança para um novo objeto de diretório
               href: creating-a-security-descriptor-for-a-new-directory-object.md
             - name: Herança e delegação de administração
               href: inheritance-and-delegation-of-administration.md
               items:
-                - name: Herança de controle de acesso
+                - name: Herança do controle de acesso
                   href: access-control-inheritance.md
                 - name: Definindo direitos para tipos específicos de objetos
                   href: setting-rights-to-specific-types-of-objects.md
@@ -311,10 +311,10 @@
                       href: example-code-for-setting-rights-to-specific-types-of-objects.md
                 - name: Definindo direitos para propriedades específicas de tipos específicos de objetos
                   href: setting-rights-to-specific-properties-of-specific-types-of-objects.md
-                - name: Protegendo objetos dos efeitos de direitos herdados
+                - name: Protegendo objetos contra os efeitos de direitos herdados
                   href: protecting-objects-from-the-effects-of-inherited-rights.md
                   items:
-                    - name: Exemplo de código para configurar e remover a proteção SACL e DACL
+                    - name: Código de exemplo para configurar e remover a proteção SACL e DACL
                       href: example-code-for-setting-and-removing-sacl-and-dacl-protection.md
             - name: Descritor de segurança padrão
               href: default-security-descriptor.md
@@ -322,7 +322,7 @@
                 - name: Lendo o defaultSecurityDescriptor para uma classe de objeto
                   href: reading-the-defaultsecuritydescriptor-for-an-object-class.md
                   items:
-                    - name: Exemplo de código para leitura de defaultSecurityDescriptor
+                    - name: Código de exemplo para leitura defaultSecurityDescriptor
                       href: example-code-for-reading-defaultsecuritydescriptor.md
                 - name: Modificando o defaultSecurityDescriptor para uma classe de objeto
                   href: modifying-the-defaultsecuritydescriptor-for-an-object-class.md
@@ -332,19 +332,19 @@
                 - name: Criando um direito de acesso de controle
                   href: creating-a-control-access-right.md
                   items:
-                    - name: Exemplo de código para criar um direito de acesso de controle
+                    - name: Código de exemplo para criar um direito de acesso de controle
                       href: example-code-for-creating-a-control-access-right.md
-                - name: Definindo uma ACE Right de acesso de controle na ACL de um objeto
+                - name: Definindo um ACE direito de acesso de controle na ACL de um objeto
                   href: setting-a-control-access-right-ace-in-an-objectampaposs-acl.md
                   items:
-                    - name: Exemplo de código para definir uma ACE Right de acesso de controle
+                    - name: Código de exemplo para definir um ACE direito de acesso de controle
                       href: example-code-for-setting-a-control-access-right-ace.md
                 - name: Verificando um direito de acesso de controle na ACL de um objeto
                   href: checking-a-control-access-right-in-an-objectampaposs-acl.md
                   items:
                     - name: Código de exemplo para verificar um direito de acesso de controle na ACL de um objeto
                       href: example-code-for-checking-a-control-access-right-in-an-objectampaposs-acl.md
-                - name: Lendo um conjunto direito de acesso de controle na ACL de um objeto
+                - name: Lendo um conjunto de direitos de acesso de controle na ACL de um objeto
                   href: reading-a-control-access-right-set-in-an-objectampaposs-acl.md
                   items:
                     - name: Código de exemplo para verificar um direito de acesso de controle em uma ACE
@@ -353,7 +353,7 @@
               href: using-dsaddsidhistory.md
             - name: Controlando a visibilidade do objeto
               href: controlling-object-visibility.md
-            - name: DACLs nulas e DACLs vazias
+            - name: DACLs nulos e DACLs vazias
               href: null-dacls-and-empty-dacls.md
         - name: Estendendo o esquema
           href: extending-the-schema.md
@@ -365,10 +365,10 @@
               items:
                 - name: 'Código de exemplo para enumerar classes de esquema, atributos e sintaxes'
                   href: example-code-for-enumerating-schema-classes-attributes-and-syntaxes.md
-            - name: Lendo objetos attributeSchema e classSchema
+            - name: Lendo attributeSchema e classSchema Objects
               href: reading-attributeschema-and-classschema-objects.md
               items:
-                - name: Exemplo de código para pesquisar objetos de esquema
+                - name: Código de exemplo para pesquisar objetos de esquema
                   href: example-code-for-searching-for-schema-objects.md
             - name: O que você deve saber antes de estender o esquema
               href: what-you-must-know-before-extending-the-schema.md
@@ -377,7 +377,7 @@
                   href: impact-of-schema-changes.md
                 - name: Quando estender o esquema
                   href: when-to-extend-the-schema.md
-                - name: Restrições na extensão do esquema
+                - name: Restrições na extensão de esquema
                   href: restrictions-on-schema-extension.md
                   items:
                     - name: Consultando objetos de esquema de categoria 1 ou 2
@@ -398,19 +398,19 @@
                       href: obtaining-a-root-oid-from-an-iso-name-registration-authority.md
                     - name: Obtendo um identificador de objeto da Microsoft
                       href: obtaining-an-object-identifier-from-microsoft.md
-                - name: Integrando extensões de esquema com a interface do usuário
+                - name: Integrando extensões de esquema com o Interface do Usuário
                   href: integrating-schema-extensions-with-the-user-interface.md
                 - name: Definindo um novo atributo
                   href: defining-a-new-attribute.md
                   items:
-                    - name: Exemplo de código para criar um atributo
+                    - name: Código de exemplo para criar um atributo
                       href: example-code-for-creating-an-attribute.md
                     - name: Escolhendo uma sintaxe
                       href: choosing-a-syntax.md
                 - name: Definindo uma nova classe
                   href: defining-a-new-class.md
                   items:
-                    - name: Exemplo de código para criar uma classe
+                    - name: Código de exemplo para criar uma classe
                       href: example-code-for-creating-a-class.md
                 - name: Instalando extensões de esquema
                   href: installing-schema-extensions.md
@@ -427,35 +427,35 @@
                       items:
                         - name: Detectando o mestre de esquema
                           href: detecting-the-schema-master.md
-                        - name: Habilitando alterações de esquema no mestre de esquema
+                        - name: Habilitando alterações de esquema no Mestre de Esquema
                           href: enabling-schema-changes-at-the-schema-master.md
-                    - name: Recomendações para aplicativos de extensão de esquema
+                    - name: Recomendações aplicativos de extensão de esquema
                       href: recommendations-for-schema-extension-applications.md
                       items:
                         - name: Código de exemplo para verificar se há direitos para criar objetos de esquema
                           href: example-code-for-checking-for-rights-to-create-schema-objects.md
-                        - name: Exemplo de código para atualizar o cache de esquema
+                        - name: Código de exemplo para atualizar o cache de esquema
                           href: example-code-for-updating-the-schema-cache.md
-                        - name: Código de exemplo para detecção de colisões de nomenclatura de esquema
+                        - name: Código de exemplo para detectar colisões de nomeação de esquema
                           href: example-code-for-detecting-schema-naming-collisions.md
                     - name: Mecanismos de instalação com suporte
                       href: supported-installation-mechanisms.md
                       items:
-                        - name: Scripts LDIF
+                        - name: LDIF Scripts
                           href: ldif-scripts.md
-                        - name: Scripts de valores separados por vírgulas (CSV)
+                        - name: Scripts CSV (valores separados por vírgula)
                           href: comma-separated-value-csv-scripts.md
                         - name: Extensão programática
                           href: programmatic-extension.md
                           items:
-                            - name: Exemplo de código para estender o esquema programaticamente
+                            - name: Código de exemplo para estender o esquema programaticamente
                               href: example-code-for-extending-the-schema-programmatically.md
-        - name: Estendendo a interface do usuário para objetos de diretório
+        - name: Estendendo o Interface do Usuário para objetos de diretório
           href: extending-the-user-interface-for-directory-objects.md
           items:
-            - name: Sobre as interfaces de usuário do Active Directory Domain Services
+            - name: Sobre as interfaces do usuário Active Directory Domain Services
               href: about-the-user-interfaces-of-active-directory-domain-services.md
-            - name: Exibir especificadores
+            - name: Especificadores de exibição
               href: display-specifiers.md
               items:
                 - name: Contêiner DisplaySpecifiers
@@ -466,9 +466,9 @@
               href: class-icons.md
             - name: Exibindo contêineres como nós folha
               href: viewing-containers-as-leaf-nodes.md
-            - name: Modificando as interfaces de usuário existentes
+            - name: Modificando interfaces de usuário existentes
               href: modifying-existing-user-interfaces.md
-            - name: Extensão da interface do usuário para novas classes de objeto
+            - name: Interface do Usuário extensão para novas classes de objeto
               href: user-interface-extension-for-new-object-classes.md
             - name: Páginas de propriedades para uso com especificadores de exibição
               href: property-pages-for-use-with-display-specifiers.md
@@ -476,7 +476,7 @@
                 - name: Implementando o objeto COM da página de propriedades
                   href: implementing-the-property-page-com-object.md
                   items:
-                    - name: Exemplo de código para implementação do objeto COM da folha de propriedades
+                    - name: Código de exemplo para implementação do objeto COM da folha de propriedades
                       href: example-code-for-implementation-of-the-property-sheet-com-object.md
                 - name: Registrando o objeto COM da página de propriedades em um especificador de exibição
                   href: registering-the-property-page-com-object-in-a-display-specifier.md
@@ -495,33 +495,33 @@
                   items:
                     - name: Código de exemplo para instalar um item de menu de contexto estático
                       href: example-code-for-installing-a-static-context-menu-item.md
-            - name: Assistentes de criação de objeto
+            - name: Assistentes de Criação de Objeto
               href: object-creation-wizards.md
               items:
                 - name: Implementando o objeto COM da extensão de criação de objeto
                   href: implementing-the-object-creation-extension-com-object.md
                 - name: Registrando a extensão de criação de objeto
                   href: registering-the-object-creation-extension.md
-                - name: Invocando assistentes de criação do seu aplicativo
+                - name: Invocando assistentes de criação de seu aplicativo
                   href: invoking-creation-wizards-from-your-application.md
-            - name: Usando caixas de diálogo padrão para manipular objetos no Active Directory Domain Services
+            - name: Usando caixas de diálogo padrão para manipular objetos Active Directory Domain Services
               href: using-standard-dialog-boxes-to-handle-objects-in-active-directory-domain-services.md
               items:
-                - name: Seletor de objetos de diretório
+                - name: Se picker de objeto de diretório
                   href: directory-object-picker.md
-                - name: Navegador de domínio
+                - name: Navegador de Domínio
                   href: domain-browser.md
-                - name: Navegador de contêineres
+                - name: Navegador de Contêiner
                   href: container-browser.md
-                - name: Active Directory folhas de propriedades de usuários e computadores
+                - name: Usuários e Computadores do Active Directory de propriedades
                   href: active-directory-users-and-computers-property-sheets.md
             - name: Manipuladores de notificação administrativa
               href: administrative-notification-handlers.md
-            - name: Distribuindo componentes da interface do usuário
+            - name: Distribuindo componentes Interface do Usuário dados
               href: distributing-user-interface-components.md
             - name: Como os aplicativos devem usar especificadores de exibição
               href: how-applications-should-use-display-specifiers.md
-            - name: Depurando uma extensão de Active Directory
+            - name: Depurando uma extensão do Active Directory
               href: debugging-an-active-directory-extension.md
         - name: Gerenciando usuários
           href: managing-users.md
@@ -532,43 +532,43 @@
               href: security-principals.md
             - name: O que é um usuário?
               href: what-is-a-user.md
-            - name: Exemplo de código para associação ao contêiner do usuário
+            - name: Código de exemplo para associação ao contêiner do usuário
               href: example-code-for-binding-to-the-users-container.md
             - name: Atributos de objeto de usuário
               href: user-object-attributes.md
               items:
-                - name: Atributos de nomenclatura de usuário
+                - name: Atributos de nomeação de usuário
                   href: naming-properties.md
                 - name: Atributos de segurança do usuário
                   href: security-properties.md
-                - name: Atributos do catálogo de endereços do usuário
+                - name: Atributos Catálogo de Endereços usuário
                   href: address-book-properties.md
             - name: Criando um usuário
               href: creating-a-user.md
               items:
-                - name: Exemplo de código para criar um usuário
+                - name: Código de exemplo para criar um usuário
                   href: example-code-for-creating-a-user.md
             - name: Enumerando usuários
               href: enumerating-users.md
             - name: Consultando usuários
               href: querying-for-users.md
               items:
-                - name: Código de exemplo para usar o catálogo global para localizar usuários em uma floresta
+                - name: Código de exemplo para usar o catálogo global para encontrar usuários em uma floresta
                   href: example-code-for-using-the-global-catalog-to-find-users-in-a-forest.md
-            - name: Gerenciando usuários em servidores membros e no Windows 2000 Professional
+            - name: Gerenciando usuários em servidores membros e Windows 2000 Professional
               href: managing-users-on-member-servers-and-windows-2000-professional.md
               items:
-                - name: Enumerando usuários em servidores membros e no Windows 2000 Professional
+                - name: Enumerando usuários em servidores membros e Windows 2000 Professional
                   href: enumerating-users-on-member-servers-and-windows-2000-professional.md
                   items:
                     - name: Código de exemplo para enumerar usuários em um servidor membro
                       href: example-code-for-enumerating-users-on-a-member-server.md
-                - name: Criando usuários em servidores membros e no Windows 2000 Professional
+                - name: Criando usuários em servidores membros e Windows 2000 Professional
                   href: creating-users-on-member-servers-and-windows-2000-professional.md
                   items:
-                    - name: Código de exemplo para a criação de usuários em um servidor membro ou Windows 2000 Professional
+                    - name: Código de exemplo para criar usuários em um servidor membro ou Windows 2000 Professional
                       href: example-code-for-creating-users-on-a-member-server-or-windows-2000-professional.md
-                - name: Excluindo usuários em servidores membros e no Windows 2000 Professional
+                - name: Excluindo usuários em servidores membros e Windows 2000 Professional
                   href: deleting-users-on-member-servers-and-windows-2000-professional.md
                   items:
                     - name: Código de exemplo para excluir usuários em um servidor membro ou Windows 2000 Professional
@@ -578,111 +578,111 @@
         - name: Gerenciando grupos
           href: managing-groups.md
           items:
-            - name: Agrupar objetos
+            - name: Objetos de grupo
               href: group-objects.md
             - name: Como os grupos de segurança são usados no controle de acesso
               href: how-security-groups-are-used-in-access-control.md
             - name: Criando grupos em um domínio
               href: creating-groups-in-a-domain.md
               items:
-                - name: Exemplo de código para criar um grupo
+                - name: Código de exemplo para criar um grupo
                   href: example-code-for-creating-a-group.md
             - name: Adicionando membros a grupos em um domínio
               href: adding-members-to-groups-in-a-domain.md
               items:
-                - name: Exemplo de código para adicionar um membro a um grupo
+                - name: Código de exemplo para adicionar um membro a um grupo
                   href: example-code-for-adding-a-member-to-a-group.md
-                - name: Código de exemplo para converter um objectSid em uma cadeia de caracteres vinculável
+                - name: Código de exemplo para converter um objectSid em uma cadeia de caracteres a vincável
                   href: example-code-for-converting-an-objectsid-into-a-bindable-string-.md
             - name: Removendo membros de grupos em um domínio
               href: removing-members-from-groups-in-a-domain.md
               items:
-                - name: Exemplo de código para remover um membro de um grupo
+                - name: Código de exemplo para remover um membro de um grupo
                   href: example-code-for-removing-a-member-from-a-group.md
             - name: Aninhando um grupo em outro grupo
               href: nesting-a-group-in-another-group.md
               items:
                 - name: Aninhamento no modo nativo
                   href: nesting-in-native-mode.md
-                - name: Aninhamento em modo misto
+                - name: Aninhamento no modo misto
                   href: nesting-in-mixed-mode.md
                 - name: Erros Comuns
                   href: common-errors.md
             - name: Determinando a associação de um usuário ou grupo em um grupo
               href: determining-a-userampaposs-or-groupampaposs-membership-in-a-group.md
               items:
-                - name: Exemplo de código para verificar a associação em um grupo
+                - name: Código de exemplo para verificar a associação em um grupo
                   href: example-code-for-checking-for-membership-in-a-group.md
             - name: Enumerando grupos
               href: enumerating-groups.md
               items:
                 - name: Enumerando grupos em um domínio
                   href: enumerating-groups-in-a-domain.md
-                - name: Procurando grupos por escopo ou tipo em um domínio
+                - name: Pesquisando grupos por escopo ou tipo em um domínio
                   href: searching-for-groups-by-scope-or-type-in-a-domain.md
-                - name: Enumerando Membros em um grupo
+                - name: Enumerando membros em um grupo
                   href: enumerating-members-in-a-group.md
                   items:
-                    - name: Exemplo de código para exibir membros de um grupo
+                    - name: Código de exemplo para exibir membros de um grupo
                       href: example-code-for-displaying-members-of-a-group.md
                 - name: Enumerando grupos que contêm muitos membros
                   href: enumerating-groups-that-contain-many-members.md
             - name: Consultando grupos em um domínio
               href: querying-for-groups-in-a-domain.md
               items:
-                - name: Exemplo de código para pesquisar grupos em um domínio
+                - name: Código de exemplo para pesquisar grupos em um domínio
                   href: example-code-for-performing-a-query-in-a-domain.md
-            - name: Alterando o escopo ou tipo de um grupo
+            - name: Alterando o escopo ou o tipo de um grupo
               href: changing-a-groupampaposs-scope-or-type.md
               items:
-                - name: Exemplo de código para alterar o escopo de um grupo
+                - name: Código de exemplo para alterar o escopo de um grupo
                   href: example-code-for-changing-the-scope-of-a-group.md
-            - name: Obtendo o nome de Account-Style de domínio de um grupo
+            - name: Obter o nome Account-Style domínio de um grupo
               href: getting-the-domain-account-style-name-of-a-group.md
-            - name: Grupos em servidores membros e no Windows 2000 Professional
+            - name: Grupos em servidores membros e Windows 2000 Professional
               href: groups-on-member-servers-and-windows-2000-professional.md
               items:
                 - name: Enumerando grupos locais
                   href: enumerating-local-groups.md
                   items:
-                    - name: Exemplo de código para enumeração de grupos locais
+                    - name: Código de exemplo para enumerar grupos locais
                       href: example-code-for-enumerating-local-groups.md
                 - name: Criando grupos locais
                   href: creating-local-groups.md
                   items:
-                    - name: Exemplo de código para criar um grupo local
+                    - name: Código de exemplo para criar um grupo local
                       href: example-code-for-creating-a-local-group.md
                 - name: Excluindo grupos locais
                   href: deleting-local-groups.md
                   items:
-                    - name: Exemplo de código para excluir um grupo local
+                    - name: Código de exemplo para excluir um grupo local
                       href: example-code-for-deleting-a-local-group.md
                 - name: Adicionando objetos de domínio a grupos locais
                   href: adding-domain-objects-to-local-groups.md
                   items:
-                    - name: Código de exemplo para adicionar um usuário ou grupo de domínio a um grupo local
+                    - name: Código de exemplo para adicionar um usuário de domínio ou grupo a um grupo local
                       href: example-code-for-adding-a-domain-user-or-group-to-a-local-group.md
             - name: O que os desenvolvedores de aplicativos e serviços precisam saber sobre grupos
               href: what-application-and-service-developers-need-to-know-about-groups.md
-        - name: Controlando alterações
+        - name: Acompanhando alterações
           href: tracking-changes.md
           items:
-            - name: Visão geral das técnicas de Controle de Alterações
+            - name: Visão geral das Controle de Alterações técnicas
               href: overview-of-change-tracking-techniques.md
-            - name: Notificações de alteração no Active Directory Domain Services
+            - name: Alterar notificações no Active Directory Domain Services
               href: change-notifications-in-active-directory-domain-services.md
               items:
-                - name: Exemplo de código para receber notificações de alteração
+                - name: Código de exemplo para receber notificações de alteração
                   href: example-code-for-receiving-change-notifications.md
-            - name: Sondando alterações usando o controle DirSync
+            - name: Sondagem de alterações usando o controle DirSync
               href: polling-for-changes-using-the-dirsync-control.md
               items:
-                - name: Exemplo de código usando ADS_SEARCHPREF_DIRSYNC
+                - name: Código de exemplo usando ADS_SEARCHPREF_DIRSYNC
                   href: example-code-using-ads-searchpref-dirsync.md
-            - name: Sondando alterações usando USNChanged
+            - name: Sondagem de alterações usando USNChanged
               href: polling-for-changes-using-usnchanged.md
               items:
-                - name: Exemplo de código para recuperar alterações usando USNChanged
+                - name: Código de exemplo para recuperar alterações usando USNChanged
                   href: example-code-to-retrieve-changes-using-usnchanged.md
         - name: Publicação de serviço
           href: service-publication.md
@@ -700,7 +700,7 @@
                 - name: Onde criar um ponto de conexão de serviço
                   href: where-to-create-a-service-connection-point.md
                   items:
-                    - name: Publicação em um objeto de computador
+                    - name: Publicando em um objeto de computador
                       href: publishing-under-a-computer-object.md
                     - name: Publicando em um contêiner do sistema de domínio
                       href: publishing-in-a-domain-system-container.md
@@ -714,7 +714,7 @@
                     - name: Exemplos de script para gerenciamento de pontos de conexão de serviço
                       href: script-samples-for-managing-service-connection-points.md
                       items:
-                        - name: Macros do Excel para gerenciar pontos de conexão de serviço
+                        - name: Excel Macros para gerenciar pontos de conexão de serviço
                           href: excel-macros-for-managing-service-connection-points.md
                         - name: Script VB listando todos os pontos de conexão de serviço
                           href: vb-script-listing-all-service-connection-points.md
@@ -729,7 +729,7 @@
                           href: how-clients-find-and-use-a-service-connection-point.md
             - name: Publicando com o serviço de nomes RPC (RpcNs)
               href: publishing-with-the-rpc-name-service-rpcns.md
-            - name: Publicando com o registro e a resolução do Windows Sockets
+            - name: publicando com a resolução e o registro do Windows sockets
               href: publishing-with-windows-sockets-registration-and-resolution.md
               items:
                 - name: Código de exemplo para instalar uma classe de serviço RnR
@@ -804,26 +804,26 @@
                   href: how-a-service-registers-its-spns.md
                 - name: Como os clientes compõem o SPN de um serviço
                   href: how-clients-compose-a-serviceampaposs-spn.md
-            - name: Autenticação mútua em um serviço de soquetes do Windows com um SCP
+            - name: autenticação mútua em um serviço de soquetes Windows com um SCP
               href: mutual-authentication-in-a-windows-sockets-service-with-an-scp.md
               items:
-                - name: Como um cliente autentica um serviço Windows Sockets baseado em SCP
+                - name: como um cliente autentica um serviço de soquetes de Windows baseado em SCP
                   href: how-a-client-authenticates-an-scp-based-windows-sockets-service.md
-                - name: Compor e registrar SPNs para um serviço de soquetes do Windows baseado em SCP
+                - name: compor e registrar SPNs para um serviço de soquetes de Windows baseado em SCP
                   href: composing-and-registering-spns-for-an-scp-based-windows-sockets-service.md
                   items:
                     - name: Compondo os SPNs de um serviço com um SCP
                       href: composing-the-spns-for-a-service-with-an-scp.md
                     - name: Registrando os SPNs para um serviço
                       href: registering-the-spns-for-a-service.md
-                - name: Como um serviço do Windows Sockets autentica um cliente
+                - name: como um serviço de soquetes de Windows autentica um cliente
                   href: how-a-windows-sockets-service-authenticates-a-client.md
             - name: Autenticação mútua em aplicativos RPC
               href: mutual-authentication-in-rpc-applications.md
               items:
                 - name: Compondo SPNs para um serviço RpcNs
                   href: composing-spns-for-an-rpcns-service.md
-            - name: Autenticação mútua em aplicativos do Windows Sockets
+            - name: autenticação mútua em aplicativos Windows sockets
               href: mutual-authentication-in-windows-sockets-applications.md
         - name: Fazendo backup e restaurando um servidor de Active Directory
           href: backing-up-and-restoring-an-active-directory-server.md

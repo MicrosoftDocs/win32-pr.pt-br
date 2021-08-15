@@ -4,21 +4,21 @@ description: Atributo Color (extrusão) (VML)
 ms.assetid: 52ee2210-5e32-4e01-9af7-b511e43f987a
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e3242418eb52c6caff35bb472dbf56bab1fe34b9
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: b9b7d00c511e31c4936cb2ba207db3af36aba1c9c276240e7454e447a1927ed2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104366086"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118347302"
 ---
 # <a name="color-attribute-extrusionvml"></a>Atributo Color (extrusão) (VML)
 
-Este tópico descreve a VML, um recurso que foi preterido a partir do Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem de VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
+este tópico descreve a VML, um recurso que foi preterido a partir do Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem de VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
 
 > [!Note]  
-> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [conteúdo arquivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obter informações, recomendações e orientações sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
+> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [conteúdo arquivado](/previous-versions/windows/internet-explorer/ie-developer/). para obter informações, recomendações e orientações sobre a versão atual do Windows Internet explorer, consulte [internet explorer developer Center](https://msdn.microsoft.com/ie/).
 
- 
+ 
 
 Define a cor das faces da extrusão. Leitura/gravação. **VgColor**.
 
@@ -40,8 +40,8 @@ Define a cor das faces da extrusão. Leitura/gravação. **VgColor**.
 
 Esse atributo só é usado quando o valor [ColorMode](msdn-online-vml-colormode-attribute.md) é **personalizado**.
 
-*Atributo de extensões de Microsoft Office*
+*Microsoft Office Atributo de extensões*
 
- 
+ 
 
- 
+ 

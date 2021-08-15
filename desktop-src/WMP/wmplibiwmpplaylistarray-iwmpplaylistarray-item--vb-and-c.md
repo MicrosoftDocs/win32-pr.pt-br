@@ -4,8 +4,8 @@ description: O método Item retorna uma interface IWMPPlaylist que representa a 
 ms.assetid: 5cb4b89f-b679-4d92-a5f9-5d0fe686775d
 keywords:
 - Método de item Windows Media Player
-- Método de item Windows Media Player, interface IWMPPlaylistArray
-- Interface IWMPPlaylistArray do Windows Media Player, método de item
+- método de Item Windows Media Player, interface IWMPPlaylistArray
+- Windows Media Player de interface IWMPPlaylistArray, método Item
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 660e919ef51bbb9584971f25bdf92296d331de23
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 9e73614e1ef00f29d6b09d3d49e2c7e514bae807245f00f30f4d3382d8f1a2e8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105771371"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118331155"
 ---
 # <a name="iwmpplaylistarrayitem-method"></a>Método IWMPPlaylistArray:: item
 
@@ -60,7 +60,7 @@ Um **System. Int32** que contém o índice que identifica a lista de reproduçã
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Uma interface **WMPLib. IWMPPlaylist** para a lista de reprodução recuperada.
 

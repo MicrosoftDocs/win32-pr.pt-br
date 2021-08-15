@@ -4,12 +4,12 @@ ms.assetid: abbb2441-25ca-484b-a744-620ff2794221
 title: Política de metadados de foto System. GPS. AltitudeRef
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: db600d218d72014c49fd3f0a8b5eb11dd4c467d5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ca49213754f605dcf6df40dfa3ff00e2b7aeaf765008037c23da21e35ab9ddee
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105790383"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118710693"
 ---
 # <a name="systemgpsaltituderef-photo-metadata-policy"></a>Política de metadados de foto System. GPS. AltitudeRef
 
@@ -29,7 +29,7 @@ JPEG, TIFF
 
 ### <a name="read-only"></a>Somente leitura
 
-No
+Não
 
 ### <a name="output-propvariant-type"></a>Tipo de PROPVARIANT de saída
 

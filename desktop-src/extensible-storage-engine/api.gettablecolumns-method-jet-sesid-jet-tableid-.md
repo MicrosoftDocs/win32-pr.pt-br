@@ -20,12 +20,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 393f730920ce7abb3ef24916c9e1c9e9591ba020
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cbfa1afde5fa95b0d9167676266bb49dbb6c8fb6b03024611f629a9683669cc9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104089831"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117719558"
 ---
 # <a name="apigettablecolumns-method-jet_sesid-jet_tableid"></a>Método API. GetTableColumns (JET_SESID, JET_TABLEID)
 
@@ -72,7 +72,7 @@ public static IEnumerable<ColumnInfo> GetTableColumns(
     
     A tabela para a qual recuperar informações de coluna.
 
-#### <a name="return-value"></a>Retornar valor
+#### <a name="return-value"></a>Valor retornado
 
 Tipo: [System. Collections. Generic. IEnumerable](/dotnet/api/system.collections.generic.ienumerable-1)\<[ColumnInfo](./columninfo-class.md)\>  
 Um iterador sobre ColumnInfo para cada coluna na tabela.  

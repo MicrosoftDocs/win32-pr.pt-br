@@ -4,35 +4,35 @@ ms.assetid: 72f69ad2-15d9-4191-a8aa-4c23a2392006
 title: " Verificador de Arquivos do Sistema"
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: da4e0d67f6de6aba62fe262969d7f30db0c45335
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2c2f751aa30c06dbff90b8d5221974236b45edf9f0f278c144f755568a0040f8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105757057"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118330278"
 ---
 # <a name="system-file-checker"></a> Verificador de Arquivos do Sistema
 
 O utilitário do verificador de arquivos do sistema, Sfc.exe, permite que os administradores verifiquem todos os recursos protegidos para verificar suas versões.
 
-Arquivos críticos para reiniciar o Windows que não correspondem à versão esperada do Windows podem ser substituídos pelas versões corretas. Se um arquivo for reparado, os dados de registro correspondentes também serão reparados. Arquivos protegidos não críticos para reiniciar o Windows não são reparados.
+Arquivos críticos para reiniciar Windows que não corresponderem à versão Windows esperada podem ser substituídos por versões corretas. Se um arquivo for reparado, os dados do Registro correspondentes também serão reparados. Arquivos protegidos não críticos para reiniciar Windows não são reparados.
 
 ## <a name="syntax"></a>Syntax
 
-A seguir está a sintaxe de linha de comando para o Sfc.
+A seguir está a sintaxe de linha de comando para Sfc.
 
-**Opções de SFC \[ = caminho completo do arquivo\]**
+**Opções de SFC \[ =caminho de arquivo completo\]**
 
 ## <a name="options"></a>Opções
 
 <dl> <dt>
 
-<span id="_CACHESIZE_x"></span><span id="_cachesize_x"></span><span id="_CACHESIZE_X"></span>/CACHESIZE =*x*
+<span id="_CACHESIZE_x"></span><span id="_cachesize_x"></span><span id="_CACHESIZE_X"></span>/CACHESIZE=*x*
 </dt> <dd>
 
 Não há suporte para esse valor.
 
-**Windows Server 2003 e Windows XP:** Define o tamanho do cache de arquivos. O tamanho padrão do cache é 0x32 (50 MB).
+**Windows Server 2003 e Windows XP:** Define o tamanho do cache de arquivo. O tamanho padrão do cache é 0x32 (50 MB).
 
 </dd> <dt>
 
@@ -43,7 +43,7 @@ Não há suporte para esse valor.
 
 </dd> <dt>
 
-<span id="_ENABLE"></span><span id="_enable"></span>/ENABLE
+<span id="_ENABLE"></span><span id="_enable"></span>/enable
 </dt> <dd>
 
 Não há suporte para esse valor.
@@ -53,7 +53,7 @@ Não há suporte para esse valor.
 <span id="_FILESONLY"></span><span id="_filesonly"></span>/FILESONLY
 </dt> <dd>
 
-Verificar ou reparar somente arquivos. Não verifique ou repare as chaves do registro.
+Verifique ou repare apenas arquivos. Não verifique nem repare as chaves do Registro.
 
 **Windows XP:** Sem suporte.
 
@@ -62,7 +62,7 @@ Verificar ou reparar somente arquivos. Não verifique ou repare as chaves do reg
 <span id="_OFFBOOTDIR"></span><span id="_offbootdir"></span>/OFFBOOTDIR
 </dt> <dd>
 
-Use esta opção para reparos offline. Especifique o local do diretório de inicialização offline.
+Use essa opção para reparos offline. Especifique o local do diretório de inicialização offline.
 
 **Windows XP:** Sem suporte.
 
@@ -71,7 +71,7 @@ Use esta opção para reparos offline. Especifique o local do diretório de inic
 <span id="_OFFWINDIR"></span><span id="_offwindir"></span>/OFFWINDIR
 </dt> <dd>
 
-Use esta opção para reparos offline. Especifique o local do diretório offline do Windows.
+Use essa opção para reparos offline. Especifique o local do diretório Windows offline.
 
 **Windows XP:** Sem suporte.
 
@@ -82,11 +82,11 @@ Use esta opção para reparos offline. Especifique o local do diretório offline
 
 Não há suporte para esse valor.
 
-**Windows Server 2003 e Windows XP:** Esvazia o cache de arquivos e examina todos os arquivos protegidos do sistema.
+**Windows Server 2003 e Windows XP:** Esvazia o cache de arquivos e examina todos os arquivos do sistema protegidos.
 
 </dd> <dt>
 
-<span id="_QUIET"></span><span id="_quiet"></span>/QUIET
+<span id="_QUIET"></span><span id="_quiet"></span>/quiet
 </dt> <dd>
 
 Não há suporte para esse valor.
@@ -96,7 +96,7 @@ Não há suporte para esse valor.
 <span id="_REVERT"></span><span id="_revert"></span>/REVERT
 </dt> <dd>
 
-Retornar às configurações padrão.
+Retorne às configurações padrão.
 
 **Windows Server 2008 e Windows Vista:** Sem suporte.
 
@@ -107,14 +107,14 @@ Retornar às configurações padrão.
 
 Não há suporte para esse valor.
 
-**Windows Server 2003 e Windows XP:** Examina todos os arquivos protegidos do sistema em cada inicialização.
+**Windows Server 2003 e Windows XP:** Examina todos os arquivos do sistema protegidos em cada inicialização.
 
 </dd> <dt>
 
 <span id="_SCANFILE"></span><span id="_scanfile"></span>/SCANFILE
 </dt> <dd>
 
-Verifica e repara o arquivo localizado no caminho completo especificado.
+Examina e repara o arquivo localizado no caminho completo especificado.
 
 **Windows XP:** Sem suporte.
 
@@ -123,16 +123,16 @@ Verifica e repara o arquivo localizado no caminho completo especificado.
 <span id="_SCANNOW"></span><span id="_scannow"></span>/SCANNOW
 </dt> <dd>
 
-Examina todos os arquivos protegidos do sistema imediatamente.
+Examina todos os arquivos do sistema protegidos imediatamente.
 
 </dd> <dt>
 
-<span id="_SCANONCE"></span><span id="_scanonce"></span>/SCANONCE
+<span id="_SCANONCE"></span><span id="_scanonce"></span>/S LTDANCE
 </dt> <dd>
 
 Não há suporte para esse valor.
 
-**Windows Server 2003 e Windows XP:** Examina todos os arquivos protegidos do sistema na próxima inicialização.
+**Windows Server 2003 e Windows XP:** Examina todos os arquivos do sistema protegidos na próxima inicialização.
 
 </dd> <dt>
 
@@ -148,33 +148,33 @@ Verifica o arquivo no caminho completo especificado. Essa opção não repara o 
 <span id="_VERIFYONLY"></span><span id="_verifyonly"></span>/VERIFYONLY
 </dt> <dd>
 
-Examina todos os arquivos protegidos do sistema, mas não repara os arquivos.
+Examina todos os arquivos do sistema protegidos, mas não repara arquivos.
 
 **Windows XP:** Sem suporte.
 
 </dd> </dl>
 
-O SFC define o seguinte valor de registro:
+O SFC define o seguinte valor do Registro:
 
- = HKEY \_ local \_ Machine \\ software \\ Microsoft \\ Windows NT \\ CurrentVersion \\ Winlogon \\ SFCScan
+ = HKEY \_ LOCAL MACHINE SOFTWARE Microsoft Windows NT \_ \\ \\ \\ \\ CurrentVersion \\ Winlogon \\ SFCScan
 
-Para obter mais informações, consulte [valores do registro de WFP](wfp-registry-values.md).
+Para obter mais informações, consulte Valores do Registro [WFP](wfp-registry-values.md).
 
 ## <a name="remarks"></a>Comentários
 
-Somente no Windows Vista, você pode definir a variável de ambiente do arquivo de **\_ \_ log do Windows TRACING** para o local de um diretório válido para receber um arquivo de log.
+Somente Windows Vista, você pode definir a variável de ambiente **\_ \_ LOGFILE DO WINDOWS TRACING** para o local de um diretório válido para receber um arquivo de log.
 
 ## <a name="examples"></a>Exemplos
 
-As linhas de comando de exemplo a seguir são exemplos de sintaxe de sfc.exe.
+As linhas de comando de exemplo a seguir são exemplos sfc.exe sintaxe.
 
-**SFC/SCANNOW**
+**sfc /SCANNOW**
 
-**Sfc/VERIFYFILE = c: \\ Windows \\ System32 \\kernel32.dll**
+**sfc /VERIFYFILE=c: \\ windows \\ system32 \\kernel32.dll**
 
-**Sfc/SCANFILE = d: \\ Windows \\ System32 \\kernel32.dll/OFFBOOTDIR = d: \\ /OFFWINDIR = d: \\ Windows**
+**sfc /SCANFILE=d: \\ windows \\ system32 \\kernel32.dll /OFFBOOTDIR=d: \\ /OFFWINDIR=d: \\ windows**
 
-**/FILESONLY/VERIFYONLY Sfc**
+**sfc /VERIFYONLY /FILESONLY**
 
  
 

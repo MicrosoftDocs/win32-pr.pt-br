@@ -4,12 +4,12 @@ ms.assetid: 9d07a6c8-a15f-4030-838c-3063e315684f
 title: CADEIA DE CARACTERES DE OCTETO
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ed2a042312a4415ea9554b7519404097287244f5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 588547e5211efbe6b4b91a8a72f6644de0c7c4dcbacc570f0a1f272e7cc97962
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104461234"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118903739"
 ---
 # <a name="octet-string"></a>CADEIA DE CARACTERES DE OCTETO
 

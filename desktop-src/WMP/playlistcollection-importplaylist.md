@@ -3,9 +3,9 @@ title: Método playlistcollection. importPlaylist
 description: O método importPlaylist adiciona uma lista de reprodução estática à biblioteca. | Método playlistcollection. importPlaylist
 ms.assetid: 0611ba42-fd8f-4fb9-9fbb-809a82775c2a
 keywords:
-- método importPlaylist Windows Media Player
-- método importPlaylist Windows Media Player, classe Playlistcollection
-- Classe playlistcollection Windows Media Player, método importPlaylist
+- Windows Media Player do método importPlaylist
+- método importPlaylist Windows Media Player, classe playlistcollection
+- classe playlistcollection Windows Media Player, método importPlaylist
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 736e9afa17f571428fada48660726b606268796a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7f6c2a61b6603c0bfb38025548eaa4b0943bcdd1a5e81cb1ac27c17969fe87ca
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105768227"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118334802"
 ---
 # <a name="playlistcollectionimportplaylist-method"></a>Método playlistcollection. importPlaylist
 
@@ -49,7 +49,7 @@ Objeto de **playlist** a ser adicionado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método retorna o objeto **playlist** que foi adicionado.
 
@@ -100,10 +100,10 @@ Para usar esse método, é necessário ter acesso completo à biblioteca. Para o
 [**Playlistcollection. Remove**](playlistcollection-remove.md)
 </dt> <dt>
 
-[**Settings. mediaAccessRights**](settings-mediaaccessrights.md)
+[**Configurações. mediaAccessRights**](settings-mediaaccessrights.md)
 </dt> <dt>
 
-[**Settings. requestMediaAccessRights**](settings-requestmediaaccessrights.md)
+[**Configurações. requestMediaAccessRights**](settings-requestmediaaccessrights.md)
 </dt> </dl>
 
  

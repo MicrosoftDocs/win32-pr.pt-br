@@ -3,7 +3,7 @@ title: Elemento DropDownButton
 description: Representa um controle Drop-Down Button padrão.
 ms.assetid: 41031be2-43bc-4f75-b37a-1dcecc1635e1
 keywords:
-- Elemento DropDownButton Windows Faixa de Opções
+- Elemento DropDownButton Windows Ribbon
 topic_type:
 - apiref
 api_name:
@@ -116,7 +116,7 @@ Pode ocorrer uma ou mais vezes para cada [**elemento ControlGroup**](windowsribb
 
 **DropDownButton dá** suporte [a modos de](ribbon-applicationmodes.md) aplicativo quando ele é hospedado na coluna esquerda do Menu do Aplicativo.
 
-[**DropDownGallery**](windowsribbon-element-dropdowngallery.md) e [**SplitButtonGallery**](windowsribbon-element-splitbuttongallery.md) não são elementos filho válidos de **DropDownButton** quando **DropDownButton** é um descendente [**de ApplicationMenu**](windowsribbon-element-applicationmenu.md).
+[**DropDownGallery**](windowsribbon-element-dropdowngallery.md) e [**SplitButtonGallery**](windowsribbon-element-splitbuttongallery.md) não são elementos filho válidos de **DropDownButton** quando **DropDownButton** é um descendente de [**ApplicationMenu**](windowsribbon-element-applicationmenu.md).
 
 ## <a name="examples"></a>Exemplos
 

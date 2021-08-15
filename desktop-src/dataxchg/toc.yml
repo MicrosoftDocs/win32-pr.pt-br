@@ -4,16 +4,16 @@
     - name: Área de Transferência
       href: clipboard.md
       items:
-        - name: Visões gerais da área de transferência
+        - name: Visão geral da área de transferência
           href: clipboard-overviews.md
           items:
-            - name: Sobre a área de transferência
+            - name: Sobre a Área de Transferência
               href: about-the-clipboard.md
             - name: Formatos da área de transferência
               href: clipboard-formats.md
-            - name: Formato de área de transferência HTML
+            - name: Formato da área de transferência HTML
               href: html-clipboard-format.md
-            - name: Operações da área de transferência
+            - name: Operações de área de transferência
               href: clipboard-operations.md
             - name: Usando a área de transferência
               href: using-the-clipboard.md
@@ -27,15 +27,15 @@
                   href: /windows/desktop/api/Winuser/nf-winuser-addclipboardformatlistener
                 - name: ChangeClipboardChain
                   href: /windows/desktop/api/Winuser/nf-winuser-changeclipboardchain
-                - name: CloseClipboard
+                - name: Closeclipboard
                   href: /windows/desktop/api/Winuser/nf-winuser-closeclipboard
                 - name: CountClipboardFormats
                   href: /windows/desktop/api/Winuser/nf-winuser-countclipboardformats
-                - name: EmptyClipboard
+                - name: Emptyclipboard
                   href: /windows/desktop/api/Winuser/nf-winuser-emptyclipboard
-                - name: EnumClipboardFormats
+                - name: Enumclipboardformats
                   href: /windows/desktop/api/Winuser/nf-winuser-enumclipboardformats
-                - name: GetClipboardData
+                - name: Getclipboarddata
                   href: /windows/desktop/api/Winuser/nf-winuser-getclipboarddata
                 - name: GetClipboardFormatName
                   href: /windows/desktop/api/Winuser/nf-winuser-getclipboardformatnamea
@@ -53,24 +53,24 @@
                   href: /windows/desktop/api/Winuser/nf-winuser-getupdatedclipboardformats
                 - name: IsClipboardFormatAvailable
                   href: /windows/desktop/api/Winuser/nf-winuser-isclipboardformatavailable
-                - name: OpenClipboard
+                - name: Openclipboard
                   href: /windows/desktop/api/Winuser/nf-winuser-openclipboard
-                - name: RegisterClipboardFormat
+                - name: Registerclipboardformat
                   href: /windows/desktop/api/Winuser/nf-winuser-registerclipboardformata
                 - name: RemoveClipboardFormatListener
                   href: /windows/desktop/api/Winuser/nf-winuser-removeclipboardformatlistener
-                - name: SetClipboardData
+                - name: Setclipboarddata
                   href: /windows/desktop/api/Winuser/nf-winuser-setclipboarddata
-                - name: SetClipboardViewer
+                - name: Setclipboardviewer
                   href: /windows/desktop/api/Winuser/nf-winuser-setclipboardviewer
             - name: Mensagens da área de transferência
               href: clipboard-messages.md
               items:
-                - name: WM_CLEAR
+                - name: Wm_clear
                   href: wm-clear.md
                 - name: WM_COPY
                   href: wm-copy.md
-                - name: WM_CUT
+                - name: Wm_cut
                   href: wm-cut.md
                 - name: WM_PASTE
                   href: wm-paste.md
@@ -109,7 +109,7 @@
     - name: Cópia de dados
       href: data-copy.md
       items:
-        - name: Usando a cópia de dados
+        - name: Usando cópia de dados
           href: using-data-copy.md
         - name: Referência de cópia de dados
           href: data-copy-reference.md
@@ -118,19 +118,19 @@
               href: wm-copydata.md
             - name: COPYDATASTRUCT
               href: /windows/win32/api/Winuser/ns-winuser-copydatastruct
-    - name: Troca dinâmica de dados (DDE)
+    - name: Dados Dinâmicos Exchange (DDE)
       href: dynamic-data-exchange.md
       items:
-        - name: Visões gerais de DDE
+        - name: Visão geral do DDE
           href: dynamic-data-exchange-overviews.md
           items:
-            - name: Sobre troca dinâmica de dados
+            - name: Sobre Dados Dinâmicos Exchange
               href: about-dynamic-data-exchange.md
             - name: Sobre tabelas Atom
               href: about-atom-tables.md
-            - name: Usando troca dinâmica de dados
+            - name: Usando Dados Dinâmicos Exchange
               href: using-dynamic-data-exchange.md
-        - name: Referência DDE
+        - name: Referência de DDE
           href: dynamic-data-exchange-reference.md
           items:
             - name: Funções DDE
@@ -153,7 +153,7 @@
               items:
                 - name: WM_DDE_INITIATE
                   href: wm-dde-initiate.md
-            - name: Notificações DDE
+            - name: Notificações de DDE
               href: dynamic-data-exchange-notifications.md
               items:
                 - name: WM_DDE_ACK
@@ -185,25 +185,25 @@
                   href: /windows/desktop/api/Dde/ns-dde-ddepoke
                 - name: HSZPAIR
                   href: /windows/win32/api/Ddeml/ns-ddeml-hszpair
-        - name: Referência Atom
+        - name: Referência atom
           href: atoms-reference.md
           items:
             - name: Funções Atom
               href: atoms-functions.md
               items:
-                - name: Addatom
+                - name: AddAtom
                   href: /windows/desktop/api/Winbase/nf-winbase-addatomw
                 - name: DeleteAtom
                   href: /windows/desktop/api/Winbase/nf-winbase-deleteatom
                 - name: FindAtom
                   href: /windows/desktop/api/Winbase/nf-winbase-findatoma
-                - name: Getatomname
+                - name: GetAtomName
                   href: /windows/desktop/api/Winbase/nf-winbase-getatomnamea
-                - name: GlobalAddAtom
+                - name: Globaladdatom
                   href: /windows/desktop/api/Winbase/nf-winbase-globaladdatoma
                 - name: GlobalAddAtomEx
                   href: /windows/desktop/api/winbase/nf-winbase-globaladdatomexa
-                - name: GlobalDeleteAtom
+                - name: Globaldeleteatom
                   href: /windows/desktop/api/Winbase/nf-winbase-globaldeleteatom
                 - name: GlobalFindAtom
                   href: /windows/desktop/api/Winbase/nf-winbase-globalfindatoma
@@ -211,15 +211,15 @@
                   href: /windows/desktop/api/Winbase/nf-winbase-globalgetatomnamea
                 - name: InitAtomTable
                   href: /windows/desktop/api/Winbase/nf-winbase-initatomtable
-            - name: Macros Atom
+            - name: Atom Macros
               href: atoms-macros.md
               items:
-                - name: MAKEINTATOM
+                - name: Makeintatom
                   href: /windows/desktop/api/Winbase/nf-winbase-makeintatom
-    - name: DDEML (biblioteca de gerenciamento de troca dinâmica de dados)
+    - name: DDEML (Biblioteca de Gerenciamento do Dados Dinâmicos Exchange)
       href: dynamic-data-exchange-management-library.md
       items:
-        - name: Visões gerais de DDEML
+        - name: Visão geral de DDEML
           href: dynamic-data-exchange-management-library-overviews.md
           items:
             - name: Sobre o DDEML
@@ -230,9 +230,9 @@
               href: conversation-management.md
             - name: Gerenciamento de dados
               href: data-management.md
-            - name: Monitorando aplicativos
+            - name: Monitoramento de aplicativos
               href: monitoring-applications.md
-            - name: Serviço de nome
+            - name: Serviço de Nome
               href: name-service.md
             - name: Gerenciamento de transações
               href: transaction-management.md
@@ -300,7 +300,7 @@
                   href: /windows/desktop/api/Ddeml/nf-ddeml-ddeunaccessdata
                 - name: DdeUninitialize
                   href: /windows/desktop/api/Ddeml/nf-ddeml-ddeuninitialize
-            - name: Transações de DDEML
+            - name: Transações DDEML
               href: dynamic-data-exchange-management-library-transactions.md
               items:
                 - name: XTYP_ADVDATA
@@ -335,7 +335,7 @@
                   href: xtyp-wildconnect.md
                 - name: XTYP_XACT_COMPLETE
                   href: xtyp-xact-complete.md
-            - name: Estruturas de DDEML
+            - name: Estruturas DDEML
               href: dynamic-data-exchange-management-library-structures.md
               items:
                 - name: CONVCONTEXT

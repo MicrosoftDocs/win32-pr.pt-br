@@ -1,19 +1,19 @@
 ---
-description: Como os tipos de dados ASN. 1 com suporte da API de registro de certificado são codificados usando o Distinguished Encoding Rules (DER).
+description: como os tipos de dados ASN. 1 com suporte da API de registro de certificado são codificados usando o Distinguished Encoding Rules (DER).
 ms.assetid: 901dc977-79fe-4b02-9a0c-68474d6bbf31
 title: Codificação DER dos tipos ASN. 1
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3f2c1c2e22b1f996c3c975a2eea93bc910225d02
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d53e46fb7183aca410ce7712955608406c1611769315cb8dcd4ae29686afa702
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105811808"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118904455"
 ---
 # <a name="der-encoding-of-asn1-types"></a>Codificação DER dos tipos ASN. 1
 
-Os tópicos a seguir discutem como os tipos de dados ASN. 1 com suporte da API de registro de certificado são codificados usando o Distinguished Encoding Rules (DER):
+os tópicos a seguir discutem como os tipos de dados ASN. 1 com suporte da API de registro de certificado são codificados usando o Distinguished Encoding Rules (DER):
 
 -   [CADEIA DE BITS](about-bit-string.md)
 -   [BOOLEAN](about-boolean.md)
@@ -25,7 +25,7 @@ Os tópicos a seguir discutem como os tipos de dados ASN. 1 com suporte da API d
 -   [IA5String](about-ia5string.md)
 -   [Imenablestring](about-printablestring.md)
 -   [UTF8String](about-utf8string.md)
--   [SEQUENCE](about-sequence.md)
+-   [ORDEM](about-sequence.md)
 -   [SET](about-set.md)
 
 ## <a name="related-topics"></a>Tópicos relacionados

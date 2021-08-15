@@ -3,9 +3,9 @@ title: Método IWMPControls Stop
 description: O método Stop interrompe a reprodução do item de mídia. | Método IWMPControls Stop
 ms.assetid: 4be601af-6321-4115-a94d-cfc9228991cb
 keywords:
-- método Stop Windows Media Player
-- método Stop Windows Media Player, interface IWMPControls
-- Interface IWMPControls Windows Media Player, método Stop
+- Windows Media Player do método Stop
+- método stop Windows Media Player, interface IWMPControls
+- Windows Media Player de interface IWMPControls, método stop
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a73271098340ea0cf0a645472b5ef6333ae0f4b2
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6f941ac90fa86cdd16dedf5349c0a6d614c57f49bc91009f5d62c56bb83144bd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105788016"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118332070"
 ---
 # <a name="iwmpcontrolsstop-method"></a>Método IWMPControls:: Stop
 
@@ -49,15 +49,15 @@ Implements IWMPControls.stop
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-Esse método faz com que o Windows Media Player libere os recursos do sistema que está usando, como o dispositivo de áudio. O item de mídia atual, no entanto, não é liberado.
+esse método faz Windows Media Player liberar os recursos do sistema que está usando, como o dispositivo de áudio. O item de mídia atual, no entanto, não é liberado.
 
-Quando o Windows Media Player é interrompido, a posição de reprodução atual no item de mídia é redefinida para o início do item. Posteriormente, chamar **IWMPControls. Play** iniciará a reprodução desde o início do item de mídia. Para interromper uma operação de reprodução sem alterar a posição atual, use o método **IWMPControls. Pause** .
+quando Windows Media Player é interrompido, a posição de reprodução atual no item de mídia é redefinida para o início do item. Posteriormente, chamar **IWMPControls. Play** iniciará a reprodução desde o início do item de mídia. Para interromper uma operação de reprodução sem alterar a posição atual, use o método **IWMPControls. Pause** .
 
 ## <a name="examples"></a>Exemplos
 

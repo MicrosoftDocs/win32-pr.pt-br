@@ -1,22 +1,22 @@
 ---
-title: Como um serviço do Windows Sockets autentica um cliente
-description: Quando um cliente se conecta ao serviço Windows Sockets, o serviço inicia suas operações para a sequência de autenticação mútua, que é mostrada nos exemplos de código a seguir.
+title: como um serviço de soquetes de Windows autentica um cliente
+description: quando um cliente se conecta ao serviço de soquetes de Windows, o serviço inicia suas operações para a sequência de autenticação mútua, que é mostrada nos exemplos de código a seguir.
 ms.assetid: 32f62fb9-41c6-4932-9b91-753174919707
 ms.tgt_platform: multiple
 keywords:
-- Como um serviço do Windows Sockets autentica um AD do cliente
+- como um serviço de soquetes Windows autentica um AD do cliente
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cad096ddfb9569d6289c1e775465232431c20ad6
-ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.openlocfilehash: c2975d356de011818514d6999f03d1998e066a4b8bdadd6eaba8835541e4b8e5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "103917124"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118188518"
 ---
-# <a name="how-a-windows-sockets-service-authenticates-a-client"></a>Como um serviço do Windows Sockets autentica um cliente
+# <a name="how-a-windows-sockets-service-authenticates-a-client"></a>como um serviço de soquetes de Windows autentica um cliente
 
-Quando um cliente se conecta ao serviço Windows Sockets, o serviço inicia suas operações para a sequência de autenticação mútua, que é mostrada nos exemplos de código a seguir.
+quando um cliente se conecta ao serviço de soquetes de Windows, o serviço inicia suas operações para a sequência de autenticação mútua, que é mostrada nos exemplos de código a seguir.
 
 A rotina **doauthentication** usa o identificador de soquete para receber o primeiro pacote de autenticação do cliente. O buffer do cliente é passado para a função **GenServerContext** , que então passa o buffer para o pacote de segurança SSPI para autenticação. A **doautenticação** envia a saída do pacote de segurança de volta para o cliente. Esse loop é repetido até que a autenticação falhe ou **GenServerContext** defina um sinalizador indicando que a autenticação foi bem-sucedida.
 
@@ -206,6 +206,6 @@ return TRUE;
 
 
 
- 
+ 
 
- 
+ 

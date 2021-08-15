@@ -1,21 +1,21 @@
 ---
-description: Saiba mais sobre as novas alterações do VDS (serviço de disco virtual) no Windows Server 2008 R2 e no Windows 7.
+description: saiba mais sobre as novas alterações para o serviço de disco Virtual (VDS) no Windows Server 2008 R2 e Windows 7.
 ms.assetid: 4ab37529-8d56-47a3-ad3d-0197cabd4f87
 title: Novidades no VDS no Windows Server 2008 R2 e no Windows 7
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9050b157e9ce3c78550fdcffbd688988b7eacf90
-ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
+ms.openlocfilehash: b7461a4389a8b276bba33ceacb812f0990344e32a47d848f5d5bce461c3f89f8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113119651"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118347517"
 ---
 # <a name="whats-new-in-vds-in-windows-server-2008-r2-and-windows-7"></a>Novidades no VDS no Windows Server 2008 R2 e no Windows 7
 
-\[A partir do Windows 8 e do Windows Server 2012, a interface com do [serviço de disco virtual](virtual-disk-service-portal.md) é substituída pela [API de gerenciamento de armazenamento do Windows](/previous-versions/windows/desktop/stormgmt/windows-storage-management-api-portal).\]
+\[a partir do Windows 8 e Windows Server 2012, a interface COM do [serviço de disco Virtual](virtual-disk-service-portal.md) é substituída pela [API de gerenciamento de Armazenamento Windows](/previous-versions/windows/desktop/stormgmt/windows-storage-management-api-portal).\]
 
-O Windows Server 2008 R2 e o Windows 7 apresentam as seguintes alterações ao VDS (serviço de disco virtual):
+Windows o Server 2008 R2 e o Windows 7 apresentam as seguintes alterações ao VDS (serviço de disco Virtual):
 
 - [Novas interfaces VDS](#new-vds-interfaces)
 - [Novas enumerações VDS](#new-vds-enumerations)
@@ -174,37 +174,37 @@ O Windows Server 2008 R2 e o Windows 7 apresentam as seguintes alterações ao V
 **VDS_LT_RAID61**  
 
 
-[**VDS_OBJECT_TYPE**](/windows/desktop/api/Vds/ne-vds-vds_object_type) valores adicionados à enumeração:
+[**VDS_OBJECT_TYPE**](/windows/desktop/api/Vds/ne-vds-vds_object_type) enumeração adicionada:
 
 **VDS_OT_STORAGE_POOL**  
 **VDS_OT_VDISK**  
 **VDS_OT_OPEN_VDISK**  
 
 
-[**VDS_PORT_STATUS**](/windows/desktop/api/Vds/ne-vds-vds_port_status) valor adicionado à enumeração:
+[**VDS_PORT_STATUS**](/windows/desktop/api/Vds/ne-vds-vds_port_status) valor adicionado da enumeração:
 
 **VDS_DRS_REMOVED**  
 
 
-[**VDS_PROVIDER_FLAG**](/windows/desktop/api/Vds/ne-vds-vds_provider_flag) valores adicionados à enumeração:
+[**VDS_PROVIDER_FLAG**](/windows/desktop/api/Vds/ne-vds-vds_provider_flag) enumeração adicionada:
 
 **VDS_PF_SUPPORT_MIRROR**  
 **VDS_PF_SUPPORT_RAID5**  
 
 
-[**VDS_PROVIDER_TYPE**](/windows/desktop/api/Vds/ne-vds-vds_provider_type) valores adicionados à enumeração:
+[**VDS_PROVIDER_TYPE**](/windows/desktop/api/Vds/ne-vds-vds_provider_type) enumeração adicionada:
 
 **VDS_PT_VIRTUALDISK**  
 **VDS_PT_MAX**  
 
 
-[**VDS_SERVICE_FLAG**](/windows/desktop/api/Vds/ne-vds-vds_service_flag) valores adicionados à enumeração:
+[**VDS_SERVICE_FLAG**](/windows/desktop/api/Vds/ne-vds-vds_service_flag) enumeração adicionada:
 
 **VDS_SVF_SUPPORT_MIRROR**  
 **VDS_SVF_SUPPORT_RAID5**  
 
 
-[**VDS_SUB_SYSTEM_FLAG**](/windows/desktop/api/Vds/ne-vds-vds_sub_system_flag) valores adicionados à enumeração:
+[**VDS_SUB_SYSTEM_FLAG**](/windows/desktop/api/Vds/ne-vds-vds_sub_system_flag) enumeração adicionada valores:
 
 **VDS_SF_SUPPORTS_LUN_NUMBER**  
 **VDS_SF_SUPPORTS_MIRRORED_CACHE**  
@@ -214,37 +214,37 @@ O Windows Server 2008 R2 e o Windows 7 apresentam as seguintes alterações ao V
 **VDS_SF_CONSISTENCY_CHECK_CAPABLE**  
 
 
-[**VDS_TRANSITION_STATE**](/windows/desktop/api/Vds/ne-vds-vds_transition_state) valor adicionado à enumeração:
+[**VDS_TRANSITION_STATE**](/windows/desktop/api/Vds/ne-vds-vds_transition_state) valor adicionado da enumeração:
 
 **VDS_TS_RESTRIPING**  
 
 
-[**VDS_VERSION_SUPPORT_FLAG**](/windows/desktop/api/Vds/ne-vds-vds_version_support_flag) valores adicionados à enumeração:
+[**VDS_VERSION_SUPPORT_FLAG**](/windows/desktop/api/Vds/ne-vds-vds_version_support_flag) enumeração adicionada:
 
 **VDS_VSF_2_0**  
 **VDS_VSF_2_1**  
 **VDS_VSF_3_0**  
 
 
-[**VDS_VOLUME_STATUS**](/windows/desktop/api/Vds/ne-vds-vds_volume_status) valor adicionado à enumeração:
+[**VDS_VOLUME_STATUS**](/windows/desktop/api/Vds/ne-vds-vds_volume_status) valor adicionado da enumeração:
 
 **VDS_VS_OFFLINE**  
 
 
-## <a name="modifications-to-existing-vds-structures"></a>Modificações nas estruturas VDS existentes
+## <a name="modifications-to-existing-vds-structures"></a>Modificações em estruturas VDS existentes
 
-[**VDS_CONTROLLER_NOTIFICATION**](/windows/desktop/api/Vds/ns-vds-vds_controller_notification) estrutura adicionou valores de **ulEvent** :
+[**VDS_CONTROLLER_NOTIFICATION**](/windows/desktop/api/Vds/ns-vds-vds_controller_notification) estrutura adicionada valores **ulEvent:**
 
 VDS_NF_CONTROLLER_MODIFY  
 VDS_NF_CONTROLLER_REMOVED  
 
 
-A estrutura de [**VDS_DRIVE_NOTIFICATION**](/windows/desktop/api/Vds/ns-vds-vds_drive_notification) adicionou o valor **ulEvent** :
+[**VDS_DRIVE_NOTIFICATION**](/windows/desktop/api/Vds/ns-vds-vds_drive_notification) estrutura adicionada valor **ulEvent:**
 
 VDS_NF_DRIVE_REMOVED  
 
 
-[**VDS_PORT_NOTIFICATION**](/windows/desktop/api/Vds/ns-vds-vds_port_notification) estrutura adicionou valores de **ulEvent** :
+[**VDS_PORT_NOTIFICATION**](/windows/desktop/api/Vds/ns-vds-vds_port_notification) estrutura adicionada valores **ulEvent:**
 
 VDS_NF_PORT_MODIFY  
 VDS_NF_PORT_REMOVED  

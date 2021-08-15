@@ -1,10 +1,10 @@
-- name: Referência do Windows Runtime C++
+- name: Windows Referência C++ de runtime
   href: reference.md
   items:
     - name: Tipos de dados
       href: data-types.md
       items:
-        - name: Windows Runtime tipos de dados base
+        - name: Windows Tipos de dados base de runtime
           href: base-data-types.md
         - name: HSTRING
           href: hstring.md
@@ -33,9 +33,9 @@
           href: /windows/win32/api/combaseapi/ne-combaseapi-agilereferenceoptions
         - name: BSOS_OPTIONS
           href: /windows/win32/api/shcore/ne-shcore-bsos_options
-        - name: AsyncStatus
+        - name: Asyncstatus
           href: /windows/win32/api/asyncinfo/ne-asyncinfo-asyncstatus
-        - name: Errooptions
+        - name: ErrorOptions
           href: /previous-versions//hh438361(v=vs.85)
         - name: IdentityType
           href: /windows/win32/api/activationregistration/ne-activationregistration-identitytype
@@ -51,7 +51,7 @@
           href: /windows/win32/api/activationregistration/ne-activationregistration-registrationscope
         - name: ThreadingType
           href: /windows/win32/api/activationregistration/ne-activationregistration-threadingtype
-        - name: TrustLevel
+        - name: Trustlevel
           href: /windows/win32/api/inspectable/ne-inspectable-trustlevel
         - name: RO_INIT_TYPE
           href: /windows/win32/api/roapi/ne-roapi-ro_init_type
@@ -84,9 +84,9 @@
           href: createxamluipresenter.md
         - name: DbgRaiseAssertionFailure
           href: /previous-versions//jj635749(v=vs.85)
-        - name: 'GetDXGIInterface (IDirect3DDevice ^, DXGI_TYPE * *)'
+        - name: 'GetDXGIInterface(IDirect3DDevice^, DXGI_TYPE**)'
           href: /windows/win32/api/windows.graphics.directx.direct3d11.interop/nf-windows-graphics-directx-direct3d11-interop-getdxgiinterface
-        - name: 'GetDXGIInterface (IDirect3DSurface ^, DXGI_TYPE * *)'
+        - name: 'GetDXGIInterface(IDirect3DSurface^, DXGI_TYPE**)'
           href: /windows/win32/api/windows.graphics.directx.direct3d11.interop/nf-windows-graphics-directx-direct3d11-interop-getdxgiinterface~r1
         - name: GetDXGIInterfaceFromObject
           href: /windows/win32/api/windows.graphics.directx.direct3d11.interop/nf-windows-graphics-directx-direct3d11-interop-getdxgiinterfacefromobject
@@ -1301,14 +1301,14 @@
           items:
             - name: Método CreateFromMFSample
               href: /windows/win32/api/windows.media.core.interop/nf-windows-media-core-interop-ivideoframenativefactory-createfrommfsample
-        - name: IViewprovider
+        - name: IViewProvider
           href: /previous-versions//hh438426(v=vs.85)
         - name: IViewProviderFactory
           href: /previous-versions//hh438427(v=vs.85)
         - name: IVirtualSurfaceImageSourceNative
           href: /windows/win32/api/windows.ui.xaml.media.dxinterop/nn-windows-ui-xaml-media-dxinterop-ivirtualsurfaceimagesourcenative
           items:
-            - name: Método Invalidate
+            - name: Invalidar método
               href: /windows/win32/api/windows.ui.xaml.media.dxinterop/nf-windows-ui-xaml-media-dxinterop-ivirtualsurfaceimagesourcenative-invalidate
             - name: Método GetUpdateRectCount
               href: /windows/win32/api/windows.ui.xaml.media.dxinterop/nf-windows-ui-xaml-media-dxinterop-ivirtualsurfaceimagesourcenative-getupdaterectcount
@@ -1318,7 +1318,7 @@
               href: /windows/win32/api/windows.ui.xaml.media.dxinterop/nf-windows-ui-xaml-media-dxinterop-ivirtualsurfaceimagesourcenative-getvisiblebounds
             - name: Método RegisterForUpdatesNeeded
               href: /windows/win32/api/windows.ui.xaml.media.dxinterop/nf-windows-ui-xaml-media-dxinterop-ivirtualsurfaceimagesourcenative-registerforupdatesneeded
-            - name: Redimensionar método
+            - name: Método Resize
               href: /windows/win32/api/windows.ui.xaml.media.dxinterop/nf-windows-ui-xaml-media-dxinterop-ivirtualsurfaceimagesourcenative-resize
         - name: IVirtualSurfaceUpdatesCallbackNative
           href: /windows/win32/api/windows.ui.xaml.media.dxinterop/nn-windows-ui-xaml-media-dxinterop-ivirtualsurfaceupdatescallbacknative
@@ -1352,16 +1352,16 @@
           href: /previous-versions//jj219262(v=vs.85)
         - name: EventRegistrationToken
           href: /windows/win32/api/eventtoken/ns-eventtoken-eventregistrationtoken
-        - name: DateTime
+        - name: Datetime
           href: /windows/win32/api/windows.foundation/ns-windows-foundation-datetime
         - name: HSTRING_HEADER
           href: /windows/win32/api/hstring/ns-hstring-hstring_header
         - name: IRoSimpleMetaDataBuilder
           href: /windows/win32/api/roparameterizediid/ns-roparameterizediid-irosimplemetadatabuilder
           items:
-            - name: Método setdelegar
+            - name: Método SetDelegate
               href: /previous-versions/hh438407(v=vs.85)
-            - name: Método setenum
+            - name: Método SetEnum
               href: /previous-versions/hh438408(v%3Dvs.85)
             - name: Método SetInterfaceGroupParameterizedDefault
               href: /previous-versions/hh438409(v=vs.85)
@@ -1375,14 +1375,14 @@
               href: /previous-versions/hh438413(v%3Dvs.85)
             - name: Método SetRuntimeClassSimpleDefault
               href: /previous-versions/hh438414(v%3Dvs.85)
-            - name: Método setstruct
+            - name: Método SetStruct
               href: /previous-versions/hh438415(v%3Dvs.85)
             - name: Método SetWinRtInterface
               href: /previous-versions/hh438416(v%3Dvs.85)
         - name: IRoMetaDataLocator
           href: /windows/win32/api/roparameterizediid/ns-roparameterizediid-irometadatalocator
           items:
-            - name: Método localizar
+            - name: Localizar método
               href: /previous-versions//hh438405(v=vs.85)
         - name: Point
           href: /windows/win32/api/windows.foundation/ns-windows-foundation-point
@@ -1390,7 +1390,7 @@
           href: /windows/win32/api/windows.data.pdf.interop/ns-windows-data-pdf-interop-pdf_render_params
         - name: Rect
           href: /windows/win32/api/windows.foundation/ns-windows-foundation-rect
-        - name: ServerInformation
+        - name: Serverinformation
           href: /windows/win32/api/combaseapi/ns-combaseapi-serverinformation
         - name: Tamanho
           href: /windows/win32/api/windows.foundation/ns-windows-foundation-size

@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Capicom.dll
-ms.openlocfilehash: 2ffb79941a78602bfda8f5287b0f4df7205d4d86
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5fd4cfe0d600c99251db77b1764edb83353b01143fc5179c1efc29673e30e734
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105792671"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118900942"
 ---
 # <a name="qualifierscount-property"></a>Propriedade qualifierrs. Count
 
@@ -26,7 +26,7 @@ ms.locfileid: "105792671"
 
 A propriedade **Count** recupera o número de objetos de [**qualificador**](qualifier.md) na coleção.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 
 ```VB
@@ -45,7 +45,7 @@ Número de objetos de [**qualificador**](qualifier.md) na coleção.
 
 | Requisito | Valor |
 |----------------------------|----------------------------------------------------------------------------------------|
-| Redistribuível<br/> | CAPICOM 2,0 ou posterior no Windows Server 2003 e no Windows XP<br/>                  |
+| Redistribuível<br/> | capicom 2,0 ou posterior no Windows Server 2003 e Windows XP<br/>                  |
 | DLL<br/>             | <dl> <dt>Capicom.dll</dt> </dl> |
 
 

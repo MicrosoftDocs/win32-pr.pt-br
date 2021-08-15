@@ -4,12 +4,12 @@ ms.assetid: 42c015c8-3de1-4482-bf27-b19c422b8cdb
 title: IDENTIFICADOR DE OBJETO
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d6cc81169968bfb3be5a49b0f30b8171cd904bf6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b35c2bf64424fa158eef3c666743142d5ec5a65108e3def28c43194d2eaf5adc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104169492"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118903780"
 ---
 # <a name="object-identifier"></a>IDENTIFICADOR DE OBJETO
 

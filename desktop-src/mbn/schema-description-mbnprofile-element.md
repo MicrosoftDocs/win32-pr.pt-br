@@ -11,18 +11,18 @@ api_name:
 - Description
 api_type:
 - Schema
-ms.openlocfilehash: 02bec9af9900b622622757433c6241d9df7bde36
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5ff00dbc03503b51faa9dc734db61fd912da0ecf8f10f19adcbfb17b510c4834
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103647098"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118744453"
 ---
 # <a name="description-mbnprofile-element"></a>Elemento Description (MBNProfile)
 
-O elemento **Description (MBNProfile)** contém uma descrição do perfil.
+O **elemento Description (MBNProfile)** contém uma descrição do perfil.
 
-É uma cadeia de caracteres com comprimento de até 255 caracteres.
+É uma cadeia de caracteres de comprimento de até 255 caracteres.
 
 ``` syntax
 <xs:element name="Description"
@@ -30,7 +30,7 @@ O elemento **Description (MBNProfile)** contém uma descrição do perfil.
  />
 ```
 
-O elemento **Description** é definido pelo elemento [**MBNProfile**](schema-mbnprofile-element.md) .
+O **elemento Description** é definido pelo elemento [**MBNProfile.**](schema-mbnprofile-element.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -38,7 +38,7 @@ O elemento **Description** é definido pelo elemento [**MBNProfile**](schema-mbn
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Aplicativos de \[ aplicativos da área de trabalho do Windows 7 \| UWP\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows aplicativos UWP de 7 \[ \| áreas de trabalho\]<br/> |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                         |
 
 

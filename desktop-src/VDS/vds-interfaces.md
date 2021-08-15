@@ -4,16 +4,16 @@ ms.assetid: 0bddfd62-881d-4fda-b303-ed38d434af55
 title: Interfaces VDS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 06e6bbc6d471c89fd2f01e0875a5e786795813bf
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9715fabdcebbb9869df8e98103b45d8369a0e6d3f75fd634a6102b3d5d69c2e8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105784988"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118347497"
 ---
 # <a name="vds-interfaces"></a>Interfaces VDS
 
-\[A partir do Windows 8 e do Windows Server 2012, a interface com do [serviço de disco virtual](virtual-disk-service-portal.md) é substituída pela [API de gerenciamento de armazenamento do Windows](/previous-versions/windows/desktop/stormgmt/windows-storage-management-api-portal).\]
+\[a partir do Windows 8 e Windows Server 2012, a interface COM do [serviço de disco Virtual](virtual-disk-service-portal.md) é substituída pela [API de gerenciamento de Armazenamento Windows](/previous-versions/windows/desktop/stormgmt/windows-storage-management-api-portal).\]
 
 Os objetos VDS (serviço de disco virtual) fornecem interfaces que expõem métodos para consultar, configurar e manter dispositivos de armazenamento.
 

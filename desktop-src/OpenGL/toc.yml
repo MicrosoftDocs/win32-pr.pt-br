@@ -139,7 +139,7 @@
               href: using-nurbs-curves-and-surfaces.md
             - name: Manipulando erros
               href: handling-errors.md
-    - name: Extensões do Windows para OpenGL
+    - name: Windows Extensões para OpenGL
       href: windows-extensions-to-opengl.md
       items:
         - name: OpenGL no Windows
@@ -174,7 +174,7 @@
               items:
                 - name: Funções de fonte e texto
                   href: font-and-text-functions.md
-            - name: Modos de cor OpenGL e gerenciamento de paleta do Windows
+            - name: modos de cor OpenGL e gerenciamento de paleta de Windows
               href: opengl-color-modes-and-windows-palette-management.md
               items:
                 - name: Paletas e o Gerenciador de paleta
@@ -185,9 +185,9 @@
                   href: reading-color-values-from-the-framebuffer.md
                 - name: Escolhendo entre o modo RGBA e Color-Index
                   href: choosing-between-rgba-and-color-index-mode.md
-                - name: Modo RGBA e gerenciamento de paleta do Windows
+                - name: modo RGBA e gerenciamento de paleta de Windows
                   href: rgba-mode-and-windows-palette-management.md
-                - name: Modo de Color-Index e gerenciamento de paleta do Windows
+                - name: gerenciamento de Color-Index de modo e Windows paleta
                   href: color-index-mode-and-windows-palette-management.md
             - name: 'Sobreposição, underlay e planos principais'
               href: overlay--underlay--and-main-planes.md
@@ -232,16 +232,16 @@
                   href: multithread-opengl-drawing-strategies.md
                 - name: Usando a biblioteca auxiliar
                   href: using-the-auxiliary-library.md
-            - name: Referência para extensões do Windows para OpenGL
+            - name: referência para extensões de Windows para OpenGL
               href: reference-for-win-32-extensions-to-opengl.md
               items:
                 - name: Funções WGL
                   href: wgl-functions.md
-                - name: Funções do Windows
+                - name: Windows Funções
                   href: win32-functions.md
                 - name: Estruturas
                   href: structures.md
-        - name: Referência do WGL e do Windows
+        - name: referência de WGL e Windows
           href: wgl-and-windows-reference.md
           items:
             - name: ChoosePixelFormat
@@ -299,7 +299,7 @@
     - name: Dicas de programação
       href: programming-tips.md
       items:
-        - name: Dicas de exatidão do OpenGL
+        - name: correção de precisão de OpenGL Dicas
           href: opengl-correctness-tips.md
         - name: Dicas de desempenho do OpenGL
           href: opengl-performance-tips.md
@@ -313,33 +313,33 @@
           items:
             - name: Grupos de atributos
               href: attribute-groups.md
-            - name: Variáveis de estado para valores atuais e dados associados
+            - name: Variáveis de Estado para Valores Atuais e Dados Associados
               href: state-variables-for-current-values-and-associated-data.md
-            - name: Variáveis de estado de transformação
+            - name: Variáveis de Estado de Transformação
               href: transformation-state-variables.md
-            - name: Variáveis de estado de coloração
+            - name: Variáveis de Estado de Coloração
               href: coloring-state-variables.md
-            - name: Variáveis de estado de iluminação
+            - name: Variáveis de Estado de Iluminação
               href: lighting-state-variables.md
-            - name: Variáveis de estado de rasterização
+            - name: Variáveis de Estado de Rasterização
               href: rasterization-state-variables.md
-            - name: Variáveis de estado texturing
+            - name: Variáveis de Estado de Texturização
               href: texturing-state-variables.md
-            - name: Operações de pixel
+            - name: Operações de Pixel
               href: pixel-operations.md
-            - name: Variáveis de estado de controle framebuffer
+            - name: Variáveis de Estado de Controle Framebuffer
               href: framebuffer-control-state-variables.md
-            - name: Variáveis de estado de pixel
+            - name: Variáveis de Estado de Pixel
               href: pixel-state-variables.md
-            - name: Variáveis de estado do avaliador
+            - name: Variáveis de Estado do Avaliador
               href: evaluator-state-variables.md
-            - name: Variáveis de estado de dica
+            - name: Variáveis de Estado de Dica
               href: hint-state-variables.md
-            - name: Variáveis de estado de Implementation-Dependent
+            - name: Variáveis de Estado Dependentes de Implementação
               href: implementation-dependent-state-variables.md
-            - name: Variáveis de estado de Pixel-Depth Implementation-Dependent
+            - name: Variáveis de Estado de Intensidade de Pixels Dependentes de Implementação
               href: implementation-dependent-pixel-depth-state-variables.md
-            - name: Variáveis de estado diversas
+            - name: Variáveis de Estado Diversas
               href: miscellaneous-state-variables.md
         - name: Funções GL
           href: gl-functions.md
@@ -630,7 +630,7 @@
               items:
                 - name: glGetTexEnvfv
                   href: glgettexenvfv.md
-                - name: glGetTexEnviv
+                - name: glGetTexEn ltda
                   href: glgettexenviv.md
             - name: Funções glGetTexGen
               href: glgettexgen.md
@@ -1153,7 +1153,7 @@
               href: glubuild2dmipmaps.md
             - name: gluCylinder
               href: glucylinder.md
-            - name: gluDeleteNurbsRenderer
+            - name: gluDeleteNdelasRenderer
               href: gludeletenurbsrenderer.md
             - name: gluDeleteQuadric
               href: gludeletequadric.md
@@ -1171,7 +1171,7 @@
               href: gluendtrim.md
             - name: gluErrorString
               href: gluerrorstring.md
-            - name: gluGetNurbsProperty
+            - name: gluGetNagisProperty
               href: glugetnurbsproperty.md
             - name: gluGetString
               href: glugetstring.md
@@ -1181,7 +1181,7 @@
               href: gluloadsamplingmatrices.md
             - name: gluLookAt
               href: glulookat.md
-            - name: gluNewNurbsRenderer
+            - name: gluNewNagisRenderer
               href: glunewnurbsrenderer.md
             - name: gluNewQuadric
               href: glunewquadric.md
@@ -1189,13 +1189,13 @@
               href: glunewtess.md
             - name: gluNextContour
               href: glunextcontour.md
-            - name: gluNurbsCallback
+            - name: gluNagisCallback
               href: glunurbs.md
-            - name: gluNurbsCurve
+            - name: gluNagisCurve
               href: glunurbscurve.md
-            - name: gluNurbsProperty
+            - name: gluNagisProperty
               href: glunurbsproperty.md
-            - name: gluNurbsSurface
+            - name: gluNagisSurface
               href: glunurbssurface.md
             - name: gluOrtho2D
               href: gluortho2d.md
@@ -1244,37 +1244,37 @@
     - name: Portando para OpenGL
       href: porting-to-opengl.md
       items:
-        - name: Introdução à portabilidade para OpenGL para Windows
+        - name: Introdução à portação para OpenGL para Windows
           href: introduction-to-porting-to-opengl-for-windows-nt--windows-2000--and-windows-95-98.md
           items:
-            - name: Portando X aplicativos do sistema de janelas
+            - name: Portando aplicativos do sistema de janela X
               href: porting-x-window-system-applications.md
-            - name: Convertendo a biblioteca GLX
+            - name: Como traduzir a biblioteca GLX
               href: translating-the-glx-library.md
             - name: Portando contextos de dispositivo e formatos de pixel
               href: porting-device-contexts-and-pixel-formats.md
               items:
                 - name: Exemplo de código de formato de pixel GLX
                   href: glx-pixel-format-code-sample.md
-                - name: Exemplo de código de formato de pixel do Windows
+                - name: Windows Exemplo de código de formato de pixel
                   href: win32-pixel-format-code-sample.md
             - name: Portando contextos de renderização
               href: porting-rendering-contexts.md
               items:
                 - name: Exemplo de código de contexto de renderização GLX
                   href: glx-rendering-context-code-sample.md
-                - name: Exemplo de código do contexto de renderização do Windows
+                - name: Windows Exemplo de código de contexto de renderização
                   href: win32-rendering-context-code-sample.md
-            - name: Portando código de pixmap GLX
+            - name: Portando o código de mapa GLX
               href: porting-glx-pixmap-code.md
-            - name: Portando outros códigos de GLX
+            - name: Portando outro código GLX
               href: porting-other-glx-code.md
-            - name: Um exemplo de portabilidade
+            - name: Um exemplo de portação
               href: a-porting-sample.md
               items:
                 - name: Um programa OpenGL do sistema de janelas X
                   href: an-x-window-system-opengl-program.md
-                - name: O programa portado para o Windows
+                - name: O programa portado para Windows
                   href: the-program-ported-to-win32.md
             - name: Portando aplicativos do íris GL
               href: porting-applications-from-iris-gl.md

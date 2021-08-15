@@ -9,12 +9,12 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: 131007472f07e3b1f047767ee508c7a0591b8b51
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e1332a2d6e4059a0aca4eda69c17f6584100d8706cef5db027d685a46203f393
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104011183"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118719140"
 ---
 # <a name="namespace-tree-control-sample"></a>Exemplo de controle de árvore de NameSpace
 
@@ -22,7 +22,7 @@ Demonstra como implementar um controle de árvore de namespace personalizado par
 
 Este tópico inclui as seções a seguir.
 
--   [Requisitos](#requirements)
+-   [Requirements](#requirements)
 -   [Baixando o exemplo](#downloading-the-sample)
 -   [Compilando o exemplo](#building-the-sample)
 -   [Executando o exemplo](#running-the-sample)
@@ -40,11 +40,11 @@ Este tópico inclui as seções a seguir.
 
  
 
-Para obter requisitos adicionais, consulte o arquivo Leiame incluído com o exemplo.
+Para obter requisitos adicionais, consulte o arquivo Leiame incluído no exemplo.
 
 ## <a name="downloading-the-sample"></a>Baixando o exemplo
 
-| Localização      | URL do caminho                                                                                             |
+| Location      | URL do caminho                                                                                             |
 |---------------|------------------------------------------------------------------------------------------------------|
 | GitHub  | [Exemplo de NameSpaceTreeControl](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/winui/shell/appplatform/namespacetreecontrol) |
 

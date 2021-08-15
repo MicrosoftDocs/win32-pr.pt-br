@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 6a4345812925849831a6f0064c608f0c4be052c7
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: ec31516f88dc9b79169a0272cfca735080e28aaebc81ac49cc7a8b083bc9377e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108116830"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118720850"
 ---
 # <a name="ishelldispatch4getsetting-method"></a>Método IShellDispatch4. GetSetting
 
@@ -87,7 +87,7 @@ Não usado.
 
 </dt> <dd>
 
-O estado da opção **permitir todos os nomes em maiúsculas** . A partir do Windows Vista, essa opção de pasta não está mais disponível.
+O estado da opção **permitir todos os nomes em maiúsculas** . a partir do Windows Vista, essa opção de pasta não está mais disponível.
 
 </dd> <dt>
 
@@ -131,7 +131,7 @@ Não usado.
 
 </dt> <dd>
 
-O estado do ícone de exibição no modo de exibição de lista do Windows Explorer. Se essa opção estiver ativa, nenhum ícone será exibido na exibição de lista.
+o estado do ícone de exibição na exibição de lista do Windows Explorer. Se essa opção estiver ativa, nenhum ícone será exibido na exibição de lista.
 
 </dd> <dt>
 
@@ -142,7 +142,7 @@ O estado do ícone de exibição no modo de exibição de lista do Windows Explo
 
 </dt> <dd>
 
-**Windows Vista e posterior**. O estado do nome de exibição é exibido no modo de exibição de lista do Windows Explorer. Se essa opção estiver ativa, os ícones serão exibidos no modo de exibição de lista, mas os nomes de exibição não serão.
+**Windows Vista e posterior**. o estado do nome de exibição é exibido na exibição de lista do Windows Explorer. Se essa opção estiver ativa, os ícones serão exibidos no modo de exibição de lista, mas os nomes de exibição não serão.
 
 </dd> <dt>
 
@@ -153,7 +153,7 @@ O estado do ícone de exibição no modo de exibição de lista do Windows Explo
 
 </dt> <dd>
 
-O estado do **botão Mostrar unidade de rede do mapa na opção da barra de ferramentas** . A partir do Windows Vista, essa opção não está mais disponível.
+O estado do **botão Mostrar unidade de rede do mapa na opção da barra de ferramentas** . a partir do Windows Vista, essa opção não está mais disponível.
 
 </dd> <dt>
 
@@ -175,7 +175,7 @@ O estado da opção da caixa de **diálogo de confirmação de exclusão de exib
 
 </dt> <dd>
 
-O estado da opção **Pesquisar automaticamente pastas e impressoras de rede** . A partir do Windows Vista, essa opção não está mais disponível.
+O estado da opção **Pesquisar automaticamente pastas e impressoras de rede** . a partir do Windows Vista, essa opção não está mais disponível.
 
 </dd> <dt>
 
@@ -219,7 +219,7 @@ O estado da opção **arquivos e pastas ocultos** .
 
 </dt> <dd>
 
-O estado da opção **Mostrar atributos de arquivo no modo de exibição de detalhes** . A partir do Windows Vista, essa opção não está mais disponível.
+O estado da opção **Mostrar atributos de arquivo no modo de exibição de detalhes** . a partir do Windows Vista, essa opção não está mais disponível.
 
 </dd> <dt>
 
@@ -285,7 +285,7 @@ O estado da opção **ocultar arquivos protegidos do sistema operacional** .
 
 </dt> <dd>
 
-O estado da opção **arquivos e pastas ocultos** . No Windows Vista e posterior, isso é equivalente a SSF \_ SHOWALLOBJECTS. Em versões do Windows anteriores ao Windows Vista, esse valor se referia ao estado da opção **não mostrar arquivos e pastas ocultos** .
+O estado da opção **arquivos e pastas ocultos** . no Windows Vista e posterior, isso é equivalente a SSF \_ SHOWALLOBJECTS. em versões do Windows antes Windows Vista, esse valor se refere ao estado da opção **não mostrar arquivos e pastas ocultos** .
 
 </dd> <dt>
 
@@ -318,7 +318,7 @@ Não usado.
 
 </dt> <dd>
 
-O estado da opção de exibição do Windows XP, que seleciona entre o estilo do Windows XP e o estilo clássico. A partir do Windows Vista, essa opção não está mais disponível.
+o estado da opção de exibição Windows xp, que seleciona entre o estilo Windows XP e o estilo clássico. a partir do Windows Vista, essa opção não está mais disponível.
 
 </dd> <dt>
 
@@ -329,7 +329,7 @@ O estado da opção de exibição do Windows XP, que seleciona entre o estilo do
 
 </dt> <dd>
 
-O estado da **exibição como uma opção de exibição da Web**. A partir do Windows Vista, essa opção não está mais disponível.
+O estado da **exibição como uma opção de exibição da Web**. a partir do Windows Vista, essa opção não está mais disponível.
 
 </dd> <dt>
 
@@ -340,7 +340,7 @@ O estado da **exibição como uma opção de exibição da Web**. A partir do Wi
 
 </dt> <dd>
 
-O estado da opção de **estilo clássico** . A partir do Windows Vista, essa opção não está mais disponível.
+O estado da opção de **estilo clássico** . a partir do Windows Vista, essa opção não está mais disponível.
 
 </dd> </dl> </dd> </dl>
 
@@ -360,9 +360,9 @@ Definir como **true** se a configuração existir; caso contrário, **false**.
 
 ## <a name="examples"></a>Exemplos
 
-Os exemplos a seguir mostram o uso de **GetSetting** para JScript, VBScript e Visual Basic.
+os exemplos a seguir mostram o uso de **getdefinition** para JScript, VBScript e Visual Basic.
 
-JScript
+JScript:
 
 
 ```JScript
@@ -433,8 +433,8 @@ End Sub
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                                                                   |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                                          |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho XP\]<br/>                                                                   |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                                          |
 | parâmetro<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                          |
 | INSERI<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                        |
 | DLL<br/>                      | <dl> <dt>Shell32.dll (versão 6,0 ou posterior)</dt> </dl> |

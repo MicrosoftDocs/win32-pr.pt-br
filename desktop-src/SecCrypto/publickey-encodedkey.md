@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Capicom.dll
-ms.openlocfilehash: de2c7b2bfbbdaf28345ae29e260bfd30c5754ffd
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 0d4708461f5ff51d5f86170ba0f1df35669859149b4882f8fb86aafdbed5e436
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105784144"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118901458"
 ---
 # <a name="publickeyencodedkey-property"></a>Propriedade PublicKey. EncodedKey
 
@@ -26,7 +26,7 @@ ms.locfileid: "105784144"
 
 A propriedade **EncodedKey** recupera o valor da chave pública.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 
 ```VB
@@ -45,7 +45,7 @@ Um objeto [**EncodedData**](encodeddata.md) que fornece acesso ao valor da chave
 
 | Requisito | Valor |
 |----------------------------|----------------------------------------------------------------------------------------|
-| Redistribuível<br/> | CAPICOM 2,0 ou posterior no Windows Server 2003 e no Windows XP<br/>                  |
+| Redistribuível<br/> | capicom 2,0 ou posterior no Windows Server 2003 e Windows XP<br/>                  |
 | DLL<br/>             | <dl> <dt>Capicom.dll</dt> </dl> |
 
 

@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 8531d70e301b0583309817ac23a36762cacf563f
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 7f640481c664c51614a45ff10250a4c40d769a27d793868c4bec316c2cab9ded
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104173018"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117914342"
 ---
 # <a name="id3dx10skininfoaddboneinfluences-method"></a>Método ID3DX10SkinInfo:: AddBoneInfluences
 
@@ -79,7 +79,7 @@ Ponteiro para uma matriz de pesos de Bone. Cada membro dessa matriz tem um membr
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 

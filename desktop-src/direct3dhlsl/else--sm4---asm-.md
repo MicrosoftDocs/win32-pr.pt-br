@@ -4,12 +4,12 @@ description: Inicia um bloco else.
 ms.assetid: CFF25E78-D986-4EC5-B542-B3396EFF88E1
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2e283a2621c916ac254daab9f055be0ffe1ba67d
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: 36f676a1a14f23923e8cebe44a0539a8ba5f382c010fc87a292e77afe1470c57
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104967127"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118512156"
 ---
 # <a name="else-sm4---asm"></a>senão (sm4-ASM)
 
@@ -22,7 +22,7 @@ Inicia um bloco **else** .
 
 
 
- 
+ 
 
 ## <a name="remarks"></a>Comentários
 
@@ -48,7 +48,7 @@ Essa instrução se aplica aos seguintes estágios de sombreador:
 
 
 
- 
+ 
 
 ## <a name="minimum-shader-model"></a>Modelo de sombreamento mínimo
 
@@ -67,7 +67,7 @@ Essa função tem suporte nos seguintes modelos de sombreador.
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -76,9 +76,9 @@ Essa função tem suporte nos seguintes modelos de sombreador.
 [Assembly do Shader Model 4 (DirectX HLSL)](dx-graphics-hlsl-sm4-asm.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,11 +1,11 @@
 ---
-title: Método IWMPNetwork getProxySettings
-description: O método getProxySettings retorna informações sobre as configurações de proxy para um protocolo.
+title: Método getProxySettings de IWMPNetwork
+description: O método getProxySettings retorna informações sobre as configurações de proxy de um protocolo.
 ms.assetid: eda4829a-4869-4557-8fe9-8061a1e0f586
 keywords:
-- método getProxySettings Windows Media Player
-- método getProxySettings Windows Media Player, interface IWMPNetwork
-- Interface IWMPNetwork Windows Media Player, método getProxySettings
+- Método getProxySettings Windows Media Player
+- Método getProxySettings Windows Media Player , interface IWMPNetwork
+- Interface IWMPNetwork Windows Media Player , método getProxySettings
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d970160c07c90e84585c87ed1abf740fbe3c6318
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e69c990b01ed885b80c96e3e36ad28c2793baf618fea68b0e20006390c2adeed
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105756342"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118331636"
 ---
-# <a name="iwmpnetworkgetproxysettings-method"></a>Método IWMPNetwork:: getProxySettings
+# <a name="iwmpnetworkgetproxysettings-method"></a>Método IWMPNetwork::getProxySettings
 
-O método **getProxySettings** retorna informações sobre as configurações de proxy para um protocolo.
+O **método getProxySettings** retorna informações sobre as configurações de proxy de um protocolo.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -53,16 +53,16 @@ Implements IWMPNetwork.getProxySettings
 
 <dl> <dt>
 
-*bstrProtocol* \[ no\]
+*bstrProtocol* \[ Em\]
 </dt> <dd>
 
-Um **System. String** que é o nome do protocolo. Para obter uma lista de protocolos com suporte, consulte [protocolos e tipos de arquivos com suporte](supported-protocols-and-file-types.md).
+Um **System.String que** é o nome do protocolo. Para ver uma lista de protocolos com suporte, consulte [Protocolos com suporte e tipos de arquivo](supported-protocols-and-file-types.md).
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Um **System. Int32** que é um dos valores a seguir.
+Um **System.Int32** que é um dos valores a seguir.
 
 
 
@@ -79,11 +79,11 @@ Um **System. Int32** que é um dos valores a seguir.
 
 ## <a name="remarks"></a>Comentários
 
-Esse método falha a menos que o aplicativo de chamada esteja em execução no computador local ou na intranet.
+Esse método falha, a menos que o aplicativo de chamada esteja em execução no computador local ou na intranet.
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo de código a seguir usa **getProxySettings** para exibir uma mensagem, que fornece informações sobre as configurações de proxy atuais do Player, em um rótulo. O objeto **AxWMPLib. AxWindowsMediaPlayer** é representado pela variável chamada Player.
+O exemplo de código a seguir usa **getProxySettings** para exibir uma mensagem, que fornece informações sobre as configurações de proxy atuais do Player, em um rótulo. O **objeto AxWMPLib.AxWindowsMediaPlayer** é representado pela variável chamada player.
 
 
 ```CSharp
@@ -152,7 +152,7 @@ End Select
 
 | Requisito | Valor |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versão<br/>   | Windows Media Player 9 Series ou posterior<br/>                                                                      |
+| Versão<br/>   | Windows Media Player série 9 ou posterior<br/>                                                                      |
 | Namespace<br/> | **WMPLib**<br/>                                                                                                  |
 | Assembly<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 
@@ -165,7 +165,7 @@ End Select
 [**Interface IWMPNetwork (VB e C#)**](iwmpnetwork--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPNetwork. setProxySettings (VB e C#)**](wmplibiwmpnetwork-iwmpnetwork-setproxysettings--vb-and-c.md)
+[**IWMPNetwork.setProxySettings (VB e C#)**](wmplibiwmpnetwork-iwmpnetwork-setproxysettings--vb-and-c.md)
 </dt> </dl>
 
  

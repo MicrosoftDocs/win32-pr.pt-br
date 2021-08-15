@@ -4,12 +4,12 @@ ms.assetid: 0de0cb2e-67bc-4db5-879a-95879f16b98d
 title: Configurando o codec MFTs
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0065f05d10eae367b13ef6f7caf3fe2ab322163a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: beb4a9ae53c0aee61e30fb5d61b2ad78fd4fe8e624df394f462dd01618272476
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104457219"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118743328"
 ---
 # <a name="configuring-codec-mfts"></a>Configurando o codec MFTs
 
@@ -21,7 +21,7 @@ Cada MFT dá suporte a tipos específicos de entrada e saída. Você pode recupe
 
 ## <a name="configuring-the-codec-mfts-for-encoding"></a>Configurando o codec MFTs para codificação
 
-Todos os codecs de vídeo e áudio do Windows Media oferecem suporte a uma variedade de recursos de codificação. Esses recursos geralmente são configurados definindo as propriedades no MFT usando os métodos da interface **IPropertyStore** . Algumas propriedades são configuradas usando interfaces de codec especializadas. Essas interfaces são listadas para cada codec na seção [objetos de codec](codecobjects.md).
+todos os Windows codecs de áudio e vídeo de mídia dão suporte a uma variedade de recursos de codificação. Esses recursos geralmente são configurados definindo as propriedades no MFT usando os métodos da interface **IPropertyStore** . Algumas propriedades são configuradas usando interfaces de codec especializadas. Essas interfaces são listadas para cada codec na seção [objetos de codec](codecobjects.md).
 
 A ordem geral das operações para configurar uma MFT de codificação é a seguinte:
 
@@ -40,7 +40,7 @@ A ordem geral das operações para configurar uma MFT de decodificação é a se
 3.  Configure o tipo de saída. Os tipos de saída com suporte são diferentes para entradas diferentes.
 
 > [!Note]  
-> É importante usar o mesmo tipo de mídia para a entrada do decodificador como foi usado para a saída do codificador. Isso ocorre porque os codecs de áudio e vídeo do Windows Media usam formatos de mídia com dados adicionais. Sem os dados de formato estendidos, você não pode decodificar o conteúdo compactado.
+> É importante usar o mesmo tipo de mídia para a entrada do decodificador como foi usado para a saída do codificador. isso ocorre porque os Windows codecs de áudio e vídeo de mídia usam formatos de mídia com dados adicionais. Sem os dados de formato estendidos, você não pode decodificar o conteúdo compactado.
 
  
 

@@ -17,12 +17,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 95a87f2951ea09a0bba3d56da50b8f77a9d4a980
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 41ee3e2b23a43e29daf2438cee517220f895ad601607dbdc6a61497f8ef1afa7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104369541"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118736382"
 ---
 # <a name="activebasicdevicelogicalnetworkinterface-property"></a>Propriedade ActiveBasicDevice:: LogicalNetworkInterface
 
@@ -51,8 +51,8 @@ Um ponteiro para um **GUID** que especifica a ID da interface de rede lógica.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 8.1 \[ apenas aplicativos de área de trabalho\]<br/>                                                |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012 R2\]<br/>                                     |
+| Cliente mínimo com suporte<br/> | Windows 8.1 \[ somente aplicativos da área de trabalho\]<br/>                                                |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 \[Somente aplicativos da área de trabalho R2\]<br/>                                     |
 | parâmetro<br/>                   | <dl> <dt>PlayToDevice. h</dt> </dl>   |
 | INSERI<br/>                      | <dl> <dt>PlayToDevice. idl</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Playtodevice.dll</dt> </dl> |

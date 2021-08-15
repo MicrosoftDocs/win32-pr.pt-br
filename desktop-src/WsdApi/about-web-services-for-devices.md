@@ -1,19 +1,19 @@
 ---
-description: O serviço Web na API de dispositivos (WSDAPI) é uma implementação do perfil de dispositivos para serviços Web (DPWS) para Windows Vista e Windows Server 2008.
+description: o serviço web na API de dispositivos (WSDAPI) é uma implementação do perfil de dispositivos para serviços Web (DPWS) para Windows Vista e Windows Server 2008.
 ms.assetid: 8eaeacb3-43db-4a57-8548-e5b81213269c
 title: Sobre os serviços Web em dispositivos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dca7f7dc97dabd3dde7af12f3cece992b4f0ef6d
-ms.sourcegitcommit: 5b98bf8c68922f8f03c14f793fbe17504900559c
+ms.openlocfilehash: 3c7facef3bfed004a834e151db0c58c83a1576e515ed89fa0d690813bc4c18bd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "103837580"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118552501"
 ---
 # <a name="about-web-services-on-devices"></a>Sobre os serviços Web em dispositivos
 
-O serviço Web na API de dispositivos (WSDAPI) é uma implementação do [perfil de dispositivos para serviços Web](https://specs.xmlsoap.org/ws/2006/02/devprof/) (DPWS) para Windows Vista e windows Server 2008. O DPWS restringe as especificações de serviços da Web para que os clientes possam descobrir facilmente os dispositivos. Depois que um dispositivo é descoberto, um cliente pode recuperar uma descrição dos serviços hospedados nesse dispositivo e usar esses serviços.
+o serviço web na API de dispositivos (WSDAPI) é uma implementação do [perfil de dispositivos para serviços Web](https://specs.xmlsoap.org/ws/2006/02/devprof/) (DPWS) para Windows Vista e Windows Server 2008. O DPWS restringe as especificações de serviços da Web para que os clientes possam descobrir facilmente os dispositivos. Depois que um dispositivo é descoberto, um cliente pode recuperar uma descrição dos serviços hospedados nesse dispositivo e usar esses serviços.
 
 ## <a name="devices-and-services"></a>Dispositivos e serviços
 
@@ -33,7 +33,7 @@ Um cliente WSDAPI primeiro consulta o dispositivo para obter descrições comple
 
 ![Diagrama mostrando como um cliente WSDAPI consulta e interage com um dispositivo.](images/netdevice01.png)
 
-Para obter mais informações sobre padrões de mensagens de dispositivo, consulte [descoberta e padrões de mensagem de troca de metadados](discovery-and-metadata-exchange-message-patterns.md).
+para obter mais informações sobre padrões de mensagens de dispositivo, consulte [descoberta e metadados Exchange padrões de mensagem](discovery-and-metadata-exchange-message-patterns.md).
 
 ## <a name="logical-and-physical-addressing"></a>Endereçamento lógico e físico
 
@@ -51,7 +51,7 @@ A descoberta de função pode ser usada ao criar aplicativos WSDAPI para criar e
 
 <dl> <dt>
 
-[Padrões de mensagem de troca de metadados e descoberta](discovery-and-metadata-exchange-message-patterns.md)
+[descoberta e metadados Exchange padrões de mensagem](discovery-and-metadata-exchange-message-patterns.md)
 </dt> <dt>
 
 [Conformidade de especificação do WSDAPI](wsdapi-specification-compliance.md)

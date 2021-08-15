@@ -3,9 +3,9 @@ title: Método IWMPMedia getItemInfo
 description: O método getItemInfo retorna o valor do atributo especificado para o item de mídia.
 ms.assetid: b95fa61d-a600-4f31-a930-d80516204034
 keywords:
-- método getItemInfo Windows Media Player
+- Windows Media Player do método getItemInfo
 - método getItemInfo Windows Media Player, interface IWMPMedia
-- Interface IWMPMedia Windows Media Player, método getItemInfo
+- Windows Media Player de interface IWMPMedia, método getItemInfo
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 523e57e68d13df55395cd4deca6e09904723bbaf
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ce8fa8b55074781dd835e116b0403391fe9343af30d5236610219dca8aba810b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105757058"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118331986"
 ---
 # <a name="iwmpmediagetiteminfo-method"></a>Método IWMPMedia:: getItemInfo
 
@@ -56,11 +56,11 @@ Implements IWMPMedia.getItemInfo
 *bstrItemName* \[ no\]
 </dt> <dd>
 
-Um **System. String** que é o nome do atributo. Para obter informações sobre os atributos com suporte do Windows Media Player, consulte a [referência de atributo](attribute-reference.md).
+Um **System. String** que é o nome do atributo. para obter informações sobre os atributos com suporte pelo Windows Media Player, consulte a [referência de atributo](attribute-reference.md).
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Um **System. String** que é o valor do atributo especificado.
 

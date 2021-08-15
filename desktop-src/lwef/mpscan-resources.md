@@ -1,10 +1,10 @@
 ---
-title: Estrutura de MPSCAN_RESOURCES (MpClient. h)
+title: MPSCAN_RESOURCES estrutura (MpClient.h)
 description: Informações de recurso passadas durante uma operação de verificação.
 ms.assetid: D97712A6-547D-44CC-B55D-039A5CCE20BF
 keywords:
-- Recursos do ambiente Windows herdado da estrutura de MPSCAN_RESOURCES
-- Ponteiro de estrutura de PMPSCAN_RESOURCES recursos de ambiente herdados do Windows
+- MPSCAN_RESOURCES estrutura herdada Windows recursos de ambiente
+- PMPSCAN_RESOURCES de estrutura herdado Windows recursos de ambiente
 topic_type:
 - apiref
 api_name:
@@ -15,14 +15,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 69ee9ea259bca6bf66eb81fcd17b13d509d5a065
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: dd70b442e7179d516d2e9c60b81e6c52b0f696f5719a255871e8687773bf71ce
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103919176"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118747345"
 ---
-# <a name="mpscan_resources-structure"></a>\_Estrutura de recursos MPSCAN
+# <a name="mpscan_resources-structure"></a>Estrutura DE RECURSOS DO MPSCAN \_
 
 Informações de recurso passadas durante uma operação de verificação.
 
@@ -53,14 +53,14 @@ Contagem de recursos.
 
 </dd> <dt>
 
-**origem**
+**pResourceList**
 </dt> <dd>
 
-Tipo: **\_ informações de PMPRESOURCE**
+Tipo: **PMPRESOURCE \_ INFO**
 
 </dd> <dd>
 
-Matriz de recursos. Consulte [**MPRESOURCE \_ info**](mpresource-info.md).
+Matriz de recursos. Consulte [**INFORMAÇÕES DO MPRESOURCE. \_**](mpresource-info.md)
 
 </dd> </dl>
 
@@ -70,9 +70,9 @@ Matriz de recursos. Consulte [**MPRESOURCE \_ info**](mpresource-info.md).
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                            |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>MpClient. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[Windows 8 somente aplicativos da área de trabalho\]<br/>                                            |
+| Servidor mínimo com suporte<br/> | \[Windows Server 2012 somente aplicativos da área de trabalho\]<br/>                                  |
+| parâmetro<br/>                   | <dl> <dt>MpClient.h</dt> </dl> |
 
 
 
@@ -80,7 +80,7 @@ Matriz de recursos. Consulte [**MPRESOURCE \_ info**](mpresource-info.md).
 
 <dl> <dt>
 
-[**informações de MPRESOURCE \_**](mpresource-info.md)
+[**INFORMAÇÕES DO MPRESOURCE \_**](mpresource-info.md)
 </dt> </dl>
 
  

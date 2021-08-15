@@ -4,12 +4,12 @@ ms.assetid: e67cc054-7e48-43e7-a4b0-d1d90e9511f2
 title: Opções de SSPI para aplicativos distribuídos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ed7729b3c479c69b674120fe1fc9827f5edfd878
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cdfeef5cb52494c50b8b16911f70de238a7a86493297ec59bf6d46637810bf26
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103826771"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118916786"
 ---
 # <a name="sspi-options-for-distributed-applications"></a>Opções de SSPI para aplicativos distribuídos
 
@@ -23,11 +23,11 @@ Os desenvolvedores têm muitas opções para a criação de aplicativos distribu
 
     Esses aplicativos não chamam funções SSPI diretamente.
 
--   Use o [Windows Sockets 2](../winsock/windows-sockets-start-page-2.md) (Winsock) com a interface do Winsock estendida para permitir que os provedores de transporte usem recursos de segurança.
+-   use o [Windows sockets 2](../winsock/windows-sockets-start-page-2.md) (WinSock) com a interface do winsock estendida para permitir que os provedores de transporte usem recursos de segurança.
 
     Essa abordagem integra o SSP ( [*provedor de suporte de segurança*](../secgloss/s-gly.md) ) à pilha de rede e fornece serviços de segurança e transporte por meio de uma interface comum.
 
--   Use a [API do Windows Internet Extensions](../wininet/portal.md) (Wininet) e uma interface projetada para oferecer suporte a protocolos de segurança da Internet, como o protocolo [*protocolo SSL*](../secgloss/s-gly.md) (SSL).
+-   Use o [Windows internet Extensions API](../wininet/portal.md) (WinInet) e uma interface projetada para oferecer suporte a protocolos de segurança da internet, como o protocolo [*protocolo SSL*](../secgloss/s-gly.md) (SSL).
 
     Os aplicativos usam a interface SSPI para o provedor de segurança do [canal seguro](secure-channel.md) (Schannel) para implementar a segurança do Wininet. O Schannel é a implementação do SSL da Microsoft.
 

@@ -1,9 +1,9 @@
-- name: Gráficos do Direct3D 9
+- name: Elementos gráficos do Direct3D 9
   href: dx9-graphics.md
   items:
-    - name: Convertendo para Direct3D 9
+    - name: Convertendo em Direct3D 9
       href: converting-to-directx-9.md
-    - name: Guia de programação do Direct3D 9
+    - name: Guia de Programação para Direct3D 9
       href: dx9-graphics-programming-guide.md
       items:
         - name: Introdução
@@ -18,15 +18,15 @@
                   href: device-types.md
                 - name: Criando um dispositivo
                   href: creating-a-device.md
-                - name: Modo Window vs Full-Screen
+                - name: Modo de janela versus Full-Screen janela
                   href: windowed-vs-full-screen-mode.md
                 - name: Selecionando um dispositivo
                   href: selecting-a-device.md
                 - name: Dispositivos perdidos
                   href: lost-devices.md
-                - name: Determinando o suporte de hardware
+                - name: Determinando o suporte a hardware
                   href: determining-hardware-support.md
-                - name: Processando dados de vértice
+                - name: Processar dados de vértice
                   href: processing-vertex-data.md
                 - name: Primitivos
                   href: primitives.md
@@ -37,54 +37,54 @@
                       href: line-lists.md
                     - name: Faixas de linha
                       href: line-strips.md
-                    - name: Listas de triângulo
+                    - name: Listas de triângulos
                       href: triangle-lists.md
                     - name: Faixas de triângulo
                       href: triangle-strips.md
-                    - name: Fãs de triângulo
+                    - name: Ventiladores de triângulo
                       href: triangle-fans.md
                 - name: Estados
                   href: states.md
                   items:
-                    - name: Estado de salvamento e restauração de blocos de estado
+                    - name: Salvar e restaurar estado de blocos de estado
                       href: state-blocks-save-and-restore-state.md
                       items:
-                        - name: Salvando todos os Estados do dispositivo com um StateBlock
+                        - name: Salvando todos os estados do dispositivo com um StateBlock
                           href: saving-all-device-states-with-a-stateblock.md
-                        - name: Salvando Estados de vértice com um StateBlock
+                        - name: Salvando estados de vértice com um StateBlock
                           href: saving-vertex-states-with-a-stateblock.md
                         - name: Salvando o estado de pixel com um StateBlock
                           href: saving-pixel-states-with-a-stateblock.md
-                    - name: Processar Estados
+                    - name: Renderizar estados
                       href: render-states.md
                       items:
-                        - name: Estado de mistura alfa
+                        - name: Estado de combinação alfa
                           href: alpha-blending-state.md
                         - name: Estado de teste alfa
                           href: alpha-testing-state.md
-                        - name: Estado de iluminação ambiente
+                        - name: Estado de iluminação do ambiente
                           href: ambient-lighting-state.md
-                        - name: Estado de anti-aliasing
+                        - name: Estado de antialiação
                           href: antialiasing-state.md
-                        - name: Estado de remoção
+                        - name: Estado de ressarção
                           href: culling-state.md
                         - name: Estado de buffer de profundidade
                           href: depth-buffering-state.md
-                        - name: Estado de neblina
+                        - name: Estado de São Paulo
                           href: fog-state.md
                         - name: Estado de iluminação
                           href: lighting-state.md
-                        - name: Estrutura de tópicos e estado de preenchimento
+                        - name: Estado de contorno e preenchimento
                           href: outline-and-fill-state.md
-                        - name: Estado de cor do Per-Vertex
+                        - name: Per-Vertex estado de cor
                           href: per-vertex-color-state.md
                         - name: Estado de recorte primitivo
                           href: primitive-clipping-state.md
-                        - name: Estado do sombreamento
+                        - name: Estado de sombreamento
                           href: shading-state.md
-                        - name: Estado do buffer do estêncil
+                        - name: Estado do buffer de estêncil
                           href: stencil-buffer-state.md
-                        - name: Estado de disposição da textura
+                        - name: Estado de quebra de textura
                           href: texture-wrapping-state.md
                 - name: XPDM vs. WDDM
                   href: xpdm-vs-wddm.md
@@ -95,13 +95,13 @@
                   href: resource-properties.md
                 - name: Manipulando recursos
                   href: manipulating-resources.md
-                - name: Recursos de bloqueio
+                - name: Bloqueio de recursos
                   href: locking-resources.md
                 - name: Relações de recursos
                   href: resource-relationships.md
                 - name: Gerenciando recursos
                   href: managing-resources.md
-                - name: Application-Managed de recursos e estratégias de alocação
+                - name: Application-Managed recursos e estratégias de alocação
                   href: application-managed-resources-and-allocation-strategies.md
                 - name: Buffers de vértice
                   href: vertex-buffers.md
@@ -114,28 +114,28 @@
                       href: rendering-from-a-vertex-buffer.md
                     - name: Buffers de vértice FVF
                       href: fvf-vertex-buffers.md
-                    - name: Processamento de vértice de função fixa
+                    - name: Processamento de vértice de função fixo
                       href: fixed-function-vertex-processing.md
-                    - name: Processamento de vértice programável
+                    - name: Processamento programável de vértice
                       href: programmable-vertex-processing.md
                     - name: Tipos de dispositivo e requisitos de processamento de vértice
                       href: device-types-and-vertex-processing-requirements.md
                     - name: Declaração de vértice
                       href: vertex-declaration.md
                       items:
-                        - name: Mapeando códigos FVF para uma declaração do Direct3D 9
+                        - name: Mapeando códigos FVF para uma declaração direct3D 9
                           href: mapping-fvf-codes-to-a-directx-9-declaration.md
-                        - name: Códigos de FVF de função fixos
+                        - name: Códigos FVF de função fixa
                           href: fixed-function-fvf-codes.md
                         - name: Mapear entre declarações D3D9 e D3D8
                           href: mapping-between-a-directx-9-declaration-and-directx-8.md
-                        - name: Mapeamento entre uma declaração de Direct3D e códigos de FVF
+                        - name: Mapeamento entre uma declaração Direct3D e códigos FVF
                           href: mapping-between-a-directx-9-declaration-and-fvf-codes.md
-                        - name: Programando um ou mais fluxos
+                        - name: Programando uma ou mais Fluxos
                           href: programming-one-or-more-streams.md
                 - name: Buffers de índice
                   href: index-buffers.md
-            - name: Coordenar sistemas e geometria
+            - name: Sistemas de coordenadas e geometria
               href: coordinate-systems-and-geometry.md
               items:
                 - name: Sistemas de coordenadas
@@ -148,27 +148,27 @@
                   href: rectangles.md
                 - name: Interpolação de triângulo
                   href: triangle-interpolation.md
-                - name: 'Vetores, vértices e quaternions'
+                - name: 'Vetores, vértices e quatérnions'
                   href: vectors--vertices--and-quaternions.md
             - name: Transformações
               href: transforms.md
               items:
-                - name: Transformação mundial
+                - name: Transformação Do Mundo
                   href: world-transform.md
-                - name: Exibir transformação
+                - name: Exibir Transformação
                   href: view-transform.md
                 - name: Transformação projeção
                   href: projection-transform.md
-            - name: Visores e recorte
+            - name: Viewports e Clipping
               href: viewports-and-clipping.md
             - name: Luzes e materiais
               href: lights-and-materials.md
               items:
-                - name: Tipos de luz
+                - name: Tipos claros
                   href: light-types.md
-                - name: Propriedades de luz
+                - name: Propriedades claras
                   href: light-properties.md
-                - name: Matemática de iluminação
+                - name: Matemática da iluminação
                   href: mathematics-of-lighting.md
                   items:
                     - name: Iluminação de ambiente
@@ -181,11 +181,11 @@
                       href: emissive-lighting.md
                     - name: Transformações de espaço da câmera
                       href: camera-space-transformations.md
-                    - name: Fator de atenuação e destaque
+                    - name: Atenuação e fator de destaque
                       href: attenuation-and-spotlight-factor.md
                 - name: Materiais
                   href: materials.md
-            - name: Renderização de Direct3D
+            - name: Direct3D Rendering
               href: direct3d-rendering.md
               items:
                 - name: Sombreamento
@@ -195,7 +195,7 @@
                       href: shading-modes.md
                     - name: Comparando modos de sombreamento
                       href: comparing-shading-modes.md
-                    - name: Configurando o modo de sombreamento
+                    - name: Definindo o modo de sombreamento
                       href: setting-the-shading-mode.md
                 - name: Apresentando uma cena
                   href: presenting-a-scene.md
@@ -204,16 +204,16 @@
                       href: introduction-to-presenting-a-scene.md
                     - name: Várias exibições no modo de janela
                       href: multiple-views-in-windowed-mode.md
-                    - name: Operações de Multiple-Monitor
+                    - name: Multiple-Monitor operações
                       href: multiple-monitor-operations.md
                     - name: Manipulando o buffer de profundidade
                       href: manipulating-the-depth-buffer.md
-                    - name: Acessando o buffer frontal de cor
+                    - name: Acessando o buffer frontal de cores
                       href: accessing-the-color-front-buffer.md
-                - name: Primitivos de renderização
+                - name: Renderização de primitivos
                   href: rendering-primitives.md
                   items:
-                    - name: Fluxos de dados de vértice
+                    - name: Dados de vértice Fluxos
                       href: vertex-data-streams.md
                     - name: Definindo a origem do fluxo
                       href: setting-the-stream-source.md
@@ -238,7 +238,7 @@
                       href: changing-depth-buffer-write-access.md
                     - name: Alterando funções de comparação de buffer de profundidade
                       href: changing-depth-buffer-comparison-functions.md
-                - name: Neblina
+                - name: Nevoeiro
                   href: fog.md
                 - name: Mesclagem alfa
                   href: alpha-blending.md
@@ -346,11 +346,11 @@
                     - name: Mapeamento claro com texturas
                       href: light-mapping-with-textures.md
                       items:
-                        - name: Mapas de luz monocromático
+                        - name: Mapas de luz monocromática
                           href: monochrome-light-maps.md
                         - name: Mapas de luz de cor
                           href: color-light-maps.md
-                        - name: Mapas de luz especulares
+                        - name: Mapas de luz especular
                           href: specular-light-maps.md
                         - name: Mapas de luz difusa
                           href: diffuse-light-maps.md
@@ -438,14 +438,14 @@
                   href: point-sprites.md
                 - name: Pilhas de matrizes
                   href: matrix-stacks.md
-                - name: Texturas de vértice no vs_3_0 (DirectX HLSL)
+                - name: Texturas de vértice vs_3_0 (DirectX HLSL)
                   href: vertex-textures-in-vs-3-0.md
-            - name: Pipeline de pixel
+            - name: Pixel Pipeline
               href: pixel-pipeline.md
               items:
                 - name: Teste de tesoura
                   href: scissor-test.md
-                - name: Tendência de profundidade
+                - name: Desvio de profundidade
                   href: depth-bias.md
                 - name: Técnicas de buffer de estêncil
                   href: stencil-buffer-techniques.md
@@ -454,7 +454,7 @@
                       href: compositing.md
                     - name: Decalque
                       href: decaling.md
-                    - name: 'Dessolucionar, esmaecer e passar o dedo'
+                    - name: 'Deslizes, esmaeces e passa o dedo'
                       href: dissolves--fades--and-swipes.md
                     - name: Contornos e silhuetas
                       href: outlines-and-silhouettes.md
@@ -462,29 +462,29 @@
                       href: two-sided-stencil.md
                 - name: Sombreamento
                   href: shadowing.md
-                - name: Mapeamento de relevo
+                - name: Mapeamento de aumento
                   href: bump-mapping.md
                   items:
-                    - name: Formatos de pixel do mapa de relevo
+                    - name: Formatos de pixel do mapa de aumento
                       href: bump-map-pixel-formats.md
-                    - name: Fórmulas de mapeamento de relevo
+                    - name: Fórmulas de mapeamento de aumento
                       href: bump-mapping-formulas.md
-                    - name: Usando o mapeamento de relevo
+                    - name: Usando mapeamento de aumento
                       href: using-bump-mapping.md
                 - name: Mapeamento de ambiente
                   href: environment-mapping.md
                   items:
-                    - name: Mapeamento de ambiente cúbico
+                    - name: Mapeamento de ambiente cúbica
                       href: cubic-environment-mapping.md
                       items:
-                        - name: Criando superfícies de mapa de ambiente cúbico
+                        - name: Criando superfícies de mapa de ambiente cúbica
                           href: creating-cubic-environment-map-surfaces.md
                     - name: Mapeamento de ambiente esférico
                       href: spherical-environment-mapping.md
                 - name: Suavização
                   href: antialiasing.md
                   items:
-                    - name: Full-Scene anti-aliasing
+                    - name: Full-Scene antialiasing
                       href: full-scene-antialiasing.md
                     - name: Desfoque de movimento
                       href: motion-blur.md
@@ -492,51 +492,51 @@
                   href: multiple-render-targets.md
                 - name: Texturas de vários elementos
                   href: multiple-element-textures.md
-            - name: Buffer de quadros
+            - name: Buffer de quadro
               href: frame-buffer.md
               items:
-                - name: Tipos de neblina
+                - name: Tipos de 10000
                   href: fog-types.md
                   items:
-                    - name: Fórmulas de neblina
+                    - name: Fórmulas de fórmulas de formulação
                       href: fog-formulas.md
-                    - name: Parâmetros de neblina
+                    - name: Parâmetros Demão
                       href: fog-parameters.md
-                    - name: Mesclagem de neblina
+                    - name: Blending do Blending
                       href: fog-blending.md
-                    - name: Cor da neblina
+                    - name: Cor da cor da
                       href: fog-color.md
-                    - name: Neblina de vértice
+                    - name: Vértice
                       href: vertex-fog.md
-                    - name: Neblina de pixel
+                    - name: Pixel Fog
                       href: pixel-fog.md
                 - name: Exemplos alfa
                   href: alpha-examples.md
                   items:
-                    - name: Mensagem
+                    - name: Billboarding
                       href: billboarding.md
-                    - name: 'Nuvens, fumaça e trilhas Vapors'
+                    - name: 'Trilhas de Nuvens, Smoke e Demais'
                       href: clouds--smoke--and-vapor-trails.md
-                    - name: 'Fogo, flares e explosões'
+                    - name: 'Incêndios, incêndios e explosão'
                       href: fire--flares--and-explosions.md
                 - name: Gama
                   href: gamma.md
-            - name: Transferência de radiante preputada
+            - name: Transferência de Radiance pré-comutada
               href: precomputed-radiance-transfer.md
               items:
-                - name: Equações de PRT
+                - name: Equações prt
                   href: prt-equations.md
-                - name: Representando o PRT com texturas
+                - name: Representando PRT com texturas
                   href: representing-prt-with-textures.md
-            - name: Iluminação HDR
+            - name: Iluminação do HDR
               href: hdr-lighting.md
-            - name: Criação de perfil de chamadas de API do Direct3D com precisão
+            - name: Criação de perfil precisa de chamadas à API Direct3D
               href: accurately-profiling-direct3d-api-calls.md
-            - name: 'Definir o estado do dispositivo na função fixa, pipelines de sombreador'
+            - name: Definir o estado do dispositivo em pipelines de função fixa e sombreador
               href: setting-render-states-with-fixed-function-and-programmable-shader-pipeline.md
             - name: Consultas
               href: queries.md
-            - name: Desenhar com eficiência várias instâncias de geometry
+            - name: Desenhando com eficiência várias instâncias de geometria
               href: efficiently-drawing-multiple-instances-of-geometry.md
             - name: Usando UVAtlas
               href: using-uvatlas.md
@@ -549,9 +549,9 @@
               href: driver-internal-errors.md
             - name: Habilitando informações de depuração do Direct3D
               href: enabling-direct3d-debug-information.md
-            - name: Multitítulo
+            - name: Multihead
               href: multihead.md
-            - name: Problemas de multithread
+            - name: Problemas de multithreading
               href: multithreading-issues.md
             - name: Otimizações de desempenho
               href: performance-optimizations.md
@@ -559,21 +559,21 @@
               href: presenting-multiple-views-in-windowed-mode.md
             - name: Solução de problemas
               href: troubleshooting.md
-            - name: Trabalhando com janelas de dispositivos
+            - name: Trabalhando com dispositivos Windows
               href: working-with-device-windows.md
             - name: Trabalhando com drivers anteriores
               href: working-with-earlier-drivers.md
             - name: Trabalhando com vários sistemas de monitor
               href: working-with-multiple-monitor-systems.md
-            - name: Trabalhando com cursores do mouse
+            - name: Trabalhando com cursores de mouse
               href: working-with-mouse-cursors.md
-    - name: Referência para o Direct3D 9
+    - name: Referência para Direct3D 9
       href: dx9-graphics-reference.md
       items:
         - name: Referência do Direct3D
           href: dx9-graphics-reference-d3d.md
           items:
-            - name: Interfaces do Direct3D
+            - name: Direct3D Interfaces
               href: dx9-graphics-reference-d3d-interfaces.md
               items:
                 - name: IDirect3D9
@@ -581,15 +581,15 @@
                   items:
                     - name: CheckDepthStencilMatch
                       href: /windows/desktop/api/d3d9/nf-d3d9-idirect3d9-checkdepthstencilmatch
-                    - name: CheckDeviceFormat
+                    - name: Checkdeviceformat
                       href: /windows/desktop/api/d3d9/nf-d3d9-idirect3d9-checkdeviceformat
                     - name: CheckDeviceFormatConversion
                       href: /windows/desktop/api/d3d9/nf-d3d9-idirect3d9-checkdeviceformatconversion
                     - name: CheckDeviceMultiSampleType
                       href: /windows/desktop/api/d3d9/nf-d3d9-idirect3d9-checkdevicemultisampletype
-                    - name: CheckDeviceType
+                    - name: Checkdevicetype
                       href: /windows/desktop/api/d3d9/nf-d3d9-idirect3d9-checkdevicetype
-                    - name: CreateDevice
+                    - name: Createdevice
                       href: /windows/desktop/api/d3d9/nf-d3d9-idirect3d9-createdevice
                     - name: EnumAdapterModes
                       href: /windows/desktop/api/d3d9/nf-d3d9-idirect3d9-enumadaptermodes
@@ -603,9 +603,9 @@
                       href: /windows/desktop/api/d3d9/nf-d3d9-idirect3d9-getadaptermodecount
                     - name: GetAdapterMonitor
                       href: /windows/desktop/api/d3d9/nf-d3d9-idirect3d9-getadaptermonitor
-                    - name: GetDeviceCaps
+                    - name: Getdevicecaps
                       href: /windows/desktop/api/d3d9/nf-d3d9-idirect3d9-getdevicecaps
-                    - name: RegisterSoftwareDevice
+                    - name: Registersoftwaredevice
                       href: /windows/desktop/api/d3d9/nf-d3d9-idirect3d9-registersoftwaredevice
                 - name: IDirect3D9Ex
                   href: /windows/desktop/api/d3d9/nn-d3d9-idirect3d9ex
@@ -638,26 +638,26 @@
                 - name: IDirect3DCubeTexture9
                   href: /windows/desktop/api/d3d9helper/nn-d3d9helper-idirect3dcubetexture9
                   items:
-                    - name: AddDirtyRect
+                    - name: Adddirtyrect
                       href: /windows/desktop/api/d3d9/nf-d3d9-idirect3dcubetexture9-adddirtyrect
                     - name: GetCubeMapSurface
                       href: /windows/desktop/api/d3d9/nf-d3d9-idirect3dcubetexture9-getcubemapsurface
                     - name: GetLevelDesc
                       href: /windows/desktop/api/d3d9/nf-d3d9-idirect3dcubetexture9-getleveldesc
-                    - name: LockRect
+                    - name: Lockrect
                       href: /windows/desktop/api/d3d9/nf-d3d9-idirect3dcubetexture9-lockrect
                     - name: UnlockRect
                       href: /windows/desktop/api/d3d9/nf-d3d9-idirect3dcubetexture9-unlockrect
                 - name: IDirect3DDevice9
                   href: /windows/desktop/api/d3d9helper/nn-d3d9helper-idirect3ddevice9
                   items:
-                    - name: BeginScene
+                    - name: Beginscene
                       href: /windows/desktop/api/d3d9/nf-d3d9-idirect3ddevice9-beginscene
                     - name: BeginStateBlock
                       href: /windows/desktop/api/d3d9/nf-d3d9-idirect3ddevice9-beginstateblock
                     - name: Limpar
                       href: /windows/desktop/api/d3d9/nf-d3d9-idirect3ddevice9-clear
-                    - name: ColorFill
+                    - name: Colorfill
                       href: /windows/desktop/api/d3d9/nf-d3d9-idirect3ddevice9-colorfill
                     - name: CreateAdditionalSwapChain
                       href: /windows/desktop/api/d3d9/nf-d3d9-idirect3ddevice9-createadditionalswapchain
@@ -677,9 +677,9 @@
                       href: /windows/desktop/api/d3d9/nf-d3d9-idirect3ddevice9-createrendertarget
                     - name: CreateStateBlock
                       href: /windows/desktop/api/d3d9/nf-d3d9-idirect3ddevice9-createstateblock
-                    - name: CreateTexture
+                    - name: Createtexture
                       href: /windows/desktop/api/d3d9/nf-d3d9-idirect3ddevice9-createtexture
-                    - name: CreateVertexBuffer
+                    - name: Createvertexbuffer
                       href: /windows/desktop/api/d3d9/nf-d3d9-idirect3ddevice9-createvertexbuffer
                     - name: CreateVertexDeclaration
                       href: /windows/desktop/api/d3d9/nf-d3d9-idirect3ddevice9-createvertexdeclaration
@@ -689,11 +689,11 @@
                       href: /windows/desktop/api/d3d9/nf-d3d9-idirect3ddevice9-createvolumetexture
                     - name: DeletePatch
                       href: /windows/desktop/api/d3d9/nf-d3d9-idirect3ddevice9-deletepatch
-                    - name: DrawIndexedPrimitive
+                    - name: Drawindexedprimitive
                       href: /windows/desktop/api/d3d9/nf-d3d9-idirect3ddevice9-drawindexedprimitive
                     - name: DrawIndexedPrimitiveUP
                       href: /windows/desktop/api/d3d9/nf-d3d9-idirect3ddevice9-drawindexedprimitiveup
-                    - name: DrawPrimitive
+                    - name: Drawprimitive
                       href: /windows/desktop/api/d3d9/nf-d3d9-idirect3ddevice9-drawprimitive
                     - name: DrawPrimitiveUP
                       href: /windows/desktop/api/d3d9/nf-d3d9-idirect3ddevice9-drawprimitiveup
@@ -701,7 +701,7 @@
                       href: /windows/desktop/api/d3d9/nf-d3d9-idirect3ddevice9-drawrectpatch
                     - name: DrawTriPatch
                       href: /windows/desktop/api/d3d9/nf-d3d9-idirect3ddevice9-drawtripatch
-                    - name: Endcena
+                    - name: Endscene
                       href: /windows/desktop/api/d3d9/nf-d3d9-idirect3ddevice9-endscene
                     - name: EndStateBlock
                       href: /windows/desktop/api/d3d9/nf-d3d9-idirect3ddevice9-endstateblock
@@ -721,7 +721,7 @@
                       href: /windows/desktop/api/d3d9/nf-d3d9-idirect3ddevice9-getcurrenttexturepalette
                     - name: GetDepthStencilSurface
                       href: /windows/desktop/api/d3d9/nf-d3d9-idirect3ddevice9-getdepthstencilsurface
-                    - name: GetDeviceCaps
+                    - name: Getdevicecaps
                       href: /windows/desktop/api/d3d9/nf-d3d9-idirect3ddevice9-getdevicecaps
                     - name: GetDirect3D
                       href: /windows/desktop/api/d3d9/nf-d3d9-idirect3ddevice9-getdirect3d
@@ -733,11 +733,11 @@
                       href: /windows/desktop/api/d3d9/nf-d3d9-idirect3ddevice9-getfvf
                     - name: GetGammaRamp
                       href: /windows/desktop/api/d3d9/nf-d3d9-idirect3ddevice9-getgammaramp
-                    - name: Getindices
+                    - name: GetIndices
                       href: /windows/desktop/api/d3d9/nf-d3d9-idirect3ddevice9-getindices
-                    - name: Getleve
+                    - name: GetLight
                       href: /windows/desktop/api/d3d9/nf-d3d9-idirect3ddevice9-getlight
-                    - name: Getclareable
+                    - name: GetLightEnable
                       href: /windows/desktop/api/d3d9/nf-d3d9-idirect3ddevice9-getlightenable
                     - name: GetMaterial
                       href: /windows/desktop/api/d3d9/nf-d3d9-idirect3ddevice9-getmaterial
@@ -757,19 +757,19 @@
                       href: /windows/desktop/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-getpixelshaderconstanti
                     - name: GetRasterStatus
                       href: /windows/desktop/api/d3d9/nf-d3d9-idirect3ddevice9-getrasterstatus
-                    - name: Getrenderingstate
+                    - name: GetRenderState
                       href: /windows/desktop/api/d3d9/nf-d3d9-idirect3ddevice9-getrenderstate
                     - name: GetRenderTarget
                       href: /windows/desktop/api/d3d9/nf-d3d9-idirect3ddevice9-getrendertarget
                     - name: GetRenderTargetData
                       href: /windows/desktop/api/d3d9/nf-d3d9-idirect3ddevice9-getrendertargetdata
-                    - name: Getsamplestate
+                    - name: GetSamplerState
                       href: /windows/desktop/api/d3d9/nf-d3d9-idirect3ddevice9-getsamplerstate
                     - name: GetScissorRect
                       href: /windows/desktop/api/d3d9/nf-d3d9-idirect3ddevice9-getscissorrect
                     - name: GetSoftwareVertexProcessing
                       href: /windows/desktop/api/d3d9/nf-d3d9-idirect3ddevice9-getsoftwarevertexprocessing
-                    - name: Getstreamname
+                    - name: GetStreamSource
                       href: /windows/desktop/api/d3d9/nf-d3d9-idirect3ddevice9-getstreamsource
                     - name: GetStreamSourceFreq
                       href: /windows/desktop/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-getstreamsourcefreq
@@ -791,15 +791,15 @@
                       href: /windows/desktop/api/d3d9/nf-d3d9-idirect3ddevice9-getvertexshaderconstantf
                     - name: GetVertexShaderConstantI
                       href: /windows/desktop/api/d3d9/nf-d3d9-idirect3ddevice9-getvertexshaderconstanti
-                    - name: Getviewport
+                    - name: GetViewport
                       href: /windows/desktop/api/d3d9/nf-d3d9-idirect3ddevice9-getviewport
-                    - name: Clarear
+                    - name: LightEnable
                       href: /windows/desktop/api/d3d9/nf-d3d9-idirect3ddevice9-lightenable
-                    - name: MultiplyTransform
+                    - name: Multiplytransform
                       href: /windows/desktop/api/d3d9/nf-d3d9-idirect3ddevice9-multiplytransform
                     - name: Presente
                       href: /windows/desktop/api/d3d9/nf-d3d9-idirect3ddevice9-present
-                    - name: ProcessVertices
+                    - name: Processvertices
                       href: /windows/desktop/api/d3d9/nf-d3d9-idirect3ddevice9-processvertices
                     - name: Redefinir
                       href: /windows/desktop/api/d3d9/nf-d3d9-idirect3ddevice9-reset
@@ -811,7 +811,7 @@
                       href: /windows/desktop/api/d3d9/nf-d3d9-idirect3ddevice9-setcurrenttexturepalette
                     - name: SetCursorPosition
                       href: /windows/desktop/api/d3d9/nf-d3d9-idirect3ddevice9-setcursorposition
-                    - name: Setcursorproperties
+                    - name: SetCursorProperties
                       href: /windows/desktop/api/d3d9/nf-d3d9-idirect3ddevice9-setcursorproperties
                     - name: SetDepthStencilSurface
                       href: /windows/desktop/api/d3d9/nf-d3d9-idirect3ddevice9-setdepthstencilsurface
@@ -821,15 +821,15 @@
                       href: /windows/desktop/api/d3d9/nf-d3d9-idirect3ddevice9-setfvf
                     - name: SetGammaRamp
                       href: /windows/desktop/api/d3d9/nf-d3d9-idirect3ddevice9-setgammaramp
-                    - name: SetIndices
+                    - name: Setindices
                       href: /windows/desktop/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setindices
-                    - name: SetLight
+                    - name: Setlight
                       href: /windows/desktop/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setlight
                     - name: SetMaterial
                       href: /windows/desktop/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setmaterial
                     - name: SetNPatchMode
                       href: /windows/desktop/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setnpatchmode
-                    - name: SetPaletteEntries
+                    - name: Setpaletteentries
                       href: /windows/desktop/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setpaletteentries
                     - name: SetPixelShader
                       href: /windows/desktop/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setpixelshader
@@ -839,25 +839,25 @@
                       href: /windows/desktop/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setpixelshaderconstantf
                     - name: SetPixelShaderConstantI
                       href: /windows/desktop/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setpixelshaderconstanti
-                    - name: Setrenderingstate
+                    - name: Setrenderstate
                       href: /windows/desktop/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setrenderstate
-                    - name: SetRenderTarget
+                    - name: Setrendertarget
                       href: /windows/desktop/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setrendertarget
-                    - name: Setsamplestate
+                    - name: SetSamplerState
                       href: /windows/desktop/api/d3d9/nf-d3d9-idirect3ddevice9-setsamplerstate
                     - name: SetScissorRect
                       href: /windows/desktop/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setscissorrect
                     - name: SetSoftwareVertexProcessing
                       href: /windows/desktop/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setsoftwarevertexprocessing
-                    - name: Setstreaming
+                    - name: Setstreamsource
                       href: /windows/desktop/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setstreamsource
                     - name: SetStreamSourceFreq
                       href: /windows/desktop/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setstreamsourcefreq
-                    - name: SetTexture
+                    - name: Settexture
                       href: /windows/desktop/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-settexture
-                    - name: SetTextureStageState
+                    - name: Settexturestagestate
                       href: /windows/desktop/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-settexturestagestate
-                    - name: SetTransform
+                    - name: Settransform
                       href: /windows/desktop/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-settransform
                     - name: SetVertexDeclaration
                       href: /windows/desktop/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setvertexdeclaration
@@ -869,21 +869,21 @@
                       href: /windows/desktop/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setvertexshaderconstantf
                     - name: SetVertexShaderConstantI
                       href: /windows/desktop/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setvertexshaderconstanti
-                    - name: Setviewport
+                    - name: SetViewport
                       href: /windows/desktop/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setviewport
-                    - name: Obter cursor
+                    - name: ShowCursor
                       href: /windows/desktop/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-showcursor
-                    - name: StretchRect
+                    - name: Stretchrect
                       href: /windows/desktop/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-stretchrect
-                    - name: TestCooperativeLevel
+                    - name: Testcooperativelevel
                       href: /windows/desktop/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-testcooperativelevel
                     - name: UpdateSurface
                       href: /windows/desktop/api/d3d9/nf-d3d9-idirect3ddevice9-updatesurface
-                    - name: UpdateTexture
+                    - name: Updatetexture
                       href: /windows/desktop/api/d3d9/nf-d3d9-idirect3ddevice9-updatetexture
-                    - name: ValidateDevice
+                    - name: Validatedevice
                       href: /windows/desktop/api/d3d9/nf-d3d9-idirect3ddevice9-validatedevice
-                - name: IDirect3DDevice9Ex
+                - name: Idirect3ddevice9ex
                   href: /windows/desktop/api/d3d9/nn-d3d9-idirect3ddevice9ex
                   items:
                     - name: CheckDeviceState
@@ -914,7 +914,7 @@
                       href: /windows/desktop/api/d3d9/nf-d3d9-idirect3ddevice9ex-setgputhreadpriority
                     - name: SetMaximumFrameLatency
                       href: /windows/desktop/api/d3d9/nf-d3d9-idirect3ddevice9ex-setmaximumframelatency
-                    - name: TestCooperativeLevel
+                    - name: Testcooperativelevel
                       href: /windows/desktop/api/d3d9/nf-d3d9-idirect3ddevice9ex-testcooperativelevel
                     - name: WaitForVBlank
                       href: /windows/desktop/api/d3d9/nf-d3d9-idirect3ddevice9ex-waitforvblank
@@ -954,15 +954,15 @@
                       href: /windows/desktop/api/d3d9helper/nf-d3d9helper-idirect3dresource9-freeprivatedata
                     - name: GetDevice
                       href: /windows/desktop/api/d3d9helper/nf-d3d9helper-idirect3dresource9-getdevice
-                    - name: Getanteriority
+                    - name: Getpriority
                       href: /windows/desktop/api/d3d9helper/nf-d3d9helper-idirect3dresource9-getpriority
                     - name: GetPrivateData
                       href: /windows/desktop/api/d3d9helper/nf-d3d9helper-idirect3dresource9-getprivatedata
                     - name: GetType
                       href: /windows/desktop/api/d3d9helper/nf-d3d9helper-idirect3dresource9-gettype
-                    - name: Carregamento
+                    - name: Pré-carga
                       href: /windows/desktop/api/d3d9helper/nf-d3d9helper-idirect3dresource9-preload
-                    - name: Setanteriority
+                    - name: Setpriority
                       href: /windows/desktop/api/d3d9helper/nf-d3d9helper-idirect3dresource9-setpriority
                     - name: SetPrivateData
                       href: /windows/desktop/api/d3d9helper/nf-d3d9helper-idirect3dresource9-setprivatedata
@@ -980,13 +980,13 @@
                   items:
                     - name: GetContainer
                       href: /windows/desktop/api/d3d9helper/nf-d3d9helper-idirect3dsurface9-getcontainer
-                    - name: GetDC
+                    - name: Getdc
                       href: /windows/desktop/api/d3d9helper/nf-d3d9helper-idirect3dsurface9-getdc
                     - name: GetDesc
                       href: /windows/desktop/api/d3d9helper/nf-d3d9helper-idirect3dsurface9-getdesc
-                    - name: LockRect
+                    - name: Lockrect
                       href: /windows/desktop/api/d3d9helper/nf-d3d9helper-idirect3dsurface9-lockrect
-                    - name: ReleaseDC
+                    - name: Releasedc
                       href: /windows/desktop/api/d3d9helper/nf-d3d9helper-idirect3dsurface9-releasedc
                     - name: UnlockRect
                       href: /windows/desktop/api/d3d9helper/nf-d3d9helper-idirect3dsurface9-unlockrect
@@ -1001,7 +1001,7 @@
                       href: /windows/desktop/api/d3d9helper/nf-d3d9helper-idirect3dswapchain9-getdisplaymode
                     - name: GetFrontBufferData
                       href: /windows/desktop/api/d3d9helper/nf-d3d9helper-idirect3dswapchain9-getfrontbufferdata
-                    - name: PresentParameters
+                    - name: GetPresentParameters
                       href: /windows/desktop/api/d3d9helper/nf-d3d9helper-idirect3dswapchain9-getpresentparameters
                     - name: GetRasterStatus
                       href: /windows/desktop/api/d3d9helper/nf-d3d9helper-idirect3dswapchain9-getrasterstatus
@@ -1019,13 +1019,13 @@
                 - name: IDirect3DTexture9
                   href: /windows/desktop/api/d3d9helper/nn-d3d9helper-idirect3dtexture9
                   items:
-                    - name: AddDirtyRect
+                    - name: Adddirtyrect
                       href: /windows/desktop/api/d3d9helper/nf-d3d9helper-idirect3dtexture9-adddirtyrect
                     - name: GetLevelDesc
                       href: /windows/desktop/api/d3d9helper/nf-d3d9helper-idirect3dtexture9-getleveldesc
                     - name: GetSurfaceLevel
                       href: /windows/desktop/api/d3d9helper/nf-d3d9helper-idirect3dtexture9-getsurfacelevel
-                    - name: LockRect
+                    - name: Lockrect
                       href: /windows/desktop/api/d3d9helper/nf-d3d9helper-idirect3dtexture9-lockrect
                     - name: UnlockRect
                       href: /windows/desktop/api/d3d9helper/nf-d3d9helper-idirect3dtexture9-unlockrect
@@ -1041,7 +1041,7 @@
                 - name: IDirect3DVertexDeclaration9
                   href: /windows/desktop/api/d3d9helper/nn-d3d9helper-idirect3dvertexdeclaration9
                   items:
-                    - name: Getdeclaration
+                    - name: GetDeclaration
                       href: /windows/desktop/api/d3d9helper/nf-d3d9helper-idirect3dvertexdeclaration9-getdeclaration
                     - name: GetDevice
                       href: /windows/desktop/api/d3d9helper/nf-d3d9helper-idirect3dvertexdeclaration9-getdevice
@@ -1065,11 +1065,11 @@
                       href: /windows/desktop/api/d3d9helper/nf-d3d9helper-idirect3dvolume9-getdevice
                     - name: GetPrivateData
                       href: /windows/desktop/api/d3d9helper/nf-d3d9helper-idirect3dvolume9-getprivatedata
-                    - name: Mínima
+                    - name: Cofre
                       href: /windows/desktop/api/d3d9helper/nf-d3d9helper-idirect3dvolume9-lockbox
                     - name: SetPrivateData
                       href: /windows/desktop/api/d3d9helper/nf-d3d9helper-idirect3dvolume9-setprivatedata
-                    - name: Deslockbox
+                    - name: UnlockBox
                       href: /windows/desktop/api/d3d9helper/nf-d3d9helper-idirect3dvolume9-unlockbox
                 - name: IDirect3DVolumeTexture9
                   href: /windows/desktop/api/d3d9helper/nn-d3d9helper-idirect3dvolumetexture9
@@ -1294,7 +1294,7 @@
                   href: d3dquerytype.md
                 - name: D3DRENDERSTATETYPE
                   href: d3drenderstatetype.md
-                - name: D3DRESOURCETYPE
+                - name: D3dresourcetype
                   href: d3dresourcetype.md
                 - name: D3DSAMPLER_TEXTURE_TYPE
                   href: d3dsampler-texture-type.md
@@ -1306,7 +1306,7 @@
                   href: d3dshademode.md
                 - name: D3DSTATEBLOCKTYPE
                   href: d3dstateblocktype.md
-                - name: D3DSTENCILOP
+                - name: D3DSTENCIOPE
                   href: d3dstencilop.md
                 - name: D3DSWAPEFFECT
                   href: d3dswapeffect.md
@@ -1326,7 +1326,7 @@
                   href: d3dvertexblendflags.md
                 - name: D3DZBUFFERTYPE
                   href: d3dzbuffertype.md
-            - name: Constantes do Direct3D
+            - name: Constantes Direct3D
               href: dx9-graphics-reference-d3d-constants.md
               items:
                 - name: D3D9_RESOURCE_PRIORITY
@@ -1389,12 +1389,12 @@
                   href: d3dvtxpcaps.md
                 - name: S_PRESENT
                   href: device-state-return-codes.md
-                - name: Outras constantes do Direct3D
+                - name: Outras constantes direct3D
                   href: other-direct3d-constants.md
         - name: Referência de D3DX
           href: dx9-graphics-reference-d3dx.md
           items:
-            - name: Interfaces D3DX
+            - name: D3DX Interfaces
               href: dx9-graphics-reference-d3dx-interfaces.md
               items:
                 - name: ID3DXAllocateHierarchy
@@ -1416,11 +1416,11 @@
                 - name: ID3DXAnimationController
                   href: id3dxanimationcontroller.md
                   items:
-                    - name: Adiantamento
+                    - name: AdvanceTime
                       href: id3dxanimationcontroller--advancetime.md
                     - name: CloneAnimationController
                       href: id3dxanimationcontroller--cloneanimationcontroller.md
-                    - name: Getanimationset
+                    - name: GetAnimationSet
                       href: id3dxanimationcontroller--getanimationset.md
                     - name: GetAnimationSetByName
                       href: id3dxanimationcontroller--getanimationsetbyname.md
@@ -1442,7 +1442,7 @@
                       href: id3dxanimationcontroller--getnumanimationsets.md
                     - name: GetPriorityBlend
                       href: id3dxanimationcontroller--getpriorityblend.md
-                    - name: GetTime
+                    - name: Gettime
                       href: id3dxanimationcontroller--gettime.md
                     - name: GetTrackAnimationSet
                       href: id3dxanimationcontroller--gettrackanimationset.md
@@ -1466,7 +1466,7 @@
                       href: id3dxanimationcontroller--registeranimationoutput.md
                     - name: RegisterAnimationSet
                       href: id3dxanimationcontroller--registeranimationset.md
-                    - name: Redefinirtime
+                    - name: ResetTime
                       href: id3dxanimationcontroller--resettime.md
                     - name: SetPriorityBlend
                       href: id3dxanimationcontroller--setpriorityblend.md
@@ -1906,9 +1906,9 @@
                       href: id3dxprtcompbuffer--getnumpca.md
                     - name: GetNumSamples
                       href: id3dxprtcompbuffer--getnumsamples.md
-                    - name: GetWidth
+                    - name: Getwidth
                       href: id3dxprtcompbuffer--getwidth.md
-                    - name: Istexture
+                    - name: IsTexture
                       href: id3dxprtcompbuffer--istexture.md
                     - name: NormalizeData
                       href: id3dxprtcompbuffer--normalizedata.md
@@ -1929,7 +1929,7 @@
                       href: id3dxprtengine--computedirectlightingshgpu.md
                     - name: ComputeLDPRTCoeffs
                       href: id3dxprtengine--computeldprtcoeffs.md
-                    - name: Computação
+                    - name: ComputeSS
                       href: id3dxprtengine--computess.md
                     - name: ComputeSSAdaptive
                       href: id3dxprtengine--computessadaptive.md
@@ -1963,7 +1963,7 @@
                       href: id3dxprtengine--robustmeshrefine.md
                     - name: ScaleMeshChunk
                       href: id3dxprtengine--scalemeshchunk.md
-                    - name: SetCallback
+                    - name: SetCallBack
                       href: id3dxprtengine--setcallback.md
                     - name: SetMeshMaterials
                       href: id3dxprtengine--setmeshmaterials.md
@@ -1992,7 +1992,7 @@
                       href: id3dxrendertoenvmap--beginsphere.md
                     - name: End
                       href: id3dxrendertoenvmap--end.md
-                    - name: Detecção Facial
+                    - name: Face
                       href: id3dxrendertoenvmap--face.md
                     - name: GetDesc
                       href: id3dxrendertoenvmap--getdesc.md
@@ -2005,9 +2005,9 @@
                 - name: ID3DXRenderToSurface
                   href: id3dxrendertosurface.md
                   items:
-                    - name: BeginScene
+                    - name: Beginscene
                       href: id3dxrendertosurface--beginscene.md
-                    - name: Endcena
+                    - name: Endscene
                       href: id3dxrendertosurface--endscene.md
                     - name: GetDesc
                       href: id3dxrendertosurface--getdesc.md
@@ -2045,13 +2045,13 @@
                       href: id3dxskininfo--findbonevertexinfluenceindex.md
                     - name: GetBoneInfluence
                       href: id3dxskininfo--getboneinfluence.md
-                    - name: Getbonename
+                    - name: GetBoneName
                       href: id3dxskininfo--getbonename.md
                     - name: GetBoneOffsetMatrix
                       href: id3dxskininfo--getboneoffsetmatrix.md
                     - name: GetBoneVertexInfluence
                       href: id3dxskininfo--getbonevertexinfluence.md
-                    - name: Getdeclaration
+                    - name: GetDeclaration
                       href: id3dxskininfo--getdeclaration.md
                     - name: GetFVF
                       href: id3dxskininfo--getfvf.md
@@ -2065,17 +2065,17 @@
                       href: id3dxskininfo--getnumboneinfluences.md
                     - name: GetNumBones
                       href: id3dxskininfo--getnumbones.md
-                    - name: Conseguem
+                    - name: Remapeamento
                       href: id3dxskininfo--remap.md
                     - name: SetBoneInfluence
                       href: id3dxskininfo--setboneinfluence.md
-                    - name: Setbonename
+                    - name: SetBoneName
                       href: id3dxskininfo--setbonename.md
                     - name: SetBoneOffsetMatrix
                       href: id3dxskininfo--setboneoffsetmatrix.md
                     - name: SetBoneVertexInfluence
                       href: id3dxskininfo--setbonevertexinfluence.md
-                    - name: Setdeclaration
+                    - name: SetDeclaration
                       href: id3dxskininfo--setdeclaration.md
                     - name: SetFVF
                       href: id3dxskininfo--setfvf.md
@@ -2102,11 +2102,11 @@
                       href: id3dxsprite--onlostdevice.md
                     - name: OnResetDevice
                       href: id3dxsprite--onresetdevice.md
-                    - name: SetTransform
+                    - name: Settransform
                       href: id3dxsprite--settransform.md
                     - name: SetWorldViewLH
                       href: id3dxsprite--setworldviewlh.md
-                    - name: SetWorldViewRH
+                    - name: Setworldviewrh
                       href: id3dxsprite--setworldviewrh.md
                 - name: ID3DXTextureGutterHelper
                   href: id3dxtexturegutterhelper.md
@@ -2123,11 +2123,11 @@
                       href: id3dxtexturegutterhelper--getfacemap.md
                     - name: GetGutterMap
                       href: id3dxtexturegutterhelper--getguttermap.md
-                    - name: GetHeight
+                    - name: Getheight
                       href: id3dxtexturegutterhelper--getheight.md
                     - name: GetTexelMap
                       href: id3dxtexturegutterhelper--gettexelmap.md
-                    - name: GetWidth
+                    - name: Getwidth
                       href: id3dxtexturegutterhelper--getwidth.md
                     - name: ResampleTex
                       href: id3dxtexturegutterhelper--resampletex.md
@@ -2142,7 +2142,7 @@
                 - name: ID3DXTextureShader
                   href: id3dxtextureshader.md
                   items:
-                    - name: Getconstant
+                    - name: GetConstant
                       href: id3dxtextureshader--getconstant.md
                     - name: GetConstantBuffer
                       href: id3dxtextureshader--getconstantbuffer.md
@@ -2150,19 +2150,19 @@
                       href: id3dxtextureshader--getconstantbyname.md
                     - name: GetConstantDesc
                       href: id3dxtextureshader--getconstantdesc.md
-                    - name: Getconstantelement
+                    - name: GetConstantElement
                       href: id3dxtextureshader--getconstantelement.md
                     - name: GetDesc
                       href: id3dxtextureshader--getdesc.md
                     - name: GetFunction
                       href: id3dxtextureshader--getfunction.md
-                    - name: Setbool
+                    - name: SetBool
                       href: id3dxtextureshader--setbool.md
                     - name: SetBoolArray
                       href: id3dxtextureshader--setboolarray.md
-                    - name: SetDefaults
+                    - name: Setdefaults
                       href: id3dxtextureshader--setdefaults.md
-                    - name: SetFloat
+                    - name: Setfloat
                       href: id3dxtextureshader--setfloat.md
                     - name: SetFloatArray
                       href: id3dxtextureshader--setfloatarray.md
@@ -2170,7 +2170,7 @@
                       href: id3dxtextureshader--setint.md
                     - name: SetIntArray
                       href: id3dxtextureshader--setintarray.md
-                    - name: Setmatrix
+                    - name: SetMatrix
                       href: id3dxtextureshader--setmatrix.md
                     - name: SetMatrixArray
                       href: id3dxtextureshader--setmatrixarray.md
@@ -2184,7 +2184,7 @@
                       href: id3dxtextureshader--setmatrixtransposepointerarray.md
                     - name: SetValue
                       href: id3dxtextureshader--setvalue.md
-                    - name: Setvector
+                    - name: SetVector
                       href: id3dxtextureshader--setvector.md
                     - name: SetVectorArray
                       href: id3dxtextureshader--setvectorarray.md
@@ -2218,7 +2218,7 @@
                       href: d3dxloadmeshhierarchyfromxinmemory.md
                     - name: D3DXSaveMeshHierarchyToFile
                       href: d3dxsavemeshhierarchytofile.md
-                - name: Funções de Uso Geral
+                - name: Uso Geral funções
                   href: dx9-graphics-reference-d3dx-functions-general-purpose.md
                   items:
                     - name: D3DXCheckVersion
@@ -2248,7 +2248,7 @@
                       href: d3dxcoloradd.md
                     - name: D3DXColorAdjustContrast
                       href: d3dxcoloradjustcontrast.md
-                    - name: D3DXColorAdjustSaturation
+                    - name: D3DXColorAdjustS saturação
                       href: d3dxcoloradjustsaturation.md
                     - name: D3DXColorLerp
                       href: d3dxcolorlerp.md
@@ -2635,7 +2635,7 @@
                       href: d3dxvalidpatchmesh.md
                     - name: D3DXWeldVertices
                       href: d3dxweldvertices.md
-                - name: Funções de transferência radiante preputadas
+                - name: Funções de transferência de Radiance pré-comutadas
                   href: dx9-graphics-reference-d3dx-functions-prt.md
                   items:
                     - name: D3DXCreatePRTBuffer
@@ -2830,7 +2830,7 @@
                 - name: Funções UVAtlas
                   href: dx9-graphics-reference-d3dx-functions-uvatlas.md
                   items:
-                    - name: D3DXUVAtlasCreate
+                    - name: D3DXUVAtlasCriar
                       href: d3dxuvatlascreate.md
                     - name: D3DXUVAtlasPack
                       href: d3dxuvatlaspack.md
@@ -3122,7 +3122,7 @@
                       href: id3dxbaseeffect--setbool.md
                     - name: SetBoolArray
                       href: id3dxbaseeffect--setboolarray.md
-                    - name: SetFloat
+                    - name: Setfloat
                       href: id3dxbaseeffect--setfloat.md
                     - name: SetFloatArray
                       href: id3dxbaseeffect--setfloatarray.md
@@ -3130,7 +3130,7 @@
                       href: id3dxbaseeffect--setint.md
                     - name: SetIntArray
                       href: id3dxbaseeffect--setintarray.md
-                    - name: Setmatrix
+                    - name: SetMatrix
                       href: id3dxbaseeffect--setmatrix.md
                     - name: SetMatrixArray
                       href: id3dxbaseeffect--setmatrixarray.md
@@ -3144,11 +3144,11 @@
                       href: id3dxbaseeffect--setmatrixtransposepointerarray.md
                     - name: SetString
                       href: id3dxbaseeffect--setstring.md
-                    - name: SetTexture
+                    - name: Settexture
                       href: id3dxbaseeffect--settexture.md
                     - name: SetValue
                       href: id3dxbaseeffect--setvalue.md
-                    - name: Setvector
+                    - name: SetVector
                       href: id3dxbaseeffect--setvector.md
                     - name: SetVectorArray
                       href: id3dxbaseeffect--setvectorarray.md
@@ -3165,7 +3165,7 @@
                       href: id3dxeffect--beginpass.md
                     - name: CloneEffect
                       href: id3dxeffect--cloneeffect.md
-                    - name: CommitChanges
+                    - name: Commitchanges
                       href: id3dxeffect--commitchanges.md
                     - name: DeleteParameterBlock
                       href: id3dxeffect--deleteparameterblock.md
@@ -3173,7 +3173,7 @@
                       href: id3dxeffect--end.md
                     - name: EndParameterBlock
                       href: id3dxeffect--endparameterblock.md
-                    - name: Fim da passagem
+                    - name: EndPass
                       href: id3dxeffect--endpass.md
                     - name: FindNextValidTechnique
                       href: id3dxeffect--findnextvalidtechnique.md
@@ -3183,7 +3183,7 @@
                       href: id3dxeffect--getdevice.md
                     - name: GetPool
                       href: id3dxeffect--getpool.md
-                    - name: Getstatemanager
+                    - name: GetStateManager
                       href: id3dxeffect--getstatemanager.md
                     - name: IsParameterUsed
                       href: id3dxeffect--isparameterused.md
@@ -3193,9 +3193,9 @@
                       href: id3dxeffect--onresetdevice.md
                     - name: SetRawValue
                       href: id3dxeffect--setrawvalue.md
-                    - name: Setstatemanager
+                    - name: SetStateManager
                       href: id3dxeffect--setstatemanager.md
-                    - name: Settécnica
+                    - name: SetTechnique
                       href: id3dxeffect--settechnique.md
                     - name: ValidateTechnique
                       href: id3dxeffect--validatetechnique.md
@@ -3206,20 +3206,20 @@
                       href: id3dxeffectcompiler--compileeffect.md
                     - name: CompileShader
                       href: id3dxeffectcompiler--compileshader.md
-                    - name: Getliteral
+                    - name: GetLiteral
                       href: id3dxeffectcompiler--getliteral.md
-                    - name: Setliteral
+                    - name: SetLiteral
                       href: id3dxeffectcompiler--setliteral.md
                 - name: ID3DXEffectPool
                   href: id3dxeffectpool.md
                 - name: ID3DXEffectStateManager
                   href: id3dxeffectstatemanager.md
                   items:
-                    - name: Clarear
+                    - name: LightEnable
                       href: id3dxeffectstatemanager--lightenable.md
                     - name: SetFVF
                       href: id3dxeffectstatemanager--setfvf.md
-                    - name: SetLight
+                    - name: Setlight
                       href: id3dxeffectstatemanager--setlight.md
                     - name: SetMaterial
                       href: id3dxeffectstatemanager--setmaterial.md
@@ -3233,15 +3233,15 @@
                       href: id3dxeffectstatemanager--setpixelshaderconstantf.md
                     - name: SetPixelShaderConstantI
                       href: id3dxeffectstatemanager--setpixelshaderconstanti.md
-                    - name: Setrenderingstate
+                    - name: Setrenderstate
                       href: id3dxeffectstatemanager--setrenderstate.md
-                    - name: Setsamplestate
+                    - name: SetSamplerState
                       href: id3dxeffectstatemanager--setsamplerstate.md
-                    - name: SetTexture
+                    - name: Settexture
                       href: id3dxeffectstatemanager--settexture.md
-                    - name: SetTextureStageState
+                    - name: Settexturestagestate
                       href: id3dxeffectstatemanager--settexturestagestate.md
-                    - name: SetTransform
+                    - name: Settransform
                       href: id3dxeffectstatemanager--settransform.md
                     - name: SetVertexShader
                       href: id3dxeffectstatemanager--setvertexshader.md
@@ -3311,14 +3311,14 @@
                   href: d3dx-parameter.md
                 - name: D3DXFX
                   href: d3dxfx.md
-            - name: Formato do efeito
+            - name: Formato de efeito
               href: dx9-graphics-reference-effects-file-format.md
               items:
                 - name: Parâmetros
                   href: parameters.md
                 - name: Técnicas e passagens
                   href: techniques-and-passes.md
-                - name: Sintaxe da função de efeito
+                - name: Sintaxe da função Effect
                   href: functions.md
                 - name: Clonagem e compartilhamento
                   href: cloning-and-sharing.md
@@ -3532,7 +3532,7 @@
                 - name: Codificação binária
                   href: binary-encoding.md
                   items:
-                    - name: parâmetro
+                    - name: Cabeçalho
                       href: header.md
                     - name: Tokens
                       href: tokens.md
@@ -3562,9 +3562,9 @@
                       href: animation.md
                     - name: AnimationKey
                       href: animationkey.md
-                    - name: Animaçãooptions
+                    - name: AnimationOptions
                       href: animationoptions.md
-                    - name: Animaçãoset
+                    - name: AnimationSet
                       href: animationset.md
                     - name: AnimTicksPerSecond
                       href: animtickspersecond.md
@@ -3594,7 +3594,7 @@
                       href: effectparamfloats.md
                     - name: EffectParamString
                       href: effectparamstring.md
-                    - name: Efeitostring
+                    - name: EffectString
                       href: effectstring.md
                     - name: FaceAdjacency
                       href: faceadjacency.md
@@ -3652,9 +3652,9 @@
                       href: vector.md
                     - name: VertexDuplicationIndices
                       href: vertexduplicationindices.md
-                    - name: Vérticeelement
+                    - name: VertexElement
                       href: vertexelement.md
                     - name: XSkinMeshHeader
                       href: xskinmeshheader.md
-    - name: Resumo do recurso (Direct3D 9 para Windows Vista)
+    - name: Resumo de recursos (Direct3D 9 para Windows Vista)
       href: dx9lh.md

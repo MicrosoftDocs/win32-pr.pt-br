@@ -1,19 +1,19 @@
 ---
-description: Um tipo ASN criado de notação de sintaxe abstrata (Authorized. 1) é composto de tipos básicos, tipos de cadeia de caracteres ou outros tipos construídos. Por exemplo, uma extensão de certificado X. 509 é composta de três tipos ASN básicos. 1, conforme mostrado pelo exemplo a seguir.
+description: Um tipo ASN.1 (Abstract Syntax Notation One) construído é feito de tipos básicos, tipos de cadeia de caracteres ou outros tipos construídos. Por exemplo, uma extensão de certificado X.509 é composta de três tipos BÁSICOSN.1, conforme mostrado no exemplo a seguir.
 ms.assetid: 90c52d71-5d5b-479c-8e29-06c9f0f6da4a
 title: Tipos construídos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a515e6e03ebf3c95ff1cabc1bf7f12eb423df27d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 85ed62c4a59bfc0944ad5e31673ab0ea9031c0175014c8fc1c6b6f2cc071b153
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105758284"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118904485"
 ---
 # <a name="constructed-types"></a>Tipos construídos
 
-Um tipo ASN criado de [*notação de sintaxe abstrata*](/windows/desktop/SecGloss/a-gly) (Authorized. 1) é composto de tipos básicos, tipos de cadeia de caracteres ou outros tipos construídos. Por exemplo, uma extensão de certificado X. 509 é composta de três tipos ASN básicos. 1, conforme mostrado pelo exemplo a seguir.
+Um tipo ASN.1 [*(Abstract Syntax Notation One)*](/windows/desktop/SecGloss/a-gly) construído é feito de tipos básicos, tipos de cadeia de caracteres ou outros tipos construídos. Por exemplo, uma extensão de certificado X.509 é composta de três tipos BÁSICOSN.1, conforme mostrado no exemplo a seguir.
 
 ``` syntax
 Extension ::= SEQUENCE 
@@ -24,13 +24,13 @@ Extension ::= SEQUENCE
 }
 ```
 
-Uma extensão consiste em um OID ( [*identificador de objeto*](/windows/desktop/SecGloss/o-gly) ), um valor booliano que identifica se a extensão é crítica e uma matriz de bytes que contém o valor. A API de registro de certificado dá suporte aos tipos ASN. 1 construídos a seguir.
+Uma extensão consiste em um OID [*(identificador*](/windows/desktop/SecGloss/o-gly) de objeto), um valor booliana que identifica se a extensão é crítica e uma matriz de byte que contém o valor. A API de Registro de Certificado dá suporte aos seguintes tipos ASN.1 construídos.
 
-## <a name="sequence-and-sequence-of"></a>SEQUÊNCIA e sequência de
+## <a name="sequence-and-sequence-of"></a>SEQUENCE e SEQUENCE OF
 
 Marca de codificação: 0x30
 
-Contém uma série ordenada de campos de um ou mais tipos. Os campos podem ser marcados como **opcional** ou **padrão**. Além disso, para evitar ambigüidade ao decodificar, os campos opcionais sucessivos devem diferir uns dos outros por meio de um identificador exclusivo (um inteiro entre colchetes, como \[ 1 \] ) e do campo obrigatório a seguir, conforme mostrado pelo exemplo a seguir.
+Contém uma série ordenada de campos de um ou mais tipos. Os campos podem ser **marcados como OPCIONAL** **ou DEFAULT.** Além disso, para evitar ambiguidade ao decodificar, os campos opcionais sucessivos devem ser diferentes um do outro por meio de um identificador exclusivo (um inteiro entre colchetes como 1 ) e de um campo obrigatório a seguir, conforme mostrado pelo exemplo a \[ \] seguir.
 
 ``` syntax
 SomeValue ::= SEQUENCE 
@@ -42,7 +42,7 @@ SomeValue ::= SEQUENCE
 }
 ```
 
-A diferença entre **sequência** e **sequência de** é que os elementos de uma **sequência de** construção devem ser do mesmo tipo. Veja o exemplo a seguir. Ambos os constructos têm o mesmo valor de marca (0x30) quando codificados.
+A diferença entre **SEQUENCE** e **SEQUENCE OF** é que os elementos de um constructo **SEQUENCE OF** devem ser do mesmo tipo. Veja o exemplo a seguir. Ambos os constructos têm o mesmo valor de marca (0x30) quando codificados.
 
 ``` syntax
 PolicyQualifiers ::=  SEQUENCE OF PolicyQualifierInfo
@@ -54,13 +54,13 @@ PolicyQualifierInfo ::= SEQUENCE
 }
 ```
 
-Outra maneira de examinar a diferença entre **sequência** e **sequência de** é compará-los com suas contrapartes na linguagem de programação C. Ou seja, **Sequence** é aproximadamente equivalente a uma estrutura e a **sequência de** é aproximadamente equivalente a uma matriz.
+Outra maneira de ver a diferença entre **SEQUENCE** e **SEQUENCE OF** é compará-los com seus equivalentes na linguagem de programação C. Ou seja, **SEQUENCE** é aproximadamente equivalente a uma estrutura e **SEQUENCE OF** é aproximadamente equivalente a uma matriz.
 
-## <a name="set-and-set-of"></a>CONJUNTO e conjunto de
+## <a name="set-and-set-of"></a>SET e SET OF
 
 Marca de codificação: 0x31
 
-Contém uma série não ordenada de campos de um ou mais tipos. Isso é diferente de uma **sequência** que contém uma lista ordenada. A especificação de uma lista não ordenada permite que um aplicativo forneça os campos de estrutura para o codificador na ordem mais apropriada. Como with **Sequence**, os campos de uma construção **set** podem ser marcados com **optional** ou **Default**, e os identificadores exclusivos devem ser usados para eliminar a ambiguidade do processo de decodificação. A diferença entre **set** e **set de** é que os elementos de um **conjunto de** construção devem ser do mesmo tipo.
+Contém uma série nãoordenada de campos de um ou mais tipos. Isso é diferente de uma **SEQUENCE** que contém uma lista ordenada. Especificar uma lista não ordem permite que um aplicativo forneça os campos de estrutura para o codificador na ordem mais apropriada. Assim como com **SEQUENCE**, os campos de um constructo **SET** podem ser marcados com **OPTIONAL** ou **DEFAULT** e identificadores exclusivos devem ser usados para desambiguar o processo de decodificação. A diferença entre **SET** e **SET OF** é que os elementos de um constructo **SET OF** devem ser do mesmo tipo.
 
 ``` syntax
 Name ::= SEQUENCE OF RelativeDistinguishedName
@@ -74,11 +74,11 @@ AttributeTypeValue ::= SEQUENCE
 }
 ```
 
-## <a name="choice"></a>DESEJADA
+## <a name="choice"></a>Escolha
 
 Marca de codificação: não aplicável
 
-Define uma escolha entre alternativas. Cada alternativa deve ser identificada exclusivamente por um inteiro entre colchetes para evitar ambigüidade ao decodificar. Quando codificada, a construção **Choice** terá o valor da marca de codificação da alternativa escolhida.
+Define uma opção entre alternativas. Cada alternativa deve ser identificada exclusivamente por um inteiro entre colchetes para evitar ambiguidade ao decodificar. Quando codificado, o **constructo CHOICE** terá o valor da marca de codificação da alternativa escolhida.
 
 ``` syntax
 AltNames ::= SEQUENCE OF GeneralName
@@ -103,10 +103,10 @@ GeneralName ::= CHOICE
 
 <dl> <dt>
 
-[Sistema de tipo ASN. 1](about-asn-1-type-system.md)
+[Sistema de tipos ASN.1](about-asn-1-type-system.md)
 </dt> <dt>
 
-[Codificação DER dos tipos ASN. 1](about-der-encoding-of-asn-1-types.md)
+[Codificação DER de tipos ASN.1](about-der-encoding-of-asn-1-types.md)
 </dt> <dt>
 
 [Distinguished Encoding Rules](distinguished-encoding-rules.md)

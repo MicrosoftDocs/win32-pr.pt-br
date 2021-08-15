@@ -1,6 +1,6 @@
 ---
 title: Estrutura DLGTEMPLATEEX
-description: Um modelo de caixa de diálogo estendido começa com um cabeçalho DLGTEMPLATEEX que descreve a caixa de diálogo e especifica o número de controles na caixa de diálogo.
+description: Um modelo de caixa de diálogo estendido começa com um header DLGTEMPLATEEX que descreve a caixa de diálogo e especifica o número de controles na caixa de diálogo.
 ms.assetid: 9f016cc6-56e2-45d3-8773-1b405fc10d29
 keywords:
 - Caixas de diálogo da estrutura DLGTEMPLATEEX
@@ -13,18 +13,18 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 1c3db7127e23e3133e11fe9c1600d37695e3b1ae
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ab23b93a72edb2da6784797dd47bdfb4a839e2e9ce662adfc6ffbe09e468ac17
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104499566"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118503447"
 ---
 # <a name="dlgtemplateex-structure"></a>Estrutura DLGTEMPLATEEX
 
-Um modelo de caixa de diálogo estendido começa com um cabeçalho **DLGTEMPLATEEX** que descreve a caixa de diálogo e especifica o número de controles na caixa de diálogo. Para cada controle em uma caixa de diálogo, um modelo de caixa de diálogo estendida tem um bloco de dados que usa o formato [**DLGITEMTEMPLATEEX**](dlgitemtemplateex.md) para descrever o controle.
+Um modelo de caixa de diálogo estendido começa com um header **DLGTEMPLATEEX** que descreve a caixa de diálogo e especifica o número de controles na caixa de diálogo. Para cada controle em uma caixa de diálogo, um modelo de caixa de diálogo estendido tem um bloco de dados que usa o [**formato DLGITEMTEMPLATEEX**](dlgitemtemplateex.md) para descrever o controle.
 
-A estrutura **DLGTEMPLATEEX** não está definida em nenhum arquivo de cabeçalho padrão. A definição de estrutura é fornecida aqui para explicar o formato de um modelo estendido para uma caixa de diálogo.
+A **estrutura DLGTEMPLATEEX** não está definida em nenhum arquivo de header padrão. A definição de estrutura é fornecida aqui para explicar o formato de um modelo estendido para uma caixa de diálogo.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -61,44 +61,44 @@ typedef struct {
 **dlgVer**
 </dt> <dd>
 
-Tipo: **Word**
+Tipo: **WORD**
 
 </dd> <dd>
 
-O número de versão do modelo da caixa de diálogo estendida. Esse membro deve ser definido como 1.
+O número de versão do modelo de caixa de diálogo estendido. Esse membro deve ser definido como 1.
 
 </dd> <dt>
 
 **assinatura**
 </dt> <dd>
 
-Tipo: **Word**
+Tipo: **WORD**
 
 </dd> <dd>
 
-Indica se um modelo é um modelo de caixa de diálogo estendida. Se a **assinatura** for 0xFFFF, esse será um modelo de caixa de diálogo estendido. Nesse caso, o membro **dlgVer** especifica o número de versão do modelo. Se a **assinatura** for qualquer valor diferente de 0xFFFF, esse será um modelo de caixa de diálogo padrão que usa as estruturas [**DLGTEMPLATE**](/windows/desktop/api/Winuser/ns-winuser-dlgtemplate) e [**DLGITEMTEMPLATE**](/windows/desktop/api/Winuser/ns-winuser-dlgitemtemplate) .
+Indica se um modelo é um modelo de caixa de diálogo estendido. Se **a** assinatura for 0xFFFF, esse será um modelo de caixa de diálogo estendido. Nesse caso, o **membro dlgVer** especifica o número de versão do modelo. Se **a** assinatura for qualquer valor diferente 0xFFFF, esse será um modelo de caixa de diálogo padrão que usa as estruturas [**DLGTEMPLATE**](/windows/desktop/api/Winuser/ns-winuser-dlgtemplate) e [**DLGITEMTEMPLATE.**](/windows/desktop/api/Winuser/ns-winuser-dlgitemtemplate)
 
 </dd> <dt>
 
-**HelpID**
+**helpID**
 </dt> <dd>
 
 Tipo: **DWORD**
 
 </dd> <dd>
 
-O identificador de contexto da ajuda para a janela da caixa de diálogo. Quando o sistema envia uma mensagem de [**\_ ajuda do WM**](../shell/wm-help.md) , ele passa esse valor no membro **wContextId** da estrutura [**HELPINFO**](/windows/win32/api/winuser/ns-winuser-helpinfo) .
+O identificador de contexto de ajuda para a janela da caixa de diálogo. Quando o sistema envia uma [**mensagem WM \_ HELP,**](../shell/wm-help.md) ele passa esse valor no **membro wContextId** da [**estrutura HELPINFO.**](/windows/win32/api/winuser/ns-winuser-helpinfo)
 
 </dd> <dt>
 
-**comstyle**
+**Exstyle**
 </dt> <dd>
 
 Tipo: **DWORD**
 
 </dd> <dd>
 
-Os estilos estendidos do Windows. Esse membro não é usado ao criar caixas de diálogo, mas os aplicativos que usam modelos de caixa de diálogo podem usá-lo para criar outros tipos de janelas. Para obter uma lista de valores, consulte [**estilos de janela estendidos**](/windows/desktop/winmsg/extended-window-styles).
+Os estilos estendidos do Windows. Esse membro não é usado ao criar caixas de diálogo, mas os aplicativos que usam modelos de caixa de diálogo podem usá-lo para criar outros tipos de janelas. Para ver uma lista de valores, consulte [**Estilos de janela estendidos.**](/windows/desktop/winmsg/extended-window-styles)
 
 </dd> <dt>
 
@@ -109,18 +109,18 @@ Tipo: **DWORD**
 
 </dd> <dd>
 
-O estilo da caixa de diálogo. Esse membro pode ser uma combinação de [valores de estilo de janela](/windows/desktop/winmsg/window-styles) e [valores de estilo de caixa de diálogo](dialog-box-styles.md).
+O estilo da caixa de diálogo. Esse membro pode ser uma combinação de valores de [estilo de janela](/windows/desktop/winmsg/window-styles) e valores de estilo de caixa de [diálogo](dialog-box-styles.md).
 
-Se **o estilo** incluir o estilo de caixa de diálogo **DS \_ SetFont** ou **DS \_ SHELLFONT** , o cabeçalho **DLGTEMPLATEEX** do modelo da caixa de diálogo estendida conterá quatro membros adicionais ( **pontos**, **peso**, **itálico** e **tipo**) que descrevem a fonte a ser usada para o texto na área do cliente e os controles da caixa de diálogo. Se possível, o sistema cria uma fonte de acordo com os valores especificados nesses membros. Em seguida, o sistema envia uma mensagem do [**WM \_ SetFont**](/windows/desktop/winmsg/wm-setfont) para a caixa de diálogo e para cada controle para fornecer um identificador para a fonte.
+Se  style incluir o estilo da caixa de diálogo **DS \_ SETFONT** ou **DS \_ SHELLFONT,** o header **DLGTEMPLATEEX** do modelo de caixa de diálogo estendido conterá quatro membros adicionais ( **pointsize,** **weight,** **italic** e **typeface**) que descrevem a fonte a ser usada para o texto na área do cliente e controles da caixa de diálogo. Se possível, o sistema cria uma fonte de acordo com os valores especificados nesses membros. Em seguida, o sistema [**envia uma mensagem WM \_ SETFONT**](/windows/desktop/winmsg/wm-setfont) para a caixa de diálogo e para cada controle para fornecer um alça para a fonte.
 
-Para obter mais informações, consulte [fontes da caixa de diálogo](about-dialog-boxes.md).
+Para obter mais informações, consulte [Fontes da caixa de diálogo](about-dialog-boxes.md).
 
 </dd> <dt>
 
 **cDlgItems**
 </dt> <dd>
 
-Tipo: **Word**
+Tipo: **WORD**
 
 </dd> <dd>
 
@@ -131,51 +131,51 @@ O número de controles na caixa de diálogo.
 **x**
 </dt> <dd>
 
-Tipo: **curto**
+Tipo: **short**
 
 </dd> <dd>
 
-A coordenada x, nas unidades da caixa de diálogo, do canto superior esquerdo da caixa de diálogo.
+A coordenada X, em unidades da caixa de diálogo, do canto superior esquerdo da caixa de diálogo.
 
 </dd> <dt>
 
 **y**
 </dt> <dd>
 
-Tipo: **curto**
+Tipo: **short**
 
 </dd> <dd>
 
-A coordenada y, nas unidades da caixa de diálogo, do canto superior esquerdo da caixa de diálogo.
+A coordenada Y, em unidades da caixa de diálogo, do canto superior esquerdo da caixa de diálogo.
 
 </dd> <dt>
 
-**CX**
+**Cx**
 </dt> <dd>
 
-Tipo: **curto**
+Tipo: **short**
 
 </dd> <dd>
 
-A largura, nas unidades da caixa de diálogo, da caixa de diálogo.
+A largura, em unidades da caixa de diálogo, da caixa de diálogo.
 
 </dd> <dt>
 
 **Cy**
 </dt> <dd>
 
-Tipo: **curto**
+Tipo: **short**
 
 </dd> <dd>
 
-A altura, nas unidades da caixa de diálogo, da caixa de diálogo.
+A altura, em unidades da caixa de diálogo, da caixa de diálogo.
 
 </dd> <dt>
 
-**AdicionarMenu**
+**Menu**
 </dt> <dd>
 
-Tipo: **sz \_ ou \_ Ord**
+Tipo: **sz \_ Or \_ Ord**
 
 </dd> <dd>
 
@@ -186,11 +186,11 @@ Uma matriz de comprimento variável de elementos de 16 bits que identifica um re
 **windowClass**
 </dt> <dd>
 
-Tipo: **sz \_ ou \_ Ord**
+Tipo: **sz \_ Or \_ Ord**
 
 </dd> <dd>
 
-Uma matriz de comprimento variável de elementos de 16 bits que identifica a classe de janela da caixa de diálogo. Se o primeiro elemento da matriz for 0x0000, o sistema usará a classe de caixa de diálogo predefinida para a caixa de diálogo e a matriz não terá outros elementos. Se o primeiro elemento for 0xFFFF, a matriz terá um elemento adicional que especifica o valor ordinal de uma classe de janela do sistema predefinida. Se o primeiro elemento tiver qualquer outro valor, o sistema tratará a matriz como uma cadeia de caracteres Unicode terminada em nulo que especifica o nome de uma classe de janela registrada.
+Uma matriz de comprimento variável de elementos de 16 bits que identifica a classe de janela da caixa de diálogo. Se o primeiro elemento da matriz for 0x0000, o sistema usará a classe de caixa de diálogo predefinida para a caixa de diálogo e a matriz não terá nenhum outro elemento. Se o primeiro elemento for 0xFFFF, a matriz terá um elemento adicional que especifica o valor ordinal de uma classe de janela do sistema predefinida. Se o primeiro elemento tiver qualquer outro valor, o sistema tratará a matriz como uma cadeia de caracteres Unicode terminada em nulo que especifica o nome de uma classe de janela registrada.
 
 </dd> <dt>
 
@@ -205,82 +205,82 @@ O título da caixa de diálogo. Se o primeiro elemento dessa matriz for 0x0000, 
 
 </dd> <dt>
 
-**pontos**
+**Pointsize**
 </dt> <dd>
 
-Tipo: **Word**
+Tipo: **WORD**
 
 </dd> <dd>
 
-O tamanho do ponto da fonte a ser usado para o texto na caixa de diálogo e seus controles.
+O tamanho do ponto da fonte a ser usada para o texto na caixa de diálogo e seus controles.
 
-Esse membro estará presente somente se o membro de **estilo** especificar **DS \_ SetFont** ou **DS \_ SHELLFONT**.
+Esse membro estará presente somente se o membro **de estilo** especificar **DS \_ SETFONT** ou **DS \_ SHELLFONT**.
 
 </dd> <dt>
 
 **weight**
 </dt> <dd>
 
-Tipo: **Word**
+Tipo: **WORD**
 
 </dd> <dd>
 
-O peso da fonte. Observe que, embora isso possa ser qualquer um dos valores listados para o membro **lfWeight** da estrutura [**LOGFONT**](/windows/win32/api/wingdi/ns-wingdi-logfonta) , qualquer valor usado será alterado automaticamente para o **FW \_ normal**.
+O peso da fonte. Observe que, embora esse possa ser qualquer um dos valores listados para o membro **lfWeight** da estrutura [**LOGFONT,**](/windows/win32/api/wingdi/ns-wingdi-logfonta) qualquer valor usado será alterado automaticamente para **FW \_ NORMAL.**
 
-Esse membro estará presente somente se o membro de **estilo** especificar **DS \_ SetFont** ou **DS \_ SHELLFONT**.
+Esse membro estará presente somente se o membro **de estilo** especificar **DS \_ SETFONT** ou **DS \_ SHELLFONT**.
 
 </dd> <dt>
 
 **italic**
 </dt> <dd>
 
-Tipo: **byte**
+Tipo: **BYTE**
 
 </dd> <dd>
 
-Indica se a fonte está em itálico. Se esse valor for **true**, a fonte será itálico.
+Indica se a fonte é itálico. Se esse valor for **TRUE,** a fonte será itálico.
 
-Esse membro estará presente somente se o membro de **estilo** especificar **DS \_ SetFont** ou **DS \_ SHELLFONT**.
+Esse membro estará presente somente se o membro **de estilo** especificar **DS \_ SETFONT** ou **DS \_ SHELLFONT**.
 
 </dd> <dt>
 
-**charset**
+**Charset**
 </dt> <dd>
 
-Tipo: **byte**
+Tipo: **BYTE**
 
 </dd> <dd>
 
-O conjunto de caracteres a ser usado. Para obter mais informações, consulte o membro **lfCharSet** de [**LOGFONT**](/windows/win32/api/wingdi/ns-wingdi-logfonta).
+O conjunto de caracteres a ser usado. Para obter mais informações, consulte **o membro lfcharset** de [**LOGFONT.**](/windows/win32/api/wingdi/ns-wingdi-logfonta)
 
-Esse membro estará presente somente se o membro de **estilo** especificar **DS \_ SetFont** ou **DS \_ SHELLFONT**.
+Esse membro estará presente somente se o membro **de estilo** especificar **DS \_ SETFONT** ou **DS \_ SHELLFONT**.
 
 </dd> <dt>
 
-**face**
+**Tipo**
 </dt> <dd>
 
 Tipo: **WCHAR \[ stringLen \]**
 
 </dd> <dd>
 
-O nome da face de tipos da fonte.
+O nome da face de tipo da fonte.
 
-Esse membro estará presente somente se o membro de **estilo** especificar **DS \_ SetFont** ou **DS \_ SHELLFONT**.
+Esse membro estará presente somente se o membro **de estilo** especificar **DS \_ SETFONT** ou **DS \_ SHELLFONT**.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-Você pode usar um modelo de caixa de diálogo estendida em vez de um modelo de caixa de diálogo padrão nas funções [**CreateDialogIndirectParam**](/windows/desktop/api/Winuser/nf-winuser-createdialogindirectparama), [**DialogBoxIndirectParam**](/windows/desktop/api/Winuser/nf-winuser-dialogboxindirectparama), [**CreateDialogIndirect**](/windows/desktop/api/Winuser/nf-winuser-createdialogindirecta)e [**DialogBoxIndirect**](/windows/desktop/api/Winuser/nf-winuser-dialogboxindirecta) .
+Você pode usar um modelo de caixa de diálogo estendido em vez de um modelo de caixa de diálogo padrão nas funções [**CreateDialogIndirectParam**](/windows/desktop/api/Winuser/nf-winuser-createdialogindirectparama), [**DialogBoxIndirectParam,**](/windows/desktop/api/Winuser/nf-winuser-dialogboxindirectparama) [**CreateDialogIndirect**](/windows/desktop/api/Winuser/nf-winuser-createdialogindirecta)e [**DialogBoxIndirect.**](/windows/desktop/api/Winuser/nf-winuser-dialogboxindirecta)
 
-Seguir o cabeçalho **DLGTEMPLATEEX** em um modelo de caixa de diálogo estendido é uma ou mais estruturas [**DLGITEMTEMPLATEEX**](dlgitemtemplateex.md) que descrevem os controles da caixa de diálogo. O membro **cDlgItems** da estrutura **DLGITEMTEMPLATEEX** especifica o número de estruturas **DLGITEMTEMPLATEEX** que seguem no modelo.
+Após o **header DLGTEMPLATEEX em um** modelo de caixa de diálogo estendido, há uma ou mais estruturas [**DLGITEMTEMPLATEEX**](dlgitemtemplateex.md) que descrevem os controles da caixa de diálogo. O **membro cDlgItems** da estrutura **DLGITEMTEMPLATEEX** especifica o número de estruturas **DLGITEMTEMPLATEEX** que seguem no modelo.
 
-Cada estrutura [**DLGITEMTEMPLATEEX**](dlgitemtemplateex.md) no modelo deve ser alinhada em um limite **DWORD** . Se o membro de **estilo** especificar o estilo **DS \_ SetFont** ou **DS \_ SHELLFONT** , a primeira estrutura **DLGITEMTEMPLATEEX** começará no primeiro limite **DWORD** após a cadeia de caracteres de **tipo** . Se esses estilos não forem especificados, a primeira estrutura começará no primeiro limite **DWORD** após a cadeia de **título** .
+Cada [**estrutura DLGITEMTEMPLATEEX**](dlgitemtemplateex.md) no modelo deve ser alinhada em um **limite DWORD.** Se  o membro de estilo especificar o estilo **DS \_ SETFONT** ou **DS \_ SHELLFONT,** a primeira **estrutura DLGITEMTEMPLATEEX** começará no primeiro limite **DWORD** após a cadeia de caracteres **typeface.** Se esses estilos não são especificados, a primeira estrutura começa no primeiro limite **DWORD** após a cadeia **de caracteres de** título.
 
-As matrizes **menu**, **WindowClass**, **title** e **face de tipos** devem ser alinhadas em limites de **palavras** .
+As **matrizes de menu**, **windowClass**, **title** e **typeface** devem ser alinhadas nos limites **do WORD.**
 
-Se você especificar cadeias de caracteres nas matrizes **menu**, **WindowClass**, **title** e **face** , deverá usar cadeias de caractere Unicode. Use a função [**MultiByteToWideChar**](/windows/desktop/api/stringapiset/nf-stringapiset-multibytetowidechar) para gerar essas cadeias de caracteres Unicode a partir de cadeias de caracteres ANSI.
+Se você especificar cadeias de caracteres no **menu**, **windowClass**, **título** e **matrizes de face** de tipo, deverá usar cadeias de caracteres Unicode. Use a função [**MultiByteToWideChar**](/windows/desktop/api/stringapiset/nf-stringapiset-multibytetowidechar) para gerar essas cadeias de caracteres Unicode a partir de cadeias de caracteres ANSI.
 
 Os membros **x**, **y**, **CX** e **CY** especificam valores nas unidades da caixa de diálogo. Você pode converter esses valores em unidades de tela (pixels) usando a função [**MapDialogRect**](/windows/desktop/api/Winuser/nf-winuser-mapdialogrect) .
 

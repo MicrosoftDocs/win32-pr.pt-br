@@ -1,7 +1,7 @@
 ---
-description: 'O método FreeProps libera recursos alocados pelo método IPropertySetter:: GetProps. Chame esse método depois de chamar GetProps, passando-o para as estruturas retornadas por GetProps.'
+description: O método FreeProps libera recursos alocados pelo método IPropertySetter::GetProps. Chame esse método depois de chamar GetProps, passando-o para as estruturas retornadas por GetProps.
 ms.assetid: 5920d63d-d8eb-4fd5-b0d6-9d175e8e2c86
-title: 'Método IPropertySetter:: FreeProps (QEdit. h)'
+title: Método IPropertySetter::FreeProps (Qedit.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,21 +14,21 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 3cc90d094d3213b5b68f61585296bcb21ebbf5a7
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 34529c7d78ad36a87eb441f624af8daf1167a77148758ff376feacc70250f18e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105766990"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118397547"
 ---
-# <a name="ipropertysetterfreeprops-method"></a>Método IPropertySetter:: FreeProps
+# <a name="ipropertysetterfreeprops-method"></a>Método IPropertySetter::FreeProps
 
 > [!Note]  
 > \[Preterido. Essa API pode ser removida de versões futuras do Windows.\]
 
  
 
-O `FreeProps` método libera recursos alocados pelo método [**IPropertySetter:: GetProps**](ipropertysetter-getprops.md) . Chame esse método depois de chamar **GetProps**, passando-o para as estruturas retornadas por **GetProps**.
+O `FreeProps` método libera recursos alocados pelo método [**IPropertySetter::GetProps.**](ipropertysetter-getprops.md) Chame esse método depois de chamar **GetProps,** passando-o para as estruturas retornadas **por GetProps.**
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -47,40 +47,40 @@ void FreeProps(
 
 <dl> <dt>
 
-*cParams* \[ no\]
+*cParams* \[ Em\]
 </dt> <dd>
 
-O número de elementos na matriz *paParam* .
+O número de elementos na matriz *paParam.*
 
 </dd> <dt>
 
-*paParam* \[ no\]
+*paParam* \[ Em\]
 </dt> <dd>
 
-Ponteiro para uma matriz de [**estruturas \_ param Dexter**](dexter-param.md) .
+Ponteiro para uma matriz de [**estruturas DE PARAM DE \_ PARAM.**](dexter-param.md)
 
 </dd> <dt>
 
-*paValue* \[ no\]
+*paValue* \[ Em\]
 </dt> <dd>
 
-Ponteiro para uma matriz de estruturas de [**\_ valor Dexter**](dexter-value.md) .
+Ponteiro para uma matriz de [**estruturas DE \_ VALOR DE VALOR.**](dexter-value.md)
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
 > [!Note]  
-> O arquivo de cabeçalho QEdit. h não é compatível com cabeçalhos do Direct3D posteriores à versão 7.
+> O arquivo de título Qedit.h não é compatível com os headers direct3D posteriores à versão 7.
 
  
 
 > [!Note]  
-> Para obter o QEdit. h, baixe a [atualização SDK do Microsoft Windows para Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). O QEdit. h não está disponível no SDK do Microsoft Windows para Windows 7 e .NET Framework 3,5 Service Pack 1.
+> Para obter o Qedit.h, baixe [o Microsoft Windows SDK Update para Windows Vista e .NET Framework 3.0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). O Qedit.h não está disponível no SDK do Microsoft Windows para Windows 7 e .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -90,8 +90,8 @@ Esse método não retorna um valor.
 
 | Requisito | Valor |
 |--------------------|-----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>QEdit. h</dt> </dl>      |
-| Biblioteca<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Biblioteca<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 
@@ -99,7 +99,7 @@ Esse método não retorna um valor.
 
 <dl> <dt>
 
-[**Interface IPropertySetter**](ipropertysetter.md)
+[**IPropertySetter Interface**](ipropertysetter.md)
 </dt> <dt>
 
 [Códigos de erro e êxito](error-and-success-codes.md)

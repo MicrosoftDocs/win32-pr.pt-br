@@ -4,12 +4,12 @@ description: Comparação atômica e gravação na memória.
 ms.assetid: 1B97E983-11A9-47E4-B274-E94083837C6E
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 26a5292d65b32988017044a2ec52680848dffbef
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: 7dbc57b14b4279b9bd4844d89492852ae915d9d900ed04421eeeccc367979a63
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "103638882"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118795158"
 ---
 # <a name="atomic_cmp_store-sm5---asm"></a>\_armazenamento CMP atômico \_ (SM5-ASM)
 
@@ -63,7 +63,7 @@ Essa instrução se aplica aos seguintes estágios de sombreador:
 
 
 
-| Vértice | Envoltória | Domínio | Geometria | 16x16 | Computação |
+| Vértice | Envoltória | Domínio | Geometry | 16x16 | Computação |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | X     | X       |
 
@@ -75,7 +75,7 @@ Como UAVs estão disponíveis em todos os estágios do sombreador para o Direct3
 
 
 
-| Vértice | Envoltória | Domínio | Geometria | 16x16 | Computação |
+| Vértice | Envoltória | Domínio | Geometry | 16x16 | Computação |
 |--------|------|--------|----------|-------|---------|
 | X      | X    | X      | X        | X     | X       |
 

@@ -6,7 +6,7 @@
     - name: Windows 10
       href: windows-10.md
       items:
-        - name: Principais alterações desde o Windows 7 para garantir a compatibilidade
+        - name: principais alterações desde Windows 7 para garantir a compatibilidade
           href: key-changes-since-windows-7-to-ensure-compatibility.md
         - name: Como podemos garantir a compatibilidade do ecossistema combinado
           href: how-we-can-ensure-compatibility-of-the-combined-ecosystem.md
@@ -15,15 +15,15 @@
               href: windows-version-check.md
             - name: APIs não documentadas
               href: undocumented-apis.md
-            - name: Desenvolver aplicativos Plataforma Universal do Windows (UWP)
+            - name: desenvolver aplicativos Plataforma Universal do Windows (UWP)
               href: develop-universal-windows-platform-apps.md
             - name: A funcionalidade do aplicativo de desktop será afetada se não for executada no modo de janela
               href: modern-desktop-app-functionality-is-impacted-if-not-run-in-windowed-mode.md
-            - name: Disponibilidade de drivers gráficos aplicáveis no Windows Update
+            - name: disponibilidade de drivers gráficos aplicáveis no Windows Update
               href: availability-of-applicable-graphics-drivers-on-windows-update.md
-            - name: Migração de driver de gráficos para o Windows 10
+            - name: Migração de driver de gráficos para Windows 10
               href: graphics-driver-migration-to-windows-10.md
-            - name: Drivers Bluetooth
+            - name: drivers de Bluetooth
               href: bluetooth-drivers.md
             - name: Chamadas remotas para o Protocolo RPC SAM são restritas somente a administradores locais
               href: remote-calls-to-the-sam-rpc-protocol-are-restricted-to-only-local-administrators.md
@@ -41,21 +41,21 @@
           items:
             - name: Alterações de versão do sistema operacional no Windows 8.1
               href: operating-system-version-changes-in-windows-8-1.md
-            - name: Componentes do Windows instalados sob demanda
+            - name: Windows componentes instalados sob demanda
               href: windows-components-installed-on-demand.md
             - name: Comportamento de fallback de fontes HTML
               href: html-font-fallback-behavior.md
-            - name: 'Windows 8.1 permite apenas URIs HTTPS, não URIs http'
+            - name: 'Windows 8.1 permite apenas uris https, não URIs http'
               href: windows-8-1-allows-only-https-uris--not-http-uris.md
             - name: Entrada MouseWheel para Windows 8.1
               href: mousewheel-input-for-windows-8-1.md
-            - name: Dispositivos Touchpad do Windows Precision
+            - name: dispositivos touchpad de Windows precision
               href: windows-precision-touchpad-devices.md
             - name: Alto DPI para aplicativos da área de trabalho no Windows 8.1
               href: high-dpi-for-desktop-apps-in-windows-8-1.md
             - name: A interface do usuário do Edge é suprimida nos cenários "in-out" e "inércia"
               href: edge-ui-is-suppressed-in--in-out-in--and--inertia--scenarios.md
-            - name: Não há suporte para a chamada de ImmSetConversionStatus () ou ImmGetConversionStatus () de aplicativos da Windows Store
+            - name: não há suporte para a chamada de ImmSetConversionStatus () ou ImmGetConversionStatus () de aplicativos da loja da Windows
               href: calling-immsetconversionstatus---or-immgetconversionstatus---from-windows-store-apps-is-not-supported.md
             - name: O modelo de modo IME mudou de por usuário para por thread
               href: ime-mode-model-changed-from-per-user-to-per-thread.md
@@ -66,7 +66,7 @@
         - name: Novos recursos e aprimoramentos
           href: new-features-and-enhancement-in-windows-8-1-and-windows-server-2012-r2.md
           items:
-            - name: Inicialização do arquivo de imagem do Windows (WimBoot)
+            - name: Windows Inicialização do arquivo de imagem (WimBoot)
               href: windows-image-file-boot--wimboot-.md
             - name: Proxy de aplicativo Web
               href: web-application-proxy.md
@@ -95,7 +95,7 @@
               href: determining-shim-status.md
             - name: Os aplicativos do servidor devem ser capazes de executar sem o shell gráfico do servidor
               href: server-apps-must-be-able-to-run-without-the-server-graphical-shell.md
-            - name: Os componentes do servidor do serviço de dados remoto são removidos do Windows 8
+            - name: Os componentes do servidor do serviço de dados remoto são removidos no Windows 8
               href: remote-data-service-server-components-are-removed-in-windows-8.md
             - name: Tipo de arquivo e modelo de associações de URI
               href: file-type-and-protocol-associations-model.md
@@ -103,7 +103,7 @@
               href: desktop-activity-moderator.md
             - name: '.NET Framework 4,5 é o padrão e .NET Framework 3,5 é opcional'
               href: '-net-framework-4-5-is-default-and--net-framework-3-5-is-optional.md'
-            - name: Os aplicativos da área de trabalho podem não estar visíveis depois de iniciar o navegador da Web padrão ou aplicativos da Windows Store
+            - name: os aplicativos da área de trabalho podem não estar visíveis depois de iniciar o navegador da web padrão ou aplicativos da Windows store
               href: desktop-apps-may-not-be-visible-after-launching-the-default-web-browser.md
             - name: Modo de alto contraste
               href: high-contrast-mode.md
@@ -119,9 +119,9 @@
               href: advanced-format--4k--disk-compatibility-update.md
             - name: Provisionamento dinâmico de LUNs
               href: thin-provisioning-of-luns.md
-            - name: O armazenamento aprimorado agora é opcional para o WINPE e o SKU do servidor
+            - name: o Armazenamento aprimorado agora é opcional para o WINPE e o SKU do servidor
               href: enhanced-storage-is-now-optional-for-winpe-and-server-sku.md
-            - name: O VDS está em transição para a API de gerenciamento de armazenamento do Windows
+            - name: o VDS está em transição para Windows API de gerenciamento de Armazenamento
               href: vds-is-transitioning-to-wmiv2-based-windows-storage-management-api.md
             - name: Interface do usuário de versões anteriores removida para volumes locais
               href: volume-shadow-copy-service-ui-removed.md
@@ -133,11 +133,11 @@
               href: offloaded-data-transfers.md
             - name: Gerenciador de Janelas da Área de Trabalho é Always On
               href: desktop-window-manager-is-always-on.md
-            - name: Direct2D não dá suporte à renderização para metaarquivos avançados no Internet Explorer 9
+            - name: Direct2D Não dá suporte à renderização para metaarquivos avançados no Internet Explorer 9
               href: direct2d-does-not-support-rendering-to-rich-metafiles-in-internet-explorer-9.md
             - name: Alterações no suporte de hardware herdado DX9
               href: changes-in-dx9-legacy-hardware-support.md
-            - name: A MSAA não está disponível para aplicativos da Windows Store
+            - name: o MSAA não está disponível para Windows aplicativos da loja
               href: msaa-is-not-available-to-appcontainer-apps.md
             - name: 'A porta 3 foi preterida para drivers NDIS 6,30'
               href: port-3-is-deprecated-for-ndis-6-30-drivers.md
@@ -156,7 +156,7 @@
               href: automatic-maintenance.md
             - name: Editores de método de entrada de terceiros
               href: third-party-input-method-editors.md
-            - name: Nova API permite que os aplicativos enviem &quot; dicas de corte e desmapeamento &quot; para mídia de armazenamento
+            - name: nova API permite que os aplicativos enviem &quot; dicas de corte e desmapeamento &quot; para Armazenamento mídia
               href: new-api-allows-apps-to-send--trim-and-unmap--hints-to-storage-media.md
             - name: Multipath I/O agora dá suporte ao SRBs estendido
               href: multipath-i-o-now-supports-extended-srbs.md
@@ -173,7 +173,7 @@
         - name: 'Ferramentas, práticas recomendadas e diretrizes'
           href: tools--best-practices--and-guidance.md
           items:
-            - name: Kit de ferramentas de avaliação do Windows
+            - name: Windows Toolkit de avaliação
               href: windows-assessment-toolkit.md
-            - name: Kit de certificação de hardware do Windows
+            - name: Windows Kit de certificação de hardware
               href: windows-hardware-certification-kit.md

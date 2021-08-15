@@ -1,19 +1,19 @@
 ---
-description: Define uma cor de material básica que pode ser aplicada a uma malha completa ou a faces individuais de uma malha. A potência é o expoente especular do material.
+description: Define uma cor de material básica que pode ser aplicada a uma malha completa ou a rostos individuais de uma malha. A potência é o expoente especular do material.
 ms.assetid: vs|directx_sdk|~\material.htm
 title: Material
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 54c13d201152350a8a61950bb609f73cbdb2a3aa
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 53d4dcb1cef7597ff7c02d16f1db311287511166c9259c89a0ea60a0c49fb7bf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104456370"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118798963"
 ---
 # <a name="material"></a>Material
 
-Define uma cor de material básica que pode ser aplicada a uma malha completa ou a faces individuais de uma malha. A potência é o expoente especular do material.
+Define uma cor de material básica que pode ser aplicada a uma malha completa ou a rostos individuais de uma malha. A potência é o expoente especular do material.
 
 ``` syntax
 template Material
@@ -29,17 +29,17 @@ template Material
 
 Em que:
 
--   faceColor-face de cor. Um modelo ColorRGBA. Consulte [**ColorRGBA**](colorrgba.md).
--   expoente de cor do especular de material de energia.
--   specularColor-cor especular de material. Um modelo ColorRGB. Consulte [**colorRGB**](colorrgb.md).
--   emissiveColor-material emissiva Color. Um modelo ColorRGB. Consulte [**colorRGB**](colorrgb.md).
+-   faceColor – cor da face. Um modelo ColorRGBA. Consulte [**ColorRGBA**](colorrgba.md).
+-   power – expoente de cor especular de material.
+-   specularColor – cor especular do material. Um modelo ColorRGB. Consulte [**ColorRGB**](colorrgb.md).
+-   emissiveColor – cor emissiva do material. Um modelo ColorRGB. Consulte [**ColorRGB**](colorrgb.md).
 
 > [!Note]  
 > A cor do ambiente requer um componente alfa.
 
  
 
-[**TextureFilename**](texturefilename.md) é um objeto de dados opcional. Se esse objeto não estiver presente, a face não será texturizada.
+[**TextureFilename é**](texturefilename.md) um objeto de dados opcional. Se esse objeto não estiver presente, o rosto será sem texto.
 
 ## <a name="see-also"></a>Confira também
 

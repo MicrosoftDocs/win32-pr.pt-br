@@ -4,12 +4,12 @@ ms.assetid: a7d774c1-93c0-47d8-a8a7-e66e394726a3
 title: D3DPRESENT (D3d9.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 15b8bf496c8c8e10d50b23ad4f784634fb983d2d
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 3f3fd05609e86682b4524e68e985f03abac59f1dbd4537d1ffd683990ca371fd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105810776"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118527586"
 ---
 # <a name="d3dpresent"></a>D3DPRESENT
 
@@ -41,7 +41,7 @@ Descreve a relação entre a taxa de atualização do adaptador e a taxa na qual
 </tr>
 <tr class="even">
 <td style="text-align: left;"><span id="D3DPRESENT_FORCEIMMEDIATE"></span><span id="d3dpresent_forceimmediate"></span><dl> <dt><strong>D3DPRESENT_FORCEIMMEDIATE</strong></dt> </dl></td>
-<td style="text-align: left;">D3DPRESENT_INTERVAL_IMMEDIATE é imposta nesta chamada <a href="/windows/desktop/api"><strong>atual</strong></a> . Esse sinalizador só pode ser especificado ao usar D3DSWAPEFFECT_FLIPEX. Os comportamentos de apresentação em janela e em tela inteira são os mesmos. Isso é especialmente útil para aplicativos de mídia que desejam descartar os quadros que foram detectados como atrasados e apresentar quadros subsequentes no momento da composição. Um erro de parâmetro inválido será retornado se esse sinalizador for especificado incorretamente. Quando vários quadros consecutivos com D3DPRESENT_FORCEIMMEDIATEs são enfileirados, somente o último quadro é exibido, para apresentação em janela e em tela inteira.<br/> Esse sinalizador está disponível no Direct3D 9Ex no Windows 7 ou em sistemas operacionais posteriores.<br/> Ao usar D3DSWAPEFFECT_FLIPEX, cada quadro apresentado usando D3DPRESENT_INTERVAL_IMMEDIATE ou D3DPRESENT_INTERVAL_FORCEIMMEDIATE substituirá o intervalo atual do quadro anterior. Por exemplo, se você enfileirar os quadros a seguir usando os seguintes efeitos de permuta: quadro A (D3DPRESENT_INTERVAL_ONE), quadro B (D3DPRESENT_INTERVAL_ONE), quadro C (D3DPRESENT_INTERVAL_ONE), quadro D (D3DPRESENT_INTERVAL_FORCEIMMEDIATE), o quadro D substituirá o intervalo atual do quadro C. Os quadros exibidos por intervalo atual são o quadro A, quadro B, (quadro C substituído por) quadro D.<br/> Consulte Observações.<br/></td>
+<td style="text-align: left;">D3DPRESENT_INTERVAL_IMMEDIATE é imposta nesta chamada <a href="/windows/desktop/api"><strong>atual</strong></a> . Esse sinalizador só pode ser especificado ao usar D3DSWAPEFFECT_FLIPEX. Os comportamentos de apresentação em janela e em tela inteira são os mesmos. Isso é especialmente útil para aplicativos de mídia que desejam descartar os quadros que foram detectados como atrasados e apresentar quadros subsequentes no momento da composição. Um erro de parâmetro inválido será retornado se esse sinalizador for especificado incorretamente. Quando vários quadros consecutivos com D3DPRESENT_FORCEIMMEDIATEs são enfileirados, somente o último quadro é exibido, para apresentação em janela e em tela inteira.<br/> esse sinalizador está disponível no Direct3D 9ex em sistemas operacionais Windows 7 ou posteriores.<br/> Ao usar D3DSWAPEFFECT_FLIPEX, cada quadro apresentado usando D3DPRESENT_INTERVAL_IMMEDIATE ou D3DPRESENT_INTERVAL_FORCEIMMEDIATE substituirá o intervalo atual do quadro anterior. Por exemplo, se você enfileirar os quadros a seguir usando os seguintes efeitos de permuta: quadro A (D3DPRESENT_INTERVAL_ONE), quadro B (D3DPRESENT_INTERVAL_ONE), quadro C (D3DPRESENT_INTERVAL_ONE), quadro D (D3DPRESENT_INTERVAL_FORCEIMMEDIATE), o quadro D substituirá o intervalo atual do quadro C. Os quadros exibidos por intervalo atual são o quadro A, quadro B, (quadro C substituído por) quadro D.<br/> Consulte Observações.<br/></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><span id="D3DPRESENT_INTERVAL_DEFAULT"></span><span id="d3dpresent_interval_default"></span><dl> <dt><strong>D3DPRESENT_INTERVAL_DEFAULT</strong></dt> </dl></td>
@@ -81,7 +81,7 @@ Consulte <a href="gamma.md">cadeias de permuta em janelas</a>.<br/></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><span id="D3DPRESENT_VIDEO_RESTRICT_TO_MONITOR"></span><span id="d3dpresent_video_restrict_to_monitor"></span><dl> <dt><strong>D3DPRESENT_VIDEO_RESTRICT_TO_MONITOR</strong></dt> </dl></td>
-<td style="text-align: left;">Corta o conteúdo renderizado para o monitor/dispositivo no qual o adaptador está direcionando, mostra miniaturas para o conteúdo na exibição de Flip3D e miniaturas de barra de tarefas em outros monitores. <br/> Esse sinalizador está disponível somente no Direct3D 9Ex.<br/> Consulte <a href="/windows/desktop/dwm/dwm-overview">Gerenciador de janelas da área de trabalho</a> para obter mais detalhes sobre esse recurso do Windows Vista. Se você não estiver executando no modo de composição de área de trabalho, o sinalizador dará o mesmo comportamento que <a href="d3dpresentflag.md">D3DPRESENTFLAG_DEVICECLIP</a>.<br/>
+<td style="text-align: left;">Corta o conteúdo renderizado para o monitor/dispositivo no qual o adaptador está direcionando, mostra miniaturas para o conteúdo na exibição de Flip3D e miniaturas de barra de tarefas em outros monitores. <br/> Esse sinalizador está disponível somente no Direct3D 9Ex.<br/> consulte <a href="/windows/desktop/dwm/dwm-overview">Gerenciador de Janelas da Área de Trabalho</a> para obter mais detalhes sobre esse recurso do Windows Vista. Se você não estiver executando no modo de composição de área de trabalho, o sinalizador dará o mesmo comportamento que <a href="d3dpresentflag.md">D3DPRESENTFLAG_DEVICECLIP</a>.<br/>
 <blockquote>
 [!Note]<br />
 Esse sinalizador só deve ser usado com o efeito de permuta D3DSWAPEFFECT_FLIPEX. O uso desse sinalizador com <em>outros</em> efeitos de permuta está sendo preterido e pode não funcionar em versões futuras do Windows.
@@ -119,4 +119,4 @@ O modo de tela inteira dá suporte ao uso semelhante ao modo de janela ao dar su
 
 <dl> <dt>
 
-[Constantes do Direct3D](dx9-graphics-reference-d3d-constants.md)
+[Constantes Direct3D](dx9-graphics-reference-d3d-constants.md)

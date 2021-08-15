@@ -1,21 +1,21 @@
 ---
-title: RPC_EP_INQ_HANDLE (Rpcasync. h)
-description: O \_ tipo de dados do identificador de INQ do EP RPC \_ \_ declara um identificador para um contexto de consulta. Os aplicativos RPC o usam para exibir informações de endereço do servidor armazenadas no mapa do ponto de extremidade.
+title: RPC_EP_INQ_HANDLE (Rpcasync.h)
+description: O tipo de \_ dados RPC EP \_ INQ \_ HANDLE declara um identificador para um contexto de consulta. Os aplicativos RPC o usam para exibir informações de endereço do servidor armazenadas no mapa do ponto de extremidade.
 ms.assetid: e18ce800-0110-4450-9a1b-a3f777d00f2d
 keywords:
 - RPC_EP_INQ_HANDLE
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3c34c64b5601b31485808924fc57dbe3412b6009
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a401f06077c2f636f679a7733dc7ed99abbdbb5e6b9959998b1f8234b0e4adfe
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104369854"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118926489"
 ---
-# <a name="rpc_ep_inq_handle"></a>\_identificador de \_ INQ do EP RPC \_
+# <a name="rpc_ep_inq_handle"></a>RPC \_ EP \_ INQ \_ HANDLE
 
-O tipo de dados do **\_ identificador de \_ INQ \_ do EP RPC** declara um identificador para um contexto de consulta. Os aplicativos RPC o usam para exibir informações de endereço do servidor armazenadas no mapa do ponto de extremidade.
+O **tipo de dados \_ RPC EP \_ INQ \_ HANDLE** declara um identificador para um contexto de consulta. Os aplicativos RPC o usam para exibir informações de endereço do servidor armazenadas no mapa do ponto de extremidade.
 
 
 ```C++
@@ -32,7 +32,7 @@ typedef I_RPC_HANDLE* RPC_EP_INQ_HANDLE;
 |-------------------------------------|-------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                                            |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                  |
-| Cabeçalho<br/>                   | <dl> <dt>Rpcasync. h (incluir RPC. h)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Rpcasync.h (inclua Rpc.h)</dt> </dl> |
 
 
 

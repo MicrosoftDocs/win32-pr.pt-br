@@ -1,6 +1,6 @@
 ---
 description: Enviado para verificar a existência de um comando de menu.
-title: Mensagem de DFM_VALIDATECMD (shlobj. h)
+title: DFM_VALIDATECMD mensagem (Shlobj.h)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.assetid: 97ff3cdf-ed0c-4813-8d5a-b5141636d32c
@@ -13,14 +13,14 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 5aa171f19d4d08c3ba3088676a4ae5364f0826f0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3fd647d5cd6e171cc71e0968abb29d80e7aef5900d43fe4bd4b88f5f49bbdc7a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104090023"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118721942"
 ---
-# <a name="dfm_validatecmd-message"></a>\_Mensagem DFM VALIDATECMD
+# <a name="dfm_validatecmd-message"></a>Mensagem \_ VALIDATECMD do DFM
 
 Enviado para verificar a existência de um comando de menu.
 
@@ -42,20 +42,20 @@ DFM_INVOKECOMMAND
 <dl> <dt>
 
 *idCmd* 
-</dt> <dd>O deslocamento do identificador de comando do menu.</dd> <dt>
+</dt> <dd>O deslocamento do identificador do comando de menu.</dd> <dt>
 
 *lParam* 
 </dt> <dd>Não usado. Deve ser zero.</dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retornará S \_ OK se o comando existir, \_ caso contrário, s false.
+Retornará S \_ OK se o comando existir ou S FALSE caso \_ contrário.
 
 ## <a name="remarks"></a>Comentários
 
-Essa mensagem é enviada para a função de retorno de chamada ou para o objeto de retorno de chamada, dependendo de como o objeto de menu de contexto padrão é construído. Há duas APIs para sua construção, [**CDefFolderMenu \_ Create2**](/windows/desktop/api/shlobj_core/nf-shlobj_core-cdeffoldermenu_create2), [**SHCreateDefaultContextMenu**](/windows/desktop/api/shlobj_core/nf-shlobj_core-shcreatedefaultcontextmenu).
+Essa mensagem é enviada para a função de retorno de chamada ou o objeto de retorno de chamada, dependendo de como o objeto de menu de contexto padrão é construído. Há duas APIs para sua construção, [**CDefFolderMenu \_ Create2**](/windows/desktop/api/shlobj_core/nf-shlobj_core-cdeffoldermenu_create2), [**SHCreateDefaultContextMenu**](/windows/desktop/api/shlobj_core/nf-shlobj_core-shcreatedefaultcontextmenu).
 
-[**DFM \_ INVOKECOMMANDEX**](dfm-invokecommandex.md) é uma versão estendida dessa mensagem e fornece mais informações para o retorno de chamada. Use **DFM \_ INVOKECOMMANDEX** se as informações adicionais fornecidas por essa interface forem necessárias em sua implementação.
+[**DFM \_ INVOKECOMMANDEX é**](dfm-invokecommandex.md) uma versão estendida dessa mensagem e fornece mais informações para o retorno de chamada. Use **DFM \_ INVOKECOMMANDEX** se as informações adicionais fornecidas por essa interface são necessárias em sua implementação.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -63,9 +63,9 @@ Essa mensagem é enviada para a função de retorno de chamada ou para o objeto 
 
 | Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                      |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                |
-| parâmetro<br/>                   | <dl> <dt>Shlobj. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                      |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                |
+| parâmetro<br/>                   | <dl> <dt>Shlobj.h</dt> </dl> |
 
 
 

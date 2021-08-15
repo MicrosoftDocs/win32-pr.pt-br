@@ -222,20 +222,20 @@
               href: /windows/win32/api/WinNT/ns-winnt-wow64_floating_save_area
             - name: WOW64_LDT_ENTRY
               href: /windows/win32/api/WinNT/ns-winnt-wow64_ldt_entry
-- name: Depurar biblioteca de ajuda
+- name: Biblioteca de Ajuda de Depuração
   href: debug-help-library.md
   items:
-    - name: Sobre o DbgHelp
+    - name: Sobre DbgHelp
       href: about-dbghelp.md
       items:
         - name: Versões do DbgHelp
           href: dbghelp-versions.md
         - name: Arquivos de Símbolo
           href: symbol-files.md
-        - name: Manipulação de símbolos
+        - name: Tratamento de símbolos
           href: symbol-handling.md
           items:
-            - name: Inicialização do manipulador de símbolo
+            - name: Inicialização do manipulador de símbolos
               href: symbol-handler-initialization.md
             - name: Caminhos de símbolo
               href: symbol-paths.md
@@ -243,9 +243,9 @@
               href: symbol-loading.md
             - name: Carregamento de símbolo adiado
               href: deferred-symbol-loading.md
-            - name: Nomes de símbolos decorados
+            - name: Nomes de símbolo decorados
               href: decorated-symbol-names.md
-            - name: Localizando símbolos
+            - name: Localizar símbolos
               href: finding-symbols.md
             - name: 'Símbolos públicos, globais e locais'
               href: public--global--and-local-symbols.md
@@ -258,13 +258,13 @@
               href: using-symsrv.md
             - name: Usando SymStore
               href: using-symstore.md
-            - name: Usando outros armazenamentos de símbolo
+            - name: Usando outros armazenamentos de símbolos
               href: using-other-symbol-stores.md
-            - name: Opções de Command-Line de SymStore
+            - name: Opções de Command-Line SymStore
               href: symstore-command-line-options.md
-            - name: Servidores de símbolos e firewalls da Internet
+            - name: Firewalls do Servidor de Símbolos e da Internet
               href: symbol-servers-and-internet-firewalls.md
-        - name: Arquivos de minidespejo
+        - name: Arquivos de minidump
           href: minidump-files.md
         - name: Servidor de Origem
           href: source-server-and-source-indexing.md
@@ -275,7 +275,7 @@
       items:
         - name: Chamando a biblioteca DbgHelp
           href: calling-the-dbghelp-library.md
-        - name: Inicializando o manipulador de símbolo
+        - name: Inicializando o manipulador de símbolos
           href: initializing-the-symbol-handler.md
         - name: Carregando um módulo de símbolo
           href: loading-a-symbol-module.md
@@ -289,11 +289,11 @@
           href: retrieving-symbol-information-by-name.md
         - name: Recuperando informações de símbolo por endereço
           href: retrieving-symbol-information-by-address.md
-        - name: Recuperando nomes de símbolo não decorados
+        - name: Recuperando nomes de símbolos não rateados
           href: retrieving-undecorated-symbol-names.md
         - name: Descarregando um módulo de símbolo
           href: unloading-a-symbol-module.md
-        - name: Encerrando o manipulador de símbolo
+        - name: Encerrando o manipulador de símbolos
           href: terminating-the-symbol-handler.md
     - name: Referência de DbgHelp
       href: dbghelp-reference.md
@@ -831,32 +831,32 @@
               href: debugger-exception-handling.md
             - name: Exceções de ponto flutuante
               href: floating-point-exceptions.md
-        - name: Manipulação de exceção baseada em quadros
+        - name: Tratamento de exceção baseado em quadro
           href: frame-based-exception-handling.md
-        - name: Manipulação de exceção em vetor
+        - name: Tratamento de exceção vetorada
           href: vectored-exception-handling.md
-        - name: Tratamento de encerramento
+        - name: Tratamento de terminação
           href: termination-handling.md
         - name: Sintaxe do manipulador
           href: handler-syntax.md
           items:
-            - name: Sintaxe de Exception-Handler
+            - name: Sintaxe Exception-Handler dados
               href: exception-handler-syntax.md
-            - name: Sintaxe de Termination-Handler
+            - name: Sintaxe Termination-Handler dados
               href: termination-handler-syntax.md
-    - name: Usando manipulação de exceção estruturada
+    - name: Usando o tratamento de exceção estruturado
       href: using-structured-exception-handling.md
       items:
         - name: Usando um manipulador de exceção
           href: using-an-exception-handler.md
         - name: Usando um manipulador de encerramento
           href: using-a-termination-handler.md
-        - name: Usando um manipulador de exceção em vetor
+        - name: Usando um manipulador de exceção vetorado
           href: using-a-vectored-exception-handler.md
-    - name: Referência de manipulação de exceção estruturada
+    - name: Referência de tratamento de exceção estruturada
       href: structured-exception-handling-reference.md
       items:
-        - name: Funções de manipulação de exceção estruturada
+        - name: Funções de tratamento de exceção estruturadas
           href: structured-exception-handling-functions.md
           items:
             - name: AbnormalTermination
@@ -865,11 +865,11 @@
               href: /windows/desktop/api/errhandlingapi/nf-errhandlingapi-addvectoredcontinuehandler
             - name: AddVectoredExceptionHandler
               href: /windows/desktop/api/errhandlingapi/nf-errhandlingapi-addvectoredexceptionhandler
-            - name: GetExceptionCode
+            - name: Getexceptioncode
               href: getexceptioncode.md
-            - name: GetExceptionInformation
+            - name: Getexceptioninformation
               href: getexceptioninformation.md
-            - name: RaiseException
+            - name: Raiseexception
               href: /windows/desktop/api/errhandlingapi/nf-errhandlingapi-raiseexception
             - name: RaiseFailFastException
               href: /previous-versions/dd408166(v=vs.85)
@@ -895,28 +895,28 @@
               href: /windows/desktop/api/WinNT/nf-winnt-rtlrestorecontext
             - name: SetUnhandledExceptionFilter
               href: /windows/desktop/api/errhandlingapi/nf-errhandlingapi-setunhandledexceptionfilter
-            - name: UnhandledExceptionFilter
+            - name: Unhandledexceptionfilter
               href: /windows/desktop/api/errhandlingapi/nf-errhandlingapi-unhandledexceptionfilter
             - name: VectoredHandler
               href: /windows/desktop/api/WinNT/nc-winnt-pvectored_exception_handler
-        - name: Estruturas de manipulação de exceção estruturada
+        - name: Estruturas estruturas de tratamento de exceção estruturadas
           href: structured-exception-handling-structures.md
           items:
-            - name: EXCEPTION_POINTERS
+            - name: Exception_pointers
               href: /windows/desktop/api/WinNT/ns-winnt-exception_pointers
-            - name: EXCEPTION_RECORD
+            - name: Exception_record
               href: /windows/desktop/api/WinNT/ns-winnt-exception_record
-- name: Passagem de cadeia de espera
+- name: Travessia da cadeia de espera
   href: wait-chain-traversal.md
   items:
-    - name: Usando a WCT
+    - name: Usando o WCT
       href: using-wct.md
-    - name: Referência WCT
+    - name: Referência do WCT
       href: wct-reference.md
       items:
         - name: CloseThreadWaitChainSession
           href: /windows/desktop/api/Wct/nf-wct-closethreadwaitchainsession
-        - name: GetThreadWaitChain
+        - name: Getthreadwaitchain
           href: /windows/desktop/api/Wct/nf-wct-getthreadwaitchain
         - name: OpenThreadWaitChainSession
           href: /windows/desktop/api/Wct/nf-wct-openthreadwaitchainsession
@@ -929,7 +929,7 @@
 - name: Intel AVX
   href: avx-support-portal.md
   items:
-    - name: Trabalhando com o contexto XState
+    - name: Trabalhando com contexto XState
       href: working-with-xstate-context.md
     - name: Funções AVX
       href: avx-functions.md
