@@ -3,9 +3,9 @@ title: Método Network. getProxySettings
 description: O método getProxySettings recupera a configuração de proxy para um determinado protocolo.
 ms.assetid: a7b21eab-93e1-458b-aab0-60fd298cce44
 keywords:
-- método getProxySettings Windows Media Player
+- Windows Media Player do método getProxySettings
 - método getProxySettings Windows Media Player, classe de rede
-- Classe de rede Windows Media Player, método getProxySettings
+- classe de rede Windows Media Player, método getProxySettings
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 44a306fca1e671e7e5b3a89c0da952e5c81ba20e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e142e7366c9e2b03e55dbd3768ee9c4fb41f30266d221a2ac5ac80019d5a7b3e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105751373"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119647436"
 ---
 # <a name="networkgetproxysettings-method"></a>Método Network. getProxySettings
 
@@ -49,7 +49,7 @@ retVal = Network.getProxySettings(
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método retorna um **número** (**Long**) contendo um dos valores a seguir.
 
@@ -74,7 +74,7 @@ Esse método falha a menos que o aplicativo de chamada esteja em execução no c
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo de JScript a seguir usa a *rede*. **getProxySettings** para exibir uma mensagem, que fornece informações sobre as configurações de proxy atuais do Player, na janela do navegador. O objeto de **jogador** foi criado com ID = "Player".
+o exemplo a seguir JScript usa a *rede*. **getProxySettings** para exibir uma mensagem, que fornece informações sobre as configurações de proxy atuais do Player, na janela do navegador. O objeto de **jogador** foi criado com ID = "Player".
 
 
 ```JScript

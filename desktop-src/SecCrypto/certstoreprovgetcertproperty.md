@@ -12,12 +12,12 @@ api_name:
 api_type:
 - UserDefined
 api_location: ''
-ms.openlocfilehash: 50de9a73438e2755e002570f921d15e6086a4b7a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c7d338c94c4e9655c125b0f70e3f2e8dfa732316a970c74c26e4a7fbced22671
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105811289"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117769921"
 ---
 # <a name="certstoreprovgetcertproperty-callback-function"></a>Função de retorno de chamada CertStoreProvGetCertProperty
 
@@ -43,51 +43,51 @@ BOOL WINAPI CertStoreProvGetCertProperty(
 
 <dl> <dt>
 
-*hStoreProv* \[ no\]
+*hStoreProv* \[ Em\]
 </dt> <dd>
 
-Identificador de **HCERTSTOREPROV** para um [*repositório de certificados*](../secgloss/c-gly.md).
+**Alça HCERTSTOREPROV** para um repositório [*de certificados*](../secgloss/c-gly.md).
 
 </dd> <dt>
 
-*pCertContext* \[ no\]
+*pCertContext* \[ Em\]
 </dt> <dd>
 
-Um ponteiro para uma estrutura de [**\_ contexto de certificado**](/windows/desktop/api/Wincrypt/ns-wincrypt-cert_context) .
+Um ponteiro para uma [**estrutura CONTEXT \_ CERT.**](/windows/desktop/api/Wincrypt/ns-wincrypt-cert_context)
 
 </dd> <dt>
 
-*dwPropId* \[ no\]
+*dwPropId* \[ Em\]
 </dt> <dd>
 
 Indica um identificador de propriedade.
 
 </dd> <dt>
 
-*dwFlags* \[ no\]
+*dwFlags* \[ Em\]
 </dt> <dd>
 
 Quaisquer valores de sinalizador necessários.
 
 </dd> <dt>
 
-*pvData* \[ fora\]
+*pvData* \[ out\]
 </dt> <dd>
 
-Um ponteiro para um buffer que contém o ponteiro para uma estrutura de [**\_ contexto de certificado**](/windows/desktop/api/Wincrypt/ns-wincrypt-cert_context) a ser retornada pela função. Pode ser definido como **NULL** em uma primeira chamada para a função para obter o valor de *pcbData* antes de alocar memória para o buffer.
+Um ponteiro para um buffer para conter o ponteiro para uma [**estrutura CERT \_ CONTEXT**](/windows/desktop/api/Wincrypt/ns-wincrypt-cert_context) a ser retornada pela função. Pode ser definido como **NULL** em uma primeira chamada para a função para obter o valor *de pcbData* antes de alocar memória para o buffer.
 
 </dd> <dt>
 
-*pcbData* \[ entrada, saída\]
+*pcbData* \[ in, out\]
 </dt> <dd>
 
-Um ponteiro para um **DWORD** que indica o comprimento do buffer *pvData* .
+Um ponteiro para um **DWORD** que indica o comprimento do buffer *pvData.*
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retornará **true** se a função for bem-sucedida ou **false** se falhar.
+Retornará **TRUE** se a função for bem-sucedida **ou FALSE** se falhar.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -95,8 +95,8 @@ Retornará **true** se a função for bem-sucedida ou **false** se falhar.
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>          |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho XP\]<br/>          |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/> |
 
 
 
@@ -104,7 +104,7 @@ Retornará **true** se a função for bem-sucedida ou **false** se falhar.
 
 <dl> <dt>
 
-[**contexto do certificado \_**](/windows/desktop/api/Wincrypt/ns-wincrypt-cert_context)
+[**CONTEXTO DO \_ CERTIFICADO**](/windows/desktop/api/Wincrypt/ns-wincrypt-cert_context)
 </dt> </dl>
 
  

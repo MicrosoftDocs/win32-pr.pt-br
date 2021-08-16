@@ -1,11 +1,11 @@
 ---
-title: atributo DHCP-flags
-description: O atributo DHCP-flags não está sendo usado no momento.
+title: Atributo dhcp-Flags
+description: O atributo dhcp-Flags não é usado no momento.
 ms.assetid: 61eed518-1a31-49a6-a66f-a9d6019ce6e1
 ms.tgt_platform: multiple
 keywords:
-- atributo DHCP-flags do esquema do AD
-- Esquema de AD do atributo dhcpFlags
+- Esquema do AD do atributo dhcp-Flags
+- Esquema do AD do atributo dhcpFlags
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4773d9ed133d45de45bd1004e2a3a8377c508643
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 03c1513113b6ac9260618de81228a89cd8c32463eb1e4d2d472a527fceeb0b5f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103919338"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119805146"
 ---
-# <a name="dhcp-flags-attribute"></a>atributo DHCP-flags
+# <a name="dhcp-flags-attribute"></a>Atributo dhcp-Flags
 
-O atributo **DHCP-flags** não está sendo usado no momento.
+O **atributo dhcp-Flags** não é usado no momento.
 
 
 
 | Entrada | Valor |
 |-------------------|--------------------------------------|
-| CN                | Sinalizadores de DHCP                           |
-| LDAP-Display-Name | dhcpFlags                            |
+| CN                | dhcp-Flags                           |
+| Ldap-Display-Name | dhcpFlags                            |
 | Tamanho              | \-                                   |
 | Privilégio de atualização  | \-                                   |
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.700               |
-| System-ID-GUID    | 963d2741-48be-11d1-a9c3-0000f80367c1 |
+| System-Id-Guid    | 963d2741-48be-11d1-a9c3-0000f80367c1 |
 | Syntax            | [**Intervalo**](s-interval.md)       |
 
 
@@ -58,10 +58,10 @@ O atributo **DHCP-flags** não está sendo usado no momento.
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | True                                         |
+| Tem valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
-| No catálogo global      | Falso                                        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
+| No Catálogo Global      | Falso                                        |
+| Descritor de segurança NT | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
@@ -79,10 +79,10 @@ O atributo **DHCP-flags** não está sendo usado no momento.
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | True                                         |
+| Tem valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
-| No catálogo global      | Falso                                        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
+| No Catálogo Global      | Falso                                        |
+| Descritor de segurança NT | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
@@ -100,10 +100,10 @@ O atributo **DHCP-flags** não está sendo usado no momento.
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | True                                         |
+| Tem valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
-| No catálogo global      | Falso                                        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
+| No Catálogo Global      | Falso                                        |
+| Descritor de segurança NT | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
@@ -121,7 +121,7 @@ O atributo **DHCP-flags** não está sendo usado no momento.
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | True                                         |
+| É de valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
 | No catálogo global      | Falso                                        |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
@@ -142,7 +142,7 @@ O atributo **DHCP-flags** não está sendo usado no momento.
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | True                                         |
+| É de valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
 | No catálogo global      | Falso                                        |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
@@ -163,7 +163,7 @@ O atributo **DHCP-flags** não está sendo usado no momento.
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | True                                         |
+| É de valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
 | No catálogo global      | Falso                                        |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |

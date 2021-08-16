@@ -1,7 +1,7 @@
 ---
-description: O exemplo a seguir cria e instala um mecanismo de cadeia de certificados não padrão. O mecanismo é usado para criar cadeias de certificados para cada um dos certificados em um armazenamento de certificados.
+description: O exemplo a seguir cria e instala um mecanismo de cadeia de certificados não padrão. O mecanismo é usado para criar cadeias de certificados para cada um dos certificados em um repositório de certificados.
 ms.assetid: 960f2bb9-130f-494f-9af0-0ab8ae3eb6e2
-title: 'Exemplo de programa C: criando uma cadeia de certificados'
+title: 'Programa de exemplo C: criando uma cadeia de certificados'
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 59bbc8e447a23a950280cb4cb9b9f20e7a7d4d09bb2384de19ca510c403dedd0
@@ -11,20 +11,20 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117765560"
 ---
-# <a name="example-c-program-creating-a-certificate-chain"></a>Exemplo de programa C: criando uma cadeia de certificados
+# <a name="example-c-program-creating-a-certificate-chain"></a>Programa de exemplo C: criando uma cadeia de certificados
 
-O exemplo a seguir cria e instala um mecanismo de cadeia de certificados não padrão. O mecanismo é usado para criar cadeias de certificados para cada um dos certificados em um [*armazenamento de certificados*](../secgloss/c-gly.md).
+O exemplo a seguir cria e instala um mecanismo de cadeia de certificados não padrão. O mecanismo é usado para criar cadeias de certificados para cada um dos certificados em um [*repositório de certificados*](../secgloss/c-gly.md).
 
-Este exemplo ilustra as seguintes tarefas e [*funções CryptoAPI:*](../secgloss/c-gly.md)
+Este exemplo ilustra as seguintes tarefas e funções de [*CryptoAPI*](../secgloss/c-gly.md) :
 
--   Preparando-se para criar um mecanismo de cadeia de certificados não padrão declarando e inicializando uma estrutura de dados [**DE \_ \_ \_ CONFIGURAÇÃO**](/windows/desktop/api/Wincrypt/ns-wincrypt-cert_chain_engine_config) DO MECANISMO DE CADEIA DE CERTIFICADOs.
--   Criando o mecanismo de pesquisa [**usando CertCreateCertificateChainEngine**](/windows/desktop/api/Wincrypt/nf-wincrypt-certcreatecertificatechainengine).
--   Usando [**CertOpenSystemStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certopensystemstorea) para abrir o repositório Meu sistema.
--   Recuperar todos os certificados do repositório aberto usando [**CertEnumCertificatesInStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certenumcertificatesinstore) em um loop.
--   Para cada certificado no armazenamento aberto, recuperando o nome da assunto do certificado usando [**CertGetNameString**](/windows/desktop/api/Wincrypt/nf-wincrypt-certgetnamestringa).
--   Criando uma cadeia de certificados para cada certificado [**usando CertGetCertificateChain**](/windows/desktop/api/Wincrypt/nf-wincrypt-certgetcertificatechain).
--   Criando uma duplicata da cadeia de certificados [**usando CertDuplicateCertificateChain**](/windows/desktop/api/Wincrypt/nf-wincrypt-certduplicatecertificatechain).
--   Usando [**CertFreeCertificateChain**](/windows/desktop/api/Wincrypt/nf-wincrypt-certfreecertificatechain) para liberar cada cadeia antes que a próxima cadeia seja criada.
+-   Preparando para criar um mecanismo de cadeia de certificados não padrão declarando e inicializando uma estrutura de dados de [**configuração do mecanismo de cadeia de certificados \_ \_ \_**](/windows/desktop/api/Wincrypt/ns-wincrypt-cert_chain_engine_config) .
+-   Criando o mecanismo de pesquisa usando [**CertCreateCertificateChainEngine**](/windows/desktop/api/Wincrypt/nf-wincrypt-certcreatecertificatechainengine).
+-   Usando o [**CertOpenSystemStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certopensystemstorea) para abrir o meu repositório do sistema.
+-   Recuperando todos os certificados do armazenamento aberto usando o [**CertEnumCertificatesInStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certenumcertificatesinstore) em um loop.
+-   Para cada certificado no armazenamento aberto, recuperando o nome da entidade do certificado usando [**CertGetNameString**](/windows/desktop/api/Wincrypt/nf-wincrypt-certgetnamestringa).
+-   Criar uma cadeia de certificados para cada certificado usando [**CertGetCertificateChain**](/windows/desktop/api/Wincrypt/nf-wincrypt-certgetcertificatechain).
+-   Criar uma duplicata da cadeia de certificados usando [**CertDuplicateCertificateChain**](/windows/desktop/api/Wincrypt/nf-wincrypt-certduplicatecertificatechain).
+-   Usando [**CertFreeCertificateChain**](/windows/desktop/api/Wincrypt/nf-wincrypt-certfreecertificatechain) para liberar cada cadeia antes da criação da próxima cadeia.
 
 
 ```C++

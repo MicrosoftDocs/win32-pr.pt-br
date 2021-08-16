@@ -1,11 +1,11 @@
 ---
-title: Atributo de telefone-IP-outro
-description: A lista de endereços TCP/IP alternativos para o telefone. Usado por telefonia.
+title: Telefone atributo Telefone-Ip-Other
+description: A lista de endereços TCP/IP alternativos para o telefone. Usado pela Telefonia.
 ms.assetid: 3689c561-6dc1-4d73-adec-01c4ebdb5e47
 ms.tgt_platform: multiple
 keywords:
-- Telefone-IP-outro esquema do AD de atributos
-- Esquema de AD do atributo otherIpPhone
+- Telefone-Ip-Other atributo AD Schema
+- Esquema do AD do atributo otherIpPhone
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7955b4fb80d46c19e5536517b53eb419e6de9ec6
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: c0457389ccdec37549ab4ccd1f36019b30a39f796e483b2950174b65d0b3a927
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105755726"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119924026"
 ---
-# <a name="phone-ip-other-attribute"></a>Atributo de telefone-IP-outro
+# <a name="phone-ip-other-attribute"></a>Telefone atributo Telefone-Ip-Other
 
-A lista de endereços TCP/IP alternativos para o telefone. Usado por telefonia.
+A lista de endereços TCP/IP alternativos para o telefone. Usado pela Telefonia.
 
 
 
 | Entrada | Valor |
 |-------------------|----------------------------------------------------------------------------------|
-| CN                | Telefone-IP-outro                                                                   |
-| LDAP-Display-Name | otherIpPhone                                                                     |
+| CN                | Telefone-Ip-Other                                                                   |
+| Ldap-Display-Name | otherIpPhone                                                                     |
 | Tamanho              | \-                                                                               |
 | Privilégio de atualização  | Administrador de domínio ou proprietário da conta.                                           |
 | Frequência de atualização  | Quando o registro do usuário é criado e sempre que o número de telefone precisa ser alterado. |
 | Attribute-Id      | 1.2.840.113556.1.4.722                                                           |
-| System-ID-GUID    | 4d146e4b-48d4-11d1-a9c3-0000f80367c1                                             |
-| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md)                                      |
+| System-Id-Guid    | 4d146e4b-48d4-11d1-a9c3-0000f80367c1                                             |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md)                                      |
 
 
 
@@ -58,10 +58,10 @@ A lista de endereços TCP/IP alternativos para o telefone. Usado por telefonia.
 | ID do link                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
 | System-Only            | Falso                                                              |
-| É de valor único       | Falso                                                              |
+| Tem valor único       | Falso                                                              |
 | É indexado             | Falso                                                              |
-| No catálogo global      | True                                                               |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                       |
+| No Catálogo Global      | Verdadeiro                                                               |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000000                                                         |
@@ -79,10 +79,10 @@ A lista de endereços TCP/IP alternativos para o telefone. Usado por telefonia.
 | ID do link                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
 | System-Only            | Falso                                                              |
-| É de valor único       | Falso                                                              |
+| Tem valor único       | Falso                                                              |
 | É indexado             | Falso                                                              |
-| No catálogo global      | True                                                               |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                       |
+| No Catálogo Global      | Verdadeiro                                                               |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000000                                                         |
@@ -100,10 +100,10 @@ A lista de endereços TCP/IP alternativos para o telefone. Usado por telefonia.
 | ID do link                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
 | System-Only            | Falso                                                              |
-| É de valor único       | Falso                                                              |
+| Tem valor único       | Falso                                                              |
 | É indexado             | Falso                                                              |
-| No catálogo global      | True                                                               |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                       |
+| No Catálogo Global      | Verdadeiro                                                               |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000000                                                         |
@@ -123,7 +123,7 @@ A lista de endereços TCP/IP alternativos para o telefone. Usado por telefonia.
 | System-Only            | Falso                                                              |
 | É de valor único       | Falso                                                              |
 | É indexado             | Falso                                                              |
-| No catálogo global      | True                                                               |
+| No catálogo global      | Verdadeiro                                                               |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
@@ -144,7 +144,7 @@ A lista de endereços TCP/IP alternativos para o telefone. Usado por telefonia.
 | System-Only            | Falso                                                              |
 | É de valor único       | Falso                                                              |
 | É indexado             | Falso                                                              |
-| No catálogo global      | True                                                               |
+| No catálogo global      | Verdadeiro                                                               |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
@@ -165,7 +165,7 @@ A lista de endereços TCP/IP alternativos para o telefone. Usado por telefonia.
 | System-Only            | Falso                                                              |
 | É de valor único       | Falso                                                              |
 | É indexado             | Falso                                                              |
-| No catálogo global      | True                                                               |
+| No catálogo global      | Verdadeiro                                                               |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |

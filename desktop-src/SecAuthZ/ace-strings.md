@@ -87,68 +87,68 @@ Uma cadeia de caracteres que indica o valor do membro **AceFlags** da estrutura 
 
 </dd> <dt>
 
-<span id="rights"></span><span id="RIGHTS"></span>**Direitos**
+<span id="rights"></span><span id="RIGHTS"></span>**privilégios**
 </dt> <dd>
 
-Uma cadeia de caracteres que indica os [direitos de acesso](access-rights-and-access-masks.md) controlados pela ACE. Essa cadeia de caracteres pode ser uma representação de cadeia de caracteres hexadecimal dos direitos de acesso, como "0x7800003F", ou pode ser uma concatenação das cadeias de caracteres a seguir.
+Uma cadeia de caracteres que indica os [direitos de acesso](access-rights-and-access-masks.md) controlados pela Ace. Essa cadeia de caracteres pode ser uma representação de cadeia de caracteres hexadecimal dos direitos de acesso, como "0x7800003F", ou pode ser uma concatenação das cadeias de caracteres a seguir.
 
 
 
 ### <a name="generic-access-rights"></a>Direitos de acesso genéricos
 
-| Cadeia de caracteres de direitos de acesso | Constante em Sddl.h | Valor correto de acesso |
+| Cadeia de direitos de acesso | Constante em SDDL. h | Valor direito de acesso |
 |----------------------|--------------------|--------------------|
-| "GA"                 | SDDL \_ GENERIC \_ ALL | GENERIC \_ ALL       |
-| "GR"                 | LEITURA GENÉRICA DO SDDL \_ \_ | LEITURA \_ GENÉRICA     |
-| "GW"                 | GRAVAÇÃO GENÉRICA SDDL \_ \_ | GRAVAÇÃO \_ GENÉRICA |
-| "GX"                 | SDDL \_ GENERIC \_ EXECUTE | EXECUÇÃO \_ GENÉRICA |
+| 3º                 | \_ \_ todos os genéricos SDDL | \_tudo genérico       |
+| GR                 | \_leitura genérica de SDDL \_ | \_leitura genérica     |
+| GW                 | \_gravação genérica \_ SDDL | \_gravação genérica |
+| GX                 | \_execução genérica de SDDL \_ | \_execução genérica |
 
 
 ### <a name="standard-access-rights"></a>Direitos de acesso padrão
 
-| Cadeia de caracteres de direitos de acesso | Constante em Sddl.h | Valor correto de acesso |
+| Cadeia de direitos de acesso | Constante em SDDL. h | Valor direito de acesso |
 |----------------------|--------------------|--------------------|
-| "RC"                 | CONTROLE DE LEITURA SDDL \_ \_ | CONTROLE \_ DE LEITURA      |
-| "SD"                 | SDDL \_ STANDARD \_ DELETE | DELETE          |
-| "WD"                 | DAC de \_ GRAVAÇÃO \_ SDDL | ESCREVER \_ DAC            |
-| "WO"                 | PROPRIETÁRIO DE GRAVAÇÃO SDDL \_ \_ | PROPRIETÁRIO \_ DA GRAVAÇÃO        |
+| RC                 | \_controle de leitura de SDDL \_ | controle de leitura \_      |
+| SD                 | \_exclusão padrão de SDDL \_ | DELETE          |
+| WD                 | \_DAC de gravação de SDDL \_ | GRAVAR \_ DAC            |
+| OIS                 | \_proprietário da gravação SDDL \_ | proprietário da gravação \_        |
 
-### <a name="directory-service-object-access-rights"></a>Direitos de acesso ao objeto de serviço de diretório
+### <a name="directory-service-object-access-rights"></a>Direitos de acesso a objeto de serviço de diretório
 
-| Cadeia de caracteres de direitos de acesso | Constante em Sddl.h | Valor correto de acesso |
+| Cadeia de direitos de acesso | Constante em SDDL. h | Valor direito de acesso |
 |----------------------|--------------------|--------------------|
-| "RP"                 | PROPRIEDADE DE LEITURA \_ \_ SDDL | ADS \_ RIGHT \_ DS \_ READ \_ PROP |
-| "WP"                 | PROPRIEDADE WRITE \_ \_ SDDL | ADS \_ RIGHT \_ DS \_ WRITE \_ PROP |
-| "CC"                 | SDDL \_ CREATE \_ CHILD | ADS \_ RIGHT \_ DS \_ CREATE \_ CHILD |
-| "DC"                 | SDDL \_ DELETE \_ CHILD | ADS \_ RIGHT \_ DS \_ DELETE \_ CHILD |
-| "LC"                 | SDDL \_ LIST \_ CHILDREN | ADS \_ RIGHT \_ ACTRL \_ DS \_ LIST |
-| "SW"                 | SDDL \_ SELF \_ WRITE    | ADS \_ RIGHT \_ DS \_ SELF |
-| "LO"                  | OBJETO SDDL \_ \_ LIST | OBJETO \_ ADS RIGHT \_ DS \_ LIST \_ |
-| "DT"                 | ÁRVORE DE EXCLUSÃO DE SDDL \_ \_ | ÁRVORE \_ DE EXCLUSÃO DO ADS RIGHT \_ DS \_ \_ |
-| "CR"                  | ACESSO AO CONTROLE SDDL \_ \_ | ADS \_ RIGHT \_ DS \_ CONTROL \_ ACCESS |
+| RP                 | \_propriedade de leitura de SDDL \_ | ADS \_ direito \_ de \_ leitura de DS \_ de AD |
+| PROCESSADOR                 | \_propriedade de gravação SDDL \_ | publicidade \_ de \_ gravação DS do \_ ad \_ |
+| CC                 | \_criar \_ filho de SDDL | \_direito de \_ criação de DS do AD do ADS \_ \_ |
+| ORIGEM                 | \_excluir \_ filho de SDDL | \_direito de \_ exclusão de DS do AD do ADS \_ \_ |
+| LCs                 | \_lista de \_ filhos de SDDL | lista de anúncios \_ à direita \_ ACTRL \_ DS \_ |
+| CM                 | \_auto- \_ gravação de SDDL    | ANÚNCIOS \_ do lado direito do \_ ad \_ |
+| LO                  | \_objeto da lista SDDL \_ | \_objeto de \_ lista de DS direito do ADS \_ \_ |
+| DT                 | \_árvore de exclusão de SDDL \_ | \_árvore de \_ exclusão de DS do lado do ADS \_ \_ |
+| CD                  | \_acesso de controle SDDL \_ | \_acesso ao \_ controle de DS direito do ADS \_ \_ |
 
-### <a name="file-access-rights"></a>Direitos de acesso ao arquivo
+### <a name="file-access-rights"></a>Direitos de acesso a arquivos
 
-| Cadeia de caracteres de direitos de acesso | Constante em Sddl.h | Valor correto de acesso |
+| Cadeia de direitos de acesso | Constante em SDDL. h | Valor direito de acesso |
 |----------------------|--------------------|--------------------|
-| "FA"                 | ARQUIVO SDDL \_ \_ ALL    | ARQUIVO \_ TODO \_ O ACESSO   |
-| "FR"                 | LEITURA DE ARQUIVO SDDL \_ \_   | LEITURA \_ GENÉRICA DO \_ ARQUIVO |
-| "FW"                 | GRAVAÇÃO DE ARQUIVO SDDL \_ \_  | GRAVAÇÃO \_ GENÉRICA DE \_ ARQUIVO |
-| "FX"                 | ARQUIVO SDDL \_ \_ EXECUTE | FILE \_ GENERIC \_ EXECUTE |
+| ATIVO                 | \_arquivo SDDL \_ All    | ARQUIVAr \_ todo o \_ acesso   |
+| FR                 | \_leitura de arquivo SDDL \_   | \_leitura genérica do arquivo \_ |
+| FW                 | \_gravação de arquivo SDDL \_  | \_gravação genérica de arquivo \_ |
+| EFEITO                 | \_execução de arquivo SDDL \_ | \_execução genérica do arquivo \_ |
 
 
-### <a name="registry-key-access-rights"></a>Direitos de acesso de chave do Registro
+### <a name="registry-key-access-rights"></a>Direitos de acesso à chave do registro
 
-| Cadeia de caracteres de direitos de acesso | Constante em Sddl.h | Valor correto de acesso |
+| Cadeia de direitos de acesso | Constante em SDDL. h | Valor direito de acesso |
 |----------------------|--------------------|--------------------|
-| "KA"                 | CHAVE SDDL \_ \_ ALL     | KEY \_ ALL \_ ACCESS   |
-| "KR"                 | LEITURA DA CHAVE SDDL \_ \_    | LEITURA \_ DE CHAVE          |
-| "KW"                 | GRAVAÇÃO DE CHAVE SDDL \_ \_   | GRAVAÇÃO \_ DE CHAVE         |
-| "KX"                 | SDDL \_ KEY \_ EXECUTE | KEY \_ EXECUTE       |
+| Ka                 | \_chave SDDL \_ All     | CHAVE de \_ todo o \_ acesso   |
+| Coreia                 | \_leitura de chave SDDL \_    | leitura de chave \_          |
+| KW                 | \_gravação de chave SDDL \_   | gravação de chave \_         |
+| "KX"                 | \_execução da chave SDDL \_ | \_executar chave       |
 
 ### <a name="mandatory-label-rights"></a>Direitos de rótulo obrigatórios
 
-| Cadeia de caracteres de direitos de acesso | Constante em SDDL. h | Valor direito de acesso |
+| Cadeia de direitos de acesso | Constante em SDDL. h | Valor direito de acesso |
 |----------------------|--------------------|--------------------|
 | NR                 | SDDL \_ não \_ lido \_ | \_rótulo obrigatório \_ do \_ sistema \_ não \_ ler **Windows server 2008, Windows Vista e Windows server 2003:** não disponível. |
 | NW                 | SDDL \_ sem \_ gravação \_ | \_rótulo obrigatório \_ do \_ sistema \_ sem \_ gravação **Windows server 2008, Windows Vista e Windows server 2003:** não disponível. |

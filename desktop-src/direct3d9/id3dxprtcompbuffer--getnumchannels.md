@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 9212528bec454a8d349c6249f851c3b021dceb00
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: ef36ef0d48dc3e6d94abe15c4b37e1843130a6d6da1b1e6e6c543c551c850422
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108093164"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118801474"
 ---
 # <a name="id3dxprtcompbuffergetnumchannels-method"></a>Método ID3DXPRTCompBuffer:: GetNumChannels
 
@@ -57,7 +57,7 @@ Retorna o número de canais de cores usados na memória para armazenar amostras.
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

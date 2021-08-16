@@ -4,12 +4,12 @@ ms.assetid: 04a61ecc-d168-4f93-b143-3e6ba8aaf322
 title: Política de metadados de foto System. DateAcquired
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f126ccb4424d1489f671f61f719a505559a78c8d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4c95b8f68d99476db0832a321de1f61c6f3c4dc6be6f10d679735bd51fc92ce7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104171522"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119087877"
 ---
 # <a name="systemdateacquired-photo-metadata-policy"></a>Política de metadados de foto System. DateAcquired
 
@@ -25,7 +25,7 @@ JPEG, TIFF
 
 ### <a name="read-only"></a>Somente leitura
 
-No
+Não
 
 ### <a name="output-propvariant-type"></a>Tipo de PROPVARIANT de saída
 
@@ -47,7 +47,7 @@ Se o arquivo estiver no formato JPEG, o manipulador pesquisará os dados na segu
 
 | Ordem | Caminho                             | Formato de disco                        | Obrigatório |
 |-------|----------------------------------|------------------------------------|----------|
-| 1     | /xmp/MicrosoftPhoto:DateAcquired | Cadeia de caracteres Unicode no formato de data XMP. | Yes      |
+| 1     | /xmp/MicrosoftPhoto:DateAcquired | Cadeia de caracteres Unicode no formato de data XMP. | Sim      |
 
 
 
@@ -61,7 +61,7 @@ Se o arquivo estiver no formato TIFF, o manipulador pesquisará os dados na segu
 
 | Ordem | Caminho                                 | Formato de disco                        | Obrigatório |
 |-------|--------------------------------------|------------------------------------|----------|
-| 1     | /ifd/xmp/MicrosoftPhoto:DateAcquired | Cadeia de caracteres Unicode no formato de data XMP. | Yes      |
+| 1     | /ifd/xmp/MicrosoftPhoto:DateAcquired | Cadeia de caracteres Unicode no formato de data XMP. | Sim      |
 
 
 

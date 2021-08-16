@@ -4,23 +4,23 @@ description: Protocolo WMPDVD
 ms.assetid: 01f38c9a-3ce5-4cd4-91a7-248f542eed03
 keywords:
 - Windows Media Player, protocolos
-- Modelo de objeto do Windows Media Player, protocolos
+- modelo de objeto Windows Media Player, protocolos
 - modelo de objeto, protocolos
-- Controle ActiveX do Windows Media Player, protocolos para o modelo de objeto
-- Controle ActiveX, protocolos para modelo de objeto
-- Controle ActiveX móvel do Windows Media Player, protocolos para modelo de objeto
-- Windows Media Player Mobile, protocolos para modelo de objeto
-- protocolos, modelo de objeto do Windows Media Player
+- Windows Media Player ActiveX controle, protocolos para o modelo de objeto
+- ActiveX controle, protocolos para o modelo de objeto
+- Windows Media Player controle de ActiveX móvel, protocolos para o modelo de objeto
+- Windows Media Player Móvel, protocolos para modelo de objeto
+- protocolos, Windows Media Player modelo de objeto
 - protocolos, WMPDVD
 - Protocolo WMPDVD
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bc4d3949c18a268ea6a2fffc196081ba466b5758
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 8ca67f3cdee6f040aeb266e02493425ca76715ade2e3269f4377ba340af89cc9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104292105"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119761286"
 ---
 # <a name="wmpdvd-protocol"></a>Protocolo WMPDVD
 
@@ -77,7 +77,7 @@ player.url = "wmpdvd://Z/2/4?contentdir="d:\sample1\video_ts";
 
 
 
-A atribuição de uma cadeia de caracteres WMPDVD à propriedade **URL** requer o Windows Media Player 9 Series ou posterior.
+a atribuição de uma cadeia de caracteres WMPDVD à propriedade **url** requer Windows Media Player 9 Series ou posterior.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -86,9 +86,9 @@ A atribuição de uma cadeia de caracteres WMPDVD à propriedade **URL** requer 
 [**Tipos de arquivos e protocolos com suporte**](supported-protocols-and-file-types.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

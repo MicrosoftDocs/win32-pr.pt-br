@@ -4,12 +4,12 @@ description: Saiba mais sobre enumerações de API EAPHost comuns, como \_ \_ ti
 ms.assetid: 2bf991f2-44b8-4815-b6c7-582f51087c83
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ecbce4df8b02ce3d241eb046768b57122aa40d6a
-ms.sourcegitcommit: b0ebdefc3dcd5c04bede94091833aa1015a2f95c
+ms.openlocfilehash: e5d42f8bd255fdc6b7c72e65b3f4334a047c0c70faa84511a7de569fad2f3669
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "105765107"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119725551"
 ---
 # <a name="common-eaphost-api-enumerations"></a>Enumerações comuns da API EAPHost
 
@@ -27,11 +27,11 @@ As seguintes enumerações são comuns a todas as tecnologias de API do EAPHost.
 
 
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

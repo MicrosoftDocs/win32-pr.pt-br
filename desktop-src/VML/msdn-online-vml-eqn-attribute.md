@@ -1,22 +1,22 @@
 ---
-title: Atributo eqn de VML
-description: Atributo eqn de VML
+title: Atributo VML Eqn
+description: Atributo VML Eqn
 ms.assetid: b2c41bad-2f83-4280-9441-33206d8dc1b7
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f8da00084a825147c6f8a05f503e5ee2679f40e8
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: ae5872c29064f24a10b4a12c0d0e2a4ca4a200f79e295d60713fe56355f23aa3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104294486"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119655446"
 ---
-# <a name="vml-eqn-attribute"></a>Atributo eqn de VML
+# <a name="vml-eqn-attribute"></a>Atributo VML Eqn
 
-Este tópico descreve a VML, um recurso que foi preterido a partir do Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem de VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
+Este tópico descreve o VML, um recurso que foi preterido a partir Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem do VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
 
 > [!Note]  
-> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [conteúdo arquivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obter informações, recomendações e orientações sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
+> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [Conteúdo arquivado.](/previous-versions/windows/internet-explorer/ie-developer/) Para obter informações, recomendações e diretrizes sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center.](https://msdn.microsoft.com/ie/)
 
  
 
@@ -28,13 +28,13 @@ Define a equação usada por uma fórmula. Leitura/gravação. **Cadeia de carac
 
 **Sintaxe de marca**
 
-<v: *Element* eqn = " *expressão* " >
+<v: *elemento* eqn=" *expressão* ">
 
 **Sintaxe do script**
 
-*Element* . eqn = "*expressão*"
+*element* .eqn="*expression*"
 
-*expressão* = de *elemento*. eqn
+*expressão* = *elemento*.eqn
 
 **Comentários**
 
@@ -45,7 +45,7 @@ As equações são definidas pela avaliação de uma expressão de texto que tem
 -   números fixos (por exemplo, 2)
 -   valores predefinidos
 
-A tabela a seguir define as fórmulas que podem ser usadas com os argumentos opcionais de acordo com os nomes *v*, *P1* e *P2*. O padrão de fórmula é:
+A tabela a seguir define as fórmulas que podem ser usadas com os argumentos opcionais, considerando os nomes *v*, *p1* e *p2*. O padrão de fórmula é:
 
 <f eqn=" *operation* \[*v* \] \[*p1* \] \[*p2* \]"/>
 
@@ -54,18 +54,18 @@ A tabela a seguir define as fórmulas que podem ser usadas com os argumentos opc
 | Operação | Params | Exato  | Result                    | Descrição                                                                    |
 |-----------|--------|--------|---------------------------|--------------------------------------------------------------------------------|
 | Val       | 1      | sim    | v                         | Define um valor de guia de algum outro valor.                                   |
-| Sum       | 3      | sim    | v + P1-P2               | Usado para adição e subtração.                                             |
-| product   | 3      | Arredonda | v \* P1/P2              | Usado para multiplicação e divisão.                                          |
-| mid       | 2      | &    | (v + P1)/2               | Média.                                                                       |
-| abs       | 1      | sim    | ABS (v)                    | Valor absoluto.                                                                |
-| min       | 2      | sim    | mín. (v, P1)                 | O menor valor de v e P1.                                                  |
-| max       | 2      | sim    | Max (v, P1)                 | O maior valor de v e P1.                                                 |
-| if        | 3      | sim    | v > 0? P1: P2        | Teste condicional.                                                           |
-| mod       | 3      | não     | sqrt (v ^ 2 + P1 ^ 2 + P2 ^ 2)   | Valor do módulo.                                                                 |
-| atan2     | 2      | não     | atan2 (P1, v)               | Valor do polar em graus \* 2 ^ 16 (unidades FD).                                     |
-| sin       | 2      | não     | v \* sin (P1)              | Sin, argumento em graus \* 2 ^ 16 ( [unidades](msdn-online-vml-units.md) FD).     |
-| cos       | 2      | não     | v \* cos (P1)              | Cos, argumento em graus \* 2 ^ 16 ( [unidades](msdn-online-vml-units.md) FD).     |
-| cosatan2  | 3      | não     | v \* cos (ATAN2 (P2, P1))    | Preserva a precisão total no cálculo intermediário.                           |
+| Sum       | 3      | sim    | v + p1 – p2               | Usado para adição e subtração.                                             |
+| product   | 3      | Rodadas | v \* p1 /p2              | Usado para multiplicação e divisão.                                          |
+| mid       | 2      | (c)    | (v + p1)/ 2               | Média.                                                                       |
+| abs       | 1      | sim    | abs(v)                    | Valor absoluto.                                                                |
+| min       | 2      | sim    | min(v,p1)                 | O valor menor de v e p1.                                                  |
+| max       | 2      | sim    | max(v,p1)                 | O valor maior de v e p1.                                                 |
+| if        | 3      | sim    | v > 0 ? p1 : p2        | Teste condicional.                                                           |
+| mod       | 3      | não     | sqrt(v^2 + p1^2 + p2^2)   | Valor de módulo.                                                                 |
+| atan2     | 2      | não     | atan2(p1,v)               | Valor polar em graus \* 2^16 (unidades fd).                                     |
+| sin       | 2      | não     | v \* sin(p1)              | Sin, argumento em graus \* 2^16 (unidades fd ). [](msdn-online-vml-units.md)     |
+| cos       | 2      | não     | v \* cos(p1)              | Cos, argumento em graus \* 2^16 (unidades fd ). [](msdn-online-vml-units.md)     |
+| cosatan2  | 3      | não     | v \* cos(atan2(p2,p1))    | Preserva a precisão total no cálculo intermediário.                           |
 | sinatan2  | 3      | não     | v \* sin (ATAN2 (P2, P1))    | Preserva a precisão total no cálculo intermediário.                           |
 | sqrt      | 1      | não     | sqrt (v)                   | O resultado é positivo e arredonda para baixo.                                            |
 | sumangle  | 3      | sim    | v + P1 \* 2 ^ 16 + P2 \* 2 ^ 16 | v dimensionado por 2 ^ 16; P1 e P2 são graus.<br/>                            |

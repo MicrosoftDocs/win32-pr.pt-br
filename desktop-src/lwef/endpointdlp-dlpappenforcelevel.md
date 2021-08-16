@@ -1,6 +1,6 @@
 ---
-description: Especifica o nível de imposição de uma operação de DLP (prevenção de perda de dados) de ponto de extremidade.
-title: Enumeração DlpAppEnforceLevel (endpointdlp. h)
+description: Especifica o nível de imposição de uma operação DLP (Prevenção contra Perda de Dados) do ponto de extremidade.
+title: Enumeração DlpAppEnforceLevel (endpointdlp.h)
 ms.topic: reference
 ms.date: 03/18/2021
 topic_type:
@@ -12,18 +12,18 @@ api_type:
 - COM
 api_location:
 - endpointdlp.h
-ms.openlocfilehash: d0ccc8d0d39bc4022899deaeb9e8a81eae1f720f
-ms.sourcegitcommit: 91110c16e4713ed82d7fb80562d3ddf40b5d76b2
+ms.openlocfilehash: 99bd06a41c88ff0b5a02b9b329877c015aea7dfb3fdbc58fea3c2e305829faf1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "107495361"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119349346"
 ---
 # <a name="dlpappenforcelevel-enumeration"></a>Enumeração DlpAppEnforceLevel
 
-Especifica o nível de imposição de uma operação de DLP (prevenção de perda de dados) de ponto de extremidade.
+Especifica o nível de imposição de uma operação DLP (Prevenção contra Perda de Dados) do ponto de extremidade.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -41,34 +41,25 @@ typedef enum _DlpAppEnforceLevel {
 
 <dl> <dt>
 
-*DlpAppEnforceLevelNone* \[ no\]
+*DlpAppEnforceLevelNone* \[ Em\]
 </dt> <dd>
 
-Nenhuma imposição pelo aplicativo. O sistema DLP irá impor a operação.
+Nenhuma imposição pelo aplicativo. O sistema DLP imporá a operação.
 
 </dd> </dl>
 
 <dl> <dt>
 
-*DlpAppEnforceLevelNotify* \[ no\]
+*DlpAppEnforceLevelNotify* \[ Em\]
 </dt> <dd>
 
-O aplicativo TNE usará as APIs DLP para notificar o sistema DLP sobre a operação. O sistema DLP irá impor a operação.
+O aplicativo Tne usará as APIs DLP para notificar o sistema DLP sobre a operação. O sistema DLP imporá a operação.
 
 </dd> </dl>
 
 <dl> <dt>
 
-*DlpAppEnforceLevelPrevent* \[ no\]
-</dt> <dd>
-
-Sem suporte na versão atual.
-
-</dd> </dl>
-
-<dl> <dt>
-
-*DlpAppEnforceLevelFull* \[ no\]
+*DlpAppEnforceLevelPrevent* \[ Em\]
 </dt> <dd>
 
 Sem suporte na versão atual.
@@ -77,7 +68,16 @@ Sem suporte na versão atual.
 
 <dl> <dt>
 
-*DlpAppEnforceLevelCount* \[ no\]
+*DlpAppEnforceLevelFull* \[ Em\]
+</dt> <dd>
+
+Sem suporte na versão atual.
+
+</dd> </dl>
+
+<dl> <dt>
+
+*DlpAppEnforceLevelCount* \[ Em\]
 </dt> <dd>
 
 O valor máximo da enumeração.
@@ -88,7 +88,7 @@ O valor máximo da enumeração.
 
 ## <a name="remarks"></a>Comentários
 
-Os valores dessa enumeração são usados pela estrutura de [DLP_APP_OP_ENLIGHTENED_LEVEL](endpointdlp-dlp_app_op_enlightened_level.md) .
+Os valores dessa enumeração são usados pela [estrutura DLP_APP_OP_ENLIGHTENED_LEVEL](endpointdlp-dlp_app_op_enlightened_level.md) dados.
 
 
 ## <a name="requirements"></a>Requisitos
@@ -97,5 +97,5 @@ Os valores dessa enumeração são usados pela estrutura de [DLP_APP_OP_ENLIGHTE
 
 | Requisito          |    Valor                   |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 10, versão 1809 (10,0; Build 17763)           |
+| Cliente mínimo com suporte<br/> | Windows 10, versão 1809 (10.0; Build 17763)           |
 

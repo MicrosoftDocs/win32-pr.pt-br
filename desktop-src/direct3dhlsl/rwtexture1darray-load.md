@@ -1,5 +1,5 @@
 ---
-title: 'Métodos de carga RWTexture1DArray:: RWTexture1DArray'
+title: Métodos RWTexture1DArray::RWTexture1DArray Load
 description: Lê dados de textura de um RWTexture1DArray.
 ms.assetid: 8B7DA310-DE75-4B22-83F4-19EF3721A5E6
 keywords:
@@ -19,9 +19,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118791099"
 ---
-# <a name="rwtexture1darrayload-methods"></a>Métodos RWTexture1DArray:: Load
+# <a name="rwtexture1darrayload-methods"></a>RWTexture1DArray::Carregar métodos
 
-Lê dados de textura de um [**RWTexture1DArray**](sm5-object-rwtexture1darray.md).
+Lê dados de textura de [**um RWTexture1DArray.**](sm5-object-rwtexture1darray.md)
 
 ### <a name="overload-list"></a>Lista de sobrecargas
 
@@ -29,8 +29,8 @@ Lê dados de textura de um [**RWTexture1DArray**](sm5-object-rwtexture1darray.md
 
 | Método                                                      | Descrição                                                           |
 |:------------------------------------------------------------|:----------------------------------------------------------------------|
-| [**Carga (int, uint)**](rwtexture1darray-load-float-uint-.md) | Lê os dados de textura e retorna o status sobre a operação.<br/> |
-| [**Carga (int)**](rwtexture1darray-load-float-.md)           | Lê dados de textura.<br/>                                        |
+| [**Load(int,uint)**](rwtexture1darray-load-float-uint-.md) | Lê dados de textura e retorna o status sobre a operação.<br/> |
+| [**Load(int)**](rwtexture1darray-load-float-.md)           | Lê dados de textura.<br/>                                        |
 
 
 

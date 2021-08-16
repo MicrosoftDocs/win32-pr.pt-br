@@ -122,10 +122,10 @@ A lista de atributos obrigatórios para uma classe. Esses atributos devem ser es
 | ID do link                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Verdadeiro                                             |
-| Tem valor único       | Falso                                            |
+| É de valor único       | Falso                                            |
 | É indexado             | Falso                                            |
-| No Catálogo Global      | Falso                                            |
-| Descritor de segurança NT | O:BAG:BAD:S:                                     |
+| No catálogo global      | Falso                                            |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
@@ -143,10 +143,10 @@ A lista de atributos obrigatórios para uma classe. Esses atributos devem ser es
 | ID do link                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Verdadeiro                                             |
-| Tem valor único       | Falso                                            |
+| É de valor único       | Falso                                            |
 | É indexado             | Falso                                            |
-| No Catálogo Global      | Falso                                            |
-| Descritor de segurança NT | O:BAG:BAD:S:                                     |
+| No catálogo global      | Falso                                            |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
@@ -164,10 +164,10 @@ A lista de atributos obrigatórios para uma classe. Esses atributos devem ser es
 | ID do link                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Verdadeiro                                             |
-| Tem valor único       | Falso                                            |
+| É de valor único       | Falso                                            |
 | É indexado             | Falso                                            |
-| No Catálogo Global      | Falso                                            |
-| Descritor de segurança NT | O:BAG:BAD:S:                                     |
+| No catálogo global      | Falso                                            |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
@@ -185,10 +185,10 @@ A lista de atributos obrigatórios para uma classe. Esses atributos devem ser es
 | ID do link                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Verdadeiro                                             |
-| Tem valor único       | Falso                                            |
+| É de valor único       | Falso                                            |
 | É indexado             | Falso                                            |
-| No Catálogo Global      | Falso                                            |
-| Descritor de segurança NT | O:BAG:BAD:S:                                     |
+| No catálogo global      | Falso                                            |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |

@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre: método API. JetMakeKey'
-title: Método API. JetMakeKey
+description: 'Saiba mais sobre: Método Api.JetMakeKey'
+title: Método Api.JetMakeKey
 TOCTitle: 'JetMakeKey method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Api.JetMakeKey(Microsoft.Isam.Esent.Interop.JET_SESID,Microsoft.Isam.Esent.Interop.JET_TABLEID,System.Byte[],System.Int32,Microsoft.Isam.Esent.Interop.MakeKeyGrbit)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.api.jetmakekey(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 13db6e7106f5312e03ffa5acfbd86c72d38c6edb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 383671ef1d5ef57c48b7444e4e7d30391a54441ab47893b0e3339fdfcb65e5c8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103922590"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119117576"
 ---
-# <a name="apijetmakekey-method"></a>Método API. JetMakeKey
+# <a name="apijetmakekey-method"></a>Método Api.JetMakeKey
 
-Constrói chaves de pesquisa que podem ser usadas por [JetSeek (JET_SESID, JET_TABLEID, SeekGrbit)](./api.jetseek-method.md) e [JetSetIndexRange (JET_SESID, JET_TABLEID, SetIndexRangeGrbit)](./api.jetsetindexrange-method.md).
+Constrói chaves de pesquisa que podem ser usadas por [JetSeek(JET_SESID, JET_TABLEID, SeekGrbit)](./api.jetseek-method.md) e [JetSetIndexRange(JET_SESID, JET_TABLEID, SetIndexRangeGrbit)](./api.jetsetindexrange-method.md).
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -71,41 +71,41 @@ public static void JetMakeKey(
 #### <a name="parameters"></a>Parâmetros
 
   - sesid  
-    Tipo: [Microsoft.ISAM.ESENT.Interop.JET_SESID](./jet-sesid-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)  
     
     A sessão a ser usada.
 
 <!-- end list -->
 
-  - TableID  
-    Tipo: [Microsoft.ISAM.ESENT.Interop.JET_TABLEID](./jet-tableid-structure.md)  
+  - Tableid  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_TABLEID](./jet-tableid-structure.md)  
     
-    O cursor no qual criar a chave.
+    O cursor no que criar a chave.
 
 <!-- end list -->
 
   - data  
-    Escreva \[\]  
+    Tipo: \[\]  
     
-    Dados da coluna para a coluna de chave atual do índice atual.
+    Dados de coluna para a coluna de chave atual do índice atual.
 
 <!-- end list -->
 
   - dataSize  
-    Tipo: [System. Int32](/dotnet/api/system.int32)  
+    Tipo: [System.Int32](/dotnet/api/system.int32)  
     
     Tamanho dos dados.
 
 <!-- end list -->
 
   - grbit  
-    Tipo: [Microsoft. ISAM. ESENT. Interop. MakeKeyGrbit](./makekeygrbit-enumeration.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.MakeKeyGrbit](./makekeygrbit-enumeration.md)  
     
     Opções de chave.
 
 ## <a name="remarks"></a>Comentários
 
-As funções MakeKey fornecem a funcionalidade de chave Make específica de DataType.
+As funções MakeKey fornecem funcionalidade de chave de make específica do tipo de dados.
 
 ## <a name="see-also"></a>Confira também
 
@@ -115,4 +115,4 @@ As funções MakeKey fornecem a funcionalidade de chave Make específica de Data
 
 [Membros da API](./api-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

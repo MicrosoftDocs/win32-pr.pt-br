@@ -1,11 +1,11 @@
 ---
-title: ms-DS-tem-atributo-NCs-instanciado
-description: Informações de estado de replicação DS, análogas a (e um superconjunto de) os atributos existentes hasMasterNCs e hasPartialReplicaNCs. A ser usado pelo KCC ao configurar parceiros de replicação.
+title: Atributo ms-DS-Has-Instantiated-NCs
+description: Informações de estado de replicação de DS, análogas a (e um superconjunto de) os atributos existentes têmMasterNCs e hasPartialReplicaNCs. A ser usado pelo KCC ao configurar parceiros de replicação.
 ms.assetid: 00dda441-e382-4fb2-b735-ae547901c11f
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD do atributo ms-DS-tem-instancie-NCs
-- atributo msDS-HasInstantiatedNCs do AD Schema
+- Ms-DS-Has-Instantiated-NCs attribute AD Schema
+- Atributo AD Schema msDS-HasInstantiatedNCs
 topic_type:
 - apiref
 api_name:
@@ -21,29 +21,29 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119804046"
 ---
-# <a name="ms-ds-has-instantiated-ncs-attribute"></a>ms-DS-tem-atributo-NCs-instanciado
+# <a name="ms-ds-has-instantiated-ncs-attribute"></a>Atributo ms-DS-Has-Instantiated-NCs
 
-Informações de estado de replicação DS, análogas a (e um superconjunto de) os atributos existentes hasMasterNCs e hasPartialReplicaNCs. A ser usado pelo KCC ao configurar parceiros de replicação.
+Informações de estado de replicação de DS, análogas a (e um superconjunto de) os atributos existentes têmMasterNCs e hasPartialReplicaNCs. A ser usado pelo KCC ao configurar parceiros de replicação.
 
 
 
 | Entrada | Valor |
 |-------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| CN                | ms-DS-tem-NCs-instanciáveis                                                                                                                                                                                  |
-| LDAP-Display-Name | msDS-HasInstantiatedNCs                                                                                                                                                                                     |
+| CN                | ms-DS-Has-Instantiated-NCs                                                                                                                                                                                  |
+| Ldap-Display-Name | msDS-HasInstantiatedNCs                                                                                                                                                                                     |
 | Tamanho              | 4 bytes                                                                                                                                                                                                     |
 | Privilégio de atualização  | Esse valor é definido pelo sistema.                                                                                                                                                                            |
-| Frequência de atualização  | Aproximadamente duas vezes com a frequência de hasMasterNCs/hasPartialReplicaNCs. Esses atributos existentes são atualizados somente quando o DC adiciona ou remove uma partição (por exemplo, ao mudar de DC para GC ou vice-versa). |
+| Frequência de atualização  | Aproximadamente duas vezes mais frequentemente que hasMasterNCs/hasPartialReplicaNCs. Esses atributos existentes são atualizados somente quando o DC adiciona ou remove uma partição (por exemplo, ao alterar de DC para GC ou vice-versa). |
 | Attribute-Id      | 1.2.840.113556.1.4.1709                                                                                                                                                                                     |
-| System-ID-GUID    | 11e9a5bc-4517-4049-af9c-51554fb0fc09                                                                                                                                                                        |
-| Syntax            | [**Objeto (DN-binário)**](s-object-dn-binary.md)                                                                                                                                                             |
+| System-Id-Guid    | 11e9a5bc-4517-4049-af9c-51554fb0fc09                                                                                                                                                                        |
+| Syntax            | [**Object(DN-Binary)**](s-object-dn-binary.md)                                                                                                                                                             |
 
 
 
 ## <a name="implementations"></a>Implementações
 
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adam**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -58,10 +58,10 @@ Informações de estado de replicação DS, análogas a (e um superconjunto de) 
 | ID do link                | 2002                                     |
 | MAPI-Id                | \-                                       |
 | System-Only            | Verdadeiro                                     |
-| É de valor único       | Falso                                    |
+| Tem valor único       | Falso                                    |
 | É indexado             | Falso                                    |
-| No catálogo global      | Falso                                    |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                             |
+| No Catálogo Global      | Falso                                    |
+| Descritor de segurança NT | O:BAG:BAD:S:                             |
 | Range-Lower            | 4                                        |
 | Range-Upper            | 4                                        |
 | Search-Flags           | 0x00000000                               |
@@ -70,7 +70,7 @@ Informações de estado de replicação DS, análogas a (e um superconjunto de) 
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adam
 
 
 
@@ -79,10 +79,10 @@ Informações de estado de replicação DS, análogas a (e um superconjunto de) 
 | ID do link                | 2002                                     |
 | MAPI-Id                | \-                                       |
 | System-Only            | Verdadeiro                                     |
-| É de valor único       | Falso                                    |
+| Tem valor único       | Falso                                    |
 | É indexado             | Falso                                    |
-| No catálogo global      | Falso                                    |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                             |
+| No Catálogo Global      | Falso                                    |
+| Descritor de segurança NT | O:BAG:BAD:S:                             |
 | Range-Lower            | 4                                        |
 | Range-Upper            | 4                                        |
 | Search-Flags           | 0x00000000                               |
@@ -100,9 +100,9 @@ Informações de estado de replicação DS, análogas a (e um superconjunto de) 
 | ID do link                | 2002                                     |
 | MAPI-Id                | \-                                       |
 | System-Only            | Verdadeiro                                     |
-| É de valor único       | Falso                                    |
+| Tem valor único       | Falso                                    |
 | É indexado             | Falso                                    |
-| No catálogo global      | Falso                                    |
+| No Catálogo Global      | Falso                                    |
 | Descritor de segurança NT | O:BAG:BAD:S:                             |
 | Range-Lower            | 4                                        |
 | Range-Upper            | 4                                        |

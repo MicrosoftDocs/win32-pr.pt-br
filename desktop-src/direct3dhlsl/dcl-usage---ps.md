@@ -20,7 +20,7 @@ ms.locfileid: "118792925"
 
 Declare a associação entre a saída do sombreador de vértice e a entrada do sombreador de pixel.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 dcl \_ semantics \[ \_ centroid \] dst \[ .write \_ mask\]
 

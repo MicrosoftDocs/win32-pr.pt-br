@@ -4,12 +4,12 @@ ms.assetid: edbc8450-b5a2-476a-bbe8-b66676552607
 title: Operadores XMFLOAT4
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a8bd78f690be4f7089c22d530c64e97f07ce5dbb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 475ca133437e247b3d102c571b25cf96ed188538ed52d32922f08b9450ea8abb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104164968"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119118433"
 ---
 # <a name="xmfloat4-operators"></a>Operadores XMFLOAT4
 

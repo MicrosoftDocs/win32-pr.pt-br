@@ -4,12 +4,12 @@ description: Esta seção demonstra como usar a API do Microsoft Direct3D 11 par
 ms.assetid: 9BDEDB68-3484-4683-85AF-B583971382C8
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 45bc4dad63c5fc12f2077481172061fc317135a7
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 5613a2ea9a4b8c472c7483e9e29d5ce2d5d2ffccbd3b4ee7d8c65a1621e88c92
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103641370"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119633046"
 ---
 # <a name="how-to-use-direct3d-11"></a>Como usar o Direct3D 11
 
@@ -31,7 +31,7 @@ Esta seção demonstra como usar a API do Microsoft Direct3D 11 para realizar v�
 | [Como: criar um buffer de constantes](overviews-direct3d-11-resources-buffers-constant-how-to.md)<br/>                    | Este tópico mostra como inicializar um [buffer de constantes](overviews-direct3d-11-resources-buffers-intro.md) na preparação para renderização.<br/>                                                                                                                                         |
 | [Como: criar uma textura](overviews-direct3d-11-resources-textures-create.md)<br/>                                    | Este tópico mostra como criar uma textura.<br/>                                                                                                                                                                                                                                       |
 | [Como: inicializar uma textura programaticamente](overviews-direct3d-11-resources-textures-how-to-fill-manually.md)<br/> | Este tópico tem vários exemplos que mostram como inicializar texturas criadas com diferentes tipos de usos.<br/>                                                                                                                                                             |
-| [Como: inicializar uma textura a partir de um arquivo](overviews-direct3d-11-resources-textures-how-to.md)<br/>                    | Este tópico mostra como usar o Windows Imaging Component (WIC) para criar a textura e a exibição separadamente.<br/>                                                                                                                                                                      |
+| [Como: inicializar uma textura a partir de um arquivo](overviews-direct3d-11-resources-textures-how-to.md)<br/>                    | este tópico mostra como usar o componente de Windows Imaging (WIC) para criar a textura e a exibição separadamente.<br/>                                                                                                                                                                      |
 | [Como: usar recursos dinâmicos](how-to--use-dynamic-resources.md)<br/>                                                 | Você cria e usa recursos dinâmicos quando seu aplicativo precisa alterar os dados nesses recursos. Você pode criar texturas e buffers para uso dinâmico.<br/>                                                                                                                              |
 | [Como: criar um sombreador de computação](direct3d-11-advanced-stages-compute-create.md)<br/>                                  | Este tópico mostra como criar um sombreador de computação.<br/>                                                                                                                                                                                                                                |
 | [Como criar um sombreador envoltória](direct3d-11-advanced-stages-hull-shader-design.md)<br/>                                 | Este tópico mostra como criar um sombreador envoltória.<br/>                                                                                                                                                                                                                                  |

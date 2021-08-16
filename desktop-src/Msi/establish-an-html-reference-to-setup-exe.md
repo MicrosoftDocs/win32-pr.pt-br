@@ -13,7 +13,7 @@ ms.locfileid: "118378066"
 ---
 # <a name="establish-an-html-reference-to-setupexe"></a>Estabelecer uma referência HTML para Setup.exe
 
-A etapa final é colocar uma referência ao Setup.exe na página da Web do MySetup hipotética (MySetup.html) descrita em Exemplo de instalação do instalador baseado em [URL Windows .](a-url-based-windows-installer-installation-example.md) Use o seguinte script HTML:
+A etapa final é colocar uma referência ao Setup.exe na página da Web do MySetup hipotética (MySetup.html) descrita em Exemplo de instalação do instalador baseado em [URL Windows](a-url-based-windows-installer-installation-example.md). Use o seguinte script HTML:
 
 ``` syntax
 [MySetup Installation](https://www.blueyonderairlines.com/Products/MySetup/setup.exe)

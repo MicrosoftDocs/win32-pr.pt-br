@@ -1,5 +1,5 @@
 ---
-description: Testa a conectividade de rede de uma VM em um ambiente de virtualização de rede do Windows.
+description: testa a conectividade de rede de uma VM em um ambiente de virtualização de rede Windows.
 ms.assetid: 37d4c34d-406e-4c52-afce-b0eef754eeb3
 title: Método TestNetworkConnection da classe Msvm_VirtualSystemManagementService
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: e8f15faacb1b8ad683b1ea9abfa9b91f5c376dab
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 66988944b6c4f4a97a450f63964d57084fc5886716d109e655921d8744bba721
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104089996"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119388366"
 ---
 # <a name="testnetworkconnection-method-of-the-msvm_virtualsystemmanagementservice-class"></a>Método TestNetworkConnection da \_ classe VirtualSystemManagementService Msvm
 
-Testa a conectividade de rede de uma VM em um ambiente de virtualização de rede do Windows.
+testa a conectividade de rede de uma VM em um ambiente de virtualização de rede Windows.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -110,7 +110,7 @@ Se a operação for executada de forma assíncrona, esse método retornará 4096
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método retorna um dos valores a seguir.
 

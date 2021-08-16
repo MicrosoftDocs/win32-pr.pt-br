@@ -4,17 +4,17 @@ ms.assetid: e12db685-b58e-4dc1-8ddd-e6ee1da28d08
 title: Propriedade CCActive
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1b8c9f8f048ea1583b9191aaa94e40fab56b0922
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 2ef5d864285fa192c0ec68005c2a80d1a8b7753cc77ce3c7073cf742dc035d2c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104087361"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119074440"
 ---
 # <a name="ccactive-property"></a>Propriedade CCActive
 
 > [!Note]  
-> Esse componente está disponível para uso nos sistemas operacionais Microsoft Windows 2000, Windows XP e Windows Server 2003. Ele poderá ser alterado ou ficar indisponível em versões subsequentes.
+> esse componente está disponível para uso nos sistemas operacionais Microsoft Windows 2000, Windows XP e Windows Server 2003. Ele poderá ser alterado ou ficar indisponível em versões subsequentes.
 
  
 

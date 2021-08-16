@@ -1,11 +1,11 @@
 ---
-title: MS-TS-Reconnection-atributo action
-description: Ação de reconexão de sessão dos serviços de terminal especifica se a reconexão com uma sessão de serviços de terminal desconectada será permitida a partir de qualquer computador cliente.
+title: Atributo ms-TS-Reconnection-Action
+description: A Ação de Reconexão da sessão dos Serviços de Terminal especifica se a reconexão a uma sessão de Serviços de Terminal desconectada deve ser de qualquer computador cliente.
 ms.assetid: 093c2477-aed6-4736-9c8a-05aeca539cf8
 ms.tgt_platform: multiple
 keywords:
-- MS-TS-reconnect-atributo de ação esquema do AD
-- Esquema de AD do atributo msTSReconnectionAction
+- Esquema do AD do atributo ms-TS-Reconnection-Action
+- Esquema do AD do atributo msTSReconnectionAction
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 15e09931ec652f2fdd1e9ae6c6cec71e7a896a9f
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 68e75a6e1f205cbd2037ea40cbb02d5e8c37115fc2f1082c2977c35cf2801428
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103825323"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119760946"
 ---
-# <a name="ms-ts-reconnection-action-attribute"></a>MS-TS-Reconnection-atributo action
+# <a name="ms-ts-reconnection-action-attribute"></a>Atributo ms-TS-Reconnection-Action
 
-Ação de reconexão de sessão dos serviços de terminal especifica se a reconexão com uma sessão de serviços de terminal desconectada será permitida a partir de qualquer computador cliente.
+A Ação de Reconexão da sessão dos Serviços de Terminal especifica se a reconexão a uma sessão de Serviços de Terminal desconectada deve ser de qualquer computador cliente.
 
 
 
 | Entrada | Valor |
 |-------------------|--------------------------------------|
-| CN                | MS-TS – ação de reconexão            |
-| LDAP-Display-Name | msTSReconnectionAction               |
+| CN                | ms-TS-Reconnection-Action            |
+| Ldap-Display-Name | msTSReconnectionAction               |
 | Tamanho              | \-                                   |
 | Privilégio de atualização  | \-                                   |
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.1984              |
-| System-ID-GUID    | 366ed7ca-3e18-4c7f-abae-351a01e4b4f7 |
+| System-Id-Guid    | 366ed7ca-3e18-4c7f-abae-351a01e4b4f7 |
 | Syntax            | [**Boolean**](s-boolean.md)         |
 
 
@@ -55,10 +55,10 @@ Ação de reconexão de sessão dos serviços de terminal especifica se a recone
 | ID do link                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| É de valor único       | True                              |
+| Tem valor único       | Verdadeiro                              |
 | É indexado             | Falso                             |
-| No catálogo global      | Falso                             |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |
+| No Catálogo Global      | Falso                             |
+| Descritor de segurança NT | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
@@ -76,10 +76,10 @@ Ação de reconexão de sessão dos serviços de terminal especifica se a recone
 | ID do link                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| É de valor único       | True                              |
+| Tem valor único       | Verdadeiro                              |
 | É indexado             | Falso                             |
-| No catálogo global      | Falso                             |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |
+| No Catálogo Global      | Falso                             |
+| Descritor de segurança NT | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
@@ -97,10 +97,10 @@ Ação de reconexão de sessão dos serviços de terminal especifica se a recone
 | ID do link                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| É de valor único       | True                              |
+| Tem valor único       | Verdadeiro                              |
 | É indexado             | Falso                             |
-| No catálogo global      | Falso                             |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |
+| No Catálogo Global      | Falso                             |
+| Descritor de segurança NT | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |

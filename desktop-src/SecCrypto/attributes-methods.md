@@ -13,13 +13,13 @@ ms.locfileid: "117773352"
 ---
 # <a name="attributes-methods"></a>Métodos de atributos
 
-O objeto [**Attributes**](attributes.md) expõe os métodos a seguir.
+O [**objeto Attributes**](attributes.md) expõe os métodos a seguir.
 
 ## <a name="in-this-section"></a>Nesta seção
 
 -   [**Adicionar método**](attributes-add.md)
 -   [**Método Clear**](attributes-clear.md)
--   [**Remover método**](attributes-remove.md)
+-   [**Método Remove**](attributes-remove.md)
 
  
 

@@ -1,9 +1,9 @@
 ---
-title: Mensagem de TTM_GETTIPTEXTCOLOR (commctrl. h)
+title: TTM_GETTIPTEXTCOLOR mensagem (Commctrl.h)
 description: Recupera a cor do texto em uma janela de dica de ferramenta.
 ms.assetid: dede991e-35e6-4bd0-9654-656c96135298
 keywords:
-- Controles de TTM_GETTIPTEXTCOLOR de mensagens do Windows
+- TTM_GETTIPTEXTCOLOR controles Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 44a302e72e727fe5eb95a2a39e657dc4dcd05514
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: af123827a0a07ab34b7013ef9d4fb751d4f259245105e6df40566f508e828112
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105749666"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119797446"
 ---
-# <a name="ttm_gettiptextcolor-message"></a>\_Mensagem TTM GETTIPTEXTCOLOR
+# <a name="ttm_gettiptextcolor-message"></a>Mensagem \_ GETTIPTEXTCOLOR TTM
 
 Recupera a cor do texto em uma janela de dica de ferramenta.
 
@@ -35,9 +35,9 @@ Recupera a cor do texto em uma janela de dica de ferramenta.
 *lParam* 
 </dt> <dd>Deve ser zero.</dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna um valor **COLORREF** que representa a cor do texto.
+Retorna um **valor COLORREF** que representa a cor do texto.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -45,9 +45,9 @@ Retorna um valor **COLORREF** que representa a cor do texto.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

@@ -1,7 +1,7 @@
 ---
 description: Executa uma interpolação linear entre dois vetores 3D.
 ms.assetid: f3f06f1b-8824-47f0-b2ed-c212fa4c3225
-title: Função D3DXVec3Lerp (D3dx9math. h)
+title: Função D3DXVec3Lerp (D3dx9math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: ed6905cc0b13908a4e60e221737e9b5dc5a627f1
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 4805cb4163e7ab2adee17e66346dd076989aa292fc04df6ef31e131baa5813fb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105791305"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119630606"
 ---
 # <a name="d3dxvec3lerp-function"></a>Função D3DXVec3Lerp
 
@@ -43,53 +43,53 @@ D3DXVECTOR3* D3DXVec3Lerp(
 
 <dl> <dt>
 
-*pout* \[ entrada, saída\]
+*pOut* \[ in, out\]
 </dt> <dd>
 
 Tipo: **[ **D3DXVECTOR3**](d3dxvector3.md)\***
 
-Ponteiro para a estrutura [**D3DXVECTOR3**](d3dxvector3.md) que é o resultado da operação.
+Ponteiro para a [**estrutura D3DXVECTOR3**](d3dxvector3.md) que é o resultado da operação.
 
 </dd> <dt>
 
-*pV1* \[ no\]
+*pV1* \[ Em\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR3**](d3dxvector3.md) \***
 
-Ponteiro para uma estrutura de [**D3DXVECTOR3**](d3dxvector3.md) de origem.
+Ponteiro para uma estrutura [**D3DXVECTOR3 de**](d3dxvector3.md) origem.
 
 </dd> <dt>
 
-*pV2* \[ no\]
+*pV2* \[ Em\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR3**](d3dxvector3.md) \***
 
-Ponteiro para uma estrutura de [**D3DXVECTOR3**](d3dxvector3.md) de origem.
+Ponteiro para uma estrutura [**D3DXVECTOR3 de**](d3dxvector3.md) origem.
 
 </dd> <dt>
 
 *s* \[ em\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 Parâmetro que interpola linearmente entre os vetores.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **D3DXVECTOR3**](d3dxvector3.md)\***
 
-Ponteiro para uma estrutura [**D3DXVECTOR3**](d3dxvector3.md) que é o resultado da interpolação linear.
+Ponteiro para uma [**estrutura D3DXVECTOR3**](d3dxvector3.md) que é o resultado da interpolação linear.
 
 ## <a name="remarks"></a>Comentários
 
-Essa função executa a interpolação linear com base na seguinte fórmula: v1 + s (v2-v1).
+Essa função executa a interpolação linear com base na seguinte fórmula: V1 + s(V2-V1).
 
-O valor de retorno para essa função é o mesmo valor retornado no parâmetro *pout* . Dessa forma, a função **D3DXVec3Lerp** pode ser usada como um parâmetro para outra função.
+O valor retornado para essa função é o mesmo valor retornado no *parâmetro pOut.* Dessa forma, a **função D3DXVec3Lerp** pode ser usada como um parâmetro para outra função.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -97,8 +97,8 @@ O valor de retorno para essa função é o mesmo valor retornado no parâmetro *
 
 | Requisito | Valor |
 |--------------------|----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3dx9math. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| parâmetro<br/>  | <dl> <dt>D3dx9math.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

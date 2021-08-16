@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2d965875b4818e0674c118ff52a32b8da5252515
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 400a526fa82ed1a4009482e5cfa1683b2d56fb807044be2fbd8225c41d8c1437
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105800136"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119649946"
 ---
 # <a name="externalappcolorbuttonhoverface-type-1"></a>External. appColorButtonHoverFace (tipo 1)
 
@@ -28,7 +28,7 @@ ms.locfileid: "105800136"
 
  
 
-A propriedade **appColorButtonHoverFace** recupera a cor de foco do botão atual para a interface do usuário do Windows Media Player. Essa cor é exibida quando o usuário move o ponteiro do mouse sobre um botão.
+a propriedade **appColorButtonHoverFace** recupera a cor de foco do botão atual para a interface do usuário do Windows Media Player. Essa cor é exibida quando o usuário move o ponteiro do mouse sobre um botão.
 
 ``` syntax
 window.external.appColorButtonHoverFace
@@ -41,7 +41,7 @@ Esta propriedade é uma **cadeia de caracteres** somente leitura.
 
 ## <a name="remarks"></a>Comentários
 
-Os usuários podem alterar a cor da interface do usuário do Windows Media Player. Você pode usar essa propriedade para personalizar a aparência da sua página da web hospedada para corresponder ao Player.
+os usuários podem alterar a cor da interface do usuário Windows Media Player. Você pode usar essa propriedade para personalizar a aparência da sua página da web hospedada para corresponder ao Player.
 
 ## <a name="requirements"></a>Requisitos
 

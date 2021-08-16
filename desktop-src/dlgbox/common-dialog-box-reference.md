@@ -19,7 +19,7 @@ ms.locfileid: "118786126"
 -   [Interface de caixa de diálogo comum](common-dialog-box-interfaces.md)
 -   [Mensagens comuns da caixa de diálogo](common-dialog-box-messages.md)
 -   [Notificações comuns da caixa de diálogo](common-dialog-box-notifications.md)
--   [Estruturas de caixa de diálogo comuns](common-dialog-box-structures.md)
+-   [Estruturas comuns da caixa de diálogo](common-dialog-box-structures.md)
 
  
 

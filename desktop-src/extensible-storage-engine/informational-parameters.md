@@ -15,17 +15,17 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: a8923b544726e474775684f54fed47d8b4ba281e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e4bcb63de32330fa14c87e5ce85385672af8da699083c3d0cbb4200b7744384a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103647604"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119731806"
 ---
 # <a name="informational-parameters"></a>Parâmetros informativos
 
 
-_**Aplica-se a:** Windows | Windows Server_
+_**Aplica-se a:** Windows | Windows Servidor_
 
 ## <a name="informational-parameters"></a>Parâmetros informativos
 
@@ -84,7 +84,7 @@ Esse parâmetro somente leitura indica o comprimento máximo de chave de índice
 </tr>
 <tr class="odd">
 <td><p>Disponibilidade:</p></td>
-<td><p>Começando com o Windows Server 2008 e o Windows Vista</p></td>
+<td><p>a partir do Windows Server 2008 e Windows Vista</p></td>
 </tr>
 </tbody>
 </table>
@@ -143,7 +143,7 @@ Esse parâmetro somente leitura retorna o [JET_COLTYP](./jet-coltyp.md) máximo 
 </tr>
 <tr class="odd">
 <td><p>Disponibilidade:</p></td>
-<td><p>Começando com o Windows Server 2008 e o Windows Vista</p></td>
+<td><p>a partir do Windows Server 2008 e Windows Vista</p></td>
 </tr>
 </tbody>
 </table>
@@ -222,11 +222,11 @@ página de 4 KB = 4014 bytes<br />
 <tbody>
 <tr class="odd">
 <td><p><strong>Cliente</strong></p></td>
-<td><p>Requer o Windows Vista.</p></td>
+<td><p>requer o Windows Vista.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Servidor</strong></p></td>
-<td><p>Requer o Windows Server 2008.</p></td>
+<td><p>requer o Windows Server 2008.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Cabeçalho</strong></p></td>

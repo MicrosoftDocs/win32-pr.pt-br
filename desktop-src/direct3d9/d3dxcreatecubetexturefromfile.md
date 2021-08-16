@@ -1,7 +1,7 @@
 ---
-description: Cria uma textura de cubo de um arquivo.
+description: Cria uma textura de cubo a partir de um arquivo.
 ms.assetid: 7ff3b051-568c-4c77-b8a6-b626ba156eb1
-title: Função D3DXCreateCubeTextureFromFile (D3dx9tex.h)
+title: Função D3DXCreateCubeTextureFromFile (D3dx9tex. h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -23,7 +23,7 @@ ms.locfileid: "119279886"
 ---
 # <a name="d3dxcreatecubetexturefromfile-function"></a>Função D3DXCreateCubeTextureFromFile
 
-Cria uma textura de cubo de um arquivo.
+Cria uma textura de cubo a partir de um arquivo.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,30 +42,30 @@ HRESULT D3DXCreateCubeTextureFromFile(
 
 <dl> <dt>
 
-*pDevice* \[ Em\]
+*pDevice* \[ no\]
 </dt> <dd>
 
 Tipo: **[ **LPDIRECT3DDEVICE9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3ddevice9)**
 
-Ponteiro para uma interface [**IDirect3DDevice9,**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3ddevice9) que representa o dispositivo a ser associado à textura do cubo.
+Ponteiro para uma interface [**IDirect3DDevice9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3ddevice9) , representando o dispositivo a ser associado à textura do cubo.
 
 </dd> <dt>
 
-*pSrcFile* \[ Em\]
+*pSrcFile* \[ no\]
 </dt> <dd>
 
 Tipo: **[ **LPCTSTR**](../winprog/windows-data-types.md)**
 
-Ponteiro para uma cadeia de caracteres que especifica o nome do arquivo. Se as configurações do compilador exigirem Unicode, o tipo de dados LPCTSTR será resolvido para LPCWSTR. Caso contrário, o tipo de dados de cadeia de caracteres será resolvido para LPCSTR. Consulte Observações.
+Ponteiro para uma cadeia de caracteres que especifica o nome do arquivo. Se as configurações do compilador exigirem Unicode, o tipo de dados LPCTSTR será resolvido para LPCWSTR. Caso contrário, o tipo de dados String será resolvido para LPCSTR. Consulte Observações.
 
 </dd> <dt>
 
-*ppCubeTexture* \[ out\]
+*ppCubeTexture* \[ fora\]
 </dt> <dd>
 
 Tipo: **[ **LPDIRECT3DCUBETEXTURE9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dcubetexture9)\***
 
-Endereço de um ponteiro para uma interface [**IDirect3DCubeTexture9,**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dcubetexture9) que representa o objeto de textura do cubo criado.
+Endereço de um ponteiro para uma interface [**IDirect3DCubeTexture9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dcubetexture9) , que representa o objeto de textura do cubo criado.
 
 </dd> </dl>
 
@@ -73,21 +73,21 @@ Endereço de um ponteiro para uma interface [**IDirect3DCubeTexture9,**](/window
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se a função for bem-sucedida, o valor de retorno será D3D \_ OK. Se a função falhar, o valor de retorno poderá ser um dos seguintes valores: D3DERR \_ INVALIDCALL, D3DERR \_ NOTAVAILABLE, D3DERR \_ OUTOFVIDEOMEMORY, D3DXERR \_ INVALIDDATA, E \_ OUTOFMEMORY.
+Se a função for bem sucedido, o valor de retorno será D3D \_ OK. Se a função falhar, o valor de retorno poderá ser um dos seguintes valores: D3DERR \_ INVALIDCALL, D3DERR \_ não disponível, D3DERR \_ OUTOFVIDEOMEMORY, D3DXERR \_ INVALIDDATA, e \_ OUTOFMEMORY.
 
 ## <a name="remarks"></a>Comentários
 
-A configuração do compilador também determina a versão da função. Se Unicode for definido, a chamada de função será resolvida para **D3DXCreateCubeTextureFromFileW.** Caso contrário, a chamada de função será resolvida para **D3DXCreateCubeTextureFromFileA** porque as cadeias de caracteres ANSI estão sendo usadas.
+A configuração do compilador também determina a versão da função. Se o Unicode for definido, a chamada de função será resolvida como **D3DXCreateCubeTextureFromFileW**. Caso contrário, a chamada de função é resolvida como **D3DXCreateCubeTextureFromFileA** porque as cadeias de caracteres ANSI estão sendo usadas.
 
-A função é equivalente a D3DXCreateCubeTextureFromFileEx(pDevice, pSrcFile, D3DX \_ DEFAULT, D3DX \_ DEFAULT, 0, D3DFMT \_ UNKNOWN, D3DPOOL \_ MANAGED, D3DX \_ DEFAULT, D3DX \_ DEFAULT, 0, **NULL,** **NULL**, ppCubeTexture).
+A função é equivalente a D3DXCreateCubeTextureFromFileEx (pDevice, pSrcFile, D3DX \_ padrão, D3DX \_ padrão, 0, D3DFMT \_ Unknown, D3DPOOL \_ gerenciado, D3DX \_ padrão, D3DX \_ Default, 0, **NULL**, **NULL**, ppCubeTexture).
 
-Essa função dá suporte aos seguintes formatos de arquivo: .bmp, .dds, .dib, .hdr, .jpg, .pfm, .png, .ppm e .tga. Consulte [**D3DXIMAGE \_ FILEFORMAT**](./d3dximage-fileformat.md).
+Essa função dá suporte aos seguintes formatos de arquivo: .bmp,. DDS,. dib,. HDR, .jpg,. PFM, .png,. ppm e. tga. Consulte [**D3DXIMAGE \_ FileFormat**](./d3dximage-fileformat.md).
 
-Observe que um recurso criado com essa função quando chamado de um objeto IDirect3DDevice9 será colocado na classe de memória anotada por D3DPOOL \_ MANAGED. Quando esse método é chamado de um objeto IDirect3DDevice9Ex, o recurso será colocado na classe de memória anotada por D3DPOOL \_ DEFAULT.
+Observe que um recurso criado com essa função quando chamado de um objeto IDirect3DDevice9 será colocado na classe de memória denotada por D3DPOOL \_ gerenciado. Quando esse método é chamado de um objeto IDirect3DDevice9Ex, o recurso será colocado na classe de memória denotada por D3DPOOL \_ padrão.
 
-A filtragem é aplicada automaticamente a uma textura criada usando esse método. A filtragem é equivalente a D3DX \_ FILTER \_ TRIANGLE \| D3DX \_ FILTER \_ DITHER em [D3DX \_ FILTER](d3dx-filter.md).
+A filtragem é aplicada automaticamente a uma textura criada usando esse método. A filtragem é equivalente ao D3DX \_ Filter \_ triângulo \| D3DX \_ Filter \_ pontilhado [no \_ filtro D3DX](d3dx-filter.md).
 
-**D3DXCreateCubeTextureFromFile** usa o formato de arquivo DDS (superfície DirectDraw). O Editor de Textura do DirectX (Dxtex.exe) permite que você gere um mapa de cubo de outros formatos de arquivo e salve-o no formato de arquivo DDS. Você pode obter Dxtex.exe e saber mais sobre ele no SDK do DirectX. Para obter informações sobre o SDK do DirectX, consulte [Onde está o SDK do DirectX?](../directx-sdk--august-2009-.md).
+**D3DXCreateCubeTextureFromFile** usa o formato de arquivo de superfície do DIRECTDRAW (DDS). O editor de textura DirectX (Dxtex.exe) permite que você gere um mapa de cubo de outros formatos de arquivo e salve-o no formato de arquivo DDS. Você pode obter Dxtex.exe e aprender sobre ele no SDK do DirectX. Para obter informações sobre o SDK do DirectX, consulte [onde está o SDK do DirectX?](../directx-sdk--august-2009-.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -95,8 +95,8 @@ A filtragem é aplicada automaticamente a uma textura criada usando esse método
 
 | Requisito | Valor |
 |--------------------|---------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3dx9tex.h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>  |
+| parâmetro<br/>  | <dl> <dt>D3dx9tex. h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>  |
 
 
 

@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre: enumeração de JET_dbstate'
-title: Enumeração de JET_dbstate
+description: 'Saiba mais sobre: JET_dbstate enumeração'
+title: JET_dbstate enumeração
 TOCTitle: JET_dbstate enumeration
 ms:assetid: T:Microsoft.Isam.Esent.Interop.JET_dbstate
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_dbstate(v=EXCHG.10)
@@ -34,19 +34,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: a83c8a4313e5e6f21ee885ee7936c90503bfbd3c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 94b4214c2f06d6b8b4613e6a248477adc2fe3be51fa7816e78451645d5b3b5ea
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103646745"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119112155"
 ---
-# <a name="jet_dbstate-enumeration"></a>Enumeração de JET_dbstate
+# <a name="jet_dbstate-enumeration"></a>JET_dbstate enumeração
 
-Estados de banco de dados (usados em [JET_DBINFOMISC](./jet-dbinfomisc-class.md)).
+Estados de banco de dados [(usados JET_DBINFOMISC](./jet-dbinfomisc-class.md)).
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -80,12 +80,12 @@ public enum JET_dbstate
 <tr class="even">
 <td></td>
 <td>DirtyShutdown</td>
-<td>Banco de dados de desligamento anormal (inconsistente).</td>
+<td>Banco de dados de desligamento sujo (inconsistente).</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>CleanShutdown</td>
-<td>Banco de dados de desligamento normal (consistente).</td>
+<td>Limpar o banco de dados de desligamento (consistente).</td>
 </tr>
 <tr class="even">
 <td></td>
@@ -95,7 +95,7 @@ public enum JET_dbstate
 <tr class="odd">
 <td></td>
 <td>ForceDetach</td>
-<td>O banco de dados foi desanexado.</td>
+<td>O banco de dados foi desaixado à força.</td>
 </tr>
 </tbody>
 </table>
@@ -105,4 +105,4 @@ public enum JET_dbstate
 
 #### <a name="reference"></a>Referência
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

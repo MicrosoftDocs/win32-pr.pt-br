@@ -1,7 +1,7 @@
 ---
 description: O KTM define as seguintes máscaras de acesso à transação a serem usadas ao abrir uma transação.
 ms.assetid: 93ef3098-b3cc-4b24-ae82-1c10d937f14f
-title: Máscaras de acesso à transação (WinNT.h)
+title: Máscaras de acesso à transação (WinNT. h)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: faafcce45944e37418191254fc5a2b81d00d9248b27ea5e8753fe8e34a734754
@@ -11,13 +11,13 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119520636"
 ---
-# <a name="transaction-access-masks"></a>Máscaras de Acesso à Transação
+# <a name="transaction-access-masks"></a>Máscaras de acesso à transação
 
 O KTM define as seguintes máscaras de acesso à transação a serem usadas ao abrir uma transação.
 
 <dl> <dt>
 
-<span id="TRANSACTION_QUERY_INFORMATION"></span><span id="transaction_query_information"></span>**INFORMAÇÕES \_ DE CONSULTA DE \_ TRANSAÇÃO**
+<span id="TRANSACTION_QUERY_INFORMATION"></span><span id="transaction_query_information"></span>**\_informações de consulta de transação \_**
 </dt> <dd> <dl> <dt>
 
 0x000001
@@ -30,7 +30,7 @@ O chamador pode consultar informações de transação.
 
 </dt> </dl> </dd> <dt>
 
-<span id="TRANSACTION_SET_INFORMATION"></span><span id="transaction_set_information"></span>**INFORMAÇÕES DO \_ CONJUNTO DE \_ TRANSAÇÕES**
+<span id="TRANSACTION_SET_INFORMATION"></span><span id="transaction_set_information"></span>**\_informações do conjunto de transações \_**
 </dt> <dd> <dl> <dt>
 
 0x000002
@@ -43,7 +43,7 @@ O chamador pode definir informações de transação.
 
 </dt> </dl> </dd> <dt>
 
-<span id="TRANSACTION_ENLIST"></span><span id="transaction_enlist"></span>**TRANSACTION \_ ENLIST**
+<span id="TRANSACTION_ENLIST"></span><span id="transaction_enlist"></span>**inscrição de transação \_**
 </dt> <dd> <dl> <dt>
 
 0x000004
@@ -56,7 +56,7 @@ O chamador pode se inscrever nessa transação.
 
 </dt> </dl> </dd> <dt>
 
-<span id="TRANSACTION_COMMIT"></span><span id="transaction_commit"></span>**COMMIT DE \_ TRANSAÇÃO**
+<span id="TRANSACTION_COMMIT"></span><span id="transaction_commit"></span>**confirmação de transação \_**
 </dt> <dd> <dl> <dt>
 
 0x000008
@@ -64,12 +64,12 @@ O chamador pode se inscrever nessa transação.
 
 
 
-O chamador pode fazer commit dessa transação.
+O chamador pode confirmar essa transação.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="TRANSACTION_ROLLBACK"></span><span id="transaction_rollback"></span>**RE \_ ROLLBACK DE TRANSAÇÃO**
+<span id="TRANSACTION_ROLLBACK"></span><span id="transaction_rollback"></span>**reversão de transação \_**
 </dt> <dd> <dl> <dt>
 
 0x000010
@@ -82,7 +82,7 @@ O chamador pode reverter essa transação.
 
 </dt> </dl> </dd> <dt>
 
-<span id="TRANSACTION_PROPAGATE"></span><span id="transaction_propagate"></span>**PROPAGAÇÃO \_ DE TRANSAÇÃO**
+<span id="TRANSACTION_PROPAGATE"></span><span id="transaction_propagate"></span>**propagação de transações \_**
 </dt> <dd> <dl> <dt>
 
 0x000020
@@ -90,12 +90,12 @@ O chamador pode reverter essa transação.
 
 
 
-O chamador pode propagar essa transação para um gerenciador de recursos superior, como o Coordenador de Transações Distribuídas (DTC).
+O chamador pode propagar essa transação para um Gerenciador de recursos superior, como o Coordenador de Transações Distribuídas (DTC).
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="TRANSACTION_GENERIC_READ"></span><span id="transaction_generic_read"></span>**LEITURA \_ GENÉRICA DA \_ TRANSAÇÃO**
+<span id="TRANSACTION_GENERIC_READ"></span><span id="transaction_generic_read"></span>**\_leitura genérica da transação \_**
 </dt> <dd> <dl> <dt>
 
 0x120001
@@ -103,12 +103,12 @@ O chamador pode propagar essa transação para um gerenciador de recursos superi
 
 
 
-O chamador tem os seguintes privilégios: **STANDARD \_ RIGHTS \_ READ,** **TRANSACTION \_ QUERY \_ INFORMATION** e **SYNCHRONIZE**.
+O chamador tem os seguintes privilégios: **\_ \_ leitura de direitos padrão**, **\_ \_ informações de consulta de transação** e **sincronização**.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="TRANSACTION_GENERIC_WRITE"></span><span id="transaction_generic_write"></span>**GRAVAÇÃO \_ GENÉRICA DA \_ TRANSAÇÃO**
+<span id="TRANSACTION_GENERIC_WRITE"></span><span id="transaction_generic_write"></span>**\_gravação genérica de transação \_**
 </dt> <dd> <dl> <dt>
 
 0x12003E
@@ -116,12 +116,12 @@ O chamador tem os seguintes privilégios: **STANDARD \_ RIGHTS \_ READ,** **TRAN
 
 
 
-O chamador tem os seguintes privilégios: **STANDARD \_ RIGHTS \_ WRITE,** **TRANSACTION SET \_ \_ INFORMATION,** **TRANSACTION COMMIT, TRANSACTION \_ ENLIST,** **TRANSACTION \_ ROLLBACK,** **TRANSACTION \_ PROPAGATE** e **SYNCHRONIZE**. **\_**
+O chamador tem os seguintes privilégios: **\_ \_ gravação de direitos padrão**, **\_ \_ informações de conjunto de transações**, **\_ confirmação de transação**, **\_ inscrição de transação**, **\_ reversão de transação**, **\_ propagação de transações** e **sincronização**.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="TRANSACTION_GENERIC_EXECUTE"></span><span id="transaction_generic_execute"></span>**TRANSACTION \_ GENERIC \_ EXECUTE**
+<span id="TRANSACTION_GENERIC_EXECUTE"></span><span id="transaction_generic_execute"></span>**\_execução genérica da transação \_**
 </dt> <dd> <dl> <dt>
 
 0x120018
@@ -129,12 +129,12 @@ O chamador tem os seguintes privilégios: **STANDARD \_ RIGHTS \_ WRITE,** **TRA
 
 
 
-O chamador tem os seguintes privilégios: **STANDARD \_ RIGHTS \_ EXECUTE,** **TRANSACTION \_ COMMIT,** **TRANSACTION \_ ROLLBACK** e **SYNCHRONIZE.**
+O chamador tem os seguintes privilégios: **\_ \_ execução de direitos padrão**, **\_ confirmação de transação**, **\_ reversão de transação** e **sincronização**.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="TRANSACTION_ALL_ACCESS"></span><span id="transaction_all_access"></span>**TRANSACTION \_ ALL \_ ACCESS**
+<span id="TRANSACTION_ALL_ACCESS"></span><span id="transaction_all_access"></span>**\_todos os \_ acessos à transação**
 </dt> <dd> <dl> <dt>
 
 0x12003F
@@ -142,12 +142,12 @@ O chamador tem os seguintes privilégios: **STANDARD \_ RIGHTS \_ EXECUTE,** **T
 
 
 
-O chamador tem o seguinte privilégio: **DIREITOS \_ PADRÃO \_ OBRIGATÓRIOS,** **LEITURA \_ GENÉRICA \_** DE TRANSAÇÃO, **GRAVAÇÃO \_ GENÉRICA \_** DE TRANSAÇÃO e TRANSACTION GENERIC **\_ \_ EXECUTE.**
+O chamador tem o seguinte privilégio: **\_ direitos padrão \_ necessários**, **\_ \_ leitura genérica de transação**, **\_ \_ gravação genérica de transação** e **\_ \_ execução genérica de transação**.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="TRANSACTION_RESOURCE_MANAGER_RIGHTS"></span><span id="transaction_resource_manager_rights"></span>**DIREITOS DO \_ GERENCIADOR DE RECURSOS DE \_ \_ TRANSAÇÃO**
+<span id="TRANSACTION_RESOURCE_MANAGER_RIGHTS"></span><span id="transaction_resource_manager_rights"></span>**\_direitos do \_ Gerenciador de recursos de transação \_**
 </dt> <dd> <dl> <dt>
 
 0x120037
@@ -155,14 +155,14 @@ O chamador tem o seguinte privilégio: **DIREITOS \_ PADRÃO \_ OBRIGATÓRIOS,**
 
 
 
-O chamador tem os seguintes privilégios: **TRANSACTION \_ GENERIC \_ READ, STANDARD** RIGHTS WRITE, TRANSACTION SET **\_ \_ INFORMATION,** **TRANSACTION \_ \_** **\_ ROLLBACK,** **TRANSACTION \_ ENLIST,** **TRANSACTION \_ PROPAGATE** e **SYNCHRONIZE**.
+O chamador tem os seguintes privilégios: **\_ \_ leitura genérica de transação**, **\_ \_ gravação de direitos padrão**, **\_ \_ informações de conjunto de transações**, **\_ reversão de transação**, **\_ inscrição de transação**, **\_ propagação de transações** e **sincronização**.
 
 
 </dt> </dl> </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-É recomendável que os gerenciadores de recursos, ao se inscrever em uma transação, especifiquem **TRANSACTION RESOURCE \_ MANAGER \_ \_ RIGHTS** ao abrir uma transação.
+É recomendável que os gerenciadores de recursos, ao se enlistar em uma transação, especifiquem os direitos do Gerenciador de recursos de transação ao abrir uma transação. **\_ \_ \_**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -172,7 +172,7 @@ O chamador tem os seguintes privilégios: **TRANSACTION \_ GENERIC \_ READ, STAN
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                           |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                     |
-| Cabeçalho<br/>                   | <dl> <dt>WinNT.h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>WinNT. h</dt> </dl> |
 
 
 

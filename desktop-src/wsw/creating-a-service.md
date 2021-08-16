@@ -1,31 +1,31 @@
 ---
 title: Criando um serviço
-description: A criação de um serviço Web é bastante simplificada no WWSAPI pela API do modelo de serviço e pela ferramenta de WsUtil.exe.
+description: A criação de um serviço Web é bastante simplificada no WWSAPI pela API do Modelo de Serviço e pela WsUtil.exe de serviço.
 ms.assetid: 3536d1c6-6179-4f69-9cc8-27fe6ae30826
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f4700324a84962047f403ca7ad090adc3e9f4e99
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 93f6daadbfcd1d06f76bf5bef97559214e36015d3f72ff440e77f4293a47ea57
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103823008"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119805736"
 ---
 # <a name="creating-a-service"></a>Criando um serviço
 
-A criação de um serviço Web é bastante simplificada no WWSAPI pela API do [modelo de serviço](service-model-layer-overview.md) e pela ferramenta de [WsUtil.exe](wsutil-compiler-tool.md) . O modelo de serviço fornece uma API que permite que o serviço e o cliente enviem e recebam [mensagens](message.md) em um [canal](channel.md) como chamadas de método C. A ferramenta WsUtil gera stubs e cabeçalhos para implementar o serviço.
+A criação de um serviço Web é bastante simplificada no WWSAPI pela [API](service-model-layer-overview.md) do Modelo de Serviço e pela [WsUtil.exe](wsutil-compiler-tool.md) de serviço. O Modelo de Serviço fornece uma API que permite que o serviço e o cliente enviem e [recebam](message.md) mensagens por um [canal como](channel.md) chamadas de método C. A ferramenta WsUtil gera stubs e headers para implementar o serviço.
 
-## <a name="implementing-a-calculator-service-using-wwsapi"></a>Implementando um serviço de calculadora usando o WWSAPI
+## <a name="implementing-a-calculator-service-using-wwsapi"></a>Implementando um serviço calculadora usando WWSAPI
 
-Usando as fontes geradas da ferramenta [Wsutil.exe](wsutil-compiler-tool.md) , implemente o serviço das etapas a seguir.
+Usando as fontes geradas da [Wsutil.exe, ](wsutil-compiler-tool.md) implemente o serviço seguindo as etapas a seguir.
 
-Inclua os cabeçalhos na origem do aplicativo.
+Inclua os headers na origem do aplicativo.
 
 ``` syntax
 #include "CalculatorProxyStub.h"
 ```
 
-Implemente as operações de serviço. Neste exemplo, as operações de serviço são as funções adicionar e subtrair do serviço de calculadora.
+Implemente as operações de serviço. Neste exemplo, as operações de serviço são as funções Adicionar e Subtrair do serviço de calculadora.
 
 ``` syntax
 HRESULT CALLBACK Add (const WS_OPERATION_CONTEXT* context, 
@@ -49,7 +49,7 @@ HRESULT CALLBACK Subtract (const WS_OPERATION_CONTEXT* context,
 }
 ```
 
-Defina o contrato de serviço definindo os campos de uma estrutura de [**\_ \_ contrato de serviço WS**](/windows/desktop/api/WebServices/ns-webservices-ws_service_contract) .
+Defina o contrato de serviço definindo os campos de uma [**estrutura \_ WS SERVICE \_ CONTRACT.**](/windows/desktop/api/WebServices/ns-webservices-ws_service_contract)
 
 ``` syntax
 static const DefaultBinding_ICalculatorFunctionTable calculatorFunctions = {Add, Subtract};
@@ -81,11 +81,11 @@ if (FAILED (hr = WsOpenServiceHost (host, NULL, error)))
     goto Error;
 ```
 
-Consulte o exemplo de código em [HttpCalculatorServiceExample](httpcalculatorserviceexample.md) para obter uma implementação completa do serviço de calculadora.
+Consulte o exemplo de código em [HttpCalculatorServiceExample](httpcalculatorserviceexample.md) para uma implementação completa do serviço de calculadora.
 
- 
+ 
 
- 
+ 
 
 
 

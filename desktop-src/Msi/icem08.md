@@ -1,23 +1,23 @@
 ---
-description: O ICEM08 garante que um módulo não exclua outro módulo do qual depende.
+description: ICEM08 garante que um módulo não exclua outro módulo do que ele depende.
 ms.assetid: 56d115b4-7410-4db2-a9af-bc6716f3358d
 title: ICEM08
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6a9767c6748f5a21d83bddb3b5fe93a0a8d7ea67
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 43f5d0076de382889e5fd3df8a03dddb51c6a73eb5a4f825068f6cd66ad24d07
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104170431"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119811006"
 ---
 # <a name="icem08"></a>ICEM08
 
-O ICEM08 garante que um módulo não exclua outro módulo do qual depende.
+ICEM08 garante que um módulo não exclua outro módulo do que ele depende.
 
 ## <a name="result"></a>Resultado
 
-ICEM08 posta um erro quando um módulo exclui outro módulo do qual ele depende.
+ICEM08 posta um erro quando um módulo exclui outro módulo do que ele depende.
 
 ## <a name="example"></a>Exemplo
 
@@ -32,9 +32,9 @@ lists it as an exclusion.
 
 
 
-| ModuleID             | ModuleLanguage | Requeridoid           | RequiredLanguage | RequiredVersion |
+| ModuleID             | ModuleLanguage | RequiredID           | RequiredLanguage | RequiredVersion |
 |----------------------|----------------|----------------------|------------------|-----------------|
-| Móduloa.<GUID> | 1046           | ModuleB.<GUID> | 1046             | 1.0             |
+| ModuleA.<GUID> | 1046           | ModuleB.<GUID> | 1046             | 1.0             |
 
 
 
@@ -44,21 +44,21 @@ lists it as an exclusion.
 
 
 
-| ModuleID             | ModuleLanguage | Exclusão excluída           | ExcludedLanguage | ExcludedMinVersion | ExcludedMaxVersion |
+| ModuleID             | ModuleLanguage | ExcludedID           | ExcludedLanguage | ExcludedMinVersion | ExcludedMaxVersion |
 |----------------------|----------------|----------------------|------------------|--------------------|--------------------|
-| Móduloa.<GUID> | 1046           | ModuleB.<GUID> | 1046             |                    | 1.0                |
+| ModuleA.<GUID> | 1046           | ModuleB.<GUID> | 1046             |                    | 1.0                |
 
 
 
  
 
-Para corrigir o erro, remova a dependência ou a exclusão. Se ModuleB for uma dependência (requeridoid) do Móduloa, você não poderá excluí-la (conforme mostrado na coluna ExludedID da tabela ModuleExclusion). Se você precisar excluir ModuleB, deverá remover a dependência do Móduloa nele.
+Para corrigir o erro, remova a dependência ou a exclusão. Se ModuleB for uma dependência (RequiredID) de ModuleA, você não poderá exclui-la (conforme mostrado na coluna ExludedID da tabela ModuleExclusion). Se for necessário excluir o ModuleB, você deverá remover a dependência do ModuleA nele.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[Referência de ICE do módulo de mesclagem](merge-module-ice-reference.md)
+[Referência ice do módulo de mesclagem](merge-module-ice-reference.md)
 </dt> </dl>
 
  

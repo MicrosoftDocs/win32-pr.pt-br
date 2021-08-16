@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - Ntdll.dll
-ms.openlocfilehash: 99567d4784b121631089e723e1bd736e60a9cf54
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 11c7240cf63fa2f7e13338a0e0459e172e41aa1ed71db90c661b8aad0915d670
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105750132"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120079666"
 ---
 # <a name="ntquerydirectoryobject-function"></a>Função NtQueryDirectoryObject
 
@@ -96,7 +96,7 @@ Um ponteiro para uma variável que recebe o comprimento das informações de dir
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 A função retorna o **status \_ êxito** ou um status de erro.
 

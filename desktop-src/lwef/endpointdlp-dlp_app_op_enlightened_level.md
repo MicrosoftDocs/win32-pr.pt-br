@@ -1,6 +1,6 @@
 ---
 description: Associa uma ação de DLP (prevenção de perda de dados) de ponto de extremidade com um nível de imposição.
-title: Estrutura de DLP_APP_OP_ENLIGHTENED_LEVEL (endpointdlp. h)
+title: Estrutura DLP_APP_OP_ENLIGHTENED_LEVEL (endpointdlp.h)
 ms.topic: reference
 ms.date: 03/18/2021
 topic_type:
@@ -12,12 +12,12 @@ api_type:
 - COM
 api_location:
 - endpointdlp.h
-ms.openlocfilehash: 2d9c1aa8335078cad71832c6090cada1669641cb
-ms.sourcegitcommit: 91110c16e4713ed82d7fb80562d3ddf40b5d76b2
+ms.openlocfilehash: e47fa7705701701af2fc0832c5ea27cfdc7d1e67948ec095f3c24837a93de18b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "107495365"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119610476"
 ---
 # <a name="dlp_app_op_enlightened_level-structure"></a>Estrutura de DLP_APP_OP_ENLIGHTENED_LEVEL
 

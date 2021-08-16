@@ -1,11 +1,11 @@
 ---
-title: Atributo de referência de política de domínio
-description: O nome distinto de um objeto de política de domínio do qual um objeto de política copia.
+title: Atributo Domain-Policy-Reference
+description: O Nome Diferenciado de um objeto de política de domínio do que um objeto de política copia.
 ms.assetid: 914920de-6dc2-4dda-bf10-a34f5315eb74
 ms.tgt_platform: multiple
 keywords:
-- Esquema de atributo de referência de política de domínio do AD
-- Esquema de AD do atributo domainPolicyReference
+- Esquema do AD do atributo Domain-Policy-Reference
+- Esquema do AD do atributo domainPolicyReference
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f9723abde3bd04dc9c50f6b4c00f1ed80c4da0c2
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: e066b635aac650d0dc0c5713695ab9a1842d289fa3562470191e895bf6870f1b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103919327"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119656896"
 ---
-# <a name="domain-policy-reference-attribute"></a>Atributo de referência de política de domínio
+# <a name="domain-policy-reference-attribute"></a>Atributo Domain-Policy-Reference
 
-O nome distinto de um objeto de política de domínio do qual um objeto de política copia.
+O Nome Diferenciado de um objeto de política de domínio do que um objeto de política copia.
 
 
 
 | Entrada | Valor |
 |-------------------|-----------------------------------------|
 | CN                | Referência de política de domínio                 |
-| LDAP-Display-Name | domainPolicyReference                   |
+| Ldap-Display-Name | domainPolicyReference                   |
 | Tamanho              | \-                                      |
 | Privilégio de atualização  | \-                                      |
 | Frequência de atualização  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.422                  |
-| System-ID-GUID    | 80a67e2a-9f22-11d0-afdd-00c04fd930c9    |
-| Syntax            | [**Objeto (DS-DN)**](s-object-ds-dn.md) |
+| System-Id-Guid    | 80a67e2a-9f22-11d0-afdd-00c04fd930c9    |
+| Syntax            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
 
@@ -58,10 +58,10 @@ O nome distinto de um objeto de política de domínio do qual um objeto de polí
 | ID do link                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | Falso                                              |
-| É de valor único       | True                                               |
+| Tem valor único       | Verdadeiro                                               |
 | É indexado             | Falso                                              |
-| No catálogo global      | Falso                                              |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                       |
+| No Catálogo Global      | Falso                                              |
+| Descritor de segurança NT | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
@@ -79,10 +79,10 @@ O nome distinto de um objeto de política de domínio do qual um objeto de polí
 | ID do link                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | Falso                                              |
-| É de valor único       | True                                               |
+| Tem valor único       | Verdadeiro                                               |
 | É indexado             | Falso                                              |
-| No catálogo global      | Falso                                              |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                       |
+| No Catálogo Global      | Falso                                              |
+| Descritor de segurança NT | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
@@ -100,10 +100,10 @@ O nome distinto de um objeto de política de domínio do qual um objeto de polí
 | ID do link                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | Falso                                              |
-| É de valor único       | True                                               |
+| Tem valor único       | Verdadeiro                                               |
 | É indexado             | Falso                                              |
-| No catálogo global      | Falso                                              |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                       |
+| No Catálogo Global      | Falso                                              |
+| Descritor de segurança NT | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
@@ -121,10 +121,10 @@ O nome distinto de um objeto de política de domínio do qual um objeto de polí
 | ID do link                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | Falso                                              |
-| É de valor único       | True                                               |
+| Tem valor único       | Verdadeiro                                               |
 | É indexado             | Falso                                              |
-| No catálogo global      | Falso                                              |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                       |
+| No Catálogo Global      | Falso                                              |
+| Descritor de segurança NT | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
@@ -142,10 +142,10 @@ O nome distinto de um objeto de política de domínio do qual um objeto de polí
 | ID do link                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | Falso                                              |
-| É de valor único       | True                                               |
+| Tem valor único       | Verdadeiro                                               |
 | É indexado             | Falso                                              |
-| No catálogo global      | Falso                                              |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                       |
+| No Catálogo Global      | Falso                                              |
+| Descritor de segurança NT | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
@@ -163,10 +163,10 @@ O nome distinto de um objeto de política de domínio do qual um objeto de polí
 | ID do link                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | Falso                                              |
-| É de valor único       | True                                               |
+| Tem valor único       | Verdadeiro                                               |
 | É indexado             | Falso                                              |
-| No catálogo global      | Falso                                              |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                       |
+| No Catálogo Global      | Falso                                              |
+| Descritor de segurança NT | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |

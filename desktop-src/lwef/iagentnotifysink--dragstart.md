@@ -4,16 +4,16 @@ description: IAgentNotifySink DragStart
 ms.assetid: b3905b99-69e4-4046-aab9-2322618935aa
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f33ae89f9e24c6c7b0ec69fba1a98b3a64a18620
-ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
+ms.openlocfilehash: a3510449923d4567d3126bf9cd84655acd782b021f9f37f655a51114122a4717
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113120820"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119105205"
 ---
 # <a name="iagentnotifysinkdragstart"></a>IAgentNotifySink::D ragStart
 
-\[O Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
+\[O Microsoft Agent foi preterido a partir Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
 
 ``` syntax
 HRESULT DragStart(
@@ -40,16 +40,16 @@ Identificador do caractere arrastado.
 <span id="fwKeys"></span><span id="fwkeys"></span><span id="FWKEYS"></span>*fwKeys*
 </dt> <dd>
 
-Um parâmetro que indica o botão do mouse e o estado de chave do modificador. O parâmetro pode retornar qualquer combinação do seguinte:
+Um parâmetro que indica o botão do mouse e o estado da chave modificadora. O parâmetro pode retornar qualquer combinação do seguinte:
 
 
 
 | Valor  | Descrição      |
 |--------|------------------|
-| 0x0001 | Botão esquerdo      |
-| 0x0010 | Botão do meio    |
-| 0x0002 | Botão direito     |
-| 0x0004 | Tecla Shift para baixo   |
+| 0x0001 | Botão Esquerdo      |
+| 0x0010 | Botão Central    |
+| 0x0002 | Botão Direito     |
+| 0x0004 | Tecla shift para baixo   |
 | 0x0008 | Tecla de controle para baixo |
 | 0x0020 | Tecla Alt para baixo     |
 
@@ -59,17 +59,17 @@ Um parâmetro que indica o botão do mouse e o estado de chave do modificador. O
 
 </dd> <dt>
 
-<span id="x"></span><span id="X"></span>*w.x.y.*
+<span id="x"></span><span id="X"></span>*X*
 </dt> <dd>
 
-A coordenada x do ponteiro do mouse em pixels, em relação à origem da tela (superior esquerda).
+A coordenada X do ponteiro do mouse em pixels, em relação à origem da tela (superior esquerdo).
 
 </dd> <dt>
 
-<span id="y"></span><span id="Y"></span>*Iar*
+<span id="y"></span><span id="Y"></span>*Y*
 </dt> <dd>
 
-A coordenada y do ponteiro do mouse em pixels, em relação à origem da tela (superior esquerda).
+A coordenada Y do ponteiro do mouse em pixels, em relação à origem da tela (superior esquerdo).
 
 </dd> </dl>
 

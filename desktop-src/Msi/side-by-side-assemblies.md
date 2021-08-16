@@ -4,12 +4,12 @@ ms.assetid: ba73e7c3-a9d7-4cc3-b5ce-2483a594fcc0
 title: Assemblies lado a lado
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: da0493b9d16d3943053b32a8a06eaa371cfd1d79
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 04f9a16d7002a107376f525dc73dea9f6df3e2f182cc84207d92bdbf0f37ce81
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105760829"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119628276"
 ---
 # <a name="side-by-side-assemblies"></a>Assemblies lado a lado
 
@@ -22,7 +22,7 @@ Em vez de ter uma única versão de um assembly que assume compatibilidade com v
 
 Os assemblies lado a lado podem ser instalados como [assemblies compartilhados](shared-assemblies.md) ou como [assemblies privados](private-assemblies.md).
 
-Os assemblies lado a lado não estão disponíveis em sistemas anteriores ao Windows XP.
+os Assemblies lado a lado não estão disponíveis em sistemas anteriores ao Windows XP.
 
  
 

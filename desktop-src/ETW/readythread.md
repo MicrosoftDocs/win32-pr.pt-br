@@ -17,12 +17,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: e10029c0397c16a5a5eb30be6e3db64c0baec596
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1b4b3d63b63e4deb9c48f9e117122f021e9d63791292e60da3cc919a6e4535e0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103827268"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119069806"
 ---
 # <a name="readythread-class"></a>Classe ReadyThread
 
@@ -46,13 +46,13 @@ class ReadyThread : Thread_V2
 
 ## <a name="members"></a>Membros
 
-A classe **ReadyThread** tem estes tipos de membros:
+A **classe ReadyThread** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **ReadyThread** tem essas propriedades.
+A **classe ReadyThread** tem essas propriedades.
 
 <dl> <dt>
 
@@ -65,7 +65,7 @@ Tipo de dados: **sint8**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: WmiDataId (3)
+Qualificadores: WmiDataId(3)
 </dt> </dl>
 
 O valor pelo qual a prioridade está sendo ajustada.
@@ -81,18 +81,18 @@ Tipo de dados: **sint8**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: WmiDataId (2)
+Qualificadores: WmiDataId(2)
 </dt> </dl>
 
-O motivo para o aumento de prioridade.
+O motivo do aumento de prioridade.
 
 
 
 | Valor                                                                        | Significado                                                                                                                 |
 |------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------|
 | <dl> <dt>0</dt> </dl> | Ignore o incremento.<br/>                                                                                        |
-| <dl> <dt>1</dt> </dl> | Aplique o incremento, que irá decaimento incrementalmente ao final de cada Quantum.<br/>                              |
-| <dl> <dt>2</dt> </dl> | Aplique o incremento como um aumento que será decaimentodo em sua totalidade no Quantum (normalmente para doação de prioridade).<br/> |
+| <dl> <dt>1</dt> </dl> | Aplique o incremento, que será decair incrementalmente no final de cada quantum.<br/>                              |
+| <dl> <dt>2</dt> </dl> | Aplique o incremento como um aumento que decairá em sua totalidade em quantum (normalmente para a prioridade de prioridade).<br/> |
 
 
 
@@ -109,24 +109,24 @@ Tipo de dados: **sint8**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: WmiDataId (4)
+Qualificadores: WmiDataId(4)
 </dt> </dl>
 
-A seguir estão os possíveis sinalizadores de Estado:
+Veja a seguir os possíveis sinalizadores de estado:
 
 
 
 | Valor                                                                          | Significado                                                                    |
 |--------------------------------------------------------------------------------|----------------------------------------------------------------------------|
-| <dl> <dt>0x1</dt> </dl> | O thread foi pronto do DPC (chamada de procedimento adiado).<br/> |
-| <dl> <dt>0x2</dt> </dl> | A pilha do kernel está permutada no momento.<br/>                      |
+| <dl> <dt>0x1</dt> </dl> | O thread foi lido do DPC (chamada de procedimento adiado).<br/> |
+| <dl> <dt>0x2</dt> </dl> | No momento, a pilha de kernel é trocada.<br/>                      |
 | <dl> <dt>0x4</dt> </dl> | O espaço de endereço do processo é trocado.<br/>                       |
 
 
 
  
 
-Observe que, quando a pilha do kernel ou o espaço de endereço do processo for trocado, haverá um evento ReadyThread adicional depois que a pilha do kernel ou o espaço de endereço do processo tiver sido trocado novamente e o thread estiver pronto para ser despachado.
+Observe que quando a pilha do kernel ou o espaço de endereço do processo for trocado, haverá um evento ReadyThread adicional após a pilha do kernel ou o espaço de endereço do processo ter sido trocado novamente e o thread estiver pronto para ser expedido.
 
 </dd> <dt>
 
@@ -139,7 +139,7 @@ Tipo de dados: **sint8**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: WmiDataId (5)
+Qualificadores: WmiDataId(5)
 </dt> </dl>
 
 Reservado.
@@ -149,16 +149,16 @@ Reservado.
 TThreadId
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: WmiDataId (1), formato ("x")
+Qualificadores: WmiDataId(1), Format("x")
 </dt> </dl>
 
-O identificador de thread do thread que está sendo pronto para execução.
+O identificador de thread do thread que está sendo lido para execução.
 
 </dd> </dl>
 
@@ -177,7 +177,7 @@ O identificador de thread do thread que está sendo pronto para execução.
 
 <dl> <dt>
 
-[**Thread \_ v2**](thread-v2.md)
+[**Thread \_ V2**](thread-v2.md)
 </dt> </dl>
 
  

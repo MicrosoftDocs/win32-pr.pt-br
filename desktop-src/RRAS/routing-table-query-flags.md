@@ -21,15 +21,15 @@ Use essas constantes para consultas de tabela de roteador.
 
 | Constante              | Valor      | Descrição                                                                |
 |-----------------------|------------|----------------------------------------------------------------------------|
-| correspondência de RTM \_ \_ None      | 0x00000000 | Corresponde a nenhum dos critérios; todas as rotas para o destino são retornadas. |
-| \_proprietário da correspondência RTM \_     | 0x00000001 | Corresponde a rotas com o mesmo proprietário.                                            |
-| \_vizinho de correspondência RTM \_ | 0x00000002 | Faz a correspondência de rotas com o mesmo vizinho.                                     |
-| \_correspondência RTM \_ pref      | 0x00000004 | Faz a correspondência de rotas que têm a mesma preferência.                              |
-| \_NEXTHOP de correspondência RTM \_   | 0x00000008 | Faz a correspondência de rotas que têm o mesmo salto seguinte.                                |
-| \_interface de correspondência RTM \_ | 0x00000010 | Faz a correspondência de rotas que estão na mesma interface.                             |
-| \_correspondência RTM \_ completa      | 0x0000FFFF | Faz a correspondência de rotas com todos os critérios.                                          |
-| \_melhor \_ protocolo RTM   | 0          | Retorna uma rota independentemente de qual protocolo possui.                      |
-| RTM \_ este \_ protocolo   | ~0         | Retorna a melhor rota para o protocolo de chamada.                           |
+| RTM \_ MATCH \_ NONE      | 0x00000000 | Corresponde a nenhum dos critérios; todas as rotas para o destino são retornadas. |
+| RTM \_ MATCH \_ OWNER     | 0x00000001 | Corresponde às rotas com o mesmo proprietário.                                            |
+| RTM \_ MATCH \_ NEIGHBOUR | 0x00000002 | Corresponde às rotas com o mesmo vizinho.                                     |
+| RTM \_ MATCH \_ PREF      | 0x00000004 | Corresponde a rotas que têm a mesma preferência.                              |
+| RTM \_ MATCH \_ NEXTHOP   | 0x00000008 | Corresponde às rotas que têm o mesmo próximo salto.                                |
+| INTERFACE DE \_ COMBINAÇÃO RTM \_ | 0x00000010 | Corresponde às rotas que estão na mesma interface.                             |
+| RTM \_ MATCH \_ FULL      | 0x0000FFFF | Corresponde a rotas com todos os critérios.                                          |
+| RTM \_ BEST \_ PROTOCOL   | 0          | Retorna uma rota, independentemente de qual protocolo a possui.                      |
+| RTM \_ THIS \_ PROTOCOL   | ~0         | Retorna a melhor rota para o protocolo de chamada.                           |
 
 
 
