@@ -1,8 +1,8 @@
 ---
-description: Assim como acontece com outras linguagens, como PowerShell, VBScript ou C++, você pode usar o C# para monitorar remotamente o hardware e o software em computadores remotos.
+description: Assim como em outras linguagens, como PowerShell, VBScript ou C++, você pode usar o C# para monitorar remotamente o hardware e o software em computadores remotos.
 ms.assetid: 9E03A8D0-01AB-4B7E-99B6-FEEF9C1CAE17
 ms.tgt_platform: multiple
-title: 'Conectando-se ao WMI remotamente com C #'
+title: 'Conectando-se remotamente ao WMI com C #'
 ms.topic: article
 ms.date: 05/31/2018
 topic_type:
@@ -17,22 +17,22 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118319434"
 ---
-# <a name="connecting-to-wmi-remotely-with-c"></a>Conectando-se ao WMI remotamente com C #
+# <a name="connecting-to-wmi-remotely-with-c"></a>Conectando-se remotamente ao WMI com C #
 
-Assim como acontece com outras linguagens, como PowerShell, VBScript ou C++, você pode usar o C# para monitorar remotamente o hardware e o software em computadores remotos. Conexões remotas para código gerenciado são realizadas por meio do namespace [Microsoft. Management. Infrastructure](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832958(v=vs.85)) . (As versões anteriores do WMI usavam o namespace [System. Management](/dotnet/api/system.management) , que está incluído aqui para fins de integridade.)
+Assim como em outras linguagens, como PowerShell, VBScript ou C++, você pode usar o C# para monitorar remotamente o hardware e o software em computadores remotos. As conexões remotas para código gerenciado são realizadas por meio do namespace [Microsoft.Management.Infrastructure.](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832958(v=vs.85)) (As versões anteriores do WMI usavam o namespace [System.Management,](/dotnet/api/system.management) que está incluído aqui para conclusão.)
 
 > [!Note]  
-> **System. Management** foi o namespace .net original usado para acessar o WMI; no entanto, as APIs nesse namespace geralmente são mais lentas e não são dimensionadas em relação às suas contrapartes mais modernas de **Microsoft. Management. Infrastructure** .
+> **System.Management era** o namespace original do .NET usado para acessar o WMI; no entanto, as APIs nesse namespace geralmente são mais lentas e não são tão dimensionamento em relação às contrapartes mais modernas **do Microsoft.Management.Infrastructure.**
 
  
 
-Conectar-se remotamente usando classes no namespace [Microsoft. Management. Infrastructure](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832958(v=vs.85)) usa DCOM como o mecanismo remoto subjacente. As conexões remotas do WMI devem estar em conformidade com os requisitos de segurança DCOM para representação e autenticação. Por padrão, um escopo é associado ao computador local e ao namespace do sistema "raiz \\ CIMv2". No entanto, você pode alterar o computador, o domínio e o namespace WMI que você acessa. Você também pode definir autoridade, representação, credenciais e outras opções de conexão.
+Conectar-se remotamente usando classes no namespace [Microsoft.Management.Infrastructure](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832958(v=vs.85)) usa DCOM como o mecanismo remoto subjacente. As conexões remotas WMI devem estar em conformidade com os requisitos de segurança do DCOM para representação e autenticação. Por padrão, um escopo é vinculado ao computador local e ao namespace do sistema \\ "CIMv2 raiz". No entanto, você pode alterar o computador, o domínio e o namespace WMI que você acessa. Você também pode definir autoridade, representação, credenciais e outras opções de conexão.
 
-**Para se conectar ao WMI remotamente com C# (Microsoft. Management. Infrastructure)**
+**Para se conectar remotamente ao WMI com C# (Microsoft.Management.Infrastructure)**
 
-1.  Crie uma sessão no computador remoto com uma chamada para [CimSession. Create](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832539(v=vs.85)).
+1.  Crie uma sessão no computador remoto com uma chamada para [CimSession.Create.](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832539(v=vs.85))
 
-    Se você estiver se conectando a um computador remoto usando as mesmas credenciais (domínio e nome de usuário) com as quais você fez logon, poderá especificar o nome do computador na chamada de [criação](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832539(v=vs.85)) . Depois de ter o objeto [CimSession](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832509(v=vs.85)) retornado, você poderá fazer sua consulta WMI.
+    Se você estiver se conectando a um computador remoto usando as mesmas credenciais (domínio e nome de usuário) com as quais está conectado, poderá especificar o nome do computador na [chamada Criar.](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832539(v=vs.85)) Depois de ter o objeto [CimSession retornado,](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832509(v=vs.85)) você pode fazer sua consulta WMI.
 
     ```CSharp
     using Microsoft.Management.Infrastructure;
@@ -45,11 +45,11 @@ Conectar-se remotamente usando classes no namespace [Microsoft. Management. Infr
 
     
 
-    Para obter mais informações sobre como fazer consultas WMI com a API **Microsoft. Management. Infrastructure** em C#, consulte [recuperando dados de instância ou classe WMI](retrieving-class-or-instance-data.md).
+    Para obter mais informações sobre como fazer consultas WMI com a API **Microsoft.Management.Infrastructure** em C#, consulte Recuperando dados de instância ou classe [WMI.](retrieving-class-or-instance-data.md)
 
-2.  Se você quiser definir opções diferentes para sua conexão, como diferentes credenciais, localidade ou níveis de representação, você precisará usar um objeto [CimSessionOptions](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832510(v=vs.85)) em sua chamada para [CimSession. Create](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832529(v=vs.85)).
+2.  Se desejar definir opções diferentes para sua conexão, como credenciais diferentes, localidade ou níveis de representação, você precisará usar um objeto [CimSessionOptions](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832510(v=vs.85)) em sua chamada para [CimSession.Create](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832529(v=vs.85)).
 
-    [CimSessionOptions](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832510(v=vs.85)) é uma classe base para [WSManSessionOptions](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh833297(v=vs.85)) e [DComSessionOptions](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832688(v=vs.85)). Você pode usar qualquer um para definir as opções em suas sessões WS-Man e DCOM, respectivamente. O exemplo de código a seguir descreve como usar um objeto [DComSessionOptions](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832688(v=vs.85)) para definir o nível de representação como Impersonate.
+    [CimSessionOptions](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832510(v=vs.85)) é uma classe base [para WSManSessionOptions](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh833297(v=vs.85)) e [DComSessionOptions](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832688(v=vs.85)). Você pode usar qualquer um para definir as opções nas sessões WS-Man e DCOM, respectivamente. O exemplo de código a seguir descreve o uso [de um objeto DComSessionOptions](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832688(v=vs.85)) para definir o nível de Representação como Representar.
 
     ```CSharp
     string computer = "Computer_B"
@@ -61,9 +61,9 @@ Conectar-se remotamente usando classes no namespace [Microsoft. Management. Infr
 
     
 
-3.  Se você quiser definir as credenciais para a conexão, será necessário criar e adicionar um objeto [CimCredentials](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832293(v=vs.85)) ao seu [CimSessionOptions](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832510(v=vs.85)).
+3.  Se você quiser definir as credenciais para sua conexão, precisará criar e adicionar um objeto [CimCredentials](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832293(v=vs.85)) ao [CimSessionOptions.](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832510(v=vs.85))
 
-    O exemplo de código a seguir descreve como criar uma classe [WSManSessionOptions](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh833297(v=vs.85)) , preenchê-la com o [CimSessionOptions](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832510(v=vs.85))apropriado e usá-la em uma chamada [CimSession. Create](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832529(v=vs.85)) .
+    O exemplo de código a seguir descreve como criar uma classe [WSManSessionOptions,](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh833297(v=vs.85)) preenchendo-a com o [CimSessionOptions](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832510(v=vs.85))adequado e usando-a em uma chamada [CimSession.Create.](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832529(v=vs.85))
 
     ```CSharp
     string computer = “Computer_B”;
@@ -85,15 +85,15 @@ Conectar-se remotamente usando classes no namespace [Microsoft. Management. Infr
 
     
 
-    Geralmente, é recomendável que você não codifique uma senha em seus aplicativos; como o exemplo de código acima indica, sempre que possível, tente consultar o usuário para obter a senha e armazená-la com segurança.
+    Geralmente, é recomendável não codificar uma senha em seus aplicativos; como o exemplo de código acima indica, sempre que possível, tente consultar seu usuário quanto à senha e armazená-la com segurança.
 
-O WMI destina-se a monitorar o hardware e o software em computadores remotos. As conexões remotas para o WMI v1 são realizadas por meio do objeto [ManagementScope](/dotnet/api/system.management.managementscope) .
+O WMI destina-se a monitorar o hardware e o software em computadores remotos. As conexões remotas para WMI v1 são realizadas por meio [do objeto ManagementScope.](/dotnet/api/system.management.managementscope)
 
-**Para se conectar ao WMI remotamente com C# (System. Management)**
+**Para se conectar remotamente ao WMI com C# (System.Management)**
 
-1.  Crie um objeto [ManagementScope](/dotnet/api/system.management.managementscope) , usando o nome do computador e o caminho do WMI, e conecte-se ao seu destino com uma chamada para ManagementScope. Conexão ().
+1.  Crie um [objeto ManagementScope](/dotnet/api/system.management.managementscope) usando o nome do computador e o caminho WMI e conecte-se ao seu destino com uma chamada para ManagementScope. Conexão().
 
-    Se você estiver se conectando a um computador remoto usando as mesmas credenciais (domínio e nome de usuário) com as quais você fez logon, você só precisará especificar o caminho WMI. Depois de se conectar, você poderá fazer sua consulta WMI.
+    Se você estiver se conectando a um computador remoto usando as mesmas credenciais (domínio e nome de usuário) com as quais está conectado, você só precisa especificar o caminho WMI. Depois de se conectar, você pode fazer sua consulta WMI.
 
     ```CSharp
     using System.Management;
@@ -106,11 +106,11 @@ O WMI destina-se a monitorar o hardware e o software em computadores remotos. As
 
     
 
-    Para obter mais informações sobre como fazer consultas WMI com a API [System. Management](/dotnet/api/system.management) em C#, consulte [recuperando dados de instância ou classe WMI](retrieving-class-or-instance-data.md).
+    Para obter mais informações sobre como fazer consultas WMI com a API [System.Management](/dotnet/api/system.management) em C#, consulte Recuperando dados de instância ou classe [WMI](retrieving-class-or-instance-data.md).
 
-2.  Se você se conectar a um computador remoto em um domínio diferente ou usar um nome de usuário e senha diferentes, deverá usar um objeto [ConnectionOptions](/dotnet/api/system.management.connectionoptions) na chamada para o [ManagementScope](/dotnet/api/system.management.managementscope).
+2.  Se você se conectar a um computador remoto em um domínio diferente ou usar um nome de usuário e senha diferentes, deverá usar um objeto [ConnectionOptions](/dotnet/api/system.management.connectionoptions) na chamada para [o ManagementScope](/dotnet/api/system.management.managementscope).
 
-    O [ConnectionOptions](/dotnet/api/system.management.connectionoptions) contém propriedades para descrever a autenticação, representação, nome de usuário, senha e outras opções de conexão. O exemplo de código a seguir descreve como usar uma [ConnectionOptions](/dotnet/api/system.management.connectionoptions) para definir o nível de representação como Impersonate.
+    [ConnectionOptions contém propriedades para](/dotnet/api/system.management.connectionoptions) descrever as opções autenticação, representação, nome de usuário, senha e outras opções de conexão. O exemplo de código a seguir descreve o uso [de uma ConnectionOptions](/dotnet/api/system.management.connectionoptions) para definir o nível de representação como Representar.
 
     ```CSharp
     ConnectionOptions options = new ConnectionOptions();
@@ -125,13 +125,13 @@ O WMI destina-se a monitorar o hardware e o software em computadores remotos. As
 
     
 
-    Em geral, é recomendável que você defina seu nível de representação para representar, a menos que seja explicitamente necessário. Além disso, tente evitar escrever seu nome e senha em código C#. (Se possível, consulte se você pode consultar o usuário para fornecê-los dinamicamente no tempo de execução.)
+    Em termos gerais, é recomendável definir o nível de Representação como Representar, a menos que explicitamente necessário de outra forma. Além disso, tente evitar escrever seu nome e senha no código C#. (Se possível, veja se você pode consultar o usuário para fornecer dinamicamente em runtime.)
 
-    Para obter mais exemplos de como definir propriedades diferentes em uma conexão WMI remota, consulte a seção exemplos da página de referência [ConnectionOptions](/dotnet/api/system.management.connectionoptions) .
+    Para obter mais exemplos de como definir propriedades diferentes em uma conexão WMI remota, consulte a seção Exemplos da página de referência [ConnectionOptions.](/dotnet/api/system.management.connectionoptions)
 
-## <a name="microsoftmanagementinfrastructure-example"></a>Exemplo de Microsoft. Management. Infrastructure
+## <a name="microsoftmanagementinfrastructure-example"></a>Exemplo de Microsoft.Management.Infrastructure
 
-O exemplo de código C# a seguir, com base na [postagem de blog a seguir no TechNet](/archive/blogs/josebda/sample-c-code-for-using-the-latest-wmi-classes-to-manage-windows-storage), descreve como usar [CimCredentials](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832293(v=vs.85)) e [WSManSessionOptions](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh833297(v=vs.85)) para definir credenciais em uma conexão remota.
+O exemplo de código C# a seguir, com base na postagem no blog a seguir no [TechNet,](/archive/blogs/josebda/sample-c-code-for-using-the-latest-wmi-classes-to-manage-windows-storage)descreve como usar [CimCredentials](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832293(v=vs.85)) e [WSManSessionOptions](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh833297(v=vs.85)) para definir credenciais em uma conexão remota.
 
 
 ```CSharp
@@ -214,9 +214,9 @@ namespace SMAPIQuery
 
 
 
-## <a name="systemmanagement-example"></a>Exemplo de System. Management
+## <a name="systemmanagement-example"></a>Exemplo de System.Management
 
-O exemplo de código C# a seguir descreve uma conexão remota geral, usando os objetos System. Management.
+O exemplo de código C# a seguir descreve uma conexão remota geral, usando os objetos System.Management.
 
 
 ```CSharp

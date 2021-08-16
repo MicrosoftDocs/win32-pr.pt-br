@@ -1,7 +1,7 @@
 ---
-description: O método removeri remove o item na posição especificada.
+description: O método RemoveI remove o item na posição especificada.
 ms.assetid: 6a6d54ce-7ab3-48dd-8d5d-1315816bcbb9
-title: Método CBaseList. Removei (Wxlist. h)
+title: Método CBaseList.RemoveI (Wxlist.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: a4511a9867f61596572c959a3d763eb56d862311
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ac3277f30e959e42cf2fd2d1aeeb13f81cb17515abb8434a8ae13406d244aaec
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105771870"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117823733"
 ---
-# <a name="cbaselistremovei-method"></a>Método CBaseList. Removei
+# <a name="cbaselistremovei-method"></a>Método CBaseList.RemoveI
 
 O `RemoveI` método remove o item na posição especificada.
 
@@ -45,11 +45,11 @@ void* RemoveI(
 *pos* 
 </dt> <dd>
 
-Valor de posição indicando o item a ser removido.
+Valor POSITION que indica o item a ser removido.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um ponteiro para o item.
 
@@ -57,7 +57,7 @@ Retorna um ponteiro para o item.
 
 Esse método exclui o nó da lista, mas não exclui o item contido nesse nó.
 
-Se o *PDV* for **nulo**, o método retornará **NULL**.
+Se *pos* for **NULL,** o método retornará **NULL.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -65,8 +65,8 @@ Se o *PDV* for **nulo**, o método retornará **NULL**.
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Wxlist. h (incluir fluxos. h)</dt> </dl>                                                                                    |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Wxlist.h (incluir Fluxos.h)</dt> </dl>                                                                                    |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

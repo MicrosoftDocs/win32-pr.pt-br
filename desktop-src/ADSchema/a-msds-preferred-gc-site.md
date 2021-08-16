@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 172e12758ba0b365fa195cb4e1384c161cea3d14
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: e9ed4dc19bd3e75caad7f2fb0edd90584ec9e157942de441a873a170eee41766
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104163648"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117838136"
 ---
 # <a name="ms-ds-preferred-gc-site-attribute"></a>ms-DS-Preferred-GC-atributo de site
 
@@ -58,7 +58,7 @@ O atributo **MS-DS-Preferred-GC-site** é usado pelo gerente de contas de segura
 | ID do link                | \-                                                          |
 | MAPI-Id                | \-                                                          |
 | System-Only            | Falso                                                       |
-| É de valor único       | True                                                        |
+| É de valor único       | Verdadeiro                                                        |
 | É indexado             | Falso                                                       |
 | No catálogo global      | Falso                                                       |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                |
@@ -66,7 +66,7 @@ O atributo **MS-DS-Preferred-GC-site** é usado pelo gerente de contas de segura
 | Range-Upper            | \-                                                          |
 | Search-Flags           | 0x00000000                                                  |
 | System-Flags           | 0x00000010                                                  |
-| Classes usadas em        | [**NTDS – configurações de site**](c-ntdssitesettings.md)<br/> |
+| Classes usadas em        | [**NTDS-Configurações de Site**](c-ntdssitesettings.md)<br/> |
 
 
 
@@ -79,7 +79,7 @@ O atributo **MS-DS-Preferred-GC-site** é usado pelo gerente de contas de segura
 | ID do link                | \-                                                          |
 | MAPI-Id                | \-                                                          |
 | System-Only            | Falso                                                       |
-| É de valor único       | True                                                        |
+| É de valor único       | Verdadeiro                                                        |
 | É indexado             | Falso                                                       |
 | No catálogo global      | Falso                                                       |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                |
@@ -87,7 +87,7 @@ O atributo **MS-DS-Preferred-GC-site** é usado pelo gerente de contas de segura
 | Range-Upper            | \-                                                          |
 | Search-Flags           | 0x00000000                                                  |
 | System-Flags           | 0x00000010                                                  |
-| Classes usadas em        | [**NTDS – configurações de site**](c-ntdssitesettings.md)<br/> |
+| Classes usadas em        | [**NTDS-Configurações de Site**](c-ntdssitesettings.md)<br/> |
 
 
 
@@ -100,7 +100,7 @@ O atributo **MS-DS-Preferred-GC-site** é usado pelo gerente de contas de segura
 | ID do link                | \-                                                          |
 | MAPI-Id                | \-                                                          |
 | System-Only            | Falso                                                       |
-| É de valor único       | True                                                        |
+| É de valor único       | Verdadeiro                                                        |
 | É indexado             | Falso                                                       |
 | No catálogo global      | Falso                                                       |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                |
@@ -108,7 +108,7 @@ O atributo **MS-DS-Preferred-GC-site** é usado pelo gerente de contas de segura
 | Range-Upper            | \-                                                          |
 | Search-Flags           | 0x00000000                                                  |
 | System-Flags           | 0x00000010                                                  |
-| Classes usadas em        | [**NTDS – configurações de site**](c-ntdssitesettings.md)<br/> |
+| Classes usadas em        | [**NTDS-Configurações de Site**](c-ntdssitesettings.md)<br/> |
 
 
 
@@ -121,7 +121,7 @@ O atributo **MS-DS-Preferred-GC-site** é usado pelo gerente de contas de segura
 | ID do link                | \-                                                          |
 | MAPI-Id                | \-                                                          |
 | System-Only            | Falso                                                       |
-| É de valor único       | True                                                        |
+| É de valor único       | Verdadeiro                                                        |
 | É indexado             | Falso                                                       |
 | No catálogo global      | Falso                                                       |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                |
@@ -129,7 +129,7 @@ O atributo **MS-DS-Preferred-GC-site** é usado pelo gerente de contas de segura
 | Range-Upper            | \-                                                          |
 | Search-Flags           | 0x00000000                                                  |
 | System-Flags           | 0x00000010                                                  |
-| Classes usadas em        | [**NTDS – configurações de site**](c-ntdssitesettings.md)<br/> |
+| Classes usadas em        | [**NTDS-Configurações de Site**](c-ntdssitesettings.md)<br/> |
 
 
 
@@ -142,7 +142,7 @@ O atributo **MS-DS-Preferred-GC-site** é usado pelo gerente de contas de segura
 | ID do link                | \-                                                          |
 | MAPI-Id                | \-                                                          |
 | System-Only            | Falso                                                       |
-| É de valor único       | True                                                        |
+| É de valor único       | Verdadeiro                                                        |
 | É indexado             | Falso                                                       |
 | No catálogo global      | Falso                                                       |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                |
@@ -150,7 +150,7 @@ O atributo **MS-DS-Preferred-GC-site** é usado pelo gerente de contas de segura
 | Range-Upper            | \-                                                          |
 | Search-Flags           | 0x00000000                                                  |
 | System-Flags           | 0x00000010                                                  |
-| Classes usadas em        | [**NTDS – configurações de site**](c-ntdssitesettings.md)<br/> |
+| Classes usadas em        | [**NTDS-Configurações de Site**](c-ntdssitesettings.md)<br/> |
 
 
 
@@ -163,7 +163,7 @@ O atributo **MS-DS-Preferred-GC-site** é usado pelo gerente de contas de segura
 | ID do link                | \-                                                          |
 | MAPI-Id                | \-                                                          |
 | System-Only            | Falso                                                       |
-| É de valor único       | True                                                        |
+| É de valor único       | Verdadeiro                                                        |
 | É indexado             | Falso                                                       |
 | No catálogo global      | Falso                                                       |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                |
@@ -171,7 +171,7 @@ O atributo **MS-DS-Preferred-GC-site** é usado pelo gerente de contas de segura
 | Range-Upper            | \-                                                          |
 | Search-Flags           | 0x00000000                                                  |
 | System-Flags           | 0x00000010                                                  |
-| Classes usadas em        | [**NTDS – configurações de site**](c-ntdssitesettings.md)<br/> |
+| Classes usadas em        | [**NTDS-Configurações de Site**](c-ntdssitesettings.md)<br/> |
 
 
 

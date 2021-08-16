@@ -1,7 +1,7 @@
 ---
-description: A classe CBaseInputPin é uma classe base abstrata para implementar Pins de entrada. Essa classe adiciona suporte para a interface IMemInputPin, além do suporte de interface IPin fornecido pelo CBasePin.
+description: A classe CBaseInputPin é uma classe base abstrata para implementar pinos de entrada. Essa classe adiciona suporte para a interface IMemInputPin, além do suporte à interface IPin fornecido pelo CBasePin.
 ms.assetid: 5a2b7f09-8c8b-45da-a4b7-afeb8d5548c1
-title: Classe CBaseInputPin (Amfilter. h)
+title: Classe CBaseInputPin (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,57 +16,57 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: ba55006438a8484b0bf10b95ac8b9d8bbdb56e0f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ab98a2dcb1503e7593912df0e5dff51539855611311d4704e4045816fd6380e1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105756828"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117823876"
 ---
 # <a name="cbaseinputpin-class"></a>Classe CBaseInputPin
 
-![hierarquia de classe CBaseInputPin](images/filter07.png)
+![Hierarquia de classes cbaseinputpin](images/filter07.png)
 
-A `CBaseInputPin` classe é uma classe base abstrata para implementar Pins de entrada. Essa classe adiciona suporte para a interface [**IMemInputPin**](/windows/desktop/api/Strmif/nn-strmif-imeminputpin) , além do suporte de interface [**IPin**](/windows/desktop/api/Strmif/nn-strmif-ipin) fornecido pelo [**CBasePin**](cbasepin.md).
+A `CBaseInputPin` classe é uma classe base abstrata para implementar pinos de entrada. Essa classe adiciona suporte para a interface [**IMemInputPin,**](/windows/desktop/api/Strmif/nn-strmif-imeminputpin) além do suporte à interface [**IPin**](/windows/desktop/api/Strmif/nn-strmif-ipin) fornecido pelo [**CBasePin**](cbasepin.md).
 
 Para usar essa classe, derive uma nova classe e substitua pelo menos os seguintes métodos:
 
 -   [**CBaseInputPin::BeginFlush**](cbaseinputpin-beginflush.md)
--   [**CBaseInputPin:: EndFlush**](cbaseinputpin-endflush.md)
--   [**CBaseInputPin:: receber**](cbaseinputpin-receive.md)
+-   [**CBaseInputPin::EndFlush**](cbaseinputpin-endflush.md)
+-   [**CBaseInputPin::Receive**](cbaseinputpin-receive.md)
 -   [**CBasePin::CheckMediaType**](cbasepin-checkmediatype.md)
--   [**CBasePin:: GetMediaType**](cbasepin-getmediatype.md)
+-   [**CBasePin::GetMediaType**](cbasepin-getmediatype.md)
 
-Dependendo da função do PIN, talvez seja necessário substituir métodos adicionais no `CBaseInputPin` ou **CBasePin**.
+Dependendo da função do pino, talvez seja necessário substituir métodos adicionais no `CBaseInputPin` ou **no CBasePin.**
 
 
 
-| Variáveis de membro protegido                                                 | Descrição                                                                                                 |
+| Variáveis de membro protegidas                                                 | Descrição                                                                                                 |
 |----------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
-| [**\_pAllocator m**](cbaseinputpin-m-pallocator.md)                        | Ponteiro para o alocador de memória.                                                                            |
-| [**\_bReadOnly m**](cbaseinputpin-m-breadonly.md)                          | Sinalizador que indica se o alocador produz amostras de mídia somente leitura.                                 |
-| [**\_bFlushing m**](cbaseinputpin-m-bflushing.md)                          | Sinalizador que indica se o PIN está sendo liberado no momento.                                                  |
-| [**\_SampleProps m**](cbaseinputpin-m-sampleprops.md)                      | Propriedades da amostra mais recente.                                                                       |
+| [**m \_ pAllocator**](cbaseinputpin-m-pallocator.md)                        | Ponteiro para o alocador de memória.                                                                            |
+| [**m \_ bReadOnly**](cbaseinputpin-m-breadonly.md)                          | Sinalizador que indica se o alocador produz amostras de mídia somente leitura.                                 |
+| [**m \_ bFlushing**](cbaseinputpin-m-bflushing.md)                          | Sinalizador que indica se o pino está sendo liberado no momento.                                                  |
+| [**m \_ SampleProps**](cbaseinputpin-m-sampleprops.md)                      | Propriedades do exemplo mais recente.                                                                       |
 | Métodos públicos                                                             | Descrição                                                                                                 |
-| [**CBaseInputPin**](cbaseinputpin-cbaseinputpin.md)                       | Método de construtor.                                                                                         |
-| [**~ CBaseInputPin**](cbaseinputpin--cbaseinputpin.md)                     | Método destruidor.                                                                                          |
-| [**BreakConnect**](cbaseinputpin-breakconnect.md)                         | Libera o PIN de uma conexão.                                                                         |
-| [**IsReadOnly**](cbaseinputpin-isreadonly.md)                             | Consulta se o alocador usa amostras de mídia somente leitura.                                                 |
-| [**Islibere**](cbaseinputpin-isflushing.md)                             | Consulta se o filtro está sendo liberado no momento.                                                           |
-| [**CheckStreaming**](cbaseinputpin-checkstreaming.md)                     | Determina se o PIN pode aceitar amostras. VirtuaisLUNs.                                                     |
+| [**Cbaseinputpin**](cbaseinputpin-cbaseinputpin.md)                       | Método do construtor.                                                                                         |
+| [**~CBaseInputPin**](cbaseinputpin--cbaseinputpin.md)                     | Método destruidor.                                                                                          |
+| [**Breakconnect**](cbaseinputpin-breakconnect.md)                         | Libera o pino de uma conexão.                                                                         |
+| [**IsReadOnly**](cbaseinputpin-isreadonly.md)                             | Consulta se o alocador usa exemplos de mídia somente leitura.                                                 |
+| [**IsFlushing**](cbaseinputpin-isflushing.md)                             | Consulta se o filtro está sendo liberado no momento.                                                           |
+| [**CheckStreaming**](cbaseinputpin-checkstreaming.md)                     | Determina se o pin pode aceitar exemplos. Virtual.                                                     |
 | [**PassNotify**](cbaseinputpin-passnotify.md)                             | Passa uma mensagem de controle de qualidade para o objeto apropriado.                                                 |
-| [**Inativo**](cbaseinputpin-inactive.md)                                 | Notifica o PIN de que o filtro não está mais ativo. VirtuaisLUNs.                                              |
+| [**Inativo**](cbaseinputpin-inactive.md)                                 | Notifica o pino de que o filtro não está mais ativo. Virtual.                                              |
 | [**SampleProps**](cbaseinputpin-sampleprops.md)                           | Recupera as propriedades do exemplo mais recente.                                                         |
 | Métodos IPin                                                               | Descrição                                                                                                 |
-| [**BeginFlush**](cbaseinputpin-beginflush.md)                             | Inicia uma operação de liberação.                                                                                   |
-| [**EndFlush**](cbaseinputpin-endflush.md)                                 | Finaliza uma operação de liberação.                                                                                     |
+| [**Beginflush**](cbaseinputpin-beginflush.md)                             | Inicia uma operação de liberação.                                                                                   |
+| [**Endflush**](cbaseinputpin-endflush.md)                                 | Encerra uma operação de liberação.                                                                                     |
 | Métodos IMemInputPin                                                       | Descrição                                                                                                 |
-| [**Getalocador**](cbaseinputpin-getallocator.md)                         | Recupera o alocador de memória proposto por este pin.                                                        |
+| [**Getallocator**](cbaseinputpin-getallocator.md)                         | Recupera o alocador de memória proposto por esse pino.                                                        |
 | [**NotifyAllocator**](cbaseinputpin-notifyallocator.md)                   | Especifica um alocador para a conexão.                                                                  |
-| [**GetAllocatorRequirements**](cbaseinputpin-getallocatorrequirements.md) | Recupera as propriedades de alocador solicitadas pelo pino de entrada.                                              |
-| [**Recebe**](cbaseinputpin-receive.md)                                   | Recebe o próximo exemplo de mídia no fluxo.                                                               |
+| [**GetAllocatorRequirements**](cbaseinputpin-getallocatorrequirements.md) | Recupera as propriedades do alocador solicitadas pelo pino de entrada.                                              |
+| [**Receber**](cbaseinputpin-receive.md)                                   | Recebe o próximo exemplo de mídia no fluxo.                                                               |
 | [**ReceiveMultiple**](cbaseinputpin-receivemultiple.md)                   | Recebe vários exemplos no fluxo.                                                                    |
-| [**ReceiveCanBlock**](cbaseinputpin-receivecanblock.md)                   | Determina se as chamadas para o método [**CBaseInputPin:: Receive**](cbaseinputpin-receive.md) podem ser bloqueadas. |
+| [**Receivecanblock**](cbaseinputpin-receivecanblock.md)                   | Determina se as chamadas para o [**método CBaseInputPin::Receive**](cbaseinputpin-receive.md) podem ser bloqueados. |
 | Métodos IQualityControl                                                    | Descrição                                                                                                 |
 | [**Notificar**](cbaseinputpin-notify.md)                                     | Recebe uma mensagem de controle de qualidade.                                                                         |
 
@@ -80,8 +80,8 @@ Dependendo da função do PIN, talvez seja necessário substituir métodos adici
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Amfilter. h (incluir fluxos. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Amfilter.h (incluir Fluxos.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

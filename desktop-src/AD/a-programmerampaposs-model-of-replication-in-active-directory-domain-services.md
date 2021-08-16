@@ -8,12 +8,12 @@ keywords:
 - Um modelo de replicação do programador no Active Directory Domain Services
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9ada20bc07411528eaea4b7ff8c773c50ae8b6ec
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: b758a31913d0c306105d0d3ce51e72607530e314d79601e8e5230495458d9793
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104004825"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117841226"
 ---
 # <a name="a-programmers-model-of-replication-in-active-directory-domain-services"></a>Um modelo de replicação do programador no Active Directory Domain Services
 
@@ -39,9 +39,9 @@ O modelo não garante a ordenação de replicação de alterações feitas em ob
 
 O modelo difere da realidade de várias maneiras que afetam apenas o desempenho. Por exemplo, o servidor de Active Directory envia mensagens de replicação que contêm as alterações a vários objetos, mas processa o conteúdo de uma mensagem de vários objetos como se fosse uma série de mensagens de objeto único. O servidor de Active Directory não executa a replicação ponto a ponto conforme descrito no modelo, mas realiza uma replicação transitiva mais complexa e eficiente que é funcionalmente equivalente ao modelo.
 
- 
+ 
 
- 
+ 
 
 
 

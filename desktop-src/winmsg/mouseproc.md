@@ -43,11 +43,11 @@ ms.locfileid: "118200687"
 
 ## <a name="description"></a>Descrição
 
-Uma função de retorno de chamada definida pelo aplicativo ou definida pela biblioteca usada com a [função SetWindowsHookEx.](/windows/desktop/api/winuser/nf-winuser-setwindowshookexw)
+Uma função de retorno de chamada definida por aplicativo ou definida pela biblioteca usada com a função [SetWindowsHookEx](/windows/desktop/api/winuser/nf-winuser-setwindowshookexw) .
 O sistema chama essa função sempre que um aplicativo chama a função [GetMessage](/windows/desktop/api/winuser/nf-winuser-getmessage) ou [PeekMessage](/windows/desktop/api/winuser/nf-winuser-peekmessagew) e há uma mensagem do mouse a ser processada.
 
-O **tipo HOOKPROC** define um ponteiro para essa função de retorno de chamada.
-**MouseProc é** um espaço reservado para o nome da função definida pelo aplicativo ou pela biblioteca.
+O tipo **HOOKPROC** define um ponteiro para essa função de retorno de chamada.
+**MouseProc** é um espaço reservado para o nome da função definida pelo aplicativo ou definido pela biblioteca.
 
 ```cpp
 LRESULT CALLBACK MouseProc(
@@ -64,40 +64,40 @@ LRESULT CALLBACK MouseProc(
 Tipo: **int**
 
 Um código que o procedimento de gancho usa para determinar como processar a mensagem.
-Se *nCode* for menor que zero, o procedimento de gancho deverá passar a mensagem para a função [CallNextHookEx](/windows/desktop/api/winuser/nf-winuser-callnexthookex) sem processamento posterior e deverá retornar o valor retornado por **CallNextHookEx.**
+Se *nCode* for menor que zero, o procedimento de gancho deverá passar a mensagem para a função [CallNextHookEx](/windows/desktop/api/winuser/nf-winuser-callnexthookex) sem processamento adicional e deverá retornar o valor retornado por **CallNextHookEx**.
 Esse parâmetro pode usar um dos valores a seguir.
 
 | Valor | Significado |
 |-------|---------|
-| **HC_ACTION** 0 | Os *parâmetros wParam* *e lParam contêm* informações sobre uma mensagem do mouse. |
-| **HC_NOREMOVE** 3 | Os *parâmetros wParam* e *lParam* contêm informações sobre uma mensagem do mouse e a mensagem do mouse não foi removida da fila de mensagens. (Um aplicativo chamado a **função PeekMessage,** especificando o **sinalizador PM_NOREMOVE.)** |
+| **HC_ACTION** 0 | Os parâmetros *wParam* e *lParam* contêm informações sobre uma mensagem do mouse. |
+| **HC_NOREMOVE** 3 | Os parâmetros *wParam* e *lParam* contêm informações sobre uma mensagem do mouse e a mensagem do mouse não foi removida da fila de mensagens. (Um aplicativo chamado a função **PeekMessage** , especificando o sinalizador **PM_NOREMOVE** .) |
 
 ### <a name="wparam-in"></a>wParam [in]
 
-Tipo: **WPARAM**
+Tipo: **wParam**
 
 O identificador da mensagem do mouse.
 
 ### <a name="lparam-in"></a>lParam [in]
 
-Tipo: **LPARAM**
+Tipo: **lParam**
 
-Um ponteiro para uma [estrutura MOUSEHOOKSTRUCT.](/windows/desktop/api/winuser/ns-winuser-mousehookstruct)
+Um ponteiro para uma estrutura [MOUSEHOOKSTRUCT](/windows/desktop/api/winuser/ns-winuser-mousehookstruct) .
 
 ## <a name="returns"></a>Retornos
 
 Tipo: **LRESULT**
 
-Se *nCode* for menor que zero, o procedimento de gancho deverá retornar o valor retornado por **CallNextHookEx.**
+Se *nCode* for menor que zero, o procedimento de gancho deverá retornar o valor retornado por **CallNextHookEx**.
 
-Se *nCode* for maior ou igual a zero e o procedimento de gancho não tiver processado a mensagem, é altamente recomendável que você chame **CallNextHookEx** e retorne o valor que ele retorna; caso contrário, outros aplicativos que instalaram [WH_MOUSE](about-hooks.md) ganchos não receberão notificações de gancho e poderão se comportar incorretamente como resultado.
-Se o procedimento de gancho processou a mensagem, ele pode retornar um valor diferente de zero para impedir que o sistema passe a mensagem para o procedimento de janela de destino.
+Se *nCode* for maior ou igual a zero, e o procedimento de gancho não processar a mensagem, é altamente recomendável que você chame **CallNextHookEx** e retorne o valor que ele retorna; caso contrário, outros aplicativos que instalaram [WH_MOUSE](about-hooks.md) ganchos não receberão notificações de gancho e poderão se comportar incorretamente como resultado.
+Se o procedimento de gancho tiver processado a mensagem, ele poderá retornar um valor diferente de zero para impedir que o sistema passe a mensagem para o procedimento de janela de destino.
 
 ## <a name="remarks"></a>Comentários
 
-Um aplicativo instala o procedimento de gancho especificando o tipo de gancho WH_MOUSE e um ponteiro para o procedimento de gancho em uma chamada para a **função SetWindowsHookEx.**
+Um aplicativo instala o procedimento de gancho especificando o tipo de gancho WH_MOUSE e um ponteiro para o procedimento de gancho em uma chamada para a função **SetWindowsHookEx** .
 
-O procedimento de gancho não deve instalar uma [função WH_JOURNALPLAYBACK](about-hooks.md) retorno de chamada.
+O procedimento de gancho não deve instalar uma função de retorno de chamada [WH_JOURNALPLAYBACK](about-hooks.md) .
 
 Esse gancho pode ser chamado no contexto do thread que o instalou.
 A chamada é feita enviando uma mensagem para o thread que instalou o gancho.

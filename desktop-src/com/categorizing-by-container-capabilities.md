@@ -35,7 +35,7 @@ HKEY_CLASSES_ROOT\CLSID\{...CLSID_Button...}\Implemented Categories\{...CATID_Co
  
 ```
 
-Compare o exemplo anterior com o próximo exemplo no qual o MyDBControl poderá usar Visual Basic de dados se o contêiner for compatível com ele. No entanto, ele foi definido para que funcione em contêineres que não são Visual Basic associação de dados (talvez por uma API de banco de dados diferente):
+Compare o exemplo anterior com o próximo exemplo no qual o MyDBControl poderá usar Visual Basic de dados se o contêiner for compatível com ele. No entanto, ela foi definida para que funcione em contêineres que não têm suporte Visual Basic associação de dados (talvez por uma API de banco de dados diferente):
 
 ``` syntax
 HKEY_CLASSES_ROOT\CLSID\{...CLSID_MyDBControl...}\Implemented Categories
@@ -54,7 +54,7 @@ HKEY_CLASSES_ROOT\CLSID\{...CLSID_GroupBox...}\Required Categories\{...CATID_Sim
  
 ```
 
-Um contêiner que dá suporte Visual Basic controles de limite de dados, mas não dá suporte a controles de quadro simples, especificaria o Controle CATID e \_ CATID VBDatabound para a interface do usuário do controle \_ de inserção. A lista de controles exibidos para o usuário conteria o botão CLSID \_ e o ClSID \_ MyDBControl. ClSID \_ GroupBox não seria exibido.
+Um contêiner que dá suporte Visual Basic controles de limite de dados, mas não dá suporte a controles de quadro simples, especificaria o Controle CATID e \_ CATID VBDatabound para a interface do usuário do controle de \_ inserção. A lista de controles exibidos para o usuário conteria o botão CLSID \_ e o ClSID \_ MyDBControl. ClSID \_ GroupBox não seria exibido.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

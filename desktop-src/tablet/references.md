@@ -4,12 +4,12 @@ ms.assetid: 9bb10c52-5340-40dc-bb14-20d076c63528
 title: Referências (Tablet PC)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 91c9587f6a2e8751ce3eaf210bb238f38d9c8fdb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3e603f65d11f4aa8b4683da79feb2c4a5f536ee814533e972029da368d939453
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105761531"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117856356"
 ---
 # <a name="references-tablet-pc"></a>Referências (Tablet PC)
 
@@ -17,7 +17,7 @@ Para obter informações sobre como habilitar o reconhecimento de fala em seu ap
 
 Para obter informações sobre acessibilidade da Microsoft, consulte [acessibilidade da Microsoft](https://www.microsoft.com/enable/).
 
-Para obter mais informações sobre as diretrizes de Acessibilidade Ativa da Microsoft para aplicativos baseados no Windows, consulte a seção [acessibilidade](../accessibility/accessibility.md) .
+para obter mais informações sobre as diretrizes de Acessibilidade Ativa da Microsoft para aplicativos baseados em Windows, consulte a seção [acessibilidade](../accessibility/accessibility.md) .
 
  
 

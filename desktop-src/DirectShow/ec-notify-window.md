@@ -1,28 +1,28 @@
 ---
-description: Notifica um filtro sobre a janela do processador de vídeo.
+description: Notifica um filtro da janela do renderador de vídeo.
 ms.assetid: 65d2f40e-c42c-4d71-b9b3-7662a8be0953
-title: EC_NOTIFY_WINDOW (DShow. h)
+title: EC_NOTIFY_WINDOW (Dshow.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b3165247f05e2fb945f02fee43149b84480bd4b2
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 355d4ec8b5b6bea55a2f32f01cc2f83aabeab84443b28e431e5b0d6155acc6d8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105810175"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117820107"
 ---
-# <a name="ec_notify_window"></a>\_janela de notificação do EC \_
+# <a name="ec_notify_window"></a>JANELA \_ NOTIFICAÇÃO \_ DE EC
 
-Notifica um filtro sobre a janela do processador de vídeo.
+Notifica um filtro da janela do renderador de vídeo.
 
 ## <a name="parameters"></a>Parâmetros
 
 <dl> <dt>
 
-<span id="lParam1"></span><span id="lparam1"></span><span id="LPARAM1"></span>*lParam1*
+<span id="lParam1"></span><span id="lparam1"></span><span id="LPARAM1"></span>*Lparam1*
 </dt> <dd>
 
-(**HWND**) Identificador para a janela.
+(**HWND**) Lidar com a janela.
 
 </dd> <dt>
 
@@ -35,11 +35,11 @@ Zero.
 
 ## <a name="default-action"></a>Ação Padrão
 
-Esse evento é usado internamente pelo DirectShow. O Gerenciador do grafo de filtro não passa esse evento para o aplicativo. Os aplicativos não podem substituir a ação padrão para este evento.
+Esse evento é usado internamente por DirectShow. O gerenciador de grafo de filtro não passa esse evento para o aplicativo. Os aplicativos não podem substituir a ação padrão para esse evento.
 
 ## <a name="remarks"></a>Comentários
 
-Quando um processador de vídeo é conectado, ele verifica se o pino de saída upstream dá suporte à interface [**IMediaEventSink**](/windows/desktop/api/Strmif/nn-strmif-imediaeventsink) . Nesse caso, o renderizador envia esse evento para o filtro upstream.
+Quando um renderador de vídeo está conectado, ele verifica se o pino de saída upstream dá suporte à interface [**IMediaEventSink.**](/windows/desktop/api/Strmif/nn-strmif-imediaeventsink) Nesse caso, o renderista envia esse evento para o filtro upstream.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -47,7 +47,7 @@ Quando um processador de vídeo é conectado, ele verifica se o pino de saída u
 
 | Requisito | Valor |
 |-------------------|------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>DShow. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>Dshow.h</dt> </dl> |
 
 
 
@@ -58,7 +58,7 @@ Quando um processador de vídeo é conectado, ele verifica se o pino de saída u
 [Códigos de notificação de eventos](event-notification-codes.md)
 </dt> <dt>
 
-[Notificação de eventos no DirectShow](event-notification-in-directshow.md)
+[Notificação de eventos DirectShow](event-notification-in-directshow.md)
 </dt> </dl>
 
  

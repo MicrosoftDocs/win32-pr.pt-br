@@ -1,5 +1,5 @@
 ---
-title: Adicionando uma origem do evento a uma assinatura iniciada pelo coletor
+title: Adicionando uma origem de evento a uma assinatura iniciada pelo coletor
 description: Para receber um evento encaminhado de uma assinatura de evento, você pode criar uma assinatura iniciada pelo coletor no computador local.
 ms.assetid: f0100938-1702-4ef7-b20e-a0e8df224d18
 ms.tgt_platform: multiple
@@ -12,36 +12,36 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118344207"
 ---
-# <a name="adding-an-event-source-to-a-collector-initiated-subscription"></a>Adicionando uma origem do evento a uma assinatura iniciada pelo coletor
+# <a name="adding-an-event-source-to-a-collector-initiated-subscription"></a>Adicionando uma origem de evento a uma assinatura iniciada pelo coletor
 
-Para receber um evento encaminhado de uma assinatura de evento, você pode criar uma assinatura iniciada pelo coletor no computador local. Para obter mais informações sobre como criar uma assinatura iniciada pelo coletor, consulte o exemplo de código C++ mostrado em [criando uma assinatura do coletor de eventos](creating-an-event-collector-subscription.md).
+Para receber um evento encaminhado de uma assinatura de evento, você pode criar uma assinatura iniciada pelo coletor no computador local. Para obter mais informações sobre como criar uma assinatura iniciada pelo coletor, consulte o exemplo de código C++ mostrado em Criando uma [assinatura do Coletor de Eventos](creating-an-event-collector-subscription.md).
 
-Depois que uma assinatura iniciada pelo coletor tiver sido criada, você poderá adicionar origens do evento à assinatura. Você deve adicionar pelo menos uma origem de evento a uma assinatura para coletar eventos.
+Depois que uma assinatura iniciada pelo coletor tiver sido criada, você poderá adicionar fontes de evento à assinatura. Você deve adicionar pelo menos uma origem de evento a uma assinatura para coletar eventos.
 
 > [!Note]
 >
 > Você pode usar este exemplo de código para adicionar uma origem de evento a uma assinatura ou pode digitar o seguinte comando no prompt de comando:
 >
-> **wecutil SS** *subscriptionname* **/ESA:**_EventSourceAddress_ **/AES/ESE**
+> **wecutil ss** *SubscriptionName* **/esa:**_EventSourceAddress_ **/aes /ese**
 >
 > *EventSourceAddress* pode ser localhost para o computador local ou um nome de domínio totalmente qualificado para um computador remoto.
 
  
 
-Para obter mais informações sobre como adicionar fontes de eventos a uma assinatura de origem iniciada, consulte [Configurando uma assinatura iniciada por origem](setting-up-a-source-initiated-subscription.md).
+Para obter mais informações sobre como adicionar fontes de evento a uma assinatura iniciada por origem, consulte [Configurando uma assinatura iniciada por origem.](setting-up-a-source-initiated-subscription.md)
 
 Este exemplo segue uma série de etapas para adicionar uma origem de evento a uma assinatura iniciada pelo coletor.
 
-**Para adicionar uma origem do evento a uma assinatura iniciada pelo coletor**
+**Para adicionar uma origem de evento a uma assinatura iniciada pelo coletor**
 
-1.  Abra a assinatura existente fornecendo o nome da assinatura e os direitos de acesso como parâmetros para a função [**EcOpenSubscription**](/windows/desktop/api/Evcoll/nf-evcoll-ecopensubscription) . para obter mais informações sobre direitos de acesso, consulte [**Windows constantes do coletor de eventos**](windows-event-collector-constants.md).
-2.  Obtenha a matriz de fontes de eventos da assinatura chamando a função [**EcGetSubscriptionProperty**](/windows/desktop/api/Evcoll/nf-evcoll-ecgetsubscriptionproperty) . Para obter mais informações sobre as propriedades de assinatura que podem ser recuperadas, consulte a enumeração de [**ID de propriedade da assinatura do EC \_ \_ \_**](/windows/desktop/api/Evcoll/ne-evcoll-ec_subscription_property_id) .
-3.  Adicione uma nova origem de evento à matriz de origens de eventos da assinatura chamando a função [**EcInsertObjectArrayElement**](/windows/desktop/api/Evcoll/nf-evcoll-ecinsertobjectarrayelement) .
-4.  Defina as propriedades de origem do evento chamando a função [**EcSetObjectArrayProperty**](/windows/desktop/api/Evcoll/nf-evcoll-ecsetobjectarrayproperty) . A propriedade **EcSubscriptionEventSourceAddress** é definida como um endereço para o computador local (localhost) ou para um nome de domínio totalmente qualificado para um computador remoto. Para obter mais informações sobre as propriedades de origem do evento que podem ser definidas, consulte a enumeração da **ID de propriedade da assinatura do EC \_ \_ \_** .
-5.  Salve a assinatura chamando a função [**EcSaveSubscription**](/windows/desktop/api/Evcoll/nf-evcoll-ecsavesubscription) .
-6.  Feche a assinatura chamando a função [**EcClose**](/windows/desktop/api/Evcoll/nf-evcoll-ecclose) .
+1.  Abra a assinatura existente fornecendo o nome da assinatura e os direitos de acesso como parâmetros para a [**função EcOpenSubscription.**](/windows/desktop/api/Evcoll/nf-evcoll-ecopensubscription) Para obter mais informações sobre direitos de acesso, [**consulte constantes Windows coletor de eventos**](windows-event-collector-constants.md).
+2.  Obter a matriz de fontes de evento da assinatura chamando a [**função EcGetSubscriptionProperty.**](/windows/desktop/api/Evcoll/nf-evcoll-ecgetsubscriptionproperty) Para obter mais informações sobre as propriedades de assinatura que podem ser recuperadas, consulte a enumeração [**\_ \_ \_ ID da PROPRIEDADE DA**](/windows/desktop/api/Evcoll/ne-evcoll-ec_subscription_property_id) ASSINATURA ec.
+3.  Adicione uma nova origem do evento à matriz de fontes de eventos da assinatura chamando a [**função EcInsertObjectArrayElement.**](/windows/desktop/api/Evcoll/nf-evcoll-ecinsertobjectarrayelement)
+4.  De definir as propriedades de origem do evento chamando a [**função EcSetObjectArrayProperty.**](/windows/desktop/api/Evcoll/nf-evcoll-ecsetobjectarrayproperty) A **propriedade EcSubscriptionEventSourceAddress** é definida como um endereço para o computador local (Localhost) ou para um nome de domínio totalmente qualificado para um computador remoto. Para obter mais informações sobre as propriedades de origem do evento que podem ser definidas, consulte a enumeração **\_ \_ \_ ID DA PROPRIEDADE DA ASSINATURA** DE EC.
+5.  Salve a assinatura chamando a [**função EcSaveSubscription.**](/windows/desktop/api/Evcoll/nf-evcoll-ecsavesubscription)
+6.  Feche a assinatura chamando a [**função EcClose.**](/windows/desktop/api/Evcoll/nf-evcoll-ecclose)
 
-O exemplo de código C++ a seguir mostra como adicionar uma origem do evento a uma assinatura iniciada pelo coletor:
+O exemplo de código C++ a seguir mostra como adicionar uma origem de evento a uma assinatura iniciada pelo coletor:
 
 
 ```C++

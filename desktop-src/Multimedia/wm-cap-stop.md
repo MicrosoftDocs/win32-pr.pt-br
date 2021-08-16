@@ -1,9 +1,9 @@
 ---
-title: WM_CAP_STOP mensagem (Vfw.h)
-description: A mensagem WM \_ CAP STOP interrompe a operação de \_ captura. Você pode enviar essa mensagem explicitamente ou usando a macro capCaptureStop.
+title: Mensagem de WM_CAP_STOP (VFW. h)
+description: A mensagem de parada da Cap do WM \_ \_ interrompe a operação de captura. Você pode enviar essa mensagem explicitamente ou usando a macro capCaptureStop.
 ms.assetid: 0fea82f5-f381-485a-82ae-b081b3a5e402
 keywords:
-- WM_CAP_STOP mensagem Windows Multimídia
+- mensagem de WM_CAP_STOP Windows multimídia
 topic_type:
 - apiref
 api_name:
@@ -21,11 +21,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118369325"
 ---
-# <a name="wm_cap_stop-message"></a>Mensagem WM \_ CAP \_ STOP
+# <a name="wm_cap_stop-message"></a>Mensagem de parada do WM \_ Cap \_
 
-A **mensagem WM CAP \_ \_ STOP** interrompe a operação de captura. Você pode enviar essa mensagem explicitamente ou usando a [**macro capCaptureStop.**](/windows/desktop/api/Vfw/nf-vfw-capcapturestop)
+A mensagem de **\_ \_ parada da Cap do WM** interrompe a operação de captura. Você pode enviar essa mensagem explicitamente ou usando a macro [**capCaptureStop**](/windows/desktop/api/Vfw/nf-vfw-capcapturestop) .
 
-Na captura de quadro de etapa, os dados de imagem coletados antes que essa mensagem foi enviada são retidos no arquivo de captura. Uma duração equivalente dos dados de áudio também será mantida no arquivo de captura se a captura de áudio tiver sido habilitada.
+Na captura de quadro da etapa, os dados da imagem coletados antes da mensagem enviada são mantidos no arquivo de captura. Uma duração equivalente de dados de áudio também será retida no arquivo de captura se a captura de áudio tiver sido habilitada.
 
 
 ```C++
@@ -38,11 +38,11 @@ lParam = 0L;
 
 ## <a name="return-value"></a>Valor Retornado
 
-Retornará **TRUE se** for bem-sucedido **ou FALSE** caso contrário.
+Retornará **true** se for bem-sucedido ou **false** caso contrário.
 
 ## <a name="remarks"></a>Comentários
 
-A operação de captura deve produzir para usar essa mensagem. Use a [**mensagem WM \_ CAP \_ ABORT**](wm-cap-abort.md) para abandonar a operação de captura atual.
+A operação de captura deve produzir para usar essa mensagem. Use a mensagem de [**\_ \_ anulação do WM Cap**](wm-cap-abort.md) para abandonar a operação de captura atual.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -52,7 +52,7 @@ A operação de captura deve produzir para usar essa mensagem. Use a [**mensagem
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                       |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                             |
-| Cabeçalho<br/>                   | <dl> <dt>Vfw.h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>VFW. h</dt> </dl> |
 
 
 

@@ -1,21 +1,21 @@
 ---
-description: Amostras do DirectShow
+description: DirectShow Amostras
 ms.assetid: 4166d5ca-5e02-49f6-bcb1-d448f8175a0c
-title: Amostras do DirectShow
+title: DirectShow Amostras
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 09f58c10615aaaa4305a30934e32ef9b11efb18c
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: eb99271821fcef80b66b379b29bd42de0505011fd47c8dfee208e6f00b007208
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104500673"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117821161"
 ---
-# <a name="directshow-samples"></a>Amostras do DirectShow
+# <a name="directshow-samples"></a>DirectShow Amostras
 
-Os exemplos do DirectShow estão incluídos no [SDK do Windows](https://msdn.microsoft.com/windows/aa904949.aspx). Elas estão localizadas no caminho \[ raiz do SDK \] \\ exemplos de \\ multimídia \\ DirectShow.
+os exemplos de DirectShow estão incluídos no [SDK do Windows](https://msdn.microsoft.com/windows/aa904949.aspx). Elas estão localizadas na DirectShow de multimídia de amostras do SDK do Path \[ \] \\ \\ \\ .
 
-A tabela a seguir lista todos os exemplos do DirectShow fornecidos no SDK do Windows. Para obter instruções sobre como criar os exemplos, consulte a documentação fornecida na SDK do Windows.
+a tabela a seguir lista todos os exemplos de DirectShow fornecidos no SDK do Windows. para obter instruções sobre como criar os exemplos, consulte a documentação fornecida na SDK do Windows.
 
 Se houver documentação adicional para um exemplo, a primeira coluna desta tabela será vinculada a ela.
 
@@ -38,9 +38,9 @@ Se houver documentação adicional para um exemplo, a primeira coluna desta tabe
 </thead>
 <tbody>
 <tr class="odd">
-<td><a href="directshow-base-classes.md">Classes base do DirectShow</a></td>
+<td><a href="directshow-base-classes.md">DirectShow Classes base</a></td>
 <td>Biblioteca de classes base</td>
-<td>Classes C++ e funções de utilitário projetadas para implementar filtros do DirectShow.</td>
+<td>classes C++ e funções de utilitário projetadas para implementar filtros de DirectShow.</td>
 
 </tr>
 <tr class="even">
@@ -62,9 +62,9 @@ Se houver documentação adicional para um exemplo, a primeira coluna desta tabe
 
 </tr>
 <tr class="odd">
-<td><a href="dmo-demo-sample.md">Exemplo de demonstração de DMO</a></td>
+<td><a href="dmo-demo-sample.md">DMO Exemplo de demonstração</a></td>
 <td>DMO</td>
-<td>Transmite dados de áudio de um arquivo WAV por meio de um efeito de áudio DMO.</td>
+<td>Fluxos dados de áudio de um arquivo WAV por meio de um efeito de áudio DMO.</td>
 <td>SDK do DirectX</td>
 </tr>
 <tr class="even">
@@ -178,7 +178,7 @@ Se houver documentação adicional para um exemplo, a primeira coluna desta tabe
 <tr class="even">
 <td>Exemplo de DDrawXCL</td>
 <td>Reprodução</td>
-<td>Reproduz o vídeo no modo de tela inteira exclusivo do DirectDraw, usando a interface <a href="/windows/desktop/api/Strmif/nn-strmif-iddrawexclmodevideo"><strong>IDDrawExclModeVideo</strong></a> no filtro de <a href="overlay-mixer-filter.md">mixer de sobreposição</a> .</td>
+<td>reproduz o vídeo no modo de tela inteira exclusivo do DirectDraw, usando a interface <a href="/windows/desktop/api/Strmif/nn-strmif-iddrawexclmodevideo"><strong>IDDrawExclModeVideo</strong></a> na <a href="overlay-mixer-filter.md">sobreposição Mixer</a> filtro.</td>
 
 </tr>
 <tr class="odd">
@@ -190,54 +190,54 @@ Se houver documentação adicional para um exemplo, a primeira coluna desta tabe
 <tr class="even">
 <td>Exemplo de EVRPlayer</td>
 <td>Reprodução</td>
-<td>Demonstra como usar o filtro EVR do DirectShow.
+<td>Demonstra como usar o filtro DirectShow EVR.
 <blockquote>
 [!Note]<br />
-Requer o Windows Vista ou posterior.
+Requer Windows Vista ou posterior.
 </blockquote>
 <br/> <br/> Este exemplo está disponível no SDK do Windows para Windows Server 2008 ou posterior.<br/></td>
-<td>Strmbase. lib</td>
+<td>strmbase.lib</td>
 </tr>
 <tr class="odd">
-<td>Exemplo de Texture3D9</td>
+<td>Amostra Texture3D9</td>
 <td>Reprodução</td>
-<td>Desenha vídeo em uma superfície de textura do Microsoft DirectX 9,0.</td>
-<td>Strmbase. lib, SDK do DirectX</td>
+<td>Desenha vídeo em uma superfície de textura do Microsoft DirectX 9.0.</td>
+<td>strmbase.lib, SDK do DirectX</td>
 </tr>
 <tr class="even">
-<td><a href="ticker-sample.md">Exemplo de marca</a></td>
+<td><a href="ticker-sample.md">Exemplo de tique</a></td>
 <td>VMR-9</td>
-<td>Usa o VMR-9 para misturar vídeo e texto.</td>
+<td>Usa a VMR-9 para combinar vídeo e texto.</td>
 
 </tr>
 <tr class="odd">
 <td>Exemplo de VMR9Allocator</td>
 <td>VMR-9</td>
-<td>Implementa um apresentador de alocador personalizado para o VMR-9.</td>
-<td>Strmbase. lib</td>
+<td>Implementa um alocador-presenter personalizado para a VMR-9.</td>
+<td>strmbase.lib</td>
 </tr>
 <tr class="even">
 <td>Exemplo de VMR9Compositor</td>
 <td>VMR-9</td>
-<td>Implementa um mixer personalizado para o VMR-9.</td>
+<td>Implementa um mixer personalizado para a VMR-9.</td>
 
 </tr>
 <tr class="odd">
 <td><a href="vmrplayer-sample.md">Exemplo de VMRPlayer</a></td>
 <td>VMR-9</td>
-<td>Usa o VMR-9 para misturar um ou dois vídeos em execução e uma imagem estática.</td>
+<td>Usa a VMR-9 para combinar um ou dois vídeos em execução e uma imagem estática.</td>
 
 </tr>
 <tr class="even">
-<td>Exemplo de marca d' água</td>
+<td>Exemplo de marca-d'água</td>
 <td>VMR-9</td>
-<td>Combina um bitmap estático em um vídeo durante a reprodução, usando o VMR-9.</td>
+<td>Combina um bitmap estático em um vídeo durante a reprodução, usando a VMR-9.</td>
 
 </tr>
 <tr class="odd">
 <td><a href="windowless-sample.md">Exemplo sem janela</a></td>
 <td>VMR-9</td>
-<td>Demonstra o modo sem janela no VMR-9.</td>
+<td>Demonstra o modo sem janela na VMR-9.</td>
 
 </tr>
 </tbody>
@@ -249,17 +249,17 @@ Requer o Windows Vista ou posterior.
 
 ## <a name="additional-dependencies"></a>Dependências adicionais
 
-Alguns dos exemplos são vinculados à biblioteca de classes base do DirectShow. Para criar esses exemplos, você deve primeiro compilar a biblioteca de classes base. Para obter mais informações, consulte [classes base do DirectShow](directshow-base-classes.md). A biblioteca de classes base é necessária para todos os filtros de exemplo.
+Alguns dos exemplos vinculam-se à biblioteca DirectShow de classes base. Para criar esses exemplos, primeiro você deve criar a biblioteca de classes base. Para obter mais informações, [consulte DirectShow classes base](directshow-base-classes.md). A biblioteca de classes base é necessária para todos os filtros de exemplo.
 
-Alguns dos exemplos também exigem o SDK do DirectX, além do SDK do Windows. Para criar esses exemplos, você deve instalar o SDK do DirectX e definir a variável de ambiente% DXSDK \_ dir%, igual ao seu caminho de instalação do SDK do DirectX.
+Alguns dos exemplos também exigem o SDK do DirectX, além do SDK do Windows. Para criar esses exemplos, você deve instalar o SDK do DirectX e definir a variável de ambiente %DXSDK DIR% igual ao caminho de instalação do \_ SDK do DirectX.
 
-Muitos dos exemplos do DirectShow usam um conjunto de cabeçalhos comuns e arquivos de origem localizados nos exemplos de raiz do SDK do directrory \[ \] \\ \\ multimídia do \\ DirectShow \\ comum. Se você copiar uma pasta de exemplo para outro diretório, certifique-se de copiar a pasta comum também.
+Muitos dos exemplos DirectShow usam um conjunto de arquivos de origem e de headers comuns localizados na multimídia de exemplos raiz do SDK do directrory \[ \] \\ \\ DirectShow \\ \\ Comum. Se você copiar uma pasta de exemplo para outro diretório, copie a pasta Comum também.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[Configurando o ambiente de compilação](setting-up-the-build-environment.md)
+[Configurando o ambiente de build](setting-up-the-build-environment.md)
 </dt> </dl>
 
  

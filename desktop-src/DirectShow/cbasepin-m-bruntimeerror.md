@@ -1,7 +1,7 @@
 ---
-description: Sinalizador que indica se ocorreu um erro em tempo de execução.
+description: Sinalizador que indica se ocorreu um erro em tempo de executar.
 ms.assetid: 917bcb21-a11e-4ac5-af96-565f61c155cd
-title: 'Membro CBasePin:: m_bRunTimeError (Amfilter. h)'
+title: Membro CBasePin::m_bRunTimeError (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 5e8b0c5548d3089a6e619f88db5e4eed19b12be8
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ffc07a15f7c34744be52c5e2c7b5233e1885b58c5b9b7d078871277f8fc0efd1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105752903"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117823328"
 ---
-# <a name="cbasepinm_bruntimeerror-member"></a>Membro de CBasePin:: m \_ bRunTimeError
+# <a name="cbasepinm_bruntimeerror-member"></a>Membro CBasePin::m \_ bRunTimeError
 
-Sinalizador que indica se ocorreu um erro em tempo de execução.
+Sinalizador que indica se ocorreu um erro em tempo de executar.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -38,7 +38,7 @@ bool m_bRunTimeError;
 
 ## <a name="remarks"></a>Comentários
 
-Esse sinalizador assume como padrão **false**. Defina o sinalizador como **verdadeiro** se ocorrer um erro em tempo de execução durante o streaming. O método [**CBasePin:: Inactive**](cbasepin-inactive.md) redefine o sinalizador como **false**.
+Esse sinalizador assume FALSE como **padrão.** De definir o sinalizador **como TRUE** se ocorrer um erro em tempo de run time durante o streaming. O [**método CBasePin::Inactive**](cbasepin-inactive.md) redefine o sinalizador para **FALSE.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -46,8 +46,8 @@ Esse sinalizador assume como padrão **false**. Defina o sinalizador como **verd
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Amfilter. h (incluir fluxos. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Amfilter.h (incluir Fluxos.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

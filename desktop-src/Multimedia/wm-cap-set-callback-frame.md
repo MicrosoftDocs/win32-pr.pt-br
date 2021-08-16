@@ -1,9 +1,9 @@
 ---
-title: WM_CAP_SET_CALLBACK_FRAME mensagem (Vfw.h)
-description: A mensagem WM \_ CAP \_ SET \_ CALLBACK FRAME define uma função de \_ retorno de chamada de visualização no aplicativo. O AVICap chama esse procedimento quando a janela de captura captura quadros de visualização. Você pode enviar essa mensagem explicitamente ou usando a macro capSetCallbackOnFrame.
+title: Mensagem de WM_CAP_SET_CALLBACK_FRAME (VFW. h)
+description: A mensagem do quadro de retorno do WM \_ Cap \_ set \_ \_ define uma função de retorno de chamada de visualização no aplicativo. AVICap chama esse procedimento quando a janela de captura captura quadros de visualização. Você pode enviar essa mensagem explicitamente ou usando a macro capSetCallbackOnFrame.
 ms.assetid: 3882e6f6-c48c-4e50-9697-cbdf5b9342a5
 keywords:
-- WM_CAP_SET_CALLBACK_FRAME mensagem Windows Multimídia
+- mensagem de WM_CAP_SET_CALLBACK_FRAME Windows multimídia
 topic_type:
 - apiref
 api_name:
@@ -21,9 +21,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118369504"
 ---
-# <a name="wm_cap_set_callback_frame-message"></a>Mensagem WM \_ CAP \_ SET \_ CALLBACK \_ FRAME
+# <a name="wm_cap_set_callback_frame-message"></a>Mensagem do quadro de retorno de chamada do WM \_ Cap \_ set \_ \_
 
-A **mensagem WM CAP SET \_ \_ \_ CALLBACK \_ FRAME** define uma função de retorno de chamada de visualização no aplicativo. O AVICap chama esse procedimento quando a janela de captura captura quadros de visualização. Você pode enviar essa mensagem explicitamente ou usando a [**macro capSetCallbackOnFrame.**](/windows/desktop/api/Vfw/nf-vfw-capsetcallbackonframe)
+A mensagem do **quadro de retorno do WM \_ Cap \_ \_ \_ set** define uma função de retorno de chamada de visualização no aplicativo. AVICap chama esse procedimento quando a janela de captura captura quadros de visualização. Você pode enviar essa mensagem explicitamente ou usando a macro [**capSetCallbackOnFrame**](/windows/desktop/api/Vfw/nf-vfw-capsetcallbackonframe) .
 
 
 ```C++
@@ -41,13 +41,13 @@ lParam = (LPARAM) (LPVOID) (fpProc);
 <span id="fpProc"></span><span id="fpproc"></span><span id="FPPROC"></span>*fpProc*
 </dt> <dd>
 
-Ponteiro para a função de retorno de chamada de visualização, do [**tipo capVideoStreamCallback**](/windows/desktop/api/Vfw/nc-vfw-capvideocallback). **Especifique NULL** para esse parâmetro para desabilitar uma função de retorno de chamada instalada anteriormente.
+Ponteiro para a função de retorno de chamada de visualização, do tipo [**capVideoStreamCallback**](/windows/desktop/api/Vfw/nc-vfw-capvideocallback). Especifique **NULL** para esse parâmetro para desabilitar uma função de retorno de chamada instalada anteriormente.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor Retornado
 
-Retornará **TRUE** se for bem-sucedido **ou FALSE** se a captura de streaming ou uma sessão de captura de quadro único estiver em andamento.
+Retornará **true** se for bem-sucedido ou **false** se a captura de streaming ou uma sessão de captura de quadro único estiver em andamento.
 
 ## <a name="remarks"></a>Comentários
 
@@ -61,7 +61,7 @@ A janela de captura chama a função de retorno de chamada antes de exibir quadr
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                       |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                             |
-| Cabeçalho<br/>                   | <dl> <dt>Vfw.h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>VFW. h</dt> </dl> |
 
 
 

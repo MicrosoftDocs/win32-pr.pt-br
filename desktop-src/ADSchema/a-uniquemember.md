@@ -13,12 +13,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1a9cf5ade98d14d61920649bfe7f1cf895761042
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 9cd4b57a60b776a0141561ffb99a3604f793e6233977df106ace5c851bf1cf6a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103825258"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117836479"
 ---
 # <a name="uniquemember-attribute"></a>atributo uniqueMember
 
@@ -119,10 +119,10 @@ O nome distinto para o membro de um grupo. Usado por groupOfUniqueNames.
 | ID do link                | \-                                                            |
 | MAPI-Id                | \-                                                            |
 | System-Only            | Falso                                                         |
-| É de valor único       | Falso                                                         |
+| Tem valor único       | Falso                                                         |
 | É indexado             | Falso                                                         |
-| No catálogo global      | Falso                                                         |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                  |
+| No Catálogo Global      | Falso                                                         |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                  |
 | Range-Lower            | \-                                                            |
 | Range-Upper            | \-                                                            |
 | Search-Flags           | 0x00000000                                                    |
@@ -140,10 +140,10 @@ O nome distinto para o membro de um grupo. Usado por groupOfUniqueNames.
 | ID do link                | \-                                                            |
 | MAPI-Id                | \-                                                            |
 | System-Only            | Falso                                                         |
-| É de valor único       | Falso                                                         |
+| Tem valor único       | Falso                                                         |
 | É indexado             | Falso                                                         |
-| No catálogo global      | Falso                                                         |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                  |
+| No Catálogo Global      | Falso                                                         |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                  |
 | Range-Lower            | \-                                                            |
 | Range-Upper            | \-                                                            |
 | Search-Flags           | 0x00000000                                                    |

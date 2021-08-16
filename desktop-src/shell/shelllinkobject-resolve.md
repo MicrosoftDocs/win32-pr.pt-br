@@ -1,7 +1,7 @@
 ---
 description: Procura o destino de um link do Shell, mesmo que o destino tenha sido movido ou renomeado.
 ms.assetid: 60e119be-8e45-4f63-a381-cad048de0765
-title: Método ShellLinkObject. resolve (shldisp. h)
+title: Método ShellLinkObject.Resolve (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: b1cb0760f1ee19acfa10208711e73919fd084ecf
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fdff3fd1a606b8dbec35476988497dd14892692a42e6502343716264873c184d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104968212"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117857489"
 ---
-# <a name="shelllinkobjectresolve-method"></a>Método ShellLinkObject. resolve
+# <a name="shelllinkobjectresolve-method"></a>Método ShellLinkObject.Resolve
 
 Procura o destino de um link do Shell, mesmo que o destino tenha sido movido ou renomeado.
 
@@ -39,12 +39,12 @@ iRetVal = ShellLinkObject.Resolve(
 
 <dl> <dt>
 
-*fFlags* \[ no\]
+*fFlags* \[ Em\]
 </dt> <dd>
 
-Tipo: **inteiro**
+Tipo: **Inteiro**
 
-Sinalizadores que especificam a ação a ser executada. Isso pode ser uma combinação dos seguintes valores:
+Sinalizadores que especificam a ação a ser tomada. Isso pode ser uma combinação dos seguintes valores:
 
 <dt>
 
@@ -55,7 +55,7 @@ Sinalizadores que especificam a ação a ser executada. Isso pode ser uma combin
 
 </dt> <dd>
 
-Não exibir uma caixa de diálogo se o link não puder ser resolvido. Quando esse sinalizador é definido, a palavra de ordem superior de *fFlags* especifica uma duração de tempo limite, em milissegundos. O método retornará se o link não puder ser resolvido dentro da duração do tempo limite. Se a palavra de ordem superior for definida como zero, a duração do tempo limite padrão será de 3000 milissegundos (3 segundos).
+Não exibir uma caixa de diálogo se o link não puder ser resolvido. Quando esse sinalizador é definido, a palavra de ordem alta *de fFlags* especifica uma duração de tempo-tempo, em milissegundos. O método retornará se o link não puder ser resolvido dentro da duração do tempo-out. Se a palavra de ordem alta for definida como zero, a duração do tempo-out será padrão para 3.000 milissegundos (3 segundos).
 
 </dd> <dt>
 
@@ -66,7 +66,7 @@ Não exibir uma caixa de diálogo se o link não puder ser resolvido. Quando ess
 
 </dt> <dd>
 
-Se o link tiver sido alterado, atualize seu caminho e a lista de identificadores.
+Se o link tiver sido alterado, atualize o caminho e a lista de identificadores.
 
 </dd> <dt>
 
@@ -88,7 +88,7 @@ Não atualize as informações do link.
 
 </dt> <dd>
 
-Não execute a heurística da pesquisa.
+Não execute a heurística de pesquisa.
 
 </dd> <dt>
 
@@ -99,7 +99,7 @@ Não execute a heurística da pesquisa.
 
 </dt> <dd>
 
-Não use o rastreamento de link distribuído.
+Não use o acompanhamento de link distribuído.
 
 </dd> <dt>
 
@@ -110,7 +110,7 @@ Não use o rastreamento de link distribuído.
 
 </dt> <dd>
 
-Desabilitar o rastreamento de link distribuído. Por padrão, o rastreamento de link distribuído controla a mídia removível em vários dispositivos com base no nome do volume. Ele também usa o caminho UNC para rastrear sistemas de arquivos remotos cuja letra da unidade foi alterada. A definição desse sinalizador desabilita os dois tipos de controle.
+Desabilite o acompanhamento de link distribuído. Por padrão, o rastreamento de link distribuído rastreia mídia removível em vários dispositivos com base no nome do volume. Ele também usa o caminho UNC para rastrear sistemas de arquivos remotos cuja letra da unidade foi alterada. Definir esse sinalizador desabilita os dois tipos de acompanhamento.
 
 </dd> <dt>
 
@@ -121,19 +121,19 @@ Desabilitar o rastreamento de link distribuído. Por padrão, o rastreamento de 
 
 </dt> <dd>
 
-Chame o Windows Installer.
+Chame o Windows Instalador.
 
 </dd> </dl> </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-Esse método é essencialmente idêntico na funcionalidade a ser [**resolvida**](/windows/win32/api/shobjidl_core/nf-shobjidl_core-ishelllinka-resolve). Para obter mais informações sobre a resolução de links, consulte a seção comentários da página.
+Esse método é essencialmente idêntico na funcionalidade para [**Resolver**](/windows/win32/api/shobjidl_core/nf-shobjidl_core-ishelllinka-resolve). Para mais discussão sobre a resolução de link, consulte a seção Comentários dessa página.
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo a seguir mostra o uso apropriado desse método para JScript, VBScript e Visual Basic.
+O exemplo a seguir mostra o uso adequado desse método para JScript, VBScript e Visual Basic.
 
-JScript
+JScript:
 
 
 ```JScript
@@ -167,7 +167,7 @@ JScript
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -241,11 +241,11 @@ End Sub
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Somente aplicativos de área de trabalho do Windows 2000 Professional com SP3 \[\]<br/>                                           |
+| Cliente mínimo com suporte<br/> | Windows 2000 Professional somente com aplicativos da área de trabalho SP3 \[\]<br/>                                           |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                          |
-| Cabeçalho<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                          |
-| INSERI<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                        |
-| DLL<br/>                      | <dl> <dt>Shell32.dll (versão 5,0 ou posterior)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
+| DLL<br/>                      | <dl> <dt>Shell32.dll (versão 5.0 ou posterior)</dt> </dl> |
 
 
 

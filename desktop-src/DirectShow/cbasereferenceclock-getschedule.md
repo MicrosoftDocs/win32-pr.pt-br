@@ -1,7 +1,7 @@
 ---
-description: O método GetSchedule recupera um ponteiro para o objeto de agendamento do relógio.
+description: O método getschedule recupera um ponteiro para o objeto de agendamento do relógio.
 ms.assetid: ae509f16-d85f-4365-8cf2-c6585cbbdc3d
-title: Método CBaseReferenceClock.GetSchedule (Refclock.h)
+title: Método CBaseReferenceClock. getschedule (Refclock. h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -23,7 +23,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117822832"
 ---
-# <a name="cbasereferenceclockgetschedule-method"></a>Método CBaseReferenceClock.GetSchedule
+# <a name="cbasereferenceclockgetschedule-method"></a>Método CBaseReferenceClock. getschedule
 
 O `GetSchedule` método recupera um ponteiro para o objeto de agendamento do relógio.
 
@@ -42,7 +42,7 @@ Esse método não tem parâmetros.
 
 ## <a name="return-value"></a>Valor retornado
 
-Retorna a [**variável de membro CBaseReferenceClock::m \_ pSchedule.**](cbasereferenceclock-m-pschedule.md)
+Retorna a variável de membro [**CBaseReferenceClock:: m \_ pSchedule**](cbasereferenceclock-m-pschedule.md) .
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,8 +50,8 @@ Retorna a [**variável de membro CBaseReferenceClock::m \_ pSchedule.**](cbasere
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Refclock.h (incluir Fluxos.h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Refclock. h (incluir Fluxos. h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
 
 
 

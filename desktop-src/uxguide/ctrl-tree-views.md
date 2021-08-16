@@ -114,10 +114,10 @@ Os modos de exibição de árvore têm vários padrões de uso:
 | Uso                           |    Exemplo                         |
 |--------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Exibições de árvore com apenas nós de contêiner**<br/> os usuários podem exibir e interagir com um contêiner por vez. <br/>                        | Normalmente, essas exibições de árvore têm um controle associado que exibe o conteúdo do contêiner selecionado, para que os usuários possam interagir com apenas um contêiner por vez. <br/> ![captura de tela do painel de contêineres e painel de conteúdo ](images/ctrl-tree-views-image6.png)<br/> Neste exemplo, o modo de exibição de árvore tem apenas nós de contêiner. O conteúdo do nó selecionado é exibido no controle de exibição de lista associado.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| **Exibições de árvore com nós de contêiner e folha**<br/> os usuários podem exibir e interagir com contêineres e folhas.<br/>                       | Normalmente, essas exibições de árvore têm um controle associado que exibe o conteúdo do contêiner ou folha selecionado. permitir que os usuários interajam com as folhas geralmente torna necessário dar suporte a várias seleções. <br/> ![captura de tela do painel de exibição de árvore e do painel de conteúdo ](images/ctrl-tree-views-image7.png)<br/> Neste exemplo, o modo de exibição de árvore tem nós de contêiner e folha. como há suporte para várias seleções, o conteúdo dos itens abertos é exibido usando [guias](ctrl-tabs.md) no controle associado.<br/> Como alternativa, o modo de exibição de árvore pode ter uma lista organizada, onde os contêineres são os cabeçalhos e as folhas são opções. <br/> ![captura de tela de exibição em árvore com títulos e opções ](images/ctrl-tree-views-image8.png)<br/> Neste exemplo, a árvore deixa as opções e os contêineres são categorias de opção.<br/> |
-| **Exibições de árvore da caixa de seleção**<br/> os usuários podem selecionar qualquer número de itens, incluindo nenhum.<br/>                                             | As caixas de seleção indicam claramente que a seleção múltipla é possível. Use esse padrão de árvore quando várias seleções forem essenciais ou usadas com frequência. <br/> ![captura de tela de exibição de árvore com caixas de seleção ](images/ctrl-tree-views-image9.png)<br/> Neste exemplo, uma exibição de árvore da caixa de seleção permite que a seleção de recursos seja ativada ou desativada.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-| **Construtores de exibição de árvore**<br/> os usuários podem criar uma árvore adicionando um contêiner ou folha por vez e, opcionalmente, definindo a ordem.<br/> | Muitas árvores podem ser criadas ou modificadas pelos usuários. algumas árvores são criadas no local usando menus de contexto e arrastar e soltar (como as pastas no Windows Explorer), enquanto outras árvores são criadas usando uma caixa de diálogo especializada (como a lista de favoritos no Windows Internet Explorer). <br/> ![captura de tela da caixa de diálogo favoritos ](images/ctrl-tree-views-image10.png)<br/> Neste exemplo do Internet Explorer, os usuários podem criar sua própria lista de favoritos usando uma caixa de diálogo.<br/>                                                                                                                                                                                                                                                                                                                                                                                     |
-| **Exibições de árvore com métodos de acesso alternativos**<br/> os usuários podem encontrar objetos de outras maneiras além de usar uma árvore hierárquica.<br/>        | Conforme mencionado anteriormente, os usuários têm dificuldade em encontrar objetos em árvores grandes e complexas, portanto, essas árvores devem ser complementadas com outros métodos de acesso, como uma pesquisa de palavras, um índice ou uma filtragem. <br/> ![captura de tela de conteúdo, guias de índice e favoritos ](images/ctrl-tree-views-image11.png)<br/> Neste exemplo, os usuários também podem acessar informações usando um sumário, um índice e favoritos. para alguns usuários, as guias de índice e pesquisa podem ser mais úteis do que a guia conteúdo.<br/> ![captura de tela do menu Iniciar do Windows e caixa de pesquisa ](images/ctrl-tree-views-image12.png)<br/> neste exemplo, o Windows menu Iniciar também permite que os usuários acessem programas, arquivos e páginas da Web digitando parte do nome na caixa de pesquisa.<br/>                                                                                                             |
+| **Exibições de árvore com nós de contêiner e folha**<br/> os usuários podem exibir e interagir com contêineres e folhas.<br/>                       | Normalmente, essas exibições de árvore têm um controle associado que exibe o conteúdo do contêiner ou folha selecionado. permitir que os usuários interajam com as folhas geralmente torna necessário dar suporte a várias seleções. <br/> ![captura de tela do painel de exibição de árvore e do painel de conteúdo ](images/ctrl-tree-views-image7.png)<br/> neste exemplo, o exibição de árvore tem nós de contêiner e folha. como há suporte para várias seleções, o conteúdo dos itens abertos é exibido usando [guias](ctrl-tabs.md) no controle associado.<br/> como alternativa, o exibição de árvore pode ter uma lista organizada, em que os contêineres são títulos e as folhas são opções. <br/> ![captura de tela do tree-view com títulos e opções ](images/ctrl-tree-views-image8.png)<br/> Neste exemplo, as folhas de árvore são opções e os contêineres são categorias de opção.<br/> |
+| **Exibições de árvore de caixa de seleção**<br/> os usuários podem selecionar qualquer número de itens, incluindo nenhum.<br/>                                             | As caixas de seleção indicam claramente que várias seleções são possíveis. use esse padrão de árvore quando várias seleções são essenciais ou comumente usadas. <br/> ![captura de tela do exibição de árvore com caixas de seleção ](images/ctrl-tree-views-image9.png)<br/> Neste exemplo, um exibição de árvore de caixa de seleção permite que a seleção de recursos seja ativas ou desligadas.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| **Construtores de exibição de árvore**<br/> os usuários podem criar uma árvore adicionando um contêiner ou folha por vez e, opcionalmente, definindo o pedido.<br/> | Muitas árvores podem ser criadas ou modificadas pelos usuários. algumas árvores são criadas no local usando menus de contexto e do tipo "arrastar e soltar" (como as pastas no Windows Explorer), enquanto outras árvores são criadas usando uma caixa de diálogo especializada (como a lista de favoritos no Windows Internet Explorer). <br/> ![captura de tela da caixa de diálogo favoritos ](images/ctrl-tree-views-image10.png)<br/> Neste exemplo de Internet Explorer, os usuários podem criar sua própria lista de favoritos usando uma caixa de diálogo.<br/>                                                                                                                                                                                                                                                                                                                                                                                     |
+| **Exibições de árvore com métodos de acesso alternativos**<br/> os usuários podem encontrar objetos de maneiras diferentes de usar uma árvore hierárquica.<br/>        | Conforme mencionado anteriormente, os usuários têm problemas para localizar objetos em árvores grandes e complexas, portanto, essas árvores devem ser complementadas com outros métodos de acesso, como uma pesquisa de palavras, um índice ou filtragem. <br/> ![captura de tela das guias conteúdo, índice e favoritos ](images/ctrl-tree-views-image11.png)<br/> neste exemplo, os usuários também podem acessar informações usando um tabela de conteúdo, um índice e favoritos. para alguns usuários, as guias de índice e pesquisa podem ser mais úteis do que a guia conteúdo.<br/> ![captura de tela do menu Iniciar do Windows e caixa de pesquisa ](images/ctrl-tree-views-image12.png)<br/> Neste exemplo, o Windows menu Iniciar também permite que os usuários acessem programas, arquivos e páginas da Web digitando parte do nome na caixa De pesquisa.<br/>                                                                                                             |
 
 
 
@@ -127,74 +127,74 @@ Os modos de exibição de árvore têm vários padrões de uso:
 
 ### <a name="presentation"></a>Apresentação
 
--   **Dentro de um contêiner, classifique os itens em uma ordem lógica.** Classifique os nomes em ordem alfabética, números em ordem numérica e datas em ordem cronológica.
--   **Use o atributo de seleção sempre mostrar** para que os usuários possam imediatamente determinar o item selecionado, mesmo quando o controle não tiver o foco de entrada.
--   **Se a árvore estiver agindo como um sumário, use o único atributo de expansão para simplificar o gerenciamento da árvore.** Dessa forma, apenas a parte relevante da árvore é expandida.
--   **Evite apresentar árvores vazias.** Se um usuário criar uma árvore, inicialize a árvore com instruções ou itens de exemplo que os usuários podem precisar.
+-   **Em um contêiner, classificar os itens em uma ordem lógica.** Classificar nomes em ordem alfabética, números em ordem numérica e datas em ordem cronológica.
+-   **Use o atributo Sempre Mostrar** Seleção para que os usuários possam determinar prontamente o item selecionado, mesmo quando o controle não tiver o foco de entrada.
+-   **Se a árvore estiver atuando como um tabela de conteúdo, use o atributo Expansão Única para simplificar o gerenciamento da árvore.** Dessa forma, somente a parte relevante da árvore é expandida.
+-   **Evite apresentar árvores vazias.** Se um usuário criar uma árvore, inicialize a árvore com instruções ou itens de exemplo que os usuários possam precisar.
 
     ![captura de tela da lista de favoritos do Internet Explorer ](images/ctrl-tree-views-image13.png)
 
-    Neste exemplo, a lista é apresentada inicialmente com exemplos.
+    Neste exemplo, a lista é inicialmente apresentada com exemplos.
 
--   **Não torne os nós de contêiner recolhíveis se os usuários não tiverem motivo para recolhê-los.** Isso adiciona complexidade desnecessária.
--   **Se o desempenho da carga for um problema, exiba somente os contêineres do primeiro e do segundo nível da árvore por padrão.** Em seguida, você pode carregar dados adicionais sob demanda quando um usuário expande branches na árvore.
--   **Se os usuários expandirem ou recolherem um contêiner, fazer esse estado persistir para que ele entre em vigor na próxima vez que o modo de exibição de árvore for exibido**, a menos que os usuários provavelmente prefiram iniciar no estado padrão. A persistência deve estar em uma exibição por árvore, por usuário.
--   **Se contêineres de alto nível tiverem conteúdo semelhante, considere o uso de pistas visuais para diferenciá-los.**
+-   **Não tornar os nós de contêiner reutíveis se os usuários não têm motivo para reacioná-los.** Isso adiciona complexidade desnecessária.
+-   **Se o desempenho da carga for um problema, exibe apenas os contêineres de primeiro e segundo níveis da árvore por padrão.** Em seguida, você pode carregar dados adicionais sob demanda quando um usuário expande branches na árvore.
+-   Se os usuários expandirem ou fecharem um **contêiner,** faça com que esse estado persista para que ele entre em vigor na próxima vez que o modo de exibição de árvore for exibido, a menos que os usuários prefiram começar no estado padrão. A persistência deve ser em uma exibição por árvore, por usuário.
+-   **Se os contêineres de alto nível têm conteúdo semelhante, considere usar pistas visuais para diferenciá-los.**
 
     **Incorreto:**
 
     ![captura de tela de itens do Outlook com ícones diferentes ](images/ctrl-tree-views-image14.png)
 
-    Neste exemplo, as pastas de caixa de correio e de arquivo têm conteúdo semelhante. Depois que as árvores são expandidas ainda mais, é muito difícil para os usuários saber onde estão na árvore, levando a confusão. Usar ícones ligeiramente diferentes nas seções diferentes resolveria esse problema.
+    Neste exemplo, as Pastas de Caixa de Correio e Arquivo Morto têm conteúdo semelhante. Depois que as árvores são expandidas ainda mais, é muito difícil para os usuários saberem onde estão na árvore, levando a confusão. Usar ícones ligeiramente diferentes nas diferentes seções resolveria esse problema.
 
--   **Reconsidere as linhas de conexão.** Embora essas linhas mostrem claramente as relações entre os nós de contêiner e folha, elas adicionam confusão visuais sem a compreensão de auxiliar significativamente. Especificamente, eles não ajudam quando os nós estão próximos, nem ajudam quando os nós estão tão distantes que a rolagem é necessária.
+-   **Reverso linhas de conexão.** Embora essas linhas mostrem claramente as relações entre os nós de contêiner e folha, elas adicionam confusão visual sem ajudar significativamente a compreensão. Especificamente, eles não ajudam quando os nós estão próximos, nem ajudam quando os nós estão tão distantes que a rolagem é necessária.
 
     **Correto:**
 
-    ![captura de tela do modo de exibição de árvore com linhas de conexão ](images/ctrl-tree-views-image15.png)
+    ![captura de tela do exibição de árvore com linhas de conexão ](images/ctrl-tree-views-image15.png)
 
     **Melhor:**
 
-    ![captura de tela do modo de exibição de árvore sem linhas de conexão ](images/ctrl-tree-views-image16.png)
+    ![captura de tela do exibição de árvore sem conectar linhas ](images/ctrl-tree-views-image16.png)
 
     As linhas de conexão fazem pouco para ajudar na compreensão.
 
 ### <a name="interaction"></a>Interação
 
--   **Considere fornecer um comportamento de clique duplo.** Clicar duas vezes deve ter o mesmo efeito que selecionar um item e executar o comando padrão.
--   **Faça com que o comportamento de clique duplo seja redundante.** Sempre deve haver um botão de comando ou comando de menu de contexto que tenha o mesmo efeito.
--   Se um item exigir mais explicações, **forneça a explicação em um InfoTip**.
+-   **Considere fornecer o comportamento de clique duplo.** Clicar duas vezes deve ter o mesmo efeito que selecionar um item e executar seu comando padrão.
+-   **Tornar o comportamento de clique duplo redundante.** Sempre deve haver um botão de comando ou um comando de menu de contexto que tenha o mesmo efeito.
+-   Se um item exigir mais explicações, **forneça a explicação em uma infotip**.
 
-    ![captura de tela de favoritos com InfoTip para um item ](images/ctrl-tree-views-image17.png)
+    ![captura de tela de favoritos com infotip para um item ](images/ctrl-tree-views-image17.png)
 
-    Neste exemplo, um InfoTip fornece mais informações.
+    Neste exemplo, uma infotip fornece mais informações.
 
--   **Fornecer menus de contexto de comandos relevantes.** Esses comandos incluem recortar, copiar, colar, remover ou excluir, renomear e propriedades.
+-   **Forneça menus de contexto de comandos relevantes.** Esses comandos incluem Recortar, Copiar, Colar, Remover ou Excluir, Renomear e Propriedades.
 -   **Ao desabilitar um modo de exibição de árvore, desabilite também todos os rótulos e botões de comando associados.**
 
-### <a name="tree-organization"></a>Organização em árvore
+### <a name="tree-organization"></a>Organização de árvore
 
--   **Use uma estrutura hierárquica natural familiar para a maioria dos usuários.**
--   **Se você não puder usar essa estrutura, tente balancear a capacidade de descoberta com um modelo de usuário previsível que minimize a confusão.**
+-   **Use uma estrutura hierárquica natural que seja familiar para a maioria dos usuários.**
+-   **Se você não puder usar essa estrutura, tente equilibrar a descoberta com um modelo de usuário previsível que minimize a confusão.**
 -   **Para melhorar a descoberta com segurança, coloque um item em vários contêineres quando:**
-    -   O item não está relacionado a nenhum outro item semelhante (para que os usuários não fiquem confusos com associações incorretas).
-    -   Há apenas alguns desses itens localizados de forma redundante (para que a árvore não fique inflada).
--   **Use a estrutura hierárquica mais simples que funciona bem.** Para fazer isso:
-    -   Coloque os objetos acessados com mais frequência nos dois primeiros níveis da árvore (não contando o nó raiz) e coloque objetos menos acessados mais distantes da hierarquia.
-    -   Eliminar contêineres de nível intermediário redundantes ou combinados desnecessários.
--   **Prefira amplitude sobre profundidade.** O ideal é que uma árvore não tenha mais de quatro níveis e os objetos acessados com mais frequência apareçam nos dois primeiros níveis.
--   **Determine se você realmente precisa de um nó raiz.** Forneça um nó raiz se os usuários precisarem da capacidade de executar comandos em toda a árvore (possivelmente usando um menu de contexto no nó raiz). Caso contrário, a árvore é mais simples e fácil de usar sem ela.
--   **Se a árvore tiver métodos de acesso alternativos, como uma pesquisa de palavra ou um índice, otimize a árvore para navegação concentrando-se no conteúdo mais útil.** Com métodos de acesso alternativos, o conteúdo da árvore não precisa ser abrangente. Simplificar a árvore torna mais fácil para os usuários encontrarem o conteúdo mais útil.
+    -   O item não está relacionado a nenhum outro item semelhante (para que os usuários não se confundam por associações incorretas).
+    -   Há apenas alguns desses itens localizados com redundância (para que a árvore não se torne sobrecarrada).
+-   **Use a estrutura hierárquica mais simples que funcione bem.** Para fazer isso:
+    -   Coloque os objetos acessados mais comumente nos dois primeiros níveis da árvore (sem contar o nó raiz) e coloque os objetos acessados com menos acesso mais adiante na hierarquia.
+    -   Elimine contêineres de nível intermediário redundantes ou desnecessários.
+-   **Prefira amplitude em vez de profundidade.** O ideal é que uma árvore não tenha mais de quatro níveis e os objetos acessados mais comumente apareçam nos dois primeiros níveis.
+-   **Determine se você realmente precisa de um nó raiz.** Forneça um nó raiz se os usuários precisam da capacidade de executar comandos em toda a árvore (possivelmente usando um menu de contexto no nó raiz). Caso contrário, a árvore será mais simples e fácil de usar sem ela.
+-   **Se a árvore tiver métodos de acesso alternativos, como uma pesquisa de palavras ou um índice, otimize a árvore para navegação concentrando-se no conteúdo mais útil.** Com métodos de acesso alternativos, o conteúdo da árvore não precisa ser abrangente. Simplificar a árvore torna mais fácil para os usuários encontrar o conteúdo mais útil.
 
-### <a name="check-box-tree-views"></a>Exibições de árvore da caixa de seleção
+### <a name="check-box-tree-views"></a>Exibições de árvore de caixa de seleção
 
--   **Exiba o número de itens selecionados abaixo da lista**, especialmente se for provável que os usuários selecionem vários itens. Esse comentário ajuda os usuários a confirmar que sua seleção está correta.
+-   **Exibe o número de itens selecionados abaixo da lista**, especialmente se os usuários provavelmente selecionarem vários itens. Esse comentário ajuda os usuários a confirmar que sua seleção está correta.
 
     ![captura de tela do número de itens selecionados ](images/ctrl-tree-views-image18.png)
 
     Neste exemplo, o número de itens selecionados é exibido abaixo da árvore. Está claro que dois itens não estão selecionados.
 
--   Se houver potencialmente muitos itens e a seleção ou limpeza de todos eles for provável, adicione selecionar todos e limpar todos os botões de comando.
+-   Se houver potencialmente muitos itens e a seleção ou a limpeza de todos eles for provável, adicione Select all e desmarcar todos os botões de comando.
 -   **Use caixas de seleção de estado misto para indicar a seleção parcial dos itens em um contêiner.**
 
     **Correto:**
@@ -203,51 +203,51 @@ Os modos de exibição de árvore têm vários padrões de uso:
 
     Neste exemplo, as caixas de seleção de estado misto são usadas para indicar a seleção parcial.
 
-## <a name="recommended-sizing-and-spacing"></a>Dimensionamento e espaçamento recomendados
+## <a name="recommended-sizing-and-spacing"></a>Espaçamento e o espaçamento recomendados
 
-![captura de tela de dimensionamento e espaçamento da exibição em árvore ](images/ctrl-tree-views-image20.png)
+![captura de tela do tamanho e do espaçamento de exibição de árvore ](images/ctrl-tree-views-image20.png)
 
-Dimensionamento e espaçamento recomendados para controles de exibição em árvore.
+O espaçamento e o espaçamento recomendados para controles de exibição de árvore.
 
--   **Escolha uma largura de exibição de árvore que evite a necessidade de rolagem horizontal** para a maioria dos itens quando a árvore estiver totalmente expandida.
+-   **Escolha uma largura de exibição de árvore que evite a** necessidade de rolagem horizontal para a maioria dos itens quando a árvore estiver totalmente expandida.
 -   **Inclua 30% adicionais para acomodar a localização.**
--   **Escolha uma altura de exibição de árvore que elimine a rolagem vertical desnecessária.** Considere tornar um modo de exibição de árvore um pouco mais longo (ou ainda mais se houver espaço disponível) se isso reduzir a necessidade de uma barra de rolagem vertical.
+-   **Escolha uma altura de exibição de árvore que elimina a rolagem vertical desnecessária.** Considere tornar um modo de exibição de árvore um pouco mais longo (ou ainda mais, se houver espaço disponível) se isso reduzir a necessidade de uma barra de rolagem vertical.
 
     **Incorreto:**
 
     ![captura de tela do controle de exibição de árvore curto e estreito ](images/ctrl-tree-views-image21.png)
 
-    Neste exemplo, tornar a exibição de árvore um pouco mais larga e mais longa eliminaria as barras de rolagem na maioria dos casos. Nessa árvore específica, apenas um contêiner pode ser aberto por vez.
+    Neste exemplo, tornar o modo de exibição de árvore ligeiramente mais largo e eliminaria as barras de rolagem na maioria dos casos. Nessa árvore específica, apenas um contêiner pode ser aberto por vez.
 
--   **Se os usuários se beneficiarem de tornar a exibição de árvore maior, faça com que a exibição de árvore e sua janela pai resizáveis.** Isso permite que os usuários ajustem o tamanho do modo de exibição de árvore conforme necessário.
+-   **Se os usuários se beneficiarem de tornar o modo de exibição de árvore maior, torne a exibição de árvore e sua janela pai redimensionável.** Isso permite que os usuários ajustem o tamanho da exibição de árvore conforme necessário.
 
 ## <a name="labels"></a>Rótulos
 
 ### <a name="control-labels"></a>Rótulos de controle
 
--   Todas as exibições de árvore precisam de rótulos. Escreva o rótulo como uma palavra ou frase, não como uma frase, terminando com dois-pontos e usando [texto estático](glossary.md).
--   Atribuir uma chave de acesso exclusiva. Para diretrizes de atribuição, consulte [Teclado](inter-keyboard.md).
+-   Todas as exibições de árvore precisam de rótulos. Grave o rótulo como uma palavra ou frase, não como uma frase, terminando com dois-pontos e usando [texto estático](glossary.md).
+-   Atribua uma chave de acesso exclusiva. Para obter diretrizes de atribuição, consulte [teclado](inter-keyboard.md).
 -   Use a capitalização com estilo de frase.
--   Posiciona o rótulo acima do controle e alinhe o rótulo com a borda esquerda do controle.
--   Para exibições de árvore de seleção múltipla, escreva o rótulo para que seja claro que várias seleções são possíveis. Os rótulos de exibição de árvore de caixa de seleção podem ser menos explícitos.
+-   Posicione o rótulo acima do controle e alinhe o rótulo com a borda esquerda do controle.
+-   Para exibições de árvore de seleção múltipla, escreva o rótulo para que fique claro que a seleção múltipla é possível. Os rótulos da exibição de árvore da caixa de seleção podem ser menos explícitos.
 
     **Incorreto:**
 
-    ![captura de tela do exibição de árvore com rótulo de componentes ](images/ctrl-tree-views-image22.png)
+    ![captura de tela do modo de exibição de árvore com rótulo de componentes ](images/ctrl-tree-views-image22.png)
 
-    Neste exemplo, o rótulo não fornece informações sobre várias seleções.
-
-    **Melhor:**
-
-    ![captura de tela do exibição de árvore com o rótulo "um ou mais" ](images/ctrl-tree-views-image23.png)
-
-    Neste exemplo, o rótulo indica claramente que várias seleções são possíveis.
+    Neste exemplo, o rótulo não fornece nenhuma informação sobre a seleção múltipla.
 
     **Melhor:**
 
-    ![captura de tela do exibição de árvore com caixas de seleção ](images/ctrl-tree-views-image24.png)
+    ![captura de tela da exibição de árvore com o rótulo ' um ou mais ' ](images/ctrl-tree-views-image23.png)
 
-    Neste exemplo, as caixas de seleção indicam claramente que várias seleções são possíveis, portanto, o rótulo não precisa ser explícito.
+    Neste exemplo, o rótulo indica claramente que é possível selecionar várias seleções.
+
+    **Recomendá**
+
+    ![captura de tela do modo de exibição de árvore com caixas de seleção ](images/ctrl-tree-views-image24.png)
+
+    Neste exemplo, as caixas de seleção indicam claramente que a seleção múltipla é possível, portanto, o rótulo não precisa ser explícito.
 
 ### <a name="data-text"></a>Texto de dados
 
@@ -255,31 +255,31 @@ Dimensionamento e espaçamento recomendados para controles de exibição em árv
 
 ### <a name="instructional-text"></a>Texto de instrução
 
--   Se você precisar adicionar texto de instrução sobre um exibição de árvore, adicione-o acima do rótulo. Use frases completas com pontuação final.
+-   Se você precisar adicionar texto de instruções sobre um modo de exibição de árvore, adicione-o acima do rótulo. Use frases completas com pontuação final.
 -   Use a capitalização com estilo de frase.
--   As explicações complementares que são úteis, mas não necessárias, devem ser mantidas curtas. Coloque essas informações entre parênteses entre o rótulo e dois-pontos, após a instrução principal, se usada em vez de um rótulo, ou abaixo do controle .
+-   Explicações complementares que são úteis, mas não necessárias, devem ser mantidas curtas. Coloque essas informações entre parênteses entre o rótulo e os dois-pontos, após a instrução principal, se usado em vez de um rótulo ou abaixo do controle.
 
-    ![captura de tela da explicação abaixo do exibição de árvore ](images/ctrl-tree-views-image8.png)
+    ![captura de tela de explicação abaixo do modo de exibição de árvore ](images/ctrl-tree-views-image8.png)
 
-    Neste exemplo, a explicação complementar está abaixo do controle .
+    Neste exemplo, a explicação suplementar está abaixo do controle.
 
 ## <a name="documentation"></a>Documentação
 
 Ao fazer referência a exibições de árvore:
 
--   Use o texto exato do rótulo, incluindo sua capitalização, mas não inclua o sublinhado ou dois-pontos da chave de acesso. Inclua a lista de palavras ou a lista hierárquica se o contexto exigir uma distinção das listas regulares.
+-   Use o texto exato do rótulo, incluindo sua capitalização, mas não inclua a tecla de acesso sublinhado ou dois-pontos. Inclua a lista de palavras ou a lista hierárquica se o contexto exigir uma distinção de listas regulares.
 -   Para itens de árvore, use o texto exato do item, incluindo sua capitalização.
--   Consulte as exibições de árvore como exibições de árvore somente na programação e em outras documentações técnicas. Em qualquer outro lugar, use lista ou lista hierárquica porque o termo árvore é confuso para a maioria dos usuários.
--   Para descrever a interação do usuário, use selecionar para os dados e expanda e retraia para os botões de adoção e subtração.
--   Quando possível, forja o rótulo e os itens de árvore usando texto em negrito. Caso contrário, coloque o rótulo e os itens entre aspas somente se necessário para evitar confusão.
+-   Consulte exibições de árvore como exibições de árvore somente em programação e outras documentações técnicas. Em qualquer outra parte, use lista ou lista hierárquica porque a árvore de termos é confusa para a maioria dos usuários.
+-   Para descrever a interação do usuário, use selecionar para os dados e expanda e recolha para os botões de adição e subtração.
+-   Quando possível, formate o rótulo e os itens de árvore usando texto em negrito. Caso contrário, coloque o rótulo e os itens entre aspas somente se necessário para evitar confusão.
 
-Exemplo: na lista **Conteúdo,** selecione Interface do Usuário **Design**.
+Exemplo: na lista **conteúdo** , selecione **design da interface do usuário**.
 
-Ao fazer referência a caixas de seleção em um exibição de árvore:
+Ao se referir a caixas de seleção em um modo de exibição de árvore:
 
--   Use o texto de rótulo exato, incluindo sua capitalização, e inclua as palavras na caixa de seleção. Não inclua o sublinhado da chave de acesso.
+-   Use o texto exato do rótulo, incluindo sua capitalização, e inclua a caixa de seleção palavras. Não inclua o sublinhado da chave de acesso.
 -   Para descrever a interação do usuário, use selecionar e limpar.
--   Quando possível, forja o rótulo usando texto em negrito. Caso contrário, coloque o rótulo entre aspas somente se necessário para evitar confusão.
+-   Quando possível, formate o rótulo usando texto em negrito. Caso contrário, coloque o rótulo entre aspas somente se necessário para evitar confusão.
 
-Exemplo: na lista **Itens para fazer o back-up,** marque a **Meus Documentos** de seleção.
+Exemplo: na lista **itens para fazer backup** , marque a caixa de seleção **meus documentos** .
 

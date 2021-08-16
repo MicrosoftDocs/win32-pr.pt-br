@@ -1,7 +1,7 @@
 ---
-description: Mensagem privada que traz a janela para o primeiro plano.
+description: Mensagem privada que leva a janela para o primeiro plano.
 ms.assetid: 88b28888-d729-4cf3-8b9d-618dbe150926
-title: 'Membro CBaseWindow:: m_ShowStageMessage (Winutil. h)'
+title: Membro CBaseWindow::m_ShowStageMessage (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -23,9 +23,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117822356"
 ---
-# <a name="cbasewindowm_showstagemessage-member"></a>Membro de CBaseWindow:: m \_ ShowStageMessage
+# <a name="cbasewindowm_showstagemessage-member"></a>Membro CBaseWindow::m \_ ShowStageMessage
 
-Mensagem privada que traz a janela para o primeiro plano.
+Mensagem privada que leva a janela para o primeiro plano.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -38,7 +38,7 @@ UINT m_ShowStageMessage;
 
 ## <a name="remarks"></a>Comentários
 
-O método [**CBaseWindow::D osetwindowforeground**](cbasewindow-dosetwindowforeground.md) envia essa mensagem.
+O [**método CBaseWindow::D oSetWindowForeground**](cbasewindow-dosetwindowforeground.md) envia essa mensagem.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -46,8 +46,8 @@ O método [**CBaseWindow::D osetwindowforeground**](cbasewindow-dosetwindowforeg
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Winutil. h (incluir Fluxos. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Winutil.h (incluir Fluxos.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

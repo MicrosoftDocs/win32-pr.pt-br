@@ -4,16 +4,16 @@ ms.assetid: c00ff132-fee1-47b5-8a8a-df7cb920ad89
 title: Desenvolvimento de decodificador de DVD no DirectShow
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6a3de64b3c1d91dbf5f22ba3e4b4ae8fe78edda5
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 40e868cc21dd95d9cb962dddac7f2adccfbc7894a40dc775eec2ea7003b8f62d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104456802"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117820560"
 ---
 # <a name="dvd-decoder-development-in-directshow"></a>Desenvolvimento de decodificador de DVD no DirectShow
 
-Esta seção contém ponteiros para as páginas de referência de todos os conjuntos de propriedades e interfaces do DirectShow que são específicos de DVD ou mais usados extensivamente na decodificação de DVD. Além do que está listado aqui, um decodificador e seus PINs também devem oferecer suporte às interfaces de filtro do DirectShow genérico, conforme descrito em [escrevendo filtros do DirectShow](writing-directshow-filters.md).
+esta seção contém ponteiros para as páginas de referência de todas as DirectShow conjuntos de propriedades e interfaces que são específicas de dvd ou mais usadas extensivamente na decodificação de dvd. além do que está listado aqui, um decodificador e seus pins também devem dar suporte às interfaces de filtro de DirectShow genéricas, conforme descrito em [escrevendo DirectShow filtros](writing-directshow-filters.md).
 
 Esta seção contém os seguintes tópicos.
 

@@ -1,7 +1,7 @@
 ---
-description: Ocorre quando a seleção de tinta no controle foi alterada, como por meio de alterações na interface do usuário, procedimentos de recortar e colar ou a propriedade Selection.
+description: Ocorre quando a seleção de tinta dentro do controle é alterada, como por meio de alterações para a interface do usuário, procedimentos de recortar e colar ou a propriedade Selection.
 ms.assetid: 6b4cd9fe-b09f-4a70-9aa5-92ef9409ff1b
-title: Evento InkOverlay.SelectionChanged (Msinkaut.h)
+title: Evento InkOverlay. SelectionChanged (Msinkaut. h)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 11bbe4e239b1100277adea0b784a93bf16bf8497cfd8dd44877f7fe7e3fd7652
@@ -11,9 +11,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118218969"
 ---
-# <a name="inkoverlayselectionchanged-event"></a>Evento InkOverlay.SelectionChanged
+# <a name="inkoverlayselectionchanged-event"></a>Evento InkOverlay. SelectionChanged
 
-Ocorre quando a seleção de tinta no controle foi alterada, como por meio de alterações na interface do usuário, procedimentos de recortar e colar ou a [**propriedade Selection.**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkoverlay-get_selection)
+Ocorre quando a seleção de tinta dentro do controle é alterada, como por meio de alterações para a interface do usuário, procedimentos de recortar e colar ou a propriedade [**Selection**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkoverlay-get_selection) .
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -26,7 +26,7 @@ void SelectionChanged();
 
 ## <a name="parameters"></a>Parâmetros
 
-Esse evento não tem parâmetros.
+Este evento não tem parâmetros.
 
 ## <a name="return-value"></a>Valor retornado
 
@@ -36,7 +36,7 @@ Esse evento não retorna um valor.
 
 Não há dados de evento.
 
-Esse método de evento é definido nas interfaces somente de expedição \_ IInkOverlayEvents e \_ IInkPictureEvents (dispinterfaces) com uma ID de \_ DISPID IOESelectionChanged.
+Esse método de evento é definido nas \_ \_ interfaces somente de expedição IInkOverlayEvents e IInkPictureEvents (dispinterfaces) com uma ID de DISPID \_ IOESelectionChanged.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -44,9 +44,9 @@ Esse método de evento é definido nas interfaces somente de expedição \_ IInk
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho do XP Tablet PC \[ Edition\]<br/>                                                       |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do XP Tablet PC Edition\]<br/>                                                       |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                                           |
-| parâmetro<br/>                   | <dl> <dt>Msinkaut.h (também requer Msinkaut \_ i.c)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Msinkaut. h (também requer Msinkaut \_ i. c)</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>InkObj.dll</dt> </dl>                               |
 
 
@@ -58,7 +58,7 @@ Esse método de evento é definido nas interfaces somente de expedição \_ IInk
 [**Classe InkOverlay**](inkoverlay-class.md)
 </dt> <dt>
 
-[**Propriedade Selection**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkoverlay-get_selection)
+[**Propriedade de seleção**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkoverlay-get_selection)
 </dt> </dl>
 
  

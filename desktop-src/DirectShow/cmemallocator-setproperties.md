@@ -1,7 +1,7 @@
 ---
-description: O método SetProperties especifica o número de buffers a serem alocados e o tamanho de cada buffer.
+description: O método SetProperties especifica o número de buffers a alocar e o tamanho de cada buffer.
 ms.assetid: 01f63379-1d66-4a72-b87c-de55504b0bb4
-title: Método CMemAllocator. SetProperties (Amfilter. h)
+title: Método CMemAllocator.SetProperties (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 8505916245cca81fdd84132e4523fe9dd03b971b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5c5a145e630101bda4d060058cde7bfd91796386f0915e9e5329f63ced43ef19
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105778497"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117821961"
 ---
-# <a name="cmemallocatorsetproperties-method"></a>Método CMemAllocator. SetProperties
+# <a name="cmemallocatorsetproperties-method"></a>Método CMemAllocator.SetProperties
 
-O `SetProperties` método especifica o número de buffers a serem alocados e o tamanho de cada buffer.
+O `SetProperties` método especifica o número de buffers a alocar e o tamanho de cada buffer.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -43,33 +43,33 @@ HRESULT SetProperties(
 
 <dl> <dt>
 
-*pRequest* 
+*Prequest* 
 </dt> <dd>
 
-Ponteiro para uma estrutura de [**\_ Propriedades de alocador**](/windows/win32/api/strmif/ns-strmif-allocator_properties) que contém os requisitos de buffer.
+Ponteiro para uma [**estrutura ALLOCATOR \_ PROPERTIES**](/windows/win32/api/strmif/ns-strmif-allocator_properties) que contém os requisitos de buffer.
 
 </dd> <dt>
 
-*pActual* 
+*Pactual* 
 </dt> <dd>
 
-Ponteiro para uma estrutura de **\_ Propriedades de alocador** que recebe as propriedades reais do buffer.
+Ponteiro para uma **estrutura ALLOCATOR \_ PROPERTIES** que recebe as propriedades reais do buffer.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna um dos valores **HRESULT** mostrados na tabela a seguir.
+Retorna um dos **valores HRESULT** mostrados na tabela a seguir.
 
 
 
 | Código de retorno                                                                                                 | Descrição                                                           |
 |-------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>                        | Êxito.<br/>                                                   |
-| <dl> <dt>**\_ponteiro E**</dt> </dl>                   | Argumento de ponteiro **nulo** .<br/>                                 |
-| <dl> <dt>**VFW \_ E \_ já \_ confirmado**</dt> </dl>   | Não é possível alterar a memória alocada enquanto o filtro estiver ativo.<br/> |
+| <dl> <dt>**PONTEIRO \_ E**</dt> </dl>                   | Argumento de ponteiro **NULL.**<br/>                                 |
+| <dl> <dt>**VFW \_ E JÁ FORAM \_ \_ COMPROMETIDOS**</dt> </dl>   | Não é possível alterar a memória alocada enquanto o filtro estiver ativo.<br/> |
 | <dl> <dt>**VFW \_ E \_ BADALIGN**</dt> </dl>             | Foi especificado um alinhamento inválido.<br/>                        |
-| <dl> <dt>**VFW \_ E \_ buffers \_ pendentes**</dt> </dl> | Um ou mais buffers ainda estão ativos.<br/>                      |
+| <dl> <dt>**BUFFERS VFW \_ E \_ \_ PENDENTES**</dt> </dl> | Um ou mais buffers ainda estão ativos.<br/>                      |
 
 
 
@@ -77,9 +77,9 @@ Retorna um dos valores **HRESULT** mostrados na tabela a seguir.
 
 ## <a name="remarks"></a>Comentários
 
-Esse método substitui o método [**CBaseAllocator:: SetProperties**](cbaseallocator-setproperties.md) .
+Esse método substitui o [**método CBaseAllocator::SetProperties.**](cbaseallocator-setproperties.md)
 
-O alinhamento do buffer, especificado pelo membro **cbAlign** da estrutura **de \_ Propriedades do alocador** , deve ser uma potência par de dois.
+O alinhamento do buffer, especificado pelo **membro cbAlign** da estrutura **ALLOCATOR \_ PROPERTIES,** deve ter uma potência de dois.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -87,8 +87,8 @@ O alinhamento do buffer, especificado pelo membro **cbAlign** da estrutura **de 
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Amfilter. h (incluir fluxos. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Amfilter.h (incluir Fluxos.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

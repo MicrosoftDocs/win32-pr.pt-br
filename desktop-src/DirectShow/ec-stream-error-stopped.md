@@ -1,17 +1,17 @@
 ---
 description: Um fluxo foi interrompido devido a um erro.
 ms.assetid: bee05025-161e-49b7-8c9b-79e1ed28315f
-title: EC_STREAM_ERROR_STOPPED (DShow. h)
+title: EC_STREAM_ERROR_STOPPED (Dshow.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fbe0b0488267a9a3b2b9f6098c546240f9b6c704
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7d746dd76315a6db95f2df5e3c79574bdcbfe01004751843aa035f59836cd273
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105758065"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117819966"
 ---
-# <a name="ec_stream_error_stopped"></a>erro de fluxo de EC \_ \_ \_ interrompido
+# <a name="ec_stream_error_stopped"></a>ERRO DE \_ FLUXO \_ DE EC \_ PARADO
 
 Um fluxo foi interrompido devido a um erro.
 
@@ -19,7 +19,7 @@ Um fluxo foi interrompido devido a um erro.
 
 <dl> <dt>
 
-<span id="lParam1"></span><span id="lparam1"></span><span id="LPARAM1"></span>*lParam1*
+<span id="lParam1"></span><span id="lparam1"></span><span id="LPARAM1"></span>*Lparam1*
 </dt> <dd>
 
 (**HRESULT**) Código de falha da operação que falhou.
@@ -43,7 +43,7 @@ Nenhum.
 
 | Requisito | Valor |
 |-------------------|------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>DShow. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>Dshow.h</dt> </dl> |
 
 
 
@@ -54,7 +54,7 @@ Nenhum.
 [Códigos de notificação de eventos](event-notification-codes.md)
 </dt> <dt>
 
-[Notificação de eventos no DirectShow](event-notification-in-directshow.md)
+[Notificação de eventos DirectShow](event-notification-in-directshow.md)
 </dt> </dl>
 
  

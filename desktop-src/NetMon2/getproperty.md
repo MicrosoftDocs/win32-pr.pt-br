@@ -1,7 +1,7 @@
 ---
-description: A função GetProperty retorna um handle para uma determinada propriedade.
+description: A função GetProperty retorna um identificador para uma determinada propriedade.
 ms.assetid: e77ca20a-55df-4d31-aa6d-2c00695f1d6e
-title: Função GetProperty (Netmon.h)
+title: Função GetProperty (Netmon. h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -22,7 +22,7 @@ ms.locfileid: "118365969"
 ---
 # <a name="getproperty-function"></a>Função GetProperty
 
-A **função GetProperty** retorna um handle para uma determinada propriedade.
+A função **GetProperty** retorna um identificador para uma determinada propriedade.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,31 +40,31 @@ HPROPERTY WINAPI GetProperty(
 
 <dl> <dt>
 
-*hProtocol* \[ Em\]
+*hProtocol* \[ no\]
 </dt> <dd>
 
-Lidar com o protocolo.
+Identificador para o protocolo.
 
 </dd> <dt>
 
-*PropertyName* \[ Em\]
+*PropertyName* \[ no\]
 </dt> <dd>
 
-Nome da propriedade (por exemplo, **Checksum**).
+Nome da propriedade (por exemplo, **soma de verificação**).
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor retornado
 
-Se a função for bem-sucedida, o valor de retorno será o alça para a propriedade .
+Se a função for bem-sucedida, o valor de retorno será o identificador para a propriedade.
 
-Se a função não for bem-sucedida, o valor de retorno será **NULL.**
+Se a função não for bem-sucedida, o valor de retorno será **nulo**.
 
 ## <a name="remarks"></a>Comentários
 
-A **função GetProperty** pode ser usada para obter o handle de propriedade necessário para localizar instâncias da propriedade. As funções usadas para localizar instâncias de propriedade [são FindPropertyInstance](findpropertyinstance.md) (que localiza a primeira instância) e [FindPropertyInstanceRestart](findpropertyinstancerestart.md) (que localiza a próxima instância).
+A função **GetProperty** pode ser usada para obter o identificador de propriedade necessário para localizar instâncias da propriedade. As funções usadas para localizar as instâncias de propriedade são [FindPropertyInstance](findpropertyinstance.md) (que localiza a primeira instância) e [FindPropertyInstanceRestart](findpropertyinstancerestart.md) (que localiza a próxima instância).
 
-[*Especialistas*](e.md) e [*analisadores podem*](p.md) chamar a **função GetProperty.**
+Os [*especialistas*](e.md) e os [*analisadores*](p.md) podem chamar a função **GetProperty** .
 
 ## <a name="requirements"></a>Requisitos
 
@@ -74,8 +74,8 @@ A **função GetProperty** pode ser usada para obter o handle de propriedade nec
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                           |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                 |
-| Cabeçalho<br/>                   | <dl> <dt>Netmon.h</dt> </dl>  |
-| Biblioteca<br/>                  | <dl> <dt>Nmapi.lib</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Netmon. h</dt> </dl>  |
+| Biblioteca<br/>                  | <dl> <dt>Nmapi. lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Nmapi.dll</dt> </dl> |
 
 

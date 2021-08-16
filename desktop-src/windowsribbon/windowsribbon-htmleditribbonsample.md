@@ -44,13 +44,13 @@ Para compilar o exemplo no Microsoft Visual Studio, carregue a solução or arqu
 
 ### <a name="running-the-sample"></a>Executando o exemplo
 
-Para executar o exemplo na janela de comando do ambiente de build, execute os arquivos .exe na pasta Bin Debug ou Bin Release contida na \\ \\ pasta de origem de exemplo.
+Para executar o exemplo na janela de comando do ambiente de build, execute os arquivos .exe na pasta Bin Debug ou Bin Release contida na pasta de origem \\ \\ de exemplo.
 
 Para executar o exemplo compilado com a depuração no Visual Studio, pressione F5.
 
 ## <a name="support"></a>Suporte
 
-O [fórum Windows desenvolvimento da faixa](https://social.msdn.microsoft.com/Forums/windowsdesktop/home?forum=windowsribbondevelopment) de opções está disponível para discutir tópicos e fazer perguntas relacionadas ao desenvolvimento de Windows faixa de opções.
+O [Fórum Windows Desenvolvimento](https://social.msdn.microsoft.com/Forums/windowsdesktop/home?forum=windowsribbondevelopment) da Faixa de Opções do Windows está disponível para discutir tópicos e fazer perguntas relacionadas ao desenvolvimento de aplicativos Windows Faixa de Opções.
 
 ## <a name="minimum-requirements"></a>Requisitos mínimos
 
@@ -59,7 +59,7 @@ O [fórum Windows desenvolvimento da faixa](https://social.msdn.microsoft.com/Fo
 | Requisito | Valor |
 |--------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte | Windows 7<br/> Windows Vista com Service Pack 2 (SP2) e [Atualização de plataforma para Windows Vista](https://msdn.microsoft.com/library/dd378748.aspx)<br/>         |
-| Servidor mínimo com suporte | Windows Server 2008 R2<br/> Windows Server 2008 com SP2 e Atualização de Plataforma [para Windows Server 2008](https://msdn.microsoft.com/library/dd378748.aspx)<br/> |
+| Servidor mínimo com suporte | Windows Server 2008 R2<br/> Windows Server 2008 com SP2 e [Atualização de Plataforma para Windows Server 2008](https://msdn.microsoft.com/library/dd378748.aspx)<br/> |
 | SDK do Windows              | 7.0                                                                                                                                                                      |
 | Visual Studio            | 2008                                                                                                                                                                     |
 | Arquivos de IDL e de header     | uiribbon.h, uiribbon.idl                                                                                                                                                 |
@@ -69,7 +69,7 @@ O [fórum Windows desenvolvimento da faixa](https://social.msdn.microsoft.com/Fo
  
 
 > [!Note]  
-> A Atualização de Plataforma para [Windows Vista](https://msdn.microsoft.com/library/dd378748.aspx) e Atualização de Plataforma para o Windows [Server 2008](https://msdn.microsoft.com/library/dd378748.aspx) são conjuntos de bibliotecas em tempo de run time que permitem aos desenvolvedores direcionar aplicativos da Faixa de Opções do Windows para o Windows Vista e o Windows Server 2008. As atualizações da plataforma estarão disponíveis para todos os clientes Windows Vista e Windows Server 2008 por meio Windows Atualização. Aplicativos de terceiros que exigem a Atualização de Plataforma para Windows Vista ou Atualização de Plataforma para [o Windows Server 2008](https://msdn.microsoft.com/library/dd378748.aspx) podem fazer com que Windows Atualização detecte se [o](https://msdn.microsoft.com/library/dd378748.aspx) atualizado necessário está instalado; se não estiver, Windows Update baixará e o instalará em segundo plano.
+> A Atualização de Plataforma para [Windows Vista](https://msdn.microsoft.com/library/dd378748.aspx) e Atualização de Plataforma para o Windows [Server 2008](https://msdn.microsoft.com/library/dd378748.aspx) são conjuntos de bibliotecas em tempo de run time que permitem aos desenvolvedores direcionar aplicativos da Faixa de Opções do Windows para o Windows Vista e o Windows Server 2008. As atualizações da plataforma estarão disponíveis para todos os clientes Windows Vista e Windows Server 2008 por meio do Windows Update. Aplicativos de terceiros que exigem a Atualização de Plataforma para Windows Vista ou Atualização de Plataforma para [o Windows Server 2008](https://msdn.microsoft.com/library/dd378748.aspx) podem fazer com que Windows Atualização detecte se [a](https://msdn.microsoft.com/library/dd378748.aspx) atualização necessária está instalada; se não estiver, Windows Update baixará e o instalará em segundo plano.
 
  
 

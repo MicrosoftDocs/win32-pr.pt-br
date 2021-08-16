@@ -36,7 +36,7 @@ Consulte também a [**estrutura WSAMSG.**](/windows/win32/api/ws2def/ns-ws2def-w
 - **Descrição:** especifica/recebe o ponto de código ECN no campo de header IPv4 do Tipo de Serviço (TOS).
 
 - **Protocolo**: IPv6
-- **Cmsg_level:** IPPROTO_IPV6
+- **Cmsg_level**: IPPROTO_IPV6
 - **Cmsg_type:** IPV6_ECN (50 decimal)
 - **Descrição:** especifica/recebe o ponto de código ECN no campo de header IPv6 da Classe de Tráfego.
 

@@ -174,37 +174,37 @@ Windows o Server 2008 R2 e o Windows 7 apresentam as seguintes alterações ao V
 **VDS_LT_RAID61**  
 
 
-[**VDS_OBJECT_TYPE**](/windows/desktop/api/Vds/ne-vds-vds_object_type) enumeração adicionada:
+[**VDS_OBJECT_TYPE**](/windows/desktop/api/Vds/ne-vds-vds_object_type) valores adicionados à enumeração:
 
 **VDS_OT_STORAGE_POOL**  
 **VDS_OT_VDISK**  
 **VDS_OT_OPEN_VDISK**  
 
 
-[**VDS_PORT_STATUS**](/windows/desktop/api/Vds/ne-vds-vds_port_status) valor adicionado da enumeração:
+[**VDS_PORT_STATUS**](/windows/desktop/api/Vds/ne-vds-vds_port_status) valor adicionado à enumeração:
 
 **VDS_DRS_REMOVED**  
 
 
-[**VDS_PROVIDER_FLAG**](/windows/desktop/api/Vds/ne-vds-vds_provider_flag) enumeração adicionada:
+[**VDS_PROVIDER_FLAG**](/windows/desktop/api/Vds/ne-vds-vds_provider_flag) valores adicionados à enumeração:
 
 **VDS_PF_SUPPORT_MIRROR**  
 **VDS_PF_SUPPORT_RAID5**  
 
 
-[**VDS_PROVIDER_TYPE**](/windows/desktop/api/Vds/ne-vds-vds_provider_type) enumeração adicionada:
+[**VDS_PROVIDER_TYPE**](/windows/desktop/api/Vds/ne-vds-vds_provider_type) valores adicionados à enumeração:
 
 **VDS_PT_VIRTUALDISK**  
 **VDS_PT_MAX**  
 
 
-[**VDS_SERVICE_FLAG**](/windows/desktop/api/Vds/ne-vds-vds_service_flag) enumeração adicionada:
+[**VDS_SERVICE_FLAG**](/windows/desktop/api/Vds/ne-vds-vds_service_flag) valores adicionados à enumeração:
 
 **VDS_SVF_SUPPORT_MIRROR**  
 **VDS_SVF_SUPPORT_RAID5**  
 
 
-[**VDS_SUB_SYSTEM_FLAG**](/windows/desktop/api/Vds/ne-vds-vds_sub_system_flag) enumeração adicionada valores:
+[**VDS_SUB_SYSTEM_FLAG**](/windows/desktop/api/Vds/ne-vds-vds_sub_system_flag) valores adicionados à enumeração:
 
 **VDS_SF_SUPPORTS_LUN_NUMBER**  
 **VDS_SF_SUPPORTS_MIRRORED_CACHE**  
@@ -214,37 +214,37 @@ Windows o Server 2008 R2 e o Windows 7 apresentam as seguintes alterações ao V
 **VDS_SF_CONSISTENCY_CHECK_CAPABLE**  
 
 
-[**VDS_TRANSITION_STATE**](/windows/desktop/api/Vds/ne-vds-vds_transition_state) valor adicionado da enumeração:
+[**VDS_TRANSITION_STATE**](/windows/desktop/api/Vds/ne-vds-vds_transition_state) valor adicionado à enumeração:
 
 **VDS_TS_RESTRIPING**  
 
 
-[**VDS_VERSION_SUPPORT_FLAG**](/windows/desktop/api/Vds/ne-vds-vds_version_support_flag) enumeração adicionada:
+[**VDS_VERSION_SUPPORT_FLAG**](/windows/desktop/api/Vds/ne-vds-vds_version_support_flag) valores adicionados à enumeração:
 
 **VDS_VSF_2_0**  
 **VDS_VSF_2_1**  
 **VDS_VSF_3_0**  
 
 
-[**VDS_VOLUME_STATUS**](/windows/desktop/api/Vds/ne-vds-vds_volume_status) valor adicionado da enumeração:
+[**VDS_VOLUME_STATUS**](/windows/desktop/api/Vds/ne-vds-vds_volume_status) valor adicionado à enumeração:
 
 **VDS_VS_OFFLINE**  
 
 
-## <a name="modifications-to-existing-vds-structures"></a>Modificações em estruturas VDS existentes
+## <a name="modifications-to-existing-vds-structures"></a>Modificações nas estruturas VDS existentes
 
-[**VDS_CONTROLLER_NOTIFICATION**](/windows/desktop/api/Vds/ns-vds-vds_controller_notification) estrutura adicionada valores **ulEvent:**
+[**VDS_CONTROLLER_NOTIFICATION**](/windows/desktop/api/Vds/ns-vds-vds_controller_notification) estrutura adicionou valores de **ulEvent** :
 
 VDS_NF_CONTROLLER_MODIFY  
 VDS_NF_CONTROLLER_REMOVED  
 
 
-[**VDS_DRIVE_NOTIFICATION**](/windows/desktop/api/Vds/ns-vds-vds_drive_notification) estrutura adicionada valor **ulEvent:**
+A estrutura de [**VDS_DRIVE_NOTIFICATION**](/windows/desktop/api/Vds/ns-vds-vds_drive_notification) adicionou o valor **ulEvent** :
 
 VDS_NF_DRIVE_REMOVED  
 
 
-[**VDS_PORT_NOTIFICATION**](/windows/desktop/api/Vds/ns-vds-vds_port_notification) estrutura adicionada valores **ulEvent:**
+[**VDS_PORT_NOTIFICATION**](/windows/desktop/api/Vds/ns-vds-vds_port_notification) estrutura adicionou valores de **ulEvent** :
 
 VDS_NF_PORT_MODIFY  
 VDS_NF_PORT_REMOVED  

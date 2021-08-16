@@ -1,7 +1,7 @@
 ---
-description: Ocorre antes que o objeto InkOverlay ou InkPicture tenha concluído o redesenho.
+description: Ocorre antes que o objeto InkOverlay ou InkPicture tenha concluído a redesenhar a si mesmo.
 ms.assetid: abfd37fb-2d2b-4d60-96a1-08f68b73417b
-title: Evento InkOverlay. Pintation (Msinkaut. h)
+title: Evento InkOverlay.Painting (Msinkaut.h)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 42075f6ae8641c895611196b80a904228cc27c45e5d84bdc798b5cc9242e7c7d
@@ -11,9 +11,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118218931"
 ---
-# <a name="inkoverlaypainting-event"></a>Evento InkOverlay. Pintation
+# <a name="inkoverlaypainting-event"></a>Evento InkOverlay.Painting
 
-Ocorre antes que o objeto [**InkOverlay**](inkoverlay-class.md) ou [InkPicture](inkpicture-control-reference.md) tenha concluído o redesenho.
+Ocorre antes que o [**objeto InkOverlay**](inkoverlay-class.md) ou [InkPicture](inkpicture-control-reference.md) tenha concluído a redesenhar a si mesmo.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -32,24 +32,24 @@ void Painting(
 
 <dl> <dt>
 
-*HDC* \[ no\]
+*hDC* \[ Em\]
 </dt> <dd>
 
 O contexto do dispositivo no qual a pintura ocorrerá.
 
 </dd> <dt>
 
-*Rect* \[ no\]
+*Rect* \[ Em\]
 </dt> <dd>
 
-O retângulo que será redesenhado.
+O retângulo que deve ser repintado.
 
 </dd> <dt>
 
-*Permitir* \[ entrada, saída\]
+*Permitir* \[ in, out\]
 </dt> <dd>
 
-Se o redesenho ocorrerá.
+Se a reint ocorrerá.
 
 </dd> </dl>
 
@@ -59,7 +59,7 @@ Esse evento não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-Esse método de evento é definido nas \_ \_ interfaces somente de expedição IInkOverlayEvents e IInkPictureEvents (dispinterfaces) com uma ID de DISPID \_ IOEPainting.
+Esse método de evento é definido nas interfaces somente de expedição \_ IInkOverlayEvents e \_ IInkPictureEvents (dispinterfaces) com uma ID de \_ IOEPainting DISPID.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -67,9 +67,9 @@ Esse método de evento é definido nas \_ \_ interfaces somente de expedição I
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do XP Tablet PC Edition\]<br/>                                                       |
+| Cliente mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho do XP Tablet PC \[ Edition\]<br/>                                                       |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                                           |
-| parâmetro<br/>                   | <dl> <dt>Msinkaut. h (também requer Msinkaut \_ i. c)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Msinkaut.h (também requer Msinkaut \_ i.c)</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>InkObj.dll</dt> </dl>                               |
 
 

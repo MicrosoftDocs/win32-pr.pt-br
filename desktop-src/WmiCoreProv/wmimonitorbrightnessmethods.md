@@ -24,7 +24,7 @@ ms.locfileid: "118321358"
 ---
 # <a name="wmimonitorbrightnessmethods-class"></a>Classe WmiMonitorBrightnessMethods
 
-A **classe WMI WMI WmiMonitorBrightnessMethods** contém métodos que gerenciam o brilho do monitor.
+A classe WMI **WmiMonitorBrightnessMethods** contém métodos que gerenciam o brilho do monitor.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -38,14 +38,14 @@ class WmiMonitorBrightnessMethods
 
 ## <a name="members"></a>Membros
 
-A **classe WmiMonitorBrightnessMethods** tem estes tipos de membros:
+A classe **WmiMonitorBrightnessMethods** tem estes tipos de membros:
 
 -   [Métodos](#wmimonitorbrightnessmethods-class)
 -   [Propriedades](#properties)
 
 ### <a name="methods"></a>Métodos
 
-A **classe WmiMonitorBrightnessMethods** tem esses métodos.
+A classe **WmiMonitorBrightnessMethods** tem esses métodos.
 
 
 
@@ -62,14 +62,14 @@ A **classe WmiMonitorBrightnessMethods** tem esses métodos.
 
 ### <a name="properties"></a>Propriedades
 
-A **classe WmiMonitorBrightnessMethods** tem essas propriedades.
+A classe **WmiMonitorBrightnessMethods** tem essas propriedades.
 
 <dl> <dt>
 
 **Ativo**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliana**
+Tipo de dados: **booliano**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -88,7 +88,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: **Chave**
+Qualificadores: **chave**
 </dt> </dl>
 
 Nome da instância de monitor específica.
@@ -103,8 +103,8 @@ Nome da instância de monitor específica.
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                               |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                         |
-| Namespace<br/>                | WMI \\ raiz<br/>                                                                   |
-| MOF<br/>                      | <dl> <dt>WmiCore.mof</dt> </dl> |
+| Namespace<br/>                | \\WMI raiz<br/>                                                                   |
+| MOF<br/>                      | <dl> <dt>WmiCore. mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>WmiProv.dll</dt> </dl> |
 
 

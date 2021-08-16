@@ -7,12 +7,12 @@ keywords:
 - Sobre a autenticação mútua usando o AD do Kerberos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9685dad0bd20f233b8dcb0ecf12af338f318646f
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: b020b2d808cee96319cf411b4199bb4ff78f357cfdf8379f01c7d07bc1c5c1c5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104004823"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117841006"
 ---
 # <a name="about-mutual-authentication-using-kerberos"></a>Sobre a autenticação mútua usando o Kerberos
 
@@ -27,12 +27,12 @@ Um serviço autentica um cliente da seguinte maneira: o cliente estabelece um co
 O mecanismo Kerberos pelo qual um cliente autentica um serviço funciona da seguinte maneira: quando um serviço é instalado, um instalador de serviço, executando com privilégios de administrador, registra um ou mais SPNs exclusivos para cada instância de serviço. Os nomes são registrados no controlador de Domínio do Active Directory (DC) no objeto de conta de usuário ou computador que a instância de serviço usará para fazer logon. Quando um cliente solicita uma conexão a um serviço, ele compõe um SPN para uma instância de serviço, usando dados conhecidos ou dados fornecidos pelo usuário. Em seguida, o cliente usa o pacote de negociação SSPI para apresentar o SPN ao centro de distribuição de chaves (KDC) para a conta de domínio do cliente. O KDC pesquisa a floresta em busca de uma conta de usuário ou computador na qual o SPN está registrado. Se o SPN estiver registrado em mais de uma conta, a autenticação falhará. Caso contrário, o KDC criptografa uma mensagem usando a senha da conta na qual o SPN foi registrado. O KDC passa essa mensagem criptografada para o cliente, que, por sua vez, a passa para a instância do serviço. O serviço usa o pacote de negociação SSPI para descriptografar a mensagem, que passa de volta para o cliente e para o KDC do cliente. O KDC autenticará o serviço se a mensagem descriptografada corresponder à sua mensagem original.
 
 -   Para obter mais informações sobre como compor e registrar SPNs, consulte. [Nomes da entidade de serviço](service-principal-names.md)
--   Para obter mais informações e um exemplo de código que compõe um SPN para um serviço do Windows Sockets que se publica com um ponto de conexão de serviço, consulte [compondo os SPNs de um serviço com um SCP](composing-the-spns-for-a-service-with-an-scp.md).
+-   para obter mais informações e um exemplo de código que compõe um SPN para um serviço de soquetes Windows que se publica com um ponto de conexão de serviço, consulte [compondo os SPNs de um serviço com um SCP](composing-the-spns-for-a-service-with-an-scp.md).
 -   Para obter mais informações e um exemplo de código que compõe um SPN para um serviço RPC, consulte [compoting SPNs para um serviço RpcNs](composing-spns-for-an-rpcns-service.md).
 
- 
+ 
 
- 
+ 
 
 
 

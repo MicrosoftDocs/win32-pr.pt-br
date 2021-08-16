@@ -52,7 +52,7 @@ Este exemplo mostra como fornecer uma barra de ferramentas simples para uma visu
 
 ## <a name="downloading-the-sample"></a>Baixando o exemplo
 
-| Location      | URL do caminho                                                                                             |
+| Localização      | URL do caminho                                                                                             |
 |---------------|------------------------------------------------------------------------------------------------------|
 | GitHub  | [Exemplo de TaskbarThumbnailToolbar](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/winui/shell/appshellintegration/TaskbarThumbnailToolbar) |
 
@@ -61,7 +61,7 @@ Este exemplo mostra como fornecer uma barra de ferramentas simples para uma visu
 Para criar o exemplo do prompt de comando:
 
 1.  Abra a janela do prompt de comando e navegue até o diretório do projeto **TaskbarThumbnailToolbar** .
-2.  Insira `msbuild ThumbnailToolbar.sln`.
+2.  Digite `msbuild ThumbnailToolbar.sln`.
 
 para criar o exemplo usando Microsoft Visual Studio (preferencial):
 

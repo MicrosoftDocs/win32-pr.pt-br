@@ -1,7 +1,7 @@
 ---
-description: Método I LTD::Start – o método Start inicia uma captura.
+description: 'Método IESP:: Start – o método Start inicia uma captura.'
 ms.assetid: 8bf8c0c7-20be-4404-8ea5-b28b4c658523
-title: Método I LTD::Start (Netmon.h)
+title: 'Método IESP:: Start (Netmon. h)'
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -21,9 +21,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118365576"
 ---
-# <a name="iespstart-method"></a>Método I LTD::Start
+# <a name="iespstart-method"></a>Método IESP:: Start
 
-O **método Start** inicia uma captura.
+O método **Start** inicia uma captura.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,16 +40,16 @@ HRESULT STDMETHODCALLTYPE Start(
 
 <dl> <dt>
 
-*pFileName* \[ out\]
+*pFileName* \[ fora\]
 </dt> <dd>
 
-Ponteiro para o nome do arquivo [*de captura*](c.md) usado para armazenar os dados de rede. Certifique-se de armazenar esse nome de arquivo em cache se ele for necessário para referência futura.
+Ponteiro para o nome do [*arquivo de captura*](c.md) usado para armazenar os dados da rede. Certifique-se de armazenar esse nome de arquivo em cache se for necessário para referência futura.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor retornado
 
-Se o método for bem-sucedido, o valor de retorno será NMERR \_ SUCCESS.
+Se o método for bem-sucedido, o valor de retorno será NMERR com \_ êxito.
 
 Se o método não for bem-sucedido, o valor de retorno será um dos seguintes códigos de erro:
 
@@ -57,10 +57,10 @@ Se o método não for bem-sucedido, o valor de retorno será um dos seguintes c�
 
 | Código de retorno                                                                                           | Descrição                                                                                                                            |
 |-------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**CAPTURA NMERR \_ \_ PAUSADA**</dt> </dl> | A captura está em pausa e deve ser interrompida antes que possa ser reiniciada. Chame [I LTD::Stop](iesp-stop.md) para interromper a captura.<br/> |
-| <dl> <dt>**CAPTURA DE \_ NMERR**</dt> </dl>       | A captura já foi iniciada.<br/>                                                                                             |
-| <dl> <dt>**NMERR \_ NÃO \_ CONECTADO**</dt> </dl>  | O NPP não está conectado à rede. Chame [I LTD::Conexão](iesp-connect.md) para conectar o NPP à rede.<br/>          |
-| <dl> <dt>**NMERR \_ NOT \_ ESP**</dt> </dl>        | O NPP está conectado à rede, mas não ao [método I LTD::Conexão.](iesp-connect.md)<br/>                              |
+| <dl> <dt>**captura de NMERR \_ \_ pausada**</dt> </dl> | A captura está pausada e deve ser interrompida para que possa ser reiniciada. Chame [IESP:: Stop](iesp-stop.md) para interromper a captura.<br/> |
+| <dl> <dt>**captura de NMERR \_**</dt> </dl>       | A captura já foi iniciada.<br/>                                                                                             |
+| <dl> <dt>**NMERR \_ não \_ conectado**</dt> </dl>  | O NPP não está conectado à rede. chame [IESP:: Conexão](iesp-connect.md) para conectar o NPP à rede.<br/>          |
+| <dl> <dt>**NMERR \_ não \_ ESP**</dt> </dl>        | o NPP está conectado à rede, mas não com o método [IESP:: Conexão](iesp-connect.md) .<br/>                              |
 
 
 
@@ -68,12 +68,12 @@ Se o método não for bem-sucedido, o valor de retorno será um dos seguintes c�
 
 ## <a name="remarks"></a>Comentários
 
-O local do arquivo [*de captura*](c.md) é especificado no registro Windows, mas você pode usar Monitor de Rede para alterar o local do diretório.
+o local do [*arquivo de captura*](c.md) é especificado no registro de Windows, mas você pode usar Monitor de Rede para alterar o local do diretório.
 
-Ao reiniciar a captura usando os métodos I LTD::Start e [I RECONFIGUR::Stop,](iesp-stop.md) você deve chamar o método [I RECONFIGUR::Configure](iesp-configure.md) para reconfigurar a conexão sempre que chamar I RECONFIGUR::Start para reiniciar a captura de dados. Quando você inicia e para a captura com esses três métodos, um novo arquivo de captura é criado sempre que a captura é iniciada.
+Ao reiniciar a captura usando os métodos IESP:: Start e [IESP:: Stop](iesp-stop.md) , você deve chamar o método [IESP:: Configure](iesp-configure.md) para reconfigurar a conexão cada vez que chamar IESP:: Start para reiniciar a captura de dados. Quando você inicia e interrompe a captura com esses três métodos, um novo arquivo de captura é criado toda vez que a captura é iniciada.
 
 > [!Note]  
-> Você também pode iniciar e parar a captura usando os métodos [I LTD::P ause](iesp-pause.md) e [I LTD::Resume.](iesp-resume.md) Quando esses dois métodos são usados, os dados capturados são armazenados no mesmo arquivo de captura.
+> Você também pode iniciar e parar a captura usando os métodos [IESP::P ause](iesp-pause.md) e [IESP:: resume](iesp-resume.md) . Quando esses dois métodos são usados, os dados capturados são armazenados no mesmo arquivo de captura.
 
  
 
@@ -85,7 +85,7 @@ Ao reiniciar a captura usando os métodos I LTD::Start e [I RECONFIGUR::Stop,](i
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                                                                                               |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                                                                     |
-| Cabeçalho<br/>                   | <dl> <dt>Netmon.h</dt> </dl>                                                                      |
+| Cabeçalho<br/>                   | <dl> <dt>Netmon. h</dt> </dl>                                                                      |
 | DLL<br/>                      | <dl> <dt>Ndisnpp.dll; </dt> <dt>Rmtnpp.dll</dt> </dl> |
 
 
@@ -94,22 +94,22 @@ Ao reiniciar a captura usando os métodos I LTD::Start e [I RECONFIGUR::Stop,](i
 
 <dl> <dt>
 
-[I LTDA](iesp.md)
+[IESP](iesp.md)
 </dt> <dt>
 
-[IRIA::Configure](iesp-configure.md)
+[IESP:: configurar](iesp-configure.md)
 </dt> <dt>
 
-[I LTD::Conexão](iesp-connect.md)
+[IESP:: Conexão](iesp-connect.md)
 </dt> <dt>
 
-[I LTD::P ause](iesp-pause.md)
+[IESP::P ause](iesp-pause.md)
 </dt> <dt>
 
-[I LTD::Resume](iesp-resume.md)
+[IESP:: retomar](iesp-resume.md)
 </dt> <dt>
 
-[IRIA::Stop](iesp-stop.md)
+[IESP:: Stop](iesp-stop.md)
 </dt> </dl>
 
  

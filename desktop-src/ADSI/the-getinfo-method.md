@@ -1,25 +1,25 @@
 ---
 title: O método GetInfo
-description: O método IADs GetInfo carrega todos os valores de atributo para um objeto ADSI no cache local do serviço de diretório subjacente.
+description: O método GetInfo de IADs carrega todos os valores de atributo de um objeto ADSI no cache local do serviço de diretório subjacente.
 ms.assetid: b29f1156-7c38-4f5a-a88c-578ae6167758
 ms.tgt_platform: multiple
 keywords:
-- ADSI GetInfo, usando IADs GetInfo
-- ADSI da ADSI, usando, usando o método IADs GetInfo
+- GetInfo ADSI , usando GETInfo de IADs
+- ADSI ADSI usando o método GetInfo de IADs
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b374791e7fd7ff787c1b825827f410a9c15b551b
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 534de8bd667ed33d562ac55b6a70452b6496d0a3d708c55a2cb0fee1a86a8a29
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103634859"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117838450"
 ---
 # <a name="the-getinfo-method"></a>O método GetInfo
 
-O método [**IADs:: GetInfo**](/windows/desktop/api/Iads/nf-iads-iads-getinfo) carrega todos os valores de atributo para um objeto ADSI no cache local do serviço de diretório subjacente. O método [**IADs:: GetInfoEx**](/windows/desktop/api/Iads/nf-iads-iads-getinfoex) é usado para carregar valores de atributo específicos no cache local. Para obter mais informações sobre como usar o método **IADs:: GetInfoEx** , consulte [otimização usando GetInfoEx](optimization-using-getinfoex.md).
+O [**método IADs::GetInfo**](/windows/desktop/api/Iads/nf-iads-iads-getinfo) carrega todos os valores de atributo de um objeto ADSI no cache local do serviço de diretório subjacente. O [**método IADs::GetInfoEx**](/windows/desktop/api/Iads/nf-iads-iads-getinfoex) é usado para carregar valores de atributo específicos no cache local. Para obter mais informações sobre como usar o **método IADs::GetInfoEx,** consulte [Otimização usando GetInfoEx](optimization-using-getinfoex.md).
 
-A ADSI fará uma chamada implícita [**IADs:: GetInfo**](/windows/desktop/api/Iads/nf-iads-iads-getinfo) quando o método [**IADs:: Get**](/windows/desktop/api/Iads/nf-iads-iads-get) ou [**IADs:: GetEx**](/windows/desktop/api/Iads/nf-iads-iads-getex) for chamado para um atributo específico e nenhum valor for encontrado no cache local. Quando **IADs:: GetInfo** tiver sido chamado, uma chamada implícita não será repetida. No entanto, se um valor já existir no cache de propriedades, chamar o método **IADs:: Get** ou **IADs:: GetEx** sem primeiro chamar **IADs:: GetInfo** recuperará o valor em cache em vez do valor mais atual do diretório subjacente. Isso pode fazer com que os valores de atributo atualizados sejam substituídos se o cache local tiver sido modificado, mas os valores não tiverem sido confirmados no serviço de diretório subjacente com uma chamada para o método [**IADs:: setinfo**](/windows/desktop/api/Iads/nf-iads-iads-setinfo) . Para evitar problemas de cache, confirme as alterações de valor de atributo chamando **IADs:: setinfo** antes de chamar **IADs:: GetInfo**.
+A ADSI fará uma chamada [**IADs::GetInfo**](/windows/desktop/api/Iads/nf-iads-iads-getinfo) implícita quando o método [**IADs::Get**](/windows/desktop/api/Iads/nf-iads-iads-get) ou [**IADs::GetEx**](/windows/desktop/api/Iads/nf-iads-iads-getex) for chamado para um atributo específico e nenhum valor for encontrado no cache local. Quando **IADs::GetInfo** é chamado, uma chamada implícita não é repetida. No entanto, se um valor já existir no cache de propriedades, chamar o método **IADs::Get** ou **IADs::GetEx** sem chamar **PRIMEIRO IADs::GetInfo** recuperará o valor armazenado em cache em vez do valor mais atual do diretório subjacente. Isso pode fazer com que os valores de atributo atualizados sejam substituídos se o cache local tiver sido modificado, mas os valores não foram confirmados no serviço de diretório subjacente com uma chamada para o método [**IADs::SetInfo.**](/windows/desktop/api/Iads/nf-iads-iads-setinfo) Para evitar problemas de cache, commit de alterações de valor de atributo chamando **IADs::SetInfo** antes de chamar **IADs::GetInfo**.
 
 
 ```VB
@@ -45,11 +45,11 @@ Debug.Print "User's title is " + usr.Get("title")
 
 
 
-Alguns serviços de diretório não retornam todos os valores de atributo de um objeto em resposta a uma chamada [**IADs:: GetInfo**](/windows/desktop/api/Iads/nf-iads-iads-getinfo) . Nesses casos, use o método [**IADs:: GetInfoEx**](/windows/desktop/api/Iads/nf-iads-iads-getinfoex) para carregar esses valores no cache local.
+Alguns serviços de diretório não retornam todos os valores de atributo para um objeto em resposta a uma [**chamada IADs::GetInfo.**](/windows/desktop/api/Iads/nf-iads-iads-getinfo) Nesses casos, use o [**método IADs::GetInfoEx**](/windows/desktop/api/Iads/nf-iads-iads-getinfoex) para carregar esses valores no cache local.
 
- 
+ 
 
- 
+ 
 
 
 

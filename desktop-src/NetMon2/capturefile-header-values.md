@@ -1,7 +1,7 @@
 ---
-description: Define a estrutura do arquivo de cabeçalho de Monitor de Rede.
+description: Define a estrutura Monitor de Rede de arquivo de header.
 ms.assetid: 944980c9-ebaa-4042-a112-d32b7a28ba21
-title: Estrutura de CAPTUREFILE_HEADER_VALUES (Netmon. h)
+title: CAPTUREFILE_HEADER_VALUES (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -20,9 +20,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118367412"
 ---
-# <a name="capturefile_header_values-structure"></a>Estrutura de \_ valores de cabeçalho de captura \_
+# <a name="capturefile_header_values-structure"></a>Estrutura CAPTUREFILE \_ HEADER \_ VALUES
 
-A estrutura de **\_ \_ valores de cabeçalho** do arquivo de captura define a estrutura do arquivo de cabeçalho monitor de rede.
+A **estrutura CAPTUREFILE \_ HEADER \_ VALUES** define a estrutura Monitor de Rede de arquivo de header.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -55,24 +55,24 @@ typedef struct _CAPTUREFILE_HEADER_VALUES {
 
 <dl> <dt>
 
-**Signature**
+**Assinatura**
 </dt> <dd>
 
-Identificador exclusivo: ' GMBU.
+Identificador exclusivo: 'GMBU.
 
 </dd> <dt>
 
 **BCDVerMinor**
 </dt> <dd>
 
-Binary, decimal codificado (secundário). O valor desse membro deve ser zero (0).
+Binário, decimal codificado (secundário). O valor desse membro deve ser zero (0).
 
 </dd> <dt>
 
 **BCDVerMajor**
 </dt> <dd>
 
-Decimal codificado em binário (principal). Esse valor deve ser 2.
+Decimal codificado binário (principal). Esse valor deve ser 2.
 
 </dd> <dt>
 
@@ -83,7 +83,7 @@ Tipo de topologia.
 
 </dd> <dt>
 
-**Estampa**
+**Timestamp**
 </dt> <dd>
 
 Hora da captura.
@@ -100,7 +100,7 @@ Tabela de índice de quadro.
 **FrameTableLength**
 </dt> <dd>
 
-Tamanho da tabela do índice do quadro.
+Tamanho da tabela de índice do quadro.
 
 </dd> <dt>
 
@@ -128,49 +128,49 @@ Deslocamento de dados de comentário.
 **CommentDataLength**
 </dt> <dd>
 
-Comprimento dos dados do comentário.
+Comprimento dos dados de comentário.
 
 </dd> <dt>
 
 **StatisticsOffset**
 </dt> <dd>
 
-Deslocamento para a estrutura de **estatísticas** .
+Deslocamento para a **estrutura STATISTICS.**
 
 </dd> <dt>
 
 **StatisticsLength**
 </dt> <dd>
 
-Comprimento da estrutura de **estatísticas** .
+Comprimento da **estrutura STATISTICS.**
 
 </dd> <dt>
 
 **NetworkInfoOffset**
 </dt> <dd>
 
-Deslocamento para a estrutura **NETWORKINFO** .
+Deslocamento para a **estrutura NETWORKINFO.**
 
 </dd> <dt>
 
 **NetworkInfoLength**
 </dt> <dd>
 
-Comprimento da estrutura **NETWORKINFO** .
+Comprimento da **estrutura NETWORKINFO.**
 
 </dd> <dt>
 
 **ConversationStatsOffset**
 </dt> <dd>
 
-Este membro não é usado.
+Esse membro não é usado.
 
 </dd> <dt>
 
 **ConversationStatsLength**
 </dt> <dd>
 
-Este membro não é usado.
+Esse membro não é usado.
 
 </dd> </dl>
 
@@ -182,7 +182,7 @@ Este membro não é usado.
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                          |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                |
-| Cabeçalho<br/>                   | <dl> <dt>Netmon. h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Netmon.h</dt> </dl> |
 
 
 

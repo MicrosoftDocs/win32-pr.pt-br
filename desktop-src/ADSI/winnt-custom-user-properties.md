@@ -1,41 +1,41 @@
 ---
-title: Propriedades do usuário personalizado do WinNT
-description: O provedor WinNT disponibiliza as seguintes propriedades personalizadas para a classe User. Eles podem ser acessados por meio dos métodos IADs. Get e IADs. put. Para obter mais informações, consulte a \_ estrutura User info \_ 3.
+title: Propriedades de usuário personalizadas do WinNT
+description: O provedor WinNT disponibiliza as propriedades personalizadas a seguir para a classe User. Eles podem ser acessados por meio dos métodos IADs.Get e IADs.Put. Para obter mais informações, consulte a estrutura USER \_ INFO \_ 3.
 ms.assetid: 3b122424-ff24-4de7-bdaf-693fb4529b09
 ms.tgt_platform: multiple
 keywords:
-- ADSI das propriedades do usuário personalizado do WinNT
+- ADSI de propriedades personalizadas do usuário do WinNT
 - ADSI do provedor WinNT, objeto de usuário, propriedades personalizadas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 95230de6f7bb5bd848d7a8a047c0ec1966e5a67e
-ms.sourcegitcommit: b0ebdefc3dcd5c04bede94091833aa1015a2f95c
+ms.openlocfilehash: 607e12fc58ff4829f425302c1d13997f2e6c085646b1ace2c3e8ae2ebfb7df6c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "103917680"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117838385"
 ---
-# <a name="winnt-custom-user-properties"></a>Propriedades do usuário personalizado do WinNT
+# <a name="winnt-custom-user-properties"></a>Propriedades de usuário personalizadas do WinNT
 
-O provedor WinNT disponibiliza as seguintes propriedades personalizadas para a classe User. Eles podem ser acessados por meio dos métodos [**IADs. Get**](/windows/desktop/api/Iads/nf-iads-iads-get) e [**IADs. put**](/windows/desktop/api/Iads/nf-iads-iads-put) . Para obter mais informações, consulte a estrutura [**user \_ info \_ 3**](/windows/desktop/api/lmaccess/ns-lmaccess-user_info_3) .
+O provedor WinNT disponibiliza as propriedades personalizadas a seguir para a classe User. Eles podem ser acessados por meio [**dos métodos IADs.Get**](/windows/desktop/api/Iads/nf-iads-iads-get) [**e IADs.Put.**](/windows/desktop/api/Iads/nf-iads-iads-put) Para obter mais informações, consulte a [**estrutura USER \_ INFO \_ 3.**](/windows/desktop/api/lmaccess/ns-lmaccess-user_info_3)
 
 
 
 | Propriedade            | Tipo         | Descrição                                                                                                                                                                                                                                                                                                                                                   |
 |---------------------|--------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **HomeDirDrive**    | String       | Unidade do diretório base do usuário. Esse é um ponteiro para uma cadeia de caracteres Unicode que especifica o caminho do diretório base. A cadeia de caracteres pode ser **nula**. Consulte o exemplo neste tópico.                                                                                                                                                                                 |
-| **ObjectSID**       | Cadeia de caracteres de octeto | SID de objeto do usuário. Para obter um exemplo de como recuperar o SID do objeto usando o provedor WinNT, consulte [SID do objeto (provedor winnt)](object-sid.md)                                                                                                                                                                                                          |
-| **Parâmetros**      | String       | Parâmetros do usuário. Aponta para uma cadeia de caracteres Unicode que é reservada para uso por aplicativos. Essa cadeia de caracteres pode ser uma cadeia de caracteres nula ou pode ter qualquer número de caracteres antes do caractere nulo de terminação. Os produtos da Microsoft usam esse membro para armazenar dados de configuração do usuário. Essa propriedade só pode ser modificada por um aplicativo durante a instalação. |
-| **Senha**     | Hora         | Duração de tempo da senha em uso. Essa propriedade indica o número de segundos decorridos desde que a senha foi alterada pela última vez.                                                                                                                                                                                                                    |
-| **PasswordExpired** | Integer      | Informa quando a senha expirou. Quando você usa Get, ele retornará zero será a senha não expirou ou será diferente de zero se tiver expirado. Consulte o exemplo neste tópico.                                                                                                                                                                                          |
-| **PrimaryGroupID**  | Integer      | ID do grupo primário do usuário, por exemplo, ID do grupo de usuários de domínio. Consulte o exemplo neste tópico.                                                                                                                                                                                                                                                                        |
-| **Sinalizadors de**       | Integer      | Sinalizador de usuário definido [**na \_ \_ \_ enumeração de sinalizador de usuário do ADS**](/windows/win32/api/iads/ne-iads-ads_user_flag_enum). Para obter um exemplo de como usar UserFlags, consulte a [senha nunca expira (provedor de winnt)](winnt-password-never-expires.md)                                                                                                                                                             |
+| **HomeDirDrive**    | String       | Home Directory Drive do usuário. Este é um ponteiro para uma cadeia de caracteres Unicode que especifica o caminho do diretório home. A cadeia de caracteres pode ser **nula.** Consulte o exemplo neste tópico.                                                                                                                                                                                 |
+| **Objectsid**       | Cadeia de caracteres de octeto | SID de objeto do usuário. Para obter um exemplo de como recuperar o SID de objeto usando o provedor WinNT, consulte SID de objeto [(provedor WinNT)](object-sid.md)                                                                                                                                                                                                          |
+| **Parâmetros**      | String       | Parâmetros do usuário. Aponta para uma cadeia de caracteres Unicode que é reservado para uso por aplicativos. Essa cadeia de caracteres pode ser uma cadeia de caracteres nula ou pode ter qualquer número de caracteres antes do caractere nulo de terminação. Os produtos da Microsoft usam esse membro para armazenar dados de configuração do usuário. Essa propriedade só pode ser modificada por um aplicativo durante a instalação. |
+| **PasswordAge**     | Tempo         | Duração do tempo da senha em uso. Essa propriedade indica o número de segundos decorridos desde que a senha foi alterada pela última vez.                                                                                                                                                                                                                    |
+| **PasswordExpired** | Integer      | Informa quando a senha expirou. Quando você usar Get, ele retornará zero se a senha não tiver expirado ou se tiver expirado. Consulte o exemplo neste tópico.                                                                                                                                                                                          |
+| **PrimaryGroupID**  | Integer      | ID do grupo primário do usuário, por exemplo, ID do grupo de usuários do domínio. Consulte o exemplo neste tópico.                                                                                                                                                                                                                                                                        |
+| **UserFlags**       | Integer      | Sinalizador de usuário definido em [**ADS \_ USER FLAG \_ \_ ENUM.**](/windows/win32/api/iads/ne-iads-ads_user_flag_enum) Para ver um exemplo de como usar UserFlags, consulte [Password Never Expires (Provedor WinNT)](winnt-password-never-expires.md)                                                                                                                                                             |
 
 
 
- 
+ 
 
-Este exemplo mostra como definir o diretório da unidade inicial de um usuário.
+Este exemplo mostra como definir o Diretório home drive de um usuário.
 
 
 ```VB
@@ -80,6 +80,6 @@ grpPrimaryID = usr.Get("PrimaryGroupID")
 
 
 
- 
+ 
 
- 
+ 

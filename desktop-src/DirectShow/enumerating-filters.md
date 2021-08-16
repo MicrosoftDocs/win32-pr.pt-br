@@ -4,18 +4,18 @@ ms.assetid: 57bcaa4d-37bf-457d-937e-f9d24fb5784f
 title: Enumerando filtros
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2de0f979973d339b790b04a8a5d4d98fc52c95c6
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 4d584ddf74a13b06e99d9a7e0a34ac802c6da881d87cb163411100ea7772e1df
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105749604"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117819659"
 ---
 # <a name="enumerating-filters"></a>Enumerando filtros
 
-O Gerenciador de gráfico de filtro dá suporte ao método [**IFilterGraph:: EnumFilters**](/windows/desktop/api/Strmif/nf-strmif-ifiltergraph-enumfilters) , que enumera todos os filtros no grafo de filtro. Ele retorna um ponteiro para a interface [**IEnumFilters**](/windows/desktop/api/Strmif/nn-strmif-ienumfilters) . O método [**IEnumFilters:: Next**](/windows/desktop/api/Strmif/nf-strmif-ienumfilters-next) recupera ponteiros de interface [**IBaseFilter**](/windows/desktop/api/Strmif/nn-strmif-ibasefilter) .
+O Gerenciador Graph Filtro dá suporte ao método [**IFilterGraph::EnumFilters,**](/windows/desktop/api/Strmif/nf-strmif-ifiltergraph-enumfilters) que enumera todos os filtros no grafo de filtro. Ele retorna um ponteiro para a interface [**IEnumFilters.**](/windows/desktop/api/Strmif/nn-strmif-ienumfilters) O [**método IEnumFilters::Next**](/windows/desktop/api/Strmif/nf-strmif-ienumfilters-next) recupera ponteiros de interface [**IBaseFilter.**](/windows/desktop/api/Strmif/nn-strmif-ibasefilter)
 
-O exemplo a seguir mostra uma função que enumera os filtros em um grafo e exibe uma caixa de mensagem com o nome de cada filtro. Ele usa o método [**IBaseFilter:: QueryFilterInfo**](/windows/desktop/api/Strmif/nf-strmif-ibasefilter-queryfilterinfo) para recuperar o nome do filtro. Observe os locais em que a função chama **Release** em uma interface para decrementar a contagem de referência.
+O exemplo a seguir mostra uma função que enumera os filtros em um grafo e exibe uma caixa de mensagem com o nome de cada filtro. Ele usa o [**método IBaseFilter::QueryFilterInfo**](/windows/desktop/api/Strmif/nf-strmif-ibasefilter-queryfilterinfo) para recuperar o nome do filtro. Observe os locais em que a função **chama Release** em uma interface para decrementar a contagem de referência.
 
 
 ```C++
@@ -69,7 +69,7 @@ HRESULT EnumFilters (IFilterGraph *pGraph)
 
 <dl> <dt>
 
-[Enumerando objetos em um grafo de filtro](enumerating-objects-in-a-filter-graph.md)
+[Enumerando objetos em um filtro Graph](enumerating-objects-in-a-filter-graph.md)
 </dt> </dl>
 
  

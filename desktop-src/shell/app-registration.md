@@ -1,7 +1,7 @@
 ---
-description: Este tópico discute como os aplicativos podem expor informações sobre si mesmos necessárias para habilitar determinados cenários.
+description: Este tópico discute como os aplicativos podem expor informações sobre eles próprios necessários para habilitar determinados cenários.
 ms.assetid: F88AA3E6-6F7B-442d-935A-7D2CB4958E6B
-title: Registro de aplicativo
+title: Registro do aplicativo
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: cecac1c72614ce3241cbac6b880b0d9f5f84f9fbf85c8ee022d83574df6d86e6
@@ -11,67 +11,67 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118224938"
 ---
-# <a name="application-registration"></a>Registro de aplicativo
+# <a name="application-registration"></a>Registro do aplicativo
 
-Este tópico discute como os aplicativos podem expor informações sobre si mesmos necessárias para habilitar determinados cenários. Isso inclui as informações necessárias para localizar o aplicativo, os verbos aos quais o aplicativo dá suporte e os tipos de arquivos que um aplicativo pode manipular.
+Este tópico discute como os aplicativos podem expor informações sobre eles próprios necessários para habilitar determinados cenários. Isso inclui as informações necessárias para localizar o aplicativo, os verbos aos quais o aplicativo dá suporte e os tipos de arquivos que um aplicativo pode manipular.
 
-Este tópico é organizado da seguinte forma:
+Este tópico é organizado da seguinte maneira:
 
--   [Localizar um executável de aplicativo](#finding-an-application-executable)
+-   [Encontrando um executável de aplicativo](#finding-an-application-executable)
 -   [Registrando aplicativos](#registering-applications)
-    -   [Usando a sub-chave Caminhos do Aplicativo](#using-the-app-paths-subkey)
-    -   [Usando a sub-chave De aplicativos](#using-the-applications-subkey)
+    -   [Usando a subchave de caminhos do aplicativo](#using-the-app-paths-subkey)
+    -   [Usando a subchave Applications](#using-the-applications-subkey)
 -   [Registrando verbos e outras informações de associação de arquivo](#registering-verbs-and-other-file-association-information)
 -   [Registrando um tipo percebido](#registering-a-perceived-type)
 -   [Tópicos relacionados](#related-topics)
 
 > [!Note]  
-> Os aplicativos também podem ser registrados nos aplicativos do painel de controle Definir SPAD (Padrões de Computador e Acesso ao Programa) e Definir Seus Programas Padrão (LTDP). Para obter informações sobre o registro do aplicativo SPAD e DOP, consulte Diretrizes para associações de arquivos e programas padrão [e](appguide-fa-defpro.md)Definir [SPAD (Acesso](cpl-setprogramaccess.md)ao Programa e Padrões do Computador).
+> Os aplicativos também podem ser registrados nos aplicativos definir o acesso do programa e padrões do computador (SPAD) e definir os programas padrão (SYDP) do painel de controle. Para obter informações sobre o registro de aplicativo SPAD e SYDP, consulte [diretrizes para associações de arquivo e programas padrão](appguide-fa-defpro.md)e [definir o acesso do programa e padrões do computador (SPAD)](cpl-setprogramaccess.md).
 
  
 
-## <a name="finding-an-application-executable"></a>Localizar um executável de aplicativo
+## <a name="finding-an-application-executable"></a>Encontrando um executável de aplicativo
 
-Quando a [**função ShellExecuteEx**](/windows/desktop/api/Shellapi/nf-shellapi-shellexecuteexa) é chamada com o nome de um arquivo executável em seu parâmetro *lpFile,* há vários locais em que a função procura o arquivo. É recomendável registrar seu aplicativo na sub-chave do Registro de **Caminhos** de Aplicativos. Isso evita a necessidade de os aplicativos modificarem a variável de ambiente PATH do sistema.
+Quando a função [**ShellExecuteEx**](/windows/desktop/api/Shellapi/nf-shellapi-shellexecuteexa) é chamada com o nome de um arquivo executável em seu parâmetro *lpFile* , há vários locais em que a função procura o arquivo. É recomendável registrar seu aplicativo na subchave do registro de **caminhos do aplicativo** . Isso evita a necessidade de aplicativos para modificar a variável de ambiente do caminho do sistema.
 
 O arquivo é procurado nos seguintes locais:
 
 -   O diretório de trabalho atual.
--   Somente **Windows** diretório de Windows (nenhum subdireário é pesquisado).
--   O **Windows \\ system32.**
+-   somente o diretório **Windows** (nenhum subdiretório é pesquisado).
+-   o diretório **Windows \\ System32** .
 -   Diretórios listados na variável de ambiente PATH.
--   Recomendado: **HKEY \_ LOCAL \_ MACHINE** \\ **SOFTWARE** \\ **Microsoft** \\ **Windows** \\ **aplicativo CurrentVersion** \\ 
+-   recomendado: **HKEY \_ LOCAL \_ MACHINE** \\ **SOFTWARE** \\ **Microsoft** \\ **Windows** \\ **CurrentVersion** \\ **App paths**
 
 ## <a name="registering-applications"></a>Registrando aplicativos
 
-As  sub-chaves  do Registro de Aplicativos e Caminhos de Aplicativos são usadas para registrar e controlar o comportamento do sistema em nome de aplicativos. A **sub-chave Caminhos** do Aplicativo é o local preferencial.
+As subchaves de registro de **aplicativos** e **caminhos de aplicativo** são usadas para registrar e controlar o comportamento do sistema em nome dos aplicativos. A subchave de **caminhos do aplicativo** é o local preferencial.
 
-### <a name="using-the-app-paths-subkey"></a>Usando a sub-chave Caminhos do Aplicativo
+### <a name="using-the-app-paths-subkey"></a>Usando a subchave de caminhos do aplicativo
 
-No Windows 7 e posteriores, é recomendável instalar aplicativos por usuário em vez de por computador. Um aplicativo instalado para cada usuário pode ser registrado em **HKEY \_ CURRENT \_ USER** \\ **Software** \\ **Microsoft** \\ **Windows** \\ **CurrentVersion** App \\ **Paths**. Um aplicativo instalado para todos os usuários do computador pode ser registrado em **HKEY \_ LOCAL \_ MACHINE** \\ **Software** \\ **Microsoft** \\ **Windows** \\ **CurrentVersion** App \\ **Paths**.
+no Windows 7 e posterior, é altamente recomendável instalar aplicativos por usuário, em vez de por computador. um aplicativo que é instalado para por usuário pode ser registrado em **HKEY \_ CURRENT \_ user** \\ **Software** \\ **Microsoft** \\ **Windows** \\ **CurrentVersion** \\ **App paths**. um aplicativo instalado para todos os usuários do computador pode ser registrado em **HKEY \_ LOCAL \_ MACHINE** \\ **Software** \\ **Microsoft** \\ **Windows** \\ **CurrentVersion** \\ **App paths**.
 
-As entradas encontradas em **Caminhos de** Aplicativo são usadas principalmente para as seguintes finalidades:
+As entradas encontradas em **caminhos de aplicativo** são usadas principalmente para as seguintes finalidades:
 
--   Para mapear o nome de arquivo executável de um aplicativo para o caminho totalmente qualificado desse arquivo.
--   Para pré-canetar informações para a variável de ambiente PATH por aplicativo, por processo.
+-   Para mapear o nome do arquivo executável de um aplicativo para o caminho totalmente qualificado desse arquivo.
+-   Para obter informações autônomas para a variável de ambiente PATH em uma base por aplicativo, por processo.
 
-Se o nome de uma sub-chave de **Caminhos** de Aplicativo corresponde ao nome do arquivo, o Shell executará duas ações:
+Se o nome de uma subchave dos **caminhos do aplicativo** corresponder ao nome do arquivo, o Shell executará duas ações:
 
--   A entrada (Padrão) é usada como o caminho totalmente qualificado do arquivo.
--   A entrada Path dessa sub-chave é pré-canetada para a variável de ambiente PATH desse processo. Se isso não for necessário, o valor path poderá ser omitido.
+-   A entrada (padrão) é usada como o caminho totalmente qualificado do arquivo.
+-   A entrada de caminho para essa subchave é precedente à variável de ambiente PATH do processo. Se isso não for necessário, o valor do caminho poderá ser omitido.
 
-Os possíveis problemas a serem abordados incluem:
+Os possíveis problemas a serem considerados incluem:
 
--   O Shell limita o comprimento de uma linha de comando a MAX \_ PATH \* 2 caracteres. Se houver muitos arquivos listados como entradas do Registro ou seus caminhos são longos, os nomes de arquivo posteriormente na lista poderão ser perdidos à medida que a linha de comando for truncada.
+-   O Shell limita o comprimento de uma linha de comando para o \_ caminho máximo \* 2 caracteres. Se houver muitos arquivos listados como entradas de registro ou seus caminhos forem longos, os nomes de arquivo mais tarde na lista poderão ser perdidos à medida que a linha de comando estiver truncada.
 -   Alguns aplicativos não aceitam vários nomes de arquivo em uma linha de comando.
--   Alguns aplicativos que aceitam vários nomes de arquivo não reconhecem o formato no qual o Shell os fornece. O Shell fornece a lista de parâmetros como uma cadeia de caracteres entre aspas, mas alguns aplicativos podem exigir cadeias de caracteres sem aspas.
+-   Alguns aplicativos que aceitam vários nomes de arquivo não reconhecem o formato no qual o Shell os fornece. O Shell fornece a lista de parâmetros como uma cadeia de caracteres entre aspas, mas alguns aplicativos podem exigir cadeias sem aspas.
 -   Nem todos os itens que podem ser arrastados fazem parte do sistema de arquivos; por exemplo, impressoras. Esses itens não têm um caminho Win32 padrão, portanto, não há como fornecer um valor *lpParameters* significativo para [**ShellExecuteEx**](/windows/desktop/api/Shellapi/nf-shellapi-shellexecuteexa).
 
-O uso da entrada DropTarget evita esses possíveis problemas fornecendo acesso a todos os formatos da área de transferência, incluindo [CFSTR \_ SHELLIDLIST](clipboard.md) (para listas de arquivos longas) e [CFSTR \_ FILECONTENTS](clipboard.md) (para objetos que não são do sistema de arquivos).
+O uso da entrada DropTarget evita esses possíveis problemas fornecendo acesso a todos os formatos da área de transferência, incluindo [CFSTR \_ SHELLIDLIST](clipboard.md) (para listas de arquivos longos) e [CFSTR \_ FileContent](clipboard.md) (para objetos que não são do sistema de arquivos).
 
-**Para registrar e controlar o comportamento de seus aplicativos com a sub-chave Caminhos de Aplicativo**:
+**Para registrar e controlar o comportamento de seus aplicativos com a subchave de caminhos do aplicativo**:
 
-1.  Adicione uma sub-chave com o mesmo nome do arquivo executável à sub-chave **Caminhos** do Aplicativo, conforme mostrado na entrada do Registro a seguir.
+1.  Adicione uma subchave com o mesmo nome do arquivo executável à subchave de **caminhos do aplicativo** , conforme mostrado na entrada do registro a seguir.
 
     ```
     HKEY_LOCAL_MACHINE or HKEY_CURRENT_USER
@@ -88,7 +88,7 @@ O uso da entrada DropTarget evita esses possíveis problemas fornecendo acesso a
                          UseUrl
     ```
 
-2.  Consulte a tabela a seguir para obter detalhes **das** entradas da sub-chave Caminhos de Aplicativos. 
+2.  Consulte a tabela a seguir para obter detalhes das entradas de subchave de **caminhos do aplicativo** . 
 
     <table>
     <colgroup>
@@ -104,32 +104,32 @@ O uso da entrada DropTarget evita esses possíveis problemas fornecendo acesso a
     <tbody>
     <tr class="odd">
     <td>(Padrão)</td>
-    <td>É o caminho totalmente qualificado para o aplicativo. O nome do aplicativo fornecido na entrada (Padrão) pode ser declarado com ou sem sua extensão .exe aplicativo. Se necessário, a <a href="/windows/desktop/api/Shellapi/nf-shellapi-shellexecuteexa"><strong>função ShellExecuteEx</strong></a> adiciona a extensão ao pesquisar a sub-chave <strong>Caminhos</strong> de Aplicativos. A entrada é do <strong>tipo REG_SZ.</strong></td>
+    <td>É o caminho totalmente qualificado para o aplicativo. O nome do aplicativo fornecido na entrada (padrão) pode ser declarado com ou sem sua extensão de .exe. Se necessário, a função <a href="/windows/desktop/api/Shellapi/nf-shellapi-shellexecuteexa"><strong>ShellExecuteEx</strong></a> adiciona a extensão ao pesquisar a subchave de <strong>caminhos do aplicativo</strong> . A entrada é do tipo de <strong>REG_SZ</strong> .</td>
     </tr>
     <tr class="even">
     <td>DontUseDesktopChangeRouter</td>
-    <td>É obrigatório para aplicativos de depurador evitar deadlocks de caixa de diálogo de arquivo ao depurar o processo Windows Explorer. No entanto, definir a entrada DontUseDesktopChangeRouter produz uma manipulação um pouco menos eficiente das notificações de alteração. A entrada é do tipo <strong>REG_DWORD</strong> e o valor é 0x1.</td>
+    <td>é obrigatório para aplicativos de depurador evitar deadlocks de diálogo de arquivo ao depurar o processo do Windows Explorer. No entanto, definir a entrada DontUseDesktopChangeRouter produz um tratamento ligeiramente menos eficiente das notificações de alteração. A entrada é do tipo de <strong>REG_DWORD</strong> e o valor é 0x1.</td>
     </tr>
     <tr class="odd">
     <td>DropTarget</td>
-    <td>É um CLSID (identificador de classe). A entrada DropTarget contém a CLSID de um objeto (geralmente um servidor local em vez de um servidor em processo) que implementa <a href="/windows/desktop/api/oleidl/nn-oleidl-idroptarget"><strong>IDropTarget</strong></a>. Por padrão, quando o destino de soltar é um arquivo executável e nenhum valor DropTarget é fornecido, o Shell converte a lista de arquivos descartados em um parâmetro de linha de comando e a passa para <a href="/windows/desktop/api/Shellapi/nf-shellapi-shellexecuteexa"><strong>ShellExecuteEx</strong></a> por meio <em>de lpParameters</em>.</td>
+    <td>É um identificador de classe (CLSID). A entrada DropTarget contém o CLSID de um objeto (geralmente um servidor local em vez de um servidor em processo) que implementa <a href="/windows/desktop/api/oleidl/nn-oleidl-idroptarget"><strong>IDropTarget</strong></a>. Por padrão, quando o destino de soltura é um arquivo executável e nenhum valor de DropTarget é fornecido, o Shell converte a lista de arquivos soltos em um parâmetro de linha de comando e passa-o para <a href="/windows/desktop/api/Shellapi/nf-shellapi-shellexecuteexa"><strong>ShellExecuteEx</strong></a> por meio de <em>lpParameters</em>.</td>
     </tr>
     <tr class="even">
     <td>Caminho</td>
-    <td>Fornece uma cadeia de caracteres (na forma de uma lista de diretórios separados por ponto e vírgula) para anexar à variável de ambiente PATH quando um aplicativo é lançado chamando <a href="/windows/desktop/api/Shellapi/nf-shellapi-shellexecuteexa"><strong>ShellExecuteEx</strong></a>. É o caminho totalmente qualificado para o .exe. Ele é de <strong>REG_SZ</strong>. No <strong>Windows 7 e</strong>posteriores, o tipo pode ser <strong>REG_EXPAND_SZ</strong>e é normalmente REG_EXPAND_SZ %ProgramFiles%. <strong></strong>
+    <td>Fornece uma cadeia de caracteres (na forma de uma lista de diretórios separados por ponto e vírgula) para acrescentar à variável de ambiente PATH quando um aplicativo é iniciado chamando <a href="/windows/desktop/api/Shellapi/nf-shellapi-shellexecuteexa"><strong>ShellExecuteEx</strong></a>. É o caminho totalmente qualificado para a .exe. É de <strong>REG_SZ</strong>. no <strong>Windows 7 e posterior</strong>, o tipo pode ser <strong>REG_EXPAND_SZ</strong>e é normalmente <strong>REG_EXPAND_SZ</strong> % programfiles%.
     <blockquote>
     [!Note]<br />
-Além das entradas (Padrão), Caminho e DropTarget reconhecidas pelo Shell, um aplicativo também pode <strong></strong> adicionar valores personalizados à sub-chave Caminhos de Aplicativo do arquivo executável. Incentivamos os desenvolvedores <strong></strong> de aplicativos a usarem a sub-chave Caminhos de Aplicativo para fornecer um caminho específico do aplicativo em vez de fazer adições ao caminho do sistema global.
+Além das entradas (padrão), Path e DropTarget reconhecidas pelo shell, um aplicativo também pode adicionar valores personalizados à subchave de <strong>caminhos do aplicativo</strong> do arquivo executável. Incentivamos os desenvolvedores de aplicativos a usar a subchave de <strong>caminhos</strong> do aplicativo para fornecer um caminho específico do aplicativo em vez de fazer adições ao caminho do sistema global.
     </blockquote>
     <br/></td>
     </tr>
     <tr class="odd">
     <td>SupportedProtocols</td>
-    <td>Cria uma cadeia de caracteres que contém os esquemas de protocolo de URL para uma determinada chave. Isso pode conter vários valores do Registro para indicar quais esquemas têm suporte. Essa cadeia de caracteres segue o formato <strong>de scheme1:scheme2</strong>. Se essa lista não estiver vazia, <strong>file:</strong> será adicionado à cadeia de caracteres. Esse protocolo tem suporte implícito quando <em>SupportedProtocols</em> é definido. <br/></td>
+    <td>Cria uma cadeia de caracteres que contém os esquemas de protocolo de URL para uma determinada chave. Isso pode conter vários valores de registro para indicar quais esquemas têm suporte. Essa cadeia de caracteres segue o formato de <strong>scheme1: scheme2</strong>. Se essa lista não estiver vazia, <strong>file:</strong> será adicionado à cadeia de caracteres. Esse protocolo tem suporte implícito quando <em>SupportedProtocols</em> é definido. <br/></td>
     </tr>
     <tr class="even">
     <td>UseUrl</td>
-    <td>Indica que seu aplicativo pode aceitar uma URL (em vez de um nome de arquivo) na linha de comando. Aplicativos que podem abrir documentos diretamente da Internet, como navegadores da Web e players de mídia, devem definir essa entrada. <br/> Quando a <a href="/windows/desktop/api/Shellapi/nf-shellapi-shellexecuteexa"><strong>função ShellExecuteEx</strong></a> inicia um aplicativo e o valor UseUrl=1 não está definido, <strong>ShellExecuteEx</strong> baixa o documento em um arquivo local e invoca o manipulador na cópia local.<br/> Por exemplo, se o aplicativo tiver essa entrada definida e um usuário clicar com o botão direito do mouse em um arquivo armazenado em um servidor Web, o verbo Abrir será disponibilizado. Caso não, o usuário terá que baixar o arquivo e abrir a cópia local. <br/> A entrada UseUrl é <strong>do tipo REG_DWORD</strong> e o valor é 0x1.<br/> No Windows Vista e anterior, essa entrada indicou que a URL deve ser passada para o aplicativo junto com um nome de arquivo local, quando chamada por meio de ShellExecuteEx. No Windows 7, indica que o aplicativo pode entender qualquer URL http ou https que é passada para ele, sem precisar fornecer o nome do arquivo de cache também. Essa chave do Registro está associada à <em>chave SupportedProtocols.</em><br/></td>
+    <td>Indica que seu aplicativo pode aceitar uma URL (em vez de um nome de arquivo) na linha de comando. Os aplicativos que podem abrir documentos diretamente da Internet, como navegadores da Web e media players, devem definir essa entrada. <br/> Quando a função <a href="/windows/desktop/api/Shellapi/nf-shellapi-shellexecuteexa"><strong>ShellExecuteEx</strong></a> inicia um aplicativo e o valor UseUrl = 1 não é definido, <strong>ShellExecuteEx</strong> baixa o documento em um arquivo local e invoca o manipulador na cópia local.<br/> Por exemplo, se o aplicativo tiver essa entrada definida e um usuário clicar com o botão direito do mouse em um arquivo armazenado em um servidor Web, o verbo aberto será disponibilizado. Caso contrário, o usuário precisará baixar o arquivo e abrir a cópia local. <br/> A entrada UseUrl é do tipo <strong>REG_DWORD</strong> e o valor é 0x1.<br/> no Windows Vista e versões anteriores, essa entrada indicou que a URL deve ser passada para o aplicativo junto com um nome de arquivo local, quando chamado via ShellExecuteEx. no Windows 7, ele indica que o aplicativo pode entender qualquer url http ou https que é transmitida a ele, sem precisar fornecer o nome do arquivo de cache também. Essa chave do registro está associada à chave <em>SupportedProtocols</em> .<br/></td>
     </tr>
     </tbody>
     </table>
@@ -138,18 +138,18 @@ Além das entradas (Padrão), Caminho e DropTarget reconhecidas pelo Shell, um a
 
      
 
-### <a name="using-the-applications-subkey"></a>Usando a sub-chave De aplicativos
+### <a name="using-the-applications-subkey"></a>Usando a subchave Applications
 
-Por meio da inclusão de entradas do Registro na sub-chave aplicativos raiz **HKEY \_ \_ CLASSES** ApplicationName.exe, os aplicativos podem fornecer as informações específicas do aplicativo mostradas na \\  \\ ** tabela a seguir.
+Por meio da inclusão de entradas do registro na subchave **HKEY \_ classes \_ raiz** \\ **Applications** \\ *ApplicationName.exe* , os aplicativos podem fornecer as informações específicas do aplicativo mostradas na tabela a seguir.
 
 
 
 | Entrada de registro                   | Descrição                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 |----------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| verbo \\ shell                      | Fornece o método verbo para chamar o aplicativo de OpenWith. Sem uma definição de verbo especificada aqui, o sistema presume que o aplicativo dá suporte a [**CreateProcess**](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-createprocessa)e passa o nome do arquivo na linha de comando. Essa funcionalidade se aplica a todos os métodos verbais, incluindo DropTarget, ExecuteCommand e Dados Dinâmicos Exchange (DDE).                                                                                                                                                                                                                                                                                                                            |
-| Defaulticon                      | Permite que um aplicativo forneça um ícone específico para representar o aplicativo em vez do primeiro ícone armazenado no arquivo .exe aplicativo.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| verbo do Shell \\                      | Fornece o método verbo para chamar o aplicativo a partir de OpenWith. Sem uma definição de verbo especificada aqui, o sistema pressupõe que o aplicativo dá suporte a [**CreateProcess**](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-createprocessa)e passa o nome do arquivo na linha de comando. essa funcionalidade se aplica a todos os métodos de verbo, incluindo DropTarget, ExecuteCommand e troca dinâmica de dados (DDE).                                                                                                                                                                                                                                                                                                                            |
+| DefaultIcon                      | Permite que um aplicativo forneça um ícone específico para representar o aplicativo em vez do primeiro ícone armazenado no arquivo de .exe.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 | FriendlyAppName                  | Fornece uma maneira de obter um nome localizável a ser exibido para um aplicativo em vez de apenas as informações de versão que aparecem, o que pode não ser localizável. A consulta de associação [**ASSOCSTR**](/windows/desktop/api/Shlwapi/ne-shlwapi-assocstr) lê esse valor de entrada do Registro e volta para usar o nome FileDescription nas informações de versão. Se esse nome estiver ausente, a consulta de associação assume como padrão o nome de exibição do arquivo. Os aplicativos devem **usar ASSOCSTR \_ FRIENDLYAPPNAME** para recuperar essas informações para obter o comportamento adequado.                                                                                                                                                                        |
-| Supportedtypes                   | Lista os tipos de arquivo aos quais o aplicativo dá suporte. Isso permite que o aplicativo seja listado no menu em cascata da Abrir com caixa **de** diálogo.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| Supportedtypes                   | Lista os tipos de arquivo aos quais o aplicativo dá suporte. Isso permite que o aplicativo seja listado no menu em cascata **da** Abrir com de diálogo.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 | NoOpenWith                       | Indica que nenhum aplicativo é especificado para abrir esse tipo de arquivo. Esteja ciente de que se uma sub-chave OpenWithProgIDs tiver sido definida para um aplicativo por tipo de arquivo e a sub-chave ProgID em si também não tiver uma entrada NoOpenWith, esse aplicativo aparecerá na lista de aplicativos recomendados ou disponíveis, mesmo se tiver especificado a entrada NoOpenWith. Para obter mais informações, consulte How [to Include an Application in the Open With Dialog Box](how-to-include-an-application-on-the-open-with-dialog-box.md) e How to exclude [an Application from the Abrir com Dialog Box](how-to-exclude-an-application-from-the-open-with-dialog-box-for-unassociated-file-types.md).<br/> |
 | IsHostApp                        | Indica que o processo é um processo de host, como Rundll32.exe ou Dllhost.exe, e não deve ser considerado para iniciar a pinagem de **menu** ou inclusão na lista MFU (Mais Usado). Quando lançado com um atalho que contém uma lista de argumentos não nulos ou uma IDs explícitas do Modelo de Usuário do Aplicativo [(AppUserModelIDs),](appids.md)o processo pode ser fixado (como esse atalho). Esses atalhos são candidatos para inclusão na lista MFU.                                                                                                                                                                                                                                                  |
 | NoStartPage                      | Indica que o executável do aplicativo e os atalhos devem ser excluídos do **menu** Iniciar e de fixar ou incluir na lista MFU. Normalmente, essa entrada é usada para excluir ferramentas do sistema, instaladores e desinstaladores e arquivos leiame.                                                                                                                                                                                                                                                                                                                                                                                                                                                      |

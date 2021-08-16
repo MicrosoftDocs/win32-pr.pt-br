@@ -1,5 +1,5 @@
 ---
-description: Elemento InkClass – representa os traços coletados de tinta dentro de um espaço de tinta.
+description: Elemento InkClass – representa os traços de tinta coletados dentro de um espaço de tinta.
 ms.assetid: 7c064ff9-e0d9-4be4-be83-c10bbfd71134
 title: Elemento InkClass
 ms.topic: reference
@@ -13,7 +13,7 @@ ms.locfileid: "118220837"
 ---
 # <a name="inkclass-element"></a>Elemento InkClass
 
-Representa os traços de tinta coletados dentro de um espaço de tinta.
+Representa os traços de tinta coletados em um espaço de tinta.
 
 ## <a name="definition"></a>Definição
 
@@ -40,8 +40,8 @@ Nenhum.
 |  Elemento     | Valor                                                     |
 |--------------|--------------------------------------------|
 | Tipo de elemento | **xs:string**                              |
-| Namespace    | urn:schemas-microsoft-com:tabletpc:richink |
-| Nome do esquema  | Leitor de Diário                             |
+| Namespace    | urn: esquemas-Microsoft-com: Tablet: RichInk |
+| Nome do esquema  | Leitor de diário                             |
 
 
 

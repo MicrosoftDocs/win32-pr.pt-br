@@ -108,7 +108,7 @@ Atualmente, o **InkDivider** não dá suporte a idiomas verticais. Para o objeto
 |-------------------------------------|-------------------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do XP Tablet PC Edition\]<br/>                                                           |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                                               |
-| parâmetro<br/>                   | <dl> <dt>Msinkaut15. h (também requer Msinkaut15 \_ i. c)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Msinkaut15. h (também requer Msinkaut15 \_ i. c)</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>Inkdiv.dll</dt> </dl>                                   |
 
 

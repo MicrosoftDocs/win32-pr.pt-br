@@ -1,7 +1,7 @@
 ---
-description: 'Decrementa a contagem de referência no objeto. Esse método implementa o método INonDelegatingUnknown:: NonDelegatingRelease.'
+description: Diminui a contagem de referência no objeto . Esse método implementa o método INonDeltingUnknown::NonDeltingRelease.
 ms.assetid: 58610f7d-5524-450f-a0f8-b299944abc78
-title: Método CUnknown. NonDelegatingRelease (combase. h)
+title: Método CUnknown.NonDeltingRelease (Combase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: ec709d4b636eea6a145f9a24a868ad5c495e4477
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 1ac5145e1776602c5bb358805c45ec271766fe918b7924d948e286ae32b31794
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105754217"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117821950"
 ---
-# <a name="cunknownnondelegatingrelease-method"></a>Método CUnknown. NonDelegatingRelease
+# <a name="cunknownnondelegatingrelease-method"></a>Método CUnknown.NonDeltingRelease
 
-Decrementa a contagem de referência no objeto. Esse método implementa o método **INonDelegatingUnknown:: NonDelegatingRelease** .
+Diminui a contagem de referência no objeto . Esse método implementa o **método INonDeltingUnknown::NonDeltingRelease.**
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,13 +40,13 @@ ULONG NonDelegatingRelease();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna a contagem de referência.
 
 ## <a name="remarks"></a>Comentários
 
-Quando a contagem de referência chega a zero, o objeto se exclui.
+Quando a contagem de referência atinge zero, o objeto se exclui.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,8 +54,8 @@ Quando a contagem de referência chega a zero, o objeto se exclui.
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Combase. h (incluir fluxos. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Combase.h (incluir Fluxos.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

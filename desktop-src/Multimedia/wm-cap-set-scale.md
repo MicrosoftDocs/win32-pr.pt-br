@@ -1,9 +1,9 @@
 ---
-title: Mensagem de WM_CAP_SET_SCALE (VFW. h)
-description: A \_ \_ \_ mensagem definir escala do WM Cap habilita ou desabilita o dimensionamento das imagens de vídeo de visualização.
+title: WM_CAP_SET_SCALE mensagem (Vfw.h)
+description: A mensagem WM \_ CAP \_ SET SCALE \_ habilita ou desabilita o dimensionamento das imagens de vídeo de visualização.
 ms.assetid: f15f1d18-2c5a-40c1-baa1-0d18549bee23
 keywords:
-- mensagem de WM_CAP_SET_SCALE Windows multimídia
+- WM_CAP_SET_SCALE mensagem Windows Multimídia
 topic_type:
 - apiref
 api_name:
@@ -21,9 +21,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118369390"
 ---
-# <a name="wm_cap_set_scale-message"></a>\_Mensagem de \_ escala do conjunto de Cap do WM \_
+# <a name="wm_cap_set_scale-message"></a>Mensagem WM \_ CAP \_ SET \_ SCALE
 
-A **mensagem \_ \_ definir \_ escala do WM Cap** habilita ou desabilita o dimensionamento das imagens de vídeo de visualização. Se a colocação em escala estiver habilitada, o quadro de vídeo capturado será alongado para as dimensões da janela de captura. Você pode enviar essa mensagem explicitamente ou usando a macro [**capPreviewScale**](/windows/desktop/api/Vfw/nf-vfw-cappreviewscale) .
+A **mensagem WM CAP SET \_ \_ \_ SCALE** habilita ou desabilita o dimensionamento das imagens de vídeo de visualização. Se o dimensionamento estiver habilitado, o quadro de vídeo capturado será estendido para as dimensões da janela de captura. Você pode enviar essa mensagem explicitamente ou usando a [**macro capPreviewScale.**](/windows/desktop/api/Vfw/nf-vfw-cappreviewscale)
 
 
 ```C++
@@ -38,22 +38,22 @@ lParam = 0L;
 
 <dl> <dt>
 
-<span id="f"></span><span id="F"></span>*fixo*
+<span id="f"></span><span id="F"></span>*F*
 </dt> <dd>
 
-Sinalizador de escala de visualização. Especifique **true** para esse parâmetro para alongar os quadros de visualização para o tamanho da janela de captura ou **false** para exibi-los em seu tamanho natural.
+Sinalizador de dimensionamento de visualização. **Especifique TRUE** para esse parâmetro alongar quadros de visualização para o tamanho da janela de captura ou **FALSE** para exibi-los em seu tamanho natural.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor Retornado
 
-Retornará **true** se for bem-sucedido ou **false** caso contrário.
+Retornará **TRUE se** for bem-sucedido **ou FALSE** caso contrário.
 
 ## <a name="remarks"></a>Comentários
 
-Dimensionar imagens de visualização controla a apresentação imediata de quadros capturados dentro da janela de captura. Ele não tem nenhum efeito sobre o tamanho dos quadros salvos no arquivo.
+O dimensionamento de imagens de visualização controla a apresentação imediata de quadros capturados dentro da janela de captura. Ele não tem efeito sobre o tamanho dos quadros salvos no arquivo.
 
-O dimensionamento não tem nenhum efeito ao usar a sobreposição para exibir o vídeo no buffer de quadros.
+O dimensionamento não tem nenhum efeito ao usar a sobreposição para exibir vídeo no buffer de quadro.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -63,7 +63,7 @@ O dimensionamento não tem nenhum efeito ao usar a sobreposição para exibir o 
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                       |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                             |
-| Cabeçalho<br/>                   | <dl> <dt>VFW. h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Vfw.h</dt> </dl> |
 
 
 

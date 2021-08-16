@@ -1,11 +1,11 @@
 ---
-title: atributo ms-WMI-Name
-description: O nome de exibição para objetos de política de nível superior. Usado no catálogo global.
+title: Atributo ms-WMI-Name
+description: O nome de exibição para objetos de política de nível superior. Usado no Catálogo Global.
 ms.assetid: 4c07e4ba-7f3f-4066-b4cd-2c6d738d7421
 ms.tgt_platform: multiple
 keywords:
-- MS-WMI-Name atributo AD Schema
-- atributo msWMI-Name do AD Schema
+- Esquema do AD do atributo ms-WMI-Name
+- Esquema do AD do atributo msWMI-Name
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e49d5a57a9056e6f7201d3cdd53039c4f74b590f
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 6de31306ef4f62ed0b502cf9d32c84dad0803c8cc593706913856114df26ee77
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104086887"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117837289"
 ---
-# <a name="ms-wmi-name-attribute"></a>atributo ms-WMI-Name
+# <a name="ms-wmi-name-attribute"></a>Atributo ms-WMI-Name
 
-O nome de exibição para objetos de política de nível superior. Usado no catálogo global.
+O nome de exibição para objetos de política de nível superior. Usado no Catálogo Global.
 
 
 
 | Entrada | Valor |
 |-------------------|---------------------------------------------|
-| CN                | MS-WMI-Name                                 |
-| LDAP-Display-Name | msWMI-nome                                  |
+| CN                | ms-WMI-Name                                 |
+| Ldap-Display-Name | msWMI-Name                                  |
 | Tamanho              | \-                                          |
-| Privilégio de atualização  | Administrador de Política de Grupo                  |
+| Privilégio de atualização  | Política de Grupo administrador                  |
 | Frequência de atualização  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.1639                     |
-| System-ID-GUID    | c6c8ace5-7e81-42af-ad72-77412c5941c4        |
-| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | c6c8ace5-7e81-42af-ad72-77412c5941c4        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -57,15 +57,15 @@ O nome de exibição para objetos de política de nível superior. Usado no cat�
 | ID do link                | \-                                                                                                              |
 | MAPI-Id                | \-                                                                                                              |
 | System-Only            | Falso                                                                                                           |
-| É de valor único       | True                                                                                                            |
+| Tem valor único       | Verdadeiro                                                                                                            |
 | É indexado             | Falso                                                                                                           |
-| No catálogo global      | Falso                                                                                                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                    |
+| No Catálogo Global      | Falso                                                                                                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                    |
 | Range-Lower            | \-                                                                                                              |
 | Range-Upper            | \-                                                                                                              |
 | Search-Flags           | 0x00000000                                                                                                      |
 | System-Flags           | 0x00000010                                                                                                      |
-| Classes usadas em        | [**MS-WMI-Policytemplate**](c-mswmi-policytemplate.md)<br/> [**MS-WMI-som**](c-mswmi-som.md)<br/> |
+| Classes usadas em        | [**ms-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> [**ms-WMI-Som**](c-mswmi-som.md)<br/> |
 
 
 
@@ -78,15 +78,15 @@ O nome de exibição para objetos de política de nível superior. Usado no cat�
 | ID do link                | \-                                                                                                              |
 | MAPI-Id                | \-                                                                                                              |
 | System-Only            | Falso                                                                                                           |
-| É de valor único       | True                                                                                                            |
+| Tem valor único       | Verdadeiro                                                                                                            |
 | É indexado             | Falso                                                                                                           |
-| No catálogo global      | Falso                                                                                                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                    |
+| No Catálogo Global      | Falso                                                                                                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                    |
 | Range-Lower            | \-                                                                                                              |
 | Range-Upper            | \-                                                                                                              |
 | Search-Flags           | 0x00000000                                                                                                      |
 | System-Flags           | 0x00000010                                                                                                      |
-| Classes usadas em        | [**MS-WMI-Policytemplate**](c-mswmi-policytemplate.md)<br/> [**MS-WMI-som**](c-mswmi-som.md)<br/> |
+| Classes usadas em        | [**ms-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> [**ms-WMI-Som**](c-mswmi-som.md)<br/> |
 
 
 
@@ -99,10 +99,10 @@ O nome de exibição para objetos de política de nível superior. Usado no cat�
 | ID do link                | \-                                                                                                              |
 | MAPI-Id                | \-                                                                                                              |
 | System-Only            | Falso                                                                                                           |
-| É de valor único       | True                                                                                                            |
+| Tem valor único       | Verdadeiro                                                                                                            |
 | É indexado             | Falso                                                                                                           |
-| No catálogo global      | Falso                                                                                                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                    |
+| No Catálogo Global      | Falso                                                                                                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                    |
 | Range-Lower            | \-                                                                                                              |
 | Range-Upper            | \-                                                                                                              |
 | Search-Flags           | 0x00000000                                                                                                      |
@@ -120,7 +120,7 @@ O nome de exibição para objetos de política de nível superior. Usado no cat�
 | ID do link                | \-                                                                                                              |
 | MAPI-Id                | \-                                                                                                              |
 | System-Only            | Falso                                                                                                           |
-| É de valor único       | True                                                                                                            |
+| É de valor único       | Verdadeiro                                                                                                            |
 | É indexado             | Falso                                                                                                           |
 | No catálogo global      | Falso                                                                                                           |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                    |
@@ -141,7 +141,7 @@ O nome de exibição para objetos de política de nível superior. Usado no cat�
 | ID do link                | \-                                                                                                              |
 | MAPI-Id                | \-                                                                                                              |
 | System-Only            | Falso                                                                                                           |
-| É de valor único       | True                                                                                                            |
+| É de valor único       | Verdadeiro                                                                                                            |
 | É indexado             | Falso                                                                                                           |
 | No catálogo global      | Falso                                                                                                           |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                    |

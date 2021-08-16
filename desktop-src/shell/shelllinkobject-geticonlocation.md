@@ -1,7 +1,7 @@
 ---
 description: Obtém o local do ícone atribuído ao link.
 ms.assetid: 3bb7f0f0-7ab9-41e6-b738-274efbcd52ab
-title: Método ShellLinkObject.GetIconLocation (Shlobj \_ core.h)
+title: Método ShellLinkObject. GetIconLocation (shlobj \_ Core. h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -20,7 +20,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117857577"
 ---
-# <a name="shelllinkobjectgeticonlocation-method"></a>Método ShellLinkObject.GetIconLocation
+# <a name="shelllinkobjectgeticonlocation-method"></a>Método ShellLinkObject. GetIconLocation
 
 Obtém o local do ícone atribuído ao link.
 
@@ -39,24 +39,24 @@ iRetVal = ShellLinkObject.GetIconLocation(
 
 <dl> <dt>
 
-*sPath* \[ out\]
+*sPath* \[ fora\]
 </dt> <dd>
 
 Tipo: **[ **BSTR**](/previous-versions/windows/desktop/automat/bstr)\***
 
-Quando esse método retorna, ele mantém o caminho totalmente qualificado do arquivo que contém o ícone.
+Quando esse método retorna, ele contém o caminho totalmente qualificado do arquivo que contém o ícone.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor retornado
 
-Tipo: **\* Inteiro**
+Tipo: **inteiro \***
 
 Retorna o índice do ícone no arquivo especificado por *sPath*.
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo a seguir mostra o uso adequado desse método para JScript, VBScript e Visual Basic.
+o exemplo a seguir mostra o uso apropriado desse método para JScript, VBScript e Visual Basic.
 
 JScript:
 
@@ -95,7 +95,7 @@ JScript:
 
 
 
-Vbscript:
+VBScript
 
 
 ```VB
@@ -175,11 +175,11 @@ End Sub
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 2000 Professional somente com aplicativos da área de trabalho SP3 \[\]<br/>                                           |
+| Cliente mínimo com suporte<br/> | Windows 2000 Professional somente com \[ aplicativos da área de trabalho do SP3\]<br/>                                           |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                          |
-| Cabeçalho<br/>                   | <dl> <dt>Shlobj \_ core.h (inclua Shldisp.h)</dt> </dl> |
-| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
-| DLL<br/>                      | <dl> <dt>Shell32.dll (versão 5.0 ou posterior)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Shlobj \_ Core. h (incluir shldisp. h)</dt> </dl> |
+| INSERI<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                        |
+| DLL<br/>                      | <dl> <dt>Shell32.dll (versão 5,0 ou posterior)</dt> </dl> |
 
 
 

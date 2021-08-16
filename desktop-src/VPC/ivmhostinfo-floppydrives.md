@@ -1,11 +1,11 @@
 ---
-title: Propriedade IVMHostInfo FloppyDrives (VPCCOMInterfaces. h)
-description: Recupera as letras da unidade associadas às unidades de disquete do host.
+title: Propriedade IVMHostInfo FloppyDrives (VPCCOMInterfaces.h)
+description: Recupera as letras de unidade associadas às unidades de disquete do host.
 ms.assetid: 9a8ab4b5-6ee8-463f-809b-b88cd28d9373
 keywords:
-- Propriedade FloppyDrives Virtual PC
-- Propriedade FloppyDrives Virtual PC, interface IVMHostInfo
-- IVMHostInfo interface virtual PC, Propriedade FloppyDrives
+- Propriedade FloppyDrives Pc Virtual
+- Propriedade FloppyDrives Pc Virtual , interface IVMHostInfo
+- INTERFACE IVMHostInfo PC Virtual, propriedade FloppyDrives
 topic_type:
 - apiref
 api_name:
@@ -24,11 +24,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118345690"
 ---
-# <a name="ivmhostinfofloppydrives-property"></a>Propriedade IVMHostInfo:: FloppyDrives
+# <a name="ivmhostinfofloppydrives-property"></a>Propriedade IVMHostInfo::FloppyDrives
 
-\[Windows O Virtual PC não está mais disponível para uso a partir de Windows 8. Em vez disso, use o [provedor WMI do Hyper-V (v2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
+\[Windows O PC virtual não está mais disponível para uso a partir Windows 8. Em vez disso, use o provedor WMI do [Hyper-V (V2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
 
-Recupera as letras da unidade associadas às unidades de disquete do host.
+Recupera as letras de unidade associadas às unidades de disquete do host.
 
 Esta propriedade é somente para leitura.
 
@@ -54,8 +54,8 @@ Uma matriz de letras de unidade.
 | Nome/valor                                                                                                                                                    | Significado                                      |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------|
 | <dl> <dt>S \_ OK</dt> <dt>0</dt> </dl>                       | A operação foi bem-sucedida.<br/>     |
-| <dl> <dt>E \_ </dt> <dt>0X80004003</dt> de ponteiro </dl>         | O parâmetro é **NULL**.<br/>        |
-| <dl> <dt>DISP \_ E \_ </dt> <dt>0x80020009</dt> de exceção </dl> | Ocorreu um erro inesperado.<br/> |
+| <dl> <dt>E \_ PONTEIRO</dt> <dt>0x80004003</dt> </dl>         | O parâmetro é **NULL.**<br/>        |
+| <dl> <dt>DISP \_ E \_ EXCEPTION</dt> <dt>0x80020009</dt> </dl> | Ocorreu um erro inesperado.<br/> |
 
 
 
@@ -65,12 +65,12 @@ Uma matriz de letras de unidade.
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[somente aplicativos de área de trabalho Windows 7\]<br/>                                                    |
+| Cliente mínimo com suporte<br/> | Windows 7 \[ aplicativos da área de trabalho\]<br/>                                                    |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                     |
-| Fim do suporte do cliente<br/>    | Windows 7<br/>                                                                          |
+| Fim do suporte ao cliente<br/>    | Windows 7<br/>                                                                          |
 | Produto<br/>                  | Windows Virtual PC<br/>                                                                 |
-| Cabeçalho<br/>                   | <dl> <dt>VPCCOMInterfaces. h</dt> </dl> |
-| IID<br/>                      | IID \_ IVMHostInfo é definido como 5b5cf343-05ad-453b-be99-adf4e27b2ebc<br/>                |
+| Cabeçalho<br/>                   | <dl> <dt>VPCCOMInterfaces.h</dt> </dl> |
+| IID<br/>                      | IID IVMHostInfo é definido como \_ 5b5cf343-05ad-453b-be99-adf4e27b2ebc<br/>                |
 
 
 

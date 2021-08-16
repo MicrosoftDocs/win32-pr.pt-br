@@ -9,12 +9,12 @@ keywords:
 - objetos, objetos ADSI do ADSI do LDAP
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2e764388746039b5849f1de4c81c554fa194180b
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 3d91242f0f60ff4e7d07bd22f6e064f6a091a75228876e29139bbedbd2327857
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103822236"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117840776"
 ---
 # <a name="adsi-objects-of-ldap"></a>Objetos ADSI do LDAP
 
@@ -44,11 +44,11 @@ A tabela a seguir lista objetos COM comumente usados para o provedor LDAP no ADS
 
 
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,12 +1,12 @@
 ---
-title: Método setservers da classe Win32_TSGatewayLoadBalancer
-description: Define a propriedade Servers com a lista de servidores de balanceamento de carga do gateway de Área de Trabalho Remota (gateway de área de trabalho remota).
+title: Método SetServers da classe Win32_TSGatewayLoadBalancer
+description: Define a propriedade Servers com a lista de servidores de balanceamento de carga Área de Trabalho Remota Gateway de Área de Trabalho Remota (Gateway de RD).
 ms.assetid: c82de8e2-301b-465d-b375-038b8a480cde
 ms.tgt_platform: multiple
 keywords:
-- Método setservers Serviços de Área de Trabalho Remota
-- Método setservers Serviços de Área de Trabalho Remota, classe Win32_TSGatewayLoadBalancer
-- Classe Win32_TSGatewayLoadBalancer Serviços de Área de Trabalho Remota, método setservers
+- Método SetServers Serviços de Área de Trabalho Remota
+- Método SetServers Serviços de Área de Trabalho Remota , Win32_TSGatewayLoadBalancer classe
+- Win32_TSGatewayLoadBalancer classe Serviços de Área de Trabalho Remota , método SetServers
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b28d1123ce82844fb501f3562014b93337502b51
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: da2c23ac6cf965687a022c5ae5ba8c1ce690c39c45f9149076f36ab13bc2d222
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103644867"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118349612"
 ---
-# <a name="setservers-method-of-the-win32_tsgatewayloadbalancer-class"></a>Método setservers da classe Win32 \_ TSGatewayLoadBalancer
+# <a name="setservers-method-of-the-win32_tsgatewayloadbalancer-class"></a>Método SetServers da classe \_ Win32 TSGatewayLoadBalancer
 
-Define a propriedade **Servers** com a lista de servidores de balanceamento de carga do gateway de área de trabalho remota (gateway de área de trabalho remota).
+Define a **propriedade Servers** com a lista de servidores de balanceamento de carga Área de Trabalho Remota Gateway de Área de Trabalho Remota (Gateway de RD).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -43,24 +43,24 @@ uint32 SetServers(
 
 <dl> <dt>
 
-*Servidores* \[ do no\]
+*Servidores* \[ Em\]
 </dt> <dd>
 
-Lista separada por ponto e vírgula dos servidores de balanceamento de carga do gateway de área de trabalho remota.
+Lista separada por ponto e vírgula de servidores de balanceamento de carga do Gateway de RD.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Se o método tiver sucesso, ele retornará zero. Se o método não for bem-sucedido, ele retornará um valor diferente de zero. Para obter uma lista de códigos de erro, consulte [serviços de área de trabalho remota códigos de erro do provedor WMI](terminal-services-wmi-provider-error-codes.md).
+Se o método for bem-sucedido, ele retornará zero. Se o método não for bem-sucedido, ele retornará um valor diferente de zero. Para ver uma lista de códigos de erro, consulte Serviços de Área de Trabalho Remota códigos de erro do provedor [WMI.](terminal-services-wmi-provider-error-codes.md)
 
 ## <a name="remarks"></a>Comentários
 
-Se vários servidores estiverem no parâmetro *servidores* e um dos servidores não puder ser processado, nenhum dos servidores será processado.
+Se vários servidores estão no parâmetro *Servers* e um dos servidores não pode ser processado, nenhum dos servidores será processado.
 
 Você deve ser um membro do grupo Administradores para chamar esse método.
 
-Os arquivos de formato MOF (MOF) contêm as definições de classes de Instrumentação de Gerenciamento do Windows (WMI). Os arquivos MOF não são instalados como parte do SDK (Software Development Kit) do Microsoft Windows. Eles são instalados no servidor quando você adiciona a função associada usando o Gerenciador do Servidor. Para obter mais informações sobre arquivos MOF, consulte [formato MOF (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
+arquivos Managed Object Format (MOF) contêm as definições para classes WMI (Instrumentação de Gerenciamento de Windows). Os arquivos MOF não são instalados como parte do Microsoft Windows Software Development Kit (SDK). Eles são instalados no servidor quando você adiciona a função associada usando o Gerenciador do Servidor. Para obter mais informações sobre arquivos MOF, [consulte Managed Object Format (MOF).](/windows/desktop/WmiSdk/managed-object-format--mof-)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -70,8 +70,8 @@ Os arquivos de formato MOF (MOF) contêm as definições de classes de Instrumen
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Nenhum compatível<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                           |
-| Namespace<br/>                | \\TerminalServices da CIMv2 raiz \\<br/>                                                 |
-| MOF<br/>                      | <dl> <dt>TS. mof</dt> </dl> |
+| Namespace<br/>                | \\CiMv2 \\ TerminalServices raiz<br/>                                                 |
+| MOF<br/>                      | <dl> <dt>TSGateway.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>AagWmi.dll</dt> </dl>    |
 
 
@@ -80,7 +80,7 @@ Os arquivos de formato MOF (MOF) contêm as definições de classes de Instrumen
 
 <dl> <dt>
 
-[**\_TSGatewayLoadBalancer Win32**](win32-tsgatewayloadbalancer.md)
+[**Win32 \_ TSGatewayLoadBalancer**](win32-tsgatewayloadbalancer.md)
 </dt> </dl>
 
  
