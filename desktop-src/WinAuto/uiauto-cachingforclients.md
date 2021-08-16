@@ -5,11 +5,11 @@ ms.assetid: 948b3bb9-75a9-4197-9680-e6fe7bb86feb
 keywords:
 - cache, Automação da Interface do Usuário propriedades
 - cache, propriedades
-- cache, padrões Automação da Interface do Usuário controle
+- cache, Automação da Interface do Usuário de controle
 - cache, padrões de controle
-- Automação da Interface do Usuário,propriedades de cache
+- Automação da Interface do Usuário, propriedades de cache
 - Automação da Interface do Usuário, cache de propriedade
-- clientes, propriedades Automação da Interface do Usuário cache
+- clientes, propriedades de Automação da Interface do Usuário cache
 - clientes, cache e Automação da Interface do Usuário de controle
 - Automação da Interface do Usuário, padrões de controle de cache
 - Automação da Interface do Usuário,cache de padrão de controle
@@ -29,13 +29,13 @@ Ao usar o Microsoft Automação da Interface do Usuário, os clientes geralmente
 
 O aplicativo pode solicitar cache quando recupera um elemento Automação da Interface do Usuário usando um método, como [**IUIAutomation::ElementFromPointBuildCache**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomation-elementfrompointbuildcache), [**IUIAutomationTreeWalker::GetFirstChildElementBuildCache**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtreewalker-getfirstchildelementbuildcache)ou [**IUIAutomationElement::FindFirstBuildCache.**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-findfirstbuildcache)
 
-Caching também ocorre quando você especifica uma solicitação de cache ao assinar eventos. O Automação da Interface do Usuário de eventos passado para o manipulador de eventos como a origem de um evento contém as propriedades armazenadas em cache e os padrões de controle especificados pela solicitação de cache. As alterações feitas na solicitação de cache depois de assinar o evento não terão efeito.
+Caching também ocorre quando você especifica uma solicitação de cache ao assinar eventos. O Automação da Interface do Usuário elemento passado para o manipulador de eventos como a origem de um evento contém as propriedades armazenadas em cache e os padrões de controle especificados pela solicitação de cache. As alterações feitas na solicitação de cache depois de assinar o evento não terão efeito.
 
 Este tópico inclui as seções a seguir.
 
 -   [Solicitações de cache](#cache-requests)
     -   [Especificando padrões de propriedade e controle a armazenar em cache](#specifying-property-and-control-patterns-to-cache)
-    -   [Especificando o scoping e a filtragem de uma solicitação Caching consulta](#specifying-the-scoping-and-filtering-of-a-caching-request)
+    -   [Especificando o scoping e filtragem de uma solicitação Caching consulta](#specifying-the-scoping-and-filtering-of-a-caching-request)
     -   [Força das referências de elemento](#strength-of-element-references)
 -   [Recuperando filhos e pais armazenados em cache](#retrieving-cached-children-and-parents)
 -   [Recuperando um novo instantâneo do cache](#retrieving-a-new-snapshot-of-the-cache)
@@ -54,7 +54,7 @@ Você pode especificar propriedades para armazenar em cache chamando [**IUIAutom
 
 Você pode recuperar uma propriedade de padrão de [](uiauto-implementingvalue.md) controle (por exemplo, a propriedade Value do padrão de controle Valor), sem precisar recuperar todo o padrão de controle no cache. Você deve recuperar o padrão de controle somente se precisar usar um método de padrão de controle.
 
-### <a name="specifying-the-scoping-and-filtering-of-a-caching-request"></a>Especificando o scoping e a filtragem de uma solicitação Caching consulta
+### <a name="specifying-the-scoping-and-filtering-of-a-caching-request"></a>Especificando o scoping e filtragem de uma solicitação Caching consulta
 
 Você pode especificar os elementos cujas propriedades e padrões de controle você deseja armazenar em cache definindo a propriedade [**IUIAutomationCacheRequest::TreeScope**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationcacherequest-get_treescope) antes de usar a solicitação. O escopo é relativo aos elementos recuperados pelo método para o qual a solicitação de cache é passada. Por exemplo, se você definir apenas [**TreeScope \_ Children**](/windows/desktop/api/UIAutomationClient/ne-uiautomationclient-treescope)e recuperar um elemento Automação da Interface do Usuário, as propriedades e os padrões de controle dos filhos desse elemento serão armazenados em cache, mas as propriedades e os padrões de controle do próprio elemento não serão armazenados em cache. Para garantir que o cache seja feito para o próprio elemento recuperado, você deve incluir o Elemento **TreeScope \_** na propriedade **IUIAutomationCacheRequest::TreeScope.** Não é possível definir o escopo como **TreeScope \_ Parent ou** **TreeScope \_ Ancestors**. No entanto, um elemento pai pode ser armazenado em cache quando um elemento filho é armazenado em cache; consulte Recuperando filhos e pais armazenados em cache neste tópico.
 
@@ -87,7 +87,7 @@ A recuperação de um novo instantâneo do cache não modifica as propriedades d
 
 ## <a name="examples"></a>Exemplos
 
-Para ver exemplos de código que mostram como usar os recursos de cache do Automação da Interface do Usuário, consulte [How to Use Caching](uiauto-howto-use-caching.md).
+Para exemplos de código que mostram como usar os recursos de cache do Automação da Interface do Usuário, consulte [How to Use Caching](uiauto-howto-use-caching.md).
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

@@ -1,5 +1,5 @@
 ---
-description: 'as seguintes estruturas são usadas com o Interface de Usuário Multilíngue (MUI):'
+description: 'As seguintes estruturas são usadas com a Interface de Usuário Multilíngue (MUI):'
 ms.assetid: 6b2f88f9-e6e8-4997-ba71-be6d8be9a1a1
 title: Interface de Usuário Multilíngue Estruturas
 ms.topic: article
@@ -13,7 +13,7 @@ ms.locfileid: "118390789"
 ---
 # <a name="multilingual-user-interface-structures"></a>Interface de Usuário Multilíngue Estruturas
 
-as seguintes estruturas são usadas com o Interface de Usuário Multilíngue (MUI):
+As seguintes estruturas são usadas com a Interface de Usuário Multilíngue (MUI):
 
 [**FILEMUIINFO**](/windows/desktop/api/Winnls/ns-winnls-filemuiinfo)
 

@@ -1,6 +1,6 @@
 ---
-title: RSQ-vs
-description: Computa a raiz quadrada recíproca (somente positivo) do escalar de origem. | RSQ-vs
+title: rsq - vs
+description: Calcula a raiz recíproca quadrada (somente positiva) do escalar de origem. | rsq - vs
 ms.assetid: 1ac37dad-0cea-41af-8dae-f299896462b1
 ms.topic: reference
 ms.date: 05/31/2018
@@ -16,15 +16,15 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118510903"
 ---
-# <a name="rsq---vs"></a>RSQ-vs
+# <a name="rsq---vs"></a>rsq - vs
 
-Computa a raiz quadrada recíproca (somente positivo) do escalar de origem.
+Calcula a raiz recíproca quadrada (somente positiva) do escalar de origem.
 
 ## <a name="syntax"></a>Syntax
 
 
 
-| RSQ DST, src |
+| rsq dst, src |
 |--------------|
 
 
@@ -33,14 +33,14 @@ Computa a raiz quadrada recíproca (somente positivo) do escalar de origem.
 
 onde
 
--   DST é o registro de destino.
--   src é um registro de origem. O registro de origem requer uso explícito de replicate swizzle, ou seja, exatamente um dos componentes. x,. y,. z,. w swizzle (ou. r,. g,. b,. equivalentes) devem ser especificados.
+-   dst é o registro de destino.
+-   src é um registro de origem. O registro de origem requer o uso explícito do swizzle de replicação, ou seja, exatamente um dos componentes .x, .y, .z, .w swizzle (ou os equivalentes .r, .g, .b, .a).
 
 ## <a name="remarks"></a>Comentários
 
 
 
-| Versões do sombreador de vértice | 1\_1 | 2 \_ 0 | 2 \_ x | 2 \_ SW | 3 \_ 0 | 3 \_ SW |
+| Versões do sombreador de vértice | 1\_1 | 2 \_ 0 | 2 \_ x | 2 \_ sw | 3 \_ 0 | 3 \_ sw |
 |------------------------|------|------|------|-------|------|-------|
 | rsq                    | x    | x    | x    | x     | x    | x     |
 
@@ -66,11 +66,11 @@ dest.z = dest.y = dest.z = dest.w = f;
 
 
 
-O valor absoluto é obtido antes do processamento.
+O valor absoluto é tirado antes do processamento.
 
-A precisão deve ser pelo menos 1,0/(2 ²) erro absoluto durante o intervalo (1,0, 4,0) porque implementações comuns separam mantissa e expoente.
+A precisão deve ser pelo menos 1,0/(2 Vezes) erro absoluto no intervalo (1,0, 4,0) porque implementações comuns separarão mantissa e expoente.
 
-Se a origem não tiver nenhum subscrito, o componente x será usado. A saída deve ser exatamente 1,0 se a entrada for exatamente 1,0. Uma fonte de 0,0 gera infinitos.
+Se a origem não tiver subscritos, o componente x será usado. A saída deverá ser exatamente 1,0 se a entrada for exatamente 1,0. Uma fonte de 0,0 produz infinito.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

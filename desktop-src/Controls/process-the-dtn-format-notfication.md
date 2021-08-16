@@ -4,12 +4,12 @@ description: Este tópico demonstra como processar uma notificação de formato 
 ms.assetid: 7B559846-FE52-4181-B25D-888BE90EB038
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 25271ff33ee6978ebcb0bc474492f884ed7faaa2
-ms.sourcegitcommit: a716ca2a6a22a400f02c6b31699cf4da83ee3619
+ms.openlocfilehash: 070d1234dbd9d09159335539309deec86e2d3e1e05547d933cd18f16b9d7162d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "103824068"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117829907"
 ---
 # <a name="how-to-process-the-dtn_format-notification"></a>Como processar a notificação de \_ formato DTN
 
@@ -19,12 +19,12 @@ Este tópico demonstra como processar uma notificação de formato enviada pelo 
 
 ### <a name="technologies"></a>Tecnologias
 
--   [Controles do Windows](window-controls.md)
+-   [Windows Controles](window-controls.md)
 
 ### <a name="prerequisites"></a>Pré-requisitos
 
 -   C/C++
--   Programação da interface do usuário do Windows
+-   Windows Programação de interface do usuário
 
 ## <a name="instructions"></a>Instruções
 

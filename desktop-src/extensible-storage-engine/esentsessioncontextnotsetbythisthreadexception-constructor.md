@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 3bbc57da39df04ebf38abc705fbaff2b836ee905
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 288f2285aae6ac27df4ccfb3508d0bb00d2795093de09977af0750d38c9c9deb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104171382"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118491275"
 ---
 # <a name="esentsessioncontextnotsetbythisthreadexception-constructor"></a>Construtor EsentSessionContextNotSetByThisThreadException
 
 Inicializa uma nova instância da classe EsentSessionContextNotSetByThisThreadException.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -58,6 +58,6 @@ public EsentSessionContextNotSetByThisThreadException()
 
 [Classe EsentSessionContextNotSetByThisThreadException](./esentsessioncontextnotsetbythisthreadexception-class.md)
 
-[Membros do EsentSessionContextNotSetByThisThreadException](./esentsessioncontextnotsetbythisthreadexception-members.md)
+[Membros EsentSessionContextNotSetByThisThreadException](./esentsessioncontextnotsetbythisthreadexception-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

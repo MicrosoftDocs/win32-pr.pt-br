@@ -82,7 +82,7 @@ Se você decidir implementar os gestos que já têm suporte ou definidos como pa
 
 | Nome do gesto                             | Valor do intervalo Unicode |
 |------------------------------------------|---------------------|
-| INFINITO \_ DE GESTOS<br/>             | 0xf006<br/>   |
+| INFINITO \_ DO GESTO<br/>             | 0xf006<br/>   |
 | CRUZ DE \_ GESTO<br/>                | 0xf007<br/>   |
 | PARÁGRAFO DE \_ GESTO<br/>            | 0xf008<br/>   |
 | SEÇÃO \_ GESTO<br/>              | 0xf009<br/>   |
@@ -108,7 +108,7 @@ Se você decidir implementar os gestos que já têm suporte ou definidos como pa
 | GESTO PARA \_ BAIXO \_ SETA PARA \_ A DIREITA<br/>   | 0xf043<br/>   |
 | SETA \_ PARA A ESQUERDA DO GESTO PARA \_ \_ CIMA<br/>      | 0xf044<br/>   |
 | GESTO DE \_ \_ SETA PARA \_ BAIXO<br/>    | 0xf045<br/>   |
-| GESTO DE \_ \_ SETA PARA \_ A DIREITA PARA CIMA<br/>     | 0xf046<br/>   |
+| GESTO \_ DE \_ SETA PARA A DIREITA PARA \_ CIMA<br/>     | 0xf046<br/>   |
 | GESTO DE \_ \_ SETA PARA \_ A DIREITA PARA BAIXO<br/>   | 0xf047<br/>   |
 | GESTO \_ DIAGONAL \_ LEFTUP<br/>     | 0xf05c<br/>   |
 | GESTO \_ DIAGONAL PARA A \_ DIREITA<br/>    | 0xf05d<br/>   |

@@ -1,7 +1,7 @@
 ---
-description: Os dispositivos portáteis do Windows oferecem suporte às seguintes propriedades de música.
+description: Windows Os Dispositivos Portáteis são compatíveis com as propriedades de música a seguir.
 ms.assetid: a1688c95-af5a-4061-80d4-61f08787d49e
-title: Propriedades de música (PortableDevice. h)
+title: Propriedades de música (PortableDevice.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,25 +13,25 @@ api_type:
 - HeaderDef
 api_location:
 - PortableDevice.h
-ms.openlocfilehash: 3b33c2219dc9da43474f28b4b807727bdd1d90a8
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 9231ad4a3c15aac893cc51105e764d7bb6bbd4866dae6e11164b9418db557c9a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105763538"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117842877"
 ---
 # <a name="music-properties"></a>Propriedades de música
 
-Os dispositivos portáteis do Windows oferecem suporte às seguintes propriedades de música.
+Windows Os Dispositivos Portáteis são compatíveis com as propriedades de música a seguir.
 
 
 
 | Propriedade               | VarType        | Descrição                                |
 |------------------------|----------------|--------------------------------------------|
-| **\_álbum de música WPD \_**  | **LPWStr do VT \_** | O álbum ao qual a faixa pertence.            |
-| **\_letras de música WPD \_** | **LPWStr do VT \_** | As letras da música.                  |
-| **\_humor de música WPD \_**   | **LPWStr do VT \_** | Uma cadeia de caracteres que descreve o humor da música. |
-| **\_faixa de música WPD \_**  | **\_UI4 VT**    | O número de faixa da gravação no álbum. |
+| **WPD \_ MUSIC \_ ALBUM**  | **VT \_ LPWSTR** | O álbum ao que a faixa pertence.            |
+| **WPD \_ MUSIC \_ LYRICS** | **VT \_ LPWSTR** | O canto da música.                  |
+| **WPD \_ MUSIC \_ MOOD**   | **VT \_ LPWSTR** | Uma cadeia de caracteres que descreve o clima da música. |
+| **WPD \_ MUSIC \_ TRACK**  | **VT \_ UI4**    | O número da faixa da gravação no álbum. |
 
 
 
@@ -43,7 +43,7 @@ Os dispositivos portáteis do Windows oferecem suporte às seguintes propriedade
 
 | Requisito | Valor |
 |-------------------|---------------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>PortableDevice. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>PortableDevice.h</dt> </dl> |
 
 
 

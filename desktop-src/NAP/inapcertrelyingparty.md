@@ -1,10 +1,10 @@
 ---
-title: Interface INapCertRelyingParty (NapCertRelyingParty.h)
-description: As partes que dependem de certificado devem usar para se comunicar com o NapAgent.
+title: Interface INapCertRelyingParty (NapCertRelyingParty. h)
+description: As partes confiáveis do certificado devem usar o para se comunicar com o NapAgent.
 ms.assetid: e5ae0f4d-24fa-4049-82d9-1c9baeb34e32
 keywords:
-- INapCertRelyingParty interface NAP
-- NAP da interface INapCertRelyingParty, descrita
+- INapCertRelyingParty da interface NAP
+- INapCertRelyingParty interface NAP, descrita
 topic_type:
 - apiref
 api_name:
@@ -25,15 +25,15 @@ ms.locfileid: "118368605"
 # <a name="inapcertrelyingparty-interface"></a>Interface INapCertRelyingParty
 
 > [!Note]  
-> A plataforma de Proteção de Acesso à Rede não está disponível a partir do Windows 10
+> A plataforma de proteção de acesso à rede não está disponível a partir do Windows 10
 
  
 
-A interface **INapCertRelyingParty** fornece métodos que as partes que dependem do certificado devem usar para se comunicar com o NapAgent.
+A interface **INapCertRelyingParty** fornece métodos que as partes confiáveis de certificado devem usar para se comunicar com o NapAgent.
 
 ## <a name="members"></a>Membros
 
-A interface **INapCertRelyingParty** herda da interface [**IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **INapCertRelyingParty** também tem estes tipos de membros:
+A interface **INapCertRelyingParty** herda da interface [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) . **INapCertRelyingParty** também tem estes tipos de membros:
 
 -   [Métodos](#methods)
 
@@ -45,8 +45,8 @@ A interface **INapCertRelyingParty** tem esses métodos.
 
 | Método                                                                                                        | Descrição                                                                     |
 |:--------------------------------------------------------------------------------------------------------------|:--------------------------------------------------------------------------------|
-| [**INapCertRelyingParty::GetSubscribedRelyingParties**](inapcertrelyingparty-getsubscribedrelyingparties.md) | Obtém uma lista de partes de confiança que assinaram.<br/>                 |
-| [**INapCertRelyingParty::SubscribeCertByGroup**](inapcertrelyingparty-subscribecertbygroup.md)               | Assina um HCS (servidor de certificado de saúde) já registrado.<br/> |
+| [**INapCertRelyingParty::GetSubscribedRelyingParties**](inapcertrelyingparty-getsubscribedrelyingparties.md) | Obtém uma lista de terceiras partes confiáveis que se inscreveram.<br/>                 |
+| [**INapCertRelyingParty::SubscribeCertByGroup**](inapcertrelyingparty-subscribecertbygroup.md)               | Assina um servidor de certificado de integridade já registrado (HCS).<br/> |
 | [**INapCertRelyingParty::UnSubscribeCertByGroup**](inapcertrelyingparty-unsubscribecertbygroup.md)           | Cancela a assinatura de um servidor HCS.<br/>                                     |
 
 
@@ -59,10 +59,10 @@ A interface **INapCertRelyingParty** tem esses métodos.
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                                     |
-| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                               |
-| Cabeçalho<br/>                   | <dl> <dt>NapCertRelyingParty.h</dt> </dl>   |
-| Idl<br/>                      | <dl> <dt>NapCertRelyingParty.idl</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                                     |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                               |
+| Cabeçalho<br/>                   | <dl> <dt>NapCertRelyingParty. h</dt> </dl>   |
+| INSERI<br/>                      | <dl> <dt>NapCertRelyingParty. idl</dt> </dl> |
 
 
 
@@ -70,10 +70,10 @@ A interface **INapCertRelyingParty** tem esses métodos.
 
 <dl> <dt>
 
-[NAP Interfaces](nap-interfaces.md)
+[Interfaces NAP](nap-interfaces.md)
 </dt> <dt>
 
-[Referência nap](nap-reference.md)
+[Referência de NAP](nap-reference.md)
 </dt> </dl>
 
  

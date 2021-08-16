@@ -1,110 +1,110 @@
 ---
-title: Visão geral de camadas
-description: descreve as noções básicas de camadas de Direct2D.
+title: Visão geral das camadas
+description: Descreve os conceitos básicos de Direct2D camadas.
 ms.assetid: 22d161fb-8470-49cc-a523-309f90643ea9
 keywords:
 - Direct2D, camadas
 ms.topic: article
 ms.date: 05/31/2018
 ms.custom: seodec18
-ms.openlocfilehash: 027be097c5c21929f3ccdbaa169a1f3dac55b394
-ms.sourcegitcommit: 698ce2d9ba2fa650f2875225d99623995fac246a
+ms.openlocfilehash: a54c5336b26d2b84f46df4f688101367686d3dbe60be33d8bac5d8c584151daa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "114231603"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117825682"
 ---
-# <a name="layers-overview"></a>Visão geral de camadas
+# <a name="layers-overview"></a>Visão geral das camadas
 
-esta visão geral descreve as noções básicas do uso de camadas de Direct2D. Ele contém as seguintes seções:
+Esta visão geral descreve os conceitos básicos do uso Direct2D camadas. Ele contém as seguintes seções:
 
 -   [O que são camadas?](#what-are-layers)
--   [camadas no Windows 8 e posteriores](#layers-in-windows-8-and-later)
+-   [Camadas em Windows 8 e posteriores](#layers-in-windows-8-and-later)
     -   [ID2D1DeviceContext e PushLayer](#id2d1devicecontext-and-pushlayer)
-    -   [Camada \_ d2d1 \_ PARAMETERS1 e d2d1 \_ \_ OPTIONS1](/windows)
+    -   [D2D1 \_ LAYER \_ PARAMETERS1 e D2D1 \_ LAYER \_ OPTIONS1](/windows)
     -   [Modos do Blend](#blend-modes)
     -   [Interoperação](#interoperation)
 -   [Criando camadas](#creating-layers)
 -   [Limites de conteúdo](#content-bounds)
 -   [Máscaras geométricas](#geometric-masks)
 -   [Máscaras de opacidade](#opacity-masks)
--   [Alternativas para camadas](#alternatives-to-layers)
--   [Recortando uma forma arbitrária](#clipping-an-arbitrary-shape)
+-   [Alternativas a camadas](#alternatives-to-layers)
+-   [Recorte de uma forma arbitrária](#clipping-an-arbitrary-shape)
     -   [Clipes alinhados ao eixo](#axis-aligned-clips)
 -   [Tópicos relacionados](#related-topics)
 
 ## <a name="what-are-layers"></a>O que são camadas?
 
-Camadas, representadas por objetos [**ID2D1Layer**](/windows/win32/api/d2d1/nn-d2d1-id2d1layer) , permitem que um aplicativo manipule um grupo de operações de desenho. Você usa uma camada ao "enviar" por push para um destino de renderização. As operações de desenho subsequentes pelo destino de renderização são direcionadas para a camada. Depois de terminar com a camada, você "pop" a camada do destino de renderização, que compõe o conteúdo da camada de volta para o destino de renderização.
+Camadas, representadas por [**objetos ID2D1Layer,**](/windows/win32/api/d2d1/nn-d2d1-id2d1layer) permitem que um aplicativo manipule um grupo de operações de desenho. Você usa uma camada "esvasada" para um destino de renderização. As operações de desenho subsequentes pelo destino de renderização são direcionadas para a camada. Depois de terminar com a camada, você "esroba" a camada do destino de renderização, que composição do conteúdo da camada de volta para o destino de renderização.
 
-Como pincéis, as camadas são recursos dependentes do dispositivo criados por destinos de renderização. As camadas podem ser usadas em qualquer destino de renderização no mesmo domínio de recurso que contém o destino de renderização que a criou. No entanto, um recurso de camada só pode ser usado por um destino de renderização por vez. Para obter mais informações sobre recursos, consulte a [visão geral de recursos](resources-and-resource-domains.md).
+Assim como pincéis, as camadas são recursos dependentes do dispositivo criados por destinos de renderização. As camadas podem ser usadas em qualquer destino de renderização no mesmo domínio de recurso que contém o destino de renderização que o criou. No entanto, um recurso de camada só pode ser usado por um destino de renderização por vez. Para obter mais informações sobre recursos, consulte Visão [geral de recursos.](resources-and-resource-domains.md)
 
-Embora as camadas ofereçam uma poderosa técnica de renderização para produzir efeitos interessantes, o número excessivo de camadas em um aplicativo pode afetar negativamente o desempenho, devido aos vários custos associados ao gerenciamento de camadas e recursos de camada. Por exemplo, há o custo de preencher ou limpar a camada e, em seguida, mesclar novamente, especialmente em hardware de extremidade superior. Em seguida, há o custo de gerenciar os recursos de camada. Se você os realocar com frequência, as interrupções resultantes na GPU serão o problema mais significativo. Ao projetar seu aplicativo, tente maximizar a reutilização de recursos de camada.
+Embora as camadas ofereçam uma técnica de renderização avançada para produzir efeitos interessantes, o número excessivo de camadas em um aplicativo pode afetar negativamente seu desempenho, devido aos vários custos associados ao gerenciamento de camadas e recursos de camada. Por exemplo, há o custo de preencher ou limpar a camada e, em seguida, mistuá-la de volta, especialmente em hardware de extremidade superior. Em seguida, há o custo de gerenciar os recursos de camada. Se você realocar isso com frequência, as paralisações resultantes na GPU serão o problema mais significativo. Ao projetar seu aplicativo, tente maximizar a reutilização de recursos de camada.
 
-## <a name="layers-in-windows-8-and-later"></a>camadas no Windows 8 e posteriores
+## <a name="layers-in-windows-8-and-later"></a>Camadas em Windows 8 e posteriores
 
-Windows 8 introduziu novas APIs relacionadas à camada que simplificam, melhoram o desempenho do e adicionam recursos a camadas.
+Windows 8 novas APIs relacionadas à camada que simplificam, melhoram o desempenho e adicionam recursos às camadas.
 
 ### <a name="id2d1devicecontext-and-pushlayer"></a>ID2D1DeviceContext e PushLayer
 
-a interface [**ID2D1DeviceContext**](/windows/win32/api/d2d1_1/nn-d2d1_1-id2d1devicecontext) é derivada da interface [**ID2D1RenderTarget**](/windows/win32/api/d2d1/nn-d2d1-id2d1rendertarget) e é a chave para exibir Direct2D conteúdo no Windows 8, para obter mais informações sobre essa interface, consulte [dispositivos e contextos de dispositivo](devices-and-device-contexts.md). Com a interface de contexto do dispositivo, você pode ignorar a chamada do método [**CreateLayer**](/windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-createlayer(id2d1layer)) e, em seguida, passar NULL para o método [**ID2D1DeviceContext::P ushlayer**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-pushlayer(constd2d1_layer_parameters1_id2d1layer)) . Direct2D gerencia automaticamente o recurso de camada e pode compartilhar recursos entre camadas e grafos de efeito.
+A interface [**ID2D1DeviceContext**](/windows/win32/api/d2d1_1/nn-d2d1_1-id2d1devicecontext) é derivada da interface [**ID2D1RenderTarget**](/windows/win32/api/d2d1/nn-d2d1-id2d1rendertarget) e é fundamental para exibir conteúdo de Direct2D no Windows 8, para obter mais informações sobre essa interface, consulte Dispositivos e contextos de [dispositivo.](devices-and-device-contexts.md) Com a interface de contexto do dispositivo, você pode ignorar a chamada ao método [**CreateLayer**](/windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-createlayer(id2d1layer)) e passar NULL para o [**método ID2D1DeviceContext::P layer.**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-pushlayer(constd2d1_layer_parameters1_id2d1layer)) Direct2D gerencia automaticamente o recurso de camada e pode compartilhar recursos entre camadas e grafos de efeito.
 
-### <a name="d2d1_layer_parameters1-and-d2d1_layer_options1"></a>Camada \_ d2d1 \_ PARAMETERS1 e d2d1 \_ \_ OPTIONS1
+### <a name="d2d1_layer_parameters1-and-d2d1_layer_options1"></a>D2D1 \_ LAYER \_ PARAMETERS1 e D2D1 \_ LAYER \_ OPTIONS1
 
-A [**estrutura \_ \_ PARAMETERS1 da camada d2d1**](/windows/desktop/api/d2d1_1/ns-d2d1_1-d2d1_layer_parameters1) é a mesma que os [**\_ \_ parâmetros da camada d2d1**](/windows/desktop/api/d2d1/ns-d2d1-d2d1_layer_parameters), exceto que o membro final da estrutura agora é uma enumeração [**\_ \_ OPTIONS1 da camada d2d1**](/windows/desktop/api/d2d1_1/ne-d2d1_1-d2d1_layer_options1) .
+A [**estrutura D2D1 \_ LAYER \_ PARAMETERS1**](/windows/desktop/api/d2d1_1/ns-d2d1_1-d2d1_layer_parameters1) é a mesma que [**D2D1 \_ LAYER \_ PARAMETERS**](/windows/desktop/api/d2d1/ns-d2d1-d2d1_layer_parameters), exceto que o membro final da estrutura agora é uma enumeração [**D2D1 \_ LAYER \_ OPTIONS1.**](/windows/desktop/api/d2d1_1/ne-d2d1_1-d2d1_layer_options1)
 
-[**D2d1 \_ A camada \_ OPTIONS1**](/windows/desktop/api/d2d1_1/ne-d2d1_1-d2d1_layer_options1) não tem nenhuma opção ClearType e tem duas opções diferentes que você pode usar para melhorar o desempenho:
+[**D2D1 \_ LAYER \_ OPTIONS1**](/windows/desktop/api/d2d1_1/ne-d2d1_1-d2d1_layer_options1) não tem nenhuma opção ClearType e tem duas opções diferentes que você pode usar para melhorar o desempenho:
 
--   [**D2d1 \_ camada \_ OPTIONS1 \_ inicializar a \_ partir do \_ plano de fundo**](/windows/desktop/api/d2d1_1/ne-d2d1_1-d2d1_layer_options1): Direct2D renderiza primitivos para a camada sem limpá-lo com preto transparente. Esse não é o padrão, mas na maioria dos casos resulta em melhor desempenho.
+-   [**D2D1 \_ LAYER \_ OPTIONS1 \_ INITIALIZE \_ FROM \_ BACKGROUND**](/windows/desktop/api/d2d1_1/ne-d2d1_1-d2d1_layer_options1): Direct2D renderiza primitivos para a camada sem desmatá-la com preto transparente. Esse não é o padrão, mas, na maioria dos casos, resulta em um melhor desempenho.
 
--   [**D2d1 \_ camada \_ OPTIONS1 \_ ignorar \_ alfa**](/windows/desktop/api/d2d1_1/ne-d2d1_1-d2d1_layer_options1): se a superfície subjacente estiver definida como [**D2D1 \_ \_ modo alfa \_ ignorar**](/windows/desktop/api/dcommon/ne-dcommon-d2d1_alpha_mode), essa opção permitirá que Direct2D evite modificar o canal alfa da camada. Não use isso em outros casos.
+-   [**D2D1 \_ LAYER \_ OPTIONS1 \_ IGNORE \_ ALPHA**](/windows/desktop/api/d2d1_1/ne-d2d1_1-d2d1_layer_options1): se a superfície subjacente estiver definida como [**D2D1 \_ ALPHA MODE \_ \_ IGNORE**](/windows/desktop/api/dcommon/ne-dcommon-d2d1_alpha_mode), essa opção Direct2D evitar modificar o canal alfa da camada. Não use isso em outros casos.
 
 ### <a name="blend-modes"></a>Modos do Blend
 
-a partir do Windows 8, o contexto do dispositivo tem um [**modo de mistura primitivo**](/windows/desktop/api/D2d1_1/ne-d2d1_1-d2d1_primitive_blend) que determina como cada primitiva é mesclada com a superfície de destino. Esse modo também se aplica a camadas quando você chama o método [**PushLayer**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-pushlayer(constd2d1_layer_parameters1_id2d1layer)) .
+A partir Windows 8, o contexto do dispositivo tem um modo de combinação primitivo que determina como cada primitivo é mesclado com [**a**](/windows/desktop/api/D2d1_1/ne-d2d1_1-d2d1_primitive_blend) superfície de destino. Esse modo também se aplica a camadas quando você chama o [**método PushLayer.**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-pushlayer(constd2d1_layer_parameters1_id2d1layer))
 
-Por exemplo, se você estiver usando uma camada para cortar primitivos com transparência, defina o modo de [**\_ \_ \_ cópia d2d1 PRIMITIVE Blend**](/windows/desktop/api/D2d1_1/ne-d2d1_1-d2d1_primitive_blend) no contexto do dispositivo para obter os resultados apropriados. O modo de cópia torna o contexto de dispositivo linear interpolarmente todos os quatro canais de cores, incluindo o canal alfa, de cada pixel com o conteúdo da superfície de destino, de acordo com a máscara geométrica da camada.
+Por exemplo, se você estiver usando uma camada para cortar primitivos com transparência, de conjunto de transparência, o modo [**\_ COPY BLEND \_ \_ COPY PRIMITIVO D2D1**](/windows/desktop/api/D2d1_1/ne-d2d1_1-d2d1_primitive_blend) no contexto do dispositivo para resultados adequados. O modo de cópia faz com que o contexto linear do dispositivo interpole todos os quatro canais de cores, incluindo o canal alfa, de cada pixel com o conteúdo da superfície de destino de acordo com a máscara geométrica da camada.
 
 ### <a name="interoperation"></a>Interoperação
 
-a partir do Windows 8, o Direct2D dá suporte à interoperação com Direct3D e GDI, enquanto uma camada ou um clipe é enviado por push. Você chama [**ID2D1GdiInteropRenderTarget:: GetDC**](/windows/win32/api/d2d1/nf-d2d1-id2d1gdiinteroprendertarget-getdc) enquanto uma camada é enviada por push para interoperar com GDI. Você chama [**ID2D1DeviceContext:: flush**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-flush) e, em seguida, renderiza para a superfície subjacente para interoperar com o Direct3D. É sua responsabilidade renderizar dentro da camada ou do clipe com Direct3D ou GDI. Se você tentar renderizar fora da camada ou cortar, os resultados serão indefinidos.
+Começando no Windows 8, o Direct2D dá suporte à interoperação com Direct3D e GDI enquanto uma camada ou clipe é pressionado. Chame [**ID2D1GdiInteropRenderTarget::GetDC**](/windows/win32/api/d2d1/nf-d2d1-id2d1gdiinteroprendertarget-getdc) enquanto uma camada é pressionada para interoperar com gDI. Você chama [**ID2D1DeviceContext::Flush**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-flush) e, em seguida, renderiza para a superfície subjacente para interoperar com o Direct3D. É sua responsabilidade renderizar dentro da camada ou do clipe com Direct3D ou GDI. Se você tentar renderizar fora da camada ou reclipe, os resultados serão indefinido.
 
 ## <a name="creating-layers"></a>Criando camadas
 
-Trabalhar com camadas requer familiaridade com os métodos [**CreateLayer**](/windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-createlayer(id2d1layer)), [**PushLayer**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-pushlayer(constd2d1_layer_parameters1_id2d1layer))e [**PopLayer**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-poplayer) , e a estrutura [**de \_ \_ parâmetros de camada d2d1**](/windows/desktop/api/d2d1/ns-d2d1-d2d1_layer_parameters) , que contém um conjunto de dados paramétricos que definem como a camada pode ser usada. A lista a seguir descreve os métodos e a estrutura.
+Trabalhar com camadas requer familiaridade com os métodos [**CreateLayer,**](/windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-createlayer(id2d1layer)) [**PushLayer**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-pushlayer(constd2d1_layer_parameters1_id2d1layer))e [**PopLayer**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-poplayer) e a estrutura [**D2D1 \_ LAYER \_ PARAMETERS,**](/windows/desktop/api/d2d1/ns-d2d1-d2d1_layer_parameters) que contém um conjunto de dados paramétricos que define como a camada pode ser usada. A lista a seguir descreve os métodos e a estrutura.
 
--   Chame o método [**CreateLayer**](/windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-createlayer(id2d1layer)) para criar um recurso de camada.
+-   Chame o [**método CreateLayer**](/windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-createlayer(id2d1layer)) para criar um recurso de camada.
     > [!Note]  
-    > a partir do Windows 8, você pode ignorar a chamada do método [**createlayer**](/windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-createlayer(id2d1layer)) e, em seguida, passar NULL para o método [**PushLayer**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-pushlayer(constd2d1_layer_parameters1_id2d1layer)) na interface [**ID2D1DeviceContext**](/windows/win32/api/d2d1_1/nn-d2d1_1-id2d1devicecontext) . isso é mais simples e permite Direct2D gerenciar automaticamente o recurso de camada e compartilhar recursos entre camadas e grafos de efeito.
+    > Começando no Windows 8, você pode ignorar a chamada ao método [**CreateLayer**](/windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-createlayer(id2d1layer)) e passar NULL para o método [**PushLayer**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-pushlayer(constd2d1_layer_parameters1_id2d1layer)) na interface [**ID2D1DeviceContext.**](/windows/win32/api/d2d1_1/nn-d2d1_1-id2d1devicecontext) Isso é mais simples e permite Direct2D gerenciar automaticamente o recurso de camada e compartilhar recursos entre camadas e grafos de efeito.
 
      
 
--   Depois que o destino de renderização começou a desenhar (depois de seu método [**BeginDraw**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-begindraw) ter sido chamado), você pode usar o método [**PushLayer**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-pushlayer(constd2d1_layer_parameters__id2d1layer)) . O método **PushLayer** adiciona a camada especificada ao destino de renderização, para que o destino receba todas as operações de desenho subsequentes até que [**PopLayer**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-poplayer) seja chamado. Esse método usa um objeto [**ID2D1Layer**](/windows/win32/api/d2d1/nn-d2d1-id2d1layer) retornado chamando [**CreateLayer**](/windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-createlayer(id2d1layer)) e um *layerparameters* na estrutura de [**\_ \_ parâmetros da camada d2d1**](/windows/desktop/api/d2d1/ns-d2d1-d2d1_layer_parameters) . A tabela a seguir descreve os campos da estrutura. 
+-   Depois que o destino de renderização começar a desenhar (depois que [**seu método BeginDraw**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-begindraw) tiver sido chamado), você poderá usar o [**método PushLayer.**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-pushlayer(constd2d1_layer_parameters__id2d1layer)) O **método PushLayer** adiciona a camada especificada ao destino de renderização, para que o destino receba todas as operações de desenho subsequentes até que [**PopLayer**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-poplayer) seja chamado. Esse método recebe um [**objeto ID2D1Layer**](/windows/win32/api/d2d1/nn-d2d1-id2d1layer) retornado chamando [**CreateLayer**](/windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-createlayer(id2d1layer)) e *um layerParameters* na estrutura [**D2D1 \_ LAYER \_ PARAMETERS.**](/windows/desktop/api/d2d1/ns-d2d1-d2d1_layer_parameters) A tabela a seguir descreve os campos da estrutura . 
 
     | Campo                 | Descrição|
     |-----------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-    | **contentBounds**     | Os limites de conteúdo da camada. O conteúdo não será renderizado fora desses limites. O padrão desse parâmetro é [**InfiniteRect**](/windows/desktop/api/d2d1Helper/nf-d2d1helper-infiniterect). Quando o valor padrão é usado, os limites de conteúdo são efetivamente utilizados para serem os limites do destino de renderização. |
-    | **geometricMask**     | Adicional A área, definida por um [**ID2D1Geometry**](/windows/win32/api/d2d1/nn-d2d1-id2d1geometry), para o qual a camada deve ser recortada. Defina como **NULL** se a camada não deve ser recortada em uma geometria. |
-    | **maskAntialiasMode** | Um valor que especifica o modo de suavização para a máscara geométrica especificada pelo campo **geometricMask** . |
-    | **maskTransform**     | Um valor que especifica a transformação que é aplicada à máscara geométrica ao compor a camada. Isso é relativo à transformação mundial.  |
-    | **opacidade**           | O valor de opacidade da camada. A opacidade de cada recurso na camada é multiplicada por esse valor durante a composição para o destino.  |
-    | **opacityBrush**      | Adicional Um pincel que é usado para modificar a opacidade da camada. O pincel é mapeado para a camada e o canal alfa de cada pixel de pincel mapeado é multiplicado em relação ao pixel de camada correspondente. Defina como **NULL** se a camada não tiver uma máscara de opacidade.   |
-    | **camadaoptions**      | Um valor que especifica se a camada pretende renderizar o texto com anti-aliasing ClearType. O padrão desse parâmetro é off. Ativá-lo permite que o ClearType funcione corretamente, mas resulta em uma velocidade de renderização um pouco mais lenta.    |
+    | **Contentbounds**     | Os limites de conteúdo da camada. O conteúdo não será renderizar fora desses limites. Esse parâmetro assume Como padrão [**InfiniteRect.**](/windows/desktop/api/d2d1Helper/nf-d2d1helper-infiniterect) Quando o valor padrão é usado, os limites de conteúdo são efetivamente levados a ser os limites do destino de renderização. |
+    | **geometricMask**     | (Opcional) A área, definida por [**um ID2D1Geometry,**](/windows/win32/api/d2d1/nn-d2d1-id2d1geometry)para a qual a camada deve ser recortada. Definido como **NULL** se a camada não deve ser recortada em uma geometria. |
+    | **maskAntialiasMode** | Um valor que especifica o modo de aninhamento para a máscara geométrica especificada pelo campo **geométricoMask.** |
+    | **maskTransform**     | Um valor que especifica a transformação aplicada à máscara geométrica ao compor a camada. Isso é relativo à transformação do mundo.  |
+    | **Opacidade**           | O valor de opacidade da camada. A opacidade de cada recurso na camada é multiplicada por esse valor ao compor para o destino.  |
+    | **opacityBrush**      | (Opcional) Um pincel usado para modificar a opacidade da camada. O pincel é mapeado para a camada e o canal alfa de cada pixel de pincel mapeado é multiplicado em relação ao pixel da camada correspondente. Definido como **NULL** se a camada não deve ter uma máscara de opacidade.   |
+    | **layerOptions**      | Um valor que especifica se a camada pretende renderizar texto com a antialização ClearType. Esse parâmetro assume como padrão desligado. A ative-o permite que ClearType funcione corretamente, mas resulta em uma velocidade de renderização ligeiramente mais lenta.    |
 
     
 
      
 
     > [!Note]  
-    > a partir do Windows 8, não é possível renderizar com ClearType em uma camada, de modo que o parâmetro de **camadaoptions** sempre deve ser definido como [**opções de \_ camada D2D1 \_ \_ nenhum**](/windows/desktop/api/d2d1/ne-d2d1-d2d1_layer_options)
+    > Começando no Windows 8, você não pode renderizar com ClearType em uma camada, portanto, o parâmetro **layerOptions** sempre deve ser definido como [**D2D1 \_ LAYER OPTIONS \_ \_ NONE**](/windows/desktop/api/d2d1/ne-d2d1-d2d1_layer_options)
 
      
 
-    para sua conveniência, Direct2D fornece o método [**D2D1:: layerparameters**](/windows/desktop/api/d2d1helper/nf-d2d1helper-layerparameters) para ajudá-lo a criar estruturas de [**\_ \_ parâmetros de camada D2D1**](/windows/desktop/api/d2d1/ns-d2d1-d2d1_layer_parameters) .
+    Para sua conveniência, Direct2D fornece o [**método D2D1::LayerParameters**](/windows/desktop/api/d2d1helper/nf-d2d1helper-layerparameters) para ajudá-lo a criar [**estruturas D2D1 \_ LAYER \_ PARAMETERS.**](/windows/desktop/api/d2d1/ns-d2d1-d2d1_layer_parameters)
 
--   Para compor o conteúdo da camada no destino de renderização, chame o método [**PopLayer**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-poplayer) . Você deve chamar o método **PopLayer** antes de chamar o método [**EndDraw**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-enddraw) .
+-   Para compor o conteúdo da camada no destino de renderização, chame o [**método PopLayer.**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-poplayer) Você deve chamar o **método PopLayer** antes de chamar o [**método EndDraw.**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-enddraw)
 
-O exemplo a seguir mostra como usar [**CreateLayer**](/windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-createlayer(id2d1layer)), [**PushLayer**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-pushlayer(constd2d1_layer_parameters1_id2d1layer))e [**PopLayer**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-poplayer). Todos os campos na estrutura de [**\_ \_ parâmetros de camada d2d1**](/windows/desktop/api/d2d1/ns-d2d1-d2d1_layer_parameters) são definidos como seus padrões, exceto **opacityBrush**, que é definido como um [**ID2D1RadialGradientBrush**](/windows/win32/api/d2d1/nn-d2d1-id2d1radialgradientbrush).
+O exemplo a seguir mostra como usar [**CreateLayer,**](/windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-createlayer(id2d1layer)) [**PushLayer**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-pushlayer(constd2d1_layer_parameters1_id2d1layer))e [**PopLayer**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-poplayer). Todos os campos na estrutura [**D2D1 \_ LAYER \_ PARAMETERS**](/windows/desktop/api/d2d1/ns-d2d1-d2d1_layer_parameters) são definidos como seus padrões, exceto **opacityBrush**, que é definido como [**um ID2D1RadialGradientBrush**](/windows/win32/api/d2d1/nn-d2d1-id2d1radialgradientbrush).
 
 
 ```C++

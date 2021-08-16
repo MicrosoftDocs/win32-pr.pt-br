@@ -1,5 +1,5 @@
 ---
-description: Os valores de sinalizador SFGAO dos atributos do Shell para um item podem ser testados para determinar se o verbo deve ser habilitado ou desabilitado.
+description: Os valores de sinalizador SFGAO dos atributos de Shell de um item podem ser testados para determinar se o verbo deve ser habilitado ou desabilitado.
 ms.assetid: 3A539A9D-DB6B-4E3D-AD26-D5309BECEBB1
 title: Como usar atributos de item
 ms.topic: article
@@ -13,27 +13,27 @@ ms.locfileid: "117859565"
 ---
 # <a name="how-to-use-item-attributes"></a>Como usar atributos de item
 
-Os [**valores de sinalizador SFGAO**](sfgao.md) dos atributos do Shell para um item podem ser testados para determinar se o verbo deve ser habilitado ou desabilitado.
+Os valores de sinalizador [**SFGAO**](sfgao.md) dos atributos de Shell de um item podem ser testados para determinar se o verbo deve ser habilitado ou desabilitado.
 
-Para usar esse recurso de atributo, adicione os seguintes **valores REG \_ DWORD** sob o verbo:
+Para usar esse recurso de atributo, adicione os seguintes valores de **reg \_ DWORD** no verbo:
 
 ## <a name="instructions"></a>Instruções
 
 ### <a name="step-1"></a>Etapa 1:
 
-O valor AttributeMask especifica o [**valor de SFGAO**](sfgao.md) dos valores de bit da máscara com o que testar.
+O valor AttributeMask especifica o valor de [**SFGAO**](sfgao.md) dos valores de bits da máscara com a qual testar.
 
 ### <a name="step-2"></a>Etapa 2:
 
-O valor AttributeValue especifica o [**valor SFGAO**](sfgao.md) dos bits testados.
+O valor AttributeValue especifica o valor [**SFGAO**](sfgao.md) dos bits que são testados.
 
 ### <a name="step-3"></a>Etapa 3:
 
-O ImpliedSelectionModel especifica zero para verbos de item ou diferente de zero para verbos no menu de atalho de plano de fundo.
+O ImpliedSelectionModel Especifica zero para verbos de item ou zero para verbos no menu de atalho de segundo plano.
 
 ## <a name="remarks"></a>Comentários
 
-Na entrada de registro de exemplo a seguir, AttributeMask é definido como [**SFGAO \_ READONLY**](sfgao.md) (0x40000).
+Na entrada de registro de exemplo a seguir, o AttributeMask é definido como [**SFGAO \_ ReadOnly**](sfgao.md) (0x40000).
 
 ```
 HKEY_CLASSES_ROOT

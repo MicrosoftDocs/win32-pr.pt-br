@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Shlwapi.dll
-ms.openlocfilehash: 0731182f5c01ad56db722972628d2cbe39373835
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9fe05c354aaa901d87c77ba04eecd5dc4efd925d77bdeaf5387a137d85b27348
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104967358"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117861507"
 ---
 # <a name="comparestringwrapw-function"></a>Função CompareStringWrapW
 
-\[O **CompareStringWrapW** está disponível para uso no Windows XP. Ele não estará disponível nas versões subsequentes. Você deve usar [**CompareStringW**](/windows/win32/api/stringapiset/nf-stringapiset-comparestringw) em seu lugar.\]
+\[o **CompareStringWrapW** está disponível para uso no Windows XP. Ele não estará disponível nas versões subsequentes. Você deve usar [**CompareStringW**](/windows/win32/api/stringapiset/nf-stringapiset-comparestringw) em seu lugar.\]
 
 Compara duas cadeias de caracteres Unicode, usando uma localidade especificada.
 
@@ -193,7 +193,7 @@ O número de caracteres na cadeia de caracteres apontada pelo parâmetro *lpStri
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **int**
 
@@ -228,9 +228,9 @@ O método preferencial é usar [**CompareStringW**](/windows/win32/api/stringapi
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 2000 Professional, \[ somente aplicativos da área de trabalho do Windows XP\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                                          |
-| parâmetro<br/>                   | <dl> <dt>Nenhum</dt> </dl>                               |
+| Cliente mínimo com suporte<br/> | Windows 2000 Professional, \[ somente aplicativos de área de trabalho do Windows XP\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                                          |
+| Cabeçalho<br/>                   | <dl> <dt>Nenhum</dt> </dl>                               |
 | DLL<br/>                      | <dl> <dt>Shlwapi.dll (versão 5,0 ou posterior)</dt> </dl> |
 
 

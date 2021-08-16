@@ -1,9 +1,9 @@
 ---
-title: Mensagem de TB_GETPRESSEDIMAGELIST (commctrl. h)
-description: Obtém a lista de imagens que um controle Toolbar usa para exibir botões em um estado pressionado.
+title: TB_GETPRESSEDIMAGELIST mensagem (Commctrl.h)
+description: Obtém a lista de imagens que um controle de barra de ferramentas usa para exibir botões em um estado pressionado.
 ms.assetid: 116d4212-48ea-4b00-a752-21e5e1f10e36
 keywords:
-- Controles de TB_GETPRESSEDIMAGELIST de mensagens do Windows
+- TB_GETPRESSEDIMAGELIST controles de Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3028b119eb7f84a66caf0b6978382cee569b4a21
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 34093db3899205249fce934335e7aefa6393bc5bc588c8e797400e9359d9c54e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104086476"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117829657"
 ---
-# <a name="tb_getpressedimagelist-message"></a>TB de \_ mensagem GETPRESSEDIMAGELIST
+# <a name="tb_getpressedimagelist-message"></a>Mensagem \_ GETPRESSEDIMAGELIST de TB
 
-Obtém a lista de imagens que um controle Toolbar usa para exibir botões em um estado pressionado.
+Obtém a lista de imagens que um controle de barra de ferramentas usa para exibir botões em um estado pressionado.
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -43,9 +43,9 @@ Deve ser zero.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna o identificador para a lista de imagens, ou **NULL** se nenhuma lista de imagens for definida.
+Retorna o alça para a lista de imagens ou **NULL** se nenhuma lista de imagens estiver definida.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -53,9 +53,9 @@ Retorna o identificador para a lista de imagens, ou **NULL** se nenhuma lista de
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

@@ -1,9 +1,9 @@
 ---
 title: Tipo complexo headerFieldsType
-description: Define os elementos que especificam os campos para um header de email.
+description: Define os elementos que especificam os campos para um cabeçalho de email.
 ms.assetid: 1ad1b62d-5aca-4be4-b956-6f8c64761b2b
 keywords:
-- tipo complexo headerFieldsType Agendador de Tarefas
+- Agendador de Tarefas tipo complexo headerFieldsType
 topic_type:
 - apiref
 api_name:
@@ -22,7 +22,7 @@ ms.locfileid: "118356358"
 ---
 # <a name="headerfieldstype-complex-type"></a>Tipo complexo headerFieldsType
 
-Define os elementos que especificam os campos para um header de email.
+Define os elementos que especificam os campos para um cabeçalho de email.
 
 ``` syntax
 <xs:complexType name="headerFieldsType">
@@ -42,7 +42,7 @@ Define os elementos que especificam os campos para um header de email.
 
 | Elemento                                                                         | Type                                                                       | Descrição                                       |
 |---------------------------------------------------------------------------------|----------------------------------------------------------------------------|---------------------------------------------------|
-| [**HeaderField**](taskschedulerschema-headerfield-headerfieldstype-element.md) | [**headerFieldType**](taskschedulerschema-headerfieldtype-complextype.md) | Especifica um campo em um header de email. <br/> |
+| [**Cabeçalho**](taskschedulerschema-headerfield-headerfieldstype-element.md) | [**headerFieldType**](taskschedulerschema-headerfieldtype-complextype.md) | Especifica um campo em um cabeçalho de email. <br/> |
 
 
 
@@ -52,8 +52,8 @@ Define os elementos que especificam os campos para um header de email.
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/> |
 
 
 

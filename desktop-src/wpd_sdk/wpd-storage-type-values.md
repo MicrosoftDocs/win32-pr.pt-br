@@ -1,7 +1,7 @@
 ---
-description: O \_ tipo de enumeração de valores de tipo de armazenamento WPD \_ \_ descreve os diferentes tipos de armazenamento de dispositivo portátil do Windows.
+description: O tipo de enumeração WPD \_ STORAGE TYPE VALUES descreve os diferentes tipos de armazenamento Windows dispositivo \_ \_ portátil.
 ms.assetid: 52c34458-e64e-4355-9231-7457a6dff5c5
-title: Enumeração de WPD_STORAGE_TYPE_VALUES (PortableDevice. h)
+title: WPD_STORAGE_TYPE_VALUES enumeração (PortableDevice.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - PortableDevice.h
-ms.openlocfilehash: b741feb1cb9a834e16a35627fe98718ac8acf30f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 1aad78833f9e5baa0d3c7da3ab37d39f4159672b85d5c01c54ae8b034c5b43d1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105752759"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117842072"
 ---
-# <a name="wpd_storage_type_values-enumeration"></a>\_Enumeração de \_ valores de tipo de armazenamento WPD \_
+# <a name="wpd_storage_type_values-enumeration"></a>Enumeração DE VALORES \_ \_ DE TIPO DE \_ ARMAZENAMENTO WPD
 
-O tipo de enumeração de **\_ valores de \_ tipo \_ de armazenamento WPD** descreve os diferentes tipos de armazenamento de dispositivo portátil do Windows.
+O **tipo de enumeração WPD \_ STORAGE TYPE \_ \_ VALUES** descreve os diferentes tipos de armazenamento Windows dispositivo portátil.
 
 ## <a name="syntax"></a>Syntax
 
@@ -43,38 +43,38 @@ typedef enum tagWPD_STORAGE_TYPE_VALUES {
 
 <dl> <dt>
 
-<span id="WPD_STORAGE_TYPE_UNDEFINED"></span><span id="wpd_storage_type_undefined"></span>**\_tipo de armazenamento WPD \_ \_ indefinido**
+<span id="WPD_STORAGE_TYPE_UNDEFINED"></span><span id="wpd_storage_type_undefined"></span>**TIPO DE ARMAZENAMENTO WPD \_ \_ \_ INDEFINIDO**
 </dt> <dd>
 
 O armazenamento é de um tipo indefinido.
 
 </dd> <dt>
 
-<span id="WPD_STORAGE_TYPE_FIXED_ROM"></span><span id="wpd_storage_type_fixed_rom"></span>**\_ \_ ROM fixa de tipo de armazenamento WPD \_ \_**
+<span id="WPD_STORAGE_TYPE_FIXED_ROM"></span><span id="wpd_storage_type_fixed_rom"></span>**TIPO DE ARMAZENAMENTO WPD \_ \_ ROM \_ \_ FIXO**
 </dt> <dd>
 
 O armazenamento não é removível e somente leitura.
 
 </dd> <dt>
 
-<span id="WPD_STORAGE_TYPE_REMOVABLE_ROM"></span><span id="wpd_storage_type_removable_rom"></span>**\_ \_ \_ ROM removível de tipo de armazenamento WPD \_**
+<span id="WPD_STORAGE_TYPE_REMOVABLE_ROM"></span><span id="wpd_storage_type_removable_rom"></span>**ROM REMOVÍVEL DO TIPO \_ \_ DE \_ \_ ARMAZENAMENTO WPD**
 </dt> <dd>
 
 O armazenamento é removível e é somente leitura.
 
 </dd> <dt>
 
-<span id="WPD_STORAGE_TYPE_FIXED_RAM"></span><span id="wpd_storage_type_fixed_ram"></span>**\_ \_ RAM fixa de tipo de armazenamento WPD \_ \_**
+<span id="WPD_STORAGE_TYPE_FIXED_RAM"></span><span id="wpd_storage_type_fixed_ram"></span>**TIPO DE ARMAZENAMENTO WPD \_ \_ RAM \_ \_ FIXA**
 </dt> <dd>
 
-O armazenamento não é removível e é compatível com leitura/gravação.
+O armazenamento não é removível e é capaz de leitura/gravação.
 
 </dd> <dt>
 
-<span id="WPD_STORAGE_TYPE_REMOVABLE_RAM"></span><span id="wpd_storage_type_removable_ram"></span>**\_ \_ \_ RAM removível de tipo de armazenamento WPD \_**
+<span id="WPD_STORAGE_TYPE_REMOVABLE_RAM"></span><span id="wpd_storage_type_removable_ram"></span>**RAM REMOVÍVEL DO \_ \_ TIPO DE \_ \_ ARMAZENAMENTO WPD**
 </dt> <dd>
 
-O armazenamento é removível e é compatível com leitura/gravação.
+O armazenamento é removível e é capaz de ler/gravar.
 
 </dd> </dl>
 
@@ -88,7 +88,7 @@ Nenhum.
 
 | Requisito | Valor |
 |-------------------|---------------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>PortableDevice. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>PortableDevice.h</dt> </dl> |
 
 
 

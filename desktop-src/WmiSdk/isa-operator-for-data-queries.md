@@ -1,5 +1,5 @@
 ---
-description: Use o operador ISA na cláusula WHERE de uma consulta de dados para solicitar objetos incorporados em uma hierarquia de classe.
+description: Use o operador ISA na cláusula WHERE de uma consulta de dados para solicitar objetos inseridos em uma hierarquia de classe.
 ms.assetid: a4eb4c34-2ed0-4e85-84c6-6b8f17c8b07d
 ms.tgt_platform: multiple
 title: Operador ISA para consultas de dados
@@ -14,9 +14,9 @@ ms.locfileid: "118318298"
 ---
 # <a name="isa-operator-for-data-queries"></a>Operador ISA para consultas de dados
 
-Use o operador ISA na cláusula WHERE de uma consulta de dados para solicitar objetos incorporados em uma hierarquia de classe.
+Use o operador ISA na cláusula WHERE de uma consulta de dados para solicitar objetos inseridos em uma hierarquia de classe.
 
-O exemplo a seguir mostra a sintaxe para solicitar objetos incorporados em uma hierarquia de classe.
+O exemplo a seguir mostra a sintaxe para solicitar objetos inseridos em uma hierarquia de classe.
 
 
 ```sql
@@ -25,11 +25,11 @@ SELECT * FROM Class WHERE EmbeddedProp ISA "ParentClass"
 
 
 
-O resultado inclui instâncias de **classe** com objetos inseridos que são derivados de **ParentClass** na propriedade **EmbeddedProp** . Nem toda instância do objeto de **classe** é derivada de **ParentClass**, mas o resultado retorna os objetos inseridos que são derivados de **ParentClass**.
+O resultado inclui instâncias de **Classe que têm** objetos inseridos derivados de **ParentClass** na **propriedade EmbeddedProp.** Nem todas as instâncias do **objeto Class** são derivadas de **ParentClass,** mas o resultado retorna os objetos inseridos derivados de **ParentClass**.
 
-Por exemplo, na consulta a seguir, a **ClasseA** inclui a propriedade **EmbeddedObj** de tipo fraco. A classe **ClassID** tem dez instâncias. Cinco dessas instâncias têm objetos inseridos com um tipo derivado de **ClassZ**. Os outros cinco têm objetos incorporados de outros tipos.
+Por exemplo, na consulta a seguir, **ClassA** inclui a propriedade **EmbeddedObj** com tipo fraco. A **classe ClassA** tem dez instâncias. Cinco dessas instâncias têm objetos inseridos com um tipo derivado de **ClassZ**. Os outros cinco têm objetos inseridos de outros tipos.
 
-O exemplo a seguir mostra a consulta que retorna as cinco instâncias, que incluem os objetos que são derivados de **ClassZ**.
+O exemplo a seguir mostra a consulta que retorna as cinco instâncias, que incluem os objetos derivados de **ClassZ**.
 
 
 ```sql

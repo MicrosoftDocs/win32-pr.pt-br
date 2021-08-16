@@ -1,9 +1,9 @@
 ---
-title: Mensagem de MCIWNDM_OPENINTERFACE (VFW. h)
-description: A \_ mensagem MCIWNDM OPENINTERFACE anexa o fluxo de dados ou o arquivo associado à interface especificada a uma janela MCIWnd. Você pode enviar essa mensagem explicitamente ou usando a macro MCIWndOpenInterface.
+title: MCIWNDM_OPENINTERFACE mensagem (Vfw.h)
+description: A mensagem OPENINTERFACE MCIWNDM anexa o fluxo de dados ou o arquivo associado à \_ interface especificada a uma janela MCIWnd. Você pode enviar essa mensagem explicitamente ou usando a macro MCIWndOpenInterface.
 ms.assetid: 73cbd637-d315-4b39-a978-2b72aed1f303
 keywords:
-- mensagem de MCIWNDM_OPENINTERFACE Windows multimídia
+- MCIWNDM_OPENINTERFACE mensagem Windows Multimídia
 topic_type:
 - apiref
 api_name:
@@ -21,9 +21,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118373448"
 ---
-# <a name="mciwndm_openinterface-message"></a>\_Mensagem MCIWNDM OPENINTERFACE
+# <a name="mciwndm_openinterface-message"></a>Mensagem MCIWNDM \_ OPENINTERFACE
 
-A mensagem **MCIWNDM \_ OPENINTERFACE** anexa o fluxo de dados ou o arquivo associado à interface especificada a uma janela MCIWnd. Você pode enviar essa mensagem explicitamente ou usando a macro [**MCIWndOpenInterface**](/windows/desktop/api/Vfw/nf-vfw-mciwndopeninterface) .
+A **mensagem \_ OPENINTERFACE MCIWNDM** anexa o fluxo de dados ou o arquivo associado à interface especificada a uma janela MCIWnd. Você pode enviar essa mensagem explicitamente ou usando a [**macro MCIWndOpenInterface.**](/windows/desktop/api/Vfw/nf-vfw-mciwndopeninterface)
 
 
 ```C++
@@ -38,7 +38,7 @@ lParam = (LPARAM) (LPUNKNOWN) pUnk;
 
 <dl> <dt>
 
-<span id="pUnk"></span><span id="punk"></span><span id="PUNK"></span>*pUnk*
+<span id="pUnk"></span><span id="punk"></span><span id="PUNK"></span>*Punk*
 </dt> <dd>
 
 Ponteiro para uma interface IAVI que aponta para um arquivo ou um fluxo de dados em um arquivo.
@@ -47,7 +47,7 @@ Ponteiro para uma interface IAVI que aponta para um arquivo ou um fluxo de dados
 
 ## <a name="return-value"></a>Valor Retornado
 
-Retornará zero se for bem-sucedido ou um erro de outra forma.
+Retornará zero se for bem-sucedido ou um erro, caso contrário.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -57,7 +57,7 @@ Retornará zero se for bem-sucedido ou um erro de outra forma.
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                       |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                             |
-| Cabeçalho<br/>                   | <dl> <dt>VFW. h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Vfw.h</dt> </dl> |
 
 
 

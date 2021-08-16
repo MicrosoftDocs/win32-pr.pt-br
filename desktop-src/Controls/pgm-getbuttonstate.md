@@ -3,7 +3,7 @@ title: Mensagem de PGM_GETBUTTONSTATE (commctrl. h)
 description: Recupera o estado do botão especificado em um controle de pager. Você pode enviar essa mensagem explicitamente ou usar a \_ macro Getbuttonstate do pager.
 ms.assetid: 58f99b67-fef7-4695-86e2-0579a2f6de2f
 keywords:
-- Controles de PGM_GETBUTTONSTATE de mensagens do Windows
+- controles de Windows de mensagem de PGM_GETBUTTONSTATE
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3d8c9eebbc0aa91651a01de1fe193544f0c8afcf
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 2014b6e36a0ab883155d786760ef54f02c89ee0d17192d6082d40ad19eec95a3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918788"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117830187"
 ---
 # <a name="pgm_getbuttonstate-message"></a>Mensagem do PGM \_ GETbuttonstate
 
@@ -50,7 +50,7 @@ Indica para qual botão recuperar o estado. Esse valor pode ser um dos seguintes
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna o estado do botão especificado em *lParam*. Esse será um ou mais dos seguintes valores (se mais de um valor for retornado, eles serão combinados usando um OR bit a bit):
 
@@ -74,9 +74,9 @@ Retorna o estado do botão especificado em *lParam*. Esse será um ou mais dos s
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 
 

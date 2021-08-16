@@ -63,20 +63,20 @@ Os seguintes valores de erro podem ser retornados pela [**função mciSendComman
 | MCIERR \_ NOME DE DISPOSITIVO \_ \_ INVÁLIDO    | O dispositivo especificado não está aberto nem reconhecido pela MCI.                                                                                                     |
 | ARQUIVO MCIERR \_ \_ INVÁLIDO            | O arquivo especificado não pode ser interpretado no dispositivo MCI especificado. O arquivo pode estar corrompido ou pode usar um formato de arquivo incorreto.                               |
 | PARÂMETRO AUSENTE DO \_ MCIERR \_       | O comando especificado requer um parâmetro , que você deve fornecer.                                                                                          |
-| MCIERR \_ vários                 | Ocorreram erros em mais de um dispositivo. Especifique cada comando e dispositivo separadamente para identificar os dispositivos que estão causando os erros.                             |
-| MCIERR \_ deve \_ usar \_ compartilhável     | O driver de dispositivo já está em uso. Você deve especificar o parâmetro "compartilhável" com cada comando Open para compartilhar o dispositivo.                                  |
-| MCIERR \_ nenhum \_ elemento \_ permitido     | O dispositivo especificado não usa um nome de arquivo.                                                                                                               |
-| MCIERR \_ nenhum \_ inteiro              | O parâmetro para este comando MCI deve ser um valor inteiro.                                                                                                |
-| MCIERR \_ sem \_ janela               | Não há janela de exibição.                                                                                                                                 |
-| \_função não aplicável \_ MCIERR  | A sequência de comandos MCI especificada não pode ser executada na ordem especificada. Corrigir a sequência de comandos; em seguida, tente novamente.                                   |
-| \_bloco de \_ parâmetro \_ nulo MCIERR   | Um bloco de parâmetro nulo (estrutura) foi passado para o MCI.                                                                                                       |
-| MCIERR \_ \_ de \_ memória insuficiente          | Seu sistema não tem memória suficiente para esta tarefa. Encerre um ou mais aplicativos para aumentar a memória disponível e tente executar a tarefa novamente. |
+| MCIERR \_ MULTIPLE                 | Ocorreram erros em mais de um dispositivo. Especifique cada comando e dispositivo separadamente para identificar os dispositivos que estão causando os erros.                             |
+| O MCIERR \_ DEVE \_ USAR \_ SHAREABLE     | O driver de dispositivo já está em uso. Você deve especificar o parâmetro "compartilhável" com cada comando aberto para compartilhar o dispositivo.                                  |
+| MCIERR \_ SEM \_ ELEMENTO \_ PERMITIDO     | O dispositivo especificado não usa um nome de arquivo.                                                                                                               |
+| MCIERR \_ SEM \_ INTEIRO              | O parâmetro para esse comando MCI deve ser um valor inteiro.                                                                                                |
+| MCIERR \_ SEM \_ JANELA               | Não há nenhuma janela de exibição.                                                                                                                                 |
+| FUNÇÃO MCIERR \_ NÃO \_ AAPPLICABLE  | A sequência de comandos MCI especificada não pode ser executada na ordem especificada. Corrigir a sequência de comandos; em seguida, tente novamente.                                   |
+| BLOCO DE PARÂMETRO \_ \_ NULO MCIERR \_   | Um bloco de parâmetro nulo (estrutura) foi passado para a MCI.                                                                                                       |
+| MCIERR \_ \_ SEM \_ MEMÓRIA          | Seu sistema não tem memória suficiente para essa tarefa. Saia de um ou mais aplicativos para aumentar a memória disponível e tente executar a tarefa novamente. |
 | MCIERR \_ OUTOFRANGE               | O valor do parâmetro especificado está fora do intervalo para o comando MCI especificado.                                                                                |
-| MCIERR \_ definir \_ CD                  | O arquivo especificado ou o dispositivo MCI está inacessível porque o aplicativo não pode alterar os diretórios.                                                         |
-| MCIERR \_ definir \_ unidade               | O arquivo especificado ou o dispositivo MCI está inacessível porque o aplicativo não pode alterar as unidades.                                                              |
-| MCIERR \_ recurso sem nome \_        | Não é possível armazenar um arquivo sem nome. Especifique um nome de arquivo.                                                                                                       |
-| MCIERR \_ comando não reconhecido \_    | O driver não pode reconhecer o comando especificado.                                                                                                          |
-| MCIERR \_ função sem suporte \_    | O driver de dispositivo MCI que o sistema está usando não oferece suporte ao comando especificado.                                                                           |
+| MCIERR \_ SET \_ CD                  | O arquivo especificado ou o dispositivo MCI está inacessível porque o aplicativo não pode alterar diretórios.                                                         |
+| UNIDADE MCIERR \_ SET \_               | O arquivo especificado ou o dispositivo MCI está inacessível porque o aplicativo não pode alterar as unidades.                                                              |
+| RECURSO SEM NOME \_ DO MCIERR \_        | Você não pode armazenar um arquivo sem nome. Especifique um nome de arquivo.                                                                                                       |
+| COMANDO MCIERR \_ UNRECOGNIZED \_    | O driver não pode reconhecer o comando especificado.                                                                                                          |
+| FUNÇÃO SEM \_ SUPORTE DO MCIERR \_    | O driver de dispositivo MCI que o sistema está usando não dá suporte ao comando especificado.                                                                           |
 
 
 

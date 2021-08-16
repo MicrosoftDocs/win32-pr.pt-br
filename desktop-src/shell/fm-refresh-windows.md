@@ -1,6 +1,6 @@
 ---
-description: Enviado por uma extensão do Gerenciador de Arquivos para fazer com que o Gerenciador de Arquivos reintint sua janela ativa ou todas as suas janelas.
-title: FM_REFRESH_WINDOWS mensagem (Wfext.h)
+description: Enviado por uma extensão do Gerenciador de arquivos para fazer com que o Gerenciador de arquivos repinte sua janela ativa ou todas as suas janelas.
+title: Mensagem de FM_REFRESH_WINDOWS (Wfext. h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -20,9 +20,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118224262"
 ---
-# <a name="fm_refresh_windows-message"></a>Mensagem FM \_ REFRESH \_ DO WINDOWS
+# <a name="fm_refresh_windows-message"></a>Mensagem de atualização de FM do \_ \_ Windows
 
-Enviado por uma extensão do Gerenciador de Arquivos para fazer com que o Gerenciador de Arquivos reintint sua janela ativa ou todas as suas janelas.
+Enviado por uma extensão do Gerenciador de arquivos para fazer com que o Gerenciador de arquivos repinte sua janela ativa ou todas as suas janelas.
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -31,7 +31,7 @@ Enviado por uma extensão do Gerenciador de Arquivos para fazer com que o Gerenc
 *fRepaint* 
 </dt> <dd>
 
-Um valor que indica se o Gerenciador de Arquivos reintintsa sua janela ativa ou todas as suas janelas. Se esse parâmetro for **TRUE,** o Gerenciador de Arquivos reintintsão todas as suas janelas. Caso contrário, o Gerenciador de Arquivos reintintsa apenas sua janela ativa.
+Um valor que indica se o Gerenciador de arquivos redesenha sua janela ativa ou todas as suas janelas. Se esse parâmetro for **true**, o Gerenciador de arquivos repintará todas as suas janelas. Caso contrário, o Gerenciador de arquivos repintará apenas sua janela ativa.
 
 </dd> <dt>
 
@@ -44,7 +44,7 @@ Sem valor de retorno.
 
 ## <a name="remarks"></a>Comentários
 
-As alterações do sistema de arquivos causadas por uma extensão são detectadas automaticamente pelo Gerenciador de Arquivos. Uma extensão deve usar essa mensagem somente em situações em que as conexões de unidade são feitas ou canceladas.
+As alterações do sistema de arquivos causadas por uma extensão são detectadas automaticamente pelo Gerenciador de arquivos. Uma extensão deve usar essa mensagem somente em situações em que as conexões de unidade são feitas ou canceladas.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,7 +54,7 @@ As alterações do sistema de arquivos causadas por uma extensão são detectada
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                         |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                               |
-| Cabeçalho<br/>                   | <dl> <dt>Wfext.h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Wfext. h</dt> </dl> |
 
 
 

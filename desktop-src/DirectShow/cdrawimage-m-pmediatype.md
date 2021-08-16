@@ -1,7 +1,7 @@
 ---
-description: 'Membro CDrawImage:: m_pMediaType-a \_ variável de membro pMediaType m é um ponteiro para o tipo de mídia atual.'
+description: Membro CDrawImage::m_pMediaType - A variável de membro m pMediaType é um ponteiro \_ para o tipo de mídia atual.
 ms.assetid: 51a33fc4-1496-43ed-9b68-842f4c2cf0a1
-title: 'Membro CDrawImage:: m_pMediaType (Winutil. h)'
+title: Membro CDrawImage::m_pMediaType (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,18 +16,18 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 127801850ed008d65015d277ad3e1dbdfdb5c1bf
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 4461d6d2be35522fabf630af31e608f1b7fe8358dd1730bd6f3a79e6674eb288
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108095764"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117822097"
 ---
-# <a name="cdrawimagem_pmediatype-member"></a>Membro de CDrawImage:: m \_ pMediaType
+# <a name="cdrawimagem_pmediatype-member"></a>Membro CDrawImage::m \_ pMediaType
 
-A variável de membro **m \_ pMediaType** é um ponteiro para o tipo de mídia atual.
+A **\_ variável de membro m pMediaType** é um ponteiro para o tipo de mídia atual.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -42,12 +42,12 @@ CMediaType *m_pMediaType;
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Winutil. h (incluir fluxos. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Winutil.h (incluir Fluxos.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

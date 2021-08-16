@@ -1,6 +1,6 @@
 ---
-title: Configurando fluxos de transferência de arquivo
-description: Configurando fluxos de transferência de arquivo
+title: configurando a transferência de arquivos Fluxos
+description: configurando a transferência de arquivos Fluxos
 ms.assetid: faed54ae-9e80-492a-9602-e726bdb3b54a
 keywords:
 - fluxos, configurando fluxos de transferência de arquivo
@@ -11,14 +11,14 @@ keywords:
 - extensões de unidade de dados, fluxos de transferência de arquivo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 75fac7d2270da82f1f9e82ed9123611ae608dd3c
-ms.sourcegitcommit: 48d1c892045445bcbd0f22bafa2fd3861ffaa6e7
+ms.openlocfilehash: 9c0be95c9760a02275e223f56785149f6867d4aaf2462d07d158991b3cd21c01
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "104007149"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117849059"
 ---
-# <a name="configuring-file-transfer-streams"></a>Configurando fluxos de transferência de arquivo
+# <a name="configuring-file-transfer-streams"></a>configurando a transferência de arquivos Fluxos
 
 Os fluxos de transferência de arquivo não exigem configurações especiais na estrutura do [**\_ \_ tipo de mídia do WM**](/previous-versions/windows/desktop/api/wmsdkidl/ns-wmsdkidl-wm_media_type) . Eles exigem uma extensão de unidade de dados para associar um nome de arquivo a cada exemplo. Para enviar um nome com exemplos de transferência de arquivo, você deve implementar um sistema de extensão de unidade de dados para o fluxo.
 
@@ -37,18 +37,18 @@ Para definir uma extensão de unidade de dados para o fluxo, execute as seguinte
 
 <dl> <dt>
 
-[**Configuração comum a todos os fluxos**](configuration-common-to-all-streams.md)
+[**configuração comum a todos os Fluxos**](configuration-common-to-all-streams.md)
 </dt> <dt>
 
 [**Configurando tipos de fluxo arbitrários**](configuring-arbitrary-stream-types.md)
 </dt> <dt>
 
-[**Fluxos de arquivos**](file-streams.md)
+[**Fluxos de arquivo**](file-streams.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

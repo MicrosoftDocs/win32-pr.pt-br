@@ -3,7 +3,7 @@ title: Mensagem de EM_SETPALETTE (RichEdit. h)
 description: Altera a paleta que um controle de edição avançado usa para sua janela de exibição.
 ms.assetid: c1dc0c24-eaf2-47a8-9bb1-59f37b206feb
 keywords:
-- Controles de EM_SETPALETTE de mensagens do Windows
+- controles de Windows de mensagem de EM_SETPALETTE
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 026a0a85001818b6f69366e8dba80ef56a7a8f20
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 93225a7a550f86bb8b32bf5939a8c7b7aa862ac96c8459bd6bcceb4c6b76e516
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104009268"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117831147"
 ---
 # <a name="em_setpalette-message"></a>\_Mensagem em SETpalette
 
@@ -43,7 +43,7 @@ Esse parâmetro não é usado; Ele deve ser zero.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Essa mensagem não retorna um valor.
 
@@ -57,9 +57,9 @@ O controle de edição rico não verifica se a nova paleta é válida.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
 
 
 

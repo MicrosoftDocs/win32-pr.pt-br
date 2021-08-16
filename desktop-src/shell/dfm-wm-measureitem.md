@@ -4,12 +4,12 @@ ms.assetid: 4584a3da-6c92-4ecd-8cf2-e4afc1b8321d
 title: Mensagem de DFM_WM_MEASUREITEM (shlobj. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 61c4ad79acf221ecaabf9060940ad2514422bef1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
-ms.translationtype: HT
+ms.openlocfilehash: 5e7ad0d39a56f598a8ef4773c70f4f438388e91a2154b3083fdf85a1ebebec22
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104370609"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117860894"
 ---
 # <a name="dfm_wm_measureitem-message"></a>Mensagem do DFM do \_ WM \_ MEASUREITEM
 
@@ -56,9 +56,9 @@ Quando a janela do proprietário recebe a mensagem **DFM do \_ WM \_ MEASUREITEM
 
 | Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                      |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                |
-| parâmetro<br/>                   | <dl> <dt>Shlobj. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                      |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                |
+| Cabeçalho<br/>                   | <dl> <dt>Shlobj. h</dt> </dl> |
 
 
 

@@ -17,7 +17,7 @@ TraceLogging é a nova Windows 10 de eventos para aplicativos de modo de usuári
 
 TraceLogging oferece a simplicidade do WPP (pré-processador de rastreamento de software) do Windows com o benefício adicional de poder incluir dados estruturados com eventos, a capacidade de correlacionar eventos e tudo isso sem exigir um arquivo XML de manifesto de instrumentação separado. Os eventos são autodescrevendo, o que significa que um binário que contém o manifesto de instrumentação não precisa ser registrado no sistema para usar as APIs de TDH (Auxiliar de Dados de Rastreamento) para decodificar e mostrar eventos.
 
-O ETW (Rastreamento de Windows) foi introduzido com o Windows 2000 e atualizado no Windows Vista. O rastreamento é construído sobre as APIs Windows ETW do Vista. Os provedores podem usar a tecnologia TraceLogging e ainda trabalhar no Windows Vista. Controladores existentes (usando Windows VistaAPIs) podem ser usados para controlar provedores TraceLogging.
+O ETW (rastreamento de Windows eventos) foi introduzido com o Windows 2000 e atualizado no Windows Vista. O rastreamento é construído sobre as APIs Windows ETW do Vista. Os provedores podem usar a tecnologia TraceLogging e ainda trabalhar no Windows Vista. Controladores existentes (usando Windows VistaAPIs) podem ser usados para controlar provedores TraceLogging.
 
 TraceLogging também é compatível com ferramentas existentes. Provedores que usam ETW baseado em manifesto ainda têm suporte. Você não precisa converter provedores ETW baseados em manifesto em provedores TraceLogging, a menos que deseje aproveitar a simplicidade que TraceLogging fornece. O rastreamento WPP também ainda é suportado.
 
@@ -37,7 +37,7 @@ Há três APIs traceLogging separadas que se direcionam a diferentes públicos d
 Para desenvolvedores do WinRT:
 
 -   [**LoggingChannel**](/uwp/api/Windows.Foundation.Diagnostics.LoggingChannel) foi estendido em Windows 10 para registrar eventos ETW (Rastreamento de Eventos de autodescrevão) Windows sem a necessidade de um manifesto.
--   [**LoggingActivity**](/windows/win32/api/traceloggingactivity/nl-traceloggingactivity-traceloggingactivity) foi estendida em Windows 10 para fornecer métodos de início e parada de atividade que fornecem controle sobre o formato e o conteúdo dos eventos Iniciar e Parar. Além disso, as atividades podem ser aninhadas.
+-   [**LoggingActivity**](/windows/win32/api/traceloggingactivity/nl-traceloggingactivity-traceloggingactivity) foi estendido em Windows 10 para fornecer métodos de início e parada de atividade que fornecem controle sobre o formato e o conteúdo dos eventos Iniciar e Parar. Além disso, as atividades podem ser aninhadas.
 
 Para desenvolvedores C/C++:
 

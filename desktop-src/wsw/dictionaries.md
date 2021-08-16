@@ -8,12 +8,12 @@ keywords:
 - WWS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 75ba13760a1ff1a1cef61ff6015c5630ab0e134c
-ms.sourcegitcommit: a716ca2a6a22a400f02c6b31699cf4da83ee3619
+ms.openlocfilehash: 8ea9ac022ab88f70b304b65581fbcdf294e9aee45c52e3ffd888138b82815230
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "104366939"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117841756"
 ---
 # <a name="dictionaries"></a>Dicionários
 

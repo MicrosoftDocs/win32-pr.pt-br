@@ -4,12 +4,12 @@ description: Esta seção fornece código de exemplo e informações sobre como 
 ms.assetid: 64432698-913D-41E6-BD5E-7F5CCAAF7631
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b2f887f05960dfca95f82bea5b616889aa65262e
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: a120fc2aef30e942c91392386ce00007becfc09929d70c51b55522cec93ce77b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104005348"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117828507"
 ---
 # <a name="using-progress-bar-controls"></a>Usando controles de barra de progresso
 
@@ -21,7 +21,7 @@ Esta seção fornece código de exemplo e informações sobre como criar um cont
 
 | Tópico                                                                           | Descrição                                                                                                             |
 |---------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------|
-| [Como usar controles de barra de progresso](create-progress-bar-controls.md)<br/> | Este tópico explica como usar uma barra de progresso para indicar o progresso de uma operação de análise de arquivo demorada. <br/> |
+| [Como usar controles de barra de progresso](create-progress-bar-controls.md)<br/> | Este tópico explica como usar uma barra de progresso para indicar o progresso de uma operação demorada de análise de arquivo. <br/> |
 
 
 

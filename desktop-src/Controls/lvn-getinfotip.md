@@ -3,7 +3,7 @@ title: LVN_GETINFOTIP código de notificação (commctrl. h)
 description: Enviado por um ícone grande exibir lista-exibir controle que tem o \_ \_ estilo estendido LVS ex INFOTIP.
 ms.assetid: 62be5087-7e49-4722-a63a-1768e030af48
 keywords:
-- LVN_GETINFOTIP de código de notificação controles do Windows
+- LVN_GETINFOTIP código de notificação Windows controles
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c2b4552456a575e2f03e02b2bfb78f7fcc1d8ca1
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 8f7477230913ec5efd0827bc48e1a6021619aa4cdbbad252426d1af364b5b36b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104499868"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117830437"
 ---
 # <a name="lvn_getinfotip-notification-code"></a>Código de notificação do LVN \_ GETINFOTIP
 
@@ -47,7 +47,7 @@ Ponteiro para uma estrutura [**NMLVGETINFOTIP**](/windows/win32/api/commctrl/ns-
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O valor de retorno para essa notificação não é usado.
 
@@ -61,9 +61,9 @@ Esse código de notificação é enviado somente por controles de exibição de 
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 | Nomes Unicode e ANSI<br/>   | **LVN \_ GETINFOTIPW** (Unicode) e **LVN \_ GETINFOTIPA** (ANSI)<br/>             |
 
 

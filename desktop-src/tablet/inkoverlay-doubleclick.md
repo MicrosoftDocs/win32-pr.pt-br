@@ -1,7 +1,7 @@
 ---
-description: Evento InkOverlay.DoubleClick – ocorre quando o objeto InkCollector ou InkOverlay é clicado duas vezes.
+description: Evento InkOverlay. DoubleClick – ocorre quando o objeto InkCollector ou InkOverlay é clicado duas vezes.
 ms.assetid: 76ea40d4-82cf-420a-a9eb-66cb0492b43b
-title: Evento InkOverlay.DoubleClick (Msinkaut.h)
+title: Evento InkOverlay. DoubleClick (Msinkaut. h)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: bf670c191f06e53effa0a59a078a70d7c9d096d72d2ed49a387ffa933eb7bae1
@@ -11,9 +11,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118219371"
 ---
-# <a name="inkoverlaydoubleclick-event"></a>Evento InkOverlay.DoubleClick
+# <a name="inkoverlaydoubleclick-event"></a>Evento InkOverlay. DoubleClick
 
-Ocorre quando o [**objeto InkCollector**](inkcollector-class.md) ou [**InkOverlay**](inkoverlay-class.md) é clicado duas vezes.
+Ocorre quando o objeto [**InkCollector**](inkcollector-class.md) ou [**InkOverlay**](inkoverlay-class.md) é clicado duas vezes.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -30,7 +30,7 @@ void DoubleClick(
 
 <dl> <dt>
 
-*Cancelar* \[ in, out\]
+*Cancelar* \[ entrada, saída\]
 </dt> <dd>
 
 Se o evento deve ser cancelado para o controle pai.
@@ -43,7 +43,7 @@ Esse evento não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-Esse método de evento é definido nas interfaces somente expedição \_ IInkCollectorEvents, \_ IInkOverlayEvents e \_ IInkPictureEvents (dispinterfaces) com uma ID de \_ DISPID IPEDblClick.
+Esse método de evento é definido nas \_ \_ interfaces somente de expedição IInkCollectorEvents, IInkOverlayEvents e \_ IInkPictureEvents (dispinterfaces) com uma ID de IPEDblClick de DISPID \_ .
 
 ## <a name="requirements"></a>Requisitos
 
@@ -51,9 +51,9 @@ Esse método de evento é definido nas interfaces somente expedição \_ IInkCol
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho do XP Tablet PC \[ Edition\]<br/>                                                       |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do XP Tablet PC Edition\]<br/>                                                       |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                                           |
-| parâmetro<br/>                   | <dl> <dt>Msinkaut.h (também requer Msinkaut \_ i.c)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Msinkaut. h (também requer Msinkaut \_ i. c)</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>InkObj.dll</dt> </dl>                               |
 
 

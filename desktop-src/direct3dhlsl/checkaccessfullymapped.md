@@ -1,9 +1,9 @@
 ---
 title: Função CheckAccessFullyMapped
-description: Determina se todos os valores de uma operação de Exemplo, Coleta ou Carregamento acessaram blocos mapeados em um recurso lado a lado.
+description: Determina se todos os valores de uma operação de exemplo, de coleta ou de carregamento acessaram blocos mapeados em um recurso de lado.
 ms.assetid: 2CAB7770-143E-4E29-A57F-96C27021AC5F
 keywords:
-- Função CheckAccessFullyMapped HLSL
+- HLSL da função CheckAccessFullyMapped
 topic_type:
 - apiref
 api_name:
@@ -22,7 +22,7 @@ ms.locfileid: "118516669"
 ---
 # <a name="checkaccessfullymapped-function"></a>Função CheckAccessFullyMapped
 
-Determina se todos os valores de  **uma** operação de exemplo , **Coletar** ou Carregar acessaram blocos mapeados em um recurso lado a [lado.](/windows/desktop/direct3d11/direct3d-11-2-features)
+Determina se todos os valores de uma operação de **exemplo**, de **coleta** ou de **carregamento** acessaram blocos mapeados em um [recurso de lado](/windows/desktop/direct3d11/direct3d-11-2-features).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -36,12 +36,12 @@ bool CheckAccessFullyMapped(
 
 <dl> <dt>
 
-*status* \[ Em\]
+*status* \[ do no\]
 </dt> <dd>
 
-Tipo: **somente \_ uint**
+Tipo: **\_ apenas uint**
 
-O valor de status retornado de uma operação **De exemplo,** **Coletar** **ou** Carregar. Como não é possível acessar esse valor de status diretamente, você precisa passá-lo para **CheckAccessFullyMapped.**
+O valor de status que é retornado de uma operação de **exemplo**, de **coleta** ou de **carregamento** . Como não é possível acessar esse valor de status diretamente, você precisa passá-lo para **CheckAccessFullyMapped**.
 
 </dd> </dl>
 
@@ -49,19 +49,19 @@ O valor de status retornado de uma operação **De exemplo,** **Coletar** **ou**
 
 Tipo: **bool**
 
-Retorna um **valor booliana** que indica se todos os valores de uma operação sample **,** **Gather** ou **Load** acessaram blocos mapeados em um recurso lado a [lado.](/windows/desktop/direct3d11/direct3d-11-2-features) Retornará **TRUE** se todos os valores da operação acessarem blocos mapeados; caso contrário, **retornará FALSE** se quaisquer valores foram retirados de um lado não mapeado.
+Retorna um valor **booliano** que indica se todos os valores de uma operação de **exemplo**, **coleta** ou **carregamento** acessaram blocos mapeados em um [recurso de lado](/windows/desktop/direct3d11/direct3d-11-2-features). Retorna **true** se todos os valores da operação acessaram blocos mapeados; caso contrário, retornará **false** se algum valor tiver sido obtido de um bloco não mapeado.
 
 ## <a name="remarks"></a>Comentários
 
-### <a name="minimum-shader-model"></a>Modelo de sombreador mínimo
+### <a name="minimum-shader-model"></a>Modelo de sombreamento mínimo
 
-Essa função tem suporte nos modelos de sombreador a seguir.
+Essa função tem suporte nos seguintes modelos de sombreador.
 
 
 
 | Modelo de Sombreador                                                                | Com suporte |
 |-----------------------------------------------------------------------------|-----------|
-| [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md) e modelos de sombreador superior | sim       |
+| [Modelo](d3d11-graphics-reference-sm5.md) de sombreador 5 e modelos de sombreador mais altos | sim       |
 
 
 
@@ -71,7 +71,7 @@ Essa função tem suporte nos seguintes tipos de sombreadores:
 
 
 
-| Vértice | Casco | Domínio | Geometry | Pixel | Computação |
+| Vértice | Envoltória | Domínio | Geometry | 16x16 | Computação |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | x     | x       |
 

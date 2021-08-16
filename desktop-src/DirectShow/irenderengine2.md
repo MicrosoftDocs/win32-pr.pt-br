@@ -1,5 +1,5 @@
 ---
-description: A interface IRenderEngine2 permite que o aplicativo substitua o filtro de redimensionamento de vídeo padrão usado pelos serviços de edição do DirectShow (DES). O mecanismo de renderização básico e o mecanismo de processamento inteligente dão suporte a essa interface.
+description: a interface IRenderEngine2 permite que o aplicativo substitua o filtro de redimensionamento de vídeo padrão usado pelos serviços de edição de DirectShow (DES). O mecanismo de renderização básico e o mecanismo de processamento inteligente dão suporte a essa interface.
 ms.assetid: 37603c73-e199-431a-9a1e-a40c77755c70
 title: Interface IRenderEngine2 (QEdit. h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: ed7802cf3d47d745b4e4733bb1fb60c61130b44a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 39f1bc68fc6cd76e87d1998047cb211b3a8aa8e263c90e0494c7eaf15d52f75f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105779520"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117818504"
 ---
 # <a name="irenderengine2-interface"></a>Interface IRenderEngine2
 
@@ -28,7 +28,7 @@ ms.locfileid: "105779520"
 
  
 
-A `IRenderEngine2` interface permite que o aplicativo substitua o filtro de redimensionamento de vídeo padrão usado pelos serviços de edição do DirectShow (des). O [mecanismo de renderização básico](basic-render-engine.md) e o [mecanismo de processamento inteligente](smart-render-engine.md) dão suporte a essa interface.
+a `IRenderEngine2` interface permite que o aplicativo substitua o filtro de redimensionamento de vídeo padrão usado pelos serviços de edição de DirectShow (DES). O [mecanismo de renderização básico](basic-render-engine.md) e o [mecanismo de processamento inteligente](smart-render-engine.md) dão suporte a essa interface.
 
 ## <a name="members"></a>Membros
 
@@ -58,7 +58,7 @@ A interface **IRenderEngine2** tem esses métodos.
  
 
 > [!Note]  
-> Para obter o QEdit. h, baixe a [atualização SDK do Microsoft Windows para Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). O QEdit. h não está disponível no SDK do Microsoft Windows para Windows 7 e .NET Framework 3,5 Service Pack 1.
+> para obter o Qedit. h, baixe a [atualização SDK do Microsoft Windows para Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit. h não está disponível no SDK do Microsoft Windows para Windows 7 e .NET Framework 3,5 Service Pack 1.
 
  
 
@@ -69,7 +69,7 @@ A interface **IRenderEngine2** tem esses métodos.
 | Requisito | Valor |
 |--------------------|-----------------------------------------------------------------------------------------|
 | Versão<br/> | DirectX 9,0 ou posterior<br/>                                                         |
-| parâmetro<br/>  | <dl> <dt>QEdit. h</dt> </dl>      |
+| Cabeçalho<br/>  | <dl> <dt>QEdit. h</dt> </dl>      |
 | Biblioteca<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
 
 

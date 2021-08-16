@@ -1,7 +1,7 @@
 ---
-description: Windows Estruturas de pesquisa
+description: Windows Pesquisar estruturas
 ms.assetid: 11c84bd0-9314-4c57-9466-57bcce7c2883
-title: Windows Estruturas de pesquisa
+title: Windows Pesquisar estruturas
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 0f14da856876b1a53e8eba063d007cd698984dfe18cd07a1e69ba7a5fcd3b95a
@@ -11,14 +11,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118226709"
 ---
-# <a name="windows-search-structures"></a>Windows Estruturas de pesquisa
+# <a name="windows-search-structures"></a>Windows Pesquisar estruturas
 
 
 Esta seção documenta as seguintes estruturas:
 
-[**INFORMAÇÕES DE \_ AUTENTICAÇÃO**](/windows/desktop/api/Searchapi/ns-searchapi-authentication_info)
+[**informações de autenticação \_**](/windows/desktop/api/Searchapi/ns-searchapi-authentication_info)
 
-[**FONTES DE \_ DADOS \_ FILTRADAS**](/windows/desktop/api/filtereg/ns-filtereg-filtered_data_sources)
+[**\_fontes de dados filtradas \_**](/windows/desktop/api/filtereg/ns-filtereg-filtered_data_sources)
 
 [**FILTERREGION**](/windows/win32/api/filter/ns-filter-filterregion)
 
@@ -26,29 +26,29 @@ Esta seção documenta as seguintes estruturas:
 
 [**HITRANGE**](/windows/win32/api/structuredquery/ns-structuredquery-hitrange)
 
-[**INFORMAÇÕES \_ DE ACESSO \_ INCREMENTAL**](/windows/desktop/api/Searchapi/ns-searchapi-incremental_access_info)
+[**\_informações de acesso incremental \_**](/windows/desktop/api/Searchapi/ns-searchapi-incremental_access_info)
 
-[**ENTRADA DE \_ ALTERAÇÃO DE DADOS DE \_ \_ NOTIFICAÇÃO EM \_ LINHA**](/previous-versions/windows/desktop/legacy/aa965367(v=vs.85))
+[**\_entrada de \_ alteração de dados de notificação embutida \_ \_**](/previous-versions/windows/desktop/legacy/aa965367(v=vs.85))
 
-[**INFORMAÇÕES DO \_ ITEM**](/windows/desktop/api/Searchapi/ns-searchapi-item_info)
+[**informações do ITEM \_**](/windows/desktop/api/Searchapi/ns-searchapi-item_info)
 
-[**Linkinfo**](-search-linkinfo.md)
+[**LINKINFO**](-search-linkinfo.md)
 
-[**INFORMAÇÕES DE \_ PROXY**](/windows/desktop/api/Searchapi/ns-searchapi-proxy_info)
+[**informações de PROXY \_**](/windows/desktop/api/Searchapi/ns-searchapi-proxy_info)
 
-[**PESQUISAR \_ PROPRIEDADES DA \_ COLUNA**](/windows/desktop/api/searchapi/ns-searchapi-search_column_properties)
+[**\_Propriedades da coluna de pesquisa \_**](/windows/desktop/api/searchapi/ns-searchapi-search_column_properties)
 
-[**PESQUISA \_ DE ALTERAÇÃO DE \_ ITEM**](/windows/desktop/api/Searchapi/ns-searchapi-search_item_change)
+[**\_alterar item de pesquisa \_**](/windows/desktop/api/Searchapi/ns-searchapi-search_item_change)
 
-[**STATUS \_ DE \_ INDEXAÇÃO DE ITEM DE \_ PESQUISA**](/windows/desktop/api/Searchapi/ns-searchapi-search_item_indexing_status)
+[**\_status de \_ indexação do item de pesquisa \_**](/windows/desktop/api/Searchapi/ns-searchapi-search_item_indexing_status)
 
-[**ALTERAÇÃO \_ PERSISTENTE DO ITEM DE \_ \_ PESQUISA**](/windows/desktop/api/Searchapi/ns-searchapi-search_item_persistent_change)
+[**\_ \_ alteração persistente do item de pesquisa \_**](/windows/desktop/api/Searchapi/ns-searchapi-search_item_persistent_change)
 
-[**STAT \_ CHUNK**](/windows/win32/api/filter/ns-filter-stat_chunk)
+[**parte de STAT \_**](/windows/win32/api/filter/ns-filter-stat_chunk)
 
-[**FONTE DE \_ TEXTO**](/windows/win32/api/indexsrv/ns-indexsrv-text_source)
+[**fonte de texto \_**](/windows/win32/api/indexsrv/ns-indexsrv-text_source)
 
-[**INFORMAÇÕES DE \_ TEMPOOUT**](/windows/desktop/api/Searchapi/ns-searchapi-timeout_info)
+[**informações de tempo limite \_**](/windows/desktop/api/Searchapi/ns-searchapi-timeout_info)
 
  
 

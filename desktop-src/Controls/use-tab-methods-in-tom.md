@@ -1,34 +1,34 @@
 ---
-title: Como usar métodos Tab em TOM
-description: O exemplo a seguir fornece funções C que ilustram o uso dos métodos Tab no modelo de objeto de texto (TOM).
+title: Como usar métodos tab no TOM
+description: O exemplo a seguir fornece funções C que ilustram o uso dos métodos tab no TOM (Modelo de Objeto de Texto).
 ms.assetid: C74B4E43-615D-48B9-9884-F626BAF31F74
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9851b30fdf58c0d4200600c0c4c83c7f9a00a555
-ms.sourcegitcommit: f0ca63c18dc52c357d3398af7be766d2bdd40be7
+ms.openlocfilehash: 654b4a101c2deb3c22993f41b11ee94df6ac738da41963046f02a072f3eaa6a8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "103823616"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117828608"
 ---
-# <a name="how-to-use-tab-methods-in-tom"></a>Como usar métodos Tab em TOM
+# <a name="how-to-use-tab-methods-in-tom"></a>Como usar métodos tab no TOM
 
-O exemplo a seguir fornece funções C que ilustram o uso dos métodos Tab no modelo de objeto de texto (TOM). Supõe-se que a maioria dos aplicativos inclui uma barra de ferramentas que mostra a posição atual e o tipo das guias para o parágrafo selecionado no momento.
+O exemplo a seguir fornece funções C que ilustram o uso dos métodos tab no TOM (Modelo de Objeto de Texto). Supõe-se que a maioria dos aplicativos inclua uma barra de ferramentas que mostra a posição atual e o tipo das guias para o parágrafo selecionado no momento.
 
 ## <a name="what-you-need-to-know"></a>O que você precisa saber
 
 ### <a name="technologies"></a>Tecnologias
 
--   [Controles do Windows](window-controls.md)
+-   [Windows Controles](window-controls.md)
 
 ### <a name="prerequisites"></a>Pré-requisitos
 
 -   C/C++
--   Programação da interface do usuário do Windows
+-   Windows Interface do Usuário programação
 
 ## <a name="instructions"></a>Instruções
 
-### <a name="use-a-tab-method"></a>Usar um método de tabulação
+### <a name="use-a-tab-method"></a>Usar um método Tab
 
 O exemplo de código a seguir demonstra como atualizar uma barra de ferramentas com os detalhes da guia atual.
 
@@ -70,7 +70,7 @@ cleanup:
 
 ### <a name="copy-tab-information"></a>Copiar informações da guia
 
-O exemplo a seguir mostra como copiar apenas as informações da guia de uma interface [**ITextPara**](/windows/desktop/api/Tom/nn-tom-itextpara) para outra. São necessários dois parâmetros: **ITextPara** \* *pParaFrom* (o parágrafo do qual copiar as guias) e **ITextPara** \* *pParaFrom* (o parágrafo para o qual copiar tabulações).
+O exemplo a seguir mostra como copiar apenas as informações da guia de uma interface [**ITextPara**](/windows/desktop/api/Tom/nn-tom-itextpara) para outra. Ele aceita dois parâmetros: **ITextPara** pParaFrom (o parágrafo do qual copiar guias) e \*  **ITextPara** \* *pParaFrom* (o parágrafo para o qual copiar guias).
 
 
 ```C++
@@ -101,15 +101,15 @@ HRESULT CopyOnlyTabs(ITextPara *pParaFrom, ITextPara *pParaTo)
 [Usando o modelo de objeto de texto](using-the-text-object-model.md)
 </dt> <dt>
 
-[Usando controles de edição avançados](using-rich-edit-controls.md)
+[Usando controles de edição rich](using-rich-edit-controls.md)
 </dt> <dt>
 
-[Demonstração de controles comuns do Windows (CppWindowsCommonControls)](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/OneCodeTeam/Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/%5BC++%5D-Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/C++/CppWindowsCommonControls)
+[Windows demonstração de controles comuns (CppWindowsCommonControls)](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/OneCodeTeam/Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/%5BC++%5D-Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/C++/CppWindowsCommonControls)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

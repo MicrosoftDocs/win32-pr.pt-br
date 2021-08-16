@@ -1,40 +1,40 @@
 ---
-title: Como usar o Buddy Windows
-description: Ao definir outros controles como Buddy Windows para um TrackBar, você pode posicionar automaticamente esses controles nas extremidades do TrackBar como rótulos.
+title: Como usar o Windows
+description: Ao definir outros controles como janelas de parceiro para uma barra de faixa, você pode posicionar automaticamente esses controles nas extremidades da barra de faixa como rótulos.
 ms.assetid: 5797AA55-BD8D-407A-8896-08EE0DDC7E30
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8eca9a4e3b3049f8d4cf7515879d91a096f5a9e3
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: d6819e0f37f07a90ae08a623f14c6c26d1d67f55ea81143834dfd10816f74396
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104005352"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117829047"
 ---
-# <a name="how-to-use-buddy-windows"></a>Como usar o Buddy Windows
+# <a name="how-to-use-buddy-windows"></a>Como usar o Windows
 
-Ao definir outros controles como Buddy Windows para um TrackBar, você pode posicionar automaticamente esses controles nas extremidades do TrackBar como rótulos.
+Ao definir outros controles como janelas de parceiro para uma barra de faixa, você pode posicionar automaticamente esses controles nas extremidades da barra de faixa como rótulos.
 
-A ilustração a seguir mostra um TrackBar horizontal e vertical, ambos com controles estáticos como Buddy Windows.
+A ilustração a seguir mostra uma barra de faixa horizontal e vertical, ambas com controles estáticos como janelas de amigos.
 
-![captura de tela mostrando uma caixa de diálogo com um TrackBar horizontal e um TrackBar vertical](images/tkb-buddy.png)
+![captura de tela mostrando uma caixa de diálogo com uma barra de faixa horizontal e uma barra de faixa vertical](images/tkb-buddy.png)
 
 ## <a name="what-you-need-to-know"></a>O que você precisa saber
 
 ### <a name="technologies"></a>Tecnologias
 
--   [Controles do Windows](window-controls.md)
+-   [Windows Controles](window-controls.md)
 
 ### <a name="prerequisites"></a>Pré-requisitos
 
 -   C/C++
--   Programação da interface do usuário do Windows
+-   Windows Interface do Usuário programação
 
 ## <a name="instructions"></a>Instruções
 
-### <a name="use-buddy-windows"></a>Usar as janelas de amigo
+### <a name="use-buddy-windows"></a>Usar o Windows
 
-O exemplo de código a seguir cria as janelas Buddy mostradas na ilustração.
+O exemplo de código a seguir cria as janelas de amigos mostradas na ilustração.
 
 
 ```
@@ -86,18 +86,18 @@ void LabelTrackbarsWithBuddies(HWND hDlg)
 
 ## <a name="remarks"></a>Comentários
 
-**IDC \_ SLIDER1** e **IDC \_ controledeslizante2** são trackbars criados no editor de recursos.
+**IDC \_ SLIDER1** e **IDC \_ SLIDER2** são barras de controle criadas no editor de recursos.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[Usando controles TrackBar](using-trackbar-controls.md)
+[Usando controles trackbar](using-trackbar-controls.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

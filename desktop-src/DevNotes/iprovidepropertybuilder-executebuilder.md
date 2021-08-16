@@ -1,7 +1,7 @@
 ---
 description: Notifica um objeto de que ele deve exibir seu construtor para a propriedade especificada.
 ms.assetid: 4d855aed-aaa1-4cc8-be9d-1175c254a813
-title: 'Método IProvidePropertyBuilder:: ExecuteBuilder'
+title: Método IProvidePropertyBuilder::ExecuteBuilder
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - Vsp.dll
-ms.openlocfilehash: c37c2a4ca1003bd701ea141f1723f4ca16aa69c3
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 9aef31629cac755d5689de929c02fbc8d9b816bf868a48bd59df3d08c911d9b3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105749929"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117827172"
 ---
-# <a name="iprovidepropertybuilderexecutebuilder-method"></a>Método IProvidePropertyBuilder:: ExecuteBuilder
+# <a name="iprovidepropertybuilderexecutebuilder-method"></a>Método IProvidePropertyBuilder::ExecuteBuilder
 
 Notifica um objeto de que ele deve exibir seu construtor para a propriedade especificada.
 
@@ -44,51 +44,51 @@ void ExecuteBuilder(
 
 <dl> <dt>
 
-*DISPID* \[ no\]
+*dispid* \[ Em\]
 </dt> <dd>
 
-O DISPID da propriedade para a qual o Construtor exibe.
+O DISPID da propriedade para a qual o construtor exibe.
 
 </dd> <dt>
 
-*bstrGuidBldr* \[ no\]
+*bstrGuidBldr* \[ Em\]
 </dt> <dd>
 
-O **BSTR** do GUID do Construtor a ser invocado. Isso é retornado de [**MapToPropertyBuilder**](iprovidepropertybuilder-mappropertytobuilder.md).
+O **BSTR** do GUID do construtor a ser invocado. Isso é retornado de [**MapToPropertyBuilder.**](iprovidepropertybuilder-mappropertytobuilder.md)
 
 </dd> <dt>
 
-*pdispApp* \[ no\]
+*pdispApp* \[ Em\]
 </dt> <dd>
 
-Defina como **nulo**.
+Definido como **NULL.**
 
 </dd> <dt>
 
-*hwndBldrOwner* \[ no\]
+*hwndBldrOwner* \[ Em\]
 </dt> <dd>
 
-Um identificador para a janela do construtor pop-up pai.
+Um alça para a janela pai do construtor pop-up.
 
 </dd> <dt>
 
-*pvarValue* \[ entrada, saída\]
+*pvarValue* \[ in, out\]
 </dt> <dd>
 
-O valor atual da propriedade. Esse valor pode ser modificado pelo objeto e alterado para o novo valor se *pbActionCommitted* for **true**.
+O valor atual da propriedade. Esse valor poderá ser modificado pelo objeto e será alterado para o novo valor se *pbActionCommitted* for **TRUE.**
 
 </dd> <dt>
 
 *pbActionCommitted* \[ out, retval\]
 </dt> <dd>
 
-Um valor que indica se o Construtor executou uma ação no objeto. Pode ser usado quando um usuário modifica algo e, em seguida, pressiona OK na caixa de diálogo Construtor de pop-ups.
+Um valor que indica se o construtor realizou uma ação no objeto . Pode ser usado quando um usuário modifica algo e, em seguida, pressiona OK na caixa de diálogo do construtor pop-up.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna um valor **HRESULT** .
+Retorna um **valor HRESULT.**
 
 ## <a name="requirements"></a>Requisitos
 

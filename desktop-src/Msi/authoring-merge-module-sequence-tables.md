@@ -1,5 +1,5 @@
 ---
-description: Inclua as tabelas MergeModuleSequence no arquivo .msm se o módulo de mesclagem tiver que modificar as tabelas de sequência de ação do arquivo .msi destino. Mesclar não adiciona essas tabelas ao arquivo .msi dados. Essas tabelas ocorrem apenas em módulos de mesclagem.
+description: Inclua as tabelas MergeModuleSequence no arquivo .msm se o módulo de mesclagem tiver que modificar as tabelas de sequência de ação do arquivo .msi destino. A mesclação não adiciona essas tabelas ao arquivo .msi dados. Essas tabelas ocorrem apenas em módulos de mesclagem.
 ms.assetid: 9efb75d2-43f9-404c-8e7f-918d056190cf
 title: Como autorar tabelas de sequência de módulo de mesclagem
 ms.topic: article
@@ -13,7 +13,7 @@ ms.locfileid: "118381181"
 ---
 # <a name="authoring-merge-module-sequence-tables"></a>Como autorar tabelas de sequência de módulo de mesclagem
 
-Inclua as tabelas MergeModuleSequence no arquivo .msm se [](s-gly.md) o módulo de mesclagem deve modificar as tabelas de sequência de ação do arquivo .msi destino. Mesclar não adiciona essas tabelas ao arquivo .msi dados. Essas tabelas ocorrem apenas em módulos de mesclagem.
+Inclua as tabelas MergeModuleSequence no arquivo .msm se [](s-gly.md) o módulo de mesclagem tiver que modificar as tabelas de sequência de ação do arquivo .msi destino. A mesclação não adiciona essas tabelas ao arquivo .msi dados. Essas tabelas ocorrem apenas em módulos de mesclagem.
 
 Se alguma das tabelas ModuleSequence estiver presente em um arquivo .msm, uma cópia vazia da tabela de sequência do instalador correspondente também deverá ser autor no módulo de mesclagem. Por exemplo, se um módulo de mesclagem contiver uma tabela ModuleAdminExecuteSequence, o módulo de mesclagem também deverá incluir uma tabela AdminExecuteSequence vazia. Durante uma mesclagem, essas tabelas vazias fornecem à ferramenta de mesclagem as diretrizes de esquema necessárias.
 
@@ -53,7 +53,7 @@ Se uma ação que retorna um sinalizador de encerramento for inserida na coluna 
 
  
 
-A coluna BaseAction pode conter uma ação padrão, uma ação personalizada especificada na tabela de ação personalizada do módulo de mesclagem ou uma caixa de diálogo especificada na tabela de diálogo do módulo. A coluna BaseAction é uma chave na coluna Ação desta tabela. Ele não pode ser uma chave estrangeira em outra tabela de mesclagem ou tabela no arquivo .msi. Isso significa que cada ação padrão, ação personalizada ou caixa de diálogo listada na coluna BaseAction também deve ser listada na coluna Ação de outro registro nesta tabela.
+A coluna BaseAction pode conter uma ação padrão, uma ação personalizada especificada na tabela de ação personalizada do módulo de mesclagem ou uma caixa de diálogo especificada na tabela de diálogo do módulo. A coluna BaseAction é uma chave na coluna Ação desta tabela. Ele não pode ser uma chave estrangeira em outra tabela de mesclagem ou tabela no arquivo .msi dados. Isso significa que cada ação padrão, ação personalizada ou caixa de diálogo listada na coluna BaseAction também deve ser listada na coluna Ação de outro registro nesta tabela.
 
  
 

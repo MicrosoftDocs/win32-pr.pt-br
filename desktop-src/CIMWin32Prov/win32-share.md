@@ -1,5 +1,5 @@
 ---
-description: A classe de compartilhamento do Win32 \_ representa um recurso compartilhado em um sistema de computador executando o Windows. Isso pode ser uma unidade de disco, uma impressora, uma comunicação entre processos ou outro dispositivo compartilhável. Para obter mais informações sobre como recuperar classes WMI, consulte Recuperando uma classe.
+description: A classe de compartilhamento do Win32 \_ representa um recurso compartilhado em um sistema de computador que executa o Windows. Isso pode ser uma unidade de disco, uma impressora, uma comunicação entre processos ou outro dispositivo compartilhável. Para obter mais informações sobre como recuperar classes WMI, consulte Recuperando uma classe.
 ms.assetid: 2d47b726-a0fe-47f3-9e96-d1d507655e56
 ms.tgt_platform: multiple
 title: Classe Win32_Share
@@ -24,16 +24,16 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: e871880da5aa9819de4a9eaaf3c6f074bd198d23
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 258116c3d6f01db938033056069aa036a3eaad23e44b31d80838ad26f570faa7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104089456"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117834147"
 ---
 # <a name="win32_share-class"></a>\_Classe de compartilhamento Win32
 
-A classe de **\_ compartilhamento do Win32** representa um recurso compartilhado em um sistema de computador executando o Windows. Isso pode ser uma unidade de disco, uma impressora, uma comunicação entre processos ou outro dispositivo compartilhável. Para obter mais informações sobre como recuperar classes WMI, consulte [recuperando uma classe](../wmisdk/retrieving-a-class.md).
+A classe de **\_ compartilhamento do Win32** representa um recurso compartilhado em um sistema de computador que executa o Windows. Isso pode ser uma unidade de disco, uma impressora, uma comunicação entre processos ou outro dispositivo compartilhável. Para obter mais informações sobre como recuperar classes WMI, consulte [recuperando uma classe](../wmisdk/retrieving-a-class.md).
 
 A sintaxe a seguir é simplificada do código MOF (Managed Object Format) e inclui todas as propriedades herdadas. As propriedades e os métodos estão em ordem alfabética, não em ordem de MOF.
 
@@ -71,7 +71,7 @@ A classe de **\_ compartilhamento do Win32** tem esses métodos.
 
 | Método                                                             | Descrição                                                                                                                                                                                                         |
 |:-------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**Criada**](create-method-in-class-win32-share.md)               | Método de classe que inicia o compartilhamento para um recurso de servidor.<br/>                                                                                                                                               |
+| [**Criar**](create-method-in-class-win32-share.md)               | Método de classe que inicia o compartilhamento para um recurso de servidor.<br/>                                                                                                                                               |
 | [**Excluir**](delete-method-in-class-win32-share.md)               | Método de classe que exclui um nome de compartilhamento da lista de recursos compartilhados de um servidor, desconectando as conexões com o recurso compartilhado.<br/>                                                                       |
 | [**GetAccessMask**](getaccessmask-method-in-class-win32-share.md) | Retorna os direitos de acesso ao compartilhamento mantido pelo usuário ou grupo em cujo nome a instância é retornada. Você deve usar esse método no lugar da propriedade **AccessMask** , que é sempre **NULL**.<br/> |
 | [**SetShareInfo**](setshareinfo-method-in-class-win32-share.md)   | Método de classe que define os parâmetros de um recurso compartilhado.<br/>                                                                                                                                              |
@@ -200,9 +200,9 @@ Tipo de acesso: Somente leitura
 Qualificadores: [**Key**](../wmisdk/key-qualifier.md), [**override**](../wmisdk/standard-qualifiers.md) ("Name"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("win32api \| Network Management estruturas \| [**share \_ info \_ 1**](/windows/win32/api/lmshare/ns-lmshare-share_info_1) \| shi1 \_ NetName")
 </dt> </dl>
 
-Alias fornecido a um caminho configurado como um compartilhamento em um sistema de computador executando o Windows.
+Alias fornecido a um caminho configurado como um compartilhamento em um sistema de computador executando Windows.
 
-Windows 2008 exemplo: " \\ Server01 \\ Public"-o windows Server 2008 requer que você coloque o UNC no nome.
+Windows 2008 exemplo: " \\ SERVER01 \\ public"-Windows Server 2008 requer que você coloque o UNC no nome.
 
 </dd> <dt>
 
@@ -218,7 +218,7 @@ Tipo de acesso: Somente leitura
 Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("estruturas de gerenciamento de rede do win32api \| \| [**compartilham \_ informações \_ 502**](/windows/win32/api/lmshare/ns-lmshare-share_info_502) \| shi502 \_ caminho")
 </dt> </dl>
 
-Caminho local do compartilhamento do Windows.
+caminho Local do compartilhamento de Windows.
 
 Exemplo: "C: \\ arquivos de programas"
 

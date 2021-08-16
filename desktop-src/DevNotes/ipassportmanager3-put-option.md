@@ -12,12 +12,12 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 52a1324c4b1a04a207b5bccac1a95bcd060be8ca
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 92a1c432df3f3948a85205e26da64073722ba84dd365ebdcaccf3b80521c517c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103920157"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117827170"
 ---
 # <a name="ipassportmanager3put_option-method"></a>Método de opção IPassportManager3::p UT \_
 
@@ -58,7 +58,7 @@ Uma **variante** (VT \_ bool) que especifica o novo valor para a opção. Esse v
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna S \_ OK quando o método for bem sucedido.
 

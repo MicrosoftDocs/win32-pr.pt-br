@@ -4,12 +4,12 @@ ms.assetid: E1A7B1B0-2879-452E-9EBB-73F02B932200
 title: Como habilitar o preenchimento automático manualmente
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: aee4b327c6ccdd62fd921c56cfb046edb8527bc2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c7df686e4c5a4a6e96b1faf82e4926dffc73398b360e3e6235d6a61451eae189
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104967905"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117859703"
 ---
 # <a name="how-to-enable-autocomplete-manually"></a>Como habilitar o preenchimento automático manualmente
 
@@ -126,7 +126,7 @@ As etapas a seguir mostram como criar e inicializar um objeto de preenchimento a
 
 ### <a name="creating-a-compound-autocomplete-object"></a>Criando um objeto de preenchimento automático composto
 
-Um objeto de preenchimento automático composto corresponde A cadeias de caracteres de várias fontes. Por exemplo, a barra de endereços do Windows Internet Explorer usa um objeto de preenchimento automático composto, pois o usuário pode começar a digitar o nome de um arquivo ou uma URL. A maioria das etapas envolvidas na criação de um objeto de preenchimento automático composto é idêntica às etapas em "criando um objeto de AutoCompletamento simples". Essas etapas são indicadas como tal.
+Um objeto de preenchimento automático composto corresponde A cadeias de caracteres de várias fontes. por exemplo, a barra de endereços do Windows Internet Explorer usa um objeto de preenchimento automático composto, pois o usuário pode começar a digitar o nome de um arquivo ou uma URL. A maioria das etapas envolvidas na criação de um objeto de preenchimento automático composto é idêntica às etapas em "criando um objeto de AutoCompletamento simples". Essas etapas são indicadas como tal.
 
 1.  Crie o objeto de preenchimento automático. Isso é o mesmo que a etapa 1 acima.
 

@@ -13,12 +13,12 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: 75fc151e-5b9e-476b-b4e5-b848917357a8
-ms.openlocfilehash: 55f8062b71e553ec5ceefa413b45f439874744b8
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: fe2fbaa1bad61ac9c22d36919e49cf493a26a778a8e97d69d1b200c0c62205e5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109841757"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117857715"
 ---
 # <a name="shell-object"></a>Objeto shell
 
@@ -63,41 +63,41 @@ O **objeto** Shell tem esses métodos.
 </tr>
 <tr class="even">
 <td style="text-align: left;"><a href="shell-cascadewindows.md"><strong>CascadeWindows</strong></a></td>
-<td style="text-align: left;">Em cascata todas as janelas na área de trabalho. Esse método tem o mesmo efeito que clicar com o botão direito do mouse na barra de tarefas e selecionar <strong>Cascata do Windows.</strong><br/></td>
+<td style="text-align: left;">Em cascata todas as janelas na área de trabalho. Esse método tem o mesmo efeito que clicar com o botão direito do mouse na barra de tarefas e selecionar <strong>Cascata Windows</strong>.<br/></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><a href="shell-controlpanelitem.md"><strong>ControlPanelItem</strong></a></td>
 <td style="text-align: left;">Executa o aplicativo Painel de Controle (*.cpl) especificado. Se o aplicativo já estiver aberto, ele ativará a instância em execução. <br/>
 <blockquote>
 <p>[!Note]<br />
-A partir do Windows Vista, a maioria dos aplicativos do painel de controle são itens do Shell e não pode ser aberta com essa função. Para abrir esses aplicativos do painel de controle, passe o nome canônico para control.exe. Por exemplo:</p>
+A partir Windows Vista, a maioria Painel de Controle aplicativos são itens do Shell e não podem ser abertos com essa função. Para abrir esses Painel de Controle aplicativos, passe o nome canônico para control.exe. Por exemplo:</p>
 <pre class="syntax" data-space="preserve"><code>control.exe /name Microsoft.Personalization</code></pre>
 </blockquote>
 <br/></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><a href="shell-ejectpc.md"><strong>EjectPC</strong></a></td>
-<td style="text-align: left;">Ejeta o computador de sua estação de encaixe. Isso é o mesmo que clicar no menu <strong>Iniciar</strong> e selecionar <strong>Ejetar PC</strong>se o seu computador oferecer suporte a esse comando.<br/></td>
+<td style="text-align: left;"><a href="shell-ejectpc.md"><strong>EjetoPC</strong></a></td>
+<td style="text-align: left;">Ejeta o computador de sua estação de encaixe. Isso é o mesmo que clicar no menu <strong>Iniciar</strong> e selecionar <strong>ejetar PC</strong>se o computador dá suporte a esse comando.<br/></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><a href="shell-explore.md"><strong>Apresenta</strong></a></td>
-<td style="text-align: left;">Abre uma pasta especificada em uma janela do Windows Explorer.<br/></td>
+<td style="text-align: left;"><a href="shell-explore.md"><strong>Explorar</strong></a></td>
+<td style="text-align: left;">Abre uma pasta especificada em uma janela Windows Explorer.<br/></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><a href="shell-explorerpolicy.md"><strong>ExplorerPolicy</strong></a></td>
-<td style="text-align: left;">Obtém o valor de uma política especificada do Internet Explorer.<br/></td>
+<td style="text-align: left;">Obtém o valor de uma política Internet Explorer especificada.<br/></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><a href="shell-filerun.md"><strong>FileRun</strong></a></td>
-<td style="text-align: left;">Exibe a caixa de diálogo <strong>executar</strong> para o usuário. Esse método tem o mesmo efeito que clicar no menu <strong>Iniciar</strong> e selecionar <strong>executar</strong>.<br/></td>
+<td style="text-align: left;">Exibe a <strong>caixa de diálogo</strong> Executar para o usuário. Esse método tem o mesmo efeito que clicar no menu <strong>Iniciar</strong> e selecionar <strong>Executar</strong>.<br/></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><a href="shell-findcomputer.md"><strong>FindComputer</strong></a></td>
-<td style="text-align: left;">Exibe a caixa de diálogo <strong>resultados da pesquisa: computadores</strong> . A caixa de diálogo mostra o resultado da pesquisa de um computador especificado.<br/></td>
+<td style="text-align: left;">Exibe a caixa <strong>de diálogo Resultados da Pesquisa:</strong> Computadores. A caixa de diálogo mostra o resultado da pesquisa de um computador especificado.<br/></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><a href="shell-findfiles.md"><strong>FindFiles</strong></a></td>
-<td style="text-align: left;">Exibe a caixa de diálogo <strong>localizar: todos os arquivos</strong> . Isso é o mesmo que clicar no menu <strong>Iniciar</strong> e selecionar <strong>Pesquisar</strong> (ou seu equivalente em sistemas anteriores ao Windows XP).<br/></td>
+<td style="text-align: left;">Exibe a caixa <strong>de diálogo Encontrar: Todos os</strong> Arquivos. Isso é o mesmo que clicar no <strong>menu</strong> Iniciar e, em seguida, selecionar <strong>Pesquisar</strong> (ou seu equivalente em sistemas anteriores Windows XP.<br/></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><a href="/windows/desktop/shell/shell-findprinter"><strong>FindPrinter</strong></a></td>
@@ -113,7 +113,7 @@ A partir do Windows Vista, a maioria dos aplicativos do painel de controle são 
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><a href="shell-help.md"><strong>Ajuda</strong></a></td>
-<td style="text-align: left;">Exibe o windows Centro de Ajuda e Suporte. Esse método tem o mesmo efeito que clicar no menu <strong>Iniciar</strong> e selecionar <strong>Ajuda e Suporte.</strong><br/></td>
+<td style="text-align: left;">Exibe o Windows Centro de Ajuda e Suporte. Esse método tem o mesmo efeito que clicar no menu <strong>Iniciar</strong> e selecionar <strong>Ajuda e Suporte.</strong><br/></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><a href="/windows/desktop/shell/shell-isrestricted"><strong>Isrestricted</strong></a></td>
@@ -125,7 +125,7 @@ A partir do Windows Vista, a maioria dos aplicativos do painel de controle são 
 </tr>
 <tr class="even">
 <td style="text-align: left;"><a href="shell-minimizeall.md"><strong>MinimizeAll</strong></a></td>
-<td style="text-align: left;">Minimiza todas as janelas na área de trabalho. Esse método tem o mesmo efeito que clicar com o botão direito do <strong></strong> mouse na barra de tarefas e selecionar Minimizar Todas as <strong>Janelas</strong> em sistemas mais antigos ou clicar no ícone Mostrar Área de Trabalho na área Início Rápido da barra de tarefas no Windows 2000 ou no Windows XP.<br/></td>
+<td style="text-align: left;">Minimiza todas as janelas na área de trabalho. Esse método tem o mesmo efeito que clicar com o botão direito do mouse <strong></strong> na barra de tarefas e selecionar Minimizar Todos <strong>os Windows</strong> em sistemas mais antigos ou clicar no ícone Mostrar Área de Trabalho na área Início Rápido da barra de tarefas no Windows 2000 ou Windows XP.<br/></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><a href="shell-namespace.md"><strong>Namespace</strong></a></td>
@@ -137,23 +137,23 @@ A partir do Windows Vista, a maioria dos aplicativos do painel de controle são 
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><a href="shell-refreshmenu.md"><strong>RefreshMenu</strong></a></td>
-<td style="text-align: left;">Atualiza o conteúdo <strong>do</strong> menu Iniciar. Usado apenas com sistemas anteriores ao Windows XP.<br/></td>
+<td style="text-align: left;">Atualiza o conteúdo <strong>do</strong> menu Iniciar. Usado somente com sistemas anteriores Windows XP.<br/></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><a href="shell-searchcommand.md"><strong>SearchCommand</strong></a></td>
-<td style="text-align: left;">Exibe o painel de pesquisa de aplicativos.<br/></td>
+<td style="text-align: left;">Exibe o painel Pesquisa de Aplicativos.<br/></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><a href="/windows/desktop/shell/shell-servicestart"><strong>Iniciar</strong></a></td>
+<td style="text-align: left;"><a href="/windows/desktop/shell/shell-servicestart"><strong>ServiceStart</strong></a></td>
 <td style="text-align: left;">Inicia um serviço nomeado.<br/></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><a href="/windows/desktop/shell/shell-servicestop"><strong>Parar</strong></a></td>
+<td style="text-align: left;"><a href="/windows/desktop/shell/shell-servicestop"><strong>ServiceStop</strong></a></td>
 <td style="text-align: left;">Interrompe um serviço nomeado.<br/></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><a href="shell-settime.md"><strong>SetTime</strong></a></td>
-<td style="text-align: left;">Exibe a caixa de diálogo <strong>Propriedades de data e hora</strong> . Esse método tem o mesmo efeito que clicar com o botão direito do mouse no relógio na área de status da barra de tarefas e selecionar <strong>Ajustar data/hora</strong>.<br/></td>
+<td style="text-align: left;"><a href="shell-settime.md"><strong>Settime</strong></a></td>
+<td style="text-align: left;">Exibe a caixa <strong>de diálogo Propriedades de Data</strong> e Hora. Esse método tem o mesmo efeito que clicar com o botão direito do mouse no relógio na área de status da barra de tarefas e selecionar <strong>Ajustar Data/Hora.</strong><br/></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><a href="/windows/desktop/shell/shell-shellexecute"><strong>ShellExecute</strong></a></td>
@@ -161,11 +161,11 @@ A partir do Windows Vista, a maioria dos aplicativos do painel de controle são 
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><a href="/windows/desktop/shell/shell-showbrowserbar"><strong>ShowBrowserBar</strong></a></td>
-<td style="text-align: left;">Exibe uma barra de navegador.<br/></td>
+<td style="text-align: left;">Exibe uma barra do navegador.<br/></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><a href="shell-shutdownwindows.md"><strong>ShutdownWindows</strong></a></td>
-<td style="text-align: left;">Exibe a caixa de diálogo <strong>desligar o Windows</strong> . Isso é o mesmo que clicar no menu <strong>Iniciar</strong> e selecionar <strong>desligar</strong>.<br/></td>
+<td style="text-align: left;">Exibe a caixa <strong>Desligar Windows</strong> caixa de diálogo. Isso é o mesmo que clicar no menu <strong>Iniciar</strong> e selecionar <strong>Desligar</strong>.<br/></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><a href="shell-suspend.md"><strong>Suspend</strong></a></td>
@@ -173,11 +173,11 @@ A partir do Windows Vista, a maioria dos aplicativos do painel de controle são 
 </tr>
 <tr class="even">
 <td style="text-align: left;"><a href="shell-tilehorizontally.md"><strong>TileHorizontally</strong></a></td>
-<td style="text-align: left;">Organiza todas as janelas na área de trabalho horizontalmente. Esse método tem o mesmo efeito que clicar com o botão direito do mouse na barra de tarefas e selecionar <strong>janelas de bloco horizontalmente</strong>.<br/></td>
+<td style="text-align: left;">Lado a lado todas as janelas na área de trabalho horizontalmente. Esse método tem o mesmo efeito que clicar com o botão direito do mouse na barra de tarefas e selecionar <strong>Windows Horizontalmente.</strong><br/></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><a href="shell-tilevertically.md"><strong>TileVertically</strong></a></td>
-<td style="text-align: left;">Lado a lado todas as janelas na área de trabalho verticalmente. Esse método tem o mesmo efeito que clicar com o botão direito do mouse na barra de tarefas e selecionar <strong>Janelas lado a lado verticalmente.</strong><br/></td>
+<td style="text-align: left;">Lado a lado todas as janelas na área de trabalho verticalmente. Esse método tem o mesmo efeito que clicar com o botão direito do mouse na barra de tarefas e selecionar <strong>Windows Verticalmente.</strong><br/></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><a href="shell-toggledesktop.md"><strong>ToggleDesktop</strong></a></td>
@@ -185,11 +185,11 @@ A partir do Windows Vista, a maioria dos aplicativos do painel de controle são 
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><a href="shell-trayproperties.md"><strong>TrayProperties</strong></a></td>
-<td style="text-align: left;">Exibe a caixa <strong>de diálogo Propriedades da Barra de Tarefas e Iniciar Menu.</strong> Esse método tem o mesmo efeito que clicar com o botão direito do mouse na barra de tarefas e selecionar <strong>Propriedades</strong>.<br/></td>
+<td style="text-align: left;">Exibe a caixa <strong>de diálogo Propriedades da Barra de Tarefas e Iniciar Menu.</strong> Esse método tem o mesmo efeito de clicar com o botão direito do mouse na barra de tarefas e selecionar <strong>Propriedades</strong>.<br/></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><a href="shell-undominimizeall.md"><strong>UndoMinimizeALL</strong></a></td>
-<td style="text-align: left;">Restaura todas as janelas da área de trabalho para o mesmo estado em que estavam antes do último <a href="shell-minimizeall.md"><strong>comando MinimizeAll.</strong></a> Esse método tem o mesmo efeito que clicar com o botão direito do mouse na <strong></strong> barra de tarefas e selecionar Desfazer Minimizar Todas as <strong>Janelas</strong> em sistemas mais antigos ou um segundo clique no ícone Mostrar Área de Trabalho na área Início Rápido da barra de tarefas no Windows 2000 ou No Windows XP.<br/></td>
+<td style="text-align: left;">Restaura todas as janelas da área de trabalho para o mesmo estado em que estavam antes do último <a href="shell-minimizeall.md"><strong>comando MinimizeAll.</strong></a> Esse método tem o mesmo efeito que clicar com o botão direito do mouse na barra <strong></strong> de tarefas e selecionar Desfazer Minimizar Tudo <strong>Windows em</strong> sistemas mais antigos ou um segundo clique no ícone Mostrar Área de Trabalho na área Início Rápido da barra de tarefas no Windows 2000 ou Windows XP.<br/></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><a href="shell-windows.md"><strong>Windows</strong></a></td>
@@ -231,11 +231,11 @@ O **objeto Shell** tem essas propriedades.
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 2000 Professional, \[ somente aplicativos da área de trabalho do Windows XP\]<br/>                                         |
+| Cliente mínimo com suporte<br/> | Windows 2000 Professional, Windows aplicativos da área de \[ trabalho XP\]<br/>                                         |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                           |
-| Cabeçalho<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                           |
-| INSERI<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                         |
-| DLL<br/>                      | <dl> <dt>Shell32.dll (versão 4,71 ou posterior)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
+| DLL<br/>                      | <dl> <dt>Shell32.dll (versão 4.71 ou posterior)</dt> </dl> |
 
 
 

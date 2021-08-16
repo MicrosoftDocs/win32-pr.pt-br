@@ -1,7 +1,7 @@
 ---
-description: Período de tempo necessário para decodificar a amostra mais recente, em milissegundos.
+description: Tempo necessário para decodificar a amostra mais recente, em milissegundos.
 ms.assetid: e9cac411-f327-4750-9129-0bc2885eedd7
-title: 'Membro CVideoTransformFilter:: m_tDecodeStart (Vtrans. h)'
+title: Membro CVideoTransformFilter::m_tDecodeStart (Vtrans.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 3948b37c2efeb7d21e664da354571c2bdf9ab298
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a162103a8a67cfcb4589c7f030db8ca7d93a89ee6fb7f12f1c0e2a40a4841ef6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105750647"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117821593"
 ---
-# <a name="cvideotransformfilterm_tdecodestart-member"></a>Membro de CVideoTransformFilter:: m \_ tDecodeStart
+# <a name="cvideotransformfilterm_tdecodestart-member"></a>Membro CVideoTransformFilter::m \_ tDecodeStart
 
-Período de tempo necessário para decodificar a amostra mais recente, em milissegundos.
+Tempo necessário para decodificar a amostra mais recente, em milissegundos.
 
 ## <a name="syntax"></a>Syntax
 
@@ -42,8 +42,8 @@ int m_tDecodeStart;
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Vtrans. h (incluir fluxos. h)</dt> </dl>                                                                                    |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Vtrans.h (incluir Fluxos.h)</dt> </dl>                                                                                    |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

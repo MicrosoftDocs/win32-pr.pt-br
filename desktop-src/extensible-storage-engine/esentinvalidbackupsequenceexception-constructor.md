@@ -35,8 +35,8 @@ ms.locfileid: "118494552"
 
 Inicializa uma nova instância da classe EsentInvalidBackupSequenceException.
 
-**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -58,6 +58,6 @@ public EsentInvalidBackupSequenceException()
 
 [Classe EsentInvalidBackupSequenceException](./esentinvalidbackupsequenceexception-class.md)
 
-[Membros EsentInvalidBackupSequenceException](./esentinvalidbackupsequenceexception-members.md)
+[Membros do EsentInvalidBackupSequenceException](./esentinvalidbackupsequenceexception-members.md)
 
-[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)

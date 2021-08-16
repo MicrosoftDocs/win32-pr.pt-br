@@ -15,7 +15,7 @@ ms.locfileid: "118329505"
 
 Esta seção descreve as etapas básicas de mitigação e como planejar a compatibilidade futura do aplicativo enquanto você está tratando quaisquer problemas agora.
 
-Windows Internet Explorer dá suporte aos modelos de Internet Explorer herdados sempre que possível para que os sites que você desenvolve para eles continuem se comportando conforme o esperado em versões mais recentes do Internet Explorer. Começando com Windows Internet Explorer 8, você pode optar por dar suporte a comportamentos herdados selecionando o modo de renderização página a página.
+Windows Internet Explorer dá suporte aos modelos de Internet Explorer herdados sempre que possível para que os sites que você desenvolve para eles continuem se comportando conforme o esperado nas versões mais recentes do Internet Explorer. Começando com Windows Internet Explorer 8, você pode optar por dar suporte a comportamentos herdados selecionando o modo de renderização página a página.
 
 Internet Explorer 8 inclui os seguintes modos de renderização que você pode definir usando o header Compatível com X-UA.
 

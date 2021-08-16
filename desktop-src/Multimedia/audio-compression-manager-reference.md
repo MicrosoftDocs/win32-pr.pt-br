@@ -1,14 +1,14 @@
 ---
-title: Referência do Gerenciador de Compactação de Áudio
-description: Referência do Gerenciador de Compactação de Áudio
+title: Referência do Gerenciador de compactação de áudio
+description: Referência do Gerenciador de compactação de áudio
 ms.assetid: a4e234c7-4dd3-4269-90a5-5de2c8837c0f
 keywords:
 - Windows multimídia, referência do ACM
-- multimídia, referência do ACM
-- áudio multimídia, referência do ACM
-- audio, referência do ACM)
-- gerenciador de compactação de áudio (ACM), referência
-- ACM (gerenciador de compactação de áudio), referência
+- referência de multimídia, ACM
+- áudio de multimídia, referência do ACM
+- áudio, referência do ACM)
+- Gerenciador de compactação de áudio (ACM), referência
+- ACM (Gerenciador de compactação de áudio), referência
 - Referência do ACM, sobre
 - referência para ACM, sobre
 ms.topic: article
@@ -20,15 +20,15 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118375793"
 ---
-# <a name="audio-compression-manager-reference"></a>Referência do Gerenciador de Compactação de Áudio
+# <a name="audio-compression-manager-reference"></a>Referência do Gerenciador de compactação de áudio
 
-Esta seção descreve as funções, estruturas e mensagens associadas ao ACM. Esses elementos são agrupados da seguinte forma.
+Esta seção descreve as funções, as estruturas e as mensagens associadas ao ACM. Esses elementos são agrupados da seguinte maneira.
 
 ## <a name="drivers"></a>Drivers
 
 -   [**acmDriverAdd**](/windows/desktop/api/Msacm/nf-msacm-acmdriveradd)
 -   [**acmDriverClose**](/windows/desktop/api/Msacm/nf-msacm-acmdriverclose)
--   [**ACMDRIVEDRIVETAILS**](/windows/win32/api/msacm/ns-msacm-acmdriverdetails)
+-   [**ACMDRIVERDETAILS**](/windows/win32/api/msacm/ns-msacm-acmdriverdetails)
 -   [**acmDriverEnum**](/windows/desktop/api/Msacm/nf-msacm-acmdriverenum)
 -   [**acmDriverEnumCallback**](/windows/win32/api/msacm/nc-msacm-acmdriverenumcb)
 -   [**acmDriverID**](/windows/desktop/api/Msacm/nf-msacm-acmdriverid)
@@ -64,7 +64,7 @@ Esta seção descreve as funções, estruturas e mensagens associadas ao ACM. Es
 ## <a name="messages"></a>Mensagens
 
 -   [**MM \_ ACM \_ FILTERCHOOSE**](mm-acm-filterchoose.md)
--   [**MM \_ FORMAT \_ ACMCHOOSE**](mm-acm-formatchoose.md)
+-   [**MM \_ ACM \_ FORMATCHOOSE**](mm-acm-formatchoose.md)
 
 ## <a name="streams"></a>Fluxos
 
@@ -88,7 +88,7 @@ Esta seção descreve as funções, estruturas e mensagens associadas ao ACM. Es
 
 <dl> <dt>
 
-[Gerenciador de Compactação de Áudio](audio-compression-manager.md)
+[Gerenciador de compactação de áudio](audio-compression-manager.md)
 </dt> </dl>
 
  

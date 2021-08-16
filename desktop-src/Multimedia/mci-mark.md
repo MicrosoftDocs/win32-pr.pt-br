@@ -1,9 +1,9 @@
 ---
-title: MCI_MARK comando (mmsystem. h)
-description: O \_ comando de marca MCI registra ou apaga marcas que podem ser usadas com o \_ comando MCI Seek para pesquisas de alta velocidade. Os dispositivos VCR reconhecem este comando.
+title: MCI_MARK comando (Mmsystem.h)
+description: O comando MCI MARK registra ou apaga marcas que podem ser usadas com o comando \_ MCI \_ SEEK para pesquisas de alta velocidade. Os dispositivos VCR reconhecem esse comando.
 ms.assetid: 69b17e5b-99a1-4fb9-bc0e-30e772c1f11f
 keywords:
-- MCI_MARK comando Windows multimídia
+- MCI_MARK comando Windows Multimídia
 topic_type:
 - apiref
 api_name:
@@ -21,11 +21,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118374991"
 ---
-# <a name="mci_mark-command"></a>\_Comando de marca MCI
+# <a name="mci_mark-command"></a>Comando MCI \_ MARK
 
-O \_ comando de marca MCI registra ou apaga marcas que podem ser usadas com o comando [MCI \_ Seek](mci-seek.md) para pesquisas de alta velocidade. Os dispositivos VCR reconhecem este comando.
+O comando MCI MARK registra ou apaga marcas que podem ser usadas com o comando \_ [MCI \_ SEEK](mci-seek.md) para pesquisas de alta velocidade. Os dispositivos VCR reconhecem esse comando.
 
-Para enviar esse comando, chame a função [**mciSendCommand**](/previous-versions//dd757160(v=vs.85)) com os parâmetros a seguir.
+Para enviar esse comando, chame a [**função mciSendCommand**](/previous-versions//dd757160(v=vs.85)) com os parâmetros a seguir.
 
 
 ```C++
@@ -50,23 +50,23 @@ Identificador de dispositivo do dispositivo MCI que deve receber a mensagem de c
 
 </dd> <dt>
 
-<span id="dwFlags"></span><span id="dwflags"></span><span id="DWFLAGS"></span>*dwFlags*
+<span id="dwFlags"></span><span id="dwflags"></span><span id="DWFLAGS"></span>*Dwflags*
 </dt> <dd>
 
-\_Notificação MCI, \_ espera MCI ou teste MCI \_ . Para obter informações sobre esses sinalizadores, consulte [os sinalizadores aguardar, notificar e testar](the-wait-notify-and-test-flags.md).
+MCI \_ NOTIFY, MCI \_ WAIT ou MCI \_ TEST. Para obter informações sobre esses sinalizadores, consulte [Os sinalizadores de espera, notificação e teste.](the-wait-notify-and-test-flags.md)
 
 </dd> <dt>
 
 <span id="lpMark"></span><span id="lpmark"></span><span id="LPMARK"></span>*lpMark*
 </dt> <dd>
 
-Ponteiro para uma estrutura de [**\_ \_ parâmetros genéricos do MCI**](mci-generic-parms.md) . (Dispositivos com conjuntos de comandos estendidos podem substituir essa estrutura por uma estrutura específica do dispositivo.)
+Ponteiro para uma [**estrutura \_ \_ PARMS GENÉRICA da MCI.**](mci-generic-parms.md) (Dispositivos com conjuntos de comandos estendidos podem substituir essa estrutura por uma estrutura específica do dispositivo.)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor Retornado
 
-Retornará zero se for bem-sucedido ou um erro de outra forma.
+Retornará zero se for bem-sucedido ou um erro, caso contrário.
 
 ## <a name="remarks"></a>Comentários
 
@@ -74,14 +74,14 @@ Os seguintes sinalizadores adicionais se aplicam a dispositivos VCR:
 
 <dl> <dt>
 
-<span id="MCI_VCR_MARK_ERASE"></span><span id="mci_vcr_mark_erase"></span>\_sinalização de videocassete MCI \_ \_ apagar
+<span id="MCI_VCR_MARK_ERASE"></span><span id="mci_vcr_mark_erase"></span>MCI \_ VCR \_ MARK \_ ERASE
 </dt> <dd>
 
-Apaga uma marca na posição atual, se houver uma.
+Apaga uma marca na posição atual se houver uma.
 
 </dd> <dt>
 
-<span id="MCI_VCR_MARK_WRITE"></span><span id="mci_vcr_mark_write"></span>\_gravação de \_ marca de VCR MCI \_
+<span id="MCI_VCR_MARK_WRITE"></span><span id="mci_vcr_mark_write"></span>MCI \_ VCR \_ MARK \_ WRITE
 </dt> <dd>
 
 Grava uma marca na posição atual.
@@ -96,7 +96,7 @@ Grava uma marca na posição atual.
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                                                |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                      |
-| Cabeçalho<br/>                   | <dl> <dt>Mmsystem. h (incluir Windows. h)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Mmsystem.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -104,7 +104,7 @@ Grava uma marca na posição atual.
 
 <dl> <dt>
 
-[MCI](mci.md)
+[Mci](mci.md)
 </dt> <dt>
 
 [Comandos MCI](mci-commands.md)

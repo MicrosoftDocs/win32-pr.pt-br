@@ -16,12 +16,12 @@ api_location:
 - Ext-MS-Win-GDI-Internal-Desktop-L1-1-0.dll
 - GDI32.dll
 - GDI32Full.dll
-ms.openlocfilehash: 80effb32af18754fb0b36ac9be40241066d05b10
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 005ead82b8ee0bfba46f8c4736b8cfe88234d2940eb6666d539a85ab21d0abaf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104457007"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117828017"
 ---
 # <a name="ntgdiddgetmocompguids-function"></a>Função NtGdiDdGetMoCompGuids
 
@@ -59,7 +59,7 @@ Ponteiro para uma [**estrutura \_ GETMOCOMPGUIDSDATA do DD**](/windows/win32/api
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 **NtGdiDdGetMoCompGuids** retorna um dos seguintes códigos de retorno de chamada.
 

@@ -1,13 +1,13 @@
 ---
-title: Controles Mixer de áudio personalizados
-description: Controles Mixer de áudio personalizados
+title: controles de áudio Mixer personalizados
+description: controles de áudio Mixer personalizados
 ms.assetid: 6ab7a016-a4c1-4eef-ba97-7031d7425ee2
 keywords:
-- áudio multimídia, controles de mixer
+- áudio de multimídia, controles de mixer
 - áudio, controles de mixer
 - mixers de áudio, controles
 - mixers de áudio, controles personalizados
-- mixers,controls
+- mixers, controles
 - mixers, controles personalizados
 ms.topic: article
 ms.date: 05/31/2018
@@ -18,9 +18,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118375685"
 ---
-# <a name="audio-mixer-custom-controls"></a>Controles Mixer de áudio personalizados
+# <a name="audio-mixer-custom-controls"></a>controles de áudio Mixer personalizados
 
-Controles personalizados são os mais genéricos dos controles de mixer. Esses controles permitem que um driver de mixer defina as características do controle e, por implicação, a representação visual do controle.
+Os controles personalizados são os mais genéricos dos controles do mixer. Esses controles permitem que um driver de mixer defina as características do controle e, por implicação, a representação visual do controle.
 
  
 

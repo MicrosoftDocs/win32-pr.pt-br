@@ -1,35 +1,35 @@
 ---
-description: Um aplicativo de mídia que deseja fornecer uma experiência de pato personalizada deve escutar as notificações de eventos quando um fluxo de comunicação é aberto ou fechado no sistema.
+description: Um aplicativo de mídia que deseja fornecer uma experiência de replicação personalizada deve escutar as notificações de eventos quando um fluxo de comunicação é aberto ou fechado no sistema.
 ms.assetid: 709ad912-6b03-4ad3-bc47-ad8b6bd6de45
-title: Obtendo eventos de pato
+title: Obter eventos de desaqueamento
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2e45557c25570a89452a39683a0b6732b9632129
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: a4a5869aa02a64ef3b7d035743b9bee3c91d295448c4d89d659862c5efc81d89
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104500968"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117828257"
 ---
-# <a name="getting-ducking-events"></a>Obtendo eventos de pato
+# <a name="getting-ducking-events"></a>Obter eventos de desaqueamento
 
-Um aplicativo de mídia que deseja fornecer uma experiência de pato personalizada deve escutar as notificações de eventos quando um fluxo de comunicação é aberto ou fechado no sistema. A implementação personalizada pode ser fornecida usando MediaFoundation, DirectShow ou DirectSound, que usam as APIs de áudio principais. Um cliente WASAPI direto também pode substituir o tratamento padrão se ele sabe quando a sessão de comunicação começa e termina.
+Um aplicativo de mídia que deseja fornecer uma experiência de replicação personalizada deve escutar as notificações de eventos quando um fluxo de comunicação é aberto ou fechado no sistema. A implementação personalizada pode ser fornecida usando MediaFoundation, DirectShow ou DirectSound, que usam as APIs de Áudio Principal. Um cliente WASAPI direto também poderá substituir o tratamento padrão se souber quando a sessão de comunicação é iniciada e termina.
 
-Para fornecer uma implementação personalizada, um aplicativo de mídia precisa obter notificações do sistema quando um aplicativo de comunicação inicia ou termina um fluxo de comunicação. O aplicativo de mídia deve implementar a interface [**IAudioVolumeDuckNotification**](/windows/desktop/api/AudioPolicy/nn-audiopolicy-iaudiovolumeducknotification) e registrar a implementação com o sistema de áudio. Após o registro bem-sucedido, o aplicativo de mídia recebe notificações de eventos na forma de retornos de chamada por meio dos métodos na interface. Para obter mais informações, consulte [considerações de implementação para notificações de pato](handling-audio-ducking-events-from-communication-devices.md).
+Para fornecer uma implementação personalizada, um aplicativo de mídia precisa obter notificações do sistema quando um aplicativo de comunicação inicia ou encerra um fluxo de comunicação. O aplicativo de mídia deve implementar a interface [**IAudioVolumeDuckNotification**](/windows/desktop/api/AudioPolicy/nn-audiopolicy-iaudiovolumeducknotification) e registrar a implementação com o sistema de áudio. Após o registro bem-sucedido, o aplicativo de mídia recebe notificações de eventos na forma de retornos de chamada por meio dos métodos na interface . Para obter mais informações, consulte [Considerações de implementação para notificações de replicação.](handling-audio-ducking-events-from-communication-devices.md)
 
-Para enviar notificações de pato, o sistema de áudio deve saber qual sessão de áudio está ouvindo os eventos de pato. Cada sessão de áudio é identificada exclusivamente com um GUID — identificador de instância de sessão. O Gerenciador de sessão permite que um aplicativo Obtenha informações sobre a sessão, como o título da sessão de áudio, o estado de renderização e o identificador da instância de sessão. O identificador pode ser recuperado usando a interface de controle de política, [**IAudioSessionControl2**](/windows/desktop/api/audiopolicy/nn-audiopolicy-iaudiosessioncontrol2).
+Para enviar notificações de ressaltos, o sistema de áudio deve saber qual sessão de áudio está escutando os eventos de ressaltos. Cada sessão de áudio é identificada exclusivamente com um GUID – identificador de instância de sessão. O gerenciador de sessão permite que um aplicativo receba informações sobre a sessão, como o título da sessão de áudio, o estado de renderização e o identificador da instância de sessão. O identificador pode ser recuperado usando a interface de controle de política, [**IAudioSessionControl2**](/windows/desktop/api/audiopolicy/nn-audiopolicy-iaudiosessioncontrol2).
 
-As etapas a seguir resumem o processo de obtenção do identificador de instância de sessão do aplicativo de mídia:
+As etapas a seguir resumem o processo de obter o identificador de instância de sessão do aplicativo de mídia:
 
-1.  Instancie o enumerador de dispositivo e use-o para obter uma referência ao ponto de extremidade do dispositivo que o aplicativo de mídia está usando para renderizar o fluxo de não comunicação.
-2.  Ative o Gerenciador de sessão no ponto de extremidade do dispositivo e obtenha uma referência para a interface [**IAudioSessionManager2**](/windows/desktop/api/audiopolicy/nn-audiopolicy-iaudiosessionmanager2) do Gerenciador de sessão.
-3.  Usando o ponteiro [**IAudioSessionManager2**](/windows/desktop/api/audiopolicy/nn-audiopolicy-iaudiosessionmanager2) , obtenha uma referência à interface [**IAudioSessionControl**](/windows/desktop/api/Audiopolicy/nn-audiopolicy-iaudiosessioncontrol) do Gerenciador de sessão.
-4.  Consulte o [**IAudioSessionControl2**](/windows/desktop/api/audiopolicy/nn-audiopolicy-iaudiosessioncontrol2) da interface [**IAudioSessionControl**](/windows/desktop/api/Audiopolicy/nn-audiopolicy-iaudiosessioncontrol) .
-5.  Chame [**IAudioSessionControl2:: GetSessionInstanceIdentifier**](/windows/desktop/api/audiopolicy/nf-audiopolicy-iaudiosessioncontrol2-getsessioninstanceidentifier) e recupere uma cadeia de caracteres que contém o identificador de sessão para a sessão de áudio atual.
+1.  Insinue o enumerador de dispositivo e use-o para obter uma referência ao ponto de extremidade do dispositivo que o aplicativo de mídia está usando para renderizar o fluxo de não comunicação.
+2.  Ative o gerenciador de sessão do ponto de extremidade do dispositivo e receba uma referência à interface [**IAudioSessionManager2**](/windows/desktop/api/audiopolicy/nn-audiopolicy-iaudiosessionmanager2) do gerenciador de sessão.
+3.  Usando o ponteiro [**IAudioSessionManager2,**](/windows/desktop/api/audiopolicy/nn-audiopolicy-iaudiosessionmanager2) obter uma referência à interface [**IAudioSessionControl**](/windows/desktop/api/Audiopolicy/nn-audiopolicy-iaudiosessioncontrol) do gerenciador de sessão.
+4.  Consulte o [**IAudioSessionControl2**](/windows/desktop/api/audiopolicy/nn-audiopolicy-iaudiosessioncontrol2) da interface [**IAudioSessionControl.**](/windows/desktop/api/Audiopolicy/nn-audiopolicy-iaudiosessioncontrol)
+5.  Chame [**IAudioSessionControl2::GetSessionInstanceIdentifier**](/windows/desktop/api/audiopolicy/nf-audiopolicy-iaudiosessioncontrol2-getsessioninstanceidentifier) e recupere uma cadeia de caracteres que contém o identificador de sessão para a sessão de áudio atual.
 
-Para obter notificações de patos sobre fluxos de comunicação, o aplicativo de mídia chama [**IAudioSessionManager2:: RegisterDuckNotification**](/windows/desktop/api/audiopolicy/nf-audiopolicy-iaudiosessionmanager2-registerducknotification). O aplicativo de mídia fornece seu identificador de instância de sessão para o sistema de áudio e um ponteiro para a implementação de [**IAudioVolumeDuckNotification**](/windows/desktop/api/AudioPolicy/nn-audiopolicy-iaudiovolumeducknotification) . O aplicativo agora pode receber notificação de eventos quando um fluxo é aberto no dispositivo de comunicação. Para parar de receber a notificação, o aplicativo de mídia deve chamar [**IAudioSessionManager2:: UnregisterDuckNotification**](/windows/desktop/api/audiopolicy/nf-audiopolicy-iaudiosessionmanager2-unregisterducknotification).
+Para obter notificações de redução sobre fluxos de comunicação, o aplicativo de mídia chama [**IAudioSessionManager2::RegisterDuckNotification**](/windows/desktop/api/audiopolicy/nf-audiopolicy-iaudiosessionmanager2-registerducknotification). O aplicativo de mídia fornece seu identificador de instância de sessão para o sistema de áudio e um ponteiro para a implementação [**IAudioVolumeDuckNotification.**](/windows/desktop/api/AudioPolicy/nn-audiopolicy-iaudiovolumeducknotification) O aplicativo agora pode receber notificação de eventos quando um fluxo é aberto no dispositivo de comunicação. Para interromper a notificação, o aplicativo de mídia deve chamar [**IAudioSessionManager2::UnregisterDuckNotification**](/windows/desktop/api/audiopolicy/nf-audiopolicy-iaudiosessionmanager2-unregisterducknotification).
 
-O código a seguir mostra como um aplicativo pode se registrar para obter notificações de pato. A classe CMediaPlayer é definida em [considerações de implementação para as notificações de pato](handling-audio-ducking-events-from-communication-devices.md). O exemplo [DuckingMediaPlayer](duckingmediaplayer.md) implementa essa funcionalidade.
+O código a seguir mostra como um aplicativo pode se registrar para receber notificações de replicação. A classe CMediaPlayer é definida em [Considerações de implementação para notificações de ressalto.](handling-audio-ducking-events-from-communication-devices.md) O [exemplo de DuckingMediaPlayer](duckingmediaplayer.md) implementa essa funcionalidade.
 
 
 ```C++
@@ -139,16 +139,16 @@ HRESULT CMediaPlayer::DuckingOptOut(bool DuckingOptOutChecked)
 [Usando um dispositivo de comunicação](using-the-communication-device.md)
 </dt> <dt>
 
-[Experiência de pato padrão](stream-attenuation.md)
+[Experiência padrão de ressalvamento](stream-attenuation.md)
 </dt> <dt>
 
-[Desabilitando a experiência de pato padrão](disabling-the-ducking-experience.md)
+[Desabilitando a experiência de ressalvamento padrão](disabling-the-ducking-experience.md)
 </dt> <dt>
 
-[Fornecendo um comportamento personalizado de pato](providing-a-custom-ducking-experience.md)
+[Fornecendo um comportamento de desaqueamento personalizado](providing-a-custom-ducking-experience.md)
 </dt> <dt>
 
-[Considerações de implementação para notificações de pato](handling-audio-ducking-events-from-communication-devices.md)
+[Considerações de implementação para notificações de replicação](handling-audio-ducking-events-from-communication-devices.md)
 </dt> </dl>
 
  

@@ -8,12 +8,12 @@ keywords:
 - WWS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0362c2a1bf2149e2cc0c0cb2b574b3e8e7fe1c4d
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: ae1cc1a9c1d54291b1bbe65a335c19e624b892d3585d1a7998e1581a2e2537a2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105768248"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117841726"
 ---
 # <a name="httpcalculatorclientexample"></a>HttpCalculatorClientExample
 
@@ -323,9 +323,9 @@ clean:
     $(CLEANUP)
 ```
 
- 
+ 
 
- 
+ 
 
 
 

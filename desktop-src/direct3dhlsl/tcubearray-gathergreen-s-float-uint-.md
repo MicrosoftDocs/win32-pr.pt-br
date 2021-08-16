@@ -1,9 +1,9 @@
 ---
-title: Função TextureCubeArray::GatherGreen(S,float,uint)
-description: Retorna os componentes verdes dos quatro valores de texel que seriam usados em uma operação de filtragem bi-linear, juntamente com o status de mapeamento de peças. | Função TextureCubeArray::GatherGreen(S,float,uint)
+title: 'Função TextureCubeArray:: GatherGreen (S, float, uint)'
+description: 'Retorna os componentes verdes dos quatro valores de Texel que seriam usados em uma operação de filtragem de bi-linear, juntamente com o status de mapeamento de bloco. | Função TextureCubeArray:: GatherGreen (S, float, uint)'
 ms.assetid: 0DEB1810-F2C7-4097-B2D3-20ED4E297561
 keywords:
-- Função GatherGreen HLSL
+- HLSL da função GatherGreen
 topic_type:
 - apiref
 api_name:
@@ -20,9 +20,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118506495"
 ---
-# <a name="texturecubearraygathergreensfloatuint-function"></a>Função TextureCubeArray::GatherGreen(S,float,uint)
+# <a name="texturecubearraygathergreensfloatuint-function"></a>Função TextureCubeArray:: GatherGreen (S, float, uint)
 
-Retorna os componentes verdes dos quatro valores de texel que seriam usados em uma operação de filtragem bi-linear, juntamente com o status de mapeamento de peças.
+Retorna os componentes verdes dos quatro valores de Texel que seriam usados em uma operação de filtragem de bi-linear, juntamente com o status de mapeamento de bloco.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -44,27 +44,27 @@ TemplateType GatherGreen(
 *S* \[ em\]
 </dt> <dd>
 
-Tipo: **SamplerState**
+Tipo: **samplestate**
 
 O índice de amostra baseado em zero.
 
 </dd> <dt>
 
-*Localização* \[ Em\]
+*Local* \[ do no\]
 </dt> <dd>
 
 Tipo: **float**
 
-As coordenadas de exemplo (u,v).
+As coordenadas de exemplo (u, v).
 
 </dd> <dt>
 
-*Status* \[ out\]
+*Status* \[ do fora\]
 </dt> <dd>
 
 Tipo: **uint**
 
-O status da operação. Você não pode acessar o status diretamente; Em vez disso, passe o status para a [**função intrínseca CheckAccessFullyMapped.**](checkaccessfullymapped.md) **CheckAccessFullyMapped** retornará **TRUE** se todos os valores  da operação de **Exemplo,** **Coletar** ou Carregar correspondente acessarem blocos mapeados em um recurso lado a [lado.](/windows/desktop/direct3d11/direct3d-11-2-features) Se algum valor tiver sido retirado de um tile não mapeado, **CheckAccessFullyMapped** retornará **FALSE.**
+O status da operação. Você não pode acessar o status diretamente; em vez disso, passe o status para a função intrínseca [**CheckAccessFullyMapped**](checkaccessfullymapped.md) . **CheckAccessFullyMapped** retornará **true** se todos os valores da operação de **amostra**, **coleta** ou **carregamento** correspondente acessaram os blocos mapeados em um recurso de bloco ao [lado](/windows/desktop/direct3d11/direct3d-11-2-features). Se qualquer valor tiver sido tirado de um bloco não mapeado, **CheckAccessFullyMapped** retornará **false**.
 
 </dd> </dl>
 
@@ -76,13 +76,13 @@ Um valor de quatro componentes cujo tipo é o mesmo que o tipo de modelo.
 
 ## <a name="remarks"></a>Comentários
 
-As amostras de textura podem ser usadas para interpolação bilinear.
+Os exemplos de textura podem ser usados para interpolação bilinear.
 
 Essa função tem suporte para os seguintes tipos de sombreadores:
 
 
 
-| Vértice | Casco | Domínio | Geometry | Pixel | Computação |
+| Vértice | Envoltória | Domínio | Geometry | 16x16 | Computação |
 |--------|------|--------|----------|-------|---------|
 | x      | x    | x      | x        | x     | x       |
 

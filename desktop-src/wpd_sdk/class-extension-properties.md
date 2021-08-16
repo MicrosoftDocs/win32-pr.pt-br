@@ -1,5 +1,5 @@
 ---
-description: Os dispositivos portáteis do Windows oferecem suporte às seguintes propriedades de extensão de classe.
+description: Windows Os dispositivos portáteis oferecem suporte às seguintes propriedades de extensão de classe.
 ms.assetid: 9b8983ba-5824-495d-868f-fd22b98e1954
 title: Propriedades de extensão de classe (PortableDevice. h)
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - PortableDevice.h
-ms.openlocfilehash: c7e961b80ae990653e6c354640b35c28f8bcf8b8
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 4c7215a383aec582f576cb64a6781068034bb7fa8df03b5a404368482f1c1619
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105796097"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117843400"
 ---
 # <a name="class-extension-properties"></a>Propriedades de extensão de classe
 
-Os dispositivos portáteis do Windows oferecem suporte às seguintes propriedades de extensão de classe.
+Windows Os dispositivos portáteis oferecem suporte às seguintes propriedades de extensão de classe.
 
 
 
