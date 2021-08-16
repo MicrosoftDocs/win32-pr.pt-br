@@ -1,7 +1,7 @@
 ---
-description: Windows Os dispositivos portáteis dão suporte às seguintes propriedades do SMS.
+description: Windows Os Dispositivos Portáteis são compatíveis com as seguintes propriedades de SMS.
 ms.assetid: d821f378-522f-4f0a-825b-6b15295e7b12
-title: Propriedades do SMS (PortableDevice. h)
+title: Propriedades de SMS (PortableDevice.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -20,18 +20,18 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118193577"
 ---
-# <a name="sms-properties"></a>Propriedades do SMS
+# <a name="sms-properties"></a>Propriedades de SMS
 
-Windows Os dispositivos portáteis dão suporte às seguintes propriedades do SMS.
+Windows Os Dispositivos Portáteis são compatíveis com as seguintes propriedades de SMS.
 
 
 
 | Propriedade                   | VarType        | Descrição                                                                                                                                                                                                                                                                                                 |
 |----------------------------|----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **\_codificação de SMS WPD \_**     | **LPWStr do VT \_** | Um valor que especifica como o driver codificará a mensagem de texto enviada pelo cliente. Esta é uma propriedade somente leitura; o cliente não pode especificar qual tipo de codificação um dispositivo usa para enviar mensagens. Esses valores duplicam os valores enumerados dos [**\_ tipos de \_ codificação \_ do SMS WPD**](wpd-sms-encoding-types.md) . |
-| **\_ \_ carga máxima de SMS WPD \_** | **\_UI4 VT**    | O número máximo de bytes que podem estar contidos em uma mensagem.                                                                                                                                                                                                                                             |
-| **\_provedor de SMS WPD \_**     | **LPWStr do VT \_** | O nome do provedor de serviços.                                                                                                                                                                                                                                                                                |
-| **\_tempo limite de SMS WPD \_**      | **\_UI4 VT**    | O número de milissegundos até que um tempo limite seja retornado.                                                                                                                                                                                                                                                     |
+| **CODIFICAÇÃO DE \_ SMS \_ WPD**     | **VT \_ LPWSTR** | Um valor que especifica como o driver codifica a mensagem de texto enviada pelo cliente. Essa é uma propriedade somente leitura; o cliente não pode especificar qual tipo de codificação um dispositivo usa para enviar mensagens. Esses valores duplicam [**os valores \_ enumerados WPD SMS \_ ENCODING \_ TYPES.**](wpd-sms-encoding-types.md) |
+| **PAYLOAD \_ MÁXIMO DE SMS WPD \_ \_** | **VT \_ UI4**    | O número máximo de bytes que podem ser contidos em uma mensagem.                                                                                                                                                                                                                                             |
+| **PROVEDOR DE \_ SMS \_ WPD**     | **VT \_ LPWSTR** | O nome do provedor de serviços.                                                                                                                                                                                                                                                                                |
+| **WPD \_ SMS \_ TIMEOUT**      | **VT \_ UI4**    | O número de milissegundos até que um tempoout seja retornado.                                                                                                                                                                                                                                                     |
 
 
 
@@ -43,7 +43,7 @@ Windows Os dispositivos portáteis dão suporte às seguintes propriedades do SM
 
 | Requisito | Valor |
 |-------------------|---------------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>PortableDevice. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>PortableDevice.h</dt> </dl> |
 
 
 

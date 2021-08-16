@@ -1,9 +1,9 @@
 ---
 title: Elemento Tuesday (daysOfWeekType)
-description: Especifica que a tarefa é executada na terça-feira.
+description: Especifica que a tarefa é executado na terça-feira.
 ms.assetid: 588608e9-33f9-405d-8b4b-35f11ab403db
 keywords:
-- Elemento de terça-feira Agendador de Tarefas
+- Elemento Tuesday Agendador de Tarefas
 topic_type:
 - apiref
 api_name:
@@ -22,7 +22,7 @@ ms.locfileid: "118355609"
 ---
 # <a name="tuesday-daysofweektype-element"></a>Elemento Tuesday (daysOfWeekType)
 
-Especifica que a tarefa é executada na terça-feira.
+Especifica que a tarefa é executado na terça-feira.
 
 ``` syntax
 <xs:element name="Tuesday">
@@ -30,7 +30,7 @@ Especifica que a tarefa é executada na terça-feira.
 </xs:element>
 ```
 
-O elemento **Tuesday** é definido pelo tipo complexo [**daysOfWeekType**](taskschedulerschema-daysofweektype-complextype.md) .
+O **elemento Tuesday** é definido pelo tipo complexo [**daysOfWeekType.**](taskschedulerschema-daysofweektype-complextype.md)
 
 ## <a name="parent-element"></a>Elemento pai
 
@@ -38,8 +38,8 @@ O elemento **Tuesday** é definido pelo tipo complexo [**daysOfWeekType**](tasks
 
 | Elemento                                                                                                                  | Derivado de                                                             | Descrição                                                                                          |
 |--------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------|
-| [**DaysOfWeek (monthlyDayOfWeekScheduleType)**](taskschedulerschema-daysofweek-monthlydayofweekscheduletype-element.md) | [**daysOfWeekType**](taskschedulerschema-daysofweektype-complextype.md) | Especifica os dias da semana em que a tarefa é executada por uma agenda mensal de dia da semana.<br/> |
-| [**DaysOfWeek (weeklyScheduleType)**](taskschedulerschema-daysofweek-weeklyscheduletype-element.md)                     | [**daysOfWeekType**](taskschedulerschema-daysofweektype-complextype.md) | Especifica os dias da semana em que a tarefa é executada para uma agenda semanal.<br/>              |
+| [**DaysOfWeek (monthlyDayOfWeekScheduleType)**](taskschedulerschema-daysofweek-monthlydayofweekscheduletype-element.md) | [**daysOfWeekType**](taskschedulerschema-daysofweektype-complextype.md) | Especifica os dias da semana em que a tarefa é executado para uma agenda mensal do dia da semana.<br/> |
+| [**DaysOfWeek (weeklyScheduleType)**](taskschedulerschema-daysofweek-weeklyscheduletype-element.md)                     | [**daysOfWeekType**](taskschedulerschema-daysofweektype-complextype.md) | Especifica os dias da semana em que a tarefa é executado para uma agenda semanal.<br/>              |
 
 
 
@@ -62,8 +62,8 @@ O XML a seguir define um calendário de dia da semana que inicia uma tarefa na t
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
 
 
 
@@ -71,7 +71,7 @@ O XML a seguir define um calendário de dia da semana que inicia uma tarefa na t
 
 <dl> <dt>
 
-[Elementos do esquema de Agendador de Tarefas](task-scheduler-schema-elements.md)
+[Agendador de Tarefas de esquema](task-scheduler-schema-elements.md)
 </dt> <dt>
 
 [Agendador de Tarefas](task-scheduler-start-page.md)

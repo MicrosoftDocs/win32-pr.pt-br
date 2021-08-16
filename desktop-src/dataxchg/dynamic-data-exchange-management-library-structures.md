@@ -1,6 +1,6 @@
 ---
-title: Estruturas de DDEML
-description: . | Estruturas de DDEML
+title: Estruturas DDEML
+description: . | Estruturas DDEML
 ms.assetid: 9401cc65-6acb-41b7-8d4d-43e163a6ea9a
 ms.topic: reference
 ms.date: 05/31/2018
@@ -11,13 +11,13 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118304596"
 ---
-# <a name="ddeml-structures"></a>Estruturas de DDEML
+# <a name="ddeml-structures"></a>Estruturas DDEML
 
 ## <a name="in-this-section"></a>Nesta seção
 
 -   [**CONVCONTEXT**](/windows/win32/api/ddeml/ns-ddeml-convcontext)
 -   [**CONVINFO**](/windows/win32/api/ddeml/ns-ddeml-convinfo)
--   [**\_dados de \_ gancho de msg de ddeml \_**](/windows/win32/api/ddeml/ns-ddeml-ddeml_msg_hook_data)
+-   [**DDEML \_ MSG \_ HOOK \_ DATA**](/windows/win32/api/ddeml/ns-ddeml-ddeml_msg_hook_data)
 -   [**MONCBSTRUCT**](/windows/win32/api/ddeml/ns-ddeml-moncbstruct)
 -   [**MONCONVSTRUCT**](/windows/win32/api/ddeml/ns-ddeml-monconvstruct)
 -   [**MONERRSTRUCT**](/windows/win32/api/ddeml/ns-ddeml-monerrstruct)

@@ -7,11 +7,11 @@
         - name: Sistemas operacionais com suporte
           href: supported-operating-systems.md
           items:
-            - name: Suporte no Windows 7 e no Windows Vista
+            - name: suporte no Windows 7 e Windows Vista
               href: support-in-windows-vista.md
-            - name: Suporte no Windows XP
+            - name: suporte no Windows XP
               href: support-in-windows-xp.md
-    - name: Requisitos para aplicativos do Windows Media DRM-Enabled
+    - name: requisitos para aplicativos de Windows de mídia DRM-Enabled
       href: requirements-for-windows-media-drm-enabled-applications.md
     - name: Exemplos
       href: sample.md
@@ -42,7 +42,7 @@
           items:
             - name: Objeto de dispositivo
               href: device-object.md
-        - name: PROPERTYKEYs e GUIDs em dispositivos portáteis do Windows
+        - name: PROPERTYKEYs e guids em Windows dispositivos portáteis
           href: propertykeys-and-guids-in-windows-portable-devices.md
     - name: Guia de Programação
       href: programming-guide.md
@@ -658,7 +658,7 @@
               href: event-properties.md
             - name: Propriedades da imagem
               href: image-properties.md
-            - name: Propriedades da mídia
+            - name: Propriedades de mídia
               href: media-properties.md
             - name: Propriedades diversas
               href: miscellaneous-properties.md
@@ -670,11 +670,11 @@
               href: object-properties.md
             - name: Propriedades do atributo de recurso
               href: resource-attribute-properties.md
-            - name: Propriedades de atributo de seção
+            - name: Propriedades do atributo section
               href: section-attribute-properties.md
-            - name: Propriedades do SMS
+            - name: Propriedades de SMS
               href: sms-properties.md
-            - name: Propriedades da imagem ainda
+            - name: Propriedades de imagem ainda
               href: still-image-properties.md
             - name: Propriedades de armazenamento
               href: storage-properties.md
@@ -861,14 +861,14 @@
               href: wpd-resource-icon.md
             - name: WPD_RESOURCE_THUMBNAIL
               href: wpd-resource-thumbnail.md
-        - name: Extensões de MTP
+        - name: Extensões MTP
           href: mtp-extensions.md
           items:
             - name: Eventos de extensão MTP
               href: mtp-extension-events.md
             - name: Formatos de extensão MTP
               href: mtp-extension-formats.md
-            - name: Propriedades de extensão MTP
+            - name: Propriedades da extensão MTP
               href: mtp-extension-properties.md
             - name: Comandos de extensão MTP
               href: mtp-extension-commands.md

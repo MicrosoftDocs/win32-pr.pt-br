@@ -17,7 +17,7 @@ Um conjunto a seguir especifica os protocolos que seguem um protocolo. Monitor d
 
 Por exemplo, o analisador NetBIOS especifica um conjunto a seguir porque os dados no protocolo NetBIOS não identificam qual protocolo é o próximo. Como resultado, o analisador NetBIOS deve criar um conjunto de acompanhamento de todos os protocolos que podem ser seguidos.
 
-O exemplo de código a seguir identifica o netBIOS a seguir definido no [*arquivoParser.ini*](p.md) dados. O conjunto a seguir contém protocolos SMB (server message block) e MSRPC (chamada de procedimento remoto da Microsoft). Esses são os únicos protocolos que podem seguir uma instância do protocolo NetBIOS.
+O exemplo de código a seguir identifica o netBIOS a seguir definido no arquivo [*Parser.ini*](p.md) dados. O conjunto a seguir contém protocolos SMB (server message block) e MSRPC (chamada de procedimento remoto da Microsoft). Esses são os únicos protocolos que podem seguir uma instância do protocolo NetBIOS.
 
 ``` syntax
 [NETBIOS]

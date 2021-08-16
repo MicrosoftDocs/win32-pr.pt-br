@@ -1,7 +1,7 @@
 ---
-description: Método Shell. Trayproperties – exibe a barra de tarefas e a caixa de diálogo Propriedades do menu iniciar. Esse método tem o mesmo efeito que clicar com o botão direito do mouse na barra de tarefas e selecionar Propriedades.
+description: Método Shell.TrayProperties – exibe a caixa de diálogo Barra de Tarefas e Propriedades do Menu Iniciar. Esse método tem o mesmo efeito que clicar com o botão direito do mouse na barra de tarefas e selecionar Propriedades.
 ms.assetid: 0d82d847-9e6f-461e-b938-fe8fd49a636f
-title: Método Shell. Trayproperties (shldisp. h)
+title: Método Shell.TrayProperties (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -20,9 +20,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118452822"
 ---
-# <a name="shelltrayproperties-method"></a>Método Shell. Trayproperties
+# <a name="shelltrayproperties-method"></a>Método Shell.TrayProperties
 
-Exibe a **barra de tarefas e a caixa de diálogo Propriedades do menu iniciar** . Esse método tem o mesmo efeito que clicar com o botão direito do mouse na barra de tarefas e selecionar **Propriedades**.
+Exibe a caixa **de diálogo Propriedades da Barra de Tarefas e Iniciar Menu.** Esse método tem o mesmo efeito de clicar com o botão direito do mouse na barra de tarefas e selecionar **Propriedades**.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -47,7 +47,7 @@ Esse método não tem parâmetros.
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo a seguir mostra **trayproperties** em uso. o uso adequado é mostrado para JScript, VBScript e Visual Basic.
+O exemplo a seguir **mostra TrayProperties** em uso. O uso adequado é mostrado para JScript, VBScript e Visual Basic.
 
 JScript:
 
@@ -65,7 +65,7 @@ JScript:
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -105,11 +105,11 @@ End Sub
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 2000 Professional, \[ somente aplicativos de área de trabalho do Windows XP\]<br/>                                         |
+| Cliente mínimo com suporte<br/> | Windows 2000 Professional, Windows aplicativos da área de \[ trabalho XP\]<br/>                                         |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                           |
-| Cabeçalho<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                           |
-| INSERI<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                         |
-| DLL<br/>                      | <dl> <dt>Shell32.dll (versão 4,71 ou posterior)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
+| DLL<br/>                      | <dl> <dt>Shell32.dll (versão 4.71 ou posterior)</dt> </dl> |
 
 
 

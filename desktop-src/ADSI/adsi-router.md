@@ -17,7 +17,7 @@ ms.locfileid: "118429105"
 ---
 # <a name="adsi-router"></a>Roteador ADSI
 
-O roteador ADSI fica entre um cliente e os provedores ADSI. Ele implementa um conjunto principal de objetos que oferecem recursos básicos e serviços comuns a todos os provedores. Portanto, qualquer recurso com suporte no roteador também tem suporte em qualquer um dos provedores, a menos que o provedor escolha o contrário. O módulo do roteador ADSI corresponde ao Activeds.dll.
+O roteador ADSI fica entre um cliente e os provedores ADSI. Ele implementa um conjunto principal de objetos que oferecem recursos e serviços básicos comuns a todos os provedores. Assim, qualquer recurso com suporte no roteador também terá suporte em qualquer um dos provedores, a menos que o provedor escolha o contrário. O módulo do roteador ADSI corresponde a Activeds.dll.
 
  
 

@@ -385,7 +385,7 @@ Cleanup:
 |-------------------------------------|-------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                  |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                            |
-| parâmetro<br/>                   | <dl> <dt>IADs. h</dt> </dl>         |
+| Cabeçalho<br/>                   | <dl> <dt>IADs. h</dt> </dl>         |
 | DLL<br/>                      | <dl> <dt>Activeds.dll</dt> </dl>   |
 | IID<br/>                      | IID \_ IADsSecurityDescriptor é definido como B8C787CA-9BDD-11D0-852C-00C04FD8D503<br/> |
 

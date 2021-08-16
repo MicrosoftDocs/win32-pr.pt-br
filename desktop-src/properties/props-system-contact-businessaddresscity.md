@@ -1,7 +1,7 @@
 ---
 description: Cidade do endereço comercial do contato.
 ms.assetid: 13e95222-e94f-44d1-939d-26646d932a32
-title: System.Contact.BusinessAddressCity
+title: System. Contact. BusinessAddressCity
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 36c6b3287dbad87428053633bff6d118f9fb5fed81627cf1db8497b80ce0d809
@@ -11,7 +11,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118468465"
 ---
-# <a name="systemcontactbusinessaddresscity"></a>System.Contact.BusinessAddressCity
+# <a name="systemcontactbusinessaddresscity"></a>System. Contact. BusinessAddressCity
 
 Cidade do endereço comercial do contato.
 
@@ -32,13 +32,13 @@ propertyDescription
 
 ## <a name="remarks"></a>Comentários
 
-Os valores PKEY são definidos em Propkey.h.
+Os valores de PKEY são definidos em Propkey. h.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[Propertydescription](./propdesc-schema-propertydescription.md)
+[propertyDescription](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -47,19 +47,19 @@ Os valores PKEY são definidos em Propkey.h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Typeinfo](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[Stringformat](./propdesc-schema-stringformat.md)
+[stringFormat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numberformat](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -74,7 +74,7 @@ Os valores PKEY são definidos em Propkey.h.
 [editControl](./propdesc-schema-editcontrol.md)
 </dt> <dt>
 
-[Filtercontrol](./propdesc-schema-filtercontrol.md)
+[filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
 [queryControl](./propdesc-schema-querycontrol.md)

@@ -4,16 +4,16 @@ ms.assetid: 7fdfc20a-9148-4ae1-8101-7a387c0d0edc
 title: Gravar uma função main de Programas de Serviço
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 83aa743bfabbeafa2e05818c5bb068a949dce807
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d82e3c519650957f4f27b00ff54864f558cafba3db960f30c0dd20517328f1c4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104501574"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117966607"
 ---
-# <a name="writing-a-service-programs-main-function"></a>Escrevendo a função main de um programa de serviço
+# <a name="writing-a-service-programs-main-function"></a>Escrevendo a função principal de um programa de serviço
 
-A função **principal** de um [programa de serviço](service-programs.md) chama a função [**StartServiceCtrlDispatcher**](/windows/desktop/api/Winsvc/nf-winsvc-startservicectrldispatchera) para se conectar ao SCM (Gerenciador de [controle de serviço](service-control-manager.md) ) e iniciar o thread do Dispatcher de controle. Os loops de thread do Dispatcher, aguardando solicitações de controle de entrada para os serviços especificados na tabela de expedição. Esse thread retorna quando há um erro ou quando todos os serviços no processo foram encerrados. Quando todos os serviços no processo forem encerrados, o SCM enviará uma solicitação de controle ao thread do Dispatcher solicitando que ele saia. Em seguida, esse thread retorna da chamada **StartServiceCtrlDispatcher** e o processo pode ser encerrado.
+A **função** principal de um programa de [serviço](service-programs.md) chama a função [**StartServiceCtrlDispatcher**](/windows/desktop/api/Winsvc/nf-winsvc-startservicectrldispatchera) para se conectar ao SCM [(gerenciador](service-control-manager.md) de controle de serviço) e iniciar o thread do dispatcher de controle. O thread do dispatcher faz loops, aguardando solicitações de controle de entrada para os serviços especificados na tabela de expedição. Esse thread retorna quando há um erro ou quando todos os serviços no processo são encerrados. Quando todos os serviços no processo são encerrados, o SCM envia uma solicitação de controle para o thread do dispatcher dizendo para sair. Esse thread retorna da chamada **StartServiceCtrlDispatcher** e o processo pode ser encerrado.
 
 As definições globais a seguir são usadas neste exemplo.
 
@@ -28,9 +28,9 @@ HANDLE                  ghSvcStopEvent = NULL;
 
 
 
-O exemplo a seguir pode ser usado como o ponto de entrada para um programa de serviço que dá suporte a um único serviço. Se o programa de serviço oferecer suporte a vários serviços, adicione os nomes dos serviços adicionais à tabela de expedição para que eles possam ser monitorados pelo thread Dispatcher.
+O exemplo a seguir pode ser usado como o ponto de entrada para um programa de serviço que dá suporte a um único serviço. Se o programa de serviço dá suporte a vários serviços, adicione os nomes dos serviços adicionais à tabela de expedição para que eles possam ser monitorados pelo thread do dispatcher.
 
-A \_ função tmain é o ponto de entrada. A função SvcReportEvent grava mensagens informativas e erros no log de eventos. Para obter informações sobre como escrever a função SvcMain, consulte [escrevendo uma função de immain](writing-a-servicemain-function.md). Para obter mais informações sobre a função SvcInstall, consulte [instalando um serviço](installing-a-service.md). Para obter informações sobre como escrever a função SvcCtrlHandler, consulte [escrevendo uma função de manipulador de controle](writing-a-control-handler-function.md). Para o serviço de exemplo completo, incluindo a origem da função SvcReportEvent, consulte [svc. cpp](svc-cpp.md).
+A \_ função tmain é o ponto de entrada. A função SvcReportEvent grava mensagens informativas e erros no log de eventos. Para obter informações sobre como escrever a função SvcMain, consulte [Escrevendo uma função ServiceMain](writing-a-servicemain-function.md). Para obter mais informações sobre a função SvcInstall, consulte [Instalando um serviço](installing-a-service.md). Para obter informações sobre como escrever a função SvcCtrlHandler, consulte [Escrevendo uma função de manipulador de controle](writing-a-control-handler-function.md). Para o serviço de exemplo completo, incluindo a origem da função SvcReportEvent, consulte [Svc.cpp](svc-cpp.md).
 
 
 ```C++
@@ -75,7 +75,7 @@ int __cdecl _tmain(int argc, TCHAR *argv[])
 
 
 
-Veja a seguir um exemplo de Sample. h, conforme gerado pelo compilador de mensagem. Para obter mais informações, consulte [Sample.MC](sample-mc.md).
+A seguir está um exemplo de Sample.h conforme gerado pelo compilador de mensagem. Para obter mais informações, [consulte Sample.mc](sample-mc.md).
 
 ``` syntax
  // The following are message definitions.

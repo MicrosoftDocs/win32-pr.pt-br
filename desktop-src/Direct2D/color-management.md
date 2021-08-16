@@ -6,12 +6,12 @@ keywords:
 - efeito de gerenciamento de cores
 ms.topic: article
 ms.date: 02/05/2019
-ms.openlocfilehash: 5f3783132e0e2af511a99fd8c44d5f899e577a3a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 274591312ab110a24fb315d01f72d23a22a938ad41f380620d94a865602e82a8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104369536"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117826694"
 ---
 # <a name="color-management-effect"></a>Efeito de gerenciamento de cores
 
@@ -62,7 +62,7 @@ Se seu aplicativo usa o espaço de [D2D1_GAMMA1_G2084](/windows/desktop/api/d2d1
 
 As APIs [**ID2D1DeviceContext5:: CreateColorContextFromSimpleColorProfile**](/windows/desktop/api/d2d1_3/nf-d2d1_3-id2d1devicecontext5-createcolorcontextfromsimplecolorprofile(constd2d1_simple_color_profile__id2d1colorcontext1)) e [**ID2D1DeviceContext5:: CreateColorContextFromDxgiColorSpace**](/windows/desktop/api/d2d1_3/nf-d2d1_3-id2d1devicecontext5-createcolorcontextfromdxgicolorspace) não são contadas para isso; em vez disso, o conteúdo HDR é dimensionado para caber no intervalo de 0-1 durante a operação de desdimensionamento de G2084.
 
-Na prática, o conteúdo codificado neste espaço de gama usa um WhiteLevel de referência de 10.000 nits, que normalmente seria representado em CCCS como 10.000/80 = 125,0. Portanto, para facilitar melhor seu aplicativo, é mais simples para essa conversão de gama também dimensionar a luminância por um fator de 125. A partir do Windows 10, versão 1809 (10,0; Build 17763), o comportamento do efeito de gerenciamento de cores é que ele aplica esse dimensionamento. Isso significa que você, como desenvolvedor, não precisa aplicar um segundo efeito de [ajuste de nível branco](white-level-adjustment-effect.md) no pipeline.
+Na prática, o conteúdo codificado neste espaço de gama usa um WhiteLevel de referência de 10.000 nits, que normalmente seria representado em CCCS como 10.000/80 = 125,0. Portanto, para facilitar melhor seu aplicativo, é mais simples para essa conversão de gama também dimensionar a luminância por um fator de 125. a partir de Windows 10, versão 1809 (10,0; Build 17763), o comportamento do efeito de gerenciamento de cores é que ele aplica esse dimensionamento. Isso significa que você, como desenvolvedor, não precisa aplicar um segundo efeito de [ajuste de nível branco](white-level-adjustment-effect.md) no pipeline.
 
 ## <a name="compliance-with-icc-specification"></a>Conformidade com a especificação ICC
 
@@ -113,59 +113,59 @@ Em geral, o efeito define alfa como 1 (opaco) se não houver dados alfa na image
 </tr>
 <tr class="even">
 <td>1 canal, formato de pixel RGBA</td>
-<td>Dados Alfa são passados por</td>
+<td>Os dados alfa são passados</td>
 
 </tr>
 <tr class="odd">
-<td>3 canal, formato de pixel RGBA</td>
-<td>Dados Alfa são passados por</td>
+<td>3 canais, formato de pixel RGBA</td>
+<td>Os dados alfa são passados</td>
 
 </tr>
 <tr class="even">
 <td>4 canais, formato de pixel RGBA</td>
-<td>Os dados Alfa são descartados</td>
+<td>Os dados alfa são descartados</td>
 
 </tr>
 <tr class="odd">
-<td rowspan="4">3 canal, formato de pixel RGBA $ {REMOVE} $<br />
+<td rowspan="4">3 canais, formato de pixel RGBA ${REMOVE}$<br />
 </td>
-<td>formato de 1 canal, R pixel</td>
-<td>Os dados Alfa são descartados</td>
+<td>1 canal, formato de pixel R</td>
+<td>Os dados alfa são descartados</td>
 </tr>
 <tr class="even">
 <td>1 canal, formato de pixel RGBA</td>
-<td>Dados Alfa são passados por</td>
+<td>Os dados alfa são passados</td>
 
 </tr>
 <tr class="odd">
-<td>3 canal, formato de pixel RGBA</td>
-<td>Dados Alfa são passados por</td>
+<td>3 canais, formato de pixel RGBA</td>
+<td>Os dados alfa são passados</td>
 
 </tr>
 <tr class="even">
 <td>4 canais, formato de pixel RGBA</td>
-<td>Os dados Alfa são descartados</td>
+<td>Os dados alfa são descartados</td>
 
 </tr>
 <tr class="odd">
-<td rowspan="4">4 Channel, formato de pixel RGBA $ {REMOVE} $<br />
+<td rowspan="4">4 canais, formato de pixel RGBA ${REMOVE}$<br />
 </td>
-<td>formato de 1 canal, R pixel</td>
-<td>(Não há dados alfa)</td>
+<td>1 canal, formato de pixel R</td>
+<td>(Sem dados alfa)</td>
 </tr>
 <tr class="even">
 <td>1 canal, formato de pixel RGBA</td>
-<td>Os dados Alfa são definidos como 1 (opaco)</td>
+<td>Os dados alfa são definidos como 1 (opaco)</td>
 
 </tr>
 <tr class="odd">
-<td>3 canal, formato de pixel RGBA</td>
-<td>Os dados Alfa são definidos como 1 (opaco)</td>
+<td>3 canais, formato de pixel RGBA</td>
+<td>Os dados alfa são definidos como 1 (opaco)</td>
 
 </tr>
 <tr class="even">
 <td>4 canais, formato de pixel RGBA</td>
-<td>(Não há dados alfa)</td>
+<td>(Sem dados alfa)</td>
 
 </tr>
 </tbody>
@@ -175,24 +175,24 @@ Em geral, o efeito define alfa como 1 (opaco) se não houver dados alfa na image
 
 | Mode | Descrição |
 |-|-|
-| Prova de qualidade de D2D1 \_ COLORMANAGEMENT \_ \_ | O modo de qualidade mais baixo. Esse modo requer o nível de recurso 9 \_ 1 ou superior. |
-| D2D1 \_ COLORMANAGEMENT \_ Quality \_ normal | Modo de qualidade normal. Esse modo requer o nível de recurso 9 \_ 1 ou superior. |
-| D2D1 \_ COLORMANAGEMENT \_ qualidade \_ melhor | O modo de melhor qualidade. Esse modo requer o nível de recurso 10 \_ 0 ou superior, bem como buffers de precisão de ponto flutuante. Esse modo dá suporte à precisão de ponto flutuante, bem como ao intervalo estendido, conforme definido na especificação ICC v 4.3. |
+| D2D1 \_ COLORMANAGEMENT \_ QUALITY \_ PROOF | O modo de qualidade mais baixo. Esse modo requer o nível de recurso 9 \_ 1 ou superior. |
+| D2D1 \_ COLORMANAGEMENT \_ QUALITY \_ NORMAL | Modo de qualidade normal. Esse modo requer o nível de recurso 9 \_ 1 ou superior. |
+| D2D1 \_ COLORMANAGEMENT \_ QUALITY \_ BEST | O modo de melhor qualidade. Esse modo requer o nível de recurso 10 \_ 0 ou superior, bem como buffers de precisão de ponto flutuante. Esse modo dá suporte à precisão de ponto flutuante, bem como ao intervalo estendido, conforme definido na especificação do ICC v4.3. |
 
-O efeito de gerenciamento de cores falha ao desenhar se o aplicativo solicitar um modo de qualidade que não tenha suporte do hardware. Você pode determinar o nível do recurso ao chamar [**D3D11CreateDevice**](/windows/desktop/api/d3d11/nf-d3d11-d3d11createdevice). Você pode verificar o suporte ao buffer de ponto flutuante chamando [**ID2D1EffectContext:: IsBufferPrecisionSupported**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-isbufferprecisionsupported) com o valor [**d2d1 \_ buffer \_ Precision \_ 32BPC \_ float**](/windows/desktop/api/D2d1_1/ne-d2d1_1-d2d1_buffer_precision).
+O efeito de gerenciamento de cores falhará ao desenhar se o aplicativo solicitar um modo de qualidade que não seja suportado pelo hardware. Você pode determinar o nível do recurso ao chamar [**D3D11CreateDevice**](/windows/desktop/api/d3d11/nf-d3d11-d3d11createdevice). Você pode verificar se há suporte para buffer de ponto flutuante chamando [**ID2D1EffectContext::IsBufferPrecisionSupported**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-isbufferprecisionsupported) com o valor [**D2D1 \_ BUFFER PRECISION \_ \_ 32BPC \_ FLOAT**](/windows/desktop/api/D2d1_1/ne-d2d1_1-d2d1_buffer_precision).
 
 ## <a name="sample-code"></a>Código de exemplo
 
-Para obter um exemplo desse efeito, baixe o [exemplo de ajuste de foto de efeitos de Direct2D](https://github.com/microsoft/Windows-universal-samples/tree/master/Samples/D2DPhotoAdjustment)e veja a lição 4 do exemplo.
+Para ver um exemplo desse efeito, baixe o exemplo [Direct2D](https://github.com/microsoft/Windows-universal-samples/tree/master/Samples/D2DPhotoAdjustment)de ajuste de foto de efeitos e consulte a Lição 4 do exemplo.
 
 ## <a name="requirements"></a>Requisitos
 
 | Requisito | Valor |
 |-|-|
-| Cliente mínimo com suporte | Windows 8 e atualização de plataforma para aplicativos de área de trabalho do Windows 7 \[ \| aplicativos da Windows Store\] |
-| Servidor mínimo com suporte | Windows 8 e atualização de plataforma para aplicativos de área de trabalho do Windows 7 \[ \| aplicativos da Windows Store\] |
-| parâmetro | d2d1effects. h |
-| Biblioteca | d2d1. lib, dxguid. lib |
+| Cliente mínimo com suporte | Windows 8 e Atualização de Plataforma para Windows 7 aplicativos da área de trabalho \[ \| Windows Store\] |
+| Servidor mínimo com suporte | Windows 8 e Atualização de Plataforma para Windows 7 aplicativos da área de trabalho \[ \| Windows Store\] |
+| Cabeçalho | d2d1effects.h |
+| Biblioteca | d2d1.lib, dxguid.lib |
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

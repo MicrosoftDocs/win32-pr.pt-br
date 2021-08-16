@@ -1,10 +1,10 @@
 ---
-title: atributo ms-DS-TDO-egresso-BL
-description: Link de regras de saída do backlink para TDO no objeto.
+title: atributo ms-DS-TDO-Egress-BL
+description: Backlink ao TDO Egress link de regras no objeto.
 ms.assetid: 3bf7a566-4e9b-45b4-b408-329f21b914db
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD do atributo ms-DS-TDO-egresso-BL
+- esquema de AD do atributo ms-DS-TDO-Egress-BL
 - atributo msDS-TDOEgressBL do AD Schema
 topic_type:
 - apiref
@@ -14,22 +14,22 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a5f70afa5b8ca53525f46634efa264f2b847f351
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: bb25639069a0beb6aae3b9267b7eb655d9e13c811823bbf6faa908050512d68f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104009834"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119763386"
 ---
-# <a name="ms-ds-tdo-egress-bl-attribute"></a>atributo ms-DS-TDO-egresso-BL
+# <a name="ms-ds-tdo-egress-bl-attribute"></a>atributo ms-DS-TDO-Egress-BL
 
-Link de regras de saída do backlink para TDO no objeto.
+Backlink ao TDO Egress link de regras no objeto.
 
 
 
 | Entrada | Valor |
 |-------------------|-----------------------------------------|
-| CN                | ms-DS-TDO-egresso-BL                     |
+| CN                | ms-DS-TDO-Egress-BL                     |
 | LDAP-Display-Name | msDS-TDOEgressBL                        |
 | Tamanho              | \-                                      |
 | Privilégio de atualização  | \-                                      |
@@ -52,7 +52,7 @@ Link de regras de saída do backlink para TDO no objeto.
 |------------------------|---------------------------------|
 | ID do link                | 2193                            |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
+| System-Only            | Verdadeiro                            |
 | É de valor único       | Falso                           |
 | É indexado             | Falso                           |
 | No catálogo global      | Falso                           |

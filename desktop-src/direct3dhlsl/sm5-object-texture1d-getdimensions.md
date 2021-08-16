@@ -1,6 +1,6 @@
 ---
-title: 'Função Texture1D:: GetDimensions'
-description: 'Retorna as dimensões do recurso. | Função Texture1D:: GetDimensions'
+title: Função Texture1D::GetDimensions
+description: Retorna as dimensões do recurso. | Função Texture1D::GetDimensions
 ms.assetid: eb8fc02f-01c8-44b9-9d7e-faf59660c287
 keywords:
 - Função GetDimensions HLSL
@@ -20,7 +20,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118508692"
 ---
-# <a name="texture1dgetdimensions-function"></a>Função Texture1D:: GetDimensions
+# <a name="texture1dgetdimensions-function"></a>Função Texture1D::GetDimensions
 
 Retorna as dimensões do recurso.
 
@@ -38,30 +38,30 @@ void GetDimensions(
 
 <dl> <dt>
 
-*MipLevel* \[ no\]
+*MipLevel* \[ Em\]
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
-Opcional. Nível de mipmap (deve ser especificado se *NumberOfLevels* for usado).
+Opcional. Nível de Mipmap (deve ser especificado se *NumberOfLevels* for usado).
 
 </dd> <dt>
 
-*Largura* \[ fora\]
+*Largura* \[ out\]
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
 A largura do recurso, em texels.
 
 </dd> <dt>
 
-*NumberOfLevels* \[ fora\]
+*NumberOfLevels* \[ out\]
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
-O número de níveis de mipmap (também requer *MipLevel* ).
+O número de níveis de mipmap (requer *também MipLevel).*
 
 </dd> </dl>
 
@@ -94,7 +94,7 @@ Essa função tem suporte para os seguintes tipos de sombreadores:
 
 
 
-| Vértice | Envoltória | Domínio | Geometry | 16x16 | Computação |
+| Vértice | Casco | Domínio | Geometry | Pixel | Computação |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | x     | x       |
 

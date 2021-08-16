@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ed321b84e9e7bfbeb4dccb4d97219f6be21389c1
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2c3c7e6ff41d1b556e224e4c46850c4ba35239199294570ea2ef51ea3a124d5b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105796200"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118333760"
 ---
 # <a name="recordingtimemonth-attribute"></a>Atributo RecordingTimeMonth
 
-O atributo **RecordingTimeMonth** é a parte do mês da data da gravação original, para itens em que essa data é diferente da data de lançamento.
+O **atributo RecordingTimeMonth** é a parte do mês da data da gravação original, para itens em que essa data é diferente da data de lançamento.
 
 ## <a name="applies-to"></a>Aplica-se A
 
@@ -31,9 +31,9 @@ O atributo **RecordingTimeMonth** é a parte do mês da data da gravação origi
 
 ## <a name="remarks"></a>Comentários
 
-Esse atributo é armazenado somente na biblioteca do.
+Esse atributo é armazenado somente na biblioteca.
 
-Para determinar se você pode alterar o valor desse atributo, use o método [Media. isReadOnlyItem](media-isreadonlyitem.md) .
+Para determinar se você pode alterar o valor desse atributo, use o [método Media.isReadOnlyItem.](media-isreadonlyitem.md)
 
 ## <a name="requirements"></a>Requisitos
 

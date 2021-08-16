@@ -1,7 +1,7 @@
 ---
-description: System.Video.IsStereo
+description: System. vídeo. isestéreo
 ms.assetid: 900407d6-f01b-44f4-9d60-3e2f785723ca
-title: System.Video.IsStereo
+title: System. vídeo. isestéreo
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: b8022391154f6292462e574204b8e0c5a07687d3b658b221499fd31ff5d38f98
@@ -11,7 +11,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118464021"
 ---
-# <a name="systemvideoisstereo"></a>System.Video.IsStereo
+# <a name="systemvideoisstereo"></a>System. vídeo. isestéreo
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8"></a>Windows 10, versão 1703, Windows 10, versão 1607, Windows 10, versão 1511, Windows 10, versão 1507, Windows 8.1, Windows 8
 
@@ -31,13 +31,13 @@ propertyDescription
 
 ## <a name="remarks"></a>Comentários
 
-Os valores PKEY são definidos em Propkey.h.
+Os valores de PKEY são definidos em Propkey. h.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[Propertydescription](./propdesc-schema-propertydescription.md)
+[propertyDescription](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -46,19 +46,19 @@ Os valores PKEY são definidos em Propkey.h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Typeinfo](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[Stringformat](./propdesc-schema-stringformat.md)
+[stringFormat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numberformat](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -73,7 +73,7 @@ Os valores PKEY são definidos em Propkey.h.
 [editControl](./propdesc-schema-editcontrol.md)
 </dt> <dt>
 
-[Filtercontrol](./propdesc-schema-filtercontrol.md)
+[filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
 [queryControl](./propdesc-schema-querycontrol.md)

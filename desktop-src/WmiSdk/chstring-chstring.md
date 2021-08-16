@@ -6,12 +6,12 @@ ms.tgt_platform: multiple
 title: 'Construtores CHString:: CHString (ChString. h)'
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: 711d2f28680a9f273ff808876e30e92f66336b89
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 80ce10988fc335c5a16eff8507346dbcdffd6fa70f75d74fb48d3f84b0e2332b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104169808"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118320044"
 ---
 # <a name="chstringchstring-constructors"></a>Construtores CHString:: CHString
 
@@ -42,8 +42,8 @@ Cada um dos construtores a seguir inicializa um novo objeto [**CHString**](chstr
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                                                                                      |
-| Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                                                                                                |
-| parâmetro<br/>                   | <dl> <dt>ChString. h (incluir FwCommon. h)</dt> </dl>                                                    |
+| Servidor mínimo com suporte<br/> | Windows Servidor 2008<br/>                                                                                                                                |
+| Cabeçalho<br/>                   | <dl> <dt>ChString. h (incluir FwCommon. h)</dt> </dl>                                                    |
 | Biblioteca<br/>                  | <dl> <dt>FrameDyn. lib</dt> </dl>                                                                       |
 | DLL<br/>                      | <dl> <dt>FrameDynOS.dll; </dt> <dt>FrameDyn.dll</dt> </dl> |
 

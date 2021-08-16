@@ -8,12 +8,12 @@ keywords:
 - ADSI, pesquisa, IDirectorySearch, outras opções de pesquisa, paginação
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a6e9fdf001f5908f6c3fc7321c8c94cda09f1b96
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 48494c01831e6b69931fc6b6f779ed9b042b7fecaaf17fa62286c094a926ba73
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103915892"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117838936"
 ---
 # <a name="paging-with-idirectorysearch"></a>Paginação com IDirectorySearch
 
@@ -28,7 +28,7 @@ A paginação especifica quantas linhas o servidor retorna ao cliente. Uma pági
 
 
 
- 
+ 
 
 Se nenhuma dessas preferências de pesquisa for definida, o padrão será nenhuma paginação. As pesquisas do Active Directory executadas sem paginação são limitadas a retornar um máximo dos primeiros 1000 registros, portanto, você deve usar uma pesquisa paginada se houver a possibilidade de que o conjunto de resultados contenha mais de 1000 itens.
 
@@ -72,9 +72,9 @@ SearchPref.vValue.Integer = 60;
 
 
 
- 
+ 
 
- 
+ 
 
 
 

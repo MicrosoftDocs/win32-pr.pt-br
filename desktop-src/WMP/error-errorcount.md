@@ -1,9 +1,9 @@
 ---
-title: Erro. errorCount
+title: Error.errorCount
 description: A propriedade errorCount recupera o número de erros na fila de erros.
 ms.assetid: 64d9bb0a-fcc4-401b-a7bd-529e1a517f3b
 keywords:
-- Erro. errorCount Windows Media Player
+- Error.errorCount Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -21,9 +21,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118339798"
 ---
-# <a name="errorerrorcount"></a>Erro. errorCount
+# <a name="errorerrorcount"></a>Error.errorCount
 
-A propriedade **errorCount** recupera o número de erros na fila de erros.
+A **propriedade errorCount** recupera o número de erros na fila de erros.
 
 ``` syntax
 player.error.errorCount
@@ -32,15 +32,15 @@ player.error.errorCount
 
 ## <a name="possible-values"></a>Valores possíveis
 
-Essa propriedade é um **número** somente leitura (**Long**).
+Essa propriedade é um Número somente **leitura** (**long**).
 
 ## <a name="remarks"></a>Comentários
 
-você deve definir *Configurações*. **enableErrorDialogs** como false se você optar por exibir mensagens de erro personalizadas.
+Você deve definir *Configurações*. **enableErrorDialogs** como false se você optar por exibir mensagens de erro personalizadas.
 
 ## <a name="examples"></a>Exemplos
 
-o exemplo a seguir JScript usa *erro*. **errorCount** em um manipulador de eventos para alertar o usuário sobre o erro mais recente na fila de erros. O objeto de **jogador** foi criado com ID = "Player".
+O exemplo JScript a seguir usa *Erro*. **errorCount** em um manipulador de eventos para alertar o usuário sobre o erro mais recente na fila de erros. O **objeto** Player foi criado com ID = "Player".
 
 
 ```JScript
@@ -68,7 +68,7 @@ alert(errDesc);
 
 | Requisito | Valor |
 |--------------------|------------------------------------------------------------------------------------|
-| Versão<br/> | Windows Media Player versão 7,0 ou posterior.<br/>                              |
+| Versão<br/> | Windows Media Player versão 7.0 ou posterior.<br/>                              |
 | DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 

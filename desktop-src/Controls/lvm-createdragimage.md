@@ -1,9 +1,9 @@
 ---
-title: Mensagem de LVM_CREATEDRAGIMAGE (commctrl. h)
-description: Cria uma lista de imagens de arrastar para o item especificado. Você pode enviar essa mensagem explicitamente ou usando a \_ macro CreateDragImage do ListView.
+title: LVM_CREATEDRAGIMAGE mensagem (Commctrl.h)
+description: Cria uma lista de imagens de arrastar para o item especificado. Você pode enviar essa mensagem explicitamente ou usando a \_ macro CreateDragImage listView.
 ms.assetid: face4c8f-01ff-4f5a-a468-e306a50dae35
 keywords:
-- controles de Windows de mensagem de LVM_CREATEDRAGIMAGE
+- LVM_CREATEDRAGIMAGE controles de Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -21,9 +21,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118411991"
 ---
-# <a name="lvm_createdragimage-message"></a>\_Mensagem CREATEDRAGIMAGE LVM
+# <a name="lvm_createdragimage-message"></a>Mensagem LVM \_ CREATEDRAGIMAGE
 
-Cria uma lista de imagens de arrastar para o item especificado. Você pode enviar essa mensagem explicitamente ou usando a macro [**\_ CreateDragImage do ListView**](/windows/desktop/api/Commctrl/nf-commctrl-listview_createdragimage) .
+Cria uma lista de imagens de arrastar para o item especificado. Você pode enviar essa mensagem explicitamente ou usando a [**macro \_ CreateDragImage listView.**](/windows/desktop/api/Commctrl/nf-commctrl-listview_createdragimage)
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -39,13 +39,13 @@ O índice do item.
 *lParam* 
 </dt> <dd>
 
-Um ponteiro para uma estrutura de [**ponto**](/previous-versions//dd162805(v=vs.85)) que recebe o local inicial do canto superior esquerdo da imagem, em Exibir coordenadas.
+Um ponteiro para uma [**estrutura POINT**](/previous-versions//dd162805(v=vs.85)) que recebe o local inicial do canto superior esquerdo da imagem, em coordenadas de exibição.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor retornado
 
-Retorna o identificador para a lista de imagens de arrastar, se for bem-sucedido, ou **NULL** caso contrário.
+Retorna o alça para a lista de imagens de arrastar se for bem-sucedido ou **NULL** caso contrário.
 
 ## <a name="remarks"></a>Comentários
 
@@ -57,9 +57,9 @@ Seu aplicativo é responsável por destruir a lista de imagens quando ela não �
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

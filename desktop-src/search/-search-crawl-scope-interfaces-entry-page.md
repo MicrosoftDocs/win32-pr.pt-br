@@ -14,7 +14,7 @@ ms.locfileid: "118463121"
 # <a name="crawl-scope-interfaces"></a>Interfaces de escopo de rastreamento
 
 
-Esta Windows de referência da Pesquisa de Rastreamento consiste nas seguintes interfaces de escopo de rastreamento:
+esta seção de referência de pesquisa Windows consiste nas seguintes interfaces de escopo de rastreamento:
 
 [**IEnumSearchRoots**](/windows/desktop/api/Searchapi/nn-searchapi-ienumsearchroots)
 

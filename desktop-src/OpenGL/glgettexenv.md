@@ -16,7 +16,7 @@ ms.locfileid: "118359799"
 Essas funções retornam parâmetros de ambiente de textura:
 
 -   [**glGetTexEnvfv**](glgettexenvfv.md)
--   [**glGetTexEn ltda**](glgettexenviv.md)
+-   [**glGetTexEnviv**](glgettexenviv.md)
 
  
 

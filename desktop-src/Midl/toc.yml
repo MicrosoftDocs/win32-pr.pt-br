@@ -1,7 +1,7 @@
-- name: Linguagem IDL da Microsoft (MIDL)
+- name: linguagem IDL da Microsoft (MIDL)
   href: midl-start-page.md
   items:
-    - name: Sobre este guia
+    - name: Sobre este Guia
       href: about-this-guide-2.md
     - name: Usando o compilador MIDL
       href: using-the-midl-compiler-2.md
@@ -10,10 +10,10 @@
           href: invoking-the-midl-compiler.md
         - name: Arquivos de resposta
           href: response-files.md
-        - name: Usando C/C++-pré-processador com MIDL
+        - name: Usando C/C++-Preprocessor com MIDL
           href: using-c-c-preprocessor-with-midl.md
           items:
-            - name: Requisitos de pré-processador do C para MIDL
+            - name: Requisitos do pré-processador C para MIDL
               href: c-preprocessor-requirements-for-midl.md
             - name: 'Lidando com #defines em arquivos IDL'
               href: dealing-with-defines-in-idl-files-2.md
@@ -21,14 +21,14 @@
               href: verifying-preprocessor-options.md
             - name: Salvando a saída do pré-processador
               href: saving-preprocessor-output.md
-        - name: C/C++-considerações do compilador
+        - name: Considerações do compilador C/C++
           href: c-c-compiler-considerations.md
           items:
-            - name: C-problemas de empacotamento do compilador
+            - name: Problemas de empacotamento do compilador C
               href: c-compiler-packing-issues.md
-            - name: C-definições de compilador para proxy/stubs
+            - name: Definições do compilador C para proxy/stubs
               href: c-compiler-definitions-for-proxy-stubs.md
-        - name: Usando o __midl constante predefinida
+        - name: Usando a __midl constante predefinida
           href: using-the---midl-predefined-constant.md
         - name: MIDL e RPC
           href: midl-and-rpc.md
@@ -40,9 +40,9 @@
                   href: the-client-stub.md
                 - name: O stub do servidor
                   href: the-server-stub.md
-                - name: O arquivo de cabeçalho
+                - name: O arquivo de header
                   href: the-header-file.md
-            - name: Direcionando stubs para plataformas específicas de 32 bits ou 64 bits
+            - name: Direcionamento de stubs para plataformas específicas de 32 ou 64 bits
               href: targeting-stubs-for-specific-32-bit-or-64-bit-platforms.md
         - name: MIDL e COM
           href: midl-and-com.md
@@ -50,15 +50,15 @@
             - name: Arquivos gerados para uma interface COM
               href: files-generated-for-a-com-interface.md
               items:
-                - name: O arquivo de proxy da interface
+                - name: O arquivo proxy da interface
                   href: the-interface-proxy-file.md
-                - name: Os arquivos de cabeçalho
+                - name: Os arquivos de header
                   href: the-header-files.md
-                - name: O arquivo UUID de interface
+                - name: O arquivo UUID da interface
                   href: the-interface-uuid-file.md
                 - name: O arquivo de registro da interface
                   href: the-interface-registration-file.md
-            - name: Empacotamento de tipos de dados OLE
+            - name: Marshaling de tipos de dados OLE
               href: marshaling-ole-data-types.md
         - name: MIDL e ODL
           href: midl-and-odl.md
@@ -69,14 +69,14 @@
               href: additional-files-required-to-generate-a-type-library-2.md
             - name: Diferenças entre MIDL e MkTypLib
               href: differences-between-midl-and-mktyplib.md
-            - name: Recursos de linguagem ODL no MIDL
+            - name: Recursos de linguagem ODL em MIDL
               href: odl-language-features-in-midl.md
             - name: Gerando uma DLL de proxy e uma biblioteca de tipos de um único arquivo IDL
               href: generating-a-proxy-dll-and-a-type-library-from-a-single-idl-file-2.md
-        - name: Componentes MIDLRT e Windows Runtime
+        - name: COMPONENTES MIDLRT e Windows Runtime
           href: midlrt-and-windows-runtime-components.md
           items:
-            - name: MDMERGE e arquivos de metadados
+            - name: Arquivos MDMERGE e de metadados
               href: mdmerge-and-metadata-files.md
               items:
                 - name: /i
@@ -110,24 +110,24 @@
       items:
         - name: Interfaces em objetos distribuídos
           href: interfaces-in-distributed-objects.md
-        - name: 'Bibliotecas COM, DCOM e tipos'
+        - name: 'Bibliotecas COM, DCOM e Type'
           href: com-dcom-and-type-libraries.md
-        - name: Arquivo de definição de interface (IDL)
+        - name: Arquivo IDL (definição de interface)
           href: interface-definition-idl-file.md
           items:
             - name: Tipos de dados no corpo da interface
               href: data-types-in-the-interface-body.md
               items:
-                - name: 'Definições de tipo, declarações de construção e importações'
+                - name: 'Definições de tipo, declarações de constructo e importações'
                   href: type-definitions-construct-declarations-and-imports.md
         - name: Atributos IDL
           href: idl-attributes.md
           items:
-            - name: Atributos de alias e empacotamento
+            - name: Atributos de alias e marshaling
               href: aliasing-and-marshaling-attributes.md
             - name: Atributos assíncronos
               href: asynchronous-attributes.md
-            - name: Atributos de matriz e de Sized-Pointer
+            - name: Atributos de matriz e Sized-Pointer dados
               href: array-and-sized-pointer-attributes.md
             - name: Atributos de tipo de dados
               href: data-type-attributes.md
@@ -135,72 +135,72 @@
               href: directional-attributes.md
             - name: Atributos de chamada de função
               href: function-call-attributes.md
-            - name: Atributos de cabeçalho de interface
+            - name: Atributos de header de interface
               href: interface-header-attributes.md
             - name: Atributos de desempenho
               href: performance-attributes.md
             - name: Atributos de tipo de ponteiro
               href: pointer-type-attributes.md
-            - name: Atributos de estrutura e União
+            - name: Atributos de estrutura e união
               href: structure-and-union-attributes.md
             - name: Atributos da biblioteca de tipos
               href: type-library-attributes.md
         - name: Arquivo de configuração de aplicativo (ACF)
           href: application-configuration-file-acf-.md
-        - name: Atributos de ACF
+        - name: Atributos do ACF
           href: acf-attributes.md
           items:
-            - name: Atributos de ACF de associação
+            - name: Associação de atributos do ACF
               href: binding-acf-attributes.md
-            - name: Atributos de ACF de otimização de stub
+            - name: Atributos ACF de otimização de stub
               href: stub-optimization-acf-attributes.md
-            - name: Type-Conversion e empacotamento de atributos ACF
+            - name: Type-Conversion e marshaling de atributos do ACF
               href: type-conversion-and-marshaling-acf-attributes.md
-            - name: Atributos de ACF de gerenciamento de memória
+            - name: Atributos do ACF de gerenciamento de memória
               href: memory-management-acf-attributes.md
-            - name: Atributos ACF de tratamento de erro e exceção
+            - name: Erro e tratamento de exceção atributos ACF
               href: error-and-exception-handling-acf-attributes.md
-            - name: Usando atributos de ACF em um arquivo IDL
+            - name: Usando atributos ACF em um arquivo IDL
               href: using-acf-attributes-in-an-idl-file.md
         - name: Tipos de dados MIDL
           href: midl-data-types.md
           items:
-            - name: Tipos base de MIDL
+            - name: Tipos base MIDL
               href: midl-base-types.md
               items:
-                - name: Tipos de base e predefinidos MIDL
+                - name: Tipos base e predefinidos MIDL
                   href: midl-predefined-and-base-types.md
-                - name: Tipos assinados e sem sinal
+                - name: Tipos assinados e não assinados
                   href: signed-vs--unsigned-types.md
                 - name: Outros tipos de dados MIDL
                   href: other-midl-data-types.md
-            - name: Matrizes de MIDL
+            - name: Matrizes MIDL
               href: midl-arrays.md
-            - name: Definições de tipo de MIDL
+            - name: Definições de tipo MIDL
               href: midl-type-definitions.md
-            - name: Tipos enumerados de MIDL
+            - name: Tipos enumerados MIDL
               href: midl-enumerated-types.md
             - name: Estruturas MIDL
               href: midl-structures.md
-            - name: Uniões de MIDL
+            - name: Uniões MIDL
               href: midl-unions.md
               items:
                 - name: Uniões encapsuladas
                   href: encapsulated-unions.md
-                - name: Uniões não encapsuladas
+                - name: Uniões não truncadas
                   href: nonencapsulated-unions.md
-            - name: Identificadores de associação de MIDL
+            - name: Alças de associação MIDL
               href: midl-binding-handles.md
         - name: Importando arquivos e bibliotecas de tipos
           href: importing-files-and-type-libraries.md
         - name: Importar arquivos de cabeçalho do sistema
           href: importing-system-header-files.md
-    - name: Referência de Command-Line de MIDL
+    - name: Referência de Command-Line MIDL
       href: midl-command-line-reference.md
       items:
-        - name: Sintaxe de linha de comando MIDL geral
+        - name: Sintaxe geral da linha de comando MIDL
           href: general-midl-command-line-syntax.md
-        - name: O comando arquivo de resposta
+        - name: O comando de arquivo de resposta
           href: the-response-file-command.md
         - name: /acf
           href: '-acf.md'
@@ -216,7 +216,7 @@
           href: '-c-ext.md'
         - name: /caux
           href: '-caux.md'
-        - name: /Char
+        - name: /char
           href: '-char.md'
         - name: /client
           href: '-client.md'
@@ -429,7 +429,7 @@
           href: dispinterface.md
         - name: displaybind
           href: displaybind.md
-        - name: DllName (Str)
+        - name: dllname(str)
           href: dllname-str-.md
         - name: double
           href: double.md
@@ -437,7 +437,7 @@
           href: dual.md
         - name: enable_allocate
           href: enable-allocate.md
-        - name: codificado
+        - name: Codificar
           href: encode.md
         - name: endpoint
           href: endpoint.md
@@ -457,7 +457,7 @@
           href: float.md
         - name: force_allocate
           href: force-allocate.md
-        - name: processamento
+        - name: Lidar com
           href: handle.md
         - name: handle_t
           href: handle-t.md
@@ -521,11 +521,11 @@
           href: long.md
         - name: max_is
           href: max-is.md
-        - name: Eu
+        - name: Talvez
           href: maybe.md
         - name: message
           href: message.md
-        - name: aviso de midl_pragma
+        - name: midl_pragma aviso
           href: midl-pragma-warning.md
         - name: midl_user_allocate
           href: midl-user-allocate-1.md
@@ -543,7 +543,7 @@
           href: ncacn-dnet-nsp.md
         - name: ncacn_http
           href: ncacn-http.md
-        - name: ncacn_ip_tcp
+        - name: Ncacn_ip_tcp
           href: ncacn-ip-tcp.md
         - name: ncacn_nb_ipx
           href: ncacn-nb-ipx.md
@@ -565,7 +565,7 @@
           href: ncadg-mq.md
         - name: ncalrpc
           href: ncalrpc.md
-        - name: Nocode
+        - name: nocode
           href: nocode.md
         - name: nonbrowsable
           href: nonbrowsable.md
@@ -573,7 +573,7 @@
           href: noncreatable.md
         - name: nonextensible
           href: nonextensible.md
-        - name: sobre
+        - name: Notificar
           href: notify.md
         - name: notify_flag
           href: notify-flag.md
@@ -712,7 +712,7 @@
     - name: Erros e avisos do compilador MIDL
       href: midl-compiler-errors-and-warnings.md
       items:
-        - name: Formatos de mensagem de erro e de aviso
+        - name: Formatos de mensagem de erro e aviso
           href: error-and-warning-message-formats.md
         - name: Erros de pré-processador
           href: preprocessor-errors.md

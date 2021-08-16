@@ -13,7 +13,7 @@ ms.locfileid: "118500690"
 ---
 # <a name="xmushortn2-operators"></a>Operadores XMUSHORTN2
 
-A [**estrutura XMUSHORTN2**](/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmushortn2) expõe os operadores a seguir.
+A estrutura [**XMUSHORTN2**](/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmushortn2) expõe os operadores a seguir.
 
 > [!Note]  
 > Os operadores listados aqui só estão disponíveis em C++.
@@ -26,7 +26,7 @@ A [**estrutura XMUSHORTN2**](/windows/desktop/api/DirectXPackedVector/ns-directx
 
 | Métodos                                                 | Descrição                                                                                                             |
 |---------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------|
-| [**operator =**](/windows/win32/api/directxpackedvector/nf-directxpackedvector-xmushortn2-operator-assign)<br/> | Atribui os dados do componente de vetor de uma instância `XMUSHORTN2` do à instância atual do `XMUSHORTN2` .<br/> |
+| [**operador =**](/windows/win32/api/directxpackedvector/nf-directxpackedvector-xmushortn2-operator-assign)<br/> | Atribui os dados do componente de vetor de uma instância do `XMUSHORTN2` à instância atual do `XMUSHORTN2` .<br/> |
 
 
 

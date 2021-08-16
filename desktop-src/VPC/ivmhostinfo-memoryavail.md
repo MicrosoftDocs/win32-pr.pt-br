@@ -1,11 +1,11 @@
 ---
-title: Propriedade IVMHostInfo MemoryAvail (VPCCOMInterfaces. h)
+title: Propriedade MemoryAvail IVMHostInfo (VPCCOMInterfaces.h)
 description: Recupera a quantidade de memória física disponível no computador host, em megabytes.
 ms.assetid: cb593d02-cdb9-40f6-b57f-72fc3278f1bb
 keywords:
-- Propriedade MemoryAvail Virtual PC
-- Propriedade MemoryAvail Virtual PC, interface IVMHostInfo
-- IVMHostInfo interface virtual PC, Propriedade MemoryAvail
+- Propriedade MemoryAvail Pc Virtual
+- Propriedade MemoryAvail Pc Virtual , interface IVMHostInfo
+- INTERFACE IVMHostInfo Pc Virtual , propriedade MemoryAvail
 topic_type:
 - apiref
 api_name:
@@ -24,9 +24,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118345675"
 ---
-# <a name="ivmhostinfomemoryavail-property"></a>Propriedade IVMHostInfo:: MemoryAvail
+# <a name="ivmhostinfomemoryavail-property"></a>Propriedade IVMHostInfo::MemoryAvail
 
-\[Windows O Virtual PC não está mais disponível para uso a partir de Windows 8. Em vez disso, use o [provedor WMI do Hyper-V (v2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
+\[Windows O PC virtual não está mais disponível para uso a partir Windows 8. Em vez disso, use o provedor WMI do [Hyper-V (V2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
 
 Recupera a quantidade de memória física disponível no computador host, em megabytes.
 
@@ -45,7 +45,7 @@ HRESULT get_MemoryAvail(
 
 ## <a name="property-value"></a>Valor da propriedade
 
-A memória física disponível, em megabytes. Esse valor é uma **variante** do tipo VT \_ decimal.
+A memória física disponível, em megabytes. Esse valor é uma **VARIANT do** tipo VT \_ DECIMAL.
 
 ## <a name="error-codes"></a>Códigos do Erro
 
@@ -54,8 +54,8 @@ A memória física disponível, em megabytes. Esse valor é uma **variante** do 
 | Nome/valor                                                                                                                                                    | Significado                                      |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------|
 | <dl> <dt>S \_ OK</dt> <dt>0</dt> </dl>                       | A operação foi bem-sucedida.<br/>     |
-| <dl> <dt>E \_ </dt> <dt>0X80004003</dt> de ponteiro </dl>         | O parâmetro é **NULL**.<br/>        |
-| <dl> <dt>DISP \_ E \_ </dt> <dt>0x80020009</dt> de exceção </dl> | Ocorreu um erro inesperado.<br/> |
+| <dl> <dt>E \_ PONTEIRO</dt> <dt>0x80004003</dt> </dl>         | O parâmetro é **NULL.**<br/>        |
+| <dl> <dt>DISP \_ E \_ EXCEPTION</dt> <dt>0x80020009</dt> </dl> | Ocorreu um erro inesperado.<br/> |
 
 
 
@@ -65,12 +65,12 @@ A memória física disponível, em megabytes. Esse valor é uma **variante** do 
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[somente aplicativos de área de trabalho Windows 7\]<br/>                                                    |
+| Cliente mínimo com suporte<br/> | Windows 7 \[ aplicativos da área de trabalho\]<br/>                                                    |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                     |
-| Fim do suporte do cliente<br/>    | Windows 7<br/>                                                                          |
+| Fim do suporte ao cliente<br/>    | Windows 7<br/>                                                                          |
 | Produto<br/>                  | Windows Virtual PC<br/>                                                                 |
-| Cabeçalho<br/>                   | <dl> <dt>VPCCOMInterfaces. h</dt> </dl> |
-| IID<br/>                      | IID \_ IVMHostInfo é definido como 5b5cf343-05ad-453b-be99-adf4e27b2ebc<br/>                |
+| Cabeçalho<br/>                   | <dl> <dt>VPCCOMInterfaces.h</dt> </dl> |
+| IID<br/>                      | IID IVMHostInfo é definido como \_ 5b5cf343-05ad-453b-be99-adf4e27b2ebc<br/>                |
 
 
 

@@ -1,10 +1,10 @@
 ---
-title: Métodos de propriedade IADsComputer (IADs. h)
-description: Os métodos de interface IADsComputer lêem e gravam as propriedades descritas neste tópico. Para obter mais informações, consulte interface Property Methods.
+title: Métodos de propriedade IADsComputer (Iads.h)
+description: Os métodos de interface IADsComputer leem e escrevem as propriedades descritas neste tópico. Para obter mais informações, consulte Métodos de propriedade de interface.
 ms.assetid: c990b6bb-6256-4216-9435-c85c67db4d13
 ms.tgt_platform: multiple
 keywords:
-- ADSI de métodos de propriedade IADsComputer
+- ADSI (métodos de propriedade IADsComputer)
 topic_type:
 - apiref
 api_name:
@@ -73,13 +73,13 @@ ms.locfileid: "118179574"
 ---
 # <a name="iadscomputer-property-methods"></a>Métodos de propriedade IADsComputer
 
-Os métodos de interface [**IADsComputer**](/windows/desktop/api/Iads/nn-iads-iadscomputer) lêem e gravam as propriedades descritas neste tópico. Para obter mais informações, consulte [interface Property Methods](interface-property-methods.md).
+Os métodos de interface [**IADsComputer**](/windows/desktop/api/Iads/nn-iads-iadscomputer) leem e escrevem as propriedades descritas neste tópico. Para obter mais informações, consulte [Métodos de propriedade de interface](interface-property-methods.md).
 
 ## <a name="properties"></a>Propriedades
 
 <dl> <dt>
 
-**Computadorid**
+**ComputerID**
 </dt> <dd> <dl>
 
 O identificador global exclusivo atribuído a cada computador.
@@ -107,11 +107,11 @@ HRESULT get_ComputerID(
 **Departamento**
 </dt> <dd> <dl>
 
-A UO (unidade organizacional), como departamento, à qual este computador pertence.
+A UO (unidade organizacional), como departamento, à que este computador pertence.
 
 <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
 Tipo de dados de script: **BSTR**
@@ -139,7 +139,7 @@ A descrição deste computador.
 
 <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
 Tipo de dados de script: **BSTR**
@@ -163,11 +163,11 @@ HRESULT put_Description(
 **Divisão**
 </dt> <dd> <dl>
 
-A divisão, dentro de uma organização, à qual este computador pertence.
+A divisão, dentro de uma organização, à que este computador pertence.
 
 <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
 Tipo de dados de script: **BSTR**
@@ -195,7 +195,7 @@ O local físico atribuído deste computador.
 
 <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
 Tipo de dados de script: **BSTR**
@@ -223,7 +223,7 @@ O tamanho, em megabytes, da memória de acesso aleatório para este computador.
 
 <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
 Tipo de dados de script: **BSTR**
@@ -247,11 +247,11 @@ HRESULT put_MemorySize(
 **Modelo**
 </dt> <dd> <dl>
 
-A marca e o modelo deste computador.
+A make e o modelo deste computador.
 
 <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
 Tipo de dados de script: **BSTR**
@@ -272,17 +272,17 @@ HRESULT put_Model(
 
 </dt> </dl> </dd> <dt>
 
-**Endereços de**
+**NetAddresses**
 </dt> <dd> <dl>
 
-Uma matriz de campos do netaddress que representam os endereços pelos quais esse computador pode ser alcançado. Netaddress é um **BSTR** específico de provedor composto por duas subcadeias de caracteres separadas por dois-pontos (:). A subcadeia de caracteres esquerda indica o tipo de endereço e a subcadeia de caracteres direita é uma representação de cadeia de caracteres de um endereço desse tipo. Por exemplo, os endereços TCP/IP estão no formato: IP: 100.201.301.45. Os endereços do tipo IPX são do formato: IPX: 10.123456.80.
+Uma matriz de campos NetAddress que representam os endereços pelos quais este computador pode ser alcançado. NetAddress é um **BSTR** específico do provedor composto por duas substrings separadas por dois-pontos (:). A substring esquerda indica o tipo de endereço e a substring direita é uma representação de cadeia de caracteres de um endereço desse tipo. Por exemplo, os endereços TCP/IP estão no formato: IP:100.201.301.45. Os endereços de tipo IPX são do formato: IPX:10.123456.80.
 
 <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
-Tipo de dados de script: **Variant**
+Tipo de dados de script: **VARIANT**
 </dt> <dt>
 
 
@@ -300,14 +300,14 @@ HRESULT put_NetAddresses(
 
 </dt> </dl> </dd> <dt>
 
-**Operacional**
+**Operatingsystem**
 </dt> <dd> <dl>
 
 O sistema operacional usado neste computador.
 
 <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
 Tipo de dados de script: **BSTR**
@@ -335,7 +335,7 @@ A versão do sistema operacional usada neste computador.
 
 <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
 Tipo de dados de script: **BSTR**
@@ -359,11 +359,11 @@ HRESULT put_OperatingSystemVersion(
 **Proprietário**
 </dt> <dd> <dl>
 
-A pessoa a quem este computador está atribuído. Essa pessoa também deve ter uma licença para executar o software instalado.
+A pessoa à qual este computador está atribuído. Essa pessoa também deve ter uma licença para executar o software instalado.
 
 <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
 Tipo de dados de script: **BSTR**
@@ -391,7 +391,7 @@ O nome da pessoa de contato, como um administrador, para este computador.
 
 <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
 Tipo de dados de script: **BSTR**
@@ -419,7 +419,7 @@ O tipo de processador.
 
 <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
 Tipo de dados de script: **BSTR**
@@ -447,7 +447,7 @@ O número de processadores instalados.
 
 <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
 Tipo de dados de script: **BSTR**
@@ -475,7 +475,7 @@ A função deste computador, por exemplo, estação de trabalho, servidor ou con
 
 <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
 Tipo de dados de script: **BSTR**
@@ -499,7 +499,7 @@ HRESULT put_Role(
 **Site**
 </dt> <dd> <dl>
 
-O identificador global exclusivo que identifica o site no qual este computador foi instalado. Um site é uma região física de boa conectividade em uma rede.
+O identificador global exclusivo que identifica o site em que este computador foi instalado. Um site é uma região física de boa conectividade em uma rede.
 
 <dt>
 
@@ -528,7 +528,7 @@ O tamanho, em megabytes, do disco.
 
 <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
 Tipo de dados de script: **BSTR**
@@ -553,15 +553,15 @@ HRESULT put_StorageCapacity(
 
 ## <a name="remarks"></a>Comentários
 
-Provedores diferentes podem optar por expor propriedades diferentes de um objeto de computador. Para obter mais informações, consulte [ADSI System Providers](adsi-system-providers.md).
+Provedores diferentes podem optar por expor propriedades diferentes de um objeto de computador. Para obter mais informações, consulte [Provedores de sistema ADSI](adsi-system-providers.md).
 
-Você pode descobrir quais propriedades têm suporte inspecionando as propriedades obrigatórias e opcionais por meio de sua classe de esquema. Para obter mais informações, consulte a interface [**IADsClass**](/windows/desktop/api/Iads/nn-iads-iadsclass) .
+Você pode descobrir quais propriedades têm suporte inspecionando as propriedades obrigatórias e opcionais por meio de sua classe de esquema. Para obter mais informações, consulte a interface [**IADsClass.**](/windows/desktop/api/Iads/nn-iads-iadsclass)
 
-Para examinar o status de um computador ou executar a operação de desligamento na rede, você deve usar a interface [**IADsComputerOperations**](/windows/desktop/api/Iads/nn-iads-iadscomputeroperations) .
+Para examinar o status de um computador ou para executar a operação de desligamento em toda a rede, você deve usar a interface [**IADsComputerOperations.**](/windows/desktop/api/Iads/nn-iads-iadscomputeroperations)
 
 ## <a name="examples"></a>Exemplos
 
-o exemplo de código a seguir Visual Basic examina as propriedades do computador com suporte pelo provedor ADSI WinNT.
+O exemplo Visual Basic código a seguir examina as propriedades do computador com suporte pelo provedor AdsI WinNT.
 
 
 ```VB
@@ -620,7 +620,7 @@ Cleanup:
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| parâmetro<br/>                   | <dl> <dt>IADs. h</dt> </dl>       |
+| Cabeçalho<br/>                   | <dl> <dt>Iads.h</dt> </dl>       |
 | DLL<br/>                      | <dl> <dt>Activeds.dll</dt> </dl> |
 | IID<br/>                      | IID IADsComputer é definido como \_ EFE3CC70-1D9F-11CF-B1F3-02608C9E7553<br/>         |
 

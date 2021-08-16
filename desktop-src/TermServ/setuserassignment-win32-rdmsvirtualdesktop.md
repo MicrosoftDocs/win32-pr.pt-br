@@ -4,9 +4,9 @@ description: Atribui uma área de trabalho virtual a um usuário.
 ms.assetid: 6a96ccb7-5d3d-4164-a0a3-286a700b414c
 ms.tgt_platform: multiple
 keywords:
-- Serviços de Área de Trabalho Remota do método SetUserAssignment
-- Método SetUserAssignment Serviços de Área de Trabalho Remota, classe Win32_RDMSVirtualDesktop
-- Classe Win32_RDMSVirtualDesktop Serviços de Área de Trabalho Remota, método SetUserAssignment
+- Método SetUserAssignment Serviços de Área de Trabalho Remota
+- Método SetUserAssignment Serviços de Área de Trabalho Remota , Win32_RDMSVirtualDesktop classe
+- Win32_RDMSVirtualDesktop classe Serviços de Área de Trabalho Remota , método SetUserAssignment
 topic_type:
 - apiref
 api_name:
@@ -44,14 +44,14 @@ uint32 SetUserAssignment(
 
 <dl> <dt>
 
-*Nome de usuário* \[ no\]
+*UserName* \[ Em\]
 </dt> <dd>
 
 O nome de usuário do usuário.
 
 </dd> <dt>
 
-*UserDomain* \[ no\]
+*UserDomain* \[ Em\]
 </dt> <dd>
 
 O nome de domínio do usuário.
@@ -70,8 +70,8 @@ Retorna 0 em caso de êxito; caso contrário, retorna um código de erro WMI.
 |-------------------------------------|---------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Nenhum compatível<br/>                                                                   |
 | Servidor mínimo com suporte<br/> | Windows Server 2012<br/>                                                              |
-| Namespace<br/>                | \\RDMs CIMv2 \\ raiz<br/>                                                                |
-| MOF<br/>                      | <dl> <dt>RDManagement. mof</dt> </dl> |
+| Namespace<br/>                | \\rdms CIMv2 \\ raiz<br/>                                                                |
+| MOF<br/>                      | <dl> <dt>RDManagement.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>RDMS.dll</dt> </dl>         |
 
 
@@ -80,7 +80,7 @@ Retorna 0 em caso de êxito; caso contrário, retorna um código de erro WMI.
 
 <dl> <dt>
 
-[**\_RDMSVirtualDesktop Win32**](win32-rdmsvirtualdesktop.md)
+[**Win32 \_ RDMSVirtualDesktop**](win32-rdmsvirtualdesktop.md)
 </dt> </dl>
 
  

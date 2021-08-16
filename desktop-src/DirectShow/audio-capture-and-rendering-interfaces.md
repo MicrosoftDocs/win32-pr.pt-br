@@ -4,16 +4,16 @@ ms.assetid: 79b42ffd-703a-4a7c-bb2d-5cfc2fbeb16c
 title: Interfaces de renderização e captura de áudio
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f941c1220f1adc06a686d702e9db21095a8cb7e6
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: a3ffdf586ec8566abddadcb0b7109680664963a63071472a3ac7aa895981e643
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105812856"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117824246"
 ---
 # <a name="audio-capture-and-rendering-interfaces"></a>Interfaces de renderização e captura de áudio
 
-Essas interfaces dão suporte à captura e renderização de áudio no DirectShow
+Essas interfaces dão suporte à captura e renderização de áudio em DirectShow
 
 
 

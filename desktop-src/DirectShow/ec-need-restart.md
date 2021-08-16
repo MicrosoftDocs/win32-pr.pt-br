@@ -1,17 +1,17 @@
 ---
 description: Um filtro está solicitando que o grafo seja reiniciado.
 ms.assetid: 58f17338-dd60-4b77-80d3-b6b6a76af9b2
-title: EC_NEED_RESTART (DShow. h)
+title: EC_NEED_RESTART (Dshow.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9651ae51b8dd8969a95b4f5e9d5093ec2e879f0a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: fae3426048229c19b1d35a061d67d3d1d0a3149a8f820e891987c88405b76f7a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105766994"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117820138"
 ---
-# <a name="ec_need_restart"></a>o EC \_ precisa ser \_ reiniciado
+# <a name="ec_need_restart"></a>EC \_ NEED \_ RESTART
 
 Um filtro está solicitando que o grafo seja reiniciado.
 
@@ -19,7 +19,7 @@ Um filtro está solicitando que o grafo seja reiniciado.
 
 <dl> <dt>
 
-<span id="lParam1"></span><span id="lparam1"></span><span id="LPARAM1"></span>*lParam1*
+<span id="lParam1"></span><span id="lparam1"></span><span id="LPARAM1"></span>*Lparam1*
 </dt> <dd>
 
 Zero.
@@ -35,11 +35,11 @@ Zero.
 
 ## <a name="default-action"></a>Ação Padrão
 
-O Gerenciador de gráfico de filtro pausa e reinicia o grafo. Ele não passa o evento para o aplicativo.
+O gerenciador de grafo de filtro pausa e reinicia o grafo. Ele não passa o evento para o aplicativo.
 
 ## <a name="remarks"></a>Comentários
 
-Se um filtro rejeitar um exemplo no meio de um fluxo, o PIN de upstream deixará de fornecer exemplos. O filtro pode reiniciar o fluxo enviando este evento. Por exemplo, o processador de áudio pode perder o acesso ao dispositivo de som, pois uma janela de vídeo perdeu o foco. Nesse ponto, o processador de áudio começa a rejeitar amostras. Quando ele recupera o acesso ao dispositivo de som, ele envia esse evento para reiniciar o fluxo de áudio.
+Se um filtro rejeitar uma amostra no meio de um fluxo, o pino upstream interromperá o fornecimento de amostras. O filtro pode reiniciar o fluxo enviando esse evento. Por exemplo, o renderador de áudio pode perder o acesso ao dispositivo de som, porque uma janela de vídeo perdeu o foco. Nesse ponto, o renderador de áudio começa a rejeitar exemplos. Quando ele recupera o acesso ao dispositivo de som, ele envia esse evento para reiniciar o fluxo de áudio.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -47,7 +47,7 @@ Se um filtro rejeitar um exemplo no meio de um fluxo, o PIN de upstream deixará
 
 | Requisito | Valor |
 |-------------------|------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>DShow. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>Dshow.h</dt> </dl> |
 
 
 
@@ -58,7 +58,7 @@ Se um filtro rejeitar um exemplo no meio de um fluxo, o PIN de upstream deixará
 [Códigos de notificação de eventos](event-notification-codes.md)
 </dt> <dt>
 
-[Notificação de eventos no DirectShow](event-notification-in-directshow.md)
+[Notificação de eventos DirectShow](event-notification-in-directshow.md)
 </dt> </dl>
 
  

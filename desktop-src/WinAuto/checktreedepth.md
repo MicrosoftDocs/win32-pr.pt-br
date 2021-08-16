@@ -15,7 +15,7 @@ ms.locfileid: "118325965"
 
 ## <a name="text"></a>Texto
 
-A árvore tem {0} níveis profundos.
+A árvore tem {0} níveis de profundidade.
 
 ## <a name="type"></a>Tipo
 
@@ -29,7 +29,7 @@ A profundidade da árvore de elementos para o destino de verificação.
 
 <dl> <dt>
 
-[Diretrizes para design de Interface do Usuário teclado](/previous-versions/windows/desktop/dnacc/guidelines-for-keyboard-user-interface-design)
+[Diretrizes para design de interface de usuário de teclado](/previous-versions/windows/desktop/dnacc/guidelines-for-keyboard-user-interface-design)
 </dt> <dt>
 
 [Windows Diretrizes de interação da experiência do usuário – teclado](https://msdn.microsoft.com/library/bb545460.aspx#guidelines)

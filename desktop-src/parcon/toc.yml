@@ -1,35 +1,35 @@
 - name: Controles dos pais
   href: parental-controls-portal.md
   items:
-    - name: O que há de novo nos controles dos pais do Windows 8
+    - name: Novidades nos controles Windows 8 pais
       href: what-s-new-in-windows-8-parental-controls.md
-    - name: O que há de novo nos controles dos pais do Windows 7
+    - name: Novidades nos controles Windows 7 pais
       href: what-s-new-in-windows-7-parental-controls.md
-    - name: Sobre os controles dos pais
+    - name: Sobre controles dos pais
       href: about-parental-controls.md
       items:
-        - name: Declaração de problema dos controles dos pais
+        - name: Declaração de problema de controles dos pais
           href: parental-controls-problem-statement.md
-        - name: Solução de segurança da família Windows
+        - name: Windows Solução de segurança de família
           href: windows-family-safety-solution.md
-        - name: Os pais controlam as principais decisões de design
+        - name: Decisões de design de chave dos controles dos pais
           href: parental-controls-key-design-decisions.md
         - name: Robustez dos controles dos pais
           href: parental-controls-robustness.md
         - name: Conjunto de recursos de controles dos pais
           href: parental-controls-feature-set.md
           items:
-            - name: Controles dos pais Top-Level interface do usuário
+            - name: Controles dos pais Top-Level Interface do Usuário
               href: parental-controls-top-level-user-interface.md
-            - name: Relatórios de atividade de controles dos pais
+            - name: Controles dos pais Sistema de Relatório de Atividades
               href: parental-controls-activity-reporting.md
             - name: Controles dos pais In-Box restrições e interfaces do usuário
               href: parental-controls-in-box-restrictions-and-user-interfaces.md
-            - name: Visão geral da API de controles dos pais
+            - name: Visão geral da API de Controles dos Pais
               href: parental-controls-api-overview.md
-            - name: Visão geral dos recursos de extensibilidade dos controles dos pais
+            - name: Visão geral dos recursos de extensibilidade de controles dos pais
               href: parental-controls-extensibility-features-overview.md
-        - name: Controle dos pais disponibilidade de SKU
+        - name: Disponibilidade de SKU dos Controles Dos Pais
           href: parental-controls-sku-availability.md
     - name: Usando controles dos pais
       href: using-parental-controls.md
@@ -43,17 +43,17 @@
         - name: Usando APIs de controles dos pais
           href: using-parental-controls-apis.md
           items:
-            - name: Usando APIs de configurações de controles pais
+            - name: Usando apIs de controles Configurações pais
               href: using-parental-controls-settings-apis.md
             - name: Usando APIs de log para controles dos pais
               href: using-logging-apis-for-parental-controls.md
     - name: Referência de controles dos pais
       href: parental-controls-reference.md
       items:
-        - name: Log de controles pelos pais
+        - name: Registro em log de controles dos pais
           href: parental-controls-logging.md
           items:
-            - name: Enumerações de log de controles pelos pais
+            - name: Enumerações de registro em log de controles dos pais
               href: parental-controls-logging-enumerations.md
               items:
                 - name: WPC_ARGS_CONVERSATIONINITEVENT
@@ -100,7 +100,7 @@
                   href: /windows/win32/api/Wpcevent/ne-wpcevent-wpcflag_isblocked
                 - name: WPCFLAG_LOGOFF_TYPE
                   href: /windows/win32/api/Wpcevent/ne-wpcevent-wpcflag_logoff_type
-            - name: Eventos de log de controles pelos pais
+            - name: Eventos de registro em log de controles dos pais
               href: parental-controls-logging-events.md
               items:
                 - name: WPCEVENT_CUSTOM evento
@@ -133,7 +133,7 @@
                   href: wpcevent-web-filedownload-event.md
                 - name: WPCEVENT_WEB_URLVISIT evento
                   href: wpcevent-web-urlvisit-event.md
-        - name: Controle dos pais API de conformidade mínima
+        - name: API de Conformidade Mínima dos Controles Dos Pais
           href: parental-controls-minimum-compliance-api.md
           items:
             - name: IWindowsParentalControls
@@ -146,7 +146,7 @@
                       href: /windows/desktop/api/Wpcapi/nf-wpcapi-iwindowsparentalcontrols-getgamessettings
                     - name: Método GetUserSettings
                       href: /windows/desktop/api/wpcapi/nf-wpcapi-iwindowsparentalcontrolscore-getusersettings
-                    - name: Método getvisibility
+                    - name: Método GetVisibility
                       href: /windows/desktop/api/wpcapi/nf-wpcapi-iwindowsparentalcontrolscore-getvisibility
                     - name: Método GetWebFilterInfo
                       href: /windows/desktop/api/wpcapi/nf-wpcapi-iwindowsparentalcontrolscore-getwebfilterinfo
@@ -168,7 +168,7 @@
                   items:
                     - name: Método GetLastSettingsChangeTime
                       href: /windows/desktop/api/Wpcapi/nf-wpcapi-iwpcsettings-getlastsettingschangetime
-                    - name: Método getrestrictions
+                    - name: Método GetRestrictions
                       href: /windows/desktop/api/Wpcapi/nf-wpcapi-iwpcsettings-getrestrictions
                     - name: Método IsLoggingRequired
                       href: /windows/desktop/api/Wpcapi/nf-wpcapi-iwpcsettings-isloggingrequired
@@ -182,7 +182,7 @@
                       href: /windows/desktop/api/Wpcapi/nf-wpcapi-iwpcwebsettings-getsettings
                     - name: Método RequestURLOverride
                       href: /windows/desktop/api/Wpcapi/nf-wpcapi-iwpcwebsettings-requesturloverride
-        - name: Controle dos pais API do provedor WMI
+        - name: API do provedor WMI de controles dos pais
           href: parental-controls-wmi-provider-api.md
           items:
             - name: IWPCProviderConfig
@@ -191,7 +191,7 @@
                 - name: Métodos IWPCProviderConfig
                   href: iwpcproviderconfig-methods.md
                   items:
-                    - name: Configurar método
+                    - name: Método Configure
                       href: /windows/desktop/api/Wpcapi/nf-wpcapi-iwpcproviderconfig-configure
                     - name: Método GetUserSummary
                       href: /windows/desktop/api/Wpcapi/nf-wpcapi-iwpcproviderconfig-getusersummary
@@ -203,9 +203,9 @@
                 - name: Métodos IWPCProviderState
                   href: iwpcproviderstate-methods.md
                   items:
-                    - name: Desabilitar método
+                    - name: Método Disable
                       href: /windows/desktop/api/Wpcapi/nf-wpcapi-iwpcproviderstate-disable
-                    - name: Habilitar método
+                    - name: Método Enable
                       href: /windows/desktop/api/Wpcapi/nf-wpcapi-iwpcproviderstate-enable
             - name: IWPCProviderSupport
               href: /windows/desktop/api/Wpcapi/nn-wpcapi-iwpcprovidersupport
@@ -215,7 +215,7 @@
                   items:
                     - name: Método GetCurrent
                       href: /windows/desktop/api/Wpcapi/nf-wpcapi-iwpcprovidersupport-getcurrent
-            - name: Controle dos pais esquema do provedor WMI
+            - name: Esquema do provedor WMI de controles dos pais
               href: parental-controls-wmi-provider-schema.md
     - name: Exemplos de controles dos pais
       href: parental-controls-samples.md

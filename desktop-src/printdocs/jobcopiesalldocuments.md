@@ -24,7 +24,7 @@ Especifica o número de cópias de um trabalho.
 
 
 
-| Name | Valor |
+| Nome | Valor |
 |----------------------------|-------------------------|
 | Tipo de elemento <br/>   | ParameterDef<br/> |
 | Prefixo de definição de scoping <br/> | Trabalho<br/>          |

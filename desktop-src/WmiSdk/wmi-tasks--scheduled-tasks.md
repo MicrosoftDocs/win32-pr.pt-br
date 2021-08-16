@@ -1,8 +1,8 @@
 ---
-description: As tarefas agendadas do WMI criam e obtêm informações sobre as tarefas agendadas. Para obter outros exemplos, consulte o TechNet ScriptCenter em https://www.microsoft.com/technet .
+description: As tarefas agendadas do WMI criam e geram informações sobre tarefas agendadas. Para outros exemplos, consulte o TechNet ScriptCenter em https://www.microsoft.com/technet .
 ms.assetid: 62151fe8-8880-43f2-b456-628bd9c7cc1c
 ms.tgt_platform: multiple
-title: 'Tarefas do WMI: tarefas agendadas'
+title: 'Tarefas WMI: tarefas agendadas'
 ms.topic: article
 ms.date: 05/31/2018
 topic_type:
@@ -10,35 +10,35 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 4051df4348ee47710b5d2d1f5dcc3f59f607d997
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ee4fcf193296d5c474987a3a99877b3bfb43868f79527200893303df351920cb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105752997"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117738835"
 ---
-# <a name="wmi-tasks-scheduled-tasks"></a>Tarefas do WMI: tarefas agendadas
+# <a name="wmi-tasks-scheduled-tasks"></a>Tarefas WMI: tarefas agendadas
 
-As tarefas agendadas do WMI criam e obtêm informações sobre as tarefas agendadas. Para obter outros exemplos, consulte o TechNet ScriptCenter em [https://www.microsoft.com/technet](https://technet.microsoft.com/default.aspx) .
+As tarefas agendadas do WMI criam e geram informações sobre tarefas agendadas. Para outros exemplos, consulte o TechNet ScriptCenter em [https://www.microsoft.com/technet](https://technet.microsoft.com/default.aspx) .
 
-Os exemplos de script mostrados neste tópico obtêm dados somente do computador local. Para obter mais informações sobre como usar o script para obter dados de computadores remotos, consulte [conectando-se ao WMI em um computador remoto](connecting-to-wmi-on-a-remote-computer.md).
+Os exemplos de script mostrados neste tópico só obtém dados do computador local. Para obter mais informações sobre como usar o script para obter dados de computadores remotos, consulte Conectando-se [ao WMI em um computador remoto.](connecting-to-wmi-on-a-remote-computer.md)
 
 
 O procedimento a seguir descreve como executar um script.
 
 **Para executar um script**
 
-1.  Copie o código e salve-o em um arquivo com uma extensão. vbs, como *filename.vbs*. Verifique se o editor de texto não adiciona uma extensão. txt ao arquivo.
-2.  Abra uma janela de prompt de comando e navegue até o diretório em que você salvou o arquivo.
+1.  Copie o código e salve-o em um arquivo com uma extensão .vbs, *como* filename.vbs. Verifique se o editor de texto não adiciona uma .txt de texto ao arquivo.
+2.  Abra uma janela do prompt de comando e navegue até o diretório em que você salvou o arquivo.
 3.  Digite **cscript filename.vbs** no prompt de comando.
-4.  Se você não puder acessar um log de eventos, verifique se você está executando a partir de um prompt de comandos com privilégios elevados. Alguns logs de eventos, como o log de eventos de segurança, podem ser protegidos por UAC (controles de acesso do usuário).
+4.  Se não for possível acessar um log de eventos, verifique se você está executando em um prompt de comando Elevado. Alguns log de eventos, como o Log de Eventos de Segurança, podem ser protegidos por UAC (Controles de Acesso do Usuário).
 
 > [!Note]  
-> Por padrão, o cscript exibe a saída de um script na janela de prompt de comando. Como os scripts WMI podem produzir grandes quantidades de saída, convém redirecionar a saída para um arquivo. Digite **cscript filename.vbs > outfile.txt** no prompt de comando para redirecionar a saída do script de *filename.vbs* para *outfile.txt*.
+> Por padrão, o cscript exibe a saída de um script na janela do prompt de comando. Como os scripts WMI podem produzir grandes quantidades de saída, talvez você queira redirecionar a saída para um arquivo. Digite **cscript filename.vbs > outfile.txt** no prompt de comando para redirecionar a saída do script *filename.vbs* para *outfile.txt*.
 
  
 
-A tabela a seguir lista os exemplos de script que podem ser usados para obter vários tipos de dados do computador local.
+A tabela a seguir lista exemplos de script que podem ser usados para obter vários tipos de dados do computador local.
 
 
 
@@ -56,7 +56,7 @@ A tabela a seguir lista os exemplos de script que podem ser usados para obter v�
 <tbody>
 <tr class="odd">
 <td>... criar tarefas agendadas usando scripts?</td>
-<td>Use a classe <a href="/windows/desktop/CIMWin32Prov/win32-scheduledjob"><strong>Win32_ScheduledJob</strong></a> e o método <a href="/windows/desktop/CIMWin32Prov/create-method-in-class-win32-scheduledjob"><strong>Create</strong></a> . Se você estiver tendo dificuldades para fazer essa tarefa funcionar no Windows 7 ou posterior, consulte a seção <strong>Win32_ScheduledJob</strong> comentários; Provavelmente, suas configurações estão impedindo o uso da classe.<br/> <span data-codelanguage="VisualBasic"></span>
+<td>Use a <a href="/windows/desktop/CIMWin32Prov/win32-scheduledjob"><strong>Win32_ScheduledJob</strong></a> e o <a href="/windows/desktop/CIMWin32Prov/create-method-in-class-win32-scheduledjob"><strong>método</strong></a> Create. Se você estiver tendo dificuldades para fazer essa tarefa funcionar no Windows 7 ou posterior, consulte a <strong>seção Win32_ScheduledJob</strong> comentários; provavelmente suas configurações estão impedindo que você use a classe .<br/> <span data-codelanguage="VisualBasic"></span>
 <table>
 <colgroup>
 <col style="width: 100%" />
@@ -85,11 +85,11 @@ End If</code></pre></td>
 </tbody>
 </table>
 
-<p>Na cadeia de caracteres * * * * * * * &quot; * 143000.000000-420 &quot; (usado no valor do parâmetro <em>StartTime</em> do método <a href="/windows/desktop/CIMWin32Prov/create-method-in-class-win32-scheduledjob"><strong>Create</strong></a> ), * * * * * * &quot; * * 143000, 0 &quot; especifica que a tarefa começa às 14,30 (2:30 P.M.) e &quot; -420 &quot; especifica o fuso horário. O número de fuso horário é a diferença atual da tradução de tempo local. A tendência é a diferença entre a hora UTC e a hora local. Para calcular a tendência de seu fuso horário, multiplique o número de horas em que o fuso horário está adiantado ou atrasado no horário de Greenwich (GMT) por 60 (use um número positivo para o número de horas se o fuso horário estiver à frente do GMT e um número negativo se o fuso horário estiver atrás do GMT). Adicione um 60 adicional ao seu cálculo se o seu fuso horário estiver usando o horário de verão. Por exemplo, o fuso horário padrão do Pacífico é de oito horas atrás do GMT, portanto, a tendência é igual a-420 (-8 * 60 + 60) quando o horário de verão está em uso e-480 (-8 * 60) quando o horário de verão não está em uso. Você também pode determinar o valor da tendência consultando a propriedade Bias da classe <a href="/windows/desktop/CIMWin32Prov/win32-timezone"><strong>Win32_TimeZone</strong></a> .</p></td>
+<p>Na cadeia de &quot; caracteres ******143000.000000-420 (usado no valor do parâmetro StartTime do método &quot; <em>Create),</em> <a href="/windows/desktop/CIMWin32Prov/create-method-in-class-win32-scheduledjob"><strong></strong></a> &quot; *******143000.000000 especifica que a tarefa começa em &quot; 14.30 (2:30 P.M.) e &quot; -420 especifica &quot; o fuso horário. O número do fuso horário é o desvio atual da tradução de horário local. O desvio é a diferença entre a hora UTC e a hora local. Para calcular o desvio para o fuso horário, multiplique o número de horas que seu fuso horário está à frente ou atrás de GMT (Horário de Greenwich) por 60 (use um número positivo para o número de horas se o fuso horário estiver à frente de GMT e um número negativo se o fuso horário estiver atrás de GMT). Adicione mais 60 ao cálculo se o fuso horário estiver usando o horário de verão. Por exemplo, o Fuso Horário Padrão do Pacífico está oito horas atrás do GMT, portanto, o desvio é igual a -420 (-8 * 60 + 60) quando o horário de verão está em uso e -480 (-8 * 60) quando o horário de verão não está em uso. Você também pode determinar o valor do desvio consultando a propriedade bias da <a href="/windows/desktop/CIMWin32Prov/win32-timezone"><strong>classe Win32_TimeZone.</strong></a></p></td>
 </tr>
 <tr class="even">
 <td>... retornar uma lista de todas as tarefas agendadas em um computador?</td>
-<td><p>Use a classe <a href="/windows/desktop/CIMWin32Prov/win32-scheduledjob"><strong>Win32_ScheduledJob</strong></a> . Observe que essa classe só pode retornar trabalhos que são criados usando um script ou AT.exe. Ele não pode retornar informações sobre trabalhos que são criados pelo ou modificados pelo assistente de tarefa agendada.</p>
+<td><p>Use a <a href="/windows/desktop/CIMWin32Prov/win32-scheduledjob"><strong>classe Win32_ScheduledJob.</strong></a> Observe que essa classe só pode retornar trabalhos criados usando um script ou AT.exe. Ele não pode retornar informações sobre trabalhos criados pelo ou modificados pelo assistente de Tarefa Agendada.</p>
 <div class="code">
 <span data-codelanguage="VisualBasic"></span>
 <table>
@@ -144,13 +144,13 @@ Next</code></pre></td>
 
 <dl> <dt>
 
-[Tarefas do WMI para scripts e aplicativos](wmi-tasks-for-scripts-and-applications.md)
+[Tarefas WMI para scripts e aplicativos](wmi-tasks-for-scripts-and-applications.md)
 </dt> <dt>
 
-[Exemplos de aplicativos WMI C++](wmi-c---application-examples.md)
+[Exemplos de aplicativo WMI C++](wmi-c---application-examples.md)
 </dt> <dt>
 
-[ScriptCenter do TechNet](https://www.microsoft.com/technet/scriptcenter)
+[TechNet ScriptCenter](https://www.microsoft.com/technet/scriptcenter)
 </dt> </dl>
 
  

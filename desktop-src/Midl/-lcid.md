@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 370548bb9899ce84173f2321a129aaeda1c6fe81
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: b5ceff1f9a4ef2f6c95a8dac12ff689995efe4fdd3619cf48e11043967fec053
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104293329"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118385509"
 ---
 # <a name="lcid-switch"></a>comutador/LCID
 
@@ -34,7 +34,7 @@ midl /lcid localeID
 *localeID* 
 </dt> <dd>
 
-Especifica o identificador de localidade de 32 bits usado no suporte ao idioma nacional do Windows. O identificador de localidade deve ser especificado em decimal.
+especifica o identificador de localidade de 32 bits usado em Windows suporte ao idioma nacional. O identificador de localidade deve ser especificado em decimal.
 
 </dd> </dl>
 
@@ -45,7 +45,7 @@ Nos arquivos de entrada, você pode usar comentários localizados, cadeias de ca
 > [!Note]  
 > A opção **/LCID** está disponível com o MIDL versão 3.01.75 e posterior.
 
- 
+ 
 
 ## <a name="examples"></a>Exemplos
 
@@ -61,9 +61,9 @@ Nos arquivos de entrada, você pode usar comentários localizados, cadeias de ca
 [**LCID**](lcid.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

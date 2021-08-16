@@ -1,9 +1,9 @@
 ---
 title: Elemento Task
-description: Define a tarefa que é executada pelo serviço de Agendador de Tarefas.
+description: Define a tarefa executada pelo serviço Agendador de Tarefas.
 ms.assetid: 103a332a-8620-4e0c-81b5-4782d85fc391
 keywords:
-- Elemento de tarefa Agendador de Tarefas
+- Elemento Task Agendador de Tarefas
 topic_type:
 - apiref
 api_name:
@@ -22,7 +22,7 @@ ms.locfileid: "118356229"
 ---
 # <a name="task-element"></a>Elemento Task
 
-Define a tarefa que é executada pelo serviço de Agendador de Tarefas.
+Define a tarefa executada pelo serviço Agendador de Tarefas.
 
 ``` syntax
 <xs:element name="Task"
@@ -61,12 +61,12 @@ Define a tarefa que é executada pelo serviço de Agendador de Tarefas.
 
 | Elemento                                                                           | Type                                                                                 | Descrição                                                                                                                         |
 |-----------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| [**Ações**](taskschedulerschema-actions-tasktype-element.md)                   | [**ActionType**](taskschedulerschema-actionstype-complextype.md)                   | Especifica as ações executadas pela tarefa.<br/>                                                                             |
-| [**Dados**](taskschedulerschema-data-tasktype-element.md)                         | [**Tipo de dados**](taskschedulerschema-datatype-complextype.md)                         | Especifica os dados de adição associados à tarefa, mas, caso contrário, não são usados pelo serviço de Agendador de Tarefas.<br/>         |
+| [**Ações**](taskschedulerschema-actions-tasktype-element.md)                   | [**actionsType**](taskschedulerschema-actionstype-complextype.md)                   | Especifica as ações executadas pela tarefa.<br/>                                                                             |
+| [**Dados**](taskschedulerschema-data-tasktype-element.md)                         | [**Datatype**](taskschedulerschema-datatype-complextype.md)                         | Especifica os dados de adição associados à tarefa, mas, caso contrário, não são Agendador de Tarefas serviço.<br/>         |
 | [**Principals**](taskschedulerschema-principals-tasktype-element.md)             | [**principalsType**](taskschedulerschema-principalstype-complextype.md)             | Especifica os contextos de segurança que podem ser usados para executar a tarefa.<br/>                                                        |
 | [**RegistrationInfo**](taskschedulerschema-registrationinfo-tasktype-element.md) | [**registrationInfoType**](taskschedulerschema-registrationinfotype-complextype.md) | Especifica informações administrativas sobre a tarefa, como o autor da tarefa e a data em que a tarefa é registrada.<br/> |
-| [**Configurações**](taskschedulerschema-settings-tasktype-element.md)                 | [**settingstype**](taskschedulerschema-settingstype-complextype.md)                 | Especifica as configurações que o Agendador de Tarefas usa para executar a tarefa.<br/>                                                 |
-| [**Gatilhos**](taskschedulerschema-triggers-tasktype-element.md)                 | [**TriggerType**](taskschedulerschema-triggerstype-complextype.md)                 | Especifica os gatilhos que iniciam a tarefa.<br/>                                                                              |
+| [**Configurações**](taskschedulerschema-settings-tasktype-element.md)                 | [**settingsType**](taskschedulerschema-settingstype-complextype.md)                 | Especifica as configurações que o Agendador de Tarefas usa para executar a tarefa.<br/>                                                 |
+| [**Gatilhos**](taskschedulerschema-triggers-tasktype-element.md)                 | [**triggersType**](taskschedulerschema-triggerstype-complextype.md)                 | Especifica os gatilhos que iniciam a tarefa.<br/>                                                                              |
 
 
 
@@ -74,7 +74,7 @@ Define a tarefa que é executada pelo serviço de Agendador de Tarefas.
 
 Para desenvolvimento em C++, consulte [**ITaskDefinition**](/windows/desktop/api/taskschd/nn-taskschd-itaskdefinition).
 
-Para o desenvolvimento de scripts, consulte [**TaskDefinition**](taskdefinition.md).
+Para desenvolvimento de scripts, [**consulte TaskDefinition**](taskdefinition.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -82,8 +82,8 @@ Para o desenvolvimento de scripts, consulte [**TaskDefinition**](taskdefinition.
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
 
 
 

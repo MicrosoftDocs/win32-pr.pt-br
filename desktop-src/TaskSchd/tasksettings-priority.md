@@ -1,11 +1,11 @@
 ---
-title: Propriedade TaskSettings.Priority
-description: Para scripts, obtém ou define o nível de prioridade da tarefa.
+title: Propriedade TaskSettings. Priority
+description: Para scripts, Obtém ou define o nível de prioridade da tarefa.
 ms.assetid: 2548fcb6-c649-4822-a2ea-77546aac2ec5
 keywords:
-- Propriedades de prioridade Agendador de Tarefas
-- A propriedade Priority Agendador de Tarefas objeto , TaskSettings
-- Objeto TaskSettings Agendador de Tarefas propriedade , Prioridade
+- Agendador de Tarefas da propriedade Priority
+- Propriedade Priority Agendador de Tarefas, objeto TaskSettings
+- Agendador de Tarefas de objeto TaskSettings, Propriedade Priority
 topic_type:
 - apiref
 api_name:
@@ -23,11 +23,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118354823"
 ---
-# <a name="tasksettingspriority-property"></a>Propriedade TaskSettings.Priority
+# <a name="tasksettingspriority-property"></a>Propriedade TaskSettings. Priority
 
-Para scripts, obtém ou define o nível de prioridade da tarefa.
+Para scripts, Obtém ou define o nível de prioridade da tarefa.
 
-Essa propriedade é leitura/gravação.
+Esta propriedade é de leitura/gravação.
 
 ## <a name="syntax"></a>Syntax
 
@@ -40,35 +40,35 @@ TaskSettings.Priority As Integer
 
 ## <a name="property-value"></a>Valor da propriedade
 
-O nível de prioridade (0 a 10) da tarefa. O padrão é 7.
+O nível de prioridade (0-10) da tarefa. O padrão é 7.
 
 ## <a name="remarks"></a>Comentários
 
-O nível de prioridade 0 é a prioridade mais alta e o nível de prioridade 10 é a prioridade mais baixa. O valor padrão é 7. Os níveis de prioridade 7 e 8 são usados para tarefas em segundo plano e os níveis de prioridade 4, 5 e 6 são usados para tarefas interativas.
+O nível de prioridade 0 é a prioridade mais alta, e o nível de prioridade 10 é a prioridade mais baixa. O valor padrão é 7. Os níveis de prioridade 7 e 8 são usados para tarefas em segundo plano, e os níveis de prioridade 4, 5 e 6 são usados para tarefas interativas.
 
-A ação da tarefa é iniciada em um processo com uma prioridade baseada em um valor de Classe De Prioridade. Um valor de Nível de Prioridade (prioridade de thread) é usado para ações de tarefa de email, caixa de mensagem e manipulador COM. Para obter mais informações sobre os valores de Classe de Prioridade e Nível de Prioridade, consulte [Agendando prioridades](/windows/desktop/ProcThread/scheduling-priorities). A tabela a seguir lista os valores possíveis para o parâmetro *priority* e os valores de Priority Class e Priority Level correspondentes.
+A ação da tarefa é iniciada em um processo com uma prioridade baseada em um valor de classe de prioridade. Um valor de nível de prioridade (prioridade de thread) é usado para o manipulador COM, a caixa de mensagem e as ações de tarefa de email. Para obter mais informações sobre a classe de prioridade e os valores de nível de prioridade, consulte [prioridades de agendamento](/windows/desktop/ProcThread/scheduling-priorities). A tabela a seguir lista os valores possíveis para o parâmetro *Priority* e os valores de classe de prioridade e nível de prioridade correspondentes.
 
 
 
-| Prioridade da *tarefa* | Classe Priority                 | Nível de prioridade                   |
+| *Prioridade* da tarefa | Classe de prioridade                 | Nível de prioridade                   |
 |-----------------|--------------------------------|----------------------------------|
-| 0               | CLASSE \_ PRIORITY EM TEMPO \_ REAL      | TEMPO CRÍTICO \_ DE \_ PRIORIDADE DO \_ THREAD |
-| 1               | CLASSE \_ DE ALTA \_ PRIORIDADE          | PRIORIDADE DE THREAD \_ \_ MAIS ALTA        |
-| 2               | ACIMA \_ DA CLASSE DE PRIORIDADE \_ \_ NORMAL | PRIORIDADE \_ DE THREAD ACIMA DO \_ \_ NORMAL  |
-| 3               | ACIMA \_ DA CLASSE DE PRIORIDADE \_ \_ NORMAL | PRIORIDADE \_ DE THREAD ACIMA DO \_ \_ NORMAL  |
-| 4               | CLASSE \_ DE PRIORIDADE \_ NORMAL        | PRIORIDADE \_ DE \_ THREAD NORMAL         |
-| 5               | CLASSE \_ DE PRIORIDADE \_ NORMAL        | PRIORIDADE \_ DE \_ THREAD NORMAL         |
-| 6               | CLASSE \_ DE PRIORIDADE \_ NORMAL        | PRIORIDADE \_ DE \_ THREAD NORMAL         |
-| 7               | ABAIXO \_ DA CLASSE DE PRIORIDADE \_ \_ NORMAL | PRIORIDADE \_ DO THREAD ABAIXO DO \_ \_ NORMAL  |
-| 8               | ABAIXO \_ DA CLASSE DE PRIORIDADE \_ \_ NORMAL | PRIORIDADE \_ DO THREAD ABAIXO DO \_ \_ NORMAL  |
-| 9               | CLASSE PRIORITY \_ \_ IDLE          | PRIORIDADE DE THREAD \_ \_ MAIS BAIXA         |
-| 10              | CLASSE PRIORITY \_ \_ IDLE          | THREAD \_ PRIORITY \_ IDLE           |
+| 0               | \_classe de prioridade em tempo real \_      | tempo de prioridade de THREAD \_ \_ \_ crítico |
+| 1               | \_classe de prioridade alta \_          | prioridade de THREAD \_ \_ mais alta        |
+| 2               | ACIMA \_ da \_ classe de prioridade normal \_ | prioridade de THREAD \_ \_ acima do \_ normal  |
+| 3               | ACIMA \_ da \_ classe de prioridade normal \_ | prioridade de THREAD \_ \_ acima do \_ normal  |
+| 4               | \_classe de prioridade normal \_        | prioridade de THREAD \_ \_ normal         |
+| 5               | \_classe de prioridade normal \_        | prioridade de THREAD \_ \_ normal         |
+| 6               | \_classe de prioridade normal \_        | prioridade de THREAD \_ \_ normal         |
+| 7               | ABAIXO \_ da \_ classe de prioridade normal \_ | prioridade de THREAD \_ \_ abaixo do \_ normal  |
+| 8               | ABAIXO \_ da \_ classe de prioridade normal \_ | prioridade de THREAD \_ \_ abaixo do \_ normal  |
+| 9               | \_classe de prioridade ociosa \_          | \_prioridade \_ mais baixa da thread         |
+| 10              | \_classe de prioridade ociosa \_          | prioridade de THREAD \_ \_ ociosa           |
 
 
 
  
 
-Ao ler ou escrever XML para uma tarefa, essa configuração é especificada no elemento [**Priority (settingsType)**](taskschedulerschema-priority-settingstype-element.md) do esquema Agendador de Tarefas.
+Ao ler ou gravar XML para uma tarefa, essa configuração é especificada no elemento [**Priority (settingstype)**](taskschedulerschema-priority-settingstype-element.md) do esquema de Agendador de tarefas.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -76,9 +76,9 @@ Ao ler ou escrever XML para uma tarefa, essa configuração é especificada no e
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                          |
-| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                    |
-| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd.tlb</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                          |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                    |
+| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd. tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 
 

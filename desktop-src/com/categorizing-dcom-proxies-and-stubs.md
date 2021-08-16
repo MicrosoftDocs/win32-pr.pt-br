@@ -4,12 +4,12 @@ description: Categorizando proxies e stubs DCOM
 ms.assetid: f5d117d6-6c2c-4beb-8869-1581a5b1846f
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 31685cd1318856b9e305246cfebc2cebb3a7874e
-ms.sourcegitcommit: 5f33645661bf8c825a7a2e73950b1f4ea0f1cd82
+ms.openlocfilehash: 5f45f61d89e31316975685d3e603a93d30559546c86abc3b63e8e7e8a0c83ff1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "105782563"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118310863"
 ---
 # <a name="categorizing-dcom-proxies-and-stubs"></a>Categorizando proxies e stubs DCOM
 
@@ -24,6 +24,6 @@ DCOM realiza o marshaling de referências a objetos por meio da construção de 
 [Categorias de componentes](component-categories.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

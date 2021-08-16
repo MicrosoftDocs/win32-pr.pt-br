@@ -3,7 +3,7 @@ title: Mensagem de TB_SETBUTTONINFO (commctrl. h)
 description: Define as informações de um botão existente em uma barra de ferramentas.
 ms.assetid: ac9b88b9-d0d0-4669-a342-708924d97c8b
 keywords:
-- Controles de TB_SETBUTTONINFO de mensagens do Windows
+- controles de Windows de mensagem de TB_SETBUTTONINFO
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 70612a90f245a25dde5a487917d7c3b669424ea8
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 8e9fa1da0f9556c025b83ac2b3345680fe11dac0dd15e202ed7336cacfe511e1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103824753"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117829620"
 ---
 # <a name="tb_setbuttoninfo-message"></a>TB de \_ mensagem SETBUTTONINFO
 
@@ -45,7 +45,7 @@ Ponteiro para uma estrutura [**TBBUTTONINFO**](/windows/desktop/api/Commctrl/ns-
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retornará zero se for bem-sucedido ou nenhum outro.
 
@@ -59,9 +59,9 @@ Normalmente, o texto é atribuído a botões quando eles são adicionados a uma 
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 | Nomes Unicode e ANSI<br/>   | **TB \_ SETBUTTONINFOW** (Unicode) e **TB \_ SETBUTTONINFOA** (ANSI)<br/>         |
 
 

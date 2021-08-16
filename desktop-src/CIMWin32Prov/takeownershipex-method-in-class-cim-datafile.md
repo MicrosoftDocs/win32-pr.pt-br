@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 41124567e8743227f46c9cb3b84dcb0d1f788bc3
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: baf0ffe9d9eb961d07731ee9967b32e940dbdb3231935588387972433c61aa74
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104457124"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117834582"
 ---
 # <a name="takeownershipex-method-of-the-cim_datafile-class"></a>Método TakeOwnerShipEx da classe de \_ datafilefiles CIM
 
@@ -72,7 +72,7 @@ Se **for true**, o método também será aplicado recursivamente a arquivos e di
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um valor de 0 (zero) em caso de êxito e qualquer outro número para indicar um erro. Para obter códigos de erro adicionais, consulte [**constantes de erro WMI**](/windows/desktop/WmiSdk/wmi-error-constants) ou [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para obter valores gerais de **HRESULT** , consulte [códigos de erro do sistema](/windows/desktop/Debug/system-error-codes).
 
@@ -88,7 +88,7 @@ Retorna um valor de 0 (zero) em caso de êxito e qualquer outro número para ind
 **2**
 </dt> <dd>
 
-Acesso negado.
+Acesso negado
 
 </dd> <dt>
 

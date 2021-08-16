@@ -1,9 +1,9 @@
 ---
-title: Tipo simples de filePath
+title: Tipo simples filePath
 description: Define uma cadeia de caracteres que contém um caminho totalmente qualificado para um arquivo.
 ms.assetid: a9b8f40a-fecd-4325-b068-a5aca3133134
 keywords:
-- Caminho de log de tipo simples de filePath
+- filePath tipo simples EventLog
 topic_type:
 - apiref
 api_name:
@@ -20,7 +20,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118343992"
 ---
-# <a name="filepath-simple-type"></a>Tipo simples de filePath
+# <a name="filepath-simple-type"></a>Tipo simples filePath
 
 Define uma cadeia de caracteres que contém um caminho totalmente qualificado para um arquivo. O caminho pode conter variáveis de ambiente.
 
@@ -38,8 +38,8 @@ Define uma cadeia de caracteres que contém um caminho totalmente qualificado pa
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[somente aplicativos de área de trabalho Windows 7\]<br/>              |
-| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do Server 2008 R2\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows 7 \[ aplicativos da área de trabalho\]<br/>              |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho do Server 2008 R2 \[\]<br/> |
 
 
 

@@ -1,7 +1,7 @@
 ---
-description: A \_ classe NIC HWConfig é a classe de tipo de evento para eventos de configuração de placa de interface de rede. A sintaxe a seguir é simplificada do código MOF.
+description: A classe NIC HWConfig é a classe de tipo de evento para \_ eventos de configuração de placa de interface de rede. A sintaxe a seguir é simplificada do código MOF.
 ms.assetid: e544a27b-17f8-402c-9c92-578cf2a38ca8
-title: Classe HWConfig_NIC
+title: HWConfig_NIC classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -20,9 +20,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118394720"
 ---
-# <a name="hwconfig_nic-class"></a>\_Classe NIC HWConfig
+# <a name="hwconfig_nic-class"></a>Classe NIC HWConfig \_
 
-A **classe \_ NIC HWConfig** é a classe de tipo de evento para eventos de configuração de placa de interface de rede.
+A **classe \_ NIC HWConfig é** a classe de tipo de evento para eventos de configuração de placa de interface de rede.
 
 A sintaxe a seguir é simplificada do código MOF.
 
@@ -57,7 +57,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: WmiDataId (1), StringTermination ("NullTerminated"), Format ("w")
+Qualificadores: WmiDataId(1), StringTermination("NullTerminated"), Format("w")
 </dt> </dl>
 
 Nome da placa de interface de rede.
@@ -70,7 +70,7 @@ Nome da placa de interface de rede.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho XP\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho XP\]<br/> |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                   |
 
 

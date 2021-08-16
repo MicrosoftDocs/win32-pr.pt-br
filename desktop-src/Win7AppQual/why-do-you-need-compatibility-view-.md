@@ -4,12 +4,12 @@ ms.assetid: 5B8D3A76-F30B-4F17-9257-0B6ED7F2D753
 title: Por que você precisa do modo de exibição de compatibilidade?
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9991e9dc0c2edcd66ae6655c094f17b240be985a
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 5653ae72b3cbf3c21bd2458c1561c1d8823f2b883711e2c3890c16f792254b1f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108113374"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118328650"
 ---
 # <a name="why-do-you-need-compatibility-view"></a>Por que você precisa do modo de exibição de compatibilidade?
 
@@ -17,9 +17,9 @@ O recurso de modo de exibição de compatibilidade segue um conjunto de regras p
 
 ![ilustração do ícone de página quebrada ao lado da barra de endereços](images/iecompatview.png)
 
-Se um usuário clicar no ícone, o Windows Internet Explorer 8 alternará os modos de renderização e a página recarregará instantaneamente.
+se um usuário clicar no ícone, Windows o Internet Explorer 8 alternará os modos de renderização e a página recarregará instantaneamente.
 
-Os usuários nem sempre veem esse ícone. É uma solução secundária em vez do mecanismo de compatibilidade de aplicativo primário. O Windows Internet Explorer exibe esse ícone somente quando uma alteração no modo de exibição de compatibilidade faz sentido, como quando um usuário exibe páginas no modo de padrões. Em todos os outros casos, por exemplo, quando um usuário exibe páginas de modo informais ou exibe sites de zona de intranet, o ícone não é exibido. Para obter mais informações sobre o modo de exibição de compatibilidade e quando o ícone é exibido, consulte [introdução à exibição de compatibilidade](/archive/blogs/ie/).
+Os usuários nem sempre veem esse ícone. É uma solução secundária em vez do mecanismo de compatibilidade de aplicativo primário. Windows O Internet Explorer exibe esse ícone somente quando uma alteração no modo de exibição de compatibilidade faz sentido, como quando um usuário exibe páginas no modo de padrões. Em todos os outros casos, por exemplo, quando um usuário exibe páginas de modo informais ou exibe sites de zona de intranet, o ícone não é exibido. Para obter mais informações sobre o modo de exibição de compatibilidade e quando o ícone é exibido, consulte [introdução à exibição de compatibilidade](/archive/blogs/ie/).
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

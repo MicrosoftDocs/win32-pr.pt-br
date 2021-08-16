@@ -4,12 +4,12 @@ ms.assetid: 98411c75-519f-4ace-999f-1ea22457ed4a
 title: Atributo MF_PD_ASF_INFO_HAS_VIDEO (Wmcontainer. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6c1a11f672ec4063d14131946ef4e1a820cc3ee7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 46b5012a7fc20628cf8b50a4fc72242c02779623beb8126525a51501f51e412a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105802096"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117876267"
 ---
 # <a name="mf_pd_asf_info_has_video-attribute"></a>\_Informações ASF do MF PD \_ \_ \_ têm atributo de \_ vídeo
 
@@ -33,9 +33,9 @@ O método [**IMFASFContentInfo:: GeneratePresentationDescriptor**](/windows/desk
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                     |
-| parâmetro<br/>                   | <dl> <dt>Wmcontainer. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                           |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                     |
+| Cabeçalho<br/>                   | <dl> <dt>Wmcontainer. h</dt> </dl> |
 
 
 

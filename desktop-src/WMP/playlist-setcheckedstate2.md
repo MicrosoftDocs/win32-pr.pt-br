@@ -1,9 +1,9 @@
 ---
-title: PLAYLIST.setCheckedState2
-description: O método setCheckedState2 define o estado verificado do item com o índice especificado no elemento PLAYLIST.
+title: PLAYLIST. setCheckedState2
+description: O método setCheckedState2 define o estado de ativação do item com o índice especificado no elemento PLAYLIST.
 ms.assetid: 241221a3-810b-422d-8f73-25c5b5c82c70
 keywords:
-- PLAYLIST.setCheckedState2 Windows Media Player
+- Windows Media Player de PLAYLIST. setCheckedState2
 topic_type:
 - apiref
 api_name:
@@ -20,9 +20,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118336215"
 ---
-# <a name="playlistsetcheckedstate2"></a>PLAYLIST.setCheckedState2
+# <a name="playlistsetcheckedstate2"></a>PLAYLIST. setCheckedState2
 
-O **método setCheckedState2** define o estado verificado do item com o índice especificado no elemento **PLAYLIST.**
+O método **setCheckedState2** define o estado de ativação do item com o índice especificado no elemento **playlist** .
 
 ``` syntax
         elementID.setCheckedState(item, checked)
@@ -32,27 +32,27 @@ O **método setCheckedState2** define o estado verificado do item com o índice 
 
 <dl> <dt>
 
-<span id="item"></span><span id="ITEM"></span>*Item*
+<span id="item"></span><span id="ITEM"></span>*item*
 </dt> <dd>
 
-**Número** (**longo**) que indica o índice do item de playlist a ser verificado ou desmarcado.
+**Número** (**longo**) que indica o índice do item da playlist a ser marcado ou desmarcado.
 
 </dd> <dt>
 
-<span id="checked"></span><span id="CHECKED"></span>*Verificado*
+<span id="checked"></span><span id="CHECKED"></span>*check*
 </dt> <dd>
 
-**Booliana** que indica se o item especificado deve ser verificado (true) ou desmarcado (false).
+**Booliano** que indica se o item especificado deve ser marcado (true) ou desmarcado (false).
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor Retornado
 
-Esse método retorna um **booliana.**
+Esse método retorna um **valor booleano**.
 
 ## <a name="remarks"></a>Comentários
 
-Esse método pode trabalhar com playlists aninhadas e substitui o **método setCheckedState,** que não pode. Você pode definir todos os itens para o estado solicitado especificando 1 no parâmetro *item.*
+Esse método pode trabalhar com listas de reprodução aninhadas e substituir o método **Setcheckstate** , que não pode. Você pode definir todos os itens para o estado solicitado especificando 1 no parâmetro *Item* .
 
 ## <a name="requirements"></a>Requisitos
 
@@ -60,7 +60,7 @@ Esse método pode trabalhar com playlists aninhadas e substitui o **método setC
 
 | Requisito | Valor |
 |--------------------|---------------------------------------------------|
-| Versão<br/> | Windows Media Player série 9 ou posterior<br/> |
+| Versão<br/> | Windows Media Player 9 Series ou posterior<br/> |
 
 
 
@@ -71,7 +71,7 @@ Esse método pode trabalhar com playlists aninhadas e substitui o **método setC
 [**Elemento PLAYLIST**](playlist-element.md)
 </dt> <dt>
 
-[**PLAYLIST.setCheckedState**](playlist-setcheckedstate.md)
+[**PLAYLIST. setcheckstate**](playlist-setcheckedstate.md)
 </dt> </dl>
 
  

@@ -3,7 +3,7 @@ title: Elemento smartPlaylist
 description: O elemento smartPlaylist contém a parte definida dinamicamente de uma playlist.
 ms.assetid: 05912849-7475-4eb9-a7bd-00f20b80b1cf
 keywords:
-- Elemento smartPlaylist do Windows Media Player
+- Windows Media Player do elemento smartPlaylist
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 511294af2de4343cb7f63db4312d530aadf57da6
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a21d685759e9e8b27c881ceaec6595535b3c4b799eb28ecd94dd96a3a571ec99
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105797935"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119763466"
 ---
 # <a name="smartplaylist-element"></a>Elemento smartPlaylist
 
@@ -116,7 +116,7 @@ Um elemento **smartPlaylist** normalmente contém um elemento **queryset** e tam
 [**Elemento seq**](seq-element.md)
 </dt> <dt>
 
-[**Referência de elementos da playlist do Windows Media**](windows-media-playlist-elements-reference.md)
+[**Windows Referência de elementos de playlist de mídia**](windows-media-playlist-elements-reference.md)
 </dt> </dl>
 
  

@@ -1,5 +1,5 @@
 ---
-description: 'Saiba mais sobre: classe EsentPartiallyAttachedDBException'
+description: 'Saiba mais sobre: Classe EsentPartiallyAttachedDBException'
 title: Classe EsentPartiallyAttachedDBException
 TOCTitle: EsentPartiallyAttachedDBException class
 ms:assetid: T:Microsoft.Isam.Esent.Interop.EsentPartiallyAttachedDBException
@@ -33,20 +33,20 @@ ms.locfileid: "118492157"
 ---
 # <a name="esentpartiallyattacheddbexception-class"></a>Classe EsentPartiallyAttachedDBException
 
-Classe base para JET_err. PartiallyAttachedDB exceções.
+Classe base para JET_err. Exceções PartiallyAttachedDB.
 
 ## <a name="inheritance-hierarchy"></a>Hierarquia de herança
 
 [System.Object](/dotnet/api/system.object)  
   [System.Exception](/dotnet/api/system.exception)  
-    [Microsoft. ISAM. ESENT. EsentException](./esentexception-class.md)  
-      [Microsoft. ISAM. ESENT. Interop. EsentErrorException](./esenterrorexception-class.md)  
-        [Microsoft. ISAM. ESENT. Interop. EsentApiException](./esentapiexception-class.md)  
-          [Microsoft. ISAM. ESENT. Interop. EsentUsageException](./esentusageexception-class.md)  
-            Microsoft. ISAM. ESENT. Interop. EsentPartiallyAttachedDBException  
+    [Microsoft.Isam.Esent.EsentException](./esentexception-class.md)  
+      [Microsoft.Isam.Esent.Interop.EsentErrorException](./esenterrorexception-class.md)  
+        [Microsoft.Isam.Esent.Interop.EsentApiException](./esentapiexception-class.md)  
+          [Microsoft.Isam.Esent.Interop.EsentUsageException](./esentusageexception-class.md)  
+            Microsoft.Isam.Esent.Interop.EsentPartiallyAttachedDBException  
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Syntax
 
@@ -72,6 +72,6 @@ Qualquer membro estático público (Shared no Visual Basic) desse tipo é seguro
 
 #### <a name="reference"></a>Referência
 
-[Membros do EsentPartiallyAttachedDBException](./esentpartiallyattacheddbexception-members.md)
+[Membros EsentPartiallyAttachedDBException](./esentpartiallyattacheddbexception-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

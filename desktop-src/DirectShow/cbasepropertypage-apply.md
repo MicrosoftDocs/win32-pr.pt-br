@@ -1,7 +1,7 @@
 ---
-description: 'O método Apply aplica os valores da página de propriedades atual ao objeto associado à página de propriedades. Esse método implementa o método IPropertyPage:: apply.'
+description: O método Apply aplica os valores de página da propriedade atual ao objeto associado à página de propriedades. Esse método implementa o método IPropertyPage::Apply.
 ms.assetid: 9fe759d1-2b46-4489-b7b8-b5a35330091d
-title: Método CBasePropertyPage. Apply (cProp. h)
+title: Método CBasePropertyPage.Apply (Cprop.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 21d1208979cca167b059cb720c492ac51c362c39
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 9350aa7aaa4e2bfdcb72385d26b09b9d7a9bdf33deb05e273b0663485da1a5bd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105749631"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117823222"
 ---
-# <a name="cbasepropertypageapply-method"></a>Método CBasePropertyPage. Apply
+# <a name="cbasepropertypageapply-method"></a>Método CBasePropertyPage.Apply
 
-O `Apply` método aplica os valores da página de propriedades atual ao objeto associado à página de propriedades. Esse método implementa o método **IPropertyPage:: apply** .
+O `Apply` método aplica os valores de página da propriedade atual ao objeto associado à página de propriedades. Esse método implementa o **método IPropertyPage::Apply.**
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,16 +40,16 @@ HRESULT Apply();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna um valor **HRESULT** . Os possíveis valores incluem os seguintes.
+Retorna um **valor HRESULT.** Os possíveis valores incluem os seguintes.
 
 
 
 | Código de retorno                                                                                  | Descrição                    |
 |----------------------------------------------------------------------------------------------|--------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>         | Êxito.<br/>            |
-| <dl> <dt>**E \_ inesperado**</dt> </dl> | Falha inesperada.<br/> |
+| <dl> <dt>**E \_ UNEXPECTED**</dt> </dl> | Falha inesperada.<br/> |
 
 
 
@@ -57,7 +57,7 @@ Retorna um valor **HRESULT** . Os possíveis valores incluem os seguintes.
 
 ## <a name="remarks"></a>Comentários
 
-Se o sinalizador [**CBasePropertyPage:: m \_ BDirty**](cbasepropertypage-m-bdirty.md) for **true**, esse método chamará o método [**CBasePropertyPage:: OnApplyChanges**](cbasepropertypage-onapplychanges.md) . Substitua **OnApplyChanges** para aplicar as alterações ao objeto.
+Se o [**sinalizador CBasePropertyPage::m \_ bDirty**](cbasepropertypage-m-bdirty.md) for **TRUE,** esse método chamará o [**método CBasePropertyPage::OnApplyChanges.**](cbasepropertypage-onapplychanges.md) Substitua **OnApplyChanges** para aplicar as alterações ao objeto .
 
 ## <a name="requirements"></a>Requisitos
 
@@ -65,8 +65,8 @@ Se o sinalizador [**CBasePropertyPage:: m \_ BDirty**](cbasepropertypage-m-bdirt
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>CProp. h (incluir fluxos. h)</dt> </dl>                                                                                     |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Cprop.h (incluir Fluxos.h)</dt> </dl>                                                                                     |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

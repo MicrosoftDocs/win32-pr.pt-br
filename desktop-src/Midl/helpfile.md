@@ -1,9 +1,9 @@
 ---
 title: atributo helpfile
-description: O atributo \ HelpFile \ define o nome do arquivo de ajuda para uma biblioteca de tipos. Todos os tipos em uma biblioteca compartilham o mesmo arquivo de ajuda.
+description: O atributo \ helpfile\ define o nome do arquivo de Ajuda para uma biblioteca de tipos. Todos os tipos em uma biblioteca compartilham o mesmo arquivo de Ajuda.
 ms.assetid: caa248b1-a1a7-4c36-886a-079a66a01907
 keywords:
-- MIDL do atributo HelpFile
+- atributo helpfile MIDL
 topic_type:
 - apiref
 api_name:
@@ -21,7 +21,7 @@ ms.locfileid: "118384015"
 ---
 # <a name="helpfile-attribute"></a>atributo helpfile
 
-O atributo **\[ HelpFile \]** define o nome do arquivo de ajuda para uma biblioteca de tipos. Todos os tipos em uma biblioteca compartilham o mesmo arquivo de ajuda.
+O **\[ atributo \] helpfile** define o nome do arquivo de Ajuda para uma biblioteca de tipos. Todos os tipos em uma biblioteca compartilham o mesmo arquivo de Ajuda.
 
 ``` syntax
 [
@@ -39,21 +39,21 @@ library
 
 <dl> <dt>
 
-*UUID-número* 
+*uuid-number* 
 </dt> <dd>
 
 Especifica um número de identificação universalmente exclusivo para a [**biblioteca**](library.md).
 
 </dd> <dt>
 
-*nome do arquivo* 
+*Filename* 
 </dt> <dd>
 
-Especifica o nome do arquivo que contém o texto de ajuda.
+Especifica o nome do arquivo que contém o texto da ajuda.
 
 </dd> <dt>
 
-*lista de atributos opcionais* 
+*optional-attribute-list* 
 </dt> <dd>
 
 Especifica zero ou mais atributos que o compilador MIDL aplicará à [**biblioteca**](library.md).
@@ -63,13 +63,13 @@ Especifica zero ou mais atributos que o compilador MIDL aplicará à [**bibliote
 *instruções de biblioteca* 
 </dt> <dd>
 
-Especifica uma ou mais instruções MIDL que definem a interface da biblioteca.
+Especifica uma ou mais instruções MIDL que definem a interface de biblioteca.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-Use as funções **GetDocumentation** nas interfaces **ITypeLib** e **ITypeInfo** para recuperar o nome do arquivo.
+Use as **funções GetDocumentation** nas interfaces **ITypeLib** e **ITypeInfo** para recuperar o nome do arquivo.
 
 ## <a name="examples"></a>Exemplos
 
@@ -90,10 +90,10 @@ library Hello
 
 <dl> <dt>
 
-[**biblioteca**](library.md)
+[**Biblioteca**](library.md)
 </dt> <dt>
 
-[Sintaxe do arquivo ODL](/previous-versions/windows/desktop/automat/odl-file-syntax)
+[Sintaxe de arquivo ODL](/previous-versions/windows/desktop/automat/odl-file-syntax)
 </dt> <dt>
 
 [Exemplo de arquivo ODL](/previous-versions/windows/desktop/automat/odl-file-example)

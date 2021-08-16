@@ -14,14 +14,14 @@ ms.locfileid: "118361457"
 ---
 # <a name="sdo-tasks"></a>Tarefas de SDO
 
-As seções a seguir fornece código de exemplo para realizar tarefas específicas usando a API SDO.
+As seções a seguir fornecem um código de exemplo para realizar tarefas específicas usando a API de SDO.
 
 -   [Adicionando um cliente](/windows/desktop/Nps/sdo-adding-a-client)
--   [Alterando o número de discagem Configurações](/windows/desktop/Nps/sdo-changing-dial-in-settings)
+-   [alterando Configurações de discagem](/windows/desktop/Nps/sdo-changing-dial-in-settings)
 -   [Criando uma política de solicitação de conexão](/windows/desktop/Nps/sdo-creating-a-connection-request-policy)
 -   [Listando perfis, políticas e clientes](/windows/desktop/Nps/sdo-listing-profiles-policies-and-clients)
 -   [Obtendo propriedades de contabilidade](/windows/desktop/Nps/sdo-obtaining-accounting-properties)
--   [Processamento de realms e manipulação de atributos](/windows/desktop/Nps/sdo-realms-processing-and-attribute-manipulation)
+-   [Processamento de territórios e manipulação de atributos](/windows/desktop/Nps/sdo-realms-processing-and-attribute-manipulation)
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

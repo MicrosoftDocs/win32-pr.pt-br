@@ -1,6 +1,6 @@
 ---
-title: Backup e restauração do Windows 7 preteridos
-description: Backup e restauração do Windows 7 preteridos
+title: Windows 7 Backup e Restauração preterido
+description: Windows 7 Backup e Restauração preterido
 ms.assetid: 89FB9C1B-FEE8-4508-9501-EA139F3706F7
 ms.topic: article
 ms.date: 05/31/2018
@@ -11,28 +11,28 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118211225"
 ---
-# <a name="windows-7-backup-and-restore-deprecated"></a>Backup e restauração do Windows 7 preteridos
+# <a name="windows-7-backup-and-restore-deprecated"></a>Windows 7 Backup e Restauração preterido
 
 ## <a name="platform"></a>Plataforma
 
-**clientes** – Windows 8 
+**Clientes** – Windows 8 
 
 
 ## <a name="description"></a>Descrição
 
-Embora não haja nenhuma alteração comportamental para backup e restauração, essa função está sendo preterida e não será atualizada. Ele raramente era usado e sua funcionalidade foi substituída pelo novo recurso de histórico de arquivos. ele será fornecido em Windows 8 e entusiastas que fizeram a atualização do Windows 7 para Windows 8 ou dependem do backup e restauração ou do backup de imagem de disco ainda poderão usá-lo. No entanto, todos os pontos de acesso para backup e restauração, com exceção do painel de controle, foram removidos. o miniaplicativo do painel de controle usado pelo Backup e restauração foi renomeado para a recuperação de arquivo do Windows 7.
+Embora não haja nenhuma alteração comportamental para Backup e Restauração, essa função está sendo preterida e não será atualizada. Ele raramente foi usado e sua funcionalidade foi substituída pelo novo Histórico de Arquivos recurso. Ele será Windows 8 e os entusiados que atualizaram do Windows 7 para o Windows 8 ou dependem do backup e restauração ou backup de imagem de disco ainda poderão usá-lo. No entanto, todos os pontos de acesso para Backup e Restauração, com exceção do Painel de Controle, foram removidos. O Painel de Controle applet usado pelo Backup e Restauração foi renomeado para Windows Recuperação de Arquivos 7.
 
-Os OEMs que estavam definindo a chave do registro para desabilitar a notificação de backup em suas imagens não precisarão mais fazer isso.
+Os OEMs que estavam definindo a chave do Registro para desabilitar a notificação de backup em suas imagens não precisarão mais fazer isso.
 
-Não recomendamos o uso de ambos os recursos ao mesmo tempo. O histórico de arquivos verifica se o agendamento de backup existe e se está ativo e se encontra um, ele não permitirá que os usuários o ativem. nesse caso, os usuários que desejarem usar o histórico de arquivos precisarão excluir o agendamento de Backup do Windows.
+Não recomendamos o uso de ambos os recursos ao mesmo tempo. Histórico de Arquivos verifica se o agendamento de backup existe e se está ativo e, se encontrar um, ele não permitirá que os usuários o a liguem. Nesse caso, os usuários que quiserem usar Histórico de Arquivos terão que excluir o Backup do Windows agendamento.
 
 ## <a name="manifestation"></a>Manifestação
 
-os fluxos de trabalho podem ser interrompidos e a documentação que se refere ao método anterior para acessar o recurso de Backup do Windows e restauração precisará ser atualizada para refletir essas alterações.
+Os fluxos de trabalho podem ser interrompidos e a documentação que se refere ao método anterior para acessar o Backup do Windows e o recurso De restauração precisarão ser atualizados para refletir essas alterações.
 
 ## <a name="mitigation"></a>Atenuação
 
-Os aplicativos que podem disparar backup e restauração devem ser regravados para verificar se o histórico de arquivos está ativado e permitir que os usuários escolham seu método preferido.
+Os aplicativos que podem disparar Backup e Restauração devem ser reescritos para verificar se Histórico de Arquivos está ativado e permitir que os usuários escolham seu método preferencial.
 
  
 

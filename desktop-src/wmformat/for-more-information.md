@@ -1,37 +1,37 @@
 ---
 title: Para obter mais informações (Windows Media Format SDK)
-description: Use estes recursos adicionais para obter as informações adicionais mais recentes sobre o SDK do Windows Media Format.
+description: Use estes recursos adicionais para obter as informações adicionais mais recentes sobre o SDK do formato de mídia Windows.
 ms.assetid: 74933db2-3800-4d49-8720-7e677f208e49
 keywords:
-- SDK do Windows Media Format, informações adicionais
+- Windows SDK do formato de mídia, informações adicionais
 - DRM (gerenciamento de direitos digitais), informações adicionais
 - DRM (gerenciamento de direitos digitais), informações adicionais
-- SDK do Windows Media Format, recursos
+- Windows SDK do formato de mídia, recursos
 - DRM (gerenciamento de direitos digitais), recursos
 - DRM (gerenciamento de direitos digitais), recursos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ba9a9758bdd2c7571ed6d3f7d769a3511e5d456f
-ms.sourcegitcommit: 51ef825fb48f15e1aa30e8795988f10dc2b2155c
+ms.openlocfilehash: 3870327295c3bb16b32b84bc4d8f02d92af20829f5112e9dff6eb481dc835961
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "112067882"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117848125"
 ---
 # <a name="for-more-information-windows-media-format-sdk"></a>Para obter mais informações (Windows Media Format SDK)
 
--   Para obter as informações mais recentes sobre problemas conhecidos com o SDK do Windows Media Format, consulte as notas de versão publicadas no [site da biblioteca MSDN](/documentation/?url=%2flibrary%2fdnwmt%2fhtml%2fwmfsdk11_b2_release_notes_rzxb.asp%3fframe%3dtrue).
--   Para obter recursos, artigos e respostas para perguntas frequentes sobre streaming de mídia em geral e os SDKs do Windows Media em particular, consulte o Windows Media Developer Center no [site da Microsoft](https://msdn.microsoft.com/windowsmedia/default.aspx).
--   Para obter mais informações sobre como obter uma licença para o Windows Media Format SDK, consulte a página Windows Media Licensing no [site da Microsoft](https://msdn.microsoft.com/library/ms867178.aspx).
--   Para obter mais informações sobre grupos de notícias, visite a página grupos de notícias e aliases de email do Windows Media no [site da Microsoft](https://windows.microsoft.com/windows/products/windows-media).
+-   para obter as informações mais recentes sobre problemas conhecidos com o SDK do formato de mídia Windows, consulte as notas de versão publicadas no [site do Biblioteca MSDN](/documentation/?url=%2flibrary%2fdnwmt%2fhtml%2fwmfsdk11_b2_release_notes_rzxb.asp%3fframe%3dtrue).
+-   para obter recursos, artigos e respostas para perguntas frequentes sobre streaming de mídia em geral e os Windows SDKs de mídia em particular, consulte o Windows media developer Center no [site da Microsoft](https://msdn.microsoft.com/windowsmedia/default.aspx).
+-   para obter mais informações sobre como obter uma licença para o SDK do formato de mídia do Windows, consulte a página de licenciamento do Windows media no [site da Microsoft](https://msdn.microsoft.com/library/ms867178.aspx).
+-   para obter mais informações sobre grupos de notícias, visite a página Windows os grupos de notícias de mídia e aliases de email no [site da Microsoft](https://windows.microsoft.com/windows/products/windows-media).
 -   Para obter descrições detalhadas e de baixo nível dos objetos de dados que compõem arquivos ASF, baixe a especificação do ASF no [site da Microsoft](https://download.microsoft.com/download/7/9/0/790fecaa-f64a-4a5e-a430-0bccdab3f1b4/ASF_Specification.doc).
--   Para obter recursos, artigos, práticas recomendadas e respostas para perguntas frequentes sobre o DRM (gerenciamento de direitos digitais) e o Windows Media Rights Manager, consulte os artigos técnicos na página de [Rights Management digital](/documentation/?url=%2flibrary%2fdnwmt%2fhtml%2fdigitalrightsmanagement.asp) no site da Microsoft.
+-   para obter recursos, artigos, práticas recomendadas e respostas para perguntas frequentes sobre o DRM (gerenciamento de direitos digitais) e Windows o gerenciador de direitos de mídia, consulte os artigos técnicos na página de [Rights Management digital](/documentation/?url=%2flibrary%2fdnwmt%2fhtml%2fdigitalrightsmanagement.asp) no site da Microsoft.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[**Sobre o SDK do Windows Media Format**](about-the-windows-media-format-sdk.md)
+[**sobre o SDK do formato de mídia Windows**](about-the-windows-media-format-sdk.md)
 </dt> </dl>
 
  

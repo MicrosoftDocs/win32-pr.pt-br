@@ -14,12 +14,12 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 579cee086798e64abd07b25cc4f7bb14405157dd
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d2da95cca7bf19182dd4c0f5f385715256ae9c5253c356094110c028fb1b016d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105783383"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117818126"
 ---
 # <a name="iresizeput_size-method"></a>IResize: método de tamanho de UT:p \_
 
@@ -61,14 +61,14 @@ A largura do vídeo, em pixels.
 
 </dd> <dt>
 
-*Flags* \[in\]
+*Sinalizadores* \[ de no\]
 </dt> <dd>
 
 O modo de ampliação. Consulte [**redimensionar sinalizadores**](resize-flags.md) para obter os valores possíveis.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um valor **HRESULT** .
 
@@ -86,7 +86,7 @@ O parâmetro *flags* especifica como o filtro deve executar a operação de redi
  
 
 > [!Note]  
-> Para obter o QEdit. h, baixe a [atualização SDK do Microsoft Windows para Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). O QEdit. h não está disponível no SDK do Microsoft Windows para Windows 7 e .NET Framework 3,5 Service Pack 1.
+> para obter o Qedit. h, baixe a [atualização SDK do Microsoft Windows para Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit. h não está disponível no SDK do Microsoft Windows para Windows 7 e .NET Framework 3,5 Service Pack 1.
 
  
 
@@ -97,7 +97,7 @@ O parâmetro *flags* especifica como o filtro deve executar a operação de redi
 | Requisito | Valor |
 |--------------------|-----------------------------------------------------------------------------------------|
 | Versão<br/> | DirectX 9,0 ou posterior<br/>                                                         |
-| parâmetro<br/>  | <dl> <dt>QEdit. h</dt> </dl>      |
+| Cabeçalho<br/>  | <dl> <dt>QEdit. h</dt> </dl>      |
 | Biblioteca<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
 
 

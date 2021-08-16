@@ -1,15 +1,15 @@
 ---
-title: Criando o controle Windows Media Player programaticamente
-description: Criando o controle Windows Media Player programaticamente
+title: criando o controle de Windows Media Player programaticamente
+description: criando o controle de Windows Media Player programaticamente
 ms.assetid: 9a4856ce-6a44-47fb-b863-59ce4deb0597
 keywords:
 - Windows Media Player, criando ActiveX controle programaticamente
 - Windows Media Player modelo de objeto, criando ActiveX controle programaticamente
 - modelo de objeto, criando ActiveX controle programaticamente
-- Windows Media Player Móvel, criando ActiveX controle programaticamente
+- Windows Media Player móvel, criando ActiveX controle programaticamente
 - Windows Media Player ActiveX controle, criando programaticamente
-- Windows Media Player Controle ActiveX dispositivo móvel, criando programaticamente
-- ActiveX controle, criando programaticamente
+- Windows Media Player controle de ActiveX móvel, criando programaticamente
+- controle de ActiveX, criando programaticamente
 - criando ActiveX controle programaticamente
 ms.topic: article
 ms.date: 05/31/2018
@@ -20,20 +20,20 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118340959"
 ---
-# <a name="creating-the-windows-media-player-control-programmatically"></a>Criando o controle Windows Media Player programaticamente
+# <a name="creating-the-windows-media-player-control-programmatically"></a>criando o controle de Windows Media Player programaticamente
 
-Quando você adiciona o Windows Media Player a um formulário da Caixa de Ferramentas, um objeto da classe **AxWMPLib.AxWindowsMediaPlayer** é criado. Essa classe wrapper fornece ao Player toda a funcionalidade de um controle ActiveX, incluindo o acesso às propriedades da interface do usuário, como **Localização** **e Tamanho.**
+quando você adiciona o controle de Windows Media Player a um formulário da caixa de ferramentas, um objeto da classe **AxWMPLib. AxWindowsMediaPlayer** é criado. essa classe wrapper fornece ao Player toda a funcionalidade de um controle de ActiveX, incluindo o acesso às propriedades da interface do usuário, como **local** e **tamanho**.
 
-Se você não precisar das propriedades expostas pelo **AxWindowsMediaPlayer** ou se seu aplicativo não tiver uma interface gráfica do usuário, poderá criar um controle Player programaticamente. Nesse caso, você cria um objeto da **classe WMPLib.WindowsMediaPlayer.**
+Se você não precisar das propriedades expostas por **AxWindowsMediaPlayer**, ou se seu aplicativo não tiver uma interface gráfica do usuário, você poderá criar um controle de jogador programaticamente. Nesse caso, você cria um objeto da classe **WMPLib. WindowsMediaPlayer** .
 
 > [!Note]  
-> Como o **objeto WindowsMediaPlayer** não é empacotado como um controle ActiveX, ele não tem nenhuma propriedade herdada de **System.Windows. Forms.Control.** Como resultado, a propriedade **Controls** não é renomeada para **CtlControls,** pois está em **AxWindowsMediaPlayer**.
+> como o objeto **WindowsMediaPlayer** não é encapsulado como um controle ActiveX, ele não tem nenhuma propriedade herdada de **System. Windows. Forms. Control**. Como resultado, a propriedade **Controls** não é renomeada como **CtlControls**, pois está em **AxWindowsMediaPlayer**.
 
  
 
-Para criar o Windows Media Player programaticamente, você deve primeiro adicionar uma referência ao wmp.dll, que é encontrado na pasta \\ Windows \\ system32. Adicionar essa referência cria WMPLib.dll na pasta do projeto e uma referência a WMPLib é exibida Gerenciador de Soluções.
+para criar o controle de Windows Media Player de forma programática, você deve primeiro adicionar uma referência a wmp.dll, que é encontrado na \\ \\ pasta Windows system32. A adição dessa referência cria WMPLib.dll na pasta do projeto e uma referência a WMPLib aparece em Gerenciador de Soluções.
 
-O código de exemplo a seguir, parte de uma classe Form1, mostra como criar um **objeto Player** e reproduzir um arquivo. Quando a reprodução termina ou se o arquivo não puder ser reproduzir, o formulário será fechado.
+O código de exemplo a seguir, parte de uma classe Form1, mostra como criar um objeto de **jogador** e reproduzir um arquivo. Quando a reprodução terminar, ou se o arquivo não puder ser reproduzido, o formulário será fechado.
 
 
 ```VB
@@ -112,7 +112,7 @@ private void Player_MediaError(object pMediaObject)
 
 <dl> <dt>
 
-[**Incorporação do controle Windows Media Player em uma solução .NET Framework dados**](using-the-windows-media-player-control-in-a--net-framework-solution.md)
+[**inserindo o controle de Windows Media Player em uma solução de .NET Framework**](using-the-windows-media-player-control-in-a--net-framework-solution.md)
 </dt> </dl>
 
  

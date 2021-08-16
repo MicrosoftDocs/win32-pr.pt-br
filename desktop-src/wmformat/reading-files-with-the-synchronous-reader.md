@@ -1,14 +1,14 @@
 ---
-title: Lendo arquivos com o leitor síncrono
-description: Lendo arquivos com o leitor síncrono
+title: Lendo arquivos com o Leitor Síncrono
+description: Lendo arquivos com o Leitor Síncrono
 ms.assetid: 18c6c0cd-478f-4325-b23e-571c33779a96
 keywords:
-- Windows Media Format SDK, lendo arquivos
-- Windows SDK do formato de mídia, leitores síncronos
+- Windows SDK de Formato de Mídia, lendo arquivos
+- Windows SDK de Formato de Mídia, leitores síncronos
 - ASF (Advanced Systems Format), leitores síncronos
-- ASF (formato de sistemas avançados), leitores síncronos
+- ASF (Formato de Sistemas Avançados), leitores síncronos
 - ASF (Advanced Systems Format), lendo arquivos
-- ASF (formato de sistemas avançados), lendo arquivos
+- ASF (Formato de Sistemas Avançados), lendo arquivos
 - leitores síncronos, interface IWMReaderCallback
 - IWMReaderCallback, leitores síncronos
 - leitores síncronos, lendo arquivos
@@ -21,49 +21,49 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118197468"
 ---
-# <a name="reading-files-with-the-synchronous-reader"></a>Lendo arquivos com o leitor síncrono
+# <a name="reading-files-with-the-synchronous-reader"></a>Lendo arquivos com o Leitor Síncrono
 
-Você pode usar o leitor síncrono para ler um arquivo ASF usando chamadas síncronas em vez dos métodos assíncronos no objeto leitor. O uso de chamadas síncronas reduz o número de threads necessários para ler um arquivo. O leitor assíncrono usa vários threads para processar fluxos. Para arquivos com vários fluxos, o número de threads usados pode se tornar muito grande. O leitor síncrono usa apenas um thread.
+Você pode usar o leitor síncrono para ler um arquivo ASF usando chamadas síncronas em vez dos métodos assíncronos no objeto de leitor. O uso de chamadas síncronas reduz o número de threads necessários para ler um arquivo. O leitor assíncrono usa vários threads para processar fluxos. Para arquivos com vários fluxos, o número de threads usados pode se tornar muito grande. O leitor síncrono usa apenas um thread.
 
-O leitor síncrono foi projetado para atender às necessidades de criação de conteúdo e aplicativos de edição de arquivos. Você pode usar o leitor síncrono para outros aplicativos, mas sua funcionalidade é limitada.
+O leitor síncrono foi projetado para atender às necessidades de criação de conteúdo e aplicativos de edição de arquivo. Você pode usar o leitor síncrono para outros aplicativos, mas sua funcionalidade é limitada.
 
-O leitor síncrono pode abrir arquivos que são locais ou arquivos em uma rede usando o nome do caminho UNC (como " \\ \\ someshare \\ somedirectory \\ somefile. wmv"). Não é possível transmitir arquivos para o leitor síncrono ou abrir arquivos de um local da Internet. O leitor síncrono também fornece suporte para usar a interface com de **IStream** como uma origem.
+O leitor síncrono pode abrir arquivos locais ou arquivos em uma rede usando o nome do caminho UNC (como " \\ \\ someshare \\ somedirectory \\ somefile.wmv"). Você não pode transmitir arquivos para o leitor síncrono ou abrir arquivos de um local da Internet. O leitor síncrono também fornece suporte para usar a interface COM **IStream** como uma origem.
 
-O leitor síncrono fornece mais versatilidade para recuperar amostras de um arquivo ASF do que o leitor assíncrono. O leitor síncrono pode fornecer amostras por número de fluxo, bem como por saída. Exemplos entregues por número de fluxo podem ser compactados ou descompactados. O leitor síncrono também pode alternar entre entregas compactadas e não compactadas durante a reprodução; Esse recurso é conhecido como "edição rápida". esse recurso permite que um aplicativo de edição leia Windows conteúdo baseado em mídia e passe-o diretamente para o gravador até que um quadro desejado seja atingido. Nesse ponto, o aplicativo pode instruir o leitor a iniciar o fornecimento de conteúdo descompactado, que o aplicativo pode modificar e passar para o gravador para recompactação. Quando o aplicativo terminar de modificar os quadros especificados, ele poderá instruir o leitor a começar a entregar quadros compactados novamente.
+O leitor síncrono fornece mais versatilidade para recuperar amostras de um arquivo ASF do que o leitor assíncrono. O leitor síncrono pode fornecer exemplos por número de fluxo, bem como por saída. Exemplos entregues por número de fluxo podem ser compactados ou descompactados. O leitor síncrono também pode alternar entre a entrega compactada e descompactada durante a reprodução; esse recurso é conhecido como "edição rápida". Esse recurso permite que um aplicativo de edição leia Windows conteúdo baseado em mídia e passe-o diretamente para o autor até que um quadro desejado seja atingido. Nesse ponto, o aplicativo pode dizer ao leitor para começar a fornecer conteúdo descompactado, que o aplicativo pode modificar e passar para o autor para recompactação. Quando o aplicativo terminar de modificar os quadros especificados, ele poderá dizer ao leitor para começar a entregar quadros compactados novamente.
 
-A funcionalidade mais básica do objeto leitor síncrono pode ser dividida nas etapas a seguir. nestas etapas, "o aplicativo" se refere ao programa que você escreve usando o SDK do formato de mídia Windows.
+A funcionalidade mais básica do objeto de leitor síncrono pode ser dividida nas etapas a seguir. Nestas etapas, "o aplicativo" refere-se ao programa que você escreve usando o SDK Windows Formato de Mídia.
 
-1.  O aplicativo passa para o leitor síncrono o nome de um arquivo a ser lido. Quando o leitor síncrono abre o arquivo, ele atribui um número de saída a cada fluxo. Se o arquivo usar a exclusão mútua, o leitor atribuirá uma única saída para todos os fluxos mutuamente exclusivos.
-2.  O aplicativo obtém informações sobre a configuração das várias saídas do leitor. As informações coletadas permitirão que o aplicativo processe amostras de mídia corretamente.
-3.  O aplicativo começa a solicitar exemplos, um de cada vez, do leitor síncrono. O leitor síncrono entrega cada exemplo em um objeto de buffer para o qual ele fornece a interface [**INSSBuffer**](/previous-versions/windows/desktop/api/wmsbuffer/nn-wmsbuffer-inssbuffer) .
-4.  O aplicativo é responsável por renderizar dados depois que eles são entregues pelo leitor. o SDK do formato de mídia Windows não fornece nenhuma rotina de renderização. normalmente, os aplicativos usarão outros SDKs para renderizar dados, como o sdk do microsoft Direct X ou as funções de multimídia do sdk da plataforma microsoft Windows.
+1.  O aplicativo passa para o leitor síncrono o nome de um arquivo a ser lido. Quando o leitor síncrono abre o arquivo, ele atribui um número de saída a cada fluxo. Se o arquivo usar exclusão mútua, o leitor atribuirá uma única saída para todos os fluxos mutuamente exclusivos.
+2.  O aplicativo obtém informações sobre a configuração das várias saídas do leitor. As informações coletadas permitirão que o aplicativo renderizar corretamente exemplos de mídia.
+3.  O aplicativo começa a solicitar exemplos, um de cada vez, do leitor síncrono. O leitor síncrono fornece cada amostra em um objeto de buffer para o qual ele fornece a interface [**INSSBuffer.**](/previous-versions/windows/desktop/api/wmsbuffer/nn-wmsbuffer-inssbuffer)
+4.  O aplicativo é responsável por renderizar dados depois que eles são entregues pelo leitor. O Windows SDK de Formato de Mídia não fornece nenhuma rotina de renderização. Normalmente, os aplicativos usarão outros SDKs para renderizar dados, como o SDK do Microsoft Direct X ou as funções multimídia do SDK do Microsoft Windows Platform.
 
-Essas etapas são ilustradas no aplicativo de exemplo WMSyncReader. Para obter mais informações, consulte [aplicativos de exemplo](sample-applications.md).
+Essas etapas são ilustradas no aplicativo de exemplo WMSyncReader. Para obter mais informações, consulte [Aplicativos de exemplo](sample-applications.md).
 
 O leitor síncrono também dá suporte à funcionalidade mais avançada. O leitor síncrono permite que você faça o seguinte:
 
--   Especifique um intervalo de amostras para recuperar por hora ou por número de quadro.
+-   Especifique um intervalo de exemplos a ser recuperado por hora ou por número de quadro.
 -   Seleção de fluxo de controle para fluxos mutuamente exclusivos.
--   Abra um arquivo usando a interface COM padrão, **IStream**.
--   Ler dados de perfil do cabeçalho do arquivo.
--   Ler metadados do cabeçalho do arquivo.
--   Alternar entre exemplos de fluxo e saída durante a reprodução.
--   Alternar entre amostras de fluxo compactadas e não compactadas durante a reprodução.
+-   Abra um arquivo usando a interface COM padrão, **IStream.**
+-   Ler dados de perfil do header do arquivo.
+-   Ler metadados do header do arquivo.
+-   Alternar entre amostras de fluxo e saída durante a reprodução.
+-   Alternar entre amostras de fluxo compactadas e descompactados durante a reprodução.
 
-As seções a seguir descrevem o uso do objeto leitor síncrono em detalhes.
+As seções a seguir descrevem o uso do objeto de leitor síncrono em detalhes.
 
 -   [Para criar um leitor síncrono e abrir um arquivo](to-create-a-synchronous-reader-and-open-a-file.md)
--   [Para localizar números de fluxo e números de saída](to-find-stream-numbers-and-output-numbers.md)
--   [Para recuperar amostras de mídia com o leitor síncrono](to-retrieve-media-samples-with-the-synchronous-reader.md)
+-   [Para encontrar números de fluxo e números de saída](to-find-stream-numbers-and-output-numbers.md)
+-   [Para recuperar exemplos de mídia com o Leitor Síncrono](to-retrieve-media-samples-with-the-synchronous-reader.md)
 -   [Para buscar por tempo usando o leitor síncrono](to-seek-by-time-using-the-synchronous-reader.md)
 -   [Para buscar por número de quadro usando o leitor síncrono](to-seek-by-frame-number-using-the-synchronous-reader.md)
 -   [Para buscar pelo código de tempo SMPTE usando o leitor síncrono](to-seek-by-smpte-time-code-using-the-synchronous-reader.md)
--   [Para recuperar exemplos de fluxo com o leitor síncrono](to-retrieve-stream-samples-with-the-synchronous-reader.md)
--   [Para recuperar amostras compactadas com o leitor síncrono](to-retrieve-compressed-samples-with-the-synchronous-reader.md)
+-   [Para recuperar exemplos de fluxo com o Leitor Síncrono](to-retrieve-stream-samples-with-the-synchronous-reader.md)
+-   [Para recuperar exemplos compactados com o Leitor Síncrono](to-retrieve-compressed-samples-with-the-synchronous-reader.md)
 
 **Código de exemplo**
 
-O código de exemplo a seguir mostra como ler exemplos de um arquivo ASF usando o leitor síncrono. Especifica por número de quadro um intervalo de amostras a serem entregues.
+O código de exemplo a seguir mostra como ler exemplos de um arquivo ASF usando o leitor síncrono. Especifica por número de quadro um intervalo de amostras a ser entregue.
 
 
 ```C++
@@ -130,7 +130,7 @@ pSyncReader = NULL;
 
 <dl> <dt>
 
-[**Interface IWMSyncReader**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmsyncreader)
+[**IWMSyncReader Interface**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmsyncreader)
 </dt> <dt>
 
 [**Lendo arquivos ASF**](reading-asf-files.md)

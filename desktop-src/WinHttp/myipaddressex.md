@@ -1,7 +1,7 @@
 ---
 description: Localiza todos os endereços IP para localhost.
 ms.assetid: 47f7d03e-c1a1-4395-9889-01891208fe0f
-title: função myIPAddressEx
+title: Função myIPAddressEx
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,14 +12,14 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 88c205dbd5ce071a809cf87f4f97bb6d42120dcb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5db6107c061c845113e91590dab405bdd84cb4741f766abfeef6a1344652f115
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105762371"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117744158"
 ---
-# <a name="myipaddressex-function"></a>função myIPAddressEx
+# <a name="myipaddressex-function"></a>Função myIPAddressEx
 
 Localiza todos os endereços IP para localhost.
 
@@ -29,11 +29,11 @@ Essa função não tem parâmetros.
 
 ## <a name="return-value"></a>Valor retornado
 
-Uma cadeia de caracteres delimitada por ponto e vírgula contendo todos os endereços IP para localhost (IPv6 e/ou IPv4) ou uma cadeia de caracteres vazia se não for possível resolver o localhost para um endereço IP.
+Uma cadeia de caracteres delimitada por pontos e vírgulas que contém todos os endereços IP para localhost (IPv6 e/ou IPv4) ou uma cadeia de caracteres vazia se não for possível resolver localhost para um endereço IP.
 
 ## <a name="remarks"></a>Comentários
 
-Os implementadores de FindProxyforURLEx devem adicionar um código que interrompa a cadeia de caracteres de endereços IP delimitados por ponto e vírgula em endereços separados.
+Os implementadores FindProxyforURLEx devem adicionar código que divide a cadeia de caracteres de endereços IP delimitados por e vírgula em endereços separados.
 
 ## <a name="examples"></a>Exemplos
 
@@ -47,10 +47,10 @@ myIpAddressEx();
 
 <dl> <dt>
 
-[Definições da API auxiliar de proxy com reconhecimento de IPv6](ipv6-aware-proxy-helper-api-definitions.md)
+[Definições de API do Auxiliar de Proxy com IPv6](ipv6-aware-proxy-helper-api-definitions.md)
 </dt> <dt>
 
-[Formato de arquivo de configuração automática de extensões IPv6 para navegador](ipv6-extensions-to-navigator-auto-config-file-format.md)
+[Extensões IPv6 para o formato de arquivo de configuração automática do navegador](ipv6-extensions-to-navigator-auto-config-file-format.md)
 </dt> </dl>
 
  

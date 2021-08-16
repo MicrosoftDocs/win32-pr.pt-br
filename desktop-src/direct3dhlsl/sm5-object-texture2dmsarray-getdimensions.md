@@ -1,6 +1,6 @@
 ---
-title: 'Função Texture2DMSArray:: GetDimensions'
-description: 'Retorna as dimensões do recurso. | Função Texture2DMSArray:: GetDimensions'
+title: Função Texture2DMSArray::GetDimensions
+description: Retorna as dimensões do recurso. | Função Texture2DMSArray::GetDimensions
 ms.assetid: 86d54e0d-f168-479f-b2af-f021b8994741
 keywords:
 - Função GetDimensions HLSL
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: e22a225178c2fa965ea842b8c86692d09b87168f
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 6d6f9d4fc24cb1f8933bdb67796aebe3fe7d7406b114eea8a12f507c5f04591f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104298393"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118508422"
 ---
-# <a name="texture2dmsarraygetdimensions-function"></a>Função Texture2DMSArray:: GetDimensions
+# <a name="texture2dmsarraygetdimensions-function"></a>Função Texture2DMSArray::GetDimensions
 
 Retorna as dimensões do recurso.
 
@@ -39,45 +39,45 @@ void GetDimensions(
 
 <dl> <dt>
 
-*Largura* \[ fora\]
+*Largura* \[ out\]
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
 A largura do recurso, em texels.
 
 </dd> <dt>
 
-*Altura* \[ fora\]
+*Altura* \[ out\]
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
 A altura do recurso, em texels.
 
 </dd> <dt>
 
-*Elementos* \[ fora\]
+*Elementos* \[ out\]
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
 O número de elementos na matriz.
 
 </dd> <dt>
 
-*NumberOfSamples* \[ fora\]
+*NumberOfSamples* \[ out\]
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
 O número de locais de exemplo.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Nothing
+Nada
 
 ## <a name="remarks"></a>Comentários
 
@@ -97,7 +97,7 @@ Essa função tem suporte para os seguintes tipos de sombreadores:
 
 
 
-| Vértice | Envoltória | Domínio | Geometria | 16x16 | Computação |
+| Vértice | Casco | Domínio | Geometry | Pixel | Computação |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | x     | x       |
 

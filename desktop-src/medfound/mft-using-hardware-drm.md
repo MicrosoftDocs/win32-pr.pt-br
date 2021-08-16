@@ -10,19 +10,19 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118473546"
 ---
-# <a name="mft_using_hardware_drm-attribute"></a>MFT \_ usando \_ atributo de DRM de hardware \_
+# <a name="mft_using_hardware_drm-attribute"></a>MFT \_ USANDO o atributo \_ \_ DRM DE HARDWARE
 
 Especifica se o IMFTransform está usando o DRM de hardware.
 
 ## <a name="data-type"></a>Tipo de dados
 
-**UINT32** (Tratado como **bool**)
+**UINT32** (tratado como **BOOL**)
 
 ## <a name="getset"></a>Obter/definir
 
-Para obter esse atributo, chame [**IMFAttributes:: GetUINT32**](/windows/win32/api/mfobjects/nf-mfobjects-imfattributes-getuint32).
+Para obter esse atributo, chame [**IMFAttributes::GetUINT32**](/windows/win32/api/mfobjects/nf-mfobjects-imfattributes-getuint32).
 
-Para definir esse atributo, chame [**IMFAttributes:: setuint32**](/windows/win32/api/mfobjects/nf-mfobjects-imfattributes-setuint32).
+Para definir esse atributo, chame [**IMFAttributes::SetUINT32**](/windows/win32/api/mfobjects/nf-mfobjects-imfattributes-setuint32).
 
 ## <a name="applies-to"></a>Aplica-se a
 
@@ -30,10 +30,10 @@ Para definir esse atributo, chame [**IMFAttributes:: setuint32**](/windows/win32
 
 ## <a name="remarks"></a>Comentários
 
-Se um MFT Decrypter especificar esse atributo definido como 1, ele estará usando o DRM de hardware. Se um MFT Decrypter especificar esse atributo definido como 0, ele não estará usando o DRM de hardware. Se um Decrypter MFT não especificar esse atributo ou especificá-lo com um valor diferente, ele não será (ou não poderá) indicar se está usando o DRM de hardware.
+Se um descriptografador MFT especificar esse atributo definido como 1, ele está usando o DRM de hardware. Se um descriptografador MFT especificar esse atributo definido como 0, ele não está usando o DRM de hardware. Se um descriptografador MFT não especificar esse atributo ou especificá-lo com um valor diferente, ele não indicará (ou não) se está usando o DRM de hardware.
 
 
-A constante de GUID para esse atributo é exportada de mfuuid. lib.
+A constante GUID para esse atributo é exportada de mfuuid.lib.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -42,8 +42,8 @@ A constante de GUID para esse atributo é exportada de mfuuid. lib.
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 10 Atualização de abril de 2020   <br/>                                       |
-| Servidor mínimo com suporte<br/> | Windows Aplicativos de aplicativos de área de trabalho do servidor 2008 R2 \[ \| UWP\]<br/>                           |
-| parâmetro<br/>                   | <dl> <dt>Mftransform. h</dt> </dl> |
+| Servidor mínimo com suporte<br/> | Windows Aplicativos \[ UWP de aplicativos da área de trabalho do Server 2008 R2 \|\]<br/>                           |
+| Cabeçalho<br/>                   | <dl> <dt>Mftransform.h</dt> </dl> |
 
 
 
@@ -51,10 +51,10 @@ A constante de GUID para esse atributo é exportada de mfuuid. lib.
 
 <dl> <dt>
 
-[Lista alfabética de atributos de Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
 </dt>  <dt>
 
-[Atributos de transformação](transform-attributes.md)
+[Transformar atributos](transform-attributes.md)
 </dt> </dl>
 
  

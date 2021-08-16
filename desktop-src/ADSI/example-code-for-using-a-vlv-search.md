@@ -1,6 +1,6 @@
 ---
 title: Código de exemplo para usar uma pesquisa VLV
-description: Este tópico contém exemplos de código C++ a serem usados para executar uma pesquisa VLV.
+description: Este tópico contém exemplos de código C++ a ser usado para executar uma pesquisa de VLV.
 ms.assetid: 9bad8f71-80e3-446f-9be3-c00defbe1ea5
 ms.tgt_platform: multiple
 keywords:
@@ -16,7 +16,7 @@ ms.locfileid: "118428429"
 ---
 # <a name="example-code-for-using-a-vlv-search"></a>Código de exemplo para usar uma pesquisa VLV
 
-Os exemplos de código a seguir usam pesquisas de VLV para obter resultados da pesquisa.
+Os exemplos de código a seguir usam pesquisas VLV para obter resultados da pesquisa.
 
 -   **GetVLVItemCount**
 -   **GetVLVItemText**
@@ -114,7 +114,7 @@ int WideCharToLocal(LPTSTR pLocal, LPCWSTR pWide, DWORD dwChars)
 
 ## <a name="getvlvitemcount-example-function"></a>Função de exemplo GetVLVItemCount
 
-O exemplo de código a seguir mostra como usar uma pesquisa VLV para obter uma estimativa do número de itens que resultaria da pesquisa.
+O exemplo de código a seguir mostra como usar uma pesquisa VLV para obter uma estimativa do número de itens resultantes da pesquisa.
 
 
 ```C++
@@ -350,7 +350,7 @@ HRESULT GetVLVItemText(IDirectorySearch *pSearch,
 
 ## <a name="getvlvitemsbystring-example-function"></a>Função de exemplo GetVLVItemsByString
 
-O exemplo de código a seguir mostra como usar uma pesquisa VLV para obter o texto de um número especificado de itens com base em uma cadeia de caracteres. Este exemplo adicionará as classificações recuperadas a uma caixa de listagem.
+O exemplo de código a seguir mostra como usar uma pesquisa VLV para obter o texto de um número especificado de itens com base em uma cadeia de caracteres. Este exemplo adicionará as classificação recuperadas a uma caixa de listagem.
 
 
 ```C++

@@ -6,12 +6,12 @@ keywords:
 - luminância para efeito alfa
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8fb4c6fb78a1d49498b2adab6716d41e93d30deb
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 803070fea76b47c1334803a4e7f8fef510cc77c8b3bc05c8477b572cb0451670
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104561554"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117825242"
 ---
 # <a name="luminance-to-alpha-effect"></a>Luminância para efeito alfa
 
@@ -33,7 +33,7 @@ Este exemplo mostra a saída da luminância para efeito alfa composta em uma sup
 | Antes                                                            |
 |-------------------------------------------------------------------|
 | ![a imagem antes do efeito.](images/default-before.jpg)        |
-| After (após)                                                             |
+| Depois                                                             |
 | ![a imagem após a transformação.](images/18-luminancetoalpha.png) |
 
 
@@ -83,9 +83,9 @@ Esse efeito consome e gera imagens alfa multiplicadas. O efeito não funcionará
 
 | Requisito | Valor |
 |--------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte | Windows 8 e atualização de plataforma para aplicativos de área de trabalho do Windows 7 \[ \| aplicativos da Windows Store\] |
-| Servidor mínimo com suporte | Windows 8 e atualização de plataforma para aplicativos de área de trabalho do Windows 7 \[ \| aplicativos da Windows Store\] |
-| parâmetro                   | d2d1effects. h                                                                      |
+| Cliente mínimo com suporte | Windows 8 e atualização de plataforma para aplicativos de área de trabalho Windows 7 \[ \| Windows aplicativos da loja\] |
+| Servidor mínimo com suporte | Windows 8 e atualização de plataforma para aplicativos de área de trabalho Windows 7 \[ \| Windows aplicativos da loja\] |
+| Cabeçalho                   | d2d1effects. h                                                                      |
 | Biblioteca                  | d2d1. lib, dxguid. lib                                                               |
 
 

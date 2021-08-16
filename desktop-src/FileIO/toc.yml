@@ -4,23 +4,23 @@
     - name: Gerenciamento de diretórios
       href: directory-management.md
       items:
-        - name: Sobre o gerenciamento de diretório
+        - name: Sobre o Gerenciamento de Diretórios
           href: about-directory-management.md
           items:
             - name: Criando e excluindo diretórios
               href: creating-and-deleting-directories.md
-            - name: Identificadores de diretório
+            - name: Alças de diretório
               href: obtaining-a-handle-to-a-directory.md
             - name: Pontos de reanálise
               href: reparse-points.md
               items:
-                - name: Marcas de ponto de nova análise
+                - name: Marcas de ponto de reparse
                   href: reparse-point-tags.md
-                - name: Operações de ponto de nova análise
+                - name: Operações de ponto de reparse
                   href: reparse-point-operations.md
-                - name: Pontos de nova análise e operações de arquivo
+                - name: Reparparar pontos e operações de arquivo
                   href: reparse-points-and-file-operations.md
-        - name: Usando o gerenciamento de diretório
+        - name: Usando o gerenciamento de diretórios
           href: using-directory-management.md
           items:
             - name: Alterando o diretório atual
@@ -63,13 +63,13 @@
                   href: /windows/desktop/api/FileAPI/nf-fileapi-findfirstchangenotificationa
                 - name: FindNextChangeNotification
                   href: /windows/desktop/api/FileAPI/nf-fileapi-findnextchangenotification
-                - name: GetCurrentDirectory
+                - name: Getcurrentdirectory
                   href: /windows/desktop/api/WinBase/nf-winbase-getcurrentdirectory
                 - name: ReadDirectoryChangesExW
                   href: /windows/desktop/api/WinBase/nf-winbase-readdirectorychangesexw
                 - name: ReadDirectoryChangesW
                   href: /windows/desktop/api/WinBase/nf-winbase-readdirectorychangesw
-                - name: RemoveDirectory
+                - name: Removedirectory
                   href: /windows/desktop/api/FileAPI/nf-fileapi-removedirectorya
                 - name: RemoveDirectoryTransacted
                   href: /windows/desktop/api/WinBase/nf-winbase-removedirectorytransacteda
@@ -94,10 +94,10 @@
     - name: Gerenciamento de disco
       href: disk-management.md
       items:
-        - name: Sobre o gerenciamento de disco
+        - name: Sobre o Gerenciamento de Disco
           href: about-disk-management.md
           items:
-            - name: Partições e dispositivos de disco
+            - name: Dispositivos de disco e partições
               href: disk-devices-and-partitions.md
             - name: Discos básicos e dinâmicos
               href: basic-and-dynamic-disks.md
@@ -106,9 +106,9 @@
             - name: Gerenciando cotas de disco
               href: managing-disk-quotas.md
               items:
-                - name: Administração em nível de usuário de cotas de disco
+                - name: Administração no nível do usuário de cotas de disco
                   href: user-level-administration-of-disk-quotas.md
-                - name: Administração em nível de sistema de cotas de disco
+                - name: Administração no nível do sistema de cotas de disco
                   href: system-level-administration-of-disk-quotas.md
                 - name: Limites de cota de disco
                   href: disk-quota-limits.md
@@ -232,7 +232,7 @@
               items:
                 - name: GetDiskFreeSpace
                   href: /windows/desktop/api/FileAPI/nf-fileapi-getdiskfreespacea
-                - name: GetDiskFreeSpaceEx
+                - name: Getdiskfreespaceex
                   href: /windows/desktop/api/FileAPI/nf-fileapi-getdiskfreespaceexa
             - name: Interfaces de gerenciamento de disco
               href: disk-management-interfaces.md
@@ -240,9 +240,9 @@
                 - name: IDiskQuotaControl
                   href: /windows/desktop/api/dskquota/nn-dskquota-idiskquotacontrol
                   items:
-                    - name: Método addusername
+                    - name: Método AddUserName
                       href: /windows/desktop/api/dskquota/nf-dskquota-idiskquotacontrol-addusername
-                    - name: Método AddUsers
+                    - name: Método AddUserSid
                       href: /windows/desktop/api/dskquota/nf-dskquota-idiskquotacontrol-addusersid
                     - name: Método CreateEnumUsers
                       href: /windows/desktop/api/dskquota/nf-dskquota-idiskquotacontrol-createenumusers
@@ -264,7 +264,7 @@
                       href: /windows/desktop/api/dskquota/nf-dskquota-idiskquotacontrol-getdefaultquotathresholdtext
                     - name: Método GetQuotaLogFlags
                       href: /windows/desktop/api/dskquota/nf-dskquota-idiskquotacontrol-getquotalogflags
-                    - name: Método getquotastate
+                    - name: Método GetQuotaState
                       href: /windows/desktop/api/dskquota/nf-dskquota-idiskquotacontrol-getquotastate
                     - name: Método GiveUserNameResolutionPriority
                       href: /windows/desktop/api/dskquota/nf-dskquota-idiskquotacontrol-giveusernameresolutionpriority
@@ -278,14 +278,14 @@
                       href: /windows/desktop/api/dskquota/nf-dskquota-idiskquotacontrol-setdefaultquotathreshold
                     - name: Método SetQuotaLogFlags
                       href: /windows/desktop/api/dskquota/nf-dskquota-idiskquotacontrol-setquotalogflags
-                    - name: Método setquotastate
+                    - name: Método SetQuotaState
                       href: /windows/desktop/api/dskquota/nf-dskquota-idiskquotacontrol-setquotastate
                     - name: Método ShutdownNameResolution
                       href: /windows/desktop/api/dskquota/nf-dskquota-idiskquotacontrol-shutdownnameresolution
                 - name: IDiskQuotaEvents
                   href: /windows/desktop/api/dskquota/nn-dskquota-idiskquotaevents
                   items:
-                    - name: Método onusernamechanged
+                    - name: Método OnUserNameChanged
                       href: /windows/desktop/api/dskquota/nf-dskquota-idiskquotaevents-onusernamechanged
                 - name: IDiskQuotaUser
                   href: /windows/desktop/api/dskquota/nn-dskquota-idiskquotauser
@@ -310,7 +310,7 @@
                       href: /windows/desktop/api/dskquota/nf-dskquota-idiskquotauser-getquotaused
                     - name: Método GetQuotaUsedText
                       href: /windows/desktop/api/dskquota/nf-dskquota-idiskquotauser-getquotausedtext
-                    - name: Método Obtémid
+                    - name: Método GetSid
                       href: /windows/desktop/api/dskquota/nf-dskquota-idiskquotauser-getsid
                     - name: Método GetSidLength
                       href: /windows/desktop/api/dskquota/nf-dskquota-idiskquotauser-getsidlength
@@ -327,7 +327,7 @@
                       href: /windows/desktop/api/dskquota/nf-dskquota-idiskquotauserbatch-add
                     - name: Método FlushToDisk
                       href: /windows/desktop/api/dskquota/nf-dskquota-idiskquotauserbatch-flushtodisk
-                    - name: Remover método
+                    - name: Método Remove
                       href: /windows/desktop/api/dskquota/nf-dskquota-idiskquotauserbatch-remove
                     - name: Método RemoveAll
                       href: /windows/desktop/api/dskquota/nf-dskquota-idiskquotauserbatch-removeall
@@ -490,32 +490,32 @@
     - name: Gerenciamento de Arquivos
       href: file-management.md
       items:
-        - name: Sobre o gerenciamento de arquivos
+        - name: Sobre o Gerenciamento de Arquivos
           href: about-file-management.md
           items:
-            - name: Comparação de funcionalidade do sistema de arquivos
+            - name: Comparação de funcionalidades do sistema de arquivos
               href: filesystem-functionality-comparison.md
             - name: Especificação do sistema de arquivos exFat
               href: exfat-specification.md
             - name: Arquivos e clusters
               href: files-and-clusters.md
               items:
-                - name: Fluxos de arquivos
+                - name: Arquivos Fluxos
                   href: file-streams.md
                 - name: Objetos de arquivo
                   href: file-objects.md
-                - name: Identificadores de arquivo
+                - name: Alças de arquivo
                   href: file-handles.md
                 - name: Ponteiros de arquivo
                   href: file-pointers.md
-                - name: Clusters e extensões
+                - name: Clusters e extensão
                   href: clusters-and-extents.md
             - name: 'Criando, excluindo e mantendo arquivos'
               href: creating--deleting--and-maintaining-files.md
               items:
                 - name: 'Nomeando arquivos, caminhos e namespaces'
                   href: naming-a-file.md
-                - name: Limitação máxima de caminho de arquivo
+                - name: Limitação máxima do caminho do arquivo
                   href: maximum-file-path-limitation.md
                 - name: Criando e abrindo arquivos
                   href: creating-and-opening-files.md
@@ -525,36 +525,36 @@
                   href: closing-and-deleting-files.md
                 - name: Desfragmentando arquivos
                   href: defragmenting-files.md
-            - name: Obtendo e configurando informações do arquivo
+            - name: Obtendo e configurando informações de arquivo
               href: obtaining-and-setting-file-information.md
               items:
                 - name: Recuperando informações de tipo de arquivo
                   href: retrieving-file-type-information.md
                 - name: Determinando o tamanho de um arquivo
                   href: determining-the-size-of-a-file.md
-                - name: Procurando um ou mais arquivos
+                - name: Pesquisando um ou mais arquivos
                   href: searching-for-one-or-more-files.md
-                - name: Configurando e obtendo o carimbo de data/hora de um arquivo
+                - name: Configurando e recebendo o timestamp de um arquivo
                   href: setting-and-getting-the-timestamp-of-a-file.md
                 - name: Determinando a página de código do conjunto de caracteres atual
                   href: determining-the-current-character-set-code-page.md
-            - name: Lendo e gravando em arquivos
+            - name: Lendo de e escrevendo em arquivos
               href: reading-from-and-writing-to-files.md
               items:
                 - name: Posicionando um ponteiro de arquivo
                   href: positioning-a-file-pointer.md
-                - name: Lendo ou gravando em arquivos usando um esquema de Scatter-Gather
+                - name: Lendo ou escrevendo em arquivos usando um esquema de Scatter-Gather
                   href: reading-from-or-writing-to-files-using-a-scatter-gather-scheme.md
-                - name: Liberando dados de e/s de System-Buffered para O disco
+                - name: Liberando System-Buffered dados de E/S para o disco
                   href: flushing-system-buffered-i-o-data-to-disk.md
-                - name: Truncando ou estendendo arquivos
+                - name: Truncar ou estender arquivos
                   href: truncating-or-extending-files.md
-            - name: Vinculação de arquivos e diretórios
+            - name: Vinculação de arquivo e diretório
               href: file-and-directory-linking.md
               items:
-                - name: Links físicos e junções
+                - name: Links rígidos e junções
                   href: hard-links-and-junctions.md
-                - name: Rastreamento de link distribuído e identificadores de objeto
+                - name: Acompanhamento de link distribuído e identificadores de objeto
                   href: distributed-link-tracking-and-object-identifiers.md
             - name: Bloquear clonagem
               href: block-cloning.md
@@ -582,61 +582,61 @@
                   href: encrypted-files-and-user-keys.md
                 - name: Backup e restauração de arquivos criptografados
                   href: backup-and-restore-of-encrypted-files.md
-            - name: Segurança de arquivo e direitos de acesso
+            - name: Segurança de arquivos e direitos de acesso
               href: file-security-and-access-rights.md
-            - name: Entrada e saída (e/s)
+            - name: Entrada e saída (E/S)
               href: input-and-output--i-o-.md
               items:
-                - name: Conceitos de e/s
+                - name: Conceitos de E/S
                   href: i-o-concepts.md
                   items:
                     - name: Armazenar arquivo em buffer
                       href: file-buffering.md
                     - name: Cache de arquivo
                       href: file-caching.md
-                    - name: E/s síncrona e síncrona
+                    - name: E/S síncrona e assíncrona
                       href: synchronous-and-asynchronous-i-o.md
-                    - name: Cancelando operações de e/s pendentes
+                    - name: Cancelando operações de E/S pendentes
                       href: canceling-pending-i-o-operations.md
-                    - name: E/s alertável
+                    - name: E/S alertável
                       href: alertable-i-o.md
-                    - name: Portas de conclusão de e/s
+                    - name: Portas de conclusão de E/S
                       href: i-o-completion-ports.md
-                - name: Conceitos de e/s de rede
+                - name: Conceitos de E/S de rede
                   href: network-i-o-concepts.md
                   items:
-                    - name: Descrição de uma operação de e/s de rede
+                    - name: Descrição de uma operação de E/S de rede
                       href: description-of-a-network-i-o-operation.md
                       items:
-                        - name: Diferenças em e/s de rede e local
+                        - name: Diferenças na E/S local e de rede
                           href: differences-in-local-and-network-i-o.md
                         - name: Redirecionadores de rede
                           href: network-redirectors.md
-                    - name: Visão geral de protocolo CIFS e protocolo Microsoft SMB
+                    - name: Visão geral do protocolo SMB da Microsoft e do protocolo CIFS
                       href: microsoft-smb-protocol-and-cifs-protocol-overview.md
                       items:
                         - name: Dialetos do protocolo SMB da Microsoft
                           href: microsoft-smb-protocol-dialects.md
-                        - name: Autenticação do protocolo SMB da Microsoft
+                        - name: Autenticação de protocolo SMB da Microsoft
                           href: microsoft-smb-protocol-authentication.md
-                        - name: Cenário de intercâmbio de pacotes do protocolo SMB da Microsoft
+                        - name: Cenário de Exchange pacote de protocolo SMB da Microsoft
                           href: microsoft-smb-protocol-packet-exchange-scenario.md
-                    - name: Bloqueios oportunistas
+                    - name: Bloqueios oportunísticos
                       href: opportunistic-locks.md
                       items:
-                        - name: Cache local
+                        - name: Local Caching
                           href: local-caching.md
                         - name: Coerência de dados
                           href: data-coherency.md
                         - name: Como solicitar um bloqueio oportunista
                           href: how-to-request-an-opportunistic-lock.md
-                        - name: Resposta do servidor para abrir solicitações em arquivos bloqueados
+                        - name: Resposta do servidor para solicitações abertas em arquivos bloqueados
                           href: server-response-to-open-requests-on-locked-files.md
                         - name: Tipos de bloqueios oportunistas
                           href: types-of-opportunistic-locks.md
-                        - name: Interrompendo bloqueios oportunistas
+                        - name: Bloqueios oportunistas de quebra
                           href: breaking-opportunistic-locks.md
-                        - name: Exemplos de bloqueio oportunista
+                        - name: Exemplos de bloqueio oportunístico
                           href: opportunistic-lock-examples.md
                         - name: Operações de bloqueio oportunista
                           href: opportunistic-lock-operations.md
@@ -675,7 +675,7 @@
               href: retrieving-and-changing-file-attributes.md
             - name: Teste para o final de um arquivo
               href: testing-for-the-end-of-a-file.md
-            - name: Usando fluxos
+            - name: usando Fluxos
               href: using-streams.md
         - name: Referência de gerenciamento de arquivos
           href: file-management-reference.md
@@ -852,11 +852,11 @@
                   href: /windows/desktop/api/WinBase/nf-winbase-fileencryptionstatusa
                 - name: FileIOCompletionRoutine
                   href: /windows/desktop/api/minwinbase/nc-minwinbase-lpoverlapped_completion_routine
-                - name: FindClose
+                - name: Findclose
                   href: /windows/desktop/api/FileAPI/nf-fileapi-findclose
-                - name: FindFirstFile
+                - name: Findfirstfile
                   href: /windows/desktop/api/FileAPI/nf-fileapi-findfirstfilea
-                - name: FindFirstFileEx
+                - name: Findfirstfileex
                   href: /windows/desktop/api/FileAPI/nf-fileapi-findfirstfileexa
                 - name: FindFirstFileNameTransactedW
                   href: /windows/desktop/api/WinBase/nf-winbase-findfirstfilenametransactedw
@@ -868,25 +868,25 @@
                   href: /windows/desktop/api/WinBase/nf-winbase-findfirststreamtransactedw
                 - name: FindFirstStreamW
                   href: /windows/desktop/api/fileapi/nf-fileapi-findfirststreamw
-                - name: FindNextFile
+                - name: Findnextfile
                   href: /windows/desktop/api/FileAPI/nf-fileapi-findnextfilea
                 - name: FindNextFileNameW
                   href: /windows/desktop/api/fileapi/nf-fileapi-findnextfilenamew
                 - name: FindNextStreamW
                   href: /windows/desktop/api/fileapi/nf-fileapi-findnextstreamw
-                - name: FlushFileBuffers
+                - name: Flushfilebuffers
                   href: /windows/desktop/api/FileAPI/nf-fileapi-flushfilebuffers
                 - name: FreeEncryptionCertificateHashList
                   href: /windows/desktop/api/Winefs/nf-winefs-freeencryptioncertificatehashlist
-                - name: Getbinarytype
+                - name: GetBinaryType
                   href: /windows/desktop/api/WinBase/nf-winbase-getbinarytypea
                 - name: GetCompressedFileSize
                   href: /windows/desktop/api/fileapi/nf-fileapi-getcompressedfilesizea
                 - name: GetCompressedFileSizeTransacted
                   href: /windows/desktop/api/WinBase/nf-winbase-getcompressedfilesizetransacteda
-                - name: Getexpandname
+                - name: GetExpandedName
                   href: /windows/desktop/api/LzExpand/nf-lzexpand-getexpandednamea
-                - name: GetFileAttributes
+                - name: Getfileattributes
                   href: /windows/desktop/api/FileAPI/nf-fileapi-getfileattributesa
                 - name: GetFileAttributesEx
                   href: /windows/desktop/api/FileAPI/nf-fileapi-getfileattributesexa
@@ -898,15 +898,15 @@
                   href: /windows/desktop/api/FileAPI/nf-fileapi-getfileinformationbyhandle
                 - name: GetFileInformationByHandleEx
                   href: /windows/desktop/api/WinBase/nf-winbase-getfileinformationbyhandleex
-                - name: GetFileSize
+                - name: Getfilesize
                   href: /windows/desktop/api/FileAPI/nf-fileapi-getfilesize
                 - name: GetFileSizeEx
                   href: /windows/desktop/api/FileAPI/nf-fileapi-getfilesizeex
-                - name: Getfiletype
+                - name: GetFileType
                   href: /windows/desktop/api/FileAPI/nf-fileapi-getfiletype
                 - name: GetFinalPathNameByHandle
                   href: /windows/desktop/api/FileAPI/nf-fileapi-getfinalpathnamebyhandlea
-                - name: Getfullpathname
+                - name: GetFullPathName
                   href: /windows/desktop/api/FileAPI/nf-fileapi-getfullpathnamea
                 - name: GetFullPathNameTransacted
                   href: /windows/desktop/api/WinBase/nf-winbase-getfullpathnametransacteda
@@ -918,9 +918,9 @@
                   href: /windows/desktop/api/ioapiset/nf-ioapiset-getqueuedcompletionstatus
                 - name: GetQueuedCompletionStatusEx
                   href: getqueuedcompletionstatusex-func.md
-                - name: GetShortPathName
+                - name: Getshortpathname
                   href: /windows/desktop/api/FileAPI/nf-fileapi-getshortpathnamew
-                - name: GetTempFileName
+                - name: Gettempfilename
                   href: /windows/desktop/api/FileAPI/nf-fileapi-gettempfilenamea
                 - name: GetTempPath
                   href: /windows/desktop/api/FileAPI/nf-fileapi-gettemppatha
@@ -972,19 +972,19 @@
                   href: /windows/desktop/api/FileAPI/nf-fileapi-readfilescatter
                 - name: RemoveUsersFromEncryptedFile
                   href: /windows/desktop/api/Winefs/nf-winefs-removeusersfromencryptedfile
-                - name: Reabrirfile
+                - name: ReOpenFile
                   href: /windows/desktop/api/WinBase/nf-winbase-reopenfile
                 - name: ReplaceFile
                   href: /windows/desktop/api/WinBase/nf-winbase-replacefilea
                 - name: SearchPath
                   href: /windows/desktop/api/processenv/nf-processenv-searchpathw
-                - name: SetEndOfFile
+                - name: Setendoffile
                   href: /windows/desktop/api/FileAPI/nf-fileapi-setendoffile
                 - name: SetFileApisToANSI
                   href: /windows/desktop/api/fileapi/nf-fileapi-setfileapistoansi
                 - name: SetFileApisToOEM
                   href: /windows/desktop/api/fileapi/nf-fileapi-setfileapistooem
-                - name: SetFileAttributes
+                - name: Setfileattributes
                   href: /windows/desktop/api/FileAPI/nf-fileapi-setfileattributesa
                 - name: SetFileAttributesTransacted
                   href: /windows/desktop/api/WinBase/nf-winbase-setfileattributestransacteda
@@ -996,7 +996,7 @@
                   href: /windows/desktop/api/FileAPI/nf-fileapi-setfileinformationbyhandle
                 - name: SetFileIoOverlappedRange
                   href: /windows/desktop/api/fileapi/nf-fileapi-setfileiooverlappedrange
-                - name: SetFilePointer
+                - name: Setfilepointer
                   href: /windows/desktop/api/FileAPI/nf-fileapi-setfilepointer
                 - name: SetFilePointerEx
                   href: /windows/desktop/api/FileAPI/nf-fileapi-setfilepointerex
@@ -1008,7 +1008,7 @@
                   href: /windows/desktop/api/WinBase/nf-winbase-setsearchpathmode
                 - name: SetUserFileEncryptionKey
                   href: /windows/desktop/api/Winefs/nf-winefs-setuserfileencryptionkey
-                - name: Deslockfile
+                - name: UnlockFile
                   href: /windows/desktop/api/FileAPI/nf-fileapi-unlockfile
                 - name: UnlockFileEx
                   href: /windows/desktop/api/FileAPI/nf-fileapi-unlockfileex

@@ -1,11 +1,11 @@
 ---
-title: Atributo de ID de site do MSMQ
-description: O atributo MSMQ-site-ID contém informações de modo misto do MSMQ.
+title: Atributo MSMQ-Site-ID
+description: O atributo MSMQ-Site-ID contém informações de modo misto do MSMQ.
 ms.assetid: 28874ae3-e3eb-4158-ba63-5dbdac6892f6
 ms.tgt_platform: multiple
 keywords:
-- MSMQ-site-ID atributo AD Schema
-- Esquema de AD do atributo mSMQSiteID
+- Esquema do AD do atributo MSMQ-Site-ID
+- Esquema do AD do atributo mSMQSiteID
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 66c125dd721b623c4203540757193511842a3a68
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 6f0b0e73f31332009f02c7dbe4090b25bc8a83cf8006affb9e5533ca41f76110
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104163644"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119762046"
 ---
-# <a name="msmq-site-id-attribute"></a>Atributo de ID de site do MSMQ
+# <a name="msmq-site-id-attribute"></a>Atributo MSMQ-Site-ID
 
-O atributo **MSMQ-site-ID** contém informações de modo misto do MSMQ.
+O **atributo MSMQ-Site-ID** contém informações de modo misto do MSMQ.
 
 
 
 | Entrada | Valor |
 |-------------------|-------------------------------------------------------|
-| CN                | MSMQ-ID do site                                          |
-| LDAP-Display-Name | mSMQSiteID                                            |
+| CN                | MSMQ-Site-ID                                          |
+| Ldap-Display-Name | mSMQSiteID                                            |
 | Tamanho              | \-                                                    |
 | Privilégio de atualização  | \-                                                    |
 | Frequência de atualização  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.953                                |
-| System-ID-GUID    | 9a0dc340-c100-11d1-bbc5-0080c76670c0                  |
-| Syntax            | [**Objeto (link de réplica)**](s-object-replica-link.md) |
+| System-Id-Guid    | 9a0dc340-c100-11d1-football5-0080c76670c0                  |
+| Syntax            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
 
@@ -58,10 +58,10 @@ O atributo **MSMQ-site-ID** contém informações de modo misto do MSMQ.
 | ID do link                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| É de valor único       | True                              |
+| Tem valor único       | Verdadeiro                              |
 | É indexado             | Falso                             |
-| No catálogo global      | Falso                             |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |
+| No Catálogo Global      | Falso                             |
+| Descritor de segurança NT | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
@@ -79,10 +79,10 @@ O atributo **MSMQ-site-ID** contém informações de modo misto do MSMQ.
 | ID do link                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| É de valor único       | True                              |
+| Tem valor único       | Verdadeiro                              |
 | É indexado             | Falso                             |
-| No catálogo global      | Falso                             |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |
+| No Catálogo Global      | Falso                             |
+| Descritor de segurança NT | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
@@ -100,10 +100,10 @@ O atributo **MSMQ-site-ID** contém informações de modo misto do MSMQ.
 | ID do link                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| É de valor único       | True                              |
+| Tem valor único       | Verdadeiro                              |
 | É indexado             | Falso                             |
-| No catálogo global      | Falso                             |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |
+| No Catálogo Global      | Falso                             |
+| Descritor de segurança NT | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
@@ -121,7 +121,7 @@ O atributo **MSMQ-site-ID** contém informações de modo misto do MSMQ.
 | ID do link                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| É de valor único       | True                              |
+| É de valor único       | Verdadeiro                              |
 | É indexado             | Falso                             |
 | No catálogo global      | Falso                             |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |
@@ -142,7 +142,7 @@ O atributo **MSMQ-site-ID** contém informações de modo misto do MSMQ.
 | ID do link                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| É de valor único       | True                              |
+| É de valor único       | Verdadeiro                              |
 | É indexado             | Falso                             |
 | No catálogo global      | Falso                             |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |
@@ -163,7 +163,7 @@ O atributo **MSMQ-site-ID** contém informações de modo misto do MSMQ.
 | ID do link                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| É de valor único       | True                              |
+| É de valor único       | Verdadeiro                              |
 | É indexado             | Falso                             |
 | No catálogo global      | Falso                             |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |

@@ -1,5 +1,5 @@
 ---
-description: 'As enumerações a seguir são usadas ao trabalhar com enclaves usados para criar ambientes de execução confiáveis:'
+description: 'As seguintes enumerações são usadas ao trabalhar com enclaves que são usadas para criar ambientes de execução confiáveis:'
 ms.assetid: 7B122E1F-AAF8-4834-B262-CD641D16DA4E
 title: Enumerações de execução confiável
 ms.topic: article
@@ -13,7 +13,7 @@ ms.locfileid: "118386284"
 ---
 # <a name="trusted-execution-enumerations"></a>Enumerações de execução confiável
 
-As enumerações a seguir são usadas ao trabalhar com enclaves usados para criar ambientes de execução confiáveis:
+As seguintes enumerações são usadas ao trabalhar com enclaves que são usadas para criar ambientes de execução confiáveis:
 
 ## <a name="in-this-section"></a>Nesta seção
 
@@ -21,7 +21,7 @@ As enumerações a seguir são usadas ao trabalhar com enclaves usados para cria
 
 | Tópico                                                                                    | Descrição                                                                                                                                                                         |
 |------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**POLÍTICA DE IDENTIDADE \_ DE VEDAÇÃO \_ DE ENCLAVE \_**](/windows/desktop/api/ntenclv/ne-ntenclv-enclave_sealing_identity_policy)<br/> | Define valores que especificam como outro enclave deve estar relacionado ao enclave que chama [**EnclaveSealData**](/windows/desktop/api/winenclaveapi/nf-winenclaveapi-enclavesealdata) para que o enclave desaloque os dados.<br/> |
+| [**política de identidade de lacre de ENCLAVE \_ \_ \_**](/windows/desktop/api/ntenclv/ne-ntenclv-enclave_sealing_identity_policy)<br/> | Define os valores que especificam como outro enclave deve estar relacionado ao enclave que chama [**EnclaveSealData**](/windows/desktop/api/winenclaveapi/nf-winenclaveapi-enclavesealdata) para o enclave para deslacrar os dados.<br/> |
 
 
 

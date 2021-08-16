@@ -1,5 +1,5 @@
 ---
-description: Demonstra como implementar um verbo do shell usando o método CreateProcess.
+description: Demonstra como implementar um verbo shell usando o método CreateProcess.
 title: Exemplo de verbo CreateProcess
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,28 +9,28 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: 8e52f251e12f0ca06bcb729407a7c8303836f9fc
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c0af34d5ec9f687ec6c58bb73f337b38d512527c0ace4bd20eae12d49c87a62d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104968095"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117858336"
 ---
 # <a name="createprocess-verb-sample"></a>Exemplo de verbo CreateProcess
 
-Demonstra como implementar um verbo do shell usando o método CreateProcess.
+Demonstra como implementar um verbo shell usando o método CreateProcess.
 
 Este tópico inclui as seções a seguir.
 
 -   [Descrição](#description)
--   [Requisitos](#requirements)
+-   [Requirements](#requirements)
 -   [Baixando o exemplo](#downloading-the-sample)
 -   [Compilando o exemplo](#building-the-sample)
 -   [Executando o exemplo](#running-the-sample)
 
-## <a name="description"></a>Description
+## <a name="description"></a>Descrição
 
-Os verbos baseados em CreateProcess dependem da execução de um executável e da passagem de um argumento de linha de comando. Esse método não é tão potente quanto os métodos DropTarget e ExecuteCommand, mas alcança o comportamento de fora do processo desejado.
+Os verbos baseados em CreateProcess dependem da execução de um executável e da passagem de um argumento de linha de comando. Esse método não é tão poderoso quanto os métodos DropTarget e ExecuteCommand, mas atinge o comportamento desejável fora do processo.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -53,21 +53,21 @@ Os verbos baseados em CreateProcess dependem da execução de um executável e d
 
 ## <a name="building-the-sample"></a>Compilando o exemplo
 
-Para criar o exemplo do prompt de comando:
+Para criar o exemplo no prompt de comando:
 
-1.  Abra a janela do prompt de comando e navegue até o diretório do projeto **CreateProcessVerb** .
+1.  Abra a janela do prompt de comando e navegue até **o diretório do projeto CreateProcessVerb.**
 2.  Digite `msbuild CreateProcessVerb.sln`.
 
 Para criar o exemplo usando Microsoft Visual Studio (preferencial):
 
-1.  Abra o Windows Explorer e navegue até o diretório do projeto **CreateProcessVerb** .
-2.  Clique duas vezes no ícone do arquivo CreateProcessVerb. sln para abrir o projeto no Visual Studio.
-3.  No menu **Compilar** , selecione **Compilar solução**.
+1.  Abra Windows Explorer e navegue até o **diretório do projeto CreateProcessVerb.**
+2.  Clique duas vezes no ícone do arquivo CreateProcessVerb.sln para abrir o projeto Visual Studio.
+3.  No menu **Compilar**, selecione **Compilar Solução**.
 
 ## <a name="running-the-sample"></a>Executando o exemplo
 
-1.  Navegue até o diretório que contém o novo executável, usando o prompt de comando ou o Windows Explorer.
-2.  Na linha de comando, digite `CreateProcessVerb.exe` . Como alternativa, no Windows Explorer, clique duas vezes no ícone para CreateProcessVerb.exe.
+1.  Navegue até o diretório que contém o novo executável usando o prompt de comando ou Windows Explorer.
+2.  Na linha de comando, insira `CreateProcessVerb.exe` . Como alternativa, no Windows Explorer, clique duas vezes no ícone para CreateProcessVerb.exe.
 3.  Siga as instruções na caixa de diálogo exibida
 
  

@@ -1,24 +1,24 @@
 ---
 title: Tipos de VML básicos
-description: este tópico descreve a VML, um recurso que foi preterido a partir do Windows Internet Explorer 9. Migre páginas da Web e aplicativos que dependem de VML para SVG ou outros padrões amplamente suportados.
+description: Este tópico descreve o VML, um recurso que foi preterido a partir Windows Internet Explorer 9. Migre páginas da Web e aplicativos que dependem do VML para SVG ou outros padrões amplamente suportados.
 ms.assetid: 07c17e7b-5ac4-4a8d-a468-559307408d5b
 keywords:
-- Linguagem VML (VML), tipos básicos
+- linguagem VML (VML), tipos básicos
 - VML (linguagem VML), tipos básicos
-- gráficos vetoriais, tipos básicos de VML
-- Linguagem VML (VML), tipos
+- gráficos vetoriais, tipos de VML básicos
+- linguagem VML (VML), tipos
 - VML (linguagem VML), tipos
 - gráficos vetoriais, tipos de VML
 - tipos de VML básicos
-- tipo booliano
+- tipo booliana
 - tipo de fração
-- tipo de ordenada
+- tipo ordinate
 - tipo de comprimento
 - tipo de medida
 - tipo de ângulo
 - tipo de cor
 - tipo de fonte
-- tipo de bitmap
+- tipo bitmap
 - tipo de vetor
 ms.topic: article
 ms.date: 05/31/2018
@@ -31,10 +31,10 @@ ms.locfileid: "118347751"
 ---
 # <a name="basic-vml-types"></a>Tipos de VML básicos
 
-este tópico descreve a VML, um recurso que foi preterido a partir do Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem de VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
+Este tópico descreve o VML, um recurso que foi preterido a partir Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem do VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
 
 > [!Note]  
-> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [conteúdo arquivado](/previous-versions/windows/internet-explorer/ie-developer/). para obter informações, recomendações e orientações sobre a versão atual do Windows Internet explorer, consulte [internet explorer developer Center](https://msdn.microsoft.com/ie/).
+> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [Conteúdo arquivado.](/previous-versions/windows/internet-explorer/ie-developer/) Para obter informações, recomendações e diretrizes sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center.](https://msdn.microsoft.com/ie/)
 
  
 
@@ -43,10 +43,10 @@ este tópico descreve a VML, um recurso que foi preterido a partir do Windows In
 -   [Introdução](#introduction)
 -   [booleano](#boolean)
 -   [fração](#fraction)
--   [ordenada](#ordinate)
+-   [Ordenada](#ordinate)
 -   [length](#length)
     -   [Representações alternativas](#alternative-representations)
--   [mensura](#measure)
+-   [Medida](#measure)
     -   [Representações alternativas](#alternative-representations)
 -   [angle](#angle)
     -   [Representações alternativas](#alternative-representations)
@@ -56,38 +56,38 @@ este tópico descreve a VML, um recurso que foi preterido a partir do Windows In
     -   [Cores do esquema](#scheme-colors)
     -   [Cores do sistema](#system-colors)
     -   [Cores puras](#pure-colors)
-    -   [Ajustes de cores](#color-adjustments)
--   [la](#font)
+    -   [Ajustes de cor](#color-adjustments)
+-   [Fonte](#font)
 -   [bitmap](#bitmap)
     -   [Formatos de arquivo de imagem](#picture-file-formats)
--   [vetor](#vector)
+-   [Vetor](#vector)
 
 ## <a name="introduction"></a>Introdução
 
-Essa proposta usa um pequeno número de tipos básicos, listados na tabela a seguir.
+Essa proposta usa um pequeno número de tipos básicos, listados na tabela abaixo.
 
 
 
 | Tipo                  | Elemento           | Representação fundamental | Descrição                                                                                          |
 |-----------------------|-------------------|----------------------------|------------------------------------------------------------------------------------------------------|
-| [booleano](#boolean)   |                   | 1 bit                      | Um valor booliano: true ou false.                                                                      |
-| [fração](#fraction) |                   | número 2 6                 | Um valor numérico, dimensionado por 2 6 (65536) e armazenado como um inteiro assinado.                               |
-| [ordenada](#ordinate) |                   | sinal de adição de inteiro de 30 bits   | Parte de uma coordenada (por exemplo, em um caminho), os valores definidos por coord.                                |
-| [length](#length)     |                   | [MONETÁRIA](#length)             | Um comprimento físico, como a largura de uma linha ou o tamanho de uma fonte.                                |
-| [mensura](#measure)   |                   | EMU ou número 2 6          | Um comprimento físico, incluindo um número de pixels de dispositivo ou uma fração de alguma outra quantidade. |
-| [angle](#angle)       |                   | graus de 2 6                | Um ângulo; positivo é no sentido horário.                                                                     |
+| [booleano](#boolean)   |                   | 1 bit                      | Um valor booliana: true ou false.                                                                      |
+| [fração](#fraction) |                   | número 2 6                 | Um valor numérico, dimensionado por 2 6 (65536) e armazenado como um inteiro com sinal.                               |
+| [Ordenada](#ordinate) |                   | Sinal de inteiro de 30 bits mais   | Parte de uma coordenada (por exemplo, em um caminho ), os valores definidos por coord.                                |
+| [length](#length)     |                   | [Uem](#length)             | Um comprimento físico, como a largura de uma linha ou o tamanho de uma fonte.                                |
+| [Medida](#measure)   |                   | EMU ou número 2 6          | Um comprimento físico, incluindo um número de pixels de dispositivo ou uma fração de alguma outra quantidade. |
+| [angle](#angle)       |                   | graus 2 6                | Um ângulo; positivo é no sentido horário.                                                                     |
 | [color](#color)       | [c](#color)       | complex                    | Um elemento que permite que uma cor seja derivada.                                                        |
-| [la](#font)         | [la](#font)     | complex                    | Uma descrição de uma fonte.                                                                             |
+| [Fonte](#font)         | [Fonte](#font)     | complex                    | Uma descrição de uma fonte.                                                                             |
 | [bitmap](#bitmap)     | [bitmap](#bitmap) | href                       | Uma referência a um arquivo de imagem externa.                                                             |
-| [vetor](#vector)     | [v](#vector)      | complex                    | Uma descrição de um caminho de vetor                                                                       |
+| [Vetor](#vector)     | [v](#vector)      | complex                    | Uma descrição de um caminho de vetor                                                                       |
 
 
 
  
 
-A "representação fundamental" é a representação de precisão mais alta que a proposta exige para manter uma implementação em conformidade; os dados serão perdidos se a implementação não puder representar os dados para a precisão necessária. Os tipos de cor, fonte e vetor correspondem a elementos que, por sua conta, têm estrutura – de certa forma, não são tipos básicos; no entanto, é conveniente tratá-los como tal nessa proposta.
+A "representação fundamental" é a representação de precisão mais alta que a proposta exige que uma implementação em conformidade seja mantida; os dados serão perdidos se a implementação não for capaz de representar os dados para a precisão necessária. Os tipos de cor, fonte e vetor correspondem aos elementos que têm a própria estrutura – em certo sentido, eles não são tipos básicos; no entanto, é conveniente tratá-los como tal dentro dessa proposta.
 
-Cada tipo básico não complexo tem um elemento associado de mesmo nome. Esses nomes de elementos são reservados e não podem ser usados para nenhuma outra finalidade dentro de extensões, mesmo que o uso esteja dentro de um elemento de extensão OnView = "Skip". Por isso, é possível que uma implementação que encontra XML desconhecido forneça um armazenamento interno eficiente do XML desconhecido, desde que os valores estejam entre os elementos de "tipo".
+Cada tipo básico não complexo tem um elemento associado com o mesmo nome. Esses nomes de elemento são reservados e podem não ser usados para nenhuma outra finalidade dentro de extensões, mesmo se o uso estiver dentro de um elemento de extensão onview="skip". Por isso, é possível que uma implementação que encontra XML desconhecido forneça um armazenamento interno eficiente do XML desconhecido, desde que os valores sejam incluídos nos elementos "type".
 
 
 ```HTML
@@ -97,11 +97,11 @@ Cada tipo básico não complexo tem um elemento associado de mesmo nome. Esses n
 
 
 
-No primeiro exemplo acima, a cadeia de caracteres "1,578" deve ser armazenada como uma sequência de caracteres (a implementação não sabe se é uma cadeia de caracteres ou um número); no segundo exemplo, o elemento fracionário indica que o conteúdo é um número, portanto, ele pode ser convertido na representação de fração de alta precisão.
+No primeiro exemplo acima, a cadeia de caracteres "1,578" deve ser armazenada como uma sequência de caracteres (a implementação não sabe se é uma cadeia de caracteres ou um número); no segundo exemplo, o elemento de fração indica que o conteúdo é um número, portanto, ele pode ser convertido para a representação de fração de alta precisão.
 
 Tipos complexos (incluindo bitmap) têm nomes de elementos associados que são usados para delimitar o valor. Isso simplifica a análise garantindo que as tarefas de análise mais complexas sejam associadas a marcas de elemento exclusivas.
 
-[![voltar ao início ](images/top.gif) para cima](#top)
+[![voltar ao início ](images/top.gif) Voltar ao início](#top)
 
 ## <a name="boolean"></a>booleano
 
@@ -113,7 +113,7 @@ boolean
 
 
 
-Um valor booliano é representado como uma palavra-chave que indica o estado do sinalizador. As palavras-chave a seguir são definidas.
+Um valor booliana é representado como uma palavra-chave que indica o estado do sinalizador. As palavras-chave a seguir são definidas.
 
 
 
@@ -143,7 +143,7 @@ fraction
 
 
 
-Todos os valores numéricos (ou seja, valores de quantidades dimensionáveis) dentro dessa proposta podem ser armazenados como inteiros dimensionando-os em 2 6 (65536). Um número pode ser dado nesse formato, com o sufixo f ou como um número decimal sem sufixo. Portanto, os seguintes elementos hipotéticos representam o mesmo valor.
+Todos os valores numéricos (ou seja, valores de quantidades dimensionáveis) dentro dessa proposta podem ser armazenados como inteiros dimensionando-os em 2 6 (65536). Um número pode ser dado nesse formato, com o sufixo f ou como um número decimal sem sufixo. Portanto, os elementos hipotéticos a seguir representam o mesmo valor.
 
 
 ```HTML
@@ -159,7 +159,7 @@ Uma implementação em conformidade é necessária para preservar valores expres
 
 Se a implementação não puder fazer isso, ela deverá avisar o usuário de que os dados podem ser perdidos. (É aceitável emitir esse aviso uma vez quando dados gerados externamente são encontrados pela primeira vez.)
 
-Quando um valor decimal é convertido no formato f, a implementação pode usar qualquer modo de arredondamento aritmético; no entanto, um número inteiro deve ser convertido no formato f exatamente. É recomendável que as implementações convertam arredondamento para menos infinito e que a conversão sempre seja exata.
+Quando um valor decimal é convertido em formato f, a implementação pode usar qualquer modo de arredondamento aritmético; no entanto, um número inteiro deve ser convertido no formato f exatamente. É recomendável que as implementações convertam arredondamento para menos infinito e que a conversão sempre seja exata.
 
 [![voltar ao início ](images/top.gif) Voltar ao início](#top)
 
@@ -264,7 +264,7 @@ angle
 
 
 
-A representação fundamental de um ângulo é um número de graus múltiplos por 2 6 (65536) e armazenado como um inteiro. Como o espaço de coordenadas é invertido (o eixo y positivo está ino mesmo), um ângulo no sentido horário é positivo. Uma implementação em conformidade é necessária para preservar a precisão total desse valor.
+A representação fundamental de um ângulo é um número de graus múltiplos por 2 6 (65536) e armazenado como um inteiro. Como o espaço de coordenadas é invertido (o eixo y positivo está ino mesmo), um ângulo horário é positivo. Uma implementação em conformidade é necessária para preservar a precisão total desse valor.
 
 Uma implementação tem permissão para usar qualquer intervalo para ângulos e tem permissão para normalizar um ângulo (por exemplo, -180 a +180 ou 0 a 360 ). As implementações não precisam ser consistentes; no entanto, a representação integral de um ângulo não deve exceder o intervalo de um inteiro com sinal de 32 bits.
 
@@ -446,7 +446,7 @@ Aqua = " \# 00FFFF"
 
 ### <a name="scheme-colors"></a>Cores do esquema
 
-As cores do esquema referenciadas por esquema são definidas no nível do documento usando a meta tag com um atributo de nome de "Esquema de Cores do Tema".
+As cores do esquema referenciadas por esquema são definidas no nível do documento usando a marca meta com um atributo de nome de "Esquema de Cores do Tema".
 
 
 ```HTML
@@ -656,29 +656,29 @@ Esses valores são dicas para o comportamento esperado. A opção separada refer
 
 É válido fazer com que o URI href e o atributo title tenham o mesmo valor (léxico) – isso é apropriado se o bitmap referenciado não for "armazenado com" o documento. Ele é destinado (embora não necessário) que href seja usado para a própria cópia do documento do bitmap, que pode ser excluído se as formas de referência forem excluídas--e esse título for usado para indicar uma cópia compartilhada. Portanto, se ambos contiverem o mesmo valor, não haverá cópia específica do documento.
 
-Os aplicativos poderão desconsiderar a dica se não se ajustarem ao modelo de armazenamento real dos dados XML.
+Os aplicativos podem desconsiderar a dica se não couber com o modelo de armazenamento real dos dados XML.
 
-[![voltar ao início ](images/top.gif) Voltar ao início](#top)
+[![voltar ao início ](images/top.gif) para cima](#top)
 
 ### <a name="picture-file-formats"></a>Formatos de arquivo de imagem
 
-Dentro do contexto dessa proposta, os dados externos são invariavelmente um bitmap ou um arquivo que é usado para produzir um bitmap. No nível de renderização 0, não é necessário ter suporte para nenhum formato de bitmap externo– os caminhos só podem ser preenchidos com cores sólidas. Para renderizar o conjunto completo de preenchimentos de nível de renderização 1, é necessário dar suporte a bitmaps. O nível de renderização 1 inclui (somente) os seguintes formatos:
+Dentro do contexto dessa proposta, os dados externos são invariavelmente um bitmap ou um arquivo que é usado para produzir um bitmap. No nível de renderização 0, nenhum formato de bitmap externo precisa ser suportado-os caminhos só podem ser preenchidos com cores sólidas. Para renderizar o conjunto completo de preenchimentos de nível 1 de renderização, os bitmaps precisam ter suporte. O nível de renderização 1 inclui (apenas) os seguintes formatos:
 
-1.  JFIF, ou seja, dados de formato ISO/IEC 10918 inseridos em um arquivo com o header JFIF (que pode ser considerado um marcador APP0 específico após o criador soi) e incluindo (somente) o intervalo de formatos JPEG com suporte pelo código IJG v6.
-2.  PNG, conforme definido pela especificação PNG versão 1.0.
+1.  JFIF, ou seja, dados de formato ISO/IEC 10918 inseridos em um arquivo com o cabeçalho JFIF (que pode ser considerado um marcador APP0 específico após o SOI Maker) e incluindo (somente) o intervalo de formatos JPEG com suporte no código V6 IJG.
+2.  PNG, conforme definido pela especificação do PNG versão 1,0.
 
 O nível de renderização 2 também inclui suporte para o seguinte:
 
--   GIF, conforme definido pela especificação GIF publicada por CompuServ em 1987 (normalmente conhecido como "GIF87a"). GIF89a também deve ter suporte nesse nível, sujeito à restrição de que os dados não devem conter nenhum bloco de extensão que precise de interpretação para exibir o bitmap diferente de extensões de controle de gráficos sem um requisito de entrada do usuário ou um tempo de atraso. Isso permite que os comentários sejam incluídos, mas não a extensão de texto sem-texto. Um aplicativo pode inserir extensões de aplicativo (0x21, 0xFF), mas, usando a terminologia dessa proposta, elas devem conter apenas os dados de edição, não de renderização.
+-   GIF, conforme definido pela especificação GIF publicada por CompuServ em 1987 (normalmente chamado de "GIF87a"). GIF89a também deve ter suporte nesse nível, sujeito à restrição de que os dados não devem conter nenhum bloco de extensão que precise de interpretação para exibir o bitmap diferente do requisito de extensionswithouta de controle de gráficos para a entrada do usuário ou um tempo de atraso. Isso permite que os comentários sejam incluídos, mas não a extensão de texto sem formatação. Um aplicativo pode inserir extensões de aplicativo (0x21, 0xFF), mas, usando a terminologia desta proposta, elas devem conter apenas os dados de edição, não de renderização.
 
-Qualquer outro formato de dados usado no gráfico força esse gráfico a ser pelo menos editando o nível 3 e possivelmente renderizar o nível 3 (se os dados são necessários para renderizar o gráfico). Um aplicativo é incentivado a publicar os formatos aos quais ele dá suporte. Por exemplo, Microsoft Office dá suporte aos seguintes formatos adicionais na verdade e, portanto, pode gravar dados de edição neste formulário:
+Qualquer outro formato de dados usado no gráfico força esse gráfico a ser pelo menos o nível 3 de edição e, possivelmente, o nível 3 de renderização (se os dados forem necessários para renderizar o gráfico). Um aplicativo é incentivado a publicar os formatos que ele suporta. por exemplo, Microsoft Office dá suporte aos seguintes formatos adicionais nativamente e, portanto, pode gravar dados de edição neste formulário:
 
-1.  WMF – Windows metarquivo (formato Win 3.1)
-2.  EMF – Windows metarquivo "avançado" (formato Win32)
-3.  PICT – Mac OS arquivo PICT quickDraw (todas as versões, mas sem registros de QuickTime ou outras extensões)
-4.  BMP -- Windows formato de arquivo bitmap, "os/2" (BITMAPCORE), BITMAPINFO, BITMAPV4 e formatos BITMAPV5
+1.  WMF--metarquivo de Windows (formato Win 3,1)
+2.  EMF--Windows metarquivo "avançado" (formato Win32)
+3.  PICT--Mac OS arquivo QuickDraw PICT (todas as versões, mas sem registros QuickTime ou outras extensões)
+4.  BMP--formato de arquivo de bitmap Windows, formatos "os/2" (BITMAPCORE), BITMAPINFO, BITMAPV4 e BITMAPV5
 
-[![voltar ao início ](images/top.gif) Voltar ao início](#top)
+[![voltar ao início ](images/top.gif) para cima](#top)
 
 ## <a name="vector"></a>vector
 
@@ -690,9 +690,9 @@ v
 
 
 
-Um caminho gráfico de vetor é codificado como pcdata. O conteúdo do elemento v é misto, contendo uma descrição de caminho de vetor opcionalmente parametrizada com elementos p.
+Um caminho gráfico vetorial é codificado como PCDATA. O conteúdo do elemento v é misto, contendo uma descrição de caminho de vetor opcionalmente parametrizada com elementos p.
 
-[Voltar à visão geral do VML](web-workshop---specs---standards----how-to-use-vml-on-web-pages.md)
+[Voltar para a visão geral da VML](web-workshop---specs---standards----how-to-use-vml-on-web-pages.md)
 
  
 
