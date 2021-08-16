@@ -4,9 +4,9 @@ description: O endereço da página da Web de logon a ser usada para autenticar 
 ms.assetid: d7a5e0d8-353e-416d-a9e0-11ef5072f9ff
 ms.tgt_platform: multiple
 keywords:
-- Serviços de Área de Trabalho Remota da propriedade GatewayAuthLoginPage
-- Propriedade GatewayAuthLoginPage Serviços de Área de Trabalho Remota, interface IMsRdpClientTransportSettings3
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientTransportSettings3, Propriedade GatewayAuthLoginPage
+- Propriedade GatewayAuthLoginPage Serviços de Área de Trabalho Remota
+- A propriedade GatewayAuthLoginPage Serviços de Área de Trabalho Remota , interface IMsRdpClientTransportSettings3
+- Interface IMsRdpClientTransportSettings3 Serviços de Área de Trabalho Remota , propriedade GatewayAuthLoginPage
 topic_type:
 - apiref
 api_name:
@@ -19,18 +19,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f5be535dea0a89f1cf6e7c238029e53f38f58b0c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 672fc929e2fccf6934a2703684e467c75fd8afb725107a73bf0f6bb311c09bfc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104086359"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119000925"
 ---
-# <a name="imsrdpclienttransportsettings3gatewayauthloginpage-property"></a>Propriedade IMsRdpClientTransportSettings3:: GatewayAuthLoginPage
+# <a name="imsrdpclienttransportsettings3gatewayauthloginpage-property"></a>Propriedade IMsRdpClientTransportSettings3::GatewayAuthLoginPage
 
 O endereço da página da Web de logon a ser usada para autenticar um usuário.
 
-Esta propriedade é de leitura/gravação.
+Essa propriedade é leitura/gravação.
 
 ## <a name="syntax"></a>Syntax
 

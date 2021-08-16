@@ -3,7 +3,7 @@ title: RBN_AUTOSIZE código de notificação (commctrl. h)
 description: Enviado por um controle rebar criado com o estilo de AUTOSIZE do RBS \_ quando o rebar é redimensionado automaticamente. Esse código de notificação é enviado na forma de uma mensagem de notificação do WM \_ .
 ms.assetid: d174fe99-13cc-404c-9dc5-d5a93e9807a2
 keywords:
-- RBN_AUTOSIZE de código de notificação controles do Windows
+- RBN_AUTOSIZE código de notificação Windows controles
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 18ecfac5a4f84d69d444c25a24956cb911fd90a4
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 32c0ef601562c6887e05c78c06a66cf61e330843769eb3bb66105eb941e09339
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105749072"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119985366"
 ---
 # <a name="rbn_autosize-notification-code"></a>Código de notificação do RBN \_ AUTOSIZE
 
@@ -45,7 +45,7 @@ Ponteiro para uma estrutura [**NMRBAUTOSIZE**](/windows/win32/api/commctrl/ns-co
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O valor de retorno para essa notificação não é usado.
 
@@ -55,9 +55,9 @@ O valor de retorno para essa notificação não é usado.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 
 

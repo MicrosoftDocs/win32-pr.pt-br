@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3dxof.lib
 - D3dxof.dll
-ms.openlocfilehash: bc50af216eaae1687351d472b7151aaaeae9116f
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 42d95fcee1b431f5121389d7bb6595e5c53ca56298c75ed6010ee86733c310e4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104298495"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119985126"
 ---
 # <a name="idirectxfileenumobjectgetnextdataobject-method"></a>Método IDirectXFileEnumObject:: GetNextDataObject
 
@@ -49,7 +49,7 @@ Endereço de um ponteiro para uma interface [**IDirectXFileData**](idirectxfiled
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 

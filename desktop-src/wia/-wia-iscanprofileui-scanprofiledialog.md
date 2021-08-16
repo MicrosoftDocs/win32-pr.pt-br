@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Scanprofileui.h
-ms.openlocfilehash: bc8707378f1debc322fea258ceb8aad0c6400ea0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a2003471a151677b5f0fbd9ae88e9d3cf8d975525a9dbf8340c6fc1a9f2befc8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104169539"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118965805"
 ---
 # <a name="iscanprofileuiscanprofiledialog-method"></a>Método IScanProfileUI:: ScanProfileDialog
 
@@ -42,13 +42,13 @@ HRESULT ScanProfileDialog(
 *hwndParent* \[ no\]
 </dt> <dd>
 
-Tipo: **HWND**
+Digite: **HWND**
 
 O identificador da janela pai que é proprietária da caixa de diálogo.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **HRESULT**
 
@@ -66,9 +66,9 @@ Os valores do `<ProfileName>` elemento e do `<WiaItem>` elemento podem ser alter
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                        |
-| parâmetro<br/>                   | <dl> <dt>Scanprofileui. h</dt> </dl>  |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                              |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                        |
+| Cabeçalho<br/>                   | <dl> <dt>Scanprofileui. h</dt> </dl>  |
 | INSERI<br/>                      | <dl> <dt>Scanprofiles. idl</dt> </dl> |
 
 

@@ -1,6 +1,6 @@
 ---
-title: Variáveis de estado de Implementation-Dependent
-description: Variáveis de estado de Implementation-Dependent
+title: Variáveis de Estado Dependentes de Implementação
+description: Variáveis de Estado Dependentes de Implementação
 ms.assetid: 6778b50c-a6ac-4106-9dd6-3a123c257687
 keywords:
 - Variáveis de estado do Implementation-Dependent OpenGL
@@ -12,14 +12,14 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 645702c9ea91f21d0e3bce5233b8014fd8f86859
-ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
+ms.openlocfilehash: 4da38f841408bd6ddf481473837f36544d21d896f2764317957c65158be27fd3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "107909874"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119061454"
 ---
-# <a name="implementation-dependent-state-variables"></a>Variáveis de estado de Implementation-Dependent
+# <a name="implementation-dependent-state-variables"></a>Variáveis de Estado Dependentes de Implementação
 
 <dl> <dt><span id="GL_MAX_LIGHTS"></span><span id="gl_max_lights"></span>\_luzes máximas GL \_</dt> <dd> 
 
@@ -151,11 +151,11 @@ ms.locfileid: "107909874"
 
  
 
-</dd> <dt><span id="GL_MAX_EVAL_ORDER"></span><span id="gl_max_eval_order"></span>GL \_ máx \_ . \_ ordem de avaliação</dt> <dd> 
+</dd> <dt><span id="GL_MAX_EVAL_ORDER"></span><span id="gl_max_eval_order"></span>GL \_ MAX \_ EVAL \_ ORDER</dt> <dd> 
 
 | Propriedade | Valor |
 |------------------|----------------------------------------------------------------------------------|
-| Descrição:     | Ordem polinomial do avaliador máximo                                               |
+| Descrição:     | Ordem polinomial máxima do avaliador                                               |
 | Grupo de atributos: |                                                                                  |
 | Valor inicial:   | 8                                                                                |
 | Comando Get:     | [**glGetIntegerv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
@@ -164,11 +164,11 @@ ms.locfileid: "107909874"
 
  
 
-</dd> <dt><span id="GL_MAX_VIEWPORT_DIMS"></span><span id="gl_max_viewport_dims"></span>GL \_ máx. de \_ viewport \_</dt> <dd> 
+</dd> <dt><span id="GL_MAX_VIEWPORT_DIMS"></span><span id="gl_max_viewport_dims"></span>GL \_ MAX \_ VIEWPORT \_ DIMS</dt> <dd> 
 
 | Propriedade | Valor |
 |------------------|----------------------------------------------------------------------------------|
-| Descrição:     | Máximo de dimensões do visor                                                      |
+| Descrição:     | Dimensões máximas do viewport                                                      |
 | Grupo de atributos: |                                                                                  |
 | Valor inicial:   |                                                                                  |
 | Comando Get:     | [**glGetIntegerv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
@@ -177,7 +177,7 @@ ms.locfileid: "107909874"
 
  
 
-</dd> <dt><span id="GL_MAX_ATTRIB_STACK_DEPTH"></span><span id="gl_max_attrib_stack_depth"></span>\_profundidade máxima \_ de \_ pilha de Atrib \_ GL</dt> <dd> 
+</dd> <dt><span id="GL_MAX_ATTRIB_STACK_DEPTH"></span><span id="gl_max_attrib_stack_depth"></span>GL \_ MAX \_ ATTRIB \_ STACK \_ DEPTH</dt> <dd> 
 
 | Propriedade | Valor |
 |------------------|----------------------------------------------------------------------------------|
@@ -190,7 +190,7 @@ ms.locfileid: "107909874"
 
  
 
-</dd> <dt><span id="GL_AUX_BUFFERS"></span><span id="gl_aux_buffers"></span>\_buffers auxiliares GL \_</dt> <dd> 
+</dd> <dt><span id="GL_AUX_BUFFERS"></span><span id="gl_aux_buffers"></span>GL \_ AUX \_ BUFFERS</dt> <dd> 
 
 | Propriedade | Valor |
 |------------------|----------------------------------------------------------------------------------|
@@ -203,11 +203,11 @@ ms.locfileid: "107909874"
 
  
 
-</dd> <dt><span id="GL_RGBA_MODE"></span><span id="gl_rgba_mode"></span>\_modo RGBA do GL \_</dt> <dd> 
+</dd> <dt><span id="GL_RGBA_MODE"></span><span id="gl_rgba_mode"></span>MODO \_ GL \_ RGBA</dt> <dd> 
 
 | Propriedade | Valor |
 |------------------|----------------------------------------------------------------------------------|
-| Descrição:     | True se os buffers de cores armazenar RGBA                                                 |
+| Descrição:     | True se os buffers de cores armazenam RGBA                                                 |
 | Grupo de atributos: |                                                                                  |
 | Valor inicial:   |                                                                                  |
 | Comando Get:     | [**glGetBooleanv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
@@ -216,11 +216,11 @@ ms.locfileid: "107909874"
 
  
 
-</dd> <dt><span id="GL_INDEX_MODE"></span><span id="gl_index_mode"></span>\_modo de índice GL \_</dt> <dd> 
+</dd> <dt><span id="GL_INDEX_MODE"></span><span id="gl_index_mode"></span>MODO GL \_ INDEX \_</dt> <dd> 
 
 | Propriedade | Valor |
 |------------------|----------------------------------------------------------------------------------|
-| Descrição:     | True se os buffers de cores armazenarem índices                                              |
+| Descrição:     | True se os buffers de cores armazenam índices                                              |
 | Grupo de atributos: |                                                                                  |
 | Valor inicial:   |                                                                                  |
 | Comando Get:     | [**glGetBooleanv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
@@ -229,11 +229,11 @@ ms.locfileid: "107909874"
 
  
 
-</dd> <dt><span id="GL_DOUBLEBUFFER"></span><span id="gl_doublebuffer"></span>\_DOUBLEBUFFER GL</dt> <dd> 
+</dd> <dt><span id="GL_DOUBLEBUFFER"></span><span id="gl_doublebuffer"></span>GL \_ DOUBLEBUFFER</dt> <dd> 
 
 | Propriedade | Valor |
 |------------------|----------------------------------------------------------------------------------|
-| Descrição:     | True se existirem buffers de frente e de trás                                             |
+| Descrição:     | True se existirem buffers front e back                                             |
 | Grupo de atributos: |                                                                                  |
 | Valor inicial:   |                                                                                  |
 | Comando Get:     | [**glGetBooleanv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
@@ -242,11 +242,11 @@ ms.locfileid: "107909874"
 
  
 
-</dd> <dt><span id="GL_STEREO"></span><span id="gl_stereo"></span>\_estéreo GL</dt> <dd> 
+</dd> <dt><span id="GL_STEREO"></span><span id="gl_stereo"></span>GL \_ ESTÉREO</dt> <dd> 
 
 | Propriedade | Valor |
 |------------------|--------------------------------------------------------------------------------|
-| Descrição:     | True se existirem buffers esquerdo e direito                                           |
+| Descrição:     | True se existirem buffers à esquerda e à direita                                           |
 | Grupo de atributos: |                                                                                |
 | Valor inicial:   |                                                                                |
 | Comando Get:     | [**glGetFloatv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
@@ -255,11 +255,11 @@ ms.locfileid: "107909874"
 
  
 
-</dd> <dt><span id="GL_POINT_SIZE_RANGE"></span><span id="gl_point_size_range"></span>\_intervalo de \_ tamanho do ponto GL \_</dt> <dd> 
+</dd> <dt><span id="GL_POINT_SIZE_RANGE"></span><span id="gl_point_size_range"></span>INTERVALO \_ DE TAMANHO DO PONTO \_ \_ GL</dt> <dd> 
 
 | Propriedade | Valor |
 |------------------|--------------------------------------------------------------------------------|
-| Descrição:     | Intervalo (baixo para alto) de tamanhos de ponto AntiAlias                                 |
+| Descrição:     | Intervalo (de baixo a alto) de tamanhos de pontos antialiados                                 |
 | Grupo de atributos: |                                                                                |
 | Valor inicial:   | 1, 1                                                                           |
 | Comando Get:     | [**glGetFloatv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
@@ -268,11 +268,11 @@ ms.locfileid: "107909874"
 
  
 
-</dd> <dt><span id="GL_POINT_SIZE_GRANULARITY"></span><span id="gl_point_size_granularity"></span>\_granularidade do \_ tamanho do ponto GL \_</dt> <dd> 
+</dd> <dt><span id="GL_POINT_SIZE_GRANULARITY"></span><span id="gl_point_size_granularity"></span>\_GRANULARIDADE DO \_ TAMANHO DO PONTO \_ GL</dt> <dd> 
 
 | Propriedade | Valor |
 |------------------|--------------------------------------------------------------------------------|
-| Descrição:     | Granularidade de tamanho de ponto AntiAlias                                             |
+| Descrição:     | Granularidade do tamanho do ponto antialiased                                             |
 | Grupo de atributos: |                                                                                |
 | Valor inicial:   |                                                                                |
 | Comando Get:     | [**glGetFloatv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
@@ -281,7 +281,7 @@ ms.locfileid: "107909874"
 
  
 
-</dd> <dt><span id="GL_LINE_WIDTH_RANGE"></span><span id="gl_line_width_range"></span>\_intervalo de \_ largura da linha gl \_</dt> <dd> 
+</dd> <dt><span id="GL_LINE_WIDTH_RANGE"></span><span id="gl_line_width_range"></span>INTERVALO DE \_ LARGURA \_ DE LINHA \_ GL</dt> <dd> 
 
 | Propriedade | Valor |
 |------------------|--------------------------------------------------------------------------------|

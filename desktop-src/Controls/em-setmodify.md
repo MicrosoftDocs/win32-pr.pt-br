@@ -3,7 +3,7 @@ title: Mensagem de EM_SETMODIFY (WinUser. h)
 description: Define ou limpa o sinalizador de modificação para um controle de edição. O sinalizador de modificação indica se o texto dentro do controle de edição foi modificado. Você pode enviar essa mensagem para um controle de edição ou um controle de edição rico.
 ms.assetid: 9393f03e-0719-458b-8122-616df738c417
 keywords:
-- Controles de EM_SETMODIFY de mensagens do Windows
+- controles de Windows de mensagem de EM_SETMODIFY
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 591b57dbc5441e96c1c6d3963172864713ed939f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: fcd367a828e7f431b6177a2ec99fe508fec3e48c4743d492277f00ed4965e001
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103824526"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117831157"
 ---
 # <a name="em_setmodify-message"></a>\_Mensagem em SETmodify
 
@@ -43,7 +43,7 @@ Este parâmetro não é usado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Essa mensagem não retorna um valor.
 
@@ -61,9 +61,9 @@ O sistema limpa automaticamente o sinalizador de modificação para zero quando 
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                                     |
-| parâmetro<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                                           |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                                     |
+| Cabeçalho<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
 
 
 

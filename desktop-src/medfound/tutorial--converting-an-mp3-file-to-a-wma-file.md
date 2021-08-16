@@ -1,25 +1,25 @@
 ---
-description: Este tutorial mostra como usar a API de transcodificação para codificar um arquivo de áudio do Windows Media (WMA).
+description: este tutorial mostra como usar a API de transcodificação para codificar um arquivo de áudio de mídia Windows (WMA).
 ms.assetid: 2397ca78-edb5-4756-bd07-00529db28f76
 title: 'Tutorial: codificando um arquivo WMA'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2f491a9d460771dae91a49ab42982fbe97b24c42
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 86301f301bb4f39f6c9258ec3eacfdd1646af8e76791e2df37ae6bf7d8f89880
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105781378"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118972785"
 ---
 # <a name="tutorial-encoding-a-wma-file"></a>Tutorial: codificando um arquivo WMA
 
-Este tutorial mostra como usar a [API de transcodificação](transcode-api.md) para codificar um arquivo de áudio do Windows Media (WMA).
+este tutorial mostra como usar a [API de transcodificação](transcode-api.md) para codificar um arquivo de áudio de mídia Windows (WMA).
 
 Este tutorial reutiliza a maior parte do código do tutorial [codificando um arquivo MP4](tutorial--encoding-an-mp4-file-.md), portanto, você deve ler o tutorial primeiro. O único código que difere é a função `CreateTranscodeProfile` , que cria o perfil transcodificar.
 
 ## <a name="create-the-transcode-profile"></a>Criar o perfil transcodificar
 
-Um *perfil de transcodificação* descreve os parâmetros de codificação e o contêiner de arquivo. Para o WMA, o contêiner de arquivo é um arquivo ASF (Advanced Streaming Format). O arquivo ASF contém um fluxo de áudio, que é codificado usando o [**codificador de áudio do Windows Media**](windowsmediaaudioencoder.md).
+Um *perfil de transcodificação* descreve os parâmetros de codificação e o contêiner de arquivo. Para o WMA, o contêiner de arquivo é um arquivo ASF (Advanced Streaming Format). o arquivo ASF contém um fluxo de áudio, que é codificado usando o [**codificador Windows Media audio**](windowsmediaaudioencoder.md).
 
 Para criar a topologia de transcodificação, crie o perfil transcodificar e especifique os parâmetros para o fluxo de áudio e o contêiner. Em seguida, crie a topologia especificando a fonte de entrada, a URL de saída e o perfil de transcodificação.
 

@@ -47,7 +47,7 @@ Esteja ciente de que o link de relatório direto do gerente entre Julia Gray e C
 1.  Abra Visual Basic versão 6.0 e, quando solicitado para o tipo de projeto, selecione **Dados Project**.
 2.  Em **Data Project**, clique duas vezes em Ambiente de **Dados1**.
 3.  Na janela **Ambiente de Dados,** clique com o botão direito do mouse no objeto de **conexão (Connection1)** e selecione **Propriedades**.
-4.  Selecione **OLE DB provedor de serviços de diretório da Microsoft** e clique em **Próximo.**
+4.  Selecione **OLE DB Provedor de Serviços de Diretório da Microsoft** e clique em **Próximo.**
 5.  Selecione **Usar Windows NT Segurança integrada** e clique em **OK.** Isso cria um objeto de conexão.
 6.  Clique com o botão direito do **mouse na janela Ambiente de** Dados novamente para selecionar Adicionar **Comando**. Clique com o botão direito **do mouse no objeto Command1** e selecione **Propriedades**. A caixa **de diálogo Propriedades do Command1** a seguir será exibida.
 
@@ -62,7 +62,7 @@ Esteja ciente de que o link de relatório direto do gerente entre Julia Gray e C
 8.  Clique duas vezes **em Relatório de Dados1** na **Project** janela.
 9.  Arraste o **objeto Command1** da **janela DataEnvironment1** para **a seção Detalhes** na janela **Relatório de** Dados.
 10. Em **Propriedades de DataReport1**, para **DataSource**, selecione **DataEnvironment1** no menu suspenso e selecione **Command1** no campo **DataMember.**
-11. Na janela do projeto, clique com o botão direito **do mouse** em Data Project e selecione Propriedades do **DataProject**.
+11. Na janela do projeto, clique com o botão direito **do mouse em Data Project** e selecione Propriedades do **DataProject**.
 12. Na janela **de diálogo DataProject - Project Propriedades,** em Objeto de Inicialização **,** selecione **DataReport1** no menu suspenso. Clique em **OK** para salvar.
 13. Compilar. A caixa **de diálogo DataReport1 a** seguir será exibida.
 

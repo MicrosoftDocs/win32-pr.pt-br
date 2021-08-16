@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - Imeshare.dll
-ms.openlocfilehash: a49090d2ca192dfd3ec6d0064b92bd2233af79c2
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c53e48fbf2c607ee8a99c4f952cdb1bf9056826def452c42283dfd615392c4ab
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105747881"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118956095"
 ---
 # <a name="fulimestyle-function"></a>Função FUlIMEStyle
 
@@ -46,7 +46,7 @@ Uma estrutura **IMESTYLE** retornada da função [**PIMEStyleFromAttr**](pimesty
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 TRUE se o estilo tiver um estilo sublinhado.
 

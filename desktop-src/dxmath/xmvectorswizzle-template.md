@@ -4,12 +4,12 @@ ms.assetid: 75608e80-5911-45a8-beca-ceac1f4d2c1c
 title: Modelo XMVectorSwizzle (DirectXMath. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e8e872d76f3251eccc8616c143c645b388e2dca4
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 800d976d63480f88defea7f1db07651563df44e8985ae5925810617b44302e87
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105810911"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118984476"
 ---
 # <a name="xmvectorswizzle-template"></a>Modelo XMVectorSwizzle
 
@@ -53,7 +53,7 @@ Essa função é uma versão de modelo do [**XMVectorSwizzle**](/windows/win32/a
 
 ### <a name="platform-requirements"></a>Requisitos de plataforma
 
-Microsoft Visual Studio 2010 ou Microsoft Visual Studio 2012 com o SDK do Windows para Windows 8. Com suporte para aplicativos de área de trabalho Win32, aplicativos da Windows Store e aplicativos Windows Phone 8.
+Microsoft Visual Studio 2010 ou Microsoft Visual Studio 2012 com o SDK do Windows para Windows 8. com suporte para aplicativos de área de trabalho do Win32, aplicativos da Windows store e aplicativos Windows Phone 8.
 
 ## <a name="requirements"></a>Requisitos
 

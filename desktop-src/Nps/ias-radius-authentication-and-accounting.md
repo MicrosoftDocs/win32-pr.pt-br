@@ -5,19 +5,19 @@ ms.assetid: 3e00d555-355c-4a4c-a389-ab44e9ed9ca9
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cce45bbc6e4802ed5137849a5b22520c8a4badbb
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: e3b0395b6bc147da4f78bb718cda714014b9b665f5a26a8d20fa29402ee8dec1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104366390"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119063477"
 ---
 # <a name="radius-authentication-authorization-and-accounting"></a>Autenticação, autorização e contabilização RADIUS
 
 > [!Note]  
-> O IAS (serviço de autenticação da Internet) foi renomeado como NPS (servidor de políticas de rede) a partir do Windows Server 2008. O conteúdo deste tópico aplica-se ao IAS e ao NPS. Em todo o texto, o NPS é usado para fazer referência a todas as versões do serviço, incluindo as versões originalmente chamadas de IAS.
+> o IAS (serviço de autenticação da Internet) foi renomeado como NPS (servidor de políticas de rede) a partir do Windows Server 2008. O conteúdo deste tópico aplica-se ao IAS e ao NPS. Em todo o texto, o NPS é usado para fazer referência a todas as versões do serviço, incluindo as versões originalmente chamadas de IAS.
 
- 
+ 
 
 O NPS dá suporte total ao protocolo RADIUS (serviço RADIUS). O protocolo RADIUS é o padrão de fato para a autenticação de usuário remota e está documentado em [rfc 2865](https://www.ietf.org/rfc/rfc2865.txt) e [RFC 2866](https://www.ietf.org/rfc/rfc2866.txt).
 
@@ -58,6 +58,6 @@ Um servidor RADIUS pode atuar como um cliente proxy para outros servidores RADIU
 [Trabalhando com um servidor de estado](/windows/desktop/Nps/ias-working-with-a-state-server)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

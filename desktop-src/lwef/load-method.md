@@ -4,16 +4,16 @@ description: Método Load
 ms.assetid: 72a37471-f69b-49a5-a6eb-d65bff970c0f
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0927fc8e49e55c2bdfcd7b1109bb8604540c199c
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: e201053bf3eb9fbd7a3c5c7eb94f9b032cde13087f76e1fcfa176d068655137a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "105784535"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118748647"
 ---
 # <a name="load-method"></a>Método Load
 
-\[O Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
+\[o Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
 
 <dl> <dt>
 
@@ -27,7 +27,7 @@ Carrega um caractere na coleção de [**caracteres**](/windows/desktop/lwef/the-
 <span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>**Sintaxe**
 </dt> <dd>
 
-*agente do ***. Caracteres. Load "*** characterid * * *",* *  *provedor*
+*Agente ***. Caracteres. Load "**_characterid_*_",_ *  *provedor*
 
 
 
@@ -44,7 +44,7 @@ Carrega um caractere na coleção de [**caracteres**](/windows/desktop/lwef/the-
 
 ## <a name="remarks"></a>Comentários
 
-Você pode carregar caracteres do subdiretório do agente especificando um caminho relativo (um que não inclui dois pontos ou um caractere de barra à esquerda). Isso prefixa o caminho com o diretório de caracteres do agente (localizado no diretório localizado do Windows \\ MSAgent). Por exemplo, especificar o seguinte carregaria gênio. ACS do diretório de caracteres do agente:
+Você pode carregar caracteres do subdiretório do agente especificando um caminho relativo (um que não inclui dois pontos ou um caractere de barra à esquerda). isso prefixa o caminho com o diretório de caracteres do agente (localizado no diretório localizado Windows \\ msagent). Por exemplo, especificar o seguinte carregaria gênio. ACS do diretório de caracteres do agente:
 
 
 ```
@@ -73,7 +73,7 @@ Você pode carregar o caractere definido atualmente como o caractere padrão do 
 
 Não é possível carregar o mesmo caractere (um caractere com o mesmo GUID) mais de uma vez a partir de uma única instância do controle. Da mesma forma, você não pode carregar o caractere padrão e outros caracteres ao mesmo tempo de uma única instância do controle porque o caractere padrão pode ser o mesmo que o outro caractere. Se você tentar fazer isso, o servidor gerará um erro. No entanto, você pode criar outra instância do controle Agent e carregar o mesmo caractere.
 
-O Provedor de Dados do Microsoft Agent dá suporte ao carregamento de dados de caracteres armazenados como um único arquivo estruturado (. ACS) com dados de caractere e dados de animação juntos ou como dados de caractere separados (. ACF) e animação (. ACA) arquivos. Use estrutura única. Arquivo ACS para carregar um caractere que é armazenado em um disco ou rede local e acessado usando um protocolo de arquivo convencional (como caminhos UNC). Use a separada. ACF e. ACA arquivos quando você deseja carregar os arquivos de animação individualmente de um site remoto onde eles são acessados usando o protocolo HTTP.
+o Provedor de Dados do Microsoft Agent dá suporte ao carregamento de dados de caracteres armazenados como um único arquivo estruturado (. ACS) com dados de caractere e dados de animação juntos ou como dados de caractere separados (. ACF) e animação (. ACA) arquivos. Use estrutura única. Arquivo ACS para carregar um caractere que é armazenado em um disco ou rede local e acessado usando um protocolo de arquivo convencional (como caminhos UNC). Use a separada. ACF e. ACA arquivos quando você deseja carregar os arquivos de animação individualmente de um site remoto onde eles são acessados usando o protocolo HTTP.
 
 Fins. Os arquivos ACS, usando o método **Load** , fornecem acesso às animações de um caractere. Fins. Arquivos ACF, você também usa o método [**Get**](get-method.md) para carregar dados de animação. O método **Load** não oferece suporte ao download. Arquivos ACS de um site HTTP.
 

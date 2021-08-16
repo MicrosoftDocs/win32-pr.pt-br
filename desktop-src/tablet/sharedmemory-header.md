@@ -1,7 +1,7 @@
 ---
-description: Armazena informações sobre as seções de memória compartilhada.
+description: Armazena informações sobre seções de memória compartilhada.
 ms.assetid: 73a650ee-110c-43f2-a5e2-783d52fd29ee
-title: Estrutura de SHAREDMEMORY_HEADER
+title: SHAREDMEMORY_HEADER estrutura
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 695f3ef09cb5e7e67de757ee3926df6fde7ddff5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9ae596819feb4bd70aa47e7881521e5a69e5bd0a509b974e591d08907efda51c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105775647"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118966795"
 ---
-# <a name="sharedmemory_header-structure"></a>\_Estrutura de cabeçalho SHAREDMEMORY
+# <a name="sharedmemory_header-structure"></a>Estrutura DE HEADER SHAREDMEMORY \_
 
-Armazena informações sobre as seções de memória compartilhada.
+Armazena informações sobre seções de memória compartilhada.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -51,56 +51,56 @@ typedef struct _SHAREDMEMORY_HEADER {
 **cbTotal**
 </dt> <dd>
 
-O tamanho, em bytes, dos dados referenciados por essa estrutura de cabeçalho.
+O tamanho, em bytes, dos dados referenciados por essa estrutura de header.
 
 </dd> <dt>
 
 **cbOffsetSns**
 </dt> <dd>
 
-O tamanho, em bytes, que os números de série são deslocados da estrutura de cabeçalho.
+O tamanho, em bytes, de que os números de série são deslocamentos da estrutura do header.
 
 </dd> <dt>
 
 **idxEvent**
 </dt> <dd>
 
-O índice de eventos. Esse valor é incrementado com eventos sucessivos.
+O índice de evento. Esse valor é incrementado com eventos sucessivos.
 
 </dd> <dt>
 
 **dwEvent**
 </dt> <dd>
 
-O evento associado a este cabeçalho.
+O evento associado a este header.
 
 </dd> <dt>
 
-**CID**
+**Cid**
 </dt> <dd>
 
-O identificador de cursor referenciado pelo cabeçalho da memória compartilhada.
+O identificador de cursor referenciado pelo header de memória compartilhada.
 
 </dd> <dt>
 
 **sn**
 </dt> <dd>
 
-O número de série do cabeçalho da memória compartilhada.
+O número de série para o header de memória compartilhada.
 
 </dd> <dt>
 
 **sysEvt**
 </dt> <dd>
 
-O evento do sistema, prefixado SE \_ \* , associado a esse cabeçalho. Consulte a seção de comentários para obter mais informações.
+O evento do sistema, ES \_ \* , associado a esse título. Consulte a seção de comentários para obter mais informações.
 
 </dd> <dt>
 
 **sysEvtData**
 </dt> <dd>
 
-A estrutura de [**\_ \_ dados de evento do sistema**](/windows/win32/api/tpcshrd/ns-tpcshrd-system_event_data) associada ao evento do sistema.
+A [**estrutura SYSTEM EVENT \_ \_ DATA**](/windows/win32/api/tpcshrd/ns-tpcshrd-system_event_data) associada ao evento do sistema.
 
 </dd> <dt>
 
@@ -127,7 +127,7 @@ Um sinalizador que indica se os números de série estão presentes na seção d
 
 ## <a name="remarks"></a>Comentários
 
-Os valores a seguir são definidos para o membro **sysEvt** .
+Os valores a seguir são definidos para **o membro sysEvt.**
 
 
 ```C++
@@ -150,7 +150,7 @@ Os valores a seguir são definidos para o membro **sysEvt** .
 
 <dl> <dt>
 
-[**\_dados de evento do sistema \_**](/windows/win32/api/tpcshrd/ns-tpcshrd-system_event_data)
+[**DADOS DE \_ EVENTO DO \_ SISTEMA**](/windows/win32/api/tpcshrd/ns-tpcshrd-system_event_data)
 </dt> </dl>
 
  

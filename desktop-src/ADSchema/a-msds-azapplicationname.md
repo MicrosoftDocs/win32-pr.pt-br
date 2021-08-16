@@ -1,11 +1,11 @@
 ---
-title: Atributo ms-DS-Az-Application-Name
+title: atributo ms-DS-AZ-Application-Name
 description: Uma cadeia de caracteres que identifica exclusivamente um objeto de aplicativo.
 ms.assetid: 693a47f4-d3ae-4fae-8e5e-cbce41d00d45
 ms.tgt_platform: multiple
 keywords:
-- Ms-DS-Az-Application-Name atributo AD Schema
-- Esquema do AD do atributo msDS-AzApplicationName
+- ms-DS-AZ-Application-Name atributo AD Schema
+- atributo msDS-AzApplicationName do AD Schema
 topic_type:
 - apiref
 api_name:
@@ -21,7 +21,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118685691"
 ---
-# <a name="ms-ds-az-application-name-attribute"></a>Atributo ms-DS-Az-Application-Name
+# <a name="ms-ds-az-application-name-attribute"></a>atributo ms-DS-AZ-Application-Name
 
 Uma cadeia de caracteres que identifica exclusivamente um objeto de aplicativo.
 
@@ -29,14 +29,14 @@ Uma cadeia de caracteres que identifica exclusivamente um objeto de aplicativo.
 
 | Entrada | Valor |
 |-------------------|---------------------------------------------|
-| CN                | ms-DS-Az-Application-Name                   |
-| Ldap-Display-Name | msDS-AzApplicationName                      |
+| CN                | ms-DS-AZ-Application-Name                   |
+| LDAP-Display-Name | msDS-AzApplicationName                      |
 | Tamanho              | 128 caracteres                              |
 | Privilégio de atualização  | Administrador do AzRoles                               |
-| Frequência de atualização  | Durante a inicialização ou alteração da política.     |
+| Frequência de atualização  | Durante a inicialização ou a alteração da política.     |
 | Attribute-Id      | 1.2.840.113556.1.4.1798                     |
-| System-Id-Guid    | db5b0728-6208-4876-83b7-95d3e5695275        |
-| Sintaxe            | [**String(Unicode)**](s-string-unicode.md) |
+| System-ID-GUID    | db5b0728-6208-4876-83b7-95d3e5695275        |
+| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
 
 
 
@@ -57,15 +57,15 @@ Uma cadeia de caracteres que identifica exclusivamente um objeto de aplicativo.
 | ID do link                | \-                                                              |
 | MAPI-Id                | \-                                                              |
 | System-Only            | Falso                                                           |
-| Tem valor único       | True                                                            |
+| É de valor único       | Verdadeiro                                                            |
 | É indexado             | Falso                                                           |
-| No Catálogo Global      | Falso                                                           |
-| Descritor de segurança NT | O:BAG:BAD:S:                                                    |
+| No catálogo global      | Falso                                                           |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                    |
 | Range-Lower            | 0                                                               |
 | Range-Upper            | 512                                                             |
 | Search-Flags           | 0x00000000                                                      |
 | System-Flags           | 0x00000010                                                      |
-| Classes usadas em        | [**ms-DS-Az-Application**](c-msds-azapplication.md)<br/> |
+| Classes usadas em        | [**ms-DS-AZ-Application**](c-msds-azapplication.md)<br/> |
 
 
 
@@ -78,15 +78,15 @@ Uma cadeia de caracteres que identifica exclusivamente um objeto de aplicativo.
 | ID do link                | \-                                                              |
 | MAPI-Id                | \-                                                              |
 | System-Only            | Falso                                                           |
-| Tem valor único       | True                                                            |
+| É de valor único       | Verdadeiro                                                            |
 | É indexado             | Falso                                                           |
-| No Catálogo Global      | Falso                                                           |
-| Descritor de segurança NT | O:BAG:BAD:S:                                                    |
+| No catálogo global      | Falso                                                           |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                    |
 | Range-Lower            | 0                                                               |
 | Range-Upper            | 512                                                             |
 | Search-Flags           | 0x00000000                                                      |
 | System-Flags           | 0x00000010                                                      |
-| Classes usadas em        | [**ms-DS-Az-Application**](c-msds-azapplication.md)<br/> |
+| Classes usadas em        | [**ms-DS-AZ-Application**](c-msds-azapplication.md)<br/> |
 
 
 
@@ -99,15 +99,15 @@ Uma cadeia de caracteres que identifica exclusivamente um objeto de aplicativo.
 | ID do link                | \-                                                              |
 | MAPI-Id                | \-                                                              |
 | System-Only            | Falso                                                           |
-| Tem valor único       | True                                                            |
+| É de valor único       | Verdadeiro                                                            |
 | É indexado             | Falso                                                           |
-| No Catálogo Global      | Falso                                                           |
-| Descritor de segurança NT | O:BAG:BAD:S:                                                    |
+| No catálogo global      | Falso                                                           |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                    |
 | Range-Lower            | 0                                                               |
 | Range-Upper            | 512                                                             |
 | Search-Flags           | 0x00000000                                                      |
 | System-Flags           | 0x00000010                                                      |
-| Classes usadas em        | [**ms-DS-Az-Application**](c-msds-azapplication.md)<br/> |
+| Classes usadas em        | [**ms-DS-AZ-Application**](c-msds-azapplication.md)<br/> |
 
 
 
@@ -120,15 +120,15 @@ Uma cadeia de caracteres que identifica exclusivamente um objeto de aplicativo.
 | ID do link                | \-                                                              |
 | MAPI-Id                | \-                                                              |
 | System-Only            | Falso                                                           |
-| Tem valor único       | True                                                            |
+| É de valor único       | Verdadeiro                                                            |
 | É indexado             | Falso                                                           |
-| No Catálogo Global      | Falso                                                           |
-| Descritor de segurança NT | O:BAG:BAD:S:                                                    |
+| No catálogo global      | Falso                                                           |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                    |
 | Range-Lower            | 0                                                               |
 | Range-Upper            | 512                                                             |
 | Search-Flags           | 0x00000000                                                      |
 | System-Flags           | 0x00000010                                                      |
-| Classes usadas em        | [**ms-DS-Az-Application**](c-msds-azapplication.md)<br/> |
+| Classes usadas em        | [**ms-DS-AZ-Application**](c-msds-azapplication.md)<br/> |
 
 
 
@@ -141,15 +141,15 @@ Uma cadeia de caracteres que identifica exclusivamente um objeto de aplicativo.
 | ID do link                | \-                                                              |
 | MAPI-Id                | \-                                                              |
 | System-Only            | Falso                                                           |
-| Tem valor único       | True                                                            |
+| É de valor único       | Verdadeiro                                                            |
 | É indexado             | Falso                                                           |
-| No Catálogo Global      | Falso                                                           |
-| Descritor de segurança NT | O:BAG:BAD:S:                                                    |
+| No catálogo global      | Falso                                                           |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                    |
 | Range-Lower            | 0                                                               |
 | Range-Upper            | 512                                                             |
 | Search-Flags           | 0x00000000                                                      |
 | System-Flags           | 0x00000010                                                      |
-| Classes usadas em        | [**ms-DS-Az-Application**](c-msds-azapplication.md)<br/> |
+| Classes usadas em        | [**ms-DS-AZ-Application**](c-msds-azapplication.md)<br/> |
 
 
 

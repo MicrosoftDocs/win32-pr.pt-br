@@ -1,9 +1,9 @@
 ---
 title: Função countbits
-description: Conta o número de bits (por componente) definido no inteiro de entrada.
+description: Conta o número de bits (por componente) definido no número inteiro de entrada.
 ms.assetid: c4fafbc8-e21c-48cb-b433-8241a989ec85
 keywords:
-- função countbits HLSL
+- HLSL da função countbits
 topic_type:
 - apiref
 api_name:
@@ -22,7 +22,7 @@ ms.locfileid: "118793964"
 ---
 # <a name="countbits-function"></a>Função countbits
 
-Conta o número de bits (por componente) definido no inteiro de entrada.
+Conta o número de bits (por componente) definido no número inteiro de entrada.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -36,7 +36,7 @@ uint countbits(
 
 <dl> <dt>
 
-*value* \[ Em\]
+*valor* \[ do no\]
 </dt> <dd>
 
 Tipo: **uint**
@@ -62,15 +62,15 @@ uint3 count_bits(uint3 value);
 uint4 count_bits(uint4 value);
 ```
 
-### <a name="minimum-shader-model"></a>Modelo de sombreador mínimo
+### <a name="minimum-shader-model"></a>Modelo de sombreamento mínimo
 
-Essa função tem suporte nos modelos de sombreador a seguir.
+Essa função tem suporte nos seguintes modelos de sombreador.
 
 
 
 | Modelo de Sombreador                                                                | Com suporte |
 |-----------------------------------------------------------------------------|-----------|
-| [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md) e modelos de sombreador superior | sim       |
+| [Modelo](d3d11-graphics-reference-sm5.md) de sombreador 5 e modelos de sombreador mais altos | sim       |
 
 
 
@@ -80,7 +80,7 @@ Essa função tem suporte nos seguintes tipos de sombreadores:
 
 
 
-| Vértice | Casco | Domínio | Geometry | Pixel | Computação |
+| Vértice | Envoltória | Domínio | Geometry | 16x16 | Computação |
 |--------|------|--------|----------|-------|---------|
 | x      | x    | x      | x        | x     | x       |
 

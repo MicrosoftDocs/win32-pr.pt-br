@@ -1,11 +1,11 @@
 ---
-title: atributo ms-DS-KrbTgt-link-BL
-description: Link para trás para o atributo ms-DS-KrbTgt-link.
+title: Atributo ms-DS-KrbTgt-Link-BL
+description: Link para trás para o atributo ms-DS-KrbTgt-Link.
 ms.assetid: dcaa8257-260c-4eae-8c82-762d70d62281
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD do atributo ms-DS-KrbTgt-link-BL
-- atributo msDS-KrbTgtLinkBl do AD Schema
+- Esquema do AD do atributo ms-DS-KrbTgt-Link-BL
+- Esquema do AD do atributo msDS-KrbTgtLinkBl
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 11fc821ccd4515dcfc2932855c58bbad9525f8de
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: bc94ab62be3cb1f37941c92aa8e339d17f95f4927962b491ca123489f9c792a7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104086937"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118960725"
 ---
-# <a name="ms-ds-krbtgt-link-bl-attribute"></a>atributo ms-DS-KrbTgt-link-BL
+# <a name="ms-ds-krbtgt-link-bl-attribute"></a>Atributo ms-DS-KrbTgt-Link-BL
 
-Link para trás para o atributo [**MS-DS-KrbTgt-link**](a-msds-krbtgtlink.md) .
+Link para trás para [**o atributo ms-DS-KrbTgt-Link.**](a-msds-krbtgtlink.md)
 
 
 
 | Entrada | Valor |
 |-------------------|-----------------------------------------|
-| CN                | ms-DS-KrbTgt-link-BL                    |
-| LDAP-Display-Name | msDS-KrbTgtLinkBl                       |
+| CN                | ms-DS-KrbTgt-Link-BL                    |
+| Ldap-Display-Name | msDS-KrbTgtLinkBl                       |
 | Tamanho              | \-                                      |
 | Privilégio de atualização  | \-                                      |
 | Frequência de atualização  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.1931                 |
-| System-ID-GUID    | 5dd68c41-bfdf-438b-9b5d-39d9618bf260    |
-| Syntax            | [**Objeto (DS-DN)**](s-object-ds-dn.md) |
+| System-Id-Guid    | 5dd68c41-bfdf-438b-9b5d-39d9618bf260    |
+| Syntax            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
 
@@ -54,11 +54,11 @@ Link para trás para o atributo [**MS-DS-KrbTgt-link**](a-msds-krbtgtlink.md) .
 |------------------------|---------------------------------|
 | ID do link                | 2101                            |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| É de valor único       | Falso                           |
+| System-Only            | Verdadeiro                            |
+| Tem valor único       | Falso                           |
 | É indexado             | Falso                           |
-| No catálogo global      | Falso                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| No Catálogo Global      | Falso                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -75,11 +75,11 @@ Link para trás para o atributo [**MS-DS-KrbTgt-link**](a-msds-krbtgtlink.md) .
 |------------------------|---------------------------------|
 | ID do link                | 2101                            |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| É de valor único       | Falso                           |
+| System-Only            | Verdadeiro                            |
+| Tem valor único       | Falso                           |
 | É indexado             | Falso                           |
-| No catálogo global      | Falso                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| No Catálogo Global      | Falso                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -96,11 +96,11 @@ Link para trás para o atributo [**MS-DS-KrbTgt-link**](a-msds-krbtgtlink.md) .
 |------------------------|---------------------------------|
 | ID do link                | 2101                            |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| É de valor único       | Falso                           |
+| System-Only            | Verdadeiro                            |
+| Tem valor único       | Falso                           |
 | É indexado             | Falso                           |
-| No catálogo global      | Falso                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| No Catálogo Global      | Falso                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |

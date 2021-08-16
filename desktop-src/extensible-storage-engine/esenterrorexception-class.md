@@ -33,25 +33,25 @@ ms.locfileid: "118779285"
 ---
 # <a name="esenterrorexception-class"></a>Classe EsentErrorException
 
-Classe base para exceções de erro ESENT.
+Classe base para exceções de erro de ESENT.
 
 ## <a name="inheritance-hierarchy"></a>Hierarquia de herança
 
 [System.Object](/dotnet/api/system.object)  
   [System.Exception](/dotnet/api/system.exception)  
-    [Microsoft.Isam.Esent.EsentException](./esentexception-class.md)  
-      Microsoft.Isam.Esent.Interop.EsentErrorException  
-        [Microsoft.Isam.Esent.Interop.EsentApiException](./esentapiexception-class.md)  
-        [Microsoft.Isam.Esent.Interop.EsentCannotLogDuringRecoveryRedoException](./esentcannotlogduringrecoveryredoexception-class.md)  
-        [Microsoft.Isam.Esent.Interop.EsentDataException](./esentdataexception-class.md)  
-        [Microsoft.Isam.Esent.Interop.EsentOperationException](./esentoperationexception-class.md)  
-        [Microsoft.Isam.Esent.Interop.EsentPreviousVersionException](./esentpreviousversionexception-class.md)  
-        [Microsoft.Isam.Esent.Interop.EsentVersionStoreEntryTooBigException](./esentversionstoreentrytoobigexception-class.md)  
+    [Microsoft. ISAM. ESENT. EsentException](./esentexception-class.md)  
+      Microsoft. ISAM. ESENT. Interop. EsentErrorException  
+        [Microsoft. ISAM. ESENT. Interop. EsentApiException](./esentapiexception-class.md)  
+        [Microsoft. ISAM. ESENT. Interop. EsentCannotLogDuringRecoveryRedoException](./esentcannotlogduringrecoveryredoexception-class.md)  
+        [Microsoft. ISAM. ESENT. Interop. EsentDataException](./esentdataexception-class.md)  
+        [Microsoft. ISAM. ESENT. Interop. EsentOperationException](./esentoperationexception-class.md)  
+        [Microsoft. ISAM. ESENT. Interop. EsentPreviousVersionException](./esentpreviousversionexception-class.md)  
+        [Microsoft. ISAM. ESENT. Interop. EsentVersionStoreEntryTooBigException](./esentversionstoreentrytoobigexception-class.md)  
 
-**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -75,6 +75,6 @@ Qualquer membro estático público (Shared no Visual Basic) desse tipo é seguro
 
 #### <a name="reference"></a>Referência
 
-[Membros EsentErrorException](./esenterrorexception-members.md)
+[Membros do EsentErrorException](./esenterrorexception-members.md)
 
-[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)

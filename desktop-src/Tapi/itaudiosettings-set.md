@@ -1,21 +1,21 @@
 ---
-description: O método set define o valor de uma determinada propriedade de configurações de áudio.
+description: O método Set define o valor de uma determinada propriedade de configurações de áudio.
 ms.assetid: 3132e004-5543-4b21-878d-35197f7077d6
-title: 'Método ITAudioSettings:: Set (Ipmsp. h)'
+title: Método ITAudioSettings::Set (Ipmsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bf947c28d3b5270b3c5dabd4196d0e6b71f57911
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: abf26b35e3d5be18721abb6d8dd109946503cb11cb30d5c7db869d92e88adfcc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105754191"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119003394"
 ---
-# <a name="itaudiosettingsset-method"></a>Método ITAudioSettings:: Set
+# <a name="itaudiosettingsset-method"></a>Método ITAudioSettings::Set
 
-\[ Esse método não está disponível para uso no Windows Vista, no Windows Server 2008 e em versões subsequentes do sistema operacional. A API do cliente RTC fornece funcionalidade semelhante.\]
+\[Esse método não está disponível para uso no Windows Vista, Windows Server 2008 e versões subsequentes do sistema operacional. A API do Cliente RTC fornece funcionalidade semelhante.\]
 
-O método **set** define o valor de uma determinada [**propriedade de configurações de áudio**](audiosettingsproperty.md).
+O **método Set** define o valor de uma determinada propriedade de [**configurações de áudio**](audiosettingsproperty.md).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -32,28 +32,28 @@ HRESULT get_Error(
 
 <dl> <dt>
 
-*Propriedade* \[ no\]
+*Propriedade* \[ Em\]
 </dt> <dd>
 
-Membro da enumeração [**AudioSettingsProperty**](audiosettingsproperty.md) .
+Membro da [**enum AudioSettingsProperty.**](audiosettingsproperty.md)
 
 </dd> <dt>
 
-*lvalue* \[ no\]
+*lValue* \[ Em\]
 </dt> <dd>
 
-Valor desejado para a propriedade.
+Valor desejado para a propriedade .
 
 </dd> <dt>
 
-*lFlags* \[ no\]
+*lFlags* \[ Em\]
 </dt> <dd>
 
-Valor da enumeração [**TAPIControlFlags**](tapicontrolflags.md) indicando como o valor da *Propriedade* deve ser controlado.
+Valor da [**enum TAPIControlFlags**](tapicontrolflags.md) que indica como o *valor property* deve ser controlado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método pode retornar um desses valores.
 
@@ -74,9 +74,9 @@ Esse método pode retornar um desses valores.
 
 | Requisito | Valor |
 |-------------------------|--------------------------------------------------------------------------------------|
-| Versão da TAPI<br/> | Requer TAPI 3,1<br/>                                                         |
-| parâmetro<br/>       | <dl> <dt>Ipmsp. h</dt> </dl>   |
-| Biblioteca<br/>      | <dl> <dt>UUID. lib</dt> </dl>  |
+| Versão do TAPI<br/> | Requer TAPI 3.1<br/>                                                         |
+| Cabeçalho<br/>       | <dl> <dt>Ipmsp.h</dt> </dl>   |
+| Biblioteca<br/>      | <dl> <dt>Uuid.lib</dt> </dl>  |
 | DLL<br/>          | <dl> <dt>Tapi3.dll</dt> </dl> |
 
 

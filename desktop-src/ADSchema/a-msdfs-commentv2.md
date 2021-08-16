@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e0d090b9c0b0f91c1e15f38ef70be771ae24f8f6
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: dce86a500b1b834d2f8226fffc3dbbd0dc692b183bd4d421f47d2e09a19311e6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105754882"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118961025"
 ---
 # <a name="ms-dfs-comment-v2-attribute"></a>atributo ms-DFS-comment-v2
 
@@ -55,7 +55,7 @@ Comentário associado à raiz ou ao link do DFS.
 | ID do link                | \-                                                                                                                                                                                   |
 | MAPI-Id                | \-                                                                                                                                                                                   |
 | System-Only            | Falso                                                                                                                                                                                |
-| É de valor único       | True                                                                                                                                                                                 |
+| É de valor único       | Verdadeiro                                                                                                                                                                                 |
 | É indexado             | Falso                                                                                                                                                                                |
 | No catálogo global      | Falso                                                                                                                                                                                |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                                                         |
@@ -76,7 +76,7 @@ Comentário associado à raiz ou ao link do DFS.
 | ID do link                | \-                                                                                                                                                                                   |
 | MAPI-Id                | \-                                                                                                                                                                                   |
 | System-Only            | Falso                                                                                                                                                                                |
-| É de valor único       | True                                                                                                                                                                                 |
+| É de valor único       | Verdadeiro                                                                                                                                                                                 |
 | É indexado             | Falso                                                                                                                                                                                |
 | No catálogo global      | Falso                                                                                                                                                                                |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                                                         |
@@ -97,7 +97,7 @@ Comentário associado à raiz ou ao link do DFS.
 | ID do link                | \-                                                                                                                                                                                   |
 | MAPI-Id                | \-                                                                                                                                                                                   |
 | System-Only            | Falso                                                                                                                                                                                |
-| É de valor único       | True                                                                                                                                                                                 |
+| É de valor único       | Verdadeiro                                                                                                                                                                                 |
 | É indexado             | Falso                                                                                                                                                                                |
 | No catálogo global      | Falso                                                                                                                                                                                |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                                                         |
@@ -105,7 +105,7 @@ Comentário associado à raiz ou ao link do DFS.
 | Range-Upper            | 32766                                                                                                                                                                                |
 | Search-Flags           | 0x00000000                                                                                                                                                                           |
 | System-Flags           | 0x00000010                                                                                                                                                                           |
-| Classes usadas em        | [**MS-DFS-Deleted-link-v2**](c-msdfs-deletedlinkv2.md)<br/> [**MS-DFS-link-v2**](c-msdfs-linkv2.md)<br/> [**MS-DFS-namespace-v2**](c-msdfs-namespacev2.md)<br/> |
+| Classes usadas em        | [**ms-DFS-Deleted-Link-v2**](c-msdfs-deletedlinkv2.md)<br/> [**ms-DFS-Link-v2**](c-msdfs-linkv2.md)<br/> [**ms-DFS-Namespace-v2**](c-msdfs-namespacev2.md)<br/> |
 
 
 

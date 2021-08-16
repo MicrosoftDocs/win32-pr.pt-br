@@ -1,6 +1,6 @@
 ---
 title: g_wszWMVCBAvg (Wmcodecdsp.h)
-description: Para ver a documentação atual Windows codecs de mídia e processadores de sinal digital, consulte Windows codec de áudio e vídeo de mídia e APIs DSP. | g_wszWMVCBAvg (Wmcodecdsp.h)
+description: Para ver a documentação atual sobre Windows de mídia e processadores de sinal digital, consulte Windows codec de áudio e vídeo de mídia e APIs DSP. | g_wszWMVCBAvg (Wmcodecdsp.h)
 ms.assetid: c838375d-0ba0-4e12-be9d-f4c455f35114
 keywords:
 - g_wszWMVCBAvg formato de mídia do Windows

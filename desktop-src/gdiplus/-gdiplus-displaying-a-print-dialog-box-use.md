@@ -4,12 +4,12 @@ ms.assetid: 73a74186-c916-4ad9-b768-6bc887fd5231
 title: Exibindo uma caixa de diálogo de impressão
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1b0d40365c36e3e554812ff137475ab7c6405e91
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 113c9235e70712a4923ebdc3ad239f533160eb2f84f76ae729d7fadf203ca612
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104988882"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119036824"
 ---
 # <a name="displaying-a-print-dialog-box"></a>Exibindo uma caixa de diálogo de impressão
 

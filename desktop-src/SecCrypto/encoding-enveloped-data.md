@@ -4,12 +4,12 @@ ms.assetid: f35aacda-6827-42e9-b7ac-58dc007fc697
 title: Codificando dados Envelopos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 53dc20fc7483ba1ef364d8b59824d26bd14d458d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3517a956311373d067072899ee71bcdf742990877c7d569bfe4e5ef7f2757e08
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104559199"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117766752"
 ---
 # <a name="encoding-enveloped-data"></a>Codificando dados Envelopos
 

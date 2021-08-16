@@ -1,7 +1,7 @@
 ---
-description: Define o tipo que contém o valor de texto em um leitor de diário de elementos de conteúdo \[ \] .
+description: Define o tipo que contém o valor de texto em um Leitor de Diário do \[ elemento Content \] .
 ms.assetid: f0969da4-2557-4f43-97e6-e8ab5da3a0a5
-title: Tipo complexo de tipo
+title: Tipo complexo TextType
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -19,9 +19,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118715411"
 ---
-# <a name="texttype-complex-type"></a>Tipo complexo de tipo
+# <a name="texttype-complex-type"></a>Tipo complexo TextType
 
-Define o tipo que contém o valor de texto em um [ \[ leitor \] de diário de elementos de conteúdo](content-element--journal-reader.md).
+Define o tipo que contém o valor de texto em um [Leitor de Diário do elemento \[ Content \] ](content-element--journal-reader.md).
 
 ``` syntax
 <xs:complexType name="TextType" />
@@ -33,7 +33,7 @@ Define o tipo que contém o valor de texto em um [ \[ leitor \] de diário de el
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do XP Tablet PC Edition\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho do XP Tablet PC \[ Edition\]<br/> |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                     |
 
 

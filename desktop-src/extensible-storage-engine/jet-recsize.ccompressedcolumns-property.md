@@ -33,7 +33,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118763741"
 ---
-# <a name="jet_recsizeccompressedcolumns-property"></a>JET_RECSIZE.cCompressedColumns
+# <a name="jet_recsizeccompressedcolumns-property"></a>propriedade JET_RECSIZE.cCompressedColumns
 
 Obtém o número total de colunas no registro que são compactadas.
 

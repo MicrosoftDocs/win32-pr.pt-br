@@ -3,8 +3,8 @@ title: Enumeração de MPRESOLVED_REASON (MpClient. h)
 description: Possíveis motivos para uma falha de correção ser resolvida.
 ms.assetid: 29E875D7-97DA-4129-AB71-B261CD0E682A
 keywords:
-- Recursos do ambiente Windows herdado de enumeração de MPRESOLVED_REASON
-- PMPRESOLVED_REASON recursos de ambiente herdados do ponteiro de enumeração do Windows
+- recursos do ambiente de Windows herdado de enumeração de MPRESOLVED_REASON
+- Windows recursos de ambiente herdados do ponteiro de enumeração PMPRESOLVED_REASON
 topic_type:
 - apiref
 api_name:
@@ -15,12 +15,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ab31fc8b734852ccdf15278f535d916228b43976
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a365ef55d9fe2d76e619f3c772cc1df2e6c5e1c8c33721f24dc844d064b33398
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104009533"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118975976"
 ---
 # <a name="mpresolved_reason-enumeration"></a>\_Enumeração de motivo MPRESOLVED
 
@@ -70,9 +70,9 @@ Tempo suficiente aprovado. O padrão é uma semana.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                            |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>MpClient. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 8 \[ somente aplicativos da área de trabalho\]<br/>                                            |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 \[ somente aplicativos da área de trabalho\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>MpClient. h</dt> </dl> |
 
 
 

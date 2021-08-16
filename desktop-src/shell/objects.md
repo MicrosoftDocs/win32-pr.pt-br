@@ -1,5 +1,5 @@
 ---
-description: Esta seção descreve os objetos do Windows implementados pelo shell.
+description: esta seção descreve os objetos de Windows implementados pelo Shell.
 title: Objetos do Shell para scripts e Microsoft Visual Basic
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,16 +9,16 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: 52958c68edfd81771267c7a7ed29e42ab8ed1d5a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bd2c924d9b66194c8f016fc8b1c16bed8a7e3c62f82e3673837e0e31c8563fc5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104505984"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117858795"
 ---
 # <a name="shell-objects-for-scripting-and-microsoft-visual-basic"></a>Objetos do Shell para scripts e Microsoft Visual Basic
 
-Esta seção descreve os objetos do Windows implementados pelo shell.
+esta seção descreve os objetos de Windows implementados pelo Shell.
 
 ## <a name="in-this-section"></a>Nesta seção
 
@@ -38,7 +38,7 @@ Esta seção descreve os objetos do Windows implementados pelo shell.
 <tbody>
 <tr class="odd">
 <td><a href="didiskquotauser-object.md"><strong>DIDiskQuotaUser</strong></a><br/></td>
-<td>Permite que um cliente gerencie as configurações de cota de disco global de um volume NTFS. Esse objeto torna a funcionalidade essencial da interface <a href="didiskquotauser-object.md"><strong>DIDiskQuotaUser</strong></a> disponível para scripts e aplicativos baseados no Microsoft Visual Basic.<br/></td>
+<td>Permite que um cliente gerencie as configurações de cota de disco global de um volume NTFS. esse objeto torna a funcionalidade essencial da interface <a href="didiskquotauser-object.md"><strong>DIDiskQuotaUser</strong></a> disponível para scripts e aplicativos baseados no Microsoft Visual Basic.<br/></td>
 </tr>
 <tr class="even">
 <td><a href="diskquotacontrol-object.md"><strong>DiskQuotaControl</strong></a><br/></td>
@@ -164,7 +164,7 @@ Esta seção descreve os objetos do Windows implementados pelo shell.
 </tr>
 <tr class="odd">
 <td><a href="shelluihelper.md"><strong>ShellUIHelper</strong></a><br/></td>
-<td>Implementado pelo shell para ajudar o script e os desenvolvedores de Visual Basic a usar alguns dos recursos disponíveis no Shell. O objeto <a href="shelluihelper.md"><strong>ShellUIHelper</strong></a> não tem nenhuma propriedade ou evento. Os métodos são fornecidos para adicionar itens ao shell.<br/></td>
+<td>implementado pelo Shell para ajudar o script e os desenvolvedores de Visual Basic a usar alguns dos recursos disponíveis no Shell. O objeto <a href="shelluihelper.md"><strong>ShellUIHelper</strong></a> não tem nenhuma propriedade ou evento. Os métodos são fornecidos para adicionar itens ao shell.<br/></td>
 </tr>
 <tr class="even">
 <td><a href="shellwindows.md"><strong>ShellWindows</strong></a><br/></td>

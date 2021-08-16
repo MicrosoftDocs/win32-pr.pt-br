@@ -4,12 +4,12 @@ ms.assetid: 6c8ec020-5f12-453b-bbeb-3baabb1ca213
 title: Sinalizadores de tipo de barramento OPM (Opmapi. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ae3e6988d6bcd33015b0efc5b12561ef3373a9e8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 26e4989a91c308a7dc82bb15e9cd577a6facd89a0a6de9a32f0ef95f400917ce
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104502269"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118972995"
 ---
 # <a name="opm-bus-type-flags"></a>Sinalizadores de tipo de barramento OPM
 
@@ -48,9 +48,9 @@ Os sinalizadores do tipo de bug de OPM \_ \_ \_ xxxx e o sinalizador **\_ integr
 
 | Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                      |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                |
-| parâmetro<br/>                   | <dl> <dt>Opmapi. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                      |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                |
+| Cabeçalho<br/>                   | <dl> <dt>Opmapi. h</dt> </dl> |
 
 
 

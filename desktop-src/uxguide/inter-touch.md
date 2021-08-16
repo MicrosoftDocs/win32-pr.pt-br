@@ -1,24 +1,24 @@
 ---
 title: Touch
-description: Todos os aplicativos do Microsoft Windows devem ter uma excelente experiência de toque. E a criação dessa experiência é mais fácil do que você imagina.
+description: todos os aplicativos do Microsoft Windows devem ter uma excelente experiência de toque. E a criação dessa experiência é mais fácil do que você imagina.
 ms.assetid: a87d0726-1c57-4cf8-9e35-4e73a09ff1a3
 ms.topic: article
 ms.date: 10/20/2020
-ms.openlocfilehash: a44a95ad963d3563418ed0492e55606824011f31
-ms.sourcegitcommit: 3bdf30edb314e0fcd17dc4ddbc70e4ec7d3596e6
+ms.openlocfilehash: 68f73b7da9cf33dc20a3c0534044558e514284f024f11609ef9af4760ec79a8c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "104567039"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119029614"
 ---
 # <a name="touch"></a>Touch
 
 > [!NOTE]
-> Este guia de design foi criado para o Windows 7 e não foi atualizado para versões mais recentes do Windows. Grande parte da orientação ainda se aplica em princípio, mas a apresentação e os exemplos não refletem nossas [diretrizes de design atuais](/windows/uwp/design/).
+> este guia de design foi criado para o Windows 7 e não foi atualizado para versões mais recentes do Windows. Grande parte da orientação ainda se aplica em princípio, mas a apresentação e os exemplos não refletem nossas [diretrizes de design atuais](/windows/uwp/design/).
 
-Todos os aplicativos do Microsoft Windows devem ter uma excelente experiência de toque. E a criação dessa experiência é mais fácil do que você imagina.
+todos os aplicativos do Microsoft Windows devem ter uma excelente experiência de toque. E a criação dessa experiência é mais fácil do que você imagina.
 
-O toque refere-se ao uso de um ou mais dedos para fornecer entrada por meio de uma exibição de dispositivo e interagir com o Windows e os aplicativos. Um aplicativo otimizado para toque tem uma interface do usuário e um modelo de interação projetados para acomodar as áreas de contato maiores e menos precisas de toque, os vários fatores forma de dispositivos de toque e as muitas posturas e as alças que os usuários podem adotar ao usar um dispositivo de toque.
+o toque refere-se ao uso de um ou mais dedos para fornecer entrada por meio de uma exibição de dispositivo e interagir com Windows e aplicativos. Um aplicativo otimizado para toque tem uma interface do usuário e um modelo de interação projetados para acomodar as áreas de contato maiores e menos precisas de toque, os vários fatores forma de dispositivos de toque e as muitas posturas e as alças que os usuários podem adotar ao usar um dispositivo de toque.
 
 ![Usuário interagindo com tablet usando toque](images/inter_touch_image1.jpeg)
 
@@ -67,7 +67,7 @@ Felizmente, se seu aplicativo já estiver bem projetado, é fácil fornecer uma 
 
 ## <a name="guidelines-for-touch-input"></a>Diretrizes para entrada por toque
 
-Com o toque, seu aplicativo do Windows pode usar gestos físicos para emular a manipulação direta de elementos da interface do usuário.
+com o toque, seu aplicativo Windows pode usar gestos físicos para emular a manipulação direta de elementos da interface do usuário.
 
 Considere estas práticas recomendadas ao projetar seu aplicativo habilitado para toque:
 
@@ -75,7 +75,7 @@ Considere estas práticas recomendadas ao projetar seu aplicativo habilitado par
 
 **A consistência é essencial para a criação de experiências de toque que se sentem naturais e intuitivas.** Depois que os usuários aprendem um gesto padrão, eles esperam que o gesto tenha o mesmo efeito em todos os aplicativos. Para evitar confusão e frustração, nunca atribua significados não padrão a gestos padrão. Em vez disso, use gestos personalizados para interações exclusivas para seu programa.
 
-Em seguida, descreveremos o idioma do Windows Touch, mas antes de prosseguir, aqui está uma pequena lista de termos básicos de entrada por toque.
+em seguida, descreveremos a linguagem de toque Windows, mas antes de prosseguir, aqui está uma pequena lista de termos de entrada de toque básicos.
 
 -   **Gesto**
 
@@ -91,9 +91,9 @@ Em seguida, descreveremos o idioma do Windows Touch, mas antes de prosseguir, aq
 
     As interações dependem de como uma manipulação é interpretada e o comando ou a ação que resulta da manipulação. Por exemplo, os objetos podem ser movidos usando os gestos deslizar e passar o dedo, mas os resultados diferem dependendo se um limite de distância é cruzado. O slide pode ser usado para arrastar um objeto ou deslocar um modo de exibição enquanto o dedo pode ser usado para selecionar um item ou exibir uma barra de aplicativo.
 
-### <a name="the-windows-touch-language"></a>O Windows Touch Language
+### <a name="the-windows-touch-language"></a>a linguagem de toque Windows
 
-O Windows fornece um conjunto conciso de interações de toque que são usadas em todo o sistema. Aplicar essa linguagem de toque consistentemente faz com que seu aplicativo se sinta familiarizado com o que os usuários já conhecem. Isso aumenta a confiança do usuário, tornando seu aplicativo mais fácil de aprender e usar. Para saber mais sobre a implementação de linguagem de toque, consulte gestos, manipulações e interações.
+Windows fornece um conjunto conciso de interações de toque que são usadas em todo o sistema. Aplicar essa linguagem de toque consistentemente faz com que seu aplicativo se sinta familiarizado com o que os usuários já conhecem. Isso aumenta a confiança do usuário, tornando seu aplicativo mais fácil de aprender e usar. Para saber mais sobre a implementação de linguagem de toque, consulte gestos, manipulações e interações.
 
 **Pressione e mantenha pressionado para aprender**
 
@@ -210,7 +210,7 @@ Efeito: girar o objeto subjacente com o mesmo valor que os dedos giraram. Lembre
 
 O gesto de rotação.
 
-A rotação faz sentido apenas para determinados tipos de objetos e, portanto, não é mapeada para uma interação do Windows do sistema.
+a rotação faz sentido apenas para determinados tipos de objetos e, portanto, não é mapeada para um sistema Windows interação.
 
 A rotação geralmente é feita de forma diferente por pessoas diferentes. Algumas pessoas preferem girar um dedo em volta de um dedo dinâmico, enquanto outras preferem girar os dois dedos em um movimento circular. A maioria das pessoas usa uma combinação dos dois, com um dedo movendo mais do que o outro. Embora a rotação uniforme para qualquer ângulo seja a melhor interação, em muitos contextos, como a exibição de fotos, é melhor se liquidar com a rotação de 90 graus mais próxima depois que o usuário sair. Na edição de fotos, você pode usar uma pequena rotação para endireitar a foto.
 
@@ -275,11 +275,11 @@ Além disso, a pesquisa mostra que um tamanho mínimo de 10x10 mm (cerca de 40x4
 
 O objetivo não é ter controles gigantes, apenas aqueles que são facilmente usados com toque.
 
-![Captura de tela que mostra a barra de ferramentas do Microsoft Word com o botão ' A B C ortografia & gramática ' realçado, com uma altura de 41 DLU e 40 DLU de largura.](images/inter-touch-image15.png)
+![captura de tela que mostra a barra de ferramentas Microsoft Word com o botão ' a B C ortografia & gramática ' realçado, com uma altura de 41 DLU e 40 largura de DLU.](images/inter-touch-image15.png)
 
-Neste exemplo, o Microsoft Word usa botões maiores que 10x10 mm para os comandos mais importantes.
+neste exemplo, Microsoft Word usa botões maiores que 10x10 mm para os comandos mais importantes.
 
-![Captura de tela que mostra a calculadora do Windows.](images/inter-touch-image16.png)
+![captura de tela que mostra a calculadora de Windows.](images/inter-touch-image16.png)
 
 Esta versão da calculadora usa botões maiores que 10x10 mm para seus comandos usados com mais frequência.
 
@@ -381,7 +381,7 @@ Pode haver situações em que o espaçamento extra seria desejável ao usar o to
 
 Considere que o local do ponteiro atual é o mais próximo que um destino pode ser, tornando-o trivial de adquirir. Portanto, os menus de contexto aproveitam totalmente a lei de Fitts, assim como as mini barras de ferramentas usadas pelo Microsoft Office.
 
-![Captura de tela que mostra um exemplo de um menu de contexto e uma mini-barra de ferramentas de Microsoft Office lado a lado.](images/inter-touch-image27.png)
+![captura de tela que mostra um exemplo de um menu de contexto e uma mini-barra de ferramentas de Microsoft Office lado a lado.](images/inter-touch-image27.png)
 
 **Evite colocar pequenos controles próximos à borda do aplicativo ou à exibição.** Pequenos destinos próximos a bordas podem ser difíceis de tocar (os chanfros de exibição podem interferir nos gestos de borda). Para garantir que os controles sejam fáceis de direcionar quando uma janela for maximizada, torne-os pelo menos 23x23 pixels (13x13 DLUs) ou coloque-os fora da borda da janela.
 
@@ -395,7 +395,7 @@ Considere adicionar mais do que o espaçamento vertical recomendado em grupos de
 
 ![image](images/inter-touch-image28.png)
 
-Neste exemplo, as listas de atalhos para a barra de tarefas do Windows 7 são mais espaçoso quando exibidas usando o toque.
+neste exemplo, as listas de atalhos da barra de tarefas Windows 7 são mais espaçoso quando exibidas usando o toque.
 
 ### <a name="interaction"></a>Interação
 

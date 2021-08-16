@@ -4,12 +4,12 @@ ms.assetid: 490a2b03-aba8-4510-80c5-ca12f4037747
 title: Propriedade MFNETSOURCE_CLIENTGUID (Mfidl. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cc5df46741d4a0b9a6a125396b6f93dd32bfadf6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9585f5ac9cd69148272cb986746f6849aad4c3aa048b46baf2f75aeaba77c092
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104090855"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118738985"
 ---
 # <a name="mfnetsource_clientguid-property"></a>\_Propriedade MFNETSOURCE CLIENTGUID
 
@@ -43,8 +43,8 @@ Se não for definido ou definido como **GUID \_ NULL**, Microsoft Media Foundati
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>                                         |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008 R2\]<br/>                            |
+| Cliente mínimo com suporte<br/> | \[somente aplicativos de área de trabalho Windows 7\]<br/>                                         |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do Server 2008 R2\]<br/>                            |
 | parâmetro<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
 
 

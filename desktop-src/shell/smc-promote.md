@@ -13,12 +13,12 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 22718e51d6ef1bf7e3c5652741b95cadb4db9937
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2a82c172d340bd4e03f7361ae3129294f3e778b221e45e0f22d8baef2a0d70a9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104968050"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118968015"
 ---
 # <a name="smc_promote-message"></a>Mensagem de promoção do SMC \_
 
@@ -35,7 +35,7 @@ SMC_PROMOTE
 
 Esta mensagem não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna S \_ OK.
 

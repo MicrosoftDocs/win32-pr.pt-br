@@ -1,7 +1,7 @@
 ---
 description: Mescla um disco rígido virtual filho em uma cadeia diferencial com um ou mais discos rígidos virtuais pai na cadeia.
 ms.assetid: 10633176-F0C3-4CA0-8E7B-2B11FF93B0EA
-title: Método MergeVirtualHardDisk da classe Msvm_ImageManagementService dados
+title: Método MergeVirtualHardDisk da classe Msvm_ImageManagementService
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:

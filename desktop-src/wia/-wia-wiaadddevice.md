@@ -1,7 +1,7 @@
 ---
-description: A função WiaAddDevice invoca a interface do usuário do assistente de instalação da câmera e scanner. É equivalente a executar &\# 0034; rundll32.exe sti \_ci.dll adddevice&\# 0034; no prompt de comando.
+description: A função WiaAddDevice invoca a interface do usuário do Assistente de Instalação do Scanner e da Câmera. É equivalente a executar &\# 0034;rundll32.execi.dll \_ AddDevice&\# 0034; no prompt de comando.
 ms.assetid: 83a1e22c-d751-4c8e-8f39-ec987042c745
-title: Função WiaAddDevice (WIA. h)
+title: Função WiaAddDevice (Wia.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - Wiaguid.lib
 - Wiaguid.dll
-ms.openlocfilehash: 694265f0a59096a5a6a58ccbf4e43c92e21fe9b1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 81dcff3cdca3459126751b12b86f1e11adc2b4fec8926f69211f0508253b64fd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103647212"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118965395"
 ---
 # <a name="wiaadddevice-function"></a>Função WiaAddDevice
 
-A função **WiaAddDevice** invoca a interface do usuário do assistente de instalação da câmera e scanner. É equivalente a executar "rundll32.exe STI \_ci.dll adddevice" no prompt de comando.
+A **função WiaAddDevice** invoca a interface do usuário do Assistente de Instalação do Scanner e da Câmera. É equivalente a executar "rundll32.execi.dll \_ AddDevice" no prompt de comando.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -38,13 +38,13 @@ void WINAPI WiaAddDevice(void);
 
 Essa função não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Essa função não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-Essa função deve ser chamada com credenciais de administrador. Ao ser executado sob o controle de conta de usuário (LUA), o processo deve ser elevado.
+Essa função deve ser chamada com credenciais de administrador. Ao executar em LUA (Controle de Conta de Usuário), o processo deve ser elevado.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -52,10 +52,10 @@ Essa função deve ser chamada com credenciais de administrador. Ao ser executad
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                         |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                   |
-| parâmetro<br/>                   | <dl> <dt>WIA. h</dt> </dl>       |
-| Biblioteca<br/>                  | <dl> <dt>Wiaguid. lib</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                         |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                   |
+| Cabeçalho<br/>                   | <dl> <dt>Wia.h</dt> </dl>       |
+| Biblioteca<br/>                  | <dl> <dt>Wiaguid.lib</dt> </dl> |
 
 
 

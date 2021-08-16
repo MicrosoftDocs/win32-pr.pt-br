@@ -1,7 +1,7 @@
 ---
-description: As soldas agrupam vértices replicados que têm atributos iguais. Esse método usa valores de Épsilon especificados para comparações de igualdade.
+description: Junta os vértices replicados que têm atributos iguais. Esse método usa valores de epsilon especificados para comparações de igualdade.
 ms.assetid: bddf6e0c-55a1-40d2-8681-e7f0f9002bfa
-title: Função D3DXWeldVertices (D3DX9Mesh. h)
+title: Função D3DXWeldVertices (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 76e0a6f259bc8ba547a02b2e95cccf718d54e904
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 3ce6a9a05573467e0725785a6272e5542c4f871080fe221ac12078b17165eb5a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103664017"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118803269"
 ---
 # <a name="d3dxweldvertices-function"></a>Função D3DXWeldVertices
 
-As soldas agrupam vértices replicados que têm atributos iguais. Esse método usa valores de Épsilon especificados para comparações de igualdade.
+Junta os vértices replicados que têm atributos iguais. Esse método usa valores de epsilon especificados para comparações de igualdade.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -46,16 +46,16 @@ HRESULT D3DXWeldVertices(
 
 <dl> <dt>
 
-*pMesh* \[ no\]
+*pMesh* \[ Em\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXMESH**](id3dxmesh.md)**
 
-Ponteiro para um objeto [**ID3DXMesh**](id3dxmesh.md) , a malha da qual os vértices de soldagem.
+Ponteiro para um [**objeto ID3DXMesh,**](id3dxmesh.md) a malha da qual os vértices devem ser verificados.
 
 </dd> <dt>
 
-*Flags* \[in\]
+*Sinalizadores* \[ Em\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
@@ -64,64 +64,64 @@ Combinação de um ou mais sinalizadores de [**D3DXWELDEPSILONSFLAGS**](./d3dxwe
 
 </dd> <dt>
 
-*pEpsilons* \[ no\]
+*pEpsilons* \[ Em\]
 </dt> <dd>
 
 Tipo: **const [**D3DXWeldEpsilons**](d3dxweldepsilons.md) \***
 
-Ponteiro para uma estrutura [**D3DXWeldEpsilons**](d3dxweldepsilons.md) , especificando os valores de Épsilon a serem usados para esse método. Use **NULL** para inicializar todos os membros da estrutura com um valor padrão de 1,0 e-6F.
+Ponteiro para uma [**estrutura D3DXWeldEpsilons,**](d3dxweldepsilons.md) especificando os valores de epsilon a serem usados para esse método. Use **NULL** para inicializar todos os membros da estrutura para um valor padrão de 1,0e-6f.
 
 </dd> <dt>
 
-*pAdjacencyIn* \[ no\]
+*pAdjacencyIn* \[ Em\]
 </dt> <dd>
 
 Tipo: **const [**DWORD**](../winprog/windows-data-types.md) \***
 
-Ponteiro para uma matriz de três DWORDs por face que especificam os três vizinhos para cada face na malha de origem. Se a borda não tiver faces adjacentes, o valor será 0xFFFFFFFF. Se esse parâmetro for definido como **NULL**, [**ID3DXBaseMesh:: GenerateAdjacency**](id3dxbasemesh--generateadjacency.md) será chamado para criar informações de adjacência lógica.
+Ponteiro para uma matriz de três DWORDs por face que especificam os três vizinhos para cada rosto na malha de origem. Se a borda não tiver rostos adjacentes, o valor será 0xffffffff. Se esse parâmetro for definido como **NULL,** [**ID3DXBaseMesh::GenerateAdjacency**](id3dxbasemesh--generateadjacency.md) será chamado para criar informações lógicas de adjacency.
 
 </dd> <dt>
 
-*pAdjacencyOut* \[ entrada, saída\]
+*pAdjacencyOut* \[ in, out\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)\***
 
-Ponteiro para uma matriz de três DWORDs por face que especificam os três vizinhos para cada face na malha otimizada. Se a borda não tiver faces adjacentes, o valor será 0xFFFFFFFF.
+Ponteiro para uma matriz de três DWORDs por face que especificam os três vizinhos para cada rosto na malha otimizada. Se a borda não tiver rostos adjacentes, o valor será 0xffffffff.
 
 </dd> <dt>
 
-*pFaceRemap* \[ fora\]
+*pFaceRemap* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)\***
 
-Uma matriz de DWORDs, uma por face, que identifica a face de malha original que corresponde a cada face na malha soldada.
+Uma matriz de DWORDs, uma por face, que identifica o rosto da malha original que corresponde a cada rosto na malha com a cabeça.
 
 </dd> <dt>
 
-*ppVertexRemap* \[ fora\]
+*ppVertexRemap* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXBUFFER**](id3dxbuffer.md)\***
 
-Endereço de um ponteiro para uma interface [**ID3DXBuffer**](id3dxbuffer.md) , que contém um DWORD para cada vértice que especifica como os novos vértices são mapeados para os vértices antigos. Esse remapeamento será útil se você precisar alterar dados externos com base no novo mapeamento de vértice.
+Endereço de um ponteiro para uma interface [**ID3DXBuffer,**](id3dxbuffer.md) que contém uma DWORD para cada vértice que especifica como os novos vértices são mapeados para os vértices antigos. Esse remapa será útil se você precisar alterar dados externos com base no novo mapeamento de vértice.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se a função for bem sucedido, o valor de retorno será D3D \_ OK. Se a função falhar, o valor de retorno poderá ser um dos seguintes: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
+Se a função for bem-sucedida, o valor de retorno será D3D \_ OK. Se a função falhar, o valor de retorno poderá ser um dos seguintes: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
 
 ## <a name="remarks"></a>Comentários
 
-Essa função usa informações de adjacência fornecidas para determinar os pontos que são replicados. Os vértices são mesclados com base em uma comparação de Épsilon. Os vértices com a mesma posição já devem ter sido calculados e representados por dados de representante de ponto.
+Essa função usa informações de adjacency fornecidas para determinar os pontos replicados. Os vértices são mesclados com base em uma comparação de epsilon. Vértices com posição igual já devem ter sido calculados e representados por dados representativos de ponto.
 
-Essa função combina vértices com soldagem lógica que têm componentes semelhantes, como normalidades ou coordenadas de textura dentro de pEpsilons.
+Essa função combina vértices com ressartices logicamente com componentes semelhantes, como normais ou coordenadas de textura dentro de pEpsilons.
 
-O código de exemplo a seguir chama essa função com soldagem habilitada. Os vértices são comparados usando valores de Épsilon para a posição normal do vetor e do vértice. Um ponteiro é retornado para uma matriz de remapeamento facial (*pFaceRemap*).
+O código de exemplo a seguir chama essa função com a máscara habilitada. Os vértices são comparados usando valores de epsilon para vetor normal e posição de vértice. Um ponteiro é retornado para uma matriz de remapeamento facial (*pFaceRemap*).
 
 
 ```
@@ -177,8 +177,8 @@ DWORD            i;                       // internal variable
 
 | Requisito | Valor |
 |--------------------|----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| parâmetro<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

@@ -1,7 +1,7 @@
 ---
 description: Cria uma nova pasta.
 ms.assetid: 7a552e5a-e9a3-4fcf-bc6b-17e8bc39af87
-title: Método Folder. NewFolder (shldisp. h)
+title: Método Folder.NewFolder (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 86784aa071be22cd16a06d9d4516970d2924079a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2570336fa8052be29863a4b4c221057994828423041bacd4280edd729792dafd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103921680"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119032624"
 ---
-# <a name="foldernewfolder-method"></a>Método Folder. NewFolder
+# <a name="foldernewfolder-method"></a>Método Folder.NewFolder
 
 Cria uma nova pasta.
 
@@ -49,31 +49,31 @@ Uma cadeia de caracteres que especifica o nome da nova pasta.
 
 </dd> <dt>
 
-*vOptions* \[ adicional\]
+*vOptions* \[ Opcional\]
 </dt> <dd>
 
-Tipo: **variante**
+Tipo: **Variante**
 
 Esse valor não é usado atualmente.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
 > [!Note]  
-> Nem todos os métodos são implementados para todas as pastas. Por exemplo, o método [**ParseName**](folder-parsename.md) não é implementado para a pasta do painel de controle ( \_ controles CSIDL). Se você tentar chamar um método não implementado, um erro 0x800A01BD (decimal 445) será gerado.
+> Nem todos os métodos são implementados para todas as pastas. Por exemplo, o [**método ParseName**](folder-parsename.md) não é implementado para a pasta Painel de Controle (CSIDL \_ CONTROLS). Se você tentar chamar um método não simplificado, um erro 0x800A01BD (decimal 445) será gerado.
 
  
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo a seguir usa **NewFolder** para criar a nova pasta C: \\ TestFolder. O uso adequado é mostrado para JScript, VBScript e Visual Basic.
+O exemplo a seguir **usa NewFolder** para criar a nova pasta C: \\ TestFolder. O uso adequado é mostrado para JScript, VBScript e Visual Basic.
 
-JScript
+JScript:
 
 
 ```JScript
@@ -94,7 +94,7 @@ JScript
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -146,11 +146,11 @@ End Sub
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 2000 Professional, \[ somente aplicativos da área de trabalho do Windows XP\]<br/>                                         |
+| Cliente mínimo com suporte<br/> | Windows 2000 Professional, Windows aplicativos da área de \[ trabalho XP\]<br/>                                         |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                           |
-| Cabeçalho<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                           |
-| INSERI<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                         |
-| DLL<br/>                      | <dl> <dt>Shell32.dll (versão 4,71 ou posterior)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
+| DLL<br/>                      | <dl> <dt>Shell32.dll (versão 4.71 ou posterior)</dt> </dl> |
 
 
 

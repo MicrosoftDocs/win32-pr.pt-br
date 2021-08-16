@@ -19,7 +19,7 @@ ms.locfileid: "118765803"
 Incluir membros protegidos  
 Incluir membros herdados  
 
-O [JET_INSTANCE](./jet-instance-structure.md) de dados expõe os membros a seguir.
+O [JET_INSTANCE](./jet-instance-structure.md) tipo expõe os membros a seguir.
 
 ## <a name="properties"></a>Propriedades
 

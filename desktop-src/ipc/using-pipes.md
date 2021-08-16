@@ -16,7 +16,7 @@ ms.locfileid: "118755678"
 Os exemplos a seguir demonstram o uso de pipes para passar um fluxo contínuo de dados entre processos:
 
 -   [Servidor de pipe multithread](multithreaded-pipe-server.md)
--   [Servidor de pipe nomeado usando e/s sobreposta](named-pipe-server-using-overlapped-i-o.md)
+-   [Servidor de pipe nomeado usando E/S sobressalo](named-pipe-server-using-overlapped-i-o.md)
 -   [Servidor de pipe nomeado usando rotinas de conclusão](named-pipe-server-using-completion-routines.md)
 -   [Cliente de pipe nomeado](named-pipe-client.md)
 -   [Transações em pipes nomeados](transactions-on-named-pipes.md)

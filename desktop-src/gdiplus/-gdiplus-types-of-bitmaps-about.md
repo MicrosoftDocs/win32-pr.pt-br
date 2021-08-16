@@ -4,12 +4,12 @@ ms.assetid: fac60d01-d07e-41e9-98a3-34c592d97a92
 title: Tipos de bitmaps
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4427f83e7ff0ccedbfa4fc0155ac2ef3c8968dfd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0503bec0f8b029e373ff414b51a60c3b1201a37b9151b722cdfc94d4cdea46cf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104566164"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118977296"
 ---
 # <a name="types-of-bitmaps"></a>Tipos de bitmaps
 
@@ -49,9 +49,9 @@ Um bitmap que armazena índices em uma tabela de cores é chamado de bitmap *ind
 
 ## <a name="graphics-file-formats"></a>Formatos de arquivos gráficos
 
-Há muitos formatos padrão para salvar bitmaps em arquivos. O Windows GDI+ dá suporte aos formatos de arquivo gráficos descritos nos parágrafos a seguir.
+Há muitos formatos padrão para salvar bitmaps em arquivos. Windows GDI+ dá suporte aos formatos de arquivo gráficos descritos nos parágrafos a seguir.
 
-**Bitmap (BMP)**
+**BMP (Bitmap)**
 
 BMP é um formato padrão usado pelo Windows para armazenar imagens independente de dispositivo e aplicativo. O número de bits por pixel (1, 4, 8, 15, 24, 32 ou 64) para um determinado arquivo BMP é especificado no cabeçalho do arquivo. Arquivos BMP com 24 bits por pixel são comuns.
 

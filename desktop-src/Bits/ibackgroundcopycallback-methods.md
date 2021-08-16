@@ -4,12 +4,12 @@ description: A interface IBackgroundCopyCallback expõe os métodos a seguir. | 
 ms.assetid: 44DF3117-AF7F-4248-B15E-0DA5F4091BA8
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 58e2eb48f5e8dbd3a331040d030e2623bc9fa4e1
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 952a417897b1cce2d492d7b9fb86fe39d0eca6353d607116423bd0b096df21e2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104012010"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118959465"
 ---
 # <a name="ibackgroundcopycallback-methods-bits"></a>Métodos IBackgroundCopyCallback (BITS)
 

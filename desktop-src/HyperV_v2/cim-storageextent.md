@@ -524,7 +524,7 @@ O formato de nomen por nome da **propriedade** Name.
 
 <span id="NAA"></span><span id="naa"></span>
 
-**NAA** (9)
+**Naa** (9)
 
 
 </dt> <dd></dd> <dt>
@@ -545,7 +545,7 @@ O formato de nomen por nome da **propriedade** Name.
 
 <span id="OS_Device_Name"></span><span id="os_device_name"></span><span id="OS_DEVICE_NAME"></span>
 
-**Nome do dispositivo do** sistema operacional (12)
+**Nome do dispositivo do so** (12)
 
 
 </dt> <dd></dd> </dl>
@@ -555,16 +555,16 @@ O formato de nomen por nome da **propriedade** Name.
 **NameNamespace**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **uint16**
+Tipo de dados: **UInt16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("SPC. INCITS-T10 \| VPD 83, Identificador de Associação \| 0"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ StorageExtent**.**Nome**", "**Cim \_ StorageExtent**.**OtherNameNamespace**", "**CIM \_ StorageExtent**.**NameFormat**")
+Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("SPC. INCITS-T10 \| VPD 83, \| identificador de associação 0 "), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ StorageExtent**.**Name**","**CIM \_ StorageExtent**.**OtherNameNamespace**","**CIM \_ StorageExtent**.**NameFormat**")
 </dt> </dl>
 
-O namespace da propriedade name.
+O namespace da propriedade Name.
 
 <dt>
 
@@ -577,7 +577,7 @@ O namespace da propriedade name.
 
 <span id="Other"></span><span id="other"></span><span id="OTHER"></span>
 
-**Outros** (1)
+**Outro** (1)
 
 
 </dt> <dd></dd> <dt>
@@ -626,7 +626,7 @@ O namespace da propriedade name.
 
 <span id="OS_Device_Namespace"></span><span id="os_device_namespace"></span><span id="OS_DEVICE_NAMESPACE"></span>
 
-**Namespace do dispositivo do sistema** operacional (8)
+**Namespace de dispositivo do so** (8)
 
 
 </dt> <dd></dd> </dl>
@@ -636,7 +636,7 @@ O namespace da propriedade name.
 **NoSinglePointOfFailure**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliana**
+Tipo de dados: **booliano**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -645,23 +645,23 @@ Tipo de acesso: Somente leitura
 Qualificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ StorageSetting**](/previous-versions/windows/desktop/iscsitarg/cim-storagesetting).**NoSinglePointOfFailure**")
 </dt> </dl>
 
-**true** se não houver nenhum ponto único de falha; caso contrário, **false.**
+**true** se não houver nenhum ponto único de falha; caso contrário, **false**.
 
 </dd> <dt>
 
 **NumberOfBlocks**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **uint64**
+Tipo de dados: **UInt64**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. Host DMTF \| Armazenamento \| 001.5", "MIB. IETF \| HOST-RESOURCES-MIB.hrStorageSize")
+Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. o \| Host DMTF Armazenamento \| 1,5 "," MIB. IETF \| host-REsources-MIB. hrStorageSize ")
 </dt> </dl>
 
-O número total de blocos logicamente contíguos que formam a extensão de armazenamento. O tamanho total da extensão de armazenamento é calculado multiplicando **BlockSize** por **NumberOfBlocks**. Se **BlockSize for** "1", essa propriedade será o tamanho total da extensão de armazenamento.
+O número total de blocos logicamente contíguos que formam a extensão de armazenamento. O tamanho total da extensão de armazenamento é calculado multiplicando **BlockSize** por **NumberOfBlocks**. Se o **BlockSize** for "1", essa propriedade será o tamanho total da extensão de armazenamento.
 
 </dd> <dt>
 
@@ -677,7 +677,7 @@ Tipo de acesso: Somente leitura
 Qualificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ StorageExtent**.**NameFormat**")
 </dt> </dl>
 
-O formato da propriedade **Name** quando a **propriedade NameFormat** é definida como "1" (Outro).
+O formato da propriedade **Name** quando a propriedade **NameFormat** é definida como "1" (Other).
 
 </dd> <dt>
 
@@ -693,36 +693,36 @@ Tipo de acesso: Somente leitura
 Qualificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ StorageExtent**.**NameNamespace**")
 </dt> </dl>
 
-Uma descrição do namespace da propriedade **Name** quando a **propriedade NameNamespace** é definida como "1" (Outro).
+Uma descrição do namespace da propriedade **Name** quando a propriedade **NameNamespace** é definida como "1" (Other).
 
 </dd> <dt>
 
 **PackageRedundancy**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **uint16**
+Tipo de dados: **UInt16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ StorageSetting**](/previous-versions/windows/desktop/iscsitarg/cim-storagesetting).**PackageRedundancyGoal**", "**CIM \_ StorageSetting**.**PackageRedundancyMax**", "**CIM \_ StorageSetting**.**PackageRedundancyMin**")
+Qualificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ StorageSetting**](/previous-versions/windows/desktop/iscsitarg/cim-storagesetting).**PackageRedundancyGoal**","**CIM \_ StorageSetting**.**PackageRedundancyMax**","**CIM \_ StorageSetting**.**PackageRedundancyMin**")
 </dt> </dl>
 
-O número atual de pacotes físicos que podem falhar sem perda de dados. Por exemplo, em um domínio de armazenamento, isso pode ser o número de eixos de disco.
+O número atual de pacotes físicos que podem falhar sem perda de dados. Por exemplo, em um domínio de armazenamento, esse pode ser o número de eixos de disco.
 
 </dd> <dt>
 
 **Primordial**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliana**
+Tipo de dados: **booliano**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-**true** se a extensão de armazenamento for fundamental; caso contrário, **false.**
+**true** se a extensão de armazenamento for primordial; caso contrário, **false**.
 
 </dd> <dt>
 
@@ -735,23 +735,23 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIB. IETF \| HOST-RESOURCES-MIB.hrStorageDescr")
+Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIB. IETF \| host-REsources-MIB. hrStorageDescr ")
 </dt> </dl>
 
 Uma descrição do uso de mídia.
 
 </dd> <dt>
 
-**Sequentialaccess**
+**Tenha**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliana**
+Tipo de dados: **booliano**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-**true** se o armazenamento for acessado sequencialmente por um objeto [**CIM \_ MediaAccessDevice;**](cim-mediaaccessdevice.md) caso contrário, **false**.
+**true** se o armazenamento for acessado sequencialmente por um objeto [**CIM \_ MediaAccessDevice**](cim-mediaaccessdevice.md) ; caso contrário, **false**.
 
 </dd> </dl>
 
@@ -763,8 +763,8 @@ Tipo de acesso: Somente leitura
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 8<br/>                                                                                    |
 | Servidor mínimo com suporte<br/> | Windows Server 2012<br/>                                                                          |
-| Namespace<br/>                | Virtualização \\ raiz \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
+| Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -773,7 +773,7 @@ Tipo de acesso: Somente leitura
 
 <dl> <dt>
 
-[**CIM \_ LogicalDevice**](cim-logicaldevice.md)
+[**\_LOGICALDEVICE CIM**](cim-logicaldevice.md)
 </dt> </dl>
 
  

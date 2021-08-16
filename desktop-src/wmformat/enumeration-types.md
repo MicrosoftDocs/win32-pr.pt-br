@@ -1,24 +1,24 @@
 ---
-title: Windows Media Format tipos de enumeração do SDK do Windows Media Format
+title: Windows Tipos de enumeração do SDK de formato de mídia
 description: Saiba mais sobre os tipos de enumeração que o SDK Windows Media Format implementa, como DRM_HTTP_STATUS e DRM_LICENSE_STATE_CATEGORY.
 ms.assetid: cd28f608-25ba-44a7-868b-b1cd4dfcfa45
 keywords:
-- Windows Media Format SDK, tipos de enumeração
+- Windows SDK de Formato de Mídia, tipos de enumeração
 - ASF (Advanced Systems Format), tipos de enumeração
 - ASF (Formato de Sistemas Avançados), tipos de enumeração
 - tipos de enumeração
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 45a6fcb6d433079cce9d570a7eb6e28f31691985
-ms.sourcegitcommit: 51ef825fb48f15e1aa30e8795988f10dc2b2155c
+ms.openlocfilehash: 16b3a53688e21e58b0d9509cc901a72399f26b9d758cac89511e66a76d740db1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "112067992"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117848155"
 ---
-# <a name="windows-media-format-sdk-enumeration-types"></a>Windows Media Format tipos de enumeração do SDK do Windows Media Format
+# <a name="windows-media-format-sdk-enumeration-types"></a>Windows Tipos de enumeração do SDK de formato de mídia
 
-O Windows Media Format SDK implementa os seguintes tipos de enumeração.
+O Windows SDK de Formato de Mídia implementa os seguintes tipos de enumeração.
 
 
 
@@ -39,7 +39,7 @@ O Windows Media Format SDK implementa os seguintes tipos de enumeração.
 | [**TIPO DE ÍNDICE WMT \_ \_**](/previous-versions/windows/desktop/api/wmsdkidl/ne-wmsdkidl-wmt_index_type)                                     | Define o objeto ao qual um índice baseado em tempo pode ser associado.                                                              |
 | [**TIPO DE \_ INDEXADOR \_ WMT**](/previous-versions/windows/desktop/api/wmsdkidl/ne-wmsdkidl-wmt_indexer_type)                                 | Define os tipos de indexação com suporte pelo indexador.                                                                          |
 | [**PROTOCOLO WMT \_ NET \_**](/previous-versions/windows/desktop/api/Wmsdkidl/ne-wmsdkidl-wmt_net_protocol)                                 | Define os tipos de protocolos aos quais o sink de rede dá suporte.                                                                   |
-| [**MODO DE CLASSE WMT \_ MUSICSPEECH \_ \_**](/previous-versions/windows/desktop/api/wmsdkidl/ne-wmsdkidl-wmt_musicspeech_class_mode)            | Define os modos de compactação disponíveis para o codec do Windows Media Audio 9 Voice.                                                |
+| [**MODO DE CLASSE WMT \_ MUSICSPEECH \_ \_**](/previous-versions/windows/desktop/api/wmsdkidl/ne-wmsdkidl-wmt_musicspeech_class_mode)            | Define os modos de compactação disponíveis para o codec Windows Media Audio 9 Voice.                                                |
 | [**FORMATO DE \_ DESLOCAMENTO WMT \_**](/previous-versions/windows/desktop/api/wmsdkidl/ne-wmsdkidl-wmt_offset_format)                               | Define os tipos de deslocamentos usados neste SDK.                                                                                   |
 | [**MODO DE REPRODUÇÃO DO WMT \_ \_**](/previous-versions/windows/desktop/api/Wmsdkidl/ne-wmsdkidl-wmt_play_mode)                                       | Define as opções de reprodução do leitor.                                                                                      |
 | [**CONFIGURAÇÕES \_ DE PROXY \_ WMT**](/previous-versions/windows/desktop/api/Wmsdkidl/ne-wmsdkidl-wmt_proxy_settings)                             | Define as configurações de proxy de rede para uso com um objeto de leitor.                                                                 |
@@ -48,7 +48,7 @@ O Windows Media Format SDK implementa os seguintes tipos de enumeração.
 | [**FORMATO DE \_ ARMAZENAMENTO WMT \_**](/previous-versions/windows/desktop/api/wmsdkidl/ne-wmsdkidl-wmt_storage_format)                             | Define os tipos de arquivo que podem ser manipulados com esse SDK.                                                                    |
 | [**SELEÇÃO DE \_ FLUXO WMT \_**](/previous-versions/windows/desktop/api/Wmsdkidl/ne-wmsdkidl-wmt_stream_selection)                         | Define o status de um fluxo.                                                                                                  |
 | [**TIPO DE \_ TRANSPORTE WMT \_**](/previous-versions/windows/desktop/api/wmsdkidl/ne-wmsdkidl-wmt_transport_type)                             | Define os tipos de transporte com suporte neste SDK.                                                                               |
-| [**VERSÃO \_ DO WMT**](/previous-versions/windows/desktop/api/Wmsdkidl/ne-wmsdkidl-wmt_version)                                            | Define os números de versão do Windows Media Format SDK.                                                                     |
+| [**VERSÃO \_ DO WMT**](/previous-versions/windows/desktop/api/Wmsdkidl/ne-wmsdkidl-wmt_version)                                            | Define os números de versão do SDK Windows Formato de Mídia.                                                                     |
 | [**TIPO DE \_ ENTRADA DE MARCA \_ D'ÁGUA WMT \_**](/previous-versions/windows/desktop/api/wmsdkidl/ne-wmsdkidl-wmt_watermark_entry_type)                | Define os tipos de marcas-d'água com suporte.                                                                                       |
 
 

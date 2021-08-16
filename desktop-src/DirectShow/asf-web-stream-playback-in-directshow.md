@@ -1,32 +1,32 @@
 ---
-description: Reprodução de fluxo da Web ASF no DirectShow
+description: Reprodução de fluxo web do ASF DirectShow
 ms.assetid: c7818c62-24af-4eac-84b8-f76be4ca6c09
-title: Reprodução de fluxo da Web ASF no DirectShow
+title: Reprodução de fluxo web do ASF DirectShow
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2d14a83d2baf9c11aa824f5d6358f62790c16b30
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: c28d9d3b7ea4fba5537383a846e6eff64f3815eefa21613c6056a15a5e497f77
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104296036"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117824621"
 ---
-# <a name="asf-web-stream-playback-in-directshow"></a>Reprodução de fluxo da Web ASF no DirectShow
+# <a name="asf-web-stream-playback-in-directshow"></a>Reprodução de fluxo web do ASF DirectShow
 
-O Microsoft DirectShow dá suporte a fluxos da Web em cenários de reprodução de arquivos por meio do filtro de [leitor ASF do WM](wm-asf-reader-filter.md) , mas você deve escrever seu próprio filtro do DirectShow para capturar e manter o fluxo.
+O Microsoft DirectShow dá suporte a fluxos da Web em cenários de reprodução de arquivo por meio do filtro [Leitor do WM ASF,](wm-asf-reader-filter.md) mas você deve escrever seu próprio filtro DirectShow para capturar e persistir o fluxo.
 
 > [!Note]  
-> Para reproduzir fluxos da Web no conteúdo que está sendo transmitido de um servidor que executa os serviços de mídia do Windows, use o controle de® do ActiveX do Windows Media Player 9 Series inserido em uma página da Web.
+> Para reproduzir fluxos da Web no conteúdo que está sendo transmitido de um servidor que executa Windows Media Services, use o controle ActiveX® série Windows Media Player Série 9 inserido em uma página da Web.
 
  
 
-Ao receber um arquivo contendo fluxos do tipo WMMEDIATYPE \_ FileTransfer, o leitor ASF do WM criará um PIN de saída para ele. O bloco de formato será uma estrutura de [**\_ \_ formato webstream WMT**](/previous-versions/windows/desktop/api/wmsdkidl/ns-wmsdkidl-wmt_webstream_format) . (Essa estrutura está documentada na documentação do SDK do Windows Media Format.) Se não houver um filtro downstream disponível que possa lidar com esse tipo de mídia, o PIN permanecerá desconectado, mas o arquivo ainda reproduzirá os fluxos de áudio e/ou vídeo.
+Quando um arquivo que contém fluxos do tipo WMMEDIATYPE FileTransfer, o Leitor do WM ASF criará um \_ pino de saída para ele. O bloco de formato será uma estrutura [**WMT \_ WEBSTREAM \_ FORMAT.**](/previous-versions/windows/desktop/api/wmsdkidl/ns-wmsdkidl-wmt_webstream_format) (Essa estrutura está documentada na documentação Windows do SDK de Formato de Mídia.) Se nenhum filtro downstream estiver disponível que possa manipular esse tipo de mídia, o pino permanecerá desconectado, mas o arquivo ainda reproduzirá os fluxos de áudio e/ou vídeo.
 
-Cada amostra de mídia em um fluxo da Web contém uma estrutura de [**\_ cabeçalho de \_ exemplo \_ do webstream WMT**](/previous-versions/windows/desktop/api/wmsdkidl/ns-wmsdkidl-wmt_webstream_sample_header) , documentada na documentação do Windows Media Format SDK. A estrutura tem um comprimento variável, dependendo do comprimento de seu membro **wszURL** . O ponteiro para os dados de exemplo aponta inicialmente para essa estrutura, e você deve avançar o ponteiro após a estrutura para acessar os dados reais no fluxo.
+Cada exemplo de mídia em um fluxo da Web contém uma estrutura [**DE \_ \_ \_ HEADER**](/previous-versions/windows/desktop/api/wmsdkidl/ns-wmsdkidl-wmt_webstream_sample_header) DE EXEMPLO DO WMT WEBSTREAM, que está documentada na documentação do SDK Windows Formato de Mídia. A estrutura tem um comprimento variável, dependendo do comprimento de seu **membro wszURL.** O ponteiro para os dados de exemplo inicialmente aponta para essa estrutura e você deve avançar o ponteiro para além da estrutura para acessar os dados reais no fluxo.
 
-O filtro do manipulador de fluxo da Web deve ser baseado na classe [**CBaseRenderer**](cbaserenderer.md) . No método [**CBaseRenderer::D orendersample**](cbaserenderer-dorendersample.md) , o filtro precisará analisar a estrutura para obter informações sobre o fluxo da Web e, em seguida, executar a ação apropriada. Normalmente, isso envolverá salvar o arquivo em disco e, em seguida, chamar as funções [**CreateUrlCacheEntry**](/windows/desktop/api/wininet/nf-wininet-createurlcacheentrya) e [**CommitUrlCacheEntryW**](/windows/desktop/api/wininet/nf-wininet-commiturlcacheentryw) ou [**CommitUrlCacheEntryA**](/windows/desktop/api/wininet/nf-wininet-commiturlcacheentrya) para colocar os arquivos no cache do Internet Explorer. O filtro deve tratar arquivos com várias partes, ou seja, arquivos que são maiores que um exemplo, e também deve manipular comandos de renderização, que são especificados pelo membro **\_ \_ \_ header. WSAMPLETYPE de exemplo webstream WMT** . O filtro envia um evento de [**\_ \_ evento OLE do EC**](ec-ole-event.md) para o aplicativo, junto com o texto do **cabeçalho de \_ exemplo webstream do WMT \_ \_ .** cadeia de caracteres wszURL que contém o nome do arquivo a ser renderizado. O aplicativo faz com que o navegador exiba a página especificada. Se o fluxo da Web tiver sido criado corretamente, o arquivo já deverá estar no cache.
+O filtro do manipulador de fluxo da Web deve ser baseado na [**classe CBaseRenderer.**](cbaserenderer.md) No [**método CBaseRenderer::D oRenderSample,**](cbaserenderer-dorendersample.md) o filtro precisará analisar a estrutura para obter informações sobre o fluxo da Web e executar a ação apropriada. Normalmente, isso envolverá salvar o arquivo no disco e, em seguida, chamar as funções [**CreateUrlCacheEntry**](/windows/desktop/api/wininet/nf-wininet-createurlcacheentrya) e [**CommitUrlCacheEntryW**](/windows/desktop/api/wininet/nf-wininet-commiturlcacheentryw) ou [**CommitUrlCacheEntryA**](/windows/desktop/api/wininet/nf-wininet-commiturlcacheentrya) para colocar os arquivos no cache Internet Explorer. O filtro deve manipular arquivos de várias partes, ou seja, arquivos maiores que um exemplo e também devem manipular comandos de renderização, que são especificados pelo membro **DO WMT \_ WEBSTREAM \_ SAMPLE \_ HEADER.wSampleType.** O filtro envia um evento [**\_ EC OLE \_ EVENT**](ec-ole-event.md) para o aplicativo, juntamente com o texto da cadeia de **\_ \_ \_ caracteres HEADER.wszURL do WMT WEBSTREAM** que contém o nome do arquivo a ser renderizado. Em seguida, o aplicativo faz com que o navegador exibe a página especificada. Se o fluxo da Web tiver sido autor correto, o arquivo já deverá estar no cache.
 
-Para obter mais informações sobre \_ o formato WEBstream do WMT \_ e \_ \_ \_ o cabeçalho de exemplo webstream do WMT, consulte a documentação do SDK do Windows Media Format.
+Para obter mais informações sobre o FORMATO DO WMT WEBSTREAM e o HEADER DE EXEMPLO \_ DO WMT WEBSTREAM, consulte a documentação \_ \_ do \_ \_ SDK Windows Formato de Mídia.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

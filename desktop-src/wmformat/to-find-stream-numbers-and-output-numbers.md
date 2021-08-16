@@ -23,7 +23,7 @@ ms.locfileid: "118699584"
 
 O leitor síncrono dá suporte à alternação mais simplificada entre números de fluxo e saída para reprodução do que o leitor assíncrono. Portanto, é mais importante ser capaz de encontrar quais números de fluxo equivalem a quais números de saída ou o contrário.
 
-Para encontrar o número de saída que corresponde a um número de fluxo, chame [**IWMSyncReader::GetOutputNumberForStream.**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmsyncreader-getoutputnumberforstream)
+Para encontrar o número de saída que corresponde a um número de fluxo, chame [**IWMSyncReader::GetOutputNumberForStream**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmsyncreader-getoutputnumberforstream).
 
 Para encontrar o número de fluxo que corresponde a um número de saída, chame [ **IWMSyncReader::GetStreamNumberForOutput**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmsyncreader-getstreamnumberforoutput)
 

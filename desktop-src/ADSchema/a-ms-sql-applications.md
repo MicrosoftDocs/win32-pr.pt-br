@@ -36,7 +36,7 @@ Não usado. O padrão é definido como, aplicar 1, aplicar 2, aplicar 3, aplicar
 | Frequência de atualização  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.1400                     |
 | System-ID-GUID    | fbcda2ea-ccee-11d2-9993-0000f87a57d4        |
-| Sintaxe            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
 
 
 
