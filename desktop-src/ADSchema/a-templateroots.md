@@ -1,11 +1,11 @@
 ---
 title: Template-Roots atributo
-description: Esse atributo é usado no contêiner de configuração do Exchange para indicar onde os contêineres de modelo são armazenados. Essas informações são usadas pelo provedor de Active Directory MAPI.
+description: Esse atributo é usado no contêiner Exchange configuração para indicar onde os contêineres de modelo são armazenados. Essas informações são usadas pelo provedor MAPI do Active Directory.
 ms.assetid: 1416ce4a-ca07-4ca9-8ea1-e1a6ad19e7ad
 ms.tgt_platform: multiple
 keywords:
-- Esquema de Template-Roots do atributo AD
-- Esquema de AD do atributo templateRoots
+- Template-Roots atributo AD Schema
+- Esquema do AD do atributo templateRoots
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 761c6d3d79bbf45e9a4d391b612956d6893cd314
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 06b037afe0e2489a2979e7d7b873e37cfc365643cb4728ab0411e4c56827a019
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103645499"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119923036"
 ---
 # <a name="template-roots-attribute"></a>Template-Roots atributo
 
-Esse atributo é usado no contêiner de configuração do Exchange para indicar onde os contêineres de modelo são armazenados. Essas informações são usadas pelo provedor de Active Directory MAPI.
+Esse atributo é usado no contêiner Exchange configuração para indicar onde os contêineres de modelo são armazenados. Essas informações são usadas pelo provedor MAPI do Active Directory.
 
 
 
 | Entrada | Valor |
 |-------------------|-----------------------------------------|
 | CN                | Template-Roots                          |
-| LDAP-Display-Name | templateRoots                           |
+| Ldap-Display-Name | templateRoots                           |
 | Tamanho              | \-                                      |
 | Privilégio de atualização  | Isso é usado pelo sistema.             |
 | Frequência de atualização  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.1346                 |
-| System-ID-GUID    | ed9de9a0-7041-11d2-9905-0000f87a57d4    |
-| Syntax            | [**Objeto (DS-DN)**](s-object-ds-dn.md) |
+| System-Id-Guid    | ed9de9a0-7041-11d2-9905-0000f87a57d4    |
+| Syntax            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
 
@@ -58,15 +58,15 @@ Esse atributo é usado no contêiner de configuração do Exchange para indicar 
 | ID do link                | \-                                                                                   |
 | MAPI-Id                | \-                                                                                   |
 | System-Only            | Falso                                                                                |
-| É de valor único       | Falso                                                                                |
+| Tem valor único       | Falso                                                                                |
 | É indexado             | Falso                                                                                |
-| No catálogo global      | Falso                                                                                |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                         |
+| No Catálogo Global      | Falso                                                                                |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                         |
 | Range-Lower            | \-                                                                                   |
 | Range-Upper            | \-                                                                                   |
 | Search-Flags           | 0x00000000                                                                           |
 | System-Flags           | 0x00000010                                                                           |
-| Classes usadas em        | [**Ms-Exch-Configuration-contêiner**](c-msexchconfigurationcontainer.md)<br/> |
+| Classes usadas em        | [**ms-Exch-Configuration-Container**](c-msexchconfigurationcontainer.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Esse atributo é usado no contêiner de configuração do Exchange para indicar 
 | ID do link                | \-                                                                                   |
 | MAPI-Id                | \-                                                                                   |
 | System-Only            | Falso                                                                                |
-| É de valor único       | Falso                                                                                |
+| Tem valor único       | Falso                                                                                |
 | É indexado             | Falso                                                                                |
-| No catálogo global      | Falso                                                                                |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                         |
+| No Catálogo Global      | Falso                                                                                |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                         |
 | Range-Lower            | \-                                                                                   |
 | Range-Upper            | \-                                                                                   |
 | Search-Flags           | 0x00000000                                                                           |
 | System-Flags           | 0x00000010                                                                           |
-| Classes usadas em        | [**Ms-Exch-Configuration-contêiner**](c-msexchconfigurationcontainer.md)<br/> |
+| Classes usadas em        | [**ms-Exch-Configuration-Container**](c-msexchconfigurationcontainer.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Esse atributo é usado no contêiner de configuração do Exchange para indicar 
 | ID do link                | \-                                                                                   |
 | MAPI-Id                | \-                                                                                   |
 | System-Only            | Falso                                                                                |
-| É de valor único       | Falso                                                                                |
+| Tem valor único       | Falso                                                                                |
 | É indexado             | Falso                                                                                |
-| No catálogo global      | Falso                                                                                |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                         |
+| No Catálogo Global      | Falso                                                                                |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                         |
 | Range-Lower            | \-                                                                                   |
 | Range-Upper            | \-                                                                                   |
 | Search-Flags           | 0x00000000                                                                           |
 | System-Flags           | 0x00000010                                                                           |
-| Classes usadas em        | [**Ms-Exch-Configuration-contêiner**](c-msexchconfigurationcontainer.md)<br/> |
+| Classes usadas em        | [**ms-Exch-Configuration-Container**](c-msexchconfigurationcontainer.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Esse atributo é usado no contêiner de configuração do Exchange para indicar 
 | ID do link                | \-                                                                                   |
 | MAPI-Id                | \-                                                                                   |
 | System-Only            | Falso                                                                                |
-| É de valor único       | Falso                                                                                |
+| Tem valor único       | Falso                                                                                |
 | É indexado             | Falso                                                                                |
-| No catálogo global      | Falso                                                                                |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                         |
+| No Catálogo Global      | Falso                                                                                |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                         |
 | Range-Lower            | \-                                                                                   |
 | Range-Upper            | \-                                                                                   |
 | Search-Flags           | 0x00000000                                                                           |
 | System-Flags           | 0x00000010                                                                           |
-| Classes usadas em        | [**Ms-Exch-Configuration-contêiner**](c-msexchconfigurationcontainer.md)<br/> |
+| Classes usadas em        | [**ms-Exch-Configuration-Container**](c-msexchconfigurationcontainer.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Esse atributo é usado no contêiner de configuração do Exchange para indicar 
 | ID do link                | \-                                                                                   |
 | MAPI-Id                | \-                                                                                   |
 | System-Only            | Falso                                                                                |
-| É de valor único       | Falso                                                                                |
+| Tem valor único       | Falso                                                                                |
 | É indexado             | Falso                                                                                |
-| No catálogo global      | Falso                                                                                |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                         |
+| No Catálogo Global      | Falso                                                                                |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                         |
 | Range-Lower            | \-                                                                                   |
 | Range-Upper            | \-                                                                                   |
 | Search-Flags           | 0x00000000                                                                           |
 | System-Flags           | 0x00000010                                                                           |
-| Classes usadas em        | [**Ms-Exch-Configuration-contêiner**](c-msexchconfigurationcontainer.md)<br/> |
+| Classes usadas em        | [**ms-Exch-Configuration-Container**](c-msexchconfigurationcontainer.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Esse atributo é usado no contêiner de configuração do Exchange para indicar 
 | ID do link                | \-                                                                                   |
 | MAPI-Id                | \-                                                                                   |
 | System-Only            | Falso                                                                                |
-| É de valor único       | Falso                                                                                |
+| Tem valor único       | Falso                                                                                |
 | É indexado             | Falso                                                                                |
-| No catálogo global      | Falso                                                                                |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                         |
+| No Catálogo Global      | Falso                                                                                |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                         |
 | Range-Lower            | \-                                                                                   |
 | Range-Upper            | \-                                                                                   |
 | Search-Flags           | 0x00000000                                                                           |
 | System-Flags           | 0x00000010                                                                           |
-| Classes usadas em        | [**Ms-Exch-Configuration-contêiner**](c-msexchconfigurationcontainer.md)<br/> |
+| Classes usadas em        | [**ms-Exch-Configuration-Container**](c-msexchconfigurationcontainer.md)<br/> |
 
 
 

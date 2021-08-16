@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - Ntdll.dll
-ms.openlocfilehash: 8b3de7192a9a26d367fc0b6ad231fbc046514ec6
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 8d6268857387d4caf4b024eb6dd308ac11349fe839173d307a311bf63ef84b56
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104163976"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119385556"
 ---
 # <a name="rtlutf8tounicoden-function"></a>Função RtlUTF8ToUnicodeN
 
@@ -78,13 +78,13 @@ Tamanho, em bytes, da cadeia de caracteres em *UTF8StringSource*.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 **RtlUTF8ToUnicodeN** retorna um dos seguintes valores de NTSTATUS:
 
 
 
-| Código de retorno                                                                                                  | Descrição                                                                                                     |
+| Código de retorno                                                                                                  | Description                                                                                                     |
 |--------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|
 | <dl> <dt>**STATUS com \_ êxito**</dt> </dl>               | A cadeia de caracteres foi convertida em Unicode.<br/>                                                                 |
 | <dl> <dt>**STATUS \_ alguns \_ não \_ mapeados**</dt> </dl>     | Um caractere de entrada inválido foi encontrado e substituído. Esse status é considerado um status de êxito.<br/> |
@@ -114,8 +114,8 @@ Os chamadores de **RtlUTF8ToUnicodeN** devem estar em execução em IRQL < níve
 
 | Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008 R2\]<br/>                              |
+| Cliente mínimo com suporte<br/> | \[somente aplicativos de área de trabalho Windows 7\]<br/>                                           |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do Server 2008 R2\]<br/>                              |
 | parâmetro<br/>                   | <dl> <dt>WDM. h</dt> </dl>     |
 | DLL<br/>                      | <dl> <dt>Ntdll.dll</dt> </dl> |
 

@@ -1,7 +1,7 @@
 ---
 description: Contém a descrição de uma política de LAN sem fio.
 ms.assetid: eaee5ff7-cef3-4bd2-bd60-2713d25894f5
-title: Elemento Description (WLANPolicy)
+title: Elemento description (WLANPolicy)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: 5bcc38ca0d89430c03cf254892a54b80cb2a2eb4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 53526f57956ecaca65712b2abffacbba71ad049857b6a0fbddb9502cfdb05ff7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105811080"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119064766"
 ---
-# <a name="description-wlanpolicy-element"></a>Elemento Description (WLANPolicy)
+# <a name="description-wlanpolicy-element"></a>Elemento description (WLANPolicy)
 
-O elemento Description (WLANPolicy) contém a descrição de uma política de LAN sem fio.
+O elemento description (WLANPolicy) contém a descrição de uma política de LAN sem fio.
 
 ``` syntax
 <xs:element name="description"
@@ -29,7 +29,7 @@ O elemento Description (WLANPolicy) contém a descrição de uma política de LA
  />
 ```
 
-O elemento **Description** é definido pelo elemento [**WLANPolicy**](wlan-policyschema-wlanpolicy-element.md) .
+O **elemento** description é definido pelo [**elemento WLANPolicy.**](wlan-policyschema-wlanpolicy-element.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -37,8 +37,8 @@ O elemento **Description** é definido pelo elemento [**WLANPolicy**](wlan-polic
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
 
 
 

@@ -1,5 +1,5 @@
 ---
-description: Windows O instalador executa as seguintes ações durante a instalação de um aplicativo quando o pacote contém componentes isolados. Normalmente, \_ o componente compartilhado é uma DLL que é compartilhada por \_ aplicativo de componente e outros executáveis do cliente.
+description: Windows O instalador executa as seguintes ações durante a instalação de um aplicativo quando o pacote contém componentes isolados. Normalmente, o Componente Compartilhado é uma DLL compartilhada pelo Aplicativo de Componente \_ e outros \_ executáveis do cliente.
 ms.assetid: fbc5dd86-5d38-4ce8-ab38-03c84cc77e80
 title: Instalação de componentes isolados
 ms.topic: article
@@ -13,23 +13,23 @@ ms.locfileid: "118634121"
 ---
 # <a name="installation-of-isolated-components"></a>Instalação de componentes isolados
 
-Windows O instalador executa as seguintes ações durante a instalação de um aplicativo quando o pacote contém componentes isolados. Normalmente, \_ o componente compartilhado é uma DLL que é compartilhada por \_ aplicativo de componente e outros executáveis do cliente.
+Windows O instalador executa as seguintes ações durante a instalação de um aplicativo quando o pacote contém componentes isolados. Normalmente, o Componente Compartilhado é uma DLL compartilhada pelo Aplicativo de Componente \_ e outros \_ executáveis do cliente.
 
 ## <a name="installation"></a>Instalação
 
--   Copie os arquivos do componente \_ compartilhado para a mesma pasta que o \_ aplicativo de componente somente se o aplicativo de componente \_ também estiver sendo instalado.
--   Crie um arquivo de byte zero com o nome de arquivo curto do arquivo de chave do \_ aplicativo de componente. Localize esse arquivo na mesma pasta que o aplicativo de componente \_ . Acrescente a extensão. LOCAL para esse nome de arquivo.
--   Aumente o Refcount SharedDLL se o bit msidbComponentAttributesSharedDllRefCount estiver definido na coluna atributos da tabela de [componentes](component-table.md).
--   Registre o \_ aplicativo componente como um cliente do componente \_ compartilhado e registre um caminho de chave apontando para o local compartilhado do componente \_ compartilhado.
--   Instale todos os recursos do aplicativo de componente \_ como de costume.
+-   Copie os arquivos do Componente Compartilhado na mesma pasta que o Aplicativo de Componente somente se o Aplicativo de Componente \_ também estiver sendo \_ \_ instalado.
+-   Crie um arquivo de zero byte com o nome de arquivo curto do arquivo de chave do Aplicativo de \_ Componente. Localize esse arquivo na mesma pasta que o Aplicativo \_ de Componente. Anexar a extensão . LOCAL para esse nome de arquivo.
+-   Incremente a refcount sharedDLL se o bit msidbComponentAttributesSharedDllRefCount for definido na coluna Atributos da [tabela Component](component-table.md).
+-   Registre Aplicativo de Componente como um cliente do Componente Compartilhado e registre um caminho de chave apontando para \_ o local compartilhado do Componente \_ \_ Compartilhado.
+-   Instale todos os recursos do Aplicativo de \_ Componente como de costume.
 
-Se o componente \_ compartilhado ou seu arquivo de chave já estiver instalado no computador, não copie os arquivos para o local compartilhado do componente \_ compartilhado.
+Se o Componente Compartilhado ou seu arquivo de chave já estiver instalado no computador, não copie os arquivos para o local \_ compartilhado do Componente \_ Compartilhado.
 
-Se \_ o componente compartilhado ou seu arquivo de chave ainda não estiver instalado no computador:
+Se o Componente Compartilhado ou seu arquivo de chave \_ ainda não estiver instalado no computador:
 
--   Copie os arquivos do componente \_ compartilhado para o local compartilhado.
--   Processar todas as ações de instalação para componente \_ compartilhado.
--   Se o componente \_ compartilhado for um componente com, registre o caminho com completo, de modo que a sintaxe \[ $Component \] e \[ \# FileKey \] apontem para o local compartilhado do componente \_ compartilhado.
+-   Copie os arquivos do Componente \_ Compartilhado para o local compartilhado.
+-   Processe todas as ações de instalação do Componente \_ Compartilhado.
+-   Se Component Shared for um componente COM, registre o caminho COM completo de forma que a sintaxe \_ \[ $Component e \] \[ \# FileKey apontem \] \_ para o local compartilhado do Componente Compartilhado.
 
  
 

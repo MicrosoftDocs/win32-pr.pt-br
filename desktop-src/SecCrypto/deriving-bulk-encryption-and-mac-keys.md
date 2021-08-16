@@ -4,12 +4,12 @@ ms.assetid: f78acb54-c32a-46a8-b465-855251069a57
 title: Derivando criptografia em massa e chaves MAC
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 97cbf216fd850c7b98c638d4fdc10a84087d91ac
-ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.openlocfilehash: 602419be7cdddea27c190806f0d03e087b8aac63eeeee2d80e96e2b3bcfae561
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "105757476"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117767700"
 ---
 # <a name="deriving-bulk-encryption-and-mac-keys"></a>Derivando criptografia em massa e chaves MAC
 

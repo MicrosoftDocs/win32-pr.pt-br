@@ -1,5 +1,5 @@
 ---
-description: A ferramenta de configuração de rastreamento do WinHTTP (Microsoft Windows Http Services), WinHttpTraceCfg.exe, é usada para configurar recursos de rastreamento para fins de depuração e de localização de pacotes.
+description: A ferramenta de configuração de rastreamento do WinHTTP (Microsoft Windows HTTP Services), WinHttpTraceCfg.exe, é usada para configurar recursos de rastreamento para fins de depuração e de localização de pacotes.
 ms.assetid: 744cae92-9c64-459e-96eb-eb609e62183c
 title: WinHttpTraceCfg.exe, uma ferramenta de configuração de rastreamento
 ms.topic: article
@@ -13,7 +13,7 @@ ms.locfileid: "118562405"
 ---
 # <a name="winhttptracecfgexe-a-trace-configuration-tool"></a>WinHttpTraceCfg.exe, uma ferramenta de configuração de rastreamento
 
-A ferramenta de configuração de rastreamento do [WinHTTP (Microsoft Windows Http Services),](about-winhttp.md) WinHttpTraceCfg.exe, é usada para configurar recursos de rastreamento para fins de depuração e de localização de pacotes. A capacidade de monitorar funções WinHTTP e seu tráfego de rede correspondente é importante. Os aplicativos de depuração que utilizam protocolos de transmissão criptografados, como protocolo SSL (SSL), impedem a interceptação de pacotes na camada de transporte de rede e exigem a capacidade de interceptar o tráfego entre o cliente e o servidor após ele ter sido descriptografado. O Microsoft Windows Http Services (WinHTTP) fornece um recurso de rastreamento que tem uma variedade de recursos para interceptar o fluxo de tráfego entre o cliente e o servidor.
+A ferramenta de configuração de rastreamento do [WinHTTP (Microsoft Windows Http Services),](about-winhttp.md) WinHttpTraceCfg.exe, é usada para configurar recursos de rastreamento para fins de depuração e de localização de pacotes. A capacidade de monitorar funções WinHTTP e seu tráfego de rede correspondente é importante. Os aplicativos de depuração que utilizam protocolos de transmissão criptografados, como protocolo SSL (SSL), impedem a interceptação de pacotes na camada de transporte de rede e exigem a capacidade de interceptar o tráfego entre o cliente e o servidor depois que ele for descriptografado. O Microsoft Windows Http Services (WinHTTP) fornece um recurso de rastreamento que tem uma variedade de recursos para interceptar o fluxo de tráfego entre o cliente e o servidor.
 
 Esse recurso de rastreamento pode ser uma ferramenta valiosa para depuração. Ele pode ser usado, por exemplo, para exibir parâmetros passados para várias chamadas de função, bem como para exibir dados reais enviados e recebidos por um aplicativo WinHTTP.
 
@@ -72,7 +72,7 @@ A tabela a seguir lista os possíveis parâmetros para a ferramenta de configura
 <tr class="odd">
 <td>-l</td>
 <td><p>Especifica um prefixo para o arquivo de log. O prefixo pode incluir um caminho. O arquivo de log é gravado no diretório atual ou no diretório especificado no prefixo e tem o formato a seguir.</p>
-<p><<em>prefixo</em> > -< <em>nome do aplicativo</em> > . <<em>hora</em> > .log</p>
+<p><<em>prefixo</em> > -< <em>nome do aplicativo</em> > . <hora <em></em> > .log</p>
 <p>Se um prefixo não for especificado, uma cadeia de caracteres vazia será usada. &quot; * &quot; Especifique para excluir um prefixo existente.</p></td>
 </tr>
 <tr class="even">

@@ -1,5 +1,5 @@
 ---
-description: Chamado por um sombreador de interseção para relatar uma interseção de Ray.
+description: Chamado por um sombreador de interseção para relatar uma interseção de raio.
 ms.assetid: ''
 title: Função ReportHit
 ms.localizationpriority: low
@@ -21,9 +21,9 @@ ms.locfileid: "118528104"
 ---
 # <a name="reporthit-function"></a>Função ReportHit
 
-Chamado por um [sombreador de interseção](intersection-shader.md) para relatar uma interseção de Ray.
+Chamado por um [sombreador de interseção](intersection-shader.md) para relatar uma interseção de raio.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 Essa definição de função intrínseca é equivalente ao seguinte modelo de função:
 
 ```
@@ -41,19 +41,19 @@ Um valor float que especifica a distância paramétrica da interseção..
 
 `HitKind`
 
-Um inteiro sem sinal que identifica o tipo de ocorrência que ocorreu.  Este é um valor especificado pelo usuário no intervalo de 0-127.  O valor pode ser lido por [qualquer acesso](any-hit-shader.md) ou sombreadores de [tecle mais próximos](closest-hit-shader.md) com o intrínseco **HitKind** .
+Um inteiro sem sinal que identifica o tipo de ocorrência que ocorreu.  Esse é um valor especificado pelo usuário no intervalo de 0 a 127.  O valor pode ser lido por [qualquer sombreadores](any-hit-shader.md) de [acerto](closest-hit-shader.md) ou de acerto mais próximos com o **intrínseco HitKind.**
 
 `Attributes`
 
-A estrutura de [**estrutura de atributo de interseção**](intersection-attributes.md) definida pelo usuário que especifica os atributos de interseção.  
+A estrutura Estrutura de Atributo de Interseção definida [**pelo**](intersection-attributes.md) usuário que especifica os atributos de interseção.  
 
 ## <a name="return-value"></a>Valor Retornado
 
-**bool** True se o pressionamento for aceito.  Um pressionamento será rejeitado se *THit* estiver fora do intervalo de Ray atual, ou se qualquer sombreador de clique chamar [**IgnoreHit**](ignorehit-function.md).  O intervalo de Ray atual é definido por **RayTMin** e **RayTCurrent**.
+**bool** True se o hit foi aceito.  Uma reação será rejeitada se *o THit* estiver fora do intervalo de raio atual ou se qualquer sombreador de acerto chamar [**IgnoreHit**](ignorehit-function.md).  O intervalo de raio atual é definido por **RayTMin** e **RayTCurrent.**
 
 ## <a name="remarks"></a>Comentários
 
-Essa função pode ser chamada nos seguintes tipos de sombreador raytracing:
+Essa função pode ser chamada dos seguintes tipos de sombreador de raio:
 
 * [**Sombreador de interseção**](intersection-shader.md)
 

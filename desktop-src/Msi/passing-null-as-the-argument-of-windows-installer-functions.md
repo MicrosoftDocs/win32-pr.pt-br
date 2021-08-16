@@ -11,7 +11,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118627659"
 ---
-# <a name="passing-null-as-the-argument-of-windows-installer-functions"></a>Passando nulo como o argumento de Windows Funções do Instalador
+# <a name="passing-null-as-the-argument-of-windows-installer-functions"></a>Passando nulo como o argumento Windows Funções do Instalador
 
 Windows As funções do instalador que retornam dados em um local de memória fornecida pelo usuário não devem ser chamadas com nulo como o valor do ponteiro. Essas funções retornam uma cadeia de caracteres ou retornam dados como ponteiros inteiros, mas retornam valores inconsistentes ao passar nulo como o valor para o argumento de saída.
 

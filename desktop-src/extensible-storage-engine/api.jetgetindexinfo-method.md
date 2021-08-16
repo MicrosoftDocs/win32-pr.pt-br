@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre: Método Api.JetGetIndexInfo'
-title: Método Api.JetGetIndexInfo
+description: 'Saiba mais sobre: método API. JetGetIndexInfo'
+title: Método API. JetGetIndexInfo
 TOCTitle: 'JetGetIndexInfo method '
 ms:assetid: Overload:Microsoft.Isam.Esent.Interop.Api.JetGetIndexInfo
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.api.jetgetindexinfo(v=EXCHG.10)
@@ -21,7 +21,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118784264"
 ---
-# <a name="apijetgetindexinfo-method"></a>Método Api.JetGetIndexInfo
+# <a name="apijetgetindexinfo-method"></a>Método API. JetGetIndexInfo
 
 Incluir membros protegidos  
 Incluir membros herdados  
@@ -39,32 +39,32 @@ Incluir membros herdados
 <tbody>
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /><img src="../images/dn292146.static(exchg.10).gif" title="Membro estático" alt="Static member" /></td>
-<td><a href="dn292168(v=exchg.10).md">JetGetIndexInfo(JET_SESID, JET_DBID, String, String, JET_INDEXLIST)</a></td>
+<td><a href="dn292168(v=exchg.10).md">JetGetIndexInfo (JET_SESID, JET_DBID, String, String JET_INDEXLIST)</a></td>
 <td><strong>Obsoleto.</strong> Recupera informações sobre índices em uma tabela.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /><img src="../images/dn292146.static(exchg.10).gif" title="Membro estático" alt="Static member" /></td>
-<td><a href="dn292172(v=exchg.10).md">JetGetIndexInfo(JET_SESID, JET_DBID, String, String, JET_INDEXID, JET_IdxInfo)</a></td>
+<td><a href="dn292172(v=exchg.10).md">JetGetIndexInfo (JET_SESID, JET_DBID, String, String, JET_INDEXID, JET_IdxInfo)</a></td>
 <td>Recupera informações sobre índices em uma tabela.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /><img src="../images/dn292146.static(exchg.10).gif" title="Membro estático" alt="Static member" /></td>
-<td><a href="dn292166(v=exchg.10).md">JetGetIndexInfo(JET_SESID, JET_DBID, String, String, JET_INDEXLIST, JET_IdxInfo)</a></td>
+<td><a href="dn292166(v=exchg.10).md">JetGetIndexInfo (JET_SESID, JET_DBID, String, String, JET_INDEXLIST, JET_IdxInfo)</a></td>
 <td>Recupera informações sobre índices em uma tabela.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /><img src="../images/dn292146.static(exchg.10).gif" title="Membro estático" alt="Static member" /></td>
-<td><a href="dn292171(v=exchg.10).md">JetGetIndexInfo(JET_SESID, JET_DBID, String, String, Int32, JET_IdxInfo)</a></td>
+<td><a href="dn292171(v=exchg.10).md">JetGetIndexInfo (JET_SESID, JET_DBID, String, String, Int32, JET_IdxInfo)</a></td>
 <td>Recupera informações sobre índices em uma tabela.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /><img src="../images/dn292146.static(exchg.10).gif" title="Membro estático" alt="Static member" /></td>
-<td><a href="dn292169(v=exchg.10).md">JetGetIndexInfo(JET_SESID, JET_DBID, cadeia de caracteres, cadeia de caracteres, cadeia de caracteres, JET_IdxInfo)</a></td>
+<td><a href="dn292169(v=exchg.10).md">JetGetIndexInfo (JET_SESID, JET_DBID, Cadeia de caracteres, Cadeia de caracteres, JET_IdxInfo)</a></td>
 <td>Recupera informações sobre índices em uma tabela.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /><img src="../images/dn292146.static(exchg.10).gif" title="Membro estático" alt="Static member" /></td>
-<td><a href="dn292173(v=exchg.10).md">JetGetIndexInfo(JET_SESID, JET_DBID, String, String, UInt16, JET_IdxInfo)</a></td>
+<td><a href="dn292173(v=exchg.10).md">JetGetIndexInfo (JET_SESID, JET_DBID, String, String, UInt16, JET_IdxInfo)</a></td>
 <td>Recupera informações sobre índices em uma tabela.</td>
 </tr>
 </tbody>
@@ -81,4 +81,4 @@ Parte superior
 
 [Membros da API](./api-members.md)
 
-[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)

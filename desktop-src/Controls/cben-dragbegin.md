@@ -1,9 +1,9 @@
 ---
-title: CBEN_DRAGBEGIN código de notificação (commctrl. h)
-description: Enviado quando o usuário começa a arrastar a imagem do item exibido na parte de edição do controle. Esse código de notificação é enviado na forma de uma mensagem de notificação do WM \_ .
+title: CBEN_DRAGBEGIN de notificação (Commctrl.h)
+description: Enviado quando o usuário começa a arrastar a imagem do item exibido na parte de edição do controle. Esse código de notificação é enviado na forma de uma mensagem WM \_ NOTIFY.
 ms.assetid: bdab2700-a605-48af-aee3-bbf573408e3f
 keywords:
-- CBEN_DRAGBEGIN de código de notificação controles do Windows
+- CBEN_DRAGBEGIN de notificação Windows Controles
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 910e6ac494b49f685a55e77b432e96b4fb22bd29
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 626ad4d6abbcaaeb6f647aa94657ee1a681801a3ce13a9b5539216b1b67565a4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104086248"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118414056"
 ---
-# <a name="cben_dragbegin-notification-code"></a>Código de notificação do CBEN \_ DRAGBEGIN
+# <a name="cben_dragbegin-notification-code"></a>Código de \_ notificação CBEN DRAGBEGIN
 
-Enviado quando o usuário começa a arrastar a imagem do item exibido na parte de edição do controle. Esse código de notificação é enviado na forma de uma mensagem de [**\_ notificação do WM**](wm-notify.md) .
+Enviado quando o usuário começa a arrastar a imagem do item exibido na parte de edição do controle. Esse código de notificação é enviado na forma de uma mensagem [**WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -43,17 +43,17 @@ CBEN_DRAGBEGIN
 *lParam* 
 </dt> <dd>
 
-Um ponteiro para uma estrutura [**NMCBEDRAGBEGIN**](/windows/desktop/api/Commctrl/ns-commctrl-nmcbedragbegina) que contém informações sobre o código de notificação.
+Um ponteiro para uma [**estrutura NMCBEDRAGBEGIN**](/windows/desktop/api/Commctrl/ns-commctrl-nmcbedragbegina) que contém informações sobre o código de notificação.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O valor de retorno é ignorado.
 
 ## <a name="remarks"></a>Comentários
 
-Se o aplicativo de recebimento implementar a funcionalidade de arrastar e soltar do controle, o aplicativo iniciará a operação de arrastar e soltar em resposta a este código de notificação.
+Se o aplicativo receptor implementar a funcionalidade do tipo "arrastar e soltar" do controle , o aplicativo iniciará a operação do tipo "arrastar e soltar" em resposta a esse código de notificação.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -61,9 +61,9 @@ Se o aplicativo de recebimento implementar a funcionalidade de arrastar e soltar
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 | Nomes Unicode e ANSI<br/>   | **CBEN \_ DRAGBEGINW** (Unicode) e **CBEN \_ DRAGBEGINA** (ANSI)<br/>             |
 
 

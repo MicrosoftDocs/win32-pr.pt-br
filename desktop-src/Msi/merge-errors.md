@@ -53,7 +53,7 @@ Consulte [**Obter \_ Função de**](/windows/win32/api/mergemod/nf-mergemod-imsm
 | Requisito | Valor |
 |--------------------|-----------------------------------------------------------------------------------------|
 | Versão<br/> | Mergemod.dll 1.0 ou posterior<br/>                                                    |
-| parâmetro<br/>  | <dl> <dt>Mergemod.h</dt> </dl>   |
+| Cabeçalho<br/>  | <dl> <dt>Mergemod.h</dt> </dl>   |
 | DLL<br/>     | <dl> <dt>Mergemod.dll</dt> </dl> |
 
 

@@ -1,6 +1,6 @@
 ---
-title: Enumeração DownloadMode (Deliveryoptimization.h)
-description: Define os diferentes modos de download que Otimização de Entrega usa.
+title: Enumeração de downloadmode (Deliveryoptimization. h)
+description: Define os diferentes modos de download que a otimização de entrega usa.
 ms.assetid: 7E9407C6-A22F-459E-B316-5E7809F0067A
 keywords:
 - Ignore a Otimização de Entrega e use o BITS. Por exemplo, selecione esse modo para que os clientes possam usar o BranchCache. enumeração
@@ -22,11 +22,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118543720"
 ---
-# <a name="downloadmode-enumeration"></a>Enumeração DownloadMode
+# <a name="downloadmode-enumeration"></a>Enumeração de downloadmode
 
-Define os diferentes modos de download que Otimização de Entrega usa.
+Define os diferentes modos de download que a otimização de entrega usa.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -49,7 +49,7 @@ typedef enum _DownloadMode {
 <span id="DownloadMode_CdnOnly"></span><span id="downloadmode_cdnonly"></span><span id="DOWNLOADMODE_CDNONLY"></span>**DownloadMode_CdnOnly**
 </dt> <dd>
 
-Essa configuração desabilita o cache ponto a ponto, mas ainda permite Otimização de Entrega baixar conteúdo dos servidores da Microsoft. Esse modo usa metadados adicionais fornecidos pelos serviços de nuvem da Otimização de Entrega para oferecer uma experiência de download poderosa, confiável e eficientes.
+Essa configuração desabilita o cache ponto a ponto, mas ainda permite que a otimização de entrega Baixe conteúdo de servidores da Microsoft. Esse modo usa metadados adicionais fornecidos pelos serviços de nuvem da Otimização de Entrega para oferecer uma experiência de download poderosa, confiável e eficientes.
 
 </dd> <dt>
 
@@ -63,7 +63,7 @@ Esse modo de operação padrão para Otimização de Entrega permite que o compa
 <span id="DownloadMode_Group"></span><span id="downloadmode_group"></span><span id="DOWNLOADMODE_GROUP"></span>**DownloadMode_Group**
 </dt> <dd>
 
-Quando o modo de grupo é definido, o grupo é selecionado automaticamente com base no site do Active Directory Domain Services (AD DS) do dispositivo (Windows 10, versão 1607) ou no domínio para o que o dispositivo é autenticado (Windows 10, versão 1511). No modo de grupo, o emparelhamento ocorre em sub-redes internas, entre dispositivos que pertencem ao mesmo grupo, incluindo dispositivos em escritórios remotos. Você pode usar a opção GroupID para criar seu próprio grupo personalizado independentemente domínios e sites do AD DS. O modo de download de grupo é a opção recomendada para a maioria das organizações que desejam obter a melhor otimização de largura de banda com a Otimização de Entrega.
+quando o modo de grupo é definido, o grupo é selecionado automaticamente com base no site do Active Directory Domain Services do dispositivo (AD DS) (Windows 10, versão 1607) ou no domínio no qual o dispositivo é autenticado (Windows 10, versão 1511). No modo de grupo, o emparelhamento ocorre em sub-redes internas, entre dispositivos que pertencem ao mesmo grupo, incluindo dispositivos em escritórios remotos. Você pode usar a opção GroupID para criar seu próprio grupo personalizado independentemente domínios e sites do AD DS. O modo de download de grupo é a opção recomendada para a maioria das organizações que desejam obter a melhor otimização de largura de banda com a Otimização de Entrega.
 
 </dd> <dt>
 
@@ -92,6 +92,6 @@ Ignore a Otimização de Entrega e use o BITS. Por exemplo, selecione esse modo 
 
 | Requisito | Valor |
 |-------------------------------|----------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 10, versão 1709 somente para \[ aplicativos da área de trabalho\]<br/>      |
-| Servidor mínimo com suporte<br/> | Windows Servidor, versão 1709 somente \[ aplicativos da área de trabalho\]<br/>  |
-| parâmetro<br/>                   | <dl> <dt>Deliveryoptimization.h</dt> </dl>               |
+| Cliente mínimo com suporte<br/> | Windows 10, \[ somente aplicativos da área de trabalho da versão 1709\]<br/>      |
+| Servidor mínimo com suporte<br/> | Windows Servidor, versão 1709 \[ aplicativos da área de trabalho\]<br/>  |
+| Cabeçalho<br/>                   | <dl> <dt>Deliveryoptimization. h</dt> </dl>               |

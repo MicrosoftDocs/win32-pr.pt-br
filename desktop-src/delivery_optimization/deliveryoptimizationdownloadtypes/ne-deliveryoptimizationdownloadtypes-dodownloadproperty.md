@@ -25,7 +25,7 @@ ms.locfileid: "118544568"
 
 A **enumeração DODownloadProperty** especifica a ID das propriedades para a operação de download do DO. Essa enumeração é usada pela interface **IDODownload** e executada por um valor VARIANT, em que o tipo de valor está contido.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```cpp
 typedef enum _DODownloadProperty
@@ -75,17 +75,17 @@ typedef enum _DODownloadProperty
 | DODownloadProperty_CallbackInterface | Opcional. Use essa propriedade para definir ou obter o ponteiro para a interface **IDODownloadStatusCallback** usada para baixar retornos de chamada. O tipo VARIANT é VT_UNKNOWN. |
 | DODownloadProperty_StreamInterface | Opcional. Use essa propriedade para definir ou obter o ponteiro para a interface IStream usada para o tipo de download de fluxo. O tipo VARIANT é VT_UNKNOWN. |
 | DODownloadProperty_SecurityContext | Somente gravação opcional. Use essa propriedade para definir o contexto do certificado a ser usado durante operações de solicitação HTTP. O valor deve consistir em bytes serializados de CERT_CONTEXT. O tipo VARIANT é (VT_ARRAY \| VT_UI1). |
-| DODownloadProperty_NetworkToken | Somente gravação opcional. Use essa propriedade para definir o token de rede a ser usado durante operações HTTP. VARIANT_TRUE valor fará com que o DO capture o token de identidade do chamador e VARIANT_FALSE limpará o token existente. O padrão é o token do usuário conectado. O tipo VARIANT é VT_BOOL. |
-| DODownloadProperty_CorrelationVector | Opcional. Define um vetor de correlação específico para fins de telemetria. O tipo VARIANT é VT_BSTR. |
-| DODownloadProperty_DecryptionInfo | Somente gravação opcional. Define informações de descriptografia na forma de uma cadeia de caracteres JSON. O tipo VARIANT é VT_BSTR. |
-| DODownloadProperty_IntegrityCheckInfo | Somente gravação opcional. Define o local do PHF (arquivo hash de peça), que é usado pelo DO para executar verificações de integridade de runtime no conteúdo baixado. O tipo VARIANT é VT_BSTR. |
-| DODownloadProperty_IntegrityCheckMandatory | Opcional. Define um sinalizador booliana que indica se o uso do PHF (arquivo de hash de peça) é obrigatório. Se VARIANT_TRUE, o download será anulado se a verificação de integridade falhar. O tipo VARIANT é VT_BOOL. |
-| DODownloadProperty_TotalSizeBytes | Opcional. Especifica o tamanho total do download em bytes. O tipo VARIANT é VT_UI8. |
+| DODownloadProperty_NetworkToken | Somente gravação opcional. Use essa propriedade para definir o token de rede a ser usado durante operações HTTP. VARIANT_TRUE valor fará com que o DO capture o token de identidade do chamador e VARIANT_FALSE limpará o token existente. O padrão é o token do usuário conectado. O tipo de variante é VT_BOOL. |
+| DODownloadProperty_CorrelationVector | Opcional. Define um vetor de correlação específico para fins de telemetria. O tipo de variante é VT_BSTR. |
+| DODownloadProperty_DecryptionInfo | Opcional somente gravação. Define informações de descriptografia na forma de uma cadeia de caracteres JSON. O tipo de variante é VT_BSTR. |
+| DODownloadProperty_IntegrityCheckInfo | Opcional somente gravação. Define o local do arquivo de hash da parte (PHF), que é usado pelo para executar verificações de integridade de tempo de execução no conteúdo baixado. O tipo de variante é VT_BSTR. |
+| DODownloadProperty_IntegrityCheckMandatory | Opcional. Define um sinalizador booliano que indica se o uso do arquivo de hash da parte (PHF) é obrigatório. Se VARIANT_TRUE, o download será anulado se a verificação de integridade falhar. O tipo de variante é VT_BOOL. |
+| DODownloadProperty_TotalSizeBytes | Opcional. Especifica o tamanho total do download em bytes. O tipo de variante é VT_UI8. |
 
 ## <a name="requirements"></a>Requisitos
 
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Cliente mínimo com suporte** | \[Windows 10, versão 1809 Somente aplicativos Win32\] |
-| **Servidor mínimo com suporte** | Windows Servidor, versão 1809 \[ Somente aplicativos Win32\] |
-| **Cabeçalho** | DeliveryOptimizationDownloadTypes.h |
+| **Cliente mínimo com suporte** | Windows 10, versão 1809 \[ Somente aplicativos Win32\] |
+| **Servidor mínimo com suporte** | Windows Somente aplicativos Win32 do servidor versão 1809 \[\] |
+| **Cabeçalho** | DeliveryOptimizationDownloadTypes. h |

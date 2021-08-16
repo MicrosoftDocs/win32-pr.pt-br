@@ -3,7 +3,7 @@ title: EM_SETSCROLLPOS mensagem (Richedit.h)
 description: Rola o conteúdo de um controle de edição rich para o ponto especificado.
 ms.assetid: 9ec514a4-97b1-44ab-b2ca-973b1f6fc404
 keywords:
-- EM_SETSCROLLPOS controles de Windows mensagem
+- EM_SETSCROLLPOS controles Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -58,7 +58,7 @@ Essa mensagem sempre retorna 1.
 | Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
 | Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
 | Redistribuível<br/>          | Rich Edit 3.0<br/>                                                              |
-| parâmetro<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
 
 
 

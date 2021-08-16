@@ -1,7 +1,7 @@
 ---
-description: O método SetIPortableDeviceValuesCollectionValue adiciona um novo valor IPortableDeviceValuesCollection (tipo VT UNKNOWN) ou substitui um \_ existente.
+description: O método SetIPortableDeviceValuesCollectionValue adiciona um novo valor IPortableDeviceValuesCollection (tipo VT \_ desconhecido) ou substitui um existente.
 ms.assetid: 29bdecaa-4820-4b1d-be59-ae82f7715a53
-title: Método IPortableDeviceValues::SetIPortableDeviceValuesCollectionValue (PortableDeviceTypes.h)
+title: 'Método IPortableDeviceValues:: SetIPortableDeviceValuesCollectionValue (PortableDeviceTypes. h)'
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -21,9 +21,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118697084"
 ---
-# <a name="iportabledevicevaluessetiportabledevicevaluescollectionvalue-method"></a>Método IPortableDeviceValues::SetIPortableDeviceValuesCollectionValue
+# <a name="iportabledevicevaluessetiportabledevicevaluescollectionvalue-method"></a>Método IPortableDeviceValues:: SetIPortableDeviceValuesCollectionValue
 
-O **método SetIPortableDeviceValuesCollectionValue** adiciona um novo **valor IPortableDeviceValuesCollection** (tipo VT UNKNOWN) ou substitui um \_ existente.
+O método **SetIPortableDeviceValuesCollectionValue** adiciona um novo valor **IPORTABLEDEVICEVALUESCOLLECTION** (tipo VT \_ desconhecido) ou substitui um existente.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -41,23 +41,23 @@ HRESULT SetIPortableDeviceValuesCollectionValue(
 
 <dl> <dt>
 
-*chave* \[ Em\]
+*chave* \[ no\]
 </dt> <dd>
 
-Uma **REFPROPERTYKEY** que especifica o item a ser criado ou substituido.
+Um **REFPROPERTYKEY** que especifica o item a ser criado ou substituído.
 
 </dd> <dt>
 
-*pValue* \[ Em\]
+*valores* \[ no\]
 </dt> <dd>
 
-Ponteiro para uma **interface IPortableDeviceValuesCollection** que especifica o novo valor. O SDK copia uma referência para a interface enviada e chama **AddRef** nele.
+Ponteiro para uma interface **IPortableDeviceValuesCollection** que especifica o novo valor. O SDK copia uma referência para a interface enviada e chama **AddRef** nela.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor retornado
 
-O método retorna um **HRESULT.** Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
+O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
 
 
 
@@ -71,7 +71,7 @@ O método retorna um **HRESULT.** Os possíveis valores incluem, mas sem limita�
 
 ## <a name="remarks"></a>Comentários
 
-Se um valor existente tiver a mesma chave especificada pelo parâmetro *key,* ele substituirá o valor existente sem nenhum aviso. A memória de chave existente é liberada adequadamente.
+Se um valor existente tiver a mesma chave especificada pelo parâmetro de *chave* , ele substituirá o valor existente sem nenhum aviso. A memória de chave existente é liberada adequadamente.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -79,8 +79,8 @@ Se um valor existente tiver a mesma chave especificada pelo parâmetro *key,* el
 
 | Requisito | Valor |
 |--------------------|----------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>PortableDeviceTypes.h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>PortableDeviceGUIDs.lib</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>PortableDeviceTypes. h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>PortableDeviceGUIDs. lib</dt> </dl> |
 
 
 
@@ -88,7 +88,7 @@ Se um valor existente tiver a mesma chave especificada pelo parâmetro *key,* el
 
 <dl> <dt>
 
-[**IPortableDeviceValues Interface**](iportabledevicevalues.md)
+[**Interface IPortableDeviceValues**](iportabledevicevalues.md)
 </dt> <dt>
 
 [**IPortableDeviceValues::GetIPortableDeviceValuesCollectionValue**](iportabledevicevalues-getiportabledevicevaluescollectionvalue.md)

@@ -1,5 +1,5 @@
 ---
-description: A ação RegisterTypeLibraries registra bibliotecas de tipos com o sistema. Essa ação é aplicada a cada arquivo referenciado na tabela TypeLib agendada para instalação.
+description: A ação RegisterTypeLibraries registra bibliotecas de tipos com o sistema. Essa ação é aplicada a cada arquivo referenciado na tabela TypeLib que está agendada para instalação.
 ms.assetid: 374450bb-316c-4fe6-abb1-cd8a8a31f284
 title: Ação RegisterTypeLibraries
 ms.topic: article
@@ -13,17 +13,17 @@ ms.locfileid: "118626759"
 ---
 # <a name="registertypelibraries-action"></a>Ação RegisterTypeLibraries
 
-A ação RegisterTypeLibraries registra bibliotecas de tipos com o sistema. Essa ação é aplicada a cada arquivo referenciado na tabela [TypeLib](typelib-table.md) agendada para instalação.
+A ação RegisterTypeLibraries registra bibliotecas de tipos com o sistema. Essa ação é aplicada a cada arquivo referenciado na [tabela Typelib](typelib-table.md) que está agendada para instalação.
 
 ## <a name="sequence-restrictions"></a>Restrições de sequência
 
-A ação RegisterTypeLibraries deve vir após a [ação InstallFiles.](installfiles-action.md)
+A ação RegisterTypeLibraries deve vir após a ação [InstallFiles](installfiles-action.md) .
 
 ## <a name="actiondata-messages"></a>Mensagens ActionData
 
 
 
-| Campo | Descrição dos dados de ação                   |
+| Campo | Descrição dos dados da ação                   |
 |-------|----------------------------------------------|
 | \[1\] | [GUID](guid.md) da biblioteca de tipos registrada. |
 
@@ -33,7 +33,7 @@ A ação RegisterTypeLibraries deve vir após a [ação InstallFiles.](installfi
 
 ## <a name="remarks"></a>Comentários
 
-A ação RegisterTypeLibraries requer que o idioma da biblioteca de tipos seja corretamente autorado no campo Idioma da tabela TypeLib. A autoração incorreta do campo Idioma pode fazer com que o instalador falhe ao registrar uma biblioteca de tipos válida de outra forma.
+A ação RegisterTypeLibraries requer que o idioma da biblioteca de tipos seja criado corretamente no campo idioma da tabela TypeLib. A criação incorreta do campo de idioma pode fazer com que o instalador falhe ao registrar uma biblioteca de tipos válida de outra forma.
 
  
 

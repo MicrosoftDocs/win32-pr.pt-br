@@ -1,11 +1,11 @@
 ---
 title: USN-Changed atributo
-description: O USN (número de sequência de atualização) atribuído pelo diretório local para a alteração mais recente, incluindo a criação. Consulte também, criado pelo USN.
+description: O USN (número de sequência de atualização) atribuído pelo diretório local para a alteração mais recente, incluindo a criação. Consulte também , Criado por USN.
 ms.assetid: ccd61940-2c0a-4d46-af9f-5f23f577a1ad
 ms.tgt_platform: multiple
 keywords:
-- Esquema de USN-Changed do atributo AD
-- Esquema de AD do atributo uSNChanged
+- USN-Changed atributo AD Schema
+- Esquema do AD do atributo uSNChanged
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a0c00f30a2ba7ca38f78246cd14b33ea358da6fa
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 2b6dba5a70417c06a1ce7a5db72621d36bdc6279c4d4ebc0582e9fb6b8fd9644
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103645491"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119922876"
 ---
 # <a name="usn-changed-attribute"></a>USN-Changed atributo
 
-O USN (número de sequência de atualização) atribuído pelo diretório local para a alteração mais recente, incluindo a criação. Consulte também, [**criado pelo USN**](a-usncreated.md).
+O USN (número de sequência de atualização) atribuído pelo diretório local para a alteração mais recente, incluindo a criação. Consulte também , [**Criado por USN.**](a-usncreated.md)
 
 
 
 | Entrada | Valor |
 |-------------------|--------------------------------------|
 | CN                | USN-Changed                          |
-| LDAP-Display-Name | uSNChanged                           |
+| Ldap-Display-Name | uSNChanged                           |
 | Tamanho              | 8 bytes                              |
 | Privilégio de atualização  | Esse valor é definido pelo sistema.     |
 | Frequência de atualização  | Quando o objeto é alterado.          |
 | Attribute-Id      | 1.2.840.113556.1.2.120               |
-| System-ID-GUID    | bf967a6f-0de6-11d0-a285-00aa003049e2 |
+| System-Id-Guid    | bf967a6f-0de6-11d0-a285-00aa003049e2 |
 | Syntax            | [**Intervalo**](s-interval.md)       |
 
 
@@ -44,7 +44,7 @@ O USN (número de sequência de atualização) atribuído pelo diretório local 
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adam**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -58,11 +58,11 @@ O USN (número de sequência de atualização) atribuído pelo diretório local 
 |------------------------|---------------------------------|
 | ID do link                | \-                              |
 | MAPI-Id                | 0x8029                          |
-| System-Only            | True                            |
-| É de valor único       | True                            |
-| É indexado             | True                            |
-| No catálogo global      | True                            |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| System-Only            | Verdadeiro                            |
+| Tem valor único       | Verdadeiro                            |
+| É indexado             | Verdadeiro                            |
+| No Catálogo Global      | Verdadeiro                            |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000009                      |
@@ -79,11 +79,11 @@ O USN (número de sequência de atualização) atribuído pelo diretório local 
 |------------------------|---------------------------------|
 | ID do link                | \-                              |
 | MAPI-Id                | 0x8029                          |
-| System-Only            | True                            |
-| É de valor único       | True                            |
-| É indexado             | True                            |
-| No catálogo global      | True                            |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| System-Only            | Verdadeiro                            |
+| Tem valor único       | Verdadeiro                            |
+| É indexado             | Verdadeiro                            |
+| No Catálogo Global      | Verdadeiro                            |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000009                      |
@@ -92,7 +92,7 @@ O USN (número de sequência de atualização) atribuído pelo diretório local 
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adam
 
 
 
@@ -100,11 +100,11 @@ O USN (número de sequência de atualização) atribuído pelo diretório local 
 |------------------------|---------------------------------|
 | ID do link                | \-                              |
 | MAPI-Id                | 0x8029                          |
-| System-Only            | True                            |
-| É de valor único       | True                            |
-| É indexado             | True                            |
-| No catálogo global      | True                            |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| System-Only            | Verdadeiro                            |
+| Tem valor único       | Verdadeiro                            |
+| É indexado             | Verdadeiro                            |
+| No Catálogo Global      | Verdadeiro                            |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000009                      |
@@ -121,11 +121,11 @@ O USN (número de sequência de atualização) atribuído pelo diretório local 
 |------------------------|---------------------------------|
 | ID do link                | \-                              |
 | MAPI-Id                | 0x8029                          |
-| System-Only            | True                            |
-| É de valor único       | True                            |
-| É indexado             | True                            |
-| No catálogo global      | True                            |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| System-Only            | Verdadeiro                            |
+| Tem valor único       | Verdadeiro                            |
+| É indexado             | Verdadeiro                            |
+| No Catálogo Global      | Verdadeiro                            |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000009                      |
@@ -142,11 +142,11 @@ O USN (número de sequência de atualização) atribuído pelo diretório local 
 |------------------------|---------------------------------|
 | ID do link                | \-                              |
 | MAPI-Id                | 0x8029                          |
-| System-Only            | True                            |
-| É de valor único       | True                            |
-| É indexado             | True                            |
-| No catálogo global      | True                            |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| System-Only            | Verdadeiro                            |
+| Tem valor único       | Verdadeiro                            |
+| É indexado             | Verdadeiro                            |
+| No Catálogo Global      | Verdadeiro                            |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000009                      |
@@ -163,11 +163,11 @@ O USN (número de sequência de atualização) atribuído pelo diretório local 
 |------------------------|---------------------------------|
 | ID do link                | \-                              |
 | MAPI-Id                | 0x8029                          |
-| System-Only            | True                            |
-| É de valor único       | True                            |
-| É indexado             | True                            |
-| No catálogo global      | True                            |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| System-Only            | Verdadeiro                            |
+| Tem valor único       | Verdadeiro                            |
+| É indexado             | Verdadeiro                            |
+| No Catálogo Global      | Verdadeiro                            |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000009                      |
@@ -184,11 +184,11 @@ O USN (número de sequência de atualização) atribuído pelo diretório local 
 |------------------------|---------------------------------|
 | ID do link                | \-                              |
 | MAPI-Id                | 0x8029                          |
-| System-Only            | True                            |
-| É de valor único       | True                            |
-| É indexado             | True                            |
-| No catálogo global      | True                            |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| System-Only            | Verdadeiro                            |
+| Tem valor único       | Verdadeiro                            |
+| É indexado             | Verdadeiro                            |
+| No Catálogo Global      | Verdadeiro                            |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000009                      |

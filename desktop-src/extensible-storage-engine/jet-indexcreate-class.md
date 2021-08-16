@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre: classe de JET_INDEXCREATE'
-title: Classe JET_INDEXCREATE
+description: 'Saiba mais sobre: JET_INDEXCREATE classe'
+title: JET_INDEXCREATE classe
 TOCTitle: JET_INDEXCREATE class
 ms:assetid: T:Microsoft.Isam.Esent.Interop.JET_INDEXCREATE
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_indexcreate(v=EXCHG.10)
@@ -24,24 +24,24 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 3f22756aa8a2c3888ef9ba180e12c32c3dda5249
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f5e899aefc26fbb0518c1ddc91362dbaf2c6cdbe56512f20d9bce057cbd13cdf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105761293"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119110087"
 ---
-# <a name="jet_indexcreate-class"></a>Classe JET_INDEXCREATE
+# <a name="jet_indexcreate-class"></a>JET_INDEXCREATE classe
 
-Contém as informações necessárias para criar um índice sobre os dados em um banco de dado ESE. Contém as informações necessárias para criar um índice sobre os dados em um banco de dado ESE.
+Contém as informações necessárias para criar um índice sobre dados em um banco de dados ESE. Contém as informações necessárias para criar um índice sobre dados em um banco de dados ESE.
 
 ## <a name="inheritance-hierarchy"></a>Hierarquia de herança
 
 [System.Object](/dotnet/api/system.object)  
   Microsoft.Isam.Esent.Interop.JET_INDEXCREATE  
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Syntax
 
@@ -68,6 +68,6 @@ Qualquer membro estático público (Shared no Visual Basic) desse tipo é seguro
 
 #### <a name="reference"></a>Referência
 
-[Membros do JET_INDEXCREATE](./jet-indexcreate-members.md)
+[JET_INDEXCREATE membros](./jet-indexcreate-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

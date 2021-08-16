@@ -1,26 +1,26 @@
 ---
 title: Sobre controles comuns
-description: Este tópico discute os controles comuns, um conjunto de janelas que são implementadas pela biblioteca de controle comum, Comctl32.dll, que é uma DLL incluída no sistema operacional Windows.
+description: Este tópico discute os controles comuns, um conjunto de janelas que são implementados pela biblioteca de controle comum, Comctl32.dll, que é uma DLL incluída com o sistema operacional Windows sistema operacional.
 ms.assetid: c0d3eff4-c5b5-4b59-b980-96e0e4d6a595
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: de0e83f5a2d63ada530f3fec15d5ea5803bcabf9
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: ec57117aa125da853f710ddcc48705eb7400a669ae8555568c8b023ad8a4c8ee
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104005098"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119698806"
 ---
 # <a name="about-common-controls"></a>Sobre controles comuns
 
-Este tópico discute os controles comuns, um conjunto de janelas que são implementadas pela biblioteca de controle comum, Comctl32.dll, que é uma DLL incluída no sistema operacional Windows. Como outras janelas de controle, um controle comum é uma janela filho usada por um aplicativo em conjunto com outra janela para permitir a interação com o usuário.
+Este tópico discute os controles comuns, um conjunto de janelas que são implementados pela biblioteca de controle comum, Comctl32.dll, que é uma DLL incluída com o sistema operacional Windows sistema operacional. Assim como outras janelas de controle, um controle comum é uma janela filho que um aplicativo usa em conjunto com outra janela para habilitar a interação com o usuário.
 
 ## <a name="in-this-section"></a>Nesta seção
 
--   [Versões de controle comuns](common-control-versions.md)
+-   [Versões de controle comum](common-control-versions.md)
 -   [Criando controles comuns](creating-common-controls.md)
 -   [Suporte a Unicode para controles comuns](unicode-support.md)
--   [Suporte à localização para controles comuns](cc-faq-localization.md)
+-   [Suporte de localização para controles comuns](cc-faq-localization.md)
 -   [Perguntas frequentes sobre controles comuns](cc-faq.md)
 
 ## <a name="related-topics"></a>Tópicos relacionados
@@ -30,12 +30,12 @@ Este tópico discute os controles comuns, um conjunto de janelas que são implem
 [Referência de controle geral](common-control-reference.md)
 </dt> <dt>
 
-[Controles do Windows](window-controls.md)
+[Windows Controles](window-controls.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

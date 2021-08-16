@@ -1,11 +1,11 @@
 ---
-title: Atributo File-ext-Priority
-description: Esse atributo contém uma lista de extensões de nome de arquivo em um pacote de aplicativo e suas prioridades associadas.
+title: Atributo File-Ext-Priority
+description: Esse atributo contém uma lista de extensões de nome de arquivo em um pacote de aplicativos e suas prioridades associadas.
 ms.assetid: f95ba5cb-cd69-43e8-919f-7c61ebe0cc62
 ms.tgt_platform: multiple
 keywords:
-- Atributo de AD de atributos de prioridade de arquivo-ext
-- Esquema de AD do atributo fileExtPriority
+- Esquema do AD do atributo File-Ext-Priority
+- Esquema do AD do atributo fileExtPriority
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d305337bca792fe94fd3a765cbb6414dcfd1b0e2
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 9a3494bc5a5e66fa5e4a17edc7410a2a08ba1f58317529923b44fe6b277bd868
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105769114"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118961525"
 ---
-# <a name="file-ext-priority-attribute"></a>Atributo File-ext-Priority
+# <a name="file-ext-priority-attribute"></a>Atributo File-Ext-Priority
 
-Esse atributo contém uma lista de extensões de nome de arquivo em um pacote de aplicativo e suas prioridades associadas.
+Esse atributo contém uma lista de extensões de nome de arquivo em um pacote de aplicativos e suas prioridades associadas.
 
 
 
 | Entrada | Valor |
 |-------------------|---------------------------------------------|
-| CN                | Prioridade de arquivo-ext                           |
-| LDAP-Display-Name | fileExtPriority                             |
+| CN                | Prioridade de ext-arquivo                           |
+| Ldap-Display-Name | fileExtPriority                             |
 | Tamanho              | \-                                          |
 | Privilégio de atualização  | \-                                          |
 | Frequência de atualização  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.816                      |
-| System-ID-GUID    | d9e18315-8939-11d1-aebc-0000f80367c1        |
-| Sintaxe            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | d9e18315-8939-11d1-aebc-0000f80367c1        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -58,10 +58,10 @@ Esse atributo contém uma lista de extensões de nome de arquivo em um pacote de
 | ID do link                | \-                                                               |
 | MAPI-Id                | \-                                                               |
 | System-Only            | Falso                                                            |
-| É de valor único       | Falso                                                            |
-| É indexado             | True                                                             |
-| No catálogo global      | Falso                                                            |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                     |
+| Tem valor único       | Falso                                                            |
+| É indexado             | Verdadeiro                                                             |
+| No Catálogo Global      | Falso                                                            |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                     |
 | Range-Lower            | \-                                                               |
 | Range-Upper            | \-                                                               |
 | Search-Flags           | 0x00000001                                                       |
@@ -79,10 +79,10 @@ Esse atributo contém uma lista de extensões de nome de arquivo em um pacote de
 | ID do link                | \-                                                               |
 | MAPI-Id                | \-                                                               |
 | System-Only            | Falso                                                            |
-| É de valor único       | Falso                                                            |
-| É indexado             | True                                                             |
-| No catálogo global      | Falso                                                            |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                     |
+| Tem valor único       | Falso                                                            |
+| É indexado             | Verdadeiro                                                             |
+| No Catálogo Global      | Falso                                                            |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                     |
 | Range-Lower            | \-                                                               |
 | Range-Upper            | \-                                                               |
 | Search-Flags           | 0x00000001                                                       |
@@ -100,10 +100,10 @@ Esse atributo contém uma lista de extensões de nome de arquivo em um pacote de
 | ID do link                | \-                                                               |
 | MAPI-Id                | \-                                                               |
 | System-Only            | Falso                                                            |
-| É de valor único       | Falso                                                            |
-| É indexado             | True                                                             |
-| No catálogo global      | Falso                                                            |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                     |
+| Tem valor único       | Falso                                                            |
+| É indexado             | Verdadeiro                                                             |
+| No Catálogo Global      | Falso                                                            |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                     |
 | Range-Lower            | \-                                                               |
 | Range-Upper            | \-                                                               |
 | Search-Flags           | 0x00000001                                                       |
@@ -122,7 +122,7 @@ Esse atributo contém uma lista de extensões de nome de arquivo em um pacote de
 | MAPI-Id                | \-                                                               |
 | System-Only            | Falso                                                            |
 | É de valor único       | Falso                                                            |
-| É indexado             | True                                                             |
+| É indexado             | Verdadeiro                                                             |
 | No catálogo global      | Falso                                                            |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                     |
 | Range-Lower            | \-                                                               |
@@ -143,7 +143,7 @@ Esse atributo contém uma lista de extensões de nome de arquivo em um pacote de
 | MAPI-Id                | \-                                                               |
 | System-Only            | Falso                                                            |
 | É de valor único       | Falso                                                            |
-| É indexado             | True                                                             |
+| É indexado             | Verdadeiro                                                             |
 | No catálogo global      | Falso                                                            |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                     |
 | Range-Lower            | \-                                                               |
@@ -164,7 +164,7 @@ Esse atributo contém uma lista de extensões de nome de arquivo em um pacote de
 | MAPI-Id                | \-                                                               |
 | System-Only            | Falso                                                            |
 | É de valor único       | Falso                                                            |
-| É indexado             | True                                                             |
+| É indexado             | Verdadeiro                                                             |
 | No catálogo global      | Falso                                                            |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                     |
 | Range-Lower            | \-                                                               |

@@ -106,7 +106,7 @@ Se esse método for bem-sucedido, ele **retornará S \_ OK.** Caso contrário, e
 |-------------------------------------|-----------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                    |
 | Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                              |
-| parâmetro<br/>                   | <dl> <dt>Dxva.h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Dxva.h</dt> </dl> |
 
 
 

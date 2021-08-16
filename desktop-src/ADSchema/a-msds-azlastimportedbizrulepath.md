@@ -36,7 +36,7 @@ O último caminho de regra de negócios importado.
 | Frequência de atualização  | Durante a inicialização ou alteração da política.     |
 | Attribute-Id      | 1.2.840.113556.1.4.1803                     |
 | System-Id-Guid    | 665acb5c-bb92-4dbc-8c59-b3638eab09b3        |
-| Sintaxe            | [**String(Unicode)**](s-string-unicode.md) |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -57,7 +57,7 @@ O último caminho de regra de negócios importado.
 | ID do link                | \-                                                |
 | MAPI-Id                | \-                                                |
 | System-Only            | Falso                                             |
-| Tem valor único       | True                                              |
+| Tem valor único       | Verdadeiro                                              |
 | É indexado             | Falso                                             |
 | No Catálogo Global      | Falso                                             |
 | Descritor de segurança NT | O:BAG:BAD:S:                                      |
@@ -78,7 +78,7 @@ O último caminho de regra de negócios importado.
 | ID do link                | \-                                                |
 | MAPI-Id                | \-                                                |
 | System-Only            | Falso                                             |
-| Tem valor único       | True                                              |
+| Tem valor único       | Verdadeiro                                              |
 | É indexado             | Falso                                             |
 | No Catálogo Global      | Falso                                             |
 | Descritor de segurança NT | O:BAG:BAD:S:                                      |
@@ -99,7 +99,7 @@ O último caminho de regra de negócios importado.
 | ID do link                | \-                                                                                    |
 | MAPI-Id                | \-                                                                                    |
 | System-Only            | Falso                                                                                 |
-| Tem valor único       | True                                                                                  |
+| Tem valor único       | Verdadeiro                                                                                  |
 | É indexado             | Falso                                                                                 |
 | No Catálogo Global      | Falso                                                                                 |
 | Descritor de segurança NT | O:BAG:BAD:S:                                                                          |
@@ -107,7 +107,7 @@ O último caminho de regra de negócios importado.
 | Range-Upper            | 65536                                                                                 |
 | Search-Flags           | 0x00000000                                                                            |
 | System-Flags           | 0x00000010                                                                            |
-| Classes usadas em        | [**Grupo**](c-group.md)<br/> [**ms-DS-AZ-Task**](c-msds-aztask.md)<br/> |
+| Classes usadas em        | [**Grupo**](c-group.md)<br/> [**ms-DS-Az-Task**](c-msds-aztask.md)<br/> |
 
 
 
@@ -120,15 +120,15 @@ O último caminho de regra de negócios importado.
 | ID do link                | \-                                                                                    |
 | MAPI-Id                | \-                                                                                    |
 | System-Only            | Falso                                                                                 |
-| É de valor único       | True                                                                                  |
+| Tem valor único       | Verdadeiro                                                                                  |
 | É indexado             | Falso                                                                                 |
-| No catálogo global      | Falso                                                                                 |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                          |
+| No Catálogo Global      | Falso                                                                                 |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                          |
 | Range-Lower            | 0                                                                                     |
 | Range-Upper            | 65536                                                                                 |
 | Search-Flags           | 0x00000000                                                                            |
 | System-Flags           | 0x00000010                                                                            |
-| Classes usadas em        | [**Grupo**](c-group.md)<br/> [**ms-DS-AZ-Task**](c-msds-aztask.md)<br/> |
+| Classes usadas em        | [**Grupo**](c-group.md)<br/> [**ms-DS-Az-Task**](c-msds-aztask.md)<br/> |
 
 
 
@@ -141,15 +141,15 @@ O último caminho de regra de negócios importado.
 | ID do link                | \-                                                                                    |
 | MAPI-Id                | \-                                                                                    |
 | System-Only            | Falso                                                                                 |
-| É de valor único       | True                                                                                  |
+| Tem valor único       | Verdadeiro                                                                                  |
 | É indexado             | Falso                                                                                 |
-| No catálogo global      | Falso                                                                                 |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                          |
+| No Catálogo Global      | Falso                                                                                 |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                          |
 | Range-Lower            | 0                                                                                     |
 | Range-Upper            | 65536                                                                                 |
 | Search-Flags           | 0x00000000                                                                            |
 | System-Flags           | 0x00000010                                                                            |
-| Classes usadas em        | [**Grupo**](c-group.md)<br/> [**ms-DS-AZ-Task**](c-msds-aztask.md)<br/> |
+| Classes usadas em        | [**Grupo**](c-group.md)<br/> [**ms-DS-Az-Task**](c-msds-aztask.md)<br/> |
 
 
 

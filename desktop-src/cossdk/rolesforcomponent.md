@@ -1,5 +1,5 @@
 ---
-description: Contém um objeto para cada função atribuída ao componente ao qual a coleção está relacionada. As funções já devem estar atribuídas no nível do aplicativo.
+description: Contém um objeto para cada função atribuída ao componente ao qual a coleção está relacionada. As funções já devem ser atribuídas no nível do aplicativo.
 ms.assetid: c253c72f-908e-4990-ac1a-27e32c99283c
 title: Coleção RolesForComponent
 ms.topic: reference
@@ -21,20 +21,20 @@ ms.locfileid: "118547003"
 ---
 # <a name="rolesforcomponent-collection"></a>Coleção RolesForComponent
 
-Contém um objeto para cada função atribuída ao componente ao qual a coleção está relacionada. As funções já devem estar atribuídas no nível do aplicativo.
+Contém um objeto para cada função atribuída ao componente ao qual a coleção está relacionada. As funções já devem ser atribuídas no nível do aplicativo.
 
-Esta coleção dá suporte aos métodos [**Add**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-add) e [**Remove**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-remove) do objeto [**COMAdminCatalogCollection**](comadmincatalogcollection.md) .
+Essa coleção dá suporte [**aos métodos Add**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-add) e [**Remove**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-remove) do [**objeto COMAdminCatalogCollection.**](comadmincatalogcollection.md)
 
 ## <a name="members"></a>Membros
 
-A coleção **RolesForComponent** herda da interface [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) , mas não tem membros adicionais.
+A **coleção RolesForComponent** herda da interface [**IUnknown,**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) mas não tem membros adicionais.
 
 ## <a name="related-collections"></a>Coleções relacionadas
 
 Você pode navegar desta coleção para qualquer uma das seguintes coleções:
 
 -   [**ErrorInfo**](errorinfo.md)
--   [**PropertyInfo**](propertyinfo.md)
+-   [**Propertyinfo**](propertyinfo.md)
 -   [**RelatedCollectionInfo**](relatedcollectioninfo.md)
 
 Você pode navegar até essa coleção das seguintes coleções:
@@ -43,18 +43,18 @@ Você pode navegar até essa coleção das seguintes coleções:
 
 ## <a name="properties"></a>Propriedades
 
-As propriedades a seguir têm suporte pelo objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) dentro da coleção:
+As propriedades a seguir têm suporte no [**objeto COMAdminCatalogObject**](comadmincatalogobject.md) dentro da coleção:
 
 -   [Nome](#name)
 
-### <a name="name"></a>Name
+### <a name="name"></a>Nome
 
 
 
 | Entrada | Valor |
 |----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Descrição    | O nome da função. Já deve ser uma função atribuída ao aplicativo (que aparece na coleção de funções). Espaços extras no início e no final da cadeia de caracteres são removidos. Essa propriedade é retornada quando o método de propriedade de [**chave**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_key) ou [**nome**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_name) é chamado em um objeto desta coleção. |
-| Acesso         | WriteOnce                                                                                                                                                                                                                                                                                                                                           |
+| Descrição    | O nome da função. Já deve ser uma função atribuída ao aplicativo (que aparece na coleção Funções). Espaços extras no início e no final da cadeia de caracteres são removidos. Essa propriedade é retornada quando [**o método de**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_key) propriedade Key ou [**Name**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_name) é chamado em um objeto dessa coleção. |
+| Access         | WriteOnce                                                                                                                                                                                                                                                                                                                                           |
 | Type           | String                                                                                                                                                                                                                                                                                                                                              |
 | Padrão        | "Nova função"                                                                                                                                                                                                                                                                                                                                          |
 | Sistema mínimo | Windows 2000                                                                                                                                                                                                                                                                                                                                        |

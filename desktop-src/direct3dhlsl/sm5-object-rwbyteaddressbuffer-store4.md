@@ -1,9 +1,9 @@
 ---
-title: 'Função RWByteAddressBuffer:: Store4'
+title: Função RWByteAddressBuffer::Store4
 description: Define quatro valores.
 ms.assetid: 261dd270-79a7-4566-9fbd-52bd8dc3e1bf
 keywords:
-- HLSL da função Store4
+- Função Store4 HLSL
 topic_type:
 - apiref
 api_name:
@@ -37,7 +37,7 @@ void Store4(
 
 <dl> <dt>
 
-*endereço* \[ no\]
+*endereço* \[ Em\]
 </dt> <dd>
 
 Tipo: **uint**
@@ -46,7 +46,7 @@ O endereço de entrada em bytes, que deve ser um múltiplo de 4.
 
 </dd> <dt>
 
-*valores* \[ de no\]
+*valores* \[ Em\]
 </dt> <dd>
 
 Tipo: **uint4**
@@ -65,7 +65,7 @@ Essa função tem suporte para os seguintes tipos de sombreadores:
 
 
 
-| Vértice | Envoltória | Domínio | Geometry | 16x16 | Computação |
+| Vértice | Casco | Domínio | Geometry | Pixel | Computação |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | x     | x       |
 

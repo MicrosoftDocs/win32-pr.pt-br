@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre a propriedade: JET_OBJECTINFO. objtyp'
-title: Propriedade JET_OBJECTINFO. objtyp
+description: 'Saiba mais sobre: JET_OBJECTINFO.objtyp'
+title: JET_OBJECTINFO.objtyp
 TOCTitle: 'objtyp property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.JET_OBJECTINFO.objtyp
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_objectinfo.objtyp(v=EXCHG.10)
@@ -26,19 +26,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 541a9b3561c43a9b339c731a1b93302e6c8c46a3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f2abc54c2419b82ff6dc2469f46658bece41f39d4fe58a513abf5aef384e2eff
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105798227"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118979786"
 ---
-# <a name="jet_objectinfoobjtyp-property"></a>Propriedade JET_OBJECTINFO. objtyp
+# <a name="jet_objectinfoobjtyp-property"></a>JET_OBJECTINFO.objtyp
 
-Obtém a JET_OBJTYP da tabela. No momento, apenas tabelas serão retornadas (ou seja, [tabela](./jet-objtyp-enumeration.md)).
+Obtém a JET_OBJTYP da tabela. Atualmente, somente tabelas serão retornadas (ou seja, [Tabela](./jet-objtyp-enumeration.md)).
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Syntax
 
@@ -60,14 +60,14 @@ public JET_objtyp objtyp { get; private set; }
 
 #### <a name="property-value"></a>Valor da propriedade
 
-Tipo: [Microsoft.ISAM.ESENT.Interop.JET_objtyp](./jet-objtyp-enumeration.md)  
+Tipo: [Microsoft.Isam.Esent.Interop.JET_objtyp](./jet-objtyp-enumeration.md)  
 
 ## <a name="see-also"></a>Confira também
 
 #### <a name="reference"></a>Referência
 
-[Classe JET_OBJECTINFO](./jet-objectinfo-class.md)
+[JET_OBJECTINFO classe](./jet-objectinfo-class.md)
 
-[Membros do JET_OBJECTINFO](./jet-objectinfo-members.md)
+[JET_OBJECTINFO membros](./jet-objectinfo-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

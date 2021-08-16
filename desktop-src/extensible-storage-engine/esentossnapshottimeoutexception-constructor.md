@@ -35,8 +35,8 @@ ms.locfileid: "119478546"
 
 Inicializa uma nova instância da classe EsentOSSnapshotTimeOutException.
 
-**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -58,6 +58,6 @@ public EsentOSSnapshotTimeOutException()
 
 [Classe EsentOSSnapshotTimeOutException](./esentossnapshottimeoutexception-class.md)
 
-[Membros EsentOSSnapshotTimeOutException](./esentossnapshottimeoutexception-members.md)
+[Membros do EsentOSSnapshotTimeOutException](./esentossnapshottimeoutexception-members.md)
 
-[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)

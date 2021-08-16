@@ -36,7 +36,7 @@ Contém o GUID do conjunto de conteúdo Sistema de Arquivos Distribuído (DFS) R
 | Frequência de atualização  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.6.13.3.18                            |
 | System-Id-Guid    | 1035a8e1-67a8-4c21-b7bb-031cdf99d7a0                  |
-| Sintaxe            | [**Object(Replica-Link)**](s-object-replica-link.md) |
+| Syntax            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
 
@@ -56,7 +56,7 @@ Contém o GUID do conjunto de conteúdo Sistema de Arquivos Distribuído (DFS) R
 | ID do link                | \-                                                               |
 | MAPI-Id                | \-                                                               |
 | System-Only            | Falso                                                            |
-| Tem valor único       | True                                                             |
+| Tem valor único       | Verdadeiro                                                             |
 | É indexado             | Falso                                                            |
 | No Catálogo Global      | Falso                                                            |
 | Descritor de segurança NT | O:BAG:BAD:S:                                                     |
@@ -77,7 +77,7 @@ Contém o GUID do conjunto de conteúdo Sistema de Arquivos Distribuído (DFS) R
 | ID do link                | \-                                                               |
 | MAPI-Id                | \-                                                               |
 | System-Only            | Falso                                                            |
-| Tem valor único       | True                                                             |
+| Tem valor único       | Verdadeiro                                                             |
 | É indexado             | Falso                                                            |
 | No Catálogo Global      | Falso                                                            |
 | Descritor de segurança NT | O:BAG:BAD:S:                                                     |
@@ -98,7 +98,7 @@ Contém o GUID do conjunto de conteúdo Sistema de Arquivos Distribuído (DFS) R
 | ID do link                | \-                                                               |
 | MAPI-Id                | \-                                                               |
 | System-Only            | Falso                                                            |
-| Tem valor único       | True                                                             |
+| Tem valor único       | Verdadeiro                                                             |
 | É indexado             | Falso                                                            |
 | No Catálogo Global      | Falso                                                            |
 | Descritor de segurança NT | O:BAG:BAD:S:                                                     |
@@ -119,7 +119,7 @@ Contém o GUID do conjunto de conteúdo Sistema de Arquivos Distribuído (DFS) R
 | ID do link                | \-                                                               |
 | MAPI-Id                | \-                                                               |
 | System-Only            | Falso                                                            |
-| Tem valor único       | True                                                             |
+| Tem valor único       | Verdadeiro                                                             |
 | É indexado             | Falso                                                            |
 | No Catálogo Global      | Falso                                                            |
 | Descritor de segurança NT | O:BAG:BAD:S:                                                     |

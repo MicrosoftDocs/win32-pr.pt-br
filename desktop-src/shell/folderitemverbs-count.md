@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 5545ea64da914188226fbdabf7cc6301baa695af
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 985ab6eb9508d57a7dd38616108bb0fdb58e7244623d90db435ca0a7022a570c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108089544"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120090586"
 ---
 # <a name="folderitemverbscount-property"></a>Propriedade FolderItemVerbs. Count
 
@@ -41,9 +41,9 @@ Um **inteiro** que recebe a propriedade **Count** .
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo a seguir usa **Count** para recuperar a contagem de verbos disponíveis para a pasta do painel de controle. O uso adequado é mostrado para JScript, VBScript e Visual Basic.
+O exemplo a seguir usa **Count** para recuperar a contagem de verbos disponíveis para a pasta do painel de controle. o uso adequado é mostrado para JScript, VBScript e Visual Basic.
 
-JScript
+JScript:
 
 
 ```JScript
@@ -148,7 +148,7 @@ End Sub
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 2000 Professional, \[ somente aplicativos da área de trabalho do Windows XP\]<br/>                                         |
+| Cliente mínimo com suporte<br/> | Windows 2000 Professional, \[ somente aplicativos de área de trabalho do Windows XP\]<br/>                                         |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                           |
 | Cabeçalho<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                           |
 | INSERI<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                         |

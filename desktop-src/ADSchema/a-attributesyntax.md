@@ -1,11 +1,11 @@
 ---
 title: Attribute-Syntax atributo
-description: O OID da sintaxe para este atributo.
+description: O OID para a sintaxe desse atributo.
 ms.assetid: 7ae16381-c8e9-4f85-b3e6-86c82b487ca2
 ms.tgt_platform: multiple
 keywords:
-- Esquema de Attribute-Syntax do atributo AD
-- Esquema de AD do atributo attributeSyntax
+- Attribute-Syntax atributo AD Schema
+- AttributeSyntax attribute AD Schema
 topic_type:
 - apiref
 api_name:
@@ -23,20 +23,20 @@ ms.locfileid: "119443056"
 ---
 # <a name="attribute-syntax-attribute"></a>Attribute-Syntax atributo
 
-O OID da sintaxe para este atributo.
+O OID para a sintaxe desse atributo.
 
 
 
 | Entrada | Valor |
 |-------------------|-----------------------------------------------------------------|
 | CN                | Attribute-Syntax                                                |
-| LDAP-Display-Name | attributeSyntax                                                 |
+| Ldap-Display-Name | attributeSyntax                                                 |
 | Tamanho              | \-                                                              |
 | Privilégio de atualização  | Administrador de esquema                                            |
 | Frequência de atualização  | \-                                                              |
 | Attribute-Id      | 1.2.840.113556.1.2.32                                           |
-| System-ID-GUID    | bf967925-0de6-11d0-a285-00aa003049e2                            |
-| Sintaxe            | [**Cadeia de caracteres (identificador de objeto)**](s-string-object-identifier.md) |
+| System-Id-Guid    | bf967925-0de6-11d0-a285-00aa003049e2                            |
+| Syntax            | [**String(Object-Identifier)**](s-string-object-identifier.md) |
 
 
 
@@ -44,7 +44,7 @@ O OID da sintaxe para este atributo.
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adam**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -58,16 +58,16 @@ O OID da sintaxe para este atributo.
 |------------------------|----------------------------------------------------------|
 | ID do link                | \-                                                       |
 | MAPI-Id                | \-                                                       |
-| System-Only            | True                                                     |
-| É de valor único       | True                                                     |
+| System-Only            | Verdadeiro                                                     |
+| Tem valor único       | Verdadeiro                                                     |
 | É indexado             | Falso                                                    |
-| No catálogo global      | Falso                                                    |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                             |
+| No Catálogo Global      | Falso                                                    |
+| Descritor de segurança NT | O:BAG:BAD:S:                                             |
 | Range-Lower            | \-                                                       |
 | Range-Upper            | \-                                                       |
 | Search-Flags           | 0x00000008                                               |
 | System-Flags           | 0x00000010                                               |
-| Classes usadas em        | [**Atributo-esquema**](c-attributeschema.md)<br/> |
+| Classes usadas em        | [**Esquema de atributo**](c-attributeschema.md)<br/> |
 
 
 
@@ -79,20 +79,20 @@ O OID da sintaxe para este atributo.
 |------------------------|----------------------------------------------------------|
 | ID do link                | \-                                                       |
 | MAPI-Id                | \-                                                       |
-| System-Only            | True                                                     |
-| É de valor único       | True                                                     |
+| System-Only            | Verdadeiro                                                     |
+| Tem valor único       | Verdadeiro                                                     |
 | É indexado             | Falso                                                    |
-| No catálogo global      | Falso                                                    |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                             |
+| No Catálogo Global      | Falso                                                    |
+| Descritor de segurança NT | O:BAG:BAD:S:                                             |
 | Range-Lower            | \-                                                       |
 | Range-Upper            | \-                                                       |
 | Search-Flags           | 0x00000008                                               |
 | System-Flags           | 0x00000010                                               |
-| Classes usadas em        | [**Atributo-esquema**](c-attributeschema.md)<br/> |
+| Classes usadas em        | [**Esquema de atributo**](c-attributeschema.md)<br/> |
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adam
 
 
 
@@ -100,16 +100,16 @@ O OID da sintaxe para este atributo.
 |------------------------|----------------------------------------------------------|
 | ID do link                | \-                                                       |
 | MAPI-Id                | \-                                                       |
-| System-Only            | True                                                     |
-| É de valor único       | True                                                     |
+| System-Only            | Verdadeiro                                                     |
+| Tem valor único       | Verdadeiro                                                     |
 | É indexado             | Falso                                                    |
-| No catálogo global      | Falso                                                    |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                             |
+| No Catálogo Global      | Falso                                                    |
+| Descritor de segurança NT | O:BAG:BAD:S:                                             |
 | Range-Lower            | \-                                                       |
 | Range-Upper            | \-                                                       |
 | Search-Flags           | 0x00000008                                               |
 | System-Flags           | 0x00000010                                               |
-| Classes usadas em        | [**Atributo-esquema**](c-attributeschema.md)<br/> |
+| Classes usadas em        | [**Esquema de atributo**](c-attributeschema.md)<br/> |
 
 
 
@@ -121,16 +121,16 @@ O OID da sintaxe para este atributo.
 |------------------------|----------------------------------------------------------|
 | ID do link                | \-                                                       |
 | MAPI-Id                | \-                                                       |
-| System-Only            | True                                                     |
-| Tem valor único       | True                                                     |
+| System-Only            | Verdadeiro                                                     |
+| É de valor único       | Verdadeiro                                                     |
 | É indexado             | Falso                                                    |
-| No Catálogo Global      | Falso                                                    |
-| Descritor de segurança NT | O:BAG:BAD:S:                                             |
+| No catálogo global      | Falso                                                    |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                             |
 | Range-Lower            | \-                                                       |
 | Range-Upper            | \-                                                       |
 | Search-Flags           | 0x00000008                                               |
 | System-Flags           | 0x00000010                                               |
-| Classes usadas em        | [**Esquema de atributo**](c-attributeschema.md)<br/> |
+| Classes usadas em        | [**Atributo-esquema**](c-attributeschema.md)<br/> |
 
 
 
@@ -142,16 +142,16 @@ O OID da sintaxe para este atributo.
 |------------------------|----------------------------------------------------------|
 | ID do link                | \-                                                       |
 | MAPI-Id                | \-                                                       |
-| System-Only            | True                                                     |
-| Tem valor único       | True                                                     |
+| System-Only            | Verdadeiro                                                     |
+| É de valor único       | Verdadeiro                                                     |
 | É indexado             | Falso                                                    |
-| No Catálogo Global      | Falso                                                    |
-| Descritor de segurança NT | O:BAG:BAD:S:                                             |
+| No catálogo global      | Falso                                                    |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                             |
 | Range-Lower            | \-                                                       |
 | Range-Upper            | \-                                                       |
 | Search-Flags           | 0x00000008                                               |
 | System-Flags           | 0x00000010                                               |
-| Classes usadas em        | [**Esquema de atributo**](c-attributeschema.md)<br/> |
+| Classes usadas em        | [**Atributo-esquema**](c-attributeschema.md)<br/> |
 
 
 
@@ -163,16 +163,16 @@ O OID da sintaxe para este atributo.
 |------------------------|----------------------------------------------------------|
 | ID do link                | \-                                                       |
 | MAPI-Id                | \-                                                       |
-| System-Only            | True                                                     |
-| Tem valor único       | True                                                     |
+| System-Only            | Verdadeiro                                                     |
+| É de valor único       | Verdadeiro                                                     |
 | É indexado             | Falso                                                    |
-| No Catálogo Global      | Falso                                                    |
-| Descritor de segurança NT | O:BAG:BAD:S:                                             |
+| No catálogo global      | Falso                                                    |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                             |
 | Range-Lower            | \-                                                       |
 | Range-Upper            | \-                                                       |
 | Search-Flags           | 0x00000008                                               |
 | System-Flags           | 0x00000010                                               |
-| Classes usadas em        | [**Esquema de atributo**](c-attributeschema.md)<br/> |
+| Classes usadas em        | [**Atributo-esquema**](c-attributeschema.md)<br/> |
 
 
 
@@ -184,16 +184,16 @@ O OID da sintaxe para este atributo.
 |------------------------|----------------------------------------------------------|
 | ID do link                | \-                                                       |
 | MAPI-Id                | \-                                                       |
-| System-Only            | True                                                     |
-| Tem valor único       | True                                                     |
+| System-Only            | Verdadeiro                                                     |
+| É de valor único       | Verdadeiro                                                     |
 | É indexado             | Falso                                                    |
-| No Catálogo Global      | Falso                                                    |
-| Descritor de segurança NT | O:BAG:BAD:S:                                             |
+| No catálogo global      | Falso                                                    |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                             |
 | Range-Lower            | \-                                                       |
 | Range-Upper            | \-                                                       |
 | Search-Flags           | 0x00000008                                               |
 | System-Flags           | 0x00000010                                               |
-| Classes usadas em        | [**Esquema de atributo**](c-attributeschema.md)<br/> |
+| Classes usadas em        | [**Atributo-esquema**](c-attributeschema.md)<br/> |
 
 
 

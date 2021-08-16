@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 216fc4fb78ce264124cc6e0f8495456cb1014805
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 91582ad62c193b275fd47c0ae3ba116ec342d1ae3fe16c3867b09a74f77a5685
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105791660"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119115746"
 ---
 # <a name="esentlogreadverifyfailureexception-constructor"></a>Construtor EsentLogReadVerifyFailureException
 
 Inicializa uma nova instância da classe EsentLogReadVerifyFailureException.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -58,6 +58,6 @@ public EsentLogReadVerifyFailureException()
 
 [Classe EsentLogReadVerifyFailureException](./esentlogreadverifyfailureexception-class.md)
 
-[Membros do EsentLogReadVerifyFailureException](./esentlogreadverifyfailureexception-members.md)
+[Membros EsentLogReadVerifyFailureException](./esentlogreadverifyfailureexception-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

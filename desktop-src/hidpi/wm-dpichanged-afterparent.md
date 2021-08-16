@@ -1,9 +1,9 @@
 ---
-title: Mensagem de WM_DPICHANGED_AFTERPARENT (WinUser. h)
-description: Para as janelas de nível superior de cada monitor v2, essa mensagem é enviada a todos os HWNDs na árvore HWDN filho da janela que está passando por uma alteração de DPI. | Mensagem de WM_DPICHANGED_AFTERPARENT (WinUser. h)
+title: WM_DPICHANGED_AFTERPARENT mensagem (Winuser.h)
+description: Para janelas de nível superior por monitor v2, essa mensagem é enviada a todos os HWNDs na árvore HWDN filho da janela que está passando por uma alteração de DPI. | WM_DPICHANGED_AFTERPARENT mensagem (Winuser.h)
 ms.assetid: FEA1BF07-55B6-4584-ABD3-340515831E0A
 keywords:
-- DPI alta de mensagem de WM_DPICHANGED_AFTERPARENT
+- WM_DPICHANGED_AFTERPARENT DPI alto da mensagem
 topic_type:
 - apiref
 api_name:
@@ -21,9 +21,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118759359"
 ---
-# <a name="wm_dpichanged_afterparent-message"></a>Mensagem de AFTERPARENT do WM \_ DPICHANGED \_
+# <a name="wm_dpichanged_afterparent-message"></a>Mensagem WM \_ DPICHANGED \_ AFTERPARENT
 
-Para as janelas de nível superior de [cada monitor v2](dpi-awareness-context.md) , essa mensagem é enviada a todos os HWNDs na árvore HWDN filho da janela que está passando por uma alteração de DPI. Essa mensagem ocorre depois que a janela de nível superior recebe o [**WM \_ DPICHANGED**](wm-dpichanged.md)e percorre a árvore filho de cima para baixo.
+Para janelas de nível superior por monitor [v2,](dpi-awareness-context.md) essa mensagem é enviada a todos os HWNDs na árvore HWDN filho da janela que está passando por uma alteração de DPI. Essa mensagem ocorre depois que a janela de nível superior recebe [**WM \_ DPICHANGED**](wm-dpichanged.md)e atravessa a árvore filho da parte superior para baixo.
 
 
 ```C++
@@ -39,26 +39,26 @@ Para as janelas de nível superior de [cada monitor v2](dpi-awareness-context.md
 *wParam* 
 </dt> <dd>
 
-Esse valor não é usado e será zero.
+Esse valor não é usada e será zero.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Esse valor não é usado e será zero.
+Esse valor não é usada e será zero.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor retornado
 
-Esse valor não é usado e ignorado pelo sistema.
+Esse valor não éusado e ignorado pelo sistema.
 
 ## <a name="remarks"></a>Comentários
 
-Não há nenhum tratamento padrão dessa mensagem no [DefWindowProc](/windows/win32/api/winuser/nf-winuser-defwindowproca).
+Não há nenhum tratamento padrão dessa mensagem em [DefWindowProc.](/windows/win32/api/winuser/nf-winuser-defwindowproca)
 
-Essa mensagem é enviada somente quando a janela de nível superior tem um contexto de reconhecimento de DPI de PMv2.
+Essa mensagem só é enviada quando a janela de nível superior tem um contexto de reconhecimento de DPI de PMv2.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -66,9 +66,9 @@ Essa mensagem é enviada somente quando a janela de nível superior tem um conte
 
 | Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 10, \[ somente aplicativos da área de trabalho da versão 1703\]<br/>                            |
-| Servidor mínimo com suporte<br/> | Windows Server 2016 \[ somente aplicativos da área de trabalho\]<br/>                                 |
-| Cabeçalho<br/>                   | <dl> <dt>WinUser. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 10, versão 1703 somente \[ aplicativos da área de trabalho\]<br/>                            |
+| Servidor mínimo com suporte<br/> | \[Windows Server 2016 somente aplicativos da área de trabalho\]<br/>                                 |
+| Cabeçalho<br/>                   | <dl> <dt>Winuser.h</dt> </dl> |
 
 
 
@@ -76,10 +76,10 @@ Essa mensagem é enviada somente quando a janela de nível superior tem um conte
 
 <dl> <dt>
 
-[**DPICHANGED do WM \_**](wm-dpichanged.md)
+[**WM \_ DPICHANGED**](wm-dpichanged.md)
 </dt> <dt>
 
-[**BEFOREPARENT do WM \_ DPICHANGED \_**](wm-dpichanged-beforeparent.md)
+[**WM \_ DPICHANGED \_ BEFOREPARENT**](wm-dpichanged-beforeparent.md)
 </dt> </dl>
 
  

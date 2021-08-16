@@ -1,9 +1,9 @@
 ---
 title: WM/PlaylistDelay
-description: O atributo WM/PlaylistDelay contém o número de milissegundos de atraso que devem preceder a reprodução do arquivo em uma lista de reprodução.
+description: O atributo WM/PlaylistDelay contém o número de atrasos de milissegundos que devem preceder a reprodução do arquivo em uma playlist.
 ms.assetid: 5d39a805-65fa-4e1a-988b-6e605481903a
 keywords:
-- Formato de mídia do Windows do WM/PlaylistDelay
+- Formato de mídia do Windows WM/PlaylistDelay
 topic_type:
 - apiref
 api_name:
@@ -21,7 +21,7 @@ ms.locfileid: "118698474"
 ---
 # <a name="wmplaylistdelay"></a>WM/PlaylistDelay
 
-O atributo **WM/PlaylistDelay** contém o número de milissegundos de atraso que devem preceder a reprodução do arquivo em uma lista de reprodução.
+O **atributo WM/PlaylistDelay** contém o número de atrasos de milissegundos que devem preceder a reprodução do arquivo em uma playlist.
 
 ## <a name="global-constant"></a>Constante global
 
@@ -29,11 +29,11 @@ g \_ wszWMPlaylistDelay
 
 ## <a name="data-type"></a>Tipo de Dados
 
-**Cadeia de caracteres do \_ tipo WMT \_**
+**CADEIA DE CARACTERES DE \_ TIPO \_ WMT**
 
 ## <a name="remarks"></a>Comentários
 
-Nem todos os players de mídia honram o atraso da playlist.
+Nem todos os jogadores de mídia estão de acordo com o atraso da playlist.
 
 ## <a name="see-also"></a>Confira também
 

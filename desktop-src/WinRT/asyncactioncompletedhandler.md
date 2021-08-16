@@ -56,7 +56,7 @@ Atribua **um AsyncActionCompletedHandler** a [**um IAsyncAction**](/windows/win3
 |-------------------------------------|---------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 8<br/>                                                                              |
 | Servidor mínimo com suporte<br/> | Windows Server 2012<br/>                                                                    |
-| parâmetro<br/>                   | <dl> <dt>Windows. Foundation.idl</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Windows. Foundation.idl</dt> </dl> |
 
 
 

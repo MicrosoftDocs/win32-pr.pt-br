@@ -1,8 +1,8 @@
 ---
-description: Os dispositivos SNMP podem ser acessados lendo ou gravando em sua instância de classe correspondente no WMI SMIR (repositório de informações do módulo SNMP).
+description: Os dispositivos SNMP podem ser acessados lendo ou escrevendo em sua instância de classe correspondente no SMIR do WMI (Repositório de Informações do Módulo SNMP).
 ms.assetid: af5e1321-b552-447e-a217-eecbebe1f203
 ms.tgt_platform: multiple
-title: Leitura e gravação em dispositivos SNMP
+title: Lendo e escrevendo em dispositivos SNMP
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 0c0419a5fc426c183ee1eb89a957a0c2f6a210ecd9b5d4612b6c4deb4e0f775a
@@ -12,18 +12,18 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118554251"
 ---
-# <a name="reading-from-and-writing-to-snmp-devices"></a>Leitura e gravação em dispositivos SNMP
+# <a name="reading-from-and-writing-to-snmp-devices"></a>Lendo e escrevendo em dispositivos SNMP
 
-Os dispositivos SNMP podem ser acessados lendo ou gravando em sua instância de classe correspondente no WMI SMIR (repositório de informações do módulo SNMP). Quando você estiver trabalhando com vários dispositivos do mesmo tipo, para eficiência, carregue os MIBs para um tipo de dispositivo SNMP no SMIR.
+Os dispositivos SNMP podem ser acessados lendo ou escrevendo em sua instância de classe correspondente no SMIR do WMI (Repositório de Informações do Módulo SNMP). Quando você estiver trabalhando com vários dispositivos do mesmo tipo, para eficiência, carregue os MIBs para um tipo de dispositivo SNMP no SMIR.
 
 > [!Note]  
-> Para obter mais informações sobre como instalar o provedor, consulte [Configurando o ambiente SNMP WMI](setting-up-the-wmi-snmp-environment.md).
+> Para obter mais informações sobre como instalar o provedor, consulte [Configurando o ambiente WMI SNMP](setting-up-the-wmi-snmp-environment.md).
 
  
 
 Selecione uma das opções a seguir para ler ou gravar de cada tipo de dispositivo SNMP atualizando as informações de contexto da instância antes de se comunicar com cada uma delas.
 
--   Use um nome DNS em vez do endereço IP ao fazer referência a um dispositivo específico.
+-   Use um nome DNS em vez do endereço IP ao referenciar um dispositivo específico.
 
     O exemplo a seguir mostra como usar o nome DNS para um dispositivo específico.
 
@@ -33,10 +33,10 @@ Selecione uma das opções a seguir para ler ou gravar de cada tipo de dispositi
 
     
 
--   Crie um namespace separado e associe um endereço de dispositivo ao objeto de namespace usando o qualificador de instância AgentAddress para que o namespace seja vinculado permanentemente ao dispositivo. Nesse caso, você não precisa especificar as informações do objeto de contexto.
--   Ler de um dispositivo SNMP.
+-   Crie um namespace separado e associe um endereço de dispositivo ao objeto de namespace usando o qualificador de instância agentAddress para que o namespace seja permanentemente associado ao dispositivo. Nesse caso, você não precisa especificar as informações do objeto de contexto.
+-   Leitura de um dispositivo SNMP.
 
-    O exemplo a seguir executa uma operação get em uma classe de dispositivo.
+    O exemplo a seguir executa uma operação Get em uma classe de dispositivo.
 
     ```VB
     Set objLocator = CreateObject("wbemscripting.swbemlocator")
@@ -54,7 +54,7 @@ Selecione uma das opções a seguir para ler ou gravar de cada tipo de dispositi
 
 -   Gravar em um dispositivo SNMP.
 
-    O exemplo a seguir executa uma operação set em uma classe de dispositivo.
+    O exemplo a seguir executa uma operação Definir em uma classe de dispositivo.
 
     ```VB
     Set objLocator = CreateObject("wbemscripting.swbemlocator")
@@ -67,7 +67,7 @@ Selecione uma das opções a seguir para ler ou gravar de cada tipo de dispositi
 
     
 
-As classes correlacionadas são aquelas para as quais um determinado dispositivo SNMP tem suporte quando ocorre a enumeração. A correlação afeta o conjunto de classes retornadas do SMIR. A enumeração não correlacionada retorna todas as classes presentes no SMIR, independentemente de o dispositivo dar suporte a elas. Para obter mais informações sobre como usar técnicas de correlação do WMI, consulte [correlação de classes SNMP WMI](wmi-snmp-class-correlation.md).
+Classes correlacionadas são aquelas às que um determinado dispositivo SNMP é conhecido por dar suporte quando a enumeração ocorre. A correlação afeta o conjunto de classes retornadas do SMIR. A enumeração não corrigida retorna todas as classes presentes no SMIR, independentemente de o dispositivo dar suporte a elas. Para obter mais informações sobre como usar técnicas de correlação WMI, consulte Correlação de classe [SNMP WMI](wmi-snmp-class-correlation.md).
 
  
 

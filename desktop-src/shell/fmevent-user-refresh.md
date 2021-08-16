@@ -1,6 +1,6 @@
 ---
-description: Enviado para uma DLL de extensão quando o usuário escolhe o comando Atualizar no menu Exibir no Gerenciador de Arquivos. A extensão pode usar essa notificação para atualizar seu menu.
-title: FMEVENT_USER_REFRESH mensagem (Wfext.h)
+description: Enviado a uma DLL de extensão quando o usuário escolhe o comando Atualizar no menu Exibir no Gerenciador de arquivos. A extensão pode usar essa notificação para atualizar seu menu.
+title: Mensagem de FMEVENT_USER_REFRESH (Wfext. h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 api_location:
 - Wfext.h
 ms.assetid: b8fb4ce8-d284-4558-82a4-488d4d833bcb
-ms.openlocfilehash: 16f75f562149b50237a6b41bf2023d1f694741e3
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: 9e2f514494ae8040c7bdb97f556555bd7f32794e4259300da240956ff6fcfe98
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109841257"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119094141"
 ---
-# <a name="fmevent_user_refresh-message"></a>Mensagem FMEVENT \_ USER \_ REFRESH
+# <a name="fmevent_user_refresh-message"></a>FMEVENT \_ mensagem de atualização do usuário \_
 
-Enviado para uma DLL de extensão quando o usuário escolhe o **comando Atualizar** no menu **Exibir** no Gerenciador de Arquivos. A extensão pode usar essa notificação para atualizar seu menu.
+Enviado a uma DLL de extensão quando o usuário escolhe o comando **Atualizar** no menu **Exibir** no Gerenciador de arquivos. A extensão pode usar essa notificação para atualizar seu menu.
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -34,9 +34,9 @@ Enviado para uma DLL de extensão quando o usuário escolhe o **comando Atualiza
 *lParam* 
 </dt> <dd>Deve ser zero.</dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Uma DLL de extensão deverá retornar zero se ela processa essa mensagem.
+Uma DLL de extensão deve retornar zero se ela processar essa mensagem.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -46,7 +46,7 @@ Uma DLL de extensão deverá retornar zero se ela processa essa mensagem.
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                         |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                               |
-| Cabeçalho<br/>                   | <dl> <dt>Wfext.h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Wfext. h</dt> </dl> |
 
 
 

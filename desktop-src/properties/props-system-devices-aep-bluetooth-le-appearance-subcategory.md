@@ -1,19 +1,19 @@
 ---
-description: Saiba mais sobre a aparência do dispositivo BLUETOOTH LE. Esta página de referência descreve a propriedade System.Devices.Aep.Bluetooth.Le.Appearance.Subcategory.
+description: saiba mais sobre a aparência do dispositivo Bluetooth LE. Esta página de referência descreve o System. Devices. AEP. Bluetooth. Propriedade Le. Appearance. Subcategory.
 ms.assetid: 7a98896f-a99f-4db8-8743-6d5b5b2abfee
-title: System.Devices.Aep.Bluetooth.Le.Appearance.Subcategory
+title: System. Devices. AEP. Bluetooth. Le. aparência. subcategoria
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1cb95e7295837d4b4f51f3dd54f5960d3ce446e6
-ms.sourcegitcommit: d0eb44d0a95f5e5efbfec3d3e9c143f5cba25bc3
+ms.openlocfilehash: e0b16e1c7bf6802bf744d8222fda30579c0219c722cf2cee4d6dd4ce6686a572
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112262158"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120091486"
 ---
-# <a name="systemdevicesaepbluetoothleappearancesubcategory"></a>System.Devices.Aep.Bluetooth.Le.Appearance.Subcategory
+# <a name="systemdevicesaepbluetoothleappearancesubcategory"></a>System. Devices. AEP. Bluetooth. Le. aparência. subcategoria
 
-Aparência do dispositivo LE bluetooth.
+Bluetooth Aparência do dispositivo LE.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511"></a>Windows 10, versão 1703, Windows 10, versão 1607, Windows 10, versão 1511
 
@@ -33,13 +33,13 @@ propertyDescription
 
 ## <a name="remarks"></a>Comentários
 
-Os valores PKEY são definidos em Propkey.h.
+Os valores de PKEY são definidos em Propkey. h.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[Propertydescription](./propdesc-schema-propertydescription.md)
+[propertyDescription](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -48,19 +48,19 @@ Os valores PKEY são definidos em Propkey.h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Typeinfo](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[Stringformat](./propdesc-schema-stringformat.md)
+[stringFormat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numberformat](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -75,7 +75,7 @@ Os valores PKEY são definidos em Propkey.h.
 [editControl](./propdesc-schema-editcontrol.md)
 </dt> <dt>
 
-[Filtercontrol](./propdesc-schema-filtercontrol.md)
+[filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
 [queryControl](./propdesc-schema-querycontrol.md)

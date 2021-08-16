@@ -1,10 +1,10 @@
 ---
-title: atributo jpegPhoto
-description: Usado para armazenar uma ou mais imagens de uma pessoa usando o formato de intercâmbio de arquivos JPEG \ JFIF \.
+title: Atributo jpegPhoto
+description: Usado para armazenar uma ou mais imagens de uma pessoa usando o formato de intercâmbio de arquivo JPEG \ JFIF\.
 ms.assetid: c9257acd-366c-4839-a8c6-0ef9d6b7e671
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD do atributo jpegPhoto
+- Esquema do AD do atributo jpegPhoto
 topic_type:
 - apiref
 api_name:
@@ -20,22 +20,22 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119303895"
 ---
-# <a name="jpegphoto-attribute"></a>atributo jpegPhoto
+# <a name="jpegphoto-attribute"></a>Atributo jpegPhoto
 
-Usado para armazenar uma ou mais imagens de uma pessoa usando o formato de intercâmbio de arquivos JPEG \[ JFIF \] .
+Usado para armazenar uma ou mais imagens de uma pessoa usando o JFIF de formato de intercâmbio de \[ arquivo \] JPEG.
 
 
 
 | Entrada | Valor |
 |-------------------|-------------------------------------------------------|
 | CN                | jpegPhoto                                             |
-| LDAP-Display-Name | jpegPhoto                                             |
+| Ldap-Display-Name | jpegPhoto                                             |
 | Tamanho              | \-                                                    |
 | Privilégio de atualização  | \-                                                    |
 | Frequência de atualização  | \-                                                    |
 | Attribute-Id      | 0.9.2342.19200300.100.1.60                            |
-| System-ID-GUID    | bac80572-09c4-4fa9-9ae6-7628d7adbe0e                  |
-| Syntax            | [**Objeto (link de réplica)**](s-object-replica-link.md) |
+| System-Id-Guid    | bac80572-09c4-4fa9-9ae6-7628d7adbe0e                  |
+| Syntax            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
 
@@ -56,10 +56,10 @@ Usado para armazenar uma ou mais imagens de uma pessoa usando o formato de inter
 | ID do link                | \-                                                                                    |
 | MAPI-Id                | \-                                                                                    |
 | System-Only            | Falso                                                                                 |
-| É de valor único       | Falso                                                                                 |
+| Tem valor único       | Falso                                                                                 |
 | É indexado             | Falso                                                                                 |
-| No catálogo global      | Falso                                                                                 |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                          |
+| No Catálogo Global      | Falso                                                                                 |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                          |
 | Range-Lower            | \-                                                                                    |
 | Range-Upper            | \-                                                                                    |
 | Search-Flags           | 0x00000000                                                                            |
@@ -77,10 +77,10 @@ Usado para armazenar uma ou mais imagens de uma pessoa usando o formato de inter
 | ID do link                | \-                                                                                    |
 | MAPI-Id                | \-                                                                                    |
 | System-Only            | Falso                                                                                 |
-| É de valor único       | Falso                                                                                 |
+| Tem valor único       | Falso                                                                                 |
 | É indexado             | Falso                                                                                 |
-| No catálogo global      | Falso                                                                                 |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                          |
+| No Catálogo Global      | Falso                                                                                 |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                          |
 | Range-Lower            | \-                                                                                    |
 | Range-Upper            | \-                                                                                    |
 | Search-Flags           | 0x00000000                                                                            |
@@ -98,10 +98,10 @@ Usado para armazenar uma ou mais imagens de uma pessoa usando o formato de inter
 | ID do link                | \-                                                                                    |
 | MAPI-Id                | \-                                                                                    |
 | System-Only            | Falso                                                                                 |
-| É de valor único       | Falso                                                                                 |
+| Tem valor único       | Falso                                                                                 |
 | É indexado             | Falso                                                                                 |
-| No catálogo global      | Falso                                                                                 |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                          |
+| No Catálogo Global      | Falso                                                                                 |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                          |
 | Range-Lower            | \-                                                                                    |
 | Range-Upper            | \-                                                                                    |
 | Search-Flags           | 0x00000000                                                                            |

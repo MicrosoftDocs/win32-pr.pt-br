@@ -1,6 +1,6 @@
 ---
-title: Métodos de exemplo Texture2DArray::Texture2DArray
-description: Amostras de texture2DArray.
+title: 'Métodos de exemplo Texture2DArray:: Texture2DArray'
+description: Amostras de um Texture2DArray.
 ms.assetid: 30798438-3599-49DD-8E84-40CEB4AA9BEB
 keywords:
 - Métodos de exemplo HLSL
@@ -19,9 +19,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118787132"
 ---
-# <a name="texture2darraysample-methods"></a>Métodos Texture2DArray::Sample
+# <a name="texture2darraysample-methods"></a>Métodos Texture2DArray:: sample
 
-Amostras de [**texture2DArray.**](sm5-object-texture2darray.md)
+Amostras de um [**Texture2DArray**](sm5-object-texture2darray.md).
 
 ### <a name="overload-list"></a>Lista de sobrecargas
 
@@ -29,9 +29,9 @@ Amostras de [**texture2DArray.**](sm5-object-texture2darray.md)
 
 | Método                                                                            | Descrição                                                                                                                               |
 |:----------------------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------|
-| [**Sample(S,float,int)**](dx-graphics-hlsl-to-sample.md)                         | Amostras de uma textura.<br/>                                                                                                             |
-| [**Sample(S,float,int,float)**](t2darray-sample-s-float-int-float-.md)           | Amostra uma textura com um valor opcional para fixar valores de LOD (nível de detalhes) de exemplo.<br/>                                      |
-| [**Sample(S,float,int,float,uint)**](t2darray-sample-s-float-int-float-uint-.md) | Amostra uma textura com um valor opcional para fixar valores de LOD (nível de detalhes) de exemplo e retorna o status da operação.<br/> |
+| [**Amostra (S, float, int)**](dx-graphics-hlsl-to-sample.md)                         | Amostra uma textura.<br/>                                                                                                             |
+| [**Amostra (S, float, int, float)**](t2darray-sample-s-float-int-float-.md)           | Amostras de uma textura com um valor opcional para fixe os valores de nível de detalhe (LOD) de exemplo para.<br/>                                      |
+| [**Amostra (S, float, int, float, uint)**](t2darray-sample-s-float-int-float-uint-.md) | Exemplifica uma textura com um valor opcional para fixe os valores de nível de detalhe (LOD) de exemplo para e retorna o status da operação.<br/> |
 
 
 

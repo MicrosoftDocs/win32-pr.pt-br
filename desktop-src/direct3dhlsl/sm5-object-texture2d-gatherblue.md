@@ -1,9 +1,9 @@
 ---
-title: 'Função Texture2D:: GatherBlue (S, float, int)'
-description: 'Retorna os componentes azuis dos quatro valores Texel que seriam usados em uma operação de filtragem de bi-linear. | Função Texture2D:: GatherBlue (S, float, int)'
+title: Função Texture2D::GatherBlue(S,float,int)
+description: Retorna os componentes azuis dos quatro valores de texel que seriam usados em uma operação de filtragem bi-linear. | Função Texture2D::GatherBlue(S,float,int)
 ms.assetid: 6d753ef2-2818-4990-81df-52dda044d21d
 keywords:
-- HLSL da função GatherBlue
+- Função GatherBlue HLSL
 topic_type:
 - apiref
 api_name:
@@ -20,9 +20,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118789811"
 ---
-# <a name="texture2dgatherbluesfloatint-function"></a>Função Texture2D:: GatherBlue (S, float, int)
+# <a name="texture2dgatherbluesfloatint-function"></a>Função Texture2D::GatherBlue(S,float,int)
 
-Retorna os componentes azuis dos quatro valores Texel que seriam usados em uma operação de filtragem de bi-linear.
+Retorna os componentes azuis dos quatro valores de texel que seriam usados em uma operação de filtragem bi-linear.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -41,25 +41,25 @@ TemplateType GatherBlue(
 *s* \[ em\]
 </dt> <dd>
 
-Tipo: **amostra**
+Tipo: **sampler**
 
 O índice de amostra baseado em zero.
 
 </dd> <dt>
 
-*local* \[ do no\]
+*local* \[ Em\]
 </dt> <dd>
 
 Tipo: **float2**
 
-As coordenadas de exemplo (u, v).
+As coordenadas de exemplo (u,v).
 
 </dd> <dt>
 
-*deslocamento* \[ no\]
+*deslocamento* \[ Em\]
 </dt> <dd>
 
-Tipo: **Int2**
+Tipo: **int2**
 
 Um deslocamento que é aplicado à coordenada de textura antes da amostragem.
 
@@ -73,13 +73,13 @@ Um valor de quatro componentes cujo tipo é o mesmo que o tipo de modelo.
 
 ## <a name="remarks"></a>Comentários
 
-Os exemplos de textura podem ser usados para interpolação bilinear.
+As amostras de textura podem ser usadas para interpolação bilinear.
 
 Essa função tem suporte para os seguintes tipos de sombreadores:
 
 
 
-| Vértice | Envoltória | Domínio | Geometry | 16x16 | Computação |
+| Vértice | Casco | Domínio | Geometry | Pixel | Computação |
 |--------|------|--------|----------|-------|---------|
 | x      | x    | x      | x        | x     | x       |
 

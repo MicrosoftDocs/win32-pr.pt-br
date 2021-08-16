@@ -1,9 +1,9 @@
 ---
-title: Propriedade Application. Commands
-description: Representa um contêiner para todos os comandos que são definidos pelo aplicativo.
+title: Propriedade Application.Commands
+description: Representa um contêiner para todos os Comandos definidos pelo aplicativo.
 ms.assetid: 160d7d28-2d64-4cbc-b2b9-2da6b2f5b3c8
 keywords:
-- Faixa de das propriedades Application. do Windows
+- Propriedade Application.Commands Windows Ribbon
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8de2b88b97dda96636a9c5da3ad078f678091d8d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6c23d7b30b45a6023c547904adbcaaacb13b8777f9047133cd8d617a1a58c32d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455130"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118964315"
 ---
-# <a name="applicationcommands-property"></a>Propriedade Application. Commands
+# <a name="applicationcommands-property"></a>Propriedade Application.Commands
 
-Representa um contêiner para todos os comandos que são definidos pelo aplicativo.
+Representa um contêiner para todos os Comandos definidos pelo aplicativo.
 
 ## <a name="usage"></a>Uso
 
@@ -59,11 +59,11 @@ Não há atributos.
 
 Opcional.
 
-Pode ocorrer no máximo uma vez para cada elemento de [**aplicativo**](windowsribbon-element-application.md) .
+Pode ocorrer no máximo uma vez para cada [**elemento Application.**](windowsribbon-element-application.md)
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo a seguir mostra um elemento **Application. Commands** que contém um manifesto dos comandos da área de transferência.
+O exemplo a seguir mostra um **elemento Application.Commands** que contém um manifesto de Comandos da área de transferência.
 
 
 ```C++
@@ -151,8 +151,8 @@ O exemplo a seguir mostra um elemento **Application. Commands** que contém um m
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008 R2\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows 7 \[ aplicativos da área de trabalho\]<br/>              |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho do Server 2008 R2 \[\]<br/> |
 
 
 
@@ -160,7 +160,7 @@ O exemplo a seguir mostra um elemento **Application. Commands** que contém um m
 
 <dl> <dt>
 
-[**Application. views**](windowsribbon-element-application-views.md)
+[**Application.Views**](windowsribbon-element-application-views.md)
 </dt> </dl>
 
  

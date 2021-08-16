@@ -1,7 +1,7 @@
 ---
-description: Uma WS-Transfer usada para responder a uma solicitação de metadados.
+description: Uma mensagem WS-Transfer usada para responder a uma solicitação de metadados.
 ms.assetid: aff05317-35db-4ea6-9692-1e09e4682fe7
-title: Mensagem GetResponse (metadados Exchange)
+title: mensagem GetResponse (metadados Exchange)
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 11bc76038a32d28f4ed773a937654e6d159ab75460e8cb6d6d5af60f614fa7e0
@@ -11,18 +11,18 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118552397"
 ---
-# <a name="getresponse-metadata-exchange-message"></a>Mensagem GetResponse (metadados Exchange)
+# <a name="getresponse-metadata-exchange-message"></a>mensagem GetResponse (metadados Exchange)
 
-Uma mensagem GetResponse é uma WS-Transfer usada para responder a uma solicitação de metadados. Para obter mais informações sobre mensagens GetResponse, consulte a seção 3.1 da [Especificação de Transferência WS.](https://specs.xmlsoap.org/ws/2004/09/transfer/WS-Transfer.pdf)
+Uma mensagem GetResponse é uma mensagem WS-Transfer usada para responder a uma solicitação de metadados. Para obter mais informações sobre mensagens GetResponse, consulte a seção 3,1 da [especificação WS-Transfer](https://specs.xmlsoap.org/ws/2004/09/transfer/WS-Transfer.pdf).
 
-Qualquer aplicativo DPWS que envia [mensagens Get](get--metadata-exchange--http-request-and-message.md) receberá mensagens GetResponse.
+Qualquer aplicativo DPWS que envie mensagens [Get](get--metadata-exchange--http-request-and-message.md) receberá mensagens GetResponse.
 
 > [!Note]  
-> Este tópico mostra uma mensagem DPWS de exemplo gerada por clientes e hosts WSDAPI. O WSDAPI analisará e aceitará outras mensagens compatíveis com DPWS que não estão em conformidade com este exemplo. Não use este exemplo para verificar a interoperabilidade do DPWS; use a [WSDBIT (Ferramenta de Interoperabilidade Básica) do WSDAPI.](https://msdn.microsoft.com/library/cc264250.aspx)
+> Este tópico mostra uma mensagem DPWS de exemplo gerada por clientes e hosts WSDAPI. O WSDAPI analisará e aceitará outras mensagens em conformidade com o DPWS que não estão em conformidade com este exemplo. Não use este exemplo para verificar a interoperabilidade do DPWS; em vez disso, use a [ferramenta de interoperabilidade básica do WSDAPI (WSDBIT)](https://msdn.microsoft.com/library/cc264250.aspx) .
 
  
 
-A mensagem SOAP a seguir mostra uma mensagem GetResponse de exemplo.
+A mensagem SOAP a seguir mostra um exemplo de mensagem GetResponse.
 
 ``` syntax
 <?xml version="1.0" encoding="utf-8" ?>
@@ -129,18 +129,18 @@ Uma mensagem GetResponse tem os seguintes pontos de foco.
 </thead>
 <tbody>
 <tr class="odd">
-<td>Getresponse</td>
+<td>GetResponse</td>
 <td><pre class="syntax" data-space="preserve"><code><wsa:Action>
     https://schemas.xmlsoap.org/ws/2004/09/transfer/GetResponse
 </wsa:Action></code></pre></td>
-<td>A ação GETResponse SOAP identifica a mensagem como uma mensagem GetResponse.</td>
+<td>A ação SOAP GetResponse identifica a mensagem como uma mensagem GetResponse.</td>
 </tr>
 <tr class="even">
 <td>RelatesTo</td>
 <td><pre class="syntax" data-space="preserve"><code><wsa:RelatesTo>
     urn:uuid:027bec45-c37c-466c-936c-68f648abe2bb
 </wsa:RelatesTo></code></pre></td>
-<td>O identificador da mensagem à qual o dispositivo está respondendo. Esse header corresponde à MessageID na <a href="get--metadata-exchange--http-request-and-message.md">mensagem Obter.</a></td>
+<td>O identificador da mensagem à qual o dispositivo está respondendo. Esse cabeçalho corresponde a MessageID na mensagem <a href="get--metadata-exchange--http-request-and-message.md">Get</a> .</td>
 </tr>
 <tr class="odd">
 <td>Endereço</td>
@@ -160,7 +160,7 @@ Uma mensagem GetResponse tem os seguintes pontos de foco.
 
 <dl> <dt>
 
-[Mensagens de descoberta e Exchange metadados](discovery-and-metadata-exchange-message-patterns.md)
+[descoberta e metadados Exchange mensagens](discovery-and-metadata-exchange-message-patterns.md)
 </dt> <dt>
 
 [Obter Mensagem](get--metadata-exchange--http-request-and-message.md)

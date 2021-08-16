@@ -1,5 +1,5 @@
 ---
-description: O ICE53 verifica se há entradas na tabela do Registro que escrevem informações privadas do instalador ou valores de política no registro do sistema.
+description: O ICE53 verifica as entradas na tabela de registro que gravam as informações do instalador particular ou os valores de política no registro do sistema.
 ms.assetid: f5afca1f-bd36-4f95-a62a-f6b2e37238a6
 title: ICE53
 ms.topic: article
@@ -13,11 +13,11 @@ ms.locfileid: "118635127"
 ---
 # <a name="ice53"></a>ICE53
 
-O ICE53 verifica se há entradas na tabela do Registro que escrevem informações privadas do instalador ou valores de política no registro do sistema.
+O ICE53 verifica as entradas na tabela de registro que gravam as informações do instalador particular ou os valores de política no registro do sistema.
 
-## <a name="result"></a>Result
+## <a name="result"></a>Resultado
 
-ICE53 postará um aviso se a tabela do Registro especificar a escrita de informações internas ou de política no Registro.
+ICE53 posta um aviso se a tabela do Registro especifica a gravação de informações internas ou de política no registro.
 
 ## <a name="example"></a>Exemplo
 
@@ -27,19 +27,19 @@ ICE53 posta o seguinte aviso para o exemplo mostrado.
 Registry Key 'Registry1' writes Installer internal or policy information.
 ```
 
-[Tabela do Registro](registry-table.md) (parcial)
+[Tabela do registro](registry-table.md) (parcial)
 
 
 
 | Registro             | Root         | Chave                                                                                                   |
 |----------------------|--------------|-------------------------------------------------------------------------------------------------------|
-| Registry1<br/> | 1<br/> | **Software** \\ **Políticas** \\ **Microsoft** \\ **Windows** \\ **Instalador** \\ **DisableRollback**<br/> |
+| Registry1<br/> | 1<br/> | **Software** \\ **Políticas** \\ do **Microsoft** \\ **Windows** \\ **Instalador** \\ do **DisableRollback**<br/> |
 
 
 
  
 
-A linha da tabela do Registro 'Registry1' grava um valor de política do sistema no Registro que afeta a instalação de todos os pacotes. Dependendo do pacote, pode ser possível desabilitar a reação somente para este pacote definindo a propriedade [**DISABLEROLLBACK**](-disablerollback.md) na [tabela Property](property-table.md). Consulte [Instalação de reação](rollback-installation.md).
+A linha da tabela do registro ' Registry1 ' grava um valor de política do sistema no registro que afeta a instalação de todos os pacotes. Dependendo do pacote, talvez seja possível desabilitar a reversão para esse pacote sozinho definindo a propriedade [**DISABLEROLLBACK**](-disablerollback.md) na [tabela de propriedades](property-table.md). Consulte [Rollback Installation](rollback-installation.md).
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

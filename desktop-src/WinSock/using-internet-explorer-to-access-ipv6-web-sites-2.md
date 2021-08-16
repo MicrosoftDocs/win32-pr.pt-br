@@ -15,7 +15,7 @@ ms.locfileid: "118559267"
 
 O Microsoft Internet Explorer dá suporte ao uso de IPv6 para conectar e acessar sites habilitados para IPv6 (servidores Web e servidores FTP, por exemplo) quando as seguintes circunstâncias são atendidas:
 
--   O computador host em Internet Explorer deve ter o IPv6 instalado e habilitado.
+-   O computador host que executa Internet Explorer deve ter o IPv6 instalado e habilitado.
     -   Ao se conectar a um host que está fora da sub-rede local, a interface que fornece a conectividade deve ter um endereço IPv6 rouco atribuído.
     -   Ao se conectar ao endereço de loopback IPv6 (::1) ou a um destino de link local, um endereço IPv6 stável não é necessário.
 -   Se a URL solicitada contiver um nome (www.contoso.com, por exemplo), a consulta DNS (Sistema de Nomes de Domínio) para esse nome deverá retornar um ou mais endereços IPv6.

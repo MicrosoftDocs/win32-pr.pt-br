@@ -9,12 +9,12 @@ keywords:
 - RAS do RAS, consulte acesso remoto
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 95a4b1c06656b51395c8c4fc666e59d6115bd839
-ms.sourcegitcommit: 3e70ae762629e244028b437420ed50b5850db4e3
+ms.openlocfilehash: 7e300061c328751f288634faf2f36ab0391ba41d7079e4f42c842d31b3e29397
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "104084372"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117788281"
 ---
 # <a name="remote-access"></a>Acesso remoto
 
@@ -28,13 +28,13 @@ O serviço de acesso remoto é aplicável em qualquer ambiente computacional que
 
 ## <a name="developer-audience"></a>Público de desenvolvedores
 
-A API de RAS foi projetada para uso por programadores C/C++. Os programadores do Microsoft Visual Basic também podem encontrar a API útil. Os programadores devem estar familiarizados com os conceitos de rede.
+A API de RAS foi projetada para uso por programadores C/C++. os programadores do Microsoft Visual Basic também podem encontrar a API útil. Os programadores devem estar familiarizados com os conceitos de rede.
 
 ## <a name="run-time-requirements"></a>Requisitos de tempo de execução
 
 Algumas das funções na API RAS têm suporte apenas em servidores de rede e outras funções têm suporte apenas em clientes de rede. Para obter informações mais específicas sobre quais sistemas operacionais dão suporte a uma função específica, consulte as seções de requisitos na documentação do.
 
-A [funcionalidade avançada de Ras](function-comparison-windows-2000-versus-rras-redistributable.md) do RRAS está disponível para o Windows NT Server 4,0 Instalando o [RRAS redistribuível](https://www.microsoft.com/ntserver/nts/downloads/winfeatures/rras/rrasdown.asp). Toda a funcionalidade do RRAS é incorporada ao Windows 2000 Server, ao Windows Server 2003 e ao Windows Server 2008. Os aplicativos RRAS não podem ser executados no Windows NT Workstation 4,0 ou em sistemas operacionais cliente, como o Windows 95. Para obter informações mais específicas sobre quais sistemas operacionais dão suporte a uma função específica, consulte as seções de requisitos na documentação do.
+a [funcionalidade avançada de RAS](function-comparison-windows-2000-versus-rras-redistributable.md) do RRAS está disponível para o Windows NT Server 4,0 instalando o [RRAS redistribuível](https://www.microsoft.com/ntserver/nts/downloads/winfeatures/rras/rrasdown.asp). toda a funcionalidade do RRAS é incorporada ao servidor Windows 2000, Windows server 2003 e Windows server 2008. os aplicativos RRAS não podem ser executados no Windows NT estação de trabalho 4,0 ou em sistemas operacionais cliente, como Windows 95. Para obter informações mais específicas sobre quais sistemas operacionais dão suporte a uma função específica, consulte as seções de requisitos na documentação do.
 
 ## <a name="in-this-section"></a>Nesta seção
 
@@ -53,7 +53,7 @@ A [funcionalidade avançada de Ras](function-comparison-windows-2000-versus-rras
 
 <dl> <dt>
 
-[Roteamento](routing-start-page.md)
+[Roteiros](routing-start-page.md)
 </dt> <dt>
 
 [Protocolos de roteamento](routing-protocols-start-page.md)

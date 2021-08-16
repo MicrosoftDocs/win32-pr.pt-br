@@ -65,7 +65,7 @@ Use esta mensagem somente para um controle de endereço de rede. Para criar uma 
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
 | Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Shellapi. h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Shellapi. h</dt> </dl> |
 
 
 

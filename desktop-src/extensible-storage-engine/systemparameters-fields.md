@@ -7,19 +7,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.syst
 ms:contentKeyID: 55104029
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: e25d03cd1ee1e76c08d08e81e7573a2c732dbd69
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: dc2174a31a937ddc99530865848ca2d7bcdc6d1b8f25d1cc631ab374cd4b8068
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104561991"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119107140"
 ---
 # <a name="systemparameters-fields"></a>Campos SystemParameters
 
 Incluir membros protegidos  
 Incluir membros herdados  
 
-O tipo [SystemParameters](./systemparameters-class.md) expõe os membros a seguir.
+O [tipo SystemParameters](./systemparameters-class.md) expõe os membros a seguir.
 
 ## <a name="fields"></a>Campos
 
@@ -40,7 +40,7 @@ O tipo [SystemParameters](./systemparameters-class.md) expõe os membros a segui
 <tr class="even">
 <td><img src="../images/hh596466.pubfield(exchg.10).gif" title="Campo público" alt="Public field" /><img src="../images/dn292146.static(exchg.10).gif" title="Membro estático" alt="Static member" /></td>
 <td><a href="dn351146(v=exchg.10).md">ColumnMost</a></td>
-<td>Tamanho máximo para colunas que não são JET_coltyp. LongBinary ou JET_coltyp. LONGTEXT.</td>
+<td>Tamanho máximo para colunas que não são JET_coltyp. LongBinary ou JET_coltyp. Longtext.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/hh596466.pubfield(exchg.10).gif" title="Campo público" alt="Public field" /><img src="../images/dn292146.static(exchg.10).gif" title="Membro estático" alt="Static member" /></td>
@@ -60,12 +60,12 @@ O tipo [SystemParameters](./systemparameters-class.md) expõe os membros a segui
 <tr class="even">
 <td><img src="../images/hh596466.pubfield(exchg.10).gif" title="Campo público" alt="Public field" /><img src="../images/dn292146.static(exchg.10).gif" title="Membro estático" alt="Static member" /></td>
 <td><a href="dn351212(v=exchg.10).md">ColumnsVarMost</a></td>
-<td>Número máximo de colunas de comprimento variável permitido em uma tabela.</td>
+<td>Número máximo de colunas de comprimento variável permitidas em uma tabela.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/hh596466.pubfield(exchg.10).gif" title="Campo público" alt="Public field" /><img src="../images/dn292146.static(exchg.10).gif" title="Membro estático" alt="Static member" /></td>
 <td><a href="dn351141(v=exchg.10).md">LocaleNameMaxLength</a></td>
-<td>O comprimento máximo de um nome de localidade (LOCALE_NAME_MAX_LENGTH de Winnt. h).</td>
+<td>O comprimento máximo de um nome de localidade (LOCALE_NAME_MAX_LENGTH de winnt.h).</td>
 </tr>
 <tr class="even">
 <td><img src="../images/hh596466.pubfield(exchg.10).gif" title="Campo público" alt="Public field" /><img src="../images/dn292146.static(exchg.10).gif" title="Membro estático" alt="Static member" /></td>
@@ -89,4 +89,4 @@ Parte superior
 
 [Classe SystemParameters](./systemparameters-class.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

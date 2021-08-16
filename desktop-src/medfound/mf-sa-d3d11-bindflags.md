@@ -1,19 +1,19 @@
 ---
-description: Especifica os sinalizadores de associação a serem usados ao alocar superfícies do Microsoft Direct3D 11 para exemplos de mídia.
+description: Especifica os sinalizadores de associação a usar ao alocar superfícies do Microsoft Direct3D 11 para exemplos de mídia.
 ms.assetid: C3B475B1-9A44-47EA-BCE7-D3D0FB56DDAC
-title: Atributo MF_SA_D3D11_BINDFLAGS (Mftransform. h)
+title: MF_SA_D3D11_BINDFLAGS atributo (Mftransform.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6bb5ae4161a6782a3ea7a69b471044e43c5ee7a4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 65f0fbc607ccdc8f878e25109fcadfdf8956007d99909d9a21c0e668951106d9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104296816"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119102459"
 ---
-# <a name="mf_sa_d3d11_bindflags-attribute"></a>\_Atributo MF SA \_ D3D11 \_ BINDFLAGS
+# <a name="mf_sa_d3d11_bindflags-attribute"></a>Atributo \_ BINDFLAGS do MF SA \_ D3D11 \_
 
-Especifica os sinalizadores de associação a serem usados ao alocar superfícies do Microsoft Direct3D 11 para exemplos de mídia.
+Especifica os sinalizadores de associação a usar ao alocar superfícies do Microsoft Direct3D 11 para exemplos de mídia.
 
 ## <a name="data-type"></a>Tipo de dados
 
@@ -21,27 +21,27 @@ Especifica os sinalizadores de associação a serem usados ao alocar superfície
 
 ## <a name="remarks"></a>Comentários
 
-O valor desse atributo é um **ou** bit a bit de sinalizadores de [**\_ \_ sinalizador de ligação D3D11**](/windows/win32/api/d3d11/ne-d3d11-d3d11_bind_flag) .
+O valor desse atributo é um OR bit a **bit** de [**sinalizadores \_ BIND \_ D3D11.**](/windows/win32/api/d3d11/ne-d3d11-d3d11_bind_flag)
 
-### <a name="microsoft-media-foundation-transforms"></a>Transformações de Microsoft Media Foundation
+### <a name="microsoft-media-foundation-transforms"></a>Microsoft Media Foundation transformação
 
-Nesse contexto, o atributo se aplica somente quando a Microsoft Media Foundation transformação (MFT) retorna **true** para o atributo [MF \_ SA \_ D3D11 \_ Aware](mf-sa-d3d11-aware.md) .
+Nesse contexto, o atributo se aplica somente quando a transformação Microsoft Media Foundation (MFT) retorna **TRUE** para o atributo [MF \_ SA \_ D3D11 \_ AWARE.](mf-sa-d3d11-aware.md)
 
-Se uma MFT der suporte ao Direct3D 11, esse atributo fornecerá uma dica para o MFT ao alocar superfícies do Microsoft Direct3D para saída. Defina o atributo da seguinte maneira:
+Se um MFT dá suporte ao Direct3D 11, esse atributo fornece uma dica para o MFT ao alocar superfícies do Microsoft Direct3D para saída. De definir o atributo da seguinte forma:
 
-1.  Chame [**IMFTransform:: GetOutputStreamAttributes**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-getoutputstreamattributes) para obter o repositório de atributos de MFT.
-2.  Chamar [**IMFAttributes:: setuint32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32).
+1.  Chame [**IMFTransform::GetOutputStreamAttributes**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-getoutputstreamattributes) para obter o armazenamento de atributos MFT.
+2.  Chame [**IMFAttributes::SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32).
 
-O pipeline de Media Foundation define o atributo antes de o streaming começar. O MFT deve tentar honrar a configuração ao alocar superfícies. Se isso não for possível, o MFT poderá ignorar o atributo, em vez de falhar a alocação.
+O Media Foundation pipeline define o atributo antes do início do streaming. O MFT deve tentar manter a configuração quando aloca superfícies. Se isso não for possível, o MFT poderá ignorar o atributo, em vez de falhar na alocação.
 
-Além disso, se o MFT exigir superfícies de Direct3D para entrada, ele poderá expor esse atributo como uma dica de como as superfícies de entrada devem ser alocadas. Consulte o atributo da seguinte maneira:
+Além disso, se o MFT exigir superfícies Direct3D para entrada, ele poderá expor esse atributo como uma dica de como as superfícies de entrada devem ser alocadas. Consulte o atributo da seguinte forma:
 
-1.  Chame [**IMFTransform:: GetInputStreamAttributes**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-getinputstreamattributes) para obter os atributos de fluxo de entrada.
-2.  Chamar [**IMFAttributes:: GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32).
+1.  Chame [**IMFTransform::GetInputStreamAttributes**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-getinputstreamattributes) para obter os atributos de fluxo de entrada.
+2.  Chame [**IMFAttributes::GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32).
 
-### <a name="sample-allocator"></a>Exemplo de alocador
+### <a name="sample-allocator"></a>Alocador de exemplo
 
-Esse atributo pode ser definido no exemplo de alocador de vídeo, no método [**IMFVideoSampleAllocatorEx:: InitializeSampleAllocatorEx**](/windows/desktop/api/mfidl/nf-mfidl-imfvideosampleallocatorex-initializesampleallocatorex) .
+Esse atributo pode ser definido no alocador de exemplo de vídeo, no método [**IMFVideoSampleAllocatorEx::InitializeSampleAllocatorEx.**](/windows/desktop/api/mfidl/nf-mfidl-imfvideosampleallocatorex-initializesampleallocatorex)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -49,9 +49,9 @@ Esse atributo pode ser definido no exemplo de alocador de vídeo, no método [**
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Aplicativos de \[ aplicativos da área de trabalho do Windows 8 \| UWP\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | Aplicativos do Windows Server 2012 \[ Desktop aplicativos \| UWP\]<br/>                              |
-| parâmetro<br/>                   | <dl> <dt>Mftransform. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[Windows 8 aplicativos UWP de aplicativos da área \| de trabalho\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | \[Windows Server 2012 aplicativos UWP de aplicativos da área \| de trabalho\]<br/>                              |
+| Cabeçalho<br/>                   | <dl> <dt>Mftransform.h</dt> </dl> |
 
 
 
@@ -59,7 +59,7 @@ Esse atributo pode ser definido no exemplo de alocador de vídeo, no método [**
 
 <dl> <dt>
 
-[Lista alfabética de atributos de Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
 </dt> </dl>
 
  

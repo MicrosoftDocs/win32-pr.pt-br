@@ -1,7 +1,7 @@
 ---
-description: A \_ estrutura PROVIDOR info \_ 2 acrescenta um provedor de impressão à lista de pedidos do provedor de impressão.
+description: A estrutura PROVIDOR \_ INFO \_ 2 anexa um provedor de impressão à lista de pedido do provedor de impressão.
 ms.assetid: 840523ca-22d0-460f-81fb-e0a9e2d4f5d6
-title: Estrutura de PROVIDOR_INFO_2 (winspool. h)
+title: PROVIDOR_INFO_2 (Winspool.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,16 +15,16 @@ api_type:
 - HeaderDef
 api_location:
 - Winspool.h
-ms.openlocfilehash: d40f5843bf68254b92e3d814d9f308ba4f058889
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 969af36fe0a64bb586fbf62912ca27c6ebba9ba0a627701e4bc57f6202bfe1b5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105810412"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120091676"
 ---
-# <a name="providor_info_2-structure"></a>Estrutura de informações de PROVIDOR \_ \_ 2
+# <a name="providor_info_2-structure"></a>Estrutura PROVIDOR \_ INFO \_ 2
 
-A estrutura **PROVIDOR \_ info \_ 2** acrescenta um provedor de impressão à lista de pedidos do provedor de impressão.
+A **estrutura PROVIDOR \_ INFO \_ 2** anexa um provedor de impressão à lista de pedido do provedor de impressão.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -50,7 +50,7 @@ Ponteiro para uma cadeia de caracteres terminada em nulo que especifica o nome d
 
 ## <a name="remarks"></a>Comentários
 
-Essa estrutura é usada ao chamar [**AddPrintProvidor**](addprintprovidor.md), nível 2, para adicionar o provedor de impressão especificado ao final da lista de pedidos do provedor de impressão. O provedor será usado imediatamente para roteamento se a chamada for realizada com sucesso.
+Essa estrutura é usada ao chamar [**AddPrintProvidor**](addprintprovidor.md), nível 2, para adicionar o provedor de impressão especificado ao final da lista de pedido do provedor de impressão. O provedor será usado imediatamente para roteamento se a chamada for bem-sucedida.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -60,8 +60,8 @@ Essa estrutura é usada ao chamar [**AddPrintProvidor**](addprintprovidor.md), n
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                                                |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                      |
-| Cabeçalho<br/>                   | <dl> <dt>Winspool. h (incluir Windows. h)</dt> </dl> |
-| Nomes Unicode e ANSI<br/>   | **\_ PROVIDOR \_ info \_ 2W** (Unicode) e **\_ PROVIDOR \_ info \_ 2a** (ANSI)<br/>                         |
+| Cabeçalho<br/>                   | <dl> <dt>Winspool.h (incluir Windows.h)</dt> </dl> |
+| Nomes Unicode e ANSI<br/>   | **\_ PROVIDOR \_ INFO \_ 2W** (Unicode) e **\_ PROVIDOR \_ INFO \_ 2A** (ANSI)<br/>                         |
 
 
 
@@ -72,7 +72,7 @@ Essa estrutura é usada ao chamar [**AddPrintProvidor**](addprintprovidor.md), n
 [Impressão](printdocs-printing.md)
 </dt> <dt>
 
-[Estruturas de API do spooler de impressão](printing-and-print-spooler-structures.md)
+[Imprimir estruturas de API do Spooler](printing-and-print-spooler-structures.md)
 </dt> <dt>
 
 [**AddPrintProvidor**](addprintprovidor.md)

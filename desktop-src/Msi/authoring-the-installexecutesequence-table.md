@@ -13,7 +13,7 @@ ms.locfileid: "118639167"
 ---
 # <a name="authoring-the-installexecutesequence-table"></a>Como fazer a tabela InstallExecuteSequence
 
-As ações personalizadas ProcessAccounts e UninstallAccounts geram as ações personalizadas adiadas que criam, removem ou rebackam contas de usuário. As ações personalizadas ProcessAccounts e UninstallAccounts devem ser inseridas na [tabela InstallExecuteSequence](installexecutesequence-table.md) a ser executada. Adicione as entradas a seguir à [tabela InstallExecuteSequence](installexecutesequence-table.md). Como essas ações personalizadas devem fazer parte da geração de script, ambas as ações personalizadas devem ser sequenciadas após a [ação InstallInitialize](installinitialize-action.md).
+As ações personalizadas ProcessAccounts e UninstallAccounts geram as ações personalizadas adiadas que criam, removem ou rebackam contas de usuário. As ações personalizadas ProcessAccounts e UninstallAccounts devem ser inseridas na [tabela InstallExecuteSequence](installexecutesequence-table.md) a ser executada. Adicione as seguintes entradas à [tabela InstallExecuteSequence](installexecutesequence-table.md). Como essas ações personalizadas devem fazer parte da geração de script, ambas as ações personalizadas devem ser sequenciadas após a [ação InstallInitialize](installinitialize-action.md).
 
 A condição em ProcessAccounts garante o seguinte. Consulte [Sintaxe de instrução condicional](conditional-statement-syntax.md).
 

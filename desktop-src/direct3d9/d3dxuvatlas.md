@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9mesh.h
-ms.openlocfilehash: 64cc116199b688fc9dcd8d6fbf331d85da508948
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 1edcf2b1cbe2363f805bee1f5eb67f5558702ea9e163a865e1a6c51d6f5ed6ff
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105768322"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118523832"
 ---
 # <a name="d3dxuvatlas-enumeration"></a>Enumeração D3DXUVATLAS
 
@@ -48,7 +48,7 @@ As malhas com mais de 25K faces terão o método de distância rápida geodasic 
 
 </dd> <dt>
 
-<span id="D3DXUVATLAS_GEODESIC_FAST"></span><span id="d3dxuvatlas_geodesic_fast"></span>**\_Poliedt D3DXUVATLAS \_ rápido**
+<span id="D3DXUVATLAS_GEODESIC_FAST"></span><span id="d3dxuvatlas_geodesic_fast"></span>**\_Fast poliedt D3DXUVATLAS \_**
 </dt> <dd>
 
 Usa aproximações para melhorar a velocidade do gráfico ao custo de ampliação ou mais gráficos de saída para a malha.

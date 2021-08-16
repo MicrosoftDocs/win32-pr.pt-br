@@ -1,9 +1,9 @@
 ---
 title: Atributo ms_union
-description: A palavra-chave \ ms union\ é usada para controlar o alinhamento \_ de NDR de uniões não truncadas.
+description: A palavra-chave \ MS \_ Union \ é usada para controlar o alinhamento de NDR de uniões não encapsuladas.
 ms.assetid: 20ac2985-4552-4224-b03b-07378a2c0cdf
 keywords:
-- ms_union atributo MIDL
+- ms_union do atributo MIDL
 topic_type:
 - apiref
 api_name:
@@ -19,9 +19,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118642794"
 ---
-# <a name="ms_union-attribute"></a>Atributo de \_ união ms
+# <a name="ms_union-attribute"></a>\_atributo Union do MS
 
-A \[ **palavra-chave ms \_ union** \] é usada para controlar o alinhamento de NDR de uniões não truncadas.
+A palavra-chave \[ **MS \_ Union** \] é usada para controlar o alinhamento de NDR de uniões não encapsuladas.
 
 ``` syntax
 [
@@ -40,7 +40,7 @@ interface interface-name
 
 <dl> <dt>
 
-*interface-name* 
+*nome da interface* 
 </dt> <dd>
 
 Especifica o nome da interface.
@@ -61,7 +61,7 @@ Especifica o nome do procedimento.
 
 </dd> <dt>
 
-*param-list* 
+*parâmetro-lista* 
 </dt> <dd>
 
 Especifica a lista de parâmetros do procedimento, que pode estar vazia.
@@ -70,9 +70,9 @@ Especifica a lista de parâmetros do procedimento, que pode estar vazia.
 
 ## <a name="remarks"></a>Comentários
 
-Nunca use essa opção ou atributo com novas interfaces. Esse é apenas um recurso de compatibilidade com compatibilidade com backward. O compilador MIDL nesta versão do Microsoft RPC espelha o comportamento do compilador IDL de DCE do OSF para uniões não truncadas. No entanto, como versões anteriores do compilador MIDL não fizeram isso, a opção de união [**/ms \_**](-ms-union.md) fornece compatibilidade com interfaces criadas em versões anteriores do compilador MIDL.
+Nunca use esta opção ou atributo com novas interfaces. Este é apenas um recurso de compatibilidade com versões anteriores. O compilador MIDL nesta versão do Microsoft RPC espelha o comportamento do compilador uso DCE IDL para uniões não encapsuladas. No entanto, como as versões anteriores do compilador MIDL não faziam isso, a opção [**\_ Union/MS**](-ms-union.md) fornece compatibilidade com interfaces criadas em versões anteriores do compilador MIDL.
 
-O **recurso de \_ união ms** pode ser usado como um atributo de interface IDL, um atributo de tipo IDL ou como uma opção de linha de comando ( [**/ms \_ union**](-ms-union.md)).
+O **recurso \_ Union da MS** pode ser usado como um atributo de interface IDL, um atributo de tipo IDL ou uma opção de linha de comando ( [**/MS \_ Union**](-ms-union.md)).
 
 ## <a name="examples"></a>Exemplos
 
@@ -84,10 +84,10 @@ O **recurso de \_ união ms** pode ser usado como um atributo de interface IDL, 
 
 <dl> <dt>
 
-[Arquivo IDL (definição de interface)](interface-definition-idl-file.md)
+[Arquivo de definição de interface (IDL)](interface-definition-idl-file.md)
 </dt> <dt>
 
-[**/ms \_ union**](-ms-union.md)
+[**/MS \_ Union**](-ms-union.md)
 </dt> </dl>
 
  

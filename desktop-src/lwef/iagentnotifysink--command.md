@@ -4,16 +4,16 @@ description: Comando IAgentNotifySink
 ms.assetid: d54fb2e8-27d6-47a4-8a1e-5419a94ea26d
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9690d2914db9d284cd4ba4b826905d3169b83f2c
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 9d9c20de96c1bb14cf003ad7beff98e716e272ad3de39532d9b455e279d97af3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "103917240"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119105194"
 ---
 # <a name="iagentnotifysinkcommand"></a>IAgentNotifySink:: comando
 
-\[O Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
+\[o Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
 
 ``` syntax
 HRESULT Command(
@@ -51,6 +51,6 @@ O servidor notifica o cliente de entrada-ativo quando o usuário escolhe um coma
 [**IAgentUserInput**](iagentuserinput.md)
 
 
- 
+ 
 
- 
+ 

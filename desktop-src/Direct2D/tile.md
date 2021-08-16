@@ -65,7 +65,7 @@ m_d2dContext->EndDraw();
 
 Esse efeito gera um bitmap de tamanho logicamente infinito.
 
-Você pode colocar uma imagem em um determinado tamanho sem nenhum efeito adicional definindo o tamanho ao chamar [**ID2D1DeviceContext::D rawImage**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-drawimage(id2d1image_constd2d1_point_2f_constd2d1_rect_f_d2d1_interpolation_mode_d2d1_composite_mode)).
+Você pode colocar uma imagem em um lado e criar um determinado tamanho sem nenhum efeito adicional definindo o tamanho ao chamar [**ID2D1DeviceContext::D rawImage**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-drawimage(id2d1image_constd2d1_point_2f_constd2d1_rect_f_d2d1_interpolation_mode_d2d1_composite_mode)).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -73,9 +73,9 @@ Você pode colocar uma imagem em um determinado tamanho sem nenhum efeito adicio
 
 | Requisito | Valor |
 |--------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte | Windows 8 e Atualização de Plataforma para aplicativos Windows 7 área de trabalho \[ \| Windows Store\] |
-| Servidor mínimo com suporte | Windows 8 e Atualização de Plataforma para aplicativos Windows 7 área de trabalho \[ \| Windows Store\] |
-| parâmetro                   | d2d1effects.h                                                                      |
+| Cliente mínimo com suporte | Windows 8 e Atualização de plataforma para Windows 7 aplicativos da área de trabalho \[ \| Windows Store\] |
+| Servidor mínimo com suporte | Windows 8 e Atualização de plataforma para Windows 7 aplicativos da área de trabalho \[ \| Windows Store\] |
+| Cabeçalho                   | d2d1effects.h                                                                      |
 | Biblioteca                  | d2d1.lib, dxguid.lib                                                               |
 
 

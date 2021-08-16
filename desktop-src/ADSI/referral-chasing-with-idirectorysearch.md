@@ -19,7 +19,7 @@ ms.locfileid: "118690685"
 
 Uma indicação é o mecanismo que um servidor de diretório usa para direcionar um cliente para outro servidor quando ele não contém dados suficientes sobre o objeto solicitado por uma consulta.
 
-Em uma pesquisa de um nível ou subárvore, as indicações são retornadas apenas para contêineres de configuração, esquema ou domínio subordinados conhecidos; ou seja, domínios filho que são descendentes diretos. Para obter mais informações, consulte [Escopo da pesquisa.](/windows/desktop/AD/search-scope)
+Em uma pesquisa de um nível ou subárvore, as indicações são retornadas apenas para contêineres de configuração, esquema ou domínio subordinados conhecidos e imediatamente subordinados; ou seja, domínios filho que são descendentes diretos. Para obter mais informações, consulte [Escopo da pesquisa.](/windows/desktop/AD/search-scope)
 
 Em um diretório, nem todos os dados estão disponíveis em um único servidor, em vez disso, eles são distribuídos em vários servidores diferentes pela rede. Se os servidores compartilharem os dados que outros servidores podem fornecer, eles poderão fornecer indicações a um cliente quando uma consulta solicitada não puder ser resolvida no servidor de origem. Por exemplo, quando um cliente solicita ao Servidor A para consultar um U (objeto de usuário), A pode sugerir que o cliente continue a pesquisa no Servidor B se U não residir em A, mas for identificado como B. O cliente tem a opção de buscar a indicação ou não. As indicações liberam o cliente de ter conhecimento anterior da funcionalidade de cada servidor, mas o cliente deve especificar o tipo de indicações que um servidor deve executar.
 

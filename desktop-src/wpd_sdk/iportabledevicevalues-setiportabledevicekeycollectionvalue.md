@@ -14,12 +14,12 @@ api_type:
 api_location:
 - PortableDeviceGUIDs.lib
 - PortableDeviceGUIDs.dll
-ms.openlocfilehash: face82230b9dd3bf6cbde18aaee8dd857e17d0a3
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 100dd614978260824fa14cefc22e1bf7fdd5d11e474e4f58124685fc8d8f2eac
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105786251"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118963565"
 ---
 # <a name="iportabledevicevaluessetiportabledevicekeycollectionvalue-method"></a>Método IPortableDeviceValues:: SetIPortableDeviceKeyCollectionValue
 
@@ -55,7 +55,7 @@ Ponteiro para uma interface **IPortableDeviceKeyCollection** que especifica o no
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
 

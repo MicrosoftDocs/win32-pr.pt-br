@@ -1,9 +1,9 @@
 ---
-title: SBM_GETPOS mensagem (Winuser.h)
-description: A mensagem GETPOS do SBM é enviada para recuperar a posição atual da caixa de \_ rolagem de um controle de barra de rolagem.
+title: Mensagem de SBM_GETPOS (WinUser. h)
+description: A \_ mensagem SBM GETPOS é enviada para recuperar a posição atual da caixa de rolagem de um controle de barra de rolagem.
 ms.assetid: 00344d93-f205-4cda-aa25-6dd065f41b6e
 keywords:
-- SBM_GETPOS controles de Windows mensagem
+- controles de Windows de mensagem de SBM_GETPOS
 topic_type:
 - apiref
 api_name:
@@ -21,11 +21,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118408889"
 ---
-# <a name="sbm_getpos-message"></a>Mensagem GETPOS do SBM \_
+# <a name="sbm_getpos-message"></a>\_Mensagem SBM GETPOS
 
-A **mensagem \_ GETPOS do SBM** é enviada para recuperar a posição atual da caixa de rolagem de um controle de barra de rolagem. A posição atual é um valor relativo que depende do intervalo de rolagem atual. Por exemplo, se o intervalo de rolagem for de 0 a 100 e a caixa de rolagem estiver no meio da barra, a posição atual será 50.
+A mensagem **SBM \_ GETPOS** é enviada para recuperar a posição atual da caixa de rolagem de um controle de barra de rolagem. A posição atual é um valor relativo que depende do intervalo de rolagem atual. Por exemplo, se o intervalo de rolagem for de 0 a 100 e a caixa de rolagem estiver no meio da barra, a posição atual será 50.
 
-Os aplicativos não devem enviar essa mensagem diretamente. Em vez disso, eles devem usar a [**função GetScrollPos.**](/windows/desktop/api/Winuser/nf-winuser-getscrollpos) Uma janela recebe essa mensagem por meio de [*sua função WindowProc.*](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85)) Os aplicativos que implementam um controle de barra de rolagem personalizado devem responder a essas mensagens para que a **função GetScrollPos** funcione corretamente.
+Os aplicativos não devem enviar essa mensagem diretamente. Em vez disso, eles devem usar a função [**GetScrollPos**](/windows/desktop/api/Winuser/nf-winuser-getscrollpos) . Uma janela recebe essa mensagem por meio de sua função [*WindowProc*](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85)) . Os aplicativos que implementam um controle de barra de rolagem personalizado devem responder a essas mensagens para que a função **GetScrollPos** funcione corretamente.
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -55,9 +55,9 @@ O valor de retorno é a posição atual da caixa de rolagem na barra de rolagem.
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                                           |
-| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                                     |
-| parâmetro<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                                           |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                                     |
+| Cabeçalho<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
 
 
 
@@ -68,13 +68,13 @@ O valor de retorno é a posição atual da caixa de rolagem na barra de rolagem.
 **Referência**
 </dt> <dt>
 
-[**SBM \_ GETRANGE**](sbm-getrange.md)
+[**GetRange SBM \_**](sbm-getrange.md)
 </dt> <dt>
 
-[**SETPOS do SBM \_**](sbm-setpos.md)
+[**SBM \_ SETPOS**](sbm-setpos.md)
 </dt> <dt>
 
-[**SBM \_ SETRANGE**](sbm-setrange.md)
+[**\_SETRANGE SBM**](sbm-setrange.md)
 </dt> <dt>
 
 [**SBM \_ SETRANGEREDRAW**](sbm-setrangeredraw.md)
