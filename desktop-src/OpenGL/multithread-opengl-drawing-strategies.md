@@ -7,12 +7,12 @@ keywords:
 - multithread OpenGL Drawing OpenGL
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3bccb08d48bd8ccb62584f15911a1eb65080c4a6
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 05d928a481e4334f97cad2f7009f008c899ad8378f3fd15cf9e117e6b9599393
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104292065"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118937251"
 ---
 # <a name="multithread-opengl-drawing-strategies"></a>Estratégias de desenho multithread OpenGL
 
@@ -22,9 +22,9 @@ Os sistemas SMP (multiprocessamento simétrico) podem se beneficiar muito do uso
 
 Um thread pode ter apenas um contexto de renderização ativo atual. Ao usar vários threads e vários contextos de renderização, você deve ter cuidado para sincronizar seu uso. Por exemplo, use um thread somente para chamar [**SwapBuffers**](/windows/desktop/api/wingdi/nf-wingdi-swapbuffers) depois que todos os threads terminarem de desenhar.
 
- 
+ 
 
- 
+ 
 
 
 

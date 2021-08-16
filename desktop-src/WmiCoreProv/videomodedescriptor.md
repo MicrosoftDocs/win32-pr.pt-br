@@ -48,7 +48,7 @@ ms.locfileid: "118558401"
 ---
 # <a name="videomodedescriptor-class"></a>Classe VideoModeDescriptor
 
-A classe WMI **VideoModeDescriptorVideo** contém elementos do descritor de modo para a matriz **MonitorSourceModes** na classe [**WmiMonitorListedSupportedSourceModes**](wmimonitorlistedsupportedsourcemodes.md) . Esses elementos incluem recursos de monitor, como taxa de atualização, características de pixel ou tamanho da imagem. A classe **VideoModeDescriptorVideo** contém informações que são um superconjunto dos dados disponíveis de blocos de tempo estabelecidos, padrão e detalhados.
+A classe WMI **VideoModeDescriptorVideo** contém elementos de descritor de modo para a matriz **MonitorSourceModes** na [**classe WmiMonitorListedSupportedSourceModes.**](wmimonitorlistedsupportedsourcemodes.md) Esses elementos incluem recursos de monitor, como taxa de atualização, características de pixel ou tamanho da imagem. A **classe VideoModeDescriptorVideo** contém informações que são um superconjunto dos dados disponíveis de blocos de tempo estabelecidos, padrão e detalhados.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -86,13 +86,13 @@ class VideoModeDescriptor : WmiMonitorSupportedVideoModes
 
 ## <a name="members"></a>Membros
 
-A classe **VideoModeDescriptor** tem estes tipos de membros:
+A **classe VideoModeDescriptor** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **VideoModeDescriptor** tem essas propriedades.
+A **classe VideoModeDescriptor** tem essas propriedades.
 
 <dl> <dt>
 
@@ -105,7 +105,7 @@ Tipo de dados: **uint8**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Tipo de polaridade composta. Essa é a polaridade de pulsos de sincronização horizontal fora da sincronização vertical.
+Tipo de polaridade composta. Essa é a polaridade dos pulsos de sincronização horizontal fora da sincronização vertical.
 
 
 
@@ -124,33 +124,33 @@ Tipo de polaridade composta. Essa é a polaridade de pulsos de sincronização h
 **HorizontalActivePixels**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Número de pixels ativos horizontalmente.
+Número de pixels horizontalmente ativos.
 
 </dd> <dt>
 
 **HorizontalBlankingPixels**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Número de pixels horizontalmente em branco
+Número de pixels em branco horizontalmente
 
 </dd> <dt>
 
 **HorizontalBorder**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -163,13 +163,13 @@ Borda horizontal.
 **HorizontalImageSize**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Tamanho da imagem horizontal em milímetros (mm).
+Tamanho horizontal da imagem em milímetros (mm).
 
 </dd> <dt>
 
@@ -201,20 +201,20 @@ Tipo de polaridade horizontal.
 **HorizontalRefreshRateDenominator**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Denominador da taxa de atualização horizontal.
+Denominador de taxa de atualização horizontal.
 
 </dd> <dt>
 
 **HorizontalRefreshRateNumerator**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -227,7 +227,7 @@ Numerador de taxa de atualização horizontal em Hertz (Hz).
 **HorizontalSyncOffset**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -240,20 +240,20 @@ Deslocamento de sincronização horizontal.
 **HorizontalSyncPulseWidth**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Largura de pulso de sincronização horizontal.
+Largura do pulso de sincronização horizontal.
 
 </dd> <dt>
 
-**Isentrelaçado**
+**IsInterlaced**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -272,7 +272,7 @@ Tipo de dados: **uint8**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Indica que tipo de serration é necessário, se apropriado.
+Indica que tipo de serração é necessário, se apropriado.
 
 
 
@@ -280,7 +280,7 @@ Indica que tipo de serration é necessário, se apropriado.
 |------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|
 | <dl> <dt>0 (0x0)</dt> </dl> | O controlador deve fornecer sincronização horizontal durante a sincronização vertical.<br/>                                 |
 | <dl> <dt>1 (0x1)</dt> </dl> | O controlador não deve fornecer sincronização horizontal durante a sincronização vertical.<br/>                             |
-| <dl> <dt>2 (0x2)</dt> </dl> | Não aplicável. O tipo de sincronização de sinal deve ser bipolar, analógico composto ou digital composto.<br/> |
+| <dl> <dt>2 (0x2)</dt> </dl> | Não aplicável. O tipo de sincronização de sinal deve ser composite, composição análoga ou composição digital.<br/> |
 
 
 
@@ -525,14 +525,14 @@ Tipo padrão de vídeo.
 
 | Valor                                                                                | Significado                                                                                                        |
 |--------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>0 (0x0)</dt> </dl>   | Outros<br/>                                                                                               |
+| <dl> <dt>0 (0x0)</dt> </dl>   | Outro<br/>                                                                                               |
 | <dl> <dt>1 (0x1)</dt> </dl>   | VESA DMT. Na especificação de tempos do monitor de exibição da VESA (Video Electronics Standard Association).<br/> |
 | <dl> <dt>2 (0x2)</dt> </dl>   | VESA GTF. Do padrão de fórmula de tempo generalizado VESA.<br/>                                            |
-| <dl> <dt>3 (0x3)</dt> </dl>   | VESA CVT/ Do padrão de tempos de vídeo coordenados do VESA.<br/>                                             |
+| <dl> <dt>3 (0x3)</dt> </dl>   | Padrão de temporizações de vídeo coordenado VESA CVT/da VESA.<br/>                                             |
 | <dl> <dt>4 (0x4)</dt> </dl>   | IBM<br/>                                                                                                 |
-| <dl> <dt>5 (0x5)</dt> </dl>   | Apple<br/>                                                                                               |
+| <dl> <dt>5 (0x5)</dt> </dl>   | LARANJA<br/>                                                                                               |
 | <dl> <dt>6 (0x6)</dt> </dl>   | NTSC M<br/>                                                                                              |
-| <dl> <dt>7 (0x7)</dt> </dl>   | NTSC J<br/>                                                                                              |
+| <dl> <dt>7 (0x7)</dt> </dl>   | J NTSC<br/>                                                                                              |
 | <dl> <dt>8 (0x8)</dt> </dl>   | NTSC 433<br/>                                                                                            |
 | <dl> <dt>9 (0x9)</dt> </dl>   | PAL B<br/>                                                                                               |
 | <dl> <dt>10 (0xA)</dt> </dl>  | PAL B1<br/>                                                                                              |
@@ -541,7 +541,7 @@ Tipo padrão de vídeo.
 | <dl> <dt>13 (0xD)</dt> </dl>  | PAL I<br/>                                                                                               |
 | <dl> <dt>14 (0xE)</dt> </dl>  | PAL D<br/>                                                                                               |
 | <dl> <dt>15 (0xF)</dt> </dl>  | PAL N<br/>                                                                                               |
-| <dl> <dt>16 (0x10)</dt> </dl> | PAL NC<br/>                                                                                              |
+| <dl> <dt>16 (0x10)</dt> </dl> | NC DE PAL<br/>                                                                                              |
 | <dl> <dt>17 (0x11)</dt> </dl> | SECAM B<br/>                                                                                             |
 | <dl> <dt>18 (0x12)</dt> </dl> | SECAM D<br/>                                                                                             |
 | <dl> <dt>19 (0x13)</dt> </dl> | SECAM G<br/>                                                                                             |
@@ -568,8 +568,8 @@ Tipo padrão de vídeo.
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                               |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                         |
-| Namespace<br/>                | WMI \\ raiz<br/>                                                                   |
-| MOF<br/>                      | <dl> <dt>WmiCore.mof</dt> </dl> |
+| Namespace<br/>                | \\WMI raiz<br/>                                                                   |
+| MOF<br/>                      | <dl> <dt>WmiCore. mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>WmiProv.dll</dt> </dl> |
 
 

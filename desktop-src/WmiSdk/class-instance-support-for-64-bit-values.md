@@ -22,11 +22,11 @@ ms.locfileid: "118556823"
 Você pode usar um valor de chave de 64 bits como parte de um caminho, com as seguintes restrições:
 
 -   Desde que você não exceda o intervalo de 32 bits, você pode atribuir e recuperar valores da chave como faria com uma propriedade de 32 bits.
--   Depois de exceder o valor inteiro de 0x7FFFFFFF (para tipos assinados), 0x80000000 (para tipos não assinados) ou 32 bits, você deve usar aspas.
--   O único caminho válido para um valor de 64 bits está localizado nas propriedades **\_ \_ RelPath** ou **\_ \_ Path** da instância. Como tal, o WMI não oferece suporte à notação hexadecimal para o valor equivalente.
+-   Depois de exceder o valor inteiro de 0x7FFFFFFF (para tipos assinados), 0x80000000 (para tipos sem sinal) ou 32 bits, você deverá usar aspas.
+-   O único caminho válido para um valor de 64 bits está localizado nas **\_ \_ propriedades RELPATH** ou **\_ \_ PATH** da instância. Assim, o WMI não dá suporte à notação hexadecimal para o valor equivalente.
 -   Se o WMI registra a chave de instância como um número negativo, você deve usar o número original para recuperar a instância.
 
-A semântica de consulta não é afetada e se comporta conforme o esperado. Esse comportamento afeta apenas as operações caminho do objeto, [**GetObject**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-getobject)e [**GetObjectAsync**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-getobjectasync) .
+A semântica de consulta não é afetada e se comporta conforme o esperado. Esse comportamento afeta apenas as operações de caminho do objeto, [**GetObject**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-getobject)e [**GetObjectAsync.**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-getobjectasync)
 
 O exemplo a seguir mostra que as instâncias de classe podem ter valores de chave de 64 bits.
 

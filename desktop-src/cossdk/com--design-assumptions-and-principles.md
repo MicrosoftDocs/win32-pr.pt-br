@@ -1,7 +1,7 @@
 ---
 description: O modelo de programação distribuída da Microsoft consiste em várias tecnologias, incluindo MSMQ, IIS, DCOM e COM+. Todos esses serviços foram projetados para uso por aplicativos distribuídos.
 ms.assetid: c72bbd47-0219-40ba-a7d5-2a6b725972d0
-title: Princípios e pressuposições de design de COM+
+title: Suposições e princípios de design COM+
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 28b87c5ae631cd5517b215efae3a09968649cd49ea94fe33b33d9b826082e911
@@ -11,47 +11,47 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118549391"
 ---
-# <a name="com-design-assumptions-and-principles"></a>Princípios e pressuposições de design de COM+
+# <a name="com-design-assumptions-and-principles"></a>Suposições e princípios de design COM+
 
 O modelo de programação distribuída da Microsoft consiste em várias tecnologias, incluindo MSMQ, IIS, DCOM e COM+. Todos esses serviços foram projetados para uso por aplicativos distribuídos.
 
-O COM+ foi desenvolvido para facilitar a criação de aplicativos distribuídos. A arquitetura geral é baseada em um conjunto de pressuposições e princípios.
+O COM+ foi desenvolvido para facilitar a criação de aplicativos distribuídos. A arquitetura geral baseia-se em um conjunto de suposições e princípios.
 
 ## <a name="assumptions"></a>Suposições
 
-As suposições são as seguintes:
+As suposições são as seguinte:
 
--   **O aplicativo COM+ dará suporte a vários usuários em vários servidores.** Em outras palavras, você está criando um aplicativo distribuído, e esses vários usuários estarão em computadores host diferentes de onde o código é executado. Os usuários acessarão o código pela Internet ou por meio de uma rede privada. a interface do usuário será apresentada por meio do navegador ou talvez um aplicativo personalizado, como um aplicativo baseado em formulário escrito com o Microsoft Visual Basic ou o MFC. Essa interface do usuário será localizada no computador cliente.
--   **O aplicativo COM+ pode se tornar escalonável e pode fornecer maior disponibilidade e confiabilidade ao implantar o aplicativo em vários computadores servidores.** ao fazer isso, você pode balancear a carga de trabalho do aplicativo e fornecer tolerância a falhas usando o clustering de Windows.
--   **Se as coisas forem erradas, o estado dos dados persistentes, armazenados em um banco de dado, de um aplicativo COM+ será mantido se você estiver usando transações.** O estado do aplicativo deve sobreviver a acidentes que podem ocorrer, como erros de aplicativo, falhas do sistema ou falhas de rede.
+-   **O aplicativo COM+ dará suporte a vários usuários em vários servidores.** Em outras palavras, você está criando um aplicativo distribuído e esses vários usuários estarão em computadores host diferentes dos quais o código é executado. Os usuários acessarão o código pela Internet ou por meio de uma rede privada. A interface do usuário será apresentada por meio do navegador ou talvez de um aplicativo personalizado, como um aplicativo baseado em formulário escrito com Microsoft Visual Basic ou MFC. Essa interface do usuário estará localizada no computador cliente.
+-   **O aplicativo COM+ pode ser escalonável e pode fornecer maior disponibilidade e confiabilidade implantando o aplicativo em vários computadores de servidor.** Ao fazer isso, você pode equilibrar a carga de trabalho do aplicativo e fornecer tolerância a falhas usando Windows Clustering.
+-   **Se as coisas derem errado, o estado dos dados persistentes, armazenados em um banco de dados, de um aplicativo COM+ será mantido se você estiver usando transações.** O estado do aplicativo deve sobreviver a acidentes que podem ocorrer, como erros de aplicativo, falhas do sistema ou falhas de rede.
 
 ## <a name="principles"></a>Princípios
 
-Além dessas três suposições, os princípios a seguir pervade o modelo de programação COM+:
+Além dessas três suposições, os seguintes princípios permeiam o modelo de programação COM+:
 
--   **A lógica do aplicativo residirá em computadores do servidor, não em computadores cliente.** Há três motivos principais para fazer isso:
-    -   O computador cliente pode não ter a capacidade de processamento ou os recursos necessários para executar a lógica do aplicativo. Além disso, manter a lógica do aplicativo no servidor simplifica a implantação.
-    -   Os computadores do servidor geralmente estão mais próximos dos dados, e esses dados geralmente estão em um banco de dado. Como seu aplicativo está acessando bancos de dados, você deseja ser muito sensível ao custo das conexões de banco de dados. Ao colocar a maior parte da lógica nos computadores servidor, você pode compartilhar conexões de banco de dados e obter uma melhoria significativa no desempenho. Há outros recursos nos computadores servidor que também podem ser compartilhados, novamente com um benefício de desempenho.
-    -   Ter a lógica de aplicativo residir em computadores de servidor mantém o controle do contexto de segurança com o aplicativo. Você terá mais controle sobre a segurança se mantiver essa segurança em componentes de aplicativos em execução em computadores servidores em vez de em computadores cliente.
--   **As transações são o núcleo.** Por design, as transações, portanto, percarnem o modelo de programação COM+ de que é muito importante para você entender. Embora você possa fazer uso de muitos dos serviços do COM+ sem usar transações, se optar por não usá-los, não poderá aproveitar ao máximo os serviços COM+ disponíveis para você. Alguns benefícios importantes do uso de transações incluem o seguinte:
-    -   As transações são uma solução razoável para o problema do gerenciamento de simultaneidade. Além disso, as transações ajudam a proteger contra falhas e têm um bom modelo de recuperação de erro. Além disso, as transações são uma ótima maneira de gerenciar tarefas em vários sistemas.
-    -   Você pode criar um aplicativo COM+ baseado em transações para trabalhar com um Gerenciador de recursos e um banco de dados, o que ajuda a proteger a maioria das informações de estado. Mantendo o estado dentro de um banco de dados ou algum outro armazenamento gerenciado por um Gerenciador de recursos, você não precisa manter muito o estado dentro dos objetos reais que seu aplicativo cria. Embora essa seja uma partida de um modelo puro orientado a objeto, ela funciona bem para a criação de aplicativos distribuídos com recuperação de erros.
--   **A funcionalidade do aplicativo é criada como objetos COM, encapsulando os protocolos usados para se comunicar com outros sistemas ou tecnologias.** Como você provavelmente está criando componentes que vão unir várias tecnologias ou sistemas herdados, planeje o uso de uma variedade de protocolos de comunicação. Use HTTP para comunicação de cliente/servidor ou comunicação entre aplicativos pela Internet. Use o DCOM para comunicação entre aplicativos ou componente para componente no servidor.
+-   **A lógica do aplicativo residirá em computadores servidores, não em computadores cliente.** Há três motivos principais para fazer isso:
+    -   O computador cliente pode não ter o poder de processamento ou os recursos necessários para executar a lógica do aplicativo. Além disso, manter a lógica do aplicativo no servidor simplifica a implantação.
+    -   Os computadores de servidor geralmente estão mais próximos dos dados e esses dados geralmente estão em um banco de dados. Como seu aplicativo está acessando bancos de dados, você deseja ser muito sensível ao custo das conexões de banco de dados. Ao colocar a maior parte da lógica nos computadores servidores, você pode compartilhar conexões de banco de dados e obter uma melhoria significativa no desempenho. Há outros recursos nos computadores servidores que também podem ser compartilhados, novamente com um benefício de desempenho.
+    -   Fazer com que a lógica do aplicativo resida em computadores servidores mantém o controle do contexto de segurança com o aplicativo. Você terá mais controle sobre a segurança se mantiver essa segurança em componentes de aplicativo em execução em computadores servidores em vez de em computadores cliente.
+-   **As transações são o núcleo.** Por design, as transações tão desafoque o modelo de programação COM+ que é muito importante que você as entenda. Embora você possa usar muitos dos serviços do COM+ sem usar transações, se optar por não usá-los, não poderá aproveitar ao máximo os serviços COM+ disponíveis para você. Alguns benefícios importantes do uso de transações incluem o seguinte:
+    -   As transações são uma solução razoável para o problema de gerenciamento de competência. Além disso, as transações ajudam a proteger contra falhas e têm um bom modelo de recuperação de erros. Além disso, as transações se transformam em uma ótima maneira de gerenciar tarefas em vários sistemas.
+    -   Você pode criar um aplicativo COM+ baseado em transação para trabalhar com um gerenciador de recursos e um banco de dados, o que ajuda a proteger a maioria das informações de estado. Ao manter o estado dentro de um banco de dados ou algum outro armazenamento gerenciado por um gerenciador de recursos, você não precisa manter muito estado dentro dos objetos reais que seu aplicativo cria. Embora essa seja uma partida de um modelo orientado a objeto puro, ele funciona bem para criar aplicativos distribuídos com recuperação de erro.
+-   **A funcionalidade do aplicativo é criada como objetos COM, envolvendo os protocolos usados para se comunicar com outros sistemas ou tecnologias.** Como você provavelmente está criando componentes que unirão várias tecnologias ou sistemas herdados, planeje usar uma variedade de protocolos de comunicação. Use HTTP para comunicação de cliente/servidor ou comunicação de aplicativo para aplicativo pela Internet. Use o DCOM para comunicação de aplicativo para aplicativo ou componente para componente no servidor.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[Diretrizes básicas para criar aplicativos COM+](basic-guidelines-for-designing-com--applications.md)
+[Diretrizes básicas para a criação de aplicativos COM+](basic-guidelines-for-designing-com--applications.md)
 </dt> <dt>
 
-[Criando o aplicativo COM+ usando UML](designing-the-com--application-using-uml.md)
+[Projetando o aplicativo COM+ usando UML](designing-the-com--application-using-uml.md)
 </dt> <dt>
 
-[Dicas de Design geral para usar o COM+](general-design-tips-for-using-com-.md)
+[Design geral Dicas para usar COM+](general-design-tips-for-using-com-.md)
 </dt> <dt>
 
-[Otimizando interações com a camada de lógica de negócios do COM+](optimizing-interactions-with-the-com--business-logic-tier.md)
+[Otimizando interações com a camada lógica de negócios COM+](optimizing-interactions-with-the-com--business-logic-tier.md)
 </dt> <dt>
 
 [Outras ferramentas da Microsoft para a criação de aplicativos distribuídos](other-microsoft-tools-for-building-distributed-applications.md)

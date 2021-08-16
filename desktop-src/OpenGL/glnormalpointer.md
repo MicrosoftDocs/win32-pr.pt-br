@@ -1,9 +1,9 @@
 ---
-title: função glNormalPointer (GL. h)
-description: A função glNormalPointer define uma matriz de Normals.
+title: Função glNormalPointer (Gl.h)
+description: A função glNormalPointer define uma matriz de normais.
 ms.assetid: 6ffb0522-87cc-4be1-a5b1-f6fd30e04b43
 keywords:
-- função glNormalPointer OpenGL
+- Função glNormalPointer OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2c2f3abbfbd989351af647557ec64f8ee3172dc5
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 4f188a65a0a2bff0438188ae7521615de45341147b138a849d2fd375ed8a959b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103919188"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118938405"
 ---
-# <a name="glnormalpointer-function"></a>função glNormalPointer
+# <a name="glnormalpointer-function"></a>Função glNormalPointer
 
-A função **glNormalPointer** define uma matriz de Normals.
+A **função glNormalPointer** define uma matriz de normais.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -45,14 +45,14 @@ void WINAPI glNormalPointer(
 *tipo* 
 </dt> <dd>
 
-O tipo de dados de cada coordenada na matriz usando as seguintes constantes simbólicas: GL \_ byte, GL \_ short, GL \_ int, GL \_ float e GL \_ Double.
+O tipo de dados de cada coordenada na matriz usando as seguintes constantes simbólicas: \_ GL BYTE, GL \_ SHORT, GL \_ INT, GL \_ FLOAT e GL \_ DOUBLE.
 
 </dd> <dt>
 
-*Stride* 
+*Passo* 
 </dt> <dd>
 
-O deslocamento de byte entre os Normals consecutivos. Quando *Stride* é zero, os normais são empacotados rigidamente na matriz.
+O deslocamento de byte entre normais consecutivas. Quando *stride* é zero, os normais são firmemente empacotados na matriz.
 
 </dd> <dt>
 
@@ -69,40 +69,40 @@ Essa função não retorna um valor.
 
 ## <a name="error-codes"></a>Códigos do Erro
 
-Os códigos de erro a seguir podem ser recuperados pela função [**glGetError**](glgeterror.md) .
+Os códigos de erro a seguir podem ser recuperados pela [**função glGetError.**](glgeterror.md)
 
 
 
-| Nome                                                                                                  | Significado                                      |
+| Name                                                                                                  | Significado                                      |
 |-------------------------------------------------------------------------------------------------------|----------------------------------------------|
-| <dl> <dt>**GL \_ inválido de \_ enumeração**</dt> </dl>      | o *tipo* não era um valor aceito.<br/> |
-| <dl> <dt>**GL \_ operação inválida \_**</dt> </dl> | *Stride* ou *Count* era negativo.<br/> |
+| <dl> <dt>**GL \_ INVALID \_ ENUM**</dt> </dl>      | *type* não era um valor aceito.<br/> |
+| <dl> <dt>**OPERAÇÃO \_ GL \_ INVÁLIDA**</dt> </dl> | *stride* ou *count* era negativo.<br/> |
 
 
 
 ## <a name="remarks"></a>Comentários
 
-A função **glNormalPointer** especifica o local e os dados de uma matriz de Normals a serem usados durante a renderização. O parâmetro de *tipo* especifica o tipo de dados de cada coordenada normal. O parâmetro *Stride* determina o deslocamento de bytes de um normal para o próximo, habilitando a embalagem de vértices e atributos em uma única matriz ou armazenamento em matrizes separadas. Em algumas implementações, armazenar os vértices e os atributos em uma única matriz pode ser mais eficiente do que usar matrizes separadas; consulte [**glInterleavedArrays**](glinterleavedarrays.md) para obter detalhes.
+A **função glNormalPointer** especifica o local e os dados de uma matriz de normais a ser usada ao renderizar. O *parâmetro* type especifica o tipo de dados de cada coordenada normal. O *parâmetro stride* determina o deslocamento de byte de um normal para o próximo, permitindo o empacotamento de vértices e atributos em uma única matriz ou armazenamento em matrizes separadas. Em algumas implementações, armazenar os vértices e atributos em uma única matriz pode ser mais eficiente do que usar matrizes separadas; consulte [**glInterleavedArrays para**](glinterleavedarrays.md) obter detalhes.
 
-Uma matriz normal é habilitada quando você especifica a \_ constante de matriz do GL normal \_ com [**glEnableClientState**](glenableclientstate.md). Quando habilitado, [**glDrawArrays**](gldrawarrays.md), [**glDrawElements**](gldrawelements.md) e [**glArrayElement**](glarrayelement.md) usam a matriz normal. Por padrão, a matriz normal está desabilitada.
+Uma matriz normal é habilitada quando você especifica a constante GL \_ NORMAL \_ ARRAY com [**glEnableClientState.**](glenableclientstate.md) Quando habilitado, [**glDrawArrays,**](gldrawarrays.md) [**glDrawElements**](gldrawelements.md) e [**glArrayElement**](glarrayelement.md) usam a matriz normal. Por padrão, a matriz normal está desabilitada.
 
-Você não pode incluir **glNormalPointer** em listas de exibição.
+Não é possível incluir **glNormalPointer em** listas de exibição.
 
-Quando você especifica uma matriz normal usando **glNormalPointer**, os valores de todos os parâmetros de matriz normais da função são salvos em um estado do lado do cliente. Como os parâmetros de matriz normais são salvos em um estado do lado do cliente, seus valores não são salvos nem restaurados por [**glPushAttrib**](glpushattrib.md) e [**glPopAttrib**](glpopattrib.md).
+Quando você especifica uma matriz normal usando **glNormalPointer**, os valores de todos os parâmetros de matriz normal da função são salvos em um estado do lado do cliente. Como os parâmetros de matriz normal são salvos em um estado do lado do cliente, seus valores não são salvos nem restaurados por [**glPushAttrib**](glpushattrib.md) e [**glPopAttrib.**](glpopattrib.md)
 
-Embora nenhum erro seja gerado quando você chama **glNormalPointer** nos pares [**glBegin**](glbegin.md) e [**glEnd**](glend.md) , os resultados são indefinidos.
+Embora nenhum erro seja gerado quando você chama **glNormalPointer** em pares [**glBegin**](glbegin.md) e [**glEnd,**](glend.md) os resultados são indefinido.
 
-As funções a seguir estão associadas a **glNormalPointer**:
+As seguintes funções estão associadas a **glNormalPointer**:
 
-[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) com o argumento GL a \_ \_ matriz normal \_ Stride
+[**glGet com**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) o argumento GL \_ NORMAL ARRAY \_ \_ STRIDE
 
- \_ \_ contagem de matrizes glGet com Argument GL normal \_
+**glGet** com o argumento GL \_ NORMAL \_ ARRAY \_ COUNT
 
-**glGet** com o argumento \_ GL \_ normal \_ tipo de matriz
+**glGet** com o argumento GL \_ NORMAL \_ ARRAY \_ TYPE
 
- \_ \_ ponteiro de matriz normal glGetPointerv com Argument GL \_
+**glGetPointerv com** o argumento GL \_ NORMAL ARRAY \_ \_ POINTER
 
-[**glIsEnabled**](glisenabled.md) com o Argument GL \_ normal \_ array
+[**glIsEnabled com**](glisenabled.md) o argumento GL \_ NORMAL \_ ARRAY
 
 ## <a name="requirements"></a>Requisitos
 
@@ -112,8 +112,8 @@ As funções a seguir estão associadas a **glNormalPointer**:
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                              |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                    |
-| Cabeçalho<br/>                   | <dl> <dt>GL. h</dt> </dl>         |
-| Biblioteca<br/>                  | <dl> <dt>Opengl32. lib</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Gl.h</dt> </dl>         |
+| Biblioteca<br/>                  | <dl> <dt>Opengl32.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Opengl32.dll</dt> </dl> |
 
 

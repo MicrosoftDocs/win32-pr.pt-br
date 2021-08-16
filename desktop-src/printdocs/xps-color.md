@@ -4,12 +4,12 @@ ms.assetid: 710f3ef1-bbc3-416d-9faf-aa4a716007c2
 title: XPS_COLOR (Xpsobjectmodel. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 34c148c2a5452154bfe33b0c74d695fe78f0cdad
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f771bcbb516352b2ef689060c11003808d434be8059d16af78fe8db646c97000
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105785308"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118971145"
 ---
 # <a name="xps_color"></a>cor do XPS \_
 
@@ -51,9 +51,9 @@ O formato da estrutura depende do valor de *ColorType*.
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 7, Windows Vista com SP2 e atualização de plataforma para aplicativos UWP do Windows Vista \[ Desktop apps \|\]<br/>                          |
-| Servidor mínimo com suporte<br/> | Windows Server 2008 R2, Windows Server 2008 com SP2 e atualização de plataforma para aplicativos de aplicativos de desktop do Windows Server 2008 \[ \| UWP\]<br/> |
-| parâmetro<br/>                   | <dl> <dt>Xpsobjectmodel. h</dt> </dl>                                              |
+| Cliente mínimo com suporte<br/> | Windows 7, Windows vista com SP2 e atualização de plataforma para aplicativos UWP do Windows Vista \[ desktop apps \|\]<br/>                          |
+| Servidor mínimo com suporte<br/> | Windows server 2008 R2, Windows Server 2008 com SP2 e atualização de plataforma para aplicativos do Windows Server 2008 \[ desktop aplicativos \| UWP\]<br/> |
+| Cabeçalho<br/>                   | <dl> <dt>Xpsobjectmodel. h</dt> </dl>                                              |
 | INSERI<br/>                      | <dl> <dt>XpsObjectModel. idl</dt> </dl>                                            |
 
 

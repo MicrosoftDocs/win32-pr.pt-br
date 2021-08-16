@@ -4,12 +4,12 @@ ms.assetid: 8a3bf625-7973-4905-a63c-e42e6682b7c2
 title: Definindo permissões em C++
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cc398d811f44b69dbde8d30f135fd4f30a552bbf
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 008c82e74bcd4b4fec714e43c8beb7d8c7e908baaf569ee260559f64ba5bbc10
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105751167"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118913769"
 ---
 # <a name="defining-permissions-in-c"></a>Definindo permissões em C++
 

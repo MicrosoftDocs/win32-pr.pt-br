@@ -17,16 +17,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7bcebb9f3822332269e1db09f3246c128e4ad1f2
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f3c5626e2e0dc679a4669bb5d8be8096b6ae0629aeed7c833f397b5f9bca45db
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103824574"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118429988"
 ---
 # <a name="dsrestoregetdatabaselocations-function"></a>Função DsRestoreGetDatabaseLocations
 
-\[Essa função está disponível para uso nos sistemas operacionais especificados na seção requisitos. Ele poderá ser alterado ou ficar indisponível em versões subsequentes. A partir do Windows Vista, use [serviço de cópias de sombra de volume (VSS)](../vss/volume-shadow-copy-service-overview.md) em vez disso.\]
+\[Essa função está disponível para uso nos sistemas operacionais especificados na seção requisitos. Ele poderá ser alterado ou ficar indisponível em versões subsequentes. a partir do Windows Vista, use [Serviço de Cópias de Sombra de Volume (VSS)](../vss/volume-shadow-copy-service-overview.md) em vez disso.\]
 
 A função **DsRestoreGetDatabaseLocations** Obtém os locais em que os arquivos de backup devem ser copiados durante uma operação de restauração.
 
@@ -105,7 +105,7 @@ Ponteiro para o valor **DWORD** que recebe o tamanho, em bytes, do buffer *pszDa
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retornará **S \_ OK** se a função for bem-sucedida, ou um código de erro Win32 ou RPC. A lista a seguir lista os possíveis códigos de erro.
 
@@ -144,7 +144,7 @@ A função **DsRestoreGetDatabaseLocations** pode ser usada para obter os diret�
 |-------------------------------------|-------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                              |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                                        |
-| parâmetro<br/>                   | <dl> <dt>Ntdsbcli. h</dt> </dl>                 |
+| Cabeçalho<br/>                   | <dl> <dt>Ntdsbcli. h</dt> </dl>                 |
 | Biblioteca<br/>                  | <dl> <dt>Ntdsbcli. lib</dt> </dl>               |
 | DLL<br/>                      | <dl> <dt>Ntdsbcli.dll</dt> </dl>               |
 | Nomes Unicode e ANSI<br/>   | **DsRestoreGetDatabaseLocationsW** (Unicode) e **DsRestoreGetDatabaseLocationsA** (ANSI)<br/> |
@@ -164,7 +164,7 @@ A função **DsRestoreGetDatabaseLocations** pode ser usada para obter os diret�
 [Funções de backup de diretório](directory-backup-functions.md)
 </dt> <dt>
 
-[Restaurando Active Directory](restoring-an-active-directory-server.md)
+[Restaurando o Active Directory](restoring-an-active-directory-server.md)
 </dt> </dl>
 
  

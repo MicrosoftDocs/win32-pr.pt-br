@@ -1,11 +1,11 @@
 ---
-title: Método downloadcollection. Item
-description: Observação Esta seção descreve a funcionalidade projetada para uso por lojas online. Não há suporte para o uso dessa funcionalidade fora do contexto de uma loja online. O método item recupera um objeto de download pendente.
+title: Método DownloadCollection.item
+description: Observação Esta seção descreve a funcionalidade projetada para uso por lojas online. Não há suporte para o uso dessa funcionalidade fora do contexto de uma loja online. O método de item recupera um objeto de download pendente.
 ms.assetid: a79db9db-e80c-48db-aee6-9bd8f77a7dff
 keywords:
-- método de item Windows Media Player
-- método de item Windows Media Player, classe Downloadcollection
-- Classe downloadcollection Windows Media Player, método de item
+- método item Windows Media Player
+- método item Windows Media Player , classe DownloadCollection
+- Classe DownloadCollection Windows Media Player método , item
 topic_type:
 - apiref
 api_name:
@@ -16,21 +16,21 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d57db60a776c71d9ff16eceb1584c79a125bbf46
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8a82a903236038c2f0372786137eec48ad5c5f502d7fd614eb8944f3f4684aea
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105810562"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118997035"
 ---
-# <a name="downloadcollectionitem-method"></a>Método downloadcollection. Item
+# <a name="downloadcollectionitem-method"></a>Método DownloadCollection.item
 
 > [!Note]  
 > Esta seção descreve a funcionalidade projetada para uso por lojas online. Não há suporte para o uso dessa funcionalidade fora do contexto de uma loja online.
 
  
 
-O método **Item** recupera um objeto de download pendente.
+O **método de item** recupera um objeto de download pendente.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -47,20 +47,20 @@ retVal = DownloadCollection.item(
 
 <dl> <dt>
 
-*ItemId* \[ no\]
+*itemId* \[ Em\]
 </dt> <dd>
 
-**Número** (**longo**) especificando o índice do **DownloadItem** a ser recuperado.
+**Number** (**long**) especificando o índice do **DownloadItem a** ser recuperado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Esse método retorna um objeto **DownloadItem** .
+Esse método retorna um **objeto DownloadItem.**
 
 ## <a name="remarks"></a>Comentários
 
-O valor de *ItemId* é baseado em zero.
+O *valor itemID* é baseado em zero.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -68,7 +68,7 @@ O valor de *ItemId* é baseado em zero.
 
 | Requisito | Valor |
 |--------------------|------------------------------------------------------------------------------------|
-| Versão<br/> | Windows Media Player 9 Series ou posterior<br/>                                  |
+| Versão<br/> | Windows Media Player série 9 ou posterior<br/>                                  |
 | DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
@@ -77,7 +77,7 @@ O valor de *ItemId* é baseado em zero.
 
 <dl> <dt>
 
-[**Objeto downloadcollection**](downloadcollection-object.md)
+[**Objeto DownloadCollection**](downloadcollection-object.md)
 </dt> <dt>
 
 [**Objeto DownloadItem**](downloaditem-object.md)

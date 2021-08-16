@@ -23,7 +23,7 @@ COM_RIGHTS_ACTIVATE_LOCAL 8
 COM_RIGHTS_ACTIVATE_REMOTE 16
 ```
 
-Para fornecer compatibilidade com compatibilidade com backward, Uma ACL pode existir no formato usado antes do Windows XP SP 2 e Windows Server 2003 SP 1, que usa apenas o direito de acesso COM RIGHTS EXECUTE ou pode existir no novo formato usado no Windows XP SP 2 e \_ no Windows Server 2003 SP 1, que usa COM RIGHTS EXECUTE junto com uma combinação de \_ COM RIGHTS EXECUTE \_ \_ \_ \_ \_ LOCAL, COM RIGHTS EXECUTE REMOTE, COM RIGHTS ACTIVATE LOCAL e \_ COM RIGHTS \_ ACTIVATE \_ \_ \_ \_ \_ \_ \_ REMOTE.
+Para fornecer compatibilidade com compatibilidade com backward, Uma ACL pode existir no formato usado antes do Windows XP SP 2 e do Windows Server 2003 SP 1, que usa apenas o direito de acesso COM RIGHTS EXECUTE ou pode existir no novo formato usado no Windows XP SP 2 e \_ no Windows Server 2003 SP 1, que usa COM RIGHTS EXECUTE junto com uma combinação de \_ COM RIGHTS EXECUTE \_ \_ \_ \_ \_ LOCAL, COM RIGHTS EXECUTE REMOTE, COM RIGHTS ACTIVATE LOCAL e \_ COM RIGHTS \_ ACTIVATE \_ \_ \_ \_ \_ \_ \_ REMOTE.
 
 > [!Note]  
 > COM RIGHTS EXECUTE sempre deve estar presente; a ausência desse \_ direito gera um \_ descritor de segurança inválido.
@@ -70,7 +70,7 @@ SACL:
     (null)
 ```
 
-Observe que a primeira ACE (entrada de controle de acesso) concede somente COM RIGHTS EXECUTE (0x1), enquanto a segunda ACE concede COM RIGHTS EXECUTE, COM RIGHTS EXECUTE LOCAL e COM RIGHTS ACTIVATE LOCAL (0xb) e o terceiro concede DIREITOS COM EXECUTE e \_ \_ COM RIGHTS ACTIVATE \_ \_ \_ \_ LOCAL \_ \_ \_ \_ \_ \_ \_ \_ \_ (0x9).
+Observe que a primeira ace (entrada de controle de acesso) concede somente COM RIGHTS EXECUTE (0x1), enquanto a segunda ACE concede COM RIGHTS EXECUTE, COM RIGHTS EXECUTE LOCAL e COM RIGHTS ACTIVATE LOCAL (0xb) e o terceiro concede DIREITOS COM EXECUTE e \_ \_ COM RIGHTS ACTIVATE \_ \_ \_ \_ LOCAL \_ \_ \_ \_ \_ \_ \_ \_ \_ (0x9).
 
 Para corrigir isso, a primeira ACE deve ser alterada para conceder DIREITOS COM EXECUTE em combinação com um dos outros quatro direitos de acesso, caso contrário, o segundo e o terceiro ACEs devem ser alterados para conceder apenas \_ \_ COM RIGHTS \_ \_ EXECUTE.
 

@@ -1,5 +1,5 @@
 ---
-title: Como arrastar um Tree-View item
+title: Como arrastar um item Tree-View dados
 description: Este tópico demonstra o código para lidar com arrastar e soltar itens de exibição de árvore.
 ms.assetid: 989BBC27-C025-4C54-9972-4725F04A5E95
 ms.topic: article
@@ -11,7 +11,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118413110"
 ---
-# <a name="how-to-drag-a-tree-view-item"></a>Como arrastar um Tree-View item
+# <a name="how-to-drag-a-tree-view-item"></a>Como arrastar um item Tree-View dados
 
 Este tópico demonstra o código para lidar com arrastar e soltar itens de exibição de árvore. O código de exemplo consiste em três funções. A primeira função inicia a operação de arrastar, a segunda função arrasta a imagem e a terceira função encerra a operação de arrastar.
 
@@ -189,7 +189,7 @@ void Main_OnLButtonUp(HWND hwndTV)
 [Usando Tree-View controles](using-treeview.md)
 </dt> <dt>
 
-[O exemplo de CustDTv ilustra o desenho personalizado em um Tree-View controle](https://support.microsoft.com/default.aspx?scid=kb;EN-US;q248496)
+[Exemplo de CustDTv ilustra o desenho personalizado em um Tree-View controle](https://support.microsoft.com/default.aspx?scid=kb;EN-US;q248496)
 </dt> </dl>
 
  

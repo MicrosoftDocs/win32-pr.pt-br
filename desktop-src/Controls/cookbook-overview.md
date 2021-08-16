@@ -31,7 +31,7 @@ Este tópico inclui as seções a seguir.
 
 Para permitir que seu aplicativo use estilos visuais, você deve usar ComCtl32.dll versão 6 ou posterior. Como a versão 6 não é redistribuível, ela está disponível somente quando seu aplicativo está em execução em uma versão do Windows que o contém. Windows vem com as versões 5 e 6. ComCtl32.dll versão 6 contém os controles de usuário e os controles comuns. Por padrão, os aplicativos usam os controles de usuário definidos User32.dll e os controles comuns definidos ComCtl32.dll versão 5. Para ver uma lista de versões de DLL e suas plataformas de distribuição, consulte [Versões de Controle Comum](common-control-versions.md).
 
-Se você quiser que seu aplicativo use estilos visuais, adicione um manifesto do aplicativo ou uma diretiva do compilador que indique que ComCtl32.dll versão 6 deve ser usada se ele estiver disponível.
+Se você quiser que seu aplicativo use estilos visuais, adicione um manifesto do aplicativo ou uma diretiva do compilador que indique que ComCtl32.dll versão 6 deve ser usada se estiver disponível.
 
 Um manifesto do aplicativo permite que um aplicativo especifique quais versões de um assembly ele requer. No Microsoft Win32, um assembly é um conjunto de DLLs e uma lista de objetos com controle de versão contidos nessas DLLs.
 
@@ -102,7 +102,7 @@ A seguir está um exemplo de um arquivo de manifesto.
 
 
 
-Se você estiver usando Microsoft Visual C++ 2005 ou posterior, poderá adicionar a seguinte diretiva do compilador ao código-fonte em vez de criar manualmente um manifesto. Para a capacidade de leitura, a diretiva é dividida em várias linhas aqui.
+Se você estiver usando o Microsoft Visual C++ 2005 ou posterior, poderá adicionar a seguinte diretiva do compilador ao código-fonte em vez de criar manualmente um manifesto. Para a capacidade de leitura, a diretiva é dividida em várias linhas aqui.
 
 
 ```C++
@@ -170,7 +170,7 @@ A seguir estão exemplos de aplicativos que não usam extensões de terceiros.
 
 Quando você criar seu aplicativo, o manifesto será adicionado como um recurso binário.
 
-## <a name="using-comctl32-version-6-in-control-panel-or-a-dll-that-is-run-by-rundll32exe"></a>Usando o ComCtl32 versão 6 no Painel de Controle ou uma DLL que é executado por RunDll32.exe
+## <a name="using-comctl32-version-6-in-control-panel-or-a-dll-that-is-run-by-rundll32exe"></a>Usando o ComCtl32 versão 6 Painel de Controle ou uma DLL que é executado por RunDll32.exe
 
 **Para criar um manifesto e permitir que seu aplicativo use estilos visuais.**
 
@@ -206,7 +206,7 @@ Quando você criar seu aplicativo, o manifesto será adicionado como um recurso 
 3.  Adicione o manifesto ao arquivo de recurso do aplicativo como ID de recurso 123.
 
 > [!Note]  
-> Ao autor de um Painel de Controle, coloque-o na categoria apropriada. Painel de Controle agora dá suporte à categorização de Painel de Controle aplicativos. Isso significa que Painel de Controle aplicativos podem ser atribuídos a identificadores e separados em áreas de tarefa, como Adicionar ou Remover Programas, Aparência e Temas ou Data, Hora, Idioma e Opções Regionais.
+> Quando você autor de um Painel de Controle, coloque-o na categoria apropriada. Painel de Controle agora dá suporte à categorização de Painel de Controle aplicativos. Isso significa que Painel de Controle aplicativos podem ser atribuídos a identificadores e separados em áreas de tarefa, como Adicionar ou Remover Programas, Aparência e Temas ou Data, Hora, Idioma e Opções Regionais.
 
  
 
@@ -308,7 +308,7 @@ Grande parte da arquitetura de estilo visual foi projetada para tornar mais simp
 
 -   Em versões do Windows anteriores Windows 8, os estilos visuais estão desligados quando o alto contraste está em. Para dar suporte a alto contraste, um aplicativo herdada que dá suporte a estilos visuais precisa fornecer um caminho de código separado para desenhar corretamente os elementos da interface do usuário em alto contraste. Em Windows 8, alto contraste faz parte dos estilos visuais; No entanto, um aplicativo Windows 8 (um que inclui o GUID do Windows 8 na seção de compatibilidade do manifesto do aplicativo) ainda precisa fornecer um caminho de código separado para renderizar corretamente em alto contraste no Windows 7 anteriormente.
 -   Se você usar os recursos na ComCtl32.dll versão 6, como o controle de exibição de tile ou link, deverá lidar com o caso em que esses controles não estão disponíveis no computador do usuário. ComCtl32.dll versão 6 não é redistribuível.
--   Teste seu aplicativo para verificar se você não está contando com os recursos do ComCtl32.dll versão 6 sem primeiro verificar a versão atual.
+-   Teste seu aplicativo para verificar se você não está contando com recursos do ComCtl32.dll versão 6 sem primeiro verificar a versão atual.
 -   Não vincule a UxTheme.lib.
 -   Escreva o código de tratamento de erros para instâncias quando os estilos visuais não funcionarem conforme o esperado.
 -   Instalar o manifesto do aplicativo em versões anteriores não afetará a renderização de controles.

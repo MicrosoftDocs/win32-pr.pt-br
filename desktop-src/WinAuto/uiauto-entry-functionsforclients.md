@@ -21,7 +21,7 @@ Esta seção descreve as funções de API usadas em aplicativos cliente Automaç
 
 | Função                                                                               | Descrição                                                                         |
 |----------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------|
-| [**UiaHasServerSideProvider**](/windows/desktop/api/UIAutomationCoreApi/nf-uiautomationcoreapi-uiahasserversideprovider)<br/> | Verificar se uma janela tem uma implementação Automação da Interface do Usuário provedor.<br/> |
+| [**UiaHasServerSideProvider**](/windows/desktop/api/UIAutomationCoreApi/nf-uiautomationcoreapi-uiahasserversideprovider)<br/> | Garante se uma janela tem uma implementação Automação da Interface do Usuário provedor.<br/> |
 
 
 

@@ -3,7 +3,7 @@ title: Elemento COPYRIGHT (msfeeds. h)
 description: O elemento de direitos AUTORais define uma cadeia de caracteres de texto especificando as informações de direitos autorais de um elemento ASX ou de entrada.
 ms.assetid: 264b92de-b10c-41b9-b219-727879079f15
 keywords:
-- Elemento de direitos AUTORais Windows Media Player
+- Windows Media Player de elemento de direitos AUTORais
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 83b757528cfb14a01854346854a342ee9faced65
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8e5a01e97364aa47182e38e3e3066895c771e2d5edb6c480e8108cb168e7f8cd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105810570"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118997456"
 ---
 # <a name="copyright-element"></a>Elemento de direitos AUTORais
 
@@ -75,7 +75,7 @@ Se o metarquivo for codificado usando UTF-8, os símbolos de direitos autorais e
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------|
 | Versão<br/> | Windows Media Player versão 7,0 ou posterior<br/>                                 |
-| parâmetro<br/>  | <dl> <dt>Msfeeds. h</dt> </dl> |
+| Cabeçalho<br/>  | <dl> <dt>Msfeeds. h</dt> </dl> |
 
 
 
@@ -86,10 +86,10 @@ Se o metarquivo for codificado usando UTF-8, os símbolos de direitos autorais e
 [**Adicionando caracteres de direitos autorais a metaarquivos**](adding-copyright-characters-to-metafiles.md)
 </dt> <dt>
 
-[**Referência de elementos de metarquivo do Windows Media**](windows-media-metafile-elements-reference.md)
+[**Windows Referência de elementos de metarquivo de mídia**](windows-media-metafile-elements-reference.md)
 </dt> <dt>
 
-[**Referência do metarquivo do Windows Media**](windows-media-metafile-reference.md)
+[**Windows Referência de metarquivo de mídia**](windows-media-metafile-reference.md)
 </dt> </dl>
 
  

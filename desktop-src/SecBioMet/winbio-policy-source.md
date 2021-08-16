@@ -1,10 +1,10 @@
 ---
-title: Enumeração de WINBIO_POLICY_SOURCE (WinBio \_ Types. h)
-description: Lista as possíveis fontes de informações de política para a detecção de falsificação para fatores biométricos.
+title: WINBIO_POLICY_SOURCE enumeração (Tipos \_ Winbio.h)
+description: Lista as possíveis fontes de informações de política para a detecção de fraudes para fatores biométricos.
 ms.assetid: 3DC3BB0B-1FD7-473C-8E0B-B7E0A4A44E9E
 keywords:
-- API de Windows Biometric Framework de enumeração de WINBIO_POLICY_SOURCE
-- PWINBIO_POLICY_SOURCE Windows Biometric Framework API do ponteiro de enumeração
+- WINBIO_POLICY_SOURCE enumeração Windows API do Biometric Framework
+- PWINBIO_POLICY_SOURCE de enumeração Windows API do Biometric Framework
 topic_type:
 - apiref
 api_name:
@@ -15,18 +15,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 866d1d82d939f143c4385caa5d94c68ffe3758f9
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 962d4bc3e8cffb778df56d78a9ddaf0641f57f8f96c8f7b024745a4b879f2f81
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104295901"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118909925"
 ---
-# <a name="winbio_policy_source-enumeration"></a>Enumeração de origem de \_ política WINBIO \_
+# <a name="winbio_policy_source-enumeration"></a>Enumeração WINBIO \_ POLICY \_ SOURCE
 
-Lista as possíveis fontes de informações de política para a detecção de falsificação para fatores biométricos.
+Lista as possíveis fontes de informações de política para a detecção de fraudes para fatores biométricos.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 
 ```C++
@@ -44,31 +44,31 @@ typedef enum _WINBIO_POLICY_SOURCE {
 
 <dl> <dt>
 
-<span id="WINBIO_POLICY_UNKNOWN"></span><span id="winbio_policy_unknown"></span>**política de WINBIO \_ \_ desconhecida**
+<span id="WINBIO_POLICY_UNKNOWN"></span><span id="winbio_policy_unknown"></span>**POLÍTICA WINBIO \_ \_ DESCONHECIDA**
 </dt> <dd>
 
 A origem da política é desconhecida.
 
 </dd> <dt>
 
-<span id="WINBIO_POLICY_DEFAULT"></span><span id="winbio_policy_default"></span>**\_padrão de política WINBIO \_**
+<span id="WINBIO_POLICY_DEFAULT"></span><span id="winbio_policy_default"></span>**WINBIO \_ POLICY \_ DEFAULT**
 </dt> <dd>
 
 A política é a política padrão que o Windows Biometric Framework fornece.
 
 </dd> <dt>
 
-<span id="WINBIO_POLICY_LOCAL"></span><span id="winbio_policy_local"></span>**WINBIO \_ política \_ local**
+<span id="WINBIO_POLICY_LOCAL"></span><span id="winbio_policy_local"></span>**WINBIO \_ POLICY \_ LOCAL**
 </dt> <dd>
 
-A política que o usuário individual definiu para sua conta usando o aplicativo **configurações** . Essa política substitui a política padrão.
+A política que o usuário individual definiu para sua conta usando o **Configurações** aplicativo. Essa política substitui a política padrão.
 
 </dd> <dt>
 
-<span id="WINBIO_POLICY_ADMIN"></span><span id="winbio_policy_admin"></span>**\_administrador da política do WINBIO \_**
+<span id="WINBIO_POLICY_ADMIN"></span><span id="winbio_policy_admin"></span>**ADMINISTRADOR DE POLÍTICA DO WINBIO \_ \_**
 </dt> <dd>
 
-Uma política de grupo que o administrador de ti definiu para a empresa. Os usuários individuais não podem substituir essa política.
+Uma política de grupo que o administrador de IT definiu para a empresa. Usuários individuais não podem substituir essa política.
 
 </dd> </dl>
 
@@ -78,9 +78,9 @@ Uma política de grupo que o administrador de ti definiu para a empresa. Os usu�
 
 | Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10\]<br/>                                                                                                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2016\]<br/>                                                                                                                     |
-| parâmetro<br/>                   | <dl> <dt>WinBio \_ Types. h (inclui WinBio. h para aplicativos cliente ou WinBio \_ Adapters. h para adaptadores)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[Windows 10 somente aplicativos da área de trabalho\]<br/>                                                                                                                              |
+| Servidor mínimo com suporte<br/> | \[Windows Server 2016 somente aplicativos da área de trabalho\]<br/>                                                                                                                     |
+| parâmetro<br/>                   | <dl> <dt>Winbio \_ types.h (inclua Winbio.h para aplicativos cliente ou \_ adaptadores Winbio.h para adaptadores)</dt> </dl> |
 
 
 
@@ -88,7 +88,7 @@ Uma política de grupo que o administrador de ti definiu para a empresa. Os usu�
 
 <dl> <dt>
 
-[**\_ação da \_ política antifalsificação do \_ WINBIO \_**](winbio-anti-spoof-policy-action.md)
+[**AÇÃO DE POLÍTICA \_ WINBIO ANTI \_ \_ SPOOF \_**](winbio-anti-spoof-policy-action.md)
 </dt> </dl>
 
  

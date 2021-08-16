@@ -15,7 +15,7 @@ ms.locfileid: "118327691"
 
 ## <a name="text"></a>Texto
 
-AccessibleObjectFromPoint ( {0} , {1} ) retornou NULL
+AccessibleObjectFromPoint( {0} , {1} ) retornou null
 
 ## <a name="type"></a>Tipo
 
@@ -23,18 +23,18 @@ Erro
 
 ## <a name="description"></a>Descrição
 
-O endereço da interface [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) do elemento de interface do usuário obtida para as coordenadas fornecidas é nulo.
+O endereço da interface [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) do elemento de interface do usuário obtida para as coordenadas determinadas é NULL.
 
 ## <a name="possible-causes"></a>Possíveis causas
 
--   A interação do usuário durante a verificação, como a movimentação do foco para um HWND não-alvo, interfere no processo de verificação.
+-   A interação do usuário durante a verificação, como mover o foco para um HWND não de destino, interfere no processo de verificação.
 -   Uma implementação de MSAA incorreta ou inválida.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[Navegação por meio de teste de clique e local da tela](navigation-through-hit-testing-and-screen-location.md)
+[Navegação por meio de testes de acerto e localização da tela](navigation-through-hit-testing-and-screen-location.md)
 </dt> <dt>
 
 [**AccessibleObjectFromPoint**](/windows/desktop/api/Oleacc/nf-oleacc-accessibleobjectfrompoint)

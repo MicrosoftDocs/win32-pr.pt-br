@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 27ceefa2c4b4ee2eb890b0692a33266e89a18cfb
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: 904ff3bb89e71a95a1c88851426ba283987ba6b96f336c91dd443794ee5e143d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104293593"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118795405"
 ---
 # <a name="absolute-value"></a>Valor absoluto
 
@@ -27,7 +27,7 @@ Pegue o valor absoluto de um operando de origem usado em uma operação aritmét
 
 
 
- 
+ 
 
 Esse modificador é usado somente para ponto flutuante de precisão simples e dupla. O modificador **\_ ABS** força o sinal dos números no operando de origem positivo, incluindo os valores inf.
 
@@ -52,7 +52,7 @@ Esse modificador tem suporte nos seguintes modelos de sombreador.
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -61,9 +61,9 @@ Esse modificador tem suporte nos seguintes modelos de sombreador.
 [Modificadores de instrução](instruction-modifiers.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -7,12 +7,12 @@ keywords:
 - represent_as
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7121925f1407cb3390c3ef1e7e5f2f6430506071
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 3bbf217260f3d23f7390a2295d7db5a36174ae01a94f7368f8e7d2085d19ae0e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104084835"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118923995"
 ---
 # <a name="the-represent_as-attribute"></a>O atributo de representar \_ como
 
@@ -30,7 +30,7 @@ A tabela a seguir descreve as quatro rotinas fornecidas pelo programador.
 
 
 
-| Rotina                      | Descrição                                                                                          |
+| Rotina                      | Description                                                                                          |
 |------------------------------|------------------------------------------------------------------------------------------------------|
 | **\_tipo nomeado \_ do \_ local** | Aloca uma instância do tipo de rede e converte do tipo local para o tipo de rede.      |
 | **\_tipo nomeado \_ para \_ local**   | Converte o tipo de rede para o tipo local.                                                    |
@@ -39,7 +39,7 @@ A tabela a seguir descreve as quatro rotinas fornecidas pelo programador.
 
 
 
- 
+ 
 
 Além dessas quatro rotinas fornecidas pelo programador, o tipo nomeado não é manipulado pelo aplicativo. O único tipo visível para o aplicativo é o tipo representado. O aplicativo usa o nome do tipo representado em vez do nome do tipo transmitido nos protótipos e stubs gerados pelo compilador. Você deve fornecer o conjunto de rotinas para ambos os lados.
 
@@ -48,9 +48,9 @@ Para objetos **de \_ tipo nomeado** temporário, o stub chamará o **\_ tipo nom
 Se o tipo representado for um ponteiro ou contiver um ponteiro, **o \_ tipo nomeado \_ para rotina \_ local** deverá alocar memória para os dados aos quais os ponteiros apontam (o próprio objeto de tipo representado é manipulado pelo stub da maneira usual). Para \[ [](/windows/desktop/Midl/out-idl) \] os parâmetros out e \[ [in](/windows/desktop/Midl/in), out \] de um tipo que contém **\[ representar \_ como** ou um de seus componentes, a rotina **\_ \_ \_ local gratuita de tipo nomeado** é chamada automaticamente para os objetos de dados que contêm o atributo. Para parâmetros **\[ in \]** , a **rotina \_ \_ \_ local gratuita de tipo nomeado** será chamada somente se o atributo **\[ representar \_ como \]** tiver sido aplicado ao parâmetro. Se o atributo tiver sido aplicado aos componentes do parâmetro, a rotina *\* *** \_ \_ local * gratuita* não será chamada. As rotinas de liberação não são chamadas para os dados inseridos e para a chamada no máximo uma vez (relacionadas ao atributo de nível superior) para um parâmetro **\[ in \]** only.
 
 > [!Note]  
-> É possível aplicar a **\[ transmissão \_ como \]** e **\[ representar \_ como \]** atributos para o mesmo tipo. Ao realizar o marshaling de dados, o **\[ representar \_ como \]** conversão de tipo é aplicado primeiro e, em seguida, a **\[ transmissão \_ como \]** conversão é aplicada. O pedido é invertido ao desempacotar dados. Assim, quando o marshaling, \* **\_ de \_ local** aloca uma instância de um tipo nomeado e a traduz de um objeto de tipo local para o objeto de tipo nomeado temporário. Esse objeto é o objeto de tipo apresentado usado para a rotina de \* **\_ \_ transmissão** . A \* rotina **\_ to \_ transmissão** aloca um objeto de tipo transmitido e o traduz do objeto apresentado (nomeado) para o objeto transmitido.
+> É possível aplicar a **\[ transmissão \_ como \]** e **\[ representar \_ como \]** atributos para o mesmo tipo. Ao realizar o marshaling de dados, o **\[ representar \_ como \]** conversão de tipo é aplicado primeiro e, em seguida, a **\[ transmissão \_ como \]** conversão é aplicada. O pedido é invertido ao desempacotar dados. Assim, quando o marshaling, \* *_\_ de \_ local_* aloca uma instância de um tipo nomeado e a traduz de um objeto de tipo local para o objeto de tipo nomeado temporário. Esse objeto é o objeto de tipo apresentado usado para a rotina de \* *_\_ \_ transmissão_* . A \* rotina *_\_ to \_ transmissão_* aloca um objeto de tipo transmitido e o traduz do objeto apresentado (nomeado) para o objeto transmitido.
 
- 
+ 
 
 Uma matriz de inteiros longos pode ser usada para representar uma lista vinculada. Dessa forma, o aplicativo manipula a lista e a transmissão usa uma matriz de inteiros longos quando uma lista desse tipo é transmitida. Você pode começar com uma matriz, mas usar uma construção com uma matriz aberta de inteiros longos é mais conveniente. O exemplo a seguir mostra como fazer isso.
 
@@ -111,11 +111,11 @@ LONGARR_free_local(
 
 As rotinas mostradas acima fazem o seguinte:
 
--   O **LONGARR \_ da rotina \_ local** conta os nós da lista, aloca um objeto LONGARR com o tamanho de **sizeof**(**LONGARR**) + contagem \* **sizeof**(**Long**), define o campo **tamanho** como contagem e copia os dados para o campo **DataArr** .
+-   O **LONGARR \_ da rotina \_ local** conta os nós da lista, aloca um objeto LONGARR com o tamanho de **sizeof**(**LONGARR**) + contagem \* *_sizeof_*(**Long**), define o campo **tamanho** como contagem e copia os dados para o campo **DataArr** .
 -   A rotina **LONGARR \_ to \_ local** cria uma lista com nós de tamanho e transfere a matriz para os nós apropriados.
 -   A **rotina \_ \_ Inst LONGARR Free** libera nada nesse caso.
 -   A **rotina \_ \_ local gratuita LONGARR** libera todos os nós da lista.
 
- 
+ 
 
- 
+ 

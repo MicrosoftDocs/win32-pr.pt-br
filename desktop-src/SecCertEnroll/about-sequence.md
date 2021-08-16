@@ -4,12 +4,12 @@ ms.assetid: b1a37cde-d5a2-4b01-a076-cb09741ae51d
 title: SEQUENCE
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 28602a122303f341507029375a2e4762581ec197
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f1362fd66180d6f85926e1c0fe0ae57cc0edbf5edc770283ef7d9eae81cbd7ea
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103921706"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118903695"
 ---
 # <a name="sequence"></a>SEQUENCE
 

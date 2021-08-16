@@ -4,16 +4,16 @@ ms.assetid: c6ddf5fc-a7c5-49c1-899b-ff9fdff9c028
 title: Ordenando a sequência de arquivos no CAB de um módulo de mesclagem de vários idiomas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 01bdd00d8b09c0605b7ddcf656d87d41e3f53776
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 96e0d7d5efc3c4599f7a3f0eecce2101d1a7db034be6e0f80eda30245a95204d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104172017"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118942803"
 ---
 # <a name="ordering-the-file-sequence-in-the-cab-of-a-multiple-language-merge-module"></a>Ordenando a sequência de arquivos no CAB de um módulo de mesclagem de vários idiomas
 
-Os módulos de mesclagem de vários idiomas, as transformações de linguagem e os arquivos de gabinete devem ser criados de forma que a ordem dos arquivos no. cab corresponda à ordem de instalação dos arquivos especificados na [tabela de arquivos](file-table.md), mesmo após a aplicação da transformação de idioma. Se a ordem no módulo e no. cab não corresponder, o módulo de mesclagem não poderá ser usado.
+Os módulos de mesclagem de vários idiomas, as transformações de linguagem e os arquivos de gabinete devem ser criados de forma que a ordem dos arquivos na .cab corresponda à ordem de instalação dos arquivos especificados na [tabela de arquivos](file-table.md), mesmo após a aplicação da transformação de idioma. Se a ordem no módulo e no .cab não corresponder, o módulo de mesclagem não poderá ser usado.
 
 Atribua a cada arquivo no módulo, um número de sequência exclusivo que seja independente de seu idioma e sempre use esse número de sequência para o arquivo. Use a mesma sequência ao criar o arquivo de gabinete e criar uma transformação de idioma.
 

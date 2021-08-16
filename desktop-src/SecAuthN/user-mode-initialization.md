@@ -4,16 +4,16 @@ ms.assetid: 8f28177f-335a-4fa2-bf66-2ec1698bebec
 title: Inicialização do modo de usuário
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 473b06daf2e1c3612b02583d203ce4cd9afebabd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 09be7c4c00937473e2ecc3d6b01bb7c59a2842085a133f381b5a8a10bd9b215f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103922313"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118915578"
 ---
 # <a name="user-mode-initialization"></a>Inicialização do modo de usuário
 
-Os aplicativos distribuídos (cliente/servidor) usam [*pacotes de segurança*](../secgloss/s-gly.md) para obter conexões autenticadas e mensagens do Exchange. O aplicativo chama funções de SSPI (interface do provedor de suporte de segurança) que são mapeadas para [funções implementadas pelo SSP/APS](authentication-functions.md)e [funções implementadas pelo SSP/APS do modo de usuário](authentication-functions.md). Esse mapeamento é executado pela DLL do provedor de segurança (Secur32.dll ou Security.dll), que pode ser carregada nos processos do cliente e do servidor dinamicamente. A DLL também pode ser vinculada estaticamente usando Secur32. lib. A DLL e a LIB são fornecidas com o SDK (Software Development Kit) do Microsoft Windows.
+Os aplicativos distribuídos (cliente/servidor) usam [*pacotes de segurança*](../secgloss/s-gly.md) para obter conexões autenticadas e mensagens do Exchange. O aplicativo chama funções de SSPI (interface do provedor de suporte de segurança) que são mapeadas para [funções implementadas pelo SSP/APS](authentication-functions.md)e [funções implementadas pelo SSP/APS do modo de usuário](authentication-functions.md). Esse mapeamento é executado pela DLL do provedor de segurança (Secur32.dll ou Security.dll), que pode ser carregada nos processos do cliente e do servidor dinamicamente. A DLL também pode ser vinculada estaticamente usando Secur32. lib. a DLL e a LIB são fornecidas com o SDK (Software Development Kit) do Microsoft Windows.
 
 Carregar o pacote de segurança no processo do cliente ou do servidor é tratado pelo sistema, se a DLL do SSP/AP que contém o pacote de segurança estiver corretamente registrada.
 

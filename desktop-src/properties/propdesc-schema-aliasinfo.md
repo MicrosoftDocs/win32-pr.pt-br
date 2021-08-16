@@ -1,19 +1,19 @@
 ---
 description: Especifica um alias de classificação ou uma lista de aliases de classificação especificando um elemento que contém uma propriedade de classificação ou uma lista de propriedades de classificação.
 ms.assetid: 4c514197-0df0-49c6-b39e-8a2a7cefa93d
-title: aliasInfo
+title: Aliasinfo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 052409864617bdaba7acbf9ae561752c83d18395
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 087323df682a2f74164c530f18a9c4da8405930304186288a3d84635bb06ab55
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105814504"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118970965"
 ---
-# <a name="aliasinfo"></a>aliasInfo
+# <a name="aliasinfo"></a>Aliasinfo
 
-Especifica um alias de classificação ou uma lista de aliases de classificação especificando um elemento que contém uma propriedade de classificação ou uma lista de propriedades de classificação. Deve haver apenas um elemento [aliasInfo]() para cada elemento [propertyDescription](./propdesc-schema-propertydescription.md) . Para propriedades que definem cangroupby = true, a menos que uma propriedade de classificação secundária seja especificada ( aliasInfo/@additionalSortByAliases = prop: example), o usuário pode experimentar um comportamento inesperado ao alterar a ordem de classificação em uma exibição que é agrupada pela propriedade. Especificamente, a ordem dos grupos será alterada, mas a ordem dos itens nos grupos não será.
+Especifica um alias de classificação ou uma lista de aliases de classificação especificando um elemento que contém uma propriedade de classificação ou uma lista de propriedades de classificação. Deve haver apenas um [elemento aliasInfo]() para cada [elemento propertyDescription.](./propdesc-schema-propertydescription.md) Para propriedades que definem canGroupBy=true, a menos que uma propriedade de classificação secundária seja especificada ( =prop:example), o usuário pode experimentar um comportamento inesperado ao alterar a ordem de classificação em uma exibição agrupada pela propriedade aliasInfo/@additionalSortByAliases . Especificamente, a ordem dos grupos será mudada, mas a ordem dos itens dentro dos grupos não será.
 
 ## <a name="syntax"></a>Syntax
 
@@ -36,7 +36,7 @@ Especifica um alias de classificação ou uma lista de aliases de classificaçã
 
 | Elemento pai                                                   | Elementos filho |
 |------------------------------------------------------------------|----------------|
-| [propertyDescription](./propdesc-schema-propertydescription.md) | Nenhum           |
+| [Propertydescription](./propdesc-schema-propertydescription.md) | Nenhum           |
 
 
 
@@ -48,8 +48,8 @@ Especifica um alias de classificação ou uma lista de aliases de classificaçã
 
 | Atributo               | Descrição                                                                                                                                                            |
 |-------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| sortByAlias             | Público. Opcional. O nome canônico da propriedade que deve ser usada para classificar. Essa cadeia de caracteres é do tipo canônico.                                            |
-| additionalSortByAliases | Público. Opcional. Uma lista delimitada por ponto e vírgula de propriedades adicionais a serem usadas durante a classificação. As propriedades são aplicadas à classificação na sequência em que são dadas. |
+| sortByAlias             | Público. Opcional. O nome canônico da propriedade que deve ser usada para classificar. Essa cadeia de caracteres é do tipo canonical.                                            |
+| additionalSortByAliases | Público. Opcional. Uma lista delimitada por pontos e vírgulas de propriedades adicionais a serem usadas durante a classificação. As propriedades são aplicadas à classificação na sequência em que são fornecidas. |
 
 
 

@@ -1,9 +1,9 @@
 ---
 title: WM/OriginalArtist
-description: O atributo WM/OriginalArtist contém o nome do artista que originalmente produziu o conteúdo.
+description: O atributo WM/OriginalArtist contém o nome do artista que produziu originalmente o conteúdo.
 ms.assetid: 92404deb-9a56-43d9-bb81-1809226eeb60
 keywords:
-- Formato de mídia do WINDOWS WM/OriginalArtist
+- Formato de mídia do Windows do WM/OriginalArtist
 topic_type:
 - apiref
 api_name:
@@ -21,7 +21,7 @@ ms.locfileid: "118195626"
 ---
 # <a name="wmoriginalartist"></a>WM/OriginalArtist
 
-O **atributo WM/OriginalArtist** contém o nome do artista que originalmente produziu o conteúdo.
+O atributo **WM/OriginalArtist** contém o nome do artista que produziu originalmente o conteúdo.
 
 ## <a name="global-constant"></a>Constante global
 
@@ -29,11 +29,11 @@ g \_ wszWMOriginalArtist
 
 ## <a name="data-type"></a>Tipo de Dados
 
-**CADEIA DE CARACTERES DE \_ TIPO \_ WMT**
+**Cadeia de caracteres do \_ tipo WMT \_**
 
 ## <a name="remarks"></a>Comentários
 
-O artista original normalmente é usado para a rememão de músicas. Para esses arquivos. use o [**Nome**](author.md) do autor da banda que registrou originalmente a música.
+O artista original normalmente é usado para refazer as músicas. Para esses arquivos. Use o nome do [**autor**](author.md) da banda que originalmente registrou a música.
 
 ## <a name="see-also"></a>Confira também
 

@@ -4,12 +4,12 @@ description: Até duas partes na descrição da cadeia de caracteres de formato 
 ms.assetid: 11c6742c-b2f5-4201-8b1c-7e31ae52e0da
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2d1c1ce68b74440fc9339fb9cf9170bfdd1fdfcd
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 1bb31dcf075b7b07b65d2a976a37386e164d8cadc11903a33c22172c433a3a51
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104294370"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118929533"
 ---
 # <a name="handles"></a>Alças
 
@@ -67,7 +67,7 @@ O deslocamento<2> fornece o deslocamento desde o início da pilha até o identif
 > [!Note]  
 > Uma descrição do identificador primitivo na cadeia de caracteres de formato de tipo é reduzida para uma única \_ ignorar FC.
 
- 
+ 
 
 Genérico
 
@@ -84,7 +84,7 @@ O índice de par de rotina de associação \_ \_ \_<campo 1> fornece ao índice 
 > [!Note]  
 > Uma descrição de identificador genérico no formato de tipo é a descrição somente do tipo de dados relacionado.
 
- 
+ 
 
 Contexto
 
@@ -109,9 +109,9 @@ Os sinalizadores<1> indicam como o identificador é passado e qual é o tipo. Os
 
 
 
- 
+ 
 
-Os quatro primeiros sinalizadores sempre estão presentes, os últimos quatro foram adicionados ao Windows 2000.
+os quatro primeiros sinalizadores sempre estão presentes, os últimos quatro foram adicionados no Windows 2000.
 
 O campo deslocamento<2> fornece o deslocamento desde o início da pilha até o identificador de contexto.
 
@@ -124,7 +124,7 @@ Para versões anteriores do interpretador, o param \_ num<1> fornece o número d
 > [!Note]  
 > Uma descrição de identificador de contexto na cadeia de caracteres de formato de tipo não terá o deslocamento<2> na descrição.
 
- 
+ 
 
 ## <a name="the-new-oif-header"></a>O cabeçalho New – OIF
 
@@ -175,11 +175,11 @@ typedef struct
 -   O bit HasReturn será definido se o procedimento tiver um valor de retorno.
 -   O bit HasPipes será definido se o pacote de pipe precisar ser usado para dar suporte a um argumento de pipe.
 -   O bit HasAsyncUuid será definido se o procedimento for um procedimento DCOM assíncrono.
--   O bit HasExtensions indica que o Windows 2000 e extensões posteriores são usados.
+-   o bit HasExtensions indica que Windows 2000 e extensões posteriores são usadas.
 -   O bit HasAsyncHandle indica um procedimento RPC assíncrono.
 
 O HasAsyncHandle bit foi usado inicialmente para uma implementação de DCOM diferente do suporte assíncrono e, portanto, não pôde ser usado para o suporte assíncrono de estilo atual no DCOM. O bit HasAsyncUuid atualmente indica isso.
 
- 
+ 
 
- 
+ 

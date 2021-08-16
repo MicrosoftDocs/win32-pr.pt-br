@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6ce0855f8462fb560bd337289a042f19be3380cd
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 57a57819c3c8677feb274294f5c56593173c8ae1b6f16eb3aff4f56cf69add33
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105755731"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118426961"
 ---
 # <a name="ms-ds-az-application-version-attribute"></a>atributo ms-DS-AZ-Application-Version
 
@@ -57,7 +57,7 @@ Um número de versão para indicar que o AzApplication é atualizado.
 | ID do link                | \-                                                              |
 | MAPI-Id                | \-                                                              |
 | System-Only            | Falso                                                           |
-| É de valor único       | True                                                            |
+| É de valor único       | Verdadeiro                                                            |
 | É indexado             | Falso                                                           |
 | No catálogo global      | Falso                                                           |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                    |
@@ -78,7 +78,7 @@ Um número de versão para indicar que o AzApplication é atualizado.
 | ID do link                | \-                                                              |
 | MAPI-Id                | \-                                                              |
 | System-Only            | Falso                                                           |
-| É de valor único       | True                                                            |
+| É de valor único       | Verdadeiro                                                            |
 | É indexado             | Falso                                                           |
 | No catálogo global      | Falso                                                           |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                    |
@@ -99,7 +99,7 @@ Um número de versão para indicar que o AzApplication é atualizado.
 | ID do link                | \-                                                              |
 | MAPI-Id                | \-                                                              |
 | System-Only            | Falso                                                           |
-| É de valor único       | True                                                            |
+| É de valor único       | Verdadeiro                                                            |
 | É indexado             | Falso                                                           |
 | No catálogo global      | Falso                                                           |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                    |
@@ -120,7 +120,7 @@ Um número de versão para indicar que o AzApplication é atualizado.
 | ID do link                | \-                                                              |
 | MAPI-Id                | \-                                                              |
 | System-Only            | Falso                                                           |
-| É de valor único       | True                                                            |
+| É de valor único       | Verdadeiro                                                            |
 | É indexado             | Falso                                                           |
 | No catálogo global      | Falso                                                           |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                    |
@@ -141,7 +141,7 @@ Um número de versão para indicar que o AzApplication é atualizado.
 | ID do link                | \-                                                              |
 | MAPI-Id                | \-                                                              |
 | System-Only            | Falso                                                           |
-| É de valor único       | True                                                            |
+| É de valor único       | Verdadeiro                                                            |
 | É indexado             | Falso                                                           |
 | No catálogo global      | Falso                                                           |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                    |

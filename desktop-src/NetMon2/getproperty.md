@@ -1,7 +1,7 @@
 ---
-description: A função GetProperty retorna um identificador para uma determinada propriedade.
+description: A função GetProperty retorna um handle para uma determinada propriedade.
 ms.assetid: e77ca20a-55df-4d31-aa6d-2c00695f1d6e
-title: Função GetProperty (Netmon. h)
+title: Função GetProperty (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Nmapi.dll
-ms.openlocfilehash: 297d68d68731181ed56324a4e1d174467f622e13
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 07bd5a88017ee16f3bdb1773973283d9ad0f7bc6a942fa4441fb134b5f1930da
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103920692"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118365969"
 ---
 # <a name="getproperty-function"></a>Função GetProperty
 
-A função **GetProperty** retorna um identificador para uma determinada propriedade.
+A **função GetProperty** retorna um handle para uma determinada propriedade.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,31 +40,31 @@ HPROPERTY WINAPI GetProperty(
 
 <dl> <dt>
 
-*hProtocol* \[ no\]
+*hProtocol* \[ Em\]
 </dt> <dd>
 
-Identificador para o protocolo.
+Lidar com o protocolo.
 
 </dd> <dt>
 
-*PropertyName* \[ no\]
+*PropertyName* \[ Em\]
 </dt> <dd>
 
-Nome da propriedade (por exemplo, **soma de verificação**).
+Nome da propriedade (por exemplo, **Checksum**).
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Se a função for bem-sucedida, o valor de retorno será o identificador para a propriedade.
+Se a função for bem-sucedida, o valor de retorno será o alça para a propriedade .
 
-Se a função não for bem-sucedida, o valor de retorno será **nulo**.
+Se a função não for bem-sucedida, o valor de retorno será **NULL.**
 
 ## <a name="remarks"></a>Comentários
 
-A função **GetProperty** pode ser usada para obter o identificador de propriedade necessário para localizar instâncias da propriedade. As funções usadas para localizar as instâncias de propriedade são [FindPropertyInstance](findpropertyinstance.md) (que localiza a primeira instância) e [FindPropertyInstanceRestart](findpropertyinstancerestart.md) (que localiza a próxima instância).
+A **função GetProperty** pode ser usada para obter o handle de propriedade necessário para localizar instâncias da propriedade. As funções usadas para localizar instâncias de propriedade [são FindPropertyInstance](findpropertyinstance.md) (que localiza a primeira instância) e [FindPropertyInstanceRestart](findpropertyinstancerestart.md) (que localiza a próxima instância).
 
-Os [*especialistas*](e.md) e os [*analisadores*](p.md) podem chamar a função **GetProperty** .
+[*Especialistas*](e.md) e [*analisadores podem*](p.md) chamar a **função GetProperty.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -74,8 +74,8 @@ Os [*especialistas*](e.md) e os [*analisadores*](p.md) podem chamar a função *
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                           |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                 |
-| Cabeçalho<br/>                   | <dl> <dt>Netmon. h</dt> </dl>  |
-| Biblioteca<br/>                  | <dl> <dt>Nmapi. lib</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Netmon.h</dt> </dl>  |
+| Biblioteca<br/>                  | <dl> <dt>Nmapi.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Nmapi.dll</dt> </dl> |
 
 

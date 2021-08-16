@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre a propriedade: JET_RECSIZE. cCompressedColumns'
-title: Propriedade JET_RECSIZE. cCompressedColumns (Microsoft. ISAM. ESENT. Interop. vista)
+description: 'Saiba mais sobre: JET_RECSIZE.cCompressedColumns'
+title: JET_RECSIZE.cCompressedColumns (Microsoft.Isam.Esent.Interop.Vista)
 TOCTitle: 'cCompressedColumns property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.Vista.JET_RECSIZE.cCompressedColumns
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.vista.jet_recsize.ccompressedcolumns(v=EXCHG.10)
@@ -26,19 +26,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 448a18afc5a986fb34128dc4113fddef4448486a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 80a058cc12174b9247524ccd88060a9aa17ba561a95b036010040a4786d0d47c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104089901"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118763741"
 ---
-# <a name="jet_recsizeccompressedcolumns-property"></a>Propriedade JET_RECSIZE. cCompressedColumns
+# <a name="jet_recsizeccompressedcolumns-property"></a>JET_RECSIZE.cCompressedColumns
 
-Obtém o número total de colunas no registro que estão compactadas.
+Obtém o número total de colunas no registro que são compactadas.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Syntax
 
@@ -60,14 +60,14 @@ public long cCompressedColumns { get; internal set; }
 
 #### <a name="property-value"></a>Valor da propriedade
 
-Tipo: [System. Int64](/dotnet/api/system.int64)  
+Tipo: [System.Int64](/dotnet/api/system.int64)  
 
 ## <a name="see-also"></a>Confira também
 
 #### <a name="reference"></a>Referência
 
-[Estrutura de JET_RECSIZE](./jet-recsize-structure2.md)
+[JET_RECSIZE estrutura](./jet-recsize-structure2.md)
 
-[Membros do JET_RECSIZE](./jet-recsize-members.md)
+[JET_RECSIZE membros](./jet-recsize-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)

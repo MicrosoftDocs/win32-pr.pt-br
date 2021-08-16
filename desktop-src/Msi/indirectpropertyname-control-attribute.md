@@ -1,5 +1,5 @@
 ---
-description: Esse atributo é o nome de uma propriedade indireta associada ao controle.
+description: Esse atributo é o nome de uma propriedade indireta associada ao controle .
 ms.assetid: f6834427-014b-4c6f-b6bb-d8df6189f43b
 title: Atributo de controle IndirectPropertyName
 ms.topic: article
@@ -13,21 +13,21 @@ ms.locfileid: "118634320"
 ---
 # <a name="indirectpropertyname-control-attribute"></a>Atributo de controle IndirectPropertyName
 
-Esse atributo é o nome de uma propriedade indireta associada ao controle. Se o bit [indireto](indirect-control-attribute.md) estiver definido, o controle exibirá ou alterará o valor da propriedade com esse nome e esse nome será o valor da propriedade listada na coluna propriedade da [tabela de controle](control-table.md).
+Esse atributo é o nome de uma propriedade indireta associada ao controle . Se [o](indirect-control-attribute.md) bit Indireto for definido, o controle exibirá ou altera o valor da propriedade que tem esse nome e esse nome será o valor da propriedade listada na coluna Propriedade da tabela [Controle](control-table.md).
 
-Para controles Inert, esse atributo retorna NULL.
+Para controles inertes, esse atributo retorna Null.
 
 ## <a name="valid-controls"></a>Controles válidos
 
 Todos os controles ativos.
 
-## <a name="associated-bit-flags"></a>Sinalizadores de bits associados
+## <a name="associated-bit-flags"></a>Sinalizadores de bit associados
 
-Este atributo não usa sinalizadores de bit.
+Esse atributo não usa sinalizadores de bit.
 
 ## <a name="remarks"></a>Comentários
 
-Consulte [atributos de controle](control-attributes.md) e o controle que você precisa criar sob [controles](controls.md).
+Consulte [Atributos de controle](control-attributes.md) e o controle que você precisa criar em [Controles](controls.md).
 
  
 

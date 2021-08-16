@@ -1,21 +1,21 @@
 ---
-description: Obter informações sobre o parâmetro PageWatermarkOriginWidth. Este tópico não é atual. Para obter as informações mais atuais, consulte a Especificação de Esquema de Impressão.
+description: Obtenha informações sobre o parâmetro PageWatermarkOriginWidth. Este tópico não é atual. Para obter as informações mais atuais, consulte a especificação do esquema de impressão.
 ms.assetid: e1bea06b-11b9-4652-915a-deb563ad59f8
 title: PageWatermarkOriginWidth
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bffe6457496972231877af2a51e03bc5109083d0
-ms.sourcegitcommit: 91530c19d26ba4c57a6af1f37b57f211f580464e
+ms.openlocfilehash: 57533d7d7322eedf586c86bfbfd28a82b9cc143aedd7c6318c6c1f6ecb36451f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112396001"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118731906"
 ---
 # <a name="pagewatermarkoriginwidth"></a>PageWatermarkOriginWidth
 
-Este tópico não é atual. Para obter as informações mais atuais, consulte a [Especificação de Esquema de Impressão](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Este tópico não é atual. Para obter as informações mais atuais, consulte a [especificação do esquema de impressão](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Especifica a origem de uma marca-d'água em relação à origem de PageImageableSize.
+Especifica a origem de uma marca d' água em relação à origem do PageImageableSize.
 
 -   [Informações do elemento](#element-information)
 -   [Conteúdo da estrutura](#structure-content)
@@ -27,7 +27,7 @@ Especifica a origem de uma marca-d'água em relação à origem de PageImageable
 | Name | Valor |
 |----------------------------|--------------------------------------------|
 | Tipo de elemento <br/>   | ParameterDef<br/>                    |
-| Prefixo de definição de scoping <br/> | ?<br/>                            |
+| Prefixo de escopo <br/> | ?<br/>                            |
 | Observações <br/>          | Vinculado ao elemento PageWatermark<br/> |
 
 
@@ -75,11 +75,11 @@ A tabela a seguir descreve as características das variáveis definidas na estru
 |-------------------------|--------------------|------------------------------------------------------------------------|
 | Tipo de dados<br/>     | string<br/>  | xs:integer<br/>                                                  |
 | DefaultValue<br/> | Número inteiro<br/> | não definido<br/>                                                   |
-| MaxValue<br/>     | Número inteiro<br/> | Menor ou igual a PageImageableSize – valor ExtentWidth<br/> |
-| Minvalue<br/>     | inteiro<br/> | 0<br/>                                                           |
+| MaxValue<br/>     | Número inteiro<br/> | Menor ou igual ao valor de PageImageableSize-ExtentWidth<br/> |
+| MinValue<br/>     | inteiro<br/> | 0<br/>                                                           |
 | Vários<br/>     | integer<br/> | 1<br/>                                                           |
-| Obrigatório<br/>    | string<br/>  | psk:Conditional<br/>                                             |
-| Unittype<br/>     | string<br/>  | Mícrons<br/>                                                     |
+| Obrigatório<br/>    | string<br/>  | PSK: condicional<br/>                                             |
+| UnitType<br/>     | string<br/>  | mícrons<br/>                                                     |
 
 
 

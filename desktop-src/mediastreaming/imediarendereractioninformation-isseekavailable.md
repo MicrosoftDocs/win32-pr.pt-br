@@ -1,11 +1,11 @@
 ---
-title: Método IMediaRendererActionInformation IsSeekAvailable
-description: Recupera um valor que indica se o DMR está atualmente aceitando o método SeekAsync.
+title: Método IsSeekAvailable de IMediaRendererActionInformation
+description: Recupera um valor que indica se a DMR está aceitando o método SeekAsync no momento.
 ms.assetid: F0817184-70F2-43AC-A2BE-A15F4B195085
 keywords:
-- API de streaming de mídia do método IsSeekAvailable
-- API de streaming de mídia do método IsSeekAvailable, interface IMediaRendererActionInformation
-- API de streaming de mídia da interface IMediaRendererActionInformation, método IsSeekAvailable
+- API de Streaming de Mídia do método IsSeekAvailable
+- API de Streaming de Mídia do método IsSeekAvailable, interface IMediaRendererActionInformation
+- API de Streaming de Mídia da interface IMediaRendererActionInformation , método IsSeekAvailable
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 700afb72efbab01bbd3a8f5e15fa444eb6b06272
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 32b5c7eef78dad4ebfeeebb40c323d7b13e540033eb54852f7da41942f5ec83e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "103823739"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118735509"
 ---
-# <a name="imediarendereractioninformationisseekavailable-method"></a>Método IMediaRendererActionInformation:: IsSeekAvailable
+# <a name="imediarendereractioninformationisseekavailable-method"></a>Método IMediaRendererActionInformation::IsSeekAvailable
 
-Recupera um valor que indica se o DMR está atualmente aceitando o método [**SeekAsync**](/previous-versions/windows/desktop/api/windows.media.streaming/nf-windows-media-streaming-imediarenderer-seekasync) .
+Recupera um valor que indica se a DMR está aceitando o [**método SeekAsync**](/previous-versions/windows/desktop/api/windows.media.streaming/nf-windows-media-streaming-imediarenderer-seekasync) no momento.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -41,16 +41,16 @@ HRESULT IsSeekAvailable(
 
 <dl> <dt>
 
-*valor* \[ do fora\]
+*value* \[ out\]
 </dt> <dd>
 
-Um valor booliano que é **true** se o DMR estiver atualmente aceitando o método [**SeekAsync**](/previous-versions/windows/desktop/api/windows.media.streaming/nf-windows-media-streaming-imediarenderer-seekasync) e **false** se não for.
+Um valor boolário que será **True** se a DMR estiver aceitando o método [**SeekAsync**](/previous-versions/windows/desktop/api/windows.media.streaming/nf-windows-media-streaming-imediarenderer-seekasync) no momento e **False** se não estiver.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
+O método retorna um **HRESULT.** Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
 
 
 

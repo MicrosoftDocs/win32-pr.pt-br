@@ -1,9 +1,9 @@
 ---
 title: Função countbits
-description: Conta o número de bits (por componente) definido no número inteiro de entrada.
+description: Conta o número de bits (por componente) definido no inteiro de entrada.
 ms.assetid: c4fafbc8-e21c-48cb-b433-8241a989ec85
 keywords:
-- HLSL da função countbits
+- função countbits HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 357aceca6e2aea261a9e94212b58ff6308c99560
-ms.sourcegitcommit: 435ea8f5bf06808ffa7dce39afb0ee6de842ba2f
+ms.openlocfilehash: 5f3816152b91fd03348e64c7a36dd41e8b620bd5e5ef8f4463538c44ef974485
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2021
-ms.locfileid: "107925619"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118793964"
 ---
 # <a name="countbits-function"></a>Função countbits
 
-Conta o número de bits (por componente) definido no número inteiro de entrada.
+Conta o número de bits (por componente) definido no inteiro de entrada.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -36,7 +36,7 @@ uint countbits(
 
 <dl> <dt>
 
-*valor* \[ do no\]
+*value* \[ Em\]
 </dt> <dd>
 
 Tipo: **uint**
@@ -45,7 +45,7 @@ O valor de entrada.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **uint**
 
@@ -62,15 +62,15 @@ uint3 count_bits(uint3 value);
 uint4 count_bits(uint4 value);
 ```
 
-### <a name="minimum-shader-model"></a>Modelo de sombreamento mínimo
+### <a name="minimum-shader-model"></a>Modelo de sombreador mínimo
 
-Essa função tem suporte nos seguintes modelos de sombreador.
+Essa função tem suporte nos modelos de sombreador a seguir.
 
 
 
-| Modelo de Sombreador                                                                | Suportado |
+| Modelo de Sombreador                                                                | Com suporte |
 |-----------------------------------------------------------------------------|-----------|
-| [Modelo](d3d11-graphics-reference-sm5.md) de sombreador 5 e modelos de sombreador mais altos | sim       |
+| [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md) e modelos de sombreador superior | sim       |
 
 
 
@@ -80,7 +80,7 @@ Essa função tem suporte nos seguintes tipos de sombreadores:
 
 
 
-| Vértice | Envoltória | Domain | Geometria | 16x16 | Computação |
+| Vértice | Casco | Domínio | Geometry | Pixel | Computação |
 |--------|------|--------|----------|-------|---------|
 | x      | x    | x      | x        | x     | x       |
 

@@ -1,9 +1,9 @@
 ---
-title: Mensagem de WM_GESTURENOTIFY (WinUser. h)
-description: Oferece a oportunidade de definir a configuração do gesto.
+title: WM_GESTURENOTIFY mensagem (Winuser.h)
+description: Dá a você a oportunidade de definir a configuração do gesto.
 ms.assetid: 83c23928-86ce-421d-bb84-5c41a770bf60
 keywords:
-- WM_GESTURENOTIFY a mensagem Windows Touch
+- WM_GESTURENOTIFY mensagem Windows Touch
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5e900e4b607760df16938080a49f97a3ab0cf2ed
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d474f356310a0d7949cecf36e7af9cb586a76029171dfe27c1679970e481ed1b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104085839"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118435232"
 ---
-# <a name="wm_gesturenotify-message"></a>Mensagem do WM \_ GESTURENOTIFY
+# <a name="wm_gesturenotify-message"></a>Mensagem WM \_ GESTURENOTIFY
 
-Oferece a oportunidade de definir a configuração do gesto.
+Dá a você a oportunidade de definir a configuração do gesto.
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -39,26 +39,26 @@ Não utilizado.
 *lParam* 
 </dt> <dd>
 
-Um ponteiro para um [**GESTURENOTIFYSTRUCT**](/windows/win32/api/winuser/ns-winuser-gesturenotifystruct).
+Um ponteiro para [**um GESTURENOTIFYSTRUCT.**](/windows/win32/api/winuser/ns-winuser-gesturenotifystruct)
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Um valor deve ser retornado de [DefWindowProc](/windows/win32/api/winuser/nf-winuser-defwindowproca).
+Um valor deve ser retornado de [DefWindowProc.](/windows/win32/api/winuser/nf-winuser-defwindowproca)
 
 ## <a name="remarks"></a>Comentários
 
-Quando a **mensagem \_ GESTURENOTIFY do WM** é recebida, o aplicativo pode usar [**SetGestureConfig**](/windows/desktop/api/winuser/nf-winuser-setgestureconfig) para especificar os gestos a serem recebidos. Essa mensagem deve sempre ser consumida usando a função [DefWindowProc](/windows/win32/api/winuser/nf-winuser-defwindowproca) .
+Quando a **mensagem WM \_ GESTURENOTIFY** é recebida, o aplicativo pode usar [**SetGestureConfig**](/windows/desktop/api/winuser/nf-winuser-setgestureconfig) para especificar os gestos a receber. Essa mensagem sempre deve ser em bolhas usando a [função DefWindowProc.](/windows/win32/api/winuser/nf-winuser-defwindowproca)
 
 > [!Note]  
-> Manipular a mensagem do **WM \_ GESTURENOTIFY** alterará a configuração do gesto para o tempo de vida da janela, não apenas para o próximo gesto.
+> Manipular a **mensagem WM \_ GESTURENOTIFY** alterará a configuração do gesto durante o tempo de vida da Janela, não apenas para o próximo gesto.
 
  
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo a seguir mostra como habilitar todos os gestos. Para obter mais exemplos, consulte [**SetGestureConfig**](/windows/desktop/api/winuser/nf-winuser-setgestureconfig).
+O exemplo a seguir mostra como habilitar todos os gestos. Para obter mais exemplos, [**consulte SetGestureConfig**](/windows/desktop/api/winuser/nf-winuser-setgestureconfig).
 
 
 ```C++
@@ -85,9 +85,9 @@ O exemplo a seguir mostra como habilitar todos os gestos. Para obter mais exempl
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>                                                               |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008 R2\]<br/>                                                  |
-| parâmetro<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 7 \[ aplicativos da área de trabalho\]<br/>                                                               |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho do Server 2008 R2 \[\]<br/>                                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -98,7 +98,7 @@ O exemplo a seguir mostra como habilitar todos os gestos. Para obter mais exempl
 [Notificações](notifications.md)
 </dt> <dt>
 
-[Guia de programação de gestos do Windows Touch](guide-multi-touch-gestures.md)
+[Windows Guia de programação de gestos de toque](guide-multi-touch-gestures.md)
 </dt> <dt>
 
 [**GESTURENOTIFYSTRUCT**](/windows/win32/api/winuser/ns-winuser-gesturenotifystruct)

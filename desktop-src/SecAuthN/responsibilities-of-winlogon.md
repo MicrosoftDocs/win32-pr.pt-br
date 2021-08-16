@@ -4,12 +4,12 @@ ms.assetid: 5aef4164-11bd-4acc-b851-de982e35d2b5
 title: Responsabilidades do Winlogon
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a7842df1d4194dc7086f658a13f6725af8fa0d88
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6561bea11c48eb474c0ff56c5c0aa5ebfa0c22d9d6689aa55a6a208bbbc683e4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103921621"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118919024"
 ---
 # <a name="responsibilities-of-winlogon"></a>Responsabilidades do Winlogon
 
@@ -33,7 +33,7 @@ O [*Winlogon*](../secgloss/w-gly.md) tem as seguintes responsabilidades:
 
 -   Atribuição de segurança ao shell do usuário
 
-    Quando um usuário faz logon, a GINA é responsável por criar um ou mais processos iniciais para esse usuário. O Winlogon fornece uma função de suporte para a GINA aplicar a segurança do usuário conectado recentemente a esses processos. No entanto, a maneira preferida de fazer isso é que a GINA chame a função do Windows [**CreateProcessAsUser**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-createprocessasusera)e deixe que o sistema forneça o serviço.
+    Quando um usuário faz logon, a GINA é responsável por criar um ou mais processos iniciais para esse usuário. O Winlogon fornece uma função de suporte para a GINA aplicar a segurança do usuário conectado recentemente a esses processos. no entanto, a maneira preferida de fazer isso é que a GINA chame a função de Windows [**CreateProcessAsUser**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-createprocessasusera)e deixe que o sistema forneça o serviço.
 
 -   Controle de proteção de tela
 
@@ -41,7 +41,7 @@ O [*Winlogon*](../secgloss/w-gly.md) tem as seguintes responsabilidades:
 
 -   Suporte a vários provedores de rede
 
-    Várias redes instaladas em um sistema Windows podem ser incluídas no processo de autenticação e em operações de atualização de senha. Essa inclusão permite que redes adicionais coletem informações de identificação e autenticação de uma só vez durante o logon normal, usando a área de trabalho segura do Winlogon. Alguns dos parâmetros necessários nos serviços do Winlogon disponíveis para as GINAs oferecem suporte explícito a esses provedores de rede adicionais.
+    várias redes instaladas em um sistema Windows podem ser incluídas no processo de autenticação e em operações de atualização de senha. Essa inclusão permite que redes adicionais coletem informações de identificação e autenticação de uma só vez durante o logon normal, usando a área de trabalho segura do Winlogon. Alguns dos parâmetros necessários nos serviços do Winlogon disponíveis para as GINAs oferecem suporte explícito a esses provedores de rede adicionais.
 
  
 

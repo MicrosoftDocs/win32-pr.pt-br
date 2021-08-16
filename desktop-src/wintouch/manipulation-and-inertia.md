@@ -20,14 +20,14 @@ ms.locfileid: "118199484"
 
 Esta seção contém tópicos relacionados a manipulações e inércia.
 
-Esta seção consiste nos tópicos a seguir.
+Esta seção consiste nos seguintes tópicos.
 
 
 
 | Tópico                                                   | Descrição                               |
 |---------------------------------------------------------|-------------------------------------------|
-| [Manipulações](getting-started-with-manipulations.md) | Explica as manipulações para Windows Touch. |
-| [Inércia](getting-started-with-inertia.md)             | Explica a inércia para Windows Touch.       |
+| [Manipulações](getting-started-with-manipulations.md) | explica as manipulações para Windows toque. |
+| [Inércia](getting-started-with-inertia.md)             | explica o inércia para Windows toque.       |
 
 
 

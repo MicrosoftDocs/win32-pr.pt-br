@@ -1,7 +1,7 @@
 ---
-description: Contém informações sobre o tamanho de um dispositivo. Isso é retornado do código de controle IOCTL \_ STORAGE \_ READ \_ CAPACITY.
+description: Contém informações sobre o tamanho de um dispositivo. Isso é retornado do código de \_ controle de capacidade de leitura do armazenamento do IOCTL \_ \_ .
 ms.assetid: bd18f4b7-f87e-48f6-b7c2-68990beb8d36
-title: STORAGE_READ_CAPACITY (Ntddstor.h)
+title: Estrutura de STORAGE_READ_CAPACITY (Ntddstor. h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -20,9 +20,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118404967"
 ---
-# <a name="storage_read_capacity-structure"></a>Estrutura STORAGE \_ READ \_ CAPACITY
+# <a name="storage_read_capacity-structure"></a>Estrutura de capacidade de \_ leitura de armazenamento \_
 
-Contém informações sobre o tamanho de um dispositivo. Isso é retornado do código [**de controle IOCTL \_ STORAGE READ \_ \_ CAPACITY.**](/windows/desktop/api/WinIoCtl/ni-winioctl-ioctl_storage_read_capacity)
+Contém informações sobre o tamanho de um dispositivo. Isso é retornado do código de controle de [**capacidade de leitura do armazenamento do IOCTL \_ \_ \_**](/windows/desktop/api/WinIoCtl/ni-winioctl-ioctl_storage_read_capacity) .
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -46,7 +46,7 @@ typedef struct _STORAGE_READ_CAPACITY {
 **Versão**
 </dt> <dd>
 
-A versão dessa estrutura. O chamador deve definir esse membro como `sizeof(STORAGE_READ_CAPACITY)` .
+A versão desta estrutura. O chamador deve definir esse membro como `sizeof(STORAGE_READ_CAPACITY)` .
 
 </dd> <dt>
 
@@ -80,7 +80,7 @@ O tamanho do disco em bytes.
 
 ## <a name="remarks"></a>Comentários
 
-O arquivo de título Ntddstor.h está disponível no WDK (Kit Windows Driver).
+o arquivo de cabeçalho Ntddstor. h está disponível no WDK (Windows Driver Kit).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -89,8 +89,8 @@ O arquivo de título Ntddstor.h está disponível no WDK (Kit Windows Driver).
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                              |
-| Servidor mínimo com suporte<br/> | Windows Server 2008, Windows Server 2003 com SP1<br/>                          |
-| parâmetro<br/>                   | <dl> <dt>Ntddstor.h</dt> </dl> |
+| Servidor mínimo com suporte<br/> | Windows servidor 2008, Windows server 2003 com SP1<br/>                          |
+| Cabeçalho<br/>                   | <dl> <dt>Ntddstor. h</dt> </dl> |
 
 
 
@@ -98,7 +98,7 @@ O arquivo de título Ntddstor.h está disponível no WDK (Kit Windows Driver).
 
 <dl> <dt>
 
-[**CAPACIDADE DE LEITURA DO ARMAZENAMENTO IOCTL \_ \_ \_**](/windows/desktop/api/WinIoCtl/ni-winioctl-ioctl_storage_read_capacity)
+[**\_capacidade de \_ leitura do armazenamento do IOCTL \_**](/windows/desktop/api/WinIoCtl/ni-winioctl-ioctl_storage_read_capacity)
 </dt> </dl>
 
  

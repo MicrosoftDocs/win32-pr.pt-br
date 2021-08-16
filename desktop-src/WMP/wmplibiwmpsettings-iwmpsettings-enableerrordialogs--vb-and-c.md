@@ -27,7 +27,7 @@ ms.locfileid: "118568428"
 
 A **propriedade enableErrorDialogs** obtém ou define um valor que indica se as caixas de diálogo de erro são exibidas automaticamente.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 ```CSharp

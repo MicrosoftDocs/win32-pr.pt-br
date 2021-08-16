@@ -4,12 +4,12 @@ description: Saiba como configurar o suplicante habilitando a política de grupo
 ms.assetid: ac04b83b-1322-41d4-85e0-93687f10a7f6
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: af7b57e736bf078068156f6aff10d294621749a2
-ms.sourcegitcommit: b0ebdefc3dcd5c04bede94091833aa1015a2f95c
+ms.openlocfilehash: 4b2a388bf8dba155e42d5542c1379f7b0cc34d44579b92809387541d7e20cf65
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "104366732"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118784995"
 ---
 # <a name="enabling-group-policy"></a>Habilitando Política de Grupo
 
@@ -23,7 +23,7 @@ Essas são as considerações para suplicantes em relação à diretiva de grupo
 
 1.  A configuração de EAP sempre deve ser armazenada como XML sempre que possível e não no formato binário. A política de grupo pode ser aplicada a qualquer computador no domínio, e a configuração do método EAP e os dados do usuário não têm garantia de serem portáteis entre as arquiteturas de processador de 32 bits e 64 bits. O XML resolve os problemas de limite da arquitetura do processador, pois o suplicante converte localmente o XML independente da arquitetura do processador na representação binária da configuração no momento da autenticação.
 
-    Para obter mais informações, consulte os tópicos a seguir.
+    Para obter mais informações, consulte estes tópicos.
 
     -   [Perguntas frequentes gerais](general-frequently-asked-questions.md)
     -   [Perguntas frequentes sobre o método EAP](eap-method-frequently-asked-questions.md).
@@ -51,9 +51,9 @@ Essas são as considerações para suplicantes em relação à diretiva de grupo
 [Suplicantes do EAPHost](eaphost-supplicants.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

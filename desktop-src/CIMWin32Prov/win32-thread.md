@@ -1,8 +1,8 @@
 ---
-description: O thread Win32 \_&\# 8194; A classe WMI representa um thread de execução.
+description: O \_ Thread Win32&\# 8194; A classe WMI representa um thread de execução.
 ms.assetid: a284616c-1977-441a-9173-dff4f56b2d39
 ms.tgt_platform: multiple
-title: Win32_Thread classe
+title: Classe Win32_Thread
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -43,11 +43,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118416712"
 ---
-# <a name="win32_thread-class"></a>Classe de thread Win32 \_
+# <a name="win32_thread-class"></a>\_Classe de Thread Win32
 
-A **classe WMI de \_ Thread Win32** representa um thread de execução. [](../wmisdk/retrieving-a-class.md) Embora um processo deve ter um thread de execução, o processo pode criar outros threads para executar tarefas em paralelo. Os threads compartilham o ambiente de processo, portanto, vários threads no mesmo processo usam menos memória do que o mesmo número de processos.
+A  [classe WMI](../wmisdk/retrieving-a-class.md) de **\_ thread do Win32** representa um thread de execução. Embora um processo deva ter um thread de execução, o processo pode criar outros threads para executar tarefas em paralelo. Os threads compartilham o ambiente de processo, assim, vários threads no mesmo processo usam menos memória do que o mesmo número de processos.
 
-A sintaxe a seguir é simplificada do código MOF (Managed Object Format) e inclui todas as propriedades herdadas. As propriedades e os métodos estão em ordem alfabética, não em ordem MOF.
+A sintaxe a seguir é simplificada do código MOF (Managed Object Format) e inclui todas as propriedades herdadas. As propriedades e os métodos estão em ordem alfabética, não em ordem de MOF.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -82,13 +82,13 @@ class Win32_Thread : CIM_Thread
 
 ## <a name="members"></a>Membros
 
-A **classe \_ Thread Win32** tem estes tipos de membros:
+A **classe \_ thread do Win32** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A **classe \_ Thread win32** tem essas propriedades.
+A **classe \_ thread do Win32** tem essas propriedades.
 
 <dl> <dt>
 
@@ -101,12 +101,12 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MaxLen**](../wmisdk/standard-qualifiers.md) (64), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Legenda")
+Qualificadores: [**maxlen**](../wmisdk/standard-qualifiers.md) (64), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Caption")
 </dt> </dl>
 
-Descrição curta do objeto.
+Breve descrição do objeto.
 
-Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
+Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
 
 </dd> <dt>
 
@@ -119,12 +119,12 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**Cim \_ Key**](../wmisdk/standard-wmi-qualifiers.md), [**MaxLen**](../wmisdk/standard-qualifiers.md) (256)
+Qualificadores: [**\_ chave CIM**](../wmisdk/standard-wmi-qualifiers.md), [**maxlen**](../wmisdk/standard-qualifiers.md) (256)
 </dt> </dl>
 
-Nome da primeira classe concreta a ser exibida na cadeia de herança usada na criação de uma instância. Quando usada com as outras propriedades de chave da classe , essa propriedade permite que todas as instâncias dessa classe e suas subclasses sejam identificadas exclusivamente.
+Nome da primeira classe concreta a ser exibida na cadeia de herança usada na criação de uma instância. Quando usado com as outras propriedades de chave da classe, essa propriedade permite que todas as instâncias dessa classe e suas subclasses sejam identificadas exclusivamente.
 
-Essa propriedade é herdada do [**\_ Thread CIM.**](cim-thread.md)
+Essa propriedade é herdada [**do \_ thread CIM**](cim-thread.md).
 
 </dd> <dt>
 
@@ -137,12 +137,12 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**Propagado**](../wmisdk/standard-qualifiers.md) ("[**Processo CIM \_**](cim-process.md).**CSCreationClassName**"), [**Cim \_ Key,**](../wmisdk/standard-wmi-qualifiers.md) [**MaxLen**](../wmisdk/standard-qualifiers.md) (256)
+Qualificadores: [**propagados**](../wmisdk/standard-qualifiers.md) ([**" \_ processo CIM**](cim-process.md).**CSCreationClassName**"), [**\_ chave CIM**](../wmisdk/standard-wmi-qualifiers.md), [**maxlen**](../wmisdk/standard-qualifiers.md) (256)
 </dt> </dl>
 
-Nome da classe de criação do sistema de computador de definição de tela.
+Nome da classe de criação do sistema de computador de escopo.
 
-Essa propriedade é herdada do [**\_ Thread CIM.**](cim-thread.md)
+Essa propriedade é herdada [**do \_ thread CIM**](cim-thread.md).
 
 </dd> <dt>
 
@@ -155,12 +155,12 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**Propagado**](../wmisdk/standard-qualifiers.md) ("[**Processo CIM \_**](cim-process.md).**CSName**"), [**Cim \_ Key**](../wmisdk/standard-wmi-qualifiers.md), [**MaxLen**](../wmisdk/standard-qualifiers.md) (256)
+Qualificadores: [**propagados**](../wmisdk/standard-qualifiers.md) ([**" \_ processo CIM**](cim-process.md).**CSName**"), [**\_ chave CIM**](../wmisdk/standard-wmi-qualifiers.md), [**maxlen**](../wmisdk/standard-qualifiers.md) (256)
 </dt> </dl>
 
-Nome do sistema de computador de definição de tela.
+Nome do sistema de computador de escopo.
 
-Essa propriedade é herdada do [**\_ Thread CIM.**](cim-thread.md)
+Essa propriedade é herdada [**do \_ thread CIM**](cim-thread.md).
 
 </dd> <dt>
 
@@ -178,32 +178,32 @@ Qualificadores: [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Descriçã
 
 Descrição do objeto.
 
-Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
+Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
 
 </dd> <dt>
 
 **ElapsedTime**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **uint64**
+Tipo de dados: **UInt64**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Performance Data Structures \| [**PERF OBJECT \_ \_ TYPE**](/windows/win32/api/winperf/ns-winperf-perf_object_type) \| PerfTime"), [**Unidades**](../wmisdk/standard-qualifiers.md) ("milissegundos")
+Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("win32api de \| dados de desempenho de estruturas \| [**PerfTime de \_ \_ tipo de objeto**](/windows/win32/api/winperf/ns-winperf-perf_object_type) \| "), [**unidades**](../wmisdk/standard-qualifiers.md) ("milissegundos")
 </dt> </dl>
 
-Tempo total de execução, em milissegundos, dado a esse thread desde sua criação.
+Tempo de execução total, em milissegundos, fornecido para esse thread desde sua criação.
 
-Para obter mais informações sobre como **usar valores uint64** em scripts, consulte [Scripts no WMI](../wmisdk/creating-a-wmi-script.md).
+Para obter mais informações sobre como usar valores de **UInt64** em scripts, consulte [scripts no WMI](../wmisdk/creating-a-wmi-script.md).
 
 </dd> <dt>
 
 **ExecutionState**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **uint16**
+Tipo de dados: **UInt16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -211,7 +211,7 @@ Tipo de acesso: Somente leitura
 
 Condição operacional atual do thread.
 
-Essa propriedade é herdada do [**\_ Thread CIM.**](cim-thread.md)
+Essa propriedade é herdada [**do \_ thread CIM**](cim-thread.md).
 
 <dt>
 
@@ -224,7 +224,7 @@ Essa propriedade é herdada do [**\_ Thread CIM.**](cim-thread.md)
 
 <span id="Other"></span><span id="other"></span><span id="OTHER"></span>
 
-**Outros** (1)
+**Outro** (1)
 
 
 </dt> <dd></dd> <dt>
@@ -238,7 +238,7 @@ Essa propriedade é herdada do [**\_ Thread CIM.**](cim-thread.md)
 
 <span id="Running"></span><span id="running"></span><span id="RUNNING"></span>
 
-**Executando** (3)
+**Em execução** (3)
 
 
 </dt> <dd></dd> <dt>
@@ -259,7 +259,7 @@ Essa propriedade é herdada do [**\_ Thread CIM.**](cim-thread.md)
 
 <span id="Suspended_Ready"></span><span id="suspended_ready"></span><span id="SUSPENDED_READY"></span>
 
-**Suspenso Pronto** (6)
+**Pronto suspenso** (6)
 
 
 </dt> <dd></dd> </dl>
@@ -275,46 +275,46 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MaxLen**](../wmisdk/standard-qualifiers.md) (256), [**Override**](../wmisdk/standard-qualifiers.md) ("Handle"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Tool Help Structures \| [**THREADENTRY32**](/windows/win32/api/tlhelp32/ns-tlhelp32-threadentry32) \| th32ThreadID")
+Qualificadores: [**maxlen**](../wmisdk/standard-qualifiers.md) (256), [**substitua**](../wmisdk/standard-qualifiers.md) ("Handle"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("win32api de \| ferramentas de ajuda da ferramenta \| [**THREADENTRY32**](/windows/win32/api/tlhelp32/ns-tlhelp32-threadentry32) \| th32ThreadID")
 </dt> </dl>
 
-Lidar com um thread. O handle tem direitos de acesso completo por padrão. Com o acesso de segurança correto, o handle pode ser usado em qualquer função que aceite um alça de thread. Dependendo do sinalizador de herança especificado quando ele é criado, esse manipular pode ser herdado por processos filho.
+Identificador para um thread. O identificador tem direitos de acesso completo por padrão. Com o acesso de segurança correto, o identificador pode ser usado em qualquer função que aceite um identificador de thread. Dependendo do sinalizador de herança especificado quando ele é criado, esse identificador pode ser herdado por processos filho.
 
 </dd> <dt>
 
 **InstallDate**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **datetime**
+Tipo de dados: **DateTime**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("MIF. DMTF \| ComponentID \| 001.5"), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Data de instalação")
+Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("MIF. \|Componente DMTF \| 1,5 "), [**DisplayName**](../wmisdk/standard-qualifiers.md) (" data de instalação ")
 </dt> </dl>
 
 O objeto foi instalado. Essa propriedade não precisa de um valor para indicar que o objeto está instalado.
 
-Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
+Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
 
 </dd> <dt>
 
 **KernelModeTime**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **uint64**
+Tipo de dados: **UInt64**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**Substituir**](../wmisdk/standard-qualifiers.md) ("KernelModeTime"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Performance Data Structures \| [**PERF OBJECT \_ \_ TYPE**](/windows/win32/api/winperf/ns-winperf-perf_object_type) \| PrivilegedTime"), [**Unidades**](../wmisdk/standard-qualifiers.md) ("100 nanossegundos")
+Qualificadores: [**override**](../wmisdk/standard-qualifiers.md) ("KernelModeTime"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("win32api \| desempenho estruturas de dados \| [**perf de \_ \_ tipo de objeto**](/windows/win32/api/winperf/ns-winperf-perf_object_type)com \| privilegetime"), [**unidades**](../wmisdk/standard-qualifiers.md) ("100 nanossegundos")
 </dt> </dl>
 
-Tempo no modo kernel, em unidades de 100 nanossegundos. Se essas informações não estão disponíveis, um valor de 0 (zero) deve ser usado.
+Tempo no modo kernel, em unidades de 100 nanossegundos. Se essas informações não estiverem disponíveis, um valor de 0 (zero) deverá ser usado.
 
-Para obter mais informações sobre como **usar valores uint64** em scripts, consulte [Scripts no WMI](../wmisdk/creating-a-wmi-script.md).
+Para obter mais informações sobre como usar valores de **UInt64** em scripts, consulte [scripts no WMI](../wmisdk/creating-a-wmi-script.md).
 
 </dd> <dt>
 
@@ -327,12 +327,12 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Nome")
+Qualificadores: [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Name")
 </dt> </dl>
 
-Rótulo pelo qual o objeto é conhecido. Quando subclasse, a propriedade pode ser substituído para ser uma propriedade de chave.
+Rótulo pelo qual o objeto é conhecido. Quando em uma subclasse, a propriedade pode ser substituída para ser uma propriedade de chave.
 
-Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
+Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
 
 </dd> <dt>
 
@@ -345,12 +345,12 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**Propagado**](../wmisdk/standard-qualifiers.md) ("[**Processo CIM \_**](cim-process.md).**OSCreationClassName**"), [**Cim \_ Key**](../wmisdk/standard-wmi-qualifiers.md), [**MaxLen**](../wmisdk/standard-qualifiers.md) (256)
+Qualificadores: [**propagados**](../wmisdk/standard-qualifiers.md) ([**" \_ processo CIM**](cim-process.md).**OSCreationClassName**"), [**\_ chave CIM**](../wmisdk/standard-wmi-qualifiers.md), [**maxlen**](../wmisdk/standard-qualifiers.md) (256)
 </dt> </dl>
 
-Nome da classe de criação do sistema operacional de criação.
+Nome da classe de criação do sistema operacional de escopo.
 
-Essa propriedade é herdada do [**\_ Thread CIM.**](cim-thread.md)
+Essa propriedade é herdada [**do \_ thread CIM**](cim-thread.md).
 
 </dd> <dt>
 
@@ -363,44 +363,44 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**Propagado**](../wmisdk/standard-qualifiers.md) ("[**Processo CIM \_**](cim-process.md).**OSName**"), [**Cim \_ Key**](../wmisdk/standard-wmi-qualifiers.md), [**MaxLen**](../wmisdk/standard-qualifiers.md) (256)
+Qualificadores: [**propagados**](../wmisdk/standard-qualifiers.md) ([**" \_ processo CIM**](cim-process.md).**OSName**"), [**\_ chave CIM**](../wmisdk/standard-wmi-qualifiers.md), [**maxlen**](../wmisdk/standard-qualifiers.md) (256)
 </dt> </dl>
 
-Nome do sistema operacional de definição de scoping.
+Nome do sistema operacional de escopo.
 
-Essa propriedade é herdada do [**\_ Thread CIM.**](cim-thread.md)
+Essa propriedade é herdada [**do \_ thread CIM**](cim-thread.md).
 
 </dd> <dt>
 
 **Prioridade**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **uint32**
+Tipo de dados: **UInt32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**Substituir**](../wmisdk/standard-qualifiers.md) ("Prioridade"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Tool Help Structures \| [**THREADENTRY32**](/windows/win32/api/tlhelp32/ns-tlhelp32-threadentry32) \| tpDeltaPri")
+Qualificadores: [**override**](../wmisdk/standard-qualifiers.md) ("Priority"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("win32api da \| ferramenta de ajuda do \| [**THREADENTRY32**](/windows/win32/api/tlhelp32/ns-tlhelp32-threadentry32) \| tpDeltaPri")
 </dt> </dl>
 
-Prioridade dinâmica do thread. Cada thread tem uma prioridade dinâmica que o agendador usa para determinar qual thread executar. Inicialmente, a prioridade dinâmica de um thread é a mesma que sua prioridade base. O sistema pode aumentar e diminuir a prioridade dinâmica, para garantir que ele seja responsivo (garantindo que nenhum thread seja destruído pelo tempo do processador). O sistema não aumenta a prioridade de threads com um nível de prioridade base entre 16 e 31. Somente threads com uma prioridade base entre 0 e 15 recebem aumentos de prioridade dinâmica. Números mais altos indicam prioridades mais altas.
+Prioridade dinâmica do thread. Cada thread tem uma prioridade dinâmica que o Agendador usa para determinar qual thread deve ser executado. Inicialmente, a prioridade dinâmica de um thread é igual à prioridade base. O sistema pode aumentar e diminuir a prioridade dinâmica, para garantir que ela seja responsiva (garantindo que nenhum thread fique sem falta para o tempo do processador). O sistema não aumenta a prioridade de threads com um nível de prioridade base entre 16 e 31. Somente os threads com uma prioridade básica entre 0 e 15 recebem aumentos de prioridade dinâmica. Números mais altos indicam prioridades mais altas.
 
 </dd> <dt>
 
 **PriorityBase**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **uint32**
+Tipo de dados: **UInt32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Performance Data Structures \| [**PERF OBJECT \_ \_ TYPE**](/windows/win32/api/winperf/ns-winperf-perf_object_type) \| PerfPriorityBase")
+Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("win32api do \| tipo de \| [**\_ objeto perf \_**](/windows/win32/api/winperf/ns-winperf-perf_object_type)de estruturas de dados de desempenho \| PerfPriorityBase")
 </dt> </dl>
 
-Prioridade base atual de um thread. O sistema operacional poderá aumentar a prioridade dinâmica do thread acima da prioridade base se o thread estiver tratando a entrada do usuário ou reduzi-la para a prioridade base se o thread se tornar vinculado à computação. A **propriedade PriorityBase** pode ter um valor entre 0 e 31.
+Prioridade base atual de um thread. O sistema operacional pode aumentar a prioridade dinâmica do thread acima da prioridade base se o thread estiver manipulando a entrada do usuário ou reduzindo-a em direção à prioridade base se o thread se tornar associado à computação. A propriedade **PriorityBase** pode ter um valor entre 0 e 31.
 
 </dd> <dt>
 
@@ -413,12 +413,12 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**Propagado**](../wmisdk/standard-qualifiers.md) ("[**Processo CIM \_**](cim-process.md).**CreationClassName**"), [**Cim \_ Key**](../wmisdk/standard-wmi-qualifiers.md), [**MaxLen**](../wmisdk/standard-qualifiers.md) (256)
+Qualificadores: [**propagados**](../wmisdk/standard-qualifiers.md) ([**" \_ processo CIM**](cim-process.md).**CreationClassName**"), [**\_ chave CIM**](../wmisdk/standard-wmi-qualifiers.md), [**maxlen**](../wmisdk/standard-qualifiers.md) (256)
 </dt> </dl>
 
-Valor da propriedade **CreationClassName** do processo de scoping.
+Valor da propriedade **CreationClassName** do processo de escopo.
 
-Essa propriedade é herdada do [**\_ Thread CIM.**](cim-thread.md)
+Essa propriedade é herdada [**do \_ thread CIM**](cim-thread.md).
 
 </dd> <dt>
 
@@ -431,23 +431,23 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MaxLen**](../wmisdk/standard-qualifiers.md) (256), [**Override**](../wmisdk/standard-qualifiers.md) ("ProcessHandle"), [**Propagated**](../wmisdk/standard-qualifiers.md) ("[**CIM \_ Process**](cim-process.md).**Handle**"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Tool Help Structures \| [**THREADENTRY32**](/windows/win32/api/tlhelp32/ns-tlhelp32-threadentry32) \| th32OwnerProcessID")
+Qualificadores: [**maxlen**](../wmisdk/standard-qualifiers.md) (256), [**override**](../wmisdk/standard-qualifiers.md) ("ProcessHandle"), [**propagado**](../wmisdk/standard-qualifiers.md) ([**" \_ processo CIM**](cim-process.md).**Handle**"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) (" win32api \| ferramenta ajuda estruturas \| [**THREADENTRY32**](/windows/win32/api/tlhelp32/ns-tlhelp32-threadentry32) \| th32OwnerProcessID ")
 </dt> </dl>
 
-Processo que criou o thread. O conteúdo dessa propriedade pode ser usado por Windows de API (interface de programação de aplicativo).
+Processo que criou o thread. o conteúdo dessa propriedade pode ser usado por Windows elementos da API (interface de programação de aplicativo).
 
 </dd> <dt>
 
-**Startaddress**
+**StartAddress**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **uint32**
+Tipo de dados: **UInt32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WIn32API \| Thread Object \| LPTHREAD \_ START ROUTINE \_ \| lpStartAddress")
+Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) (" \| objeto de thread WIn32API \| LPTHREAD lpStartAddress de rotina de \_ inicialização \_ \| ")
 </dt> </dl>
 
 Endereço inicial do thread. Como qualquer aplicativo com acesso apropriado ao thread pode alterar o contexto do thread, esse valor pode ser apenas uma aproximação do endereço inicial do thread.
@@ -463,12 +463,12 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MaxLen**](../wmisdk/standard-qualifiers.md) (10), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Status")
+Qualificadores: [**maxlen**](../wmisdk/standard-qualifiers.md) (10), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("status")
 </dt> </dl>
 
-Status atual do objeto. Vários status operacionais e não operacionais podem ser definidos. Os status operacionais incluem: "OK", "Degradado" e "Pred Fail" (um elemento, como uma unidade de disco rígido habilitada para SMART, pode estar funcionando corretamente, mas prevendo uma falha em um futuro próximo). Os status nãooperacionais incluem: "Error", "Starting", "Stopping" e "Service". O último, "Serviço", pode ser aplicado durante o espelhamento de um disco, o recarregamento de uma lista de permissões de usuário ou outro trabalho administrativo. Nem todo esse trabalho está online, mas o elemento gerenciado não é "OK" nem em um dos outros estados.
+Status atual do objeto. Vários status de operação e não operacional podem ser definidos. Os status operacionais incluem: "OK", "degradado" e "Pred falha" (um elemento, como uma unidade de disco rígido habilitado para inteligente, pode estar funcionando corretamente, mas prevendo uma falha em um futuro próximo). Os status não operacionais incluem: "erro", "Iniciando", "parando" e "serviço". O último, "Service", pode ser aplicado durante o espelhamento de espelho de um disco, recarregar uma lista de permissões de usuário ou outro trabalho administrativo. Nem todo esse trabalho está online, mas o elemento gerenciado não é "OK" nem em um dos outros Estados.
 
-Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
+Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
 
 Os valores são:
 
@@ -483,28 +483,28 @@ Os valores são:
 
 <span id="Error"></span><span id="error"></span><span id="ERROR"></span>
 
-**Erro** ("Erro")
+**Erro** ("erro")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Degraded"></span><span id="degraded"></span><span id="DEGRADED"></span>
 
-**Degradado** ("Degradado")
+**Degradado** ("degradado")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>
 
-**Desconhecido** ("Desconhecido")
+**Desconhecido** ("desconhecido")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Pred_Fail"></span><span id="pred_fail"></span><span id="PRED_FAIL"></span>
 
-**Pred Fail** ("Pred Fail")
+**Falha de Pred** ("Pred Fail")
 
 
 </dt> <dd></dd> <dt>
@@ -518,61 +518,61 @@ Os valores são:
 
 <span id="Stopping"></span><span id="stopping"></span><span id="STOPPING"></span>
 
-**Parando** ("Parando")
+**Parando** ("parando")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Service"></span><span id="service"></span><span id="SERVICE"></span>
 
-**Serviço** ("Serviço")
+**Serviço** ("serviço")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Stressed"></span><span id="stressed"></span><span id="STRESSED"></span>
 
-**Stressed** ("Stressed")
+**Sob estresse** ("sob estresse")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="NonRecover"></span><span id="nonrecover"></span><span id="NONRECOVER"></span>
 
-**NonRecover** ("NonRecover")
+Não **recuperar** ("Recover")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="No_Contact"></span><span id="no_contact"></span><span id="NO_CONTACT"></span>
 
-**Sem contato** ("Sem contato")
+**Sem contato** ("sem contato")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Lost_Comm"></span><span id="lost_comm"></span><span id="LOST_COMM"></span>
 
-**Perda de vírgula** ("comm perdida")
+**Perda de comunicação** ("perda de comunicação")
 
 
 </dt> <dd></dd> </dl>
 
 </dd> <dt>
 
-**Threadstate**
+**ThreadState**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **uint32**
+Tipo de dados: **UInt32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Thread State")
+Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) (" \| estado de thread win32api")
 </dt> </dl>
 
-Estado de execução atual para o thread.
+Estado de execução atual do thread.
 
 <dt>
 
@@ -594,29 +594,29 @@ Inicializado — ele é reconhecido pelo microkernel.
 
 </dt> <dd>
 
-Pronto – ele está preparado para ser executado no próximo processador disponível.
+Pronto — ele está preparado para ser executado no próximo processador disponível.
 
 </dd> <dt>
 
 <span id="Running"></span><span id="running"></span><span id="RUNNING"></span>
 
-<span id="Running"></span><span id="running"></span><span id="RUNNING"></span>**Em** execução (2)
+<span id="Running"></span><span id="running"></span><span id="RUNNING"></span>**Em execução** (2)
 
 
 </dt> <dd>
 
-Executando – está em execução.
+Em execução — está em execução.
 
 </dd> <dt>
 
 <span id="Standby"></span><span id="standby"></span><span id="STANDBY"></span>
 
-<span id="Standby"></span><span id="standby"></span><span id="STANDBY"></span>**Espera** (3)
+<span id="Standby"></span><span id="standby"></span><span id="STANDBY"></span>Em **espera** (3)
 
 
 </dt> <dd>
 
-Em espera — ele está prestes a ser executado, apenas um thread pode estar nesse estado por vez.
+Em espera — está prestes a ser executado, somente um thread pode estar nesse estado por vez.
 
 </dd> <dt>
 
@@ -627,7 +627,7 @@ Em espera — ele está prestes a ser executado, apenas um thread pode estar nes
 
 </dt> <dd>
 
-Encerrado – a execução foi concluída.
+Encerrado – concluiu a execução.
 
 </dd> <dt>
 
@@ -638,7 +638,7 @@ Encerrado – a execução foi concluída.
 
 </dt> <dd>
 
-Aguardando – Ele não está pronto para o processador, quando pronto, ele será reagendado.
+Aguardando — ele não está pronto para o processador, quando estiver pronto, ele será reagendado.
 
 </dd> <dt>
 
@@ -649,7 +649,7 @@ Aguardando – Ele não está pronto para o processador, quando pronto, ele ser�
 
 </dt> <dd>
 
-Transição — o thread está aguardando recursos que não o processador,
+Transição — o thread está aguardando recursos diferentes do processador,
 
 </dd> <dt>
 
@@ -669,16 +669,16 @@ Desconhecido — o estado do thread é desconhecido.
 **ThreadWaitReason**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **uint32**
+Tipo de dados: **UInt32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Thread Wait Reason")
+Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) (" \| motivo de espera de thread win32api")
 </dt> </dl>
 
-Motivo pelo qual o thread está aguardando. Esse valor só será válido se o **membro ThreadState** estiver definido como Transição (6). Os pares de eventos permitem a comunicação com subsistemas protegidos.
+Motivo pelo qual o thread está aguardando. Esse valor só será válido se o membro **ThreadState** estiver definido como Transition (6). Os pares de eventos permitem a comunicação com subsistemas protegidos.
 
 <dt>
 
@@ -702,7 +702,7 @@ FreePage
 
 <span id="PageIn"></span><span id="pagein"></span><span id="PAGEIN"></span>
 
-<span id="PageIn"></span><span id="pagein"></span><span id="PAGEIN"></span>**PageIn** (2)
+<span id="PageIn"></span><span id="pagein"></span><span id="PAGEIN"></span>**Página** (2)
 
 
 </dt> <dd></dd> <dt>
@@ -730,7 +730,7 @@ FreePage
 
 <span id="PageIn"></span><span id="pagein"></span><span id="PAGEIN"></span>
 
-<span id="PageIn"></span><span id="pagein"></span><span id="PAGEIN"></span>**PageIn** (6)
+<span id="PageIn"></span><span id="pagein"></span><span id="PAGEIN"></span>**Página** (6)
 
 
 </dt> <dd></dd> <dt>
@@ -751,7 +751,7 @@ FreePage
 
 <span id="PageIn"></span><span id="pagein"></span><span id="PAGEIN"></span>
 
-<span id="PageIn"></span><span id="pagein"></span><span id="PAGEIN"></span>**Página** (9)
+<span id="PageIn"></span><span id="pagein"></span><span id="PAGEIN"></span>**PageIn** (9)
 
 
 </dt> <dd></dd> <dt>
@@ -779,7 +779,7 @@ FreePage
 
 <span id="PageIn"></span><span id="pagein"></span><span id="PAGEIN"></span>
 
-<span id="PageIn"></span><span id="pagein"></span><span id="PAGEIN"></span>**Página** (13)
+<span id="PageIn"></span><span id="pagein"></span><span id="PAGEIN"></span>**PageIn** (13)
 
 
 </dt> <dd></dd> <dt>
@@ -821,7 +821,7 @@ FreePage
 
 <span id="PageOut"></span><span id="pageout"></span><span id="PAGEOUT"></span>
 
-<span id="PageOut"></span><span id="pageout"></span><span id="PAGEOUT"></span>**Pageout** (19)
+<span id="PageOut"></span><span id="pageout"></span><span id="PAGEOUT"></span>**PageOut** (19)
 
 
 </dt> <dd></dd> <dt>
@@ -835,41 +835,41 @@ FreePage
 
 </dd> <dt>
 
-**Usermodetime**
+**UserModeTime**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt64**
+Tipo de dados: **uint64**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**substituir**](../wmisdk/standard-qualifiers.md) ("usermodetime"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("win32api de \| dados de desempenho do \| [**\_ tipo perf Object \_ Type**](/windows/win32/api/winperf/ns-winperf-perf_object_type) \| "), [**Units**](../wmisdk/standard-qualifiers.md) ("100 nanossegundos")
+Qualificadores: [**Substituir**](../wmisdk/standard-qualifiers.md) ("UserModeTime"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Performance Data Structures \| [**PERF OBJECT \_ \_ TYPE**](/windows/win32/api/winperf/ns-winperf-perf_object_type) \| UserTime"), [**Unidades**](../wmisdk/standard-qualifiers.md) ("100 nanossegundos")
 </dt> </dl>
 
-Tempo no modo de usuário, em unidades de 100 nanossegundos. Se essas informações não estiverem disponíveis, um valor de 0 (zero) deverá ser usado.
+Tempo no modo de usuário, em unidades de 100 nanossegundos. Se essas informações não estão disponíveis, um valor de 0 (zero) deve ser usado.
 
-Para obter mais informações sobre como usar valores de **UInt64** em scripts, consulte [scripts no WMI](../wmisdk/creating-a-wmi-script.md).
+Para obter mais informações sobre como **usar valores uint64** em scripts, consulte [Scripts no WMI](../wmisdk/creating-a-wmi-script.md).
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-A classe de **\_ Thread Win32** é derivada [**do \_ thread CIM**](cim-thread.md).
+A **classe \_ Thread Win32** é derivada do [**\_ Thread CIM.**](cim-thread.md)
 
 **Visão geral**
 
-Para o monitoramento diário de rotina, geralmente há pouco motivo para ter uma lista detalhada de threads e suas propriedades associadas. Os computadores criam e excluem milhares de threads durante um dia, e algumas dessas criações ou exclusões são significativas para qualquer pessoa, exceto para o desenvolvedor que escreveu o software.
+Para o monitoramento rotineiro, geralmente há pouco motivo para ter uma lista detalhada de threads e suas propriedades associadas. Os computadores criam e excluem milhares de threads durante um dia, e algumas dessas criações ou exclusões são significativas para qualquer pessoa, menos para o desenvolvedor que escreveu o software.
 
-No entanto, quando você está Solucionando problemas com um aplicativo, controlar os threads individuais de um processo permite que você identifique quando os threads são criados e quando (ou se) eles são destruídos. Como os threads criados mas não destruídos causam vazamentos de memória, o acompanhamento de threads individuais pode ser uma informação útil para técnicos de suporte. Da mesma forma, a identificação de prioridades de thread pode ajudar a identificar threads que, ao executar em uma prioridade muito alta, estão admitindo antecipadamente os ciclos de CPU necessários para outros threads e outros processos.
+No entanto, quando você está solucionando problemas com um aplicativo, acompanhar os threads individuais para um processo permite identificar quando os threads são criados e quando (ou se) eles são destruídos. Como os threads criados, mas não destruídos, causam vazamentos de memória, o acompanhamento de threads individuais pode ser uma informação útil para técnicos de suporte. Da mesma forma, identificar prioridades de thread pode ajudar a identificar threads que, executando em uma prioridade anormalmente alta, preempção de ciclos de CPU necessários para outros threads e outros processos.
 
-**Usando thread do Win32 \_**
+**Usando o thread Win32 \_**
 
-Como implícito no bloco de sintaxe anterior, a classe **\_ thread do Win32** não relata o nome do processo no qual cada thread é executado. Em vez disso, ele relata a ID do processo sob o qual o thread é executado. Para retornar o nome de um processo e uma lista de todos os seus threads, o script deve:
+Conforme implícito no bloco de sintaxe anterior, a classe **\_ Thread win32** não relata o nome do processo no qual cada thread é executado. Em vez disso, ele relata a ID do processo sob o qual o thread é executado. Para retornar o nome de um processo e uma lista de todos os threads, o script deve:
 
-1.  Conexão à classe [**de \_ processo do Win32**](win32-process.md) e retornar a lista de processos e suas IDs de processo.
-2.  Armazene temporariamente essas informações em um objeto de matriz ou de dicionário.
-3.  Para cada ID de processo, retorne a lista de threads para esse processo e, em seguida, exiba o nome do processo e a lista de threads.
+1.  Conexão para a [**classe Processo \_ win32**](win32-process.md) e retornar a lista de processos e suas IDs de processo.
+2.  Armazene temporariamente essas informações em uma matriz ou objeto Dictionary.
+3.  Para cada ID de processo, retorne a lista de threads para esse processo e, em seguida, exibe o nome do processo e a lista de threads.
 
 ## <a name="examples"></a>Exemplos
 
@@ -903,8 +903,8 @@ Next
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| Namespace<br/>                | Raiz \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Namespace<br/>                | RAIZ \\ CIMV2<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -913,7 +913,7 @@ Next
 
 <dl> <dt>
 
-[**\_Thread CIM**](cim-thread.md)
+[**CIM \_ Thread**](cim-thread.md)
 </dt> <dt>
 
 [Classes do sistema operacional](./operating-system-classes.md)

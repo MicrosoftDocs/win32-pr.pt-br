@@ -13,9 +13,9 @@ ms.locfileid: "118638725"
 ---
 # <a name="configuring-the-setupexe-resources"></a>Configurando os recursos Setup.exe dados
 
-Um executável de inicialização configurável (Setup.exe) e uma ferramenta de configuração ( [Msistuff.exe](msistuff-exe.md)) estão incluídos nos Componentes do SDK do Windows para desenvolvedores do [Windows Installer.](platform-sdk-components-for-windows-installer-developers.md) Usando o Msistuff.exe para configurar os recursos no Setup.exe, os desenvolvedores podem criar facilmente uma instalação da Web de um Windows instalador. Para obter mais informações, consulte [Inicialização de download da Internet.](internet-download-bootstrapping.md)
+Um executável de inicialização configurável (Setup.exe) e uma ferramenta de configuração ( [Msistuff.exe](msistuff-exe.md)) estão incluídos nos Componentes do [SDK](platform-sdk-components-for-windows-installer-developers.md)do Windows para desenvolvedores do Windows Installer . Usando o Msistuff.exe para configurar os recursos no Setup.exe, os desenvolvedores podem criar facilmente uma instalação da Web de um Windows instalador. Para obter mais informações, consulte [Inicialização de download da Internet.](internet-download-bootstrapping.md)
 
-Inserir a linha de comando a seguir configura os recursos para o exemplo descrito em Exemplo de instalação do instalador baseado em [URL Windows.](a-url-based-windows-installer-installation-example.md)
+Inserir a linha de comando a seguir configura os recursos para o exemplo descrito em Exemplo de instalação do instalador baseado [em URL Windows .](a-url-based-windows-installer-installation-example.md)
 
 `MsiStuff setup.exe /u https://www.blueyonderairlines.com/Products/MySetup /d MySetup.msi /n MySetup /v 150 /i https://www.blueyonderairlines.com/Products/Common/InstMsi /a Ansi/Instmsi.exe /w Unicode/Instmsi.exe`
 

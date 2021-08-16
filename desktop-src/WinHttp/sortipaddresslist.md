@@ -1,7 +1,7 @@
 ---
 description: Classifica uma lista de endereços IP.
 ms.assetid: 1266d6f3-e9f5-4e6b-9431-7329df156f0a
-title: função sortIpAddressList
+title: Função sortIpAddressList
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -19,7 +19,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118562442"
 ---
-# <a name="sortipaddresslist-function"></a>função sortIpAddressList
+# <a name="sortipaddresslist-function"></a>Função sortIpAddressList
 
 Classifica uma lista de endereços IP.
 
@@ -27,20 +27,20 @@ Classifica uma lista de endereços IP.
 
 <dl> <dt>
 
-*IpAddresslist* 
+*IpAddressList* 
 </dt> <dd>
 
-Uma cadeia de caracteres delimitada por ponto e vírgula contendo endereços IP.
+Uma cadeia de caracteres delimitada por pontos e vírgulas que contém endereços IP.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor retornado
 
-Uma lista de endereços IP delimitados por ponto-e-vírgula ou uma cadeia de caracteres vazia se não for possível classificar a lista de endereços IP.
+Uma lista de endereços IP delimitados por e vírgulas ou uma cadeia de caracteres vazia se não for possível classificar a lista de endereços IP.
 
 ## <a name="remarks"></a>Comentários
 
-Os implementadores de FindProxyforURLEx devem adicionar um código que interrompa a cadeia de caracteres de endereços IP delimitados por ponto e vírgula em endereços separados.
+Os implementadores FindProxyforURLEx devem adicionar código que divide a cadeia de caracteres de endereços IP delimitados por e vírgula em endereços separados.
 
 ## <a name="examples"></a>Exemplos
 
@@ -56,10 +56,10 @@ sortIpAddressList(2001:4898:28:3:201:2ff:feea:fc14;
 
 <dl> <dt>
 
-[Definições da API auxiliar de proxy com reconhecimento de IPv6](ipv6-aware-proxy-helper-api-definitions.md)
+[Definições de API do Auxiliar de Proxy com IPv6](ipv6-aware-proxy-helper-api-definitions.md)
 </dt> <dt>
 
-[Formato de arquivo de configuração automática de extensões IPv6 para navegador](ipv6-extensions-to-navigator-auto-config-file-format.md)
+[Extensões IPv6 para o formato de arquivo de configuração automática do navegador](ipv6-extensions-to-navigator-auto-config-file-format.md)
 </dt> </dl>
 
  

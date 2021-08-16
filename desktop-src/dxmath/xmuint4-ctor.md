@@ -1,7 +1,7 @@
 ---
 description: Construtores expostos por XMUINT4.
 ms.assetid: f942a6a3-467c-4beb-964a-b1f066f30b36
-title: Construtores XMUINT4 (Directxmath.h)
+title: Construtores XMUINT4 (Directxmath. h)
 ms.date: 07/02/2019
 ms.topic: reference
 ms.openlocfilehash: 5ccfba325142d4bffe16a890331b955425c479b50b0721af174a42cdb5e469b8
@@ -15,7 +15,7 @@ ms.locfileid: "118499545"
 
 Construtores expostos por `XMUINT4` .
 
-Constrói instâncias da [**estrutura XMUINT4.**](/windows/win32/api/directxmath/ns-directxmath-xmuint4)
+Constrói instâncias da estrutura [**XMUINT4**](/windows/win32/api/directxmath/ns-directxmath-xmuint4) .
 
 > [!Note]  
 > Os construtores listados aqui só estão disponíveis em C++.
@@ -39,8 +39,8 @@ Constrói instâncias da [**estrutura XMUINT4.**](/windows/win32/api/directxmath
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;">[<strong>XMUINT4 ()</strong>] (/windows/win32/api/directxmath/nf-directxmath-xmuint4-xmuint4(constuint32_t))</td>
-<td style="text-align: left;">Construtor padrão para <code>XMUINT4</code> . <br/> Construtor padrão para [<strong>XMUINT4</strong>](/windows/win32/api/directxmath/ns-directxmath-xmuint4). <br/>
+<td style="text-align: left;">[<strong>XMUINT4 ()</strong>] (/Windows/Win32/API/directxmath/NF-directxmath-xmuint4-xmuint4 (constuint32_t))</td>
+<td style="text-align: left;">Construtor padrão para <code>XMUINT4</code> . <br/> Construtor padrão para [<strong>XMUINT4</strong>] (/Windows/Win32/API/directxmath/NS-directxmath-xmuint4). <br/>
 <blockquote>
 [!Note]<br />
 Esse construtor só está disponível em C++.
@@ -48,8 +48,8 @@ Esse construtor só está disponível em C++.
 <br/></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">[<strong>XMUINT4 (const uint32_t*)</strong>] (/windows/win32/api/directxmath/nf-directxmath-xmuint4-xmuint4(constuint32_t))</td>
-<td style="text-align: left;">Inicializa uma nova instância de de um <code>XMUINT4</code> argumento de matriz de quatro <code>uint32_t</code> elementos. <br/> Esse construtor inicializa uma nova instância de [<strong>XMUINT4</strong>](/windows/win32/api/directxmath/ns-directxmath-xmuint4) de um de um argumento de matriz de quatro <code>uint32_t</code> elementos. <br/>
+<td style="text-align: left;">[<strong>XMUINT4 (const uint32_t *)</strong>] (/Windows/Win32/API/directxmath/NF-directxmath-xmuint4-xmuint4 (constuint32_t))</td>
+<td style="text-align: left;">Inicializa uma nova instância de <code>XMUINT4</code> de um argumento de matriz de quatro elementos <code>uint32_t</code> . <br/> Esse construtor inicializa uma nova instância de [<strong>XMUINT4</strong>] (/Windows/Win32/API/directxmath/NS-directxmath-xmuint4) de um de um argumento de matriz de quatro elementos <code>uint32_t</code> . <br/>
 <blockquote>
 [!Note]<br />
 Esse construtor só está disponível em C++.
@@ -57,8 +57,8 @@ Esse construtor só está disponível em C++.
 <br/></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">[<strong>XMUINT4 (uint32_t,uint32_t,uint32_t,uint32_t)</strong>] (/windows/win32/api/directxmath/nf-directxmath-xmuint4-xmuint4(uint32_t_uint32_t_uint32_t_uint32_t))</td>
-<td style="text-align: left;">Inicializa uma nova instância de de <code>XMUINT4</code> quatro <code>uint32_t</code> argumentos. <br/> Esse construtor inicializa uma nova instância de [<strong>XMUINT4</strong>](/windows/win32/api/directxmath/ns-directxmath-xmuint4) de quatro <code>uint32_t</code> argumentos. <br/>
+<td style="text-align: left;">[<strong>XMUINT4 (uint32_t, uint32_t, uint32_t, uint32_t)</strong>] (/Windows/Win32/API/directxmath/NF-directxmath-xmuint4-xmuint4 (uint32_t_uint32_t_uint32_t_uint32_t))</td>
+<td style="text-align: left;">Inicializa uma nova instância do de <code>XMUINT4</code> quatro <code>uint32_t</code> argumentos. <br/> Esse construtor inicializa uma nova instância de [<strong>XMUINT4</strong>] (/Windows/Win32/API/directxmath/NS-directxmath-xmuint4) de quatro <code>uint32_t</code> argumentos. <br/>
 <blockquote>
 [!Note]<br />
 Esse construtor só está disponível em C++.
@@ -76,7 +76,7 @@ Esse construtor só está disponível em C++.
 
 | Requisito | Valor |
 |-------------------|------------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>Directxmath.h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>Directxmath. h</dt> </dl> |
 
 
 

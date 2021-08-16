@@ -4,12 +4,12 @@ ms.assetid: 3c49dd0a-836f-43f1-b383-357e8ba6545f
 title: Estruturas de especialistas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 34b9da00a71c3cdb9defe4396f4339f750cca359
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 16accf769b0983b782a6e6dbd723dd08df27415220bda1d59122b951439bac65
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103920710"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118939013"
 ---
 # <a name="expert-structures"></a>Estruturas de especialistas
 
@@ -17,7 +17,7 @@ As funções auxiliares de especialistas fornecidas por Monitor de Rede e funç�
 
 
 
-| Estrutura                                              | Descrição                                                                                            |
+| Estrutura                                              | Description                                                                                            |
 |--------------------------------------------------------|--------------------------------------------------------------------------------------------------------|
 | [**CONFIGUREDEXPERT**](configuredexpert.md)           | Associa uma DLL de especialista à sua configuração.                                                       |
 | [**EXPERTCONFIG**](expertconfig.md)                   | Fornece dados de configuração brutos.                                                                       |

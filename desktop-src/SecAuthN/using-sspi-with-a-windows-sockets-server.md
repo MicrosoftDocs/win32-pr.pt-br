@@ -1,28 +1,28 @@
 ---
-description: Este programa de exemplo funciona com o programa cliente usando SSPI com um cliente do Windows Sockets. Ambos os programas de exemplo usam o arquivo de cabeçalho SspiExample. h, que pode ser encontrado no arquivo de cabeçalho para exemplos de cliente e servidor SSPI.
+description: Este programa de exemplo funciona com o programa cliente Usando SSPI com um Windows Sockets Client. Ambos os programas de exemplo usam o arquivo de header SspiExample.h, que pode ser encontrado em Arquivo de Header para exemplos de cliente e servidor SSPI.
 ms.assetid: 4fa044c7-cce2-4a43-8f68-16cf3a4daaee
-title: Usando SSPI com um Windows Sockets Server
+title: Usando SSPI com um servidor Windows Sockets
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b4dde8f5ab88dbd0c1fd95f1fdfee8d192a55087
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d47a8aac18ea89f479b61e004c59131f1d2c312d34ddae01db2bd022377ea475
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105769195"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118915169"
 ---
-# <a name="using-sspi-with-a-windows-sockets-server"></a>Usando SSPI com um Windows Sockets Server
+# <a name="using-sspi-with-a-windows-sockets-server"></a>Usando SSPI com um servidor Windows Sockets
 
-Este programa de exemplo funciona com o programa cliente [usando SSPI com um cliente do Windows Sockets](using-sspi-with-a-windows-sockets-client.md). Ambos os programas de exemplo usam o arquivo de cabeçalho SspiExample. h, que pode ser encontrado no [arquivo de cabeçalho para exemplos de cliente e servidor SSPI](header-file-for-sspi-client-and-server.md).
+Este programa de exemplo funciona com o programa cliente [Usando SSPI com um Windows Sockets Client](using-sspi-with-a-windows-sockets-client.md). Ambos os programas de exemplo usam o arquivo de header SspiExample.h, que pode ser encontrado em Arquivo de Header para exemplos de cliente [e servidor SSPI](header-file-for-sspi-client-and-server.md).
 
-Este programa inclui chamadas para funções em Secur32. lib e Ws2 \_ 32. lib, que devem ser incluídas entre as bibliotecas de links.
+Esse programa inclui chamadas para funções em Secur32.lib e Ws2 32.lib, que devem ser incluídas entre \_ as bibliotecas de link.
 
 Este programa demonstra o seguinte:
 
--   Estabelecendo uma conexão com o Windows Sockets com um cliente.
+-   Estabelecer uma Windows de soquetes com um cliente.
 -   Inicializando uma sessão.
--   Conectar-se a um cliente e estabelecer uma sessão de comunicação segura. O servidor aqui oferece o Negotiate SSP que pode responder ao cliente com NTLM ou Kerberos.
--   Usa a representação do cliente e reverte para o próprio.
+-   Conectar-se a um cliente e estabelecer uma sessão de comunicação segura. O servidor aqui oferece o SSP negotiate que pode responder ao cliente com NTLM ou Kerberos.
+-   Usa a representação do cliente e a reversão para si mesmo.
 -   Envia ao cliente uma mensagem criptografada.
 
 Este programa de exemplo usa tratamento de erro limitado.

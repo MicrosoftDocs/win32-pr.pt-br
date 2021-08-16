@@ -1,8 +1,8 @@
 ---
 title: palavra-chave sh_mutex
-description: A palavra-chave \ sh \_ mutex\ especifica que o objeto do sistema é um identificador para um mutex.
+description: A \_ palavra-chave \ sh mutex \ especifica que o objeto do sistema é um identificador para um mutex.
 keywords:
-- sh_mutex palavra-chave MIDL
+- MIDL de palavra-chave sh_mutex
 topic_type:
 - apiref
 api_name:
@@ -18,9 +18,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118641361"
 ---
-# <a name="sh_mutex-keyword"></a>\_Palavra-chave sh mutex
+# <a name="sh_mutex-keyword"></a>\_palavra-chave sh mutex
 
-A **\_ palavra-chave sh mutex** especifica que um `system_handle` contém um alça para um mutex.
+A palavra-chave **sh \_ mutex** especifica que um `system_handle` mantém um identificador para um mutex.
 
 ``` syntax
 [system_handle(sh_mutex)]
@@ -30,13 +30,13 @@ A **\_ palavra-chave sh mutex** especifica que um `system_handle` contém um al�
 
 ## <a name="parameters"></a>Parâmetros
 
-Essa palavra-chave é um parâmetro [**para system_handle**](system-handle.md).
+Essa palavra-chave é um parâmetro para [**system_handle**](system-handle.md).
 
-A [**system_handle**](system-handle.md) também contém detalhes sobre o uso opcional do *parâmetro access-rights.* O comportamento padrão é `DUPLICATE_SAME_ACCESS` de acordo com as [especificações de função **DuplicateHandle.**](/windows/win32/api/handleapi/nf-handleapi-duplicatehandle)
+A documentação [**system_handle**](system-handle.md) também contém detalhes sobre o uso opcional do parâmetro *Access-Rights* . O comportamento padrão é de acordo com as `DUPLICATE_SAME_ACCESS` especificações de [função **DuplicateHandle**](/windows/win32/api/handleapi/nf-handleapi-duplicatehandle) .
 
 ## <a name="remarks"></a>Comentários
 
-Para usar essa palavra-chave com o `system_handle` atributo , o sinalizador deve ser definido como `-target` `NT100` (ou superior) ao executar midl.exe.
+Para usar essa palavra-chave com o `system_handle` atributo, o `-target` sinalizador deve ser definido como `NT100` (ou superior) durante a execução de midl.exe.
 
 ## <a name="examples"></a>Exemplos
 
@@ -51,7 +51,7 @@ interface MyInterface : IUnknown
 
 | &nbsp; | &nbsp; |
 |-|-|
-| Cliente mínimo com suporte | Windows 10 Atualização de aniversário (versão 1607, build 14393) |
+| Cliente mínimo com suporte | Windows 10 Atualização de aniversário (versão 1607, Build 14393) |
 | Servidor mínimo com suporte | Windows Server 2016 (build 14393) |
 
 ## <a name="see-also"></a>Confira também
@@ -61,14 +61,14 @@ interface MyInterface : IUnknown
 [**system_handle**](system-handle.md)
 </dt> <dt>
 
-[Objetos Mutex](../sync/mutex-objects.md)
+[Objetos mutex](../sync/mutex-objects.md)
 </dt> <dt>
 
-[Segurança de objeto de sincronização e direitos de acesso](../sync/synchronization-object-security-and-access-rights.md)
+[Segurança do objeto de sincronização e direitos de acesso](../sync/synchronization-object-security-and-access-rights.md)
 </dt> <dt>
 
-[**Função CreateMutex**](/windows/win32/api/synchapi/nf-synchapi-createmutexa)
+[Função **CreateMutex**](/windows/win32/api/synchapi/nf-synchapi-createmutexa)
 </dt> <dt>
 
-[**Função CreateMutexEx**](/windows/win32/api/synchapi/nf-synchapi-createmutexexa)
+[Função **CreateMutexEx**](/windows/win32/api/synchapi/nf-synchapi-createmutexexa)
 </dt> </dl>

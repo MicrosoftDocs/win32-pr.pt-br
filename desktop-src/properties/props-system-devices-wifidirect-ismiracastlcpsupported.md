@@ -1,19 +1,19 @@
 ---
-description: Indica se a proteção de conteúdo de link é suportada pelo dispositivo Wi-Fi Direct se for compatível com o Miracast.
+description: indica se a proteção de conteúdo de link é suportada pelo dispositivo Wi-Fi Direct se for Miracast capaz.
 ms.assetid: 7d5e86aa-f190-4e0a-9fd8-9081d7f2ac27
 title: System. Devices. WiFiDirect. IsMiracastLcpSupported
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2cd50c9126302c00141adbc5541386824a0b5bbb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 706b3e5b2e9527326559ca611160be19f3288f733f61974fa7d15b5118b88ed8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104169296"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118728066"
 ---
 # <a name="systemdeviceswifidirectismiracastlcpsupported"></a>System. Devices. WiFiDirect. IsMiracastLcpSupported
 
-Indica se a proteção de conteúdo de link é suportada pelo dispositivo Wi-Fi Direct se for capaz de Miracast
+indica se a proteção de conteúdo de link é suportada pelo dispositivo Wi-Fi Direct se for capaz de Miracast
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507"></a>Windows 10, versão 1703, Windows 10, versão 1607, Windows 10, versão 1511, Windows 10, versão 1507
 

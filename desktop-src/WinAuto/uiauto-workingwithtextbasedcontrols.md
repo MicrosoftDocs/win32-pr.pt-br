@@ -1,12 +1,12 @@
 ---
 title: Trabalhando com controles baseados em texto
 ms.assetid: e06e1f6e-8346-4656-b0cb-58e5b9fdaa33
-description: 'Saiba mais sobre: trabalhando com controles baseados em texto'
+description: 'Saiba mais sobre: Trabalhando com controles baseados em texto'
 keywords:
 - clientes, trabalhando com controles baseados em texto
 - clientes, controles baseados em texto
 - clientes, intervalos de texto
-- clientes, padrão de controle de texto
+- clientes, Padrão de controle de texto
 - clientes, padrão de controle TextRange
 ms.topic: article
 ms.date: 05/31/2018
@@ -23,9 +23,9 @@ Este tópico descreve como usar as interfaces expostas pelos padrões de control
 
 ## <a name="in-this-section"></a>Nesta seção
 
--   [Compreendendo o modelo de objeto de texto de automação da interface do usuário](uiauto-understandingtheuiautomationtextobjectmodel.md)
+-   [Noções básicas Automação da Interface do Usuário modelo de objeto de texto](uiauto-understandingtheuiautomationtextobjectmodel.md)
 -   [Usando intervalos de texto](uiauto-usingtextrangeobjects.md)
--   [Acessando conteúdo da planilha](uiauto-accessingspreadsheetcontent.md)
+-   [Acessando o conteúdo da planilha](uiauto-accessingspreadsheetcontent.md)
 -   [Manipulando eventos relacionados a texto](uiauto-handlingtextrelatedevents.md)
 -   [Noções básicas sobre problemas de desempenho](uiauto-understandingperformanceissues.md)
 
@@ -33,7 +33,7 @@ Este tópico descreve como usar as interfaces expostas pelos padrões de control
 
 <dl> <dt>
 
-[Guia do programador do cliente de automação da interface do usuário](uiauto-clientportal.md)
+[Automação da Interface do Usuário guia do programador do cliente do Automação da Interface do Usuário](uiauto-clientportal.md)
 </dt> </dl>
 
  
