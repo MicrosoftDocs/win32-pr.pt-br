@@ -1,11 +1,11 @@
 ---
-title: Método DownloadItem. Pause
+title: Método DownloadItem.pause
 description: Observação Esta seção descreve a funcionalidade projetada para uso por lojas online. Não há suporte para o uso dessa funcionalidade fora do contexto de uma loja online. O método pause pausa o download.
 ms.assetid: 763d85da-1044-4a8c-98e7-8889bee6c2c7
 keywords:
-- Método Pause Windows Media Player
-- Método Pause Windows Media Player, classe DownloadItem
-- Classe DownloadItem do Windows Media Player, método pause
+- pausar o método Windows Media Player
+- método pause Windows Media Player , classe DownloadItem
+- Classe DownloadItem Windows Media Player , método pause
 topic_type:
 - apiref
 api_name:
@@ -16,21 +16,21 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 875e06c221a20088b43d9902775238426dd0c5b7
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8f0ff1bec36635f980ab630628a3e2ab1bd32a521afccb7debc984c4c29e851c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105811338"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118340736"
 ---
-# <a name="downloaditempause-method"></a>Método DownloadItem. Pause
+# <a name="downloaditempause-method"></a>Método DownloadItem.pause
 
 > [!Note]  
 > Esta seção descreve a funcionalidade projetada para uso por lojas online. Não há suporte para o uso dessa funcionalidade fora do contexto de uma loja online.
 
  
 
-O método **Pause** pausa o download.
+O **método pause** pausa o download.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -45,13 +45,13 @@ DownloadItem.pause()
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-O método **Pause** não tem nenhum efeito sobre downloads em tempo real.
+O **método pause** não tem efeito sobre downloads em tempo real.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -59,7 +59,7 @@ O método **Pause** não tem nenhum efeito sobre downloads em tempo real.
 
 | Requisito | Valor |
 |--------------------|------------------------------------------------------------------------------------|
-| Versão<br/> | Windows Media Player 9 Series ou posterior.<br/>                                 |
+| Versão<br/> | Windows Media Player Série 9 ou posterior.<br/>                                 |
 | DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
@@ -71,7 +71,7 @@ O método **Pause** não tem nenhum efeito sobre downloads em tempo real.
 [**Objeto DownloadItem**](downloaditem-object.md)
 </dt> <dt>
 
-[**DownloadItem. resume**](downloaditem-resume.md)
+[**DownloadItem.resume**](downloaditem-resume.md)
 </dt> </dl>
 
  

@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4ec0cba27e994f7d77d441aef7bb783cad71cbad
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 18d1b8e9aae9a147c929fade8030babbf6b02fd87c9170370252522001742e95
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "105755093"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118382826"
 ---
 # <a name="transmit_as-attribute"></a>transmitir \_ como atributo
 
-O atributo **\[ transmitir \_ como \]** instrui o compilador a associar **Type-ID * * *,* que é um tipo apresentado que os aplicativos cliente e servidor manipulam, com um tipo transmitido **tipo de transmissão.**
+O atributo **\[ transmitir \_ como \]** instrui o compilador a associar o **tipo ID**_,_ que é um tipo apresentado que os aplicativos cliente e servidor manipulam, com um tipo transmitido **tipo de transmissão.**
 
 ``` syntax
 typedef [transmit_as(xmit-type) [[ , type-attribute-list ]] ] type-specifier declarator-list; 
@@ -96,9 +96,9 @@ O usuário deve fornecer as rotinas a seguir.
 
 
 
- 
+ 
 
- 
+ 
 
 O stub do cliente chama *Type-ID * * * \_ para \_ transmissão** para alocar espaço para o tipo transmitido e para converter os dados em objetos do tipo *transmissão-tipo.* O stub de servidor aloca espaço para o tipo de dados original e chama o *tipo de ID * * * \_ de \_ transmissão** para converter os dados de seu tipo transmitido para o tipo apresentado.
 
@@ -150,7 +150,7 @@ void __RPC_USER TREE_TYPE_free_xmit(
 
 <dl> <dt>
 
-[**Storage**](arrays-1.md)
+[**matrizes**](arrays-1.md)
 </dt> <dt>
 
 [Tipos base de MIDL](midl-base-types.md)
@@ -180,7 +180,7 @@ void __RPC_USER TREE_TYPE_free_xmit(
 [**ref**](ref.md)
 </dt> <dt>
 
-[**string**](string.md)
+[**Strings**](string.md)
 </dt> <dt>
 
 [**struct**](struct.md)
@@ -198,9 +198,9 @@ void __RPC_USER TREE_TYPE_free_xmit(
 [**diferente**](unique.md)
 </dt> <dt>
 
-[**void**](void.md)
+[**livre**](void.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

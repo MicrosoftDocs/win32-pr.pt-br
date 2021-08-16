@@ -21,31 +21,31 @@ ms.locfileid: "118211341"
 
 ## <a name="description"></a>Descrição
 
-Na versão Windows após Windows 8, essas APIs retornarão E \_ NOTIMPL:
+na versão Windows após Windows 8, essas APIs retornarão E \_ NOTIMPL:
 
 -   DwmSetPresentParameters
 -   DwmSetDxFrameDuration
 -   DwmModifyPreviousDxFrameDuration
 
-Além disso, essa API aceitará apenas o valor NULL para o parâmetro hwnd:
+Além disso, essa API só aceitará o valor nulo para o parâmetro hWnd:
 
 -   DwmGetCompositionTimingInfo
 
-Vamos parar de dar suporte a DwmGetCompositionTimingInfo com hwnd != NULL e remover a funcionalidade associada. Se o valor não NULL para hwnd for especificado, essa API retornará E \_ INVALIDARG.
+Vamos parar de dar suporte a DwmGetCompositionTimingInfo com HWND! = NULL e remover a funcionalidade associada. Se um valor não nulo para HWND for especificado, essa API retornará E \_ INVALIDARG.
 
-Também não recomendamos o uso da API DwmGetCompositionTimingInfo e sugerimos que os desenvolvedores alternem para o modelo de incompatibilidade DXGI e a API de estatísticas DX presente associada.
+Também desencorajamos o uso da API DwmGetCompositionTimingInfo e sugerem que os desenvolvedores alternem para o modelo de flip-DXGI e a API de estatísticas do DX presente associado.
 
 ## <a name="manifestation"></a>Manifestação
 
-Os aplicativos que usam o modelo presente na fila não funcionarão corretamente. A manifestação exata depende do aplicativo específico, mas pode variar de tempo de apresentação incorreto até o aplicativo sair inesperadamente). Na prática, não esperamos ver muitos (se algum) aplicativos desse tipo. Esse modelo foi usado pelo player de mídia do Vista, que não será usado no Windows 8 (e, possivelmente, o antigo Zune player). No momento, não temos informações sobre outros aplicativos que realmente usam esse modelo.
+Os aplicativos que usam o modelo em fila no momento não funcionarão corretamente. A manifestação exata depende do aplicativo específico, mas pode variar de tempo de apresentação incorreto para o aplicativo que está saindo inesperadamente). Na prática, não esperamos ver muitos aplicativos (se houver) tais. esse modelo foi usado pelo media player do Vista, que não será usado em Windows 8 (e possivelmente o antigo Zune player). Neste momento, não temos informações sobre outros aplicativos que realmente usam esse modelo.
 
 ## <a name="solution"></a>Solução
 
-Os desenvolvedores precisam usar o modo de apresentação de inatividade DXGI em vez de estar na fila (disponível no runtime DX9 desde o Windows 7 e em runtimes DX10 e DX11 no Windows 8).
+os desenvolvedores precisam usar o modo de apresentação de flip DXGI em vez de estar na fila presente (disponível no DX9 runtime desde Windows 7 e em tempos de execução DX10 e DX11 no Windows 8).
 
 ## <a name="tests"></a>Testes
 
-Execute testes gerais para garantir que os componentes Windows de entrada e os principais produtos continuem a funcionar na próxima versão do Windows.
+execute testes gerais para garantir que a caixa de entrada Windows componentes e os principais produtos continuem a funcionar na próxima versão do Windows.
 
  
 

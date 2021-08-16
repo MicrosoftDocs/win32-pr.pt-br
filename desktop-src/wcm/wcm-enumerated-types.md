@@ -1,6 +1,6 @@
 ---
-title: Windows Gerenciador de Conexões tipos enumerados
-description: Os tipos enumerados Windows Gerenciador de Conexões (WCM) são os a seguir.
+title: Windows Tipos enumerados do Gerenciador de conexões
+description: os tipos enumerados do gerenciador de conexões do Windows (WCM) são os seguintes.
 ms.assetid: A05F71A2-151E-4B3D-8220-86CE37417FA1
 ms.topic: article
 ms.date: 05/31/2018
@@ -11,14 +11,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118211093"
 ---
-# <a name="windows-connection-manager-enumerated-types"></a>Windows Gerenciador de Conexões tipos enumerados
+# <a name="windows-connection-manager-enumerated-types"></a>Windows Tipos enumerados do Gerenciador de conexões
 
-Os tipos enumerados Windows Gerenciador de Conexões (WCM) são os a seguir.
+os tipos enumerados do gerenciador de conexões do Windows (WCM) são os seguintes.
 
--   [**CUSTO DE \_ CONEXÃO DO \_ WCM**](/windows/desktop/api/Wcmapi/ne-wcmapi-wcm_connection_cost)
--   [**FONTE DE CUSTO \_ DE CONEXÃO \_ \_ WCM**](/windows/desktop/api/Wcmapi/ne-wcmapi-wcm_connection_cost_source)
--   [**TIPO DE \_ MÍDIA \_ WCM**](/windows/desktop/api/Wcmapi/ne-wcmapi-wcm_media_type)
--   [**PROPRIEDADE \_ WCM**](/windows/desktop/api/Wcmapi/ne-wcmapi-wcm_property)
+-   [**\_custo de conexão WCM \_**](/windows/desktop/api/Wcmapi/ne-wcmapi-wcm_connection_cost)
+-   [**\_fonte de \_ custo de conexão WCM \_**](/windows/desktop/api/Wcmapi/ne-wcmapi-wcm_connection_cost_source)
+-   [**\_tipo de mídia WCM \_**](/windows/desktop/api/Wcmapi/ne-wcmapi-wcm_media_type)
+-   [**\_Propriedade WCM**](/windows/desktop/api/Wcmapi/ne-wcmapi-wcm_property)
 
  
 

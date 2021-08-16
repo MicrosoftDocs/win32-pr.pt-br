@@ -10,7 +10,7 @@ keywords:
 - Windows Faixa de opções, componentes
 - Faixa de opções, componentes
 - sistema de comandos para Windows faixa de opções
-- controles para Windows faixa de opções
+- controles para a faixa Windows faixa de opções
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 20ae6c8d62012fac240c6d044c688295d89d8d5899e3673a3b914d8d142111d1
@@ -31,7 +31,7 @@ A Windows ribbon usa uma linguagem de marcação baseada em Extensible Applicati
 
 ## <a name="separating-presentation-from-command-logic"></a>Separando a apresentação da lógica de comando
 
-A separação de atributos visuais e de apresentação da lógica de comando na estrutura da Faixa de Opções é realizada por meio de duas plataformas de desenvolvimento distintas, mas dependentes. Layouts de controle, comportamentos de dimensionamento, declarações de comando e especificações de recurso são o domínio de tempo de design de uma sintaxe de marcação declarativa com base [na especificação Extensible Application Markup Language (XAML).](/dotnet/framework/wpf/advanced/xaml-in-wpf) A funcionalidade de baixo nível, os ganchos de aplicativo e os manipuladores de comando são definidos em implementações de interface baseadas Component Object Model (COM).
+A separação de atributos visuais e de apresentação da lógica de comando na estrutura da Faixa de Opções é realizada por meio de duas plataformas de desenvolvimento distintas, mas dependentes. Layouts de controle, comportamentos de dimensionamento, declarações de comando e especificações de recurso são o domínio de tempo de design de uma sintaxe de marcação declarativa com base [na especificação Extensible Application Markup Language (XAML).](/dotnet/framework/wpf/advanced/xaml-in-wpf) A funcionalidade de baixo nível, os ganchos de aplicativo e os manipuladores de comando são definidos em implementações de interface baseadas em COMPONENT OBJECT MODEL (COM).
 
 Essa separação de apresentação e lógica oferece os seguintes benefícios:
 

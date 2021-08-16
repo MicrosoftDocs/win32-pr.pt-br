@@ -21,7 +21,7 @@ ms.locfileid: "118194908"
 ---
 # <a name="working-with-audio-windows-media-format-11-sdk"></a>Trabalhando com áudio (SDK Windows Media Format 11)
 
-Para ver a documentação atual sobre Windows de mídia e processadores de sinal digital, consulte Windows codec de áudio e vídeo de mídia e [APIs DSP.](/previous-versions//dd464626(v=vs.85))
+Para ver a documentação atual Windows codecs de mídia e processadores de sinal digital, consulte Windows Codec de Áudio e Vídeo de Mídia e [APIs DSP.](/previous-versions//dd464626(v=vs.85))
 
  
 

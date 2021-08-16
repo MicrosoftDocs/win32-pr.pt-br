@@ -83,7 +83,7 @@ Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, e
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                         |
 | Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                   |
-| parâmetro<br/>                   | <dl> <dt>WIA. h</dt> </dl>       |
+| Cabeçalho<br/>                   | <dl> <dt>WIA. h</dt> </dl>       |
 | INSERI<br/>                      | <dl> <dt>WIA. idl</dt> </dl>     |
 | Biblioteca<br/>                  | <dl> <dt>Wiaguid. lib</dt> </dl> |
 

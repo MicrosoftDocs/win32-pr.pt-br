@@ -1,7 +1,7 @@
 ---
-description: este tópico apresenta os formatos de pixel fornecidos pelo Windows o componente de geração de imagens (WIC).
+description: Este tópico apresenta os formatos de pixel fornecidos pelo WIC (Windows Imaging Component).
 ms.assetid: 348b6d15-e339-4dce-99f3-4d639ee9bf7d
-title: Visão geral dos formatos de pixel nativos
+title: Visão geral de formatos de pixel nativo
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 379e67d422ccbd05ef178e67eb25c973e6b5943ef85d22873097f245f8914a23
@@ -11,85 +11,85 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118206332"
 ---
-# <a name="native-pixel-formats-overview"></a>Visão geral dos formatos de pixel nativos
+# <a name="native-pixel-formats-overview"></a>Visão geral de formatos de pixel nativo
 
-este tópico apresenta os formatos de pixel fornecidos pelo Windows o componente de geração de imagens (WIC).
+Este tópico apresenta os formatos de pixel fornecidos pelo WIC (Windows Imaging Component).
 
-Um formato de pixel descreve o layout de memória de cada pixel em um bitmap. Este layout de memória descreve como os dados de imagem de um bitmap são codificados especificando o formato numérico e a organização do canal de cores. O WIC dá suporte a vários formatos numéricos para vários esquemas de organização de canal de cor, fornecendo uma ampla gama de formatos de pixel.
+Um formato de pixel descreve o layout de memória de cada pixel em um bitmap. Esse layout de memória descreve como os dados de imagem de um bitmap são codificados especificando o formato numérico e a organização do canal de cores. O WIC dá suporte a vários formatos numéricos para vários esquemas de organização de canal de cores, fornecendo uma ampla variedade de formatos de pixel.
 
 -   [Profundidade de bits](#bit-depth)
 -   [Codificação numérica](#numerical-encoding)
 -   [Canais de cores](#color-channels)
-    -   [Modelo de cores RGB/BGR](#rgbbgr-color-model)
-    -   [Modelo de cor CMYK](#cmyk-color-model)
+    -   [Modelo de cor RGB/BGR](#rgbbgr-color-model)
+    -   [Modelo de cor do CMYK](#cmyk-color-model)
     -   [Modelo de cores de n canais](#n-channel-color-model)
-    -   [Modelos de cores indexadas e em escala de cinza](#indexed-and-grayscale-color-models)
+    -   [Modelos de cores indexados e em escala de cinza](#indexed-and-grayscale-color-models)
     -   [Modelo de cores Y'CbCr](#ycbcr-color-model)
--   [Formato de pixel do WIC](#wic-pixel-format)
-    -   [Formatos de pixel indefinidos](#undefined-pixel-formats)
+-   [Formato de pixel WIC](#wic-pixel-format)
+    -   [Formatos de pixel indefinido](#undefined-pixel-formats)
     -   [Formatos de pixel indexados](#indexed-pixel-formats)
-    -   [Formatos de pixel de bit empacotado](#packed-bit-pixel-formats)
+    -   [Formatos de pixel de bits empacotados](#packed-bit-pixel-formats)
     -   [Formatos de pixel em escala de cinza](#grayscale-pixel-formats)
-    -   [Formatos de pixel RGB/BGR](#rgbbgr-pixel-formats)
-    -   [Formatos de pixel CMYK](#cmyk-pixel-formats)
-    -   [Formatos de pixel de n-Channel](#n-channel-pixel-formats)
-    -   [Apenas formatos de pixel alfa](#alpha-only-pixel-formats)
+    -   [Formatos de Pixel RGB/BGR](#rgbbgr-pixel-formats)
+    -   [Formatos de pixel do CMYK](#cmyk-pixel-formats)
+    -   [Formatos de pixel de n canais](#n-channel-pixel-formats)
+    -   [Formatos de pixel somente alfa](#alpha-only-pixel-formats)
     -   [Formatos de pixel Y'CbCr](#ycbcr-pixel-formats)
 -   [Espaço de cores](#color-space)
 -   [Formatos de imagem nativa](#native-image-formats)
-    -   [Codec nativo BMP](#bmp-native-codec)
-    -   [Codec nativo GIF](#gif-native-codec)
-    -   [Codec nativo da ICO](#ico-native-codec)
-    -   [Codec nativo JPEG](#jpeg-native-codec)
-    -   [Codec nativo do PNG](#png-native-codec)
+    -   [Codec nativo do BMP](#bmp-native-codec)
+    -   [Codec nativo gif](#gif-native-codec)
+    -   [Codec nativo de ICO](#ico-native-codec)
+    -   [JPEG Native Codec](#jpeg-native-codec)
+    -   [Codec nativo de PNG](#png-native-codec)
     -   [Codec nativo TIFF](#tiff-native-codec)
-    -   [Codec de JPEG-XR Native](#jpeg-xr-native-codec)
--   [Codec do DDS Native](#dds-native-codec)
+    -   [Codec nativo JPEG-XR](#jpeg-xr-native-codec)
+-   [Codec nativo do DDS](#dds-native-codec)
 -   [Extensibilidade de formato de pixel](#pixel-format-extensibility)
 -   [Tópicos relacionados](#related-topics)
 
 ## <a name="bit-depth"></a>Profundidade de bits
 
-A *profundidade de bits* é o número de bits usados para codificar cada canal de cor. Hoje, a maioria das imagens digitais usa uma profundidade de 8 bits, o que significa que cada canal de cor em um pixel é representado por 8 bits, fornecendo 2 ⁸ (256) valores exclusivos por canal. Uma imagem que tem uma profundidade de 8 e três canais de cor (como vermelho, verde e azul) usa 24 bits por pixel (BPP), que fornece 2 ² ⁴ (16.777.216) cores diferentes por pixel.
+A *profundidade de bits* é o número de bits usados para codificar cada canal de cor. Atualmente, a maioria das imagens digitais usa uma profundidade de bits de 8, o que significa que cada canal de cor em um pixel é representado por 8 bits, fornecendo 2 (256) valores exclusivos por canal. Uma imagem que tem uma profundidade de bits de 8 e três canais de cores (como vermelho, verde e azul) usa 24 bits por pixel (bpp), que fornece 26.777.216 cores diferentes por pixel.
 
-Para uma resolução de cor melhor, é possível usar uma profundidade de bits 16 ou 32. Isso fornece cada canal de cor com 2 ¹ ⁶ (65.536) ou 2 ³ ² valores exclusivos, a um custo de mais memória por pixel.
+Para uma melhor resolução de cores, uma profundidade de bits de 16 ou 32 pode ser usada. Isso fornece a cada canal de cores 2 vezes (65.536) ou 2000 valores exclusivos, a um custo de mais memória por pixel.
 
-Em alguns formatos, a profundidade de bits não é um múltiplo de 8. Esses formatos são chamados de formatos *empacotados* , porque os canais de cor em um pixel não estão alinhados aos limites de byte. Por exemplo, se as profundidades de bits de 5, três canais de cor puderem ser armazenados em 16 bits (incluindo 1 bit de preenchimento, para tornar os pixels alinhados por byte). Os formatos empacotados são úteis quando a memória ou a capacidade de processamento são limitadas.
+Em alguns formatos, a profundidade do bit não é um múltiplo de 8. Esses formatos são chamados *de formatos* empacotados, porque os canais de cores em um pixel não estão alinhados aos limites de byte. Por exemplo, se as profundidades de bits de 5, três canais de cores podem ser armazenados em 16 bits (incluindo 1 bit de preenchimento, para fazer com que os pixels sejam alinhados por byte). Formatos empacotados são úteis quando a memória ou a capacidade de processamento são limitadas.
 
 ## <a name="numerical-encoding"></a>Codificação numérica
 
-Para a maioria das imagens digitais de hoje, os bytes não assinados e os inteiros curtos não assinados são usados para descrever o intervalo numérico de cada canal de cor. O valor mínimo (0) representa a intensidade zero em um canal de cor única e o preto é obtido quando todos os canais de cores são zero. Da mesma forma, o valor máximo representa a intensidade total e o branco é obtido quando todos os canais de cores estão com intensidade total. A uma profundidade de um bit de 8, um UINT fornece 256 valores exclusivos por canal de cor (0-255). Um UINT de 16 bits fornece 65.536 valores exclusivos por canal de cor (0-65.535).
+Para a maioria das imagens digitais de hoje, bytes não assinados e inteiros curtos sem sinal são usados para descrever o intervalo numérico de cada canal de cores. O valor mínimo (0) representa a intensidade zero em um único canal de cor e o preto é obtido quando todos os canais de cor são zero. Da mesma forma, o valor máximo representa a intensidade total e o branco é obtido quando todos os canais de cores estão em intensidade total. Em uma profundidade de bits de 8, um UINT fornece 256 valores exclusivos por canal de cores (0 a 255). Uma UINT de 16 bits fornece 65.536 valores exclusivos por canal de cores (0 a 65.535).
 
-Além disso, o WIC dá suporte a formatos de ponto fixo e ponto flutuante. Esses formatos dão suporte a intervalos dinâmicos maiores, pois todo o intervalo numérico de cada canal de cor é maior do que o intervalo visível. Como resultado, as cores podem ser ajustadas acima ou abaixo do intervalo visível, durante as etapas intermediárias de processamento de imagens, sem perda de informações de imagem.
+Além disso, o WIC dá suporte a formatos de ponto fixo e de ponto flutuante. Esses formatos suportam intervalos dinâmicos maiores, porque todo o intervalo numérico de cada canal de cores é maior que o intervalo visível. Como resultado, as cores podem ser ajustadas acima ou abaixo do intervalo visível, durante as etapas intermediárias do processamento de imagem, sem perda de informações de imagem.
 
-### <a name="fixed-point-numerical-encoding"></a>Codificação numérica Fixed-Point
+### <a name="fixed-point-numerical-encoding"></a>Fixed-Point codificação numérica
 
-valores de ponto fixo de 16 bits são interpretados como s 2,13: sign bit, dois bits inteiros e treze bits fracionários. Usando essa interpretação, um intervalo numérico de − 4,0 a + 3,999... pode ser representado, com o valor de 1,0 representado pelo valor inteiro assinado 8192 (0x2000).
+Os valores de ponto fixo de 16 bits são interpretados como s2.13: bit de sinal, dois bits inteiros e 13 bits fracionados. Usando essa interpretação, um intervalo numérico de -4,0 a +3,999... pode ser representado, com o valor de 1,0 representado pelo valor inteiro com sinal 8192 (0x2000).
 
-os valores de ponto fixo de 32 bits são interpretados como s 7.24: o bit de sinal, sete bits inteiros e vinte e quatro bits fracionários. Usando essa interpretação, um intervalo numérico de − 128,0 a + 127,999... pode ser representado, com o valor de 1,0 representado pelo valor inteiro assinado 16777216 (0x01000000).
+Os valores de ponto fixo de 32 bits são interpretados como s7.24: bit de sinal, sete bits inteiros e vinte e quatro bits fracionados. Usando essa interpretação, um intervalo numérico de -128,0 a +127,999... pode ser representado, com o valor de 1,0 representado pelo valor inteiro com sinal 16777216 (0x01000000).
 
 ## <a name="color-channels"></a>Canais de cores
 
-Os canais de cor de um formato de pixel definem o layout de memória de cada cor dentro dos dados de imagem de um bitmap. Há uma variedade de diferentes estruturas de canal de cores comuns nas imagens digitais de hoje, e o WIC fornece suporte para muitas delas.
+Os canais de cores de um formato de pixel definem o layout de memória de cada cor dentro dos dados de imagem de um bitmap. Há uma variedade de diferentes estruturas de canal de cores comuns nas imagens digitais de hoje, e o WIC dá suporte a muitas delas.
 
-### <a name="rgbbgr-color-model"></a>Modelo de cores RGB/BGR
+### <a name="rgbbgr-color-model"></a>Modelo de cor RGB/BGR
 
-Os formatos RGB e BGR descrevem as cores em um modelo de cores aditivo. O método mais comum de descrever uma imagem é com três canais de cores separados que representam as cores vermelho (R), verde (G) e azul (B). O WIC fornece suporte para esses três canais na ordem vermelha-verde-azul (RGB) ou azul-verde-vermelho (BGR). Essa é a ordem na qual cada canal de cor aparece dentro do fluxo de bits sequencial. Por exemplo, no \_ formato WICPixelFormat32bppRGB de GUID, cada pixel tem 32 bits de largura. O canal vermelho é o primeiro byte (menos significativo) na memória, seguido de verde e, em seguida, azul. Por outro lado, no \_ formato WICPixelFormat32bppBGR de GUID, os canais de cores estão na ordem oposta. O WIC dá suporte a vários formatos RGB/BGR, incluindo formatos especiais de bits empacotados, como o GUID \_ WICPixelFormat16bppBGR555.
+Formatos RGB e BGR descrevem cores em um modelo de cor aditiva. O método mais comum de descrever uma imagem é com três canais de cores separados que representam as cores vermelho (R), verde (G) e azul (B). O WIC dá suporte a esses três canais na ordem RGB (vermelho-verde-azul) ou BGR (azul-verde-vermelho). Essa é a ordem na qual cada canal de cor aparece dentro do fluxo de bits sequencial. Por exemplo, no formato \_ WICPixelFormat32bppRGB guid, cada pixel tem 32 bits de largura. O canal vermelho é o primeiro byte (menos significativo) na memória, seguido por verde e, em seguida, azul. Por outro lado, no formato \_ WICPixelFormat32bppBGR guid, os canais de cores estão na ordem oposta. O WIC dá suporte a vários formatos RGB/BGR, incluindo formatos de bits empacotados especiais, como GUID \_ WICPixelFormat16bppBGR555.
 
 > [!Note]  
-> Os canais de cores dos formatos de bits de pacotes especiais BGR não estão em múltiplos de 8 como os canais de cores em formatos de pixel típicos. Isso significa que os valores de canal não são alinhados em byte. Deve-se ter cuidado ao ler canais de cores de bits empacotados.
+> Os canais de cores dos formatos de bits especiais empacotados BGR não estão em múltiplos de 8, como os canais de cores em formatos de pixel típicos. Isso significa que os valores de canal não são alinhados por byte. É necessário ter cuidado ao ler canais de cores de bits empacotados.
 
  
 
-Além dos formatos RGB e BGR, o WIC também fornece formatos de pixel RGB e BGR que dão suporte a um canal alfa (A). O canal alfa fornece dados de opacidade para o pixel. Para formatos com um canal alfa adicionado, o canal alfa geralmente vem por último na ordem do canal de cores. Por exemplo, no formato de pixel GUID \_ WICPixelFormat32bppBGRA, a ordem de byte é azul, verde e vermelha, seguida pelo canal alfa.
+Além dos formatos RGB e BGR, o WIC também fornece formatos de pixel RGB e BGR que suportam um canal alfa (A). O canal alfa fornece dados de opacidade para o pixel. Para formatos com um canal alfa adicionado, o canal alfa geralmente é o último na ordem do canal de cores. Por exemplo, no formato de pixel GUID \_ WICPixelFormat32bppBGRA, a ordem de byte é azul, verde e vermelho, seguido pelo canal alfa.
 
-O WIC também dá suporte a formatos de pixel RGB (P) Alpha bimultiplicados. Em um formato de pixel RGBA típico, os valores de cor vermelho, verde e azul são os valores de cor reais para a imagem. Para criar uma imagem composta no formato RGBA padrão, o valor alfa da imagem em primeiro plano deve ser multiplicado por cada um dos canais vermelho, verde e azul antes de adicioná-lo à cor da imagem de plano de fundo. Em um formato de pixel RGB previamente multiplicado, cada canal de cor já foi multiplicado pelo valor alfa. Isso fornece um método mais eficiente de composição de imagem com dados de canal alfa. Para recuperar os valores de cor verdadeiros de cada canal em um formato de pixel PRGBA/PBGRA, a multiplicação de canal alfa deve ser revertida pela divisão dos valores de cor pelo valor alfa.
+O WIC também dá suporte a formatos de pixel RGB alfa pré-multiplicados (P). Em um formato de pixel RGBA típico, os valores de cor vermelho, verde e azul são os valores de cor reais para a imagem. Para fazer uma imagem composta no formato RGBA padrão, o valor alfa da imagem em primeiro plano deve ser multiplicado por cada um dos canais vermelho, verde e azul antes de adiá-lo à cor da imagem de plano de fundo. Em um formato de pixel RGB alfa pré-multiplicado, cada canal de cor já foi multiplicado pelo valor alfa. Isso fornece um método mais eficiente de composição de imagem com dados de canal alfa. Para recuperar os true color de cada canal em um formato de pixel PRGBA/PBGRA, a multiplicação de canal alfa deve ser invertida dividindo os valores de cor pelo valor alfa.
 
-### <a name="cmyk-color-model"></a>Modelo de cor CMYK
+### <a name="cmyk-color-model"></a>Modelo de cor do CMYK
 
-CMYK é um modelo de cor subtraído usado na impressão. As cores produzidas por um modelo CMYK são geradas pela luz que não é absorvido, mas refletidas. CMYK é um modelo de quatro canais de ciano (C), magenta (M), amarelo (Y) e preto (K). Quando todos os quatro canais de cores estiverem no valor máximo, o resultado será preto. Como os modelos de cores RGB/BGR, a ordem de bytes dentro do fluxo de bits sequencial é fornecida pelo nome do formato de pixel. Por exemplo, no formato de pixel GUID \_ WICPixelFormat32bppCMYK, cada pixel é composto de 32 bits. O primeiro byte contém o valor ciano, seguido por virar por magenta, amarelo e preto. O WIC fornece formatos de pixel para CMYK em 32 e 64 bits por pixel (BPP).
+O CMYK é um modelo de cor subtrativo usado na impressão. As cores produzidas por um modelo de CMYK são geradas pela luz que não é absorada, mas refletida. O CMYK é um modelo de quatro canais de ciano (C), magenta (M), amarelo (Y) e preto (K). Quando todos os quatro canais de cor estão no valor máximo, o resultado é preto. Assim como os modelos de cores RGB/BGR, a ordem de byte dentro do fluxo de bits sequencial é dada pelo nome do formato de pixel. Por exemplo, no formato de pixel GUID \_ WICPixelFormat32bppCMYK, cada pixel é feito de 32 bits. O primeiro byte contém o valor ciano, seguido, por sua vez, por magenta, amarelo e preto. O WIC fornece formatos de pixel para CMYK em 32 e 64 bits por pixel (bpp).
 
-Além do modelo de cores CMYK padrão, o WIC também fornece CMYK com Alfa. Isso permite que as imagens CMYK tenham dados de mesclagem alfa semelhantes ao modelo de cores RGB/BGR. O canal alfa está localizado imediatamente após preto no fluxo de bits sequencial de um bitmap.
+Além do modelo de cor padrão do CMYK, o WIC também fornece CMYK com alfa. Isso permite que as imagens do CMYK tenham dados de mesclagem alfa semelhantes ao modelo de cor RGB/BGR. O canal alfa está localizado imediatamente após preto no fluxo de bits sequencial de um bitmap.
 
 ### <a name="n-channel-color-model"></a>Modelo de cores de n canais
 
@@ -115,7 +115,7 @@ Como os dados chroma e luma são armazenados separadamente e podem ser resoluç�
 
 Os formatos de pixel no WIC são definidos usando GUIDs para evitar conflitos com IHVs. O WIC fornece um nome amigável para referenciar o GUID de um formato de pixel nativo. A convenção de nomen entre os formatos de pixel WIC é a seguinte:
 
-**\[Guid \_ WICPixelFormat \] \[ Bits por tipo de \] \[ Armazenamento \] \[ canal\]**
+**\[Tipo de ordem de Armazenamento \_ GUID WICPixelFormat \] \[ Bits por \] \[ \] \[ Pixel\]**
 
 | Componente format         | Descrição                                                                                                                                                                                                                                                                                                  |
 |--------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -181,43 +181,43 @@ A tabela a seguir lista os formatos de bits empacotados fornecidos pelo WIC. Nes
 | Nome amigável                          | Contagem de Canais | Bits por canal       | Bits por Pixel | Tipo de armazenamento |
 |-------------------------------------------|---------------|------------------------|----------------|--------------|
 | GUID \_ WICPixelFormat16bppBGR555           | 3             | 5                      | 16             | UINT         |
-| \_WICPIXELFORMAT16BPPBGR565 GUID           | 3             | 5 (B)/6 (G)/5 (R)         | 16             | UINT         |
-| \_WICPIXELFORMAT16BPPBGRA555 GUID          | 4             | 5 (B)/5 (G)/5 (R)/1 (A)    | 16             | UINT         |
-| \_WICPIXELFORMAT32BPPBGR101010 GUID        | 3             | 10                     | 32             | UINT         |
-| \_WICPIXELFORMAT32BPPRGBA1010102 GUID      | 4             | 10 (R)/10 (G)/10 (B)/2 (A) | 32             | UINT         |
-| \_WICPIXELFORMAT32BPPRGBA1010102XR GUID    | 4             | 10 (R)/10 (G)/10 (B)/2 (A) | 32             | UINT         |
-| \_WICPIXELFORMAT32BPPR10G10B10A2 GUID      | 4             | 10 (R)/10 (G)/10 (B)/2 (A) | 32             | UINT         |
-| \_WICPIXELFORMAT32BPPR10G10B10A2HDR10 GUID | 4             | 10 (R)/10 (G)/10 (B)/2 (A) | 32             | UINT         |
+| GUID \_ WICPixelFormat16bppBGR565           | 3             | 5(B)/6(G)/5(R)         | 16             | UINT         |
+| GUID \_ WICPixelFormat16bppBGRA555          | 4             | 5(B)/5(G)/5(R)/1(A)    | 16             | UINT         |
+| GUID \_ WICPixelFormat32bppBGR101010        | 3             | 10                     | 32             | UINT         |
+| GUID \_ WICPixelFormat32bppRGBA1010102      | 4             | 10(R)/10(G)/10(B)/2(A) | 32             | UINT         |
+| GUID \_ WICPixelFormat32bppRGBA1010102XR    | 4             | 10(R)/10(G)/10(B)/2(A) | 32             | UINT         |
+| GUID \_ WICPixelFormat32bppR10G10B10A2      | 4             | 10(R)/10(G)/10(B)/2(A) | 32             | UINT         |
+| GUID \_ WICPixelFormat32bppR10G10B10A2HDR10 | 4             | 10(R)/10(G)/10(B)/2(A) | 32             | UINT         |
 
-Para os \_ formatos GUID WICPixelFormat32bppBGR101010 e GUID \_ WICPixelFormat32bppRGBA1010102, o canal vermelho é armazenado nos bits menos significativos. Para os \_ formatos GUID WICPixelFormat32bppR10G10B10A2 e GUID \_ WICPixelFormat32bppR10G10B10A2HDR10, o canal vermelho é definido nos bits mais significativos, o mesmo layout que [DXGI_FORMAT_R10G10B10A2_UNORM](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format).
+Para os \_ formatos WICPixelFormat32bppBGR101010 e GUID \_ WICPixelFormat32bppRGBA1010102, o canal vermelho é armazenado nos bits menos significativos. Para os \_ formatos WICPixelFormat32bppR10G10B10A2 e GUID \_ WICPixelFormat32bppR10G10B10A2HDR10, o canal vermelho é definido [](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format)nos bits mais significativos, o mesmo layout que DXGI_FORMAT_R10G10B10A2_UNORM .
 
-O \_ formato GUID WICPixelFormat32bppR10G10B10A2HDR10 é o formato de pixel de 10 bits para HDR10 (BT. 2020 de espaço de cores e SMPTE St. 2084 EOTF).
+O formato \_ WICPixelFormat32bppR10G10B10A2HDR10 é o formato de pixel de 10 bits para HDR10 (espaço em cores BT.2020 e SMPTE ST.2084 EOTF).
 
 ### <a name="grayscale-pixel-formats"></a>Formatos de pixel em escala de cinza
 
-A tabela a seguir lista os formatos em escala de cinza fornecidos pelo WIC. Nesses formatos, os dados de cor representam tons de cinza.
+A tabela a seguir lista os formatos de escala de cinza fornecidos pelo WIC. Nesses formatos, os dados de cor representam tons de cinza.
 
 
 
-| Nome amigável                           | Contagem de canais | Bits por canal | Bits por Pixel | Tipo de armazenamento |
+| Nome amigável                           | Contagem de Canais | Bits por canal | Bits por Pixel | Tipo de armazenamento |
 |-----------------------------------------|---------------|------------------|----------------|--------------|
-| \_WICPIXELFORMATBLACKWHITE GUID          | 1             | 1                | 1              | UINT         |
-| \_WICPIXELFORMAT2BPPGRAY GUID            | 1             | 2                | 2              | UINT         |
-| \_WICPIXELFORMAT4BPPGRAY GUID            | 1             | 4                | 4              | UINT         |
-| \_WICPIXELFORMAT8BPPGRAY GUID            | 1             | 8                | 8              | UINT         |
-| \_WICPIXELFORMAT16BPPGRAY GUID           | 1             | 16               | 16             | UINT         |
-| \_WICPIXELFORMAT16BPPGRAYFIXEDPOINT GUID | 1             | 16               | 16             | FixedPoint   |
-| \_WICPIXELFORMAT16BPPGRAYHALF GUID       | 1             | 16               | 16             | Float        |
-| \_WICPIXELFORMAT32BPPGRAYFLOAT GUID      | 1             | 32               | 32             | Float        |
-| \_WICPIXELFORMAT32BPPGRAYFIXEDPOINT GUID | 1             | 32               | 32             | FixedPoint   |
+| GUID \_ WICPixelFormatBlackWhite          | 1             | 1                | 1              | UINT         |
+| GUID \_ WICPixelFormat2bppGray            | 1             | 2                | 2              | UINT         |
+| GUID \_ WICPixelFormat4bppGray            | 1             | 4                | 4              | UINT         |
+| GUID \_ WICPixelFormat8bppGray            | 1             | 8                | 8              | UINT         |
+| GUID \_ WICPixelFormat16bppGray           | 1             | 16               | 16             | UINT         |
+| GUID \_ WICPixelFormat16bppGrayFixedPoint | 1             | 16               | 16             | FixedPoint   |
+| GUID \_ WICPixelFormat16bppGrayHalf       | 1             | 16               | 16             | Float        |
+| GUID \_ WICPixelFormat32bppGrayFloat      | 1             | 32               | 32             | Float        |
+| GUID \_ WICPixelFormat32bppGrayFixedPoint | 1             | 32               | 32             | FixedPoint   |
 
 
 
  
 
-### <a name="rgbbgr-pixel-formats"></a>Formatos de pixel RGB/BGR
+### <a name="rgbbgr-pixel-formats"></a>Formatos de Pixel RGB/BGR
 
-A tabela a seguir lista os formatos RGB/BGR fornecidos pelo WIC. Esses formatos separam os dados de cores primários em canais vermelho (R), verde (G) e azul (B). Um canal alfa (A) adicional é fornecido para informações de opacidade em alguns formatos.
+A tabela a seguir lista os formatos RGB/BGR fornecidos pelo WIC. Esses formatos separam os dados de cor primária em canais vermelho (R), verde (G) e azul (B). Um canal alfa (A) adicional é fornecido para informações de opacidade em alguns formatos.
 
 
 
@@ -243,51 +243,51 @@ A tabela a seguir lista os formatos RGB/BGR fornecidos pelo WIC. Esses formatos 
 | GUID \_ WICPixelFormat64bppRGBFixedPoint   | 3             | 16               | 64             | Fixo        |
 | GUID \_ WICPixelFormat64bppRGBAFixedPoint  | 4             | 16               | 64             | Fixo        |
 | GUID \_ WICPixelFormat64bppBGRAFixedPoint  | 4             | 16               | 64             | Fixo        |
-| \_WICPIXELFORMAT64BPPRGBHALF GUID         | 3             | 16               | 64             | Float        |
-| \_WICPIXELFORMAT64BPPRGBAHALF GUID        | 4             | 16               | 64             | Float        |
-| \_WICPIXELFORMAT96BPPRGBFIXEDPOINT GUID   | 3             | 32               | 96             | Fixo        |
-| \_WICPIXELFORMAT128BPPRGBFLOAT GUID       | 3             | 32               | 128            | Float        |
-| \_WICPIXELFORMAT128BPPRGBAFLOAT GUID      | 4             | 32               | 128            | Float        |
-| \_WICPIXELFORMAT128BPPPRGBAFLOAT GUID     | 4             | 32               | 128            | Float        |
-| \_WICPIXELFORMAT128BPPRGBFIXEDPOINT GUID  | 3             | 32               | 128            | Fixo        |
-| \_WICPIXELFORMAT128BPPRGBAFIXEDPOINT GUID | 4             | 32               | 128            | Fixo        |
+| GUID \_ WICPixelFormat64bppRGBHalf         | 3             | 16               | 64             | Float        |
+| GUID \_ WICPixelFormat64bppRGBAHalf        | 4             | 16               | 64             | Float        |
+| GUID \_ WICPixelFormat96bppRGBFixedPoint   | 3             | 32               | 96             | Fixo        |
+| GUID \_ WICPixelFormat128bppRGBFloat       | 3             | 32               | 128            | Float        |
+| GUID \_ WICPixelFormat128bppRGBAFloat      | 4             | 32               | 128            | Float        |
+| GUID \_ WICPixelFormat128bppPRGBAFloat     | 4             | 32               | 128            | Float        |
+| GUID \_ WICPixelFormat128bppRGBFixedPoint  | 3             | 32               | 128            | Fixo        |
+| GUID \_ WICPixelFormat128bppRGBAFixedPoint | 4             | 32               | 128            | Fixo        |
 
 
 
  
 
 > [!Note]  
-> \*O \_ formato GUID WICPixelFormat32bppRGBE codifica valores de ponto flutuante de 3 16 bits em 4 bytes, da seguinte maneira: três mantissas de 8 bits não assinados para os canais R, G e B, além de um expoente de 8 bits compartilhado. Esse formato fornece precisão de ponto flutuante de 16 bits em uma representação de pixel menor.
+> \*O formato GUID WICPixelFormat32bppRGBE codifica três valores de ponto flutuante de 16 bits em 4 bytes, da seguinte forma: três mantissas de 8 bits sem sinal para os canais R, G e B, além de um expoente compartilhado de \_ 8 bits. Esse formato fornece precisão de ponto flutuante de 16 bits em uma representação de pixel menor.
 
  
 
-a partir do Windows 8 e da [atualização da plataforma para Windows 7](/windows/desktop/direct3darticles/platform-update-for-windows-7), o WIC fornece formatos adicionais, mostrados na tabela aqui.
+Começando com Windows 8 e a Atualização de Plataforma [para Windows 7,](/windows/desktop/direct3darticles/platform-update-for-windows-7)o WIC fornece formatos adicionais, mostrados na tabela aqui.
 
 
 
-| Nome amigável                      | Contagem de canais | Bits por canal | Bits por Pixel | Tipo de armazenamento |
+| Nome amigável                      | Contagem de Canais | Bits por canal | Bits por Pixel | Tipo de armazenamento |
 |------------------------------------|---------------|------------------|----------------|--------------|
-| \_WICPIXELFORMAT32BPPRGB GUID       | 3             | 8                | 32             | UINT         |
-| \_WICPIXELFORMAT64BPPRGB GUID       | 3             | 16               | 64             | UINT         |
-| \_WICPIXELFORMAT96BPPRGBFLOAT GUID  | 3             | 32               | 96             | FLOAT        |
-| \_WICPIXELFORMAT64BPPPRGBAHALF GUID | 4             | 16               | 64             | FLOAT        |
+| GUID \_ WICPixelFormat32bppRGB       | 3             | 8                | 32             | UINT         |
+| GUID \_ WICPixelFormat64bppRGB       | 3             | 16               | 64             | UINT         |
+| GUID \_ WICPixelFormat96bppRGBFloat  | 3             | 32               | 96             | FLOAT        |
+| GUID \_ WICPixelFormat64bppPRGBAHalf | 4             | 16               | 64             | FLOAT        |
 
 
 
  
 
-### <a name="cmyk-pixel-formats"></a>Formatos de pixel CMYK
+### <a name="cmyk-pixel-formats"></a>Formatos de pixel do CMYK
 
-A tabela a seguir lista os formatos CMYK fornecidos pelo WIC. Esses formatos separam os dados de cores primárias em canais ciano (C), magenta (M), amarelo (Y) e preto (K).
+A tabela a seguir lista os formatos CMYK fornecidos pelo WIC. Esses formatos separam os dados de cor primária em canais ciano (C), magenta (M), amarelo (Y) e preto (K).
 
 
 
-| Nome amigável                      | Contagem de canais | Bits por canal | Bits por Pixel | Tipo de armazenamento |
+| Nome amigável                      | Contagem de Canais | Bits por canal | Bits por Pixel | Tipo de armazenamento |
 |------------------------------------|---------------|------------------|----------------|--------------|
-| \_WICPIXELFORMAT32BPPCMYK GUID      | 4             | 8                | 32             | UINT         |
-| \_WICPIXELFORMAT64BPPCMYK GUID      | 4             | 16               | 64             | UINT         |
-| \_WICPIXELFORMAT40BPPCMYKALPHA GUID | 5             | 8                | 40             | UINT         |
-| \_WICPIXELFORMAT80BPPCMYKALPHA GUID | 5             | 16               | 80             | UINT         |
+| GUID \_ WICPixelFormat32bppCMYK      | 4             | 8                | 32             | UINT         |
+| GUID \_ WICPixelFormat64bppCMYK      | 4             | 16               | 64             | UINT         |
+| GUID \_ WICPixelFormat40bppCMYKAlpha | 5             | 8                | 40             | UINT         |
+| GUID \_ WICPixelFormat80bppCMYKAlpha | 5             | 16               | 80             | UINT         |
 
 
 
@@ -392,82 +392,82 @@ As tabelas a seguir mostram os formatos de pixel com suporte por cada um dos cod
 | GUID \_ WICPixelFormat16bppBGR565         | GUID \_ WICPixelFormat16bppBGR565         |
 | GUID \_ WICPixelFormat24bppBGR            | GUID \_ WICPixelFormat24bppBGR            |
 | GUID \_ WICPixelFormat32bppBGR            | GUID \_ WICPixelFormat32bppBGR            |
-| GUID \_ WICPixelFormat32bppBGRA\*         | GUID \_ WICPixelFormat32bppBGRA\*         |
-| GUID \_ WICPixelFormat64bppRGBAFixedPoint | GUID \_ WICPixelFormat32bppPBGRA          |
-|                                         | GUID \_ WICPixelFormat64bppRGBAFixedPoint |
-|                                         | GUID \_ WICPixelFormat64bppBGRAFixedPoint |
+| GUID \_ WICPixelFormat32bppBGRA\*         | \_WICPIXELFORMAT32BPPBGRA GUID\*         |
+| \_WICPIXELFORMAT64BPPRGBAFIXEDPOINT GUID | \_WICPIXELFORMAT32BPPPBGRA GUID          |
+|                                         | \_WICPIXELFORMAT64BPPRGBAFIXEDPOINT GUID |
+|                                         | \_WICPIXELFORMAT64BPPBGRAFIXEDPOINT GUID |
 
 
 
  
 
 > [!Note]  
-> Há suporte para GUID \_ WICPixelFormat32bppBGRA apenas no Windows 8, a Atualização de Plataforma [para Windows 7](/windows/desktop/direct3darticles/platform-update-for-windows-7)e superior.
+> \_o GUID WICPixelFormat32bppBGRA só tem suporte no Windows 8, a [atualização de plataforma para Windows 7](/windows/desktop/direct3darticles/platform-update-for-windows-7)e superior.
 >
-> -   Para codificar nesse formato, use a **opção codificador EnableV5Header32bppBGRA.** O BMP será gravado com um header BITMAPV5HEADER.
-> -   Se um arquivo tiver um BITMAPV5HEADER, ele será decodificado como GUID \_ WICPixelFormat32bppBGRA.
+> -   Para codificar nesse formato, use a opção de codificador **EnableV5Header32bppBGRA** . O BMP será gravado com um cabeçalho BITMAPV5HEADER.
+> -   Se um arquivo tiver um BITMAPV5HEADER, ele decodificará como GUID \_ WICPixelFormat32bppBGRA.
 
  
 
-### <a name="gif-native-codec"></a>Codec nativo gif
+### <a name="gif-native-codec"></a>Codec nativo GIF
 
 
 
 | Formatos de pixel do decodificador           | Formatos de pixel do codificador           |
 |---------------------------------|---------------------------------|
-| GUID \_ WICPixelFormat8bppIndexed | GUID \_ WICPixelFormat8bppIndexed |
+| \_WICPIXELFORMAT8BPPINDEXED GUID | \_WICPIXELFORMAT8BPPINDEXED GUID |
 
 
 
  
 
-### <a name="ico-native-codec"></a>Codec nativo de ICO
+### <a name="ico-native-codec"></a>Codec nativo da ICO
 
 
 
 | Formatos de pixel do decodificador         | Formatos de pixel do codificador |
 |-------------------------------|-----------------------|
-| GUID \_ WICPixelFormat32bppBGRA |                       |
+| \_WICPIXELFORMAT32BPPBGRA GUID |                       |
 
 
 
  
 
-### <a name="jpeg-native-codec"></a>JPEG Native Codec
+### <a name="jpeg-native-codec"></a>Codec nativo JPEG
 
 
 
 | Formatos de pixel do decodificador         | Formatos de pixel do codificador         |
 |-------------------------------|-------------------------------|
-| GUID \_ WICPixelFormat8bppGray  | GUID \_ WICPixelFormat8bppGray  |
-| GUID \_ WICPixelFormat24bppBGR  | GUID \_ WICPixelFormat24bppBGR  |
-| GUID \_ WICPixelFormat32bppCMYK | GUID \_ WICPixelFormat32bppCMYK |
+| \_WICPIXELFORMAT8BPPGRAY GUID  | \_WICPIXELFORMAT8BPPGRAY GUID  |
+| \_WICPIXELFORMAT24BPPBGR GUID  | \_WICPIXELFORMAT24BPPBGR GUID  |
+| \_WICPIXELFORMAT32BPPCMYK GUID | \_WICPIXELFORMAT32BPPCMYK GUID |
 
 
 
  
 
-### <a name="png-native-codec"></a>Codec nativo de PNG
+### <a name="png-native-codec"></a>Codec nativo do PNG
 
 
 
 | Formatos de pixel do decodificador           | Formatos de pixel do codificador           |
 |---------------------------------|---------------------------------|
-| GUID \_ WICPixelFormat1bppIndexed | GUID \_ WICPixelFormat1bppIndexed |
-| GUID \_ WICPixelFormat2bppIndexed | GUID \_ WICPixelFormat2bppIndexed |
-| GUID \_ WICPixelFormat4bppIndexed | GUID \_ WICPixelFormat4bppIndexed |
-| GUID \_ WICPixelFormat8bppIndexed | GUID \_ WICPixelFormat8bppIndexed |
-| GUID \_ WICPixelFormatBlackWhite  | GUID \_ WICPixelFormatBlackWhite  |
-| GUID \_ WICPixelFormat2bppGray    | GUID \_ WICPixelFormat2bppGray    |
-| GUID \_ WICPixelFormat4bppGray    | GUID \_ WICPixelFormat4bppGray    |
-| GUID \_ WICPixelFormat8bppGray    | GUID \_ WICPixelFormat8bppGray    |
-| GUID \_ WICPixelFormat16bppGray   | GUID \_ WICPixelFormat16bppGray   |
-| GUID \_ WICPixelFormat24bppBGR    | GUID \_ WICPixelFormat24bppBGR    |
-| GUID \_ WICPixelFormat32bppBGRA   | GUID \_ WICPixelFormat32bppBGRA   |
-| GUID \_ WICPixelFormat48bppRGB    | GUID \_ WICPixelFormat48bppRGB    |
-| GUID \_ WICPixelFormat64bppRGBA   | GUID \_ WICPixelFormat48bppBGR    |
-|                                 | GUID \_ WICPixelFormat64bppRGBA   |
-|                                 | GUID \_ WICPixelFormat64bppBGRA   |
+| \_WICPIXELFORMAT1BPPINDEXED GUID | \_WICPIXELFORMAT1BPPINDEXED GUID |
+| \_WICPIXELFORMAT2BPPINDEXED GUID | \_WICPIXELFORMAT2BPPINDEXED GUID |
+| \_WICPIXELFORMAT4BPPINDEXED GUID | \_WICPIXELFORMAT4BPPINDEXED GUID |
+| \_WICPIXELFORMAT8BPPINDEXED GUID | \_WICPIXELFORMAT8BPPINDEXED GUID |
+| \_WICPIXELFORMATBLACKWHITE GUID  | \_WICPIXELFORMATBLACKWHITE GUID  |
+| \_WICPIXELFORMAT2BPPGRAY GUID    | \_WICPIXELFORMAT2BPPGRAY GUID    |
+| \_WICPIXELFORMAT4BPPGRAY GUID    | \_WICPIXELFORMAT4BPPGRAY GUID    |
+| \_WICPIXELFORMAT8BPPGRAY GUID    | \_WICPIXELFORMAT8BPPGRAY GUID    |
+| \_WICPIXELFORMAT16BPPGRAY GUID   | \_WICPIXELFORMAT16BPPGRAY GUID   |
+| \_WICPIXELFORMAT24BPPBGR GUID    | \_WICPIXELFORMAT24BPPBGR GUID    |
+| \_WICPIXELFORMAT32BPPBGRA GUID   | \_WICPIXELFORMAT32BPPBGRA GUID   |
+| \_WICPIXELFORMAT48BPPRGB GUID    | \_WICPIXELFORMAT48BPPRGB GUID    |
+| \_WICPIXELFORMAT64BPPRGBA GUID   | \_WICPIXELFORMAT48BPPBGR GUID    |
+|                                 | \_WICPIXELFORMAT64BPPRGBA GUID   |
+|                                 | \_WICPIXELFORMAT64BPPBGRA GUID   |
 
 
 
@@ -479,44 +479,44 @@ As tabelas a seguir mostram os formatos de pixel com suporte por cada um dos cod
 
 | Formatos de pixel do decodificador                | Formatos de pixel do codificador           |
 |--------------------------------------|---------------------------------|
-| GUID \_ WICPixelFormat1bppIndexed      | GUID \_ WICPixelFormat1bppIndexed |
-| GUID \_ WICPixelFormat4bppIndexed      | GUID \_ WICPixelFormat4bppIndexed |
-| GUID \_ WICPixelFormat8bppIndexed      | GUID \_ WICPixelFormat8bppIndexed |
-| GUID \_ WICPixelFormatBlackWhite       | GUID \_ WICPixelFormatBlackWhite  |
-| GUID \_ WICPixelFormat4bppGray         | GUID \_ WICPixelFormat4bppGray    |
-| GUID \_ WICPixelFormat8bppGray         | GUID \_ WICPixelFormat8bppGray    |
-| GUID \_ WICPixelFormat16bppGray        | GUID \_ WICPixelFormat16bppGray   |
-| GUID \_ WICPixelFormat32bppGrayFloat   | GUID \_ WICPixelFormat24bppBGR    |
-| GUID \_ WICPixelFormat24bppBGR         | GUID \_ WICPixelFormat32bppBGRA   |
-| GUID \_ WICPixelFormat32bppBGRA        | GUID \_ WICPixelFormat32bppCMYK   |
-| GUID \_ WICPixelFormat32bppPBGRA       | GUID \_ WICPixelFormat48bppRGB    |
-| GUID \_ WICPixelFormat48bppRGB         | GUID \_ WICPixelFormat64bppRGBA   |
-| GUID \_ WICPixelFormat32bppCMYK        |                                 |
-| GUID \_ WICPixelFormat40bppCMYKAlpha   |                                 |
-| GUID \_ WICPixelFormat64bppRGBA        |                                 |
-| GUID \_ WICPixelFormat64bppPRGBA       |                                 |
-| GUID \_ WICPixelFormat64bppCMYK        |                                 |
-| GUID \_ WICPixelFormat80bppCMYKAlpha   |                                 |
-| GUID \_ WICPixelFormat96bppRGBFloat\*  |                                 |
-| GUID \_ WICPixelFormat128bppRGBAFloat  |                                 |
-| GUID \_ WICPixelFormat128bppPRGBAFloat |                                 |
+| \_WICPIXELFORMAT1BPPINDEXED GUID      | \_WICPIXELFORMAT1BPPINDEXED GUID |
+| \_WICPIXELFORMAT4BPPINDEXED GUID      | \_WICPIXELFORMAT4BPPINDEXED GUID |
+| \_WICPIXELFORMAT8BPPINDEXED GUID      | \_WICPIXELFORMAT8BPPINDEXED GUID |
+| \_WICPIXELFORMATBLACKWHITE GUID       | \_WICPIXELFORMATBLACKWHITE GUID  |
+| \_WICPIXELFORMAT4BPPGRAY GUID         | \_WICPIXELFORMAT4BPPGRAY GUID    |
+| \_WICPIXELFORMAT8BPPGRAY GUID         | \_WICPIXELFORMAT8BPPGRAY GUID    |
+| \_WICPIXELFORMAT16BPPGRAY GUID        | \_WICPIXELFORMAT16BPPGRAY GUID   |
+| \_WICPIXELFORMAT32BPPGRAYFLOAT GUID   | \_WICPIXELFORMAT24BPPBGR GUID    |
+| \_WICPIXELFORMAT24BPPBGR GUID         | \_WICPIXELFORMAT32BPPBGRA GUID   |
+| \_WICPIXELFORMAT32BPPBGRA GUID        | \_WICPIXELFORMAT32BPPCMYK GUID   |
+| \_WICPIXELFORMAT32BPPPBGRA GUID       | \_WICPIXELFORMAT48BPPRGB GUID    |
+| \_WICPIXELFORMAT48BPPRGB GUID         | \_WICPIXELFORMAT64BPPRGBA GUID   |
+| \_WICPIXELFORMAT32BPPCMYK GUID        |                                 |
+| \_WICPIXELFORMAT40BPPCMYKALPHA GUID   |                                 |
+| \_WICPIXELFORMAT64BPPRGBA GUID        |                                 |
+| \_WICPIXELFORMAT64BPPPRGBA GUID       |                                 |
+| \_WICPIXELFORMAT64BPPCMYK GUID        |                                 |
+| \_WICPIXELFORMAT80BPPCMYKALPHA GUID   |                                 |
+| \_WICPIXELFORMAT96BPPRGBFLOAT GUID\*  |                                 |
+| \_WICPIXELFORMAT128BPPRGBAFLOAT GUID  |                                 |
+| \_WICPIXELFORMAT128BPPPRGBAFLOAT GUID |                                 |
 
 
 
  
 
 > [!Note]  
-> Guid \_ WICPixelFormat96bppRGBFloat só tem suporte no Windows 8, a Atualização de Plataforma [para Windows 7](/windows/desktop/direct3darticles/platform-update-for-windows-7)e superior.
+> \_o GUID WICPixelFormat96bppRGBFloat só tem suporte no Windows 8, a [atualização de plataforma para Windows 7](/windows/desktop/direct3darticles/platform-update-for-windows-7)e superior.
 
  
 
-### <a name="jpeg-xr-native-codec"></a>Codec nativo JPEG-XR
+### <a name="jpeg-xr-native-codec"></a>Codec de JPEG-XR Native
 
 
 
 | Formatos de pixel do decodificador                    | Formatos de pixel do codificador                    |
 |------------------------------------------|------------------------------------------|
-| GUID \_ WICPixelFormatBlackWhite           | GUID \_ WICPixelFormatBlackWhite           |
+| \_WICPIXELFORMATBLACKWHITE GUID           | \_WICPIXELFORMATBLACKWHITE GUID           |
 | \_WICPIXELFORMAT8BPPGRAY GUID             | \_WICPIXELFORMAT8BPPGRAY GUID             |
 | \_WICPIXELFORMAT16BPPBGR555 GUID          | \_WICPIXELFORMAT16BPPBGR555 GUID          |
 | \_WICPIXELFORMAT16BPPGRAY GUID            | \_WICPIXELFORMAT16BPPGRAY GUID            |

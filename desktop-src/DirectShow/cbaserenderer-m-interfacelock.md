@@ -1,7 +1,7 @@
 ---
 description: Bloqueio de estado de filtro.
 ms.assetid: ff29d6b1-ff65-4ee9-b64e-6067a06671f4
-title: Membro CBaseRenderer::m_InterfaceLock (Renbase.h)
+title: 'Membro CBaseRenderer:: m_InterfaceLock (Renbase. h)'
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -23,7 +23,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118402960"
 ---
-# <a name="cbaserendererm_interfacelock-member"></a>Membro interfaceLock CBaseRenderer::m \_
+# <a name="cbaserendererm_interfacelock-member"></a>Membro de CBaseRenderer:: m \_ InterfaceLock
 
 Bloqueio de estado de filtro.
 
@@ -42,8 +42,8 @@ CCritSec m_InterfaceLock;
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Renbase.h (incluir Fluxos.h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Renbase. h (incluir Fluxos. h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
 
 
 

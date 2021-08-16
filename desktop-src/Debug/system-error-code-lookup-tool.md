@@ -33,7 +33,7 @@ A ferramenta é assinada digitalmente pela Microsoft. A seguir estão as informa
    > Se você copiar ou mover o arquivo para uma pasta que está listada na variável de ambiente **path** do seu sistema operacional, ela funcionará em qualquer prompt de comando.
 
 1. Abra uma janela de Prompt de Comando. Se necessário, altere o diretório para o local da ferramenta de pesquisa de erros.
-1. Execute o comando a seguir:
+1. Execute o seguinte comando:
    ```cmd
    Err_6.4.5.exe <error code>
    ```

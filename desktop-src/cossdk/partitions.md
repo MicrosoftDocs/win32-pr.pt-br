@@ -12,12 +12,12 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: b1016ae932d6841a5db590f2d24496113d3cefc8
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 3badf52755a77557c200569c25610b5918cf8dd599d17a83bdebb5c4ddfa6801
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103646544"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118305869"
 ---
 # <a name="partitions-collection"></a>Coleção de partições
 
@@ -60,8 +60,8 @@ As propriedades a seguir têm suporte pelo objeto [**COMAdminCatalogObject**](co
 | Entrada | Valor |
 |----------------|--------------------------------------------------|
 | Descrição    | Determina se esta partição é alterável. |
-| Access         | ReadWrite                                        |
-| Tipo           | Bool                                             |
+| Acesso         | ReadWrite                                        |
+| Type           | Bool                                             |
 | Padrão        | True                                             |
 | Sistema mínimo | Windows Server 2003                              |
 
@@ -76,8 +76,8 @@ As propriedades a seguir têm suporte pelo objeto [**COMAdminCatalogObject**](co
 | Entrada | Valor |
 |----------------|---------------------------------------------------|
 | Descrição    | Determina se esta partição pode ser excluída. |
-| Access         | ReadWrite                                         |
-| Tipo           | Bool                                              |
+| Acesso         | ReadWrite                                         |
+| Type           | Bool                                              |
 | Padrão        | True                                              |
 | Sistema mínimo | Windows Server 2003                               |
 
@@ -92,7 +92,7 @@ As propriedades a seguir têm suporte pelo objeto [**COMAdminCatalogObject**](co
 | Entrada | Valor |
 |----------------|---------------------------------------------------------------------|
 | Descrição    | Essa propriedade representa a descrição que identifica a partição. |
-| Access         | ReadWrite                                                           |
+| Acesso         | ReadWrite                                                           |
 | Type           | String                                                              |
 | Padrão        | ""                                                                  |
 | Sistema mínimo | Windows Server 2003                                                 |
@@ -108,7 +108,7 @@ As propriedades a seguir têm suporte pelo objeto [**COMAdminCatalogObject**](co
 | Entrada | Valor |
 |----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Descrição    | Um GUID que representa a partição. Essa propriedade é retornada quando o método de propriedade de [**chave**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_key) é chamado em um objeto desta coleção. |
-| Access         | WriteOnce                                                                                                                                                          |
+| Acesso         | WriteOnce                                                                                                                                                          |
 | Type           | String                                                                                                                                                             |
 | Padrão        | <Generated>                                                                                                                                                  |
 | Sistema mínimo | Windows Server 2003                                                                                                                                                |
@@ -117,14 +117,14 @@ As propriedades a seguir têm suporte pelo objeto [**COMAdminCatalogObject**](co
 
  
 
-### <a name="name"></a>Nome
+### <a name="name"></a>Name
 
 
 
 | Entrada | Valor |
 |----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Descrição    | Representa o nome da partição. Espaços extras no início e no final da cadeia de caracteres são removidos. Essa propriedade é retornada quando o método de propriedade [**Name**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_name) é chamado em um objeto desta coleção. |
-| Access         | ReadWrite                                                                                                                                                                                                                              |
+| Acesso         | ReadWrite                                                                                                                                                                                                                              |
 | Type           | String                                                                                                                                                                                                                                 |
 | Padrão        | "Nova partição"                                                                                                                                                                                                                        |
 | Sistema mínimo | Windows Server 2003                                                                                                                                                                                                                    |

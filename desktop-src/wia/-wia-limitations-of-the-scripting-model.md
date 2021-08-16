@@ -1,5 +1,5 @@
 ---
-description: 'Saiba mais sobre: Limitações do modelo de script'
+description: 'Saiba mais sobre: limitações do modelo de script'
 ms.assetid: b8ddbfac-5b5e-4aff-beea-82e7fc984790
 title: Limitações do modelo de script
 ms.topic: article
@@ -19,18 +19,18 @@ ms.locfileid: "118208058"
 # <a name="limitations-of-the-scripting-model"></a>Limitações do modelo de script
 
 > [!Note]  
-> Esse sistema de scripts foi substituído pela camada de automação wia (aquisição de imagem) Windows imagem. Consulte [Windows de Automação de Aquisição de Imagem.](/previous-versions/windows/desktop/wiaaut/-wiaaut-startpage)
+> este sistema de scripts foi substituído pela camada de automação da WIA (Windows Image Acquisition). consulte [Windows camada de automação de aquisição de imagem](/previous-versions/windows/desktop/wiaaut/-wiaaut-startpage).
 
  
 
-O Windows de script WIA (Aquisição de Imagem) expõe um subconjunto da funcionalidade wia. A tabela a seguir fornece descrições das limitações do modelo de script. 
+o modelo de script da aquisição de imagem de Windows (WIA) expõe um subconjunto da funcionalidade wia. A tabela a seguir fornece descrições das limitações do modelo de script. 
 
-| Funcionalidade do WIA               | Limitação do modelo de script                                                                                                                                                                                                                                               |
+| Funcionalidade WIA               | Limitação de modelo de script                                                                                                                                                                                                                                               |
 |---------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Suprimindo a interface do usuário  | Não é possível suprimir a interface do usuário para definir propriedades de dispositivo/transferência.                                                                                                                                                                                               |
 | Definir propriedades              | Não é possível definir (gravar) nenhuma propriedade de dispositivo ou item.                                                                                                                                                                                                                        |
-| Registrando para eventos de retorno de chamada | Só pode receber notificação para três eventos especificados: [**OnTransferComplete,**](-wia--iwiaevents-ontransfercomplete.md) [**OnDeviceConnected**](-wia--iwiaevents-ondeviceconnected.md)e [**OnDeviceDisconnected.**](-wia--iwiaevents-ondevicedisconnected.md) |
-| Tratando erros                 | Não é possível lidar com erros de WIA.                                                                                                                                                                                                                                                |
+| Registrando para eventos de retorno de chamada | Só pode receber notificação para três eventos especificados: [**OnTransferComplete**](-wia--iwiaevents-ontransfercomplete.md), [**OnDeviceConnected**](-wia--iwiaevents-ondeviceconnected.md)e [**OnDeviceDisconnected**](-wia--iwiaevents-ondevicedisconnected.md). |
+| Tratando erros                 | Não é possível manipular erros WIA.                                                                                                                                                                                                                                                |
 
 
 

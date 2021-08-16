@@ -1,7 +1,7 @@
 ---
-description: cria um enumerador de informações de propriedade para cada dispositivo disponível 2,0 WIA (aquisição de imagem Windows).
+description: Cria um enumerador de informações de propriedade para cada dispositivo WIA (Aquisição de Imagem) 2.0 Windows disponível.
 ms.assetid: e37b73d5-5192-46e4-bb1c-bd1ef41f1d6c
-title: 'Método IWiaDevMgr2:: EnumDeviceInfo (WIA. h)'
+title: Método IWiaDevMgr2::EnumDeviceInfo (Wia.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -20,9 +20,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118208718"
 ---
-# <a name="iwiadevmgr2enumdeviceinfo-method"></a>Método IWiaDevMgr2:: EnumDeviceInfo
+# <a name="iwiadevmgr2enumdeviceinfo-method"></a>Método IWiaDevMgr2::EnumDeviceInfo
 
-cria um enumerador de informações de propriedade para cada dispositivo disponível 2,0 WIA (aquisição de imagem Windows).
+Cria um enumerador de informações de propriedade para cada dispositivo WIA (Aquisição de Imagem) 2.0 Windows disponível.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,18 +40,18 @@ HRESULT EnumDeviceInfo(
 
 <dl> <dt>
 
-*lFlags* \[ no\]
+*lFlags* \[ Em\]
 </dt> <dd>
 
-Tipo: **longo**
+Tipo: **LONG**
 
-Especifica o tipo de dispositivos WIA 2,0 a serem enumerados.
+Especifica o tipo de dispositivos WIA 2.0 a ser enumerado.
 
 <dt>
 
 <span id="WIA_DEVINFO_ENUM_LOCAL"></span><span id="wia_devinfo_enum_local"></span>
 
-<span id="WIA_DEVINFO_ENUM_LOCAL"></span><span id="wia_devinfo_enum_local"></span>**\_local de \_ enumeração \_ DevInfo do WIA**
+<span id="WIA_DEVINFO_ENUM_LOCAL"></span><span id="wia_devinfo_enum_local"></span>**WIA \_ DEVINFO \_ ENUM \_ LOCAL**
 
 
 </dt> <dd>
@@ -62,21 +62,21 @@ Somente dispositivos de scanner ativos conectados localmente são enumerados.
 
 <span id="WIA_DEVINFO_ENUM_ALL"></span><span id="wia_devinfo_enum_all"></span>
 
-<span id="WIA_DEVINFO_ENUM_ALL"></span><span id="wia_devinfo_enum_all"></span>**\_Enumeração DevInfo do WIA \_ \_ All**
+<span id="WIA_DEVINFO_ENUM_ALL"></span><span id="wia_devinfo_enum_all"></span>**WIA \_ DEVINFO \_ ENUM \_ ALL**
 
 
 </dt> <dd>
 
-Todos os dispositivos são enumerados, localmente e remoto, incluindo dispositivos inativos (desconectados) e dispositivos STI herdados.
+Todos os dispositivos são enumerados, localmente e remotos, incluindo dispositivos inativos (desconectados) e dispositivos herdados somente DEEI.
 
 </dd> </dl> </dd> <dt>
 
 *ppIEnum* \[ out, retval\]
 </dt> <dd>
 
-Tipo: **[ **\_ \_ informações de desenvolvimento de IEnumWIA**](/windows/desktop/api/wia_xp/nn-wia_xp-ienumwia_dev_info)\*\***
+Tipo: **[ **IEnumWIA \_ DEV \_ INFO**](/windows/desktop/api/wia_xp/nn-wia_xp-ienumwia_dev_info)\*\***
 
-Recebe o endereço de um ponteiro para a interface de [**\_ \_ informações de dev IEnumWIA**](/windows/desktop/api/wia_xp/nn-wia_xp-ienumwia_dev_info) .
+Recebe o endereço de um ponteiro para a interface [**IEnumWIA \_ DEV \_ INFO.**](/windows/desktop/api/wia_xp/nn-wia_xp-ienumwia_dev_info)
 
 </dd> </dl>
 
@@ -84,13 +84,13 @@ Recebe o endereço de um ponteiro para a interface de [**\_ \_ informações de 
 
 Tipo: **HRESULT**
 
-Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
+Se esse método for bem-sucedido, ele **retornará S \_ OK.** Caso contrário, ele retornará um **código de erro HRESULT.**
 
 ## <a name="remarks"></a>Comentários
 
-O método **IWiaDevMgr2:: EnumDeviceInfo** cria um objeto enumerador que dá suporte à interface [**\_ \_ informações de desenvolvimento IEnumWIA**](/windows/desktop/api/wia_xp/nn-wia_xp-ienumwia_dev_info) . O método armazena um ponteiro para a interface de **\_ \_ informações de dev IEnumWIA** no parâmetro *ppIEnum*. Os aplicativos podem usar o ponteiro de interface de **\_ \_ informações de desenvolvimento IEnumWIA** para enumerar as propriedades de cada dispositivo WIA 2,0 conectado ao computador do usuário.
+O **método IWiaDevMgr2::EnumDeviceInfo** cria um objeto enumerador que dá suporte à interface [**IEnumWIA \_ DEV \_ INFO.**](/windows/desktop/api/wia_xp/nn-wia_xp-ienumwia_dev_info) O método armazena um ponteiro para a interface **IEnumWIA \_ DEV \_ INFO** no parâmetro *ppIEnum*. Os aplicativos podem usar o ponteiro de interface **IEnumWIA \_ DEV \_ INFO** para enumerar as propriedades de cada dispositivo WIA 2.0 anexado ao computador do usuário.
 
-Os aplicativos devem chamar o método [IUnknown:: Release](/windows/win32/api/unknwn/nf-unknwn-iunknown-release) nos ponteiros de interface recebidos por meio do parâmetro *ppIEnum* .
+Os aplicativos devem chamar [o método IUnknown::Release](/windows/win32/api/unknwn/nf-unknwn-iunknown-release) nos ponteiros de interface que recebem por meio do *parâmetro ppIEnum.*
 
 ## <a name="requirements"></a>Requisitos
 
@@ -98,10 +98,10 @@ Os aplicativos devem chamar o método [IUnknown:: Release](/windows/win32/api/un
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                     |
-| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                               |
-| parâmetro<br/>                   | <dl> <dt>WIA. h</dt> </dl>   |
-| INSERI<br/>                      | <dl> <dt>WIA. idl</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                     |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                               |
+| Cabeçalho<br/>                   | <dl> <dt>Wia.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>Wia.idl</dt> </dl> |
 
 
 

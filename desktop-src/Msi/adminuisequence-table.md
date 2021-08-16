@@ -1,31 +1,31 @@
 ---
-description: A tabela AdminUISequence lista as ações que o instalador chama em sequência quando a ação de administrador de nível superior é executada e o nível da interface do usuário interna é definido como interface de usuários completa ou redução da IU.
+description: A tabela AdminUISequence lista as ações que o instalador chama em sequência quando a ação ADMIN de nível superior é executada e o nível interno da interface do usuário é definido como interface do usuário completa ou interface do usuário reduzida.
 ms.assetid: 7227846d-b755-4af9-acc3-e27742a5097a
 title: Tabela AdminUISequence
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f8fb460f65d223e75ebd50a7587f5b3f4adeced8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 12feb7080d6d97ee86456bee694cdad57eee9873c9c7f64aecf0f4bd05817cc0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105748169"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118381694"
 ---
 # <a name="adminuisequence-table"></a>Tabela AdminUISequence
 
-A tabela AdminUISequence lista as ações que o instalador chama em sequência quando a ação de [administrador](admin-action.md) de nível superior é executada e o nível da interface do usuário interna é definido como interface de usuários completa ou redução da IU. O instalador ignorará as ações nesta tabela se o nível da interface do usuário estiver definido como interface básica ou não. Consulte [sobre a interface do usuário](about-the-user-interface.md).
+A tabela AdminUISequence lista as ações que o instalador chama em sequência quando a ação [ADMIN](admin-action.md) de nível superior é executada e o nível interno da interface do usuário é definido como interface do usuário completa ou interface do usuário reduzida. O instalador ignorará as ações nesta tabela se o nível de interface do usuário estiver definido como interface do usuário básica ou nenhuma interface do usuário. Consulte [Sobre o Interface do Usuário](about-the-user-interface.md).
 
-As ações de administrador na sequência de instalação até a [ação InstallValidate](installvalidate-action.md)e todas as caixas de diálogo de saída estão localizadas na tabela AdminUISequence. Todas as ações do InstallValidate até o final da sequência de instalação estão na [tabela AdminExecuteSequence](adminexecutesequence-table.md). Como a tabela AdminExecuteSequence precisa ser autônoma, ela também contém as ações de inicialização necessárias, como [LaunchConditions](launchconditions-action.md), [CostInitialize](costinitialize-action.md), [filecost](filecost-action.md)e [CostFinalize](costfinalize-action.md). Ele também tem a [ação ExecuteAction](executeaction-action.md).
+As ações admin na sequência de instalação até a ação [InstallValidate](installvalidate-action.md)e as caixas de diálogo de saída estão localizadas na tabela AdminUISequence. Todas as ações do InstallValidate até o final da sequência de instalação estão na [tabela AdminExecuteSequence](adminexecutesequence-table.md). Como a tabela AdminExecuteSequence precisa ficar sozinha, ela também contém todas as ações de inicialização necessárias, como [LaunchConditions,](launchconditions-action.md) [CostInitialize,](costinitialize-action.md) [FileCost](filecost-action.md)e [CostFinalize.](costfinalize-action.md) Ele também tem a [ação ExecuteAction](executeaction-action.md).
 
-As colunas são idênticas às da [tabela InstallUISequence](installuisequence-table.md). A tabela AdminUISequence tem as colunas a seguir.
+As colunas são idênticas às da [tabela InstallUISequence](installuisequence-table.md). A tabela AdminUISequence tem as seguintes colunas.
 
 
 
 | Coluna    | Tipo                         | Chave | Nullable |
 |-----------|------------------------------|-----|----------|
-| Ação    | [Identificador](identifier.md) | S   | N        |
-| Condição | [Condição](condition.md)   | N   | S        |
-| Sequência  | [Inteiro](integer.md)       | N   | S        |
+| Ação    | [Identificador](identifier.md) | Y   | N        |
+| Condição | [Condição](condition.md)   | N   | Y        |
+| Sequência  | [Inteiro](integer.md)       | N   | Y        |
 
 
 
@@ -35,7 +35,7 @@ As colunas são idênticas às da [tabela InstallUISequence](installuisequence-t
 
 <dl> <dt>
 
-<span id="Action"></span><span id="action"></span><span id="ACTION"></span>Action
+<span id="Action"></span><span id="action"></span><span id="ACTION"></span>Ação
 </dt> <dd>
 
 Nome da ação a ser executada. Essa é uma ação padrão, um assistente de interface do usuário ou uma ação personalizada listada na [tabela CustomAction](customaction-table.md).
@@ -44,25 +44,25 @@ Chave de tabela primária.
 
 </dd> <dt>
 
-<span id="Condition"></span><span id="condition"></span><span id="CONDITION"></span>Problema
+<span id="Condition"></span><span id="condition"></span><span id="CONDITION"></span>Condição
 </dt> <dd>
 
-Expressão lógica. Se a expressão for avaliada como false, a ação será ignorada. Se a sintaxe da expressão for inválida, a sequência será encerrada, retornando iesBadActionData. Para obter informações sobre a sintaxe de instruções condicionais, consulte [sintaxe de instrução condicional](conditional-statement-syntax.md).
+Expressão lógica. Se a expressão for avaliada como false, a ação será ignorada. Se a sintaxe de expressão for inválida, a sequência será encerrada, retornando iesBadActionData. Para obter informações sobre a sintaxe de instruções condicionais, consulte [Sintaxe de instrução condicional](conditional-statement-syntax.md).
 
 </dd> <dt>
 
-<span id="Sequence"></span><span id="sequence"></span><span id="SEQUENCE"></span>Ordem
+<span id="Sequence"></span><span id="sequence"></span><span id="SEQUENCE"></span>Seqüência
 </dt> <dd>
 
-Um valor positivo indica a posição da sequência da ação. Os valores negativos a seguir indicam que a ação será chamada se o instalador retornar o sinalizador de término. Cada sinalizador de encerramento (valor negativo) pode ser usado com no máximo uma ação. Várias ações podem ter sinalizadores de encerramento, mas devem ser sinalizadores diferentes. Os sinalizadores de término (valores negativos) normalmente são usados com [caixas de diálogo](dialog-boxes.md).
+Um valor positivo indica a posição da sequência da ação. Os valores negativos a seguir indicam que a ação será chamada se o instalador retornar o sinalizador de encerramento. Cada sinalizador de terminação (valor negativo) pode ser usado com no máximo uma ação. Várias ações podem ter sinalizadores de término, mas devem ser sinalizadores diferentes. Sinalizadores de terminação (valores negativos) normalmente são usados com caixas [de diálogo](dialog-boxes.md).
 
 
 
 | Sinalizador de término          | Valor | Descrição                                                                          |
 |---------------------------|-------|--------------------------------------------------------------------------------------|
-| msiDoActionStatusSuccess  | -1    | Conclusão bem-sucedida. Usado com as caixas de diálogo de [saída](exit-dialog.md) .               |
-| msiDoActionStatusUserExit | -2    | O usuário encerra a instalação. Usado com caixas de diálogo [UserExit](userexit-dialog.md) .     |
-| msiDoActionStatusFailure  | -3    | Encerramentos de saída fatais. Usado com caixas de diálogo [FatalError](fatalerror-dialog.md) . |
+| msiDoActionStatusSuccess  | -1    | Conclusão bem-sucedida. Usado com [caixas de diálogo](exit-dialog.md) Sair.               |
+| msiDoActionStatusUserExit | -2    | O usuário encerra a instalação. Usado com [caixas de diálogo UserExit.](userexit-dialog.md)     |
+| msiDoActionStatusFailure  | -3    | A saída fatal é encerrada. Usado com caixas [de diálogo FatalError.](fatalerror-dialog.md) |
 | msiDoActionStatusSuspend  | -4    | A instalação está suspensa.                                                                |
 
 

@@ -1,9 +1,9 @@
 ---
-title: WM/subtítulo
-description: O atributo WM/subtítulo contém o subtítulo do conteúdo.
+title: WM/SubTitle
+description: O atributo WM/SubTitle contém o subtítulo do conteúdo.
 ms.assetid: 290ec571-3bb9-4817-8f63-3d6c3c9802bf
 keywords:
-- Formato de mídia do Windows do WM/subtítulo
+- Formato de mídia do Windows WM/SubTitle
 topic_type:
 - apiref
 api_name:
@@ -19,9 +19,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118195562"
 ---
-# <a name="wmsubtitle"></a>WM/subtítulo
+# <a name="wmsubtitle"></a>WM/SubTitle
 
-O atributo **WM/subtítulo** contém o subtítulo do conteúdo.
+O **atributo WM/SubTitle** contém o subtítulo do conteúdo.
 
 ## <a name="global-constant"></a>Constante global
 
@@ -29,7 +29,7 @@ g \_ wszWMSubTitle
 
 ## <a name="data-type"></a>Tipo de Dados
 
-**Cadeia de caracteres do \_ tipo WMT \_**
+**CADEIA DE CARACTERES DE \_ TIPO \_ WMT**
 
 ## <a name="see-also"></a>Confira também
 

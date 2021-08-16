@@ -1,7 +1,7 @@
 ---
-description: Função proxy para o método GetColorCount.
+description: Função de proxy para o método GetColorCount.
 ms.assetid: 2ad87383-4d30-4df0-b43a-95fdad1d59f9
-title: IWICPalette_GetColorCount_Proxy função
+title: Função IWICPalette_GetColorCount_Proxy
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -21,9 +21,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118206325"
 ---
-# <a name="iwicpalette_getcolorcount_proxy-function"></a>Função proxy IWICPalette \_ GetColorCount \_
+# <a name="iwicpalette_getcolorcount_proxy-function"></a>\_Função de \_ proxy IWICPalette GetColorCount
 
-Função proxy para o [**método GetColorCount.**](/windows/desktop/api/Wincodec/nf-wincodec-iwicpalette-getcolorcount)
+Função de proxy para o método [**GetColorCount**](/windows/desktop/api/Wincodec/nf-wincodec-iwicpalette-getcolorcount) .
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -41,19 +41,19 @@ HRESULT IWICPalette_GetColorCount_Proxy(
 
 <dl> <dt>
 
-*ESTE \_ PTR* \[ em\]
+*Isso \_ PTR* \[\]
 </dt> <dd>
 
 Tipo: **[ **IWICPalette**](/windows/desktop/api/Wincodec/nn-wincodec-iwicpalette)\***
 
-Ponteiro para este [**objeto IWICPalette.**](/windows/desktop/api/Wincodec/nn-wincodec-iwicpalette)
+Ponteiro para este objeto [**IWICPalette**](/windows/desktop/api/Wincodec/nn-wincodec-iwicpalette) .
 
 </dd> <dt>
 
-*pcCount* \[ out\]
+*pcCount* \[ fora\]
 </dt> <dd>
 
-Tipo: **UINT \***
+Tipo: **uint \***
 
 Ponteiro que recebe o número de cores na tabela de cores.
 
@@ -63,7 +63,7 @@ Ponteiro que recebe o número de cores na tabela de cores.
 
 Tipo: **HRESULT**
 
-Se essa função for bem-sucedida, ela retornará **S \_ OK.** Caso contrário, ele retornará um **código de erro HRESULT.**
+Se essa função for bem sucedido, ela retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
 
 ## <a name="remarks"></a>Comentários
 
@@ -73,9 +73,9 @@ Se essa função for bem-sucedida, ela retornará **S \_ OK.** Caso contrário, 
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows XP com SP2, Windows aplicativos da área de trabalho do Vista \[\]<br/>                                                                                              |
-| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                                                                                             |
-| DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec.lib</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows XP com SP2, somente aplicativos do Windows Vista \[ desktop\]<br/>                                                                                              |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                                                                                             |
+| DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec. lib</dt> </dl> |
 
 
 

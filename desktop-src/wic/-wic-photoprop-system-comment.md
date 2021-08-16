@@ -1,7 +1,7 @@
 ---
-description: A política de metadados de foto para a propriedade System.Comment.
+description: A política de metadados de foto para a propriedade System. Comment.
 ms.assetid: 02a6ac18-ad69-4880-a267-8330d648c0d9
-title: System.Comment Photo Metadata Policy
+title: Política de metadados de foto System. Comment
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 45b3511e0a459a2b652b29828060be6f0a92a36639aef63d4fa087e54ec9d80b
@@ -11,13 +11,13 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118205625"
 ---
-# <a name="systemcomment-photo-metadata-policy"></a>System.Comment Photo Metadata Policy
+# <a name="systemcomment-photo-metadata-policy"></a>Política de metadados de foto System. Comment
 
-A política de metadados de foto para a [propriedade System.Comment.](../properties/props-system-comment.md)
+A política de metadados de foto para a propriedade [System. Comment](../properties/props-system-comment.md) .
 
-### <a name="pkey"></a>Pkey
+### <a name="pkey"></a>PKEY
 
-Comentário \_ PKEY
+Comentário de PKEY \_
 
 ### <a name="containers"></a>Contêineres
 
@@ -27,29 +27,29 @@ JPEG, TIFF
 
 Não
 
-### <a name="output-propvariant-type"></a>Tipo PROPVARIANT de saída
+### <a name="output-propvariant-type"></a>Tipo de PROPVARIANT de saída
 
-VT \_ LPWSTR
+LPWStr do VT \_
 
-### <a name="input-propvariant-type"></a>Tipo PROPVARIANT de entrada
+### <a name="input-propvariant-type"></a>Tipo de PROPVARIANT de entrada
 
 VT \_ LPWSTR ou VT \_ LPSTR
 
-### <a name="conflict-resolution-policy"></a>Política de resolução de conflitos
+### <a name="conflict-resolution-policy"></a>Política de resolução de conflito
 
-Valores de esquemas diferentes são reconciliados.
+Os valores de esquemas diferentes são reconciliados.
 
 ### <a name="jpeg-policy"></a>Política JPEG
 
-### <a name="read-paths"></a>Ler caminhos
+### <a name="read-paths"></a>Caminhos de leitura
 
 
 
 | Ordem | Caminho                                | Formato de disco    |
 |-------|-------------------------------------|----------------|
-| 1     | /app1/ifd/{ushort=40092}            | Bytes \_ unicode |
-| 2     | /app1/ifd/{ushort=37510}            | Unicode        |
-| 3     | /xmp/ <xmpalt> exif:UserComment | Unicode        |
+| 1     | /App1/IFD/{UShort = 40092}            | \_bytes Unicode |
+| 2     | /App1/IFD/{UShort = 37510}            | Unicode        |
+| 3     | /XMP/ <xmpalt> EXIF: UserComment | Unicode        |
 
 
 
@@ -61,7 +61,7 @@ Valores de esquemas diferentes são reconciliados.
 
 | Ordem | Caminho                     | Formato de disco    |
 |-------|--------------------------|----------------|
-| 1     | /app1/ifd/{ushort=40092} | Bytes \_ unicode |
+| 1     | /App1/IFD/{UShort = 40092} | \_bytes Unicode |
 
 
 
@@ -73,9 +73,9 @@ Valores de esquemas diferentes são reconciliados.
 
 | Ordem | Caminho                          |
 |-------|-------------------------------|
-| 1     | /app1/ifd/{ushort=40092}      |
-| 2     | /app1/ifd/exif/{ushort=37510} |
-| 3     | /xmp/exif:UserComment         |
+| 1     | /App1/IFD/{UShort = 40092}      |
+| 2     | /App1/IFD/EXIF/{UShort = 37510} |
+| 3     | /XMP/EXIF: UserComment         |
 
 
 
@@ -83,15 +83,15 @@ Valores de esquemas diferentes são reconciliados.
 
 ### <a name="tiff-policy"></a>Política TIFF
 
-### <a name="read-paths"></a>Ler caminhos
+### <a name="read-paths"></a>Caminhos de leitura
 
 
 
 | Ordem | Caminho                                    | Formato de disco    |
 |-------|-----------------------------------------|----------------|
-| 1     | /ifd/{ushort=40092}                     | Bytes \_ unicode |
-| 2     | /ifd/{ushort=37510}                     | Unicode        |
-| 3     | /ifd/xmp/ <xmpalt> exif:UserComment | Unicode        |
+| 1     | /IFD/{UShort = 40092}                     | \_bytes Unicode |
+| 2     | /IFD/{UShort = 37510}                     | Unicode        |
+| 3     | /IFD/XMP/ <xmpalt> EXIF: UserComment | Unicode        |
 
 
 
@@ -103,7 +103,7 @@ Valores de esquemas diferentes são reconciliados.
 
 | Ordem | Caminho                | Formato de disco    |
 |-------|---------------------|----------------|
-| 1     | /ifd/{ushort=40092} | Bytes \_ unicode |
+| 1     | /IFD/{UShort = 40092} | \_bytes Unicode |
 
 
 
@@ -115,9 +115,9 @@ Valores de esquemas diferentes são reconciliados.
 
 | Ordem | Caminho                      |
 |-------|---------------------------|
-| 1     | /ifd/{ushort=40092}       |
-| 2     | /ifd/{ushort=37510}       |
-| 3     | /ifd/xmp/exif:UserComment |
+| 1     | /IFD/{UShort = 40092}       |
+| 2     | /IFD/{UShort = 37510}       |
+| 3     | /IFD/XMP/EXIF: UserComment |
 
 
 
@@ -129,7 +129,7 @@ Valores de esquemas diferentes são reconciliados.
 
 <dl> <dt>
 
-[System.Comment](../properties/props-system-comment.md)
+[Sistema. Comment](../properties/props-system-comment.md)
 </dt> </dl>
 
  

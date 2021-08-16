@@ -1,23 +1,23 @@
 ---
-description: Rastreamento de eventos no DirectShow
+description: Rastreamento de eventos em DirectShow
 ms.assetid: e78c4514-25f4-441d-bfd0-6dac4f7567fd
-title: Rastreamento de eventos no DirectShow
+title: Rastreamento de eventos em DirectShow
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c567d8a2e75d838570323d8ad6be04f11502c9c4
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 6afdeabfb13608453fc6b84bbefb36cca79265739c049cc0e5d35e997ebaf902
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105785497"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117819578"
 ---
-# <a name="event-tracing-in-directshow"></a>Rastreamento de eventos no DirectShow
+# <a name="event-tracing-in-directshow"></a>Rastreamento de eventos em DirectShow
 
-O DirectShow dá suporte ao ETW (rastreamento de eventos para Windows), que pode ser usado para criar logs de eventos para instrumentação ou depuração. Para obter mais informações sobre o ETW, consulte a documentação do SDK do Windows. Para consumir eventos ETW em um aplicativo DirectShow, você deve habilitar o rastreamento e, em seguida, processar os eventos de rastreamento. Use as etapas a seguir.
+DirectShow dá suporte ao ETW (Rastreamento de Eventos para Windows), que pode ser usado para criar logs de eventos para instrumentação ou depuração. Para obter mais informações sobre ETW, consulte a documentação Windows SDK. Para consumir eventos ETW em um DirectShow, você deve habilitar o rastreamento e processar os eventos de rastreamento. Use as etapas a seguir.
 
-**Definir as chaves de Registro necessárias**
+**Definir as chaves necessárias do Registro**
 
-Para habilitar o rastreamento no computador do usuário, primeiro defina as seguintes chaves do registro:
+Para habilitar o rastreamento no computador do usuário, primeiro de definir as seguintes chaves do Registro:
 
 
 ```C++
@@ -31,12 +31,12 @@ HKEY_LOCAL_MACHINE\SOFTWARE\DEBUG\Quartz.dll
 
 Essas chaves se aplicam a binários de versão e de depuração.
 
-**Habilitar o rastreamento em seu aplicativo**
+**Habilitar rastreamento em seu aplicativo**
 
 Para habilitar o rastreamento em seu aplicativo, execute as seguintes etapas:
 
-1.  Chame **StartTrace** para iniciar uma nova sessão de rastreamento.
-2.  Chame **EnableTrace** para habilitar o rastreamento. O GUID do provedor do DirectShow é o GUID \_ DShow \_ CTL.
+1.  Chame **StartTrace para** iniciar uma nova sessão de rastreamento.
+2.  Chame **EnableTrace para** habilitar o rastreamento. O GUID do provedor para DirectShow é GUID \_ DSHOW \_ CTL.
 3.  Antes de o aplicativo sair, chame **StopTrace** para fechar a sessão de rastreamento.
 
 **Processar os eventos**
@@ -45,12 +45,12 @@ Para processar os eventos, execute as seguintes etapas:
 
 1.  Chame **OpenTrace** para abrir o rastreamento para processamento.
 2.  Chame **ProcessTrace** para processar os eventos.
-3.  No retorno de chamada **ProcessTrace** , use o GUID do evento para localizar o tipo de evento. O GUID do evento indica a estrutura usada para os dados do evento. Consulte [rastrear GUIDs de eventos](trace-guids.md).
-4.  Chame **CloseTrace** para fechar a alça de rastreamento.
+3.  No retorno **de chamada do ProcessTrace,** use o GUID do evento para encontrar o tipo de evento. O GUID do evento indica a estrutura usada para os dados do evento. Consulte [GUIDs de evento de rastreamento.](trace-guids.md)
+4.  Chame **CloseTrace para** fechar o alça de rastreamento.
 
 **Código de exemplo**
 
-O código a seguir mostra uma classe auxiliar que habilita o rastreamento. Esse código mostra como gravar eventos em um arquivo de log, que pode ser processado após a conclusão da sessão. Você também pode processar eventos em tempo real. Para obter mais informações, consulte a documentação do ETW na SDK do Windows.
+O código a seguir mostra uma classe auxiliar que habilita o rastreamento. Esse código mostra como gravar eventos em um arquivo de log, que pode ser processado após a conclusão da sessão. Você também pode processar eventos em tempo real. Para obter mais informações, consulte a documentação do ETW no SDK do Windows.
 
 
 ```C++

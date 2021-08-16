@@ -1,55 +1,55 @@
 ---
-title: Buffer XML
-description: Um buffer XML fornece armazenamento eficiente na memória para dados XML arbitrários.
+title: XML Buffer
+description: Um Buffer XML fornece armazenamento na memória eficiente para dados XML arbitrários.
 ms.assetid: e379628b-c6f8-48b1-8109-59fb604f2bcb
 keywords:
 - Serviços Web de buffer XML para Windows
 - WWSAPI
-- WWS
+- Wws
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ab71121dc451c9ccb186c754d537836f9e899fa9
-ms.sourcegitcommit: a716ca2a6a22a400f02c6b31699cf4da83ee3619
+ms.openlocfilehash: 3bcd4e4725f2ad3345dcef7c33b694a8e327f4d8a6c43fbce39f9c57babfa467
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "103917796"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118192332"
 ---
-# <a name="xml-buffer"></a>Buffer XML
+# <a name="xml-buffer"></a>XML Buffer
 
-Um buffer XML fornece armazenamento eficiente na memória para dados XML arbitrários.
+Um Buffer XML fornece armazenamento na memória eficiente para dados XML arbitrários.
 
 
-Para ler dados de um buffer XML, use um [leitor de XML](xml-reader.md) e chame [**WsSetInputToBuffer**](/windows/desktop/api/WebServices/nf-webservices-wssetinputtobuffer) com o buffer XML. O leitor será posicionado no início do documento.
+Para ler dados de um Buffer XML, use um Leitor [de XML](xml-reader.md) e chame [**WsSetInputToBuffer**](/windows/desktop/api/WebServices/nf-webservices-wssetinputtobuffer) com o Buffer XML. O leitor será posicionado no início do documento.
 
-Para inserir dados em um buffer, use um [gravador de XML](xml-writer.md) e chame [**WsSetOutputToBuffer**](/windows/desktop/api/WebServices/nf-webservices-wssetoutputtobuffer) com o buffer XML. O gravador será posicionado no final do documento.
+Para inserir dados em um buffer, use um [Xml Writer e](xml-writer.md) chame [**WsSetOutputToBuffer**](/windows/desktop/api/WebServices/nf-webservices-wssetoutputtobuffer) com o Buffer XML. O autor será posicionado no final do documento.
 
-Depois que um leitor tiver sido definido como um buffer XML, além de todas as APIs do leitor XML, [**WsMoveReader**](/windows/desktop/api/WebServices/nf-webservices-wsmovereader) poderá ser usado para navegar pelo leitor pelo documento. [**WsGetReaderPosition**](/windows/desktop/api/WebServices/nf-webservices-wsgetreaderposition) e [**WsSetReaderPosition**](/windows/desktop/api/WebServices/nf-webservices-wssetreaderposition) também podem ser usados para registrar uma posição no documento e retornar a ela mais tarde.
+Depois que um leitor tiver sido definido como um Buffer XML, além de todas as APIs de Leitor de XML, o [**WsMoveReader**](/windows/desktop/api/WebServices/nf-webservices-wsmovereader) poderá ser usado para navegar pelo leitor por meio do documento. [**WsGetReaderPosition**](/windows/desktop/api/WebServices/nf-webservices-wsgetreaderposition) e [**WsSetReaderPosition**](/windows/desktop/api/WebServices/nf-webservices-wssetreaderposition) também podem ser usados para registrar uma posição no documento e retornar a ele mais tarde.
 
-Depois que um gravador tiver sido definido como um buffer XML, além de todas as APIs do gravador de XML, [**WsMoveWriter**](/windows/desktop/api/WebServices/nf-webservices-wsmovewriter) poderá ser usado para navegar pelo gravador por meio do documento. [**WsGetWriterPosition**](/windows/desktop/api/WebServices/nf-webservices-wsgetwriterposition) e [**WsSetWriterPosition**](/windows/desktop/api/WebServices/nf-webservices-wssetwriterposition) também podem ser usados para registrar uma posição no documento e retornar a ela mais tarde. O gravador sempre insere dados antes do nó no qual ele está posicionado.
+Depois que um autor tiver sido definido como um Buffer XML, além de todas as APIs do Xml Writer, [**o WsMoveWriter**](/windows/desktop/api/WebServices/nf-webservices-wsmovewriter) poderá ser usado para navegar pelo autor por meio do documento. [**WsGetWriterPosition**](/windows/desktop/api/WebServices/nf-webservices-wsgetwriterposition) [**e WsSetWriterPosition**](/windows/desktop/api/WebServices/nf-webservices-wssetwriterposition) também podem ser usados para registrar uma posição no documento e retornar a ele mais tarde. O autor sempre insere dados antes do nó no qual ele está posicionado.
 
-Os nós podem ser excluídos do buffer XML obtendo a posição do nó usando [**WsGetReaderPosition**](/windows/desktop/api/WebServices/nf-webservices-wsgetreaderposition) ou [**WsGetWriterPosition**](/windows/desktop/api/WebServices/nf-webservices-wsgetwriterposition) e, em seguida, chamando [**WsRemoveNode**](/windows/desktop/api/WebServices/nf-webservices-wsremovenode) com essa posição. Para elementos, isso excluirá o elemento, todos os seus filhos, incluindo seu elemento final correspondente.
+Os nós podem ser excluídos do buffer XML obtendo a posição do nó usando [**WsGetReaderPosition**](/windows/desktop/api/WebServices/nf-webservices-wsgetreaderposition) ou [**WsGetWriterPosition**](/windows/desktop/api/WebServices/nf-webservices-wsgetwriterposition) e, em seguida, chamando [**WsRemoveNode**](/windows/desktop/api/WebServices/nf-webservices-wsremovenode) com essa posição. Para elementos, isso excluirá o elemento , todos os seus filhos, incluindo seu elemento final correspondente.
 
-Uma posição é representada pelo valor [**posição do \_ \_ nó WS \_ XML**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_node_position). As posições são específicas para um buffer XML específico e só são válidas desde que o buffer XML seja válido.
+Uma posição é representada pelo valor [**POSIÇÃO DO NÓ XML \_ \_ \_ do WS.**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_node_position) As posições são específicas para um buffer XML específico e só são válidas desde que o Buffer XML seja válido.
 
-As seguintes enumerações são usadas com buffers XML:
+As enumerações a seguir são usadas com buffers XML:
 
--   [**WS \_ mover \_ para**](/windows/desktop/api/WebServices/ne-webservices-ws_move_to)
--   [**\_ID da \_ Propriedade do buffer XML \_ WS \_**](/windows/win32/api/webservices/ne-webservices-ws_xml_reader_property_id)
+-   [**WS \_ MOVE \_ TO**](/windows/desktop/api/WebServices/ne-webservices-ws_move_to)
+-   [**ID DA \_ PROPRIEDADE DO BUFFER XML \_ \_ \_ DO WS**](/windows/win32/api/webservices/ne-webservices-ws_xml_reader_property_id)
 
-As funções a seguir são usadas com buffers XML:
+As seguintes funções são usadas com buffers XML:
 
 -   [**WsCreateXmlBuffer**](/windows/desktop/api/WebServices/nf-webservices-wscreatexmlbuffer)
 -   [**WsRemoveNode**](/windows/desktop/api/WebServices/nf-webservices-wsremovenode)
 
-O seguinte identificador é usado com buffers XML:
+O seguinte handle é usado com buffers XML:
 
--   [\_buffer XML do WS \_](ws-xml-buffer.md)
+-   [BUFFER \_ XML do WS \_](ws-xml-buffer.md)
 
 As seguintes estruturas são usadas com buffers XML:
 
--   [**\_propriedade de \_ buffer \_ XML do WS**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_buffer_property)
--   [**\_posição do \_ nó \_ XML do WS**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_node_position)
+-   [**PROPRIEDADE \_ BUFFER XML \_ \_ WS**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_buffer_property)
+-   [**POSIÇÃO DO \_ NÓ XML \_ \_ DO WS**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_node_position)
 
  
 

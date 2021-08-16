@@ -1,27 +1,27 @@
 ---
-description: Controlando recursos não alocados
+description: Acompanhamento de recursos não alocados
 ms.assetid: ebaca876-5249-4b6b-b0d5-08f098e3f5f5
-title: Controlando recursos não alocados
+title: Acompanhamento de recursos não alocados
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f9c9f814e08798b4fbb0f160e0d0e0f8aabebba7
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: fb356a7e7243c7e6f856a0dfe165440ff0b909545703032a8442bbcced77649d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105765752"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118305236"
 ---
-# <a name="tracking-non-allocated-resources"></a>Controlando recursos não alocados
+# <a name="tracking-non-allocated-resources"></a>Acompanhamento de recursos não alocados
 
-O Gerenciador do dispensador pode rastrear um recurso que não está inventariado, com base no conhecimento do tempo de vida do objeto. Quando um recurso rastreado não alocado é liberado, ele é destruído e, portanto, não é retornado para o inventário. Esse modo somente acompanhamento para recursos que são baratos para criar e destruir é mais útil do que armazená-los no inventário. Esse modo também é útil para gerenciar um dispensador de memória ou para um recurso que é difícil de inventariar porque há muitos tipos diferentes.
+O gerenciador do distribuidor pode acompanhar um recurso que não é inventariado, com base no conhecimento do tempo de vida do objeto. Quando um recurso rastreado não alocado é liberado, ele é destruído e, portanto, não é retornado ao inventário. Esse modo somente faixa para recursos que são baratos de criar e destruir é mais útil do que armazenar no inventário. Esse modo também é útil para gerenciar um distribuidor de memória ou para um recurso difícil de inventariar porque há muitos tipos diferentes.
 
-No modo somente rastreamento, um dispensador de recurso cria diretamente um recurso solicitado em vez de pedir ao Gerenciador de dispensadores para alocar um do inventário. Antes de retornar esse recurso para o componente de aplicativo solicitante, o dispensador de recursos informa o gerente do dispensador para controlar o recurso, o que garante que, mesmo que o componente fique inativo para liberar o recurso, o Gerenciador do dispensador fará isso quando o tempo de vida do componente terminar.
+No modo somente faixa, um distribuidor de recursos cria diretamente um recurso solicitado em vez de solicitar que o gerenciador de distribuidores aloce um do inventário. Antes de retornar esse recurso para o componente do aplicativo solicitante, o distribuidor de recursos informa ao gerenciador do distribuidor para acompanhar o recurso, o que garante que, mesmo que o componente não liberar o recurso, o gerenciador do distribuidor fará isso quando o tempo de vida do componente for longo.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[Conceitos do dispensador de recursos COM+](com--resource-dispenser-concepts.md)
+[Conceitos do Com+ Resource Dispenser](com--resource-dispenser-concepts.md)
 </dt> </dl>
 
  

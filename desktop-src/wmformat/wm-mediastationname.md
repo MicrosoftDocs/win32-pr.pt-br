@@ -3,7 +3,7 @@ title: WM/MediaStationName
 description: O atributo WM/MediaStationName contém o nome da estação que transmite o conteúdo.
 ms.assetid: f52e3c15-d908-4b75-9eeb-20157803f8c0
 keywords:
-- Formato de mídia do Windows WM/MediaStationName
+- Formato de mídia do Windows do WM/MediaStationName
 topic_type:
 - apiref
 api_name:
@@ -21,7 +21,7 @@ ms.locfileid: "118195674"
 ---
 # <a name="wmmediastationname"></a>WM/MediaStationName
 
-O **atributo WM/MediaStationName** contém o nome da estação que transmite o conteúdo.
+O atributo **WM/MediaStationName** contém o nome da estação que transmite o conteúdo.
 
 ## <a name="global-constant"></a>Constante global
 
@@ -29,11 +29,11 @@ g \_ wszWMMediaStationName
 
 ## <a name="data-type"></a>Tipo de Dados
 
-**CADEIA DE CARACTERES DE \_ TIPO \_ WMT**
+**Cadeia de caracteres do \_ tipo WMT \_**
 
 ## <a name="remarks"></a>Comentários
 
-Esse atributo é usado para transmissão de tv.
+Esse atributo é usado para difusão de televisão.
 
 ## <a name="see-also"></a>Confira também
 

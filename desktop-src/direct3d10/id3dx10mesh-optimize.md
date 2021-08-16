@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: f530995a2388d3ec2627ac5ce128271ed085a779
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 41bc7b4ac7fb263073a88cd998190b0fa6e044d528f9d3f4613c3284f28c0f47
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108108044"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118302571"
 ---
 # <a name="id3dx10meshoptimize-method"></a>Método ID3DX10Mesh:: Optimize
 
@@ -42,7 +42,7 @@ HRESULT Optimize(
 
 <dl> <dt>
 
-*Flags* \[in\]
+*Sinalizadores* \[ de no\]
 </dt> <dd>
 
 Tipo: **[ **uint**](../winprog/windows-data-types.md)**
@@ -69,7 +69,7 @@ Endereço de um ponteiro para uma [**interface ID3D10Blob**](/windows/desktop/ap
 
 </dd> </dl>
 
-## <a name="return-value"></a>Valor retornado
+## <a name="return-value"></a>Retornar valor
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
@@ -92,7 +92,7 @@ Esse método é muito semelhante ao método [**ID3DX10Mesh:: CloneMesh**](id3dx1
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

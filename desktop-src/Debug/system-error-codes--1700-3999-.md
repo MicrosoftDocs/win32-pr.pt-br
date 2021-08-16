@@ -1,7 +1,7 @@
 ---
-description: Descreve os códigos de erro 1700-3999 definidos no arquivo de cabeçalho WinError. h e destina-se a desenvolvedores.
+description: Descreve os códigos de erro 1700-3999 definidos no arquivo de título WinError.h e destina-se a desenvolvedores.
 ms.assetid: 7e57c087-53e4-443d-9227-21d9eb3cc71f
-title: Códigos de erro do sistema (1700-3999) (WinError. h)
+title: Códigos de erro do sistema (1700-3999) (WinError.h)
 ms.topic: reference
 ms.date: 07/18/2019
 ms.openlocfilehash: 707425f7714c84d92bf5bc001f57c1677183b9edbd9170236d1c629bc0aaf121
@@ -14,13 +14,13 @@ ms.locfileid: "118405597"
 # <a name="system-error-codes-1700-3999"></a>Códigos de erro do sistema (1700-3999)
 
 > [!NOTE]
-> Essas informações destinam-se a desenvolvedores Depurando erros do sistema. para outros erros, como problemas com Windows Update, há uma lista de recursos na página códigos de [erro](system-error-codes.md) .
+> Essas informações são destinadas a desenvolvedores que depuram erros do sistema. Para outros erros, como problemas com Windows Atualização, há uma lista de recursos na [página Códigos de](system-error-codes.md) erro.
 
-A lista a seguir descreve os [códigos de erro do sistema](system-error-codes.md) para erros 1700 a 3999. Elas são retornadas pela função [**GetLastError**](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) quando muitas funções falham. Para recuperar o texto de descrição do erro em seu aplicativo, use a função [**FormatMessage**](/windows/desktop/api/WinBase/nf-winbase-formatmessage) com a **mensagem de formato \_ \_ do sinalizador do \_ sistema** .
+A lista a seguir descreve [os códigos de](system-error-codes.md) erro do sistema para erros de 1700 a 3999. Eles são retornados pela [**função GetLastError**](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) quando muitas funções falham. Para recuperar o texto de descrição do erro em seu aplicativo, use a [**função FormatMessage**](/windows/desktop/api/WinBase/nf-winbase-formatmessage) com o **sinalizador FORMAT MESSAGE FROM \_ \_ \_ SYSTEM.**
 
 <dl> <dt>
 
-<span id="RPC_S_INVALID_STRING_BINDING"></span><span id="rpc_s_invalid_string_binding"></span>**Associação de cadeia de caracteres de RPC \_ S \_ inválida \_ \_**
+<span id="RPC_S_INVALID_STRING_BINDING"></span><span id="rpc_s_invalid_string_binding"></span>**ASSOCIAÇÃO DE \_ CADEIA DE \_ CARACTERES INVÁLIDA \_ DO RPC S \_**
 </dt> <dd> <dl> <dt>
 
 1700 (0x6A4)
@@ -33,7 +33,7 @@ A associação de cadeia de caracteres é inválida.
 
 </dt> </dl> </dd> <dt>
 
-<span id="RPC_S_WRONG_KIND_OF_BINDING"></span><span id="rpc_s_wrong_kind_of_binding"></span>**\_ \_ \_ tipo \_ de \_ Associação RPC S incorreto**
+<span id="RPC_S_WRONG_KIND_OF_BINDING"></span><span id="rpc_s_wrong_kind_of_binding"></span>**TIPO \_ DE \_ ASSOCIAÇÃO ERRADO \_ DO \_ \_ RPC**
 </dt> <dd> <dl> <dt>
 
 1701 (0x6A5)
@@ -41,12 +41,12 @@ A associação de cadeia de caracteres é inválida.
 
 
 
-O identificador de associação não é do tipo correto.
+O identificador de associação não é o tipo correto.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="RPC_S_INVALID_BINDING"></span><span id="rpc_s_invalid_binding"></span>**Associação de RPC \_ S \_ inválida \_**
+<span id="RPC_S_INVALID_BINDING"></span><span id="rpc_s_invalid_binding"></span>**ASSOCIAÇÃO INVÁLIDA DO RPC \_ S \_ \_**
 </dt> <dd> <dl> <dt>
 
 1702 (0x6A6)
@@ -54,12 +54,12 @@ O identificador de associação não é do tipo correto.
 
 
 
-O identificador de associação é inválido.
+O alça de associação é inválido.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="RPC_S_PROTSEQ_NOT_SUPPORTED"></span><span id="rpc_s_protseq_not_supported"></span>**\_ \_ \_ não \_ há suporte para RPC S PROTSEQ**
+<span id="RPC_S_PROTSEQ_NOT_SUPPORTED"></span><span id="rpc_s_protseq_not_supported"></span>**NÃO \_ HÁ SUPORTE PARA RPC S \_ PROTSEQ \_ \_**
 </dt> <dd> <dl> <dt>
 
 1703 (0x6A7)
@@ -72,7 +72,7 @@ Não há suporte para a sequência de protocolo RPC.
 
 </dt> </dl> </dd> <dt>
 
-<span id="RPC_S_INVALID_RPC_PROTSEQ"></span><span id="rpc_s_invalid_rpc_protseq"></span>**RPC \_ S \_ \_ PROTSEQ de RPC inválido \_**
+<span id="RPC_S_INVALID_RPC_PROTSEQ"></span><span id="rpc_s_invalid_rpc_protseq"></span>**RPC \_ S \_ \_ \_ PROTSEQ RPC INVÁLIDO**
 </dt> <dd> <dl> <dt>
 
 1704 (0x6A8)
@@ -80,12 +80,12 @@ Não há suporte para a sequência de protocolo RPC.
 
 
 
-A sequência do Protocolo RPC é inválida.
+A sequência de protocolo RPC é inválida.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="RPC_S_INVALID_STRING_UUID"></span><span id="rpc_s_invalid_string_uuid"></span>**\_UUID de \_ cadeia de \_ caracteres inválido \_ do RPC S**
+<span id="RPC_S_INVALID_STRING_UUID"></span><span id="rpc_s_invalid_string_uuid"></span>**\_UUID DE CADEIA DE \_ \_ \_ CARACTERES INVÁLIDA DO RPC S**
 </dt> <dd> <dl> <dt>
 
 1705 (0x6A9)
@@ -98,7 +98,7 @@ O UUID (identificador exclusivo universal) da cadeia de caracteres é inválido.
 
 </dt> </dl> </dd> <dt>
 
-<span id="RPC_S_INVALID_ENDPOINT_FORMAT"></span><span id="rpc_s_invalid_endpoint_format"></span>**\_formato de \_ ponto de \_ extremidade inválido \_ RPC S**
+<span id="RPC_S_INVALID_ENDPOINT_FORMAT"></span><span id="rpc_s_invalid_endpoint_format"></span>**RPC \_ S FORMATO DE PONTO DE EXTREMIDADE \_ \_ \_ INVÁLIDO**
 </dt> <dd> <dl> <dt>
 
 1706 (0x6AA)
@@ -111,7 +111,7 @@ O formato do ponto de extremidade é inválido.
 
 </dt> </dl> </dd> <dt>
 
-<span id="RPC_S_INVALID_NET_ADDR"></span><span id="rpc_s_invalid_net_addr"></span>**RPC \_ S \_ \_ endereço de rede inválido \_**
+<span id="RPC_S_INVALID_NET_ADDR"></span><span id="rpc_s_invalid_net_addr"></span>**RPC \_ S \_ \_ ADDR NET \_ INVÁLIDO**
 </dt> <dd> <dl> <dt>
 
 1707 (0x6AB)
@@ -124,7 +124,7 @@ O endereço de rede é inválido.
 
 </dt> </dl> </dd> <dt>
 
-<span id="RPC_S_NO_ENDPOINT_FOUND"></span><span id="rpc_s_no_endpoint_found"></span>**RPC \_ S \_ nenhum \_ ponto de extremidade \_ encontrado**
+<span id="RPC_S_NO_ENDPOINT_FOUND"></span><span id="rpc_s_no_endpoint_found"></span>**RPC \_ S NENHUM PONTO DE EXTREMIDADE \_ \_ \_ ENCONTRADO**
 </dt> <dd> <dl> <dt>
 
 1708 (0x6AC)
@@ -137,7 +137,7 @@ Nenhum ponto de extremidade foi encontrado.
 
 </dt> </dl> </dd> <dt>
 
-<span id="RPC_S_INVALID_TIMEOUT"></span><span id="rpc_s_invalid_timeout"></span>**\_tempo limite de RPC S \_ inválido \_**
+<span id="RPC_S_INVALID_TIMEOUT"></span><span id="rpc_s_invalid_timeout"></span>**TEMPOOUT INVÁLIDO DO RPC \_ S \_ \_**
 </dt> <dd> <dl> <dt>
 
 1709 (0x6AD)
@@ -145,12 +145,12 @@ Nenhum ponto de extremidade foi encontrado.
 
 
 
-O valor de tempo limite é inválido.
+O valor de tempoout é inválido.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="RPC_S_OBJECT_NOT_FOUND"></span><span id="rpc_s_object_not_found"></span>**\_objeto RPC \_ S \_ não \_ encontrado**
+<span id="RPC_S_OBJECT_NOT_FOUND"></span><span id="rpc_s_object_not_found"></span>**OBJETO RPC \_ S \_ NÃO \_ \_ ENCONTRADO**
 </dt> <dd> <dl> <dt>
 
 1710 (0x6AE)
@@ -163,7 +163,7 @@ O UUID (identificador exclusivo universal) do objeto não foi encontrado.
 
 </dt> </dl> </dd> <dt>
 
-<span id="RPC_S_ALREADY_REGISTERED"></span><span id="rpc_s_already_registered"></span>**RPC \_ S \_ já \_ registrado**
+<span id="RPC_S_ALREADY_REGISTERED"></span><span id="rpc_s_already_registered"></span>**RPC \_ S \_ JÁ \_ REGISTRADOS**
 </dt> <dd> <dl> <dt>
 
 1711 (0x6AF)
@@ -176,7 +176,7 @@ O UUID (identificador exclusivo universal) do objeto já foi registrado.
 
 </dt> </dl> </dd> <dt>
 
-<span id="RPC_S_TYPE_ALREADY_REGISTERED"></span><span id="rpc_s_type_already_registered"></span>**tipo de RPC \_ S \_ \_ já \_ registrado**
+<span id="RPC_S_TYPE_ALREADY_REGISTERED"></span><span id="rpc_s_type_already_registered"></span>**TIPO RPC \_ S \_ JÁ \_ \_ REGISTRADO**
 </dt> <dd> <dl> <dt>
 
 1712 (0x6B0)
@@ -184,12 +184,12 @@ O UUID (identificador exclusivo universal) do objeto já foi registrado.
 
 
 
-O identificador exclusivo universal (UUID) do tipo já foi registrado.
+O UUID (identificador exclusivo universal) do tipo já foi registrado.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="RPC_S_ALREADY_LISTENING"></span><span id="rpc_s_already_listening"></span>**RPC \_ S \_ já \_ escutando**
+<span id="RPC_S_ALREADY_LISTENING"></span><span id="rpc_s_already_listening"></span>**RPC \_ S \_ JÁ \_ ESCUTANDO**
 </dt> <dd> <dl> <dt>
 
 1713 (0x6B1)
@@ -202,7 +202,7 @@ O servidor RPC já está escutando.
 
 </dt> </dl> </dd> <dt>
 
-<span id="RPC_S_NO_PROTSEQS_REGISTERED"></span><span id="rpc_s_no_protseqs_registered"></span>**RPC \_ S \_ nenhum \_ PROTSEQS \_ registrado**
+<span id="RPC_S_NO_PROTSEQS_REGISTERED"></span><span id="rpc_s_no_protseqs_registered"></span>**RPC \_ S \_ NO \_ PROTSEQS \_ REGISTRADO**
 </dt> <dd> <dl> <dt>
 
 1714 (0x6B2)
@@ -215,7 +215,7 @@ Nenhuma sequência de protocolo foi registrada.
 
 </dt> </dl> </dd> <dt>
 
-<span id="RPC_S_NOT_LISTENING"></span><span id="rpc_s_not_listening"></span>**RPC \_ S \_ não \_ escutando**
+<span id="RPC_S_NOT_LISTENING"></span><span id="rpc_s_not_listening"></span>**RPC \_ S \_ NÃO \_ ESCUTANDO**
 </dt> <dd> <dl> <dt>
 
 1715 (0x6B3)
@@ -228,7 +228,7 @@ O servidor RPC não está escutando.
 
 </dt> </dl> </dd> <dt>
 
-<span id="RPC_S_UNKNOWN_MGR_TYPE"></span><span id="rpc_s_unknown_mgr_type"></span>**\_tipo de \_ \_ Gerenciador desconhecido RPC S \_**
+<span id="RPC_S_UNKNOWN_MGR_TYPE"></span><span id="rpc_s_unknown_mgr_type"></span>**RPC \_ S \_ UNKNOWN \_ MGR \_ TYPE**
 </dt> <dd> <dl> <dt>
 
 1716 (0x6B4)
@@ -236,12 +236,12 @@ O servidor RPC não está escutando.
 
 
 
-O tipo de Gerenciador é desconhecido.
+O tipo de gerente é desconhecido.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="RPC_S_UNKNOWN_IF"></span><span id="rpc_s_unknown_if"></span>**RPC \_ S \_ desconhecido \_ se**
+<span id="RPC_S_UNKNOWN_IF"></span><span id="rpc_s_unknown_if"></span>**RPC \_ S \_ UNKNOWN \_ IF**
 </dt> <dd> <dl> <dt>
 
 1717 (0x6B5)
@@ -254,7 +254,7 @@ A interface é desconhecida.
 
 </dt> </dl> </dd> <dt>
 
-<span id="RPC_S_NO_BINDINGS"></span><span id="rpc_s_no_bindings"></span>**RPC \_ S \_ sem \_ associações**
+<span id="RPC_S_NO_BINDINGS"></span><span id="rpc_s_no_bindings"></span>**RPC \_ S \_ NO \_ BINDINGS**
 </dt> <dd> <dl> <dt>
 
 1718 (0x6B6)
@@ -262,12 +262,12 @@ A interface é desconhecida.
 
 
 
-Não há associações.
+Não há nenhuma associação.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="RPC_S_NO_PROTSEQS"></span><span id="rpc_s_no_protseqs"></span>**\_ \_ não \_ PROTSEQS de RPC**
+<span id="RPC_S_NO_PROTSEQS"></span><span id="rpc_s_no_protseqs"></span>**RPC \_ S \_ NO \_ PROTSEQS**
 </dt> <dd> <dl> <dt>
 
 1719 (0x6B7)
@@ -280,7 +280,7 @@ Não há sequências de protocolo.
 
 </dt> </dl> </dd> <dt>
 
-<span id="RPC_S_CANT_CREATE_ENDPOINT"></span><span id="rpc_s_cant_create_endpoint"></span>**RPC \_ S não \_ consegue \_ criar ponto de \_ extremidade**
+<span id="RPC_S_CANT_CREATE_ENDPOINT"></span><span id="rpc_s_cant_create_endpoint"></span>**RPC \_ S \_ CANT \_ CREATE \_ ENDPOINT**
 </dt> <dd> <dl> <dt>
 
 1720 (0x6B8)
@@ -288,12 +288,12 @@ Não há sequências de protocolo.
 
 
 
-Não é possível criar o ponto de extremidade.
+O ponto de extremidade não pode ser criado.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="RPC_S_OUT_OF_RESOURCES"></span><span id="rpc_s_out_of_resources"></span>**RPC \_ S \_ \_ de \_ recursos**
+<span id="RPC_S_OUT_OF_RESOURCES"></span><span id="rpc_s_out_of_resources"></span>**RPC \_ S \_ SEM \_ \_ RECURSOS**
 </dt> <dd> <dl> <dt>
 
 1721 (0x6B9)
@@ -301,12 +301,12 @@ Não é possível criar o ponto de extremidade.
 
 
 
-Não há recursos suficientes disponíveis para concluir esta operação.
+Não há recursos suficientes disponíveis para concluir essa operação.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="RPC_S_SERVER_UNAVAILABLE"></span><span id="rpc_s_server_unavailable"></span>**\_servidor RPC \_ S \_ não disponível**
+<span id="RPC_S_SERVER_UNAVAILABLE"></span><span id="rpc_s_server_unavailable"></span>**SERVIDOR RPC \_ S \_ \_ INDISPONÍVEL**
 </dt> <dd> <dl> <dt>
 
 1722 (0x6BA)
@@ -319,7 +319,7 @@ O servidor RPC não está disponível.
 
 </dt> </dl> </dd> <dt>
 
-<span id="RPC_S_SERVER_TOO_BUSY"></span><span id="rpc_s_server_too_busy"></span>**\_servidor RPC \_ S \_ muito \_ ocupado**
+<span id="RPC_S_SERVER_TOO_BUSY"></span><span id="rpc_s_server_too_busy"></span>**RPC \_ S SERVER MUITO \_ \_ \_ OCUPADO**
 </dt> <dd> <dl> <dt>
 
 1723 (0x6BB)
@@ -327,12 +327,12 @@ O servidor RPC não está disponível.
 
 
 
-O servidor RPC está muito ocupado para concluir esta operação.
+O servidor RPC está muito ocupado para concluir essa operação.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="RPC_S_INVALID_NETWORK_OPTIONS"></span><span id="rpc_s_invalid_network_options"></span>**opções de rede de RPC \_ S \_ inválidas \_ \_**
+<span id="RPC_S_INVALID_NETWORK_OPTIONS"></span><span id="rpc_s_invalid_network_options"></span>**OPÇÕES DE \_ REDE \_ \_ INVÁLIDAS DO \_ RPC S**
 </dt> <dd> <dl> <dt>
 
 1724 (0x6BC)
@@ -345,7 +345,7 @@ As opções de rede são inválidas.
 
 </dt> </dl> </dd> <dt>
 
-<span id="RPC_S_NO_CALL_ACTIVE"></span><span id="rpc_s_no_call_active"></span>**RPC \_ \_ sem \_ chamada \_ ativa**
+<span id="RPC_S_NO_CALL_ACTIVE"></span><span id="rpc_s_no_call_active"></span>**RPC \_ S SEM CHAMADA \_ \_ \_ ATIVA**
 </dt> <dd> <dl> <dt>
 
 1725 (0x6BD)
@@ -353,12 +353,12 @@ As opções de rede são inválidas.
 
 
 
-Não há chamadas de procedimento remoto ativas neste thread.
+Não há nenhuma chamada de procedimento remoto ativa nesse thread.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="RPC_S_CALL_FAILED"></span><span id="rpc_s_call_failed"></span>**\_ \_ falha na chamada RPC S \_**
+<span id="RPC_S_CALL_FAILED"></span><span id="rpc_s_call_failed"></span>**FALHA NA CHAMADA DO RPC \_ S \_ \_**
 </dt> <dd> <dl> <dt>
 
 1726 (0x6BE)
@@ -371,7 +371,7 @@ Falha na chamada de procedimento remoto.
 
 </dt> </dl> </dd> <dt>
 
-<span id="RPC_S_CALL_FAILED_DNE"></span><span id="rpc_s_call_failed_dne"></span>**\_ \_ falha na chamada de RPC S \_ \_ DNE**
+<span id="RPC_S_CALL_FAILED_DNE"></span><span id="rpc_s_call_failed_dne"></span>**DNE DE CHAMADA DO RPC \_ \_ COM \_ \_ FALHA**
 </dt> <dd> <dl> <dt>
 
 1727 (0x6BF)
@@ -384,7 +384,7 @@ A chamada de procedimento remoto falhou e não foi executada.
 
 </dt> </dl> </dd> <dt>
 
-<span id="RPC_S_PROTOCOL_ERROR"></span><span id="rpc_s_protocol_error"></span>**\_erro de \_ protocolo RPC S \_**
+<span id="RPC_S_PROTOCOL_ERROR"></span><span id="rpc_s_protocol_error"></span>**ERRO DE \_ PROTOCOLO \_ \_ RPC**
 </dt> <dd> <dl> <dt>
 
 1728 (0x6C0)
@@ -397,7 +397,7 @@ Ocorreu um erro de protocolo RPC (chamada de procedimento remoto).
 
 </dt> </dl> </dd> <dt>
 
-<span id="RPC_S_PROXY_ACCESS_DENIED"></span><span id="rpc_s_proxy_access_denied"></span>**\_acesso ao proxy RPC S \_ \_ \_ negado**
+<span id="RPC_S_PROXY_ACCESS_DENIED"></span><span id="rpc_s_proxy_access_denied"></span>**ACESSO DE PROXY DO RPC \_ \_ \_ \_ NEGADO**
 </dt> <dd> <dl> <dt>
 
 1729 (0x6C1)
@@ -405,12 +405,12 @@ Ocorreu um erro de protocolo RPC (chamada de procedimento remoto).
 
 
 
-O acesso ao proxy HTTP foi negado.
+O acesso ao proxy HTTP é negado.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="RPC_S_UNSUPPORTED_TRANS_SYN"></span><span id="rpc_s_unsupported_trans_syn"></span>**\_ \_ \_ Transações SYN sem suporte de RPC \_ S**
+<span id="RPC_S_UNSUPPORTED_TRANS_SYN"></span><span id="rpc_s_unsupported_trans_syn"></span>**RPC \_ S \_ UNSUPPORTED \_ TRANS \_ SYN**
 </dt> <dd> <dl> <dt>
 
 1730 (0x6C2)
@@ -1705,12 +1705,12 @@ Tentativa de operação inválida em um objeto de pipe RPC.
 
 
 
-Versão de pipe de RPC sem suporte.
+Versão do pipe RPC sem suporte.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="RPC_S_COOKIE_AUTH_FAILED"></span><span id="rpc_s_cookie_auth_failed"></span>**\_ \_ \_ falha na autenticação do cookie RPC S \_**
+<span id="RPC_S_COOKIE_AUTH_FAILED"></span><span id="rpc_s_cookie_auth_failed"></span>**FALHA NA \_ \_ \_ AUTH DO COOKIE RPC S \_**
 </dt> <dd> <dl> <dt>
 
 1833 (0x729)
@@ -1718,12 +1718,12 @@ Versão de pipe de RPC sem suporte.
 
 
 
-O servidor proxy HTTP rejeitou a conexão porque houve falha na autenticação do cookie.
+O servidor proxy HTTP rejeitou a conexão porque a autenticação de cookie falhou.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="RPC_S_GROUP_MEMBER_NOT_FOUND"></span><span id="rpc_s_group_member_not_found"></span>**\_membro do grupo RPC S \_ \_ \_ não \_ encontrado**
+<span id="RPC_S_GROUP_MEMBER_NOT_FOUND"></span><span id="rpc_s_group_member_not_found"></span>**MEMBRO DO \_ GRUPO RPC \_ S NÃO \_ \_ \_ ENCONTRADO**
 </dt> <dd> <dl> <dt>
 
 1898 (0x76A)
@@ -1736,7 +1736,7 @@ O membro do grupo não foi encontrado.
 
 </dt> </dl> </dd> <dt>
 
-<span id="EPT_S_CANT_CREATE"></span><span id="ept_s_cant_create"></span>**EPT \_ S não \_ consegue \_ criar**
+<span id="EPT_S_CANT_CREATE"></span><span id="ept_s_cant_create"></span>**EPT \_ S \_ CANT \_ CREATE**
 </dt> <dd> <dl> <dt>
 
 1899 (0x76B)
@@ -1744,12 +1744,12 @@ O membro do grupo não foi encontrado.
 
 
 
-Não foi possível criar a entrada do banco de dados mapeador de ponto de extremidade.
+Não foi possível criar a entrada do banco de dados mapeado do ponto de extremidade.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="RPC_S_INVALID_OBJECT"></span><span id="rpc_s_invalid_object"></span>**objeto de RPC \_ S \_ inválido \_**
+<span id="RPC_S_INVALID_OBJECT"></span><span id="rpc_s_invalid_object"></span>**OBJETO INVÁLIDO \_ RPC S \_ \_**
 </dt> <dd> <dl> <dt>
 
 1900 (0x76C)
@@ -1757,12 +1757,12 @@ Não foi possível criar a entrada do banco de dados mapeador de ponto de extrem
 
 
 
-O UUID (identificador exclusivo universal) do objeto é o UUID nil.
+O UUID (identificador exclusivo universal) do objeto é o UUID nulo.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INVALID_TIME"></span><span id="error_invalid_time"></span>**tempo de erro \_ inválido \_**
+<span id="ERROR_INVALID_TIME"></span><span id="error_invalid_time"></span>**HORA \_ INVÁLIDA \_ DO ERRO**
 </dt> <dd> <dl> <dt>
 
 1901 (0x76D)
@@ -1775,7 +1775,7 @@ A hora especificada é inválida.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INVALID_FORM_NAME"></span><span id="error_invalid_form_name"></span>**ERRO \_ de \_ nome de formulário inválido \_**
+<span id="ERROR_INVALID_FORM_NAME"></span><span id="error_invalid_form_name"></span>**ERRO \_ NOME DE FORMULÁRIO \_ \_ INVÁLIDO**
 </dt> <dd> <dl> <dt>
 
 1902 (0x76E)
@@ -1788,7 +1788,7 @@ O nome do formulário especificado é inválido.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INVALID_FORM_SIZE"></span><span id="error_invalid_form_size"></span>**ERRO \_ de \_ tamanho de formulário inválido \_**
+<span id="ERROR_INVALID_FORM_SIZE"></span><span id="error_invalid_form_size"></span>**ERRO \_ TAMANHO DO FORMULÁRIO \_ \_ INVÁLIDO**
 </dt> <dd> <dl> <dt>
 
 1903 (0x76F)
@@ -1801,7 +1801,7 @@ O tamanho do formulário especificado é inválido.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_ALREADY_WAITING"></span><span id="error_already_waiting"></span>**ERRO \_ já \_ aguardando**
+<span id="ERROR_ALREADY_WAITING"></span><span id="error_already_waiting"></span>**ERRO \_ JÁ \_ AGUARDANDO**
 </dt> <dd> <dl> <dt>
 
 1904 (0x770)
@@ -1809,12 +1809,12 @@ O tamanho do formulário especificado é inválido.
 
 
 
-O identificador de impressora especificado já está sendo aguardado.
+A alça de impressora especificada já está sendo aguardada.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_PRINTER_DELETED"></span><span id="error_printer_deleted"></span>**impressora de erro \_ \_ excluída**
+<span id="ERROR_PRINTER_DELETED"></span><span id="error_printer_deleted"></span>**IMPRESSORA \_ DE ERRO \_ EXCLUÍDA**
 </dt> <dd> <dl> <dt>
 
 1905 (0x771)
@@ -1827,7 +1827,7 @@ A impressora especificada foi excluída.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INVALID_PRINTER_STATE"></span><span id="error_invalid_printer_state"></span>**ERRO \_ de \_ estado de impressora inválido \_**
+<span id="ERROR_INVALID_PRINTER_STATE"></span><span id="error_invalid_printer_state"></span>**ERRO \_ ESTADO INVÁLIDO DA \_ \_ IMPRESSORA**
 </dt> <dd> <dl> <dt>
 
 1906 (0x772)
@@ -1840,7 +1840,7 @@ O estado da impressora é inválido.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_PASSWORD_MUST_CHANGE"></span><span id="error_password_must_change"></span>**a \_ senha do erro \_ deve ser \_ alterada**
+<span id="ERROR_PASSWORD_MUST_CHANGE"></span><span id="error_password_must_change"></span>**A \_ SENHA DE ERRO DEVE SER \_ \_ ALTERE**
 </dt> <dd> <dl> <dt>
 
 1907 (0x773)
@@ -1853,7 +1853,7 @@ A senha do usuário deve ser alterada antes de entrar.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DOMAIN_CONTROLLER_NOT_FOUND"></span><span id="error_domain_controller_not_found"></span>**ERRO \_ de \_ controlador de domínio \_ não \_ encontrado**
+<span id="ERROR_DOMAIN_CONTROLLER_NOT_FOUND"></span><span id="error_domain_controller_not_found"></span>**ERRO \_ CONTROLADOR DE DOMÍNIO NÃO \_ \_ \_ ENCONTRADO**
 </dt> <dd> <dl> <dt>
 
 1908 (0x774)
@@ -1861,12 +1861,12 @@ A senha do usuário deve ser alterada antes de entrar.
 
 
 
-Não foi possível localizar o controlador de domínio para este domínio.
+Não foi possível encontrar o controlador de domínio para esse domínio.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_ACCOUNT_LOCKED_OUT"></span><span id="error_account_locked_out"></span>**conta de erro \_ \_ bloqueada \_**
+<span id="ERROR_ACCOUNT_LOCKED_OUT"></span><span id="error_account_locked_out"></span>**CONTA \_ DE ERRO \_ \_ BLOQUEADA**
 </dt> <dd> <dl> <dt>
 
 1909 (0x775)
@@ -1874,12 +1874,12 @@ Não foi possível localizar o controlador de domínio para este domínio.
 
 
 
-A conta referenciada está bloqueada no momento e pode não estar conectada ao.
+A conta referenciada está bloqueada no momento e pode não estar conectado.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="OR_INVALID_OXID"></span><span id="or_invalid_oxid"></span>**OU \_ \_ oxid inválido**
+<span id="OR_INVALID_OXID"></span><span id="or_invalid_oxid"></span>**OU \_ \_ OXID INVÁLIDO**
 </dt> <dd> <dl> <dt>
 
 1910 (0x776)
@@ -1887,12 +1887,12 @@ A conta referenciada está bloqueada no momento e pode não estar conectada ao.
 
 
 
-O exportador de objeto especificado não foi encontrado.
+O exportador de objetos especificado não foi encontrado.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="OR_INVALID_OID"></span><span id="or_invalid_oid"></span>**OU \_ \_ OID inválido**
+<span id="OR_INVALID_OID"></span><span id="or_invalid_oid"></span>**OU \_ \_ OID INVÁLIDO**
 </dt> <dd> <dl> <dt>
 
 1911 (0x777)
@@ -1905,7 +1905,7 @@ O objeto especificado não foi encontrado.
 
 </dt> </dl> </dd> <dt>
 
-<span id="OR_INVALID_SET"></span><span id="or_invalid_set"></span>**OU \_ \_ conjunto inválido**
+<span id="OR_INVALID_SET"></span><span id="or_invalid_set"></span>**OU \_ CONJUNTO \_ INVÁLIDO**
 </dt> <dd> <dl> <dt>
 
 1912 (0x778)
@@ -1913,12 +1913,12 @@ O objeto especificado não foi encontrado.
 
 
 
-O conjunto de resolvedores de objetos especificado não foi encontrado.
+O conjunto de resolvedor de objetos especificado não foi encontrado.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="RPC_S_SEND_INCOMPLETE"></span><span id="rpc_s_send_incomplete"></span>**envio de RPC \_ S \_ \_ incompleto**
+<span id="RPC_S_SEND_INCOMPLETE"></span><span id="rpc_s_send_incomplete"></span>**RPC \_ S \_ SEND \_ INCOMPLETE**
 </dt> <dd> <dl> <dt>
 
 1913 (0x779)
@@ -1926,12 +1926,12 @@ O conjunto de resolvedores de objetos especificado não foi encontrado.
 
 
 
-Alguns dados continuam a ser enviados no buffer de solicitação.
+Alguns dados permanecem a ser enviados no buffer de solicitação.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="RPC_S_INVALID_ASYNC_HANDLE"></span><span id="rpc_s_invalid_async_handle"></span>**\_ \_ \_ identificador assíncrono inválido de RPC S \_**
+<span id="RPC_S_INVALID_ASYNC_HANDLE"></span><span id="rpc_s_invalid_async_handle"></span>**RPC \_ S \_ INVALID \_ ASYNC \_ HANDLE**
 </dt> <dd> <dl> <dt>
 
 1914 (0x77A)
@@ -1939,12 +1939,12 @@ Alguns dados continuam a ser enviados no buffer de solicitação.
 
 
 
-Identificador de chamada de procedimento remoto assíncrono inválido.
+Handle de chamada de procedimento remoto assíncrono inválido.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="RPC_S_INVALID_ASYNC_CALL"></span><span id="rpc_s_invalid_async_call"></span>**\_ \_ \_ chamada assíncrona inválida de RPC S \_**
+<span id="RPC_S_INVALID_ASYNC_CALL"></span><span id="rpc_s_invalid_async_call"></span>**RPC \_ S \_ CHAMADA \_ ASSÍNCRONA \_ INVÁLIDA**
 </dt> <dd> <dl> <dt>
 
 1915 (0x77B)
@@ -1952,12 +1952,12 @@ Identificador de chamada de procedimento remoto assíncrono inválido.
 
 
 
-Identificador de chamada RPC assíncrona inválido para esta operação.
+Alça de chamada RPC assíncrona inválida para esta operação.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="RPC_X_PIPE_CLOSED"></span><span id="rpc_x_pipe_closed"></span>**\_pipe RPC \_ X \_ fechado**
+<span id="RPC_X_PIPE_CLOSED"></span><span id="rpc_x_pipe_closed"></span>**PIPE RPC \_ X \_ \_ FECHADO**
 </dt> <dd> <dl> <dt>
 
 1916 (0x77C)
@@ -1965,12 +1965,12 @@ Identificador de chamada RPC assíncrona inválido para esta operação.
 
 
 
-O objeto de pipe de RPC já foi fechado.
+O objeto de pipe RPC já foi fechado.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="RPC_X_PIPE_DISCIPLINE_ERROR"></span><span id="rpc_x_pipe_discipline_error"></span>**\_erro de \_ disciplina de pipe \_ \_ de RPC X**
+<span id="RPC_X_PIPE_DISCIPLINE_ERROR"></span><span id="rpc_x_pipe_discipline_error"></span>**ERRO DE DISCIPLINA DE PIPE DE RPC \_ X \_ \_ \_**
 </dt> <dd> <dl> <dt>
 
 1917 (0x77D)
@@ -1978,12 +1978,12 @@ O objeto de pipe de RPC já foi fechado.
 
 
 
-A chamada RPC foi concluída antes de todos os pipes serem processados.
+A chamada RPC foi concluída antes que todos os pipes fossem processados.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="RPC_X_PIPE_EMPTY"></span><span id="rpc_x_pipe_empty"></span>**PIPE de RPC \_ X \_ \_ vazio**
+<span id="RPC_X_PIPE_EMPTY"></span><span id="rpc_x_pipe_empty"></span>**PIPE \_ RPC X \_ \_ VAZIO**
 </dt> <dd> <dl> <dt>
 
 1918 (0x77E)
@@ -1991,12 +1991,12 @@ A chamada RPC foi concluída antes de todos os pipes serem processados.
 
 
 
-Não há mais dados disponíveis no pipe de RPC.
+Não há mais dados disponíveis no pipe RPC.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_NO_SITENAME"></span><span id="error_no_sitename"></span>**ERRO \_ no \_ SiteName**
+<span id="ERROR_NO_SITENAME"></span><span id="error_no_sitename"></span>**ERRO \_ SEM NOME DO \_ SITE**
 </dt> <dd> <dl> <dt>
 
 1919 (0x77F)
@@ -2009,7 +2009,7 @@ Nenhum nome de site está disponível para este computador.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CANT_ACCESS_FILE"></span><span id="error_cant_access_file"></span>**ERRO não é possível \_ \_ acessar o \_ arquivo**
+<span id="ERROR_CANT_ACCESS_FILE"></span><span id="error_cant_access_file"></span>**ERRO \_ NÃO PODE ACESSAR O \_ \_ ARQUIVO**
 </dt> <dd> <dl> <dt>
 
 1920 (0x780)
@@ -2022,7 +2022,7 @@ O arquivo não pode ser acessado pelo sistema.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CANT_RESOLVE_FILENAME"></span><span id="error_cant_resolve_filename"></span>**ERRO não é possível \_ \_ resolver o nome do \_ arquivo**
+<span id="ERROR_CANT_RESOLVE_FILENAME"></span><span id="error_cant_resolve_filename"></span>**ERRO \_ NÃO É POSSÍVEL RESOLVER \_ \_ FILENAME**
 </dt> <dd> <dl> <dt>
 
 1921 (0x781)
@@ -2035,7 +2035,7 @@ O nome do arquivo não pode ser resolvido pelo sistema.
 
 </dt> </dl> </dd> <dt>
 
-<span id="RPC_S_ENTRY_TYPE_MISMATCH"></span><span id="rpc_s_entry_type_mismatch"></span>**\_tipo de entrada RPC S \_ \_ \_ incompatível**
+<span id="RPC_S_ENTRY_TYPE_MISMATCH"></span><span id="rpc_s_entry_type_mismatch"></span>**INCOMPATIBILIDADE \_ DO TIPO DE ENTRADA \_ \_ \_ RPC S**
 </dt> <dd> <dl> <dt>
 
 1922 (0x782)
@@ -2048,7 +2048,7 @@ A entrada não é do tipo esperado.
 
 </dt> </dl> </dd> <dt>
 
-<span id="RPC_S_NOT_ALL_OBJS_EXPORTED"></span><span id="rpc_s_not_all_objs_exported"></span>**RPC \_ S \_ nem \_ todos os \_ objs tivessem \_ exportados**
+<span id="RPC_S_NOT_ALL_OBJS_EXPORTED"></span><span id="rpc_s_not_all_objs_exported"></span>**RPC \_ S NEM TODOS OS \_ \_ \_ OBJS \_ EXPORTADOS**
 </dt> <dd> <dl> <dt>
 
 1923 (0x783)
@@ -2056,12 +2056,12 @@ A entrada não é do tipo esperado.
 
 
 
-Nem todos os UUIDs de objeto puderam ser exportados para a entrada especificada.
+Nem todos os UUIDs de objeto podem ser exportados para a entrada especificada.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="RPC_S_INTERFACE_NOT_EXPORTED"></span><span id="rpc_s_interface_not_exported"></span>**\_interface RPC \_ S \_ não \_ exportada**
+<span id="RPC_S_INTERFACE_NOT_EXPORTED"></span><span id="rpc_s_interface_not_exported"></span>**INTERFACE \_ RPC \_ NÃO \_ \_ EXPORTADA**
 </dt> <dd> <dl> <dt>
 
 1924 (0x784)
@@ -2069,12 +2069,12 @@ Nem todos os UUIDs de objeto puderam ser exportados para a entrada especificada.
 
 
 
-A interface não pôde ser exportada para a entrada especificada.
+Não foi possível exportar a interface para a entrada especificada.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="RPC_S_PROFILE_NOT_ADDED"></span><span id="rpc_s_profile_not_added"></span>**\_perfil RPC \_ S \_ não \_ adicionado**
+<span id="RPC_S_PROFILE_NOT_ADDED"></span><span id="rpc_s_profile_not_added"></span>**PERFIL RPC \_ S \_ NÃO \_ \_ ADICIONADO**
 </dt> <dd> <dl> <dt>
 
 1925 (0x785)
@@ -2087,7 +2087,7 @@ Não foi possível adicionar a entrada de perfil especificada.
 
 </dt> </dl> </dd> <dt>
 
-<span id="RPC_S_PRF_ELT_NOT_ADDED"></span><span id="rpc_s_prf_elt_not_added"></span>**RPC \_ S \_ Prf \_ ELT \_ não \_ adicionado**
+<span id="RPC_S_PRF_ELT_NOT_ADDED"></span><span id="rpc_s_prf_elt_not_added"></span>**RPC \_ S \_ PRF \_ ELT NÃO \_ \_ ADICIONADO**
 </dt> <dd> <dl> <dt>
 
 1926 (0x786)
@@ -2100,7 +2100,7 @@ Não foi possível adicionar o elemento de perfil especificado.
 
 </dt> </dl> </dd> <dt>
 
-<span id="RPC_S_PRF_ELT_NOT_REMOVED"></span><span id="rpc_s_prf_elt_not_removed"></span>**RPC \_ S \_ Prf \_ ELT \_ não \_ removido**
+<span id="RPC_S_PRF_ELT_NOT_REMOVED"></span><span id="rpc_s_prf_elt_not_removed"></span>**RPC \_ S \_ PRF \_ ELT NÃO \_ \_ REMOVIDO**
 </dt> <dd> <dl> <dt>
 
 1927 (0x787)
@@ -2108,12 +2108,12 @@ Não foi possível adicionar o elemento de perfil especificado.
 
 
 
-O elemento de perfil especificado não pôde ser removido.
+Não foi possível remover o elemento de perfil especificado.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="RPC_S_GRP_ELT_NOT_ADDED"></span><span id="rpc_s_grp_elt_not_added"></span>**RPC \_ S \_ GRP \_ ELT \_ não \_ adicionado**
+<span id="RPC_S_GRP_ELT_NOT_ADDED"></span><span id="rpc_s_grp_elt_not_added"></span>**RPC \_ S \_ GRP \_ ELT NÃO \_ \_ ADICIONADO**
 </dt> <dd> <dl> <dt>
 
 1928 (0x788)
@@ -2121,12 +2121,12 @@ O elemento de perfil especificado não pôde ser removido.
 
 
 
-Não foi possível adicionar o elemento de grupo.
+Não foi possível adicionar o elemento group.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="RPC_S_GRP_ELT_NOT_REMOVED"></span><span id="rpc_s_grp_elt_not_removed"></span>**RPC \_ S \_ GRP \_ \_ não \_ removido**
+<span id="RPC_S_GRP_ELT_NOT_REMOVED"></span><span id="rpc_s_grp_elt_not_removed"></span>**RPC \_ S \_ GRP \_ ELT NÃO \_ \_ REMOVIDO**
 </dt> <dd> <dl> <dt>
 
 1929 (0x789)
@@ -2134,12 +2134,12 @@ Não foi possível adicionar o elemento de grupo.
 
 
 
-Não foi possível remover o elemento de grupo.
+O elemento group não pôde ser removido.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_KM_DRIVER_BLOCKED"></span><span id="error_km_driver_blocked"></span>**\_Driver km de erro \_ \_ bloqueado**
+<span id="ERROR_KM_DRIVER_BLOCKED"></span><span id="error_km_driver_blocked"></span>**DRIVER \_ KM DE ERRO \_ \_ BLOQUEADO**
 </dt> <dd> <dl> <dt>
 
 1930 (0x78A)
@@ -2147,12 +2147,12 @@ Não foi possível remover o elemento de grupo.
 
 
 
-O driver de impressora não é compatível com uma política habilitada em seu computador que bloqueia drivers NT 4,0.
+O driver de impressora não é compatível com uma política habilitada no computador que bloqueia os drivers NT 4.0.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CONTEXT_EXPIRED"></span><span id="error_context_expired"></span>**contexto de erro \_ \_ expirado**
+<span id="ERROR_CONTEXT_EXPIRED"></span><span id="error_context_expired"></span>**CONTEXTO \_ DE \_ ERRO EXPIRADO**
 </dt> <dd> <dl> <dt>
 
 1931 (0x78B)
@@ -2165,7 +2165,7 @@ O contexto expirou e não pode mais ser usado.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_PER_USER_TRUST_QUOTA_EXCEEDED"></span><span id="error_per_user_trust_quota_exceeded"></span>**ERRO \_ por \_ cota de confiança de usuário \_ \_ \_ excedida**
+<span id="ERROR_PER_USER_TRUST_QUOTA_EXCEEDED"></span><span id="error_per_user_trust_quota_exceeded"></span>**ERRO \_ POR COTA DE CONFIANÇA DO USUÁRIO \_ \_ \_ \_ EXCEDIDO**
 </dt> <dd> <dl> <dt>
 
 1932 (0x78C)
@@ -2178,7 +2178,7 @@ A cota de criação de confiança delegada do usuário atual foi excedida.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_ALL_USER_TRUST_QUOTA_EXCEEDED"></span><span id="error_all_user_trust_quota_exceeded"></span>**ERRO de \_ todas as \_ \_ cotas de confiança de usuário \_ \_ excedidas**
+<span id="ERROR_ALL_USER_TRUST_QUOTA_EXCEEDED"></span><span id="error_all_user_trust_quota_exceeded"></span>**ERRO \_ TODAS AS \_ \_ COTAS DE CONFIANÇA DO USUÁRIO \_ \_ EXCEDIDA**
 </dt> <dd> <dl> <dt>
 
 1933 (0x78D)
@@ -2186,12 +2186,12 @@ A cota de criação de confiança delegada do usuário atual foi excedida.
 
 
 
-A cota de criação de confiança delegada total foi excedida.
+A cota total de criação de confiança delegada foi excedida.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_USER_DELETE_TRUST_QUOTA_EXCEEDED"></span><span id="error_user_delete_trust_quota_exceeded"></span>**ERRO ao \_ excluir a cota de confiança do usuário \_ \_ \_ \_ excedida**
+<span id="ERROR_USER_DELETE_TRUST_QUOTA_EXCEEDED"></span><span id="error_user_delete_trust_quota_exceeded"></span>**ERRO \_ A COTA DE CONFIANÇA DE \_ \_ \_ EXCLUSÃO DO USUÁRIO \_ EXCEDIDA**
 </dt> <dd> <dl> <dt>
 
 1934 (0x78E)
@@ -2204,7 +2204,7 @@ A cota de exclusão de confiança delegada do usuário atual foi excedida.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_AUTHENTICATION_FIREWALL_FAILED"></span><span id="error_authentication_firewall_failed"></span>**\_ \_ falha no firewall de autenticação de erro \_**
+<span id="ERROR_AUTHENTICATION_FIREWALL_FAILED"></span><span id="error_authentication_firewall_failed"></span>**FALHA NO \_ FIREWALL DE \_ \_ AUTENTICAÇÃO DE ERRO**
 </dt> <dd> <dl> <dt>
 
 1935 (0x78F)
@@ -2212,12 +2212,12 @@ A cota de exclusão de confiança delegada do usuário atual foi excedida.
 
 
 
-O computador no qual você está se conectando é protegido por um firewall de autenticação. A conta especificada não tem permissão para se autenticar no computador.
+O computador em que você está entrando é protegido por um firewall de autenticação. A conta especificada não tem permissão para autenticar no computador.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_REMOTE_PRINT_CONNECTIONS_BLOCKED"></span><span id="error_remote_print_connections_blocked"></span>**ERRO \_ de \_ conexões de impressão remota \_ \_ bloqueadas**
+<span id="ERROR_REMOTE_PRINT_CONNECTIONS_BLOCKED"></span><span id="error_remote_print_connections_blocked"></span>**ERRO \_ CONEXÕES DE \_ IMPRESSÃO REMOTA \_ \_ BLOQUEADAS**
 </dt> <dd> <dl> <dt>
 
 1936 (0x790)
@@ -2225,12 +2225,12 @@ O computador no qual você está se conectando é protegido por um firewall de a
 
 
 
-As conexões remotas com o spooler de impressão são bloqueadas por uma política definida em seu computador.
+As conexões remotas com o Spooler de Impressão são bloqueadas por um conjunto de políticas em seu computador.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_NTLM_BLOCKED"></span><span id="error_ntlm_blocked"></span>**ERRO \_ NTLM \_ bloqueado**
+<span id="ERROR_NTLM_BLOCKED"></span><span id="error_ntlm_blocked"></span>**ERRO \_ NTLM \_ BLOQUEADO**
 </dt> <dd> <dl> <dt>
 
 1937 (0x791)
@@ -2238,12 +2238,12 @@ As conexões remotas com o spooler de impressão são bloqueadas por uma políti
 
 
 
-A autenticação falhou porque a autenticação NTLM foi desabilitada.
+Falha na autenticação porque a autenticação NTLM foi desabilitada.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_PASSWORD_CHANGE_REQUIRED"></span><span id="error_password_change_required"></span>**ERRO \_ de \_ alteração de senha \_ necessária**
+<span id="ERROR_PASSWORD_CHANGE_REQUIRED"></span><span id="error_password_change_required"></span>**ALTERAÇÃO \_ DE SENHA DE ERRO \_ \_ NECESSÁRIA**
 </dt> <dd> <dl> <dt>
 
 1938 (0x792)
@@ -2256,7 +2256,7 @@ Falha de logon: a política de EAS requer que o usuário altere sua senha antes 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INVALID_PIXEL_FORMAT"></span><span id="error_invalid_pixel_format"></span>**ERRO \_ de \_ formato de pixel inválido \_**
+<span id="ERROR_INVALID_PIXEL_FORMAT"></span><span id="error_invalid_pixel_format"></span>**ERRO \_ FORMATO DE PIXEL \_ \_ INVÁLIDO**
 </dt> <dd> <dl> <dt>
 
 2000 (0x7D0)
@@ -2269,7 +2269,7 @@ O formato de pixel é inválido.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_BAD_DRIVER"></span><span id="error_bad_driver"></span>**ERRO \_ de \_ Driver insatisfatório**
+<span id="ERROR_BAD_DRIVER"></span><span id="error_bad_driver"></span>**ERRO \_ DE \_ DRIVER RUIM**
 </dt> <dd> <dl> <dt>
 
 2001 (0x7D1)
@@ -2282,7 +2282,7 @@ O driver especificado é inválido.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INVALID_WINDOW_STYLE"></span><span id="error_invalid_window_style"></span>**ERRO \_ de \_ estilo de janela inválido \_**
+<span id="ERROR_INVALID_WINDOW_STYLE"></span><span id="error_invalid_window_style"></span>**ERRO \_ ESTILO DE JANELA \_ \_ INVÁLIDO**
 </dt> <dd> <dl> <dt>
 
 2002 (0x7D2)
@@ -2290,12 +2290,12 @@ O driver especificado é inválido.
 
 
 
-O estilo de janela ou o atributo de classe é inválido para esta operação.
+O atributo de classe ou estilo de janela é inválido para esta operação.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_METAFILE_NOT_SUPPORTED"></span><span id="error_metafile_not_supported"></span>**metarquivo de erro \_ \_ sem \_ suporte**
+<span id="ERROR_METAFILE_NOT_SUPPORTED"></span><span id="error_metafile_not_supported"></span>**NÃO \_ HÁ SUPORTE PARA \_ \_ METADADOS DE ERRO**
 </dt> <dd> <dl> <dt>
 
 2003 (0x7D3)
@@ -2303,12 +2303,12 @@ O estilo de janela ou o atributo de classe é inválido para esta operação.
 
 
 
-Não há suporte para a operação de metarquivo solicitada.
+Não há suporte para a operação de metadados solicitada.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_TRANSFORM_NOT_SUPPORTED"></span><span id="error_transform_not_supported"></span>**transformação de erro \_ \_ sem \_ suporte**
+<span id="ERROR_TRANSFORM_NOT_SUPPORTED"></span><span id="error_transform_not_supported"></span>**TRANSFORMAÇÃO \_ DE ERRO SEM \_ \_ SUPORTE**
 </dt> <dd> <dl> <dt>
 
 2004 (0x7D4)
@@ -2321,7 +2321,7 @@ Não há suporte para a operação de transformação solicitada.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CLIPPING_NOT_SUPPORTED"></span><span id="error_clipping_not_supported"></span>**\_ \_ não \_ há suporte para REcorte de erro**
+<span id="ERROR_CLIPPING_NOT_SUPPORTED"></span><span id="error_clipping_not_supported"></span>**NÃO \_ HÁ SUPORTE PARA RECORTE DE \_ \_ ERRO**
 </dt> <dd> <dl> <dt>
 
 2005 (0x7D5)
@@ -2334,7 +2334,7 @@ Não há suporte para a operação de recorte solicitada.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INVALID_CMM"></span><span id="error_invalid_cmm"></span>**ERRO \_ \_ CMM inválido**
+<span id="ERROR_INVALID_CMM"></span><span id="error_invalid_cmm"></span>**ERRO \_ \_ CMM INVÁLIDO**
 </dt> <dd> <dl> <dt>
 
 2010 (0x7DA)
@@ -2347,7 +2347,7 @@ O módulo de gerenciamento de cores especificado é inválido.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INVALID_PROFILE"></span><span id="error_invalid_profile"></span>**ERRO \_ de \_ perfil inválido**
+<span id="ERROR_INVALID_PROFILE"></span><span id="error_invalid_profile"></span>**ERRO \_ PERFIL \_ INVÁLIDO**
 </dt> <dd> <dl> <dt>
 
 2011 (0x7DB)
@@ -2360,7 +2360,7 @@ O perfil de cor especificado é inválido.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_TAG_NOT_FOUND"></span><span id="error_tag_not_found"></span>**marca de erro \_ \_ não \_ encontrada**
+<span id="ERROR_TAG_NOT_FOUND"></span><span id="error_tag_not_found"></span>**MARCA \_ DE ERRO NÃO \_ \_ ENCONTRADA**
 </dt> <dd> <dl> <dt>
 
 2012 (0x7DC)
@@ -2373,7 +2373,7 @@ A marca especificada não foi encontrada.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_TAG_NOT_PRESENT"></span><span id="error_tag_not_present"></span>**marca de erro \_ \_ não \_ presente**
+<span id="ERROR_TAG_NOT_PRESENT"></span><span id="error_tag_not_present"></span>**MARCA \_ DE ERRO NÃO \_ \_ PRESENTE**
 </dt> <dd> <dl> <dt>
 
 2013 (0x7DD)
@@ -2386,7 +2386,7 @@ Uma marca necessária não está presente.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DUPLICATE_TAG"></span><span id="error_duplicate_tag"></span>**ERRO \_ de \_ marca duplicada**
+<span id="ERROR_DUPLICATE_TAG"></span><span id="error_duplicate_tag"></span>**MARCAÇÃO \_ \_ DUPLICADA DE ERRO**
 </dt> <dd> <dl> <dt>
 
 2014 (0x7DE)
@@ -2399,7 +2399,7 @@ A marca especificada já está presente.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_PROFILE_NOT_ASSOCIATED_WITH_DEVICE"></span><span id="error_profile_not_associated_with_device"></span>**\_perfil \_ de erro não \_ associado \_ ao \_ dispositivo**
+<span id="ERROR_PROFILE_NOT_ASSOCIATED_WITH_DEVICE"></span><span id="error_profile_not_associated_with_device"></span>**PERFIL \_ DE ERRO NÃO ASSOCIADO AO \_ \_ \_ \_ DISPOSITIVO**
 </dt> <dd> <dl> <dt>
 
 2015 (0x7DF)
@@ -2412,7 +2412,7 @@ O perfil de cor especificado não está associado ao dispositivo especificado.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_PROFILE_NOT_FOUND"></span><span id="error_profile_not_found"></span>**Perfil de erro \_ \_ não \_ encontrado**
+<span id="ERROR_PROFILE_NOT_FOUND"></span><span id="error_profile_not_found"></span>**PERFIL \_ DE ERRO NÃO \_ \_ ENCONTRADO**
 </dt> <dd> <dl> <dt>
 
 2016 (0x7E0)
@@ -2425,7 +2425,7 @@ O perfil de cor especificado não foi encontrado.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INVALID_COLORSPACE"></span><span id="error_invalid_colorspace"></span>**ERRO \_ \_ COLORSPACE inválido**
+<span id="ERROR_INVALID_COLORSPACE"></span><span id="error_invalid_colorspace"></span>**ERRO \_ \_ COLORSPACE INVÁLIDO**
 </dt> <dd> <dl> <dt>
 
 2017 (0x7E1)
@@ -2438,7 +2438,7 @@ O espaço de cores especificado é inválido.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_ICM_NOT_ENABLED"></span><span id="error_icm_not_enabled"></span>**erro \_ ICM \_ não \_ habilitado**
+<span id="ERROR_ICM_NOT_ENABLED"></span><span id="error_icm_not_enabled"></span>**ERRO \_ ICM \_ NÃO \_ HABILITADO**
 </dt> <dd> <dl> <dt>
 
 2018 (0x7E2)
@@ -2446,12 +2446,12 @@ O espaço de cores especificado é inválido.
 
 
 
-O gerenciamento de cores de imagem não está habilitado.
+O Gerenciamento de Cores da Imagem não está habilitado.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DELETING_ICM_XFORM"></span><span id="error_deleting_icm_xform"></span>**erro ao \_ excluir \_ ICM \_ XFORM**
+<span id="ERROR_DELETING_ICM_XFORM"></span><span id="error_deleting_icm_xform"></span>**ERRO \_ AO EXCLUIR ICM \_ \_ XFORM**
 </dt> <dd> <dl> <dt>
 
 2019 (0x7E3)
@@ -2464,7 +2464,7 @@ Ocorreu um erro ao excluir a transformação de cor.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INVALID_TRANSFORM"></span><span id="error_invalid_transform"></span>**\_transformação inválida de erro \_**
+<span id="ERROR_INVALID_TRANSFORM"></span><span id="error_invalid_transform"></span>**ERRO \_ TRANSFORMAÇÃO \_ INVÁLIDA**
 </dt> <dd> <dl> <dt>
 
 2020 (0x7E4)
@@ -2477,7 +2477,7 @@ A transformação de cor especificada é inválida.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_COLORSPACE_MISMATCH"></span><span id="error_colorspace_mismatch"></span>**incompatibilidade de COLORSPACE de erro \_ \_**
+<span id="ERROR_COLORSPACE_MISMATCH"></span><span id="error_colorspace_mismatch"></span>**ERRO \_ INCOMPATIBILIDADE DE COLORSPACE \_**
 </dt> <dd> <dl> <dt>
 
 2021 (0x7E5)
@@ -2485,12 +2485,12 @@ A transformação de cor especificada é inválida.
 
 
 
-A transformação especificada não corresponde ao espaço de cores do bitmap.
+A transformação especificada não corresponderá ao espaço de cores do bitmap.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INVALID_COLORINDEX"></span><span id="error_invalid_colorindex"></span>**ERRO \_ de \_ COLORINDEX inválido**
+<span id="ERROR_INVALID_COLORINDEX"></span><span id="error_invalid_colorindex"></span>**ERRO \_ \_ COLORINDEX INVÁLIDO**
 </dt> <dd> <dl> <dt>
 
 2022 (0x7E6)
@@ -2498,12 +2498,12 @@ A transformação especificada não corresponde ao espaço de cores do bitmap.
 
 
 
-O índice de cores nomeados especificado não está presente no perfil.
+O índice de cores nomeado especificado não está presente no perfil.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_PROFILE_DOES_NOT_MATCH_DEVICE"></span><span id="error_profile_does_not_match_device"></span>**\_o perfil de erro \_ \_ não \_ corresponde ao \_ dispositivo**
+<span id="ERROR_PROFILE_DOES_NOT_MATCH_DEVICE"></span><span id="error_profile_does_not_match_device"></span>**O \_ PERFIL DE ERRO NÃO COMBINA COM O \_ \_ \_ \_ DISPOSITIVO**
 </dt> <dd> <dl> <dt>
 
 2023 (0x7E7)
@@ -2516,7 +2516,7 @@ O perfil especificado destina-se a um dispositivo de um tipo diferente do dispos
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CONNECTED_OTHER_PASSWORD"></span><span id="error_connected_other_password"></span>**ERRO \_ conectado a \_ outra \_ senha**
+<span id="ERROR_CONNECTED_OTHER_PASSWORD"></span><span id="error_connected_other_password"></span>**ERRO \_ OUTRA \_ SENHA \_ CONECTADA**
 </dt> <dd> <dl> <dt>
 
 2108 (0x83C)
@@ -2524,12 +2524,12 @@ O perfil especificado destina-se a um dispositivo de um tipo diferente do dispos
 
 
 
-A conexão de rede foi feita com êxito, mas o usuário precisava ser solicitado a fornecer uma senha diferente da especificada originalmente.
+A conexão de rede foi feita com êxito, mas o usuário precisou solicitar uma senha diferente da especificada originalmente.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CONNECTED_OTHER_PASSWORD_DEFAULT"></span><span id="error_connected_other_password_default"></span>**ERRO \_ conectado \_ outro \_ padrão de senha \_**
+<span id="ERROR_CONNECTED_OTHER_PASSWORD_DEFAULT"></span><span id="error_connected_other_password_default"></span>**ERRO \_ CONECTADO PADRÃO DE OUTRA \_ \_ \_ SENHA**
 </dt> <dd> <dl> <dt>
 
 2109 (0x83D)
@@ -2542,7 +2542,7 @@ A conexão de rede foi feita com êxito usando as credenciais padrão.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_BAD_USERNAME"></span><span id="error_bad_username"></span>**ERRO \_ de \_ nome de usuário insatisfatório**
+<span id="ERROR_BAD_USERNAME"></span><span id="error_bad_username"></span>**ERRO NOME \_ DE USUÁRIO \_ RUIM**
 </dt> <dd> <dl> <dt>
 
 2202 (0x89A)
@@ -2555,7 +2555,7 @@ O nome de usuário especificado é inválido.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_NOT_CONNECTED"></span><span id="error_not_connected"></span>**ERRO \_ não \_ conectado**
+<span id="ERROR_NOT_CONNECTED"></span><span id="error_not_connected"></span>**ERRO \_ NÃO \_ CONECTADO**
 </dt> <dd> <dl> <dt>
 
 2250 (0x8CA)
@@ -2941,7 +2941,7 @@ Emita novamente a operação especificada como uma operação de e/s em cache.
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho XP\]<br/>                                           |
 | Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>WinError. h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>WinError. h</dt> </dl> |
 
 
 

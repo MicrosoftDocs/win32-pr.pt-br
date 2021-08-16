@@ -1,7 +1,7 @@
 ---
 description: A interface IWiaUIExtension2 fornece métodos que substituem a interface do usuário padrão fornecida pelo sistema por uma interface do usuário personalizada e que fornecem um ícone de dispositivo personalizado.
 ms.assetid: 1a747ea3-2476-438b-baf0-903b86cbbb16
-title: Interface IWiaUIExtension2 (Wiadevd. h)
+title: Interface IWiaUIExtension2 (Wiadevd.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -26,7 +26,7 @@ A interface IWiaUIExtension2 fornece métodos que substituem a interface do usu�
 
 ## <a name="members"></a>Membros
 
-A interface **IWiaUIExtension2** herda da interface [**IUnknown**](/windows/win32/api/unknwn/nn-unknwn-iunknown) . **IWiaUIExtension2** também tem estes tipos de membros:
+A interface **IWiaUIExtension2** herda da interface [**IUnknown.**](/windows/win32/api/unknwn/nn-unknwn-iunknown) **IWiaUIExtension2** também tem estes tipos de membros:
 
 -   [Métodos](#methods)
 
@@ -51,9 +51,9 @@ A interface **IWiaUIExtension2** tem esses métodos.
 
 | Métodos IUnknown                                        | Descrição                               |
 |---------------------------------------------------------|-------------------------------------------|
-| [IUnknown:: QueryInterface](/windows/win32/api/unknwn/nf-unknwn-iunknown-queryinterface(q)) | Retorna ponteiros para interfaces com suporte. |
-| [IUnknown:: AddRef](/windows/win32/api/unknwn/nf-unknwn-iunknown-addref)                 | Incrementa a contagem de referência.               |
-| [IUnknown:: versão](/windows/win32/api/unknwn/nf-unknwn-iunknown-release)               | Decrementa a contagem de referência.               |
+| [IUnknown::QueryInterface](/windows/win32/api/unknwn/nf-unknwn-iunknown-queryinterface(q)) | Retorna ponteiros para interfaces com suporte. |
+| [IUnknown::AddRef](/windows/win32/api/unknwn/nf-unknwn-iunknown-addref)                 | Incrementa a contagem de referência.               |
+| [IUnknown::Release](/windows/win32/api/unknwn/nf-unknwn-iunknown-release)               | Contagem de referências de decrementos.               |
 
 
 
@@ -65,9 +65,9 @@ A interface **IWiaUIExtension2** tem esses métodos.
 
 | Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                       |
-| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                 |
-| parâmetro<br/>                   | <dl> <dt>Wiadevd. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                 |
+| Cabeçalho<br/>                   | <dl> <dt>Wiadevd.h</dt> </dl> |
 
 
 

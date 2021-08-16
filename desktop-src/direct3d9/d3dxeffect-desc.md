@@ -1,7 +1,7 @@
 ---
-description: Descreve um objeto Effect.
+description: Descreve um objeto de efeito.
 ms.assetid: 161d3e7a-213a-4a83-a1b5-837b0aab96bf
-title: Estrutura de D3DXEFFECT_DESC (D3dx9effect. h)
+title: D3DXEFFECT_DESC (D3dx9effect.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9effect.h
-ms.openlocfilehash: c8e7a3a2adf19514e2e4d1c6f61dbea888ce033d
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 0b30ad0348a5c799690d668e036724d30808c2998eee9d762fa2ad3fc8106c91
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103664007"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118298589"
 ---
-# <a name="d3dxeffect_desc-structure"></a>\_Estrutura desc de D3DXEFFECT
+# <a name="d3dxeffect_desc-structure"></a>Estrutura D3DXEFFECT \_ DESC
 
-Descreve um objeto Effect.
+Descreve um objeto de efeito.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -49,14 +49,14 @@ Tipo: **[ **LPCSTR**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Cadeia de caracteres que contém o nome do criador de efeito.
+Cadeia de caracteres que contém o nome do criador do efeito.
 
 </dd> <dt>
 
 **Parâmetros**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -67,7 +67,7 @@ Número de parâmetros usados para efeito.
 **Técnicas**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -78,7 +78,7 @@ Número de técnicas que podem renderizar o efeito.
 **Funções**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -88,7 +88,7 @@ Número de funções que podem renderizar o efeito.
 
 ## <a name="remarks"></a>Comentários
 
-Um objeto Effect pode conter várias técnicas de renderização e parâmetros para o mesmo efeito.
+Um objeto de efeito pode conter várias técnicas de renderização e parâmetros para o mesmo efeito.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -96,7 +96,7 @@ Um objeto Effect pode conter várias técnicas de renderização e parâmetros p
 
 | Requisito | Valor |
 |-------------------|------------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>D3dx9effect. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>D3dx9effect.h</dt> </dl> |
 
 
 

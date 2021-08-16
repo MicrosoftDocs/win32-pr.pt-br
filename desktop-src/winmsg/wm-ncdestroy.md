@@ -1,7 +1,7 @@
 ---
-description: Notifica uma janela de que sua área não cliente está sendo destruída. A função DestroyWindow envia a mensagem do WM \_ NCDESTROY para a janela após a \_ mensagem do WM Destroy.
+description: Notifica uma janela de que sua área não dependente está sendo destruída. A função DestroyWindow envia a mensagem WM \_ NCDESTROY para a janela após a mensagem WM \_ DESTROY.
 ms.assetid: 64ab268d-0e90-4401-81d3-a4da64196001
-title: Mensagem de WM_NCDESTROY (WinUser. h)
+title: WM_NCDESTROY mensagem (Winuser.h)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 1a2e74db0abf22fc2fb3d2a16b5cc63187514d1bee26079490c8d19eae13787e
@@ -11,13 +11,13 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118200042"
 ---
-# <a name="wm_ncdestroy-message"></a>Mensagem do WM \_ NCDESTROY
+# <a name="wm_ncdestroy-message"></a>Mensagem \_ NCDESTROY wm
 
-Notifica uma janela de que sua área não cliente está sendo destruída. A função [**DestroyWindow**](/windows/win32/api/winuser/nf-winuser-destroywindow) envia a mensagem do **WM \_ NCDESTROY** para a janela após a mensagem do [**WM \_ Destroy**](wm-destroy.md) .[**O WM \_ Destroy**](wm-destroy.md) é usado para liberar o objeto de memória alocado associado à janela.
+Notifica uma janela de que sua área não dependente está sendo destruída. A [**função DestroyWindow**](/windows/win32/api/winuser/nf-winuser-destroywindow) envia a **mensagem WM \_ NCDESTROY** para a janela após a [**mensagem WM \_ DESTROY.**](wm-destroy.md) [**WM \_ DESTROY**](wm-destroy.md) é usado para liberar o objeto de memória alocado associado à janela.
 
-A mensagem do **WM \_ NCDESTROY** é enviada depois que as janelas filhas são destruídas. Por outro lado, o [**WM \_ Destroy**](wm-destroy.md) é enviado antes que as janelas filhas sejam destruídas.
+A **mensagem \_ WM NCDESTROY** é enviada depois que as janelas filho são destruídas. Por outro lado, [**WM \_ DESTROY**](wm-destroy.md) é enviado antes que as janelas filho sejam destruídas.
 
-Uma janela recebe essa mensagem por meio de sua função [**WindowProc**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85)) .
+Uma janela recebe essa mensagem por meio de [**sua função WindowProc.**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85))
 
 
 ```C++
@@ -48,7 +48,7 @@ Este parâmetro não é usado.
 
 Tipo: **LRESULT**
 
-Se um aplicativo processar essa mensagem, ele deverá retornar zero.
+Se um aplicativo processa essa mensagem, ele deve retornar zero.
 
 ## <a name="remarks"></a>Comentários
 
@@ -62,7 +62,7 @@ Essa mensagem libera qualquer memória alocada internamente para a janela.
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                                               |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                     |
-| Cabeçalho<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -73,16 +73,16 @@ Essa mensagem libera qualquer memória alocada internamente para a janela.
 **Referência**
 </dt> <dt>
 
-[**DestroyWindow**](/windows/win32/api/winuser/nf-winuser-destroywindow)
+[**Destroywindow**](/windows/win32/api/winuser/nf-winuser-destroywindow)
 </dt> <dt>
 
-[**destruição do WM \_**](wm-destroy.md)
+[**WM \_ DESTROY**](wm-destroy.md)
 </dt> <dt>
 
-[**NCCREATE do WM \_**](wm-nccreate.md)
+[**WM \_ NCCREATE**](wm-nccreate.md)
 </dt> <dt>
 
-**Conceitua**
+**Conceitual**
 </dt> <dt>
 
 [Windows](windows.md)

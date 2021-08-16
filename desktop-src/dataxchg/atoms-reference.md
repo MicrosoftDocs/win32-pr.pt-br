@@ -1,6 +1,6 @@
 ---
-title: Referência Atom
-description: . | Referência Atom
+title: Referência atom
+description: . | Referência atom
 ms.assetid: 1c01ac11-6140-4a58-ae00-db88c34edeef
 ms.topic: reference
 ms.date: 05/31/2018
@@ -11,12 +11,12 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118304687"
 ---
-# <a name="atom-reference"></a>Referência Atom
+# <a name="atom-reference"></a>Referência atom
 
 ## <a name="in-this-section"></a>Nesta seção
 
 -   [Funções Atom](atoms-functions.md)
--   [Macros Atom](atoms-macros.md)
+-   [Atom Macros](atoms-macros.md)
 
  
 

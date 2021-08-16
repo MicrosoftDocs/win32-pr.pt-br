@@ -4,12 +4,12 @@ ms.assetid: e9820e53-8891-4bff-a333-00ad2dbb03a4
 title: Cenários básicos para proteger dados em aplicativos de várias camadas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7929bcfeba96b43b7ec91513b42ffb7f46266613
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 4f9c4bafb0334bb9e5f124eb184f6ebf2d17f4f0dc40ef04421162dc6604f531
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105782696"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118308738"
 ---
 # <a name="basic-scenarios-for-securing-data-in-multi-tier-applications"></a>Cenários básicos para proteger dados em aplicativos de várias camadas
 
@@ -33,13 +33,13 @@ Esse cenário funciona melhor para dados que podem ser acessados por categorias 
 
 Esse cenário funciona melhor para dados que estão fortemente ligados a classes muito pequenas de usuários. Por exemplo, cada funcionário pode acessar apenas seu próprio arquivo de equipe, e cada gerente pode acessar somente os arquivos de equipe de seus relatórios.
 
-## <a name="hybrid-scenario"></a> Cenário Híbrido
+## <a name="hybrid-scenario"></a>Cenário híbrido
 
 Uma combinação dos dois cenários anteriores, em que a representação é usada somente quando necessário.
 
 Esse cenário funciona melhor em situações em que você tem relações de dados de usuário híbridos. Por exemplo, você tem "gerentes", "Digars", "contadores" e milhares de clientes Web individuais que podem acessar apenas suas próprias contas. Você pode separar caminhos lógicos por meio do aplicativo, potencialmente com componentes separados, para lidar com a última classe de usuários, principalmente onde as suposições de desempenho para esses usuários são diferentes.
 
-## <a name="trusted-scenario-using-microsoft-sql-server-roles"></a>Cenário confiável usando funções de Microsoft SQL Server
+## <a name="trusted-scenario-using-microsoft-sql-server-roles"></a>cenário confiável usando funções de Microsoft SQL Server
 
 -   Microsoft SQL Server 7,0 e posterior podem autorizar o acesso a linhas específicas usando funções, mas confia no aplicativo COM+ para autenticar e autorizar usuários e mapeá-los para as funções corretas no banco de dados.
 -   O aplicativo COM+ autoriza os usuários usando a segurança baseada em função e as funções de aplicativo correspondem bem às funções de banco de dados.

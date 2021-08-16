@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - NewDev.dll
-ms.openlocfilehash: 76a458ae071c61b9f1030aad535c4d4c6a31078c
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: cb12e87ceee4812ffc8c0e39d961ce631e26c4ab8ca7ae555785c8ad8381ca01
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104089441"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118405302"
 ---
 # <a name="installnewdevice-function"></a>Função InstallNewDevice
 
@@ -41,24 +41,24 @@ BOOL WINAPI InstallNewDevice(
 
 <dl> <dt>
 
-*hwndParent* \[ no\]
+*hwndParent* \[ Em\]
 </dt> <dd>
 
-Um identificador para a janela de nível superior a ser usado para qualquer interface do usuário necessária.
+Um alça para a janela de nível superior a ser usado para qualquer interface do usuário necessária.
 
 </dd> <dt>
 
-*ClassGuid* \[ no\]
+*ClassGuid* \[ Em\]
 </dt> <dd>
 
-Um ponteiro para um **GUID** de classe. Esse parâmetro é opcional. Se esse parâmetro for **nulo**, o usuário será iniciado na página opção de detecção. Se esse parâmetro for **GUID \_ NULL** ou **GUID \_ DEVCLASS \_ Unknown**, o usuário será iniciado na página de seleção de classe.
+Um ponteiro para um **GUID de classe.** Esse parâmetro é opcional. Se esse parâmetro for **NULL,** o usuário começará na página de opção de detecção. Se esse parâmetro for **GUID \_ NULL ou** GUID **\_ DEVCLASS \_ UNKNOWN,** o usuário será iniciado na página de seleção de classe.
 
 </dd> <dt>
 
-*Preboot* \[ fora\]
+*pReboot* \[ out\]
 </dt> <dd>
 
-Um ponteiro para uma variável que recebe o status de reinicialização. Esse parâmetro pode ser **di \_ NEEDRESTART** ou **di \_ NEEDREBOOT**.
+Um ponteiro para uma variável que recebe o status de reinicialização. Esse parâmetro pode ser **DI \_ NEEDRESTART** ou **DI \_ NEEDREBOOT.**
 
 </dd> </dl>
 
@@ -70,7 +70,7 @@ Se a função falhar, o valor retornado será zero. Para obter informações de 
 
 ## <a name="remarks"></a>Comentários
 
-Esta função não tem biblioteca de importação associada. Você deve usar as funções [**LoadLibrary**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress) para vincular dinamicamente a NewDev.dll.
+Essa função não tem nenhuma biblioteca de importação associada. Você deve usar as [**funções LoadLibrary**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress) para vincular dinamicamente a NewDev.dll.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -88,7 +88,7 @@ Esta função não tem biblioteca de importação associada. Você deve usar as 
 
 <dl> <dt>
 
-[Funções de gerenciamento de dispositivo](device-management-functions.md)
+[Gerenciamento de Dispositivos funções](device-management-functions.md)
 </dt> </dl>
 
  

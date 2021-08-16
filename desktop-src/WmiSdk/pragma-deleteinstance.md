@@ -22,7 +22,7 @@ ms.locfileid: "118316837"
 ---
 # <a name="pragma-deleteinstance"></a>pragma deleteinstance
 
-O comando **pragma deleteinstance** exclui uma instância existente de uma classe do repositório.
+O **comando pragma deleteinstance** exclui uma instância existente de uma classe do repositório.
 
 O seguinte descreve a sintaxe para este comando:
 
@@ -35,7 +35,7 @@ O seguinte descreve a sintaxe para este comando:
 
 *InstanceId* é um identificador exclusivo da instância que o compilador MOF exclui do namespace atual.
 
-O *\[ sinalizador \]* deve ser um dos argumentos a seguir.
+*\[ O \]* sinalizador deve ser um dos argumentos a seguir.
 
 
 
