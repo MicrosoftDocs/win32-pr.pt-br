@@ -1,6 +1,6 @@
 ---
-title: CPROV. Cpp
-description: No componente do provedor de exemplo, um exemplo de código usado para implementar o objeto de provedor do ADs é encontrado em cprov.cpp. Os métodos com suporte são listados na tabela a seguir.
+title: CPROV. CPP
+description: No exemplo de componente do provedor, um exemplo de código usado para implementar o objeto do provedor ADs é encontrado em cprov. cpp. Os métodos com suporte são listados na tabela a seguir.
 ms.assetid: 606d3539-0d87-4706-a4d1-e71fa25156c1
 ms.tgt_platform: multiple
 ms.topic: article
@@ -12,20 +12,20 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118428727"
 ---
-# <a name="cprovcpp"></a>CPROV. Cpp
+# <a name="cprovcpp"></a>CPROV. CPP
 
-No componente do provedor de exemplo, um exemplo de código usado para implementar o objeto de provedor do ADs é encontrado em cprov.cpp. Os métodos com suporte são listados na tabela a seguir.
+No exemplo de componente do provedor, um exemplo de código usado para implementar o objeto do provedor ADs é encontrado em cprov. cpp. Os métodos com suporte são listados na tabela a seguir.
 
 
 
 | Item                                      | Descrição                                         |
 |-------------------------------------------|-----------------------------------------------------|
 | **CSampleDSProvider::CSampleDSProvider**  | Criador padrão.                                   |
-| **CSampleDSProvider::~CSampleDSProvider** | Destruidor padrão.                                |
-| **CSampleDSProvider::Create**             | Criar o objeto.                                  |
-| **CSampleDSProvider::QueryInterface**     | Verifique se há interfaces com suporte.                     |
+| **CSampleDSProvider:: ~ CSampleDSProvider** | Destruidor padrão.                                |
+| **CSampleDSProvider:: criar**             | Criar o objeto.                                  |
+| **CSampleDSProvider:: QueryInterface**     | Verifique se há interfaces com suporte.                     |
 | **CSampleDSProvider::P arseDisplayName**   | Resolva o caminho.                                   |
-| **CSampleDSProvider::ResolvePathName**    | Obter o objeto e criar um moniker de ponteiro para ele. |
+| **CSampleDSProvider::ResolvePathName**    | Obtenha o objeto e crie um moniker de ponteiro para ele. |
 
 
 

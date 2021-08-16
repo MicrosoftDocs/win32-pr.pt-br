@@ -1,8 +1,8 @@
 ---
-description: A \_ classe Win32 ClusterShare representa um recurso compartilhado em um cluster.
+description: A classe ClusterShare do Win32 \_ representa um recurso compartilhado em um cluster.
 ms.assetid: 6c8b40e3-431f-4728-a389-affbc04b8415
 ms.tgt_platform: multiple
-title: Classe Win32_ClusterShare
+title: Win32_ClusterShare classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -25,18 +25,18 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: ccff6ad8d99692d066728c99dd74ab07640af4fa
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 66be06bf3a8433a7dba1eb28e6123adb03d622803745838158aa80bda0e8e594
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104089473"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118417987"
 ---
-# <a name="win32_clustershare-class"></a>\_Classe Win32 ClusterShare
+# <a name="win32_clustershare-class"></a>Classe ClusterShare do Win32 \_
 
-\[A classe **Win32 \_ ClusterShare** foi preterida. Em vez disso, use as classes de [**\_ compartilhamento MSFT**](/previous-versions/windows/desktop/stormgmt/msft-fileshare) e [**MSFT \_ SMFileShare**](/previous-versions/windows/desktop/msftstrgmanprov/msft-smfileshare) .\]
+\[A **classe \_ ClusterShare do Win32** foi preterida. Use as [**classes MSFT \_ FileShare**](/previous-versions/windows/desktop/stormgmt/msft-fileshare) e [**\_ MSFT SMFileShare.**](/previous-versions/windows/desktop/msftstrgmanprov/msft-smfileshare)\]
 
-A \_ classe Win32 ClusterShare representa um recurso compartilhado em um cluster.
+A classe ClusterShare do Win32 \_ representa um recurso compartilhado em um cluster.
 
 A sintaxe a seguir é simplificada do código MOF (Managed Object Format) e inclui todas as propriedades herdadas.
 
@@ -62,21 +62,21 @@ class Win32_ClusterShare : Win32_Share
 
 ## <a name="members"></a>Membros
 
-A classe **Win32 \_ ClusterShare** tem estes tipos de membros:
+A **classe \_ ClusterShare win32** tem estes tipos de membros:
 
 -   [Métodos](#methods)
 -   [Propriedades](#properties)
 
 ### <a name="methods"></a>Métodos
 
-A classe **Win32 \_ ClusterShare** tem esses métodos.
+A **classe \_ ClusterShare do Win32** tem esses métodos.
 
 
 
 | Método                                                    | Descrição                                                      |
 |:----------------------------------------------------------|:-----------------------------------------------------------------|
-| [**Criada**](create-win32-clustershare.md)               | Cria uma nova instância de **\_ ClusterShare do Win32** .<br/>       |
-| [**Excluir**](delete-win32-clustershare.md)               | Exclui uma instância de **\_ ClusterShare do Win32** .<br/>           |
+| [**Criar**](create-win32-clustershare.md)               | Cria uma nova **instância \_ ClusterShare do Win32.**<br/>       |
+| [**Excluir**](delete-win32-clustershare.md)               | Exclui uma **instância \_ ClusterShare do Win32.**<br/>           |
 | [**GetAccessMask**](getaccessmask-win32-clustershare.md) | Retorna um bitmap com os direitos de acesso ao compartilhamento.<br/> |
 | [**SetShareInfo**](setshareinfo-win32-clustershare.md)   | Define os parâmetros do recurso compartilhado.<br/>           |
 
@@ -86,43 +86,43 @@ A classe **Win32 \_ ClusterShare** tem esses métodos.
 
 ### <a name="properties"></a>Propriedades
 
-A classe **Win32 \_ ClusterShare** tem essas propriedades.
+A **classe \_ ClusterShare do Win32** tem essas propriedades.
 
 <dl> <dt>
 
-**AccessMask**
+**Accessmask**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [ **preteridos**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
+Qualificadores: [ **PRETERIDO**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
-Esta propriedade é obsoleta e não é mais usada. Em vez disso, use o método [**Win32 \_ share. GetAccessMask**](getaccessmask-method-in-class-win32-share.md) . O valor da propriedade **AccessMask** é definido como **NULL** pelo WMI. Para obter mais informações sobre como definir o acesso quando um compartilhamento é criado, consulte o método [**Create**](create-method-in-class-win32-share.md) .
+Essa propriedade está obsoleta e não é mais usada. Em vez disso, use o método [**\_ Win32 Share.GetAccessMask.**](getaccessmask-method-in-class-win32-share.md) O valor da **propriedade AccessMask** é definido como **nulo** pelo WMI. Para obter mais informações sobre como definir o acesso quando um compartilhamento é criado, consulte o [**método**](create-method-in-class-win32-share.md) Create.
 
-Essa propriedade é herdada [**do \_ compartilhamento do Win32**](win32-share.md).
+Essa propriedade é herdada do [**Compartilhamento Win32. \_**](win32-share.md)
 
 </dd> <dt>
 
 **AllowMaximum**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("as \| estruturas de gerenciamento de rede do Win32API \| [**compartilham \_ informações \_ 502**](/windows/desktop/api/lmshare/ns-lmshare-share_info_502) \| shi502 \_ Max \_ use")
+Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32API \| Network Management Structures SHARE INFO \| [**\_ \_ 502**](/windows/desktop/api/lmshare/ns-lmshare-share_info_502) \| ltd502 \_ max \_ uses")
 </dt> </dl>
 
-O número de usuários simultâneos deste recurso foi limitado. Se **for true**, o valor na propriedade **MaximumAllowed** será ignorado.
+O número de usuários simultâneos para esse recurso foi limitado. Se **True**, o valor na **propriedade MaximumAllowed** será ignorado.
 
-Essa propriedade é herdada [**do \_ compartilhamento do Win32**](win32-share.md).
+Essa propriedade é herdada do [**Compartilhamento Win32. \_**](win32-share.md)
 
 </dd> <dt>
 
@@ -135,12 +135,12 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Caption")
+Qualificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Legenda")
 </dt> </dl>
 
-Uma breve descrição textual do objeto.
+Uma breve descrição textual do objeto .
 
-Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
@@ -156,45 +156,45 @@ Tipo de acesso: Somente leitura
 Qualificadores: [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Descrição")
 </dt> </dl>
 
-Uma descrição textual do objeto.
+Uma descrição textual do objeto .
 
-Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **InstallDate**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **DateTime**
+Tipo de dados: **datetime**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. \|Componente DMTF \| 1,5 "), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) (" data de instalação ")
+Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| ComponentID \| 001.5"), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Data de instalação")
 </dt> </dl>
 
 Indica quando o objeto foi instalado. A falta de um valor não indica que o objeto não está instalado.
 
-Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **MaximumAllowed**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("as \| estruturas de gerenciamento de rede do Win32API \| [**compartilham \_ informações \_ 502**](/windows/desktop/api/lmshare/ns-lmshare-share_info_502) \| shi502 \_ Max \_ use")
+Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32API \| Network Management Structures SHARE INFO \| [**\_ \_ 502**](/windows/desktop/api/lmshare/ns-lmshare-share_info_502) \| ltd502 \_ max \_ uses")
 </dt> </dl>
 
-Limite do número máximo de usuários com permissão para usar este recurso simultaneamente. O valor só será válido se a propriedade **AllowMaximum** estiver definida como **false**.
+Limite o número máximo de usuários permitidos para usar esse recurso simultaneamente. O valor só será válido se a **propriedade AllowMaximum** estiver definida como **FALSE.**
 
-Essa propriedade é herdada [**do \_ compartilhamento do Win32**](win32-share.md).
+Essa propriedade é herdada do [**Compartilhamento Win32. \_**](win32-share.md)
 
 </dd> <dt>
 
@@ -207,14 +207,14 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**chave**](/windows/desktop/WmiSdk/key-qualifier), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("win32api \| estruturas de gerenciamento de rede \| [**compartilham \_ informações \_ 1**](/windows/desktop/api/lmshare/ns-lmshare-share_info_1) \| shi1 \_ NetName")
+Qualificadores: [**key**](/windows/desktop/WmiSdk/key-qualifier), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32API \| Network Management Structures SHARE INFO \| [**\_ \_ 1**](/windows/desktop/api/lmshare/ns-lmshare-share_info_1) \| www1 \_ netname")
 </dt> </dl>
 
-Alias fornecido a um caminho configurado como um compartilhamento em um sistema de computador executando o Windows.
+Alias dado a um caminho definido como um compartilhamento em um sistema de computador executando Windows.
 
-Windows 2008 exemplo: " \\ Server01 \\ Public"-o windows Server 2008 requer que você coloque o UNC no nome.
+Windows exemplo de 2008: \\ "SERVER01 \\ public" – Windows Server 2008 exige que você coloque UNC no nome.
 
-Essa propriedade é herdada [**do \_ compartilhamento do Win32**](win32-share.md).
+Essa propriedade é herdada do [**Compartilhamento Win32. \_**](win32-share.md)
 
 </dd> <dt>
 
@@ -227,14 +227,14 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("estruturas de gerenciamento de rede do win32api \| \| [**compartilham \_ informações \_ 502**](/windows/desktop/api/lmshare/ns-lmshare-share_info_502) \| shi502 \_ caminho")
+Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32API \| Network Management Structures SHARE INFO \| [**\_ \_ 502**](/windows/desktop/api/lmshare/ns-lmshare-share_info_502) \| ltd502 \_ path")
 </dt> </dl>
 
-Caminho local do compartilhamento do Windows.
+Caminho local do Windows compartilhamento.
 
-Exemplo: "C: \\ arquivos de programas"
+Exemplo: "C: \\ Arquivos de Programas"
 
-Essa propriedade é herdada [**do \_ compartilhamento do Win32**](win32-share.md).
+Essa propriedade é herdada do [**Compartilhamento Win32. \_**](win32-share.md)
 
 </dd> <dt>
 
@@ -247,7 +247,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("servername"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("win32api \| Network Management estruturas \| [**share \_ info \_ 503**](/windows/desktop/api/lmshare/ns-lmshare-share_info_503) \| shi503 \_ ServerName")
+Qualificadores: [**substituir**](/windows/desktop/WmiSdk/standard-qualifiers) ("ServerName"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32API \| Network Management Structures SHARE INFO \| [**\_ \_ 503**](/windows/desktop/api/lmshare/ns-lmshare-share_info_503) \| ltd503 \_ servername")
 </dt> </dl>
 
 O servidor de cluster no qual o compartilhamento está hospedado.
@@ -263,14 +263,14 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (10), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("status")
+Qualificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (10), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Status")
 </dt> </dl>
 
-Cadeia de caracteres que indica o status atual do objeto. O status operacional e não operacional pode ser definido. O status operacional pode incluir "OK", "degradado" e "Pred falha". "Pred Fail" indica que um elemento está funcionando corretamente, mas está prevendo uma falha (por exemplo, uma unidade de disco rígido habilitada para inteligente).
+Cadeia de caracteres que indica o status atual do objeto. O status operacional e não operacional pode ser definido. O status operacional pode incluir "OK", "Degradado" e "Pred Fail". "Pred Fail" indica que um elemento está funcionando corretamente, mas está prevendo uma falha (por exemplo, uma unidade de disco rígido habilitada para SMART).
 
-O status não operacional pode incluir "erro", "Iniciando", "parando" e "serviço". O "serviço" pode ser aplicado durante o espelhamento de disco – reprateando, recarregando uma lista de permissões de usuário ou outro trabalho administrativo. Nem todo esse trabalho está online, mas o elemento gerenciado não é "OK" nem em um dos outros Estados.
+O status não operacional pode incluir "Erro", "Iniciando", "Parando" e "Serviço". O "Serviço" pode ser aplicado durante a resilvering de espelhamento de disco, o recarregamento de uma lista de permissões de usuário ou outro trabalho administrativo. Nem todo esse trabalho está online, mas o elemento gerenciado não é "OK" nem em um dos outros estados.
 
-Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 Os valores incluem o seguinte:
 
@@ -285,28 +285,28 @@ Os valores incluem o seguinte:
 
 <span id="Error"></span><span id="error"></span><span id="ERROR"></span>
 
-**Erro** ("erro")
+**Erro** ("Erro")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Degraded"></span><span id="degraded"></span><span id="DEGRADED"></span>
 
-**Degradado** ("degradado")
+**Degradado** ("Degradado")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>
 
-**Desconhecido** ("desconhecido")
+**Desconhecido** ("Desconhecido")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Pred_Fail"></span><span id="pred_fail"></span><span id="PRED_FAIL"></span>
 
-**Falha de Pred** ("Pred Fail")
+**Pred Fail** ("Pred Fail")
 
 
 </dt> <dd></dd> <dt>
@@ -320,42 +320,42 @@ Os valores incluem o seguinte:
 
 <span id="Stopping"></span><span id="stopping"></span><span id="STOPPING"></span>
 
-**Parando** ("parando")
+**Parando** ("Parando")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Service"></span><span id="service"></span><span id="SERVICE"></span>
 
-**Serviço** ("serviço")
+**Serviço** ("Serviço")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Stressed"></span><span id="stressed"></span><span id="STRESSED"></span>
 
-**Sob estresse** ("sob estresse")
+**Stressed** ("Stressed")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="NonRecover"></span><span id="nonrecover"></span><span id="NONRECOVER"></span>
 
-Não **recuperar** ("Recover")
+**NonRecover** ("NonRecover")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="No_Contact"></span><span id="no_contact"></span><span id="NO_CONTACT"></span>
 
-**Sem contato** ("sem contato")
+**Sem contato** ("Sem contato")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Lost_Comm"></span><span id="lost_comm"></span><span id="LOST_COMM"></span>
 
-**Perda de comunicação** ("perda de comunicação")
+**Perda de vírgula** ("comm perdida")
 
 
 </dt> <dd></dd> </dl>
@@ -365,18 +365,18 @@ Não **recuperar** ("Recover")
 **Tipo**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) (" \| estruturas de gerenciamento de rede win32api informações de \| [**compartilhamento \_ \_ 502**](/windows/desktop/api/lmshare/ns-lmshare-share_info_502) \| shi502 \_ tipo")
+Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32API \| Network Management Structures SHARE INFO \| [**\_ \_ 502**](/windows/desktop/api/lmshare/ns-lmshare-share_info_502) \| ltd502 \_ type")
 </dt> </dl>
 
-Tipo de recurso que está sendo compartilhado. Os tipos incluem: unidades de disco, filas de impressão, IPC (comunicações entre processos) e dispositivos gerais.
+Tipo de recurso que está sendo compartilhado. Os tipos incluem: unidades de disco, filas de impressão, IPC (comunicação entre processos) e dispositivos gerais.
 
-Essa propriedade é herdada [**do \_ compartilhamento do Win32**](win32-share.md).
+Essa propriedade é herdada do [**Compartilhamento Win32. \_**](win32-share.md)
 
 <dt>
 
@@ -389,7 +389,7 @@ Essa propriedade é herdada [**do \_ compartilhamento do Win32**](win32-share.md
 
 <span id="Print_Queue"></span><span id="print_queue"></span><span id="PRINT_QUEUE"></span>
 
-**Fila de impressão** (1)
+**Fila de Impressão** (1)
 
 
 </dt> <dd></dd> <dt>
@@ -410,21 +410,21 @@ Essa propriedade é herdada [**do \_ compartilhamento do Win32**](win32-share.md
 
 <span id="Disk_Drive_Admin"></span><span id="disk_drive_admin"></span><span id="DISK_DRIVE_ADMIN"></span>
 
-**Administrador da unidade de disco** (2147483648)
+**Administrador de unidade de** disco (2147483648)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Print_Queue_Admin"></span><span id="print_queue_admin"></span><span id="PRINT_QUEUE_ADMIN"></span>
 
-**Administrador da fila de impressão** (2147483649)
+**Imprimir Administrador de Fila** (2147483649)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Device_Admin"></span><span id="device_admin"></span><span id="DEVICE_ADMIN"></span>
 
-**Administrador do dispositivo** (2147483650)
+**Administrador do** dispositivo (2147483650)
 
 
 </dt> <dd></dd> <dt>
@@ -446,8 +446,8 @@ Essa propriedade é herdada [**do \_ compartilhamento do Win32**](win32-share.md
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 7<br/>                                                                    |
 | Servidor mínimo com suporte<br/> | Windows Server 2008 R2<br/>                                                       |
-| Namespace<br/>                | Raiz \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>Cimwin32. mof</dt> </dl> |
+| Namespace<br/>                | RAIZ \\ CIMV2<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>Cimwin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -456,7 +456,7 @@ Essa propriedade é herdada [**do \_ compartilhamento do Win32**](win32-share.md
 
 <dl> <dt>
 
-[**Compartilhamento do Win32 \_**](win32-share.md)
+[**Compartilhamento \_ win32**](win32-share.md)
 </dt> </dl>
 
  

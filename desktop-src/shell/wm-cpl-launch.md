@@ -1,6 +1,6 @@
 ---
-description: WM_CPL_LAUNCH mensagem - Não há suporte para essa mensagem.
-title: WM_CPL_LAUNCH mensagem (Cpl.h)
+description: WM_CPL_LAUNCH mensagem-esta mensagem não tem suporte.
+title: Mensagem de WM_CPL_LAUNCH (CPL. h)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.assetid: b4a09672-888a-4f77-972d-fad0c375104a
@@ -20,13 +20,13 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118451833"
 ---
-# <a name="wm_cpl_launch-message"></a>Mensagem WM \_ CPL \_ LAUNCH
+# <a name="wm_cpl_launch-message"></a>Mensagem de inicialização do WM \_ CPL \_
 
-Não há suporte para essa mensagem.
+Não há suporte para esta mensagem.
 
 ## <a name="parameters"></a>Parâmetros
 
-Essa mensagem não tem parâmetros.
+Esta mensagem não tem parâmetros.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -34,7 +34,7 @@ Essa mensagem não tem parâmetros.
 
 | Requisito | Valor |
 |-------------------|----------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>Cpl.h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>CPL. h</dt> </dl> |
 
 
 

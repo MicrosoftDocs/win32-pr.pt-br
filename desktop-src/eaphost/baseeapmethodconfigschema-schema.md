@@ -1,6 +1,6 @@
 ---
 title: Esquema baseeapmethodconfig
-description: Saiba mais sobre o esquema baseeapmethodconfig. Esse esquema define elementos de esquema de configuração comuns.
+description: Saiba mais sobre o esquema baseeapmethodconfig. Esse esquema define elementos comuns de esquema de configuração.
 ms.assetid: f27d78dd-f5bb-4299-8dfb-127234fbb7cd
 ms.topic: article
 ms.date: 05/31/2018

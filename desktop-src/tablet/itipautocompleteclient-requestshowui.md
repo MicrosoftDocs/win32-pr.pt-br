@@ -83,7 +83,7 @@ Chame **RequestShowUI** para definir o identificador de janela de lista de preen
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do XP Tablet PC Edition\]<br/>                                                                   |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                                                       |
-| parâmetro<br/>                   | <dl> <dt>TipAutoComplete. h (também requer PenInputPanel \_ i. c)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>TipAutoComplete. h (também requer PenInputPanel \_ i. c)</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Tiptsf.dll</dt> </dl>                                           |
 
 

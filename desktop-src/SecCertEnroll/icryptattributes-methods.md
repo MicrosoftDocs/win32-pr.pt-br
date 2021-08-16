@@ -20,7 +20,7 @@ A interface [**ICryptAttributes**](/windows/desktop/api/CertEnroll/nn-certenroll
 -   [**Adicionar método**](/windows/desktop/api/CertEnroll/nf-certenroll-icryptattributes-add)
 -   [**Método AddRange**](/windows/desktop/api/CertEnroll/nf-certenroll-icryptattributes-addrange)
 -   [**Método Clear**](/windows/desktop/api/CertEnroll/nf-certenroll-icryptattributes-clear)
--   [**Remover método**](/windows/desktop/api/CertEnroll/nf-certenroll-icryptattributes-remove)
+-   [**Método Remove**](/windows/desktop/api/CertEnroll/nf-certenroll-icryptattributes-remove)
 
  
 

@@ -31,7 +31,7 @@ ms.locfileid: "118536997"
 
 Sinalizadores de filtragem de textura.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 ```C++

@@ -80,14 +80,14 @@ O tipo do item a ser localizado. Consulte [Tipos de MARCA](tag-types.md).
 **dwIndexRec**
 </dt> <dd>
 
-Um contador interno usado para rastrear em que local no índice a próxima operação de localizar deve começar.
+Um contador interno usado para rastrear em que local no índice a próxima operação de localizar deve iniciar.
 
 </dd> <dt>
 
 **dwFlags**
 </dt> <dd>
 
-Esse membro pode ser 0 ou **SHIMDB \_ INDEX UNIQUE \_ \_ KEY** (0x00000001), que indica que esse é um índice de chave exclusiva.
+Esse membro pode ser 0 ou **SHIMDB \_ INDEX UNIQUE \_ \_ KEY** (0x00000001), o que indica que esse é um índice de chave exclusiva.
 
 </dd> <dt>
 

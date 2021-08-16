@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre: Conversão implícita de sessão (sessão para JET_SESID)'
-title: Conversão implícita de sessão (sessão em JET_SESID)
+description: 'Saiba mais sobre: conversão implícita de sessão (sessão para JET_SESID)'
+title: Conversão implícita de sessão (sessão para JET_SESID)
 TOCTitle: Implicit conversion (Session to JET_SESID)
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Session.op_Implicit(Microsoft.Isam.Esent.Interop.Session)~Microsoft.Isam.Esent.Interop.JET_SESID
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.session.op_implicit(v=EXCHG.10)
@@ -32,12 +32,12 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118485505"
 ---
-# <a name="session-implicit-conversion-session-to-jet_sesid"></a>Conversão implícita de sessão (sessão em JET_SESID)
+# <a name="session-implicit-conversion-session-to-jet_sesid"></a>Conversão implícita de sessão (sessão para JET_SESID)
 
-Operador de conversão implícita de uma sessão em um JET_SESID. Isso permite que uma sessão seja usada com APIs que esperam um JET_SESID.
+Operador de conversão implícita de uma sessão para um JET_SESID. Isso permite que uma sessão seja usada com APIs que esperam um JET_SESID.
 
-**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -62,13 +62,13 @@ public static implicit operator JET_SESID (
 #### <a name="parameters"></a>Parâmetros
 
   - sessão  
-    Tipo: [Microsoft.Isam.Esent.Interop.Session](./session-class.md)  
+    Tipo: [Microsoft. ISAM. ESENT. Interop. Session](./session-class.md)  
     
     A sessão a ser convertida.
 
 #### <a name="return-value"></a>Valor retornado
 
-Tipo: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)  
+Tipo: [Microsoft.ISAM.ESENT.Interop.JET_SESID](./jet-sesid-structure.md)  
 O JET_SESID da sessão.  
 
 ## <a name="see-also"></a>Confira também
@@ -79,4 +79,4 @@ O JET_SESID da sessão.
 
 [Membros da sessão](./session-members.md)
 
-[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)

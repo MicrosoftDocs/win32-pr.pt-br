@@ -1,19 +1,19 @@
 ---
-description: O armazenamento de cadeias de caracteres embutidas no registro é parte de um modelo de localização anterior ao Windows Vista.
+description: Armazenamento de cadeias de caracteres embutidas em código no registro faz parte de um modelo de localização anterior ao Vista Windows.
 ms.assetid: 70185942-7d32-4151-a4e1-f71cf45e87af
 title: Usando o redirecionamento de cadeia de caracteres do registro
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 287f6e1420aae0ff41c386e19852bebbd1a322c3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 30f0804d0586f8340e5a84e9da9c82ca39ffc30b55f72f4695d5216cbb26aab6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105788076"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118389412"
 ---
 # <a name="using-registry-string-redirection"></a>Usando o redirecionamento de cadeia de caracteres do registro
 
-O armazenamento de cadeias de caracteres embutidas no registro é parte de um modelo de localização anterior ao Windows Vista. Não há suporte para ele no MUI. No modelo atual, a interface do usuário para o sistema operacional é executada em arquivos de recursos específicos de idioma sobre uma base neutra de idioma. Os componentes do sistema operacional usam o registro de maneira neutra de linguagem.
+Armazenamento de cadeias de caracteres embutidas em código no registro faz parte de um modelo de localização anterior ao Vista Windows. Não há suporte para ele no MUI. No modelo atual, a interface do usuário para o sistema operacional é executada em arquivos de recursos específicos de idioma sobre uma base neutra de idioma. Os componentes do sistema operacional usam o registro de maneira neutra de linguagem.
 
 O MUI usa apenas as cadeias de caracteres de registro redirecionadas definidas por recursos do Win32 PE no arquivo de recurso de idioma base. O redirecionamento é definido separadamente, por exemplo, em um arquivo. inf. Esse tipo de armazenamento permite que o carregador de recursos selecione os recursos de idioma corretos automaticamente durante o carregamento do módulo de recurso.
 
@@ -24,7 +24,7 @@ O MUI usa apenas as cadeias de caracteres de registro redirecionadas definidas p
 
 ## <a name="create-a-language-neutral-resource"></a>Criar um recurso de Language-Neutral
 
-Um aplicativo MUI em execução no Windows Vista e posterior usa um recurso de cadeia de caracteres com neutralidade de idioma para permitir o acesso a cadeias de caracteres específicas de idioma armazenadas em uma tabela de recursos de cadeia. O código do aplicativo que lê esses valores do registro é descrito na seção carregar um Language-Neutral valor do registro de [localizando cadeias de caracteres redirecionadas](locating-redirected-strings.md).
+um aplicativo MUI em execução no Windows Vista e posterior usa um recurso de cadeia de caracteres com neutralidade de idioma para permitir o acesso a cadeias de caracteres específicas de idioma armazenadas em uma tabela de recursos de cadeia. O código do aplicativo que lê esses valores do registro é descrito na seção carregar um Language-Neutral valor do registro de [localizando cadeias de caracteres redirecionadas](locating-redirected-strings.md).
 
 Os dados de um valor de registro com neutralidade de idioma têm o formato " `@<PE-path>,-<stringID>[;<comment>]` ", em que:
 
@@ -45,7 +45,7 @@ Um valor de registro incorreto é:
 
 `shell32.dll, -22912`
 
-Um exemplo do Windows Vista é o valor do registro com os seguintes dados:
+um exemplo do Windows Vista é o valor do registro com os seguintes dados:
 
 `@%SystemRoot%\system32\input.dll,-5020`
 
@@ -53,9 +53,9 @@ Um exemplo do Windows Vista é o valor do registro com os seguintes dados:
 
 Quando o aplicativo MUI exibe seu nome na interface do usuário do Shell, uma cadeia de caracteres InfoTip é exibida para o ícone do aplicativo. Você deve criar recursos de cadeia de caracteres para o nome de exibição do aplicativo e a cadeia de caracteres InfoTip associada para cada idioma com suporte. Quando os recursos estiverem prontos, seu aplicativo poderá usar as cadeias de caracteres conforme descrito na seção usar API do Shell para carregar cadeias de caracteres de atalho da sessão de registro de [localizando cadeias de caracteres redirecionadas](locating-redirected-strings.md).
 
-### <a name="prepare-resources-for-a-shortcut-created-with-windows-installer"></a>Preparar recursos para um atalho criado com Windows Installer
+### <a name="prepare-resources-for-a-shortcut-created-with-windows-installer"></a>preparar recursos para um atalho criado com Windows Installer
 
-Se você usar Windows Installer (MSI) para criar um atalho, os recursos de cadeia de caracteres incluirão o nome de exibição e a descrição do atalho. Na [tabela de atalho MSI](../msi/shortcut-table.md), a DLL de recurso é referenciada nas colunas apropriadas e os identificadores de recurso para seu nome de exibição de atalho e descrição são usados nas colunas do identificador de recurso correspondente.
+se você usar Windows Installer (MSI) para criar um atalho, os recursos de cadeia de caracteres incluirão o nome de exibição e a descrição do atalho. Na [tabela de atalho MSI](../msi/shortcut-table.md), a DLL de recurso é referenciada nas colunas apropriadas e os identificadores de recurso para seu nome de exibição de atalho e descrição são usados nas colunas do identificador de recurso correspondente.
 
 Para que o atalho do aplicativo funcione corretamente com a tecnologia de recursos do MUI, tenha em mente os seguintes pontos ao preparar as cadeias de caracteres de atalho:
 
@@ -111,7 +111,7 @@ O trabalho específico envolve as seguintes etapas:
 2.  Adicione o valor FriendlyTypeName na chave do registro do tipo de documento. Os dados para o valor seguem o padrão " `@<path>,-<resID>` ", em que *Path* indica o executável e *resID* é o identificador de recurso de um recurso de cadeia de caracteres localizável associado a esse executável.
 3.  Especifique o valor do registro InfoTip de acordo com o formato " `@<path>,-<resID>` ".
 
-O exemplo a seguir mostra as configurações do registro para um arquivo. txt:
+O exemplo a seguir mostra as configurações do registro para um arquivo de .txt:
 
 
 ```C++
@@ -131,9 +131,9 @@ HKCR\txtfile
 
 ## <a name="provide-resources-for-shell-verb-action-strings"></a>Fornecer recursos para cadeias de caracteres de ação de verbo do Shell
 
-Cadeias de caracteres de ação para determinados verbos, por exemplo, "abrir" e "Editar", são mostradas no menu pop-up exibido quando o usuário clica com o botão direito do mouse em um arquivo no Windows Explorer. Seu aplicativo não precisa especificar cadeias de caracteres para verbos de shell comuns, pois o Shell tem seus próprios padrões habilitados para MUI para esses verbos. No entanto, você deve fornecer recursos de cadeia de caracteres localizáveis para cadeias que representam verbos não comuns.
+cadeias de caracteres de ação para determinados verbos, por exemplo, "abrir" e "editar", são mostradas no menu pop-up exibido quando o usuário clica com o botão direito do mouse em um arquivo no Windows Explorer. Seu aplicativo não precisa especificar cadeias de caracteres para verbos de shell comuns, pois o Shell tem seus próprios padrões habilitados para MUI para esses verbos. No entanto, você deve fornecer recursos de cadeia de caracteres localizáveis para cadeias que representam verbos não comuns.
 
-Em sistemas operacionais anteriores ao Windows XP, cadeias de caracteres para verbos de Shell no registro são renderizadas usando a sintaxe a seguir, em que *Verb* especifica o nome real do verbo:
+em sistemas operacionais Windows XP, cadeias de caracteres para verbos de shell no registro são renderizadas usando a sintaxe a seguir, em que *verb* especifica o nome real do verbo:
 
 
 ```C++
@@ -153,7 +153,7 @@ HKCR\Sample.app\shell\Disc
 
 
 
-No Windows XP e posterior, você pode usar um nível de indireção para fazer uma cadeia de caracteres de ação depender do idioma da interface do usuário. Esses sistemas operacionais dão suporte a um valor de MUIVerb para definição de uma cadeia de caracteres compatível com MUI. Aqui está um exemplo de uma entrada de registro para um verbo incomum:
+no Windows XP e posterior, você pode usar um nível de indireção para fazer uma cadeia de caracteres de ação depender do idioma da interface do usuário. Esses sistemas operacionais dão suporte a um valor de MUIVerb para definição de uma cadeia de caracteres compatível com MUI. Aqui está um exemplo de uma entrada de registro para um verbo incomum:
 
 
 ```C++
@@ -175,7 +175,7 @@ HKCR\Sample.app\shell\Disc
 
 
 > [!Note]  
-> O registro do valor padrão antigo não é recomendado porque requer uma instalação diferente no Windows XP e posterior da instalação usada em sistemas operacionais anteriores.
+> o registro do valor padrão antigo não é recomendado porque requer uma instalação diferente no Windows XP e posterior da instalação usada em sistemas operacionais anteriores.
 
  
 
@@ -213,7 +213,7 @@ Aqui está um resumo para ajudá-lo a garantir as configurações corretas do re
 
 ## <a name="create-a-resource-for-the-uninstall-program"></a>Criar um recurso para o programa de desinstalação
 
-Para registrar o programa de desinstalação do aplicativo, você pode criar valores de registro na subchave do identificador exclusivo para o aplicativo na chave do registro HKEY \_ local \_ Machine \\ software \\ Microsoft \\ Windows \\ CurrentVersion \\ Uninstall. Os valores a serem definidos incluem: DisplayName, DisplayVersion, Publisher, ProductID, RegOwner, RegCompany, UrlInfoAbout, HelpTelephone, HelpLink, InstallLocation, Installname, InstallDate, Contact, Comments, DisplayIcon, README, UrlUpdateInfo.
+para registrar o programa de desinstalação do aplicativo, você pode criar valores de registro na subchave do identificador exclusivo para o aplicativo na chave do registro HKEY \_ LOCAL \_ MACHINE \\ Software \\ Microsoft \\ Windows \\ CurrentVersion \\ uninstall. os valores a serem definidos incluem: DisplayName, DisplayVersion, Publisher, ProductID, RegOwner, RegCompany, UrlInfoAbout, HelpTelephone, HelpLink, InstallLocation, installname, InstallDate, Contact, comments, DisplayIcon, Readme, UrlUpdateInfo.
 
 > [!Note]  
 > Para habilitar a tecnologia MUI para cada valor, você pode acrescentar " \_ localizado" ao nome do valor.
@@ -224,7 +224,7 @@ Os componentes do sistema operacional são necessários para fornecer um valor p
 
 ## <a name="create-resources-for-sound-events"></a>Criar recursos para eventos de som
 
-O Windows associa determinados eventos a arquivos de som, por exemplo, um novo evento de notificação por email ou um evento de alarme de bateria crítica. Os nomes de evento devem ser exibidos pela interface do usuário e devem oferecer suporte à globalização. Portanto, você deve implementar um recurso de cadeia de caracteres localizável para a descrição de cada descrição de evento. Adicione um novo valor de registro para cada nome de evento, além do valor padrão embutido em código.
+Windows associa determinados eventos a arquivos de som, por exemplo, um novo evento de notificação de email ou um evento de alarme de bateria crítica. Os nomes de evento devem ser exibidos pela interface do usuário e devem oferecer suporte à globalização. Portanto, você deve implementar um recurso de cadeia de caracteres localizável para a descrição de cada descrição de evento. Adicione um novo valor de registro para cada nome de evento, além do valor padrão embutido em código.
 
 Faça o seguinte para habilitar um evento de som:
 
@@ -255,7 +255,7 @@ Aqui está um exemplo de uma configuração de registro para o layout de teclado
 
 ## <a name="represent-ole-insert-object-common-dialog-strings"></a>Representar cadeias de diálogo comuns de objeto de inserção OLE
 
-Você pode implementar o nome de exibição de um objeto OLE insertável como um recurso de cadeia de caracteres localizável associado ao código que implementa esse objeto. A [caixa de diálogo objeto de inserção OLE](/cpp/mfc/reference/coleinsertdialog-class) Obtém um nome de exibição da chave do registro do \\ CLSID \\ { *<GUID>* }, em que *GUID* identifica o identificador de classe de um objeto OLE que poderia ser inserido. O Windows Vista e versões posteriores implementam esse tipo de objeto de forma localizável, usando um nome de exibição compatível com MUI que permite a personalização para o idioma da interface do usuário. Por outro lado, os sistemas operacionais anteriores ao Windows Vista implementam o nome de exibição para esse tipo de objeto usando o valor padrão da chave do registro correspondente. Normalmente, esse nome é um nome em inglês (Estados Unidos) ou um nome no idioma da interface do usuário padrão do sistema.
+Você pode implementar o nome de exibição de um objeto OLE insertável como um recurso de cadeia de caracteres localizável associado ao código que implementa esse objeto. A [caixa de diálogo objeto de inserção OLE](/cpp/mfc/reference/coleinsertdialog-class) Obtém um nome de exibição da chave do registro do \\ CLSID \\ { *<GUID>* }, em que *GUID* identifica o identificador de classe de um objeto OLE que poderia ser inserido. Windows O Vista e posterior implementa esse tipo de objeto de forma localizável, usando um nome de exibição compatível com MUI que permite a personalização para o idioma da interface do usuário. por outro lado, os sistemas operacionais Windows Vista implementam o nome de exibição desse tipo de objeto usando o valor padrão da chave do registro correspondente. Normalmente, esse nome é um nome em inglês (Estados Unidos) ou um nome no idioma da interface do usuário padrão do sistema.
 
 > [!Note]  
 > Nem todos os objetos que correspondem a subchaves da chave do registro podem ser inseridos.
@@ -295,11 +295,11 @@ NameStringIndirect=@%systemroot%@c:\windir\system32\mymmc.dll,-12345
 
 Alguns snap-ins registram outros valores de cadeia de caracteres do registro que o MMC não lê do registro. Para obter mais informações sobre como usar esses valores, consulte registrar o console de gerenciamento Microsoft Snap-In cadeias de caracteres não lidas do registro ao [Localizar cadeias de caracteres redirecionadas](locating-redirected-strings.md).
 
-## <a name="create-string-resources-for-a-windows-service"></a>Criar recursos de cadeia de caracteres para um serviço do Windows
+## <a name="create-string-resources-for-a-windows-service"></a>criar recursos de cadeia de caracteres para um serviço de Windows
 
-Embora um serviço do Windows normalmente tenha pouca ou nenhuma interface do usuário, ele deve exibir um nome em conformidade com o MUI e geralmente fornece uma descrição específica de linguagem compatível com MUI. A chave do registro que descreve um serviço do Windows dá suporte apenas ao valor DisplayName para o nome do serviço e o valor de descrição para a descrição do serviço.
+embora um serviço de Windows normalmente tenha pouca ou nenhuma interface do usuário, ele deve exibir um nome em conformidade com o mui e geralmente fornece uma descrição específica de linguagem compatível com mui. a chave do registro que descreve um serviço de Windows dá suporte apenas ao valor DisplayName para o nome do serviço e o valor de descrição para a descrição do serviço.
 
-As configurações para o serviço do Windows são feitas do aplicativo, conforme descrito em definir o nome de exibição e a descrição de um serviço do Windows do registro ao [Localizar cadeias de caracteres redirecionadas](locating-redirected-strings.md). Se o seu aplicativo não definir os valores do registro para a interface do usuário do serviço, os valores no registro permanecerão definidos como Inglês, mesmo que a interface do usuário esteja em outro idioma.
+Configurações para o serviço de Windows são feitas do aplicativo, conforme descrito em definir o nome de exibição e a descrição de um serviço de Windows do registro ao [localizar cadeias de caracteres redirecionadas](locating-redirected-strings.md). Se o seu aplicativo não definir os valores do registro para a interface do usuário do serviço, os valores no registro permanecerão definidos como Inglês, mesmo que a interface do usuário esteja em outro idioma.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

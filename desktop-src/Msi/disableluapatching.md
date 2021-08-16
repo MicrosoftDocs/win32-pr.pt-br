@@ -1,5 +1,5 @@
 ---
-description: Se essa política do sistema por máquina estiver definida como &\# 0034; 1&\# 0034;, o instalador impedirá que não administradores usem a aplicação de patches do controle de conta de usuário (UAC) para qualquer aplicativo instalado no computador.
+description: Se essa política de sistema por computador estiver definida como &\# 0034;1&0034;, o instalador impedirá que não administradores usem a Aplicação de Patch de UAC (Controle de Conta de Usuário) para qualquer aplicativo instalado no \# computador.
 ms.assetid: b122d6f4-2be6-4b9b-b8e0-ca08fe9c4f94
 title: DisableLUAPatching
 ms.topic: article
@@ -13,15 +13,15 @@ ms.locfileid: "118637773"
 ---
 # <a name="disableluapatching"></a>DisableLUAPatching
 
-Se essa política do sistema por máquina for definida como "1", o instalador impedirá que não administradores usem a [aplicação de patch do controle de conta de usuário (UAC)](user-account-control--uac--patching.md) para qualquer aplicativo instalado no computador. Quando a política do sistema por máquina não é definida ou definida como 0, os não administradores podem aplicar patches de usuário com privilégios mínimos a aplicativos habilitados para patches de conta de usuário com privilégios mínimos.
+Se essa política de sistema por computador estiver definida como "1", o instalador impedirá que não administradores usem a Aplicação de Patch [UAC (Controle](user-account-control--uac--patching.md) de Conta de Usuário) para qualquer aplicativo instalado no computador. Quando a política do sistema por computador não está definida ou definida como 0, os não administradores podem aplicar patches de usuário com privilégios mínimos a aplicativos habilitados para a aplicação de patch de conta de usuário com privilégios mínimos.
 
-Use a propriedade [**MSIDISABLELUAPATCHING**](msidisableluapatching.md) para impedir a aplicação de patches com privilégios mínimos de um aplicativo.
+Use a [**propriedade MSIDISABLELUAPATCHING**](msidisableluapatching.md) para evitar a aplicação de patch de privilégios mínimos de um aplicativo.
 
-a política DisableLUAPatching está disponível a partir do Windows Installer versão 3,0.
+A política DisableLUAPatching está disponível a partir do Windows Installer versão 3.0.
 
 ## <a name="registry-key"></a>Chave do Registro
 
-**HKEY \_ \_** \\  \\  \\ **Microsoft** \\ **Windows** \\ **Installer** de políticas de Software de computador LOCAL
+**HKEY \_ Instalador \_ do** Microsoft machine \\ **software** \\ **policies** \\  \\ **microsoft Windows** \\ 
 
 ## <a name="data-type"></a>Tipo de Dados
 
@@ -31,7 +31,7 @@ a política DisableLUAPatching está disponível a partir do Windows Installer v
 
 <dl> <dt>
 
-[sem suporte no Windows Installer 2,0 e versões anteriores](not-supported-in-windows-installer-version-2-0.md)
+[Sem suporte no Windows 2.0 e versões anteriores](not-supported-in-windows-installer-version-2-0.md)
 </dt> </dl>
 
  

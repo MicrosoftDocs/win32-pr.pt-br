@@ -14,56 +14,56 @@ ms.locfileid: "118472705"
 ---
 # <a name="u-menus-and-other-resources"></a>U (menus e outros recursos)
 
-[A](a.md) [B](b.md) [C](c.md) D [E](e.md) [F](f.md) G H [i](i.md) J K L M [N](n.md) [O](o.md) P Q [R](r.md) S [T](t.md) U [V](v.md) [W](w.md) X Y Z
+[A](a.md) [B](b.md) [C](c.md) D [E](e.md) [F G](f.md) H [I](i.md) J K L M [N](n.md) [O](o.md) P Q [R](r.md) S [T](t.md) U [V](v.md) [W](w.md) X Y Z
 
 <dl> <dt>
 
-<span id="tools.u_1_gly"></span><span id="TOOLS.U_1_GLY"></span>**Não é possível createdestination**
+<span id="tools.u_1_gly"></span><span id="TOOLS.U_1_GLY"></span>**Não é possível criarestinação**
 </dt> <dd>
 
-o compilador de recursos do Microsoft Windows (RC) não pôde criar o arquivo de destino. Verifique se há espaço em disco suficiente.
+O RC (Compilador de Recursos do Microsoft Windows) não pôde criar o arquivo de destino. Certifique-se de que haja espaço em disco suficiente.
 
 </dd> <dt>
 
-<span id="tools.u_2_gly"></span><span id="TOOLS.U_2_GLY"></span>**Parênteses não balanceados**
+<span id="tools.u_2_gly"></span><span id="TOOLS.U_2_GLY"></span>**Parênteses desbalanceados**
 </dt> <dd>
 
-Verifique se você fechou todos os parênteses de abertura na instrução da [**caixa de diálogo**](dialog-resource.md) .
+Certifique-se de que você fechou todos os parênteses de abertura na [**instrução DIALOG.**](dialog-resource.md)
 
 </dd> <dt>
 
 <span id="tools.u_3_gly"></span><span id="TOOLS.U_3_GLY"></span>**Valor inesperado em RCData**
 </dt> <dd>
 
-Os valores para o parâmetro *Raw-Data* na instrução [**RCDATA**](rcdata-resource.md) devem ser inteiros ou cadeias de caracteres, separados por vírgulas. Certifique-se de que você não deixou uma vírgula ou uma aspa ao contrário de uma cadeia de caracteres.
+Os valores do *parâmetro raw-data* na instrução [**RCDATA**](rcdata-resource.md) devem ser inteiros ou cadeias de caracteres, separados por vírgulas. Certifique-se de que você não deixou uma vírgula ou aspas em torno de uma cadeia de caracteres.
 
 </dd> <dt>
 
-<span id="tools.u_4_gly"></span><span id="TOOLS.U_4_GLY"></span>**Valor inesperado nos dados do valor**
+<span id="tools.u_4_gly"></span><span id="TOOLS.U_4_GLY"></span>**Valor inesperado nos dados de valor**
 </dt> <dd>
 
 Uma instrução continha informações com um formato ou tamanho diferente do valor esperado para esse parâmetro.
 
 </dd> <dt>
 
-<span id="tools.u_5_gly"></span><span id="TOOLS.U_5_GLY"></span>**Formato de cabeçalho DIB desconhecido**
+<span id="tools.u_5_gly"></span><span id="TOOLS.U_5_GLY"></span>**Formato de header DIB desconhecido**
 </dt> <dd>
 
-O cabeçalho DIB (bitmap independente de dispositivo) não é uma estrutura [**BITMAPCOREHEADER**](/windows/win32/api/wingdi/ns-wingdi-bitmapcoreheader) ou [**BITMAPINFOHEADER**](/previous-versions//dd183376(v=vs.85)) .
+O header DIB (bitmap independente de dispositivo) não é uma estrutura [**BITMAPCOREHEADER**](/windows/win32/api/wingdi/ns-wingdi-bitmapcoreheader) [**ou BITMAPINFOHEADER.**](/previous-versions//dd183376(v=vs.85))
 
 </dd> <dt>
 
 <span id="tools.u_6_gly"></span><span id="TOOLS.U_6_GLY"></span>**Subtipo de menu desconhecido**
 </dt> <dd>
 
-O parâmetro *Item-definições* da instrução de [**menu**](menu-resource.md) pode conter somente instruções [**MenuItem**](menuitem-statement.md) e [**Popup**](popup-resource.md) .
+O *parâmetro item-definitions* da [**instrução MENU**](menu-resource.md) pode conter apenas instruções [**MENUITEM**](menuitem-statement.md) e [**POPUP.**](popup-resource.md)
 
 </dd> <dt>
 
-<span id="tools.u_7_gly"></span><span id="TOOLS.U_7_GLY"></span>**Campo VERSIONINFO não reconhecido; INÍCIO ou vírgula esperado**
+<span id="tools.u_7_gly"></span><span id="TOOLS.U_7_GLY"></span>**Campo VERSIONINFO não recogizado; BEGIN ou vírgula esperada**
 </dt> <dd>
 
-O formato das informações após uma instrução [**VERSIONINFO**](versioninfo-resource.md) está incorreto.
+O formato das informações após uma [**instrução VERSIONINFO**](versioninfo-resource.md) está incorreto.
 
 </dd> </dl>
 

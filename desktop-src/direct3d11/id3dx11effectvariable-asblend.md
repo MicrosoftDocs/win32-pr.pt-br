@@ -17,12 +17,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 87f7e3d09a1299d00482e9a5cfbb75f563d4bba5
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 3fd9f6f76c0e3aa46e176b2f35960196fcc73eb021d4e5a250be4a5b245a5ca4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104989311"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118531598"
 ---
 # <a name="id3dx11effectvariableasblend-method"></a>Método ID3DX11EffectVariable:: asblend
 
@@ -41,7 +41,7 @@ ID3DX11EffectBlendVariable* AsBlend();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **ID3DX11EffectBlendVariable**](id3dx11effectblendvariable.md)\***
 

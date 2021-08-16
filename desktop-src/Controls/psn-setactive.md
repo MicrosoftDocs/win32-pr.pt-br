@@ -3,7 +3,7 @@ title: PSN_SETACTIVE código de notificação (Prsht. h)
 description: Notifica uma página que está prestes a ser ativada. Esse código de notificação é enviado na forma de uma mensagem de notificação do WM \_ .
 ms.assetid: 0cf918b7-9f0d-4dec-8df1-a1d2d8ac6463
 keywords:
-- PSN_SETACTIVE de código de notificação controles do Windows
+- PSN_SETACTIVE código de notificação Windows controles
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1f38db77c1c60ef60ce713d41a6112b42235b79a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 16e7b656f5497065378af87408fa87fc16cf9ca2cef3cc710f52a1cd643c2927
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918697"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118409727"
 ---
 # <a name="psn_setactive-notification-code"></a>\_Código de notificação PSN SETactive
 
@@ -45,7 +45,7 @@ Ponteiro para uma estrutura [**PSHNOTIFY**](/windows/desktop/api/Prsht/ns-prsht-
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna zero para aceitar a ativação ou-1 para ativar a próxima ou a página anterior (dependendo se o usuário clicou no botão **próximo** ou **voltar** ). Para definir a ativação para uma página específica, retorne o identificador de recurso da página.
 
@@ -66,9 +66,9 @@ Para definir o valor de retorno, o procedimento da caixa de diálogo para a pág
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                     |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                               |
-| parâmetro<br/>                   | <dl> <dt>Prsht. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                     |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                               |
+| Cabeçalho<br/>                   | <dl> <dt>Prsht. h</dt> </dl> |
 
 
 

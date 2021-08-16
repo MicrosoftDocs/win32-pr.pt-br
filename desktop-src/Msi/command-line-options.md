@@ -1,21 +1,21 @@
 ---
-description: Opções de linha de comando para msiexec.exe para Windows Installer 3,0 e anteriores. Fornece uma tabela mostrando opções, parâmetros e descrições. Exemplos que mostram como instalar produtos e outras tarefas.
+description: opções de linha de comando para msiexec.exe para Windows Installer 3,0 e anteriores. Fornece uma tabela mostrando opções, parâmetros e descrições. Exemplos que mostram como instalar produtos e outras tarefas.
 ms.assetid: a70d8cc8-af47-4472-aabc-97481d97080d
 title: Opções de Linha de Comando
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 46fe56026c21e4120963c86b4de08decc85b2a58
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 287b5711468217105846a13496a23794235bbcfdfcbd0e79278aaba17e7c0341
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105752052"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118380309"
 ---
 # <a name="command-line-options"></a>Opções de Linha de Comando
 
 O programa executável que interpreta pacotes e instala produtos é Msiexec.exe. Observe que o msiexec também define um nível de erro no retorno que corresponde aos [códigos de erro do sistema](/windows/desktop/Debug/system-error-codes). As opções de linha de comando não diferenciam maiúsculas de minúsculas.
 
-As opções de linha de comando na tabela a seguir estão disponíveis com Windows Installer 3,0 e versões anteriores. As [Opções de Command-Line do instalador padrão](standard-installer-command-line-options.md) também estão disponíveis a partir do Windows Installer 3,0.
+as opções de linha de comando na tabela a seguir estão disponíveis com Windows Installer 3,0 e versões anteriores. as [opções de Command-Line do instalador padrão](standard-installer-command-line-options.md) também estão disponíveis a partir do Windows Installer 3,0.
 
 
 
@@ -61,10 +61,10 @@ As opções de linha de comando na tabela a seguir estão disponíveis com Windo
 <tr class="even">
 <td><strong>/L</strong></td>
 <td>[i | w | e | a | r | u | c | m | o | p | v | x | + |! | *] Arquivo de <em>log</em></td>
-<td>Grava informações de log em um arquivo de log no caminho existente especificado. O caminho para o local do arquivo de log já deve existir. O instalador não cria a estrutura de diretório para o arquivo de log. Sinalizadores indicam quais informações registrar em log. Se nenhum sinalizador for especificado, o padrão será ' iwearmo '.<br/> i-mensagens de status.<br/> w-avisos não fatais.<br/> e-todas as mensagens de erro.<br/> a-inicialização de ações.<br/> r-registros específicos da ação.<br/> solicitações de u-User.<br/> c-parâmetros iniciais da interface do usuário.<br/> m-informações de saída fatal ou de memória insuficiente.<br/> o-mensagens de espaço em disco insuficientes.<br/> p-Propriedades do terminal.<br/> v-saída detalhada.<br/> x-informações adicionais de depuração. <strong>Windows Installer 2,0:</strong> Sem suporte. A opção x está disponível com Windows Installer versão 3.0.3790.2180 e posterior.<br/> <br/> + - Anexar ao arquivo existente.<br/> ! -Libere cada linha para o log.<br/> &quot;*&quot; -Curinga, registra todas as informações, exceto as opções v e x. Para incluir as opções v e x, especifique &quot; /l* VX &quot; .<br/>
+<td>Grava informações de log em um arquivo de log no caminho existente especificado. O caminho para o local do arquivo de log já deve existir. O instalador não cria a estrutura de diretório para o arquivo de log. Sinalizadores indicam quais informações registrar em log. Se nenhum sinalizador for especificado, o padrão será ' iwearmo '.<br/> i-mensagens de status.<br/> w-avisos não fatais.<br/> e-todas as mensagens de erro.<br/> a-inicialização de ações.<br/> r-registros específicos da ação.<br/> solicitações de u-User.<br/> c-parâmetros iniciais da interface do usuário.<br/> m-informações de saída fatal ou de memória insuficiente.<br/> o-mensagens de espaço em disco insuficientes.<br/> p-Propriedades do terminal.<br/> v-saída detalhada.<br/> x-informações adicionais de depuração. <strong>Windows Installer 2,0:</strong> Sem suporte. a opção x está disponível com Windows Installer versão 3.0.3790.2180 e posterior.<br/> <br/> + - Anexar ao arquivo existente.<br/> ! -Libere cada linha para o log.<br/> &quot;*&quot; -Curinga, registra todas as informações, exceto as opções v e x. Para incluir as opções v e x, especifique &quot; /l* VX &quot; .<br/>
 <blockquote>
 [!Note]<br />
-Para obter mais informações sobre todos os métodos que estão disponíveis para definir o modo de log, consulte <a href="normal-logging.md">log normal</a> na seção <a href="windows-installer-logging.md">log de Windows Installer</a>
+para obter mais informações sobre todos os métodos que estão disponíveis para definir o modo de log, consulte <a href="normal-logging.md">log Normal</a> na seção <a href="windows-installer-logging.md">log de Windows Installer</a>
 </blockquote>
 <br/></td>
 </tr>
@@ -91,27 +91,27 @@ O comprimento do <em>nome do arquivo</em> não deve ter mais de oito caracteres.
 <tr class="even">
 <td><strong>/?</strong> ou <strong>/h</strong></td>
 <td> </td>
-<td>Exibe informações de direitos autorais para Windows Installer.<br/></td>
+<td>exibe informações de direitos autorais para Windows Installer.<br/></td>
 </tr>
 <tr class="odd">
 <td><strong>/y</strong></td>
 <td><em>modulo</em></td>
-<td>Chama a função do sistema <strong>DllRegisterServer</strong> para registrar automaticamente os módulos passados na linha de comando. Especifique o caminho completo para a DLL. Por exemplo, para MY_FILE.DLL na pasta atual, você pode usar:<br/> <strong>msiexec/y .\MY_FILE.DLL</strong><br/> Essa opção só é usada para informações de registro que não podem ser adicionadas usando as tabelas de registro do arquivo. msi.<br/></td>
+<td>Chama a função do sistema <strong>DllRegisterServer</strong> para registrar automaticamente os módulos passados na linha de comando. Especifique o caminho completo para a DLL. Por exemplo, para MY_FILE.DLL na pasta atual, você pode usar:<br/> <strong>msiexec/y .\MY_FILE.DLL</strong><br/> Essa opção só é usada para informações de registro que não podem ser adicionadas usando as tabelas de registro do arquivo de .msi.<br/></td>
 </tr>
 <tr class="even">
 <td><strong>/z</strong></td>
 <td><em>modulo</em></td>
-<td>Chama a função de sistema <strong>DllUnregisterServer</strong> para cancelar o registro de módulos passados na linha de comando. Especifique o caminho completo para a DLL. Por exemplo, para MY_FILE.DLL na pasta atual, você pode usar: <br/> <strong>msiexec/z .\MY_FILE.DLL</strong><br/> Essa opção só é usada para informações de registro que não podem ser removidas usando as tabelas de registro do arquivo. msi.<br/></td>
+<td>Chama a função de sistema <strong>DllUnregisterServer</strong> para cancelar o registro de módulos passados na linha de comando. Especifique o caminho completo para a DLL. Por exemplo, para MY_FILE.DLL na pasta atual, você pode usar: <br/> <strong>msiexec/z .\MY_FILE.DLL</strong><br/> Essa opção só é usada para informações de registro que não podem ser removidas usando as tabelas do registro do arquivo .msi.<br/></td>
 </tr>
 <tr class="odd">
 <td><strong>/c</strong></td>
 
-<td>Anuncia uma nova instância do produto. Deve ser usado em conjunto com/t. Disponível a partir da versão Windows Installer que é fornecida com o Windows Server 2003 e o Windows XP com Service Pack 1 (SP1).<br/></td>
+<td>Anuncia uma nova instância do produto. Deve ser usado em conjunto com/t. disponível a partir da versão Windows Installer que é fornecida com o Windows Server 2003 e o Windows XP com Service Pack 1 (SP1).<br/></td>
 </tr>
 <tr class="even">
 <td><strong>opção</strong></td>
 <td><em>ProductCode</em></td>
-<td>Especifica uma instância específica do produto. Usado para identificar uma instância instalada usando o suporte a várias instâncias por meio de transformações de código do produto. Disponível a partir da versão Windows Installer fornecida com o Windows Server 2003 e o Windows XP com SP1. <br/></td>
+<td>Especifica uma instância específica do produto. Usado para identificar uma instância instalada usando o suporte a várias instâncias por meio de transformações de código do produto. disponível a partir da versão Windows Installer fornecida com o Windows Server 2003 e o Windows XP com SP1. <br/></td>
 </tr>
 </tbody>
 </table>

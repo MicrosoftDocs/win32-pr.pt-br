@@ -13,12 +13,12 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 33879fcb5e9435e2245bc3d00a9fab75bf1cbdc5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b0017930bd3cf4c8cba356206cfa2207df04ea9c203018703a5f3064d0abb11b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103826897"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117861578"
 ---
 # <a name="abn_statechange-message"></a>\_Mensagem STATECHANGE do ABN
 
@@ -35,7 +35,7 @@ ABN_STATECHANGE
 
 Esta mensagem não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Sem valor de retorno.
 
@@ -49,7 +49,7 @@ Um AppBar pode usar essa mensagem de notificação para definir seu estado de ac
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                                           |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho XP\]<br/>                                           |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                  |
 | Cabeçalho<br/>                   | <dl> <dt>Shellapi. h</dt> </dl> |
 

@@ -1,9 +1,9 @@
 ---
-title: Função Texture2DArray::GatherAlpha(S,float,int2,int2,int2,int2,uint)
-description: Retorna os componentes alfa dos quatro valores de texel que seriam usados em uma operação de filtragem bi-linear, juntamente com o status de mapeamento de peças. | Função Texture2DArray::GatherAlpha(S,float,int2,int2,int2,int2,uint)
+title: 'Função Texture2DArray:: GatherAlpha (S, float, Int2, Int2, Int2, Int2, uint)'
+description: 'Retorna os componentes alfa dos quatro valores Texel que seriam usados em uma operação de filtragem de bi-linear, juntamente com o status de mapeamento de bloco. | Função Texture2DArray:: GatherAlpha (S, float, Int2, Int2, Int2, Int2, uint)'
 ms.assetid: 1B069708-FC77-4FD0-A264-3AB170F48D58
 keywords:
-- Função GatherAlpha HLSL
+- HLSL da função GatherAlpha
 topic_type:
 - apiref
 api_name:
@@ -20,9 +20,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118788949"
 ---
-# <a name="texture2darraygatheralphasfloatint2int2int2int2uint-function"></a>Função Texture2DArray::GatherAlpha(S,float,int2,int2,int2,int2,uint)
+# <a name="texture2darraygatheralphasfloatint2int2int2int2uint-function"></a>Função Texture2DArray:: GatherAlpha (S, float, Int2, Int2, Int2, Int2, uint)
 
-Retorna os componentes alfa dos quatro valores de texel que seriam usados em uma operação de filtragem bi-linear, juntamente com o status de mapeamento de peças.
+Retorna os componentes alfa dos quatro valores Texel que seriam usados em uma operação de filtragem de bi-linear, juntamente com o status de mapeamento de bloco.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -48,63 +48,63 @@ TemplateType GatherAlpha(
 *S* \[ em\]
 </dt> <dd>
 
-Tipo: **SamplerState**
+Tipo: **samplestate**
 
 O índice de amostra baseado em zero.
 
 </dd> <dt>
 
-*Localização* \[ Em\]
+*Local* \[ do no\]
 </dt> <dd>
 
 Tipo: **float**
 
-As coordenadas de exemplo (u,v).
+As coordenadas de exemplo (u, v).
 
 </dd> <dt>
 
-*Offset1* \[ Em\]
+*Offset1* \[ no\]
 </dt> <dd>
 
-Tipo: **int2**
+Tipo: **Int2**
 
 O primeiro componente de deslocamento aplicado às coordenadas de textura antes da amostragem.
 
 </dd> <dt>
 
-*Offset2* \[ Em\]
+*Offset2* \[ no\]
 </dt> <dd>
 
-Tipo: **int2**
+Tipo: **Int2**
 
 O segundo componente de deslocamento aplicado às coordenadas de textura antes da amostragem.
 
 </dd> <dt>
 
-*Offset3* \[ Em\]
+*Offset3* \[ no\]
 </dt> <dd>
 
-Tipo: **int2**
+Tipo: **Int2**
 
 O terceiro componente de deslocamento aplicado às coordenadas de textura antes da amostragem.
 
 </dd> <dt>
 
-*Offset4* \[ Em\]
+*Offset4* \[ no\]
 </dt> <dd>
 
-Tipo: **int2**
+Tipo: **Int2**
 
 O quarto componente de deslocamento aplicado às coordenadas de textura antes da amostragem.
 
 </dd> <dt>
 
-*Status* \[ out\]
+*Status* \[ do fora\]
 </dt> <dd>
 
 Tipo: **uint**
 
-O status da operação. Você não pode acessar o status diretamente; Em vez disso, passe o status para a [**função intrínseca CheckAccessFullyMapped.**](checkaccessfullymapped.md) **CheckAccessFullyMapped** retornará **TRUE** se todos os valores  da operação de **Exemplo,** **Coletar** ou Carregar correspondente acessarem blocos mapeados em um recurso lado a [lado.](/windows/desktop/direct3d11/direct3d-11-2-features) Se algum valor tiver sido retirado de um tile não mapeado, **CheckAccessFullyMapped** retornará **FALSE.**
+O status da operação. Você não pode acessar o status diretamente; em vez disso, passe o status para a função intrínseca [**CheckAccessFullyMapped**](checkaccessfullymapped.md) . **CheckAccessFullyMapped** retornará **true** se todos os valores da operação de **amostra**, **coleta** ou **carregamento** correspondente acessaram os blocos mapeados em um recurso de bloco ao [lado](/windows/desktop/direct3d11/direct3d-11-2-features). Se qualquer valor tiver sido tirado de um bloco não mapeado, **CheckAccessFullyMapped** retornará **false**.
 
 </dd> </dl>
 
@@ -116,13 +116,13 @@ Um valor de quatro componentes cujo tipo é o mesmo que o tipo de modelo.
 
 ## <a name="remarks"></a>Comentários
 
-As amostras de textura podem ser usadas para interpolação bilinear.
+Os exemplos de textura podem ser usados para interpolação bilinear.
 
 Essa função tem suporte para os seguintes tipos de sombreadores:
 
 
 
-| Vértice | Casco | Domínio | Geometry | Pixel | Computação |
+| Vértice | Envoltória | Domínio | Geometry | 16x16 | Computação |
 |--------|------|--------|----------|-------|---------|
 | x      | x    | x      | x        | x     | x       |
 

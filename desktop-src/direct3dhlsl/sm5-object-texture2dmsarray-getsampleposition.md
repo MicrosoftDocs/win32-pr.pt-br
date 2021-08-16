@@ -1,9 +1,9 @@
 ---
-title: 'Função Texture2DMSArray:: GetSamplePosition'
-description: 'Obtém a posição do exemplo especificado. | Função Texture2DMSArray:: GetSamplePosition'
+title: Função Texture2DMSArray::GetSamplePosition
+description: Obtém a posição do exemplo especificado. | Função Texture2DMSArray::GetSamplePosition
 ms.assetid: e04717be-58b0-4242-87dd-d769834ae1c2
 keywords:
-- HLSL da função GetSamplePosition
+- Função GetSamplePosition HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: ea4d45ef5523c5fa4c9ef080bba6286a050aa12c
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 9da6727120dcb19d9dd51c83d62f85d842036edb2197d33e298259480b248642
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104172868"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118508412"
 ---
-# <a name="texture2dmsarraygetsampleposition-function"></a>Função Texture2DMSArray:: GetSamplePosition
+# <a name="texture2dmsarraygetsampleposition-function"></a>Função Texture2DMSArray::GetSamplePosition
 
 Obtém a posição do exemplo especificado.
 
@@ -36,16 +36,16 @@ float2 GetSamplePosition(
 
 <dl> <dt>
 
-*sampleindex* \[ no\]
+*sampleindex* \[ Em\]
 </dt> <dd>
 
 Tipo: **[ **int**](/windows/desktop/WinProg/windows-data-types)**
 
-O índice de base zero de um local de exemplo.
+O índice baseado em zero de um local de exemplo.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **float2**
 
@@ -57,7 +57,7 @@ Essa função tem suporte para os seguintes tipos de sombreadores:
 
 
 
-| Vértice | Envoltória | Domínio | Geometria | 16x16 | Computação |
+| Vértice | Casco | Domínio | Geometry | Pixel | Computação |
 |--------|------|--------|----------|-------|---------|
 | x      | x    | x      | x        | x     | x       |
 

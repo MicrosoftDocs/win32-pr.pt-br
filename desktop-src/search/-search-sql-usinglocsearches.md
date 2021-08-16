@@ -1,5 +1,5 @@
 ---
-description: o Microsoft Windows Search dá suporte à pesquisa completa de Unicode.
+description: O Microsoft Windows Search dá suporte à pesquisa completa de Unicode.
 ms.assetid: 6df1a078-7ef0-4f02-bd82-83191183bb47
 title: Usando pesquisas localizadas
 ms.topic: article
@@ -13,11 +13,11 @@ ms.locfileid: "118462445"
 ---
 # <a name="using-localized-searches"></a>Usando pesquisas localizadas
 
-o Microsoft Windows Search dá suporte à pesquisa completa de Unicode. Você pode indexar documentos que usam Unicode e criar consultas de pesquisa que usam identificadores e literais Unicode. no entanto, a configuração de idioma de um aplicativo ou do sistema operacional pode ter efeitos distantes sobre como Windows pesquisa funciona.
+O Microsoft Windows Search dá suporte à pesquisa completa de Unicode. Você pode indexar documentos que usam Unicode e criar consultas de pesquisa que usam literais e identificadores Unicode. No entanto, a configuração de idioma de um aplicativo ou do sistema operacional pode ter efeitos abrangentes sobre como o Windows Search funciona.
 
 Esta seção inclui os tópicos a seguir:
 
--   [documento e localidade do sistema Configurações](-search-sql-docandlocalesystemsettings.md)
+-   [Documentação e localização do sistema Configurações](-search-sql-docandlocalesystemsettings.md)
 -   [Especificando idiomas](-search-sql-specifyinglanguages.md)
 
  

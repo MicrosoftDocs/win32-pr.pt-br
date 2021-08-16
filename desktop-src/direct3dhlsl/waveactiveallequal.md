@@ -1,9 +1,9 @@
 ---
 title: Função WaveActiveAllEqual
-description: Retornará true se a expressão for a mesma para cada faixa ativa na onda atual (e, portanto, uniforme entre ela).
+description: Retornará true se a expressão for a mesma para cada pista ativa na onda atual (e, portanto, uniforme em toda a ti).
 ms.assetid: E0A051A8-0ADD-4EC7-8D9A-8820CED9DA9D
 keywords:
-- Função WaveActiveAllEqual HLSL
+- HLSL da função WaveActiveAllEqual
 topic_type:
 - apiref
 api_name:
@@ -22,7 +22,7 @@ ms.locfileid: "118786106"
 ---
 # <a name="waveactiveallequal-function"></a>Função WaveActiveAllEqual
 
-Retornará true se a expressão for a mesma para cada faixa ativa na onda atual (e, portanto, uniforme entre ela).
+Retornará true se a expressão for a mesma para cada pista ativa na onda atual (e, portanto, uniforme em toda a ti).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -48,11 +48,11 @@ A expressão a ser avaliada.
 
 ## <a name="return-value"></a>Valor retornado
 
-True se a expressão for a mesma para cada faixa ativa na onda atual.
+True se a expressão for a mesma para todas as pistas ativas na onda atual.
 
 ## <a name="remarks"></a>Comentários
 
-Essa função tem suporte do modelo de sombreador 6.0 em todos os estágios do sombreador. 
+Essa função tem suporte do modelo de sombreador 6,0 em todos os estágios de sombreador. 
 
 
 
@@ -62,10 +62,10 @@ Essa função tem suporte do modelo de sombreador 6.0 em todos os estágios do s
 
 <dl> <dt>
 
-[Visão geral do Modelo de Sombreador 6](hlsl-shader-model-6-0-features-for-direct3d-12.md)
+[Visão geral do modelo do sombreador 6](hlsl-shader-model-6-0-features-for-direct3d-12.md)
 </dt> <dt>
 
-[Modelo de sombreador 6](shader-model-6-0.md)
+[Modelo do sombreador 6](shader-model-6-0.md)
 </dt> </dl>
 
  

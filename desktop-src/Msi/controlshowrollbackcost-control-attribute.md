@@ -1,5 +1,5 @@
 ---
-description: Esse atributo especifica se os arquivos de backup de redução estão incluídos ou não nos custos exibidos pelo controle VolumeCostList.
+description: Esse atributo especifica se os arquivos de backup de reversão são incluídos nos custos exibidos pelo controle VolumeCostList.
 ms.assetid: a3ed4d8a-170b-4708-afc2-03d2a5b665a3
 title: Atributo de controle ControlShowRollbackCost
 ms.topic: article
@@ -13,11 +13,11 @@ ms.locfileid: "118379921"
 ---
 # <a name="controlshowrollbackcost-control-attribute"></a>Atributo de controle ControlShowRollbackCost
 
-Esse atributo especifica se os arquivos de backup de redução estão incluídos ou não nos custos exibidos pelo [controle VolumeCostList](volumecostlist-control.md).
+Esse atributo especifica se os arquivos de backup de reversão são incluídos nos custos exibidos pelo [controle VolumeCostList](volumecostlist-control.md).
 
-Se esse bit estiver definido e a propriedade [**PROMPTROLLBACKCOST**](promptrollbackcost.md) = P, os arquivos de backup de redução serão incluídos no custo exibido pelo [controle VolumeCostList](volumecostlist-control.md).
+Se esse bit for definido e a propriedade [**PROMPTROLLBACKCOST**](promptrollbackcost.md) = P, os arquivos de backup de reversão serão incluídos no custo exibido pelo [controle VolumeCostList](volumecostlist-control.md).
 
-Se esse bit não estiver definido e a propriedade [**PROMPTROLLBACKCOST**](promptrollbackcost.md) = P, os arquivos de backup de redução não serão incluídos no custo exibido pelo [controle VolumeCostList](volumecostlist-control.md).
+Se esse bit não for definido e a propriedade [**PROMPTROLLBACKCOST**](promptrollbackcost.md) = P, os arquivos de backup de reversão não serão incluídos no custo exibido pelo [controle VolumeCostList](volumecostlist-control.md).
 
 ## <a name="valid-controls"></a>Controles válidos
 
@@ -39,9 +39,9 @@ Se esse bit não estiver definido e a propriedade [**PROMPTROLLBACKCOST**](promp
 
 Esse atributo de controle será ignorado se [**PROMPTROLLBACKCOST**](promptrollbackcost.md) = D ou F.
 
-Se [**PROMPTROLLBACKCOST**](promptrollbackcost.md) = F, o custo da redução, os arquivos de backup serão incluídos.
+Se [**PROMPTROLLBACKCOST**](promptrollbackcost.md) = F, o custo da reversão, os arquivos de backup serão incluídos.
 
-Se [**PROMPTROLLBACKCOST**](promptrollbackcost.md) = D ou [**propriedade DISABLEROLLBACK**](-disablerollback.md) = 1, o custo da redução, os arquivos de backup não serão incluídos.
+Se [**PROMPTROLLBACKCOST**](promptrollbackcost.md) = D ou [**DISABLEROLLBACK**](-disablerollback.md) Propriedade = 1, o custo da reversão, os arquivos de backup não serão incluídos.
 
  
 

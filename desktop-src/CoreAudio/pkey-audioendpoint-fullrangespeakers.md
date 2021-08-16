@@ -40,7 +40,7 @@ Por exemplo, se um dispositivo de ponto de extremidade de áudio direcionar um c
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                           |
 | Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                     |
-| parâmetro<br/>                   | <dl> <dt>Mmdeviceapi. h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Mmdeviceapi. h</dt> </dl> |
 
 
 

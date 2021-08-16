@@ -1,9 +1,9 @@
 ---
-title: Mensagem de MCIWNDM_GETZOOM (VFW. h)
-description: A \_ mensagem getzoom do MCIWNDM recupera o valor de zoom atual usado por um dispositivo MCI. Você pode enviar essa mensagem explicitamente ou usando a macro MCIWndGetZoom.
+title: MCIWNDM_GETZOOM mensagem (Vfw.h)
+description: A mensagem GETZOOM MCIWNDM recupera o valor de \_ zoom atual usado por um dispositivo MCI. Você pode enviar essa mensagem explicitamente ou usando a macro MCIWndGetZoom.
 ms.assetid: 92db8df2-515a-4616-a0f5-245d466ba379
 keywords:
-- mensagem de MCIWNDM_GETZOOM Windows multimídia
+- MCIWNDM_GETZOOM mensagem Windows Multimídia
 topic_type:
 - apiref
 api_name:
@@ -21,9 +21,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118374137"
 ---
-# <a name="mciwndm_getzoom-message"></a>\_Mensagem GETzoom do MCIWNDM
+# <a name="mciwndm_getzoom-message"></a>Mensagem GETZOOM MCIWNDM \_
 
-A **mensagem \_ Getzoom do MCIWNDM** recupera o valor de zoom atual usado por um dispositivo MCI. Você pode enviar essa mensagem explicitamente ou usando a macro [**MCIWndGetZoom**](/windows/desktop/api/Vfw/nf-vfw-mciwndgetzoom) .
+A **mensagem \_ GETZOOM MCIWNDM** recupera o valor de zoom atual usado por um dispositivo MCI. Você pode enviar essa mensagem explicitamente ou usando a macro [**MCIWndGetZoom.**](/windows/desktop/api/Vfw/nf-vfw-mciwndgetzoom)
 
 
 ```C++
@@ -36,11 +36,11 @@ lParam = 0;
 
 ## <a name="return-value"></a>Valor Retornado
 
-Retorna os valores mais recentes usados com [**MCIWNDM \_ setZoom**](mciwndm-setzoom.md).
+Retorna os valores mais recentes usados com [**MCIWNDM \_ SETZOOM.**](mciwndm-setzoom.md)
 
 ## <a name="remarks"></a>Comentários
 
-Um valor de retorno de 100 indica que a imagem não está ampliada. Um valor de 200 indica que a imagem é ampliada para duas vezes seu tamanho original. Um valor de 50 indica que a imagem é reduzida para metade do tamanho original.
+Um valor de retorno de 100 indica que a imagem não foi ampliada. Um valor de 200 indica que a imagem é ampliada para duas vezes seu tamanho original. Um valor de 50 indica que a imagem é reduzida para metade de seu tamanho original.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,7 +50,7 @@ Um valor de retorno de 100 indica que a imagem não está ampliada. Um valor de 
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                       |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                             |
-| Cabeçalho<br/>                   | <dl> <dt>VFW. h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Vfw.h</dt> </dl> |
 
 
 
@@ -61,7 +61,7 @@ Um valor de retorno de 100 indica que a imagem não está ampliada. Um valor de 
 [**MCIWndGetZoom**](/windows/desktop/api/Vfw/nf-vfw-mciwndgetzoom)
 </dt> <dt>
 
-[**MCIWNDM \_ SETzoom**](mciwndm-setzoom.md)
+[**MCIWNDM \_ SETZOOM**](mciwndm-setzoom.md)
 </dt> </dl>
 
  

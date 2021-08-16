@@ -1,9 +1,9 @@
 ---
-title: Mensagem de CDM_GETFOLDERIDLIST (Commdlg. h)
-description: Recupera o endereço da lista de identificadores de item correspondente à pasta em que uma caixa de diálogo abrir ou salvar no estilo do Explorer está aberta no momento.
+title: CDM_GETFOLDERIDLIST mensagem (Commdlg.h)
+description: Recupera o endereço da lista de identificadores de item correspondente à pasta que uma caixa de diálogo Abrir ou Salvar como no estilo Explorer tem aberta no momento.
 ms.assetid: 9d2d2c35-ff1d-43de-ab0b-c96e0f1e9e24
 keywords:
-- Caixas de diálogo de CDM_GETFOLDERIDLIST mensagem
+- CDM_GETFOLDERIDLIST caixa de diálogo de mensagem
 topic_type:
 - apiref
 api_name:
@@ -21,11 +21,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118786188"
 ---
-# <a name="cdm_getfolderidlist-message"></a>\_Mensagem CDM GETFOLDERIDLIST
+# <a name="cdm_getfolderidlist-message"></a>Mensagem \_ GETFOLDERIDLIST do CDM
 
-\[a partir do Windows Vista, as caixas de diálogo **abrir** e **salvar como** comuns foram substituídas pela [caixa de diálogo de Item comum](../shell/common-file-dialog.md). Recomendamos que você use a API de caixa de diálogo de item comum em vez dessas caixas de diálogo da biblioteca de caixas de diálogo comuns.\]
+\[Começando com Windows Vista,  as  caixas de diálogo Abrir e Salvar como comuns foram superadas pela caixa [de diálogo Item Comum](../shell/common-file-dialog.md). Recomendamos que você use a API de Diálogo de Item Comum em vez dessas caixas de diálogo da Biblioteca de Caixas de Diálogo Comuns.\]
 
-Recupera o endereço da lista de identificadores de item correspondente à pasta em que uma caixa de diálogo **abrir** ou **salvar** no estilo do Explorer está aberta no momento. A caixa de diálogo deve ter sido criada com o sinalizador **OFN \_ Explorer** ; caso contrário, a mensagem falhará.
+Recupera o endereço da lista de identificadores de item  correspondente à pasta que uma caixa de diálogo Abrir ou Salvar **como** no estilo Explorer tem aberta no momento. A caixa de diálogo deve ter sido criada com o **sinalizador OFN \_ EXPLORER;** caso contrário, a mensagem falhará.
 
 
 ```C++
@@ -43,7 +43,7 @@ Recupera o endereço da lista de identificadores de item correspondente à pasta
 *wParam* 
 </dt> <dd>
 
-O tamanho, em bytes, do buffer de *lParam* .
+O tamanho, em bytes, do buffer *lParam.*
 
 </dd> <dt>
 
@@ -56,7 +56,7 @@ Um ponteiro para o buffer que recebe a lista de identificadores de item.
 
 ## <a name="return-value"></a>Valor retornado
 
-Se a mensagem tiver sucesso, o valor de retorno será o tamanho, em bytes, da lista de identificadores de item. Esse é o número de bytes copiados para o buffer ou o tamanho de buffer necessário se o buffer for muito pequeno.
+Se a mensagem for bem-sucedida, o valor de retorno será o tamanho, em bytes, da lista de identificadores de item. Esse é o número de bytes copiados para o buffer ou o tamanho do buffer necessário se o buffer for muito pequeno.
 
 Se ocorrer um erro, o valor de retorno será menor que zero.
 
@@ -76,7 +76,7 @@ int CommDlg_OpenSave_GetFolderIDList(hwnd, lparam, wparam);
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                                               |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                     |
-| Cabeçalho<br/>                   | <dl> <dt>Commdlg. h (incluir Windows. h)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Commdlg.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -87,18 +87,18 @@ int CommDlg_OpenSave_GetFolderIDList(hwnd, lparam, wparam);
 **Referência**
 </dt> <dt>
 
-[**GetOpenFileName**](/windows/desktop/api/Commdlg/nf-commdlg-getopenfilenamea)
+[**Getopenfilename**](/windows/desktop/api/Commdlg/nf-commdlg-getopenfilenamea)
 </dt> <dt>
 
-[**GetSaveFileName**](/windows/desktop/api/Commdlg/nf-commdlg-getsavefilenamea)
+[**Getsavefilename**](/windows/desktop/api/Commdlg/nf-commdlg-getsavefilenamea)
 </dt> <dt>
 
-[**DA OPENFILENAME**](/windows/win32/api/commdlg/ns-commdlg-openfilenamea)
+[**Openfilename**](/windows/win32/api/commdlg/ns-commdlg-openfilenamea)
 </dt> <dt>
 
-**Conceitua**
+**Conceitual**
 </dt> <dt>
 
-[Biblioteca de caixa de diálogo comum](common-dialog-box-library.md)
+[Biblioteca de caixas de diálogo comuns](common-dialog-box-library.md)
 </dt> </dl>
 

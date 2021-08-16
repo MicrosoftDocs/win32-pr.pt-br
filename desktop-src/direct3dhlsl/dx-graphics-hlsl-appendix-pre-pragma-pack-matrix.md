@@ -1,9 +1,9 @@
 ---
-title: diretiva pack_matrix pragma
-description: Diretiva Pragma que especifica o alinhamento de empacotamento para matrizes.
+title: pack_matrix diretiva pragma
+description: Diretiva pragma que especifica o alinhamento de empacotamento para matrizes.
 ms.assetid: e77dc007-d915-4d78-9fff-d44d4999e4da
 keywords:
-- pack_matrix diretiva pragma HLSL
+- pack_matrix HLSL de diretiva pragma
 topic_type:
 - apiref
 api_name:
@@ -20,13 +20,13 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118514779"
 ---
-# <a name="pack_matrix-pragma-directive"></a>Diretiva \_ de pragma de matriz de pacotes
+# <a name="pack_matrix-pragma-directive"></a>Diretiva de pragma de matriz de pacote \_
 
-Diretiva Pragma que especifica o alinhamento de empacotamento para matrizes.
+Diretiva pragma que especifica o alinhamento de empacotamento para matrizes.
 
 
 
-| \#pragma pack \_ matrix( *alignment* ) |
+| \#\_matriz de pragma Pack ( *alinhamento* ) |
 |--------------------------------------|
 
 
@@ -50,7 +50,7 @@ Diretiva Pragma que especifica o alinhamento de empacotamento para matrizes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><span id="alignment"></span><span id="ALIGNMENT"></span><em>Alinhamento</em><br/></td>
+<td><span id="alignment"></span><span id="ALIGNMENT"></span><em>sintonia</em><br/></td>
 <td>Alinhamento a ser definido para matrizes. Esse parâmetro pode usar um dos valores listados na tabela a seguir. <br/> 
 <table>
 <thead>
@@ -62,11 +62,11 @@ Diretiva Pragma que especifica o alinhamento de empacotamento para matrizes.
 <tbody>
 <tr class="odd">
 <td>column_major</td>
-<td>Padrão. Define o alinhamento do empacotamento de matriz para a coluna principal.</td>
+<td>Padrão. Define o alinhamento da embalagem de matriz para a coluna principal.</td>
 </tr>
 <tr class="even">
 <td>row_major</td>
-<td>Define o alinhamento do empacotamento de matriz para a linha principal.</td>
+<td>Define o alinhamento da embalagem de matriz para a linha principal.</td>
 </tr>
 </tbody>
 </table>
@@ -82,7 +82,7 @@ Diretiva Pragma que especifica o alinhamento de empacotamento para matrizes.
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo a seguir define o alinhamento de empacotamento de matriz para a linha principal.
+O exemplo a seguir define o alinhamento da embalagem de matriz para a linha principal.
 
 
 ```

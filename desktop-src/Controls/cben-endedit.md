@@ -1,9 +1,9 @@
 ---
-title: CBEN_ENDEDIT código de notificação (commctrl. h)
-description: Enviado quando o usuário concluiu uma operação na caixa de edição ou selecionou um item na lista suspensa do controle. Esse código de notificação é enviado na forma de uma mensagem de notificação do WM \_ .
+title: CBEN_ENDEDIT de notificação (Commctrl.h)
+description: Enviado quando o usuário concluiu uma operação dentro da caixa de edição ou selecionou um item na lista de listas listadas do controle. Esse código de notificação é enviado na forma de uma mensagem WM \_ NOTIFY.
 ms.assetid: b6b50951-7304-4499-b57b-a5b592de2190
 keywords:
-- CBEN_ENDEDIT código de notificação Windows controles
+- CBEN_ENDEDIT de notificação Windows Controles
 topic_type:
 - apiref
 api_name:
@@ -23,9 +23,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118413946"
 ---
-# <a name="cben_endedit-notification-code"></a>Código de notificação do CBEN \_ ENDEDIT
+# <a name="cben_endedit-notification-code"></a>Código de \_ notificação CBEN ENDEDIT
 
-Enviado quando o usuário concluiu uma operação na caixa de edição ou selecionou um item na lista suspensa do controle. Esse código de notificação é enviado na forma de uma mensagem de [**\_ notificação do WM**](wm-notify.md) .
+Enviado quando o usuário concluiu uma operação dentro da caixa de edição ou selecionou um item na lista de listas listadas do controle. Esse código de notificação é enviado na forma de uma mensagem [**WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -43,13 +43,13 @@ CBEN_ENDEDIT
 *lParam* 
 </dt> <dd>
 
-Um ponteiro para uma estrutura [**NMCBEENDEDIT**](/windows/desktop/api/Commctrl/ns-commctrl-nmcbeendedita) que contém informações sobre como o usuário concluiu a operação de edição.
+Um ponteiro para uma [**estrutura NMCBEENDEDIT**](/windows/desktop/api/Commctrl/ns-commctrl-nmcbeendedita) que contém informações sobre como o usuário concluiu a operação de edição.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor retornado
 
-**False** para aceitar o código de notificação e permitir que o controle exiba o item selecionado; caso contrário, **true**.
+**FALSE** para aceitar o código de notificação e permitir que o controle exibir o item selecionado; caso contrário, **TRUE.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -57,10 +57,10 @@ Um ponteiro para uma estrutura [**NMCBEENDEDIT**](/windows/desktop/api/Commctrl/
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
-| Nomes Unicode e ANSI<br/>   | **CBEN \_ ENDEDITW** (Unicode) e **CBEN \_ endediçãoa** (ANSI)<br/>                 |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Nomes Unicode e ANSI<br/>   | **CBEN \_ ENDEDITW** (Unicode) e **CBEN \_ ENDEDITA** (ANSI)<br/>                 |
 
 
 

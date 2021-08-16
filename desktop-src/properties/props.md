@@ -1,5 +1,5 @@
 ---
-description: Esta seção descreve as propriedades individuais dentro do Windows de propriedades que podem ser definidas em Windows arquivos.
+description: esta seção descreve as propriedades individuais dentro do Windows sistema de propriedades que podem ser definidas em arquivos Windows.
 ms.assetid: 7532E58F-BBF2-4e36-9D81-C8E04B92CB7C
 title: Propriedades do Windows
 ms.topic: article
@@ -13,7 +13,7 @@ ms.locfileid: "118463921"
 ---
 # <a name="windows-properties"></a>Propriedades do Windows
 
-Esta seção descreve as propriedades individuais dentro do Windows de propriedades que podem ser definidas em Windows arquivos.
+esta seção descreve as propriedades individuais dentro do Windows sistema de propriedades que podem ser definidas em arquivos Windows.
 
 -   [Áudio](audio-bumper.md)
 -   [Calendário](calendar-bumper.md)
@@ -37,14 +37,14 @@ Esta seção descreve as propriedades individuais dentro do Windows de proprieda
 -   [Música](music-bumper.md)
 -   [Observação](note-bumper.md)
 -   [Foto](photo-bumper.md)
--   [PropGroup](propgroup-bumper.md)
+-   [Propr](propgroup-bumper.md)
 -   [PropList](proplist-bumper.md)
 -   [RecordedTV](recordedtv-bumper.md)
 -   [Segurança](security-buffer.md)
 -   [Pesquisar](search-bumper.md)
 -   [Shell](shell-bumper.md)
 -   [Software](software-bumper.md)
--   [Suplementar](supplemental-bumper.md)
+-   [Complementares](supplemental-bumper.md)
 -   [Sincronizar](sync-bumper.md)
 -   [Tarefa](task-bumper.md)
 -   [Vídeo](video-bumper.md)
@@ -52,7 +52,7 @@ Esta seção descreve as propriedades individuais dentro do Windows de proprieda
 
 ## <a name="additional-resources"></a>Recursos adicionais
 
-Para obter mais informações sobre o uso de propriedades canônicas em consultas, consulte [Using Advanced Query Syntax Programmatically](../search/-search-3x-advancedquerysyntax.md).
+Para obter mais informações sobre o uso de propriedades canônicas em consultas, consulte [usando a sintaxe de consulta avançada programaticamente](../search/-search-3x-advancedquerysyntax.md).
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

@@ -4,16 +4,16 @@ description: IAgentNotifySink indicador
 ms.assetid: 172042af-a524-4ea4-955d-4e3dee079344
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1febedfc962904544a49b8621812d0518026b459
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 02562b7cbf42c3445a25edc5071476da1b2d8dc53d80923ad875fddf09e5d31b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103635505"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118477092"
 ---
 # <a name="iagentnotifysinkbookmark"></a>IAgentNotifySink:: indicador
 
-\[O Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
+\[o Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
 
 ``` syntax
 HRESULT Bookmark(
@@ -41,9 +41,9 @@ Quando você inclui marcas de indicador em um método de [**fala**](speak-method
 [**IAgentCharacter:: falar**](iagentcharacter--speak.md), [marcas de saída de fala do Microsoft Agent](microsoft-agent-speech-output-tags.md)
 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -13,7 +13,7 @@ ms.locfileid: "118378564"
 ---
 # <a name="disablepatchuninstall"></a>DisablePatchUninstall
 
-Se essa política de sistema por [computador](system-policy.md) for definida como 1, os patches não poderão ser removidos do computador por um usuário ou um administrador. O Windows instalador do Windows ainda pode remover um patch que não é mais aplicável a um produto. Se essa política não estiver definida, um usuário poderá remover um patch do computador somente se o usuário tiver privilégios para remover o patch. Isso pode depender se o usuário é um administrador, se as configurações de política [DisableMsi](disablemsi.md) e [AlwaysInstallElevated](alwaysinstallelevated.md) estão definidas e se o patch foi instalado em um contexto gerenciado por usuário, não gerenciado por usuário ou por computador.
+Se essa política de sistema por [computador](system-policy.md) for definida como 1, os patches não poderão ser removidos do computador por um usuário ou um administrador. O Windows instalador de dados ainda pode remover um patch que não é mais aplicável a um produto. Se essa política não estiver definida, um usuário poderá remover um patch do computador somente se o usuário tiver privilégios para remover o patch. Isso pode depender se o usuário é um administrador, se as configurações de política [DisableMsi](disablemsi.md) e [AlwaysInstallElevated](alwaysinstallelevated.md) estão definidas e se o patch foi instalado em um contexto gerenciado por usuário, não gerenciado por usuário ou por computador.
 
 ## <a name="registry-key"></a>Chave do Registro
 

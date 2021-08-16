@@ -1,9 +1,9 @@
 ---
-title: 'Texture2D:: MIPS. Função Operator'
-description: 'Retorna uma variável de recurso somente leitura. | Texture2D:: MIPS. Função Operator'
+title: Texture2D::mips. Função de operador
+description: Retorna uma variável de recurso somente leitura. | Texture2D::mips. Função de operador
 ms.assetid: 201996a7-741f-4457-ab77-9cd653f3682b
 keywords:
-- seqüencia. Função Operator HLSL
+- Mips. Função de operador HLSL
 topic_type:
 - apiref
 api_name:
@@ -20,7 +20,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118789492"
 ---
-# <a name="texture2dmipsoperator----function"></a>Texture2D:: MIPS. Função Operator
+# <a name="texture2dmipsoperator----function"></a>Texture2D::mips. Função de operador
 
 Retorna uma variável de recurso somente leitura.
 
@@ -37,16 +37,16 @@ R mips.Operator[][](
 
 <dl> <dt>
 
-*mipSlice* \[ no\]
+*mipSlice* \[ Em\]
 </dt> <dd>
 
 Tipo: **uint**
 
-O índice de fatia MIP.
+O índice de fatia mip.
 
 </dd> <dt>
 
-*pos* \[ no\]
+*pos* \[ Em\]
 </dt> <dd>
 
 Tipo: **uint2**
@@ -80,7 +80,7 @@ Essa função tem suporte para os seguintes tipos de sombreadores:
 
 
 
-| Vértice | Envoltória | Domínio | Geometry | 16x16 | Computação |
+| Vértice | Casco | Domínio | Geometry | Pixel | Computação |
 |--------|------|--------|----------|-------|---------|
 | x      | x    | x      | x        | x     | x       |
 

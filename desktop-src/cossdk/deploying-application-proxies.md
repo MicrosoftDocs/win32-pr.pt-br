@@ -22,7 +22,7 @@ Por meio da ferramenta administrativa serviços de componentes, você pode expor
 
  
 
-Proxies de aplicativo gerados pelo COM+ são Windows de instalação do Instalador. Após a instalação, os proxies do aplicativo aparecem no painel de controle Adicionar/Remover Programas do computador cliente (a menos que o arquivo .msi seja modificado usando uma ferramenta de Windows de instalação).
+Proxies de aplicativo gerados pelo COM+ são Windows de instalação do instalador. Após a instalação, os proxies do aplicativo aparecem no painel de controle Adicionar/Remover Programas do computador cliente (a menos que o arquivo .msi seja modificado usando uma ferramenta de Windows de instalação).
 
 ## <a name="remote-access-via-application-proxies"></a>Acesso remoto por meio de proxies de aplicativo
 
@@ -38,10 +38,10 @@ Ao gerar um proxy de aplicativo, o COM+ fornece automaticamente as seguintes inf
 
 ## <a name="installing-application-proxies-on-other-operating-systems"></a>Instalando proxies de aplicativo em outros sistemas operacionais
 
-Ao contrário dos aplicativos de servidor COM+, os proxies de aplicativo podem ser instalados em qualquer sistema operacional que dá suporte ao DCOM (e Windows Installer). Em computadores que não estão executando o COM+, apenas o subconjunto de informações necessário para a comunicação de comunicação comunicação de DCOM está instalado. Essas informações são instaladas no Windows (usando as chaves HKEY \_ CLASSES \_ ROOT, APPID/CLSID).
+Ao contrário dos aplicativos de servidor COM+, os proxies de aplicativo podem ser instalados em qualquer sistema operacional que dá suporte ao DCOM (e Windows Installer). Em computadores que não estão executando o COM+, apenas o subconjunto de informações necessário para a comunicação de comunicação comunicação de DCOM está instalado. Essas informações são instaladas no registro Windows (usando as chaves HKEY \_ CLASSES \_ ROOT, APPID/CLSID).
 
 > [!Note]  
-> Ao instalar um proxy de aplicativo (.msi arquivo) em computadores que não executam o COM+, é necessário ter um instalador Windows em execução nesses computadores. É recomendável que os desenvolvedores Windows arquivo redistribuível do Windows (instmsi.exe) juntamente com o arquivo .msi aplicativo. Isso garantirá que os administradores do sistema tenham Windows instalador disponível ao implantar proxies de aplicativo em clientes que não estão executando COM+.
+> Ao instalar um proxy de aplicativo (.msi arquivo) em computadores que não executam o COM+, é necessário ter um instalador Windows em execução nesses computadores. É recomendável que os desenvolvedores Windows arquivo instmsi.exe redistribuível do instmsi.exe) juntamente com o arquivo .msi aplicativo. Isso garantirá que os administradores do sistema tenham Windows instalador disponível ao implantar proxies de aplicativo em clientes que não estão executando COM+.
 
  
 

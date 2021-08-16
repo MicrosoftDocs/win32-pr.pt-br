@@ -1,11 +1,11 @@
 ---
-title: Atributo ms-TPM-Tpm-Information-For-Computer
-description: Esse atributo vincula um objeto Computer a um objeto TPM.
+title: ms-TPM-TPM-Information-atributo for-Computer
+description: Esse atributo vincula um objeto de computador a um objeto TPM.
 ms.assetid: 6b0711a6-ef7f-4afa-9bea-e09515b56882
 ms.tgt_platform: multiple
 keywords:
-- Ms-TPM-Tpm-Information-For-Computer atributo AD Schema
-- Esquema do AD do atributo msTPM-TpmInformationForComputer
+- ms-TPM-TPM-Information-for-Computer atributo AD Schema
+- Esquema de AD do atributo msTPM-TpmInformationForComputer
 topic_type:
 - apiref
 api_name:
@@ -21,22 +21,22 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118424885"
 ---
-# <a name="ms-tpm-tpm-information-for-computer-attribute"></a>Atributo ms-TPM-Tpm-Information-For-Computer
+# <a name="ms-tpm-tpm-information-for-computer-attribute"></a>ms-TPM-TPM-Information-atributo for-Computer
 
-Esse atributo vincula um objeto Computer a um objeto TPM.
+Esse atributo vincula um objeto de computador a um objeto TPM.
 
 
 
 | Entrada | Valor |
 |-------------------|-----------------------------------------|
-| CN                | ms-TPM-Tpm-Information-for-Computer     |
-| Ldap-Display-Name | msTPM-TpmInformationForComputer         |
+| CN                | ms-TPM-TPM-Information-for-Computer     |
+| LDAP-Display-Name | msTPM-TpmInformationForComputer         |
 | Tamanho              | \-                                      |
 | Privilégio de atualização  | \-                                      |
 | Frequência de atualização  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.2109                 |
-| System-Id-Guid    | ea1b7b93-5e48-46d5-bc6c-4df4fda78a35    |
-| Syntax            | [**Object(DS-DN)**](s-object-ds-dn.md) |
+| System-ID-GUID    | ea1b7b93-5e48-46d5-bc6c-4df4fda78a35    |
+| Syntax            | [**Objeto (DS-DN)**](s-object-ds-dn.md) |
 
 
 
@@ -53,10 +53,10 @@ Esse atributo vincula um objeto Computer a um objeto TPM.
 | ID do link                | 2182                                      |
 | MAPI-Id                | \-                                        |
 | System-Only            | Falso                                     |
-| Tem valor único       | Verdadeiro                                      |
+| É de valor único       | Verdadeiro                                      |
 | É indexado             | Falso                                     |
-| No Catálogo Global      | Falso                                     |
-| Descritor de segurança NT | O:BAG:BAD:S:                              |
+| No catálogo global      | Falso                                     |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                              |
 | Range-Lower            | \-                                        |
 | Range-Upper            | \-                                        |
 | Search-Flags           | 0x00000010                                |

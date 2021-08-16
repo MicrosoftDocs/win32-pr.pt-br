@@ -2,7 +2,7 @@
 description: A classe CIM \_ OperatingSystem expõe os métodos a seguir.
 ms.assetid: FFF4336E-20CD-486C-B85A-FC44A697BCEC
 ms.tgt_platform: multiple
-title: Métodos CIM_OperatingSystem de CIM_OperatingSystem
+title: Métodos CIM_OperatingSystem dados
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 94dbc8fccc44906d52bcef1a8750a7039b8b45fe43f5776366100976f2b25c14
@@ -17,7 +17,7 @@ ms.locfileid: "118422177"
 A [**classe CIM \_ OperatingSystem**](cim-operatingsystem.md) expõe os métodos a seguir.
 
 > [!IMPORTANT]
-> As classes CIM (Distributed Management Task Force) modelo CIM DMTF são as classes pai nas quais as classes WMI são criadas. Atualmente, o WMI dá suporte apenas aos esquemas de versão [do CIM 2.x.](https://dmtf.org/standards/cim/schemas)
+> As classes CIM (Distributed Management Task Force) do DMTF (Distributed Management Task Force) modelo CIM são as classes pai nas quais as classes WMI são criadas. Atualmente, o WMI dá suporte apenas aos esquemas de versão [do CIM 2.x.](https://dmtf.org/standards/cim/schemas)
 
  
 

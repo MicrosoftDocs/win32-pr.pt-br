@@ -1,5 +1,5 @@
 ---
-description: A classe WMI de associação Win32 DeviceBus relaciona um barramento \_ de sistema e um dispositivo lógico usando o barramento. Essa classe é usada para descobrir quais dispositivos estão em qual barramento.
+description: A classe WMI de associação Win32 DeviceBus relaciona um barramento de sistema e \_ um dispositivo lógico usando o barramento. Essa classe é usada para descobrir quais dispositivos estão em qual barramento.
 ms.assetid: 2d7d83a5-c058-40c0-aab3-7700f4067a16
 ms.tgt_platform: multiple
 title: Win32_DeviceBus classe

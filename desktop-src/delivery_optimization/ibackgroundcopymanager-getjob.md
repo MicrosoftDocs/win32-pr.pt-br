@@ -1,5 +1,5 @@
 ---
-title: Método GetJob IBackgroundCopyManager (Deliveryoptimization.h)
+title: Método IBackgroundCopyManager GetJob (Deliveryoptimization. h)
 description: Recupera um trabalho especificado da fila de transferência. Normalmente, seu aplicativo persiste o identificador de trabalho, para que você possa recuperar posteriormente o trabalho da fila.
 ms.assetid: ED551A6B-66C7-47E9-93DA-E231BD637522
 keywords:
@@ -24,7 +24,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118542284"
 ---
-# <a name="ibackgroundcopymanagergetjob-method"></a>Método IBackgroundCopyManager::GetJob
+# <a name="ibackgroundcopymanagergetjob-method"></a>Método IBackgroundCopyManager:: GetJob
 
 Recupera um trabalho especificado da fila de transferência. Normalmente, seu aplicativo persiste o identificador de trabalho, para que você possa recuperar posteriormente o trabalho da fila.
 
@@ -44,29 +44,29 @@ HRESULT GetJob(
 
 <dl> <dt>
 
-*JobID* \[ Em\]
+*JobID* \[ no\]
 </dt> <dd>
 
-Identifica o trabalho a ser recuperado da fila de transferência. O [**método CreateJob**](ibackgroundcopymanager-createjob.md) retorna o identificador de trabalho.
+Identifica o trabalho a ser recuperado da fila de transferência. O método [**CreateJob**](ibackgroundcopymanager-createjob.md) retorna o identificador do trabalho.
 
 </dd> <dt>
 
-*ppJob* \[ out\]
+*ppJob* \[ fora\]
 </dt> <dd>
 
-Um ponteiro de interface [**IBackgroundCopyJob**](ibackgroundcopyjob-.md) para o trabalho especificado por *JobID.* Quando terminar, libere *ppJob.*
+Um ponteiro de interface [**método ibackgroundcopyjob**](ibackgroundcopyjob-.md) para o trabalho especificado por *JobID*. Quando terminar, libere *ppJob*.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor retornado
 
-Esse método retorna os seguintes **valores HRESULT,** bem como outros.
+Esse método retorna os valores **HRESULT** a seguir, bem como outros.
 
 
 
 | Código de retorno                                                                                      | Descrição                                                        |
 |--------------------------------------------------------------------------------------------------|--------------------------------------------------------------------|
-| <dl> <dt>S_OK****</dt> </dl>         | O trabalho foi recuperado com êxito da fila de transferência.<br/> |
+| <dl> <dt>S_OK * * * *</dt> </dl>         | O trabalho foi recuperado com êxito da fila de transferência.<br/> |
 | <dl> <dt>**DO_E_NOT_FOUND**</dt> </dl> | O trabalho não foi encontrado na fila.<br/>                     |
 | <dl> <dt>**E_ACCESSDENIED**</dt> </dl>   | O usuário não tem permissão para recuperar o trabalho.<br/>      |
 
@@ -80,11 +80,11 @@ Esse método retorna os seguintes **valores HRESULT,** bem como outros.
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 10, versão 1709 somente para \[ aplicativos da área de trabalho\]<br/>                                           |
-| Servidor mínimo com suporte<br/> | Windows Servidor, versão 1709 somente \[ aplicativos da área de trabalho\]<br/>                                       |
-| parâmetro<br/>                   | <dl> <dt>Deliveryoptimization.h</dt> </dl>   |
-| Idl<br/>                      | <dl> <dt>DeliveryOptimization.idl</dt> </dl> |
-| Biblioteca<br/>                  | <dl> <dt>Dosvc.lib</dt> </dl>                |
+| Cliente mínimo com suporte<br/> | Windows 10, \[ somente aplicativos da área de trabalho da versão 1709\]<br/>                                           |
+| Servidor mínimo com suporte<br/> | Windows Servidor, versão 1709 \[ aplicativos da área de trabalho\]<br/>                                       |
+| Cabeçalho<br/>                   | <dl> <dt>Deliveryoptimization. h</dt> </dl>   |
+| INSERI<br/>                      | <dl> <dt>DeliveryOptimization. idl</dt> </dl> |
+| Biblioteca<br/>                  | <dl> <dt>Dosvc. lib</dt> </dl>                |
 | DLL<br/>                      | <dl> <dt>Dosvc.dll</dt> </dl>                |
 | IID<br/>                      | IID_IBackgroundCopyManager é definido como 5CE34C0D-0DC9-4C1F-897C-DAA1B78CEE7C<br/>           |
 
@@ -97,13 +97,13 @@ Esse método retorna os seguintes **valores HRESULT,** bem como outros.
 [**IBackgroundCopyManager**](ibackgroundcopymanager.md)
 </dt> <dt>
 
-[**IBackgroundCopyJob**](ibackgroundcopyjob-.md)
+[**Método ibackgroundcopyjob**](ibackgroundcopyjob-.md)
 </dt> <dt>
 
-[**IBackgroundCopyJob::GetId**](ibackgroundcopyjob-getid.md)
+[**Método ibackgroundcopyjob:: GetId**](ibackgroundcopyjob-getid.md)
 </dt> <dt>
 
-[**IBackgroundCopyManager::CreateJob**](ibackgroundcopymanager-createjob.md)
+[**IBackgroundCopyManager:: CreateJob**](ibackgroundcopymanager-createjob.md)
 </dt> </dl>
 
  

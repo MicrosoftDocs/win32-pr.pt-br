@@ -1,7 +1,7 @@
 ---
-description: Especifica o tipo de conversão análoga a digital (A/D) para um fluxo de áudio Dolby Digital. Essa propriedade se aplica a codificadores de áudio Dolby Digital.
+description: Especifica o tipo de conversão de analógico para digital (A/D) para um fluxo de áudio Dolby Digital. Essa propriedade se aplica aos codificadores Dolby Digital Audio.
 ms.assetid: 44a82d6c-9cf9-440f-904d-5931dcb6117b
-title: Propriedade AVEncDDAtoDConverterType (Codecapi.h)
+title: Propriedade AVEncDDAtoDConverterType (Codecapi. h)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: d9057646597e213f7745e90cbc67eb8023df9ebec4faab81894a880372f4326d
@@ -11,11 +11,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118403842"
 ---
-# <a name="avencddatodconvertertype-property"></a>Propriedade AVEncDAtoDConverterType
+# <a name="avencddatodconvertertype-property"></a>Propriedade AVEncDDAtoDConverterType
 
-Especifica o tipo de conversão análoga a digital (A/D) para um fluxo de áudio Dolby Digital. Essa propriedade se aplica a codificadores de áudio Dolby Digital.
+Especifica o tipo de conversão de analógico para digital (A/D) para um fluxo de áudio Dolby Digital. Essa propriedade se aplica aos codificadores Dolby Digital Audio.
 
-Essa propriedade é leitura/gravação.
+Esta propriedade é de leitura/gravação.
 
 ## <a name="data-type"></a>Tipo de dados
 
@@ -27,7 +27,7 @@ Essa propriedade é leitura/gravação.
 
 ## <a name="property-value"></a>Valor da propriedade
 
-O valor dessa propriedade é um membro da enumeração [**eAVEncDAtoDConverterType.**](/windows/win32/api/codecapi/ne-codecapi-eavencddatodconvertertype)
+O valor dessa propriedade é um membro da enumeração [**eAVEncDDAtoDConverterType**](/windows/win32/api/codecapi/ne-codecapi-eavencddatodconvertertype) .
 
 ## <a name="requirements"></a>Requisitos
 
@@ -35,9 +35,9 @@ O valor dessa propriedade é um membro da enumeração [**eAVEncDAtoDConverterTy
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 2000 Professional \[ aplicativos UWP da área de \| trabalho\]<br/>                     |
-| Servidor mínimo com suporte<br/> | Windows aplicativos da área de trabalho do servidor 2000 \[ \| aplicativos UWP\]<br/>                           |
-| parâmetro<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | aplicativos Windows 2000 Professional \[ desktop aplicativos \| UWP\]<br/>                     |
+| Servidor mínimo com suporte<br/> | Windows \[ aplicativos da área de trabalho do servidor 2000 \| aplicativo UWP\]<br/>                           |
+| Cabeçalho<br/>                   | <dl> <dt>Codecapi. h</dt> </dl> |
 
 
 
@@ -45,10 +45,10 @@ O valor dessa propriedade é um membro da enumeração [**eAVEncDAtoDConverterTy
 
 <dl> <dt>
 
-[Propriedades da API do Codec](codec-api-properties.md)
+[Propriedades da API do codec](codec-api-properties.md)
 </dt> <dt>
 
-[**ICodecAPI Interface**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)
+[**Interface ICodecAPI**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)
 </dt> </dl>
 
  

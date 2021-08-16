@@ -1,9 +1,9 @@
 ---
-title: Exibir. redimensionável
-description: O atributo redimensionável recupera um valor que indica se a exibição pode ser redimensionada.
+title: VIEW.resizable
+description: O atributo resizável recupera um valor que indica se o VIEW pode ser reessado.
 ms.assetid: 4f0e4f31-cf16-498f-823f-da43566043b1
 keywords:
-- Exibir. redimensionável do Windows Media Player
+- VIEW.resizable Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ed4d61973e34891d336ea5729ea40478c6c32808
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 622c732ce6a1218fa16bbe70c1ef18d53ba4211abfde9d39fc794ec862348033
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105793876"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118332904"
 ---
-# <a name="viewresizable"></a>Exibir. redimensionável
+# <a name="viewresizable"></a>VIEW.resizable
 
-O atributo **redimensionável** recupera um valor que indica se a **exibição** pode ser redimensionada.
+O **atributo resizável** recupera um valor que indica se **o VIEW** pode ser reessado.
 
 ``` syntax
         elementID.resizable
@@ -29,14 +29,14 @@ O atributo **redimensionável** recupera um valor que indica se a **exibição**
 
 ## <a name="possible-values"></a>Valores possíveis
 
-Esse atributo é um **booliano** somente leitura com um valor padrão igual ao atributo **TitleBar** .
+Esse atributo é um booliana somente **leitura** com um valor padrão igual ao **atributo da barra de** título.
 
 
 
 | Valores | Descrição             |
 |--------|-------------------------|
-| true   | A exibição pode ser redimensionada.    |
-| false  | A exibição não pode ser redimensionada. |
+| true   | A exibição pode ser resized.    |
+| false  | A exibição não pode ser ressada. |
 
 
 
@@ -44,7 +44,7 @@ Esse atributo é um **booliano** somente leitura com um valor padrão igual ao a
 
 ## <a name="remarks"></a>Comentários
 
-Se não houver nenhuma **TitleBar** e, portanto, nenhuma janela ou borda, você deverá usar o método **size** para redimensionar o elemento **View** .
+Se não houver nenhuma **barra de título** e, portanto, nenhuma janela ou borda, você deverá usar o método **size** para reessar o **elemento VIEW.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -52,7 +52,7 @@ Se não houver nenhuma **TitleBar** e, portanto, nenhuma janela ou borda, você 
 
 | Requisito | Valor |
 |--------------------|------------------------------------------------------|
-| Versão<br/> | Windows Media Player versão 7,0 ou posterior<br/> |
+| Versão<br/> | Windows Media Player versão 7.0 ou posterior<br/> |
 
 
 

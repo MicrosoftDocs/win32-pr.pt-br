@@ -3,7 +3,7 @@ title: Mensagem de BCM_GETIMAGELIST (commctrl. h)
 description: Obtém a estrutura de IMAGELIST do botão \_ que descreve a lista de imagens atribuída a um controle de botão. Você pode enviar essa mensagem explicitamente ou usar a \_ macro GetImageList do botão.
 ms.assetid: 79383758-53d4-4955-b472-befd338cbec6
 keywords:
-- Controles de BCM_GETIMAGELIST de mensagens do Windows
+- controles de Windows de mensagem de BCM_GETIMAGELIST
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5b0c28e997e23d6df63150fe2283d04be1a8c0d4
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ba74f358e80871ffad4822fd8088ca6aeb58521d8878254ed920356db5a6daf2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455239"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117833907"
 ---
 # <a name="bcm_getimagelist-message"></a>Mensagem do BCM \_ GETimagelist
 
@@ -43,7 +43,7 @@ Um ponteiro para uma estrutura de [**botão \_ IMAGELIST**](/windows/desktop/api
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se a mensagem tiver sucesso, retornará **true**. Caso contrário, retornará **false**.
 
@@ -60,9 +60,9 @@ Se a mensagem tiver sucesso, retornará **true**. Caso contrário, retornará **
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 
 

@@ -55,7 +55,7 @@ As propriedades a seguir têm suporte pelo objeto [**COMAdminCatalogObject**](co
 | Entrada | Valor |
 |----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Descrição    | Um GUID para o componente. Essa propriedade é retornada quando o método de propriedade de [**chave**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_key) é chamado em um objeto desta coleção. |
-| Acesso         | ReadOnly                                                                                                                                                  |
+| Access         | ReadOnly                                                                                                                                                  |
 | Type           | String                                                                                                                                                    |
 | Padrão        | N/D                                                                                                                                                       |
 | Sistema mínimo | Windows XP                                                                                                                                                |
@@ -71,7 +71,7 @@ As propriedades a seguir têm suporte pelo objeto [**COMAdminCatalogObject**](co
 | Entrada | Valor |
 |----------------|----------------------------------|
 | Descrição    | O caminho do arquivo para o componente. |
-| Acesso         | ReadOnly                         |
+| Access         | ReadOnly                         |
 | Type           | String                           |
 | Padrão        | N/D                              |
 | Sistema mínimo | Windows XP                       |
@@ -87,7 +87,7 @@ As propriedades a seguir têm suporte pelo objeto [**COMAdminCatalogObject**](co
 | Entrada | Valor |
 |----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Descrição    | Um nome que identifica o componente. Essa propriedade é retornada quando o método de propriedade [**Name**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_name) é chamado em um objeto desta coleção. |
-| Acesso         | ReadOnly                                                                                                                                                            |
+| Access         | ReadOnly                                                                                                                                                            |
 | Type           | String                                                                                                                                                              |
 | Padrão        | N/D                                                                                                                                                                 |
 | Sistema mínimo | Windows XP                                                                                                                                                          |

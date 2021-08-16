@@ -1,6 +1,6 @@
 ---
 title: DRM_Level
-description: '\_O nível de DRM é um atributo de licença que o Windows Media Format SDK define ao criar uma licença local para arquivos protegidos com o DRM versão 1.'
+description: '\_o nível de DRM é um atributo de licença que o Windows SDK do formato de mídia define quando cria uma licença local para arquivos protegidos com o DRM versão 1.'
 ms.assetid: 05357378-4d73-48df-a3b5-bdb2c543ec66
 keywords:
 - DRM_Level o formato Windows Media
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a3177197b9c149c2fca2c7678a8fe03c6b412e2d
-ms.sourcegitcommit: 48d1c892045445bcbd0f22bafa2fd3861ffaa6e7
+ms.openlocfilehash: a4767f839c5d21610e7e425aea4a20a52c3cb0d8658848f578a33ca403f4ad60
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "104293797"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117848678"
 ---
 # <a name="drm_level"></a>Nível de DRM \_
 
-**DRM \_ Nível** é um atributo de licença que o SDK do Windows Media Format define ao criar uma licença local para arquivos protegidos com o DRM versão 1. Ele contém o nível de segurança que o aplicativo de chamada deve ter para acessar o conteúdo no arquivo. O valor padrão é 150.
+**DRM \_ Level** é um atributo de licença que o Windows SDK do formato de mídia define quando cria uma licença local para arquivos protegidos com o DRM versão 1. Ele contém o nível de segurança que o aplicativo de chamada deve ter para acessar o conteúdo no arquivo. O valor padrão é 150.
 
 ## <a name="global-constant"></a>Constante global
 
@@ -42,9 +42,9 @@ O nível de segurança do DRM de um aplicativo é determinado pela biblioteca wm
 [**Propriedades de DRM**](drm-properties.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

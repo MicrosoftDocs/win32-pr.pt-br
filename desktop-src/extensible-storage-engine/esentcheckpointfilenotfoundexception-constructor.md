@@ -35,8 +35,8 @@ ms.locfileid: "118782689"
 
 Inicializa uma nova instância da classe EsentCheckpointFileNotFoundException.
 
-**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -58,6 +58,6 @@ public EsentCheckpointFileNotFoundException()
 
 [Classe EsentCheckpointFileNotFoundException](./esentcheckpointfilenotfoundexception-class.md)
 
-[Membros EsentCheckpointFileNotFoundException](./esentcheckpointfilenotfoundexception-members.md)
+[Membros do EsentCheckpointFileNotFoundException](./esentcheckpointfilenotfoundexception-members.md)
 
-[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -1,37 +1,37 @@
 ---
-title: Recursos de gravação de arquivo
-description: Recursos de gravação de arquivo
+title: Recursos de escrita de arquivo
+description: Recursos de escrita de arquivo
 ms.assetid: 4514f463-26cf-48a4-aa0c-c25fc5a1979f
 keywords:
-- SDK do Windows Media Format, recursos de gravação de arquivos
-- SDK do Windows Media Format, recursos
-- ASF (Advanced Systems Format), recursos de gravação de arquivos
-- ASF (formato de sistemas avançados), recursos de gravação de arquivos
+- Windows SDK de Formato de Mídia, recursos de escrita de arquivo
+- Windows SDK de Formato de Mídia, recursos
+- ASF (Advanced Systems Format), recursos de escrita de arquivo
+- ASF (Formato de Sistemas Avançados), recursos de escrita de arquivo
 - ASF (Advanced Systems Format), recursos
-- ASF (formato de sistemas avançados), recursos
+- ASF (Formato de Sistemas Avançados), recursos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9a4764a318ac7cd420296b15bb4a5818ded06384
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 59207c12c678cc313023edc20e544eacae4351bd32798c3a7d767a80d9817c7b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104005488"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117848135"
 ---
-# <a name="file-writing-features"></a>Recursos de gravação de arquivo
+# <a name="file-writing-features"></a>Recursos de escrita de arquivo
 
-Um dos principais recursos do Windows Media Format SDK é a capacidade de gravar arquivos no ASF (Advanced Systems Format). O objeto Writer é usado para gravar arquivos ASF. Para obter mais informações, consulte o [objeto Writer](writer-object.md).
+Um dos principais recursos do SDK Windows Formato de Mídia é a capacidade de gravar arquivos no ASF (Advanced Systems Format). O objeto writer é usado para gravar arquivos ASF. Para obter mais informações, consulte [Objeto Writer](writer-object.md).
 
-No cenário de gravação de arquivo mais básico, você atribui um perfil a ser usado e um nome do arquivo a ser criado. Você passa amostras para o gravador, um de cada vez. Quando você terminar de passar amostras para o gravador, ele concluirá suas operações e preencherá o arquivo ASF. Para obter mais informações sobre a gravação básica de arquivos, consulte [Writing ASF files](writing-asf-files.md).
+No cenário de escrita de arquivo mais básico, você atribui um perfil a ser usado e um nome do arquivo a ser criado. Você passa amostras para o autor uma de cada vez. Quando você terminar de passar amostras para o autor, ele concluirá suas operações e concluirá o arquivo ASF. Para obter mais informações sobre a escrita de arquivo básica, consulte [Escrevendo arquivos ASF](writing-asf-files.md).
 
-O gravador dá suporte a vários recursos avançados, que são discutidos nas seções a seguir.
+O autor dá suporte a vários recursos avançados, que são discutidos nas seções a seguir.
 
--   [Redimensionamento de vídeo](video-resizing.md)
--   [Conversão de espaço de cor](color-space-conversion.md)
--   [Reamostragem de áudio](audio-resampling.md)
--   [Coletores](sinks.md)
--   [Suporte à marca d' água](watermarking-support.md)
--   [Formatos de entrada, configurações de entrada e extensões de unidade de dados](input-formats-input-settings-and-data-unit-extensions.md)
+-   [Reizing de vídeo](video-resizing.md)
+-   [Conversão de espaço em cores](color-space-conversion.md)
+-   [Resampling de áudio](audio-resampling.md)
+-   [Dissipadores](sinks.md)
+-   [Suporte à marca d'água](watermarking-support.md)
+-   [Formatos de entrada, Configurações entrada e extensões de unidade de dados](input-formats-input-settings-and-data-unit-extensions.md)
 -   [Enumeração de formato de entrada](input-format-enumeration.md)
 
 ## <a name="related-topics"></a>Tópicos relacionados
@@ -41,9 +41,9 @@ O gravador dá suporte a vários recursos avançados, que são discutidos nas se
 [**Recursos**](features.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

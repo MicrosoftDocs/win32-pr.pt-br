@@ -3,7 +3,7 @@ title: WM/MediaIsRepeat
 description: O atributo WM/MediaIsRepeat indica se o conteúdo é um episódio repetido de uma série.
 ms.assetid: f52b70f5-a5af-45bd-9d05-1bc7f480467d
 keywords:
-- Formato de mídia do Windows WM/MediaIsRepeat
+- Formato de mídia do Windows do WM/MediaIsRepeat
 topic_type:
 - apiref
 api_name:
@@ -21,7 +21,7 @@ ms.locfileid: "118431650"
 ---
 # <a name="wmmediaisrepeat"></a>WM/MediaIsRepeat
 
-O **atributo WM/MediaIsRepeat** indica se o conteúdo é um episódio repetido de uma série.
+O atributo **WM/MediaIsRepeat** indica se o conteúdo é um episódio repetido de uma série.
 
 ## <a name="global-constant"></a>Constante global
 
@@ -29,11 +29,11 @@ g \_ wszWMMediaIsRepeat
 
 ## <a name="data-type"></a>Tipo de Dados
 
-**TIPO WMT \_ \_ BOOL**
+**WMT \_ tipo \_ bool**
 
 ## <a name="remarks"></a>Comentários
 
-Esse atributo é usado para transmissão de tv.
+Esse atributo é usado para difusão de televisão.
 
 ## <a name="see-also"></a>Confira também
 

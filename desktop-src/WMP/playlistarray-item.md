@@ -1,11 +1,11 @@
 ---
-title: Método PlaylistArray.item
-description: O método de item recupera a playlist no índice determinado.
+title: Método PlaylistArray. Item
+description: O método item recupera a lista de reprodução no índice fornecido.
 ms.assetid: cc851695-f9a2-4594-8bd3-3555c18bfa10
 keywords:
-- método item Windows Media Player
-- método item Windows Media Player , classe PlaylistArray
-- Classe PlaylistArray Windows Media Player , método de item
+- método de item Windows Media Player
+- método item Windows Media Player, classe PlaylistArray
+- classe PlaylistArray Windows Media Player, método item
 topic_type:
 - apiref
 api_name:
@@ -23,9 +23,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118335423"
 ---
-# <a name="playlistarrayitem-method"></a>Método PlaylistArray.item
+# <a name="playlistarrayitem-method"></a>Método PlaylistArray. Item
 
-O **método de item** recupera a playlist no índice determinado.
+O método **Item** recupera a lista de reprodução no índice fornecido.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,20 +42,20 @@ retVal = PlaylistArray.item(
 
 <dl> <dt>
 
-*índice* \[ Em\]
+*índice* \[ do no\]
 </dt> <dd>
 
-**Número** (**longo**) que contém o índice da playlist a ser recuperada.
+**Número** (**longo**) que contém o índice da lista de reprodução a ser recuperada.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor retornado
 
-Esse método retorna um **objeto Playlist.**
+Esse método retorna um objeto **playlist** .
 
 ## <a name="remarks"></a>Comentários
 
-Para usar esse método, é necessário ter acesso de leitura à biblioteca. Para obter mais informações, consulte [Acesso à biblioteca.](library-access.md)
+Para usar esse método, é necessário ter acesso de leitura à biblioteca. Para obter mais informações, consulte [acesso à biblioteca](library-access.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -63,7 +63,7 @@ Para usar esse método, é necessário ter acesso de leitura à biblioteca. Para
 
 | Requisito | Valor |
 |--------------------|------------------------------------------------------------------------------------|
-| Versão<br/> | Windows Media Player versão 7.0 ou posterior.<br/>                              |
+| Versão<br/> | Windows Media Player versão 7,0 ou posterior.<br/>                              |
 | DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
@@ -75,10 +75,10 @@ Para usar esse método, é necessário ter acesso de leitura à biblioteca. Para
 [**Objeto PlaylistArray**](playlistarray-object.md)
 </dt> <dt>
 
-[**Configurações.mediaAccessRights**](settings-mediaaccessrights.md)
+[**Configurações. mediaAccessRights**](settings-mediaaccessrights.md)
 </dt> <dt>
 
-[**Configurações.requestMediaAccessRights**](settings-requestmediaaccessrights.md)
+[**Configurações. requestMediaAccessRights**](settings-requestmediaaccessrights.md)
 </dt> </dl>
 
  

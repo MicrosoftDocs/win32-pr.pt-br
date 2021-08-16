@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9328ff208a66bc12315d1572a5f395ad0a2659b3
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 23f73aabec4f81eeefc47fbdf78acfbcc2fc956ec89df5e83801894d03c7685a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103825283"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117836695"
 ---
 # <a name="replica-source-attribute"></a>Replica-Source atributo
 
@@ -57,8 +57,8 @@ Esse atributo contém o GUID de uma origem de replicação.
 |------------------------|----------------------------------------------|
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
-| System-Only            | True                                         |
-| É de valor único       | True                                         |
+| System-Only            | Verdadeiro                                         |
+| É de valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
 | No catálogo global      | Falso                                        |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
@@ -78,8 +78,8 @@ Esse atributo contém o GUID de uma origem de replicação.
 |------------------------|----------------------------------------------|
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
-| System-Only            | True                                         |
-| É de valor único       | True                                         |
+| System-Only            | Verdadeiro                                         |
+| É de valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
 | No catálogo global      | Falso                                        |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
@@ -99,8 +99,8 @@ Esse atributo contém o GUID de uma origem de replicação.
 |------------------------|----------------------------------------------|
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
-| System-Only            | True                                         |
-| É de valor único       | True                                         |
+| System-Only            | Verdadeiro                                         |
+| É de valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
 | No catálogo global      | Falso                                        |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
@@ -120,16 +120,16 @@ Esse atributo contém o GUID de uma origem de replicação.
 |------------------------|----------------------------------------------|
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
-| System-Only            | True                                         |
-| É de valor único       | True                                         |
+| System-Only            | Verdadeiro                                         |
+| Tem valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
-| No catálogo global      | Falso                                        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
+| No Catálogo Global      | Falso                                        |
+| Descritor de segurança NT | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classes usadas em        | [**Sam-domínio**](c-samdomain.md)<br/> |
+| Classes usadas em        | [**Domínio Sam**](c-samdomain.md)<br/> |
 
 
 
@@ -141,16 +141,16 @@ Esse atributo contém o GUID de uma origem de replicação.
 |------------------------|----------------------------------------------|
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
-| System-Only            | True                                         |
-| É de valor único       | True                                         |
+| System-Only            | Verdadeiro                                         |
+| Tem valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
-| No catálogo global      | Falso                                        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
+| No Catálogo Global      | Falso                                        |
+| Descritor de segurança NT | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classes usadas em        | [**Sam-domínio**](c-samdomain.md)<br/> |
+| Classes usadas em        | [**Domínio Sam**](c-samdomain.md)<br/> |
 
 
 
@@ -162,16 +162,16 @@ Esse atributo contém o GUID de uma origem de replicação.
 |------------------------|----------------------------------------------|
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
-| System-Only            | True                                         |
-| É de valor único       | True                                         |
+| System-Only            | Verdadeiro                                         |
+| Tem valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
-| No catálogo global      | Falso                                        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
+| No Catálogo Global      | Falso                                        |
+| Descritor de segurança NT | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classes usadas em        | [**Sam-domínio**](c-samdomain.md)<br/> |
+| Classes usadas em        | [**Domínio Sam**](c-samdomain.md)<br/> |
 
 
 
