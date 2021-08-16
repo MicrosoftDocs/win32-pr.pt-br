@@ -13,7 +13,7 @@ ms.locfileid: "118546270"
 ---
 # <a name="security-limitations-in-workgroup-mode"></a>Limitações de segurança no modo de grupo de trabalho
 
-A configuração do grupo de trabalho do [enfileiramento de mensagens](/previous-versions/windows/desktop/legacy/ms711472(v=vs.85)) não permite que o serviço de componentes em fila com+ ofereça suporte à segurança do aplicativo. Se você tiver instalado o enfileiramento de mensagens com a configuração de grupo de trabalho, deverá [desabilitar a segurança](specifying-the-authentication-protocol.md) em cada aplicativo em fila acessado nessa configuração selecionando não **autenticar mensagens** na guia **enfileiramento** da caixa de diálogo de **Propriedades** do aplicativo com+, usando a ferramenta administrativa serviços de componentes. Isso deve ser feito somente em uma rede confiável e deve ser feito no cliente e no servidor se o aplicativo já tiver sido exportado.
+A [configuração do grupo](/previous-versions/windows/desktop/legacy/ms711472(v=vs.85)) de trabalho do En en enroscamento de mensagens não permite que o serviço componentes em fila COM+ deem suporte à segurança do aplicativo. Se você tiver instalado o En fila de mensagens [](specifying-the-authentication-protocol.md) com a configuração do grupo de trabalho, deverá desabilitar  a segurança em cada aplicativo na fila acessado nessa configuração selecionando Não autenticar mensagens na guia En enroscar para a caixa de diálogo Propriedades do aplicativo **COM+,** usando a ferramenta administrativa Serviços de Componentes.  Isso deve ser feito somente em uma rede confiável e deve ser feito no cliente e no servidor se o aplicativo já tiver sido exportado.
 
  
 

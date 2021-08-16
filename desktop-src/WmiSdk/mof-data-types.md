@@ -1,5 +1,5 @@
 ---
-description: A linguagem formato MOF (MOF) dá suporte a muitos tipos de dados que usam para atribuir valores a propriedades, qualificadores e parâmetros de método.
+description: A linguagem Managed Object Format (MOF) dá suporte a muitos tipos de dados que usam para atribuir valores a propriedades, qualificadores e parâmetros de método.
 ms.assetid: c09209ea-5283-4779-9481-71a24b03002f
 ms.tgt_platform: multiple
 title: Tipos de dados MOF
@@ -14,22 +14,22 @@ ms.locfileid: "118555196"
 ---
 # <a name="mof-data-types"></a>Tipos de dados MOF
 
-A linguagem formato MOF (MOF) dá suporte a muitos tipos de dados que usam para atribuir valores a propriedades, qualificadores e parâmetros de método.
+A linguagem Managed Object Format (MOF) dá suporte a muitos tipos de dados que usam para atribuir valores a propriedades, qualificadores e parâmetros de método.
 
 A linguagem MOF dá suporte aos seguintes tipos de dados e categorias de tipos de dados:
 
--   [BitMap e bitvalues](bitmap-and-bitvalues.md)
+-   [BitMap e BitValues](bitmap-and-bitvalues.md)
 -   [booleano](boolean.md)
--   [HORÁRIO](date-and-time-format.md)
+-   [Datetime](date-and-time-format.md)
 -   [Matrizes MOF](mof-arrays.md)
 -   [Números](numbers.md)
--   [OBJETO](object.md)
+-   [Objeto](object.md)
 -   [Referências](references.md)
 -   [Cadeias de caracteres](strings.md)
 -   [Mapa de valor](value-map.md)
 -   [VOID](void.md)
 
-Para obter mais informações sobre comandos, consulte [comandos de pré-processador](preprocessor-commands.md).
+Para obter mais informações sobre comandos, consulte [Comandos de pré-processador](preprocessor-commands.md).
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

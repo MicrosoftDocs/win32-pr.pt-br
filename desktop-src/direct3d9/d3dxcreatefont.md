@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 488a400928ecc270612a307fbede971e02b43b25
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: d9bac71e89657f4df176a1ee15e2dca0cda6e4a25b8c47560adc5cf26c982383
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103664053"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118526150"
 ---
 # <a name="d3dxcreatefont-function"></a>Função D3DXCreateFont
 
@@ -119,7 +119,7 @@ O conjunto de caracteres da fonte.
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Especifica como o Windows deve tentar corresponder os tamanhos de fonte e as características desejadas com as fontes reais. Use \_ apenas TT \_ \_ precis por exemplo, para garantir que sempre obtenha uma fonte TrueType.
+especifica como Windows deve tentar corresponder os tamanhos de fonte e as características desejadas com as fontes reais. Use \_ apenas TT \_ \_ precis por exemplo, para garantir que sempre obtenha uma fonte TrueType.
 
 </dd> <dt>
 
@@ -128,7 +128,7 @@ Especifica como o Windows deve tentar corresponder os tamanhos de fonte e as car
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Especifica como o Windows deve corresponder à fonte desejada com uma fonte real. Ele se aplica somente a fontes rasterizadas e não deve afetar as fontes TrueType.
+especifica como Windows deve corresponder à fonte desejada com uma fonte real. Ele se aplica somente a fontes rasterizadas e não deve afetar as fontes TrueType.
 
 </dd> <dt>
 
@@ -159,7 +159,7 @@ Retorna um ponteiro para uma interface [**ID3DXFont**](id3dxfont.md) , represent
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 

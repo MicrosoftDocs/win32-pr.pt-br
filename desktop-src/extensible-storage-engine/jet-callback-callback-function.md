@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre: JET_CALLBACK função de retorno de chamada'
-title: JET_CALLBACK função de retorno de chamada
+description: 'Saiba mais sobre: função JET_CALLBACK retorno de chamada'
+title: JET_CALLBACK de retorno de chamada
 TOCTitle: JET_CALLBACK Callback Function
 ms:assetid: d15d4f84-8378-4b4b-9b8b-e89a56be5ead
 ms:mtpsurl: https://msdn.microsoft.com/library/Gg294098(v=EXCHG.10)
@@ -15,23 +15,23 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 5e6d26bd5e347757fce270d5f2c78ab471755c1a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d50f0f3a0908b725d7f704df962324a0f16af1fc6f7353515a8d604e87edd0a5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105768532"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118487609"
 ---
-# <a name="jet_callback-callback-function"></a>JET_CALLBACK função de retorno de chamada
+# <a name="jet_callback-callback-function"></a>JET_CALLBACK de retorno de chamada
 
 
-_**Aplica-se a:** Windows | Windows Server_
+_**Aplica-se a:** Windows | Windows Servidor_
 
-## <a name="jet_callback-callback-function"></a>JET_CALLBACK função de retorno de chamada
+## <a name="jet_callback-callback-function"></a>JET_CALLBACK de retorno de chamada
 
-A função **JET_CALLBACK** é uma função de retorno de chamada de várias finalidades usada pelo mecanismo de banco de dados para informar o aplicativo de um evento que envolve a desfragmentação online e as notificações de estado do cursor.
+A **JET_CALLBACK** é uma função de retorno de chamada de várias finalidades usada pelo mecanismo de banco de dados para informar a aplicação de um evento que envolve desfragmentação online e notificações de estado do cursor.
 
-Consulte [JET_CBTYP](./jet-cbtyp.md) para configurações específicas a serem usadas para os parâmetros dessa função, pois essas configurações serão diferentes dependendo da opção de **JET_CBTYP** selecionada para uso no parâmetro *CBTYP* .
+Confira [JET_CBTYP](./jet-cbtyp.md) configurações específicas a ser usadas para os parâmetros dessa função, pois essas configurações serão diferentes dependendo da **opção JET_CBTYP** selecionada para uso no parâmetro *cbtyp.*
 
 ```cpp
     JET_ERR JET_API* JET_CALLBACK(
@@ -52,43 +52,43 @@ Consulte [JET_CBTYP](./jet-cbtyp.md) para configurações específicas a serem u
 
 A sessão para a qual o retorno de chamada está sendo feito.
 
-*DBID*
+*Dbid*
 
 O banco de dados para o qual o retorno de chamada está sendo feito.
 
-*TableID*
+*Tableid*
 
 O cursor para o qual o retorno de chamada está sendo feito.
 
 *cbtyp*
 
-O ponto na operação em que o retorno de chamada está sendo feito. Consulte [JET_CBTYP](./jet-cbtyp.md) para obter uma lista de valores e o significado dos parâmetros a seguir em cada caso.
+O ponto na operação em que o retorno de chamada está sendo feito. Consulte [JET_CBTYP](./jet-cbtyp.md) para ver uma lista de valores e o significado dos parâmetros a seguir em cada caso.
 
 *pvArg1*
 
-Um parâmetro usado para se comunicar com o aplicativo usando o retorno de chamada. Consulte [JET_CBTYP](./jet-cbtyp.md) para obter informações sobre o uso desse parâmetro para cada retorno de chamada suportado pelo mecanismo de banco de dados.
+Um parâmetro usado para se comunicar com o aplicativo usando o retorno de chamada. Consulte [JET_CBTYP](./jet-cbtyp.md) para obter informações sobre o uso desse parâmetro para cada retorno de chamada com suporte pelo mecanismo de banco de dados.
 
 *pvArg2*
 
-Um parâmetro usado para se comunicar com o aplicativo usando o retorno de chamada. Consulte [JET_CBTYP](./jet-cbtyp.md) para obter informações sobre o uso desse parâmetro para cada retorno de chamada suportado pelo mecanismo de banco de dados.
+Um parâmetro usado para se comunicar com o aplicativo usando o retorno de chamada. Consulte [JET_CBTYP](./jet-cbtyp.md) para obter informações sobre o uso desse parâmetro para cada retorno de chamada com suporte pelo mecanismo de banco de dados.
 
 *pvContext*
 
-Um parâmetro usado para se comunicar com o aplicativo usando o retorno de chamada. Consulte [JET_CBTYP](./jet-cbtyp.md) para obter informações sobre o uso desse parâmetro para cada retorno de chamada suportado pelo mecanismo de banco de dados.
+Um parâmetro usado para se comunicar com o aplicativo usando o retorno de chamada. Consulte [JET_CBTYP](./jet-cbtyp.md) para obter informações sobre o uso desse parâmetro para cada retorno de chamada com suporte pelo mecanismo de banco de dados.
 
 *ulUnused*
 
-Um parâmetro usado para se comunicar com o aplicativo usando o retorno de chamada. Consulte [JET_CBTYP](./jet-cbtyp.md) para obter informações sobre o uso desse parâmetro para cada retorno de chamada suportado pelo mecanismo de banco de dados.
+Um parâmetro usado para se comunicar com o aplicativo usando o retorno de chamada. Consulte [JET_CBTYP](./jet-cbtyp.md) para obter informações sobre o uso desse parâmetro para cada retorno de chamada com suporte pelo mecanismo de banco de dados.
 
 #### <a name="return-value"></a>Valor Retornado
 
-A função retorna um dos [códigos de erro do mecanismo de armazenamento extensível](./extensible-storage-engine-error-codes.md). Para obter informações sobre como retornar esses códigos como HRESULTs, consulte [erros do mecanismo de armazenamento extensível](./extensible-storage-engine-errors.md). Em caso de sucesso, a operação que emitiu o retorno de chamada pode continuar normalmente. Em alguns casos, o retorno de chamada pode retornar um aviso que influencia essa operação. Consulte [JET_CBTYP](./jet-cbtyp.md) para obter informações sobre o uso desses avisos pela operação.
+A função retorna um dos códigos de erro [extensível Armazenamento Engine](./extensible-storage-engine-error-codes.md). Para obter informações sobre como retornar esses códigos como HRESULTs, consulte [Extensible Armazenamento Engine Errors](./extensible-storage-engine-errors.md). Em caso de êxito, a operação que emitiu o retorno de chamada pode continuar normalmente. Em alguns casos, o retorno de chamada pode retornar um aviso que influencia essa operação. Consulte [JET_CBTYP](./jet-cbtyp.md) para obter informações sobre o uso desses avisos pela operação.
 
 Em caso de falha, a operação que emitiu o retorno de chamada pode continuar normalmente ou pode falhar. Consulte [JET_CBTYP](./jet-cbtyp.md) para obter informações sobre o uso do código de erro pela operação.
 
 #### <a name="remarks"></a>Comentários
 
-Se o retorno de chamada passar um cursor para o aplicativo, será importante saber que esse cursor está intencionalmente limitado a um conjunto menor de funcionalidade para evitar a recursão e outros ugliness. As seguintes operações são permitidas:
+Se o retorno de chamada passar um cursor para o aplicativo, é importante saber que esse cursor está intencionalmente limitado a um conjunto menor de funcionalidades para evitar a recursão e outras recursões. As seguintes operações são permitidas:
 
   - [JetDupCursor](./jetdupcursor-function.md)
 
@@ -128,7 +128,7 @@ Se o retorno de chamada passar um cursor para o aplicativo, será importante sab
 
   - [JetUnregisterCallback](./jetunregistercallback-function.md)
 
-Ao projetar seu retorno de chamada, leve em conta que, mesmo com essas restrições, ainda é possível que o retorno de chamada falhe.
+Ao projetar o retorno de chamada, leve em conta que, mesmo com essas restrições, ainda é possível que o retorno de chamada falhe.
 
 #### <a name="requirements"></a>Requisitos
 
@@ -140,15 +140,15 @@ Ao projetar seu retorno de chamada, leve em conta que, mesmo com essas restriç�
 <tbody>
 <tr class="odd">
 <td><p><strong>Cliente</strong></p></td>
-<td><p>Requer o Windows Vista, o Windows XP ou o Windows 2000 Professional.</p></td>
+<td><p>Requer Windows Vista, Windows XP ou Windows 2000 Professional.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Servidor</strong></p></td>
-<td><p>Requer o Windows Server 2008, o Windows Server 2003 ou o Windows 2000 Server.</p></td>
+<td><p>Requer Windows Server 2008, Windows Server 2003 ou Windows 2000 Server.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Cabeçalho</strong></p></td>
-<td><p>Declarado em ESENT. h.</p></td>
+<td><p>Declarado em Esent.h.</p></td>
 </tr>
 </tbody>
 </table>

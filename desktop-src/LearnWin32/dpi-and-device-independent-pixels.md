@@ -108,16 +108,16 @@ Direct2D executa automaticamente o dimensionamento para corresponder à configur
 
 por exemplo, se a configuração de DPI do usuário for 144 DPI e você solicitar que Direct2D desenhe um retângulo 200 × 100, o retângulo será de 300 × 150 pixels físicos. além disso, DirectWrite mede os tamanhos de fonte em DIPs, em vez de pontos. Para criar uma fonte de 12 pontos, especifique 16 DIPs (12 pontos = 1/6 polegada lógica = 96/6 DIPs). quando o texto é desenhado na tela, Direct2D converte o DIPs em pixels físicos. O benefício desse sistema é que as unidades de medida são consistentes para o texto e o desenho, independentemente da configuração de DPI atual.
 
-Uma palavra de cuidado: as coordenadas do mouse e da janela ainda são dadas em pixels físicos, não DIPs. Por exemplo, se você processar a mensagem do [**WM \_ LBUTTONDOWN**](/windows/desktop/inputdev/wm-lbuttondown) , a posição do mouse para baixo será fornecida em pixels físicos. Para desenhar um ponto nessa posição, você deve converter as coordenadas de pixel em DIPs.
+Uma palavra de cuidado: as coordenadas do mouse e da janela ainda são fornecidas em pixels físicos, não em DIPs. Por exemplo, se você processar a mensagem [**WM \_ LBUTTONDOWN,**](/windows/desktop/inputdev/wm-lbuttondown) a posição do mouse para baixo será determinada em pixels físicos. Para desenhar um ponto nessa posição, você deve converter as coordenadas de pixel em DIPs.
 
 ## <a name="converting-physical-pixels-to-dips"></a>Convertendo pixels físicos em DIPs
 
-A conversão de pixels físicos para DIPs usa a fórmula a seguir.
+A conversão de pixels físicos em DIPs usa a fórmula a seguir.
 
-<dl> DIPs = pixels/(DPI/96.0)  
+<dl> DIPs = pixels / (DPI/96.0)  
 </dl>
 
-Para obter a configuração de DPI, chame o método [**ID2D1Factory:: GetDesktopDpi**](/windows/desktop/api/d2d1/nf-d2d1-id2d1factory-getdesktopdpi) . O DPI é retornado como dois valores de ponto flutuante, um para o eixo x e outro para o eixo y. Teoricamente, esses valores podem diferir. Calcule um fator de dimensionamento separado para cada eixo.
+Para obter a configuração de DPI, chame o [**método ID2D1Factory::GetDesktopDpi.**](/windows/desktop/api/d2d1/nf-d2d1-id2d1factory-getdesktopdpi) O DPI é retornado como dois valores de ponto flutuante, um para o eixo x e outro para o eixo y. Em teoria, esses valores podem ser diferentes. Calcule um fator de dimensionamento separado para cada eixo.
 
 
 ```C++
@@ -162,11 +162,11 @@ void InitializeDPIScale(HWND hwnd)
 }
 ```
 > [!Note]  
-> no Windows 10, a versão 1903, [**ID2D1Factory:: GetDesktopDpi**](/windows/win32/api/d2d1/nf-d2d1-id2d1factory-getdesktopdpi) foi preterida e a recomendação é [**DisplayInformation:: LogicalDpi**](/uwp/api/windows.graphics.display.displayinformation.logicaldpi?view=winrt-19041) para aplicativos da loja Windows ou [**GetDpiForWindow**](/windows/win32/api/winuser/nf-winuser-getdpiforwindow) para aplicativos da área de trabalho. Se você ainda quiser usá-lo, suprime a mensagem de erro do compilador escrevendo a linha [**#pragma Aviso (suprimir: 4996)**](/cpp/error-messages/compiler-warnings/compiler-warning-level-3-c4996?view=vs-2019) logo antes da chamada [**ID2D1Factory:: GetDesktopDpi**](/windows/win32/api/d2d1/nf-d2d1-id2d1factory-getdesktopdpi) . Embora não seja recomendado, é possível definir o reconhecimento de DPI padrão programaticamente usando [**SetProcessDpiAwarenessContext**](/windows/win32/api/winuser/nf-winuser-setprocessdpiawarenesscontext). Depois que uma janela (um HWND) tiver sido criada em seu processo, não haverá mais suporte para a alteração do modo de reconhecimento de DPI. Se você estiver configurando o modo de reconhecimento de DPI de processo padrão programaticamente, deverá chamar a API correspondente antes que quaisquer HWNDs tenham sido criados. Para obter informações, consulte [definindo o reconhecimento de DPI padrão para um processo](../hidpi/setting-the-default-dpi-awareness-for-a-process.md).
+> No Windows 10, versão 1903, [**ID2D1Factory::GetDesktopDpi**](/windows/win32/api/d2d1/nf-d2d1-id2d1factory-getdesktopdpi) foi preterido e a recomendação é [**DisplayInformation::LogicalDpi**](/uwp/api/windows.graphics.display.displayinformation.logicaldpi?view=winrt-19041) para aplicativos da Windows Store ou [**GetDpiForWindow**](/windows/win32/api/winuser/nf-winuser-getdpiforwindow) para aplicativos da área de trabalho. Se você ainda quiser usá-la, suprime a mensagem de erro do compilador escrevendo a linha [**#pragma warning(suppress: 4996)**](/cpp/error-messages/compiler-warnings/compiler-warning-level-3-c4996?view=vs-2019) logo antes da chamada [**ID2D1Factory::GetDesktopDpi.**](/windows/win32/api/d2d1/nf-d2d1-id2d1factory-getdesktopdpi) Embora não seja recomendado, é possível definir o reconhecimento de DPI padrão programaticamente usando [**SetProcessDpiAwarenessContext**](/windows/win32/api/winuser/nf-winuser-setprocessdpiawarenesscontext). Depois que uma janela (um HWND) tiver sido criada em seu processo, não haverá mais suporte para alterar o modo de reconhecimento de DPI. Se você estiver definindo o modo de reconhecimento de DPI padrão do processo programaticamente, deverá chamar a API correspondente antes de qualquer HWNDs ter sido criado. Para obter informações, [consulte Definindo o reconhecimento de DPI padrão para um processo](../hidpi/setting-the-default-dpi-awareness-for-a-process.md).
 
-## <a name="resizing-the-render-target"></a>Redimensionando o destino de renderização
+## <a name="resizing-the-render-target"></a>Reizing the Render Target
 
-Se o tamanho da janela for alterado, você deverá redimensionar o destino de renderização para corresponder. Na maioria dos casos, também será necessário atualizar o layout e redesenhar a janela. O código a seguir mostra essas etapas.
+Se o tamanho da janela mudar, você deverá reessar o destino de renderização para corresponder. Na maioria dos casos, você também precisará atualizar o layout e repintar a janela. O código a seguir mostra estas etapas.
 
 
 ```C++
@@ -188,9 +188,9 @@ void MainWindow::Resize()
 
 
 
-A função [**GetClientRect**](/windows/desktop/api/winuser/nf-winuser-getclientrect) Obtém o novo tamanho da área do cliente, em pixels físicos (não DIPs). O método [**ID2D1HwndRenderTarget:: Resize**](../direct2d/id2d1hwndrendertarget-resize.md) atualiza o tamanho do destino de renderização, também especificado em pixels. A função [**InvalidateRect**](/windows/desktop/api/winuser/nf-winuser-invalidaterect) força um redesenho adicionando toda a área do cliente à região de atualização da janela. (Consulte [pintando a janela](painting-the-window.md), no módulo 1.)
+A [**função GetClientRect**](/windows/desktop/api/winuser/nf-winuser-getclientrect) obtém o novo tamanho da área do cliente, em pixels físicos (não DIPs). O [**método ID2D1HwndRenderTarget::Resize**](../direct2d/id2d1hwndrendertarget-resize.md) atualiza o tamanho do destino de renderização, também especificado em pixels. A [**função InvalidateRect**](/windows/desktop/api/winuser/nf-winuser-invalidaterect) força uma reint adicionando toda a área do cliente à região de atualização da janela. (Consulte [Pintura da janela](painting-the-window.md), no Módulo 1.)
 
-À medida que a janela aumenta ou diminui, normalmente, você precisará recalcular a posição dos objetos desenhados. Por exemplo, no programa de círculo, o raio e o ponto central devem ser atualizados:
+À medida que a janela aumenta ou diminui, normalmente você precisará recalcular a posição dos objetos que você desenha. Por exemplo, no programa de círculo, o raio e o ponto central devem ser atualizados:
 
 
 ```C++
@@ -209,11 +209,11 @@ void MainWindow::CalculateLayout()
 
 
 
-O método [**ID2D1RenderTarget:: GetSize**](/windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-getsize) retorna o tamanho do destino de renderização em DIPs (não pixels), que é a unidade apropriada para calcular o layout. Há um método fortemente relacionado, [**ID2D1RenderTarget:: Getpixelize**](/windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-getpixelsize), que retorna o tamanho em pixels físicos. Para um destino de renderização **HWND** , esse valor corresponde ao tamanho retornado por [**GetClientRect**](/windows/desktop/api/winuser/nf-winuser-getclientrect). Mas lembre-se de que o desenho é executado em DIPs, e não em pixels.
+O [**método ID2D1RenderTarget::GetSize**](/windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-getsize) retorna o tamanho do destino de renderização em DIPs (não pixels), que é a unidade apropriada para calcular o layout. Há um método intimamente relacionado, [**ID2D1RenderTarget::GetPixelSize,**](/windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-getpixelsize)que retorna o tamanho em pixels físicos. Para um destino de renderização **HWND,** esse valor corresponde ao tamanho retornado por [**GetClientRect.**](/windows/desktop/api/winuser/nf-winuser-getclientrect) Mas lembre-se de que o desenho é executado em DIPs, não em pixels.
 
 ## <a name="next"></a>Avançar
 
-[Usando a cor em Direct2D](using-color-in-direct2d.md)
+[Usando Cor em Direct2D](using-color-in-direct2d.md)
 
  
 

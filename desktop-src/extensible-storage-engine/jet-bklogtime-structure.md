@@ -111,7 +111,7 @@ Se esse evento for um backup, esse sinalizador conterá um dos seguintes valores
 </colgroup>
 <thead>
 <tr class="header">
-<th><p>Name</p></th>
+<th><p>Nome</p></th>
 <th><p>Valor</p></th>
 </tr>
 </thead>

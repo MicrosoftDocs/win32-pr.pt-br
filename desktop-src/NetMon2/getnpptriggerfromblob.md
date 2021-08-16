@@ -1,7 +1,7 @@
 ---
-description: A função GetNPPTriggerFromBlob recupera o gatilho do BLOB fornecido.
+description: A função GetNPPTriggerFromBlob recupera o gatilho do BLOB determinado.
 ms.assetid: 48a27cf3-57b0-4241-a925-4209e0d384e2
-title: Função GetNPPTriggerFromBlob (Netmon. h)
+title: Função GetNPPTriggerFromBlob (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -22,7 +22,7 @@ ms.locfileid: "118366034"
 ---
 # <a name="getnpptriggerfromblob-function"></a>Função GetNPPTriggerFromBlob
 
-A função **GetNPPTriggerFromBlob** recupera o gatilho do blob fornecido.
+A **função GetNPPTriggerFromBlob** recupera o gatilho do BLOB determinado.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -41,36 +41,36 @@ DWORD GetNPPTriggerFromBlob(
 
 <dl> <dt>
 
-*hBlob* \[ no\]
+*hBlob* \[ Em\]
 </dt> <dd>
 
-Identificador para o BLOB.
+Lidar com o BLOB.
 
 </dd> <dt>
 
-*pTrigger* \[ fora\]
+*pTrigger* \[ out\]
 </dt> <dd>
 
 Ponteiro para o valor do gatilho.
 
 </dd> <dt>
 
-*hErrorBlob* \[ fora\]
+*hErrorBlob* \[ out\]
 </dt> <dd>
 
-Identificador para um BLOB de erro que especifica onde ocorreu o erro (se houver) no BLOB original.
+Tratar para um BLOB de erro que especifica em que local no BLOB original ocorreu o erro (se algum).
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor retornado
 
-Se a função for bem-sucedida, o valor de retorno será NMERR com \_ êxito.
+Se a função for bem-sucedida, o valor de retorno será NMERR \_ SUCCESS.
 
 Se a função não for bem-sucedida, o valor de retorno será um valor NMERR que indica o erro.
 
 ## <a name="remarks"></a>Comentários
 
-As informações do gatilho são armazenadas na categoria de **gatilho** do blob.
+As informações de gatilho são armazenadas **na categoria Gatilho** do BLOB.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -80,8 +80,8 @@ As informações do gatilho são armazenadas na categoria de **gatilho** do blob
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                              |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                    |
-| Cabeçalho<br/>                   | <dl> <dt>Netmon. h</dt> </dl>     |
-| Biblioteca<br/>                  | <dl> <dt>Npptools. lib</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Netmon.h</dt> </dl>     |
+| Biblioteca<br/>                  | <dl> <dt>Npptools.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Npptools.dll</dt> </dl> |
 
 

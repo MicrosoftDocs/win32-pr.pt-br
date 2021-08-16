@@ -4,12 +4,12 @@ ms.assetid: 160ca781-843f-4e80-916f-60a3fa6d7eba
 title: System. Media. ProtectionType
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fbd6771557476151c54332418503e935e795e5e0
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: fd2534be0b2c2e6069539d1358f5ca93c7cc0077340564a1fefc92d964420ee5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "105813234"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118970355"
 ---
 # <a name="systemmediaprotectiontype"></a>System. Media. ProtectionType
 

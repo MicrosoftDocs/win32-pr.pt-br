@@ -1,6 +1,6 @@
 ---
 title: Manipulações
-description: Esta seção explica a manipulação de objetos Windows Touch.
+description: esta seção explica a manipulação de objetos para Windows toque.
 ms.assetid: 7f905c36-7804-422c-8a60-a281e03c5e15
 keywords:
 - Windows Toque, manipulações
@@ -18,21 +18,21 @@ ms.locfileid: "118435981"
 ---
 # <a name="manipulations"></a>Manipulações
 
-Esta seção explica a manipulação de objetos Windows Touch.
+esta seção explica a manipulação de objetos para Windows toque.
 
 ## <a name="manipulation-overview"></a>Visão geral da manipulação
 
-Uma maneira conveniente de pensar sobre manipulações é considerá-las um superconjunto de gestos. O que você pode fazer com gestos, você pode fazer com mais flexibilidade e com precisão mais fina usando manipulações. A diferença entre manipulações e gestos é melhor demonstrada com um exemplo simples. Você pode expandir um objeto e, ao mesmo tempo, traduzi-lo usando manipulações; com gestos, você pode fazer apenas um de cada vez. Essa capacidade de manipular um objeto em tempo real torna os aplicativos mais intuitivos para os usuários, permitindo uma experiência mais realista.
+Uma maneira conveniente de pensar sobre as manipulações é considerar um superconjunto de gestos. O que você pode fazer com gestos, você pode fazer com mais flexibilidade e com precisão mais fina usando manipulações. A diferença entre as manipulações e os gestos é melhor demonstrada com um exemplo simples. Você pode expandir um objeto e, ao mesmo tempo, traduzi-lo usando manipulações; com gestos, você pode fazer apenas um de cada vez. Essa capacidade de manipular um objeto em tempo real torna os aplicativos mais intuitivos para os usuários, permitindo uma experiência mais realista.
 
-As APIs de Manipulação são usadas para simplificar as operações de transformação em objetos para aplicativos habilitados para toque. As manipulações são executadas Windows 7 por meio do objeto COM de manipulações. Usando manipulações, os desenvolvedores podem dar mais suporte à inércia (física de objetos) e podem executar facilmente transformações em objetos de uma maneira consistente com outros aplicativos. As seções a seguir explicam várias maneiras pelas quais você pode executar manipulações.
+As APIs de manipulação são usadas para simplificar as operações de transformação em objetos para aplicativos habilitados para toque. as manipulações são executadas no Windows 7 por meio do objeto COM de manipulações. Usando manipulações, os desenvolvedores podem dar suporte mais facilmente a inércia (física do objeto) e podem facilmente realizar transformações em objetos de forma consistente com outros aplicativos. As seções a seguir explicam várias maneiras que você pode executar manipulações.
 
 
 
 | Seção                                                                                            | Descrição                                                                                                                                          |
 |----------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Adicionando suporte de manipulação ao código não manipulado](adding-manipulation-support-in-unmanaged-code.md) | Explica como implementar um sink de eventos para a interface [**\_ IManipulationEvents**](/windows/win32/api/manipulations/nn-manipulations-_imanipulationevents) e adicionar manipuladores de eventos ao seu código. |
+| [Adicionando suporte à manipulação a código não gerenciado](adding-manipulation-support-in-unmanaged-code.md) | Explica como implementar um coletor de eventos para a interface [**\_ IManipulationEvents**](/windows/win32/api/manipulations/nn-manipulations-_imanipulationevents) e adicionar manipuladores de eventos ao seu código. |
 | [Manipulações avançadas](advanced-manipulations.md)                                               | Explica como executar manipulações complexas.                                                                                                       |
-| [Rotação de dedo único](single-finger-rotation.md)                                               | Explica como girar um objeto usando um ponto pivô e o processador de manipulação.                                                              |
+| [Rotação de dedo único](single-finger-rotation.md)                                               | Explica como girar um objeto usando um ponto dinâmico e o processador de manipulação.                                                              |
 
 
 

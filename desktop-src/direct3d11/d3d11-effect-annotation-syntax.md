@@ -17,7 +17,7 @@ Uma anotação é uma informação definida pelo usuário, declarada com a sinta
 
 
 
-| <Valor do *nome* do *tipo de dados*  =  ; *...* ; > |
+| <*Valor do nome* *DataType*  =  ; *...* ;> |
 |----------------------------------------------|
 
 
@@ -30,10 +30,10 @@ Uma anotação é uma informação definida pelo usuário, declarada com a sinta
 
 | Item                                                                                                   | Descrição                                                                                                                                                                      |
 |--------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="DataType"></span><span id="datatype"></span><span id="DATATYPE"></span>*Tipo de dados*<br/> | \[no \] tipo de dados, que inclui qualquer tipo de [HLSL escalar](/windows/desktop/direct3dhlsl/dx-graphics-hlsl-scalar) , bem como o [tipo de cadeia de caracteres](/windows/desktop/direct3dhlsl/dx-graphics-hlsl-scalar).<br/> |
-| <span id="Name"></span><span id="name"></span><span id="NAME"></span>*Nomes*<br/>                 | \[em \] uma cadeia de caracteres ASCII, que representa o nome da anotação.<br/>                                                                                                          |
-| <span id="Value"></span><span id="value"></span><span id="VALUE"></span>*Valor*<br/>             | \[no \] valor inicial da anotação.<br/>                                                                                                                           |
-| <span id="..."></span>*...*<br/>                                                                 | \[em \] anotações adicionais (pares nome-valor).<br/>                                                                                                                     |
+| <span id="DataType"></span><span id="datatype"></span><span id="DATATYPE"></span>*Datatype*<br/> | \[em \] O tipo de dados, que inclui qualquer tipo escalar de [HLSL,](/windows/desktop/direct3dhlsl/dx-graphics-hlsl-scalar) bem como o tipo [de cadeia de caracteres](/windows/desktop/direct3dhlsl/dx-graphics-hlsl-scalar).<br/> |
+| <span id="Name"></span><span id="name"></span><span id="NAME"></span>*Nome*<br/>                 | \[em \] uma cadeia de caracteres ASCII, que representa o nome da anotação.<br/>                                                                                                          |
+| <span id="Value"></span><span id="value"></span><span id="VALUE"></span>*Valor*<br/>             | \[em \] O valor inicial da anotação.<br/>                                                                                                                           |
+| <span id="..."></span>*...*<br/>                                                                 | \[em \] Anotações adicionais (pares nome-valor).<br/>                                                                                                                     |
 
 
 
@@ -41,7 +41,7 @@ Uma anotação é uma informação definida pelo usuário, declarada com a sinta
 
 ## <a name="remarks"></a>Comentários
 
-Você pode adicionar mais de uma anotação dentro dos colchetes angulares, cada uma separada por um ponto-e-vírgula. As APIs de estrutura de efeito reconhecem as anotações em variáveis globais; todas as outras anotações são ignoradas.
+Você pode adicionar mais de uma anotação entre colchetes angulares, cada uma separada por ponto e vírgula. As APIs da estrutura de efeito reconhecem anotações em variáveis globais; todas as outras anotações são ignoradas.
 
 ## <a name="example"></a>Exemplo
 
@@ -76,10 +76,10 @@ return pos;
 
 <dl> <dt>
 
-[Formato do efeito](d3d11-effect-format.md)
+[Formato de efeito](d3d11-effect-format.md)
 </dt> <dt>
 
-[Sintaxe da variável de efeito](d3d11-effect-variable-syntax.md)
+[Sintaxe de variável de efeito](d3d11-effect-variable-syntax.md)
 </dt> </dl>
 
  

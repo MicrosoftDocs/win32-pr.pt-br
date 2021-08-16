@@ -1,5 +1,5 @@
 ---
-description: O método ConfigureFeature do objeto do instalador configura o estado instalado de um recurso do produto.
+description: O método ConfigureFeature do objeto Installer configura o estado instalado de um recurso de produto.
 ms.assetid: cc950951-3b43-4d86-9ff1-80aa2ccd11d5
 title: Installer.Configmétodo ureFeature
 ms.topic: reference
@@ -22,7 +22,7 @@ ms.locfileid: "118632338"
 ---
 # <a name="installerconfigurefeature-method"></a>Installer.Configmétodo ureFeature
 
-O método **ConfigureFeature** do objeto do [**instalador**](installer-object.md) configura o estado instalado de um recurso do produto.
+O **método ConfigureFeature** do [**objeto Installer**](installer-object.md) configura o estado instalado de um recurso de produto.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -44,7 +44,7 @@ Installer.ConfigureFeature(
 *Product* 
 </dt> <dd>
 
-Especifica o código do produto do produto.
+Especifica o código do produto.
 
 </dd> <dt>
 
@@ -58,13 +58,13 @@ Especifica a ID do recurso a ser configurado.
 *InstallState* 
 </dt> <dd>
 
-Especifica o estado de instalação para o recurso. Esse parâmetro deve ser um dos valores a seguir.
+Especifica o estado de instalação do recurso. Esse parâmetro deve ser um dos valores a seguir.
 
 
 
 | Valor                                                                                                                                                                                                                                        | Significado                                                      |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------|
-| <span id="msiInstallStateAdvertised"></span><span id="msiinstallstateadvertised"></span><span id="MSIINSTALLSTATEADVERTISED"></span><dl> <dt>**msiInstallStateAdvertised**</dt> </dl> | O recurso é anunciado<br/>                         |
+| <span id="msiInstallStateAdvertised"></span><span id="msiinstallstateadvertised"></span><span id="MSIINSTALLSTATEADVERTISED"></span><dl> <dt>**msiInstallStateAdvertd**</dt> </dl> | O recurso é anunciado<br/>                         |
 | <span id="msiInstallStateLocal"></span><span id="msiinstallstatelocal"></span><span id="MSIINSTALLSTATELOCAL"></span><dl> <dt>**msiInstallStateLocal**</dt> </dl>                     | O recurso é instalado localmente.<br/>                 |
 | <span id="msiInstallStateAbsent"></span><span id="msiinstallstateabsent"></span><span id="MSIINSTALLSTATEABSENT"></span><dl> <dt>**msiInstallStateAbsent**</dt> </dl>                 | O recurso é desinstalado.<br/>                       |
 | <span id="msiInstallStateSource"></span><span id="msiinstallstatesource"></span><span id="MSIINSTALLSTATESOURCE"></span><dl> <dt>**msiInstallStateSource**</dt> </dl>                 | O recurso é instalado para ser executado da origem.<br/>      |
@@ -86,9 +86,9 @@ Esse método não retorna um valor.
 
 | Requisito | Valor |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versão<br/> | Windows instalador 5,0 em Windows Server 2012, Windows 8, Windows Server 2008 R2 ou Windows 7. Windows Installer 4,0 ou Windows Installer 4,5 no Windows Server 2008 ou Windows Vista. Windows instalador no Windows Server 2003 ou Windows XP<br/> |
+| Versão<br/> | Windows Instalador 5.0 no Windows Server 2012, Windows 8, Windows Server 2008 R2 ou Windows 7. Windows Instalador 4.0 ou Windows Instalador 4.5 no Windows Server 2008 ou Windows Vista. Windows Instalador no Windows Server 2003 ou Windows XP<br/> |
 | DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                      |
-| IID<br/>     | IID \_ IInstaller é definido como 000C1090-0000-0000-C000-000000000046<br/>                                                                                                                                                                           |
+| IID<br/>     | O IInstaller IID é definido como \_ 000C1090-0000-0000-C000-000000000046<br/>                                                                                                                                                                           |
 
 
 

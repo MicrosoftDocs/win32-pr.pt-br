@@ -103,88 +103,88 @@ Para exportar essas interfaces, você deve implementar esses métodos correspond
 
 Os dois métodos de inicialização, que são bastante semelhantes, são chamados quando o utilitário de limpeza de disco é executado. o gerenciador de limpeza de disco Windows 98 chama o método [**IEmptyVolumeCache:: Initialize**](/windows/desktop/api/Emptyvc/nf-emptyvc-iemptyvolumecache-initialize) de um manipulador. o Windows Millennium Edition (Windows Me), Windows 2000 ou Windows o gerenciador de limpeza de disco do XP, no entanto, primeiro tenta chamar [**IEmptyVolumeCache2:: InitializeEx**](/windows/desktop/api/Emptyvc/nf-emptyvc-iemptyvolumecache2-initializeex) e só usa **IEmptyVolumeCache:: Initialize** se [**IEmptyVolumeCache2**](/windows/desktop/api/Emptyvc/nn-emptyvc-iemptyvolumecache2) não é exposto pelo manipulador. O Gerenciador de limpeza de disco passa informações para o método, como a chave do registro do manipulador e o volume do disco a ser limpo.
 
-Qualquer um dos métodos pode retornar várias cadeias de caracteres de exibição e definir um ou mais sinalizadores. A principal diferença entre os dois métodos é como o texto exibido no Gerenciador de limpeza de disco é manipulado. As três cadeias de caracteres a seguir são afetadas.
+Qualquer método pode retornar várias cadeias de caracteres de exibição e definir um ou mais sinalizadores. A principal diferença entre os dois métodos é como o texto exibido no gerenciador de limpeza de disco é tratado. As três cadeias de caracteres a seguir são afetadas.
 
 
 
 | String       | Finalidade                                                                            | Inicializar                                                                           | InitializeEx                                                                                     |
 |--------------|------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
-| Nome de exibição | O nome do manipulador exibido na caixa de listagem do Gerenciador de limpeza de disco.               | Se *ppwszDisplayName* for **NULL**, o valor padrão será recuperado do registro. | Uma cadeia de caracteres localizada corretamente deve ser especificada em *ppwszDisplayName* nenhum valor de registro é usado. |
-| Descrição  | Texto descritivo exibido abaixo da caixa de listagem quando o nome do manipulador é selecionado. | Se *ppwszDescription* for **NULL**, o valor padrão será recuperado do registro. | Uma cadeia de caracteres localizada corretamente deve ser especificada em *ppwszDescription* nenhum valor de registro é usado. |
-| Texto do botão  | Texto do botão opcional que permite aos usuários exibir a interface do usuário do manipulador.        | Nenhum parâmetro disponível. Deve ser especificado no registro.                           | Uma cadeia de caracteres localizada corretamente deve ser especificada em *ppwszBtnText* nenhum valor de registro é usado.     |
+| Nome de Exibição | O nome do manipulador exibido na caixa de listagem do gerenciador de limpeza de disco.               | Se *ppwszDisplayName* **for NULL,** o valor padrão será recuperado do Registro. | Uma cadeia de caracteres localizada corretamente deve ser especificada *em ppwszDisplayName.* Nenhum valor do Registro é usado. |
+| Descrição  | Texto descritivo exibido abaixo da caixa de listagem quando o nome do manipulador é selecionado. | Se *ppwszDescription* for **NULL,** o valor padrão será recuperado do Registro. | Uma cadeia de caracteres localizada corretamente deve ser especificada *em ppwszDescription.* Nenhum valor do Registro é usado. |
+| Texto do botão  | Texto para o botão opcional que permite aos usuários exibir a interface do usuário do manipulador.        | Nenhum parâmetro disponível. Deve ser especificado no Registro.                           | Uma cadeia de caracteres localizada corretamente deve ser especificada *em ppwszBtnText,* nenhum valor do Registro é usado.     |
 
 
 
  
 
-O parâmetro *pdwFlags* encontrado em ambos os métodos de inicialização reconhece o mesmo conjunto de sinalizadores. Dois desses sinalizadores são passados para o método pelo Gerenciador de limpeza de disco.
+O *parâmetro pdwFlags* encontrado em ambos os métodos de inicialização reconhece o mesmo conjunto de sinalizadores. Dois desses sinalizadores são passados para o método pelo gerenciador de limpeza de disco.
 
--   **EVCF \_ settingsmode**
+-   **EVCF \_ SETTINGSMODE**
 
-    Se o Gerenciador de limpeza de disco estiver sendo executado em um agendamento, ele definirá o sinalizador **EVCF \_ settingsmode** . Se esse sinalizador estiver definido, o Gerenciador de limpeza de disco não chamará os métodos [GetSpaceUsed](#getspaceused), [Purge](#purge)ou [showProperties](#showproperties) . O método [**Initialize**](/windows/desktop/api/Emptyvc/nf-emptyvc-iemptyvolumecache-initialize) ou [**InitializeEx**](/windows/desktop/api/Emptyvc/nf-emptyvc-iemptyvolumecache2-initializeex) do manipulador deve lidar com todas as tarefas normalmente executadas por [**GetSpaceUsed**](/windows/desktop/api/Emptyvc/nf-emptyvc-iemptyvolumecache-getspaceused) e [**Purge**](/windows/desktop/api/Emptyvc/nf-emptyvc-iemptyvolumecache-purge). Como não há oportunidade de comentários do usuário, somente os arquivos extremamente seguros para limpeza devem ser tocadas. Você deve ignorar o parâmetro *pcwszVolume* do método de inicialização e limpar os arquivos desnecessários, independentemente de em qual unidade eles estão.
+    Se o gerenciador de limpeza de disco estiver sendo executado de acordo com um agendamento, ele definirá o sinalizador **EVCF \_ SETTINGSMODE.** Se esse sinalizador for definido, o gerenciador de limpeza de disco não chamará os métodos [GetSpaceUsed,](#getspaceused) [Purge](#purge)ou [ShowProperties.](#showproperties) O método [**Initialize ou**](/windows/desktop/api/Emptyvc/nf-emptyvc-iemptyvolumecache-initialize) [**InitializeEx**](/windows/desktop/api/Emptyvc/nf-emptyvc-iemptyvolumecache2-initializeex) do manipulador deve manipular todas as tarefas normalmente executadas por [**GetSpaceUsed**](/windows/desktop/api/Emptyvc/nf-emptyvc-iemptyvolumecache-getspaceused) e [**Limpar**](/windows/desktop/api/Emptyvc/nf-emptyvc-iemptyvolumecache-purge). Como não há nenhuma oportunidade para comentários do usuário, somente os arquivos que são extremamente seguros de limpeza devem ser tocados. Você deve ignorar o parâmetro *pcwszVolume* do método de inicialização e limpar arquivos não precisos, independentemente da unidade em que eles estão.
 
 -   **EVCF \_ OUTOFDISKSPACE**
 
-    Se o sinalizador **EVCF \_ OUTOFDISKSPACE** for definido, a unidade de disco do usuário será extremamente pequena de espaço. O manipulador deve ser agressivo em relação à exclusão de arquivos, mesmo que ele resulte em uma perda de desempenho. No entanto, o manipulador obviamente não deve excluir arquivos que poderiam causar uma falha no aplicativo ou que o usuário perca dados.
+    Se o **sinalizador EVCF \_ OUTOFDISKSPACE** estiver definido, a unidade de disco do usuário será muito curta. O manipulador deve ser agressivo quanto à exclusão de arquivos, mesmo que isso resulta em uma perda de desempenho. No entanto, o manipulador obviamente não deve excluir arquivos que causaria falha em um aplicativo ou que o usuário perca dados.
 
-Os sinalizadores restantes são definidos pelo manipulador de limpeza de disco e retornados para o Gerenciador de limpeza de disco. Para obter mais informações, consulte as páginas de referência de método para [**IEmptyVolumeCache:: Initialize**](/windows/desktop/api/Emptyvc/nf-emptyvc-iemptyvolumecache-initialize) e [**IEmptyVolumeCache2:: InitializeEx**](/windows/desktop/api/Emptyvc/nf-emptyvc-iemptyvolumecache2-initializeex).
+Os sinalizadores restantes são definidos pelo manipulador de limpeza de disco e retornados para o gerenciador de limpeza de disco. Para obter mais informações, consulte as páginas de referência de método [**para IEmptyVolumeCache::Initialize**](/windows/desktop/api/Emptyvc/nf-emptyvc-iemptyvolumecache-initialize) e [**IEmptyVolumeCache2::InitializeEx**](/windows/desktop/api/Emptyvc/nf-emptyvc-iemptyvolumecache2-initializeex).
 
 -   EVCF \_ DONTSHOWIFZERO
 
-    Exiba o manipulador na caixa de listagem do Gerenciador de limpeza de disco somente se o valor retornado por [**GetSpaceUsed**](/windows/desktop/api/Emptyvc/nf-emptyvc-iemptyvolumecache-getspaceused) indicar que o manipulador pode liberar algum espaço em disco.
+    Exibir o manipulador na caixa de listagem do gerenciador de limpeza de disco somente se o valor retornado por [**GetSpaceUsed**](/windows/desktop/api/Emptyvc/nf-emptyvc-iemptyvolumecache-getspaceused) indicar que o manipulador pode liberar algum espaço em disco.
 
 -   EVCF \_ ENABLEBYDEFAULT
 
-    Especifica que o manipulador está habilitado por padrão. Ele será executado toda vez que uma limpeza de disco ocorrer, a menos que o usuário a desative, desmarcando sua caixa de seleção na lista de manipuladores do Gerenciador de limpeza de disco.
+    Especifica que o manipulador está habilitado por padrão. Ele será executado sempre que uma limpeza de disco ocorrer, a menos que o usuário o desabilite desempaque sua caixa de seleção na lista de manipuladores do gerenciador de limpeza de disco.
 
--   EVCF \_ ENABLEBYDEFAULT \_ auto
+-   EVCF \_ ENABLEBYDEFAULT \_ AUTO
 
-    Especifica que o manipulador é habilitado automaticamente para execução durante as limpezas agendadas.
+    Especifica que o manipulador é habilitado automaticamente para ser executado durante as limpezas agendadas.
 
 -   EVCF \_ HASSETTINGS
 
-    Defina esse sinalizador se o seu manipulador tiver uma interface do usuário para exibir. Em resposta, o Gerenciador de limpeza de disco exibe um botão quando esse manipulador é selecionado na caixa de listagem. Se esse botão for clicado, o Gerenciador de limpeza de disco chamará [**mostrarproperties**](/windows/desktop/api/Emptyvc/nf-emptyvc-iemptyvolumecache-showproperties).
+    De definir esse sinalizador se o manipulador tiver uma interface do usuário a ser exibida. Em resposta, o gerenciador de limpeza de disco exibe um botão quando esse manipulador é selecionado na caixa de listagem. Se esse botão for clicado, o gerenciador de limpeza de disco [**chamará ShowProperties**](/windows/desktop/api/Emptyvc/nf-emptyvc-iemptyvolumecache-showproperties).
 
 -   EVCF \_ REMOVEFROMLIST
 
-    Exclua o nome do manipulador da lista de manipuladores disponíveis depois que o manipulador tiver sido executado uma vez. As informações de registro do manipulador também são excluídas.
+    Exclua o nome do manipulador da lista de manipuladores disponíveis depois que o manipulador tiver sido executado uma vez. As informações do registro do manipulador também são excluídas.
 
 ### <a name="getspaceused"></a>GetSpaceUsed
 
-O Gerenciador de limpeza de disco chama esse método para determinar a quantidade de espaço que um manipulador de limpeza de disco pode liberar. Em seguida, o Gerenciador de limpeza de disco exibe esse valor à direita do nome do manipulador na caixa de listagem. Essa operação é executada em todos os manipuladores registrados com o Gerenciador de limpeza de disco quando o gerente é iniciado e antes da interface do usuário principal do gerente ser exibida. Quando [**GetSpaceUsed**](/windows/desktop/api/Emptyvc/nf-emptyvc-iemptyvolumecache-getspaceused) é chamado, o manipulador deve verificar os arquivos dos quais ele é responsável, determinar quais deles são candidatos à limpeza e retornar a quantidade de espaço em disco que ele pode liberar.
+O gerenciador de limpeza de disco chama esse método para determinar quanto espaço um manipulador de limpeza de disco pode liberar potencialmente. Em seguida, o gerenciador de limpeza de disco exibe esse valor à direita do nome do manipulador na caixa de listagem. Essa operação é executada em todos os manipuladores registrados com o gerenciador de limpeza de disco quando o gerenciador é lançado e antes que a interface do usuário principal do gerenciador seja exibida. Quando [**GetSpaceUsed**](/windows/desktop/api/Emptyvc/nf-emptyvc-iemptyvolumecache-getspaceused) é chamado, o manipulador deve verificar os arquivos pelos quais ele é responsável, determinar quais deles são candidatos à limpeza e retornar a quantidade de espaço em disco que ele pode liberar.
 
-Como a verificação pode ser um processo demorado, o Gerenciador de limpeza de disco usa o parâmetro *picb* do método para passar um ponteiro para uma interface [**IEmptyVolumeCacheCallBack**](/windows/desktop/api/Emptyvc/nn-emptyvc-iemptyvolumecachecallback) . O manipulador usa a interface periodicamente durante a verificação para chamar [**IEmptyVolumeCacheCallBack:: ScanProgress**](/windows/desktop/api/Emptyvc/nf-emptyvc-iemptyvolumecachecallback-scanprogress), que atende a duas finalidades.
+Como a verificação pode ser um processo demorado, o gerenciador de limpeza de disco usa o parâmetro *picb* desse método para passar um ponteiro para uma interface [**IEmptyVolumeCacheCallBack.**](/windows/desktop/api/Emptyvc/nn-emptyvc-iemptyvolumecachecallback) O manipulador usa a interface periodicamente durante a verificação para chamar [**IEmptyVolumeCacheCallBack::ScanProgress,**](/windows/desktop/api/Emptyvc/nf-emptyvc-iemptyvolumecachecallback-scanprogress)que atende a duas finalidades.
 
--   Permite que o Gerenciador de limpeza de disco atualize uma barra de progresso, informando ao usuário como a verificação está progredindo.
--   Notifica o manipulador para interromper a verificação caso o botão **Cancelar** da janela de progresso seja clicado. Esse evento de botão não é comunicado diretamente ao manipulador; em vez disso, o Gerenciador de limpeza de disco retorna E \_ aborta na próxima vez em que [**GetSpaceUsed**](/windows/desktop/api/Emptyvc/nf-emptyvc-iemptyvolumecache-getspaceused) chama [**IEmptyVolumeCacheCallBack:: ScanProgress**](/windows/desktop/api/Emptyvc/nf-emptyvc-iemptyvolumecachecallback-scanprogress).
+-   Permite que o gerenciador de limpeza de disco atualize uma barra de progresso, informando ao usuário como a verificação está progredindo.
+-   Notifica o manipulador para interromper a verificação caso o  botão Cancelar da janela de progresso seja clicado. Esse evento de botão não é comunicado diretamente ao manipulador; em vez disso, o gerenciador de limpeza de disco retorna E ABORT na próxima vez que \_ [**GetSpaceUsed**](/windows/desktop/api/Emptyvc/nf-emptyvc-iemptyvolumecache-getspaceused) chamar [**IEmptyVolumeCacheCallBack::ScanProgress**](/windows/desktop/api/Emptyvc/nf-emptyvc-iemptyvolumecachecallback-scanprogress).
 
-### <a name="showproperties"></a>Mostrarproperties
+### <a name="showproperties"></a>ShowProperties
 
-antes de iniciar a limpeza, o manipulador pode exibir uma interface do usuário normalmente na forma de uma janela Windows Explorer que permite ao usuário ver uma lista de arquivos ou classes de arquivos selecionados para limpeza pelo manipulador. Se o manipulador define o sinalizador **EVCF \_ HASSETTINGS** quando [**Initialize**](/windows/desktop/api/Emptyvc/nf-emptyvc-iemptyvolumecache-initialize) ou [**InitializeEx**](/windows/desktop/api/Emptyvc/nf-emptyvc-iemptyvolumecache2-initializeex) é chamado, o usuário pode solicitar a interface do usuário clicando no botão exibido para essa finalidade no Gerenciador de limpeza de disco. O texto do botão varia de um manipulador para um manipulador, mas "exibir arquivos", "exibir páginas" e "opções" são rótulos comuns.
+Antes de iniciar a limpeza, o manipulador pode exibir uma interface do usuário normalmente na forma de uma janela do gerenciador do Windows que permite que o usuário veja uma lista de arquivos ou classes de arquivos selecionados para limpeza pelo manipulador. Se o manipulador define o sinalizador **EVCF \_ HASSETTINGS** quando [**Initialize**](/windows/desktop/api/Emptyvc/nf-emptyvc-iemptyvolumecache-initialize) ou [**InitializeEx**](/windows/desktop/api/Emptyvc/nf-emptyvc-iemptyvolumecache2-initializeex) é chamado, o usuário pode solicitar a interface do usuário clicando no botão exibido para essa finalidade no gerenciador de limpeza de disco. O texto do botão varia de manipulador para manipulador, mas "Exibir Arquivos", "Exibir Páginas" e "Opções" são rótulos comuns.
 
-Quando o botão é clicado, o Gerenciador de limpeza de disco chama [**mostrarproperties**](/windows/desktop/api/Emptyvc/nf-emptyvc-iemptyvolumecache-showproperties) para solicitar que o manipulador exiba a interface do usuário. A interface do usuário deve ser criada como um filho da janela cujo identificador é passado no parâmetro *HWND* do método **showProperties** .
+Quando o botão é clicado, o gerenciador de limpeza de disco chama [**ShowProperties**](/windows/desktop/api/Emptyvc/nf-emptyvc-iemptyvolumecache-showproperties) para solicitar ao manipulador para exibir a interface do usuário. A interface do usuário deve ser criada como um filho da janela cujo handle é passado no parâmetro *hwnd* do método **ShowProperties.**
 
 ### <a name="purge"></a>Limpar
 
-O Gerenciador de limpeza de disco chama o [**método de limpeza do**](/windows/desktop/api/Emptyvc/nf-emptyvc-iemptyvolumecache-purge) manipulador para definir a limpeza em movimento. O parâmetro *picb* do método é um ponteiro para a interface [**IEmptyVolumeCacheCallBack**](/windows/desktop/api/Emptyvc/nn-emptyvc-iemptyvolumecachecallback) do Gerenciador de limpeza de disco. Assim como com o método [**GetSpaceUsed**](/windows/desktop/api/Emptyvc/nf-emptyvc-iemptyvolumecache-getspaceused) , o manipulador deve usar a interface de retorno de chamada periodicamente para relatar seu progresso e consultar o Gerenciador de limpeza de disco se o usuário clicou em **Cancelar**. No entanto, observe que o método **Purge** deve chamar [**IEmptyVolumeCacheCallBack::P Urgeprogress**](/windows/desktop/api/Emptyvc/nf-emptyvc-iemptyvolumecachecallback-purgeprogress), não [**ScanProgress**](/windows/desktop/api/Emptyvc/nf-emptyvc-iemptyvolumecachecallback-scanprogress).
+O gerenciador de limpeza de disco chama o método [**Purge**](/windows/desktop/api/Emptyvc/nf-emptyvc-iemptyvolumecache-purge) do manipulador para definir a limpeza em movimento. O parâmetro *picb* do método é um ponteiro para a interface [**IEmptyVolumeCacheCallBack**](/windows/desktop/api/Emptyvc/nn-emptyvc-iemptyvolumecachecallback) do gerenciador de limpeza de disco. Assim como com o [**método GetSpaceUsed,**](/windows/desktop/api/Emptyvc/nf-emptyvc-iemptyvolumecache-getspaceused) o manipulador deve usar a interface de retorno de chamada periodicamente para relatar seu progresso e consultar o gerenciador de limpeza de disco se o usuário clicou **em Cancelar**. No entanto, observe que o método **Purge** deve chamar [**IEmptyVolumeCacheCallBack::P eProgress,**](/windows/desktop/api/Emptyvc/nf-emptyvc-iemptyvolumecachecallback-purgeprogress)não [**ScanProgress.**](/windows/desktop/api/Emptyvc/nf-emptyvc-iemptyvolumecachecallback-scanprogress)
 
 ### <a name="deactivate"></a>Desativar
 
-O método [**Deactivate**](/windows/desktop/api/Emptyvc/nf-emptyvc-iemptyvolumecache-deactivate) é chamado quando o Gerenciador de limpeza de disco está se preparando para desligar. O manipulador deve executar todas as tarefas de limpeza necessárias e retornar. Se você não quiser que o manipulador seja executado novamente, defina o sinalizador **EVCF \_ REMOVEFROMLIST** no parâmetro *pdwFlags* do método de inicialização. Se esse sinalizador for definido, o Gerenciador de limpeza de disco removerá o manipulador de sua lista e excluirá as entradas do registro do manipulador. Você deve adicionar novamente as entradas do registro para executar o manipulador novamente. Esse sinalizador é normalmente usado para manipuladores que são executados apenas uma vez.
+O [**método Desativar é**](/windows/desktop/api/Emptyvc/nf-emptyvc-iemptyvolumecache-deactivate) chamado quando o gerenciador de limpeza de disco está se preparando para desligar. O manipulador deve executar as tarefas de limpeza necessárias e retornar. Se você não quiser que o manipulador seja executado novamente, defina o sinalizador **\_ REMOVEFROMLIST EVCF** no parâmetro *pdwFlags do* método de inicialização. Se esse sinalizador for definido, o gerenciador de limpeza de disco removerá o manipulador de sua lista e excluirá as entradas do Registro do manipulador. Você deve adicionar novamente as entradas do Registro para executar o manipulador novamente. Normalmente, esse sinalizador é usado para manipuladores que são executados apenas uma vez.
 
 ## <a name="registering-a-disk-cleanup-handler"></a>Registrando um manipulador de limpeza de disco
 
-para adicionar um manipulador à lista do gerenciador de limpeza de disco, determinadas chaves e valores devem ser adicionados ao registro de Windows.
+Para adicionar um manipulador à lista do gerenciador de limpeza de disco, determinadas chaves e valores devem ser adicionados ao Windows registro.
 
 -   [Registrando o CLSID de um manipulador](#registering-a-handlers-clsid)
--   [Registrando um manipulador com o Gerenciador de limpeza de disco: geral](#registering-a-handler-with-the-disk-cleanup-manager-general)
--   [registrando um manipulador com o gerenciador de limpeza de disco: Windows 2000 ou sistemas posteriores](#registering-a-handler-with-the-disk-cleanup-manager-windows-2000-or-later-systems)
+-   [Registrando um manipulador com o Gerenciador de Limpeza de Disco: Geral](#registering-a-handler-with-the-disk-cleanup-manager-general)
+-   [Registrando um manipulador com o Gerenciador de Limpeza de Disco: Windows 2000 ou sistemas posteriores](#registering-a-handler-with-the-disk-cleanup-manager-windows-2000-or-later-systems)
 -   [Usando o objeto DataDrivenCleaner](#using-the-datadrivencleaner-object)
 -   [Exemplo de registro de um manipulador de limpeza de disco](#example-registration-of-a-disk-cleanup-handler)
 
 ### <a name="registering-a-handlers-clsid"></a>Registrando o CLSID de um manipulador
 
-Assim como com todos os objetos COM, o GUID e a DLL do objeto Handler devem ser registrados sob a chave **CLSID** na **\_ \_ raiz de classes hKey**. Você também pode registrar um ícone que é exibido ao lado do nome do manipulador na caixa de listagem do Gerenciador de limpeza de disco, mas isso é opcional. O exemplo a seguir mostra as chaves, os valores e os dados envolvidos.
+Assim como com todos os objetos COM, o GUID e a DLL do objeto do manipulador devem ser registrados na **chave CLSID** em **CLASSES HKEY \_ \_ ROOT**. Você também pode registrar um ícone exibido ao lado do nome do manipulador na caixa de listagem do gerenciador de limpeza de disco, mas isso é opcional. O exemplo a seguir mostra as chaves, os valores e os dados envolvidos.
 
 ```
 HKEY_CLASSES_ROOT
@@ -197,9 +197,9 @@ HKEY_CLASSES_ROOT
             ThreadingModel = Apartment
 ```
 
-### <a name="registering-a-handler-with-the-disk-cleanup-manager-general"></a>Registrando um manipulador com o Gerenciador de limpeza de disco: geral
+### <a name="registering-a-handler-with-the-disk-cleanup-manager-general"></a>Registrando um manipulador com o Gerenciador de Limpeza de Disco: Geral
 
-Para concluir o registro, um manipulador deve adicionar uma chave que contém suas especificidades, conforme mostrado aqui. O restante desta seção aborda o conteúdo dessa chave.
+Para concluir o registro, um manipulador deve adicionar uma chave que mantém suas especificações, conforme mostrado aqui. O restante desta seção aborda o conteúdo dessa chave.
 
 ```
 HKEY_LOCAL_MACHINE
@@ -212,10 +212,10 @@ HKEY_LOCAL_MACHINE
                      Handler's Key
 ```
 
-Em geral, o nome da chave que contém as particularidades de um manipulador é nomeado para o tipo de arquivo que ele manipula, como **arquivos de programas baixados**, mas isso não é um requisito. A tabela a seguir detalha os possíveis valores encontrados nessa chave.
+Em geral, o nome da chave que mantém as particularidades de um manipulador é nomeado para o tipo de arquivo que ele trata, como Arquivos de Programas Baixados, mas isso não é um requisito. A tabela a seguir detalha os possíveis valores encontrados nessa chave.
 
 > [!Note]  
-> Somente o valor padrão que especifica o identificador de classe do manipulador (CLSID) é necessário todos os outros valores são opcionais.
+> Somente o valor Padrão que especifica o CLSID (identificador de classe) do manipulador é necessário, todos os outros valores são opcionais.
 
  
 
@@ -238,90 +238,90 @@ Em geral, o nome da chave que contém as particularidades de um manipulador é n
 <tr class="odd">
 <td>Padrão</td>
 <td>REG_SZ</td>
-<td>O CLSID do manipulador, conforme registrado em <strong>HKEY_CLASSES_ROOT</strong> \ <strong>CLSID</strong>.</td>
+<td>CLSID do manipulador conforme registrado em <strong>HKEY_CLASSES_ROOT</strong> \ <strong>CLSID</strong>.</td>
 </tr>
 <tr class="even">
 <td>AdvancedButtonText</td>
 <td>REG_SZ</td>
-<td>Texto do botão opcional no qual os usuários podem clicar para exibir a interface do usuário do manipulador. O caractere de & pode ser colocado antes de um caractere para atribuir um atalho de teclado para o botão. O valor de AdvancedButtonText é ignorado por manipuladores expondo <a href="/windows/desktop/api/Emptyvc/nf-emptyvc-iemptyvolumecache2-initializeex"><strong>IEmptyVolumeCache2:: InitializeEx</strong></a>.</td>
+<td>Texto para o botão opcional que os usuários podem clicar para exibir a interface do usuário do manipulador. O & caractere pode ser colocado antes de um caractere para atribuir um atalho de teclado para o botão. O valor AdvancedButtonText é ignorado por manipuladores que expõem <a href="/windows/desktop/api/Emptyvc/nf-emptyvc-iemptyvolumecache2-initializeex"><strong>IEmptyVolumeCache2::InitializeEx.</strong></a></td>
 </tr>
 <tr class="odd">
-<td>Limpeza</td>
+<td>CleanupString</td>
 <td>REG_SZ</td>
-<td>Linha de comando especificando um arquivo executável e parâmetros de linha de comando opcionais. Essa linha de comando é executada na conclusão da limpeza de disco.</td>
+<td>Linha de comando especificando um arquivo executável e parâmetros opcionais de linha de comando. Essa linha de comando é executado na conclusão da limpeza do disco.</td>
 </tr>
 <tr class="even">
-<td>CSIDl</td>
+<td>Csidl</td>
 <td>REG_DWORD</td>
-<td>Um identificador independente do sistema para uma pasta especial a ser incluída na pesquisa de arquivo. Esse valor deve ser inserido como um valor numérico para a instância, 0x0000001c em vez de CSIDL_LOCAL_APPDATA. Para obter uma lista de valores possíveis, consulte <a href="/windows/desktop/shell/csidl"><strong>CSIDL</strong></a>. Apenas um único valor pode ser usado.<br/> Se o valor da pasta for especificado, o local indicado pelo valor CSIDl será anexado a essas informações para compor um caminho de pesquisa. Por exemplo, considere o cenário a seguir.<br/>
+<td>Um identificador independente do sistema para uma pasta especial a ser incluído na pesquisa de arquivos. Esse valor deve ser inserido como um valor numérico, por exemplo, 0x0000001c em vez de CSIDL_LOCAL_APPDATA. Para ver uma lista de valores possíveis, consulte <a href="/windows/desktop/shell/csidl"><strong>CSIDL</strong></a>. Somente um único valor pode ser usado.<br/> Se o valor pasta for especificado, o local indicado pelo valor CSIDL será anexado a essas informações para compor um caminho de pesquisa. Por exemplo, considere o cenário a seguir.<br/>
 <ul>
-<li>O valor CSIDl é especificado como 0x0000000d (CSIDL_MYMUSIC)</li>
-<li>sua pasta minhas músicas está localizada em C:\Documents and Configurações \<em>nomedeusuário</em>\meus Music</li>
-<li>O valor da pasta contém &quot; Jazz\Singers&quot;</li>
+<li>O valor CSIDL é especificado como 0x0000000d (CSIDL_MYMUSIC)</li>
+<li>A pasta Minha Música está localizada em C:\Documents e Configurações\<em>nome de usuário</em>\My Music</li>
+<li>O valor De pasta &quot; contém Jazz\Jazzs&quot;</li>
 </ul>
-o resultado desse cenário é que o manipulador de limpeza de disco pesquisa a pasta C:\Documents and Configurações \<em>nomedeusuário</em>\meus Music\Jazz\Singers Observe que a barra que precede o valor da pasta será adicionada se não estiver presente.<br/></td>
+O resultado desse cenário é que o manipulador de limpeza de disco pesquisa a pasta C:\Documents e Configurações\<em>username</em>\My Music\Jazz\Countrys. Observe que a barra que precede o valor Pasta será adicionada se não estiver presente.<br/></td>
 </tr>
 <tr class="odd">
 <td>Descrição</td>
 <td>REG_SZ</td>
-<td>Texto descritivo exibido abaixo da caixa de listagem do Gerenciador de limpeza de disco quando o nome do manipulador é selecionado. Aqui você pode explicar o que o manipulador faz, em quais arquivos ele se preocupa e quaisquer outras informações elucidatory ao usuário. Se <a href="/windows/desktop/api/Emptyvc/nf-emptyvc-iemptyvolumecache2-initializeex"><strong>IEmptyVolumeCache2:: InitializeEx</strong></a> não for exposto pelo manipulador, esse texto poderá ser substituído por meio do método <a href="/windows/desktop/api/Emptyvc/nf-emptyvc-iemptyvolumecache-initialize"><strong>IEmptyVolumeCache:: Initialize</strong></a> do manipulador, especificando uma cadeia de caracteres alternativa no parâmetro <em>ppwszDescription</em> quando o método for chamado.</td>
+<td>Texto descritivo exibido abaixo da caixa de listagem do gerenciador de limpeza de disco quando o nome do manipulador é selecionado. Aqui, você pode explicar o que o manipulador faz, com quais arquivos ele se preocupa e com quais outras informações o usuário se preocupa. Se <a href="/windows/desktop/api/Emptyvc/nf-emptyvc-iemptyvolumecache2-initializeex"><strong>IEmptyVolumeCache2::InitializeEx</strong></a> não for exposto pelo manipulador, esse texto poderá ser substituído por meio do método <a href="/windows/desktop/api/Emptyvc/nf-emptyvc-iemptyvolumecache-initialize"><strong>IEmptyVolumeCache::Initialize</strong></a> do manipulador especificando uma cadeia de caracteres alternativa no parâmetro <em>ppwszDescription</em> quando o método for chamado.</td>
 </tr>
 <tr class="even">
 <td>Exibir</td>
 <td>REG_SZ</td>
-<td>O nome do manipulador a ser exibido na caixa de listagem do Gerenciador de limpeza de disco. Se <a href="/windows/desktop/api/Emptyvc/nf-emptyvc-iemptyvolumecache2-initializeex"><strong>IEmptyVolumeCache2:: InitializeEx</strong></a> não for exposto pelo manipulador, esse texto poderá ser substituído por meio do método <a href="/windows/desktop/api/Emptyvc/nf-emptyvc-iemptyvolumecache-initialize"><strong>IEmptyVolumeCache:: Initialize</strong></a> do manipulador, especificando uma cadeia de caracteres alternativa no parâmetro <em>ppwszDisplayName</em> quando o método for chamado.</td>
+<td>O nome do manipulador a ser exibido na caixa de listagem do gerenciador de limpeza de disco. Se <a href="/windows/desktop/api/Emptyvc/nf-emptyvc-iemptyvolumecache2-initializeex"><strong>IEmptyVolumeCache2::InitializeEx</strong></a> não for exposto pelo manipulador, esse texto poderá ser substituído por meio do método <a href="/windows/desktop/api/Emptyvc/nf-emptyvc-iemptyvolumecache-initialize"><strong>IEmptyVolumeCache::Initialize</strong></a> do manipulador especificando uma cadeia de caracteres alternativa no parâmetro <em>ppwszDisplayName</em> quando o método for chamado.</td>
 </tr>
 <tr class="odd">
-<td>File</td>
+<td>Filelist</td>
 <td>REG_SZ ou REG_MULTI_SZ</td>
-<td>Uma lista de arquivos pesquisados e limpos por esse manipulador. Você pode especificar curingas usando o? ou * caracteres. Se o valor for do tipo REG_SZ, várias extensões serão separadas usando o | ou: caracteres, sem espaços em ambos os lados.<br/> Se o sinalizador de DDEVCF_REMOVEDIRS for definido no valor de flags, esses valores poderão especificar nomes de diretório, bem como arquivos.<br/></td>
+<td>Uma lista de arquivos pesquisados e limpos por esse manipulador. Você pode especificar curingas usando o ? ou * caracteres. Se o valor for do tipo REG_SZ, várias extensões serão separadas usando o | ou : caracteres, sem espaços em nenhum dos lados deles.<br/> Se o DDEVCF_REMOVEDIRS sinalizador for definido no valor Sinalizadores, esses valores poderão especificar nomes de diretório, bem como arquivos.<br/></td>
 </tr>
 <tr class="even">
 <td>Flags</td>
 <td>REG_DWORD ou REG_BINARY</td>
-<td>Sinalizadores que controlam os elementos do procedimento de pesquisa e limpeza. Um ou mais dos valores a seguir.
+<td>Sinalizadores que controlam elementos do procedimento de pesquisa e limpeza. Um ou mais dos valores a seguir.
 <ul>
-<li>DDEVCF_DOSUBDIRS (0x00000001). Pesquisar e remover recursivamente.</li>
-<li>DDEVCF_REMOVEAFTERCLEAN (0x00000002). Depois que o manipulador for executado uma vez, remova-o do registro.</li>
-<li>DDEVCF_REMOVEREADONLY (0x00000004). Remova os arquivos que atendem aos critérios de pesquisa, mesmo que eles sejam somente leitura.</li>
-<li>DDEVCF_REMOVESYSTEM (0x00000008). Remova os arquivos que atendem aos critérios de pesquisa, mesmo que eles sejam arquivos do sistema.</li>
-<li>DDEVCF_REMOVEHIDDEN (0x00000010). Remova os arquivos que atendem aos critérios de pesquisa, mesmo que eles sejam arquivos ocultos.</li>
-<li>DDEVCF_DONTSHOWIFZERO (0x00000020). Não exibirá esse manipulador no Gerenciador de limpeza de disco se nenhum arquivo corresponder aos seus critérios de pesquisa.</li>
-<li>DDEVCF_REMOVEDIRS (0x00000040). Corresponder o valor de Filelist em diretórios e remover correspondências e todos os seus subdiretórios.</li>
-<li>DDEVCF_RUNIFOUTOFDISKSPACE (0x00000080). Execute esse manipulador somente se o espaço em disco disponível estiver abaixo do valor crítico, determinado pelo Gerenciador de limpeza de disco definindo o sinalizador de EVCF_OUTOFDISKSPACE por meio de <a href="/windows/desktop/api/Emptyvc/nf-emptyvc-iemptyvolumecache-initialize"><strong>IEmptyVolumeCache:: Initialize</strong></a> ou <a href="/windows/desktop/api/Emptyvc/nf-emptyvc-iemptyvolumecache2-initializeex"><strong>IEmptyVolumeCache2:: InitializeEx</strong></a>.</li>
-<li>DDEVCF_REMOVEPARENTDIR (0x00000100). Remova o diretório pai dos arquivos especificados quando o limpador tiver sido executado.</li>
-<li>DDEVCF_PRIVATE_LASTACCESS (0x10000000). Use o valor LastAccess, se fornecido, em concerto quais arquivos devem ser limpos. Esse sinalizador é ignorado ao usar o <a href="#using-the-datadrivencleaner-object">DataDrivenCleaner</a> qualquer valor LastAccess fornecido é sempre usado.</li>
+<li>DDEVCF_DOSUBDIRS (0x00000001). Pesquise e remova recursivamente.</li>
+<li>DDEVCF_REMOVEAFTERCLEAN (0x00000002). Depois que o manipulador for executado uma vez, remova-o do Registro.</li>
+<li>DDEVCF_REMOVEREADONLY (0x00000004). Remova os arquivos que atendem aos critérios de pesquisa mesmo se eles são somente leitura.</li>
+<li>DDEVCF_REMOVESYSTEM (0x00000008). Remova os arquivos que atendem aos critérios de pesquisa mesmo se eles são arquivos do sistema.</li>
+<li>DDEVCF_REMOVEHIDDEN (0x00000010). Remova os arquivos que atendem aos critérios de pesquisa mesmo se eles são arquivos ocultos.</li>
+<li>DDEVCF_DONTSHOWIFZERO (0x00000020). Não ex exibir esse manipulador no gerenciador de limpeza de disco se nenhum arquivo corresponder aos critérios de pesquisa.</li>
+<li>DDEVCF_REMOVEDIRS (0x00000040). Corresponder o valor FileList aos diretórios e remover as correspondeções e todos os seus subdireários.</li>
+<li>DDEVCF_RUNIFOUTOFDISKSPACE (0x00000080). Execute esse manipulador somente se o espaço em disco disponível estiver abaixo do valor crítico, determinado pelo gerenciador de limpeza de disco definindo o sinalizador EVCF_OUTOFDISKSPACE por meio de <a href="/windows/desktop/api/Emptyvc/nf-emptyvc-iemptyvolumecache-initialize"><strong>IEmptyVolumeCache::Initialize</strong></a> ou <a href="/windows/desktop/api/Emptyvc/nf-emptyvc-iemptyvolumecache2-initializeex"><strong>IEmptyVolumeCache2::InitializeEx</strong></a>.</li>
+<li>DDEVCF_REMOVEPARENTDIR (0x00000100). Remova o diretório pai dos arquivos especificados depois que o limpeza for executado.</li>
+<li>DDEVCF_PRIVATE_LASTACCESS (0x10000000). Use o valor LastAccess, se fornecido, para determinar quais arquivos devem ser limpos. Esse sinalizador é ignorado ao usar <a href="#using-the-datadrivencleaner-object">o DataDrivenCleaner,</a> qualquer valor LastAccess fornecido sempre é usado.</li>
 </ul></td>
 </tr>
 <tr class="odd">
 <td>Pasta</td>
 <td>REG_SZ, REG_MULTI_SZ ou REG_EXPAND_SZ</td>
-<td>Uma pasta ou pastas específicas para procurar itens que correspondem a entradas no valor de FileList. Você pode especificar curingas usando o? ou * caracteres. Se o valor for do tipo REG_SZ, vários nomes de pastas serão separados usando o | caractere, sem espaços em ambos os lados.<br/> Se um valor CSIDl estiver presente, somente uma pasta poderá ser especificada nesse valor. O local indicado pelo valor CSIDl é anexado a esse caminho de pasta para compor um caminho de pesquisa. Para obter um exemplo, consulte a descrição do valor CSIDl.<br/> se esse valor estiver ausente no Windows Vista Service Pack 1 (SP1) e posterior, o manipulador de limpeza será ignorado e ele retornará S_FALSE na inicialização.<br/> se esse valor estiver ausente na versão original do Windows Vista e anterior, a pasta raiz do volume atual será usada. O sinalizador de DDEVCF_DOSUBDIRS é necessário nesse caso para pesquisar a unidade inteira. Sem ele, somente a própria pasta raiz é pesquisada.<br/> Uma unidade ou unidades devem ser especificadas. Isso pode ser fornecido por meio do valor CSIDl ou por meio de uma cadeia de caracteres REG_EXPAND_SZ. No entanto, o bloqueio dessas opções, no entanto, a unidade a ser pesquisada deve ser especificada no nome da pasta. Usar?: para pesquisar a pasta na unidade atual.<br/></td>
+<td>Uma pasta ou pastas específicas para pesquisar itens correspondentes a entradas no valor FileList. Você pode especificar curingas usando o ? ou * caracteres. Se o valor for do tipo REG_SZ, vários nomes de pasta serão separados usando o | caractere, sem espaços em nenhum dos lados dele.<br/> Se um valor CSIDL estiver presente, somente uma pasta poderá ser especificada nesse valor. O local indicado pelo valor CSIDL é anexado a esse caminho de pasta para compor um caminho de pesquisa. Para ver um exemplo, consulte a descrição do valor CSIDL.<br/> Se esse valor estiver ausente no Windows Vista Service Pack 1 (SP1) e posterior, o manipulador de limpeza será ignorado e retornará S_FALSE na inicialização.<br/> Se esse valor estiver ausente na versão original do Windows Vista e anterior, a pasta raiz do volume atual será usada. O DDEVCF_DOSUBDIRS sinalizador é necessário nesse caso para pesquisar toda a unidade. Sem ele, somente a pasta raiz em si é pesquisada.<br/> Uma unidade ou unidades devem ser especificadas. Isso pode ser fornecido por meio do valor CSIDL ou por meio de uma REG_EXPAND_SZ de caracteres. No entanto, a unidade a ser pesquisada deve ser especificada no nome da pasta. Use ?: para pesquisar a pasta na unidade atual.<br/></td>
 </tr>
 <tr class="even">
 <td>IconPath</td>
 <td>REG_SZ ou REG_EXPAND_SZ</td>
-<td>O caminho para o recurso do qual obter um ícone para usar em associação com o manipulador.</td>
+<td>O caminho para o recurso do qual obter um ícone a ser usado em associação com o manipulador.</td>
 </tr>
 <tr class="odd">
-<td>LastAccess</td>
+<td>Lastaccess</td>
 <td>REG_DWORD ou REG_BINARY</td>
-<td>O número de dias que devem ter decorrido desde que um arquivo foi acessado pela última vez ou que um diretório foi criado para esse arquivo ou diretório ser considerado para limpeza.</td>
+<td>O número de dias que devem ter decorrido desde que um arquivo foi acessado pela última vez ou um diretório foi criado para que esse arquivo ou diretório seja considerado para limpeza.</td>
 </tr>
 <tr class="even">
 <td>Prioridade</td>
 <td>REG_DWORD ou REG_BINARY</td>
-<td>Determina a ordem em que o manipulador é executado em relação a outros manipuladores. Quanto maior o número, anteriormente no processo em que o manipulador é executado. Não há um intervalo definido, nenhum número é aceitável.</td>
+<td>Determina a ordem em que o manipulador é executado em relação a outros manipuladores. Quanto maior o número, mais cedo no processo que o manipulador executa. Não há nenhum intervalo definido, nenhum número é aceitável.</td>
 </tr>
 <tr class="odd">
-<td>PropertyBag</td>
+<td>Propertybag</td>
 <td>REG_SZ</td>
-<td>O CLSID de um recurso usado para fornecer texto localizado para o nome de exibição, a descrição e o texto do botão. esse recurso é útil na situação em que um manipulador não implementa <a href="/windows/desktop/api/Emptyvc/nn-emptyvc-iemptyvolumecache"><strong>IEmptyVolumeCache</strong></a> e o manipulador está sendo executado no Microsoft Windows NT ou Windows XP.<br/> O Gerenciador de limpeza de disco verifica primeiro se a rotina de inicialização do manipulador retornou essas cadeias de caracteres, como seria o caso quando <a href="/windows/desktop/api/Emptyvc/nn-emptyvc-iemptyvolumecache2"><strong>IEmptyVolumeCache2</strong></a> é implementado. Com falha, o gerente avançará para um conjunto de propriedades chamado nesse valor. Se nenhum tiver sido fornecido, ele recuperará o texto do registro.<br/></td>
+<td>O CLSID de um recurso usado para fornecer texto localizado para o nome de exibição, a descrição e o texto do botão. Esse recurso é útil na situação em que um manipulador não implementa <a href="/windows/desktop/api/Emptyvc/nn-emptyvc-iemptyvolumecache"><strong>IEmptyVolumeCache</strong></a> e o manipulador está sendo executado no Microsoft Windows NT ou Windows XP.<br/> O gerenciador de limpeza de disco primeiro verifica se a rotina de inicialização do manipulador retornou essas cadeias de caracteres, como seria o caso quando <a href="/windows/desktop/api/Emptyvc/nn-emptyvc-iemptyvolumecache2"><strong>IEmptyVolumeCache2</strong></a> é implementado. Falhando, o gerenciador se transforma em um pacote de propriedades chamado nesse valor. Se nenhum tiver sido fornecido, ele recuperará o texto do Registro.<br/></td>
 </tr>
 <tr class="even">
 <td>StateFlags</td>
 <td>REG_DWORD</td>
-<td>Ao executar o arquivo executável do Gerenciador de limpeza de disco Cleanmgr.exe de uma linha de comando, você pode declarar <em>perfis</em>de limpeza. Esses perfis são compostos por um subconjunto dos manipuladores disponíveis e têm um rótulo numérico exclusivo. Isso permite automatizar a execução de diferentes conjuntos de manipuladores em momentos diferentes.<br/> A linha de &quot; comandocleanmgr.exe /sageset:<strong>nnnn,</strong>em que &quot; <strong>nnnn</strong> é um rótulo numérico exclusivo, exibe uma interface do usuário permitindo que você escolha os manipuladores a serem incluídos nesse perfil. Além de definir o perfil, o parâmetro sageset também grava um valor chamado StateFlags<strong>nnnn,</strong>em que <strong>nnnn</strong> é o rótulo usado no parâmetro , em todas as sub-chaves em <strong>VolumeCaches</strong>. Há dois valores de dados possíveis para essas entradas.
+<td>Ao executar o arquivo executável do gerenciador de limpeza de disco Cleanmgr.exe de uma linha de comando, você pode declarar perfis de <em>limpeza</em>. Esses perfis são compostos por um subconjunto dos manipuladores disponíveis e têm um rótulo numérico exclusivo. Isso permite automatizar a execução de diferentes conjuntos de manipuladores em momentos diferentes.<br/> A linha &quot; de comandocleanmgr.exe /sageset:<strong>nnnn,</strong>em que &quot; <strong>nnnn</strong> é um rótulo numérico exclusivo, exibe uma interface do usuário permitindo que você escolha os manipuladores a serem incluídos nesse perfil. Além de definir o perfil, o parâmetro sageset também grava um valor chamado StateFlags<strong>nnnn,</strong>em que <strong>nnnn</strong> é o rótulo usado no parâmetro , em todas as sub-chaves em <strong>VolumeCaches</strong>. Há dois valores de dados possíveis para essas entradas.
 <ul>
 <li>0: Não execute esse manipulador quando esse perfil for executado.</li>
 <li>2: Inclua esse manipulador quando esse perfil for executado.</li>
@@ -366,7 +366,7 @@ O DataDrivenCleaner não expõe [**IEmptyVolumeCache2,**](/windows/desktop/api/E
 
 ### <a name="example-registration-of-a-disk-cleanup-handler"></a>Exemplo de registro de um manipulador de limpeza de disco
 
-A seguir, é possível ver um exemplo de registro para um manipulador de limpeza de disco implementado pela Telefone Company. Esse manipulador implementa [**IEmptyVolumeCache**](/windows/desktop/api/Emptyvc/nn-emptyvc-iemptyvolumecache) e [**IEmptyVolumeCache2**](/windows/desktop/api/Emptyvc/nn-emptyvc-iemptyvolumecache2)e, portanto, fornece valores AdvancedButtonText, Description e Display caso seja usado em um computador executando Windows 98. O manipulador combina os valores CSIDL e Folder para pesquisar arquivos no diretório C: Arquivos de Programas O diretório Temp da Empresa Telefone e o sinalizador \\ \\ \\ DOSUBDIRS de DDEVCF são definidos para que seus subdireários também sejam \_ pesquisados. Somente os arquivos com extensões .tmp e .tpc são considerados para limpeza e o sinalizador \_ LASTACCESS PRIVADO DDEVCF é definido para que, desses arquivos, somente aqueles que não foram acessados por 14 dias ou mais sejam \_ considerados. O sinalizador DDEVCF DONTSHOWIFZERO também é definido para que o manipulador não apareça na lista, a menos que tenha encontrado candidatos \_ de limpeza.
+A seguir, é possível ver um exemplo de registro para um manipulador de limpeza de disco implementado pela Telefone Company. Esse manipulador implementa [**IEmptyVolumeCache**](/windows/desktop/api/Emptyvc/nn-emptyvc-iemptyvolumecache) e [**IEmptyVolumeCache2**](/windows/desktop/api/Emptyvc/nn-emptyvc-iemptyvolumecache2)e, portanto, fornece valores AdvancedButtonText, Description e Display caso seja usado em um computador executando Windows 98. O manipulador combina os valores CSIDL e Folder para pesquisar arquivos no diretório C: Arquivos de Programas O diretório Temp da Empresa Telefone e o sinalizador \\ \\ \\ DOSUBDIRS de DDEVCF são definidos para que seus subdireários também sejam \_ pesquisados. Somente os arquivos com extensões .tmp e .tpc são considerados para limpeza e o sinalizador \_ LASTACCESS PRIVADO DDEVCF é definido para que, fora desses arquivos, somente aqueles que não foram acessados por 14 dias ou mais sejam \_ considerados. O sinalizador DDEVCF DONTSHOWIFZERO também é definido para que o manipulador não apareça na lista, a menos que tenha encontrado candidatos \_ de limpeza.
 
 ```
 HKEY_LOCAL_MACHINE

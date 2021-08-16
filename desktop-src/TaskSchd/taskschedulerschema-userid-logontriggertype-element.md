@@ -1,6 +1,6 @@
 ---
 title: Elemento UserId (logonTriggerType)
-description: Identificador do usuário. A tarefa é iniciada quando esse usuário faz logon no computador.
+description: Identificador do usuário. A tarefa é iniciada quando esse usuário faz logona no computador.
 ms.assetid: 52568899-e351-4ee1-b613-d7c42d7b983d
 keywords:
 - Elemento UserId Agendador de Tarefas
@@ -22,7 +22,7 @@ ms.locfileid: "118355562"
 ---
 # <a name="userid-logontriggertype-element"></a>Elemento UserId (logonTriggerType)
 
-Identificador do usuário. A tarefa é iniciada quando esse usuário faz logon no computador.
+Identificador do usuário. A tarefa é iniciada quando esse usuário faz logona no computador.
 
 ``` syntax
 <xs:element name="UserId"
@@ -32,7 +32,7 @@ Identificador do usuário. A tarefa é iniciada quando esse usuário faz logon n
  />
 ```
 
-O elemento **userid** é definido pelo tipo complexo [**logonTriggerType**](taskschedulerschema-logontriggertype-complextype.md) .
+O **elemento UserId** é definido pelo [**tipo complexo logonTriggerType.**](taskschedulerschema-logontriggertype-complextype.md)
 
 ## <a name="parent-element"></a>Elemento pai
 
@@ -40,19 +40,19 @@ O elemento **userid** é definido pelo tipo complexo [**logonTriggerType**](task
 
 | Elemento                                                                       | Derivado de                                                                 | Descrição                                                            |
 |-------------------------------------------------------------------------------|------------------------------------------------------------------------------|------------------------------------------------------------------------|
-| [**LogonTrigger**](taskschedulerschema-logontrigger-triggergroup-element.md) | [**logonTriggerType**](taskschedulerschema-logontriggertype-complextype.md) | Especifica um gatilho que inicia uma tarefa quando um usuário faz logon.<br/> |
+| [**LogonTrigger**](taskschedulerschema-logontrigger-triggergroup-element.md) | [**logonTriggerType**](taskschedulerschema-logontriggertype-complextype.md) | Especifica um gatilho que inicia uma tarefa quando um usuário faz login.<br/> |
 
 
 
 ## <a name="remarks"></a>Comentários
 
-Para o desenvolvimento de scripts, o identificador de usuário para o gatilho logon é especificado usando a propriedade [**LogonTrigger. UserID**](logontrigger-userid.md) .
+Para desenvolvimento de scripts, o identificador de usuário para o gatilho de logon é especificado usando a [**propriedade LogonTrigger.UserId.**](logontrigger-userid.md)
 
-Para desenvolvimento em C++, o identificador de usuário para o gatilho de logon é especificado usando a propriedade [**ILogonTrigger:: userid**](/windows/desktop/api/taskschd/nf-taskschd-ilogontrigger-get_userid) .
+Para desenvolvimento em C++, o identificador de usuário para o gatilho de logon é especificado usando a [**propriedade ILogonTrigger::UserId.**](/windows/desktop/api/taskschd/nf-taskschd-ilogontrigger-get_userid)
 
 ## <a name="examples"></a>Exemplos
 
-Para obter um exemplo completo do XML para uma tarefa que especifica um gatilho de logon, consulte [exemplo de gatilho de logon (XML)](logon-trigger-example--xml-.md).
+Para ver um exemplo completo do XML para uma tarefa que especifica um gatilho de [logon, consulte Xml (Exemplo de Gatilho de Logon).](logon-trigger-example--xml-.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -60,8 +60,8 @@ Para obter um exemplo completo do XML para uma tarefa que especifica um gatilho 
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
 
 
 
@@ -69,7 +69,7 @@ Para obter um exemplo completo do XML para uma tarefa que especifica um gatilho 
 
 <dl> <dt>
 
-[Elementos do esquema de Agendador de Tarefas](task-scheduler-schema-elements.md)
+[Agendador de Tarefas de esquema](task-scheduler-schema-elements.md)
 </dt> <dt>
 
 [Agendador de Tarefas](task-scheduler-start-page.md)

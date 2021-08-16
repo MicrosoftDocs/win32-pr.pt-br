@@ -56,7 +56,7 @@ Esse valor é usado ao usar o valor de enumeração da ID de propriedade **BITS_
 |-------------------------------------|---------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 10, \[ somente aplicativos da área de trabalho da versão 1709\]<br/>                                         |
 | Servidor mínimo com suporte<br/> | Windows Servidor, versão 1709 \[ aplicativos da área de trabalho\]<br/>                                     |
-| parâmetro<br/>                   | <dl> <dt>Deliveryoptimization. h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Deliveryoptimization. h</dt> </dl> |
 
 
 

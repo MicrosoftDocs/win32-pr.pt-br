@@ -1,6 +1,6 @@
 ---
-description: entenda como usar o argumento de trilha na interface do usuário do Windows Shell como um meio de controlar o escopo de uma pesquisa.
-title: argumento de trilha (o Shell de Windows)
+description: Entenda como usar o argumento DECOD NA interface do usuário Windows Shell como um meio de controlar o escopo de uma pesquisa.
+title: Argumento DEM (o shell Windows)
 ms.topic: article
 ms.date: 05/31/2018
 ms.assetid: 8f87a2b7-7f5a-4629-b881-44bf418b2df0
@@ -16,22 +16,22 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118452872"
 ---
-# <a name="crumb-argument-the-windows-shell"></a>argumento de trilha (o Shell de Windows)
+# <a name="crumb-argument-the-windows-shell"></a>Argumento DEM (o shell Windows)
 
-O `crumb` argumento oferece suporte a instruções AQS (sintaxe de consulta avançada completa) e é especialmente útil como meio de controlar o escopo de uma pesquisa. além das instruções AQS, o `crumb` argumento pode usar um parâmetro especial `location` no Windows Vista e `kind` `store` parâmetros no Windows XP, conforme descrito posteriormente neste tópico.
+O argumento dá suporte a instruções completas de `crumb` AQS (Advanced Query Syntax) e é especialmente útil como um meio de controlar o escopo de uma pesquisa. Além das instruções do AQS, o argumento pode usar um parâmetro especial no Windows Vista e nos `crumb` `location` `kind` parâmetros Windows XP, conforme descrito posteriormente `store` neste tópico.
 
 Este tópico contém as seguintes seções:
 
--   [Sintaxe de trilha](#crumb-syntax)
+-   [Sintaxe de sintaxe de sintaxe de sintaxe](#crumb-syntax)
     -   [Exemplos gerais](#general-examples)
--   [Usando a trilha com o Vista (local)](#using-crumb-with-vista-location)
-    -   [Exemplos do vista](#vista-examples)
+-   [Usando o mofando com o Vista (localização)](#using-crumb-with-vista-location)
+    -   [Exemplos do Vista](#vista-examples)
     -   [Constantes para pastas comuns](#constants-for-common-folders)
-    -   [Informações do argumento](#argument-information)
+    -   [Informações de argumento](#argument-information)
 
-## <a name="crumb-syntax"></a>Sintaxe de trilha
+## <a name="crumb-syntax"></a>Sintaxe de sintaxe de sintaxe de sintaxe
 
-A sintaxe de trilha é a seguinte:
+A sintaxe de sintaxe de sintaxe é a seguinte:
 
 
 ```
@@ -40,7 +40,7 @@ crumb=<column>:<value>[,<label>][,<column>:<value>[,<label>]]&
 
 
 
-A <column> parte é qualquer propriedade no sistema de propriedades e o <value> a parte é um valor válido para essa propriedade. A <label> parte é um alias opcional para a propriedade que é exibido como uma dica de interface do usuário.
+A <column> parte é qualquer propriedade no sistema de propriedades e o <value> parte é um valor válido para essa propriedade. A <label> parte é um alias opcional para a propriedade que é exibida como uma dica de interface do usuário.
 
 ### <a name="general-examples"></a>Exemplos gerais
 
@@ -53,42 +53,42 @@ crumb=location:c%3a%5cMyVacationPix,Vacation&
 
 
 
-## <a name="using-crumb-with-vista-location"></a>Usando a trilha com o Vista (local)
+## <a name="using-crumb-with-vista-location"></a>Usando o mofando com o Vista (localização)
 
-no parâmetro de trilha, o Windows Vista dá suporte ao AQS completo e também à `location` propriedade, que tem uma implementação especial disponível apenas no Windows Vista. Você pode usar uma cadeia de caracteres AQS ou a `location` propriedade dentro de um único parâmetro de trilha, mas não ambos. Se o parâmetro de trilha incluir AQS, todo o restante nesse parâmetro de trilha será ignorado.
+No parâmetro de sistema, Windows Vista dá suporte ao AQS completo e também à propriedade , que tem uma implementação especial disponível somente no `location` Windows Vista. Você pode usar uma cadeia de caracteres do AQS ou a propriedade dentro de um único parâmetro `location` de controle, mas não ambos. Se o parâmetro de desatrelação incluir o AQS, todo o resto nesse parâmetro de desatrelação será ignorado.
 
-A `location` propriedade permite que você especifique um caminho para pesquisar. Windows O vista pode ignorar o indexador e atravessar o diretório diretamente se o local estiver fora do escopo de rastreamento do indexador. Consequentemente, essas pesquisas podem ser mais lentas do que as pesquisas que usam o indexador.
+A `location` propriedade permite que você especifique um caminho a ser pesquisado. Windows O Vista poderá ignorar o Indexador e percorrer o diretório diretamente se o local estiver fora do escopo de rastreamento do Indexador. Consequentemente, essas pesquisas podem ser mais lentas do que as pesquisas que usam o Indexador.
 
-Quando você especifica uma `location` propriedade, dois parâmetros adicionais têm suporte e são opcionais:
+Quando você especifica uma `location` propriedade, há suporte para dois parâmetros adicionais e opcionais:
 
 
 
 | Parâmetro | Valores                  | Descrição                                                                                                                                                                       |
 |-----------|-------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| inclusão | incluir, excluir        | Especifica se a consulta deve incluir ou excluir itens desse caminho. "Include" é o padrão. Windows O vista não oferece suporte a exclusões sem inclusões. (Veja o exemplo) |
-| recursão | recursivo, nonrecursive | Especifica se a pesquisa deve recurse todas as subpastas começando com o valor definido no local:<value>. "Recursivo" é o padrão.                             |
+| Inclusão | incluir, excluir        | Especifica se a consulta deve incluir ou excluir itens desse caminho. "Incluir" é o padrão. Windows O Vista não dá suporte a exclusões sem inclusões. (Veja o exemplo) |
+| recursão | recursivo, não recursivo | Especifica se a pesquisa deve recursar todas as subpastas começando com o valor definido no local:<value>. "Recursivo" é o padrão.                             |
 
 
 
  
 
-Para fazer o escopo de uma pesquisa usando o protocolo **Search:** , você tem opções diferentes, dependendo do destino do escopo.
+Para escopo de uma pesquisa usando **o protocolo search:,** você tem opções diferentes, dependendo do destino do escopo.
 
 Pasta em um computador local:
 
--   Use AQS (trilha = pasta: <caminho codificado de URL>)
--   Usar o argumento de local (trilha = local: <caminho codificado de URL>)
+-   Usar o AQS (folder=folder:<caminho codificado por URL>)
+-   Use o argumento location (encode=location:<caminho codificado por URL>)
 
-Pasta em um computador/rede remota:
+Pasta em um computador/rede remoto:
 
--   Usar o argumento de local (trilha = local: <caminho codificado de URL>)
+-   Use o argumento location (encode=location:<caminho codificado por URL>)
 
-Pasta acessada por meio de um manipulador de protocolo UNC (Convenção de nomenclatura universal) conhecido:
+Pasta acessada por meio de um manipulador de protocolo UNC (Convenção Universal de Nomenização) conhecido:
 
--   Use AQS (trilha = armazenamento: <UNC protocol handler name> )
--   Usar o argumento de local (trilha = local: <caminho codificado de URL>)
+-   Usar o AQS (agora= store: <UNC protocol handler name> )
+-   Use o argumento location (encode=location:<caminho codificado por URL>)
 
-### <a name="vista-examples"></a>Exemplos do vista
+### <a name="vista-examples"></a>Exemplos do Vista
 
 
 ```
@@ -101,17 +101,17 @@ search:crumb=location:c%3a%5cDocuments&crumb=kind:pics&
 
 
 
-O primeiro exemplo executa uma pesquisa por "férias" começando no `shell://Personal` local (um atalho especial para a pasta **meus documentos** do usuário), incluindo essa pasta e todas as subpastas. Consulte a tabela abaixo.
+O primeiro exemplo executa uma pesquisa de "férias" começando no local (um atalho especial para a pasta Meus Documentos do usuário), incluindo essa pasta e todas as `shell://Personal` subpastas.  Consulte a tabela abaixo.
 
-O segundo exemplo executa uma pesquisa em C: \\ Pictures, mas não em c: \\ imagens \\ duplicatas.
+O segundo exemplo executa uma pesquisa em C: \\ Imagens, mas não em C: \\ \\ Duplicatas de Imagens.
 
-O terceiro exemplo executa uma pesquisa em C: \\ Documents, limitada a arquivos com a `kind` propriedade definida como pics.
+O terceiro exemplo executa uma pesquisa em C: Documentos, limitado a arquivos com a \\ `kind` propriedade definida como imagens.
 
 ### <a name="constants-for-common-folders"></a>Constantes para pastas comuns
 
-Windows O Vista permite o uso de valores de CSIDl que fornecem uma maneira exclusiva independente do sistema de identificar pastas especiais usadas frequentemente por aplicativos, mas que podem não ter o mesmo nome ou local em um determinado sistema. por exemplo, a pasta do sistema pode ser "c: \\ Windows" em um sistema e "c: \\ Winnt" em outro.
+Windows O Vista permite o uso de valores CSIDL que fornecem uma maneira exclusiva independente do sistema para identificar pastas especiais usadas com frequência por aplicativos, mas que podem não ter o mesmo nome ou local em qualquer sistema específico. Por exemplo, a pasta do sistema pode ser "C: Windows" em um \\ sistema e "C: \\ Winnt" em outro.
 
-Use esses locais com esta sintaxe:
+Use estes locais com esta sintaxe:
 
 
 ```
@@ -120,69 +120,69 @@ crumb=location:shell%3a<LocationName>&
 
 
 
-A tabela a seguir lista os valores de CSIDl. Consulte [**ShellSpecialFolderConstants**](/windows/desktop/api/Shldisp/ne-shldisp-shellspecialfolderconstants) para obter mais informações.
+A tabela a seguir lista os valores CSIDL. Consulte [**ShellSpecialFolderConstants para**](/windows/desktop/api/Shldisp/ne-shldisp-shellspecialfolderconstants) obter mais informações.
 
 
 
-| Nome                        | Pesquisar Cadeia de caracteres                   | Descrição                                                                                                                                                                            |
+| Nome                        | cadeia de caracteres de pesquisa                   | Descrição                                                                                                                                                                            |
 |-----------------------------|---------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| FERRAMENTAS ADMINISTRATIVAS        | % 20TOOLS ADMINISTRATIVO          | Diretório do sistema de arquivos que serve como um repositório para ferramentas administrativas.                                                                                                            |
-| APPDATA                     | APPDATA                         | Diretório do sistema de arquivos que serve como um repositório comum para dados específicos do aplicativo. um caminho típico é C: \\ documents e Configurações \\ nome de usuário de dados do \\ aplicativo.                      |
-| CACHE                       | CACHE                           | Diretório do sistema de arquivos que serve como um repositório comum para arquivos temporários da Internet. um caminho típico é C: \\ documents e Configurações \\ nome de usuário \\ Temporary Internet files.               |
-| GRAVAÇÃO DE CD                  | CD% 20BURNING                    | Pasta que contém os dados a serem gravados no CD.                                                                                                                                             |
-| FERRAMENTAS ADMINISTRATIVAS COMUNS | % 20ADMINISTRATIVE% 20TOOLS COMUM | Ferramentas administrativas para todos os usuários.                                                                                                                                                    |
-| APPDATA COMUNS              | % 20APPDATA COMUM                | Dados de aplicativo para todos os usuários. um caminho típico é C: \\ documents e Configurações \\ dados de aplicativos de todos os usuários \\ .                                                                             |
-| ÁREA DE TRABALHO COMUM              | ÁREA DE TRABALHO COMUM                  | dados do Microsoft Windows Desktop para todos os usuários. A pasta virtual que é a raiz do namespace.                                                                                        |
-| DOCUMENTOS COMUNS            | % 20DOCUMENTS COMUM              | Documentos para todos os usuários. um caminho típico é C: \\ documents e Configurações \\ todos os usuários \\ meus documentos.                                                                                        |
-| PROGRAMAS COMUNS             | % 20PROGRAMS COMUM               | Grupos de programas comuns a todos os usuários. um caminho típico é C: \\ documents e Configurações \\ os \\ programas de Menu iniciar de todos os usuários \\ .                                                                     |
-| MENU INICIAR COMUM           | % 20START% 20MENU COMUM           | menu Iniciar itens comuns a todos os usuários. um caminho típico é C: \\ documents e Configurações \\ Menu iniciar de todos os usuários \\ .                                                                             |
-| INICIALIZAÇÃO COMUM              | % 20STARTUP COMUM                | Grupo de programas de inicialização comum a todos os usuários.                                                                                                                                             |
-| MODELOS COMUNS            | % 20TEMPLATES COMUM              | Modelos de documento comuns a todos os usuários.                                                                                                                                                |
-| COMMONMUSIC                 | MEU% 20MUSIC                      | Meus modelos de pasta de música comuns a todos os usuários.                                                                                                                                         |
-| COMMONPICTURES              | MEU% 20PICTURES                   | Modelos de pasta minhas imagens comuns a todos os usuários.                                                                                                                                      |
-| COMMONVIDEO                 | MEU% 20VIDEO                      | Meus modelos de pasta de vídeo comuns a todos os usuários.                                                                                                                                         |
+| FERRAMENTAS ADMINISTRATIVAS        | ADMINISTRATIVE%20TOOLS          | Diretório do sistema de arquivos que serve como um repositório para ferramentas administrativas.                                                                                                            |
+| APPDATA                     | APPDATA                         | Diretório do sistema de arquivos que serve como um repositório comum para dados específicos do aplicativo. Um caminho típico é C: documentos \\ e Configurações dados do aplicativo de nome de \\ \\ usuário.                      |
+| CACHE                       | CACHE                           | Diretório do sistema de arquivos que serve como um repositório comum para arquivos temporários da Internet. Um caminho típico é C: documentos \\ e Configurações nome de usuário \\ \\ Temporários da Internet.               |
+| CD DE GRAVAÇÃO                  | CD%20IÃO                    | Pasta que contém dados a serem gravados em CD.                                                                                                                                             |
+| FERRAMENTAS ADMINISTRATIVAS COMUNS | COMMON%20ADMINISTRATIVE%20TOOLS | Ferramentas administrativas para todos os usuários.                                                                                                                                                    |
+| COMMON APPDATA              | COMMON%20APPDATA                | Dados do aplicativo para todos os usuários. Um caminho típico é C: \\ Documentos e Configurações dados do aplicativo Todos os \\ \\ Usuários.                                                                             |
+| ÁREA DE TRABALHO COMUM              | ÁREA DE TRABALHO COMUM                  | Microsoft Windows Desktop para todos os usuários. Pasta virtual que é a raiz do namespace.                                                                                        |
+| DOCUMENTOS COMUNS            | COMMON%20DOCUMENTS              | Documentos para todos os usuários. Um caminho típico é C: \\ Documentos e Configurações todos os usuários \\ \\ Meus Documentos.                                                                                        |
+| PROGRAMAS COMUNS             | COMMON%20PROGRAMS               | Grupos de programas comuns a todos os usuários. Um caminho típico é C: \\ Documentos e Configurações Todos os Usuários Iniciar Programas de \\ \\ \\ Menu.                                                                     |
+| MENU INICIAR COMUM           | COMMON%20START%20MENU           | menu Iniciar itens comuns a todos os usuários. Um caminho típico é C: \\ Documentos e Configurações Menu Iniciar Todos os \\ \\ Usuários.                                                                             |
+| INICIALIZAÇÃO COMUM              | COMMON%20STARTUP                | Grupo de programas de inicialização comum a todos os usuários.                                                                                                                                             |
+| MODELOS COMUNS            | COMMON%20TEMPLATES              | Modelos de documento comuns a todos os usuários.                                                                                                                                                |
+| COMMONMUSIC                 | MY%20MUSIC                      | Modelos de pasta My Music comuns a todos os usuários.                                                                                                                                         |
+| COMMONPICTURES              | MY%20PICTURES                   | Modelos de pasta Minhas Imagens comuns a todos os usuários.                                                                                                                                      |
+| COMMONVIDEO                 | MY%20VIDEO                      | Modelos de pasta Meu Vídeo comuns a todos os usuários.                                                                                                                                         |
 | CONNECTIONSFOLDER           | CONNECTIONSFOLDER               | pasta que contém dados de conexão.                                                                                                                                                     |
-| PASTA DO PAINEL DE CONTROLE        | CONTROLPANELFOLDER              | Pasta virtual que contém ícones para os aplicativos do painel de controle.                                                                                                                    |
-| ARAR                     | ARAR                         | Diretório do sistema de arquivos que serve como um repositório comum para cookies da Internet. um caminho típico é C: \\ documents e Configurações \\ nome de usuário \\ Cookies.                                        |
-| DESKTOP                     | DESKTOP                         | área de trabalho do Microsoft Windows. A pasta virtual que é a raiz do namespace.                                                                                                           |
-| FAVORITOS                   | FAVORITOS                       | Diretório do sistema de arquivos que serve como um repositório comum para os itens favoritos do usuário. um caminho típico é C: \\ documents e Configurações \\ nome de usuário \\ favoritos.                             |
-| TrueType                       | TrueType                           | Pasta virtual que contém as fontes instaladas. Um caminho típico é C: \\ Windows \\ fonts.                                                                                                       |
+| PASTA PAINEL DE CONTROLE        | CONTROLPANELFOLDER              | Pasta virtual que contém ícones para os Painel de Controle aplicativos.                                                                                                                    |
+| Cookies                     | Cookies                         | Diretório do sistema de arquivos que serve como um repositório comum para cookies da Internet. Um caminho típico é C: documentos e Configurações \\ cookies de nome de \\ \\ usuário.                                        |
+| DESKTOP                     | DESKTOP                         | Microsoft Windows Desktop. Pasta virtual que é a raiz do namespace.                                                                                                           |
+| FAVORITOS                   | FAVORITOS                       | Diretório do sistema de arquivos que serve como um repositório comum para os itens favoritos do usuário. Um caminho típico é C: Documentos \\ e Configurações \\ \\ favoritos de nome de usuário.                             |
+| Fontes                       | Fontes                           | Pasta virtual que contém fontes instaladas. Um caminho típico é C: \\ \\ Fontes do WINDOWS.                                                                                                       |
 | HISTÓRICO                     | HISTÓRICO                         | Diretório do sistema de arquivos que serve como um repositório comum para itens de histórico da Internet.                                                                                                   |
 | INTERNETFOLDER              | INTERNETFOLDER                  | Pasta que contém dados da Internet.                                                                                                                                                    |
-| APPDATA LOCAL               | % 20APPDATA LOCAL                 | Diretório do sistema de arquivos que serve como um repositório de dados para aplicativos locais (não móveis). um caminho típico é C: \\ documents e Configurações \\ nome de usuário \\ Local Configurações \\ dados de aplicativo. |
+| LOCAL APPDATA               | LOCAL%20APPDATA                 | Diretório do sistema de arquivos que serve como um repositório de dados para aplicativos locais (não móveis). Um caminho típico é C: documentos e Configurações nome de \\ usuário Local Configurações Dados do \\ \\ \\ Aplicativo. |
 | LOCALIZEDRESOURCEDIR        | LOCALIZEDRESOURCEDIR            | Diretório de recursos localizado.                                                                                                                                                          |
-| MYCOMPUTERFOLDER            | MYCOMPUTERFOLDER                | Meu Computador. Pasta virtual que contém tudo no computador local: dispositivos de armazenamento, impressoras e painel de controle. Essa pasta também pode conter unidades de rede mapeadas.             |
-| MINHAS MÚSICAS                    | MEU% 20MUSIC                      | Minha pasta de música. um caminho típico é C: \\ documents e Configurações \\ nome de usuário \\ meus documentos \\ minhas músicas.                                                                                       |
-| MINHAS IMAGENS                 | MEU% 20PICTURES                   | Pasta minhas imagens. um caminho típico é C: \\ documents e Configurações \\ nome de usuário \\ meus documentos \\ minhas imagens.                                                                                 |
-| MEU VÍDEO                    | MEU% 20VIDEO                      | Minha pasta de vídeo. um caminho típico é C: \\ documents e Configurações \\ nome de usuário \\ meus documentos meu \\ vídeo.                                                                                       |
-| Netbastidores                     | Netbastidores                         | Pasta virtual que representa a raiz da hierarquia de namespace de rede.                                                                                                               |
-| PASTA LOCAIS DE REDE       | NETWORKDPLACESFOLDER            | Uma pasta do sistema de arquivos que contém os objetos de link que podem existir na pasta virtual meus locais de rede. Não é o mesmo que o netbastidor, que representa a raiz do namespace de rede.   |
-| LINKS DE OEM                   | % 20LINKS OEM                     | Pasta que contém links para sites OEM.                                                                                                                                                  |
-| PESSOAL                    | PESSOAL                        | Diretório do sistema de arquivos que serve como um repositório comum para os documentos de um usuário. um caminho típico é C: \\ documents e Configurações \\ nome de usuário \\ My documents.                                 |
-| PASTA IMPRESSORAS             | PASTA IMPRESSORAS                 | Pasta virtual que contém as impressoras instaladas.                                                                                                                                          |
-| Diexaustos                   | Diexaustos                       | Diretório do sistema de arquivos que contém os objetos de link que podem existir na pasta virtual impressoras. um caminho típico é C: \\ documents e Configurações \\ nome de usuário \\ .                 |
-| PROGRAMAS                    | PROGRAMAS                        | Diretório do sistema de arquivos que contém os grupos de programas do usuário (que também são diretórios do sistema de arquivos). um caminho típico é C: \\ documents e Configurações os \\ programas de Menu iniciar do nome de usuário \\ \\ .  |
+| MYCOMPUTERFOLDER            | MYCOMPUTERFOLDER                | Meu Computador. Pasta virtual que contém tudo no computador local: dispositivos de armazenamento, impressoras e Painel de Controle. Essa pasta também pode conter unidades de rede mapeadas.             |
+| MY MUSIC                    | MY%20MUSIC                      | Minha pasta Música. Um caminho típico é C: \\ Documentos e Configurações nome de usuário Meus Documentos Minha \\ \\ \\ Música.                                                                                       |
+| MINHAS IMAGENS                 | MY%20PICTURES                   | Minha pasta Imagens. Um caminho típico é C: \\ Documentos e Configurações nome de usuário Meus Documentos Minhas \\ \\ \\ Imagens.                                                                                 |
+| MEU VÍDEO                    | MY%20VIDEO                      | Minha pasta Vídeo. Um caminho típico é C: \\ Documentos e Configurações nome de usuário Meus Documentos Meu \\ \\ \\ Vídeo.                                                                                       |
+| NET, NET, NET,                     | NET, NET, NET,                         | Pasta virtual que representa a raiz da hierarquia de namespace de rede.                                                                                                               |
+| PASTA LOCAIS DE REDE       | NETWORKDPLACESFOLDER            | Uma pasta do sistema de arquivos que contém os objetos de link que podem existir na pasta virtual Meus Locais de Rede. Ele não é o mesmo que NET FIM, que representa a raiz do namespace de rede.   |
+| OEM LINKS                   | OEM%20LINKS                     | Pasta que contém links para sites OEM.                                                                                                                                                  |
+| PESSOAL                    | PESSOAL                        | Diretório do sistema de arquivos que serve como um repositório comum para documentos de um usuário. Um caminho típico é C: documentos \\ e Configurações nome de usuário \\ \\ Meus Documentos.                                 |
+| PASTA IMPRESSORAS             | PASTA IMPRESSORAS                 | Pasta virtual que contém impressoras instaladas.                                                                                                                                          |
+| PRINT PRINT SÃO                   | PRINT PRINT SÃO                       | Diretório do sistema de arquivos que contém os objetos de link que podem existir na pasta virtual Impressoras. Um caminho típico é C: \\ Documentos e Configurações nome de usuário Print Username Print \\ \\ Username.                 |
+| PROGRAMAS                    | PROGRAMAS                        | Diretório do sistema de arquivos que contém os grupos de programas do usuário (que também são diretórios do sistema de arquivos). Um caminho típico é C: Documentos e Configurações nome de \\ usuário Iniciar Programas de \\ \\ \\ Menu.  |
 | PERFIL                     | PERFIL                         | Pasta de perfil do usuário.                                                                                                                                                                 |
-| ARQUIVOS DE PROGRAMAS               | PROGRAMA% 20FILES                 | Pasta arquivos de programas. Um caminho típico é C: \\ Program Files.                                                                                                                             |
-| ARQUIVOS DE PROGRAMAS COMUNS        | PROGRAMFILESCOMMON              | Pasta Arquivos de Programas comum a todos os usuários.                                                                                                                                              |
-| ARQUIVOS DE PROGRAMAS COMUNS x86    | PROGRAMFILESCOMMONX86           | Pasta Arquivos de Programas comum a todos os usuários em máquinas x86.                                                                                                                              |
-| PROGRAM FILESx86            | PROGRAMFILESx86                 | Pasta Arquivos de Programas em máquinas x86.                                                                                                                                                  |
-| Recente                      | Recente                          | Diretório do sistema de arquivos que contém os documentos usados mais recentemente pelo usuário. Um caminho típico é C: Documentos \\ e Configurações nome de usuário \\ \\ Recente.                                           |
-| PASTA LIXEIRA          | RECYCLEBINFOLDER                | Pasta virtual que contém os objetos na conta do usuário Lixeira.                                                                                                                       |
-| RESOURCEDIR                 | RESOURCEDIR                     | O Diretório de recursos.                                                                                                                                                                |
-| Sendto                      | Sendto                          | Diretório do sistema de arquivos que contém itens de menu Enviar para. Um caminho típico é C: \\ Documentos e Configurações nome de usuário \\ \\ SendTo.                                                                |
-| MENU INICIAR                  | START%20MENU                    | Diretório do sistema de arquivos que contém menu Iniciar itens. Um caminho típico é C: Documentos \\ e Configurações menu Iniciar nome de \\ \\ usuário.                                                                 |
-| Inicialização                     | Inicialização                         | Diretório do sistema de arquivos que corresponde ao grupo de programas de inicialização do usuário.                                                                                                            |
-| SYSTEMx86                   | SYSTEMx86                       | Pasta do sistema em máquinas x86.                                                                                                                                                         |
+| ARQUIVOS DE PROGRAMAS               | PROGRAM%20FILES                 | Pasta Arquivos de Programas. Um caminho típico é C: \\ Arquivos de Programas.                                                                                                                             |
+| ARQUIVOS DE PROGRAMAS COMUNS        | PROGRAMFILESCOMMON              | Pasta arquivos de programas comuns a todos os usuários.                                                                                                                                              |
+| ARQUIVOS de programas comuns x86    | PROGRAMFILESCOMMONX86           | Pasta arquivos de programas comuns a todos os usuários em computadores x86.                                                                                                                              |
+| FILESx86 do programa            | PROGRAMFILESx86                 | Pasta arquivos de programas em computadores x86.                                                                                                                                                  |
+| VERSÕES                      | VERSÕES                          | Diretório do sistema de arquivos que contém os documentos usados mais recentemente do usuário. um caminho típico é C: \\ documents e Configurações \\ nome de usuário \\ recente.                                           |
+| PASTA DA LIXEIRA          | RECYCLEBINFOLDER                | Pasta virtual que contém os objetos na lixeira do usuário.                                                                                                                       |
+| RESOURCEDIR                 | RESOURCEDIR                     | O diretório de recursos.                                                                                                                                                                |
+| Enviar                      | Enviar                          | Diretório do sistema de arquivos que contém itens de menu Enviar para. um caminho típico é C: \\ documents e Configurações \\ nome de usuário \\ SendTo.                                                                |
+| MENU INICIAR                  | INICIAR% 20MENU                    | diretório do sistema de arquivos que contém itens de menu Iniciar. um caminho típico é C: \\ documents e Configurações \\ Menu iniciar do nome de usuário \\ .                                                                 |
+| INICIALIZAÇÃO                     | INICIALIZAÇÃO                         | Diretório do sistema de arquivos que corresponde ao grupo de programas de inicialização do usuário.                                                                                                            |
+| SYSTEMx86                   | SYSTEMx86                       | Pasta do sistema em computadores x86.                                                                                                                                                         |
 | MODELOS                   | MODELOS                       | Diretório do sistema de arquivos que serve como um repositório comum para modelos de documento.                                                                                                       |
-| SYSTEM                      | SYSTEM                          | Pasta do sistema. Um caminho típico é C: \\ Windows \\ System.                                                                                                                                  |
-| WINDOWS                     | WINDOWS                         | Windows diretório ou SYSROOT.                                                                                                                                                          |
+| SYSTEM                      | SYSTEM                          | Pasta do sistema. um caminho típico é C: \\ Windows \\ System.                                                                                                                                  |
+| WINDOWS                     | WINDOWS                         | Windows directory ou SYSROOT.                                                                                                                                                          |
 
 
 
  
 
-### <a name="argument-information"></a>Informações de argumento
+### <a name="argument-information"></a>Informações do argumento
 
 
 

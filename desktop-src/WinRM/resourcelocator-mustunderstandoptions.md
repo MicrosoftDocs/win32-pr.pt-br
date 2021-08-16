@@ -1,12 +1,12 @@
 ---
-title: Propriedade ResourceLocator. MustUnderstandoptions (WSManDisp. h)
-description: Obtém ou define o valor MustUnderstandoptions para o objeto ResourceLocator.
+title: Propriedade ResourceLocator.MustUnderstandOptions (WSManDisp.h)
+description: Obtém ou define o valor MustUnderstandOptions para o objeto ResourceLocator.
 ms.assetid: d366696c-9128-4cbd-98d0-6c2d16c75d59
 ms.tgt_platform: multiple
 keywords:
-- propriedade mustunderstandoptions Gerenciamento Remoto do Windows
-- propriedade mustunderstandoptions Gerenciamento Remoto do Windows, objeto ResourceLocator
-- objeto ResourceLocator Gerenciamento Remoto do Windows, propriedade mustunderstandoptions
+- Propriedade MustUnderstandOptions Windows Gerenciamento Remoto
+- Propriedade MustUnderstandOptions Windows gerenciamento remoto, objeto ResourceLocator
+- Objeto ResourceLocator Windows Gerenciamento Remoto , propriedade MustUnderstandOptions
 topic_type:
 - apiref
 api_name:
@@ -24,11 +24,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118323734"
 ---
-# <a name="resourcelocatormustunderstandoptions-property"></a>Propriedade ResourceLocator. MustUnderstandoptions
+# <a name="resourcelocatormustunderstandoptions-property"></a>Propriedade ResourceLocator.MustUnderstandOptions
 
-Obtém ou define o valor **mustunderstandoptions** para o objeto [**ResourceLocator**](resourcelocator.md) . Você pode fornecer um objeto [**ResourceLocator**](resourcelocator.md) em vez de especificar um URI de recurso em operações de objeto de [**sessão**](session.md) , como [**Session. Get**](session-get.md), [**Session. put**](session-put.md)ou [**Session. Enumerate**](session-enumerate.md).
+Obtém ou define o **valor MustUnderstandOptions** para o [**objeto ResourceLocator.**](resourcelocator.md) Você pode fornecer um [**objeto ResourceLocator**](resourcelocator.md) em vez [](session.md) de especificar um URI de recurso em operações de objeto session, como [**Session.Get**](session-get.md), [**Session.Put**](session-put.md)ou [**Session.Enumerate**](session-enumerate.md).
 
-Esta propriedade é de leitura/gravação.
+Essa propriedade é leitura/gravação.
 
 ## <a name="syntax"></a>Syntax
 
@@ -41,11 +41,11 @@ ResourceLocator.MustUnderstandOptions As boolean
 
 ## <a name="property-value"></a>Valor da propriedade
 
-Indica, quando **true**, que o serviço que implementa a [protocolo WS-Management](ws-management-protocol.md) deve retornar um erro se não for capaz de processar a opção.
+Indica, quando **True**, que o [](ws-management-protocol.md) serviço que implementa o protocolo WS-Management deverá retornar um erro se ele não for capaz de processar a opção.
 
 ## <a name="remarks"></a>Comentários
 
-**IWSManResourceLocator:: mustunderstandoptions** é a propriedade C++ correspondente.
+**IWSManResourceLocator::MustUnderstandOptions** é a propriedade C++ correspondente.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -55,9 +55,9 @@ Indica, quando **true**, que o serviço que implementa a [protocolo WS-Managemen
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                 |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                           |
-| Cabeçalho<br/>                   | <dl> <dt>WSManDisp. h</dt> </dl>   |
-| INSERI<br/>                      | <dl> <dt>WSManDisp. idl</dt> </dl> |
-| Biblioteca<br/>                  | <dl> <dt>WSManDisp. tlb</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>WSManDisp.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>WSManDisp.idl</dt> </dl> |
+| Biblioteca<br/>                  | <dl> <dt>WSManDisp.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>WSMAuto.dll</dt> </dl>   |
 
 
@@ -66,7 +66,7 @@ Indica, quando **true**, que o serviço que implementa a [protocolo WS-Managemen
 
 <dl> <dt>
 
-[**ResourceLocator**](resourcelocator.md)
+[**Resourcelocator**](resourcelocator.md)
 </dt> </dl>
 
  

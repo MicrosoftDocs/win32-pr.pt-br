@@ -1,12 +1,12 @@
 ---
-title: Método SetStringProperty da classe Win32_RDSHServer (Certenroll.h)
+title: Método setstringproperty da classe Win32_RDSHServer (CertEnroll. h)
 description: Atualiza um valor de propriedade de cadeia de caracteres de um \_ objeto Win32 RDSHServer.
 ms.assetid: 9a338872-27fc-4e37-afd6-20a42c7859e5
 ms.tgt_platform: multiple
 keywords:
-- Método SetStringProperty Serviços de Área de Trabalho Remota
-- Método SetStringProperty Serviços de Área de Trabalho Remota , Win32_RDSHServer classe
-- Win32_RDSHServer classe Serviços de Área de Trabalho Remota , método SetStringProperty
+- Método setstringproperty Serviços de Área de Trabalho Remota
+- Método setstringproperty Serviços de Área de Trabalho Remota, classe Win32_RDSHServer
+- Classe Win32_RDSHServer Serviços de Área de Trabalho Remota, método setstringproperty
 topic_type:
 - apiref
 api_name:
@@ -24,9 +24,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118349387"
 ---
-# <a name="setstringproperty-method-of-the-win32_rdshserver-class"></a>Método SetStringProperty da classe \_ Win32 RDSHServer
+# <a name="setstringproperty-method-of-the-win32_rdshserver-class"></a>Método setstringproperty da classe Win32 \_ RDSHServer
 
-Atualiza um valor de propriedade de cadeia de caracteres de um [**\_ objeto Win32 RDSHServer.**](win32-rdshserver.md)
+Atualiza um valor de propriedade de cadeia de caracteres de um objeto [**Win32 \_ RDSHServer**](win32-rdshserver.md) .
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -44,14 +44,14 @@ uint32 SetStringProperty(
 
 <dl> <dt>
 
-*Chave* \[ Em\]
+*Chave* \[ no\]
 </dt> <dd>
 
 A chave que identifica a propriedade a ser atualizada.
 
 </dd> <dt>
 
-*Valor* \[ Em\]
+*Valor* \[ do no\]
 </dt> <dd>
 
 O novo valor da propriedade.
@@ -70,9 +70,9 @@ Retorna 0 em caso de êxito; caso contrário, retorna um código de erro WMI.
 |-------------------------------------|---------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Nenhum compatível<br/>                                                                   |
 | Servidor mínimo com suporte<br/> | Windows Server 2012<br/>                                                              |
-| Namespace<br/>                | \\rdms CIMv2 \\ raiz<br/>                                                                |
-| Cabeçalho<br/>                   | <dl> <dt>Certenroll.h</dt> </dl>     |
-| MOF<br/>                      | <dl> <dt>RDManagement.mof</dt> </dl> |
+| Namespace<br/>                | \\RDMs CIMv2 \\ raiz<br/>                                                                |
+| Cabeçalho<br/>                   | <dl> <dt>CertEnroll. h</dt> </dl>     |
+| MOF<br/>                      | <dl> <dt>RDManagement. mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>RDMS.dll</dt> </dl>         |
 
 
@@ -81,7 +81,7 @@ Retorna 0 em caso de êxito; caso contrário, retorna um código de erro WMI.
 
 <dl> <dt>
 
-[**Win32 \_ RDSHServer**](win32-rdshserver.md)
+[**\_RDSHServer Win32**](win32-rdshserver.md)
 </dt> </dl>
 
  

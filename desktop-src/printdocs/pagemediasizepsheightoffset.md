@@ -1,5 +1,5 @@
 ---
-description: Obter informações sobre o parâmetro PageMediaSizePSHeightOffset. Este tópico não é atual. Para obter as informações mais atuais, consulte a Especificação de Esquema de Impressão.
+description: Obtenha informações sobre o parâmetro PageMediaSizePSHeightOffset. Este tópico não é atual. Para obter as informações mais atuais, consulte a especificação do esquema de impressão.
 ms.assetid: e86d6a5d-484d-4c80-8c86-7d12d287ee21
 title: PageMediaSizePSHeightOffset
 ms.topic: article
@@ -13,9 +13,9 @@ ms.locfileid: "118471039"
 ---
 # <a name="pagemediasizepsheightoffset"></a>PageMediaSizePSHeightOffset
 
-Este tópico não é atual. Para obter as informações mais atuais, consulte a [Especificação de Esquema de Impressão](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Este tópico não é atual. Para obter as informações mais atuais, consulte a [especificação do esquema de impressão](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Especifica o deslocamento, paralelo à direção da orientação do feed (Referência PostScript especificação de formato de arquivo de descrição [da impressora).](https://www.adobe.com/products/postscript/pdfs/PLRM.pdf)
+especifica o deslocamento, paralelo à direção da orientação do feed (referência [PostScript especificação de formato de arquivo de descrição de impressora](https://www.adobe.com/products/postscript/pdfs/PLRM.pdf)).
 
 -   [Informações do elemento](#element-information)
 -   [Conteúdo da estrutura](#structure-content)
@@ -24,10 +24,10 @@ Especifica o deslocamento, paralelo à direção da orientação do feed (Refer�
 
 
 
-| Name | Valor |
+| Nome | Valor |
 |----------------------------|-------------------------------------------------------------|
 | Tipo de elemento <br/>   | ParameterDef<br/>                                     |
-| Prefixo de definição de scoping <br/> | ?<br/>                                             |
+| Prefixo de escopo <br/> | ?<br/>                                             |
 | Observações <br/>          | Vinculado ao elemento PageMediaSize, opção CustomPS<br/> |
 
 
@@ -76,10 +76,10 @@ A tabela a seguir descreve as características das variáveis definidas na estru
 | Tipo de dados<br/>     | string<br/>  | xs:integer<br/>      |
 | DefaultValue<br/> | Número inteiro<br/> | não definido<br/>       |
 | MaxValue<br/>     | Número inteiro<br/> | não definido<br/>       |
-| Minvalue<br/>     | Número inteiro<br/> | não definido<br/>       |
-| Obrigatório<br/>    | string<br/>  | psk:Conditional<br/> |
+| MinValue<br/>     | Número inteiro<br/> | não definido<br/>       |
+| Obrigatório<br/>    | string<br/>  | PSK: condicional<br/> |
 | Vários<br/>     | integer<br/> | 1<br/>               |
-| Unittype<br/>     | string<br/>  | Mícrons<br/>         |
+| UnitType<br/>     | string<br/>  | mícrons<br/>         |
 
 
 
@@ -89,7 +89,7 @@ A tabela a seguir descreve as características das variáveis definidas na estru
 
 <dl> <dt>
 
-[PostScript Especificação de formato de arquivo de descrição da impressora](https://www.adobe.com/products/postscript/pdfs/PLRM.pdf)
+[PostScript Especificação de formato de arquivo de descrição de impressora](https://www.adobe.com/products/postscript/pdfs/PLRM.pdf)
 </dt> <dt>
 
 [Especificação de esquema de impressão](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip)

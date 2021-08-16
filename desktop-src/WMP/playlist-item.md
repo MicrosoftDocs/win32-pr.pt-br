@@ -4,8 +4,8 @@ description: O método item recupera o item de mídia no índice especificado.
 ms.assetid: a564f6db-ede4-4c85-87ca-0e2539d914c2
 keywords:
 - método de item Windows Media Player
-- método de item Windows Media Player, classe playlist
-- Classe playlist Windows Media Player, método item
+- método de item Windows Media Player, classe Playlist
+- classe Playlist Windows Media Player, método item
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 79c69386871aeec33dbc36a066ce3f75e80d7514
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 72987feb8438edc50c28bb6349b44c4f43736549c92a293794a6bc728ed7853a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105784676"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119862226"
 ---
 # <a name="playlistitem-method"></a>Método playlist. Item
 
@@ -49,7 +49,7 @@ retVal = Playlist.item(
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método retorna um objeto de **mídia** .
 
@@ -59,7 +59,7 @@ Para usar esse método, é necessário ter acesso de leitura à biblioteca. Para
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo de JScript a seguir usa a *lista de reprodução*. **Item** para recuperar um item de mídia da playlist atual com base em uma seleção de usuário. Um elemento HTML SELECT foi criado com o nome "weblist" e preenchido com os títulos da playlist atual. O objeto de **jogador** foi criado com ID = "Player".
+o exemplo a seguir JScript usa a *lista de reprodução*. **Item** para recuperar um item de mídia da playlist atual com base em uma seleção de usuário. Um elemento HTML SELECT foi criado com o nome "weblist" e preenchido com os títulos da playlist atual. O objeto de **jogador** foi criado com ID = "Player".
 
 
 ```JScript
@@ -104,10 +104,10 @@ Player.URL = listItem.sourceURL;
 [**Playlist. removeItem**](playlist-removeitem.md)
 </dt> <dt>
 
-[**Settings. mediaAccessRights**](settings-mediaaccessrights.md)
+[**Configurações. mediaAccessRights**](settings-mediaaccessrights.md)
 </dt> <dt>
 
-[**Settings. requestMediaAccessRights**](settings-requestmediaaccessrights.md)
+[**Configurações. requestMediaAccessRights**](settings-requestmediaaccessrights.md)
 </dt> </dl>
 
  

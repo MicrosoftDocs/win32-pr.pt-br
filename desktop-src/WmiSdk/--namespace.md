@@ -2,7 +2,7 @@
 description: Representa um namespace WMI.
 ms.assetid: d5f0abc7-32cf-4d85-b5cd-5d60c991bcbc
 ms.tgt_platform: multiple
-title: Classe __Namespace
+title: __Namespace classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -22,9 +22,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118320764"
 ---
-# <a name="__namespace-class"></a>\_\_Classe de namespace
+# <a name="__namespace-class"></a>\_\_Classe namespace
 
-A classe de sistema **\_ \_ namespace** representa um namespace WMI.
+A **\_ \_ classe de sistema Namespace** representa um namespace WMI.
 
 A sintaxe a seguir é simplificada do código MOF (Managed Object Format) e inclui todas as propriedades herdadas. As propriedades são listadas em ordem alfabética, não em ordem MOF.
 
@@ -39,13 +39,13 @@ class __Namespace : __SystemClass
 
 ## <a name="members"></a>Membros
 
-A classe **\_ \_ namespace** tem estes tipos de membros:
+A **\_ \_ classe Namespace** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **\_ \_ namespace** tem essas propriedades.
+A **\_ \_ classe Namespace** tem essas propriedades.
 
 <dl> <dt>
 
@@ -55,10 +55,10 @@ A classe **\_ \_ namespace** tem essas propriedades.
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
-Qualificadores: [ **chave**](standard-qualifiers.md)
+Qualificadores: [ **Chave**](standard-qualifiers.md)
 </dt> </dl>
 
 Nome do namespace.
@@ -67,17 +67,17 @@ Nome do namespace.
 
 ## <a name="remarks"></a>Comentários
 
-A classe de **\_ \_ namespace** é derivada de [**\_ \_ SystemClass**](--systemclass.md), que não tem propriedades.
+A **\_ \_ classe Namespace** é derivada de [**\_ \_ SystemClass,**](--systemclass.md)que não tem nenhuma propriedade.
 
-Você pode usar o **\_ \_ namespace** para identificar, criar e excluir namespaces filho no namespace de trabalho atual para o qual você tem um objeto [**IWbemServices**](/windows/desktop/api/WbemCli/nn-wbemcli-iwbemservices) . A criação de uma nova instância do **\_ \_ namespace** em qualquer namespace de trabalho cria um namespace filho dentro do namespace de trabalho. Por outro lado, a exclusão de uma instância do **\_ \_ namespace** remove o namespace filho do namespace de trabalho. Observe que a exclusão de um namespace filho também exclui todas as suas classes e instâncias.
+Você pode usar **\_ \_ o Namespace** para identificar, criar e excluir namespaces filho dentro do namespace de trabalho atual para o qual você tem um [**objeto IWbemServices.**](/windows/desktop/api/WbemCli/nn-wbemcli-iwbemservices) A criação de uma nova instância **\_ \_ do Namespace em** qualquer namespace de trabalho cria um namespace filho dentro do namespace de trabalho. Por outro lado, a exclusão de uma instância do **\_ \_ Namespace** remove o namespace filho do namespace de trabalho. Observe que a exclusão de um namespace filho também exclui todas as suas classes e instâncias.
 
-Enumerar instâncias dessa classe dentro de qualquer namespace de trabalho fornece os namespaces filho disponíveis.
+Enumerar instâncias dessa classe em qualquer namespace de trabalho fornece os namespaces filho disponíveis.
 
-Por exemplo, dentro do \\ namespace raiz há duas instâncias de **\_ \_ namespace**. Uma tem sua propriedade **Name** definida como "padrão", a outra tem o **nome** definido como "Cimv2". Essas instâncias representam os \\ \\ namespaces raiz padrão \\ e \\ cimv2 raiz, respectivamente.
+Por exemplo, dentro do \\ namespace raiz há duas instâncias do **\_ \_ Namespace**. Um tem sua **propriedade Name** definida como "Padrão", a outra tem **Nome** definido como "Cimv2". Essas instâncias representam o \\ padrão raiz e os \\ \\ \\ namespaces raiz cimv2, respectivamente.
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo de VBScript [listar todos os namespaces WMI](https://Gallery.TechNet.Microsoft.Com/4a8e84f1-4b52-452c-ae4f-e4e00e266257) na galeria do TechNet usa uma chamada recursiva para listar todas as instâncias da \_ \_ classe namespace em um sistema.
+O exemplo Listar Todos os [Namespaces](https://Gallery.TechNet.Microsoft.Com/4a8e84f1-4b52-452c-ae4f-e4e00e266257) do WMI VBScript na Galeria do TechNet usa uma chamada recursiva para listar todas as instâncias da classe Namespace em \_ \_ um sistema.
 
 O exemplo de código a seguir recupera todos os namespaces no PowerShell.
 
@@ -114,7 +114,7 @@ $NameSpace| sort __namespace  | Format-Table @{Expression = "__Namespace"; Label
 |-------------------------------------|--------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>       |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/> |
-| Namespace<br/>                | Todos os namespaces do WMI<br/>  |
+| Namespace<br/>                | Todos os namespaces WMI<br/>  |
 
 
 

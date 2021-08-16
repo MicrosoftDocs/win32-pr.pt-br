@@ -1,33 +1,33 @@
 ---
-description: Um usuário pode desabilitar a experiência de pato padrão fornecida pelo sistema usando as opções disponíveis na guia comunicações do painel de controle multimídia do Windows, Mmsys.cpl.
+description: Um usuário pode desabilitar a Experiência padrão de ressalvação fornecida pelo sistema usando as opções disponíveis na guia Comunicações do painel de controle Windows multimídia, Mmsys.cpl.
 ms.assetid: 5604b927-99f8-450f-a48c-b38d782584de
-title: Desabilitando a experiência de pato padrão
+title: Desabilitando a experiência de ressalvamento padrão
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ed33fa7d9473cb5c68a018b98bff8a826612387e
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 473b0bab8c3575d416cc72b7e931b4c85160bdaacc6031611ad80394f44b9098
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104089630"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117828547"
 ---
-# <a name="disabling-the-default-ducking-experience"></a>Desabilitando a experiência de pato padrão
+# <a name="disabling-the-default-ducking-experience"></a>Desabilitando a experiência de ressalvamento padrão
 
-Um usuário pode desabilitar a [experiência de pato padrão](stream-attenuation.md) fornecida pelo sistema usando as opções disponíveis na guia **comunicações** do painel de controle multimídia do Windows, Mmsys.cpl.
+Um usuário pode [](stream-attenuation.md) desabilitar a Experiência padrão de ressalvamento  fornecida pelo sistema usando as opções disponíveis na guia Comunicações do painel de controle Windows multimídia, Mmsys.cpl.
 
-Quando o pato é aplicado, um efeito de esmaecimento e esmaecimento é usado por um período de 1 segundo. Um aplicativo de jogo pode não querer que o fluxo de comunicação interfira no áudio do jogo. Alguns aplicativos de mídia podem descobrir que a experiência de reprodução é dissonante quando a música esmaece de volta. Esses tipos de aplicativos podem optar por não participar da experiência de pato.
+Quando a replicação é aplicada, um efeito de esmaeamento e esmaeçamento é usado por um período de 1 segundo. Um aplicativo de jogo pode não querer que o fluxo de comunicação interfira no áudio do jogo. Alguns aplicativos de mídia podem achar que a experiência de reprodução está em movimento quando a música esmaece novamente. Esses tipos de aplicativos podem optar por não participar da experiência de replicação.
 
-Programaticamente, um cliente WASAPI direto pode recusar usando o Gerenciador de sessão para a sessão de áudio que fornece controle de volume para os fluxos que não são de comunicação. Observe que, mesmo que um cliente não esteja no pato, ele ainda recebe notificações de pato do sistema.
+Programaticamente, um cliente WASAPI direto pode optar por usar o gerenciador de sessão para a sessão de áudio que fornece controle de volume para os fluxos de não comunicação. Observe que, mesmo que um cliente opte por não fazer isso, ele ainda receberá notificações de ressalvação do sistema.
 
-Para recusar o pato, o cliente deve obter uma referência à interface [**IAudioSessionControl2**](/windows/desktop/api/audiopolicy/nn-audiopolicy-iaudiosessioncontrol2) do Gerenciador de sessão. Para recusar a experiência de pato, use as seguintes etapas:
+Para não se desatar, o cliente deve obter uma referência à interface [**IAudioSessionControl2**](/windows/desktop/api/audiopolicy/nn-audiopolicy-iaudiosessioncontrol2) do gerenciador de sessão. Para não usar a experiência de ressarção, use as seguintes etapas:
 
-1.  Instancie o enumerador de dispositivo e use-o para obter uma referência ao ponto de extremidade do dispositivo que o aplicativo de mídia está usando para renderizar o fluxo de não comunicação.
-2.  Ative o Gerenciador de sessão no ponto de extremidade do dispositivo e obtenha uma referência para a interface [**IAudioSessionManager2**](/windows/desktop/api/audiopolicy/nn-audiopolicy-iaudiosessionmanager2) do Gerenciador de sessão.
-3.  Usando o ponteiro [**IAudioSessionManager2**](/windows/desktop/api/audiopolicy/nn-audiopolicy-iaudiosessionmanager2) , obtenha uma referência à interface [**IAudioSessionControl**](/windows/desktop/api/Audiopolicy/nn-audiopolicy-iaudiosessioncontrol) do Gerenciador de sessão.
-4.  Consulte o [**IAudioSessionControl2**](/windows/desktop/api/audiopolicy/nn-audiopolicy-iaudiosessioncontrol2) da interface [**IAudioSessionControl**](/windows/desktop/api/Audiopolicy/nn-audiopolicy-iaudiosessioncontrol) .
-5.  Chame [**IAudioSessionControl2:: SetDuckingPreference**](/windows/desktop/api/audiopolicy/nf-audiopolicy-iaudiosessioncontrol2-setduckingpreference) e passe **true** ou **false** para especificar a preferência de pato. A preferência especificada pode ser alterada dinamicamente durante a sessão. Observe que a alteração de recusa não tem efeito até que o fluxo seja interrompido e iniciado novamente.
+1.  Insinue o enumerador de dispositivo e use-o para obter uma referência ao ponto de extremidade do dispositivo que o aplicativo de mídia está usando para renderizar o fluxo de não comunicação.
+2.  Ative o gerenciador de sessão do ponto de extremidade do dispositivo e receba uma referência à interface [**IAudioSessionManager2**](/windows/desktop/api/audiopolicy/nn-audiopolicy-iaudiosessionmanager2) do gerenciador de sessão.
+3.  Usando o ponteiro [**IAudioSessionManager2,**](/windows/desktop/api/audiopolicy/nn-audiopolicy-iaudiosessionmanager2) obter uma referência à interface [**IAudioSessionControl**](/windows/desktop/api/Audiopolicy/nn-audiopolicy-iaudiosessioncontrol) do gerenciador de sessão.
+4.  Consulte o [**IAudioSessionControl2**](/windows/desktop/api/audiopolicy/nn-audiopolicy-iaudiosessioncontrol2) da interface [**IAudioSessionControl.**](/windows/desktop/api/Audiopolicy/nn-audiopolicy-iaudiosessioncontrol)
+5.  Chame [**IAudioSessionControl2::SetDuckingPreference**](/windows/desktop/api/audiopolicy/nf-audiopolicy-iaudiosessioncontrol2-setduckingpreference) e passe **TRUE** ou **FALSE** para especificar a preferência de redução. A preferência especificada pode ser alterada dinamicamente durante a sessão. Observe que a alteração de aceitação não tem efeito até que o fluxo seja interrompido e iniciado novamente.
 
-O código a seguir mostra como um aplicativo pode especificar sua preferência de pato. O chamador da função deve passar **true** ou **false** no parâmetro DuckingOptOutChecked. Dependendo do valor passado, o pato está habilitado ou desabilitado por meio de [**IAudioSessionControl2:: SetDuckingPreference**](/windows/desktop/api/audiopolicy/nf-audiopolicy-iaudiosessioncontrol2-setduckingpreference).
+O código a seguir mostra como um aplicativo pode especificar sua preferência de replicação. O chamador da função deve passar **TRUE** ou **FALSE** no parâmetro DuckingOptOutChecked. Dependendo do valor passado, a redução é habilitada ou desabilitada por meio de [**IAudioSessionControl2::SetDuckingPreference**](/windows/desktop/api/audiopolicy/nf-audiopolicy-iaudiosessioncontrol2-setduckingpreference).
 
 
 ```C++
@@ -120,16 +120,16 @@ HRESULT DuckingOptOut(bool DuckingOptOutChecked)
 [Usando um dispositivo de comunicação](using-the-communication-device.md)
 </dt> <dt>
 
-[Experiência de pato padrão](stream-attenuation.md)
+[Experiência padrão de ressalvamento](stream-attenuation.md)
 </dt> <dt>
 
-[Fornecendo um comportamento personalizado de pato](providing-a-custom-ducking-experience.md)
+[Fornecendo um comportamento de desaqueamento personalizado](providing-a-custom-ducking-experience.md)
 </dt> <dt>
 
-[Considerações de implementação para notificações de pato](handling-audio-ducking-events-from-communication-devices.md)
+[Considerações de implementação para notificações de replicação](handling-audio-ducking-events-from-communication-devices.md)
 </dt> <dt>
 
-[Obtendo eventos de pato](getting-ducking-events-from-a-communication-device.md)
+[Obter eventos de desaqueamento](getting-ducking-events-from-a-communication-device.md)
 </dt> </dl>
 
  

@@ -4,12 +4,12 @@ ms.assetid: e832403c-1f4f-4b01-b97c-158f42e421c6
 title: System. Devices. WiFiDirect. GroupId
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 49bdc0c91ad06a9802f76a2abb98a9b77fa7cf7a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 70f90927c01a353d00594b6d7a083f589f491c1ee2819365f7ee0e0d50e6e351
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105815511"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118467241"
 ---
 # <a name="systemdeviceswifidirectgroupid"></a>System. Devices. WiFiDirect. GroupId
 

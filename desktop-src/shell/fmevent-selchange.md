@@ -1,6 +1,6 @@
 ---
-description: Enviado para uma DLL de extensão quando o usuário seleciona um nome de arquivo na janela de diretório do Gerenciador de Arquivos ou na janela Resultados da Pesquisa.
-title: FMEVENT_SELCHANGE mensagem (Wfext.h)
+description: Enviado a uma DLL de extensão quando o usuário seleciona um nome de arquivo na janela do diretório do Gerenciador de arquivos ou na janela de resultados da pesquisa.
+title: Mensagem de FMEVENT_SELCHANGE (Wfext. h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -20,9 +20,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118459033"
 ---
-# <a name="fmevent_selchange-message"></a>Mensagem FMEVENT \_ SELCHANGE
+# <a name="fmevent_selchange-message"></a>\_Mensagem FMEVENT SELCHANGE
 
-Enviado para uma DLL de extensão quando o usuário seleciona um nome de arquivo na janela de diretório do Gerenciador de Arquivos ou na janela Resultados da Pesquisa.
+Enviado a uma DLL de extensão quando o usuário seleciona um nome de arquivo na janela do diretório do Gerenciador de arquivos ou na janela de resultados da pesquisa.
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -36,13 +36,13 @@ Enviado para uma DLL de extensão quando o usuário seleciona um nome de arquivo
 
 ## <a name="return-value"></a>Valor retornado
 
-Uma DLL de extensão deverá retornar zero se ela processa essa mensagem.
+Uma DLL de extensão deve retornar zero se ela processar essa mensagem.
 
 ## <a name="remarks"></a>Comentários
 
-As alterações na parte de árvore da janela do diretório não produzem essa mensagem.
+As alterações na parte da árvore da janela do diretório não produzem essa mensagem.
 
-Como o usuário pode alterar a seleção muitas vezes, a DLL de extensão deve retornar imediatamente após o processamento dessa mensagem para evitar a lentidão do processo de seleção para o usuário.
+Como o usuário pode alterar a seleção várias vezes, a DLL de extensão deve retornar imediatamente após o processamento dessa mensagem para evitar a lentidão do processo de seleção para o usuário.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -52,7 +52,7 @@ Como o usuário pode alterar a seleção muitas vezes, a DLL de extensão deve r
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                         |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                               |
-| Cabeçalho<br/>                   | <dl> <dt>Wfext.h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Wfext. h</dt> </dl> |
 
 
 

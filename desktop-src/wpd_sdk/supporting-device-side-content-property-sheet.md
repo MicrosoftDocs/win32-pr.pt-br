@@ -1,21 +1,21 @@
 ---
-title: Suporte ao conteúdo do lado do dispositivo (folha)
-description: Saiba como usar a API do shell do Windows ou a API WPD para obter dados de objetos de dispositivo, que não podem ser acessados por meio do sistema de arquivos no Windows Vista.
+title: Suporte ao conteúdo do lado do dispositivo (PropertySheet)
+description: Saiba como usar a API Windows Shell do Windows ou a API WPD para obter dados para objetos de dispositivo, que não podem ser acessados por meio do sistema de arquivos no Windows Vista.
 ms.assetid: ea11f8e6-fb53-46e4-b210-2dae33cdc056
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3aeade3745c37296b334c54af9edcc768fb8c93e
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 451bf63c1270b121cf909fa5ee07aff62cc3b83aa0e0d031cae61005f725c197
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112404189"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117842563"
 ---
 # <a name="supporting-device-side-content"></a>Suporte ao conteúdo do lado do dispositivo
 
-Como o conteúdo do lado do dispositivo não é acessível por meio do sistema de arquivos no Windows Vista, você precisará usar a API do shell do Windows ou a API WPD para recuperar dados de objetos de dispositivo. Essa é a principal diferença entre um manipulador de folhas de propriedades normal e um manipulador de folhas de propriedades WPD. O código de exemplo a seguir demonstra a recuperação do conteúdo do lado do dispositivo usando a API do shell do Windows.
+Como o conteúdo do lado do dispositivo não está acessível por meio do sistema de arquivos no Windows Vista, você precisará usar a API do Shell do Windows ou a API wpd para recuperar dados para objetos de dispositivo. Essa é a principal diferença entre um manipulador de folha de propriedades normal e um manipulador de folha de propriedades WPD. O código de exemplo a seguir demonstra a recuperação de conteúdo do lado do dispositivo usando a API Windows Shell.
 
-A primeira etapa é a inicialização da lista de identificadores de item ou PIDL. (Essa lista contém o identificador exclusivo para o objeto de dispositivo fornecido.)
+A primeira etapa é a inicialização da lista de identificadores de item ou PIDL. (Esta lista contém o identificador exclusivo para o objeto de dispositivo determinado.)
 
 
 ```C++
@@ -68,7 +68,7 @@ HRESULT CWPDPropSheet::_InitializePIDLArray(IDataObject *pDataObj)
 
 
 
-A função de inicialização chama a \_ função ExaminePIDLArray, que recupera as propriedades do objeto identificado por um PIDL na matriz PIDL.
+A função de inicialização chama a função ExaminePIDLArray, que recupera as propriedades do objeto identificado por \_ um PIDL na matriz PIDL.
 
 
 ```C++
@@ -164,24 +164,24 @@ Exit:
 
 
 
-Além da inicialização e do processamento da lista de identificadores de item, seu aplicativo precisará implementar o método IShellPropSheetExt:: ReplacePage e inserir os manipuladores de substituição apropriados. O Shell do Windows chama esse método cada vez que está prestes a exibir uma folha de propriedades substituível, dando ao seu aplicativo uma chance de invocar um manipulador de substituição correspondente. A palavra baixa do primeiro parâmetro para o método ReplacePage é um identificador para a folha de propriedades fornecida que o Windows está prestes a exibir. Os valores passados na palavra inferior do primeiro parâmetro correspondem aos valores definidos no arquivo WpdShellExtension. h. Esses valores e suas descrições aparecem na tabela a seguir.
+Além da inicialização e processamento da lista de identificadores de item, seu aplicativo precisará implementar o método IShellPropSheetExt::ReplacePage e inserir os manipuladores de substituição apropriados. O Windows Shell chama esse método sempre que ele está prestes a exibir uma folha de propriedades substituível, dando ao aplicativo a oportunidade de invocar um manipulador de substituição correspondente. A palavra baixa do primeiro parâmetro para o método ReplacePage é um identificador para a folha de propriedades Windows está prestes a ser exibida. Os valores passados na palavra baixa do primeiro parâmetro correspondem aos valores definidos no arquivo WpdShellExtension.h. Esses valores e suas descrições aparecem na tabela a seguir.
 
 
 
 | Valor                                  | Descrição                                                                 |
 |----------------------------------------|-----------------------------------------------------------------------------|
-| WPDNSE \_ PROPSHEET \_ dispositivo \_ geral     | Corresponde à guia Geral do dispositivo.                              |
-| WPDNSE \_ PROPSHEET \_ armazenamento \_ geral    | Corresponde à guia geral de um objeto de armazenamento encontrado no dispositivo.    |
-| \_ \_ conteúdo \_ geral do WPDNSE PROPSHEET    | Corresponde à guia Geral do objeto de conteúdo encontrado no dispositivo.      |
-| WPDNSE \_ PROPSHEET \_ referências de conteúdo \_ | Corresponde à guia References de um objeto de conteúdo encontrado no dispositivo. |
-| recursos de conteúdo do WPDNSE \_ PROPSHEET \_ \_  | Corresponde à guia de recursos de um objeto de conteúdo encontrado no dispositivo.  |
-| detalhes do conteúdo do WPDNSE \_ PROPSHEET \_ \_    | Corresponde a uma guia de detalhes de um objeto de conteúdo encontrado no dispositivo.      |
+| WPDNSE \_ PROPSHEET \_ DEVICE \_ GENERAL     | Corresponde à guia geral do dispositivo.                              |
+| WPDNSE \_ PROPSHEET \_ STORAGE \_ GENERAL    | Corresponde à guia geral para um objeto de armazenamento encontrado no dispositivo.    |
+| CONTEÚDO GERAL DO WPDNSE \_ PROPSHEET \_ \_    | Corresponde à guia geral para o objeto de conteúdo encontrado no dispositivo.      |
+| REFERÊNCIAS DE CONTEÚDO DO WPDNSE \_ PROPSHEET \_ \_ | Corresponde à guia referências de um objeto de conteúdo encontrado no dispositivo. |
+| RECURSOS DE CONTEÚDO DO WPDNSE \_ PROPSHEET \_ \_  | Corresponde à guia recursos de um objeto de conteúdo encontrado no dispositivo.  |
+| DETALHES DO CONTEÚDO DO WPDNSE \_ PROPSHEET \_ \_    | Corresponde a uma guia de detalhes para um objeto de conteúdo encontrado no dispositivo.      |
 
 
 
  
 
-Na extensão da folha de propriedades de exemplo, o método ReplacePage invoca dois manipuladores de substituição: \_ ReplaceDeviceGeneral e \_ ReplaceContentReferences. Esses manipuladores substituem as guias dispositivo geral e referências de conteúdo nas folhas de propriedades extensível.
+Na extensão de folha de propriedades de exemplo, o método ReplacePage invoca dois manipuladores de substituição: \_ ReplaceDeviceGeneral e \_ ReplaceContentReferences. Esses manipuladores substituem o dispositivo geral e as guias de referências de conteúdo nas folhas de propriedades extensíveis.
 
 
 ```C++
@@ -204,7 +204,7 @@ STDMETHODIMP CWPDPropSheet::ReplacePage(UINT uPageID, LPFNADDPROPSHEETPAGE lpfnR
 
 
 
-Como é possível que um usuário Selecione vários dispositivos, um aplicativo precisará salvar a matriz PIDL retornada por IShellExtInit:: Initialize e, em seguida, examinar a palavra alta do primeiro parâmetro para ReplacePage. Um valor igual a zero nesta palavra alta corresponde ao primeiro elemento na matriz PIDL, um valor de um corresponde ao segundo elemento e assim por diante. Na função ReplacePage do aplicativo de exemplo, esse valor de palavra alta é passado para ambos os manipuladores de substituição. Esses manipuladores, por sua vez, usam esse valor para identificar um dispositivo específico.
+Como é possível que um usuário selecione vários dispositivos, um aplicativo precisará salvar a matriz PIDL retornada por IShellExtInit::Initialize e, em seguida, examinar a palavra alta do primeiro parâmetro para ReplacePage. Um valor de zero nessa palavra alta corresponde ao primeiro elemento na matriz PIDL, um valor de um corresponde ao segundo elemento e assim por diante. Na função ReplacePage do aplicativo de exemplo, esse valor de palavra alta é passado para ambos os manipuladores de substituição. Esses manipuladores, por sua vez, usam esse valor para identificar um dispositivo específico.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

@@ -1,6 +1,6 @@
 ---
 title: UI_PKEY_StandardColorsTooltips
-description: Identifica a propriedade \_ PKEY \_ StandardColorsTooltips da interface do usuário.
+description: Identifica a \_ Propriedade PKEY StandardColorsTooltips da interface do usuário \_ .
 ms.assetid: 78786f72-69d3-44f6-bef4-51d0f4497dfb
 ms.topic: article
 ms.date: 05/31/2018
@@ -11,9 +11,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118437801"
 ---
-# <a name="ui_pkey_standardcolorstooltips"></a>PKEY \_ \_ StandardColorsTooltips da interface do usuário
+# <a name="ui_pkey_standardcolorstooltips"></a>\_StandardColorsTooltips PKEY \_ UI
 
-Identifica a propriedade \_ PKEY \_ StandardColorsTooltips da interface do usuário.
+Identifica a \_ Propriedade PKEY StandardColorsTooltips da interface do usuário \_ .
 
 ```
 propertyDescription
@@ -27,17 +27,17 @@ propertyDescription
 
 ## <a name="remarks"></a>Comentários
 
-PKEY StandardColorsTooltips da interface do usuário é usada por um aplicativo para consultar as dicas de ferramenta de \_ amostra de cor de um \_ [**DropDownColorPicker.**](windowsribbon-element-dropdowncolorpicker.md)
+A interface do usuário \_ PKEY \_ StandardColorsTooltips é usada por um aplicativo para consultar as dicas de ferramentas de amostra de cor de um [**DropDownColorPicker**](windowsribbon-element-dropdowncolorpicker.md).
 
 O valor da propriedade é uma matriz de valores de cadeia de caracteres.
 
-Cada valor de cadeia de caracteres corresponde à dica de ferramenta para uma amostra de cor em [**um DropDownColorPicker, independentemente**](windowsribbon-element-dropdowncolorpicker.md) do valor especificado para o **atributo ColorTemplate.**
+Cada valor de cadeia de caracteres corresponde à dica de ferramenta para uma amostra de cor em um [**DropDownColorPicker**](windowsribbon-element-dropdowncolorpicker.md) , independentemente do valor especificado para o atributo **colortemplate** .
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[Seletor de Cor propriedades](windowsribbon-reference-properties-colorpicker.md)
+[Propriedades do seletor de cores](windowsribbon-reference-properties-colorpicker.md)
 </dt> </dl>
 
  

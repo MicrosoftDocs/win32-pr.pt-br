@@ -66,7 +66,7 @@ Use a [**função D3D11CreateDevice**](/windows/desktop/api/d3d11/nf-d3d11-d3d11
 
 ### <a name="step-2-retrieve-a-pointer-to-the-dxgi-object"></a>Etapa 2: Recuperar um ponteiro para o objeto DXGI
 
-Use o **método QueryInterface** para recuperar o [**ponteiro IDXGIDevice**](/windows/desktop/api/dxgi/nn-dxgi-idxgidevice) do objeto de dispositivo Direct3D. DirectComposition usará o objeto DXGI (Microsoft DirectX Graphic Infrastructure) para criar todos os objetos de superfície para o dispositivo DirectComposition.
+Use o **método QueryInterface** para recuperar o [**ponteiro IDXGIDevice**](/windows/desktop/api/dxgi/nn-dxgi-idxgidevice) do objeto de dispositivo Direct3D. O DirectComposition usará o objeto DXGI (Microsoft DirectX Graphic Infrastructure) para criar todos os objetos de superfície para o dispositivo DirectComposition.
 
 
 ```C++

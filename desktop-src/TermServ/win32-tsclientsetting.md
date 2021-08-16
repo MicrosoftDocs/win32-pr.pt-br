@@ -5,7 +5,7 @@ ms.assetid: 438baf22-adc2-410e-bf9b-4b17a05c5ce4
 ms.tgt_platform: multiple
 keywords:
 - Win32_TSClientSetting classe Serviços de Área de Trabalho Remota
-- Win32_TSClientSetting classe Serviços de Área de Trabalho Remota , descrita
+- Win32_TSClientSetting classe Serviços de Área de Trabalho Remota , descrito
 topic_type:
 - apiref
 api_name:
@@ -191,7 +191,7 @@ Tipo de acesso: Leitura/gravação
 
 Especifica se é necessário habilitar gráficos RemoteFX avançados para RemoteApp.
 
-**Windows Server 2012, Windows 8, Windows Server 2008 R2, Windows 7, Windows Server 2008 e Windows Vista:** Essa propriedade não está disponível antes Windows Server 2012 R2 e Windows 8.1.
+**Windows Server 2012, Windows 8, Windows Server 2008 R2, Windows 7, Windows Server 2008** e Windows Vista: Essa propriedade não está disponível antes Windows Server 2012 R2 e Windows 8.1.
 
 <dt>
 
@@ -864,24 +864,24 @@ Tipo de dados: **UInt32**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-A resolução máxima de X com suporte do servidor. Use o [**método SetMaxXResolution**](setmaxxresolution-win32-tsclientsetting.md) para modificar essa propriedade.
+A resolução máxima de X com suporte do servidor. Use o método [**SetMaxXResolution**](setmaxxresolution-win32-tsclientsetting.md) para modificar essa propriedade.
 
-**Windows Server 2008 e Windows Vista:** Essa propriedade não está disponível antes Windows Server 2008 R2 e Windows 7.
+**Windows Server 2008 e Windows Vista:** essa propriedade não está disponível antes de Windows Server 2008 R2 e Windows 7.
 
 </dd> <dt>
 
 **MaxYResolution**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **uint32**
+Tipo de dados: **UInt32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-A resolução Y máxima com suporte pelo servidor. Use o [**método SetMaxYResolution**](setmaxyresolution-win32-tsclientsetting.md) para modificar essa propriedade.
+A resolução de Y máxima com suporte no servidor. Use o método [**SetMaxYResolution**](setmaxyresolution-win32-tsclientsetting.md) para modificar essa propriedade.
 
-**Windows Server 2008 e Windows Vista:** Essa propriedade não está disponível antes Windows Server 2008 R2 e Windows 7.
+**Windows Server 2008 e Windows Vista:** essa propriedade não está disponível antes de Windows Server 2008 R2 e Windows 7.
 
 </dd> <dt>
 
@@ -896,42 +896,42 @@ Tipo de acesso: Somente leitura
 
 O nome do objeto.
 
-Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
+Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
 
 </dd> <dt>
 
 **PNPRedirection**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **uint32**
+Tipo de dados: **UInt32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Especifica se é preciso permitir Plug and Play redirecionamento.
+Especifica se o redirecionamento de Plug and Play deve ser permitido.
 
 <dt>
 
 <span id="FALSE"></span><span id="false"></span>
 
-<span id="FALSE"></span><span id="false"></span>**FALSE** (0)
+<span id="FALSE"></span><span id="false"></span>**False** (0)
 
 
 </dt> <dd>
 
-Permitir Plug and Play redirecionamento.
+Permitir redirecionamento de Plug and Play.
 
 </dd> <dt>
 
 <span id="TRUE"></span><span id="true"></span>
 
-<span id="TRUE"></span><span id="true"></span>**TRUE** (1)
+<span id="TRUE"></span><span id="true"></span>**Verdadeiro** (1)
 
 
 </dt> <dd>
 
-Não permita o Plug and Play redirecionamento.
+Não permitir redirecionamento de Plug and Play.
 
 </dd> </dl>
 
@@ -940,15 +940,15 @@ Não permita o Plug and Play redirecionamento.
 **PolicyAdvancedRemoteAppGraphics**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **uint32**
+Tipo de dados: **UInt32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Indica se a **propriedade AdvancedRemoteAppGraphics** está configurada pela política de servidor ou grupo.
+Indica se a propriedade **AdvancedRemoteAppGraphics** está configurada pelo servidor ou pela política de grupo.
 
-**Windows Server 2012, Windows 8, Windows Server 2008 R2, Windows 7, Windows Server 2008 e Windows Vista:** Essa propriedade não está disponível antes Windows Server 2012 R2 e Windows 8.1.
+**Windows Server 2012, Windows 8, Windows server 2008 R2, Windows 7, Windows Server 2008 e Windows Vista:** essa propriedade não está disponível antes de Windows Server 2012 R2 e Windows 8.1.
 
 <dt>
 
@@ -971,17 +971,17 @@ Política de grupo
 **PolicySourceAllowDwm**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **uint32**
+Tipo de dados: **UInt32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Essa propriedade não está disponível.
+Esta propriedade não está disponível.
 
-**Windows 7 e Windows Server 2008 R2: **
+* * Windows 7 e Windows Server 2008 R2: * *
 
-Indica se a **propriedade AllowDwm** está configurada pela política de servidor ou grupo.
+Indica se a propriedade **AllowDwm** está configurada pelo servidor ou pela política de grupo.
 
 <dt>
 
@@ -1004,15 +1004,15 @@ Política de grupo
 **PolicySourceAudioCaptureRedir**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **uint32**
+Tipo de dados: **UInt32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Indica se a **propriedade AudioCaptureRedir** está configurada pela política de servidor ou grupo.
+Indica se a propriedade **AudioCaptureRedir** está configurada pelo servidor ou pela política de grupo.
 
-**Windows Server 2008 e Windows Vista:** Essa propriedade não está disponível antes Windows Server 2008 R2 e Windows 7.
+**Windows Server 2008 e Windows Vista:** essa propriedade não está disponível antes de Windows Server 2008 R2 e Windows 7.
 
 <dt>
 
@@ -1035,13 +1035,13 @@ Política de grupo
 **PolicySourceAudioMapping**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **uint32**
+Tipo de dados: **UInt32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Indica se a **propriedade AudioMapping** está configurada pelo servidor, pela política de grupo ou por padrão.
+Indica se a propriedade **AudioMapping** é configurada pelo servidor, pela política de grupo ou por padrão.
 
 <dt>
 
@@ -1071,15 +1071,15 @@ Padrão
 **PolicySourceAvc444ModePreferred**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **uint32**
+Tipo de dados: **UInt32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Indica como a **propriedade AVC444ModePreferredis** está configurada.
+Indica como a propriedade **AVC444ModePreferredis** é configurada.
 
-**Windows 8.1, Windows Server 2012 R2, Windows 8, Windows Server 2012, Windows 7, Windows Server 2008 R2, Windows Vista e Windows Server 2008:** Essa propriedade não está disponível antes de Windows 10 ou Windows Server 2016.
+**Windows 8.1, Windows Server 2012 R2, Windows 8, Windows Server 2012, Windows 7, Windows server 2008 R2, Windows Vista e Windows server 2008:** essa propriedade não está disponível antes de Windows 10 ou Windows Server 2016.
 
 <dt>
 
@@ -1102,13 +1102,13 @@ Política de Grupo
 **PolicySourceClipboardMapping**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **uint32**
+Tipo de dados: **UInt32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Indica se a **propriedade ClipboardMapping** está configurada pelo servidor, pela política de grupo ou por padrão.
+Indica se a propriedade **ClipboardMapping** é configurada pelo servidor, pela política de grupo ou por padrão.
 
 <dt>
 
@@ -1138,13 +1138,13 @@ Padrão
 **PolicySourceColorDepth**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **uint32**
+Tipo de dados: **UInt32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Indica se a **propriedade ColorDepth** está configurada pelo servidor, pela política de grupo ou por padrão.
+Indica se a propriedade **ColorDepth** é configurada pelo servidor, pela política de grupo ou por padrão.
 
 <dt>
 
@@ -1174,13 +1174,13 @@ Padrão
 **PolicySourceColorDepthPolicy**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **uint32**
+Tipo de dados: **UInt32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Indica se a **propriedade ColorDepthPolicy** está configurada pelo servidor, pela política de grupo ou por padrão.
+Indica se a propriedade **ColorDepthPolicy** é configurada pelo servidor, pela política de grupo ou por padrão.
 
 <dt>
 
@@ -1210,7 +1210,7 @@ Padrão
 **PolicySourceCOMPortMapping**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **uint32**
+Tipo de dados: **UInt32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura

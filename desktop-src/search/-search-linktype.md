@@ -12,16 +12,16 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: e5b2105e8d56a9c8042f341ffc3f24a4d7995f4e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 16c61f8d92a6f90be0fa4b64ddd9d582987ac0bdf52ca1c596c7db3a7fa4b669
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105782465"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118463039"
 ---
 # <a name="linktype-enumeration"></a>Enumeração de LINKID
 
-\[A enumeração **LinkId** só tem suporte no Windows XP e no windows Server 2003 e não deve mais ser usada.\]
+\[a enumeração **linkid** só tem suporte no Windows XP e no Windows Server 2003 e não deve mais ser usada.\]
 
 Especifica o tipo de link ao rastrear ou indexar.
 
@@ -65,7 +65,7 @@ Especifica um link relacionado.
 
 ## <a name="remarks"></a>Comentários
 
-Para visualizar os anexos com um manipulador de protocolo de terceiros em computadores que executam o Windows XP ou o Windows Server 2003, pode ser necessário usar os sinalizadores **LinkId** e as outras APIs a seguir: os métodos [**IItemPreviewerExt:: GetLinkedContent**](-search-iitempreviewerext-getlinkedcontent.md) e [**IItemPreviewerExt:: GetRelatedPart**](-search-iitempreviewerext-getrelatedpart.md) e a estrutura [**LINKINFO**](-search-linkinfo.md) .
+para visualizar os anexos com um manipulador de protocolo de terceiros em computadores que executam o Windows XP ou o Windows Server 2003, pode ser necessário usar os sinalizadores **linkid** e as outras APIs a seguir: os métodos [**IItemPreviewerExt:: GetLinkedContent**](-search-iitempreviewerext-getlinkedcontent.md) e [**IItemPreviewerExt:: GetRelatedPart**](-search-iitempreviewerext-getrelatedpart.md) e a estrutura [**LINKINFO**](-search-linkinfo.md) .
 
 ## <a name="requirements"></a>Requisitos
 
@@ -73,8 +73,8 @@ Para visualizar os anexos com um manipulador de protocolo de terceiros em comput
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows XP com SP2\]<br/> |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows XP somente com \[ aplicativos de área de trabalho do SP2\]<br/> |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/> |
 
 
 

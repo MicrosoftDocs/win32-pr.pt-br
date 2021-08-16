@@ -1,9 +1,9 @@
 ---
-title: Função SampleCmp::SampleCmp(S,float,float,float) para TextureCube
-description: Amostra uma textura, usando um valor de comparação para rejeitar amostras, com um valor opcional para fixar valores de LOD (nível de detalhes) de exemplo. | Função SampleCmp::SampleCmp(S,float,float,float) para TextureCube
+title: 'Função SampleCmp:: SampleCmp (S, float, float, float) para TextureCube'
+description: 'Amostras de uma textura, usando um valor de comparação para rejeitar amostras, com um valor opcional para fixe os valores de nível de detalhe (LOD) de exemplo para. | Função SampleCmp:: SampleCmp (S, float, float, float) para TextureCube'
 ms.assetid: FCCF12CF-3F0A-4468-9FC4-27CAAF0BEEE3
 keywords:
-- Função SampleCmp HLSL
+- HLSL da função SampleCmp
 topic_type:
 - apiref
 api_name:
@@ -20,9 +20,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118506551"
 ---
-# <a name="samplecmpsamplecmpsfloatfloatfloat-function-for-texturecube"></a>Função SampleCmp::SampleCmp(S,float,float,float) para TextureCube
+# <a name="samplecmpsamplecmpsfloatfloatfloat-function-for-texturecube"></a>Função SampleCmp:: SampleCmp (S, float, float, float) para TextureCube
 
-Amostra uma textura, usando um valor de comparação para rejeitar amostras, com um valor opcional para fixar valores de LOD (nível de detalhes) de exemplo.
+Amostras de uma textura, usando um valor de comparação para rejeitar amostras, com um valor opcional para fixe os valores de nível de detalhe (LOD) de exemplo para.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -45,22 +45,22 @@ DXGI_FORMAT SampleCmp(
 *S* \[ em\]
 </dt> <dd>
 
-Tipo: **SamplerState**
+Tipo: **samplestate**
 
-Um [estado sampler](dx-graphics-hlsl-sampler.md). Esse é um objeto declarado em um arquivo de efeito que contém atribuições de estado.
+Um [estado de amostra](dx-graphics-hlsl-sampler.md). Este é um objeto declarado em um arquivo de efeito que contém atribuições de estado.
 
 </dd> <dt>
 
-*Localização* \[ Em\]
+*Local* \[ do no\]
 </dt> <dd>
 
 Tipo: **float**
 
-As coordenadas de textura. O tipo de argumento depende do tipo de objeto de textura.
+As coordenadas de textura. O tipo de argumento é dependente do tipo de objeto Texture.
 
 
 
-| Texture-Object tipo                    | Tipo de parâmetro |
+| Tipo de Texture-Object                    | Tipo de parâmetro |
 |----------------------------------------|----------------|
 | Texture1D                              | FLOAT          |
 | Texture1DArray, Texture2D              | float2         |
@@ -73,7 +73,7 @@ As coordenadas de textura. O tipo de argumento depende do tipo de objeto de text
 
 </dd> <dt>
 
-*CompareValue* \[ Em\]
+*Comparevalue* \[ no\]
 </dt> <dd>
 
 Tipo: **float**
@@ -82,20 +82,20 @@ Um valor de ponto flutuante a ser usado como um valor de comparação.
 
 </dd> <dt>
 
-*Fixação* \[ Em\]
+*Fixe* \[ no\]
 </dt> <dd>
 
 Tipo: **float**
 
-Um valor opcional para fixar valores LOD de exemplo. Por exemplo, se você passar 2,0f para o valor de fixação, garantirá que nenhuma amostra individual acesse um nível de mip menor que 2,0f.
+Um valor opcional para fixe os valores de LOD de exemplo para. Por exemplo, se você passar 2.0 f para o valor fixe, certifique-se de que nenhum exemplo individual acessa um nível de MIP menor que 2,0 f.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor retornado
 
-Tipo: **[ **FORMATO \_ DXGI**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format)**
+Tipo: **[ **\_ formato dxgi**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format)**
 
-O formato de textura, que é um dos valores digitados listados em [**FORMATO DXGI. \_**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format)
+O formato de textura, que é um dos valores tipados listados [**no \_ formato dxgi**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format).
 
 ## <a name="see-also"></a>Confira também
 

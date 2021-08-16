@@ -1,19 +1,19 @@
 ---
 title: Propriedade Top (objeto characters)
-description: Saiba mais sobre a propriedade Top (objeto characters). O Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.
+description: Saiba mais sobre a propriedade Top (objeto characters). o Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.
 ms.assetid: d5758a77-2d9a-44b8-bbbb-57ddf96c7fe4
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 28a5e26d2ef578a98447d47eb2a3fae3613760a9
-ms.sourcegitcommit: 91530c19d26ba4c57a6af1f37b57f211f580464e
+ms.openlocfilehash: 87bdc753bc287e1289b2a75633081c7b325d698a7fbe92ba495cc93662485d75
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112396341"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118474474"
 ---
 # <a name="top-property-characters-object"></a>Propriedade Top (objeto characters)
 
-\[O Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
+\[o Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
 
 <dl> <dt>
 

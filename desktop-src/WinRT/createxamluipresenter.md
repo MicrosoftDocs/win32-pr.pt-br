@@ -1,5 +1,5 @@
 ---
-description: Uma função de criador estática que pode criar um XamlUIPresenter para uma superfície de renderização em um aplicativo de área de trabalho.
+description: Uma função de criador estático que pode criar um XamlUIPresenter para uma superfície de renderização em um aplicativo da área de trabalho.
 ms.assetid: 3160E4C2-39D3-8FF5-ED37-78E645D1AC2E
 title: Função CreateXamlUIPresenter
 ms.topic: reference
@@ -22,7 +22,7 @@ ms.locfileid: "118323428"
 ---
 # <a name="createxamluipresenter-function"></a>Função CreateXamlUIPresenter
 
-Uma função de criador estática que pode criar um [**XamlUIPresenter**](/uwp/api/Windows.UI.Xaml.Hosting.XamlUIPresenter?view=winrt-19041) para uma superfície de renderização em um aplicativo de área de trabalho.
+Uma função de criador estático que pode criar um [**XamlUIPresenter para**](/uwp/api/Windows.UI.Xaml.Hosting.XamlUIPresenter?view=winrt-19041) uma superfície de renderização em um aplicativo da área de trabalho.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,29 +40,29 @@ Uma função de criador estática que pode criar um [**XamlUIPresenter**](/uwp/a
 
 <dl> <dt>
 
-*pPresentSite* \[ no\]
+*pPresentSite* \[ Em\]
 </dt> <dd>
 
-Uma interface de hospedagem existente. Consulte **IViewObjectPresentNotifySite** na documentação do Internet Explorer.
+Uma interface de hospedagem existente. Consulte **IViewObjectPresentNotifySite** na Internet Explorer.
 
 </dd> <dt>
 
-*ppPresenter* \[ fora\]
+*ppPresenter* \[ out\]
 </dt> <dd>
 
-A interface **\[ \] exclusiveto** para um [**XamlUIPresenter**](/uwp/api/Windows.UI.Xaml.Hosting.XamlUIPresenter?view=winrt-19041).
+A **\[ interface \] exclusiveto** para um [**XamlUIPresenter.**](/uwp/api/Windows.UI.Xaml.Hosting.XamlUIPresenter?view=winrt-19041)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor retornado
 
-Um **HRESULT** padrão, **S \_ OK** para sucesso.
+Um **HResult padrão,** **S \_ OK** para êxito.
 
 ## <a name="remarks"></a>Comentários
 
 Chamar esse método requer um **DllImport** de Windows.UI.Xaml.dll.
 
-você não pode chamar esse método de um aplicativo da Windows Store.
+Você não pode chamar esse método de um aplicativo Windows Store.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -70,7 +70,7 @@ você não pode chamar esse método de um aplicativo da Windows Store.
 
 | Requisito | Valor |
 |-------------------|----------------------------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>Windows. ui. xaml-coretypes. idl</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>Windows.ui.xaml-coretypes.idl</dt> </dl> |
 | DLL<br/>    | <dl> <dt>Windows.UI.Xaml.dll</dt> </dl>           |
 
 

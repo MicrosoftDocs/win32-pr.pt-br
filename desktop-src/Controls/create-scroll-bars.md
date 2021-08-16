@@ -4,12 +4,12 @@ description: Ao criar uma janela sobreposta, pop-up ou filho, você pode adicion
 ms.assetid: 58353030-DCF5-4368-9658-BB282B8B5EF0
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 06b27e3e6d9495492f46567633cc53b0f3f7c5bd
-ms.sourcegitcommit: 5f33645661bf8c825a7a2e73950b1f4ea0f1cd82
+ms.openlocfilehash: aec76c49d9f97e21626546a760d0e42a44b04c70db5790e0b80c08fcdee34412
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "104454393"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117831748"
 ---
 # <a name="how-to-create-scroll-bars"></a>Como criar barras de rolagem
 
@@ -19,12 +19,12 @@ Ao criar uma janela sobreposta, pop-up ou filho, você pode adicionar barras de 
 
 ### <a name="technologies"></a>Tecnologias
 
--   [Controles do Windows](window-controls.md)
+-   [Windows Controles](window-controls.md)
 
 ### <a name="prerequisites"></a>Pré-requisitos
 
 -   C/C++
--   Programação da interface do usuário do Windows
+-   Windows Programação de interface do usuário
 
 ## <a name="instructions"></a>Instruções
 
@@ -105,9 +105,9 @@ HWND CreateAHorizontalScrollBar(HWND hwndParent, int sbHeight)
 [Usando barras de rolagem](using-scroll-bars.md)
 </dt> <dt>
 
-[Demonstração de controles comuns do Windows (CppWindowsCommonControls)](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/OneCodeTeam/Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/%5BC++%5D-Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/C++/CppWindowsCommonControls)
+[Windows de demonstração de controles comuns (CppWindowsCommonControls)](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/OneCodeTeam/Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/%5BC++%5D-Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/C++/CppWindowsCommonControls)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

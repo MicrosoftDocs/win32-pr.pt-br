@@ -12,12 +12,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 0d596402c489caee972e1305f2a32881312fd3e0
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 88a6fff0955fb9e0c57c7ea5fae99f532c7c6d4dcc3578a75e07da3f35867f9a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105749711"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117827166"
 ---
 # <a name="ioctl_lmr_disable_local_buffering-control-code"></a>IOCTL \_ LMR \_ desabilitar \_ o \_ código de controle de buffer local
 
@@ -113,7 +113,7 @@ Para operações sobrepostas, [**DeviceIoControl**](/windows/win32/api/ioapiset/
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se a operação for concluída com êxito, [**DeviceIoControl**](/windows/win32/api/ioapiset/nf-ioapiset-deviceiocontrol) retornará um valor diferente de zero.
 

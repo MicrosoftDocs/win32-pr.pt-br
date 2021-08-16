@@ -1,7 +1,7 @@
 ---
 description: Crie um objeto de dispositivo.
 ms.assetid: 5b9b00de-c744-43c7-b383-1d3358c80741
-title: 'Método ID3DX10DataProcessor:: deviceobject (D3DX10. h)'
+title: Método ID3DX10DataProcessor::CreateDeviceObject (D3DX10.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -21,7 +21,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118540414"
 ---
-# <a name="id3dx10dataprocessorcreatedeviceobject-method"></a>Método ID3DX10DataProcessor:: deviceobject
+# <a name="id3dx10dataprocessorcreatedeviceobject-method"></a>Método ID3DX10DataProcessor::CreateDeviceObject
 
 Crie um objeto de dispositivo.
 
@@ -40,10 +40,10 @@ HRESULT CreateDeviceObject(
 
 <dl> <dt>
 
-*ppDataObject* \[ fora\]
+*ppDataObject* \[ out\]
 </dt> <dd>
 
-Tipo: **void \* \***
+Tipo: **\* \* void**
 
 Endereço de um ponteiro para o objeto de dispositivo criado.
 
@@ -53,7 +53,7 @@ Endereço de um ponteiro para o objeto de dispositivo criado.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-O valor de retorno é um dos valores listados nos [códigos de retorno do Direct3D 10](d3d10-graphics-reference-returnvalues.md).
+O valor de retorno é um dos valores listados em Códigos de Retorno [do Direct3D 10.](d3d10-graphics-reference-returnvalues.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -61,8 +61,8 @@ O valor de retorno é um dos valores listados nos [códigos de retorno do Direct
 
 | Requisito | Valor |
 |--------------------|---------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3DX10. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>D3DX10. lib</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>D3DX10.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>D3DX10.lib</dt> </dl> |
 
 
 
@@ -73,7 +73,7 @@ O valor de retorno é um dos valores listados nos [códigos de retorno do Direct
 [ID3DX10DataProcessor](id3dx10dataprocessor.md)
 </dt> <dt>
 
-[Interfaces D3DX](d3d10-graphics-reference-d3dx10-interfaces.md)
+[D3DX Interfaces](d3d10-graphics-reference-d3dx10-interfaces.md)
 </dt> </dl>
 
  

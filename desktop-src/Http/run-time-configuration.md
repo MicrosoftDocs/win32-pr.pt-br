@@ -4,12 +4,12 @@ description: A API HTTP permite que os aplicativos executem a configuração din
 ms.assetid: 5118b48b-b44c-4cf5-9754-ce23c5a0b87e
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0c1b0a310f9fe86b2e6972aa2dff3d3b7fc05965
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 9b240438ada7fce186f334df3175b8ecc5b557626c5f1f085cdf82965fb32365
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105755119"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118393748"
 ---
 # <a name="run-time-configuration"></a>Configuração de Run-Time
 
@@ -19,9 +19,9 @@ A API HTTP permite que os aplicativos executem a configuração dinâmica em tem
 -   Registrando para URLs. Depois que a sessão do servidor é criada, um aplicativo pode se registrar para URLs criando um ou mais grupos de URLs. Um grupo de URLs é um grupo de URLs para os quais as mesmas propriedades serão aplicadas. Um aplicativo cria um grupo de URLs chamando a função [**HttpCreateUrlGroup**](/windows/desktop/api/Http/nf-http-httpcreateurlgroup) e, em seguida, adiciona as URLs desejadas chamando a função [**HttpAddUrlToUrlGroup**](/windows/desktop/api/Http/nf-http-httpaddurltourlgroup) . Depois que um aplicativo for registrado para URLs criando um grupo de URLs e tiver associado o grupo de URLs a uma fila de solicitações (consulte [criando e ligando a uma fila de solicitações](creating-and-binding-to-a-request-queue.md)), todas as solicitações provenientes dessas URLs serão roteadas para a fila de solicitações associada a esse aplicativo. Para obter mais informações sobre as propriedades do grupo de URLs de configurações, consulte [ **HttpSetUrlGroupProperty**](/windows/desktop/api/Http/nf-http-httpseturlgroupproperty)
 -   Habilitando recursos definindo as propriedades do servidor HTTP, como [autenticação](authentication-in-http-version-2-0.md), [registro em log](server-side-logging-in-http-version-2-0.md), configurações de QoS, tempos limite, estado habilitado e informações de associação. Para obter informações sobre como definir propriedades, consulte [**\_ \_ Propriedade do servidor http**](/windows/desktop/api/Http/ne-http-http_server_property).
 
- 
+ 
 
- 
+ 
 
 
 

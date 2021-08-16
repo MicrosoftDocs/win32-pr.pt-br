@@ -1,6 +1,6 @@
 ---
 title: Tipos de dados de núcleo
-description: Os tipos de dados a seguir são declarados em d3d12.h.
+description: Os seguintes tipos de dados são declarados em d3d12. h.
 ms.assetid: ''
 ms.localizationpriority: low
 ms.topic: article
@@ -14,7 +14,7 @@ ms.locfileid: "118529900"
 ---
 # <a name="core-data-types"></a>Tipos de dados de núcleo
 
-Os tipos de dados a seguir são declarados em d3d12.h.
+Os seguintes tipos de dados são declarados em d3d12. h.
 
 ## <a name="in-this-section"></a>Nesta seção
 

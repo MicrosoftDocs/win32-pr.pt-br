@@ -1,5 +1,5 @@
 ---
-description: O qualificador key indica se a propriedade faz parte do alça de namespace.
+description: O qualificador de chave indica se a propriedade faz parte do identificador de namespace.
 ms.assetid: 838d295f-e812-4e46-99a4-d2714a0ae8dc
 ms.tgt_platform: multiple
 title: Qualificador de chave
@@ -22,21 +22,21 @@ ms.locfileid: "118555884"
 ---
 # <a name="key-qualifier"></a>Qualificador de chave
 
-O **qualificador** key indica se a propriedade faz parte do alça de namespace. Se mais de uma propriedade tiver o **qualificador** Key, todas essas propriedades formarão coletivamente a chave (uma chave composta). Quando juntas, as propriedades de chave devem fornecer uma referência exclusiva para cada instância de classe. Se esse qualificador for colocado em uma propriedade, somente o valor **TRUE** será permitido.
+O qualificador de **chave** indica se a propriedade faz parte do identificador de namespace. Se mais de uma propriedade tiver o qualificador de **chave** , todas essas propriedades formarão coletivamente a chave (uma chave composta). Quando agrupadas, as propriedades de chave devem fornecer uma referência exclusiva para cada instância de classe. Se esse qualificador for colocado em uma propriedade, somente o valor **true** será permitido.
 
-Você pode usar qualquer tipo de propriedade, exceto pelo seguinte:
+Você pode usar qualquer tipo de propriedade, exceto o seguinte:
 
 -   Matrizes
--   Números reais e de ponto flutuante
+-   Números de ponto flutuante e real
 -   Objetos inseridos
--   Caracteres inferiores ao ASCII 32 (ou seja, caracteres de espaço em branco)
--   Cadeias de caracteres do tipo **char16** ou cadeias de caracteres definidas como chaves devem conter valores maiores que U+0020. Isso porque o WMI usa valores de chave em caminhos de objeto e você não pode usar caracteres sem impressão em um caminho de objeto.
+-   Caracteres inferiores a ASCII 32 (ou seja, caracteres de espaço em branco)
+-   Cadeias de caracteres do tipo **char16** ou cadeias de caracteres definidas como chaves devem conter valores maiores que U + 0020. Isso ocorre porque o WMI usa valores de chave em caminhos de objeto e você não pode usar caracteres não imprimíveis em um caminho de objeto.
 
-Quando uma classe pai especifica uma chave, todas as classes derivadas da classe pai herdam essa chave. As classes derivadas não podem alterar a chave herdada nem definir nenhuma nova propriedade de chave. No entanto, quando você deriva uma subclasse de uma classe abstrata sem uma chave, pode introduzir uma chave na subclasse.
+Quando uma classe pai especifica uma chave, todas as classes derivadas da classe pai herdam essa chave. As classes derivadas não podem alterar a chave herdada nem definir nenhuma nova propriedade de chave. No entanto, quando você deriva uma subclasse de uma classe abstrata sem uma chave, você pode introduzir uma chave na subclasse.
 
 Todas as classes que definem mais de uma instância devem especificar uma chave. Como as classes abstratas não definem nenhuma instância, elas não precisam especificar chaves. Como as classes singleton definem apenas uma instância, elas não podem especificar chaves.
 
-As chaves são escritas uma vez na insta instação do objeto e não devem ser modificadas posteriormente. Não faz sentido aplicar um valor padrão a uma propriedade qualificada por chave.
+As chaves são gravadas uma vez na instanciação do objeto e não devem ser modificadas posteriormente. Não faz sentido aplicar um valor padrão a uma propriedade qualificada por chave.
 
 ## <a name="requirements"></a>Requisitos
 

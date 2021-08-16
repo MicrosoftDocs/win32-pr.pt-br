@@ -1,6 +1,6 @@
 ---
-title: GetGUID IAgentCharacterEx
-description: GetGUID IAgentCharacterEx
+title: IAgentCharacterEx GetGUID
+description: IAgentCharacterEx GetGUID
 ms.assetid: 25fb2531-a81c-4add-8134-77b1cd57cfe3
 ms.topic: article
 ms.date: 05/31/2018
@@ -11,9 +11,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118477964"
 ---
-# <a name="iagentcharacterexgetguid"></a>IAgentCharacterEx:: GetGuid
+# <a name="iagentcharacterexgetguid"></a>IAgentCharacterEx::GetGUID
 
-\[o Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
+\[O Microsoft Agent foi preterido a partir Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
 
 ``` syntax
 HRESULT GetGUID(
@@ -21,7 +21,7 @@ HRESULT GetGUID(
 );
 ```
 
-Recupera a ID exclusiva para o caractere.
+Recupera a ID exclusiva do caractere.
 
 -   Retorna S \_ OK para indicar que a operação foi bem-sucedida.
 
@@ -30,11 +30,11 @@ Recupera a ID exclusiva para o caractere.
 <span id="pbszGUID"></span><span id="pbszguid"></span><span id="PBSZGUID"></span>*pbszGUID*
 </dt> <dd>
 
-Endereço de um BSTR que recebe a ID para o caractere.
+Endereço de um BSTR que recebe a ID do caractere.
 
 </dd> </dl>
 
-A propriedade retorna uma representação de cadeia de caracteres do GUID (formatado com chaves e traços) que o servidor usa para identificar exclusivamente o caractere. Um identificador de caractere é definido quando é compilado com o editor de caracteres do Microsoft Agent. a propriedade é somente leitura.
+A propriedade retorna uma representação de cadeia de caracteres do GUID (formatada com chaves e traços) que o servidor usa para identificar exclusivamente o caractere. Um identificador de caractere é definido quando ele é compilado com o Editor de Caracteres do Microsoft Agent. a propriedade é somente leitura.
 
  
 

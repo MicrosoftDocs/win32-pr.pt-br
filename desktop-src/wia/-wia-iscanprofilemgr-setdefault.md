@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Scanprofilemgr.h
-ms.openlocfilehash: 3a7c32f246bcafc8ff7ce55e8c6f34ea45553a95
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fd7b46241e967e02083c344aa7f3f77a773c72b02ff74b225910788d498fe252
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105811773"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118965785"
 ---
 # <a name="iscanprofilemgrsetdefault-method"></a>Método IScanProfileMgr:: SetDefault
 
@@ -42,15 +42,15 @@ HRESULT SetDefault(
 *pScanProfile* \[ no\]
 </dt> <dd>
 
-Tipo: **[**IScanProfile**](-wia-iscanprofile.md) \** _
+Tipo: **[ **IScanProfile**](-wia-iscanprofile.md)\***
 
 Um ponteiro para o perfil.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Tipo: _ *HRESULT**
+Tipo: **HRESULT**
 
 Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
 
@@ -66,9 +66,9 @@ Use o método [**ScanProfileDialog**](-wia-iscanprofileui-scanprofiledialog.md) 
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                        |
-| parâmetro<br/>                   | <dl> <dt>Scanprofilemgr. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                              |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                        |
+| Cabeçalho<br/>                   | <dl> <dt>Scanprofilemgr. h</dt> </dl> |
 | INSERI<br/>                      | <dl> <dt>Scanprofiles. idl</dt> </dl> |
 
 

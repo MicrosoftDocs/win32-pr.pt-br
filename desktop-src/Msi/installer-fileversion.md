@@ -1,7 +1,7 @@
 ---
-description: O método FileVersion do objeto Installer retorna a cadeia de caracteres de versão ou a cadeia de caracteres de idioma do caminho especificado em Caminho usando o formato no qual o instalador espera encontrá-los no banco de dados.
+description: O método FileVersion do objeto instalador retorna a cadeia de caracteres da versão ou a cadeia de caracteres do caminho especificado em path usando o formato no qual o instalador espera encontrá-las no banco de dados.
 ms.assetid: 387cf269-5a7a-476b-811e-d576da1c752f
-title: Método Installer.FileVersion
+title: Método Installer. FileVersion
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -20,9 +20,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118630578"
 ---
-# <a name="installerfileversion-method"></a>Método Installer.FileVersion
+# <a name="installerfileversion-method"></a>Método Installer. FileVersion
 
-O **método FileVersion** do objeto [**Installer**](installer-object.md) retorna a cadeia de caracteres de versão ou a cadeia de caracteres de idioma do caminho especificado em *Caminho* usando o formato no qual o instalador espera encontrá-los no banco de dados. Para versões, essa é uma cadeia de caracteres no formato " \# . . . " \# \# \# . Para idioma, essa é a ID da linguagem decimal.
+O método **FileVersion** do objeto [**instalador**](installer-object.md) retorna a cadeia de caracteres da versão ou a cadeia de caracteres do caminho especificado em *Path* usando o formato no qual o instalador espera encontrá-las no banco de dados. Para versões, esta é uma cadeia de caracteres \# no \# formato ".. \# . \# ". Para o idioma, essa é a ID de idioma decimal.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -50,7 +50,7 @@ Cadeia de caracteres necessária que contém o caminho para o arquivo.
 *Idioma* 
 </dt> <dd>
 
-Sinalizador para designar se o valor retornado é uma ID de idioma ou uma cadeia de caracteres de versão. TRUE retorna o idioma, FALSE retorna a versão. Esse parâmetro é opcional, com um valor padrão false.
+Sinalizador para designar se o valor retornado é uma ID de idioma ou uma cadeia de caracteres de versão. TRUE retorna o idioma; FALSE retorna a versão. Esse parâmetro é opcional, com um valor padrão de FALSE.
 
 </dd> </dl>
 
@@ -64,9 +64,9 @@ Esse método não retorna um valor.
 
 | Requisito | Valor |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versão<br/> | Windows Instalador 5.0 no Windows Server 2012, Windows 8, Windows Server 2008 R2 ou Windows 7. Windows Instalador 4.0 ou Windows Instalador 4.5 no Windows Server 2008 ou Windows Vista. Windows Instalador no Windows Server 2003 ou Windows XP<br/> |
+| Versão<br/> | Windows instalador 5,0 em Windows Server 2012, Windows 8, Windows Server 2008 R2 ou Windows 7. Windows Installer 4,0 ou Windows Installer 4,5 no Windows Server 2008 ou Windows Vista. Windows instalador no Windows Server 2003 ou Windows XP<br/> |
 | DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                      |
-| IID<br/>     | O IInstaller IID é definido como \_ 000C1090-0000-0000-C000-000000000046<br/>                                                                                                                                                                           |
+| IID<br/>     | IID \_ IInstaller é definido como 000C1090-0000-0000-C000-000000000046<br/>                                                                                                                                                                           |
 
 
 

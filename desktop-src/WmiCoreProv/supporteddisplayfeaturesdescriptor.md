@@ -29,7 +29,7 @@ ms.locfileid: "118321532"
 ---
 # <a name="supporteddisplayfeaturesdescriptor-class"></a>Classe SupportedDisplayFeaturesDescriptor
 
-O **SupportedDisplayFeaturesDescriptor representa** os recursos de exibição com suporte do monitor. As informações nesta classe correspondem aos dados no padrão E-EDID (Video Input Definition) da VESA (Video Electronics Standard Association).
+O **SupportedDisplayFeaturesDescriptor** representa os recursos de exibição com suporte do monitor. As informações nessa classe correspondem aos dados na definição de entrada de vídeo do padrão de dados de identificação de exibição estendida (E-EDID) avançado da VESA (Video Electronics Standard Association).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -48,30 +48,30 @@ class SupportedDisplayFeaturesDescriptor
 
 ## <a name="members"></a>Membros
 
-A **classe SupportedDisplayFeaturesDescriptor** tem estes tipos de membros:
+A classe **SupportedDisplayFeaturesDescriptor** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A **classe SupportedDisplayFeaturesDescriptor** tem essas propriedades.
+A classe **SupportedDisplayFeaturesDescriptor** tem essas propriedades.
 
 <dl> <dt>
 
 **ActiveOffSupported**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliana**
+Tipo de dados: **booliano**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Suporte para energia desligada e muito baixa. A exibição consome menos energia quando recebe um sinal de tempo que está fora do intervalo operacional ativo declarado. A exibição será revertida para a operação normal se o sinal de tempo retornar para o intervalo operacional normal. Exemplos de sinais de tempo fora do intervalo operacional normal não são sinais de sincronização ou nenhum sinal DE.
+Suporte para ativo e energia muito baixa. A exibição consome menos energia quando recebe um sinal de intervalo que está fora do intervalo de operação do ativo declarado. A exibição será revertida para a operação normal se o sinal de intervalo retornar ao intervalo de operação normal. Exemplos de sinais de tempo fora do intervalo de operação normal não são sinais DE sincronização ou nenhum sinal DE.
 
 </dd> <dt>
 
-**DisplayType**
+**TipoDeExibição**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **uint8**
@@ -80,15 +80,15 @@ Tipo de dados: **uint8**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Tipo de exibição para o monitor. A tabela a seguir lista os valores possíveis.
+Tipo de exibição do monitor. A tabela a seguir lista os valores possíveis.
 
 
 
 | Valor                                                                              | Significado                                 |
 |------------------------------------------------------------------------------------|-----------------------------------------|
-| <dl> <dt>0 (0x0)</dt> </dl> | Exibição de escala de cinza/monocromática<br/> |
+| <dl> <dt>0 (0x0)</dt> </dl> | Exibição monocromática/escala de cinza<br/> |
 | <dl> <dt>1 (0x1)</dt> </dl> | Exibição de cor RGB<br/>            |
-| <dl> <dt>2 (0x2)</dt> </dl> | Exibição multicolor não RGB<br/>   |
+| <dl> <dt>2 (0x2)</dt> </dl> | Exibição de cores não RGB<br/>   |
 
 
 
@@ -99,65 +99,65 @@ Tipo de exibição para o monitor. A tabela a seguir lista os valores possíveis
 **GTFSupported**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliana**
+Tipo de dados: **booliano**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Indica se a exibição tem suporte para GTF. Se **True**, a exibição dá suporte a tempos com base no padrão GTF usando valores de parâmetro GTF padrão.
+Indica se a exibição tem suporte GTF. Se **for true**, a exibição dará suporte a intervalos com base no padrão GTF usando valores de parâmetro GTF padrão.
 
 </dd> <dt>
 
 **HasPreferredTimingMode**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliana**
+Tipo de dados: **booliano**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Indica se a exibição tem um modo de tempo preferencial. Se **True**, o primeiro bloco de tempo detalhado conterá o modo de tempo preferencial do monitor. O uso do modo de tempo preferencial é exigido pelo EDID v.1.3 e superior.
+Indica se a exibição tem um modo de temporizador preferencial. Se **for true**, o primeiro bloco de tempo detalhado conterá o modo de temporização preferencial do monitor. O uso do modo de temporização preferencial é exigido pelo EDID v. 1.3 e superior.
 
 </dd> <dt>
 
 **sRGBSupported**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliana**
+Tipo de dados: **booliano**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Se **True**, a exibição dá suporte a sRGB.
+Se **for true**, a exibição dará suporte a sRGB.
 
 </dd> <dt>
 
 **StandbySupported**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliana**
+Tipo de dados: **booliano**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Indica se a exibição dá suporte à espera do VESA DPMS (Sinalização de Gerenciamento de Energia de Exibição). Se **True**, há suporte para o DPMS em espera.
+Indica se a exibição dá suporte à espera de DPMS (sinalização de gerenciamento de energia de vídeo VESA). Se for **true**, o DPMS standby terá suporte.
 
 </dd> <dt>
 
 **SuspendSupported**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliana**
+Tipo de dados: **booliano**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Indica se a exibição dá suporte à suspensão do VESA DPMS (Sinalização de Gerenciamento de Energia de Exibição). Se **True**, há suporte para a suspensão do DPMS.
+Indica se a exibição dá suporte à suspensão de sinalização de gerenciamento de energia de vídeo VESA (DPMS). Se for **true**, haverá suporte para a suspensão de DPMS.
 
 </dd> </dl>
 
@@ -169,8 +169,8 @@ Indica se a exibição dá suporte à suspensão do VESA DPMS (Sinalização de 
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                               |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                         |
-| Namespace<br/>                | WMI \\ raiz<br/>                                                                   |
-| MOF<br/>                      | <dl> <dt>WmiCore.mof</dt> </dl> |
+| Namespace<br/>                | \\WMI raiz<br/>                                                                   |
+| MOF<br/>                      | <dl> <dt>WmiCore. mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>WmiProv.dll</dt> </dl> |
 
 

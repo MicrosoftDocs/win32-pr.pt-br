@@ -64,7 +64,7 @@ Esse método retorna os seguintes **valores HRESULT,** bem como outros.
 |-------------------------------------|-----------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 10, versão 1709 somente para \[ aplicativos da área de trabalho\]<br/>                                           |
 | Servidor mínimo com suporte<br/> | Windows Servidor, versão 1709 somente \[ aplicativos da área de trabalho\]<br/>                                       |
-| parâmetro<br/>                   | <dl> <dt>Deliveryoptimization.h</dt> </dl>   |
+| Cabeçalho<br/>                   | <dl> <dt>Deliveryoptimization.h</dt> </dl>   |
 | Idl<br/>                      | <dl> <dt>DeliveryOptimization.idl</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>Dosvc.lib</dt> </dl>                |
 | DLL<br/>                      | <dl> <dt>Dosvc.dll</dt> </dl>                |

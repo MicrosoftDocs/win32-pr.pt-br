@@ -1,9 +1,9 @@
 ---
-title: comando de quebra
-description: O comando Break especifica uma chave para anular um comando que foi invocado usando o \ 0034; Wait \ 0034; identificar. Esse comando é um comando do sistema MCI; Ele é interpretado diretamente pelo MCI.
+title: Comando break
+description: O comando break especifica uma chave para anular um comando que foi invocado usando \ 0034;wait \ 0034; Bandeira. Este comando é um comando do sistema MCI; ele é interpretado diretamente pela MCI.
 ms.assetid: 959df85f-5020-4e37-952b-15ba5e6fb672
 keywords:
-- comando de quebra Windows multimídia
+- comando break Windows Multimídia
 topic_type:
 - apiref
 api_name:
@@ -19,11 +19,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118375468"
 ---
-# <a name="break-command"></a>comando de quebra
+# <a name="break-command"></a>Comando break
 
-O comando Break especifica uma chave para anular um comando que foi invocado usando o sinalizador "Wait". Esse comando é um comando do sistema MCI; Ele é interpretado diretamente pelo MCI.
+O comando break especifica uma chave para anular um comando que foi invocado usando o sinalizador "wait". Este comando é um comando do sistema MCI; ele é interpretado diretamente pela MCI.
 
-Para enviar esse comando, chame a função [**mciSendString**](/previous-versions//dd757161(v=vs.85)) com o parâmetro *lpszCommand* definido da seguinte maneira.
+Para enviar esse comando, chame a [**função mciSendString**](/previous-versions//dd757161(v=vs.85)) com *o parâmetro lpszCommand* definido da seguinte forma.
 
 ``` syntax
 _stprintf_s(
@@ -55,7 +55,7 @@ Um dos sinalizadores a seguir.
 
 | Valor                 | Significado                                                                         |
 |-----------------------|---------------------------------------------------------------------------------|
-| no *código de chave virtual* | Especifica a chave que anula um comando que foi iniciado usando o sinalizador "Wait". |
+| no *código de chave virtual* | Especifica a chave que anula um comando que foi iniciado usando o sinalizador "wait". |
 | Desligar                   | Desabilita a chave de quebra atual.                                                 |
 
 
@@ -67,21 +67,21 @@ Um dos sinalizadores a seguir.
 <span id="lpszFlags"></span><span id="lpszflags"></span><span id="LPSZFLAGS"></span>*lpszFlags*
 </dt> <dd>
 
-Pode ser "Wait", "notificar" ou ambos. Para dispositivos de vídeo digital e VCR, o "teste" também pode ser especificado. Para obter mais informações sobre esses sinalizadores, consulte [os sinalizadores aguardar, notificar e testar](the-wait-notify-and-test-flags.md).
+Pode ser "wait", "notify" ou ambos. Para dispositivos de vídeo digital e VCR, "teste" também pode ser especificado. Para obter mais informações sobre esses sinalizadores, consulte [Os sinalizadores de espera, notificação e teste.](the-wait-notify-and-test-flags.md)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor Retornado
 
-Retornará zero se for bem-sucedido ou um erro de outra forma.
+Retornará zero se for bem-sucedido ou um erro, caso contrário.
 
 ## <a name="remarks"></a>Comentários
 
-Quando a chave de interrupção é habilitada e o usuário pressiona a chave identificada pelo código de chave virtual especificado no parâmetro *lpszVirtKey* , o dispositivo retorna o controle para o aplicativo. Se possível, o comando continua a execução.
+Quando a chave de quebra está habilitada e o usuário pressiona a chave identificada pelo código de chave virtual especificado no parâmetro *lpszVirtKey,* o dispositivo retorna o controle para o aplicativo. Se possível, o comando continuará a execução.
 
 ## <a name="examples"></a>Exemplos
 
-O comando a seguir define F2 como a chave de interrupção para o dispositivo "mysound".
+O comando a seguir define F2 como a chave de quebra para o dispositivo "mysound".
 
 ``` syntax
 break mysound on 113
@@ -102,7 +102,7 @@ break mysound on 113
 
 <dl> <dt>
 
-[MCI](mci.md)
+[Mci](mci.md)
 </dt> <dt>
 
 [Cadeias de caracteres de comando MCI](mci-command-strings.md)

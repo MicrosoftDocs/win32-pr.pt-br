@@ -1,6 +1,6 @@
 ---
-title: Estado de chave do modificador
-description: Indica quais teclas modificadoras de teclado foram pressionadas na hora em que a entrada estava sendo gerada.
+title: Estado da chave modificadora
+description: Indica quais teclas modificadora de teclado foram pressionadas no momento em que a entrada estava sendo gerada.
 ms.assetid: 721f5109-67ab-4242-921e-580c2dc0463b
 topic_type:
 - apiref
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 ms.topic: article
 ms.date: 02/03/2020
-ms.openlocfilehash: 115ee8d33d8f54ab145026152af28b6d565a7935
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ec041ffd62bb028f2839d45b00743714cea375f4e66c0723cb7fe9bfb279445f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104085852"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118756876"
 ---
-# <a name="modifier-key-state"></a>Estado de chave do modificador
+# <a name="modifier-key-state"></a>Estado da chave modificadora
 
-Indica quais teclas modificadoras de teclado foram pressionadas na hora em que a entrada estava sendo gerada.
+Indica quais teclas modificadora de teclado foram pressionadas no momento em que a entrada estava sendo gerada.
 
 <dl> <dt>
 
@@ -47,7 +47,7 @@ Uma tecla Shift foi pressionada.
 
 
 
-Uma tecla CTRL foi pressionada.
+Uma tecla Ctrl foi pressionada.
 
 
 </dt> </dl> </dd> </dl>
@@ -58,9 +58,9 @@ Uma tecla CTRL foi pressionada.
 
 | Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                 |
-| parâmetro<br/>                   | <dl> <dt>WinUser. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[Windows 8 somente aplicativos da área de trabalho\]<br/>                                           |
+| Servidor mínimo com suporte<br/> | \[Windows Server 2012 somente aplicativos da área de trabalho\]<br/>                                 |
+| Cabeçalho<br/>                   | <dl> <dt>Winuser.h</dt> </dl> |
 
 
 

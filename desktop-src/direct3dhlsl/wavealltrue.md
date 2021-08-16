@@ -1,9 +1,9 @@
 ---
 title: Função WaveActiveAllTrue
-description: Retornará true se a expressão for verdadeira em todas as pistas ativas na onda atual.
+description: Retornará true se a expressão for verdadeira em todas as faixas ativas na onda atual.
 ms.assetid: C4EC5A02-6070-4FF4-B855-F597FFFE66F0
 keywords:
-- HLSL da função WaveActiveAllTrue
+- Função WaveActiveAllTrue HLSL
 topic_type:
 - apiref
 api_name:
@@ -22,7 +22,7 @@ ms.locfileid: "118504866"
 ---
 # <a name="waveactivealltrue-function"></a>Função WaveActiveAllTrue
 
-Retornará true se a expressão for verdadeira em todas as pistas ativas na onda atual.
+Retornará true se a expressão for verdadeira em todas as faixas ativas na onda atual.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -45,11 +45,11 @@ A expressão booliana a ser avaliada.
 
 ## <a name="return-value"></a>Valor retornado
 
-True se a expressão for verdadeira em todas as pistas.
+True se a expressão for verdadeira em todas as faixas.
 
 ## <a name="remarks"></a>Comentários
 
-Essa função tem suporte do modelo de sombreador 6,0 em todos os estágios de sombreador. 
+Essa função tem suporte do modelo de sombreador 6.0 em todos os estágios do sombreador. 
 
 
 
@@ -59,10 +59,10 @@ Essa função tem suporte do modelo de sombreador 6,0 em todos os estágios de s
 
 <dl> <dt>
 
-[Visão geral do modelo do sombreador 6](hlsl-shader-model-6-0-features-for-direct3d-12.md)
+[Visão geral do Modelo de Sombreador 6](hlsl-shader-model-6-0-features-for-direct3d-12.md)
 </dt> <dt>
 
-[Modelo do sombreador 6](shader-model-6-0.md)
+[Modelo de sombreador 6](shader-model-6-0.md)
 </dt> </dl>
 
  

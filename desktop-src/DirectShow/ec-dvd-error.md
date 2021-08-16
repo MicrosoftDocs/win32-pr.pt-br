@@ -1,7 +1,7 @@
 ---
 description: Sinaliza uma condição de erro de DVD.
 ms.assetid: 2cd3e0c4-e2b7-4aa1-9f3c-9003eabfb08a
-title: EC_DVD_ERROR (Dvdevcode. h)
+title: EC_DVD_ERROR (Dvdevcode.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -20,7 +20,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117820523"
 ---
-# <a name="ec_dvd_error"></a>\_erro de DVD do EC \_
+# <a name="ec_dvd_error"></a>ERRO DE \_ DVD \_ de EC
 
 Sinaliza uma condição de erro de DVD.
 
@@ -28,17 +28,17 @@ Sinaliza uma condição de erro de DVD.
 
 <dl> <dt>
 
-<span id="lParam1"></span><span id="lparam1"></span><span id="LPARAM1"></span>*lParam1*
+<span id="lParam1"></span><span id="lparam1"></span><span id="LPARAM1"></span>*Lparam1*
 </dt> <dd>
 
-Valor **DWORD** que indica a condição de erro. Membro do tipo de dados enumerado de [**\_ erro de DVD**](/previous-versions/windows/desktop/api/dvdevcod/ne-dvdevcod-dvd_error) .
+**Valor DWORD** que indica a condição de erro. Membro do tipo de [**dados \_ enumerado ERRO**](/previous-versions/windows/desktop/api/dvdevcod/ne-dvdevcod-dvd_error) de DVD.
 
 </dd> <dt>
 
 <span id="lParam2"></span><span id="lparam2"></span><span id="LPARAM2"></span>*lParam2*
 </dt> <dd>
 
-O significado depende do valor de *lParam1*. Consulte [**\_ erro de DVD**](/previous-versions/windows/desktop/api/dvdevcod/ne-dvdevcod-dvd_error) para obter mais informações.
+O significado depende do valor *de lParam1.* Consulte [**ERRO \_ de DVD**](/previous-versions/windows/desktop/api/dvdevcod/ne-dvdevcod-dvd_error) para obter mais informações.
 
 </dd> </dl>
 
@@ -52,7 +52,7 @@ Esse evento é gerado em todos os domínios.
 
 | Requisito | Valor |
 |-------------------|----------------------------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>Dvdevcode. h (incluir DShow. h)</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>Dvdevcode.h (inclua Dshow.h)</dt> </dl> |
 
 
 
@@ -63,10 +63,10 @@ Esse evento é gerado em todos os domínios.
 [Aplicativos de DVD](dvd-applications.md)
 </dt> <dt>
 
-[Códigos de notificação de eventos de DVD](dvd-notification-codes.md)
+[Códigos de notificação de evento de DVD](dvd-notification-codes.md)
 </dt> <dt>
 
-[Notificação de eventos no DirectShow](event-notification-in-directshow.md)
+[Notificação de eventos DirectShow](event-notification-in-directshow.md)
 </dt> </dl>
 
  

@@ -1,5 +1,5 @@
 ---
-description: SIETFLANGUAGE de localidade \_
+description: LOCALE \_ SIETFLANGUAGE
 ms.assetid: b42d782a-a252-421b-b399-73ca47136313
 title: LOCALE_SIETFLANGUAGE
 ms.topic: article
@@ -11,9 +11,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118391451"
 ---
-# <a name="locale_sietflanguage"></a>SIETFLANGUAGE de localidade \_
+# <a name="locale_sietflanguage"></a>LOCALE \_ SIETFLANGUAGE
 
-preterido para Windows Vista e posterior. Linguagem IETF.
+Preterido para Windows Vista e posterior. Linguagem IETF.
 
  
 
