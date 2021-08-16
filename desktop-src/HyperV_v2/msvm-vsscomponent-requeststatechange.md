@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: f75d0e2eed242155f27a7355182bf616d14de7e6
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 31647f5425382eb4fe266fab20a7208aa4c42a313ca20303a2246862edc2b528
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108109264"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119147859"
 ---
 # <a name="requeststatechange-method-of-the-msvm_vsscomponent-class"></a>Método RequestStateChange da classe Msvm \_ VssComponent
 
@@ -167,7 +167,7 @@ Esse método retorna um dos seguintes valores:
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

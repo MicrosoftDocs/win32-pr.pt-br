@@ -3,19 +3,19 @@ title: Recuperando atributos de metadados
 description: Recuperando atributos de metadados
 ms.assetid: d1d2c8e0-7445-4ee1-94d9-4c1ed74f8fe2
 keywords:
-- SDK do Windows Media Format, recuperando atributos de metadados
+- Windows SDK de formato de mídia, recuperando atributos de metadados
 - ASF (Advanced Systems Format), recuperando atributos de metadados
 - ASF (formato de sistemas avançados), recuperando atributos de metadados
 - metadados, recuperando atributos
 - fluxos, recuperando atributos de metadados
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3c918cb47e77c3fd69c64de586b84b7f6244e4c9
-ms.sourcegitcommit: 48d1c892045445bcbd0f22bafa2fd3861ffaa6e7
+ms.openlocfilehash: 02dc24f06779c12d40a109c1a8ef0fee9811370d3459f3811c0c870ee535d749
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "104007076"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119807876"
 ---
 # <a name="retrieving-metadata-attributes"></a>Recuperando atributos de metadados
 
@@ -32,9 +32,9 @@ Por exemplo, código mostrando como recuperar atributos de metadados, consulte [
 [**Trabalhando com metadados**](working-with-metadata.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

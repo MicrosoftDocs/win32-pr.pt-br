@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre: Propriedades de EsentLogSequenceEndException'
-title: Propriedades de EsentLogSequenceEndException
+description: 'Saiba mais sobre: propriedades EsentLogSequenceEndException'
+title: Propriedades EsentLogSequenceEndException
 TOCTitle: EsentLogSequenceEndException properties
 ms:assetid: Properties.T:Microsoft.Isam.Esent.Interop.EsentLogSequenceEndException
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentlogsequenceendexception_properties(v=EXCHG.10)
@@ -14,12 +14,12 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118776568"
 ---
-# <a name="esentlogsequenceendexception-properties"></a>Propriedades de EsentLogSequenceEndException
+# <a name="esentlogsequenceendexception-properties"></a>Propriedades EsentLogSequenceEndException
 
 Incluir membros protegidos  
 Incluir membros herdados  
 
-O tipo [EsentLogSequenceEndException](./esentlogsequenceendexception-class.md) expõe os membros a seguir.
+O [tipo EsentLogSequenceEndException](./esentlogsequenceendexception-class.md) expõe os membros a seguir.
 
 ## <a name="properties"></a>Propriedades
 
@@ -40,11 +40,11 @@ O tipo [EsentLogSequenceEndException](./esentlogsequenceendexception-class.md) e
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
 <td><a href="dn274313(v=exchg.10).md">Erro</a></td>
-<td>Obtém o erro de ESENT subjacente para esta exceção. (Herdado de <a href="dn274314(v=exchg.10).md">EsentErrorException</a>.)</td>
+<td>Obtém o erro Esent subjacente para essa exceção. (Herdado de <a href="dn274314(v=exchg.10).md">EsentErrorException</a>.)</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
-<td><a href="/dotnet/api/system.exception.helplink#System_Exception_HelpLink">HelpLink</a></td>
+<td><a href="/dotnet/api/system.exception.helplink#System_Exception_HelpLink">Helplink</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="even">
@@ -89,4 +89,4 @@ Parte superior
 
 [Classe EsentLogSequenceEndException](./esentlogsequenceendexception-class.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

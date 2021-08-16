@@ -29,7 +29,7 @@ Observe que, se esse elemento estiver definido como true, o seguinte também dev
 
 **<IsAdditionalPdpContextProfile>**
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ``` syntax
 <IsAdditionalPdpContextProfile>

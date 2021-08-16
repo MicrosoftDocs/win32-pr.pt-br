@@ -1,7 +1,7 @@
 ---
-description: Acesse o buffer de vértice da malha depois que ele tiver sido confirmado no dispositivo com ID3DX10Mesh::CommitToDevice. Isso é diferente de ID3DX10Mesh::GetVertexBuffer, que retorna o buffer de vértice antes de ser confirmado no dispositivo.
+description: 'Acesse o buffer de vértice da malha depois que ele tiver sido confirmado no dispositivo com ID3DX10Mesh:: CommitToDevice. Isso é diferente de ID3DX10Mesh:: GetVertexBuffer, que retorna o buffer de vértice antes de ser confirmado no dispositivo.'
 ms.assetid: 621d9105-e55d-47b8-8557-8adb7db19d66
-title: Método ID3DX10Mesh::GetDeviceVertexBuffer (D3DX10.h)
+title: 'Método ID3DX10Mesh:: GetDeviceVertexBuffer (D3DX10. h)'
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -21,9 +21,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118540259"
 ---
-# <a name="id3dx10meshgetdevicevertexbuffer-method"></a>Método ID3DX10Mesh::GetDeviceVertexBuffer
+# <a name="id3dx10meshgetdevicevertexbuffer-method"></a>Método ID3DX10Mesh:: GetDeviceVertexBuffer
 
-Acesse o buffer de vértice da malha depois que ele tiver sido confirmado no dispositivo com [**ID3DX10Mesh::CommitToDevice**](id3dx10mesh-committodevice.md). Isso é diferente de [**ID3DX10Mesh::GetVertexBuffer**](id3dx10mesh-getvertexbuffer.md), que retorna o buffer de vértice antes de ser confirmado no dispositivo.
+Acesse o buffer de vértice da malha depois que ele tiver sido confirmado no dispositivo com [**ID3DX10Mesh:: CommitToDevice**](id3dx10mesh-committodevice.md). Isso é diferente de [**ID3DX10Mesh:: GetVertexBuffer**](id3dx10mesh-getvertexbuffer.md), que retorna o buffer de vértice antes de ser confirmado no dispositivo.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -41,21 +41,21 @@ HRESULT GetDeviceVertexBuffer(
 
 <dl> <dt>
 
-*iBuffer* \[ Em\]
+*iBuffer* \[ no\]
 </dt> <dd>
 
-Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
+Tipo: **[ **uint**](../winprog/windows-data-types.md)**
 
-Um índice que identifica qual buffer de vértice acessar.
+Um índice que identifica qual buffer de vértice deve ser acessado.
 
 </dd> <dt>
 
-*ppVertexBuffer* \[ out\]
+*ppVertexBuffer* \[ fora\]
 </dt> <dd>
 
 Tipo: **[ **ID3D10Buffer**](/windows/desktop/api/D3D10/nn-d3d10-id3d10buffer)\*\***
 
-O buffer de vértice depois que ele tiver sido confirmado no dispositivo.
+O buffer de vértice após ter sido confirmado no dispositivo.
 
 </dd> </dl>
 
@@ -63,7 +63,7 @@ O buffer de vértice depois que ele tiver sido confirmado no dispositivo.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-O valor de retorno é um dos valores listados em Códigos de Retorno [do Direct3D 10.](d3d10-graphics-reference-returnvalues.md)
+O valor de retorno é um dos valores listados nos [códigos de retorno do Direct3D 10](d3d10-graphics-reference-returnvalues.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -71,8 +71,8 @@ O valor de retorno é um dos valores listados em Códigos de Retorno [do Direct3
 
 | Requisito | Valor |
 |--------------------|---------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3DX10.h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>D3DX10.lib</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>D3DX10. h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>D3DX10. lib</dt> </dl> |
 
 
 
@@ -83,7 +83,7 @@ O valor de retorno é um dos valores listados em Códigos de Retorno [do Direct3
 [ID3DX10Mesh](id3dx10mesh.md)
 </dt> <dt>
 
-[D3DX Interfaces](d3d10-graphics-reference-d3dx10-interfaces.md)
+[Interfaces D3DX](d3d10-graphics-reference-d3dx10-interfaces.md)
 </dt> </dl>
 
  

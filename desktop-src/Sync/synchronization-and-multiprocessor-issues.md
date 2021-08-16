@@ -4,12 +4,12 @@ ms.assetid: b20a1d2c-b795-4ed8-ac33-539a347020c8
 title: Sincronização e problemas de multiprocessador
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3896dc240e76f1506bac2a6a2e95f101b05beca7
-ms.sourcegitcommit: 9c8ddec1e955f181beecad0478c1fb79013b5e9d
+ms.openlocfilehash: 2d0e86a2c69cf0a0c0e56656475f73fb489f7433a94511703b3777302702bb32
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "105755536"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118886204"
 ---
 # <a name="synchronization-and-multiprocessor-issues"></a>Sincronização e problemas de multiprocessador
 
@@ -73,7 +73,7 @@ BOOL FetchComputedValue(int *piResult)
 
 Essa condição de corrida acima pode ser reparada usando a palavra-chave **volatile** ou a função [**InterlockedExchange**](/windows/desktop/api/winnt/nf-winnt-interlockedexchange.md) para garantir que o valor de `iValue` seja atualizado para todos os processadores antes que o valor de `fValueHasBeenComputed` seja definido como **true**.
 
-Iniciando o Visual Studio 2005, se compilado em **/volatile: MS** Mode, o compilador usa a semântica de aquisição para operações de leitura em variáveis **voláteis** e semântica de liberação para operações de gravação em variáveis **voláteis** (quando há suporte pela CPU). Portanto, você pode corrigir o exemplo da seguinte maneira:
+a partir do Visual Studio 2005, se compilado em **/volatile: ms** mode, o compilador usa a semântica de aquisição para operações de leitura em variáveis **voláteis** e semântica de liberação para operações de gravação em variáveis **voláteis** (quando há suporte para a CPU). Portanto, você pode corrigir o exemplo da seguinte maneira:
 
 ``` syntax
 volatile int iValue;
@@ -101,7 +101,7 @@ BOOL FetchComputedValue(int *piResult)
 }
 ```
 
-Com o Visual Studio 2003, as referências **voláteis** a **volátil** são ordenadas; o compilador não solicitará o acesso à variável **volátil** novamente. No entanto, essas operações podem ser reordenadas pelo processador. Portanto, você pode corrigir o exemplo da seguinte maneira:
+com Visual Studio 2003, as referências **voláteis** a **volátil** são ordenadas; o compilador não solicitará o acesso à variável **volátil** novamente. No entanto, essas operações podem ser reordenadas pelo processador. Portanto, você pode corrigir o exemplo da seguinte maneira:
 
 ``` syntax
 int iValue;

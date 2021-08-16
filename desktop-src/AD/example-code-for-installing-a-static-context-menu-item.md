@@ -5,23 +5,23 @@ ms.assetid: 22d6a220-7712-4b07-a6d9-67dd748358a6
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 33a8b6eb65706ad3adc9fd4c10b4c60f96a72848
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: a16e4ff9890aa73b1107fe511c3e41480b5db7f1bb68a8a264a990cf58a94ea4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104453504"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118962315"
 ---
 # <a name="example-code-for-installing-a-static-context-menu-item"></a>Código de exemplo para instalar um item de menu de contexto estático
 
-O exemplo de código a seguir usa dois scripts. O primeiro script (Frommenu.vbs) é o comando que é executado quando o item de menu é selecionado. O segundo script (Addmenu.vbs) instala o item de menu de contexto do especificador de exibição para executar o script Frommenu.vbs. Este exemplo pressupõe a localidade 409 (inglês americano) e estende o menu de contexto do objeto de usuário em Active Directory snap-ins administrativos.
+O exemplo de código a seguir usa dois scripts. O primeiro script (Frommenu.vbs) é o comando que é executado quando o item de menu é selecionado. O segundo script (Addmenu.vbs) instala o item de menu de contexto do especificador de exibição para executar o script Frommenu.vbs. Este exemplo pressupõe a localidade 409 (inglês dos EUA) e estende o menu de contexto do objeto de usuário em snap-ins administrativos do Active Directory.
 
 Para executar o código de exemplo
 
-1.  Copie o código para Frommenu.vbs abaixo, abra o bloco de notas, Cole o código no bloco de notas, salve o arquivo como C: \\frommenu.vbs e feche o bloco de notas.
-2.  Copie o código para Addmenu.vbs abaixo, abra o bloco de notas, Cole o código no bloco de notas, salve o arquivo como C: \\addmenu.vbs e feche o bloco de notas.
+1.  Copie o código para Frommenu.vbs abaixo, abra Bloco de notas, copie o código em Bloco de notas, salve o arquivo como C:frommenu.vbs e feche \\ Bloco de notas.
+2.  Copie o código para Addmenu.vbs abaixo, abra Bloco de notas, copie o código em Bloco de notas, salve o arquivo como C:addmenu.vbs e feche \\ Bloco de notas.
 3.  Execute Addmenu.vbs.
-4.  Inicie o snap-in Active Directory usuários e computadores.
+4.  Inicie o Usuários e Computadores do Active Directory snap-in.
 
 FROMMENU.VBS
 
@@ -126,9 +126,9 @@ End Sub
 
 
 
- 
+ 
 
- 
+ 
 
 
 

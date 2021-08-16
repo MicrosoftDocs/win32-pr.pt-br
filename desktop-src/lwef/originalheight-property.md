@@ -13,11 +13,11 @@ ms.locfileid: "118746628"
 ---
 # <a name="originalheight-property"></a>Propriedade OriginalHeight
 
-\[O Microsoft Agent foi preterido a partir Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
+\[o Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
 
 <dl> <dt>
 
-<span id="Description"></span><span id="description"></span><span id="DESCRIPTION"></span>**Descrição**
+<span id="Description"></span><span id="description"></span><span id="DESCRIPTION"></span>**Ndescrição**
 </dt> <dd>
 
 Retorna um valor inteiro que especifica a altura original do caractere.
@@ -27,17 +27,17 @@ Retorna um valor inteiro que especifica a altura original do caractere.
 <span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>**Sintaxe**
 </dt> <dd>
 
-*agent.***Characters("**_CharacterID_*_"). OriginalHeight_*
+*caracteres Agent. ***("**_characterid_*_"). OriginalHeight_*
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-Essa propriedade retorna a altura do quadro do caractere conforme criada com o Editor de Caracteres do Microsoft Agent.
+Essa propriedade retorna a altura do quadro do caractere como criado com o editor de caracteres do Microsoft Agent.
 
 ## <a name="see-also"></a>Consulte Também
 
-[**Propriedade Height**](height-property.md), [ **propriedade OriginalWidth**](originalwidth-property.md)
+[**Propriedade Height**](height-property.md), [ **Propriedade OriginalWidth**](originalwidth-property.md)
 
 
  

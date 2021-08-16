@@ -4,12 +4,12 @@ ms.assetid: 010f8f88-999e-4dde-bffb-ac1a07256d55
 title: Sobre a lista de origem do MRU
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 062624057e7dd1a083ebf0eb152200fd3a7241b6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7766f15b0c9f1af29847ddad3db118db4b5329435f62e0d2d8df694cd68fe015
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103920842"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118887912"
 ---
 # <a name="about-the-mru-source-list"></a>Sobre a lista de origem do MRU
 

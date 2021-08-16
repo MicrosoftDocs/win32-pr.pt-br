@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: f15c2471f749748f7928a45aa03037d955c75d4a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 963581431c35e2c63cbe9af4f5b37ef6d0709d01146a223253247ad2b8c37dda
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104089717"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120090596"
 ---
 # <a name="folderitemverbs-method"></a>Método FolderItem. Verbs
 
@@ -37,7 +37,7 @@ retVal = FolderItem.Verbs()
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **FolderItemVerbs**](folderitemverbs.md)\*\***
 
@@ -45,9 +45,9 @@ Uma referência de objeto para o objeto [**FolderItemVerbs**](folderitemverbs.md
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo a seguir usa **verbos** para recuperar o objeto [**FolderItemVerbs**](folderitemverbs.md) que representa o conjunto de verbos que podem ser executados na pasta do Windows. O uso adequado é mostrado para JScript, VBScript e Visual Basic.
+o exemplo a seguir usa **verbos** para recuperar o objeto [**FolderItemVerbs**](folderitemverbs.md) que representa o conjunto de verbos que podem ser executados na pasta Windows. o uso adequado é mostrado para JScript, VBScript e Visual Basic.
 
-JScript
+JScript:
 
 
 ```JScript
@@ -164,7 +164,7 @@ End Sub
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 2000 Professional, \[ somente aplicativos da área de trabalho do Windows XP\]<br/>                                         |
+| Cliente mínimo com suporte<br/> | Windows 2000 Professional, \[ somente aplicativos de área de trabalho do Windows XP\]<br/>                                         |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                           |
 | Cabeçalho<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                           |
 | INSERI<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                         |

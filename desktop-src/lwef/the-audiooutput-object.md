@@ -4,16 +4,16 @@ description: O objeto AudioOutput
 ms.assetid: 7c1c6079-f445-4980-9559-8d26b6014e89
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b919b435edf31b6ae24a8b5c6977d5aed542efac
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 07bfef883e5cb40d0a72ec4d848ad0d77f63f58aaeefd907f632e16798be4397
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104366010"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118474946"
 ---
 # <a name="the-audiooutput-object"></a>O objeto AudioOutput
 
-\[O Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
+\[o Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
 
 Esse objeto fornece acesso a propriedades de saída de áudio mantidas pelo servidor. As propriedades são somente leitura, mas o usuário pode alterá-las na folha de propriedades do Microsoft Agent.
 
@@ -23,6 +23,6 @@ Se você declarar uma variável de objeto do tipo [**IAgentCtlAudioObjectEx**](h
 -   [**SoundEffects**](soundeffects-property.md)
 -   [**Estado**](status-property.md)
 
- 
+ 
 
- 
+ 

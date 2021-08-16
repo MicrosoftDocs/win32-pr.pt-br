@@ -17,11 +17,11 @@ ms.locfileid: "118545537"
 
 -   [**AddClipboardFormatListener**](/windows/desktop/api/Winuser/nf-winuser-addclipboardformatlistener)
 -   [**ChangeClipboardChain**](/windows/desktop/api/Winuser/nf-winuser-changeclipboardchain)
--   [**Closeclipboard**](/windows/desktop/api/Winuser/nf-winuser-closeclipboard)
+-   [**CloseClipboard**](/windows/desktop/api/Winuser/nf-winuser-closeclipboard)
 -   [**CountClipboardFormats**](/windows/desktop/api/Winuser/nf-winuser-countclipboardformats)
--   [**Emptyclipboard**](/windows/desktop/api/Winuser/nf-winuser-emptyclipboard)
--   [**Enumclipboardformats**](/windows/desktop/api/Winuser/nf-winuser-enumclipboardformats)
--   [**Getclipboarddata**](/windows/desktop/api/Winuser/nf-winuser-getclipboarddata)
+-   [**EmptyClipboard**](/windows/desktop/api/Winuser/nf-winuser-emptyclipboard)
+-   [**EnumClipboardFormats**](/windows/desktop/api/Winuser/nf-winuser-enumclipboardformats)
+-   [**GetClipboardData**](/windows/desktop/api/Winuser/nf-winuser-getclipboarddata)
 -   [**GetClipboardFormatName**](/windows/desktop/api/Winuser/nf-winuser-getclipboardformatnamea)
 -   [**GetClipboardOwner**](/windows/desktop/api/Winuser/nf-winuser-getclipboardowner)
 -   [**GetClipboardSequenceNumber**](/windows/desktop/api/Winuser/nf-winuser-getclipboardsequencenumber)
@@ -30,11 +30,11 @@ ms.locfileid: "118545537"
 -   [**GetPriorityClipboardFormat**](/windows/desktop/api/Winuser/nf-winuser-getpriorityclipboardformat)
 -   [**GetUpdatedClipboardFormats**](/windows/desktop/api/Winuser/nf-winuser-getupdatedclipboardformats)
 -   [**IsClipboardFormatAvailable**](/windows/desktop/api/Winuser/nf-winuser-isclipboardformatavailable)
--   [**Openclipboard**](/windows/desktop/api/Winuser/nf-winuser-openclipboard)
--   [**Registerclipboardformat**](/windows/desktop/api/Winuser/nf-winuser-registerclipboardformata)
+-   [**OpenClipboard**](/windows/desktop/api/Winuser/nf-winuser-openclipboard)
+-   [**RegisterClipboardFormat**](/windows/desktop/api/Winuser/nf-winuser-registerclipboardformata)
 -   [**RemoveClipboardFormatListener**](/windows/desktop/api/Winuser/nf-winuser-removeclipboardformatlistener)
--   [**Setclipboarddata**](/windows/desktop/api/Winuser/nf-winuser-setclipboarddata)
--   [**Setclipboardviewer**](/windows/desktop/api/Winuser/nf-winuser-setclipboardviewer)
+-   [**SetClipboardData**](/windows/desktop/api/Winuser/nf-winuser-setclipboarddata)
+-   [**SetClipboardViewer**](/windows/desktop/api/Winuser/nf-winuser-setclipboardviewer)
 
  
 

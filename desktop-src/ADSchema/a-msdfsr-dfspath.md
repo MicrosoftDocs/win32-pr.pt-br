@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 718c052ea89df9d8c237c4ef73a6d6d6af13ee49
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 24a8f1e1ae9f9baeaa134737d5f6b84777f99c283f7f7013828483b2e6751b7f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104087103"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118960965"
 ---
 # <a name="ms-dfsr-dfspath-attribute"></a>atributo ms-DFSR-DfsPath
 
@@ -56,8 +56,8 @@ Contém o caminho completo do link Sistema de Arquivos Distribuído (DFS) associ
 | ID do link                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| É de valor único       | True                                                         |
-| É indexado             | True                                                         |
+| É de valor único       | Verdadeiro                                                         |
+| É indexado             | Verdadeiro                                                         |
 | No catálogo global      | Falso                                                        |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                 |
 | Range-Lower            | 0                                                            |
@@ -77,8 +77,8 @@ Contém o caminho completo do link Sistema de Arquivos Distribuído (DFS) associ
 | ID do link                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| É de valor único       | True                                                         |
-| É indexado             | True                                                         |
+| É de valor único       | Verdadeiro                                                         |
+| É indexado             | Verdadeiro                                                         |
 | No catálogo global      | Falso                                                        |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                 |
 | Range-Lower            | 0                                                            |
@@ -98,15 +98,15 @@ Contém o caminho completo do link Sistema de Arquivos Distribuído (DFS) associ
 | ID do link                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| É de valor único       | True                                                         |
-| É indexado             | True                                                         |
+| É de valor único       | Verdadeiro                                                         |
+| É indexado             | Verdadeiro                                                         |
 | No catálogo global      | Falso                                                        |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                 |
 | Range-Lower            | 0                                                            |
 | Range-Upper            | 32767                                                        |
 | Search-Flags           | 0x00000001                                                   |
 | System-Flags           | 0x00000000                                                   |
-| Classes usadas em        | [**MS-DFSR-Contentset**](c-msdfsr-contentset.md)<br/> |
+| Classes usadas em        | [**ms-DFSR-ContentSet**](c-msdfsr-contentset.md)<br/> |
 
 
 
@@ -119,21 +119,21 @@ Contém o caminho completo do link Sistema de Arquivos Distribuído (DFS) associ
 | ID do link                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| É de valor único       | True                                                         |
-| É indexado             | True                                                         |
-| No catálogo global      | Falso                                                        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                 |
+| Tem valor único       | Verdadeiro                                                         |
+| É indexado             | Verdadeiro                                                         |
+| No Catálogo Global      | Falso                                                        |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                 |
 | Range-Lower            | 0                                                            |
 | Range-Upper            | 32767                                                        |
 | Search-Flags           | 0x00000001                                                   |
 | System-Flags           | 0x00000000                                                   |
-| Classes usadas em        | [**MS-DFSR-Contentset**](c-msdfsr-contentset.md)<br/> |
+| Classes usadas em        | [**ms-DFSR-ContentSet**](c-msdfsr-contentset.md)<br/> |
 
 
 
 ## <a name="remarks"></a>Comentários
 
-O atributo **MS-DFSR-DfsPath** faz parte do suporte ao serviço de replicação do sistema de arquivos distribuído (DFS).
+O **atributo ms-DFSR-DfsPath** faz parte do suporte ao serviço de replicação Sistema de Arquivos Distribuído (DFS).
 
  
 

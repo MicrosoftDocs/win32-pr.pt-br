@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6fe610c87c356431883cecded5eda3e0a9c42297
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 722daf2728992c441771830babf3b2b2bf9b4230367baae12a0d71264876ebc3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104456284"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118960585"
 ---
 # <a name="ms-ds-quota-effective-attribute"></a>ms-DS-atributo de cota efetiva
 
@@ -58,7 +58,7 @@ A cota efetiva para uma entidade de segurança computada das cotas atribuídas p
 | ID do link                | \-                                                                |
 | MAPI-Id                | \-                                                                |
 | System-Only            | Falso                                                             |
-| É de valor único       | True                                                              |
+| É de valor único       | Verdadeiro                                                              |
 | É indexado             | Falso                                                             |
 | No catálogo global      | Falso                                                             |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                      |
@@ -79,7 +79,7 @@ A cota efetiva para uma entidade de segurança computada das cotas atribuídas p
 | ID do link                | \-                                                                |
 | MAPI-Id                | \-                                                                |
 | System-Only            | Falso                                                             |
-| É de valor único       | True                                                              |
+| É de valor único       | Verdadeiro                                                              |
 | É indexado             | Falso                                                             |
 | No catálogo global      | Falso                                                             |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                      |
@@ -100,7 +100,7 @@ A cota efetiva para uma entidade de segurança computada das cotas atribuídas p
 | ID do link                | \-                                                                |
 | MAPI-Id                | \-                                                                |
 | System-Only            | Falso                                                             |
-| É de valor único       | True                                                              |
+| É de valor único       | Verdadeiro                                                              |
 | É indexado             | Falso                                                             |
 | No catálogo global      | Falso                                                             |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                      |
@@ -121,7 +121,7 @@ A cota efetiva para uma entidade de segurança computada das cotas atribuídas p
 | ID do link                | \-                                                                |
 | MAPI-Id                | \-                                                                |
 | System-Only            | Falso                                                             |
-| É de valor único       | True                                                              |
+| É de valor único       | Verdadeiro                                                              |
 | É indexado             | Falso                                                             |
 | No catálogo global      | Falso                                                             |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                      |
@@ -142,7 +142,7 @@ A cota efetiva para uma entidade de segurança computada das cotas atribuídas p
 | ID do link                | \-                                                                |
 | MAPI-Id                | \-                                                                |
 | System-Only            | Falso                                                             |
-| É de valor único       | True                                                              |
+| É de valor único       | Verdadeiro                                                              |
 | É indexado             | Falso                                                             |
 | No catálogo global      | Falso                                                             |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                      |
@@ -163,7 +163,7 @@ A cota efetiva para uma entidade de segurança computada das cotas atribuídas p
 | ID do link                | \-                                                                |
 | MAPI-Id                | \-                                                                |
 | System-Only            | Falso                                                             |
-| É de valor único       | True                                                              |
+| É de valor único       | Verdadeiro                                                              |
 | É indexado             | Falso                                                             |
 | No catálogo global      | Falso                                                             |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                      |

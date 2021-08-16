@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 36550cda8d9ef664f96e236d2770a82c88412772
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 7e6c5a03f9e1874d7706ecbf43cfd312abc472b8e7127ba9f21a35313374157b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105797569"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118524441"
 ---
 # <a name="d3dxsavevolumetofile-function"></a>Função D3DXSaveVolumeToFile
 
@@ -89,7 +89,7 @@ Ponteiro para uma estrutura [**D3DBOX**](d3dbox.md) . Especifica a caixa de orig
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 

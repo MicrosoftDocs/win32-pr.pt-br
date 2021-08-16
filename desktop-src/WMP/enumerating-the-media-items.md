@@ -3,27 +3,27 @@ title: Enumerando os itens de mídia
 description: Enumerando os itens de mídia
 ms.assetid: 1819b4c3-57ae-48fc-8a01-b699b5802b64
 keywords:
-- Windows Media Player, listas de reprodução de sincronização
-- Modelo de objeto do Windows Media Player, listas de reprodução de sincronização
+- Windows Media Player, playlists de sincronização
+- modelo de objeto Windows Media Player, playlists de sincronização
 - modelo de objeto, playlists de sincronização
-- Windows Media Player Mobile, listas de reprodução de sincronização
-- Controle ActiveX do Windows Media Player, listas de reprodução de sincronização
-- Controle ActiveX móvel do Windows Media Player, listas de reprodução de sincronização
-- Controle ActiveX, listas de reprodução de sincronização
+- Windows Media Player Listas de reprodução móveis e de sincronização
+- controle de ActiveX de Windows Media Player, listas de reprodução de sincronização
+- Windows Media Player controle de ActiveX móvel, playlists de sincronização
+- controle de ActiveX, listas de reprodução de sincronização
 - listas de reprodução, sincronização
 - listas de reprodução de metarquivo, sincronização
-- Listas de reprodução do metarquivo do Windows Media, sincronização
+- Windows Listas de reprodução de metarquivo de mídia, sincronização
 - listas de reprodução de sincronização, enumerando
 - dispositivos portáteis, enumerando
 - enumerações, listas de reprodução de sincronização
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e8e07148ed6978355056febfb2ad920e4b1380a3
-ms.sourcegitcommit: 48d1c892045445bcbd0f22bafa2fd3861ffaa6e7
+ms.openlocfilehash: 96f6afd6c209f96edd011b6b5829af07583057bd9220c61015d8e8ffa9fe4bfa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "105780234"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119650906"
 ---
 # <a name="enumerating-the-media-items"></a>Enumerando os itens de mídia
 
@@ -162,9 +162,9 @@ Para a implementação da função GetPartnershipSyncState, consulte [determinan
 [**Gerenciando listas de reprodução de sincronização**](managing-synchronization-playlists.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

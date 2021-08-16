@@ -13,7 +13,7 @@ ms.locfileid: "118750180"
 ---
 # <a name="iagentcommandexsethelpcontextid"></a>IAgentCommandEx::SetHelpContextID
 
-\[O Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
+\[O Microsoft Agent foi preterido a partir Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
 
 ``` syntax
 HRESULT SetHelpContextID(
@@ -34,10 +34,10 @@ O número de contexto do tópico de ajuda associado ao [**objeto Command;**](/wi
 
 </dd> </dl>
 
-Se você criou um arquivo Windows Ajuda para seu aplicativo e definiu isso na propriedade [**HelpFile do**](helpfile-property.md) caractere. O Microsoft Agent chama automaticamente a [**Ajuda quando HelpModeOn**](helpmodeon-property.md) está definido como **True** e o usuário seleciona o comando. Se houver um número de contexto no [**HelpContextID,**](helpcontextid-property-com.md)o Agent chamará a Ajuda e procurará o tópico identificado pelo número de contexto atual. O número de contexto atual é o valor **de HelpContextID** para o comando.
+Se você tiver criado um arquivo Windows Ajuda para seu aplicativo e defini-lo na propriedade [**HelpFile do**](helpfile-property.md) caractere. O Microsoft Agent chama automaticamente a [**Ajuda quando HelpModeOn**](helpmodeon-property.md) está definido como **True** e o usuário seleciona o comando. Se houver um número de contexto no [**HelpContextID,**](helpcontextid-property-com.md)o Agent chamará a Ajuda e procurará o tópico identificado pelo número de contexto atual. O número de contexto atual é o valor **de HelpContextID** para o comando.
 
 > [!Note]  
-> A criação de um arquivo de Ajuda requer o Compilador Windows Ajuda da Microsoft.
+> A criação de um arquivo de Ajuda requer o Microsoft Windows Help Compiler.
 
  
 

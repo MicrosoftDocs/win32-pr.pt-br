@@ -61,7 +61,7 @@ Habilita a mesclagem de vértice entre as duas matrizes definidas pela macro [**
 <span id="D3DVBF_2WEIGHTS"></span><span id="d3dvbf_2weights"></span>**D3DVBF \_ 2WEIGHTS**
 </dt> <dd>
 
-Habilita a combinação de vértices entre as três matrizes definidas pela macro [**D3DTS \_ WORLDMATRIX,**](d3dts-worldmatrix.md) em que o valor do índice para os estados de transformação é 0, 1 e 2.
+Habilita a mesclagem de vértice entre as três matrizes definidas pela macro [**D3DTS \_ WORLDMATRIX,**](d3dts-worldmatrix.md) em que o valor do índice para os estados de transformação é 0, 1 e 2.
 
 </dd> <dt>
 

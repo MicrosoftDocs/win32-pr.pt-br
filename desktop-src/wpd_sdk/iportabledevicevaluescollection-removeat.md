@@ -1,7 +1,7 @@
 ---
-description: 'Método IPortableDeviceValuesCollection:: RemoveAt – o método RemoveAt remove o elemento armazenado no local especificado pelo índice fornecido.'
+description: Método IPortableDeviceValuesCollection::RemoveAt – o método RemoveAt remove o elemento armazenado no local especificado pelo índice especificado.
 ms.assetid: 380212b6-5e71-406b-8236-e06672505f17
-title: 'Método IPortableDeviceValuesCollection:: RemoveAt (PortableDeviceTypes. h)'
+title: Método IPortableDeviceValuesCollection::RemoveAt (PortableDeviceTypes.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - PortableDeviceGUIDs.lib
 - PortableDeviceGUIDs.dll
-ms.openlocfilehash: 7db15480906bee8181bb0fc589c4f3e30ce4753c
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 2796fd44016854d03322b8dfa0a11ce85d1afce16b9ae17cae02a6fc53804f97
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108083164"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118963545"
 ---
-# <a name="iportabledevicevaluescollectionremoveat-method"></a>Método IPortableDeviceValuesCollection:: RemoveAt
+# <a name="iportabledevicevaluescollectionremoveat-method"></a>Método IPortableDeviceValuesCollection::RemoveAt
 
-O método **RemoveAt** remove o elemento armazenado no local especificado pelo índice fornecido.
+O **método RemoveAt** remove o elemento armazenado no local especificado pelo índice especificado.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,7 +40,7 @@ HRESULT RemoveAt(
 
 <dl> <dt>
 
-*dwIndex* \[ no\]
+*dwIndex* \[ Em\]
 </dt> <dd>
 
 Especifica o índice do elemento a ser removido.
@@ -49,7 +49,7 @@ Especifica o índice do elemento a ser removido.
 
 ## <a name="return-value"></a>Valor retornado
 
-O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
+O método retorna um **HRESULT.** Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
 
 
 
@@ -64,7 +64,7 @@ O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limita�
 
 ## <a name="remarks"></a>Comentários
 
-Você deve especificar um índice com base em zero.
+Você deve especificar um índice baseado em zero.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -72,16 +72,16 @@ Você deve especificar um índice com base em zero.
 
 | Requisito | Valor |
 |--------------------|----------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>PortableDeviceTypes. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>PortableDeviceGUIDs. lib</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>PortableDeviceTypes.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>PortableDeviceGUIDs.lib</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 
-[**Interface IPortableDeviceValuesCollection**](iportabledevicevaluescollection.md)
+[**IPortableDeviceValuesCollection Interface**](iportabledevicevaluescollection.md)
 </dt> </dl>
 
  

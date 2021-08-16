@@ -4,16 +4,16 @@ ms.assetid: 17813ce1-b3f6-408f-9c55-5caa7eda6738
 title: Segurança de pipe anônimo e direitos de acesso
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 02935a3b2bc5ea31d88aab3f23f23c348c054e5b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7b54869584a70bfbe886740e979c44864d852de0df23e311eb4aad89c321662c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105758083"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118756353"
 ---
 # <a name="anonymous-pipe-security-and-access-rights"></a>Segurança de pipe anônimo e direitos de acesso
 
-A segurança do Windows permite que você controle o acesso a Pipes anônimos. Para obter mais informações sobre segurança, consulte [modelo de controle de acesso](/windows/desktop/SecAuthZ/access-control-model).
+Windows segurança permite que você controle o acesso a pipes anônimos. Para obter mais informações sobre segurança, consulte [modelo de controle de acesso](/windows/desktop/SecAuthZ/access-control-model).
 
 Você pode especificar um [descritor de segurança](/windows/desktop/SecAuthZ/security-descriptors) para um pipe ao chamar a função [**CreatePipe**](/windows/win32/api/namedpipeapi/nf-namedpipeapi-createpipe) . O descritor de segurança controla o acesso às extremidades de leitura e gravação do pipe. Se você especificar **NULL**, o pipe obterá um descritor de segurança padrão. As ACLs no descritor de segurança padrão para um pipe são provenientes do token de representação ou primário do criador.
 

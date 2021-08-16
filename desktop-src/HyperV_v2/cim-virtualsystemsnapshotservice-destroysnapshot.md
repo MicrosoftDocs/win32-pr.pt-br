@@ -1,7 +1,7 @@
 ---
-description: Destrua um instantâneo do sistema virtual existente. Esse método pode, como um efeito colateral, destruir outros instantâneos que dependem do instantâneo afetado.
+description: Destruir um instantâneo do sistema virtual existente. Esse método pode ser um efeito colateral para destruir outros instantâneos que dependem do instantâneo afetado.
 ms.assetid: 69f60d0e-50ef-4a38-ad4b-88534b7fb3f8
-title: Método DestroySnapshot da classe CIM_VirtualSystemSnapshotService
+title: Método DestroySnapshot da CIM_VirtualSystemSnapshotService classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -20,9 +20,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118646365"
 ---
-# <a name="destroysnapshot-method-of-the-cim_virtualsystemsnapshotservice-class"></a>Método DestroySnapshot da \_ classe VIRTUALSYSTEMSNAPSHOTSERVICE CIM
+# <a name="destroysnapshot-method-of-the-cim_virtualsystemsnapshotservice-class"></a>Método DestroySnapshot da classe CIM \_ VirtualSystemSnapshotService
 
-Destrua um instantâneo do sistema virtual existente. Esse método pode, como um efeito colateral, destruir outros instantâneos que dependem do instantâneo afetado.
+Destruir um instantâneo do sistema virtual existente. Esse método pode ser um efeito colateral para destruir outros instantâneos que dependem do instantâneo afetado.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,20 +40,20 @@ uint32 DestroySnapshot(
 
 <dl> <dt>
 
-*AffectedSnapshot* \[ no\]
+*AffectedSnapshot* \[ Em\]
 </dt> <dd>
 
-Uma referência do [**CIM \_ VirtualSystemSettingData**](cim-virtualsystemsettingdata.md) ao instantâneo do sistema virtual afetado.
+Uma [**referência CIM \_ VirtualSystemSettingData**](cim-virtualsystemsettingdata.md) ao instantâneo do sistema virtual afetado.
 
 </dd> <dt>
 
-*Trabalho* \[ do fora\]
+*Trabalho* \[ out\]
 </dt> <dd>
 
-Se a operação for de longa execução, opcionalmente, [**um \_ ConcreteJob CIM**](cim-concretejob.md) que representa o trabalho poderá ser retornado.
+Se a operação for de execução longa, opcionalmente, [**um \_ ConcreteJob CIM**](cim-concretejob.md) que representa o trabalho poderá ser retornado.
 
 > [!Note]  
-> Este parâmetro foi leitura/gravação em Windows 8.1.
+> Esse parâmetro foi lido/escrito Windows 8.1.
 
  
 
@@ -74,7 +74,7 @@ Retorna um 0 em caso de êxito; caso contrário, retornará um erro.
 **Falha** (2)
 </dt> <dt>
 
-**Tempo limite** (3)
+**Tempoout** (3)
 </dt> <dt>
 
 **Parâmetro inválido** (4)
@@ -86,16 +86,16 @@ Retorna um 0 em caso de êxito; caso contrário, retornará um erro.
 **Tipo inválido** (6)
 </dt> <dt>
 
-**DMTF reservado** (..)
+**DMTF Reservado** (..)
 </dt> <dt>
 
-**Parâmetros de método marcados-trabalho iniciado** (4096)
+**Parâmetros de método verificados – Trabalho iniciado** (4096)
 </dt> <dt>
 
-**Método reservado** (4097.. 32767)
+**Método Reservado** (4097..32767)
 </dt> <dt>
 
-**Específico do fornecedor** (32768.. 65535)
+**Específico do** fornecedor (32768..65535)
 </dt> </dl>
 
 ## <a name="requirements"></a>Requisitos
@@ -106,8 +106,8 @@ Retorna um 0 em caso de êxito; caso contrário, retornará um erro.
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 8.1<br/>                                                                                  |
 | Servidor mínimo com suporte<br/> | Windows Server 2012 R2<br/>                                                                       |
-| Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Namespace<br/>                | Virtualização \\ raiz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -116,7 +116,7 @@ Retorna um 0 em caso de êxito; caso contrário, retornará um erro.
 
 <dl> <dt>
 
-[**\_VIRTUALSYSTEMSNAPSHOTSERVICE CIM**](cim-virtualsystemsnapshotservice.md)
+[**CIM \_ VirtualSystemSnapshotService**](cim-virtualsystemsnapshotservice.md)
 </dt> </dl>
 
  

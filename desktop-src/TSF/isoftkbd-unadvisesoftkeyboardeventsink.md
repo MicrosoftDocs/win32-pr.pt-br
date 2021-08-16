@@ -1,11 +1,11 @@
 ---
-title: Método ISoftKbd UnadviseSoftKeyboardEventSink (Softkbdc. h)
-description: O método ISoftKbd UnadviseSoftKeyboardEventSink remove um coletor de eventos de teclado flexível.
+title: Método ISoftKbd UnadviseSoftKeyboardEventSink (Softkbdc.h)
+description: O método ISoftKbd UnadviseSoftKeyboardEventSink remove um sink de evento de teclado flexível.
 ms.assetid: 785340bd-c4f6-4c80-a492-6e60d1c1d552
 keywords:
-- Estrutura de serviços de texto do método UnadviseSoftKeyboardEventSink
-- Método UnadviseSoftKeyboardEventSink de estrutura de serviços de texto, interface ISoftKbd
-- Estrutura de serviços de texto da interface ISoftKbd, método UnadviseSoftKeyboardEventSink
+- Método UnadviseSoftKeyboardEventSink Estrutura de Serviços de Texto
+- Método UnadviseSoftKeyboardEventSink Estrutura de Serviços de Texto , interface ISoftKbd
+- Interface ISoftKbd Estrutura de Serviços de Texto , método UnadviseSoftKeyboardEventSink
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2a77129d1b5df024964af4ab19318963708d4b3d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 90552c09e47d8a51f413f0588b12c8da5d44e665a6a5a51a79dc31717c6d56c8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103644971"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118877106"
 ---
-# <a name="isoftkbdunadvisesoftkeyboardeventsink-method"></a>Método ISoftKbd:: UnadviseSoftKeyboardEventSink
+# <a name="isoftkbdunadvisesoftkeyboardeventsink-method"></a>Método ISoftKbd::UnadviseSoftKeyboardEventSink
 
-O método **ISoftKbd:: UnadviseSoftKeyboardEventSink** remove um coletor de eventos de teclado flexível.
+O **método ISoftKbd::UnadviseSoftKeyboardEventSink** remove um sink de evento de teclado flexível.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,14 +42,14 @@ HRESULT UnadviseSoftKeyboardEventSink(
 
 <dl> <dt>
 
-*tid* \[ no\]
+*tid* \[ Em\]
 </dt> <dd>
 
-Identificador do cliente que possui o coletor de eventos de teclado virtual. Esse valor foi passado quando o coletor de eventos foi instalado usando [ISoftKbd:: AdviseSoftKeyboardEventSink](isoftkbd-advisesoftkeyboardeventsink.md).
+Identificador do cliente que possui o sink de eventos do teclado suave. Esse valor foi passado quando o sink do evento foi instalado usando [ISoftKbd::AdviseSoftKeyboardEventSink](isoftkbd-advisesoftkeyboardeventsink.md).
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método pode retornar um desses valores.
 
@@ -58,8 +58,8 @@ Esse método pode retornar um desses valores.
 | Valor                                                                                                   | Descrição                                                   |
 |---------------------------------------------------------------------------------------------------------|---------------------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>                    | O método foi bem-sucedido.<br/>                         |
-| <dl> <dt>**E \_ INVALIDARG**</dt> </dl>            | O parâmetro *tid* é inválido.<br/>                    |
-| <dl> <dt>**CONECTAR \_ E \_ noconnection**</dt> </dl> | O coletor de aviso identificado pelo *tid* não foi encontrado.<br/> |
+| <dl> <dt>**E \_ INVALIDARG**</dt> </dl>            | O *parâmetro tid* é inválido.<br/>                    |
+| <dl> <dt>**CONNECT \_ E \_ NOCONNECTION**</dt> </dl> | O sink de consultoria identificado *por tid* não foi encontrado.<br/> |
 
 
 
@@ -73,9 +73,9 @@ Esse método pode retornar um desses valores.
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                             |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                   |
-| Redistribuível<br/>          | TSF 1,0 no Windows 2000 Professional<br/>                                        |
-| parâmetro<br/>                   | <dl> <dt>Softkbdc. h</dt> </dl>  |
-| INSERI<br/>                      | <dl> <dt>Softkbd. idl</dt> </dl> |
+| Redistribuível<br/>          | TSF 1.0 no Windows 2000 Professional<br/>                                        |
+| Cabeçalho<br/>                   | <dl> <dt>Softkbdc.h</dt> </dl>  |
+| Idl<br/>                      | <dl> <dt>Softkbd.idl</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Softkbd.dll</dt> </dl> |
 
 

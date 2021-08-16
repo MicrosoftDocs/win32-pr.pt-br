@@ -144,7 +144,7 @@ A lista a seguir representa o subconjunto com suporte da interface de programaç
 ### <a name="id3d12device5-methods"></a>Métodos ID3D12Device5
 
 * [ID3D12Device5::CreateMetaCommand](/windows/win32/api/d3d12/nf-d3d12-id3d12device5-createmetacommand)
-* [ID3D12Device5:: createstateobject](/windows/win32/api/d3d12/nf-d3d12-id3d12device5-createstateobject)
+* [ID3D12Device5::CreateStateObject](/windows/win32/api/d3d12/nf-d3d12-id3d12device5-createstateobject)
 * [ID3D12Device5::EnumerateMetaCommandParameters](/windows/win32/api/d3d12/nf-d3d12-id3d12device5-enumeratemetacommandparameters)
 * [ID3D12Device5::EnumerateMetaCommands](/windows/win32/api/d3d12/nf-d3d12-id3d12device5-enumeratemetacommands)
 * [ID3D12Device5::RemoveDevice](/windows/win32/api/d3d12/nf-d3d12-id3d12device5-removedevice)
@@ -152,36 +152,36 @@ A lista a seguir representa o subconjunto com suporte da interface de programaç
 ### <a name="id3d12commandqueue-methods"></a>Métodos ID3D12CommandQueue
 
 * [ID3D12CommandQueue::BeginEvent](/windows/win32/api/d3d12/nf-d3d12-id3d12commandqueue-beginevent)
-* [ID3D12CommandQueue:: endEvent](/windows/win32/api/d3d12/nf-d3d12-id3d12commandqueue-endevent)
+* [ID3D12CommandQueue::EndEvent](/windows/win32/api/d3d12/nf-d3d12-id3d12commandqueue-endevent)
 * [ID3D12CommandQueue::ExecuteCommandLists](/windows/win32/api/d3d12/nf-d3d12-id3d12commandqueue-executecommandlists)
 * [ID3D12CommandQueue::GetClockCalibration](/windows/win32/api/d3d12/nf-d3d12-id3d12commandqueue-getclockcalibration)
-* [ID3D12CommandQueue:: GetDesc](/windows/win32/api/d3d12/nf-d3d12-id3d12commandqueue-getdesc)
+* [ID3D12CommandQueue::GetDesc](/windows/win32/api/d3d12/nf-d3d12-id3d12commandqueue-getdesc)
 * [ID3D12CommandQueue::GetTimestampFrequency](/windows/win32/api/d3d12/nf-d3d12-id3d12commandqueue-gettimestampfrequency)
-* [ID3D12CommandQueue:: setmarcer](/windows/win32/api/d3d12/nf-d3d12-id3d12commandqueue-setmarker)
-* [ID3D12CommandQueue:: Signal](/windows/win32/api/d3d12/nf-d3d12-id3d12commandqueue-signal)
-* [ID3D12CommandQueue:: aguardar](/windows/win32/api/d3d12/nf-d3d12-id3d12commandqueue-wait)
+* [ID3D12CommandQueue::SetMarker](/windows/win32/api/d3d12/nf-d3d12-id3d12commandqueue-setmarker)
+* [ID3D12CommandQueue::Signal](/windows/win32/api/d3d12/nf-d3d12-id3d12commandqueue-signal)
+* [ID3D12CommandQueue::Wait](/windows/win32/api/d3d12/nf-d3d12-id3d12commandqueue-wait)
 
 ### <a name="id3d12commandlist-methods"></a>Métodos ID3D12CommandList
 
-* [ID3D12CommandList:: GetType](/windows/win32/api/d3d12/nf-d3d12-id3d12commandlist-gettype)
+* [ID3D12CommandList::GetType](/windows/win32/api/d3d12/nf-d3d12-id3d12commandlist-gettype)
 
 ### <a name="id3d12graphicscommandlist-methods"></a>Métodos ID3D12GraphicsCommandList
 
 * [ID3D12GraphicsCommandList::BeginEvent](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-beginevent)
 * [ID3D12GraphicsCommandList::BeginQuery](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-beginquery)
-* [ID3D12GraphicsCommandList:: Clearstate](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-clearstate)
+* [ID3D12GraphicsCommandList::ClearState](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-clearstate)
 * [ID3D12GraphicsCommandList::ClearUnorderedAccessViewFloat](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-clearunorderedaccessviewfloat)
 * [ID3D12GraphicsCommandList::ClearUnorderedAccessViewUint](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-clearunorderedaccessviewuint)
-* [ID3D12GraphicsCommandList:: fechar](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-close)
+* [ID3D12GraphicsCommandList::Close](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-close)
 * [ID3D12GraphicsCommandList::CopyBufferRegion](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-copybufferregion)
 * [ID3D12GraphicsCommandList::CopyResource](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-copyresource)
 * [ID3D12GraphicsCommandList::CopyTextureRegion](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-copytextureregion)
 * [ID3D12GraphicsCommandList::D ispatch](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-dispatch)
-* [ID3D12GraphicsCommandList:: endEvent](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-endevent)
-* [ID3D12GraphicsCommandList:: endquery](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-endquery)
-* [ID3D12GraphicsCommandList:: Reset](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-reset)
+* [ID3D12GraphicsCommandList::EndEvent](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-endevent)
+* [ID3D12GraphicsCommandList::EndQuery](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-endquery)
+* [ID3D12GraphicsCommandList::Reset](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-reset)
 * [ID3D12GraphicsCommandList::ResolveQueryData](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-resolvequerydata)
-* [ID3D12GraphicsCommandList::ResourceBarrier](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-resourcebarrier)
+* [ID3D12GraphicsCommandList::ResourceBaográfico](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-resourcebarrier)
 * [ID3D12GraphicsCommandList::SetComputeRoot32BitConstant](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-setcomputeroot32bitconstant)
 * [ID3D12GraphicsCommandList::SetComputeRoot32BitConstants](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-setcomputeroot32bitconstants)
 * [ID3D12GraphicsCommandList::SetComputeRootConstantBufferView](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-setcomputerootconstantbufferview)
@@ -190,8 +190,8 @@ A lista a seguir representa o subconjunto com suporte da interface de programaç
 * [ID3D12GraphicsCommandList::SetComputeRootSignature](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-setcomputerootsignature)
 * [ID3D12GraphicsCommandList::SetComputeRootUnorderedAccessView](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-setcomputerootunorderedaccessview)
 * [ID3D12GraphicsCommandList::SetDescriptorHeaps](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-setdescriptorheaps)
-* [ID3D12GraphicsCommandList:: setmarcer](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-setmarker)
-* [ID3D12GraphicsCommandList:: setpipelinestate](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-setpipelinestate)
+* [ID3D12GraphicsCommandList::SetMarker](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-setmarker)
+* [ID3D12GraphicsCommandList::SetPipelineState](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-setpipelinestate)
 * [ID3D12GraphicsCommandList::SetPredication](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-setpredication)
 
 ### <a name="id3d12graphicscommandlist1-methods"></a>Métodos ID3D12GraphicsCommandList1

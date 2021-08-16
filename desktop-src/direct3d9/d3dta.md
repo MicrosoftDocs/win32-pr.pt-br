@@ -1,5 +1,5 @@
 ---
-description: 'Constantes de argumento de textura são usadas como valores para os seguintes membros do tipo enumerado D3DTEXTURESTAGESTATETYPE:'
+description: 'As constantes de argumento de textura são usadas como valores para os seguintes membros do tipo enumerado D3DTEXTURESTAGESTATETYPE:'
 ms.assetid: 36b2b715-5ced-4246-840e-8ea343521ef4
 title: D3DTA
 ms.topic: article
@@ -13,49 +13,49 @@ ms.locfileid: "118527310"
 ---
 # <a name="d3dta"></a>D3DTA
 
-Constantes de argumento de textura são usadas como valores para os seguintes membros do tipo enumerado [**D3DTEXTURESTAGESTATETYPE:**](./d3dtexturestagestatetype.md)
+As constantes de argumento de textura são usadas como valores para os seguintes membros do tipo enumerado [**D3DTEXTURESTAGESTATETYPE**](./d3dtexturestagestatetype.md) :
 
--   ALFAARG0 D3DTSS \_
+-   D3DTSS \_ ALPHAARG0
 -   D3DTSS \_ ALPHAARG1
--   ALFAARG2 D3DTSS \_
+-   D3DTSS \_ ALPHAARG2
 -   D3DTSS \_ COLORARG0
 -   D3DTSS \_ COLORARG1
 -   D3DTSS \_ COLORARG2
 -   D3DTSS \_ RESULTARG
 
-De definir e recuperar argumentos de textura chamando os [**métodos SetTextureStageState**](/windows/desktop/api) e [**GetTextureStageState.**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-gettexturestagestate)
+Defina e recupere argumentos de textura chamando os métodos [**SetTextureStageState**](/windows/desktop/api) e [**GetTextureStageState**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-gettexturestagestate) .
 
 Sinalizadores de argumento
 
-Você pode combinar um sinalizador de argumento com um modificador, mas dois sinalizadores de argumento não podem ser combinados.
+Você pode combinar um sinalizador de argumento com um modificador, mas não é possível combinar dois sinalizadores de argumento.
 
 
 
-| \#Definir          | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| \#definir          | Descrição                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 |-------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| CONSTANTE D3DTA \_   | Selecione uma constante em um estágio de textura. O valor padrão é 0xffffffff.                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| D3DTA \_ ATUAL    | O argumento de textura é o resultado do estágio de mesclagem anterior. No primeiro estágio de textura (estágio 0), esse argumento é equivalente a D3DTA \_ DIFUSO. Se o estágio de mesclagem anterior usar uma textura de mapa de elevação (a operação D3DTOP BUMPENVMAP), o sistema escolherá a textura do estágio antes da textura do mapa de \_ elevação. Se s representar o estágio de textura atual e s - 1 contiver uma textura de mapa de aumento, esse argumento se tornará a saída de resultado pelo estágio de textura s - 2. As permissões são leitura/gravação. |
-| D3DTA \_ DIFUSO    | O argumento de textura é a cor difusa interpolada de componentes de vértice durante o sombreamento do Gouraud. Se o vértice não contém uma cor difusa, a cor padrão é 0xffffffff. As permissões são somente leitura.                                                                                                                                                                                                                                                                                          |
-| D3DTA \_ SELECTMASK | Valor de máscara para todos os argumentos; não usado ao definir argumentos de textura.                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| D3DTA \_ SPECULAR   | O argumento de textura é a cor especular interpolada de componentes de vértice durante o sombreamento do Gouraud. Se o vértice não contém uma cor especular, a cor padrão é 0xffffffff. As permissões são somente leitura.                                                                                                                                                                                                                                                                                        |
-| D3DTA \_ TEMP       | O argumento de textura é uma cor de registro temporária para leitura ou gravação. Há suporte para D3DTA TEMP se a funcionalidade do dispositivo \_ [ \_ TSSARGTEMP D3DPMISCCAPS](d3dpmisccaps.md) estiver presente. O valor padrão para o registro é (0,0, 0,0, 0,0, 0,0). As permissões são leitura/gravação.                                                                                                                                                                                                                                   |
-| TEXTURA D3DTA \_    | O argumento de textura é a cor da textura para esse estágio de textura. As permissões são somente leitura.                                                                                                                                                                                                                                                                                                                                                                                                               |
-| D3DTA \_ TFACTOR    | O argumento de textura é o fator de textura definido em uma chamada anterior para [**SetRenderState**](/windows/desktop/api) com o valor de estado de renderização [**\_ TEXTUREFACTOR D3DRS.**](./d3drenderstatetype.md) As permissões são somente leitura.                                                                                                                                                                                                                                                       |
+| \_Constante D3DTA   | Selecione uma constante em um estágio de textura. O valor padrão é 0xFFFFFFFF.                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| D3DTA \_ atual    | O argumento de textura é o resultado do estágio de mesclagem anterior. No primeiro estágio de textura (estágio 0), esse argumento é equivalente a D3DTA \_ difuso. Se o estágio de mesclagem anterior usar uma textura de mapa de relevo (a \_ operação D3DTOP BUMPENVMAP), o sistema escolherá a textura do palco antes da textura do mapa de choques. Se s representa o estágio de textura atual e o s-1 contiver uma textura de mapa de relevo, esse argumento se tornará a saída de resultado pelo estágio de textura s-2. As permissões são de leitura/gravação. |
+| D3DTA \_ difuso    | O argumento de textura é a cor difusa interpolada dos componentes de vértice durante o sombreamento de Gouraud. Se o vértice não contiver uma cor difusa, a cor padrão será 0xFFFFFFFF. As permissões são somente leitura.                                                                                                                                                                                                                                                                                          |
+| D3DTA \_ SELECTMASK | Valor de Mask para todos os argumentos; Não usado ao definir argumentos de textura.                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| \_Especular D3DTA   | O argumento de textura é a cor especular interpolada dos componentes de vértice durante o sombreamento de Gouraud. Se o vértice não contiver uma cor especular, a cor padrão será 0xFFFFFFFF. As permissões são somente leitura.                                                                                                                                                                                                                                                                                        |
+| D3DTA \_ Temp       | O argumento de textura é uma cor de registro temporária para leitura ou gravação. \_O D3DTA Temp terá suporte se a funcionalidade do dispositivo [D3DPMISCCAPS \_ TSSARGTEMP](d3dpmisccaps.md) estiver presente. O valor padrão para o registro é (0,0, 0,0, 0,0, 0,0). As permissões são de leitura/gravação.                                                                                                                                                                                                                                   |
+| \_Textura D3DTA    | O argumento de textura é a cor de textura para este estágio de textura. As permissões são somente leitura.                                                                                                                                                                                                                                                                                                                                                                                                               |
+| D3DTA \_ TFACTOR    | O argumento de textura é o fator de textura definido em uma chamada anterior para [**Setrenderingstate**](/windows/desktop/api) com o valor de [**D3DRS \_ TEXTUREFACTOR**](./d3drenderstatetype.md) render-State. As permissões são somente leitura.                                                                                                                                                                                                                                                       |
 
 
 
  
 
-Sinalizadores modificador
+Sinalizadores de modificador
 
-Um sinalizador de argumento pode ser combinado com um dos seguintes sinalizadores modificador.
+Um sinalizador de argumento pode ser combinado com um dos seguintes sinalizadores de modificador.
 
 
 
-| \#Definir              | Description                                                                                                    |
+| \#definir              | Descrição                                                                                                    |
 |-----------------------|----------------------------------------------------------------------------------------------------------------|
-| D3DTA \_ ALPHAREPLICATE | Replique as informações alfa para todos os canais de cores antes que a operação seja concluída. Este é um modificador de leitura. |
-| COMPLEMENTO D3DTA \_     | Tome o complemento do argumento x, (1.0 - x). Este é um modificador de leitura.                                     |
+| D3DTA \_ ALPHAREPLICATE | Replique as informações alfa para todos os canais de cores antes da conclusão da operação. Este é um modificador de leitura. |
+| \_Complemento do D3DTA     | Adote o complemento do argumento x, (1,0-x). Este é um modificador de leitura.                                     |
 
 
 
@@ -67,7 +67,7 @@ Um sinalizador de argumento pode ser combinado com um dos seguintes sinalizadore
 
 |   Requisito                       |  Valor           |
 |--------------------------|-------------|
-| parâmetro                   | d3d9types.h |
+| parâmetro                   | d3d9types. h |
 | Sistema operacional mínimo | Windows 98  |
 
 
@@ -78,7 +78,7 @@ Um sinalizador de argumento pode ser combinado com um dos seguintes sinalizadore
 
 <dl> <dt>
 
-[Constantes Direct3D](dx9-graphics-reference-d3d-constants.md)
+[Constantes do Direct3D](dx9-graphics-reference-d3d-constants.md)
 </dt> </dl>
 
  

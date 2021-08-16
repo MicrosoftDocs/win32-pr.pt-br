@@ -17,12 +17,12 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 5dbf2d0d423ae7d16afee0bda86a802c34103883
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 8a1becdb404ed8d5d009626c1da863951ffb68882bf1b68796914ca88358c3ad
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104088790"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120094796"
 ---
 # <a name="span-idvspixengineinewframescallback_cancelallspaninewframescallbackcancelall-method"></a><span id="vspixengine.inewframescallback_cancelall"></span>Método INewFramesCallback:: CancelAll
 
@@ -34,7 +34,7 @@ Um retorno de chamada que notifica o host de que todas as solicitações foram c
 ```C++
 ```
 
-## <a name="span-idsee_alsospansee-also"></a><span id="see_also"></span>Consulte também
+## <a name="span-idsee_alsospansee-also"></a><span id="see_also"></span>Confira também
 
 [**INewFramesCallback**](/windows/desktop/direct3dtools/inewframescallback)
 

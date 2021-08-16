@@ -1,11 +1,11 @@
 ---
-title: Propriedade de dica IResultProperty (WdsSharedIDL. h)
-description: Valor especial usado para auxiliar a recuperação de dados.
+title: Propriedade IResultProperty Hint (WdsSharedIDL.h)
+description: Valor especial usado para auxiliar na recuperação de dados.
 ms.assetid: fa888c5e-898e-4f48-b87e-2d0d078fd1fe
 keywords:
-- Propriedades de dica recursos de ambiente do Windows herdados
-- Propriedade Hint recursos de ambiente herdados do Windows, interface IResultProperty
-- Recursos do ambiente Windows herdado da interface IResultProperty, Propriedade Hint
+- Propriedade Hint Herdada Windows Recursos de Ambiente
+- Propriedade Hint Recursos Windows ambiente herdado, interface IResultProperty
+- Interface IResultProperty Recursos Windows ambiente herdado, propriedade Hint
 topic_type:
 - apiref
 api_name:
@@ -17,19 +17,19 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3edfed528ab6a6833cced99c113c33e7e2f859d0
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 48cd5a27a889029d7952452916c43d15ea419772d2cb46f1e86eb2fbf185d2dc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105807147"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118754779"
 ---
-# <a name="iresultpropertyhint-property"></a>Propriedade IResultProperty:: Hint
+# <a name="iresultpropertyhint-property"></a>Propriedade IResultProperty::Hint
 
 > [!NOTE]
-> O Windows Desktop Search 2. x é uma tecnologia obsoleta que originalmente estava disponível como um suplemento para o Windows XP e o Windows Server 2003. Em versões posteriores, use a [API de pesquisa do Windows](../search/-search-reference-entry-page.md) em vez disso. 
+> Windows A Pesquisa de Área de Trabalho 2.x é uma tecnologia obsoleta que estava originalmente disponível como um complemento para Windows XP e Windows Server 2003. Em versões posteriores, use a [API Windows Search.](../search/-search-reference-entry-page.md) 
 
-Valor especial usado para auxiliar a recuperação de dados.
+Valor especial usado para auxiliar na recuperação de dados.
 
 Esta propriedade é somente para leitura.
 
@@ -46,7 +46,7 @@ HRESULT get_Hint(
 
 ## <a name="property-value"></a>Valor da propriedade
 
-Retorna um ponteiro para a dica.
+retorna um ponteiro para a dica.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,10 +54,10 @@ Retorna um ponteiro para a dica.
 
 | Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows XP com SP2\]<br/>                                      |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003 com SP1\]<br/>                             |
-| Redistribuível<br/>          | Windows Desktop Search (WDS) 2.6.5<br/>                                             |
-| parâmetro<br/>                   | <dl> <dt>WdsSharedIDL. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows XP somente com \[ aplicativos da área de trabalho SP2\]<br/>                                      |
+| Servidor mínimo com suporte<br/> | Windows Servidor 2003 somente com aplicativos da área de trabalho SP1 \[\]<br/>                             |
+| Redistribuível<br/>          | Windows Pesquisa de Área de Trabalho (WDS) 2.6.5<br/>                                             |
+| Cabeçalho<br/>                   | <dl> <dt>WdsSharedIDL.h</dt> </dl> |
 
 
 

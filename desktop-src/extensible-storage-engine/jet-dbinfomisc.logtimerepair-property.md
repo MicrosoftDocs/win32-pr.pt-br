@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre a propriedade: JET_DBINFOMISC. logtimeRepair'
-title: Propriedade JET_DBINFOMISC. logtimeRepair
+description: 'Saiba mais sobre: JET_DBINFOMISC.logtimeRepair'
+title: JET_DBINFOMISC propriedade .logtimeRepair
 TOCTitle: 'logtimeRepair property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.JET_DBINFOMISC.logtimeRepair
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_dbinfomisc.logtimerepair(v=EXCHG.10)
@@ -33,14 +33,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118766190"
 ---
-# <a name="jet_dbinfomisclogtimerepair-property"></a>Propriedade JET_DBINFOMISC. logtimeRepair
+# <a name="jet_dbinfomisclogtimerepair-property"></a>JET_DBINFOMISC propriedade .logtimeRepair
 
 Obtém a última vez em que o reparo foi executado nesse banco de dados.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -60,14 +60,14 @@ public JET_LOGTIME logtimeRepair { get; internal set; }
 
 #### <a name="property-value"></a>Valor da propriedade
 
-Tipo: [Microsoft.ISAM.ESENT.Interop.JET_LOGTIME](./jet-logtime-structure2.md)  
+Tipo: [Microsoft.Isam.Esent.Interop.JET_LOGTIME](./jet-logtime-structure2.md)  
 
 ## <a name="see-also"></a>Confira também
 
 #### <a name="reference"></a>Referência
 
-[Classe JET_DBINFOMISC](./jet-dbinfomisc-class.md)
+[JET_DBINFOMISC classe](./jet-dbinfomisc-class.md)
 
-[Membros do JET_DBINFOMISC](./jet-dbinfomisc-members.md)
+[JET_DBINFOMISC membros](./jet-dbinfomisc-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -4,16 +4,16 @@ description: Animações do Microsoft Agent para o caractere Robby
 ms.assetid: 05baf1ab-3217-4da4-9562-6719c58cd744
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 347c95fd6a29af72041d3b9e1192167d34602260
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 8ef6cf0fc3d44f9783fe3d22f9f0d2b291e6acc51bd5bb72890af793ffe55156
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "103640754"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119609096"
 ---
 # <a name="microsoft-agent-animations-for-robby-character"></a>Animações do Microsoft Agent para o caractere Robby
 
-\[O Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
+\[o Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
 
 O [Microsoft Agent Robby Character](https://www.microsoft.com/downloads/details.aspx?FamilyID=fa36d1d5-d828-494a-ad0a-7b571db5bd2e) é um trabalho com direitos autorais da Microsoft Corporation.
 
@@ -82,7 +82,7 @@ O arquivo de caractere inclui efeitos sonoros para algumas animações, conforme
 | **Lendo**               | Sim, usando branches de saída | Não                | **Sim**       | Nenhum                                         | Impressões, leituras e pesquisa (animação em \* loop)          |
 | **RestPose**              | Nenhum                     | Sim               | **Não**        | **Língua**                                 | Posição neutra                                           |
 | **Triste**                   | Sim, usando branches de saída | Sim               | **Não**        | Nenhum                                         | Expressão triste                                             |
-| **Pesquisa**                | Não                       | Não                | **Sim**       | Nenhum                                         | Revela caixa de ferramentas e remove a ferramenta                           |
+| **Pesquisar**                | Não                       | Não                | **Sim**       | Nenhum                                         | Revela caixa de ferramentas e remove a ferramenta                           |
 | **Procurar**             | Sim, usando branches de saída | Não                | **Sim**       | Nenhum                                         | Revela a caixa de ferramentas e remove ferramentas ( \* animação em loop)    |
 | **Mostrar**                  | Nenhum                     | Não                | **Sim**       | **Mostrando**                                  | Aparece por meio de porta                                    |
 | **StartListening**        | Sim, usando branches de saída | Sim               | **Não**        | Nenhum                                         | Coloca mão em Ear                                           |
@@ -90,7 +90,7 @@ O arquivo de caractere inclui efeitos sonoros para algumas animações, conforme
 | **Sugerir**               | Sim, usando branches de saída | Sim               | **Sim**       | Nenhum                                         | Exibe lâmpada                                         |
 | **Ficamos**             | Sim, usando branches de saída | Sim               | **Não**        | Nenhum                                         | Parece surpreso                                            |
 | **Pensar**                 | Sim, usando branches de saída | Sim               | **Sim**       | Nenhum                                         | Cabeça de rascunhos                                             |
-| **Pensando**              | Não                       | Não                | **Sim**       | Nenhum                                         | Cabeça de arranhões ( \* animação de looping)                       |
+| **Processando dados**              | Não                       | Não                | **Sim**       | Nenhum                                         | Cabeça de arranhões ( \* animação de looping)                       |
 | **Certeza**             | Sim, usando branches de saída | Sim               | **Não**        | Nenhum                                         | Shrugs                                                     |
 | **Onda**                  | Sim, usando branches de saída | Sim               | **Não**        | Nenhum                                         | Ondas                                                      |
 | **Gravar**                 | **WriteReturn**          | Sim               | **Sim**       | Nenhum                                         | Revela lápis e área de transferência, gravações e pesquisa          |

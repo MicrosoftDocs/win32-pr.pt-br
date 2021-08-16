@@ -15,7 +15,7 @@ ms.locfileid: "118635147"
 
 ICE50 verifica se os ícones de atalho estão especificados para exibição correta e correspondem à extensão do arquivo de destino.
 
-## <a name="result"></a>Result
+## <a name="result"></a>Resultado
 
 ICE50 posta uma mensagem de erro se a extensão do ícone e dos arquivos de destino não coincidem. ICE50 posta um aviso se os ícones são armazenados em arquivos que não têm uma extensão .exe ou. ico.
 
@@ -76,7 +76,7 @@ ICE50 relata o seguinte erro para o exemplo mostrado.
 
 
 
-| Name      | Dados            |
+| Nome      | Dados            |
 |-----------|-----------------|
 | Icon1.bat | \[Binary Data\] |
 | Icon2. dat | \[Binary Data\] |

@@ -1,6 +1,6 @@
 ---
 title: Estruturas 11on12
-description: As seguintes estruturas são declaradas em d3d11on12. h.
+description: As estruturas a seguir são declaradas em d3d11on12.h.
 ms.assetid: 9EB0E780-0000-413C-BA3E-A735B8422BF6
 ms.localizationpriority: low
 ms.topic: article
@@ -14,7 +14,7 @@ ms.locfileid: "118529920"
 ---
 # <a name="11on12-structures"></a>Estruturas 11on12
 
-As seguintes estruturas são declaradas em d3d11on12. h.
+As estruturas a seguir são declaradas em d3d11on12.h.
 
 ## <a name="in-this-section"></a>Nesta seção
 
@@ -22,7 +22,7 @@ As seguintes estruturas são declaradas em d3d11on12. h.
 
 | Tópico                                                             | Descrição                                                                                                                                                                                                                                                     |
 |-------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**\_Sinalizadores de recurso D3D11 \_**](/windows/desktop/api/d3d11on12/ns-d3d11on12-d3d11_resource_flags)<br/> | Usado com [**ID3D11On12Device:: CreateWrappedResource**](/windows/desktop/api/d3d11on12/nf-d3d11on12-id3d11on12device-createwrappedresource) para substituir sinalizadores que seriam inferidos pelas propriedades de recurso ou propriedades de heap, incluindo sinalizadores de associação, sinalizadores diversos e sinalizadores de acesso da CPU. <br/> |
+| [**SINALIZADORES DE RECURSOS D3D11 \_ \_**](/windows/desktop/api/d3d11on12/ns-d3d11on12-d3d11_resource_flags)<br/> | Usado com [**ID3D11On12Device::CreateWrappedResource**](/windows/desktop/api/d3d11on12/nf-d3d11on12-id3d11on12device-createwrappedresource) para substituir sinalizadores que seriam inferidos pelas propriedades de recurso ou propriedades de heap, incluindo sinalizadores de vinculação, sinalizadores misc e sinalizadores de acesso à CPU. <br/> |
 
 
 
@@ -32,7 +32,7 @@ As seguintes estruturas são declaradas em d3d11on12. h.
 
 <dl> <dt>
 
-[Referência de 11on12 (d3d11on12. h)](direct3d-11on12-reference.md)
+[Referência 11on12 (d3d11on12.h)](direct3d-11on12-reference.md)
 </dt> </dl>
 
  

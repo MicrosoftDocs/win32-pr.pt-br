@@ -1,6 +1,6 @@
 ---
-title: atributo module
-description: A instrução module define um grupo de funções, normalmente um conjunto de pontos de entrada de DLL.
+title: atributo de módulo
+description: A instrução Module define um grupo de funções, normalmente um conjunto de pontos de entrada de DLL.
 ms.assetid: 4dec207f-98bc-4784-a3c9-506ffe7523fe
 keywords:
 - atributo de módulo MIDL
@@ -19,9 +19,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118642804"
 ---
-# <a name="module-attribute"></a>atributo module
+# <a name="module-attribute"></a>atributo de módulo
 
-A **instrução** module define um grupo de funções, normalmente um conjunto de pontos de entrada de DLL.
+A instrução **Module** define um grupo de funções, normalmente um conjunto de pontos de entrada de dll.
 
 ``` syntax
 [
@@ -40,47 +40,47 @@ module modulename
 *attributes* 
 </dt> <dd>
 
-Os \[ [**atributos uuid**](uuid.md) \] , \[ [**version**](version.md) \] , \[ [**helpstring**](helpstring.md), \] \[ [**helpcontext,**](helpcontext.md)hidden e dllname são aceitos antes \] de uma \[ [](hidden.md) \] \[ [](dllname-str-.md) \] **instrução de** módulo. Consulte [Descrições de atributo](/previous-versions/windows/desktop/automat/attribute-descriptions), no livro automação OLE, para obter mais informações sobre os atributos aceitos antes de uma definição de módulo. O \[ **atributo dllname** \] é necessário. Se o \[ **atributo uuid** \] for omitido, o módulo não será especificado exclusivamente no sistema.
+Os \[ atributos [**UUID**](uuid.md) \] , \[ [**version**](version.md) \] , \[ [**helptype**](helpstring.md) \] , \[ [**HelpContext**](helpcontext.md) \] , \[ [**Hidden**](hidden.md) \] e \[ [**DllName**](dllname-str-.md) \] são aceitos antes de uma instrução de **módulo** . Consulte [descrições de atributo](/previous-versions/windows/desktop/automat/attribute-descriptions), no livro de automação OLE, para obter mais informações sobre os atributos aceitos antes de uma definição de módulo. O \[ atributo **DllName** \] é necessário. Se o \[ atributo **UUID** \] for omitido, o módulo não será especificado exclusivamente no sistema.
 
 </dd> <dt>
 
-*Modulename* 
+*ModuleName* 
 </dt> <dd>
 
 O nome do módulo.
 
 </dd> <dt>
 
-*elementlist* 
+*elementolist* 
 </dt> <dd>
 
-Lista de definições constantes e protótipos de função para cada função na DLL. Qualquer número de definições de função pode aparecer na lista de funções. Uma função na lista de funções tem o seguinte formato:
+Lista de definições de constantes e protótipos de função para cada função na DLL. Qualquer número de definições de função pode aparecer na lista de funções. Uma função na lista de funções tem o seguinte formato:
 
-\[*atributos* \] *returntype* \[ *convenção de chamada funcname* \] (*params*);
+\[*atributos* \] do *ReturnType* \[ *chamando convenção funcname* \] (*params*);
 
-\[*atributos* \] [**const**](const.md) constanttype *constname*  =  *constval*;
+\[*atributos* \] do [**const**](const.md) constante *constname*  =  *constval*;
 
-Somente os \[ [**atributos helpstring**](helpstring.md) \] e \[ [**helpcontext**](helpcontext.md) são \] aceitos para um [**const.**](const.md)
+Somente os \[ atributos [**HelpString**](helpstring.md) \] e \[ [**HelpContext**](helpcontext.md) \] são aceitos para uma [**const**](const.md).
 
-Os atributos a seguir são aceitos em uma função em um \[ módulo: [**helpstring**](helpstring.md) \] , \[ [**helpcontext**](helpcontext.md), \] \[ [**string**](string.md) \] , \[ [**entry**](entry.md) \] , \[ [**propget**](propget.md), \] \[ [**propput**](propput.md), \] \[ [**propputref**](propputref.md)e \] \[ [**vararg**](vararg.md) \] . Se \[ **o vararg** \] for especificado, o último parâmetro deverá ser uma matriz segura do **tipo VARIANT.**
+Os seguintes atributos são aceitos em uma função em um módulo: \[ [**HelpString**](helpstring.md) \] , \[ [**HelpContext**](helpcontext.md) \] , \[ [**String**](string.md) \] , \[ [**entry**](entry.md) \] , \[ [**propget**](propget.md) \] , \[ [**propput**](propput.md) \] , \[ [**propputref**](propputref.md) \] e \[ [**vararg**](vararg.md) \] . Se \[ **vararg** \] for especificado, o último parâmetro deverá ser uma matriz segura de tipo **Variant** .
 
-A convenção de chamada opcional pode ser um de \_ \_ \_ pascal/pascal/pascal, \_ \_ \_ cdecl/ cdecl/cdecl ou \_ \_ stdcall/stdcall/stdcall. \_ O *nome do tipo de convenção de* chamada pode incluir até dois sublinhados à frente.
+A Convenção de chamada opcional pode ser um dos \_ \_ Pascal/ \_ Pascal/Pascal, \_ \_ cdecl/ \_ cdecl/cdecl ou \_ \_ stdcall/ \_ stdcall/stdcall. O *tipo de Convenção de chamada paramName* pode incluir até dois sublinhados à esquerda.
 
 A lista de parâmetros é uma lista delimitada por vírgulas de:
 
-\[*Atributos*\]
+\[*atributos*\]
 
-O tipo pode ser qualquer tipo declarado anteriormente ou um tipo integrado, um ponteiro para qualquer tipo ou um ponteiro para um tipo integrado. Os atributos nos parâmetros são:
+O tipo pode ser qualquer tipo ou tipo interno declarado anteriormente, um ponteiro para qualquer tipo ou um ponteiro para um tipo interno. Os atributos em parâmetros são:
 
-\[[**em**](in.md) \] , \[ [**out**](out-idl.md) \] , \[ [**opcional.**](optional.md) \]
+\[[**in**](in.md) \] , \[ [**out**](out-idl.md) \] , \[ [**opcional**](optional.md) \] .
 
-Se \[ [**opcional**](optional.md) \] for usado, os tipos desses parâmetros deverão ser **VARIANT** ou **VARIANT.** \*
+Se \[ [**opcional**](optional.md) \] for usado, os tipos desses parâmetros deverão ser **Variant** ou **Variant** \* .
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-A saída do arquivo de header (.h) para módulos é uma série de protótipos de função. A **palavra-chave** module e os colchetes ao redor são removidos da saída do arquivo de título (.h), mas um comentário (// *modulename)* é inserido antes dos protótipos.  A **palavra-chave extern** é inserida antes das declarações.
+A saída do arquivo de cabeçalho (. h) para módulos é uma série de protótipos de função. A palavra-chave do **módulo** e os colchetes ao redor são removidos da saída do arquivo de cabeçalho (. h), mas um comentário ( **//módulo** *ModuleName*) é inserido antes dos protótipos. A palavra-chave **extern** é inserida antes das declarações.
 
 ## <a name="examples"></a>Exemplos
 
@@ -111,10 +111,10 @@ module somemodule
 [Conteúdo de uma biblioteca de tipos](/previous-versions/windows/desktop/automat/contents-of-a-type-library)
 </dt> <dt>
 
-[**Dllname**](dllname-str-.md)
+[**nomedadll**](dllname-str-.md)
 </dt> <dt>
 
-[**Entrada**](entry.md)
+[**inicial**](entry.md)
 </dt> <dt>
 
 [Gerando uma biblioteca de tipos com MIDL](generating-a-type-library-with-midl-2.md)
@@ -126,10 +126,10 @@ module somemodule
 [**helpstring**](helpstring.md)
 </dt> <dt>
 
-[**Escondidos**](hidden.md)
+[**oculto**](hidden.md)
 </dt> <dt>
 
-[Sintaxe de arquivo ODL](/previous-versions/windows/desktop/automat/odl-file-syntax)
+[Sintaxe do arquivo ODL](/previous-versions/windows/desktop/automat/odl-file-syntax)
 </dt> <dt>
 
 [**propget**](propget.md)
@@ -141,13 +141,13 @@ module somemodule
 [**propputref**](propputref.md)
 </dt> <dt>
 
-[**string**](string.md)
+[**Strings**](string.md)
 </dt> <dt>
 
-[**Typeflags**](/windows/win32/api/oaidl/ne-oaidl-typeflags)
+[**TYPEFLAGS**](/windows/win32/api/oaidl/ne-oaidl-typeflags)
 </dt> <dt>
 
-[**Uuid**](uuid.md)
+[**personalizado**](uuid.md)
 </dt> <dt>
 
 [**vararg**](vararg.md)

@@ -36,10 +36,10 @@ ms.locfileid: "118765385"
 
 Obtém um valor que indica se o JET_LOGTIME tem um valor nulo.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -58,18 +58,18 @@ public bool HasValue { get; }
 
 #### <a name="property-value"></a>Valor da propriedade
 
-Tipo: [System. Boolean](/dotnet/api/system.boolean)  
+Tipo: [System.Boolean](/dotnet/api/system.boolean)  
 
 #### <a name="implements"></a>Implementações
 
-[INullableJetStruct. HasValue](./inullablejetstruct.hasvalue-property.md)  
+[INullableJetStruct.HasValue](./inullablejetstruct.hasvalue-property.md)  
 
 ## <a name="see-also"></a>Confira também
 
 #### <a name="reference"></a>Referência
 
-[Estrutura de JET_LOGTIME](./jet-logtime-structure2.md)
+[JET_LOGTIME estrutura](./jet-logtime-structure2.md)
 
-[Membros do JET_LOGTIME](./jet-logtime-members.md)
+[JET_LOGTIME membros](./jet-logtime-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

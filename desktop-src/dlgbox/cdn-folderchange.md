@@ -1,9 +1,9 @@
 ---
-title: CDN_FOLDERCHANGE código de notificação (Commdlg. h)
-description: Enviado por uma caixa de diálogo abrir no estilo do Explorer ou salvar como quando uma nova pasta é aberta.
+title: CDN_FOLDERCHANGE de notificação (Commdlg.h)
+description: Enviado por uma caixa de diálogo Abrir ou Salvar como no estilo Explorer quando uma nova pasta é aberta.
 ms.assetid: 864ab80d-cd99-4dd6-8aff-49beed246e53
 keywords:
-- Caixas de diálogo CDN_FOLDERCHANGE código de notificação
+- CDN_FOLDERCHANGE de diálogo do código de notificação
 topic_type:
 - apiref
 api_name:
@@ -21,13 +21,13 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118786136"
 ---
-# <a name="cdn_folderchange-notification-code"></a>CDN \_ Código de notificação do FOLDERCHANGE
+# <a name="cdn_folderchange-notification-code"></a>\_CDN Código de notificação FOLDERCHANGE
 
-\[a partir do Windows Vista, as caixas de diálogo **abrir** e **salvar como** comuns foram substituídas pela [caixa de diálogo de Item comum](../shell/common-file-dialog.md). Recomendamos que você use a API de caixa de diálogo de item comum em vez dessas caixas de diálogo da biblioteca de caixas de diálogo comuns.\]
+\[Começando com Windows Vista,  as  caixas de diálogo Abrir e Salvar como comuns foram superadas pela caixa [de diálogo Item Comum](../shell/common-file-dialog.md). Recomendamos que você use a API de Diálogo de Item Comum em vez dessas caixas de diálogo da Biblioteca de Caixas de Diálogo Comuns.\]
 
-Enviado por uma caixa de diálogo **abrir** no estilo do Explorer ou **salvar como** quando uma nova pasta é aberta.
+Enviado por uma caixa de diálogo **Abrir** ou Salvar **como** no estilo Explorer quando uma nova pasta é aberta.
 
-Seu procedimento de gancho [*OFNHookProc*](/windows/win32/api/commdlg/nc-commdlg-lpofnhookproc) recebe essa mensagem na forma de uma mensagem de [**\_ notificação do WM**](../controls/wm-notify.md) .
+O [*procedimento de gancho OFNHookProc*](/windows/win32/api/commdlg/nc-commdlg-lpofnhookproc) recebe essa mensagem na forma de uma mensagem WM [**\_ NOTIFY.**](../controls/wm-notify.md)
 
 
 ```C++
@@ -51,7 +51,7 @@ Este parâmetro não é usado.
 *lParam* 
 </dt> <dd>
 
-Um ponteiro para uma estrutura [**OFNOTIFY**](/windows/desktop/api/Commdlg/ns-commdlg-ofnotifya) . a estrutura **OFNOTIFY** contém uma estrutura [**NMHDR**](/windows/win32/api/richedit/ns-richedit-nmhdr) cujo membro de **código** indica a mensagem de notificação **CDN \_ FOLDERCHANGE** .
+Um ponteiro para uma [**estrutura OFNOTIFY.**](/windows/desktop/api/Commdlg/ns-commdlg-ofnotifya) A **estrutura OFNOTIFY** contém uma estrutura  [**NMHDR**](/windows/win32/api/richedit/ns-richedit-nmhdr) cujo membro de código indica a CDN de notificação **\_ FOLDERCHANGE.**
 
 </dd> </dl>
 
@@ -61,9 +61,9 @@ O valor de retorno é ignorado.
 
 ## <a name="remarks"></a>Comentários
 
-O sistema enviará essa notificação somente se a caixa de diálogo tiver sido criada usando o valor do **OFN \_ Explorer** .
+O sistema enviará essa notificação somente se a caixa de diálogo tiver sido criada usando o **valor OFN \_ EXPLORER.**
 
-Para obter o caminho da pasta aberta recentemente, o procedimento de gancho pode enviar a mensagem [**CDM \_ GetFolderPath**](cdm-getfolderpath.md) para a caixa de diálogo.
+Para obter o caminho da pasta recém-aberta, o procedimento de gancho pode enviar a mensagem [**\_ GETFOLDERPATH**](cdm-getfolderpath.md) do CDM para a caixa de diálogo.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -73,7 +73,7 @@ Para obter o caminho da pasta aberta recentemente, o procedimento de gancho pode
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                                               |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                     |
-| Cabeçalho<br/>                   | <dl> <dt>Commdlg. h (incluir Windows. h)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Commdlg.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -84,13 +84,13 @@ Para obter o caminho da pasta aberta recentemente, o procedimento de gancho pode
 **Referência**
 </dt> <dt>
 
-[**CDM \_ GETfolderpath**](cdm-getfolderpath.md)
+[**GETFOLDERPATH do CDM \_**](cdm-getfolderpath.md)
 </dt> <dt>
 
-[**GetOpenFileName**](/windows/desktop/api/Commdlg/nf-commdlg-getopenfilenamea)
+[**Getopenfilename**](/windows/desktop/api/Commdlg/nf-commdlg-getopenfilenamea)
 </dt> <dt>
 
-[**GetSaveFileName**](/windows/desktop/api/Commdlg/nf-commdlg-getsavefilenamea)
+[**Getsavefilename**](/windows/desktop/api/Commdlg/nf-commdlg-getsavefilenamea)
 </dt> <dt>
 
 [*OFNHookProc*](/windows/win32/api/commdlg/nc-commdlg-lpofnhookproc)
@@ -99,9 +99,9 @@ Para obter o caminho da pasta aberta recentemente, o procedimento de gancho pode
 [**OFNOTIFY**](/windows/desktop/api/Commdlg/ns-commdlg-ofnotifya)
 </dt> <dt>
 
-**Conceitua**
+**Conceitual**
 </dt> <dt>
 
-[Biblioteca de caixa de diálogo comum](common-dialog-box-library.md)
+[Biblioteca de caixas de diálogo comuns](common-dialog-box-library.md)
 </dt> </dl>
 

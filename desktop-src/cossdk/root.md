@@ -21,15 +21,15 @@ ms.locfileid: "118547013"
 ---
 # <a name="root-collection"></a>Coleção raiz
 
-Contém as coleções de nível superior no catálogo. Ele não contém nenhum [**objeto COMAdminCatalogObject**](comadmincatalogobject.md) nem dá suporte a nenhuma propriedade.
+Contém as coleções de nível superior no catálogo. Ele não contém nenhum objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) nem oferece suporte a nenhuma propriedade.
 
-A **coleção** Raiz não dá suporte [**aos métodos Add**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-add) e [**Remove**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-remove) do [**objeto COMAdminCatalogCollection.**](comadmincatalogcollection.md)
+A coleção **raiz** não oferece suporte aos métodos [**Add**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-add) e [**Remove**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-remove) do objeto [**COMAdminCatalogCollection**](comadmincatalogcollection.md) .
 
-Você não pode navegar até **a coleção** Raiz de nenhuma coleção.
+Não é possível navegar até a coleção **raiz** de qualquer coleção.
 
 ## <a name="members"></a>Membros
 
-A **coleção** Raiz herda da interface [**IUnknown,**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) mas não tem membros adicionais.
+A coleção **raiz** herda da interface [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) , mas não tem membros adicionais.
 
 ## <a name="related-collections"></a>Coleções relacionadas
 
@@ -38,7 +38,7 @@ A seguir estão as coleções de nível superior no catálogo:
 -   [**ApplicationCluster**](applicationcluster.md)
 -   [**ApplicationInstances**](applicationinstances.md)
 -   [**Aplicativos**](applications.md)
--   [**ComputerList**](computerlist.md)
+-   [**Computerlist**](computerlist.md)
 -   [**DCOMProtocols**](dcomprotocols.md)
 -   [**EventClassesForIID**](eventclassesforiid.md)
 -   [**FilesForImport**](filesforimport.md)
@@ -47,7 +47,7 @@ A seguir estão as coleções de nível superior no catálogo:
 -   [**LocalComputer**](localcomputer.md)
 -   [**Partições**](partitions.md)
 -   [**PartitionUsers**](partitionusers.md)
--   [**Propertyinfo**](propertyinfo.md)
+-   [**PropertyInfo**](propertyinfo.md)
 -   [**RelatedCollectionInfo**](relatedcollectioninfo.md)
 -   [**TransientSubscriptions**](transientsubscriptions.md)
 -   [**WOWInprocServers**](wowinprocservers.md)

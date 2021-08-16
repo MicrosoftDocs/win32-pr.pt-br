@@ -17,19 +17,19 @@ ms.locfileid: "118436036"
 ---
 # <a name="detecting-and-tracking-multiple-touch-points"></a>Detectando e acompanhando vários pontos de toque
 
-As etapas a seguir explicam como rastrear vários pontos de toque usando Windows Touch.
+as etapas a seguir explicam como controlar vários pontos de toque usando o Windows touch.
 
-1.  Crie um aplicativo e habilita Windows Touch.
-2.  Adicione um manipulador para [**WM \_ TOUCH e**](wm-touchdown.md) pontos de controle.
-3.  Desenhar os pontos.
+1.  crie um aplicativo e habilite Windows toque.
+2.  Adicione um manipulador para pontos de controle e [**\_ toque do WM**](wm-touchdown.md) .
+3.  Desenhe os pontos.
 
-Depois que o aplicativo é executado, ele renderiza círculos em cada toque. A captura de tela a seguir mostra a aparência do aplicativo durante a execução.
+Depois que o aplicativo estiver em execução, ele processará círculos sob cada toque. A captura de tela a seguir mostra como o aplicativo pode ser exibido durante a execução.
 
 ![captura de tela mostrando um aplicativo que renderiza pontos de toque como círculos verdes e amarelos](images/multitouchpoints.png)
 
-## <a name="create-an-application-and-enable-windows-touch"></a>Criar um aplicativo e habilitar o Windows Touch
+## <a name="create-an-application-and-enable-windows-touch"></a>criar um aplicativo e habilitar o Windows Touch
 
-Comece com um aplicativo Microsoft Win32 usando o assistente Microsoft Visual Studio aplicativo. Depois de concluir o assistente, adicione suporte para mensagens Windows Touch definindo Windows versão do Windows em targetver.h e incluindo windows.h e windowsx.h em seu aplicativo. O código a seguir mostra como definir a versão Windows em targetver.h.
+inicie com um aplicativo Microsoft Win32 usando o assistente de Microsoft Visual Studio. depois de concluir o assistente, adicione suporte para Windows mensagens de toque definindo a versão Windows em targetver. h e incluindo Windows. h e windowsx. h em seu aplicativo. o código a seguir mostra como definir a versão de Windows em targetver. h.
 
 
 ```C++
@@ -52,7 +52,7 @@ Comece com um aplicativo Microsoft Win32 usando o assistente Microsoft Visual St
 
 
 
-O código a seguir mostra como suas diretivas de inclusão devem ser adicionadas. Além disso, você pode criar algumas variáveis globais que serão usadas posteriormente.
+O código a seguir mostra como as diretivas include devem ser adicionadas. Além disso, você pode criar algumas variáveis globais que serão usadas posteriormente.
 
 
 ```C++
@@ -91,9 +91,9 @@ COLORREF colors[] = { RGB(153,255,51),
 
 
 
-## <a name="add-handler-for-wm_touch-and-track-points"></a>Adicionar manipulador para WM \_ TOUCH e pontos de controle
+## <a name="add-handler-for-wm_touch-and-track-points"></a>Adicionar manipulador para \_ pontos de toque e faixa do WM
 
-Primeiro, declare algumas variáveis que são usadas pelo manipulador [**WM \_ TOUCH**](wm-touchdown.md) no [**WndProc.**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85))
+Primeiro, declare algumas variáveis que são usadas pelo manipulador [**de \_ toque do WM**](wm-touchdown.md) em [**WndProc**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85)).
 
 
 ```C++
@@ -106,7 +106,7 @@ POINT ptInput;
 
 
 
-Agora, inicialize as variáveis usadas para armazenar pontos de toque e registre a janela para entrada de toque do **método InitInstance.**
+Agora, inicialize as variáveis usadas para armazenar pontos de toque e registre a janela para entrada por toque do método **InitInstance** .
 
 
 ```C++
@@ -142,7 +142,7 @@ BOOL InitInstance(HINSTANCE hInstance, int nCmdShow)
 
 
 
-Em seguida, manipular [**a mensagem WM \_ TOUCH**](wm-touchdown.md) do [**método WndProc.**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85)) O código a seguir mostra uma implementação do manipulador para **WM \_ TOUCH.**
+Em seguida, manipule a mensagem de [**\_ toque do WM**](wm-touchdown.md) do método [**WndProc**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85)) . O código a seguir mostra uma implementação do manipulador para o **WM \_ Touch**.
 
 
 ```C++
@@ -181,13 +181,13 @@ case WM_TOUCH:
 
 
 > [!Note]  
-> Para usar a função [**ScreenToClient,**](/windows/desktop/api/winuser/nf-winuser-screentoclient) você deve ter suporte de DPI alto em seu aplicativo. Para obter mais informações sobre como dar suporte a alto DPI, consulte a [seção DPI]( ../hidpi/high-dpi-desktop-application-development-on-windows.md) alto do MSDN.
+> Para usar a função [**ScreenToClient**](/windows/desktop/api/winuser/nf-winuser-screentoclient) , você deve ter suporte a DPI alto em seu aplicativo. Para obter mais informações sobre como dar suporte a DPI alto, consulte a seção [alta dpi]( ../hidpi/high-dpi-desktop-application-development-on-windows.md) do MSDN.
 
  
 
-Agora, quando um usuário toca na tela, as posições que ele está tocando serão armazenadas na matriz de pontos. O **membro dwID** da estrutura [**TOUCHINPUT**](/windows/win32/api/winuser/ns-winuser-touchinput) armazena um identificador que será dependente de hardware.
+Agora, quando um usuário tocar na tela, as posições que ele estiver tocando serão armazenadas na matriz Points. O membro **dwID** da estrutura [**TOUCHINPUT**](/windows/win32/api/winuser/ns-winuser-touchinput) armazena um identificador que será dependente de hardware.
 
-Para resolver o problema do membro dwID dependente de hardware, o manipulador de caso [**WM \_ TOUCH**](wm-touchdown.md) usa uma função, **GetContactIndex**, que mapeia o membro **dwID** da estrutura [**TOUCHINPUT**](/windows/win32/api/winuser/ns-winuser-touchinput) para um ponto desenhado na tela. O código a seguir mostra uma implementação dessa função.
+Para resolver o problema do membro dwID que é dependente de hardware, o manipulador de casos de [**\_ toque do WM**](wm-touchdown.md) usa uma função, **GetContactIndex**, que mapeia o membro **dwID** da estrutura [**TOUCHINPUT**](/windows/win32/api/winuser/ns-winuser-touchinput) para um ponto que é desenhado na tela. O código a seguir mostra uma implementação dessa função.
 
 
 ```C++
@@ -212,7 +212,7 @@ int GetContactIndex(int dwID){
 
 ## <a name="draw-the-points"></a>Desenhar os pontos
 
-Declare as seguintes variáveis para a rotina de desenho.
+Declare as variáveis a seguir para a rotina de desenho.
 
 
 ```C++
@@ -231,7 +231,7 @@ Declare as seguintes variáveis para a rotina de desenho.
 
 
 
-O *memDC* do contexto de exibição de memória é usado para armazenar um contexto gráfico temporário que é trocado pelo contexto de exibição renderizado, *hdc*, para eliminar a cintilação. Implemente a rotina de desenho, que leva os pontos que você armazenou e desenha um círculo nos pontos. O código a seguir mostra como você pode implementar o [**manipulador WM \_ PAINT.**](/windows/desktop/gdi/wm-paint)
+O contexto de exibição de memória *memDC* é usado para armazenar um contexto de gráfico temporário que é trocado pelo contexto de exibição renderizado, *HDC*, para eliminar a cintilação. Implemente a rotina de desenho, que usa os pontos que você armazenou e desenha um círculo nos pontos. O código a seguir mostra como você pode implementar o manipulador de [**\_ pintura do WM**](/windows/desktop/gdi/wm-paint) .
 
 
 ```C++
@@ -267,17 +267,17 @@ O *memDC* do contexto de exibição de memória é usado para armazenar um conte
 
 
 
-Quando você executar seu aplicativo, ele agora deverá se parecer com a ilustração no início desta seção.
+Quando você executa o aplicativo, ele agora deve ser semelhante à ilustração no início desta seção.
 
-Para se divertido, você pode desenhar algumas linhas extras em torno dos pontos de toque. A captura de tela a seguir mostra a aparência do aplicativo com algumas linhas extras desenhadas em torno dos círculos.
+Para diversão, você pode desenhar algumas linhas extras em volta dos pontos de toque. A captura de tela a seguir mostra como o aplicativo pode parecer com algumas linhas extras desenhadas em volta dos círculos.
 
-![captura de tela mostrando um aplicativo que renderiza pontos de toque como círculos com linhas pelos centros e intersecção das bordas dos pontos de toque](images/multitouchpointsfun.png)
+![captura de tela mostrando um aplicativo que renderiza pontos de toque como círculos com linhas por meio dos centros e interseccionando as bordas dos pontos de toque](images/multitouchpointsfun.png)
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[Windows Entrada de toque](guide-multi-touch-input.md)
+[Windows Entrada por toque](guide-multi-touch-input.md)
 </dt> </dl>
 
  

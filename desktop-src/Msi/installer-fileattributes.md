@@ -1,7 +1,7 @@
 ---
-description: A propriedade FileAttributes do objeto instalador retorna um número que representa os atributos de arquivo combinados para o caminho designado para um arquivo ou pasta.
+description: A propriedade FileAttributes do objeto Installer retorna um número que representa os atributos de arquivo combinados para o caminho designado para um arquivo ou pasta.
 ms.assetid: a09ac346-4e4d-440f-bfbe-ff8fb3f69823
-title: propriedade Installer. fileattributes (Windows. storage. h)
+title: Propriedade Installer.FileAttributes (Windows.storage.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -20,9 +20,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118630909"
 ---
-# <a name="installerfileattributes-property"></a>Propriedade Installer. FileAttributes
+# <a name="installerfileattributes-property"></a>Propriedade Installer.FileAttributes
 
-A propriedade **FileAttributes** do objeto [**instalador**](installer-object.md) retorna um número que representa os atributos de arquivo combinados para o caminho designado para um arquivo ou pasta.
+A **propriedade FileAttributes** do objeto [**Installer**](installer-object.md) retorna um número que representa os atributos de arquivo combinados para o caminho designado para um arquivo ou pasta.
 
 Esta propriedade é somente para leitura.
 
@@ -37,11 +37,11 @@ propVal = Installer.FileAttributes
 
 ## <a name="property-value"></a>Valor da propriedade
 
-O caminho necessário para o arquivo ou a pasta. Um caminho parcial assume o diretório atual.
+O caminho necessário para o arquivo ou pasta. Um caminho parcial assume o diretório atual.
 
 ## <a name="remarks"></a>Comentários
 
-A propriedade **FileAttributes** retorna os valores a seguir.
+A **propriedade FileAttributes** retorna os valores a seguir.
 
 
 
@@ -51,7 +51,7 @@ A propriedade **FileAttributes** retorna os valores a seguir.
 | FILE\_ATTRIBUTE\_HIDDEN     | 0x00000002 | 2     |
 | FILE\_ATTRIBUTE\_SYSTEM     | 0x00000004 | 4     |
 | FILE\_ATTRIBUTE\_DIRECTORY  | 0x00000010 | 16    |
-| atributo de arquivo \_ \_ temporário  | 0x00000100 | 256   |
+| ATRIBUTO \_ DE \_ ARQUIVO TEMPORÁRIO  | 0x00000100 | 256   |
 | FILE\_ATTRIBUTE\_COMPRESSED | 0x00000800 | 2.048  |
 | FILE\_ATTRIBUTE\_OFFLINE    | 0x00001000 | 4096  |
 
@@ -59,7 +59,7 @@ A propriedade **FileAttributes** retorna os valores a seguir.
 
  
 
-Retornará – 1 se o arquivo ou a pasta não existir ou não estiver acessível.
+Retornará –1 se o arquivo ou a pasta não existir ou não estiver acessível.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -67,10 +67,10 @@ Retornará – 1 se o arquivo ou a pasta não existir ou não estiver acessível
 
 | Requisito | Valor |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versão<br/> | Windows instalador 5,0 em Windows Server 2012, Windows 8, Windows Server 2008 R2 ou Windows 7. Windows Installer 4,0 ou Windows Installer 4,5 no Windows Server 2008 ou Windows Vista. Windows instalador no Windows Server 2003 ou Windows XP<br/> |
-| parâmetro<br/>  | <dl> <dt>Windows. storage. h</dt> </dl>                                                                                                                                                            |
+| Versão<br/> | Windows Instalador 5.0 no Windows Server 2012, Windows 8, Windows Server 2008 R2 ou Windows 7. Windows Instalador 4.0 ou Windows Instalador 4.5 no Windows Server 2008 ou Windows Vista. Windows Instalador no Windows Server 2003 ou Windows XP<br/> |
+| Cabeçalho<br/>  | <dl> <dt>Windows.storage.h</dt> </dl>                                                                                                                                                            |
 | DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                      |
-| IID<br/>     | IID \_ IInstaller é definido como 000C1090-0000-0000-C000-000000000046<br/>                                                                                                                                                                           |
+| IID<br/>     | O IInstaller IID é definido como \_ 000C1090-0000-0000-C000-000000000046<br/>                                                                                                                                                                           |
 
 
 

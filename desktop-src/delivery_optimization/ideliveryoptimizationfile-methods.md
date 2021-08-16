@@ -21,7 +21,7 @@ A interface [**IDeliveryOptimizationFile**](ideliveryoptimizationfile.md) expõe
 
 | Tópico                                                                    | Descrição                                                       |
 |--------------------------------------------------------------------------|-------------------------------------------------------------------|
-| [**Método GetStats**](ideliveryoptimizationfile-getstats.md)<br/> | Retorna o download e o upload de estatísticas para um arquivo específico.<br/> |
+| [**Método GetStats**](ideliveryoptimizationfile-getstats.md)<br/> | Retorna estatísticas de download e upload para um arquivo específico.<br/> |
 
 
 

@@ -1,6 +1,6 @@
 ---
-title: Método ID3DX12PipelineParserCallbacks DepthStencilState1Cb (D3DX12.h)
-description: Chama o retorno de chamada de subobjeto de subobjeto de estêncil de profundidade (D3D12 \_ DEPTH \_ STENCIL DESC1) de um objeto que \_ implementa essa interface.
+title: Método ID3DX12PipelineParserCallbacks DepthStencilState1Cb (D3DX12. h)
+description: Chama o \_ \_ \_ retorno de chamada do subobjeto de estado de estêncil de profundidade (D3D12 Depth estêncil DESC1) de um objeto que implementa essa interface.
 ms.assetid: C1AE06E5-B1FF-44C2-9C56-1540B97AD883
 keywords:
 - Método DepthStencilState1Cb
@@ -24,9 +24,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118528964"
 ---
-# <a name="id3dx12pipelineparsercallbacksdepthstencilstate1cb-method"></a>Método ID3DX12PipelineParserCallbacks::D epthStencilState1Cb
+# <a name="id3dx12pipelineparsercallbacksdepthstencilstate1cb-method"></a>ID3DX12PipelineParserCallbacks: método epthStencilState1Cb de:D
 
-Chama o retorno de chamada de subobjeto de estêncil de profundidade ([**D3D12 \_ DEPTH \_ \_ STENCIL DESC1**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_depth_stencil_desc1)) de um objeto que implementa essa interface.
+Chama o retorno de chamada do subobjeto de estado de estêncil de profundidade ([**D3D12 \_ Depth \_ estêncil \_ DESC1**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_depth_stencil_desc1)) de um objeto que implementa essa interface.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -43,10 +43,10 @@ void DepthStencilState1Cb(
 
 <dl> <dt>
 
-*DepthStencilState* \[ Ref\]
+*DepthStencilState* \[ referência\]
 </dt> <dd>
 
-Tipo: **const [**D3D12 \_ DEPTH \_ STENCIL \_ DESC1**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_depth_stencil_desc1)**
+Tipo: **const [**D3D12 \_ estêncil de profundidade \_ \_ DESC1**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_depth_stencil_desc1)**
 
 Detalhes do subobjeto de estado de estêncil de profundidade analisado de um fluxo de estado de pipeline.
 
@@ -62,8 +62,8 @@ Não retorna nada.
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3DX12.h</dt> </dl>  |
-| Biblioteca<br/> | <dl> <dt>D3D12.lib</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>D3DX12. h</dt> </dl>  |
+| Biblioteca<br/> | <dl> <dt>D3D12. lib</dt> </dl> |
 | DLL<br/>     | <dl> <dt>D3D12.dll</dt> </dl> |
 
 
@@ -78,7 +78,7 @@ Não retorna nada.
 [**ID3DX12PipelineParserCallbacks**](id3dx12pipelineparsercallbacks.md)
 </dt> <dt>
 
-[**D3D12 \_ DEPTH \_ STENCIL \_ DESC1**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_depth_stencil_desc1)
+[**Estêncil de profundidade de D3D12 \_ \_ \_ DESC1**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_depth_stencil_desc1)
 </dt> </dl>
 
  

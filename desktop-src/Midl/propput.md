@@ -1,9 +1,9 @@
 ---
 title: atributo propput
-description: O atributo \ propput \ especifica uma função de configuração de propriedade. A propriedade deve ter o mesmo nome que a função.
+description: O atributo \ propput\ especifica uma função de configuração de propriedade. A propriedade deve ter o mesmo nome que a função.
 ms.assetid: ffd8af15-42a4-4852-a29b-1fc66f673978
 keywords:
-- propput do atributo MIDL
+- atributo propput MIDL
 topic_type:
 - apiref
 api_name:
@@ -21,7 +21,7 @@ ms.locfileid: "118641929"
 ---
 # <a name="propput-attribute"></a>atributo propput
 
-O atributo **\[ propput \]** especifica uma função de configuração de propriedade. A propriedade deve ter o mesmo nome que a função *.*
+O **\[ atributo \] propput** especifica uma função de configuração de propriedade. A propriedade deve ter o mesmo nome que a função *.*
 
 ``` syntax
 [propput [,optional-property-attributes]] return-type function-name( parameters);
@@ -31,7 +31,7 @@ O atributo **\[ propput \]** especifica uma função de configuração de propri
 
 <dl> <dt>
 
-*opcional-atributos de propriedade* 
+*optional-property-attributes* 
 </dt> <dd>
 
 Zero ou mais atributos de propriedade.
@@ -61,15 +61,15 @@ Zero ou mais parâmetros para o procedimento remoto.
 
 ## <a name="remarks"></a>Comentários
 
-Uma função que tem o atributo **\[ propput \]** também deve ter, como seu último parâmetro, um parâmetro que tem o **\[** atributo [**in**](in.md) **\]** .
+Uma função que tem o **\[ atributo propput \]** também deve ter, como seu último parâmetro, um parâmetro que tenha o **\[** [**no**](in.md) **\]** atributo .
 
-No máximo, um de **\[** [**propget**](propget.md) **\]** , **\[ propput \]** e **\[** [**propputref**](propputref.md) **\]** podem ser especificados para uma função.
+No máximo, um de **\[** [**propget**](propget.md) **\]** , **\[ propput \]** e **\[** [**propputref**](propputref.md) pode ser especificado para uma **\]** função.
 
-Se o **\[** atributo [**LCID**](lcid.md) **\]** for usado na lista de parâmetros de uma função que contém um parâmetro com o atributo **\[ propput \]** , o parâmetro **\[ LCID \]** deverá ser segundo para o último.
+Se o atributo lcid for usado na lista de parâmetros de uma função que contém um parâmetro com o atributo **\[** [](lcid.md) **\]** **\[ propput, \]** o parâmetro **\[ lcid \]** deverá ser o segundo ao último.
 
 ### <a name="flags"></a>Flags
 
-INVOCAr \_ PROPERTYPUT
+INVOKE \_ PROPERTYPUT
 
 ## <a name="examples"></a>Exemplos
 
@@ -96,7 +96,7 @@ interface InMyFace : IDispatch
 [Exemplo de arquivo ODL](/previous-versions/windows/desktop/automat/odl-file-example)
 </dt> <dt>
 
-[Sintaxe do arquivo ODL](/previous-versions/windows/desktop/automat/odl-file-syntax)
+[Sintaxe de arquivo ODL](/previous-versions/windows/desktop/automat/odl-file-syntax)
 </dt> <dt>
 
 [**propget**](propget.md)
@@ -105,7 +105,7 @@ interface InMyFace : IDispatch
 [**propputref**](propputref.md)
 </dt> <dt>
 
-[**TYPEFLAGS**](/windows/win32/api/oaidl/ne-oaidl-typeflags)
+[**Typeflags**](/windows/win32/api/oaidl/ne-oaidl-typeflags)
 </dt> </dl>
 
  

@@ -1,11 +1,11 @@
 ---
-title: PKI-Max-emissão de atributo de profundidade
+title: Atributo PKI-Max-Issuing-Depth
 description: O comprimento máximo da cadeia de certificados emitida pelo certificado.
 ms.assetid: 0281f05a-4066-4305-ab0a-d741f17c8f28
 ms.tgt_platform: multiple
 keywords:
-- PKI-Max-emissão-esquema de atributo de profundidade do AD
-- Esquema de AD do atributo pKIMaxIssuingDepth
+- Esquema do AD do atributo PKI-Max-Issuing-Depth
+- Esquema do AD do atributo pKIMaxIssuingDepth
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e1a2273fd819faf9d89b66b830501c36b0ad61d3
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: fa2e71ddc8940786e83c9f15d458aca8ffae17bf305c1f1dc684b04d290640cf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103919308"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118960115"
 ---
-# <a name="pki-max-issuing-depth-attribute"></a>PKI-Max-emissão de atributo de profundidade
+# <a name="pki-max-issuing-depth-attribute"></a>Atributo PKI-Max-Issuing-Depth
 
 O comprimento máximo da cadeia de certificados emitida pelo certificado.
 
@@ -29,13 +29,13 @@ O comprimento máximo da cadeia de certificados emitida pelo certificado.
 
 | Entrada | Valor |
 |-------------------|--------------------------------------|
-| CN                | PKI-Max-emissão-profundidade                |
-| LDAP-Display-Name | pKIMaxIssuingDepth                   |
+| CN                | PKI-Max-Issuing-Depth                |
+| Ldap-Display-Name | pKIMaxIssuingDepth                   |
 | Tamanho              | \-                                   |
 | Privilégio de atualização  | \-                                   |
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.1329              |
-| System-ID-GUID    | f0bfdefa-3b9d-11d2-90cc-00c04fd91ab1 |
+| System-Id-Guid    | f0bfdefa-3b9d-11d2-90cc-00c04fd91ab1 |
 | Syntax            | [**Enumeração**](s-enumeration.md) |
 
 
@@ -58,15 +58,15 @@ O comprimento máximo da cadeia de certificados emitida pelo certificado.
 | ID do link                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| É de valor único       | True                                                                    |
+| Tem valor único       | Verdadeiro                                                                    |
 | É indexado             | Falso                                                                   |
-| No catálogo global      | True                                                                    |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                            |
+| No Catálogo Global      | Verdadeiro                                                                    |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Classes usadas em        | [**PKI-certificado-modelo**](c-pkicertificatetemplate.md)<br/> |
+| Classes usadas em        | [**PKI-Certificate-Template**](c-pkicertificatetemplate.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ O comprimento máximo da cadeia de certificados emitida pelo certificado.
 | ID do link                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| É de valor único       | True                                                                    |
+| Tem valor único       | Verdadeiro                                                                    |
 | É indexado             | Falso                                                                   |
-| No catálogo global      | True                                                                    |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                            |
+| No Catálogo Global      | Verdadeiro                                                                    |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Classes usadas em        | [**PKI-certificado-modelo**](c-pkicertificatetemplate.md)<br/> |
+| Classes usadas em        | [**PKI-Certificate-Template**](c-pkicertificatetemplate.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ O comprimento máximo da cadeia de certificados emitida pelo certificado.
 | ID do link                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| É de valor único       | True                                                                    |
+| Tem valor único       | Verdadeiro                                                                    |
 | É indexado             | Falso                                                                   |
-| No catálogo global      | True                                                                    |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                            |
+| No Catálogo Global      | Verdadeiro                                                                    |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Classes usadas em        | [**PKI-certificado-modelo**](c-pkicertificatetemplate.md)<br/> |
+| Classes usadas em        | [**PKI-Certificate-Template**](c-pkicertificatetemplate.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ O comprimento máximo da cadeia de certificados emitida pelo certificado.
 | ID do link                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| É de valor único       | True                                                                    |
+| Tem valor único       | Verdadeiro                                                                    |
 | É indexado             | Falso                                                                   |
-| No catálogo global      | True                                                                    |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                            |
+| No Catálogo Global      | Verdadeiro                                                                    |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Classes usadas em        | [**PKI-certificado-modelo**](c-pkicertificatetemplate.md)<br/> |
+| Classes usadas em        | [**PKI-Certificate-Template**](c-pkicertificatetemplate.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ O comprimento máximo da cadeia de certificados emitida pelo certificado.
 | ID do link                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| É de valor único       | True                                                                    |
+| Tem valor único       | Verdadeiro                                                                    |
 | É indexado             | Falso                                                                   |
-| No catálogo global      | True                                                                    |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                            |
+| No Catálogo Global      | Verdadeiro                                                                    |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Classes usadas em        | [**PKI-certificado-modelo**](c-pkicertificatetemplate.md)<br/> |
+| Classes usadas em        | [**PKI-Certificate-Template**](c-pkicertificatetemplate.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ O comprimento máximo da cadeia de certificados emitida pelo certificado.
 | ID do link                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| É de valor único       | True                                                                    |
+| Tem valor único       | Verdadeiro                                                                    |
 | É indexado             | Falso                                                                   |
-| No catálogo global      | True                                                                    |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                            |
+| No Catálogo Global      | Verdadeiro                                                                    |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Classes usadas em        | [**PKI-certificado-modelo**](c-pkicertificatetemplate.md)<br/> |
+| Classes usadas em        | [**PKI-Certificate-Template**](c-pkicertificatetemplate.md)<br/> |
 
 
 

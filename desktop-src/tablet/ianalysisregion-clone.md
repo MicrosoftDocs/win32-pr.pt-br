@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - IACom.dll
-ms.openlocfilehash: fb069ddb461ab4422f8cbbc8990fb6d735808e62
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 13bd514396c738f2e5367528dc62833bd3a4dcc195aecf30ee723ea9c09b5bcf
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105811389"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119596786"
 ---
 # <a name="ianalysisregionclone-method"></a>Método IAnalysisRegion:: clone
 
@@ -46,13 +46,13 @@ Um ponteiro para uma cópia do [**IAnalysisRegion**](ianalysisregion.md).
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Para obter uma descrição dos valores de retorno, consulte [classes e interfaces – análise de tinta](classes-and-interfaces---ink-analysis.md).
 
 ## <a name="remarks"></a>Comentários
 
-Esse método é eqivalent para o método System. Windows. Ink. AnalysisCore. AnalysisRegionBase. Clone no .NET Framework.
+Esse método é eqivalent para o sistema. Windows. Método Ink. AnalysisCore. AnalysisRegionBase. Clone no .NET Framework.
 
 > [!Caution]  
 > Para evitar um vazamento de memória, chame [**IUnknown:: Release**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-release) em \* *pClonedRegion* quando você não precisar mais usar a região de análise clonada.
@@ -65,9 +65,9 @@ Esse método é eqivalent para o método System. Windows. Ink. AnalysisCore. Ana
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Somente aplicativos de área de trabalho do Windows XP Tablet PC Edition \[\]<br/>                                                 |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do XP Tablet PC Edition\]<br/>                                                 |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                                     |
-| parâmetro<br/>                   | <dl> <dt>IACom. h (também requer IACom \_ i. c)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>IACom. h (também requer IACom \_ i. c)</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |
 
 

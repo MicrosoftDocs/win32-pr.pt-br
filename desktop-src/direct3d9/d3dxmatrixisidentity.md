@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 0c2ca91f74512b432d7cc18b28cef44d713cfc11
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 913034d9cf3781dce4bb8c1ee643eac90bd23054300fbaa8b0a55eab62914958
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104298736"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119044864"
 ---
 # <a name="d3dxmatrixisidentity-function"></a>Função D3DXMatrixIsIdentity
 
@@ -49,7 +49,7 @@ Ponteiro para a estrutura [**D3DXMATRIX**](d3dxmatrix.md) que será testada para
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **bool**](../winprog/windows-data-types.md)**
 

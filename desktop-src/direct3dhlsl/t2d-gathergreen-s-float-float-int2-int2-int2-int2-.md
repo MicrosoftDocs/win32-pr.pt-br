@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: af1bbaf4052bab32ab1841542bfb63322de154ba
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 6d0c7fa8f28a0a0ddc276af696b102df29de1362b948a4a909733cf14df35aa4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104506418"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119043584"
 ---
 # <a name="texture2dgathergreensfloatint2int2int2int2-function"></a>Função Texture2D:: GatherGreen (S, float, Int2, Int2, Int2, Int2)
 
@@ -98,7 +98,7 @@ O quarto componente de deslocamento aplicado às coordenadas de textura antes da
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **TemplateType**
 
@@ -112,7 +112,7 @@ Essa função tem suporte para os seguintes tipos de sombreadores:
 
 
 
-| Vértice | Envoltória | Domínio | Geometria | 16x16 | Computação |
+| Vértice | Envoltória | Domínio | Geometry | 16x16 | Computação |
 |--------|------|--------|----------|-------|---------|
 | x      | x    | x      | x        | x     | x       |
 

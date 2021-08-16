@@ -1,7 +1,7 @@
 ---
 description: Crie um token de número de versão do sombreador de vértice.
 ms.assetid: c3aa6b01-7949-4171-a8b5-2f453fd7a422
-title: Macro D3DVS_VERSION (D3d9types. h)
+title: D3DVS_VERSION macro (D3d9types.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -20,7 +20,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118527252"
 ---
-# <a name="d3dvs_version-macro"></a>Macro de versão do D3DVS \_
+# <a name="d3dvs_version-macro"></a>Macro DE VERSÃO do D3DVS \_
 
 Crie um token de número de versão do sombreador de vértice.
 
@@ -43,20 +43,20 @@ DWORD D3DVS_VERSION(
 *\_Principal* 
 </dt> <dd>
 
-A versão principal do sombreador de vértice. Consulte comentários para obter os valores apropriados.
+A versão principal do sombreador de vértice. Consulte comentários para ver os valores apropriados.
 
 </dd> <dt>
 
 *\_Secundária* 
 </dt> <dd>
 
-A versão secundária do sombreador de vértice. Consulte comentários para obter os valores apropriados.
+A versão do sombreador de vértice secundário. Consulte comentários para ver os valores apropriados.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor retornado
 
-Retorna um valor DWORD que é uma versão de sombreador de vértice.
+Retorna um valor DWORD que é uma versão do sombreador de vértice.
 
 ## <a name="remarks"></a>Comentários
 
@@ -68,9 +68,9 @@ O número de versão é uma combinação da versão principal e dos números de 
 
 | Principal | Secundária | Exemplo             |
 |-------|-------|---------------------|
-| 1     | 1     | \_Versão D3DVS (1, 1) |
-| 2     | 0     | \_Versão D3DVS (2, 0) |
-| 3     | 0     | \_Versão D3DVS (3, 0) |
+| 1     | 1     | D3DVS \_ VERSÃO(1,1) |
+| 2     | 0     | D3DVS \_ VERSÃO(2,0) |
+| 3     | 0     | D3DVS \_ VERSÃO(3,0) |
 
 
 
@@ -82,7 +82,7 @@ O número de versão é uma combinação da versão principal e dos números de 
 
 | Requisito | Valor |
 |-------------------|----------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>D3d9types. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>D3d9types.h</dt> </dl> |
 
 
 

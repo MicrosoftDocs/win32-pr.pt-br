@@ -4,12 +4,12 @@ ms.assetid: 78b2998b-d8b3-424d-85bc-872e64eb4a4f
 title: Conjunto de propriedades de karaokê de DVD (DVDMedia. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2918513de06a657436ed99e67f672fe74a113b78
-ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
+ms.openlocfilehash: 1f3f7674b240934ae7440858b7317fd1abaf9b7833e36f80d7edc6cc185bc932
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "107909064"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119016014"
 ---
 # <a name="dvd-karaoke-property-set"></a>Conjunto de propriedades de karaokê de DVD
 
@@ -17,7 +17,7 @@ Quando o filtro de [navegador de DVD](dvd-navigator-filter.md) entra no modo de 
 
 
 
-| Label | Valor |
+| Rótulo | Valor |
 |-------------------|-----------------------------|
 | GUID do Conjunto de Propriedades | \_KSPROPSETID \_ DvdKaraoke |
 

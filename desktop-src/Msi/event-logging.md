@@ -135,110 +135,110 @@ para obter informações sobre como habilitar o log detalhado no computador de u
 </tr>
 <tr class="even">
 <td>1023</td>
-<td>Produto: %1-a atualização ' %2 ' não pôde ser instalada. Código de erro %3. Informações adicionais estão disponíveis no arquivo de log %4.</td>
-<td>Mensagem de erro indicando que o instalador não pôde instalar a atualização. Informações adicionais estão disponíveis no arquivo de log. <strong>Windows Installer 2,0:</strong> Não disponível.<br/></td>
+<td>Produto: %1 – Não foi possível instalar a atualização '%2'. Código de erro %3. Informações adicionais estão disponíveis no arquivo de log %4.</td>
+<td>Mensagem de erro indicando que o instalador não pôde instalar a atualização. Informações adicionais estão disponíveis no arquivo de log. <strong>Windows Instalador 2.0:</strong> Não disponível.<br/></td>
 </tr>
 <tr class="odd">
 <td>1024</td>
-<td>Produto: %1-a atualização ' %2 ' não pôde ser instalada. Código de erro %3.</td>
-<td>Mensagem de erro indicando que o instalador não pôde instalar a atualização. Para obter informações sobre como ativar o logon, consulte <a href="windows-installer-best-practices.md">habilitar o log detalhado no computador do usuário ao solucionar problemas de implantação.</a> <strong>Windows Installer 2,0:</strong> Não disponível.<br/></td>
+<td>Produto: %1 – Não foi possível instalar a atualização '%2'. Código de erro %3.</td>
+<td>Mensagem de erro indicando que o instalador não pôde instalar a atualização. Para obter informações sobre como ativar o log, consulte Habilitar o log detalhado no computador do <a href="windows-installer-best-practices.md">usuário ao solucionar problemas de implantação.</a> <strong>Windows Instalador 2.0:</strong> Não disponível.<br/></td>
 </tr>
 <tr class="even">
 <td>1025</td>
-<td>Produto: %1. O arquivo %2 está sendo usado pelo seguinte processo: nome: %3, ID %4.</td>
-<td><strong>Windows Installer 2,0:</strong> Não disponível.<br/></td>
+<td>Produto: %1. O arquivo %2 está sendo usado pelo seguinte processo: Nome: %3 , ID %4.</td>
+<td><strong>Windows Instalador 2.0:</strong> Não disponível.<br/></td>
 </tr>
 <tr class="odd">
 <td>1026</td>
-<td>Windows O instalador determinou que sua chave de registro de dados de configuração não foi protegida corretamente. O proprietário da chave deve ser um sistema local ou Builtin\Administrators. A chave existente será excluída e recriada com as configurações de segurança apropriadas.</td>
-<td>Mensagem de aviso. <strong> <a href="not-supported-in-windows-installer-version-3-1.md">Windows Installer 3,1 e anteriores</a>:</strong> Não disponível.<br/></td>
+<td>Windows O instalador determinou que sua chave do registro de dados de configuração não foi protegida corretamente. O proprietário da chave deve ser Sistema Local ou Builtin\Administrators. A chave existente será excluída e criada de novo com as configurações de segurança apropriadas.</td>
+<td>Mensagem de aviso. <strong> <a href="not-supported-in-windows-installer-version-3-1.md">Windows Instalador 3.1 e anterior:</a></strong> Não disponível.<br/></td>
 </tr>
 <tr class="even">
 <td>1027</td>
-<td>Windows O instalador determinou que uma subchave do registro %1 em seus dados de configuração não foi protegida corretamente. O proprietário da chave deve ser um sistema local ou Builtin\Administrators. A subchave existente e todo o seu conteúdo serão excluídos.</td>
-<td>Mensagem de aviso. <strong> <a href="not-supported-in-windows-installer-version-3-1.md">Windows Installer 3,1 e anteriores</a>:</strong> Não disponível.<br/></td>
+<td>Windows O instalador determinou que uma sub-chave do Registro %1 em seus dados de configuração não foi protegida corretamente. O proprietário da chave deve ser Sistema Local ou Builtin\Administrators. A sub-chave existente e todo o seu conteúdo serão excluídos.</td>
+<td>Mensagem de aviso. <strong> <a href="not-supported-in-windows-installer-version-3-1.md">Windows Instalador 3.1 e anterior:</a></strong> Não disponível.<br/></td>
 </tr>
 <tr class="odd">
 <td>1028</td>
-<td>Windows O instalador determinou que sua pasta de cache de dados de configuração não foi protegida corretamente. O proprietário da chave deve ser um sistema local ou Builtin\Administrators. A pasta existente será excluída e recriada com as configurações de segurança apropriadas.</td>
-<td>mensagem de aviso<strong><a href="not-supported-in-windows-installer-version-3-1.md">Windows Installer 3,1 e anterior</a>:</strong> não disponível.<br/></td>
+<td>Windows O instalador determinou que sua pasta de cache de dados de configuração não foi protegida corretamente. O proprietário da chave deve ser Sistema Local ou Builtin\Administrators. A pasta existente será excluída e criada de novo com as configurações de segurança apropriadas.</td>
+<td>Mensagem de<strong><a href="not-supported-in-windows-installer-version-3-1.md">aviso Windows Instalador 3.1 e anterior:</a></strong> Não disponível.<br/></td>
 </tr>
 <tr class="even">
 <td>1029</td>
 <td>Produto: %1. Reinicialização necessária.</td>
-<td>Mensagem de aviso indicatiing que uma reinicialização do sistema é necessária para concluir a instalação e a reinicialização foi adiada para um momento posterior. <strong> <a href="not-supported-in-windows-installer-version-3-1.md">Windows Installer 3,1 e anteriores</a>:</strong> Não disponível.<br/></td>
+<td>Mensagem de aviso indicando que uma reinicialização do sistema é necessária para concluir a instalação e que a reinicialização foi adiada posteriormente. <strong> <a href="not-supported-in-windows-installer-version-3-1.md">Windows Instalador 3.1 e anterior:</a></strong> Não disponível.<br/></td>
 </tr>
 <tr class="odd">
 <td>1030</td>
-<td>Produto: %1. o aplicativo tentou instalar uma versão mais recente do arquivo de Windows protegido %2. Talvez seja necessário atualizar o sistema operacional para que esse aplicativo funcione corretamente. (Versão do pacote: %3, versão protegida do sistema operacional: %4).</td>
-<td>mensagem de aviso indicando que a instalação tentou substituir um arquivo crítico protegido por <a href="windows-resource-protection-on-windows-vista.md">Proteção de Recursos do Windows</a>. Uma atualização do sistema operacional pode ser necessária para usar este aplicativo. <strong> <a href="not-supported-in-windows-installer-version-3-1.md">Windows Installer 3,1 e anteriores</a>:</strong> Não disponível.<br/></td>
+<td>Produto: %1. O aplicativo tentou instalar uma versão mais recente do arquivo Windows protegido %2. Talvez seja necessário atualizar seu sistema operacional para que esse aplicativo funcione corretamente. (Versão do pacote: %3, Versão Protegida do Sistema Operacional: %4).</td>
+<td>Mensagem de aviso indicando que a instalação tentou substituir um arquivo crítico protegido pelo <a href="windows-resource-protection-on-windows-vista.md">Windows Resource Protection.</a> Uma atualização do sistema operacional pode ser necessária para usar esse aplicativo. <strong> <a href="not-supported-in-windows-installer-version-3-1.md">Windows Instalador 3.1 e anterior:</a></strong> Não disponível.<br/></td>
 </tr>
 <tr class="even">
 <td>1031</td>
-<td>Produto: %1. O assembly ' %2 ' do componente ' %3 ' está em uso.</td>
-<td>Mensagem de aviso indicando que a instalação tentou atualizar um assembly em uso no momento. O sistema deve ser reiniciado para concluir a atualização desse assembly. <strong> <a href="not-supported-in-windows-installer-version-3-1.md">Windows Installer 3,1 e anteriores</a>:</strong> Não disponível.<br/></td>
+<td>Produto: %1. O assembly '%2' para o componente '%3' está em uso.</td>
+<td>Mensagem de aviso indicando que a instalação tentou atualizar um assembly atualmente em uso. O sistema deve ser reiniciado para concluir a atualização deste assembly. <strong> <a href="not-supported-in-windows-installer-version-3-1.md">Windows Instalador 3.1 e anterior:</a></strong> Não disponível.<br/></td>
 </tr>
 <tr class="odd">
 <td>1032</td>
-<td>Ocorreu um erro ao atualizar as variáveis de ambiente atualizadas durante a instalação de ' %1 '.</td>
-<td>Mensagem de aviso indicando que alguns usuários que fizeram logon no computador podem precisar fazer logoff e logon novamente para concluir a atualização de variáveis de ambiente. <strong> <a href="not-supported-in-windows-installer-version-3-1.md">Windows Installer 3,1 e anteriores</a>:</strong> Não disponível.<br/></td>
+<td>Ocorreu um erro ao atualizar as variáveis de ambiente atualizadas durante a instalação de '%1'.</td>
+<td>Mensagem de aviso indicando que alguns usuários que estão conectados ao computador talvez precisem fazer logoff e fazer logoff para concluir a atualização das variáveis de ambiente. <strong> <a href="not-supported-in-windows-installer-version-3-1.md">Windows Instalador 3.1 e anterior:</a></strong> Não disponível.<br/></td>
 </tr>
 <tr class="even">
 <td>1046</td>
-<td>Produto: %1. Versão: %2. Idioma: %3. Instalação concluída com o status: %4. Fabricante: %5.</td>
-<td>Campo 1- <a href="productname.md"><strong>NomeDoProduto</strong></a> , campo 2- <a href="productversion.md"><strong>ProductVersion</strong></a><br/> Campo 3- <a href="productlanguage.md"> <strong>ProductLanguage</strong></a><br/> <strong> <a href="not-supported-in-windows-installer-version-3-1.md">Windows Installer 3,1 e anteriores</a>:</strong> Não disponível.<br/> Campo 5- <a href="manufacturer.md"> <strong>fabricante</strong></a><br/> <strong> <a href="not-supported-in-windows-installer-4-5.md">Windows Installer 4,5 e anteriores</a>:</strong> Campo 5 não disponível.<br/></td>
+<td>Produto: %1. Versão: %2. Idioma: %3. Instalação concluída com status: %4. Fabricante: %5.</td>
+<td>Campo 1 – <a href="productname.md"><strong>Campo ProductName</strong></a> 2 – <a href="productversion.md"><strong>ProductVersion</strong></a><br/> Campo 3 – <a href="productlanguage.md"> <strong>ProductLanguage</strong></a><br/> <strong> <a href="not-supported-in-windows-installer-version-3-1.md">Windows Instalador 3.1 e anterior:</a></strong> Não disponível.<br/> Campo 5 – <a href="manufacturer.md"> <strong>Fabricante</strong></a><br/> <strong> <a href="not-supported-in-windows-installer-4-5.md">Windows Instalador 4.5 e anteriores:</a></strong> Campo 5 não disponível.<br/></td>
 </tr>
 <tr class="odd">
 <td>1034</td>
-<td>Produto: %1. Versão: %2. Idioma: %3. Remoção concluída com o status: %4. Fabricante: %5.</td>
-<td>Campo 1- <a href="productname.md"><strong>NomeDoProduto</strong></a> , campo 2- <a href="productversion.md"><strong>ProductVersion</strong></a><br/> Campo 3- <a href="productlanguage.md"> <strong>ProductLanguage</strong></a><br/> <strong> <a href="not-supported-in-windows-installer-version-3-1.md">Windows Installer 3,1 e anteriores</a>:</strong> Não disponível.<br/> Campo 5- <a href="manufacturer.md"> <strong>fabricante</strong></a><br/> <strong> <a href="not-supported-in-windows-installer-4-5.md">Windows Installer 4,5 e anteriores</a>:</strong> Campo 5 não disponível.<br/></td>
+<td>Produto: %1. Versão: %2. Idioma: %3. Remoção concluída com status: %4. Fabricante: %5.</td>
+<td>Campo 1 – <a href="productname.md"><strong>Campo ProductName</strong></a> 2 – <a href="productversion.md"><strong>ProductVersion</strong></a><br/> Campo 3 – <a href="productlanguage.md"> <strong>ProductLanguage</strong></a><br/> <strong> <a href="not-supported-in-windows-installer-version-3-1.md">Windows Instalador 3.1 e anterior:</a></strong> Não disponível.<br/> Campo 5 – <a href="manufacturer.md"> <strong>Fabricante</strong></a><br/> <strong> <a href="not-supported-in-windows-installer-4-5.md">Windows Instalador 4.5 e anteriores:</a></strong> Campo 5 não disponível.<br/></td>
 </tr>
 <tr class="even">
 <td>1035</td>
-<td>Produto: %1. Versão: %2. Idioma: %3. Alteração de configuração concluída com o status: %4. Fabricante: %5.</td>
-<td>Campo 1- <a href="productname.md"><strong>NomeDoProduto</strong></a> , campo 2- <a href="productversion.md"><strong>ProductVersion</strong></a><br/> Campo 3- <a href="productlanguage.md"> <strong>ProductLanguage</strong></a><br/> Campo 5- <a href="manufacturer.md"> <strong>fabricante</strong></a><br/> <strong> <a href="not-supported-in-windows-installer-4-5.md">Windows Installer 4,5 e anteriores</a>:</strong> Campo 5 não disponível.<br/></td>
+<td>Produto: %1. Versão: %2. Idioma: %3. Alteração de configuração concluída com status: %4. Fabricante: %5.</td>
+<td>Campo 1 – <a href="productname.md"><strong>Campo ProductName</strong></a> 2 – <a href="productversion.md"><strong>ProductVersion</strong></a><br/> Campo 3 – <a href="productlanguage.md"> <strong>ProductLanguage</strong></a><br/> Campo 5 – <a href="manufacturer.md"> <strong>Fabricante</strong></a><br/> <strong> <a href="not-supported-in-windows-installer-4-5.md">Windows Instalador 4.5 e anteriores:</a></strong> Campo 5 não disponível.<br/></td>
 </tr>
 <tr class="odd">
 <td>1036</td>
-<td>Produto: %1. Versão: %2. Idioma: %3. Atualização: %4. Instalação da atualização concluída com o status: %5. Fabricante: %6.</td>
-<td>Campo 1- <a href="productname.md"><strong>NomeDoProduto</strong></a> , campo 2- <a href="productversion.md"><strong>ProductVersion</strong></a><br/> Campo 3- <a href="productlanguage.md"> <strong>ProductLanguage</strong></a><br/> Campo 4-este é o nome amigável do usuário se a <a href="msipatchmetadata-table.md">tabela MsiPatchMetadata</a> estiver presente no pacote de patch. Caso contrário, esse é o GUID de código de patch do patch.<br/> Campo 5-status da instalação da atualização.<br/> <strong> <a href="not-supported-in-windows-installer-version-3-1.md">Windows Installer 3,1 e anteriores</a>:</strong> Não disponível.<br/> Campo 6- <a href="manufacturer.md"> <strong>fabricante</strong></a><br/> <strong> <a href="not-supported-in-windows-installer-4-5.md">Windows Installer 4,5 e anteriores</a>:</strong> Campo 6 não disponível.<br/></td>
+<td>Produto: %1. Versão: %2. Idioma: %3. Atualização: %4. Atualização da instalação concluída com o status: %5. Fabricante: %6.</td>
+<td>Campo 1 – <a href="productname.md"><strong>Campo ProductName</strong></a> 2 – <a href="productversion.md"><strong>ProductVersion</strong></a><br/> Campo 3 – <a href="productlanguage.md"> <strong>ProductLanguage</strong></a><br/> Campo 4 – esse é o nome amigável se a <a href="msipatchmetadata-table.md">Tabela MsiPatchMetadata</a> estiver presente no pacote de patch. Caso contrário, esse é o GUID do código de patch do patch.<br/> Campo 5 – Status da instalação da atualização.<br/> <strong> <a href="not-supported-in-windows-installer-version-3-1.md">Windows Instalador 3.1 e anterior:</a></strong> Não disponível.<br/> Campo 6 – <a href="manufacturer.md"> <strong>Fabricante</strong></a><br/> <strong> <a href="not-supported-in-windows-installer-4-5.md">Windows Instalador 4.5 e anteriores:</a></strong> Campo 6 não disponível.<br/></td>
 </tr>
 <tr class="even">
 <td>1037</td>
-<td>Produto: %1. Versão: %2. Idioma: %3. Atualização: %4. Remoção da atualização concluída com status: %5. Fabricante: %6.</td>
-<td>Campo 1 – <a href="productname.md"><strong>Campo ProductName</strong></a> 2 – <a href="productversion.md"><strong>ProductVersion</strong></a><br/> Campo 3 – <a href="productlanguage.md"> <strong>ProductLanguage</strong></a><br/> Campo 4 – esse é o nome amigável se a <a href="msipatchmetadata-table.md">Tabela MsiPatchMetadata</a> estiver presente no pacote de patch. Caso contrário, esse é o GUID do código de patch do patch.<br/> Campo 5 – Status da remoção da atualização.<br/> <strong> <a href="not-supported-in-windows-installer-version-3-1.md">Windows Instalador 3.1 e anterior:</a></strong> Não disponível.<br/> Campo 6 – <a href="manufacturer.md"> <strong>Fabricante</strong></a><br/> <strong> <a href="not-supported-in-windows-installer-4-5.md">Windows Instalador 4.5 e anteriores:</a></strong> Campo 6 não disponível.<br/></td>
+<td>Produto: %1. Versão: %2. Idioma: %3. Atualização: %4. Remoção de atualização concluída com o status: %5. Fabricante: %6.</td>
+<td>Campo 1- <a href="productname.md"><strong>NomeDoProduto</strong></a> , campo 2- <a href="productversion.md"><strong>ProductVersion</strong></a><br/> Campo 3- <a href="productlanguage.md"> <strong>ProductLanguage</strong></a><br/> Campo 4-este é o nome amigável do usuário se a <a href="msipatchmetadata-table.md">tabela MsiPatchMetadata</a> estiver presente no pacote de patch. Caso contrário, esse é o GUID de código de patch do patch.<br/> Campo 5-status da remoção da atualização.<br/> <strong> <a href="not-supported-in-windows-installer-version-3-1.md">Windows Installer 3,1 e anteriores</a>:</strong> Não disponível.<br/> Campo 6- <a href="manufacturer.md"> <strong>fabricante</strong></a><br/> <strong> <a href="not-supported-in-windows-installer-4-5.md">Windows Installer 4,5 e anteriores</a>:</strong> Campo 6 não disponível.<br/></td>
 </tr>
 <tr class="odd">
 <td>1038</td>
 <td>Produto: %1. Versão: %2. Idioma: %3. É necessário reiniciar. Tipo de reinicialização: %4. Motivo da reinicialização: %5. Fabricante: %6.</td>
-<td>Campo 1 – <a href="productname.md"><strong>Campo ProductName</strong></a> 2 – <a href="productversion.md"><strong>ProductVersion</strong></a><br/> Campo 3 – <a href="productlanguage.md"> <strong>ProductLanguage</strong></a><br/> <dl> Campo 4 – uma constante que indica o tipo de reinicialização: <br/> <dl> <strong>msirbRebootImmediate</strong> (1) – Houve uma reinicialização imediata do computador.<br />
-<strong>msirbRebootDeferred</strong> (2) – um usuário ou administrador adiou uma reinicialização necessária do computador usando a interface do usuário ou <a href="reboot.md"><strong>REBOOT</strong></a>=ReallySuppress.<br />
-</dl> </dd> Field 5 - A constant indicating the reason for the restart:<br/> <dl> <strong>msirbRebootUndeterminedReason</strong> (0)– Reinicialização necessária por um motivo não especificado.<br />
-<strong>msirbRebootInUseFilesReason</strong> (1)- Foi necessária uma reinicialização para substituir os arquivos em uso.<br />
-<strong>msirbRebootScheduleRebootReason</strong> (2)- O pacote contém uma <a href="schedulereboot-action.md">ação ScheduleReboot.</a><br />
-<strong>msirbRebootForceRebootReason</strong> (3)- O pacote contém uma <a href="forcereboot-action.md">ação ForceReboot.</a><br />
-<strong>msirbRebootCustomActionReason</strong> (4)- Uma ação personalizada chamada <a href="/windows/desktop/api/Msiquery/nf-msiquery-msisetmode"><strong>função MsiSetMode.</strong></a><br />
-</dl> </dd> </dl> <strong> <a href="not-supported-in-windows-installer-version-3-1.md">Windows Instalador 3.1 e anterior:</a></strong> Não disponível.<br/> Campo 6 – <a href="manufacturer.md"> <strong>Fabricante</strong></a><br/> <strong> <a href="not-supported-in-windows-installer-4-5.md">Windows Instalador 4.5 e anteriores:</a></strong> Campo 6 não disponível.<br/></td>
+<td>Campo 1- <a href="productname.md"><strong>NomeDoProduto</strong></a> , campo 2- <a href="productversion.md"><strong>ProductVersion</strong></a><br/> Campo 3- <a href="productlanguage.md"> <strong>ProductLanguage</strong></a><br/> <dl> Field 4-uma constante que indica o tipo de reinicialização: <br/> <dl> <strong>msirbRebootImmediate</strong> (1)-houve uma reinicialização imediata do computador.<br />
+<strong>msirbRebootDeferred</strong> (2)-um usuário ou administrador adiau uma reinicialização necessária do computador usando a interface do usuário ou <a href="reboot.md"><strong>reboot</strong></a>= ReallySuppress.<br />
+</dl> </dd> Field 5 - A constant indicating the reason for the restart:<br/> <dl> <strong>msirbRebootUndeterminedReason</strong> (0)-reinicialização necessária por um motivo não especificado.<br />
+<strong>msirbRebootInUseFilesReason</strong> (1)-uma reinicialização era necessária para substituir os arquivos em uso.<br />
+<strong>msirbRebootScheduleRebootReason</strong> (2)-o pacote contém uma ação <a href="schedulereboot-action.md">ScheduleReboot</a> .<br />
+<strong>msirbRebootForceRebootReason</strong> (3)-o pacote contém uma ação <a href="forcereboot-action.md">ForceReboot</a> .<br />
+<strong>msirbRebootCustomActionReason</strong> (4) – uma ação personalizada chamada função <a href="/windows/desktop/api/Msiquery/nf-msiquery-msisetmode"><strong>MsiSetMode</strong></a> .<br />
+</dl> </dd> </dl> <strong> <a href="not-supported-in-windows-installer-version-3-1.md">Windows Installer 3,1 e anteriores</a>:</strong> Não disponível.<br/> Campo 6- <a href="manufacturer.md"> <strong>fabricante</strong></a><br/> <strong> <a href="not-supported-in-windows-installer-4-5.md">Windows Installer 4,5 e anteriores</a>:</strong> Campo 6 não disponível.<br/></td>
 </tr>
 <tr class="even">
 <td>10005</td>
-<td>O instalador encontrou um erro inesperado ao instalar esse pacote. Isso pode indicar um problema com este pacote. O código de erro é [1]. {{Os argumentos são: [2], [3], [4]}}</td>
-<td>Mensagem de erro indicando que ocorreu um erro interno. O texto dessa mensagem baseia-se no texto escrito para o erro 5 na tabela Erro.</td>
+<td>O instalador encontrou um erro inesperado ao instalar este pacote. Isso pode indicar um problema com este pacote. O código de erro é [1]. {{Os argumentos são: [2], [3], [4]}}</td>
+<td>Mensagem de erro indicando que ocorreu um erro interno. O texto dessa mensagem é baseado no texto escrito para o erro 5 na tabela de erros.</td>
 </tr>
 <tr class="odd">
 <td>11707</td>
-<td>Produto [2] – Operação de instalação concluída com êxito</td>
-<td>Mensagem informando que a instalação do produto foi bem-sucedida.</td>
+<td>Produto [2] – operação de instalação concluída com êxito</td>
+<td>Mensagem informativa de que a instalação do produto foi bem-sucedida.</td>
 </tr>
 <tr class="even">
 <td>11708</td>
-<td>Produto [2] – Falha na operação de instalação</td>
-<td>Mensagem de erro de que a instalação do produto falhou.</td>
+<td>Produto [2] – falha na operação de instalação</td>
+<td>Mensagem de erro informando que a instalação do produto falhou.</td>
 </tr>
 <tr class="odd">
 <td>11728</td>
-<td>Produto [2] – Configuração concluída com êxito.</td>
-<td>Mensagem informando que a configuração do produto foi bem-sucedida.</td>
+<td>Produto [2]--configuração concluída com êxito.</td>
+<td>Mensagem informativa de que a configuração do produto foi bem-sucedida.</td>
 </tr>
 </tbody>
 </table>
@@ -247,7 +247,7 @@ para obter informações sobre como habilitar o log detalhado no computador de u
 
  
 
-Você pode importar cadeias de caracteres de erros localizados para eventos em seu banco de dados usando Msidb.exe ou [**MsiDatabaseImport**](/windows/desktop/api/Msiquery/nf-msiquery-msidatabaseimporta). O SDK inclui cadeias de caracteres de recurso localizadas para cada um dos idiomas listados na seção [Localizando as tabelas Error e ActionText.](localizing-the-error-and-actiontext-tables.md) Se as cadeias de caracteres de erro correspondentes a eventos não são populadas, o instalador carrega cadeias de caracteres localizadas para o idioma especificado pela [**propriedade ProductLanguage.**](productlanguage.md)
+Você pode importar cadeias de erros localizadas para eventos em seu banco de dados usando Msidb.exe ou [**MsiDatabaseImport**](/windows/desktop/api/Msiquery/nf-msiquery-msidatabaseimporta). O SDK inclui cadeias de caracteres de recursos localizadas para cada um dos idiomas listados na seção [localizando as tabelas Error e ActionText](localizing-the-error-and-actiontext-tables.md) . Se as cadeias de caracteres de erro correspondentes a eventos não forem populadas, o instalador carregará cadeias de caracteres localizadas para o idioma especificado pela propriedade [**ProductLanguage**](productlanguage.md) .
 
  
 

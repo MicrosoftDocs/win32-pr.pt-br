@@ -1,7 +1,7 @@
 ---
 description: Obtém um valor de ponto flutuante.
 ms.assetid: 239dd29c-092a-4b9f-ba24-eb6181e91461
-title: Método ID3DXBaseEffect::GetFloat (D3DX9Shader.h)
+title: 'Método ID3DXBaseEffect:: GetFloat (D3DX9Shader. h)'
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -21,7 +21,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118522305"
 ---
-# <a name="id3dxbaseeffectgetfloat-method"></a>Método ID3DXBaseEffect::GetFloat
+# <a name="id3dxbaseeffectgetfloat-method"></a>Método ID3DXBaseEffect:: getFloat
 
 Obtém um valor de ponto flutuante.
 
@@ -41,7 +41,7 @@ HRESULT GetFloat(
 
 <dl> <dt>
 
-*hParameter* \[ Em\]
+*hParameter* \[ no\]
 </dt> <dd>
 
 Tipo: **[D3DXHANDLE](dx9-graphics-reference-effects-constants.md)**
@@ -50,10 +50,10 @@ Identificador exclusivo. Consulte [Handles (Direct3D 9)](handles.md).
 
 </dd> <dt>
 
-*pf* \[ out\]
+*PF* \[ fora\]
 </dt> <dd>
 
-Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)\***
+Tipo: **[ **float**](../winprog/windows-data-types.md)\***
 
 Retorna um valor de ponto flutuante.
 
@@ -63,7 +63,7 @@ Retorna um valor de ponto flutuante.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se o método for bem-sucedido, o valor de retorno será D3D \_ OK. Se o método falhar, o valor de retorno poderá ser D3DERR \_ INVALIDCALL.
+Se o método for bem sucedido, o valor de retorno será D3D \_ OK. Se o método falhar, o valor de retorno poderá ser D3DERR \_ INVALIDCALL.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -71,8 +71,8 @@ Se o método for bem-sucedido, o valor de retorno será D3D \_ OK. Se o método 
 
 | Requisito | Valor |
 |--------------------|------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3DX9Shader.h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>     |
+| parâmetro<br/>  | <dl> <dt>D3DX9Shader. h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>     |
 
 
 
@@ -83,7 +83,7 @@ Se o método for bem-sucedido, o valor de retorno será D3D \_ OK. Se o método 
 [ID3DXBaseEffect](id3dxbaseeffect.md)
 </dt> <dt>
 
-[**Setfloat**](id3dxbaseeffect--setfloat.md)
+[**SetFloat**](id3dxbaseeffect--setfloat.md)
 </dt> </dl>
 
  

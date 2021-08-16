@@ -1,7 +1,7 @@
 ---
-description: Serviço de Desaplicação de Recursos COM+
+description: COM+ Resource Dispenser Service
 ms.assetid: 34825538-85dd-4e86-a306-79cd60b3bc0b
-title: Serviço de Desaplicação de Recursos COM+
+title: COM+ Resource Dispenser Service
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 4dfb83d6f88eff89ccccad313f8c5251df1924b299d4b082d850cbde562ce4c2
@@ -11,7 +11,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118548771"
 ---
-# <a name="com-resource-dispenser-service"></a>Serviço de Desaplicação de Recursos COM+
+# <a name="com-resource-dispenser-service"></a>COM+ Resource Dispenser Service
 
 Os componentes do aplicativo podem usar o distribuidor de *recursos* COM+ para acessar informações compartilhadas.
 

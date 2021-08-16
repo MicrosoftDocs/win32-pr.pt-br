@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bcf8ddfee6f15532e4dad91fc1e34e1f136ea99b
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 8499af8941ebbdd37001e3f5a0d9ea3ebc98fd24dbeac96083fd5579b1872dde
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103825365"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118960735"
 ---
 # <a name="ms-ds-krbtgt-link-attribute"></a>atributo ms-DS-KrbTgt-link
 
@@ -55,7 +55,7 @@ Usado com RODCs para definir qual \_ conta krbtgt xxxx corresponde a cada RODC.
 | ID do link                | 2.100                                      |
 | MAPI-Id                | \-                                        |
 | System-Only            | Falso                                     |
-| É de valor único       | True                                      |
+| É de valor único       | Verdadeiro                                      |
 | É indexado             | Falso                                     |
 | No catálogo global      | Falso                                     |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                              |
@@ -76,7 +76,7 @@ Usado com RODCs para definir qual \_ conta krbtgt xxxx corresponde a cada RODC.
 | ID do link                | 2.100                                      |
 | MAPI-Id                | \-                                        |
 | System-Only            | Falso                                     |
-| É de valor único       | True                                      |
+| É de valor único       | Verdadeiro                                      |
 | É indexado             | Falso                                     |
 | No catálogo global      | Falso                                     |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                              |
@@ -97,7 +97,7 @@ Usado com RODCs para definir qual \_ conta krbtgt xxxx corresponde a cada RODC.
 | ID do link                | 2.100                                      |
 | MAPI-Id                | \-                                        |
 | System-Only            | Falso                                     |
-| É de valor único       | True                                      |
+| É de valor único       | Verdadeiro                                      |
 | É indexado             | Falso                                     |
 | No catálogo global      | Falso                                     |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                              |

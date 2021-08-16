@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b95631e51247d7919307f36dd0af10c72621a612
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 3386a0f38187e375f9dae0e390a413a1e64565f15d39e1e9f1e436c9238bea99
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455193"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118759287"
 ---
 # <a name="wm_getdpiscaledsize-message"></a>Mensagem do WM \_ GETDPISCALEDSIZE
 
@@ -56,7 +56,7 @@ O \_ \_ valor out no lParam deve ser gravado pelo aplicativo para especificar o 
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 A função retorna um BOOL. Retornar TRUE indica que um novo tamanho foi computado. Retornar FALSE indica que a mensagem não será tratada e o dimensionamento de DPI linear padrão será aplicado à janela.
 
@@ -74,9 +74,9 @@ Não há nenhum tratamento padrão específico dessa mensagem em [DefWindowProc]
 
 | Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10, versão 1703\]<br/>                            |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2016\]<br/>                                 |
-| parâmetro<br/>                   | <dl> <dt>WinUser. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 10, \[ somente aplicativos da área de trabalho da versão 1703\]<br/>                            |
+| Servidor mínimo com suporte<br/> | Windows Server 2016 \[ somente aplicativos da área de trabalho\]<br/>                                 |
+| Cabeçalho<br/>                   | <dl> <dt>WinUser. h</dt> </dl> |
 
 
 

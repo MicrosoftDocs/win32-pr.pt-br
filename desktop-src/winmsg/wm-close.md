@@ -73,7 +73,7 @@ LRESULT CALLBACK WindowProc(
     return 0;
 }
 ```
-Exemplo de [Windows exemplos clássicos](https://github.com/microsoft/Windows-classic-samples/blob/1d363ff4bd17d8e20415b92e2ee989d615cc0d91/Samples/RadialController/cpp/RadialController.cpp) em GitHub.
+Exemplo de [Windows exemplos clássicos](https://github.com/microsoft/Windows-classic-samples/blob/1d363ff4bd17d8e20415b92e2ee989d615cc0d91/Samples/RadialController/cpp/RadialController.cpp) GitHub.
 
 
 ## <a name="remarks"></a>Comentários
