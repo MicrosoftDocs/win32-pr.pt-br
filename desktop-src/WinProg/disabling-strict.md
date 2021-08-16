@@ -1,21 +1,21 @@
 ---
-title: Desabilitando estrito
-description: Para desabilitar a verificação de tipo estrito, defina o nome do símbolo como não \_ estrito. No Visual C/C++, você também pode especificar essa definição na linha de comando ou em um makefile especificando/DNO \_ Strict como uma opção de compilador.
+title: Desabilitando STRICT
+description: Para desabilitar a verificação de tipo STRICT, defina o nome do símbolo NO \_ STRICT. No Visual C/C++, você também pode especificar essa definição na linha de comando ou em um makefile especificando /DNO STRICT como uma opção \_ do compilador.
 ms.assetid: 57b01d2e-1f64-4ac0-b4f0-624c241899d7
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 62bfdfef2aa7988576aa4c1e17f002639de98121
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 078361b5cc3fd4916ac2ab4f7207752e869568b8781c9ef3dd8e38427d252592
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103636394"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117743652"
 ---
-# <a name="disabling-strict"></a>Desabilitando estrito
+# <a name="disabling-strict"></a>Desabilitando STRICT
 
-Para desabilitar a verificação de tipo **estrito** , defina o nome do símbolo como **não \_ estrito**. No Visual C/C++, você também pode especificar essa definição na linha de comando ou em um makefile especificando **/DNO \_ Strict** como uma opção de compilador.
+Para desabilitar a verificação de tipo **STRICT,** defina o nome do símbolo **NO \_ STRICT.** No Visual C/C++, você também pode especificar essa definição na linha de comando ou em um makefile especificando **/DNO \_ STRICT** como uma opção do compilador.
 
-Para definir **não \_ estrito** em uma base arquivo por arquivo, insira uma instrução de **\# definição** antes de incluir Windows. h:
+Para definir **NO \_ STRICT** em uma base de arquivo por arquivo, insira uma instrução **\# define** antes de incluir Windows.h:
 
 
 ```C++
@@ -25,7 +25,7 @@ Para definir **não \_ estrito** em uma base arquivo por arquivo, insira uma ins
 
 
 
-Para obter melhores resultados, você também deve definir o nível de aviso para mensagens de erro para pelo menos **/w3**. Isso é sempre aconselhável com aplicativos para Windows, pois uma prática de codificação que causa um aviso (por exemplo, passar o número incorreto de parâmetros) geralmente causa um erro fatal em tempo de execução se não for corrigida.
+Para melhores resultados, você também deve definir o nível de aviso para mensagens de erro como pelo menos **/W3**. Isso é sempre aconselhável com aplicativos para Windows, porque uma prática de codificação que causa um aviso (por exemplo, passar o número errado de parâmetros) geralmente causa um erro fatal em tempo de executar se ele não for corrigido.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -34,12 +34,12 @@ Para obter melhores resultados, você também deve definir o nível de aviso par
 [Habilitando STRICT](enabling-strict.md)
 </dt> <dt>
 
-[Conformidade estrita](strict-compliance.md)
+[Conformidade ESTRITA](strict-compliance.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

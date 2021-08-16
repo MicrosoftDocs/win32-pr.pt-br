@@ -1,7 +1,7 @@
 ---
 description: Define a descrição da faixa.
 ms.assetid: bc3324b3-ca23-4035-958d-9763a70071f2
-title: 'Método ID3DXAnimationController:: SetTrackDesc (D3dx9anim. h)'
+title: Método ID3DXAnimationController::SetTrackDesc (D3dx9anim.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 1aca9385f1e9bc9439b9fe4b3dc1acddda94e395
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: e25536f3e36e07a7145623efb6a6515f3f77c11177204f5213539c69f454b705
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105791264"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119122077"
 ---
-# <a name="id3dxanimationcontrollersettrackdesc-method"></a>Método ID3DXAnimationController:: SetTrackDesc
+# <a name="id3dxanimationcontrollersettrackdesc-method"></a>Método ID3DXAnimationController::SetTrackDesc
 
 Define a descrição da faixa.
 
@@ -41,29 +41,29 @@ HRESULT SetTrackDesc(
 
 <dl> <dt>
 
-*Acompanhar* \[ no\]
+*Acompanhar* \[ Em\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Identificador da faixa a ser modificada.
+Identificador da faixa a ser modificado.
 
 </dd> <dt>
 
-*pDesc* \[ no\]
+*pDesc* \[ Em\]
 </dt> <dd>
 
-Tipo: **[ **LPD3DXTRACK \_ desc**](d3dxtrack-desc.md)**
+Tipo: **[ **LPD3DXTRACK \_ DESC**](d3dxtrack-desc.md)**
 
 Descrição da faixa.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se o método for bem sucedido, o valor de retorno será S \_ OK. Se o método falhar, o valor de retorno poderá ser um dos seguintes valores: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
+Se o método for bem-sucedido, o valor de retorno será S \_ OK. Se o método falhar, o valor de retorno poderá ser um dos seguintes valores: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -71,8 +71,8 @@ Se o método for bem sucedido, o valor de retorno será S \_ OK. Se o método fa
 
 | Requisito | Valor |
 |--------------------|----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3dx9anim. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| parâmetro<br/>  | <dl> <dt>D3dx9anim.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

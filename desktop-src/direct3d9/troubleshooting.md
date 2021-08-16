@@ -4,12 +4,12 @@ ms.assetid: 27b87f0f-7118-4252-b6e8-6ea18a9399e4
 title: Solução de problemas (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6726e761dd8c15e2da18e6c370472a73e82cef0b
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 637ac4b43e8947a6011e35ae9a36db7829ed47fd4d5740f93778116e4ee8f9ae
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105808223"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119044074"
 ---
 # <a name="troubleshooting-direct3d-9"></a>Solução de problemas (Direct3D 9)
 
@@ -90,7 +90,7 @@ Por motivos de desempenho, a versão de depuração do tempo de execução do mo
 
 Embora vários métodos de modo do Direct3D Immediate imponham limites nos valores que eles podem aceitar, esses limites geralmente são verificados e aplicados pela versão de depuração do tempo de execução do modo do Direct3D Immediate. Os aplicativos devem estar em conformidade com esses limites ou resultados imprevisíveis e indesejáveis podem ocorrer durante a execução na versão comercial do Direct3D. Por exemplo, o método [**IDirect3DDevice9::D rawprimitive**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-drawprimitive) aceita um parâmetro (primitiveCount) que indica o número de primitivos que o método processará. O método só pode aceitar valores entre 0 e D3DMAXNUMPRIMITIVES. Na versão de depuração do Direct3D, se você passar mais de D3DMAXNUMPRIMITIVES primitivos, o método falhará normalmente, imprimindo uma mensagem de erro no log de erros e retornando um valor de erro para seu aplicativo. Por outro lado, se o seu aplicativo fizer o mesmo erro quando ele estiver em execução com a versão de varejo do tempo de execução, o comportamento será indefinido. Por motivos de desempenho, o método não valida os parâmetros, resultando em comportamento imprevisível e de situação completamente quando eles não são válidos. Em alguns casos, a chamada pode funcionar e, em outros casos, pode causar uma falha de memória no Direct3D. Se uma chamada inválida funciona consistentemente com uma configuração de hardware específica e a versão do DirectX, não há nenhuma garantia de que ela continuará a funcionar em outro hardware ou em versões posteriores do DirectX.
 
-Se seu aplicativo encontrar falhas não explicadas ao executar com o arquivo de tempo de execução do Direct3D de varejo, teste em relação à versão de depuração e examine de forma mais detalhada os casos em que seu aplicativo passa parâmetros inválidos. Use o miniaplicativo do painel de controle do DirectX, alterne para o tempo de execução de depuração, se necessário, e marque a opção "interromper no D3DError". Essa opção forçará o tempo de execução a usar o método DebugBreak do Windows para forçar o aplicativo a parar quando um bug de aplicativo for detectado.
+Se seu aplicativo encontrar falhas não explicadas ao executar com o arquivo de tempo de execução do Direct3D de varejo, teste em relação à versão de depuração e examine de forma mais detalhada os casos em que seu aplicativo passa parâmetros inválidos. Use o miniaplicativo do painel de controle do DirectX, alterne para o tempo de execução de depuração, se necessário, e marque a opção "interromper no D3DError". essa opção forçará o tempo de execução a usar o método Windows DebugBreak para forçar o aplicativo a parar quando um bug de aplicativo for detectado.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

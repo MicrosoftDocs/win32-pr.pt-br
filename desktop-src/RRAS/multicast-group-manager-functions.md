@@ -1,6 +1,6 @@
 ---
-title: Funções do Gerenciador de Grupos multicast
-description: As funções a seguir são usadas para se registrar no gerenciador de grupos multicast
+title: Funções do Gerenciador de grupos multicast
+description: As funções a seguir são usadas para registrar com o Gerenciador de grupo de multicast
 ms.assetid: d4374ced-06ea-49dd-8f52-0d06612aa4c3
 ms.topic: article
 ms.date: 05/31/2018
@@ -11,15 +11,15 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117790380"
 ---
-# <a name="multicast-group-manager-functions"></a>Funções do Gerenciador de Grupos multicast
+# <a name="multicast-group-manager-functions"></a>Funções do Gerenciador de grupos multicast
 
-As seguintes funções são usadas para se registrar no gerenciador de grupos multicast:
+As funções a seguir são usadas para registrar com o Gerenciador do grupo de multicast:
 
 [**MgmRegisterMProtocol**](/windows/desktop/api/Mgm/nf-mgm-mgmregistermprotocol)
 
 [**MgmDeRegisterMProtocol**](/windows/desktop/api/Mgm/nf-mgm-mgmderegistermprotocol)
 
-As seguintes funções são usadas para gerenciar a propriedade da interface:
+As funções a seguir são usadas para gerenciar a propriedade da interface:
 
 [**MgmGetProtocolOnInterface**](/windows/desktop/api/Mgm/nf-mgm-mgmgetprotocoloninterface)
 
@@ -27,13 +27,13 @@ As seguintes funções são usadas para gerenciar a propriedade da interface:
 
 [**MgmReleaseInterfaceOwnership**](/windows/desktop/api/Mgm/nf-mgm-mgmreleaseinterfaceownership)
 
-As seguintes funções são usadas para gerenciar a associação de grupo:
+As funções a seguir são usadas para gerenciar a associação de Grupo:
 
 [**MgmAddGroupMembershipEntry**](/windows/desktop/api/Mgm/nf-mgm-mgmaddgroupmembershipentry)
 
 [**MgmDeleteGroupMembershipEntry**](/windows/desktop/api/Mgm/nf-mgm-mgmdeletegroupmembershipentry)
 
-As seguintes funções são usadas para obter MFEs (entradas de encaminhamento multicast) e estatísticas MFE:
+As funções a seguir são usadas para obter entradas de encaminhamento de multicast (MFEs) e estatísticas de MFE:
 
 [**MgmGetFirstMfe**](/windows/desktop/api/Mgm/nf-mgm-mgmgetfirstmfe)
 
@@ -51,7 +51,7 @@ A função a seguir é usada para modificar MFEs:
 
 [**MgmSetMfe**](/windows/desktop/api/Mgm/nf-mgm-mgmsetmfe)
 
-As funções a seguir são usadas para obter uma lista de grupos que foram ingressados:
+As funções a seguir são usadas para obter uma lista de grupos que foram associados:
 
 [**MgmGroupEnumerationStart**](/windows/desktop/api/Mgm/nf-mgm-mgmgroupenumerationstart)
 

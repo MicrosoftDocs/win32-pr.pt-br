@@ -3,9 +3,9 @@ title: Método Media. getItemInfo
 description: O método getItemInfo recupera o valor do atributo especificado para o item de mídia atual.
 ms.assetid: a1ee0d40-b979-424b-bd4e-d1acf6354d8d
 keywords:
-- método getItemInfo Windows Media Player
-- método getItemInfo Windows Media Player, classe de mídia
-- Classe de mídia Windows Media Player, método getItemInfo
+- Windows Media Player do método getItemInfo
+- método getItemInfo Windows Media Player, classe Media
+- classe de mídia Windows Media Player, método getItemInfo
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ef7e7348e73e3550ed668f6694ccfe9ed615215b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ab885a8505f3637d21f4a406e5a7c324ee6b9ec90e5ad0434a385e321072ccaf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105763472"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119135149"
 ---
 # <a name="mediagetiteminfo-method"></a>Método Media. getItemInfo
 
@@ -45,11 +45,11 @@ strRetVal = Media.getItemInfo(
 *nome* \[ do no\]
 </dt> <dd>
 
-**Cadeia de caracteres** que contém o nome do atributo. Para obter informações sobre os atributos com suporte do Windows Media Player, consulte a [referência de atributo](attribute-reference.md)do Windows Media Player.
+**Cadeia de caracteres** que contém o nome do atributo. para obter informações sobre os atributos com suporte pelo Windows Media Player, consulte a [referência de atributo](attribute-reference.md)Windows Media Player.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método retorna uma **cadeia de caracteres** que representa o valor do atributo especificado. Para atributos cujo valor subjacente é **booliano**, ele retorna a cadeia de caracteres "true" ou "false".
 
@@ -63,15 +63,15 @@ Para recuperar atributos com vários valores e atributos com valores complexos, 
 
 Para usar esse método, é necessário ter acesso de leitura à biblioteca. Para obter mais informações, consulte [acesso à biblioteca](library-access.md).
 
-Para compartilhar as bibliotecas de mídia do Windows por UPnP, o Windows Media Player cria um serviço de diretório de conteúdo (CDS) que é exposto por UPnP. Outros dispositivos podem, então, navegar e navegar pelas bibliotecas.
+para compartilhar as bibliotecas de mídia Windows sobre UPnP, Windows Media Player cria um serviço de diretório de conteúdo (CDS) que é exposto por upnp. Outros dispositivos podem, então, navegar e navegar pelas bibliotecas.
 
-No Windows 7, um aplicativo pode usar os atributos Windows Media Player [**TrackingID**](trackingid-attribute.md) e [**MediaType**](mediatype-attribute.md) para construir a ID de objeto de cada item no CDs. Observe que essa construção pode mudar em versões futuras do Windows. O aplicativo passa cada uma dessas cadeias de caracteres de atributo no parâmetro *Name* em uma chamada para **getItemInfo**. **getItemInfo** retorna o valor para cada atributo no valor de retorno. O aplicativo usa a seguinte sintaxe para construir cada ID de objeto:
+no Windows 7, um aplicativo pode usar os atributos Windows Media Player [**trackingid**](trackingid-attribute.md) e [**MediaType**](mediatype-attribute.md) para construir a ID de objeto de cada item no CDS. Observe que essa construção pode ser alterada em versões futuras do Windows. O aplicativo passa cada uma dessas cadeias de caracteres de atributo no parâmetro *Name* em uma chamada para **getItemInfo**. **getItemInfo** retorna o valor para cada atributo no valor de retorno. O aplicativo usa a seguinte sintaxe para construir cada ID de objeto:
 
 *TrackingID*. 0. *Mediatypeid*
 
 Essa sintaxe tem o seguinte significado:
 
--   *TrackingID* é a cadeia de caracteres que é armazenada no atributo [**TrackingID**](trackingid-attribute.md) do Windows Media Player do item de mídia.
+-   *trackingid* é a cadeia de caracteres que é armazenada no atributo Windows Media Player [**trackingid**](trackingid-attribute.md) do item de mídia.
 -   *Mediatypeid* depende do valor do atributo [**MediaType**](mediatype-attribute.md) , conforme mostrado na tabela a seguir:
 
     | Atributo MediaType                      | MediaTypeid |
@@ -119,10 +119,10 @@ Essa sintaxe tem o seguinte significado:
 [**Lendo valores de atributo**](reading-attribute-values.md)
 </dt> <dt>
 
-[**Settings. mediaAccessRights**](settings-mediaaccessrights.md)
+[**Configurações. mediaAccessRights**](settings-mediaaccessrights.md)
 </dt> <dt>
 
-[**Settings. requestMediaAccessRights**](settings-requestmediaaccessrights.md)
+[**Configurações. requestMediaAccessRights**](settings-requestmediaaccessrights.md)
 </dt> </dl>
 
  

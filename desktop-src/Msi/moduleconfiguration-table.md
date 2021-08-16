@@ -4,12 +4,12 @@ ms.assetid: 3b77cc23-c104-4adc-868c-3aa2b5794bc7
 title: Tabela ModuleConfiguration
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fa187c10b5d3376a9bec78eb897b4982445ff01f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c499e313633d1668db81c91654800d1d5824192839329316f55040fd3bc7bad2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104170054"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119963056"
 ---
 # <a name="moduleconfiguration-table"></a>Tabela ModuleConfiguration
 
@@ -21,16 +21,16 @@ A Tabela ModuleConfiguration tem as colunas a seguir.
 
 | Coluna       | Tipo                         | Chave | Nullable |
 |--------------|------------------------------|-----|----------|
-| Nome         | [Identificador](identifier.md) | S   | N        |
+| Nome         | [Identificador](identifier.md) | Y   | N        |
 | Formatar       | [Inteiro](integer.md)       | N   | N        |
-| Tipo         | [Text](text.md)             | N   | S        |
-| ContextData  | [Text](text.md)             | N   | S        |
-| DefaultValue | [Text](text.md)             | N   | S        |
-| Atributos   | [Inteiro](integer.md)       | N   | S        |
-| DisplayName  | [Text](text.md)             | N   | S        |
-| Descrição  | [Text](text.md)             | N   | S        |
-| HelpLocation | [Text](text.md)             | N   | S        |
-| HelpKeyword  | [Text](text.md)             | N   | S        |
+| Tipo         | [Text](text.md)             | N   | Y        |
+| ContextData  | [Text](text.md)             | N   | Y        |
+| DefaultValue | [Text](text.md)             | N   | Y        |
+| Atributos   | [Inteiro](integer.md)       | N   | Y        |
+| DisplayName  | [Text](text.md)             | N   | Y        |
+| Descrição  | [Text](text.md)             | N   | Y        |
+| HelpLocation | [Text](text.md)             | N   | Y        |
+| HelpKeyword  | [Text](text.md)             | N   | Y        |
 
 
 
@@ -99,8 +99,8 @@ Esta coluna é um campo de bits que contém atributos para este item configuráv
 
 | Nome                             | Decimal | Hexadecimal | Descrição                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 |----------------------------------|---------|-------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| msmConfigurableOptionKeyNoOrphan | 1       | 0x00000001  | Esse atributo só se aplica a registros que listam uma chave estrangeira em uma tabela de módulo em seu campo DefaultValue. A ferramenta de mesclagem ignora o atributo para todos os formatos que não sejam os [tipos de formato de chave](key-format-types.md). Os itens não listados na [tabela ModuleSubstitution](modulesubstitution-table.md) são excluídos da verificação a seguir. A ferramenta de mesclagem não mescla a linha referenciada pela coluna DefaultValue no banco de dados de destino se as condições a seguir forem satisfeitas após a conclusão de todas as opções de configuração.<br/> Cada linha na Tabela ModuleConfiguration com o mesmo DefaultValue tem o conjunto msmConfigurationItemsKeyNoOrphan.<br/> Nenhuma linha usa o DefaultValue porque a ferramenta de criação recusou o fornecimento de um valor.<br/> A ferramenta de mesclagem mescla a linha se qualquer uma das condições a seguir for satisfeita.<br/> A ferramenta de mesclagem localiza qualquer linha que não tenha msmConfigItemsKeyNoOrphan definido.<br/> Se a ferramenta de mesclagem localizar qualquer linha usando DefaultValue porque a ferramenta de criação recusou o fornecimento de um valor.<br/> |
-| msmConfigurableOptionNonNullable | 2       | 0x00000002  | Quando esse atributo é definido, NULL não é uma resposta válida para este item. Esse atributo não tem nenhum efeito para tipos [de formato de](bitfield-format-types.md)campo [inteiro](integer-format-types.md) ou de campo de bits.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| msmConfigurableOptionKeyNoOrphan | 1       | 0x00000001  | Esse atributo só se aplica a registros que listam uma chave estrangeira em uma tabela de módulo em seu campo DefaultValue. A ferramenta de mesclagem ignora o atributo para todos os formatos que não sejam os [tipos de formato de chave](key-format-types.md). Os itens não listados na [tabela ModuleSubstitution](modulesubstitution-table.md) são excluídos da verificação a seguir. A ferramenta de mesclagem não mescla a linha referenciada pela coluna DefaultValue no banco de dados de destino se as condições a seguir forem satisfeitas após a conclusão de todas as opções de configuração.<br/> Cada linha na Tabela ModuleConfiguration com o mesmo DefaultValue tem o conjunto msmConfigurationItemsKeyNoOrphan.<br/> Nenhuma linha usa DefaultValue porque a ferramenta de autor recusou a fornecer um valor.<br/> A ferramenta de mesclagem mescla a linha se qualquer uma das condições a seguir for atendida.<br/> A ferramenta de mesclagem localiza qualquer linha que não tenha msmConfigItemsKeyNoOrphan definido.<br/> Se a ferramenta de mesclagem encontrar qualquer linha usando DefaultValue porque a ferramenta de autor se recusou a fornecer um valor.<br/> |
+| msmConfigurableOptionNonNullable | 2       | 0x00000002  | Quando esse atributo é definido, null não é uma resposta válida para este item. Esse atributo não tem nenhum efeito para tipos [de formato inteiro ou](integer-format-types.md) tipos de formato [bitfield](bitfield-format-types.md).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 
 
 
@@ -108,39 +108,39 @@ Esta coluna é um campo de bits que contém atributos para este item configuráv
 
 </dd> <dt>
 
-<span id="DisplayName"></span><span id="displayname"></span><span id="DISPLAYNAME"></span>DisplayName
+<span id="DisplayName"></span><span id="displayname"></span><span id="DISPLAYNAME"></span>Displayname
 </dt> <dd>
 
-Esta coluna fornece uma breve descrição desse item que a ferramenta de criação pode usar na interface do usuário. Esta coluna não pode ser localizada. Defina esta coluna como NULL para que o módulo seja solicitado que a ferramenta de criação não exponha essa propriedade na interface do usuário. A ferramenta pode desconsiderar o valor nesse campo.
+Esta coluna fornece uma breve descrição desse item que a ferramenta de autor pode usar na interface do usuário. Essa coluna pode não ser localizada. De definir essa coluna como nula para que o módulo seja solicitado que a ferramenta de autor não exponha essa propriedade na interface do usuário. A ferramenta pode desconsiderar o valor neste campo.
 
 </dd> <dt>
 
-<span id="Description"></span><span id="description"></span><span id="DESCRIPTION"></span>Ndescrição
+<span id="Description"></span><span id="description"></span><span id="DESCRIPTION"></span>Descrição
 </dt> <dd>
 
-Esta coluna fornece uma descrição desse item que a ferramenta de criação pode usar em elementos de interface do usuário. Essa cadeia de caracteres pode ser localizada pela transformação de idioma do módulo. Esta coluna pode ser nula.
+Esta coluna fornece uma descrição desse item que a ferramenta de autor pode usar em elementos da interface do usuário. Essa cadeia de caracteres pode ser localizada pela transformação de idioma do módulo. Essa coluna pode ser nula.
 
 </dd> <dt>
 
 <span id="HelpLocation"></span><span id="helplocation"></span><span id="HELPLOCATION"></span>HelpLocation
 </dt> <dd>
 
-Esta coluna fornece o nome de um arquivo de ajuda (sem a extensão. chm) ou uma lista delimitada por ponto e vírgula de namespaces de ajuda. Esta coluna poderá ser nula se nenhuma ajuda estiver disponível. Essa coluna poderá ser nula somente se a coluna HelpKeyword for nula.
+Essa coluna fornece o nome de um arquivo de ajuda (sem a extensão .chm) ou uma lista delimitada por ponto e vírgula de namespaces de ajuda. Essa coluna poderá ser nula se nenhuma ajuda estiver disponível. Essa coluna só poderá ser nula se a coluna HelpKeyword for nula.
 
 </dd> <dt>
 
-<span id="HelpKeyword"></span><span id="helpkeyword"></span><span id="HELPKEYWORD"></span>HelpKeyword
+<span id="HelpKeyword"></span><span id="helpkeyword"></span><span id="HELPKEYWORD"></span>Helpkeyword
 </dt> <dd>
 
-Esta coluna fornece uma palavra-chave para o arquivo de ajuda ou namespace da coluna HelpLocation. A interpretação dessa palavra-chave depende da coluna HelpLocation. Esta coluna pode ser nula.
+Esta coluna fornece uma palavra-chave no arquivo de ajuda ou namespace da coluna HelpLocation. A interpretação dessa palavra-chave depende da coluna HelpLocation. Essa coluna pode ser nula.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-A Tabela ModuleConfiguration é usada por [módulos de mesclagem configuráveis](configurable-merge-modules.md). Mergemod.dll 2,0 ou posterior é necessário para criar um módulo de mesclagem configurável.
+A tabela ModuleConfiguration é usada pelos [Módulos de Mesclagem Configuráveis.](configurable-merge-modules.md) Mergemod.dll 2.0 ou posterior é necessário para criar um módulo de mesclagem configurável.
 
-Para garantir a compatibilidade com versões mais antigas do Mergemod.dll, a Tabela ModuleConfiguration e a [tabela ModuleSubstitution](modulesubstitution-table.md) devem ser adicionadas à [tabela ModuleIgnoreTable](moduleignoretable-table.md) de cada módulo.
+Para garantir a compatibilidade com versões mais antigas do Mergemod.dll, a tabela ModuleConfiguration e a [tabela ModuleSubstitution](modulesubstitution-table.md) devem ser adicionadas à tabela [ModuleIgnoreTable](moduleignoretable-table.md) de cada módulo.
 
 ## <a name="validation"></a>Validação
 

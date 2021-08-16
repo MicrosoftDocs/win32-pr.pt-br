@@ -1,7 +1,7 @@
 ---
 description: Prefixo de cada buffer, em bytes.
 ms.assetid: 471b73bf-f959-41aa-84ba-324a2738dd0e
-title: 'Membro CBaseAllocator:: m_lPrefix (Amfilter. h)'
+title: Membro CBaseAllocator::m_lPrefix (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: fc52db44dcdfa050cf8bc7faf57cb7094d8cac91
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a22f2ac1a54c4820f109b55002428c87df321328ef6b6b6d6096343df8cde85f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105755397"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118955285"
 ---
-# <a name="cbaseallocatorm_lprefix-member"></a>Membro de CBaseAllocator:: m \_ lPrefix
+# <a name="cbaseallocatorm_lprefix-member"></a>Membro CBaseAllocator::m \_ lPrefix
 
-Prefixo de cada buffer, em bytes. Se o valor for diferente de zero, cada ponteiro de buffer retornado pelo método [**CBaseAllocator:: GetBuffer**](cbaseallocator-getbuffer.md) será precedido por um bloco de bytes de tamanho *m \_ lPrefix*. Esse bloco de memória é chamado de *prefixo*. A variável de membro [**CBaseAllocator:: m \_ lSize**](cbaseallocator-m-lsize.md) não inclui o valor de prefixo.
+Prefixo de cada buffer, em bytes. Se o valor for diferente de zero, cada ponteiro de buffer retornado pelo método [**CBaseAllocator::GetBuffer**](cbaseallocator-getbuffer.md) será precedido por um bloco de bytes de *tamanho m \_ lPrefix*. Esse bloco de memória é chamado de *prefixo*. A [**variável de membro CBaseAllocator::m \_ lSize**](cbaseallocator-m-lsize.md) não inclui o valor do prefixo.
 
 ## <a name="syntax"></a>Syntax
 
@@ -42,8 +42,8 @@ long m_lPrefix;
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Amfilter. h (incluir fluxos. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Amfilter.h (incluir Fluxos.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

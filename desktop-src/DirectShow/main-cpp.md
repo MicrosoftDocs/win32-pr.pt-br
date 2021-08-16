@@ -1,19 +1,19 @@
 ---
-description: Este artigo contém código para o arquivo main.cpp para o tutorial Reprodução de áudio/vídeo no DirectShow.
+description: Este artigo contém código para o arquivo. cpp principal para o tutorial de reprodução de áudio/vídeo em DirectShow.
 ms.assetid: d1a4ee7d-b05d-4050-b0a5-25c28157646f
-title: main.cpp
+title: Main. cpp
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: db91ab89ff7c79811fc649072c91d626701239a3
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: eae95293e5f9f3f6511834ff030898c770c673d60ea761353f4637cb583e5c15
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112407869"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119073100"
 ---
-# <a name="maincpp"></a>main.cpp
+# <a name="maincpp"></a>Main. cpp
 
-Este tópico contém código para o tutorial [Reprodução de áudio/vídeo no DirectShow.](audio-video-playback-in-directshow.md)
+Este tópico contém código para o tutorial de [reprodução de áudio/vídeo em DirectShow](audio-video-playback-in-directshow.md).
 
 
 ```C++
@@ -244,10 +244,10 @@ void NotifyError(HWND hwnd, PCWSTR pszMessage)
 
 <dl> <dt>
 
-[Reprodução de áudio/vídeo no DirectShow](audio-video-playback-in-directshow.md)
+[Reprodução de áudio/vídeo em DirectShow](audio-video-playback-in-directshow.md)
 </dt> <dt>
 
-[Exemplo de reprodução do DirectShow](directshow-playback-example.md)
+[DirectShow Exemplo de reprodução](directshow-playback-example.md)
 </dt> </dl>
 
  

@@ -26,7 +26,7 @@ ms.locfileid: "119433266"
 ---
 # <a name="mdm_policy_result01_smartscreen02-class"></a>\_Classe MDM \_ Result01 \_ SmartScreen02
 
-\[Algumas informações estão relacionadas ao produto de pré-lançamento que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não oferece garantias, expressas ou implícitas, quanto às informações fornecidas aqui.\]
+\[Algumas informações estão relacionadas ao produto de pré-lançamento que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não oferece garantias, expressas ou implícitas, das informações aqui fornecidas.\]
 
 a \_ classe Result01 SmartScreen02 de política de MDM \_ \_ representa as políticas de tela inteligente.
 

@@ -1,26 +1,26 @@
 ---
-title: Atributo de foco da VML
-description: Atributo de foco da VML
+title: Atributo de foco VML
+description: Atributo de foco VML
 ms.assetid: 9ed52203-4142-47cd-851f-74230aac934d
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 062b2900c2f980c9a1433e5e790a34d463def9be
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: b60eeb9ff379c8006cbb9068b6b78c8f24490ecf2fd15573b5b224a9ee1208ee
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104008343"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119057864"
 ---
-# <a name="vml-focus-attribute"></a>Atributo de foco da VML
+# <a name="vml-focus-attribute"></a>Atributo de foco VML
 
-Este tópico descreve a VML, um recurso que foi preterido a partir do Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem de VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
+Este tópico descreve o VML, um recurso que foi preterido a partir Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem do VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
 
 > [!Note]  
-> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [conteúdo arquivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obter informações, recomendações e orientações sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
+> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [Conteúdo arquivado.](/previous-versions/windows/internet-explorer/ie-developer/) Para obter informações, recomendações e diretrizes sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center.](https://msdn.microsoft.com/ie/)
 
- 
+ 
 
-Define o centro de um preenchimento gradiente linear. Leitura/gravação. **VgFraction**.
+Define o centro de um preenchimento de gradiente linear. Leitura/gravação. **VgAção .**
 
 **Aplica-se a**
 
@@ -28,23 +28,23 @@ Define o centro de um preenchimento gradiente linear. Leitura/gravação. **VgFr
 
 **Sintaxe de marca**
 
-<v: *elemento* Focus = " *expressão* " >
+<v: *elemento* focus=" *expressão* ">
 
 **Sintaxe do script**
 
-*elemento* . Focus = "*expressão*"
+*element* .focus="*expression*"
 
-*expressão* = de *elemento*. Focus
+*expressão* = *elemento*.focus
 
 **Comentários**
 
-Define a posição inicial do Blend. Os valores variam de 100% a-100%. O valor padrão é 0. Um valor de 100% (ou-100%) mudará o foco para que a direção do Blend seja invertida (em vigor, revertendo **Color** e **Color2**). Um valor de 50% alterará o Blend para que a **cor** esteja em ambas as extremidades e **Color2** esteja no meio. Um valor de-50% alterará o Blend para que **Color2** esteja em ambas as extremidades e a **cor** esteja no meio.
+Define a posição inicial central da combinação. Os valores variam de 100% a -100%. O valor padrão é 0. Um valor de 100% (ou -100%) deslocará o foco para que a direção da combinação seja inversa (na verdade, revertendo **Cor** e **Cor2**). Um valor de 50% alterará a combinação para que **Color** seja em ambas as extremidades e **Color2** no meio. Um valor de -50% alterará a combinação para que **Color2** seja em ambas as extremidades e **Color** seja no meio.
 
-*Atributo padrão da VML*
+*Atributo padrão VML*
 
 **Exemplo**
 
-O foco gradiente do preenchimento é deslocado para que o vermelho (**cor**) seja uma faixa no centro da forma e que a parte superior e inferior seja azul (**Color2**).
+O foco de gradiente do preenchimento é deslocado para que vermelho **(** Cor ) seja uma faixa no centro da forma e que a parte superior e inferior seja azul (**Color2**).
 
 
 ```HTML
@@ -60,6 +60,6 @@ O foco gradiente do preenchimento é deslocado para que o vermelho (**cor**) sej
 
 
 
- 
+ 
 
- 
+ 

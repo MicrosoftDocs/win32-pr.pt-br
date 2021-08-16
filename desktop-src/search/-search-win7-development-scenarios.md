@@ -32,7 +32,7 @@ No Windows 7 e posteriores, as bibliotecas são o repositório padrão de dados 
 
 ### <a name="user-data-entry-points"></a>Pontos de entrada de dados do usuário
 
-Bibliotecas padrão (como **Meus Documentos**, **Minhas Imagens** e assim por diante) são equivalentes à Pasta [Conhecida](/previous-versions/windows/desktop/legacy/bb776911(v=vs.85)). As bibliotecas padrão fornecem pontos de entrada familiares para os usuários, mas como o conteúdo da biblioteca não está limitado às bibliotecas de conteúdo da Pasta Conhecida, os usuários têm mais liberdade para determinar onde os documentos e a mídia devem ser armazenados. As bibliotecas são expostas por meio do namespace do Shell (fonte de dados do Shell). Seu aplicativo pode fornecer aos usuários os mesmos pontos de entrada conhecidos para seus dados habilitando o reconhecimento de biblioteca e a navegação.
+Bibliotecas padrão (como **Meus Documentos**, **Minhas Imagens** e assim por diante) são equivalentes à [Pasta Conhecida](/previous-versions/windows/desktop/legacy/bb776911(v=vs.85)). As bibliotecas padrão fornecem pontos de entrada familiares para os usuários, mas como o conteúdo da biblioteca não está limitado às bibliotecas de conteúdo da Pasta Conhecida, os usuários têm mais liberdade para determinar onde os documentos e a mídia devem ser armazenados. As bibliotecas são expostas por meio do namespace do Shell (fonte de dados do Shell). Seu aplicativo pode fornecer aos usuários os mesmos pontos de entrada conhecidos para seus dados habilitando o reconhecimento de biblioteca e a navegação.
 
 ### <a name="collections-of-folders"></a>Coleções de pastas
 
@@ -42,9 +42,9 @@ As bibliotecas são coleções de conteúdo definidas pelo usuário. Windows Pes
 
 Para que as pastas sejam suportadas em bibliotecas, elas devem ser indexadas no computador local e indexadas em um computador Windows remoto ou indexadas em um servidor com arquivos indexados pelo Windows Search.
 
-As pastas sem suporte são impedidas de serem adicionadas por usuários na caixa Windows de gerenciamento de biblioteca. Se pastas remotas não indexadas são adicionadas a uma biblioteca usando a API [IShellLibrary,](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ishelllibrary) a experiência do usuário da biblioteca será revertida para a biblioteca **Cofre Modo**. No **Cofre modo de** exibição, como exibições de disposição de pilha baseada em propriedade, sugestões de filtro e suporte à pesquisa do **Menu** Iniciar são removidos da biblioteca afetada.
+As pastas sem suporte são impedidas de serem adicionadas por usuários na caixa Windows de gerenciamento de biblioteca. Se pastas remotas não indexadas são adicionadas a uma biblioteca usando a API [IShellLibrary,](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ishelllibrary) a experiência do usuário da biblioteca será revertida para a biblioteca **Cofre Modo**. No **Cofre modo,** como exibições de disposição de pilha baseada em propriedade, sugestões de filtro e suporte à pesquisa **do Menu** Iniciar são removidos da biblioteca afetada.
 
-A tabela a seguir lista as pastas incluídas em bibliotecas que usam a caixa de diálogo de gerenciamento de biblioteca Windows Explorer e pastas sem suporte no **modo Cofre :**
+A tabela a seguir lista as pastas incluídas em bibliotecas usando a caixa de diálogo de gerenciamento de biblioteca do Windows Explorer e pastas sem suporte no **modo Cofre :**
 
 | Pastas com suporte                                                                                                                            | Pastas sem suporte                                                                                     |
 |----------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|

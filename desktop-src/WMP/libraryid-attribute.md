@@ -1,6 +1,6 @@
 ---
 title: Atributo LibraryID
-description: O atributo LibraryID é o identificador da biblioteca à qual o item pertence.
+description: O atributo LibraryID é o identificador da biblioteca à que o item pertence.
 ms.assetid: 680d9374-8729-4258-8672-b4b93b65e20a
 keywords:
 - Atributo LibraryID Windows Media Player
@@ -21,20 +21,20 @@ ms.locfileid: "119468216"
 ---
 # <a name="libraryid-attribute"></a>Atributo LibraryID
 
-O atributo **LibraryID** é o identificador da biblioteca à qual o item pertence.
+O **atributo LibraryID** é o identificador da biblioteca à que o item pertence.
 
 ## <a name="applies-to"></a>Aplica-se A
 
 -   [**Itens de áudio**](audio-item-attributes.md)
 -   [**Itens de foto**](photo-item-attributes.md)
--   [**Itens da lista de reprodução**](playlist-attributes-ref.md)
+-   [**Itens de playlist**](playlist-attributes-ref.md)
 -   [**Itens de vídeo**](video-item-attributes.md)
 
 ## <a name="remarks"></a>Comentários
 
-Um item de mídia pode pertencer à biblioteca local do usuário atual ou pode pertencer a uma biblioteca que foi disponibilizada por outro usuário na rede doméstica ou na Internet.
+Um item de mídia pode pertencer à biblioteca local do usuário atual ou pode pertencer a uma biblioteca que foi disponibilizada por outro usuário na rede base ou na Internet.
 
-O valor desse atributo é o mesmo que o valor retornado pelo método [**IWMPLibrary2:: getItemInfo**](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmplibrary-get_name) .
+O valor desse atributo é o mesmo que o valor retornado pelo [**método IWMPLibrary2::getItemInfo.**](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmplibrary-get_name)
 
 ## <a name="requirements"></a>Requisitos
 

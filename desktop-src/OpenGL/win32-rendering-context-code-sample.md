@@ -1,6 +1,6 @@
 ---
-title: Exemplo de código do contexto de renderização do Windows
-description: O exemplo de código a seguir mostra como o código de contexto de renderização GLX na seção anterior é semelhante a quando ele foi transportado para o Windows.
+title: Windows Exemplo de código de contexto de renderização
+description: O exemplo de código a seguir mostra como o código de contexto de renderização GLX na seção anterior é semelhante a quando foi transportado para Windows.
 ms.assetid: 12992faa-eb64-4a21-8015-3c73c2914189
 keywords:
 - contextos de renderização
@@ -8,16 +8,16 @@ keywords:
 - Portabilidade do OpenGL, contextos de renderização
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ca0423f7458538f903a339f2f82dbff1c86c0626
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 9693b140083210ce0865b18463f4595c2f1fc731c8fc1d837f61342ede50b9d0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105769199"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117794689"
 ---
-# <a name="windows-rendering-context-code-sample"></a>Exemplo de código do contexto de renderização do Windows
+# <a name="windows-rendering-context-code-sample"></a>Windows Exemplo de código de contexto de renderização
 
-O exemplo de código a seguir mostra como o código de contexto de renderização GLX na seção anterior é semelhante a quando ele foi transportado para o Windows.
+O exemplo de código a seguir mostra como o código de contexto de renderização GLX na seção anterior é semelhante a quando foi transportado para Windows.
 
 
 ```C++
@@ -69,9 +69,9 @@ break;
 
 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,6 @@
 ---
-title: Métodos TextureCubeArray::TextureCubeArray GatherCmpGreen
-description: Amostras e compara uma textura e retorna o componente verde. | Métodos TextureCubeArray::TextureCubeArray GatherCmpGreen
+title: 'Métodos TextureCubeArray:: TextureCubeArray GatherCmpGreen'
+description: 'Amostras e comparação de uma textura e retorna o componente verde. | Métodos TextureCubeArray:: TextureCubeArray GatherCmpGreen'
 ms.assetid: F4B58F67-E13C-4166-9793-4CD1E1712766
 keywords:
 - Métodos GatherCmpGreen HLSL
@@ -19,9 +19,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117722366"
 ---
-# <a name="texturecubearraygathercmpgreen-methods"></a>Métodos TextureCubeArray::GatherCmpGreen
+# <a name="texturecubearraygathercmpgreen-methods"></a>Métodos TextureCubeArray:: GatherCmpGreen
 
-Amostras e compara uma textura e retorna o componente verde.
+Amostras e comparação de uma textura e retorna o componente verde.
 
 ### <a name="overload-list"></a>Lista de sobrecargas
 
@@ -29,7 +29,7 @@ Amostras e compara uma textura e retorna o componente verde.
 
 | Método                                                                                      | Descrição                                                                                                      |
 |:--------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------|
-| [**GatherCmpGreen(S, float,float,uint)**](tcubearray-gathercmpgreen-s-float-float-uint-.md) | Amostras e compara uma textura e retorna o componente verde junto com o status sobre a operação.<br/> |
+| [**GatherCmpGreen (S, float, float, uint)**](tcubearray-gathercmpgreen-s-float-float-uint-.md) | Exemplos e compara uma textura e retorna o componente verde junto com o status sobre a operação.<br/> |
 
 
 

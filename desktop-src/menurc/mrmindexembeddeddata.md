@@ -99,7 +99,7 @@ S \_ OK se a função tiver êxito, caso contrário, algum outro valor. Use as m
 
 ## <a name="remarks"></a>Comentários
 
-Se você quiser especificar qualificadores de recursos, passe-os no parâmetro *de qualificadores.* Qualificadores de recursos *não são* inferidos de *resourceUri.*
+Se você quiser especificar qualificadores de recurso, passe-os no parâmetro *de qualificadores.* Qualificadores de recursos *não são* inferidos de *resourceUri.*
 
 O segmento de nome de arquivo *de resourceUri* é usado como o nome do recurso.
 

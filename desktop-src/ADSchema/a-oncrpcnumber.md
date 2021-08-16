@@ -1,10 +1,10 @@
 ---
-title: Atributo oncRpcNumber
-description: Contém parte do mapa RPC e armazena o número RPC para UNIX RPCs.
+title: atributo oncRpcNumber
+description: contém parte do mapa rpc e armazena o número de rpc para UNIX RPCs.
 ms.assetid: c824d740-5c68-4fce-93f3-01ac52b47e5b
 ms.tgt_platform: multiple
 keywords:
-- Esquema do AD do atributo oncRpcNumber
+- Esquema de AD do atributo oncRpcNumber
 topic_type:
 - apiref
 api_name:
@@ -20,22 +20,22 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119442166"
 ---
-# <a name="oncrpcnumber-attribute"></a>Atributo oncRpcNumber
+# <a name="oncrpcnumber-attribute"></a>atributo oncRpcNumber
 
-Contém parte do mapa RPC e armazena o número RPC para UNIX RPCs.
+contém parte do mapa rpc e armazena o número de rpc para UNIX RPCs.
 
 
 
 | Entrada | Valor |
 |-------------------|--------------------------------------|
 | CN                | oncRpcNumber                         |
-| Ldap-Display-Name | oncRpcNumber                         |
+| LDAP-Display-Name | oncRpcNumber                         |
 | Tamanho              | \-                                   |
 | Privilégio de atualização  | \-                                   |
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.3.6.1.1.1.1.18                     |
-| System-Id-Guid    | 966825f5-01d9-4a5c-a011-d15ae84efa55 |
-| Sintaxe            | [**Enumeração**](s-enumeration.md) |
+| System-ID-GUID    | 966825f5-01d9-4a5c-a011-d15ae84efa55 |
+| Syntax            | [**Enumeração**](s-enumeration.md) |
 
 
 
@@ -55,10 +55,10 @@ Contém parte do mapa RPC e armazena o número RPC para UNIX RPCs.
 | ID do link                | \-                                    |
 | MAPI-Id                | \-                                    |
 | System-Only            | Falso                                 |
-| Tem valor único       | True                                  |
+| É de valor único       | Verdadeiro                                  |
 | É indexado             | Falso                                 |
-| No Catálogo Global      | Falso                                 |
-| Descritor de segurança NT | O:BAG:BAD:S:                          |
+| No catálogo global      | Falso                                 |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                          |
 | Range-Lower            | \-                                    |
 | Range-Upper            | \-                                    |
 | Search-Flags           | 0x00000000                            |
@@ -76,10 +76,10 @@ Contém parte do mapa RPC e armazena o número RPC para UNIX RPCs.
 | ID do link                | \-                                    |
 | MAPI-Id                | \-                                    |
 | System-Only            | Falso                                 |
-| Tem valor único       | True                                  |
+| É de valor único       | Verdadeiro                                  |
 | É indexado             | Falso                                 |
-| No Catálogo Global      | Falso                                 |
-| Descritor de segurança NT | O:BAG:BAD:S:                          |
+| No catálogo global      | Falso                                 |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                          |
 | Range-Lower            | \-                                    |
 | Range-Upper            | \-                                    |
 | Search-Flags           | 0x00000000                            |
@@ -97,10 +97,10 @@ Contém parte do mapa RPC e armazena o número RPC para UNIX RPCs.
 | ID do link                | \-                                    |
 | MAPI-Id                | \-                                    |
 | System-Only            | Falso                                 |
-| Tem valor único       | True                                  |
+| É de valor único       | Verdadeiro                                  |
 | É indexado             | Falso                                 |
-| No Catálogo Global      | Falso                                 |
-| Descritor de segurança NT | O:BAG:BAD:S:                          |
+| No catálogo global      | Falso                                 |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                          |
 | Range-Lower            | \-                                    |
 | Range-Upper            | \-                                    |
 | Search-Flags           | 0x00000000                            |
@@ -118,7 +118,7 @@ Contém parte do mapa RPC e armazena o número RPC para UNIX RPCs.
 | ID do link                | \-                                    |
 | MAPI-Id                | \-                                    |
 | System-Only            | Falso                                 |
-| Tem valor único       | True                                  |
+| Tem valor único       | Verdadeiro                                  |
 | É indexado             | Falso                                 |
 | No Catálogo Global      | Falso                                 |
 | Descritor de segurança NT | O:BAG:BAD:S:                          |

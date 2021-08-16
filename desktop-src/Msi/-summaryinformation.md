@@ -1,19 +1,19 @@
 ---
-description: A \_ tabela SummaryInformation é uma tabela especial usada com o fluxo de informações de resumo. Você pode obter ou definir o fluxo de informações de Resumo de um banco de dados Windows Installer exportando ou importando um arquivo morto de texto chamado \_ SummaryInformation. IDT.
+description: A \_ tabela SummaryInformation é uma tabela especial usada com o fluxo de informações de resumo. você pode obter ou definir o fluxo de informações de resumo de um banco de dados Windows Installer exportando ou importando um arquivo morto de texto chamado \_ SummaryInformation. idt.
 ms.assetid: b1b42e03-7a05-46d4-9c42-b87906535adb
 title: _SummaryInformation
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 803b89223db8b6fc8074336109221a8300f7c1ea
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3824ceb9b3ad12338d84dfeea016a3c7e4404c274543cc691dc6ea0fb121bd32
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105749598"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117805732"
 ---
 # <a name="_summaryinformation"></a>\_SummaryInformation
 
-A \_ tabela SummaryInformation é uma tabela especial usada com o [fluxo de informações de resumo](summary-information-stream.md). Você pode obter ou definir o fluxo de informações de Resumo de um banco de dados Windows Installer exportando ou importando um [arquivo morto de texto](text-archive-files.md) chamado \_ SummaryInformation. IDT.
+A \_ tabela SummaryInformation é uma tabela especial usada com o [fluxo de informações de resumo](summary-information-stream.md). você pode obter ou definir o fluxo de informações de resumo de um banco de dados Windows Installer exportando ou importando um [arquivo morto de texto](text-archive-files.md) chamado \_ SummaryInformation. idt.
 
 O arquivo. IDT de uma tabela SummaryInformation exportada \_ tem o formato a seguir.
 

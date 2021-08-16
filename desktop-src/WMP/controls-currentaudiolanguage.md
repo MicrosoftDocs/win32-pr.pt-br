@@ -1,9 +1,9 @@
 ---
-title: Controls.currentAudioLanguage
-description: A propriedade currentAudioLanguage especifica ou recupera o LCID (identificador de localidade) da linguagem de áudio para reprodução.
+title: Controls. currentAudioLanguage
+description: A propriedade currentAudioLanguage especifica ou recupera o identificador de localidade (LCID) do idioma de áudio para reprodução.
 ms.assetid: 628845df-add3-4068-9c3d-b4a9b818808c
 keywords:
-- Controls.currentAudioLanguage Windows Media Player
+- Windows Media Player Controls. currentAudioLanguage
 topic_type:
 - apiref
 api_name:
@@ -21,9 +21,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117750608"
 ---
-# <a name="controlscurrentaudiolanguage"></a>Controls.currentAudioLanguage
+# <a name="controlscurrentaudiolanguage"></a>Controls. currentAudioLanguage
 
-A **propriedade currentAudioLanguage** especifica ou recupera o LCID (identificador de localidade) da linguagem de áudio para reprodução.
+A propriedade **currentAudioLanguage** especifica ou recupera o identificador de localidade (LCID) do idioma de áudio para reprodução.
 
 ``` syntax
 player.controls.currentAudioLanguage
@@ -32,17 +32,17 @@ player.controls.currentAudioLanguage
 
 ## <a name="possible-values"></a>Valores possíveis
 
-Essa propriedade é um número de **leitura/gravação** (**longo).**
+Essa propriedade é um **número** de leitura/gravação (**longo**).
 
 ## <a name="remarks"></a>Comentários
 
 Um LCID identifica exclusivamente um dialeto de idioma específico, chamado de localidade.
 
-Para Windows conteúdo baseado em mídia, as propriedades e os métodos relacionados à seleção de idioma só são suportados por uma única saída.
+para Windows conteúdo baseado em mídia, as propriedades e os métodos relacionados à seleção de idioma dão suporte apenas a uma única saída.
 
-Ao trabalhar com conteúdo de DVD, especificar um LCID fará com que a primeira faixa de áudio disponível tenha a ID de idioma especificada selecionada.
+Ao trabalhar com conteúdo de DVD, a especificação de um LCID fará com que a primeira faixa de áudio disponível com a ID de idioma especificada seja selecionada.
 
-**Windows Media Player 10 Mobile:** Essa propriedade só aceita ou retorna o LCID neutro em idioma (0).
+**Windows Media Player 10 Mobile:** Essa propriedade só aceita ou retorna o LCID com neutralidade de idioma (0).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,7 +50,7 @@ Ao trabalhar com conteúdo de DVD, especificar um LCID fará com que a primeira 
 
 | Requisito | Valor |
 |--------------------|------------------------------------------------------------------------------------|
-| Versão<br/> | Windows Media Player Série 9 ou posterior.<br/>                                 |
+| Versão<br/> | Windows Media Player 9 Series ou posterior.<br/>                                 |
 | DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
@@ -62,19 +62,19 @@ Ao trabalhar com conteúdo de DVD, especificar um LCID fará com que a primeira 
 [**Objeto Controls**](controls-object.md)
 </dt> <dt>
 
-[**Controls.audioLanguageCount**](controls-audiolanguagecount.md)
+[**Controls. audioLanguageCount**](controls-audiolanguagecount.md)
 </dt> <dt>
 
-[**Controls.currentAudioLanguageIndex**](controls-currentaudiolanguageindex.md)
+[**Controls. currentAudioLanguageIndex**](controls-currentaudiolanguageindex.md)
 </dt> <dt>
 
-[**Controls.getAudioLanguageDescription**](controls-getaudiolanguagedescription.md)
+[**Controls. getAudioLanguageDescription**](controls-getaudiolanguagedescription.md)
 </dt> <dt>
 
-[**Controls.getAudioLanguageID**](controls-getaudiolanguageid.md)
+[**Controls. getAudioLanguageID**](controls-getaudiolanguageid.md)
 </dt> <dt>
 
-[**Controls.getLanguageName**](controls-getlanguagename.md)
+[**Controls. getLanguageName**](controls-getlanguagename.md)
 </dt> </dl>
 
  

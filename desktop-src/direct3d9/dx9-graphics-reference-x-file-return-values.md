@@ -1,7 +1,7 @@
 ---
-description: Os métodos usados para trabalhar com arquivos DirectX. x podem retornar os valores a seguir, além dos valores de retorno COM padrão. Preterido.
+description: Os métodos usados para trabalhar com arquivos .x do DirectX podem retornar os valores a seguir, além dos valores de retorno COM padrão. Preterido.
 ms.assetid: a91168bc-966a-47b5-ba83-fc480593228d
-title: Valores de retorno (DXFile. h)
+title: Valores de retorno (DXFile.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - DXFile.h
-ms.openlocfilehash: 7d465b9759d958cba06bf0b950bc67772fbb84a3
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 51bc2155a74daf15945a79714355bdace06672c348dfd75679156f812d3d42be
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103664033"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119122473"
 ---
-# <a name="return-values-dxfileh"></a>Valores de retorno (DXFile. h)
+# <a name="return-values-dxfileh"></a>Valores de retorno (DXFile.h)
 
-Os métodos usados para trabalhar com arquivos DirectX. x podem retornar os valores a seguir, além dos valores de retorno COM padrão. Preterido.
+Os métodos usados para trabalhar com arquivos .x do DirectX podem retornar os valores a seguir, além dos valores de retorno COM padrão. Preterido.
 
 <dl> <dt>
 
@@ -50,7 +50,7 @@ O tamanho da matriz é inválido.
 <span id="DXFILEERR_BADCACHEFILE"></span><span id="dxfileerr_badcachefile"></span>**DXFILEERR \_ BADCACHEFILE**
 </dt> <dd>
 
-O arquivo de cache que contém a data do arquivo. x é inválido. Um arquivo de cache contém dados recuperados da rede, armazenados em cache no disco rígido e recuperados em solicitações subsequentes.
+O arquivo de cache que contém a data do arquivo .x é inválido. Um arquivo de cache contém dados recuperados da rede, armazenados em cache no disco rígido e recuperados em solicitações subsequentes.
 
 </dd> <dt>
 
@@ -85,7 +85,7 @@ O tamanho do ponto flutuante é inválido.
 <span id="DXFILEERR_BADFILETYPE"></span><span id="dxfileerr_badfiletype"></span>**DXFILEERR \_ BADFILETYPE**
 </dt> <dd>
 
-O arquivo não é um arquivo DirectX. x.
+O arquivo não é um arquivo .x do DirectX.
 
 </dd> <dt>
 
@@ -120,7 +120,7 @@ O recurso é inválido.
 <span id="DXFILEERR_BADSTREAMHANDLE"></span><span id="dxfileerr_badstreamhandle"></span>**DXFILEERR \_ BADSTREAMHANDLE**
 </dt> <dd>
 
-O identificador de fluxo é inválido.
+O alça de fluxo é inválido.
 
 </dd> <dt>
 
@@ -152,7 +152,7 @@ Ocorreu um erro interno.
 
 </dd> <dt>
 
-<span id="DXFILEERR_NOINTERNET"></span><span id="dxfileerr_nointernet"></span>**DXFILEERR \_ NOinternet**
+<span id="DXFILEERR_NOINTERNET"></span><span id="dxfileerr_nointernet"></span>**DXFILEERR \_ NOINTERNET**
 </dt> <dd>
 
 Conexão com a Internet não encontrada.
@@ -176,7 +176,7 @@ Todos os objetos foram enumerados.
 <span id="DXFILEERR_NOMORESTREAMHANDLES"></span><span id="dxfileerr_nomorestreamhandles"></span>**DXFILEERR \_ NOMORESTREAMHANDLES**
 </dt> <dd>
 
-Não há identificadores de fluxo disponíveis.
+Nenhum alça de fluxo está disponível.
 
 </dd> <dt>
 
@@ -187,10 +187,10 @@ A operação não foi concluída.
 
 </dd> <dt>
 
-<span id="DXFILEERR_NOTFOUND"></span><span id="dxfileerr_notfound"></span>**DXFILEERR não \_ encontrado**
+<span id="DXFILEERR_NOTFOUND"></span><span id="dxfileerr_notfound"></span>**DXFILEERR \_ NOTFOUND**
 </dt> <dd>
 
-Objeto não encontrado.
+Não foi possível encontrar o objeto.
 
 </dd> <dt>
 
@@ -201,21 +201,21 @@ Não foi possível analisar o arquivo.
 
 </dd> <dt>
 
-<span id="DXFILEERR_RESOURCENOTFOUND"></span><span id="dxfileerr_resourcenotfound"></span>**DXFILEERR \_ RESOURCENOTFOUND**
+<span id="DXFILEERR_RESOURCENOTFOUND"></span><span id="dxfileerr_resourcenotfound"></span>**RECURSO \_ DXFILEERRNOTFOUND**
 </dt> <dd>
 
 Não foi possível encontrar o recurso.
 
 </dd> <dt>
 
-<span id="DXFILEERR_NOTEMPLATE"></span><span id="dxfileerr_notemplate"></span>**DXFILEERR \_ NOtemplate**
+<span id="DXFILEERR_NOTEMPLATE"></span><span id="dxfileerr_notemplate"></span>**DXFILEERR \_ NOTEMPLATE**
 </dt> <dd>
 
 Nenhum modelo disponível.
 
 </dd> <dt>
 
-<span id="DXFILEERR_URLNOTFOUND"></span><span id="dxfileerr_urlnotfound"></span>**DXFILEERR \_ URLNOTFOUND**
+<span id="DXFILEERR_URLNOTFOUND"></span><span id="dxfileerr_urlnotfound"></span>**URL DO \_ DXFILEERRNOTFOUND**
 </dt> <dd>
 
 Não foi possível encontrar a URL.
@@ -228,7 +228,7 @@ Não foi possível encontrar a URL.
 
 | Requisito | Valor |
 |-------------------|-------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>DXFile. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>DXFile.h</dt> </dl> |
 
 
 
@@ -236,7 +236,7 @@ Não foi possível encontrar a URL.
 
 <dl> <dt>
 
-[X referência de arquivo (herdada)](dx9-graphics-reference-x-file.md)
+[Referência de arquivo X (herdou)](dx9-graphics-reference-x-file.md)
 </dt> </dl>
 
  

@@ -4,12 +4,12 @@ ms.assetid: 1d8f8662-df1f-4f84-8b65-c152f79cc5c6
 title: Trabalhando com arquivos de log
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ba2032b90036f8f58c07d8c7e80e7e7ac2b2701c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 82281694b72a2c28bb0e65ee4db16bd9ba33b8ed9c6e5e74dbf6c6cbf559507a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105758287"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119143739"
 ---
 # <a name="working-with-log-files"></a>Trabalhando com arquivos de log
 
@@ -41,7 +41,7 @@ Antes de gravar em um arquivo de log, chame [**PdhOpenQuery**](/windows/desktop/
 
 Para abrir o arquivo de destino, chame [**PdhOpenLog**](/windows/desktop/api/Pdh/nf-pdh-pdhopenloga). Especifique a consulta ao abrir o arquivo de log. Para coletar os dados de desempenho e gravá-los no arquivo de log, chame [**PdhUpdateLog**](/windows/desktop/api/Pdh/nf-pdh-pdhupdateloga).
 
-Se os dados do contador estiverem sendo gravados em um arquivo de log delimitado por vírgula (. csv) ou delimitado por tabulação (. tsv) e o caminho contiver uma instância curinga, o caminho será expandido e somente as instâncias existentes no momento em que o caminho for expandido serão incluídas no arquivo de log. No entanto, para arquivos de log binários (. blg) ou SQL, o curinga não é expandido para que o arquivo de log contenha instâncias criadas durante o registro em log.
+Se os dados do contador estiverem sendo gravados em um arquivo de log delimitado por vírgula (.csv) ou delimitado por tabulação (. tsv) e o caminho contiver uma instância de curinga, o caminho será expandido e somente as instâncias existentes no momento em que o caminho for expandido serão incluídas no arquivo de log. no entanto, para arquivos de log binários (. blg) ou SQL, o curinga não é expandido para que o arquivo de log contenha instâncias criadas durante o registro em log.
 
 Para obter um exemplo que grava dados em um arquivo de log, consulte [gravando dados de desempenho em um arquivo de log](writing-performance-data-to-a-log-file.md).
 

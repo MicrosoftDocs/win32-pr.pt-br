@@ -4,12 +4,12 @@ ms.assetid: c0b1bcf0-a2ea-4ec1-9ed8-892bfceec262
 title: System. suplementar. albumid
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ad2b609d9d77d85f417d7274d1e5dcde06527c74
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bc459297765fd9a4ea40efeecbfffab7c4d83bf9eb576032e836e209c2b19106
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105760787"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119095503"
 ---
 # <a name="systemsupplementalalbumid"></a>System. suplementar. albumid
 

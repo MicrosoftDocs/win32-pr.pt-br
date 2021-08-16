@@ -1,11 +1,11 @@
 ---
-title: Método IWMDRMDevice GetSecureClockChallenge
-description: O método GetSecureClockChallenge recupera o resultado de desafio seguro do relógio.
+title: Método GetSecureClockChallenge de IWMDRMDevice
+description: O método GetSecureClockChallenge recupera o resultado do desafio de relógio seguro.
 ms.assetid: cbef160c-91a3-47d1-9d7a-e649ce2c77ff
 keywords:
-- Método GetSecureClockChallenge Windows Media Gerenciador de Dispositivos
-- Método GetSecureClockChallenge Windows Media Gerenciador de Dispositivos, interface IWMDRMDevice
-- Interface IWMDRMDevice Windows Media Gerenciador de Dispositivos, método GetSecureClockChallenge
+- Método GetSecureClockChallenge windows Media Gerenciador de Dispositivos
+- Método GetSecureClockChallenge windows Media Gerenciador de Dispositivos , interface IWMDRMDevice
+- Interface IWMDRMDevice windows Media Gerenciador de Dispositivos , método GetSecureClockChallenge
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d7e57165f75a23d13d847e028deb69de383e2855
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: eaed21ddffb9c2001c3b57d32d34ac9106ede7cecaff723cb95d8cee1c428fb5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105813205"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119957246"
 ---
-# <a name="iwmdrmdevicegetsecureclockchallenge-method"></a>Método IWMDRMDevice:: GetSecureClockChallenge
+# <a name="iwmdrmdevicegetsecureclockchallenge-method"></a>Método IWMDRMDevice::GetSecureClockChallenge
 
-O método **GetSecureClockChallenge** recupera o resultado de desafio seguro do relógio.
+O **método GetSecureClockChallenge** recupera o resultado do desafio de relógio seguro.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -44,23 +44,23 @@ HRESULT GetSecureClockChallenge(
 
 <dl> <dt>
 
-*ppbChallenge* \[ fora\]
+*ppbChallenge* \[ out\]
 </dt> <dd>
 
 Resultado do desafio recuperado.
 
 </dd> <dt>
 
-*pcbChallenge* \[ fora\]
+*pcbChallenge* \[ out\]
 </dt> <dd>
 
 Tamanho do resultado do desafio, em bytes.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
+O método retorna um **HRESULT.** Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
 
 
 
@@ -78,8 +78,8 @@ O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limita�
 
 | Requisito | Valor |
 |--------------------|-----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>WMDDRMSP. idl</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>Mssachlp. lib</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>WMDDRMSP.idl</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>Mssachlp.lib</dt> </dl> |
 
 
 
@@ -90,7 +90,7 @@ O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limita�
 [**GetSecureClock**](iwmdrmdevice-getsecureclock.md)
 </dt> <dt>
 
-[**Interface IWMDRMDevice**](iwmdrmdevice.md)
+[**IWMDRMDevice Interface**](iwmdrmdevice.md)
 </dt> </dl>
 
  

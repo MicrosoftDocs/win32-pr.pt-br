@@ -1,23 +1,23 @@
 ---
-title: Enumerações do Windows Virtual PC
+title: Windows Enumerações de PC virtual
 ms.assetid: a9800f9f-d91f-48be-bbb9-f736132c2fd7
-description: 'Saiba mais sobre: enumerações do Windows Virtual PC'
+description: 'Saiba mais sobre: enumerações Windows pc virtual'
 keywords:
-- Virtual PC do Windows Virtual PC, enumerações
+- Windows PC Virtual de COMPUTADOR Virtual , enumerações
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9e16e8a9faee398b546a4c15e2df6ec85565d1ec
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b9d136e3ec1a8b4cf6c3d988017844b0994f2a3c035a5e6c2a756ea504d79b95
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105781121"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119136479"
 ---
-# <a name="windows-virtual-pc-enumerations"></a>Enumerações do Windows Virtual PC
+# <a name="windows-virtual-pc-enumerations"></a>Windows Enumerações de PC virtual
 
-\[O Windows Virtual PC não está mais disponível para uso a partir do Windows 8. Em vez disso, use o [provedor WMI do Hyper-V (v2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
+\[Windows O PC virtual não está mais disponível para uso a partir Windows 8. Em vez disso, use o provedor WMI do [Hyper-V (V2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
 
-As seguintes enumerações são suportadas pelo Windows Virtual PC:
+As enumerações a seguir têm suporte do Windows Virtual PC:
 
 -   [**VMDisplayVideoMode**](vmdisplayvideomode.md)
 -   [**VMDriveBusType**](vmdrivebustype.md)

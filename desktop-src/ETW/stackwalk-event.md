@@ -17,12 +17,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 746a7f2a9b5f6bb6316bf0d0e20e5645cea15a7e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 672d8fc609c14a43ca2692b5cf8a46356a00cccb9c06371e515bc102706c3638
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104968033"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119069696"
 ---
 # <a name="stackwalk_event-class"></a>\_Classe de evento StackWalk
 
@@ -146,8 +146,8 @@ Observe que a classe não mostra todas as propriedades **Stack * n*** que existe
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008 R2\]<br/> |
+| Cliente mínimo com suporte<br/> | \[somente aplicativos de área de trabalho Windows 7\]<br/>              |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do Server 2008 R2\]<br/> |
 
 
 

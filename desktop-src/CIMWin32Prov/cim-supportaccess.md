@@ -1,8 +1,8 @@
 ---
-description: A \_ classe CIM SupportAccess define como obter assistência para um produto.
+description: A classe CIM \_ SupportAccess define como obter assistência para um produto.
 ms.assetid: f42a793f-d71e-498e-9c6b-581aa029a0dd
 ms.tgt_platform: multiple
-title: Classe CIM_SupportAccess
+title: CIM_SupportAccess classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -19,23 +19,23 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: db5f1dc4331bd50e2fc61899f9d45fe2cdb0eca0
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: c53254b51b228efb2c1f14b7fb5f07475fb275d20c7df6444dc88e048bb1d30f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104089232"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119020904"
 ---
-# <a name="cim_supportaccess-class"></a>\_Classe CIM SupportAccess
+# <a name="cim_supportaccess-class"></a>Classe CIM \_ SupportAccess
 
-A classe **CIM \_ SupportAccess** define como obter assistência para um produto.
+A **classe CIM \_ SupportAccess** define como obter assistência para um produto.
 
 > [!IMPORTANT]
-> As classes DMTF (Distributed Management Task Force) CIM (modelo CIM) são as classes pai nas quais as classes WMI são criadas. Atualmente, o WMI dá suporte apenas aos [esquemas de versão do CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> As classes CIM (Distributed Management Task Force) do DMTF (Distributed Management Task Force) modelo CIM são as classes pai nas quais as classes WMI são criadas. Atualmente, o WMI dá suporte apenas aos esquemas de versão [do CIM 2.x.](https://dmtf.org/standards/cim/schemas)
 
  
 
-A sintaxe a seguir é simplificada do código formato MOF (MOF) e inclui todas as suas propriedades herdadas. As propriedades são listadas em ordem alfabética, não em ordem MOF.
+A sintaxe a seguir é simplificada do Managed Object Format (MOF) e inclui todas as suas propriedades herdadas. As propriedades são listadas em ordem alfabética, não em ordem MOF.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -53,13 +53,13 @@ class CIM_SupportAccess
 
 ## <a name="members"></a>Membros
 
-A classe **CIM \_ SupportAccess** tem estes tipos de membros:
+A **classe \_ SUPPORTAccess cim** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **CIM \_ SupportAccess** tem essas propriedades.
+A **classe \_ SupportAccess do CIM** tem essas propriedades.
 
 <dl> <dt>
 
@@ -72,23 +72,23 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| FRU \| 2,11 "," MIF. DMTF \| FRU \| 2,12 ")
+Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| FRU \| 002.11", "MIF. DMTF \| FRU \| 002.12")
 </dt> </dl>
 
-Detalhes do modo de comunicação. Por exemplo, se a propriedade **communicationmode** é "Phone", essa propriedade especifica o número de telefone a ser chamado.
+Detalhes do modo de comunicação. Por exemplo, se a **propriedade CommunicationMode** for "Telefone", essa propriedade especificará o número de telefone a ser chamado.
 
 </dd> <dt>
 
-**Communicationmode**
+**CommunicationMode**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. Suporte a DMTF \| \| 1,5 ")
+Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. Suporte a DMTF \| \| 001.5")
 </dt> </dl>
 
 Forma de comunicação a ser usada para obter suporte.
@@ -97,7 +97,7 @@ Forma de comunicação a ser usada para obter suporte.
 
 <span id="Other"></span><span id="other"></span><span id="OTHER"></span>
 
-<span id="Other"></span><span id="other"></span><span id="OTHER"></span>**Outro** (1)
+<span id="Other"></span><span id="other"></span><span id="OTHER"></span>**Outros** (1)
 
 
 </dt> <dd></dd> <dt>
@@ -125,7 +125,7 @@ Forma de comunicação a ser usada para obter suporte.
 
 <span id="Online_Service"></span><span id="online_service"></span><span id="ONLINE_SERVICE"></span>
 
-<span id="Online_Service"></span><span id="online_service"></span><span id="ONLINE_SERVICE"></span>**Serviço online** (5)
+<span id="Online_Service"></span><span id="online_service"></span><span id="ONLINE_SERVICE"></span>**Serviço Online** (5)
 
 
 </dt> <dd></dd> <dt>
@@ -170,7 +170,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. Suporte a DMTF \| \| 1,3 ")
+Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. Suporte a DMTF \| \| 001.3")
 </dt> </dl>
 
 Descrição textual do tipo de suporte fornecido.
@@ -186,7 +186,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. \|Suporte para DMTF \| 1,2 "), [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
+Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. Suporte a DMTF \| \| 001.2"), [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
 </dt> </dl>
 
 Região geográfica ou dialeto de idioma ao qual esse recurso de suporte pertence.
@@ -202,10 +202,10 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**chave**](/windows/desktop/WmiSdk/key-qualifier), [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
+Qualificadores: [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
-Cadeia de caracteres de forma livre arbitrária definida pelo fornecedor do produto ou pela organização que implanta o produto. Essa propriedade, já que é uma chave, deve ser exclusiva em toda a empresa.
+Cadeia de caracteres de forma livre arbitrária definida pelo fornecedor do produto ou pela organização que implanta o produto. Essa propriedade, como é uma chave, deve ser exclusiva em toda a empresa.
 
 </dd> </dl>
 
@@ -213,7 +213,7 @@ Cadeia de caracteres de forma livre arbitrária definida pelo fornecedor do prod
 
 O WMI não implementa essa classe.
 
-Esta documentação é derivada das descrições da classe CIM publicadas pela DMTF. A Microsoft pode ter feito alterações para corrigir erros secundários, obedecer aos padrões de documentação do Microsoft SDK ou fornecer mais informações.
+Esta documentação é derivada das descrições da classe CIM publicadas pelo DMTF. A Microsoft pode ter feito alterações para corrigir erros secundários, estar em conformidade com os padrões de documentação do SDK da Microsoft ou fornecer mais informações.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -223,8 +223,8 @@ Esta documentação é derivada das descrições da classe CIM publicadas pela D
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| Namespace<br/>                | Raiz \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Namespace<br/>                | RAIZ \\ CIMV2<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 

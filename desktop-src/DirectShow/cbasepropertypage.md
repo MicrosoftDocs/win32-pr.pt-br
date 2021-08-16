@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 168b2d450ec8efc30851286120d47ba6247fe6b4
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8ca4bf0789488a8601ae24bd4e43e1af8335fdf97a7864cbfba242b9c99eca8f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105780884"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118955006"
 ---
 # <a name="cbasepropertypage-class"></a>Classe CBasePropertyPage
 
@@ -49,8 +49,8 @@ A `CBasePropertyPage` classe é uma classe abstrata para implementar uma página
 | [**Desconectar**](cbasepropertypage-ondisconnect.md)                 | Chamado quando a página de propriedades deve liberar o objeto associado. VirtuaisLUNs.                                                      |
 | [**OnReceiveMessage**](cbasepropertypage-onreceivemessage.md)         | Chamado quando a caixa de diálogo recebe uma mensagem. VirtuaisLUNs.                                                                           |
 | Métodos IPropertyPage                                                  | Descrição                                                                                                                       |
-| [**Activate**](cbasepropertypage-activate.md)                         | Cria a janela da caixa de diálogo.                                                                                                    |
-| [**Aplicar**](cbasepropertypage-apply.md)                               | Aplica os valores da página de propriedades atual ao objeto associado à página de propriedades                                          |
+| [**Ativar**](cbasepropertypage-activate.md)                         | Cria a janela da caixa de diálogo.                                                                                                    |
+| [**Usar**](cbasepropertypage-apply.md)                               | Aplica os valores da página de propriedades atual ao objeto associado à página de propriedades                                          |
 | [**Desativar**](cbasepropertypage-deactivate.md)                     | Destrói a janela da caixa de diálogo.                                                                                                       |
 | [**GetPageInfo**](cbasepropertypage-getpageinfo.md)                   | Recupera informações sobre a página de propriedades.                                                                                    |
 | [**Ajuda**](cbasepropertypage-help.md)                                 | Chama a ajuda da página de propriedades.                                                                                                   |
@@ -58,7 +58,7 @@ A `CBasePropertyPage` classe é uma classe abstrata para implementar uma página
 | [**Mover**](cbasepropertypage-move.md)                                 | Posiciona e redimensiona a caixa de diálogo.                                                                                             |
 | [**Objetos**](cbasepropertypage-setobjects.md)                     | Fornece ponteiros **IUnknown** para os objetos associados à página de propriedades.                                                 |
 | [**SetPageSite**](cbasepropertypage-setpagesite.md)                   | Inicializa a página de propriedades.                                                                                                    |
-| [**programa**](cbasepropertypage-show.md)                                 | Mostra ou oculta a caixa de diálogo.                                                                                                    |
+| [**Mostrar**](cbasepropertypage-show.md)                                 | Mostra ou oculta a caixa de diálogo.                                                                                                    |
 | [**TranslateAccelerator**](cbasepropertypage-translateaccelerator.md) | Instrui a página de propriedades para processar um pressionamento de tecla.                                                                               |
 
 
@@ -67,7 +67,7 @@ A `CBasePropertyPage` classe é uma classe abstrata para implementar uma página
 
 ## <a name="remarks"></a>Comentários
 
-Uma página de propriedades é um objeto COM, portanto, você deve gerar um GUID para o identificador de classe (CLSID) e fornecer uma entrada na matriz [**CFactoryTemplate**](cfactorytemplate.md) . Para obter mais informações, consulte [DirectShow e com](directshow-and-com.md). O exemplo a seguir mostra uma entrada de fábrica de classe típica:
+Uma página de propriedades é um objeto COM, portanto, você deve gerar um GUID para o identificador de classe (CLSID) e fornecer uma entrada na matriz [**CFactoryTemplate**](cfactorytemplate.md) . para obter mais informações, consulte [DirectShow e COM](directshow-and-com.md). O exemplo a seguir mostra uma entrada de fábrica de classe típica:
 
 
 ```
@@ -108,7 +108,7 @@ STDMETHODIMP CMyFilter::GetPages(CAUUID *pPages)
 
 
 
-Lembre-se de substituir o método **NonDelegatingQueryInterface** do filtro também. Para obter mais informações, consulte [DirectShow e com](directshow-and-com.md) e [**INonDelegatingUnknown**](inondelegatingunknown.md).
+Lembre-se de substituir o método **NonDelegatingQueryInterface** do filtro também. para obter mais informações, consulte [DirectShow e COM](directshow-and-com.md) e [**INonDelegatingUnknown**](inondelegatingunknown.md).
 
 Em seguida, crie a caixa de diálogo como um recurso em seu projeto e crie um recurso de cadeia de caracteres que contém o título da caixa de diálogo. Ambas as IDs de recurso são parâmetros para o construtor **CBasePropertyPage** . Manter a cadeia de título em um recurso torna mais fácil localizar sua página de propriedades.
 
@@ -122,7 +122,7 @@ Para obter um exemplo estendido de como usar essa classe para criar uma página 
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>CProp. h (incluir fluxos. h)</dt> </dl>                                                                                     |
+| parâmetro<br/>  | <dl> <dt>Cprop. h (incluir Fluxos. h)</dt> </dl>                                                                                     |
 | Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
 
 

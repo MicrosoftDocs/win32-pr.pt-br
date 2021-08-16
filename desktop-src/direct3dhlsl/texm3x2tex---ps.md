@@ -1,6 +1,6 @@
 ---
-title: texm3x2tex-PS
-description: Executa a linha final de uma multiplicação de matriz 3x2 e usa o resultado para fazer uma pesquisa de textura. texm3x2tex deve ser usado em conjunto com a instrução texm3x2pad-PS.
+title: texm3x2tex – ps
+description: Executa a linha final de uma multiplicação de matriz 3x2 e usa o resultado para fazer uma análise de textura. O texm3x2tex deve ser usado em conjunto com a instrução texm3x2pad – ps.
 ms.assetid: c6cfbf75-4a63-4c82-9fb6-286b51b7f883
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,46 +9,46 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 62206bc4ef1e1b64ec760a240a087ec13526d896
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: 9653325098b05959fcbd9e7a838801652a532d936bdaebc829055b717a49096f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104988586"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117723014"
 ---
-# <a name="texm3x2tex---ps"></a>texm3x2tex-PS
+# <a name="texm3x2tex---ps"></a>texm3x2tex – ps
 
-Executa a linha final de uma multiplicação de matriz 3x2 e usa o resultado para fazer uma pesquisa de textura. texm3x2tex deve ser usado em conjunto com a instrução [texm3x2pad-PS](texm3x2pad---ps.md) .
+Executa a linha final de uma multiplicação de matriz 3x2 e usa o resultado para fazer uma análise de textura. O texm3x2tex deve ser usado em conjunto com a [instrução texm3x2pad – ps.](texm3x2pad---ps.md)
 
 ## <a name="syntax"></a>Syntax
 
 
 
-| texm3x2tex DST, src |
+| texm3x2tex dst, src |
 |---------------------|
 
 
 
- 
+ 
 
 onde
 
--   DST é o registro de destino.
+-   dst é o registro de destino.
 -   src é um registro de origem.
 
 ## <a name="remarks"></a>Comentários
 
 
 
-| Versões do sombreador de pixel | 1\_1 | 1\_2 | 1 \_ 3 | 1\_4 | 2 \_ 0 | 2 \_ x | 2 \_ SW | 3 \_ 0 | 3 \_ SW |
+| Versões do sombreador de pixel | 1\_1 | 1\_2 | 1 \_ 3 | 1\_4 | 2 \_ 0 | 2 \_ x | 2 \_ sw | 3 \_ 0 | 3 \_ sw |
 |-----------------------|------|------|------|------|------|------|-------|------|-------|
 | texm3x2tex            | x    | x    | x    |      |      |      |       |      |       |
 
 
 
- 
+ 
 
-A instrução é usada como uma das duas instruções que representam uma operação de multiplicação de matriz 3x2. Essa instrução deve ser usada com a instrução [texm3x2pad-PS](texm3x2pad---ps.md) .
+A instrução é usada como uma das duas instruções que representam uma operação de multiplicação de matriz 3x2. Essa instrução deve ser usada com [a instrução texm3x2pad – ps.](texm3x2pad---ps.md)
 
 Ao usar essas duas instruções, os registros de textura devem usar a sequência a seguir.
 
@@ -66,19 +66,19 @@ texm3x2tex  t(m+1), t(n)      // Perform second row of matrix multiply
 
 
 
-Veja mais detalhes sobre como a multiplicação de 3x2 é realizada.
+Aqui está mais detalhes sobre como a multiplicação 3x2 é realizada.
 
-A instrução texm3x2pad executa a primeira linha da multiplicação para localizar u<sup>'</sup>.
+A instrução texm3x2pad executa a primeira linha da multiplicação para encontrar u<sup>'</sup>.
 
-u<sup>'</sup> = t (n)<sub>RGB</sub> \* TextureCoordinates (estágio m)<sub>UVW</sub>
+u<sup>'</sup> = t(n)<sub></sub> \* TextureCoordinates(stage m)<sub>UVW</sub>
 
-A instrução texm3x2tex executa a segunda linha da multiplicação para localizar v<sup>'</sup>.
+A instrução texm3x2tex executa a segunda linha da multiplicação para encontrar v<sup>'</sup>.
 
-v<sup>'</sup> = t (n)<sub>RGB</sub> \* TextureCoordinates (estágio m + 1)<sub>UVW</sub>
+v<sup>'</sup> = t(n) TextureCoordinates<sub>RGB(stage</sub> \* m+1)<sub>UVW</sub>
 
-A instrução texm3x2tex amostra a textura no estágio (m + 1) com (u<sup>'</sup>, v<sup>'</sup>) e armazena o resultado em t (m + 1).
+A instrução texm3x2tex amostra a textura no estágio (m+1) com (u<sup>'</sup>,v<sup>'</sup>) e armazena o resultado em t(m+1).
 
-t (m + 1)<sub>RGB</sub> = TextureSample (estágio m + 1)<sub>RGB</sub> usando (u<sup>'</sup>, v<sup>'</sup> ) como coordenadas
+t(m+1)<sub>RGB</sub> = TextureSample(stage m+1)<sub>RGB</sub> using (u<sup>'</sup>, v<sup>'</sup> ) como coordenadas
 
 ## <a name="examples"></a>Exemplos
 
@@ -96,11 +96,11 @@ mov r0, t2            // Output result
 
 
 
-Este exemplo requer as seguintes texturas nos seguintes estágios de textura.
+Este exemplo requer as texturas a seguir nos estágios de textura a seguir.
 
--   O estágio 0 usa um mapa com dados de muito (x, y, z).
+-   O Estágio 0 recebe um mapa com (x,y,z) dados de desagregação.
 -   O estágio 1 contém coordenadas de textura. Nenhuma textura é necessária no estágio de textura.
--   O estágio 2 mantém as coordenadas de textura, bem como uma textura 2D definida nesse estágio de textura.
+-   O Estágio 2 contém ambas as coordenadas de textura, bem como um conjunto de textura 2D nesse estágio de textura.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -109,9 +109,9 @@ Este exemplo requer as seguintes texturas nos seguintes estágios de textura.
 [Instruções do sombreador de pixel](dx9-graphics-reference-asm-ps-instructions.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

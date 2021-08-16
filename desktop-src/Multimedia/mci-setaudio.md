@@ -3,7 +3,7 @@ title: MCI_SETAUDIO comando (mmsystem. h)
 description: O \_ comando autoaudio do MCI define os valores associados à reprodução e à captura de áudio. Os dispositivos de vídeo digital e VCR reconhecem este comando.
 ms.assetid: 78624596-e465-4ef1-8988-edcfe9a46f89
 keywords:
-- Multimídia do Windows de comando MCI_SETAUDIO
+- MCI_SETAUDIO comando Windows multimídia
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 20605ff78c62a8e688778692d5ca8f8e1342a968
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b882209b8a9debc2c01e4f5c6f852d418c1a5cd321a764af022d19c58fe32a21
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104163613"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117803393"
 ---
 # <a name="mci_setaudio-command"></a>\_Comando de SETaudio do MCI
 

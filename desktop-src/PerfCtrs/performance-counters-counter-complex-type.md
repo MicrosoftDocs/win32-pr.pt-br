@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: d591d4c23b626eaf2e2bfb10b528ff7c054507df
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 754b72d47e4fecbc5de3697cbec255251714885835a2ec429210c9ce5f489c77
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105766840"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117793750"
 ---
 # <a name="counter-complex-type"></a>Tipo complexo do contador
 
@@ -380,23 +380,23 @@ Define um contador.
 </tr>
 <tr class="even">
 <td>struct</td>
-<td><a href="performance-counters-csymboltype-simple-type.md"><strong>homem: CSymbolType</strong></a></td>
-<td>O nome de um elemento de struct que contém esse valor de contador. Esse atributo não é permitido para provedores de modo de usuário.<br/></td>
+<td><a href="performance-counters-csymboltype-simple-type.md"><strong>man:CSymbolType</strong></a></td>
+<td>O nome de um elemento struct que contém esse valor de contador. Esse atributo não é permitido para provedores de modo de usuário.<br/></td>
 </tr>
 <tr class="odd">
 <td>símbolo</td>
-<td><a href="performance-counters-csymboltype-simple-type.md"><strong>homem: CSymbolType</strong></a></td>
-<td>Um nome simbólico que identifica o contador. A ferramenta <a href="ctrpp.md">ctrpp</a> cria uma constante que você pode usar ao chamar funções que exigem um identificador de contador (por exemplo, <a href="/windows/desktop/api/Perflib/nf-perflib-perfincrementulongcountervalue"><strong>PerfIncrementULongCounterValue</strong></a>). O nome da constante é o nome simbólico.<br/></td>
+<td><a href="performance-counters-csymboltype-simple-type.md"><strong>man:CSymbolType</strong></a></td>
+<td>Um nome simbólico que identifica o contador. A <a href="ctrpp.md">ferramenta CTRPP</a> cria uma constante que você pode usar ao chamar funções que exigem um identificador de contador (por exemplo, <a href="/windows/desktop/api/Perflib/nf-perflib-perfincrementulongcountervalue"><strong>PerfIncrementULongCounterValue</strong></a>). O nome da constante é o nome simbólico.<br/></td>
 </tr>
 <tr class="even">
 <td>tipo</td>
 
-<td>O nome do tipo de contador. Para obter os valores possíveis, consulte o bloco de sintaxe acima. Para obter detalhes de cada tipo, consulte <a href="/previous-versions/windows/it-pro/windows-server-2003/cc776490(v=ws.10)">tipos de contadores</a> no guia de implantação do Windows 2003. O nome diferencia maiúsculas de minúsculas e usa letras minúsculas. <br/></td>
+<td>O nome do tipo de contador. Para valores possíveis, consulte o bloco de sintaxe acima. Para obter detalhes de cada tipo, consulte <a href="/previous-versions/windows/it-pro/windows-server-2003/cc776490(v=ws.10)">Tipos de</a> contador no Guia de implantação Windows 2003. O nome faz uso em minúsculas que faz uso de maiúsculas e minúsculas. <br/></td>
 </tr>
 <tr class="odd">
 <td>uri</td>
-<td><strong>xs: anyURI</strong></td>
-<td>Um identificador de recurso uniforme exclusivo que permite aos usuários recuperar valores de contador de qualquer local.<br/></td>
+<td><strong>xs:anyURI</strong></td>
+<td>Um identificador de recurso uniforme exclusivo que permite que os usuários recuperem valores de contador de qualquer local.<br/></td>
 </tr>
 </tbody>
 </table>
@@ -405,7 +405,7 @@ Define um contador.
 
 ## <a name="remarks"></a>Comentários
 
-Para fornecer compatibilidade com versões anteriores, cada contador no conjunto de contadores deve especificar os mesmos valores de **perfFreqID** e **perfTimeID** .
+Para fornecer compatibilidade com compatibilidade com vertida, cada contador no conjunto de contadores deve especificar os mesmos **valores perfFreqID** e **perfTimeID.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -413,8 +413,8 @@ Para fornecer compatibilidade com versões anteriores, cada contador no conjunto
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
 
 
 

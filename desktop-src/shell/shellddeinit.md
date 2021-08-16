@@ -1,5 +1,5 @@
 ---
-description: Registra os serviços de troca dinâmica de dados de Shell (DDE) no processo atual, notificando o sistema de que o processo atual deseja hospedar objetos DDE.
+description: registra os serviços de troca dinâmica de dados de Shell (DDE) no processo atual, notificando o sistema de que o processo atual deseja hospedar objetos DDE.
 ms.assetid: d7f65d6a-a697-475b-a739-c7950b7f4d5d
 title: Função ShellDDEInit
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Shdocvw.dll
-ms.openlocfilehash: cb2f4639d97a99cd063f372e303fd48b7a1d6e4d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 27d2e304cf3a67f522bbeec4835f5faa98b24d1509363873bb51387391f94b1b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104968123"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117676708"
 ---
 # <a name="shellddeinit-function"></a>Função ShellDDEInit
 
-Registra os serviços de troca dinâmica de dados de Shell (DDE) no processo atual, notificando o sistema de que o processo atual deseja hospedar objetos DDE.
+registra os serviços de troca dinâmica de dados de Shell (DDE) no processo atual, notificando o sistema de que o processo atual deseja hospedar objetos DDE.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -64,7 +64,7 @@ Essa função não tem um cabeçalho ou arquivo de biblioteca associado, portant
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Somente aplicativos de desktop do Windows XP, Windows 2000 Professional \[\]<br/>                                        |
+| Cliente mínimo com suporte<br/> | Windows XP, Windows 2000 Professional \[ aplicativos de área de trabalho\]<br/>                                        |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                          |
 | DLL<br/>                      | <dl> <dt>Shdocvw.dll (versão 6,0 ou posterior)</dt> </dl> |
 

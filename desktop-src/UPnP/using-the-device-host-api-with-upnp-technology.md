@@ -1,32 +1,32 @@
 ---
-title: Usando a API de host do dispositivo
-description: Esta seção contém informações detalhadas sobre como usar a API de host do dispositivo com a tecnologia UPnP.
+title: Usando a API de Host do Dispositivo
+description: Esta seção contém informações detalhadas para usar a API de Host do Dispositivo com a tecnologia UPnP.
 ms.assetid: b6d93825-a8dd-4ba8-bea9-09e3fbb62407
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b679bdc27d8a6f9f51f5192d2ea129669c510cb0
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 342c56a7648a5f132d3581e0c6be348ed6a26b1ff5bbb16638a5208b70869193
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103822317"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119058003"
 ---
-# <a name="using-the-device-host-api"></a>Usando a API de host do dispositivo
+# <a name="using-the-device-host-api"></a>Usando a API de Host do Dispositivo
 
-Esta seção contém informações detalhadas sobre como usar a API de host do dispositivo com a tecnologia UPnP. Os seguintes tópicos são abordados:
+Esta seção contém informações detalhadas para usar a API de Host do Dispositivo com a tecnologia UPnP. Os seguintes tópicos são abordados:
 
--   [Considerações de segurança de host de dispositivo](device-host-security-considerations.md)
--   [Considerações sobre programação de host de dispositivo](device-host-programming-considerations.md)
--   [Tratamento de erros de objeto de serviço](service-object-error-handling.md)
--   [Mapeando tipos de dados de descrição de serviço para tipos de dados IDL](mapping-service-description-data-types-to-idl-data-types.md)
--   [Como registrar um dispositivo no host do dispositivo](how-to-register-a-device-with-the-device-host.md)
--   [Cancelando o registro de um dispositivo](unregistering-a-device.md)
--   [Implementando um provedor de dispositivo](implementing-a-device-provider.md)
--   [Usando o código de exemplo do dispositivo DIMM](using-the-dimmer-device-sample-code.md)
+-   [Considerações sobre segurança do host do dispositivo](device-host-security-considerations.md)
+-   [Considerações sobre programação do host do dispositivo](device-host-programming-considerations.md)
+-   [Tratamento de erro de objeto de serviço](service-object-error-handling.md)
+-   [Mapeando tipos de dados de descrição do serviço para tipos de dados IDL](mapping-service-description-data-types-to-idl-data-types.md)
+-   [Como registrar um dispositivo com o host do dispositivo](how-to-register-a-device-with-the-device-host.md)
+-   [Não registro de um dispositivo](unregistering-a-device.md)
+-   [Implementando um provedor de dispositivos](implementing-a-device-provider.md)
+-   [Usando o código de exemplo do dispositivo Dimmer](using-the-dimmer-device-sample-code.md)
 
- 
+ 
 
- 
+ 
 
 
 

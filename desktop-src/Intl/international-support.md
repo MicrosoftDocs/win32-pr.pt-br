@@ -1,45 +1,45 @@
 ---
-description: Esta seção descreve as tecnologias do Windows que permitem que você ofereça suporte a várias culturas e linguagens escritas do Marketplace internacional em seu aplicativo Microsoft Win32 baseado em C ou C++.
+description: esta seção descreve as tecnologias em Windows que permitem que você ofereça suporte a várias culturas e linguagens escritas do marketplace internacional em seu aplicativo Microsoft Win32 baseado em C ou C++.
 ms.assetid: 90dbbd70-3609-4c12-bdc1-7fa222c96f67
 title: Internacionalização para aplicativos do Windows
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 83f6e4952c94af3b14dc0e8f4f135c1cc0cebafc
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f78f4831390ffc31a5f3290f0784d32c3aa1044863c708e6e0329225519c2cae
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103647358"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119147539"
 ---
 # <a name="internationalization-for-windows-applications"></a>Internacionalização para aplicativos do Windows
 
 (Anteriormente intitulado "suporte internacional")
 
-Esta seção descreve as tecnologias do Windows que permitem que você ofereça suporte a várias culturas e linguagens escritas do Marketplace internacional em seu aplicativo Microsoft Win32 baseado em C ou C++.
+esta seção descreve as tecnologias em Windows que permitem que você ofereça suporte a várias culturas e linguagens escritas do marketplace internacional em seu aplicativo Microsoft Win32 baseado em C ou C++.
 
-O Windows tornou-se uma plataforma essencial para os clientes em todo o mundo. Os usuários internacionais esperam soluções que são adaptadas para suas linguagens e regiões em todo o mundo. Nesta seção, você encontrará as informações necessárias para desenvolver soluções multilíngües, Multicultura e multissite. O suporte internacional integrado ao Windows permite que você implemente muitos cenários com menos sobrecarga de engenharia do que nunca.
+Windows tornou-se uma plataforma essencial para os clientes em todo o mundo. Os usuários internacionais esperam soluções que são adaptadas para suas linguagens e regiões em todo o mundo. Nesta seção, você encontrará as informações necessárias para desenvolver soluções multilíngües, Multicultura e multissite. o suporte internacional interno do Windows permite que você implemente muitos cenários com menos sobrecarga de engenharia do que nunca.
 
-O desenvolvimento de aplicativos preparados para o mundo requer o uso de vários serviços e ferramentas. O Windows contém recursos que permitem desenvolver soluções que:
+O desenvolvimento de aplicativos preparados para o mundo requer o uso de vários serviços e ferramentas. o Windows contém recursos que permitem desenvolver soluções que:
 
 - Dê suporte a diferentes necessidades específicas de idioma e localidade de usuários em todo o mundo (incluindo suporte a texto especializado, comportamento de classificação, formatação de data e hora e layouts de teclado). (Para obter mais informações, consulte [centro de conhecimento de suporte ao idioma nacional](./national-language-support-reference.md).)
-- São globalizados (podem ser implantados em todo o mundo a partir de uma única imagem binária) e podem ser localizados (capazes de ser adaptados para mercados locais específicos). (Para obter mais informações, consulte [Multilingual User interface](./multilingual-user-interface.md).)
+- São globalizados (podem ser implantados em todo o mundo a partir de uma única imagem binária) e podem ser localizados (capazes de ser adaptados para mercados locais específicos). (para obter mais informações, consulte [Interface de Usuário Multilíngue](./multilingual-user-interface.md).)
 - Exibir fontes e texto internacionais e permitir que os usuários especifiquem a fonte que desejam. (Para obter mais informações, consulte [suporte a scripts e fontes no Windows](/globalization/input/font-support).)
 - Permitir que o usuário insira caracteres complexos e símbolos com um teclado padrão.
 - Fornecer suporte para vários idiomas escritos diferentes por meio de Unicode e conjuntos de caracteres tradicionais.
-- Descubra a entrada de idioma por um usuário e personalize a experiência do usuário fornecida pelo seu aplicativo. (Para obter mais informações, consulte [escrevendo aplicativos preparados para o mundo no Windows: serviços lingüísticos estendidos no Windows](./using-extended-linguistic-services.md).)
+- Descubra a entrada de idioma por um usuário e personalize a experiência do usuário fornecida pelo seu aplicativo. (para obter mais informações, consulte [escrevendo aplicativos preparados para o mundo em Windows: serviços lingüísticos estendidos no Windows](./using-extended-linguistic-services.md).)
 
 ## <a name="in-this-section"></a>Nesta seção
 
 As seguintes tecnologias de suporte internacional estão documentadas nesta seção. Eles são listados com alguns cenários importantes para os quais podem ser usados.
 
-- [Introdução com desenvolvimento internacional do Windows](getting-started-with-international-development.md)
+- [Introdução com o desenvolvimento de Windows internacional](getting-started-with-international-development.md)
 
     Descreve como começar a criar aplicativos preparados para o mundo e fornece um tutorial ilustrando uma tarefa comum na escrita de software global.
 
     Cenários comuns:
 
     - Determine um caminho a ser levado para aprender a desenvolver software internacional.
-    - Descubra as tecnologias de internacionalização disponíveis no SDK (Software Development Kit) do Microsoft Windows.
+    - descubra as tecnologias de internacionalização disponíveis no SDK (Software Development Kit) do Microsoft Windows.
     - Siga um tutorial que usa um aplicativo multilíngue existente e adiciona suporte para idiomas adicionais.
 
 - [Serviços de globalização](globalization-services.md)
@@ -64,7 +64,7 @@ As seguintes tecnologias de suporte internacional estão documentadas nesta seç
 
 - [Fontes internacionais e exibição de texto](international-fonts-and-text-display.md)
 
-    Descreve o suporte fornecido pela plataforma Windows para fontes internacionais, texto internacional e tipografia fina.
+    descreve o suporte fornecido pela plataforma de Windows para fontes internacionais, texto internacional e tipografia fina.
 
     Cenários comuns:
 
@@ -100,7 +100,7 @@ As seguintes tecnologias de suporte internacional estão documentadas nesta seç
 
 ## <a name="related-international-technologies"></a>Tecnologias internacionais relacionadas
 
-O suporte ao desenvolvimento internacional também está disponível para aplicativos escritos em código gerenciado. Se estiver desenvolvendo para o .NET Framework, você precisará de alguns ou de todos eles:
+O suporte ao desenvolvimento internacional também está disponível para aplicativos escritos em código gerenciado. se estiver desenvolvendo para o .NET Framework, você precisará de alguns ou de todos eles:
 
 - O [namespace System. Globalization](/dotnet/api/system.globalization) contém classes que definem informações relacionadas à cultura e fornecem funções de globalização avançadas.
 - O [namespace System. Text](/dotnet/api/system.text) contém classes que representam codificações de caracteres, convertem blocos de caracteres e manipulam e formatam objetos de cadeia de caracteres.

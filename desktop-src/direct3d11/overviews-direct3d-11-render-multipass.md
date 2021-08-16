@@ -4,12 +4,12 @@ description: A renderização de várias passagens é um processo no qual um apl
 ms.assetid: 9a11686a-fd99-4d40-8b02-6f8ec18346e8
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 70fcf7f3f04bd641fdf82c9cf317e8a2ec99e85c
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 242573dea2982f3525082187aad536a407e446c4ce59f116f53b8fa0d40fc582
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104292390"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119124204"
 ---
 # <a name="multiple-pass-rendering"></a>Renderização de Multiple-Pass
 
@@ -48,7 +48,7 @@ O pseudocódigo a seguir mostra como executar a renderização de várias passag
 > [!Note]  
 > O contexto imediato modifica um recurso, que é associado ao contexto imediato como uma exibição de destino de renderização (RTV); por outro lado, cada contexto adiado simplesmente usa o recurso, que está associado ao contexto adiado como um modo de exibição de recurso de sombreador (SRV). Para obter mais informações sobre contextos imediatos e adiados, consulte [renderização imediata e adiada](overviews-direct3d-11-render-multi-thread-render.md).
 
- 
+ 
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -57,9 +57,9 @@ O pseudocódigo a seguir mostra como executar a renderização de várias passag
 [Renderização](overviews-direct3d-11-render.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

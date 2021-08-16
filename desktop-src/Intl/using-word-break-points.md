@@ -4,12 +4,12 @@ ms.assetid: c9bbfb51-727a-45ff-8450-774bc106f9f7
 title: Usando pontos de quebra de palavras
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9b9cf68d5c90b6e93a6e6f15706ec357c7a33b23
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 733d761d15299e02fbfb84d541a7ceba5d4d77a9b57e0280bfeedee24532d8cc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104172172"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119146859"
 ---
 # <a name="using-word-break-points"></a>Usando pontos de quebra de palavras
 

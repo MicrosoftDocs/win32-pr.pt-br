@@ -1,9 +1,9 @@
 ---
-title: Mensagem de CCM_DPISCALE (commctrl. h)
-description: Habilita o dimensionamento automático de pontos por polegada (DPI) em controles de Tree-View, controles de List-View, controles de ComboBoxEx, controles de cabeçalho, botões, controles de barra de ferramentas, controles de animação e listas de imagens.
+title: CCM_DPISCALE mensagem (Commctrl.h)
+description: Habilita o dimensionamento automático de dpi (pontos altos por polegada) em controles Tree-View, controles List-View, controles ComboBoxEx, controles de header, botões, controles de barra de ferramentas, controles de animação e listas de imagens.
 ms.assetid: 3c751f10-992c-41f8-8f0b-3dc58f0591e4
 keywords:
-- Controles de CCM_DPISCALE de mensagens do Windows
+- CCM_DPISCALE controles de Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 56ef978f486f370adf9872d28e1accbacc37a6de
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e7e72cb8ac3acf413e4381580a4ecf38a4f5bd4b2f5b03d6cff7d7abb85c1f0f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104085835"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119320246"
 ---
-# <a name="ccm_dpiscale-message"></a>CCM \_ DPISCALE mensagem
+# <a name="ccm_dpiscale-message"></a>Mensagem \_ DPISCALE do CCM
 
-Habilita o dimensionamento automático de pontos por polegada (DPI) em [controles de exibição de árvore](tree-view-controls.md), controles de exibição de [lista](list-view-control-reference.md), [controles de ComboBoxEx](comboboxex-controls.md), controles de [cabeçalho](header-controls.md), [botões](buttons.md), controles de [barra de ferramentas](toolbar-controls-overview.md), [controles de animação](animation-control-overview.md)e [listas de imagens](image-lists.md).
+Habilita o dimensionamento automático de dpi (pontos altos por polegada) em controles de Modo de Exibição de [Árvore,](tree-view-controls.md)controles [list-View](list-view-control-reference.md), controles [ComboBoxEx,](comboboxex-controls.md) [controles](buttons.md)de [header](header-controls.md), [botões,](toolbar-controls-overview.md)controles de barra de [ferramentas,](animation-control-overview.md)controles de animação e Listas de [imagens](image-lists.md).
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -32,7 +32,7 @@ Habilita o dimensionamento automático de pontos por polegada (DPI) em [controle
 *wParam* 
 </dt> <dd>
 
-Defina como **true**.
+Definido como **TRUE.**
 
 </dd> <dt>
 
@@ -43,18 +43,18 @@ Deve ser zero.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O valor de retorno não é usado.
 
 ## <a name="remarks"></a>Comentários
 
-O início rápido e a [barra de tarefas](/windows/desktop/shell/taskbar) não devem especificar um dimensionamento de DPI, pois as imagens já estão dimensionadas.
+Início Rápido e [Barra de Tarefas](/windows/desktop/shell/taskbar) não devem especificar um dimensionamento dpi, pois as imagens já estão dimensionados.
 
-Qualquer controle que usa uma lista de imagens criada com a métrica SmallIcon não deve dimensionar seus ícones.
+Qualquer controle que use uma lista de imagens criada com a métrica SmallIcon não deve dimensionar seus ícones.
 
 > [!Note]  
-> Para usar essa API, você deve fornecer um manifesto que especifique Comclt32.dll versão 6,0. Para obter mais informações sobre manifestos, consulte [habilitando estilos visuais](cookbook-overview.md).
+> Para usar essa API, você deve fornecer um manifesto que especifique Comclt32.dll versão 6.0. Para obter mais informações sobre manifestos, consulte [Habilitando estilos visuais.](cookbook-overview.md)
 
  
 
@@ -64,9 +64,9 @@ Qualquer controle que usa uma lista de imagens criada com a métrica SmallIcon n
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

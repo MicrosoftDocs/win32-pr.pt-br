@@ -3,8 +3,8 @@ title: Usando caixas de diálogo
 description: Use caixas de diálogo para exibir informações e solicitar entrada do usuário.
 ms.assetid: 8a5b6bdd-4429-4f48-b846-6bd617a87abf
 keywords:
-- Interface do usuário do Windows, janelas
-- Interface do usuário do Windows, caixas de diálogo
+- Windows Interface do usuário, janelas
+- Windows Interface do usuário, caixas de diálogo
 - janelas, caixas de diálogo
 - caixas de diálogo, sobre
 - caixas de diálogo, exibindo
@@ -17,12 +17,12 @@ keywords:
 - caixas de diálogo, modelos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 21da47d7d59f4cadc21314566bce41a9ef3456a7
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 32ec5e97060697388224ac92f60b6043a188d4259520aaf151fb188c43f6bb64
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104007977"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117720785"
 ---
 # <a name="using-dialog-boxes"></a>Usando caixas de diálogo
 
@@ -252,9 +252,9 @@ Se o usuário clicar no botão **OK** , o procedimento recuperará o estado atua
 
 ## <a name="initializing-a-dialog-box"></a>Inicializando uma caixa de diálogo
 
-Você inicializa a caixa de diálogo e seu conteúdo durante o processamento da mensagem [**\_ INITDIALOG do WM**](wm-initdialog.md) . A tarefa mais comum é inicializar os controles para refletir as configurações da caixa de diálogo atual. Outra tarefa comum é centralizar uma caixa de diálogo na tela ou dentro de sua janela de proprietário. Uma tarefa útil para algumas caixas de diálogo é definir o foco de entrada para um controle especificado em vez de aceitar o foco de entrada padrão.
+Você inicializa a caixa de diálogo e seu conteúdo durante o processamento da mensagem [**\_ INITDIALOG do WM**](wm-initdialog.md) . A tarefa mais comum é inicializar os controles para refletir as configurações da caixa de diálogo atual. Outra tarefa comum é centralar uma caixa de diálogo na tela ou na janela do proprietário. Uma tarefa útil para algumas caixas de diálogo é definir o foco de entrada para um controle especificado em vez de aceitar o foco de entrada padrão.
 
-No exemplo a seguir, o procedimento da caixa de diálogo centraliza a caixa de diálogo e define o foco de entrada durante o processamento da mensagem [**\_ INITDIALOG do WM**](wm-initdialog.md) . Para centralizar a caixa de diálogo, o procedimento recupera os retângulos da janela para a caixa de diálogo e a janela do proprietário e calcula uma nova posição para a caixa de diálogo. Para definir o foco de entrada, o procedimento verifica o parâmetro *wParam* para determinar o identificador do foco de entrada padrão.
+No exemplo a seguir, o procedimento da caixa de diálogo centraliza a caixa de diálogo e define o foco de entrada durante o processamento da mensagem [**WM \_ INITDIALOG.**](wm-initdialog.md) Para centralr a caixa de diálogo, o procedimento recupera os retângulos de janela para a caixa de diálogo e a janela do proprietário e calcula uma nova posição para a caixa de diálogo. Para definir o foco de entrada, o procedimento verifica o *parâmetro wParam* para determinar o identificador do foco de entrada padrão.
 
 
 ```
@@ -304,19 +304,19 @@ case WM_INITDIALOG:
 
 
 
-Nas instruções anteriores, o procedimento usa a função [**GetParent**](/windows/desktop/api/winuser/nf-winuser-getparent) para recuperar o identificador de janela do proprietário para uma caixa de diálogo. A função retorna o identificador de janela do proprietário para caixas de diálogo e o identificador da janela pai para janelas filhas. Como um aplicativo pode criar uma caixa de diálogo que não tem proprietário, o procedimento verifica o identificador retornado e usa a função [**GetDesktopWindow**](/windows/desktop/api/winuser/nf-winuser-getdesktopwindow) para recuperar o identificador da janela da área de trabalho, se necessário. Depois de calcular a nova posição, o procedimento usa a função [**SetWindowPos**](/windows/desktop/api/winuser/nf-winuser-setwindowpos) para mover a caixa de diálogo, especificando o \_ valor superior de HWND para garantir que a caixa de diálogo permaneça na parte superior da janela do proprietário.
+Nas instruções anteriores, o procedimento usa a [**função GetParent**](/windows/desktop/api/winuser/nf-winuser-getparent) para recuperar o alça de janela do proprietário para uma caixa de diálogo. A função retorna o alça de janela do proprietário para caixas de diálogo e o alça de janela pai para janelas filho. Como um aplicativo pode criar uma caixa de diálogo que não tem proprietário, o procedimento verifica o alça retornado e usa a [**função GetDesktopWindow**](/windows/desktop/api/winuser/nf-winuser-getdesktopwindow) para recuperar o alça de janela da área de trabalho, se necessário. Depois de calcular a nova posição, o procedimento usa a função [**SetWindowPos**](/windows/desktop/api/winuser/nf-winuser-setwindowpos) para mover a caixa de diálogo, especificando o valor HWND TOP para garantir que a caixa de diálogo permaneça sobre a janela \_ do proprietário.
 
-Antes de definir o foco de entrada, o procedimento verifica o identificador de controle do foco de entrada padrão. O sistema passa o identificador de janela do foco de entrada padrão no parâmetro *wParam* . A função [**GetDlgCtrlID**](/windows/desktop/api/Winuser/nf-winuser-getdlgctrlid) retorna o identificador do controle identificado pelo identificador de janela. Se o identificador não corresponder ao identificador correto, o procedimento usará a função [**SetFocus**](/windows/desktop/api/winuser/nf-winuser-setfocus) para definir o foco de entrada. A função [**GetDlgItem**](/windows/desktop/api/Winuser/nf-winuser-getdlgitem) é necessária para recuperar o identificador de janela do controle desejado.
+Antes de definir o foco de entrada, o procedimento verifica o identificador de controle do foco de entrada padrão. O sistema passa o controle de janela do foco de entrada padrão no *parâmetro wParam.* A [**função GetDlgCtrlID**](/windows/desktop/api/Winuser/nf-winuser-getdlgctrlid) retorna o identificador do controle identificado pelo identificador de janela. Se o identificador não corresponder ao identificador correto, o procedimento usará a [**função SetFocus**](/windows/desktop/api/winuser/nf-winuser-setfocus) para definir o foco de entrada. A [**função GetDlgItem**](/windows/desktop/api/Winuser/nf-winuser-getdlgitem) é necessária para recuperar a alça de janela do controle desejado.
 
 ## <a name="creating-a-template-in-memory"></a>Criando um modelo na memória
 
-Às vezes, os aplicativos adaptam ou modificam o conteúdo das caixas de diálogo dependendo do estado atual dos dados que estão sendo processados. Nesses casos, não é prático fornecer todos os modelos de caixa de diálogo possíveis como recursos no arquivo executável do aplicativo. Mas a criação de modelos na memória proporciona ao aplicativo mais flexibilidade para se adaptar a qualquer circunstância.
+Às vezes, os aplicativos adaptam ou modificam o conteúdo das caixas de diálogo, dependendo do estado atual dos dados que estão sendo processados. Nesses casos, não é prático fornecer todos os modelos de caixa de diálogo possíveis como recursos no arquivo executável do aplicativo. Mas a criação de modelos na memória dá ao aplicativo mais flexibilidade para se adaptar a qualquer circunstâncias.
 
-No exemplo a seguir, o aplicativo cria um modelo na memória para uma caixa de diálogo modal que contém um botão de mensagem e **OK** e **ajuda** .
+No exemplo a seguir, o aplicativo cria um modelo na memória para uma caixa de diálogo modal que contém uma mensagem e **os botões OK** e Ajuda. 
 
-Em um modelo de caixa de diálogo, todas as cadeias de caracteres, como a caixa de diálogo e os títulos dos botões, devem ser cadeias Unicode. Este exemplo usa a função [**MultiByteToWideChar**](/windows/desktop/api/stringapiset/nf-stringapiset-multibytetowidechar) para gerar essas cadeias de caracteres Unicode.
+Em um modelo de caixa de diálogo, todas as cadeias de caracteres, como a caixa de diálogo e os títulos do botão, devem ser cadeias de caracteres Unicode. Este exemplo usa a [**função MultiByteToWideChar**](/windows/desktop/api/stringapiset/nf-stringapiset-multibytetowidechar) para gerar essas cadeias de caracteres Unicode.
 
-As estruturas [**DLGITEMTEMPLATE**](/windows/desktop/api/Winuser/ns-winuser-dlgitemtemplate) em um modelo de caixa de diálogo devem ser alinhadas em limites **DWORD** . Para alinhar essas estruturas, este exemplo usa uma rotina auxiliar que usa um ponteiro de entrada e retorna o ponteiro mais próximo que está alinhado em um limite **DWORD** .
+As [**estruturas DLGITEMTEMPLATE**](/windows/desktop/api/Winuser/ns-winuser-dlgitemtemplate) em um modelo de caixa de diálogo devem ser alinhadas em limites **DWORD.** Para alinhar essas estruturas, este exemplo usa uma rotina auxiliar que usa um ponteiro de entrada e retorna o ponteiro mais próximo alinhado em um limite **DWORD.**
 
 
 ```
@@ -433,6 +433,6 @@ LRESULT DisplayMyMessage(HINSTANCE hinst, HWND hwndOwner, LPSTR lpszMessage)
 
 
 
- 
+ 
 
- 
+ 

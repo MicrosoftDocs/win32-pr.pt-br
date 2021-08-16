@@ -4,18 +4,18 @@ ms.assetid: b9795825-41fa-474b-a0c5-06770aa99bc1
 title: Chamando funções de banco de dados de programas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6e2adeab5570bc6786439d5de509f03ab906a0c1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1959e43b680d84e04de1f68483e8a1016bbeca0e867daebf10a317838d68c0ce
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103828040"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119145699"
 ---
 # <a name="calling-database-functions-from-programs"></a>Chamando funções de banco de dados de programas
 
 Antes de chamar qualquer uma das seguintes [funções de banco de dados](database-functions.md) de um programa, como uma ação personalizada ou um processo de automação, o instalador deve primeiro executar a ação [CostInitialize](costinitialize-action.md), a [ação de filecusto](filecost-action.md)e a [ação CostFinalize](costfinalize-action.md).
 
-Veja a seguir uma lista de funções de banco de dados usadas no Windows Installer:
+veja a seguir uma lista de funções de banco de dados usadas no Windows Installer:
 
 -   [**MsiGetComponentState**](/windows/desktop/api/Msiquery/nf-msiquery-msigetcomponentstatea)
 -   [**MsiGetFeatureCost**](/windows/desktop/api/Msiquery/nf-msiquery-msigetfeaturecosta)

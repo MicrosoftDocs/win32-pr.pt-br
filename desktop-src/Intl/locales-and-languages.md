@@ -4,18 +4,18 @@ ms.assetid: 8214c00d-4ec6-4597-8088-7819a160f0dc
 title: Localidades e idiomas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: df2c0d0fa41b9186b2135d9497d52de24577bbae
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 462fc66a3296312de73a472309457e12954b6f30c80857594808350306bf4994
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105767627"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119147149"
 ---
 # <a name="locales-and-languages"></a>Localidades e idiomas
 
 O termo "Language" indica uma coleção de propriedades usadas em comunicação falada e escrita. Cada idioma tem um nome de idioma e um identificador de idioma que indicam a [página de código](code-pages.md) específica (ANSI, dos, Macintosh) usada para representar a [localização geográfica](table-of-geographical-locations.md) do idioma no sistema operacional. Uma linguagem neutra é indicada por um nome como "en" para inglês. Uma linguagem mais específica geograficamente pode ser indicada por um nome que inclui informações de localidade e país/região. Por exemplo, a localidade inglês (Estados Unidos) tem o nome da linguagem "en-US".
 
-Uma "localidade" é uma coleção de informações de preferência do usuário relacionadas à linguagem representada como uma lista de valores. O Windows XP dá suporte a mais de 150 localidades, e o Windows Vista dá suporte a aproximadamente 200. Cada localidade é definida por um idioma e uma ordem de classificação e tem um nome de localidade e um identificador de localidade. Um exemplo de um nome de localidade para alemão (Alemanha) é " \_ descatálogo de lista telefônica".
+Uma "localidade" é uma coleção de informações de preferência do usuário relacionadas à linguagem representada como uma lista de valores. Windows o XP dá suporte a mais de 150 localidades e o Windows Vista dá suporte a aproximadamente 200. Cada localidade é definida por um idioma e uma ordem de classificação e tem um nome de localidade e um identificador de localidade. Um exemplo de um nome de localidade para alemão (Alemanha) é " \_ descatálogo de lista telefônica".
 
 Cada sistema operacional tem pelo menos uma localidade instalada e, muitas vezes, tem muitas localidades das quais o usuário pode selecionar. Cada localidade tem uma variedade de informações associadas a ele, além de seu nome e identificador. Os tipos de informações de localidade são descritos nas [constantes de informações de localidade](locale-information-constants.md).
 
@@ -23,9 +23,9 @@ O sistema operacional atribui uma localidade a cada thread, inicialmente atribui
 
 A implementação de um idioma requer uma localidade correspondente. O sistema operacional implementa um idioma neutro, selecionando os dados para a localidade associada a uma versão específica do idioma, geralmente a localidade mais generalizada.
 
-A partir do Windows Vista, é possível que uma linguagem específica corresponda a uma localidade suplementar, que é um tipo de localidade personalizada. Como as localidades complementares compartilham um único identificador de localidade, seus aplicativos devem lidar com essas localidades e os idiomas correspondentes por nome, em vez de por identificador.
+a partir do Windows Vista, é possível que uma linguagem específica corresponda a uma localidade suplementar, que é um tipo de localidade personalizada. Como as localidades complementares compartilham um único identificador de localidade, seus aplicativos devem lidar com essas localidades e os idiomas correspondentes por nome, em vez de por identificador.
 
-Os conceitos de linguagem estão fortemente relacionados aos conceitos de localidade, mas os dois termos não são intercambiáveis. Como regra geral, as funções relacionadas à [interface do usuário multilíngue](multilingual-user-interface.md) lidam com linguagens, enquanto as funções NLS agem sobre localidades.
+Os conceitos de linguagem estão fortemente relacionados aos conceitos de localidade, mas os dois termos não são intercambiáveis. como regra geral, as funções relacionadas ao [Interface de Usuário Multilíngue](multilingual-user-interface.md) lidam com linguagens, enquanto as funções NLS agem sobre localidades.
 
 Os tópicos a seguir são abordados nesta seção:
 

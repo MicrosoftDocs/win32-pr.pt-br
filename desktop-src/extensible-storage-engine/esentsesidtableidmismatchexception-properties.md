@@ -1,25 +1,25 @@
 ---
-description: 'Saiba mais sobre: Propriedades de EsentSesidTableIdMismatchException'
-title: Propriedades de EsentSesidTableIdMismatchException
+description: 'Saiba mais sobre: propriedades EsentSesidTableIdMismatchException'
+title: Propriedades EsentSesidTableIdMismatchException
 TOCTitle: EsentSesidTableIdMismatchException properties
 ms:assetid: Properties.T:Microsoft.Isam.Esent.Interop.EsentSesidTableIdMismatchException
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentsesidtableidmismatchexception_properties(v=EXCHG.10)
 ms:contentKeyID: 55102702
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: d781507c71d9f0b26a743413418edefe43de437b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 801906f240f2d12bad9750f8fc42b45bd408318da62be9c0229eca54ce7c5eb1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104560938"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119402852"
 ---
-# <a name="esentsesidtableidmismatchexception-properties"></a>Propriedades de EsentSesidTableIdMismatchException
+# <a name="esentsesidtableidmismatchexception-properties"></a>Propriedades EsentSesidTableIdMismatchException
 
 Incluir membros protegidos  
 Incluir membros herdados  
 
-O tipo [EsentSesidTableIdMismatchException](./esentsesidtableidmismatchexception-class.md) expõe os membros a seguir.
+O [tipo EsentSesidTableIdMismatchException](./esentsesidtableidmismatchexception-class.md) expõe os membros a seguir.
 
 ## <a name="properties"></a>Propriedades
 
@@ -40,16 +40,16 @@ O tipo [EsentSesidTableIdMismatchException](./esentsesidtableidmismatchexception
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
 <td><a href="dn274313(v=exchg.10).md">Erro</a></td>
-<td>Obtém o erro de ESENT subjacente para esta exceção. (Herdado de <a href="dn274314(v=exchg.10).md">EsentErrorException</a>.)</td>
+<td>Obtém o erro Esent subjacente para essa exceção. (Herdado de <a href="dn274314(v=exchg.10).md">EsentErrorException</a>.)</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
-<td><a href="/dotnet/api/system.exception.helplink#System_Exception_HelpLink">HelpLink</a></td>
+<td><a href="/dotnet/api/system.exception.helplink#System_Exception_HelpLink">Helplink</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.protproperty(exchg.10).gif" title="Propriedade protegida" alt="Protected property" /></td>
-<td><a href="/dotnet/api/system.exception.hresult#System_Exception_HResult">Resultado</a></td>
+<td><a href="/dotnet/api/system.exception.hresult#System_Exception_HResult">HResult</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="odd">
@@ -69,7 +69,7 @@ O tipo [EsentSesidTableIdMismatchException](./esentsesidtableidmismatchexception
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
-<td><a href="/dotnet/api/system.exception.stacktrace#System_Exception_StackTrace">Pilha</a></td>
+<td><a href="/dotnet/api/system.exception.stacktrace#System_Exception_StackTrace">StackTrace</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="odd">
@@ -89,4 +89,4 @@ Parte superior
 
 [Classe EsentSesidTableIdMismatchException](./esentsesidtableidmismatchexception-class.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

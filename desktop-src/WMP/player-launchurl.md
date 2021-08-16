@@ -3,9 +3,9 @@ title: Método Player. launchURL
 description: O método launchURL envia uma URL para o navegador padrão do usuário a ser renderizado. | Método Player. launchURL
 ms.assetid: 2b445e59-f884-4519-9acb-f349319429d2
 keywords:
-- método launchURL Windows Media Player
+- Windows Media Player do método launchURL
 - método launchURL Windows Media Player, classe Player
-- Classe de jogador Windows Media Player, método launchURL
+- classe de jogador Windows Media Player, método launchURL
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3c496e8f40f4d7c8a21e718b820e438d3ce32ad1
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 79d22c65a29aaee9c849677dfa42acb5769bf30d2fb7079e305ee79632ef22e2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105761795"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119134819"
 ---
 # <a name="playerlaunchurl-method"></a>Método Player. launchURL
 
@@ -49,7 +49,7 @@ Valor da **cadeia de caracteres** que representa a URL a ser iniciada.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 

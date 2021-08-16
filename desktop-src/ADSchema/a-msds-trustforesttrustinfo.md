@@ -120,10 +120,10 @@ Contém informações de confiança de floresta (um BLOB binário) que é usado 
 | ID do link                | \-                                                   |
 | MAPI-Id                | \-                                                   |
 | System-Only            | Falso                                                |
-| É de valor único       | Verdadeiro                                                 |
+| Tem valor único       | Verdadeiro                                                 |
 | É indexado             | Falso                                                |
-| No catálogo global      | Verdadeiro                                                 |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                         |
+| No Catálogo Global      | Verdadeiro                                                 |
+| Descritor de segurança NT | O:BAG:BAD:S:                                         |
 | Range-Lower            | \-                                                   |
 | Range-Upper            | \-                                                   |
 | Search-Flags           | 0x00000000                                           |
@@ -141,10 +141,10 @@ Contém informações de confiança de floresta (um BLOB binário) que é usado 
 | ID do link                | \-                                                   |
 | MAPI-Id                | \-                                                   |
 | System-Only            | Falso                                                |
-| É de valor único       | Verdadeiro                                                 |
+| Tem valor único       | Verdadeiro                                                 |
 | É indexado             | Falso                                                |
-| No catálogo global      | Verdadeiro                                                 |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                         |
+| No Catálogo Global      | Verdadeiro                                                 |
+| Descritor de segurança NT | O:BAG:BAD:S:                                         |
 | Range-Lower            | \-                                                   |
 | Range-Upper            | \-                                                   |
 | Search-Flags           | 0x00000000                                           |

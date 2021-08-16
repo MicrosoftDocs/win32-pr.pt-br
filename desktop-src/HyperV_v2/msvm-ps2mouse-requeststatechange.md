@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 878b0977a244d4b098dfa449f3c778c33e909111
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 28136033b3c43c49f127ecd59a79bb85d96a0f341d7c9f8f8f1e7c664e419cb6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108118814"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119148259"
 ---
 # <a name="requeststatechange-method-of-the-msvm_ps2mouse-class"></a>Método RequestStateChange da classe Msvm \_ Ps2Mouse
 
@@ -167,7 +167,7 @@ Esse método retorna um dos seguintes valores:
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

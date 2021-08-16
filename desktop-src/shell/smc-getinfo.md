@@ -1,6 +1,6 @@
 ---
-description: Solicita informações sobre um item de menu regular.
-title: SMC_GETINFO mensagem (Shobjidl.h)
+description: Solicita informações sobre um item de menu normal.
+title: Mensagem de SMC_GETINFO (shobjidl. h)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.assetid: 07f35a64-eff0-48e8-a2fc-719ccf1eca18
@@ -20,9 +20,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118968105"
 ---
-# <a name="smc_getinfo-message"></a>Mensagem \_ GETINFO do SMC
+# <a name="smc_getinfo-message"></a>Mensagem do SMC \_ GETinfo
 
-Solicita informações sobre um item de menu regular.
+Solicita informações sobre um item de menu normal.
 
 
 ```C++
@@ -40,7 +40,7 @@ SMC_GETINFO
 *psminfo* 
 </dt> <dd>
 
-Um ponteiro para uma [**estrutura SMINFO.**](/windows/win32/api/shobjidl_core/ns-shobjidl_core-sminfo) Preencha a estrutura com as informações apropriadas e retorne S \_ OK.
+Um ponteiro para uma estrutura [**SMINFO**](/windows/win32/api/shobjidl_core/ns-shobjidl_core-sminfo) . Preencha a estrutura com as informações apropriadas e retorne as S \_ OK.
 
 </dd> </dl>
 
@@ -50,7 +50,7 @@ Retornar S \_ OK.
 
 ## <a name="remarks"></a>Comentários
 
-Essa notificação é recebida pelo [**método IShellMenuCallback::CallbackSM.**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ishellmenucallback-callbacksm)
+Essa notificação é recebida pelo método [**IShellMenuCallback:: CallbackSM**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ishellmenucallback-callbacksm) .
 
 ## <a name="requirements"></a>Requisitos
 
@@ -60,8 +60,8 @@ Essa notificação é recebida pelo [**método IShellMenuCallback::CallbackSM.**
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                              |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                    |
-| Cabeçalho<br/>                   | <dl> <dt>Shobjidl.h</dt> </dl>   |
-| Idl<br/>                      | <dl> <dt>Shobjidl.idl</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>ShObjIdl. h</dt> </dl>   |
+| INSERI<br/>                      | <dl> <dt>ShObjIdl. idl</dt> </dl> |
 
 
 

@@ -1,7 +1,7 @@
 ---
 description: O método Seek define as posições de início e parada do fluxo.
 ms.assetid: d84476f5-688c-429d-a51b-7020a6316e35
-title: Método CPullPin. Seek (Pullpin. h)
+title: Método CPullPin.Seek (Pullpin.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 6f1a82ec549b5ceb888acc194a7abc2cd3eace47
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 65ea4deddd000d1064adf8b8caf5a636eed87105856d506191d677e70978d096
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105754147"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118953985"
 ---
-# <a name="cpullpinseek-method"></a>Método CPullPin. Seek
+# <a name="cpullpinseek-method"></a>Método CPullPin.Seek
 
 O `Seek` método define as posições de início e parada do fluxo.
 
@@ -43,31 +43,31 @@ HRESULT Seek(
 
 <dl> <dt>
 
-*tStart* 
+*Tstart* 
 </dt> <dd>
 
-Especifica a posição inicial, em bytes multiplicada por 10 milhões.
+Especifica a posição inicial, em bytes multiplicados por 10.000.000.
 
 </dd> <dt>
 
 *tStop* 
 </dt> <dd>
 
-Especifica a posição de parada, em bytes multiplicada por 10 milhões.
+Especifica a posição de parada, em bytes multiplicados por 10.000.000.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna S \_ OK se o método for bem sucedido ou um código de erro do contrário.
+Retornará S \_ OK se o método for bem-sucedido ou um código de erro, caso contrário.
 
 ## <a name="remarks"></a>Comentários
 
-Se o thread de trabalho estiver em execução, o método pausará o thread, liberará o gráfico de filtro e retomará o thread. O thread começa a extrair dados da nova posição inicial. Caso contrário, os novos valores de posição entram em vigor sempre que o thread for iniciado.
+Se o thread de trabalho estiver em execução, o método pausará o thread, liberará o grafo de filtro e retomará o thread. O thread começa a esvasá-los da nova posição inicial. Caso contrário, os novos valores de posição se tornarão efetivos sempre que o thread for iniciado.
 
-As posições são relativas ao início da fonte original. Multiplique os deslocamentos de bytes desejados pelas unidades constantes, que são definidas na biblioteca de classes base como 10 milhões.
+As posições são relativas ao início da origem original. Multiplique os deslocamentos de byte desejados pelas UNIDADES constantes, que é definida na biblioteca de classes base como 10.000.000.
 
-Quando o PIN se conecta pela primeira vez, as posições de parar e iniciar padrão para o início e o fim do fluxo.
+Quando o pino se conecta pela primeira vez, as posições de parada e início são padrão para o início e o fim do fluxo.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -75,8 +75,8 @@ Quando o PIN se conecta pela primeira vez, as posições de parar e iniciar padr
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Pullpin. h</dt> </dl>                                                                                                       |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Pullpin.h</dt> </dl>                                                                                                       |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

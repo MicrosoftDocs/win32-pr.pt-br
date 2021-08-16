@@ -4,12 +4,12 @@ description: Alguns clientes, como protocolos de vetor de distância, como RIP e
 ms.assetid: 2a86c092-d8a6-4fd4-8b2e-451c160f743f
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: af10832452a3a0b9ca851c209d240c97998ef519
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 833f41da08c45d8f9bbe9419360f4d1857b2a52fb92ee0be341b56bc8362536e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103916365"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117790484"
 ---
 # <a name="marking-routes-for-the-hold-down-state"></a>Marcando rotas para o estado de Hold-Down
 
@@ -23,9 +23,9 @@ Os protocolos que não usam os Estados suspensos podem ignorar informações de 
 
 Para obter um exemplo de código que mostra como usar essas funções, consulte [usar o estado de Hold-Down de rota](use-the-route-hold-down-state.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -4,12 +4,12 @@ ms.assetid: 092e8411-8ca4-4535-99d1-3db4bec5b03b
 title: Atribuições de canal da Finlândia
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 362bce3ac8ba93d0b2cc6984e685d050988ad7a1
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: ef8ed5d6b341a379ae6cdd4b838b4797ed7dcb4e20966cb46930cabd60f90501
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104500174"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119330446"
 ---
 # <a name="finland-channel-assignments"></a>Atribuições de canal da Finlândia
 
@@ -17,7 +17,7 @@ Este tópico lista as tabelas de frequência usadas para ajuste de TV analógica
 
 Para obter uma explicação das tabelas a seguir, consulte [tabelas e atribuições](tables-and-assignments.md).
 
-As seguintes atribuições de canal foram introduzidas no Windows 7. Anteriormente, a [tabela de frequência unicable](unicable-frequency-table.md) foi usada.
+as seguintes atribuições de canal foram introduzidas no Windows 7. Anteriormente, a [tabela de frequência unicable](unicable-frequency-table.md) foi usada.
 
 ## <a name="cable-assignments"></a>Atribuições de cabo
 

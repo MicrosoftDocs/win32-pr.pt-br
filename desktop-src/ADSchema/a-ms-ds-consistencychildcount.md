@@ -122,10 +122,10 @@ Esse atributo é usado para verificar a consistência entre o diretório e outro
 | ID do link                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Falso                           |
-| É de valor único       | Verdadeiro                            |
+| Tem valor único       | Verdadeiro                            |
 | É indexado             | Falso                           |
-| No catálogo global      | Falso                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| No Catálogo Global      | Falso                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -143,10 +143,10 @@ Esse atributo é usado para verificar a consistência entre o diretório e outro
 | ID do link                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Falso                           |
-| É de valor único       | Verdadeiro                            |
+| Tem valor único       | Verdadeiro                            |
 | É indexado             | Falso                           |
-| No catálogo global      | Falso                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| No Catálogo Global      | Falso                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -164,10 +164,10 @@ Esse atributo é usado para verificar a consistência entre o diretório e outro
 | ID do link                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Falso                           |
-| É de valor único       | Verdadeiro                            |
+| Tem valor único       | Verdadeiro                            |
 | É indexado             | Falso                           |
-| No catálogo global      | Falso                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| No Catálogo Global      | Falso                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -185,10 +185,10 @@ Esse atributo é usado para verificar a consistência entre o diretório e outro
 | ID do link                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Falso                           |
-| É de valor único       | Verdadeiro                            |
+| Tem valor único       | Verdadeiro                            |
 | É indexado             | Falso                           |
-| No catálogo global      | Falso                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| No Catálogo Global      | Falso                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |

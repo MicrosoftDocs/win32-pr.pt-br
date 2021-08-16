@@ -1,6 +1,6 @@
 ---
 description: 'Saiba mais sobre: JET_TABLECREATE.rgcolumncreate property'
-title: JET_TABLECREATE.rgcolumncreate propriedade
+title: JET_TABLECREATE.rgcolumncreate property
 TOCTitle: 'rgcolumncreate property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.JET_TABLECREATE.rgcolumncreate
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_tablecreate.rgcolumncreate(v=EXCHG.10)
@@ -33,14 +33,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119472856"
 ---
-# <a name="jet_tablecreatergcolumncreate-property"></a>JET_TABLECREATE.rgcolumncreate propriedade
+# <a name="jet_tablecreatergcolumncreate-property"></a>JET_TABLECREATE.rgcolumncreate property
 
 Obtém ou define uma matriz de informações de criação de coluna, do [tipo JET_COLUMNCREATE](./jet-columncreate-class.md).
 
 **Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration

@@ -1,7 +1,7 @@
 ---
 description: Recupera o identificador do thread.
 ms.assetid: c2b25342-841a-46cb-862c-01761fc60363
-title: Método CMsgThread. GetThreadId (Msgthrd. h)
+title: Método CMsgThread.GetThreadID (Msgthrd.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -23,7 +23,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119214095"
 ---
-# <a name="cmsgthreadgetthreadid-method"></a>Método CMsgThread. GetThreadId
+# <a name="cmsgthreadgetthreadid-method"></a>Método CMsgThread.GetThreadID
 
 Recupera o identificador do thread.
 
@@ -42,11 +42,11 @@ Esse método não tem parâmetros.
 
 ## <a name="return-value"></a>Valor retornado
 
-Retorna o membro de dados privados **m \_ ThreadID** .
+Retorna o membro de dados privados **\_ m ThreadId.**
 
 ## <a name="remarks"></a>Comentários
 
-Essa função retorna o identificador Win32 da Microsoft para o thread de trabalho. Você pode chamar essa função de membro no thread de trabalho ou em um thread de cliente.
+Essa função retorna o identificador do Microsoft Win32 para o thread de trabalho. Você pode chamar essa função de membro no thread de trabalho ou em um thread de cliente.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,8 +54,8 @@ Essa função retorna o identificador Win32 da Microsoft para o thread de trabal
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Msgthrd. h (incluir Fluxos. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Msgthrd.h (incluir Fluxos.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

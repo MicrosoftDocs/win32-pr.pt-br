@@ -1,6 +1,6 @@
 ---
-title: Registrar-se com o Gerenciador de Tabelas de Roteamento
-description: O código de exemplo a seguir mostra como registrar uma nova entidade com o gerenciador de tabela de roteamento.
+title: Registrar com o Gerenciador de tabela de roteamento
+description: O código de exemplo a seguir mostra como registrar uma nova entidade com o Gerenciador de tabela de roteamento.
 ms.assetid: 320cc97f-2875-4d26-b2f4-5611a43d5839
 ms.topic: article
 ms.date: 05/31/2018
@@ -11,9 +11,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117788605"
 ---
-# <a name="register-with-the-routing-table-manager"></a>Registrar-se com o Gerenciador de Tabelas de Roteamento
+# <a name="register-with-the-routing-table-manager"></a>Registrar com o Gerenciador de tabela de roteamento
 
-O código de exemplo a seguir mostra como registrar uma nova entidade com o gerenciador de tabela de roteamento.
+O código de exemplo a seguir mostra como registrar uma nova entidade com o Gerenciador de tabela de roteamento.
 
 
 ```C++

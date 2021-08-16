@@ -3,7 +3,7 @@ title: Network. recoveredPackets
 description: A propriedade recoveredPackets recupera o número de pacotes recuperados.
 ms.assetid: ce10b906-2e8b-4b9f-83d0-56ba67cacd3f
 keywords:
-- Network. recoveredPackets Windows Media Player
+- Windows Media Player Network. recoveredPackets
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0a4222033d7e124e6ef29714bc47faf5664950fa
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 464f7ad27603e506632d87254eaa4f76cbedf39ed15e353050cd13da0fa46204
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105788886"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119134929"
 ---
 # <a name="networkrecoveredpackets"></a>Network. recoveredPackets
 
@@ -41,7 +41,7 @@ Essa propriedade retorna informações válidas somente durante o tempo de execu
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo de JScript a seguir usa a *rede*. **recoveredPackets** para exibir o número de pacotes recuperados. As informações são exibidas em uma DIV HTML criada com ID = "PR". O exemplo usa um temporizador com um intervalo de 1 segundo para atualizar a exibição. O objeto de **jogador** foi criado com ID = "Player".
+o exemplo a seguir JScript usa a *rede*. **recoveredPackets** para exibir o número de pacotes recuperados. As informações são exibidas em uma DIV HTML criada com ID = "PR". O exemplo usa um temporizador com um intervalo de 1 segundo para atualizar a exibição. O objeto de **jogador** foi criado com ID = "Player".
 
 
 ```JScript
