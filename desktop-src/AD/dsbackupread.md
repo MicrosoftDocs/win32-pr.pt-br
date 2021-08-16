@@ -15,16 +15,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 409c2a7d93503aad4edff88070c0458efc961d23
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 16b5ea4da5b004bb4584eb119419b8c89658f36fed7e8c47514bae47d44e31b4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918354"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118429998"
 ---
 # <a name="dsbackupread-function"></a>Função DsBackupRead
 
-\[Essa função está disponível para uso nos sistemas operacionais especificados na seção requisitos. Ele poderá ser alterado ou ficar indisponível em versões subsequentes. A partir do Windows Vista, use [serviço de cópias de sombra de volume (VSS)](../vss/volume-shadow-copy-service-overview.md) em vez disso.\]
+\[Essa função está disponível para uso nos sistemas operacionais especificados na seção requisitos. Ele poderá ser alterado ou ficar indisponível em versões subsequentes. a partir do Windows Vista, use [Serviço de Cópias de Sombra de Volume (VSS)](../vss/volume-shadow-copy-service-overview.md) em vez disso.\]
 
 A função **DsBackupRead** lê um bloco de dados do arquivo aberto atual em um buffer. O aplicativo cliente deve chamar essa função repetidamente até que todo o arquivo de backup tenha sido recebido. A função [**DsBackupOpenFile**](dsbackupopenfile.md) fornece todo o tamanho do arquivo de backup.
 
@@ -74,7 +74,7 @@ Ponteiro para um valor **DWORD** que recebe o número real de bytes lidos. Isso 
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retornará **S \_ OK** se a função for bem-sucedida, ou um código de erro Win32 ou RPC. Os códigos de erro possíveis incluem o seguinte.
 
@@ -102,7 +102,7 @@ O fim do arquivo de backup foi atingido.
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| parâmetro<br/>                   | <dl> <dt>Ntdsbcli. h</dt> </dl>   |
+| Cabeçalho<br/>                   | <dl> <dt>Ntdsbcli. h</dt> </dl>   |
 | Biblioteca<br/>                  | <dl> <dt>Ntdsbcli. lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Ntdsbcli.dll</dt> </dl> |
 

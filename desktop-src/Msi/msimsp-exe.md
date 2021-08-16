@@ -1,5 +1,5 @@
 ---
-description: O método recomendado para gerar um pacote de patch é usar ferramentas de criação de patch, como Msimsp.exe e Patchwiz.dll. A Msimsp.exe do Msimsp.exe está disponível apenas nos componentes do SDK Windows para desenvolvedores Windows Instalador.
+description: O método recomendado para gerar um pacote de patch é usar ferramentas de criação de patch, como Msimsp.exe e Patchwiz.dll. A Msimsp.exe está disponível apenas nos componentes do SDK do Windows para desenvolvedores Windows instaladores.
 ms.assetid: fa8e9d68-3db1-4d17-aa99-2ca0ed421c7a
 title: Msimsp.exe
 ms.topic: article
@@ -82,7 +82,7 @@ Exibe a ajuda de linha de comando.
 </dd> </dl>
 
 > [!Note]
-> Msimsp.exe poderá falhar quando chamar Makecab.exe se houver valores na coluna Arquivo [](file-table.md) da tabela Arquivo do pacote de instalação que diferem apenas por caso. Windows O instalador diferencia minúsculas e permite um pacote de instalação, como na tabela abaixo, somente quando Comp1 e Comp2 são instalados em diretórios diferentes. No entanto, nesse cenário, você não pode usar Msimsp.exe [ ouPatchwiz.dll](patchwiz-dll.md) para gerar um patch para o pacote, porque Msimsp.exe e Patchwiz.dll chamada Makecab.exe, o que não faz sentido para maiúsculas e minúsculas.
+> Msimsp.exe poderá falhar quando chamar Makecab.exe se houver valores na coluna Arquivo [](file-table.md) da tabela Arquivo do pacote de instalação que diferem apenas por caso. Windows O instalador diferencia minúsculas e permite um pacote de instalação, como na tabela abaixo, somente quando Comp1 e Comp2 são instalados em diretórios diferentes. No entanto, nesse cenário, você não pode usar Msimsp.exe [ ouPatchwiz.dll](patchwiz-dll.md) para gerar um patch para o pacote, porque Msimsp.exe e Patchwiz.dll chamada Makecab.exe, o que não faz maiúsculas de minúsculas.
 > 
 > Evite a adoção de um pacote de instalação, como a tabela [De arquivos parcial a seguir.](file-table.md)
 > 

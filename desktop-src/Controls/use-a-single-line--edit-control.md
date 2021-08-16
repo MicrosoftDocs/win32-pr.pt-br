@@ -4,12 +4,12 @@ description: Este tópico demonstra como criar uma caixa de diálogo que contém
 ms.assetid: 742DF606-9998-46D0-8D0A-F79508AAFFC0
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b0d5d39a4c9fbc806de6ca151606e770eb0cea9b
-ms.sourcegitcommit: a716ca2a6a22a400f02c6b31699cf4da83ee3619
+ms.openlocfilehash: 597c3e611f53af56a42f837c4d85a43f97ff846e371314b130d72c568aaf860e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "104008611"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117829107"
 ---
 # <a name="how-to-create-a-single-line-edit-control"></a>Como criar um controle de edição de linha única
 
@@ -28,12 +28,12 @@ O controle de edição de linha única tem o estilo de [**\_ senha es**](edit-co
 
 ### <a name="technologies"></a>Tecnologias
 
--   [Controles do Windows](window-controls.md)
+-   [Windows Controles](window-controls.md)
 
 ### <a name="prerequisites"></a>Pré-requisitos
 
 -   C/C++
--   Programação da interface do usuário do Windows
+-   Windows Programação de interface do usuário
 
 ## <a name="instructions"></a>Instruções
 

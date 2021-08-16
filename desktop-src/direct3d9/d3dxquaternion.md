@@ -1,7 +1,7 @@
 ---
-description: Estrutura D3DXQUATERNION (D3dx9math.h) – descreve um quaternion.
+description: Estrutura D3DXQUATERNION (D3dx9math. h) – descreve um Quaternion.
 ms.assetid: 3d88ed17-5b0a-46d5-8fe6-d66e1fa26c13
-title: Estrutura D3DXQUATERNION (D3dx9math.h)
+title: Estrutura D3DXQUATERNION (D3dx9math. h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -20,9 +20,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118524608"
 ---
-# <a name="d3dxquaternion-structure-d3dx9mathh"></a>Estrutura D3DXQUATERNION (D3dx9math.h)
+# <a name="d3dxquaternion-structure-d3dx9mathh"></a>Estrutura D3DXQUATERNION (D3dx9math. h)
 
-Descreve um quaterão.
+Descreve um Quaternion.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -45,7 +45,7 @@ typedef struct D3DXQUATERNION {
 **x**
 </dt> <dd>
 
-Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
+Tipo: **[ **float**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -56,7 +56,7 @@ O componente x.
 **y**
 </dt> <dd>
 
-Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
+Tipo: **[ **float**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -64,10 +64,10 @@ O componente y.
 
 </dd> <dt>
 
-**Z**
+**z**
 </dt> <dd>
 
-Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
+Tipo: **[ **float**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -78,17 +78,17 @@ O componente z.
 **w**
 </dt> <dd>
 
-Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
+Tipo: **[ **float**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-O componente w.
+O componente w-.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-Quaterões adicionam um quarto elemento aos valores x, y, z que definem um vetor, resultando em \[ \] vetores 4D arbitrários. No entanto, o seguinte ilustra como cada elemento de um quaternão de unidade está relacionado a uma rotação de ângulo do eixo (em que q representa um quatternion de unidade (x, y, z, w), eixo é normalizado e theta é a rotação CCW desejada sobre o eixo):
+Os quaternions adicionam um quarto elemento aos \[ valores x, y, z \] que definem um vetor, resultando em vetores de 4D arbitrários. No entanto, o seguinte ilustra como cada elemento de uma unidade Quaternion está relacionado a uma rotação de ângulo angular (em que q representa uma unidade Quaternion (x, y, z, w), o eixo é normalizado e teta é a rotação do CCW desejada sobre o eixo):
 
 
 ```
@@ -100,7 +100,7 @@ q.w = cos(theta/2)
 
 
 
-Os programadores C++ podem aproveitar a sobrecarga do operador e a seleção de tipos com as Extensões [**D3DXQUATERNION**](d3dxquaternion-extensions.md), que implementam construtores sobrecarregados e atribuição, unários e binários (incluindo igualdade).
+Os programadores de C++ podem aproveitar a sobrecarga de operador e a conversão de tipos com as [**extensões D3DXQUATERNION**](d3dxquaternion-extensions.md), que implementam construtores sobrecarregados e operadores de atribuição, unários e binários (incluindo igualdade).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -108,7 +108,7 @@ Os programadores C++ podem aproveitar a sobrecarga do operador e a seleção de 
 
 | Requisito | Valor |
 |-------------------|----------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>D3dx9math.h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>D3dx9math. h</dt> </dl> |
 
 
 
@@ -119,7 +119,7 @@ Os programadores C++ podem aproveitar a sobrecarga do operador e a seleção de 
 [Estruturas D3DX](dx9-graphics-reference-d3dx-structures.md)
 </dt> <dt>
 
-[Vetores, vértices e quatérnions (Direct3D 9)](vectors--vertices--and-quaternions.md)
+[Vetores, vértices e quaternions (Direct3D 9)](vectors--vertices--and-quaternions.md)
 </dt> </dl>
 
  

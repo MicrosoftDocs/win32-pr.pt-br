@@ -17,12 +17,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4a85a8c08faa100ecb3987a1a1421613d9c448b8
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: cfd75b5b23e253715af33c712fe957ae057b681f715a60fa37d4451c3fc76232
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104298698"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118535062"
 ---
 # <a name="id3dx11effectpassgetdesc-method"></a>Método ID3DX11EffectPass:: GetDesc
 
@@ -52,7 +52,7 @@ Um ponteiro para uma descrição de passagem (consulte [**D3DX11 \_ Pass \_ desc
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 

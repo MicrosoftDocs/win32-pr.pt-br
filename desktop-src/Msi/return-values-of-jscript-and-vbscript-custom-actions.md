@@ -1,5 +1,5 @@
 ---
-description: Ações personalizadas escritas JScript ou Visual Basic, o VBScript (Scripting Edition) pode chamar uma função opcional. Essas funções devem retornar um dos valores mostrados na tabela a seguir.
+description: Ações personalizadas escritas JScript ou Visual Basic, a VBScript (Scripting Edition) pode chamar uma função opcional. Essas funções devem retornar um dos valores mostrados na tabela a seguir.
 ms.assetid: f05d0b94-e79e-440e-9f2b-99fe0e9e2646
 title: Retornar valores de JScript e ações personalizadas do VBScript
 ms.topic: article
@@ -13,7 +13,7 @@ ms.locfileid: "118626086"
 ---
 # <a name="return-values-of-jscript-and-vbscript-custom-actions"></a>Retornar valores de JScript e ações personalizadas do VBScript
 
-Ações personalizadas escritas JScript ou Visual Basic, o VBScript (Scripting Edition) pode chamar uma função opcional. Essas funções devem retornar um dos valores mostrados na tabela a seguir.
+Ações personalizadas escritas JScript ou Visual Basic, a VBScript (Scripting Edition) pode chamar uma função opcional. Essas funções devem retornar um dos valores mostrados na tabela a seguir.
 
 
 
@@ -59,7 +59,7 @@ Se esse VBScript fosse [](binary-table.md) inserido na tabela Binária do pacote
 
 
 
-| Ação         | Type | Fonte   | Destino       |
+| Ação         | Tipo | Fonte   | Destino       |
 |----------------|------|----------|--------------|
 | MyCustomAction | 6    | MyCA.vbs | MyVBScriptCA |
 

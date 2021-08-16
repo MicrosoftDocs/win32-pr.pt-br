@@ -1,6 +1,6 @@
 ---
-title: Notificações da folha de propriedades
-description: Notificações da folha de propriedades
+title: Notificações de folha de propriedades
+description: Notificações de folha de propriedades
 ms.assetid: f26973f0-edf7-4b17-a65f-db9025d1a3c2
 ms.topic: article
 ms.date: 05/31/2018
@@ -11,19 +11,19 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118416170"
 ---
-# <a name="property-sheet-notifications"></a>Notificações da folha de propriedades
+# <a name="property-sheet-notifications"></a>Notificações de folha de propriedades
 
 ## <a name="in-this-section"></a>Nesta seção
 
--   [PSN \_ aplicar](psn-apply.md)
--   [GetObject PSN \_](psn-getobject.md)
--   [ajuda do PSN \_](psn-help.md)
+-   [PSN \_ APPLY](psn-apply.md)
+-   [PSN \_ GETOBJECT](psn-getobject.md)
+-   [AJUDA do \_ PSN](psn-help.md)
 -   [PSN \_ KILLACTIVE](psn-killactive.md)
 -   [PSN \_ QUERYCANCEL](psn-querycancel.md)
 -   [PSN \_ QUERYINITIALFOCUS](psn-queryinitialfocus.md)
--   [redefinição de PSN \_](psn-reset.md)
--   [PSN \_ SETactive](psn-setactive.md)
--   [\_TRANSLATEACCELERATOR PSN](psn-translateaccelerator.md)
+-   [PSN \_ RESET](psn-reset.md)
+-   [PSN \_ SETACTIVE](psn-setactive.md)
+-   [PSN \_ TRANSLATEACCELERATOR](psn-translateaccelerator.md)
 -   [PSN \_ WIZBACK](psn-wizback.md)
 -   [PSN \_ WIZFINISH](psn-wizfinish.md)
 -   [PSN \_ WIZNEXT](psn-wiznext.md)

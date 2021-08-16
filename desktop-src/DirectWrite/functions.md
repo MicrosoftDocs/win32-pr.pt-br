@@ -1,6 +1,6 @@
 ---
-title: DirectWrite funções
-description: DirectWrite fornece a função a seguir. Todas as outras operações são executadas usando DirectWrite de interface que são criados pelo objeto IDWriteFactory criado com a função abaixo.
+title: funções de DirectWrite
+description: DirectWrite fornece a função a seguir. todas as outras operações são executadas usando DirectWrite objetos de interface criados pelo objeto IDWriteFactory que é criado com a função abaixo.
 ms.assetid: 79ac8943-a9dc-462c-b813-bc1083d0ed84
 keywords:
 - DirectWrite, funções
@@ -13,9 +13,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118650308"
 ---
-# <a name="directwrite-functions"></a>DirectWrite funções
+# <a name="directwrite-functions"></a>funções de DirectWrite
 
-DirectWrite fornece a função a seguir. Todas as outras operações são executadas usando DirectWrite de interface que são criados pelo objeto [**IDWriteFactory**](/windows/win32/api/dwrite/nn-dwrite-idwritefactory) criado com a função abaixo.
+DirectWrite fornece a função a seguir. todas as outras operações são executadas usando DirectWrite objetos de interface criados pelo objeto [**IDWriteFactory**](/windows/win32/api/dwrite/nn-dwrite-idwritefactory) que é criado com a função abaixo.
 
 ## <a name="in-this-section"></a>Nesta seção
 
@@ -23,5 +23,5 @@ DirectWrite fornece a função a seguir. Todas as outras operações são execut
 
 | Tópico                                                         | Descrição                                                                                                             |
 |---------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------|
-| [**DWriteCreateFactory**](/windows/win32/api/dwrite/nf-dwrite-dwritecreatefactory)<br/> | Cria um DirectWrite de fábrica que é usado para a criação subsequente de objetos DirectWrite individuais.<br/> |
-| [**DWriteCoreCreateFactory (DWriteCore)**](/windows/windows-app-sdk/api/win32/dwrite_core/nf-dwrite_core-dwritecorecreatefactory)<br/> | Cria um DirectWrite de fábrica que é usado para a criação subsequente de objetos DWriteCore individuais.<br/> |
+| [**DWriteCreateFactory**](/windows/win32/api/dwrite/nf-dwrite-dwritecreatefactory)<br/> | cria um objeto de fábrica DirectWrite que é usado para a criação subsequente de objetos de DirectWrite individuais.<br/> |
+| [**DWriteCoreCreateFactory (DWriteCore)**](/windows/windows-app-sdk/api/win32/dwrite_core/nf-dwrite_core-dwritecorecreatefactory)<br/> | cria um objeto de fábrica DirectWrite que é usado para a criação subsequente de objetos DWriteCore individuais.<br/> |

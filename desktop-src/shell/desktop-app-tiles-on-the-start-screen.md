@@ -15,7 +15,7 @@ ms.locfileid: "117861210"
 
 O exemplo a seguir fornece informações sobre as opções a considerar ao personalizar blocos de aplicativo da área de trabalho para Windows 8 incluindo como criar blocos de aplicativos da área de trabalho para o novo tela inicial e como escolher quais pontos de entrada mostrar no tela inicial.
 
-## <a name="design-your-tile-for-the-start-screen"></a>Projete seu tela inicial
+## <a name="design-your-tile-for-the-start-screen"></a>Projete o seu tela inicial
 
 Você pode personalizar dois aspectos dos blocos do aplicativo da área de trabalho: o nome do aplicativo e o ícone. A cor da tela de fundo é derivada da cor da tela de fundo escolhida pelo usuário e não é personalizável programaticamente.
 
@@ -38,7 +38,7 @@ DO: forneça ícones para os quatro valores tela inicial escala com suporte para
 
  
 
-DO: adote os princípios de design da Microsoft. A nova aparência dos ícones é simples, portanto, se você quiser imitar os ícones de aplicativo da Windows Store para seu aplicativo da área de trabalho, considere tirar sombras e assim por diante.
+DO: adote os princípios de design da Microsoft. A nova aparência dos ícones é simples, portanto, se você quiser imitar ícones de aplicativo da Windows Store para seu aplicativo da área de trabalho, considere tirar sombras e assim por diante.
 
 NÃO: não evite o uso de cores. Embora Windows ícones de aplicativo da Store às vezes sejam monocromáticos, é recomendável usar ícones de cores para aplicativos da área de trabalho. Isso ajuda a diferenciar aplicativos da área de trabalho na barra de tarefas e de outros blocos de aplicativo da área de trabalho no tela inicial porque a cor da tela de fundo dos blocos da área de trabalho não pode ser personalizada. Considere o uso de cores mais saturadas.
 
@@ -70,7 +70,7 @@ DO: crie uma pasta de produto de nível único para os suites que contêm três 
 
 NÃO: não crie uma pasta de produto se o pacote contiver apenas um único atalho. Coloque o atalho na pasta Iniciar de nível superior.
 
-DO: ao instalar um pacote de mais de três aplicativos, considere se qualquer um desses aplicativos é para uso secundário e mais irregular e não deve ser fixado ao tela inicial. Nesse caso, talvez esses blocos possam ser totalmente removidos, de acordo com as diretrizes acima, e lançados de dentro de um aplicativo primário. Se você não puder remover os blocos, considere desapiá-los do tela inicial. Dessa forma, os atalhos  ainda aparecem na exibição Todos os Aplicativos, mas não atrapalham a tela inicial.
+DO: ao instalar um pacote de mais de três aplicativos, considere se qualquer um desses aplicativos é para uso secundário e mais irregular e não deve ser fixado ao tela inicial. Nesse caso, talvez esses blocos possam ser totalmente removidos, de acordo com as diretrizes acima, e lançados de dentro de um aplicativo primário. Se você não puder remover os blocos, considere unpinning-los do tela inicial. Dessa forma, os atalhos  ainda aparecem na exibição Todos os Aplicativos, mas não desorganizam a tela inicial.
 
 Para criar um atalho de aplicativo sem fixá-lo ao tela inicial, defina a seguinte propriedade no atalho: System.AppUserModel.StartPinOption = 1. O nome simbólico para 1 é APPUSERMODEL \_ STARTPINOPTION \_ NOPINONINSTALL.
 

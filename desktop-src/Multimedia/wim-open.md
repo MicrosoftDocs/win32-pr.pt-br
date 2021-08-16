@@ -1,9 +1,9 @@
 ---
-title: Mensagem de WIM_OPEN (mmsystem. h)
-description: A \_ mensagem wim Open é enviada para uma função de retorno de chamada de entrada de áudio de forma de onda quando um dispositivo de entrada de forma de onda-áudio é aberto.
+title: WIM_OPEN mensagem (Mmsystem.h)
+description: A mensagem WIM OPEN é enviada para uma função de retorno de chamada de entrada waveform-audio quando um dispositivo de entrada \_ waveform-audio é aberto.
 ms.assetid: de18e6b2-ea28-46d9-812c-e6dac49838ee
 keywords:
-- mensagem de WIM_OPEN Windows multimídia
+- WIM_OPEN mensagem Windows Multimídia
 topic_type:
 - apiref
 api_name:
@@ -21,9 +21,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118369749"
 ---
-# <a name="wim_open-message"></a>\_Abrir mensagem wim
+# <a name="wim_open-message"></a>Mensagem WIM \_ OPEN
 
-A mensagem **wim \_ Open** é enviada para uma função de retorno de chamada de entrada de áudio de forma de onda quando um dispositivo de entrada de forma de onda-áudio é aberto.
+A **mensagem WIM \_ OPEN** é enviada para uma função de retorno de chamada de entrada waveform-audio quando um dispositivo de entrada waveform-audio é aberto.
 
 
 ```C++
@@ -38,17 +38,17 @@ dwParam2 = reserved
 
 <dl> <dt>
 
-<span id="dwParam1"></span><span id="dwparam1"></span><span id="DWPARAM1"></span>*dwParam1*
+<span id="dwParam1"></span><span id="dwparam1"></span><span id="DWPARAM1"></span>*Dwparam1*
 </dt> <dd>
 
-Reservado deve ser zero.
+Reservado; deve ser zero.
 
 </dd> <dt>
 
-<span id="dwParam2"></span><span id="dwparam2"></span><span id="DWPARAM2"></span>*dwParam2*
+<span id="dwParam2"></span><span id="dwparam2"></span><span id="DWPARAM2"></span>*Dwparam2*
 </dt> <dd>
 
-Reservado deve ser zero.
+Reservado; deve ser zero.
 
 </dd> </dl>
 
@@ -64,7 +64,7 @@ Essa mensagem não retorna um valor.
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                                                |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                      |
-| Cabeçalho<br/>                   | <dl> <dt>Mmsystem. h (incluir Windows. h)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Mmsystem.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -72,10 +72,10 @@ Essa mensagem não retorna um valor.
 
 <dl> <dt>
 
-[Áudio de onda](waveform-audio.md)
+[Waveform Audio](waveform-audio.md)
 </dt> <dt>
 
-[Mensagens de formato de onda](waveform-messages.md)
+[Mensagens de forma de onda](waveform-messages.md)
 </dt> </dl>
 
  

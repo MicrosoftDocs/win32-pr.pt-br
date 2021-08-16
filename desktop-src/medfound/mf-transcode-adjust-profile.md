@@ -4,12 +4,12 @@ ms.assetid: 6782e080-284b-458d-8bc0-6e131a529e7b
 title: Atributo MF_TRANSCODE_ADJUST_PROFILE (Mfidl. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dd492cfc7981ca1a36a1cb54a440bec4783fe1b6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fb25f4df47d281ddb0e359d98e8a411cb3abb365b479388e9b7ae107e786703c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105761427"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118739464"
 ---
 # <a name="mf_transcode_adjust_profile-attribute"></a>\_Atributo de \_ perfil de ajuste de TRANScodificação MF \_
 
@@ -41,8 +41,8 @@ A constante de GUID para esse atributo é exportada de mfuuid. lib.
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>                                         |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008 R2\]<br/>                            |
+| Cliente mínimo com suporte<br/> | \[somente aplicativos de área de trabalho Windows 7\]<br/>                                         |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do Server 2008 R2\]<br/>                            |
 | parâmetro<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
 
 

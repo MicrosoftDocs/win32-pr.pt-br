@@ -1,7 +1,7 @@
 ---
-description: Discute métodos de abertura de um item Painel de Controle para Windows Vista e sistemas posteriores, bem como abranger comandos Painel de Controle herdado.
+description: discute métodos de abrir um item do painel de controle para os sistemas Windows Vista e posterior, além de abranger comandos herdados do painel de controle.
 ms.assetid: c17167ab-e9a0-4290-955c-484d038b82af
-title: Executando Painel de Controle itens
+title: Executando itens do painel de controle
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: fc1e2bc84ce5225176585f2da221fab6110ce79f9ff68dfc83b3c66125d623d4
@@ -11,19 +11,19 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118224272"
 ---
-# <a name="executing-control-panel-items"></a>Executando Painel de Controle itens
+# <a name="executing-control-panel-items"></a>Executando itens do painel de controle
 
 > [!Note]  
-> Se você estiver procurando a lista de nomes canônicos e de módulo para Painel de Controle, consulte Nomes canônicos [de Painel de Controle Itens](controlpanel-canonical-names.md).
+> Se você estiver procurando a lista de nomes canônicos e de módulo para itens do painel de controle, consulte [nomes canônicos de itens do painel de controle](controlpanel-canonical-names.md).
 
  
 
-Há duas maneiras de abrir um Painel de Controle item:
+Há duas maneiras de abrir um item do painel de controle:
 
--   O usuário pode abrir Painel de Controle e abrir um item clicando ou clicando duas vezes no ícone do item.
--   O usuário ou um aplicativo pode iniciar um item Painel de Controle executando-o diretamente no prompt de linha de comando.
+-   O usuário pode abrir o painel de controle e, em seguida, abrir um item clicando ou clicando duas vezes no ícone do item.
+-   O usuário ou um aplicativo pode iniciar um item do painel de controle executando-o diretamente do prompt de linha de comando.
 
-Um aplicativo pode abrir o Painel de Controle programaticamente usando a [**função WinExec.**](/windows/win32/api/winbase/nf-winbase-winexec)
+Um aplicativo pode abrir o painel de controle programaticamente usando a função [**WinExec**](/windows/win32/api/winbase/nf-winbase-winexec) .
 
 
 ```
@@ -32,7 +32,7 @@ WinExec("c:\windows\system32\control.exe", SW_NORMAL);
 
 
 
-O exemplo a seguir mostra como um aplicativo pode iniciar o item Painel de Controle chamado **MyCpl.cpl** usando a [**função WinExec.**](/windows/win32/api/winbase/nf-winbase-winexec)
+O exemplo a seguir mostra como um aplicativo pode iniciar o item do painel de controle chamado **MyCpl.cpl** usando a função [**WinExec**](/windows/win32/api/winbase/nf-winbase-winexec) .
 
 
 ```
@@ -41,7 +41,7 @@ WinExec("c:\windows\system32\control.exe MyCpl.cpl", SW_NORMAL);
 
 
 
-Quando um Painel de Controle item é aberto por meio de uma linha de comando, você pode instruí-lo a abrir para uma guia específica no item. Devido à adição e remoção de determinadas guias em alguns itens Windows Vista Painel de Controle, a numeração das guias pode ter sido alterada em Windows XP. Por exemplo, o exemplo a seguir inicia a quarta guia no item Sistema no Windows XP e a terceira guia no Windows Vista.
+Quando um item do painel de controle é aberto por meio de uma linha de comando, você pode instruí-lo a abrir para uma determinada guia no item. devido à adição e remoção de determinadas guias em alguns Windows itens do painel de controle do Vista, a numeração das guias pode ter sido alterada do no Windows XP. por exemplo, a etapa a seguir inicia a quarta guia no item do sistema no Windows XP e a terceira guia no Windows Vista.
 
 
 ```
@@ -52,18 +52,18 @@ control.exe sysdm.cpl,,3
 
 Este tópico aborda o seguinte:
 
--   [Windows Nomes canônicos do Vista](#windows-vista-canonical-names)
--   [Novos comandos para Windows Vista](#new-commands-for-windows-vista)
--   [Comandos Painel de Controle herdado](#legacy-control-panel-commands)
+-   [Windows Nomes canônicos do vista](#windows-vista-canonical-names)
+-   [novos comandos para o Windows Vista](#new-commands-for-windows-vista)
+-   [Comandos do painel de controle herdado](#legacy-control-panel-commands)
 -   [Tópicos relacionados](#related-topics)
 
-## <a name="windows-vista-canonical-names"></a>Windows Nomes canônicos do Vista
+## <a name="windows-vista-canonical-names"></a>Windows Nomes canônicos do vista
 
-No Windows Vista e posterior, o método preferencial de iniciar um item Painel de Controle de uma linha de comando é usar o nome canônico do Painel de Controle item. Um nome canônico é uma cadeia de caracteres não localizada que o Painel de Controle item declara no Registro. O valor de usar um nome canônico é que ele abstrai o nome do módulo do Painel de Controle item. Um item pode ser implementado em um .dll e posteriormente ser reimplementado como um .exe ou alterar seu nome de módulo. Desde que o nome canônico permaneça o mesmo, qualquer programa que o abra usando esse nome canônico não precisará ser atualizado.
+no Windows Vista e posterior, o método preferencial de iniciar um item do painel de controle a partir de uma linha de comando é usar o nome canônico do item do painel de controle. Um nome canônico é uma cadeia de caracteres não localizada que o item do painel de controle declara no registro. O valor de usar um nome canônico é que ele abstrai o nome do módulo do item do painel de controle. Um item pode ser implementado em um .dll e, posteriormente, ser reimplementado como um .exe ou alterar o nome do módulo. Desde que o nome canônico permaneça o mesmo, então qualquer programa que o abre usando esse nome canônico não precisa ser atualizado.
 
-Por convenção, o nome canônico é formado como "CorporationName.ControlPanelItemName".
+Por convenção, o nome canônico é formado como "Corporationname. ControlPanelItemName".
 
-O exemplo a seguir mostra como um aplicativo pode iniciar o Painel de Controle item **Windows Atualizar** com [**WinExec**](/windows/win32/api/winbase/nf-winbase-winexec).
+o exemplo a seguir mostra como um aplicativo pode iniciar o item do painel de controle **Windows Update** com [**WinExec**](/windows/win32/api/winbase/nf-winbase-winexec).
 
 
 ```
@@ -72,70 +72,70 @@ WinExec("%systemroot%\system32\control.exe /name Microsoft.WindowsUpdate", SW_NO
 
 
 
-Para iniciar um Painel de Controle com seu nome canônico, use: "%systemroot% \\ system32 \\control.exe /name *canonicalName"*
+Para iniciar um item do painel de controle com seu nome canônico, use: "% SystemRoot% \\ system32 \\control.exe/name *canônicaname*"
 
-Para abrir uma sub page específica em um item ou abri-la com parâmetros adicionais, use: "%systemroot% \\ system32 \\control.exe /name **canonicalName** /page **pageName"**
+Para abrir uma subpágina específica em um item ou abri-la com parâmetros adicionais, use: "% SystemRoot% \\ system32 \\control.exe/name **Canônicaname** / **PageName**"
 
-Um aplicativo também pode implementar o método [**IOpenControlPanel::Open**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-iopencontrolpanel-open) para iniciar Painel de Controle itens, incluindo a capacidade de abrir uma subpapa específica.
+Um aplicativo também pode implementar o método [**IOpenControlPanel:: Open**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-iopencontrolpanel-open) para iniciar itens do painel de controle, incluindo a capacidade de abrir uma subpágina específica.
 
-Para ver uma lista completa de Painel de Controle canônicos de item, consulte Nomes canônicos [de Painel de Controle itens](controlpanel-canonical-names.md).
+Para obter uma lista completa de nomes canônicos de itens do painel de controle, consulte [nomes canônicos de itens do painel de controle](controlpanel-canonical-names.md).
 
-## <a name="new-commands-for-windows-vista"></a>Novos comandos para Windows Vista
+## <a name="new-commands-for-windows-vista"></a>novos comandos para o Windows Vista
 
-No Windows Vista, algumas opções que foram acessadas por um módulo .cpl no Windows XP agora são implementadas como .exe arquivos. Isso fornece segurança adicionada, permitindo que os usuários padrão sejam solicitados a fornecer credenciais de administrador ao tentar iniciar os arquivos. As opções que não exigem segurança extra são acessadas pelas mesmas linhas de comando que foram usadas no Windows XP. Veja a seguir uma lista de comandos usados no Windows Vista para acessar guias específicas de Painel de Controle itens:
+no Windows Vista, algumas opções que foram acessadas por um módulo .cpl no Windows XP agora são implementadas como arquivos .exe. Isso fornece segurança adicional, permitindo que os usuários padrão sejam solicitados a fornecer credenciais de administrador ao tentar iniciar os arquivos. as opções que não exigem segurança extra são acessadas pelas mesmas linhas de comando que foram usadas no Windows XP. veja a seguir uma lista de comandos usados no Windows Vista para acessar guias específicas de itens do painel de controle:
 
 ### <a name="personalization"></a>Personalização
 
--   Tamanho da fonte e DPI: %windir% \\ system32 \\DpiScaling.exe
--   Resolução de tela: %windir% \\ system32 \\control.exe desk.cpl,Configurações,@Settings
--   Configurações de exibição: %windir% \\ system32 \\control.exe desk.cpl,Configurações,@Settings
--   Temas: %windir% \\ system32 \\control.exe desk.cpl,Temas,@Themes
--   Protetor de tela: %windir% \\ system32 \\control.exe desk.cpl,screensaver,@screensaver
--   Multi monitor: %windir% \\ system32 \\control.exe desk.cpl,Monitor,@Monitor
--   Esquema de cores: %windir% \\ system32 \\control.exe /name Microsoft.Personalization /page PageColorization
--   Tela de fundo da área de trabalho: %windir% \\ system32 \\control.exe /name Microsoft.Personalization /page pageWallpaper
+-   Tamanho da fonte e DPI:% WINDIR% \\ system32 \\DpiScaling.exe
+-   resolução de tela:% windir% \\ system32 \\control.exe desk.cpl, Configurações,@Settings
+-   configurações de exibição:% windir% \\ system32 \\control.exe desk.cpl, Configurações,@Settings
+-   Temas:% WINDIR% \\ system32 \\control.exe desk.cpl, temas,@Themes
+-   Proteção de tela:% WINDIR% \\ system32 \\control.exe desk.cpl, proteção de tela,@screensaver
+-   Vários monitores:% WINDIR% \\ system32 \\control.exe desk.cpl, monitor,@Monitor
+-   Esquema de cores:% WINDIR% \\ system32 \\control.exe/name Microsoft. Personalization/pageColorization
+-   Plano de fundo da área de trabalho:% WINDIR% \\ system32 \\control.exe/name Microsoft. Personalization/pageWallpaper
 
 > [!Note]  
-> As edições Starter e Basic não são control.exe comando /name Microsoft.Personalization.
+> As edições inicial e básica não dão suporte ao comando control.exe/name Microsoft. Personalization.
 
  
 
 ### <a name="system"></a>Sistema
 
--   Desempenho: %windir% \\ system32 \\SystemPropertiesPerformance.exe
--   Acesso remoto: %windir% \\ system32 \\SystemPropertiesRemote.exe
--   Nome do computador: %windir% \\ system32 \\SystemPropertiesComputerName.exe
--   Proteção do sistema: %windir% \\ system32 \\SystemPropertiesProtection.exe
--   Propriedades avançadas do sistema: %windir% \\ system32 \\SystemPropertiesAdvanced.exe
+-   Desempenho:% WINDIR% \\ system32 \\SystemPropertiesPerformance.exe
+-   Acesso remoto:% WINDIR% \\ system32 \\SystemPropertiesRemote.exe
+-   Nome do computador:% WINDIR% \\ system32 \\SystemPropertiesComputerName.exe
+-   Proteção do sistema:% WINDIR% \\ system32 \\SystemPropertiesProtection.exe
+-   Propriedades avançadas do sistema:% WINDIR% \\ system32 \\SystemPropertiesAdvanced.exe
 
 ### <a name="programs-and-features"></a>Programas e Recursos
 
--   Adicionar ou remover programas: %windir% \\ system32 \\control.exe /name Microsoft.ProgramsAndFeatures
--   Windows recursos: %windir% \\ system32 \\OptionalFeatures.exe
+-   Adicionar ou remover programas:% WINDIR% \\ system32 \\control.exe/name Microsoft. ProgramsAndFeatures
+-   recursos de Windows:% windir% \\ system32 \\OptionalFeatures.exe
 
 ### <a name="regional-and-language-options"></a>Opções regionais e de idioma
 
--   Teclado: %systemroot% \\ system32 \\control.exe /name Microsoft.RegionalAndLanguageOptions /page /p:"keyboard"
--   Local: %systemroot% \\ system32 \\control.exe /name Microsoft.RegionalAndLanguageOptions /page /p:"location"
--   Administrativo: %systemroot% \\ system32 \\control.exe /name Microsoft.RegionalAndLanguageOptions /page /p:"administrative"
+-   Teclado:% SystemRoot% \\ system32 \\control.exe/name Microsoft. RegionalAndLanguageOptions//p: "teclado"
+-   Local:% SystemRoot% \\ system32 \\control.exe/name Microsoft. RegionalAndLanguageOptions//p: "local"
+-   Administrativo:% SystemRoot% \\ system32 \\control.exe/name Microsoft. RegionalAndLanguageOptions//p: "administrativo"
 
 ### <a name="folder-options"></a>Opções de Pasta
 
--   Pesquisa de pasta: %windir% \\ system32 \\rundll32.exe shell32.dll,Options \_ RunDLL 2
--   Associações de arquivo: %windir% \\ system32 \\control.exe /name Microsoft.DefaultPrograms /page pageFileAssoc
--   Exibição: %windir% \\ system32 \\rundll32.exe shell32.dll,Options \_ RunDLL 7
--   Geral: %windir% \\ system32 \\rundll32.exe shell32.dll,Options \_ RunDLL 0
+-   Pesquisa de pastas:% WINDIR% \\ system32 \\rundll32.exe shell32.dll, opções \_ rundll 2
+-   Associações de arquivo:% WINDIR% \\ system32 \\control.exe/name Microsoft. defaultprograms/pageFileAssoc
+-   Exibição:% WINDIR% \\ system32 \\rundll32.exe shell32.dll, opções \_ rundll 7
+-   Geral:% WINDIR% \\ system32 \\rundll32.exe shell32.dll, opções \_ rundll 0
 
 ### <a name="power-options"></a>Opções de Energia
 
--   Editar configurações de plano atuais: %windir% \\ system32 \\control.exe /name Microsoft.PowerOptions /page pagePlanSettings
--   Configurações do sistema: %windir% \\ system32 \\control.exe /name Microsoft.PowerOptions /page pageGlobalSettings
--   Criar um plano de energia: %windir% \\ system32 \\control.exe /name Microsoft.PowerOptions /page pageCreateNewPlan
--   Não há nenhum comando canônico para a página Configurações avançado, ele é acessado da maneira mais antiga: %windir% \\ system32 \\control.exe powercfg.cpl,,3
+-   Editar configurações do plano atual:% WINDIR% \\ system32 \\control.exe/name Microsoft. poweroptions/pagePlanSettings
+-   Configurações do sistema:% WINDIR% \\ system32 \\control.exe/name Microsoft. poweroptions/pageGlobalSettings
+-   Criar um plano de energia:% WINDIR% \\ system32 \\control.exe/name Microsoft. poweroptions/pageCreateNewPlan
+-   não há nenhum comando canônico para a página de Configurações avançada, ele é acessado da maneira mais antiga:% windir% \\ system32 \\control.exe powercfg.cpl,, 3
 
-## <a name="legacy-control-panel-commands"></a>Comandos Painel de Controle herdado
+## <a name="legacy-control-panel-commands"></a>Comandos do painel de controle herdado
 
-Quando você usa a [**função WinExec,**](/windows/win32/api/winbase/nf-winbase-winexec) o sistema pode reconhecer comandos Painel de Controle especiais. Esses comandos são pré-Windows Vista.
+Quando você usa a função [**WinExec**](/windows/win32/api/winbase/nf-winbase-winexec) , o sistema pode reconhecer comandos especiais do painel de controle. esses comandos são predata Windows Vista.
 
 
 
@@ -146,41 +146,41 @@ Quando você usa a [**função WinExec,**](/windows/win32/api/winbase/nf-winbase
 </colgroup>
 <tbody>
 <tr class="odd">
-<td>control.exe desktop</td>
-<td>Inicia a janela <strong>Propriedades de Vídeo</strong> aplicativo.
+<td>Área de trabalho control.exe</td>
+<td>Inicia a janela <strong>Propriedades de exibição</strong> .
 <blockquote>
 [!Note]<br />
-As edições Starter e Basic não são suportadas por este comando.
+As edições inicial e básica não oferecem suporte a esse comando.
 </blockquote>
 <br/></td>
 </tr>
 <tr class="even">
-<td>control.exe cor</td>
-<td>Inicia a janela <strong>Propriedades de Vídeo</strong> com a <strong>guia</strong> Aparência pré-selecionada.</td>
+<td>Cor control.exe</td>
+<td>Inicia a janela <strong>Propriedades de exibição</strong> com a guia <strong>aparência</strong> selecionada.</td>
 </tr>
 <tr class="odd">
-<td>control.exe data/hora</td>
-<td>Inicia a janela <strong>Propriedades de Data e</strong> Hora.</td>
+<td>Data/hora control.exe</td>
+<td>Inicia a janela de <strong>Propriedades de data e hora</strong> .</td>
 </tr>
 <tr class="even">
 <td>control.exe internacional</td>
-<td>Inicia a janela <strong>Opções Regionais e de</strong> Idioma.</td>
+<td>Inicia a janela <strong>Opções regionais e de idioma</strong> .</td>
 </tr>
 <tr class="odd">
 <td>control.exe mouse</td>
-<td>Inicia a janela <strong>Propriedades do</strong> Mouse.</td>
+<td>Inicia a janela <strong>Propriedades do mouse</strong> .</td>
 </tr>
 <tr class="even">
 <td>control.exe teclado</td>
-<td>Inicia a janela <strong>Propriedades do</strong> Teclado.</td>
+<td>Inicia a janela <strong>Propriedades do teclado</strong> .</td>
 </tr>
 <tr class="odd">
 <td>control.exe impressoras</td>
-<td>Exibe a <strong>pasta Impressoras e Faxes.</strong></td>
+<td>Exibe a pasta <strong>impressoras e aparelhos de fax</strong> .</td>
 </tr>
 <tr class="even">
 <td>control.exe fontes</td>
-<td>Exibe a <strong>pasta Fontes.</strong></td>
+<td>Exibe a pasta <strong>fontes</strong> .</td>
 </tr>
 </tbody>
 </table>
@@ -189,19 +189,19 @@ As edições Starter e Basic não são suportadas por este comando.
 
  
 
-Para Windows 2000 e sistemas posteriores:
+para os sistemas Windows 2000 e posteriores:
 
 
 
 | Comando                    | Descrição                                              |
 |----------------------------|----------------------------------------------------------|
-| control.exe pastas        | Inicia a janela **Opções de** Pasta.                  |
-| control.exe netware        | Inicia a janela **Novell NetWare** (se instalada).   |
-| control.exe telefonia      | Inicia a janela **opções Telefone e Modem.**         |
-| control.exe admintools     | Exibe a **pasta Ferramentas Administrativas.**            |
-| control.exe schedtasks     | Exibe a pasta **Tarefas Agendadas.**                 |
+| control.exe pastas        | Inicia a janela de **Opções de pasta** .                  |
+| control.exe NetWare        | Inicia a janela do **Novell NetWare** (se instalado).   |
+| control.exe telefonia      | inicia a janela de **opções de Telefone e Modem** .         |
+| control.exe AdminTools     | Exibe a pasta **Ferramentas administrativas** .            |
+| control.exe schedtasks     | Exibe a pasta **tarefas agendadas** .                 |
 | control.exe netconnections | Exibe a pasta **Conexões de** Rede.             |
-| control.exe inomeado       | Inicia a **janela Monitor ComEdido** (se instalada). |
+| control.exe 10000001       | Inicia a **janela Monitor ComEdido** (se instalada). |
 | control.exe userpasswords  | Inicia a janela **Contas de** Usuário.                   |
 
 

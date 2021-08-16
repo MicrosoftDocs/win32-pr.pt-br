@@ -1,11 +1,11 @@
 ---
-title: Atributo ms-DS-Port-LDAP
+title: atributo ms-DS-Port-LDAP
 description: Especifica qual porta é usada pelo serviço de diretório para escutar solicitações LDAP.
 ms.assetid: bed80aeb-3fc2-4065-92df-1f387982848e
 ms.tgt_platform: multiple
 keywords:
 - Esquema do AD do atributo ms-DS-Port-LDAP
-- Esquema do AD do atributo msDS-PortLDAP
+- atributo msDS-PortLDAP do AD Schema
 topic_type:
 - apiref
 api_name:
@@ -21,7 +21,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118425812"
 ---
-# <a name="ms-ds-port-ldap-attribute"></a>Atributo ms-DS-Port-LDAP
+# <a name="ms-ds-port-ldap-attribute"></a>atributo ms-DS-Port-LDAP
 
 Especifica qual porta é usada pelo serviço de diretório para escutar solicitações LDAP.
 
@@ -30,21 +30,21 @@ Especifica qual porta é usada pelo serviço de diretório para escutar solicita
 | Entrada | Valor |
 |-------------------|--------------------------------------|
 | CN                | ms-DS-Port-LDAP                      |
-| Ldap-Display-Name | msDS-PortLDAP                        |
+| LDAP-Display-Name | msDS-PortLDAP                        |
 | Tamanho              | \-                                   |
 | Privilégio de atualização  | \-                                   |
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.1859              |
-| System-Id-Guid    | 977225c1-5bdf-42b7-b6db-c3af077f558f |
+| System-ID-GUID    | 977225c1-5bdf-42b7-b6db-c3af077f558f |
 | Syntax            | [**Enumeração**](s-enumeration.md) |
 
 
 
 ## <a name="implementations"></a>Implementações
 
--   [**Adam**](#adam)
+-   [**ADAM**](#adam)
 
-## <a name="adam"></a>Adam
+## <a name="adam"></a>ADAM
 
 
 
@@ -53,10 +53,10 @@ Especifica qual porta é usada pelo serviço de diretório para escutar solicita
 | ID do link                | \-                                       |
 | MAPI-Id                | \-                                       |
 | System-Only            | Falso                                    |
-| Tem valor único       | Verdadeiro                                     |
+| É de valor único       | Verdadeiro                                     |
 | É indexado             | Falso                                    |
-| No Catálogo Global      | Falso                                    |
-| Descritor de segurança NT | O:BAG:BAD:S:                             |
+| No catálogo global      | Falso                                    |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                             |
 | Range-Lower            | 0                                        |
 | Range-Upper            | 65535                                    |
 | Search-Flags           | 0x00000000                               |

@@ -13,7 +13,7 @@ ms.locfileid: "118462974"
 ---
 # <a name="collecting-memory-usage-information-for-a-process"></a>Coletando informações de uso de memória para um processo
 
-Para determinar a eficiência do seu aplicativo, talvez você queira examinar seu uso de memória. O código de exemplo a seguir usa a [**função GetProcessMemoryInfo**](/windows/desktop/api/Psapi/nf-psapi-getprocessmemoryinfo) para obter informações sobre o uso de memória de um processo.
+Para determinar a eficiência do seu aplicativo, talvez você queira examinar seu uso de memória. O código de exemplo a seguir usa a função [**GetProcessMemoryInfo**](/windows/desktop/api/Psapi/nf-psapi-getprocessmemoryinfo) para obter informações sobre o uso de memória de um processo.
 
 
 ```C++
@@ -92,7 +92,7 @@ int main( void )
 
 
 
-A função principal obtém uma lista de processos usando a [**função EnumProcesses.**](/windows/desktop/api/Psapi/nf-psapi-enumprocesses) Para cada processo, main chama a função PrintMemoryInfo, passando o identificador do processo. PrintMemoryInfo, por sua vez, chama a [**função OpenProcess**](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-openprocess) para obter o alçamento do processo. Se **OpenProcess** falhar, a saída mostrará apenas o identificador do processo. Por exemplo, **o OpenProcess** falha nos processos Ocioso e CSRSS porque suas restrições de acesso impedem que o código no nível do usuário os abra. Por fim, PrintMemoryInfo chama a [**função GetProcessMemoryInfo**](/windows/desktop/api/Psapi/nf-psapi-getprocessmemoryinfo) para obter as informações de uso de memória.
+A função main Obtém uma lista de processos usando a função [**EnumProcesses**](/windows/desktop/api/Psapi/nf-psapi-enumprocesses) . Para cada processo, Main chama a função PrintMemoryInfo, passando o identificador do processo. O PrintMemoryInfo, por sua vez, chama a função [**OpenProcess**](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-openprocess) para obter o identificador de processo. Se **OpenProcess** falhar, a saída mostrará apenas o identificador do processo. Por exemplo, **OpenProcess** falha para os processos Idle e CSRSS porque suas restrições de acesso impedem que o código do usuário os abra. Por fim, PrintMemoryInfo chama a função [**GetProcessMemoryInfo**](/windows/desktop/api/Psapi/nf-psapi-getprocessmemoryinfo) para obter as informações de uso de memória.
 
  
 

@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - Icfgnt5.dll
-ms.openlocfilehash: 649b1fa73bcdd83d7fc01d5a4df9a198168a3f1d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7708dd065c066ce3e9fd8e4de1044c6bc8587d2526abdf9aeac175b4387dec42
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105749713"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117827171"
 ---
 # <a name="icfginstallinetcomponents-function"></a>Função IcfgInstallInetComponents
 
@@ -41,14 +41,14 @@ HRESULT IcfgInstallInetComponents(
 
 <dl> <dt>
 
-*hwndParent* 
+*Hwndparent* 
 </dt> <dd>
 
-Um identificador para a janela pai.
+Um alça para a janela pai.
 
 </dd> <dt>
 
-*dwfOptions* 
+*Dwfoptions* 
 </dt> <dd>
 
 Uma combinação dos sinalizadores a seguir que controlam a instalação e a configuração.
@@ -57,7 +57,7 @@ Uma combinação dos sinalizadores a seguir que controlam a instalação e a con
 
 | Valor                                                                                                                                                                                                                                  | Significado                                        |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------|
-| <span id="ICFG_INSTALLMAIL"></span><span id="icfg_installmail"></span><dl> <dt>**ICFG \_ INSTALLMAIL**</dt> <dt>0x00000004</dt> </dl> | Instale o Exchange e o Internet mail.<br/> |
+| <span id="ICFG_INSTALLMAIL"></span><span id="icfg_installmail"></span><dl> <dt>**ICFG \_ INSTALLMAIL**</dt> <dt>0x00000004</dt> </dl> | Instale Exchange e o Internet Mail.<br/> |
 | <span id="ICFG_INSTALLRAS"></span><span id="icfg_installras"></span><dl> <dt>**ICFG \_ INSTALLRAS**</dt> <dt>0x00000002</dt> </dl>    | Instale o RAS (se necessário).<br/>            |
 | <span id="ICFG_INSTALLTCP"></span><span id="icfg_installtcp"></span><dl> <dt>**ICFG \_ INSTALLTCP**</dt> <dt>0x00000001</dt> </dl>    | Instale o TCP/IP (se necessário).<br/>         |
 
@@ -70,17 +70,17 @@ Uma combinação dos sinalizadores a seguir que controlam a instalação e a con
 *lpfNeedsRestart* 
 </dt> <dd>
 
-Se esse valor for não **nulo**, em retorno será **verdadeiro** somente se o Windows precisar ser reiniciado para concluir a instalação.
+Se esse valor for não **NULL,** no retorno, ele será **TRUE** somente se Windows ser reiniciado para concluir a instalação.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna um valor **HRESULT** . Se nenhum erro ocorrer, ele retornará o código de **\_ êxito do erro** .
+Retorna um **valor HRESULT.** Se nenhum erro ocorrer, ele retornará o **código ERROR \_ SUCCESS.**
 
 ## <a name="remarks"></a>Comentários
 
-Esta função não tem biblioteca de importação ou arquivo de cabeçalho associado; Você deve chamá-lo usando as funções [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) .
+Essa função não tem nenhuma biblioteca de importação ou arquivo de header associado; você deve chamá-lo usando [**as funções LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) [**e GetProcAddress.**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress)
 
 ## <a name="requirements"></a>Requisitos
 

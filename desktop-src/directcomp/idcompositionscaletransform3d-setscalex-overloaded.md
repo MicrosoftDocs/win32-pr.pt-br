@@ -12,12 +12,12 @@ api_type:
 - DllExport
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: 0799c0fa93564e4db277311ae6492a5f7eb85649
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f7fc52b6b98bfcc60bdf8db1636c6ef23c0c62ea7fb382a9c17e8daa00b8ddae
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105763173"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118505516"
 ---
 # <a name="idcompositionscaletransform3dsetscalex-methods"></a>Métodos IDCompositionScaleTransform3D:: setscalex
 
@@ -40,9 +40,9 @@ Altera ou anima o valor da propriedade ScaleX de uma transformação de escala 3
 
 | Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                 |
-| parâmetro<br/>                   | <dl> <dt>DCOMP. h</dt> </dl>   |
+| Cliente mínimo com suporte<br/> | \[apenas aplicativos de área de trabalho Windows 8\]<br/>                                           |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2012\]<br/>                                 |
+| Cabeçalho<br/>                   | <dl> <dt>DCOMP. h</dt> </dl>   |
 | Biblioteca<br/>                  | <dl> <dt>DCOMP. lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Dcomp.dll</dt> </dl> |
 

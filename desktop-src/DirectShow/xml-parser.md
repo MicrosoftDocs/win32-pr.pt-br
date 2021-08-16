@@ -18,13 +18,13 @@ ms.locfileid: "118650346"
 
  
 
-O objeto do analisador XML converte entre os arquivos de projeto XML e as linhas do tempo. Para criar esse objeto, chame **CoCreateInstance**.
+O objeto Analisador XML é convertido entre arquivos de projeto XML e linhas do tempo. Para criar esse objeto, chame **CoCreateInstance**.
 
-O objeto analisador XML expõe a seguinte interface:
+O objeto Analisador XML expõe a seguinte interface:
 
 -   [**IXml2Dex**](ixml2dex.md)
 
-**Identificador de classe:** \_XML2DEX CLSID
+**Identificador de classe:** CLSID \_ Xml2Dex
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

@@ -1,9 +1,9 @@
 ---
-title: Mensagem de TVM_GETSCROLLTIME (commctrl. h)
-description: Recupera o tempo máximo de rolagem para o controle de exibição em árvore. Você pode enviar essa mensagem explicitamente ou usando a macro do TreeView \_ getrolation.
+title: TVM_GETSCROLLTIME mensagem (Commctrl.h)
+description: Recupera o tempo máximo de rolagem para o controle de exibição de árvore. Você pode enviar essa mensagem explicitamente ou usando a \_ macro TreeView GetScrollTime.
 ms.assetid: 992d1906-cda3-4ac7-ba90-c681c551ac2e
 keywords:
-- Controles de TVM_GETSCROLLTIME de mensagens do Windows
+- TVM_GETSCROLLTIME controles de Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e6f0bacc6c12dd7f54f20d882faf738c11848d59
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e026a463476d5625f7632d7b6679ce94ca2c8ab6d8c6a050d8938bd46d9858b6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104085328"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118408493"
 ---
-# <a name="tvm_getscrolltime-message"></a>\_Mensagem TVM GETscrolltime
+# <a name="tvm_getscrolltime-message"></a>Mensagem TVM \_ GETSCROLLTIME
 
-Recupera o tempo máximo de rolagem para o controle de exibição em árvore. Você pode enviar essa mensagem explicitamente ou usando a macro do [**TreeView \_ getrolation**](/windows/desktop/api/Commctrl/nf-commctrl-treeview_getscrolltime) .
+Recupera o tempo máximo de rolagem para o controle de exibição de árvore. Você pode enviar essa mensagem explicitamente ou usando a macro [**\_ TreeView GetScrollTime.**](/windows/desktop/api/Commctrl/nf-commctrl-treeview_getscrolltime)
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -35,13 +35,13 @@ Recupera o tempo máximo de rolagem para o controle de exibição em árvore. Vo
 *lParam* 
 </dt> <dd>Deve ser zero.</dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna o tempo máximo de rolagem, em milissegundos.
 
 ## <a name="remarks"></a>Comentários
 
-O tempo máximo de rolagem é a quantidade mais longa de tempo que uma operação de rolagem pode tomar. A rolagem será ajustada para que a rolagem ocorra dentro do tempo máximo de rolagem. Uma operação de rolagem pode levar menos tempo do que o máximo.
+O tempo máximo de rolagem é o período mais longo que uma operação de rolagem pode levar. A rolagem será ajustada para que a rolagem ocorrerá dentro do tempo máximo de rolagem. Uma operação de rolagem pode levar menos tempo do que o máximo.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -49,9 +49,9 @@ O tempo máximo de rolagem é a quantidade mais longa de tempo que uma operaçã
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 
@@ -59,7 +59,7 @@ O tempo máximo de rolagem é a quantidade mais longa de tempo que uma operaçã
 
 <dl> <dt>
 
-[**TVM \_ SETrolatime**](tvm-setscrolltime.md)
+[**TVM \_ SETSCROLLTIME**](tvm-setscrolltime.md)
 </dt> </dl>
 
  

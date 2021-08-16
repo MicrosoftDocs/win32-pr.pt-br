@@ -3,7 +3,7 @@ title: Mensagem de MCIWNDM_PUT_DEST (VFW. h)
 description: O MCIWNDM \_ colocar \_ mensagem de destino redefine as coordenadas do retângulo de destino usado para ampliar ou alongar as imagens de um arquivo AVI durante a reprodução. Você pode enviar essa mensagem explicitamente ou usando a macro MCIWndPutDest.
 ms.assetid: 0b13d473-ef93-41a2-bbb2-09fbf264493e
 keywords:
-- Multimídia do Windows de mensagem MCIWNDM_PUT_DEST
+- mensagem de MCIWNDM_PUT_DEST Windows multimídia
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ba150f450f71c3593976f98c9935233918becd70
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 27eb2afdcec32d43b0352af1ead0b4c89715641fd370611542e1e5c6da9efa85
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103645012"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118373450"
 ---
 # <a name="mciwndm_put_dest-message"></a>MCIWNDM \_ colocar \_ mensagem de dest
 

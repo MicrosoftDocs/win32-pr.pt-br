@@ -3,7 +3,7 @@ title: Mensagem de EM_GETTYPOGRAPHYOPTIONS (RichEdit. h)
 description: Retorna o estado atual das opções de tipografia de um controle de edição rico.
 ms.assetid: 6ff5980e-3201-4b0f-9a03-3de78730ce33
 keywords:
-- Controles de EM_GETTYPOGRAPHYOPTIONS de mensagens do Windows
+- controles de Windows de mensagem de EM_GETTYPOGRAPHYOPTIONS
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6d692639ba6c8cea758abe694faed3a46e3f65be
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d575550e2c239ee5b689deb5874a9803c581151b54100ab227a24d4f29941973
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104086031"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117831159"
 ---
 # <a name="em_gettypographyoptions-message"></a>\_Mensagem em GETtipografiaoptions
 
@@ -43,7 +43,7 @@ Não usado; deve ser zero.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna as opções de tipografia atuais. Para obter uma lista de opções, consulte em [**\_ settypographyoptions**](em-settypographyoptions.md).
 
@@ -57,10 +57,10 @@ Você pode ativar a quebra de linha avançada enviando a mensagem em [**\_ setti
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
 | Redistribuível<br/>          | Edição avançada 3,0<br/>                                                              |
-| parâmetro<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
 
 
 

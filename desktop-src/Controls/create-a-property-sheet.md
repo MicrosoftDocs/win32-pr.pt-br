@@ -4,12 +4,12 @@ description: O exemplo nesta seção cria uma folha de propriedades que contém 
 ms.assetid: 61ACF87A-938C-4487-ACEB-484FCB677C6A
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d15abd44f3a583afd99c5d943b9105c8734b73c1
-ms.sourcegitcommit: 11f52354f570aacaf1ba2a266b2e507abd73352a
+ms.openlocfilehash: 5fa99c3e678fa7d8e6aa70cd3f5c6e4c7bc514f94114c7bb7a411fa7df1caac3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "105748100"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117831842"
 ---
 # <a name="how-to-create-a-property-sheet"></a>Como criar uma folha de propriedades
 
@@ -21,12 +21,12 @@ O exemplo define as páginas preenchendo um par de estruturas [**PROPSHEETPAGE**
 
 ### <a name="technologies"></a>Tecnologias
 
--   [Controles do Windows](window-controls.md)
+-   [Windows Controles](window-controls.md)
 
 ### <a name="prerequisites"></a>Pré-requisitos
 
 -   C/C++
--   Programação da interface do usuário do Windows
+-   Windows Programação de interface do usuário
 
 ## <a name="instructions"></a>Instruções
 

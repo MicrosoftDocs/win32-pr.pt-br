@@ -4,12 +4,12 @@ ms.assetid: 834cac0a-0c84-49aa-baf2-32bae26e215b
 title: Atributo MF_SD_ASF_EXTSTRMPROP_LANGUAGE_ID_INDEX (Wmcontainer. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2afcf2388d2c0641aede4ff0eaccac9178207fb3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 87f77b53a4156cf21a23680618da010db781e0c7c75d7d4decb2f9e1136c5dbb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105748469"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118474064"
 ---
 # <a name="mf_sd_asf_extstrmprop_language_id_index-attribute"></a>\_Atributo de índice de ID de linguagem MF SD \_ ASF \_ EXTSTRMPROP \_ \_ \_
 
@@ -35,9 +35,9 @@ Você também pode obter a marca de idioma consultando o descritor de fluxo para
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                     |
-| parâmetro<br/>                   | <dl> <dt>Wmcontainer. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                           |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                     |
+| Cabeçalho<br/>                   | <dl> <dt>Wmcontainer. h</dt> </dl> |
 
 
 

@@ -593,7 +593,7 @@ Cleanup:
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| parâmetro<br/>                   | <dl> <dt>Iads.h</dt> </dl>       |
+| Cabeçalho<br/>                   | <dl> <dt>Iads.h</dt> </dl>       |
 | DLL<br/>                      | <dl> <dt>Activeds.dll</dt> </dl> |
 | IID<br/>                      | IID \_ IADsPropertyValue é definido como 79FA9AD0-A97C-11D0-8534-00C04FD8D503<br/>    |
 

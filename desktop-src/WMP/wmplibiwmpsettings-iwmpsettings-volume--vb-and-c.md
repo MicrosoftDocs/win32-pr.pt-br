@@ -1,11 +1,11 @@
 ---
 title: Propriedade de volume IWMPSettings
-description: A propriedade volume Obtém ou define o volume de reprodução atual.
+description: A propriedade volume obtém ou define o volume de reprodução atual.
 ms.assetid: cff4fe70-9ca2-4419-bfc3-d622e8c72756
 keywords:
-- Windows Media Player de propriedade de volume
-- Windows Media Player de propriedade de volume, interface IWMPSettings
-- Windows Media Player de interface IWMPSettings, propriedade de volume
+- propriedade volume Windows Media Player
+- propriedade de volume Windows Media Player , interface IWMPSettings
+- Interface IWMPSettings Windows Media Player , propriedade de volume
 topic_type:
 - apiref
 api_name:
@@ -23,11 +23,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118568393"
 ---
-# <a name="iwmpsettingsvolume-property"></a>Propriedade IWMPSettings:: volume
+# <a name="iwmpsettingsvolume-property"></a>Propriedade IWMPSettings::volume
 
-A propriedade **volume** Obtém ou define o volume de reprodução atual.
+A **propriedade volume** obtém ou define o volume de reprodução atual.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 ```CSharp
@@ -46,11 +46,11 @@ Public Property volume As System.Int32
 
 ## <a name="property-value"></a>Valor da propriedade
 
-Um **System. Int32** que é o nível de volume, variando de 0 a 100.
+Um **System.Int32 que** é o nível de volume, variando de 0 a 100.
 
 ## <a name="remarks"></a>Comentários
 
-Um valor de zero não especifica nenhum volume (mudo). Um valor de 100 especifica o volume completo. Se nenhum valor for especificado para essa propriedade, o padrão será a última configuração de volume estabelecida para Windows Media Player.
+Um valor de zero não especifica nenhum volume (muted). Um valor de 100 especifica o volume completo. Se nenhum valor for especificado para essa propriedade, o padrão será a última configuração de volume estabelecida para Windows Media Player.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -58,7 +58,7 @@ Um valor de zero não especifica nenhum volume (mudo). Um valor de 100 especific
 
 | Requisito | Valor |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versão<br/>   | Windows Media Player 9 Series ou posterior<br/>                                                                      |
+| Versão<br/>   | Windows Media Player série 9 ou posterior<br/>                                                                      |
 | Namespace<br/> | **WMPLib**<br/>                                                                                                  |
 | Assembly<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 

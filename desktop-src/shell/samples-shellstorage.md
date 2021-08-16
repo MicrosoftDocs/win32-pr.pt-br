@@ -1,5 +1,5 @@
 ---
-description: Demonstra como criar arquivos e pastas em contêineres do Shell. Também mostra como salvar no item shell retornado da caixa de diálogo de arquivo.
+description: Demonstra como criar arquivos e pastas em contêineres do Shell. Também mostra como salvar no item de shell que é retornado da caixa de diálogo arquivo.
 title: Exemplo de armazenamento de shell
 ms.topic: article
 ms.date: 05/31/2018
@@ -18,7 +18,7 @@ ms.locfileid: "117858255"
 ---
 # <a name="shell-storage-sample"></a>Exemplo de armazenamento de shell
 
-Demonstra como criar arquivos e pastas em contêineres do Shell. Também mostra como salvar no item shell retornado da caixa de diálogo de arquivo.
+Demonstra como criar arquivos e pastas em contêineres do Shell. Também mostra como salvar no item de shell que é retornado da caixa de diálogo arquivo.
 
 Este tópico inclui as seções a seguir.
 
@@ -40,7 +40,7 @@ Este tópico inclui as seções a seguir.
 
  
 
-Para obter requisitos adicionais, consulte o arquivo Leiame incluído no exemplo.
+Para obter requisitos adicionais, consulte o arquivo Leiame incluído com o exemplo.
 
 ## <a name="downloading-the-sample"></a>Baixando o exemplo
 

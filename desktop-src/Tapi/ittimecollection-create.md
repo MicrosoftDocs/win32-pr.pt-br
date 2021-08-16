@@ -1,21 +1,21 @@
 ---
 description: O método Create cria um novo componente ITTime.
 ms.assetid: dee50454-8358-4898-b098-2de51505b658
-title: 'Método ITTimeCollection:: Create (Sdpblb. h)'
+title: Método ITTimeCollection::Create (Sdpblb.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: df62bbc8f1ad2a24a9b80a7f5d0a25bc01f713d8
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 12a65949d0584f6ed41d3e1611c790b6b94dfa88a4e11ba18818974af5d38cef
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105811926"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117762368"
 ---
-# <a name="ittimecollectioncreate-method"></a>Método ITTimeCollection:: Create
+# <a name="ittimecollectioncreate-method"></a>Método ITTimeCollection::Create
 
-\[ Os controles e as interfaces da conferência de telefonia IP de reunião não estão disponíveis para uso no Windows Vista, no Windows Server 2008 e nas versões subsequentes do sistema operacional. A API do cliente RTC fornece funcionalidade semelhante.\]
+\[As interfaces e controles de Conferência de Telefonia IP de reunião não estão disponíveis para uso no Windows Vista, Windows Server 2008 e versões subsequentes do sistema operacional. A API do Cliente RTC fornece funcionalidade semelhante.\]
 
-O método **Create** cria um novo componente [**ITTime**](ittime.md) .
+O **método Create** cria um novo componente [**ITTime.**](ittime.md)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -33,21 +33,21 @@ HRESULT Create(
 
 <dl> <dt>
 
-*Índice* \[ do no\]
+*Índice* \[ Em\]
 </dt> <dd>
 
 Índice do item a ser criado. (A matriz de índice é baseada em um.)
 
 </dd> <dt>
 
-*ppTime* \[ fora\]
+*ppTime* \[ out\]
 </dt> <dd>
 
 Ponteiro para o componente b criado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método pode retornar um desses valores.
 
@@ -56,10 +56,10 @@ Esse método pode retornar um desses valores.
 | Valor                                                                                         | Significado                                                         |
 |-----------------------------------------------------------------------------------------------|-----------------------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>          | O método foi bem-sucedido.<br/>                                    |
-| <dl> <dt>**\_ponteiro E**</dt> </dl>     | O parâmetro *ppTime* não é um ponteiro válido.<br/>       |
-| <dl> <dt>**E \_ INVALIDARG**</dt> </dl>  | O parâmetro de *índice* não é válido.<br/>                  |
+| <dl> <dt>**PONTEIRO \_ E**</dt> </dl>     | O *parâmetro ppTime* não é um ponteiro válido.<br/>       |
+| <dl> <dt>**E \_ INVALIDARG**</dt> </dl>  | O *parâmetro Index* não é válido.<br/>                  |
 | <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | Há memória insuficiente para executar a operação.<br/> |
-| <dl> <dt>**E \_ falha**</dt> </dl>        | Erro não especificado.<br/>                                   |
+| <dl> <dt>**E \_ FAIL**</dt> </dl>        | Erro não especificado.<br/>                                   |
 | <dl> <dt>**E \_ NOTIMPL**</dt> </dl>     | Este método ainda não foi implementado.<br/>                  |
 
 
@@ -68,9 +68,9 @@ Esse método pode retornar um desses valores.
 
 ## <a name="remarks"></a>Comentários
 
-A TAPI chama o método **AddRef** na interface [**ITTime**](ittime.md) retornada por **ITTimeCollection:: Create**. O aplicativo deve chamar **Release** na interface v para liberar recursos associados a ela.
+TAPI chama o **método AddRef** na interface [**ITTime**](ittime.md) retornada por **ITTimeCollection::Create**. O aplicativo deve chamar **Release** na interface v para liberar recursos associados a ele.
 
-Essa função pode enviar dados pela transmissão em formato não criptografado; Portanto, alguém que está interceptando na rede pode ser capaz de ler os dados. O risco de segurança de enviar os dados em texto não criptografado deve ser considerado antes de usar esse método.
+Essa função pode enviar dados pela transmissão em formato não criptografado; portanto, alguém que está escutando na rede pode conseguir ler os dados. O risco de segurança de enviar os dados em texto não claro deve ser considerado antes de usar esse método.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -78,9 +78,9 @@ Essa função pode enviar dados pela transmissão em formato não criptografado;
 
 | Requisito | Valor |
 |-------------------------|---------------------------------------------------------------------------------------|
-| Versão da TAPI<br/> | Requer TAPI 3,0 ou posterior<br/>                                                 |
-| parâmetro<br/>       | <dl> <dt>Sdpblb. h</dt> </dl>   |
-| Biblioteca<br/>      | <dl> <dt>UUID. lib</dt> </dl>   |
+| Versão do TAPI<br/> | Requer TAPI 3.0 ou posterior<br/>                                                 |
+| Cabeçalho<br/>       | <dl> <dt>Sdpblb.h</dt> </dl>   |
+| Biblioteca<br/>      | <dl> <dt>Uuid.lib</dt> </dl>   |
 | DLL<br/>          | <dl> <dt>Sdpblb.dll</dt> </dl> |
 
 

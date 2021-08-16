@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 1c514939425625c15f3b683e4dc10bd5e05cb511
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 4ec2626f68fda6d34bab83b0212343e6983474c032e4796ea41b3dec19ec58d7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103646508"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117834457"
 ---
 # <a name="uncompressex-method-of-the-cim_logicalfile-class"></a>Método UncompressEx da classe de \_ LogicalFile CIM
 
@@ -70,7 +70,7 @@ Se **for true**, o método também será aplicado recursivamente a arquivos e di
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um valor de 0 (zero) em caso de êxito e qualquer outro número para indicar um erro.
 
@@ -90,7 +90,7 @@ Sucesso.
 
 2
 
-Acesso negado.
+Acesso negado
 
 </dd> <dt>
 
@@ -130,7 +130,7 @@ Sistema de arquivos não NTFS.
 
 </dd> <dt>
 
-**Plataforma não NT/Windows 2000**
+**plataforma não NT/Windows 2000**
 </dt> <dd>
 
 12

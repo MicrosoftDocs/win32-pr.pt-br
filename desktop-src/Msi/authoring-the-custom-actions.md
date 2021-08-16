@@ -4,16 +4,16 @@ ms.assetid: 389ec652-243e-4392-aec9-3a7eb90e6c68
 title: Criando as ações personalizadas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e09525490304762b98635bcbbe6c238ce3fe413f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bb6880f95b0468a495653057a9a5802af671c55b18b025c38a3191a4792e7558
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103921491"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118381171"
 ---
 # <a name="authoring-the-custom-actions"></a>Criando as ações personalizadas
 
-A tabela a seguir lista as cinco ações personalizadas usadas para atender às especificações de exemplo: ProcessAccounts, UninstallAccounts, accounts, RemoveAccounts e RollbackAccounts. Todas essas ações personalizadas estão em [bibliotecas de vínculo dinâmico](dynamic-link-libraries.md) armazenadas na [tabela binária](binary-table.md). O código-fonte do C++ para as bibliotecas de vínculo dinâmico que contêm as ações personalizadas de exemplo é fornecido no SDK do Windows Installer. ProcessAccounts e UninstallAccounts estão no arquivo Process. cpp. CreateAccount está no arquivo Create. cpp. RemoveAccount e RollbackAccount estão no arquivo Remove. cpp. Esses arquivos de origem podem ser usados para criar os arquivos Process.dll, Create.dll e Remove.dll.
+A tabela a seguir lista as cinco ações personalizadas usadas para atender às especificações de exemplo: ProcessAccounts, UninstallAccounts, accounts, RemoveAccounts e RollbackAccounts. Todas essas ações personalizadas estão em [bibliotecas de vínculo dinâmico](dynamic-link-libraries.md) armazenadas na [tabela binária](binary-table.md). o código-fonte do C++ para as bibliotecas de vínculo dinâmico que contêm as ações personalizadas de exemplo é fornecido no SDK do Windows Installer. ProcessAccounts e UninstallAccounts estão no arquivo Process. cpp. CreateAccount está no arquivo Create. cpp. RemoveAccount e RollbackAccount estão no arquivo Remove. cpp. Esses arquivos de origem podem ser usados para criar os arquivos Process.dll, Create.dll e Remove.dll.
 
 Como a criação ou remoção de uma conta de usuário requer privilégios elevados, [ações personalizadas de execução adiada](deferred-execution-custom-actions.md) que são executadas no contexto do sistema devem ser usadas para criar, remover ou reverter contas de usuário. As ações personalizadas de execução imediata, ProcessAccounts e UninstallAccounts, geram as ações personalizadas adiadas que criam, removem ou revertem contas de usuário: CreateAccount, RemoveAccount e RollbackAccount.
 

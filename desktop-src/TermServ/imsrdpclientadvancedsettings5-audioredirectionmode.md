@@ -1,18 +1,18 @@
 ---
 title: Propriedade IMsRdpClientAdvancedSettings5 AudioRedirectionMode
-description: Define e recupera o modo de redirecionamento de áudio e opções de redirecionamento de áudio diferentes.
+description: Define e recupera o modo de redirecionamento de áudio e diferentes opções de redirecionamento de áudio.
 ms.assetid: c0f5762b-00fd-40bb-ac97-3351b999f38d
 ms.tgt_platform: multiple
 keywords:
-- Serviços de Área de Trabalho Remota da propriedade AudioRedirectionMode
-- Propriedade AudioRedirectionMode Serviços de Área de Trabalho Remota, interface IMsRdpClientAdvancedSettings5
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientAdvancedSettings5, Propriedade AudioRedirectionMode
-- Propriedade AudioRedirectionMode Serviços de Área de Trabalho Remota, interface IMsRdpClientAdvancedSettings6
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientAdvancedSettings6, Propriedade AudioRedirectionMode
-- Propriedade AudioRedirectionMode Serviços de Área de Trabalho Remota, interface IMsRdpClientAdvancedSettings7
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientAdvancedSettings7, Propriedade AudioRedirectionMode
-- Propriedade AudioRedirectionMode Serviços de Área de Trabalho Remota, interface IMsRdpClientAdvancedSettings8
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientAdvancedSettings8, Propriedade AudioRedirectionMode
+- Propriedade AudioRedirectionMode Serviços de Área de Trabalho Remota
+- A propriedade AudioRedirectionMode Serviços de Área de Trabalho Remota interface , IMsRdpClientAdvancedSettings5
+- Interface IMsRdpClientAdvancedSettings5 Serviços de Área de Trabalho Remota , propriedade AudioRedirectionMode
+- A propriedade AudioRedirectionMode Serviços de Área de Trabalho Remota , interface IMsRdpClientAdvancedSettings6
+- Interface IMsRdpClientAdvancedSettings6 Serviços de Área de Trabalho Remota , propriedade AudioRedirectionMode
+- A propriedade AudioRedirectionMode Serviços de Área de Trabalho Remota , interface IMsRdpClientAdvancedSettings7
+- Interface IMsRdpClientAdvancedSettings7 Serviços de Área de Trabalho Remota , propriedade AudioRedirectionMode
+- A propriedade AudioRedirectionMode Serviços de Área de Trabalho Remota , interface IMsRdpClientAdvancedSettings8
+- Interface IMsRdpClientAdvancedSettings8 Serviços de Área de Trabalho Remota , propriedade AudioRedirectionMode
 topic_type:
 - apiref
 api_name:
@@ -34,18 +34,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b40be8b8e63f210d060c0f585c9fe31328ac6ed6
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: df4216b4babf74e5e5f15994c0d8387e0d5087c4f69e4d0245b59cb5765dfe88
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104294789"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118352508"
 ---
-# <a name="imsrdpclientadvancedsettings5audioredirectionmode-property"></a>Propriedade IMsRdpClientAdvancedSettings5:: AudioRedirectionMode
+# <a name="imsrdpclientadvancedsettings5audioredirectionmode-property"></a>Propriedade IMsRdpClientAdvancedSettings5::AudioRedirectionMode
 
-Define e recupera o modo de redirecionamento de áudio e opções de redirecionamento de áudio diferentes.
+Define e recupera o modo de redirecionamento de áudio e diferentes opções de redirecionamento de áudio.
 
-Esta propriedade é de leitura/gravação.
+Essa propriedade é leitura/gravação.
 
 ## <a name="syntax"></a>Syntax
 
@@ -70,21 +70,21 @@ Define valores diferentes para o modo de redirecionamento de áudio. Esse parâm
 
 <span id="AUDIO_MODE_REDIRECT___0"></span><span id="audio_mode_redirect___0"></span>
 
-**Áudio \_ MODE \_ Redirect 0** (o redirecionamento de áudio está habilitado e a opção para redirecionamento é "Traga para este computador". Esse é o modo padrão.)
+**AUDIO \_ MODE \_ REDIRECT 0** (o redirecionamento de áudio está habilitado e a opção de redirecionamento é "Traga para este computador". Esse é o modo padrão.)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="AUDIO_MODE_PLAY_ON_SERVER_1"></span><span id="audio_mode_play_on_server_1"></span>
 
-**Áudio \_ MODO \_ Play \_ no \_ servidor 1** (o redirecionamento de áudio está habilitado e a opção é "sair do computador remoto". A opção "deixar no computador remoto" só tem suporte quando se conecta remotamente a um computador host que esteja executando o Windows Vista. Se a conexão for para um computador host que esteja executando o Windows Server 2008, a opção "deixar no computador remoto" será alterada para "não reproduzir".)
+**AUDIO \_ MODE \_ PLAY ON SERVER \_ \_ 1** (O redirecionamento de áudio está habilitado e a opção é "Sair no computador remoto". A opção "Sair no computador remoto" só tem suporte ao se conectar remotamente a um computador host que está executando Windows Vista. Se a conexão for com um computador host que está executando o Windows Server 2008, a opção "Sair no computador remoto" será alterada para "Não reproduzir".)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="AUDIO_MODE_NONE_2"></span><span id="audio_mode_none_2"></span>
 
-**Áudio \_ MODO \_ nenhum 2** (o redirecionamento de áudio está habilitado e o modo é "não reproduzir".)
+**AUDIO \_ MODE \_ NONE 2** (o redirecionamento de áudio está habilitado e o modo é "Não reproduzir".)
 
 
 </dt> <dd></dd> </dl>

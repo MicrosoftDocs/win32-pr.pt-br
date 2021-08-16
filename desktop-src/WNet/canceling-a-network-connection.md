@@ -1,6 +1,6 @@
 ---
 title: Cancelando uma conexão de rede
-description: Para cancelar uma conexão com um recurso de rede, um aplicativo pode chamar a função WNetCancelConnection2, conforme mostrado no exemplo a seguir.
+description: Para cancelar uma conexão a um recurso de rede, um aplicativo pode chamar a função WNetCancelConnection2, conforme mostrado no exemplo a seguir.
 ms.assetid: a1c80222-4986-4c51-86a5-a1caacb4b2fe
 ms.topic: article
 ms.date: 05/31/2018
@@ -13,9 +13,9 @@ ms.locfileid: "118566916"
 ---
 # <a name="canceling-a-network-connection"></a>Cancelando uma conexão de rede
 
-Para cancelar uma conexão com um recurso de rede, um aplicativo pode chamar a [**função WNetCancelConnection2,**](/windows/win32/api/winnetwk/nf-winnetwk-wnetcancelconnection2a) conforme mostrado no exemplo a seguir.
+Para cancelar uma conexão a um recurso de rede, um aplicativo pode chamar a função [**WNetCancelConnection2**](/windows/win32/api/winnetwk/nf-winnetwk-wnetcancelconnection2a) , conforme mostrado no exemplo a seguir.
 
-A chamada para **WNetCancelConnection2** especifica que uma conexão de rede não deve mais ser persistente. O exemplo chama um manipulador de erros definido pelo aplicativo para processar erros e a [**função TextOut**](/windows/desktop/api/wingdi/nf-wingdi-textouta) para impressão.
+A chamada para **WNetCancelConnection2** especifica que uma conexão de rede não deve mais ser persistente. O exemplo chama um manipulador de erro definido pelo aplicativo para processar erros e a função [**TextOut**](/windows/desktop/api/wingdi/nf-wingdi-textouta) para impressão.
 
 
 ```C++
@@ -52,9 +52,9 @@ printf("Connection closed for z: drive.\n");
 
 
 
-A [**função WNetCancelConnection**](/windows/win32/api/winnetwk/nf-winnetwk-wnetcancelconnectiona) tem suporte para compatibilidade com versões anteriores do Windows for Workgroups. Para novos aplicativos, use [**WNetCancelConnection2**](/windows/win32/api/winnetwk/nf-winnetwk-wnetcancelconnection2a).
+a função [**WNetCancelConnection**](/windows/win32/api/winnetwk/nf-winnetwk-wnetcancelconnectiona) tem suporte para compatibilidade com versões anteriores do Windows para workgroups. Para novos aplicativos, use [**WNetCancelConnection2**](/windows/win32/api/winnetwk/nf-winnetwk-wnetcancelconnection2a).
 
-Para obter mais informações sobre como usar um manipulador de erros definido pelo aplicativo, consulte [Recuperando erros de rede](retrieving-network-errors.md).
+Para obter mais informações sobre como usar um manipulador de erro definido pelo aplicativo, consulte [recuperando erros de rede](retrieving-network-errors.md).
 
  
 

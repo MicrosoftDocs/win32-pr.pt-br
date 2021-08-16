@@ -1,7 +1,7 @@
 ---
-description: Remove um conjunto de animações do controlador de animação.
+description: Remove um conjunto de animação do controlador de animação.
 ms.assetid: 2ca99651-8249-44c2-9560-b3cfaa930862
-title: 'Método ID3DXAnimationController:: UnregisterAnimationSet (D3dx9anim. h)'
+title: Método ID3DXAnimationController::UnregisterAnimationSet (D3dx9 multimídia.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -21,9 +21,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118522345"
 ---
-# <a name="id3dxanimationcontrollerunregisteranimationset-method"></a>Método ID3DXAnimationController:: UnregisterAnimationSet
+# <a name="id3dxanimationcontrollerunregisteranimationset-method"></a>Método ID3DXAnimationController::UnregisterAnimationSet
 
-Remove um conjunto de animações do controlador de animação.
+Remove um conjunto de animação do controlador de animação.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,12 +40,12 @@ HRESULT UnregisterAnimationSet(
 
 <dl> <dt>
 
-*pAnimSet* \[ no\]
+*pAnimSet* \[ Em\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXANIMATIONSET**](id3dxanimationset.md)**
 
-Ponteiro para a animação [**ID3DXAnimationSet**](id3dxanimationset.md) definida como remover.
+Ponteiro para o [**conjunto de animação ID3DXAnimationSet**](id3dxanimationset.md) a ser removido.
 
 </dd> </dl>
 
@@ -53,7 +53,7 @@ Ponteiro para a animação [**ID3DXAnimationSet**](id3dxanimationset.md) definid
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se o método for bem sucedido, o valor de retorno será S \_ OK. Se o método falhar, o valor de retorno poderá ser um dos seguintes valores: D3DERR \_ INVALIDCALL, D3DERR não \_ encontrado.
+Se o método for bem-sucedido, o valor de retorno será S \_ OK. Se o método falhar, o valor de retorno poderá ser um dos seguintes valores: D3DERR \_ INVALIDCALL, D3DERR \_ NOTFOUND.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -61,8 +61,8 @@ Se o método for bem sucedido, o valor de retorno será S \_ OK. Se o método fa
 
 | Requisito | Valor |
 |--------------------|----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3dx9anim. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| parâmetro<br/>  | <dl> <dt>D3dx9anim.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

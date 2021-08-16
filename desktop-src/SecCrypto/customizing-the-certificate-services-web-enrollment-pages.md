@@ -4,12 +4,12 @@ ms.assetid: 1e198bc8-c712-4d0f-9e3a-35a295445acf
 title: Personalizando páginas de registro na Web de serviços de certificados
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4eb2fbf421eceb1ebf0b15379aca5d0788a992ba
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0132ce4e5e1fef588ffc429597717433dd1b780d2f7f35f9c886f1978b5b318a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103837094"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117767791"
 ---
 # <a name="customizing-certificate-services-web-enrollment-pages"></a>Personalizando páginas de registro na Web de serviços de certificados
 
@@ -45,7 +45,7 @@ sDefaultOrgUnit="Marketing"
 
 Além disso, você pode editar o arquivo Certrqtp. Inc para adicionar, alterar ou remover [*modelos de certificado*](../secgloss/c-gly.md) ou tipos disponíveis para o usuário. Esses modelos e tipos, bem como informações relacionadas, estão contidos em uma matriz dimensionada chamada rgAvailReqTypes (*m*, 5).
 
-Essa matriz, como todas as matrizes de Visual Basic Scripting Edition, é baseada em zero e, como resultado, a primeira dimensão da matriz, *m*, aloca memória para *m*+ 1 item. Portanto, se, ao personalizar as páginas da Web, você precisar modificar o número de itens na matriz rgAvailReqTypes, defina a dimensão *m* para uma menor do que o número total de itens necessários. Por exemplo, se você tiver sete modelos de certificado, altere a declaração de rgAvailReqTypes, conforme mostrado no exemplo a seguir.
+essa matriz, como todas as matrizes do Visual Basic scripting Edition, é baseada em zero e, como resultado, a primeira dimensão da matriz, *m*, aloca memória para *m*+ 1 items. Portanto, se, ao personalizar as páginas da Web, você precisar modificar o número de itens na matriz rgAvailReqTypes, defina a dimensão *m* para uma menor do que o número total de itens necessários. Por exemplo, se você tiver sete modelos de certificado, altere a declaração de rgAvailReqTypes, conforme mostrado no exemplo a seguir.
 
 
 ```VB

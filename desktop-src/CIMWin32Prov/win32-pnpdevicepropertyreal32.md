@@ -2,7 +2,7 @@
 description: Representa uma propriedade de dispositivo PnP do tipo real32.
 ms.assetid: 06DFAFDA-6C6E-40BA-819D-50D2E1C1B524
 ms.tgt_platform: multiple
-title: Win32_PnPDevicePropertyReal32 classe
+title: Classe Win32_PnPDevicePropertyReal32
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -26,7 +26,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118417420"
 ---
-# <a name="win32_pnpdevicepropertyreal32-class"></a>Classe Win32 \_ PnPDevicePropertyReal32
+# <a name="win32_pnpdevicepropertyreal32-class"></a>\_Classe Win32 PnPDevicePropertyReal32
 
 Representa uma propriedade de dispositivo PnP do tipo **real32**.
 
@@ -47,13 +47,13 @@ class Win32_PnPDevicePropertyReal32 : Win32_PnPDeviceProperty
 
 ## <a name="members"></a>Membros
 
-A **classe Win32 \_ PnPDevicePropertyReal32** tem estes tipos de membros:
+A classe **Win32 \_ PnPDevicePropertyReal32** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A **classe Win32 \_ PnPDevicePropertyReal32** tem essas propriedades.
+A classe **Win32 \_ PnPDevicePropertyReal32** tem essas propriedades.
 
 <dl> <dt>
 
@@ -70,7 +70,7 @@ O valor da propriedade.
 
 </dd> <dt>
 
-**Deviceid**
+**DeviceID**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
@@ -81,7 +81,7 @@ Tipo de acesso: Somente leitura
 
 Identifica o dispositivo PnP.
 
-Essa propriedade é herdada [**de Win32 \_ PnPDeviceProperty**](win32-pnpdeviceproperty.md).
+Esta propriedade é herdada do [**Win32 \_ PnPDeviceProperty**](win32-pnpdeviceproperty.md).
 
 </dd> <dt>
 
@@ -94,13 +94,13 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-O valor do par chave Name-Value que identifica a **propriedade** Data.
+O valor do par de Name-Value de chave que identifica a propriedade de **dados** .
 
-Essa propriedade é herdada [**de Win32 \_ PnPDeviceProperty**](win32-pnpdeviceproperty.md).
+Esta propriedade é herdada do [**Win32 \_ PnPDeviceProperty**](win32-pnpdeviceproperty.md).
 
 </dd> <dt>
 
-**Keyname**
+**KeyName**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
@@ -109,24 +109,24 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-O nome do par chave Name-Value que identifica a **propriedade** Data.
+O nome do par de Name-Value de chave que identifica a propriedade de **dados** .
 
-Essa propriedade é herdada [**de Win32 \_ PnPDeviceProperty**](win32-pnpdeviceproperty.md).
+Esta propriedade é herdada do [**Win32 \_ PnPDeviceProperty**](win32-pnpdeviceproperty.md).
 
 </dd> <dt>
 
 **Tipo**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **Uint32**
+Tipo de dados: **UInt32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-O tipo da **propriedade** Data.
+O tipo da propriedade de **dados** .
 
-Essa propriedade é herdada [**de Win32 \_ PnPDeviceProperty**](win32-pnpdeviceproperty.md).
+Esta propriedade é herdada do [**Win32 \_ PnPDeviceProperty**](win32-pnpdeviceproperty.md).
 
 Os valores possíveis são.
 
@@ -141,7 +141,7 @@ Os valores possíveis são.
 
 <span id="Null"></span><span id="null"></span><span id="NULL"></span>
 
-**Nulo** (1)
+**NULL** (1)
 
 
 </dt> <dd></dd> <dt>
@@ -183,7 +183,7 @@ Os valores possíveis são.
 
 <span id="Uint32"></span><span id="uint32"></span><span id="UINT32"></span>
 
-**Uint32** (7)
+**UInt32** (7)
 
 
 </dt> <dd></dd> <dt>
@@ -211,7 +211,7 @@ Os valores possíveis são.
 
 <span id="Double"></span><span id="double"></span><span id="DOUBLE"></span>
 
-**Double** (11)
+**Duplo** (11)
 
 
 </dt> <dd></dd> <dt>
@@ -225,7 +225,7 @@ Os valores possíveis são.
 
 <span id="Guid"></span><span id="guid"></span><span id="GUID"></span>
 
-**Guid** (13)
+**GUID** (13)
 
 
 </dt> <dd></dd> <dt>
@@ -246,21 +246,21 @@ Os valores possíveis são.
 
 <span id="FileTime"></span><span id="filetime"></span><span id="FILETIME"></span>
 
-**FileTime** (16)
+**FILETIME** (16)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Boolean"></span><span id="boolean"></span><span id="BOOLEAN"></span>
 
-**Booliana** (17)
+**Booliano** (17)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="String"></span><span id="string"></span><span id="STRING"></span>
 
-**Cadeia de** caracteres (18)
+**Cadeia de caracteres** (18)
 
 
 </dt> <dd></dd> <dt>
@@ -319,7 +319,7 @@ Os valores possíveis são.
 **Reserved**
 
 
-</dt> <dd>26–4097</dd> <dt>
+</dt> <dd>26 – 4097</dd> <dt>
 
 <span id="SByteArray"></span><span id="sbytearray"></span><span id="SBYTEARRAY"></span>
 
@@ -477,7 +477,7 @@ Os valores possíveis são.
 
 <span id="Unknown_-_check_in_devpropdef.h"></span><span id="unknown_-_check_in_devpropdef.h"></span><span id="UNKNOWN_-_CHECK_IN_DEVPROPDEF.H"></span>
 
-**Desconhecido – check-in devpropdef.h** (4120)
+**Desconhecido-verifique em devpropdef. h** (4120)
 
 
 </dt> <dd></dd> <dt>
@@ -494,7 +494,7 @@ Os valores possíveis são.
 **Reserved**
 
 
-</dt> <dd>8218–4294967295</dd> </dl>
+</dt> <dd>8218 – 4294967295</dd> </dl>
 
 </dd> </dl>
 
@@ -504,10 +504,10 @@ Os valores possíveis são.
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Windows 10 somente aplicativos da área de trabalho\]<br/>                                             |
+| Cliente mínimo com suporte<br/> | Windows 10 \[ somente aplicativos da área de trabalho\]<br/>                                             |
 | Servidor mínimo com suporte<br/> | Windows Server 2016<br/>                                                          |
-| Namespace<br/>                | RAIZ \\ CIMV2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>Cimwin32. mof</dt> </dl> |
+| Namespace<br/>                | Raiz \\ cimv2<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>Cimwin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -516,7 +516,7 @@ Os valores possíveis são.
 
 <dl> <dt>
 
-[**\_PnPDeviceProperty Win32**](win32-pnpdeviceproperty.md)
+[**Win32 \_ PnPDeviceProperty**](win32-pnpdeviceproperty.md)
 </dt> </dl>
 
  

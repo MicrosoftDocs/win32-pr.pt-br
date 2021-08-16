@@ -16,7 +16,7 @@ ms.locfileid: "118662736"
 Ao criar Windows conteúdo baseado em mídia, os aplicativos normalmente usam um dos seguintes cenários:
 
 -   Convertendo ou transcodificando conteúdo de algum outro formato em Windows Formato de Mídia.
--   Inserir conteúdo que não é Windows baseado em mídia (formatos de fluxo nativo) em arquivos ASF.
+-   Inserindo conteúdo que não é Windows baseado em mídia (formatos de fluxo nativo) em arquivos ASF.
 -   Capturando dados dinâmicos e codificando-os imediatamente Windows Formato de Mídia.
 
 Transcodificação de arquivos ASF
@@ -31,9 +31,9 @@ A ilustração a seguir mostra configurações típicas de grafo de filtro de tr
 
 Inserindo formatos de fluxo nativo em arquivos ASF
 
-Por padrão, o filtro Wm ASF Writer espera fluxos de áudio e vídeo descompactados em seus pinos de entrada e usa os codecs de Áudio de Mídia do Windows e vídeo de mídia do Windows para compactar os fluxos. No entanto, o contêiner de arquivo ASF pode ser usado para qualquer tipo de dados. Ao colocar dados de mídia digital em um contêiner de arquivo ASF, você pode adicionar recursos fornecidos pelo ASF, como DRM (gerenciamento de direitos digitais) e metadados, sem precisar transcodificar seu conteúdo.
+Por padrão, o filtro Wm ASF Writer espera fluxos de áudio e vídeo descompactados em seus pinos de entrada e usa os codecs de Áudio de Mídia Windows e vídeo de mídia do Windows para compactar os fluxos. No entanto, o contêiner de arquivo ASF pode ser usado para qualquer tipo de dados. Ao colocar dados de mídia digital em um contêiner de arquivo ASF, você pode adicionar recursos fornecidos pelo ASF, como DRM (gerenciamento de direitos digitais) e metadados, sem precisar transcodificar seu conteúdo.
 
-Para criar um arquivo ASF que contém conteúdo que não é baseado em Windows mídia, o aplicativo deve compactar o fluxo no upstream do grafo de filtro do Wm ASF Writer e ignorar o mecanismo de compactação do Wm ASF Writer chamando [**IConfigAsfWriter2::SetParam**](/previous-versions/windows/desktop/api/Dshowasf/nf-dshowasf-iconfigasfwriter2-setparam) da seguinte forma:
+Para criar um arquivo ASF que contém conteúdo que não é baseado em mídia Windows, o aplicativo deve compactar o fluxo no upstream do grafo de filtro do Wm ASF Writer e ignorar o mecanismo de compactação do Wm ASF Writer chamando [**IConfigAsfWriter2::SetParam**](/previous-versions/windows/desktop/api/Dshowasf/nf-dshowasf-iconfigasfwriter2-setparam) da seguinte forma:
 
 
 ```C++

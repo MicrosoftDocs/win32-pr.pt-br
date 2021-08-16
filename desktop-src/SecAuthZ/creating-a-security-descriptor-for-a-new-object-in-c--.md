@@ -1,5 +1,5 @@
 ---
-description: O exemplo a seguir cria um descritor de segurança para uma nova chave do registro usando o processo a seguir. Um código semelhante pode ser usado para criar um descritor de segurança para outros tipos de objeto.
+description: O exemplo a seguir cria um descritor de segurança para uma nova chave do Registro usando o processo a seguir. Um código semelhante pode ser usado para criar um descritor de segurança para outros tipos de objeto.
 ms.assetid: 866992a7-95c4-4094-87bb-e6d8eeb24317
 title: Criando um descritor de segurança para um novo objeto em C++
 ms.topic: article
@@ -13,12 +13,12 @@ ms.locfileid: "117782630"
 ---
 # <a name="creating-a-security-descriptor-for-a-new-object-in-c"></a>Criando um descritor de segurança para um novo objeto em C++
 
-O exemplo a seguir cria um [*descritor de segurança*](/windows/desktop/SecGloss/s-gly) para uma nova chave do registro usando o processo a seguir. Um código semelhante pode ser usado para criar um descritor de segurança para outros tipos de objeto.
+O exemplo a seguir cria [*um descritor de segurança*](/windows/desktop/SecGloss/s-gly) para uma nova chave do Registro usando o processo a seguir. Um código semelhante pode ser usado para criar um descritor de segurança para outros tipos de objeto.
 
--   O exemplo preenche uma matriz de estruturas de [**\_ acesso explícita**](/windows/desktop/api/AccCtrl/ns-accctrl-explicit_access_a) com as informações de duas ACEs. Uma ACE permite o acesso de leitura a todos; a outra ACE permite acesso completo aos administradores.
--   A matriz de [**\_ acesso explícita**](/windows/desktop/api/AccCtrl/ns-accctrl-explicit_access_a) é passada para a função [**SETENTRIESINACL**](/windows/desktop/api/Aclapi/nf-aclapi-setentriesinacla) para criar uma DACL para o descritor de segurança.
+-   O exemplo preenche uma matriz de estruturas [**EXPLICIT \_ ACCESS**](/windows/desktop/api/AccCtrl/ns-accctrl-explicit_access_a) com as informações de duas ACEs. Uma ACE permite acesso de leitura a todos; a outra ACE permite acesso completo aos administradores.
+-   A [**matriz \_ EXPLICIT ACCESS**](/windows/desktop/api/AccCtrl/ns-accctrl-explicit_access_a) é passada para a função [**SetEntriesInAcl**](/windows/desktop/api/Aclapi/nf-aclapi-setentriesinacla) para criar uma DACL para o descritor de segurança.
 -   Depois de alocar memória para o descritor de segurança, o exemplo chama as funções [**InitializeSecurityDescriptor**](/windows/win32/api/securitybaseapi/nf-securitybaseapi-initializesecuritydescriptor) e [**SetSecurityDescriptorDacl**](/windows/win32/api/securitybaseapi/nf-securitybaseapi-setsecuritydescriptordacl) para inicializar o descritor de segurança e anexar a DACL.
--   Em seguida, o descritor de segurança é armazenado em uma estrutura de atributos de segurança \_ e passado para a função [**RegCreateKeyEx**](/windows/desktop/api/winreg/nf-winreg-regcreatekeyexa) , que anexa o descritor de segurança à chave recém-criada.
+-   O descritor de segurança é armazenado em uma estrutura ATRIBUTOS DE SEGURANÇA e passado para a função \_ [**RegCreateKeyEx,**](/windows/desktop/api/winreg/nf-winreg-regcreatekeyexa) que anexa o descritor de segurança à chave recém-criada.
 
 
 ```C++

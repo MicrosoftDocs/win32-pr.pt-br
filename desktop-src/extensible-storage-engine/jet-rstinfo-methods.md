@@ -1,25 +1,25 @@
 ---
-description: 'Saiba mais sobre: métodos de JET_RSTINFO'
-title: Métodos de JET_RSTINFO
+description: 'Saiba mais sobre: JET_RSTINFO métodos'
+title: JET_RSTINFO métodos
 TOCTitle: JET_RSTINFO methods
 ms:assetid: Methods.T:Microsoft.Isam.Esent.Interop.JET_RSTINFO
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_rstinfo_methods(v=EXCHG.10)
 ms:contentKeyID: 55103822
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 5a13b4dce71b7791bd3e65e15c48b7c0408c0eed
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4d755ef3c1f0912f823003373ab64899271a00f693ecba213f398fc2c5dd549a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103920782"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118763199"
 ---
-# <a name="jet_rstinfo-methods"></a>Métodos de JET_RSTINFO
+# <a name="jet_rstinfo-methods"></a>JET_RSTINFO métodos
 
 Incluir membros protegidos  
 Incluir membros herdados  
 
-O tipo de [JET_RSTINFO](./jet-rstinfo-class.md) expõe os membros a seguir.
+O [JET_RSTINFO](./jet-rstinfo-class.md) tipo expõe os membros a seguir.
 
 ## <a name="methods"></a>Métodos
 
@@ -40,7 +40,7 @@ O tipo de [JET_RSTINFO](./jet-rstinfo-class.md) expõe os membros a seguir.
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
 <td><a href="dn351042(v=exchg.10).md">DeepClone</a></td>
-<td>Retorna uma cópia profunda do objeto.</td>
+<td>Retorna uma cópia profunda do objeto .</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
@@ -59,18 +59,18 @@ O tipo de [JET_RSTINFO](./jet-rstinfo-class.md) expõe os membros a seguir.
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><a href="/dotnet/api/system.object.gettype#System_Object_GetType">GetType</a></td>
+<td><a href="/dotnet/api/system.object.gettype#System_Object_GetType">Gettype</a></td>
 <td>(Herdado do <a href="/dotnet/api/system.object">objeto</a>.)</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Método protegido" alt="Protected method" /></td>
-<td><a href="/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">MemberwiseClone</a></td>
+<td><a href="/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Memberwiseclone</a></td>
 <td>(Herdado do <a href="/dotnet/api/system.object">objeto</a>.)</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
 <td><a href="dn335243(v=exchg.10).md">ToString</a></td>
-<td>Retorna uma <a href="/dotnet/api/system.string">cadeia de caracteres</a> que representa a <a href="dn335235(v=exchg.10).md">JET_RSTINFO</a>atual. (Substitui <a href="/dotnet/api/system.object.tostring#System_Object_ToString">Object. ToString ()</a>.)</td>
+<td>Retorna uma <a href="/dotnet/api/system.string">Cadeia de</a> caracteres que representa o <a href="dn335235(v=exchg.10).md">valor JET_RSTINFO</a>. (Substitui <a href="/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>.)</td>
 </tr>
 </tbody>
 </table>
@@ -82,6 +82,6 @@ Parte superior
 
 #### <a name="reference"></a>Referência
 
-[Classe JET_RSTINFO](./jet-rstinfo-class.md)
+[JET_RSTINFO classe](./jet-rstinfo-class.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

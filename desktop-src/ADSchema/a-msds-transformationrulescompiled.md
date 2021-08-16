@@ -1,11 +1,11 @@
 ---
-title: ms-DS-Transformation-Rules-atributo compilado
-description: BLOB que contém regras de transformação compiladas.
+title: Atributo ms-DS-Transformation-Rules-Compiled
+description: Blob que contém regras de transformação compiladas.
 ms.assetid: 13fc1bd5-b9dc-4934-bccf-86d4d32243c6
 ms.tgt_platform: multiple
 keywords:
-- ms-DS-Transformation-Rules-esquema de atributos compilados do AD
-- atributo msDS-TransformationRulesCompiled do AD Schema
+- Esquema do AD do atributo ms-DS-Transformation-Rules-Compiled
+- MsDS-TransformationRulesCompiled attribute AD Schema
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dbadd0d7b2ddce46894d0acdbd90507ab0721142
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 6eacc372da07c13f46ef8ac0bccaa31ff944715ed56d922907c7f9fa13a36ef9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103645549"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118425653"
 ---
-# <a name="ms-ds-transformation-rules-compiled-attribute"></a>ms-DS-Transformation-Rules-atributo compilado
+# <a name="ms-ds-transformation-rules-compiled-attribute"></a>Atributo ms-DS-Transformation-Rules-Compiled
 
-BLOB que contém regras de transformação compiladas.
+Blob que contém regras de transformação compiladas.
 
 
 
 | Entrada | Valor |
 |-------------------|-------------------------------------------------------|
-| CN                | ms-DS-Transformation-regras-compiladas                   |
-| LDAP-Display-Name | msDS-TransformationRulesCompiled                      |
+| CN                | ms-DS-Transformation-Rules-Compiled                   |
+| Ldap-Display-Name | msDS-TransformationRulesCompiled                      |
 | Tamanho              | \-                                                    |
 | Privilégio de atualização  | \-                                                    |
 | Frequência de atualização  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.2190                               |
-| System-ID-GUID    | 0bb49a10-536b-bc4d-a273-0bab0dd4bd10                  |
-| Syntax            | [**Objeto (link de réplica)**](s-object-replica-link.md) |
+| System-Id-Guid    | 0bb49a10-536b-bc4d-a273-0bab0dd4bd10                  |
+| Syntax            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
 
@@ -52,11 +52,11 @@ BLOB que contém regras de transformação compiladas.
 |------------------------|-----------------------------------------------------------------------------------------------------|
 | ID do link                | \-                                                                                                  |
 | MAPI-Id                | \-                                                                                                  |
-| System-Only            | True                                                                                                |
-| É de valor único       | True                                                                                                |
+| System-Only            | Verdadeiro                                                                                                |
+| Tem valor único       | Verdadeiro                                                                                                |
 | É indexado             | Falso                                                                                               |
-| No catálogo global      | Falso                                                                                               |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                        |
+| No Catálogo Global      | Falso                                                                                               |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                        |
 | Range-Lower            | \-                                                                                                  |
 | Range-Upper            | \-                                                                                                  |
 | Search-Flags           | 0x00000080                                                                                          |

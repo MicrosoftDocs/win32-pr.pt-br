@@ -17,9 +17,9 @@ ms.locfileid: "118565071"
 
 O método não está implementado neste elemento específico.
 
-## <a name="type"></a>Digite
+## <a name="type"></a>Tipo
 
-Erro do
+Erro
 
 ## <a name="description"></a>Descrição
 

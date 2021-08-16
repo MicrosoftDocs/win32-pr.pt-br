@@ -3,7 +3,7 @@ title: Processando os dados de áudio
 description: Processando os dados de áudio
 ms.assetid: ba41e3f4-d991-4da6-9091-7a7e42622e76
 keywords:
-- Plug-ins do Windows Media Player, método Echo DoProcessOutput de exemplo
+- plug-ins de Windows Media Player, método Echo de exemplo DoProcessOutput
 - plug-ins, exemplo de método Echo DoProcessOutput
 - plug-ins de processamento de sinal digital, Echo Sample DoProcessOutput Method
 - Plug-ins do DSP, método Echo de exemplo DoProcessOutput
@@ -11,12 +11,12 @@ keywords:
 - Exemplo de plug-in do eco DSP, dados de áudio
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: acc14acb99aed20825ff970025363c6a795a0c8c
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 678e1debd586017bfbe748d4f2bed6d17607afcbe2719b5e3ecba8cabf667af6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105811636"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118334479"
 ---
 # <a name="processing-the-audio-data"></a>Processando os dados de áudio
 
@@ -53,9 +53,9 @@ Embora o processo de criação do efeito de eco seja fundamentalmente idêntico 
 [**Implementando CEcho::D oProcessOutput**](implementing-cecho--doprocessoutput.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

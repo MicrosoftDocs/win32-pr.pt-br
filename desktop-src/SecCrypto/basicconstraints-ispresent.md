@@ -1,7 +1,7 @@
 ---
-description: Recupera um valor booliana que indica se a extensão de restrições básicas está presente. Essa é a propriedade padrão.
+description: Recupera um valor booliano que indica se a extensão de restrições básica está presente. Essa é a propriedade padrão.
 ms.assetid: 775b37fc-5015-4096-9e94-608f13a5ed14
-title: Propriedade BasicConstraints.IsPresent
+title: Propriedade BasicConstraints. IsPresent
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -20,11 +20,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117773018"
 ---
-# <a name="basicconstraintsispresent-property"></a>Propriedade BasicConstraints.IsPresent
+# <a name="basicconstraintsispresent-property"></a>Propriedade BasicConstraints. IsPresent
 
-\[CAPICOM é um componente somente de 32 bits que está disponível para uso nos seguintes sistemas operacionais: Windows Server 2008, Windows Vista, Windows XP. Em vez disso, [**use a Classe X509BasicConstraintsExtension**](/dotnet/api/system.security.cryptography.x509certificates.x509basicconstraintsextension?view=netcore-3.1) no namespace [**System.Security.Cryptography.X509Certificates.**](/previous-versions/windows/)\]
+\[o capicom é um componente somente de 32 bits que está disponível para uso nos seguintes sistemas operacionais: Windows Server 2008, Windows Vista, Windows XP. Em vez disso, use a [**classe X509BasicConstraintsExtension**](/dotnet/api/system.security.cryptography.x509certificates.x509basicconstraintsextension?view=netcore-3.1) no namespace [**System. Security. Cryptography. X509Certificates**](/previous-versions/windows/) .\]
 
-A **propriedade IsPresent** recupera um valor booliana que indica se a extensão de restrições básicas está presente. Essa é a propriedade padrão.
+A propriedade **IsPresent** recupera um valor booliano que indica se a extensão de restrições básicas está presente. Essa é a propriedade padrão.
 
 Esta propriedade é somente para leitura.
 
@@ -39,7 +39,7 @@ BasicConstraints.IsPresent As Boolean
 
 ## <a name="property-value"></a>Valor da propriedade
 
-Se **true**, a extensão de restrições básicas estará presente.
+Se for **true**, a extensão de restrições básicas estará presente.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -47,9 +47,9 @@ Se **true**, a extensão de restrições básicas estará presente.
 
 | Requisito | Valor |
 |----------------------------------|----------------------------------------------------------------------------------------|
-| Fim do suporte ao cliente<br/> | Windows Vista<br/>                                                               |
-| Fim do suporte ao servidor<br/> | Windows Server 2008<br/>                                                         |
-| Redistribuível<br/>       | CAPICOM 2.0 ou posterior no Windows Server 2003 e Windows XP<br/>                  |
+| Fim do suporte do cliente<br/> | Windows Vista<br/>                                                               |
+| Fim do suporte do servidor<br/> | Windows Server 2008<br/>                                                         |
+| Redistribuível<br/>       | capicom 2,0 ou posterior no Windows Server 2003 e Windows XP<br/>                  |
 | DLL<br/>                   | <dl> <dt>Capicom.dll</dt> </dl> |
 
 

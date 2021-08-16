@@ -4,12 +4,12 @@ ms.assetid: 89da33c8-97af-4c56-8bdb-2ac588810d77
 title: MF_POLICY_ID (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 787195b20980164d7534bccc267781cdbb7510e6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1702f990dc1c88f7632bf74a40ca4671a70350450c723d4d9392af6e47dac038
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104011738"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118740662"
 ---
 # <a name="mf_policy_id-attribute"></a>Atributo de ID da \_ política MF \_
 
@@ -30,8 +30,8 @@ O valor pode ser recebido do evento de mídia [MEPolicySet](./mepolicyset.md) . 
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Atualização de abril de 2020 do Windows 10   <br/>                                      |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                               |
+| Cliente mínimo com suporte<br/> | Windows 10 Atualização de abril de 2020   <br/>                                      |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                               |
 | parâmetro<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
 
 

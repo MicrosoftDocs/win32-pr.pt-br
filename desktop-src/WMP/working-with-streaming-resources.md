@@ -3,11 +3,11 @@ title: Trabalhando com recursos de streaming
 description: Trabalhando com recursos de streaming
 ms.assetid: 0258ad24-f1b9-4cb3-921c-068072fd2dbb
 keywords:
-- plug-ins Windows Media Player, reproduza recursos de streaming de exemplo
-- plug-ins, amostras de eco de recursos de streaming
-- plug-ins de processamento de sinal digital, Echo amostras de recursos de streaming
-- Plug-ins do DSP, amostras de eco de recursos de streaming
-- Exemplo de plug-in de eco do DSP, recursos de streaming
+- Windows Media Player plug-ins, recursos de streaming de exemplo de eco
+- plug-ins, recursos de streaming de exemplo de eco
+- plug-ins de processamento de sinal digital, recursos de streaming de exemplo de eco
+- Plug-ins do DSP, recursos de streaming de exemplo de eco
+- Exemplo de plug-in do DSP de eco, recursos de streaming
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 268dc57bfad71f8ee46a3b934e671e478ca6a78a6b05fc30b7123e7b3f7f6ba0
@@ -19,13 +19,13 @@ ms.locfileid: "118567165"
 ---
 # <a name="working-with-streaming-resources"></a>Trabalhando com recursos de streaming
 
-o projeto de plug-in de DSP de áudio de exemplo gerado pelo assistente de plug-in Windows Media Player não requer que nenhum recurso de streaming seja alocado pelo plug-in. O exemplo de eco, no entanto, requer um buffer separado para manter os dados de áudio por um período de tempo para criar o efeito de atraso. O buffer é gerenciado por dois métodos: **IMediaObject:: AllocateStreamingResources**, que cria o buffer e **IMediaObject:: FreeStreamingResources**, que libera o buffer. Os métodos **IMediaObject** são implementados em Echo. cpp.
+O projeto de plug-in DSP de áudio de exemplo gerado pelo assistente de plug-in Windows Media Player não exige que nenhum recurso de streaming seja alocado pelo plug-in. O exemplo de Eco, no entanto, requer um buffer separado para manter os dados de áudio por um período de tempo para criar o efeito de atraso. O buffer é gerenciado por dois métodos: **IMediaObject::AllocateStreamingResources**, que cria o buffer e **IMediaObject::FreeStreamingResources,** que libera o buffer. Os **métodos IMediaObject** são implementados em Echo.cpp.
 
 As seções a seguir fornecem mais informações sobre como gerenciar os buffers:
 
 -   [Variáveis para gerenciar o buffer de atraso](variables-to-manage-the-delay-buffer.md)
--   [Implementando IMediaObject:: AllocateStreamingResources](implementing-imediaobject--allocatestreamingresources.md)
--   [Implementando IMediaObject:: FreeStreamingResources](implementing-imediaobject--freestreamingresources.md)
+-   [Implementando IMediaObject::AllocateStreamingResources](implementing-imediaobject--allocatestreamingresources.md)
+-   [Implementando IMediaObject::FreeStreamingResources](implementing-imediaobject--freestreamingresources.md)
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

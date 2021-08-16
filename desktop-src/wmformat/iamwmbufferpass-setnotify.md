@@ -15,12 +15,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 9739952792fcfa49da1b5656db513c3af41a419c
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 47e189a2654ed4c760fdfcd6ced5506cc90d5e7cc989a7f79979e6d95b0bbfb2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104366547"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117847602"
 ---
 # <a name="iamwmbufferpasssetnotify-method"></a>Método IAMWMBufferPass:: setnotificar
 
@@ -31,7 +31,7 @@ O método **Setnotificate** é usado por aplicativos para fornecer o filtro de l
 
 ```C++
 HRESULT SetNotify(
-  [in] IAMWMBufferPassCallback *pCallback
+  [in] IAMWMBufferPassCallback *pCallback
 );
 ```
 
@@ -48,7 +48,7 @@ Ponteiro para a interface **IAMWMBufferPassCallback** do aplicativo.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se o método for bem sucedido, ele retornará S \_ OK. Se falhar, ele retornará um código de erro **HRESULT** .
 
@@ -63,6 +63,6 @@ Chame esse método antes de colocar o gráfico de filtro no estado de execução
 [**Interface IAMWMBufferPass**](/previous-versions/windows/desktop/api/dshowasf/nn-dshowasf-iamwmbufferpass)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

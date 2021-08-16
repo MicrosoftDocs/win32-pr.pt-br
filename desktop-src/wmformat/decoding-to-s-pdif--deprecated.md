@@ -1,9 +1,9 @@
 ---
-title: Decodificando para S/PDIF (SDK do Windows Media Format 11)
-description: Para obter a documentação atual sobre os codecs de mídia do Windows e os processadores de sinal digital, consulte codec de áudio e vídeo do Windows Media e APIs do DSP. | Decodificando para S/PDIF (SDK do Windows Media Format 11)
+title: Decodificação para S/PDIF (SDK Windows Media Format 11)
+description: Para ver a documentação atual sobre Windows de mídia e processadores de sinal digital, consulte Windows codec de áudio e vídeo de mídia e APIs DSP. | Decodificação para S/PDIF (SDK Windows Media Format 11)
 ms.assetid: 5c5b6bcb-5008-4b51-9f3a-744806924f6a
 keywords:
-- Decodificando para o formato de mídia do Windows S/PDIF
+- Decodificação para formato de mídia do Windows S/PDIF
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a87a7cfad0a3a514e67014e03417b4e7d3f3b07e
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 3b9b4eef934248d9e7464f2b49becaf3b73612dfbf09db877512784025931b47
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105791070"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117848708"
 ---
-# <a name="decoding-to-spdif-windows-media-format-11-sdk"></a>Decodificando para S/PDIF (SDK do Windows Media Format 11)
+# <a name="decoding-to-spdif-windows-media-format-11-sdk"></a>Decodificação para S/PDIF (SDK Windows Media Format 11)
 
-Para obter a documentação atual sobre os codecs de mídia do Windows e os processadores de sinal digital, consulte [codec de áudio e vídeo do Windows Media e APIs do DSP.](/previous-versions//dd464626(v=vs.85))
+Para ver a documentação atual Windows codecs de mídia e processadores de sinal digital, consulte Windows codec de áudio e vídeo de mídia e [APIs DSP.](/previous-versions//dd464626(v=vs.85))
 
  
 

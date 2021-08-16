@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 347b1f22f06431c5490d4fdac15cdb22b25da69e
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: a271cc81fe97fb25850bfe4dcb7d2edb55ba3c69805dab17d013bc646768e87f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "105751865"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118384716"
 ---
 # <a name="byte-attribute"></a>atributo de byte
 
@@ -63,9 +63,9 @@ O tipo de **byte** é um dos tipos base da IDL (Interface Definition Language). 
 [**typedef**](typedef.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

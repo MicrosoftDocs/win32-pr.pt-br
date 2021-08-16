@@ -1,8 +1,8 @@
 ---
-description: A \_ classe de chip CIM representa o tipo de hardware de circuito integrado, incluindo ASICs, processadores, chips de memória e assim por diante.
+description: A classe CIM Chip representa o tipo de hardware de circuito integrado, incluindo \_ ASICs, processadores, chips de memória e assim por diante.
 ms.assetid: 3c2b0023-5d02-49b9-90f5-d66eb8a103f0
 ms.tgt_platform: multiple
-title: Classe CIM_Chip
+title: CIM_Chip classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -33,19 +33,19 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 953ae371edca42409246307b21aad69a02cf4a66
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 7a20d2066741dd14ada9ed35f29e226723c4fc5d7d3766f1a3762fdf070d0b03
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104457082"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117835004"
 ---
-# <a name="cim_chip-class"></a>\_Classe de chip CIM
+# <a name="cim_chip-class"></a>Classe CIM \_ Chip
 
-A classe de **\_ chip CIM** representa o tipo de hardware de circuito integrado, incluindo ASICs, processadores, chips de memória e assim por diante.
+A **classe \_ CIM Chip** representa o tipo de hardware de circuito integrado, incluindo ASICs, processadores, chips de memória e assim por diante.
 
 > [!IMPORTANT]
-> As classes DMTF (Distributed Management Task Force) CIM (modelo CIM) são as classes pai nas quais as classes WMI são criadas. Atualmente, o WMI dá suporte apenas aos [esquemas de versão do CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> As classes CIM (Distributed Management Task Force) do DMTF (Distributed Management Task Force) modelo CIM são as classes pai nas quais as classes WMI são criadas. Atualmente, o WMI dá suporte apenas aos esquemas de versão [do CIM 2.x.](https://dmtf.org/standards/cim/schemas)
 
  
 
@@ -81,13 +81,13 @@ class CIM_Chip : CIM_PhysicalComponent
 
 ## <a name="members"></a>Membros
 
-A classe de **\_ chip CIM** tem estes tipos de membros:
+A **classe CIM \_ Chip** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe de **\_ chip CIM** tem essas propriedades.
+A **classe CIM \_ Chip** tem essas propriedades.
 
 <dl> <dt>
 
@@ -100,12 +100,12 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Caption")
+Qualificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Legenda")
 </dt> </dl>
 
-Uma breve descrição textual do objeto.
+Uma breve descrição textual do objeto .
 
-Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
@@ -118,12 +118,12 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**\_ chave CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
+Qualificadores: [**\_ Chave CIM,**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
-Nome da classe ou subclasse usada na criação de uma instância. Quando usado com outras propriedades de chave da classe, essa propriedade permite que todas as instâncias da classe e suas subclasses sejam identificadas exclusivamente.
+Nome da classe ou subclasse usada na criação de uma instância. Quando usada com outras propriedades de chave da classe , essa propriedade permite que todas as instâncias da classe e suas subclasses sejam identificadas exclusivamente.
 
-Essa propriedade é herdada do [**CIM \_ físicoelement**](cim-physicalelement.md).
+Essa propriedade é herdada de [**CIM \_ PhysicalElement.**](cim-physicalelement.md)
 
 </dd> <dt>
 
@@ -139,16 +139,16 @@ Tipo de acesso: Somente leitura
 Qualificadores: [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Descrição")
 </dt> </dl>
 
-Uma descrição textual do objeto.
+Uma descrição textual do objeto .
 
-Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **FormFactor**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -167,7 +167,7 @@ Fator forma de implementação para o chip. Os valores a seguir podem ser especi
 
 <span id="Other"></span><span id="other"></span><span id="OTHER"></span>
 
-**Outro** (1)
+**Outros** (1)
 
 
 </dt> <dd></dd> <dt>
@@ -188,7 +188,7 @@ Fator forma de implementação para o chip. Os valores a seguir podem ser especi
 
 <span id="ZIP"></span><span id="zip"></span>
 
-**Zip** (4)
+**ZIP** (4)
 
 
 </dt> <dd></dd> <dt>
@@ -300,7 +300,7 @@ Fator forma de implementação para o chip. Os valores a seguir podem ser especi
 
 <span id="PLCC"></span><span id="plcc"></span>
 
-**PLCC** (20)
+**YORKC** (20)
 
 
 </dt> <dd></dd> <dt>
@@ -321,7 +321,7 @@ Fator forma de implementação para o chip. Os valores a seguir podem ser especi
 
 <span id="LGA"></span><span id="lga"></span>
 
-**LGA** (23)
+**LTDA** (23)
 
 
 </dt> <dd></dd> <dt>
@@ -338,37 +338,37 @@ Fator forma de implementação para o chip. Os valores a seguir podem ser especi
 **HotSwappable**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Se **for true**, o pacote poderá ser intercambiável. Um pacote físico pode ser intercambiável se o elemento puder ser substituído por um fisicamente diferente (mas equivalente) um enquanto o pacote que o contém está ativado. Por exemplo, um componente de ventilador pode ser projetado para ser intercambiável. Todos os componentes que podem ser intercambiáveis são inerentemente removíveis e substituíveis.
+Se **TRUE**, o pacote poderá ser trocado por hot-swapp. Um pacote físico poderá ser trocado por hot-swapp se o elemento puder ser substituído por um fisicamente diferente (mas equivalente) enquanto o pacote que o contém está ligado. Por exemplo, um componente de ventilador pode ser projetado para ser trocado por hot-swapp. Todos os componentes que podem ser trocados por hot-swapp são inerentemente removíveis e substituíveis.
 
-Essa propriedade é herdada do [**CIM \_ PhysicalComponent**](cim-physicalcomponent.md).
+Essa propriedade é herdada de [**Cim \_ PhysicalComponent.**](cim-physicalcomponent.md)
 
 </dd> <dt>
 
 **InstallDate**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **DateTime**
+Tipo de dados: **datetime**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. \|Componente DMTF \| 1,5 "), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) (" data de instalação ")
+Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| ComponentID \| 001.5"), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Data de instalação")
 </dt> </dl>
 
 Indica quando o objeto foi instalado. A falta de um valor não indica que o objeto não está instalado.
 
-Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
-**Manufacturer**
+**Fabricante**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
@@ -377,12 +377,12 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
+Qualificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
-Nome da organização responsável por produzir o elemento físico. Para obter mais informações, consulte a propriedade **Vendor** do [**\_ produto CIM**](cim-product.md).
+Nome da organização responsável por produzir o elemento físico. Para obter mais informações, consulte **a propriedade Vendor** do produto [**CIM \_**](cim-product.md).
 
-Essa propriedade é herdada do [**CIM \_ físicoelement**](cim-physicalelement.md).
+Essa propriedade é herdada de [**CIM \_ PhysicalElement.**](cim-physicalelement.md)
 
 </dd> <dt>
 
@@ -395,12 +395,12 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
+Qualificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
 </dt> </dl>
 
 Nome pelo qual o elemento físico é geralmente conhecido.
 
-Essa propriedade é herdada do [**CIM \_ físicoelement**](cim-physicalelement.md).
+Essa propriedade é herdada de [**CIM \_ PhysicalElement.**](cim-physicalelement.md)
 
 </dd> <dt>
 
@@ -413,12 +413,12 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Name")
+Qualificadores: [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Nome")
 </dt> </dl>
 
-Rótulo pelo qual o objeto é conhecido. Quando em uma subclasse, essa propriedade pode ser substituída como uma propriedade de chave.
+Rótulo pelo qual o objeto é conhecido. Quando subclasse, essa propriedade pode ser substituído para ser uma propriedade de chave.
 
-Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 

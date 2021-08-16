@@ -1,7 +1,7 @@
 ---
-description: o Microsoft Windows serviços HTTP (WinHTTP) usa identificadores para controlar as configurações e as informações necessárias ao usar o protocolo HTTP.
+description: O Microsoft Windows Http Services (WinHTTP) usa os handles para controlar as configurações e as informações necessárias ao usar o protocolo HTTP.
 ms.assetid: 0bd82860-1347-40c8-ae77-c4d865c109be
-title: HINTERNET identificadores no WinHTTP
+title: Alças HINTERNET no WinHTTP
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 3a76f925d11646ed2fe5b5d3732fe8972d979cdc6383a4d47e955c0e60a1390e
@@ -11,61 +11,61 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118563262"
 ---
-# <a name="hinternet-handles-in-winhttp"></a>HINTERNET identificadores no WinHTTP
+# <a name="hinternet-handles-in-winhttp"></a>Alças HINTERNET no WinHTTP
 
-o Microsoft Windows serviços HTTP (WinHTTP) usa identificadores para controlar as configurações e as informações necessárias ao usar o protocolo HTTP. Cada identificador mantém informações pertinentes a uma sessão HTTP, uma conexão com um servidor HTTP ou um recurso específico. Este tópico descreve os vários tipos de identificadores, as convenções de nomenclatura para esses identificadores e sua estrutura hierárquica.
+O Microsoft Windows Http Services (WinHTTP) usa os handles para controlar as configurações e as informações necessárias ao usar o protocolo HTTP. Cada alça mantém informações pertinentes a uma sessão HTTP, uma conexão com um servidor HTTP ou um recurso específico. Este tópico descreve os vários tipos de alças, as convenções de nomen por esses alças e sua estrutura hierárquica.
 
--   [Sobre identificadores de HINTERNET](#about-hinternet-handles)
--   [Identificadores de nomenclatura](#naming-handles)
--   [Hierarquia de identificadores](#handle-hierarchy)
--   [Explicação da hierarquia de identificadores](#explanation-of-the-handle-hierarchy)
+-   [Sobre os alças HINTERNET](#about-hinternet-handles)
+-   [Alças de nomeação](#naming-handles)
+-   [Hierarquia de alça](#handle-hierarchy)
+-   [Explicação da hierarquia de alça](#explanation-of-the-handle-hierarchy)
 
-## <a name="about-hinternet-handles"></a>Sobre identificadores de HINTERNET
+## <a name="about-hinternet-handles"></a>Sobre os alças HINTERNET
 
-Os identificadores criados e usados pelo WinHTTP são chamados de identificadores **HINTERNET** . As funções WinHTTP retornam identificadores **HINTERNET** que não são intercambiáveis com outros identificadores, portanto, não podem ser usadas com funções como [**ReadFile**](/windows/desktop/api/fileapi/nf-fileapi-readfile) ou [**CloseHandle**](/windows/desktop/api/handleapi/nf-handleapi-closehandle). Da mesma forma, outros identificadores não podem ser usados com funções WinHTTP. Por exemplo, um identificador retornado por [**CreateFile**](/windows/desktop/api/fileapi/nf-fileapi-createfilea) não pode ser passado para [**WinHttpReadData**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpreaddata). Esses identificadores **HINTERNET** não podem ser fechados enquanto uma chamada à API usando o identificador está em andamento. Para evitar uma condição de corrida, os aplicativos devem proteger o identificador e impedir que ele seja fechado enquanto a chamada à API estiver em andamento.
+Os alças criados e usados pelo WinHTTP são chamados de alças **HINTERNET.** As funções WinHTTP retornam os alças **HINTERNET** que não são intercambiáveis com outros alças, portanto, eles não podem ser usados com funções como [**ReadFile**](/windows/desktop/api/fileapi/nf-fileapi-readfile) ou [**CloseHandle**](/windows/desktop/api/handleapi/nf-handleapi-closehandle). Da mesma forma, outros alças não podem ser usados com funções WinHTTP. Por exemplo, um handle retornado por [**CreateFile**](/windows/desktop/api/fileapi/nf-fileapi-createfilea) não pode ser passado [**para WinHttpReadData.**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpreaddata) Esses **alças HINTERNET** não podem ser fechados enquanto uma chamada à API usando o handle está em andamento. Para evitar uma condição de corrida, os aplicativos devem proteger o handle e impedir que ele seja fechado enquanto a chamada à API está em andamento.
 
-As funções do Microsoft Win32 Internet (WinInet) também usam identificadores **HINTERNET** . No entanto, os identificadores usados nas funções do WinInet não podem ser trocados com os identificadores usados nas funções do WinHTTP. Para obter mais informações sobre o WinInet, consulte [sobre o WinInet](/windows/desktop/WinInet/about-wininet).
+As funções do WinInet (Microsoft Win32 Internet) também usam **os alças HINTERNET.** No entanto, os alças usados em funções WinInet não podem ser intercambiados com os alças usados em funções WinHTTP. Para obter mais informações sobre o WinInet, consulte [Sobre o WinINet.](/windows/desktop/WinInet/about-wininet)
 
-A função [**WinHttpCloseHandle**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpclosehandle) fecha os identificadores de **HINTERNET** do WinHTTP.
+A [**função WinHttpCloseHandle**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpclosehandle) fecha os alças **HINTERNET** do WinHTTP.
 
-## <a name="naming-handles"></a>Identificadores de nomenclatura
+## <a name="naming-handles"></a>Alças de nomeação
 
-Em toda a documentação do WinHTTP, as descrições das funções na API (interface de programação de aplicativo) e no código de exemplo mostram a criação e o uso de vários tipos de identificadores de **HINTERNET** . Para controlar os diferentes tipos de identificadores disponíveis, a nomeação desses identificadores é consistente. A tabela a seguir mostra os identificadores usados pela Convenção na documentação do.
+Em toda a documentação do WinHTTP, as descrições de funções na API (interface de programação de aplicativo) e o código de exemplo mostram a criação e o uso de vários tipos de alças **HINTERNET.** Para acompanhar os diferentes tipos de alças disponíveis, a nomeação desses alças é consistente. A tabela a seguir mostra os identificadores usados por convenção na documentação.
 
 
 
-| Tipo de identificador       | Identificador de criação de função                                                                                                          | Identificador |
+| Tipo de identificador       | Função que cria o handle                                                                                                          | Identificador |
 |-------------------|-----------------------------------------------------------------------------------------------------------------------------------|------------|
-| Identificador genérico    | [**WinHttpOpen**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpopen), [**WinHttpConnect**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpconnect)ou [**WinHttpOpenRequest**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpopenrequest) | hInternet  |
-| Identificador de sessão    | [**WinHttpOpen**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpopen)                                                                                                | hSession   |
-| Identificador de conexão | [**WinHttpConnect**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpconnect)                                                                                          | hConnect   |
-| Identificador de solicitação    | [**WinHttpOpenRequest**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpopenrequest)                                                                                  | hRequest   |
+| Alça genérica    | [**WinHttpOpen**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpopen), [**WinHttpConnect**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpconnect)ou [**WinHttpOpenRequest**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpopenrequest) | Hinternet  |
+| Alça de sessão    | [**WinHttpOpen**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpopen)                                                                                                | hSession   |
+| Alça de conexão | [**WinHttpConnect**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpconnect)                                                                                          | hConnect   |
+| Alça de solicitação    | [**WinHttpOpenRequest**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpopenrequest)                                                                                  | hRequest   |
 
 
 
  
 
-## <a name="handle-hierarchy"></a>Hierarquia de identificadores
+## <a name="handle-hierarchy"></a>Hierarquia de alça
 
-Os identificadores **HINTERNET** são mantidos em uma hierarquia. O identificador retornado por [**WinHttpOpen**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpopen) é o identificador de **HINTERNET** de sessão. Chamar **WinHttpOpen** inicializa as funções WinHTTP e inicia um contexto de sessão que mantém as informações e configurações do usuário durante a vida útil do identificador da sessão. [**WinHttpConnect**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpconnect) especifica um servidor http ou HTTPS de destino e cria um identificador de **HINTERNET** de conexão. Por padrão, o identificador de conexão herda as configurações do identificador de sessão. Cada recurso especificado com uma chamada para [**WinHttpOpenRequest**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpopenrequest) é atribuído a um identificador **HINTERNET** de solicitação.
+Os **alças HINTERNET** são mantidos em uma hierarquia. O handle retornado por [**WinHttpOpen é o**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpopen) handle **HINTERNET da** sessão. Chamar **WinHttpOpen** inicializa as funções WinHTTP e inicia um contexto de sessão que mantém as informações e as configurações do usuário ao longo da vida útil do alçamento de sessão. [**WinHttpConnect especifica**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpconnect) um servidor HTTP ou HTTPS de destino e cria um handle **HINTERNET de** conexão. Por padrão, o alça de conexão herda as configurações para o alça de sessão. Cada recurso especificado com uma chamada para [**WinHttpOpenRequest**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpopenrequest) recebe um handle **HINTERNET de** solicitação.
 
-O diagrama a seguir ilustra a hierarquia de identificadores **HINTERNET** . Cada caixa no diagrama representa uma função WinHTTP que retorna um identificador **HINTERNET** .
+O diagrama a seguir ilustra a hierarquia de **alças HINTERNET.** Cada caixa no diagrama representa uma função WinHTTP que retorna um **handle HINTERNET.**
 
-![funções que criam identificadores](images/art-winhttp2.png)
+![funções que criam alças](images/art-winhttp2.png)
 
-Depois de fechar um identificador, o aplicativo deve estar preparado para receber notificações de retorno de chamada no identificador até que o valor final do **identificador de retorno de chamada do WinHTTP seja retornado para indicar \_ \_ \_ \_** que o identificador está completamente fechado.
+Depois de fechar um handle, o aplicativo deve estar preparado para receber notificações de retorno de chamada no alçamento até que o valor final DE HANDLE CLOSED DE STATUS DE RETORNO DE CHAMADA WINHTTP seja retornado para indicar que o alça está completamente fechado. **\_ \_ \_ \_**
 
-Um identificador de sessão é chamado de pai de qualquer identificador de conexão usado para criar; da mesma forma, o identificador de conexão e seu identificador de sessão pai são chamados de pais de qualquer identificador de solicitação que o identificador de conexão é usado para criar.
+Um alça de sessão é o pai de qualquer alça de conexão que ele usou para criar; Da mesma forma, o alça de conexão e seu alça de sessão pai são os pais de qualquer alça de solicitação que o alça de conexão é usado para criar.
 
-Quando um identificador pai é fechado, todos os filhos que ele tem são indiretamente invalidados, mesmo que não sejam fechados, e as solicitações subsequentes que os utilizam falham com o **\_ \_ identificador inválido de erro** de erro. Não é possível confiar em solicitações assíncronas pendentes para concluir corretamente.
+Quando um handle pai é fechado, todos os filhos que ele tem são invalidados indiretamente, mesmo que não sejam fechados por conta própria, e as solicitações subsequentes que o usam falham com o erro **ERROR \_ INVALID \_ HANDLE**. Solicitações assíncronas pendentes não podem ser contadas para serem concluídas corretamente.
 
-O diagrama a seguir mostra as funções que usam o identificador **HINTERNET** criado pelo [**WinHttpOpenRequest**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpopenrequest). As caixas sombreadas representam as funções do WinHTTP que criam identificadores, e as caixas simples mostram as funções que usam esses identificadores de **HINTERNET** . O diagrama também é organizado para mostrar a ordem na qual as funções de WinHTTP são normalmente chamadas.
+O diagrama a seguir mostra as funções que usam o handle **HINTERNET** criado por [**WinHttpOpenRequest.**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpopenrequest) As caixas sombreadas representam funções WinHTTP que criam alças e as caixas simples mostram as funções que usam esses alças **HINTERNET.** O diagrama também é organizado para mostrar a ordem em que as funções WinHTTP normalmente são chamadas.
 
-![funções que criam identificadores](images/art-winhttp2.png)
+![funções que criam alças](images/art-winhttp2.png)
 
-## <a name="explanation-of-the-handle-hierarchy"></a>Explicação da hierarquia de identificadores
+## <a name="explanation-of-the-handle-hierarchy"></a>Explicação da hierarquia de alça
 
-Primeiro, um identificador de sessão é criado com [**WinHttpOpen**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpopen). [**WinHttpConnect**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpconnect) requer o identificador de sessão como seu primeiro parâmetro e retorna um identificador de conexão para um servidor especificado. Um identificador de solicitação é criado por [**WinHttpOpenRequest**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpopenrequest), que usa o identificador de conexão criado pelo [**WinHttpConnect**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpconnect). Se o aplicativo optar por adicionar mais cabeçalhos à solicitação, ou se for necessário que o aplicativo defina credenciais para autenticação, [**WinHttpAddRequestHeaders**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpaddrequestheaders) e [**WinHttpSetCredentials**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpsetcredentials) poderão ser chamados usando esse identificador de solicitação. A solicitação é enviada pelo [**WinHttpSendRequest**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpsendrequest), que usa o identificador de solicitação. Depois de enviar a solicitação, os dados adicionais podem ser enviados ao servidor usando [**WinHttpWriteData**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpwritedata)ou o aplicativo pode pular diretamente para [**WinHttpReceiveResponse**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpreceiveresponse) para especificar que nenhuma informação é enviada ao servidor. Neste ponto, dependendo da finalidade do aplicativo, o identificador de solicitação pode ser usado para chamar [**WinHttpQueryHeaders**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpqueryheaders), [**WinHttpQueryAuthSchemes**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpqueryauthschemes)ou recuperar um recurso com [**WinHttpQueryDataAvailable**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpquerydataavailable) e [**WinHttpReadData**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpreaddata).
+Primeiro, um alça de sessão é criado com [**WinHttpOpen**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpopen). [**WinHttpConnect**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpconnect) requer o alça de sessão como seu primeiro parâmetro e retorna um alça de conexão para um servidor especificado. Um alça de solicitação é criado [**por WinHttpOpenRequest,**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpopenrequest)que usa o alça de conexão criado por [**WinHttpConnect.**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpconnect) Se o aplicativo optar por adicionar outros headers à solicitação ou se for necessário para o aplicativo definir credenciais para autenticação, [**WinHttpAddRequestHeaders**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpaddrequestheaders) e [**WinHttpSetCredentials**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpsetcredentials) poderão ser chamados usando esse identificador de solicitação. A solicitação é enviada por [**WinHttpSendRequest,**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpsendrequest)que usa o handle de solicitação. Depois de enviar a solicitação, dados adicionais podem ser enviados para o servidor usando [**WinHttpWriteData**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpwritedata)ou o aplicativo pode pular diretamente para [**WinHttpReceiveResponse**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpreceiveresponse) para especificar que nenhuma outra informação é enviada ao servidor. Neste ponto, dependendo da finalidade do aplicativo, o handle de solicitação pode ser usado para chamar [**WinHttpQueryHeaders**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpqueryheaders), [**WinHttpQueryAuthSchemes**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpqueryauthschemes)ou recuperar um recurso com [**WinHttpQueryDataAvailable**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpquerydataavailable) e [**WinHttpReadData**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpreaddata).
 
  
 

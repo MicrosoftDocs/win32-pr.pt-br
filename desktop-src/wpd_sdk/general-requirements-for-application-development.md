@@ -4,16 +4,16 @@ ms.assetid: 8ac88d6f-fc4b-4253-932d-aaa3c801b18f
 title: Requisitos gerais para o desenvolvimento de aplicativos (API WPD)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d16be9656f72324b8f3687bca72146320561b0d2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e9ad1ed207774494102f673bd7fb4f92acbdcb4629542d238613637d9509336c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104170292"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118430875"
 ---
 # <a name="general-requirements-for-application-development-wpd-api"></a>Requisitos gerais para o desenvolvimento de aplicativos (API WPD)
 
-Para criar um aplicativo de dispositivos portáteis do Windows, você deve ter o [SDK (Software Development Kit) do Windows](https://developer.microsoft.com/windows/downloads) instalado no computador. Os cabeçalhos e as bibliotecas necessárias aparecem na lista a seguir.
+para criar um aplicativo de dispositivos portáteis Windows, você deve ter o [Software Development Kit (SDK) do Windows](https://developer.microsoft.com/windows/downloads) instalado em seu computador. Os cabeçalhos e as bibliotecas necessárias aparecem na lista a seguir.
 
 -   PortableDeviceGuids. lib
 -   PortableDevice. h
@@ -44,7 +44,7 @@ Dos arquivos na lista anterior, BridgeDeviceService. h e DeviceService. h são n
 
 <dl> <dt>
 
-[**Dispositivos portáteis do Windows**](/windows/desktop/windows-portable-devices)
+[**Windows Dispositivos portáteis**](/windows/desktop/windows-portable-devices)
 </dt> </dl>
 
  

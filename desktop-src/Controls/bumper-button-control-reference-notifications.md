@@ -15,21 +15,21 @@ ms.locfileid: "118416702"
 
 ## <a name="in-this-section"></a>Nesta seção
 
--   [LISTA SUSPENSO \_ DE BCN](bcn-dropdown.md)
+-   [\_lista suspensa BCN](bcn-dropdown.md)
 -   [BCN \_ HOTITEMCHANGE](bcn-hotitemchange.md)
--   [BN \_ CLICADO](bn-clicked.md)
--   [BN \_ DBLCLK](bn-dblclk.md)
--   [BN \_ DISABLE](bn-disable.md)
--   [BN \_ DOUBLECLICKED](bn-doubleclicked.md)
--   [BN \_ HILITE](bn-hilite.md)
--   [BN \_ KILLFOCUS](bn-killfocus.md)
--   [PINTURA \_ BN](bn-paint.md)
--   [BN \_ POR E/S](bn-pushed.md)
--   [BN \_ SETFOCUS](bn-setfocus.md)
--   [BN \_ UNHILITE](bn-unhilite.md)
--   [BN \_ UNPUSHED](bn-unpushed.md)
+-   [BILHÃO \_ clicou](bn-clicked.md)
+-   [BILHÃO \_ DBLCLK](bn-dblclk.md)
+-   [BILHÃO \_ desabilitar](bn-disable.md)
+-   [BILHÃO com \_ DoubleClick](bn-doubleclicked.md)
+-   [BILHÃO \_ HILITE](bn-hilite.md)
+-   [BILHÃO \_ KILLFOCUS](bn-killfocus.md)
+-   [BILHÃO \_ Paint](bn-paint.md)
+-   [BILHÃO \_ enviado por push](bn-pushed.md)
+-   [BILHÃO \_ SETFOCUS](bn-setfocus.md)
+-   [BILHÃO \_ UNHILITE](bn-unhilite.md)
+-   [BILHÃO não \_ enviado por push](bn-unpushed.md)
 -   [NM \_ CUSTOMDRAW (botão)](nm-customdraw-button.md)
--   [**WM \_ CTLCOLORBTN**](wm-ctlcolorbtn.md)
+-   [**CTLCOLORBTN do WM \_**](wm-ctlcolorbtn.md)
 
  
 

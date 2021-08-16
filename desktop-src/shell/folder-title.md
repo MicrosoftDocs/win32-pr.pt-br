@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 8fc66d231d49d724749ae79b248b4dca9d917acc
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a1b449caa1a1447b292a982522e30b9172168f09098d5e4dee0647c0ae6dc14e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104967933"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117860253"
 ---
 # <a name="foldertitle-property"></a>Propriedade Folder. title
 
@@ -48,9 +48,9 @@ Uma cadeia de caracteres que contém o título do objeto.
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo a seguir usa **título** para recuperar o título da pasta que contém os grupos de programas do usuário (geralmente "programas"). O uso adequado é mostrado para JScript, VBScript e Visual Basic.
+O exemplo a seguir usa **título** para recuperar o título da pasta que contém os grupos de programas do usuário (geralmente "programas"). o uso adequado é mostrado para JScript, VBScript e Visual Basic.
 
-JScript
+JScript:
 
 
 ```JScript
@@ -127,7 +127,7 @@ End Sub
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 2000 Professional, \[ somente aplicativos da área de trabalho do Windows XP\]<br/>                                         |
+| Cliente mínimo com suporte<br/> | Windows 2000 Professional, \[ somente aplicativos de área de trabalho do Windows XP\]<br/>                                         |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                           |
 | Cabeçalho<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                           |
 | INSERI<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                         |

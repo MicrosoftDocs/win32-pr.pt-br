@@ -7,12 +7,12 @@ keywords:
 - Enumerando grupos em um AD de domínio
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3586b8c6d261c769cabe56def2aa9396a58fa3a5
-ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.openlocfilehash: 3723122ef2ab70a7396b2b2821c96a20b4d92419c1e10d1c00b11ff903cb6719
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "103640415"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118429842"
 ---
 # <a name="enumerating-groups-in-a-domain"></a>Enumerando grupos em um domínio
 
@@ -37,12 +37,12 @@ Os grupos podem ser colocados em qualquer contêiner ou unidade organizacional (
     > [!Note]  
     > Você pode executar uma pesquisa com uma preferência de pesquisa **de \_ escopo \_ dos ADS** para limitar a pesquisa ao conteúdo direto do objeto de contêiner ao qual você está vinculado.
 
-     
+     
 
     [**IDirectorySearch**](/windows/desktop/api/iads/nn-iads-idirectorysearch) recupera apenas os valores de propriedades específicas de grupos. Para recuperar valores, use **IDirectorySearch**. Para manipular os objetos de grupo retornados de uma pesquisa, ou seja, para usar os métodos [**IADs**](/windows/desktop/api/iads/nn-iads-iads) ou [**IADs**](/windows/desktop/api/iads/nn-iads-iadsgroup) , associe-se explicitamente a eles. Para fazer isso, especifique **distinguishedName** como uma das propriedades a serem retornadas da pesquisa e use os nomes distintos retornados para associar a cada grupo retornado na pesquisa.
 
     Somente propriedades específicas são recuperadas. Não é possível recuperar todos os atributos sem especificar explicitamente todos os atributos possíveis da classe Group.
 
- 
+ 
 
- 
+ 

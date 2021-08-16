@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre: Método EsentStopwatch.Start'
-title: Método EsentStopwatch.Start
+description: 'Saiba mais sobre: método EsentStopwatch. Start'
+title: Método EsentStopwatch. Start
 TOCTitle: 'Start method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentStopwatch.Start
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentstopwatch.start(v=EXCHG.10)
@@ -31,12 +31,12 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118490483"
 ---
-# <a name="esentstopwatchstart-method"></a>Método EsentStopwatch.Start
+# <a name="esentstopwatchstart-method"></a>Método EsentStopwatch. Start
 
-Começa a medir o trabalho do ESENT.
+Começa a medir o trabalho de ESENT.
 
-**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -59,6 +59,6 @@ public void Start()
 
 [Classe EsentStopwatch](./esentstopwatch-class.md)
 
-[Membros EsentStopwatch](./esentstopwatch-members.md)
+[Membros do EsentStopwatch](./esentstopwatch-members.md)
 
-[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)

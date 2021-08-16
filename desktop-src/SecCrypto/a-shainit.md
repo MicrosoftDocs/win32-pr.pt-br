@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - ntdll.dll
-ms.openlocfilehash: 831c86b02c946896014fa9eec02270f2e963e484
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a0081311988a5da0ae5ca21e924305918bb1e713a6cde3be1b77821c9b458cb8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105811062"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117774260"
 ---
 # <a name="a_shainit-function"></a>Uma \_ função SHAInit
 
@@ -52,7 +52,7 @@ Essa função não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-Essa função é muito semelhante a SHAInit, mas é chamada diretamente da biblioteca, em vez de ser roteada pela infraestrutura de criptografia. Para obter mais informações, consulte [provedores do Windows NTCryptographic](/previous-versions/tn-archive/cc723484(v=technet.10)).
+Essa função é muito semelhante a SHAInit, mas é chamada diretamente da biblioteca, em vez de ser roteada pela infraestrutura de criptografia. para obter mais informações, consulte [Windows provedores de NTCryptographic](/previous-versions/tn-archive/cc723484(v=technet.10)).
 
 ## <a name="requirements"></a>Requisitos
 

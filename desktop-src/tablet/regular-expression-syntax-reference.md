@@ -4,12 +4,12 @@ ms.assetid: e3afe735-eca8-4fda-bd5b-cc0ab0b6a872
 title: Referência de sintaxe de expressão regular
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 23c0de50ff37795032719d9bc90ee81891324ba9
-ms.sourcegitcommit: 3bdf30edb314e0fcd17dc4ddbc70e4ec7d3596e6
+ms.openlocfilehash: 33f09bbf81f86e3609f745358f0b18e35cf3f4712f3b1770fb3eb9c8becebc99
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "104172421"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118715526"
 ---
 # <a name="regular-expression-syntax-reference"></a>Referência de sintaxe de expressão regular
 
@@ -39,9 +39,9 @@ Os operadores a seguir são válidos para a criação de expressões regulares p
 
  
 
-A implementação da Microsoft de expressões regulares para reconhecedores de manuscrito permite aplicativos repetidos de operadores unários de sufixo. Por exemplo, a \* \* = (a \* ) \* = a \* , b?? = (b?)? = b?. Eles também permitem repetições não consecutivas, por exemplo: a \* ? \* = ((a \* )?) \* = (a \* ) \* = a \* . Isso é diferente de .NET Framework expressões regulares, que permitem apenas o? operador a ser repetido.
+A implementação da Microsoft de expressões regulares para reconhecedores de manuscrito permite aplicativos repetidos de operadores unários de sufixo. Por exemplo, a \* \* = (a \* ) \* = a \* , b?? = (b?)? = b?. Eles também permitem repetições não consecutivas, por exemplo: a \* ? \* = ((a \* )?) \* = (a \* ) \* = a \* . isso é diferente de .NET Framework expressões regulares, que permitem apenas o? operador a ser repetido.
 
-Outra diferença de .NET Framework expressões regulares é que as expressões regulares manuscritas não dão suporte a uma expressão vazia designada com um par de parênteses vazio, ().
+outra diferença de .NET Framework expressões regulares é que as expressões regulares manuscritas não dão suporte a uma expressão vazia designada com um par de parênteses vazio, ().
 
 > [!Note]  
 > Somente caracteres na página de código 1252 têm suporte para expressões regulares de manuscrito.

@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 8033f02d614ab7e5507c5982168e29d94271b87d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3d130cdfa6188c651c9948cf60af4032d44942aa38b6e3c870834371f6ccc301
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105810417"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118486204"
 ---
 # <a name="jet_dbinfomisctostring-method"></a>JET_DBINFOMISC. Método ToString
 
-Obtém uma representação de cadeia de caracteres deste objeto.
+Obtém uma representação de cadeia de caracteres desse objeto.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -54,17 +54,17 @@ returnValue = instance.ToString()
 public override string ToString()
 ```
 
-#### <a name="return-value"></a>Retornar valor
+#### <a name="return-value"></a>Valor retornado
 
-Tipo: [System. String](/dotnet/api/system.string)  
+Tipo: [System.String](/dotnet/api/system.string)  
 Uma representação de cadeia de caracteres do objeto.  
 
 ## <a name="see-also"></a>Confira também
 
 #### <a name="reference"></a>Referência
 
-[Classe JET_DBINFOMISC](./jet-dbinfomisc-class.md)
+[JET_DBINFOMISC classe](./jet-dbinfomisc-class.md)
 
-[Membros do JET_DBINFOMISC](./jet-dbinfomisc-members.md)
+[JET_DBINFOMISC membros](./jet-dbinfomisc-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)
