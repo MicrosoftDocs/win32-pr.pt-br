@@ -18,7 +18,7 @@ A interface [**IWbemCausalityAccess**](iwbemcausalityaccess.md) expõe os métod
 
 ## <a name="in-this-section"></a>Nesta seção
 
--   [**Método getsolicitid**](iwbemcausalityaccess-getrequestid.md)
+-   [**Método GetRequestId**](iwbemcausalityaccess-getrequestid.md)
 -   [**Método IsChildOf**](iwbemcausalityaccess-ischildof.md)
 
  

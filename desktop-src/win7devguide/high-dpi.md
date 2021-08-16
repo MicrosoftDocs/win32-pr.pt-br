@@ -18,7 +18,7 @@ ms.locfileid: "118203957"
 Windows 7 dá suporte a *exibições de DPI* alta. Os dados de mercado sugerem que as implantações de telas de *alto DPI* (120 a 144 pontos por polegada (dpi)) aumentarão no período Windows 7. Ao executar resoluções nativas nessas telas, muitos aplicativos parecem muito pequenos, a menos que usem *Alto DPI.* Alguns aplicativos (como Windows Internet Explorer) têm recursos de dimensionamento de fontes que permitem aos usuários ampliar e reduzir, mas muitos aplicativos não têm. O *recurso DPI* alto no Windows 7:
 
 -   Garante que as Windows e as experiências do aplicativo sejam ideais no hardware padrão ( as configurações *de DPI* são otimizadas para corresponder aos recursos do hardware).
--   Permite que o shell Windows e outros Windows aplicativos baseados em Windows pareçam bons com diferentes *configurações de DPI.*
+-   Permite que o Windows Shell e outros Windows aplicativos baseados em Windows pareçam bons com diferentes *configurações de DPI.*
 -   Respeita as configurações *de DPI* padrão com base em especificações e funcionalidades de hardware.
 -   Permite que os usuários personalizem *as configurações de DPI* sem reinicializar.
 -   Garante que a tela sempre seja definida como resolução nativa.

@@ -1,9 +1,9 @@
 ---
-title: Mensagem de WM_DDE_UNADVISE (DDE. h)
-description: Um aplicativo cliente troca dinâmica de dados (DDE) posta uma mensagem de aviso de DDE do WM \_ \_ para informar a um aplicativo de servidor DDE que o item especificado ou um formato de área de transferência específico para o item não deve mais ser atualizado.
+title: WM_DDE_UNADVISE mensagem (Dde.h)
+description: Um aplicativo cliente DDE (Dados Dinâmicos Exchange) posta uma mensagem WM \_ DDE UNADVISE para informar a um aplicativo de servidor DDE que o item especificado ou um formato de área de transferência específico para o item não deve mais \_ ser atualizado.
 ms.assetid: 9a5f9a86-e6fa-450e-b8bf-f20042c7e6d1
 keywords:
-- Troca de dados de mensagem WM_DDE_UNADVISE
+- WM_DDE_UNADVISE dados de mensagem Exchange
 topic_type:
 - apiref
 api_name:
@@ -14,18 +14,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dba83badcb689789d2654d99780bcb8cc503511d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 9bbd0ac8e056cc43be764e745f824b50fc90b3cb2f0c50c9061d111fb3bc178d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455676"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117915100"
 ---
-# <a name="wm_dde_unadvise-message"></a>Mensagem de aviso de \_ DDE do WM \_
+# <a name="wm_dde_unadvise-message"></a>Mensagem WM \_ DDE \_ UNADVISE
 
-Um aplicativo cliente troca dinâmica de dados (DDE) posta uma mensagem de **\_ \_ aviso de DDE do WM** para informar a um aplicativo de servidor DDE que o item especificado ou um formato de área de transferência específico para o item não deve mais ser atualizado. Isso encerra o link de dados quente ou ativo para o item especificado.
+Um aplicativo cliente DDE (Dados Dinâmicos Exchange) posta uma mensagem **WM \_ DDE \_ UNADVISE** para informar a um aplicativo de servidor DDE que o item especificado ou um formato de área de transferência específico para o item não deve mais ser atualizado. Isso encerra o link de dados quente ou quente para o item especificado.
 
-Para postar essa mensagem, chame a função [**CreateMessage**](/windows/desktop/api/winuser/nf-winuser-postmessagea) com os parâmetros a seguir.
+Para postar essa mensagem, chame a [**função PostMessage**](/windows/desktop/api/winuser/nf-winuser-postmessagea) com os parâmetros a seguir.
 
 
 ```C++
@@ -41,24 +41,24 @@ Para postar essa mensagem, chame a função [**CreateMessage**](/windows/desktop
 *wParam* 
 </dt> <dd>
 
-Um identificador para a janela do cliente que está enviando a mensagem.
+Um alça para a janela do cliente que envia a mensagem.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-A palavra de ordem inferior Especifica o formato da área de transferência do item para o qual a solicitação de atualização está sendo cancelada. Se isso for **nulo**, todas as conversas de [**\_ \_ aviso DDE**](wm-dde-advise.md) ativos do WM para o item serão encerradas.
+A palavra de ordem baixa especifica o formato da área de transferência do item para o qual a solicitação de atualização está sendo retirada. Se isso for **NULL,** todas [**as conversas ativas DO WM \_ DDE \_ ADVISE**](wm-dde-advise.md) para o item deverão ser encerradas.
 
-A palavra de ordem superior contém um átomo global que identifica o item para o qual a solicitação de atualização está sendo cancelada. Se isso for **nulo**, todos os links de [**\_ \_ aviso DDE**](wm-dde-advise.md) ativos do WM associados à conversa serão encerrados.
+A palavra de ordem alta contém um atom global que identifica o item para o qual a solicitação de atualização está sendo retirada. Se isso for **NULL,** todos os links [**ativos DO WM \_ DDE \_ ADVISE**](wm-dde-advise.md) associados à conversa deverão ser encerrados.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-O aplicativo cliente aloca a palavra de ordem superior do *lParam* chamando a função [**GlobalAddAtom**](/windows/desktop/api/Winbase/nf-winbase-globaladdatoma) .
+O aplicativo cliente aloca a palavra de ordem alta *de lParam* chamando a [**função GlobalAddAtom.**](/windows/desktop/api/Winbase/nf-winbase-globaladdatoma)
 
-O aplicativo de servidor posta a mensagem de [**\_ \_ ACK DDE do WM**](wm-dde-ack.md) para responder positiva ou negativamente. Durante o lançamento do **\_ pacote de \_ ACK do WM DDE**, o servidor pode reutilizar o Atom ou pode excluir o Atom e criar um novo.
+O aplicativo de servidor posta a [**mensagem WM \_ DDE \_ ACK**](wm-dde-ack.md) para responder positiva ou negativamente. Ao postar **o WM \_ DDE \_ ACK**, o servidor pode reutilizar o atom ou pode excluir o atom e criar um novo.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -68,7 +68,7 @@ O aplicativo de servidor posta a mensagem de [**\_ \_ ACK DDE do WM**](wm-dde-ac
 |-------------------------------------|------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                                           |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                 |
-| Cabeçalho<br/>                   | <dl> <dt>DDE. h (incluir Windows. h)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Dde.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -79,7 +79,7 @@ O aplicativo de servidor posta a mensagem de [**\_ \_ ACK DDE do WM**](wm-dde-ac
 **Referência**
 </dt> <dt>
 
-[**GlobalAddAtom**](/windows/desktop/api/Winbase/nf-winbase-globaladdatoma)
+[**Globaladdatom**](/windows/desktop/api/Winbase/nf-winbase-globaladdatoma)
 </dt> <dt>
 
 [**PackDDElParam**](/windows/desktop/api/Dde/nf-dde-packddelparam)
@@ -97,16 +97,16 @@ O aplicativo de servidor posta a mensagem de [**\_ \_ ACK DDE do WM**](wm-dde-ac
 [**UnpackDDElParam**](/windows/desktop/api/Dde/nf-dde-unpackddelparam)
 </dt> <dt>
 
-[**\_ACK de DDE do WM \_**](wm-dde-ack.md)
+[**WM \_ DDE \_ ACK**](wm-dde-ack.md)
 </dt> <dt>
 
-[**\_aviso de DDE do WM \_**](wm-dde-advise.md)
+[**WM \_ DDE \_ ADVISE**](wm-dde-advise.md)
 </dt> <dt>
 
-**Conceitua**
+**Conceitual**
 </dt> <dt>
 
-[Sobre troca dinâmica de dados](about-dynamic-data-exchange.md)
+[Sobre Dados Dinâmicos Exchange](about-dynamic-data-exchange.md)
 </dt> </dl>
 
  

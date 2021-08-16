@@ -1,10 +1,10 @@
 ---
-title: ORPC_DBG_BUFFER estrutura
-description: A estrutura BUFFER DO DBG ORPC é o formato de buffer usado para marshalled de dados RPC para os métodos da \_ \_ interface IOrpcDebugNotify.
+title: Estrutura de ORPC_DBG_BUFFER
+description: A \_ estrutura de \_ buffer DBG ORPC é o formato de buffer usado para dados RPC empacotados para os métodos da interface IOrpcDebugNotify.
 ms.assetid: 444cd3b8-bc7b-425d-9ccc-04fd6c7393b2
 keywords:
-- ORPC_DBG_BUFFER estrutura COM
-- PORPC_DBG_BUFFER ponteiro de estrutura COM
+- COM ORPC_DBG_BUFFER estrutura COM
+- COM ponteiro de estrutura de PORPC_DBG_BUFFER COM
 topic_type:
 - apiref
 api_name:
@@ -22,9 +22,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118310252"
 ---
-# <a name="orpc_dbg_buffer-structure"></a>Estrutura BUFFER DO DBG ORPC \_ \_
+# <a name="orpc_dbg_buffer-structure"></a>\_Estrutura de \_ buffer DBG ORPC
 
-A **estrutura BUFFER DO \_ DBG \_ ORPC** é o formato de buffer usado para marshalled de dados RPC para os métodos da interface [**IOrpcDebugNotify.**](iorpcdebugnotify.md)
+A estrutura de **\_ \_ buffer DBG ORPC** é o formato de buffer usado para dados RPC empacotados para os métodos da interface [**IOrpcDebugNotify**](iorpcdebugnotify.md) .
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -59,14 +59,14 @@ typedef struct _ORPC_DBG_BUFFER {
 **alwaysOrSometimes**
 </dt> <dd>
 
-Um valor que controla a depuração do depurador. **alwaysOrSometimes** pode ser um dos seguintes valores:
+Um valor que controla a geração do depurador. **alwaysOrSometimes** pode ser um dos seguintes valores:
 
 
 
 | Valor                                                                                                                                                                                                                                                                   | Significado                                                                                                                                                                                                                                        |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="ORPC_DEBUG_ALWAYS"></span><span id="orpc_debug_always"></span><dl> <dt>**ORPC \_ DEPURAR \_ SEMPRE**</dt> <dt>0X00000000</dt> </dl>                              | Se definido, o COM sempre aumentará a notificação do cliente ou do servidor no receptor.<br/>                                                                                                                                                    |
-| <span id="ORPC_DEBUG_IF_HOOK_ENABLED"></span><span id="orpc_debug_if_hook_enabled"></span><dl> <dt>**ORPC \_ DEPURAR \_ SE O GANCHO ESTIVER HABILITADO \_ \_ 0X00000001**</dt> <dt></dt> </dl> | Se definido, o COM só aciona a notificação do cliente ou do servidor no receptor se a depuração COM tiver sido habilitada chamando [**DllDebugObjectRPCHook**](dlldebugobjectrpchook.md) nesse processo com **fTrace** definido como **TRUE.** <br/> |
+| <span id="ORPC_DEBUG_ALWAYS"></span><span id="orpc_debug_always"></span><dl> <dt>**ORPC \_ Depurar \_ sempre**</dt> <dt>0x00000000</dt> </dl>                              | Se definido, COM sempre gerará a notificação de cliente ou servidor no receptor.<br/>                                                                                                                                                    |
+| <span id="ORPC_DEBUG_IF_HOOK_ENABLED"></span><span id="orpc_debug_if_hook_enabled"></span><dl> <dt>**ORPC \_ Depurar \_ se o \_ gancho estiver \_ habilitado**</dt> <dt>0x00000001</dt> </dl> | Se definido, COM irá gerar apenas a notificação de cliente ou servidor no receptor se a depuração COM tiver sido habilitada chamando [**DllDebugObjectRPCHook**](dlldebugobjectrpchook.md) nesse processo com **FTrace** definido como **true**. <br/> |
 
 
 
@@ -81,7 +81,7 @@ O número de versão principal da especificação de formato de dados.
 
 </dd> <dt>
 
-**Verminor**
+**verMinor**
 </dt> <dd>
 
 O número de versão secundária da especificação de formato de dados.
@@ -91,21 +91,21 @@ O número de versão secundária da especificação de formato de dados.
 **cbRemaining**
 </dt> <dd>
 
-O número de bytes, inclusive **cbRemaining,** que segue nesta estrutura.
+O número de bytes, inclusive de **cbRemaining**, que seguem nessa estrutura.
 
 </dd> <dt>
 
 **guidSemantic**
 </dt> <dd>
 
-Um GUID que determina quais membros da união estão presentes abaixo. **guidSemantic** pode usar um dos seguintes valores:
+Um GUID que determina quais membros da União estão presentes abaixo. **guidSemantic** pode usar um dos seguintes valores:
 
 
 
 | Valor                                                                                                           | Significado                                                                                                                                                                                      |
 |-----------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>9CADE560-8F43-101A-B07B-00DD01113F11</dt> </dl> | Determina se uma única ida e volta deve ser executada pelo depurador. Somente o **membro fStopOnOtherSide** da união está presente abaixo.<br/>                                             |
-| <dl> <dt>D62AEDFA-57EA-11ce-A964-00AA006C3706</dt> </dl> | Determina se dados com marshaling de RPC e opcodes de depuração são passados para o receptor. Todos os membros da união estão presentes abaixo, com exceção de **fStopOnOtherSide**.<br/> |
+| <dl> <dt>9CADE560-8F43-101A-B07B-00DD01113F11</dt> </dl> | Determina se a depuração única deve ser executada pelo depurador. Somente o membro **fStopOnOtherSide** da União está presente abaixo.<br/>                                             |
+| <dl> <dt>D62AEDFA-57EA-11ce-A964-00AA006C3706</dt> </dl> | Determina se os dados marshalled de RPC e os opcodes de depuração são passados para o receptor. Todos os membros da União estão presentes abaixo, com exceção de **fStopOnOtherSide**.<br/> |
 
 
 
@@ -116,21 +116,21 @@ Um GUID que determina quais membros da união estão presentes abaixo. **guidSem
 **fStopOnOtherSide**
 </dt> <dd>
 
-Se **TRUE**, uma única etapa será executada pelo depurador e deverá sair do servidor e continuar a execução depois que o outro lado for atingido. Caso contrário, uma única execução não será executada e a execução do depurador será interrompida no outro lado.
+Se for **true**, a depuração única será executada pelo depurador e ele deverá sair do servidor e continuar a execução quando o outro lado for atingido. Caso contrário, a depuração única não será executada e a execução do depurador será interrompida no outro lado.
 
 </dd> <dt>
 
 **wDebuggingOpCode**
 </dt> <dd>
 
-Um valor que permite que uma de uma série de operações seja especificada. **wDebuggingOpCode** pode usar um dos seguintes valores:
+Um valor que permite a especificação de uma série de operações. **wDebuggingOpCode** pode usar um dos seguintes valores:
 
 
 
 | Valor                                                                             | Significado                                                                                              |
 |-----------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------|
 | <dl> <dt>0x0000</dt> </dl> | Sem operação.<br/>                                                                             |
-| <dl> <dt>0x0001</dt> </dl> | Se definido, a semântica de etapa única será idêntica a **fStopOnOtherSide** quando definida como **TRUE.**<br/> |
+| <dl> <dt>0x0001</dt> </dl> | Se definido, a semântica de etapa única será idêntica a **fStopOnOtherSide** quando definida como **true**.<br/> |
 
 
 
@@ -141,28 +141,28 @@ Um valor que permite que uma de uma série de operações seja especificada. **w
 **cExtent**
 </dt> <dd>
 
-Preenchimento. Não use.
+Margem. Não use.
 
 </dd> <dt>
 
 **padding**
 </dt> <dd>
 
-Preenchimento. Não use.
+Margem. Não use.
 
 </dd> <dt>
 
-**Cb**
+**CB**
 </dt> <dd>
 
-O tamanho, em bytes dos dados em **rgbData.**
+O tamanho, em bytes, dos dados em **rgbData**.
 
 </dd> <dt>
 
 **guidExtent**
 </dt> <dd>
 
-Um **GUID** que determina o tipo de dados em **rgbData.** **guidExtent** pode usar um dos seguintes valores:
+Um **GUID** que determina o tipo de dados em **rgbData**. **guidExtent** pode usar um dos seguintes valores:
 
 
 
@@ -179,13 +179,13 @@ Um **GUID** que determina o tipo de dados em **rgbData.** **guidExtent** pode us
 **rgbData**
 </dt> <dd>
 
-Um buffer **BYTE** usado para passar dados COM com marshaled de RPC entre os depurador de cliente e servidor. O conteúdo de **rgbData** é determinado pelo **GUID** em **guidExtent.**
+Um buffer de **bytes** usado para passar dados com marshalled de RPC entre os depuradores de cliente e de servidor. O conteúdo de **rgbData** é determinado pelo **GUID** em **guidExtent**.
 
 
 
-| Valor guidExtent                     | rgbData contents                                                                                                                                                                                                                                    |
+| Valor de guidExtent                     | conteúdo do rgbData                                                                                                                                                                                                                                    |
 |--------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 53199051-57EB-11ce-A964-00AA006C3706 | Um ponteiro de interface marshalled que resulta da chamada [**a CoMarshalInterface**](/windows/desktop/api/combaseapi/nf-combaseapi-comarshalinterface). O ponteiro marshalled é convertido em seu ponteiro de interface correspondente usando [**CoUnmarshalInterface**](/windows/desktop/api/combaseapi/nf-combaseapi-counmarshalinterface). |
+| 53199051-57EB-11ce-A964-00AA006C3706 | Um ponteiro de interface marshalled que resulta da chamada de [**CoMarshalInterface**](/windows/desktop/api/combaseapi/nf-combaseapi-comarshalinterface). O ponteiro marshalled é convertido em seu ponteiro de interface correspondente usando [**CoUnmarshalInterface**](/windows/desktop/api/combaseapi/nf-combaseapi-counmarshalinterface). |
 
 
 
@@ -195,7 +195,7 @@ Um buffer **BYTE** usado para passar dados COM com marshaled de RPC entre os dep
 
 ## <a name="remarks"></a>Comentários
 
-Os membros dessa estrutura têm alinhamento de 1 byte e são sempre transmitidos em ordem de byte little-endian.
+Esses membros dessa estrutura têm um alinhamento de 1 byte e sempre são transmitidos em ordem de byte little-endian.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -213,10 +213,10 @@ Os membros dessa estrutura têm alinhamento de 1 byte e são sempre transmitidos
 
 <dl> <dt>
 
-[**ORPC \_ DBG \_ ALL**](orpc-dbg-all.md)
+[**ORPC \_ DBG \_ All**](orpc-dbg-all.md)
 </dt> <dt>
 
-[**ORPC \_ INIT \_ ARGS**](orpc-init-args.md)
+[**\_argumentos de inicialização ORPC \_**](orpc-init-args.md)
 </dt> <dt>
 
 [**DllDebugObjectRPCHook**](dlldebugobjectrpchook.md)

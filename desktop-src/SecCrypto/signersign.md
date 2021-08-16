@@ -13,19 +13,19 @@ api_type:
 - DllExport
 api_location:
 - Mssign32.dll
-ms.openlocfilehash: 9aa8ecc15e38c4a502b363898d5845cba5b0e47e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d9756fba3a931ddf09715b5086e613a9395c10c57c82fa18c64007aeb02b615c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105788100"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117973130"
 ---
 # <a name="signersign-function"></a>Função SignerSign
 
-A função **SignerSign** assina o arquivo especificado.
+A **função SignerSign** assina o arquivo especificado.
 
 > [!Note]  
-> Esta função não tem nenhum arquivo de cabeçalho ou biblioteca de importação associado. Para chamar essa função, você deve criar um arquivo de cabeçalho definido pelo usuário e usar as funções [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) para vincular dinamicamente a Mssign32.dll.
+> Essa função não tem nenhum arquivo de header associado ou biblioteca de importação. Para chamar essa função, você deve criar um arquivo de título definido pelo usuário e usar as funções [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) para vincular dinamicamente a Mssign32.dll.
 
  
 
@@ -50,62 +50,62 @@ HRESULT WINAPI SignerSign(
 
 <dl> <dt>
 
-*pSubjectInfo* \[ no\]
+*pSubjectInfo* \[ Em\]
 </dt> <dd>
 
-Um ponteiro para uma estrutura de [**\_ \_ informações de assunto de assinante**](signer-subject-info.md) que especifica o assunto a ser assinado.
+Um ponteiro para uma estrutura [**SIGNER \_ SUBJECT \_ INFO**](signer-subject-info.md) que especifica o assunto a ser assinar.
 
 </dd> <dt>
 
-*pSignerCert* \[ no\]
+*pSignerCert* \[ Em\]
 </dt> <dd>
 
-Um ponteiro para uma estrutura de [**\_ certificado de signatário**](signer-cert.md) que especifica o certificado a ser usado para criar a assinatura digital.
+Um ponteiro para uma [**estrutura \_ SIGNER CERT**](signer-cert.md) que especifica o certificado a ser usado para criar a assinatura digital.
 
 </dd> <dt>
 
-*pSignatureInfo* \[ no\]
+*pSignatureInfo* \[ Em\]
 </dt> <dd>
 
-Um ponteiro para uma estrutura de [**\_ \_ informações de assinatura de assinante**](signer-signature-info.md) que contém informações sobre a assinatura digital.
+Um ponteiro para uma estrutura [**DE INFORMAÇÕES DE ASSINATURA \_ \_ DO SIGNER**](signer-signature-info.md) que contém informações sobre a assinatura digital.
 
 </dd> <dt>
 
-*pProviderInfo* \[ em, opcional\]
+*pProviderInfo* \[ in, opcional\]
 </dt> <dd>
 
-Um ponteiro para uma estrutura de [**\_ \_ informações do provedor de assinante**](signer-provider-info.md) que especifica o CSP ( [*provedor de serviços de criptografia*](../secgloss/c-gly.md) ) e as informações de [*chave privada*](../secgloss/p-gly.md) usadas para criar a assinatura digital.
+Um ponteiro para uma estrutura [**SIGNER \_ PROVIDER \_ INFO**](signer-provider-info.md) que especifica o CSP [*(provedor*](../secgloss/c-gly.md) de serviços de criptografia) e as informações de chave [*privada*](../secgloss/p-gly.md) usadas para criar a assinatura digital.
 
-Se o valor desse parâmetro for **nulo**, o valor do parâmetro *pSignerCert* deverá especificar um certificado associado a um CSP.
+Se o valor desse parâmetro for **NULL,** o valor do parâmetro *pSignerCert* deverá especificar um certificado associado a um CSP.
 
 </dd> <dt>
 
-*pwszHttpTimeStamp* \[ em, opcional\]
+*pwszHttpTimeStamp* \[ in, opcional\]
 </dt> <dd>
 
 A URL de um servidor de carimbo de data/hora.
 
 </dd> <dt>
 
-*psRequest* \[ em, opcional\]
+*psRequest* \[ in, opcional\]
 </dt> <dd>
 
-Um ponteiro para uma matriz de estruturas de [**\_ atributo cript**](/windows/desktop/api/Wincrypt/ns-wincrypt-crypt_attribute) -las que são adicionadas a uma solicitação de assinatura. Esse parâmetro será ignorado se o parâmetro *pwszHttpTimeStamp* não contiver um valor válido que não seja **nulo**.
+Um ponteiro para uma matriz de [**estruturas CRYPT \_ ATTRIBUTE**](/windows/desktop/api/Wincrypt/ns-wincrypt-crypt_attribute) que são adicionadas a uma solicitação de sinalização. Esse parâmetro será ignorado se *o parâmetro pwszHttpTimeStamp* não tiver um valor válido que não seja **NULL.**
 
 </dd> <dt>
 
-*pSipData* \[ em, opcional\]
+*pSipData* \[ in, opcional\]
 </dt> <dd>
 
-Um valor de 32 bits que é passado como dados adicionais para funções SIP. O formato e o conteúdo deste são definidos pelo provedor SIP.
+Um valor de 32 bits que é passado como dados adicionais para funções SIP. O formato e o conteúdo disso são definidos pelo provedor SIP.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Se a função for realizada com sucesso, a função retornará S \_ OK.
+Se a função for bem-sucedida, a função retornará S \_ OK.
 
-Se a função falhar, ela retornará um valor **HRESULT** que indica o erro. Para obter uma lista de códigos de erro comuns, consulte [valores comuns de HRESULT](common-hresult-values.md).
+Se a função falhar, ela retornará um **valor HRESULT** que indica o erro. Para ver uma lista de códigos de erro comuns, consulte [Valores comuns de HRESULT.](common-hresult-values.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -113,8 +113,8 @@ Se a função falhar, ela retornará um valor **HRESULT** que indica o erro. Par
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                                             |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                    |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho XP\]<br/>                                             |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                    |
 | DLL<br/>                      | <dl> <dt>Mssign32.dll</dt> </dl> |
 
 

@@ -1,6 +1,6 @@
 ---
-title: Referência (OLE e Transferência de Dados)
-description: Os seguintes elementos de programação são usados para implementar documentos compostos e realizar a transferência de dados entre aplicativos.
+title: Referência (OLE e transferência de dados)
+description: Os elementos de programação a seguir são usados para implementar documentos compostos e executar a transferência de dados entre aplicativos.
 ms.assetid: 980a3298-1ecc-4ddc-8020-5b6b7202a1e7
 ms.topic: article
 ms.date: 05/31/2018
@@ -11,9 +11,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118309902"
 ---
-# <a name="reference-ole-and-data-transfer"></a>Referência (OLE e Transferência de Dados)
+# <a name="reference-ole-and-data-transfer"></a>Referência (OLE e transferência de dados)
 
-Os seguintes elementos de programação são usados para implementar documentos compostos e realizar a transferência de dados entre aplicativos.
+Os elementos de programação a seguir são usados para implementar documentos compostos e executar a transferência de dados entre aplicativos.
 
 -   [Constantes](constants-odt.md)
 -   [Enumerações](enumerations-odt.md)

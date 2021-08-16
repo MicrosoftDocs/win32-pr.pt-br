@@ -4,12 +4,12 @@ description: Continua a execução condicionalmente no início do loop atual.
 ms.assetid: 1A5B1951-CE1E-479C-AE0F-FC5FB93E0DE9
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d480d8828f8f68af1f6a2ff4f52224041d5241df
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: d909c199dc0ceaa4e5498429f1ac3a136d3fb75d930e392d7f6fd8230e5b49b6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104967104"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117909053"
 ---
 # <a name="continuec-sm4---asm"></a>continuec (sm4-ASM)
 

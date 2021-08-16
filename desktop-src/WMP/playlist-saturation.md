@@ -1,9 +1,9 @@
 ---
-title: PLAYLIST. saturação
-description: O atributo saturação especifica ou recupera o valor de saturação das imagens suspensas.
+title: PLAYLIST.saturação
+description: O atributo de saturação especifica ou recupera o valor de saturação das imagens listadas.
 ms.assetid: 4c5dd3d9-828a-45c9-896a-9a702d354544
 keywords:
-- Windows Media Player de PLAYLIST. saturação
+- PLAYLIST.s saturação Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -19,9 +19,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118336532"
 ---
-# <a name="playlistsaturation"></a>PLAYLIST. saturação
+# <a name="playlistsaturation"></a>PLAYLIST.saturação
 
-O atributo **saturação** especifica ou recupera o valor de saturação das imagens suspensas.
+O **atributo de** saturação especifica ou recupera o valor de saturação das imagens listadas.
 
 ``` syntax
         elementID.saturation
@@ -29,11 +29,11 @@ O atributo **saturação** especifica ou recupera o valor de saturação das ima
 
 ## <a name="possible-values"></a>Valores possíveis
 
-Esse atributo é um **número** de leitura/gravação (**float**) com um valor que varia de 0,0 a 2,0 com um valor padrão de 1,0.
+Esse atributo é um número de leitura/gravação **(** **float**) com um valor que varia de 0,0 a 2,0 com um valor padrão de 1,0.
 
 ## <a name="remarks"></a>Comentários
 
-Esse atributo altera o valor de saturação das imagens especificadas pelos atributos **dropDownBackgroundImage** e **dropDownImage** se eles tiverem sido especificados e se referirem a imagens bmp de 8 bits.
+Esse atributo altera o valor de saturação das imagens especificadas pelos atributos **dropDownBackgroundImage** e **dropDownImage** se elas foram especificadas e se referem a imagens BMP de 8 bits.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -41,7 +41,7 @@ Esse atributo altera o valor de saturação das imagens especificadas pelos atri
 
 | Requisito | Valor |
 |--------------------|---------------------------------------------------|
-| Versão<br/> | Windows Media Player 9 Series ou posterior<br/> |
+| Versão<br/> | Windows Media Player série 9 ou posterior<br/> |
 
 
 
@@ -52,13 +52,13 @@ Esse atributo altera o valor de saturação das imagens especificadas pelos atri
 [**Elemento PLAYLIST**](playlist-element.md)
 </dt> <dt>
 
-[**PLAYLIST. dropDownBackgroundImage**](playlist-dropdownbackgroundimage.md)
+[**PLAYLIST.dropDownBackgroundImage**](playlist-dropdownbackgroundimage.md)
 </dt> <dt>
 
-[**PLAYLIST. dropDownImage**](playlist-dropdownimage.md)
+[**PLAYLIST.dropDownImage**](playlist-dropdownimage.md)
 </dt> <dt>
 
-[**PLAYLIST. hueShift**](playlist-hueshift.md)
+[**PLAYLIST.hueShift**](playlist-hueshift.md)
 </dt> </dl>
 
  

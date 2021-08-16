@@ -7,12 +7,12 @@ keywords:
 - nomes de exibição de classe anúncios, ícones
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 691d4ef22babeded12ec9b951f92247df99521b6
-ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.openlocfilehash: efe3548daa223cdfa05dee8ec3df8f2f8bc800c5ba7449920744de1a67ac8745
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "103917146"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118022597"
 ---
 # <a name="class-icons"></a>Ícones de classe
 
@@ -51,6 +51,6 @@ Para adicionar um valor ao atributo **iconPath** , execute as etapas a seguir.
 3.  Para adicionar o novo valor, use o método [**IADs::P utex**](/windows/desktop/api/iads/nf-iads-iads-putex) com o parâmetro *lnControlCode* definido como **propriedade \_ de \_ acréscimo do ADS**.
 4.  Para confirmar as alterações no diretório, chame [**IADs:: setinfo**](/windows/desktop/api/iads/nf-iads-iads-setinfo).
 
- 
+ 
 
- 
+ 

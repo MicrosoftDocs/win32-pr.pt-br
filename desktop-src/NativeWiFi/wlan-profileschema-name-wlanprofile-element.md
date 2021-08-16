@@ -12,12 +12,12 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: 79174d1cb24fff1841b3022fa06e201794415ce5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6a6d19c043f7cc2e42ca8221e98b05e4afe7628b143bd572465f00e1d3652275
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104502234"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117984109"
 ---
 # <a name="name-wlanprofile-element"></a>Elemento Name (WLANProfile)
 
@@ -35,9 +35,9 @@ O elemento **Name** é definido pelo elemento [**WLANProfile**](wlan-profilesche
 
 Os nomes diferenciam maiúsculas de minúsculas.
 
-Para o Windows XP com Service Pack 3 (SP3) e a API de LAN sem fio para Windows XP com Service Pack 2 (SP2), o elemento Name é ignorado quando o perfil é salvo no repositório de perfis. O nome do perfil é derivado do SSID da rede. Para perfis de rede de infraestrutura, o nome do perfil é o SSID da rede. Para perfis de rede ad hoc, o nome do perfil é o SSID da rede ad hoc seguida por `-adhoc` . Os caracteres de escape XML, como &, não são exibidos. Evite usar caracteres de escape XML em nomes SSID para perfis implantados no Windows XP com SP3 ou API de LAN sem fio para Windows XP com SP2.
+para Windows xp com service pack 3 (SP3) e API de LAN sem fio para Windows XP com service pack 2 (SP2), o elemento name é ignorado quando o perfil é salvo no repositório de perfis. O nome do perfil é derivado do SSID da rede. Para perfis de rede de infraestrutura, o nome do perfil é o SSID da rede. Para perfis de rede ad hoc, o nome do perfil é o SSID da rede ad hoc seguida por `-adhoc` . Os caracteres de escape XML, como &, não são exibidos. evite usar caracteres de escape XML em nomes SSID para perfis implantados no Windows xp com SP3 ou API de LAN sem fio para Windows XP com SP2.
 
-Para qualquer perfil de rede destinado a uso somente no Windows Vista ou no Windows Server 2008, o nome pode ser qualquer cadeia de caracteres.
+para qualquer perfil de rede destinado a uso somente no Windows Vista ou no Windows Server 2008, o nome pode ser qualquer cadeia de caracteres.
 
 ## <a name="examples"></a>Exemplos
 
@@ -49,8 +49,8 @@ Para exibir perfis de exemplo que usam o elemento **Name** , consulte [amostras 
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Somente Windows Vista, Windows XP com \[ aplicativos de área de trabalho do SP3\]<br/> |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                |
+| Cliente mínimo com suporte<br/> | Windows Vista, somente Windows XP com \[ aplicativos de área de trabalho do SP3\]<br/> |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                |
 | Redistribuível<br/>          | API de LAN sem fio para Windows XP com SP2<br/>                 |
 
 

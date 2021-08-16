@@ -13,7 +13,7 @@ ms.locfileid: "118307586"
 ---
 # <a name="com-transactions-tasks"></a>Tarefas de transações COM+
 
-Embora o processamento automático de transações no COM+ permita que você gaste um tempo de desenvolvimento mais produtivo na criação e configuração de objetos que você deseja participar de transações automáticas, há algumas tarefas de programação que você pode executar para personalizar o comportamento da transação para os requisitos do aplicativo.
+Embora o processamento automático de transações no COM+ permita que você gaste mais tempo de desenvolvimento produtivo na criação e configuração de objetos que você deseja participar de transações automáticas, há algumas tarefas de programação que você pode executar para adaptar o comportamento da transação aos seus requisitos de aplicativo.
 
 Os tópicos a seguir discutem opções de programação específicas relacionadas ao processamento de transações.
 
@@ -21,18 +21,18 @@ Os tópicos a seguir discutem opções de programação específicas relacionada
 
 | Tópico                                                                                             | Descrição                                                                                        |
 |---------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------|
-| [Configurando o atributo de transação](setting-the-transaction-attribute.md)<br/>             | Descreve como definir valores de atributo de transação para seus objetos de transação.<br/>         |
-| [Configurar o nível de isolamento da transação](setting-the-transaction-isolation-level.md)<br/> | Descreve como definir os níveis de isolamento da transação para seus objetos de transação.<br/>     |
-| [Definindo o tempo limite da transação](setting-the-transaction-time-out.md)<br/>               | Descreve como definir intervalos de tempo limite para suas transações.<br/>                          |
-| [Definindo os sinalizadores consistentes e concluídos](setting-the-consistent-and-done-flags.md)<br/>     | Mostra como usar os sinalizadores consistentes e concluídos para controlar o resultado de uma transação.<br/> |
-| [Criando objetos BYOT](creating-byot-objects.md)<br/>                                     | Descreve como criar objetos para que você possa trazer sua própria transação (BYOT).<br/>           |
+| [Definindo o atributo transaction](setting-the-transaction-attribute.md)<br/>             | Descreve como definir valores de atributo de transação para seus objetos de transação.<br/>         |
+| [Configurar o nível de isolamento da transação](setting-the-transaction-isolation-level.md)<br/> | Descreve como definir os níveis de isolamento de transação para seus objetos de transação.<br/>     |
+| [Definindo o tempo de vida da transação](setting-the-transaction-time-out.md)<br/>               | Descreve como definir intervalos de tempo-out para suas transações.<br/>                          |
+| [Definindo os sinalizadores consistentes e feitos](setting-the-consistent-and-done-flags.md)<br/>     | Mostra como usar os sinalizadores consistentes e feitos para controlar o resultado de uma transação.<br/> |
+| [Criando objetos BYOT](creating-byot-objects.md)<br/>                                     | Descreve como criar objetos para que você possa criar sua própria transação (BYOT).<br/>           |
 
 
 
  
 
 > [!Note]  
-> Como regra geral, qualquer componente que atualize o estado persistente deve dar suporte a transações. Os componentes que combinam as operações de dois ou mais objetos em uma única tarefa devem usar transações para simplificar a recuperação de erros. Além disso, para liberar recursos, como conexões de banco de dados, as transações em COM+ devem ser tão curtas quanto você pode fazer.
+> Como regra geral, qualquer componente que atualize o estado persistente deve dar suporte a transações. Componentes que combinam as operações de dois ou mais objetos em uma única tarefa devem usar transações para simplificar a recuperação de erros. Além disso, para liberar recursos, como conexões de banco de dados, as transações no COM+ devem ser tão curtas quanto você pode torná-las.
 
  
 

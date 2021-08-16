@@ -1,19 +1,19 @@
 ---
 title: Estruturas de administração do servidor RAS
-description: Para o Windows NT 4,0, use as seguintes estruturas para implementar a funcionalidade de administração do servidor RAS.
+description: para Windows NT 4,0, use as seguintes estruturas para implementar a funcionalidade de administração do servidor RAS.
 ms.assetid: b04bef8c-a83e-4c6e-849e-feeca99699e8
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3b7e3337a1126d8a485b4880452be60d7304ea1d
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: a1f290769760eecd7bc08785a96c868b8c9fb46857ce0fd01c06f156bf14656a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104005793"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117789263"
 ---
 # <a name="ras-server-administration-structures"></a>Estruturas de administração do servidor RAS
 
-Para o Windows NT 4,0, use as seguintes estruturas para implementar a funcionalidade de administração do servidor RAS. O Windows 95 não fornece suporte ao servidor RAS. Para o Windows 2000, Windows Server 2003 e sistemas operacionais posteriores, use a [referência de administração do serviço de acesso remoto](remote-access-service-administration-reference.md).
+para Windows NT 4,0, use as seguintes estruturas para implementar a funcionalidade de administração do servidor RAS. Windows 95 não fornece suporte ao servidor RAS. para Windows 2000, Windows Server 2003 e sistemas operacionais posteriores, use a [referência de administração do serviço de acesso remoto](remote-access-service-administration-reference.md).
 
 -   [**parâmetros de RAS \_**](ras-parameters-str.md)
 -   [**\_Porta RAS \_ 0**](ras-port-0-str.md)
@@ -30,9 +30,9 @@ Para o Windows NT 4,0, use as seguintes estruturas para implementar a funcionali
 -   [**Usuário do RAS \_ \_ 0**](ras-user-0-str.md)
 -   [**mensagem de segurança \_**](/windows/desktop/api/Rasshost/ns-rasshost-security_message)
 
- 
+ 
 
- 
+ 
 
 
 

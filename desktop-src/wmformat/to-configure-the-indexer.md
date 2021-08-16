@@ -3,18 +3,18 @@ title: Para configurar o indexador
 description: Para configurar o indexador
 ms.assetid: 0e28e8dd-1586-45e6-8a08-5245d465d068
 keywords:
-- SDK do Windows Media Format, configurando indexadores
+- Windows SDK do formato de mídia, configurando indexadores
 - ASF (Advanced Systems Format), configurando indexadores
 - ASF (formato de sistemas avançados), configurando indexadores
 - índices, configurando indexadores
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 618316e22b13ca05ff0fc1bbfb6b4583e79ca858
-ms.sourcegitcommit: 48d1c892045445bcbd0f22bafa2fd3861ffaa6e7
+ms.openlocfilehash: da5a624a4ed9ae749559a1908e3809500bf8aece2b29b8ad406769c5f639e547
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "104365595"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117845621"
 ---
 # <a name="to-configure-the-indexer"></a>Para configurar o indexador
 
@@ -67,7 +67,7 @@ pMyIndexer = NULL;
 > [!Note]  
 > O tipo de índice padrão é WMT \_ ele \_ mais próximo do ponto de \_ limpeza \_ . Embora você possa definir o tipo de índice para outros valores, isso diminuirá o desempenho de busca.
 
- 
+ 
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -85,9 +85,9 @@ pMyIndexer = NULL;
 [**Trabalhando com índices**](working-with-indexes.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

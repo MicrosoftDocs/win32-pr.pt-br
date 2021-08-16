@@ -1,8 +1,8 @@
 ---
 title: palavra-chave sh_semaphore
-description: A \_ palavra-chave \ sh Semaphore \ especifica que o objeto do sistema é um identificador para um semáforo.
+description: A \_ palavra-chave \ sh semáforo\ especifica que o objeto do sistema é um identificador para um semáforo.
 keywords:
-- MIDL de palavra-chave sh_semaphore
+- sh_semaphore palavra-chave MIDL
 topic_type:
 - apiref
 api_name:
@@ -18,9 +18,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118383216"
 ---
-# <a name="sh_semaphore-keyword"></a>SH \_ palavra-chave Semaphore
+# <a name="sh_semaphore-keyword"></a>\_Palavra-chave de semáforo sh
 
-A palavra-chave **sh \_ Semaphore** especifica que um `system_handle` contém um identificador para um semáforo.
+A **\_ palavra-chave sh semáforo** especifica que um `system_handle` mantém um alça para um semáforo.
 
 ``` syntax
 [system_handle(sh_semaphore)]
@@ -30,13 +30,13 @@ A palavra-chave **sh \_ Semaphore** especifica que um `system_handle` contém um
 
 ## <a name="parameters"></a>Parâmetros
 
-Essa palavra-chave é um parâmetro para [**system_handle**](system-handle.md).
+Essa palavra-chave é um parâmetro [**para system_handle**](system-handle.md).
 
-A documentação [**system_handle**](system-handle.md) também contém detalhes sobre o uso opcional do parâmetro *Access-Rights* . O comportamento padrão é de acordo com as `DUPLICATE_SAME_ACCESS` especificações de [função **DuplicateHandle**](/windows/win32/api/handleapi/nf-handleapi-duplicatehandle) .
+A [**system_handle**](system-handle.md) também contém detalhes sobre o uso opcional do *parâmetro access-rights.* O comportamento padrão é `DUPLICATE_SAME_ACCESS` de acordo com as [especificações de função **DuplicateHandle.**](/windows/win32/api/handleapi/nf-handleapi-duplicatehandle)
 
 ## <a name="remarks"></a>Comentários
 
-Para usar essa palavra-chave com o `system_handle` atributo, o `-target` sinalizador deve ser definido como `NT100` (ou superior) durante a execução de midl.exe.
+Para usar essa palavra-chave com o `system_handle` atributo , o sinalizador deve ser definido como `-target` `NT100` (ou superior) ao executar midl.exe.
 
 ## <a name="examples"></a>Exemplos
 
@@ -51,7 +51,7 @@ interface MyInterface : IUnknown
 
 | &nbsp; | &nbsp; |
 |-|-|
-| Cliente mínimo com suporte | Windows 10 Atualização de aniversário (versão 1607, Build 14393) |
+| Cliente mínimo com suporte | Windows 10 Atualização de aniversário (versão 1607, build 14393) |
 | Servidor mínimo com suporte | Windows Server 2016 (build 14393) |
 
 ## <a name="see-also"></a>Confira também
@@ -64,11 +64,11 @@ interface MyInterface : IUnknown
 [Objetos de semáforo](../sync/semaphore-objects.md)
 </dt> <dt>
 
-[Segurança do objeto de sincronização e direitos de acesso](../sync/synchronization-object-security-and-access-rights.md)
+[Segurança de objeto de sincronização e direitos de acesso](../sync/synchronization-object-security-and-access-rights.md)
 </dt> <dt>
 
-[Função **CreateSemaphore**](/windows/win32/api/winbase/nf-winbase-createsemaphorea)
+[**Função CreateSemaphore**](/windows/win32/api/winbase/nf-winbase-createsemaphorea)
 </dt> <dt>
 
-[Função **CreateSemaphoreEx**](/windows/win32/api/winbase/nf-winbase-createsemaphoreexa)
+[**Função CreateSemaphoreEx**](/windows/win32/api/winbase/nf-winbase-createsemaphoreexa)
 </dt> </dl>

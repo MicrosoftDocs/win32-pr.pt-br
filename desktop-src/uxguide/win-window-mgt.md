@@ -4,34 +4,34 @@ description: Este artigo aborda o posicionamento padrão do Windows quando inici
 ms.assetid: d81bd71c-6d8f-45a9-82cb-bdb9b8bcbb11
 ms.topic: article
 ms.date: 10/20/2020
-ms.openlocfilehash: dc194741713a139f643ad84b829294577d020d94
-ms.sourcegitcommit: 3bdf30edb314e0fcd17dc4ddbc70e4ec7d3596e6
+ms.openlocfilehash: b8dc2858b0e3cc3b2a451210a61315c610afc727ac42156d5c4fc5c112135807
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "103930068"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118212088"
 ---
 # <a name="window-management"></a>Gerenciamento de janela
 
 > [!NOTE]
-> Este guia de design foi criado para o Windows 7 e não foi atualizado para versões mais recentes do Windows. Grande parte da orientação ainda se aplica em princípio, mas a apresentação e os exemplos não refletem nossas [diretrizes de design atuais](/windows/uwp/design/).
+> este guia de design foi criado para o Windows 7 e não foi atualizado para versões mais recentes do Windows. Grande parte da orientação ainda se aplica em princípio, mas a apresentação e os exemplos não refletem nossas [diretrizes de design atuais](/windows/uwp/design/).
 
 Este artigo aborda o posicionamento padrão do Windows quando inicialmente exibido na tela, sua ordem de empilhamento relativa a outras janelas ([ordem Z](glossary.md)), seu tamanho inicial e como a exibição afeta o foco de entrada.
 
 Para as seguintes diretrizes:
 
--   Uma janela de nível superior não tem nenhuma janela proprietário e é exibida na barra de tarefas. Exemplos: janelas de aplicativo. No Windows Vista e versões posteriores, as caixas de diálogo sem janelas de proprietário e folhas de propriedades também são consideradas de nível superior.
+-   Uma janela de nível superior não tem nenhuma janela proprietário e é exibida na barra de tarefas. Exemplos: janelas de aplicativo. no Windows Vista e versões posteriores, as caixas de diálogo sem janelas proprietárias e folhas de propriedades também são consideradas de nível superior.
 -   Uma janela de propriedade tem uma janela de proprietário e não é exibida na barra de tarefas. Exemplos: caixas de diálogo modais, caixas de diálogo sem janela restrita.
 -   Uma janela iniciada pelo usuário é exibida como o resultado direto da ação de um usuário. Caso contrário, o programa será iniciado se for iniciado por um programa ou iniciado pelo sistema se for iniciado pelo Microsoft Windows. Por exemplo, uma caixa de diálogo opções é iniciada pelo usuário, mas um lembrete de reunião é iniciado pelo programa.
 -   Uma janela contextual é uma janela iniciada pelo usuário que tem uma relação forte com o objeto do qual ele foi iniciado. Por exemplo, as janelas exibidas por menus de contexto ou ícones da área de notificação são contextuais, mas as janelas exibidas pelas barras de menus não são.
 -   O monitor ativo é o monitor em que o programa ativo está em execução.
--   O monitor padrão é aquele com o menu Iniciar, a barra de tarefas e a área de notificação.
+-   o monitor padrão é aquele com o menu Iniciar, a barra de tarefas e a área de notificação.
 
 ## <a name="design-concepts"></a>Conceitos de design
 
-O gerenciamento de janelas é uma das atividades de usuário mais fundamentais. Antes do Windows Vista, as janelas geralmente eram dadas com tamanhos padrão pequenos e são colocadas no meio da tela. Essa abordagem funciona bem para monitores mais antigos de baixa resolução, mas não para um hardware de vídeo moderno.
+O gerenciamento de janelas é uma das atividades de usuário mais fundamentais. antes do Windows Vista, as janelas geralmente eram dadas com tamanhos padrão pequenos e são colocadas no meio da tela. Essa abordagem funciona bem para monitores mais antigos de baixa resolução, mas não para um hardware de vídeo moderno.
 
-O Windows foi projetado para dar suporte a hardware de vídeo moderno, que geralmente é executado em resoluções significativamente mais altas do que a resolução mínima de tela com suporte e pode ter vários monitores. Fazendo isso:
+o Windows foi projetado para dar suporte a hardware de vídeo moderno, que geralmente é executado em resoluções significativamente mais altas do que a resolução mínima de tela com suporte e pode ter vários monitores. Fazendo isso:
 
 -   Permite que os usuários se beneficiem totalmente do hardware avançado.
 -   Requer menos esforço de usuários para mover o mouse para distâncias maiores.
@@ -39,9 +39,9 @@ O Windows foi projetado para dar suporte a hardware de vídeo moderno, que geral
 
 ### <a name="the-minimum-supported-screen-resolution"></a>A resolução mínima de tela com suporte
 
-A resolução mínima de [tela efetiva](glossary.md) com suporte do Windows é de 800x600 pixels. Isso significa que as janelas de tamanho fixo devem ser exibidas totalmente na resolução mínima (enquanto reserva espaço para a barra de tarefas), mas as janelas redimensionáveis podem ser otimizadas para uma resolução efetiva de 1024x768 pixels, contanto que estejam funcionais na resolução mínima.
+a resolução mínima de [tela efetiva](glossary.md) com suporte pelo Windows é de 800x600 pixels. Isso significa que as janelas de tamanho fixo devem ser exibidas totalmente na resolução mínima (enquanto reserva espaço para a barra de tarefas), mas as janelas redimensionáveis podem ser otimizadas para uma resolução efetiva de 1024x768 pixels, contanto que estejam funcionais na resolução mínima.
 
-Embora atualmente as resoluções de tela física mais comuns para computadores Windows sejam de 1024x768 pixels ou mais, o direcionamento a 800x600 pixels permite que o Windows:
+embora atualmente as resoluções de tela física mais comuns para computadores Windows sejam de 1024x768 pixels ou mais, o destino de 800x600 pixels permite que Windows:
 
 -   Trabalhe bem com todos os hardwares modernos, incluindo pequenos PCs notebooks.
 -   Suporte para configurações de dpi alta (pontos por polegada).
@@ -50,13 +50,13 @@ Embora atualmente as resoluções de tela física mais comuns para computadores 
 
 A escolha da resolução mínima para dar suporte requer um desequilíbrio correto. Direcionar uma resolução mais alta resultaria em uma experiência de qualidade inferior para um percentual significativo de hardware moderno, enquanto direcionar a uma resolução mais baixa impediria que os designers aproveitassem totalmente o espaço da tela disponível.
 
-Se você acredita que os usuários de destino estão usando resoluções significativamente mais altas do que o mínimo do Windows, você pode criar seu programa para aproveitar ao máximo o espaço da tela extra usando janelas redimensionáveis que são bem dimensionadas.
+se você acredita que os usuários de destino estão usando resoluções significativamente mais altas do que o Windows mínimo, você pode criar seu programa para aproveitar ao máximo o espaço de tela extra usando janelas redimensionáveis que são bem dimensionadas.
 
 ## <a name="guidelines"></a>Diretrizes
 
 ### <a name="general"></a>Geral
 
--   **Suporte à resolução mínima efetiva do Windows de 800x600 pixels.** Para interfaces de usuário críticas (UIs) que devem funcionar no modo de segurança, dê suporte a uma resolução efetiva de 640x480 pixels. Certifique-se de considerar o espaço usado pela barra de tarefas reservando 48 [pixels relativos](glossary.md) verticais para o Windows exibido com a barra de tarefas.
+-   **suporte à resolução mínima Windows efetiva de 800x600 pixels.** Para interfaces de usuário críticas (UIs) que devem funcionar no modo de segurança, dê suporte a uma resolução efetiva de 640x480 pixels. Certifique-se de considerar o espaço usado pela barra de tarefas reservando 48 [pixels relativos](glossary.md) verticais para o Windows exibido com a barra de tarefas.
 -   **Otimize layouts de janela redimensionáveis para uma resolução efetiva de 1024x768 pixels.** Redimensione automaticamente essas janelas para resoluções de tela mais baixa de uma maneira que ainda está funcional.
 -   **Certifique-se de testar suas janelas em 96 DPI (100%) a 800x600 pixels, 120 DPI (125 por cento) a 1024x768 pixels e 144 DPI (150 por cento) em 1200x900 pixels.** Verifique se há problemas de layout, como recorte de controles, texto e janelas, e alargamento de ícones e bitmaps.
 -   **Para programas com cenários de uso móvel e de toque, otimize para 120 dpi.** As telas de alto dpi atualmente são predominantes em PCs móveis e de toque.
@@ -69,7 +69,7 @@ Se você acredita que os usuários de destino estão usando resoluções signifi
 
 Use os controles da barra de título da seguinte maneira:
 
--   **Inclui.** Todas as janelas primárias e secundárias com um quadro de janela padrão devem ter um botão fechar na barra de título. Clicar em fechar tem o efeito de cancelar ou fechar a janela.
+-   **Fechar.** Todas as janelas primárias e secundárias com um quadro de janela padrão devem ter um botão fechar na barra de título. Clicar em fechar tem o efeito de cancelar ou fechar a janela.
 
 ![captura de tela de caixa de diálogo sem botão fechar ](images/win-window-mgt-image1.png)
 
@@ -81,7 +81,7 @@ Neste exemplo, a caixa de diálogo não tem um botão fechar na barra de título
 ### <a name="window-size"></a>Tamanho da janela
 
 -   **Escolha um tamanho de janela padrão apropriado para seu conteúdo.** Não tenha medo de usar tamanhos de janela iniciais maiores se você puder usar o espaço com eficiência.
--   **Use janelas redimensionáveis sempre que for prático para evitar barras de rolagem e dados truncados.** O Windows com conteúdo dinâmico e lista se beneficia mais das janelas redimensionáveis.
+-   **Use janelas redimensionáveis sempre que for prático para evitar barras de rolagem e dados truncados.** Windows com conteúdo dinâmico e listas se beneficiam mais das janelas redimensionáveis.
 -   **Para documentos de texto, considere um comprimento máximo de linha de 65 caracteres** para facilitar a leitura do texto. (Os caracteres incluem letras, pontuação e espaços.)
 -   Janelas de tamanho fixo:
     -   **Deve ser totalmente visível e dimensionada para se ajustar na área de trabalho.**
@@ -94,7 +94,7 @@ Neste exemplo, a caixa de diálogo não tem um botão fechar na barra de título
 
 ![captura de tela dos botões do Media Player ](images/win-window-mgt-image2.png)
 
-Neste exemplo, o Windows Media Player altera seu formato quando a janela se torna muito pequena para o formato padrão.
+neste exemplo, Windows Media Player altera seu formato quando a janela se torna muito pequena para o formato padrão.
 
 ### <a name="window-location"></a>Localização da janela
 
@@ -110,19 +110,19 @@ Neste exemplo, o Windows Media Player altera seu formato quando a janela se torn
 
     ![figura da janela contextual posicionada à direita do objeto ](images/win-window-mgt-image4.png)
 
-    Mostrar janelas contextuais próximo ao objeto do qual ele foi iniciado.
+    Mostrar janelas contextuais perto do objeto do qual ele foi lançado.
 
-    ![figura da janela área de notificação ](images/win-window-mgt-image5.png)
+    ![figura da janela da área de notificação ](images/win-window-mgt-image5.png)
 
-    As janelas iniciadas nos ícones da área de notificação são exibidas próximo à área de notificação.
+    Windows ícones de área de notificação são exibidos próximos à área de notificação.
 
--   Se for exibido usando uma caneta, quando possível, coloque-a para que ela não seja coberta pela mão do usuário. Para usuários da mão direita, exiba à esquerda; caso contrário, exiba à direita.
+-   Se exibido usando uma caneta, quando possível, coloque-a para não ser coberta pela mão do usuário. Para usuários de direita, exibir à esquerda; caso contrário, será exibido à direita.
 
-    ![figura da janela contextual posicionada à esquerda do objeto ](images/win-window-mgt-image6.png)
+    ![figura da janela contextual colocada à esquerda do objeto ](images/win-window-mgt-image6.png)
 
-    Ao usar uma caneta, também mostrar janelas contextuais para que elas não sejam cobertas pela mão do usuário.
+    Ao usar uma caneta, também mostre janelas contextuais para que elas não sejam cobertas pela mão do usuário.
 
--   **Desenvolvedores:** Você pode distinguir entre eventos de mouse e eventos de caneta usando a API [GetMessageExtraInfo](../tablet/system-events-and-mouse-messages.md) . Você pode determinar a [destro/canhoto](/previous-versions/ms819495(v=msdn.10)) do usuário usando a API [SystemParametersInfo](/windows/win32/api/winuser/nf-winuser-systemparametersinfoa) com SPI \_ GETMENUDROPALIGNMENT.
+-   **Desenvolvedores:** Você pode distinguir entre eventos do mouse e eventos de caneta usando a API [GetMessageExtraInfo.](../tablet/system-events-and-mouse-messages.md) Você pode determinar a entrega [do](/previous-versions/ms819495(v=msdn.10)) usuário usando a API [SystemParametersInfo](/windows/win32/api/winuser/nf-winuser-systemparametersinfoa) com SPI \_ GETMENUDROPALIGNMENT.
 -   **Coloque as caixas de diálogo de progresso fora do caminho no canto inferior direito do monitor ativo.**
 
     ![figura da barra de progresso no canto inferior direito ](images/win-window-mgt-image7.png)
@@ -130,59 +130,59 @@ Neste exemplo, o Windows Media Player altera seu formato quando a janela se torn
     Coloque as caixas de diálogo de progresso no canto inferior direito.
 
 -   **Se uma janela não estiver relacionada ao contexto atual ou à ação do usuário, coloque-a fora do local do ponteiro atual.** Isso impede a interação acidental.
--   **Se uma janela for um aplicativo ou documento de nível superior, sempre propagará sua origem no canto superior esquerdo do monitor.** Se criado pelo programa ativo, use o monitor ativo; caso contrário, use o monitor padrão.
+-   **Se uma janela for um aplicativo ou documento de nível superior, sempre em cascata sua origem no canto superior esquerdo do monitor.** Se criado pelo programa ativo, use o monitor ativo; caso contrário, use o monitor padrão.
 
-    ![Figura de três janelas em cascata do canto superior esquerdo ](images/win-window-mgt-image8.png)
+    ![figura de três janelas em cascata no canto superior esquerdo ](images/win-window-mgt-image8.png)
 
-    Propagar o aplicativo de nível superior ou janelas de documentos no canto superior esquerdo do monitor.
+    Janelas de documento ou aplicativo de nível superior em cascata no canto superior esquerdo do monitor.
 
--   **Se uma janela for um utilitário de nível superior, sempre a exibirá "centralizado" no monitor.** Se criado pelo programa ativo, use o monitor ativo; caso contrário, use o monitor padrão.
+-   **Se uma janela for um utilitário de nível superior, sempre a exibirá "centralizada" no monitor.** Se criado pelo programa ativo, use o monitor ativo; caso contrário, use o monitor padrão.
 
     ![figura da janela do utilitário centralizada no monitor ](images/win-window-mgt-image9.png)
 
-    Centralizar as janelas do utilitário de nível superior.
+    Janelas do utilitário de nível superior central.
 
--   **Se uma janela for uma janela de propriedade, você a exibirá inicialmente "centralizado" na janela do proprietário.** Para exibição subsequente, considere exibi-lo em seu último local (relativo à janela do proprietário) se isso for mais conveniente.
+-   **Se uma janela for uma janela de propriedade, inicialmente a exibirá "centralizada" na parte superior da janela do proprietário.** Para exibição subsequente, considere exibi-lo em seu último local (em relação à janela do proprietário) se for provável que isso seja mais conveniente.
 
     ![figura da janela de propriedade centralizada na janela do proprietário ](images/win-window-mgt-image10.png)
 
-    Inicialmente, centralizar as janelas de propriedade na parte superior da janela do proprietário.
+    Inicialmente, o centro das janelas de propriedade na parte superior da janela do proprietário.
 
--   **Para caixas de diálogo sem janela restrita, sempre exibir inicialmente na parte superior da janela do proprietário para facilitar a localização.** No entanto, se o usuário ativar a janela do proprietário, isso poderá obscurecer a caixa de diálogo sem janela restrita.
+-   **Para caixas de diálogo sem modo, sempre exibe inicialmente na parte superior da janela do proprietário para torná-las fáceis de encontrar.** No entanto, se o usuário ativar a janela do proprietário, isso poderá obscurecer a caixa de diálogo sem modo.
 
-    ![figura da caixa de diálogo sem janela restrita sobre o proprietário ](images/win-window-mgt-image11.png)
+    ![figura da caixa de diálogo sem modo sobre a janela do proprietário ](images/win-window-mgt-image11.png)
 
-    Exibir caixas de diálogo sem janela restrita inicialmente na parte superior do proprietário para facilitar a localização.
+    Exibir caixas de diálogo sem modo inicialmente na parte superior da janela do proprietário para torná-las fáceis de encontrar.
 
--   **Se necessário, ajuste o local inicial para que toda a janela fique visível no monitor de destino.** Se uma janela redimensionável for maior do que o monitor de destino, reduza-a para caber.
+-   **Se necessário, ajuste o local inicial para que toda a janela seja visível no monitor de destino.** Se uma janela resizável for maior que o monitor de destino, reduza-a para se ajustar.
 
 ### <a name="window-order-z-order"></a>Ordem da janela (ordem Z)
 
--   **Sempre coloque as janelas de propriedade na parte superior da janela do seu proprietário.** Nunca coloque as janelas de propriedade em suas janelas de proprietário, porque os usuários provavelmente não as verão.
--   **Respeitar a seleção de ordem Z dos usuários. Quando os usuários selecionam uma janela, trazem apenas as janelas associadas a essa instância do programa (a janela mais qualquer proprietário ou Windows de propriedade) à parte superior da ordem Z.** Não altere a ordem de nenhuma outra janela, como instâncias independentes do mesmo programa.
+-   **Sempre coloque as janelas de propriedade na parte superior da janela do proprietário.** Nunca coloque janelas de propriedade em suas janelas de proprietário, porque os usuários mais prováveis não as verão.
+-   **Respeitar a seleção de pedido Z dos usuários. Quando os usuários selecionam uma janela, traga apenas as janelas associadas a essa instância do programa (a janela mais qualquer janela proprietária ou de propriedade) para o topo do pedido Z.** Não altere a ordem de nenhuma outra janela, como instâncias independentes do mesmo programa.
 
 ### <a name="window-activation"></a>Ativação de janela
 
--   **Respeitar a seleção de estado da janela dos usuários. Se uma janela existente precisar de atenção, atualize o botão da barra de tarefas três vezes para chamar a atenção e deixá-la realçada, mas não faça mais nada.** Não restaure ou ative a janela. Não use nenhum efeito de som. Em vez disso, permita que os usuários ativem a janela quando estiverem prontos.
-    -   **Exceção:** Se a janela não aparecer na barra de tarefas, coloque-a na parte superior de todas as outras janelas e pisque sua barra de título.
--   **A restauração de uma janela primária também deve restaurar todas as suas janelas secundárias**, mesmo que essas janelas secundárias tenham seu próprio botão de barra de tarefas. Ao restaurar, coloque as janelas secundárias na parte superior da janela principal.
+-   **Respeitar a seleção de estado da janela dos usuários. Se uma janela existente precisar de atenção, piscar o botão da barra de tarefas três vezes para chamar a atenção e deixá-la realçada, mas não faça mais nada.** Não restaure nem ative a janela. Não use nenhum efeito de som. Em vez disso, permitir que os usuários ativem a janela quando eles estão prontos.
+    -   **Exceção:** Se a janela não aparecer na barra de tarefas, leve-a para a parte superior de todas as outras janelas e flashe sua barra de título.
+-   **A restauração de uma janela primária também deve restaurar todas** as janelas secundárias, mesmo que essas janelas secundárias tenham seu próprio botão de barra de tarefas. Ao restaurar, coloque janelas secundárias sobre a janela primária.
 
 ### <a name="input-focus"></a>Foco de entrada
 
--   **As janelas exibidas por ações iniciadas pelo usuário devem ter o foco de entrada, mas somente se a janela for renderizada imediatamente** (dentro de 5 segundos). Depois que a janela é renderizada, ela pode assumir o foco de entrada uma vez.
-    -   Se uma janela renderiza lentamente (mais de 5 segundos), é provável que os usuários executem outra tarefa enquanto esperam. Focalizar nesse ponto seria um aborrecimento, especialmente se feito mais de uma vez.
--   **As janelas que não são exibidas imediatamente ou exibidas por uma ação iniciada pelo sistema não devem ter o foco de entrada.** Em vez disso, exiba na parte superior sem foco e permita que os usuários os ativem quando estiverem prontos.
-    -   **Exceção:** Gerenciador de credenciais.
+-   **Windows exibidas por ações** iniciadas pelo usuário devem ter o foco de entrada, mas somente se a janela for renderizada imediatamente (dentro de 5 segundos). Depois que a janela é renderizada, ela pode usar o foco de entrada uma vez.
+    -   Se uma janela renderizar lentamente (mais de 5 segundos), os usuários provavelmente executarão outra tarefa enquanto aguardam. Focar-se neste ponto seria uma desremissão, especialmente se fosse feito mais de uma vez.
+-   **Windows que não são exibidos ou exibidos imediatamente por uma ação iniciada pelo sistema não devem ter o foco de entrada.** Em vez disso, exibir na parte superior sem foco e permitir que os usuários os ativem quando eles estão prontos.
+    -   **Exceção:** Gerenciador de Credenciais.
 
 ### <a name="persistence"></a>Persistência
 
--   **Quando uma janela for reexibida, considere exibi-la no mesmo estado que o último acessado.** Ao fechar, salve o monitor usado, o tamanho da janela, o local e o estado (maximizado versus restauração). Ao Reexibir, restaure o tamanho, o local e o estado da janela salvo usando o monitor apropriado. Além disso, considere fazer esses atributos persistirem em instâncias de programa por usuário. **Exceção**
-    -   Não salve ou faça com que esses atributos persistam para o Windows quando seu uso for, de modo que os usuários têm a probabilidade muito mais desejados de iniciar completamente.
-    -   Para os programas que provavelmente serão usados em computadores com tecnologia Windows Tablet e Touch, salve dois Estados do Windows para os modos paisagem e retrato. Para obter mais informações, consulte [projetando para tamanhos de exibição diferentes](/previous-versions/windows/desktop/ms695587(v=vs.85)).
--   **Se a configuração atual do monitor impedir a exibição de uma janela usando seu último Estado:**
+-   **Quando uma janela for replayada, considere exibi-la no mesmo estado que o último acesso.** Ao fechar, salve o monitor usado, o tamanho da janela, o local e o estado (maximizada versus restauração). Ao repetir, restaure o tamanho da janela salvo, o local e o estado usando o monitor apropriado. Além disso, considere fazer com que esses atributos persistam entre instâncias do programa por usuário. **Exceções:**
+    -   Não salve nem faça com que esses atributos persistam para janelas quando seu uso for de tal forma que os usuários têm muito mais probabilidade de querer começar completamente.
+    -   Para programas que provavelmente serão usados em computadores Tecnologia Windows Tablet and Touch, salve dois estados de janela para modos paisagem e retrato. Para obter mais informações, consulte [Projetando para tamanhos de exibição variados.](/previous-versions/windows/desktop/ms695587(v=vs.85))
+-   **Se a configuração atual do monitor impedir a exibição de uma janela usando seu último estado:**
     -   Tente exibir a janela usando seu último monitor.
-    -   Se a janela for maior do que o monitor, redimensione a janela conforme necessário.
-    -   Mova o local para o canto superior esquerdo para caber no monitor, conforme necessário.
+    -   Se a janela for maior que o monitor, reesize a janela conforme necessário.
+    -   Mova o local para o canto superior esquerdo para caber dentro do monitor, conforme necessário.
     -   Se as etapas acima não resolverem o problema, reverta para as diretrizes de posicionamento de janela padrão. Considere restaurar o tamanho anterior, se possível.
 
  

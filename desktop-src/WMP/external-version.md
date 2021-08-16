@@ -3,7 +3,7 @@ title: Versão externa.
 description: Observação Este tópico descreve a funcionalidade projetada para uso por lojas online. Não há suporte para o uso dessa funcionalidade fora do contexto de uma loja online. A Propriedade Version recupera a versão atual do Windows Media Player. | Versão externa.
 ms.assetid: c6747a33-d62c-44e3-98b5-1d74607b998d
 keywords:
-- Windows Media Player externo. versão
+- Windows Media Player de versão externa
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2a8a4de5ba5fa521841a5c2de90b9ae39e7aa86d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 0d50a7c21efa758f60aa70a6ac54d884768b3863f6de3b253843232fbbafe623
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105800131"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118339187"
 ---
 # <a name="externalversion"></a>Versão externa.
 

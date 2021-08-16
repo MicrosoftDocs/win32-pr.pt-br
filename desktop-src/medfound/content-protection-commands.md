@@ -4,12 +4,12 @@ ms.assetid: 86be7dcf-7b7b-455a-a6ac-8a82b34fdafc
 title: Comandos de Proteção de Conteúdo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 876c2f02ab99894444ee30c92dd78b299eeaf898
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c985e58566ff2aec7a2dfe5744c9708878a9e5aabee3e4d604f543e35b295be0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103646605"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117880391"
 ---
 # <a name="content-protection-commands"></a>Comandos de Proteção de Conteúdo
 

@@ -1,9 +1,9 @@
 ---
-title: Atributo Count
-description: O atributo Count é o número de itens na playlist.
+title: Atributo de contagem
+description: O atributo Count é o número de itens na lista de reprodução.
 ms.assetid: 33d2a7a6-ad87-4794-8008-d235b3827081
 keywords:
-- Atributo Count Windows Media Player
+- Windows Media Player de atributo de contagem
 topic_type:
 - apiref
 api_name:
@@ -19,9 +19,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118341650"
 ---
-# <a name="count-attribute"></a>Atributo Count
+# <a name="count-attribute"></a>Atributo de contagem
 
-O **atributo Count** é o número de itens na playlist.
+O atributo **Count** é o número de itens na lista de reprodução.
 
 ## <a name="applies-to"></a>Aplica-se A
 
@@ -29,7 +29,7 @@ O **atributo Count** é o número de itens na playlist.
 
 ## <a name="remarks"></a>Comentários
 
-Para determinar se você pode alterar o valor desse atributo, use o [método Media.isReadOnlyItem.](media-isreadonlyitem.md)
+Para determinar se você pode alterar o valor desse atributo, use o método [Media. isReadOnlyItem](media-isreadonlyitem.md) .
 
 ## <a name="requirements"></a>Requisitos
 

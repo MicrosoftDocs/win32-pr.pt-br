@@ -1,7 +1,7 @@
 ---
 description: Exclui todos os perfis de verificação disponíveis para o usuário no sistema em que seu aplicativo está sendo executado.
 ms.assetid: 1a79fd0e-1309-4fc4-863f-6dfb20594d91
-title: Método IScanProfileMgr::D eleteAllProfilesForUser (Scanprofilemgr.h)
+title: 'IScanProfileMgr: método eleteAllProfilesForUser de:D (Scanprofilemgr. h)'
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -20,7 +20,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118209096"
 ---
-# <a name="iscanprofilemgrdeleteallprofilesforuser-method"></a>Método IScanProfileMgr::D eleteAllProfilesForUser
+# <a name="iscanprofilemgrdeleteallprofilesforuser-method"></a>IScanProfileMgr: método eleteAllProfilesForUser de:D
 
 Exclui todos os perfis de verificação disponíveis para o usuário no sistema em que seu aplicativo está sendo executado.
 
@@ -41,7 +41,7 @@ Esse método não tem parâmetros.
 
 Tipo: **HRESULT**
 
-Se esse método for bem-sucedido, ele **retornará S \_ OK.** Caso contrário, ele retornará um **código de erro HRESULT.**
+Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
 
 ## <a name="requirements"></a>Requisitos
 
@@ -49,10 +49,10 @@ Se esse método for bem-sucedido, ele **retornará S \_ OK.** Caso contrário, e
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                              |
-| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                        |
-| parâmetro<br/>                   | <dl> <dt>Scanprofilemgr.h</dt> </dl> |
-| Idl<br/>                      | <dl> <dt>Scanprofiles.idl</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                              |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                        |
+| Cabeçalho<br/>                   | <dl> <dt>Scanprofilemgr. h</dt> </dl> |
+| INSERI<br/>                      | <dl> <dt>Scanprofiles. idl</dt> </dl> |
 
 
 
@@ -63,7 +63,7 @@ Se esse método for bem-sucedido, ele **retornará S \_ OK.** Caso contrário, e
 [**IScanProfileMgr**](-wia-iscanprofilemgr.md)
 </dt> <dt>
 
-[Esquema de perfil de verificação](-wia-scan-profile-schema.md)
+[Esquema do perfil de verificação](-wia-scan-profile-schema.md)
 </dt> </dl>
 
  

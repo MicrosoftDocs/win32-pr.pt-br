@@ -53,7 +53,7 @@ O valor que você passa usando *ClosedCaption.* **SAMILang** deve corresponder a
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo JScript a seguir *usa ClosedCaption*. **SAMILang em** um elemento HTML SELECT para especificar a linguagem de legenda fechada. O **objeto** Player foi criado com ID = "Player".
+O exemplo JScript a seguir usa *ClosedCaption*. **SAMILang em** um elemento HTML SELECT para especificar a linguagem de legenda fechada. O **objeto** Player foi criado com ID = "Player".
 
 
 ```JScript

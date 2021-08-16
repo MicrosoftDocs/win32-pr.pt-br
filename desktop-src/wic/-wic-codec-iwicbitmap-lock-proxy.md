@@ -1,7 +1,7 @@
 ---
-description: Função de proxy para o método Lock.
+description: Função proxy para o método Lock.
 ms.assetid: c9d67b35-092b-4f0b-a292-879576a046bf
-title: Função IWICBitmap_Lock_Proxy
+title: IWICBitmap_Lock_Proxy função
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - Windowscodecs.dll
 - Wincodec.lib
-ms.openlocfilehash: cf07a0afc0fbd2629ffe54b543271014d5817d71
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 98415428a020129d884a036fab121511e489ec96af3a5606e25283dfec69c21d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105810191"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118207227"
 ---
-# <a name="iwicbitmap_lock_proxy-function"></a>Função de proxy de \_ bloqueio IWICBitmap \_
+# <a name="iwicbitmap_lock_proxy-function"></a>Função proxy de bloqueio IWICBitmap \_ \_
 
-Função de proxy para o método [**Lock**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmap-lock) .
+Função proxy para o [**método Lock.**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmap-lock)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -43,25 +43,25 @@ HRESULT IWICBitmap_Lock_Proxy(
 
 <dl> <dt>
 
-*Isso \_ PTR* \[\]
+*ESTE \_ PTR* \[ em\]
 </dt> <dd>
 
-Tipo: **[**IWICBitmap**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmap) \** _
+Tipo: **[ **IWICBitmap**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmap)\***
 
-Ponteiro para este objeto [_ *IWICBitmap* *](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmap) .
+Ponteiro para este [**objeto IWICBitmap.**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmap)
 
 </dd> <dt>
 
-*prcLock* \[ no\]
+*prcLock* \[ Em\]
 </dt> <dd>
 
-Tipo: **const [**WICRect**](/windows/desktop/api/Wincodec/ns-wincodec-wicrect) \** _
+Tipo: **const [**WICRect**](/windows/desktop/api/Wincodec/ns-wincodec-wicrect) \***
 
 O retângulo a ser acessado.
 
 </dd> <dt>
 
-_flags * \[ in\]
+*sinalizadores* \[ Em\]
 </dt> <dd>
 
 Tipo: **DWORD**
@@ -70,20 +70,20 @@ O modo de acesso que você deseja obter para o bloqueio.
 
 </dd> <dt>
 
-*ppILock* \[ fora\]
+*ppILock* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **IWICBitmapLock**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmaplock)\*\***
 
-Um ponteiro que recebe o local da memória bloqueada.
+Um ponteiro que recebe o local de memória bloqueada.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **HRESULT**
 
-Se essa função for bem sucedido, ela retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
+Se essa função for bem-sucedida, ela retornará **S \_ OK.** Caso contrário, ele retornará um **código de erro HRESULT.**
 
 ## <a name="remarks"></a>Comentários
 
@@ -93,9 +93,9 @@ Se essa função for bem sucedido, ela retornará **S \_ OK**. Caso contrário, 
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows XP com SP2, \[ somente aplicativos da área de trabalho do Windows Vista\]<br/>                                                                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                                                                                             |
-| DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec. lib</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows XP com SP2, Windows aplicativos da área de trabalho do Vista \[\]<br/>                                                                                              |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                                                                                             |
+| DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec.lib</dt> </dl> |
 
 
 

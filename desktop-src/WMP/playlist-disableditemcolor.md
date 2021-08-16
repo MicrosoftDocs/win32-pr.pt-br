@@ -29,7 +29,7 @@ O **atributo disabledItemColor** especifica ou recupera a cor de uma faixa de CD
 
 ## <a name="possible-values"></a>Valores possíveis
 
-Esse atributo é uma cadeia de **caracteres** de leitura/gravação que contém qualquer valor de Internet Explorer da Microsoft. Ele tem um valor padrão de "graytext".
+Esse atributo é uma cadeia de **caracteres** de leitura/gravação que contém qualquer valor de cor Internet Explorer Microsoft. Ele tem um valor padrão de "graytext".
 
 ## <a name="requirements"></a>Requisitos
 

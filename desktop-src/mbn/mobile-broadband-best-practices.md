@@ -4,12 +4,12 @@ ms.assetid: 523e3ea4-1d4e-45d1-bc24-93aa2fb14390
 title: Práticas recomendadas da API de banda larga móvel
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 399c2ebc40a357eac9686bc3c2c9f471e3b853f8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e3a6c1e236a61dd2a5321be2edb7a68156f904605bd8a1da5fc169ea8b70e464
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104164578"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117881650"
 ---
 # <a name="mobile-broadband-api-best-practices"></a>Práticas recomendadas da API de banda larga móvel
 
@@ -124,7 +124,7 @@ int main()
 
 Siga e manipule todas as notificações, mesmo que elas não sejam disparadas pelo seu aplicativo. Isso é necessário para manter a interface do usuário em sincronia com o estado real do dispositivo.
 
-Pode haver mais de um Gerenciador de conexões em execução em um computador. O modo de exibição nativo da interface de rede disponível fornecida pelo Windows 7 é um Gerenciador de conexões. Quaisquer outros gerenciadores de conexões precisam responder a todas as notificações para permanecerem em sincronia com a interface do usuário nativa do Windows. Um usuário pode optar por executar alguma operação em um dos gerenciadores de conexões, o que pode resultar em uma alteração de estado do dispositivo de banda larga móvel. No entanto, outros gerenciadores de conexões precisam permanecer atualizados para indicar corretamente o estado modificado do dispositivo.
+Pode haver mais de um Gerenciador de conexões em execução em um computador. a interface do usuário da interface de rede disponível fornecida pelo Windows 7 é um gerenciador de conexões. quaisquer outros gerenciadores de conexões precisam responder a todas as notificações para permanecerem em sincronia com a interface do usuário nativa Windows. Um usuário pode optar por executar alguma operação em um dos gerenciadores de conexões, o que pode resultar em uma alteração de estado do dispositivo de banda larga móvel. No entanto, outros gerenciadores de conexões precisam permanecer atualizados para indicar corretamente o estado modificado do dispositivo.
 
 Por exemplo, a execução de uma conexão usando um dos gerenciadores de conexões alterará o estado do dispositivo de disponível para conectado. Essa alteração deve ser visível para os gerenciadores de conexões que não iniciaram essa ação. Todos os gerenciadores de conexões que têm a interface do usuário que indica o estado de conexão do dispositivo, precisam escutar e manipular as notificações de estado da conexão para atualizar corretamente sua interface do usuário.
 

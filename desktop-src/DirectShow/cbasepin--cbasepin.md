@@ -1,7 +1,7 @@
 ---
-description: CBasePin. ~ CBasePin destruidor-método Destruitor.
+description: Destruidor CBasePin.~CBasePin – método destruidor.
 ms.assetid: b903bec6-e944-48bb-aa0c-7072a843a9cd
-title: CBasePin. ~ CBasePin Destruitor (Amfilter. h)
+title: Destruidor CBasePin.~CBasePin (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,18 +16,18 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 6a6bd7219ba57c5c885e8123b181f899dc96e5d3
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: c9b6bb746c97a754f25e6cf15c705c7ad21ce8a3a78ec854857426aaf5ee891c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108099494"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117823365"
 ---
-# <a name="cbasepincbasepin-destructor"></a>Destruidor CBasePin. ~ CBasePin
+# <a name="cbasepincbasepin-destructor"></a>Destruidor CBasePin.~CBasePin
 
 Método destruidor.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -42,12 +42,12 @@ Método destruidor.
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Amfilter. h (incluir fluxos. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Amfilter.h (incluir Fluxos.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

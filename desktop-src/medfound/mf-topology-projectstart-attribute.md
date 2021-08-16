@@ -1,35 +1,35 @@
 ---
-description: Especifica a hora de parada de uma topologia, em relação ao início da primeira topologia na sequência.
+description: Especifica o tempo de parada de uma topologia, em relação ao início da primeira topologia na sequência.
 ms.assetid: 7669f97e-87ad-4a64-a2a5-62b8ce450d80
-title: Atributo MF_TOPOLOGY_PROJECTSTART (Mfidl. h)
+title: MF_TOPOLOGY_PROJECTSTART atributo (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 34a7e3d50bd89e0fdfc032f9854c1a183276f04a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f295f68b3ac94bf29fa4607eb2b5ba00ea8eab19774bcaa0af150ef6d3fbe1f4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103827620"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117875403"
 ---
-# <a name="mf_topology_projectstart-attribute"></a>\_Atributo PROJECTSTART da topologia MF \_
+# <a name="mf_topology_projectstart-attribute"></a>Atributo MF \_ TOPOLOGY \_ PROJECTSTART
 
-Especifica a hora de parada de uma topologia, em relação ao início da primeira topologia na sequência.
+Especifica o tempo de parada de uma topologia, em relação ao início da primeira topologia na sequência.
 
 ## <a name="data-type"></a>Tipo de dados
 
 **UINT64**
 
-Tratar como um valor de **LONGLONG** .
+Trate como um **valor LONGLONG.**
 
 ## <a name="remarks"></a>Comentários
 
-O valor é fornecido em unidades de 100 nanossegundos.
+O valor é dado em unidades de 100 nanossegundos.
 
-Se a sessão de mídia tiver sido criada com o atributo de [**\_ \_ \_ tempo global de sessão MF**](mf-session-global-time-attribute.md) igual a **true**, todas as topologias deverão conter o atributo **\_ \_ PROJECTSTART da topologia MF** . Caso contrário, as topologias não devem conter o atributo **\_ \_ PROJECTSTART da topologia MF** . Para obter mais informações, consulte [tempos de apresentação da sequência](sequence-presentation-times.md).
+Se a Sessão de Mídia tiver sido criada com o atributo [**MF \_ SESSION GLOBAL \_ \_ TIME**](mf-session-global-time-attribute.md) igual a **TRUE**, todas as topologias deverão conter o atributo **\_ \_ PROJECTSTART da TOPOLOGIA do MF.** Caso contrário, as topologias não devem conter o **atributo MF \_ TOPOLOGY \_ PROJECTSTART.** Para obter mais informações, consulte [Tempos de apresentação de sequência.](sequence-presentation-times.md)
 
-Esse atributo é um valor assinado, embora seja armazenado como um **UINT64**.
+Esse atributo é um valor assinado, embora seja armazenado como **um UINT64.**
 
-A constante de GUID para esse atributo é exportada de mfuuid. lib.
+A constante GUID para esse atributo é exportada de mfuuid.lib.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -37,9 +37,9 @@ A constante de GUID para esse atributo é exportada de mfuuid. lib.
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                     |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                               |
-| parâmetro<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                     |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                               |
+| Cabeçalho<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
@@ -47,22 +47,22 @@ A constante de GUID para esse atributo é exportada de mfuuid. lib.
 
 <dl> <dt>
 
-[Lista alfabética de atributos de Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
-[Tempos de apresentação da sequência](sequence-presentation-times.md)
+[Tempos de apresentação de sequência](sequence-presentation-times.md)
 </dt> <dt>
 
 [Atributos de topologia](topology-attributes.md)
 </dt> <dt>
 
-[**IMFAttributes:: getuint64**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint64)
+[**IMFAttributes::GetUINT64**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint64)
 </dt> <dt>
 
-[**IMFAttributes:: setuint64**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint64)
+[**IMFAttributes::SetUINT64**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint64)
 </dt> <dt>
 
-[**\_PROJECTSTOP de topologia MF \_**](mf-topology-projectstop-attribute.md)
+[**PROJETOS DE \_ TOPOLOGIA DO MFTOP \_**](mf-topology-projectstop-attribute.md)
 </dt> </dl>
 
  

@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d1898bace41a795231585505da3f15d208bde264
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: b21c13671d8667f2a683e0b800f46e1ed60988e00396518a4b24e98aff584a2e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103645508"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118011694"
 ---
 # <a name="print-start-time-attribute"></a>Imprimir-atributo de hora de início
 
@@ -58,7 +58,7 @@ O tempo que uma fila de impressão começa a atender aos trabalhos.
 | ID do link                | \-                                             |
 | MAPI-Id                | \-                                             |
 | System-Only            | Falso                                          |
-| É de valor único       | True                                           |
+| É de valor único       | Verdadeiro                                           |
 | É indexado             | Falso                                          |
 | No catálogo global      | Falso                                          |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                   |
@@ -79,7 +79,7 @@ O tempo que uma fila de impressão começa a atender aos trabalhos.
 | ID do link                | \-                                             |
 | MAPI-Id                | \-                                             |
 | System-Only            | Falso                                          |
-| É de valor único       | True                                           |
+| É de valor único       | Verdadeiro                                           |
 | É indexado             | Falso                                          |
 | No catálogo global      | Falso                                          |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                   |
@@ -100,7 +100,7 @@ O tempo que uma fila de impressão começa a atender aos trabalhos.
 | ID do link                | \-                                             |
 | MAPI-Id                | \-                                             |
 | System-Only            | Falso                                          |
-| É de valor único       | True                                           |
+| É de valor único       | Verdadeiro                                           |
 | É indexado             | Falso                                          |
 | No catálogo global      | Falso                                          |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                   |
@@ -121,15 +121,15 @@ O tempo que uma fila de impressão começa a atender aos trabalhos.
 | ID do link                | \-                                             |
 | MAPI-Id                | \-                                             |
 | System-Only            | Falso                                          |
-| É de valor único       | True                                           |
+| Tem valor único       | Verdadeiro                                           |
 | É indexado             | Falso                                          |
-| No catálogo global      | Falso                                          |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                   |
+| No Catálogo Global      | Falso                                          |
+| Descritor de segurança NT | O:BAG:BAD:S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |
 | Search-Flags           | 0x00000000                                     |
 | System-Flags           | 0x00000010                                     |
-| Classes usadas em        | [**Fila de impressão**](c-printqueue.md)<br/> |
+| Classes usadas em        | [**Fila de Impressão**](c-printqueue.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ O tempo que uma fila de impressão começa a atender aos trabalhos.
 | ID do link                | \-                                             |
 | MAPI-Id                | \-                                             |
 | System-Only            | Falso                                          |
-| É de valor único       | True                                           |
+| Tem valor único       | Verdadeiro                                           |
 | É indexado             | Falso                                          |
-| No catálogo global      | Falso                                          |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                   |
+| No Catálogo Global      | Falso                                          |
+| Descritor de segurança NT | O:BAG:BAD:S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |
 | Search-Flags           | 0x00000000                                     |
 | System-Flags           | 0x00000010                                     |
-| Classes usadas em        | [**Fila de impressão**](c-printqueue.md)<br/> |
+| Classes usadas em        | [**Fila de Impressão**](c-printqueue.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ O tempo que uma fila de impressão começa a atender aos trabalhos.
 | ID do link                | \-                                             |
 | MAPI-Id                | \-                                             |
 | System-Only            | Falso                                          |
-| É de valor único       | True                                           |
+| Tem valor único       | Verdadeiro                                           |
 | É indexado             | Falso                                          |
-| No catálogo global      | Falso                                          |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                   |
+| No Catálogo Global      | Falso                                          |
+| Descritor de segurança NT | O:BAG:BAD:S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |
 | Search-Flags           | 0x00000000                                     |
 | System-Flags           | 0x00000010                                     |
-| Classes usadas em        | [**Fila de impressão**](c-printqueue.md)<br/> |
+| Classes usadas em        | [**Fila de Impressão**](c-printqueue.md)<br/> |
 
 
 

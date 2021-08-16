@@ -6,12 +6,12 @@ keywords:
 - MIDL de erros, formatos de mensagem
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a42552b8106b72d82b2b13b69a7cba7ac2e99e64
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 4cbe6e32109bbe8e4d40b7715c6463e16cd0c27fc77492f5044ce32a7fe57436
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104364395"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118384412"
 ---
 # <a name="error-and-warning-message-formats"></a>Formatos de mensagem de erro e de aviso
 
@@ -49,11 +49,11 @@ As mensagens de erro do sistema aparecem no seguinte formato:
 "Unexpected internal compiler problem. Try to find a workaround."
 ```
 
-Essa mensagem é gerada por um erro que era inesperado. O número de erro hexadecimal é um identificador de erro de sistema do Windows XP, Windows 2000, Windows NT, Windows 98 ou Windows 95. Você pode encontrar informações adicionais em Winerror. h ou Ntstatus. h. Para obter mais informações sobre como solucionar as condições que causaram esse erro, consulte o texto de erro para o [erro do compilador](compiler-errors.md) MIDL9008.
+Essa mensagem é gerada por um erro que era inesperado. o número de erro hexadecimal é um Windows XP, Windows 2000, Windows NT, Windows 98 ou Windows identificador de erro do sistema 95. Você pode encontrar informações adicionais em Winerror. h ou Ntstatus. h. Para obter mais informações sobre como solucionar as condições que causaram esse erro, consulte o texto de erro para o [erro do compilador](compiler-errors.md) MIDL9008.
 
- 
+ 
 
- 
+ 
 
 
 

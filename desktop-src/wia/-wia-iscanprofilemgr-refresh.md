@@ -1,7 +1,7 @@
 ---
-description: Enumera novamente todos os perfis de verificação no sistema.
+description: Enumera todos os perfis de verificação no sistema.
 ms.assetid: f5e49645-e81a-4750-8ea5-f0c698a61752
-title: 'Método IScanProfileMgr:: Refresh (Scanprofilemgr. h)'
+title: Método IScanProfileMgr::Refresh (Scanprofilemgr.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -20,9 +20,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118208939"
 ---
-# <a name="iscanprofilemgrrefresh-method"></a>Método IScanProfileMgr:: Refresh
+# <a name="iscanprofilemgrrefresh-method"></a>Método IScanProfileMgr::Refresh
 
-Enumera novamente todos os perfis de verificação no sistema.
+Enumera todos os perfis de verificação no sistema.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -41,11 +41,11 @@ Esse método não tem parâmetros.
 
 Tipo: **HRESULT**
 
-Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
+Se esse método for bem-sucedido, ele **retornará S \_ OK.** Caso contrário, ele retornará um **código de erro HRESULT.**
 
 ## <a name="remarks"></a>Comentários
 
-Use esse método quando mais de um objeto [**IScanProfileMgr**](-wia-iscanprofilemgr.md) puder estar criando ou excluindo perfis ao mesmo tempo.
+Use esse método quando mais de um [**objeto IScanProfileMgr**](-wia-iscanprofilemgr.md) pode estar criando ou excluindo perfis ao mesmo tempo.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -53,10 +53,10 @@ Use esse método quando mais de um objeto [**IScanProfileMgr**](-wia-iscanprofil
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                              |
-| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                        |
-| parâmetro<br/>                   | <dl> <dt>Scanprofilemgr. h</dt> </dl> |
-| INSERI<br/>                      | <dl> <dt>Scanprofiles. idl</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                              |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                        |
+| Cabeçalho<br/>                   | <dl> <dt>Scanprofilemgr.h</dt> </dl> |
+| Idl<br/>                      | <dl> <dt>Scanprofiles.idl</dt> </dl> |
 
 
 
@@ -67,7 +67,7 @@ Use esse método quando mais de um objeto [**IScanProfileMgr**](-wia-iscanprofil
 [**IScanProfileMgr**](-wia-iscanprofilemgr.md)
 </dt> <dt>
 
-[Esquema do perfil de verificação](-wia-scan-profile-schema.md)
+[Esquema de perfil de verificação](-wia-scan-profile-schema.md)
 </dt> </dl>
 
  

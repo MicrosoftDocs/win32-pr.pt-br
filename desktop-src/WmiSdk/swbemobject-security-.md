@@ -1,8 +1,8 @@
 ---
-description: A \_ Propriedade Security do objeto SWbemObject é usada para ler ou definir as configurações de segurança para um objeto SWbemObject.
+description: A propriedade Security do objeto SWbemObject é usada para ler ou definir as configurações de segurança para um \_ objeto SWbemObject.
 ms.assetid: add77267-d62f-4ee4-a0ff-8ca06a6bf7cd
 ms.tgt_platform: multiple
-title: Propriedade SWbemObject.Security_ (Wbemdisp. h)
+title: SWbemObject.Security_ propriedade (Wbemdisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -23,16 +23,16 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118313780"
 ---
-# <a name="swbemobjectsecurity_-property"></a>Propriedade SWbemObject. Security \_
+# <a name="swbemobjectsecurity_-property"></a>Propriedade SWbemObject.Security \_
 
-A **propriedade \_ Security** do objeto [**SWbemObject**](swbemobject.md) é usada para ler ou definir as configurações de segurança para um objeto **SWbemObject** . Essa propriedade é um objeto [**SWbemSecurity**](swbemsecurity.md) . as configurações de segurança nesse objeto não indicam as configurações de autenticação, representação ou privilégios feitas em uma conexão com Instrumentação de Gerenciamento do Windows (WMI) ou a segurança em vigor para o proxy quando um objeto é entregue a um coletor em uma chamada assíncrona. Para obter mais informações, consulte [mantendo a segurança do WMI](maintaining-wmi-security.md).
+A **\_ propriedade Security** do [**objeto SWbemObject**](swbemobject.md) é usada para ler ou definir as configurações de segurança para um **objeto SWbemObject.** Essa propriedade é um [**objeto SWbemSecurity.**](swbemsecurity.md) As configurações de segurança nesse objeto não indicam as configurações de autenticação, representação ou privilégio feitas em uma conexão com o WMI (Instrumentação de Gerenciamento) do Windows ou a segurança em vigor para o proxy quando um objeto é entregue a um sink em uma chamada assíncrona. Para obter mais informações, consulte [Mantendo a segurança WMI.](maintaining-wmi-security.md)
 
 > [!Note]  
 > Definir a **propriedade \_ Security** de um objeto [**SWbemObject**](swbemobject.md) como **NULL** concede acesso ilimitado a todos o tempo todo. Para obter mais informações, consulte [**SWbemSecurity**](swbemsecurity.md).
 
  
 
-Para obter uma explicação dessa sintaxe, consulte [convenções de documento para a API de script](document-conventions-for-the-scripting-api.md).
+Para uma explicação dessa sintaxe, consulte [Convenções de documento para a API de Script](document-conventions-for-the-scripting-api.md).
 
 Esta propriedade é somente para leitura.
 
@@ -55,11 +55,11 @@ SWbemObject.Security_ As Object
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| Cabeçalho<br/>                   | <dl> <dt>Wbemdisp. h</dt> </dl>   |
-| Biblioteca de tipos<br/>             | <dl> <dt>Wbemdisp. tlb</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Wbemdisp.h</dt> </dl>   |
+| Biblioteca de tipos<br/>             | <dl> <dt>Wbemdisp.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Wbemdisp.dll</dt> </dl> |
 | CLSID<br/>                    | CLSID \_ SWbemObject<br/>                                                           |
-| IID<br/>                      | ISWbemObject de IID \_<br/>                                                            |
+| IID<br/>                      | IID \_ ISWbemObject<br/>                                                            |
 
 
 
@@ -67,13 +67,13 @@ SWbemObject.Security_ As Object
 
 <dl> <dt>
 
-[**SWbemObject**](swbemobject.md)
+[**Swbemobject**](swbemobject.md)
 </dt> <dt>
 
-[Criando um script ou aplicativo WMI](creating-a-wmi-application-or-script.md)
+[Criando um aplicativo ou script WMI](creating-a-wmi-application-or-script.md)
 </dt> <dt>
 
-[Definindo a \_ segurança do processo do aplicativo cliente \_](setting-client-application-process-security.md)
+[Definindo a segurança \_ do processo de aplicativo \_ cliente](setting-client-application-process-security.md)
 </dt> <dt>
 
 [**SWbemSecurity**](swbemsecurity.md)

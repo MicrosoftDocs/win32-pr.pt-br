@@ -1,7 +1,7 @@
 ---
-description: Método Shell. ExplorerPolicy – Obtém o valor de uma política especificada do Windows Internet Explorer.
+description: Método Shell.ExplorerPolicy – obtém o valor de uma política Windows Internet Explorer especificada.
 ms.assetid: 47E17F6A-ED43-44cd-AF77-A6E49865E1B5
-title: Método Shell. ExplorerPolicy (shldisp. h)
+title: Método Shell.ExplorerPolicy (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 765e1dc46edbe5a27292c5d8ff940e29b269f8dc
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 78a0e601e8093358ef05f259586726e840982d1a97d428b8453f26ecb878a4c6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108083694"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117857928"
 ---
-# <a name="shellexplorerpolicy-method"></a>Método Shell. ExplorerPolicy
+# <a name="shellexplorerpolicy-method"></a>Método Shell.ExplorerPolicy
 
-Obtém o valor de uma política especificada do Windows Internet Explorer.
+Obtém o valor de uma política Windows Internet Explorer especificada.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -49,12 +49,12 @@ Shell.ExplorerPolicy( _
 
 <dl> <dt>
 
-*bstrPolicyName* \[ no\]
+*bstrPolicyName* \[ Em\]
 </dt> <dd>
 
 Tipo: **[ **BSTR**](/previous-versions/windows/desktop/automat/bstr)**
 
-Uma **cadeia de caracteres** que especifica o nome da política.
+Uma **Cadeia de** caracteres que especifica o nome da política.
 
 </dd> </dl>
 
@@ -62,27 +62,27 @@ Uma **cadeia de caracteres** que especifica o nome da política.
 
 ### <a name="jscript"></a>JScript
 
-Tipo: **variante \***
+Tipo: **\* Variante**
 
-O valor associado ao nome de política especificado.
+O valor associado ao nome da política especificado.
 
 ### <a name="vb"></a>VB
 
-Tipo: **variante \***
+Tipo: **\* Variante**
 
-O valor associado ao nome de política especificado.
+O valor associado ao nome da política especificado.
 
 ## <a name="remarks"></a>Comentários
 
-Os administradores de rede podem controlar e gerenciar o ambiente computacional de seus usuários definindo políticas.
+Os administradores de rede podem controlar e gerenciar o ambiente de computação de seus usuários definindo políticas.
 
-O nome do valor especificado deve estar dentro da subchave do **HKEY \_ Current \_ User** \\ **software** \\ **Microsoft** \\ **Windows** \\ **CurrentVersion** \\ **Policies** \\ **Explorer** . Se o nome do valor não existir, o método retornará **NULL**.
+O nome do valor especificado deve estar dentro da **sub-chave HKEY \_ CURRENT \_ USER** \\ **Software** \\ **Microsoft** \\ **Windows** \\ **CurrentVersion** \\ **Policies** \\ **Explorer.** Se o nome do valor não existir, o método retornará **nulo.**
 
 ## <a name="examples"></a>Exemplos
 
-Os exemplos a seguir mostram o uso apropriado de **ExplorerPolicy** para JScript, VBScript e Visual Basic.
+Os exemplos a seguir mostram o uso adequado do **ExplorerPolicy** para JScript, VBScript e Visual Basic.
 
-JScript
+JScript:
 
 
 ```JScript
@@ -100,7 +100,7 @@ JScript
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -142,11 +142,11 @@ End Sub
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                                                                   |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                                          |
-| parâmetro<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                          |
-| INSERI<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                        |
-| DLL<br/>                      | <dl> <dt>Shell32.dll (versão 6,0 ou posterior)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho XP\]<br/>                                                                   |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                                          |
+| Cabeçalho<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
+| DLL<br/>                      | <dl> <dt>Shell32.dll (versão 6.0 ou posterior)</dt> </dl> |
 
 
 

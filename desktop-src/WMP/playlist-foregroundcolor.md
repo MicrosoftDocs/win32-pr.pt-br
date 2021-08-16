@@ -1,9 +1,9 @@
 ---
-title: PLAYLIST.foregroundColor
+title: PLAYLIST. foregroundColor
 description: O atributo foregroundColor especifica ou recupera a cor de primeiro plano.
 ms.assetid: a83ceeec-033e-4060-b968-1d19bd7e391b
 keywords:
-- PLAYLIST.foregroundColor Windows Media Player
+- Windows Media Player de PLAYLIST. foregroundColor
 topic_type:
 - apiref
 api_name:
@@ -19,9 +19,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118336752"
 ---
-# <a name="playlistforegroundcolor"></a>PLAYLIST.foregroundColor
+# <a name="playlistforegroundcolor"></a>PLAYLIST. foregroundColor
 
-O **atributo foregroundColor** especifica ou recupera a cor de primeiro plano.
+O atributo **foregroundColor** especifica ou recupera a cor de primeiro plano.
 
 ``` syntax
         elementID.foregroundColor
@@ -29,7 +29,7 @@ O **atributo foregroundColor** especifica ou recupera a cor de primeiro plano.
 
 ## <a name="possible-values"></a>Valores possíveis
 
-Esse atributo é uma Cadeia de **caracteres** de leitura/gravação que contém qualquer valor de Internet Explorer da Microsoft. Ele tem um valor padrão igual à Windows de texto do sistema.
+Esse atributo é uma **cadeia de caracteres** de leitura/gravação que contém qualquer valor de cor do Microsoft Internet Explorer. ele tem um valor padrão igual ao Windows cor do texto do sistema.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -37,7 +37,7 @@ Esse atributo é uma Cadeia de **caracteres** de leitura/gravação que contém 
 
 | Requisito | Valor |
 |--------------------|------------------------------------------------------|
-| Versão<br/> | Windows Media Player versão 7.0 ou posterior<br/> |
+| Versão<br/> | Windows Media Player versão 7,0 ou posterior<br/> |
 
 
 
@@ -45,7 +45,7 @@ Esse atributo é uma Cadeia de **caracteres** de leitura/gravação que contém 
 
 <dl> <dt>
 
-[**Referência de cores**](color-reference.md)
+[**Referência de cor**](color-reference.md)
 </dt> <dt>
 
 [**Elemento PLAYLIST**](playlist-element.md)

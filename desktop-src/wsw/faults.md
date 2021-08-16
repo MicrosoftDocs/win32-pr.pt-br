@@ -8,12 +8,12 @@ keywords:
 - WWS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0b2ecad1b63335b7f2bfc81c099b4f920d9de21c
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 55cd9e28e9ec9ce2f3068643d44306f542eebabb9b0b0c8860b15e9e986b49b9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105766490"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117841766"
 ---
 # <a name="faults"></a>Falhas
 
@@ -50,7 +50,7 @@ Se estiver trabalhando na camada de canal, as falhas poderão ser enviadas para 
 
 ## <a name="handling-faults-on-a-client"></a>Tratamento de falhas em um cliente
 
-Se um cliente receber uma falha ao usar um [proxy de serviço](service-proxy.md) ou via [**WsRequestReply**](/windows/desktop/api/WebServices/nf-webservices-wsrequestreply) ou [**WsReceiveMessage**](/windows/desktop/api/WebServices/nf-webservices-wsreceivemessage), o erro de falha de ponto de **extremidade do WS \_ E \_ \_ \_ recebido** será retornado. (Para obter mais informações, consulte [valores de retorno dos serviços Web do Windows](windows-web-services-return-values.md).) Essas funções também preencherão o objeto de [ \_ erro WS](ws-error.md) , fornecido à chamada com informações sobre a falha recebida.
+Se um cliente receber uma falha ao usar um [proxy de serviço](service-proxy.md) ou via [**WsRequestReply**](/windows/desktop/api/WebServices/nf-webservices-wsrequestreply) ou [**WsReceiveMessage**](/windows/desktop/api/WebServices/nf-webservices-wsreceivemessage), o erro de falha de ponto de **extremidade do WS \_ E \_ \_ \_ recebido** será retornado. (para obter mais informações, consulte [Windows valores de retorno de serviços Web](windows-web-services-return-values.md).) Essas funções também preencherão o objeto de [ \_ erro WS](ws-error.md) , fornecido à chamada com informações sobre a falha recebida.
 
 As seguintes propriedades de um objeto de [ \_ erro WS](ws-error.md) podem ser consultadas usando [**WsGetFaultErrorProperty**](/windows/desktop/api/WebServices/nf-webservices-wsgetfaulterrorproperty) para obter informações sobre uma falha que foi recebida:
 
@@ -107,9 +107,9 @@ As seguintes estruturas são parte das falhas:
 -   [**\_Descrição dos \_ detalhes de falha do WS \_**](/windows/desktop/api/WebServices/ns-webservices-ws_fault_detail_description)
 -   [**\_motivo da falha do WS \_**](/windows/desktop/api/WebServices/ns-webservices-ws_fault_reason)
 
- 
+ 
 
- 
+ 
 
 
 

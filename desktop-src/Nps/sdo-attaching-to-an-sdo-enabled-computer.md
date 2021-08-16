@@ -1,6 +1,6 @@
 ---
-title: Anexando a um computador SDO-Enabled
-description: Anexando a um computador SDO-Enabled
+title: Anexando a um computador SDO-Enabled computador
+description: Anexando a um computador SDO-Enabled computador
 ms.assetid: 434e2e0c-075e-48a9-9617-bbe75716380d
 ms.tgt_platform: multiple
 ms.topic: article
@@ -12,7 +12,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118362194"
 ---
-# <a name="attaching-to-an-sdo-enabled-computer"></a>Anexando a um computador SDO-Enabled
+# <a name="attaching-to-an-sdo-enabled-computer"></a>Anexando a um computador SDO-Enabled computador
 
 O código a seguir é anexado ao computador local como um computador SDO.
 
@@ -53,9 +53,9 @@ O código a seguir é anexado ao computador local como um computador SDO.
 
 
 
-Anexar a um computador como um computador SDO é a primeira etapa na administração do computador por meio de SDO.
+Anexar a um computador como um computador SDO é a primeira etapa na administração do computador por meio do SDO.
 
-Para obter mais informações, consulte [**ISdoMachine**](/windows/desktop/api/sdoias/nn-sdoias-isdomachine), [**ISdoMachine:: Attach**](/windows/desktop/api/sdoias/nf-sdoias-isdomachine-attach).
+Para obter mais informações, [**consulte ISdoMachine**](/windows/desktop/api/sdoias/nn-sdoias-isdomachine), [**ISdoMachine::Attach**](/windows/desktop/api/sdoias/nf-sdoias-isdomachine-attach).
 
  
 

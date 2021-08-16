@@ -47,10 +47,10 @@ ms.locfileid: "118317182"
 ---
 # <a name="mofdeserializerschemavalidationoption-enumeration"></a>Enumeração MofDeserializerSchemaValidationOption
 
-Define constantes que especificam opções de validação de esquema para desserialização.
+Define constantes que especificam opções de validação de esquema para desserlização.
 
-**Namespace:**   [Microsoft. Management. Infrastructure. Serialization](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832966(v=vs.85))  
-**Assembly:**  Microsoft. Management. Infrastructure (em Microsoft.Management.Infrastructure.dll)  
+**Namespace:**   [Microsoft.Management.Infrastructure.Serialization](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832966(v=vs.85))  
+**Assembly:**  Microsoft.Management.Infrastructure (em Microsoft.Management.Infrastructure.dll)  
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -76,10 +76,10 @@ Friend Enumeration MofDeserializerSchemaValidationOption
 |-|-|
 |Padrão|Especifica a validação de esquema padrão.|
 |Rigoroso|Especifica a validação de esquema estrita.|
-|Cancelar|Especifica a validação de esquema flexível.|
-|IgnorePropertyType|Especifica que a validação de esquema deve ignorar os tipos de propriedade.|
+|Solta|Especifica a validação de esquemas soltos.|
+|IgnorePropertyType|Especifica que a validação de esquema deve ignorar tipos de propriedade.|
 |Ignorar|Especifica que a validação de esquema deve ser ignorada.|
 
 ## <a name="see-also"></a>Consulte Também
 
-[Namespace Microsoft. Management. Infrastructure. Serialization](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832966(v=vs.85))
+[Microsoft.Management.Infrastructure.Serialization Namespace](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832966(v=vs.85))

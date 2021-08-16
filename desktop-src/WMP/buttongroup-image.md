@@ -1,9 +1,9 @@
 ---
-title: BUTTON. Image
-description: O atributo Image especifica ou recupera o nome da imagem que representa os botões de um botão.
+title: BUTTONGROUP.image
+description: O atributo de imagem especifica ou recupera o nome da imagem que representa os botões de um BUTTONGROUP.
 ms.assetid: dad50a1e-d147-4e0f-b5d6-8cbfeef32438
 keywords:
-- MyButton. Image Windows Media Player
+- BUTTONGROUP.image Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1fa395edc149671ad05a38a5ff7c77053b6e3d82
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d2fcd8d76bd217087b6b948cec3216efc2bbc6c9845e9c18b5a7619d292232b6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105760460"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118342629"
 ---
-# <a name="buttongroupimage"></a>BUTTON. Image
+# <a name="buttongroupimage"></a>BUTTONGROUP.image
 
-O atributo **Image** especifica ou recupera o nome da imagem que representa os botões de um **botão**.
+O **atributo** de imagem especifica ou recupera o nome da imagem que representa os botões de um **BUTTONGROUP.**
 
 ``` syntax
         elementID.image
@@ -29,15 +29,15 @@ O atributo **Image** especifica ou recupera o nome da imagem que representa os b
 
 ## <a name="possible-values"></a>Valores possíveis
 
-Este atributo é uma **cadeia de caracteres** de leitura/gravação.
+Esse atributo é uma cadeia de caracteres de **leitura/gravação.**
 
 ## <a name="remarks"></a>Comentários
 
-Os formatos de imagem com suporte são BMP, JPG, PNG e GIF. Se a imagem for um arquivo BMP de 8 bits, seus valores de matiz e de saturação poderão ser alterados dinamicamente usando os atributos **hueShift** e **saturação** .
+Os formatos de imagem com suporte são BMP, JPG, PNG e GIF. Se a imagem for um arquivo BMP de 8 bits, seus valores de matiz e saturação poderão ser alterados dinamicamente usando os atributos **hueShift** **e saturação.**
 
 Se a imagem do controle for maior que a região definida, a imagem será cortada.
 
-Se a imagem não puder ser recuperada, uma imagem padrão (a imagem vermelha-x) será exibida.
+Se a imagem não puder ser recuperada, uma imagem padrão (a imagem x vermelha) será exibida.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -45,7 +45,7 @@ Se a imagem não puder ser recuperada, uma imagem padrão (a imagem vermelha-x) 
 
 | Requisito | Valor |
 |--------------------|------------------------------------------------------|
-| Versão<br/> | Windows Media Player versão 7,0 ou posterior<br/> |
+| Versão<br/> | Windows Media Player versão 7.0 ou posterior<br/> |
 
 
 
@@ -53,13 +53,13 @@ Se a imagem não puder ser recuperada, uma imagem padrão (a imagem vermelha-x) 
 
 <dl> <dt>
 
-[**Elemento de botão**](buttongroup-element.md)
+[**Elemento BUTTONGROUP**](buttongroup-element.md)
 </dt> <dt>
 
-[**BUTTON. hueShift**](buttongroup-hueshift.md)
+[**BUTTONGROUP.hueShift**](buttongroup-hueshift.md)
 </dt> <dt>
 
-[**BOTÃO. saturação**](buttongroup-saturation.md)
+[**BUTTONGROUP.s saturação**](buttongroup-saturation.md)
 </dt> </dl>
 
  

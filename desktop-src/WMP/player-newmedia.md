@@ -3,9 +3,9 @@ title: Método Player. newMedia
 description: O método newMedia cria um novo objeto de mídia.
 ms.assetid: fccf1559-bac3-4edf-bd88-da2c72cdec21
 keywords:
-- método newMedia Windows Media Player
+- Windows Media Player do método newMedia
 - método newMedia Windows Media Player, classe Player
-- Classe de jogador Windows Media Player, método newMedia
+- classe de jogador Windows Media Player, método newMedia
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: aaafb97f836135aa9dd112372b1931c8561cb40b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f6e3ad30db7ec43bcc0ee6c1470dc608ccf1625390486d9fcd0fd4bf018affdd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105784631"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118338082"
 ---
 # <a name="playernewmedia-method"></a>Método Player. newMedia
 
@@ -49,7 +49,7 @@ retVal = Player.newMedia(
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método retorna um objeto de **mídia** .
 

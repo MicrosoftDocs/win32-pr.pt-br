@@ -1,9 +1,9 @@
 ---
 title: in_line atributo
-description: Não há suporte para a palavra-chave de IDL do DCE na \_ linha no Microsoft RPC.
+description: Não há suporte para a palavra-chave IDL de DCE em linha \_ no Microsoft RPC.
 ms.assetid: 11ef8a9f-e358-4a38-bae2-fcd998f7fb76
 keywords:
-- in_line do atributo MIDL
+- in_line atributo MIDL
 topic_type:
 - apiref
 api_name:
@@ -19,9 +19,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118383700"
 ---
-# <a name="in_line-attribute"></a>\_atributo in line
+# <a name="in_line-attribute"></a>atributo \_ in line
 
-Não há suporte para a palavra-chave de IDL do DCE **na \_ linha** no Microsoft RPC.
+Não há suporte para **\_** a palavra-chave DCE IDL em linha no Microsoft RPC.
 
  
 

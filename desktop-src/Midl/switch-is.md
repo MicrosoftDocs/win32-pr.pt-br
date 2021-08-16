@@ -199,7 +199,7 @@ typedef struct _WINNER_TYPE
 [**o tamanho \_ é**](size-is.md)
 </dt> <dt>
 
-[**string**](string.md)
+[**Strings**](string.md)
 </dt> <dt>
 
 [**struct**](struct.md)

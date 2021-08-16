@@ -13,7 +13,7 @@ ms.locfileid: "118309317"
 ---
 # <a name="service-identity"></a>Identidade do serviço
 
-A escolha dessa identidade faz com que o aplicativo seja executado como um serviço. Você pode definir contas de serviço escolhendo a opção **Serviços** no **painel de controle**. Para obter mais informações, consulte [instalando como um aplicativo de serviço](installing-as-a-service-application.md).
+Escolher essa identidade faz com que o aplicativo seja executado como um serviço. Você pode definir contas de serviço escolhendo a **opção** Serviços no **Painel de Controle**. Para obter mais informações, [consulte Instalando como um aplicativo de serviço](installing-as-a-service-application.md).
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

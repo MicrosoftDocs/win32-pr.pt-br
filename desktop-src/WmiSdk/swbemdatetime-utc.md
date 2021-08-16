@@ -1,8 +1,8 @@
 ---
-description: Obtém ou define a representação UTC (tempo Universal Coordenado) do valor DateTime.
+description: Obtém ou define a representação UTC (Tempos Universais Coordenados) do valor datetime.
 ms.assetid: 43d9d0c8-5521-410f-825b-6b00c3dd0039
 ms.tgt_platform: multiple
-title: Propriedade SWbemDateTime. UTC (Wbemdisp. h)
+title: Propriedade SWbemDateTime.UTC (Wbemdisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -24,13 +24,13 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118314689"
 ---
-# <a name="swbemdatetimeutc-property"></a>Propriedade SWbemDateTime. UTC
+# <a name="swbemdatetimeutc-property"></a>Propriedade SWbemDateTime.UTC
 
-A propriedade **UTC** do objeto [**SWbemDateTime**](swbemdatetime.md) Obtém ou define a representação UTC (tempo Universal Coordenado) do valor **DateTime** . O UTC é o tempo definido pelo padrão de tempo mundial. O UTC substituiu o horário de Greenwich (GMT). Um valor UTC com um deslocamento zero é o mesmo que GMT com um deslocamento zero. O número assinado deve estar no intervalo de-720 até 720 ou o erro **wbemErrValueOutOfRange** é retornado.
+A **propriedade UTC** do [**objeto SWbemDateTime**](swbemdatetime.md) obtém ou define a representação UTC (Tempos Universais Coordenados) do **valor datetime.** UTC é a hora definida pelo World Time Standard. UTC substituiu Greenwich Mean Time (GMT). Um valor UTC com um deslocamento zero é o mesmo que GMT com um deslocamento zero. O número assinado deve estar no intervalo de -720 a 720 ou o erro **wbemErrValueOutOfRange** é retornado.
 
-Para obter uma explicação dessa sintaxe, consulte [convenções de documento para a API de script](document-conventions-for-the-scripting-api.md).
+Para uma explicação dessa sintaxe, consulte [Convenções de documento para a API de Script](document-conventions-for-the-scripting-api.md).
 
-Esta propriedade é de leitura/gravação.
+Essa propriedade é leitura/gravação.
 
 ## <a name="syntax"></a>Syntax
 
@@ -45,20 +45,20 @@ SWbemDateTime.UTC As Long
 
 ## <a name="error-codes"></a>Códigos do Erro
 
-Depois de obter ou definir a propriedade **UTC** , o objeto [Err](/previous-versions//sbf5ze0e(v=vs.85)) poderá conter o código de erro abaixo.
+Depois de obter ou definir a **propriedade UTC,** o [objeto Err](/previous-versions//sbf5ze0e(v=vs.85)) pode conter o código de erro abaixo.
 
 <dl> <dt>
 
-**wbemErrValueOutOfRange** -2147749931 (0x8004102B)
+**wbemErrValueOutOfRange** – 2147749931 (0x8004102B)
 </dt> <dd>
 
-O valor não estava no intervalo de-720 até 720.
+O valor não estava no intervalo de -720 a 720.
 
 </dd> </dl>
 
 ## <a name="examples"></a>Exemplos
 
-Para obter exemplos de como usar o objeto [**SWbemDateTime**](swbemdatetime.md) para converter valores de data e [**hora**](datetime.md) CIM de e para o formato **FILETIME** ou o formato de **\_ dados VT** , consulte [tarefas do WMI: datas e horas](wmi-tasks--dates-and-times.md). Para obter uma descrição do formato de data e hora **CIM,** consulte [formato de datas e horas](date-and-time-format.md).
+Para ver exemplos de como usar o objeto [**SWbemDateTime**](swbemdatetime.md) para converter valores CIM [**DATETIME**](datetime.md) de e para o formato **FILETIME** ou **VT \_ DATE,** consulte [Tarefas WMI:](wmi-tasks--dates-and-times.md)Datas e Horas . Para uma descrição do formato CIM **DATETIME,** consulte [Formato de data e hora.](date-and-time-format.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -68,11 +68,11 @@ Para obter exemplos de como usar o objeto [**SWbemDateTime**](swbemdatetime.md) 
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| Cabeçalho<br/>                   | <dl> <dt>Wbemdisp. h</dt> </dl>   |
-| Biblioteca de tipos<br/>             | <dl> <dt>Wbemdisp. tlb</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Wbemdisp.h</dt> </dl>   |
+| Biblioteca de tipos<br/>             | <dl> <dt>Wbemdisp.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Wbemdisp.dll</dt> </dl> |
-| CLSID<br/>                    | \_SWBEMDATETIME CLSID<br/>                                                         |
-| IID<br/>                      | ISWbemDateTime de IID \_<br/>                                                          |
+| CLSID<br/>                    | CLSID \_ SWbemDateTime<br/>                                                         |
+| IID<br/>                      | IID \_ ISWbemDateTime<br/>                                                          |
 
 
 
@@ -80,13 +80,13 @@ Para obter exemplos de como usar o objeto [**SWbemDateTime**](swbemdatetime.md) 
 
 <dl> <dt>
 
-[**SWbemDateTime. UTCSpecified**](swbemdatetime-utcspecified.md)
+[**SWbemDateTime.UTCSpecified**](swbemdatetime-utcspecified.md)
 </dt> <dt>
 
 [**SWbemDateTime**](swbemdatetime.md)
 </dt> <dt>
 
-[**HORÁRIO**](datetime.md)
+[**Datetime**](datetime.md)
 </dt> </dl>
 
  

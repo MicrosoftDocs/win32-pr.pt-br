@@ -1,24 +1,24 @@
 ---
-title: Como um cliente autentica um serviço Windows Sockets baseado em SCP
+title: Como um cliente autentica um serviço de soquetes Windows SCP
 description: Este tópico mostra o código que um aplicativo cliente usa para compor um SPN para um serviço.
 ms.assetid: b5ef79c6-e321-435c-b3de-817fdea8836a
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 38471f48d8c80d0795b7176b95df0029d42325ac
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 40d35ad62e05ab925d2dedc10506ddb339c2aafd188487f2e1591713189f451a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104453502"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118188660"
 ---
-# <a name="how-a-client-authenticates-an-scp-based-windows-sockets-service"></a>Como um cliente autentica um serviço Windows Sockets baseado em SCP
+# <a name="how-a-client-authenticates-an-scp-based-windows-sockets-service"></a>Como um cliente autentica um serviço de soquetes Windows SCP
 
-Este tópico mostra o código que um aplicativo cliente usa para compor um SPN para um serviço. O cliente é associado ao SCP (ponto de conexão de serviço) do serviço para recuperar os dados necessários para se conectar ao serviço. O SCP também contém dados que o cliente pode usar para compor o SPN do serviço. Para obter mais informações e um exemplo de código que se associa ao SCP e recupera as propriedades necessárias, consulte [como os clientes encontram e usam um ponto de conexão de serviço](how-clients-find-and-use-a-service-connection-point.md).
+Este tópico mostra o código que um aplicativo cliente usa para compor um SPN para um serviço. O cliente se vincula ao SCP (ponto de conexão de serviço) do serviço para recuperar os dados necessários para se conectar ao serviço. O SCP também contém dados que o cliente pode usar para compor o SPN do serviço. Para obter mais informações e um exemplo de código que se vincula ao SCP e recupera as propriedades necessárias, consulte [How Clients Find and Use a Service Connection Point](how-clients-find-and-use-a-service-connection-point.md).
 
-Este tópico também mostra como um cliente usa um pacote de segurança SSPI e o SPN do serviço para estabelecer uma conexão mutuamente autenticada com o serviço Windows Sockets. Lembre-se de que esse código é quase idêntico ao código necessário no Microsoft Windows NT 4,0 e anterior apenas para autenticar o cliente no servidor. A única diferença é que o cliente deve fornecer o SPN e especificar o \_ sinalizador de \_ autenticação mútua do ISC req \_ .
+Este tópico também mostra como um cliente usa um pacote de segurança SSPI e o SPN do serviço para estabelecer uma conexão mutuamente autenticada com o serviço Windows Sockets. Esteja ciente de que esse código é quase idêntico ao código necessário no Microsoft Windows NT 4.0 e anterior apenas para autenticar o cliente no servidor. A única diferença é que o cliente deve fornecer o SPN e especificar o sinalizador ISC \_ REQ \_ MUTUAL \_ AUTH.
 
-## <a name="client-code-to-make-an-spn-for-a-service"></a>Código do cliente para criar um SPN para um serviço
+## <a name="client-code-to-make-an-spn-for-a-service"></a>Código do cliente para fazer um SPN para um serviço
 
 
 ```C++
@@ -58,13 +58,13 @@ if (!DoAuthentication (sockServer, szSpn)) {
 
 ## <a name="client-code-to-authenticate-the-service"></a>Código do cliente para autenticar o serviço
 
-Este exemplo de código consiste em duas rotinas: **doauthentication** e **GenClientContext**. Depois de chamar [**DsMakeSpn**](/windows/desktop/api/Dsparse/nf-dsparse-dsmakespna) para compor um SPN para o serviço, o cliente passa o SPN para a rotina **doauthentication** , que chama o **GenClientContext** para gerar o buffer inicial a ser enviado ao serviço. O **doauthentication** usa o identificador de soquete para enviar o buffer e receber a resposta do serviço passada para o pacote SSPI por outra chamada para **GenClientContext**. Esse loop é repetido até que a autenticação falhe ou **GenClientContext** defina um sinalizador que indica a autenticação bem-sucedida.
+Este exemplo de código consiste em duas rotinas: **DoAuthentication** e **GenClientContext.** Depois de chamar [**DsMakeSpn**](/windows/desktop/api/Dsparse/nf-dsparse-dsmakespna) para compor um SPN para o serviço, o cliente passa o SPN para a rotina **DoAuthentication,** que chama **GenClientContext** para gerar o buffer inicial a ser enviado para o serviço. **DoAuthentication** usa o alça de soquete para enviar o buffer e receber a resposta do serviço passada para o pacote SSPI por outra chamada para **GenClientContext**. Esse loop é repetido até que a autenticação falhe **ou GenClientContext** define um sinalizador que indica que a autenticação foi bem-sucedida.
 
-A rotina **GenClientContext** interage com o pacote SSPI para gerar os dados de autenticação a serem enviados ao serviço e processar os dados recebidos do serviço. Os principais componentes dos dados de autenticação fornecidos pelo cliente incluem:
+A **rotina GenClientContext** interage com o pacote SSPI para gerar os dados de autenticação para enviar ao serviço e processar os dados recebidos do serviço. Os principais componentes dos dados de autenticação fornecidos pelo cliente incluem:
 
 -   O nome da entidade de serviço que identifica as credenciais que o serviço deve autenticar.
--   As credenciais do cliente. A função [**falha AcquireCredentialsHandle**](../SecAuthN/acquirecredentialshandle--general.md) do pacote de segurança extrai essas credenciais do contexto de segurança do cliente estabelecido no logon.
--   Para solicitar a autenticação mútua, o cliente deve especificar o \_ sinalizador de autenticação mútua do ISC req \_ \_ ao chamar a função [**InitializeSecurityContext**](../SecAuthN/initializesecuritycontext--general.md) durante a rotina **GenClientContext** .
+-   As credenciais do cliente. A [**função AcquireCredentialsHandle**](../SecAuthN/acquirecredentialshandle--general.md) do pacote de segurança extrai essas credenciais do contexto de segurança do cliente estabelecido no logon.
+-   Para solicitar autenticação mútua, o cliente deve especificar o sinalizador ISC REQ MUTUAL AUTH ao chamar a função InitializeSecurityContext durante a rotina \_ \_ \_ **GenClientContext.** [](../SecAuthN/initializesecuritycontext--general.md)
 
 
 ```C++
@@ -266,9 +266,9 @@ return TRUE;
 
 
 
- 
+ 
 
- 
+ 
 
 
 

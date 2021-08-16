@@ -1,9 +1,9 @@
 ---
-title: Dataformats
+title: Formatos de dataformativos
 description: Especifica os formatos de dados padrão e principal com suporte por um aplicativo.
 ms.assetid: 0c9387f9-d7e0-40e7-8d86-96a79a844161
 keywords:
-- Chave do Registro dataFormats COM
+- Chave do registro COM de dataformações
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: cfb8b2cc2ad4d11137fa41f419db2184f1a2b47fb850176227401e3d2b1aec04
@@ -13,7 +13,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118310594"
 ---
-# <a name="dataformats"></a>Dataformats
+# <a name="dataformats"></a>Formatos de dataformativos
 
 Especifica os formatos de dados padrão e principal com suporte por um aplicativo.
 
@@ -30,21 +30,21 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID
 
 ## <a name="remarks"></a>Comentários
 
-O *valor de arquivo/formato* especifica o arquivo principal padrão ou o formato de objeto para objetos dessa classe.
+O valor de *arquivo/formato* especifica o arquivo principal padrão ou o formato de objeto para objetos dessa classe.
 
-O *valor formats* especifica uma lista de formatos para implementações padrão de [**EnumFormatEtc,**](/windows/desktop/api/ObjIdl/nf-objidl-idataobject-enumformatetc)em que *n* é um índice inteiro baseado em zero. Por exemplo, *n* formato , aspecto , médio , sinalizador , em que format é um formato de área de transferência, o aspecto é um ou mais membros de  =    [**DVASPECT**](/windows/win32/api/wtypes/ne-wtypes-dvaspect),    *medium*  é um ou mais membros [**do TYMED**](/windows/win32/api/objidl/ne-objidl-tymed)e o sinalizador é um ou mais membros de [**DATADIR.**](/windows/win32/api/objidl/ne-objidl-datadir) 
+O valor de *formatos* especifica uma lista de formatos para implementações padrão de [**EnumFormatEtc**](/windows/desktop/api/ObjIdl/nf-objidl-idataobject-enumformatetc), em que *n* é um índice de inteiro baseado em zero. Por exemplo, *n*  =  *Format*, *Aspect*, *Medium*, *Flag*, em que *Format* é um formato de área de transferência, *Aspect* é um ou mais membros de [**DVASPECT**](/windows/win32/api/wtypes/ne-wtypes-dvaspect), *Medium* é um ou mais membros de [**TYMED**](/windows/win32/api/objidl/ne-objidl-tymed)e *Flag* é um ou mais membros de [**datadir**](/windows/win32/api/objidl/ne-objidl-datadir).
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[**IDataObject::EnumFormatEtc**](/windows/desktop/api/ObjIdl/nf-objidl-idataobject-enumformatetc)
+[**IDataObject:: EnumFormatEtc**](/windows/desktop/api/ObjIdl/nf-objidl-idataobject-enumformatetc)
 </dt> <dt>
 
-[**IDataObject::GetData**](/windows/desktop/api/ObjIdl/nf-objidl-idataobject-getdata)
+[**IDataObject:: GetData**](/windows/desktop/api/ObjIdl/nf-objidl-idataobject-getdata)
 </dt> <dt>
 
-[**IDataObject::SetData**](/windows/desktop/api/ObjIdl/nf-objidl-idataobject-setdata)
+[**IDataObject:: SetData**](/windows/desktop/api/ObjIdl/nf-objidl-idataobject-setdata)
 </dt> </dl>
 
  

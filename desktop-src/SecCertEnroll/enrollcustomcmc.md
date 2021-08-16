@@ -4,20 +4,20 @@ ms.assetid: ef09ef04-8925-4d66-97ad-70b4d7cf78b9
 title: enrollCustomCMC
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2910e6a6ca784aaeb9ca97dc8de106932bd64c9f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3799cd70d8f3b70ae32a95b7720a879ddd611fba5e35064d1794d39bdcd7ab9c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103647458"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117780055"
 ---
 # <a name="enrollcustomcmc"></a>enrollCustomCMC
 
 O exemplo enrollCustomCMC cria uma solicitação de certificado CMC e registra um computador em uma hierarquia de certificado.
 
-## <a name="location"></a>Local
+## <a name="location"></a>Localização
 
-Quando você instala o SDK (Software Development Kit) do Microsoft Windows, o exemplo é instalado, por padrão, na pasta *% ProgramFiles%* \\ Microsoft SDKs \\ Windows \\ v 7.0 \\ Samples \\ Security \\ X509 Certificate registro \\ vc \\ enrollCustomCMC.
+quando você instala o Microsoft Windows Software Development Kit (SDK), o exemplo é instalado, por padrão, na pasta *% programfiles%* \\ Microsoft SDKs \\ Windows \\ v 7.0 \\ samples \\ Security \\ X509 Certificate registro \\ VC \\ enrollCustomCMC.
 
 ## <a name="discussion"></a>Discussão
 

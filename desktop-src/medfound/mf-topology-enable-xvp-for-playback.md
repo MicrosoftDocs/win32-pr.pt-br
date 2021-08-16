@@ -3,12 +3,12 @@ description: Especifica se o carregador de topologia habilita o processador de v
 title: Atributo MF_TOPOLOGY_ENABLE_XVP_FOR_PLAYBACK (Mfidl. h)
 ms.topic: reference
 ms.date: 02/22/2021
-ms.openlocfilehash: e36841db57e8343248ef5e369915d4bc357815bb
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 3f315463ce1719617c5a48066401219f4b971f0a555cadf2af43b055a2b0e9a1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105764348"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117875718"
 ---
 # <a name="mf_topology_enable_xvp_for_playback-attribute"></a>\_Topologia MF \_ habilitar \_ XVP \_ para \_ atributo de reprodução
 
@@ -38,9 +38,9 @@ Se esse atributo for definido, o carregador de topologia efetuará o Pull do pro
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>                                         |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008 R2\]<br/>                            |
-| parâmetro<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[somente aplicativos de área de trabalho Windows 7\]<br/>                                         |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do Server 2008 R2\]<br/>                            |
+| Cabeçalho<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
 
 
 

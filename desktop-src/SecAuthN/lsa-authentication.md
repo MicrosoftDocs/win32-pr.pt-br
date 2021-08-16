@@ -4,12 +4,12 @@ ms.assetid: a5bc4c5d-6e8e-4cdf-962e-4284997c75e7
 title: Autenticação LSA
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 135d1d47189f2490029cb83ef3a4ffb5a3d4913e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0b525c5af9ee48eecf954328d1ab36b5665a64953b8fdcabc111a0515eca3ace
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105748052"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117787248"
 ---
 # <a name="lsa-authentication"></a>Autenticação LSA
 

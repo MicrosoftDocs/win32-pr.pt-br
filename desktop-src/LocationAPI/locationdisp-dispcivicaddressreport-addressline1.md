@@ -42,7 +42,7 @@ Essa propriedade é uma Cadeia de Caracteres somente **leitura.**
 
 ## <a name="examples"></a>Exemplos
 
-Para ver um exemplo de como usar essa propriedade, consulte Um exemplo de relatório [de endereço civil simples.](/uwp/api/Windows.Devices.Geolocation)
+Para ver um exemplo de como usar essa propriedade, consulte [Um exemplo de relatório de endereço civil simples.](/uwp/api/Windows.Devices.Geolocation)
 
 ## <a name="requirements"></a>Requisitos
 

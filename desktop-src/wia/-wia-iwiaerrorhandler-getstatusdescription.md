@@ -1,7 +1,7 @@
 ---
 description: Retorna uma cadeia de caracteres que descreve o código de status.
 ms.assetid: d3007f3e-46e1-4ab6-8ce3-c4e38f87ce61
-title: 'Método IWiaErrorHandler:: GetStatusDescription (WIA. h)'
+title: Método IWiaErrorHandler::GetStatusDescription (Wia.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -21,7 +21,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118208298"
 ---
-# <a name="iwiaerrorhandlergetstatusdescription-method"></a>Método IWiaErrorHandler:: GetStatusDescription
+# <a name="iwiaerrorhandlergetstatusdescription-method"></a>Método IWiaErrorHandler::GetStatusDescription
 
 Retorna uma cadeia de caracteres que descreve o código de status.
 
@@ -44,48 +44,48 @@ HRESULT GetStatusDescription(
 
 <dl> <dt>
 
-*punkItem* \[ no\]
+*queitem* \[ Em\]
 </dt> <dd>
 
 Tipo: **[IUnknown](/windows/win32/api/unknwn/nn-unknwn-iunknown)\***
 
-Ponteiro para o [IUnknown](/windows/win32/api/unknwn/nn-unknwn-iunknown) do item que está sendo transferido. Esse objeto implementa minimamente [**IWiaItem2**](-wia-iwiaitem2.md) e [**IWiaDataTransfer**](/windows/desktop/api/wia_xp/nn-wia_xp-iwiadatatransfer).
+Ponteiro para [o IUnknown do](/windows/win32/api/unknwn/nn-unknwn-iunknown) item que está sendo transferido. Esse objeto implementa minimamente [**IWiaItem2**](-wia-iwiaitem2.md) e [**IWiaDataTransfer**](/windows/desktop/api/wia_xp/nn-wia_xp-iwiadatatransfer).
 
 </dd> <dt>
 
-*hrStatus* \[ no\]
+*hrStatus* \[ Em\]
 </dt> <dd>
 
 Tipo: **HRESULT**
 
-**HRESULT** que é o código de status recebido por [**BandedDataCallback**](/windows/desktop/api/wia_xp/nf-wia_xp-iwiadatacallback-bandeddatacallback).
+**HRESULT** que é o código de status recebido por [**BandedDataCallback.**](/windows/desktop/api/wia_xp/nf-wia_xp-iwiadatacallback-bandeddatacallback)
 
 </dd> <dt>
 
-*cbResLength* \[ no\]
+*cbResLength* \[ Em\]
 </dt> <dd>
 
-Tipo: **longo**
+Tipo: **LONG**
 
-**Longo** que é o tamanho dos dados referenciados por *pbData*.
+**LONG** que é o tamanho dos dados referenciados por *pbData*.
 
 </dd> <dt>
 
-*pbData* \[ no\]
+*pbData* \[ Em\]
 </dt> <dd>
 
-Tipo: **byte \***
+Tipo: **BYTE \***
 
-Ponteiro para o buffer de dados como recebido por [**BandedDataCallback**](/windows/desktop/api/wia_xp/nf-wia_xp-iwiadatacallback-bandeddatacallback).
+Ponteiro para o buffer de dados conforme recebido por [**BandedDataCallback.**](/windows/desktop/api/wia_xp/nf-wia_xp-iwiadatacallback-bandeddatacallback)
 
 </dd> <dt>
 
-*pbstrDescription* \[ fora\]
+*pbstrDescription* \[ out\]
 </dt> <dd>
 
 Tipo: **BSTR \***
 
-**BSTR** que recebe uma descrição do status ou do erro encontrado durante a transferência de dados. Este parâmetro não pode ser **nulo**. O chamador deve liberar a cadeia de caracteres usando [SysFreeString](/previous-versions/windows/desktop/api/oleauto/nf-oleauto-sysfreestring)e o implementador deve alocar a cadeia de caracteres usando [SysAllocString](/previous-versions/windows/desktop/api/oleauto/nf-oleauto-sysallocstring).
+**BSTR** que recebe uma descrição do status ou erro encontrado durante a transferência de dados. Esse parâmetro não pode ser **NULL.** O chamador deve liberar a cadeia de [caracteres usando SysFreeString](/previous-versions/windows/desktop/api/oleauto/nf-oleauto-sysfreestring)e o implementador deve alocar a cadeia de caracteres usando [SysAllocString](/previous-versions/windows/desktop/api/oleauto/nf-oleauto-sysallocstring).
 
 </dd> </dl>
 
@@ -99,8 +99,8 @@ Retorna um dos valores a seguir.
 
 | Código de retorno                                                                             | Descrição                                                        |
 |-----------------------------------------------------------------------------------------|--------------------------------------------------------------------|
-| <dl> <dt>**S \_ OK**</dt> </dl>    | *pbstrDescription* contém um ponteiro **BSTR** válido. <br/>  |
-| <dl> <dt>**\_falso**</dt> </dl> | *hrStatus* é desconhecido e nenhuma descrição está disponível. <br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>    | *pbstrDescription contém* um ponteiro **BSTR** válido. <br/>  |
+| <dl> <dt>**S \_ FALSE**</dt> </dl> | *hrStatus* é desconhecido e nenhuma descrição está disponível. <br/> |
 
 
 
@@ -112,11 +112,11 @@ Retorna um dos valores a seguir.
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                         |
-| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                   |
-| parâmetro<br/>                   | <dl> <dt>WIA. h</dt> </dl>       |
-| INSERI<br/>                      | <dl> <dt>WIA. idl</dt> </dl>     |
-| Biblioteca<br/>                  | <dl> <dt>Wiaguid. lib</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                         |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                   |
+| Cabeçalho<br/>                   | <dl> <dt>Wia.h</dt> </dl>       |
+| Idl<br/>                      | <dl> <dt>Wia.idl</dt> </dl>     |
+| Biblioteca<br/>                  | <dl> <dt>Wiaguid.lib</dt> </dl> |
 
 
 

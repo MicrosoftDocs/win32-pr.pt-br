@@ -1,11 +1,11 @@
 ---
-title: Método Error. Item
-description: O método item recupera um objeto ErrorItem da fila de erros.
+title: Método Error.item
+description: O método de item recupera um objeto ErrorItem da fila de erros.
 ms.assetid: 3aca21ff-4c6b-4c24-a85d-3d015612a496
 keywords:
-- método de item Windows Media Player
-- método de item Windows Media Player, classe de erro
-- Classe de erro Windows Media Player, método de item
+- método item Windows Media Player
+- método item Windows Media Player , classe Error
+- Classe de erro Windows Media Player , método de item
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5545df50fce05ff5a10a5f870d1ec07648434fe9
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5e9fbd9f402a659af27db42c34cb0c58e2097270b73eb0eeff382544979dc0a9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105762076"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118339691"
 ---
-# <a name="erroritem-method"></a>Método Error. Item
+# <a name="erroritem-method"></a>Método Error.item
 
-O método **Item** recupera um objeto **ErrorItem** da fila de erros.
+O **método de item** recupera um objeto **ErrorItem** da fila de erros.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,26 +42,26 @@ retVal = Error.item(
 
 <dl> <dt>
 
-*índice* \[ do no\]
+*índice* \[ Em\]
 </dt> <dd>
 
-**Número** (**longo**) que contém o índice do objeto **ErrorItem** a ser recuperado.
+**Número** (**longo**) que contém o índice do **objeto ErrorItem** a ser recuperado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Esse método retorna um objeto **ErrorItem** .
+Esse método retorna um **objeto ErrorItem.**
 
 ## <a name="remarks"></a>Comentários
 
-O Windows Media Player pode gerar vários erros em resposta a uma condição de erro. Esse método permite a recuperação de um erro específico na fila usando um número de índice. Os números de índice para a fila de erros começam com zero.
+Windows Media Player pode gerar vários erros em resposta a uma condição de erro. Esse método permite a recuperação de um erro específico na fila usando um número de índice. Os números de índice para a fila de erros começam com zero.
 
-Você deve definir *as configurações*. **enableErrorDialogs** como false se você optar por exibir mensagens de erro personalizadas.
+Você deve definir *Configurações*. **enableErrorDialogs** como false se você optar por exibir mensagens de erro personalizadas.
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo de JScript a seguir usa o *erro*. objeto de **Item** em um manipulador de eventos para alertar o usuário para o erro mais recente. O objeto de **jogador** foi criado com ID = "Player".
+O exemplo JScript a seguir usa o *erro*. **objeto** item em um manipulador de eventos para alertar o usuário sobre o erro mais recente. O **objeto** Player foi criado com ID = "Player".
 
 
 ```JScript
@@ -92,7 +92,7 @@ alert(errNum + "\n" + errDesc);
 
 | Requisito | Valor |
 |--------------------|------------------------------------------------------------------------------------|
-| Versão<br/> | Windows Media Player versão 7,0 ou posterior.<br/>                              |
+| Versão<br/> | Windows Media Player versão 7.0 ou posterior.<br/>                              |
 | DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 

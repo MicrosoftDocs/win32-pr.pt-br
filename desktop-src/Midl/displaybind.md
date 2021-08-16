@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f015954a7b1fe07d4ecf61e9a4ba4da4c932e65c
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 2f331ee62128501237671d01524c0f74df5ebc3b9da37dbf6ba3f71f9a5df460
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "103640633"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118384600"
 ---
 # <a name="displaybind-attribute"></a>atributo displaybind
 
@@ -65,7 +65,7 @@ Especifica o tipo de retorno da função.
 
 </dd> <dt>
 
-*nome da função* 
+*Nome da função* 
 </dt> <dd>
 
 Especifica o nome da função à qual o atributo **\[ displaybind \]** será aplicado.
@@ -124,6 +124,6 @@ interface MyObject : IUnknown
 [Gerando uma biblioteca de tipos com MIDL](generating-a-type-library-with-midl-2.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
