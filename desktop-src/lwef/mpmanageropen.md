@@ -3,7 +3,7 @@ title: Função MpManagerOpen (MpClient. h)
 description: Estabelece uma conexão com o Malware Protection Manager no computador local.
 ms.assetid: 40513A74-AFCC-4E22-9B78-D46FEB575A00
 keywords:
-- Recursos do ambiente Windows herdado da função MpManagerOpen
+- recursos de ambiente de Windows herdado da função MpManagerOpen
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: af432cc7d91530fd3d37176592f7f457b31b6314
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 324d013c46777ac48af32e6c91f557b7feda3a03fbdf0c21a7c79e8cf5e3d9dc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103645070"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117883361"
 ---
 # <a name="mpmanageropen-function"></a>Função MpManagerOpen
 
@@ -59,7 +59,7 @@ Identificador para a interface do Malware Protection Manager. Esse identificador
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **HRESULT**
 
@@ -73,9 +73,9 @@ Se a função falhar, o valor de retorno será um código **HRESULT** com falha.
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                    |
-| parâmetro<br/>                   | <dl> <dt>MpClient. h</dt> </dl>   |
+| Cliente mínimo com suporte<br/> | Windows 8 \[ somente aplicativos da área de trabalho\]<br/>                                              |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 \[ somente aplicativos da área de trabalho\]<br/>                                    |
+| Cabeçalho<br/>                   | <dl> <dt>MpClient. h</dt> </dl>   |
 | DLL<br/>                      | <dl> <dt>MpClient.dll</dt> </dl> |
 
 

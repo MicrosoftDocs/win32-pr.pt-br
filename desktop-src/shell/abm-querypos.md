@@ -4,16 +4,16 @@ ms.assetid: 061a30fb-a68a-464e-ad8c-0bda672b57d9
 title: Mensagem de ABM_QUERYPOS (shellapi. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 08f25ef636b2c55d8442df49f86a59b537694c31
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 24f7a5e78b6b040904144a64e1068fea3a3e56c7b42fdfcf314f2ced4bfff9e8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104296222"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118225027"
 ---
 # <a name="abm_querypos-message"></a>\_Mensagem ABM QUERYPOS
 
-Solicita um tamanho e uma posição de tela para um AppBar. Quando a solicitação é feita, a mensagem propõe uma borda de tela e um retângulo delimitador para o AppBar. O sistema ajusta o retângulo delimitador para que o AppBar não interfira na barra de tarefas do Windows ou em qualquer outro appbars.
+Solicita um tamanho e uma posição de tela para um AppBar. Quando a solicitação é feita, a mensagem propõe uma borda de tela e um retângulo delimitador para o AppBar. o sistema ajusta o retângulo delimitador para que o appbar não interfira na barra de tarefas Windows ou em qualquer outro appbars.
 
 
 ```C++
@@ -33,7 +33,7 @@ Um ponteiro para uma estrutura [**APPBARDATA**](/windows/desktop/api/Shellapi/ns
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Sempre retorna **true**.
 
@@ -47,7 +47,7 @@ Um AppBar deve enviar essa mensagem antes de enviar a mensagem [**\_ SETPOS do A
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                                           |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho XP\]<br/>                                           |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                  |
 | Cabeçalho<br/>                   | <dl> <dt>Shellapi. h</dt> </dl> |
 

@@ -3,15 +3,15 @@ title: Criando o documento do serviceInfo dinamicamente
 description: Criando o documento do serviceInfo dinamicamente
 ms.assetid: 96937b04-f705-49f6-8ddf-25c98a51dc9a
 keywords:
-- Repositórios online do Windows Media Player, criando documento do serviceInfo
+- Windows Media Player lojas online, criando documento do serviceinfo
 - lojas online, criando documento do serviceInfo
 - Digite 1 lojas online, criando documento do serviceInfo
 - Digite 2 lojas online, criando documento do serviceInfo
-- Lojas online do Windows Media Player, criando dinamicamente o documento do serviceInfo
+- Windows Media Player lojas online, criando um documento do serviceinfo dinamicamente
 - lojas online, criando um documento do serviceInfo dinamicamente
 - Digite 1 lojas online, criando dinamicamente o documento do serviceInfo
 - tipo 2 lojas online, criando dinamicamente o documento do serviceInfo
-- Repositórios online do Windows Media Player, documento do serviceInfo
+- Windows Media Player repositórios online, documento do serviceinfo
 - repositórios online, documento do serviceInfo
 - Digite 1 lojas online, documento do serviceInfo
 - tipo 2 lojas online, documento do serviceInfo
@@ -20,12 +20,12 @@ keywords:
 - Documento do serviceInfo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 90159e72046536cf6b69521586a0640935478eb1
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: e3883487d072af57174a1f40f2fcef05d3290917b473a95bf723c34d793c5ba5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103915983"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118340986"
 ---
 # <a name="creating-the-serviceinfo-document-dynamically"></a>Criando o documento do serviceInfo dinamicamente
 
@@ -88,9 +88,9 @@ O código de exemplo anterior usa ASP para recuperar o nome do host do servidor 
 [**Documento do serviceInfo**](serviceinfo-document.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

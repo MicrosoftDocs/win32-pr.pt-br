@@ -1,97 +1,97 @@
 ---
 title: Faixas de opções
-description: As faixas de palavras são a maneira moderna de ajudar os usuários a localizar, entender e usar comandos de forma eficiente e direta \ 8212; com um número mínimo de cliques, com menos necessidade de recorrer a avaliação e erro e sem precisar consultar a ajuda.
+description: As faixas de opções são a maneira moderna de ajudar os usuários a encontrar, entender e usar comandos com eficiência e diretamente \ 8212; com um número mínimo de cliques, com menos necessidade de recorrer a avaliação e erro e sem precisar consultar a Ajuda.
 ms.assetid: 8a4699da-9840-4622-9e94-d6d5c4e7708c
 ms.custom: contperf-fy21q1
 ms.topic: article
 ms.date: 10/20/2020
-ms.openlocfilehash: 2327a633f02c9d56116367405803c4da56ad5b19
-ms.sourcegitcommit: 3bdf30edb314e0fcd17dc4ddbc70e4ec7d3596e6
+ms.openlocfilehash: db5a64d50bd225b714c2ff0578145c47c66bedb557dd067e0cdf89f369178b1e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "104297854"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118042407"
 ---
 # <a name="ribbons"></a>Faixas de opções
 
 > [!NOTE]
-> Este guia de design foi criado para o Windows 7 e não foi atualizado para versões mais recentes do Windows. Grande parte da orientação ainda se aplica em princípio, mas a apresentação e os exemplos não refletem nossas [diretrizes de design atuais](/windows/uwp/design/).
+> Este guia de design foi criado para Windows 7 e não foi atualizado para versões mais recentes do Windows. Grande parte das diretrizes ainda se aplica em princípio, mas a apresentação e os exemplos não refletem nossas [diretrizes de design atuais.](/windows/uwp/design/)
 
-As faixas de palavras são a maneira moderna de ajudar os usuários a localizar, compreender e usar comandos de forma eficiente e direta com um número mínimo de cliques, com menos necessidade de recorrer a avaliação e erro e sem precisar consultar a ajuda.
+As faixas de opções são a maneira moderna de ajudar os usuários a encontrar, entender e usar comandos com eficiência e diretamente com um número mínimo de cliques, com menos necessidade de recorrer a avaliação e erro e sem precisar consultar a Ajuda.
 
-Uma faixa de guia é uma barra de comandos que organiza os recursos de um programa em uma série de guias na parte superior de uma janela. O uso de uma faixa de faixas aumenta a capacidade de descoberta de recursos e funções, permite um aprendizado mais rápido do programa como um todo e faz com que os usuários se sintam mais no controle de sua experiência com o programa. Uma faixa de opções pode substituir a barra de menus e as barras de ferramentas tradicionais.
+Uma faixa de opções é uma barra de comandos que organiza os recursos de um programa em uma série de guias na parte superior de uma janela. O uso de uma faixa de opções aumenta a capacidade de descoberta de recursos e funções, permite um aprendizado mais rápido do programa como um todo e faz com que os usuários se sintam mais no controle de sua experiência com o programa. Uma faixa de opções pode substituir a barra de menus tradicional e as barras de ferramentas.
 
-![captura de tela de uma faixa de uma ](images/cmd-ribbons-image1.png)
+![captura de tela de uma faixa de opções ](images/cmd-ribbons-image1.png)
 
-Uma faixa de uma típica.
+Uma faixa de opções típica.
 
-As guias da faixa de guia são compostas por grupos, que são um conjunto rotulado de comandos fortemente relacionados. Além de guias e grupos, as faixas de faixa consistem em:
+As guias da faixa de opções são compostas por grupos, que são um conjunto rotulado de comandos intimamente relacionados. Além de guias e grupos, as faixas de opções consistem em:
 
-- Um botão de aplicativo, que apresenta um menu de comandos que envolvem fazer algo para ou com um documento ou espaço de trabalho, como comandos relacionados a arquivos.
-- Uma barra de ferramentas de acesso rápido, que é uma barra de ferramentas pequena e personalizável que exibe comandos usados com frequência.
-- As guias principais são as guias que são sempre exibidas.
-- Guias contextuais, que são exibidas somente quando um determinado tipo de objeto é selecionado. As guias que são sempre exibidas são chamadas de guias de núcleo.
-- Um conjunto de guias é uma coleção de guias contextuais para um único tipo de objeto. Como os objetos podem ter vários tipos (por exemplo, um cabeçalho em uma tabela que tem uma imagem é de três tipos), pode haver vários conjuntos de guias contextuais exibidos de cada vez.
+- Um botão Aplicativo, que apresenta um menu de comandos que envolvem fazer algo com ou com um documento ou workspace, como comandos relacionados ao arquivo.
+- Uma Barra de Ferramentas de Acesso Rápido, que é uma barra de ferramentas pequena e personalizável que exibe comandos usados com frequência.
+- As guias principais são as guias que sempre são exibidas.
+- Guias contextuais, que são exibidas somente quando um tipo de objeto específico é selecionado. As guias que sempre são exibidas são chamadas de guias principais.
+- Um conjunto de guias é uma coleção de guias contextuais para um único tipo de objeto. Como os objetos podem ter vários tipos (por exemplo, um header em uma tabela que tem uma imagem é de três tipos), pode haver vários conjuntos de guias contextuais exibidos por vez.
 - Guias modais, que são guias principais exibidas com um modo temporário específico, como visualização de impressão.
-- Galerias, que são listas de comandos ou opções apresentadas graficamente. Uma galeria baseada em resultados ilustra o efeito dos comandos ou opções em vez dos próprios comandos. Uma galeria na faixa de faixas é exibida dentro de uma faixa de bits, em vez de uma janela pop-up.
-- Dicas de ferramentas aprimoradas, que explicam de forma concisa seus comandos associados e fornecem as teclas de atalho. Eles também podem incluir elementos gráficos e referências para ajudar. As dicas de ferramentas aprimoradas reduzem a necessidade de ajuda relacionada a comandos.
-- Inicializadores de caixa de diálogo, que são botões na parte inferior de alguns grupos que abrem caixas de diálogo contendo recursos relacionados ao grupo.
+- Galerias, que são listas de comandos ou opções apresentadas graficamente. Uma galeria baseada em resultados ilustra o efeito dos comandos ou das opções em vez dos próprios comandos. Uma galeria na faixa de opções é exibida em uma faixa de opções, em vez de uma janela pop-up.
+- Dicas de ferramentas aprimoradas, que explicam concisamente seus comandos associados e dão as teclas de atalho. Eles também podem incluir gráficos e referências à Ajuda. As dicas de ferramenta aprimoradas reduzem a necessidade de ajuda relacionada a comandos.
+- Iniciadores de caixa de diálogo, que são botões na parte inferior de alguns grupos que abrem caixas de diálogo que contêm recursos relacionados ao grupo.
 
-As faixas de faixa foram introduzidas originalmente com o Microsoft Office 2007. Para saber por que o Office precisa usar as faixas de faixa e os vários problemas que usam uma faixa de faixas, consulte [a história da faixa de](/archive/blogs/jensenh/the-story-of-the-ribbon)visão.
+As faixas de opções foram introduzidas originalmente Microsoft Office 2007. Para saber por que Office precisa usar faixas de opções e os muitos problemas que usam uma faixa de opções são resolvidos, consulte [The Story of the Ribbon](/archive/blogs/jensenh/the-story-of-the-ribbon).
 
 > [!Note]  
-> As diretrizes relacionadas a [menus](cmd-menus.md), [barras de ferramentas](cmd-toolbars.md), botões de [comando](ctrl-command-buttons.md)e [ícones](vis-icons.md) são apresentadas em artigos separados.
+> Diretrizes [relacionadas a menus](cmd-menus.md), [barras de ferramentas,](cmd-toolbars.md) [botões de comando](ctrl-command-buttons.md)e ícones são [apresentadas](vis-icons.md) em artigos separados.
 
-## <a name="is-this-the-right-user-interface"></a>Esta é a interface do usuário correta?
+## <a name="is-this-the-right-user-interface"></a>Essa é a interface do usuário certa?
 
-Para decidir usar uma faixa de uma, considere estas perguntas:
+Para decidir usar uma faixa de opções, considere estas perguntas:
 
 ### <a name="program-type"></a>Tipo de programa
 
-- **Que tipo de programa você está projetando?** O tipo de programa é um bom indicador da adequação de uma faixa de opção. As faixas funcionam bem para criação de documentos e programas de criação, bem como visualizadores de documentos e navegadores. As faixas de faixa podem funcionar para outros tipos de programas, mas outras formas de apresentação de comando podem ser mais apropriadas. Em geral, os programas leves devem ter uma apresentação de comando leve.
+- **Que tipo de programa você está projetando?** O tipo de programa é um bom indicador da adequação de uma faixa de opções. As faixas de opções funcionam bem para programas de criação e criação de documentos, bem como visualizadores de documentos e navegadores. As faixas de opções podem funcionar para outros tipos de programas, mas outras formas de apresentação de comando podem ser mais apropriadas. Em geral, programas leves devem ter uma apresentação de comando leve.
 
-### <a name="discoverability-and-learning-issues"></a>Problemas de descoberta e de aprendizagem
+### <a name="discoverability-and-learning-issues"></a>Problemas de descoberta e aprendizado
 
-- **Os usuários têm problemas ao localizar comandos? Os usuários estão solicitando recursos que já estão no programa?** Nesse caso, usar uma faixa de faixas facilitará a localização dos comandos com rótulos autoexplicativos e o agrupamento de comandos relacionados. O uso de uma faixa de opção também escala melhor do que barras de menus e barras de ferramentas para crescimento futuro.
-- **Os usuários têm problemas para entender os comandos do programa? Eles costumam recorrer a "avaliação e erro" para selecionar o comando correto ou determinar como os comandos funcionam?** Nesse caso, o uso de uma faixa de bits com comandos orientados a resultados baseados em galerias e visualizações dinâmicas facilita a compreensão dos comandos.
+- **Os usuários têm problemas para localizar comandos? Os usuários estão solicitando recursos que já estão no programa?** Em caso afirmativo, o uso de uma faixa de opções facilitará a encontrar comandos com rótulos autoexplicativos e o agrupamento de comandos relacionados. Usar uma faixa de opções também é melhor do que barras de menu e barras de ferramentas para crescimento futuro.
+- **Os usuários têm problemas para entender os comandos do programa? Geralmente, eles recorrem a "avaliação e erro" para selecionar o comando correto ou determinar como os comandos funcionam?** Nesse caso, usar uma faixa de opções com comandos orientados a resultados com base em galerias e visualizações ao vivo facilita a compreensão dos comandos.
 
 ### <a name="command-characteristics"></a>Características do comando
 
-- **Os comandos são apresentados em vários locais? Se o seu programa já existir, os comandos serão apresentados em barras de menus, barras de ferramentas, painéis de tarefas e dentro da própria área de trabalho?** Nesse caso, usar uma faixa de faixas unificará os comandos em um único local, facilitando sua localização.
-- **Os comandos se aplicam a toda a janela ou somente a painéis específicos?** As faixas de opções funcionam melhor para comandos que se aplicam a toda a janela ou a objetos específicos. Os comandos in-loco funcionam melhor para os painéis de janela individuais.
-- **A maioria dos comandos pode ser apresentada diretamente? Ou seja, os usuários podem interagir com eles usando um único clique? Se os comandos usados com frequência forem acessados em menus e caixas de diálogo, eles poderão ser refatoros para serem diretos?** Embora alguns comandos possam ser apresentados usando menus e caixas de diálogo, a apresentação da maioria dos comandos dessa forma envolve a eficiência de uma faixa de opções, possivelmente tornando uma barra de menus uma opção melhor.
+- **Os comandos são apresentados em vários locais? Se o programa já existir, os comandos serão apresentados em barras de menu, barras de ferramentas, painéis de tarefas e dentro da própria área de trabalho?** Nesse caso, o uso de uma faixa de opções unificará os comandos em um único local, tornando-os mais fáceis de localizar.
+- **Os comandos se aplicam a toda a janela ou somente a painéis específicos?** As faixas de opções funcionam melhor para comandos que se aplicam a toda a janela ou a objetos específicos. Os comandos in-place funcionam melhor para painéis de janela individuais.
+- **A maioria dos comandos pode ser apresentada diretamente? Ou seja, os usuários podem interagir com eles usando um único clique? Se os comandos comumente usados são acessados de menus e caixas de diálogo, eles podem ser refactorados para serem diretos?** Embora alguns comandos possam ser apresentados usando menus e caixas de diálogo, apresentar a maioria dos comandos dessa maneira prejudica a eficiência de uma faixa de opções, possivelmente tornando uma barra de menus uma opção melhor.
 
 ### <a name="command-scale"></a>Escala de comando
 
-- **Há um pequeno número de comandos? Os comandos usados com mais frequência podem ser apresentados facilmente em uma única barra de ferramentas simples?** Usar uma faixa de controle vale a pena se a adição de guias principal e contextual resultar em uma simples guia página inicial que pode ser usada sozinha para executar as tarefas mais comuns. Caso contrário, o benefício de usar uma faixa de faixas pode não justificar seu peso extra para um pequeno número de comandos.
-- **Há um grande número de comandos? O uso de uma faixa de faixas requer mais de sete guias principais? Os usuários precisam constantemente alterar as guias para executar tarefas comuns?** Nesse caso, usar barras de ferramentas (que não exigem a alteração de guias) e [janelas de paleta](cmd-toolbars.md) (que podem exigir a alteração de guias, mas pode haver várias abertas por vez) pode ser uma opção mais eficiente.
-- **Os usuários tendem a usar um pequeno número de comandos na maior parte do tempo?** Nesse caso, eles podem usar uma faixa de uma fita com eficiência, colocando esses comandos na guia página inicial. A alteração constante de guias tornaria uma faixa de uma forma muito ineficiente.
-- **O programa se beneficia de tornar a área de conteúdo do programa o mais grande possível?** Nesse caso, usar uma barra de menus e uma única barra de ferramentas é mais eficiente em termos de espaço do que uma faixa de faixas. No entanto, se o seu programa exigir três ou mais linhas de barras de ferramentas ou usar painéis de tarefas, o uso de uma faixa de faixas será mais eficiente em termos de espaço.
-- **Os usuários tendem a trabalhar em uma área específica dentro de uma janela grande no programa por longos períodos de tempo?** Nesse caso, eles se beneficiarão da proximidade das mini-barras de ferramentas, janelas de paletas e comandos diretos. Fazer a viagem de ida e volta da área de trabalho para a faixa de faixas seria muito ineficiente.
-- **Para eficiência e flexibilidade, os usuários precisam fazer alterações significativas no conteúdo da apresentação do comando, no local ou no tamanho?** Nesse caso, barras de ferramentas personalizáveis e extensíveis e janelas de paleta são uma opção melhor. Observe que alguns tipos de barras de ferramentas podem ser desencaixados para se tornar janelas de paleta e janelas de paleta podem ser movidas, redimensionadas e personalizadas.
+- **Há um pequeno número de comandos? Os comandos usados com mais frequência podem ser apresentados facilmente em uma única barra de ferramentas simples?** O uso de uma faixa de opções vale a pena se a adição de guias principais e contextuais resulta em uma guia Página Base simples que pode ser usada sozinho para executar as tarefas mais comuns. Caso não seja, o benefício de usar uma faixa de opções pode não justificar seu peso extra para um pequeno número de comandos.
+- **Há um grande número de comandos? Usar uma faixa de opções exigiria mais de sete guias principais? Os usuários constantemente teriam que alterar guias para executar tarefas comuns?** Nesse caso, usar barras de ferramentas (que não exigem alteração de guias) e janelas de paleta [(o](cmd-toolbars.md) que pode exigir a alteração de guias, mas pode haver várias abertas por vez) pode ser uma opção mais eficiente.
+- **Os usuários tendem a usar um pequeno número de comandos na maioria das vezes?** Nesse caso, eles podem usar uma faixa de opções com eficiência colocando esses comandos na guia Página Base. A alteração constante de guias torna uma faixa de opções muito ineficiente.
+- **O programa se beneficia de tornar a área de conteúdo do programa o mais grande possível?** Se sim, usar uma barra de menus e uma única barra de ferramentas é mais eficiente do que uma faixa de opções. No entanto, se o programa exigir três ou mais linhas de barras de ferramentas ou usar painéis de tarefas, o uso de uma faixa de opções será mais eficiente em termos de espaço.
+- **Os usuários tendem a trabalhar em uma área específica dentro de uma janela grande no programa por longos períodos de tempo?** Em caso afirmado, eles se beneficiariam da proximidade de minibaras de ferramentas, janelas de paleta e comandos diretos. Fazer a viagem de ida e volta da área de trabalho para a faixa de opções seria muito ineficiente.
+- **Para eficiência e flexibilidade, os usuários precisam fazer alterações significativas no conteúdo, no local ou no tamanho da apresentação do comando?** Se sim, barras de ferramentas personalizáveis e extensíveis e janelas de paleta são uma opção melhor. Observe que alguns tipos de barras de ferramentas podem ser desencaixados para se tornarem janelas de paleta, e as janelas de paleta podem ser movidas, relizadas e personalizadas.
 
-Por fim, considere essa pergunta final: **é o aprimoramento da capacidade de descoberta, da facilidade de aprendizado, da eficiência e da produtividade no custo do espaço extra e da necessidade de guias para organizar os comandos?** Nesse caso, usar uma faixa de opções é uma excelente opção. Se você não tiver certeza, considere o teste de usabilidade de um design baseado em faixa de opção e a comparação com a melhor alternativa.
+Por fim, considere essa pergunta final: A melhoria na capacidade de descoberta, na facilidade de aprendizado, na eficiência e na produtividade vale o custo do espaço extra e a necessidade de guias organizar **comandos?** Se sim, usar uma faixa de opções é uma excelente opção. Se você não tiver certeza, considere a usabilidade de testar um design baseado em faixa de opções e compará-lo com a melhor alternativa.
 
-As faixas de palavras são uma forma nova e atraente de apresentação de comandos e uma ótima maneira de modernizar um programa. Mas, como são convincentes, eles não são a escolha certa para todos os programas.
+As faixas de opções são uma forma nova e envolvente de apresentação de comando e uma ótima maneira de modernizar um programa. Mas, por mais atraentes que sejam, eles não são a escolha certa para cada programa.
 
 **Incorreto:**
 
-![captura de tela de uma faixa de faixas com uma calculadora ](images/cmd-ribbons-image2.png)
+![captura de tela de uma faixa de opções com uma calculadora ](images/cmd-ribbons-image2.png)
 
 Não faça isso!
 
 ## <a name="seven-most-important-things"></a>Sete coisas mais importantes
 
-1. Escolha uma solução de comando adequada para o tipo de programa. O uso de uma faixa de visão deve fazer com que um programa fique mais simples, mais eficiente e fácil de usar nunca o oposto. Se estiver usando uma faixa de faixas não for apropriada, considere usar comandos avançados em vez disso.  
-2. Não subestime o desafio de criar uma faixa de faixas em vigor. Não espere que seja uma porta simples das barras de menus e barras de ferramentas existentes. E não é necessário que o uso de uma faixa de opção faça com que seu programa seja melhor. Estar disposto a confirmar o tempo e o esforço necessário para uma reestruturação de comando é um fator importante na decisão de usar uma faixa de uma.  
-3. Tornar os comandos detectáveis. Escolha um design de guia que tenha um mapeamento claro, óbvio e exclusivo entre seus comandos e as guias rotuladas de forma descritiva em que residem. Os usuários devem ser capazes de determinar de forma rápida e confiável qual guia tem o comando que estão procurando e raramente escolher a guia errada.  
-4. Torne os comandos auto-explicativos. Os usuários devem entender o efeito de um comando de seu rótulo, ícone, dica de ferramenta e visualização. Eles não devem ter que experimentar ou ler um tópico da ajuda para ver como funciona um comando.  
-5. Faça usando os comandos de forma eficiente:
-    - Os usuários devem passar a maior parte do tempo na guia página inicial.
-    - Os usuários raramente precisam alterar as guias durante as tarefas comuns.
-    - Quando a janela é maximizada e os usuários estão na guia correta, os comandos usados com mais frequência têm a ênfase mais visual e os usuários podem chamá-las com um único clique. Os usuários podem executar todos os outros comandos na guia com, no máximo, quatro cliques.
-    - Os usuários não devem abrir caixas de diálogo para fornecer comandos e alterar atributos em tarefas comuns.
-6. Ajude os usuários a escolher comandos e opções com confiança e minimizar a necessidade de tentativa e erro. Use comandos orientados a resultados sempre que apropriado, geralmente na forma de galerias e visualizações dinâmicas.  
+1. Escolha uma solução de comando adequada para o tipo de programa. Usar uma faixa de opções deve tornar um programa mais simples, mais eficiente e mais fácil de usar nunca o oposto. Se usar uma faixa de opções não for apropriado, considere usar comandos avançados.  
+2. Não suia o desafio de criar uma faixa de opções efetiva. Não espere que seja uma porta simples das barras de menu e das barras de ferramentas existentes. E não leve em conta que usar uma faixa de opções torna seu programa melhor automaticamente. Estar disposto a comprometer o tempo e o esforço necessários para um reprojeto de comando é um fator importante na decisão de usar uma faixa de opções.  
+3. Tornar os comandos descobertos. Escolha um design de guia que tenha um mapeamento claro, óbvio e exclusivo entre seus comandos e as guias rotuladas descritivo onde eles residem. Os usuários devem ser capazes de determinar com rapidez e confiança qual guia tem o comando que eles estão procurando e raramente escolher a guia errada.  
+4. Tornar os comandos autoexplicativos. Os usuários devem entender o efeito de um comando de seu rótulo, ícone, dica de ferramenta e versão prévia. Eles não devem ter que experimentar ou ler um tópico de Ajuda para ver como um comando funciona.  
+5. Tornar o uso dos comandos eficiente:
+    - Os usuários devem gastar a maior parte do tempo na guia Página Base.
+    - Os usuários raramente devem ter que alterar guias durante tarefas comuns.
+    - Quando a janela é maximizada e os usuários estão na guia correta, os comandos usados com mais frequência têm mais ênfase visual e os usuários podem invocá-los com um único clique. Os usuários podem executar todos os outros comandos na guia com no máximo quatro cliques.
+    - Os usuários não devem ter que abrir caixas de diálogo para dar comandos e alterar atributos em tarefas comuns.
+6. Ajude os usuários a escolher comandos e opções com segurança e minimizar a necessidade de avaliação e erro. Use comandos orientados a resultados sempre que apropriado, geralmente na forma de galerias e visualizações ao vivo.  
 7. Verifique se a faixa de faixas é dimensionada bem com os maiores tamanhos de janela para o menor.  
 
 ## <a name="design-concepts"></a>Conceitos de design
@@ -187,72 +187,72 @@ Embora as faixas de faixa possam não ser adequadas para todos os programas, tod
 
 ### <a name="ribbons-always-have-an-application-button-and-quick-access-toolbar"></a>As faixas de faixa sempre têm um botão do aplicativo e uma barra de ferramentas de acesso rápido
 
-O botão aplicativo e a barra de ferramentas de acesso rápido fornecem comandos que são úteis em qualquer contexto, reduzindo assim a necessidade de alterar as guias. Embora esses três componentes sejam logicamente independentes, uma faixa de faixas sempre deve ter um botão de aplicativo e uma barra de ferramentas de acesso rápido. Considerando que os comandos podem ser inseridos na faixa de opções ou no botão do aplicativo, você deve estar se perguntando onde inserir comandos. A escolha não é arbitrária.
+O botão Aplicativo e a Barra de Ferramentas de Acesso Rápido fornecem comandos úteis em qualquer contexto, reduzindo a necessidade de alterar guias. Embora esses três componentes sejam logicamente independentes, uma faixa de opções sempre deve ter um botão Aplicativo e uma Barra de Ferramentas de Acesso Rápido. Considerando que os comandos podem ir na faixa de opções ou no botão Aplicativo, você pode estar se perguntando onde colocar comandos. A escolha não é arbitrária.
 
-O botão aplicativo é usado para apresentar um menu de comandos que envolvem algo para ou com um arquivo, como comandos que tradicionalmente entram no menu arquivo para criar, abrir e salvar arquivos, imprimir e enviar e publicar documentos.
+O botão Aplicativo é usado para apresentar um menu de comandos que envolvem fazer algo com ou com um arquivo, como comandos que tradicionalmente vão no menu Arquivo para criar, abrir e salvar arquivos, imprimir e enviar e publicar documentos.
 
-Por outro lado, a faixa de faixas em si é para comandos que afetam o conteúdo da janela. Os exemplos incluem comandos usados para ler, modificar ou usar o conteúdo ou alterar a exibição.
+Por outro lado, a faixa de opções em si é para comandos que afetam o conteúdo da janela. Os exemplos incluem comandos usados para ler, modificar ou usar o conteúdo ou alterar a exibição.
 
-Se você usar uma faixa de faixas, também deverá usar um botão de aplicativo mesmo que seu programa não envolva documentos ou arquivos. Nesses casos, use o menu do aplicativo para apresentar comandos para impressão, opções de programa e sair do programa. Embora o botão aplicativo não seja necessário para esses programas, o uso dele proporciona consistência entre programas. Os usuários não precisam procurar por comandos salvar e desfazer ou opções de programa porque estão sempre no mesmo local.
+Se você usar uma faixa de opções, também deverá usar um botão Aplicativo mesmo que o programa não envolva documentos ou arquivos. Nesses casos, use o menu Aplicativo para apresentar comandos para impressão, opções de programa e saída do programa. Embora, indiscutivelmente, o botão Aplicativo não seja necessário para esses programas, usá-lo fornece consistência entre programas. Os usuários não precisam procurar comandos ou opções de programa salvar e desfazer porque estão sempre no mesmo lugar.
 
-A barra de ferramentas de acesso rápido é necessária mesmo se a faixa de faixas usar apenas uma guia. Novamente, embora, de forma imprecisa, esses programas não precisem de uma barra de ferramentas de acesso rápido (porque todos os comandos já estão presentes na guia única), ter uma barra de ferramentas de acesso rápido personalizável fornece consistência entre os programas. Por exemplo, se os usuários estiverem no hábito de clicar no comando Print, eles deverão ser capazes de fazer isso em qualquer programa que use uma faixa de uma.
+A Barra de Ferramentas de Acesso Rápido é necessária mesmo que a faixa de opções use apenas uma guia. Novamente, embora, indiscutivelmente, esses programas não precisem de uma Barra de Ferramentas de Acesso Rápido (porque todos os comandos já estão presentes na única guia), ter uma Barra de Ferramentas de Acesso Rápido personalizável fornece consistência entre programas. Por exemplo, se os usuários têm o hábito de clicar no comando Imprimir, eles devem ser capazes de fazer isso em qualquer programa que usa uma faixa de opções.
 
 ### <a name="organization-and-discoverability"></a>Organização e descoberta
 
-Ao fornecer guias e grupos, as faixas de faixa permitem que você Organize seus comandos para auxiliar na descoberta. O desafio é que, se a organização for desfeita de maneira ruim, ela poderá danificar muito a descoberta. Deve haver um mapeamento claro, óbvio e exclusivo entre seus comandos e as guias rotuladas descritivos e os grupos em que residem.
+Ao fornecer guias e grupos, as faixas de opções permitem organizar seus comandos para ajudar na descoberta. O desafio é que, se a organização for mal feita, ela poderá prejudicar muito a descoberta. Deve haver um mapeamento claro, óbvio e exclusivo entre seus comandos e as guias e grupos rotulados descritivo em que eles residem.
 
-Os usuários irão formar um modelo mental da faixa de faixas depois de usá-lo por algum tempo. Se esse modelo mental não fizer sentido para os usuários, for ineficiente ou estiver incorreto, levará à confusão e à frustração. **Seu objetivo mais importante na criação de uma faixa de, é facilitar a localização de comandos com rapidez e confiança. Se você não conseguir isso, o design da faixa de faixas falhará.** Atingir esse objetivo requer design cuidadoso, teste de usuário e iteração. Não presuma que será fácil.
+Os usuários formarão um modelo mental da faixa de opções depois de usá-lo por um tempo. Se esse modelo mental não fizer sentido para os usuários, for ineficiente ou estiver incorreto, isso levará a confusão e frustração. **Sua meta mais importante na criação de uma faixa de opções é facilitar a descoberta de comandos com rapidez e confiança. Se você não fizer isso, o design da faixa de opções falhará.** Atingir essa meta requer design cuidadoso, teste de usuário e iteração. Não suponha que será fácil.
 
-Aqui estão algumas armadilhas comuns a serem evitadas:
+Aqui estão algumas armadilhas comuns a evitar:
 
-- **Evite os nomes de guia e grupo genéricos.** Uma boa guia ou nome de grupo deve descrever com precisão seu conteúdo específico, preferencialmente usando a linguagem baseada em tarefas e metas. Evite nomes de guia e grupo genéricos, bem como nomes baseados em tecnologia. Por exemplo, quase qualquer comando em um programa de criação e de criação de documentos pode pertencer às guias rotuladas editar, Formatar, ferramentas, opções, avançado e muito mais. Conte com rótulos descritivos e específicos, sem memorização.
-- **Evite nomes de tabulação e de grupo muito específicos.** Embora queiramos que os nomes de tabulação e de grupo sejam específicos, eles não devem ser tão específicos que os usuários se surpreendam com seu conteúdo. Os usuários costumam procurar coisas usando o processo de eliminação, portanto, impeça que elas Desconsiderem suas guias ou grupos porque o nome é enganoso.
-- **Evite vários caminhos para o mesmo comando, especialmente se o caminho for inesperado ou se o comando exigir muitos cliques para invocar.** Pode parecer uma conveniência para encontrar um comando por meio de vários caminhos. Mas tenha em mente que, quando os usuários encontrarem o que estão procurando, eles param de olhar. É muito fácil para os usuários pressuporem que o primeiro caminho encontrado é o único caminho que é um problema sério se esse caminho for ineficiente ou inesperado. Além disso, ter comandos duplicados dificulta para os usuários a localização de outros comandos que estão sendo verificados.
+- **Evite nomes de guias e grupos genéricos.** Um bom nome de guia ou grupo deve descrever com precisão seu conteúdo específico, preferencialmente usando linguagem baseada em tarefa e meta. Evite nomes de guias e grupos genéricos, bem como nomes baseados em tecnologia. Por exemplo, quase qualquer comando em um documento criando e criando programa poderia pertencer a guias rotuladas Editar, Formatar, Ferramentas, Opções, Avançado e Muito mais. Dependa de rótulos descritivos específicos, não de memorização.
+- **Evite nomes de guias e grupos muito específicos.** Embora queiramos que os nomes de guias e grupos sejam específicos, eles não devem ser tão específicos que os usuários ficam surpresas com seu conteúdo. Os usuários geralmente pesquisam coisas usando o processo de eliminação, portanto, evitem ignorar suas guias ou grupos porque o nome é enganoso.
+- **Evite vários caminhos para o mesmo comando, especialmente se o caminho for inesperado ou se o comando exigir muitos cliques para invocar.** Pode parecer uma conveniência encontrar um comando por meio de vários caminhos. Mas tenha em mente que, quando os usuários encontram o que estão procurando, eles param de procurar. É muito fácil para os usuários presumirem que o primeiro caminho que eles encontram é o único caminho que é um problema sério se esse caminho for ineficiente ou inesperado. Além disso, ter comandos duplicados torna mais difícil para os usuários encontrar outros comandos que estão procurando.
 
-![captura de tela do comando caminho indireto para bordas ](images/cmd-ribbons-image12.png)
+![captura de tela do comando de caminho indireto para bordas ](images/cmd-ribbons-image12.png)
 
-Neste exemplo, você pode alterar as bordas do parágrafo por meio do comando bordas da página, mesmo que haja um caminho mais direto na guia página inicial. Se os usuários que procuram bordas de parágrafos depararem com esse caminho inesperado, eles poderão pressupor facilmente que é o único caminho.
+Neste exemplo, você pode alterar bordas de parágrafo por meio do comando Bordas da Página, mesmo que haja um caminho mais direto na guia Início. Se os usuários que procuram bordas de parágrafo fossem se deparar com esse caminho inesperado, eles poderiam facilmente supor que esse é o único caminho.
 
-- **Evite o posicionamento de comandos arbitrários.** Suponha que você ache que tem uma boa guia e design de grupo, mas descobre que vários comandos não se ajustam. É provável que seu design de guia e de grupo não seja tão bom quanto você imagina, e você precisa continuar a refiná-lo. Não resolva esse problema colocando os comandos onde eles não pertencem. Se você fizer isso, os usuários provavelmente terão que inspecionar cada guia para encontrá-los e, em seguida, esquecerem de onde eles estão.
-- **Evite o posicionamento baseado em marketing.** Suponha que você tenha uma nova versão do seu programa e sua equipe de marketing realmente queira promover seus novos recursos. Pode ser tentador colocá-los na guia Home, mas isso é um erro dispendioso se prejudicar a descoberta geral. Considere as versões futuras do seu produto e a quantidade de frustração que uma organização em constante mudança causará.
+- **Evite o posicionamento arbitrário de comandos.** Suponha que você pense que tem uma boa guia e design de grupo, mas descubra que vários comandos simplesmente não se ajustam. É provável que seu design de guia e grupo não seja tão bom quanto você acha que é e você precisa continuar a refiná-lo. Não resolva esse problema colocando esses comandos onde eles não pertencem. Se você fizer isso, os usuários provavelmente terão que inspecionar cada guia para encontrá-las e, em seguida, esquecer imediatamente onde estão.
+- **Evite o posicionamento baseado em marketing.** Suponha que você tenha uma nova versão do programa e sua equipe de marketing realmente queira promover seus novos recursos. Pode ser uma tentação colocá-los na guia Página Base, mas fazer isso é um erro caro se prejudicar a descoberta geral. Considere as versões futuras do seu produto e a frustração que uma organização em constante mudança causará.
 
 ### <a name="tabs"></a>Guias
 
-A melhor primeira etapa é examinar as [guias da faixa](#standard-ribbon-tabs)de forma padrão. Se os comandos de seu programa forem mapeados naturalmente nas guias padrão, baseie sua organização com guias sobre esses padrões. Por outro lado, se os comandos do programa não mapearem naturalmente, não tente forçá-lo. Determine uma estrutura mais natural e certifique-se de executar muitos testes de usuário para garantir que você o tenha certo.
+A melhor primeira etapa é revisar as [guias de faixa de opções padrão](#standard-ribbon-tabs). Se os comandos do programa mapearem naturalmente para as guias padrão, basee sua organização de guias nesses padrões. Por outro lado, se os comandos do programa não mapearem naturalmente, não tente forçá-lo. Determine uma estrutura mais natural e certifique-se de executar muitos testes de usuário para garantir que você a tenha correto.
 
 Para guias não padrão, considere estes problemas:
 
-- **Cada nome de guia deve descrever seu conteúdo.** Escolha nomes significativos que sejam específicos, mas não muito específicos. Os usuários nunca devem ficar surpresos com o conteúdo.
+- **Cada nome de guia deve descrever seu conteúdo.** Escolha nomes significativos específicos, mas não muito específicos. Os usuários nunca devem se surpresar com seu conteúdo.
 - **Cada nome de guia deve refletir sua finalidade.** Considere a meta ou a tarefa associada aos comandos.
-- **Cada nome de guia deve ser claramente diferente de todos os outros nomes de guias.**
+- **Cada nome de guia deve ser claramente diferente de todos os outros nomes de tabulação.**
 
-A guia página inicial é uma exceção a essas considerações. Embora você não precise ter uma guia início, a maioria dos programas deve. A guia página inicial é a primeira guia e contém os comandos usados com mais frequência. Se você tiver usado comandos com frequência que não se ajustam às outras guias, a guia página inicial será o lugar certo para eles.
+A guia Página Home é uma exceção a essas considerações. Embora você não tenha que ter uma guia Página Principal, a maioria dos programas deve. A guia Início é a primeira guia e contém os comandos usados com mais frequência. Se você tiver usado comandos que não se ajustam às outras guias com frequência, a guia Página Página 1 é o lugar certo para elas.
 
-Se você não puder determinar um nome de guia descritivo e significativo, é provável que a guia não seja bem projetada. Se sua organização da faixa de faixas não estiver funcionando, reconsidere o design da guia.
+Se você não puder determinar um nome de guia significativo e descritivo, provavelmente será porque a guia não foi bem projetada. Se sua organização da faixa de opções simplesmente não estiver funcionando, reverte o design da guia.
 
 ### <a name="groups"></a>Grupos
 
-A divisão de comandos em grupos estrutura os comandos em conjuntos relacionados. O rótulo do grupo explica a finalidade comum de seus comandos.
+Dividir comandos em grupos estrutura os comandos em conjuntos relacionados. O rótulo do grupo explica a finalidade comum de seus comandos.
 
 Há uma variedade de fatores a considerar ao determinar grupos e sua apresentação:
 
-- **Agrupamento padrão.** Embora haja diferenças significativas nos comandos entre programas, há [grupos padrão](#standard-ribbon-groups) comuns em vários programas. Ter esses comandos exibidos com os mesmos nomes e locais semelhantes melhora muito a descoberta.
+- **Agrupamento padrão.** Embora haja diferenças significativas em comandos entre programas, há grupos [padrão](#standard-ribbon-groups) que são comuns em muitos programas. Fazer com que esses comandos apareçam com os mesmos nomes e locais semelhantes melhora muito a capacidade de descoberta.
 
 | Correto                                                                                      | Incorreto                                                                         |
 |----------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
-| ![captura de tela de zoom separado do grupo de edição ](images/cmd-ribbons-image13.png)<br/>O grupo de comandos de edição inclui todos os comandos de edição, mas não inclui o comando de zoom.         | ![captura de tela do zoom incluído no grupo de edição ](images/cmd-ribbons-image14.png)<br/>O comando de zoom não é um comando de edição, mas está no grupo de edição. |
+| ![captura de tela do zoom separado do grupo de edição ](images/cmd-ribbons-image13.png)<br/>O grupo de comandos de edição inclui todos os comandos de edição, mas não inclui o comando Zoom.         | ![captura de tela do zoom incluído no grupo de edição ](images/cmd-ribbons-image14.png)<br/>O comando Zoom não é um comando de edição, mas está no grupo de edição. |
 
-- **Granularidade.** Alguma estrutura é boa, mas muita estrutura torna os comandos mais difíceis de encontrar. Se os nomes de grupo forem genéricos, talvez você não tenha granularidade suficiente. Se houver grupos com apenas um ou dois comandos, você provavelmente terá muito (embora ter uma galeria na faixa de tipos sem outros comandos dentro de um grupo seja aceitável).
-
-| Correto                                                                                                 | Incorreto                                                                                                  |
-|-------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
-| ![captura de tela de zoom separado do grupo de edição ](images/cmd-ribbons-image13.png)<br/> O grupo de comandos de edição inclui todos os comandos de edição| ![captura de tela da divisão de grupo de edição em dois grupos ](images/cmd-ribbons-image15.png)<br/>O grupo de comandos de edição foi dividido em seções que são muito granulares. Evite grupos com apenas um ou dois comandos.|
-
-- **Nomes.** Bons nomes de grupo explicam a finalidade de seus comandos. Se os nomes de grupo não tiverem, reconsidere o nome ou o agrupamento. Se você não puder determinar um nome descritivo e significativo, é provável que o grupo não esteja bem projetado.
+- **Granularidade.** Alguma estrutura é boa, mas a estrutura demais dificulta a encontrar comandos. Se os nomes de grupo são genéricos, talvez você não tenha granularidade suficiente. Se houver grupos com apenas um ou dois comandos, você provavelmente terá muito (embora ter uma galeria na faixa de opções sem outros comandos em um grupo seja aceitável).
 
 | Correto                                                                                                 | Incorreto                                                                                                  |
 |-------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
-| ![captura de tela de comandos divididos em quatro grupos ](images/cmd-ribbons-image17.png) <br/> Use nomes de grupo que sejam específicos o suficiente para descrever os comandos contidos no grupo. | ![captura de tela do grupo de formatos com vários comandos ](images/cmd-ribbons-image16.png) <br/> Esse nome de grupo é muito vago para ser útil. Uma abordagem melhor seria reorganizar esses comandos em grupos mais específicos. |
+| ![captura de tela do zoom separado do grupo de edição ](images/cmd-ribbons-image13.png)<br/> O grupo de comandos de edição inclui todos os comandos de edição| ![captura de tela da divisão do grupo de edição em dois grupos ](images/cmd-ribbons-image15.png)<br/>O grupo de comandos de edição foi dividido em seções muito granulares. Evite grupos com apenas um ou dois comandos.|
+
+- **Nomes.** Bons nomes de grupo explicam a finalidade de seus comandos. Se os nomes de grupo não o deem, remente o nome ou o grupo. Se você não puder determinar um nome significativo e descritivo, provavelmente será porque o grupo não foi bem projetado.
+
+| Correto                                                                                                 | Incorreto                                                                                                  |
+|-------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
+| ![captura de tela de comandos divididos em quatro grupos ](images/cmd-ribbons-image17.png) <br/> Use nomes de grupo específicos o suficiente para descrever os comandos contidos no grupo. | ![captura de tela do grupo de formatos com vários comandos ](images/cmd-ribbons-image16.png) <br/> Esse nome de grupo é muito indefinitivo para ser útil. Uma abordagem melhor seria reorganizar esses comandos em grupos mais específicos. |
 
 - **Ordene.** As pessoas lidam em uma ordem da esquerda para a direita (em culturas ocidentais), portanto, você pode imaginar que os grupos na extrema esquerda são os mais perceptíveis. No entanto, o nome da guia realçado e o conteúdo da janela tendem a atuar como [pontos focal](vis-layout.md), de modo que os grupos no centro da guia geralmente recebam mais atenção do que o grupo mais à esquerda. Coloque os grupos usados com mais frequência nos locais mais proeminentes e verifique se há um fluxo lógico para os grupos na guia.
 
@@ -290,7 +290,7 @@ Neste exemplo, miniaturas realísticas são usadas para mostrar as diferentes ma
 
 ![captura de tela da Galeria de estilos de parágrafo ](images/cmd-ribbons-image24.png)
 
-Neste exemplo, o Microsoft Word altera a Galeria de estilos para refletir os estilos atuais.
+neste exemplo, Microsoft Word altera a galeria de estilos para refletir os estilos atuais.
 
 ![captura de tela dos botões de comando de formatação de texto ](images/cmd-ribbons-image25.png)
 
@@ -369,7 +369,7 @@ Sempre que for prático, mapeie os comandos do programa para essas guias padrão
 - **Inserido.** Contém comandos para inserir conteúdo e objetos em um documento. Se usado, é sempre a segunda guia.
 - **Layout da página.** Contém comandos que afetam o layout da página, incluindo temas, configuração de página, planos de fundo de página, recuo, espaçamento e posicionamento. (Observe que os grupos de recuo e espaçamento podem estar na guia início, em vez disso, se houver espaço suficiente.) Se usado, é sempre a terceira guia.
 - **Revê.** Contém comandos para adicionar comentários, controlar alterações e comparar versões.
-- **Exibição.** Contém comandos que afetam o modo de exibição de documento, incluindo modo de exibição, opções de mostrar/ocultar, zoom, gerenciamento de janelas e macros tradicionalmente encontrados na categoria de menu do Windows. Se usado, é a última guia regular, a menos que a guia desenvolvedor esteja sendo exibida.
+- **Exibição.** contém comandos que afetam o modo de exibição de documento, incluindo modo de exibição, opções de mostrar/ocultar, zoom, gerenciamento de janelas e macros tradicionalmente encontrados na categoria de menu Windows. Se usado, é a última guia regular, a menos que a guia desenvolvedor esteja sendo exibida.
 - **Desenvolvedor.** Contém comandos usados somente por desenvolvedores. Se usado, ele fica oculto por padrão e a última guia regular quando exibido.
 
 A maioria dos programas não precisa das guias revisão e desenvolvedor.
@@ -496,42 +496,42 @@ Sempre que for prático, mapeie os comandos do programa para esses grupos padrã
 - Para galerias suspensas, use miniaturas de 16x16, 32x32, 48x48, 64x48, 72x96, 96x72, 96x96 ou 128x128 pixels.
 - Todos os itens da Galeria devem ter o mesmo tamanho de miniatura.
 
-Para galerias na faixa de bits:
+Para galerias na faixa de opções:
 
-- **Exibir um mínimo de três opções; mais se houver espaço.** Se não houver espaço suficiente para exibir pelo menos três opções no tamanho típico da janela, use uma galeria suspensa em vez disso.
-- **Expanda as galerias de faixa de bits para aproveitar o espaço disponível.** Use o espaço adicional para mostrar mais itens e torná-los mais fáceis de escolher com um único clique.
+- **Exibir um mínimo de três opções; mais se houver espaço.** Se não houver espaço suficiente para exibir pelo menos três opções no tamanho típico da janela, use uma galeria de lista de opções.
+- **Expanda galerias na faixa de opções para aproveitar o espaço disponível.** Use o espaço adicional para mostrar mais itens e torná-los mais fáceis de escolher com um único clique.
 
-Para galerias suspensas:
+Para galerias de lista de usuários:
 
-- **Exiba a Galeria de uma caixa de combinação, lista suspensa, botão de divisão ou botão de menu.**
-- **Se o usuário clicar na janela principal para ignorar a Galeria suspensa, apenas ignore a Galeria sem selecionar ou modificar o conteúdo da janela principal.**
-- **Se uma galeria tiver muitas opções e algumas opções forem usadas raramente, Simplifique a Galeria padrão concentrando-se nas opções usadas com frequência.** Para os comandos restantes, forneça um comando apropriado na parte inferior da lista suspensa galeria.
-  - Se o comando mostrar uma lista de mais variações, nomeie-a como "mais `singular feature name` opções..."
-  - Se o comando apresentar uma caixa de diálogo que permite aos usuários criar suas próprias opções personalizadas, nomeie-o como "Custom `feature name` ..."
-- **Organize as opções em grupos, se isso tornar a navegação mais eficiente.**
-- ![captura de tela de galeria de símbolos e filtros ](images/cmd-ribbons-image44.png)<br/>**Se uma galeria tiver muitos itens, considere adicionar um filtro para ajudar os usuários a localizar escolhas com mais eficiência.** Para evitar confusão, inicialmente, exiba a Galeria sem filtro. No entanto, a maioria das galerias não deve exigir um filtro porque eles não devem ter tantas opções, e o uso de grupos deve ser suficiente.
+- **Exibir a galeria de uma caixa de combinação, lista de menus suspensos, botão de divisão ou botão de menu.**
+- **Se o usuário clicar na janela principal para descartar a galeria listada, basta descartar a galeria sem selecionar ou modificar o conteúdo da janela principal.**
+- **Se uma galeria tiver muitas opções e algumas opções raramente são usadas, simplifique a galeria padrão concentrando-se nas opções comumente usadas.** Para os comandos restantes, forneça um comando apropriado na parte inferior da lista de menus da galeria.
+  - Se o comando mostrar uma lista de mais variações, nomee-o como "Mais `singular feature name` opções..."
+  - Se o comando apresentar uma caixa de diálogo que permite que os usuários criem suas próprias opções personalizadas, nomeia-a como `feature name` "Personalizado..."
+- **Organize as opções em grupos, se isso fizer isso, torna a navegação mais eficiente.**
+- ![captura de tela da galeria de símbolos e filtros ](images/cmd-ribbons-image44.png)<br/>**Se uma galeria tiver muitos itens, considere adicionar um filtro para ajudar os usuários a encontrar opções com mais eficiência.** Para evitar confusão, inicialmente, exibe a galeria não filtrada. No entanto, a maioria das galerias não deve exigir um filtro porque elas não devem ter muitas opções e usar grupos deve ser suficiente.
 
 ### <a name="command-previews"></a>Visualizações de comando
 
-- **Use visualizações para mostrar o efeito de um comando sem que os usuários precisem executá-lo primeiro.** Usando as visualizações úteis, você pode melhorar a eficiência e a facilidade de aprendizado de seu programa e reduzir a necessidade de avaliação e erro. Para os diferentes tipos de visualizações de comando, consulte [visualizações](#previews) na seção conceitos de design deste artigo.
-- **Para visualizações dinâmicas, verifique se a visualização pode ser aplicada e o estado atual restaurado em 500 milissegundos.** Isso requer a capacidade de aplicar alterações de formatação rapidamente e de forma a ser passível de interrupção. Os usuários devem ser capazes de avaliar diferentes opções rapidamente para que as visualizações dinâmicas tenham seu benefício total.
-- **Evite usar texto em visualizações.** Caso contrário, as imagens de visualização precisarão ser localizadas.
+- **Use previews para mostrar o efeito de um comando sem que os usuários o executem primeiro.** Usando visualizações úteis, você pode melhorar a eficiência e a facilidade de aprendizado do programa e reduzir a necessidade de avaliação e erro. Para os diferentes tipos de visualizações de comando, consulte [Visualizações](#previews) na seção Conceitos de Design deste artigo.
+- **Para visualizações ao vivo, certifique-se de que a versão prévia possa ser aplicada e o estado atual restaurado em 500 milissegundos.** Isso requer a capacidade de aplicar alterações de formatação rapidamente e de uma maneira que seja interruptível. Os usuários devem ser capazes de avaliar opções diferentes rapidamente para que as visualizações ao vivo tenham seu benefício completo.
+- **Evite usar texto em visualizações.** Caso contrário, as imagens de visualização deverão ser localizadas.
 
 ### <a name="icons"></a>Ícones
 
-- ![captura de tela de lista suspensa e caixas de seleção ](images/cmd-ribbons-image45.png)<br/>**Forneça ícones para todos os controles da faixa de opção, exceto listas suspensas, caixas de seleção e botões de rádio.** A maioria dos comandos exigirá ícones de 32x32 e 16x16 pixels (somente ícones de 16x16 pixels são usados pela barra de ferramentas de acesso rápido). As galerias normalmente usam ícones de 48x48 de 16x16, de 64x48 ou de pixels.
+- ![captura de tela da lista lista e caixas de seleção ](images/cmd-ribbons-image45.png)<br/>**Forneça ícones para todos os controles de faixa de opções, exceto listas listadas, caixas de seleção e botões de rádio.** A maioria dos comandos exigirá ícones de 32 x 32 e 16 x 16 pixels (somente ícones de 16 x 16 pixels são usados pela Barra de Ferramentas de Acesso Rápido). As galerias normalmente usam ícones de 16 x 16, 48 x 48 ou 64 x 48 pixels.
 - **Forneça ícones exclusivos.** Não use o mesmo ícone para comandos diferentes.
-- **Certifique-se de que os ícones da faixa de faixas estejam claramente visíveis em relação à cor da faixa de** Sempre avalie os ícones da faixa de posição no contexto e no modo de alto contraste.
-- **Escolha os designs de ícone que comunicam claramente seu efeito,** especialmente para os comandos usados com mais frequência. As faixas de faixa bem projetadas têm ícones autoexplicativos para ajudar os usuários a localizar e entender os comandos com eficiência.
-- **Escolha ícones que sejam reconhecíveis e distinguíveis,** especialmente para os comandos usados com mais frequência. Verifique se os ícones têm formas e cores distintivos. Isso ajuda os usuários a localizar os comandos rapidamente, mesmo que não se lembrem do símbolo de ícone.
+- **Certifique-se de que os ícones da faixa de opções estão claramente visíveis em relação à cor da tela de fundo da faixa de opções.** Sempre avalie ícones de faixa de opções no contexto e no modo de alto contraste.
+- **Escolha designs de ícone que comuniquem claramente seu efeito,** especialmente para os comandos usados com mais frequência. Faixas de opções bem projetadas têm ícones autoexplicativos para ajudar os usuários a encontrar e entender comandos com eficiência.
+- **Escolha ícones reconhecíveis e diferenciáveis,** especialmente para os comandos usados com mais frequência. Certifique-se de que os ícones tenham cores e formas distintas. Isso ajuda os usuários a encontrar os comandos rapidamente, mesmo que eles não se lembre do símbolo de ícone.
 
     | Correto                                                                                                 | Incorreto                                                                               |
     |--------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------|
-    | ![captura de tela do conta-gotas de olho azul e lápis amarelo ](images/cmd-ribbons-image46.png)<br/>Use forma e cor para criar ícones que são fáceis de distinguir. | ![captura de tela do conta-gotas de olho azul e lápis azul ](images/cmd-ribbons-image47.png)<br/> Os ícones que têm a mesma cor são difíceis de distinguir|
+    | ![captura de tela do dropper de olho azul e lápis amarelo ](images/cmd-ribbons-image46.png)<br/>Use forma e cor para tornar ícones fáceis de distinguir. | ![captura de tela do dropper de olho azul e lápis azul ](images/cmd-ribbons-image47.png)<br/> Ícones que têm a mesma cor são difíceis de distinguir|
 
-- ![captura de tela do comando de comentários no contêiner Popup ](images/cmd-ribbons-image48.png)<br/>**Considere a criação de ícones de grupos de pop-up colocando o ícone de 16x16 pixels do comando mais proeminente no grupo dentro de um contêiner visual de 32 pixels.** Você não precisa criar ícones diferentes para grupos pop-up.
-- ![captura de tela dos botões de comando de formatação de texto ](images/cmd-ribbons-image25.png)<br/>**Se for útil, altere o ícone para refletir o estado atual.** Fazer isso é especialmente útil para botões de divisão cujo efeito padrão pode ser alterado.
-- **Verifique se os ícones da faixa de medida estão em conformidade com as diretrizes de ícone do estilo Aero.** No entanto, os ícones da faixa de faixas são exibidos diretamente em, em vez de serem mostrados em perspectiva.
+- ![captura de tela do comando comments no contêiner pop-up ](images/cmd-ribbons-image48.png)<br/>**Considere criar ícones de grupo pop-up colocando o ícone de 16 x 16 pixels do comando mais proeminente no grupo dentro de um contêiner visual de 32 x 32 pixels.** Você não precisa criar ícones diferentes para grupos pop-up.
+- ![captura de tela dos botões de comando de formatação de texto ](images/cmd-ribbons-image25.png)<br/>**Se for útil, altere o ícone para refletir o estado atual.** Fazer isso é especialmente útil para botões divididos cujo efeito padrão pode ser alterado.
+- **Certifique-se de que os ícones de faixa de opções estão em conformidade com as diretrizes do ícone de estilo aero.** No entanto, os ícones de faixa de opções são mostrados diretamente em vez de serem mostrados em perspectiva.
 
 | Correto                                                                                                 | Incorreto                                                                               |
     |--------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------|
@@ -539,50 +539,50 @@ Para galerias suspensas:
  
 ### <a name="enhanced-tooltips"></a>Dicas de ferramentas aprimoradas
 
-- **Todos os comandos da faixa de ferramentas devem ter dicas de ferramenta aprimoradas** para fornecer o nome do comando, a tecla de atalho, a descrição e as informações complementares opcionais. Evite dicas de ferramenta que simplesmente redeclarem o rótulo.
+- **Todos os comandos da faixa de opções devem** ter dicas de ferramenta aprimoradas para dar o nome do comando, a tecla de atalho, a descrição e as informações complementares opcionais. Evite dicas de ferramenta que simplesmente restate o rótulo.
 
     **Incorreto:**
 
     ![captura de tela da dica de ferramenta que repete o nome do comando ](images/cmd-ribbons-image51.png)
 
-    Neste exemplo, a dica de ferramenta simplesmente renomeia o rótulo de comando.
+    Neste exemplo, a dica de ferramenta simplesmente restauria o rótulo do comando.
 
-- **Quando for prático, descreva completamente o comando usando uma descrição concisa.** Vincule-se à ajuda somente se uma explicação adicional for realmente necessária.
+- **Quando prático, descreva completamente o comando usando uma descrição concisa.** Link para Ajuda somente se mais explicações são realmente necessárias.
 
     **Incorreto:**
 
     ![captura de tela da dica de ferramenta para o comando tachado ](images/cmd-ribbons-image52.png)
 
-    Neste exemplo, o comando não precisa de ajuda.
+    Neste exemplo, o comando não precisa de Ajuda.
 
-- **Quando for útil, ilustre o efeito do comando usando uma visualização.**
+- **Quando útil, ilustra o efeito do comando usando uma versão prévia.**
 
-    ![captura de tela de dica de ferramenta e grafo para inserir gráfico ](images/cmd-ribbons-image53.png)
+    ![captura de tela da dica de ferramenta e do gráfico para inserir gráfico ](images/cmd-ribbons-image53.png)
 
-    Neste exemplo, a imagem de dica de ferramenta ilustra o efeito do comando.
+    Neste exemplo, a imagem da dica de ferramenta ilustra o efeito do comando.
 
-Para obter diretrizes de rotulamento, consulte [Rótulos de dica de ferramenta aprimorados](#enhanced-tooltips).
+Para diretrizes de rotulagem, consulte [Rótulos de dica de ferramenta aprimorados.](#enhanced-tooltips)
 
-### <a name="access-keys-and-keytips"></a>Teclas de acesso e dicas de tecla
+### <a name="access-keys-and-keytips"></a>Chaves de acesso e dicas de chave
 
-Keytips são o mecanismo usado para exibir chaves de acesso para comandos exibidos diretamente em uma faixa de faixas.
+Dicas de tecla são o mecanismo usado para exibir chaves de acesso para comandos exibidos diretamente em uma faixa de opções.
 
-As chaves de acesso para comandos de menu suspenso são indicadas com um caractere sublinhado. Elas diferem das chaves de acesso de menu das seguintes maneiras:
+As chaves de acesso para comandos de menu suspenso são indicadas com um caractere sublinhado. Elas diferem das chaves de acesso do menu das seguintes maneiras:
 
-- Podem ser usadas duas chaves de acesso de caractere. Por exemplo, FP pode ser usado para acessar o comando de pincel de formatação.
-- As atribuições de chave de acesso são mostradas usando dicas em vez de sublinhados, portanto, a largura de caractere e os descendentes não são um fator para fazer atribuições.
+- Duas chaves de acesso de caractere podem ser usadas. Por exemplo, o FP pode ser usado para acessar o comando Format desatar.
+- As atribuições de chave de acesso são mostradas usando dicas em vez de sublinhados, portanto, a largura e os descendentes de caracteres não são um fator para fazer atribuições.
 
-- **Atribua chaves de acesso a todos os comandos e guias da faixa de e.** A única exceção possível é para comandos provenientes de suplementos herdados.
-- **Para o botão aplicativo e a barra de ferramentas de acesso rápido:**
-  - Atribua F ao botão do aplicativo. Essa atribuição é usada devido à similaridade do botão do aplicativo para o menu de arquivo tradicional.
-  - ![captura de tela de dicas de atalho de comando em uma faixa de faixas ](images/cmd-ribbons-image54.png)<br/>Para a barra de ferramentas de acesso rápido e as listas de arquivos usados recentemente, atribua chaves de acesso numericamente.
-- ![captura de tela mostrando KeyTips para guias ](images/cmd-ribbons-image55.png)<br/>**Para guias:**
-  - Atribua H a página inicial.
+- **Atribua chaves de acesso a todas as guias e comandos da faixa de opções.** A única exceção possível é para comandos provenientes de complementos herdado.
+- **Para o botão Aplicativo e a Barra de Ferramentas de Acesso Rápido:**
+  - Atribua F ao botão Aplicativo. Essa atribuição é usada devido à similaridade do botão Aplicativo com o menu Arquivo tradicional.
+  - ![captura de tela de dicas de tecla de comando em uma faixa de opções ](images/cmd-ribbons-image54.png)<br/>Para a Barra de Ferramentas de Acesso Rápido e listas de arquivos usadas recentemente, atribua chaves de acesso numericamente.
+- ![captura de tela mostrando dicas de tecla para guias ](images/cmd-ribbons-image55.png)<br/>**Para guias:**
+  - Atribua H à Página Home.
   - Começando com as guias usadas com mais frequência, atribua a primeira letra do rótulo.
-  - Para qualquer guia que não possa ser atribuída à primeira letra, escolha uma consoante distinta ou uma vogal no rótulo.
-  - Para programas que usaram suporte para barras de menu, busque manter a compatibilidade de chave de acesso com a melhor extensão prática. Evite atribuir diferentes significados para acessar chaves de categorias de menu herdadas. Por exemplo, se a versão da barra de menus herdada de um programa tivesse um menu Editar, busque usar uma tecla de acesso E para a guia equivalente. Se não houver nenhuma guia equivalente, não atribua uma tecla de acesso E a qualquer guia para evitar confusão.
-- ![captura de tela mostrando KeyTips para uma faixa de uma ](images/cmd-ribbons-image56.png)<br/>**Para comandos, menus e submenus da faixa de medida:**
-  - Atribua combinações de teclas de acesso exclusivas dentro de uma guia. Você pode reutilizar combinações de teclas de acesso dentro de guias diferentes.
+  - Para todas as guias que não podem ser atribuídas à primeira letra, escolha uma consoante distinta ou uma voga no rótulo.
+  - Para programas que costumavam dar suporte a barras de menu, procure manter a compatibilidade da chave de acesso com a melhor extensão prática. Evite atribuir significados diferentes para acessar chaves de categorias de menu herdadas. Por exemplo, se a versão da barra de menus herdada de um programa tiver um menu Editar, procure usar uma chave de acesso E para a guia equivalente. Se não houver nenhuma guia equivalente, não atribua uma chave de acesso E a nenhuma guia para evitar confusão.
+- ![captura de tela mostrando dicas de tecla para uma faixa de opções ](images/cmd-ribbons-image56.png)<br/>**Para comandos, menus e submenus da faixa de opções:**
+  - Atribua combinações de chave de acesso exclusivas em uma guia. Você pode reutilizar combinações de teclas de acesso em guias diferentes.
   - Sempre que possível, atribua as chaves de acesso padrão para comandos comumente usados. Consulte a [tabela de chave de acesso padrão](inter-keyboard.md).
   - Para outros comandos:
     - Para os comandos usados com mais frequência, escolha letras no início da primeira ou segunda palavra do rótulo, preferivelmente a primeira letra.
@@ -609,7 +609,7 @@ Para obter diretrizes de teclas de atalho, consulte [teclado](inter-keyboard.md)
   - Imprimir...
   - Impressão rápida  
   - Visualizar impressão  
-  - Feche  
+  - Fechar  
   - Opções  
   - Fechar  
   
@@ -670,71 +670,71 @@ Para obter diretrizes de teclas de atalho, consulte [teclado](inter-keyboard.md)
 
 ### <a name="contextual-tab-and-tab-set-labels"></a>Rótulos de guia contextual e conjunto de guias
 
-- **Terminar guia contextual defina rótulos com "ferramentas".** Isso ajuda a identificar a finalidade das guias contextuais.
+- **Encerrar rótulos de conjunto de guias contextuais com "Ferramentas".** Isso ajuda a identificar a finalidade das guias contextuais.
 - Use a capitalização de estilo de título.
 - Não use pontuação final.
 
 ### <a name="group-labels"></a>Rótulos de grupo
 
-- **Rotule todos os grupos** , a menos que o grupo tenha um único comando e os rótulos de grupo e comando sejam os mesmos.
+- **Rotule todos os** grupos, a menos que o grupo tenha um único comando e os rótulos de grupo e comando sejam os mesmos.
 
-- **Use a faixa de groupsWhenever padrão prática.**
-- **Prefira rótulos concisos e de palavras simples.** Embora os rótulos de várias palavras sejam aceitáveis, eles ocupam mais espaço e são mais difíceis de localizar.
-- **Escolha nomes de grupos significativos que descrevam claramente e precisamente seu conteúdo.** Os nomes devem ser específicos, não genéricos.
-- **Escolha os nomes de grupo que refletem sua finalidade.** Considere as metas ou tarefas associadas aos comandos no grupo.
-- **Evite usar gerúndios** (nomes que terminam em "-ing"). No entanto, você pode usar gerúndios se estiver usando o verbo do qual o gerund é derivado seria confuso. Por exemplo, use "edição" e "prova" em vez de "Editar" e "prova".
-- **Não use nomes de grupo que sejam iguais aos nomes de guias.** Usar o nome da guia em que o grupo está em não fornece informações e usar o nome de uma guia diferente é confuso.
-- **Prefira nomes singulares.** No entanto, você pode usar um nome de pural se o nome do singular for estranho. 
+- **Use os grupos de faixa de opções padrãoTodos os práticos.**
+- **Prefira rótulos concisos e de palavra única.** Embora rótulos de várias palavras sejam aceitáveis, eles levam mais espaço e são mais difíceis de ser localizados.
+- **Escolha nomes de grupo significativos que descrevam seu conteúdo com clareza e precisão.** Os nomes devem ser específicos, não genéricos.
+- **Escolha nomes de grupo que reflitam sua finalidade.** Considere as metas ou tarefas associadas aos comandos no grupo.
+- **Evite usar gerunds** (nomes que terminam em "-ing"). No entanto, você pode usar gerunds se usar o verbo do qual o gerund é derivado seria confuso. Por exemplo, use "Edição" e "Prova" em vez de "Editar" e "Prova".
+- **Não use nomes de grupo que sejam iguais aos nomes de tabulação.** Usar o nome da guia em que o grupo está não fornece informações e usar o nome de uma guia diferente é confuso.
+- **Prefira nomes singulares.** No entanto, você poderá usar um nome pural se o nome singular for estranho. 
 - **Use a capitalização com estilo de frase.**
 - **Não use pontuação final.**
 
 ### <a name="command-labels"></a>Rótulos de comando
 
-- **Rotular todos os comandos.** Ter rótulos de texto explícitos ajuda os usuários a localizar e entender os comandos. **Exceção:** Um comando poderá não ser rotulado se seu ícone for extremamente conhecido e o espaço estiver em um Premium. Provavelmente, os comandos sem rótulo estarão na guia página inicial. Nesse caso, atribua sua propriedade Name a um rótulo de texto apropriado. Isso permite que produtos de tecnologia assistencial, como leitores de tela, forneçam aos usuários informações alternativas sobre o gráfico.
-- **Para botões de comando, use um rótulo conciso e coexplicativo.** Use uma única palavra, se possível; máximo de quatro palavras.
-- **Para listas suspensas, se a lista sempre tiver um valor, use o valor atual como o rótulo.**
-- ![captura de tela do prompt de catálogos de endereços de pesquisa ](images/cmd-ribbons-image67.png)<br/>Se uma [lista suspensa editável](/windows/desktop/uxguide/ctrl-drop) não tiver um valor, use um [prompt](glossary.md).
-- **Listas suspensas que não são autoexplicativas ou raramente usadas precisam de um rótulo explícito.** Coloque dois-pontos no final do rótulo.
-- ![captura de tela de automaticamente após: \[ segundos \] ](images/cmd-ribbons-image69.png)<br. >**para caixas de texto, use um rótulo explícito.** Coloque dois-pontos no final do rótulo.
-- **Use a capitalização com estilo de frase.** Fazer isso é mais apropriado para o [Tom](text-style-tone.md)do Windows.
-- **Inicie o rótulo com um verbo imperativo.** a menos que seja o mesmo que o nome da guia ou do grupo ou um verbo comum, como mostrar, criar, inserir ou Formatar.
+- **Rotule todos os comandos.** Ter rótulos de texto explícito ajuda os usuários a encontrar e entender comandos. **Exceção:** Um comando poderá ser sem rótulo se seu ícone for extremamente conhecido e o espaço estiver em um premium. Provavelmente, os comandos sem rótulo estarão na guia Página Base. Nesse caso, atribua sua propriedade Name a um rótulo de texto apropriado. Isso permite que produtos de tecnologia adaptativa, como leitores de tela, forneçam aos usuários informações alternativas sobre o gráfico.
+- **Para botões de comando, use um rótulo conciso e autoexplicativo.** Use uma única palavra, se possível; máximo de quatro palavras.
+- **Para listas listadas, se a lista sempre tiver um valor, use o valor atual como o rótulo.**
+- ![captura de tela do prompt de livros de endereços de pesquisa ](images/cmd-ribbons-image67.png)<br/>Se uma [lista de listas listadas editáveis](/windows/desktop/uxguide/ctrl-drop) não tiver um valor, use um [prompt](glossary.md).
+- **Listas listadas que não são autoexplicativas ou que são usadas com pouca pouca experiência precisam de um rótulo explícito.** Coloque dois-pontos no final do rótulo.
+- ![captura de tela de automaticamente após: \[ segundos \] ](images/cmd-ribbons-image69.png)<br.>Para caixas **de texto, use um rótulo explícito.** Coloque dois-pontos no final do rótulo.
+- **Use a capitalização com estilo de frase.** Fazer isso é mais apropriado para o Windows [tom](text-style-tone.md).
+- **Inicie o rótulo com um verbo imperativo.** a menos que seja o mesmo que o nome da guia ou do grupo ou um verbo comum como Mostrar, Criar, Inserir ou Formatar.
 - **Não use pontuação final.**
-- **Para conservar o espaço, não coloque reticências nos rótulos de comando da faixa de medida.** No entanto, as reticências são usadas por comandos no botão do aplicativo e nos menus suspensos.
+- **Para economizar espaço, não coloque reellips nos rótulos de comando da faixa de opções.** No entanto, as reellipses são usadas por comandos no botão Aplicativo e nos menus suspensos.
 
 ### <a name="enhanced-tooltip-labels"></a>Rótulos de dica de ferramenta aprimorados
 
-- **Use o título para fornecer o nome do comando e sua tecla de atalho, se aplicável.**
+- **Use o título para dar o nome do comando e sua tecla de atalho, se aplicável.**
 - **Para o título, não use pontuação final.**
-- **Inicie a descrição com um verbo.** Use a descrição para ajudar os usuários a determinar se um recurso específico é aquele que está procurando. A descrição deve ser fraseda para concluir a frase "esse é o recurso correto a ser usado se você quiser...".
-- **Mantenha a descrição curta.** Fique à direita até o ponto. Texto longo não incentiva a leitura.
--   ![captura de tela do botão colar divisão e duas dicas de ferramenta ](images/cmd-ribbons-image70.png)<br/>**Para botões de divisão, use uma dica de ferramenta diferente para explicar o menu do botão de divisão.**
-- **Use uma descrição complementar opcional para explicar como usar o controle.** Esse texto pode incluir informações sobre o estado do controle (incluindo por que ele está desabilitado) se o próprio controle não indicar o estado. Mantenha este texto curto e use um tópico da ajuda para obter explicações mais detalhadas.
-- ![captura de tela de dica de ferramenta com gráfico e texto ](images/cmd-ribbons-image71.png)**para a descrição e descrição complementar, use frases completas com pontuação final.**
+- **Inicie a descrição com um verbo.** Use a descrição para ajudar os usuários a determinar se um recurso específico é aquele que eles estão procurando. A descrição deve ser formulada para concluir a frase "Este é o recurso certo a ser usado se você quiser...".
+- **Mantenha a descrição curta.** Vá direto para o ponto. Texto longo não desanimo a leitura.
+-   ![captura de tela do botão de divisão de colar e duas dicas de ferramenta ](images/cmd-ribbons-image70.png)<br/>**Para botões de divisão, use uma dica de ferramenta diferente para explicar o menu de botão de divisão.**
+- **Use uma descrição complementar opcional para explicar como usar o controle .** Esse texto poderá incluir informações sobre o estado do controle (incluindo por que ele está desabilitado) se o próprio controle não indicar estado. Mantenha este texto curto e use um tópico de Ajuda para obter explicações mais detalhadas.
+- ![captura de tela da dica de ferramenta com gráfico e texto Para a descrição e a descrição ](images/cmd-ribbons-image71.png)**complementares, use frases completas com pontuação final.**
 - Use a capitalização com estilo de frase.
 
 ### <a name="application-button-labels"></a>Rótulos de botão do aplicativo
 
-- [captura de tela da opção de impressão rápida selecionada ](images/cmd-ribbons-image72.png)<br/>**Use "rápido" para indicar uma versão imediata de um comando.**
+- [captura de tela da opção de impressão rápida selecionada ](images/cmd-ribbons-image72.png)<br/>**Use "Rápido" para indicar uma versão imediata de um comando.**
 
-- **Use uma elipse para indicar que um comando requer mais informações.**
+- **Use uma reellipse para indicar que um comando requer mais informações.**
 - **Use a capitalização com estilo de frase.**
 
 ## <a name="documentation"></a>Documentação
 
-Ao fazer referência a faixas de as:
+Ao se referir a faixas de opções:
 
-- Consulte a faixa de referência e seus componentes como faixa de faixas, guias, grupos e controles. Esses termos não são capitalizados.
-- Consulte o botão redondo como o botão do aplicativo e o menu que ele contém como o menu do aplicativo.
-- Consulte a barra de ferramentas como a barra de ferramentas de acesso rápido.
-- Consulte as guias por seus rótulos e a palavra guia. Use o texto exato do rótulo, incluindo sua capitalização.
-- Consulte os comandos por seus rótulos. Consulte os comandos sem rótulo por seus nomes de dica de ferramenta. Use o texto exato do rótulo, incluindo suas maiúsculas e minúsculas, mas não inclua as reticências. Não inclua o botão ou comando do Word.
-- Para descrever a interação do usuário, use clique em para guias e controles. Use Enter para listas suspensas editáveis. Não use escolher, selecionar ou escolher.
-- Consulte itens indisponíveis como não disponíveis, não como esmaecidos, desabilitados ou esmaecidos. Em documentação de programação, use desabilitado.
-- Quando possível, formate os rótulos usando texto em negrito. Caso contrário, coloque os rótulos entre aspas somente se necessário para evitar confusão.
+- Consulte a faixa de opções e seus componentes como faixa de opções, guias, grupos e controles. Esses termos não estão em maiúsculas.
+- Consulte o botão arredondar como o botão Aplicativo e o menu que ele contém como o menu Aplicativo.
+- Consulte a barra de ferramentas como a Barra de Ferramentas de Acesso Rápido.
+- Consulte as guias por seus rótulos e a guia de palavras. Use o texto exato do rótulo, incluindo sua capitalização.
+- Consulte os comandos por seus rótulos. Consulte comandos sem rótulo por seus nomes de dica de ferramenta. Use o texto exato do rótulo, incluindo sua capitalização, mas não inclua as reellipses. Não inclua a palavra botão ou comando.
+- Para descrever a interação do usuário, use clique para guias e controles. Use Enter para listas de listas listadas editáveis. Não use escolher, selecionar ou escolher.
+- Consulte itens indisponíveis como indisponíveis, não como esmaecidas, desabilitadas ou esmaecidas. Na documentação de programação, use desabilitado.
+- Quando possível, forja os rótulos usando texto em negrito. Caso contrário, coloque os rótulos entre aspas somente se necessário para evitar confusão.
 
 Exemplos:
 
-- Na guia **início** , clique em **colar especial**.
-- Na guia **início** , na caixa **fonte** , digite "Segoe UI".
-- Na guia **revisar** , clique em **Mostrar marcação** e, em seguida, clique em **revisores**.
-- Na guia **formato** , em **ferramentas de imagem**, clique em **compactar imagens**.
+- Na guia **Página** Base, clique **em Colar especial.**
+- Na guia **Página** Base, na caixa **Fonte,** insira "Segoe UI".
+- Na guia **Revisão,** clique em **Mostrar marcação** e, em seguida, clique **em Revistores**.
+- Na guia **Formato** , em **Ferramentas de imagem**, clique em **Compactar imagens**.

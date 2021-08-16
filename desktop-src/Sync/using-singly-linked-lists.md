@@ -1,19 +1,19 @@
 ---
-description: O exemplo a seguir usa a função InitializeSListHead para inicializar uma lista vinculada individualmente e a função InterlockedPushEntrySList para inserir 10 itens.
+description: O exemplo a seguir usa a função InitializeSListHead para inicializar uma lista vinculada e a função InterlockedPushEntrySList para inserir 10 itens.
 ms.assetid: 5608f84f-9211-4043-bb53-60339191ee29
-title: Usando listas vinculadas individualmente
+title: Usando listas vinculadas do Singly
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 95af2e8da519026731bf6fc461b193978d179cd8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7fa3a99202637e7d7b0b64f964ca1452244d72f02d99770bcdc6cbe368d960be
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105750419"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117765007"
 ---
-# <a name="using-singly-linked-lists"></a>Usando listas vinculadas individualmente
+# <a name="using-singly-linked-lists"></a>Usando listas vinculadas do Singly
 
-O exemplo a seguir usa a função [**InitializeSListHead**](/windows/win32/api/interlockedapi/nf-interlockedapi-initializeslisthead) para inicializar uma [lista vinculada individualmente](interlocked-singly-linked-lists.md) e a função [**InterlockedPushEntrySList**](/windows/win32/api/interlockedapi/nf-interlockedapi-interlockedpushentryslist) para inserir 10 itens. O exemplo usa a função [**InterlockedPopEntrySList**](/windows/win32/api/interlockedapi/nf-interlockedapi-interlockedpopentryslist) para remover 10 itens e a função [**InterlockedFlushSList**](/windows/win32/api/interlockedapi/nf-interlockedapi-interlockedflushslist) para verificar se a lista está vazia.
+O exemplo [a](interlocked-singly-linked-lists.md) seguir usa a [**função InitializeSListHead**](/windows/win32/api/interlockedapi/nf-interlockedapi-initializeslisthead) para inicializar uma lista vinculada e a [**função InterlockedPushEntrySList**](/windows/win32/api/interlockedapi/nf-interlockedapi-interlockedpushentryslist) para inserir 10 itens. O exemplo usa a [**função InterlockedPopEntrySList**](/windows/win32/api/interlockedapi/nf-interlockedapi-interlockedpopentryslist) para remover 10 itens e a [**função InterlockedFlushSList**](/windows/win32/api/interlockedapi/nf-interlockedapi-interlockedflushslist) para verificar se a lista está vazia.
 
 
 ```C++

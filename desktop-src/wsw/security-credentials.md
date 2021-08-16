@@ -8,12 +8,12 @@ keywords:
 - WWS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0611e6e54fd83e09f811ffddcda4785cef162685
-ms.sourcegitcommit: a716ca2a6a22a400f02c6b31699cf4da83ee3619
+ms.openlocfilehash: 41f5703d9f58e7fee57f1ce8465e0413a7ca3c246590b816e84f7419e80f6efb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "105791498"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118192757"
 ---
 # <a name="security-credentials"></a>Credenciais de Segurança
 
@@ -39,7 +39,7 @@ Os seguintes elementos de API são usados com credenciais de segurança.
 |-------------------------------------------------------------------------------------------------------|---------------------------------------------------------------|
 | [**\_tipo de \_ credencial WS CERT \_**](/windows/desktop/api/WebServices/ne-webservices-ws_cert_credential_type)                                         | O tipo da credencial do certificado.                       |
 | [**\_tipo de \_ credencial WS username \_**](/windows/desktop/api/WebServices/ne-webservices-ws_username_credential_type)                                 | O tipo de credencial de nome de usuário/senha.                 |
-| [**\_tipo de \_ \_ \_ credencial de \_ autenticação integrada do Windows WS**](/windows/desktop/api/WebServices/ne-webservices-ws_windows_integrated_auth_credential_type) | O tipo da credencial de autenticação integrada do Windows. |
+| [**\_tipo de \_ \_ \_ credencial de \_ autenticação integrada do Windows WS**](/windows/desktop/api/WebServices/ne-webservices-ws_windows_integrated_auth_credential_type) | o tipo de credencial de autenticação integrada Windows. |
 
 
 
@@ -51,14 +51,14 @@ Os seguintes elementos de API são usados com credenciais de segurança.
 |-------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|
 | [**\_ \_ credencial WS CERT**](/windows/desktop/api/WebServices/ns-webservices-ws_cert_credential)                                                          | O tipo base abstrato para todos os tipos de credencial de certificado.                                                          |
 | [**\_ \_ credencial de certificado personalizado WS \_**](/windows/desktop/api/WebServices/ns-webservices-ws_custom_cert_credential)                                           | O tipo para especificar uma credencial de certificado que deve ser fornecida por um retorno de chamada para o aplicativo.             |
-| [**\_ \_ \_ \_ credencial de autenticação integrada do Windows WS padrão \_**](/windows/desktop/api/WebServices/ns-webservices-ws_default_windows_integrated_auth_credential) | Tipo para fornecer uma credencial de autenticação integrada do Windows com base no token de thread atual.                  |
-| [**\_ \_ \_ \_ credencial de autenticação integrada do Windows WS opaca \_**](/windows/desktop/api/WebServices/ns-webservices-ws_opaque_windows_integrated_auth_credential)   | Digite para fornecer uma credencial de autenticação integrada do Windows.                                                    |
+| [**\_ \_ \_ \_ credencial de autenticação integrada do Windows WS padrão \_**](/windows/desktop/api/WebServices/ns-webservices-ws_default_windows_integrated_auth_credential) | tipo para fornecer uma credencial de autenticação integrada Windows com base no token de thread atual.                  |
+| [**\_ \_ \_ \_ credencial de autenticação integrada do Windows WS opaca \_**](/windows/desktop/api/WebServices/ns-webservices-ws_opaque_windows_integrated_auth_credential)   | tipo para fornecer uma credencial de autenticação integrada Windows.                                                    |
 | [**\_ \_ credencial de nome de usuário WS String \_**](/windows/desktop/api/WebServices/ns-webservices-ws_string_username_credential)                                   | O tipo para fornecer um par de nome de usuário/senha como cadeias de caracteres.                                                           |
-| [**\_ \_ \_ \_ credencial de autenticação integrada do Windows WS String \_**](/windows/desktop/api/WebServices/ns-webservices-ws_string_windows_integrated_auth_credential)   | Digite para fornecer uma credencial do Windows como nome de usuário, senha e cadeias de caracteres de domínio.                                        |
+| [**\_ \_ \_ \_ credencial de autenticação integrada do Windows WS String \_**](/windows/desktop/api/WebServices/ns-webservices-ws_string_windows_integrated_auth_credential)   | digite para fornecer uma credencial de Windows como nome de usuário, senha e cadeias de caracteres de domínio.                                        |
 | [**\_ \_ \_ credencial de certificado do nome da entidade WS \_**](/windows/desktop/api/WebServices/ns-webservices-ws_subject_name_cert_credential)                              | O tipo para especificar uma credencial de certificado usando o nome da entidade do certificado, o local do repositório e o nome do repositório. |
 | [**\_ \_ credencial de certificado de impressão digital WS \_**](/windows/desktop/api/WebServices/ns-webservices-ws_thumbprint_cert_credential)                                   | O tipo para especificar uma credencial de certificado usando a impressão digital do certificado, o local do repositório e o nome do repositório.   |
 | [**\_ \_ credencial WS username**](/windows/desktop/api/WebServices/ns-webservices-ws_username_credential)                                                  | O tipo base abstrato para todas as credenciais de nome de usuário/senha.                                                         |
-| [**\_ \_ \_ credencial de autenticação \_ integrada do Windows WS**](/windows/desktop/api/WebServices/ns-webservices-ws_windows_integrated_auth_credential)                  | O tipo base abstrato para todos os tipos de credenciais usados com a autenticação integrada do Windows.                          |
+| [**\_ \_ \_ credencial de autenticação \_ integrada do Windows WS**](/windows/desktop/api/WebServices/ns-webservices-ws_windows_integrated_auth_credential)                  | o tipo base abstrato para todos os tipos de credenciais usados com Windows autenticação integrada.                          |
 
 
 

@@ -1,21 +1,21 @@
 ---
-description: A política de metadados de foto para a propriedade System. GPS. DestBearing.
+description: A política de metadados de foto para a propriedade System.GPS.DestBearing.
 ms.assetid: ccc31b3d-27fd-4a8c-a304-852cf6114ec5
-title: Política de metadados de foto System. GPS. DestBearing
+title: Política de metadados de foto System.GPS.DestBearing
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 01a084a0633579afe646403fb4dcad0ca8a1b9ff
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 598ef1e759f75dfb4851f2f3f435b53db1f875421c3d21446ae3de33f688cefd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104297366"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118205507"
 ---
-# <a name="systemgpsdestbearing-photo-metadata-policy"></a>Política de metadados de foto System. GPS. DestBearing
+# <a name="systemgpsdestbearing-photo-metadata-policy"></a>Política de metadados de foto System.GPS.DestBearing
 
-A política de metadados de foto para a propriedade [System. GPS. DestBearing](../properties/props-system-gps-destbearing.md) .
+A política de metadados de foto [para a propriedade System.GPS.DestBearing.](../properties/props-system-gps-destbearing.md)
 
-### <a name="pkey"></a>PKEY
+### <a name="pkey"></a>Pkey
 
 PKEY \_ GPS \_ DestBearing
 
@@ -25,25 +25,25 @@ JPEG, TIFF
 
 ### <a name="read-only"></a>Somente leitura
 
-Yes
+Sim
 
-### <a name="output-propvariant-type"></a>Tipo de PROPVARIANT de saída
+### <a name="output-propvariant-type"></a>Tipo PROPVARIANT de saída
 
-R8 de VT \_
+VT \_ R8
 
-### <a name="conflict-resolution-policy"></a>Política de resolução de conflito
+### <a name="conflict-resolution-policy"></a>Política de resolução de conflitos
 
-Esse valor pode ser gravado escrevendo em System. GPS. DestBearingNumerator e System. GPS. DestBearingDenominator. Ele não pode ser gravado diretamente. Os valores de esquemas diferentes são reconciliados.
+Esse valor pode ser escrito escrevendo em System.GPS.DestBearingNumerator e System.GPS.DestBearingDenominator. Ele não pode ser gravado diretamente. Valores de esquemas diferentes são reconciliados.
 
 ### <a name="jpeg-policy"></a>Política JPEG
 
-### <a name="read-paths"></a>Caminhos de leitura
+### <a name="read-paths"></a>Ler caminhos
 
 
 
 | Ordem | Caminho                      | Formato de disco |
 |-------|---------------------------|-------------|
-| 1     | /App1/IFD/GPS/{UShort = 24} |             |
+| 1     | /app1/ifd/gps/{ushort=24} |             |
 | 2     | /xmp/exif:GPSDestBearing  |             |
 
 
@@ -56,7 +56,7 @@ Esse valor pode ser gravado escrevendo em System. GPS. DestBearingNumerator e Sy
 
 | Ordem | Caminho                      | Formato de disco |
 |-------|---------------------------|-------------|
-| 1     | /App1/IFD/GPS/{UShort = 24} |             |
+| 1     | /app1/ifd/gps/{ushort=24} |             |
 | 2     | /xmp/exif:GPSDestBearing  |             |
 
 
@@ -69,7 +69,7 @@ Esse valor pode ser gravado escrevendo em System. GPS. DestBearingNumerator e Sy
 
 | Ordem | Caminho                      | Formato de disco |
 |-------|---------------------------|-------------|
-| 1     | /App1/IFD/GPS/{UShort = 24} |             |
+| 1     | /app1/ifd/gps/{ushort=24} |             |
 | 2     | /xmp/exif:gpsdestbearing  |             |
 
 
@@ -78,13 +78,13 @@ Esse valor pode ser gravado escrevendo em System. GPS. DestBearingNumerator e Sy
 
 ### <a name="tiff-policies"></a>Políticas TIFF
 
-### <a name="read-paths"></a>Caminhos de leitura
+### <a name="read-paths"></a>Ler caminhos
 
 
 
 | Ordem | Caminho                         | Formato de disco |
 |-------|------------------------------|-------------|
-| 1     | /IFD/GPS/{UShort = 24}         |             |
+| 1     | /ifd/gps/{ushort=24}         |             |
 | 2     | /ifd/xmp/exif:GPSDestBearing |             |
 
 
@@ -97,7 +97,7 @@ Esse valor pode ser gravado escrevendo em System. GPS. DestBearingNumerator e Sy
 
 | Ordem | Caminho                         | Formato de disco |
 |-------|------------------------------|-------------|
-| 1     | /IFD/GPS/{UShort = 24}         |             |
+| 1     | /ifd/gps/{ushort=24}         |             |
 | 2     | /ifd/xmp/exif:GPSDestBearing |             |
 
 
@@ -110,7 +110,7 @@ Esse valor pode ser gravado escrevendo em System. GPS. DestBearingNumerator e Sy
 
 | Ordem | Caminho                         |
 |-------|------------------------------|
-| 1     | /IFD/GPS/{UShort = 24}         |
+| 1     | /ifd/gps/{ushort=24}         |
 | 2     | /ifd/xmp/exif:gpsdestbearing |
 
 
@@ -123,7 +123,7 @@ Esse valor pode ser gravado escrevendo em System. GPS. DestBearingNumerator e Sy
 
 <dl> <dt>
 
-[System. GPS. DestBearing](../properties/props-system-gps-destbearing.md)
+[System.GPS.DestBearing](../properties/props-system-gps-destbearing.md)
 </dt> </dl>
 
  

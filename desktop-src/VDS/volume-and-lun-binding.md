@@ -4,16 +4,16 @@ ms.assetid: ae32b354-799e-4f9b-8989-02bd95968210
 title: Associação de volume e LUN
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8c9f62e599f5b5e457a1ce6dbf6a52524d1b80d1
-ms.sourcegitcommit: 37f276b5d887a3aad04b1ba86e390dea9d87e591
+ms.openlocfilehash: 91014241014793b601c15c64ec19e5a2b1d153c71ba617cead54a5d68cf978b7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "104172396"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118125537"
 ---
 # <a name="volume-and-lun-binding"></a>Associação de volume e LUN
 
-\[A partir do Windows 8 e do Windows Server 2012, a interface com do [serviço de disco virtual](virtual-disk-service-portal.md) é substituída pela [API de gerenciamento de armazenamento do Windows](/previous-versions/windows/desktop/stormgmt/windows-storage-management-api-portal).\]
+\[a partir do Windows 8 e Windows Server 2012, a interface COM do [serviço de disco Virtual](virtual-disk-service-portal.md) é substituída pela [API de gerenciamento de Armazenamento Windows](/previous-versions/windows/desktop/stormgmt/windows-storage-management-api-portal).\]
 
 A associação é a criação de volumes ou LUNs. Os volumes consistem em extensões de disco e LUNs que consistem em extensões de unidade. A associação seleciona um conjunto de mapeamentos para recursos físicos e ocorre dentro de um subsistema, em um pacote ou em ambos. Todos os programas de provedor dão suporte a associação parcialmente direcionada a um modelo no qual o chamador especifica apenas os atributos de associação de interesse específico e permite que o provedor escolha o restante. As operações no VDS para vincular volumes e LUNs são semelhantes, mas não idênticas. Por exemplo, os provedores de hardware podem oferecer opções de associação adicionais.
 

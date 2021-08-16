@@ -1,5 +1,5 @@
 ---
-description: Especifica se o dispositivo de banda larga móvel se conectará automaticamente a uma rede.
+description: Especifica se o dispositivo de Banda Larga Móvel se conectará automaticamente a uma rede.
 ms.assetid: a2673ac7-6d70-4005-9ac4-cf670eba26ae
 title: Elemento AutoConnectOnInternet (MBNProfile)
 ms.topic: reference
@@ -11,20 +11,20 @@ api_name:
 - AutoConnectOnInternet
 api_type:
 - Schema
-ms.openlocfilehash: fd08e93572d7d0af8b490ac079e3057413c469ea
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3a10804e91ee34125c25c320a49b5f7251f720ed9ce6c770c2aa4af5167a8511
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104164576"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117881471"
 ---
 # <a name="autoconnectoninternet-mbnprofile-element"></a>Elemento AutoConnectOnInternet (MBNProfile)
 
-O elemento **AutoConnectOnInternet (MBNProfile)** especifica se o dispositivo de banda larga móvel se conectará automaticamente a uma rede.
+O **elemento AutoConnectOnInternet (MBNProfile)** especifica se o dispositivo de Banda Larga Móvel se conectará automaticamente a uma rede.
 
-Se definido como **false**, a lógica de conexão automática do serviço de banda larga móvel não será usada se houver qualquer outra conectividade de rede disponível para o sistema. Se definido como **true**, o serviço de banda larga móvel tentará conectar automaticamente o dispositivo à rede com base na configuração de conexão automática definida no elemento [**ConnectionMode**](schema-connectionmode-mbnprofile-element.md) .
+Se definido como **FALSE,** a lógica de conexão automática do serviço de Banda Larga Móvel não será usada se houver qualquer outra conectividade de rede disponível para o sistema. Se definido como **TRUE,** o serviço de Banda Larga Móvel tentará conectar automaticamente o dispositivo à rede com base na configuração de conexão automática definida no [**elemento ConnectionMode.**](schema-connectionmode-mbnprofile-element.md)
 
-**Windows 8 e posterior:** Este elemento foi preterido. Use o método [**WcmSetProperty**](/windows/desktop/api/wcmapi/nf-wcmapi-wcmsetproperty) com o parâmetro *Property* definido como **WCM \_ \_ propriedade global \_ minimizar \_ política** em vez disso.
+**Windows 8 e posterior:** Esse elemento foi preterido. Use o [**método WcmSetProperty com**](/windows/desktop/api/wcmapi/nf-wcmapi-wcmsetproperty) o parâmetro *Property* definido como **wcm global property \_ minimize \_ \_ \_ policy.**
 
 ``` syntax
 <xs:element name="AutoConnectOnInternet"
@@ -32,7 +32,7 @@ Se definido como **false**, a lógica de conexão automática do serviço de ban
  />
 ```
 
-O elemento **AutoConnectOnInternet** é definido pelo elemento [**MBNProfile**](schema-mbnprofile-element.md) .
+O **elemento AutoConnectOnInternet** é definido pelo [**elemento MBNProfile.**](schema-mbnprofile-element.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -40,7 +40,7 @@ O elemento **AutoConnectOnInternet** é definido pelo elemento [**MBNProfile**](
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Aplicativos de \[ aplicativos da área de trabalho do Windows 7 \| UWP\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows 7 \[ aplicativos UWP da área \| de trabalho\]<br/> |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                         |
 
 

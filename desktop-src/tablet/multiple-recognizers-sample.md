@@ -1,33 +1,33 @@
 ---
-description: Este exemplo demonstra os recursos avançados da API (interface de programação de aplicativo) do MicrosoftTablet PC Automation usada para o reconhecimento de manuscrito.
+description: Este exemplo demonstra os recursos avançados da API (interface de programação) de aplicativo (API) de Automação de PC MicrosoftTablet usada para reconhecimento de manuscrito.
 ms.assetid: c9e6613c-5797-44c3-8ce1-92d4d1459ecf
 title: Exemplo de vários reconhecedores
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7a21d24001e3544be16dde4d288a8adc7ea0081f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a2d687f1bddd1f3c57cc482070b8e5826126b6e5b0f716fa3649df01ad6eab30
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105748345"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117856545"
 ---
 # <a name="multiple-recognizers-sample"></a>Exemplo de vários reconhecedores
 
-Este exemplo demonstra os recursos avançados da API (interface de programação de aplicativo) do MicrosoftTablet PC Automation usada para o reconhecimento de *manuscrito* .
+Este exemplo demonstra os recursos avançados da API (interface de programação) de aplicativo (API) de Automação de PC MicrosoftTablet usada para reconhecimento *de* manuscrito.
 
-Ele inclui o seguinte:
+Isso inclui o seguinte:
 
 -   Enumerando os reconhecedores instalados
 -   Criando um *contexto de reconhecedor* com um reconhecedor de idioma específico
 -   Serializando resultados de reconhecimento com uma coleção de traços
--   Organizando coleções de traços em uma coleção personalizada dentro do objeto [**InkDisp**](inkdisp-class.md)
--   Serializando objetos de *tinta* para e recuperando-os de um arquivo de *formato serializado da tinta (ISF)*
--   Definindo guias de entrada do reconhecedor
+-   Organizando coleções de traços em uma coleção personalizada dentro do [**objeto InkDisp**](inkdisp-class.md)
+-   Serializando *objetos* de tinta para e recuperando-os de um arquivo *ISF (formato serializado de tinta)*
+-   Configurar guias de entrada do reconhecedor
 -   Usando o reconhecimento síncrono e assíncrono
 
-## <a name="ink-headers"></a>Cabeçalhos de tinta
+## <a name="ink-headers"></a>Headers de tinta
 
-Primeiro, inclua os cabeçalhos para interfaces de automação do Tablet PC. Eles são instalados com o SDK (Software Development Kit) do Microsoft Windows XP Tablet PC Edition.
+Primeiro, inclua os títulos para interfaces de Automação de Tablet PC. Eles são instalados com o SDK (Software Development Kit) do Microsoft Windows Tablet XP Edition.
 
 
 ```C++
@@ -37,7 +37,7 @@ Primeiro, inclua os cabeçalhos para interfaces de automação do Tablet PC. Ele
 
 
 
-O arquivo EventSinks. h define as interfaces IInkEventsImpl e IInkRecognitionEventsImpl.
+O arquivo EventSinks.h define as interfaces IInkEventsImpl e IInkRecognitionEventsImpl.
 
 
 ```C++
@@ -48,7 +48,7 @@ O arquivo EventSinks. h define as interfaces IInkEventsImpl e IInkRecognitionEve
 
 ## <a name="enumerating-the-installed-recognizers"></a>Enumerando os reconhecedores instalados
 
-O método LoadMenu do aplicativo popula o menu criar novos traços com os reconhecedores disponíveis. Um [**InkRecognizers**](/previous-versions/windows/desktop/legacy/ms702438(v=vs.85)) é criado. Se a propriedade [**Languages**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkrecognizer-get_languages) de um objeto **InkRecognizers** não estiver vazia, o reconhecedor será um *reconhecedor de texto* e o valor de sua propriedade [**Name**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkrecognizer-get_name) será adicionado ao menu.
+O método LoadMenu do aplicativo preenche o menu Criar Novos Traços com os reconhecedores disponíveis. Um [**InkRecognizers**](/previous-versions/windows/desktop/legacy/ms702438(v=vs.85)) é criado. Se *a* propriedade [**Languages**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkrecognizer-get_languages) de um objeto **InkRecognizers** não estiver vazia, o reconhecedor será um reconhecedor de texto e o valor de sua propriedade [**Name**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkrecognizer-get_name) será adicionado ao menu.
 
 
 ```C++
@@ -77,7 +77,7 @@ hr = m_spIInkRecognizers.CoCreateInstance(CLSID_InkRecognizers);
 
 ## <a name="creating-an-ink-collector"></a>Criando um coletor de tinta
 
-O método OnCreate do aplicativo cria um objeto [**InkCollector**](inkcollector-class.md) , conecta-o à sua origem de evento e habilita a coleta de tinta.
+O método OnCreate do aplicativo cria um objeto [**InkCollector,**](inkcollector-class.md) conecta-o à origem do evento e habilita a coleta de tinta.
 
 
 ```C++
@@ -96,7 +96,7 @@ hr = m_spIInkCollector->put_Enabled(VARIANT_TRUE);
 
 ## <a name="creating-a-recognizer-context"></a>Criando um contexto de reconhecedor
 
-O método CreateRecoContext do aplicativo cria e inicializa um novo contexto de reconhecedor e configura os guias com suporte no idioma associado. O método [**CreateRecognizerContext**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkrecognizer-createrecognizercontext) do objeto [**IInkRecognizer**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkrecognizer) cria um objeto [**IInkRecognizerContext2**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkrecognizercontext2) para o idioma. Se necessário, o contexto do reconhecedor antigo é substituído. O contexto está conectado à origem do evento. Por fim, a propriedade [**Capabilities**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkrecognizer-get_capabilities) do contexto do reconhecedor é verificada para quais guias o contexto do reconhecedor dá suporte.
+O método CreateRecoContext do aplicativo cria e inicializa um novo contexto de reconhecedor e configura os guias com suporte no idioma associado. O método [**CreateRecognizerContext**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkrecognizer-createrecognizercontext) do objeto [**IInkRecognizer**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkrecognizer) cria um [**objeto IInkRecognizerContext2**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkrecognizercontext2) para o idioma. Se necessário, o contexto antigo do reconhecedor será substituído. O contexto está conectado à origem do evento. Por fim, [**a propriedade Funcionalidades**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkrecognizer-get_capabilities) do contexto do reconhecedor é verificada para a qual guia o contexto do reconhecedor dá suporte.
 
 
 ```C++
@@ -128,7 +128,7 @@ if (SUCCEEDED(pIInkRecognizer->get_Capabilities(&dwCapabilities)))
 
 ## <a name="collecting-strokes-and-displaying-recognition-results"></a>Coletando traços e exibindo resultados de reconhecimento
 
-O método onstroke do aplicativo atualiza o [**InkStrokes**](/previous-versions/windows/desktop/legacy/ms703293(v=vs.85)) do coletor de tinta, cancela as solicitações de reconhecimento assíncrono existentes e cria uma solicitação de reconhecimento no contexto do reconhecedor.
+O método OnTumke do aplicativo atualiza os [**InkStrkes**](/previous-versions/windows/desktop/legacy/ms703293(v=vs.85)) do coletor de tinta, cancela as solicitações de reconhecimento assíncronas existentes e cria uma solicitação de reconhecimento no contexto do reconhecedor.
 
 
 ```C++
@@ -151,7 +151,7 @@ if (SUCCEEDED(hr))
 
 
 
-O método do aplicativo `OnRecognition` envia os resultados da solicitação de reconhecimento para o método da janela de saída `UpdateString` .
+O método do `OnRecognition` aplicativo envia os resultados da solicitação de reconhecimento para o método da janela de `UpdateString` saída.
 
 
 ```C++
@@ -161,9 +161,9 @@ m_wndResults.UpdateString(bstrRecognizedString);
 
 
 
-## <a name="deleting-strokes-and-recognition-results"></a>Excluindo os traços e os resultados de reconhecimento
+## <a name="deleting-strokes-and-recognition-results"></a>Excluindo traços e resultados de reconhecimento
 
-O método OnClear do aplicativo exclui todos os traços e os resultados de reconhecimento do objeto [**InkDisp**](inkdisp-class.md) e limpa as janelas. A associação do contexto do reconhecedor com sua coleção [**InkStrokes**](/previous-versions/windows/desktop/legacy/ms703293(v=vs.85)) é removida.
+O método OnClear do aplicativo exclui todos os traços e resultados de reconhecimento do objeto [**InkDisp**](inkdisp-class.md) e limpa as janelas. A associação do contexto do reconhecedor com sua [**coleção InkStrkes**](/previous-versions/windows/desktop/legacy/ms703293(v=vs.85)) é removida.
 
 
 ```C++
@@ -196,7 +196,7 @@ if (SUCCEEDED(m_spIInkDisp->CreateStrokes(v, &m_spIInkStrokes)))
 
 ## <a name="changing-recognizer-contexts"></a>Alterando contextos do reconhecedor
 
-O método OnNewStrokes do aplicativo é chamado quando o usuário seleciona um reconhecedor no menu criar novos traços. O [**InkStrokes**](/previous-versions/windows/desktop/legacy/ms703293(v=vs.85)) atual é salvo. Se um reconhecedor de idioma diferente tiver sido selecionado, um novo contexto de reconhecedor será criado. Em seguida, um novo **InkStrokes** é anexado ao novo contexto do reconhecedor.
+O método OnNewStrkes do aplicativo é chamado quando o usuário seleciona um reconhecedor no menu Criar Novos Traços. O [**InkStrkes atual**](/previous-versions/windows/desktop/legacy/ms703293(v=vs.85)) é salvo. Se um reconhecedor de idioma diferente tiver sido selecionado, um novo contexto de reconhecedor será criado. Em seguida, um **novo InkStrkes** é anexado ao novo contexto de reconhecedor.
 
 
 ```C++
@@ -243,11 +243,11 @@ if (wID != m_nCmdRecognizer)
 
 
 
-Em seguida, ele chama StartNewStrokeCollection, que cria um [**InkStrokes**](/previous-versions/windows/desktop/legacy/ms703293(v=vs.85)) vazio e o anexa ao contexto do reconhecedor.
+Em seguida, ele chama StartNewRogkeCollection, que cria um [**InkStrkes**](/previous-versions/windows/desktop/legacy/ms703293(v=vs.85)) vazio e o anexa ao contexto do reconhecedor.
 
 ## <a name="saving-the-strokes-collection-for-a-recognizer-context"></a>Salvando a coleção de traços para um contexto de reconhecedor
 
-O método do aplicativo `SaveStrokeCollection` verifica um contexto de reconhecedor existente e finaliza o reconhecimento da coleção de traços atual. Em seguida, a coleção [**InkStrokes**](/previous-versions/windows/desktop/legacy/ms703293(v=vs.85)) é adicionada à [**CustomStrokes**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkdisp-get_customstrokes) do objeto Ink.
+O método do aplicativo verifica um contexto de reconhecedor existente e finaliza o `SaveStrokeCollection` reconhecimento da coleção de traços atual. Em [**seguida, a coleção InkStrkes**](/previous-versions/windows/desktop/legacy/ms703293(v=vs.85)) é adicionada [**ao CustomStrkes**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkdisp-get_customstrokes) do objeto de tinta.
 
 
 ```C++

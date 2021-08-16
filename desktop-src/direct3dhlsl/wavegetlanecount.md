@@ -3,7 +3,7 @@ title: Função WaveGetLaneCount
 description: Retorna o número de pistas em uma onda nessa arquitetura.
 ms.assetid: 04059B5E-0F62-4623-84AD-E41FF7166B34
 keywords:
-- HLSL da função WaveGetLaneCount
+- Função WaveGetLaneCount HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 0bfdb3ce2dfde84b070fee57e7fc587a71d5f948
-ms.sourcegitcommit: f01bc6744cea55ad1aeeace7981a30b567e6fe60
-ms.translationtype: HT
+ms.openlocfilehash: 6a177e50ee3c4c9c715ea109faaed72c24e174e4e942059a4dee0dcd0de91a9e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "104366924"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118504734"
 ---
 # <a name="wavegetlanecount-function"></a>Função WaveGetLaneCount
 
@@ -36,11 +36,11 @@ Essa função não tem parâmetros.
 
 ## <a name="return-value"></a>Valor retornado
 
-O resultado será entre 4 e 128 e incluirá todas as ondas: as pistas ativas, inativas e/ou auxiliares. O resultado retornado por essa função pode variar significativamente dependendo da implementação do driver.
+O resultado será entre 4 e 128 e inclui todas as ondas: ativas, inativas e/ou faixas auxiliares. O resultado retornado dessa função pode variar significativamente dependendo da implementação do driver.
 
 ## <a name="remarks"></a>Comentários
 
-Essa função tem suporte do modelo de sombreador 6,0 em todos os estágios de sombreador. 
+Essa função tem suporte do modelo de sombreador 6.0 em todos os estágios do sombreador. 
 
 
 
@@ -56,10 +56,10 @@ Essa função tem suporte do modelo de sombreador 6,0 em todos os estágios de s
 
 <dl> <dt>
 
-[Visão geral do modelo do sombreador 6](hlsl-shader-model-6-0-features-for-direct3d-12.md)
+[Visão geral do Modelo de Sombreador 6](hlsl-shader-model-6-0-features-for-direct3d-12.md)
 </dt> <dt>
 
-[Modelo do sombreador 6](shader-model-6-0.md)
+[Modelo de sombreador 6](shader-model-6-0.md)
 </dt> </dl>
 
  

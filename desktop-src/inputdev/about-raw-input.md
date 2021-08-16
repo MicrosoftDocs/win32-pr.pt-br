@@ -15,12 +15,12 @@ keywords:
 - HID (dispositivos de interface humana)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b3535e5601ec63a254c76060611999a1a2f08aeb
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 6fed3772406cc85df57b95c4b11dbcfeaf60804e94da5602059ec790e87e0439
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104007541"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117884323"
 ---
 # <a name="about-raw-input"></a>Sobre a entrada bruta
 
@@ -36,7 +36,7 @@ Esta seção contém os seguintes tópicos:
 
 Anteriormente, o teclado e o mouse normalmente geraram dados de entrada. O sistema interpretou os dados provenientes desses dispositivos de forma a eliminar os detalhes específicos do dispositivo das informações brutas. Por exemplo, o teclado gera o código de verificação específico do dispositivo, mas o sistema fornece um aplicativo com o código de chave virtual. Além de ocultar os detalhes da entrada bruta, o Gerenciador de janelas não dava suporte a todos os novos HIDs. Para obter a entrada do HIDs sem suporte, um aplicativo tinha que fazer muitas coisas: abrir o dispositivo, gerenciar o modo compartilhado, ler periodicamente o dispositivo ou configurar a porta de conclusão de e/s e assim por diante. O modelo de entrada bruto e as APIs associadas foram desenvolvidas para permitir o acesso simples à entrada bruta de todos os dispositivos de entrada, incluindo o teclado e o mouse.
 
-O modelo de entrada bruto é diferente do modelo de entrada original do Windows para o teclado e o mouse. No modelo de entrada original, um aplicativo recebe entrada independente de dispositivo na forma de mensagens que são enviadas ou postadas em suas janelas, como [**WM \_ Char**](wm-char.md), [**WM \_ MOUSEMOVE**](wm-mousemove.md)e [**WM \_ APPCOMMAND**](wm-appcommand.md). Por outro lado, para a entrada bruta, um aplicativo deve registrar os dispositivos do qual deseja obter dados. Além disso, o aplicativo obtém a entrada bruta por meio da mensagem de [**\_ entrada do WM**](wm-input.md) .
+o modelo de entrada bruto é diferente do modelo de entrada de Windows original para o teclado e o mouse. No modelo de entrada original, um aplicativo recebe entrada independente de dispositivo na forma de mensagens que são enviadas ou postadas em suas janelas, como [**WM \_ Char**](wm-char.md), [**WM \_ MOUSEMOVE**](wm-mousemove.md)e [**WM \_ APPCOMMAND**](wm-appcommand.md). Por outro lado, para a entrada bruta, um aplicativo deve registrar os dispositivos do qual deseja obter dados. Além disso, o aplicativo obtém a entrada bruta por meio da mensagem de [**\_ entrada do WM**](wm-input.md) .
 
 Há várias vantagens para o modelo de entrada bruto:
 
@@ -54,7 +54,7 @@ Por padrão, nenhum aplicativo recebe entrada bruta. Para receber a entrada brut
 
 Para registrar dispositivos, um aplicativo primeiro cria uma matriz de estruturas [**RAWINPUTDEVICE**](/windows/win32/api/winuser/ns-winuser-rawinputdevice) que especificam a [coleção de nível superior](/windows-hardware/drivers/hid/top-level-collections) (TLC) para os dispositivos que ele deseja. O TLC é definido por uma [página de uso](/windows-hardware/drivers/hid/hid-usages#usage-page) (a classe do dispositivo) e uma [ID de uso](/windows-hardware/drivers/hid/hid-usages#usage-id) (o dispositivo dentro da classe). Por exemplo, para obter o teclado TLC, defina UsagePage = 0x01 e Usageid = 0x06. O aplicativo chama [**RegisterRawInputDevices**](/windows/win32/api/winuser/nf-winuser-registerrawinputdevices) para registrar os dispositivos.
 
-Observe que um aplicativo pode registrar um dispositivo que não está anexado no momento ao sistema. Quando esse dispositivo estiver anexado, o Gerenciador do Windows enviará automaticamente a entrada bruta para o aplicativo. Para obter a lista de dispositivos de entrada brutos no sistema, um aplicativo chama [**GetRawInputDeviceList**](/windows/win32/api/winuser/nf-winuser-getrawinputdevicelist). Usando o *hDevice* dessa chamada, um aplicativo chama [**GetRawInputDeviceInfo**](/windows/win32/api/winuser/nf-winuser-getrawinputdeviceinfoa) para obter as informações do dispositivo.
+Observe que um aplicativo pode registrar um dispositivo que não está anexado no momento ao sistema. quando esse dispositivo estiver anexado, o gerenciador de Windows enviará automaticamente a entrada bruta para o aplicativo. Para obter a lista de dispositivos de entrada brutos no sistema, um aplicativo chama [**GetRawInputDeviceList**](/windows/win32/api/winuser/nf-winuser-getrawinputdevicelist). Usando o *hDevice* dessa chamada, um aplicativo chama [**GetRawInputDeviceInfo**](/windows/win32/api/winuser/nf-winuser-getrawinputdeviceinfoa) para obter as informações do dispositivo.
 
 Por meio do membro **dwFlags** de [**RAWINPUTDEVICE**](/windows/win32/api/winuser/ns-winuser-rawinputdevice), um aplicativo pode selecionar os dispositivos a serem escutados e também aqueles que deseja ignorar. Por exemplo, um aplicativo pode solicitar entrada de todos os dispositivos de telefonia, exceto para as máquinas de resposta. Para obter o código de exemplo, consulte [registrando para entrada bruta](using-raw-input.md).
 

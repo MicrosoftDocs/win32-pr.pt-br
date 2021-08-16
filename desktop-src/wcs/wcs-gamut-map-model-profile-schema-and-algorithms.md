@@ -3,13 +3,13 @@ title: Algoritmo e esquema do perfil do modelo de mapa de gamut do WCS
 description: Algoritmo e esquema do perfil do modelo de mapa de gamut do WCS
 ms.assetid: 64b9871a-1b4f-4e9a-be4d-4c25b3198b91
 keywords:
-- WCS (sistema de cores do Windows), perfil de modelo de mapa de gamut (GMMP)
-- WCS (sistema de cores do Windows), perfil de modelo de mapa de gamut (GMMP)
+- Windows Sistema de cores (WCS), perfil de modelo de mapa de gamut (GMMP)
+- WCS (Windows sistema de cores), perfil de modelo de mapa de gamut (GMMP)
 - gerenciamento de cores de imagem, perfil de modelo de mapa de gamut (GMMP)
 - gerenciamento de cores, perfil de modelo de mapa de gamut (GMMP)
 - cores, perfil de modelo de mapa de gamut (GMMP)
-- WCS (sistema de cores do Windows), perfis
-- WCS (sistema de cores do Windows), perfis
+- Windows Sistema de cores (WCS), perfis
+- WCS (Windows sistema de cores), perfis
 - gerenciamento de cores de imagem, perfis
 - gerenciamento de cores, perfis
 - cores, perfis
@@ -21,12 +21,12 @@ keywords:
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3714e5d7592cb1fbbbfa98e238642a2fcb38bafd
-ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.openlocfilehash: e7db5b7a26fe5832fe33095c5785e90ad0a6938649878ff279e101a7e5817cc4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "104557691"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118037149"
 ---
 # <a name="wcs-gamut-map-model-profile-schema-and-algorithms"></a>Algoritmo e esquema do perfil do modelo de mapa de gamut do WCS
 
@@ -191,15 +191,15 @@ targetNamespace = " http://schemas.microsoft.com/windows/2005/02/color/GamutMapM
 
 ### <a name="version"></a>Versão
 
-Versão "1,0" com a primeira versão do Windows Vista.
+versão "1,0" com a primeira versão do Windows Vista.
 
-**Condições de validação** : 1,0 no Windows Vista. As versões &lt; 2,0 também são válidas para oferecer suporte a alterações não significativas no formato.
+**condições de validação** : 1,0 no Windows Vista. As versões &lt; 2,0 também são válidas para oferecer suporte a alterações não significativas no formato.
 
 ### <a name="documentation"></a>Documentação
 
 Esquema de perfil de modelo de mapa de gamut.
 
-Copyright (C) Microsoft. Todos os direitos reservados.
+Copyright (C) Microsoft. All rights reserved.
 
 **Condições de validação** : cada subelemento é validado por seu próprio tipo.
 
@@ -209,98 +209,98 @@ Tipo UINT
 
 Valores de enumeração:
 
-<dl> "MinCD \_ absoluta"  
-"MinCD \_ relativo"  
-"SIG \_ joelho"  
+<dl> "MinCD \_ Absolute"  
+"MinCD \_ Relative"  
+"SIG \_ KNEE"  
 "HueMap"  
 </dl>
 
-**Condições de validação** : os valores devem corresponder a uma das enumerações acima.
+**Condições de** validação: os valores devem corresponder a uma das enumerações acima.
 
 ### <a name="plugingamutmaptype"></a>PlugInGamutMapType
 
-Esse elemento é uma sequência de um GUIDtype GUID e quaisquer subelementos.
+Esse elemento é uma sequência de um GUIDType GUID e qualquer subconjunto.
 
-**Condições de validação** : o GUID é usado para corresponder ao GUID da dll do plug-in GMM. Há um máximo de 100.000 subelementos personalizados.
+**Condições de** validação: o GUID é usado para corresponder ao GUID de DLL do PlugIn GMM. Há um máximo de 100.000 subconjunto personalizados.
 
-### <a name="extensiontype"></a>ExtensionType
+### <a name="extensiontype"></a>Extensiontype
 
-Esse elemento é uma sequência opcional de qualquer subelemento.
+Esse elemento é uma sequência opcional de qualquer subconjunto.
 
-**Condições de validação** : pode haver no máximo 100.000 subelementos.
+**Condições de** validação: pode haver um máximo de 100.000 subconjunto.
 
 ## <a name="the-gmmp-baseline-algorithms"></a>Os algoritmos de linha de base GMMP
 
 ## <a name="aligning-the-neutral-axes"></a>Alinhando os eixos neutros
 
-A maioria dos algoritmos de mapeamento de gamut tem uma meta de mapear o eixo neutro do dispositivo de origem para o eixo neutro do dispositivo de destino: ou seja, branco vai para branco, preto para preto e cinza para cinza. Isso é abordado em parte, dimensionando a claridade das cores de origem para corresponder ao intervalo de claridade do dispositivo de destino. Mas isso não resolve completamente o problema.
+A maioria dos algoritmos de mapeamento de jogos tem a meta de mapear o eixo neutro do dispositivo de origem para o eixo neutro do dispositivo de destino: ou seja, branco vai para branco, preto para preto e cinza para cinza. Isso é abordado, em parte, dimensionando a luz das cores de origem para corresponder ao intervalo de luz do dispositivo de destino. Mas isso não aborda completamente o problema.
 
-É uma propriedade física da maioria dos dispositivos de geração de imagens que a desvio do dispositivo branco não corresponde exatamente à desvio do dispositivo em preto. Por exemplo, o monitor branco depende da soma das desvios e das luminosidades relativas das três primárias, enquanto o monitor preto depende da reflexão da superfície de exibição. A impressora branca depende da desvio do papel, enquanto a impressora preta depende da tinta ou do toner usado. Um modelo de aparência que mapeia o dispositivo em branco exatamente para o eixo neutro do espaço de aparência (croma exatamente igual a zero) não mapeará o dispositivo preto para o eixo neutro. Como o olho é mais sensível às diferenças de croma à medida que aumenta a claridade, os cinza médios serão representados como ainda mais desvios do que o dispositivo preto. (A Figura 1 ilustra a curvatura dos eixos neutros em duas dimensões. Na verdade, os eixos neutros formam uma curva mais complexa em três dimensões.)
+É uma propriedade física da maioria dos dispositivos de imagens que a chromaticidade do dispositivo branco não combina exatamente com a chromaticidade do dispositivo preto. Por exemplo, monitorar branco depende da soma das chromaticities e das luminâncias relativas dos três primários, enquanto o monitor preto depende da reflexão da superfície de exibição. A impressora branca depende da chromaticidade do papel, enquanto a impressora preta depende da tinta ou do toner usado. Um modelo de aparência que mapeia o dispositivo branco exatamente para o eixo neutro do espaço de aparência (chroma exatamente igual a zero) não mapeará o dispositivo preto para o eixo neutro. Como o olho é mais sensível às diferenças de chroma à medida que a luz aumenta, os cinzas médios serão representados como ainda mais chromatic do que o preto do dispositivo. (A Figura 1 ilustra a curvatura dos eixos neutros em duas dimensões. Na verdade, os eixos neutros formam uma curva mais complexa em três dimensões.)
 
-Enquanto o CAM prevê que essas cores neutras de dispositivo aparecerão como desvios, os observadores reais parecem compensar isso. A maioria das pessoas não considera esses valores neutros de dispositivo como desvio. Para a maioria dos modelos de mapeamento de gama, você deve continuar a mapear os neutros de origem para os neutros de dispositivo.
+Embora o CAM prevee que essas cores neutras do dispositivo aparecerão chromatic, os observadores reais parecem compensar isso. A maioria das pessoas não considera esses valores neutros do dispositivo como chromatic. Para a maioria dos modelos de mapeamento de jogos, portanto, você deve continuar mapeando os neutros de origem para os neutros do dispositivo.
 
-Para mapear os neutros de origem para os neutros de dispositivo, ajuste os limites de gama de origem e de destino e cada pixel ao aplicar o algoritmo de mapeamento de gamut. Primeiro, ajuste cada valor na cor de origem para que o eixo neutro do dispositivo de origem na claridade da cor de origem fique diretamente no eixo neutro do espaço de aparência. (Consulte o lado esquerdo da Figura 1.) Em seguida, ajuste a descrição do limite de gama do dispositivo de destino para que cada cor no eixo neutro do dispositivo de destino na luminosidade da cor do limite de gama do dispositivo de destino fique diretamente no eixo neutro do espaço de aparência. (Consulte o lado direito da Figura 1.)
+Para mapear os neutros de origem para os neutros do dispositivo, ajuste os limites de jogos de origem e destino e cada pixel ao aplicar o algoritmo de mapeamento de jogos. Primeiro, ajuste cada valor na cor de origem para que o eixo neutro do dispositivo de origem na luz da cor de origem caia diretamente no eixo neutro do espaço de aparência. (Consulte o lado esquerdo da Figura 1.) Em seguida, ajuste a descrição do limite de jogos do dispositivo de destino para que cada cor no eixo neutro do dispositivo de destino na cor da cor do limite de jogos do dispositivo de destino caia diretamente no eixo neutro do espaço de aparência. (Consulte o lado direito da Figura 1.)
 
-![Diagrama que mostra o gráfico de limite de gama de origem à esquerda e o limite de gama de destino à direita.](images/gmmp-image004.png)
+![Diagrama que mostra o grafo Limite de Jogos de Origem à esquerda e o Limite de Jogos de Destino à direita.](images/gmmp-image004.png)
 
-**Figura 1** : alinhamento dos eixos neutros ilustrados. Esquerda: ajustando os pontos de origem relativos ao eixo neutro do dispositivo de origem. Direita: ajustando a descrição do limite de gama de destino em relação à descrição do limite de gama de destino.
+**Figura 1:** alinhamento dos eixos neutros ilustrados. Esquerda: ajuste dos pontos de origem em relação ao eixo neutro do dispositivo de origem. Direito: ajustando a descrição do limite de jogos de destino em relação à descrição do limite de jogos de destino.
 
-Observe que você ajusta cada valor de pixel de origem relativo ao eixo neutro nesse valor de claridade. Isso garante que os neutros do dispositivo de origem se enquadram no eixo neutro do modelo de aparência. Você também move todas as outras cores nessa claridade pelo mesmo valor, para que não haja nenhum descontinuidades na representação da gama de origem. Você precisa mudar de acordo com valores diferentes em níveis de claridade diferentes, pois os neutros do dispositivo de origem não são representados como desvios igualmente nos diferentes níveis de luminosidade. Claramente, essa não é uma transformação trivial.
+Observe que você ajusta cada valor de pixel de origem em relação ao eixo neutro nesse valor de luz. Isso garante que os neutros do dispositivo de origem se enquadram no eixo neutro do modelo de aparência. Você também desloca todas as outras cores nessa luz pela mesma quantidade, para que não haja descontinuidades na representação da gama de origem. Você precisa mudar por diferentes quantidades em diferentes níveis de luz, porque os neutros do dispositivo de origem não são representados como igualmente chromatic nos diferentes níveis de luz. Claramente, essa não é uma transformação trivial.
 
-Lidar com os valores do dispositivo de destino é um pouco mais complicado. Inicialmente, você ajusta todo o limite de gama de destino de maneira semelhante, mas relativo ao eixo neutro do dispositivo de destino. Isso é ilustrado na Figura 1 no lado direito. Esse ajuste garante que os valores de cinza de origem serão mapeados para valores cinza de destino. Este é o espaço no qual os algoritmos de mapeamento de gama operam.
+Lidar com os valores do dispositivo de destino é um pouco mais complicado. Inicialmente, você ajusta todo o limite de jogos de destino de maneira semelhante, mas em relação ao eixo neutro do dispositivo de destino. Isso é ilustrado na Figura 1 no lado direito. Esse ajuste garante que os valores cinza de origem serão mapeados para valores cinza de destino. Esse é o espaço no qual os algoritmos de mapeamento de jogos operam.
 
-No entanto, esse espaço não descreve precisamente o comportamento real do dispositivo de destino. Você deve inverter o mapeamento antes que as cores mapeadas em gamut sejam entregues ao modelo de aparência e ao modelo de dispositivo de destino. Você desloca todos os valores mapeados pelo oposto do deslocamento aplicado anteriormente ao eixo neutro do dispositivo de destino. Isso mapeia o eixo neutro de destino de volta para o valor representado originalmente pelo CAM. Ele faz o mesmo para o limite de gama e todos os valores intermediários.
+No entanto, esse espaço não descreve com precisão o comportamento verdadeiro do dispositivo de destino. Você deve inverter o mapeamento antes que as cores mapeadas de jogos sejam entregues ao modelo de aparência e ao modelo de dispositivo de destino. Você desloca todos os valores mapeados pelo oposto do deslocamento aplicado anteriormente ao eixo neutro do dispositivo de destino. Isso mapeia o eixo neutro de destino de volta para o valor representado originalmente pelo CAM. Ele faz o mesmo para o limite de jogos e todos os valores intermediários.
 
 ![Diagrama que mostra um grafo para desfazer o alinhamento do eixo neutro do dispositivo de destino.](images/gmmp-image008.png)
 
-**Figura 2** : desfazendo o alinhamento do eixo neutro do dispositivo de destino
+**Figura 2:** Desfazer o alinhamento do eixo neutro do dispositivo de destino
 
 ### <a name="minimum-color-difference-mincd"></a>Diferença mínima de cor (MinCD)
 
-Diferença de cor mínima (MinCD) versões relativas e absolutas-equivalentes à intenção colorimétrico ICC.
+Versões Mínimas de Diferença de Cores (MinCD) Relativas e Absolutas – equivalentes à intenção colorimétrica ICC.
 
 > [!Note]  
-> O MinCD GMM é adequado para mapear gráficos e arte de linhas contendo cores de "logotipos" (cores spot), gradientes de cores de logotipo com algumas cores fora do gamut e para o estágio final de transformações de verificação. Embora o MinCD GMM pudesse ser usado para imagens fotográficas que são inteiramente dentro da gama de destino, não é recomendável para renderização geral de imagens fotográficas. O mapeamento de cores fora do gamut para cores na superfície da gama de destino pode resultar em artefatos indesejados, como tons ou irregularidades croma em gradientes suaves que cruzam o limite de gama. BasicPhoto é recomendado para imagens fotográficas. Se uma imagem fotográfica ou de contom exigir um mapeamento de gamut diferente de BasicPhoto, a alternativa deverá ser criar um GMM de plug-in que implemente esse mapeamento, em vez de usar MinCD.
+> O GMM MinCD é adequado para mapear elementos gráficos e linhas que contêm cores de "logotipo" (cores spot), gradientes de cores do logotipo com algumas cores fora de jogo e para o estágio final das transformaçãos de prova. Embora o GMM MinCD possa ser usado para imagens de fotos que estão inteiramente dentro do gamut de destino, não é recomendável para renderização geral de imagens de imagens de fotos. O mapeamento de cores fora de jogo para cores na superfície de jogos de destino pode resultar em artefatos indesejados, como anomalias de tom ou de chroma em gradientes suaves que cruzam o limite de jogos. BasicPhoto é recomendado para imagens de fotos. Se uma imagem falsa ou contona exigir um mapeamento de jogos diferente de BasicPhoto, a alternativa deverá ser criar um GMM plug-in implementando esse mapeamento, em vez de usar MinCD.
 
  
 
-As cores na gama permanecem inalteradas. Para cores fora do gamut, a claridade e a croma são ajustadas encontrando o ponto na gama de destino que tem a distância de cor mínima de pontos de entrada fora do gamut. A distância da cor é calculada no espaço JCh. No entanto, você pondera a distância na claridade (J) e a distância em croma (C) ou matiz (h) de forma diferente. Uma função de peso dependente de croma é usada para a distância na claridade, de forma que o peso seja menor para pequenos croma e maior para grandes croma até que um limite croma seja atingido, após o qual o peso permanece em 1, ou seja, o mesmo peso que a distância em croma ou matiz. Isso segue o uso recomendado para CMC e CIEDE2000. Há duas variantes: colorimétrico relativo e colorimétrico absoluto.
+As cores em jogos são deixadas inalteradas. Para cores fora de jogo, a leveza e a chroma são ajustadas encontrando o ponto na gama de destino que tem a distância mínima da cor dos pontos de entrada fora de jogos. A distância da cor é calculada no espaço JCh. No entanto, você pondera a distância em leveza (J) e a distância em chroma (C) ou matiz (h) de forma diferente. Uma função de peso dependente de chroma é usada para a distância em leveidade, de modo que o peso seja menor para chroma pequena e maior para uma chroma grande até que um limite de chroma seja atingido, após o qual o peso permanece em 1, ou seja, o mesmo peso que a distância em chroma ou matiz. Isso segue o uso recomendado para CMC e CIEDE2000. Há duas variantes: colorimetric relativo e colorimetric absoluto.
 
-**Colorimétrico relativo:** Primeiro, alinhe os eixos neutros de origem e de destino conforme descrito anteriormente. Em seguida, recorte a cor de origem ajustada para o limite de gama de destino ajustado. (Consulte a Figura 4. Mapeamento de croma ao longo da luminosidade constante.) Reajuste os valores do dispositivo de destino conforme descrito anteriormente. No caso de um limite de gama de destino monocromático, o recorte croma significa que o valor de croma (C) é definido como zero (0,0).
+**Colorimetric relativo:** Primeiro, alinhe os eixos neutros de origem e destino, conforme descrito anteriormente. Em seguida, clip the adjusted source color to the adjusted destination gamut boundary. (Consulte a Figura 4. Mapeamento de Chroma ao longo da luz constante.) Reajuste os valores do dispositivo de destino, conforme descrito anteriormente. No caso de um limite de jogos de destino monocromático, o recorte de chroma significa que o valor de chroma (C) é definido como zero (0,0).
 
-**Colorimétrico absoluto:** Isso é semelhante ao colorimétrico relativo, mas sem o alinhamento do eixo neutro de origem e de destino. O valor de origem é recortado diretamente para o eixo neutro de destino. Observe que se os limites de gama de origem e de destino forem monocromáticos, o comportamento será idêntico à variante colorimétrico relativa; ou seja, o alinhamento dos eixos neutros é executado e, em seguida, o croma é recortado para zero. Isso garante que uma saída razoável seja obtida mesmo se a mídia e a colorants forem significativamente diferentes.
+**Colorimétrica absoluta:** Isso é semelhante à colorimétrica relativa, mas sem o alinhamento do eixo neutro de origem e destino. O valor de origem é recortado diretamente para o eixo neutro de destino. Observe que, se os limites de jogos de origem e destino são monocromáticos, o comportamento é idêntico à variante colorimétrica relativa; ou seja, o alinhamento de eixos neutros é executado e, em seguida, o chroma é recortado para zero. Isso garante que uma saída razoável seja atingida mesmo que a mídia e os colorantes sejam significativamente diferentes.
 
-![Diagrama que mostra um grafo para recorte de MinCD para a gama ajustada.](images/gmmp-image010.png)
+![Diagrama que mostra um grafo para recorte minCD para a gama ajustada.](images/gmmp-image010.png)
 
-**Figura 3** : recorte de MinCD para a gama ajustada
+**Figura 3:** Recorte minCD para a gama ajustada
 
 ### <a name="basicphoto"></a>BasicPhoto
 
 ### <a name="overview"></a>Visão geral
 
-BasicPhoto-equivalente à intenção de ICC, de ilustrações ou de perceptiva.
+BasicPhoto – equivalente à intenção de ICC preferencial, pictorial ou perceptual.
 
-Esse algoritmo é uma variante do mapeamento de luminosidade de sigmoidal dependente de croma e SGCK (Cusp de dimensionamento joelho) descritos por CIE TC8-03 em CIE156:2004. Este algoritmo variante dá suporte a descritores de limite de gamut (GBDs) com shells de gama dupla; ou seja, GBDs com um shell de referência e um shell plausível. O algoritmo SGCK, que originalmente assume um shell de gamut no GBD, é baseado no \_ algoritmo SIG joelho (Braun 1999), que incorpora o mapeamento de claridade de sigmoidal e o dimensionamento de função joelho proposto por Braun e Fairchild (1999), combinados com a dependência croma de GCUSP (Morovic, 1998). Ele mantém uma constante de matiz percebida, por exemplo, ângulo de matiz em jab corrigida por matiz e usa um dimensionamento de claridade de sigmoidal genérico (independente de imagem), que é aplicado de uma maneira dependente de croma e uma função croma joelho de 90%. A variante é dimensionada junto com as linhas de luminosidade constante.
+Esse algoritmo é uma variante do mapeamento de luminosidade sigmoidal dependente de chroma e do SGCK (dimensionamento de rótula) descrito por CIE TC8-03 em CIE156:2004. Esse algoritmo de variante dá suporte a GBDs (descritores de limite de jogos) com shells de jogos duplos; ou seja, GBDs com um shell de referência e um shell frágil. O algoritmo SGCK, que assume originalmente apenas um shell de gamut no GBD, baseia-se no algoritmo SIGOID (1999), que incorpora o mapeamento de leveza sigmoidal e o dimensionamento de função de rótula proposto por Clara e Fairchild (1999), combinado com a dependência de \_ chroma de GCUSP (1998). Ele mantém a constante de matiz percebida, por exemplo, o ângulo de matiz em Hue-corrected Hue e usa um dimensionamento de luz sigmoidal genérico (independente de imagem), que é aplicado de maneira dependente de chroma e uma função de 90% de chroma. A variante é dimensiona ao longo de linhas de luz constante.
 
-### <a name="the-case-of-single-gamut-shell"></a>O caso de um único Shell de gamut
+### <a name="the-case-of-single-gamut-shell"></a>O caso de um shell de jogos único
 
-É útil examinar o algoritmo no caso em que a origem e o destino GBDs têm apenas um shell de gamut. Nesse caso, o algoritmo consiste nos seguintes cálculos.
+É útil revisar o algoritmo caso os GBDs de origem e de destino tenham apenas um shell de jogos. Nesse caso, o algoritmo consiste nos cálculos a seguir.
 
-Primeiro, execute o mapeamento de claridade inicial usando a seguinte fórmula:
+Primeiro, execute o mapeamento de leveza inicial usando a seguinte fórmula:
 
-![Mostra a fórmula para o mapeamento de claridade inicial.](images/gmmp-image012.png) (1)
+![Mostra a fórmula para o mapeamento de leveza inicial.](images/gmmp-image012.png) (1)
 
-em que *j ₒ* é a claridade original e *j <sub>R</sub>* é a claridade da reprodução.
+em *que J* é a leveza original e J *<sub>R</sub>* é a luz de reprodução.
 
-![Mostra a segunda fórmula de mapeamento de claridade.](images/gmmp-image014.png) (2)
+![Mostra a segunda fórmula de mapeamento de leveza.](images/gmmp-image014.png) (2)
 
-Quando o limite de gamut de origem for monocromático, o valor de croma será zero para o limite monocromático devido ao alinhamento de eixo neutro. Isso resultará no caso de degeneração, em que C é igual a zero. Nesse caso, *p <sub>C</sub>* é definido como 1.
+Quando o limite de gamut de origem for monocromático, o valor de chroma será zero para o limite monocromático devido ao alinhamento do eixo neutro. Isso resultará no caso degenere em que C é igual a zero. Nesse caso, *p <sub>C</sub>* é definido como 1.
 
-*p <sub>C</sub>* é um fator de ponderação dependente de croma (Morovic, 1998) que depende do Croma da cor original, C e *J <sub>S</sub>* são o resultado da claridade original que está sendo mapeada usando uma função sigmoidal.
+*p <sub>C</sub>* é um fator de ponderação dependente de chroma (Semprevic, 1998) que depende do chroma da cor original, C e *J <sub>S</sub>* são o resultado da leveza original que está sendo mapeada usando uma função sigmoidal.
 
  
 
-Para calcular *J <sub>S</sub>* (Braun e Fairchild, 1999), uma tabela de pesquisa unidimensional (LUT) entre os valores de claridade original e de reprodução é configurada pela primeira vez de uma função normal cumulativa (S) discreta.
+Para calcular *J <sub>S</sub>* (Sk e Fairchild, 1999), uma LUT (tabela de pesquisa unidimensional) entre os valores originais e de luz de reprodução é configurada primeiro com base em uma função normal cumulativa discreta (S).
 
 ![Mostra uma fórmula para calcular J s.](images/gmmp-image016.png) (3)
 
@@ -463,101 +463,101 @@ Em outras palavras, ele é sigmoidal dentro do Shell de referência e linear ext
 
 ![Diagrama que mostra um grafo para a função de redimensionamento de claridade para GBDs de dois shells.](images/gmmp-image033.png)
 
-**Figura 9** : função de redimensionamento de luminosidade para GBDs de dois shells
+**Figura 9:** Função de recalque de leveza para GBDs de dois shells
 
 **SHELL DE REFERÊNCIA INDUZIDO**
 
-Onde um GBD tem um shell e o outro GBD tem dois shells, você deve criar um "Shell de referência" para o GBD com apenas um shell. O Shell existente, que seria chamado de Shell de referência, será alterado para o "Shell plausível". Na verdade, você não precisa realmente criar um shell no espaço completo do jab. Como o redimensionamento de claridade usa apenas *j Max* e *j min*, você só precisa criar esses valores para o Shell de referência induzido. Há dois casos, dependendo de qual GBD tem dois shells.
+Em que um GBD tem um shell e o outro GBD tem dois shells, você deve criar um "Shell de Referência" para o GBD com apenas um shell. O shell existente, que seria chamado de Shell de Referência, será alterado para o "Shell Desaúso". Na verdade, na verdade, você não precisa criar um shell no espaço full Dem. Como o recalque de leveidade usa apenas *J max* e *J min,* você só precisa fazer esses valores para o Shell de Referência induzido. Há dois casos, dependendo de qual GBD tem dois shells.
 
-Caso 1: Source GBD tem dois shells; o GBD de destino tem um shell.
+Caso 1: o GBD de origem tem dois shells; O GBD de destino tem um shell.
 
-Determinar o Shell de referência induzido de destino no eixo neutro; ou seja, J <sub>r, \ min, \ ref</sub> e J <sub>r, \ Max, \ ref</sub> do Shell. Isso é feito usando o algoritmo a seguir.
+Determine o Shell de Referência induzido de destino no eixo neutro; ou seja, o J <sub>r,\ min,\ ref</sub> e J <sub>r,\ max,\ ref</sub> do shell. Isso é feito usando o algoritmo a seguir.
 
-![Mostra o algoritmo para determinar o Shell de referência induzido de destino.](images/gmmp-induced01.png)
+![Mostra o algoritmo para determinar o Shell de Referência induzido de destino.](images/gmmp-induced01.png)
 
-Os fatores? <sub>baixa</sub> e? controle <sub>alto</sub> a separação entre o Shell plausível e o Shell de referência. Um valor de 1 significa que os valores J <sub>min</sub> ou j m ₐ ₓ coincidem. Seus valores são "induzidos" do Shell de referência de origem e do Shell plausível de origem.
+Os fatores ? <sub>baixo</sub> e ? <sub>controle</sub> alto a separação entre o Shell Desilusão e o Shell de Referência. Um valor de 1 significa que os valores de J <sub>min</sub> ou J m coincidem. Seus valores são "induzidos" do Shell de Referência de origem e do Shell De origem.
 
-![Mostra a fórmula para os valores do Shell de referência de origem e o Shell plausível de origem.](images/gmmp-induced02.png)
+![Mostra a fórmula para os valores do Shell de Referência de origem e o Shell De origem.](images/gmmp-induced02.png)
 
-Os "fatores adequações" F <sub>baixo</sub> e f <sub>alto</sub> são *parâmetros ajustáveis* que devem estar entre 0 e 1. Se o valor for 0, os ₓ de ₐ J <sub>min</sub> ou j m serão induzidos diretamente dos shells de origem. Para esse caso, escolha F <sub>Low</sub> = 0,95 e f <sub>High</sub> = 0,1.
+Os "fatores de trabalho" F <sub>baixo</sub> e F <sub>alto</sub> são *parâmetros* que devem estar entre 0 e 1. Se o valor for 0, os J <sub>min</sub> ou J m serão induzidos diretamente dos shells de origem. Nesse caso, escolha F <sub>baixo</sub> = 0,95 e F <sub>alto</sub> = 0,1.
 
-Caso 2: o GBD de origem tem um shell; o GBD de destino tem dois shells.
+Caso 2: o GBD de origem tem um shell; O GBD de destino tem dois shells.
 
-Determinar o Shell de referência induzido de origem no eixo neutro; ou seja, a J o <sub>, \ min, \ ref</sub> e J <sub>o, \ Max, \ ref</sub> do Shell. Isso é feito usando o algoritmo a seguir.
+Determine o Shell de Referência induzido de origem no eixo neutro; ou seja, o J <sub>o,\ min,\ ref</sub> e J <sub>o,\ max,\ ref</sub> do shell. Isso é feito usando o algoritmo a seguir.
 
-![Mostra o algoritmo para determinar o Shell de referência induzido de destino no eixo neutro.](images/gmmp-induced03.png)
+![Mostra o algoritmo para determinar o Shell de Referência induzido de destino no eixo neutro.](images/gmmp-induced03.png)
 
-Mais uma vez, os fatores? <sub>baixa</sub> e? controle <sub>alto</sub> a separação entre o Shell plausível e o Shell de referência. Um valor de 1 significa que os valores J <sub>min</sub> ou j m ₐ ₓ coincidem. Seus valores são "induzidos" do Shell de referência de origem e do Shell plausível de origem:
+Novamente, os fatores ? <sub>baixo</sub> e ? <sub>controle</sub> alto a separação entre o Shell de Negação e o Shell de Referência. Um valor de 1 significa que os <sub>valores</sub> mínimos J ou J m coincidem. Seus valores são "induzidos" do Shell de Referência de origem e do Shell De origem De origem:
 
-![Mostra o algoritmo para controlar a separação entre o Shell de referência e o Shell plausível de origem.](images/gmmp-induced04.png)
+![Mostra o algoritmo para controlar a separação entre o Shell de Referência e o Shell De origem.](images/gmmp-induced04.png)
 
-### <a name="reasons-for-changes-from-the-cie-tc8-03-recommendations"></a>Motivos para alterações das recomendações de CIE TC8-03
+### <a name="reasons-for-changes-from-the-cie-tc8-03-recommendations"></a>Motivos para alterações das recomendações do CIE TC8-03
 
-O BasicPhoto difere das recomendações de CIE TC8-03 das seguintes maneiras.
+BasicPhoto difere das recomendações do CIE TC8-03 das seguintes maneiras.
 
-1.  Croma não é compactado em direção a Cusp, mas junto com as linhas de luminosidade constante.
-2.  O intervalo de claridade usa a claridade da cor mais escura na gama, em vez do ponto em que o limite de gama cruza o eixo neutro.
-3.  O BasicPhoto dá suporte a um shell de gamut de referência e a um shell de gamut plausível, se o limite de gama na transformação tiver dois shells.
-4.  BasicPhoto usa CIECAM02; em vez de usar CIECAM97s para converter para D65 em 400 cd/m2 e, em seguida, usar RIT XISTENTE de espaço de cores.
+1.  O Chroma não é compactado em direção ao cume, mas ao longo de linhas de luz constante.
+2.  O intervalo de leveza usa a luz da cor mais escura na gama, em vez do ponto em que o limite de jogos cruza o eixo neutro.
+3.  BasicPhoto dá suporte a um shell de jogos de referência e a um shell de jogos inentente, se qualquer limite de gamut na transformação tiver dois shells.
+4.  BasicPhoto usa CIECAM02; em vez de usar CIECAM97s para converter em D65 a 400 cd/m2 e, em seguida, usar o espaço de cor IPT RIT.
 
-A primeira alteração foi feita para evitar problemas de inversão de Tom que podem ocorrer ao usar a compactação em direção a um Cusp. Como mostra a Figura 10, a compactação Cusp pode causar inversões de Tom. Isso pode acontecer quando as cores de alta croma são mais claras que as cores de croma menores. Como o SGCK compacta cada pixel independentemente na claridade e croma, não é garantido preservar a relação de luminosidade entre os valores de pixel após a compactação. A desvantagem bem conhecida dessa decisão de compactar as linhas da claridade constante é que você pode sofrer perdas de croma, em particular em áreas em que o limite de gama de destino é muito simples, como acontece com amarelos brilhantes.
+A primeira alteração foi feita para evitar problemas de inversão de tom que podem ocorrer ao usar a compactação em direção a um manifest. Conforme mostrado na Figura 10, a compactação de ltda pode causar inversões de tom. Isso pode acontecer quando as cores de chroma alta são mais claras do que as cores de chroma inferior. Como o SGCK compacta cada pixel independentemente na leveidade e no chroma, não há garantia de preservar a relação de leveza entre os valores de pixel após a compactação. A desvantagem conhecida dessa decisão de compactar linhas de luz constante é que você pode sofrer perdas de chroma, especialmente em áreas em que o limite de jogos de destino é muito simples, como acontece com amarelos brilhante.
 
-![Diagrama que mostra a inversão de Tom causada por SGCK.](images/gmmp-toneinversion.png)
+![Diagrama que mostra a inversão de tom causada pelo SGCK.](images/gmmp-toneinversion.png)
 
-**Figura 10** : inversão de Tom causada por SGCK
+**Figura 10:** Inversão de tom causada por SGCK
 
-![Mostra uma imagem original de um bule.](images/originalteapot.jpg)![Mostra o resultado de SGCK da imagem bule.](images/badteapot.jpg)![Mostra o resultado de BasicPhoto da imagem bule.](images/betterteapot.jpg)
+![Mostra uma imagem original de um bule.](images/originalteapot.jpg)![Mostra o resultado SGCK da imagem de bule.](images/badteapot.jpg)![Mostra o resultado BasicPhoto da imagem de bule.](images/betterteapot.jpg)
 
-**Figura 11** : imagem original, resultado SGCK e resultado de BasicPhoto
+**Figura 11:** imagem original, resultado SGCK e resultado de BasicPhoto
 
-A Figura 11 ilustra essa inversão de Tom. À esquerda, está uma imagem original capturada por uma câmera digital; no centro, a imagem é reproduzida por SGCK; e à direita, a imagem é reproduzida pelo BasicPhoto. A imagem à esquerda está no espaço de cores da câmera digital, as imagens central e direita estão no espaço de cores de uma tela de vídeo LCD. Na imagem original, a parte superior do bule é mais escura que a parte inferior, pois a parte inferior está refletindo a toalha de que está sentado. Na imagem SGCK, a parte superior é realmente mais clara do que a inferior, devido à inversão de Tom. Além disso, é difícil ver os itens refletidos na parte inferior do bule. À direita, BasicPhoto corrigiu a inversão de Tom e os artigos refletidos são mais claramente distinguíveis.
+A Figura 11 ilustra essa inversão de tom. À esquerda está uma imagem original capturada por uma câmera digital; no centro, a imagem como reproduzida pelo SGCK; e à direita, a imagem reproduzida por BasicPhoto. A imagem à esquerda está no espaço de cores da câmera digital, as imagens central e direita estão no espaço de cores de uma exibição de vídeo do LCD. Na imagem original, a parte superior do bule é mais escura do que a parte inferior, porque a parte inferior está refletindo a peça de tabela em que ela está. Na imagem SGCK, a parte superior é, na verdade, mais leve do que a parte inferior, devido à inversão de tom. Além disso, é difícil ver os itens refletidos na parte inferior do bule. À direita, BasicPhoto corrigiu a inversão de tom e os artigos refletidos são mais claramente distinguíveis.
 
-A segunda alteração foi feita para melhorar a reprodução de cores quase pretas em impressoras em que o preto Blackest não se enquadra diretamente no eixo neutro CIECAM02. A Figura 12 a seguir mostra uma imagem convertida em sRGB; reproduzida para uma impressora de jato de Inkjet RGB usando SGCK; e reproduzida para a mesma impressora usando BasicPhoto. A imagem no centro não está usando o dispositivo completo preto e, portanto, falta o contraste visto no original. O contraste é restaurado com BasicPhoto.
+A segunda alteração foi feita para melhorar a reprodução de cores quase pretas em impressoras em que o preto mais preto não se enquadra diretamente no eixo neutro CIECAM02. A Figura 12 a seguir mostra uma imagem convertida em sRGB; reproduzido para uma impressora de inkjet RGB usando SGCK; e reproduzidos para a mesma impressora usando BasicPhoto. A imagem no centro não está usando o dispositivo completo preto e, portanto, não tem o contraste visto no original. O contraste é restaurado com BasicPhoto.
 
-![Mostra a imagem original de um playset.](images/playstructure.jpg)![Mostra a imagem do playset reproduzida para uma impressora de jato de impressão R G B usando SGCK.](images/playstructurebad.jpg)![Mostra a imagem do playset reproduzida para uma impressora de jato de impressão R G B usando BasicPhoto.](images/betterplaystructure.jpg)
+![Mostra a imagem original de um playset.](images/playstructure.jpg)![Mostra a imagem do playset reproduzida para uma impressora de inkjet R G B usando SGCK.](images/playstructurebad.jpg)![Mostra a imagem do playset reproduzida para uma impressora de inkjet do R G B usando BasicPhoto.](images/betterplaystructure.jpg)
 
-**Figura 12** : preto aprimorado
+**Figura 12:** Preto aprimorado
 
-A terceira alteração foi feita para melhorar a reprodução de cores para câmeras digitais. Particularmente em casos em que a câmera digital tiver sido criada com o uso de um destino de referência, uma descrição de limite de gama criada com base em cores medidas pode não incluir todas as cores que podem ser capturadas em uma cena do mundo real. Em vez de recortar todas as cores na gama do destino de cor medido, você permite que a extrapolação produza um limite de gamut plausível. O algoritmo BasicPhoto foi projetado para dar suporte a tal limite de gama extrapolado.
+A terceira alteração foi feita para melhorar a reprodução de cores para câmeras digitais. Especialmente nos casos em que a câmera digital foi criada usando um destino de referência, uma descrição de limite de jogos criada com base em cores medidas pode não incluir todas as cores que podem ser capturadas em uma cena do mundo real. Em vez de cortar todas as cores para o gamut do destino de cor medido, você permite que a extrapolação produza um limite de jogos inaceitável. O algoritmo BasicPhoto foi projetado para dar suporte a esse limite de jogos extrapolado.
 
-A quarta alteração foi feita porque CIECAM02 funciona bem para o mapeamento de gamut. O processo recomendado pelo TC8-03 de converter as cores do dispositivo para o D65 em 400 cd/m2 e, em seguida, usar o espaço de cores RIT XISTENTE é de computação intensiva e demorada.
+A quarta alteração foi feita porque o CIECAM02 funciona bem para o mapeamento de gamut. O processo recomendado pelo TC8-03 de conversão de cores do dispositivo em D65 a 400 cd/m2 e, em seguida, o uso do espaço de cores de IPT RIT é demorado e demorado.
 
 ### <a name="hue-mapping"></a>Mapeamento de matiz
 
-HueMap é o equivalente à intenção de saturação de ICC.
+HueMap é o equivalente da intenção de saturação do ICC.
 
-Se o limite de gamut de origem ou o limite de gama de destino não contiver primárias, esse modelo será revertido para o modelo MinCD (relativo) descrito em uma seção anterior; por exemplo, dispositivos para os quais os primários não podem ser determinados (perfis ICC com mais de quatro canais) ou perfis ICC monocromáticos.
+Se o limite de jogos de origem ou o limite de jogos de destino não contiver primários, esse modelo será reverta para o modelo MinCD (relativo) descrito em uma seção anterior; por exemplo, dispositivos para os quais os primários não podem ser determinados (perfis ICC com mais de quatro canais) ou perfis ICC monocromáticos.
 
-Esse algoritmo primeiro ajusta o matiz do valor de cor de entrada. Em seguida, ele ajusta simultaneamente a claridade e a croma, usando um mapeamento de distorção. Por fim, ele corta o valor de cor para ter certeza de que ele está dentro do gamut.
+Esse algoritmo primeiro ajusta o matiz do valor da cor de entrada. Em seguida, ele ajusta simultaneamente a luminosidade e a chroma, usando um mapeamento de cingar. Por fim, ele clipes de valor de cor para garantir que ele está dentro do gamut.
 
-A primeira etapa é determinar as "rodas de matiz". Localize os valores de JCh para as cores primária e secundária para o dispositivo de origem e de destino. Você está considerando apenas os componentes de matiz. Isso resulta em uma roda de matiz primária ou secundária com seis pontos de cor para cada dispositivo. (Veja a Figura 13.)
+A primeira etapa é determinar as "Hue Wheels". Encontre os valores JCh para cores primárias e secundárias para o dispositivo de origem e de destino. Você está considerando apenas os componentes de matiz. Isso resulta em uma roda de matiz primária ou secundária com seis pontos de cor para cada dispositivo. (Consulte a Figura 13.)
 
-![Diagrama que mostra as rodas de matiz com seis pontos de cor.](images/gmmp-figure12.png)
+![Diagrama que mostra as engrenagens de matiz com seis pontos de cor.](images/gmmp-figure12.png)
 
-**Figura 13** : rodas de matiz
+**Figura 13:** Roda de matiz
 
-Melhores resultados poderão ser obtidos se a fonte primária azul não for girada para o destino azul primário. Em vez disso, o ângulo de matiz primário de origem azul é usado como o ângulo de matiz primário de destino.
+Melhores resultados poderão ser obtidos se o primário azul de origem não for girado para o primário azul de destino. Em vez disso, o ângulo de matiz primário azul de origem é usado como o ângulo de matiz primário azul de destino.
 
 Em seguida, execute as rotações de matiz para cada cor de entrada da imagem de origem,
 
-a) usando o ângulo de matiz da cor de entrada, determine o local da cor na roda de matiz de origem em relação às duas cores primárias ou secundárias adjacentes. O local pode ser considerado como uma porcentagem da distância entre os primários. Por exemplo, o matiz da cor de entrada é de 40% do caminho do valor de matiz de magenta para o valor de matiz de vermelho.
+a)Usando o ângulo de matiz da cor de entrada, determine o local da cor na roda de matiz de origem em relação às duas cores primária ou secundária adjacentes. O local pode ser pensado como uma porcentagem da distância entre as primárias. Por exemplo, o matiz de cor de entrada é 40% do caminho do valor de matiz de Magenta para o valor de matiz de Vermelho.
 
-b) na roda de matiz de destino, localize o ângulo de matiz associado, por exemplo, 40 por cento de magenta para vermelho. Esse valor será o ângulo de matiz de destino.
+b)Na roda de matiz de destino, localize o ângulo de matiz associado, por exemplo, 40% de Magenta para Vermelho. Esse valor será o ângulo de matiz de destino.
 
-Em geral, os primários de origem e os secundários não estarão nos mesmos ângulos de matiz que os primários de destino e secundários; ou seja, o ângulo de matiz de destino geralmente será diferente do ângulo de matiz de origem.
+Em geral, os primários e secundários de origem não estarão nos mesmos ângulos de matiz que os primários e secundários de destino; ou seja, o ângulo de matiz de destino geralmente será diferente do ângulo de matiz de origem.
 
-Por exemplo, suponha que as rodas de matiz produzam os seguintes valores:
+Por exemplo, suponha que as engrenagens de matiz produzam os seguintes valores:
 
-Origem M = 295 graus, fonte R = 355 graus.
+Origem M = 295 graus, Origem R = 355 graus.
 
-Destino M = 290 graus, destino R = 346 graus.
+Destino M = 290 graus, Destino R = 346 graus.
 
-Se o ângulo de matiz da cor de entrada for de 319 graus, será 40% do ângulo (24 graus) da origem M para o R de origem. O ângulo de M para R é de 60 graus e o ângulo de M para inserir matiz é de 24 graus. Calcule o ângulo no destino que é de 40% do destino M para o R de destino (22 graus), portanto, o ângulo de matiz da cor de destino é de 312 graus.
+Se o ângulo de matiz da cor de entrada for 319 graus, ele será 40% do ângulo (24 graus) da fonte M para o R de origem. O ângulo de M para R é de 60 graus e o ângulo de M para o matiz de entrada é de 24 graus. Calcule o ângulo no destino que é 40% do destino M para o destino R (22 graus), portanto, o ângulo de matiz da cor de destino é de 312 graus.
 
-Em seguida, calcule os pontos de referência de matiz para o matiz de origem e o matiz de destino. Para calcular o ponto de referência de matiz para um valor de h (matiz) específico, você deseja localizar o valor de J (claridade) e de C (croma).
+Em seguida, calcule os pontos de referência de matiz para o matiz de origem e o matiz de destino. Para calcular o ponto de referência de matiz para um valor h (matiz) específico, você deseja encontrar o valor J (leveza) e o valor C (chroma).
 
--   Localize o valor J do ponto de referência de matiz interpolando entre os valores J para os pontos primários ou secundários adjacentes, usando a posição relativa do matiz; por exemplo, 40 por cento neste exemplo.
--   Localize o valor de C máximo nesse valor J e no valor h. Agora você tem o JCh do ponto de referência de matiz para esse matiz.
+-   Localize o valor J do ponto de referência de matiz interpolando entre os valores J para os pontos primários ou secundários adjacentes, usando a posição relativa do matiz; por exemplo, 40% neste exemplo.
+-   Localize o valor máximo de C neste valor J e h. Agora você tem o JCh do ponto de referência de matiz para esse matiz.
 
 ![Diagrama que mostra uma folha de matiz.](images/gmmp-figure13.png)
 
@@ -583,7 +583,7 @@ Primeiro, COMPUTE "factorC" (fator de dependência croma) para o ponto de destin
 
 factorC = (destinationC/referenceC)? 0,5
 
-onde:
+em que:
 
 destinationC é o valor C do ponto de destino.
 
@@ -594,7 +594,7 @@ Em seguida, determine se o ponto de destino J está acima ou abaixo da referênc
 1.  Compute "factorJ" para o ponto de destino em relação ao referenceJ. Esse valor de factorJ estará entre 0 e 1 (0 se estiver no referenceJ; 1 se em maxJ).
 2.  factorJ = (destinationJ-referenceJ)/(maxJ-referenceJ)
 
-    onde:
+    em que:
 
     destinationJ é o J-Value do ponto de destino.
 
@@ -616,7 +616,7 @@ deltaJ = (factorJ-(factorJ? factorJ)) ? (referenceJ - minJ)
 
 destinationJ = destinationJ + (deltaJ? factorC)
 
-onde:
+em que:
 
 minJ é o valor J mínimo da gama.
 
@@ -634,7 +634,7 @@ Veja a seguir uma descrição matemática do processo de expansão croma ou ajus
 4.  Ajuste destinationC (o croma do ponto de destino) para caber na extensão de croma de destino nessa luminosidade e matiz.
 5.  destinationC = destinationC? (destExtentC / sourceExtentC)
 
-    onde:
+    em que:
 
     destinationC é o ponto de destino C-Value.
 
@@ -711,123 +711,123 @@ O que a nova CTE requer é um modelo de um limite de gama que pode ser usado par
 
 **Figura 20** : três shells de gamut
 
-O limite de gama é composto por três shells que definem três regiões.
+O limite de jogos é composto por três shells que definem três regiões.
 
-Na nova CTE, o Shell externo da gama é formado com um envoltória convexa feito dos pontos de amostra na gama do dispositivo. Um envoltória é formado por meio de um conjunto de pontos de exemplo e ao redor deles por uma superfície. Um convexa envoltória tem a propriedade adicional de ser convexa em todos os lugares. Portanto, esse não é o menor envoltória possível que pode se ajustar aos dados. Mas a experimentação mostrou que ajustar os pontos de amostra de forma muito rígida causa artefatos desinteressantes em imagens, como a falta de um sombreamento suave. O convexa envoltória parece resolver esses problemas.
+Na nova CTE, o shell externo do gamut é formado com um chassi convexa feito de pontos de exemplo na gama de dispositivos. Um chassi é formado por meio de um conjunto de pontos de exemplo e ao redor deles por uma superfície. Um chassi convexa tem a propriedade adicional de ser convexa em todos os lugares. Portanto, esse não é o menor chassi possível que pode ser adequado aos dados. Mas a experimentação mostrou que ajustar os pontos de exemplo muito fortemente causa artefatos não aplainados em imagens, como a falta de sombreamento suave. O chassi convexa parece resolver esses problemas.
 
-No algoritmo, os valores de aparência de cor são obtidos para um conjunto de pontos amostrados do dispositivo. Para monitores e impressoras, os valores de aparência de cor são obtidos pela geração de amostras e, em seguida, medindo-os. Você também pode criar um modelo de dispositivo e, em seguida, executar dados sintéticos por meio do modelo de dispositivo para prever valores medidos. Os valores medidos são então convertidos do espaço colorimétrico (XYZ) para o espaço de aparência (jab) e o envoltória é disposto em torno dos pontos.
+No algoritmo, os valores de aparência de cor são obtidos para um conjunto de pontos amostrados do dispositivo. Para monitores e impressoras, os valores de aparência de cor são obtidos pela saída de amostras e, em seguida, medindo-os. Você também pode criar um modelo de dispositivo e, em seguida, executar dados sintéticos por meio do modelo de dispositivo para prever valores medidos. Em seguida, os valores medidos são convertidos de espaço colorimétrico (XYZ) em espaço de aparência (Xyz) e o envolução é envolvido em torno dos pontos.
 
-O ponto principal para esse algoritmo é que o ponto branco adotado usado na conversão de colorimétrico para aparência espaço não precisa ser o ponto branco médio. Em vez disso, você pode selecionar um ponto distante dentro da gama e em (ou próximo) do eixo neutro. Esse ponto terá um J-Value de 100. Os exemplos com um valor Y medido acima do ponto branco adotado acabarão com um valor J maior que 100.
+O ponto chave para esse algoritmo é que o ponto em branco adotado usado na conversão de colorimetric em espaço de aparência não precisa ser o ponto branco da mídia. Em vez disso, você pode selecionar um ponto mais distante dentro do gamut e no eixo neutro (ou próximo). Esse ponto terá um valor J de 100. Exemplos com um valor Y medido maior que o ponto em branco adotado acabarão com um valor J maior que 100.
 
-Se você colocar o ponto branco difuso da cena como o ponto branco adotado para a conversão de espaço de cores, os destaques especulares na cena serão facilmente detectados como tendo um J-Value maior que 100.
+Se você colocar o ponto em branco difuso da cena como o ponto em branco adotado para a conversão de espaço de cores, os destaques especular na cena serão facilmente detectados como tendo um valor J maior que 100.
 
-Como o modelo de cor CIECAM02 é baseado no sistema visual humano, depois que um branco adotado é selecionado, o nível de luminância do ponto preto (J = 0) é determinado automaticamente pelo modelo. Se a imagem de entrada tiver um intervalo dinâmico amplo, é possível que haja valores que sejam mapeados para os valores J menores que zero.
+Como o modelo de cor CIECAM02 é baseado no sistema visual humano, depois que um branco adotado é selecionado, o nível de luminância do ponto preto (J = 0) é determinado automaticamente pelo modelo. Se a imagem de entrada tiver um amplo intervalo dinâmico, é possível que haja valores que mapeiem para valores J menores que zero.
 
-A figura 21 a seguir mostra os neutros de dispositivo em execução no centro das gamas de referência e plausível.
+A Figura 21 a seguir mostra os neutros do dispositivo em execução no centro dos jogos de referência e de negação.
 
-![Diagrama que mostra o eixo neutro do dispositivo adicionado ao limite de gamut.](images/gmmp-image085.png)
+![Diagrama que mostra o eixo neutro do dispositivo adicionado ao limite de jogos.](images/gmmp-image085.png)
 
-**Figura 21** : eixo neutro do dispositivo adicionado ao limite de gamut
+**Figura 21:** Eixo neutro do dispositivo adicionado ao limite de jogos
 
-Todos os mapeamentos de gama envolvem o recorte de um intervalo de entrada para uma gama de saída ou a compactação da gama de entrada para caber na gama de saída. Algoritmos mais complexos são formados pela compactação e recorte em direções diferentes, ou pela divisão da gama em regiões diferentes e, em seguida, pela execução de recorte ou compactação em regiões diferentes.
+Todos os mapeamentos de jogos envolvem o recorte de um intervalo de entrada para uma gama de saída ou a compactação da gama de entrada para caber na gama de saída. Algoritmos mais complexos são formados pela compactação e recorte em diferentes direções ou pela divisão da gama em regiões diferentes e, em seguida, pela execução de recorte ou compactação em regiões diferentes.
 
-A nova CTE estende esse conceito para dar suporte às regiões de uma gama possível, uma gama plausível e uma gama de referência e permite que o GMAs as mapeie de diferentes maneiras. Além disso, o GMAs tem informações sobre o eixo neutro do dispositivo. A discussão a seguir aborda como lidar com situações em que as gamaes de referência e as cores plausívels foram recolhidas entre si.
+A nova CTE estende esse conceito para dar suporte às regiões de uma possível gama, uma jogos de referência e uma gama de referência, além de permitir que os GMAs mapeiem-os de maneiras diferentes. Além disso, os GMAs têm informações sobre o eixo neutro do dispositivo. A discussão a seguir aborda como lidar com situações em que os jogos de referência e os jogos de referência difíceis foram recolhidos uns nos outros.
 
-![Diagrama que mostra o G M A com dois descritores de gamut não recolhidos.](images/gmmp-image091.png)
+![Diagrama que mostra o GM A com dois descritores de jogos não recolhidos.](images/gmmp-image091.png)
 
-**Figura 22** : GMA com dois descritores de gamut não recolhidos
+**Figura 22:** GMA com dois descritores de jogos não recolhidos
 
-Você poderá ver este exemplo se você mapear de um dispositivo de entrada, como uma câmera ou um scanner que é caracterizado com um destino reflexivo, para scRGB espaço. Aqui, as cores plausível mais claras que as de referência são realces especulares. Na prática, a caracterização de uma câmera com um destino pode não gerar o intervalo completo de valores possíveis na câmera; no entanto, os realces especulares e as cores de desvio são encontradas por natureza. (Os destinos transmissos geralmente têm um patch que é a densidade mínima possível na mídia. Com esse destino, os destaques especulares se enquadrariam no intervalo do destino.) O preto de referência para um destino reflexivo seria o início da região preta de sombra. Ou seja, é provável que haja cores nas sombras mais escuras do que o preto no destino. Se a imagem contiver muito conteúdo interessante nessa região, poderá valer a pena preservar essa variação de tons.
+Você poderá ver este exemplo se mapear de um dispositivo de entrada, como uma câmera ou scanner que é caracterizado por um destino reflexivo, para o espaço scRGB. Aqui, as cores mais claras que são mais claras do que o branco de referência são realçadas especular. Na prática, identificar uma câmera com um destino pode não gerar a gama completa de valores possíveis na câmera; no entanto, realças especular e cores muito chromatic encontradas por natureza. (Destinos transmissivos geralmente têm um patch que é a densidade mínima possível na mídia. Com esse destino, realçamentos especular se enquadram no intervalo do destino.) A referência preta para um destino reflexivo seria o início da região de sombra preta. Ou seja, é provável que haja cores nas sombras mais escuras do que o preto no destino. Se a imagem contiver muito conteúdo interessante nessa região, poderá valer a pena preservar essa variação tonal.
 
-![Diagrama que mostra a G M A com uma gama de destino recolhida.](images/gmmp-image095.png)
+![Diagrama que mostra o GM A com uma gama de destino recolhido.](images/gmmp-image095.png)
 
-**Figura 23** : GMA com gama de destino recolhida
+**Figura 23:** GMA com a gama de destino recolhido
 
-A Figura 23 mostra um algoritmo de mapeamento de gamut possível quando a gama de destino só fornece o intervalo de dispositivo branco para preto e não há nenhuma cor possível fora desta gama. Isso provavelmente ocorrerá para dispositivos de saída típicos, como impressoras. As cores possíveis são mapeadas para a borda da gama de destino. Mas ele não tem uma curva de Tom para o dispositivo de saída. O GMA deve selecionar um ponto neutro de luminância inferior para usar como um destino de mapeamento para o branco de referência. Um algoritmo sofisticado pode fazer isso histogramming o lightnesses na imagem de origem e ver quantas estão no intervalo de espera, mas mais claro do que o branco de referência. Quanto mais lightnesses, mais espaço é necessário no dispositivo de destino entre os pontos mapeados para os realces especulares e o branco de referência. Um algoritmo mais simples pode escolher uma distância arbitrária abaixo da escala de claridade do dispositivo branco, como 5 por cento. Uma abordagem semelhante se aplica para o mapeamento do preto máximo de preto e sombra.
+A Figura 23 mostra um possível algoritmo de mapeamento de jogos quando a gama de destino fornece apenas o intervalo entre branco e preto do dispositivo e não há cores possíveis fora desse gamut. Isso provavelmente ocorrerá para dispositivos de saída típicos, como impressoras. As cores possíveis são mapeadas para a borda da gama de destino. Mas não tem uma curva de tom para o dispositivo de saída. O GMA deve selecionar algum ponto neutro de luminância inferior a ser usado como um destino de mapeamento para a referência branca. Um algoritmo sofisticado pode fazer isso histogramando as luzidades na imagem de origem e vendo quantos estão no intervalo esperado, mas mais leve do que o branco de referência. Quanto mais leve for, mais espaço será necessário no dispositivo de destino entre os pontos mapeados para os destaques especular e a referência em branco. Um algoritmo mais simples pode escolher uma distância arbitrária abaixo da escala de luz em branco do dispositivo, como 5%. Uma abordagem semelhante se aplica ao mapeamento do máximo preto e preto-sombra.
 
-Depois de gerar a curva de Tom de destino, você poderá mapear um método semelhante ao usado na Figura 23 anterior. Todos os pontos na curva de Tom de destino ficarão dentro da gama do dispositivo, e todos os pontos no mapeamento devem estar dentro da gama do dispositivo.
+Depois de gerar a curva de tom de destino, você pode mapear em um método semelhante ao usado na Figura 23 anterior. Todos os pontos na curva de tom de destino se enquadram na gama de dispositivos e todos os pontos no mapeamento devem estar dentro da gama de dispositivos.
 
-Se você reverte os valores à esquerda e as figuras à direita e as direções das setas na Figura 23, você pode descrever o caso em que a imagem de origem tem apenas uma gama de referência e as três gamas do dispositivo de saída não foram recolhidas entre si. Um exemplo disso pode ser o mapeamento de um monitor para o scRGB. Novamente, o GMA deve sintetizar os pontos de controle para os cinco pontos na curva de Tom da imagem de origem. Alguns mapeamentos podem colocar todos os pontos da curva de Tom dentro da gama do dispositivo scRGB, enquanto outros mapeamentos podem usar mais da gama scRGB mapeando o branco difuso para a branca de referência e permitindo que o branco especular seja mapeado para um valor mais claro.
+Se você inverter as figuras esquerdas e direitas e as direções das setas na Figura 23, poderá descrever o caso em que a imagem de origem tem apenas um gamut de referência e os três jogos do dispositivo de saída não foram recolhidos uns nos outros. Um exemplo disso pode ser o mapeamento de um monitor para scRGB. Novamente, o GMA deve sintetizar os pontos de controle para os cinco pontos na curva de tom da imagem de origem. Alguns mapeamentos podem colocar todos os pontos da curva de tom dentro da gama de dispositivos scRGB, enquanto outros mapeamentos podem usar mais da gama scRGB mapeando branco difuso para a referência branca e permitindo que o branco especular mapeie para um valor mais claro.
 
-Por fim, você tem o caso em que ambos os dispositivos têm apenas a gama de referência, que é a forma como a maioria dos algoritmos de mapeamento de gama funciona. Portanto, você pode resolver isso apenas voltando para os algoritmos atuais. Como alternativa, se você tiver uma maneira razoável de determinar os cinco pontos de referência para os dispositivos de origem e de destino, poderá organizar para mapear os pontos de referência.
+Por fim, você tem o caso em que ambos os dispositivos têm apenas a gama de referência, que é como a maioria dos algoritmos de mapeamento de jogos funciona. Portanto, você pode resolver isso apenas voltando para os algoritmos atuais. Como alternativa, se você tiver uma maneira razoável de determinar os cinco pontos de referência para os dispositivos de origem e de destino, poderá organizar o mapeamento dos pontos de referência.
 
-As gamas de dispositivos contêm mais do que os cinco pontos de referência no eixo neutro. Elas representam apenas os limites entre regiões potenciais na imagem. Entre cada um dos pontos de referência, você pode usar qualquer uma das técnicas de mapeamento de gamut existentes. Portanto, você pode cortar o intervalo de cores inesperadas e compactar todas as cores entre o esperado branco e o preto, ou você pode cortar todas as cores fora do intervalo de referência e compactar dentro desse intervalo. Há muitas possibilidades, que podem ser implementadas em diferentes GMAs. Além disso, o GMAs pode compactar e cortar de maneiras diferentes. Todas essas combinações são abordadas nessa invenção.
+Os jogos de dispositivo contêm mais de cinco pontos de referência no eixo neutro. Eles representam apenas os limites entre regiões potenciais na imagem. Entre cada um dos pontos de referência, você pode usar qualquer uma das técnicas de mapeamento de gamut existentes. Portanto, você pode cortar o intervalo de cores inesperadas e compactar todas as cores entre o branco e o preto esperados ou pode cortar todas as cores fora do intervalo de referência e compactar dentro desse intervalo. Há muitas possibilidades, que podem ser implementadas em DIFERENTES GMAs. Além disso, os GMAs podem compactar e cortar de maneiras diferentes. Todas essas combinações são abordadas nessa invenção.
 
-Até agora nesta discussão, a gama foi tratada como se fosse apenas uma função do dispositivo no qual a imagem foi criada, capturada ou exibida. No entanto, não há nenhum motivo pelo qual todas as imagens de um dispositivo devem ter a mesma gama. O GMAs depende dos dados no GBD. Se o descritor for alterado entre as imagens, não haverá nenhuma maneira para o GMAs saber. Em particular, se as imagens não tiverem realces especulares, o GMAs executará melhor se o descritor de gamut não mostrar que há cores mais claras do que o branco difuso.
+Até agora nesta discussão, o gamut foi tratado como se fosse apenas uma função do dispositivo no qual a imagem foi criada, capturada ou exibida. No entanto, não há nenhum motivo pelo qual todas as imagens de um dispositivo devem ter a mesma gama. Os GMAs dependem dos dados no GBD. Se o descritor for alterado entre imagens, não haverá como os GMAs saberem. Em particular, se as imagens não têm realças especulares, os GMAs terão um desempenho melhor se o descritor de gamut não mostrar que há cores mais claras do que branco difuso.
 
-Na nova arquitetura da CTE, é possível usar mais de um GMA. O uso de vários GMAs é inerentemente mal definido. Por exemplo, se um dispositivo de captura associar um GMA à sua "aparência", ele tende a fazer isso com uma gama de destino "direcionada". O mesmo é verdadeiro para dispositivos de saída e gamut de origem "direcionados". A gama sRGB é uma gama implícita de destino. Portanto, é altamente recomendável que você use um único GMA, se a previsibilidade for uma prioridade. Um fluxo de trabalho do GMA único deve ser o padrão para todos os fluxos de trabalho, especialmente fluxos de trabalho do consumidor e do Prosumidor. Embora o mapeamento de gamut para a reprodução preferida deva ser feito uma vez, há instâncias em que vários processos de mapeamento são incluídos. Primeiro, para prova, você faz um mapeamento preferencial para a gama do dispositivo de destino final e, em seguida, um processamento colorimétrico para a gama do dispositivo de prova de notação. Em segundo lugar, alguns tipos de mapeamento são usados para alterar as características da imagem, mas não são incluídos para mapear para uma gama do dispositivo, por exemplo, ajustar a curva de Tom ou a desvio. Se vários GMAs forem usados, a interface de transformação usará uma matriz de mapas de gamut limitados, ou seja, mapas de gamut que foram inicializados com um par de descrições de limites de gama. Quando há mais de um mapa de gamut, o limite de gama de entrada para um mapa de gama com sucesso deve ser igual ao limite de gama de saída de seu antecessor.
+Na nova arquitetura de CTE, é possível usar mais de um GMA. O uso de vários GMAs é inerentemente mal definido. Por exemplo, se um dispositivo de captura associar um GMA à sua "aparência", ele tende a fazer isso com um gamut de destino "direcionado". O mesmo é verdadeiro para dispositivos de saída e jogos de origem "direcionados". A gama sRGB é uma gama implícita comumente direcionada. Portanto, é altamente recomendável que você use um único GMA, se a previsibilidade for uma prioridade. Um único fluxo de trabalho de GMA deve ser o padrão para todos os fluxos de trabalho, especialmente fluxos de trabalho de consumidor e prosumer. Embora o mapeamento de jogos para reprodução preferencial deva ser feito uma vez, há instâncias em que vários processos de mapeamento são incluídos. Primeiro, para a prova, você faz um mapeamento preferencial para a gama do dispositivo de destino final e, em seguida, uma renderização colorimétrica para a gama do dispositivo de prova. Em segundo lugar, alguns tipos de mapeamento são usados para alterar as características da imagem, mas não são incluídos para mapear para uma gama de dispositivos, por exemplo, ajustando a curva de tom ou a chromaticidade. Se vários GMAs são usados, a interface de transformação utiliza uma matriz de mapas de jogos limitados, ou seja, mapas de jogos que foram inicializados com um par de descrições de limite de jogos. Quando há mais de um mapa de jogos, o limite de jogos de entrada para um mapa de jogos bem-sucedido deve ser o mesmo que o limite de gama de saída de seu antecessor.
 
-A função de limite de gama de dispositivos usa o mecanismo de modelo de dispositivo e parâmetros analíticos e deriva um limite de gama de dispositivos de cores descrito como uma lista de vértices ordenada do convexa envoltória da gama do dispositivo. A lista de vértices ordenados é armazenada em CIEJab. A estrutura da lista de vértices ordenados é otimizada para aceleração de hardware pelo DirectX. Essa abordagem tem muitas soluções bem conhecidas (pesquise "convexa envoltória DirectX" na Web e você obtém mais de 100 ocorrências). Há também uma referência de 1983 neste tópico (teoria de gráficos de computador e aplicativo, "Shiphulls, superfícies b-spline e CADCAM" PP. 34-49), com referências de 1970 a 1982 no tópico.
+A função de limite de jogos do dispositivo pega o mecanismo de modelo do dispositivo e os parâmetros analíticos e deriva um limite de jogos do dispositivo de cores descrito como uma lista de vértices ordenada do chassi convexa do gamut do dispositivo. A lista de vértices ordenados é armazenada em CIEJab. A estrutura da lista de vértices ordenados é otimizada para aceleração de hardware pelo DirectX. Essa abordagem tem muitas soluções conhecidas (pesquise "Convex hull DirectX" na Web e você obterá mais de 100 acertos). Também há uma referência de 1983 neste tópico (Computer Graphics Theory and Application, "Shiphulls, b-spline surfaces and cadcam" pp. 34-49), com referências de 1970 a 1982 sobre o tópico.
 
-Duas técnicas diferentes podem ser usadas para calcular os triângulos no Shell de gamut. Para outros dispositivos diferentes de dispositivos RGB aditivos, você computa um convexa envoltória. Você pode considerar investigar o suporte não convexa envoltória para outros dispositivos se tiver acesso direto a tais dispositivos para validar a robustez, o desempenho e a fidelidade dos algoritmos. Esse é um processo bem conhecido que não requer mais descrição. A técnica usada para dispositivos RGB aditivos é descrita a seguir.
+Duas técnicas diferentes podem ser usadas para calcular os triângulos no shell de jogos. Para outros dispositivos diferentes de dispositivos RGB aditivos, você computa um chassi convexa. Você pode considerar a investigação do suporte de chassi não convexa para outros dispositivos se tiver acesso direto a esses dispositivos para validar a robustez, o desempenho e a fidelidade dos algoritmos. Esse é um processo conhecido que não requer mais descrição. A técnica usada para dispositivos RGB aditivos é descrita da seguinte forma.
 
-Diferentes GBDs têm vantagens e desvantagens. A representação convexa envoltória garante boas Propriedades geométricas, como fatias de matiz convexa que fornecem um ponto de interseção exclusivo com um raio de um ponto no eixo neutro. A desvantagem da representação convexa envoltória também é convexity. É conhecido que muitos dispositivos, especificamente para exibir dispositivos, têm gamas que estão longe de serem convexas. Se a gama real se desviar significativamente da suposição convexity, a representação convexa envoltória seria imprecisa, possivelmente na medida em que ela não representa a realidade.
+GbDs diferentes têm vantagens e desvantagens. A representação de enxadas convexa garante propriedades geométricas interessantes, como fatias de matiz convexa que fornecem um ponto de interseção exclusivo com um raio emanando de um ponto no eixo neutro. A desvantagem da representação convexa de chassi também é convexa. É conhecido que muitos dispositivos, especificamente dispositivos de exibição, têm jogos que estão longe de serem convexas. Se o gamut real se desvia significativamente da suposição de convexidade, a representação convexa de chassi seria imprecisa, possivelmente até a medida em que não representa a realidade.
 
-Depois de adotar um GBD que fornece uma representação razoavelmente precisa da gama real, surgem outros problemas, devido ao grande conceito de fatia de matiz. Há pelo menos duas situações pathologicals. Na Figura 24 a seguir, uma gama de CRT fornece aumento de fatias de matiz com "ilhas". Na figura 25, uma gama de impressora dá a elevação a uma fatia de matiz com parte do eixo neutro ausente. As fatias de matiz pathological não são causadas por limites de gamut especialmente pathological nesses casos. Elas são causadas pelo conceito de fatia de matiz, porque (a) ela é tomada ao longo do matiz constante e (b) leva apenas uma metade do plano que corresponde ao ângulo de matiz.
+Depois de adotar um GBD que fornece uma representação razoavelmente precisa da gama real, outros problemas surgem, alguns devido ao próprio conceito de fatia de matiz. Há pelo menos duas situações de vulnerabilidade. Na Figura 24 a seguir, uma gama CRT gera fatias de matiz com "ilhas". Na Figura 25, uma gama de impressoras gera uma fatia de matiz com parte do eixo neutro ausente. As fatias de matiz não são causadas por limites de jogos particularmente interessantes nesses casos. Eles são causados pelo próprio conceito de fatia de matiz, porque (a) ele é levado ao longo do matiz constante e (b) ele leva apenas uma metade do plano que corresponde ao ângulo de matiz.
 
-![Diagrama que mostra uma exibição superior e uma exibição lateral da ' curva em ' no matiz azul.](images/gmmp-image097.jpg)
+![Diagrama que mostra uma exibição superior e uma exibição lateral do "curving in" nos matizes azuis.](images/gmmp-image097.jpg)
 
-**Figura 24** : um monitor CRT típico tem uma gama que mostra "curva" de peculiarização no matiz azul. Se as fatias de matiz forem tomadas nesse intervalo de matiz, as ilhas isoladas poderão aparecer nas fatias de matiz.
+**Figura 24:** um monitor CRT típico tem um gamut que mostra "curving in" nos matizes azuis. Se as fatias de matiz são feitas dentro desse intervalo de matiz, as ilhas isoladas podem aparecer nas fatias de matiz.
 
-![Diagrama de uma gama com um ' gap ' em seu eixo neutro.](images/gmmp-image099.jpg)
+![Diagrama de um gamut com uma "lacuna" em seu eixo neutro.](images/gmmp-image099.jpg)
 
-**Figura 25** : uma impressora pode ter uma gama com "Gap" em seu eixo neutro. Quando uma fatia de matiz é tomada (que é apenas uma metade do plano), há um "recuo" na parte do limite que é o eixo neutro. Isso pode ser difícil de resolver forma algorítmica.
+**Figura 25:** uma impressora pode ter uma gama que tem "lacuna" em seu eixo neutro. Quando uma fatia de matiz é tomada (que é apenas metade do plano), há uma "diferença" na parte do limite que é o eixo neutro. Isso pode ser difícil de resolver de forma algorítmicamente.
 
-Para resolver esses pathologies, é proposta uma nova estrutura que abandona o conceito de fatia de matiz que foi usado como ponto de partida. Em vez disso, a estrutura usa o conjunto de "elementos de linha de limite" ou linhas que se encontram no limite de gama. Eles não fornecem necessariamente uma visualização geométrica coerente, como fatias de matiz, mas dão suporte a todas as operações de gamut comuns. Além de resolver os problemas mencionados anteriormente, essa abordagem também sugere que a construção de fatias de matiz, mesmo quando possível, seja um desperdício computacional.
+Para resolver essas dificuldades, é proposta uma nova estrutura que abandonará o conceito de fatia de matiz usada como ponto de partida. Em vez disso, a estrutura usa o conjunto de "elementos de linha de limite" ou linhas que estão no limite de jogos. Eles não fornecem necessariamente uma visualização geométrica coerente, como fatias de matiz, mas dão suporte a todas as operações comuns de jogos. Além de resolver os problemas mencionados anteriormente, essa abordagem também sugere que a construção de fatias de matiz, mesmo quando possível, é computacionalmente desperdício.
 
-### <a name="triangulation-of-the-gamut-boundary"></a>Triangulação do limite de gama
+### <a name="triangulation-of-the-gamut-boundary"></a>Imposição do limite de gamut
 
-O ponto de partida é um GBD que consiste em uma triangulação do limite de gama. Métodos conhecidos de construir GBDs geralmente fornecem essa triangulação. Para a concretação, um método de construir GBDs para dispositivos aditivos seu espaço de dispositivo é descrito aqui. Esses dispositivos incluem monitores (baseados em CRT e baseado em LCD) e projetores. A geometria simples do cubo permite que você introduza um malha regular no cubo. As faces de limite do cubo podem ser trianguladas em várias modas, como a mostrada na Figura 26. A arquitetura fornece um modelo de dispositivo para o dispositivo para que os valores de colorimétrico dos pontos malha possam ser obtidos forma algorítmica ou que as medidas tenham sido feitas diretamente para esses pontos. A arquitetura também fornece CIECAM02, para que você possa assumir que os dados iniciais já foram mapeados para o espaço CIECAM02 jab. Em seguida, cada ponto de malha nas faces de limite do cubo RGB tem um ponto correspondente no espaço jab. As conexões de pontos que formam o conjunto de triângulos no espaço RGB também induzim a um conjunto de triângulos no espaço jab. Esse conjunto de triângulos forma uma triangulação razoável do limite de gama se (a) o malha no cubo RGB é suficientemente suficiente e (b) a transformação do espaço do dispositivo para o espaço de cores uniforme é topologicamente bem-comparada; ou seja, ele mapeia o limite para o limite e não vira a gama para dentro para que os pontos interiores se tornem pontos de limite.
+O ponto de partida é um GBD que consiste em uma triangularção do limite de jogos. Métodos conhecidos de construção de GBDs geralmente fornecem essa triangularção. Para concretar, um método de construção de GBDs para dispositivos aditivos seu espaço de dispositivo é descrito aqui. Esses dispositivos incluem monitores (baseados em CRT e baseados em LCD) e projetores. A geometria simples do cubo permite que você introduza uma rede regular no cubo. As faces de limite do cubo podem ser ofetadas de várias modas, como as mostradas na Figura 26. A arquitetura fornece um modelo de dispositivo para o dispositivo para que os valores colorimétricos dos pontos de rede possam ser obtidos de forma algorítmicamente ou medidas tenham sido feitas diretamente para esses pontos. A arquitetura também fornece CIECAM02, para que você possa supor que os dados inativos já foram mapeados para o espaço CIECAM02 Dem. Em seguida, cada ponto de estilos nas faces de limite do cubo RGB tem um ponto correspondente no espaço Dem. As conexões de pontos que formam o conjunto de triângulos no espaço RGB também induz um conjunto de triângulos no espaço Demão. Esse conjunto de triângulos forma uma ofisseção razoável do limite de jogos se (a) a grade no cubo RGB estiver bem o suficiente e (b) a transformação do espaço do dispositivo para o espaço de cores uniforme estiver topologicamente bem-comportada; ou seja, ele mapeia o limite para o limite e não transforma a gama de dentro para fora para que os pontos interiores se tornem pontos de limite.
 
-![Diagrama que mostra um método simples para triangluate o limite de gama de um dispositivo com R G B como seu espaço de dispositivo.](images/gmmp-image100.png)
+![Diagrama que mostra um método simples para fazer a trianglagem do limite de jogos de um dispositivo com R G B como seu espaço de dispositivo.](images/gmmp-image100.png)
 
-**Figura 26** : um método simples para triangular o limite de gama de um dispositivo com RGB como seu espaço de dispositivo
+**Figura 26:** um método simples para fazer o limite de jogos de um dispositivo com RGB como seu espaço de dispositivo
 
 ### <a name="boundary-line-elements"></a>Elementos de linha de limite
 
-Central para essa estrutura é o conceito de elementos de linha de limite; um conjunto de segmentos de linha que (a) se situam no limite de gamut e (b) está em um plano. Nesse caso, o plano é um plano de matiz. Cada segmento de linha é o resultado da interseção do plano com um triângulo de limite de gamut. Embora muitos pesquisadores tenham usado a construção de interseção de um plano com triângulos de limite, eles geralmente analisam a relação entre esses segmentos de linha e tentam construir um objeto geométrico coerente dos segmentos de linha. Algoritmos diferentes foram elaborados para seguir esses segmentos de linha um após o outro até que uma fatia de matiz inteira seja obtida e muitas tentativas tenham sido feitas para acelerar o processo de pesquisa.
+Central para essa estrutura é o conceito de elementos de linha de limite; um conjunto de segmentos de linha que (a) estão no limite de jogos e (b) estão em um plano. Nesse caso, o plano é um plano de matiz. Cada segmento de linha é o resultado da interseção do plano com um triângulo de limite de jogos. Embora muitos pesquisadores tenham usado a construção da interseção de um plano com triângulos de limite, eles geralmente analisam a relação entre esses segmentos de linha e tentam construir um objeto geométrico coerente fora dos segmentos de linha. Diferentes algoritmos foram organizados para seguir esses segmentos de linha um após o outro até que uma fatia de matiz inteira seja obtida e muitas tentativas tenham sido feitas para acelerar o processo de pesquisa.
 
-Essa abordagem é diferente. Você cruza o plano com os triângulos para obter os segmentos de linha. Em seguida, você considera esses segmentos de linha como os objetos conceituais *básicos* . É necessário analisar a relação entre os segmentos de linha; Você não precisa saber como eles são interconectados entre si. Esse ponto de vista resolve o problema da fatia de matiz com ilhas. As abordagens conhecidas que tentam construir a fatia de matiz pressupõem que, se uma começa com um segmento de linha e a segue para o próximo segmento de linha, e assim por diante; Ele eventualmente leva ao ponto de partida, ponto em que uma fatia de matiz inteira seria construída. Infelizmente, essa abordagem perderia a ilha (e, no pior cenário, o continente). Não insiste em obter uma imagem geométrica coerente; ou seja, a fatia de matiz, você pode manipular o problema da ilha sem esforço. Outra diferença importante nessa abordagem é que, para acelerar a construção de segmentos de linha, ele usa um "filtro de triângulo". O filtro de triângulo gera determinados triângulos que definitivamente não produzirão segmentos de linha que seriam úteis na operação de gamut atual. Como a interseção de um triângulo com o plano é cara computacionalmente, isso melhora a velocidade. Um efeito colateral é que, você não pode construir a fatia de matiz porque alguns segmentos de linha estavam ausentes devido à filtragem de triângulo.
+Essa abordagem é diferente. Intersecção do plano com os triângulos para obter os segmentos de linha. Em seguida, considere esses segmentos de linha como *os objetos conceituais* básicos. É necessário analisar a relação entre os segmentos de linha; você não precisa saber como eles estão interconectados entre si. Esse ponto de vista resolve o problema de fatia de matiz com ilhas. As abordagens conhecidas que tentam construir a fatia de matiz pressupom que, se um começar com um segmento de linha e o seguir para o próximo segmento de linha e assim por diante; ele eventualmente leva de volta ao ponto de partida, no qual uma fatia de matiz inteira seria construída. Infelizmente, essa abordagem teria perdido a ilha (e no pior cenário, o continente). Ao não invassar na obtenção de uma imagem geométrica coerente; ou seja, fatia de matiz, você pode lidar com o problema da ilha sem esforço. Outra diferença importante nessa abordagem é que, para acelerar a construção de segmentos de linha, ele usa um "filtro de triângulo". O filtro de triângulo lança determinados triângulos que definitivamente não produzirão segmentos de linha que seriam úteis na operação de jogos atual. Como a interseção de um triângulo com o plano é computacionalmente cara, isso melhora a velocidade. Um efeito colateral é que você não pode construir a fatia de matiz porque alguns segmentos de linha estariam ausentes devido à filtragem de triângulo.
 
-### <a name="gamut-operation-checkgamut"></a>Operação de gama: CheckGamut
+### <a name="gamut-operation-checkgamut"></a>Operação gamut: CheckGamut
 
-O exemplo a seguir explicará como o Framework funciona e como o CheckGamut é executado, ou seja, a operação de verificar se uma cor está em gamut.
+O exemplo a seguir explicará como a estrutura funciona e como CheckGamut é executada, ou seja, a operação de verificação se uma cor está em jogo.
 
-A estrutura geral é ilustrada na Figura 27 a seguir. Há vários componentes. Os componentes rotulados em itálico são componentes que podem ser diferentes na implementação, dependendo da operação de gamut em questão. Os outros componentes são invariáveis em todas as operações de gama. Para começar, a ***entrada*** é um conjunto de atributos de cor. No caso de CheckGamut, é a cor da consulta. Na Figura 27 e na discussão a seguir, supõe-se que o ângulo de matiz está entre os atributos de cor de entrada ou pode ser obtido deles. Isso é claramente o caso se a entrada for o ponto de cor inteiro, seja em jab ou JCh, da qual você pode calcular o ângulo de matiz. Observe que o ângulo de matiz só é necessário porque os planos de matiz estão sendo usados. Dependendo da operação de gama em questão, talvez não seja necessário usar o plano de matiz. Por exemplo, na construção da rotina CheckGamut, talvez você queira usar planos de constante J. Essa é uma generalidade que não será usada ou discutida ainda mais; Mas pode ser útil lembrar dessa flexibilidade da metodologia para dar suporte a outras operações de gama quando o plano de matizes pode não ser a melhor opção.
+A estrutura geral é ilustrada na Figura 27 a seguir. Há vários componentes. Os componentes rotulados em itálico são componentes que podem ser diferentes na implementação, dependendo da operação de jogos em questão. Os outros componentes são invariáveis em todas as operações de jogos. Para começar, a ***Entrada é*** um conjunto de atributos de cor. No caso de CheckGamut, é a cor da consulta. Na Figura 27 e na discussão a seguir, supõe-se que o ângulo de matiz está entre os atributos de cor de entrada ou pode ser obtido deles. Esse é claramente o caso se a entrada for o ponto de cor inteiro, seja em Hue ou JCh, a partir do qual você poderá calcular o ângulo de matiz. Observe que o ângulo de matiz só é necessário porque os planos de matiz estão sendo usados. Dependendo da operação de jogos em questão, talvez não seja necessário usar o plano de matiz. Por exemplo, na construção da rotina CheckGamut, talvez você queira usar planos da constante J. Essa é uma generalidade que não será usada nem discutida ainda mais; mas pode ser útil lembrar dessa flexibilidade da metodologia para dar suporte a outras operações de jogos quando o plano de matiz pode não ser a melhor opção.
 
-![Diagrama que mostra o fluxo para dar suporte a operações de gamut.](images/gmmp-image112.jpg)
+![Diagrama que mostra o fluxo para dar suporte a operações de jogos.](images/gmmp-image112.jpg)
 
-**Figura 27** : a estrutura para oferecer suporte a operações de gamut
+**Figura 27:** a estrutura para dar suporte a operações de jogos
 
-O ângulo de matiz, que é obtido diretamente das entradas ou computadas das entradas, é usado para inicializar o plano de matiz rotulado como **plano de matiz completo** na figura. "Full" é enfatizado porque este é o plano completo, não apenas o meio-plano que contém o matiz. O plano completo contém o ângulo de matiz de entrada e o ângulo 180 graus opostos a ele. A principal funcionalidade do plano de matiz é a função Intersect, que é explicada na subseção a seguir, plano de matiz completo: Intersect. Suponha que o GBD já tenha sido construído e que o conjunto de **triângulos de limite de gamut** esteja disponível. Interseccionar os triângulos que têm sobreviveram do filtro * de *_triângulo_* _ com o plano de matiz usando a interseção. O _componente filtro de triângulo * é rotulado em itálico, o que significa que o componente varia de acordo com a implementação para operações de gama diferentes. O *filtro de triângulo* para CheckGamut é explicado na seção operação de gamut: CheckGamut (continuação). O resultado da interseção de um triângulo com o plano de matiz está vazio ou um **elemento de linha de limite** , ou seja, um par de pontos distintos. Se o resultado for não vazio, ele será passado para o processador do *_elemento_* de * linha_ , que novamente faz coisas diferentes, dependendo da operação de gamut. O _processador de elemento de linha * atualiza a estrutura de dados interna, ***dados processados internos**_ , cujo conteúdo ou layout também depende da operação de gama. Em geral, os _dados internos processados * contêm a "resposta" para o problema, que é continuamente atualizada com cada novo elemento de linha de limite encontrado. Quando todos os elementos da linha de limite tiverem sido processados, a resposta foi encontrada. Ele permanece acessando-o por meio do **adaptador de saída***_. Como o _Internal dados processados * é específico da operação em gamut, o *adaptador de saída* também é específico da operação em gamut.
+O ângulo de matiz, que é obtido diretamente das entradas ou computado das entradas, é usado para inicializar o plano de matiz rotulado Plano de **Matiz** Completo na figura. "Completo" é enfatizado porque esse é o plano completo, não apenas o meio plano que contém o matiz. O plano completo contém o ângulo de matiz de entrada e o ângulo de 180 graus oposto a ele. A principal funcionalidade do plano de matiz é a função Intersect, que é explicada na subseção a seguir, Plano de Matiz Completo: Intersect. Suponha que o GBD já tenha sido construído e que o conjunto de Triângulos de Limite de **Gamut** está disponível. Intersecção dos triângulos que sobreviveram ao * Filtro *_de Triângulo_* _ com o plano de matiz usando Intersect. O _componente Filtro de Triângulo* é rotulado em itálico, o que significa que o componente varia na implementação para diferentes operações de jogos. O *Filtro de Triângulo* para CheckGamut é explicado na seção Operação de Gamut: CheckGamut (continuação). O resultado da interseção de um triângulo com o plano de matiz é vazio ou um Elemento **de** Linha de Limite , ou seja, um par de pontos distintos. Se o resultado não estiver vazio,**_ ele será passado para o * Processador de Elemento de Linha , que novamente faz coisas diferentes dependendo da operação de jogos. O Processador de Elemento de Linha* atualiza a estrutura de dados _interna, ***Dados** Processados_ Internos , cujo conteúdo ou layout também depende da operação de jogos. Em geral, os Dados Processados Internos* contêm a "resposta" para o problema, que é atualizada continuamente com cada novo Elemento de Linha _de Limite encontrado. Quando todos os Elementos de Linha de Limite foram processados, a resposta foi encontrada. Ele permanece para acessá-lo por meio do ***Adaptador de Saída**_. Como a _Internal dados processados* é específica da operação de jogos, o Adaptador de Saída *também* é específico da operação de jogos.
 
-### <a name="full-hue-plane-intersect"></a>Plano de matiz completo: Intersect
+### <a name="full-hue-plane-intersect"></a>Plano de matiz completo: Interseção
 
-A função Intersect calcula a interseção do plano de matiz e um triângulo. Tão simples quanto parece, essa função é importante por dois motivos.
+A função Intersect calcula a interseção do plano de matiz e um triângulo. Por mais simples que pareça, essa função é importante por dois motivos.
 
-Primeiro, a interseção de cada borda do triângulo com o plano pode produzir três pontos interseccionais, uma situação geométricamente impossível. O motivo pelo qual isso pode acontecer na computação é que, quando os cálculos são feitos em ponto flutuante, por exemplo, formato IEEE, há incertezas ou "ruído numérico", em cada etapa que afeta a conclusão de uma interseção do plano. Quando o plano intercepta as bordas em uma situação quase de perda, os pontos de interseção estão próximos um do outro e a determinação se um ponto de interseção está dentro da borda é aleatória. Embora o ruído nos valores numéricos dos pontos seja pequeno, a conclusão qualitativa de que há mais de dois pontos de interseção é geométricamente impossível e difícil de lidar corretamente no algoritmo.
+Primeiro, a interseção de cada borda do triângulo com o plano pode gerar três pontos de interseção, uma situação geométrico impossível. O motivo pelo qual isso pode acontecer na computação é que, quando os cálculos são feitos em ponto flutuante, por exemplo, formato IEEE, há incertezas ou "ruído numérico", em cada etapa que afeta a conclusão de se uma borda intersecção do plano. Quando o plano cruza as bordas em uma situação de quase erro, os pontos de interseção estão próximos uns dos outros e a determinação de se um ponto de interseção está dentro da borda é aleatória. Embora o ruído nos valores numéricos dos pontos seja pequeno, a conclusão qualitativa de que há mais de dois pontos de interseção é geométrico impossível e difícil de lidar corretamente no algoritmo.
 
-Em segundo lugar, essa função está no loop crítico para cada borda de cada triângulo filtrado, portanto, é importante que você otimize sua eficiência o máximo possível.
+Em segundo lugar, essa função está no loop crítico para cada borda de cada triângulo filtrado, portanto, é importante otimizar sua eficiência o máximo possível.
 
-Para resolver o primeiro problema de ruído numérico, execute os cálculos em inteiros. Para resolver o segundo problema de otimização de sua eficiência, armazene em cache o atributo mais usado de cada vértice ou o "produto de ponto" associado a cada vértice. A passagem de inteiros é uma maneira comum de garantir a consistência geométrica. A ideia básica é que, se você tiver que quantificar, faça isso no início. Em seguida, os cálculos subsequentes podem ser executados em inteiros e, se os inteiros forem amplos o suficiente para que não haja nenhum risco de estouro, os cálculos poderão ser feitos com precisão infinita. A seguinte função de quantificação é útil para essa finalidade.
+Para resolver o primeiro problema De ruído numérico, execute os cálculos em inteiros. Para resolver o segundo problema de otimização de sua eficiência, armazena em cache o atributo mais usado de cada vértice ou o "produto de ponto" associado a cada vértice. A passagem de inteiros é uma maneira típica de garantir a consistência geométrica. A ideia básica é que, se você tiver que quantificar, faça isso no início. Em seguida, cálculos subsequentes podem ser executados em inteiros e, se os inteiros são largos o suficiente para que não haja nenhum risco de estouro, os cálculos podem ser feitos com precisão infinita. A função de quantização a seguir é útil para essa finalidade.
 
-ScaleAndTruncate (x) = parte inteira de x \* 10000
+ScaleAndTruncate(x) = Parte inteira de x \* 10000
 
-O fator de dimensionamento 10000 significa que o número de ponto flutuante de entrada tem quatro casas decimais, o que é preciso o suficiente para esse aplicativo. Dependendo do intervalo de valores do espaço de aparência da cor, você deseja escolher um tipo inteiro com bits de largura suficiente para manter os cálculos intermediários. Na maioria dos espaços de aparência de cor, o intervalo de cada coordenada está dentro do intervalo de-1.000 a 1.000. A coordenada quantificada tem um valor absoluto máximo possível de 1.000 \* 10.000 = 10 milhões. Como você verá, a quantidade intermediária é um produto de ponto, que é uma soma de dois produtos de coordenadas, portanto, ele tem um valor absoluto máximo possível de 2 \* (10 milhões) ₂ = 2? 10 ₁ ₄. O número de bits necessário é log ₂ (2? 10 ₁ ₄) = 47,51. Uma opção conveniente para o tipo Integer é, portanto, inteiros de 64 bits.
+O fator de dimensionamento 10000 significa que o número de ponto flutuante de entrada tem quatro casas decimais, o que é preciso o suficiente para esse aplicativo. Dependendo do intervalo de valores do espaço de aparência de cor, você deseja escolher um tipo inteiro com bits largos o suficiente para manter os cálculos intermediários. Na maioria dos espaços de aparência de cor, o intervalo de cada coordenada está dentro do intervalo -1.000 a 1.000. A coordenada quantificada tem um valor absoluto máximo possível de 1.000 \* 10.000 = 10.000.000. Como você verá, a quantidade intermediária é um produto de ponto, que é uma soma de dois produtos de coordenadas, portanto, tem um valor absoluto máximo possível de 2 \* (10.000.000) = 2?10 . O número de bits necessários é log (2?10 ) = 47,51. Uma opção conveniente para o tipo inteiro é, portanto, inteiros de 64 bits.
 
-Para garantir que a interseção de um plano com um triângulo sempre forneça um conjunto vazio ou um conjunto de dois pontos, você deve considerar o triângulo como um todo, não como bordas individuais do triângulo separadamente. Para entender a situação geométrica, considere as "distâncias assinadas" dos vértices do triângulo do plano de matiz. Não Calcule essas distâncias assinadas diretamente; em vez disso, calcule os produtos dot dos vetores de posição dos vértices com o vetor normal quantificado para o plano. Mais especificamente, durante a inicialização do plano de matiz, o vetor normal quantificado é calculado da seguinte maneira.
+Para garantir que a interseção de um plano com um triângulo sempre dê um conjunto vazio ou um conjunto de dois pontos, você deve considerar o triângulo como um todo, não como bordas individuais do triângulo separadamente. Para entender a situação geométrica, considere as "distâncias assinadas" dos vértices do triângulo do plano de matiz. Não calcule essas distâncias assinadas diretamente; em vez disso, calcule os produtos de ponto dos vetores de posição dos vértices com o vetor normal quantificado para o plano. Mais especificamente, durante a inicialização do plano de matiz, o vetor normal quantificado é calculado da seguinte forma.
 
-NormalVector = (ScaleAndTruncate (-sin (matiz)), ScaleAndTruncate (cos (matiz))
+NormalVector = (ScaleAndTruncate(-sin(hue)), ScaleAndTruncate(cos(hue)))
 
-Observe que esse vetor é um vetor bidimensional. Você pode usar um vetor bidimensional porque o plano de matiz é vertical, portanto, o terceiro componente do vetor normal é sempre zero. Além disso, uma tabela de pesquisa de produtos dot é inicializada para ter uma entrada para cada vértice dos triângulos de limite de gamut e o produto do ponto correspondente definido como um valor inválido.
+Observe que esse vetor é um vetor bidimensional. Você pode usar um vetor bidimensional porque o plano de matiz é vertical, portanto, o terceiro componente do vetor normal é sempre zero. Além disso, uma tabela de pesquisa de produtos de ponto é inicializada para ter uma entrada para cada vértice dos Triângulos de Limite de Gamut e o produto de ponto correspondente definido como um valor inválido.
 
-Durante uma operação de interseção do plano de matiz com um triângulo, o produto do ponto de cada vértice do triângulo é pesquisado. Se o valor na tabela de pesquisa for o valor inválido, o produto de ponto será calculado usando a expressão a seguir.
+Durante uma operação de intersecção do plano de matiz com um triângulo, o produto de ponto de cada vértice do triângulo é procurado. Se o valor na tabela de lookup for o valor inválido, o produto de ponto será calculado usando a expressão a seguir.
 
 NormalVector. a \* ScaleAndTruncate (Vertex. a) + NormalVector. b \* ScaleAndTruncate (vértice. b)
 
 Novamente, o componente J do vértice nunca é usado, pois o vetor normal é horizontal. Esse produto de ponto é salvo na tabela de pesquisa para que não precise ser computado novamente se o produto de ponto do vértice for consultado posteriormente.
 
-O cache permite uma rápida determinação de se uma borda cruza o plano, depois que os produtos de ponto são tabulados na tabela de pesquisa, que é criada progressivamente conforme os vértices são processados.
+Caching permite uma rápida determinação de se uma borda cruza o plano, depois que os produtos de ponto são tabulados na tabela de pesquisa, que é criada progressivamente conforme os vértices são processados.
 
 ![Diagrama que mostra a interseção do plano de matiz com um triângulo.](images/gmmp-image114.jpg)
 
@@ -897,7 +897,7 @@ em que k ₂ = 1, k ₁ = 0,75/(C m ₐ ₓ) n, C m ₐ ₓ = 100, n = 2 e C é 
 
 de forma que um peso de 0,25 seja colocado no termo J quando croma for zero e um peso de 1 quando croma for 100. A tendência de colocar menos peso em J quando croma é pequena e mais peso em J quando croma é grande segue o uso recomendado para CMC e CIEDE2000.
 
-![Grafo que mostra a função Weight no componente J da métrica.](images/gmmp-image119.png)
+![Graph que mostra a função weight no componente J da métrica.](images/gmmp-image119.png)
 
 **Figura 31** : a função Weight no componente J da métrica
 
@@ -939,7 +939,7 @@ n = (componente J-de n ₀/w <sub>J</sub>, a-componente de n ₀, b-Component de
 
 A rotina ProjectPointToBoundary começa redefinindo o "histórico processado" dos vértices e das bordas. Essas são tabelas de sinalizadores BOOLIANos que controlam se um vértice ou uma borda foi visitada antes. Ele também redefine a variável ShortestDistance para "Infinity", que é o valor codificado máximo no sistema de números de ponto flutuante usado. Em seguida, ele é executado por meio de um loop, pesquisando o ponto mais próximo de cada triângulo usando a chamada ProcessTriangle. ProcessTriangle é a rotina para atualizar a variável ShortestDistance e está claramente no loop crítico. Uma otimização é parar quando o resultado é bom o suficiente. Após cada chamada para ProcessTriangle, a variável ShortestDistance é examinada. Se ele satisfizer um limite predefinido, você poderá parar. O limite predefinido depende do espaço de cores usado e da precisão necessária do sistema de imagem colorida. Para um aplicativo típico, você não deseja fazer trabalho desnecessário se a diferença de cores for menor do que o que pode ser discernido pela visão humana. Para CIECAM02, essa diferença de cor é 1. No entanto, use um valor de limite de 0, 5 na implementação para preservar a precisão dos cálculos, pois isso pode ser apenas uma etapa intermediária em uma cadeia de transformações.
 
-ProcessTriangle implementa a estratégia anterior II. Obter um vetor normal do vetor normal da unidade previamente computada para o triângulo com relação ao produto Standard dot, ele computa a distância do ponto de consulta para o plano infinito que contém o triângulo formando o produto do ponto do vetor normal da unidade e o queryVector, o vetor de um dos vértices do triângulo, vertex1, para o ponto de consulta , queryPoint.
+ProcessTriangle implementa a estratégia anterior II. Obter um vetor normal do vetor normal da unidade previamente computada para o triângulo em relação ao produto de ponto padrão, ele computa a distância do ponto de consulta para o plano infinito que contém o triângulo formando o produto de ponto do vetor normal da unidade e o queryVector, o vetor de um dos vértices do triângulo,  vertex1, para o ponto de consulta, queryPoint.
 
 queryVector = queryPoint-vertex1
 
@@ -977,21 +977,21 @@ Quando o loop de controle externo tiver esgotado todos os triângulos ou encerra
 
 ![Diagrama que mostra duas exibições principais de suavização de matiz, o original na parte superior e o matiz suaves na parte inferior.](images/gmmp-image125.png)
 
-**Figura 35** : suavização de matiz
+**Figura 35:** Suavização de matiz
 
-Um problema ocorre com as operações que são restritas por matiz; ou seja, a operação só considera variáveis em um plano de matiz. A Figura 35 mostra um exemplo de uma gama que exibe fatias de matiz "descontínuas" no matiz azul. Dentro desse intervalo de matizes, para certos ângulos de matiz, o limite de gama é tangential para o plano de matiz. Na verdade, isso causa uma alteração na estrutura topológica das fatias de matiz. No exemplo mostrado, como o plano de matiz varre esse intervalo de matizes, uma "ilha" surge e submesclagens. Essa alteração na topologia fará com que as operações específicas de matiz sejam descontínuas. Por exemplo, o Cusp em matiz fixo será alterado abruptamente conforme o ângulo de matiz mudar em todo esse intervalo.
+Ocorre um problema com operações restritas por matiz; ou seja, a operação considera apenas variáveis dentro de um plano de matiz. A Figura 35 mostra um exemplo de uma gama exibindo fatias de matiz "descontinuosas" nos matizes azuis. Dentro desse intervalo de matiz, para determinados ângulos de matiz, o limite de jogos é tangente ao plano de matiz. Na verdade, isso causa uma alteração na estrutura topológica das fatias de matiz. No exemplo mostrado, à medida que o plano de matiz é vareado por esse intervalo de matiz, uma "ilha" surge e aparece. Essa alteração na topologia fará com que as operações específicas do matiz sejam descontinuárias. Por exemplo, o ao matiz fixo será alterado de forma repentina à medida que o ângulo de matiz mudar nesse intervalo.
 
-Há um motivo de ciência da cor por que é desejável preservar o matiz em determinadas operações. Para resolver o problema anterior, os triângulos de limite de gamut originais devem ser "matiz suaves". Em termos gerais, uma suavização de matizes de um conjunto de triângulos de limite de gamut é um conjunto de triângulos de forma que (a) ele forma o limite de uma nova "gama", que pode não corresponder à gama real do dispositivo e que contém a gama definida pelo conjunto original de triângulos; e (b) os triângulos no novo conjunto estão limitados de serem paralelos aos planos de matiz.
+Há um motivo para a ciência de cores ser desejável para preservar o matiz em determinadas operações. Para resolver o problema anterior, os Triângulos de Limite de Gamut originais devem ser "suavizados de matiz". Em termos gerais, uma suavização de matiz de um conjunto de Triângulos de Limite de Gamut é um conjunto de triângulos, de modo que (a) ele forma o limite de um novo "gamut", que pode não corresponder ao gamut do dispositivo real e que contém o gamut definido pelo conjunto original de triângulos; e (b) os triângulos no novo conjunto estão limitados a serem paralelos aos planos de matiz.
 
-Uma maneira prática de obter um conjunto de triângulos suaves de matiz é pegar o convexa envoltória dos vértices originais. Como ilustrado na Figura 35, as fatias de matiz do convexa envoltória variam suavemente no intervalo de matiz problemático, sem uma alteração repentina na topologia.
+Uma maneira prática de obter um conjunto suave de triângulos de matiz é pegar a enxada convexa dos vértices originais. Conforme ilustrado na Figura 35, as fatias de matiz da ensola convexa variam suavemente no intervalo de matiz problemático sem uma alteração repentina na topologia.
 
-### <a name="setting-primaries-and-secondaries-in-the-gamut-boundary-description"></a>Definindo primárias e secundárias na descrição do limite de gama
+### <a name="setting-primaries-and-secondaries-in-the-gamut-boundary-description"></a>Definindo primários e secundários na descrição do limite de jogos
 
-Determinados métodos de mapeamento de gama, como HueMap, dependem do local dos primários e secundários do dispositivo. Para dispositivos aditivos, os primários são vermelho, verde e azul (R, G e B); e os secundários são ciano, magenta e amarelo (C, M e Y). Para dispositivos subtraíis, os primários são C, M e Y; e os secundários são R, G e B. O GBD mantém o controle de todos os seis valores, além de branco e preto (W e K), em uma matriz de valores de cor jab. Esses valores são definidos na descrição do limite de gamut quando ele é criado. Para dispositivos de saída, os primários podem ser determinados pela execução de combinações de valores de controle de dispositivo por meio do modelo de dispositivo. Para dispositivos de captura, essa abordagem não é adequada para criar a referência GBD, pois é quase impossível capturar uma imagem que produz um valor de dispositivo puro totalmente saturado, como (0,0, 0,0, 1,0). Os perfis de dispositivo WCS contêm os índices dos primários no destino de captura. Como esses valores não estão contidos em um perfil ICC, use valores medidos de um destino de scanner típico após a conversão em jab, em relação às condições de exibição de ICC.
+Determinados métodos de mapeamento de gamut, como HueMap, dependem da localização dos primários e secundários do dispositivo. Para dispositivos aditivos, os principais são vermelho, verde e azul (R, G e B); e os secundários são ciano, magenta e amarelo (C, M e Y). Para dispositivos subtrativos, os primários são C, M e Y; e os secundários são R, G e B. O GBD mantém o controle de todos os seis valores, além de branco e preto (W e K), em uma matriz de valores de cores de Clara. Esses valores são definidos na descrição do limite de jogos quando são criados. Para dispositivos de saída, os primários podem ser determinados executando combinações de valores de controle de dispositivo por meio do modelo de dispositivo. Para dispositivos de captura, essa abordagem não é adequada para criar o GBD de referência, pois é quase impossível capturar uma imagem que produz um valor de dispositivo puro totalmente saturado, como (0,0, 0,0, 1,0). Os perfis de dispositivo WCS contêm os índices dos primários no destino de captura. Como esses valores não estão contidos em um perfil ICC, use os valores medidos de um destino típico do scanner após a conversão em Reais, em relação às condições de exibição do ICC.
 
-### <a name="setting-the-neutral-axis-in-the-gamut-boundary-description"></a>Definindo o eixo neutro na descrição do limite de gama
+### <a name="setting-the-neutral-axis-in-the-gamut-boundary-description"></a>Definindo o eixo neutro na descrição do limite de jogos
 
-Os métodos de mapeamento de gamut HueMap e Relative MinCD usam o eixo neutro do dispositivo para retificação. Para os dispositivos de saída de linha de base, o eixo neutro pode ser determinado pela execução de valores neutros de dispositivo (R = G = B ou C = M = Y) por meio do método DeviceToColorimetric e, em seguida, pelo método ColorimetricToAppearance do objeto CIECAM02. No entanto, os dispositivos de captura nem sempre retornam um valor neutro de dispositivo quando apresentados com um exemplo neutro. Isso é especialmente verdadeiro quando a iluminação ambiente não é perfeitamente neutra. Os perfis de dispositivo WCS contêm os índices dos exemplos neutros no destino. Use esses exemplos para definir o eixo neutro. Como essas informações não estão disponíveis para perfis ICC, você deve usar o mesmo método usado para dispositivos de saída; Execute amostras neutras de dispositivo por meio do método DeviceToColorimetric e, em seguida, associe os valores de entrada e os resultados colorimétrico.
+Os métodos de mapeamento de gamut HueMap e Relative MinCD usam o eixo neutro do dispositivo para desatar. Para os dispositivos de saída de linha de base, o eixo neutro pode ser determinado executando valores neutros do dispositivo (R=G=B ou C=M=Y) por meio do método DeviceToColorimetric e, em seguida, por meio do método ColorimetricToAppearance do objeto CIECAM02. No entanto, os dispositivos de captura nem sempre retornam um valor neutro do dispositivo quando é apresentado um exemplo neutro. Isso é particularmente verdadeiro quando a iluminação do ambiente não é perfeitamente neutra. Os perfis de dispositivo WCS contêm os índices das amostras neutras no destino. Use esses exemplos para definir o eixo neutro. Como essas informações não estão disponíveis para perfis ICC, você deve usar o mesmo método usado para dispositivos de saída; execute exemplos neutros de dispositivo por meio do método DeviceToColorimetric e adoque os valores de entrada e os resultados colorimétricos.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

@@ -2,7 +2,7 @@
 description: Altera as permissões de segurança para o arquivo de atalho lógico especificado no caminho do objeto.
 ms.assetid: abd5aec8-4684-4b8d-8fdf-d3a7a5eec103
 ms.tgt_platform: multiple
-title: Método ChangeSecurityPermissions da classe Win32_ShortcutFile
+title: Método ChangeSecurityPermissions da classe Win32_ShortcutFile dados
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: ad2d482e0be93a1abec80fc710a1a43d7873dd99
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 43d69f8a04fd937591675fe13fefd9499fe4c0dd59f70da02077cb97f7b06fee
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104457070"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118010098"
 ---
-# <a name="changesecuritypermissions-method-of-the-win32_shortcutfile-class"></a>Método ChangeSecurityPermissions da \_ classe shortcutfile do Win32
+# <a name="changesecuritypermissions-method-of-the-win32_shortcutfile-class"></a>Método ChangeSecurityPermissions da classe ShortcutFile win32 \_
 
-O método de [classe WMI](/windows/desktop/WmiSdk/retrieving-a-class) **ChangeSecurityPermissions** altera as permissões de segurança para o arquivo de atalho lógico especificado no caminho do objeto. Se o arquivo lógico for um diretório, **ChangeSecurityPermissions** será recursivo e alterará as permissões de segurança de todos os arquivos e subdiretórios que o diretório contém. **ChangeSecurityPermissions** retornará um valor inteiro de 0 (zero) se as permissões forem alteradas e um número diferente para indicar um erro.
+O método de classe [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **ChangeSecurityPermissions** altera as permissões de segurança para o arquivo de atalho lógico especificado no caminho do objeto. Se o arquivo lógico for um diretório, **ChangeSecurityPermissions** será recursivo e alterará as permissões de segurança de todos os arquivos e subdiretivos que o diretório contém. **ChangeSecurityPermissions** retornará um valor inteiro de 0 (zero) se as permissões são alteradas e um número diferente para indicar um erro.
 
-Este tópico usa a sintaxe formato MOF (MOF). Para obter mais informações sobre como usar esse método, consulte [chamando um método](/windows/desktop/WmiSdk/calling-a-method).
+Este tópico usa sintaxe Managed Object Format (MOF). Para obter mais informações sobre como usar esse método, consulte [Chamando um método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -43,17 +43,17 @@ uint32 ChangeSecurityPermissions(
 
 <dl> <dt>
 
-*SecurityDescriptor* \[ no\]
+*SecurityDescriptor* \[ Em\]
 </dt> <dd>
 
-Expressão que resolve para uma instância do [**Win32 \_ SecurityDescriptor**](/previous-versions/windows/desktop/secrcw32prov/win32-securitydescriptor). Este descritor contém novas permissões de segurança para a instância do [**\_ arquivo de paginação Win32**](win32-pagefile.md).
+Expressão que é resolvida para uma instância do [**Win32 \_ SecurityDescriptor.**](/previous-versions/windows/desktop/secrcw32prov/win32-securitydescriptor) Esse descritor contém novas permissões de segurança para a instância do [**Win32 \_ PageFile.**](win32-pagefile.md)
 
 </dd> <dt>
 
-*Opção* \[ no\]
+*Opção* \[ Em\]
 </dt> <dd>
 
-Privilégio de segurança real a ser modificado. Por exemplo, para alterar a segurança do proprietário e da DACL, use:
+Privilégio de segurança real a ser modificado. Por exemplo, para alterar o proprietário e a segurança da DACL, use:
 
 `Option = 1 + 4`
 
@@ -65,7 +65,7 @@ ou
 
 <span id="CHANGE_OWNER_SECURITY_INFORMATION"></span><span id="change_owner_security_information"></span>
 
-<span id="CHANGE_OWNER_SECURITY_INFORMATION"></span><span id="change_owner_security_information"></span>**Alterar \_ \_ \_ Informações de segurança do proprietário** (1)
+<span id="CHANGE_OWNER_SECURITY_INFORMATION"></span><span id="change_owner_security_information"></span>**ALTERAR \_ INFORMAÇÕES \_ DE SEGURANÇA DO \_ PROPRIETÁRIO** (1)
 
 
 </dt> <dd>
@@ -76,7 +76,7 @@ Altere o proprietário do arquivo lógico.
 
 <span id="CHANGE_GROUP_SECURITY_INFORMATION"></span><span id="change_group_security_information"></span>
 
-<span id="CHANGE_GROUP_SECURITY_INFORMATION"></span><span id="change_group_security_information"></span>**Alterar \_ \_ \_ Informações de segurança do grupo** (2)
+<span id="CHANGE_GROUP_SECURITY_INFORMATION"></span><span id="change_group_security_information"></span>**ALTERAR \_ INFORMAÇÕES \_ DE SEGURANÇA DE \_ GRUPO** (2)
 
 
 </dt> <dd>
@@ -87,7 +87,7 @@ Altere o grupo do arquivo lógico.
 
 <span id="CHANGE_DACL_SECURITY_INFORMATION"></span><span id="change_dacl_security_information"></span>
 
-<span id="CHANGE_DACL_SECURITY_INFORMATION"></span><span id="change_dacl_security_information"></span>**Alterar \_ \_ \_ Informações de segurança da DACL** (4)
+<span id="CHANGE_DACL_SECURITY_INFORMATION"></span><span id="change_dacl_security_information"></span>**ALTERAR \_ INFORMAÇÕES DE \_ SEGURANÇA \_ DACL** (4)
 
 
 </dt> <dd>
@@ -98,18 +98,18 @@ Altere a DACL (lista de controle de acesso discricionário) do arquivo lógico.
 
 <span id="CHANGE_SACL_SECURITY_INFORMATION"></span><span id="change_sacl_security_information"></span>
 
-<span id="CHANGE_SACL_SECURITY_INFORMATION"></span><span id="change_sacl_security_information"></span>**Alterar \_ \_ \_ Informações de segurança da SACL** (8)
+<span id="CHANGE_SACL_SECURITY_INFORMATION"></span><span id="change_sacl_security_information"></span>**ALTERAR \_ INFORMAÇÕES DE \_ SEGURANÇA \_ SACL** (8)
 
 
 </dt> <dd>
 
-Altere a lista de controle de acesso do sistema (SACL) do arquivo lógico.
+Altere a SACL (lista de controle de acesso do sistema) do arquivo lógico.
 
 </dd> </dl> </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna um valor de 0 (zero) se as permissões forem alteradas e um número diferente para indicar um erro.
+Retorna um valor de 0 (zero) se as permissões são alteradas e um número diferente para indicar um erro.
 
 <dl> <dt>
 
@@ -127,7 +127,7 @@ A solicitação foi bem-sucedida.
 
 2
 
-O acesso foi negado.
+Acesso negado.
 
 </dd> <dt>
 
@@ -172,7 +172,7 @@ O sistema de arquivos não é um sistema de arquivos NTFS.
 
 12
 
-A plataforma não é o Windows.
+A plataforma não é Windows.
 
 </dd> <dt>
 
@@ -203,12 +203,12 @@ Há uma violação de compartilhamento.
 
 </dd> <dt>
 
-**Arquivo de início inválido**
+**Arquivo inicial inválido**
 </dt> <dd>
 
 16
 
-O arquivo de início especificado não é válido.
+O arquivo inicial especificado não é válido.
 
 </dd> <dt>
 
@@ -238,8 +238,8 @@ Um parâmetro especificado não é válido.
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| Namespace<br/>                | Raiz \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Namespace<br/>                | RAIZ \\ CIMV2<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -251,7 +251,7 @@ Um parâmetro especificado não é válido.
 [Classes do sistema operacional](/previous-versions//aa392727(v=vs.85))
 </dt> <dt>
 
-[**Atalho do Win32 \_**](win32-shortcutfile.md)
+[**Win32 \_ ShortcutFile**](win32-shortcutfile.md)
 </dt> </dl>
 
  

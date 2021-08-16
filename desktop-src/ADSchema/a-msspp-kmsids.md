@@ -1,11 +1,11 @@
 ---
-title: atributo ms-SPP-KMS-IDs
-description: IDs KMS habilitadas pelo objeto de ativação
+title: Atributo ms-SPP-KMS-Ids
+description: KMS IDs habilitadas pelo Objeto de Ativação
 ms.assetid: b5e11081-202e-4b9a-bf23-8552475f01f0
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD do atributo ms-SPP-KMS-IDs
-- Esquema de AD do atributo msSPP-KMSIds
+- Ms-SPP-KMS-Ids atributo AD Schema
+- Esquema do AD do atributo msSPP-KMSIds
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 77e47103137a52fa2dbcc9cf4eb04ae073191115
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 4fd8296adf05a697f92abc70247681fea4776513c15d1c39c6592a2d15363889
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104456197"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117838069"
 ---
-# <a name="ms-spp-kms-ids-attribute"></a>atributo ms-SPP-KMS-IDs
+# <a name="ms-spp-kms-ids-attribute"></a>Atributo ms-SPP-KMS-Ids
 
-IDs KMS habilitadas pelo objeto de ativação
+KMS IDs habilitadas pelo Objeto de Ativação
 
 
 
 | Entrada | Valor |
 |-------------------|-------------------------------------------------------|
-| CN                | MS-SPP-KMS-IDs                                        |
-| LDAP-Display-Name | msSPP-KMSIds                                          |
+| CN                | ms-SPP-KMS-Ids                                        |
+| Ldap-Display-Name | msSPP-KMSIds                                          |
 | Tamanho              | \-                                                    |
 | Privilégio de atualização  | \-                                                    |
 | Frequência de atualização  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.2082                               |
-| System-ID-GUID    | 9b663eda-3542-46d6-9df0-314025af2bac                  |
-| Syntax            | [**Objeto (link de réplica)**](s-object-replica-link.md) |
+| System-Id-Guid    | 9b663eda-3542-46d6-9df0-314025af2bac                  |
+| Syntax            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
 
@@ -53,15 +53,15 @@ IDs KMS habilitadas pelo objeto de ativação
 | ID do link                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| É de valor único       | Falso                                                                   |
-| É indexado             | True                                                                    |
-| No catálogo global      | Falso                                                                   |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                            |
+| Tem valor único       | Falso                                                                   |
+| É indexado             | Verdadeiro                                                                    |
+| No Catálogo Global      | Falso                                                                   |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                            |
 | Range-Lower            | 16                                                                      |
 | Range-Upper            | 16                                                                      |
 | Search-Flags           | 0x00000001                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Classes usadas em        | [**MS-SPP-Activation-Object**](c-msspp-activationobject.md)<br/> |
+| Classes usadas em        | [**ms-SPP-Activation-Object**](c-msspp-activationobject.md)<br/> |
 
 
 

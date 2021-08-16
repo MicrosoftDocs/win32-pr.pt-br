@@ -3,7 +3,7 @@ title: Mensagem de WM_CAP_DLG_VIDEOFORMAT (VFW. h)
 description: A mensagem do WM \_ Cap \_ DLG \_ VIDEOFORMAT exibe uma caixa de diálogo na qual o usuário pode selecionar o formato de vídeo.
 ms.assetid: 3b44507e-3806-467f-877a-e9992d1337cb
 keywords:
-- Multimídia do Windows de mensagem WM_CAP_DLG_VIDEOFORMAT
+- mensagem de WM_CAP_DLG_VIDEOFORMAT Windows multimídia
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8d244c4c141845d4ede66804918514e091872e89
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: fbaa58e99c6a07db9109a0b1a6dae25de8abd46fef2631eb539961de16455ec0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918324"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118135395"
 ---
 # <a name="wm_cap_dlg_videoformat-message"></a>Mensagem de VIDEOFORMAT do WM \_ Cap \_ DLG \_
 

@@ -4,12 +4,12 @@ ms.assetid: 22a69d3e-4ec3-4652-b4bb-dfcfffc2322b
 title: Política de metadados de foto System. Photo. DigitalZoom
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9bf440e92243eb2102ac6abaa349ea83e58d9a2d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 19dfaf2838c8f321b1406d951fcc335076bcdfc00e3a17de0954f1a62022570e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104297134"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118205372"
 ---
 # <a name="systemphotodigitalzoom-photo-metadata-policy"></a>Política de metadados de foto System. Photo. DigitalZoom
 
@@ -25,7 +25,7 @@ JPEG, TIFF
 
 ### <a name="read-only"></a>Somente leitura
 
-Yes
+Sim
 
 ### <a name="output-propvariant-type"></a>Tipo de PROPVARIANT de saída
 

@@ -1,26 +1,26 @@
 ---
-description: Apresenta o esquema de descrição do conector de pesquisa que é usado pelas bibliotecas do Windows Explorer e pelos provedores de Pesquisa Federados.
+description: Apresenta o esquema de Descrição do Conector de Pesquisa usado por bibliotecas Windows Explorer e provedores de pesquisa federados.
 ms.assetid: b85a04c6-9398-4cc7-a894-881216600203
 title: Esquema de descrição do conector de pesquisa
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 22f502f67cdc933bf4d27a3475cd6adef70c00fa
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4e8d8ab60ba472cca961a4208b1c551679ef93eacd46e07cf5e080a3e73f3d14
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105789246"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118226377"
 ---
 # <a name="search-connector-description-schema"></a>Esquema de descrição do conector de pesquisa
 
-Apresenta o esquema de descrição do conector de pesquisa que é usado pelas bibliotecas do Windows Explorer e pelos provedores de Pesquisa Federados. O esquema especifica a estrutura e os requisitos para os arquivos de descrição do conector de pesquisa ( \* . searchConnector-MS) e para os elementos **searchConnectorDescriptionType** dos arquivos de descrição da biblioteca do Shell ( \* . Library-MS).
+Apresenta o esquema de Descrição do Conector de Pesquisa usado por bibliotecas Windows Explorer e provedores de pesquisa federados. O esquema especifica a estrutura e os requisitos para arquivos de Descrição do Conector de Pesquisa ( \* .searchConnector-ms) e para elementos **searchConnectorDescriptionType** dos arquivos de Descrição da Biblioteca do Shell ( \* .library-ms).
 
-Este tópico descreve o esquema conforme ele está relacionado aos conectores de Pesquisa Federados. Para obter mais informações sobre bibliotecas e o esquema de descrição da biblioteca, consulte o [esquema de descrição da biblioteca](../shell/library-schema-entry.md).
+Este tópico descreve o esquema relacionado aos conectores de pesquisa federados. Para obter mais informações sobre bibliotecas e o esquema de Descrição da Biblioteca, consulte [Esquema de Descrição da Biblioteca](../shell/library-schema-entry.md).
 
 Este tópico inclui as seções a seguir:
 
 -   [O que são conectores de pesquisa?](#what-are-search-connectors)
--   [Como os arquivos de descrição do conector de pesquisa funcionam?](#search-connector-description-schema)
+-   [Como funcionam os arquivos de descrição do conector de pesquisa?](#search-connector-description-schema)
 -   [O que é o esquema de descrição do conector de pesquisa?](#what-is-the-search-connector-description-schema)
 -   [Quais são as principais partes do esquema?](#what-are-the-major-parts-of-the-schema)
 -   [Exemplos de arquivos de descrição do conector de pesquisa](#examples-of-search-connector-description-files)
@@ -29,52 +29,52 @@ Este tópico inclui as seções a seguir:
 
 ## <a name="what-are-search-connectors"></a>O que são conectores de pesquisa?
 
-Conectores de pesquisa conectam usuários com dados armazenados em serviços Web ou locais de armazenamento remoto. Com o Windows 7, os usuários podem instalar conectores de pesquisa para locais, como serviços Web, para que eles pesquisem esses locais diretamente do Windows Explorer. Os conectores de pesquisa são arquivos de descrição do conector de pesquisa ( \* . searchConnector-MS) que especificam como se conectar, enviar consultas e receber resultados do local.
+Os conectores de pesquisa conectam os usuários aos dados armazenados em serviços Web ou locais de armazenamento remoto. Com Windows 7, os usuários podem instalar conectores de pesquisa para locais, como serviços Web, para que eles pesquisem esses locais diretamente do Windows Explorer. Os conectores de pesquisa são arquivos de Descrição do Conector de Pesquisa ( .searchConnector-ms) que especificam como se conectar, enviar consultas e receber resultados \* do local.
 
-Além dos serviços Web, os conectores de pesquisa podem ser usados para pesquisar escopos de índice locais criados por manipuladores de protocolo. Por exemplo, os usuários podem pesquisar emails indexados localmente com o manipulador de protocolo MAPI usando um conector de pesquisa para esse armazenamento de email.
+Além dos serviços Web, os conectores de pesquisa podem ser usados para pesquisar escopos de índice local criados por manipuladores de protocolo. Por exemplo, os usuários podem pesquisar email indexado localmente com o manipulador de protocolo MAPI usando um conector de pesquisa para esse armazenamento de email.
 
-## <a name="how-do-search-connector-description-files-work"></a>Como os arquivos de descrição do conector de pesquisa funcionam?
+## <a name="how-do-search-connector-description-files-work"></a>Como funcionam os arquivos de descrição do conector de pesquisa?
 
-Quando os arquivos de descrição do conector de pesquisa são instalados nos sistemas dos usuários, os usuários podem abrir o Windows Explorer, clicar no conector de pesquisa no painel de navegação e inserir uma consulta de pesquisa. O Windows Explorer envia a consulta usando informações do arquivo de descrição do conector de pesquisa, como qual provedor usar e o escopo da pesquisa. Os resultados são retornados como itens RSS ou Atom feed e exibidos para os usuários como se fossem itens de shell regulares.
+Quando os arquivos de Descrição do Conector de Pesquisa são instalados nos sistemas dos usuários, os usuários podem abrir o Windows Explorer, clicar no conector de pesquisa no painel de navegação e inserir uma consulta de pesquisa. Windows O Explorer envia a consulta usando informações do arquivo Descrição do Conector de Pesquisa, como qual provedor usar e o escopo da pesquisa. Os resultados são retornados como itens de feed RSS ou Atom e exibidos aos usuários como se fossem itens de Shell regulares.
 
-A maneira como você implanta o arquivo de descrição do conector de pesquisa depende do tipo de local ao qual o conector de pesquisa dá suporte:
+A maneira como você implanta o arquivo Descrição do Conector de Pesquisa depende do tipo de local ao qual o conector de pesquisa dá suporte:
 
--   Em um \* arquivo de configuração de OpenSearch (. osdx) para seu serviço Web
+-   Em um arquivo OpenSearch \* (.osdx) para seu serviço Web
 -   Como parte da instalação do manipulador de protocolo
 
-Você deve garantir que os seguintes itens ocorram quando um usuário abrir o arquivo. osdx ou instalar o manipulador de protocolo:
+Você deve garantir que as seguintes coisas aconteçam quando um usuário abrir o arquivo .osdx ou instalar o manipulador de protocolo:
 
--   O arquivo. searchconnector-MS é criado na pasta de **pesquisas do Windows** dos usuários (% USERPROFILE%/Searches).
--   Um atalho para o arquivo. searchconnector-MS é criado na pasta **links** dos usuários (% USERPROFILE%/links).
+-   O arquivo .searchconnector-ms é criado na pasta **Windows Searches** dos usuários (%userprofile%/Searches).
+-   Um atalho para o arquivo .searchconnector-ms é criado na pasta **Links** dos usuários (%userprofile%/Links).
 
 ## <a name="what-is-the-search-connector-description-schema"></a>O que é o esquema de descrição do conector de pesquisa?
 
-O esquema de descrição do conector de pesquisa é um esquema XML que define a estrutura dos arquivos de descrição do conector de pesquisa ( \* . searchConnector-MS). Cada conector de pesquisa deve ter um arquivo de descrição do conector de pesquisa que especifica como se conectar, enviar consultas e receber resultados do local.
+O esquema Descrição do Conector de Pesquisa é um esquema XML que define a estrutura dos arquivos de Descrição do Conector de Pesquisa ( \* .searchConnector-ms). Cada conector de pesquisa deve ter um arquivo de Descrição do Conector de Pesquisa que especifica como se conectar, enviar consultas e receber resultados do local.
 
 ## <a name="what-are-the-major-parts-of-the-schema"></a>Quais são as principais partes do esquema?
 
-A tabela a seguir lista as partes principais do esquema.
+A tabela a seguir lista as principais partes do esquema.
 
 
 
-| Elementos filho                                                                         | Description                                                                                                                                                                             |
+| Elementos filho                                                                         | Descrição                                                                                                                                                                             |
 |----------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [isSearchOnlyItem](search-schema-sconn-issearchonlyitem.md)                           | Identifica se os locais com suporte do conector de pesquisa são somente pesquisa ou pesquisa e procura.                                                                                |
+| [isSearchOnlyItem](search-schema-sconn-issearchonlyitem.md)                           | Identifica se os locais com suporte pelo conector de pesquisa são somente pesquisa ou pesquisa e procura.                                                                                |
 | [isDefaultSaveLocation](search-schema-sconn-isdefaultsavelocation.md)                 | Somente para uso de biblioteca.                                                                                                                                                                   |
 | [isDefaultNonOwnerSaveLocation](search-schema-sconn-isdefaultnonownersavelocation.md) | Somente para uso de biblioteca.                                                                                                                                                                   |
 | [descrição](search-schema-sconn-description.md)                                     | Descreve o conector de pesquisa.                                                                                                                                                         |
 | [iconReference](search-schema-sconn-iconreference.md)                                 | Identifica o local de um ícone personalizado para o conector de pesquisa.                                                                                                                      |
 | [imageLink](search-schema-sconn-imagelink.md)                                         | Identifica o local de uma miniatura personalizada para o conector de pesquisa.                                                                                                                 |
-| [autorização](search-schema-sconn-author.md)                                               | Identifica o autor do conector de pesquisa.                                                                                                                                          |
-| [dateCreated](search-schema-sconn-datecreated.md)                                     | Identifica a data em que o conector de pesquisa foi criado.                                                                                                                              |
-| [templateInfo](search-schema-sconn-templateinfo.md)                                   | Especifica um tipo de pasta para o conector de pesquisa.                                                                                                                                       |
-| [LocalProvider](search-schema-sconn-locationprovider.md)                           | Especifica o provedor de pesquisa a ser usado por este conector de pesquisa.                                                                                                                      |
-| [escopo](search-schema-sconn-scope.md)                                                 | Especifica os locais a serem incluídos e excluídos do escopo de pesquisa.                                                                                                                |
-| [propertyStore](search-schema-sconn-propertystore.md)                                 | Especifica o local de um [**IPropertyStore**](/windows/win32/api/propsys/nn-propsys-ipropertystore) baseado em XML para esse conector de pesquisa. O **IPropertyStore** dá suporte aos metadados abertos do conector de pesquisa. |
-| [includeInStartMenuScope](search-schema-sconn-includeinstartmenuscope.md)             | Especifica se o local representado pelo conector de pesquisa deve ser incluído no escopo de pesquisa do menu iniciar.                                                                 |
-| [controlador](search-schema-sconn-domain.md)                                               | Identifica o domínio de nível superior do conector de pesquisa.                                                                                                                                     |
-| [supportsAdvancedQuerySyntax](search-schema-sconn-supportsadvancedquerysyntax.md)     | Especifica se o conector de pesquisa dá suporte à sintaxe de consulta avançada (AQS).                                                                                                            |
-| [IsIndexed](search-schema-sconn-isindexed.md)                                         | Especifica se o local representado pelo conector de pesquisa é indexado.                                                                                                          |
+| [Autor](search-schema-sconn-author.md)                                               | Identifica o autor do conector de pesquisa.                                                                                                                                          |
+| [Datecreated](search-schema-sconn-datecreated.md)                                     | Identifica a data em que o conector de pesquisa foi criado.                                                                                                                              |
+| [Templateinfo](search-schema-sconn-templateinfo.md)                                   | Especifica um tipo de pasta para o conector de pesquisa.                                                                                                                                       |
+| [locationProvider](search-schema-sconn-locationprovider.md)                           | Especifica o provedor de pesquisa a ser usado por esse conector de pesquisa.                                                                                                                      |
+| [escopo](search-schema-sconn-scope.md)                                                 | Especifica os locais a incluir e excluir do escopo de pesquisa.                                                                                                                |
+| [Propertystore](search-schema-sconn-propertystore.md)                                 | Especifica o local de um [**IPropertyStore**](/windows/win32/api/propsys/nn-propsys-ipropertystore) baseado em XML para esse conector de pesquisa. O **IPropertyStore dá** suporte aos metadados abertos do conector de pesquisa. |
+| [includeInStartMenuScope](search-schema-sconn-includeinstartmenuscope.md)             | Especifica se o local representado pelo conector de pesquisa deve ser incluído no escopo menu Iniciar pesquisa do usuário.                                                                 |
+| [Domínio](search-schema-sconn-domain.md)                                               | Identifica o domínio de nível superior do conector de pesquisa.                                                                                                                                     |
+| [supportsAdvancedQuerySyntax](search-schema-sconn-supportsadvancedquerysyntax.md)     | Especifica se o conector de pesquisa dá suporte à AQS (Advanced Query Syntax).                                                                                                            |
+| [isIndexed](search-schema-sconn-isindexed.md)                                         | Especifica se o local representado pelo conector de pesquisa é indexado.                                                                                                          |
 
 
 
@@ -82,7 +82,7 @@ A tabela a seguir lista as partes principais do esquema.
 
 ## <a name="examples-of-search-connector-description-files"></a>Exemplos de arquivos de descrição do conector de pesquisa
 
-Veja a seguir um exemplo de um arquivo de descrição do conector de pesquisa para um serviço Web de pesquisa federado.
+A seguir está um exemplo de um arquivo de Descrição do Conector de Pesquisa para um serviço Web de pesquisa federada.
 
 
 ```
@@ -110,7 +110,7 @@ Veja a seguir um exemplo de um arquivo de descrição do conector de pesquisa pa
 
 
 
-Veja a seguir um exemplo de um arquivo de descrição do conector de pesquisa para um manipulador de protocolo MAPI.
+A seguir está um exemplo de um arquivo de Descrição do Conector de Pesquisa para um manipulador de protocolo MAPI.
 
 
 ```
@@ -132,8 +132,8 @@ Veja a seguir um exemplo de um arquivo de descrição do conector de pesquisa pa
 
 ## <a name="additional-resources"></a>Recursos adicionais
 
--   Para obter mais informações sobre o esquema de descrição da biblioteca, consulte o [esquema de descrição da biblioteca](../shell/library-schema-entry.md).
--   Para obter mais informações sobre como instalar um conector de pesquisa, consulte [pesquisa federada no Windows](-search-federated-search-overview.md).
+-   Para obter mais informações sobre o esquema de Descrição da Biblioteca, consulte [Esquema de Descrição da Biblioteca](../shell/library-schema-entry.md).
+-   Para obter mais informações sobre como instalar um conector de pesquisa, [consulte Pesquisa federada no Windows](-search-federated-search-overview.md).
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

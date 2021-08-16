@@ -1,10 +1,10 @@
 ---
-title: Convertendo um arquivo de DRM-Protected em um fluxo do Windows Media DRM 10 para dispositivos de rede
-description: Convertendo um arquivo de DRM-Protected em um fluxo do Windows Media DRM 10 para dispositivos de rede
+title: convertendo um arquivo de DRM-Protected em um fluxo de mídia Windows DRM 10 para dispositivos de rede
+description: convertendo um arquivo de DRM-Protected em um fluxo de mídia Windows DRM 10 para dispositivos de rede
 ms.assetid: 11aa0cfd-6d87-4ec4-82d8-db2507402911
 keywords:
-- SDK do Windows Media Format, convertendo arquivos protegidos por DRM
-- SDK do Windows Media Format, arquivos protegidos por DRM
+- Windows SDK do formato de mídia, convertendo arquivos protegidos por DRM
+- Windows SDK do formato de mídia, arquivos protegidos por DRM
 - ASF (Advanced Systems Format), convertendo arquivos protegidos por DRM
 - ASF (formato de sistemas avançados), convertendo arquivos protegidos por DRM
 - ASF (Advanced Systems Format), arquivos protegidos por DRM
@@ -13,28 +13,28 @@ keywords:
 - DRM (gerenciamento de direitos digitais), convertendo arquivos protegidos por DRM
 - DRM (gerenciamento de direitos digitais), arquivos protegidos por DRM
 - DRM (gerenciamento de direitos digitais), arquivos protegidos por DRM
-- SDK do Windows Media Format, Windows Media DRM 10 para dispositivos de rede
-- SDK do Windows Media Format, DRM 10 para dispositivos de rede
-- ASF (Advanced Systems Format), Windows Media DRM 10 para dispositivos de rede
-- ASF (formato de sistemas avançados), Windows Media DRM 10 para dispositivos de rede
+- Windows SDK do formato de mídia, Windows mídia DRM 10 para dispositivos de rede
+- Windows SDK do formato de mídia, DRM 10 para dispositivos de rede
+- ASF (Advanced Systems Format), Windows mídia DRM 10 para dispositivos de rede
+- ASF (formato de sistemas avançados), Windows mídia DRM 10 para dispositivos de rede
 - Formato de sistema avançado (ASF), DRM 10 para dispositivos de rede
 - Formato ASF 10 para dispositivos de rede
-- DRM (gerenciamento de direitos digitais), Windows Media DRM 10 para dispositivos de rede
-- DRM (gerenciamento de direitos digitais), Windows Media DRM 10 para dispositivos de rede
+- drm (gerenciamento de direitos digitais), Windows mídia drm 10 para dispositivos de rede
+- drm (gerenciamento de direitos digitais), Windows mídia drm 10 para dispositivos de rede
 - DRM (gerenciamento de direitos digitais), DRM 10 para dispositivos de rede
 - DRM (gerenciamento de direitos digitais), DRM 10 para dispositivos de rede
-- Windows Media DRM 10 para dispositivos de rede, convertendo arquivos protegidos por DRM
+- Windows Mídia DRM 10 para dispositivos de rede, convertendo arquivos protegidos por DRM
 - DRM 10 para dispositivos de rede, convertendo arquivos protegidos por DRM
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 644c1b4f7ede688434fbb1dde11b7051c6f644a5
-ms.sourcegitcommit: 48d1c892045445bcbd0f22bafa2fd3861ffaa6e7
+ms.openlocfilehash: ebe5aa16b13f41c0376da84237a846612b7ae6e730e630be6ec4a45ce48ff4fd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "103640171"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117848907"
 ---
-# <a name="converting-a-drm-protected-file-to-a-windows-media-drm-10-for-network-devices-stream"></a>Convertendo um arquivo de DRM-Protected em um fluxo do Windows Media DRM 10 para dispositivos de rede
+# <a name="converting-a-drm-protected-file-to-a-windows-media-drm-10-for-network-devices-stream"></a>convertendo um arquivo de DRM-Protected em um fluxo de mídia Windows DRM 10 para dispositivos de rede
 
 Depois que um dispositivo é registrado e validado, você pode começar a processar mensagens de solicitação de licença dele. As mensagens de solicitação de licença são enviadas pelos dispositivos quando a ação do aplicativo é necessária. A única ação com suporte no momento é "Play", que é uma solicitação de dados seguros para reprodução.
 
@@ -56,18 +56,18 @@ Ao receber uma mensagem de solicitação de licença, você deve executar as seg
 > [!Note]  
 > O DRM não é compatível com a versão baseada em x64 deste SDK.
 
- 
+ 
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[**Usando o protocolo Windows Media DRM 10 para dispositivos de rede**](using-the-windows-media-drm-10-for-network-devices-protocol.md)
+[**usando o Windows Media DRM 10 para o protocolo de dispositivos de rede**](using-the-windows-media-drm-10-for-network-devices-protocol.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

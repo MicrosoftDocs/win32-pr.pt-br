@@ -1,37 +1,37 @@
 ---
-description: O Windows 8 desabilita os drivers de espelho padrão do Windows 2000 Display Driver Model (XDDM) e oferece a API de duplicação de desktop em vez disso.
+description: Windows 8 desabilita drivers de espelho XDDM (Modelo de Driver de Exibição) Windows 2000 e oferece a API de duplicação da área de trabalho.
 ms.assetid: 523FBFAD-5D78-4EE3-A3B7-8FD5BA39DC46
 title: API de duplicação da Área de Trabalho
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ad27f545318254404beb6372344d8dd0cdfdf604
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 93c1960d064d7fd1e34748dcc2efb3c86459b498df91b52c1384ef8698a37c01
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104456464"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118518456"
 ---
 # <a name="desktop-duplication-api"></a>API de duplicação da Área de Trabalho
 
-O Windows 8 desabilita os drivers de espelho padrão do Windows 2000 Display Driver Model (XDDM) e oferece a API de duplicação de desktop em vez disso. A API de duplicação de desktop fornece acesso remoto a uma imagem de área de trabalho para cenários de colaboração. Os aplicativos podem usar a API de duplicação de área de trabalho para acessar atualizações quadro a quadro para a área de trabalho. Como os aplicativos recebem atualizações para a imagem da área de trabalho em uma superfície DXGI, os aplicativos podem usar todo o poder da GPU para processar as atualizações da imagem.
+Windows 8 desabilita drivers de espelho XDDM (Modelo de Driver de Exibição) Windows 2000 e oferece a API de duplicação da área de trabalho. A API de duplicação da área de trabalho fornece acesso remoto a uma imagem da área de trabalho para cenários de colaboração. Os aplicativos podem usar a API de duplicação da área de trabalho para acessar atualizações quadro a quadro na área de trabalho. Como os aplicativos recebem atualizações para a imagem da área de trabalho em uma superfície DXGI, os aplicativos podem usar toda a potência da GPU para processar as atualizações de imagem.
 
--   [Atualizando os dados da imagem da área de trabalho](#updating-the-desktop-image-data)
--   [Girando a imagem da área de trabalho](#rotating-the-desktop-image)
+-   [Atualizando os dados de imagem da área de trabalho](#updating-the-desktop-image-data)
+-   [Girar a imagem da área de trabalho](#rotating-the-desktop-image)
 -   [Atualizando o ponteiro da área de trabalho](#updating-the-desktop-pointer)
 -   [Tópicos relacionados](#related-topics)
 
-## <a name="updating-the-desktop-image-data"></a>Atualizando os dados da imagem da área de trabalho
+## <a name="updating-the-desktop-image-data"></a>Atualizando os dados de imagem da área de trabalho
 
-DXGI fornece uma superfície que contém uma imagem de área de trabalho atual por meio do novo método [**IDXGIOutputDuplication:: AcquireNextFrame**](/windows/desktop/api/DXGI1_2/nf-dxgi1_2-idxgioutputduplication-acquirenextframe) . O formato da imagem da área de trabalho é sempre o [**\_ formato dxgi \_ B8G8R8A8 \_ UNORM**](/windows/win32/api/dxgiformat/ne-dxgiformat-dxgi_format) não importa qual é o modo de exibição atual. Junto com essa superfície, esses métodos [**IDXGIOutputDuplication**](/windows/desktop/api/DXGI1_2/nn-dxgi1_2-idxgioutputduplication) retornam os tipos indicados de informações que ajudam a determinar quais pixels dentro da superfície você precisa processar:
+O DXGI fornece uma superfície que contém uma imagem da área de trabalho atual por meio do novo [**método IDXGIOutputDuplication::AcquireNextFrame.**](/windows/desktop/api/DXGI1_2/nf-dxgi1_2-idxgioutputduplication-acquirenextframe) O formato da imagem da área de trabalho é [**sempre DXGI \_ FORMAT \_ B8G8R8A8 \_ UNORM,**](/windows/win32/api/dxgiformat/ne-dxgiformat-dxgi_format) independentemente do modo de exibição atual. Junto com essa superfície, esses métodos [**IDXGIOutputDuplication**](/windows/desktop/api/DXGI1_2/nn-dxgi1_2-idxgioutputduplication) retornam os tipos indicados de informações que ajudam a determinar quais pixels dentro da superfície você precisa processar:
 
--   [**IDXGIOutputDuplication:: GetFrameDirtyRects**](/windows/desktop/api/DXGI1_2/nf-dxgi1_2-idxgioutputduplication-getframedirtyrects) retorna regiões sujas, que são retângulos não sobrepostos que indicam as áreas da imagem da área de trabalho que o sistema operacional atualizou desde que você processou a imagem da área de trabalho anterior.
--   [**IDXGIOutputDuplication:: GetFrameMoveRects**](/windows/desktop/api/DXGI1_2/nf-dxgi1_2-idxgioutputduplication-getframemoverects) retorna regiões de movimentação, que são retângulos de pixels na imagem da área de trabalho que o sistema operacional moveu para outro local dentro da mesma imagem. Cada região de movimentação consiste em um retângulo de destino e um ponto de origem. O ponto de origem especifica o local de onde o sistema operacional copiou a região e o retângulo de destino especifica para onde o sistema operacional moveu essa região. As regiões de movimentação sempre são regiões não ampliadas para que a origem seja sempre do mesmo tamanho que o destino.
+-   [**IDXGIOutputDuplication::GetFrameDirtyRects**](/windows/desktop/api/DXGI1_2/nf-dxgi1_2-idxgioutputduplication-getframedirtyrects) retorna regiões sujas, que são retângulos não sobrepostos que indicam as áreas da imagem da área de trabalho que o sistema operacional atualizou desde que você processou a imagem da área de trabalho anterior.
+-   [**IDXGIOutputDuplication::GetFrameMoveRects**](/windows/desktop/api/DXGI1_2/nf-dxgi1_2-idxgioutputduplication-getframemoverects) retorna regiões de movimentação, que são retângulos de pixels na imagem da área de trabalho que o sistema operacional moveu para outro local dentro da mesma imagem. Cada região de movimentação consiste em um retângulo de destino e um ponto de origem. O ponto de origem especifica o local de onde o sistema operacional copiou a região e o retângulo de destino especifica para onde o sistema operacional moveu essa região. As regiões de movimentação são sempre regiões não alongadas, portanto, a origem sempre tem o mesmo tamanho que o destino.
 
-Suponha que a imagem da área de trabalho foi transmitida por uma conexão lenta ao seu aplicativo cliente remoto. A quantidade de dados enviados pela conexão é reduzida com o recebimento de apenas dados sobre como seu aplicativo cliente deve mover regiões de pixels em vez de dados de pixel reais. Para processar as movimentações, seu aplicativo cliente deve ter armazenado a última imagem completa.
+Suponha que a imagem da área de trabalho tenha sido transmitida por uma conexão lenta com seu aplicativo cliente remoto. A quantidade de dados enviados pela conexão é reduzida recebendo apenas dados sobre como seu aplicativo cliente deve mover regiões de pixels em vez de dados de pixel reais. Para processar as movimentações, seu aplicativo cliente deve ter armazenado a última imagem completa.
 
-Enquanto o sistema operacional acumula atualizações de imagem de área de trabalho não processadas, pode ficar sem espaço para armazenar com precisão as regiões de atualização. Nessa situação, o sistema operacional começa a acumular as atualizações, unindo-as com regiões de atualização existentes para abranger todas as novas atualizações. Como resultado, o sistema operacional abrange pixels que ainda não foram atualizados nesse quadro. Mas essa situação não produz problemas visuais em seu aplicativo cliente porque você recebe toda a imagem da área de trabalho e não apenas os pixels atualizados.
+Embora o sistema operacional acumula atualizações de imagem da área de trabalho não processada, ele pode ficar sem espaço para armazenar com precisão as regiões de atualização. Nessa situação, o sistema operacional começa a acumular as atualizações ao coalizá-las com regiões de atualização existentes para abranger todas as novas atualizações. Como resultado, o sistema operacional abrange pixels que ele ainda não atualizou nesse quadro. Mas essa situação não produz problemas visuais em seu aplicativo cliente porque você recebe toda a imagem da área de trabalho e não apenas os pixels atualizados.
 
-Para reconstruir a imagem da área de trabalho correta, o aplicativo cliente deve primeiro processar todas as regiões de movimentação e processar todas as regiões sujas. Uma dessas listas de regiões sujas e de movimentação pode estar completamente vazia. O código de exemplo do [exemplo de duplicação de área de trabalho](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/DXGI%20desktop%20duplication%20sample) mostra como processar as regiões suja e mover em um único quadro:
+Para reconstruir a imagem da área de trabalho correta, o aplicativo cliente deve primeiro processar todas as regiões de movimentação e, em seguida, processar todas as regiões sujas. Qualquer uma dessas listas de regiões sujas e de movimentação pode estar completamente vazia. O código de exemplo do Exemplo [de Duplicação de Área](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/DXGI%20desktop%20duplication%20sample) de Trabalho mostra como processar as regiões sujas e de movimentação em um único quadro:
 
 
 ```C++
@@ -164,42 +164,42 @@ HRESULT DUPLICATIONMANAGER::DoneWithFrame()
 
 
 
-## <a name="rotating-the-desktop-image"></a>Girando a imagem da área de trabalho
+## <a name="rotating-the-desktop-image"></a>Girar a imagem da área de trabalho
 
-Você deve adicionar um código explícito ao seu aplicativo cliente de duplicação de área de trabalho para dar suporte a modos girados. Em um modo girado, a superfície que você recebe de [**IDXGIOutputDuplication:: AcquireNextFrame**](/windows/desktop/api/DXGI1_2/nf-dxgi1_2-idxgioutputduplication-acquirenextframe) está sempre na orientação não girada e a imagem da área de trabalho é girada dentro da superfície. Por exemplo, se a área de trabalho estiver definida como 768x1024 às 90 graus de rotação, **AcquireNextFrame** retornará uma superfície de 1024x768 com a imagem da área de trabalho girada dentro dela. Aqui estão alguns exemplos de rotação.
+Você deve adicionar código explícito ao aplicativo cliente de duplicação de área de trabalho para dar suporte a modos girados. Em um modo girado, a superfície que você recebe de [**IDXGIOutputDuplication::AcquireNextFrame**](/windows/desktop/api/DXGI1_2/nf-dxgi1_2-idxgioutputduplication-acquirenextframe) está sempre na orientação não girada e a imagem da área de trabalho é girada dentro da superfície. Por exemplo, se a área de trabalho estiver definida como 768x1024 a 90 graus de rotação, **AcquireNextFrame** retornará uma superfície 1024x768 com a imagem da área de trabalho girada dentro dela. Aqui estão alguns exemplos de rotação.
 
 
 
-| Modo de exibição definido no painel de controle de vídeo | Modo de exibição retornado por GDI ou DXGI | Superfície retornada de [ **AcquireNextFrame**](/windows/desktop/api/DXGI1_2/nf-dxgi1_2-idxgioutputduplication-acquirenextframe)                |
+| Modo de exibição definido no painel de controle de exibição | Modo de exibição retornado por GDI ou DXGI | Superfície retornada [ **de AcquireNextFrame**](/windows/desktop/api/DXGI1_2/nf-dxgi1_2-idxgioutputduplication-acquirenextframe)                |
 |---------------------------------------------|--------------------------------------|----------------------------------------------------------------------------------------------------------|
-| paisagem de 1024x768                          | rotação de 1024x768 0 graus           | 1024x768 com \[ nova linha\] ![área de trabalho remota não girada](images/dxgi-outdupl-0-rotate.png)<br/>            |
-| 1024x768 retrato                           | 768x1024 90 graus de rotação          | 1024x768 com \[ nova linha\] ![girado em 90 graus área de trabalho remota](images/dxgi-outdupl-90-rotate.png)<br/>   |
-| paisagem de 1024x768 (invertido)                | rotação de nível de 1024x768 180         | 1024x768 com \[ nova linha\] ![girado em 180 graus área de trabalho remota](images/dxgi-outdupl-180-rotate.png)<br/> |
-| 1024x768 retrato (invertido)                 | 768x1024 270 graus de rotação         | 1024x768 com \[ nova linha\] ![girado em 270 graus área de trabalho remota](images/dxgi-outdupl-270-rotate.png)<br/> |
+| Paisagem 1024x768                          | Rotação de 0 grau 1024x768           | Nova linha 1024x768 \[\] ![área de trabalho remota não rotatada](images/dxgi-outdupl-0-rotate.png)<br/>            |
+| Retrato 1024x768                           | Rotação de 90 graus 768x1024          | Nova linha 1024x768 \[\] ![área de trabalho remota girada em 90 graus](images/dxgi-outdupl-90-rotate.png)<br/>   |
+| Paisagem 1024x768 (invertida)                | Rotação de 1024x768 de 180 graus         | Nova linha 1024x768 \[\] ![área de trabalho remota girada em 180 graus](images/dxgi-outdupl-180-rotate.png)<br/> |
+| Retrato 1024x768 (invertida)                 | Rotação de 270 graus 768x1024         | Nova linha 1024x768 \[\] ![área de trabalho remota girada em 270 graus](images/dxgi-outdupl-270-rotate.png)<br/> |
 
 
 
  
 
-O código em seu aplicativo cliente de duplicação de área de trabalho deve girar a imagem da área de trabalho apropriadamente antes de exibir a imagem da área de trabalho.
+O código em seu aplicativo cliente de duplicação da área de trabalho deve girar a imagem da área de trabalho adequadamente antes de exibir a imagem da área de trabalho.
 
 > [!Note]  
-> Em cenários de vários monitores, você pode girar a imagem da área de trabalho para cada monitor de forma independente.
+> Em cenários de vários monitores, você pode girar a imagem da área de trabalho para cada monitor independentemente.
 
  
 
 ## <a name="updating-the-desktop-pointer"></a>Atualizando o ponteiro da área de trabalho
 
-Você precisa usar a API de duplicação de área de trabalho para determinar se o aplicativo cliente deve desenhar a forma do ponteiro do mouse na imagem da área de trabalho. Ou o ponteiro do mouse já está desenhado na imagem da área de trabalho que [**IDXGIOutputDuplication:: AcquireNextFrame**](/windows/desktop/api/DXGI1_2/nf-dxgi1_2-idxgioutputduplication-acquirenextframe) fornece ou o ponteiro do mouse é separado da imagem da área de trabalho. Se o ponteiro do mouse for desenhado na imagem da área de trabalho, os dados de posição do ponteiro relatados por **AcquireNextFrame** (no membro **PointerPosition** das informações de  quadro de OUTDUPL de dxgi que o parâmetro pFrameInfo apontam) indicarão que um ponteiro separado não está visível. [**\_ \_ \_**](/windows/desktop/api/DXGI1_2/ns-dxgi1_2-dxgi_outdupl_frame_info) Se o adaptador gráfico sobrepor o ponteiro do mouse sobre a imagem da área de trabalho, **AcquireNextFrame** relatará que um ponteiro separado está visível. Portanto, seu aplicativo cliente deve desenhar a forma do ponteiro do mouse na imagem da área de trabalho para representar com precisão o que o usuário atual verá em seu monitor.
+Você precisa usar a API de duplicação da área de trabalho para determinar se o aplicativo cliente deve desenhar a forma do ponteiro do mouse para a imagem da área de trabalho. O ponteiro do mouse já está desenhado para a imagem da área de trabalho que [**IDXGIOutputDuplication::AcquireNextFrame**](/windows/desktop/api/DXGI1_2/nf-dxgi1_2-idxgioutputduplication-acquirenextframe) fornece ou o ponteiro do mouse é separado da imagem da área de trabalho. Se o ponteiro do mouse for desenhado para a imagem da área de trabalho, os dados de posição do ponteiro relatados por **AcquireNextFrame** (no membro **PointerPosition** de [**DXGI \_ OUTDUPL \_ FRAME \_ INFO**](/windows/desktop/api/DXGI1_2/ns-dxgi1_2-dxgi_outdupl_frame_info) para os pontos do parâmetro *pFrameInfo)* indicarão que um ponteiro separado não está visível. Se o adaptador gráfico sobrepor o ponteiro do mouse sobre a imagem da área de trabalho, **AcquireNextFrame** relata que um ponteiro separado está visível. Portanto, seu aplicativo cliente deve desenhar a forma do ponteiro do mouse na imagem da área de trabalho para representar com precisão o que o usuário atual verá no monitor.
 
-Para desenhar o ponteiro do mouse do desktop, use o membro **PointerPosition** de [**informações de quadro de dxgi \_ OUTDUPL \_ \_**](/windows/desktop/api/DXGI1_2/ns-dxgi1_2-dxgi_outdupl_frame_info) do parâmetro *pFrameInfo* de [**AcquireNextFrame**](/windows/desktop/api/DXGI1_2/nf-dxgi1_2-idxgioutputduplication-acquirenextframe) para determinar onde localizar o canto superior esquerdo do ponteiro do mouse na imagem da área de trabalho. Ao desenhar o primeiro quadro, você deve usar o método [**IDXGIOutputDuplication:: GetFramePointerShape**](/windows/desktop/api/DXGI1_2/nf-dxgi1_2-idxgioutputduplication-getframepointershape) para obter informações sobre a forma do ponteiro do mouse. Cada chamada para **AcquireNextFrame** para obter o próximo quadro também fornece a posição atual do ponteiro para esse quadro. Por outro lado, você precisará usar **GetFramePointerShape** novamente somente se a forma for alterada. Portanto, mantenha uma cópia da última imagem do ponteiro e use-a para desenhar na área de trabalho, a menos que a forma do ponteiro do mouse seja alterada.
+Para desenhar o ponteiro do mouse da área de trabalho, use o membro **PointerPosition** de [**DXGI \_ OUTDUPL \_ FRAME \_ INFO**](/windows/desktop/api/DXGI1_2/ns-dxgi1_2-dxgi_outdupl_frame_info) do parâmetro *pFrameInfo* [**de AcquireNextFrame**](/windows/desktop/api/DXGI1_2/nf-dxgi1_2-idxgioutputduplication-acquirenextframe) para determinar onde localizar o canto superior esquerdo do ponteiro do mouse na imagem da área de trabalho. Ao desenhar o primeiro quadro, você deve usar o método [**IDXGIOutputDuplication::GetFramePointerShape**](/windows/desktop/api/DXGI1_2/nf-dxgi1_2-idxgioutputduplication-getframepointershape) para obter informações sobre a forma do ponteiro do mouse. Cada chamada para **AcquireNextFrame** para obter o próximo quadro também fornece a posição do ponteiro atual para esse quadro. Por outro lado, você precisará usar **GetFramePointerShape** novamente somente se a forma for mudada. Portanto, mantenha uma cópia da última imagem de ponteiro e use-a para desenhar na área de trabalho, a menos que a forma do ponteiro do mouse seja muda.
 
 > [!Note]  
-> Junto com a imagem de forma do ponteiro, [**GetFramePointerShape**](/windows/desktop/api/DXGI1_2/nf-dxgi1_2-idxgioutputduplication-getframepointershape) fornece o tamanho do local de ponto de acesso. O ponto de acesso é fornecido apenas para fins informativos. O local de onde desenhar a imagem do ponteiro é independente do ponto de HotSpot.
+> Junto com a imagem de forma do ponteiro, [**GetFramePointerShape**](/windows/desktop/api/DXGI1_2/nf-dxgi1_2-idxgioutputduplication-getframepointershape) fornece o tamanho da localização do ponto de acesso. O ponto de calor é determinado apenas para fins informacionais. O local de onde desenhar a imagem do ponteiro é independente do ponto de acesso.
 
  
 
-Este exemplo de código do [exemplo de duplicação de área de trabalho](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/DXGI%20desktop%20duplication%20sample) mostra como obter a forma do ponteiro do mouse:
+Este código de exemplo do Exemplo [de Duplicação de Área de](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/DXGI%20desktop%20duplication%20sample) Trabalho mostra como obter a forma do ponteiro do mouse:
 
 
 ```C++
@@ -293,7 +293,7 @@ HRESULT DUPLICATIONMANAGER::GetMouse(_Out_ PTR_INFO* PtrInfo, _In_ DXGI_OUTDUPL_
 
 <dl> <dt>
 
-[Aprimoramentos de DXGI 1,2](dxgi-1-2-improvements.md)
+[Melhorias do DXGI 1.2](dxgi-1-2-improvements.md)
 </dt> </dl>
 
  

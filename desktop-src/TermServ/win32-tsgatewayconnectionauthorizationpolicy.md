@@ -1,11 +1,11 @@
 ---
-title: Classe Win32_TSGatewayConnectionAuthorizationPolicy
-description: Descreve um Área de Trabalho Remota a política de autorização de conexão (RD \ 160; CAP). RD \ 160; As CAPs são usadas para determinar se um usuário tem permissão para se conectar ao servidor de gateway de Área de Trabalho Remota (gateway de área de trabalho remota).
+title: Win32_TSGatewayConnectionAuthorizationPolicy classe
+description: Descreve uma política Área de Trabalho Remota de autorização de conexão (RD \ 160; CAP). RD \ 160; OS CAPs são usados para determinar se um usuário tem permissão para se conectar ao servidor Área de Trabalho Remota Gateway de Área de Trabalho Remota (Gateway de RD).
 ms.assetid: 50ff3f97-0818-4e9c-9db7-a822cfed0e82
 ms.tgt_platform: multiple
 keywords:
-- Classe de Win32_TSGatewayConnectionAuthorizationPolicy Serviços de Área de Trabalho Remota
-- Serviços de Área de Trabalho Remota de Win32_TSGatewayConnectionAuthorizationPolicy classe, descrita
+- Win32_TSGatewayConnectionAuthorizationPolicy classe Serviços de Área de Trabalho Remota
+- Win32_TSGatewayConnectionAuthorizationPolicy classe Serviços de Área de Trabalho Remota , descrita
 topic_type:
 - apiref
 api_name:
@@ -36,16 +36,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 27384ec3a5f17c3e41fe0ceccf0ee1f7f9d08044
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 9bfaefb0a3062db27622afe90023928507c6d127c64edb60041347f73c1b261c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103824352"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118349241"
 ---
-# <a name="win32_tsgatewayconnectionauthorizationpolicy-class"></a>\_Classe Win32 TSGatewayConnectionAuthorizationPolicy
+# <a name="win32_tsgatewayconnectionauthorizationpolicy-class"></a>Classe Win32 \_ TSGatewayConnectionAuthorizationPolicy
 
-Descreve um Área de Trabalho Remota RD CAP (política de autorização de conexão). As RD CAPs são usadas para determinar se um usuário tem permissão para se conectar ao servidor de gateway de Área de Trabalho Remota (gateway de área de trabalho remota).
+Descreve uma política Área de Trabalho Remota de autorização de conexão (RD CAP). Os CAPs de RD são usados para determinar se um usuário tem permissão para se conectar ao servidor Área de Trabalho Remota Gateway de Área de Trabalho Remota (Gateway de RD).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -78,45 +78,45 @@ class Win32_TSGatewayConnectionAuthorizationPolicy
 
 ## <a name="members"></a>Membros
 
-A classe **Win32 \_ TSGatewayConnectionAuthorizationPolicy** tem estes tipos de membros:
+A **classe Win32 \_ TSGatewayConnectionAuthorizationPolicy** tem estes tipos de membros:
 
 -   [Métodos](#methods)
 -   [Propriedades](#properties)
 
 ### <a name="methods"></a>Métodos
 
-A classe **Win32 \_ TSGatewayConnectionAuthorizationPolicy** tem esses métodos.
+A **classe Win32 \_ TSGatewayConnectionAuthorizationPolicy** tem esses métodos.
 
 
 
 | Método                                                                                                                | Descrição                                                                                                                                                                     |
 |:----------------------------------------------------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**AddComputerGroupNames**](addcomputergroupnames-win32-tsgatewayconnectionauthorizationpolicy.md)                   | Adiciona os nomes de grupo de computadores especificados à propriedade **ComputerGroupNames** .<br/>                                                                                      |
-| [**AddUserGroupNames**](addusergroupnames-win32-tsgatewayconnectionauthorizationpolicy.md)                           | Adiciona os nomes de grupos de usuários especificados à propriedade **Usergroupnames** .<br/>                                                                                              |
+| [**AddComputerGroupNames**](addcomputergroupnames-win32-tsgatewayconnectionauthorizationpolicy.md)                   | Adiciona os nomes de grupo de computadores especificados à **propriedade ComputerGroupNames.**<br/>                                                                                      |
+| [**AddUserGroupNames**](addusergroupnames-win32-tsgatewayconnectionauthorizationpolicy.md)                           | Adiciona os nomes de grupo de usuários especificados à **propriedade UserGroupNames.**<br/>                                                                                              |
 | [**Criar**](create-win32-tsgatewayconnectionauthorizationpolicy.md)                                                 | Cria um RD CAP.<br/>                                                                                                                                                   |
-| [**Apagar**](delete-win32-tsgatewayconnectionauthorizationpolicy.md)                                                 | Exclui o RD CAP atual.<br/>                                                                                                                                          |
-| [**DisableClipboard**](disableclipboard-win32-tsgatewayconnectionauthorizationpolicy.md)                             | Define a propriedade **ClipboardDisabled** .<br/>                                                                                                                             |
-| [**DisableDiskDrives**](disablediskdrives-win32-tsgatewayconnectionauthorizationpolicy.md)                           | Define a propriedade **DiskDrivesDisabled** .<br/>                                                                                                                            |
-| [**DisablePlugAndPlayDevices**](disableplugandplaydevices-win32-tsgatewayconnectionauthorizationpolicy.md)           | Define a propriedade **PlugAndPlayDevicesDisabled** .<br/>                                                                                                                    |
-| [**DisablePrinters**](disableprinters-win32-tsgatewayconnectionauthorizationpolicy.md)                               | Define a propriedade **PrintersDisabled** .<br/>                                                                                                                              |
-| [**DisableSerialPorts**](disableserialports-win32-tsgatewayconnectionauthorizationpolicy.md)                         | Define a propriedade **SerialPortsDisabled** .<br/>                                                                                                                           |
-| [**EnableAllowOnlySDRServers**](win32-tsgatewayconnectionauthorizationpolicy-enableallowonlysdrservers.md)           | Usado para alternar a propriedade **AllowOnlySDRServers**<br/> **Windows Server 2008:** Esse método não está disponível antes do Windows Server 2008 R2.<br/>                  |
-| [**MoveDown**](movedown-win32-tsgatewayconnectionauthorizationpolicy.md)                                             | Move a RD CAP atual uma posição para baixo na lista.<br/>                                                                                                              |
-| [**MoveUp**](moveup-win32-tsgatewayconnectionauthorizationpolicy.md)                                                 | Move a RD CAP atual uma posição para cima na lista.<br/>                                                                                                                |
-| [**RemoveComputerGroupNames**](removecomputergroupnames-win32-tsgatewayconnectionauthorizationpolicy.md)             | Remove os nomes de grupos de computadores especificados da propriedade **ComputerGroupNames** .<br/>                                                                                 |
-| [**RemoveUserGroupNames**](removeusergroupnames-win32-tsgatewayconnectionauthorizationpolicy.md)                     | Remove os nomes de grupo de usuários especificados da propriedade **Usergroupnames** .<br/>                                                                                             |
-| [**SetComputerGroupNames**](setcomputergroupnames-win32-tsgatewayconnectionauthorizationpolicy.md)                   | Define a propriedade **ComputerGroupNames** .<br/>                                                                                                                            |
-| [**SetCookieAuthenticationAllowed**](setcookieauthenticationallowed-win32-tsgatewayconnectionauthorizationpolicy.md) | Define a propriedade **CookieAuthenticationAllowed** .<br/> **Windows Server 2008:** Este método não está disponível.<br/>                                                 |
-| [**SetDeviceRedirectionType**](setdeviceredirectiontype-win32-tsgatewayconnectionauthorizationpolicy.md)             | Define a propriedade **DeviceRedirectionType** .<br/>                                                                                                                         |
-| [**Sethabilitado**](setenabled-win32-tsgatewayconnectionauthorizationpolicy.md)                                         | Habilita ou desabilita a RD CAP atual.<br/>                                                                                                                              |
-| [**SetIdleTimeout**](setidletimeout-win32-tsgatewayconnectionauthorizationpolicy.md)                                 | Define a propriedade **IdleTimeout** .<br/> **Windows Server 2008:** Esse método não está disponível antes do Windows Server 2008 R2.<br/>                                   |
-| [**SetName**](setname-win32-tsgatewayconnectionauthorizationpolicy.md)                                               | Define um novo nome para este RD CAP. Esse método garante que os nomes serão exclusivos.<br/>                                                                                      |
-| [**SetPasswordAllowed**](setpasswordallowed-win32-tsgatewayconnectionauthorizationpolicy.md)                         | Define a propriedade **PasswordAllowed** .<br/>                                                                                                                               |
-| [**SetSecureIdAllowed**](setsecureidallowed-win32-tsgatewayconnectionauthorizationpolicy.md)                         | Define a propriedade **SecureIdAllowed** .<br/> **Windows Server 2008:** Esse método é reservado para uso futuro.<br/>                                                   |
-| [**SetSessionTimeout**](setsessiontimeout-win32-tsgatewayconnectionauthorizationpolicy.md)                           | Define as propriedades **SessionTimeout** e **SessionTimeoutAction** .<br/> **Windows Server 2008:** Esse método não está disponível antes do Windows Server 2008 R2.<br/> |
-| [**SetSmartcardAllowed**](setsmartcardallowed-win32-tsgatewayconnectionauthorizationpolicy.md)                       | Define a propriedade **SmartcardAllowed** .<br/>                                                                                                                              |
-| [**SetUserGroupNames**](setusergroupnames-win32-tsgatewayconnectionauthorizationpolicy.md)                           | Define a propriedade **Usergroupnames** .<br/>                                                                                                                                |
-| [**Cumulativo**](update-win32-tsgatewayconnectionauthorizationpolicy.md)                                                 | Atualiza o RD CAP atual.<br/>                                                                                                                                          |
+| [**Excluir**](delete-win32-tsgatewayconnectionauthorizationpolicy.md)                                                 | Exclui o valor atual RD CAP.<br/>                                                                                                                                          |
+| [**DisableClipboard**](disableclipboard-win32-tsgatewayconnectionauthorizationpolicy.md)                             | Define a **propriedade ClipboardDisabled.**<br/>                                                                                                                             |
+| [**DisableDiskDrives**](disablediskdrives-win32-tsgatewayconnectionauthorizationpolicy.md)                           | Define a **propriedade DiskDrivesDisabled.**<br/>                                                                                                                            |
+| [**DisablePlugAndPlayDevices**](disableplugandplaydevices-win32-tsgatewayconnectionauthorizationpolicy.md)           | Define a **propriedade PlugAndPlayDevicesDisabled.**<br/>                                                                                                                    |
+| [**DisablePrinters**](disableprinters-win32-tsgatewayconnectionauthorizationpolicy.md)                               | Define a **propriedade PrintersDisabled.**<br/>                                                                                                                              |
+| [**DisableSerialPorts**](disableserialports-win32-tsgatewayconnectionauthorizationpolicy.md)                         | Define a **propriedade SerialPortsDisabled.**<br/>                                                                                                                           |
+| [**EnableAllowOnlySDRServers**](win32-tsgatewayconnectionauthorizationpolicy-enableallowonlysdrservers.md)           | Usado para alternar a **propriedade AllowOnlySDRServers**<br/> **Windows Server 2008:** Esse método não está disponível antes Windows Server 2008 R2.<br/>                  |
+| [**Movedown**](movedown-win32-tsgatewayconnectionauthorizationpolicy.md)                                             | Move o atual RD CAP uma posição para baixo na lista.<br/>                                                                                                              |
+| [**MoveUp**](moveup-win32-tsgatewayconnectionauthorizationpolicy.md)                                                 | Move o atual RD CAP uma posição para cima na lista.<br/>                                                                                                                |
+| [**RemoveComputerGroupNames**](removecomputergroupnames-win32-tsgatewayconnectionauthorizationpolicy.md)             | Remove os nomes de grupo de computadores especificados da **propriedade ComputerGroupNames.**<br/>                                                                                 |
+| [**RemoveUserGroupNames**](removeusergroupnames-win32-tsgatewayconnectionauthorizationpolicy.md)                     | Remove os nomes de grupo de usuários especificados da **propriedade UserGroupNames.**<br/>                                                                                             |
+| [**SetComputerGroupNames**](setcomputergroupnames-win32-tsgatewayconnectionauthorizationpolicy.md)                   | Define a **propriedade ComputerGroupNames.**<br/>                                                                                                                            |
+| [**SetCookieAuthenticationAllowed**](setcookieauthenticationallowed-win32-tsgatewayconnectionauthorizationpolicy.md) | Define a **propriedade CookieAuthenticationAllowed.**<br/> **Windows Server 2008:** Esse método não está disponível.<br/>                                                 |
+| [**SetDeviceRedirectionType**](setdeviceredirectiontype-win32-tsgatewayconnectionauthorizationpolicy.md)             | Define a **propriedade DeviceRedirectionType.**<br/>                                                                                                                         |
+| [**Setenabled**](setenabled-win32-tsgatewayconnectionauthorizationpolicy.md)                                         | Habilita ou desabilita a configuração RD CAP.<br/>                                                                                                                              |
+| [**SetIdleTimeout**](setidletimeout-win32-tsgatewayconnectionauthorizationpolicy.md)                                 | Define a **propriedade IdleTimeout.**<br/> **Windows Server 2008:** Esse método não está disponível antes Windows Server 2008 R2.<br/>                                   |
+| [**SetName**](setname-win32-tsgatewayconnectionauthorizationpolicy.md)                                               | Define um novo nome para este RD CAP. Esse método garante que os nomes sejam exclusivos.<br/>                                                                                      |
+| [**SetPasswordAllowed**](setpasswordallowed-win32-tsgatewayconnectionauthorizationpolicy.md)                         | Define a **propriedade PasswordAllowed.**<br/>                                                                                                                               |
+| [**SetSecureIdAllowed**](setsecureidallowed-win32-tsgatewayconnectionauthorizationpolicy.md)                         | Define a **propriedade SecureIdAllowed.**<br/> **Windows Server 2008:** Esse método é reservado para uso futuro.<br/>                                                   |
+| [**SetSessionTimeout**](setsessiontimeout-win32-tsgatewayconnectionauthorizationpolicy.md)                           | Define as **propriedades SessionTimeout** **e SessionTimeoutAction.**<br/> **Windows Server 2008:** Esse método não está disponível antes Windows Server 2008 R2.<br/> |
+| [**SetSmartcardAllowed**](setsmartcardallowed-win32-tsgatewayconnectionauthorizationpolicy.md)                       | Define a **propriedade SmartcardAllowed.**<br/>                                                                                                                              |
+| [**SetUserGroupNames**](setusergroupnames-win32-tsgatewayconnectionauthorizationpolicy.md)                           | Define a **propriedade UserGroupNames.**<br/>                                                                                                                                |
+| [**Atualizar**](update-win32-tsgatewayconnectionauthorizationpolicy.md)                                                 | Atualiza a versão RD CAP.<br/>                                                                                                                                          |
 
 
 
@@ -124,35 +124,35 @@ A classe **Win32 \_ TSGatewayConnectionAuthorizationPolicy** tem esses métodos.
 
 ### <a name="properties"></a>Propriedades
 
-A classe **Win32 \_ TSGatewayConnectionAuthorizationPolicy** tem essas propriedades.
+A **classe Win32 \_ TSGatewayConnectionAuthorizationPolicy** tem essas propriedades.
 
 <dl> <dt>
 
 **AllowOnlySDRServers**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Indica se as conexões são permitidas apenas para proteger servidores RDS do redirecionamento de dispositivo (SDR). Essa propriedade pode ser definida usando o método [**EnableAllowOnlySDRServers**](win32-tsgatewayconnectionauthorizationpolicy-enableallowonlysdrservers.md) .
+Indica se as conexões permitidas apenas para proteger servidores SDR (redirecionamento de dispositivo) RDS. Essa propriedade pode ser definida usando o [**método EnableAllowOnlySDRServers.**](win32-tsgatewayconnectionauthorizationpolicy-enableallowonlysdrservers.md)
 
-**Windows Server 2008:** Essa propriedade não está disponível antes do Windows Server 2008 R2.
+**Windows Server 2008:** Essa propriedade não está disponível antes Windows Server 2008 R2.
 
 </dd> <dt>
 
 **ClipboardDisabled**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Indica se o redirecionamento da área de transferência será desabilitado. Essa propriedade terá efeito somente se a propriedade **DeviceRedirectionType** tiver um valor de "2".
+Indica se o redirecionamento da área de transferência será desabilitado. Essa propriedade terá um efeito somente se a **propriedade DeviceRedirectionType** tiver um valor de "2".
 
 </dd> <dt>
 
@@ -165,20 +165,20 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Lista de nomes de grupos de computadores separados por ponto e vírgula. Esse valor pode estar vazio. Os nomes são do formato *domínio \\ ComputerGroupName*. Se um valor for especificado, o computador cliente deverá pertencer a um desses grupos de computadores para que o usuário acesse o servidor de gateway de área de trabalho remota.
+Lista de nomes de grupos de computadores separados por ponto e vírgula. Esse valor pode estar vazio. Os nomes são do formato *Domain \\ ComputerGroupName*. Se um valor for especificado, o computador cliente deverá pertencer a um desses grupos de computadores para que o usuário acesse o servidor do Gateway de Área de Trabalho Remoto.
 
 </dd> <dt>
 
 **CookieAuthenticationAllowed**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Indica se a autenticação de cookie pode ser usada para se conectar ao servidor de gateway de área de trabalho remota. Essa propriedade pode ser definida usando o método [**SetCookieAuthenticationAllowed**](setcookieauthenticationallowed-win32-tsgatewayconnectionauthorizationpolicy.md) .
+Indica se a autenticação de cookie pode ser usada para se conectar ao servidor de Gateway de RD. Essa propriedade pode ser definida usando o [**método SetCookieAuthenticationAllowed.**](setcookieauthenticationallowed-win32-tsgatewayconnectionauthorizationpolicy.md)
 
 **Windows Server 2008:** Esta propriedade não está disponível.
 
@@ -233,7 +233,7 @@ Indica se o redirecionamento de unidade de disco será desabilitado. Essa propri
 
 </dd> <dt>
 
-**Enabled**
+**Habilitada**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **booliano**
@@ -448,7 +448,7 @@ Lista de nomes de grupos de usuários separados por ponto e vírgula. Os nomes s
 
 Você deve ser um membro do grupo Administradores para usar essa classe.
 
-Os arquivos de formato MOF (MOF) contêm as definições de classes de Instrumentação de Gerenciamento do Windows (WMI). Os arquivos MOF não são instalados como parte do SDK (Software Development Kit) do Microsoft Windows. Eles são instalados no servidor quando você adiciona a função associada usando o Gerenciador do Servidor. Para obter mais informações sobre arquivos MOF, consulte [formato MOF (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
+os arquivos de formato MOF (MOF) contêm as definições de classes de Instrumentação de Gerenciamento do Windows (WMI). Os arquivos MOF não são instalados como parte do Microsoft Windows Software Development Kit (SDK). Eles são instalados no servidor quando você adiciona a função associada usando o Gerenciador do Servidor. Para obter mais informações sobre arquivos MOF, [consulte Managed Object Format (MOF).](/windows/desktop/WmiSdk/managed-object-format--mof-)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -458,8 +458,8 @@ Os arquivos de formato MOF (MOF) contêm as definições de classes de Instrumen
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Nenhum compatível<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                           |
-| Namespace<br/>                | \\TerminalServices da CIMv2 raiz \\<br/>                                                 |
-| MOF<br/>                      | <dl> <dt>TS. mof</dt> </dl> |
+| Namespace<br/>                | \\CiMv2 \\ TerminalServices raiz<br/>                                                 |
+| MOF<br/>                      | <dl> <dt>TSGateway.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>AagWmi.dll</dt> </dl>    |
 
 
@@ -468,22 +468,22 @@ Os arquivos de formato MOF (MOF) contêm as definições de classes de Instrumen
 
 <dl> <dt>
 
-[**\_TSGatewayConnection Win32**](win32-tsgatewayconnection.md)
+[**Win32 \_ TSGatewayConnection**](win32-tsgatewayconnection.md)
 </dt> <dt>
 
-[**\_TSGatewayLoadBalancer Win32**](win32-tsgatewayloadbalancer.md)
+[**Win32 \_ TSGatewayLoadBalancer**](win32-tsgatewayloadbalancer.md)
 </dt> <dt>
 
-[**\_TSGatewayRADIUSServer Win32**](win32-tsgatewayradiusserver.md)
+[**Win32 \_ TSGatewayRADIUSServer**](win32-tsgatewayradiusserver.md)
 </dt> <dt>
 
-[**\_TSGatewayResourceAuthorizationPolicy Win32**](win32-tsgatewayresourceauthorizationpolicy.md)
+[**Win32 \_ TSGatewayResourceAuthorizationPolicy**](win32-tsgatewayresourceauthorizationpolicy.md)
 </dt> <dt>
 
-[**\_TSGatewayResourceGroup Win32**](win32-tsgatewayresourcegroup.md)
+[**Win32 \_ TSGatewayResourceGroup**](win32-tsgatewayresourcegroup.md)
 </dt> <dt>
 
-[**\_TSGatewayServerSettings Win32**](win32-tsgatewayserversettings.md)
+[**Win32 \_ TSGatewayServerSettings**](win32-tsgatewayserversettings.md)
 </dt> </dl>
 
  

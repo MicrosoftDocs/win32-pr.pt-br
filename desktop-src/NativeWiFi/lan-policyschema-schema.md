@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 68b81aba17ff2310e6913f133aacb2ddc103b517
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 18352f525ab11995aa3236bb95bdab17377b1a1942b97c852803bf6687305340
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103827282"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117798446"
 ---
 # <a name="lan_policy-schema"></a>Esquema de política de LAN \_
 

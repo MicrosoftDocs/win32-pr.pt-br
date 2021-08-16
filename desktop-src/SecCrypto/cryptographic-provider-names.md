@@ -4,12 +4,12 @@ ms.assetid: 97e9a708-83b5-48b3-9d16-f7b54367dc4e
 title: Nomes de provedor criptográfico (Wincrypt. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 58a5cbe497e56144a9948dab96be0c03dd5a99f3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c4c9b41aaeacb0b03df4b2fc0c608ae1f98e59ac0a581a395eb9904d0ec8e235
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103920823"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117768682"
 ---
 # <a name="cryptographic-provider-names"></a>Nomes de provedor criptográfico
 
@@ -26,7 +26,7 @@ Os seguintes nomes de CSP ( [*provedor de serviços de criptografia*](../secglos
 | <span id="MS_DEF_RSA_SCHANNEL_PROV"></span><span id="ms_def_rsa_schannel_prov"></span><dl> <dt>**MS \_ DEF \_ RSA \_ Schannel \_ prov**</dt> <dt>"provedor criptográfico Microsoft RSA Schannel"</dt> </dl>  | O [provedor criptográfico Microsoft RSA/Schannel](microsoft-rsa-schannel-cryptographic-provider.md).<br/>                                                                               |
 | <span id="MS_DEF_RSA_SIG_PROV"></span><span id="ms_def_rsa_sig_prov"></span><dl> <dt>**MS \_ DEF \_ RSA \_ SIG \_ Prov**</dt> <dt>"provedor CRIPTOGRÁFICO de assinatura do Microsoft RSA"</dt> </dl>                | Não há suporte para o [provedor criptográfico da assinatura RSA da Microsoft](microsoft-rsa-signature-cryptographic-provider.md) .<br/>                                                            |
 | <span id="MS_ENH_DSS_DH_PROV"></span><span id="ms_enh_dss_dh_prov"></span><dl> <dt>**MS \_ ENH \_ DSS \_ DH \_ Prov**</dt> <dt>"Microsoft Enhanced DSS e Diffie-Hellman provedor criptográfico"</dt> </dl> | O [provedor criptográfico do Microsoft Enhanced DSS e Diffie-Hellman](microsoft-enhanced-dss-and-diffie-hellman-cryptographic-provider.md).<br/>                                         |
-| <span id="MS_ENH_RSA_AES_PROV"></span><span id="ms_enh_rsa_aes_prov"></span><dl> <dt>**MS \_ ENH \_ RSA \_ AES \_ Prov**</dt> <dt>"Microsoft Enhanced RSA and AES Cryptographic Provider"</dt> </dl>         | O [provedor criptográfico do Microsoft AES](microsoft-aes-cryptographic-provider.md).<br/> * * Windows XP: * * "Microsoft Enhanced RSA and AES Cryptographic Provider (prototype)"<br/> |
+| <span id="MS_ENH_RSA_AES_PROV"></span><span id="ms_enh_rsa_aes_prov"></span><dl> <dt>**MS \_ ENH \_ RSA \_ AES \_ Prov**</dt> <dt>"Microsoft Enhanced RSA and AES Cryptographic Provider"</dt> </dl>         | O [provedor criptográfico do Microsoft AES](microsoft-aes-cryptographic-provider.md).<br/> * * Windows XP: * * "Microsoft enhanced RSA and AES Cryptographic Provider (Prototype)"<br/> |
 | <span id="MS_ENHANCED_PROV"></span><span id="ms_enhanced_prov"></span><dl> <dt>**MS \_ \_Prov aprimorado**</dt> <dt>"provedor de criptografia aprimorado da Microsoft v 1.0"</dt> </dl>                           | O [provedor criptográfico aprimorado da Microsoft](microsoft-enhanced-cryptographic-provider.md).<br/>                                                                                       |
 | <span id="MS_SCARD_PROV"></span><span id="ms_scard_prov"></span><dl> <dt>**MS \_ SCARTAR \_ Prov**</dt> <dt>"provedor de criptografia de cartão inteligente de base Microsoft"</dt> </dl>                                         | O [provedor de serviços de criptografia de cartão inteligente Microsoft base](/previous-versions/windows/desktop/secsmart/microsoft-base-smart-card-cryptographic-service-provider).<br/>                                                    |
 | <span id="MS_STRONG_PROV"></span><span id="ms_strong_prov"></span><dl> <dt>**MS \_ FORTE \_ Prov**</dt> <dt>"provedor de criptografia forte da Microsoft"</dt> </dl>                                        | O [provedor de criptografia forte da Microsoft](microsoft-strong-cryptographic-provider.md).<br/>                                                                                           |
@@ -39,9 +39,9 @@ Os seguintes nomes de CSP ( [*provedor de serviços de criptografia*](../secglos
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Wincrypt. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho XP\]<br/>                                           |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Wincrypt. h</dt> </dl> |
 
 
 

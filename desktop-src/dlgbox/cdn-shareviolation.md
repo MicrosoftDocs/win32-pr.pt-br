@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 77cd862fa1c3598a4e81a776004f26ef02290477
-ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
+ms.openlocfilehash: 5b319543a101a4004030fa2339f5432c52ed79d1685c4a09e3a033554f251051
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110548851"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117720973"
 ---
-# <a name="cdn_shareviolation-notification-code"></a>Código de notificação da CDN \_ SHAREVIOLATION
+# <a name="cdn_shareviolation-notification-code"></a>CDN \_ Código de notificação do SHAREVIOLATION
 
-\[A partir do Windows Vista, as caixas de diálogo **abrir** e **salvar como** comuns foram substituídas pela [caixa de diálogo de item comum](../shell/common-file-dialog.md). Recomendamos que você use a API de caixa de diálogo de item comum em vez dessas caixas de diálogo da biblioteca de caixas de diálogo comuns.\]
+\[a partir do Windows Vista, as caixas de diálogo **abrir** e **salvar como** comuns foram substituídas pela [caixa de diálogo de Item comum](../shell/common-file-dialog.md). Recomendamos que você use a API de caixa de diálogo de item comum em vez dessas caixas de diálogo da biblioteca de caixas de diálogo comuns.\]
 
 Enviado por uma caixa de diálogo **abrir** no estilo do Explorer ou **salvar como** quando o usuário clica no botão **OK** e ocorre uma violação de compartilhamento de rede para o arquivo selecionado.
 
@@ -51,11 +51,11 @@ Este parâmetro não é usado.
 *lParam* 
 </dt> <dd>
 
-Um ponteiro para uma estrutura [**OFNOTIFY**](/windows/desktop/api/Commdlg/ns-commdlg-ofnotifya) . O membro **pszFile** dessa estrutura é um ponteiro para o nome do arquivo que tinha a violação de compartilhamento. A estrutura **OFNOTIFY** contém uma estrutura [**NMHDR**](/windows/win32/api/richedit/ns-richedit-nmhdr) cujo membro de **código** indica a mensagem de notificação **CDN \_ SHAREVIOLATION** .
+Um ponteiro para uma estrutura [**OFNOTIFY**](/windows/desktop/api/Commdlg/ns-commdlg-ofnotifya) . O membro **pszFile** dessa estrutura é um ponteiro para o nome do arquivo que tinha a violação de compartilhamento. a estrutura **OFNOTIFY** contém uma estrutura [**NMHDR**](/windows/win32/api/richedit/ns-richedit-nmhdr) cujo membro de **código** indica a mensagem de notificação **CDN \_ SHAREVIOLATION** .
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O valor de retorno indica como a caixa de diálogo deve tratar a violação de compartilhamento.
 
@@ -65,7 +65,7 @@ Para evitar a exibição da mensagem de aviso padrão, retorne um valor diferent
 
 
 
-| Código/valor de retorno                                                                                                                                           | Description                                                                                                     |
+| Código/valor de retorno                                                                                                                                           | Descrição                                                                                                     |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|
 | <dl> <dt>**OFN \_ SHAREFALLTHROUGH**</dt> <dt>2</dt> </dl> | Faz com que a caixa de diálogo retorne o nome do arquivo sem avisar o usuário sobre a violação de compartilhamento.<br/>  |
 | <dl> <dt>**OFN \_ SHARENOWARN**</dt> <dt>1</dt> </dl>      | Faz com que a caixa de diálogo rejeite o nome do arquivo sem avisar o usuário sobre a violação de compartilhamento. <br/> |

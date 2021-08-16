@@ -15,12 +15,12 @@ api_type:
 - DllExport
 api_location:
 - msdelta.dll
-ms.openlocfilehash: a2142f26499514c24967e5334d782c2dee559cd9
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ae13dfb82d4699bbb8cc222b4cd1aaa2615e8efaa578de60483f00552faf2086
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105772766"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117826920"
 ---
 # <a name="createdeltab-function"></a>Função CreateDeltaB
 
@@ -96,7 +96,7 @@ no ALG_ID do algoritmo a ser usado para gerar a assinatura de destino. Alguns va
 
 fora Ponteiro para a estrutura de [DELTA_OUTPUT](/previous-versions/bb417345(v=msdn.10)#delta-output-structure) onde o Delta deve ser gravado.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Essa função retornará **true** se tiver sucesso; caso contrário, retornará **false**. Quando a função retorna **false**, você pode chamar [GetLastError](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) para obter o código de erro do sistema Win32 correspondente.
 
@@ -106,7 +106,7 @@ Essa função retornará **true** se tiver sucesso; caso contrário, retornará 
 |----------------|---------------------------------------------------------------------------------------|
 | parâmetro | msdelta. h |
 | DLL | msdelta.dll |
-| Unicode | Não aplicável |
+| Unicode | Não se aplica |
 
 ## <a name="see-also"></a>Confira também
 

@@ -1,9 +1,9 @@
 ---
-title: Guia de programação do codec
-description: Para obter a documentação atual sobre os codecs de mídia do Windows e os processadores de sinal digital, consulte codec de áudio e vídeo do Windows Media e APIs do DSP. | Guia de programação do codec
+title: Guia de Programação de Codec
+description: Para ver a documentação atual sobre Windows de mídia e processadores de sinal digital, consulte Windows codec de áudio e vídeo de mídia e APIs DSP. | Guia de Programação de Codec
 ms.assetid: aace374e-e369-4234-8d69-2a2237c41619
 keywords:
-- Guia de programação do codec Windows Media Format
+- Formato de mídia do Windows Do Guia de Programação de Codec
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 25cd21d11639fa1d964b488bd53b5fe5c7921c35
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 557106f68607c08389bba90cabf1a351e6d9e482c9a100a5f42f0a69d8882d8e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105771568"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117849086"
 ---
-# <a name="codec-programming-guide"></a>Guia de programação do codec
+# <a name="codec-programming-guide"></a>Guia de Programação de Codec
 
-Para obter a documentação atual sobre os codecs de mídia do Windows e os processadores de sinal digital, consulte [codec de áudio e vídeo do Windows Media e APIs do DSP.](/previous-versions//dd464626(v=vs.85))
+Para ver a documentação atual Windows codecs de mídia e processadores de sinal digital, consulte Windows codec de áudio e vídeo de mídia e [APIs DSP.](/previous-versions//dd464626(v=vs.85))
 
  
 

@@ -13,24 +13,24 @@ ms.locfileid: "118638286"
 ---
 # <a name="creating-a-patch-package"></a>Criando um pacote de patch
 
-Os desenvolvedores criam um pacote de patch gerando um arquivo de criação de patch e usando [Msimsp.exe](msimsp-exe.md) para chamar a função [UiCreatePatchPackageEx](uicreatepatchpackageex--patchwiz-dll-.md) no [Patchwiz.dll](patchwiz-dll.md). Msimsp.exe e Patchwiz.dll são fornecidos no SDK do Windows Installer. Para obter mais informações, consulte [um exemplo de aplicação de patch de atualização pequena](a-small-update-patching-example.md).
+Os desenvolvedores criam um pacote de patch gerando um arquivo de criação de patch e [ usandoMsimsp.exe](msimsp-exe.md) para chamar a [função UiCreatePatchPackageEx](uicreatepatchpackageex--patchwiz-dll-.md) [ noPatchwiz.dll](patchwiz-dll.md). Msimsp.exe e Patchwiz.dll são fornecidos no SDK Windows Installer. Para obter mais informações, consulte [Um pequeno exemplo de a](a-small-update-patching-example.md)patch de atualização .
 
-como o aplicativo de um patch para um pacote de Windows Installer resulta na instalação das fontes originais usando um novo arquivo de .msi, o novo arquivo de .msi deve permanecer compatível com o layout da fonte original.
+Como a aplicação de um patch a um pacote do instalador do Windows resulta na instalação das fontes originais usando um novo arquivo .msi, o novo arquivo .msi deve permanecer compatível com o layout da origem original.
 
-Quando você cria um pacote de patch, deve usar uma imagem de instalação descompactada para criar um patch, por exemplo, uma imagem administrativa ou uma imagem de instalação descompactada de um CD-ROM. Você também deve aderir às seguintes restrições:
+Ao criar um pacote de patch, você deve usar uma imagem de instalação descompactada para criar um patch, por exemplo, uma imagem administrativa ou uma imagem de instalação descompactada de um CD-ROM. Você também deve seguir as seguintes restrições:
 
 -   Não mova arquivos de uma pasta para outra.
 -   Não mova arquivos de um gabinete para outro.
 -   Não altere a ordem dos arquivos em um gabinete.
--   Não altere o número de sequência de arquivos existentes. O número de sequência é o valor especificado na coluna sequência da [tabela de arquivos](file-table.md).
--   Todos os novos arquivos adicionados pelo patch devem ser colocados no final da sequência de arquivos existente. O número de sequência de qualquer arquivo novo na imagem atualizada deve ser maior que o maior número de sequência de arquivos existentes na imagem de destino.
--   Não altere as chaves primárias na [tabela de arquivos](file-table.md) entre as versões original e nova .msi arquivo.
+-   Não altere o número de sequência de arquivos existentes. O número da sequência é o valor especificado na coluna Sequência da [Tabela de Arquivos](file-table.md).
+-   Todos os novos arquivos adicionados pelo patch devem ser colocados no final da sequência de arquivos existente. O número de sequência de qualquer novo arquivo na imagem atualizada deve ser maior que o maior número de sequência de arquivos existentes na imagem de destino.
+-   Não altere as chaves primárias na Tabela [de Arquivos](file-table.md) entre as versões de arquivo .msi original e nova.
     > [!Note]  
-    > O arquivo deve ter a mesma chave na [tabela de arquivos](file-table.md) da imagem de destino e da imagem atualizada. Os valores de cadeia de caracteres na coluna arquivo de ambas as tabelas devem ser idênticos, incluindo o caso.
+    > O arquivo deve ter a mesma chave na Tabela [de](file-table.md) Arquivos da imagem de destino e da imagem atualizada. Os valores de cadeia de caracteres na coluna Arquivo de ambas as tabelas devem ser idênticos, incluindo o caso.
 
      
 
--   Não crie um pacote com chaves de [tabela de arquivos](file-table.md) que diferem apenas em maiúsculas e minúsculas, por exemplo, evite o exemplo de tabela a seguir.
+-   Não autor de um pacote com chaves [de Tabela](file-table.md) de Arquivos que diferem apenas caso, por exemplo, evite o exemplo de tabela a seguir.
 
     
 
@@ -43,9 +43,9 @@ Quando você cria um pacote de patch, deve usar uma imagem de instalação desco
 
      
 
-    o Windows Installer pode permitir o exemplo de tabela anterior quando Comp1 e Comp2 são instalados em diretórios diferentes, mas você não pode usar [Msimsp.exe](msimsp-exe.md) ou [Patchwiz.dll](patchwiz-dll.md) para gerar um patch para o pacote. Msimsp.exe e Patchwiz.dll chamada Makecab.exe, que não diferencia maiúsculas de minúsculas e falha.
+    O instalador Windows pode permitir o exemplo de tabela anterior quando Comp1 e Comp2 estão instalados em diretórios diferentes, mas você não pode usar [Msimsp.exe](msimsp-exe.md) [ouPatchwiz.dll](patchwiz-dll.md) para gerar um patch para o pacote. Msimsp.exe e Patchwiz.dll chamada Makecab.exe, que não faz maiúsculas de minúsculas e falha.
 
-    Ao usar módulos de mesclagem na configuração, verifique se os números de sequência de arquivo e o layout aderem às diretrizes acima.
+    Ao usar módulos de mesclagem na configuração, verifique se os números de sequência de arquivos e o layout aderem às diretrizes acima.
 
  
 

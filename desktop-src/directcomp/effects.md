@@ -4,17 +4,17 @@ description: Este tópico discute os conceitos básicos dos efeitos DirectCompos
 ms.assetid: 805B17D2-2F6B-4C25-8C6D-41FFA5DFC774
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4cfd1ca154dcbc7e55ca65cc34d04cfa7d73ccee
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: c9c5119367a35725a85efe20b8ba4d0f9f9887ff91b4d9618e2215bedfbfef67
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104366192"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117905042"
 ---
 # <a name="effects-directcomposition"></a>Efeitos (DirectComposition)
 
 > [!NOTE]
-> Para aplicativos no Windows 10, é recomendável usar APIs do Windows. UI. composição em vez de DirectComposition. Para obter mais informações, consulte [modernizar seu aplicativo de área de trabalho usando a camada Visual](/windows/uwp/composition/visual-layer-in-desktop-apps).
+> para aplicativos no Windows 10, é recomendável usar as APIs Windows. UI. composição em vez de DirectComposition. Para obter mais informações, consulte [modernizar seu aplicativo de área de trabalho usando a camada Visual](/windows/uwp/composition/visual-layer-in-desktop-apps).
 
 Este tópico discute os conceitos básicos dos efeitos DirectCompositions da Microsoft e descreve os tipos de efeitos aos quais o DirectComposition dá suporte.
 
@@ -42,19 +42,19 @@ O DirectComposition dá suporte aos seguintes tipos de efeitos.
 
 
 
-| Tipo de efeito                                                   | Descrição                                                                |
+| Tipo de efeito                                                   | Description                                                                |
 |---------------------------------------------------------------|----------------------------------------------------------------------------|
 | [Opacidade](#opacity)                                           | Define a opacidade de um Visual inteiro.                                      |
 | [transformação de perspectiva 3D](#3d-perspective-transform-effects) | Aplica um efeito de transformação de perspectiva tridimensional (3D) a um Visual. |
 
 
 
- 
+ 
 
 > [!Note]  
 > O DirectComposition não faz nenhum processamento especial ao aplicar efeitos ao conteúdo estéreo 3D. Isso significa que o conteúdo 3D pode parecer distorcido quando um efeito é aplicado a ele.
 
- 
+ 
 
 ## <a name="opacity"></a>Opacidade
 
@@ -76,7 +76,7 @@ Esta seção descreve o espaço de coordenadas que o DirectComposition usa para 
 > [!Note]  
 > No DirectComposition, a aplicação de efeitos 3D a vários níveis na árvore visual não funciona da mesma maneira que faz com um mecanismo 3D completo, como o Microsoft Direct3D. Por exemplo, considere um visual pai que tenha um único Visual filho. Se o Visual filho for girado para frente na direção z (ao lado do eixo y) em 90 graus, a borda do Visual Edge filho enfrentaria o visualizador e, portanto, esperamos que o Visual não fique visível (porque um bitmap não tem profundidade real). Se o visual pai for girado para trás na direção z negativa (ao lado do eixo y) por 90 graus, poderemos esperar que o Visual filho se torne totalmente visivelmente (uma vez que as transformações são negadas entre si). No entanto, em DirectComposition, esse não é o caso. O Visual filho não será visível porque foi "mesclado" no bitmap pai.
 
- 
+ 
 
 ### <a name="the-directcomposition-3d-coordinate-space"></a>O espaço de coordenadas 3D do DirectComposition
 
@@ -127,17 +127,17 @@ Cada um dos métodos anteriores recupera uma interface que você pode usar para 
 
 A maioria das propriedades de um objeto de efeito pode ser animada. Para animar uma determinada propriedade, crie um objeto de animação e aplique-o à propriedade que você deseja animar; caso contrário, defina a propriedade como um valor estático que produz o efeito desejado. Para obter mais informações sobre as propriedades de animação, consulte [animação](animation.md).
 
-Para aplicar um objeto de efeito ao Visual, chame o método [**IDCompositionVisual:: seteffect**](/windows/win32/api/dcomp/nf-dcomp-idcompositionvisual-seteffect) . Quando você aplica um efeito a um Visual, o efeito é aplicado a toda a subárvore visual com raiz nesse Visual. Portanto, por exemplo, se você definir a opacidade de um Visual como 50 por cento, a opacidade de todos os visuais filho na subárvore Visual será reduzida em 50%. Você pode aplicar o mesmo objeto de efeito a um ou mais visuais. Se você modificar as propriedades de um objeto de efeito depois de aplicá-lo a elementos visuais, todos os visuais serão recompostos para refletir a alteração.
+Para aplicar um objeto de efeito ao visual, chame o [**método IDCompositionVisual::SetEffect.**](/windows/win32/api/dcomp/nf-dcomp-idcompositionvisual-seteffect) Quando você aplica um efeito a um visual, o efeito é aplicado a toda a subárvore visual com raiz nesse visual. Portanto, por exemplo, se você definir a opacidade de um visual como 50%, a opacidade de todos os visuais filho na subárvore visual será reduzida em 50%. Você pode aplicar o mesmo objeto de efeito a um ou mais visuais. Se você modificar as propriedades de um objeto de efeito depois de aplicação dele aos visuais, todos os visuais serão re compostos para refletir a alteração.
 
-Usando um objeto de grupo de efeitos, você pode aplicar simultaneamente vários efeitos a um Visual. Primeiro, chame [**IDCompositionDevice:: createeffect**](/windows/win32/api/dcomp/nf-dcomp-idcompositiondevice-createeffectgroup) para criar o objeto de grupo de efeitos e, em seguida, Adicione efeitos ao grupo usando a interface [**IDCompositionEffectGroup**](/windows/win32/api/dcomp/nn-dcomp-idcompositioneffectgroup) do objeto.
+Usando um objeto de grupo de efeitos, você pode aplicar simultaneamente vários efeitos a um visual. Primeiro, chame [**IDCompositionDevice::CreateEffectGroup**](/windows/win32/api/dcomp/nf-dcomp-idcompositiondevice-createeffectgroup) para criar o objeto de grupo de efeitos e, em seguida, adicione efeitos ao grupo usando a interface [**IDCompositionEffectGroup**](/windows/win32/api/dcomp/nn-dcomp-idcompositioneffectgroup) do objeto.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[Conceitos de DirectComposition](directcomposition-concepts.md)
+[Conceitos do DirectComposition](directcomposition-concepts.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

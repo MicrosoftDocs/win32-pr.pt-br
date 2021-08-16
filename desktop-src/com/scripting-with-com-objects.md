@@ -4,12 +4,12 @@ description: Criando scripts com objetos COM
 ms.assetid: d99a561b-67dc-4fc9-adfa-cd7350eb16ba
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8f2b00380a14db2d254675a5826b61f262e8cfe8
-ms.sourcegitcommit: 8c981a2f4149b4a9d605ffb71fefda8d82bc696e
+ms.openlocfilehash: 7c40d94ddd0316d3a921d5d1ecd4591775700c967008ad801cdd8439a341dd9b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "103638290"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117918377"
 ---
 # <a name="scripting-with-com-objects"></a>Criando scripts com objetos COM
 
@@ -23,32 +23,32 @@ Há vários ambientes de host nos quais você pode gravar scripts que usam objet
 
 -   [Inserindo objetos COM em páginas da Web](embedding-com-objects-in-web-pages.md)
 -   [Usando objetos COM em páginas Active Server](using-com-objects-in-active-server-pages.md)
--   [Usando objetos COM no Windows Script Host](using-com-objects-in-windows-script-host.md)
+-   [usando objetos COM no Host de Script Windows](using-com-objects-in-windows-script-host.md)
 -   [Criando scripts de objetos COM em aplicativos personalizados](scripting-com-objects-in-custom-applications.md)
 
 Em cada um dos ambientes de host mencionados anteriormente, um mecanismo de script analisa e executa o script. Como o mecanismo de cada linguagem de script é um componente separado, você pode adicionar uma nova linguagem de script a um ambiente adicionando um novo mecanismo.
 
 As linguagens de script usadas com mais frequência são:
 
--   O Microsoft Visual Basic Scripting Edition (VBScript), um subconjunto de Visual Basic.
+-   o Microsoft Visual Basic scripting Edition (VBScript), um subconjunto de Visual Basic.
 -   JavaScript, a linguagem de script do Netscape, anteriormente conhecida como LiveScript.
--   Software de desenvolvimento Microsoft JScript, a implementação da Microsoft da especificação da linguagem ECMA 262.
+-   o software de desenvolvimento microsoft JScript, a implementação da microsoft da especificação da linguagem ECMA 262.
 
-A Microsoft fornece mecanismos de script para JScript e VBScript. Outras empresas de software fornecem mecanismos de script do ActiveX para linguagens como PerlScript, PScript, Python e outros.
+a Microsoft fornece mecanismos de script para JScript e VBScript. outras empresas de software fornecem ActiveX mecanismos de script para linguagens como PerlScript, PScript, Python e outros.
 
 Para obter mais informações, consulte a [especificação da linguagem ECMA 262](https://www.ecma-international.org/publications/standards/Ecma-262.htm).
 
-Observe que a maioria das linguagens de script, como VBScript e JScript, não pode acessar ou modificar arquivos. Essa incapacidade impede que o script altere os dados nos computadores cliente. No entanto, objetos COM não têm essas limitações. Depois que eles são baixados e instalados nos computadores cliente, eles podem executar qualquer ação padrão do aplicativo. Portanto, os usuários só devem baixar e executar controles ActiveX de fontes confiáveis.
+observe que a maioria das linguagens de script, como VBScript e JScript, não pode acessar ou modificar arquivos. Essa incapacidade impede que o script altere os dados nos computadores cliente. No entanto, objetos COM não têm essas limitações. Depois que eles são baixados e instalados nos computadores cliente, eles podem executar qualquer ação padrão do aplicativo. portanto, os usuários só devem baixar e executar ActiveX controles de fontes confiáveis.
 
 Para obter informações sobre a tradução entre linguagens de script, consulte os seguintes tópicos:
 
 -   [Convertendo para VBScript](translating-to-vbscript.md)
--   [Traduzindo para o JScript](translating-to-jscript.md)
+-   [Convertendo para JScript](translating-to-jscript.md)
 -   [Convertendo para JavaScript](translating-to-javascript.md)
 
- 
+ 
 
- 
+ 
 
 
 

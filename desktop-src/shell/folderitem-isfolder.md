@@ -1,7 +1,7 @@
 ---
 description: Indica se o item é uma pasta.
 ms.assetid: fb080c8f-04b1-4f9a-9219-0951a2e950ea
-title: Propriedade FolderItem. IsFolder (shldisp. h)
+title: Propriedade FolderItem.IsFolder (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 9bf0bd4eb9b7964620fe705d6e8f4d10644ca234
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d104d33e843d46cc63a0a960afa3d36b56ddbd28b5a563f8973ee957d82da87e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104967276"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118223980"
 ---
-# <a name="folderitemisfolder-property"></a>Propriedade FolderItem. IsFolder
+# <a name="folderitemisfolder-property"></a>Propriedade FolderItem.IsFolder
 
 Indica se o item é uma pasta.
 
@@ -37,13 +37,13 @@ bIsFolder = FolderItem.IsFolder
 
 ## <a name="property-value"></a>Valor da propriedade
 
-Um **booliano** que recebe **true** se o item for uma pasta ou **false** se não.
+Um **booliana** que receberá **true se** o item for uma pasta ou **false** se não for.
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo a seguir usa **IsFolder** para determinar se o diretório do Windows é uma pasta. O uso adequado é mostrado para JScript, VBScript e Visual Basic.
+O exemplo a seguir **usa IsFolder** para determinar se o Windows diretório é uma pasta. O uso adequado é mostrado para JScript, VBScript e Visual Basic.
 
-JScript
+JScript:
 
 
 ```JScript
@@ -73,7 +73,7 @@ JScript
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -148,11 +148,11 @@ End Sub
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 2000 Professional, \[ somente aplicativos da área de trabalho do Windows XP\]<br/>                                         |
+| Cliente mínimo com suporte<br/> | Windows 2000 Professional, Windows somente aplicativos da \[ área de trabalho XP\]<br/>                                         |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                           |
-| Cabeçalho<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                           |
-| INSERI<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                         |
-| DLL<br/>                      | <dl> <dt>Shell32.dll (versão 4,71 ou posterior)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
+| DLL<br/>                      | <dl> <dt>Shell32.dll (versão 4.71 ou posterior)</dt> </dl> |
 
 
 

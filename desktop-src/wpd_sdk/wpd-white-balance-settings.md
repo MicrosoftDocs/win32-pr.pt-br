@@ -1,7 +1,7 @@
 ---
-description: O \_ tipo de \_ Enumeração configurações de balanço de branco WPD \_ descreve como um dispositivo de vídeo ou imagem tem como peso os canais de cores para atingir um equilíbrio de branco adequado.
+description: O tipo de enumeração WPD WHITE BALANCE SETTINGS descreve como um dispositivo de vídeo ou imagem pondera os canais de cores para obter \_ um equilíbrio de branco \_ \_ adequado.
 ms.assetid: 7bc173dd-4fdd-4b03-994e-f0711c910618
-title: Enumeração de WPD_WHITE_BALANCE_SETTINGS (PortableDevice. h)
+title: WPD_WHITE_BALANCE_SETTINGS enumeração (PortableDevice.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - PortableDevice.h
-ms.openlocfilehash: 06e607acc06ed00cc9fe91670650caee44c30430
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 1b596dd6d8fbcc2b2a875b70d80e8eb4040c966590642a004c551ec159c9f5d0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105751712"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117842043"
 ---
-# <a name="wpd_white_balance_settings-enumeration"></a>\_Enumeração de \_ configurações de balanço de branco WPD \_
+# <a name="wpd_white_balance_settings-enumeration"></a>\_Enumeração WPD WHITE \_ \_ BALANCE SETTINGS
 
-O tipo de enumeração **\_ configurações de \_ balanço \_ de branco WPD** descreve como um dispositivo de vídeo ou imagem tem como peso os canais de cores para atingir um equilíbrio de branco adequado.
+O **tipo de enumeração WPD \_ WHITE BALANCE \_ \_ SETTINGS** descreve como um dispositivo de vídeo ou imagem pondera os canais de cores para obter um equilíbrio de branco adequado.
 
 ## <a name="syntax"></a>Syntax
 
@@ -45,58 +45,58 @@ typedef enum WPD_WHITE_BALANCE_SETTINGS {
 
 <dl> <dt>
 
-<span id="WPD_WHITE_BALANCE_UNDEFINED"></span><span id="wpd_white_balance_undefined"></span>**\_balanço de branco WPD \_ \_ indefinido**
+<span id="WPD_WHITE_BALANCE_UNDEFINED"></span><span id="wpd_white_balance_undefined"></span>**WPD \_ WHITE \_ BALANCE \_ UNDEFINED**
 </dt> <dd>
 
-Este valor não foi definido.
+Esse valor não foi definido.
 
 </dd> <dt>
 
-<span id="WPD_WHITE_BALANCE_MANUAL"></span><span id="wpd_white_balance_manual"></span>**\_manual de \_ saldo de branco WPD \_**
+<span id="WPD_WHITE_BALANCE_MANUAL"></span><span id="wpd_white_balance_manual"></span>**WPD \_ WHITE \_ BALANCE \_ MANUAL**
 </dt> <dd>
 
-O equilíbrio de branco é definido explicitamente usando a propriedade de [ \_ \_ \_ \_ lucro RGB da imagem ainda](still-image-properties.md) mais e não será alterado por si só.
+O saldo em branco é definido explicitamente usando a propriedade [WPD \_ STILL IMAGE \_ \_ RGB \_ GAIN](still-image-properties.md) e não será alterado por si só.
 
 </dd> <dt>
 
-<span id="WPD_WHITE_BALANCE_AUTOMATIC"></span><span id="wpd_white_balance_automatic"></span>**saldo de branco WPD- \_ \_ \_ automático**
+<span id="WPD_WHITE_BALANCE_AUTOMATIC"></span><span id="wpd_white_balance_automatic"></span>**WPD \_ WHITE \_ BALANCE \_ AUTOMATIC**
 </dt> <dd>
 
-O dispositivo definirá o equilíbrio de branco.
+O dispositivo definirá o saldo em branco.
 
 </dd> <dt>
 
-<span id="WPD_WHITE_BALANCE_ONE_PUSH_AUTOMATIC"></span><span id="wpd_white_balance_one_push_automatic"></span>**pressão branca de WPD de \_ \_ \_ um \_ Push \_ automático**
+<span id="WPD_WHITE_BALANCE_ONE_PUSH_AUTOMATIC"></span><span id="wpd_white_balance_one_push_automatic"></span>**WPD \_ WHITE \_ BALANCE \_ ONE \_ PUSH \_ AUTOMATIC**
 </dt> <dd>
 
-O dispositivo definirá o equilíbrio de branco, mas somente quando o usuário enviar por push o botão de captura do dispositivo enquanto mira o dispositivo em um campo branco.
+O dispositivo definirá o saldo em branco, mas somente quando o usuário efetuar push do botão de captura do dispositivo enquanto estiver pressionando o dispositivo em um campo branco.
 
 </dd> <dt>
 
-<span id="WPD_WHITE_BALANCE_DAYLIGHT"></span><span id="wpd_white_balance_daylight"></span>**\_horário de \_ Verão de saldo branco WPD \_**
+<span id="WPD_WHITE_BALANCE_DAYLIGHT"></span><span id="wpd_white_balance_daylight"></span>**WPD \_ WHITE \_ BALANCE \_ DAYLIGHT**
 </dt> <dd>
 
-O dispositivo usará números de saldo branco apropriados para uso na maioria das configurações de horário de verão.
+O dispositivo usará números de saldo em branco apropriados para uso na maioria das configurações de verão.
 
 </dd> <dt>
 
-<span id="WPD_WHITE_BALANCE_TUNGSTEN"></span><span id="wpd_white_balance_tungsten"></span>**\_Tungsten de \_ saldo de branco WPD \_**
+<span id="WPD_WHITE_BALANCE_TUNGSTEN"></span><span id="wpd_white_balance_tungsten"></span>**WPD \_ WHITE \_ BALANCE \_ LTDEN**
 </dt> <dd>
 
-O dispositivo usará números de saldo branco apropriados para uso na maioria das configurações de iluminação de incandescentes.
+O dispositivo usará números de saldo em branco apropriados para uso na maioria das configurações de iluminação interna e incandescente.
 
 </dd> <dt>
 
-<span id="WPD_WHITE_BALANCE_FLASH"></span><span id="wpd_white_balance_flash"></span>**\_flash de \_ proporção de branco WPD \_**
+<span id="WPD_WHITE_BALANCE_FLASH"></span><span id="wpd_white_balance_flash"></span>**WPD \_ WHITE \_ BALANCE \_ FLASH**
 </dt> <dd>
 
-O dispositivo usará números de balanço de branco apropriados para uso com um flash.
+O dispositivo usará números de saldo em branco apropriados para uso com um flash.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-Essa enumeração é usada pela propriedade [de \_ \_ balanço de \_ branco \_ de imagem ainda WPD](still-image-properties.md) .
+Essa enumeração é usada pela [propriedade WPD \_ STILL IMAGE \_ WHITE \_ \_ BALANCE.](still-image-properties.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -104,7 +104,7 @@ Essa enumeração é usada pela propriedade [de \_ \_ balanço de \_ branco \_ d
 
 | Requisito | Valor |
 |-------------------|---------------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>PortableDevice. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>PortableDevice.h</dt> </dl> |
 
 
 

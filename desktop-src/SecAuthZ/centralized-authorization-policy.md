@@ -4,18 +4,18 @@ ms.assetid: 5A06B8D8-F14B-4D9E-9ED6-4246A26BF945
 title: Política de autorização centralizada
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6e1e5798c477a69e80f325a35fd443df101a148c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8a07730bff997b545285b0d2845547a4d5deaffe78324e354e7eecbf879b763f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103922981"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117783180"
 ---
 # <a name="centralized-authorization-policy"></a>Política de autorização centralizada
 
 O [cenário de DAC (controle de acesso dinâmico)](/previous-versions/windows/desktop/dacx/dynamic-access-control-developer-extensibility-roadmap) habilita a administração de controle de acesso centralizado para cenários de servidor de arquivos corporativo. A maioria das organizações tem várias áreas nas quais desejam controlar o acesso.
 
-São exemplos:
+Os exemplos são:
 
 -   Controlando o acesso a informações confidenciais, em que os arquivos marcados como confidenciais teriam permissões específicas
 -   Controlando o acesso a arquivos que contêm informações de identificação pessoal (PII)

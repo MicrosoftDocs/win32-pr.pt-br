@@ -1,7 +1,7 @@
 ---
-description: 'Método CBaseOutputPin. EndOfStream – o método EndOfStream notifica o PIN de que nenhum dado adicional é esperado. Esse método implementa o método IPin:: EndOfStream.'
+description: Método CBaseOutputPin.EndOfStream – o método EndOfStream notifica o pino de que nenhum dado adicional é esperado. Esse método implementa o método IPin::EndOfStream.
 ms.assetid: 5c3b5f90-4194-4d65-9f1a-55edf327e3b3
-title: Método CBaseOutputPin. EndOfStream (Amfilter. h)
+title: Método CBaseOutputPin.EndOfStream (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: c5f293b8026456618ad1196c491bce58cf481f07
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 93ba617ddb061a928236e9bbf7d7a411812809092efa8a71f5890ddeecb88328
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108096144"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117823595"
 ---
-# <a name="cbaseoutputpinendofstream-method"></a>Método CBaseOutputPin. EndOfStream
+# <a name="cbaseoutputpinendofstream-method"></a>Método CBaseOutputPin.EndOfStream
 
-O `EndOfStream` método notifica o PIN de que nenhum dado adicional é esperado. Esse método implementa o método [**IPin:: EndOfStream**](/windows/desktop/api/Strmif/nf-strmif-ipin-endofstream) .
+O `EndOfStream` método notifica o pino de que nenhum dado adicional é esperado. Esse método implementa o [**método IPin::EndOfStream.**](/windows/desktop/api/Strmif/nf-strmif-ipin-endofstream)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,11 +42,11 @@ Esse método não tem parâmetros.
 
 ## <a name="return-value"></a>Valor retornado
 
-Retorna E \_ inesperado.
+Retorna E \_ UNEXPECTED.
 
 ## <a name="remarks"></a>Comentários
 
-Esse método só deve ser chamado em Pins de entrada, portanto a implementação de **CBaseOutputPin** retorna E \_ inesperada.
+Esse método só deve ser chamado em pinos de entrada, portanto, a implementação **de CBaseOutputPin** retorna E \_ UNEXPECTED.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,12 +54,12 @@ Esse método só deve ser chamado em Pins de entrada, portanto a implementação
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Amfilter. h (incluir fluxos. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Amfilter.h (incluir Fluxos.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

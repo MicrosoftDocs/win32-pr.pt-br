@@ -7,30 +7,30 @@ keywords:
 - Mensagens comunicadas por meio de interfaces do usuário
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3ab0d01717129db284f05b2361b2a067d611a33e
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 0b20b2706ae9f03109064c459ce494fb38da3f4579ca8f5b03ade970fcb0391f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104004912"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118186568"
 ---
 # <a name="messages-communicated-through-user-interfaces"></a>Mensagens comunicadas por meio de interfaces do usuário
 
 Este tópico lista as mensagens que um serviço de diretório pode enviar de uma interface do usuário.
 
-## <a name="common-query-page-messages"></a>Mensagens comuns da página de consulta
+## <a name="common-query-page-messages"></a>Mensagens de página de consulta comuns
 
-As seguintes mensagens são enviadas para uma página de extensão do formulário de consulta do serviço de diretório na função de retorno de chamada [**CQPageProc**](/windows/desktop/api/Cmnquery/nc-cmnquery-lpcqpageproc) :
+As seguintes mensagens são enviadas para uma página de extensão de formulário de consulta de serviço de diretório na função de retorno de chamada [**CQPageProc:**](/windows/desktop/api/Cmnquery/nc-cmnquery-lpcqpageproc)
 
 -   [**CQPM \_ CLEARFORM**](cqpm-clearform.md)
--   [**CQPM \_ habilitar**](cqpm-enable.md)
--   [**\_Parameters CQPM**](cqpm-getparameters.md)
--   [**CQPM \_ HANDLERSPECIFIC**](cqpm-handlerspecific.md)
--   [**ajuda do CQPM \_**](cqpm-help.md)
--   [**CQPM \_ inicializar**](cqpm-initialize.md)
--   [**CQPM \_ persistir**](cqpm-persist.md)
--   [**\_versão CQPM**](cqpm-release.md)
--   [**CQPM \_ SETpadrãoparameters**](cqpm-setdefaultparameters.md)
+-   [**CQPM \_ ENABLE**](cqpm-enable.md)
+-   [**GETPARAMETERS DO CQPM \_**](cqpm-getparameters.md)
+-   [**MANIPULADOR \_ CQPMSPECIFIC**](cqpm-handlerspecific.md)
+-   [**AJUDA DO \_ CQPM**](cqpm-help.md)
+-   [**INICIALIZAÇÃO DO \_ CQPM**](cqpm-initialize.md)
+-   [**CQPM \_ PERSIST**](cqpm-persist.md)
+-   [**VERSÃO DO \_ CQPM**](cqpm-release.md)
+-   [**CQPM \_ SETDEFAULTPARAMETERS**](cqpm-setdefaultparameters.md)
 
 ## <a name="miscellaneous-messages"></a>Mensagens diversas
 
@@ -40,17 +40,17 @@ A tabela a seguir lista as mensagens que um serviço de diretório pode enviar.
 
 | Mensagem                  | Valor                     | Descrição                                                                                                                                                                                                                                   |
 |--------------------------|---------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| DSPROP \_ ATTRCHANGED \_ msg | "DsPropAttrChanged"       | Uma mensagem enviada para sincronizar páginas de propriedades e as ferramentas de administração do serviço de diretório, declarada em DSClient. h.                                                                                                                       |
-| DSQPM \_ GETclasslist      | CQPM \_ HANDLERSPECIFIC + 0   | Uma mensagem de página enviada para as páginas de formulário para recuperar uma lista de classes para consulta, usada pelo seletor de campo e Propriedade bem para criar sua lista de classes de exibição. wParam = flags e lParam = LPLPDSQUERYCLASSLIST, declarados em DSQuery. h. |
-| DSQPM \_ HELPTOPICS        | (CQPM \_ HANDLERSPECIFIC + 1) | Uma mensagem de página enviada para as páginas de formulário para manipular a solicitação "tópicos da ajuda". wParam = 0, lParam = hWndParent, declarado em DSQuery. h.                                                                                                         |
+| DSPROP \_ ATTRCHANGED \_ MSG | "DsPropAttrChanged"       | Uma mensagem enviada para sincronizar páginas de propriedades e as ferramentas de administração de serviço de diretório, declaradas em Dsclient.h.                                                                                                                       |
+| GETCLASSLIST do DSQPM \_      | MANIPULADOR \_ CQPMSPECIFIC+0   | Uma mensagem de página enviada às páginas de formulário para recuperar uma lista de classes para consulta, usada pelo seletor de campo e pela propriedade well para criar sua lista de classes de exibição. wParam = flags e lParam = LPLPDSQUERYCLASSLIST, declarado em Dsquery.h. |
+| DSQPM \_ HELPTOPICS        | (CQPM \_ HANDLERSPECIFIC+1) | Uma mensagem de página enviada para as páginas de formulário para lidar com a solicitação "Tópicos da Ajuda". wParam = 0, lParam = hWndParent, declarado em Dsquery.h.                                                                                                         |
 
 
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

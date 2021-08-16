@@ -1,23 +1,23 @@
 ---
-description: A política de metadados de foto para a propriedade System. Photo. PhotometricInterpretation.
+description: A política de metadados de foto para a propriedade System.Photo.PhotometricInterpretation.
 ms.assetid: ff36b2c3-8763-4640-a049-b5880fd26929
-title: Política de metadados de foto System. Photo. PhotometricInterpretation
+title: Política de metadados de foto System.Photo.PhotometricInterpretation
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 35b371ce9257d526f941f3fdb33949e8788a7112
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a5479c747e2a1cc60a1867a7dc5906e5c4710abf9da33b5328980e0188403ecd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105758492"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118204680"
 ---
-# <a name="systemphotophotometricinterpretation-photo-metadata-policy"></a>Política de metadados de foto System. Photo. PhotometricInterpretation
+# <a name="systemphotophotometricinterpretation-photo-metadata-policy"></a>Política de metadados de foto System.Photo.PhotometricInterpretation
 
-A política de metadados de foto para a propriedade [System. Photo. PhotometricInterpretation](../properties/props-system-photo-photometricinterpretation.md) .
+A política de metadados de foto para a [propriedade System.Photo.PhotometricInterpretation.](../properties/props-system-photo-photometricinterpretation.md)
 
-### <a name="pkey"></a>PKEY
+### <a name="pkey"></a>Pkey
 
-PKEY \_ Photo \_ PhotometricInterpretation
+Foto de PKEY \_ \_ PhotometricInterpretation
 
 ### <a name="containers"></a>Contêineres
 
@@ -25,29 +25,29 @@ JPEG, TIFF
 
 ### <a name="read-only"></a>Somente leitura
 
-Yes
+Sim
 
-### <a name="output-propvariant-type"></a>Tipo de PROPVARIANT de saída
+### <a name="output-propvariant-type"></a>Tipo PROPVARIANT de saída
 
-\_UI2 VT
+VT \_ UI2
 
 ### <a name="input-type"></a>Tipo de entrada
 
 UShort
 
-### <a name="conflict-resolution-policy"></a>Política de resolução de conflito
+### <a name="conflict-resolution-policy"></a>Política de resolução de conflitos
 
-Os valores de esquemas diferentes são reconciliados.
+Valores de esquemas diferentes são reconciliados.
 
 ### <a name="jpeg-policy"></a>Política JPEG
 
-### <a name="read-paths"></a>Caminhos de leitura
+### <a name="read-paths"></a>Ler caminhos
 
 
 
 | Ordem | Caminho                                | Formato de disco |
 |-------|-------------------------------------|-------------|
-| 1     | /App1/IFD/{UShort = 262}              | ushort      |
+| 1     | /app1/ifd/{ushort=262}              | ushort      |
 | 2     | /xmp/tiff:PhotometricInterpretation | Unicode     |
 
 
@@ -60,7 +60,7 @@ Os valores de esquemas diferentes são reconciliados.
 
 | Ordem | Caminho                                | Formato de disco |
 |-------|-------------------------------------|-------------|
-| 1     | /App1/IFD/{UShort = 262}              | ushort      |
+| 1     | /app1/ifd/{ushort=262}              | ushort      |
 | 2     | /xmp/tiff:PhotometricInterpretation | Unicode     |
 
 
@@ -73,7 +73,7 @@ Os valores de esquemas diferentes são reconciliados.
 
 | Ordem | Caminho                                |
 |-------|-------------------------------------|
-| 1     | /App1/IFD/{UShort = 262}              |
+| 1     | /app1/ifd/{ushort=262}              |
 | 2     | /xmp/tiff:photometricinterpretation |
 
 
@@ -82,13 +82,13 @@ Os valores de esquemas diferentes são reconciliados.
 
 ### <a name="tiff-policies"></a>Políticas TIFF
 
-### <a name="read-paths"></a>Caminhos de leitura
+### <a name="read-paths"></a>Ler caminhos
 
 
 
 | Ordem | Caminho                                    | Formato de disco |
 |-------|-----------------------------------------|-------------|
-| 1     | /IFD/{UShort = 262}                       | ushort      |
+| 1     | /ifd/{ushort=262}                       | ushort      |
 | 2     | /ifd/xmp/tiff:PhotometricInterpretation | Unicode     |
 
 
@@ -101,7 +101,7 @@ Os valores de esquemas diferentes são reconciliados.
 
 | Ordem | Caminho                                    | Formato de disco |
 |-------|-----------------------------------------|-------------|
-| 1     | /IFD/{UShort = 262}                       | ushort      |
+| 1     | /ifd/{ushort=262}                       | ushort      |
 | 2     | /ifd/xmp/tiff:PhotometricInterpretation | Unicode     |
 
 
@@ -114,7 +114,7 @@ Os valores de esquemas diferentes são reconciliados.
 
 | Ordem | Caminho                                    |
 |-------|-----------------------------------------|
-| 1     | /IFD/{UShort = 262}                       |
+| 1     | /ifd/{ushort=262}                       |
 | 2     | /ifd/xmp/tiff:photometricinterpretation |
 
 
@@ -127,7 +127,7 @@ Os valores de esquemas diferentes são reconciliados.
 
 <dl> <dt>
 
-[System. Photo. PhotometricInterpretation](../properties/props-system-photo-photometricinterpretation.md)
+[System.Photo.PhotometricInterpretation](../properties/props-system-photo-photometricinterpretation.md)
 </dt> </dl>
 
  

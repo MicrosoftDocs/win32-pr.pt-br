@@ -1,20 +1,20 @@
 ---
-title: Visão geral dos controles de Tree-View
-description: Visão geral dos controles de Tree-View
+title: Tree-View visão geral dos controles
+description: Tree-View visão geral dos controles
 ms.assetid: da126acb-d75b-4857-a11b-749ab17e7e4a
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 27bec0c445d8865b69e0ab805440fdb194553f3b
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: c2e314ec31dbe9404b02c9e7fa14a723f1050869dfb4e57e12836f7f48075447
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104012060"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117832827"
 ---
-# <a name="tree-view-controls-overview"></a>Visão geral dos controles de Tree-View
+# <a name="tree-view-controls-overview"></a>Tree-View visão geral dos controles
 
--   [Sobre controles de Tree-View](tree-view-controls.md)
--   [Usando controles de Tree-View](using-treeview.md)
+-   [Sobre Tree-View controles](tree-view-controls.md)
+-   [Usando Tree-View controles](using-treeview.md)
 
  
 

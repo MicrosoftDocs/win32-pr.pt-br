@@ -4,12 +4,12 @@ ms.assetid: 8afc95d1-25cd-4448-8bee-d132c2da22b3
 title: Predicado FREETEXT
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fc78be4d5ac75f892c82c6dad390e4583876856f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 91f9fb3d65c1b9dc72ef74c8c6862ccfb778ebbd4149b9e5bf5aca4d36674045
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103646871"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117863402"
 ---
 # <a name="freetext-predicate"></a>Predicado FREETEXT
 
@@ -27,7 +27,7 @@ FREETEXT
 
 A referência de coluna de texto completo é opcional. Com ele, você pode especificar uma única coluna ou um [alias de agrupamento de colunas](-search-sql-with-as.md) em relação ao qual o predicado FREETEXT é testado. Quando a coluna FULLTEXT é especificada como "ALL" ou " \* ", todas as propriedades de texto indexado são pesquisadas. Embora a coluna não precise ser uma propriedade de texto, os resultados poderão ser insignificantes se a coluna for outro tipo de dados. O nome da coluna pode ser um [identificador](-search-sql-identifiers.md)regular ou delimitado, e você deve separá-lo da condição por uma vírgula. Se nenhuma condição de texto completo for fornecida, a coluna conteúdo, que é o corpo do documento, será usada.
 
-Você pode especificar uma localidade de pesquisa para identificar o separador de palavras apropriado e formulários de inflexão para a consulta de pesquisa. Os valores de localidade válidos são um LCID (identificador de código de idioma padrão) do Windows. Por exemplo, 1033 é o LCID para o Estados Unidos-Inglês. Coloque o LCID como o último item dentro dos parênteses da cláusula FREETEXT. Para obter informações importantes sobre a pesquisa e os idiomas, consulte [usando pesquisas localizadas](-search-sql-usinglocsearches.md).
+Você pode especificar uma localidade de pesquisa para identificar o separador de palavras apropriado e formulários de inflexão para a consulta de pesquisa. os valores de localidade válidos são um Windows identificador de código de idioma padrão (LCID). Por exemplo, 1033 é o LCID para o Estados Unidos-Inglês. Coloque o LCID como o último item dentro dos parênteses da cláusula FREETEXT. Para obter informações importantes sobre a pesquisa e os idiomas, consulte [usando pesquisas localizadas](-search-sql-usinglocsearches.md).
 
 > [!Note]  
 > A localidade de pesquisa padrão é a localidade padrão do sistema.

@@ -3,9 +3,9 @@ title: Método playlistcollection. newPlaylist
 description: O método newPlaylist cria uma nova lista de reprodução na biblioteca.
 ms.assetid: 428b5779-4dc0-466b-9834-6b2c43324013
 keywords:
-- método newPlaylist Windows Media Player
-- método newPlaylist Windows Media Player, classe Playlistcollection
-- Classe playlistcollection Windows Media Player, método newPlaylist
+- Windows Media Player do método newPlaylist
+- método newPlaylist Windows Media Player, classe playlistcollection
+- classe playlistcollection Windows Media Player, método newPlaylist
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d94c25a8dfe6f1eb7c4dac40dd644433a5f0d7e6
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: af40d4de424997cb943711d84bf62805f2036afeb551c5d397ce82ae0975e812
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105813673"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118334585"
 ---
 # <a name="playlistcollectionnewplaylist-method"></a>Método playlistcollection. newPlaylist
 
@@ -49,7 +49,7 @@ retVal = PlaylistCollection.newPlaylist(
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método retorna um objeto **playlist** .
 
@@ -65,7 +65,7 @@ Para usar esse método, é necessário ter acesso completo à biblioteca. Para o
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo de JScript a seguir cria uma nova lista de reprodução vazia chamada "Trêslist". O objeto de **jogador** foi criado com ID = "Player".
+o exemplo a seguir JScript cria uma nova lista de reprodução vazia chamada "trêslist". O objeto de **jogador** foi criado com ID = "Player".
 
 
 ```JScript
@@ -115,10 +115,10 @@ var NewList = Player.playlistCollection.newPlaylist("ThreeList");
 [**Playlistcollection. Remove**](playlistcollection-remove.md)
 </dt> <dt>
 
-[**Settings. mediaAccessRights**](settings-mediaaccessrights.md)
+[**Configurações. mediaAccessRights**](settings-mediaaccessrights.md)
 </dt> <dt>
 
-[**Settings. requestMediaAccessRights**](settings-requestmediaaccessrights.md)
+[**Configurações. requestMediaAccessRights**](settings-requestmediaaccessrights.md)
 </dt> </dl>
 
  

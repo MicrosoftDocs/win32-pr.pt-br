@@ -1,9 +1,9 @@
 ---
-title: WM/texto
-description: O atributo WM/Text contém texto de usuário arbitrário.
+title: WM/Text
+description: O atributo WM/Text contém texto arbitrário do usuário.
 ms.assetid: 892e7f02-6a21-49f2-a9cf-6ac52994a577
 keywords:
-- Formato de mídia do WM/Text Windows
+- Formato de mídia de janelas WM/Texto
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ffef467cc1cd6138d79798a252c17e9869b600d3
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 279afaf4b8cbe0c4706d780019633cc0a924377d3618296b14d4249a08eadb09
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "103823205"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117844180"
 ---
-# <a name="wmtext"></a>WM/texto
+# <a name="wmtext"></a>WM/Text
 
-O atributo **WM/Text** contém texto de usuário arbitrário.
+O **atributo WM/Text** contém texto arbitrário do usuário.
 
 ## <a name="global-constant"></a>Constante global
 
@@ -29,7 +29,7 @@ g \_ wszWMText
 
 ## <a name="data-type"></a>Tipo de Dados
 
-[**WM \_ \_texto do usuário**](/previous-versions/windows/desktop/api/wmsdkidl/ns-wmsdkidl-wm_user_text) (**\_ tipo WMT \_ Binary**)
+[**WM \_ TEXTO \_ DO USUÁRIO**](/previous-versions/windows/desktop/api/wmsdkidl/ns-wmsdkidl-wm_user_text) ( TIPO **WMT \_ \_ BINARY**)
 
 ## <a name="see-also"></a>Confira também
 
@@ -38,9 +38,9 @@ g \_ wszWMText
 [**Lista de Atributos**](attribute-list.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

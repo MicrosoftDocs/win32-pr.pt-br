@@ -4,12 +4,12 @@ ms.assetid: 2bfb0cbf-73a3-4e83-a4e9-f0803bd3dee8
 title: Constantes rerecognitionproperty (Msinkaut. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 62971276b6348af3d8ac971851d70b03f7b003c3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cd18aeae50e0ae08337dd89a494292a7accbb389e6d02f0b990035fbf9644879
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104297376"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117856417"
 ---
 # <a name="recognitionproperty-constants"></a>Constantes rerecognitionproperty
 
@@ -76,7 +76,7 @@ Não implementado.
 <td style="text-align: left;">O GUID que identifica a propriedade para o nível de confiança que o reconhecedor tem no resultado do reconhecimento.<br/>
 <blockquote>
 [!Note]<br />
-A avaliação de confiança está disponível apenas para o Estados Unidos Inglês e todos os reconhecedores de gestos no Microsoft Windows XP Tablet PC Edition e no Windows Vista. Métodos que fornecem a propriedade de confiança para qualquer outro reconhecedor retornam E_NOTIMPL.
+a avaliação de confiança está disponível apenas para o Estados Unidos inglês e todos os reconhecedores de gestos no Microsoft Windows XP Tablet PC Edition e no Windows Vista. Métodos que fornecem a propriedade de confiança para qualquer outro reconhecedor retornam E_NOTIMPL.
 </blockquote>
 <br/></td>
 </tr>
@@ -91,7 +91,7 @@ A avaliação de confiança está disponível apenas para o Estados Unidos Ingl�
 
 ## <a name="remarks"></a>Comentários
 
-Em C++, você pode acessar essas constantes no arquivo de cabeçalho Msinkaut. h, que está localizado no <systemdrive> diretório: \\ arquivos de programas \\ Microsoft SDKs \\ Windows \\ v 6.0 \\ include se você instalou o SDK no local padrão.
+em C++, você pode acessar essas constantes no arquivo de cabeçalho Msinkaut. h, que está localizado no <systemdrive> diretório: \\ arquivos de programas \\ Microsoft SDKs \\ Windows \\ v 6.0 \\ Include se você instalou o SDK no local padrão.
 
 > [!Note]  
 > Em C++, essas constantes são WCHARs, não BSTRs. Converta-os em BSTRs antes de usar. Para obter mais informações sobre o tipo de dados BSTR, consulte [usando a biblioteca com](using-the-com-library.md).
@@ -104,9 +104,9 @@ Em C++, você pode acessar essas constantes no arquivo de cabeçalho Msinkaut. h
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Somente aplicativos de área de trabalho do Windows XP Tablet PC Edition \[\]<br/>                                                       |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do XP Tablet PC Edition\]<br/>                                                       |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                                           |
-| parâmetro<br/>                   | <dl> <dt>Msinkaut. h (também requer Msinkaut \_ i. c)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Msinkaut. h (também requer Msinkaut \_ i. c)</dt> </dl> |
 
 
 

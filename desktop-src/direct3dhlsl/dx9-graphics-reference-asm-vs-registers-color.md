@@ -9,18 +9,18 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 38ee29ebafd9e7374fa868c6d84ad45f6c07dedf
-ms.sourcegitcommit: 3f366316c02c411c4c5e14620a699f6f30608634
+ms.openlocfilehash: b19850985002ad9c36a6a6366f744106cb041db858f9df9b755996e114fdf6c3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "104297823"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118512282"
 ---
 # <a name="color-register"></a>Registro de cores
 
 Esses registros de saída do sombreador de vértice contêm um valor de cor. 
 
-| Registre-se | Description              |
+| Registre-se | Descrição              |
 |----------|--------------------------|
 | oD0      | registro de cores difusas.  |
 | oD1      | registro de cor especular. |

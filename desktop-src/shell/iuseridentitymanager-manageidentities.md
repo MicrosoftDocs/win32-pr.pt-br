@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Msident.dll
-ms.openlocfilehash: b5b782a56324faf19dd1527d2cd363d26f0e337c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a816ee16e128b992b18be274d814fe3369e1a59c0204201a9c6bd4a6cbc23857
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104296136"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117859234"
 ---
 # <a name="iuseridentitymanagermanageidentities-method"></a>Método IUserIdentityManager:: ManageIdentities
 
@@ -45,7 +45,7 @@ HRESULT ManageIdentities(
 *hwndParent* \[ no\]
 </dt> <dd>
 
-Tipo: **HWND**
+Digite: **HWND**
 
 Um valor de **HWND** que identifica uma janela que será colocada em primeiro plano depois que a interface do usuário for ignorada.
 
@@ -60,7 +60,7 @@ Sinalizadores opcionais para definir como o comportamento da interface do usuár
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **HRESULT**
 
@@ -68,7 +68,7 @@ O resultado da operação de gerenciamento. Se for bem-sucedido, retornará S \_
 
 
 
-| Código de retorno                                                                                            | Description                                               |
+| Código de retorno                                                                                            | Descrição                                               |
 |--------------------------------------------------------------------------------------------------------|-----------------------------------------------------------|
 | <dl> <dt>**\_identidades E \_ desabilitadas**</dt> </dl> | O gerenciamento de identidades está desabilitado no sistema.<br/> |
 | <dl> <dt>**E \_ usuário \_ cancelados**</dt> </dl>      | O usuário cancelou a caixa de diálogo.<br/>                  |
@@ -87,7 +87,7 @@ O resultado da operação de gerenciamento. Se for bem-sucedido, retornará S \_
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                   |
 | Fim do suporte do cliente<br/>    | Windows 2000 Professional<br/>                                                   |
 | Fim do suporte do servidor<br/>    | Windows 2000 Server<br/>                                                         |
-| parâmetro<br/>                   | <dl> <dt>Msident. h</dt> </dl>   |
+| Cabeçalho<br/>                   | <dl> <dt>Msident. h</dt> </dl>   |
 | INSERI<br/>                      | <dl> <dt>Msident. idl</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Msident.dll</dt> </dl> |
 

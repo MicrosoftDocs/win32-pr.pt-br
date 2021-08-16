@@ -14,12 +14,12 @@ api_type:
 api_location:
 - Ndisnpp.dll
 - Rmtnpp.dll
-ms.openlocfilehash: 53efbe7eb2887165dacc4cb904822de953b84017
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5ae0fba6885db46d987e59517cdc30dab484974869c67c85a257044e5eec58b7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105780858"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118365665"
 ---
 # <a name="iespconfigure-method"></a>Método IESP:: Configure
 
@@ -55,7 +55,7 @@ Identificador para um BLOB de erro que contém informações adicionais sobre o 
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se o método for bem-sucedido, o valor de retorno será NMERR com \_ êxito.
 
@@ -66,7 +66,7 @@ Se o método não for bem-sucedido, o valor de retorno será um dos seguintes c�
 | Código de retorno                                                                                                         | Descrição                                                                                                                                                                                                       |
 |---------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <dl> <dt>**NMERR \_ não \_ conectado**</dt> </dl>                | O NPP não está conectado à rede.<br/>                                                                                                                                                               |
-| <dl> <dt>**NMERR \_ não \_ ESP**</dt> </dl>                      | O NPP está conectado à rede, mas não com o método [IESP:: Connect](iesp-connect.md) .<br/>                                                                                                         |
+| <dl> <dt>**NMERR \_ não \_ ESP**</dt> </dl>                      | o NPP está conectado à rede, mas não com o método [IESP:: Conexão](iesp-connect.md) .<br/>                                                                                                         |
 | <dl> <dt>**captura de NMERR \_**</dt> </dl>                     | O NPP relata que a sessão de captura foi iniciada.<br/>                                                                                                                                                  |
 | <dl> <dt>**NMERR \_ \_ gatilho ilegal**</dt> </dl>              | A parte do gatilho do BLOB de configuração está corrompida.<br/>                                                                                                                                              |
 | <dl> <dt>**a \_ entrada de blob NMERR não \_ \_ \_ \_ existe**</dt> </dl> | O BLOB de configuração especificado por *hConfigurationBlob* não tem uma entrada necessária para executar esta operação. Examine o BLOB de erro retornado por *hErrorBlob* para determinar qual entrada não foi encontrada.<br/> |

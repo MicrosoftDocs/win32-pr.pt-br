@@ -1,21 +1,21 @@
 ---
-title: Cache de resultados com IDirectorySearch
+title: Caching de resultado com IDirectorySearch
 description: A \_ preferência de resultados do cache SEARCHPREF do ADS armazena em \_ \_ cache o conjunto de resultados no cliente.
 ms.assetid: bb286879-7d84-4085-88e1-600c848b8af8
 ms.tgt_platform: multiple
 keywords:
-- Cache de resultados com ADSI IDirectorySearch
-- ADSI, pesquisa, IDirectorySearch, outras opções de pesquisa, cache de resultados
+- Caching de resultado com ADSI IDirectorySearch
+- ADSI, pesquisa, IDirectorySearch, outras opções de pesquisa, Caching de resultados
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 95016699eb4de36344b7e40f35e1a4a9cce761b8
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 4febc2f02e03759861978e062ee972d8e90df27b996c8161d6163e764fefe9a4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104291782"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117838852"
 ---
-# <a name="result-caching-with-idirectorysearch"></a>Cache de resultados com IDirectorySearch
+# <a name="result-caching-with-idirectorysearch"></a>Caching de resultado com IDirectorySearch
 
 A preferência de **\_ \_ \_ resultados do cache SEARCHPREF do ADS** armazena em cache o conjunto de resultados no cliente. O cache de resultados permite que um aplicativo retenha um conjunto de resultados recuperado e percorra as linhas recuperadas novamente. Ele também habilita o suporte a cursor em que os métodos [**IDirectorySearch:: GetNextRow**](/windows/desktop/api/Iads/nf-iads-idirectorysearch-getnextrow) e [**IDirectorySearch:: GetPreviousRow**](/windows/desktop/api/Iads/nf-iads-idirectorysearch-getpreviousrow) podem ser usados para mover para cima e para baixo o conjunto de resultados.
 
@@ -43,9 +43,9 @@ SearchPref.vValue.Boolean = TRUE;
 
 
 
- 
+ 
 
- 
+ 
 
 
 

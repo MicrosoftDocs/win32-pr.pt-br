@@ -3,9 +3,9 @@ title: Propriedade IWMPClosedCaption SAMIFileName
 description: A propriedade SAMIFileName Obtém ou define o nome de um arquivo que contém as informações necessárias para Legendagem oculta.
 ms.assetid: c3162c5f-9d66-41d4-920c-ed9840742d9d
 keywords:
-- Propriedade SAMIFileName Windows Media Player
-- Propriedade SAMIFileName Windows Media Player, interface IWMPClosedCaption
-- Interface IWMPClosedCaption Windows Media Player, Propriedade SAMIFileName
+- Windows Media Player da propriedade SAMIFileName
+- propriedade SAMIFileName Windows Media Player, interface IWMPClosedCaption
+- Windows Media Player de interface IWMPClosedCaption, propriedade SAMIFileName
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d251f2bbf0c8839ab9a0005c69e1869c47af16ef
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 973b0757eca4251e74180d829205ee6c7080ca821db2eeada3abc825bb4b5073
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105752553"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117930319"
 ---
 # <a name="iwmpclosedcaptionsamifilename-property"></a>Propriedade IWMPClosedCaption:: SAMIFileName
 
@@ -56,7 +56,7 @@ Se você não definir um valor usando **SAMIFileName**, essa propriedade obterá
 
 Depois de definir um valor usando **SAMIFileName**, esse valor persiste até que você defina um novo valor (ou até que um novo item de mídia seja aberto usando o parâmetro de URL Sami). Portanto, você deve definir um novo valor para essa propriedade antes de reproduzir cada novo item de mídia. Dessa forma, o novo valor de **SAMIFileName** entrará em vigor quando o próximo item de mídia for aberto (ou quando **AxWindowsMediaPlayer. Close** for chamado). A especificação de um novo valor para **SAMIFileName** não tem nenhum efeito para a mídia atual.
 
-Para fazer com que o Windows Media Player use o arquivo SAMI padrão associado a um item de mídia específico, defina **SAMIFileName** como uma cadeia de caracteres de comprimento zero ("") antes de reproduzir o próximo item de mídia.
+para fazer com que Windows Media Player use o arquivo SAMI padrão associado a um item de mídia específico, defina **SAMIFileName** como uma cadeia de caracteres de comprimento zero ("") antes de reproduzir o próximo item de mídia.
 
 ## <a name="requirements"></a>Requisitos
 

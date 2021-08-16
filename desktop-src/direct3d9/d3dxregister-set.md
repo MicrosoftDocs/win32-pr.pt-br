@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9shader.h
-ms.openlocfilehash: 683b13d0b386fcdbc162293455e2beb11bc1ee85
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 5721009cac2632d1bac487615e765e9e3f9ad3ccdf50369ae3cc11630a915454
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105814093"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118524571"
 ---
 # <a name="d3dxregister_set-enumeration"></a>Enumeração de conjunto de D3DXREGISTER \_
 

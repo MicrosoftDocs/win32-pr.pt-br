@@ -1,23 +1,23 @@
 ---
-title: IPaper carga
-description: O código de exemplo C++ a seguir mostra como abrir o fluxo existente no armazenamento, ler novas propriedades de papel no e defini-las como os valores atuais para o copapel.
+title: Carga de IPaper
+description: O código de exemplo C++ a seguir mostra como abrir o fluxo existente no armazenamento, ler novas propriedades de papel no e defini-las como os valores atuais para COPaper.
 ms.assetid: a1559d97-387f-4d1a-8a9d-fa5c27abd545
 keywords:
-- IPaper carga
+- Carga de IPaper
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 16b5f16b8fe649d08226b2cff5a4b1a5234bddb6
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 0b592573f016018d359b5e3e35911d92371892b98ebea70338844b7f8ef4b1f2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103916508"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117961376"
 ---
-# <a name="ipaperload"></a>IPaper:: Load
+# <a name="ipaperload"></a>IPaper::Load
 
-O código de exemplo C++ a seguir mostra como abrir o fluxo existente no armazenamento, ler novas propriedades de papel no e defini-las como os valores atuais para o copapel.
+O código de exemplo C++ a seguir mostra como abrir o fluxo existente no armazenamento, ler novas propriedades de papel no e defini-las como os valores atuais para COPaper.
 
-Este é o método **IPaper:: Load** do paper. cpp.
+Veja a seguir o **método IPaper::Load** de Paper.cpp.
 
 
 ```
@@ -126,19 +126,19 @@ STDMETHODIMP COPaper::CImpIPaper::Load(
 
 
 
-Agora, o método [**IStorage:: OpenStream**](/windows/desktop/api/Objidl/nf-objidl-istorage-openstream) é chamado para abrir o fluxo existente no armazenamento chamado "PAPERDATA". Os sinalizadores de modo de acesso são para acesso exclusivo de somente leitura, direto e não compartilhado. Quando o fluxo é aberto, o método [**IStream:: Read**](/windows/desktop/api/Objidl/nn-objidl-istream) é chamado para ler a estrutura de propriedades do papel \_ . Se a quantidade realmente lida não for igual à quantidade solicitada, a operação de carregamento será anulada e e a \_ falha será retornada. Se a versão de formato nas propriedades de papel recém-lidas \_ não for reconhecida, a operação de carregamento será anulada e a **carga** retornará e \_ falhará.
+Agora, o [**método IStorage::OpenStream**](/windows/desktop/api/Objidl/nf-objidl-istorage-openstream) é chamado para abrir o fluxo existente no armazenamento chamado "PAPERDATA". Os sinalizadores de modo de acesso são para acesso exclusivo somente leitura, direto e não compartilhado. Quando o fluxo está aberto, o [**método IStream::Read**](/windows/desktop/api/Objidl/nn-objidl-istream) é chamado para ler a estrutura PROPRIEDADES \_ DO PAPEL. Se o valor realmente lido não for igual ao valor solicitado, a operação de carregamento será anulada e E \_ FAIL será retornado. Se a versão de formato nas PROPRIEDADES DE PAPEL recém-lida não for reconhecida, a operação de carregamento será anulada e \_ **Carregar** retornará E \_ FAIL.
 
-Com uma versão de formato de dados de tinta válida, o tamanho da nova matriz de dados de tinta das propriedades de papel \_ que foi lida no é usado para alocar uma nova matriz de dados de tinta do tamanho necessário. Os dados de tinta existentes são excluídos e seus dados são perdidos. Se esses dados eram valiosos, eles devem ter sido salvos antes de o **carregamento** ser chamado. Depois que a nova matriz é alocada, [**IStream:: Read**](/windows/desktop/api/Objidl/nn-objidl-istream) é chamado novamente para ler os dados na matriz a partir do fluxo. Se essa chamada for bem sucedido, os valores nas propriedades de papel recém lidas serão adotados como os valores atuais para o copaper.
+Com uma versão de formato de dados de tinta válida, o tamanho da nova matriz de dados de tinta das PROPRIEDADES DE PAPEL que foi lida em é usado para alocar uma nova matriz de dados de tinta do \_ tamanho necessário. Os dados de tinta existentes são excluídos e seus dados são perdidos. Se esses dados foram valiosos, eles devem ter sido salvos antes **de Carregar** ser chamado. Depois que a nova matriz é alocada, [**IStream::Read**](/windows/desktop/api/Objidl/nn-objidl-istream) é chamado novamente para ler os dados na matriz do fluxo. Se essa chamada for bem-sucedida, os valores nas propriedades de papel recém-lidas serão adotados como os valores atuais para COPaper.
 
-Durante essa operação de carregamento, uma estrutura de propriedades de papel temporária \_ , NewProps, foi usada para manter as novas propriedades lidas. Se tudo tiver sucesso com a carga, NewProps será copiado para a \_ estrutura de propriedades do papel, m \_ paperproperties. Como antes, depois que a carga é feita e o [**IStream**](/windows/desktop/api/Objidl/nn-objidl-istream) não é mais necessário, o ponteiro **IStream** é liberado.
+Durante essa operação de carregamento, uma estrutura TEMPORÁRIA PROPRIEDADES DE PAPEL, NewProps, foi usada para manter \_ as novas propriedades lidas. Se tudo tiver êxito com a carga, NewProps será copiado para a estrutura PROPRIEDADES \_ DO PAPEL, m \_ PaperProperties. Como antes, depois que o Carregamento é feito e [**o IStream**](/windows/desktop/api/Objidl/nn-objidl-istream) não é mais necessário, o **ponteiro IStream** é liberado.
 
-Se houver um erro no final da **carga**, a matriz de dados de tinta será apagada, pois pode conter dados danificados.
+Se houver um erro no final de **Carregar**, a matriz de dados de tinta será apagada, pois pode conter dados danificados.
 
-Se não houver nenhum erro no final da **carga**, o método [**IPaperSink:: Loaded**](ipapersink-methods.md) do cliente será chamado, no método NotifySinks interno de copapel, para notificar o cliente de que a operação de carregamento foi concluída. Essa é uma notificação importante para o cliente, pois ele deve exibir esses novos dados de tinta carregados. Essa notificação faz uso significativo de recursos de objetos conectáveis no copaper.
+Se não houver nenhum erro no final do **Carregamento**, o método [**IPaperSink::Loaded**](ipapersink-methods.md) do cliente será chamado, no método NotifySinks interno do COPaper, para notificar o cliente de que a operação de carregamento foi concluída. Essa é uma notificação importante para o cliente, pois ele deve exibir esses novos dados de tinta carregados. Essa notificação faz uso significativo de recursos de objeto conectáveis no COPaper.
 
- 
+ 
 
- 
+ 
 
 
 

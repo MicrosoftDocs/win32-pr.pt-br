@@ -1,5 +1,5 @@
 ---
-description: A principal responsabilidade de qualquer item do painel de controle é exibir uma janela que permite ao usuário exibir e manipular as configurações.
+description: A principal responsabilidade de qualquer Painel de Controle item é exibir uma janela que permita que o usuário veja e manipule as configurações.
 title: Diretrizes da Experiência do Usuário
 ms.topic: article
 ms.date: 09/24/2020
@@ -9,23 +9,23 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: e25f8885c2444a51d5d5d8cc917121c7f3b26a09
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 15ef54d44a466f3c766075eae771ccac9d74e20c0622d6092530f1015a538425
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104989088"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117857075"
 ---
 # <a name="user-experience-guidelines"></a>Diretrizes da Experiência do Usuário
 
-A principal responsabilidade de qualquer item do painel de controle é exibir uma janela que permite ao usuário exibir e manipular as configurações. Consulte as [diretrizes UX (experiência do usuário dos painéis de controle)](../uxguide/winenv-ctrl-panels.md) para o comportamento e o design de itens do painel de controle. As diretrizes discutidas neste tópico mostram um método de fluxo de tarefas de organizar um item do painel de controle. Isso coloca as configurações mais importantes em um home page. As configurações usadas com menos frequência são colocadas em páginas spoke ou acessadas de links em um painel lateral.
+A principal responsabilidade de qualquer Painel de Controle item é exibir uma janela que permita que o usuário veja e manipule as configurações. Confira as diretrizes de experiência do usuário [(UX)](../uxguide/winenv-ctrl-panels.md) dos Painéis de Controle para o comportamento e o design Painel de Controle itens. As diretrizes discutidas nesse tópico mostram um método de fluxo de tarefas para organizar um Painel de Controle item. Isso coloca as configurações mais importantes em um home page. As configurações usadas com menos frequência são colocadas em páginas spoke ou acessadas de links em um painel lateral.
 
-O painel de controle inclui muitos itens que seguem essas diretrizes, como a facilidade de central de acesso e a central de rede e compartilhamento. Outros itens do painel de controle usam o formato de folha de propriedades da caixa de diálogo com guias, como nas versões anteriores do Windows. Os exemplos incluem o item do mouse e as opções da Internet. O uso do formato de folha de propriedades deve ser descontinuado. Se você criar novos itens do painel de controle, siga as diretrizes de fluxo de tarefas.
+O Painel de Controle inclui muitos itens que seguem essas diretrizes, como Central de Facilidade de Acesso e Central de Rede e Compartilhamento. Outros Painel de Controle itens usam o formato de folha de propriedades da caixa de diálogo com guias, como nas versões anteriores do Windows. Exemplos incluem o item Mouse e Opções da Internet. O uso do formato de folha de propriedades deve ser descontinuado. Se você criar novos Painel de Controle, siga as diretrizes de fluxo de tarefas.
 
-No passado, os itens do painel de controle eram empacotados como arquivos. cpl. Isso não é mais necessário. Novos itens do painel de controle devem ser implementados como um arquivo. exe autônomo ou como uma opção de sinalizador de linha de comando para o arquivo executável principal do aplicativo.
+No passado, Painel de Controle itens eram empacotados como .cpl arquivos. Isso não é mais necessário. Novos Painel de Controle novos itens devem ser implementados como um arquivo .exe autônomo ou como uma opção de sinalizador de linha de comando para o arquivo executável principal do aplicativo.
 
 > [!Note]  
-> Em sistemas de 64 bits, os itens do painel de controle de 32 bits são exibidos no painel de controle quando a opção de **pasta exibir itens do painel de controle de 32 bits** está selecionada. Os itens de 32 bits devem estar localizados na pasta% SystemRoot% \\ SysWOW64 a ser exibida. Eles não exigem nenhum registro adicional.
+> Em sistemas de 64 bits, os itens Painel de Controle de 32 bits são exibidos no Painel de Controle quando a opção exibir itens Painel de Controle de **32** bits está selecionada. Os itens de 32 bits devem estar localizados na pasta %SystemRoot% \\ SysWOW64 a ser exibida. Eles não exigem nenhum registro posterior.
 
  
 
@@ -33,31 +33,31 @@ No passado, os itens do painel de controle eram empacotados como arquivos. cpl. 
 
 <dl> <dt>
 
-[Itens do painel de controle](control-panel-applications.md)
+[Painel de Controle itens](control-panel-applications.md)
 </dt> <dt>
 
-[Registrando itens do painel de controle](registering-control-panel-items.md)
+[Registrando Painel de Controle itens](registering-control-panel-items.md)
 </dt> <dt>
 
 [Usando CPLApplet](using-cplapplet.md)
 </dt> <dt>
 
-[Processamento de mensagens do painel de controle](message-processing.md)
+[Painel de Controle processamento de mensagens](message-processing.md)
 </dt> <dt>
 
-[Executando itens do painel de controle](executing-control-panel-items.md)
+[Executando Painel de Controle itens](executing-control-panel-items.md)
 </dt> <dt>
 
-[Estendendo itens do painel de controle do sistema](extending-system-control-panel-items.md)
+[Estendendo itens Painel de Controle sistema](extending-system-control-panel-items.md)
 </dt> <dt>
 
-[Atribuindo categorias do painel de controle](assigning-control-panel-categories.md)
+[Atribuindo Painel de Controle categorias](assigning-control-panel-categories.md)
 </dt> <dt>
 
-[Criando links de tarefas pesquisáveis para um item do painel de controle](creating-searchable-task-links.md)
+[Criando links de tarefa pesquisáveis para um Painel de Controle item](creating-searchable-task-links.md)
 </dt> <dt>
 
-[Acessando o painel de controle no modo de segurança](accessing-the-cp-in-safe-mode-under-vista.md)
+[Acessando o Painel de Controle no modo Cofre](accessing-the-cp-in-safe-mode-under-vista.md)
 </dt> </dl>
 
  

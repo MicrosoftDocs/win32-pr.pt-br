@@ -8,20 +8,20 @@ keywords:
 - Estrutura CAPDRIVERCAPS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fc87fb4f9cb439229721b6c10aa6207af601f9ab
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: d4260c696834814f8ed42fc78154a506f3f156f3df37c02ccbff337c651f0ef6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104005118"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118375362"
 ---
 # <a name="capture-driver-capabilities"></a>Recursos do driver de captura
 
 Você pode recuperar os recursos de hardware do driver de captura conectado no momento usando a mensagem [**\_ \_ \_ obter \_ Caps do driver do WM Cap**](wm-cap-driver-get-caps.md) (ou a macro [**capDriverGetCaps**](/windows/desktop/api/Vfw/nf-vfw-capdrivergetcaps) ). Essa mensagem retorna os recursos do driver de captura e o hardware subjacente na estrutura [**CAPDRIVERCAPS**](/windows/win32/api/vfw/ns-vfw-capdrivercaps) .
 
- 
+ 
 
- 
+ 
 
 
 

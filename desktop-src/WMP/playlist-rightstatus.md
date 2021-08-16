@@ -1,9 +1,9 @@
 ---
-title: PLAYLIST. rightStatus
-description: O atributo rightStatus especifica ou recupera o texto de status que é exibido no lado direito e no final do elemento PLAYLIST.
+title: PLAYLIST.rightStatus
+description: O atributo rightStatus especifica ou recupera o texto de status exibido no lado direito e na parte inferior do elemento PLAYLIST.
 ms.assetid: 82861572-ee8d-4780-a890-f018662499ff
 keywords:
-- PLAYLIST. rightStatus Windows Media Player
+- PLAYLIST.rightStatus Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a47b382da4ae214c9a830cc64fb1aa0d0edadbf6
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 29b79b0f4e3ad18ed4e044f894d63ec5059477f80999a8b96dc461d9499b29cb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105796240"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118336559"
 ---
-# <a name="playlistrightstatus"></a>PLAYLIST. rightStatus
+# <a name="playlistrightstatus"></a>PLAYLIST.rightStatus
 
-O atributo **rightStatus** especifica ou recupera o texto de status que é exibido no lado direito e no final do elemento **playlist** .
+O **atributo rightStatus** especifica ou recupera o texto de status exibido no lado direito e na parte inferior do elemento **PLAYLIST.**
 
 ``` syntax
         elementID.rightStatus
@@ -29,11 +29,11 @@ O atributo **rightStatus** especifica ou recupera o texto de status que é exibi
 
 ## <a name="possible-values"></a>Valores possíveis
 
-Este atributo é uma **cadeia de caracteres** de leitura/gravação.
+Esse atributo é uma cadeia de caracteres de **leitura/gravação.**
 
 ## <a name="remarks"></a>Comentários
 
-Esse atributo pode combinar qualquer texto com palavras-chave específicas que exibirão as informações desejadas, como a duração total da lista de reprodução. As palavras-chave são circundadas por símbolos percentuais (%) para mantê-los distintos do texto comum.
+Esse atributo pode combinar qualquer texto com palavras-chave específicas que exibirão as informações desejadas, como a duração total da playlist. As palavras-chave estão entre símbolos percentuais (%) para mantê-las distintas do texto comum.
 
 As palavras-chave a seguir podem ser usadas.
 
@@ -41,24 +41,24 @@ As palavras-chave a seguir podem ser usadas.
 
 | Palavra-chave               | Descrição                                                                                                                                                                                                  |
 |-----------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| count                 | Número de itens na lista de reprodução.                                                                                                                                                                             |
-| tamanho                  | Tamanho total da lista de reprodução.                                                                                                                                                                                  |
+| count                 | Número de itens na playlist.                                                                                                                                                                             |
+| tamanho                  | Tamanho total da playlist.                                                                                                                                                                                  |
 | duration              | Duração total da playlist.                                                                                                                                                                              |
-| *XXX*                 | Faz um **getItemInfo** na playlist com *xxx* ser o item a receber.                                                                                                                                 |
-| SelectedSize          | Tamanho total das entradas selecionadas na lista de reprodução.                                                                                                                                                          |
-| SelectedCount         | Número total de entradas selecionadas na lista de reprodução.                                                                                                                                                            |
+| *Xxx*                 | Faz um **getItemInfo na** playlist com *XXX* sendo o item a ser recebido.                                                                                                                                 |
+| SelectedSize          | Tamanho total das entradas selecionadas na playlist.                                                                                                                                                          |
+| SelectedCount         | Número total de entradas selecionadas na playlist.                                                                                                                                                            |
 | SelectedDuration      | Duração total das entradas selecionadas na playlist.                                                                                                                                                      |
-| CheckedCount          | Número total de faixas verificadas na lista de reprodução.                                                                                                                                                              |
-| CheckedDuration       | Duração total das faixas verificadas na lista de reprodução.                                                                                                                                                        |
-| CheckedSize           | Tamanho total das faixas marcadas na lista de reprodução.                                                                                                                                                            |
-| Duraçãostring        | Exibe o texto que descreve a duração como "tempo total" ou "tempo estimado", dependendo se os valores totais são conhecidos. Este texto é seguido por "% Duration%".                                       |
-| CheckedDurationString | Exibe o texto que descreve a duração de todos os itens marcados na lista de reprodução como "tempo total" ou "tempo estimado", dependendo se os valores totais são conhecidos. Este texto é seguido por "% Duration%". |
+| CheckedCount          | Número total de faixas marcadas na playlist.                                                                                                                                                              |
+| CheckedDuration       | Duração total das faixas marcadas na playlist.                                                                                                                                                        |
+| CheckedSize           | Tamanho total das faixas marcadas na playlist.                                                                                                                                                            |
+| DurationString        | Exibe texto que descreve a duração como "Tempo Total" ou "Tempo Estimado", dependendo se os valores totais são conhecidos. Esse texto é seguido por "%duration%".                                       |
+| CheckedDurationString | Exibe texto que descreve a duração de todos os itens marcados na playlist como "Tempo Total" ou "Tempo Estimado", dependendo se os valores totais são conhecidos. Esse texto é seguido por "%duration%". |
 
 
 
  
 
-O valor "tempo total:% Duration%" para uma lista de reprodução que contém uma duração total de sete minutos exibirá "tempo total: 07:00".
+O valor "Tempo Total: %duração%" para uma playlist que contém uma duração total de sete minutos exibirá "Tempo Total: 07:00".
 
 ## <a name="requirements"></a>Requisitos
 
@@ -66,7 +66,7 @@ O valor "tempo total:% Duration%" para uma lista de reprodução que contém uma
 
 | Requisito | Valor |
 |--------------------|---------------------------------------------------|
-| Versão<br/> | Windows Media Player 9 Series ou posterior<br/> |
+| Versão<br/> | Windows Media Player série 9 ou posterior<br/> |
 
 
 

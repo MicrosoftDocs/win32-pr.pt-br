@@ -1,7 +1,7 @@
 ---
-description: Método Shell. NameSpace – cria e retorna um objeto de pasta para a pasta especificada.
+description: Método Shell.NameSpace – cria e retorna um objeto Folder para a pasta especificada.
 ms.assetid: c0d61bc6-6851-4b47-a62d-4c24d2958b98
-title: Método Shell. NameSpace (shldisp. h)
+title: Método Shell.NameSpace (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: fab501912c55aaaf6cab832bf76763672e830d33
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 41542f133961104180257b9c15b1843f3458bf6d9d2dd156fa3d97ea7b9ca87d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108083704"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117857735"
 ---
-# <a name="shellnamespace-method"></a>Método Shell. NameSpace
+# <a name="shellnamespace-method"></a>Método Shell.NameSpace
 
-Cria e retorna um objeto de [**pasta**](folder.md) para a pasta especificada.
+Cria e retorna um [**objeto Folder**](folder.md) para a pasta especificada.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -49,12 +49,12 @@ Shell.NameSpace( _
 
 <dl> <dt>
 
-*vDir* \[ no\]
+*vDir* \[ Em\]
 </dt> <dd>
 
-Tipo: **variante**
+Tipo: **Variante**
 
-A pasta para a qual criar o objeto de [**pasta**](folder.md) . Pode ser uma cadeia de caracteres que especifica o caminho da pasta ou um dos valores de [**ShellSpecialFolderConstants**](/windows/desktop/api/Shldisp/ne-shldisp-shellspecialfolderconstants) . Observe que os nomes de constantes encontrados em **ShellSpecialFolderConstants** estão disponíveis em Visual Basic, mas não em VBScript ou JScript. Nesses casos, os valores numéricos devem ser usados em seu lugar.
+A pasta para a qual criar o [**objeto**](folder.md) Pasta. Pode ser uma cadeia de caracteres que especifica o caminho da pasta ou um dos [**valores ShellSpecialFolderConstants.**](/windows/desktop/api/Shldisp/ne-shldisp-shellspecialfolderconstants) Observe que os nomes constantes encontrados em **ShellSpecialFolderConstants** estão disponíveis no Visual Basic, mas não no VBScript ou JScript. Nesses casos, os valores numéricos devem ser usados em seu lugar.
 
 </dd> </dl>
 
@@ -62,21 +62,21 @@ A pasta para a qual criar o objeto de [**pasta**](folder.md) . Pode ser uma cade
 
 ### <a name="jscript"></a>JScript
 
-Tipo: **[ **pasta**](folder.md)\*\***
+Tipo: **[ **Pasta**](folder.md)\*\***
 
-Referência de objeto para o objeto de [**pasta**](folder.md) da pasta especificada. Se a pasta não for criada com êxito, esse valor retornará **NULL**.
+Referência de objeto ao [**objeto Pasta**](folder.md) da pasta especificada. Se a pasta não for criada com êxito, esse valor retornará **nulo.**
 
 ### <a name="vb"></a>VB
 
-Tipo: **[ **pasta**](folder.md)\*\***
+Tipo: **[ **Pasta**](folder.md)\*\***
 
-Referência de objeto para o objeto de [**pasta**](folder.md) da pasta especificada. Se a pasta não for criada com êxito, esse valor retornará **NULL**.
+Referência de objeto ao [**objeto Pasta**](folder.md) da pasta especificada. Se a pasta não for criada com êxito, esse valor retornará **nulo.**
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo a seguir mostra o **namespace** em uso. O uso adequado é mostrado para JScript, VBScript e Visual Basic.
+O exemplo a seguir mostra **NameSpace** em uso. O uso adequado é mostrado para JScript, VBScript e Visual Basic.
 
-JScript
+JScript:
 
 
 ```JScript
@@ -98,7 +98,7 @@ JScript
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -150,11 +150,11 @@ End Sub
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 2000 Professional, \[ somente aplicativos da área de trabalho do Windows XP\]<br/>                                         |
+| Cliente mínimo com suporte<br/> | Windows 2000 Professional, Windows aplicativos da área de \[ trabalho XP\]<br/>                                         |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                           |
-| Cabeçalho<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                           |
-| INSERI<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                         |
-| DLL<br/>                      | <dl> <dt>Shell32.dll (versão 4,71 ou posterior)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
+| DLL<br/>                      | <dl> <dt>Shell32.dll (versão 4.71 ou posterior)</dt> </dl> |
 
 
 

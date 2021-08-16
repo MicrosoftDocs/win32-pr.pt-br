@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5e33bc2840fb1ca8a936b417c4407f48fcdf7f46
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 57ddd8b98cdc19efc8bed8db709fb0b335ff770129dde5bbf5933b706273d722
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103645321"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117836776"
 ---
 # <a name="query-policy-object-attribute"></a>Atributo de objeto de política de consulta
 
@@ -59,7 +59,7 @@ Referência ao Query-Policy padrão em vigor para este servidor.
 | ID do link                | 68                                                                                                   |
 | MAPI-Id                | \-                                                                                                   |
 | System-Only            | Falso                                                                                                |
-| É de valor único       | True                                                                                                 |
+| É de valor único       | Verdadeiro                                                                                                 |
 | É indexado             | Falso                                                                                                |
 | No catálogo global      | Falso                                                                                                |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                         |
@@ -67,7 +67,7 @@ Referência ao Query-Policy padrão em vigor para este servidor.
 | Range-Upper            | \-                                                                                                   |
 | Search-Flags           | 0x00000000                                                                                           |
 | System-Flags           | 0x00000010                                                                                           |
-| Classes usadas em        | [**NTDS-DSA**](c-ntdsdsa.md)<br/> [**NTDS – configurações de site**](c-ntdssitesettings.md)<br/> |
+| Classes usadas em        | [**NTDS-DSA**](c-ntdsdsa.md)<br/> [**NTDS-Configurações de Site**](c-ntdssitesettings.md)<br/> |
 
 
 
@@ -80,7 +80,7 @@ Referência ao Query-Policy padrão em vigor para este servidor.
 | ID do link                | 68                                                                                                   |
 | MAPI-Id                | \-                                                                                                   |
 | System-Only            | Falso                                                                                                |
-| É de valor único       | True                                                                                                 |
+| É de valor único       | Verdadeiro                                                                                                 |
 | É indexado             | Falso                                                                                                |
 | No catálogo global      | Falso                                                                                                |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                         |
@@ -88,7 +88,7 @@ Referência ao Query-Policy padrão em vigor para este servidor.
 | Range-Upper            | \-                                                                                                   |
 | Search-Flags           | 0x00000000                                                                                           |
 | System-Flags           | 0x00000010                                                                                           |
-| Classes usadas em        | [**NTDS-DSA**](c-ntdsdsa.md)<br/> [**NTDS – configurações de site**](c-ntdssitesettings.md)<br/> |
+| Classes usadas em        | [**NTDS-DSA**](c-ntdsdsa.md)<br/> [**NTDS-Configurações de Site**](c-ntdssitesettings.md)<br/> |
 
 
 
@@ -101,7 +101,7 @@ Referência ao Query-Policy padrão em vigor para este servidor.
 | ID do link                | 68                                                                                                   |
 | MAPI-Id                | \-                                                                                                   |
 | System-Only            | Falso                                                                                                |
-| É de valor único       | True                                                                                                 |
+| É de valor único       | Verdadeiro                                                                                                 |
 | É indexado             | Falso                                                                                                |
 | No catálogo global      | Falso                                                                                                |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                         |
@@ -109,7 +109,7 @@ Referência ao Query-Policy padrão em vigor para este servidor.
 | Range-Upper            | \-                                                                                                   |
 | Search-Flags           | 0x00000000                                                                                           |
 | System-Flags           | 0x00000010                                                                                           |
-| Classes usadas em        | [**NTDS-DSA**](c-ntdsdsa.md)<br/> [**NTDS – configurações de site**](c-ntdssitesettings.md)<br/> |
+| Classes usadas em        | [**NTDS-DSA**](c-ntdsdsa.md)<br/> [**NTDS-Configurações de Site**](c-ntdssitesettings.md)<br/> |
 
 
 
@@ -122,7 +122,7 @@ Referência ao Query-Policy padrão em vigor para este servidor.
 | ID do link                | 68                                                                                                   |
 | MAPI-Id                | \-                                                                                                   |
 | System-Only            | Falso                                                                                                |
-| É de valor único       | True                                                                                                 |
+| É de valor único       | Verdadeiro                                                                                                 |
 | É indexado             | Falso                                                                                                |
 | No catálogo global      | Falso                                                                                                |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                         |
@@ -130,7 +130,7 @@ Referência ao Query-Policy padrão em vigor para este servidor.
 | Range-Upper            | \-                                                                                                   |
 | Search-Flags           | 0x00000000                                                                                           |
 | System-Flags           | 0x00000010                                                                                           |
-| Classes usadas em        | [**NTDS-DSA**](c-ntdsdsa.md)<br/> [**NTDS – configurações de site**](c-ntdssitesettings.md)<br/> |
+| Classes usadas em        | [**NTDS-DSA**](c-ntdsdsa.md)<br/> [**NTDS-Configurações de Site**](c-ntdssitesettings.md)<br/> |
 
 
 
@@ -143,7 +143,7 @@ Referência ao Query-Policy padrão em vigor para este servidor.
 | ID do link                | 68                                                                                                   |
 | MAPI-Id                | \-                                                                                                   |
 | System-Only            | Falso                                                                                                |
-| É de valor único       | True                                                                                                 |
+| É de valor único       | Verdadeiro                                                                                                 |
 | É indexado             | Falso                                                                                                |
 | No catálogo global      | Falso                                                                                                |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                         |
@@ -151,7 +151,7 @@ Referência ao Query-Policy padrão em vigor para este servidor.
 | Range-Upper            | \-                                                                                                   |
 | Search-Flags           | 0x00000000                                                                                           |
 | System-Flags           | 0x00000010                                                                                           |
-| Classes usadas em        | [**NTDS-DSA**](c-ntdsdsa.md)<br/> [**NTDS – configurações de site**](c-ntdssitesettings.md)<br/> |
+| Classes usadas em        | [**NTDS-DSA**](c-ntdsdsa.md)<br/> [**NTDS-Configurações de Site**](c-ntdssitesettings.md)<br/> |
 
 
 
@@ -164,7 +164,7 @@ Referência ao Query-Policy padrão em vigor para este servidor.
 | ID do link                | 68                                                                                                   |
 | MAPI-Id                | \-                                                                                                   |
 | System-Only            | Falso                                                                                                |
-| É de valor único       | True                                                                                                 |
+| É de valor único       | Verdadeiro                                                                                                 |
 | É indexado             | Falso                                                                                                |
 | No catálogo global      | Falso                                                                                                |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                         |
@@ -172,7 +172,7 @@ Referência ao Query-Policy padrão em vigor para este servidor.
 | Range-Upper            | \-                                                                                                   |
 | Search-Flags           | 0x00000000                                                                                           |
 | System-Flags           | 0x00000010                                                                                           |
-| Classes usadas em        | [**NTDS-DSA**](c-ntdsdsa.md)<br/> [**NTDS – configurações de site**](c-ntdssitesettings.md)<br/> |
+| Classes usadas em        | [**NTDS-DSA**](c-ntdsdsa.md)<br/> [**NTDS-Configurações de Site**](c-ntdssitesettings.md)<br/> |
 
 
 
@@ -185,7 +185,7 @@ Referência ao Query-Policy padrão em vigor para este servidor.
 | ID do link                | 68                                                                                                   |
 | MAPI-Id                | \-                                                                                                   |
 | System-Only            | Falso                                                                                                |
-| É de valor único       | True                                                                                                 |
+| É de valor único       | Verdadeiro                                                                                                 |
 | É indexado             | Falso                                                                                                |
 | No catálogo global      | Falso                                                                                                |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                         |
@@ -193,7 +193,7 @@ Referência ao Query-Policy padrão em vigor para este servidor.
 | Range-Upper            | \-                                                                                                   |
 | Search-Flags           | 0x00000000                                                                                           |
 | System-Flags           | 0x00000010                                                                                           |
-| Classes usadas em        | [**NTDS-DSA**](c-ntdsdsa.md)<br/> [**NTDS – configurações de site**](c-ntdssitesettings.md)<br/> |
+| Classes usadas em        | [**NTDS-DSA**](c-ntdsdsa.md)<br/> [**NTDS-Configurações de Site**](c-ntdssitesettings.md)<br/> |
 
 
 

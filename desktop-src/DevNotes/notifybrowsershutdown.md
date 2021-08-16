@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - Msjava.dll
-ms.openlocfilehash: 77fa2e5a0d387fcc0c90417b5f57d49178bc0626
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 60f361d8f9963081c4af2a840a01eb29f9946eb064cad2335f95b3622932add1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105754909"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117826812"
 ---
 # <a name="notifybrowsershutdown-function"></a>Função NotifyBrowserShutdown
 
@@ -46,7 +46,7 @@ Este parâmetro não é usado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se a função for bem sucedido, o valor de retorno será **S \_ OK**. Caso contrário, o valor de retorno será um código de erro.
 

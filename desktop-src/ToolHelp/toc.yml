@@ -1,4 +1,4 @@
-- name: Biblioteca de ajuda da ferramenta
+- name: Biblioteca de Ajuda da Ferramenta
   href: tool-help-library.md
   items:
     - name: Sobre as funções de ajuda da ferramenta
@@ -6,29 +6,29 @@
       items:
         - name: Instantâneos do sistema
           href: snapshots-of-the-system.md
-        - name: Movimentação de processo
+        - name: Process Walking
           href: process-walking.md
-        - name: Movimentação de thread
+        - name: Thread Walking
           href: thread-walking.md
-        - name: Movimentação de módulo
+        - name: Módulo de ida e volta
           href: module-walking.md
-        - name: Listas de heap e movimentação de heap
+        - name: Heap Lists and Heap Walking
           href: heap-lists-and-heap-walking.md
     - name: Usando as funções de ajuda da ferramenta
       href: using-the-tool-help-functions.md
       items:
-        - name: Fazendo um instantâneo e exibindo processos
+        - name: Tirar um instantâneo e exibir processos
           href: taking-a-snapshot-and-viewing-processes.md
-        - name: Atravessando a lista de threads
+        - name: Percorrendo a lista de threads
           href: traversing-the-thread-list.md
-        - name: Atravessando a lista de módulos
+        - name: Percorrendo a lista de módulos
           href: traversing-the-module-list.md
-        - name: Atravessando a lista de heaps
+        - name: Percorrendo a lista de heaps
           href: traversing-the-heap-list.md
-    - name: Referência da ajuda da ferramenta
+    - name: Referência da Ajuda da Ferramenta
       href: tool-help-reference.md
       items:
-        - name: Funções de ajuda da ferramenta
+        - name: Funções de Ajuda da Ferramenta
           href: tool-help-functions.md
           items:
             - name: CreateToolhelp32Snapshot
@@ -55,7 +55,7 @@
               href: /windows/desktop/api/TlHelp32/nf-tlhelp32-thread32next
             - name: Toolhelp32ReadProcessMemory
               href: /windows/desktop/api/TlHelp32/nf-tlhelp32-toolhelp32readprocessmemory
-        - name: Estruturas de ajuda da ferramenta
+        - name: Estruturas de Ajuda da Ferramenta
           href: tool-help-structures.md
           items:
             - name: HEAPENTRY32

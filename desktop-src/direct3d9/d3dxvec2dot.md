@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 79b65127c415695b3df9f927b6edff8fcdd5c58d
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 98cb865ebd075dcd78db8200b18de1644107e9a497b977fe062017c758e52256
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105764539"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118523822"
 ---
 # <a name="d3dxvec2dot-function"></a>Função D3DXVec2Dot
 
@@ -59,7 +59,7 @@ Ponteiro para uma estrutura de [**D3DXVECTOR2**](d3dxvector2.md) de origem.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **float**](../winprog/windows-data-types.md)**
 
