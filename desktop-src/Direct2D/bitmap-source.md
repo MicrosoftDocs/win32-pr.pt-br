@@ -6,12 +6,12 @@ keywords:
 - efeito de origem de bitmap
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a439c94f0f520b318b3cb3511775dbec58b6e139
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 19889372c7ebd4268f1b6fd8b77c360f290cc416631e9fb5e1cd3a0b0320844c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103824742"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119833316"
 ---
 # <a name="bitmap-source-effect"></a>Efeito de origem de bitmap
 
@@ -26,7 +26,7 @@ O CLSID para esse efeito é CLSID \_ D2D1BitmapSource.
 
 -   [Propriedades do efeito](#effect-properties)
 -   [Modos de interpolação](#interpolation-modes)
--   [Direção](#orientation)
+-   [Orientation](#orientation)
 -   [Modos alfa](#alpha-modes)
 -   [Comentários](#remarks)
 -   [Requirements](#requirements)
@@ -82,13 +82,13 @@ A Propriedade Orientation pode ser usada para aplicar um sinalizador de orienta�
 | D2D1 \_ BITMAPSOURCE \_ Orientation \_ girar \_ CLOCKWISE270 \_ virar \_ horizontalmente | Gira a imagem no sentido horário em 270 graus e a Inverte horizontalmente. |
 | D2D1 \_ a \_ orientação de BITMAPSOURCE \_ gira \_ CLOCKWISE90                    | Gira a imagem no sentido horário 90 graus.                            |
 | D2D1 \_ BITMAPSOURCE \_ Orientation \_ girar \_ CLOCKWISE90 \_ virar \_ horizontalmente  | Gira a imagem no sentido horário em 90 graus e a Inverte horizontalmente.  |
-| D2D1 \_ a \_ orientação de BITMAPSOURCE \_ gira \_ CLOCKWISE270                   | Gira a imagem no sentido horário 270 graus.                           |
+| D2D1 \_ ORIENTAÇÃO BITMAPSOURCE \_ GIRAR NO SENTIDO \_ \_ HORÁRIO270                   | Gira a imagem no sentido horário 270 graus.                           |
 
 
 
  
 
-Este trecho de código demonstra como converter os valores de orientação de EXIF (definidos em propkey. h) \_ para \_ os valores de orientação de BITMAPSOURCE d2d1.
+Este snippet de código demonstra como converter de valores de orientação EXIF (definidos em propkey.h) para valores D2D1 \_ BITMAPSOURCE \_ ORIENTATION.
 
 
 ```C++
@@ -129,8 +129,8 @@ D2D1_BITMAPSOURCE_ORIENTATION GetBitmapSourceOrientation(unsigned short PhotoOri
 
 | Nome                                           | Descrição                                            |
 |------------------------------------------------|--------------------------------------------------------|
-| \_ \_ Modo alfa d2d1 \_ BITMAPSOURCE \_ premultiplicado | A saída de efeito usa alfa precalculado.<br/> |
-| \_ \_ Modo alfa d2d1 \_ BITMAPSOURCE \_ reto      | A saída de efeito usa alfa linear.<br/>      |
+| D2D1 \_ BITMAPSOURCE \_ MODO ALFA \_ \_ PRÉ-ULTADO | A saída de efeito usa alfa pré-ultado.<br/> |
+| D2D1 \_ BITMAPSOURCE \_ MODO ALFA \_ \_ RETA      | A saída de efeito usa alfa reto.<br/>      |
 
 
 
@@ -138,23 +138,23 @@ D2D1_BITMAPSOURCE_ORIENTATION GetBitmapSourceOrientation(unsigned short PhotoOri
 
 ## <a name="remarks"></a>Comentários
 
-Para otimizar o desempenho ao usar o WIC e o [Direct2D](./direct2d-portal.md) juntos, você deve usar o [**IWICFormatConverter**](/windows/desktop/api/wincodec/nn-wincodec-iwicformatconverter) para converter em um formato de pixel apropriado com base no cenário do seu aplicativo e na precisão nativa da imagem.
+Para otimizar o desempenho ao usar o WIC [e Direct2D](./direct2d-portal.md) juntos, você deve usar [**IWICFormatConverter**](/windows/desktop/api/wincodec/nn-wincodec-iwicformatconverter) para converter em um formato de pixel apropriado com base no cenário do aplicativo e na precisão nativa da imagem.
 
-Na maioria dos casos, o pipeline s [Direct2D](./direct2d-portal.md) do aplicativo requer apenas 8 bits por canal (BPC) de precisão, ou a imagem fornece apenas a precisão de 8 bpc e, portanto, você deve converter em GUID \_ WICPixelFormat32bppPBGRA. No entanto, se você quiser aproveitar a precisão extra fornecida por uma imagem (por exemplo, um JPEG-XR ou TIFF armazenado com uma precisão maior que 8 bpc), deverá usar um formato de pixel baseado em RGBA. A tabela abaixo fornece mais detalhes.
+Na maioria dos casos, o pipeline do [Direct2D](./direct2d-portal.md) do aplicativo requer apenas 8 bits por canal (bpc) de precisão ou a imagem fornece apenas 8 bpc de precisão e, portanto, você deve converter para GUID \_ WICPixelFormat32bppPBGRA. No entanto, se você quiser aproveitar a precisão extra fornecida por uma imagem (por exemplo, um JPEG-XR ou TIFF armazenado com mais de 8 bpc precision), você deverá usar um formato de pixel baseado em RGBA. A tabela abaixo fornece mais detalhes.
 
 
 
 | Precisão desejada   | Precisão nativa da imagem | Formato de pixel recomendado                |
 |---------------------|-------------------------------|-----------------------------------------|
-| 8 bits por canal  | <= 8 bits por canal      | \_WICPIXELFORMAT32BPPPBGRA GUID          |
-| O máximo possível | <= 8 bits por canal      | \_WICPIXELFORMAT32BPPPBGRA GUID          |
-| O máximo possível | > 8 bits por canal       | Ordem de canal RGBA, Alpha multiplicado |
+| 8 bits por canal  | <= 8 bits por canal      | GUID \_ WICPixelFormat32bppPBGRA          |
+| O mais alto possível | <= 8 bits por canal      | GUID \_ WICPixelFormat32bppPBGRA          |
+| O mais alto possível | > 8 bits por canal       | Ordem do canal RGBA, alfa pré-ultado |
 
 
 
  
 
-Como muitos formatos de imagem dão suporte a vários níveis de precisão, você deve usar [**IWICBitmapSource:: GetPixelFormat**](/windows/desktop/wic/-wic-codec-iwicbitmapsource-getpixelformat-proxy) para obter o formato de pixel nativo da imagem e, em seguida, usar [**IWICPixelFormatInfo**](/windows/desktop/api/wincodec/nn-wincodec-iwicpixelformatinfo) para determinar quantos bits por canal de precisão estão disponíveis para esse formato. Além disso, observe que nem todos os hardwares dão suporte a formatos de pixel de alta precisão. Nesses casos, seu aplicativo pode precisar fazer fallback para o dispositivo WARP para dar suporte à alta precisão.
+Como muitos formatos de imagem suportam vários níveis de precisão, você deve usar [**IWICBitmapSource::GetPixelFormat**](/windows/desktop/wic/-wic-codec-iwicbitmapsource-getpixelformat-proxy) para obter o formato de pixel nativo da imagem e, em seguida, usar [**IWICPixelFormatInfo**](/windows/desktop/api/wincodec/nn-wincodec-iwicpixelformatinfo) para determinar quantos bits por canal de precisão estão disponíveis para esse formato. Além disso, observe que nem todo o hardware dá suporte a formatos de pixel de alta precisão. Nesses casos, seu aplicativo pode precisar fazer fall back para o dispositivo WARP para dar suporte à alta precisão.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -162,10 +162,10 @@ Como muitos formatos de imagem dão suporte a vários níveis de precisão, voc�
 
 | Requisito | Valor |
 |--------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte | Windows 8 e atualização de plataforma para aplicativos de área de trabalho do Windows 7 \[ \| aplicativos da Windows Store\] |
-| Servidor mínimo com suporte | Windows 8 e atualização de plataforma para aplicativos de área de trabalho do Windows 7 \[ \| aplicativos da Windows Store\] |
-| parâmetro                   | d2d1effects. h                                                                      |
-| Biblioteca                  | d2d1. lib, dxguid. lib                                                               |
+| Cliente mínimo com suporte | Windows 8 e Atualização de plataforma para Windows 7 aplicativos da área de trabalho \[ \| Windows Store\] |
+| Servidor mínimo com suporte | Windows 8 e Atualização de plataforma para Windows 7 aplicativos da área de trabalho \[ \| Windows Store\] |
+| Cabeçalho                   | d2d1effects.h                                                                      |
+| Biblioteca                  | d2d1.lib, dxguid.lib                                                               |
 
 
 

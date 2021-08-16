@@ -3,7 +3,7 @@ title: Mensagem de PSM_QUERYSIBLINGS (Prsht. h)
 description: Enviado a uma folha de propriedades, que, em seguida, encaminha a mensagem para cada uma de suas páginas. Você pode enviar essa mensagem explicitamente ou usando a macro PropSheet \_ QuerySiblings.
 ms.assetid: 96f48847-b7b8-4d6f-8bde-ada915b7c962
 keywords:
-- Controles de PSM_QUERYSIBLINGS de mensagens do Windows
+- controles de Windows de mensagem de PSM_QUERYSIBLINGS
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ea5943fefa906475e34d1cc7acc7f8a86cd99252
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c270a3c7a667894f7821f6c0c169115846b6ddc2492648f5f9d75a0c85d21d04
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104499437"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120088646"
 ---
 # <a name="psm_querysiblings-message"></a>Mensagem de PSM \_ QUERYSIBLINGS
 
@@ -43,7 +43,7 @@ Segundo parâmetro definido pelo aplicativo.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna o valor diferente de zero de uma página na folha de propriedades ou zero se nenhuma página retornar um valor diferente de zero.
 
@@ -57,9 +57,9 @@ Se uma página retornar um valor diferente de zero, a folha de propriedades não
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                     |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                               |
-| parâmetro<br/>                   | <dl> <dt>Prsht. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                     |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                               |
+| Cabeçalho<br/>                   | <dl> <dt>Prsht. h</dt> </dl> |
 
 
 

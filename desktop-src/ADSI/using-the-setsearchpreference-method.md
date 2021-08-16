@@ -9,12 +9,12 @@ keywords:
 - consulta ADSI, usando SetSearchPreference
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 29c357fd331ae8589bffdd3ff7a834a7bc9e0430
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 3e7f40d7af4069c9b67d9cd2634f6b7f58f51aafce95af9d4f9275b0e55fc1b4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104004848"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119637476"
 ---
 # <a name="using-the-setsearchpreference-method"></a>Usando o método SetSearchPreference
 
@@ -55,9 +55,9 @@ hr = pDSearch->SetSearchPreference(&arSearchPrefs, 2);
 
 Este exemplo define o tamanho da página como 100 linhas e o escopo para o \_ tipo de subárvore de escopo ADS \_ . A configuração tamanho da página faz com que o servidor retorne imediatamente os dados para o cliente, depois de 100 linhas terem sido calculadas. A \_ \_ configuração subárvore do escopo ADS faz com que a pesquisa abranja todas as ramificações na árvore abaixo do ponto em que a pesquisa está sendo executada.
 
- 
+ 
 
- 
+ 
 
 
 

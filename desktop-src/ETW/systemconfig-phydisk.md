@@ -1,7 +1,7 @@
 ---
-description: Classe SystemConfig_PhyDisk-essa classe é a classe de tipo de evento para eventos de configuração de disco físico.
+description: SystemConfig_PhyDisk classe - essa classe é a classe de tipo de evento para eventos de configuração de disco físico.
 ms.assetid: 850a6b2c-69e6-47ae-95ff-585fcc70c1c8
-title: Classe SystemConfig_PhyDisk
+title: SystemConfig_PhyDisk classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -27,14 +27,14 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 52ab249ab5087a1528317687d90f6d8fa665bc1a
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 465fe0bacd23ad99bb744c915b60056b96419761f93a4aefd5f1a3d2fb4c6129
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108106094"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119766346"
 ---
-# <a name="systemconfig_phydisk-class"></a>\_Classe SystemConfig PhyDisk
+# <a name="systemconfig_phydisk-class"></a>Classe SystemConfig \_ PhyDisk
 
 Essa classe é a classe de tipo de evento para eventos de configuração de disco físico.
 
@@ -66,36 +66,36 @@ class SystemConfig_PhyDisk : SystemConfig
 
 ## <a name="members"></a>Membros
 
-A classe **SystemConfig \_ PhyDisk** tem estes tipos de membros:
+A **classe SystemConfig \_ PhyDisk** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **SystemConfig \_ PhyDisk** tem essas propriedades.
+A **classe SystemConfig \_ PhyDisk** tem essas propriedades.
 
 <dl> <dt>
 
 **BootDriveLetter**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: matriz **char16**
+Tipo de dados: **matriz char16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: **WmiDataId** (14), **Max** (3), **Format ("s")**
+Qualificadores: **WmiDataId** (14), **Max** (3), **Format("s")**
 </dt> </dl>
 
-Letra da unidade da unidade de inicialização no formato " <letter> :".
+Letra da unidade de inicialização no formato " <letter> :".
 
 </dd> <dt>
 
 **BytesPerSector**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -111,7 +111,7 @@ Número de bytes em cada setor para a unidade de disco físico.
 **Cilindros**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt64**
+Tipo de dados: **uint64**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -120,14 +120,14 @@ Tipo de acesso: Somente leitura
 Qualificadores: **WmiDataId** (5)
 </dt> </dl>
 
-Número total de cilindros na unidade de disco físico. Observação: o valor dessa propriedade é obtido por meio de funções estendidas de interrupção do BIOS 13h. O valor poderá ser impreciso se a unidade usar um esquema de tradução para dar suporte a tamanhos de disco de alta capacidade. Consulte o fabricante para obter especificações precisas da unidade.
+Número total de cilindros na unidade de disco físico. Observação: o valor dessa propriedade é obtido por meio de funções estendidas de interrupção do BIOS 13h. O valor poderá ser impreciso se a unidade usar um esquema de tradução para dar suporte a tamanhos de disco de alta capacidade. Consulte o fabricante para ver as especificações precisas da unidade.
 
 </dd> <dt>
 
 **DiskNumber**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -136,27 +136,27 @@ Tipo de acesso: Somente leitura
 Qualificadores: **WmiDataId** (1)
 </dt> </dl>
 
-Número de índice do disco que contém esta partição.
+Número de índice do disco que contém essa partição.
 
 </dd> <dt>
 
-**Manufacturer**
+**Fabricante**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: matriz **char16**
+Tipo de dados: **matriz char16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: **WmiDataId** (10), **Max** (256), **Format ("s")**
+Qualificadores: **WmiDataId** (10), **Max** (256), **Format("s")**
 </dt> </dl>
 
 Nome do fabricante da unidade de disco.
 
 </dd> <dt>
 
-**Bloco**
+**Pad**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **uint8**
@@ -175,7 +175,7 @@ Não usado.
 **PartitionCount**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -184,14 +184,14 @@ Tipo de acesso: Somente leitura
 Qualificadores: **WmiDataId** (11)
 </dt> </dl>
 
-Número de partições nesta unidade de disco físico que são reconhecidas pelo sistema operacional.
+Número de partições nessa unidade de disco físico que são reconhecidas pelo sistema operacional.
 
 </dd> <dt>
 
 **SCSILun**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -207,7 +207,7 @@ LUN (número de unidade lógica) SCSI do adaptador SCSI.
 **SCSIPath**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -223,7 +223,7 @@ Número do barramento SCSI do adaptador SCSI.
 **SCSIPort**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -232,14 +232,14 @@ Tipo de acesso: Somente leitura
 Qualificadores: **WmiDataId** (6)
 </dt> </dl>
 
-Número de SCSI do adaptador SCSI.
+Número SCSI do adaptador SCSI.
 
 </dd> <dt>
 
 **SCSITarget**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -255,7 +255,7 @@ Contém o número do dispositivo de destino.
 **SectorsPerTrack**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -264,20 +264,20 @@ Tipo de acesso: Somente leitura
 Qualificadores: **WmiDataId** (3)
 </dt> </dl>
 
-Número de setores em cada faixa para esta unidade de disco físico.
+Número de setores em cada faixa para essa unidade de disco físico.
 
 </dd> <dt>
 
-**Livre**
+**Poupar**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: matriz **char16**
+Tipo de dados: **matriz char16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: **WmiDataId** (15), **Max** (2), **Format ("s")**
+Qualificadores: **WmiDataId** (15), **Max** (2), **Format("s")**
 </dt> </dl>
 
 Não usado.
@@ -287,7 +287,7 @@ Não usado.
 **TrackPerCylinder**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -296,7 +296,7 @@ Tipo de acesso: Somente leitura
 Qualificadores: **WmiDataId** (4)
 </dt> </dl>
 
-Número de faixas em cada cilindro na unidade de disco físico. Observação: o valor dessa propriedade é obtido por meio de funções estendidas de interrupção do BIOS 13h. O valor poderá ser impreciso se a unidade usar um esquema de tradução para dar suporte a tamanhos de disco de alta capacidade. Consulte o fabricante para obter especificações precisas da unidade.
+Número de faixas em cada cilindro na unidade de disco físico. Observação: o valor dessa propriedade é obtido por meio de funções estendidas de interrupção do BIOS 13h. O valor poderá ser impreciso se a unidade usar um esquema de tradução para dar suporte a tamanhos de disco de alta capacidade. Consulte o fabricante para ver as especificações precisas da unidade.
 
 </dd> <dt>
 
@@ -322,12 +322,12 @@ True se o cache de gravação estiver habilitado.
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

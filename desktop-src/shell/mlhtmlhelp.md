@@ -1,5 +1,5 @@
 ---
-description: Exibe uma janela de ajuda que corresponde à configuração de idioma da interface do usuário atual.
+description: Exibe uma janela de ajuda que corresponde à configuração atual do idioma da interface do usuário.
 title: Função MLHtmlHelp
 ms.topic: reference
 ms.date: 05/31/2018
@@ -15,18 +15,18 @@ api_type:
 api_location:
 - Shlwapi.dll
 ms.assetid: 1108614d-7034-48da-a4a5-544f8d9af3ca
-ms.openlocfilehash: 38d331d57b9484ab6d7a505d929508f30d510ad8
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: c38e84df2ca6f379e7d479125f1f454a10426406ba40ad21721fe01f67cce6f2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109841207"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120090206"
 ---
 # <a name="mlhtmlhelp-function"></a>Função MLHtmlHelp
 
-\[Essa função está disponível por meio do Windows XP e do Windows Server 2003. Ele pode ser alterado ou indisponível nas versões subsequentes do Windows.\]
+\[Essa função está disponível por meio Windows XP e Windows Server 2003. Ele pode ser alterado ou não disponível nas versões subsequentes do Windows.\]
 
-Exibe uma janela de ajuda que corresponde à configuração de idioma da interface do usuário atual.
+Exibe uma janela de ajuda que corresponde à configuração atual do idioma da interface do usuário.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -47,52 +47,52 @@ HWND MLHtmlHelp(
 
 <dl> <dt>
 
-*hwndCaller* \[ no\]
+*hwndCaller* \[ Em\]
 </dt> <dd>
 
 Digite: **HWND**
 
-Um identificador para a janela pai que chama essa função.
+Um alça para a janela pai que chama essa função.
 
 </dd> <dt>
 
-*pszFile* \[ no\]
+*pszFile* \[ Em\]
 </dt> <dd>
 
 Tipo: **LPCTSTR**
 
-Um ponteiro para um buffer que contém o caminho totalmente qualificado de um arquivo de ajuda compilado (. chm) ou um arquivo de tópico dentro de um arquivo de ajuda especificado.
+Um ponteiro para um buffer que contém o caminho totalmente qualificado de um arquivo de ajuda compilado (.chm) ou um arquivo de tópico dentro de um arquivo de ajuda especificado.
 
 </dd> <dt>
 
-*uCommand* \[ no\]
+*uCommand* \[ Em\]
 </dt> <dd>
 
-Tipo: **uint**
+Tipo: **UINT**
 
-O comando a ser concluído. Essa função dá suporte diretamente somente ao [ \_ \_ tópico de exibição hh](/previous-versions/windows/desktop/htmlhelp/hh-display-topic-command) e ao [ \_ \_ \_ pop-up exibir texto](/previous-versions/windows/desktop/htmlhelp/hh-display-text-popup-command). No caso de qualquer outro comando, a chamada é encaminhada sem o valor de *dwCrossCodePage* para [HTMLHelp](/previous-versions/windows/desktop/htmlhelp/accessing-the-html-help-api).
+O comando a ser concluído. Essa função dá suporte diretamente apenas [a HH \_ DISPLAY \_ TOPIC](/previous-versions/windows/desktop/htmlhelp/hh-display-topic-command) e [HH DISPLAY TEXT \_ \_ \_ POPUP](/previous-versions/windows/desktop/htmlhelp/hh-display-text-popup-command). No caso de qualquer outro comando, a chamada é encaminhada sem o *valor dwCrossCodePage* para [HtmlHelp](/previous-versions/windows/desktop/htmlhelp/accessing-the-html-help-api).
 
 </dd> <dt>
 
-*dwData* \[ no\]
+*dwData* \[ Em\]
 </dt> <dd>
 
-Tipo: **DWORD \_ PTR**
+Tipo: **\_ PTR DWORD**
 
-Todos os dados que podem ser necessários, com base no valor do parâmetro *uCommand* .
+Todos os dados que podem ser necessários, com base no valor do *parâmetro uCommand.*
 
 </dd> <dt>
 
-*dwCrossCodePage* \[ no\]
+*dwCrossCodePage* \[ Em\]
 </dt> <dd>
 
 Tipo: **DWORD**
 
-O **valor DWORD** que indica a página de código da configuração de linguagem de interface do usuário atual, como CP \_ ACP.
+O **valor DWORD** que indica a página de código da configuração de idioma da interface do usuário atual, como CP \_ ACP.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Digite: **HWND**
 
@@ -132,9 +132,9 @@ HWND hwnd = HtmlHelp(GetDesktopWindow(),
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 2000 Professional, somente aplicativos da área de trabalho do Windows XP \[\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | Somente aplicativos da área de trabalho do Windows Server 2003 \[\]<br/>                                                          |
-| parâmetro<br/>                   | <dl> <dt>Nenhum</dt> </dl>                               |
+| Cliente mínimo com suporte<br/> | Windows 2000 Professional, Windows aplicativos da área de \[ trabalho XP\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                                          |
+| Cabeçalho<br/>                   | <dl> <dt>Nenhum</dt> </dl>                               |
 | DLL<br/>                      | <dl> <dt>Shlwapi.dll (versão 5.0 ou posterior)</dt> </dl> |
 | Nomes Unicode e ANSI<br/>   | **MLHtmlHelpW** (Unicode) e **MLHtmlHelpA** (ANSI)<br/>                                               |
 

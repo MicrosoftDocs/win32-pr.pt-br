@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 3b70c59ecc273b8e43bbe198001bfc90b0058f67
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 81a6675976e8ff92ad1338c888b7deebf02cd6af04b3905923ea18c95128a5cb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105813436"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119834766"
 ---
 # <a name="esentterminprogressexception-class"></a>Classe EsentTermInProgressException
 
@@ -38,7 +38,7 @@ Classe base para JET_err. TermInProgress exceções.
 ## <a name="inheritance-hierarchy"></a>Hierarquia de herança
 
 [System.Object](/dotnet/api/system.object)  
-  [System. Exception](/dotnet/api/system.exception)  
+  [System.Exception](/dotnet/api/system.exception)  
     [Microsoft. ISAM. ESENT. EsentException](./esentexception-class.md)  
       [Microsoft. ISAM. ESENT. Interop. EsentErrorException](./esenterrorexception-class.md)  
         [Microsoft. ISAM. ESENT. Interop. EsentOperationException](./esentoperationexception-class.md)  

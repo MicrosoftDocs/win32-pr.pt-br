@@ -1,8 +1,8 @@
 ---
-description: Descompacta o arquivo de paginação lógica (ou diretório) especificado no caminho do objeto.
+description: Descompacta o arquivo de paging lógico (ou diretório) especificado no caminho do objeto.
 ms.assetid: 9bd98ba8-068e-49af-8dd4-e5ee987eb31d
 ms.tgt_platform: multiple
-title: Descompactar método da classe Win32_PageFile
+title: Método Uncompress da classe Win32_PageFile classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 45a5b48ffa6b2249992b61eadf72f42f6d71969b
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 9eb9a7729ecf7a414a25ad3156237676681e94bc43a0f394b6bd6f12add0eb22
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103826633"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119834573"
 ---
-# <a name="uncompress-method-of-the-win32_pagefile-class"></a>Descompactar o método da \_ classe de arquivo de paginação Win32
+# <a name="uncompress-method-of-the-win32_pagefile-class"></a>Método Uncompress da classe PageFile win32 \_
 
-O método **uncompactar** [classe WMI](/windows/desktop/WmiSdk/retrieving-a-class) descompacta o arquivo de paginação lógica (ou diretório) especificado no caminho do objeto.
+O método de [classe WMI](/windows/desktop/WmiSdk/retrieving-a-class) **Uncompress** descompacta o arquivo de paging lógico (ou diretório) especificado no caminho do objeto.
 
-Este tópico usa a sintaxe formato MOF (MOF). Para obter mais informações sobre como usar esse método, consulte [chamando um método](/windows/desktop/WmiSdk/calling-a-method).
+Este tópico usa sintaxe Managed Object Format (MOF). Para obter mais informações sobre como usar esse método, consulte [Chamando um método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,9 +40,9 @@ uint32 Uncompress();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna um valor de 0 (zero) se o arquivo tiver sido descompactado com êxito e qualquer outro número para indicar um erro.
+Retornará um valor de 0 (zero) se o arquivo tiver sido descompactado com êxito e qualquer outro número para indicar um erro.
 
 <dl> <dt>
 
@@ -56,7 +56,7 @@ A solicitação foi bem-sucedida.
 **2**
 </dt> <dd>
 
-Acesso negado.
+O acesso foi negado.
 
 </dd> <dt>
 
@@ -91,7 +91,7 @@ O sistema de arquivos não é NTFS.
 **12**
 </dt> <dd>
 
-A plataforma não é o Windows.
+A plataforma não é Windows.
 
 </dd> <dt>
 
@@ -119,7 +119,7 @@ Houve uma violação de compartilhamento.
 **16**
 </dt> <dd>
 
-O arquivo de inicialização especificado não era válido.
+O arquivo inicial especificado não era válido.
 
 </dd> <dt>
 
@@ -130,7 +130,7 @@ Um privilégio necessário para a operação não é mantido.
 
 </dd> <dt>
 
-**Abril**
+**21**
 </dt> <dd>
 
 Um parâmetro especificado não é válido.
@@ -145,8 +145,8 @@ Um parâmetro especificado não é válido.
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| Namespace<br/>                | Raiz \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Namespace<br/>                | RAIZ \\ CIMV2<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -158,7 +158,7 @@ Um parâmetro especificado não é válido.
 [Classes do sistema operacional](/previous-versions//aa392727(v=vs.85))
 </dt> <dt>
 
-[**\_Arquivo de paginação Win32**](win32-pagefile.md)
+[**Win32 \_ PageFile**](win32-pagefile.md)
 </dt> </dl>
 
  

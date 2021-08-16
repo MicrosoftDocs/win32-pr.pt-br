@@ -1,9 +1,9 @@
 ---
-title: Variáveis de estado texturing
-description: Variáveis de estado texturing
+title: Variáveis de Estado de Texturização
+description: Variáveis de Estado de Texturização
 ms.assetid: 2d9d3d8b-ecaa-412c-8105-ae2ca801784e
 keywords:
-- Variáveis de estado texturing OpenGL
+- Variáveis de estado de texto OpenGL
 topic_type:
 - apiref
 api_name:
@@ -12,33 +12,33 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ff468c701100cc598a519ed3aa290913016a559e
-ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
+ms.openlocfilehash: 7393fc6e700b028ba3783e5c78d8175e0c3fba4937bf3830d5cae8897aa0d4db
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "107908644"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119776576"
 ---
-# <a name="texturing-state-variables"></a>Variáveis de estado texturing
+# <a name="texturing-state-variables"></a>Variáveis de Estado de Texturização
 
-<dl> <dt><span id="GL_TEXTURE_x"></span><span id="gl_texture_x"></span><span id="GL_TEXTURE_X"></span>\_Textura GL \_ *x*</dt> <dd> 
+<dl> <dt><span id="GL_TEXTURE_x"></span><span id="gl_texture_x"></span><span id="GL_TEXTURE_X"></span>TEXTURA \_ GL \_ *x*</dt> <dd> 
 
 | Propriedade | Valor |
 |------------------|-------------------------------------------------------|
-| Descrição:     | True se *x* -d texturing habilitado (*x* for 1-D ou 2-d) |
-| Grupo de atributos: | textura/Habilitar                                        |
-| Valor inicial:   | GL \_ falso                                             |
+| Descrição:     | True se *x* – D texturing enabled (*x* é 1D ou 2D) |
+| Grupo de atributos: | textura/habilitar                                        |
+| Valor inicial:   | GL \_ FALSE                                             |
 | Comando Get:     | [**glIsEnabled**](glisenabled.md)                    |
 
 
 
  
 
-</dd> <dt><span id="GL_TEXTURE"></span><span id="gl_texture"></span>\_textura GL</dt> <dd> 
+</dd> <dt><span id="GL_TEXTURE"></span><span id="gl_texture"></span>TEXTURA \_ GL</dt> <dd> 
 
 | Propriedade | Valor |
 |------------------|----------------------------------------------|
-| Descrição:     | imagem de textura *x* -D no nível de detalhe *i* |
+| Descrição:     | *x* – Imagem de textura D no nível de detalhe *i* |
 | Grupo de atributos: |                                              |
 | Valor inicial:   |                                              |
 | Comando Get:     | [**glGetTexImage**](glgetteximage.md)       |
@@ -47,11 +47,11 @@ ms.locfileid: "107908644"
 
  
 
-</dd> <dt><span id="GL_TEXTURE_WIDTH"></span><span id="gl_texture_width"></span>\_largura da textura GL \_</dt> <dd> 
+</dd> <dt><span id="GL_TEXTURE_WIDTH"></span><span id="gl_texture_width"></span>LARGURA \_ DA TEXTURA \_ GL</dt> <dd> 
 
 | Propriedade | Valor |
 |------------------|----------------------------------------------------------|
-| Descrição:     | largura *da imagem* de textura *x* -D                       |
+| Descrição:     | *x* – largura da imagem de *textura D*                       |
 | Grupo de atributos: |                                                          |
 | Valor inicial:   | 0                                                        |
 | Comando Get:     | [**glGetTexLevelParameter**](glgettexlevelparameter.md) |
@@ -60,11 +60,11 @@ ms.locfileid: "107908644"
 
  
 
-</dd> <dt><span id="GL_TEXTURE_HEIGHT"></span><span id="gl_texture_height"></span>\_altura da textura GL \_</dt> <dd> 
+</dd> <dt><span id="GL_TEXTURE_HEIGHT"></span><span id="gl_texture_height"></span>ALTURA \_ DA TEXTURA \_ GL</dt> <dd> 
 
 | Propriedade | Valor |
 |------------------|----------------------------------------------------------|
-| Descrição:     | altura *da imagem* de textura *x* -D                      |
+| Descrição:     | *x* – altura da imagem de textura *D*                      |
 | Grupo de atributos: |                                                          |
 | Valor inicial:   | 0                                                        |
 | Comando Get:     | [**glGetTexLevelParameter**](glgettexlevelparameter.md) |
@@ -73,11 +73,11 @@ ms.locfileid: "107908644"
 
  
 
-</dd> <dt><span id="GL_TEXTURE_BORDER"></span><span id="gl_texture_border"></span>\_borda de textura GL \_</dt> <dd> 
+</dd> <dt><span id="GL_TEXTURE_BORDER"></span><span id="gl_texture_border"></span>BORDA \_ DE TEXTURA \_ GL</dt> <dd> 
 
 | Propriedade | Valor |
 |------------------|----------------------------------------------------------|
-| Descrição:     | borda *da imagem* de textura *x* -D                      |
+| Descrição:     | *x* – borda de *i da imagem* de textura D                      |
 | Grupo de atributos: |                                                          |
 | Valor inicial:   | 0                                                        |
 | Comando Get:     | [**glGetTexLevelParameter**](glgettexlevelparameter.md) |
@@ -86,7 +86,7 @@ ms.locfileid: "107908644"
 
  
 
-</dd> <dt><span id="GL_TEXTURE_COMPONENTS"></span><span id="gl_texture_components"></span>\_componentes de textura GL \_</dt> <dd> 
+</dd> <dt><span id="GL_TEXTURE_COMPONENTS"></span><span id="gl_texture_components"></span>COMPONENTES \_ DE TEXTURA \_ GL</dt> <dd> 
 
 | Propriedade | Valor |
 |------------------|----------------------------------------------------------|
@@ -99,7 +99,7 @@ ms.locfileid: "107908644"
 
  
 
-</dd> <dt><span id="GL_TEXTURE_BORDER_COLOR"></span><span id="gl_texture_border_color"></span>\_cor da \_ borda da textura GL \_</dt> <dd> 
+</dd> <dt><span id="GL_TEXTURE_BORDER_COLOR"></span><span id="gl_texture_border_color"></span>COR DA \_ BORDA \_ DA TEXTURA \_ GL</dt> <dd> 
 
 | Propriedade | Valor |
 |------------------|------------------------------------------------|
@@ -112,59 +112,59 @@ ms.locfileid: "107908644"
 
  
 
-</dd> <dt><span id="GL_TEXTURE_MIN_FILTER"></span><span id="gl_texture_min_filter"></span>\_filtro de \_ mínimo de textura GL \_</dt> <dd> 
+</dd> <dt><span id="GL_TEXTURE_MIN_FILTER"></span><span id="gl_texture_min_filter"></span>FILTRO MIN \_ \_ DE TEXTURA \_ GL</dt> <dd> 
 
 | Propriedade | Valor |
 |------------------|------------------------------------------------|
 | Descrição:     | Função de minificação de textura                  |
 | Grupo de atributos: | textura                                        |
-| Valor inicial:   | GL \_ mais próximo \_ MIPMAP \_ linear                    |
+| Valor inicial:   | GL \_ NEAREST \_ MIPMAP \_ LINEAR                    |
 | Comando Get:     | [**glGetTexParameter**](glgettexparameter.md) |
 
 
 
  
 
-</dd> <dt><span id="GL_TEXTURE_MAG_FILTER"></span><span id="gl_texture_mag_filter"></span>\_ \_ filtro mag de textura GL \_</dt> <dd> 
+</dd> <dt><span id="GL_TEXTURE_MAG_FILTER"></span><span id="gl_texture_mag_filter"></span>FILTRO GL \_ TEXTURE \_ MAG \_</dt> <dd> 
 
 | Propriedade | Valor |
 |------------------|------------------------------------------------|
 | Descrição:     | Função de ampliação de textura                 |
 | Grupo de atributos: | textura                                        |
-| Valor inicial:   | GL \_ linear                                     |
+| Valor inicial:   | GL \_ LINEAR                                     |
 | Comando Get:     | [**glGetTexParameter**](glgettexparameter.md) |
 
 
 
  
 
-</dd> <dt><span id="GL_TEXTURE_WRAP__x"></span><span id="gl_texture_wrap__x"></span><span id="GL_TEXTURE_WRAP__X"></span>Encapsule a textura do GL \_ \_ \_ *x*</dt> <dd> 
+</dd> <dt><span id="GL_TEXTURE_WRAP__x"></span><span id="gl_texture_wrap__x"></span><span id="GL_TEXTURE_WRAP__X"></span>GL \_ TEXTURE \_ WRAP \_ *x*</dt> <dd> 
 
 | Propriedade | Valor |
 |------------------|------------------------------------------------|
 | Descrição:     | Modo de quebra de textura (*x* é S ou T)              |
 | Grupo de atributos: | textura                                        |
-| Valor inicial:   | GL \_ repetir                                     |
+| Valor inicial:   | GL \_ REPEAT                                     |
 | Comando Get:     | [**glGetTexParameter**](glgettexparameter.md) |
 
 
 
  
 
-</dd> <dt><span id="GL_TEXTURE_ENV_MODE"></span><span id="gl_texture_env_mode"></span>modo do GL \_ Texture \_ env \_</dt> <dd> 
+</dd> <dt><span id="GL_TEXTURE_ENV_MODE"></span><span id="gl_texture_env_mode"></span>MODO DE \_ ENV DE \_ TEXTURA \_ GL</dt> <dd> 
 
 | Propriedade | Valor |
 |------------------|--------------------------------------|
 | Descrição:     | Função de aplicativo de textura         |
 | Grupo de atributos: | textura                              |
-| Valor inicial:   | GL \_ modular                         |
-| Comando Get:     | [**glGetTexEnviv**](glgettexenv.md) |
+| Valor inicial:   | GL \_ MODULARTE                         |
+| Comando Get:     | [**glGetTexEn ltda**](glgettexenv.md) |
 
 
 
  
 
-</dd> <dt><span id="GL_TEXTURE_ENV_COLOR"></span><span id="gl_texture_env_color"></span>cor do GL \_ Texture \_ env \_</dt> <dd> 
+</dd> <dt><span id="GL_TEXTURE_ENV_COLOR"></span><span id="gl_texture_env_color"></span>COR DE \_ \_ ENV DE TEXTURA \_ GL</dt> <dd> 
 
 | Propriedade | Valor |
 |------------------|--------------------------------------|
@@ -177,24 +177,24 @@ ms.locfileid: "107908644"
 
  
 
-</dd> <dt><span id="GL_TEXTURE_GEN__x"></span><span id="gl_texture_gen__x"></span><span id="GL_TEXTURE_GEN__X"></span>A \_ textura GL \_ Gen \_ *x*</dt> <dd> 
+</dd> <dt><span id="GL_TEXTURE_GEN__x"></span><span id="gl_texture_gen__x"></span><span id="GL_TEXTURE_GEN__X"></span>GL \_ TEXTURE \_ GEN \_ *x*</dt> <dd> 
 
 | Propriedade | Valor |
 |------------------|------------------------------------------|
-| Descrição:     | Texgen está habilitado (*x* é S, T, R ou Q) |
-| Grupo de atributos: | textura/Habilitar                           |
-| Valor inicial:   | GL \_ falso                                |
+| Descrição:     | O Texgen está habilitado (*x* é S, T, R ou Q) |
+| Grupo de atributos: | textura/habilitar                           |
+| Valor inicial:   | GL \_ FALSE                                |
 | Comando Get:     | [**glIsEnabled**](glisenabled.md)       |
 
 
 
  
 
-</dd> <dt><span id="GL_EYE_PLANE"></span><span id="gl_eye_plane"></span>\_plano de olho GL \_</dt> <dd> 
+</dd> <dt><span id="GL_EYE_PLANE"></span><span id="gl_eye_plane"></span>PLANO \_ DE OLHO \_ GL</dt> <dd> 
 
 | Propriedade | Valor |
 |------------------|--------------------------------------|
-| Descrição:     | Coeficientes da equação do plano Texgen   |
+| Descrição:     | Coeficientes de equação do plano de Texgen   |
 | Grupo de atributos: | textura                              |
 | Valor inicial:   |                                      |
 | Comando Get:     | [**glGetTexGenfv**](glgettexgen.md) |
@@ -203,11 +203,11 @@ ms.locfileid: "107908644"
 
  
 
-</dd> <dt><span id="GL_OBJECT_PLANE"></span><span id="gl_object_plane"></span>\_plano de objeto GL \_</dt> <dd> 
+</dd> <dt><span id="GL_OBJECT_PLANE"></span><span id="gl_object_plane"></span>PLANO \_ DE \_ OBJETO GL</dt> <dd> 
 
 | Propriedade | Valor |
 |------------------|--------------------------------------|
-| Descrição:     | Coeficientes lineares de objeto Texgen    |
+| Descrição:     | Coeficientes lineares do objeto Texgen    |
 | Grupo de atributos: | textura                              |
 | Valor inicial:   |                                      |
 | Comando Get:     | [**glGetTexGenfv**](glgettexgen.md) |
@@ -216,13 +216,13 @@ ms.locfileid: "107908644"
 
  
 
-</dd> <dt><span id="GL_TEXTURE_GEN_MODE"></span><span id="gl_texture_gen_mode"></span>modo do GL \_ Texture \_ Gen \_</dt> <dd> 
+</dd> <dt><span id="GL_TEXTURE_GEN_MODE"></span><span id="gl_texture_gen_mode"></span>MODO GL \_ TEXTURE \_ \_ GEN</dt> <dd> 
 
 | Propriedade | Valor |
 |------------------|--------------------------------------|
-| Descrição:     | Função usada para texgen             |
+| Descrição:     | Função usada para o texgen             |
 | Grupo de atributos: | textura                              |
-| Valor inicial:   | olho do GL \_ \_ linear                      |
+| Valor inicial:   | GL \_ EYE \_ LINEAR                      |
 | Comando Get:     | [**glGetTexGeniv**](glgettexgen.md) |
 
 

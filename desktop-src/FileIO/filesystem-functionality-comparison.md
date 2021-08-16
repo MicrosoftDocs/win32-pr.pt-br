@@ -1,24 +1,24 @@
 ---
-description: Tabelas que listam comparações de suporte a funcionalidades e recursos para os quatro principais sistemas de arquivos do Windows, NTFS, exFAT, UDF e FAT32.
+description: Tabelas que listam as comparações de funcionalidade e recurso para os quatro sistemas de arquivos Windows principais, NTFS, exFAT, UDF e FAT32.
 ms.assetid: 28cf2805-f1ce-46b4-bf08-a329f67f4d99
-title: Comparação de funcionalidade do sistema de arquivos
+title: Comparação de funcionalidades do sistema de arquivos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d7547e48ff68a8fdab195087904a47a535aa3464
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c5af85dbacfd04920d8eb0a9558e0d57cc6e4020da35ffac57f7bdc703e6ef15
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103647666"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119790686"
 ---
-# <a name="file-system-functionality-comparison"></a>Comparação de funcionalidade do sistema de arquivos
+# <a name="file-system-functionality-comparison"></a>Comparação de funcionalidades do sistema de arquivos
 
-As tabelas a seguir listam as comparações de suporte a recursos e funcionalidades para os quatro principais sistemas de arquivos do Windows, NTFS, exFAT, UDF e FAT32:
+As tabelas a seguir listam as comparações de funcionalidade e suporte a recursos para os quatro sistemas de arquivos Windows principais, NTFS, exFAT, UDF e FAT32:
 
 -   [Funcionalidade](#file-system-functionality-comparison)
 -   [Limites](#limits)
 -   [Registro em diário e log de alterações](#journaling-and-change-log)
--   [Bloquear recursos de alocação](#block-allocation-features)
+-   [Recursos de alocação de bloco](#block-allocation-features)
 -   [Segurança](#security)
 -   [Compactação](#compression)
 -   [Cotas](#quotas)
@@ -33,10 +33,10 @@ As tabelas a seguir listam as comparações de suporte a recursos e funcionalida
 |-------------------------------------|--------------------------------|----------------|-------------------------------|----------------------------|
 | Carimbos de data/hora de criação<br/>     | Sim<br/>                 | Sim<br/> | Sim<br/>                | Sim<br/>             |
 | Carimbos de data/hora do último acesso<br/>  | Não (consulte a observação abaixo)<br/> | Sim<br/> | Sim<br/>                | Sim (somente data)<br/> |
-| Carimbos de data da última alteração<br/>  | Sim<br/>                 | Sim<br/> | Sim<br/>                | Sim<br/>             |
+| Carimbos de data/hora da última alteração<br/>  | Sim<br/>                 | Sim<br/> | Sim<br/>                | Sim<br/>             |
 | Carimbos de data/hora do último arquivo<br/> | Não<br/>                  | Não<br/>  | Não<br/>                 | Não<br/>              |
 | Diferenciar maiúsculas de minúsculas<br/>           | Sim (opção)<br/>        | Não<br/>  | Sim<br/>                | Não<br/>              |
-| Preservação de maiúsculas e minúsculas<br/>          | Sim<br/>                 | Sim<br/> | Sim<br/>                | Sim<br/>             |
+| Preservação de caso<br/>          | Sim<br/>                 | Sim<br/> | Sim<br/>                | Sim<br/>             |
 | Links físicos<br/>               | Sim<br/>                 | Não<br/>  | Sim<br/>                | Não<br/>              |
 | Links virtuais<br/>               | Sim<br/>                 | Não<br/>  | Não<br/>                 | Não<br/>              |
 | Arquivos esparsos<br/>             | Sim<br/>                 | Não<br/>  | Sim<br/>                | Não<br/>              |
@@ -50,15 +50,15 @@ As tabelas a seguir listam as comparações de suporte a recursos e funcionalida
 
  
 
-**Windows Server 2003 e Windows XP:** O campo carimbo de data/hora do último acesso ao NTFS é atualizado.
+**Windows Server 2003 e Windows XP:** O campo carimbo de data/hora do último acesso do NTFS é atualizado.
 
-## <a name="limits"></a>Limites
+## <a name="limits"></a>limites
 
 
 
 | Recurso                             | NTFS                                                                                      | exFAT                                                                                     | UDF                                                                                       | FAT32                                                                                     |
 |-------------------------------------|-------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
-| Tamanho máximo do nome do arquivo<br/> | 255 caracteres Unicode<br/>                                                         | 255 caracteres Unicode<br/>                                                         | 127 caracteres ASCII Unicode ou 254<br/>                                            | 255 caracteres Unicode<br/>                                                         |
+| Tamanho máximo do nome do arquivo<br/> | 255 caracteres Unicode<br/>                                                         | 255 caracteres Unicode<br/>                                                         | 127 caracteres Unicode ou 254 ASCII<br/>                                            | 255 caracteres Unicode<br/>                                                         |
 | Tamanho máximo do nome do caminho<br/> | 32.760 caracteres Unicode com cada componente de caminho com até 255 caracteres<br/> | 32.760 caracteres Unicode com cada componente de caminho com até 255 caracteres<br/> | 32.760 caracteres Unicode com cada componente de caminho com até 255 caracteres<br/> | 32.760 caracteres Unicode com cada componente de caminho com até 255 caracteres<br/> |
 | Tamanho máximo do arquivo<br/>        | 2 ^ 64 1 bytes<br/>                                                                   | 2 ^ 64 1 bytes<br/>                                                                   | 2 ^ 64 1 bytes<br/>                                                                   | 4 GiB<br/>                                                                          |
 | Tamanho máximo do volume<br/>      | 16 TB (tamanho de cluster de 4 KB) ou 256TB (tamanho de cluster de 64 KB)<br/>                        | 2 ^ 32 1 clusters (tamanho máximo do cluster = 2 ^ 25 1)<br/>                               | 2 ^ 32 blocos<br/>                                                                    | 2 ^ 32 blocos<br/>                                                                    |
@@ -149,7 +149,7 @@ As tabelas a seguir listam as comparações de suporte a recursos e funcionalida
 
  
 
-**Observação**  O repositório de instância única para NTFS está disponível como parte do recurso de armazenamento de instância única no Windows Server.
+**Observação**  o repositório de instância única para NTFS está disponível como parte do recurso Armazenamento de instância única no Windows Server.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

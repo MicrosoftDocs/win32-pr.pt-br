@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 7ebd6f9f77998e5e975e24ff752a475e3880c0aa
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: dfcce3e008a9959ca279f64c83a898eb2239d007d8fc32dfb5da5942395055bd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455500"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119959536"
 ---
 # <a name="repetition-triggerbasetype-element"></a>Elemento repetition (triggerBaseType)
 
@@ -72,9 +72,9 @@ Se você registrar uma tarefa que contém um gatilho com um intervalo de repeti�
 4.  A próxima tarefa começa no final do terceiro minuto.
 5.  A próxima tarefa é iniciada no final do quarto minuto.
 
-**Windows Server 2003, Windows XP e windows 2000:** Se você registrar uma tarefa que contém um gatilho com um intervalo de repetição igual a um minuto e uma duração de repetição igual a quatro minutos, a tarefa será iniciada quatro vezes.
+**Windows Server 2003, Windows XP e Windows 2000:** Se você registrar uma tarefa que contém um gatilho com um intervalo de repetição igual a um minuto e uma duração de repetição igual a quatro minutos, a tarefa será iniciada quatro vezes.
 
-**Windows Vista, Windows 7, Windows server 2008, Windows 8 e Windows Server 2012:** Normalmente, definir a duração da repetição como um múltiplo exato do intervalo produz os números descritos acima. No entanto, sob determinadas condições de carga pesada, é possível que a duração do tempo limite seja iniciada antes que TaskScheduler possa iniciar o intervalo final da tarefa.
+**Windows Vista, Windows 7, Windows Server 2008, Windows 8 e Windows Server 2012:** Normalmente, definir a duração da repetição como um múltiplo exato do intervalo produz os números descritos acima. No entanto, sob determinadas condições de carga pesada, é possível que a duração do tempo limite seja iniciada antes que TaskScheduler possa iniciar o intervalo final da tarefa.
 
 Para o desenvolvimento de scripts, o padrão de repetição é especificado usando a propriedade [**Trigger. Repetition**](trigger-repetition.md) que é herdada por todos os objetos Trigger.
 
@@ -108,8 +108,8 @@ O XML a seguir define um elemento de gatilho de inicialização que especifica u
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/> |
 
 
 

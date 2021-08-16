@@ -1,5 +1,5 @@
 ---
-description: 'Saiba mais sobre: métodos EsentInstanceUnavailableException'
+description: 'Saiba mais sobre: Métodos EsentInstanceUnavailableException'
 title: 'Métodos EsentInstanceUnavailableException '
 TOCTitle: EsentInstanceUnavailableException methods
 ms:assetid: Methods.T:Microsoft.Isam.Esent.Interop.EsentInstanceUnavailableException
@@ -7,19 +7,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55101888
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: e4e9687580cdacbb054a3e9b6857c9d04d083a96
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a3060b4b7f60e9a686dae31b0e320e4d67abc831e444987773c3f3ed51fecf34
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104566227"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119116026"
 ---
 # <a name="esentinstanceunavailableexception-methods"></a>Métodos EsentInstanceUnavailableException 
 
 Incluir membros protegidos  
 Incluir membros herdados  
 
-O tipo [EsentInstanceUnavailableException](./esentinstanceunavailableexception-class.md) expõe os membros a seguir.
+O [tipo EsentInstanceUnavailableException](./esentinstanceunavailableexception-class.md) expõe os membros a seguir.
 
 ## <a name="methods"></a>Métodos
 
@@ -44,7 +44,7 @@ O tipo [EsentInstanceUnavailableException](./esentinstanceunavailableexception-c
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><a href="/dotnet/api/system.exception.getbaseexception#System_Exception_GetBaseException">GetBaseException</a></td>
+<td><a href="/dotnet/api/system.exception.getbaseexception#System_Exception_GetBaseException">Getbaseexception</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="even">
@@ -59,12 +59,12 @@ O tipo [EsentInstanceUnavailableException](./esentinstanceunavailableexception-c
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><a href="/dotnet/api/system.exception.gettype#System_Exception_GetType">GetType</a></td>
+<td><a href="/dotnet/api/system.exception.gettype#System_Exception_GetType">Gettype</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Método protegido" alt="Protected method" /></td>
-<td><a href="/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">MemberwiseClone</a></td>
+<td><a href="/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Memberwiseclone</a></td>
 <td>(Herdado do <a href="/dotnet/api/system.object">objeto</a>.)</td>
 </tr>
 <tr class="even">
@@ -84,4 +84,4 @@ Parte superior
 
 [Classe EsentInstanceUnavailableException](./esentinstanceunavailableexception-class.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)
