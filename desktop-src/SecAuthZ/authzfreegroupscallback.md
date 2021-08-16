@@ -12,16 +12,16 @@ api_name:
 api_type:
 - UserDefined
 api_location: ''
-ms.openlocfilehash: 7d8942acbc67f122ea79f0b9e98793628b5f21f8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3cce78e261892fede79fb8fc76bc5b0d009342db3e0bf672be2854cb8492bcec
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103663597"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117783760"
 ---
 # <a name="authzfreegroupscallback-callback-function"></a>Função de retorno de chamada AuthzFreeGroupsCallback
 
-A função **AuthzFreeGroupsCallback** é uma função definida pelo aplicativo que libera a memória alocada pela função [**AuthzComputeGroupsCallback**](authzcomputegroupscallback.md) . **AuthzFreeGroupsCallback** é um espaço reservado para o nome da função definida pelo aplicativo.
+A **função AuthzFreeGroupsCallback** é uma função definida pelo aplicativo que libera a memória alocada pela [**função AuthzComputeGroupsCallback.**](authzcomputegroupscallback.md) **AuthzFreeGroupsCallback** é um espaço reservado para o nome da função definida pelo aplicativo.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -38,14 +38,14 @@ void CALLBACK AuthzFreeGroupsCallback(
 
 <dl> <dt>
 
-*pSidAttrArray* \[ no\]
+*pSidAttrArray* \[ Em\]
 </dt> <dd>
 
-Um ponteiro para a memória alocada por [**AuthzComputeGroupsCallback**](authzcomputegroupscallback.md).
+Um ponteiro para a memória alocada por [**AuthzComputeGroupsCallback.**](authzcomputegroupscallback.md)
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Essa função de retorno de chamada não retorna um valor.
 
@@ -59,9 +59,9 @@ As variáveis de atributo devem estar na forma de uma expressão quando usadas c
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                            |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                   |
-| Redistribuível<br/>          | Pacote de ferramentas de administração do Windows Server 2003 no Windows XP<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho XP\]<br/>                            |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                   |
+| Redistribuível<br/>          | Windows Pacote de Ferramentas de Administração do Server 2003 no Windows XP<br/> |
 
 
 

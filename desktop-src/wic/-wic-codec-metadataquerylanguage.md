@@ -1,19 +1,19 @@
 ---
-description: Este tópico apresenta a linguagem de consulta de metadados para o Windows Imaging Component (WIC).
+description: este tópico apresenta a linguagem de consulta de metadados para o componente de Windows Imaging (WIC).
 ms.assetid: 5ffa0a69-b53d-4be3-b802-deaaa743e6bd
 title: Visão geral da linguagem de consulta de metadados
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ee4b55bdc7079565f98411e28977d3d8c41e191f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1c69effefd288f13c72239a41c5ace1a518775337cc496a2defa864d179cd6cc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104559339"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117668224"
 ---
 # <a name="metadata-query-language-overview"></a>Visão geral da linguagem de consulta de metadados
 
-Este tópico apresenta a linguagem de consulta de metadados para o Windows Imaging Component (WIC). Você usa a linguagem de consulta de metadados para criar expressões que localizam dados específicos (itens de metadados) e locais (blocos de metadados) dentro dos metadados de uma imagem.
+este tópico apresenta a linguagem de consulta de metadados para o componente de Windows Imaging (WIC). Você usa a linguagem de consulta de metadados para criar expressões que localizam dados específicos (itens de metadados) e locais (blocos de metadados) dentro dos metadados de uma imagem.
 
 Este tópico inclui as seções a seguir.
 
@@ -117,7 +117,7 @@ Nessa expressão, a parte "/app1/IFD" da expressão é o caminho de navegação 
 -   ulong
 -   INT
 -   uint
--   longlong
+-   Longlong
 -   FLOAT
 -   double
 -   str
@@ -126,26 +126,26 @@ Nessa expressão, a parte "/app1/IFD" da expressão é o caminho de navegação 
 -   bool
 
 > [!Note]  
-> Essa lista especifica apenas os tipos de dados com suporte pela linguagem de consulta de metadados. Use esses tipos de dados ao criar uma expressão de dados de consulta de metadados, como {UShort = 18249}. O WIC retorna o valor do item de metadados na forma de PROPVARIANT, que define seu próprio sistema de tipos.
+> Essa lista especifica apenas os tipos de dados com suporte pela linguagem de consulta de metadados. Use esses tipos de dados ao criar uma expressão de dados de consulta de metadados, como {ushort=18249}. O WIC retorna o valor do item de metadados na forma de PROPVARIANT, que define seu próprio sistema de tipos.
 
  
 
-O "18249" no exemplo é a marca de dados. Esse número específico é definido pela Microsoft para conter a classificação MicrosoftPhoto. A marca de dados pode ser qualquer número, Cadeia de caracteres ou GUID, dependendo do item de dados que você está procurando
+O "18249" no exemplo é a marca de dados. Esse número específico é definido pela Microsoft para conter a classificação MicrosoftPhoto. A marca de dados pode ser qualquer número, cadeia de caracteres ou GUID, dependendo do item de dados que você está procurando
 
-Ao contrário do exemplo de classificação XMP, não há nenhuma colisão de nome para o valor de classificação no bloco App1/IFD. Isso ocorre porque o valor de classificação XMP é realmente armazenado em uma marca UShort diferente, 18246. Assim, a expressão para acessar a classificação XMP no bloco App1/IFD é:
+Ao contrário do exemplo de Classificação XMP, não há nenhuma colisão de nome para o valor de classificação no bloco App1/IFD. Isso porque o valor de classificação XMP é realmente armazenado em uma marca ushort diferente, 18246. Portanto, a expressão para acessar a classificação XMP no bloco App1/IFD é:
 
--   /App1/IFD/{UShort = 18246}
+-   /app1/ifd/{ushort=18246}
 
 > [!Note]  
-> Para obter uma descrição formal da linguagem de consulta de metadados, consulte a seção de resumo da linguagem de consulta de metadados mais adiante neste documento.
+> Para uma descrição formal da linguagem de consulta de metadados, consulte a seção Resumo da Linguagem de Consulta de Metadados mais adiante neste documento.
 
  
 
 ### <a name="escape-character"></a>Caractere de escape
 
-A linguagem de consulta não diferencia maiúsculas de minúsculas e trata todos os caracteres em minúsculas. No entanto, alguns formatos de metadados (como XMP) diferenciam maiúsculas de minúsculas. Ao trabalhar com um formato de metadados que diferencia maiúsculas de minúsculas, use o caractere de barra invertida ( \\ ) quando desejar especificar um caractere maiúsculo.
+A linguagem de consulta não faz maiúsculas de minúsculas e trata todos os caracteres como minúsculos. No entanto, alguns formatos de metadados (como XMP) são sensíveis a minúsculas. Ao trabalhar com um formato de metadados com maiúsculas e minúsculas, use o caractere de invertida ( ) quando quiser \\ especificar um caractere em letras maiúsculas.
 
-O caractere de escape é consumido pelo analisador de idioma e o seguinte caractere que o segue é interpretado diretamente. Por exemplo, a expressão {Char = \\ \\ } é resolvida como ' \\ ' e {Char = \\ C} é resolvido como um C em maiúsculas. Sem o caractere de escape, {Char = \\ } seria uma expressão inválida e {Char = C} seria interpretado como um C em minúsculas. Certifique-se de usar o caractere de escape de barra invertida antes de todas as letras maiúsculas nos formatos de metadados diferenciarem maiúsculas de minúsculas.
+O caractere de escape é consumido pelo analisador de linguagem e o caractere a seguir é interpretado diretamente. Por exemplo, a expressão {char= } é \\ \\ resolvida como ' \\ 'e {char= \\ C} é resolvida como um C em letras maiúsculas. Sem o caractere de escape, {char= } seria uma expressão inválida e \\ {char=C} seria interpretado como um c minúsculo. Certifique-se de usar o caractere de escape de invertida antes de todas as letras maiúsculas em formatos de metadados que sejam sensíveis a maiúsculas e minúsculas.
 
 ### <a name="sample-expressions"></a>Exemplos de expressões
 
@@ -153,25 +153,25 @@ A tabela a seguir fornece algumas expressões de exemplo e descrições de suas 
 
 | Expression                     | Descrição                                                                                                                                                                                                                                                                                                                                                      |
 |--------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| IFD/XMP/EXIF: autor            | Corresponde ao seguinte caminho de navegação: IFD Block-> XMP Block-> Propriedade "Author" no esquema "EXIF".                                                                                                                                                                                                                                            |
-| /\[1 \] IFD/ \[ 0 \] XMP/EXIF: autor | O mesmo que o primeiro item nessa tabela, exceto que o \[ \# \] prefixo descreve qual item deve ser navegado em caso de uma colisão de nomes.                                                                                                                                                                                                                                |
-| /IFD/{UShort = 700}/Author       | O mesmo que o primeiro item nesta tabela, exceto que ele usa uma expressão de dados para referenciar o bloco XMP em vez do nome do bloco "XMP" (o bloco XMP é incorporado sob o identificador curto de marca curta não assinado 700). Além disso, a propriedade "autor" não especifica um esquema. O analisador de consulta tentará corresponder a propriedade em todos os esquemas e retornará a primeira correspondência. |
-| /ifd/xmp                       | Fornece um caminho de navegação para um bloco de metadados. Se o bloco for encontrado, um novo leitor/gravador de metadados será retornado.                                                                                                                                                                                                                                                 |
-| /\[\*\]Texto/palavra-chave            | Obtém ou define a propriedade de palavra-chave para uma parte do PNG. Como a especificação de metadados png permite várias partes de um tipo específico, a \[ \* \] notação Obtém/define a parte do png de dados com a propriedade apropriada. De acordo com a especificação do PNG, duas partes não podem ter as mesmas propriedades.                                                                |
+| ifd/xmp/exif:Author            | Corresponde ao seguinte caminho de navegação: bloco IFD -> bloco XMP -> propriedade "Author" no esquema "Exif".                                                                                                                                                                                                                                            |
+| /\[1 \] ifd/ \[ 0 \] xmp/exif:Author | O mesmo que o primeiro item nesta tabela, exceto que o prefixo descreve qual item navegar em \[ \# \] caso de colisão de nome.                                                                                                                                                                                                                                |
+| /ifd/{ushort=700}/Author       | O mesmo que o primeiro item nesta tabela, exceto que ele usa uma expressão de dados para referenciar o bloco XMP em vez do nome do bloco "xmp" (o bloco XMP é inserido sob o identificador de marca curta não assinado 700). Além disso, a propriedade "Autor" não especifica um esquema. O analisador de consulta tentará corresponder à propriedade em todos os esquemas e retornará a primeira. |
+| /ifd/xmp                       | Fornece um caminho de navegação para um bloco de metadados. Se o bloco for encontrado, um novo leitor/writer de metadados será retornado.                                                                                                                                                                                                                                                 |
+| /\[\*\]tEXt/Keyword            | Obtém ou define a propriedade Keyword para uma parte PNG. Como a especificação de metadados PNG permite várias partes de um tipo específico, a notação obtém/define a parte de dados PNG com a \[ \* \] propriedade apropriada. De acordo com a especificação PNG, duas partes não podem ter as mesmas propriedades.                                                                |
 
 
 
  
 
-Cada bloco de metadados também é identificado exclusivamente pelo GUID de metadados que pode ser usado no lugar do nome de bloco amigável. A sintaxe a seguir pode ser usada no lugar de fornecer nomes de bloco: "/{GUID = GUID}/ \[ n \] {GUID = GUID}/Schema: tagidentifier"
+Cada bloco de metadados também é identificado exclusivamente pelo GUID de metadados que pode ser usado no lugar do nome amigável do bloco. A sintaxe a seguir pode ser usada no lugar de fornecer nomes de bloco: "/{guid=GUID}/ \[ n \] {guid=GUID}/schema:tagidentifier"
 
 A tabela a seguir fornece alguns exemplos inválidos e os motivos pelos quais eles seriam rejeitados. 
 
 | Expressão inválida         | Descrição da rejeição                                                                                                                                                  |
 |----------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| /IFD/ \[ 0 \] \[ 2 \] EXIF/       | Rejeitado porque não há suporte para índices de matriz multidimensionais.                                                                                                    |
-| /IFD/{UShort = 1}/{UShort = 2} | Rejeitado a menos que IFD tenha um tagID = 1, que é um manipulador de metadados que contém um item de metadados com um tagID = 2.                                                        |
-| /{ushort = 1}                | Rejeitado se o processamento da consulta for relativo a um nível superior da hierarquia de metadados. Isso ocorre porque o nível superior contém apenas blocos de metadados e não itens de dados. |
+| /ifd/ \[ 0 \] \[ 2 \] exif/       | Rejeitado porque não há suporte para índices de matriz multidimensional.                                                                                                    |
+| /ifd/{ushort=1}/{ushort=2} | Rejeitado, a menos que o IFD tenha uma tagID=1, que é um manipulador de metadados que contém um item de metadados com uma tagID=2.                                                        |
+| /{ushort=1}                | Rejeitado se o processamento da consulta for relativo a um nível superior da hierarquia de metadados. Isso porque o nível superior contém apenas blocos de metadados e não itens de dados. |
 
 
 
@@ -179,30 +179,30 @@ A tabela a seguir fornece alguns exemplos inválidos e os motivos pelos quais el
 
 ## <a name="photo-metadata-policy-expressions"></a>Expressões de política de metadados de foto
 
-Conforme observado anteriormente, uma expressão de consulta totalmente qualificada começa com uma barra (/). As expressões que não começam com a barra são avaliadas como expressões de política. Uma expressão de política permite consultar os metadados de foto para [Propriedades de shell](https://msdn.microsoft.com/library/ms788673(VS.85).aspx)do Windows relacionadas à imagem. Na seção seleção de dados anteriormente neste documento, a expressão "/XMP/XMP: rating" foi usada para acessar a propriedade de classificação XMP. Essa propriedade também pode ser consultada usando a seguinte expressão de política:
+Conforme mencionado anteriormente, uma expressão de consulta totalmente qualificada começa com uma barra (/). Expressões que não começam com a barra são avaliadas como expressões de política. Uma expressão de política permite que você consulte os metadados de foto para as propriedades Windows [Shell relacionadas](https://msdn.microsoft.com/library/ms788673(VS.85).aspx)à imagem. Na seção Seleção de Dados anteriormente neste documento, a expressão "/xmp/xmp:Rating" foi usada para acessar a propriedade de classificação XMP. Essa propriedade também pode ser consultada usando a seguinte expressão de política:
 
--   System. SimpleRating
+-   System.SimpleRating
 
 Para acessar a propriedade de classificação do esquema MicrosoftPhoto, a seguinte expressão de consulta pode ser usada:
 
--   System. rating
+-   System.Rating
 
-As expressões de política de metadados de foto se comportam de forma diferente das consultas de metadados totalmente qualificadas de maneiras notáveis.
+Expressões de política de metadados de foto se comportam de maneira diferente das consultas de metadados totalmente qualificadas de algumas maneiras notáveis.
 
-Primeiro, ao acessar metadados usando uma expressão de política, o WIC executa a arbitragem e a resolução de conflitos, caso a mesma propriedade esteja disponível em vários blocos de metadados. Por exemplo, os valores de classificação MicrosoftPhoto e XMP são armazenados no bloco App1/IFD e no bloco XMP. A política de metadados de foto determina a precedência para qual valor de bloco é retornado ao ler metadados. Quando você estiver gravando metadados, a política de metadados de foto garantirá que as mesmas propriedades em diferentes blocos sejam consistentes. Se você usar uma consulta de metadados como "/XMP/XMP: rating", será responsável por arbitrar entre os vários locais de metadados.
+Primeiro, ao acessar metadados usando uma expressão de política, o WIC executa a mediação e a resolução de conflitos no caso de a mesma propriedade estar disponível em vários blocos de metadados. Por exemplo, os valores de classificação MicrosoftPhoto e XMP são armazenados no bloco App1/IFD e no bloco XMP. A política de metadados de foto determina a precedência para a qual o valor do bloco é retornado ao ler metadados. Quando você está escrevendo metadados, a política de metadados de foto garante que as mesmas propriedades em blocos diferentes sejam consistentes. Se você usar uma consulta de metadados como "/xmp/xmp:Rating", você será responsável por ser responsável por violar entre os vários locais de metadados.
 
 > [!Note]  
-> Para obter uma lista das expressões de política com suporte e suas políticas de mapeamento, consulte o tópico [políticas de metadados de fotos](photo-metadata-policies.md) .
+> Para ver uma lista das expressões de política com suporte e suas políticas de mapeamento, consulte o tópico Políticas de [metadados de](photo-metadata-policies.md) foto.
 
  
 
-Segundo, as expressões de política de metadados de foto são independentes do formato de imagem, enquanto as consultas de metadados totalmente qualificadas não são. Por exemplo, a consulta "/XMP/XMP: rating" é específica para o formato JPEG. As imagens TIFF também dão suporte a metadados XMP, mas são armazenadas de forma diferente em relação ao JPEG, portanto, a consulta TIFF seria "/IFD/XMP/XMP: rating". No entanto, em ambos os casos, a expressão de política seria "System. SimpleRating".
+Em segundo lugar, as expressões de política de metadados de foto são independentes do formato de imagem, enquanto as consultas de metadados totalmente qualificadas não são. Por exemplo, a consulta "/xmp/xmp:Rating" é específica para o formato JPEG. As imagens TIFF também são suportadas por metadados XMP, mas são armazenadas de maneira diferente em comparação com JPEG, portanto, a consulta TIFF seria "/ifd/xmp/xmp:Rating". No entanto, em ambos os casos, a expressão de política seria "System.SimpleRating".
 
-As expressões de política de metadados de foto fornecem um nível mais alto de abstração e simplicidade quando comparadas a consultas de metadados totalmente qualificadas e, portanto, devem ser preferidas em casos onde o acesso de metadados de nível baixo não é necessário. No entanto, as expressões de política fornecem acesso apenas a um conjunto limitado de metadados de imagem, enquanto a linguagem de consulta de metadados fornece acesso a quase todos os metadados armazenados em um arquivo de imagem.
+As expressões de política de metadados de foto fornecem um nível mais alto de abstração e simplicidade quando comparadas a consultas de metadados totalmente qualificadas e, portanto, devem ser preferenciais em casos em que o acesso a metadados de baixo nível não é necessário. No entanto, as expressões de política fornecem acesso apenas a um conjunto limitado de metadados de imagem, enquanto a linguagem de consulta de metadados fornece acesso a quase todos os metadados armazenados em um arquivo de imagem.
 
 ## <a name="metadata-query-language-summary"></a>Resumo da linguagem de consulta de metadados
 
-A tabela a seguir é uma definição formal da linguagem de consulta de metadados do WIC. Cada símbolo de gramática representa uma expressão composta por outros símbolos. A expressão pode ser outro símbolo ou uma sequência de outros símbolos separados pela barra vertical ( \| ), indicando uma opção "ou". A expressão inteira à direita é uma possível substituição para o símbolo especificado à esquerda. 
+A tabela a seguir é uma definição formal da linguagem de consulta de metadados WIC. Cada símbolo de gramática representa uma expressão feita de outros símbolos. A expressão pode ser outro símbolo ou uma sequência de outros símbolos separados pela barra vertical ( \| ), indicando uma opção "ou". A expressão inteira à direita é uma substituição possível para o símbolo especificado à esquerda. 
 
 | Símbolo                   | Expression                                                                                                                                                                  |
 |--------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -212,11 +212,11 @@ A tabela a seguir é uma definição formal da linguagem de consulta de metadado
 | \<schema name>      | \<item name>                                                                                                                                                           |
 | \<item name>        | \<metadata item> \| <indexed item><index>                                                                                                                  |
 | \<indexed item>     | \<item> \| \<implied metadata>\<item>                                                                                                                        |
-| \<implied metadata> | ' < ' \<name> ' > '                                                                                                                                                    |
+| \<implied metadata> | '<' \<name> '>'                                                                                                                                                    |
 | \<item>             | \<name> \| \<index> \<data> \| \<data>                                                                                                                  |
 | \<data>             | '{' \<data type> '=' \<value> '}'                                                                                                                                 |
 | \<index>            | '\[' \<number> \| \<star> '\]'                                                                                                                                    |
-| \<data type>        | "char" \| "UCHAR" \| "short" \| "UShort" \| "Long" \| "ULONG" " \| int" \| "UINT" \| "LONGLONG" \| "ULONGLONG" \| "Float" \| "Double" \| "Str" " \| WSTR" "GUID" " \| \| bool" |
+| \<data type>        | 'char' \| 'uchar' \| 'short' \| 'ushort' \| 'long' \| 'ulong' \| 'int' \| 'uint' \| 'longlong' \| 'ulonglong' \| 'float' \| \| 'double' 'str' \| 'wstr' \| 'guid' \| 'bool' |
 | \<data value>       | \<number> \| \<name> \| \<guid>                                                                                                                              |
 | \<star>             | '\*'                                                                                                                                                                        |
 | \<number>           | número                                                                                                                                                                      |
@@ -231,22 +231,22 @@ A tabela a seguir é uma definição formal da linguagem de consulta de metadado
 
 <dl> <dt>
 
-**Conceitua**
+**Conceitual**
 </dt> <dt>
 
-[Visão geral do Windows Imaging Component](-wic-about-windows-imaging-codec.md)
+[Windows Visão geral do componente de imagens](-wic-about-windows-imaging-codec.md)
 </dt> <dt>
 
 [Visão geral dos metadados do WIC](-wic-about-metadata.md)
 </dt> <dt>
 
-[Visão geral da leitura e gravação de metadados de imagem](-wic-codec-readingwritingmetadata.md)
+[Visão geral da leitura e da escrita de metadados de imagem](-wic-codec-readingwritingmetadata.md)
 </dt> <dt>
 
 [Visão geral da extensibilidade de metadados](-wic-codec-metadatahandlers.md)
 </dt> <dt>
 
-[Como: codificar novamente uma imagem JPEG com metadados](-wic-codec-jpegmetadataencoding.md)
+[Como codificar uma imagem JPEG com metadados](-wic-codec-jpegmetadataencoding.md)
 </dt> </dl>
 
  

@@ -4,20 +4,20 @@ ms.assetid: dcb69d7e-457e-457b-9eea-15676ed710aa
 title: enrollCustomPKCS10
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 86ad95f483d4bc82136865e94a70ad46e90e1c24
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 937b1e955ecd369794e832f16afff1594ed1df1271494d7172832132d4cb7863
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105747646"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117780025"
 ---
 # <a name="enrollcustompkcs10"></a>enrollCustomPKCS10
 
 O exemplo enrollCustomPKCS10 cria uma solicitação PKCS \# 10 personalizada, envia-a para uma CA (autoridade de certificação) autônoma e instala o certificado emitido no repositório de certificados. Uma autoridade de certificação autônoma não requer Active Directory e não usa modelos.
 
-## <a name="location"></a>Local
+## <a name="location"></a>Localização
 
-Quando você instala o SDK (Software Development Kit) do Microsoft Windows, o exemplo é instalado, por padrão, na pasta *% ProgramFiles%* \\ Microsoft SDKs \\ Windows \\ v 7.0 \\ Samples \\ Security \\ X509 Certificate registro \\ vc \\ enrollCustomPKCS10.
+quando você instala o Microsoft Windows Software Development Kit (SDK), o exemplo é instalado, por padrão, na pasta *% programfiles%* \\ Microsoft SDKs \\ Windows \\ v 7.0 \\ samples \\ Security \\ X509 Certificate registro \\ VC \\ enrollCustomPKCS10.
 
 ## <a name="discussion"></a>Discussão
 

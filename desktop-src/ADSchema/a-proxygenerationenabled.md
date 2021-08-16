@@ -4,8 +4,8 @@ description: TRUE se a geração de proxy estiver habilitada.
 ms.assetid: 8a9ee22d-531d-4ba7-90ba-094f0afb161f
 ms.tgt_platform: multiple
 keywords:
-- Esquema do AD do atributo habilitado para geração de proxy
-- Esquema de AD do atributo proxyGenerationEnabled
+- Esquema do AD de atributo habilitado para geração de proxy
+- Esquema do AD do atributo proxyGenerationEnabled
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e44aaf416821a6cda8bd170f4431b253e00dffc2
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 97e5f609202251371a9d255c18a72af3607ae77e8074eb713f3e0e1dd4da7702
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104086661"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117836786"
 ---
 # <a name="proxy-generation-enabled-attribute"></a>Atributo habilitado para geração de proxy
 
-**True** se a geração de proxy estiver habilitada.
+**TRUE** se a geração de proxy estiver habilitada.
 
 
 
 | Entrada | Valor |
 |-------------------|--------------------------------------|
-| CN                | Habilitado para geração de proxy             |
-| LDAP-Display-Name | proxyGenerationEnabled               |
+| CN                | Geração de proxy habilitada             |
+| Ldap-Display-Name | proxyGenerationEnabled               |
 | Tamanho              | 4 bytes                              |
 | Privilégio de atualização  | \-                                   |
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.2.523               |
-| System-ID-GUID    | 5fd424d6-1262-11d0-a060-00aa006c33ed |
+| System-Id-Guid    | 5fd424d6-1262-11d0-a060-00aa006c33ed |
 | Syntax            | [**Boolean**](s-boolean.md)         |
 
 
@@ -58,15 +58,15 @@ ms.locfileid: "104086661"
 | ID do link                | \-                                                       |
 | MAPI-Id                | 0x81B1                                                   |
 | System-Only            | Falso                                                    |
-| É de valor único       | True                                                     |
+| Tem valor único       | Verdadeiro                                                     |
 | É indexado             | Falso                                                    |
-| No catálogo global      | Falso                                                    |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                             |
+| No Catálogo Global      | Falso                                                    |
+| Descritor de segurança NT | O:BAG:BAD:S:                                             |
 | Range-Lower            | \-                                                       |
 | Range-Upper            | \-                                                       |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000000                                               |
-| Classes usadas em        | [**Endereço-modelo**](c-addresstemplate.md)<br/> |
+| Classes usadas em        | [**Modelo de endereço**](c-addresstemplate.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ ms.locfileid: "104086661"
 | ID do link                | \-                                                       |
 | MAPI-Id                | 0x81B1                                                   |
 | System-Only            | Falso                                                    |
-| É de valor único       | True                                                     |
+| Tem valor único       | Verdadeiro                                                     |
 | É indexado             | Falso                                                    |
-| No catálogo global      | Falso                                                    |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                             |
+| No Catálogo Global      | Falso                                                    |
+| Descritor de segurança NT | O:BAG:BAD:S:                                             |
 | Range-Lower            | \-                                                       |
 | Range-Upper            | \-                                                       |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000000                                               |
-| Classes usadas em        | [**Endereço-modelo**](c-addresstemplate.md)<br/> |
+| Classes usadas em        | [**Modelo de endereço**](c-addresstemplate.md)<br/> |
 
 
 
@@ -100,10 +100,10 @@ ms.locfileid: "104086661"
 | ID do link                | \-                                                       |
 | MAPI-Id                | 0x81B1                                                   |
 | System-Only            | Falso                                                    |
-| É de valor único       | True                                                     |
+| Tem valor único       | Verdadeiro                                                     |
 | É indexado             | Falso                                                    |
-| No catálogo global      | Falso                                                    |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                             |
+| No Catálogo Global      | Falso                                                    |
+| Descritor de segurança NT | O:BAG:BAD:S:                                             |
 | Range-Lower            | \-                                                       |
 | Range-Upper            | \-                                                       |
 | Search-Flags           | 0x00000000                                               |
@@ -121,7 +121,7 @@ ms.locfileid: "104086661"
 | ID do link                | \-                                                       |
 | MAPI-Id                | 0x81B1                                                   |
 | System-Only            | Falso                                                    |
-| É de valor único       | True                                                     |
+| É de valor único       | Verdadeiro                                                     |
 | É indexado             | Falso                                                    |
 | No catálogo global      | Falso                                                    |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                             |
@@ -142,7 +142,7 @@ ms.locfileid: "104086661"
 | ID do link                | \-                                                       |
 | MAPI-Id                | 0x81B1                                                   |
 | System-Only            | Falso                                                    |
-| É de valor único       | True                                                     |
+| É de valor único       | Verdadeiro                                                     |
 | É indexado             | Falso                                                    |
 | No catálogo global      | Falso                                                    |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                             |
@@ -163,7 +163,7 @@ ms.locfileid: "104086661"
 | ID do link                | \-                                                       |
 | MAPI-Id                | 0x81B1                                                   |
 | System-Only            | Falso                                                    |
-| É de valor único       | True                                                     |
+| É de valor único       | Verdadeiro                                                     |
 | É indexado             | Falso                                                    |
 | No catálogo global      | Falso                                                    |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                             |

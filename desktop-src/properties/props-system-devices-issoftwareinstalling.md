@@ -1,19 +1,19 @@
 ---
-description: Se a variante for \_ verdadeira, o instalador do dispositivo estará instalando o software no momento.
+description: Se VARIANT \_ TRUE, o instalador do dispositivo está instalando o software no momento.
 ms.assetid: 7C62C1E3-D3F3-49ce-A19D-B3A1C14E24D6
-title: System. Devices. IsSoftwareInstalling
+title: System.Devices.IsSoftwareInstalling
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 06ba8b61b2c2a11c6e35efb9bafaae69aeb3d01d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 603e011e525e5d56dfe524c7875d87f77d639167190d6671e679feda4312d29c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104010950"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117866703"
 ---
-# <a name="systemdevicesissoftwareinstalling"></a>System. Devices. IsSoftwareInstalling
+# <a name="systemdevicesissoftwareinstalling"></a>System.Devices.IsSoftwareInstalling
 
-Se a variante for \_ verdadeira, o instalador do dispositivo estará instalando o software no momento.
+Se VARIANT \_ TRUE, o instalador do dispositivo está instalando o software no momento.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8"></a>Windows 10, versão 1703, Windows 10, versão 1607, Windows 10, versão 1511, Windows 10, versão 1507, Windows 8.1, Windows 8
 
@@ -63,13 +63,13 @@ propertyDescription
 
 ## <a name="remarks"></a>Comentários
 
-Os valores de PKEY são definidos em Propkey. h.
+Os valores PKEY são definidos em Propkey.h.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[propertyDescription](./propdesc-schema-propertydescription.md)
+[Propertydescription](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -78,19 +78,19 @@ Os valores de PKEY são definidos em Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[numberFormat](./propdesc-schema-numberformat.md)
+[Numberformat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -105,7 +105,7 @@ Os valores de PKEY são definidos em Propkey. h.
 [editControl](./propdesc-schema-editcontrol.md)
 </dt> <dt>
 
-[filterControl](./propdesc-schema-filtercontrol.md)
+[Filtercontrol](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
 [queryControl](./propdesc-schema-querycontrol.md)

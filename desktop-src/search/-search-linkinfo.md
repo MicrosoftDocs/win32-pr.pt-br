@@ -1,5 +1,5 @@
 ---
-description: Armazena informações sobre tipos de link e é usada pela interface IItemPreviewerExt.
+description: Armazena informações sobre tipos de link e é usado pela interface IItemPreviewerExt.
 ms.assetid: c1d525ea-ee80-49fb-9447-20465b8f8654
 title: Estrutura LINKINFO
 ms.topic: reference
@@ -12,18 +12,18 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: de74f7aefb61f12bf85a457e4478aa76f2156410
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 97c106a5a819ac1068501c77555f3eae238c935e2262894c6c250dfc6782188f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104164338"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117863939"
 ---
 # <a name="linkinfo-structure"></a>Estrutura LINKINFO
 
-\[Só há suporte para **LINKINFO** e [**IITEMPREVIEWEREXT**](-search-iitempreviewerext.md) no Windows XP e no Windows Server 2003 e não deve mais ser usado.\]
+\[**LINKINFO** e [**IItemPreviewerExt**](-search-iitempreviewerext.md) têm suporte apenas no Windows XP e Windows Server 2003 e não devem mais ser usados.\]
 
-Armazena informações sobre tipos de link e é usada pela interface [**IItemPreviewerExt**](-search-iitempreviewerext.md) .
+Armazena informações sobre tipos de link e é usado pela interface [**IItemPreviewerExt.**](-search-iitempreviewerext.md)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -50,11 +50,11 @@ typedef struct _LINKINFO {
 **tipo**
 </dt> <dd>
 
-Tipo: **[ **LinkId**](-search-linktype.md)**
+Tipo: **[ **LINKTYPE**](-search-linktype.md)**
 
 </dd> <dd>
 
-O tipo de link especificado ao rastrear ou indexar indicado por uma constante de [**LinkId**](-search-linktype.md) .
+O tipo de link especificado ao rastrear ou indexar indicado por uma [**constante LINKTYPE.**](-search-linktype.md)
 
 </dd> <dt>
 
@@ -65,7 +65,7 @@ Tipo: **BSTR**
 
 </dd> <dd>
 
-Um valor **BSTR** que especifica o tipo de conteúdo.
+Um **valor BSTR** que especifica o tipo de conteúdo.
 
 </dd> <dt>
 
@@ -76,7 +76,7 @@ Tipo: **BSTR**
 
 </dd> <dd>
 
-Um atributo encodingStyle especificado no arquivo WSDL (Web Services Description Language).
+Um atributo EncodingStyle especificado no arquivo WSDL (Linguagem de Descrição dos Serviços Web).
 
 </dd> <dt>
 
@@ -87,14 +87,14 @@ Tipo: **BSTR**
 
 </dd> <dd>
 
-Um valor **BSTR** que especifica a extensão de nome de arquivo.
+Um **valor BSTR** que especifica a extensão de nome de arquivo.
 
 </dd> <dt>
 
 **varData**
 </dt> <dd>
 
-Tipo: **variante**
+Tipo: **VARIANT**
 
 </dd> <dd>
 
@@ -120,14 +120,14 @@ Tipo: **BSTR**
 
 </dd> <dd>
 
-Um valor **BSTR** que especifica uma propriedade CID, uma cadeia de caracteres decimal assinada não preenchida.
+Um **valor BSTR** que especifica uma propriedade Cid, uma cadeia de caracteres decimal assinada não com preenchimento.
 
 </dd> <dt>
 
 **lCodePage**
 </dt> <dd>
 
-Tipo: **longo**
+Tipo: **Longo**
 
 </dd> <dd>
 
@@ -137,7 +137,7 @@ A página de código a ser usada para codificar a cadeia de caracteres.
 
 ## <a name="remarks"></a>Comentários
 
-Para visualizar os anexos com um manipulador de protocolo de terceiros em computadores que executam o Windows XP ou o Windows Server 2003, pode ser necessário usar a estrutura **LINKINFO** e as seguintes APIs: os métodos [**IItemPreviewerExt:: GetLinkedContent**](-search-iitempreviewerext-getlinkedcontent.md) e [**IItemPreviewerExt:: GetRelatedPart**](-search-iitempreviewerext-getrelatedpart.md) e a enumeração [**LinkId**](-search-linktype.md) .
+Para visualizar anexos com um manipulador de protocolo de terceiros em computadores que executam o Windows XP ou o Windows Server 2003, pode ser necessário usar a estrutura **LINKINFO** e as seguintes APIs: os métodos [**IItemPreviewerExt::GetLinkedContent**](-search-iitempreviewerext-getlinkedcontent.md) e [**IItemPreviewerExt::GetRelatedPart**](-search-iitempreviewerext-getrelatedpart.md) e a enumeração [**LINKTYPE.**](-search-linktype.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -145,9 +145,9 @@ Para visualizar os anexos com um manipulador de protocolo de terceiros em comput
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows XP com SP2\]<br/> |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/> |
-| Redistribuível<br/>          | Windows Desktop Search (WDS) 3,0<br/>          |
+| Cliente mínimo com suporte<br/> | Windows XP somente com \[ aplicativos da área de trabalho SP2\]<br/> |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/> |
+| Redistribuível<br/>          | Windows Pesquisa de Área de Trabalho (WDS) 3.0<br/>          |
 
 
 

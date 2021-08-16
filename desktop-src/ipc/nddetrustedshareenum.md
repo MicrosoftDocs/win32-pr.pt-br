@@ -15,12 +15,12 @@ api_type:
 - DllExport
 api_location:
 - Nddeapi.dll
-ms.openlocfilehash: caa3f7c20b95243e03c0c6025d1ff32d60443ab2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fc8eefd335ad9c54e7dc4aefa5a1027785de1b9c33cd3346c8bb1c8a4872b939
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104297298"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117695038"
 ---
 # <a name="nddetrustedshareenum-function"></a>Função NDdeTrustedShareEnum
 
@@ -90,7 +90,7 @@ Um ponteiro para uma variável que recebe o número total de bytes necessários 
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se a função for realizada com sucesso, o valor de retorno será NDDE \_ nenhum \_ erro.
 
@@ -115,7 +115,7 @@ Se a função falhar, o valor de retorno será um código de erro, que pode ser 
 
 <dl> <dt>
 
-[Visão geral de troca dinâmica de dados de rede](network-dynamic-data-exchange.md)
+[visão geral de troca dinâmica de dados de rede](network-dynamic-data-exchange.md)
 </dt> <dt>
 
 [Funções DDE de rede](network-dde-functions.md)

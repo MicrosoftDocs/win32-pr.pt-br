@@ -1,10 +1,10 @@
 ---
-title: MS-TS-Connect-Printer-drives atributo
-description: Unidades de impressora conectar da sessão dos serviços de terminal especifica se as impressoras do cliente mapeadas devem ser reconectadas no logon.
+title: atributo ms-TS-Conexão-Printer-drives
+description: a sessão dos serviços de Terminal Conexão unidades de impressora especifica se deve se reconectar às impressoras do cliente mapeadas no logon.
 ms.assetid: 80bf0ace-5c63-49f8-b689-23a55bb09577
 ms.tgt_platform: multiple
 keywords:
-- MS-TS-Connect-Printer-drives atributo AD Schema
+- ms-TS-Conexão-Printer-drives atributo AD Schema
 - Esquema de AD do atributo msTSConnectPrinterDrives
 topic_type:
 - apiref
@@ -14,22 +14,22 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6d905207bf101c3077b2242311b69c5a61a5378c
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: e4ff7e2e754acd33103ee6df29d2fe3e688e2760f2b31cd65a7200d1ef54df79
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104087041"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117837856"
 ---
-# <a name="ms-ts-connect-printer-drives-attribute"></a>MS-TS-Connect-Printer-drives atributo
+# <a name="ms-ts-connect-printer-drives-attribute"></a>atributo ms-TS-Conexão-Printer-drives
 
-Unidades de impressora conectar da sessão dos serviços de terminal especifica se as impressoras do cliente mapeadas devem ser reconectadas no logon.
+a sessão dos serviços de Terminal Conexão unidades de impressora especifica se deve se reconectar às impressoras do cliente mapeadas no logon.
 
 
 
 | Entrada | Valor |
 |-------------------|--------------------------------------|
-| CN                | MS-TS-Connect-Printer-drives         |
+| CN                | ms-TS-Conexão-Printer-drives         |
 | LDAP-Display-Name | msTSConnectPrinterDrives             |
 | Tamanho              | \-                                   |
 | Privilégio de atualização  | \-                                   |
@@ -55,7 +55,7 @@ Unidades de impressora conectar da sessão dos serviços de terminal especifica 
 | ID do link                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| É de valor único       | True                              |
+| É de valor único       | Verdadeiro                              |
 | É indexado             | Falso                             |
 | No catálogo global      | Falso                             |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |
@@ -76,7 +76,7 @@ Unidades de impressora conectar da sessão dos serviços de terminal especifica 
 | ID do link                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| É de valor único       | True                              |
+| É de valor único       | Verdadeiro                              |
 | É indexado             | Falso                             |
 | No catálogo global      | Falso                             |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |
@@ -97,7 +97,7 @@ Unidades de impressora conectar da sessão dos serviços de terminal especifica 
 | ID do link                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| É de valor único       | True                              |
+| É de valor único       | Verdadeiro                              |
 | É indexado             | Falso                             |
 | No catálogo global      | Falso                             |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |

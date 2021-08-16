@@ -14,16 +14,16 @@ api_type:
 api_location:
 - Comctl32.dll
 ms.assetid: ad94a442-8492-412c-a4f2-ac6e7c5327d7
-ms.openlocfilehash: b62e23cd0604273559e36e561970dd62f117c11d
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: 4ac72c44b670466f10cd708b81b1a84f93a349afcb0d81473ed5e6578c20617a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109841187"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117861588"
 ---
 # <a name="addmrustringw-function"></a>Função AddMRUStringW
 
-\[Essa função está disponível por meio do Windows XP com Service Pack 2 (SP2) e Windows Server 2003. Ele pode ser alterado ou não disponível nas versões subsequentes do Windows. \]
+\[Essa função está disponível por meio Windows XP com Service Pack 2 (SP2) e Windows Server 2003. Ele pode ser alterado ou não disponível nas versões subsequentes do Windows. \]
 
 Adiciona uma cadeia de caracteres à parte superior da lista de MRU (usados mais recentemente).
 
@@ -61,7 +61,7 @@ Um ponteiro para os dados. Isso pode ser uma cadeia de caracteres ou, se a lista
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **int**
 

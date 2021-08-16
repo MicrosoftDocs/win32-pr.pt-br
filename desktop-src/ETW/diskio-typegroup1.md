@@ -21,12 +21,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 9d20f80eb840283600f5d106f89c6cf8032ee746
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3a69643602a59fa7be8cd844f3f2908c92e2e08545f7444d1002ec1542b36730
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104501927"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117814972"
 ---
 # <a name="diskio_typegroup1-class"></a>\_Classe DiskIo TypeGroup1
 
@@ -128,7 +128,7 @@ O tempo entre o início e a conclusão de e/s conforme medido pelo Gerenciador d
 
 **Windows Server 2003:** Essa propriedade tem um valor de [**WmiDataId**](event-tracing-mof-qualifiers.md) de 7.
 
-**Windows 2000 Server e windows 2000 Professional:** Não há suporte para essa propriedade.
+**Windows servidor 2000 e Windows 2000 Professional:** Não há suporte para essa propriedade.
 
 </dd> <dt>
 
@@ -146,7 +146,7 @@ Qualificadores: [**WmiDataId**](event-tracing-mof-qualifiers.md) (7), [**ponteir
 
 O pacote de solicitação de e/s, que identifica a atividade de e/s.
 
-**Windows server 2003, windows 2000 Server e windows 2000 Professional:** Não há suporte para essa propriedade.
+**Windows server 2003, Windows 2000 server e Windows 2000 Professional:** Não há suporte para essa propriedade.
 
 </dd> <dt>
 
@@ -224,7 +224,7 @@ Qualificadores: [**WmiDataId**](event-tracing-mof-qualifiers.md) (9)
 
 O identificador do thread emissor.
 
-**Windows server 2008 R2, Windows server 2008, Windows 7, Windows Vista, Windows server 2003 com SP1, Windows server 2003, windows 2000 Server e windows 2000 Professional:** Não há suporte para essa propriedade.
+**Windows server 2008 R2, Windows server 2008, Windows 7, Windows Vista, Windows server 2003 com SP1, Windows server 2003, Windows 2000 server e Windows 2000 Professional:** Não há suporte para essa propriedade.
 
 </dd> <dt>
 
@@ -244,7 +244,7 @@ Reservado.
 
 **Windows server 2008 R2, Windows server 2008 e Windows 7:** O nome da propriedade é **QueueDepth**, que contém a contagem de tiques da CPU desde o início da operação até o fim da operação. Observe que esse valor pode ser estourado.
 
-**Windows Vista, Windows server 2003 com SP1, Windows Server 2003, windows 2000 Server e windows 2000 Professional:** O nome da propriedade é **ResponseTime**, que contém a contagem de tiques da CPU desde o início da operação até o fim da operação. Observe que esse valor pode ser estourado.
+**Windows Vista, Windows server 2003 com SP1, Windows server 2003, Windows 2000 server e Windows 2000 Professional:** O nome da propriedade é **ResponseTime**, que contém a contagem de tiques da CPU desde o início da operação até o fim da operação. Observe que esse valor pode ser estourado.
 
 </dd> <dt>
 
@@ -266,7 +266,7 @@ Tamanho dos dados lidos ou gravados do disco, em bytes.
 
 ## <a name="remarks"></a>Comentários
 
-O Windows Server 2003 usa a seguinte definição para a classe de tipo de evento **DiskIo \_ TypeGroup1** .
+Windows O servidor 2003 usa a seguinte definição para a classe de tipo de evento **DiskIo \_ TypeGroup1** .
 
 ``` syntax
 [EventType{10, 11}, EventTypeName{"Read", "Write"}]
@@ -286,7 +286,7 @@ A propriedade **ResponseTime** contém a contagem de tiques da CPU desde o iníc
 
 Não há suporte para a propriedade **HighResResponseTime** .
 
-O Windows Server 2003 com SP1 e o Windows Vista usa a seguinte definição para a classe de tipo de evento **DiskIo \_ TypeGroup1** .
+Windows o servidor 2003 com SP1 e Windows Vista usa a seguinte definição para a classe de tipo de evento **DiskIo \_ TypeGroup1** .
 
 ``` syntax
 [EventType{10, 11}, EventTypeName{"Read", "Write"}]

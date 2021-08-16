@@ -1,19 +1,19 @@
 ---
-description: Um link do Shell é um objeto de dados que contém informações usadas para acessar outro objeto no namespace do Shell&\# 8212; ou seja, qualquer objeto visível por meio do Windows Explorer.
+description: um link do shell é um objeto de dados que contém informações usadas para acessar outro objeto no namespace do Shell&\# 8212; ou seja, qualquer objeto visível por meio do Windows Explorer.
 ms.assetid: 32ad306d-54bd-4130-ad30-08db50ef106e
 title: Links do Shell
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 327bcb425f998bcc2a4c0714118d4461ded253ee
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 25f9f5e639cfa3619d5c79b011ab101af7c25ed1813db1c96b9f5422504f8c1a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104170098"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117859018"
 ---
 # <a name="shell-links"></a>Links do Shell
 
-Um *link do Shell* é um objeto de dados que contém informações usadas para acessar outro objeto no namespace do Shell, ou seja, qualquer objeto visível por meio do Windows Explorer. Os tipos de objetos que podem ser acessados por meio de links do Shell incluem arquivos, pastas, unidades de disco e impressoras. Um link do Shell permite que um usuário ou um aplicativo acesse um objeto de qualquer lugar no namespace. O usuário ou o aplicativo não precisa saber o nome atual e o local do objeto.
+um *link do Shell* é um objeto de dados que contém informações usadas para acessar outro objeto no namespace do Shell, ou seja, qualquer objeto visível por meio do Windows Explorer. Os tipos de objetos que podem ser acessados por meio de links do Shell incluem arquivos, pastas, unidades de disco e impressoras. Um link do Shell permite que um usuário ou um aplicativo acesse um objeto de qualquer lugar no namespace. O usuário ou o aplicativo não precisa saber o nome atual e o local do objeto.
 
 -   [Sobre links do Shell](#about-shell-links)
     -   [Resolução de link](#link-resolution)
@@ -26,7 +26,7 @@ Um *link do Shell* é um objeto de dados que contém informações usadas para a
 
 ## <a name="about-shell-links"></a>Sobre links do Shell
 
-O usuário cria um link do Shell escolhendo o comando **criar atalho** no menu de atalho de um objeto. O sistema cria automaticamente um ícone para o link do Shell combinando o ícone do objeto com uma pequena seta (conhecida como ícone de sobreposição de link definido pelo sistema) que aparece no canto inferior esquerdo do ícone. Um link do shell que tem um ícone é chamado de atalho; no entanto, os termos link e atalho do shell são frequentemente usados de maneira intercambiável. Normalmente, o usuário cria atalhos para obter acesso rápido a objetos armazenados em subpastas ou em pastas compartilhadas em outros computadores. Por exemplo, um usuário pode criar um atalho para um documento do Microsoft Word que está localizado em uma subpasta e posicionar o ícone de atalho na área de trabalho. Em seguida, o usuário pode abrir o documento clicando duas vezes no ícone de atalho. Se o documento for movido ou renomeado depois que o atalho for criado, o sistema tentará atualizar o atalho na próxima vez que o usuário o selecionar.
+O usuário cria um link do Shell escolhendo o comando **criar atalho** no menu de atalho de um objeto. O sistema cria automaticamente um ícone para o link do Shell combinando o ícone do objeto com uma pequena seta (conhecida como ícone de sobreposição de link definido pelo sistema) que aparece no canto inferior esquerdo do ícone. Um link do shell que tem um ícone é chamado de atalho; no entanto, os termos link e atalho do shell são frequentemente usados de maneira intercambiável. Normalmente, o usuário cria atalhos para obter acesso rápido a objetos armazenados em subpastas ou em pastas compartilhadas em outros computadores. por exemplo, um usuário pode criar um atalho para um documento Microsoft Word que está localizado em uma subpasta e posicionar o ícone de atalho na área de trabalho. Em seguida, o usuário pode abrir o documento clicando duas vezes no ícone de atalho. Se o documento for movido ou renomeado depois que o atalho for criado, o sistema tentará atualizar o atalho na próxima vez que o usuário o selecionar.
 
 Os aplicativos também podem criar e usar links e atalhos do Shell. Por exemplo, um aplicativo de processamento de texto pode criar um link do Shell para implementar uma lista dos documentos usados mais recentemente. Um aplicativo cria um link do shell usando a interface [**IShellLink**](/windows/desktop/api/Shobjidl_core/nn-shobjidl_core-ishelllinka) para criar um objeto de link do Shell. O aplicativo usa a interface [**IPersistFile**](/windows/win32/api/objidl/nn-objidl-ipersistfile) ou [**IPersistStream**](/windows/win32/api/objidl/nn-objidl-ipersiststream) para armazenar o objeto em um arquivo ou fluxo.
 
@@ -55,7 +55,7 @@ O sistema fornece nomes independentes de local para links de Shell para objetos 
 
 ### <a name="link-files"></a>Vincular arquivos
 
-Quando o usuário cria um atalho para um objeto escolhendo o comando **criar atalho** no menu de atalho do objeto, o Windows armazena as informações necessárias para acessar o objeto em um arquivo de link — um arquivo binário que tem a extensão de nome de arquivo. lnk. Um arquivo de link contém as seguintes informações:
+quando o usuário cria um atalho para um objeto escolhendo o comando **criar atalho** no menu de atalho do objeto, Windows armazena as informações necessárias para acessar o objeto em um arquivo de link — um arquivo binário que tem a extensão de nome de arquivo. lnk. Um arquivo de link contém as seguintes informações:
 
 -   O local (caminho) do objeto referenciado pelo atalho (chamado de objeto correspondente).
 -   O diretório de trabalho do objeto correspondente.
@@ -105,31 +105,31 @@ Assim como outros objetos do Shell, um atalho tem um ícone. O usuário acessa o
 
 ### <a name="shortcut-descriptions"></a>Descrições de atalho
 
-Os atalhos têm descrições, mas o usuário nunca as vê. Um aplicativo pode usar uma descrição para armazenar qualquer informação de texto. As descrições são definidas usando o método [**IShellLink:: SetDescription**](/windows/win32/api/shobjidl_core/nf-shobjidl_core-ishelllinka-setdescription) e recuperadas usando o método [**IShellLink:: GetDescription**](/windows/win32/api/shobjidl_core/nf-shobjidl_core-ishelllinka-getdescription) .
+Os atalhos têm descrições, mas o usuário nunca as vê. Um aplicativo pode usar uma descrição para armazenar qualquer informação de texto. As descrições são definidas usando o [**método IShellLink::SetDescription**](/windows/win32/api/shobjidl_core/nf-shobjidl_core-ishelllinka-setdescription) e recuperadas usando o [**método IShellLink::GetDescription.**](/windows/win32/api/shobjidl_core/nf-shobjidl_core-ishelllinka-getdescription)
 
 ### <a name="shortcut-keyboard-shortcuts"></a>Atalhos de teclado de atalho
 
-Um objeto de atalho pode ter um atalho de teclado associado a ele. Os atalhos de teclado permitem que um usuário pressione uma combinação de teclas para ativar um atalho. Um aplicativo pode definir o atalho de teclado para um atalho usando o método [**IShellLink::**](/windows/win32/api/shobjidl_core/nf-shobjidl_core-ishelllinka-sethotkey) AutoFormat e pode recuperar o atalho de teclado atual usando o método [**IShellLink::**](/windows/win32/api/shobjidl_core/nf-shobjidl_core-ishelllinka-gethotkey) keyshortcut.
+Um objeto de atalho pode ter um atalho de teclado associado a ele. Atalhos de teclado permitem que um usuário pressione uma combinação de teclas para ativar um atalho. Um aplicativo pode definir o atalho de teclado para um atalho usando o método [**IShellLink::SetHotkey**](/windows/win32/api/shobjidl_core/nf-shobjidl_core-ishelllinka-sethotkey) e pode recuperar o atalho de teclado atual usando o método [**IShellLink::GetHotkey.**](/windows/win32/api/shobjidl_core/nf-shobjidl_core-ishelllinka-gethotkey)
 
 ### <a name="item-identifiers-and-identifier-lists"></a>Identificadores de item e listas de identificadores
 
-O Shell usa identificadores de objeto dentro do namespace do Shell. Todos os objetos visíveis no Shell (arquivos, diretórios, servidores, grupos de pastas e assim por diante) têm identificadores exclusivos entre os objetos dentro de sua pasta pai. Esses identificadores são chamados de identificadores de item e têm o tipo de dados [**SHITEMID**](/windows/desktop/api/Shtypes/ns-shtypes-shitemid) , conforme definido no arquivo de cabeçalho Shtypes. h. Um identificador de item é um fluxo de bytes de comprimento variável que contém informações que identificam um objeto dentro de uma pasta. Somente o criador de um identificador de item conhece o conteúdo e o formato do identificador. A única parte de um identificador de item que o Shell usa são os dois primeiros bytes, que especificam o tamanho do identificador.
+O Shell usa identificadores de objeto dentro do namespace do Shell. Todos os objetos visíveis no Shell (arquivos, diretórios, servidores, grupos de trabalho e assim por diante) têm identificadores exclusivos entre os objetos dentro de sua pasta pai. Esses identificadores são chamados de identificadores de item e têm o tipo de dados [**DEMID,**](/windows/desktop/api/Shtypes/ns-shtypes-shitemid) conforme definido no arquivo de header Shtypes.h. Um identificador de item é um fluxo de byte de comprimento variável que contém informações que identificam um objeto dentro de uma pasta. Somente o criador de um identificador de item sabe o conteúdo e o formato do identificador. A única parte de um identificador de item que o Shell usa é os dois primeiros bytes, que especificam o tamanho do identificador.
 
-Cada pasta pai tem seu próprio identificador de item que a identifica em sua própria pasta pai. Assim, qualquer objeto shell pode ser identificado exclusivamente por uma lista de identificadores de item. Uma pasta pai mantém uma lista de identificadores para os itens que ele contém. A lista tem o tipo de dados [**ITEMIDLIST**](/windows/desktop/api/Shtypes/ns-shtypes-itemidlist) . As listas de identificadores de item são alocadas pelo shell e podem ser passadas entre as interfaces do Shell, como [**IShellFolder**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ishellfolder). É importante lembrar que cada identificador em uma lista de identificadores de itens só é significativo no contexto de sua pasta pai.
+Cada pasta pai tem seu próprio identificador de item que o identifica dentro de sua própria pasta pai. Portanto, qualquer objeto Shell pode ser identificado exclusivamente por uma lista de identificadores de item. Uma pasta pai mantém uma lista de identificadores para os itens que ela contém. A lista tem o [**tipo de dados ITEMIDLIST.**](/windows/desktop/api/Shtypes/ns-shtypes-itemidlist) As listas de identificadores de item são alocadas pelo Shell e podem ser passadas entre interfaces do Shell, como [**IShellFolder**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ishellfolder). É importante lembrar que cada identificador em uma lista de identificadores de item só é significativo dentro do contexto de sua pasta pai.
 
-Um aplicativo pode definir a lista de identificadores de itens de um atalho usando o método [**IShellLink:: SetIDList**](/windows/win32/api/shobjidl_core/nf-shobjidl_core-ishelllinka-setidlist) . Esse método é útil ao definir um atalho para um objeto que não é um arquivo, como uma impressora ou unidade de disco. Um aplicativo pode recuperar a lista de identificadores de itens de um atalho usando o método [**IShellLink:: GetIDList**](/windows/win32/api/shobjidl_core/nf-shobjidl_core-ishelllinka-getidlist) .
+Um aplicativo pode definir uma lista de identificadores de item de atalho usando o [**método IShellLink::SetIDList.**](/windows/win32/api/shobjidl_core/nf-shobjidl_core-ishelllinka-setidlist) Esse método é útil ao definir um atalho para um objeto que não é um arquivo, como uma impressora ou unidade de disco. Um aplicativo pode recuperar a lista de identificadores de item de um atalho usando o [**método IShellLink::GetIDList.**](/windows/win32/api/shobjidl_core/nf-shobjidl_core-ishelllinka-getidlist)
 
 ## <a name="using-shell-links"></a>Usando links do Shell
 
-Esta seção contém exemplos que demonstram como criar e resolver atalhos de dentro de um aplicativo baseado em Win32. Esta seção pressupõe que você esteja familiarizado com a programação COM Win32, C++ e OLE.
+Esta seção contém exemplos que demonstram como criar e resolver atalhos de dentro de um aplicativo baseado em Win32. Esta seção pressupo que você está familiarizado com a programação Win32, C++e OLE COM.
 
-### <a name="creating-a-shortcut-and-a-folder-shortcut-to-a-file"></a>Criação de um atalho e um atalho de pasta para um arquivo
+### <a name="creating-a-shortcut-and-a-folder-shortcut-to-a-file"></a>Criando um atalho e um atalho de pasta para um arquivo
 
-A função de exemplo CreateLink no exemplo a seguir cria um atalho. Os parâmetros incluem um ponteiro para o nome do arquivo a ser vinculado, um ponteiro para o nome do atalho que você está criando e um ponteiro para a descrição do link. A descrição consiste na cadeia de caracteres, "atalho para o **nome do arquivo**", em que **nome do arquivo** é o nome do arquivo a ser vinculado.
+A função de exemplo CreateLink no exemplo a seguir cria um atalho. Os parâmetros incluem um ponteiro para o nome do arquivo para vincular, um ponteiro para o nome do atalho que você está criando e um ponteiro para a descrição do link. A descrição consiste na cadeia de caracteres " Atalho para **o** nome do arquivo ", em que nome de arquivo **é** o nome do arquivo ao qual vincular.
 
-Para criar um atalho de pasta usando a função de exemplo CreateLink, chame [**CoCreateInstance**](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance) usando CLSID \_ FolderShortcut, em vez de CLSID \_ ShellLink (CLSID \_ FolderShortcut dá suporte a IShellLink). Todos os outros códigos permanecem os mesmos.
+Para criar um atalho de pasta usando a função de exemplo CreateLink, chame [**CoCreateInstance**](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance) usando CLSID FolderShortcut, em vez de \_ CLSID \_ ShellLink (o CLSID FolderShortcut dá suporte a \_ IShellLink). Todos os outros códigos permanecem os mesmos.
 
-Como CreateLink chama a função [**CoCreateInstance**](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance) , supõe-se que a função [**CoInitialize**](/windows/win32/api/objbase/nf-objbase-coinitialize) já foi chamada. CreateLink usa a interface [**IPersistFile**](/windows/win32/api/objidl/nn-objidl-ipersistfile) para salvar o atalho e a interface [**IShellLink**](/windows/desktop/api/Shobjidl_core/nn-shobjidl_core-ishelllinka) para armazenar o nome e a descrição do arquivo.
+Como CreateLink chama a [**função CoCreateInstance,**](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance) supõe-se que a [**função CoInitialize**](/windows/win32/api/objbase/nf-objbase-coinitialize) já tenha sido chamada. CreateLink usa a interface [**IPersistFile**](/windows/win32/api/objidl/nn-objidl-ipersistfile) para salvar o atalho e a interface [**IShellLink**](/windows/desktop/api/Shobjidl_core/nn-shobjidl_core-ishelllinka) para armazenar o nome e a descrição do arquivo.
 
 
 ```C++
@@ -198,11 +198,11 @@ HRESULT CreateLink(LPCWSTR lpszPathObj, LPCSTR lpszPathLink, LPCWSTR lpszDesc)
 
 ### <a name="resolving-a-shortcut"></a>Resolvendo um atalho
 
-Um aplicativo pode precisar acessar e manipular um atalho criado anteriormente. Essa operação é conhecida como resolver o atalho.
+Um aplicativo pode precisar acessar e manipular um atalho criado anteriormente. Essa operação é conhecida como resolução do atalho.
 
-A função ResolveIt definida pelo aplicativo no exemplo a seguir resolve um atalho. Seus parâmetros incluem um identificador de janela, um ponteiro para o caminho do atalho e o endereço de um buffer que recebe o novo caminho para o objeto. O identificador de janela identifica a janela pai para qualquer caixa de mensagem que o Shell possa precisar exibir. Por exemplo, o Shell pode exibir uma caixa de mensagem se o link estiver em mídia não compartilhada, se ocorrerem problemas de rede, se o usuário precisar inserir um disquete e assim por diante.
+A função ResolveIt definida pelo aplicativo no exemplo a seguir resolve um atalho. Seus parâmetros incluem um identificador de janela, um ponteiro para o caminho do atalho e o endereço de um buffer que recebe o novo caminho para o objeto. O identificador de janela identifica a janela pai para todas as caixas de mensagem que o Shell talvez precise exibir. Por exemplo, o Shell poderá exibir uma caixa de mensagem se o link estiver em mídia não compartilhada, se ocorrerem problemas de rede, se o usuário precisar inserir um disquete e assim por diante.
 
-A função ResolveIt chama a função [**CoCreateInstance**](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance) e pressupõe que a função [**CoInitialize**](/windows/win32/api/objbase/nf-objbase-coinitialize) já foi chamada. Observe que o ResolveIt precisa usar a interface [**IPersistFile**](/windows/win32/api/objidl/nn-objidl-ipersistfile) para armazenar as informações de link. **IPersistFile** é implementado pelo objeto [**IShellLink**](/windows/desktop/api/Shobjidl_core/nn-shobjidl_core-ishelllinka) . As informações de link devem ser carregadas antes da recuperação das informações de caminho, que são mostradas posteriormente no exemplo. A falha ao carregar as informações do link faz com que as chamadas para as funções de membro [**IShellLink:: GetPath**](/windows/win32/api/shobjidl_core/nf-shobjidl_core-ishelllinka-getpath) e [**IShellLink:: GetDescription**](/windows/win32/api/shobjidl_core/nf-shobjidl_core-ishelllinka-getdescription) falhem.
+A função ResolveIt chama a [**função CoCreateInstance**](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance) e assume que a [**função CoInitialize**](/windows/win32/api/objbase/nf-objbase-coinitialize) já foi chamada. Observe que ResolveIt precisa usar a interface [**IPersistFile**](/windows/win32/api/objidl/nn-objidl-ipersistfile) para armazenar as informações de link. **IPersistFile** é implementado pelo [**objeto IShellLink.**](/windows/desktop/api/Shobjidl_core/nn-shobjidl_core-ishelllinka) As informações de link devem ser carregadas antes que as informações de caminho sejam recuperadas, o que é mostrado posteriormente no exemplo. A falha ao carregar as informações de link faz com que as chamadas para as funções membro [**IShellLink::GetPath**](/windows/win32/api/shobjidl_core/nf-shobjidl_core-ishelllinka-getpath) e [**IShellLink::GetDescription**](/windows/win32/api/shobjidl_core/nf-shobjidl_core-ishelllinka-getdescription) falhem.
 
 
 ```C++
@@ -306,15 +306,15 @@ HRESULT ResolveIt(HWND hwnd, LPCSTR lpszLinkFile, LPWSTR lpszPath, int iPathBuff
 
 
 
-### <a name="creating-a-shortcut-to-a-nonfile-object"></a>Criando um atalho para um objeto não arquivo
+### <a name="creating-a-shortcut-to-a-nonfile-object"></a>Criando um atalho para um objeto nonfile
 
-A criação de um atalho para um objeto não arquivo, como uma impressora, é semelhante à criação de um atalho para um arquivo, exceto que, em vez de definir o caminho para o arquivo, você deve definir a lista de identificadores para a impressora. Para definir a lista de identificadores, chame o método [**IShellLink:: SetIDList**](/windows/win32/api/shobjidl_core/nf-shobjidl_core-ishelllinka-setidlist) , especificando o endereço de uma lista de identificadores.
+A criação de um atalho para um objeto não arquivo, como uma impressora, é semelhante à criação de um atalho para um arquivo, exceto que, em vez de definir o caminho para o arquivo, você deve definir a lista de identificadores para a impressora. Para definir a lista de identificadores, chame o [**método IShellLink::SetIDList,**](/windows/win32/api/shobjidl_core/nf-shobjidl_core-ishelllinka-setidlist) especificando o endereço de uma lista de identificadores.
 
-Cada objeto dentro do namespace do Shell tem um identificador de item. O Shell muitas vezes concatena identificadores de item em listas de terminação nula que consistem em qualquer número de identificadores de item. Para obter mais informações sobre identificadores de item, consulte [identificadores de item e listas de identificadores](#item-identifiers-and-identifier-lists).
+Cada objeto dentro do namespace do Shell tem um identificador de item. O Shell geralmente concatena identificadores de item em listas terminadas em nulo que consistem em qualquer número de identificadores de item. Para obter mais informações sobre identificadores de item, consulte [Identificadores de item e listas de identificadores](#item-identifiers-and-identifier-lists).
 
-Em geral, se você precisar definir um atalho para um item que não tem um nome de arquivo, como uma impressora, você já terá um ponteiro para a interface [**IShellFolder**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ishellfolder) do objeto. **IShellFolder** é usado para criar extensões de namespace.
+Em geral, se você precisar definir um atalho para um item que não tem um nome de arquivo, como uma impressora, você já terá um ponteiro para a interface [**IShellFolder**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ishellfolder) do objeto. **IShellFolder é** usado para criar extensões de namespace.
 
-Depois de ter o identificador de classe para [**IShellFolder**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ishellfolder), você pode chamar a função [**CoCreateInstance**](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance) para recuperar o endereço da interface. Em seguida, você pode chamar a interface para enumerar os objetos na pasta e recuperar o endereço do identificador de item para o objeto que você está procurando. Por fim, você pode usar o endereço em uma chamada para a função de membro [**IShellLink:: SetIDList**](/windows/win32/api/shobjidl_core/nf-shobjidl_core-ishelllinka-setidlist) para criar um atalho para o objeto.
+Depois de ter o identificador de classe [**para IShellFolder**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ishellfolder), você pode chamar a [**função CoCreateInstance**](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance) para recuperar o endereço da interface. Em seguida, você pode chamar a interface para enumerar os objetos na pasta e recuperar o endereço do identificador de item para o objeto que você está procurando. Por fim, você pode usar o endereço em uma chamada para a função membro [**IShellLink::SetIDList**](/windows/win32/api/shobjidl_core/nf-shobjidl_core-ishelllinka-setidlist) para criar um atalho para o objeto .
 
  
 

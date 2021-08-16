@@ -4,12 +4,12 @@ description: À medida que o computador é usado ao longo do tempo, os pontos de
 ms.assetid: 9581eff5-44d0-407e-b7cb-d3e13910a936
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c4c5ff4aef88ec9eca591ee3c1afb1ad570689a1
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 99d7e54fd12bbb05dacd0c388c1867319189924d761a43d90c6f2a9f718f26e6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105763259"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117857516"
 ---
 # <a name="restoring-the-system"></a>Restaurando o sistema
 
@@ -21,11 +21,11 @@ Para garantir que seu aplicativo tenha o comportamento desejado após uma restau
 
 -   Não armazene informações no registro que impeçam o acesso do usuário a arquivos de dados pessoais ou aplicativos na restauração do sistema. Caso contrário, você deve fornecer um mecanismo pelo qual o usuário possa baixar e reinstalar os aplicativos sem precisar pagá-los novamente.
 -   Use a [API de restauração do sistema](system-restore-api.md) para criar pontos de restauração significativos na instalação e na desinstalação.
--   No Windows XP, os principais binários do aplicativo a serem protegidos devem usar extensões consistentes com as usadas no Filelist.xml. Para obter mais informações, consulte [extensões de nome de arquivo monitorado](monitored-file-extensions.md). Esse arquivo não é usado pelo Windows 7 e pelo Windows Vista. Não use tipos de extensão monitorados para arquivos editáveis pelo usuário. Por exemplo, se você nomear o arquivo de dados pessoais de um usuário usando a extensão. ini, o usuário poderá perder o trabalho como resultado de uma restauração do sistema.
+-   no Windows XP, os principais binários do aplicativo a serem protegidos devem usar extensões consistentes com as usadas em Filelist.xml. Para obter mais informações, consulte [extensões de nome de arquivo monitorado](monitored-file-extensions.md). esse arquivo não é usado pelo Windows 7 e Windows Vista. Não use tipos de extensão monitorados para arquivos editáveis pelo usuário. Por exemplo, se você nomear o arquivo de dados pessoais de um usuário usando a extensão .ini, o usuário poderá perder o trabalho como resultado de uma restauração do sistema.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,9 +1,9 @@
 ---
-title: PLAYLIST.columnCount
+title: PLAYLIST. columnCount
 description: O atributo columnCount recupera o número de colunas exibidas.
 ms.assetid: 967e711c-302a-429a-89bd-dcfd9d4dbe45
 keywords:
-- PLAYLIST.columnCount Windows Media Player
+- Windows Media Player de PLAYLIST. columnCount
 topic_type:
 - apiref
 api_name:
@@ -19,9 +19,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117747088"
 ---
-# <a name="playlistcolumncount"></a>PLAYLIST.columnCount
+# <a name="playlistcolumncount"></a>PLAYLIST. columnCount
 
-O **atributo columnCount** recupera o número de colunas exibidas.
+O atributo **ColumnCount** recupera o número de colunas exibidas.
 
 ``` syntax
         elementID.columnCount
@@ -29,7 +29,7 @@ O **atributo columnCount** recupera o número de colunas exibidas.
 
 ## <a name="possible-values"></a>Valores possíveis
 
-Esse atributo é um Número somente **leitura** (**long).**
+Esse atributo é um **número** somente leitura (**Long**).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -37,7 +37,7 @@ Esse atributo é um Número somente **leitura** (**long).**
 
 | Requisito | Valor |
 |--------------------|------------------------------------------------------|
-| Versão<br/> | Windows Media Player versão 7.0 ou posterior<br/> |
+| Versão<br/> | Windows Media Player versão 7,0 ou posterior<br/> |
 
 
 

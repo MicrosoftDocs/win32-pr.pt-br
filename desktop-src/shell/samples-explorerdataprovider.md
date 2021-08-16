@@ -9,12 +9,12 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: 6bd15cbef62ff69efcccd28fcb625fc1432fdf89
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 223f498f42e33dda09206b1e21a44138fda54e261ec957efb62e55148a014d6e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104171550"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117677833"
 ---
 # <a name="explorer-data-provider-sample"></a>Exemplo de provedor de dados do Explorer
 
@@ -22,7 +22,7 @@ Demonstra como implementar uma extensão de namespace de Shell, incluindo o comp
 
 Este tópico inclui as seções a seguir.
 
--   [Requisitos](#requirements)
+-   [Requirements](#requirements)
 -   [Baixando o exemplo](#downloading-the-sample)
 -   [Compilando o exemplo](#building-the-sample)
 -   [Executando o exemplo](#running-the-sample)
@@ -53,14 +53,14 @@ Para criar o exemplo do prompt de comando:
 1.  Abra a janela do prompt de comando e navegue até o diretório do projeto **ExplorerDataProvider** .
 2.  Digite `msbuild ExplorerDataProvider.sln`.
 
-Para criar o exemplo usando Microsoft Visual Studio (preferencial):
+para criar o exemplo usando Microsoft Visual Studio (preferencial):
 
-1.  Abra o Windows Explorer e navegue até o diretório do projeto **ExplorerDataProvider** .
+1.  abra Windows Explorer e navegue até o diretório do projeto **ExplorerDataProvider** .
 2.  Clique duas vezes no ícone do arquivo ExplorerDataProvider. sln para abrir o projeto no Visual Studio.
-3.  No menu **Compilar** , selecione **Compilar solução**. A DLL será criada no diretório padrão de \\ depuração ou de \\ liberação.
+3.  No menu **Compilar**, selecione **Compilar Solução**. A DLL será criada no diretório padrão de \\ depuração ou de \\ liberação.
 
 > [!Note]  
-> Na versão deste exemplo incluída no SDK do Windows, a configuração para a compilação de versão de 64 bits não inclui o arquivo ExplorerDataProvider. def na opção de **arquivo de definição de módulo** do vinculador. Você deve especificar esse arquivo antes de Compilar em um ambiente de 64 bits. Adicione a linha `ModuleDefinitionFile="ExplorerDataProvider.def"` à seção VCLinkerTool (começa na linha 329) do arquivo ExplorerDataProvider. vcproj, como mostrado aqui:
+> na versão deste exemplo incluída no SDK do Windows, a configuração para a compilação de versão de 64 bits não inclui o arquivo ExplorerDataProvider. def na opção de **arquivo de definição de módulo** do vinculador. Você deve especificar esse arquivo antes de Compilar em um ambiente de 64 bits. Adicione a linha `ModuleDefinitionFile="ExplorerDataProvider.def"` à seção VCLinkerTool (começa na linha 329) do arquivo ExplorerDataProvider. vcproj, como mostrado aqui:
 >
 > <span codelanguage=""></span>
 >
@@ -84,7 +84,7 @@ Para criar o exemplo usando Microsoft Visual Studio (preferencial):
 >
 > ## <a name="running-the-sample"></a>Executando o exemplo
 >
-> 1.  Navegue até o diretório que contém o novo arquivo. dll e. propDesc, usando o prompt de comando ou o Windows Explorer.
+> 1.  navegue até o diretório que contém o novo arquivo .dll e. propdesc, usando o prompt de comando ou o gerenciador de Windows.
 > 2.  Na linha de comando, digite `regsvr32.exe` .
 >     > [!Note]  
 >     > Se você executar esse comando em um prompt de comando elevado, o registro automático também registrará o arquivo. propDesc automaticamente. Se ele for executado de um prompt de comando sem privilégios elevados, a extensão do namespace funcionará, mas sem a funcionalidade de propriedade personalizada.

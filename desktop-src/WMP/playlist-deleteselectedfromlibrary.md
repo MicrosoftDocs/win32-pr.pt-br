@@ -1,9 +1,9 @@
 ---
-title: PLAYLIST.deleteSelectedFromLibrary
-description: O método deleteSelectedFromLibrary exclui o item selecionado da playlist e da biblioteca.
+title: PLAYLIST. deleteSelectedFromLibrary
+description: O método deleteSelectedFromLibrary exclui o item selecionado da lista de reprodução e da biblioteca.
 ms.assetid: 04775d62-91dc-4c08-a864-0301fbc1995f
 keywords:
-- PLAYLIST.deleteSelectedFromLibrary Windows Media Player
+- Windows Media Player de PLAYLIST. deleteSelectedFromLibrary
 topic_type:
 - apiref
 api_name:
@@ -20,9 +20,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117747069"
 ---
-# <a name="playlistdeleteselectedfromlibrary"></a>PLAYLIST.deleteSelectedFromLibrary
+# <a name="playlistdeleteselectedfromlibrary"></a>PLAYLIST. deleteSelectedFromLibrary
 
-O **método deleteSelectedFromLibrary** exclui o item selecionado da playlist e da biblioteca.
+O método **deleteSelectedFromLibrary** exclui o item selecionado da lista de reprodução e da biblioteca.
 
 ``` syntax
         elementID.deleteSelectedFromLibrary()
@@ -42,7 +42,7 @@ Esse método não retorna um valor.
 
 | Requisito | Valor |
 |--------------------|------------------------------------------------------|
-| Versão<br/> | Windows Media Player versão 7.0 ou posterior<br/> |
+| Versão<br/> | Windows Media Player versão 7,0 ou posterior<br/> |
 
 
 
@@ -53,7 +53,7 @@ Esse método não retorna um valor.
 [**Elemento PLAYLIST**](playlist-element.md)
 </dt> <dt>
 
-[**PLAYLIST.deleteSelected**](playlist-deleteselected.md)
+[**PLAYLIST. deleteSelected**](playlist-deleteselected.md)
 </dt> </dl>
 
  

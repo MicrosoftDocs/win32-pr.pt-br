@@ -1,17 +1,17 @@
 ---
-title: Recuperando a unidade e o status do disco
-description: Recuperando a unidade e o status do disco
+title: Recuperando o status da unidade e do disco
+description: Recuperando o status da unidade e do disco
 ms.assetid: 5e3e6107-d2bc-450c-a86e-5d3ef7b3092a
 keywords:
 - Windows Media Player, gravação de CD
-- modelo de objeto Windows Media Player, gravação de CD
+- Windows Media Player modelo de objeto, gravação de CD
 - modelo de objeto, gravação de CD
-- controle de ActiveX de Windows Media Player, gravação de CD
-- controle de ActiveX, gravação de CD
-- Windows Media Player controle de ActiveX móvel, gravação de CD
-- Windows Media Player Mobilidade, gravação de CD
-- Gravação de CD, recuperando a unidade e o status do disco
-- gravando CDs, recuperando a unidade e o status do disco
+- Windows Media Player ActiveX controle, gravação de CD
+- ActiveX controle, gravação de CD
+- Windows Media Player Controle de ActiveX móvel, gravação de CD
+- Windows Media Player Móvel, gravação de CD
+- Gravação de CD, recuperação do status da unidade e do disco
+- CDs de gravação, recuperando o status da unidade e do disco
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 664315972158b4cf68e7f766f98be095a27d7fa8496f983305cc6baaafe784d6
@@ -21,9 +21,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117746268"
 ---
-# <a name="retrieving-the-drive-and-disc-status"></a>Recuperando a unidade e o status do disco
+# <a name="retrieving-the-drive-and-disc-status"></a>Recuperando o status da unidade e do disco
 
-Antes de iniciar uma operação de gravação de CD, você deve garantir que a unidade de CD-ROM selecionada dê suporte à operação que você deseja executar. Por exemplo, você deve verificar se um CD pode ser apagado antes de chamar [IWMPCdromBurn:: Erase](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpcdromburn-erase). O código a seguir mostra um exemplo de como usar [IWMPCdromBurn:: IsAvailable](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpcdromburn-isavailable) para determinar se há suporte para uma operação:
+Antes de iniciar uma operação de gravação de CD, você deve garantir que a unidade CD-ROM selecionada seja compatível com a operação que você deseja executar. Por exemplo, você deve verificar se um CD é capaz de ser apagado antes de chamar [IWMPCdrom Ltd::erase](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpcdromburn-erase). O código a seguir mostra um exemplo de como [usar IWMPCdrom Gates::isAvailable](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpcdromburn-isavailable) para determinar se há suporte para uma operação:
 
 
 ```C++
@@ -52,19 +52,19 @@ if (SUCCEEDED(hr))
 
 <dl> <dt>
 
-[**Gravando um CD**](burning-a-cd.md)
+[**Gravar um CD**](burning-a-cd.md)
 </dt> <dt>
 
 [**Recuperar a interface de gravação de CD**](retrieving-the-cd-burning-interface.md)
 </dt> <dt>
 
-[**Iniciando o processo de gravação**](starting-the-burn-process.md)
+[**Iniciando o processo de burn**](starting-the-burn-process.md)
 </dt> <dt>
 
-[**Apagando um CD regravável**](erasing-a-rewritable-cd.md)
+[**Apagando um CD reeritável**](erasing-a-rewritable-cd.md)
 </dt> <dt>
 
-[**Recuperando o status da gravação**](retrieving-the-burn-status.md)
+[**Recuperando o status de burn**](retrieving-the-burn-status.md)
 </dt> </dl>
 
  

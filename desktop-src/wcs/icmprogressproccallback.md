@@ -3,7 +3,7 @@ title: Função de retorno de chamada ICMProgressProcCallback
 description: A função ICMProgressProcCallback é uma função de retorno de chamada fornecida pelo aplicativo que relata o progresso e permite que o aplicativo cancele o processamento de cores.
 ms.assetid: 4e0bfa4c-f0eb-4776-98d6-90d9adf71bee
 keywords:
-- Função de retorno de chamada ICMProgressProcCallback sistema de cores do Windows
+- função de retorno de chamada ICMProgressProcCallback Windows sistema de cores
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ ms.localizationpriority: high
 ms.topic: article
 ms.date: 05/31/2018
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 8acf790a135a41e4eabb4a67c2498f1ed914c4c8
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d697bb09b4871f6debb1a41a7ecc3e795307ee544ec30bfaf4b5b44ba0328578
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105769668"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117671382"
 ---
 # <a name="icmprogressproccallback-callback-function"></a>Função de retorno de chamada ICMProgressProcCallback
 
@@ -65,7 +65,7 @@ Especifica os dados que são passados pelo aplicativo para uma função ICM2, qu
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Essa função retorna **true** para continuar o processamento de bitmap. O valor de retorno é **false** para cancelar o processamento. Se o processamento for cancelado, a função de chamada retornará zero para indicar falha, embora seu buffer de saída possa ser parcialmente preenchido.
 

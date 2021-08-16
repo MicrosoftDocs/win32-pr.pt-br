@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 6fd92a69a236e6b4d04d5bb0a1a8b961c699d434
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 18c990e3140dcfc6a4cbc2d57379431075387f43af8fbb0b22f344ffd0b9a30b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105752423"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117784928"
 ---
 # <a name="adding-users-to-an-application-group-in-script"></a>Adicionando usuários a um grupo de aplicativos no script
 

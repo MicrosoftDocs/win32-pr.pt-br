@@ -1,11 +1,11 @@
 ---
-title: Evento Player. MediaCollectionAttributeStringRemoved
-description: O evento MediaCollectionAttributeStringRemoved ocorre quando um valor de atributo é removido da biblioteca. | Evento Player. MediaCollectionAttributeStringRemoved
+title: Evento Player.MediaCollectionAttributeStringRemoved
+description: O evento MediaCollectionAttributeStringRemoved ocorre quando um valor de atributo é removido da biblioteca. | Evento Player.MediaCollectionAttributeStringRemoved
 ms.assetid: f1253996-10d1-42fa-89f9-1e52ca830aea
 keywords:
-- Windows Media Player de eventos MediaCollectionAttributeStringRemoved
-- Windows Media Player de eventos MediaCollectionAttributeStringRemoved, classe Player
-- classe de jogador Windows Media Player, evento MediaCollectionAttributeStringRemoved
+- Evento MediaCollectionAttributeStringRemoved Windows Media Player
+- Evento MediaCollectionAttributeStringRemoved Windows Media Player , classe Player
+- Classe player Windows Media Player evento , MediaCollectionAttributeStringRemoved
 topic_type:
 - apiref
 api_name:
@@ -23,9 +23,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117747402"
 ---
-# <a name="playermediacollectionattributestringremoved-event"></a>Evento Player. MediaCollectionAttributeStringRemoved
+# <a name="playermediacollectionattributestringremoved-event"></a>Evento Player.MediaCollectionAttributeStringRemoved
 
-O evento **MediaCollectionAttributeStringRemoved** ocorre quando um valor de atributo é removido da biblioteca.
+O **evento MediaCollectionAttributeStringRemoved** ocorre quando um valor de atributo é removido da biblioteca.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -46,14 +46,14 @@ Player.MediaCollectionAttributeStringRemoved(
 *bstrAttribName* 
 </dt> <dd>
 
-**Cadeia de caracteres** que especifica o nome do atributo. para obter informações sobre os atributos com suporte pelo Windows Media Player, consulte a [referência de atributo](attribute-reference.md)Windows Media Player.
+**Cadeia** de caracteres que especifica o nome do atributo. Para obter informações sobre os atributos com suporte do Windows Media Player, consulte a Referência Windows Media Player [atributo de referência.](attribute-reference.md)
 
 </dd> <dt>
 
 *bstrAttribVal* 
 </dt> <dd>
 
-**Cadeia de caracteres** que especifica o valor do atributo.
+**Cadeia** de caracteres que especifica o valor do atributo.
 
 </dd> </dl>
 
@@ -63,9 +63,9 @@ Esse evento não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-Quando um item de mídia é removido da biblioteca, seus metadados são removidos do objeto **mediacollection** e esse evento é acionado para cada atributo removido.
+Quando um item de mídia é removido da biblioteca, seus metadados são removidos do objeto **MediaCollection** e esse evento é acionado para cada atributo removido.
 
-o valor dos parâmetros de evento é especificado por Windows Media Player e pode ser acessado ou passado para um método em um arquivo de JScript importado usando o nome de parâmetro fornecido. Esse nome de parâmetro deve ser digitado exatamente como mostrado, incluindo a capitalização.
+O valor dos parâmetros de evento é especificado por Windows Media Player e pode ser acessado ou passado para um método em um arquivo JScript importado usando o nome do parâmetro especificado. Esse nome de parâmetro deve ser digitado exatamente como mostrado, incluindo a capitalização.
 
 **Windows Media Player 10 Mobile:** Não há suporte para esse evento.
 
@@ -75,7 +75,7 @@ o valor dos parâmetros de evento é especificado por Windows Media Player e pod
 
 | Requisito | Valor |
 |--------------------|------------------------------------------------------------------------------------|
-| Versão<br/> | Windows Media Player versão 7,0 ou posterior.<br/>                              |
+| Versão<br/> | Windows Media Player versão 7.0 ou posterior.<br/>                              |
 | DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
@@ -84,13 +84,13 @@ o valor dos parâmetros de evento é especificado por Windows Media Player e pod
 
 <dl> <dt>
 
-[**Objeto mediacollection**](mediacollection-object.md)
+[**Objeto MediaCollection**](mediacollection-object.md)
 </dt> <dt>
 
-[**Objeto de jogador**](player-object.md)
+[**Objeto Player**](player-object.md)
 </dt> <dt>
 
-[**Player. mediacollection**](player-mediacollection.md)
+[**Player.mediaCollection**](player-mediacollection.md)
 </dt> </dl>
 
  

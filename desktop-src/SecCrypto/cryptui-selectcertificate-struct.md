@@ -1,7 +1,7 @@
 ---
 description: Contém informações sobre a caixa de diálogo exibida pela função CryptUIDlgSelectCertificate.
 ms.assetid: 073a67a0-427b-4b81-82a0-1bb0a216a335
-title: Estrutura de CRYPTUI_SELECTCERTIFICATE_STRUCT
+title: CRYPTUI_SELECTCERTIFICATE_STRUCT estrutura
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 3db7e59006e964b7335a4a246fb63d7ca7b80577
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1f8cc80f740e26ac2d067705c9aac9aee387b91e28cb057366587375c874ae0b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105755952"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117768230"
 ---
-# <a name="cryptui_selectcertificate_struct-structure"></a>\_Estrutura de \_ struct CRYPTUI SELECTCERTIFICATE
+# <a name="cryptui_selectcertificate_struct-structure"></a>Estrutura \_ STRUCT CRYPTUI SELECTCERTIFICATE \_
 
-A estrutura de **\_ \_ struct CRYPTUI SELECTCERTIFICATE** contém informações sobre a caixa de diálogo exibida pela função [**CryptUIDlgSelectCertificate**](cryptuidlgselectcertificate.md) .
+A **estrutura \_ \_ STRUCT CRYPTUI SELECTCERTIFICATE** contém informações sobre a caixa de diálogo exibida pela [**função CryptUIDlgSelectCertificate.**](cryptuidlgselectcertificate.md)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -55,33 +55,33 @@ typedef struct _CRYPTUI_SELECTCERTIFICATE_STRUCT {
 
 <dl> <dt>
 
-**dwSize**
+**Dwsize**
 </dt> <dd>
 
 O tamanho, em bytes, dessa estrutura.
 
 </dd> <dt>
 
-**hwndParent**
+**Hwndparent**
 </dt> <dd>
 
-O identificador da janela pai da caixa de diálogo. Se esse valor for **nulo**, a janela pai será a janela da área de trabalho padrão.
+O alça da janela pai da caixa de diálogo. Se esse valor for **NULL,** a janela pai será a janela da área de trabalho padrão.
 
 </dd> <dt>
 
 **dwFlags**
 </dt> <dd>
 
-Especifica opções adicionais para a função [**CryptUIDlgSelectCertificate**](cryptuidlgselectcertificate.md) . Isso pode ser zero ou um ou um valor nulo **ou** dos valores a seguir.
+Especifica opções adicionais para a [**função CryptUIDlgSelectCertificate.**](cryptuidlgselectcertificate.md) Isso pode ser zero ou um **OR** bit a bit dos valores a seguir.
 
 
 
 | Valor                                                                                                                                                                                                                                    | Significado                                                                                                                                                                                                                                                                                                                                                                              |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <span id="CRYPTUI_SELECTCERT_ADDFROMDS"></span><span id="cryptui_selectcert_addfromds"></span><dl> <dt>**CRYPTUI \_ SELECTCERT \_ ADDFROMDS**</dt> </dl>                              | Reservado.<br/>                                                                                                                                                                                                                                                                                                                                                                 |
-| <span id="CRYPTUI_SELECTCERT_LEGACY"></span><span id="cryptui_selectcert_legacy"></span><dl> <dt>**CRYPTUI \_ SELECTCERT \_ Legacy**</dt> </dl>                                       | Especifica que a caixa de diálogo herdada deve ser exibida.<br/>                                                                                                                                                                                                                                                                                                                      |
-| <span id="CRYPTUI_SELECTCERT_MULTISELECT"></span><span id="cryptui_selectcert_multiselect"></span><dl> <dt>**CRYPTUI \_ SELECTCERT \_ MultiSelect**</dt> </dl>                        | Permite que o usuário selecione mais de um certificado na caixa de diálogo. Se esse sinalizador for definido, a função [**CryptUIDlgSelectCertificate**](cryptuidlgselectcertificate.md) sempre retornará **NULL**. O membro **hSelectedCertStore** dessa estrutura deve conter um identificador para um repositório de certificados. Os certificados selecionados pelo usuário serão adicionados a esse armazenamento.<br/> |
-| <span id="CRYPTUI_SELECTCERT_PUT_WINDOW_TOPMOST"></span><span id="cryptui_selectcert_put_window_topmost"></span><dl> <dt>**CRYPTUI \_ SELECTCERT \_ colocar a \_ janela na \_ extremidade superior**</dt> </dl> | Força a interface do usuário de criptografia a ser a janela superior na tela.<br/>                                                                                                                                                                                                                                                                                                            |
+| <span id="CRYPTUI_SELECTCERT_LEGACY"></span><span id="cryptui_selectcert_legacy"></span><dl> <dt>**CRYPTUI \_ SELECTCERT \_ LEGACY**</dt> </dl>                                       | Especifica que a caixa de diálogo herdada deve ser exibida.<br/>                                                                                                                                                                                                                                                                                                                      |
+| <span id="CRYPTUI_SELECTCERT_MULTISELECT"></span><span id="cryptui_selectcert_multiselect"></span><dl> <dt>**CRYPTUI \_ SELECTCERT \_ MULTISELECT**</dt> </dl>                        | Permite que o usuário selecione mais de um certificado na caixa de diálogo. Se esse sinalizador for definido, a [**função CryptUIDlgSelectCertificate**](cryptuidlgselectcertificate.md) sempre retornará **NULL.** O **membro hSelectedCertStore** dessa estrutura deve conter um handle para um repositório de certificados. Os certificados selecionados pelo usuário serão adicionados a esse armazenamento.<br/> |
+| <span id="CRYPTUI_SELECTCERT_PUT_WINDOW_TOPMOST"></span><span id="cryptui_selectcert_put_window_topmost"></span><dl> <dt>**CRYPTUI \_ SELECTCERT \_ COLOCAR JANELA MAIS \_ \_ ALTO**</dt> </dl> | Força a interface do usuário de criptografia a ser a janela superior na tela.<br/>                                                                                                                                                                                                                                                                                                            |
 
 
 
@@ -92,7 +92,7 @@ Especifica opções adicionais para a função [**CryptUIDlgSelectCertificate**]
 **szTitle**
 </dt> <dd>
 
-O título de exibição da caixa de diálogo. Se o valor desse membro for **nulo**, o título padrão de "Selecionar certificado" será usado.
+O título de exibição da caixa de diálogo. Se o valor desse membro for **NULL,** o título padrão de "Selecionar Certificado" será usado.
 
 </dd> <dt>
 
@@ -105,12 +105,12 @@ Sinalizadores que podem ser combinados para excluir colunas da exibição.
 
 | Valor                                                                                                                                                                                                                                                                                       | Significado                                                |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------|
-| <span id="CRYPTUI_SELECT_ISSUEDTO_COLUMN"></span><span id="cryptui_select_issuedto_column"></span><dl> <dt>**CRYPTUI \_ Selecione \_ emitido \_**</dt> para a coluna <dt>1 (0x1)</dt> </dl>             | Não exibir informações **emitidas** .<br/>    |
-| <span id="CRYPTUI_SELECT_ISSUEDBY_COLUMN"></span><span id="cryptui_select_issuedby_column"></span><dl> <dt>**CRYPTUI \_ Selecione \_ ISSUEDBY \_ coluna**</dt> <dt>2 (0x2)</dt> </dl>             | Não exibir informações de **ISSUEDBY** .<br/>    |
-| <span id="CRYPTUI_SELECT_INTENDEDUSE_COLUMN"></span><span id="cryptui_select_intendeduse_column"></span><dl> <dt>**CRYPTUI \_ Selecione \_ INTENDEDUSE \_ coluna**</dt> <dt>4 (0x4)</dt> </dl>    | Não exibir informações de **IntendedUse** .<br/> |
-| <span id="CRYPTUI_SELECT_FRIENDLYNAME_COLUMN"></span><span id="cryptui_select_friendlyname_column"></span><dl> <dt>**CRYPTUI \_ Selecione \_ FriendlyName \_ coluna**</dt> <dt>8 (0x8)</dt> </dl> | Não exibir informações de nome.<br/>            |
-| <span id="CRYPTUI_SELECT_LOCATION_COLUMN"></span><span id="cryptui_select_location_column"></span><dl> <dt>**CRYPTUI \_ Selecione \_ a \_ coluna de localização**</dt> <dt>16 (0x10)</dt> </dl>           | Não exibir informações de localização.<br/>        |
-| <span id="CRYPTUI_SELECT_EXPIRATION_COLUMN"></span><span id="cryptui_select_expiration_column"></span><dl> <dt>**CRYPTUI \_ Selecione \_ a \_ coluna de expiração**</dt> <dt>32 (0x20)</dt> </dl>     | Não exibir informações de expiração.<br/>      |
+| <span id="CRYPTUI_SELECT_ISSUEDTO_COLUMN"></span><span id="cryptui_select_issuedto_column"></span><dl> <dt>**CRYPTUI \_ SELECT \_ ISSUEDTO \_ COLUMN**</dt> <dt>1 (0X1)</dt> </dl>             | Não exibir informações **ISSUEDTO.**<br/>    |
+| <span id="CRYPTUI_SELECT_ISSUEDBY_COLUMN"></span><span id="cryptui_select_issuedby_column"></span><dl> <dt>**CRYPTUI \_ SELECT \_ ISSUEDBY \_ COLUMN**</dt> <dt>2 (0X2)</dt> </dl>             | Não exibir informações **ISSUEDBY.**<br/>    |
+| <span id="CRYPTUI_SELECT_INTENDEDUSE_COLUMN"></span><span id="cryptui_select_intendeduse_column"></span><dl> <dt>**CRYPTUI \_ SELECT \_ INTENDEDUSE \_ COLUMN**</dt> <dt>4 (0X4)</dt> </dl>    | Não exibir informações **de IntendedUse.**<br/> |
+| <span id="CRYPTUI_SELECT_FRIENDLYNAME_COLUMN"></span><span id="cryptui_select_friendlyname_column"></span><dl> <dt>**CRYPTUI \_ SELECT \_ FRIENDLYNAME \_ COLUMN**</dt> <dt>8 (0X8)</dt> </dl> | Não exibir informações de nome.<br/>            |
+| <span id="CRYPTUI_SELECT_LOCATION_COLUMN"></span><span id="cryptui_select_location_column"></span><dl> <dt>**CRYPTUI \_ SELECT \_ LOCATION \_ COLUMN**</dt> <dt>16 (0x10)</dt> </dl>           | Não exibir informações de localização.<br/>        |
+| <span id="CRYPTUI_SELECT_EXPIRATION_COLUMN"></span><span id="cryptui_select_expiration_column"></span><dl> <dt>**CRYPTUI \_ SELECT \_ EXPIRATION \_ COLUMN**</dt> <dt>32 (0X20)</dt> </dl>     | Não exibir informações de expiração.<br/>      |
 
 
 
@@ -121,14 +121,14 @@ Sinalizadores que podem ser combinados para excluir colunas da exibição.
 **szDisplayString**
 </dt> <dd>
 
-Texto exibido na caixa de diálogo para instruir o usuário. Se o valor desse membro for **nulo**, a cadeia de caracteres padrão "selecionar um certificado que você deseja usar" será usada.
+Texto exibido na caixa de diálogo para instruir o usuário. Se o valor desse membro for **NULL,** a cadeia de caracteres padrão "Selecionar um certificado que você deseja usar" será usada.
 
 </dd> <dt>
 
 **pFilterCallback**
 </dt> <dd>
 
-Um ponteiro para uma função de retorno de chamada [**PFNCFILTERPROC**](/windows/desktop/api/Cryptuiapi/nc-cryptuiapi-pfncfilterproc) que filtra os certificados que são exibidos na caixa de diálogo.
+Um ponteiro para uma função de retorno de chamada [**PFNCFILTERPROC**](/windows/desktop/api/Cryptuiapi/nc-cryptuiapi-pfncfilterproc) que filtra os certificados exibidos na caixa de diálogo.
 
 </dd> <dt>
 
@@ -142,42 +142,42 @@ Um ponteiro para uma função de retorno de chamada [**PFNCCERTDISPLAYPROC**](pf
 **pvCallbackData**
 </dt> <dd>
 
-Dados adicionais que são passados para as funções de retorno de chamada especificadas pelos membros **pFilterCallback** e **pDisplayCallback** .
+Dados adicionais que são passados para as funções de retorno de chamada especificadas pelos membros **pFilterCallback** e **pDisplayCallback.**
 
 </dd> <dt>
 
 **cDisplayStores**
 </dt> <dd>
 
-O número de repositórios de certificados na matriz **rghDisplayStores** .
+O número de armazenamentos de certificados na **matriz rghDisplayStores.**
 
 </dd> <dt>
 
 **rghDisplayStores**
 </dt> <dd>
 
-Um ponteiro para uma matriz de armazenamentos que contém certificados disponíveis para seleção na caixa de diálogo.
+Um ponteiro para uma matriz de armazenamentos que contêm certificados disponíveis para seleção na caixa de diálogo.
 
 </dd> <dt>
 
 **cStores**
 </dt> <dd>
 
-O número de repositórios de certificados na matriz **rghStores** .
+O número de armazenamentos de certificados na **matriz rghStores.**
 
 </dd> <dt>
 
 **rghStores**
 </dt> <dd>
 
-Um ponteiro para uma matriz de repositórios de certificados para pesquisar ao criar uma cadeia de certificados e verificar a relação de confiança dos certificados exibidos na caixa de diálogo.
+Um ponteiro para uma matriz de armazenamentos de certificados a serem pesquisados ao criar uma cadeia de certificados e verificar a confiança dos certificados exibidos na caixa de diálogo.
 
 </dd> <dt>
 
 **cPropSheetPages**
 </dt> <dd>
 
-O número de páginas de propriedades na matriz **rgPropSheetPages** .
+O número de páginas de propriedades na **matriz rgPropSheetPages.**
 
 </dd> <dt>
 
@@ -191,9 +191,9 @@ Um ponteiro para uma matriz de estruturas **PROPSHEETPAGE** que representam pág
 **hSelectedCertStore**
 </dt> <dd>
 
-Um identificador para um repositório de certificados criado pelo chamador. Os certificados selecionados pelo usuário são adicionados a esse armazenamento. Se o número de certificados nesse repositório for o mesmo antes e depois de chamar [**CryptUIDlgSelectCertificate**](cryptuidlgselectcertificate.md), o usuário fechou a caixa de diálogo sem selecionar nenhum certificado.
+Um handle para um armazenamento de certificados criado pelo chamador. Os certificados selecionados pelo usuário são adicionados a esse armazenamento. Se o número de certificados nesse armazenamento for o mesmo antes e depois de chamar [**CryptUIDlgSelectCertificate**](cryptuidlgselectcertificate.md), o usuário fechou a caixa de diálogo sem selecionar nenhum certificado.
 
-Esse membro não será usado se o membro **dwFlags** dessa estrutura não contiver o sinalizador **CRYPTUI \_ SELECTCERT \_ MultiSelect** .
+Esse membro não será usado se **o membro dwFlags** dessa estrutura não contiver o sinalizador **CRYPTUI \_ SELECTCERT \_ MULTISELECT.**
 
 </dd> </dl>
 
@@ -203,9 +203,9 @@ Esse membro não será usado se o membro **dwFlags** dessa estrutura não contiv
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                                                                     |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                                            |
-| Nomes Unicode e ANSI<br/>   | **CRYPTUI \_ SELECTCERTIFICATE \_ STRUCTW** (Unicode) e **CRYPTUI \_ SELECTCERTIFICATE \_ structA** (ANSI)<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho XP\]<br/>                                                                     |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                                            |
+| Nomes Unicode e ANSI<br/>   | **CRYPTUI \_ SELECTCERTIFICATE \_ STRUCTW** (Unicode) e **CRYPTUI \_ SELECTCERTIFICATE \_ STRUCTA** (ANSI)<br/> |
 
 
 

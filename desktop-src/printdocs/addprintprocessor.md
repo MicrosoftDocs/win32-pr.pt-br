@@ -15,12 +15,12 @@ api_type:
 - DllExport
 api_location:
 - Winspool.drv
-ms.openlocfilehash: 871df9fee211ae13e1552978ce651840d7f542f1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 83de05dd6aa0ef6541322a45894dcf24cffa3cc6bebcbbd3b42e6c48941360b9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105770053"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117868741"
 ---
 # <a name="addprintprocessor-function"></a>Função AddPrintProcessor
 
@@ -54,7 +54,7 @@ Um ponteiro para uma cadeia de caracteres terminada em nulo que especifica o nom
 *pEnvironment* \[ no\]
 </dt> <dd>
 
-Um ponteiro para uma cadeia de caracteres terminada em nulo que especifica o ambiente (por exemplo, Windows x86, Windows IA64 ou Windows x64). Se esse parâmetro for **NULL**, o ambiente atual do chamador/cliente (não do destino/servidor) será usado.
+um ponteiro para uma cadeia de caracteres terminada em nulo que especifica o ambiente (por exemplo, Windows x86, Windows IA64 ou Windows x64). Se esse parâmetro for **NULL**, o ambiente atual do chamador/cliente (não do destino/servidor) será usado.
 
 </dd> <dt>
 
@@ -72,7 +72,7 @@ Um ponteiro para uma cadeia de caracteres terminada em nulo que especifica o nom
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se a função for realizada com sucesso, o valor de retorno será um valor diferente de zero.
 

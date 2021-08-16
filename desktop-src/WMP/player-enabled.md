@@ -1,9 +1,9 @@
 ---
-title: Player. habilitado
-description: a propriedade enabled especifica ou recupera um valor que indica se o controle de Windows Media Player está habilitado.
+title: Player.enabled
+description: A propriedade habilitada especifica ou recupera um valor que indica se o controle Windows Media Player está habilitado.
 ms.assetid: 65fea4d2-3330-4cce-bdaf-fae00304271a
 keywords:
-- Player. habilitado Windows Media Player
+- Player.enabled Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -21,24 +21,24 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117747591"
 ---
-# <a name="playerenabled"></a>Player. habilitado
+# <a name="playerenabled"></a>Player.enabled
 
-a propriedade **enabled** especifica ou recupera um valor que indica se o controle de Windows Media Player está habilitado.
+A **propriedade habilitada** especifica ou recupera um valor que indica se o controle Windows Media Player está habilitado.
 
 ## <a name="syntax"></a>Syntax
 
-*Player* . **habilitado**
+*player* . **habilitado**
 
 ## <a name="possible-values"></a>Valores possíveis
 
-Esta propriedade é um **booliano** de leitura/gravação.
+Essa propriedade é um booliana **de leitura/gravação.**
 
 
 
 | Valor | Descrição                                           |
 |-------|-------------------------------------------------------|
-| true  | Padrão. o controle Windows Media Player está habilitado. |
-| false | o controle Windows Media Player está desabilitado.         |
+| true  | Padrão. O Windows Media Player controle está habilitado. |
+| false | O Windows Media Player controle está desabilitado.         |
 
 
 
@@ -46,7 +46,7 @@ Esta propriedade é um **booliano** de leitura/gravação.
 
 ## <a name="remarks"></a>Comentários
 
-se **habilitado** for igual a false, durante a reprodução de tela inteira Windows Media Player ocultará os controles de usuário.
+Se **habilitado for** igual a false, durante a reprodução de tela inteira Windows Media Player ocultará os controles do usuário.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,7 +54,7 @@ se **habilitado** for igual a false, durante a reprodução de tela inteira Wind
 
 | Requisito | Valor |
 |--------------------|------------------------------------------------------------------------------------|
-| Versão<br/> | Windows Media Player versão 7,0 ou posterior.<br/>                              |
+| Versão<br/> | Windows Media Player versão 7.0 ou posterior.<br/>                              |
 | DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
@@ -63,7 +63,7 @@ se **habilitado** for igual a false, durante a reprodução de tela inteira Wind
 
 <dl> <dt>
 
-[**Objeto de jogador**](player-object.md)
+[**Objeto Player**](player-object.md)
 </dt> </dl>
 
  

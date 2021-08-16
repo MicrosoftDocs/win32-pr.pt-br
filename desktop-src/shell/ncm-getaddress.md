@@ -13,12 +13,12 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 5d5effa69a23a61a602efaf1172de09a09889e32
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 27f5beec56a0125d26cc359f40b5033eda1f035f2dec7666725264ec6fd59ba7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104967482"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117677964"
 ---
 # <a name="ncm_getaddress-message"></a>\_Mensagem de GETendereço do NCM
 
@@ -47,13 +47,13 @@ NCM_GETADDRESS
 *VP* \[ entrada, saída\]
 </dt> <dd>Um ponteiro para uma estrutura de <a href="/windows/win32/api/shellapi/ns-shellapi-nc_address">NC_ADDRESS</a> para receber informações de endereço de rede no formulário analisado, se o formato de endereço e o tipo no controle especificado por *HWND* forem validados. O aplicativo de chamada é responsável por alocar a memória para essa estrutura.</dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um dos seguintes valores do tipo **HRESULT**.
 
 
 
-| Código de retorno                                                                                                | Description                                                                                          |
+| Código de retorno                                                                                                | Descrição                                                                                          |
 |------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------|
 | <dl> <dt>**E \_ INVALIDARG**</dt> </dl>               | Falha do aplicativo de chamada ao alocar uma estrutura de [**\_ endereço NC**](/windows/win32/api/shellapi/ns-shellapi-nc_address) .<br/> |
 | <dl> <dt>**ERRO \_ de \_ buffer insuficiente**</dt> </dl> | O buffer de saída é muito pequeno para conter o endereço de rede analisado.<br/>                           |
@@ -81,9 +81,9 @@ Defina a máscara de tipo de endereço de rede usando a mensagem [**NCM \_ SetAl
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Shellapi. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Shellapi. h</dt> </dl> |
 
 
 

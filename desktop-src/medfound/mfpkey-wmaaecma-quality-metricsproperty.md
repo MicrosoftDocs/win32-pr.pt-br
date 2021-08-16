@@ -4,12 +4,12 @@ ms.assetid: de2e86ae-0469-471f-9105-0bb38a59b428
 title: Propriedade MFPKEY_WMAAECMA_QUALITY_METRICS (Wmcodecdsp. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a3740630bc23c4e3e0e824e55b4e34bcd8b1347f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2186876279ee45e34444866c206a7729c0674c8dff1bc57c255ca205e911edae
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105759858"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117689261"
 ---
 # <a name="mfpkey_wmaaecma_quality_metrics-property"></a>\_Propriedade de \_ métricas de qualidade MFPKEY WMAAECMA \_
 
@@ -33,9 +33,9 @@ O valor dessa propriedade é uma estrutura [de \_ struct AecQualityMetrics](/win
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                          |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                    |
-| parâmetro<br/>                   | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                          |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                    |
+| Cabeçalho<br/>                   | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
 
 
 

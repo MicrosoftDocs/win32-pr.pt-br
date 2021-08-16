@@ -1,11 +1,11 @@
 ---
-title: Método Query. addcondition
-description: O método addcondition adiciona uma condição ao objeto de consulta usando a lógica AND.
+title: Método Query.addCondition
+description: O método addCondition adiciona uma condição ao objeto Consulta usando a lógica AND.
 ms.assetid: 29b5d372-eddf-4b70-882b-d2dde79d9287
 keywords:
-- método addcondition do Windows Media Player
-- método addcondition Windows Media Player, classe de consulta
-- Classe de consulta Windows Media Player, método addcondition
+- Método addCondition Windows Media Player
+- método addCondition Windows Media Player classe , Query
+- Classe de consulta Windows Media Player , método addCondition
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4035d2877cf0081e9153277c88feb545a529568d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 53a3eed0a7923b93861eabc30d115a7726046d0595b7c57625d9a9afaf9c7523
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105793271"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117746585"
 ---
-# <a name="queryaddcondition-method"></a>Método Query. addcondition
+# <a name="queryaddcondition-method"></a>Método Query.addCondition
 
-O método **addcondition** adiciona uma condição ao objeto de **consulta** usando a lógica and.
+O **método addCondition** adiciona uma condição ao **objeto Consulta** usando a lógica AND.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -44,38 +44,38 @@ Query.addCondition(
 
 <dl> <dt>
 
-*atributo* \[ no\]
+*atributo* \[ Em\]
 </dt> <dd>
 
-**Cadeia de caracteres** que contém o nome do atributo.
+**Cadeia de** caracteres que contém o nome do atributo.
 
 </dd> <dt>
 
-*operador* \[ no\]
+*operador* \[ Em\]
 </dt> <dd>
 
-**Cadeia de caracteres** que contém o operador. Consulte comentários para obter os valores com suporte.
+**Cadeia de** caracteres que contém o operador . Consulte Comentários para ver os valores com suporte.
 
 </dd> <dt>
 
-*valor* \[ do no\]
+*value* \[ Em\]
 </dt> <dd>
 
-**Cadeia de caracteres** que contém o valor do atributo.
+**Cadeia de** caracteres que contém o valor do atributo.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-Consultas compostas usando a **consulta** não diferenciam maiúsculas de minúsculas.
+Consultas compostas que **usam Consulta não** são sensíveis a minúsculas.
 
-Uma lista de valores para o parâmetro de *atributo* pode ser encontrada na seção [referência de atributo alfabética](alphabetical-attribute-reference.md) .
+Uma lista de valores para o *parâmetro de* atributo pode ser encontrada na seção Referência de [Atributo Alfabético.](alphabetical-attribute-reference.md)
 
-As condições contidas em um objeto de **consulta** são organizadas em grupos de condição. Várias condições dentro de um grupo de condições sempre são concatenadas usando AND Logic. Os grupos de condição sempre são concatenados entre si usando ou lógica. Para iniciar um novo grupo de condição, chame **Query. beginNextGroup**.
+As condições contidas em **um objeto Query** são organizadas em grupos de condição. Várias condições em um grupo de condições são sempre concatenadas usando a lógica AND. Os grupos de condição são sempre concatenados entre si usando a lógica OR. Para iniciar um novo grupo de condições, **chame Query.beginNextGroup.**
 
 A tabela a seguir lista os valores com suporte para o *operador*.
 
@@ -85,11 +85,11 @@ A tabela a seguir lista os valores com suporte para o *operador*.
 |---------------------|----------------|
 | BeginsWith          | Cadeias de caracteres        |
 | Contém            | Cadeias de caracteres        |
-| É igual a              | Todos os tipos      |
-| GreaterThan         | Números, datas |
-| GreaterThanOrEquals | Números, datas |
-| LessThan            | Números, datas |
-| LessThanOrEquals    | Números, datas |
+| Igual a              | Todos os tipos      |
+| GreaterThan         | Números, Datas |
+| GreaterThanOrEquals | Números, Datas |
+| LessThan            | Números, Datas |
+| LessThanOrEquals    | Números, Datas |
 | NotBeginsWith       | Cadeias de caracteres        |
 | NotContains         | Cadeias de caracteres        |
 | NotEquals           | Todos os tipos      |
@@ -100,7 +100,7 @@ A tabela a seguir lista os valores com suporte para o *operador*.
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo de JScript a seguir usa **Query. addcondition** e **Query. beginNextGroup** para executar uma consulta de exemplo.
+O exemplo JScript a seguir usa **Query.addCondition** e **Query.beginNextGroup** para executar uma consulta de exemplo.
 
 
 ```JScript
@@ -149,19 +149,19 @@ var Playlist = Player.mediaCollection.getPlaylistByQuery(
 
 <dl> <dt>
 
-[**Mediacollection. createQuery**](mediacollection-createquery.md)
+[**MediaCollection.createQuery**](mediacollection-createquery.md)
 </dt> <dt>
 
-[**Mediacollection. getPlaylistByQuery**](mediacollection-getplaylistbyquery.md)
+[**MediaCollection.getPlaylistByQuery**](mediacollection-getplaylistbyquery.md)
 </dt> <dt>
 
-[**Mediacollection. getStringCollectionByQuery**](mediacollection-getstringcollectionbyquery.md)
+[**MediaCollection.getStringCollectionByQuery**](mediacollection-getstringcollectionbyquery.md)
 </dt> <dt>
 
-[**Objeto de consulta**](query-object.md)
+[**Objeto Query**](query-object.md)
 </dt> <dt>
 
-[**Query. beginNextGroup**](query-beginnextgroup.md)
+[**Query.beginNextGroup**](query-beginnextgroup.md)
 </dt> </dl>
 
  

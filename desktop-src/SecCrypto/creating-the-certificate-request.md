@@ -4,12 +4,12 @@ ms.assetid: b03efa83-e255-4427-a796-63d5841664a9
 title: Criando a solicitação de certificado
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: be29a1fbdbaf9fd956150808471086b7d8ca2815
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 607ebbfd5d230c216c2b7ebc4d3b217e1f8c0d2a375d39cdd6b311ec145be361
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105755310"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117768864"
 ---
 # <a name="creating-the-certificate-request"></a>Criando a solicitação de certificado
 

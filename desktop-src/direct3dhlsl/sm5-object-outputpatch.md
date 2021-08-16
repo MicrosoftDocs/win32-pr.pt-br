@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 4c77a30a2ff23bdc292d45df6514ef00fab53463
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: ea806da8fe9b4219490c26b84e5b77f6f92b324a72850c79080de6ca363ef4e7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104006388"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117725235"
 ---
 # <a name="outputpatch"></a>OutputPatch
 
@@ -32,19 +32,19 @@ Representa uma matriz de pontos de controle de saída que estão disponíveis pa
 
 
 
- 
+ 
 
 Além disso, a classe InputPatch dá suporte às seguintes propriedades:
 
 
 
-| Propriedades | Tipo | Description                   |
+| Propriedades | Tipo | Descrição                   |
 |------------|------|-------------------------------|
 | Comprimento     | uint | O número de pontos de controle. |
 
 
 
- 
+ 
 
 ## <a name="minimum-shader-model"></a>Modelo de sombreamento mínimo
 
@@ -58,19 +58,19 @@ Esse objeto tem suporte nos seguintes modelos de sombreador.
 
 
 
- 
+ 
 
 Este objeto tem suporte para os seguintes tipos de sombreadores:
 
 
 
-| Vértice | Envoltória | Domínio | Geometria | 16x16 | Computação |
+| Vértice | Envoltória | Domínio | Geometry | 16x16 | Computação |
 |--------|------|--------|----------|-------|---------|
 |        | x    | x      |          |       |         |
 
 
 
- 
+ 
 
 ## <a name="see-also"></a>Confira também
 
@@ -79,9 +79,9 @@ Este objeto tem suporte para os seguintes tipos de sombreadores:
 [Objetos do Shader Model 5](d3d11-graphics-reference-sm5-objects.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

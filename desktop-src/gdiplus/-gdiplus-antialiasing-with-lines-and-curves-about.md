@@ -1,19 +1,19 @@
 ---
-description: Ao usar o Windows GDI+ para desenhar uma linha, você fornece o ponto inicial e o ponto final da linha, mas não precisa fornecer informações sobre os pixels individuais na linha.
+description: ao usar Windows GDI+ para desenhar uma linha, você fornece o ponto inicial e o ponto final da linha, mas não precisa fornecer informações sobre os pixels individuais na linha.
 ms.assetid: 7c4869c1-76ff-42d1-abf1-387121943b2a
 title: Suavização com linhas e curvas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9c817d3e11b4699c9fc892b41dcc827c0861f192
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b6d6fd1df9c8dca6bb600c723fa61cf14b99e53a51670768a7323ca33e12b9b5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103661950"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117697105"
 ---
 # <a name="antialiasing-with-lines-and-curves"></a>Suavização com linhas e curvas
 
-Ao usar o Windows GDI+ para desenhar uma linha, você fornece o ponto inicial e o ponto final da linha, mas não precisa fornecer informações sobre os pixels individuais na linha. O GDI+ funciona em conjunto com o software de driver de vídeo para determinar quais pixels serão ativados para mostrar a linha em um dispositivo de vídeo específico.
+ao usar Windows GDI+ para desenhar uma linha, você fornece o ponto inicial e o ponto final da linha, mas não precisa fornecer informações sobre os pixels individuais na linha. GDI+ trabalha em conjunto com o software de driver de vídeo para determinar quais pixels serão ativados para mostrar a linha em um dispositivo de vídeo específico.
 
 Considere uma linha vermelha reta que vai do ponto (4, 2) até o ponto (16, 10). Suponha que o sistema de coordenadas tem sua origem no canto superior esquerdo e que a unidade de medida é o pixel. Suponha também que o eixo X aponta para a direita e o eixo Y aponta para baixo. A ilustração a seguir mostra uma exibição ampliada da linha vermelha desenhada em uma tela de fundo multicolorida.
 

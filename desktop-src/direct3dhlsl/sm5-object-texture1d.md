@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 8b8a60706ea2752109cdda9907ffe7c654efe531
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 382ac1e436eff4108a2179aeefd4395fbc52c7af304bb719cbadf87a3c1f3d3d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "103916801"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117724867"
 ---
 # <a name="texture1d"></a>Texture1D
 
@@ -29,7 +29,7 @@ Um tipo de textura 1D ([como ele existe no modelo de sombreador 4](dx-graphics-h
 | Método                                                                  | Descrição                                                                                |
 |-------------------------------------------------------------------------|--------------------------------------------------------------------------------------------|
 | [**GetDimensions**](sm5-object-texture1d-getdimensions.md)             | Obtém as dimensões do recurso.                                                              |
-| [**Carregamento**](texture1d-load.md)                                          | Lê dados de textura.                                                                        |
+| [**Carregar**](texture1d-load.md)                                          | Lê dados de textura.                                                                        |
 | [**Operador\[\]**](sm5-object-texture1d-operatorindex.md)              | Obtém uma variável de recurso somente leitura.                                                        |
 | [**seqüencia. Operador\[\]\[\]**](sm5-object-texture1d-mipsoperatorindex.md) | Obtém uma variável de recurso somente leitura.                                                        |
 | [**Nova**](texture1d-sample.md)                                      | Amostra uma textura.                                                                         |
@@ -41,7 +41,7 @@ Um tipo de textura 1D ([como ele existe no modelo de sombreador 4](dx-graphics-h
 
 
 
- 
+ 
 
 ## <a name="minimum-shader-model"></a>Modelo de sombreamento mínimo
 
@@ -55,19 +55,19 @@ Esse objeto tem suporte nos seguintes modelos de sombreador.
 
 
 
- 
+ 
 
 Este objeto tem suporte para os seguintes tipos de sombreadores:
 
 
 
-| Vértice | Envoltória | Domínio | Geometria | 16x16 | Computação |
+| Vértice | Envoltória | Domínio | Geometry | 16x16 | Computação |
 |--------|------|--------|----------|-------|---------|
 | x      | x    | x      | x        | x     | x       |
 
 
 
- 
+ 
 
 ## <a name="see-also"></a>Confira também
 
@@ -76,9 +76,9 @@ Este objeto tem suporte para os seguintes tipos de sombreadores:
 [Objetos do Shader Model 5](d3d11-graphics-reference-sm5-objects.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

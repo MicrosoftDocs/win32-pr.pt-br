@@ -1,19 +1,19 @@
 ---
-description: Contém o identificador do item no serviço de sincronização remota. Usado para comparar um arquivo no sistema para aqueles que estão disponíveis na nuvem.
+description: Contém o identificador do item no serviço de sincronização remota. Usado para comparar um arquivo no sistema com aqueles que estão disponíveis na nuvem.
 ms.assetid: 22d98d5c-58ac-4dfc-a7e7-74c2a58b730b
-title: System. complemental. ResourceId
+title: System.Supplemental.ResourceId
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: effe24bf31fb6953a3d41458307452129f33672f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 993a0c6410b5fd009480dc03ba2f20bef37bd5a976b555614b8a55a35aac2177
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103829383"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117864509"
 ---
-# <a name="systemsupplementalresourceid"></a>System. complemental. ResourceId
+# <a name="systemsupplementalresourceid"></a>System.Supplemental.ResourceId
 
-Contém o identificador do item no serviço de sincronização remota. Usado para comparar um arquivo no sistema para aqueles que estão disponíveis na nuvem.
+Contém o identificador do item no serviço de sincronização remota. Usado para comparar um arquivo no sistema com aqueles que estão disponíveis na nuvem.
 
 ## <a name="windows-10-version-1703"></a>Windows 10, versão 1703
 
@@ -32,13 +32,13 @@ propertyDescription
 
 ## <a name="remarks"></a>Comentários
 
-Os valores de PKEY são definidos em Propkey. h.
+Os valores PKEY são definidos em Propkey.h.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[propertyDescription](./propdesc-schema-propertydescription.md)
+[Propertydescription](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -47,19 +47,19 @@ Os valores de PKEY são definidos em Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[numberFormat](./propdesc-schema-numberformat.md)
+[Numberformat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -74,7 +74,7 @@ Os valores de PKEY são definidos em Propkey. h.
 [editControl](./propdesc-schema-editcontrol.md)
 </dt> <dt>
 
-[filterControl](./propdesc-schema-filtercontrol.md)
+[Filtercontrol](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
 [queryControl](./propdesc-schema-querycontrol.md)

@@ -86,38 +86,38 @@ As funções XML de criptografia fornecem uma API para criar e representar assin
 | [**CryptXmlGetStatus**](/windows/desktop/api/Cryptxml/nf-cryptxml-cryptxmlgetstatus)                                    | Retorna uma estrutura de [**\_ \_ status XML cript**](/windows/desktop/api/Cryptxml/ns-cryptxml-crypt_xml_status) que contém informações de status sobre o objeto especificado pelo identificador fornecido.                                                                                                                                                           |
 | [**CryptXmlGetTransforms**](/windows/desktop/api/Cryptxml/nf-cryptxml-cryptxmlgettransforms)                            | Retorna informações sobre o mecanismo de cadeia de transformação padrão.                                                                                                                                                                                                                                                    |
 | [**CryptXmlImportPublicKey**](/windows/desktop/api/Cryptxml/nf-cryptxml-cryptxmlimportpublickey)                        | Importa a chave pública especificada pelo identificador fornecido.                                                                                                                                                                                                                                                         |
-| [**CryptXmlOpenToEncode**](/windows/desktop/api/Cryptxml/nf-cryptxml-cryptxmlopentoencode)                              | Abre uma assinatura digital XML para codificar e retornar um identificador do elemento de **assinatura** aberto. O identificador encapsula um contexto de documento com uma única estrutura de [**\_ \_ assinatura XML criptografada**](/windows/desktop/api/Cryptxml/ns-cryptxml-crypt_xml_signature) e permanece aberto até que a função [**CryptXmlClose**](/windows/desktop/api/Cryptxml/nf-cryptxml-cryptxmlclose) seja chamada. |
-| [**CryptXmlOpenToDecode**](/windows/desktop/api/Cryptxml/nf-cryptxml-cryptxmlopentodecode)                              | Abre uma assinatura digital XML para decodificar e retornar o identificador do contexto do documento que encapsula uma estrutura de [**\_ \_ assinatura XML cript**](/windows/desktop/api/Cryptxml/ns-cryptxml-crypt_xml_signature) . O contexto do documento pode incluir um ou mais elementos de **assinatura** .                                                                 |
-| [**CryptXmlSetHMACSecret**](/windows/desktop/api/Cryptxml/nf-cryptxml-cryptxmlsethmacsecret)                            | Define o segredo HMAC no identificador antes de chamar a função [**CryptXmlSign**](/windows/desktop/api/Cryptxml/nf-cryptxml-cryptxmlsign) ou [**CryptXmlVerify**](/windows/desktop/api/Cryptxml/nf-cryptxml-cryptxmlverifysignature) .                                                                                                                                                        |
-| [**CryptXmlSign**](/windows/desktop/api/Cryptxml/nf-cryptxml-cryptxmlsign)                                              | Cria uma assinatura criptográfica de um elemento **SignedInfo** .                                                                                                                                                                                                                                                   |
-| [**CryptXmlVerifySignature**](/windows/desktop/api/Cryptxml/nf-cryptxml-cryptxmlverifysignature)                        | Executa uma validação de assinatura criptográfica de um elemento **SignedInfo** .                                                                                                                                                                                                                                       |
-| [*\_retorno de \_ \_ chamada de gravação XML criptografado PFN \_*](/windows/desktop/api/Cryptxml/nc-cryptxml-pfn_crypt_xml_write_callback)            | Cria uma transformação para um provedor de dados especificado.                                                                                                                                                                                                                                                               |
-| [*\_transformação de \_ criação de XML cript \_ PFN \_*](/windows/desktop/api/Cryptxml/nc-cryptxml-pfn_crypt_xml_create_transform)        | Grava dados XML criptográficos.                                                                                                                                                                                                                                                                                   |
-| [*\_leitura do \_ \_ provedor de dados XML criptografado PFN \_ \_*](/windows/desktop/api/Cryptxml/nc-cryptxml-pfn_crypt_xml_data_provider_read)   | Lê dados XML criptográficos.                                                                                                                                                                                                                                                                                    |
-| [*\_fechamento do \_ \_ provedor de dados XML criptografado PFN \_ \_*](/windows/desktop/api/Cryptxml/nc-cryptxml-pfn_crypt_xml_data_provider_close) | Libera o provedor de dados XML criptográfico.                                                                                                                                                                                                                                                                    |
-| [*\_informações de \_ \_ alg de enumeração XML cript \_ PFN \_*](/windows/desktop/api/Cryptxml/nc-cryptxml-pfn_crypt_xml_enum_alg_info)             | Enumera entradas de [**\_ \_ \_ informações de algoritmo XML criptografadas**](/windows/desktop/api/Cryptxml/ns-cryptxml-crypt_xml_algorithm_info) e predefinidas e registradas.                                                                                                                                                                                                    |
+| [**CryptXmlOpenToEncode**](/windows/desktop/api/Cryptxml/nf-cryptxml-cryptxmlopentoencode)                              | Abre uma assinatura digital XML para codificar e retornar um identificador do elemento de **assinatura** aberto. O handle encapsula um contexto de documento com uma única estrutura [**CRYPT \_ XML \_ SIGNATURE**](/windows/desktop/api/Cryptxml/ns-cryptxml-crypt_xml_signature) e permanece aberto até que a [**função CryptXmlClose**](/windows/desktop/api/Cryptxml/nf-cryptxml-cryptxmlclose) seja chamada. |
+| [**CryptXmlOpenToDecode**](/windows/desktop/api/Cryptxml/nf-cryptxml-cryptxmlopentodecode)                              | Abre uma assinatura digital XML para decodificar e retorna o handle do contexto do documento que encapsula uma estrutura [**CRYPT \_ XML \_ SIGNATURE.**](/windows/desktop/api/Cryptxml/ns-cryptxml-crypt_xml_signature) O contexto do documento pode incluir um ou mais **elementos Signature.**                                                                 |
+| [**CryptXmlSetHMACSecret**](/windows/desktop/api/Cryptxml/nf-cryptxml-cryptxmlsethmacsecret)                            | Define o segredo HMAC no handle antes de chamar a [**função CryptXmlSign**](/windows/desktop/api/Cryptxml/nf-cryptxml-cryptxmlsign) ou [**CryptXmlVerify.**](/windows/desktop/api/Cryptxml/nf-cryptxml-cryptxmlverifysignature)                                                                                                                                                        |
+| [**CryptXmlSign**](/windows/desktop/api/Cryptxml/nf-cryptxml-cryptxmlsign)                                              | Cria uma assinatura criptográfica de um **elemento SignedInfo.**                                                                                                                                                                                                                                                   |
+| [**CryptXmlVerifySignature**](/windows/desktop/api/Cryptxml/nf-cryptxml-cryptxmlverifysignature)                        | Executa uma validação de assinatura criptográfica de um **elemento SignedInfo.**                                                                                                                                                                                                                                       |
+| [*RETORNO DE CHAMADA DE GRAVAÇÃO \_ \_ XML DE CRIPTOGRAFIA \_ PFN \_*](/windows/desktop/api/Cryptxml/nc-cryptxml-pfn_crypt_xml_write_callback)            | Cria uma transformação para um provedor de dados especificado.                                                                                                                                                                                                                                                               |
+| [*PFN \_ CRYPT \_ XML \_ CREATE \_ TRANSFORM*](/windows/desktop/api/Cryptxml/nc-cryptxml-pfn_crypt_xml_create_transform)        | Grava dados XML criptográficos.                                                                                                                                                                                                                                                                                   |
+| [*LEITURA DO PROVEDOR DE \_ DADOS XML DE CRIPTOGRAFIA \_ \_ \_ \_ PFN*](/windows/desktop/api/Cryptxml/nc-cryptxml-pfn_crypt_xml_data_provider_read)   | Lê dados XML criptográficos.                                                                                                                                                                                                                                                                                    |
+| [*PFN \_ CRYPT \_ XML \_ DATA \_ PROVIDER \_ CLOSE*](/windows/desktop/api/Cryptxml/nc-cryptxml-pfn_crypt_xml_data_provider_close) | Libera o provedor de dados XML criptográfico.                                                                                                                                                                                                                                                                    |
+| [*INFORMAÇÕES DE ALG PFN \_ \_ CRYPT XML \_ \_ ENUM \_*](/windows/desktop/api/Cryptxml/nc-cryptxml-pfn_crypt_xml_enum_alg_info)             | Enumera entradas predefinidos e registradas [**DE INFORMAÇÕES DE ALGORITMO XML \_ \_ \_ DE**](/windows/desktop/api/Cryptxml/ns-cryptxml-crypt_xml_algorithm_info) CRYPT.                                                                                                                                                                                                    |
 
 
 
  
 
-## <a name="signer-functions"></a>Funções de signatário
+## <a name="signer-functions"></a>Funções de signante
 
-Fornece funções para assinar dados e carimbo de data/hora.
+Fornece funções para assinar e dados de carimbo de data/hora.
 
 
 
 | Função                                                   | Descrição                                                                                                                                                                                                                                                                                                                                                                                                         |
 |------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**SignerFreeSignerContext**](signerfreesignercontext.md) | Libera uma estrutura [**de \_ contexto de signatário**](signer-context.md) alocada por uma chamada anterior à função [**SignerSignEx**](signersignex.md) .                                                                                                                                                                                                                                                                      |
-| [**SignError**](signerror.md)                             | Chama a função [**GetLastError**](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) e converte o código de retorno em um **HRESULT**.                                                                                                                                                                                                                                                                                                            |
+| [**SignerFreeSignerContext**](signerfreesignercontext.md) | Libera uma [**estrutura SIGNER \_ CONTEXT**](signer-context.md) alocada por uma chamada anterior à [**função SignerSignEx.**](signersignex.md)                                                                                                                                                                                                                                                                      |
+| [**SignError**](signerror.md)                             | Chama a [**função GetLastError**](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) e converte o código de retorno em um **HRESULT.**                                                                                                                                                                                                                                                                                                            |
 | [**SignerSign**](signersign.md)                           | Assina o arquivo especificado.                                                                                                                                                                                                                                                                                                                                                                                           |
 | [**SignerSignEx**](signersignex.md)                       | Assina o arquivo especificado e retorna um ponteiro para os dados assinados.                                                                                                                                                                                                                                                                                                                                                  |
-| [**SignerSignEx2**](signersignex2.md)                     | Os sinais e a hora carimbam o arquivo especificado, permitindo várias assinaturas aninhadas.                                                                                                                                                                                                                                                                                                                                      |
-| [**SignerTimeStamp**](signertimestamp.md)                 | A hora carimba o assunto especificado. Essa função dá suporte a carimbo de data/hora de Authenticode. Para executar o carimbo de data/hora da RFC 3161 (infraestrutura de chave pública) X. 509, use a função [**SignerTimeStampEx2**](signertimestampex2.md) .                                                                                                                                                                                       |
-| [**SignerTimeStampEx**](signertimestampex.md)             | Time carimba o assunto especificado e, opcionalmente, retorna um ponteiro para uma estrutura de [**\_ contexto de signatário**](signer-context.md) que contém um ponteiro para um [*blob*](../secgloss/b-gly.md). Essa função dá suporte a carimbo de data/hora de Authenticode. Para executar o carimbo de data/hora da RFC 3161 (infraestrutura de chave pública) X. 509, use a função [**SignerTimeStampEx2**](signertimestampex2.md) . |
-| [**SignerTimeStampEx2**](signertimestampex2.md)           | Time carimba o assunto especificado e, opcionalmente, retorna um ponteiro para uma estrutura de [**\_ contexto de signatário**](signer-context.md) que contém um ponteiro para um [*blob*](../secgloss/b-gly.md). Essa função pode ser usada para executar a infraestrutura de chave pública X. 509, em conformidade com a RFC 3161 – carimbos de data/hora.                                                                                     |
-| [**SignerTimeStampEx3**](signertimestampex3.md)           | Time carimba o assunto especificado e dá suporte à configuração de carimbos de data/hora em várias assinaturas.                                                                                                                                                                                                                                                                                                                          |
+| [**SignerSignEx2**](signersignex2.md)                     | Assina e marca o carimbo de data/hora do arquivo especificado, permitindo várias assinaturas aninhadas.                                                                                                                                                                                                                                                                                                                                      |
+| [**SignerTimeStamp**](signertimestamp.md)                 | Carimbos de data/hora do assunto especificado. Essa função dá suporte à carimbo de data/hora authenticode. Para executar o carimbo de data/hora da Infraestrutura de Chave Pública X.509 (RFC 3161), use a [**função SignerTimeStampEx2.**](signertimestampex2.md)                                                                                                                                                                                       |
+| [**SignerTimeStampEx**](signertimestampex.md)             | Carimbos de data/hora do assunto especificado e, opcionalmente, retorna um ponteiro para uma estrutura [**SIGNER \_ CONTEXT**](signer-context.md) que contém um ponteiro para um [*BLOB*](../secgloss/b-gly.md). Essa função dá suporte à carimbo de data/hora authenticode. Para executar o carimbo de data/hora da Infraestrutura de Chave Pública X.509 (RFC 3161), use a [**função SignerTimeStampEx2.**](signertimestampex2.md) |
+| [**SignerTimeStampEx2**](signertimestampex2.md)           | Carimbos de data/hora do assunto especificado e, opcionalmente, retorna um ponteiro para uma estrutura [**SIGNER \_ CONTEXT**](signer-context.md) que contém um ponteiro para um [*BLOB*](../secgloss/b-gly.md). Essa função pode ser usada para executar a Infraestrutura de Chave Pública X.509, carimbos de data/hora compatíveis com RFC 3161.                                                                                     |
+| [**SignerTimeStampEx3**](signertimestampex3.md)           | Carimbos de data/hora do assunto especificado e dá suporte à configuração de carimbos de data/hora em várias assinaturas.                                                                                                                                                                                                                                                                                                                          |
 
 
 
@@ -125,25 +125,25 @@ Fornece funções para assinar dados e carimbo de data/hora.
 
 ## <a name="base-cryptography-functions"></a>Funções de criptografia base
 
-As funções criptográficas básicas fornecem o meio mais flexível de desenvolver aplicativos de criptografia. Toda a comunicação com um CSP ( [*provedor de serviços de criptografia*](../secgloss/c-gly.md) ) ocorre por meio dessas funções.
+As funções criptográficas base fornecem os meios mais flexíveis de desenvolver aplicativos de criptografia. Toda a comunicação com um CSP (provedor [*de serviços*](../secgloss/c-gly.md) criptográficos) ocorre por meio dessas funções.
 
-Um CSP é um módulo independente que executa todas as operações de criptografia. Pelo menos um CSP é necessário com cada aplicativo que usa funções criptográficas. Um único aplicativo pode, ocasionalmente, usar mais de um CSP.
+Um CSP é um módulo independente que executa todas as operações criptográficas. Pelo menos um CSP é necessário com cada aplicativo que usa funções criptográficas. Ocasionalmente, um único aplicativo pode usar mais de um CSP.
 
-Se mais de um CSP for usado, o que será usado poderá ser especificado nas chamadas de função criptográficas do CryptoAPI. Um CSP, o Microsoft Base Cryptographic Provider, é fornecido com o [*CryptoAPI*](../secgloss/c-gly.md). Esse CSP é usado como um provedor padrão por muitas das funções de CryptoAPI se nenhum outro CSP for especificado.
+Se mais de um CSP for usado, aquele a ser usado poderá ser especificado nas chamadas de função criptográfica CryptoAPI. Um CSP, o Provedor criptográfico base da Microsoft, é agrupado com [*o CryptoAPI*](../secgloss/c-gly.md). Esse CSP será usado como um provedor padrão por muitas das funções CryptoAPI se nenhum outro CSP for especificado.
 
-Cada CSP fornece uma implementação diferente do suporte de criptografia fornecido ao CryptoAPI. Alguns fornecem algoritmos criptográficos mais fortes; outras contêm componentes de hardware, como [*cartões inteligentes*](../secgloss/s-gly.md). Além disso, alguns CSPs podem ocasionalmente se comunicar diretamente com os usuários, como quando as [*assinaturas digitais*](../secgloss/d-gly.md) são executadas usando a [*chave privada de assinatura*](../secgloss/s-gly.md)do usuário.
+Cada CSP fornece uma implementação diferente do suporte criptográfico fornecido ao CryptoAPI. Alguns fornecem algoritmos criptográficos mais fortes; outros contêm componentes de hardware, como [*cartões inteligentes*](../secgloss/s-gly.md). Além disso, alguns CSPs ocasionalmente podem se comunicar diretamente com os usuários, como quando assinaturas digitais são [*executadas*](../secgloss/d-gly.md) usando a chave privada de assinatura [*do usuário*](../secgloss/s-gly.md).
 
-As funções de criptografia base estão nos seguintes grupos amplos:
+As funções criptográficas base estão nos seguintes grupos amplos:
 
--   Funções de provedor de serviço
--   funções de geração de chave e Exchange
--   Codificação de objeto e funções de decodificação
--   Criptografia de dados e funções de descriptografia
+-   Funções do provedor de serviços
+-   Funções de geração e Exchange chave
+-   Funções de codificação e decodificação de objeto
+-   Funções de criptografia e descriptografia de dados
 -   Funções de hash e assinatura digital
 
-### <a name="service-provider-functions"></a>Funções de provedor de serviço
+### <a name="service-provider-functions"></a>Funções do provedor de serviços
 
-Os aplicativos usam as funções de serviço a seguir para se conectar e desconectar um [*provedor de serviços de criptografia*](../secgloss/c-gly.md) (CSP).
+Os aplicativos usam as funções de serviço a seguir para se conectar e desconectar um CSP [*(provedor de serviços de*](../secgloss/c-gly.md) criptografia).
 
 <table>
 <colgroup>
@@ -158,26 +158,26 @@ Os aplicativos usam as funções de serviço a seguir para se conectar e descone
 </thead>
 <tbody>
 <tr class="odd">
-<td><a href="/windows/desktop/api/Wincrypt/nf-wincrypt-cryptacquirecontexta"><strong>CryptAcquireContext</strong></a></td>
+<td><a href="/windows/desktop/api/Wincrypt/nf-wincrypt-cryptacquirecontexta"><strong>Cryptacquirecontext</strong></a></td>
 <td><blockquote>
 [!Important]<br />
-Essa API está preterida. O software novo e o existente devem começar a usar <a href="/windows/desktop/SecCNG/cng-portal">APIs de próxima geração de criptografia.</a> A Microsoft poderá remover essa API em versões futuras.
+Essa API está preterida. Os softwares novos e existentes devem começar <a href="/windows/desktop/SecCNG/cng-portal">a usar Cryptography Next Generation APIs.</a> A Microsoft pode remover essa API em versões futuras.
 </blockquote>
-<br/> Adquire um identificador para o <a href="/windows/desktop/SecGloss/k-gly"><em>contêiner de chave</em></a> do usuário atual em um CSP específico.</td>
+<br/> Adquire um alça para o contêiner de chave do usuário <a href="/windows/desktop/SecGloss/k-gly"><em>atual</em></a> dentro de um CSP específico.</td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/Wincrypt/nf-wincrypt-cryptcontextaddref"><strong>CryptContextAddRef</strong></a></td>
 <td><blockquote>
 [!Important]<br />
-Essa API está preterida. O software novo e o existente devem começar a usar <a href="/windows/desktop/SecCNG/cng-portal">APIs de próxima geração de criptografia.</a> A Microsoft poderá remover essa API em versões futuras.
+Essa API está preterida. Os softwares novos e existentes devem começar <a href="/windows/desktop/SecCNG/cng-portal">a usar Cryptography Next Generation APIs.</a> A Microsoft pode remover essa API em versões futuras.
 </blockquote>
-<br/> Incrementa a <a href="/windows/desktop/SecGloss/r-gly"><em>contagem de referência</em></a> em um identificador <a href="hcryptprov.md"><strong>HCRYPTPROV</strong></a> .</td>
+<br/> Incrementa a contagem <a href="/windows/desktop/SecGloss/r-gly"><em>de referência</em></a> em um alça <a href="hcryptprov.md"><strong>HCRYPTPROV.</strong></a></td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/Wincrypt/nf-wincrypt-cryptenumprovidersa"><strong>CryptEnumProviders</strong></a></td>
 <td><blockquote>
 [!Important]<br />
-Essa API está preterida. O software novo e o existente devem começar a usar <a href="/windows/desktop/SecCNG/cng-portal">APIs de próxima geração de criptografia.</a> A Microsoft poderá remover essa API em versões futuras.
+Essa API está preterida. Os softwares novos e existentes devem começar <a href="/windows/desktop/SecCNG/cng-portal">a usar Cryptography Next Generation APIs.</a> A Microsoft pode remover essa API em versões futuras.
 </blockquote>
 <br/> Enumera os provedores em um computador.</td>
 </tr>
@@ -185,7 +185,7 @@ Essa API está preterida. O software novo e o existente devem começar a usar <a
 <td><a href="/windows/desktop/api/Wincrypt/nf-wincrypt-cryptenumprovidertypesa"><strong>CryptEnumProviderTypes</strong></a></td>
 <td><blockquote>
 [!Important]<br />
-Essa API está preterida. O software novo e o existente devem começar a usar <a href="/windows/desktop/SecCNG/cng-portal">APIs de próxima geração de criptografia.</a> A Microsoft poderá remover essa API em versões futuras.
+Essa API está preterida. Os softwares novos e existentes devem começar <a href="/windows/desktop/SecCNG/cng-portal">a usar Cryptography Next Generation APIs.</a> A Microsoft pode remover essa API em versões futuras.
 </blockquote>
 <br/> Enumera os tipos de provedores com suporte no computador.</td>
 </tr>
@@ -193,15 +193,15 @@ Essa API está preterida. O software novo e o existente devem começar a usar <a
 <td><a href="/windows/desktop/api/Wincrypt/nf-wincrypt-cryptgetdefaultprovidera"><strong>CryptGetDefaultProvider</strong></a></td>
 <td><blockquote>
 [!Important]<br />
-Essa API está preterida. O software novo e o existente devem começar a usar <a href="/windows/desktop/SecCNG/cng-portal">APIs de próxima geração de criptografia.</a> A Microsoft poderá remover essa API em versões futuras.
+Essa API está preterida. Os softwares novos e existentes devem começar <a href="/windows/desktop/SecCNG/cng-portal">a usar Cryptography Next Generation APIs.</a> A Microsoft pode remover essa API em versões futuras.
 </blockquote>
 <br/> Determina o CSP padrão para o usuário atual ou para o computador para um tipo de provedor especificado.</td>
 </tr>
 <tr class="even">
-<td><a href="/windows/desktop/api/Wincrypt/nf-wincrypt-cryptgetprovparam"><strong>CryptGetProvParam</strong></a></td>
+<td><a href="/windows/desktop/api/Wincrypt/nf-wincrypt-cryptgetprovparam"><strong>Cryptgetprovparam</strong></a></td>
 <td><blockquote>
 [!Important]<br />
-Essa API está preterida. O software novo e o existente devem começar a usar <a href="/windows/desktop/SecCNG/cng-portal">APIs de próxima geração de criptografia.</a> A Microsoft poderá remover essa API em versões futuras.
+Essa API está preterida. Os softwares novos e existentes devem começar <a href="/windows/desktop/SecCNG/cng-portal">a usar Cryptography Next Generation APIs.</a> A Microsoft pode remover essa API em versões futuras.
 </blockquote>
 <br/> Recupera os parâmetros que regem as operações de um CSP.</td>
 </tr>
@@ -394,7 +394,7 @@ As funções a seguir suportam operações de criptografia e descriptografia. [*
 <td><a href="/windows/desktop/api/Wincrypt/nf-wincrypt-cryptdecrypt"><strong>Cryptdecrypt</strong></a></td>
 <td><blockquote>
 [!Important]<br />
-Essa API está preterida. Os softwares novos e existentes devem começar <a href="/windows/desktop/SecCNG/cng-portal">a usar Cryptography Next Generation APIs.</a> A Microsoft pode remover essa API em versões futuras.
+Essa API está preterida. Softwares novos e existentes devem começar <a href="/windows/desktop/SecCNG/cng-portal">a usar Cryptography Next Generation APIs.</a> A Microsoft pode remover essa API em versões futuras.
 </blockquote>
 <br/> Descriptografa uma seção <a href="/windows/desktop/SecGloss/c-gly"><em>de texto cifrado</em></a> usando a chave de criptografia especificada.</td>
 </tr>
@@ -402,7 +402,7 @@ Essa API está preterida. Os softwares novos e existentes devem começar <a href
 <td><a href="/windows/desktop/api/Wincrypt/nf-wincrypt-cryptencrypt"><strong>Cryptencrypt</strong></a></td>
 <td><blockquote>
 [!Important]<br />
-Essa API está preterida. Os softwares novos e existentes devem começar <a href="/windows/desktop/SecCNG/cng-portal">a usar Cryptography Next Generation APIs.</a> A Microsoft pode remover essa API em versões futuras.
+Essa API está preterida. Softwares novos e existentes devem começar <a href="/windows/desktop/SecCNG/cng-portal">a usar Cryptography Next Generation APIs.</a> A Microsoft pode remover essa API em versões futuras.
 </blockquote>
 <br/> Criptografa uma seção de <a href="/windows/desktop/SecGloss/p-gly"><em>texto não criptografado</em></a> usando a chave de criptografia especificada.</td>
 </tr>
@@ -416,7 +416,7 @@ Essa API está preterida. Os softwares novos e existentes devem começar <a href
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/Dpapi/nf-dpapi-cryptunprotectdata"><strong>CryptUnprotectData</strong></a></td>
-<td>Executa uma descriptografia e verificação de integridade dos dados em um <a href="/previous-versions/windows/desktop/legacy/aa381414(v=vs.85)"><strong>DATA_BLOB</strong></a>.</td>
+<td>Executa uma verificação de integridade e descriptografia dos dados em um <a href="/previous-versions/windows/desktop/legacy/aa381414(v=vs.85)"><strong>DATA_BLOB</strong></a>.</td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/Dpapi/nf-dpapi-cryptunprotectmemory"><strong>CryptUnprotectMemory</strong></a></td>
@@ -449,7 +449,7 @@ Essas funções computam [*hashes de*](../secgloss/h-gly.md) dados e também cri
 <td><a href="/windows/desktop/api/Wincrypt/nf-wincrypt-cryptcreatehash"><strong>Cryptcreatehash</strong></a></td>
 <td><blockquote>
 [!Important]<br />
-Essa API está preterida. Os softwares novos e existentes devem começar <a href="/windows/desktop/SecCNG/cng-portal">a usar Cryptography Next Generation APIs.</a> A Microsoft pode remover essa API em versões futuras.
+Essa API está preterida. Softwares novos e existentes devem começar <a href="/windows/desktop/SecCNG/cng-portal">a usar Cryptography Next Generation APIs.</a> A Microsoft pode remover essa API em versões futuras.
 </blockquote>
 <br/> Cria um objeto de hash vazio.</td>
 </tr>
@@ -457,7 +457,7 @@ Essa API está preterida. Os softwares novos e existentes devem começar <a href
 <td><a href="/windows/desktop/api/Wincrypt/nf-wincrypt-cryptdestroyhash"><strong>Cryptdestroyhash</strong></a></td>
 <td><blockquote>
 [!Important]<br />
-Essa API está preterida. Os softwares novos e existentes devem começar <a href="/windows/desktop/SecCNG/cng-portal">a usar Cryptography Next Generation APIs.</a> A Microsoft pode remover essa API em versões futuras.
+Essa API está preterida. Softwares novos e existentes devem começar <a href="/windows/desktop/SecCNG/cng-portal">a usar Cryptography Next Generation APIs.</a> A Microsoft pode remover essa API em versões futuras.
 </blockquote>
 <br/> Destrói um objeto hash.</td>
 </tr>
@@ -473,7 +473,7 @@ Essa API está preterida. Os softwares novos e existentes devem começar <a href
 <td><a href="/windows/desktop/api/Wincrypt/nf-wincrypt-crypthashdata"><strong>Crypthashdata</strong></a></td>
 <td><blockquote>
 [!Important]<br />
-Essa API está preterida. Os softwares novos e existentes devem começar <a href="/windows/desktop/SecCNG/cng-portal">a usar Cryptography Next Generation APIs.</a> A Microsoft pode remover essa API em versões futuras.
+Essa API está preterida. Softwares novos e existentes devem começar <a href="/windows/desktop/SecCNG/cng-portal">a usar Cryptography Next Generation APIs.</a> A Microsoft pode remover essa API em versões futuras.
 </blockquote>
 <br/> Faz hash de um bloco de dados, adicionando-o ao objeto de hash especificado.</td>
 </tr>
@@ -481,7 +481,7 @@ Essa API está preterida. Os softwares novos e existentes devem começar <a href
 <td><a href="/windows/desktop/api/Wincrypt/nf-wincrypt-crypthashsessionkey"><strong>Crypthashsessionkey</strong></a></td>
 <td><blockquote>
 [!Important]<br />
-Essa API está preterida. Os softwares novos e existentes devem começar <a href="/windows/desktop/SecCNG/cng-portal">a usar Cryptography Next Generation APIs.</a> A Microsoft pode remover essa API em versões futuras.
+Essa API está preterida. Softwares novos e existentes devem começar <a href="/windows/desktop/SecCNG/cng-portal">a usar Cryptography Next Generation APIs.</a> A Microsoft pode remover essa API em versões futuras.
 </blockquote>
 <br/> Faz hash de uma chave de sessão, adicionando-a ao objeto de hash especificado.</td>
 </tr>
@@ -489,7 +489,7 @@ Essa API está preterida. Os softwares novos e existentes devem começar <a href
 <td><a href="/windows/desktop/api/Wincrypt/nf-wincrypt-cryptsethashparam"><strong>CryptSetHashParam</strong></a></td>
 <td><blockquote>
 [!Important]<br />
-Essa API está preterida. Os softwares novos e existentes devem começar <a href="/windows/desktop/SecCNG/cng-portal">a usar Cryptography Next Generation APIs.</a> A Microsoft pode remover essa API em versões futuras.
+Essa API está preterida. Softwares novos e existentes devem começar <a href="/windows/desktop/SecCNG/cng-portal">a usar Cryptography Next Generation APIs.</a> A Microsoft pode remover essa API em versões futuras.
 </blockquote>
 <br/> Define um parâmetro de objeto hash.</td>
 </tr>
@@ -497,7 +497,7 @@ Essa API está preterida. Os softwares novos e existentes devem começar <a href
 <td><a href="/windows/desktop/api/Wincrypt/nf-wincrypt-cryptsignhasha"><strong>Cryptsignhash</strong></a></td>
 <td><blockquote>
 [!Important]<br />
-Essa API está preterida. Os softwares novos e existentes devem começar <a href="/windows/desktop/SecCNG/cng-portal">a usar Cryptography Next Generation APIs.</a> A Microsoft pode remover essa API em versões futuras.
+Essa API está preterida. Softwares novos e existentes devem começar <a href="/windows/desktop/SecCNG/cng-portal">a usar Cryptography Next Generation APIs.</a> A Microsoft pode remover essa API em versões futuras.
 </blockquote>
 <br/> Assina o objeto de hash especificado.</td>
 </tr>
@@ -513,7 +513,7 @@ Essa API está preterida. Os softwares novos e existentes devem começar <a href
 <td><a href="/windows/desktop/api/Wincrypt/nf-wincrypt-cryptverifysignaturea"><strong>CryptVerifySignature</strong></a></td>
 <td><blockquote>
 [!Important]<br />
-Essa API está preterida. Os softwares novos e existentes devem começar <a href="/windows/desktop/SecCNG/cng-portal">a usar Cryptography Next Generation APIs.</a> A Microsoft pode remover essa API em versões futuras.
+Essa API está preterida. Softwares novos e existentes devem começar <a href="/windows/desktop/SecCNG/cng-portal">a usar Cryptography Next Generation APIs.</a> A Microsoft pode remover essa API em versões futuras.
 </blockquote>
 <br/> Verifica uma assinatura digital, dado um identificador para o objeto hash.</td>
 </tr>
@@ -548,7 +548,7 @@ Um site de usuário pode, ao longo do tempo, coletar muitos certificados. Normal
 |------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**CertAddStoreToCollection**](/windows/desktop/api/Wincrypt/nf-wincrypt-certaddstoretocollection)           | Adiciona um armazenamento de certificados irmãos a um armazenamento de certificados de coleção.                                                                                                                                                                                                                                                                       |
 | [**Certclosestore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certclosestore)                               | Fecha um alça do armazenamento de certificados.                                                                                                                                                                                                                                                                                                        |
-| [**CertControlStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certcontrolstore)                           | Permite que um aplicativo seja notificado quando há uma diferença entre o conteúdo de um armazenamento armazenado em cache e o conteúdo do armazenamento que é persistido no armazenamento. Ele também fornece a dessincronização do armazenamento armazenado em cache, se necessário, e fornece um meio para fazer commit das alterações feitas no armazenamento armazenado em cache para o armazenamento persistente.<br/> |
+| [**CertControlStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certcontrolstore)                           | Permite que um aplicativo seja notificado quando há uma diferença entre o conteúdo de um armazenamento armazenado em cache e o conteúdo do armazenamento que é persistido no armazenamento. Ele também fornece dessincronização do armazenamento armazenado em cache, se necessário, e fornece um meio para fazer commit das alterações feitas no armazenamento armazenado em cache para o armazenamento persistente.<br/> |
 | [**CertDuplicateStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certduplicatestore)                       | Duplica um alça de armazenamento incrementando a contagem [*de referência*](../secgloss/r-gly.md).                                                                                                                                                                                            |
 | [**CertEnumPhysicalStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certenumphysicalstore)                 | Enumera os armazenamentos físicos para um armazenamento do sistema especificado.                                                                                                                                                                                                                                                                              |
 | [**CertEnumSystemStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certenumsystemstore)                     | Enumera todos os armazenamentos do sistema disponíveis.                                                                                                                                                                                                                                                                                                   |
@@ -947,7 +947,7 @@ As funções CryptoAPI a seguir gerenciam dados e certificados.
 <td><a href="/windows/desktop/api/Wincrypt/nf-wincrypt-crypthashcertificate"><strong>CryptHashCertificate</strong></a></td>
 <td><blockquote>
 [!Important]<br />
-Essa API está preterida. Os softwares novos e existentes devem começar <a href="/windows/desktop/SecCNG/cng-portal">a usar Cryptography Next Generation APIs.</a> A Microsoft poderá remover essa API em versões futuras.
+Essa API está preterida. Softwares novos e existentes devem começar <a href="/windows/desktop/SecCNG/cng-portal">a usar Cryptography Next Generation APIs.</a> A Microsoft poderá remover essa API em versões futuras.
 </blockquote>
 <br/> Aplica hash ao conteúdo codificado.</td>
 </tr>
@@ -1118,14 +1118,14 @@ As funções CryptoAPI a seguir convertem membros da estrutura de certificado em
 
  
 
-### <a name="enhanced-key-usage-functions"></a>Funções de uso de chave aprimoradas
+### <a name="enhanced-key-usage-functions"></a>Funções de uso avançado de chave
 
-As funções a seguir lidam com [*a extensão EKU*](../secgloss/e-gly.md) (uso aprimorado de chave) e a propriedade estendida EKU de certificados. A extensão EKU e a propriedade estendida especificam e limitam os usos válidos de um certificado. As extensões fazem parte do próprio certificado. Eles são definidos pelo emissor do certificado e são somente leitura. Propriedades estendidas por certificado são valores associados a um certificado que pode ser definido em um aplicativo.
+As funções a seguir lidam com a extensão EKU ( [*uso avançado de chave*](../secgloss/e-gly.md) ) e a propriedade EKU estendida de certificados. A extensão EKU e a propriedade estendida especificam e limitam os usos válidos de um certificado. As extensões fazem parte do próprio certificado. Eles são definidos pelo emissor do certificado e são somente leitura. As propriedades estendidas de certificado são valores associados a um certificado que pode ser definido em um aplicativo.
 
 | Função                                                                             | Descrição                                                                    |
 |--------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|
 | [**CertAddEnhancedKeyUsageIdentifier**](/windows/desktop/api/Wincrypt/nf-wincrypt-certaddenhancedkeyusageidentifier)       | Adiciona um identificador de uso à propriedade EKU de um certificado.                       |
-| [**CertGetEnhancedKeyUsage**](/windows/desktop/api/Wincrypt/nf-wincrypt-certgetenhancedkeyusage)                           | Adquire, de um certificado, informações sobre a extensão ou propriedade de EKU. |
+| [**CertGetEnhancedKeyUsage**](/windows/desktop/api/Wincrypt/nf-wincrypt-certgetenhancedkeyusage)                           | Adquire, de um certificado, informações sobre a extensão ou Propriedade EKU. |
 | [**CertRemoveEnhancedKeyUsageIdentifier**](/windows/desktop/api/Wincrypt/nf-wincrypt-certremoveenhancedkeyusageidentifier) | Remove o identificador de uso da propriedade estendida EKU de um certificado.       |
 | [**CertSetEnhancedKeyUsage**](/windows/desktop/api/Wincrypt/nf-wincrypt-certsetenhancedkeyusage)                           | Define a propriedade EKU para um certificado.                                       |
 
@@ -1135,13 +1135,13 @@ As funções a seguir lidam com [*a extensão EKU*](../secgloss/e-gly.md) (uso a
 
 ### <a name="key-identifier-functions"></a>Funções de identificador de chave
 
-As funções de identificador de chave permitem ao usuário criar, definir, recuperar ou localizar um identificador de chave ou suas propriedades.
+As funções de identificador de chave permitem que o usuário crie, defina, recupere ou localize um identificador de chave ou suas propriedades.
 
-Um identificador de chave é o identificador exclusivo de um [*par de chaves pública/privada.*](../secgloss/p-gly.md) Ele pode ser qualquer identificador exclusivo, mas geralmente é o hash SHA1 de 20 byte de uma estrutura de INFORMAÇÕES DE [**CHAVE PÚBLICA DO CERTIFICADO \_ \_ \_ codificado.**](/windows/desktop/api/Wincrypt/ns-wincrypt-cert_public_key_info) Um identificador de chave pode ser obtido por meio da ID DE PROP DO IDENTIFICADOR DE CHAVE DE \_ \_ CERTIFICADO do \_ \_ certificado. O identificador de chave permite o uso desse par [*de chaves*](../secgloss/k-gly.md) para criptografar ou descriptografar mensagens sem usar o certificado.
+Um identificador de chave é o identificador exclusivo de um [*par de chaves pública/privada*](../secgloss/p-gly.md). Pode ser qualquer identificador exclusivo, mas geralmente é o hash SHA1 de 20 bytes de uma estrutura [**de \_ \_ \_ informações de chave pública de certificado**](/windows/desktop/api/Wincrypt/ns-wincrypt-cert_public_key_info) codificado. Um identificador de chave pode ser obtido por meio da ID de prop do identificador de chave de certificado \_ \_ \_ \_ . O identificador de chave permite o uso desse [*par de chaves*](../secgloss/k-gly.md) para criptografar ou descriptografar mensagens sem usar o certificado.
 
-Os identificadores de chave não estão associados a [*CRLs*](../secgloss/c-gly.md) ou [*CTLs.*](../secgloss/c-gly.md)
+Os identificadores de chave não estão associados a [*CRLs*](../secgloss/c-gly.md) ou [*CTLs*](../secgloss/c-gly.md).
 
-Um identificador de chave pode ter as mesmas propriedades que um contexto de certificado. Para obter mais informações, [**consulte CertCreateContext**](/windows/desktop/api/Wincrypt/nf-wincrypt-certcreatecontext).
+Um identificador de chave pode ter as mesmas propriedades que um contexto de certificado. Para obter mais informações, consulte [**CertCreateContext**](/windows/desktop/api/Wincrypt/nf-wincrypt-certcreatecontext).
 
 <table>
 <colgroup>
@@ -1159,19 +1159,19 @@ Um identificador de chave pode ter as mesmas propriedades que um contexto de cer
 <td><a href="/windows/desktop/api/Wincrypt/nf-wincrypt-cryptcreatekeyidentifierfromcsp"><strong>CryptCreateKeyIdentifierFromCSP</strong></a></td>
 <td><blockquote>
 [!Important]<br />
-Essa API está preterida. Os softwares novos e existentes devem começar <a href="/windows/desktop/SecCNG/cng-portal">a usar Cryptography Next Generation APIs.</a> A Microsoft pode remover essa API em versões futuras.
+Essa API está preterida. O software novo e o existente devem começar a usar <a href="/windows/desktop/SecCNG/cng-portal">APIs de próxima geração de criptografia.</a> A Microsoft poderá remover essa API em versões futuras.
 </blockquote>
-<br/> Cria um identificador de chave do <a href="/windows/desktop/SecGloss/p-gly"><em>BLOB</em></a>de chave pública de um CSP.</td>
+<br/> Cria um identificador de chave do BLOB de <a href="/windows/desktop/SecGloss/p-gly"><em>chave pública</em></a>de um CSP.</td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/Wincrypt/nf-wincrypt-cryptenumkeyidentifierproperties"><strong>CryptEnumKeyIdentifierProperties</strong></a></td>
-<td>Enumera identificadores de chave e suas propriedades.</td>
+<td>Enumera os identificadores de chave e suas propriedades.</td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/Wincrypt/nf-wincrypt-cryptgetkeyidentifierproperty"><strong>CryptGetKeyIdentifierProperty</strong></a></td>
 <td><blockquote>
 [!Important]<br />
-Essa API está preterida. Os softwares novos e existentes devem começar <a href="/windows/desktop/SecCNG/cng-portal">a usar Cryptography Next Generation APIs.</a> A Microsoft pode remover essa API em versões futuras.
+Essa API está preterida. O software novo e o existente devem começar a usar <a href="/windows/desktop/SecCNG/cng-portal">APIs de próxima geração de criptografia.</a> A Microsoft poderá remover essa API em versões futuras.
 </blockquote>
 <br/> Adquire uma propriedade específica de um identificador de chave especificado.</td>
 </tr>
@@ -1179,7 +1179,7 @@ Essa API está preterida. Os softwares novos e existentes devem começar <a href
 <td><a href="/windows/desktop/api/Wincrypt/nf-wincrypt-cryptsetkeyidentifierproperty"><strong>CryptSetKeyIdentifierProperty</strong></a></td>
 <td><blockquote>
 [!Important]<br />
-Essa API está preterida. Os softwares novos e existentes devem começar <a href="/windows/desktop/SecCNG/cng-portal">a usar Cryptography Next Generation APIs.</a> A Microsoft pode remover essa API em versões futuras.
+Essa API está preterida. O software novo e o existente devem começar a usar <a href="/windows/desktop/SecCNG/cng-portal">APIs de próxima geração de criptografia.</a> A Microsoft poderá remover essa API em versões futuras.
 </blockquote>
 <br/> Define uma propriedade de um identificador de chave especificado.</td>
 </tr>
@@ -1190,42 +1190,42 @@ Essa API está preterida. Os softwares novos e existentes devem começar <a href
 
  
 
-### <a name="oid-support-functions"></a>Funções de suporte do OID
+### <a name="oid-support-functions"></a>Funções de suporte a OID
 
-Essas funções fornecem suporte ao OID [*(identificador*](../secgloss/o-gly.md) de objeto). Essas funções instalam, registram e expedim para OID e codificam funções específicas de tipo.
+Essas funções fornecem suporte a OID ( [*identificador de objeto*](../secgloss/o-gly.md) ). Essas funções instalam, registram e expedem para OID e codificam funções específicas de tipo.
 
-As seguintes funções CryptoAPI usam estas funções de suporte OID:
+As seguintes funções de CryptoAPI usam essas funções de suporte a OID:
 
--   [**Cryptencodeobject**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptencodeobject)
+-   [**CryptEncodeObject**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptencodeobject)
 -   [**CryptEncodeObjectEx**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptencodeobjectex)
--   [**Cryptdecodeobject**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptdecodeobject)
+-   [**CryptDecodeObject**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptdecodeobject)
 -   [**CryptDecodeObjectEx**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptdecodeobjectex)
--   [**Certverifyrevocation**](/windows/desktop/api/Wincrypt/nf-wincrypt-certverifyrevocation)
--   [**Certopenstore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certopenstore)
+-   [**CertVerifyRevocation**](/windows/desktop/api/Wincrypt/nf-wincrypt-certverifyrevocation)
+-   [**CertOpenStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certopenstore)
 
-Para ter uma visão geral desse processo, consulte [Estendendo a funcionalidade cryptoAPI](extending-cryptoapi-functionality.md).
+Para obter uma visão geral desse processo, consulte [estendendo a funcionalidade de CryptoAPI](extending-cryptoapi-functionality.md).
 
 As funções a seguir funcionam com OIDs.
 
 | Função                                                                       | Descrição                                                                                                                                                                                                        |
 |--------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**CryptEnumOIDFunction**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptenumoidfunction)                           | Enumera as funções OID registradas identificadas por seu tipo de codificação, nome da função e OID.                                                                                                                 |
-| [**CryptEnumOIDInfo**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptenumoidinfo)                                   | Enumera as informações OID registradas identificadas por seu grupo e chama *pfnEnumOIDInfo para* obter as correspondeções.                                                                                                       |
-| [**CryptFindOIDInfo**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptfindoidinfo)                                   | Usa a chave e o grupo especificados para encontrar informações de OID.                                                                                                                                                          |
-| [**CryptFreeOIDFunctionAddress**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptfreeoidfunctionaddress)             | Libera a contagem de alças que foi incrementada e retornada por [**CryptGetOIDFunctionAddress**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptgetoidfunctionaddress) ou [**CryptGetDefaultOIDFunctionAddress**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptgetdefaultoidfunctionaddress). |
-| [**CryptGetDefaultOIDDllList**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptgetdefaultoiddlllist)                 | Adquire a lista de entradas DLL padrão registradas para o conjunto de funções e o tipo de codificação especificados.                                                                                                              |
-| [**CryptGetDefaultOIDFunctionAddress**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptgetdefaultoidfunctionaddress) | Adquire a primeira ou a próxima função padrão instalada ou carrega a DLL que contém a função padrão.                                                                                                 |
-| [**CryptGetOIDFunctionAddress**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptgetoidfunctionaddress)               | Pesquisa a lista de funções instaladas para um tipo de codificação e uma combinação de OID. Se uma corresponder não for encontrada lá, o Registro será pesquisado para encontrar uma combinação.                                                                  |
-| [**CryptGetOIDFunctionValue**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptgetoidfunctionvalue)                   | Adquire o valor para o tipo de codificação, o nome da função, o OID e o nome do valor especificados.                                                                                                                            |
-| [**CryptInitOIDFunctionSet**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptinitoidfunctionset)                     | Inicializa e retorna um identificador do conjunto de funções OID identificado pelo nome da função fornecido.                                                                                                                 |
-| [**CryptInstallOIDFunctionAddress**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptinstalloidfunctionaddress)       | Instala um conjunto de endereços de função OID que podem ser chamado.                                                                                                                                                                 |
+| [**CryptEnumOIDFunction**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptenumoidfunction)                           | Enumera as funções de OID registradas identificadas por seu tipo de codificação, nome de função e OID.                                                                                                                 |
+| [**CryptEnumOIDInfo**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptenumoidinfo)                                   | Enumera as informações de OID registradas identificadas por seu grupo e chama *pfnEnumOIDInfo* para correspondências.                                                                                                       |
+| [**CryptFindOIDInfo**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptfindoidinfo)                                   | Usa a chave e o grupo especificados para localizar informações de OID.                                                                                                                                                          |
+| [**CryptFreeOIDFunctionAddress**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptfreeoidfunctionaddress)             | Libera a contagem de identificadores que foi incrementada e retornada por [**CryptGetOIDFunctionAddress**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptgetoidfunctionaddress) ou [**CryptGetDefaultOIDFunctionAddress**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptgetdefaultoidfunctionaddress). |
+| [**CryptGetDefaultOIDDllList**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptgetdefaultoiddlllist)                 | Adquire a lista de entradas de DLL padrão registradas para o conjunto de funções e o tipo de codificação especificados.                                                                                                              |
+| [**CryptGetDefaultOIDFunctionAddress**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptgetdefaultoidfunctionaddress) | Adquire a primeira ou próxima função padrão instalada ou carrega a DLL que contém a função padrão.                                                                                                 |
+| [**CryptGetOIDFunctionAddress**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptgetoidfunctionaddress)               | Pesquisa a lista de funções instaladas para um tipo de codificação e uma correspondência de OID. Se uma correspondência não for encontrada, o registro será pesquisado em busca de uma correspondência.                                                                  |
+| [**CryptGetOIDFunctionValue**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptgetoidfunctionvalue)                   | Adquire o valor para o tipo de codificação especificado, o nome da função, o OID e o nome do valor.                                                                                                                            |
+| [**CryptInitOIDFunctionSet**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptinitoidfunctionset)                     | Inicializa e retorna um identificador do conjunto de funções de OID identificado pelo nome de função fornecido.                                                                                                                 |
+| [**CryptInstallOIDFunctionAddress**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptinstalloidfunctionaddress)       | Instala um conjunto de endereços de função OID que podem ser chamados.                                                                                                                                                                 |
 | [**CryptRegisterDefaultOIDFunction**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptregisterdefaultoidfunction)     | Registra a DLL que contém a função padrão a ser chamada para o tipo de codificação e o nome da função especificados.                                                                                               |
-| [**CryptRegisterOIDFunction**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptregisteroidfunction)                   | Registra a DLL que contém a função a ser chamada para o tipo de codificação, o nome da função e o OID especificados.                                                                                                 |
-| [**CryptRegisterOIDInfo**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptregisteroidinfo)                           | Registra as informações OID especificadas na estrutura [**CRYPT \_ OID \_ INFO,**](/windows/desktop/api/Wincrypt/ns-wincrypt-crypt_oid_info) persistindo-as no Registro.                                                                                |
-| [**CryptSetOIDFunctionValue**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptsetoidfunctionvalue)                   | Define o valor para o tipo de codificação, o nome da função, o OID e o nome do valor especificados.                                                                                                                                |
+| [**CryptRegisterOIDFunction**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptregisteroidfunction)                   | Registra a DLL que contém a função a ser chamada para o tipo de codificação especificado, o nome da função e a OID.                                                                                                 |
+| [**CryptRegisterOIDInfo**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptregisteroidinfo)                           | Registra as informações de OID especificadas na estrutura de [**\_ \_ informações de OID cript**](/windows/desktop/api/Wincrypt/ns-wincrypt-crypt_oid_info) , mantendo-as para o registro.                                                                                |
+| [**CryptSetOIDFunctionValue**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptsetoidfunctionvalue)                   | Define o valor para o tipo de codificação especificado, o nome da função, o OID e o nome do valor.                                                                                                                                |
 | [**CryptUnregisterDefaultOIDFunction**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptunregisterdefaultoidfunction) | Remove o registro da DLL que contém a função padrão a ser chamada para o tipo de codificação e o nome da função especificados.                                                                            |
-| [**CryptUnregisterOIDFunction**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptunregisteroidfunction)               | Remove o registro da DLL que contém a função a ser chamada para o tipo de codificação, o nome da função e o OID especificados.                                                                              |
-| [**CryptUnregisterOIDInfo**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptunregisteroidinfo)                       | Remove o registro das informações OID especificadas.                                                                                                                                                        |
+| [**CryptUnregisterOIDFunction**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptunregisteroidfunction)               | Remove o registro da DLL que contém a função a ser chamada para o tipo de codificação especificado, o nome da função e o OID.                                                                              |
+| [**CryptUnregisterOIDInfo**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptunregisteroidinfo)                       | Remove o registro das informações de OID especificadas.                                                                                                                                                        |
 
 
 
@@ -1233,7 +1233,7 @@ As funções a seguir funcionam com OIDs.
 
 ### <a name="remote-object-retrieval-functions"></a>Funções de recuperação de objeto remoto
 
-As funções a seguir permitem que o usuário recupere um objeto PKI (Infraestrutura de Chave Pública), adquira a URL de um certificado, CTL ou CRL ou extraia uma URL de um objeto.
+As funções a seguir permitem que o usuário recupere um objeto PKI (infraestrutura de chave pública), adquira a URL de um certificado, CTL ou CRL, ou Extraia uma URL de um objeto.
 
 | Função                                                     | Descrição                                                            |
 |--------------------------------------------------------------|------------------------------------------------------------------------|
@@ -1381,7 +1381,7 @@ Essas funções são usadas para criar um catálogo. Todas essas funções são 
 | [**CryptCATCDFEnumAttributesWithCDFTag**](cryptcatcdfenumattributeswithcdftag.md) | Enumera os atributos dos arquivos de membro na seção **CatalogFiles** de um CDF.                                       |
 | [**CryptCATCDFEnumCatAttributes**](/windows/desktop/api/Mscat/nf-mscat-cryptcatcdfenumcatattributes)               | Enumera os atributos de nível de catálogo na seção **CatalogHeader** de um CDF.                                        |
 | [**CryptCATCDFEnumMembersByCDFTagEx**](cryptcatcdfenummembersbycdftagex.md)       | Enumera os membros do arquivo individual na seção **CatalogFiles** de um CDF.                                          |
-| [**CryptCATCDFOpen**](/windows/desktop/api/Mscat/nf-mscat-cryptcatcdfopen)                                         | Abre uma CDF existente para leitura e inicializa uma estrutura [**CRYPTCATCDF.**](/windows/win32/api/mscat/ns-mscat-cryptcatcdf)                         |
+| [**CryptCATCDFOpen**](/windows/desktop/api/Mscat/nf-mscat-cryptcatcdfopen)                                         | Abre um CDF existente para ler e Inicializa uma estrutura [**CRYPTCATCDF**](/windows/win32/api/mscat/ns-mscat-cryptcatcdf) .                         |
 
 
 
@@ -1393,25 +1393,25 @@ Essas funções são usadas para gerenciar um catálogo.
 
 | Função                                                                             | Descrição                                                                                                                                                                                                                                                                                                                        |
 |--------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**CryptCATAdminAcquireContext**](/windows/desktop/api/Mscat/nf-mscat-cryptcatadminacquirecontext)                   | Adquire um handle para um contexto de administrador de catálogo. Esse handle pode ser usado por chamadas subsequentes para as funções [**CryptCATAdminAddCatalog**](/windows/desktop/api/Mscat/nf-mscat-cryptcatadminaddcatalog), [**CryptCATAdminEnumCatalogFromHash**](/windows/desktop/api/Mscat/nf-mscat-cryptcatadminenumcatalogfromhash)e [**CryptCATAdminRemoveCatalog.**](/windows/desktop/api/Mscat/nf-mscat-cryptcatadminremovecatalog) |
-| [**CryptCATAdminAcquireContext2**](/windows/desktop/api/Mscat/nf-mscat-cryptcatadminacquirecontext2)                 | Adquire um alça para um contexto de administrador de catálogo para um determinado algoritmo de hash e política de hash.                                                                                                                                                                                                                                   |
+| [**CryptCATAdminAcquireContext**](/windows/desktop/api/Mscat/nf-mscat-cryptcatadminacquirecontext)                   | Adquire um identificador para um contexto de administrador de catálogo. Esse identificador pode ser usado por chamadas subsequentes para as funções [**CryptCATAdminAddCatalog**](/windows/desktop/api/Mscat/nf-mscat-cryptcatadminaddcatalog), [**CryptCATAdminEnumCatalogFromHash**](/windows/desktop/api/Mscat/nf-mscat-cryptcatadminenumcatalogfromhash)e [**CryptCATAdminRemoveCatalog**](/windows/desktop/api/Mscat/nf-mscat-cryptcatadminremovecatalog) . |
+| [**CryptCATAdminAcquireContext2**](/windows/desktop/api/Mscat/nf-mscat-cryptcatadminacquirecontext2)                 | Adquire um identificador para um contexto de administrador de catálogo para um determinado algoritmo de hash e política de hash.                                                                                                                                                                                                                                   |
 | [**CryptCATAdminAddCatalog**](/windows/desktop/api/Mscat/nf-mscat-cryptcatadminaddcatalog)                           | Adiciona um catálogo ao banco de dados de catálogo.                                                                                                                                                                                                                                                                                            |
 | [**CryptCATAdminCalcHashFromFileHandle**](/windows/desktop/api/Mscat/nf-mscat-cryptcatadmincalchashfromfilehandle)   | Calcula o hash de um arquivo.                                                                                                                                                                                                                                                                                                    |
 | [**CryptCATAdminCalcHashFromFileHandle2**](/windows/desktop/api/Mscat/nf-mscat-cryptcatadmincalchashfromfilehandle2) | Calcula o hash de um arquivo usando o algoritmo especificado.                                                                                                                                                                                                                                                                   |
 | [**CryptCATAdminEnumCatalogFromHash**](/windows/desktop/api/Mscat/nf-mscat-cryptcatadminenumcatalogfromhash)         | Enumera os catálogos que contêm um hash especificado.                                                                                                                                                                                                                                                                             |
-| [**CryptCATAdminReleaseCatalogContext**](/windows/desktop/api/Mscat/nf-mscat-cryptcatadminreleasecatalogcontext)     | Libera um alça para um contexto de catálogo retornado anteriormente pela função [**CryptCATAdminAddCatalog.**](/windows/desktop/api/Mscat/nf-mscat-cryptcatadminaddcatalog)                                                                                                                                                                                             |
-| [**CryptCATAdminReleaseContext**](/windows/desktop/api/Mscat/nf-mscat-cryptcatadminreleasecontext)                   | Libera o handle atribuído anteriormente pela [**função CryptCATAdminAcquireContext.**](/windows/desktop/api/Mscat/nf-mscat-cryptcatadminacquirecontext)                                                                                                                                                                                                        |
-| [**CryptCATAdminRemoveCatalog**](/windows/desktop/api/Mscat/nf-mscat-cryptcatadminremovecatalog)                     | Exclui um arquivo de catálogo e remove a entrada desse catálogo do banco de dados Windows catálogo.                                                                                                                                                                                                                                         |
+| [**CryptCATAdminReleaseCatalogContext**](/windows/desktop/api/Mscat/nf-mscat-cryptcatadminreleasecatalogcontext)     | Libera um identificador para um contexto de catálogo retornado anteriormente pela função [**CryptCATAdminAddCatalog**](/windows/desktop/api/Mscat/nf-mscat-cryptcatadminaddcatalog) .                                                                                                                                                                                             |
+| [**CryptCATAdminReleaseContext**](/windows/desktop/api/Mscat/nf-mscat-cryptcatadminreleasecontext)                   | Libera o identificador atribuído anteriormente pela função [**CryptCATAdminAcquireContext**](/windows/desktop/api/Mscat/nf-mscat-cryptcatadminacquirecontext) .                                                                                                                                                                                                        |
+| [**CryptCATAdminRemoveCatalog**](/windows/desktop/api/Mscat/nf-mscat-cryptcatadminremovecatalog)                     | exclui um arquivo de catálogo e remove a entrada desse catálogo do banco de dados do catálogo Windows.                                                                                                                                                                                                                                         |
 | [**CryptCATAdminResolveCatalogPath**](/windows/desktop/api/Mscat/nf-mscat-cryptcatadminresolvecatalogpath)           | Recupera o caminho totalmente qualificado do catálogo especificado.                                                                                                                                                                                                                                                                       |
 | [**CryptCATCatalogInfoFromContext**](/windows/desktop/api/Mscat/nf-mscat-cryptcatcataloginfofromcontext)             | Recupera informações de catálogo de um contexto de catálogo especificado.                                                                                                                                                                                                                                                                    |
-| [**CryptCATClose**](/windows/desktop/api/Mscat/nf-mscat-cryptcatclose)                                               | Fecha um alça de catálogo aberto anteriormente pela [**função CryptCATOpen.**](/windows/desktop/api/Mscat/nf-mscat-cryptcatopen)                                                                                                                                                                                                                                    |
+| [**CryptCATClose**](/windows/desktop/api/Mscat/nf-mscat-cryptcatclose)                                               | Fecha um identificador de catálogo aberto anteriormente pela função [**CryptCATOpen**](/windows/desktop/api/Mscat/nf-mscat-cryptcatopen) .                                                                                                                                                                                                                                    |
 | [**CryptCATEnumerateAttr**](/windows/desktop/api/Mscat/nf-mscat-cryptcatenumerateattr)                               | Enumera os atributos associados a um membro de um catálogo.                                                                                                                                                                                                                                                                   |
 | [**CryptCATEnumerateCatAttr**](/windows/desktop/api/Mscat/nf-mscat-cryptcatenumeratecatattr)                         | Enumera os atributos associados a um catálogo.                                                                                                                                                                                                                                                                               |
 | [**CryptCATEnumerateMember**](/windows/desktop/api/Mscat/nf-mscat-cryptcatenumeratemember)                           | Enumera os membros de um catálogo.                                                                                                                                                                                                                                                                                               |
 | [**CryptCATGetAttrInfo**](/windows/desktop/api/Mscat/nf-mscat-cryptcatgetattrinfo)                                   | Recupera informações sobre um atributo de um membro de um catálogo.                                                                                                                                                                                                                                                                 |
-| [**CryptCATGetMemberInfo**](/windows/desktop/api/Mscat/nf-mscat-cryptcatgetmemberinfo)                               | Recupera informações de membro do PKCS 7 do \# catálogo. Além de recuperar as informações de membro de uma marca de referência especificada, essa função abre um contexto de membro.                                                                                                                                                    |
-| [**CryptCATOpen**](/windows/desktop/api/Mscat/nf-mscat-cryptcatopen)                                                 | Abre um catálogo e retorna um alça de contexto para o catálogo aberto.                                                                                                                                                                                                                                                                 |
-| [**IsCatalogFile**](/windows/desktop/api/Mscat/nf-mscat-iscatalogfile)                                               | Recupera um valor booliana que indica se o arquivo especificado é um arquivo de catálogo.                                                                                                                                                                                                                                             |
+| [**CryptCATGetMemberInfo**](/windows/desktop/api/Mscat/nf-mscat-cryptcatgetmemberinfo)                               | Recupera informações de membro do PKCS 7 do catálogo \# . Além de recuperar as informações de membro para uma marca de referência especificada, essa função abre um contexto de membro.                                                                                                                                                    |
+| [**CryptCATOpen**](/windows/desktop/api/Mscat/nf-mscat-cryptcatopen)                                                 | Abre um catálogo e retorna um identificador de contexto para o catálogo aberto.                                                                                                                                                                                                                                                                 |
+| [**Iscatalogfile**](/windows/desktop/api/Mscat/nf-mscat-iscatalogfile)                                               | Recupera um valor booliano que indica se o arquivo especificado é um arquivo de catálogo.                                                                                                                                                                                                                                             |
 
 
 
@@ -1424,41 +1424,41 @@ As funções a seguir são usadas para executar várias operações de confianç
 | Função                                                                               | Descrição                                                                                                                                                          |
 |----------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**WintrustAddActionID**](/windows/desktop/api/Wintrust/nf-wintrust-wintrustaddactionid)                                     | Adiciona uma ação de provedor de confiança ao sistema do usuário.                                                                                                                   |
-| [**WintrustGetRegPolicyFlags**](/windows/desktop/api/Wintrust/nf-wintrust-wintrustgetregpolicyflags)                         | Recupera sinalizadores de política para um provedor de política.                                                                                                                        |
+| [**WintrustGetRegPolicyFlags**](/windows/desktop/api/Wintrust/nf-wintrust-wintrustgetregpolicyflags)                         | Recupera os sinalizadores de política para um provedor de política.                                                                                                                        |
 | [**WintrustAddDefaultForUsage**](/windows/desktop/api/Wintrust/nf-wintrust-wintrustadddefaultforusage)                       | Especifica o identificador de uso padrão e as informações de retorno de chamada para um provedor                                                                                       |
 | [**WintrustGetDefaultForUsage**](/windows/desktop/api/Wintrust/nf-wintrust-wintrustgetdefaultforusage)                       | Recupera o identificador de uso padrão e as informações de retorno de chamada.                                                                                                     |
 | [**WintrustLoadFunctionPointers**](/windows/desktop/api/Wintrust/nf-wintrust-wintrustloadfunctionpointers)                   | Carrega pontos de entrada de função para um GUID de ação especificado.                                                                                                             |
-| [**WintrustRemoveActionID**](/windows/desktop/api/Wintrust/nf-wintrust-wintrustremoveactionid)                               | Remove uma ação adicionada pela [**função WintrustAddActionID.**](/windows/desktop/api/Wintrust/nf-wintrust-wintrustaddactionid)                                                                          |
-| [**WintrustSetDefaultIncludePEPageHashes**](/windows/desktop/api/Wintrust/nf-wintrust-wintrustsetdefaultincludepepagehashes) | Define a configuração padrão que determina se os hashes de página são incluídos ao criar dados indiretos sip (pacote de interface de assunto) para arquivos executáveis portáteis. |
-| [**WintrustSetRegPolicyFlags**](/windows/desktop/api/Wintrust/nf-wintrust-wintrustsetregpolicyflags)                         | Define sinalizadores de política para um provedor de política.                                                                                                                             |
+| [**WintrustRemoveActionID**](/windows/desktop/api/Wintrust/nf-wintrust-wintrustremoveactionid)                               | Remove uma ação adicionada pela função [**WintrustAddActionID**](/windows/desktop/api/Wintrust/nf-wintrust-wintrustaddactionid) .                                                                          |
+| [**WintrustSetDefaultIncludePEPageHashes**](/windows/desktop/api/Wintrust/nf-wintrust-wintrustsetdefaultincludepepagehashes) | Define a configuração padrão que determina se os hashes de página são incluídos ao criar dados indiretos de SIP (pacote de interface de entidade) para arquivos executáveis portáteis. |
+| [**WintrustSetRegPolicyFlags**](/windows/desktop/api/Wintrust/nf-wintrust-wintrustsetregpolicyflags)                         | Define os sinalizadores de política para um provedor de política.                                                                                                                             |
 | [**WinVerifyTrust**](/windows/desktop/api/Wintrust/nf-wintrust-winverifytrust)                                               | Executa uma ação de verificação de confiança em um objeto especificado.                                                                                                          |
-| [**WinVerifyTrustEx**](/windows/desktop/api/Wintrust/nf-wintrust-winverifytrustex)                                           | Executa uma ação de verificação de confiança em um objeto especificado e leva um ponteiro para uma estrutura WINTRUST \_ DATA.                                                        |
+| [**WinVerifyTrustEx**](/windows/desktop/api/Wintrust/nf-wintrust-winverifytrustex)                                           | Executa uma ação de verificação de confiança em um objeto especificado e usa um ponteiro para uma \_ estrutura de dados WINTRUST.                                                        |
 | [**WTHelperCertCheckValidSignature**](/windows/desktop/api/Wintrust/nf-wintrust-wthelpercertcheckvalidsignature)             | Verifica se uma assinatura é válida.                                                                                                                                 |
-| [**WTHelperCertFindIssuerCertificate**](wthelpercertfindissuercertificate.md)         | Localiza um certificado do emissor dos armazenamentos de certificado especificados que corresponde ao certificado de assunto especificado.                                                    |
-| [**WTHelperCertIsSelfSigned**](/windows/desktop/api/Wintrust/nf-wintrust-wthelpercertisselfsigned)                           | Verifica se um certificado é auto-assinado.                                                                                                                         |
-| [**WTHelperGetFileHash**](wthelpergetfilehash.md)                                     | Verifica a assinatura de um arquivo assinado e obtém o valor de hash e o identificador de algoritmo para o arquivo.                                                            |
-| [**WTHelperGetProvCertFromChain**](/windows/desktop/api/Wintrust/nf-wintrust-wthelpergetprovcertfromchain)                   | Recupera um certificado do provedor de confiança da cadeia de certificados.                                                                                                   |
-| [**WTHelperGetProvPrivateDataFromChain**](/windows/desktop/api/Wintrust/nf-wintrust-wthelpergetprovprivatedatafromchain)     | Recebe uma estrutura [**\_ \_ PRIVDATA DO PROVEDOR DE**](/windows/desktop/api/Wintrust/ns-wintrust-crypt_provider_privdata) CRIPTOGRAFIA da cadeia usando a ID do provedor.                                           |
-| [**WTHelperGetProvSignerFromChain**](/windows/desktop/api/Wintrust/nf-wintrust-wthelpergetprovsignerfromchain)               | Recupera um signante ou contador por índice da cadeia.                                                                                                         |
-| [**WTHelperProvDataFromStateData**](/windows/desktop/api/Wintrust/nf-wintrust-wthelperprovdatafromstatedata)                 | Recupera informações do provedor de confiança de um handle especificado.                                                                                                        |
+| [**WTHelperCertFindIssuerCertificate**](wthelpercertfindissuercertificate.md)         | Localiza um certificado do emissor dos repositórios de certificados especificados que correspondem ao certificado de entidade especificado.                                                    |
+| [**WTHelperCertIsSelfSigned**](/windows/desktop/api/Wintrust/nf-wintrust-wthelpercertisselfsigned)                           | Verifica se um certificado é autoassinado.                                                                                                                         |
+| [**WTHelperGetFileHash**](wthelpergetfilehash.md)                                     | Verifica a assinatura de um arquivo assinado e Obtém o valor de hash e o identificador do algoritmo para o arquivo.                                                            |
+| [**WTHelperGetProvCertFromChain**](/windows/desktop/api/Wintrust/nf-wintrust-wthelpergetprovcertfromchain)                   | Recupera um certificado de provedor de confiança da cadeia de certificados.                                                                                                   |
+| [**WTHelperGetProvPrivateDataFromChain**](/windows/desktop/api/Wintrust/nf-wintrust-wthelpergetprovprivatedatafromchain)     | Recebe uma [**estrutura \_ \_ PRIVDATA do provedor cript**](/windows/desktop/api/Wintrust/ns-wintrust-crypt_provider_privdata) . da cadeia usando a ID do provedor.                                           |
+| [**WTHelperGetProvSignerFromChain**](/windows/desktop/api/Wintrust/nf-wintrust-wthelpergetprovsignerfromchain)               | Recupera um signatário ou um subassinador por índice da cadeia.                                                                                                         |
+| [**WTHelperProvDataFromStateData**](/windows/desktop/api/Wintrust/nf-wintrust-wthelperprovdatafromstatedata)                 | Recupera informações do provedor de confiança de um identificador especificado.                                                                                                        |
 
 
 
  
 
-## <a name="object-locator-functions"></a>Funções de localizador de objeto
+## <a name="object-locator-functions"></a>Funções do localizador de objeto
 
-As funções de retorno de chamada a seguir podem ser implementadas por um provedor personalizado que se destina a ser chamado pelo pacote de segurança canal seguro (Schannel) para recuperar certificados.
+As seguintes funções de retorno de chamada podem ser implementadas por um provedor personalizado que deve ser chamado pelo pacote de segurança Schannel (canal seguro) para recuperar certificados.
 
 
 
 | Função                                                                                                             | Descrição                                             |
 |----------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------|
-| [**LIBERAÇÃO DO PROVEDOR DE LOCALIZADOR DE OBJETO DE CRIPTOGRAFIA \_ \_ \_ \_ \_ PFN**](/windows/desktop/api/Wincrypt/nc-wincrypt-pfn_crypt_object_locator_provider_flush)                      | Especifica que um objeto foi alterado.                   |
-| [**PFN \_ CRYPT \_ OBJECT \_ LOCATOR \_ PROVIDER \_ GET**](/windows/desktop/api/Wincrypt/nc-wincrypt-pfn_crypt_object_locator_provider_get)                          | Recupera um objeto .                                    |
-| [**VERSÃO DO PROVEDOR DE \_ \_ \_ LOCALIZADOR DE OBJETO DE \_ \_ CRIPTOGRAFIA PFN**](/windows/desktop/api/Wincrypt/nc-wincrypt-pfn_crypt_object_locator_provider_release)                  | Libera o provedor.                                  |
-| [**SENHA GRATUITA DO PROVEDOR DE LOCALIZADOR DE OBJETO DE CRIPTOGRAFIA \_ \_ \_ \_ \_ \_ PFN**](/windows/desktop/api/Wincrypt/nc-wincrypt-pfn_crypt_object_locator_provider_free_password)     | Libera a senha usada para criptografar uma matriz de byte PFX. |
-| [**PROVEDOR DE LOCALIZADOR DE OBJETO DE CRIPTOGRAFIA PFN \_ \_ \_ \_ \_ GRATUITO**](/windows/desktop/api/Wincrypt/nc-wincrypt-pfn_crypt_object_locator_provider_free)                        | Libera o objeto retornado pelo provedor.           |
+| [**\_liberação do \_ \_ provedor de localizador de objetos criptografados PFN \_ \_**](/windows/desktop/api/Wincrypt/nc-wincrypt-pfn_crypt_object_locator_provider_flush)                      | Especifica que um objeto foi alterado.                   |
+| [**\_Get do \_ \_ provedor de localizador de objeto PFN \_ cript \_**](/windows/desktop/api/Wincrypt/nc-wincrypt-pfn_crypt_object_locator_provider_get)                          | Recupera um objeto.                                    |
+| [**\_versão do \_ \_ provedor de localizador de objeto PFN \_ cript \_**](/windows/desktop/api/Wincrypt/nc-wincrypt-pfn_crypt_object_locator_provider_release)                  | Libera o provedor.                                  |
+| [**\_ \_ \_ \_ senha gratuita do provedor de localizador de objetos \_ PFN criptografado \_**](/windows/desktop/api/Wincrypt/nc-wincrypt-pfn_crypt_object_locator_provider_free_password)     | Libera a senha usada para criptografar uma matriz de bytes PFX. |
+| [**\_provedor de \_ localizador de objetos criptografados PFN \_ \_ \_ gratuito**](/windows/desktop/api/Wincrypt/nc-wincrypt-pfn_crypt_object_locator_provider_free)                        | Libera o objeto retornado pelo provedor.           |
 | [**IDENTIFICADOR GRATUITO DO PROVEDOR DE LOCALIZADOR DE OBJETO DE CRIPTOGRAFIA \_ \_ \_ \_ \_ \_ PFN**](/windows/desktop/api/Wincrypt/nc-wincrypt-pfn_crypt_object_locator_provider_free_identifier) | Libera memória para um identificador de objeto.               |
 | [**INICIALIZAÇÃO DO PROVEDOR DE LOCALIZADOR DE OBJETO DE \_ \_ \_ \_ CRIPTOGRAFIA PFN \_**](/windows/desktop/api/Wincrypt/nc-wincrypt-pfn_crypt_object_locator_provider_initialize)            | Inicializa o provedor.                               |
 

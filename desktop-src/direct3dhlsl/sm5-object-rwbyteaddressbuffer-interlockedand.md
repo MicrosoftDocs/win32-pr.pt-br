@@ -1,9 +1,9 @@
 ---
-title: 'Função RWByteAddressBuffer:: InterlockedAnd'
-description: Ands o valor, atomicamente.
+title: Função RWByteAddressBuffer::InterlockedAnd
+description: E o valor, atomicamente.
 ms.assetid: c4024be0-3884-4af9-8075-76774c7c6178
 keywords:
-- HLSL da função InterlockedAnd
+- Função InterlockedAnd HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,24 +13,24 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: a389da886b193815c7d4b2c1fe0a86db1f068fc7
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 8117729543d13b8c5578fd38a829cc0dba2a4d2d77885d32de006f4afad59f24
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104366195"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117725161"
 ---
 # <a name="interlockedand-function"></a>Função InterlockedAnd
 
-Ands o valor, atomicamente.
+E o valor, atomicamente.
 
 ## <a name="syntax"></a>Sintaxe
 
 ``` syntax
 void InterlockedAnd(
-  in  UINT dest,
-  in  UINT value,
-  out UINT original_value
+  in  UINT dest,
+  in  UINT value,
+  out UINT original_value
 );
 ```
 
@@ -38,28 +38,28 @@ void InterlockedAnd(
 
 <dl> <dt>
 
-*dest* \[ no\]
+*dest* \[ Em\]
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
 O endereço de destino.
 
 </dd> <dt>
 
-*valor* \[ do no\]
+*value* \[ Em\]
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
 O valor de entrada.
 
 </dd> <dt>
 
-*\_ valor original* \[\]
+*valor \_ original* \[ out\]
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
 O valor original.
 
@@ -71,19 +71,19 @@ Essa função não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-Esta operação só pode ser executada em recursos tipados int ou uint e variáveis de memória compartilhada. Há três usos possíveis para essa função. A primeira é quando R é um tipo de variável de memória compartilhada. Nesse caso, a função executa um Atomic e de valor para o registro de memória compartilhada referenciado pelo dest. O segundo cenário é quando R é um tipo de variável de recurso. Nesse cenário, a função executa um Atomic e de valor para o local do recurso referenciado pelo dest. Por fim, o terceiro cenário é quando R é um tipo de variável local. Nesse cenário, a função reduz para um e do valor de dest e Value, armazenado no dest. A função sobrecarregada tem uma variável de saída adicional que será definida com o valor original de dest. Essa operação sobrecarregada só está disponível quando o R é legível e gravável.
+Essa operação só pode ser executada em recursos digitados int ou uint e variáveis de memória compartilhada. Há três usos possíveis para essa função. A primeira é quando R é um tipo de variável de memória compartilhada. Nesse caso, a função executa um atômico e de valor para o registro de memória compartilhada referenciado por dest. O segundo cenário é quando R é um tipo de variável de recurso. Nesse cenário, a função executa um atômico e de valor para o local do recurso referenciado por dest. Por fim, o terceiro cenário é quando R é um tipo de variável local. Nesse cenário, a função reduz para um e do valor de dest e value, armazenados em dest. A função sobrecarregada tem uma variável de saída adicional que será definida como o valor original de dest. Essa operação sobrecarregada só está disponível quando o R é acessível e pode ser escrito.
 
 Essa função tem suporte nos seguintes tipos de sombreadores:
 
 
 
-| VS  | HS  | DS  | GS  | PS  | CS  |
+| VS  | Hs  | DS  | GS  | PS  | CS  |
 |-----|-----|-----|-----|-----|-----|
 | x   | x   |  x  | x   | x   | x   |
 
 
 
- 
+ 
 
 ## <a name="see-also"></a>Confira também
 
@@ -95,6 +95,6 @@ Essa função tem suporte nos seguintes tipos de sombreadores:
 [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

@@ -1,19 +1,19 @@
 ---
 title: Práticas recomendadas de instalação para jogos online com vários participantes
-description: Este artigo descreve a criação de uma cadeia de design de confiança para instalação de cliente de jogos online de vários participantes (MMOG) e sistemas de atualização de jogos personalizados que funcionam bem com o Windows e o modelo de segurança do Windows Vista e do Windows 7.
+description: este artigo descreve a criação de uma cadeia de design de confiança para instalação de cliente MMOG (jogos Online de vários participantes) e sistemas de atualização de jogos personalizados que funcionam bem com Windows e o modelo de segurança do Windows Vista e Windows 7.
 ms.assetid: b719cff7-97e8-5e0a-9c91-3bd8178da7c8
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e81003a434b830f046c29d606355104fe618d1f5
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 6b574bdf2ae98b28fabed97340d6aa38b1a864c24519bb6532d0aa4069882efe
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104007782"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117815427"
 ---
 # <a name="installation-best-practices-for-massively-multiplayer-online-games"></a>Práticas recomendadas de instalação para jogos online com vários participantes
 
-Este artigo descreve a criação de uma cadeia de design de confiança para instalação de cliente de jogos online de vários participantes (MMOG) e sistemas de atualização de jogos personalizados que funcionam bem com o Windows e o modelo de segurança do Windows Vista e do Windows 7. A abordagem foi projetada para habilitar a aplicação de patches em títulos de MMOG enquanto dá suporte a contas de usuário padrão, que têm acesso restrito ao registro do sistema e do disco rígido.
+este artigo descreve a criação de uma cadeia de design de confiança para instalação de cliente MMOG (jogos Online de vários participantes) e sistemas de atualização de jogos personalizados que funcionam bem com Windows e o modelo de segurança do Windows Vista e Windows 7. A abordagem foi projetada para habilitar a aplicação de patches em títulos de MMOG enquanto dá suporte a contas de usuário padrão, que têm acesso restrito ao registro do sistema e do disco rígido.
 
 -   [Por que os clientes do MMOG têm requisitos diferentes para jogos tradicionais de varejo adquiridos](#why-mmog-clients-have-different-requirements-to-traditional-retail-purchased-games)
 -   [Visão geral de uma abordagem de cadeia de confiança](#overview-of-a-chain-of-trust-approach)
@@ -29,9 +29,9 @@ Este artigo descreve a criação de uma cadeia de design de confiança para inst
 
 ## <a name="why-mmog-clients-have-different-requirements-to-traditional-retail-purchased-games"></a>Por que os clientes do MMOG têm requisitos diferentes para jogos tradicionais de varejo adquiridos
 
-A natureza constantemente conectada e em constante evolução do MMOGs torna um requisito fundamental para fornecer atualizações regulares do código do cliente e do conteúdo para corrigir vulnerabilidades de segurança e estender a experiência de jogos. Com o potencial para atualizações quase diárias, o cenário de MMOG requer um gerenciamento cuidadoso para garantir uma experiência amigável do usuário. Isso difere do modelo de compra de varejo tradicional, em que um pequeno número de patches pode ser fornecido próximo à data de envio de varejo do produto. A Windows Installer tecnologia limitada de aplicação de patches do usuário fornecida com o sistema operacional foi projetada para lidar com pequenas quantidades de patches de aplicativos, e não a grande quantidade e alta frequência necessária para MMOGs. Portanto, geralmente é necessário que os sistemas de aplicação de patches personalizados sejam desenvolvidos para atender às necessidades do MMOGs, incluindo quaisquer requisitos especiais específicos para o MMOG específico que está sendo desenvolvido.
+A natureza constantemente conectada e em constante evolução do MMOGs torna um requisito fundamental para fornecer atualizações regulares do código do cliente e do conteúdo para corrigir vulnerabilidades de segurança e estender a experiência de jogos. Com o potencial para atualizações quase diárias, o cenário de MMOG requer um gerenciamento cuidadoso para garantir uma experiência amigável do usuário. Isso difere do modelo de compra de varejo tradicional, em que um pequeno número de patches pode ser fornecido próximo à data de envio de varejo do produto. a Windows Installer tecnologia limitada de aplicação de patches do usuário fornecida com o sistema operacional foi projetada para lidar com pequenas quantidades de patches de aplicativos, e não a grande quantidade e alta frequência necessária para MMOGs. Portanto, geralmente é necessário que os sistemas de aplicação de patches personalizados sejam desenvolvidos para atender às necessidades do MMOGs, incluindo quaisquer requisitos especiais específicos para o MMOG específico que está sendo desenvolvido.
 
-Como muitos computadores estão conectados à Internet, o Windows Vista e o Windows 7 têm restrições de segurança e proteções mais difíceis para os usuários, que limitam o acesso que os aplicativos têm a várias áreas do disco rígido. Ao contrário do Windows XP, essas restrições são habilitadas para o modo padrão para contas de usuário. Essas restrições devem ser levadas em conta ao criar o layout de um jogo, de um executável e de dados e de seu sistema de aplicação de patches associado. Para obter mais detalhes sobre as medidas de segurança fornecidas pelo sistema operacional, consulte [controle de conta de usuário para desenvolvedores de jogos](/windows/desktop/DxTechArts/user-account-control-for-game-developers).
+como muitos computadores estão conectados à Internet, Windows Vista e Windows 7 têm restrições de segurança e proteções mais difíceis para os usuários, que limitam o acesso que os aplicativos têm a várias áreas do disco rígido. ao contrário do Windows XP, essas restrições são habilitadas para o modo padrão para contas de usuário. Essas restrições devem ser levadas em conta ao criar o layout de um jogo, de um executável e de dados e de seu sistema de aplicação de patches associado. Para obter mais detalhes sobre as medidas de segurança fornecidas pelo sistema operacional, consulte [controle de conta de usuário para desenvolvedores de jogos](/windows/desktop/DxTechArts/user-account-control-for-game-developers).
 
 ## <a name="overview-of-a-chain-of-trust-approach"></a>Visão geral de uma abordagem de cadeia de confiança
 
@@ -73,9 +73,9 @@ A seção a seguir detalha as APIs que devem ser usadas para construir o aplicat
 
 ### <a name="installation-of-the-trusted-loader-and-patcher"></a>Instalação do carregador confiável e Patcher
 
-O carregador confiável e a versão base do utilitário Patcher devem ser instalados na pasta arquivos de programas protegidos no HDD, assim como nas instalações tradicionais. A instalação e a aplicação de patches do aplicativo carregador exigem direitos de administrador, portanto, é importante minimizar a frequência de atualização para o carregador para garantir que os usuários finais não precisem aumentar com frequência, embora Windows Installer aplicação limitada de patches de usuário possa ser usada para evitar a elevação de patches do carregador.
+O carregador confiável e a versão base do utilitário Patcher devem ser instalados na pasta arquivos de programas protegidos no HDD, assim como nas instalações tradicionais. a instalação e a aplicação de patches do aplicativo carregador exigem direitos de administrador, portanto, é importante minimizar a frequência de atualização para o carregador para garantir que os usuários finais não precisem aumentar com frequência, embora Windows Installer aplicação limitada de patches de usuário possa ser usada para evitar a elevação de patches do carregador.
 
-Consulte o artigo corrigindo o software de jogos no Windows XP, no Windows Vista e no Windows 7.
+consulte o artigo corrigindo o Software de jogos no Windows XP, Windows Vista e Windows 7.
 
 ### <a name="installation-of-the-game-executables-dlls-and-data"></a>Instalação dos executáveis, DLLs e dados do jogo
 
@@ -85,7 +85,7 @@ A instalação precisa alterar ou gerenciar as permissões de pasta para obter o
 
 ### <a name="access-control-list-modification-code"></a>Código de modificação da lista de controle de acesso
 
-Para o Windows XP, você precisará executar o código para alterar a lista de controle de acesso (ACL) manualmente, aqui está uma função de exemplo que demonstra como fazer isso:
+para o Windows XP, você precisará executar o código para alterar a lista de controle de acesso (ACL) manualmente, aqui está uma função de exemplo que demonstra como fazer isso:
 
 ``` syntax
 HRESULT ChangeACLtoAllowUserRW( WCHAR* strDir )
@@ -116,7 +116,7 @@ HRESULT ChangeACLtoAllowUserRW( WCHAR* strDir )
 }
 ```
 
-Este exemplo de código também funcionará para o Windows Vista e o Windows 7; no entanto, eles também fornecem o utilitário de linha de comando icacls para editar ACLS de arquivo que você pode optar por usar em vez disso.
+este exemplo de código também funcionará para o Windows Vista e Windows 7; no entanto, eles também fornecem o utilitário de linha de comando icacls para editar ACLS de arquivo que você pode optar por usar em vez disso.
 
 A ferramenta fornece uma ajuda detalhada quando executada no entanto, um exemplo de uso para a ferramenta é:
 
@@ -132,7 +132,7 @@ Para cenários avançados de instalação de usuário, um usuário pode querer e
 
 ### <a name="the-loaders-verification-of-trust"></a>A verificação de confiança do carregador
 
-O Windows fornece a função [**WinVerifyTrust**](/windows/desktop/api/wintrust/nf-wintrust-winverifytrust) para verificar a validade do código assinado e é baseado nos serviços de criptografia no sistema operacional. A função está totalmente documentada na função MSDN: **WinVerifyTrust** .
+Windows fornece a função [**WinVerifyTrust**](/windows/desktop/api/wintrust/nf-wintrust-winverifytrust) para verificar a validade do código assinado e é baseada nos serviços de criptografia no sistema operacional. A função está totalmente documentada na função MSDN: **WinVerifyTrust** .
 
 O programa de exemplo a seguir no MSDN detalha o uso da função para determinar se um executável de programa está assinado com um certificado válido: [programa C de exemplo: verificando a assinatura de um arquivo PE](/windows/desktop/SecCrypto/example-c-program--verifying-the-signature-of-a-pe-file).
 
@@ -162,12 +162,12 @@ Se o provedor de confiança verificar que o assunto é confiável para a ação 
 
 ### <a name="data-validation"></a>Validação de dados
 
-O mecanismo de codesignação só dá suporte à assinatura de alguns tipos específicos de arquivos, incluindo executáveis, DLLs, pacotes de Windows Installer (arquivos. msi) e arquivos de gabinete (. cab). A API [**WinVerifyTrust**](/windows/desktop/api/wintrust/nf-wintrust-winverifytrust) não deve ser usada para verificar se arquivos de dados grandes (arquivos. cab, por exemplo) não foram adulterados, pois há alguns problemas de desempenho e estabilidade ao validar arquivos muito grandes. Os executáveis do programa tendem a ser pequenos o suficiente para que uma verificação de confiança total ocorra usando o provedor WinTrust, mas os arquivos de dados para jogos são geralmente do realm de muitos gigabytes. A abordagem adotada pelo carregador para a verificação dos dados do jogo deve ser aquela em que uma pequena amostra do conjunto é testada no tempo de execução do jogo. Essa abordagem espalha o custo dos testes de verificação durante a vida útil da experiência do jogo e pode fornecer uma experiência de usuário tranqüila sem tempos de espera longos. Para conseguir isso, a organização cuidadosa dos dados pode ser necessária. Alguns MMOGs empregam uma abordagem de banco de dados para ajudar a gerenciar, manter e verificar a exatidão dos ativos do jogo ao longo do tempo.
+o mecanismo de codesignação só dá suporte à assinatura de alguns tipos específicos de arquivos, incluindo executáveis, DLLs, pacotes de Windows Installer (arquivos .msi) e arquivos de gabinete (.cab). A API [**WinVerifyTrust**](/windows/desktop/api/wintrust/nf-wintrust-winverifytrust) não deve ser usada para verificar se arquivos de dados grandes (.cab arquivos, por exemplo) não foram adulterados, pois há alguns problemas de desempenho e estabilidade ao validar arquivos muito grandes. Os executáveis do programa tendem a ser pequenos o suficiente para que uma verificação de confiança total ocorra usando o provedor WinTrust, mas os arquivos de dados para jogos são geralmente do realm de muitos gigabytes. A abordagem adotada pelo carregador para a verificação dos dados do jogo deve ser aquela em que uma pequena amostra do conjunto é testada no tempo de execução do jogo. Essa abordagem espalha o custo dos testes de verificação durante a vida útil da experiência do jogo e pode fornecer uma experiência de usuário tranqüila sem tempos de espera longos. Para conseguir isso, a organização cuidadosa dos dados pode ser necessária. Alguns MMOGs empregam uma abordagem de banco de dados para ajudar a gerenciar, manter e verificar a exatidão dos ativos do jogo ao longo do tempo.
 
-Do ponto de vista da segurança, o código do cliente deve ser criado para não confiar em arquivos de dados, mesmo se você estiver usando algum tipo de validação de dados básica com o carregador confiável. Verificações de cabeçalho, hashes e outra verificação de integridade tradicional devem ser empregadas. O trabalho para proteger o código de e/s do cliente também deve ser feito usando técnicas como teste de fuzzing, bem como tirando proveito de ferramentas de análise de código estático automáticas, como a opção **/Analyze** no visual Studio 2005 e no visual Studio 2008 (disponível no Visual Studio Team System e o compilador gratuito fornecido com o SDK do Windows).
+Do ponto de vista da segurança, o código do cliente deve ser criado para não confiar em arquivos de dados, mesmo se você estiver usando algum tipo de validação de dados básica com o carregador confiável. Verificações de cabeçalho, hashes e outra verificação de integridade tradicional devem ser empregadas. o trabalho para proteger o código de e/s do cliente também deve ser feito usando técnicas como teste de fuzzing, bem como tirando proveito de ferramentas de análise de código estático automáticas, como a opção **/analyze** no Visual Studio 2005 e Visual Studio 2008 (disponível no Visual Studio Team System e o compilador gratuito fornecido com o SDK do Windows).
 
 Para obter mais informações sobre segurança de software, consulte [práticas recomendadas de segurança no desenvolvimento de jogos](/windows/desktop/DxTechArts/best-security-practices-in-game-development).
 
- 
+ 
 
- 
+ 

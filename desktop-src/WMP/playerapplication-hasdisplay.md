@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3ef77cb42109decef6ab435aa031240f89b6cb98
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e6cffddc08c154ced6d7cb72b18642b5ebb4960e539e5682d1cf6e8518b74831
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105814019"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117747355"
 ---
 # <a name="playerapplicationhasdisplay"></a>PlayerApplication.hasDisplay
 
@@ -35,9 +35,9 @@ Esta propriedade é um **booliano** somente leitura.
 
 ## <a name="remarks"></a>Comentários
 
-Essa propriedade é usada somente quando você faz a comunicação remota do controle do Windows Media Player.
+essa propriedade é usada somente quando o controle de Windows Media Player de comunicação remota é usado.
 
-Vários controles do Windows Media Player podem ser executados remotamente ao mesmo tempo, mas o vídeo só pode ser exibido em um local de cada vez, seja no modo completo do Player ou em um dos controles remotos do Windows Media Player. Use essa propriedade para determinar se o controle atual é aquele pelo qual o vídeo pode ser exibido.
+vários controles de Windows Media Player podem ser executados remotamente ao mesmo tempo, mas o vídeo só pode ser exibido em um local de cada vez, seja no modo completo do Player ou em um dos controles de Windows Media Player remotos. Use essa propriedade para determinar se o controle atual é aquele pelo qual o vídeo pode ser exibido.
 
 **Windows Media Player 10 Mobile:** Essa propriedade sempre retorna **true**.
 

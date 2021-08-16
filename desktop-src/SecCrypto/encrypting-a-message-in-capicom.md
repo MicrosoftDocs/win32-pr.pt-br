@@ -4,16 +4,16 @@ ms.assetid: 9ad3199a-bca1-4990-80da-80744e349047
 title: Criptografando uma mensagem no CAPICOM
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8039586736c09673644cacc90759e8d5f25b6e1a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1a3ef531fa75fc4d99a423ffbb6c0edd591caf6b1939f12fea439e7f9fbc80dc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105756682"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117766188"
 ---
 # <a name="encrypting-a-message-in-capicom"></a>Criptografando uma mensagem no CAPICOM
 
-\[O CAPICOM é um componente somente de 32 bits que está disponível para uso nos seguintes sistemas operacionais: Windows Server 2008, Windows Vista e Windows XP. Em vez disso, use o .NET Framework para implementar recursos de segurança. Para obter mais informações, consulte [alternativas ao uso do CApicom](alternatives-to-using-capicom.md).\]
+\[o capicom é um componente somente de 32 bits que está disponível para uso nos seguintes sistemas operacionais: Windows Server 2008, Windows Vista e Windows XP. em vez disso, use o .NET Framework para implementar recursos de segurança. Para obter mais informações, consulte [alternativas ao uso do CApicom](alternatives-to-using-capicom.md).\]
 
 Essa sub-rotina usa uma cadeia de caracteres a ser criptografada, uma cadeia de caracteres de senha a ser usada para gerar uma chave de criptografia e o nome de um arquivo em que a mensagem criptografada será gravada. Todos os parâmetros são passados para a sub-rotina por valores. Para descriptografar a mensagem, a mesma cadeia de caracteres de senha deve ser usada. Se a senha for perdida, o texto não poderá ser descriptografado. A privacidade da mensagem será perdida se um destinatário indesejado obtiver acesso à senha.
 

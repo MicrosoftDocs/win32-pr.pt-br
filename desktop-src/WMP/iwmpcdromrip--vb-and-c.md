@@ -1,10 +1,10 @@
 ---
 title: Interface IWMPCdromRip (VB e C) (WMP. h)
-description: Fornece propriedades e métodos para gerenciar a cópia, ou copiar, faixas de um CD de áudio. copiar um CD usando a interface IWMPCdromRip tem o mesmo efeito que copiar música usando a interface do usuário do Windows Media Player.
+description: fornece propriedades e métodos para gerenciar a cópia, ou copiar, faixas de um cd de áudio. copiar um cd usando a interface IWMPCdromRip tem o mesmo efeito que copiar música usando a interface do usuário Windows Media Player.
 ms.assetid: d7fbfc68-61b5-45bf-8df5-e3125a51a4d8
 keywords:
-- IWMPCdromRip (VB e C) interface do Windows Media Player
-- IWMPCdromRip (VB e C) interface do Windows Media Player, descrito
+- Windows Media Player de interface IWMPCdromRip (VB e C)
+- Windows Media Player de interface IWMPCdromRip (VB e C), descrita
 topic_type:
 - apiref
 api_name:
@@ -15,18 +15,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7d069fd8bd727d6a2a380c2ef29ce7c086db88d0
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 98a418f71ad8605e81115fa9ef1a45488a6830db94c260ef60aa0d991724d80a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105779994"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117747932"
 ---
 # <a name="iwmpcdromrip-vb-and-c-interface"></a>Interface IWMPCdromRip (VB e C#)
 
 Fornece propriedades e métodos para gerenciar a cópia, ou *copiar*, faixas de um CD de áudio.
 
-Copiar um CD usando a interface **IWMPCdromRip** tem o mesmo efeito que copiar música usando a interface do usuário do Windows Media Player. O conteúdo copiado é adicionado automaticamente à biblioteca de acordo com as preferências do usuário. Para obter mais informações sobre as preferências do usuário para a cópia de CD, consulte "copiando música de CDs" na ajuda do Windows Media Player.
+copiar um CD usando a interface **IWMPCdromRip** tem o mesmo efeito que copiar música usando a interface do usuário Windows Media Player. O conteúdo copiado é adicionado automaticamente à biblioteca de acordo com as preferências do usuário. para obter mais informações sobre as preferências do usuário para a cópia de CD, consulte "copiando música de CDs" na ajuda do Windows Media Player.
 
 A interface **IWMPCdromRip** expõe as propriedades a seguir.
 
@@ -83,7 +83,7 @@ Obtenha uma interface **IWMPCdromRip** convertendo a interface **IWMPCdrom** do 
 
 <dl> <dt>
 
-[**Interfaces para Visual Basic .NET e C #**](interfaces-for-visual-basic--net-and-c.md)
+[**Interfaces para Visual Basic .net e C #**](interfaces-for-visual-basic--net-and-c.md)
 </dt> <dt>
 
 [**Copiando um CD**](ripping-a-cd.md)

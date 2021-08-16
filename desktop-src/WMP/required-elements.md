@@ -3,32 +3,32 @@ title: Elementos necessários
 description: Elementos necessários
 ms.assetid: 6aabbdcc-f834-4908-b25a-1dfce038132a
 keywords:
-- Capas do Windows Media Player Mobile, elementos
-- capas, elementos
+- Windows Media Player Capas móveis, elementos
+- skins,elements
 - arquivos de definição de capa, elementos
 - elementos, arquivos de definição de capa
-- elementos, Windows Media Player Mobile
+- elements,Windows Media Player Mobile
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9e1f05ba51b83fad6585d24c3ad19830598b8975
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 18433e20c914cdc4b276857f97aab6a692d1d11c811660c73620b09a5b9a0f55
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103636027"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117746305"
 ---
 # <a name="required-elements"></a>Elementos necessários
 
 Você deve fornecer os seguintes elementos em seu arquivo de definição de capa:
 
--   **Verga.** O cabeçalho principal do arquivo de definição de capa é necessário. Para obter informações de versão do cabeçalho, consulte a tabela na seção [criando um arquivo de definição de aparência](creating-a-skin-definition-file.md) .
--   **Seção de descrição.** A seção descrição é necessária ao criar capas para o Windows Media Player 9 Series para Windows Mobile. Ele deve ser a primeira seção no arquivo de definição de capa e deve especificar valores válidos para dimensões. A especificação de um valor para a orientação é opcional.
--   **Seção bitmaps.** A seção bitmaps é necessária. Além disso, a seção bitmaps deve especificar nomes válidos para arquivos de plano de fundo, desabilitados, enviados por push, região e super Image.
--   **Arquivos de imagem.** Você deve fornecer arquivos de plano de fundo, desabilitados, enviados por push, região e super Image como parte de sua capa. Se você estiver criando capas para o Windows Media Player 10 Mobile ou posterior, não será necessário incluir arquivos de região ou de superimagem.
+-   **Cabeçalho.** O header do arquivo de definição de capa principal é necessário. Para obter informações sobre a versão do header, consulte a tabela na [seção Criando um arquivo de definição de capa.](creating-a-skin-definition-file.md)
+-   **Seção de descrição.** A seção Descrição é necessária ao criar capas para Windows Media Player Série 9 para Windows Mobile. Ele deve ser a primeira seção no arquivo de definição de capa e deve especificar valores válidos para Dimensões. Especificar um valor para Orientação é opcional.
+-   **Seção Bitmaps.** A seção Bitmaps é necessária. Além disso, a seção Bitmaps deve especificar nomes válidos para arquivos de Tela de Fundo, Desabilitado, Pressionado, Região e Superimagem.
+-   **Arquivos de imagem.** Você deve fornecer arquivos de Tela de Fundo, Desabilitado, Por Pushed, Região e Superimagem como parte da sua capa. Se você estiver criando capas para o Windows Media Player 10 Mobile ou posterior, não será necessário incluir arquivos de Região ou Superimagem.
 
-Se você criar uma capa com apenas imagens definidas, a capa ficará visível, mas não oferecerá nenhuma funcionalidade significativa para o usuário. Se você decidir criar uma capa sem botões, talvez para impedir que o usuário ignore um determinado conteúdo, lembre-se de que ainda pode ser possível mapear a funcionalidade para os botões de hardware no dispositivo.
+Se você criar uma capa com apenas imagens definidas, a capa ficará visível, mas não oferecerá nenhuma funcionalidade significativa para o usuário. Se você decidir criar uma capa sem botões, talvez para impedir que o usuário ignorar determinado conteúdo, esteja ciente de que ainda é possível mapear a funcionalidade para os botões de hardware no dispositivo.
 
-Os arquivos Thumb são necessários e seu trackbars não pode ser usado sem thumbs.
+Os arquivos thumb são necessários e as barras de faixa não podem ser usadas sem miniaturas.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -37,9 +37,9 @@ Os arquivos Thumb são necessários e seu trackbars não pode ser usado sem thum
 [**Arquivo de definição de capa**](skin-definition-file-mobile.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

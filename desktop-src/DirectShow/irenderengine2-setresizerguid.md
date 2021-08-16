@@ -14,12 +14,12 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 864053c2c5def6ef1b23ca2c2ee712664e132079
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e650a250333ac784e599d0bce820ef390a937f49bff2371b1b7a52b18d9d0ad6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105758464"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117818531"
 ---
 # <a name="irenderengine2setresizerguid-method"></a>Método IRenderEngine2:: SetResizerGUID
 
@@ -28,7 +28,7 @@ ms.locfileid: "105758464"
 
  
 
-O `SetResizerGUID` método especifica o CLSID de um filtro de redimensionamento de vídeo personalizado. Chame esse método para substituir o filtro de redimensionamento padrão usado pelos serviços de edição do DirectShow. O filtro deve ser registrado como um objeto COM no sistema do usuário e deve dar suporte à interface [**IResize**](iresize.md) .
+O `SetResizerGUID` método especifica o CLSID de um filtro de redimensionamento de vídeo personalizado. chame esse método para substituir o filtro de redimensionamento padrão usado pelos serviços de edição DirectShow. O filtro deve ser registrado como um objeto COM no sistema do usuário e deve dar suporte à interface [**IResize**](iresize.md) .
 
 Chame esse método antes de chamar [**IRenderEngine:: ConnectFrontEnd**](irenderengine-connectfrontend.md).
 
@@ -54,7 +54,7 @@ O CLSID do filtro.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
 
@@ -77,7 +77,7 @@ DEFINE_GUID(CLSID_Resize,
  
 
 > [!Note]  
-> Para obter o QEdit. h, baixe a [atualização SDK do Microsoft Windows para Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). O QEdit. h não está disponível no SDK do Microsoft Windows para Windows 7 e .NET Framework 3,5 Service Pack 1.
+> para obter o Qedit. h, baixe a [atualização SDK do Microsoft Windows para Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit. h não está disponível no SDK do Microsoft Windows para Windows 7 e .NET Framework 3,5 Service Pack 1.
 
  
 
@@ -88,7 +88,7 @@ DEFINE_GUID(CLSID_Resize,
 | Requisito | Valor |
 |--------------------|-----------------------------------------------------------------------------------------|
 | Versão<br/> | DirectX 9,0 ou posterior<br/>                                                         |
-| parâmetro<br/>  | <dl> <dt>QEdit. h</dt> </dl>      |
+| Cabeçalho<br/>  | <dl> <dt>QEdit. h</dt> </dl>      |
 | Biblioteca<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
 
 

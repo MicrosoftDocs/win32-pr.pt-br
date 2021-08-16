@@ -1,6 +1,6 @@
 ---
 title: Instruções
-description: As instruções HLSL são combinações de variáveis e funções que compõem expressões; como uma sentença, uma instrução HLSL requer operadores que determinam como uma expressão será avaliada.
+description: Instruções HLSL são combinações de variáveis e funções que comem expressões; como uma frase, uma instrução HLSL requer operadores que determinam como uma expressão será avaliada.
 ms.assetid: a7bb89c8-07e6-4853-9aad-12a4d4271e43
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,16 +9,16 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 0e39d6fcff3dcd0f918659bbf0b495ac5f09d611
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 678154aedcbcfd0372d9ae114396e786b117d0b23757b42c63cd873f60311419
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104967021"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117725741"
 ---
 # <a name="statements"></a>Instruções
 
-As instruções HLSL são combinações de variáveis e funções que compõem expressões; como uma sentença, uma instrução HLSL requer operadores que determinam como uma expressão será avaliada. Você pode criar instruções individuais em um sombreador ou criar várias instruções em um grupo chamado bloco de instrução. Para criar instruções HLSL, você precisará saber a sintaxe para escrever expressões e os operadores que serão usados para combinar expressões.
+Instruções HLSL são combinações de variáveis e funções que comem expressões; como uma frase, uma instrução HLSL requer operadores que determinam como uma expressão será avaliada. Você pode criar instruções individuais em um sombreador ou criar várias instruções em um grupo chamado bloco de instrução. Para criar instruções HLSL, você precisará saber a sintaxe para escrever expressões e os operadores que você usará para combinar expressões.
 
 -   [Expressões](dx-graphics-hlsl-expressions.md)
 -   [Operadores](dx-graphics-hlsl-operators.md)
@@ -31,9 +31,9 @@ As instruções HLSL são combinações de variáveis e funções que compõem e
 [Sintaxe de linguagem (DirectX HLSL)](dx-graphics-hlsl-language-syntax.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

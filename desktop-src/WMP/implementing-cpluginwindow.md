@@ -37,7 +37,7 @@ As seções a seguir descrevem o que você precisa fazer para implementar o CPlu
 
 <dl> <dt>
 
-[**Interface do Usuário guia de programação de plug-ins**](user-interface-plug-ins-programming-guide.md)
+[**Interface do Usuário guia de programação de plug-ins do Interface do Usuário**](user-interface-plug-ins-programming-guide.md)
 </dt> </dl>
 
  

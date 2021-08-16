@@ -1,11 +1,11 @@
 ---
-title: Método PlayerApplication. switchToControl
-description: o método switchToControl alterna um controle de Windows Media Player remoto para o estado encaixado.
+title: Método PlayerApplication.switchToControl
+description: O método switchToControl alterna um controle Windows Media Player remoto para o estado encaixado.
 ms.assetid: 3c321b8f-8208-4c55-8872-38626d8ef9c9
 keywords:
-- Windows Media Player do método switchToControl
-- método switchToControl Windows Media Player, classe PlayerApplication
-- classe PlayerApplication Windows Media Player, método switchToControl
+- Método switchToControl Windows Media Player
+- método switchToControl Windows Media Player , classe PlayerApplication
+- Classe PlayerApplication Windows Media Player método , switchToControl
 topic_type:
 - apiref
 api_name:
@@ -23,9 +23,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117747210"
 ---
-# <a name="playerapplicationswitchtocontrol-method"></a>Método PlayerApplication. switchToControl
+# <a name="playerapplicationswitchtocontrol-method"></a>Método PlayerApplication.switchToControl
 
-o método **switchToControl** alterna um controle de Windows Media Player remoto para o estado encaixado.
+O **método switchToControl** alterna um controle Windows Media Player remoto para o estado encaixado.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -46,7 +46,7 @@ Esse método não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-esse método é usado somente quando você faz a comunicação remota do controle de Windows Media Player.
+Esse método é usado somente ao fazer a Windows Media Player remoto.
 
 **Windows Media Player 10 Mobile:** Não há suporte para esse método.
 
@@ -56,7 +56,7 @@ esse método é usado somente quando você faz a comunicação remota do control
 
 | Requisito | Valor |
 |--------------------|------------------------------------------------------------------------------------|
-| Versão<br/> | Windows Media Player 9 Series ou posterior.<br/>                                 |
+| Versão<br/> | Windows Media Player Série 9 ou posterior.<br/>                                 |
 | DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 

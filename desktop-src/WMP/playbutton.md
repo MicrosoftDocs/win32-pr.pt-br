@@ -1,6 +1,6 @@
 ---
-title: PLAYBUTTON
-description: Este é um botão predefinido com os valores padrão a seguir. | PLAYBUTTON
+title: Playbutton
+description: Este é um BUTTON predefinido com os seguintes valores padrão. | Playbutton
 ms.assetid: 0d144f34-d536-4138-a7b2-e36a9f85e105
 keywords:
 - PLAYBUTTON Windows Media Player
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 88510dd62372eeea2d122a1ceb65df953315a3ff
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3649363ceeef96859ed675863c8dbcc3c8c8d9918304e0a72c1d51ee01251d5f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105807206"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117747743"
 ---
-# <a name="playbutton"></a>PLAYBUTTON
+# <a name="playbutton"></a>Playbutton
 
-Este é um **botão** predefinido com os valores padrão a seguir.
+Este é um **BUTTON predefinido** com os seguintes valores padrão.
 
 ``` syntax
 onclick="jscript:player.controls.play()"
@@ -33,7 +33,7 @@ enabled="wmpenabled:player.controls.play"
 
 ## <a name="remarks"></a>Comentários
 
-Todas as propriedades desse **botão** podem ser substituídas especificando-as explicitamente.
+Todas as propriedades desse **BUTTON** podem ser substituídos especificando-as explicitamente.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -41,7 +41,7 @@ Todas as propriedades desse **botão** podem ser substituídas especificando-as 
 
 | Requisito | Valor |
 |--------------------|------------------------------------------------------|
-| Versão<br/> | Windows Media Player versão 7,0 ou posterior<br/> |
+| Versão<br/> | Windows Media Player versão 7.0 ou posterior<br/> |
 
 
 

@@ -15,12 +15,12 @@ api_type:
 - DllExport
 api_location:
 - WinSpool.drv
-ms.openlocfilehash: 9ac4dd4b0db9a59cc0140872ff04f89adaf8b6c5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 10b0b36333e51dfb5c831f6c74e00c6930ccbb9d1ce31646fed0d689abc7f639
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104011732"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117686689"
 ---
 # <a name="getspoolfilehandle-function"></a>Função GetSpoolFileHandle
 
@@ -48,7 +48,7 @@ Um identificador para a impressora para a qual o trabalho foi enviado. Deve ser 
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se a função for realizada com sucesso, ela retornará um identificador para o arquivo de spool.
 
@@ -68,9 +68,9 @@ Essa função falhará se for chamada antes que o trabalho de impressão tenha t
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                                            |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                                      |
-| parâmetro<br/>                   | <dl> <dt>Winspool. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                                            |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                                      |
+| Cabeçalho<br/>                   | <dl> <dt>Winspool. h (incluir Windows. h)</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>Winspool. lib</dt> </dl>                   |
 | DLL<br/>                      | <dl> <dt>WinSpool. drv</dt> </dl>                   |
 | Nomes Unicode e ANSI<br/>   | **GetSpoolFileHandleW** (Unicode) e **GetSpoolFileHandleA** (ANSI)<br/>                           |

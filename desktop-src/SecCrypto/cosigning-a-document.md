@@ -4,20 +4,20 @@ ms.assetid: f81cbf7b-317d-4fab-9b30-88b6c6576db8
 title: Coatribuindo um documento
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: aa06cbbc95dc0fe558c6e704bd18102e80221dbc
-ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.openlocfilehash: eb384ef47001f1df85810ac37595988da96a356ff3b36b1b140d1a6f54d0d698
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "105761868"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117769381"
 ---
 # <a name="cosigning-a-document"></a>Coatribuindo um documento
 
-\[O CAPICOM é um componente somente de 32 bits que está disponível para uso nos seguintes sistemas operacionais: Windows Server 2008, Windows Vista e Windows XP. Em vez disso, use o .NET Framework para implementar recursos de segurança. Para obter mais informações, consulte [alternativas ao uso do CApicom](alternatives-to-using-capicom.md).\]
+\[o capicom é um componente somente de 32 bits que está disponível para uso nos seguintes sistemas operacionais: Windows Server 2008, Windows Vista e Windows XP. em vez disso, use o .NET Framework para implementar recursos de segurança. Para obter mais informações, consulte [alternativas ao uso do CApicom](alternatives-to-using-capicom.md).\]
 
 Um documento pode ser assinado por mais de um signatário. Isso acontece quando, por exemplo, duas ou mais partes assinam um contrato ou um relatório de despesas. No exemplo a seguir, um documento já assinado é recebido por um segundo assinante. Esse signatário usa o método de [**coassinatura**](signeddata-cosign.md) para anexar uma assinatura adicional ao documento.
 
-Se ocorrer um erro CAPICOM, um valor negativo será retornado na propriedade **Err. Number** . Para obter mais informações sobre códigos de erro CAPICOM, consulte [**\_ \_ código de erro CAPICOM**](capicom-error-code.md). Se o código de erro na propriedade **Err. Number** for um valor positivo, o erro será um erro do Windows. Para obter informações sobre códigos de erro do Windows, consulte Winerror. h.
+Se ocorrer um erro CAPICOM, um valor negativo será retornado na propriedade **Err. Number** . Para obter mais informações sobre códigos de erro CAPICOM, consulte [**\_ \_ código de erro CAPICOM**](capicom-error-code.md). se o código de erro na propriedade **Err. Number** for um valor positivo, o erro será um erro de Windows. para obter informações sobre Windows códigos de erro, consulte Winerror. h.
 
 > [!Note]
 > A atribuição de um documento também exige que o coassinador tenha um [*certificado*](../secgloss/c-gly.md) disponível com uma [*chave privada*](../secgloss/p-gly.md) para criar a assinatura. Se um signatário não for especificado na chamada do método [**Sign**](signeddata-sign.md) e não houver nenhum certificado no capicont \_ My \_ Store com uma chave privada associada, o método falhará. Se houver um e apenas um certificado no capicont \_ My \_ Store com uma chave privada associada, essa chave e o certificado serão usados. Se houver mais de um certificado utilizável, será exibido um prompt para permitir que o usuário escolha o certificado desejado.

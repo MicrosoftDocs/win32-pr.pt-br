@@ -4,20 +4,20 @@ ms.assetid: e7df1a2e-5674-4cc6-874b-45bcc7e25127
 title: enrollPKCS7
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 34bc7f9d7b7d5ae9fa88db0dd70c177c3aa69da0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0635fdf4daacc9c7a04db98c7e34e9d3495c6f18ca3e145b166f19e3cd49610a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103646779"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117779947"
 ---
 # <a name="enrollpkcs7"></a>enrollPKCS7
 
 O exemplo enrollPKCS7 cria uma \# solicitação PKCS 7 de um certificado existente herdando as chaves pública e privada e o modelo de certificado. O certificado existente é usado para assinar a solicitação. Este exemplo registra o usuário em uma hierarquia de certificado e instala a resposta do certificado. O exemplo usa um certificado existente para registrar e instalar um novo. Para obter mais informações sobre como renovar um certificado existente, consulte [enrollRenewalPKCS7](enrollrenewalpkcs7.md).
 
-## <a name="location"></a>Local
+## <a name="location"></a>Localização
 
-Quando você instala o SDK (Software Development Kit) do Microsoft Windows, o exemplo é instalado, por padrão, na pasta *% ProgramFiles%* \\ Microsoft SDKs \\ Windows \\ v 7.0 \\ Samples \\ Security \\ X509 Certificate registro \\ vc \\ enrollPKCS7.
+quando você instala o Microsoft Windows Software Development Kit (SDK), o exemplo é instalado, por padrão, na pasta *% programfiles%* \\ Microsoft SDKs \\ Windows \\ v 7.0 \\ samples \\ Security \\ X509 Certificate registro \\ VC \\ enrollPKCS7.
 
 ## <a name="discussion"></a>Discussão
 

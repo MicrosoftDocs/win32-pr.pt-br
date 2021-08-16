@@ -1,7 +1,7 @@
 ---
-description: GetCount não tem suporte e pode ser alterado ou indisponível no futuro. Em vez disso, use contas de usuário com troca rápida de usuário e Área de Trabalho Remota.
+description: Não há suporte para GetCount e podem ser alterados ou não disponíveis no futuro. Em vez disso, use Contas de Usuário com Troca rápida de usuários e Área de Trabalho Remota.
 ms.assetid: 1fe39f2d-f95e-4436-a780-40fe8bd41b74
-title: 'Método IEnumUserIdentity:: GetCount (Msident. h)'
+title: Método IEnumUserIdentity::GetCount (Msident.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Msident.dll
-ms.openlocfilehash: 43355a9585fc4099c8649f7df506ff3495a53944
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e4848ec183096b37adbc04521fab04fd800d3783377d1e14b3abd068819648ee
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104296726"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117678933"
 ---
-# <a name="ienumuseridentitygetcount-method"></a>Método IEnumUserIdentity:: GetCount
+# <a name="ienumuseridentitygetcount-method"></a>Método IEnumUserIdentity::GetCount
 
-\[**GetCount** não tem suporte e pode ser alterado ou indisponível no futuro. Em vez disso, use [contas de usuário com troca rápida de usuário e área de trabalho remota](fastuserswitching.md).\]
+\[Não há suporte para **GetCount** e podem ser alterados ou não disponíveis no futuro. Em vez disso, [use Contas de Usuário com a Opção de](fastuserswitching.md)Usuário Rápida e Área de Trabalho Remota .\]
 
 Obtém a contagem de identidades de usuário atualmente no sistema.
 
@@ -41,24 +41,24 @@ HRESULT GetCount(
 
 <dl> <dt>
 
-*pnCount* \[ fora\]
+*pnCount* \[ out\]
 </dt> <dd>
 
-Tipo: **ULONG \** _
+Tipo: **ULONG \***
 
-Ponteiro para um _ *ULONG** que recebe a contagem.
+Ponteiro para um **ULONG** que recebe a contagem.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **HRESULT**
 
-Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
+Se esse método for bem-sucedido, ele **retornará S \_ OK.** Caso contrário, ele retornará um **código de erro HRESULT.**
 
 ## <a name="remarks"></a>Comentários
 
-Se o suporte para várias identidades de usuário estiver desabilitado, o *pnCount* receberá um valor de 1.
+Se o suporte para várias identidades de usuário estiver desabilitado, *pnCount* receberá um valor de 1.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -66,12 +66,12 @@ Se o suporte para várias identidades de usuário estiver desabilitado, o *pnCou
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                                            |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                   |
-| Fim do suporte do cliente<br/>    | Windows XP<br/>                                                                  |
-| Fim do suporte do servidor<br/>    | Windows Server 2003<br/>                                                         |
-| parâmetro<br/>                   | <dl> <dt>Msident. h</dt> </dl>   |
-| INSERI<br/>                      | <dl> <dt>Msident. idl</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho XP\]<br/>                                            |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                   |
+| Fim do suporte ao cliente<br/>    | Windows XP<br/>                                                                  |
+| Fim do suporte ao servidor<br/>    | Windows Server 2003<br/>                                                         |
+| Cabeçalho<br/>                   | <dl> <dt>Msident.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>Msident.idl</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Msident.dll</dt> </dl> |
 
 
@@ -83,13 +83,13 @@ Se o suporte para várias identidades de usuário estiver desabilitado, o *pnCou
 [**IEnumUserIdentity**](ienumuseridentity.md)
 </dt> <dt>
 
-[**IEnumUserIdentity:: Skip**](ienumuseridentity-skip.md)
+[**IEnumUserIdentity::Skip**](ienumuseridentity-skip.md)
 </dt> <dt>
 
-[**IEnumUserIdentity:: Reset**](ienumuseridentity-reset.md)
+[**IEnumUserIdentity::Reset**](ienumuseridentity-reset.md)
 </dt> <dt>
 
-[**IEnumUserIdentity:: Next**](ienumuseridentity-next.md)
+[**IEnumUserIdentity::Next**](ienumuseridentity-next.md)
 </dt> </dl>
 
  
