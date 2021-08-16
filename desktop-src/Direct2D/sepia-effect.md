@@ -59,7 +59,7 @@ As propriedades do efeito sepia são definidas pela [**enumeração D2D1 \_ SEPI
 |--------------------------|---------------------------------------------------|
 | Cliente mínimo com suporte | \[Windows 10 aplicativos da \| área Windows Aplicativos da Store\] |
 | Servidor mínimo com suporte | \[Windows 10 aplicativos da \| área Windows Aplicativos da Store\] |
-| parâmetro                   | d2d1effects \_ 2.h                                  |
+| Cabeçalho                   | d2d1effects \_ 2.h                                  |
 | Biblioteca                  | d2d1.lib, dxguid.lib                              |
 
 

@@ -4,12 +4,12 @@ description: Para determinar quais processos carregaram uma DLL específica, voc
 ms.assetid: 2e411eba-ba60-4678-bf6f-bc15b6e8b478
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7bf09d02d4ae9dc7e55177653e05e3d19df4ab7b
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 17012019c21f550940ea8c11c07153b0c3495471b4d62bf2f8af469ef6b7b90b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104294066"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119032984"
 ---
 # <a name="enumerating-all-modules-for-a-process"></a>Enumerando todos os módulos para um processo
 
@@ -103,6 +103,6 @@ int main( void )
 
 A função main Obtém uma lista de processos usando a função [**EnumProcesses**](/windows/desktop/api/Psapi/nf-psapi-enumprocesses) . Para cada processo, a função Main chama a função de módulo de busca, passando-a para o identificador do processo. Os módulos de suplemento, por sua vez, chamam a função [**OpenProcess**](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-openprocess) para obter o identificador de processo. Se **OpenProcess** falhar, a saída mostrará apenas o identificador do processo. Por exemplo, **OpenProcess** falha para os processos Idle e CSRSS porque suas restrições de acesso impedem que o código do usuário os abra. Em seguida, o defaultmodules chama a função [**EnumProcessModules**](/windows/desktop/api/Psapi/nf-psapi-enumprocessmodules) para obter a função de identificadores de módulo. Por fim, os módulos de busca chamam a função [**GetModuleFileNameEx**](/windows/desktop/api/Psapi/nf-psapi-getmodulefilenameexa) , uma vez para cada módulo, para obter os nomes de módulo.
 
- 
+ 
 
- 
+ 

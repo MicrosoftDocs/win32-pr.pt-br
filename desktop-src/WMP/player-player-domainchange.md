@@ -3,9 +3,9 @@ title: Evento Player. DomainChange
 description: O evento DomainChange ocorre quando o domínio do DVD é alterado. | Evento Player. DomainChange
 ms.assetid: 01965492-276e-4d30-99eb-767e0776b423
 keywords:
-- Evento DomainChange do Windows Media Player
-- Evento DomainChange Windows Media Player, classe Player
-- Classe de jogador Windows Media Player, evento DomainChange
+- Windows Media Player de eventos DomainChange
+- Windows Media Player de eventos DomainChange, classe Player
+- classe de jogador Windows Media Player, evento DomainChange
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fa9637913451aa5bba937906130899c46e0bd34d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6f6d70c6a3c2ac2d29c03e6d0518b5e7341f988f41e1bf2f5bb84a7de9f83f68
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105814070"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118995906"
 ---
 # <a name="playerdomainchange-event"></a>Evento Player. DomainChange
 
@@ -63,13 +63,13 @@ Player.DomainChange(
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse evento não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-O valor dos parâmetros de evento é especificado pelo Windows Media Player e pode ser acessado ou transmitido para um método em um arquivo JScript importado usando o nome de parâmetro fornecido. Esse nome de parâmetro deve ser digitado exatamente como mostrado, incluindo a capitalização.
+o valor dos parâmetros de evento é especificado por Windows Media Player e pode ser acessado ou passado para um método em um arquivo de JScript importado usando o nome de parâmetro fornecido. Esse nome de parâmetro deve ser digitado exatamente como mostrado, incluindo a capitalização.
 
 **Windows Media Player 10 Mobile:** Não há suporte para esse evento.
 

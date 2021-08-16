@@ -1,11 +1,11 @@
 ---
-title: Método StringCollection. isidêntico
-description: O método isidêntico recupera um valor que indica se o objeto fornecido é o mesmo que o atual. | Método StringCollection. isidêntico
+title: Método StringCollection.isIdentical
+description: O método isIdentical recupera um valor que indica se o objeto fornecido é o mesmo que o atual. | Método StringCollection.isIdentical
 ms.assetid: 5f2aabbe-e6c7-4aa2-a30d-30178a4ba3db
 keywords:
-- método isidêntico do Windows Media Player
-- método isidêntico Windows Media Player, classe StringCollection
-- Classe StringCollection Windows Media Player, método isidêntico
+- Método isIdentical Windows Media Player
+- método isIdentical Windows Media Player , classe StringCollection
+- Classe StringCollection Windows Media Player método , isIdentical
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ec4035e748921afd77865fa29c9a8507abe55128
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: aded9879ded384feaa5bd12bd167c1eab0e1a0f764a3cf4370b84ca4b2422ff7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105786326"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120123016"
 ---
-# <a name="stringcollectionisidentical-method"></a>Método StringCollection. isidêntico
+# <a name="stringcollectionisidentical-method"></a>Método StringCollection.isIdentical
 
-O método **isidêntico** recupera um valor que indica se o objeto fornecido é o mesmo que o atual.
+O **método isIdentical** recupera um valor que indica se o objeto fornecido é o mesmo que o atual.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,20 +42,20 @@ bRetVal = StringCollection.isIdentical(
 
 <dl> <dt>
 
-*cadeia de caracteres* \[ no\]
+*stringCollection* \[ Em\]
 </dt> <dd>
 
-Objeto **StringCollection** a ser comparado com o atual.
+**Objeto StringCollection** a ser comparado com o atual.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Esse método retorna um **valor booleano**.
+Esse método retorna um **booliana.**
 
 ## <a name="remarks"></a>Comentários
 
-Para usar esse método, é necessário ter acesso de leitura à biblioteca. Para obter mais informações, consulte [acesso à biblioteca](library-access.md).
+Para usar esse método, é necessário ter acesso de leitura à biblioteca. Para obter mais informações, consulte [Acesso à biblioteca.](library-access.md)
 
 ## <a name="requirements"></a>Requisitos
 

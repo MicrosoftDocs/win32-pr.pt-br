@@ -3,9 +3,9 @@ title: Fazendo backup e restaurando licenças
 description: Fazendo backup e restaurando licenças
 ms.assetid: 59be02fe-f207-4161-8765-9a88a8050248
 keywords:
-- SDK do Windows Media Format, fazendo backup de licenças
-- SDK do Windows Media Format, restaurando licenças
-- SDK do Windows Media Format, backup e restauração de licenças
+- Windows SDK do formato de mídia, fazendo backup de licenças
+- Windows SDK de formato de mídia, restaurando licenças
+- Windows SDK de formato de mídia, backup e restauração de licenças
 - ASF (Advanced Systems Format), fazendo backup de licenças
 - ASF (formato de sistemas avançados), fazendo backup de licenças
 - ASF (Advanced Systems Format), restaurando licenças
@@ -20,12 +20,12 @@ keywords:
 - DRM (gerenciamento de direitos digitais), backup e restauração de licenças
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d10d8e76c191225288a1021e08e4c77e7e14f3c6
-ms.sourcegitcommit: 48d1c892045445bcbd0f22bafa2fd3861ffaa6e7
+ms.openlocfilehash: 378a41d975e8f19d38c637d585759d0038f5b86550769ae49d6a6490844f223e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "103640153"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119028134"
 ---
 # <a name="backing-up-and-restoring-licenses"></a>Fazendo backup e restaurando licenças
 
@@ -61,7 +61,7 @@ Os eventos a seguir são enviados para o método [**IWMStatusCallback:: OnStatus
 > [!Note]  
 > O DRM não é compatível com a versão baseada em x64 deste SDK.
 
- 
+ 
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -79,9 +79,9 @@ Os eventos a seguir são enviados para o método [**IWMStatusCallback:: OnStatus
 [**Interface IWMLicenseRestore**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmlicenserestore)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

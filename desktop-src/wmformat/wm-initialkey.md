@@ -3,7 +3,7 @@ title: WM/InitialKey
 description: O atributo WM/InitialKey contém a chave inicial da música no arquivo.
 ms.assetid: f298f860-95e3-4dee-8fec-771da4a3744d
 keywords:
-- Formato de mídia do Windows WM/InitialKey
+- Formato de mídia do Windows do WM/InitialKey
 topic_type:
 - apiref
 api_name:
@@ -21,7 +21,7 @@ ms.locfileid: "118698962"
 ---
 # <a name="wminitialkey"></a>WM/InitialKey
 
-O **atributo WM/InitialKey** contém a chave inicial da música no arquivo.
+O atributo **WM/InitialKey** contém a chave inicial da música no arquivo.
 
 ## <a name="global-constant"></a>Constante global
 
@@ -29,7 +29,7 @@ g \_ wszWMInitialKey
 
 ## <a name="data-type"></a>Tipo de Dados
 
-**CADEIA DE CARACTERES DE \_ TIPO \_ WMT**
+**Cadeia de caracteres do \_ tipo WMT \_**
 
 ## <a name="example"></a>Exemplo
 
@@ -37,7 +37,7 @@ g \_ wszWMInitialKey
 
 | Tipo de arquivo | Valor de exemplo |
 |-----------|---------------|
-| Áudio     | "Menor"     |
+| Áudio     | "Um secundário"     |
 
 
 

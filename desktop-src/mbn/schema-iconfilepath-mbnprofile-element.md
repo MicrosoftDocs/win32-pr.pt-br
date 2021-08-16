@@ -11,24 +11,24 @@ api_name:
 - ICONFilePath
 api_type:
 - Schema
-ms.openlocfilehash: 6b1e98f76fe2f83ce214076223b5a1439bd0ea45
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ea662a7519a8705818ef502f5b797f437b0f89bee649d0bde18ce6f71b099d74
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105808245"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119035814"
 ---
 # <a name="iconfilepath-mbnprofile-element"></a>Elemento ICONFilePath (MBNProfile)
 
-O elemento **ICONFilePath (MBNProfile)** contém o caminho do arquivo de ícone para a conexão.
+O **elemento ICONFilePath (MBNProfile)** contém o caminho do arquivo de ícone para a conexão.
 
-A interface do usuário da conexão do sistema operacional exibirá esse ícone quando uma conexão for feita usando esse elemento.
+A interface do usuário de conexão do sistema operacional exibirá esse ícone quando uma conexão for feita usando esse elemento.
 
-Ao passar o XML para criar o perfil no método [**CreateConnectionProfile**](/windows/desktop/api/mbnapi/nf-mbnapi-imbnconnectionprofilemanager-createconnectionprofile) da interface [**IMbnConnectionProfileManager**](/windows/desktop/api/mbnapi/nn-mbnapi-imbnconnectionprofilemanager) , esse caminho deve apontar para o local de origem do arquivo de ícone. Após a criação bem-sucedida do objeto [**IMbnConnectionProfile**](/windows/desktop/api/mbnapi/nn-mbnapi-imbnconnectionprofile) , o serviço de banda larga móvel copiará o arquivo de ícone no repositório interno e o caminho do perfil será modificado para refletir isso.
+Ao passar o XML para criar o perfil no método [**CreateConnectionProfile**](/windows/desktop/api/mbnapi/nf-mbnapi-imbnconnectionprofilemanager-createconnectionprofile) da interface [**IMbnConnectionProfileManager,**](/windows/desktop/api/mbnapi/nn-mbnapi-imbnconnectionprofilemanager) esse caminho deve apontar para o local de origem do arquivo de ícone. Após a criação bem-sucedida do objeto [**IMbnConnectionProfile,**](/windows/desktop/api/mbnapi/nn-mbnapi-imbnconnectionprofile) o serviço de Banda Larga Móvel copiará o arquivo de ícone em seu armazenamento interno e o caminho do perfil será modificado para refletir isso.
 
-O arquivo de ícone deve estar no formato. bmp com a dimensão de 32X32 x 32 pixels.
+O arquivo de ícone deve estar no .bmp com dimensão de 32x32 pixels.
 
-Esse elemento é uma cadeia de caracteres com comprimento de até 1024 caracteres, contendo um caminho de arquivo absoluto.
+Esse elemento é uma cadeia de caracteres de comprimento de até 1024 caracteres, contendo um caminho de arquivo absoluto.
 
 O elemento é opcional.
 
@@ -38,7 +38,7 @@ O elemento é opcional.
  />
 ```
 
-O elemento **ICONFilePath** é definido pelo elemento [**MBNProfile**](schema-mbnprofile-element.md) .
+O **elemento ICONFilePath** é definido pelo [**elemento MBNProfile.**](schema-mbnprofile-element.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -46,7 +46,7 @@ O elemento **ICONFilePath** é definido pelo elemento [**MBNProfile**](schema-mb
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Aplicativos de \[ aplicativos da área de trabalho do Windows 7 \| UWP\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows aplicativos UWP de 7 \[ \| áreas de trabalho\]<br/> |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                         |
 
 

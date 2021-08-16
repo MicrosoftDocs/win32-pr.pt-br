@@ -1,10 +1,10 @@
 ---
-title: Classe MDM_DeviceStatus
-description: A \_ classe MDM DeviceStatus é usada pela empresa para controlar o inventário de dispositivos e consultar o estado de conformidade desses dispositivos com suas políticas corporativas.
+title: MDM_DeviceStatus classe
+description: A classe DeviceStatus do MDM é usada pela empresa para acompanhar o inventário de dispositivos e consultar o estado de conformidade desses dispositivos com suas \_ políticas corporativas.
 ms.assetid: fceaaf36-8f33-410a-89b4-c824b10164d5
 keywords:
-- Classe MDM_DeviceStatus
-- Classe MDM_DeviceStatus, descrita
+- MDM_DeviceStatus classe
+- MDM_DeviceStatus classe, descrita
 topic_type:
 - apiref
 api_name:
@@ -17,18 +17,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 751a33553b4a00ac6719ce6e24c75a03444f0f49
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e830b0c7f0883bdd46e22d21a46033ef48777b58eca18ec64971c5d67f604186
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104085994"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119967656"
 ---
-# <a name="mdm_devicestatus-class"></a>\_Classe DeviceStatus do MDM
+# <a name="mdm_devicestatus-class"></a>Classe DeviceStatus MDM \_
 
-\[Algumas informações estão relacionadas ao produto de pré-lançamento que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não faz nenhuma garantia, expressa ou implícita, com relação às informações fornecidas aqui.\]
+\[Algumas informações estão relacionadas ao produto pré-lançado, que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não oferece garantias, expressas ou implícitas, das informações aqui fornecidas.\]
 
-A classe **MDM \_ DeviceStatus** é usada pela empresa para controlar o inventário de dispositivos e consultar o estado de conformidade desses dispositivos com suas políticas corporativas.
+A **classe \_ DeviceStatus do MDM** é usada pela empresa para acompanhar o inventário de dispositivos e consultar o estado de conformidade desses dispositivos com suas políticas corporativas.
 
 A sintaxe a seguir é simplificada do código MOF e inclui todas as propriedades herdadas.
 
@@ -47,13 +47,13 @@ class MDM_DeviceStatus
 
 ## <a name="members"></a>Membros
 
-A classe **MDM \_ DeviceStatus** tem estes tipos de membros:
+A **classe \_ DeviceStatus MDM** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **MDM \_ DeviceStatus** tem essas propriedades.
+A **classe \_ DeviceStatus MDM** tem essas propriedades.
 
 <dl> <dt>
 
@@ -63,7 +63,7 @@ A classe **MDM \_ DeviceStatus** tem essas propriedades.
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -80,11 +80,11 @@ Tipo de acesso: Somente leitura
 Qualificadores: [ **chave**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-O nó raiz do provedor de serviços de configuração do DeviceStatus.
+O nó raiz do provedor de serviços de configuração DeviceStatus.
 
 </dd> <dt>
 
-**ParentID**
+**Parentid**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
@@ -106,7 +106,7 @@ Descreve o caminho completo para o nó pai. Para essa classe, a cadeia de caract
 Tipo de dados: **sint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> </dl>
@@ -117,10 +117,10 @@ Tipo de acesso: leitura/gravação
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10\]<br/>                                                    |
+| Cliente mínimo com suporte<br/> | \[Windows 10 somente aplicativos da área de trabalho\]<br/>                                                    |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                      |
-| Namespace<br/>                | \\DMMap de \\ MDM \\ CIMv2 raiz<br/>                                                             |
-| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv. mof</dt> </dl> |
+| Namespace<br/>                | \\DMMap de \\ MDM cimv2 \\ raiz<br/>                                                             |
+| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>DMWmiBridgeProv.dll</dt> </dl> |
 
 

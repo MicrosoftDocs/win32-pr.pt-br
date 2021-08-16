@@ -4,16 +4,16 @@ description: IAgentCommandWindow GetSize
 ms.assetid: 24ad3b48-6557-4790-b9c4-2cf7df92fa7d
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 53cf42d98f811905590209b6fed70b28a5728903
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 200853d88f4f4ea70fce0f80d73f343a2a4d46935a2dfca0ebf78021b0b884ae
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105764270"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119961576"
 ---
 # <a name="iagentcommandwindowgetsize"></a>IAgentCommandWindow::GetSize
 
-\[O Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
+\[o Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
 
 ``` syntax
 HRESULT GetSize(
@@ -47,9 +47,9 @@ Endereço de uma variável que recebe a altura da janela de comandos de voz em p
 [**IAgentCommandWindow:: GetPosition**](iagentcommandwindow--getposition.md)
 
 
- 
+ 
 
- 
+ 
 
 
 

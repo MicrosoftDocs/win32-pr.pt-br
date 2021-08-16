@@ -15,7 +15,7 @@ ms.locfileid: "118538389"
 
 Uma variável de efeito é declarada com a sintaxe descrita nesta seção.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 Sintaxe básica:
 
@@ -25,7 +25,7 @@ Consulte [sintaxe de variável (DirectX HLSL)](/windows/desktop/direct3dhlsl/dx-
 
 
 
-| Name         | Descrição                                                                                                                                                                                 |
+| Nome         | Descrição                                                                                                                                                                                 |
 |--------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Tipo de dados     | Qualquer modo de exibição de acesso, sombreador ou tipo de bloco [básico](/windows/desktop/direct3dhlsl/dx-graphics-hlsl-variable-syntax), de [textura](/windows/desktop/direct3dhlsl/dx-graphics-hlsl-to-type)e não ordenado.                            |
 | VariableName | Uma cadeia de caracteres ASCII que identifica exclusivamente o nome da variável de efeito.                                                                                                                   |

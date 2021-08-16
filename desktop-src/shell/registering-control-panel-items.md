@@ -9,16 +9,16 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: 05c2a652314babc212e17b48198e9441f4d3465d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: daa86bfd9975df5cd057dd3e577f443bafa6c363061e267e67adad69b590e678
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104091718"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119661076"
 ---
 # <a name="registering-control-panel-items"></a>Registrando itens do painel de controle
 
-Os itens do painel de controle devem ser registrados para que apareçam na janela do painel de controle. Se o item do painel de controle for implementado como parte de um arquivo. exe, ele será registrado como um objeto de comando. O registro difere se o item for implementado como um arquivo. dll que exporta a função [**CPlApplet**](/windows/win32/api/cpl/nc-cpl-applet_proc) .
+Os itens do painel de controle devem ser registrados para que apareçam na janela do painel de controle. Se o item do painel de controle for implementado como parte de um arquivo de .exe, ele será registrado como um objeto de comando. O registro difere se o item for implementado como um arquivo de .dll que exporta a função [**CPlApplet**](/windows/win32/api/cpl/nc-cpl-applet_proc) .
 
 Requisitos específicos são discutidos nestes tópicos:
 
@@ -53,7 +53,7 @@ Requisitos específicos são discutidos nestes tópicos:
 [Criando links de tarefas pesquisáveis para um item do painel de controle](creating-searchable-task-links.md)
 </dt> <dt>
 
-[Acessando o painel de controle no modo de segurança no Windows Vista](accessing-the-cp-in-safe-mode-under-vista.md)
+[acessando o painel de controle no modo de Cofre em Windows Vista](accessing-the-cp-in-safe-mode-under-vista.md)
 </dt> </dl>
 
  

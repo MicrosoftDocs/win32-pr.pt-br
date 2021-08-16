@@ -1,7 +1,7 @@
 ---
-description: Remove as configurações de componente genérico de uma configuração de sistema virtual.
+description: Remove as configurações de componente genérico de uma configuração do sistema virtual.
 ms.assetid: 54ddb960-65b7-409d-ad80-f3685562a1a1
-title: Método RemoveSystemComponentSettings da classe Msvm_VirtualSystemManagementService
+title: Método RemoveSystemComponentSettings da classe Msvm_VirtualSystemManagementService dados
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -20,9 +20,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118644672"
 ---
-# <a name="removesystemcomponentsettings-method-of-the-msvm_virtualsystemmanagementservice-class"></a>Método RemoveSystemComponentSettings da \_ classe VirtualSystemManagementService Msvm
+# <a name="removesystemcomponentsettings-method-of-the-msvm_virtualsystemmanagementservice-class"></a>Método RemoveSystemComponentSettings da classe Msvm \_ VirtualSystemManagementService
 
-Remove as configurações de componente genérico de uma configuração de sistema virtual.
+Remove as configurações de componente genérico de uma configuração do sistema virtual.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,23 +40,23 @@ uint32 RemoveSystemComponentSettings(
 
 <dl> <dt>
 
-*ComponentSettings* \[ no\]
+*ComponentSettings* \[ Em\]
 </dt> <dd>
 
-Matriz de [**Msvm \_ SystemComponentSettingData**](msvm-systemcomponentsettingdata.md) que fazem referência às configurações de componente a serem removidas.
+Matriz de [**Msvm \_ SystemComponentSettingData**](msvm-systemcomponentsettingdata.md) que faz referência às configurações de componente a remover.
 
 </dd> <dt>
 
-*Trabalho* \[ do fora\]
+*Trabalho* \[ out\]
 </dt> <dd>
 
-Se a operação for executada de forma assíncrona, esse método retornará 4096, e esse parâmetro conterá uma referência a um objeto derivado de [**CIM \_ ConcreteJob**](/previous-versions//cc136808(v=vs.85)).
+Se a operação for executada de forma assíncrona, esse método retornará 4096 e esse parâmetro conterá uma referência a um objeto derivado de [**CIM \_ ConcreteJob.**](/previous-versions//cc136808(v=vs.85))
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor retornado
 
-Retorna 0 ou 4096 em um êxito; caso contrário, retornará um erro.
+Retorna 0 ou 4096 em caso de êxito; caso contrário, retornará um erro.
 
 <dl> <dt>
 
@@ -69,7 +69,7 @@ Retorna 0 ou 4096 em um êxito; caso contrário, retornará um erro.
 **Falha** (2)
 </dt> <dt>
 
-**Tempo limite** (3)
+**Tempoout** (3)
 </dt> <dt>
 
 **Parâmetro inválido** (4)
@@ -78,16 +78,16 @@ Retorna 0 ou 4096 em um êxito; caso contrário, retornará um erro.
 **Estado inválido** (5)
 </dt> <dt>
 
-**DMTF reservado** (..)
+**DMTF Reservado** (..)
 </dt> <dt>
 
-**Parâmetros de método marcados-trabalho iniciado** (4096)
+**Parâmetros de método verificados – Trabalho iniciado** (4096)
 </dt> <dt>
 
-**Método reservado** (4097.. 32767)
+**Método Reservado** (4097..32767)
 </dt> <dt>
 
-**Específico do fornecedor** (32768.. 65535)
+**Específico do** fornecedor (32768..65535)
 </dt> </dl>
 
 ## <a name="requirements"></a>Requisitos
@@ -96,10 +96,10 @@ Retorna 0 ou 4096 em um êxito; caso contrário, retornará um erro.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 10, \[ somente aplicativos da área de trabalho da versão 1703\]<br/>                                               |
+| Cliente mínimo com suporte<br/> | Windows 10, versão 1703 somente \[ aplicativos da área de trabalho\]<br/>                                               |
 | Servidor mínimo com suporte<br/> | Windows Server 2016<br/>                                                                          |
-| Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Namespace<br/>                | Virtualização \\ raiz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 

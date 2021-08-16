@@ -23,7 +23,7 @@ As palavras-chave dinâmicas do firewall contêm os retornos de chamada a seguir
 
 | Tópico | Descrição |
 |-|-|
-| [**FWPM_DYNAMIC_KEYWORD_CALLBACK0**](/windows/win32/api/fwpmu/nc-fwpmu-fwpm_dynamic_keyword_callback0) | Uma função de retorno de chamada, que você implementa, que é invocada com notificações sobre alterações em objetos de endereço de palavra-chave dinâmico ([FW_DYNAMIC_KEYWORD_ADDRESS0](/windows/win32/api/netfw/ns-netfw-fw_dynamic_keyword_address0)). |
+| [**FWPM_DYNAMIC_KEYWORD_CALLBACK0**](/windows/win32/api/fwpmu/nc-fwpmu-fwpm_dynamic_keyword_callback0) | Uma função de retorno de chamada, que você[implementa,](/windows/win32/api/netfw/ns-netfw-fw_dynamic_keyword_address0)que é invocada com notificações sobre alterações em objetos de endereço de palavra-chave dinâmico ( FW_DYNAMIC_KEYWORD_ADDRESS0 ). |
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

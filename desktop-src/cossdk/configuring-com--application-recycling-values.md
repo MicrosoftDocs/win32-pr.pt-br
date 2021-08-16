@@ -26,7 +26,7 @@ Para configurar a reciclagem de aplicativos para um aplicativo COM+, use as segu
 
 1.  Na árvore de console da ferramenta administrativa serviços de componentes, clique com o botão direito do mouse no aplicativo de servidor COM+ que você deseja reciclar e clique em **Propriedades**.
 
-2.  Na guia **Pooling & Reciclagem,** insira valores para Limite de Tempo de Vida **(minutos),** Limite de Memória **(KB),** Tempo Limite de Expiração **(minutos),** Limite de Chamada e Limite de Ativação, dependendo dos critérios que você deseja usar. 
+2.  Na guia  **Pooling & Reciclagem,** insira valores para Limite de Tempo de Vida **(minutos),** Limite de Memória **(KB),** Tempo Limite de Expiração **(minutos),** Limite de Chamada e Limite de Ativação, dependendo dos critérios que você deseja usar. 
 
     -   **Limite de** tempo de vida indica o número máximo de minutos que um processo pode executar antes de ser reciclado. O intervalo válido é de 0 a 30.240 minutos (21 dias). O número padrão de minutos é 0.
     -   **Limite de** Memória indica a quantidade máxima de uso de memória do processo (em quilobytes) antes de reciclar o processo. Se o uso de memória do processo exceder o número especificado por mais de um minuto, o processo será reciclado. O intervalo válido é de 0 a 1.048.576 KB e a quantidade padrão de uso de memória é de 0 KB.

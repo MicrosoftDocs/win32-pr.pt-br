@@ -1,11 +1,11 @@
 ---
-title: Método de redefinição de IEnumBackgroundCopyFiles (Deliveryoptimization. h)
-description: 'Método IEnumBackgroundCopyFiles:: Reset – redefine a sequência de enumeração para o início.'
+title: Método reset IEnumBackgroundCopyFiles (Deliveryoptimization.h)
+description: Método IEnumBackgroundCopyFiles::Reset – redefine a sequência de enumeração para o início.
 ms.assetid: 6A303069-105C-4053-A8C5-2ECF60E789DE
 keywords:
 - Método Reset
-- Método Reset, interface IEnumBackgroundCopyFiles
-- Interface IEnumBackgroundCopyFiles, Método Reset
+- Método reset, interface IEnumBackgroundCopyFiles
+- Interface IEnumBackgroundCopyFiles, método Reset
 topic_type:
 - apiref
 api_name:
@@ -24,7 +24,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118542003"
 ---
-# <a name="ienumbackgroundcopyfilesreset-method"></a>Método IEnumBackgroundCopyFiles:: Reset
+# <a name="ienumbackgroundcopyfilesreset-method"></a>Método IEnumBackgroundCopyFiles::Reset
 
 Redefine a sequência de enumeração para o início.
 
@@ -43,7 +43,7 @@ Esse método não tem parâmetros.
 
 ## <a name="return-value"></a>Valor retornado
 
-Esse método retorna **S_OK** em caso de êxito ou um dos valores padrão com **HRESULT** em erro.
+Esse método retorna **S_OK** em caso de êxito ou um dos valores padrão de **COM HRESULT** em caso de erro.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -51,11 +51,11 @@ Esse método retorna **S_OK** em caso de êxito ou um dos valores padrão com **
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 10, \[ somente aplicativos da área de trabalho da versão 1709\]<br/>                                           |
-| Servidor mínimo com suporte<br/> | Windows Servidor, versão 1709 \[ aplicativos da área de trabalho\]<br/>                                       |
-| parâmetro<br/>                   | <dl> <dt>Deliveryoptimization. h</dt> </dl>   |
-| INSERI<br/>                      | <dl> <dt>DeliveryOptimization. idl</dt> </dl> |
-| Biblioteca<br/>                  | <dl> <dt>Dosvc. lib</dt> </dl>                |
+| Cliente mínimo com suporte<br/> | Windows 10, versão 1709 somente para \[ aplicativos da área de trabalho\]<br/>                                           |
+| Servidor mínimo com suporte<br/> | Windows Servidor, versão 1709 somente \[ aplicativos da área de trabalho\]<br/>                                       |
+| Cabeçalho<br/>                   | <dl> <dt>Deliveryoptimization.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>DeliveryOptimization.idl</dt> </dl> |
+| Biblioteca<br/>                  | <dl> <dt>Dosvc.lib</dt> </dl>                |
 | DLL<br/>                      | <dl> <dt>Dosvc.dll</dt> </dl>                |
 | IID<br/>                      | IID_IEnumBackgroundCopyFiles é definido como CA51E165-C365-424C-8D41-24AAA4FF3C40<br/>         |
 

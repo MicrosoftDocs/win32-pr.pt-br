@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: eabb259bc8e5b51c872b64ad351718ab5cacb20c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e0ff3762dd6052f09b9305a03ed2b9249ed6965a93d08c22584c5f0e1ada42e8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104011658"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119669631"
 ---
 # <a name="esentbackupnotallowedyetexception-constructor"></a>Construtor EsentBackupNotAllowedYetException
 
 Inicializa uma nova instância da classe EsentBackupNotAllowedYetException.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -58,6 +58,6 @@ public EsentBackupNotAllowedYetException()
 
 [Classe EsentBackupNotAllowedYetException](./esentbackupnotallowedyetexception-class.md)
 
-[Membros do EsentBackupNotAllowedYetException](./esentbackupnotallowedyetexception-members.md)
+[Membros EsentBackupNotAllowedYetException](./esentbackupnotallowedyetexception-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

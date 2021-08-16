@@ -1,6 +1,6 @@
 ---
 title: Interface IDeliveryOptimizationFile2
-description: O IDeliveryOptimizationFile2 dá suporte à configuração e à obtenção de propriedades de arquivo opcionais.
+description: O IDeliveryOptimizationFile2 dá suporte à configuração e à obter propriedades de arquivo opcionais.
 keywords:
 - Interface IDeliveryOptimizationFile2
 - Interface IDeliveryOptimizationFile2, descrita
@@ -24,11 +24,11 @@ ms.locfileid: "118542041"
 ---
 # <a name="ideliveryoptimizationfile2-interface"></a>Interface IDeliveryOptimizationFile2
 
-O **IDeliveryOptimizationFile2** dá suporte à configuração e à obtenção de propriedades de arquivo opcionais. 
+O **IDeliveryOptimizationFile2** dá suporte à configuração e à obter propriedades de arquivo opcionais. 
 
 ## <a name="members"></a>Membros
 
-A interface **IDeliveryOptimizationFile2** herda da interface [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) . **IDeliveryOptimizationFile2** também tem estes tipos de membros:
+A interface **IDeliveryOptimizationFile2** herda da interface [**IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **IDeliveryOptimizationFile2** também tem estes tipos de membros:
 
 - [Métodos](#methods)
 
@@ -38,17 +38,17 @@ A interface **IDeliveryOptimizationFile2** tem esses métodos.
 
 | Método                                                 | Descrição                                                  |
 |:-------------------------------------------------------|:-------------------------------------------------------------|
-| [**GetProperty**](ideliveryoptimizationfile2-getproperty.md)  | Esse método retorna uma única propriedade do arquivo do. |
-| [**SetProperty**](ideliveryoptimizationfile2-setproperty.md)  | Esse método define uma única propriedade do arquivo do.    |
+| [**Getproperty**](ideliveryoptimizationfile2-getproperty.md)  | Esse método retorna uma única propriedade do arquivo DO. |
+| [**Setproperty**](ideliveryoptimizationfile2-setproperty.md)  | Esse método define uma única propriedade do arquivo DO.    |
 
 ## <a name="requirements"></a>Requisitos
 
 | Requisito | Valor |
 |-------------------------------|-----------------------------------------------------------------------------------|
-| Cliente mínimo com suporte      | Windows 10, \[ somente aplicativos da área de trabalho da versão 1803\]                                    |
-| Servidor mínimo com suporte      | Windows Servidor, versão 1709 \[ aplicativos da área de trabalho\]                                |
-| parâmetro                        | Deliveryoptimization. h                                                            |
-| INSERI                           | DeliveryOptimization. idl                                                          |
-| Biblioteca                       | Dosvc. lib                                                                         |
+| Cliente mínimo com suporte      | Windows 10, versão 1803 somente \[ aplicativos da área de trabalho\]                                    |
+| Servidor mínimo com suporte      | Windows Servidor, versão 1709 somente \[ aplicativos da área de trabalho\]                                |
+| Cabeçalho                        | Deliveryoptimization.h                                                            |
+| Idl                           | DeliveryOptimization.idl                                                          |
+| Biblioteca                       | Dosvc.lib                                                                         |
 | DLL                           | Dosvc.dll                                                                         |
 | IID                           | IID_IDeliveryOptimizationFile2 é definido como 3A87296F-6EC2-4126-AB29-E3F8DC4CC390 |

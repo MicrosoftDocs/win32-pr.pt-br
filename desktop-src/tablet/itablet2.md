@@ -27,19 +27,19 @@ Estende a [**interface ITablet**](itablet.md).
 
 ## <a name="members"></a>Membros
 
-A interface **ITablet2** herda da interface [**IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **ITablet2** também tem estes tipos de membros:
+A interface **ITablet2** herda da interface [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) . **ITablet2** também tem estes tipos de membros:
 
 -   [Métodos](#methods)
 
 ### <a name="methods"></a>Métodos
 
-A **interface ITablet2** tem esses métodos.
+A interface **ITablet2** tem esses métodos.
 
 
 
 | Método                                          | Descrição                                                                                              |
 |:------------------------------------------------|:---------------------------------------------------------------------------------------------------------|
-| [**GetDeviceKind**](itablet2-getdevicekind.md) | Retorna o tipo de dispositivo de hardware que o objeto de tablet representa, como mouse, caneta ou toque.<br/> |
+| [**GetDeviceKind**](itablet2-getdevicekind.md) | Retorna o tipo de dispositivo de hardware que o objeto do Tablet representa, como mouse, caneta ou toque.<br/> |
 
 
 
@@ -47,7 +47,7 @@ A **interface ITablet2** tem esses métodos.
 
 ## <a name="remarks"></a>Comentários
 
-Essa interface foi introduzida no Windows Vista.
+essa interface foi introduzida no Windows Vista.
 
 Os desenvolvedores não devem usar essa interface.
 
@@ -73,7 +73,7 @@ interface ITablet2 : IUnknown
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                         |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                         |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                              |
 | Biblioteca<br/>                  | <dl> <dt>Wisptis.exe</dt> </dl> |
 

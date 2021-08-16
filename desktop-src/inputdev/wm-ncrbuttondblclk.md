@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fee33d9b31f99a00181427c9a715df792d95fe55
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 9af62a21da645a265e5264ffae47ad8cb0907ec6fb0106cfb9e7cee97b7f42e3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104499558"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119666296"
 ---
 # <a name="wm_ncrbuttondblclk-message"></a>Mensagem do WM \_ NCRBUTTONDBLCLK
 
@@ -52,7 +52,7 @@ Uma estrutura de [**pontos**](/previous-versions//dd162808(v=vs.85)) que contém
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se um aplicativo processar essa mensagem, ele deverá retornar zero.
 

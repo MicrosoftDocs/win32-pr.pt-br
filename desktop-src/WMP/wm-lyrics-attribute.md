@@ -1,9 +1,9 @@
 ---
-title: Atributo do WM/letras de música
-description: O atributo WM/letras de música é a letra do conteúdo.
+title: Atributo WM/Attribute
+description: O atributo WM/Attribute é a responsabilidade do conteúdo.
 ms.assetid: 125a2a51-81f2-478a-a9e9-234662a17bc0
 keywords:
-- Atributo do WM/letras de música do Windows Media Player
+- Atributo WM/Attribute Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,32 +12,32 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5d4c88b9046a89e37c4e9b588ff52ed937ee80e6
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f35f6b131fc41258dcce4490c731fde61ef8823cac164523b9b912c7d9586d9c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105782555"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120122636"
 ---
-# <a name="wmlyrics-attribute"></a>Atributo do WM/letras de música
+# <a name="wmlyrics-attribute"></a>Atributo WM/Attribute
 
-O atributo **WM/letras de música** é a letra do conteúdo.
+O **atributo WM/Attribute** é a responsabilidade do conteúdo.
 
 ## <a name="applies-to"></a>Aplica-se A
 
 -   [Itens de áudio](audio-item-attributes.md)
 -   [Faixas de CD](cd-track-attributes.md)
--   [Atributos de arquivo de mídia do Windows comumente usados](commonly-used-windows-media-file-attributes.md)
+-   [Atributos de arquivo Windows mídia comumente usados](commonly-used-windows-media-file-attributes.md)
 
 ## <a name="remarks"></a>Comentários
 
-Esse atributo é armazenado tanto na biblioteca (ou no cache) quanto no arquivo de mídia digital.
+Esse atributo é armazenado na biblioteca (ou cache) e no arquivo de mídia digital.
 
-**Letras de música** é um alias para este atributo.
+**É** um alias para esse atributo.
 
-A constante do Windows Media Format SDK para esse atributo é g \_ wszWMLyrics.
+A Windows constante do SDK de Formato de Mídia para esse atributo é g \_ wszWMLyrics.
 
-Para determinar se você pode alterar o valor desse atributo, use o método [Media. isReadOnlyItem](media-isreadonlyitem.md) .
+Para determinar se você pode alterar o valor desse atributo, use o [método Media.isReadOnlyItem.](media-isreadonlyitem.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -45,7 +45,7 @@ Para determinar se você pode alterar o valor desse atributo, use o método [Med
 
 | Requisito | Valor |
 |--------------------|---------------------------------------------------|
-| Versão<br/> | Windows Media Player 9 Series ou posterior<br/> |
+| Versão<br/> | Windows Media Player série 9 ou posterior<br/> |
 
 
 

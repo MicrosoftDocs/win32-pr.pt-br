@@ -1,6 +1,6 @@
 ---
 title: UI_PKEY_ThemeColorsTooltips
-description: Identifica a \_ Propriedade PKEY ThemeColorsTooltips da interface do usuário \_ .
+description: Identifica a propriedade UI \_ PKEY \_ ThemeColorsTooltips.
 ms.assetid: 69b23ea7-fdce-4894-94a8-d77d087872a3
 ms.topic: article
 ms.date: 05/31/2018
@@ -11,9 +11,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118705945"
 ---
-# <a name="ui_pkey_themecolorstooltips"></a>\_ThemeColorsTooltips PKEY \_ UI
+# <a name="ui_pkey_themecolorstooltips"></a>UI \_ PKEY \_ ThemeColorsTooltips
 
-Identifica a \_ Propriedade PKEY ThemeColorsTooltips da interface do usuário \_ .
+Identifica a propriedade UI \_ PKEY \_ ThemeColorsTooltips.
 
 ```
 propertyDescription
@@ -27,17 +27,17 @@ propertyDescription
 
 ## <a name="remarks"></a>Comentários
 
-A interface do usuário \_ PKEY \_ ThemeColorsTooltips é usada por um aplicativo para consultar as dicas de ferramentas de amostra de cor de um [**DropDownColorPicker**](windowsribbon-element-dropdowncolorpicker.md).
+UI PKEY ThemeColorsTooltips é usado por um aplicativo para consultar as dicas de ferramenta de amostra de cor \_ \_ de um [**DropDownColorPicker**](windowsribbon-element-dropdowncolorpicker.md).
 
 O valor da propriedade é uma matriz de valores de cadeia de caracteres.
 
-Cada valor de cadeia de caracteres corresponde à dica de ferramenta para uma amostra de cor em um [**DropDownColorPicker**](windowsribbon-element-dropdowncolorpicker.md) em que `ThemeColors` é especificado como o valor do atributo **colortemplate** .
+Cada valor de cadeia de caracteres corresponde à dica de ferramenta para uma amostra de cor em [**um DropDownColorPicker**](windowsribbon-element-dropdowncolorpicker.md) em que é especificado como o valor do `ThemeColors` atributo **ColorTemplate.**
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[Propriedades do seletor de cores](windowsribbon-reference-properties-colorpicker.md)
+[Seletor de Cor propriedades](windowsribbon-reference-properties-colorpicker.md)
 </dt> </dl>
 
  

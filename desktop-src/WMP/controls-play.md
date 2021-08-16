@@ -1,11 +1,11 @@
 ---
-title: Método Controls. Play
-description: O método Play faz com que o item de mídia atual inicie a reprodução ou retome a reprodução de um item pausado.
+title: Método Controls.play
+description: O método play faz com que o item de mídia atual comece a reproduzir ou retoma a reprodução de um item em pausa.
 ms.assetid: 2218a13b-6294-45f5-bb6f-c5a1e433e0c6
 keywords:
 - método play Windows Media Player
-- método play Windows Media Player, classe Controls
-- Classe Controls Windows Media Player, método play
+- método play Windows Media Player classe , Controls
+- Classe Controls Windows Media Player , método play
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ea66f3bc4cf01d194dc44bcdf7b7cc838e1f3799
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 86ce3c1572515b320a62b1b3c76aac72e44101e21f3b0f89d7c3356046ea95f5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105761475"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118997446"
 ---
-# <a name="controlsplay-method"></a>Método Controls. Play
+# <a name="controlsplay-method"></a>Método Controls.play
 
-O método **Play** faz com que o item de mídia atual inicie a reprodução ou retome a reprodução de um item pausado.
+O **método play** faz com que o item de mídia atual comece a reproduzir ou retoma a reprodução de um item em pausa.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,17 +40,17 @@ Controls.play()
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-Se esse método for chamado durante o encaminhamento rápido ou o retrocesso, o valor das *configurações*. a **taxa** é definida como 1,0.
+Se esse método for chamado durante o encaminhamento rápido ou o rebobinamento, o valor de *Configurações*. **rate** é definida como 1,0.
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo a seguir cria um elemento de botão HTML que usa **Play** para reproduzir o item de mídia atual. O objeto de **jogador** foi criado com ID = "Player".
+O exemplo a seguir cria um elemento HTML BUTTON que usa **a reprodução** para reproduzir o item de mídia atual. O **objeto** Player foi criado com ID = "Player".
 
 
 ```JScript
@@ -74,7 +74,7 @@ O exemplo a seguir cria um elemento de botão HTML que usa **Play** para reprodu
 
 | Requisito | Valor |
 |--------------------|------------------------------------------------------------------------------------|
-| Versão<br/> | Windows Media Player versão 7,0 ou posterior.<br/>                              |
+| Versão<br/> | Windows Media Player versão 7.0 ou posterior.<br/>                              |
 | DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 

@@ -20,7 +20,7 @@ Você pode definir o contexto do reconhecedor usando a propriedade [**Recognizer
 Se os reconhecedores não estão instalados ou um contexto de reconhecedor não é atribuído ao objeto [**Divider,**](inkdivider-class.md) o objeto **Divisor** não usa um contexto de reconhecedor. Nesse caso, o recurso de análise de layout executa a divisão de segmento e nenhum texto está associado ao [**objeto DivisionResult.**](/windows/desktop/api/msinkaut15/nn-msinkaut15-iinkdivisionresult)
 
 > [!Note]  
-> A [**propriedade RecognizerContext**](/windows/win32/api/msinkaut15/nf-msinkaut15-iinkdivider-get_recognizercontext) não pode ser alterada depois que os traços foram atribuídos ao [**objeto Divisor.**](inkdivider-class.md) O **objeto Divider** usa os valores de propriedade padrão do [**objeto RecognizerContext.**](inkrecognizercontext-class.md)
+> A [**propriedade RecognizerContext**](/windows/win32/api/msinkaut15/nf-msinkaut15-iinkdivider-get_recognizercontext) não pode ser alterada depois que os traços foram atribuídos ao [**objeto Divider.**](inkdivider-class.md) O **objeto Divider** usa os valores de propriedade padrão do [**objeto RecognizerContext.**](inkrecognizercontext-class.md)
 
  
 

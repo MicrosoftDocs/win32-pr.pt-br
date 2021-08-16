@@ -36,7 +36,7 @@ Esse atributo é usado para acompanhar a versão de comportamento do domínio ou
 | Frequência de atualização  | \-                                             |
 | Attribute-Id      | 1.2.840.113556.1.4.1459                        |
 | System-Id-Guid    | d31a8757-2447-4545-8081-3bb610cacbf2           |
-| Sintaxe            | [**Enumeração**](s-enumeration.md)           |
+| Syntax            | [**Enumeração**](s-enumeration.md)           |
 
 
 
@@ -57,8 +57,8 @@ Esse atributo é usado para acompanhar a versão de comportamento do domínio ou
 |------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | ID do link                | \-                                                                                                                                                                                             |
 | MAPI-Id                | \-                                                                                                                                                                                             |
-| System-Only            | True                                                                                                                                                                                           |
-| Tem valor único       | True                                                                                                                                                                                           |
+| System-Only            | Verdadeiro                                                                                                                                                                                           |
+| Tem valor único       | Verdadeiro                                                                                                                                                                                           |
 | É indexado             | Falso                                                                                                                                                                                          |
 | No Catálogo Global      | Falso                                                                                                                                                                                          |
 | Descritor de segurança NT | O:BAG:BAD:S:                                                                                                                                                                                   |
@@ -78,8 +78,8 @@ Esse atributo é usado para acompanhar a versão de comportamento do domínio ou
 |------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | ID do link                | \-                                                                                                                                                                                             |
 | MAPI-Id                | \-                                                                                                                                                                                             |
-| System-Only            | True                                                                                                                                                                                           |
-| Tem valor único       | True                                                                                                                                                                                           |
+| System-Only            | Verdadeiro                                                                                                                                                                                           |
+| Tem valor único       | Verdadeiro                                                                                                                                                                                           |
 | É indexado             | Falso                                                                                                                                                                                          |
 | No Catálogo Global      | Falso                                                                                                                                                                                          |
 | Descritor de segurança NT | O:BAG:BAD:S:                                                                                                                                                                                   |
@@ -99,8 +99,8 @@ Esse atributo é usado para acompanhar a versão de comportamento do domínio ou
 |------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | ID do link                | \-                                                                                                                                                                                             |
 | MAPI-Id                | \-                                                                                                                                                                                             |
-| System-Only            | True                                                                                                                                                                                           |
-| Tem valor único       | True                                                                                                                                                                                           |
+| System-Only            | Verdadeiro                                                                                                                                                                                           |
+| Tem valor único       | Verdadeiro                                                                                                                                                                                           |
 | É indexado             | Falso                                                                                                                                                                                          |
 | No Catálogo Global      | Falso                                                                                                                                                                                          |
 | Descritor de segurança NT | O:BAG:BAD:S:                                                                                                                                                                                   |
@@ -120,8 +120,8 @@ Esse atributo é usado para acompanhar a versão de comportamento do domínio ou
 |------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | ID do link                | \-                                                                                                                                                                                             |
 | MAPI-Id                | \-                                                                                                                                                                                             |
-| System-Only            | True                                                                                                                                                                                           |
-| É de valor único       | True                                                                                                                                                                                           |
+| System-Only            | Verdadeiro                                                                                                                                                                                           |
+| É de valor único       | Verdadeiro                                                                                                                                                                                           |
 | É indexado             | Falso                                                                                                                                                                                          |
 | No catálogo global      | Falso                                                                                                                                                                                          |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                                                                   |
@@ -141,8 +141,8 @@ Esse atributo é usado para acompanhar a versão de comportamento do domínio ou
 |------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | ID do link                | \-                                                                                                                                                                                             |
 | MAPI-Id                | \-                                                                                                                                                                                             |
-| System-Only            | True                                                                                                                                                                                           |
-| É de valor único       | True                                                                                                                                                                                           |
+| System-Only            | Verdadeiro                                                                                                                                                                                           |
+| É de valor único       | Verdadeiro                                                                                                                                                                                           |
 | É indexado             | Falso                                                                                                                                                                                          |
 | No catálogo global      | Falso                                                                                                                                                                                          |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                                                                   |
@@ -162,8 +162,8 @@ Esse atributo é usado para acompanhar a versão de comportamento do domínio ou
 |------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | ID do link                | \-                                                                                                                                                                                             |
 | MAPI-Id                | \-                                                                                                                                                                                             |
-| System-Only            | True                                                                                                                                                                                           |
-| É de valor único       | True                                                                                                                                                                                           |
+| System-Only            | Verdadeiro                                                                                                                                                                                           |
+| É de valor único       | Verdadeiro                                                                                                                                                                                           |
 | É indexado             | Falso                                                                                                                                                                                          |
 | No catálogo global      | Falso                                                                                                                                                                                          |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                                                                   |

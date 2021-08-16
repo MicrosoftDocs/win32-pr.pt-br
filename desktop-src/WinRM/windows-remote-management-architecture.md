@@ -1,6 +1,6 @@
 ---
-title: Arquitetura de Gerenciamento Remoto do Windows
-description: A arquitetura de Gerenciamento Remoto do Windows consiste em componentes nos computadores cliente e servidor.
+title: Windows Arquitetura de gerenciamento remoto
+description: a arquitetura de Gerenciamento Remoto do Windows consiste em componentes nos computadores cliente e servidor.
 ms.assetid: 82e67851-fe46-4bb0-8278-9718b5e0c7ae
 ms.tgt_platform: multiple
 ms.topic: article
@@ -10,16 +10,16 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 0f5576913c5e4a1f2a105fb77e2282dc682c6659
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 889a823c4c67bed29f9ce695d84c893654b541aed76e0c79860e31f24c543662
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103641571"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120121586"
 ---
-# <a name="windows-remote-management-architecture"></a>Arquitetura de Gerenciamento Remoto do Windows
+# <a name="windows-remote-management-architecture"></a>Windows Arquitetura de gerenciamento remoto
 
-A arquitetura de Gerenciamento Remoto do Windows consiste em componentes nos computadores cliente e servidor. A ilustração a seguir mostra os componentes em ambos os computadores, como os componentes interagem com outros componentes e o protocolo que é usado para se comunicar entre os computadores.
+a arquitetura de Gerenciamento Remoto do Windows consiste em componentes nos computadores cliente e servidor. A ilustração a seguir mostra os componentes em ambos os computadores, como os componentes interagem com outros componentes e o protocolo que é usado para se comunicar entre os computadores.
 
 ![arquitetura do WinRM](images/winrm-architecture.png)
 
@@ -77,15 +77,15 @@ Os seguintes componentes do WinRM residem no computador que está respondendo.
 
 -   Driver de IPMI (interface de gerenciamento de plataforma inteligente) e provedor IPMI WMI
 
-    Esses componentes fornecem dados de hardware que são solicitados usando as classes IPMI. Para obter mais informações, consulte [provedor IPMI](/previous-versions/windows/desktop/ipmiprv/ipmi-provider). O hardware do BMC deve ter sido detectado pelo SMBIOS ou pelo dispositivo criado manualmente pelo carregamento do driver. Para obter mais informações, consulte [instalação e configuração para gerenciamento remoto do Windows](installation-and-configuration-for-windows-remote-management.md).
+    Esses componentes fornecem dados de hardware que são solicitados usando as classes IPMI. Para obter mais informações, consulte [provedor IPMI](/previous-versions/windows/desktop/ipmiprv/ipmi-provider). O hardware do BMC deve ter sido detectado pelo SMBIOS ou pelo dispositivo criado manualmente pelo carregamento do driver. para obter mais informações, consulte [instalação e configuração para Gerenciamento Remoto do Windows](installation-and-configuration-for-windows-remote-management.md).
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[Sobre Gerenciamento Remoto do Windows](about-windows-remote-management.md)
+[sobre Gerenciamento Remoto do Windows](about-windows-remote-management.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

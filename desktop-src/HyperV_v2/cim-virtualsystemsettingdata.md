@@ -30,12 +30,12 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: ff2c9725c8469b3e2c29d2e98a708d27e80378f1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1caed7797343eac9babd320af42fd6c9aaaffeff054211cc55bda0d437582d57
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105756933"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119068486"
 ---
 # <a name="cim_virtualsystemsettingdata-class"></a>\_Classe CIM VirtualSystemSettingData
 
@@ -365,7 +365,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-O caminho de arquivo relativo do diretório em que os arquivos de permuta do sistema virtual são armazenados. O caminho relativo é acrescentado ao valor da propriedade **ConfigurationDataRoot** . O formato dessa propriedade é um URI baseado em RFC 2079.
+O caminho do arquivo relativo do diretório em que os arquivos de permuta do sistema virtual são armazenados. O caminho relativo é anexado ao valor da **propriedade ConfigurationDataRoot.** O formato dessa propriedade é um URI baseado no RFC 2079.
 
 </dd> <dt>
 
@@ -378,7 +378,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-O nome exclusivo do sistema na plataforma de virtualização. **VirtualSystemIdentifier** não é o nome do host atribuído à instância do sistema operacional em execução no sistema virtual, nem é um endereço IP ou endereço MAC atribuído a qualquer uma de suas portas de rede.
+O nome exclusivo para o sistema dentro da plataforma de virtualização. **VirtualSystemIdentifier** não é o nome do host atribuído à instância do sistema operacional em execução no sistema virtual, nem é um endereço IP ou endereço MAC atribuído a qualquer uma de suas portas de rede.
 
 O **VirtualSystemIdentifier** pode conter regras específicas de implementação, como padrões simples ou uma expressão regular que pode ser interpretada pela implementação ao definir **VirtualSystemIdentifier**.
 
@@ -396,23 +396,23 @@ Tipo de acesso: Somente leitura
 O tipo do sistema virtual.
 
 > [!Note]  
-> Se o tipo de sistema virtual for desconhecido, esse valor deverá ser definido como "DMTF: Unknown".
+> Se o tipo de sistema virtual for desconhecido, esse valor deverá ser definido como "DMTF:unknown".
 
  
 
-Essa propriedade é formatada usando o seguinte formato de ABNF (Backus Naur Form):
+Essa propriedade é formatada usando o seguinte formato ABNF (Formulário de Naur de Backus Aumentados) :
 
-vs-tipo = DMTF-valor/outros-org-Value/herdado-Value; DMTF-Value = "DMTF:" definindo-org ":" org-vs-Type; Other-org-Value = definindo-org ":" org-vs-Type;
+vs-type = dmtf-value/other-org-value/legacy-value; dmtf-value = "DMTF:" defining-org ":" org-vs-type; other-org-value = defining-org ":" org-vs-type;
 
 O valor do formato ABNF acima é:
 
--   *DMTF-valor*   um valor de propriedade definido pela DMTF e é definido na descrição dessa propriedade.
--   *outro-org-Value*   é um valor de propriedade definido por uma entidade comercial diferente de DMTF e não é definido na descrição dessa propriedade.
--   *Legacy-valor*   um valor de propriedade definido por uma entidade comercial diferente de DMTF e não é definido na descrição dessa propriedade. Esses valores são permitidos, mas recomendamos que sejam preteridos ao longo do tempo.
--   *definindo-org*   um identificador para a entidade de negócios que define o tipo de sistema virtual. Ele deve incluir um nome de direitos autorais, com marcas registradas ou exclusivo de propriedade da entidade de negócios. Não deveria ser "DMTF" e não deve conter dois-pontos.
--   *org-vs-digite*   um identificador para o tipo de sistema virtual dentro da entidade de definição de negócio. Ele deve ser exclusivo na definição-org. org-vs-Type pode usar qualquer caractere permitido para cadeias de caracteres CIM, exceto os seguintes: U0000-U001F (controles Unicode C0), U0020 (espaço), U007F (controles Unicode C0) ou U0080-U009F (controles Unicode C1).
--   Se houver a necessidade de estruturar o valor em segmentos, os segmentos deverão ser separados por dois-pontos.
--   Os valores dessa propriedade devem ser processados com diferenciação de maiúsculas e minúsculas. Eles devem ser processados programaticamente, em vez de serem um nome de exibição e deve ser curto.
+-   *dmtf-value um*   valor da propriedade definido por DMTF e é definido na descrição dessa propriedade.
+-   *other-org-value é*   um valor de propriedade definido por uma entidade de negócios diferente de DMTF e não está definido na descrição dessa propriedade.
+-   *legacy-value*   um valor da propriedade definido por uma entidade de negócios diferente de DMTF e não está definido na descrição dessa propriedade. Esses valores são permitidos, mas recomendados para serem preterido ao longo do tempo.
+-   *defineing-org*   um identificador para a entidade de negócios que define o tipo de sistema virtual. Ele deve incluir um nome protegido por direitos autorais, marcas comerciais ou um nome exclusivo pertencente à entidade de negócios. Ele não deve ser "DMTF" e não deve conter dois-pontos.
+-   *org-vs-type um*   identificador para o tipo de sistema virtual dentro da entidade de negócios que define. Ele deve ser exclusivo em defining-org. org-vs-type pode usar qualquer caractere permitido para cadeias de caracteres CIM, exceto o seguinte: U0000-U001F (controles Unicode C0), U0020 (espaço), U007F (controles Unicode C0) ou controles U0080-U009F (Unicode C1).
+-   Se houver a necessidade de estruturar o valor em segmentos, os segmentos deverão ser separados por um único dois-pontos.
+-   Os valores dessa propriedade devem ser processados de forma sensível a casos. Eles devem ser processados programaticamente, em vez de serem um nome de exibição e devem ser curtos.
 
 </dd> </dl>
 
@@ -424,8 +424,8 @@ O valor do formato ABNF acima é:
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 8<br/>                                                                                    |
 | Servidor mínimo com suporte<br/> | Windows Server 2012<br/>                                                                          |
-| Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Namespace<br/>                | Virtualização \\ raiz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -434,7 +434,7 @@ O valor do formato ABNF acima é:
 
 <dl> <dt>
 
-[**CIM \_ SettingData**](cim-settingdata.md)
+[**Configuração \_ cimData**](cim-settingdata.md)
 </dt> </dl>
 
  

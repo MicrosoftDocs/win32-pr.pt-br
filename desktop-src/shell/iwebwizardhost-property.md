@@ -26,7 +26,7 @@ Define ou recupera o valor atual de uma propriedade.
 
 Essa propriedade é leitura/gravação.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 ```JScript
@@ -48,7 +48,7 @@ Uma variável do [**tipo BSTR**](/previous-versions/windows/desktop/automat/bstr
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho XP\]<br/>                                            |
 | Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                   |
-| parâmetro<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>   |
+| Cabeçalho<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>   |
 | Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl> |
 
 

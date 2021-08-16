@@ -1,7 +1,7 @@
 ---
-description: O método SetIUnknownValue adiciona um novo valor IUnknown (tipo VT UNKNOWN) ou substitui \_ um existente.
+description: O método setiunknownvalue adiciona um novo valor IUnknown (tipo VT \_ desconhecido) ou substitui um existente.
 ms.assetid: 292adf45-439c-4aae-9b17-e4d9ed701eda
-title: Método IPortableDeviceValues::SetIUnknownValue (PortableDeviceTypes.h)
+title: 'Método IPortableDeviceValues:: setiunknownvalue (PortableDeviceTypes. h)'
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -21,9 +21,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118697047"
 ---
-# <a name="iportabledevicevaluessetiunknownvalue-method"></a>Método IPortableDeviceValues::SetIUnknownValue
+# <a name="iportabledevicevaluessetiunknownvalue-method"></a>Método IPortableDeviceValues:: setiunknownvalue
 
-O **método SetIUnknownValue** adiciona um novo **valor IUnknown** (tipo VT UNKNOWN) ou substitui \_ um existente.
+O método **Setiunknownvalue** adiciona um novo valor **IUnknown** (tipo VT \_ desconhecido) ou substitui um existente.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -41,23 +41,23 @@ HRESULT SetIUnknownValue(
 
 <dl> <dt>
 
-*chave* \[ Em\]
+*chave* \[ no\]
 </dt> <dd>
 
-Uma **REFPROPERTYKEY** que especifica o item a ser criado ou substituido.
+Um **REFPROPERTYKEY** que especifica o item a ser criado ou substituído.
 
 </dd> <dt>
 
-*pValue* \[ Em\]
+*valores* \[ no\]
 </dt> <dd>
 
-Um ponteiro para uma interface **IUnknown** que especifica o novo valor. O SDK copia uma referência para a interface enviada e chama **AddRef** nele.
+Um ponteiro para uma interface **IUnknown** que especifica o novo valor. O SDK copia uma referência para a interface enviada e chama **AddRef** nela.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor retornado
 
-O método retorna um **HRESULT.** Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
+O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
 
 
 
@@ -71,7 +71,7 @@ O método retorna um **HRESULT.** Os possíveis valores incluem, mas sem limita�
 
 ## <a name="remarks"></a>Comentários
 
-Se um valor existente tiver a mesma chave especificada pelo parâmetro *key,* ele substituirá o valor existente sem nenhum aviso. A memória de chave existente é liberada adequadamente.
+Se um valor existente tiver a mesma chave especificada pelo parâmetro de *chave* , ele substituirá o valor existente sem nenhum aviso. A memória de chave existente é liberada adequadamente.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -79,8 +79,8 @@ Se um valor existente tiver a mesma chave especificada pelo parâmetro *key,* el
 
 | Requisito | Valor |
 |--------------------|----------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>PortableDeviceTypes.h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>PortableDeviceGUIDs.lib</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>PortableDeviceTypes. h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>PortableDeviceGUIDs. lib</dt> </dl> |
 
 
 
@@ -88,10 +88,10 @@ Se um valor existente tiver a mesma chave especificada pelo parâmetro *key,* el
 
 <dl> <dt>
 
-[**IPortableDeviceValues Interface**](iportabledevicevalues.md)
+[**Interface IPortableDeviceValues**](iportabledevicevalues.md)
 </dt> <dt>
 
-[**IPortableDeviceValues::GetIUnknownValue**](iportabledevicevalues-getiunknownvalue.md)
+[**IPortableDeviceValues:: getiunknownvalue**](iportabledevicevalues-getiunknownvalue.md)
 </dt> </dl>
 
  

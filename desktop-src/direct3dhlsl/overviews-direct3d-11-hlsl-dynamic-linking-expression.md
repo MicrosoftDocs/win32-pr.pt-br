@@ -1,6 +1,6 @@
 ---
-title: Restrições de uso de interface
-description: O hardware de GPU atual não dá suporte a informações de slot variáveis no tempo de execução do sombreador. Como consequência, as referências de interface não podem ser modificadas em uma expressão condicional, como uma instrução If ou switch.
+title: Restrições de uso da interface
+description: O hardware de GPU atual não dá suporte a informações de slot variável no runtime do sombreador. Como consequência, as referências de interface não podem ser modificadas em uma expressão condicional, como uma instrução if ou switch.
 ms.assetid: 95a505d8-3ec4-49b7-bb2b-f29a655e4225
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,20 +9,20 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 8825d192dcb874ce8b148c4ade5c579a55857311
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: eae44bbdb93ab2b3ffa0d09385c56b463192cc68c17e0454f9edd3326f722d29
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104292030"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119672556"
 ---
-# <a name="interface-usage-restrictions"></a>Restrições de uso de interface
+# <a name="interface-usage-restrictions"></a>Restrições de uso da interface
 
-O hardware de GPU atual não dá suporte a informações de slot variáveis no tempo de execução do sombreador. Como consequência, as referências de interface não podem ser modificadas em uma expressão condicional, como uma instrução If ou switch.
+O hardware de GPU atual não dá suporte a informações de slot variável no runtime do sombreador. Como consequência, as referências de interface não podem ser modificadas em uma expressão condicional, como uma instrução if ou switch.
 
-O código do sombreador a seguir ilustra quando essa restrição ocorrerá e uma possível abordagem alternativa.
+O código de sombreador a seguir ilustra quando essa restrição ocorrerá e uma possível abordagem alternativa.
 
-Dadas as seguintes declarações de interface:
+Considerando as seguintes declarações de interface:
 
 
 ```
@@ -43,7 +43,7 @@ B arrayB[6];
 
 
 
-Dadas as seguintes declarações de classe:
+Considerando as seguintes declarações de classe:
 
 
 ```
@@ -78,7 +78,7 @@ class C4 : A, B
 
 
 
-Uma referência de interface não pode ser modificada dentro da expressão condicional (uma instrução If):
+Uma referência de interface não pode ser modificada dentro da expressão condicional (uma instrução if):
 
 
 ```
@@ -110,7 +110,7 @@ float main() : wicked
 
 
 
-Dada a mesma interface e declarações de classe, você pode usar um índice para fornecer a mesma funcionalidade e evitar o loop forçado de desroll.
+Considerando a mesma interface e declarações de classe, você pode usar um índice para fornecer a mesma funcionalidade e evitar o registro de loop forçado.
 
 
 ```
@@ -145,9 +145,9 @@ float main() : wicked
 [Vinculação dinâmica](overviews-direct3d-11-hlsl-dynamic-linking.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

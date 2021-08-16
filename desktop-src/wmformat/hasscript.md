@@ -1,6 +1,6 @@
 ---
 title: HasScript
-description: O atributo HasScript é um atributo em nível de arquivo que especifica se o arquivo contém fluxos de script.
+description: O atributo HasScript é um atributo de nível de arquivo que especifica se o arquivo contém fluxos de script.
 ms.assetid: e94c37ea-e11c-4abd-91d1-8f82612d8cba
 keywords:
 - Formato de mídia do Windows HasScript
@@ -21,7 +21,7 @@ ms.locfileid: "117847629"
 ---
 # <a name="hasscript"></a>HasScript
 
-O atributo **HasScript** é um atributo em nível de arquivo que especifica se o arquivo contém fluxos de script.
+O **atributo HasScript** é um atributo de nível de arquivo que especifica se o arquivo contém fluxos de script.
 
 ## <a name="global-constant"></a>Constante global
 
@@ -29,13 +29,13 @@ g \_ wszWMHasScript
 
 ## <a name="data-type"></a>Tipo de Dados
 
-**WMT \_ tipo \_ bool**
+**TIPO WMT \_ \_ BOOL**
 
 ## <a name="remarks"></a>Comentários
 
-Este é um atributo codificado.
+Esse é um atributo codificado.
 
-Este atributo não pode ser duplicado no nível do arquivo. se esse atributo for usado para um fluxo individual, ele será tratado como metadados personalizados e não transmitirá seu significado normal para os objetos do SDK do formato de mídia Windows.
+Esse atributo não pode ser duplicado no nível do arquivo. Se esse atributo for usado para um fluxo individual, ele será tratado como metadados personalizados e não transmitirá seu significado normal para os objetos do SDK Windows Formato de Mídia.
 
 ## <a name="see-also"></a>Confira também
 

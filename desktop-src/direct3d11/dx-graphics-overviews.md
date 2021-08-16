@@ -4,12 +4,12 @@ description: O guia de programação contém informações sobre como usar o pip
 ms.assetid: 1db500e4-c03d-442a-b429-1599d9591292
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5fdb374d19126f46ed484154b363c975ca9ebe17
-ms.sourcegitcommit: 73417d55867c804274a55abe5ca71bcba7006119
+ms.openlocfilehash: 3baacac4d11ac7c14a726b321b9eccbe9e6ef7cf9147bac80970d947b8e2ac95
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "104294595"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120119746"
 ---
 # <a name="programming-guide-for-direct3d-11"></a>Guia de programação do Direct3D 11
 
@@ -26,7 +26,7 @@ O guia de programação contém informações sobre como usar o pipeline program
 | [Renderização](overviews-direct3d-11-render.md) | Esta seção contém informações sobre várias tecnologias de renderização do Direct3D 11. |
 | [Effect](d3d11-graphics-programming-guide-effects.md) | Um efeito do DirectX é uma coleção de estado de pipeline, definida por expressões escritas em [HLSL](/windows/desktop/direct3dhlsl/dx-graphics-hlsl-reference) e alguma sintaxe específica para a estrutura de efeito. |
 | [Migrando para o Direct3D 11](d3d11-programming-guide-migrating.md) | Esta seção fornece informações para migrar para o Direct3D 11 de uma versão anterior do Direct3D. |
-| [Interfaces de vídeo Direct3D](direct3d-video-interfaces.md) | Este tópico lista as interfaces de vídeo do Direct3D que estão disponíveis no Direct3D 9Ex e que têm suporte no Windows 7 e em versões posteriores dos sistemas operacionais cliente Windows e no Windows Server 2008 R2 e em versões posteriores dos sistemas operacionais Windows Server. |
+| [Interfaces de vídeo Direct3D](direct3d-video-interfaces.md) | este tópico lista as interfaces de vídeo do direct3d que estão disponíveis no direct3d 9ex e que têm suporte no Windows 7 e versões posteriores de sistemas operacionais Windows cliente e no Windows server 2008 R2 e em versões posteriores dos sistemas operacionais Windows Server. |
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

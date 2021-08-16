@@ -1,6 +1,6 @@
 ---
-title: Alças de associação explícitas
-description: Para controle máximo sobre o processo de associação, os aplicativos cliente/servidor podem usar alças de associação explícitas.
+title: Identificadores de associação explícitos
+description: Para obter o controle máximo sobre o processo de associação, os aplicativos cliente/servidor podem usar identificadores de ligação explícitos.
 ms.assetid: e711ce37-92f0-4e60-a126-148c27662c26
 ms.topic: article
 ms.date: 05/31/2018
@@ -11,13 +11,13 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118930015"
 ---
-# <a name="explicit-binding-handles"></a>Alças de associação explícitas
+# <a name="explicit-binding-handles"></a>Identificadores de associação explícitos
 
-Para controle máximo sobre o processo de associação, os aplicativos cliente/servidor podem usar alças de associação explícitas. Assim como os alças implícitos, os alças de associação explícita permitem que seu aplicativo cliente selecione um servidor para executar suas chamadas. Além disso, os alças de associação explícita permitem que seu aplicativo cliente/servidor crie uma sessão de comunicação RPC autenticada. Com alças explícitas, o cliente pode se conectar a mais de um servidor e executar procedimentos remotos em vários servidores. Aplicativos cliente multithread e assíncronos podem até mesmo se conectar a vários servidores e executar vários procedimentos remotos ao mesmo tempo.
+Para obter o controle máximo sobre o processo de associação, os aplicativos cliente/servidor podem usar identificadores de ligação explícitos. Como os identificadores implícitos, os identificadores de ligação explícitos permitem que o aplicativo cliente selecione um servidor para executar suas chamadas. Além disso, os identificadores de ligação explícitos permitem que o aplicativo cliente/servidor crie uma sessão de comunicação RPC autenticada. Com identificadores explícitos, o cliente pode se conectar a mais de um servidor e executar procedimentos remotos em vários servidores. Aplicativos cliente multithread e assíncronos podem até mesmo se conectar a vários servidores e executar vários procedimentos remotos ao mesmo tempo.
 
-O aplicativo cliente deve passar o handle explícito como um parâmetro para cada chamada de procedimento remoto. Para estar em conformidade com o padrão OSF, o handle deve ser especificado como o primeiro parâmetro em cada procedimento remoto. No entanto, as extensões da Microsoft para RPC permitem que você especifique o alça de associação em outras posições. Para obter mais informações, consulte [Microsoft RPC Binding-Handle Extensions](microsoft-rpc-binding-handle-extensions.md).
+Seu aplicativo cliente deve passar o identificador explícito como um parâmetro para cada chamada de procedimento remoto. Para estar de acordo com o padrão uso, o identificador deve ser especificado como o primeiro parâmetro em cada procedimento remoto. No entanto, as extensões da Microsoft para RPC permitem que você especifique o identificador de associação em outras posições. Para obter mais informações, consulte [extensões de Binding-Handle RPC da Microsoft](microsoft-rpc-binding-handle-extensions.md).
 
-Para criar um handle explícito, declare o handle como um parâmetro para as operações remotas no arquivo IDL. O [exemplo Hello, World](tutorial.md) pode ser redefinido para usar um handle explícito, conforme mostrado:
+Para criar um identificador explícito, declare o identificador como um parâmetro para as operações remotas no arquivo IDL. O [exemplo Hello, World](tutorial.md) pode ser redefinido para usar um identificador explícito, conforme mostrado:
 
 ``` syntax
 /* IDL file for explicit handles */
@@ -33,7 +33,7 @@ interface hello
 }
 ```
 
-Você pode combinar alças explícitas e implícitas em uma única interface. Se uma função tiver um alçado explícito em sua lista de parâmetros, esse manipular será usado. Se uma função em uma interface usando alças implícitas não especificar um handle explícito, o handle implícito padrão será usado.
+Você pode combinar identificadores explícitos e implícitos em uma única interface. Se uma função tiver um identificador explícito em sua lista de parâmetros, esse identificador será usado. Se uma função em uma interface que usa identificadores implícitos não especificar um identificador explícito, o identificador implícito padrão será usado.
 
  
 

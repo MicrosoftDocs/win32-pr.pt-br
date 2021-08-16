@@ -1,8 +1,8 @@
 ---
 title: atributo system_handle
-description: O atributo \ system_handle \ especifica um tipo de identificador definido pelo sistema.
+description: O atributo \ system_handle\ especifica um tipo de identificador definido pelo sistema.
 keywords:
-- system_handle do atributo MIDL
+- system_handle atributo MIDL
 topic_type:
 - apiref
 api_name:
@@ -20,7 +20,7 @@ ms.locfileid: "118641262"
 ---
 # <a name="system_handle-attribute"></a>atributo system_handle
 
-O \[  \] atributo system_handle especifica um tipo de identificador definido pelo sistema que representa o acesso a um objeto do sistema.
+O system_handle atributo especifica um tipo de identificador definido \[  \] pelo sistema que representa o acesso a um objeto do sistema.
 
 ``` syntax
 [system_handle(system-handle-type[,optional-access-mask])]
@@ -30,60 +30,60 @@ O \[  \] atributo system_handle especifica um tipo de identificador definido pel
 
 <dl> <dt>
 
-*System-identificador-Type* 
+*system-handle-type* 
 </dt> <dd>
 
 Especifica uma das opções de tipo de identificador do sistema.
 
 As opções válidas são:
-* [sh_composition](sh-composition.md) -um identificador de superfície DirectComposition
-* [sh_event](sh-event.md) -um objeto de evento nomeado ou sem nome
-* [sh_file](sh-file.md) -um arquivo ou dispositivo de e/s
-* [sh_job](sh-job.md) -um objeto de trabalho
-* [sh_mutex](sh-mutex.md) -um objeto mutex nomeado ou sem nome
-* [sh_pipe](sh-pipe.md) -um objeto de pipe nomeado ou anônimo
-* [sh_process](sh-process.md) -um objeto de processo
-* [sh_reg_key](sh-reg-key.md) -uma chave do registro
-* [sh_section](sh-section.md) -uma seção de memória compartilhada
-* [sh_semaphore](sh-semaphore.md) -um objeto de semáforo nomeado ou sem nome
-* [sh_socket](sh-socket.md) -um objeto de soquete Winsock
-* [sh_thread](sh-thread.md) -um objeto de thread
-* [sh_token](sh-token.md) -um objeto de token de acesso
+* [sh_composition](sh-composition.md) - um alça de superfície DirectComposition
+* [sh_event](sh-event.md) - um objeto de evento nomeado ou sem nome
+* [sh_file](sh-file.md) - um arquivo ou dispositivo de E/S
+* [sh_job](sh-job.md) - um objeto de trabalho
+* [sh_mutex](sh-mutex.md) - um objeto mutex nomeado ou sem nome
+* [sh_pipe](sh-pipe.md) - um objeto de pipe anônimo ou nomeado
+* [sh_process](sh-process.md) - um objeto de processo
+* [sh_reg_key](sh-reg-key.md) - uma chave do Registro
+* [sh_section](sh-section.md) - uma seção de memória compartilhada
+* [sh_semaphore](sh-semaphore.md) - um objeto de semáforo nomeado ou sem nome
+* [sh_socket](sh-socket.md) - um objeto de soquete WinSock
+* [sh_thread](sh-thread.md) - um objeto de thread
+* [sh_token](sh-token.md) - um objeto de token de acesso
 
 </dd> <dt>
 
-*opcional-máscara de acesso*
+*optional-access-mask*
 </dt> <dd>
 
-Opcionalmente, solicita direitos de acesso específicos aplicados ao identificador duplicado. Por padrão, quando não for especificado, o identificador será duplicado com o mesmo acesso. 
+Opcionalmente, solicita direitos de acesso específicos aplicados ao alça duplicado. Por padrão, quando isso não for especificado, o handle será duplicado com o mesmo acesso. 
 
-Para especificar um nível diferente de acesso, use direitos de acesso específicos do objeto correspondente ao objeto do sistema subjacente selecionado.
+Para especificar um nível diferente de acesso, use direitos de acesso específicos do objeto correspondentes ao objeto do sistema subjacente selecionado.
 
-Mais informações sobre como os direitos de acesso são propagados durante a duplicação podem ser encontradas na documentação do [DuplicateHandle](/windows/win32/api/handleapi/nf-handleapi-duplicatehandle) .
+Mais informações sobre como os direitos de acesso são propagados durante a duplicação podem ser encontradas na [documentação duplicateHandle.](/windows/win32/api/handleapi/nf-handleapi-duplicatehandle)
 
-Links para listas de direitos de acesso para cada tipo de objeto podem ser encontrados na referência *DuplicateHandle* , bem como na página **Ver também** os cabeçalhos de cada `sh_*` parâmetro.
+Links para listas de direitos de acesso para cada tipo de objeto podem ser encontrados na referência *DuplicateHandle,* bem como na página Ver também **os** títulos de cada `sh_*` parâmetro.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-Para usar esse atributo, o `-target` sinalizador deve ser definido como `NT100` (ou superior) durante a execução de midl.exe.
+Para usar esse atributo, o `-target` sinalizador deve ser definido como `NT100` (ou superior) ao executar midl.exe.
 
-Identificadores do sistema são identificadores que são definidos pelo sistema operacional para fornecer acesso a um recurso do sistema. O tipo específico do objeto por trás do identificador deve ser especificado ao declarar o atributo.
+Os alças do sistema são alças definidas pelo sistema operacional para fornecer acesso a um recurso do sistema. O tipo específico do objeto por trás do identificador deve ser especificado ao declarar o atributo.
 
-Para um identificador marcado `[in]` , o identificador será duplicado no procedimento remoto e permanecerá válido pela duração do procedimento. No retorno do procedimento remoto, o identificador duplicado é liberado. Para manter o acesso ao objeto subjacente, o aplicativo remoto deve duplicar o identificador em seu próprio espaço de endereço.
+Para um alça marcado como , o handle será duplicado no procedimento remoto e permanecerá válido durante `[in]` esse procedimento. No retorno do procedimento remoto, o alça duplicado é liberado. Para manter o acesso ao objeto subjacente, o aplicativo remoto deve duplicar o identificador em seu próprio espaço de endereço.
 
-Por outro lado, para um identificador marcado `[out]` , quando um procedimento remoto retorna um identificador de uma chamada, o procedimento remoto perderá a propriedade dele. Para manter o acesso ao objeto subjacente, o procedimento remoto deve duplicar o identificador e retornar a duplicata. O identificador retornado então se torna de Propriedade do chamador que assume uma responsabilidade de fechá-lo quando o acesso ao objeto do sistema subjacente não é mais necessário.
+Por outro lado, para um alça marcado como , quando um procedimento remoto retorna um handle de uma chamada, o procedimento remoto perderá `[out]` a propriedade dele. Para manter o acesso ao objeto subjacente, o procedimento remoto deve duplicar o identificador e retornar a duplicata. O identificador retornado passa a ser de propriedade do chamador que assume a responsabilidade de fechar quando o acesso ao objeto do sistema subjacente não é mais necessário.
 
-Como se trata de um mecanismo para retransmitir o acesso a um objeto do sistema, esse atributo só é aplicável a chamadas entre procedimentos no mesmo computador.
+Como esse é um mecanismo para retransmitir o acesso a um objeto do sistema, esse atributo só é aplicável a chamadas entre procedimentos no mesmo computador.
 
-Os parâmetros de criação e acesso fornecidos ao objeto subjacente por trás do identificador do sistema em sua criação determinarão se ele pode ser empacotado com êxito para o contexto do procedimento remoto.
+Os parâmetros de criação e acesso dados ao objeto subjacente por trás do identificador do sistema em sua criação determinarão se ele pode ser realizado com êxito no contexto do procedimento remoto.
 
-Uma matriz de `system_handle` pode ser passada para dentro ou para fora com a sintaxe encontrada na documentação do [**atributo size_is**](size-is.md) .
+Uma matriz de pode ser passada para dentro ou para fora com a sintaxe encontrada na `system_handle` [**documentação size_is atributo.**](size-is.md)
 
 ## <a name="examples"></a>Exemplos
 
-Os exemplos a seguir são vários usos de `system_handle` . Para obter um exemplo completo, consulte o exemplo [SystemHandlePassing](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/SystemHandlePassing) .
+Os exemplos a seguir usam vários usos de `system_handle` . Para ver um exemplo completo, consulte o [exemplo SystemHandlePassing.](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/SystemHandlePassing)
 
 ```c
 interface MyInterface : IUnknown                         
@@ -102,7 +102,7 @@ interface MyInterface : IUnknown
 
 | &nbsp; | &nbsp; |
 |-|-|
-| Cliente mínimo com suporte | Windows 10 Atualização de aniversário (versão 1607, Build 14393) |
+| Cliente mínimo com suporte | Windows 10 Atualização de aniversário (versão 1607, build 14393) |
 | Servidor mínimo com suporte | Windows Server 2016 (build 14393) |
 
 ## <a name="see-also"></a>Confira também
@@ -116,16 +116,16 @@ interface MyInterface : IUnknown
 [opção /target](./-target.md)
 </dt> <dt>
 
-[Associação e identificadores](../Rpc/binding-and-handles.md)
+[Associação e alças](../Rpc/binding-and-handles.md)
 </dt> <dt>
 
-[Identificadores e objetos](../sysinfo/handles-and-objects.md)
+[Alças e objetos](../sysinfo/handles-and-objects.md)
 </dt> <dt>
 
-[Arquivo de definição de interface (IDL)](interface-definition-idl-file.md)
+[Arquivo IDL (definição de interface)](interface-definition-idl-file.md)
 </dt> <dt>
 
-[**DuplicateHandle**](/windows/win32/api/handleapi/nf-handleapi-duplicatehandle)
+[**Duplicatehandle**](/windows/win32/api/handleapi/nf-handleapi-duplicatehandle)
 </dt> <dt>
 
 [Descritores de segurança](../secauthz/security-descriptors.md)

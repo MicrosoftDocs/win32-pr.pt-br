@@ -4,12 +4,12 @@ ms.assetid: 9f2c18ec-3684-42a8-a3df-5f8827b27642
 title: Televisão analógica
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 33af8ba94831afed59d783598dbf6bc0eaee0ec6
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 886c2b3f93ca70fb4a533f131611431c4a15df51169f70ed49f321c0ccfc8c2d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104087516"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117824750"
 ---
 # <a name="analog-television"></a>Televisão analógica
 
@@ -28,7 +28,7 @@ O diagrama a seguir mostra um grafo de filtro típico para visualização de tel
 -   Se o cartão sintonizador tiver mais de uma entrada física, o filtro [Crossbar de vídeo analógico](analog-video-crossbar-filter.md) permitirá que o aplicativo selecione qual entrada é decodificada e renderizada.
 -   O filtro de [captura de vídeo WDM](wdm-video-capture-filter.md) entrega o fluxo de vídeo digitalizado.
 
-O construtor de grafo de captura insere automaticamente todos os filtros necessários para o upstream a partir do filtro de captura.
+o construtor de Graph de captura insere automaticamente todos os filtros necessários para o upstream a partir do filtro de captura.
 
 Esta seção contém os seguintes tópicos:
 

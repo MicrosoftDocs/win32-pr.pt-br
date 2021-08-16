@@ -54,7 +54,7 @@ Um controle deslizante dá suporte às seguintes propriedades de [**IAccessible*
 
     
 
-    | Parte do controle deslizante                    | Name                                |
+    | Parte do controle deslizante                    | Nome                                |
     |--------------------------------|-------------------------------------|
     | Janela de controle deslizante                  | Controle de texto estático usado como um rótulo |
     | Thumb Slider                   | Propostas                          |
@@ -69,7 +69,7 @@ Um controle deslizante dá suporte às seguintes propriedades de [**IAccessible*
 
     
 
-    | Parte do controle deslizante                              | Name                                |
+    | Parte do controle deslizante                              | Nome                                |
     |------------------------------------------|-------------------------------------|
     | Janela de controle deslizante                            | Controle de texto estático usado como um rótulo |
     | Thumb Slider                             | Propostas                          |

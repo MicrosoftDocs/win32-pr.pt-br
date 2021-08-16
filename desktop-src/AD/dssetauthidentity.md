@@ -1,6 +1,6 @@
 ---
-title: Função DsSetAuthIdentity (Ntdsbcli. h)
-description: Define o contexto de segurança no qual as APIs de backup do diretório são chamadas.
+title: Função DsSetAuthIdentity (Ntdsbcli.h)
+description: Define o contexto de segurança sob o qual as APIs de backup de diretório são chamadas.
 ms.assetid: bfa2f847-6fe3-4f9b-bafa-acf6a7c861d9
 ms.tgt_platform: multiple
 keywords:
@@ -26,9 +26,9 @@ ms.locfileid: "118695501"
 ---
 # <a name="dssetauthidentity-function"></a>Função DsSetAuthIdentity
 
-\[Essa função está disponível para uso nos sistemas operacionais especificados na seção requisitos. Ele poderá ser alterado ou ficar indisponível em versões subsequentes. a partir do Windows Vista, use [Serviço de Cópias de Sombra de Volume (VSS)](../vss/volume-shadow-copy-service-overview.md) em vez disso.\]
+\[Essa função está disponível para uso nos sistemas operacionais especificados na seção Requisitos. Ele poderá ser alterado ou ficar indisponível em versões subsequentes. Começando com Windows Vista, use [Serviço de Cópias de Sombra de Volume (VSS)](../vss/volume-shadow-copy-service-overview.md) em vez disso.\]
 
-A função **DsSetAuthIdentity** define o contexto de segurança sob o qual as APIs de backup do diretório são chamadas.
+A **função DsSetAuthIdentity** define o contexto de segurança sob o qual as APIs de backup de diretório são chamadas.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -47,21 +47,21 @@ HRESULT DsSetAuthIdentity(
 
 <dl> <dt>
 
-*szUserName* \[ no\]
+*szUserName* \[ Em\]
 </dt> <dd>
 
 A cadeia de caracteres terminada em nulo que especifica o nome de usuário.
 
 </dd> <dt>
 
-*szDomainName* \[ no\]
+*szDomainName* \[ Em\]
 </dt> <dd>
 
-A cadeia de caracteres terminada em nulo que especifica o nome do domínio ao qual o usuário pertence.
+A cadeia de caracteres terminada em nulo que especifica o nome do domínio ao que o usuário pertence.
 
 </dd> <dt>
 
-*szPassword* \[ no\]
+*szPassword* \[ Em\]
 </dt> <dd>
 
 A cadeia de caracteres terminada em nulo que especifica a senha do usuário no domínio especificado.
@@ -70,7 +70,7 @@ A cadeia de caracteres terminada em nulo que especifica a senha do usuário no d
 
 ## <a name="return-value"></a>Valor retornado
 
-Se for bem-sucedido, retorna um código de êxito **HRESULT** padrão; caso contrário, um código de falha será retornado.
+Se for bem-sucedido, retornará um código **de sucesso HRESULT** padrão; caso contrário, um código de falha será retornado.
 
 ## <a name="remarks"></a>Comentários
 
@@ -84,8 +84,8 @@ Se **DsSetAuthIdentity** não for chamado, o contexto de segurança do processo 
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| parâmetro<br/>                   | <dl> <dt>Ntdsbcli. h</dt> </dl>   |
-| Biblioteca<br/>                  | <dl> <dt>Ntdsbcli. lib</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Ntdsbcli.h</dt> </dl>   |
+| Biblioteca<br/>                  | <dl> <dt>Ntdsbcli.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Ntdsbcli.dll</dt> </dl> |
 | Nomes Unicode e ANSI<br/>   | **DsSetAuthIdentityW** (Unicode) e **DsSetAuthIdentityA** (ANSI)<br/>           |
 
@@ -95,7 +95,7 @@ Se **DsSetAuthIdentity** não for chamado, o contexto de segurança do processo 
 
 <dl> <dt>
 
-[Fazendo backup e restaurando um servidor de Active Directory](backing-up-and-restoring-an-active-directory-server.md)
+[Fazer o back-up e restaurar um servidor do Active Directory](backing-up-and-restoring-an-active-directory-server.md)
 </dt> <dt>
 
 [Funções de backup de diretório](directory-backup-functions.md)

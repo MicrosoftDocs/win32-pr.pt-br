@@ -4,12 +4,12 @@ ms.assetid: 3a2796c8-1a39-49eb-98e1-c9e06c61f397
 title: Invocando métodos de serviço
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 15b9540cf7378e13d56af2611d6216897c6750f6
-ms.sourcegitcommit: 0f7a8198bacd5493ab1e78a9583c7a3578794765
+ms.openlocfilehash: 0553e1490a6f8d0903756767397c30c2e1137a16a80609ed3a22da69188f799e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110424196"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117843103"
 ---
 # <a name="invoking-service-methods"></a>Invocando métodos de serviço
 
@@ -31,11 +31,11 @@ Quando o usuário escolhe a opção "9" na linha de comando, o aplicativo invoca
 
 Os métodos de serviço encapsulam a funcionalidade que cada serviço define e implementa. Eles são exclusivos de cada tipo de serviço e são representados por um GUID. Por exemplo, o serviço de contatos define um método **BeginSync** que os aplicativos chamam para preparar o dispositivo para sincronizar objetos de contato e um método **endsync** para notificar o dispositivo de que a sincronização foi concluída. Os aplicativos executam um método chamando [**IPortableDeviceServiceMethods:: Invoke**](/windows/desktop/api/PortableDeviceAPI/nf-portabledeviceapi-iportabledeviceservicemethods-invoke).
 
-Os métodos de serviço não devem ser confundidos com comandos WPD. Os comandos WPD fazem parte da DDI (interface de driver de dispositivo) Standard WPD e são o mecanismo de comunicação entre um aplicativo WPD e o driver. Os comandos são predefinidos, agrupados por categorias, por exemplo, **WPD \_ CATEGORY \_ COMMON** e são representados por uma **estrutura PROPERTYKEY.** Um aplicativo envia comandos para o driver de dispositivo chamando [**IPortableDeviceService::SendCommand**](/windows/desktop/api/PortableDeviceApi/nf-portabledeviceapi-iportabledevice-sendcommand). Para obter mais informações, consulte o tópico Comandos.
+Os métodos de serviço não devem ser confundidos com comandos WPD. Os comandos WPD fazem parte da DDI (interface de driver de dispositivo) Standard WPD e são o mecanismo de comunicação entre um aplicativo WPD e o driver. Os comandos são predefinidos, agrupados por categorias, por exemplo, a **categoria de WPD \_ \_ comum** e são representados por uma estrutura **PROPERTYKEY** . Um aplicativo envia comandos para o driver de dispositivo chamando [**IPortableDeviceService:: SendCommand**](/windows/desktop/api/PortableDeviceApi/nf-portabledeviceapi-iportabledevice-sendcommand). Para obter mais informações, consulte o tópico comandos.
 
-O **método InvokeMethods** invoca o método [**IPortableDeviceService::Methods**](/windows/desktop/api/PortableDeviceAPI/nf-portabledeviceapi-iportabledeviceservice-capabilities) para recuperar uma interface [**IPortableDeviceServiceMethods.**](/windows/desktop/api/PortableDeviceAPI/nn-portabledeviceapi-iportabledeviceservicecapabilities) Usando essa interface, ele invoca os métodos **BeginSync** e **EndSync** chamando o [**método IPortableDeviceServiceMethods::Invoke.**](/windows/desktop/api/PortableDeviceAPI/nf-portabledeviceapi-iportabledeviceservicecapabilities-getsupportedmethods) Sempre que ele chama **Invoke**, o aplicativo fornece o REFGUID para o método invocado.
+O método **invokemethods** invoca o método [**IPortableDeviceService:: Methods**](/windows/desktop/api/PortableDeviceAPI/nf-portabledeviceapi-iportabledeviceservice-capabilities) para recuperar uma interface [**IPortableDeviceServiceMethods**](/windows/desktop/api/PortableDeviceAPI/nn-portabledeviceapi-iportabledeviceservicecapabilities) . Usando essa interface, ele invoca os métodos **BeginSync** e **endsync** chamando o método [**IPortableDeviceServiceMethods:: Invoke**](/windows/desktop/api/PortableDeviceAPI/nf-portabledeviceapi-iportabledeviceservicecapabilities-getsupportedmethods) . Cada vez que chama **Invoke**, o aplicativo fornece o REFGUID para o método que é invocado.
 
-O código a seguir usa **o método InvokeMethods.**
+O código a seguir usa o método **invokemethods** .
 
 
 ```C++
