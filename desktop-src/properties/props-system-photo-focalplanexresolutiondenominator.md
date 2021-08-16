@@ -1,7 +1,7 @@
 ---
 description: O denominador de PKEY \_ Photo \_ FocalPlaneXResolution.
 ms.assetid: 54aaf800-6685-4945-976f-a9f1c25aa523
-title: System. Photo. FocalPlaneXResolutionDenominator
+title: System.Photo.FocalPlaneXResolutionDenominator
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 1c9970cdee3d658edfbeda2c8e36e11e495ec8675570e1c64f80db1133a5819f
@@ -11,7 +11,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118229173"
 ---
-# <a name="systemphotofocalplanexresolutiondenominator"></a>System. Photo. FocalPlaneXResolutionDenominator
+# <a name="systemphotofocalplanexresolutiondenominator"></a>System.Photo.FocalPlaneXResolutionDenominator
 
 O denominador de PKEY \_ Photo \_ FocalPlaneXResolution.
 
@@ -32,13 +32,13 @@ propertyDescription
 
 ## <a name="remarks"></a>Comentários
 
-Os valores de PKEY são definidos em Propkey. h.
+Os valores PKEY são definidos em Propkey.h.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[propertyDescription](./propdesc-schema-propertydescription.md)
+[Propertydescription](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -47,19 +47,19 @@ Os valores de PKEY são definidos em Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[numberFormat](./propdesc-schema-numberformat.md)
+[Numberformat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -74,7 +74,7 @@ Os valores de PKEY são definidos em Propkey. h.
 [editControl](./propdesc-schema-editcontrol.md)
 </dt> <dt>
 
-[filterControl](./propdesc-schema-filtercontrol.md)
+[Filtercontrol](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
 [queryControl](./propdesc-schema-querycontrol.md)

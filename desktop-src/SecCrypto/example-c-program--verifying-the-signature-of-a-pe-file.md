@@ -1,7 +1,7 @@
 ---
 description: A API WinVerifyTrust pode ser usada para verificar a assinatura de um arquivo executável portátil.
 ms.assetid: dd53bd44-5dbf-44e9-9945-093995508f44
-title: 'Programa de exemplo C: verificando a assinatura de um arquivo PE'
+title: 'Exemplo de programa C: verificando a assinatura de um arquivo PE'
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: ec2f2aa5261924fcb9744848f4d9455b2aad69c28ad03360370f621886a9339d
@@ -11,7 +11,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117765494"
 ---
-# <a name="example-c-program-verifying-the-signature-of-a-pe-file"></a>Programa de exemplo C: verificando a assinatura de um arquivo PE
+# <a name="example-c-program-verifying-the-signature-of-a-pe-file"></a>Exemplo de programa C: verificando a assinatura de um arquivo PE
 
 A API [**WinVerifyTrust**](/windows/desktop/api/Wintrust/nf-wintrust-winverifytrust) pode ser usada para verificar a assinatura de um arquivo executável portátil.
 

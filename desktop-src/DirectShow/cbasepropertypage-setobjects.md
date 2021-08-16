@@ -1,7 +1,7 @@
 ---
-description: 'O método SetObjects fornece ponteiros IUnknown para os objetos associados à página de propriedades. Esse método implementa o método IPropertyPage:: SetObjects.'
+description: O método SetObjects fornece ponteiros IUnknown para os objetos associados à página de propriedades. Esse método implementa o método IPropertyPage::SetObjects.
 ms.assetid: 11ca1e70-772c-414e-9647-7e4c4084c0d3
-title: Método CBasePropertyPage. SetObjects (cProp. h)
+title: Método CBasePropertyPage.SetObjects (Cprop.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -23,9 +23,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117823021"
 ---
-# <a name="cbasepropertypagesetobjects-method"></a>Método CBasePropertyPage. SetObjects
+# <a name="cbasepropertypagesetobjects-method"></a>Método CBasePropertyPage.SetObjects
 
-O `SetObjects` método fornece ponteiros **IUnknown** para os objetos associados à página de propriedades. Esse método implementa o método **IPropertyPage:: SetObjects** .
+O `SetObjects` método fornece **ponteiros IUnknown** para os objetos associados à página de propriedades. Esse método implementa o **método IPropertyPage::SetObjects.**
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -43,31 +43,31 @@ HRESULT SetObjects(
 
 <dl> <dt>
 
-*cObjects* 
+*Cobjects* 
 </dt> <dd>
 
-Especifica o número de ponteiros **IUnknown** na matriz especificada por *ppunk*.
+Especifica o número de **ponteiros IUnknown** na matriz especificada por *ppUnk.*
 
 </dd> <dt>
 
 *ppUnk* 
 </dt> <dd>
 
-Especifica uma matriz de ponteiros **IUnknown** .
+Especifica uma matriz de **ponteiros IUnknown.**
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor retornado
 
-Retorna um valor **HRESULT** . Os possíveis valores incluem os seguintes.
+Retorna um **valor HRESULT.** Os possíveis valores incluem os seguintes.
 
 
 
 | Código de retorno                                                                                  | Descrição                           |
 |----------------------------------------------------------------------------------------------|---------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>         | Êxito.<br/>                   |
-| <dl> <dt>**\_ponteiro E**</dt> </dl>    | Argumento de ponteiro **nulo** .<br/> |
-| <dl> <dt>**E \_ inesperado**</dt> </dl> | Falha inesperada.<br/>        |
+| <dl> <dt>**PONTEIRO \_ E**</dt> </dl>    | Argumento de ponteiro **NULL.**<br/> |
+| <dl> <dt>**E \_ UNEXPECTED**</dt> </dl> | Falha inesperada.<br/>        |
 
 
 
@@ -75,9 +75,9 @@ Retorna um valor **HRESULT** . Os possíveis valores incluem os seguintes.
 
 ## <a name="remarks"></a>Comentários
 
-Embora *ppunk* especifique uma matriz de ponteiros **IUnknown** , a classe **CBasePropertyPage** é projetada apenas para dar suporte a um objeto associado. Se *CObjects* for maior que 1, o método retornará E será \_ inesperado.
+Embora *ppUnk* especifique uma matriz de ponteiros **IUnknown,** a classe **CBasePropertyPage** foi projetada apenas para dar suporte a um objeto associado. Se *cObjects for* maior que 1, o método retornará E \_ UNEXPECTED.
 
-Se *CObjects* for igual a 1, esse método chamará o método [**CBasePropertyPage:: OnConnect**](cbasepropertypage-onconnect.md) . Se *CObjects* for igual a 0, esse método chamará o método [**CBasePropertyPage:: OnDisconnect**](cbasepropertypage-ondisconnect.md) . A classe derivada deve substituir esses dois métodos; para obter detalhes, consulte os comentários para esses métodos.
+Se *cObjects* for igual a 1, esse método chamará o [**método CBasePropertyPage::OnConnect.**](cbasepropertypage-onconnect.md) Se *cObjects* for igual a 0, esse método chamará o [**método CBasePropertyPage::OnDisconnect.**](cbasepropertypage-ondisconnect.md) A classe derivada deve substituir ambos os métodos; Para obter detalhes, consulte os comentários para esses métodos.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -85,8 +85,8 @@ Se *CObjects* for igual a 1, esse método chamará o método [**CBasePropertyPag
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Cprop. h (incluir Fluxos. h)</dt> </dl>                                                                                     |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Cprop.h (incluir Fluxos.h)</dt> </dl>                                                                                     |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

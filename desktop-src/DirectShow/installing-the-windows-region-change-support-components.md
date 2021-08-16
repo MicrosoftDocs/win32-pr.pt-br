@@ -1,21 +1,21 @@
 ---
-description: Instalando os componentes de suporte de alteração de região do Windows
+description: instalando os componentes de suporte de alteração de região Windows
 ms.assetid: af0e5e19-f4de-4932-a42b-590a1131e0f6
-title: Instalando os componentes de suporte de alteração de região do Windows
+title: instalando os componentes de suporte de alteração de região Windows
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8affe2055485965198a46bdb748a25a295e2c71e
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 36b56f8cc71298621f21b40b8b8d59764e4f6b9b6dfd17215c33a4a2f46ca4cb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105810172"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118398004"
 ---
-# <a name="installing-the-windows-region-change-support-components"></a>Instalando os componentes de suporte de alteração de região do Windows
+# <a name="installing-the-windows-region-change-support-components"></a>instalando os componentes de suporte de alteração de região Windows
 
-Os desenvolvedores de aplicativos podem utilizar o suporte de alteração de região de DVD interno do Windows para alterar a região dentro dos aplicativos de reprodução de DVD.
+os desenvolvedores de aplicativos podem utilizar o suporte de alteração de região de dvd incorporado em Windows para alterar a região dentro dos aplicativos de reprodução de dvd.
 
-No Windows 2000 e posterior, o componente que fornece o suporte de alteração de região do DVD está no storprop.dll da DLL (disponível em% windir% \\ System32). Essa DLL é instalada por padrão e nenhuma etapa adicional é necessária para garantir que essa DLL esteja disponível.
+no Windows 2000 e posterior, o componente que fornece o suporte de alteração de região do DVD está no storprop.dll DLL (disponível em% windir% \\ system32). Essa DLL é instalada por padrão e nenhuma etapa adicional é necessária para garantir que essa DLL esteja disponível.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

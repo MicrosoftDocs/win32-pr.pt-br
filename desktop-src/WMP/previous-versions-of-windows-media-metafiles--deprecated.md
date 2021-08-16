@@ -1,13 +1,13 @@
 ---
-title: Versões anteriores de metaarquivos do Windows Media (preterido)
-description: Versões anteriores de metaarquivos do Windows Media (preterido)
+title: versões anteriores de metaarquivos de mídia do Windows (preterido)
+description: versões anteriores de metaarquivos de mídia do Windows (preterido)
 ms.assetid: f93b9735-6aa3-48ed-ae80-0485acea3167
 keywords:
-- Metaarquivos do Windows Media, versões
+- Windows Metaarquivos de mídia, versões
 - metaarquivos, versões
-- Metaarquivos do Windows Media, versões anteriores
+- Windows Metaarquivos de mídia, versões anteriores
 - metaarquivos, versões anteriores
-- versões de metaarquivos do Windows Media
+- versões de metaarquivos de mídia Windows
 ms.topic: article
 ms.date: 05/31/2018
 topic_type:
@@ -15,18 +15,18 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 79020b282180f0e17b438cbc52f6ed2fe2a4f559
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 35e46d7fb6a896b9d2ca841ac0cc83cc4875d5ac863f7cd5be520460e0f492ec
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104005168"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118334489"
 ---
-# <a name="previous-versions-of-windows-media-metafiles-deprecated"></a>Versões anteriores de metaarquivos do Windows Media (preterido)
+# <a name="previous-versions-of-windows-media-metafiles-deprecated"></a>versões anteriores de metaarquivos de mídia do Windows (preterido)
 
-Este tópico documenta um recurso que não é mais usado na versão atual dos metaarquivos do Windows Media.
+este tópico documenta um recurso que não é mais usado na versão atual dos metaarquivos de mídia do Windows.
 
-Esta seção documenta uma parte da versão 2 dos metaarquivos do Windows Media. A versão 2 não é a versão atual dos metaarquivos do Windows Media, mas há alguns casos em que o Windows Media Services fornece aos clientes os metaarquivos que estão no formato versão 2. Os metaarquivos de mídia do Windows também são chamados de arquivos ASX (redirecionador de fluxo avançado).
+esta seção documenta uma parte da versão 2 de metaarquivos de mídia Windows. a versão 2 não é a versão atual dos metaarquivos de mídia do Windows, mas há alguns casos em que Windows Media Services fornece aos clientes os metaarquivos que estão no formato da versão 2. Windows Os metaarquivos de mídia também são chamados de arquivos ASX (redirecionador de fluxo avançado).
 
 Esta seção documenta os itens a seguir.
 
@@ -39,18 +39,18 @@ Esta seção documenta os itens a seguir.
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[**Metaarquivos do Windows Media**](windows-media-metafiles.md)
+[**Windows Metaarquivos de mídia**](windows-media-metafiles.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

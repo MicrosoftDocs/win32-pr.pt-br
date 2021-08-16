@@ -1,6 +1,6 @@
 ---
-description: Enviado a um procedimento de DLL de extensão do Gerenciador de arquivos quando o usuário pressiona F1 em um menu ou item de comando de barra de ferramentas. A extensão deve chamar WinHelp, com o parâmetro hWnd da função definido como o valor do parâmetro hWnd da extensão.
-title: Mensagem de FMEVENT_HELPMENUITEM (Wfext. h)
+description: Enviado para um procedimento de DLL de extensão do Gerenciador de Arquivos quando o usuário pressiona F1 em um menu ou item de comando da barra de ferramentas. A extensão deve chamar WinHelp, com o parâmetro hwnd dessa função definido como o valor do parâmetro hwnd da extensão.
+title: FMEVENT_HELPMENUITEM mensagem (Wfext.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 api_location:
 - Wfext.h
 ms.assetid: 6298061d-7e24-45ab-8bc4-96b28e071080
-ms.openlocfilehash: 46cb246e91f9901204432527ba36fd8ac72beba4
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: 69078274ccd8a7a7b91bbd7bd8e8d84b3b033cec6dbcf4ce495ac2ebfd0e8381
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109842307"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118224160"
 ---
-# <a name="fmevent_helpmenuitem-message"></a>\_Mensagem FMEVENT HELPMENUITEM
+# <a name="fmevent_helpmenuitem-message"></a>Mensagem FMEVENT \_ HELPMENUITEM
 
-Enviado a um procedimento de DLL de extensão do Gerenciador de arquivos quando o usuário pressiona F1 em um menu ou item de comando de barra de ferramentas. A extensão deve chamar [**WinHelp**](/windows/desktop/api/Winuser/nf-winuser-winhelpa), com o parâmetro *HWND* da função definido como o valor do parâmetro *hWnd* da extensão.
+Enviado para um procedimento de DLL de extensão do Gerenciador de Arquivos quando o usuário pressiona F1 em um menu ou item de comando da barra de ferramentas. A extensão deve chamar [**WinHelp**](/windows/desktop/api/Winuser/nf-winuser-winhelpa), com o parâmetro *hwnd* dessa função definido como o valor do parâmetro *hwnd da* extensão.
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -31,16 +31,16 @@ Enviado a um procedimento de DLL de extensão do Gerenciador de arquivos quando 
 *wParam* 
 </dt> <dd>Deve ser zero.</dd> <dt>
 
-*uItem* 
+*Uitem* 
 </dt> <dd>
 
-Um valor que identifica o menu ou o item de comando da barra de ferramentas para o qual a ajuda é desejada. O procedimento de extensão usa esse valor para determinar a melhor maneira de chamar o [**WinHelp**](/windows/desktop/api/Winuser/nf-winuser-winhelpa).
+Um valor que identifica o menu ou o item de comando da barra de ferramentas para o qual a Ajuda é desejada. O procedimento de extensão usa esse valor para determinar a melhor maneira de chamar [**WinHelp.**](/windows/desktop/api/Winuser/nf-winuser-winhelpa)
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Um procedimento de DLL de extensão deve retornar zero se ele processar essa mensagem.
+Um procedimento de DLL de extensão deverá retornar zero se ele processa essa mensagem.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,7 +50,7 @@ Um procedimento de DLL de extensão deve retornar zero se ele processar essa men
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                         |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                               |
-| Cabeçalho<br/>                   | <dl> <dt>Wfext. h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Wfext.h</dt> </dl> |
 
 
 
@@ -61,7 +61,7 @@ Um procedimento de DLL de extensão deve retornar zero se ele processar essa men
 [**FMExtensionProc**](fmextensionproc.md)
 </dt> <dt>
 
-[**FMEVENT \_ HelpString**](fmevent-helpstring.md)
+[**FMEVENT \_ HELPSTRING**](fmevent-helpstring.md)
 </dt> </dl>
 
  

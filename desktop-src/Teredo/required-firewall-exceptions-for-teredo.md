@@ -4,12 +4,12 @@ description: Para que um aplicativo receba tráfego Teredo, o aplicativo deve te
 ms.assetid: 2fc74d86-9696-4ba9-adbe-e5558ae7d7c2
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bbc2fcf0f7c8b1f5fe51afc056dc8c8ff7c7916a
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: a67d7de38ed91de7d8d8afeada6fe9705ff55f2af1b726ed5c5d49b271464dc5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "105761944"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118354439"
 ---
 # <a name="required-firewall-exceptions-for-teredo"></a>Exceções de firewall necessárias para Teredo
 
@@ -24,9 +24,9 @@ As seguintes configurações de firewall são necessárias para garantir a inter
     > [!Note]  
     > Se essa condição não for atendida, o potencial de cenários para encontrar problemas de compatibilidade envolvendo a comunicação entre determinados tipos de NAT será introduzido; especificamente entre NATs simétricas e NATs restritos. Embora os NATs simétricos sejam populares em hotspots e NATs restritos sejam populares em residências, a comunicação entre os dois tem o potencial de falha no lado do NAT restrito.
 
-     
+     
 
--   As exceções "solicitação de eco" e "resposta de eco" ICMPv6 de entrada e saída devem ser habilitadas. Essas exceções são necessárias para garantir que um cliente Teredo possa atuar como uma retransmissão específica do host Teredo. Uma retransmissão específica do host Teredo pode ser identificada pelo endereço IPv6 nativo adicional ou um endereço 6to4 fornecido com o endereço Teredo.
+-   As exceções "solicitação de eco" e "resposta de eco" ICMPv6 de entrada e saída devem ser habilitadas. Essas exceções são necessárias para garantir que um cliente Teredo possa atuar como uma retransmissão específica do host Teredo. uma retransmissão específica do host Teredo pode ser identificada pelo endereço IPv6 nativo adicional ou por um endereço 6to4 fornecido com o endereço Teredo.
 
 Os firewalls do cliente devem dar suporte às seguintes mensagens de erro ICMPv6 e funções de descoberta por RFC 4443:
 
@@ -44,11 +44,11 @@ Os firewalls do cliente devem dar suporte às seguintes mensagens de erro ICMPv6
 
 
 
- 
+ 
 
 Se essas mensagens não puderem ser especificamente permitidas, a isenção de todas as mensagens ICMPv6 deve ser habilitada no firewall. Além disso, o Firewall do host pode notar que os pacotes classificados por códigos 135/136 ou 133/134 são originados de, ou são direcionados para o serviço de modo de usuário **iphlpsvc** e não da pilha. Esses pacotes não devem ser descartados pelo firewall do host. O serviço Teredo é implementado principalmente no serviço auxiliar de IP do ' modo de usuário '.
 
-Usando a API do firewall do Windows [**INetFwPolicy2**](/previous-versions/windows/desktop/api/netfw/nn-netfw-inetfwpolicy2) para enumerar todas as regras com o sinalizador de percurso de borda definido, todos os aplicativos que desejam escutar o tráfego não solicitado são enumerados para a exceção de firewall. Informações específicas sobre o uso da opção de percurso de borda são detalhadas no [recebimento de tráfego não solicitado por Teredo](receiving-unsolicited-traffic-over-teredo.md).
+usando a API de Firewall do [**INetFwPolicy2**](/previous-versions/windows/desktop/api/netfw/nn-netfw-inetfwpolicy2) Windows para enumerar todas as regras com o sinalizador de percurso de borda definido, todos os aplicativos que desejam escutar o tráfego não solicitado são enumerados para a exceção de Firewall. Informações específicas sobre o uso da opção de percurso de borda são detalhadas no [recebimento de tráfego não solicitado por Teredo](receiving-unsolicited-traffic-over-teredo.md).
 
 Os retornos de chamada não estão associados ao seguinte código de enumeração de exemplo; é altamente recomendável que firewalls de terceiros executem a enumeração periodicamente ou sempre que o firewall detectar um novo aplicativo tentando passar pelo firewall.
 
@@ -250,6 +250,6 @@ int __cdecl main()
 
 
 
- 
+ 
 
- 
+ 

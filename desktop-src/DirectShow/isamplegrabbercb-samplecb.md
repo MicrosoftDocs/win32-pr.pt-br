@@ -1,7 +1,7 @@
 ---
 description: O método SampleCB é um método de retorno de chamada que recebe um ponteiro para o exemplo de mídia.
 ms.assetid: e919b694-75cb-48c6-8427-5a7a886e0ff3
-title: 'Método ISampleGrabberCB:: SampleCB (QEdit. h)'
+title: Método ISampleGrabberCB::SampleCB (Qedit.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 6e66f4a43666add7a5d6cb579fcf15f0fc1ec0cb
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e98377050ec98cdccaedd54119afb6cdaccbaee56256f1406bb190d3ea875bb9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105782227"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117817508"
 ---
-# <a name="isamplegrabbercbsamplecb-method"></a>Método ISampleGrabberCB:: SampleCB
+# <a name="isamplegrabbercbsamplecb-method"></a>Método ISampleGrabberCB::SampleCB
 
 > [!Note]  
 > \[Preterido. Essa API pode ser removida de versões futuras do Windows.\]
@@ -46,7 +46,7 @@ HRESULT SampleCB(
 
 <dl> <dt>
 
-*Exemplo de* 
+*SampleTime* 
 </dt> <dd>
 
 Hora de início do exemplo, em segundos.
@@ -60,21 +60,21 @@ Ponteiro para a interface [**IMediaSample**](/windows/desktop/api/Strmif/nn-strm
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna S \_ OK se tiver êxito ou um código de erro **HRESULT** .
+Retornará S \_ OK se for bem-sucedido ou um **código de erro HRESULT** caso contrário.
 
 ## <a name="remarks"></a>Comentários
 
-Para configurar o retorno de chamada, chame [**ISampleGrabber:: SetCallback**](isamplegrabber-setcallback.md).
+Para configurar o retorno de chamada, chame [**ISampleGrabber::SetCallback**](isamplegrabber-setcallback.md).
 
 > [!Note]  
-> O arquivo de cabeçalho QEdit. h não é compatível com cabeçalhos do Direct3D posteriores à versão 7.
+> O arquivo de título Qedit.h não é compatível com os headers direct3D posteriores à versão 7.
 
  
 
 > [!Note]  
-> Para obter o QEdit. h, baixe a [atualização SDK do Microsoft Windows para Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). O QEdit. h não está disponível no SDK do Microsoft Windows para Windows 7 e .NET Framework 3,5 Service Pack 1.
+> Para obter o Qedit.h, baixe [o Microsoft Windows SDK Update para Windows Vista e .NET Framework 3.0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). O Qedit.h não está disponível no SDK do Microsoft Windows para Windows 7 e .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -84,8 +84,8 @@ Para configurar o retorno de chamada, chame [**ISampleGrabber:: SetCallback**](i
 
 | Requisito | Valor |
 |--------------------|-----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>QEdit. h</dt> </dl>      |
-| Biblioteca<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Biblioteca<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 
@@ -96,7 +96,7 @@ Para configurar o retorno de chamada, chame [**ISampleGrabber:: SetCallback**](i
 [Códigos de erro e êxito](error-and-success-codes.md)
 </dt> <dt>
 
-[**Interface ISampleGrabberCB**](isamplegrabbercb.md)
+[**ISampleGrabberCB Interface**](isamplegrabbercb.md)
 </dt> </dl>
 
  

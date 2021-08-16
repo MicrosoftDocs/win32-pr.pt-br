@@ -1,17 +1,17 @@
 ---
 description: A chave para o bom design é o planejamento. Se você não estiver familiarizado com a criação de um aplicativo de três camadas, consulte a seção intitulada criando o aplicativo COM+ usando UML.
 ms.assetid: 463f4154-92f6-46c3-95ff-8513963dcadd
-title: Dicas de design gerais para usar o COM+
+title: Dicas de Design geral para usar o COM+
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b5765259f170b1a98f1abb2d097dfdaec2e09d47
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: f54ade55331c0b3e2c5ea4b45465ca0bcdc007036b2e919441ccb2ebfbe95ef1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104089133"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118306991"
 ---
-# <a name="general-design-tips-for-using-com"></a>Dicas de design gerais para usar o COM+
+# <a name="general-design-tips-for-using-com"></a>Dicas de Design geral para usar o COM+
 
 A chave para o bom design é o planejamento. Se você não estiver familiarizado com a criação de um aplicativo de três camadas, consulte a seção intitulada [criando o aplicativo com+ usando UML](designing-the-com--application-using-uml.md).
 

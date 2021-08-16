@@ -11,7 +11,7 @@ keywords:
 - playlists de metadados, problemas de reprodução
 - controlando a reprodução
 - Windows Media Player, controlando a reprodução
-- Windows Media Player, problemas de reprodução
+- Windows Media Player,problemas de reprodução
 - HTMLView, problemas de reprodução
 - HTMLView, controlando a reprodução
 ms.topic: article
@@ -57,17 +57,17 @@ function UnloadMe()
 
 
 
-Quando o usuário alterna para fora do **Now Playing** clicando em um botão para abrir outro recurso de Windows Media Player, como a biblioteca, o Player fecha o navegador inserido. Isso faz com **que o evento onunload** ocorra, executando o script na função chamada **UnloadMe**. O [método Player.close](player-close.md) interrompe a reprodução e descarrega o arquivo de mídia digital atual. Para exibir o conteúdo novamente, o usuário deve reabrir o arquivo .asx original. Essa técnica também interrompe a reprodução quando o usuário navega para fora da página da Web HTMLView. Observe que essa técnica não pode impedir que o usuário veja o conteúdo da mídia digital quando ele alterna para o modo de capa.
+Quando o usuário  alterna para fora de Agora Em Reprodução clicando em um botão para abrir outro recurso Windows Media Player, como a biblioteca, o Player fecha o navegador inserido. Isso faz com **que o evento onunload** ocorra, executando o script na função chamada **UnloadMe**. O [método Player.close](player-close.md) interrompe a reprodução e descarrega o arquivo de mídia digital atual. Para exibir o conteúdo novamente, o usuário deve reabrir o arquivo .asx original. Essa técnica também interrompe a reprodução quando o usuário navega para fora da página da Web HTMLView. Observe que essa técnica não pode impedir que o usuário veja o conteúdo da mídia digital quando ele alterna para o modo de capa.
 
 Você se lembrará de que o parâmetro HTMLView pode ser aplicado a cada **elemento ENTRY** em um arquivo .asx. Você pode aproveitar esse recurso para garantir que seu conteúdo HTMLView seja exibido sempre que um novo arquivo de mídia digital for iniciado. Para fazer isso, associe **um elemento PARAM** para HTMLView a cada entrada em sua playlist .asx. Quando cada entrada é reproduzida, o Player retorna para o modo completo e exibe o conteúdo HTMLView especificado na playlist.
 
 ## <a name="url-and-file-script-command-types-are-disabled-by-default"></a>Os tipos de comando URL e script FILE são desabilitados por padrão
 
-Windows Media Player Série 9 ou posterior fornece configurações que permitem que o usuário especifique se os comandos de script de tipo URL e FILE podem ser executados. Por padrão, esses dois tipos de comando de script não são executados. Se você usar tipos de comando de script personalizados, eles continuarão a ser executados, independentemente da configuração do usuário. Se você precisa usar comandos de script de tipo URL e FILE, você deve solicitar que o usuário altere as configurações. Para alterar as configurações, clique em **Ferramentas**, **opções** e **segurança.**
+Windows Media Player série 9 ou posterior fornece configurações que permitem que o usuário especifique se os comandos de script de tipo URL e FILE podem ser executados. Por padrão, esses dois tipos de comando de script não são executados. Se você usar tipos de comando de script personalizados, eles continuarão a ser executados, independentemente da configuração do usuário. Se você precisa usar comandos de script de tipo URL e FILE, você deve solicitar que o usuário altere as configurações. Para alterar as configurações, clique em **Ferramentas**, **opções** e **segurança.**
 
 ## <a name="reopening-an-htmlview-does-not-reload-the-webpage"></a>A reabertura de um HTMLView não recarrega a página da Web
 
-Quando o usuário abre um arquivo .asx que inclui um parâmetro HTMLView e, posteriormente, reabre o mesmo arquivo, Windows Media Player atualize a página da Web HTMLView. Isso também significa que, se você tiver permitido que os usuários naveguem para fora de sua página da Web HTMLView, o Player não retornará o navegador inserido para a página inicial do HTMLView.
+Quando o usuário abre um arquivo .asx que inclui um parâmetro HTMLView e, subsequentemente, reabre o mesmo arquivo, Windows Media Player não atualize a página da Web HTMLView. Isso também significa que, se você tiver permitido que os usuários naveguem para fora de sua página da Web HTMLView, o Player não retornará o navegador inserido para a página inicial do HTMLView.
 
 ## <a name="hiding-the-content-location"></a>Ocultando o local do conteúdo
 

@@ -17,12 +17,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8b17e42e75072033f952c7ef790365d6a363a5b5
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d08b15eb2b8112afcef6c98a841a249672df2ae3fbb7f36ceea513d53a5b0478
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455867"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118351618"
 ---
 # <a name="iremotedesktopclienteventsonstatuschanged-method"></a>Método IRemoteDesktopClientEvents:: onstatuschanged
 
@@ -58,7 +58,7 @@ O texto da mensagem de status.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 
@@ -70,7 +70,7 @@ Esse método não retorna um valor.
 |-------------------------------------|------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 8<br/>                                                                           |
 | Servidor mínimo com suporte<br/> | Windows Server 2012<br/>                                                                 |
-| parâmetro<br/>                   | <dl> <dt>Locationapi. h</dt> </dl>       |
+| Cabeçalho<br/>                   | <dl> <dt>Locationapi. h</dt> </dl>       |
 | Biblioteca de tipos<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl>         |
 | DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl>         |
 | IID<br/>                      | DIID \_ IRemoteDesktopClientEvents é definido como 079863B7-6D47-4105-8BFE-0CDCB360E67D<br/> |

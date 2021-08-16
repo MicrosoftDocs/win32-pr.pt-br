@@ -1,36 +1,36 @@
 ---
-title: Core. CPP
-description: No exemplo de componente de provedor, o exemplo de código, usado para inicializar um objeto genérico de propriedades Core, está em Core. cpp. Os métodos com suporte são listados na tabela a seguir.
+title: Núcleo. Cpp
+description: No componente de provedor de exemplo, o exemplo de código, usado para inicializar propriedades de núcleo de objeto genérico, está em core.cpp. Os métodos com suporte são listados na tabela a seguir.
 ms.assetid: 32b195b6-6cc3-4c41-96a9-327b81fdf61a
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cfc5d1362a9fe77245c09ca2f568c8024388cac2
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 08f19a465c36847d9435be8d9595a2b69856c6a77406c196ee573afd1591ad6f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103634888"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117840459"
 ---
-# <a name="corecpp"></a>Core. CPP
+# <a name="corecpp"></a>Núcleo. Cpp
 
-No exemplo de componente de provedor, o exemplo de código, usado para inicializar um objeto genérico de propriedades Core, está em Core. cpp. Os métodos com suporte são listados na tabela a seguir.
+No componente de provedor de exemplo, o exemplo de código, usado para inicializar propriedades de núcleo de objeto genérico, está em core.cpp. Os métodos com suporte são listados na tabela a seguir.
 
 
 
 | Método                                   | Descrição                                                                                              |
 |------------------------------------------|----------------------------------------------------------------------------------------------------------|
-| **CCoreADsObject::InitializeCoreObject** | Inicialize as propriedades de [**IADs**](/windows/desktop/api/Iads/nn-iads-iads) básicas para esse objeto, uma conveniência para a criação do objeto. |
+| **CCoreADsObject::InitializeCoreObject** | Inicialize as propriedades [**básicas de IADs**](/windows/desktop/api/Iads/nn-iads-iads) para esse objeto, uma conveniência para a criação de objeto. |
 | **CCoreADsObject::CCoreADsObject**       | Criador padrão.                                                                                        |
-| **CCoreADsObject:: ~ CCoreADsObject**      | Destruidor padrão.                                                                                     |
+| **CCoreADsObject::~CCoreADsObject**      | Destruidor padrão.                                                                                     |
 
 
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

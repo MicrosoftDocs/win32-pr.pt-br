@@ -1,9 +1,9 @@
 ---
-title: comando step
-description: O comando de etapa etapas a reproduzir um ou mais quadros para frente ou para trás. A ação padrão é avançar um quadro. Os dispositivos video,VCR e videodisc no formato DIGITAL reconhecem esse comando.
+title: comando Step
+description: As etapas do comando Step executam um ou mais quadros para frente ou verso. A ação padrão é avançar um quadro. Dispositivos Digital-Video, VCR e CAV-Format VIDEODISC reconhecem este comando.
 ms.assetid: 6017ace5-cde9-42a0-bb2f-f85d7847adc5
 keywords:
-- comando step Windows Multimídia
+- comando step Windows multimídia
 topic_type:
 - apiref
 api_name:
@@ -19,11 +19,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118370826"
 ---
-# <a name="step-command"></a>comando step
+# <a name="step-command"></a>comando Step
 
-O comando de etapa etapas a reproduzir um ou mais quadros para frente ou para trás. A ação padrão é avançar um quadro. Os dispositivos video,VCR e videodisc no formato DIGITAL reconhecem esse comando.
+As etapas do comando Step executam um ou mais quadros para frente ou verso. A ação padrão é avançar um quadro. Dispositivos Digital-Video, VCR e CAV-Format VIDEODISC reconhecem este comando.
 
-Para enviar esse comando, chame a [**função mciSendString**](/previous-versions//dd757161(v=vs.85)) com *o parâmetro lpszCommand* definido da seguinte forma.
+Para enviar esse comando, chame a função [**mciSendString**](/previous-versions//dd757161(v=vs.85)) com o parâmetro *lpszCommand* definido da seguinte maneira.
 
 ``` syntax
 _stprintf_s(
@@ -55,8 +55,8 @@ Um ou ambos os sinalizadores a seguir.
 
 | Valor       | Significado                                                                                                                  |
 |-------------|--------------------------------------------------------------------------------------------------------------------------|
-| por *quadros* | Indica o número de quadros a ser etapa. Se você especificar um valor *de quadros negativos,* não poderá especificar o sinalizador "reverso". |
-| reverse     | Estornar os quadros em ordem inversa.                                                                                              |
+| por *quadros* | Indica o número de quadros a serem conetapas. Se você especificar um valor de *quadros* negativos, não poderá especificar o sinalizador "Reverse". |
+| reverse     | Passe os quadros em ordem inversa.                                                                                              |
 
 
 
@@ -67,13 +67,13 @@ Um ou ambos os sinalizadores a seguir.
 <span id="lpszFlags"></span><span id="lpszflags"></span><span id="LPSZFLAGS"></span>*lpszFlags*
 </dt> <dd>
 
-Pode ser "wait", "notify" ou ambos. Para dispositivos de vídeo digital e VCR, "teste" também pode ser especificado. Para obter mais informações sobre esses sinalizadores, consulte [Os sinalizadores de espera, notificação e teste.](the-wait-notify-and-test-flags.md)
+Pode ser "Wait", "notificar" ou ambos. Para dispositivos de vídeo digital e VCR, o "teste" também pode ser especificado. Para obter mais informações sobre esses sinalizadores, consulte [os sinalizadores aguardar, notificar e testar](the-wait-notify-and-test-flags.md).
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor Retornado
 
-Retornará zero se for bem-sucedido ou um erro, caso contrário.
+Retornará zero se for bem-sucedido ou um erro de outra forma.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -90,7 +90,7 @@ Retornará zero se for bem-sucedido ou um erro, caso contrário.
 
 <dl> <dt>
 
-[Mci](mci.md)
+[MCI](mci.md)
 </dt> <dt>
 
 [Cadeias de caracteres de comando MCI](mci-command-strings.md)

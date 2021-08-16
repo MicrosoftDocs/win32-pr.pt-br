@@ -15,7 +15,7 @@ ms.locfileid: "118211321"
 
 ## <a name="platform"></a>Plataforma
 
-**Servidores – Windows Server 2012** R2  
+**servidores-** Windows Server 2012 R2  
 
 
 
@@ -24,17 +24,17 @@ ms.locfileid: "118211321"
 
 ## <a name="description"></a>Descrição
 
-No Windows Server 2012 R2, adicionamos um novo serviço chamado web Proxy de Aplicativo na função acesso remoto que permite que os administradores publiquem aplicativos para acesso externo. Esse serviço atua como um proxy reverso e como um proxy Serviços de Federação do Active Directory (AD FS) (AD FS) . Na verdade, esse serviço substitui o serviço AD FS proxy como era conhecido no Windows Server 2012.
+no Windows Server 2012 R2, adicionamos um novo serviço chamado Proxy de aplicativo Web na função de acesso remoto que permite aos administradores publicar aplicativos para acesso externo. Esse serviço atua como um proxy reverso e como um proxy de Serviços de Federação do Active Directory (AD FS) (AD FS). Na verdade, esse serviço substitui o serviço de proxy AD FS como ele era conhecido no Windows Server 2012.
 
-Com o web Proxy de Aplicativo, uma organização pode disponibilizar recursos da Web locais para acesso externo e, ao mesmo tempo, gerenciar o risco desse acesso controlando políticas de autenticação e autorização no AD FS.
+Com o proxy de aplicativo Web, uma organização pode tornar os recursos da Web locais disponíveis para acesso externo, ao mesmo tempo em que gerencia o risco desse acesso controlando as políticas de autenticação e autorização no AD FS.
 
 ## <a name="manifestation"></a>Manifestação
 
-O AD FS de proxy do Serviços de Federação do Active Directory (AD FS) não está mais sob a função Serviços de Federação do Active Directory (AD FS) (AD FS), mas foi substituído pelo web Proxy de Aplicativo na função acesso remoto. Isso representa uma expansão do serviço de proxy AD FS, incluindo a funcionalidade de proxy reverso para publicação de aplicativos.
+O serviço proxy de AD FS não está mais na função Serviços de Federação do Active Directory (AD FS) (AD FS), mas foi substituído pelo proxy de aplicativo Web na função de acesso remoto. Isso representa uma expansão do serviço de proxy de AD FS, incluindo a funcionalidade de proxy reverso para publicação de aplicativos.
 
 ## <a name="solution"></a>Solução
 
-Para acessar o web Proxy de Aplicativo, os administradores podem acessar Gerenciador do Servidor e adicionar um novo serviço de função/função. O administrador encontrará o web Proxy de Aplicativo na função Acesso Remoto.
+Para acessar o proxy de aplicativo Web, os administradores podem ir para Gerenciador do Servidor e adicionar um novo serviço de função/função. O administrador encontrará o proxy de aplicativo Web na função de acesso remoto.
 
 ## <a name="resources"></a>Recursos
 

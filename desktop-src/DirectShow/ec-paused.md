@@ -1,17 +1,17 @@
 ---
 description: Uma solicitação de pausa foi concluída.
 ms.assetid: 32acad47-65bd-42f0-987e-3690bb824b05
-title: EC_PAUSED (DShow. h)
+title: EC_PAUSED (Dshow.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5fa25a2f32f191519e55e286dac52542bcef949a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ebc16eefcf88402ccf0a6173bcfa22e3100c33985469b7372ad6bb2ea97c572d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105778482"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117820047"
 ---
-# <a name="ec_paused"></a>EC em \_ pausa
+# <a name="ec_paused"></a>EC \_ PAUSED
 
 Uma solicitação de pausa foi concluída.
 
@@ -19,10 +19,10 @@ Uma solicitação de pausa foi concluída.
 
 <dl> <dt>
 
-<span id="lParam1"></span><span id="lparam1"></span><span id="LPARAM1"></span>*lParam1*
+<span id="lParam1"></span><span id="lparam1"></span><span id="LPARAM1"></span>*Lparam1*
 </dt> <dd>
 
-(**HRESULT**) Status da pausar operação.
+(**HRESULT**) Status da opertation de pausa.
 
 </dd> <dt>
 
@@ -39,7 +39,7 @@ Nenhum.
 
 ## <a name="remarks"></a>Comentários
 
-O Gerenciador de gráfico de filtro envia esse evento quando conclui um comando de pausa assíncrona.
+O gerenciador de grafo de filtro envia esse evento quando conclui um comando de pausa assíncrono.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -47,7 +47,7 @@ O Gerenciador de gráfico de filtro envia esse evento quando conclui um comando 
 
 | Requisito | Valor |
 |-------------------|------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>DShow. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>Dshow.h</dt> </dl> |
 
 
 
@@ -58,7 +58,7 @@ O Gerenciador de gráfico de filtro envia esse evento quando conclui um comando 
 [Códigos de notificação de eventos](event-notification-codes.md)
 </dt> <dt>
 
-[Notificação de eventos no DirectShow](event-notification-in-directshow.md)
+[Notificação de eventos DirectShow](event-notification-in-directshow.md)
 </dt> </dl>
 
  

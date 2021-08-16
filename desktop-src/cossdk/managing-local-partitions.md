@@ -4,12 +4,12 @@ ms.assetid: 82f790cf-3f94-44d9-b722-89a6013d0300
 title: Gerenciando partições locais
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ecd551fc73c76067c4ab2e988fba79ee702df53c
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 124d0b9ef7bf54f07a6b28561428c57834a6e15ec11c4ed5c89fb92f95f0a950
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103920548"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118306229"
 ---
 # <a name="managing-local-partitions"></a>Gerenciando partições locais
 
@@ -20,7 +20,7 @@ Como uma alternativa para criar e configurar partições locais por meio da ferr
 
  
 
-A seguinte sub-rotina gravada em Visual Basic script demonstra como criar uma partição no computador local:
+a seguinte sub-rotina gravada em Visual Basic script demonstra como criar uma partição no computador local:
 
 
 ```VB
@@ -42,7 +42,7 @@ End Sub
 
 
 
-A seguinte sub-rotina gravada em Visual Basic script demonstra como excluir uma partição do computador local:
+a seguinte sub-rotina gravada em Visual Basic script demonstra como excluir uma partição do computador local:
 
 
 ```VB
@@ -65,7 +65,7 @@ End Sub
 
 
 
-A seguinte sub-rotina gravada em Visual Basic script demonstra como definir a partição padrão para um usuário:
+a seguinte sub-rotina gravada em Visual Basic script demonstra como definir a partição padrão para um usuário:
 
 
 ```VB
@@ -84,7 +84,7 @@ End Sub
 
 
 
-A seguinte sub-rotina gravada em Visual Basic script demonstra como remover a partição padrão de um usuário:
+a seguinte sub-rotina gravada em Visual Basic script demonstra como remover a partição padrão de um usuário:
 
 
 ```VB

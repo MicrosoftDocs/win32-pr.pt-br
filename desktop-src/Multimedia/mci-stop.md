@@ -1,9 +1,9 @@
 ---
-title: MCI_STOP comando (Mmsystem.h)
-description: O comando MCI STOP interrompe todas as sequências de reprodução e gravação, descarrega todos os buffers de reprodução e interrompe \_ a exibição de imagens de vídeo. Os dispositivos de áudio cd, vídeo digital, sequenciador MIDI, videodisc, VCR e waveform-audio reconhecem esse comando.
+title: MCI_STOP comando (mmsystem. h)
+description: O \_ comando MCI Stop interrompe todas as sequências de reprodução e registro, descarrega todos os buffers de reprodução e deixa de exibir imagens de vídeo. CD de áudio, digital-vídeo, MIDI Sequencer, VIDEODISC, VCR e Wave-Audio Devices reconhecem este comando.
 ms.assetid: e5ae20b3-7439-4314-8354-d06e83b29729
 keywords:
-- MCI_STOP comando Windows Multimídia
+- MCI_STOP comando Windows multimídia
 topic_type:
 - apiref
 api_name:
@@ -21,11 +21,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118374598"
 ---
-# <a name="mci_stop-command"></a>Comando MCI \_ STOP
+# <a name="mci_stop-command"></a>\_Comando Stop MCI
 
-O comando MCI STOP interrompe todas as sequências de reprodução e gravação, descarrega todos os buffers de reprodução e interrompe \_ a exibição de imagens de vídeo. Os dispositivos de áudio cd, vídeo digital, sequenciador MIDI, videodisc, VCR e waveform-audio reconhecem esse comando.
+O \_ comando MCI Stop interrompe todas as sequências de reprodução e registro, descarrega todos os buffers de reprodução e deixa de exibir imagens de vídeo. CD de áudio, digital-vídeo, MIDI Sequencer, VIDEODISC, VCR e Wave-Audio Devices reconhecem este comando.
 
-Para enviar esse comando, chame a [**função mciSendCommand**](/previous-versions//dd757160(v=vs.85)) com os parâmetros a seguir.
+Para enviar esse comando, chame a função [**mciSendCommand**](/previous-versions//dd757160(v=vs.85)) com os parâmetros a seguir.
 
 
 ```C++
@@ -50,29 +50,29 @@ Identificador de dispositivo do dispositivo MCI que deve receber a mensagem de c
 
 </dd> <dt>
 
-<span id="dwFlags"></span><span id="dwflags"></span><span id="DWFLAGS"></span>*Dwflags*
+<span id="dwFlags"></span><span id="dwflags"></span><span id="DWFLAGS"></span>*dwFlags*
 </dt> <dd>
 
-MCI \_ NOTIFY, MCI WAIT ou, para dispositivos de vídeo digital e \_ VCR, MCI \_ TEST. Para obter informações sobre esses sinalizadores, consulte [Os sinalizadores de espera, notificação e teste.](the-wait-notify-and-test-flags.md)
+\_Notificação de MCI, \_ espera de MCI ou, para dispositivos de vídeo digital e VCR, \_ teste MCI. Para obter informações sobre esses sinalizadores, consulte [os sinalizadores aguardar, notificar e testar](the-wait-notify-and-test-flags.md).
 
 </dd> <dt>
 
 <span id="lpStop"></span><span id="lpstop"></span><span id="LPSTOP"></span>*lpStop*
 </dt> <dd>
 
-Ponteiro para uma [**estrutura \_ \_ PARMS GENÉRICA da MCI.**](mci-generic-parms.md) (Dispositivos com conjuntos de comandos estendidos podem substituir essa estrutura por uma estrutura específica do dispositivo.)
+Ponteiro para uma estrutura de [**\_ \_ parâmetros genéricos do MCI**](mci-generic-parms.md) . (Dispositivos com conjuntos de comandos estendidos podem substituir essa estrutura por uma estrutura específica do dispositivo.)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor Retornado
 
-Retornará zero se for bem-sucedido ou um erro, caso contrário.
+Retornará zero se for bem-sucedido ou um erro de outra forma.
 
 ## <a name="remarks"></a>Comentários
 
-A diferença entre os comandos MCI \_ STOP e [MCI \_ PAUSE](mci-pause.md) depende do dispositivo. Se possível, a MCI \_ PAUSE suspende a operação do dispositivo, mas deixa o dispositivo pronto para retomar a reprodução imediatamente.
+A diferença entre os \_ comandos Stop MCI e [MCI \_ Pause](mci-pause.md) depende do dispositivo. Se possível, \_ a pausa do MCI suspende a operação do dispositivo, mas deixa o dispositivo pronto para retomar a reprodução imediatamente.
 
-Para o dispositivo de áudio CD, o MCI STOP redefine a posição atual da faixa como zero; por outro \_ lado, [a MCI \_ PAUSE](mci-pause.md) mantém a posição atual da faixa, prevendo que o dispositivo retomará a reprodução.
+Para o dispositivo de áudio de CD, \_ o MCI Stop redefine a posição da faixa atual para zero; por outro lado, a [ \_ pausa do MCI](mci-pause.md) mantém a posição atual da faixa, antecipando que o dispositivo retomará a reprodução.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -82,7 +82,7 @@ Para o dispositivo de áudio CD, o MCI STOP redefine a posição atual da faixa 
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                                                |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                      |
-| Cabeçalho<br/>                   | <dl> <dt>Mmsystem.h (incluir Windows.h)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Mmsystem. h (incluir Windows. h)</dt> </dl> |
 
 
 
@@ -90,7 +90,7 @@ Para o dispositivo de áudio CD, o MCI STOP redefine a posição atual da faixa 
 
 <dl> <dt>
 
-[Mci](mci.md)
+[MCI](mci.md)
 </dt> <dt>
 
 [Comandos MCI](mci-commands.md)

@@ -1,9 +1,9 @@
 ---
-title: Propriedade ContextPopup.ContextMenus
+title: Propriedade ContextPopup. ContextMenus
 description: Representa um contêiner para elementos ContextMenu.
 ms.assetid: 92633689-a892-421e-a5fb-e494f4cd1ea8
 keywords:
-- Propriedade ContextPopup.ContextMenus Windows Faixa de Opções
+- faixa de Windows da propriedade ContextPopup. contextmenus
 topic_type:
 - apiref
 api_name:
@@ -19,9 +19,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117851012"
 ---
-# <a name="contextpopupcontextmenus-property"></a>Propriedade ContextPopup.ContextMenus
+# <a name="contextpopupcontextmenus-property"></a>Propriedade ContextPopup. ContextMenus
 
-Representa um contêiner para [**elementos ContextMenu.**](windowsribbon-element-contextmenu.md)
+Representa um contêiner para elementos [**ContextMenu**](windowsribbon-element-contextmenu.md) .
 
 ## <a name="usage"></a>Uso
 
@@ -59,13 +59,13 @@ Não há atributos.
 
 Opcional.
 
-Pode ocorrer no máximo uma vez para [**cada ContextPopup.**](windowsribbon-element-contextpopup.md)
+Pode ocorrer no máximo uma vez para cada [**ContextPopup**](windowsribbon-element-contextpopup.md).
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo a seguir demonstra a marcação básica para uma [**Exibição contextpopup.**](windowsribbon-element-contextpopup.md)
+O exemplo a seguir demonstra a marcação básica para uma exibição [**ContextPopup**](windowsribbon-element-contextpopup.md) .
 
-Esta seção de código mostra uma declaração **de controle ContextPopup.ContextMenus.**
+Esta seção de código mostra uma declaração de controle **ContextPopup. ContextMenus** .
 
 
 ```XML
@@ -158,8 +158,8 @@ Esta seção de código mostra uma declaração **de controle ContextPopup.Conte
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 7 \[ aplicativos da área de trabalho\]<br/>              |
-| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho do Server 2008 R2 \[\]<br/> |
+| Cliente mínimo com suporte<br/> | \[somente aplicativos de área de trabalho Windows 7\]<br/>              |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do Server 2008 R2\]<br/> |
 
 
 
@@ -167,7 +167,7 @@ Esta seção de código mostra uma declaração **de controle ContextPopup.Conte
 
 <dl> <dt>
 
-[Controle pop-up de contexto](windowsribbon-controls-contextpopup.md)
+[Controle Popup de contexto](windowsribbon-controls-contextpopup.md)
 </dt> </dl>
 
  

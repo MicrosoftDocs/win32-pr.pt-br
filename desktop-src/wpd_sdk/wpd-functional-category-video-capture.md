@@ -4,12 +4,12 @@ ms.assetid: 3b7f7f5f-9cb7-450a-ad4c-ae1688cb7878
 title: WPD_FUNCTIONAL_CATEGORY_VIDEO_CAPTURE
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e0f311340079f44a82f966f81a7bd4e738298eb7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3c1fc5879c7bf7644a785c93281eb73ffcaeba12256bb86a88b9bd41c443a674
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105788834"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117842134"
 ---
 # <a name="wpd_functional_category_video_capture"></a>\_captura de \_ vídeo de categoria funcional \_ WPD \_
 
@@ -42,7 +42,7 @@ Um \_ \_ objeto funcional de captura de vídeo de categoria funcional WPD \_ \_ 
 | [o \_ objeto WPD \_ gera \_ miniaturas \_ do \_ recurso](object-properties.md) | Opcional.                                                                                                                                              |
 | [o \_ objeto WPD \_ pode \_ excluir](object-properties.md)                                                                     | Obrigatório se o objeto não puder ser excluído.                                                                                                              |
 | [\_localidade do \_ idioma do objeto WPD \_](object-properties.md)                                                                | Opcional.                                                                                                                                              |
-| [\_categoria de \_ objeto \_ funcional WPD](miscellaneous-properties.md)                      | Obrigatórios. Consulte [**\_ \_ \_ \_ objeto funcional de tipo de conteúdo WPD**](wpd-content-type-functional-object.md) para categorias definidas por dispositivos portáteis do Windows. |
+| [\_categoria de \_ objeto \_ funcional WPD](miscellaneous-properties.md)                      | Obrigatórios. consulte [**\_ \_ \_ \_ objeto funcional de tipo de conteúdo WPD**](wpd-content-type-functional-object.md) para categorias definidas por Windows dispositivos portáteis. |
 
 
 

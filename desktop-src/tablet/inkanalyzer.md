@@ -1,7 +1,7 @@
 ---
 description: Implementa a interface IInkAnalyzer.
 ms.assetid: f17de375-a0fe-4024-bf2a-60f8de8b0345
-title: Classe InkAnalyzer (IACom.h)
+title: Classe InkAnalyzer (IACom. h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -22,15 +22,15 @@ ms.locfileid: "118220739"
 ---
 # <a name="inkanalyzer-class"></a>Classe InkAnalyzer
 
-Implementa a interface [**IInkAnalyzer.**](iinkanalyzer.md)
+Implementa a interface [**IInkAnalyzer**](iinkanalyzer.md) .
 
 ## <a name="remarks"></a>Comentários
 
-Essa classe implementa a interface [**COM IInkAnalyzer.**](iinkanalyzer.md)
+Essa classe implementa a interface com [**IInkAnalyzer**](iinkanalyzer.md) .
 
-[ \_ IAnalysisEvents](-ianalysisevents.md) é a origem padrão de eventos e fornece eventos padrão para [**o IInkAnalyzer.**](iinkanalyzer.md)
+[ \_ IAnalysisEvents](-ianalysisevents.md) é a fonte padrão de eventos e fornece eventos padrão para o [**IInkAnalyzer**](iinkanalyzer.md).
 
-[**\_ IAnalysisProxyEvents fornece**](-ianalysisproxyevents.md) os eventos de proxy de dados para [**o IInkAnalyzer.**](iinkanalyzer.md) Para obter mais informações, consulte [Proxy de dados com análise de tinta](data-proxy-with-ink-analysis.md).
+[**\_ IAnalysisProxyEvents**](-ianalysisproxyevents.md) fornece os eventos de proxy de dados para o [**IInkAnalyzer**](iinkanalyzer.md). Para obter mais informações, consulte [proxy de dados com análise de tinta](data-proxy-with-ink-analysis.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -38,9 +38,9 @@ Essa classe implementa a interface [**COM IInkAnalyzer.**](iinkanalyzer.md)
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho do XP Tablet PC \[ Edition\]<br/>                                                 |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do XP Tablet PC Edition\]<br/>                                                 |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                                     |
-| parâmetro<br/>                   | <dl> <dt>IACom.h (também requer IACom \_ i.c)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>IACom. h (também requer IACom \_ i. c)</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |
 
 

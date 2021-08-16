@@ -1,45 +1,45 @@
 ---
 title: Controle giratório
-description: O spinner é um controle composto que consiste em um botão de incremento, um botão de decréscimo e um controle de edição, todos usados para fornecer valores decimais para o aplicativo.
+description: O Spinner é um controle composto que consiste em um botão de incremento, um botão de decremento e um controle de edição, que são usados para fornecer valores decimais para o aplicativo.
 ms.assetid: 63689ed3-7326-4f7a-b700-d89e9b501ef1
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b0875fb31d0dac73c88f3bd502746c473dc1c2b1
-ms.sourcegitcommit: ae73f4dd3cf5a3c6a1ea7d191ca32a5b01f6686b
+ms.openlocfilehash: 30c4a6544c10634783b1671f586108a795d67d90c808943b08a2cfcbf6a476da
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "105781533"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117851375"
 ---
 # <a name="spinner"></a>Controle giratório
 
-O spinner é um controle composto que consiste em um botão de incremento, um botão de decréscimo e um controle de edição, todos usados para fornecer valores decimais para o aplicativo.
+O Spinner é um controle composto que consiste em um botão de incremento, um botão de decremento e um controle de edição, que são usados para fornecer valores decimais para o aplicativo.
 
 -   [Detalhes](#details)
--   [Propriedades de controle giratório](#spinner-properties)
+-   [Propriedades do girador](#spinner-properties)
 -   [Comentários](#remarks)
 -   [Tópicos relacionados](#related-topics)
 
 ## <a name="details"></a>Detalhes
 
-A captura de tela a seguir ilustra o controle giratório da faixa de opções.
+A captura de tela a seguir ilustra o Girador de Faixa de Opções.
 
-![captura de tela de um controle giratório na faixa de MovieMaker do Windows Live.](images/controls/spinner.png)
+![captura de tela de um controle girador na faixa de opções do fabricante de filmes ao vivo do Windows.](images/controls/spinner.png)
 
-## <a name="spinner-properties"></a>Propriedades de controle giratório
+## <a name="spinner-properties"></a>Propriedades do girador
 
-A estrutura da faixa de faixas define uma coleção de [chaves de propriedade](windowsribbon-reference-properties.md) para o controle Spinner.
+A estrutura ribbon define uma coleção de chaves [de propriedade](windowsribbon-reference-properties.md) para o controle Spinner.
 
-Normalmente, uma propriedade Spinner é atualizada na interface do usuário da faixa de forma invalidando o comando associado ao controle por meio de uma chamada para o método [**IUIFramework:: InvalidateUICommand**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-invalidateuicommand) . O evento Invalidation é tratado e as atualizações de propriedade são definidas pelo método de retorno de chamada [**IUICommandHandler:: updateproperty**](/windows/desktop/api/uiribbon/nf-uiribbon-iuicommandhandler-updateproperty) .
+Normalmente, uma propriedade Spinner é atualizada na interface do usuário da faixa de opções invalidando o Comando associado ao controle por meio de uma chamada para o método [**IUIFramework::InvalidateUICommand.**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-invalidateuicommand) O evento de invalidação é tratado e as atualizações de propriedade definidas pelo método de retorno de chamada [**IUICommandHandler::UpdateProperty.**](/windows/desktop/api/uiribbon/nf-uiribbon-iuicommandhandler-updateproperty)
 
-O método de retorno de chamada [**IUICommandHandler:: updateproperty**](/windows/desktop/api/uiribbon/nf-uiribbon-iuicommandhandler-updateproperty) não é executado e o aplicativo consultou um valor de propriedade atualizado, até que a propriedade seja exigida pela estrutura. Por exemplo, quando uma guia é ativada e um controle revelado na interface do usuário da faixa de ferramentas, ou quando uma dica de ferramenta é exibida.
+O método de retorno de chamada [**IUICommandHandler::UpdateProperty**](/windows/desktop/api/uiribbon/nf-uiribbon-iuicommandhandler-updateproperty) não é executado e o aplicativo consulta um valor de propriedade atualizado até que a propriedade seja exigida pela estrutura. Por exemplo, quando uma guia é ativada e um controle é revelado na interface do usuário da faixa de opções ou quando uma dica de ferramenta é exibida.
 
 > [!Note]  
-> Em alguns casos, uma propriedade pode ser recuperada por meio do método [**IUIFramework:: GetUICommandProperty**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-getuicommandproperty) e definida com o método [**IUIFramework:: SetUICommandProperty**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setuicommandproperty) .
+> Em alguns casos, uma propriedade pode ser recuperada por meio do método [**IUIFramework::GetUICommandProperty**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-getuicommandproperty) e definida com o [**método IUIFramework::SetUICommandProperty.**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setuicommandproperty)
 
  
 
-A tabela a seguir lista as chaves de propriedade que estão associadas ao controle Spinner.
+A tabela a seguir lista as chaves de propriedade associadas ao controle Spinner.
 
 
 
@@ -61,16 +61,16 @@ A tabela a seguir lista as chaves de propriedade que estão associadas ao contro
 </tr>
 <tr class="even">
 <td><a href="windowsribbon-reference-properties-uipkey-decimalvalue.md">UI_PKEY_DecimalValue</a></td>
-<td>Dá suporte a <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-getuicommandproperty"><strong>IUIFramework:: GetUICommandProperty</strong></a> e <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setuicommandproperty"><strong>IUIFramework:: SetUICommandProperty</strong></a>.
+<td>Dá <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-getuicommandproperty"><strong>suporte a IUIFramework::GetUICommandProperty</strong></a> <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setuicommandproperty"><strong>e IUIFramework::SetUICommandProperty.</strong></a>
 <blockquote>
 [!Note]<br />
-Se o comando associado ao controle for invalidado por meio de uma chamada para <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-invalidateuicommand"><strong>IUIFramework:: InvalidateUICommand</strong></a>, a estrutura consultará essa propriedade quando <code>UI_INVALIDATIONS_VALUE</code> for passada como o valor de <em>flags</em>.
+Se o Comando associado ao controle for invalidado por meio de uma chamada para <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-invalidateuicommand"><strong>IUIFramework::InvalidateUICommand</strong></a>, a estrutura consultará essa propriedade quando for passado como o valor dos <code>UI_INVALIDATIONS_VALUE</code> <em>sinalizadores</em>.
 </blockquote>
 <br/></td>
 </tr>
 <tr class="odd">
 <td><a href="windowsribbon-reference-properties-uipkey-enabled.md">UI_PKEY_Enabled</a></td>
-<td>Dá suporte a <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-getuicommandproperty"><strong>IUIFramework:: GetUICommandProperty</strong></a> e <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setuicommandproperty"><strong>IUIFramework:: SetUICommandProperty</strong></a>.</td>
+<td>Dá <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-getuicommandproperty"><strong>suporte a IUIFramework::GetUICommandProperty</strong></a> <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setuicommandproperty"><strong>e IUIFramework::SetUICommandProperty.</strong></a></td>
 </tr>
 <tr class="even">
 <td><a href="windowsribbon-reference-properties-uipkey-formatstring.md">UI_PKEY_FormatString</a></td>
@@ -131,7 +131,7 @@ Se o comando associado ao controle for invalidado por meio de uma chamada para <
 
  
 
-A seção de código a seguir demonstra como várias propriedades do controle Spinner são atualizadas no método [**IUICommandHandler:: updateproperty**](/windows/desktop/api/uiribbon/nf-uiribbon-iuicommandhandler-updateproperty) .
+A seção de código a seguir demonstra como várias propriedades do controle Spinner são atualizadas no [**método IUICommandHandler::UpdateProperty.**](/windows/desktop/api/uiribbon/nf-uiribbon-iuicommandhandler-updateproperty)
 
 
 ```C++
@@ -212,10 +212,10 @@ STDMETHODIMP CCommandHandler::UpdateProperty(
 
 ## <a name="remarks"></a>Comentários
 
-Se o valor mínimo ([UI \_ PKEY \_ MinValue](windowsribbon-reference-properties-uipkey-minvalue.md)) de um controle giratório for inicializado como 0,0, o aplicativo deverá garantir que qualquer valor subsequente fornecido pelo controle não seja igual a 0,0 (negativo zero). Se o controle giratório fornecer um valor de-0,0, o aplicativo deverá redefinir esse valor para 0,0 (zero positivo) usando o método [**IUIFramework:: SetUICommandProperty**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setuicommandproperty) , conforme mostrado no exemplo a seguir de um método [**IUICommandHandler:: execute**](/windows/desktop/api/uiribbon/nf-uiribbon-iuicommandhandler-execute) para um controle giratório.
+Se o valor mínimo ([ \_ UI PKEY \_ MinValue](windowsribbon-reference-properties-uipkey-minvalue.md)) de um Spinner for inicializado como 0,0, o aplicativo deverá garantir que qualquer valor subsequente fornecido pelo controle não seja igual a -0,0 (zero negativo). Se o Spinner fornece um valor de -0,0, o aplicativo deve redefinir esse valor para 0,0 (zero positivo) usando o método [**IUIFramework::SetUICommandProperty,**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setuicommandproperty) conforme mostrado no exemplo a seguir de um método [**IUICommandHandler::Execute**](/windows/desktop/api/uiribbon/nf-uiribbon-iuicommandhandler-execute) para um controle Spinner.
 
 > [!Note]  
-> Se esse teste não for executado e o valor deixado incorreto, o campo de edição do controle exibirá a cadeia de caracteres "auto".
+> Se esse teste não for executado e o valor não for corrigido, o campo de edição do controle exibirá a cadeia de caracteres "Auto".
 
  
 
@@ -301,9 +301,9 @@ STDMETHODIMP CCommandHandler::Execute(
 
 <dl> <dt>
 
-[Biblioteca de controle do Windows Ribbon Framework](windowsribbon-controls-entry.md)
+[Windows Biblioteca de Controle da Estrutura de Faixa de Opções](windowsribbon-controls-entry.md)
 </dt> <dt>
 
-[**Elemento de marcação Spinner**](windowsribbon-element-spinner.md)
+[**Elemento de marcação spinner**](windowsribbon-element-spinner.md)
 </dt> </dl>
 

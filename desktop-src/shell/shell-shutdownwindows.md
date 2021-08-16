@@ -1,7 +1,7 @@
 ---
-description: Método Shell.ShutdownWindows – exibe a Desligar Windows caixa de diálogo. Isso é o mesmo que clicar no menu Iniciar e selecionar Desligar.
+description: método Shell. ShutdownWindows – exibe a caixa de diálogo desligar Windows. isso é o mesmo que clicar no menu Iniciar e selecionar desligar.
 ms.assetid: 6fa8e2e0-a58f-4837-89f5-898cece2d80a
-title: Método Shell.ShutdownWindows (Shldisp.h)
+title: Método Shell. ShutdownWindows (shldisp. h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -20,9 +20,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117857725"
 ---
-# <a name="shellshutdownwindows-method"></a>Método Shell.ShutdownWindows
+# <a name="shellshutdownwindows-method"></a>Método Shell. ShutdownWindows
 
-Exibe a caixa **Desligar Windows** caixa de diálogo. Isso é o mesmo que clicar no menu **Iniciar** e selecionar **Desligar**.
+exibe a caixa de diálogo **desligar Windows** . Isso é o mesmo que clicar no menu **Iniciar** e selecionar **desligar**.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -47,7 +47,7 @@ Esse método não tem parâmetros.
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo a seguir **mostra ShutdownWindows** em uso. O uso adequado é mostrado para JScript, VBScript e Visual Basic.
+O exemplo a seguir mostra **ShutdownWindows** em uso. o uso adequado é mostrado para JScript, VBScript e Visual Basic.
 
 JScript:
 
@@ -65,7 +65,7 @@ JScript:
 
 
 
-Vbscript:
+VBScript
 
 
 ```VB
@@ -104,11 +104,11 @@ End Sub
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 2000 Professional, Windows aplicativos da área de \[ trabalho XP\]<br/>                                         |
+| Cliente mínimo com suporte<br/> | Windows 2000 Professional, \[ somente aplicativos de área de trabalho do Windows XP\]<br/>                                         |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                           |
-| Cabeçalho<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
-| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
-| DLL<br/>                      | <dl> <dt>Shell32.dll (versão 4.71 ou posterior)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                           |
+| INSERI<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                         |
+| DLL<br/>                      | <dl> <dt>Shell32.dll (versão 4,71 ou posterior)</dt> </dl> |
 
 
 

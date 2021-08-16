@@ -20,7 +20,7 @@ DC=jdomcsc
 DC=nttest  
 DC=microsoft  
 DC=com  
-</dl>The **IX500DistinguishedName** object creates the following DER-encoded (ASN.1) sequence. Notice that the sequence is encoded in reverse order. This example is derived from the<a href="pkcs--7-renewal-encoded-asn-1.md">Tópico ASN.1 #7 de renovação de PKCS.</a>
+</dl>The **IX500DistinguishedName** object creates the following DER-encoded (ASN.1) sequence. Notice that the sequence is encoded in reverse order. This example is derived from the<a href="pkcs--7-renewal-encoded-asn-1.md">Tópico ASN.1 #7 PKCS</a> codificado para renovação.
 
 ``` syntax
 0a0d: 30 81 c4          ; SEQUENCE (c4 Bytes)
@@ -96,7 +96,7 @@ Conforme discutido em [Nomes](subject-names.md)de Entidade, cada RDN em um nome 
       |  |           ; "Users"
 ```
 
-A sintaxe de transferência der de um objeto ASN.1 sempre contém um tipo, comprimento e valor triplet, e cada campo no tripleto contém um ou mais bytes. Quando codificado, CN=Users consiste em um OID e um valor de cadeia de caracteres. A notação decimal pontilhada do CN OID é 2.5.4.3 e o valor da cadeia de caracteres é "Usuários". O valor da cadeia de caracteres é representado como um **PRINTABLE_STRING** de dados. O valor de tipo numérico associado **OBJECT_ID** é sempre 0x06 e o tipo  numérico associado PRINTABLE_STRING é sempre 0x13. O comprimento do nome comum "Usuários" é 0x05 bytes. O comprimento do OID é 0x03 bytes e seu valor é 0x55 0x04 0x03.
+A sintaxe de transferência der de um objeto ASN.1 sempre contém um tipo, comprimento e valor triplet, e cada campo no tripleto contém um ou mais bytes. Quando codificado, CN=Users consiste em um OID e um valor de cadeia de caracteres. A notação decimal pontilhada do CN OID é 2.5.4.3 e o valor da cadeia de caracteres é "Usuários". O valor da cadeia de caracteres é representado como um **PRINTABLE_STRING** de dados. O valor de tipo numérico associado **OBJECT_ID** é sempre 0x06 e o tipo numérico associado a PRINTABLE_STRING **é** sempre 0x13. O comprimento do nome comum "Usuários" é 0x05 bytes. O comprimento do OID é 0x03 bytes e seu valor é 0x55 0x04 0x03.
 
 > [!Note]  
 > Para converter os dois primeiros dígitos do OID 2.5.4.3 no valor hexadecimal 0x55, multiplique o primeiro dígito do OID por 40 (2 x 40) e adicione o segundo dígito (5) antes de converter em hexadecimal.

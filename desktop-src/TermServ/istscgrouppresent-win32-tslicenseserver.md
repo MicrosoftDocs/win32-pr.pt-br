@@ -1,6 +1,6 @@
 ---
 title: Método IsTSCGroupPresent da classe Win32_TSLicenseServer
-description: O IsTSCGroupPresent não está mais disponível para uso a partir do Windows Server 2012.
+description: O IsTSCGroupPresent não está mais disponível para uso a partir de Windows Server 2012.
 ms.assetid: 2bbb00ff-4fb3-4a7a-a0e7-3daabf97d70a
 ms.tgt_platform: multiple
 keywords:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a16683b10bbfdd08812454d67ebc8ffc169b0ca0
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 4711236541999264a5a6f96066050f709cdcc087a751e0e56ddd6dea1b9103da
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104009145"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118351335"
 ---
 # <a name="istscgrouppresent-method-of-the-win32_tslicenseserver-class"></a>Método IsTSCGroupPresent da classe Win32 \_ TSLicenseServer
 
-\[O **IsTSCGroupPresent** não está mais disponível para uso a partir do Windows Server 2012.\]
+\[O **IsTSCGroupPresent** não está mais disponível para uso a partir de Windows Server 2012.\]
 
 Não há suporte para o método.
 
@@ -54,7 +54,7 @@ Valor booliano que indica se o grupo local de computadores Terminal Server exist
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna o **WBEM \_ E \_ não \_ tem suporte**.
 
@@ -64,7 +64,7 @@ Retorna o **WBEM \_ E \_ não \_ tem suporte**.
 
 Você deve ser um membro do grupo Administradores para chamar esse método.
 
-Os arquivos de formato MOF (MOF) contêm as definições de classes de Instrumentação de Gerenciamento do Windows (WMI). Os arquivos MOF não são instalados como parte do SDK (Software Development Kit) do Microsoft Windows. Eles são instalados no servidor quando você adiciona a função associada usando o Gerenciador do Servidor. Para obter mais informações sobre arquivos MOF, consulte [formato MOF (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
+os arquivos de formato MOF (MOF) contêm as definições de classes de Instrumentação de Gerenciamento do Windows (WMI). os arquivos MOF não são instalados como parte do SDK (Software Development Kit) do Microsoft Windows. Eles são instalados no servidor quando você adiciona a função associada usando o Gerenciador do Servidor. Para obter mais informações sobre arquivos MOF, consulte [formato MOF (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
 
 ## <a name="requirements"></a>Requisitos
 

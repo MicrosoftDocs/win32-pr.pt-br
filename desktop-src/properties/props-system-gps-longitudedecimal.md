@@ -1,19 +1,19 @@
 ---
-description: Indica a longitude com base na referência em PKEY \_ GPS \_ LongitudeRef. Calculado de PKEY \_ GPS \_ LONGITUDENUMERATOR e PKEY \_ GPS \_ LongitudeDenominator.
+description: Indica a longitude com base na referência em \_ LongitudeRef do GPS \_ PKEY. Calculado de \_ LongitudeNumerator de GPS PKEY \_ e \_ \_ LongitudeDenominator PKEY GPS.
 ms.assetid: 3b5b421f-efdc-4a23-a6dd-58a4fe80431a
-title: System. GPS. LongitudeDecimal
+title: System.GPS.LongitudeDecimal
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 66381171ae338345dbc08ffdeedf246925769594
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e4cd7b4a25520547075859cd850f49320cf5de821c8dc08c3b62b4121d9cbd8d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103921116"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118466502"
 ---
-# <a name="systemgpslongitudedecimal"></a>System. GPS. LongitudeDecimal
+# <a name="systemgpslongitudedecimal"></a>System.GPS.LongitudeDecimal
 
-Indica a longitude com base na referência em PKEY \_ GPS \_ LongitudeRef. Calculado de PKEY \_ GPS \_ LONGITUDENUMERATOR e PKEY \_ GPS \_ LongitudeDenominator
+Indica a longitude com base na referência em \_ LongitudeRef do GPS \_ PKEY. Calculado de \_ LongitudeNumerator de GPS PKEY \_ e \_ LongitudeDenominator de GPS PKEY \_
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8"></a>Windows 10, versão 1703, Windows 10, versão 1607, Windows 10, versão 1511, Windows 10, versão 1507, Windows 8.1, Windows 8
 
@@ -33,13 +33,13 @@ propertyDescription
 
 ## <a name="remarks"></a>Comentários
 
-Os valores de PKEY são definidos em Propkey. h.
+Os valores PKEY são definidos em Propkey.h.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[propertyDescription](./propdesc-schema-propertydescription.md)
+[Propertydescription](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -48,19 +48,19 @@ Os valores de PKEY são definidos em Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[numberFormat](./propdesc-schema-numberformat.md)
+[Numberformat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -75,7 +75,7 @@ Os valores de PKEY são definidos em Propkey. h.
 [editControl](./propdesc-schema-editcontrol.md)
 </dt> <dt>
 
-[filterControl](./propdesc-schema-filtercontrol.md)
+[Filtercontrol](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
 [queryControl](./propdesc-schema-querycontrol.md)

@@ -3,7 +3,7 @@ title: LVN_ITEMCHANGED código de notificação (commctrl. h)
 description: Notifica uma janela pai do controle de exibição de lista que um item foi alterado. Esse código de notificação é enviado na forma de uma mensagem de notificação do WM \_ .
 ms.assetid: d5f0b4e7-0d0c-4021-942b-71fd31880599
 keywords:
-- LVN_ITEMCHANGED de código de notificação controles do Windows
+- LVN_ITEMCHANGED código de notificação Windows controles
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c856292e9b94590b50593a6c3c5f145497f47f28
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: bea129a1b62b442b0fb545f29a57e9eab0d6d1bae057996df5bc269d9a4296d0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105753574"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117830380"
 ---
 # <a name="lvn_itemchanged-notification-code"></a>Código de notificação LVN com \_ alterações
 
@@ -45,7 +45,7 @@ Ponteiro para uma estrutura [**NMLISTVEIW**](/windows/win32/api/commctrl/ns-comm
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Sem valor de retorno.
 
@@ -59,9 +59,9 @@ Se um controle de exibição de lista tiver o estilo [**LVS \_ OWNERDATA**](list
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 
 

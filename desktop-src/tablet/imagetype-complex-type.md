@@ -1,5 +1,5 @@
 ---
-description: Define o tipo que contém as informações binárias de uma imagem em uma nota de Diário.
+description: Define o tipo que contém as informações binárias de uma imagem em uma nota do diário.
 ms.assetid: 03bfb45b-4f8c-480e-85db-59e1608a09fa
 title: Tipo complexo ImageType
 ms.topic: reference
@@ -21,7 +21,7 @@ ms.locfileid: "118220922"
 ---
 # <a name="imagetype-complex-type"></a>Tipo complexo ImageType
 
-Define o tipo que contém as informações binárias de uma imagem em uma nota de Diário.
+Define o tipo que contém as informações binárias de uma imagem em uma nota do diário.
 
 ``` syntax
 <xs:complexType name="ImageType" />
@@ -33,7 +33,7 @@ Define o tipo que contém as informações binárias de uma imagem em uma nota d
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho do XP Tablet PC \[ Edition\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do XP Tablet PC Edition\]<br/> |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                     |
 
 
@@ -42,7 +42,7 @@ Define o tipo que contém as informações binárias de uma imagem em uma nota d
 
 <dl> <dt>
 
-[**ComplexType BackgroundImageType**](backgroundimagetype-complex-type.md)
+[**ComplexType de BackgroundImagetype**](backgroundimagetype-complex-type.md)
 </dt> </dl>
 
  

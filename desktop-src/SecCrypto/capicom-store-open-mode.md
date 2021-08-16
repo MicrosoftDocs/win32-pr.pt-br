@@ -1,7 +1,7 @@
 ---
-description: Usado com o método Store. Open para indicar como um repositório de certificados deve ser aberto.
+description: Usado com o método Store.Open para indicar como um armazenamento de certificados deve ser aberto.
 ms.assetid: 6ec87b8c-9431-4ecc-bd90-943cfe2df1c2
-title: Enumeração de CAPICOM_STORE_OPEN_MODE (CAPICOM. h)
+title: CAPICOM_STORE_OPEN_MODE enumeração (Capicom.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - Capicom.h
-ms.openlocfilehash: 61fe8be0bdf75db5204066563ca07f8225678f7d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ebd46b751f4a098361618f3b6e992e4333425f501bf6afdedfca047e921ad7ed
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105752743"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117772053"
 ---
-# <a name="capicom_store_open_mode-enumeration"></a>\_Enumeração do \_ modo de abertura do armazenamento CAPICOM \_
+# <a name="capicom_store_open_mode-enumeration"></a>Enumeração CAPICOM \_ STORE \_ OPEN \_ MODE
 
-O tipo de enumeração do modo de armazenamento CAPICOM \_ \_ \_ é usado com o método [**Store. Open**](store-open.md) para indicar como um repositório de certificados deve ser aberto.
+O tipo de enumeração CAPICOM STORE OPEN MODE é usado com o método Store.Open para indicar como um armazenamento \_ \_ de \_ certificados deve ser aberto. [](store-open.md)
 
 ## <a name="members"></a>Membros
 
@@ -30,21 +30,21 @@ O tipo de enumeração do modo de armazenamento CAPICOM \_ \_ \_ é usado com o 
 
 | Membro                                      | DESCRIÇÃO                                                                                                                                                              | Valor |
 |---------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------|
-| **CAPICOM de \_ leitura do armazenamento \_ \_ \_**        | Abra o repositório no modo somente leitura.<br/>                                                                                                                             | 0     |
-| **o CAPICOM de \_ \_ leitura e \_ \_ gravação aberta**       | Abra o repositório no modo de leitura/gravação.<br/>                                                                                                                            | 1     |
-| **\_ \_ \_ máximo permitido de armazenamento \_ de CAPICOM**  | Abra o repositório no modo de leitura/gravação se o usuário tiver permissões de leitura/gravação. Se o usuário não tiver permissões de leitura/gravação, abra o repositório no modo somente leitura.<br/> | 2     |
-| **CAPICOM \_ Store \_ abrir \_ \_ somente existente**    | Abrir somente repositórios existentes; Não crie um novo repositório. Introduzido por CAPICOM 2,0.<br/>                                                                              | 128   |
-| **o CAPICOM de \_ Store \_ aberto \_ incluem \_ arquivados** | Inclua certificados arquivados ao usar o repositório. Introduzido por CAPICOM 2,0.<br/>                                                                                | 256   |
+| **CAPICOM \_ STORE SOMENTE LEITURA \_ \_ \_ ABERTA**        | Abra o armazenamento no modo somente leitura.<br/>                                                                                                                             | 0     |
+| **CAPICOM \_ STORE \_ OPEN \_ READ \_ WRITE**       | Abra o armazenamento no modo de leitura/gravação.<br/>                                                                                                                            | 1     |
+| **CAPICOM \_ STORE \_ OPEN \_ MAXIMUM \_ ALLOWED**  | Abra o armazenamento no modo de leitura/gravação se o usuário tiver permissões de leitura/gravação. Se o usuário não tiver permissões de leitura/gravação, abra o armazenamento no modo somente leitura.<br/> | 2     |
+| **CAPICOM \_ STORE ABRIR SOMENTE \_ \_ EXISTENTE \_**    | Abrir somente lojas existentes; não crie um novo armazenamento. Introduzido pelo CAPICOM 2.0.<br/>                                                                              | 128   |
+| **CAPICOM \_ STORE \_ OPEN \_ INCLUDE \_ ARCHIVED** | Inclua certificados arquivados ao usar o armazenamento. Introduzido pelo CAPICOM 2.0.<br/>                                                                                | 256   |
 
 
 
 ## <a name="remarks"></a>Comentários
 
-Ao usar a enumeração do modo de abertura do armazenamento CAPICOM \_ \_ \_ , somente uma das seguintes configurações pode ser usada.
+Ao usar a enumeração CAPICOM \_ STORE \_ OPEN \_ MODE, apenas uma das configurações a seguir pode ser usada.
 
--   CAPICOM de \_ leitura do armazenamento \_ \_ \_
--   o CAPICOM de \_ \_ leitura e \_ \_ gravação aberta
--   \_ \_ \_ máximo permitido de armazenamento \_ de CAPICOM
+-   CAPICOM \_ STORE SOMENTE LEITURA \_ \_ \_ ABERTA
+-   CAPICOM \_ STORE \_ OPEN \_ READ \_ WRITE
+-   CAPICOM \_ STORE \_ OPEN \_ MAXIMUM \_ ALLOWED
 
 ## <a name="requirements"></a>Requisitos
 
@@ -52,8 +52,8 @@ Ao usar a enumeração do modo de abertura do armazenamento CAPICOM \_ \_ \_ , s
 
 | Requisito | Valor |
 |----------------------------|--------------------------------------------------------------------------------------|
-| Redistribuível<br/> | CAPICOM 2,0 ou posterior no Windows Server 2003 e no Windows XP<br/>                |
-| parâmetro<br/>          | <dl> <dt>CAPICOM. h</dt> </dl> |
+| Redistribuível<br/> | CAPICOM 2.0 ou posterior no Windows Server 2003 e Windows XP<br/>                |
+| Cabeçalho<br/>          | <dl> <dt>Capicom.h</dt> </dl> |
 
 
 
@@ -61,7 +61,7 @@ Ao usar a enumeração do modo de abertura do armazenamento CAPICOM \_ \_ \_ , s
 
 <dl> <dt>
 
-[**Store. Open**](store-open.md)
+[**Store.Open**](store-open.md)
 </dt> </dl>
 
  

@@ -1,7 +1,7 @@
 ---
-description: O método GetPropById do objeto Item usa a ID de uma propriedade de item para retornar seu valor.
+description: O método GetPropById do objeto item usa a ID de uma propriedade item para retornar seu valor.
 ms.assetid: 00f7a91c-fd55-4016-a932-f710045a14b8
-title: Método Item.GetPropById
+title: Método item. GetPropById
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -20,9 +20,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118208370"
 ---
-# <a name="itemgetpropbyid-method"></a>Método Item.GetPropById
+# <a name="itemgetpropbyid-method"></a>Método item. GetPropById
 
-O **método GetPropById** do [**objeto Item**](-wia-item.md) usa a ID de uma propriedade de item para retornar seu valor.
+O método **GetPropById** do objeto [**Item**](-wia-item.md) usa a ID de uma propriedade item para retornar seu valor.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -50,15 +50,15 @@ Especifica a ID da propriedade.
 
 ## <a name="return-value"></a>Valor retornado
 
-Tipo: **VARIANT**
+Tipo: **variante**
 
-Esse método retorna o valor da propriedade especificada pela *ID*.
+Esse método retorna o valor da propriedade especificada por *ID*.
 
 ## <a name="remarks"></a>Comentários
 
-Use esse método para encontrar o valor de uma propriedade de item de sua ID. Para ver uma lista de IDs de propriedade, consulte [Definições de constante](-wia-wia-property-constant-definitions.md)de propriedade WIA . Para obter informações sobre as propriedades em si, consulte [Constantes de propriedade WIA](-wia-wia-property-constants.md).
+Use este método para localizar o valor de uma propriedade de item de sua ID. Para obter uma lista de IDs de propriedade, consulte [definições de constante de propriedade WIA](-wia-wia-property-constant-definitions.md). Para obter informações sobre as próprias propriedades, consulte [constantes da propriedade WIA](-wia-wia-property-constants.md).
 
-Para aplicativos Visual Basic Microsoft, adicione uma referência à "biblioteca de tipos Windows Aquisição de Imagem 1.01". As seguintes constantes definidas nesse arquivo são válidas somente para itens raiz (itens de dispositivo):
+para aplicativos Microsoft Visual Basic, adicione uma referência a "biblioteca de tipos do Windows Image Acquisition 1, 1". As seguintes constantes definidas nesse arquivo são válidas somente para itens raiz (itens de dispositivo):
 
 ``` syntax
 const FirmwareVersion = 1026
@@ -114,7 +114,7 @@ const TransparecnyAdapterSelect = 3102
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo a seguir demonstra o uso do **método GetPropById** para recuperar um valor da propriedade.
+O exemplo a seguir demonstra o uso do método **GetPropById** para recuperar um valor de propriedade.
 
 
 ```JScript
@@ -150,9 +150,9 @@ Next
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 2000 Professional, Windows aplicativos da área de \[ trabalho XP\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                                          |
-| DLL<br/>                      | <dl> <dt>Wiascr.dll (versão 4.90 ou posterior)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 2000 Professional, \[ somente aplicativos de área de trabalho do Windows XP\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                                          |
+| DLL<br/>                      | <dl> <dt>Wiascr.dll (versão 4,90 ou posterior)</dt> </dl> |
 
 
 

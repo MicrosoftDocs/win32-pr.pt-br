@@ -1,5 +1,5 @@
 ---
-description: Como usar a API de Registro de Certificado para estender as funcionalidades do Serviços de Certificados do Active Directory.
+description: Como usar a API de Registro de Certificado para estender os recursos do Serviços de Certificados do Active Directory.
 ms.assetid: a38c6974-609b-4a60-98da-ad8e0a8fd58f
 title: Usando a API de Registro de Certificado
 ms.topic: article
@@ -13,7 +13,7 @@ ms.locfileid: "117774251"
 ---
 # <a name="using-the-certificate-enrollment-api"></a>Usando a API de Registro de Certificado
 
-As seções a seguir discutem como usar a API de Registro de Certificado para estender os recursos de Serviços de Certificados do Active Directory.
+As seções a seguir discutem como usar a API de Registro de Certificado para estender os recursos do Serviços de Certificados do Active Directory.
 
 -   [Mapeamento Xenroll.dll para CertEnroll.dll](mapping-xenroll-dll-to-certenroll-dll.md)
 -   [Usando os exemplos incluídos](using-the-included-samples.md)

@@ -462,33 +462,33 @@
             - name: Constantes
               href: '-wia-constants.md'
               items:
-                - name: Constantes de propriedade do dispositivo de câmera
+                - name: Constantes de Propriedade do dispositivo Camera
                   href: '-wia-wiaitempropcameradevice.md'
-                - name: Constantes de propriedade de item WIA da câmera
+                - name: Constantes da Propriedade Item WIA da câmera
                   href: '-wia-wiaitempropcameraitem.md'
-                - name: Constantes comuns de propriedade do dispositivo
+                - name: Constantes de propriedade de dispositivo comum
                   href: '-wia-wiaitempropcommondevice.md'
-                - name: Constantes comuns de propriedade de item WIA
+                - name: Constantes de propriedade de item WIA comuns
                   href: '-wia-wiaitempropcommonitem.md'
-                - name: Constantes de propriedade de informações do dispositivo
+                - name: Constantes da propriedade de informações do dispositivo
                   href: '-wia-wiadeviceinfoprop.md'
                 - name: Códigos de erro
                   href: '-wia-error-codes.md'
-                - name: Constantes de intenção de imagem
+                - name: Constantes da intenção de imagem
                   href: '-wia-imageintentconstants.md'
                 - name: Atributos de propriedade
                   href: '-wia-property-attributes.md'
-                - name: Constantes de propriedade do dispositivo do scanner
+                - name: Constantes de propriedade de dispositivo do scanner
                   href: '-wia-wiaitempropscannerdevice.md'
-                - name: Constantes de propriedade de item WIA do scanner
+                - name: Constantes da propriedade item do scanner WIA
                   href: '-wia-wiaitempropscanneritem.md'
                 - name: Constantes de propriedade de dispositivo WIA de vídeo
                   href: '-wia-wiaitempropvideodevice.md'
-                - name: GUIDs da categoria de item WIA 2.0
+                - name: 'GUIDs de categoria de item WIA 2,0'
                   href: '-wia-wia2-itemcategoryguids.md'
-                - name: Constantes de tamanho de página WIA 2.0
+                - name: 'Constantes de tamanho de página WIA 2,0'
                   href: '-wia-wia2-pagesizeconstants.md'
-                - name: Comandos de dispositivo WIA
+                - name: Comandos do dispositivo WIA
                   href: '-wia-wia-device-commands.md'
                 - name: Especificadores de tipo de dispositivo WIA
                   href: '-wia-wia-device-type-specifiers.md'
@@ -496,7 +496,7 @@
                   href: '-wia-wia-event-identifiers.md'
                 - name: Sinalizadores de tipo de item WIA
                   href: '-wia-wia-item-type-flags.md'
-                - name: Constantes de propriedade WIA
+                - name: Constantes da propriedade WIA
                   href: '-wia-wia-property-constants.md'
                 - name: WiaFlag
                   href: '-wia-wiaflag.md'
@@ -507,7 +507,7 @@
               href: '-wia-syntax-conventions.md'
             - name: Usando objetos de coleção WIA
               href: '-wia-using-wia-collection-objects.md'
-            - name: Definições constantes da propriedade WIA
+            - name: Definições de constante da propriedade WIA
               href: '-wia-wia-property-constant-definitions.md'
             - name: WiaItemPropertyId
               href: '-wia-wiaitempropertyid.md'
@@ -570,7 +570,7 @@
                   href: '-wia-iwiadispatchitem-thumbheight.md'
                 - name: Thumbnail
                   href: '-wia-iwiadispatchitem-thumbnail.md'
-                - name: Thumbwidth
+                - name: ThumbWidth
                   href: '-wia-iwiadispatchitem-thumbwidth.md'
                 - name: Tempo
                   href: '-wia-iwiadispatchitem-time.md'
@@ -585,7 +585,7 @@
                   href: '-wia-iwia-create.md'
                 - name: Dispositivos
                   href: '-wia-iwia-devices.md'
-            - name: Wia
+            - name: WIA
               href: '-wia-wia.md'
               items:
                 - name: Criar
@@ -598,25 +598,25 @@
                   href: '-wia--iwiaevents-ondevicedisconnected.md'
                 - name: OnTransferComplete
                   href: '-wia--iwiaevents-ontransfercomplete.md'
-    - name: Visão geral e tutoriais
+    - name: Visões gerais e tutoriais
       href: bumper-wia-overviews-and-tutorials.md
       items:
-        - name: Sobre a aquisição Windows imagem
+        - name: sobre a aquisição de imagem de Windows
           href: '-wia-about-windows-image-acquisition.md'
           items:
-            - name: Arquitetura do WIA
+            - name: Arquitetura WIA
               href: '-wia-wia-architecture.md'
-            - name: Compatibilidade COM OLS
+            - name: Compatibilidade do STI
               href: '-wia-sti-compatibility.md'
-            - name: Compatibilidade com o LTD
+            - name: Compatibilidade com TWAIN
               href: '-wia-twain-compatibility.md'
-            - name: WiA Gerenciador de Dispositivos
+            - name: Gerenciador de Dispositivos WIA
               href: '-wia-wia-device-manager.md'
-            - name: Biblioteca de Serviços do Minidriver wia
+            - name: Biblioteca de serviço minidriver WIA
               href: '-wia-wia-minidriver-service-library.md'
-            - name: WIA Minidriver
+            - name: Minidriver WIA
               href: '-wia-wia-minidriver.md'
-        - name: Usando a aquisição Windows imagem
+        - name: usando a aquisição de imagem Windows
           href: '-wia-using-windows-image-acquisition.md'
           items:
             - name: Usando objetos de dispositivo WIA
@@ -626,19 +626,19 @@
                   href: '-wia-selecting-a-device.md'
                 - name: Dispositivos de câmera WIA
                   href: '-wia-wia-camera-devices.md'
-                - name: Sobre a árvore de itens IWiaItem2
+                - name: Sobre a árvore de itens do IWiaItem2
                   href: '-wia-about-item-tree.md'
-                - name: Dispositivos de scanner WIA no WIA 1.0
+                - name: 'Dispositivos do scanner WIA no WIA 1,0'
                   href: '-wia-wia-scanner-devices.md'
             - name: Adquirindo imagens
               href: '-wia-acquiring-images.md'
             - name: Navegando em uma árvore de itens
               href: '-wia-navigating-an-item-tree.md'
-            - name: Registrando eventos wia
+            - name: Registrando eventos WIA
               href: '-wia-registering-wia-events.md'
             - name: Usando enumeradores WIA
               href: '-wia-using-wia-enumerators.md'
-            - name: Lendo e configurando propriedades do WIA
+            - name: Lendo e definindo propriedades WIA
               href: '-wia-reading-and-setting-wia-properties.md'
               items:
                 - name: Validação da propriedade WIA

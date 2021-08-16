@@ -4,12 +4,12 @@ description: Instrução Geometry Shader que conclui a topologia primitiva atual
 ms.assetid: 9B28E33D-F518-4844-BE3F-BE61B5F08B4F
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7c462d2f4dc2e0c6b4076f577610c93794e890af
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: 34357c05cdd9506ec480d5021db5b330971de9fce7fd70ce9909658be9bb8c4d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104967094"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117908820"
 ---
 # <a name="cut-sm4---asm"></a>recortar (sm4-ASM)
 
@@ -22,7 +22,7 @@ Instrução Geometry Shader que conclui a topologia primitiva atual (se algum v�
 
 
 
- 
+ 
 
 ## <a name="remarks"></a>Comentários
 
@@ -47,7 +47,7 @@ Essa instrução se aplica aos seguintes estágios de sombreador:
 
 
 
- 
+ 
 
 ## <a name="minimum-shader-model"></a>Modelo de sombreamento mínimo
 
@@ -66,7 +66,7 @@ Essa função tem suporte nos seguintes modelos de sombreador.
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -75,9 +75,9 @@ Essa função tem suporte nos seguintes modelos de sombreador.
 [Assembly do Shader Model 4 (DirectX HLSL)](dx-graphics-hlsl-sm4-asm.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

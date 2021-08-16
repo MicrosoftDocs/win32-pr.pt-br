@@ -1,108 +1,108 @@
 ---
 title: Barra de tarefas
-description: A barra de tarefas é o ponto de acesso para programas exibidos na área de trabalho. Com os novos recursos da barra de tarefas do Windows 7, os usuários podem dar comandos, acessar recursos e exibir o status do programa diretamente na barra de tarefas.
+description: A barra de tarefas é o ponto de acesso para programas exibidos na área de trabalho. com os novos recursos da barra de tarefas do Windows 7, os usuários podem fornecer comandos, acessar recursos e exibir o status do programa diretamente na barra de tarefas.
 ms.assetid: c00e558a-313f-4741-a4b2-7d738f4544fa
 ms.topic: article
 ms.date: 10/20/2020
-ms.openlocfilehash: c3e549e665f0200a448144ddf7202b258e88ff26
-ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
+ms.openlocfilehash: 86b63e5f3b3dc1e8cecba78cbb1599c305d738250d92f76055596226c9028727
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111443387"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117854045"
 ---
 # <a name="taskbar"></a>Barra de tarefas
 
 > [!NOTE]
-> Este guia de design foi criado para o Windows 7 e não foi atualizado para versões mais recentes do Windows. Grande parte das diretrizes ainda se aplica em princípio, mas a apresentação e os exemplos não refletem nossas [diretrizes de design atuais.](/windows/uwp/design/)
+> este guia de design foi criado para o Windows 7 e não foi atualizado para versões mais recentes do Windows. Grande parte da orientação ainda se aplica em princípio, mas a apresentação e os exemplos não refletem nossas [diretrizes de design atuais](/windows/uwp/design/).
 
-A barra de tarefas é o ponto de acesso para programas exibidos na área de trabalho. Com os novos recursos da barra de tarefas do Windows 7, os usuários podem dar comandos, acessar recursos e exibir o status do programa diretamente na barra de tarefas.
+A barra de tarefas é o ponto de acesso para programas exibidos na área de trabalho. com os novos recursos da barra de tarefas do Windows 7, os usuários podem fornecer comandos, acessar recursos e exibir o status do programa diretamente na barra de tarefas.
 
-A barra de tarefas é o ponto de acesso para programas exibidos na área de trabalho, mesmo que o programa seja minimizado. Esses programas têm presença na área de trabalho. Com a barra de tarefas, os usuários podem exibir as janelas primárias abertas e determinadas janelas secundárias na área de trabalho e podem alternar rapidamente entre elas.
+A barra de tarefas é o ponto de acesso para os programas exibidos na área de trabalho, mesmo que o programa seja minimizado. Esses programas são considerados com presença na área de trabalho. Com a barra de tarefas, os usuários podem exibir as janelas primárias abertas e determinadas janelas secundárias na área de trabalho e podem alternar rapidamente entre elas.
 
-![captura de tela da barra de tarefas com recursos em destaque ](images/winenv-taskbar-image1.png)
+![captura de tela da barra de tarefas com recursos chamados ](images/winenv-taskbar-image1.png)
 
-A barra de tarefas do Microsoft Windows.
+a barra de tarefas do Microsoft Windows.
 
-Os controles na barra de tarefas são chamados de botões da barra de tarefas. Quando um programa cria uma janela primária (ou uma janela secundária com determinadas características), o Windows adiciona um botão de barra de tarefas para essa janela e a remove quando essa janela é fechada.
+Os controles na barra de tarefas são chamados de botões da barra de tarefas. quando um programa cria uma janela primária (ou uma janela secundária com determinadas características), Windows adiciona um botão da barra de tarefas para essa janela e o remove quando essa janela é fechada.
 
-Programas projetados para Windows 7 podem aproveitar esses novos recursos de botão da barra de tarefas:
+os programas projetados para o Windows 7 podem aproveitar esses novos recursos de botão da barra de tarefas:
 
--   As Listas de Saltos fornecem acesso rápido a destinos usados com frequência (como arquivos, pastas e links) e comandos por meio de um menu de contexto acessível no botão de barra de tarefas do programa e menu Iniciar item, mesmo se o programa não estiver em execução no momento.
--   As barras de ferramentas em miniatura fornecem acesso rápido aos comandos usados com frequência para uma janela específica. As barras de ferramentas em miniatura aparecem na miniatura do botão da barra de tarefas.
--   Os ícones de sobreposição mostram a alteração do status no ícone do botão da barra de tarefas do programa.
--   As barras de progresso mostram o progresso de tarefas de execução longa no botão da barra de tarefas do programa.
--   Os botões da barra de tarefas da sub-janela permitem que os usuários usem miniaturas do botão da barra de tarefas para alternar diretamente para guias de janela, janelas de projeto, janelas filho MDI (interface MDI) e janelas secundárias.
--   Os botões da barra de tarefas fixados permitem que os usuários fixem botões de programa na barra de tarefas para fornecer acesso rápido aos programas mesmo quando eles não estão em execução.
+-   as listas de atalhos fornecem acesso rápido a destinos usados com frequência (como arquivos, pastas e links) e comandos por meio de um menu de contexto acessível no botão da barra de tarefas do programa e menu Iniciar item, mesmo que o programa não esteja em execução no momento.
+-   As barras de ferramentas de miniatura fornecem acesso rápido a comandos usados com frequência para uma janela específica. As barras de ferramentas de miniatura aparecem na miniatura do botão da barra de tarefas.
+-   Ícones de sobreposição mostram a alteração do status no ícone do botão da barra de tarefas do programa.
+-   As barras de progresso mostram o progresso das tarefas de execução longa no botão da barra de tarefas do programa.
+-   Os botões da barra de tarefas da subjanela permitem que os usuários usem miniaturas de botão da barra de tarefas para alternar diretamente para guias de janela, janelas de projeto, janelas filhas MDI (interface de vários documentos) e janelas secundárias.
+-   Botões de barra de tarefas fixados permitem que os usuários fixem botões de programa na barra de tarefas para fornecer acesso rápido a programas mesmo quando eles não estão em execução.
 
-Tecnicamente, a barra de tarefas abrange toda a barra do botão Iniciar até a área de notificação; mais comumente, no entanto, a barra de tarefas refere-se apenas à área que contém os botões da barra de tarefas. Para várias configurações de monitor, apenas um monitor tem uma barra de tarefas e esse monitor é o monitor padrão.
+Tecnicamente, a barra de tarefas estende a barra inteira do botão Iniciar para a área de notificação; mais comumente, no entanto, a barra de tarefas refere-se apenas à área que contém os botões da barra de tarefas. Para várias configurações de monitor, apenas um monitor tem uma barra de tarefas e esse monitor é o monitor padrão.
 
-**Observação:** As diretrizes relacionadas à [área de](winenv-desktop.md)trabalho, à área [de notificação](winenv-notification.md)e ao gerenciamento [de janelas](win-window-mgt.md) são apresentadas em artigos separados.
+**Observação:** As diretrizes relacionadas à [área de trabalho](winenv-desktop.md), área de [notificação](winenv-notification.md)e gerenciamento de [janelas](win-window-mgt.md) são apresentadas em artigos separados.
 
-## <a name="is-this-the-right-user-interface"></a>Essa é a interface do usuário certa?
+## <a name="is-this-the-right-user-interface"></a>Esta é a interface do usuário correta?
 
-Programas projetados para o Windows 7 podem aproveitar esses recursos de botão da barra de tarefas. Faça as seguintes perguntas importantes para determinar se deve ou não usá-las:
+os programas criados para o Windows 7 podem aproveitar esses recursos do botão da barra de tarefas. Faça as seguintes perguntas importantes para determinar se elas devem ser usadas ou não:
 
-**Listas de saltos**
+**Listas de atalhos**
 
--   **Os usuários geralmente precisam iniciar novas tarefas usando seu programa?** Se sim, considere fornecer um Lista de Atalhos. Embora as Listas de Saltos possam ser usadas para outras finalidades, a maioria dos cenários envolve o início de uma nova tarefa.
--   **Os usuários geralmente precisam acessar arquivos, pastas, links ou outros recursos usados recentemente ou com frequência?** Se sim, considere fornecer um Lista de Atalhos para acessar esses recursos úteis.
+-   **Os usuários geralmente precisam iniciar novas tarefas usando seu programa?** Nesse caso, considere fornecer uma lista de atalhos. Embora as listas de atalhos possam ser usadas para outras finalidades, a maioria dos cenários envolve a inicialização de uma nova tarefa.
+-   **Os usuários geralmente precisam acessar arquivos, pastas, links ou outros recursos usados recentemente ou frequentemente?** Nesse caso, considere fornecer uma lista de atalhos para acessar esses recursos úteis.
 
-    ![captura de tela da barra de tarefas com a lista de saltos do Internet Explorer ](images/winenv-taskbar-image2.png)
+    ![captura de tela da barra de tarefas com a lista de atalhos do Internet Explorer ](images/winenv-taskbar-image2.png)
 
-    Neste exemplo, o Windows Internet Explorer usa um Lista de Atalhos para apresentar páginas visitadas com frequência.
+    neste exemplo, Windows o Internet Explorer usa uma lista de atalhos para apresentar páginas visitadas com frequência.
 
--   **Os usuários geralmente precisam de acesso rápido a um pequeno número de comandos do programa ao usar outros programas, mesmo se o programa não estiver em execução?** Se sim, considere fornecer um Lista de Atalhos com esses comandos usados com frequência. Esses comandos devem funcionar mesmo se o programa não estiver em execução e devem ser aplicados a todo o programa, não a uma janela específica. Como alternativa, considere fornecer uma barra de ferramentas em miniatura para comandos que se aplicam a uma janela específica.
+-   **Os usuários geralmente precisam de acesso rápido a um pequeno número de comandos do seu programa ao usar outros programas, mesmo que o programa não esteja em execução?** Nesse caso, considere fornecer uma lista de atalhos com esses comandos usados com frequência. Esses comandos devem funcionar mesmo se o programa não estiver em execução e devem ser aplicados a todo o programa, não a uma janela específica. Como alternativa, considere fornecer uma barra de ferramentas de miniatura para comandos que se aplicam a uma janela específica.
 
-    ![captura de tela da barra de tarefas com a lista de saltos de anotações sticky ](images/winenv-taskbar-image3.png)
+    ![captura de tela da barra de tarefas com a lista de atalhos de notas auto-adesivas ](images/winenv-taskbar-image3.png)
 
-    Neste exemplo, o Notas Autoadesivas permite que os usuários criem uma nova observação rapidamente ao usar outros programas.
+    neste exemplo, o acessório Notas Autoadesivas permite que os usuários criem uma nova anotação rapidamente ao usar outros programas.
 
--   **Você está promovendo recursos novos, de uso único ou difíceis de encontrar?** Nesse caso, não use Listas de Saltos porque elas não se destinam a essa finalidade. Em vez disso, aprimora a descoberta desses comandos diretamente no programa.
+-   **Você está promovendo recursos novos, de uso único ou difíceis de encontrar?** Nesse caso, não use listas de atalhos porque elas não se destinam a essa finalidade. Em vez disso, melhore a descoberta de tais comandos diretamente no programa.
 
-**Barras de ferramentas em miniatura**
+**Barras de ferramentas de miniatura**
 
-Todas as condições a seguir se aplicam?
+Todas as seguintes condições se aplicam?
 
--   **Os comandos se aplicam a uma janela específica?** As barras de ferramentas em miniatura são para comandos que se aplicam a tarefas existentes, enquanto Lista de Atalhos comandos são para iniciar novas tarefas.
--   **Os usuários precisam interagir com uma tarefa em execução rapidamente ao usar outros programas?** Se sim, as barras de ferramentas em miniatura são uma boa opção. As barras de ferramentas em miniatura podem apresentar um máximo de sete comandos, mas um máximo de cinco comandos geralmente é preferencial.
--   **Os comandos são imediatos?** Ou seja, eles não exigem entrada adicional? As barras de ferramentas em miniatura precisam ter comandos imediatos para serem eficientes, enquanto as Listas de Salto funcionam melhor com comandos que exigem entrada adicional.
+-   **Os comandos se aplicam a uma janela específica?** As barras de ferramentas de miniatura são para comandos que se aplicam a tarefas existentes, enquanto comandos de lista de atalhos são para iniciar novas tarefas.
+-   **Os usuários precisam interagir com uma tarefa em execução rapidamente ao usar outros programas?** Nesse caso, as barras de ferramentas de miniatura são uma boa opção. As barras de ferramentas de miniatura podem apresentar um máximo de sete comandos, mas um máximo de cinco comandos geralmente é preferencial.
+-   **Os comandos são imediatos?** Ou seja, eles não exigem entrada adicional? As barras de ferramentas de miniatura precisam ter comandos imediatos para serem eficientes, enquanto as listas de atalhos funcionam melhor com comandos que exigem entrada adicional.
 
     **Incorreto:**
 
     ![captura de tela da barra de tarefas com janelas sobrepostas ](images/winenv-taskbar-image4.png)
 
-    Comandos que exigem entrada adicional não funcionam bem em barras de ferramentas em miniatura.
+    Comandos que exigem entrada adicional não funcionam bem em barras de ferramentas de miniatura.
 
 -   **Os comandos são diretos?** Ou seja, os usuários podem interagir com eles usando um único clique? As barras de ferramentas precisam ter comandos diretos para serem eficientes.
--   **Os comandos são bem representados por ícones?** Os comandos da barra de ferramentas em miniatura são apresentados usando ícones, não rótulos de texto, enquanto Lista de Atalhos comandos são representados por rótulos de texto.
+-   **Os comandos são bem representados por ícones?** Os comandos da barra de ferramentas de miniatura são apresentados usando ícones que não são rótulos de texto, enquanto comandos de lista de atalhos são representados por rótulos de texto
 
     **Incorreto:**
 
-    ![captura de tela do comando em miniatura com o ícone ](images/winenv-taskbar-image5.png)
+    ![captura de tela do comando de miniatura com ícone ](images/winenv-taskbar-image5.png)
 
     Neste exemplo, o comando não é bem representado por ícones.
 
 **Ícones de sobreposição**
 
--   **O programa tem "presença da área de trabalho"?** Caso contrário, use um ícone de área de notificação. Nesse caso, considere usar um ícone de sobreposição em vez de colocar o status no ícone de área de notificação para programas projetados para o Windows 7. Isso garante que o ícone sempre estará visível (quando ícones grandes são usados) e consolida o programa com seu status em um só lugar.
+-   **O programa tem "presença de área de trabalho"?** Caso contrário, use um ícone de área de notificação em vez disso. nesse caso, considere usar um ícone de sobreposição em vez de colocar o status no ícone da área de notificação para programas criados para o Windows 7. Isso garante que o ícone sempre estará visível (quando ícones grandes forem usados) e consolida o programa com seu status em um único lugar.
 -   **O ícone de sobreposição é exibido temporariamente para mostrar uma alteração de status?** Nesse caso, um ícone de sobreposição pode ser apropriado, dependendo dos seguintes fatores:
-    -   **O status é útil e relevante ao usar outros programas?** Caso contrário, exibe as informações nas barras de [status](ctrl-status-bars.md) do programa ou em outra área de status do programa.
+    -   **O status é útil e relevante ao usar outros programas?** Caso contrário, exiba as informações nas [barras de status](ctrl-status-bars.md) do programa ou em outra área de status do programa.
 
         ![captura de tela da barra de status da janela do Internet Explorer ](images/winenv-taskbar-image7.png)
 
         Neste exemplo, a barra de status é usada porque o status não é útil ao usar outros programas.
 
-    -   **O status está mostrando o progresso?** Em caso afirmado, use uma barra de progresso do botão de barra de tarefas.
-    -   **O status é crítico? A ação imediata é necessária?** Nesse caso, exibe as informações de uma forma que exige atenção e não pode ser facilmente ignorada, como uma caixa [de diálogo](win-dialog-box.md).
+    -   **O status mostra o andamento?** Em caso afirmativo, use uma barra de progresso de botão da barra de tarefas.
+    -   **O status é crítico? A ação imediata é necessária?** Nesse caso, exiba as informações de uma maneira que exija atenção e não pode ser facilmente ignorada, como uma [caixa de diálogo](win-dialog-box.md).
 
 **Barras de progresso**
 
--   **Os comentários de progresso são úteis e relevantes ao usar outros programas?** Ou seja, os usuários provavelmente monitorarão o progresso ao usar outros programas e alterarão seu comportamento como resultado? Esse status útil e relevante geralmente é exibido usando uma caixa de diálogo de progresso sem modo ou uma página de progresso dedicada, mas não com um ponteiro ocupado, indicador de atividade ou barra de progresso em uma barra de status. Se o status não for útil ao usar outros programas, basta exibir os comentários de progresso diretamente no próprio programa.
+-   **Os comentários sobre o progresso são úteis e relevantes ao usar outros programas?** Ou seja, os usuários provavelmente podem monitorar o progresso ao usar outros programas e alterar seu comportamento como resultado? Esse status útil e relevante geralmente é exibido usando uma caixa de diálogo de progresso sem janela restrita ou uma página de progresso dedicada, mas não com um ponteiro ocupado, um indicador de atividade ou uma barra de progresso em uma barra de status. Se o status não for útil ao usar outros programas, basta exibir os comentários de progresso diretamente no próprio programa.
 
     **Correto:**
 
-    ![captura de tela da caixa de diálogo copiar com a barra de progresso ](images/winenv-taskbar-image8.png)
+    ![captura de tela da caixa de diálogo de cópia com barra de progresso ](images/winenv-taskbar-image8.png)
 
     **Incorreto:**
 
@@ -110,7 +110,7 @@ Todas as condições a seguir se aplicam?
 
     No exemplo incorreto, a barra de progresso do botão da barra de tarefas não é muito útil.
 
--   **A tarefa é contínua?** Se a tarefa nunca for concluída, não será necessário mostrar seu progresso. Exemplos de tarefas contínuas incluem verificações antivírus que não são iniciadas por usuários e indexação de arquivos.
+-   **A tarefa é contínua?** Se a tarefa nunca for concluída, não será necessário mostrar seu progresso. Exemplos de tarefas contínuas incluem verificações de antivírus que não são iniciadas pelos usuários e indexação de arquivos.
 
     **Incorreto:**
 
@@ -118,9 +118,9 @@ Todas as condições a seguir se aplicam?
 
     Neste exemplo, uma tarefa contínua não precisa mostrar o progresso.
 
-**Barras de tarefas da subá janela**
+**Barras de tarefas da subjanela**
 
--   **Seu programa contém guias, janelas de projeto, janelas filho MDI ou janelas secundárias para as que os usuários costumam querer alternar diretamente?** Se sim, dar a essas janelas suas próprias miniaturas de botão da barra de tarefas pode ser apropriado.
+-   **Seu programa contém guias, janelas de projeto, janelas filhas MDI ou janelas secundárias que os usuários geralmente desejariam mudar diretamente?** Se sim, dar a essas janelas suas próprias miniaturas de botão da barra de tarefas pode ser apropriado.
 
 ## <a name="design-concepts"></a>Conceitos de design
 
@@ -146,11 +146,11 @@ Certifique-se de fazer a pesquisa do usuário para certificar-se de que você es
     -   Folhas de propriedade
     -   Caixas de diálogo progresso sem modo
     -   Assistentes
--   **Para o Windows 7, use miniaturas de botão da barra de tarefas para agrupar os tipos de janela a seguir com o botão da barra de tarefas da janela primária em que ele foi lançado.** Cada programa (especificamente, cada programa percebido como um programa separado) deve ter um único botão de barra de tarefas.
+-   **Por Windows 7, use miniaturas do botão de barra de tarefas para agrupar os tipos de janela a seguir com o botão da barra de tarefas da janela primária em que ele foi lançado.** Cada programa (especificamente, cada programa percebido como um programa separado) deve ter um único botão de barra de tarefas.
 
     -   Janelas secundárias
     -   Guias do workspace
-    -   Janelas do projeto
+    -   Project janelas
     -   Janelas filho MDI
 
     **Correto:**
@@ -172,13 +172,13 @@ Certifique-se de fazer a pesquisa do usuário para certificar-se de que você es
     Neste exemplo, o Backup do Windows usa incorretamente dois botões de barra de tarefas para um único programa.
 
 -   **A restauração de uma janela primária também deve** restaurar todas as janelas secundárias, mesmo que essas janelas secundárias tenham seus próprios botões de barra de tarefas. Ao restaurar, coloque janelas secundárias sobre a janela primária.
--   **Para o Windows 7, programas que normalmente têm a presença da área de trabalho podem exibir temporariamente um botão de barra de tarefas para mostrar o status.** Faça isso somente se o programa normalmente for exibido na área de trabalho e os usuários interagirem com ele com frequência. Um programa que normalmente é executado sem a presença da área de trabalho deve usar seu ícone de área de notificação, mesmo que ele nem sempre seja visível.
+-   **Por Windows 7, programas que normalmente têm a presença da área de trabalho podem exibir temporariamente um botão de barra de tarefas para mostrar o status.** Faça isso somente se o programa normalmente for exibido na área de trabalho e os usuários interagirem com ele com frequência. Um programa que normalmente é executado sem a presença da área de trabalho deve usar seu ícone de área de notificação, mesmo que ele nem sempre seja visível.
 
     **Incorreto:**
 
     ![captura de tela do botão da barra de tarefas do Windows Sync Center ](images/winenv-taskbar-image14.png)
 
-    Neste exemplo, o Windows Central de Sincronização incorretamente usa um botão de barra de tarefas temporário para exibir o status. Em vez disso, ele deve usar seu ícone de área de notificação.
+    Neste exemplo, o Windows Central de Sincronização usa incorretamente um botão de barra de tarefas temporário para exibir o status. Em vez disso, ele deve usar seu ícone de área de notificação.
 
 ### <a name="icons"></a>Ícones
 
@@ -189,7 +189,7 @@ Certifique-se de fazer a pesquisa do usuário para certificar-se de que você es
 
     Neste exemplo, o ícone de botão da barra de tarefas do programa não tem informações importantes na área inferior direita.
 
--   **Não use sobreposições no ícone base** do programa, independentemente de seu programa usar ícones de sobreposição ou não. O uso de uma sobreposição no ícone base será confuso, pois os usuários terão que descobrir que ele não está se comunicando com o status.
+-   **Não use sobreposições no ícone base** do programa, independentemente de seu programa usar ícones de sobreposição ou não. O uso de uma sobreposição no ícone base será confuso porque os usuários terão que descobrir que ele não está se comunicando com o status.
 
     **Incorreto:**
 
@@ -234,102 +234,102 @@ Para ver exemplos e diretrizes gerais de ícone, consulte [Ícones](vis-icons.md
 
     | Sobreposição | Status |
     |---------------------------------------------------------------------------------------------------|----------------------------------|
-    | ![captura de tela de pequeno ícone de aviso ](images/winenv-taskbar-image20.png)<br/>               | Aviso<br/>               |
-    | ![captura de tela de pequeno ícone de erro ](images/winenv-taskbar-image21.png)<br/>                 | Erro<br/>                 |
-    | ![captura de tela de pequeno ícone desabilitado/desconectado ](images/winenv-taskbar-image22.png)<br/> | Desabilitado/desconectado<br/> |
-    | ![captura de tela do ícone pequeno bloqueado/offline ](images/winenv-taskbar-image23.png)<br/>       | Bloqueado/offline<br/>       |
+    | ![captura de tela do ícone de aviso pequeno ](images/winenv-taskbar-image20.png)<br/>               | Aviso<br/>               |
+    | ![captura de tela do ícone de erro pequeno ](images/winenv-taskbar-image21.png)<br/>                 | Erro<br/>                 |
+    | ![captura de tela do ícone pequeno desabilitado/desconectado ](images/winenv-taskbar-image22.png)<br/> | Desabilitado/Desconectado<br/> |
+    | ![captura de tela do pequeno ícone bloqueado/offline ](images/winenv-taskbar-image23.png)<br/>       | Bloqueado/Offline<br/>       |
 
     
 
      
 
--   **Para ícones de sobreposição personalizados, escolha um design facilmente reconhecível.** Use ícones de cor completa de 16x16 pixels de alta qualidade. Prefira ícones com contornos distintivos em ícones quadrados ou retangulares. Aplique as outras [diretrizes de ícone do estilo Aero](vis-icons.md) também.
--   **Mantenha o design de ícones de sobreposição personalizados simples.** Não tente comunicar ideias complexas, desconhecidas ou abstratas. Se você não puder considerar um ícone personalizado adequado, use um ícone de erro de ícone padrão ou aviso, em vez disso, quando apropriado. Esses ícones podem ser usados com eficiência para comunicar muitos tipos de status.
--   **Não altere o status com muita frequência.** Ícones de sobreposição não devem aparecer ruidosas, instáveis ou atenção de demanda. O olho é sensível às alterações no campo periférico da visão, portanto, as alterações de status precisam ser sutis.
-    -   **Não altere o ícone rapidamente.** Se o status subjacente for alterado rapidamente, faça com que o ícone reflita o status de alto nível.
+-   **Para ícones de sobreposição personalizados, escolha um design facilmente reconhecível.** Use ícones de cor completos de 16 x 16 pixels de alta qualidade. Prefira ícones com contornos distintos em vez de ícones em forma de quadrado ou retangular. Aplique as outras [diretrizes de ícone de estilo Aero](vis-icons.md) também.
+-   **Mantenha o design de ícones de sobreposição personalizados simples.** Não tente comunicar ideias complexas, desconhecidas ou abstratas. Se você não conseguir pensar em um ícone personalizado adequado, use um ícone padrão de erro ou ícone de aviso quando apropriado. Esses ícones podem ser usados com eficiência para comunicar muitos tipos de status.
+-   **Não altere o status com muita frequência.** Os ícones de sobreposição não devem parecer barulhentos, instável ou exigir atenção. O olho é sensível a alterações no campo periférico da visão, portanto, as alterações de status precisam ser sutis.
+    -   **Não altere o ícone rapidamente.** Se o status subjacente estiver mudando rapidamente, o ícone refletirá o status de alto nível.
 
         **Incorreto:**
 
-        ![captura de tela do ícone de sobreposição em dois Estados ](images/winenv-taskbar-image24.png)
+        ![captura de tela do ícone de sobreposição em dois estados ](images/winenv-taskbar-image24.png)
 
-        Neste exemplo, o ícone de sobreposição de alteração rápida exige atenção.
+        Neste exemplo, o ícone de sobreposição que muda rapidamente exige atenção.
 
-    -   **Não use animações.** Fazer isso é muito confuso.
-    -   **Não atualize o ícone.** Fazer isso é muito confuso. Se um evento exigir atenção imediata, use uma caixa de diálogo em vez disso. Se o evento precisar de atenção, use uma notificação.
+    -   **Não use animações.** Fazer isso é muito perigoso.
+    -   **Não flash do ícone.** Fazer isso é muito perigoso. Se um evento exigir atenção imediata, use uma caixa de diálogo. Se o evento precisar de atenção, use uma notificação.
 
-### <a name="taskbar-button-flashing"></a>Botão de barra de tarefas piscando
+### <a name="taskbar-button-flashing"></a>Botão da barra de tarefas piscando
 
--   **Use o botão da barra de tarefas piscando com moderação para exigir a atenção imediata do usuário para manter uma tarefa em andamento.** É difícil para os usuários se concentrarem enquanto um botão da barra de tarefas está piscando, portanto, suponha que eles interrompem o que estão fazendo para que parem. Embora piscar um botão da barra de tarefas seja melhor do que roubar o foco de entrada, botões de barra de tarefas piscantes ainda são muito intrusivos. Certifique-se de que a interrupção seja justificada, por exemplo, para indicar que o usuário precisa salvar os dados antes de fechar uma janela. Os programas inativos raramente devem exigir ação imediata. Não atualize o botão da barra de tarefas se a única coisa que o usuário precisa fazer é ativar o programa, ler uma mensagem ou ver uma alteração no status.
+-   **Use o botão da barra de tarefas piscando com moderação para exigir a atenção imediata do usuário para manter uma tarefa em execução.** É difícil para os usuários se concentrarem enquanto um botão da barra de tarefas está piscando, portanto, suponha que eles interrompam o que estão fazendo para fazê-lo parar. Ao piscar um botão de barra de tarefas é melhor do que roubar o foco de entrada, os botões da barra de tarefas intermitentes ainda são muito invasivos. Certifique-se de que a interrupção seja justificada, como para indicar que o usuário precisa salvar dados antes de fechar uma janela. Programas inativos raramente devem exigir ação imediata. Não ative o botão da barra de tarefas se a única coisa que o usuário precisa fazer é ativar o programa, ler uma mensagem ou ver uma alteração no status.
 -   **Se a ação imediata não for necessária, considere estas alternativas:**
-    -   Use uma [notificação de êxito de ação](mess-notif.md) para indicar que uma tarefa foi concluída.
-    -   Não fazer nada. Basta esperar que os usuários participem do problema na próxima vez que ativarem o programa. Geralmente, essa é a melhor opção.
--   **Se um programa inativo exigir atenção imediata, piscará o botão da barra de tarefas para chamar a atenção e deixá-lo realçado.** Não faça mais nada: Não restaure ou ative a janela e não jogue nenhum efeito de som. Em vez disso, respeite a seleção de estado da janela do usuário e deixe o usuário ativar a janela quando estiver pronto.
--   **Para janelas secundárias que têm um botão da barra de tarefas, pisque seu botão em vez do botão da barra de tarefas da janela principal.** Isso permite que os usuários participem diretamente da janela.
--   **Para janelas secundárias que não têm um botão da barra de tarefas, atualize o botão da barra de tarefas da janela principal e coloque a janela secundária sobre todas as outras janelas desse programa.** As janelas secundárias que exigem atenção devem ser mais altas para garantir que os usuários as vejam.
--   **Piscar apenas um botão da barra de tarefas para uma janela por vez.** Piscar mais de um botão é desnecessário e muito confuso.
--   **Remova o realce do botão da barra de tarefas quando o programa se tornar ativo.**
--   **Quando o programa se tornar ativo, verifique se há algo óbvio a fazer.** Normalmente, esse objetivo é feito exibindo uma caixa de diálogo que faz uma pergunta ou inicia uma ação.
+    -   Use uma [notificação de êxito de](mess-notif.md) ação para indicar que uma tarefa foi concluída.
+    -   Não fazer nada. Basta aguardar que os usuários participem do problema na próxima vez que ativarem o programa. Geralmente, essa é a melhor opção.
+-   **Se um programa inativo exigir atenção imediata, flash seu botão de barra de tarefas para chamar a atenção e deixá-lo realçada.** Não faça mais nada: não restaure nem ative a janela e não reproduza nenhum efeito de som. Em vez disso, respeitar a seleção de estado da janela do usuário e permitir que o usuário ative a janela quando estiver pronto.
+-   **Para janelas secundárias que têm um botão de barra de tarefas, flash seu botão em vez do botão da barra de tarefas da janela primária.** Isso permite que os usuários participem diretamente da janela.
+-   **Para janelas secundárias que não têm um botão de barra de tarefas, flash do botão da barra de tarefas da janela primária e colocar a janela secundária sobre todas as outras janelas para esse programa.** As janelas secundárias que exigem atenção devem ser mais alta para garantir que os usuários as vejam.
+-   **Flash apenas um botão de barra de tarefas para uma janela por vez.** A exibição de mais de um botão é desnecessária e muito distração.
+-   **Remova o realçador do botão da barra de tarefas depois que o programa ficar ativo.**
+-   **Quando o programa ficar ativo, certifique-se de que haja algo óbvio a fazer.** Normalmente, esse objetivo é realizado exibindo uma caixa de diálogo que faz uma pergunta ou inicia uma ação.
 
-### <a name="quick-launch-shortcuts"></a>Atalhos de início rápido
+### <a name="quick-launch-shortcuts"></a>Início Rápido atalhos
 
--   **Coloque atalhos de programa na área de início rápido somente se os usuários aceitarem.** Como o início rápido foi removido do Windows 7, os programas criados para o Windows 7 não devem adicionar atalhos de programa à área de início rápido ou fornecer opções para fazer isso.
+-   **Coloque atalhos de programa na área Início Rápido somente se os usuários optarem.** Como Início Rápido foi removido do Windows 7, os programas projetados para o Windows 7 não devem adicionar atalhos de programa à área Início Rápido ou fornecer opções para fazer isso.
 
-### <a name="jump-lists"></a>Listas de atalhos
+### <a name="jump-lists"></a>Listas de saltos
 
 **Projetar**
 
--   **Crie listas de atalhos para atender às metas dos seus usuários para suas tarefas diárias.** Considere:
-    -   **A finalidade do seu programa.** Pense no que os usuários têm mais probabilidade de fazer em seguida. Para programas de criação de documentos, é provável que os usuários retornem a documentos usados recentemente. Para programas que mostram conteúdo existente, os usuários podem querer acessar os recursos que usam com frequência. Para outros programas, talvez seja provável que os usuários executem tarefas que ainda não fizeram antes, como ler novas mensagens, assistir a novos vídeos ou verificar sua próxima reunião.
-    -   **O que os usuários se preocupam mais.** Pense em por que os usuários usariam a lista de atalhos em vez de outros meios. Por exemplo, é mais provável que os usuários se preocupam com os destinos explicitamente identificados como importantes (como os endereços da Web que os usuários colocaram na barra de links ou em favoritos, ou digitados em). Eles têm menos probabilidade de se preocupar com aqueles obtidos indiretamente ou com pouco esforço (como endereços Web visitados por meio de redirecionamento ou clicando em links).
+-   **Projete Listas de Saltos para atender às metas dos usuários para suas tarefas diárias.** Considere:
+    -   **A finalidade do programa.** Pense no que os usuários têm mais probabilidade de fazer em seguida. Para programas de criação de documentos, os usuários provavelmente retornarão aos documentos usados recentemente. Para programas que mostram conteúdo existente, os usuários podem querer acesso aos recursos que usam com frequência. Para outros programas, os usuários podem provavelmente realizar tarefas que não realizaram antes, como ler novas mensagens, assistir a novos vídeos ou verificar sua próxima reunião.
+    -   **O que os usuários mais se importam.** Pense em por que os usuários usariam o Lista de Atalhos em vez de outros meios. Por exemplo, os usuários têm maior probabilidade de se preocupar com destinos que identificaram explicitamente como importantes (como usuários de endereços Web colocados na barra de links ou em Favoritos ou digitados). Eles têm menos probabilidade de se preocupar com aqueles obtidos indiretamente ou com pouco esforço (como endereços Web visitados por meio de redirecionamento ou clicando em links).
 
         **Correto:**
 
-        ![captura de tela da lista de atalhos com um link para um destino ](images/winenv-taskbar-image25.png)
+        ![captura de tela da lista de saltos com um link para um destino ](images/winenv-taskbar-image25.png)
 
         **Incorreto:**
 
-        ![captura de tela da lista de atalhos com cinco links para o destino ](images/winenv-taskbar-image26.png)
+        ![captura de tela da lista de saltos com cinco links para o destino ](images/winenv-taskbar-image26.png)
 
-        No exemplo incorreto, a lista de atalhos contém muitos destinos aos quais os usuários provavelmente não se preocupam.
+        No exemplo incorreto, o Lista de Atalhos contém muitos destinos que os usuários provavelmente não se importam.
 
--   **Não torne os destinos muito granulares.** Tornar os destinos muito estreitos e específicos pode resultar em redundância, com várias maneiras de ir para o mesmo local. Por exemplo, em vez de listar páginas da Web individuais, liste home pages de nível superior em vez disso; em vez de listar músicas, listar álbuns.
+-   **Não torna os destinos muito granulares.** Tornar os destinos muito estreitos e específicos pode resultar em redundância, com várias maneiras de ir para o mesmo local. Por exemplo, em vez de listar páginas da Web individuais, liste home pages de nível superior; em vez de listar músicas, listar os álbums.
 
     **Correto:**
 
-    ![captura de tela da lista de atalhos organizada por grupos ](images/winenv-taskbar-image27.png)
+    ![captura de tela da lista de saltos organizada por grupos ](images/winenv-taskbar-image27.png)
 
     **Incorreto:**
 
-    ![captura de tela da lista de atalhos organizada por músicas ](images/winenv-taskbar-image28.png)
+    ![captura de tela da lista de saltos organizada por músicas ](images/winenv-taskbar-image28.png)
 
-    No exemplo incorreto, a listagem de músicas em uma lista de atalhos irá preenchê-la com um único álbum.
+    No exemplo incorreto, listar músicas em um Lista de Atalhos o preencherá com um único álbum.
 
--   **Não preencha todos os slots de lista de atalhos disponíveis se não for necessário.** Focalize o conteúdo da lista de atalhos nos itens mais úteis se o programa tiver apenas três itens úteis, forneça apenas três. Quanto mais itens em uma lista de atalhos, mais esforço é necessário para localizar qualquer item específico.
+-   **Não preencha todos os slots Lista de Atalhos disponíveis se não for necessário.** Concentre Lista de Atalhos conteúdo nos itens mais úteis se o programa tiver apenas três itens úteis, forneça apenas três. Quanto mais itens em um Lista de Atalhos, mais esforço será necessário para encontrar qualquer item específico.
 
-    ![captura de tela da lista de atalhos com um comando ](images/winenv-taskbar-image29.png)
+    ![captura de tela da lista de saltos com um comando ](images/winenv-taskbar-image29.png)
 
-    Neste exemplo, o acessório Notas Autoadesivas fornece um único comando de lista de atalhos, porque isso é tudo o que é necessário.
+    Neste exemplo, o Notas Autoadesivas acessórios fornece um único Lista de Atalhos, porque isso é tudo o que é necessário.
 
--   **Forneça dicas de ferramentas somente quando necessário para ajudar os usuários a entender os itens da lista de atalhos.** Evite dicas de ferramentas redundantes porque elas são uma distração desnecessária. Para obter mais diretrizes de dica de ferramenta, consulte [ToolTips and Infotips](ctrl-tooltips-and-infotips.md).
+-   **Forneça dicas de ferramenta somente quando necessário para ajudar os usuários a entender Lista de Atalhos itens.** Evite dicas de ferramenta redundantes porque elas são uma distração desnecessária. Para obter mais diretrizes de dica de ferramenta, consulte [Dicas de ferramenta e Infotips](ctrl-tooltips-and-infotips.md).
 
     **Incorreto:**
 
-    ![captura de tela da lista de atalhos com dica de ferramenta redundante ](images/winenv-taskbar-image30.png)
+    ![captura de tela da lista de saltos com dica de ferramenta redundante ](images/winenv-taskbar-image30.png)
 
-    Neste exemplo, a dica de ferramenta de lista de atalhos é redundante.
+    Neste exemplo, a dica Lista de Atalhos ferramenta é redundante.
 
-**Recursos da lista de atalhos vs. recursos do programa**
+**Lista de Atalhos recursos vs. recursos do programa**
 
--   **Não torne destinos e comandos disponíveis somente por meio de listas de atalhos.** Os mesmos destinos e comandos devem estar disponíveis diretamente do próprio programa.
--   **Use nomes consistentes para destinos e rótulos para comandos.** Os itens da lista de atalhos devem ser rotulados da mesma forma que os itens equivalentes acessados diretamente do programa.
--   **Habilita seu programa para lidar com destinos e comandos mesmo quando o programa não está em execução.** Isso é necessário para uma experiência consistente, confiável e conveniente.
+-   **Não disponibilizar destinos e comandos apenas por meio de Listas de Saltos.** Os mesmos destinos e comandos devem estar disponíveis diretamente do próprio programa.
+-   **Use nomes consistentes para destinos e rótulos para comandos.** Lista de Atalhos itens devem ser rotulados da mesma forma que os itens equivalentes acessados diretamente do programa.
+-   **Habilita seu programa para manipular destinos e comandos mesmo quando o programa não está em execução.** Isso é necessário para uma experiência consistente, confiável e conveniente.
 
 **Agrupamento**
 
 -   **Forneça pelo menos um e, no máximo, três grupos.** Lista de Atalhos itens são sempre agrupados para rotular sua finalidade. Ter mais de três grupos torna os itens mais difíceis de encontrar.
 -   **Use nomes de grupo padrão quando apropriado.** Os nomes de grupo padrão são familiares e mais fáceis de entender para os usuários.
 
-    Os comandos receberão o nome do grupo Tarefas, que é atribuído pelo Windows e, portanto, não pode ser alterado.
+    Os comandos receberão o nome do grupo Tarefas, que é atribuído por Windows e, portanto, não pode ser alterado.
 
     **Correto:**
 
@@ -380,13 +380,13 @@ Para ver exemplos e diretrizes gerais de ícone, consulte [Ícones](vis-icons.md
 
 **Destinos**
 
--   **Forneça um conjunto dinâmico de destinos específicos para o usuário atual, mas independentes do estado de execução do programa ou do documento atual.** Conforme mencionado anteriormente, certifique-se de que eles se ajustam à finalidade do programa, são o que os usuários mais se importam e têm o nível certo de especificidade.
--   **Quando adequado, use uma lista de destino "automática".** Destinos automáticos são gerenciados pelo Windows, mas seu programa controla os destinos específicos que são passados.
+-   **Forneça um conjunto dinâmico de destinos específicos para o usuário atual, mas independentemente do programa que executa o estado ou o documento atual.** Conforme mencionado anteriormente, certifique-se de que eles se ajustam à finalidade do programa, são o que os usuários mais se importam e têm o nível certo de especificidade.
+-   **Quando adequado, use uma lista de destino "automática".** Destinos automáticos são gerenciados por Windows, mas seu programa controla os destinos específicos que são passados.
     -   Considere usar Recente para programas de criação de documentos em que os usuários provavelmente retornarão aos destinos usados recentemente.
 
         ![captura de tela da lista de saltos com o nome do grupo 'recente' ](images/winenv-taskbar-image36.png)
 
-        Neste exemplo, o Bloco de Notas do Windows usa Destinos recentes.
+        Neste exemplo, o Windows Bloco de notas usa Destinos recentes.
 
     -   Considere usar Frequente para programas que mostram conteúdo existente, em que os usuários provavelmente retornarão aos itens que eles usam com frequência. Destinos frequentes são classificar em ordem de frequência, sendo os mais frequentes primeiro.
 
@@ -400,18 +400,18 @@ Para ver exemplos e diretrizes gerais de ícone, consulte [Ícones](vis-icons.md
 
         ![captura de tela da lista de saltos com vários itens recentes ](images/winenv-taskbar-image38.png)
 
-        Usar Recentes no Windows Internet Explorer resultaria em muitos destinos inúteis.
+        Usar Recente no Windows Internet Explorer resultaria em muitos destinos inúteis.
 
     -   Se Recentes ou Frequentes são opções igualmente adequadas, use Recente porque essa abordagem é mais fácil para os usuários entenderem e é mais previsível.
     -   Se estiver usando Recente e o programa tiver um equivalente no menu Arquivo, faça com que as listas tenham o mesmo conteúdo na mesma ordem. Para os usuários, elas devem parecer ser as mesmas listas.
 
 -   **Quando necessário, use uma lista de destino personalizada.** Seu programa tem controle total sobre o conteúdo e a ordem de classificação de uma lista de destino personalizada e, portanto, pode basear a lista em qualquer fator.
     -   Crie versões personalizadas de Recentes ou Frequentes se elas são adequadas, mas o gerenciamento automático não funciona bem para seu programa. Por exemplo, seu programa pode precisar acompanhar uma variedade de fatores além dos comandos de arquivo abertos. Nesse caso, use o mesmo nome (Recente ou Frequente) e a ordem de classificação porque os usuários não estarão cientes da diferença.
-    -   Caso contrário, use um tipo diferente de destino para atender melhor às metas do usuário. Geralmente, essas listas ajudam os usuários a executar tarefas que ainda não realizaram, como ler novas mensagens, assistir a novos vídeos ou verificar a próxima reunião.
+    -   Caso contrário, use um tipo diferente de destino para atender melhor às metas do usuário. Geralmente, essas listas ajudam os usuários a executar tarefas que ainda não realizaram, como ler novas mensagens, assistir a novos vídeos ou verificar sua próxima reunião.
 
         ![captura de tela da lista de saltos com o nome do grupo 'new' ](images/winenv-taskbar-image39.png)
 
-        Neste exemplo, Windows Media Center lista o gravado recentemente mostra que o usuário ainda não viu.
+        Neste exemplo, Windows Media Center lista os registros recentes mostram que o usuário ainda não viu.
 
     -   Escolha uma ordem de classificação que corresponda ao modelo mental do usuário da lista. Por exemplo, uma lista de estilos de coisas a fazer teria a próxima coisa a fazer listada primeiro. Se não houver nenhum modelo mental claro, classificar a lista de destino em ordem alfabética.
 
@@ -456,11 +456,11 @@ Para ver exemplos e diretrizes gerais de ícone, consulte [Ícones](vis-icons.md
 
     ![captura de tela da miniatura do player de mídia com o comando ](images/winenv-taskbar-image44.png)
 
-    Neste exemplo, clicar em Próximo no Windows Media Player continua a exibir a miniatura porque os usuários podem querer dar outros comandos.
+    Neste exemplo, clicar em Próximo no Windows Media Player continua a exibir a miniatura porque os usuários talvez queiram dar outros comandos.
 
     ![captura de tela da miniatura com o ícone de chat ](images/winenv-taskbar-image45.png)
 
-    Neste exemplo, clicar em Chat no Windows Live Messenger descarta a miniatura porque os usuários têm maior probabilidade de enviar uma mensagem.
+    Neste exemplo, clicar em Chat Windows Live Messenger a miniatura porque os usuários têm maior probabilidade de enviar uma mensagem.
 
 **Apresentação**
 
@@ -477,7 +477,7 @@ Para ver exemplos e diretrizes gerais de ícone, consulte [Ícones](vis-icons.md
 
 Para obter mais diretrizes, consulte [Barras de progresso.](progress-bars.md)
 
-## <a name="text"></a>Text
+## <a name="text"></a>Texto
 
 ### <a name="window-titles"></a>Títulos da janela
 

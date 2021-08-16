@@ -1,7 +1,7 @@
 ---
-description: Indica a direção do processamento de contraste aplicado pela câmera quando a imagem foi tirada. &\#0034; 0&\# 0034; indica &\# 0034; Normal&\# 0034;; &\# 0034; 1&\# 0034; indica &\# 0034; Soft&\# 0034;; &\# 0034; 2&\# 0034; indica &\# 0034; Hard&\# 0034;.
+description: Indica a direção do processamento de contraste aplicado pela câmera quando a imagem foi tirada. &\#0034;0&\# 0034; indica &\# 0034; Normal&\# 0034;; &\# 0034;1&\# 0034; indica &\# 0034; Soft&\# 0034;; &\# 0034;2&\# 0034; indica &\# 0034; Hard&\# 0034;.
 ms.assetid: 32f89149-b90d-4fe9-9d1a-b8bb966d62fe
-title: System. Photo. Contrast
+title: System.Photo.Contrast
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 847eadd54e82ebed60f947b5aac994ad8e2e69c44d82246c8e65ccb70adf0675
@@ -11,9 +11,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118230366"
 ---
-# <a name="systemphotocontrast"></a>System. Photo. Contrast
+# <a name="systemphotocontrast"></a>System.Photo.Contrast
 
-Indica a direção do processamento de contraste aplicado pela câmera quando a imagem foi tirada. "0" indica "normal"; "1" indica "soft"; "2" indica "Hard".
+Indica a direção do processamento de contraste aplicado pela câmera quando a imagem foi tirada. "0" indica "Normal"; "1" indica "Soft"; "2" indica "Difícil".
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7"></a>Windows 10, versão 1703, Windows 10, versão 1607, Windows 10, versão 1511, Windows 10, versão 1507, Windows 8.1, Windows 8, Windows 7
 
@@ -78,13 +78,13 @@ propertyDescription
 
 ## <a name="remarks"></a>Comentários
 
-Os valores de PKEY são definidos em Propkey. h.
+Os valores PKEY são definidos em Propkey.h.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[propertyDescription](./propdesc-schema-propertydescription.md)
+[Propertydescription](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -93,19 +93,19 @@ Os valores de PKEY são definidos em Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[numberFormat](./propdesc-schema-numberformat.md)
+[Numberformat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -120,7 +120,7 @@ Os valores de PKEY são definidos em Propkey. h.
 [editControl](./propdesc-schema-editcontrol.md)
 </dt> <dt>
 
-[filterControl](./propdesc-schema-filtercontrol.md)
+[Filtercontrol](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
 [queryControl](./propdesc-schema-querycontrol.md)

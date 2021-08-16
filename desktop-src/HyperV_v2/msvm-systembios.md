@@ -1,7 +1,7 @@
 ---
 description: Usado para associar uma máquina virtual a seu BIOS.
 ms.assetid: 494E9D9F-64D5-49D5-A6C7-ABE469ABA4CA
-title: Classe Msvm_SystemBIOS
+title: Msvm_SystemBIOS classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -22,11 +22,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118391885"
 ---
-# <a name="msvm_systembios-class"></a>\_Classe Msvm SystemBIOS
+# <a name="msvm_systembios-class"></a>Classe SystemBIOS do Msvm \_
 
 Usado para associar uma máquina virtual a seu BIOS.
 
-A sintaxe a seguir é simplificada formato MOF código (MOF) e inclui todas as propriedades herdadas.
+A sintaxe a seguir é simplificada Managed Object Format código MOF e inclui todas as propriedades herdadas.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -41,42 +41,42 @@ class Msvm_SystemBIOS : CIM_SystemBIOS
 
 ## <a name="members"></a>Membros
 
-A classe **Msvm \_ SystemBIOS** tem estes tipos de membros:
+A **classe \_ SystemBIOS do Msvm** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **Msvm \_ SystemBIOS** tem essas propriedades.
+A **classe \_ SystemBIOS do Msvm** tem essas propriedades.
 
 <dl> <dt>
 
-**GroupComponent**
+**Groupcomponent**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **[ **\_ sistema de ComputerSystem CIM**](msvm-computersystem.md)**
+Tipo de dados: **[ **Cim \_ ComputerSystem**](msvm-computersystem.md)**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**Aggregate**](/windows/desktop/WmiSdk/standard-qualifiers), [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("GroupComponent"), [**Max**](/windows/desktop/WmiSdk/standard-qualifiers) (1)
+Qualificadores: [**Aggregate**](/windows/desktop/WmiSdk/standard-qualifiers), [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("GroupComponent"), [**Max**](/windows/desktop/WmiSdk/standard-qualifiers) (1)
 </dt> </dl>
 
-A máquina virtual que inicia a partir do BIOS.
+A máquina virtual que começa com o BIOS.
 
 </dd> <dt>
 
 **PartComponent**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **[ **Msvm \_ bioselement**](msvm-bioselement.md)**
+Tipo de dados: **[ **Msvm \_ BIOSElement**](msvm-bioselement.md)**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("PartComponent")
+Qualificadores: [**substituir**](/windows/desktop/WmiSdk/standard-qualifiers) ("PartComponent")
 </dt> </dl>
 
 O BIOS associado à máquina virtual.
@@ -85,7 +85,7 @@ O BIOS associado à máquina virtual.
 
 ## <a name="remarks"></a>Comentários
 
-O acesso à classe **Msvm \_ SystemBIOS** pode ser restringido pela filtragem do UAC. Para obter mais informações, consulte [controle de conta de usuário e WMI](/windows/desktop/WmiSdk/user-account-control-and-wmi).
+O acesso à **classe \_ SystemBIOS do Msvm** pode ser restrito pela Filtragem de UAC. Para obter mais informações, consulte [Controle de conta de usuário e WMI](/windows/desktop/WmiSdk/user-account-control-and-wmi).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -93,10 +93,10 @@ O acesso à classe **Msvm \_ SystemBIOS** pode ser restringido pela filtragem do
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 8 \[ somente aplicativos da área de trabalho\]<br/>                                                              |
-| Servidor mínimo com suporte<br/> | Windows Server 2012 \[ somente aplicativos da área de trabalho\]<br/>                                                    |
-| Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[Windows 8 somente aplicativos da área de trabalho\]<br/>                                                              |
+| Servidor mínimo com suporte<br/> | \[Windows Server 2012 somente aplicativos da área de trabalho\]<br/>                                                    |
+| Namespace<br/>                | Virtualização \\ raiz \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -105,10 +105,10 @@ O acesso à classe **Msvm \_ SystemBIOS** pode ser restringido pela filtragem do
 
 <dl> <dt>
 
-[**\_SYSTEMBIOS CIM**](cim-systembios.md)
+[**CIM \_ SystemBIOS**](cim-systembios.md)
 </dt> <dt>
 
-[Classes do BIOS](bios-classes.md)
+[BIOS Classes](bios-classes.md)
 </dt> </dl>
 
  

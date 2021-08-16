@@ -35,7 +35,7 @@ A [**função SignalObjectAndWait**](/windows/win32/api/synchapi/nf-synchapi-sig
 
 ## <a name="multiple-object-wait-functions"></a>Funções de espera de vários objetos
 
-As funções [**WaitForMultipleObjects**](/windows/win32/api/synchapi/nf-synchapi-waitformultipleobjects), [**WaitForMultipleObjectsEx**](/windows/win32/api/synchapi/nf-synchapi-waitformultipleobjectsex), [**MsgWaitForMultipleObjects**](/windows/desktop/api/Winuser/nf-winuser-msgwaitformultipleobjects)e [**MsgWaitForMultipleObjectsEx**](/windows/desktop/api/Winuser/nf-winuser-msgwaitformultipleobjectsex) permitem que o thread de chamada especifique uma matriz que contém um ou mais identificador de objeto de sincronização. Essas funções retornam quando ocorre uma das seguintes:
+As funções [**WaitForMultipleObjects**](/windows/win32/api/synchapi/nf-synchapi-waitformultipleobjects), [**WaitForMultipleObjectsEx**](/windows/win32/api/synchapi/nf-synchapi-waitformultipleobjectsex), [**MsgWaitForMultipleObjects**](/windows/desktop/api/Winuser/nf-winuser-msgwaitformultipleobjects)e [**MsgWaitForMultipleObjectsEx**](/windows/desktop/api/Winuser/nf-winuser-msgwaitformultipleobjectsex) permitem que o thread de chamada especifique uma matriz que contém um ou mais identificadors de objeto de sincronização. Essas funções retornam quando ocorre uma das seguintes:
 
 -   O estado de qualquer um dos objetos especificados é definido como sinalizado ou os estados de todos os objetos foram definidos como sinalizados. Você controla se um ou todos os estados serão usados na chamada de função.
 -   O intervalo de tempo-out é desempesado. O intervalo de tempo-out pode ser definido como **INFINITE** para especificar que a espera não passará do tempo."
@@ -81,7 +81,7 @@ As funções de espera podem modificar os estados de alguns tipos de [objetos de
 
 ## <a name="wait-functions-and-creating-windows"></a>Funções de espera e criação de Windows
 
-Você precisa ter cuidado ao usar as funções de espera e o código que cria janelas direta ou indiretamente. Se um thread criar janelas, ele deverá processar mensagens. As transmissões de mensagem são enviadas para todas as janelas do sistema. Se você tiver um thread que usa uma função de espera sem intervalo de tempo-out, o sistema fará deadlock. Dois exemplos de código que cria janelas indiretamente são DDE e a **função CoInitialize.** Portanto, se você tiver um thread que cria [**janelas, use MsgWaitForMultipleObjects**](/windows/desktop/api/Winuser/nf-winuser-msgwaitformultipleobjects) ou [**MsgWaitForMultipleObjectsEx,**](/windows/desktop/api/Winuser/nf-winuser-msgwaitformultipleobjectsex)em vez das outras funções de espera.
+Você precisa ter cuidado ao usar as funções de espera e o código que cria janelas direta ou indiretamente. Se um thread criar janelas, ele deverá processar mensagens. As transmissões de mensagem são enviadas para todas as janelas do sistema. Se você tiver um thread que usa uma função de espera sem intervalo de tempo-out, o sistema será deadlock. Dois exemplos de código que cria janelas indiretamente são DDE e a **função CoInitialize.** Portanto, se você tiver um thread que cria [**janelas, use MsgWaitForMultipleObjects**](/windows/desktop/api/Winuser/nf-winuser-msgwaitformultipleobjects) ou [**MsgWaitForMultipleObjectsEx,**](/windows/desktop/api/Winuser/nf-winuser-msgwaitformultipleobjectsex)em vez das outras funções de espera.
 
  
 

@@ -13,7 +13,7 @@ ms.locfileid: "117766722"
 ---
 # <a name="encodeddata-methods"></a>Métodos EncodedData
 
-O objeto [**EncodedData**](encodeddata.md) expõe os métodos a seguir.
+O [**objeto EncodedData**](encodeddata.md) expõe os métodos a seguir.
 
 ## <a name="in-this-section"></a>Nesta seção
 

@@ -1,13 +1,13 @@
 ---
-title: Windows Guias do desenvolvedor da Estrutura de Faixa de Opções
-description: Os tópicos contidos nesta seção descrevem aspectos específicos da estrutura Windows Faixa de Opções.
+title: Windows Guias de desenvolvedor da estrutura da faixa de Ribbon
+description: os tópicos contidos nesta seção descrevem aspectos específicos do Windows estrutura da faixa de informações.
 ms.assetid: 87434a15-ba13-4c6f-a814-49ae2349bfa2
 keywords:
-- Windows Faixa de opções, estrutura
-- Faixa de opções, estrutura
-- Windows Faixa de opções, guias de desenvolvedor
-- Faixa de opções, guias de desenvolvedor
-- guias de desenvolvedor para Windows faixa de opções
+- Windows Faixa de Ribbon, estrutura
+- Faixa de Ribbon, estrutura
+- Windows Faixa de guia, guias de desenvolvedor
+- Faixa de guia, guias de desenvolvedor
+- guias de desenvolvedor para a faixa de Windows
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 81b30c5b2564dc918c6f9accfe5a5cb36a2d77222e3822a75a76332b1d3234cf
@@ -17,77 +17,77 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117850624"
 ---
-# <a name="windows-ribbon-framework-developer-guides"></a>Windows Guias do desenvolvedor da Estrutura de Faixa de Opções
+# <a name="windows-ribbon-framework-developer-guides"></a>Windows Guias de desenvolvedor da estrutura da faixa de Ribbon
 
-Os tópicos contidos nesta seção descrevem aspectos específicos da estrutura Windows Faixa de Opções.
+os tópicos contidos nesta seção descrevem aspectos específicos do Windows estrutura da faixa de informações.
 
 ## <a name="basics"></a>Básico
 
-[Criando um aplicativo de faixa de opções](windowsribbon-stepbystep.md)
+[Criando um aplicativo de faixa de faixas](windowsribbon-stepbystep.md)
 
-Para que a Windows faixa de opções consuma o arquivo de marcação faixa de opções, o arquivo de marcação deve ser compilado em um arquivo de recurso de formato binário. Um compilador de marcação da Faixa de Opções dedicado, o UICC (Compilador de Comando da Interface do Usuário), está incluído com o SDK (Software Development Kit) do Microsoft Windows (7.0 ou posterior) para essa finalidade. Além de compilar a versão binária da marcação Faixa de Opções, o UICC gera um arquivo de título de definição de ID (.h) que expõe todos os elementos de marcação para o aplicativo host da Faixa de Opções e um arquivo de recurso (.rc) usado para vincular recursos de imagem e cadeia de caracteres ao aplicativo host no momento da compilação.
+para o Windows estrutura da faixa de faixas consumir o arquivo de marcação da faixa de faixas, o arquivo de marcação deve ser compilado em um arquivo de recurso de formato binário. um compilador de marcação de faixa de medida dedicado, o UICC (compilador de comando de interface do usuário), está incluído no SDK (Software Development Kit) do Microsoft Windows (7,0 ou posterior) para essa finalidade. Além de compilar a versão binária da marcação da faixa de faixas, o UICC gera um arquivo de cabeçalho de definição de ID (. h) que expõe todos os elementos de marcação para o aplicativo host da faixa de versões e um arquivo de recurso (. rc) que é usado para vincular recursos de imagem e de cadeia de caracteres ao aplicativo host no momento da compilação.
 
-[Migrando para a estrutura Windows faixa de opções](ribbon-migration.md)
+[migrando para a estrutura da faixa de Windows](ribbon-migration.md)
 
-Um aplicativo que se baseia em menus, barras de ferramentas e caixas de diálogo tradicionais pode ser migrado para a interface do usuário (interface do usuário) rica, dinâmica e controlada por contexto do sistema de comando da estrutura de faixa de opções. Essa é uma maneira fácil e eficaz de modernizar e desabilizar o aplicativo, além de melhorar a acessibilidade, a usabilidade e a capacidade de descoberta de sua funcionalidade.
+Um aplicativo que se baseia em menus, barras de ferramentas e caixas de diálogo tradicionais pode ser migrado para a interface do usuário rica, dinâmica e controlada por contexto do sistema de comando da estrutura da faixa de ferramentas. Essa é uma maneira fácil e eficaz de modernizar e revitalize o aplicativo ao mesmo tempo em que também melhora a acessibilidade, a usabilidade e a capacidade de descoberta de sua funcionalidade.
 
 [Noções básicas sobre comandos e controles](windowsribbon-commandscontrols.md)
 
-A separação da lógica da apresentação é a filosofia de design que inspirado o sistema de apresentação de comando da estrutura ribbon – um sistema baseado em um padrão de design em que a funcionalidade e o comportamento são implementados independentemente dos controles que expõem essa funcionalidade.
+A separação da lógica da apresentação é a filosofia do design que inspira o sistema de apresentação de comando da estrutura da faixa de uma, um sistema baseado em um padrão de design onde a funcionalidade e o comportamento são implementados independentemente dos controles que expõem essa funcionalidade.
 
 ## <a name="user-interface"></a>Interface do Usuário
 
-[Especificando recursos de imagem da faixa de opções](windowsribbon-imageformats.md)
+[Especificando recursos de imagem da faixa de uma](windowsribbon-imageformats.md)
 
-Como um sistema de apresentação de comando rico, a estrutura ribbon foi projetada para dar suporte extensiva aos recursos de imagem em toda a interface do usuário da Faixa de Opções. Todos os recursos de imagem são declarados na [marcação faixa de opções](windowsribbon-schema.md) ou consultados de um aplicativo host da Faixa de Opções.
+Como um sistema de apresentação de comando avançado, a estrutura da faixa de faixas foi projetada para dar suporte extensiva a recursos de imagem em toda a interface do usuário (IU) da faixa de faixas. Todos os recursos de imagem são declarados na [marcação da faixa](windowsribbon-schema.md) de lista ou consultados de um aplicativo host da faixa de Ribbon.
 
-Para Windows 8 posteriores, a estrutura ribbon dá suporte aos seguintes formatos gráficos: arquivos BMP (bitmap ARGB) de 32 bits e arquivos PNG (Gráficos de Rede Portátil) com transparência.
+para Windows 8 e posteriores, a estrutura da faixa de opções dá suporte aos seguintes formatos de gráficos: arquivos BMP (bitmap ARGB) de 32 bits e arquivos PNG (Portable Network graphics) com transparência.
 
-Por Windows 7 e anteriores, os recursos de imagem devem estar em conformidade com o formato gráfico BMP padrão usado Windows.
+para o Windows 7 e anterior, os recursos de imagem devem estar em conformidade com o formato gráfico BMP padrão usado em Windows.
 
-[Personalização de uma faixa de opções por meio de definições de tamanho e políticas de dimensionamento](windowsribbon-templates.md)
+[Personalizando uma faixa de guia por meio de definições de tamanho e políticas de dimensionamento](windowsribbon-templates.md)
 
-Os controles hospedados na barra de comandos da faixa de opções estão sujeitos às regras de layout impostas pela estrutura da Faixa de Opções e com base em uma combinação de comportamentos padrão e modelos de layout (definidos por estrutura e personalizados), conforme declarado na marcação faixa de opções. Essas regras definem os comportamentos de layout adaptável da estrutura da Faixa de Opções que influenciam como os controles na barra de comandos se adaptam a vários tamanhos de faixa de opções em tempo de corrida.
+Os controles hospedados na barra de comandos da faixa de opções estão sujeitos a regras de layout que são impostas pela estrutura da faixa de opções e com base em uma combinação de comportamentos padrão e modelos de layout (ambos definidos pelo Framework e personalizados), conforme declarado na marcação da faixa de opções. Essas regras definem os comportamentos de layout adaptável da estrutura da faixa de opção que influenciam como os controles na barra de comandos se adaptam a vários tamanhos de faixa de opção em tempo de execução.
 
 [Trabalhando com galerias](ribbon-controls-galleries.md)
 
-A estrutura ribbon fornece aos desenvolvedores um modelo robusto e consistente para gerenciar conteúdo dinâmico em uma variedade de controles baseados em coleção. Ao adaptar e reconfigurar a interface do usuário da Faixa de Opções, esses controles dinâmicos permitem que a estrutura responda à interação do usuário no aplicativo host e na faixa de opções em si e forneça a flexibilidade para lidar com vários ambientes de tempo de run time.
+A estrutura da faixa de tipos fornece aos desenvolvedores um modelo robusto e consistente para o gerenciamento de conteúdo dinâmico em uma variedade de controles baseados em coleção. Ao adaptar e reconfigurar a interface do usuário da faixa de opções (IU), esses controles dinâmicos permitem que a estrutura responda à interação do usuário tanto no aplicativo host quanto na faixa de opções e forneça a flexibilidade para lidar com vários ambientes de tempo de execução.
 
 [Exibindo guias contextuais](ribbon-contextualtabs.md)
 
-Em um aplicativo de estrutura da Faixa de Opções, uma guia contextual é um controle [Tab](windowsribbon-controls-tab.md) oculto que é exibido na linha da guia quando um objeto no workspace do aplicativo, como uma imagem, é selecionado ou realçado.
+Em um aplicativo do Framework da faixa de das, uma guia contextual é um controle de [guia](windowsribbon-controls-tab.md) oculto que é exibido na linha da guia quando um objeto no espaço de trabalho do aplicativo, como uma imagem, é selecionado ou realçado.
 
-[Reconfigurando a faixa de opções com modos de aplicativo](ribbon-applicationmodes.md)
+[Reconfiguração da faixa de modo com modos de aplicativo](ribbon-applicationmodes.md)
 
-A estrutura da Faixa de Opções dá suporte à reconfiguração dinâmica e à exposição de elementos principais da interface do usuário da Faixa de Opções em tempo de operação, com base no estado do aplicativo (também conhecido como contexto). Declarados e associados a elementos específicos na marcação, os vários estados com suporte de um aplicativo são chamados de modos de aplicativo.
+A estrutura da faixa de faixas é compatível com a reconfiguração dinâmica e a exposição de elementos principais da interface do usuário da faixa de medida (IU) em tempo de execução, com base no estado do aplicativo (também conhecido como contexto). Declarados e associados a elementos específicos na marcação, os vários Estados com suporte de um aplicativo são chamados de modos de aplicativo.
 
-[Personalização das cores da faixa de opções](ribbon-color.md)
+[Personalizando cores da faixa de das](ribbon-color.md)
 
-A estrutura da Faixa de Opções expõe um conjunto de propriedades de cores que permitem que um aplicativo personalize a aparência de vários elementos de interface do usuário da Faixa de Opções em tempo de executar.
+A estrutura da faixa de faixas expõe um conjunto de propriedades de cores que permite a um aplicativo personalizar a aparência de vários elementos da interface do usuário da faixa de faixas em tempo de execução.
 
-[Exibindo a faixa de opções](ribbon-visibility.md)
+[Exibindo a faixa de faixas](ribbon-visibility.md)
 
-A estrutura da Faixa de Opções expõe um conjunto de propriedades que permitem que um aplicativo especifique como a interface do usuário da Faixa de Opções é exibida em tempo de operação.
+A estrutura da faixa de forma expõe um conjunto de propriedades que permite que um aplicativo especifique como a interface do usuário da faixa de forma (IU) é exibida em tempo de execução.
 
 ## <a name="management"></a>Gerenciamento
 
-[Persistindo o estado da faixa de opções](ribbon-statepersistence.md)
+[Estado da faixa de medida persistente](ribbon-statepersistence.md)
 
-A Windows framework Windows (Faixa de Opções) fornece a capacidade de preservar o estado de uma variedade de configurações e preferências do usuário entre as sessões do aplicativo.
+a estrutura de Windows Ribon (faixa de opções) fornece a capacidade de preservar o estado de uma variedade de configurações de usuário e preferências entre sessões de aplicativos.
 
-[Escutando eventos da faixa de opções](listening-for-ribbon-events.md)
+[Escutando eventos da faixa de das](listening-for-ribbon-events.md)
 
-A estrutura ribbon usa a infraestrutura [ETW (Rastreamento](../etw/event-tracing-portal.md) de Eventos para Windows) para permitir que os desenvolvedores aprendam como os usuários estão interagindo com a faixa de opções do aplicativo.
+a estrutura da faixa de faixas usa a infraestrutura de [rastreamento de eventos para Windows (ETW)](../etw/event-tracing-portal.md) para permitir que os desenvolvedores aprendam como os usuários estão interagindo com a faixa de forma de seu aplicativo.
 
 ## <a name="markup-compiler"></a>Compilador de marcação
 
-[Compilando marcação de faixa de opções](windowsribbon-intentcl.md)
+[Compilando marcação da faixa de medida](windowsribbon-intentcl.md)
 
-Para que a estrutura da Faixa de Opções consuma o arquivo de marcação [faixa](windowsribbon-schema.md) de opções, o arquivo de marcação deve ser compilado em um arquivo de recurso de formato binário. Um compilador de marcação dedicado, o UICC (Compilador de Comando da Interface do Usuário), está incluído com o SDK (Software Development Kit) do Microsoft Windows (7.0 ou posterior) para essa finalidade. Além de compilar a versão binária da marcação, o UICC gera um arquivo de título de definição de ID (.h) que expõe todos os elementos de marcação para o aplicativo host da Faixa de Opções e um arquivo de recurso (.rc) usado para vincular recursos de imagem e cadeia de caracteres ao aplicativo host no momento da compilação.
+Para que a estrutura da faixa de faixas consuma o arquivo de [marcação da faixa de faixas](windowsribbon-schema.md) , o arquivo de marcação deve ser compilado em um arquivo de recurso de formato binário. um compilador de marcação dedicado, o UICC (compilador de comando de interface do usuário), está incluído no SDK (Software Development Kit) do Microsoft Windows (7,0 ou posterior) para essa finalidade. Além de compilar a versão binária da marcação, o UICC gera um arquivo de cabeçalho de definição de ID (. h) que expõe todos os elementos de marcação para o aplicativo host da faixa de versões e um arquivo de recurso (. rc) que é usado para vincular recursos de imagem e de cadeia de caracteres ao aplicativo host no momento da compilação.
 
-[Noções básicas sobre mensagens do compilador de marcação](windowsribbon-compilationerrors.md)
+[Compreendendo as mensagens do compilador de marcação](windowsribbon-compilationerrors.md)
 
-O compilador de marcação Windows Ribbon Framework (Ribbon), o compilador de comando da interface do usuário (UICC.exe), valida a marcação faixa de opções em relação ao esquema da Faixa de Opções e a um conjunto adicional de regras definido pela estrutura da Faixa de Opções.
+o compilador de marcação da faixa de opções da Windows (ribbon), compilador de comando de interface do usuário (UICC.exe), valida a marcação da faixa de opções em relação ao esquema da faixa e um conjunto adicional de regras definidas pela estrutura da faixa de opções.
 
  
 

@@ -1,6 +1,6 @@
 ---
 title: Interface IMsRdpClientAdvancedSettings6
-description: Expõe as propriedades que gerenciam as configurações avançadas do controle ActiveX.
+description: expõe propriedades que gerenciam configurações de controle de ActiveX avançadas.
 ms.assetid: 45b48cdf-3860-4359-99b2-8d2598146d1d
 ms.tgt_platform: multiple
 keywords:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8e61d3358f1af228dcd1b5a7431ee759b486df7a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: cf4c108345e3dae0b5c8f4e45c3a1c07299cccdaed44404718e599c0ef973957
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105761331"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118352123"
 ---
 # <a name="imsrdpclientadvancedsettings6-interface"></a>Interface IMsRdpClientAdvancedSettings6
 
-Expõe as propriedades que gerenciam as configurações avançadas do controle ActiveX. A interface **IMsRdpClientAdvancedSettings6** é derivada da interface [**IMsRdpClientAdvancedSettings5**](imsrdpclientadvancedsettings5.md) .
+expõe propriedades que gerenciam configurações de controle de ActiveX avançadas. A interface **IMsRdpClientAdvancedSettings6** é derivada da interface [**IMsRdpClientAdvancedSettings5**](imsrdpclientadvancedsettings5.md) .
 
 Para obter uma instância dessa interface, use a propriedade [**IMsTscAx:: AdvancedSettings**](imstscax-advancedsettings.md) para obter um ponteiro de interface [**IMsTscAdvancedSettings**](imstscadvancedsettings-interface.md) . Em seguida, chame [**QueryInterface**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-queryinterface(q)) no ponteiro **IMsTscAdvancedSettings** e passe **\_ IMsRdpClientAdvancedSettings6 de IID** para **QueryInterface**.
 
@@ -45,7 +45,7 @@ A interface **IMsRdpClientAdvancedSettings6** tem essas propriedades.
 |:----------------------------------------------------------------------------------------------------------|:----------------------|:-----------------------------------------------------------------------------------------------------------------------------------|
 | [**AuthenticationServiceClass**](imsrdpclientadvancedsettings6-authenticationserviceclass.md)<br/> | Leitura/gravação<br/> | Especifica o nome da entidade de serviço (SPN) a ser usado para autenticação no servidor.<br/>                                     |
 | [**AuthenticationType**](imsrdpclientadvancedsettings6-authenticationtype.md)<br/>                 | Somente leitura<br/>  | Especifica o tipo de autenticação usado para essa conexão.<br/>                                                          |
-| [**ConnectToAdministerServer**](imsrdpclientadvancedsettings6-connecttoadministerserver.md)<br/>   | Leitura/gravação<br/> | Recupera ou especifica se o controle ActiveX deve tentar se conectar ao servidor para fins administrativos.<br/> |
+| [**ConnectToAdministerServer**](imsrdpclientadvancedsettings6-connecttoadministerserver.md)<br/>   | Leitura/gravação<br/> | recupera ou especifica se o controle de ActiveX deve tentar se conectar ao servidor para fins administrativos.<br/> |
 | [**EnableCredSspSupport**](imsrdpclientadvancedsettings6-enablecredsspsupport.md)<br/>             | Leitura/gravação<br/> | Especifica se o provedor de serviços de segurança de credencial (CredSSP) está habilitado para esta conexão.<br/>                    |
 | [**HotKeyFocusReleaseLeft**](imsrdpclientadvancedsettings6-hotkeyfocusreleaseleft.md)<br/>         | Leitura/gravação<br/> | Especifica o código de chave virtual a ser adicionado a CTRL + ALT para determinar a substituição de tecla de atalho para CTRL + ALT + seta para a esquerda.<br/>          |
 | [**HotKeyFocusReleaseRight**](imsrdpclientadvancedsettings6-hotkeyfocusreleaseright.md)<br/>       | Leitura/gravação<br/> | Especifica o código de chave virtual a ser adicionado a CTRL + ALT para determinar a substituição de tecla de atalho para CTRL + ALT + seta direita.<br/>         |
