@@ -58,7 +58,7 @@ Esse método de evento é definido nas \_ \_ interfaces somente de expedição I
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do XP Tablet PC Edition\]<br/>                                                       |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                                           |
-| parâmetro<br/>                   | <dl> <dt>Msinkaut. h (também requer Msinkaut \_ i. c)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Msinkaut. h (também requer Msinkaut \_ i. c)</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>InkObj.dll</dt> </dl>                               |
 
 

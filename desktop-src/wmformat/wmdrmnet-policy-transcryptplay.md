@@ -1,10 +1,10 @@
 ---
-title: WMDRMNET_POLICY_TRANSCRYPTPLAY estrutura (Wmdrmsdk.h)
-description: A estrutura WMDRMNET POLICY TRANSCRYPTPLAY contém as informações de política para reprodução de conteúdo usando Windows DRM de \_ Mídia para \_ Dispositivos de Rede.
+title: Estrutura de WMDRMNET_POLICY_TRANSCRYPTPLAY (wmdrmsdk. h)
+description: a \_ estrutura TRANSCRYPTPLAY da política WMDRMNET \_ contém as informações de política para reproduzir conteúdo usando Windows mídia DRM para dispositivos de rede.
 ms.assetid: 95671c58-a593-40bb-856e-28ad1cba340e
 keywords:
-- WMDRMNET_POLICY_TRANSCRYPTPLAY formato de mídia windows da estrutura
-- formato de mídia de janelas de estrutura
+- Formato de mídia do Windows de estrutura de WMDRMNET_POLICY_TRANSCRYPTPLAY
+- estruturar formato de mídia do Windows
 topic_type:
 - apiref
 api_name:
@@ -22,9 +22,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118195501"
 ---
-# <a name="wmdrmnet_policy_transcryptplay-structure"></a>Estrutura WMDRMNET \_ POLICY \_ TRANSCRYPTPLAY
+# <a name="wmdrmnet_policy_transcryptplay-structure"></a>\_Estrutura TRANSCRYPTPLAY da política de WMDRMNET \_
 
-A **estrutura WMDRMNET \_ POLICY \_ TRANSCRYPTPLAY** contém as informações de política para reprodução de conteúdo usando Windows DRM de Mídia para Dispositivos de Rede.
+a **estrutura \_ \_ TRANSCRYPTPLAY da política WMDRMNET** contém as informações de política para reproduzir conteúdo usando Windows mídia DRM para dispositivos de rede.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -52,7 +52,7 @@ Estrutura de política global.
 **playOPLs**
 </dt> <dd>
 
-Níveis de proteção de saída para reprodução. **WMDRMNET \_ POLICY \_ PLAY \_ OPL** é um tipo definido como [**DRM PLAY \_ \_ OPL \_ EX.**](drm-play-opl-ex.md)
+Níveis de proteção de saída para reprodução. **WMDRMNET \_ A \_ reprodução \_ de política OPL** é um tipo definido como [**DRM \_ Play \_ OPL \_ ex**](drm-play-opl-ex.md).
 
 </dd> </dl>
 
@@ -66,7 +66,7 @@ Nenhum.
 
 | Requisito | Valor |
 |-------------------|---------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>Wmdrmsdk.h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>Wmdrmsdk. h</dt> </dl> |
 
 
 
@@ -77,7 +77,7 @@ Nenhum.
 [**Estruturas**](drm-structures.md)
 </dt> <dt>
 
-[**POLÍTICA \_ WMDRMNET**](wmdrmnet-policy.md)
+[**política de WMDRMNET \_**](wmdrmnet-policy.md)
 </dt> </dl>
 
  

@@ -12,12 +12,12 @@ api_name:
 api_type:
 - UserDefined
 api_location: ''
-ms.openlocfilehash: 3728f8114d87d07ddb33dd77a6fda5db30d07cf0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7c30194e4131cbd375192723e23308e1ad5ead69d849ab73857f72ef1d4b0790
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103663598"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117784074"
 ---
 # <a name="authzcomputegroupscallback-callback-function"></a>Função de retorno de chamada AuthzComputeGroupsCallback
 
@@ -85,7 +85,7 @@ O número de estruturas em *pSidRestrictedAttrArray*.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se a função retornar com êxito uma lista de SIDs, o valor de retorno será **true**.
 
@@ -103,9 +103,9 @@ As variáveis de atributo devem estar na forma de uma expressão quando usadas c
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                            |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                   |
-| Redistribuível<br/>          | Pacote de ferramentas de administração do Windows Server 2003 no Windows XP<br/> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho XP\]<br/>                            |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                   |
+| Redistribuível<br/>          | Windows pacote de ferramentas de administração do Server 2003 no Windows XP<br/> |
 
 
 

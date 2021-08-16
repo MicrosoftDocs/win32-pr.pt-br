@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4f238bea29ab7271896dc7516b6424e4cc298f5c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f5f53b6ddfd532710e712637c57785d8893d8f977807bfb45cac0fc787ccbf58
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104369609"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117844470"
 ---
 # <a name="wm_get_license_data-structure"></a>\_Estrutura de \_ dados obter licença do WM \_
 
@@ -103,8 +103,8 @@ O aplicativo de exemplo AudioPlayer demonstra como usar corretamente as informa�
 |-------------------------------------|-------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                                |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                      |
-| Versão<br/>                  | SDK do Windows Media Format 7 ou versões posteriores do SDK<br/>                       |
-| parâmetro<br/>                   | <dl> <dt>Drmexternals. h</dt> </dl> |
+| Versão<br/>                  | Windows SDK do Media Format 7 ou versões posteriores do SDK<br/>                       |
+| Cabeçalho<br/>                   | <dl> <dt>Drmexternals. h</dt> </dl> |
 
 
 

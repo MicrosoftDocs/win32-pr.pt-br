@@ -1,7 +1,7 @@
 ---
-description: O \_ tipo de enumeração de tipos de uso de parâmetro WPD \_ \_ descreve como um parâmetro de método é usado em um determinado método.
+description: O tipo de enumeração WPD \_ PARAMETER USAGE TYPES descreve como um parâmetro de método é usado em um determinado \_ \_ método.
 ms.assetid: 60cbb4fa-c5fd-4402-bfd4-8fd95c009a33
-title: Enumeração de WPD_PARAMETER_USAGE_TYPES (PortableDevice. h)
+title: WPD_PARAMETER_USAGE_TYPES enumeração (PortableDevice.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - PortableDevice.h
-ms.openlocfilehash: 72d4ebffccc3d1bc7d446848c29ebbc60539430e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8ece49d1b961ce6ce5c14241d14bf69480e1eb79028f57a2cb959f5d7c4b79dc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105751543"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117842063"
 ---
-# <a name="wpd_parameter_usage_types-enumeration"></a>\_Enumeração de \_ tipos de uso de parâmetro WPD \_
+# <a name="wpd_parameter_usage_types-enumeration"></a>Enumeração DE TIPOS DE \_ \_ USO DE \_ PARÂMETRO WPD
 
-O tipo de enumeração de [**\_ tipos de \_ uso \_ de parâmetro WPD**](/windows/desktop/wpd_sdk/wpd-parameter-usage-types) descreve como um parâmetro de método é usado em um determinado método.
+O [**tipo de enumeração WPD \_ PARAMETER USAGE \_ \_ TYPES**](/windows/desktop/wpd_sdk/wpd-parameter-usage-types) descreve como um parâmetro de método é usado em um determinado método.
 
 ## <a name="syntax"></a>Syntax
 
@@ -42,31 +42,31 @@ typedef enum tagWPD_PARAMETER_USAGE_TYPES {
 
 <dl> <dt>
 
-<span id="WPD_PARAMETER_USAGE_RETURN"></span><span id="wpd_parameter_usage_return"></span>**\_retorno de \_ uso de parâmetro WPD \_**
+<span id="WPD_PARAMETER_USAGE_RETURN"></span><span id="wpd_parameter_usage_return"></span>**RETORNO DE USO \_ \_ DO PARÂMETRO WPD \_**
 </dt> <dd>
 
-O parâmetro receberá o valor de retorno, se especificado pelo método.
+O parâmetro recebe o valor de retorno, se especificado pelo método .
 
 </dd> <dt>
 
-<span id="WPD_PARAMETER_USAGE_IN"></span><span id="wpd_parameter_usage_in"></span>**\_ \_ uso de parâmetro WPD \_ em**
+<span id="WPD_PARAMETER_USAGE_IN"></span><span id="wpd_parameter_usage_in"></span>**USO DE PARÂMETRO WPD \_ \_ \_ NO**
 </dt> <dd>
 
 O parâmetro contém um valor de entrada antes que o método seja chamado.
 
 </dd> <dt>
 
-<span id="WPD_PARAMETER_USAGE_OUT"></span><span id="wpd_parameter_usage_out"></span>**\_uso de parâmetro WPD \_ \_**
+<span id="WPD_PARAMETER_USAGE_OUT"></span><span id="wpd_parameter_usage_out"></span>**USO DO PARÂMETRO WPD \_ \_ \_ OUT**
 </dt> <dd>
 
 O parâmetro contém um valor de saída quando o método retorna.
 
 </dd> <dt>
 
-<span id="WPD_PARAMETER_USAGE_INOUT"></span><span id="wpd_parameter_usage_inout"></span>**\_uso de parâmetro de WPD \_ \_**
+<span id="WPD_PARAMETER_USAGE_INOUT"></span><span id="wpd_parameter_usage_inout"></span>**INOUT DE \_ \_ USO DO PARÂMETRO WPD \_**
 </dt> <dd>
 
-O parâmetro contém um valor de entrada antes que o método seja chamado e um valor de saída quando ele retorna.
+O parâmetro contém um valor de entrada antes de o método ser chamado e um valor de saída quando ele retorna.
 
 </dd> </dl>
 
@@ -76,7 +76,7 @@ O parâmetro contém um valor de entrada antes que o método seja chamado e um v
 
 | Requisito | Valor |
 |-------------------|---------------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>PortableDevice. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>PortableDevice.h</dt> </dl> |
 
 
 

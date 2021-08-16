@@ -4,18 +4,18 @@ ms.assetid: a3f74372-bdc9-43eb-b72f-7d00a43e78a8
 title: Representação do cliente (autorização)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 32e72abb17c9f5f6271f55fbfc77da4f6b93ca2d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 454e943b53cffbc4430c71b31e2b172095b999e2201c4cafc08b081bf1782e64
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103921151"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117783062"
 ---
 # <a name="client-impersonation-authorization"></a>Representação do cliente (autorização)
 
 [*Representação*](/windows/desktop/SecGloss/i-gly) é a capacidade de um thread ser executado usando diferentes informações de segurança do que o processo que possui o thread. Normalmente, um thread em um aplicativo de servidor representa um cliente. Isso permite que o thread do servidor atue em nome desse cliente para acessar objetos no servidor ou validar o acesso aos próprios objetos do cliente.
 
-A API do Microsoft Windows fornece as seguintes funções para iniciar uma representação:
+a API do Microsoft Windows fornece as seguintes funções para iniciar uma representação:
 
 -   Um aplicativo de servidor DDE pode chamar a função [**DdeImpersonateClient**](/windows/win32/api/ddeml/nf-ddeml-ddeimpersonateclient) para representar um cliente.
 -   Um servidor de pipe nomeado pode chamar a função [**ImpersonateNamedPipeClient**](/windows/win32/api/namedpipeapi/nf-namedpipeapi-impersonatenamedpipeclient) .

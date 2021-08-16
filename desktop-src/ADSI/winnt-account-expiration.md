@@ -8,12 +8,12 @@ keywords:
 - ADSI do provedor WinNT, exemplos de gerenciamento de usuário, expiração da conta
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4936004cbd68c853f5e6d5c76a405f2a8340d22a
-ms.sourcegitcommit: 6515eef99ca0d1bbe3e27d4575e9986f5255f277
+ms.openlocfilehash: 4fd23973a4de31fed629428be9f4df1b6cade34e77f78680a5f87c9d55c42234
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "105811230"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117838406"
 ---
 # <a name="account-expiration-winnt-provider"></a>Expiração da conta (provedor de WinNT)
 
@@ -23,7 +23,7 @@ Para definir a data de expiração da conta, defina a propriedade [**IADsUser. A
 
 ## <a name="example-1"></a>Exemplo 1
 
-O exemplo de código a seguir mostra como definir a data de expiração da conta usando Visual Basic com ADSI.
+o exemplo de código a seguir mostra como definir a data de expiração da conta usando Visual Basic com ADSI.
 
 
 ```VB

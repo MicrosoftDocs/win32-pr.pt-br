@@ -1,6 +1,6 @@
 ---
 description: Cria e retorna um novo objeto FolderItemVerbs que é uma cópia desse objeto FolderItemVerbs.
-title: FolderItemVerbs._NewEnum método (Shldisp.h)
+title: Método de FolderItemVerbs._NewEnum (shldisp. h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -22,7 +22,7 @@ ms.locfileid: "118223688"
 ---
 # <a name="folderitemverbs_newenum-method"></a>FolderItemVerbs. \_ Método NewEnum
 
-Cria e retorna um novo [**objeto FolderItemVerbs**](folderitemverbs.md) que é uma cópia desse objeto FolderItemVerbs.
+Cria e retorna um novo objeto [**FolderItemVerbs**](folderitemverbs.md) que é uma cópia desse objeto FolderItemVerbs.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -47,11 +47,11 @@ Esse método não retorna um valor.
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 2000 Professional, Windows aplicativos da área de \[ trabalho XP\]<br/>                                         |
+| Cliente mínimo com suporte<br/> | Windows 2000 Professional, \[ somente aplicativos de área de trabalho do Windows XP\]<br/>                                         |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                           |
-| Cabeçalho<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
-| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
-| DLL<br/>                      | <dl> <dt>Shell32.dll (versão 4.71 ou posterior)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                           |
+| INSERI<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                         |
+| DLL<br/>                      | <dl> <dt>Shell32.dll (versão 4,71 ou posterior)</dt> </dl> |
 
 
 

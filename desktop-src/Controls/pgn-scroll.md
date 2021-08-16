@@ -3,7 +3,7 @@ title: PGN_SCROLL código de notificação (commctrl. h)
 description: Notifica uma janela pai do controle de pager que a janela contida está prestes a ser rolada. Essa notificação é enviada na forma de uma mensagem de \_ notificação do WM.
 ms.assetid: 3d40e75e-c445-4885-b807-8cfcb92cb2d9
 keywords:
-- PGN_SCROLL de código de notificação controles do Windows
+- PGN_SCROLL código de notificação Windows controles
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 62bc964b1a820fb0d5cd341e8909f36d5f6312ed
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 864903c73eeb611d1c748ec6a4d936192a1a27f22d3f37115af8879916286a8d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104085459"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117830140"
 ---
 # <a name="pgn_scroll-notification-code"></a>\_Código de notificação de rolagem PGN
 
@@ -45,7 +45,7 @@ Ponteiro para uma estrutura [**NMPGSCROLL**](/windows/desktop/api/Commctrl/ns-co
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O valor de retorno é ignorado.
 
@@ -55,9 +55,9 @@ O valor de retorno é ignorado.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 
 

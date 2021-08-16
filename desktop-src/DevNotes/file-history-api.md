@@ -1,27 +1,27 @@
 ---
-description: API de histórico de arquivo
+description: API do Histórico de Arquivos
 ms.assetid: 7488BA36-DEBE-42F1-8A12-A2DB1DE8B827
-title: API de histórico de arquivo
+title: API do Histórico de Arquivos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cb612a0bbbbd28b703a82bc65c5cd4d33640f760
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 375ebdac6f80c8a3e7faad357ce0f05a0d2123400b91a3271b4fd45e8fef53f1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103920267"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117827467"
 ---
-# <a name="file-history-api"></a>API de histórico de arquivo
+# <a name="file-history-api"></a>API do Histórico de Arquivos
 
 ## <a name="in-this-section"></a>Nesta seção
 
--   [**\_status do backup do FH \_**](/windows/desktop/api/Fhcfg/ne-fhcfg-fh_backup_status)
--   [**\_resultado da \_ validação do dispositivo FH \_**](/windows/desktop/api/Fhcfg/ne-fhcfg-fh_device_validation_result)
--   [**\_tipo de \_ política \_ local FH**](/windows/desktop/api/Fhcfg/ne-fhcfg-fh_local_policy_type)
--   [**\_categoria de \_ item \_ protegido FH**](/windows/desktop/api/Fhcfg/ne-fhcfg-fh_protected_item_category)
--   [**\_tipos de retenção FH \_**](/windows/desktop/api/Fhcfg/ne-fhcfg-fh_retention_types)
--   [**\_tipos de \_ unidade de destino FH \_**](/windows/desktop/api/Fhcfg/ne-fhcfg-fh_target_drive_types)
--   [**\_tipo de \_ propriedade de destino FH \_**](/windows/desktop/api/Fhcfg/ne-fhcfg-fh_target_property_type)
+-   [**STATUS DO BACKUP FH \_ \_**](/windows/desktop/api/Fhcfg/ne-fhcfg-fh_backup_status)
+-   [**RESULTADO DA \_ VALIDAÇÃO \_ DO DISPOSITIVO FH \_**](/windows/desktop/api/Fhcfg/ne-fhcfg-fh_device_validation_result)
+-   [**FH \_ TIPO DE POLÍTICA \_ \_ LOCAL**](/windows/desktop/api/Fhcfg/ne-fhcfg-fh_local_policy_type)
+-   [**CATEGORIA DE ITEM PROTEGIDO POR FH \_ \_ \_**](/windows/desktop/api/Fhcfg/ne-fhcfg-fh_protected_item_category)
+-   [**TIPOS DE \_ RETENÇÃO FH \_**](/windows/desktop/api/Fhcfg/ne-fhcfg-fh_retention_types)
+-   [**TIPOS DE \_ UNIDADE DE \_ DESTINO FH \_**](/windows/desktop/api/Fhcfg/ne-fhcfg-fh_target_drive_types)
+-   [**TIPO DE \_ PROPRIEDADE \_ FH TARGET \_**](/windows/desktop/api/Fhcfg/ne-fhcfg-fh_target_property_type)
 -   [**FhConfigMgr**](fhconfigmgr.md)
 -   [FhManagew.exe](fhmanagew-exe.md)
 -   [**FhReassociation**](fhreassociation.md)

@@ -13,7 +13,7 @@ ms.locfileid: "118201328"
 ---
 # <a name="property-keys"></a>Chaves de propriedade
 
-Documentação de referência para as chaves de propriedade da estrutura Windows Ribbon, uma coleção de pares **chave-valor PROPERTYKEY** e **PROPVARIANT** usados para descrever o estado de um Comando da estrutura ribbon.
+Documentação de referência para as chaves de propriedade da estrutura Windows Ribbon, uma coleção de pares **chave-valor PROPERTYKEY** e **PROPVARIANT** usados para descrever o estado de um comando da estrutura ribbon.
 
 > [!Note]  
 > Uma chave deve ser exclusiva na coleção para cada Comando.

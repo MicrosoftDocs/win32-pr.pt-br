@@ -1,7 +1,7 @@
 ---
-description: Método Shell.ExplorerPolicy – obtém o valor de uma política Windows Internet Explorer especificada.
+description: método Shell. ExplorerPolicy – obtém o valor de uma política especificada Windows Internet Explorer.
 ms.assetid: 47E17F6A-ED43-44cd-AF77-A6E49865E1B5
-title: Método Shell.ExplorerPolicy (Shldisp.h)
+title: Método Shell. ExplorerPolicy (shldisp. h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -20,9 +20,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117857928"
 ---
-# <a name="shellexplorerpolicy-method"></a>Método Shell.ExplorerPolicy
+# <a name="shellexplorerpolicy-method"></a>Método Shell. ExplorerPolicy
 
-Obtém o valor de uma política Windows Internet Explorer especificada.
+obtém o valor de uma política especificada Windows Internet Explorer.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -49,12 +49,12 @@ Shell.ExplorerPolicy( _
 
 <dl> <dt>
 
-*bstrPolicyName* \[ Em\]
+*bstrPolicyName* \[ no\]
 </dt> <dd>
 
 Tipo: **[ **BSTR**](/previous-versions/windows/desktop/automat/bstr)**
 
-Uma **Cadeia de** caracteres que especifica o nome da política.
+Uma **cadeia de caracteres** que especifica o nome da política.
 
 </dd> </dl>
 
@@ -62,25 +62,25 @@ Uma **Cadeia de** caracteres que especifica o nome da política.
 
 ### <a name="jscript"></a>JScript
 
-Tipo: **\* Variante**
+Tipo: **variante \***
 
-O valor associado ao nome da política especificado.
+O valor associado ao nome de política especificado.
 
 ### <a name="vb"></a>VB
 
-Tipo: **\* Variante**
+Tipo: **variante \***
 
-O valor associado ao nome da política especificado.
+O valor associado ao nome de política especificado.
 
 ## <a name="remarks"></a>Comentários
 
-Os administradores de rede podem controlar e gerenciar o ambiente de computação de seus usuários definindo políticas.
+Os administradores de rede podem controlar e gerenciar o ambiente computacional de seus usuários definindo políticas.
 
-O nome do valor especificado deve estar dentro da **sub-chave HKEY \_ CURRENT \_ USER** \\ **Software** \\ **Microsoft** \\ **Windows** \\ **CurrentVersion** \\ **Policies** \\ **Explorer.** Se o nome do valor não existir, o método retornará **nulo.**
+o nome do valor especificado deve estar dentro **da \_ \_** \\  \\ subchave do gerenciador de diretivas do **Microsoft** \\ **Windows** \\ **CurrentVersion** \\ **policies** \\ **Explorer** do HKEY CURRENT USER Software. Se o nome do valor não existir, o método retornará **NULL**.
 
 ## <a name="examples"></a>Exemplos
 
-Os exemplos a seguir mostram o uso adequado do **ExplorerPolicy** para JScript, VBScript e Visual Basic.
+os exemplos a seguir mostram o uso apropriado de **ExplorerPolicy** para JScript, VBScript e Visual Basic.
 
 JScript:
 
@@ -100,7 +100,7 @@ JScript:
 
 
 
-Vbscript:
+VBScript
 
 
 ```VB
@@ -142,11 +142,11 @@ End Sub
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho XP\]<br/>                                                                   |
-| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                                          |
-| Cabeçalho<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
-| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
-| DLL<br/>                      | <dl> <dt>Shell32.dll (versão 6.0 ou posterior)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho XP\]<br/>                                                                   |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                                          |
+| Cabeçalho<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                          |
+| INSERI<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                        |
+| DLL<br/>                      | <dl> <dt>Shell32.dll (versão 6,0 ou posterior)</dt> </dl> |
 
 
 

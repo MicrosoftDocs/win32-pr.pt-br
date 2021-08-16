@@ -1,6 +1,6 @@
 ---
 description: Cria e retorna um novo objeto ShellWindows que é uma cópia desse objeto ShellWindows.
-title: ShellWindows._NewEnum método (Exdisp.h)
+title: Método de ShellWindows._NewEnum (exdisp. h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: 85e84c13-62aa-4502-b642-ca55273a800d
-ms.openlocfilehash: 944da80196db12d0bfa5d64767c5e6c2e8ff733e
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: 696767844e2cc5dbe17aa44c2f76a8b0550b86115437e0d5f3e1f1f2543dbb2d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109841247"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117857095"
 ---
 # <a name="shellwindows_newenum-method"></a>ShellWindows. \_ Método NewEnum
 
-Cria e retorna um novo [**objeto ShellWindows**](shellwindows.md) que é uma cópia desse **objeto ShellWindows.**
+Cria e retorna um novo objeto [**ShellWindows**](shellwindows.md) que é uma cópia desse objeto **ShellWindows** .
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -37,17 +37,17 @@ retVal = ShellWindows._NewEnum()
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **IUnknown**](/windows/win32/api/unknwn/nn-unknwn-iunknown)\*\***
 
-Uma referência de objeto à [**cópia de objeto ShellWindows.**](shellwindows.md)
+Uma referência de objeto para a cópia do objeto [**ShellWindows**](shellwindows.md) .
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo a seguir **\_ mostra NewEnum** em uso. O uso adequado é mostrado para VBScript e Visual Basic. Esse método não pode ser usado com JScript.
+O exemplo a seguir mostra o **\_ NewEnum** em uso. O uso adequado é mostrado para o VBScript e o Visual Basic. Este método não pode ser usado com JScript.
 
-Vbscript:
+VBScript
 
 
 ```VB
@@ -107,10 +107,10 @@ End Sub
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 2000 Professional, somente aplicativos da área de trabalho do Windows XP \[\]<br/>                                         |
+| Cliente mínimo com suporte<br/> | Windows 2000 Professional, \[ somente aplicativos de área de trabalho do Windows XP\]<br/>                                         |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                           |
-| Cabeçalho<br/>                   | <dl> <dt>Exdisp.h</dt> </dl>                            |
-| DLL<br/>                      | <dl> <dt>Shell32.dll (versão 4.71 ou posterior)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>O textdisp. h</dt> </dl>                            |
+| DLL<br/>                      | <dl> <dt>Shell32.dll (versão 4,71 ou posterior)</dt> </dl> |
 
 
 

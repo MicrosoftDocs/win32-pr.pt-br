@@ -1,7 +1,7 @@
 ---
-description: Notifica um aplicativo de que uma solicitação de conexão ou desconexão agendada anteriormente para o dispositivo MTP/Bluetooth foi concluída.
+description: Notifica um aplicativo de que uma solicitação Conexão agendada anteriormente ou Desconectar para o dispositivo MTP/Bluetooth foi concluída.
 ms.assetid: 1588d0ec-0d6a-4379-bfdc-4ba5fdaa4665
-title: 'Método IConnectionRequestCallback:: OnComplete (Devpkey. h)'
+title: Método IConnectionRequestCallback::OnComplete (Devpkey.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - PortableDeviceGuids.lib
 - PortableDeviceGuids.dll
-ms.openlocfilehash: 922169b7e17335c47425665bb9a9e54891e68723
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b21248cde95d4b58accb7e629efedfc7c05eef7b08f411e240314a6a07690b3a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103829091"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117843184"
 ---
-# <a name="iconnectionrequestcallbackoncomplete-method"></a>Método IConnectionRequestCallback:: OnComplete
+# <a name="iconnectionrequestcallbackoncomplete-method"></a>Método IConnectionRequestCallback::OnComplete
 
-O método **OnComplete** notifica um aplicativo de que uma solicitação de conexão ou desconexão agendada anteriormente para o dispositivo MTP/Bluetooth foi concluída
+O **método OnComplete** notifica um aplicativo de que uma solicitação Conexão agendada anteriormente ou Desconectar para o dispositivo MTP/Bluetooth foi concluída
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,16 +40,16 @@ HRESULT OnComplete(
 
 <dl> <dt>
 
-*hrStatus* \[ no\]
+*hrStatus* \[ Em\]
 </dt> <dd>
 
-O status da solicitação para conectar ou desconectar um determinado dispositivo.
+O status da solicitação para se conectar ou desconectar um determinado dispositivo.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
+O método retorna um **HRESULT.** Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
 
 
 
@@ -63,9 +63,9 @@ O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limita�
 
 ## <a name="remarks"></a>Comentários
 
-Um aplicativo implementa a interface [**IConnectionRequestCallback**](iconnectionrequestcallback.md) para receber notificações sobre solicitações concluídas e para cancelar solicitações pendentes.
+Um aplicativo implementa a interface [**IConnectionRequestCallback**](iconnectionrequestcallback.md) para receber notificações sobre solicitações concluídas e cancelar solicitações pendentes.
 
-Os dispositivos portáteis do Windows (WPD) chamam esse método para notificar um aplicativo de que uma solicitação agendada anteriormente foi concluída. Cada solicitação pode ser rastreada e cancelada por seu retorno de chamada fornecido pelo aplicativo. Portanto, se o aplicativo precisar enviar várias solicitações ao mesmo tempo usando o mesmo objeto [**IPortableDeviceConnector**](/windows/desktop/api/portabledeviceconnectapi/nn-portabledeviceconnectapi-iportabledeviceconnector) , cada solicitação deverá passar um objeto [**IConnectionRequestCallback**](iconnectionrequestcallback.md) exclusivo como o parâmetro de entrada para os métodos [**IPortableDeviceConnector:: Connect**](/windows/desktop/api/portabledeviceconnectapi/nf-portabledeviceconnectapi-iportabledeviceconnector-connect) e [**IPortableDeviceConnector::D isconnect**](/windows/desktop/api/portabledeviceconnectapi/nf-portabledeviceconnectapi-iportabledeviceconnector-disconnect) .
+Windows O WPD (Dispositivos Portáteis) chama esse método para notificar um aplicativo de que uma solicitação agendada anteriormente foi concluída. Cada solicitação pode ser rastreada e cancelada por seu retorno de chamada fornecido pelo aplicativo. Portanto, se o aplicativo precisar enviar várias solicitações ao mesmo tempo usando o mesmo objeto [**IPortableDeviceConnector,**](/windows/desktop/api/portabledeviceconnectapi/nn-portabledeviceconnectapi-iportabledeviceconnector) cada solicitação deverá ser passada um objeto [**IConnectionRequestCallback**](iconnectionrequestcallback.md) exclusivo como o parâmetro de entrada para os métodos [**IPortableDeviceConnector::Conexão**](/windows/desktop/api/portabledeviceconnectapi/nf-portabledeviceconnectapi-iportabledeviceconnector-connect) e [**IPortableDeviceConnector::D isconnect.**](/windows/desktop/api/portabledeviceconnectapi/nf-portabledeviceconnectapi-iportabledeviceconnector-disconnect)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -73,11 +73,11 @@ Os dispositivos portáteis do Windows (WPD) chamam esse método para notificar u
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>                                                                                                                             |
+| Cliente mínimo com suporte<br/> | Windows 7 \[ aplicativos da área de trabalho\]<br/>                                                                                                                             |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                                                                                              |
-| parâmetro<br/>                   | <dl> <dt>Devpkey. h; </dt> <dt>Portabledeviceconnectapi. h</dt> </dl> |
-| INSERI<br/>                      | <dl> <dt>Portabledeviceconnectapi. idl</dt> </dl>                                                                |
-| Biblioteca<br/>                  | <dl> <dt>PortableDeviceGuids. lib</dt> </dl>                                                                     |
+| Cabeçalho<br/>                   | <dl> <dt>Devpkey.h; </dt> <dt>Portabledeviceconnectapi.h</dt> </dl> |
+| Idl<br/>                      | <dl> <dt>Portabledeviceconnectapi.idl</dt> </dl>                                                                |
+| Biblioteca<br/>                  | <dl> <dt>PortableDeviceGuids.lib</dt> </dl>                                                                     |
 
 
 

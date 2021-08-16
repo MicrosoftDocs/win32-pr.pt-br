@@ -1,11 +1,11 @@
 ---
-title: Definindo extensões de unidade de dados
-description: Definindo extensões de unidade de dados
+title: Configurando extensões de unidade de dados
+description: Configurando extensões de unidade de dados
 ms.assetid: 28328c9e-8590-48b8-92b6-1c0475978246
 keywords:
 - ASF (Advanced Systems Format), extensões de unidade de dados
-- ASF (formato de sistemas avançados), extensões de unidade de dados
-- extensões de unidade de dados, configurando
+- ASF (Formato de Sistemas Avançados), extensões de unidade de dados
+- extensões de unidade de dados, configuração
 - fluxos, extensões de unidade de dados
 ms.topic: article
 ms.date: 05/31/2018
@@ -16,13 +16,13 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118197478"
 ---
-# <a name="setting-data-unit-extensions"></a>Definindo extensões de unidade de dados
+# <a name="setting-data-unit-extensions"></a>Configurando extensões de unidade de dados
 
-Alguns fluxos são configurados para usar extensões de unidade de dados para associar dados complementares a exemplos individuais. Para obter mais informações sobre amostras estendidas, consulte [extensões de unidade de dados](data-unit-extensions.md).
+Alguns fluxos são configurados para usar extensões de unidade de dados para associar dados suplementares a exemplos individuais. Para obter mais informações sobre exemplos estendidos, consulte [Extensões de unidade de dados](data-unit-extensions.md).
 
-A maioria dos sistemas de extensão de unidade de dados requer uma extensão em cada exemplo no fluxo. Se você não fornecer uma extensão do tamanho correto, o gravador rejeitará o exemplo.
+A maioria dos sistemas de extensão de unidade de dados exige uma extensão em cada exemplo no fluxo. Se você não fornecer uma extensão do tamanho correto, o autor rejeitará o exemplo.
 
-Para adicionar dados estendidos a um exemplo, use o método [**INSSBuffer3:: SetProperty**](/previous-versions/windows/desktop/api/Wmsbuffer/nf-wmsbuffer-inssbuffer3-setproperty) . Você pode obter informações sobre as extensões de unidade de dados configuradas em um fluxo usando os métodos [**IWMStreamConfig2:: GetDataUnitExtensionCount**](/previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmstreamconfig2-getdataunitextensioncount) e [**IWMStreamConfig2:: GetDataUnitExtension**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmstreamconfig2-getdataunitextension) .
+Para adicionar dados estendidos a um exemplo, use o [**método INSSBuffer3::SetProperty.**](/previous-versions/windows/desktop/api/Wmsbuffer/nf-wmsbuffer-inssbuffer3-setproperty) Você pode obter informações sobre as extensões de unidade de dados configuradas em um fluxo usando os métodos [**IWMStreamConfig2::GetDataUnitExtensionCount**](/previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmstreamconfig2-getdataunitextensioncount) e [**IWMStreamConfig2::GetDataUnitExtension.**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmstreamconfig2-getdataunitextension)
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -31,7 +31,7 @@ Para adicionar dados estendidos a um exemplo, use o método [**INSSBuffer3:: Set
 [**Configurar extensões de unidade de dados**](configuring-data-unit-extensions.md)
 </dt> <dt>
 
-[**Gravando arquivos ASF**](writing-asf-files.md)
+[**Escrevendo arquivos ASF**](writing-asf-files.md)
 </dt> </dl>
 
  

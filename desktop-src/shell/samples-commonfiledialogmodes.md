@@ -9,12 +9,12 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: 0dab735425c800e143bc2808b247fa89d1c23094
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
-ms.translationtype: HT
+ms.openlocfilehash: 0e6cdc5df1d8ba07664f1ca06114dbf138d7a7e7dde7b78cb588d4c446072a3c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104968205"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117858468"
 ---
 # <a name="common-file-dialog-modes-sample"></a>Exemplo de modos de diálogo de arquivo comum
 
@@ -22,7 +22,7 @@ Demonstra como usar a caixa de diálogo arquivo comum em modos diferentes para e
 
 Este tópico inclui as seções a seguir.
 
--   [Requisitos](#requirements)
+-   [Requirements](#requirements)
 -   [Baixando o exemplo](#downloading-the-sample)
 -   [Compilando o exemplo](#building-the-sample)
 -   [Executando o exemplo](#running-the-sample)

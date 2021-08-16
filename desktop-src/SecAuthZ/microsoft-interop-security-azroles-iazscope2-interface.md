@@ -1,7 +1,7 @@
 ---
-description: Links para documentação para os métodos e propriedades do wrapper de interoperabilidade do IAzScope2.
+description: Links para a documentação dos métodos e propriedades do wrapper de interoperabilidade IAzScope2.
 ms.assetid: 2e1fb2af-3512-416c-8716-7e1303783ea5
-title: Interface Microsoft. Interop. Security. AzRoles. IAzScope2
+title: Interface Microsoft.Interop.Security.AzRoles.IAzScope2
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -142,53 +142,53 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117780578"
 ---
-# <a name="microsoftinteropsecurityazrolesiazscope2-interface"></a>Interface Microsoft. Interop. Security. AzRoles. IAzScope2
+# <a name="microsoftinteropsecurityazrolesiazscope2-interface"></a>Interface Microsoft.Interop.Security.AzRoles.IAzScope2
 
-Os métodos e as propriedades do wrapper de interoperabilidade **Microsoft. Interop. Security. Azroles. IAzScope2** são documentados na versão com do método ou da propriedade. Um link para a documentação COM correlacionada segue cada nome de membro.
+Os métodos e propriedades de wrapper de interoperabilidade **Microsoft.Interop.Security.Azroles.IAzScope2** são documentados na versão COM do método ou propriedade. Um link para a documentação COM de correlação segue cada nome de membro.
 
 ## <a name="members"></a>Membros
 
-A interface **Microsoft. Interop. Security. AzRoles. IAzScope2** tem estes tipos de membros:
+A interface **Microsoft.Interop.Security.AzRoles.IAzScope2** tem estes tipos de membros:
 
 -   [Métodos](#methods)
 -   [Propriedades](#properties)
 
 ### <a name="methods"></a>Métodos
 
-A interface **Microsoft. Interop. Security. AzRoles. IAzScope2** tem esses métodos.
+A interface **Microsoft.Interop.Security.AzRoles.IAzScope2** tem esses métodos.
 
 
 
 | Método                                                                         | Descrição                                                                                          |
 |:-------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------|
-| **Microsoft. Interop. Security. Azroles. IAzScope2. AddPolicyAdministrator**        | [**IAzScope::AddPolicyAdministrator**](/windows/desktop/api/Azroles/nf-azroles-iazscope-addpolicyadministrator)<br/>               |
-| **Microsoft. Interop. Security. Azroles. IAzScope2. AddPolicyAdministratorName**    | [**IAzScope::AddPolicyAdministratorName**](/windows/desktop/api/Azroles/nf-azroles-iazscope-addpolicyadministratorname)<br/>       |
-| **Microsoft. Interop. Security. Azroles. IAzScope2. AddPolicyReader**               | [**IAzScope::AddPolicyReader**](/windows/desktop/api/Azroles/nf-azroles-iazscope-addpolicyreader)<br/>                             |
-| **Microsoft. Interop. Security. Azroles. IAzScope2. AddPolicyReaderName**           | [**IAzScope::AddPolicyReaderName**](/windows/desktop/api/Azroles/nf-azroles-iazscope-addpolicyreadername)<br/>                     |
-| **Microsoft. Interop. Security. Azroles. IAzScope2. AddPropertyItem**               | [**IAzScope::AddPropertyItem**](/windows/desktop/api/Azroles/nf-azroles-iazscope-addpropertyitem)<br/>                             |
-| **Microsoft. Interop. Security. Azroles. IAzScope2. createapplication**        | [**IAzScope:: createapplication**](/windows/desktop/api/Azroles/nf-azroles-iazscope-createapplicationgroup)<br/>               |
-| **Microsoft. Interop. Security. Azroles. IAzScope2. CreateRole**                    | [**IAzScope:: CreateRole**](/windows/desktop/api/Azroles/nf-azroles-iazscope-createrole)<br/>                                       |
-| **Microsoft. Interop. Security. Azroles. IAzScope2. CreateRoleAssignment**          | [**IAzScope2::CreateRoleAssignment**](/windows/desktop/api/Azroles/nf-azroles-iazscope2-createroleassignment)<br/>                 |
-| **Microsoft. Interop. Security. Azroles. IAzScope2. CreateRoleDefinition**          | [**IAzScope2::CreateRoleDefinition**](/windows/desktop/api/Azroles/nf-azroles-iazscope2-createroledefinition)<br/>                 |
-| **Microsoft. Interop. Security. Azroles. IAzScope2. CreateTask**                    | [**IAzScope:: CreateTask**](/windows/desktop/api/Azroles/nf-azroles-iazscope-createtask)<br/>                                       |
-| **Microsoft. Interop. Security. Azroles. IAzScope2. DeleteApplicationGroup**        | [**IAzScope::D eleteApplicationGroup**](/windows/desktop/api/Azroles/nf-azroles-iazscope-deleteapplicationgroup)<br/>               |
-| **Microsoft. Interop. Security. Azroles. IAzScope2. DeletePolicyAdministrator**     | [**IAzScope::D eletePolicyAdministrator**](/windows/desktop/api/Azroles/nf-azroles-iazscope-deletepolicyadministrator)<br/>         |
-| **Microsoft. Interop. Security. Azroles. IAzScope2. DeletePolicyAdministratorName** | [**IAzScope::D eletePolicyAdministratorName**](/windows/desktop/api/Azroles/nf-azroles-iazscope-deletepolicyadministratorname)<br/> |
-| **Microsoft. Interop. Security. Azroles. IAzScope2. DeletePolicyReader**            | [**IAzScope::D eletePolicyReader**](/windows/desktop/api/Azroles/nf-azroles-iazscope-deletepolicyreader)<br/>                       |
-| **Microsoft. Interop. Security. Azroles. IAzScope2. DeletePolicyReaderName**        | [**IAzScope::D eletePolicyReaderName**](/windows/desktop/api/Azroles/nf-azroles-iazscope-deletepolicyreadername)<br/>               |
-| **Microsoft. Interop. Security. Azroles. IAzScope2. DeletePropertyItem**            | [**IAzScope::D eletePropertyItem**](/windows/desktop/api/Azroles/nf-azroles-iazscope-deletepropertyitem)<br/>                       |
-| **Microsoft. Interop. Security. Azroles. IAzScope2. DeleteRole**                    | [**IAzScope::D eleteRole**](/windows/desktop/api/Azroles/nf-azroles-iazscope-deleterole)<br/>                                       |
-| **Microsoft. Interop. Security. Azroles. IAzScope2. DeleteRoleAssignment**          | [**IAzScope2::D eleteRoleAssignment**](/windows/desktop/api/Azroles/nf-azroles-iazscope2-deleteroleassignment)<br/>                 |
-| **Microsoft. Interop. Security. Azroles. IAzScope2. DeleteRoleDefinition**          | [**IAzScope2::D eleteRoleDefinition**](/windows/desktop/api/Azroles/nf-azroles-iazscope2-deleteroledefinition)<br/>                 |
-| **Microsoft. Interop. Security. Azroles. IAzScope2. DeleteTask**                    | [**IAzScope::D eleteTask**](/windows/desktop/api/Azroles/nf-azroles-iazscope-deletetask)<br/>                                       |
-| **Microsoft. Interop. Security. Azroles. IAzScope2. GetProperty**                   | [**IAzScope:: GetProperty**](/windows/desktop/api/Azroles/nf-azroles-iazscope-getproperty)<br/>                                     |
-| **Microsoft. Interop. Security. Azroles. IAzScope2. OpenApplicationGroup**          | [**IAzScope::OpenApplicationGroup**](/windows/desktop/api/Azroles/nf-azroles-iazscope-openapplicationgroup)<br/>                   |
-| **Microsoft. Interop. Security. Azroles. IAzScope2. OpenRole**                      | [**IAzScope::OpenRole**](/windows/desktop/api/Azroles/nf-azroles-iazscope-openrole)<br/>                                           |
-| **Microsoft. Interop. Security. Azroles. IAzScope2. OpenRoleAssignment**            | [**IAzScope2::OpenRoleAssignment**](/windows/desktop/api/Azroles/nf-azroles-iazscope2-openroleassignment)<br/>                     |
-| **Microsoft. Interop. Security. Azroles. IAzScope2. OpenRoleDefinition**            | [**IAzScope2::OpenRoleDefinition**](/windows/desktop/api/Azroles/nf-azroles-iazscope2-openroledefinition)<br/>                     |
-| **Microsoft. Interop. Security. Azroles. IAzScope2. OpenTask**                      | [**IAzScope::OpenTask**](/windows/desktop/api/Azroles/nf-azroles-iazscope-opentask)<br/>                                           |
-| **Microsoft. Interop. Security. Azroles. IAzScope2. SetProperty**                   | [**IAzScope:: SetProperty**](/windows/desktop/api/Azroles/nf-azroles-iazscope-setproperty)<br/>                                     |
-| **Microsoft. Interop. Security. Azroles. IAzScope2. Submit**                        | [**IAzScope:: enviar**](/windows/desktop/api/Azroles/nf-azroles-iazscope-submit)<br/>                                               |
+| **Microsoft.Interop.Security.Azroles.IAzScope2.AddPolicyAdministrator**        | [**IAzScope::AddPolicyAdministrator**](/windows/desktop/api/Azroles/nf-azroles-iazscope-addpolicyadministrator)<br/>               |
+| **Microsoft.Interop.Security.Azroles.IAzScope2.AddPolicyAdministratorName**    | [**IAzScope::AddPolicyAdministratorName**](/windows/desktop/api/Azroles/nf-azroles-iazscope-addpolicyadministratorname)<br/>       |
+| **Microsoft.Interop.Security.Azroles.IAzScope2.AddPolicyReader**               | [**IAzScope::AddPolicyReader**](/windows/desktop/api/Azroles/nf-azroles-iazscope-addpolicyreader)<br/>                             |
+| **Microsoft.Interop.Security.Azroles.IAzScope2.AddPolicyReaderName**           | [**IAzScope::AddPolicyReaderName**](/windows/desktop/api/Azroles/nf-azroles-iazscope-addpolicyreadername)<br/>                     |
+| **Microsoft.Interop.Security.Azroles.IAzScope2.AddPropertyItem**               | [**IAzScope::AddPropertyItem**](/windows/desktop/api/Azroles/nf-azroles-iazscope-addpropertyitem)<br/>                             |
+| **Microsoft.Interop.Security.Azroles.IAzScope2.CreateApplicationGroup**        | [**IAzScope::CreateApplicationGroup**](/windows/desktop/api/Azroles/nf-azroles-iazscope-createapplicationgroup)<br/>               |
+| **Microsoft.Interop.Security.Azroles.IAzScope2.CreateRole**                    | [**IAzScope::CreateRole**](/windows/desktop/api/Azroles/nf-azroles-iazscope-createrole)<br/>                                       |
+| **Microsoft.Interop.Security.Azroles.IAzScope2.CreateRoleAssignment**          | [**IAzScope2::CreateRoleAssignment**](/windows/desktop/api/Azroles/nf-azroles-iazscope2-createroleassignment)<br/>                 |
+| **Microsoft.Interop.Security.Azroles.IAzScope2.CreateRoleDefinition**          | [**IAzScope2::CreateRoleDefinition**](/windows/desktop/api/Azroles/nf-azroles-iazscope2-createroledefinition)<br/>                 |
+| **Microsoft.Interop.Security.Azroles.IAzScope2.CreateTask**                    | [**IAzScope::CreateTask**](/windows/desktop/api/Azroles/nf-azroles-iazscope-createtask)<br/>                                       |
+| **Microsoft.Interop.Security.Azroles.IAzScope2.DeleteApplicationGroup**        | [**IAzScope::D eleteApplicationGroup**](/windows/desktop/api/Azroles/nf-azroles-iazscope-deleteapplicationgroup)<br/>               |
+| **Microsoft.Interop.Security.Azroles.IAzScope2.DeletePolicyAdministrator**     | [**IAzScope::D eletePolicyAdministrator**](/windows/desktop/api/Azroles/nf-azroles-iazscope-deletepolicyadministrator)<br/>         |
+| **Microsoft.Interop.Security.Azroles.IAzScope2.DeletePolicyAdministratorName** | [**IAzScope::D eletePolicyAdministratorName**](/windows/desktop/api/Azroles/nf-azroles-iazscope-deletepolicyadministratorname)<br/> |
+| **Microsoft.Interop.Security.Azroles.IAzScope2.DeletePolicyReader**            | [**IAzScope::D eletePolicyReader**](/windows/desktop/api/Azroles/nf-azroles-iazscope-deletepolicyreader)<br/>                       |
+| **Microsoft.Interop.Security.Azroles.IAzScope2.DeletePolicyReaderName**        | [**IAzScope::D eletePolicyReaderName**](/windows/desktop/api/Azroles/nf-azroles-iazscope-deletepolicyreadername)<br/>               |
+| **Microsoft.Interop.Security.Azroles.IAzScope2.DeletePropertyItem**            | [**IAzScope::D eletePropertyItem**](/windows/desktop/api/Azroles/nf-azroles-iazscope-deletepropertyitem)<br/>                       |
+| **Microsoft.Interop.Security.Azroles.IAzScope2.DeleteRole**                    | [**IAzScope::D eleteRole**](/windows/desktop/api/Azroles/nf-azroles-iazscope-deleterole)<br/>                                       |
+| **Microsoft.Interop.Security.Azroles.IAzScope2.DeleteRoleAssignment**          | [**IAzScope2::D eleteRoleAssignment**](/windows/desktop/api/Azroles/nf-azroles-iazscope2-deleteroleassignment)<br/>                 |
+| **Microsoft.Interop.Security.Azroles.IAzScope2.DeleteRoleDefinition**          | [**IAzScope2::D eleteRoleDefinition**](/windows/desktop/api/Azroles/nf-azroles-iazscope2-deleteroledefinition)<br/>                 |
+| **Microsoft.Interop.Security.Azroles.IAzScope2.DeleteTask**                    | [**IAzScope::D eleteTask**](/windows/desktop/api/Azroles/nf-azroles-iazscope-deletetask)<br/>                                       |
+| **Microsoft.Interop.Security.Azroles.IAzScope2.GetProperty**                   | [**IAzScope::GetProperty**](/windows/desktop/api/Azroles/nf-azroles-iazscope-getproperty)<br/>                                     |
+| **Microsoft.Interop.Security.Azroles.IAzScope2.OpenApplicationGroup**          | [**IAzScope::OpenApplicationGroup**](/windows/desktop/api/Azroles/nf-azroles-iazscope-openapplicationgroup)<br/>                   |
+| **Microsoft.Interop.Security.Azroles.IAzScope2.OpenRole**                      | [**IAzScope::OpenRole**](/windows/desktop/api/Azroles/nf-azroles-iazscope-openrole)<br/>                                           |
+| **Microsoft.Interop.Security.Azroles.IAzScope2.OpenRoleAssignment**            | [**IAzScope2::OpenRoleAssignment**](/windows/desktop/api/Azroles/nf-azroles-iazscope2-openroleassignment)<br/>                     |
+| **Microsoft.Interop.Security.Azroles.IAzScope2.OpenRoleDefinition**            | [**IAzScope2::OpenRoleDefinition**](/windows/desktop/api/Azroles/nf-azroles-iazscope2-openroledefinition)<br/>                     |
+| **Microsoft.Interop.Security.Azroles.IAzScope2.OpenTask**                      | [**IAzScope::OpenTask**](/windows/desktop/api/Azroles/nf-azroles-iazscope-opentask)<br/>                                           |
+| **Microsoft.Interop.Security.Azroles.IAzScope2.SetProperty**                   | [**IAzScope::SetProperty**](/windows/desktop/api/Azroles/nf-azroles-iazscope-setproperty)<br/>                                     |
+| **Microsoft.Interop.Security.Azroles.IAzScope2.Submit**                        | [**IAzScope::Submit**](/windows/desktop/api/Azroles/nf-azroles-iazscope-submit)<br/>                                               |
 
 
 
@@ -196,27 +196,27 @@ A interface **Microsoft. Interop. Security. AzRoles. IAzScope2** tem esses méto
 
 ### <a name="properties"></a>Propriedades
 
-A interface **Microsoft. Interop. Security. AzRoles. IAzScope2** tem essas propriedades.
+A interface **Microsoft.Interop.Security.AzRoles.IAzScope2** tem essas propriedades.
 
 
 
 | Propriedade                                                                             | Tipo de acesso           | Descrição                                                                                           |
 |:-------------------------------------------------------------------------------------|:----------------------|:------------------------------------------------------------------------------------------------------|
-| **Microsoft. Interop. Security. Azroles. IAzScope2. ApplicationData**<br/>          | Leitura/gravação<br/> | [**Propriedade ApplicationData de IAzScope**](/windows/desktop/api/Azroles/nf-azroles-iazscope-get_applicationdata)<br/>                   |
-| **Microsoft. Interop. Security. Azroles. IAzScope2. ApplicationGroups**<br/>        | Somente leitura<br/>  | [**Propriedade ApplicationGroups de IAzScope**](/windows/desktop/api/Azroles/nf-azroles-iazscope-get_applicationgroups)<br/>               |
-| **Microsoft. Interop. Security. Azroles. IAzScope2. BizrulesWritable**<br/>         | Somente leitura<br/>  | [**Propriedade BizrulesWritable de IAzScope**](/windows/desktop/api/Azroles/nf-azroles-iazscope-get_bizruleswritable)<br/>                 |
-| **Microsoft. Interop. Security. Azroles. IAzScope2. CanBeDelegated**<br/>           | Somente leitura<br/>  | [**Propriedade CanBeDelegated de IAzScope**](/windows/desktop/api/Azroles/nf-azroles-iazscope-get_canbedelegated)<br/>                     |
-| **Microsoft. Interop. Security. Azroles. IAzScope2. Description**<br/>              | Leitura/gravação<br/> | [**Propriedade de descrição de IAzScope**](/windows/desktop/api/Azroles/nf-azroles-iazscope-get_description)<br/>                           |
+| **Microsoft.Interop.Security.Azroles.IAzScope2.ApplicationData**<br/>          | Leitura/gravação<br/> | [**Propriedade ApplicationData de IAzScope**](/windows/desktop/api/Azroles/nf-azroles-iazscope-get_applicationdata)<br/>                   |
+| **Microsoft.Interop.Security.Azroles.IAzScope2.ApplicationGroups**<br/>        | Somente leitura<br/>  | [**Propriedade ApplicationGroups de IAzScope**](/windows/desktop/api/Azroles/nf-azroles-iazscope-get_applicationgroups)<br/>               |
+| **Microsoft.Interop.Security.Azroles.IAzScope2.BizrulesWritable**<br/>         | Somente leitura<br/>  | [**Propriedade BizrulesWritable de IAzScope**](/windows/desktop/api/Azroles/nf-azroles-iazscope-get_bizruleswritable)<br/>                 |
+| **Microsoft.Interop.Security.Azroles.IAzScope2.CanBeDelegated**<br/>           | Somente leitura<br/>  | [**Propriedade CanBeDelegated de IAzScope**](/windows/desktop/api/Azroles/nf-azroles-iazscope-get_canbedelegated)<br/>                     |
+| **Microsoft.Interop.Security.Azroles.IAzScope2.Description**<br/>              | Leitura/gravação<br/> | [**Propriedade Description de IAzScope**](/windows/desktop/api/Azroles/nf-azroles-iazscope-get_description)<br/>                           |
 | **Microsoft.Interop.Security.Azroles.IAzScope2.Name**<br/>                     | Leitura/gravação<br/> | [**Propriedade Name de IAzScope**](/windows/desktop/api/Azroles/nf-azroles-iazscope-get_name)<br/>                                         |
-| **Microsoft. Interop. Security. Azroles. IAzScope2. PolicyAdministrators**<br/>     | Somente leitura<br/>  | [**Propriedade PolicyAdministrators de IAzScope**](/windows/desktop/api/Azroles/nf-azroles-iazscope-get_policyadministrators)<br/>         |
-| **Microsoft. Interop. Security. Azroles. IAzScope2. PolicyAdministratorsName**<br/> | Somente leitura<br/>  | [**Propriedade PolicyAdministratorsName de IAzScope**](/windows/desktop/api/Azroles/nf-azroles-iazscope-get_policyadministratorsname)<br/> |
-| **Microsoft. Interop. Security. Azroles. IAzScope2. PolicyReaders**<br/>            | Somente leitura<br/>  | [**Propriedade PolicyReaders de IAzScope**](/windows/desktop/api/Azroles/nf-azroles-iazscope-get_policyreaders)<br/>                       |
-| **Microsoft. Interop. Security. Azroles. IAzScope2. PolicyReadersName**<br/>        | Somente leitura<br/>  | [**Propriedade PolicyReadersName de IAzScope**](/windows/desktop/api/Azroles/nf-azroles-iazscope-get_policyreadersname)<br/>               |
-| **Microsoft. Interop. Security. Azroles. IAzScope2. RoleAssignments**<br/>          | Somente leitura<br/>  | [**Propriedade RoleAssignments de IAzScope2**](/windows/desktop/api/Azroles/nf-azroles-iazscope2-get_roleassignments)<br/>                 |
-| **Microsoft. Interop. Security. Azroles. IAzScope2. RoleDefinitions**<br/>          | Somente leitura<br/>  | [**Propriedade RoleDefinitions de IAzScope2**](/windows/desktop/api/Azroles/nf-azroles-iazscope2-get_roledefinitions)<br/>                 |
-| **Microsoft. Interop. Security. Azroles. IAzScope2. Roles**<br/>                    | Somente leitura<br/>  | [**Propriedade Roles de IAzScope**](/windows/desktop/api/Azroles/nf-azroles-iazscope-get_roles)<br/>                                       |
-| **Microsoft. Interop. Security. Azroles. IAzScope2. Tasks**<br/>                    | Somente leitura<br/>  | [**Propriedade Tasks de IAzScope**](/windows/desktop/api/Azroles/nf-azroles-iazscope-get_tasks)<br/>                                       |
-| **Microsoft. Interop. Security. Azroles. IAzScope2. Writable**<br/>                 | Somente leitura<br/>  | [**Propriedade gravável de IAzScope**](/windows/desktop/api/Azroles/nf-azroles-iazscope-get_writable)<br/>                                 |
+| **Microsoft.Interop.Security.Azroles.IAzScope2.PolicyAdministrators**<br/>     | Somente leitura<br/>  | [**Propriedade PolicyAdministrators de IAzScope**](/windows/desktop/api/Azroles/nf-azroles-iazscope-get_policyadministrators)<br/>         |
+| **Microsoft.Interop.Security.Azroles.IAzScope2.PolicyAdministratorsName**<br/> | Somente leitura<br/>  | [**Propriedade PolicyAdministratorsName de IAzScope**](/windows/desktop/api/Azroles/nf-azroles-iazscope-get_policyadministratorsname)<br/> |
+| **Microsoft.Interop.Security.Azroles.IAzScope2.PolicyReaders**<br/>            | Somente leitura<br/>  | [**Propriedade PolicyReaders de IAzScope**](/windows/desktop/api/Azroles/nf-azroles-iazscope-get_policyreaders)<br/>                       |
+| **Microsoft.Interop.Security.Azroles.IAzScope2.PolicyReadersName**<br/>        | Somente leitura<br/>  | [**Propriedade PolicyReadersName de IAzScope**](/windows/desktop/api/Azroles/nf-azroles-iazscope-get_policyreadersname)<br/>               |
+| **Microsoft.Interop.Security.Azroles.IAzScope2.RoleAssignments**<br/>          | Somente leitura<br/>  | [**Propriedade RoleAssignments de IAzScope2**](/windows/desktop/api/Azroles/nf-azroles-iazscope2-get_roleassignments)<br/>                 |
+| **Microsoft.Interop.Security.Azroles.IAzScope2.RoleDefinitions**<br/>          | Somente leitura<br/>  | [**Propriedade RoleDefinitions de IAzScope2**](/windows/desktop/api/Azroles/nf-azroles-iazscope2-get_roledefinitions)<br/>                 |
+| **Microsoft.Interop.Security.Azroles.IAzScope2.Roles**<br/>                    | Somente leitura<br/>  | [**Propriedade Roles de IAzScope**](/windows/desktop/api/Azroles/nf-azroles-iazscope-get_roles)<br/>                                       |
+| **Microsoft.Interop.Security.Azroles.IAzScope2.Tasks**<br/>                    | Somente leitura<br/>  | [**Propriedade Tasks de IAzScope**](/windows/desktop/api/Azroles/nf-azroles-iazscope-get_tasks)<br/>                                       |
+| **Microsoft.Interop.Security.Azroles.IAzScope2.Writable**<br/>                 | Somente leitura<br/>  | [**Propriedade writable de IAzScope**](/windows/desktop/api/Azroles/nf-azroles-iazscope-get_writable)<br/>                                 |
 
 
 

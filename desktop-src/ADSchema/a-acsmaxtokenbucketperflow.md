@@ -1,10 +1,10 @@
 ---
-title: ACS-Max-token-bucket-atributo por fluxo
-description: O atributo ACS-Max-token-bucket-por-Flow é somente para uso interno.
+title: ACS-Max-Token-Bucket-atributo por Flow
+description: o atributo ACS-Max-Token-Bucket-Per-Flow é somente para uso interno.
 ms.assetid: 2c269bda-7b0d-4ef4-8c67-9f5e7c52e3ae
 ms.tgt_platform: multiple
 keywords:
-- ACS-Max-token-bucket por esquema de AD do atributo de fluxo
+- ACS-Max-Token-Bucket-por Flow esquema de AD do atributo
 - Esquema de AD do atributo aCSMaxTokenBucketPerFlow
 topic_type:
 - apiref
@@ -14,22 +14,22 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fb323af82b270c20478e8af4aafc3ee4142125ee
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 9067ba2dd69fe1ffb17f9eaef7a13365149ce29e4306611f288680bb4d49c35f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104087171"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117838302"
 ---
-# <a name="acs-max-token-bucket-per-flow-attribute"></a>ACS-Max-token-bucket-atributo por fluxo
+# <a name="acs-max-token-bucket-per-flow-attribute"></a>ACS-Max-Token-Bucket-atributo por Flow
 
-O atributo **ACS-Max-token-bucket-por-Flow** é somente para uso interno. Com base em RFC2210.
+o atributo **ACS-Max-Token-Bucket-Per-Flow** é somente para uso interno. Com base em RFC2210.
 
 
 
 | Entrada | Valor |
 |-------------------|--------------------------------------|
-| CN                | ACS-Max-token-bucket-por-Flow        |
+| CN                | ACS-Max-token-bucket por Flow        |
 | LDAP-Display-Name | aCSMaxTokenBucketPerFlow             |
 | Tamanho              | 8 bytes                              |
 | Privilégio de atualização  | \-                                   |
@@ -58,7 +58,7 @@ O atributo **ACS-Max-token-bucket-por-Flow** é somente para uso interno. Com ba
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | True                                         |
+| É de valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
 | No catálogo global      | Falso                                        |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
@@ -79,7 +79,7 @@ O atributo **ACS-Max-token-bucket-por-Flow** é somente para uso interno. Com ba
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | True                                         |
+| É de valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
 | No catálogo global      | Falso                                        |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
@@ -100,7 +100,7 @@ O atributo **ACS-Max-token-bucket-por-Flow** é somente para uso interno. Com ba
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | True                                         |
+| É de valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
 | No catálogo global      | Falso                                        |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
@@ -121,7 +121,7 @@ O atributo **ACS-Max-token-bucket-por-Flow** é somente para uso interno. Com ba
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | True                                         |
+| É de valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
 | No catálogo global      | Falso                                        |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
@@ -142,7 +142,7 @@ O atributo **ACS-Max-token-bucket-por-Flow** é somente para uso interno. Com ba
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | True                                         |
+| É de valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
 | No catálogo global      | Falso                                        |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
@@ -163,7 +163,7 @@ O atributo **ACS-Max-token-bucket-por-Flow** é somente para uso interno. Com ba
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | True                                         |
+| É de valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
 | No catálogo global      | Falso                                        |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |

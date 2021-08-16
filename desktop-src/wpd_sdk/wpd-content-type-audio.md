@@ -4,16 +4,16 @@ ms.assetid: a3d84878-489b-489a-a67e-0e4d25ddd3f7
 title: WPD_CONTENT_TYPE_AUDIO
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b83d43fcef539579fc0a687a97ba51e52278e4da
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bd4aa78b7fa546fab9fe186265ca721e441860a2fc55c2ba0b384df377e1344b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105773075"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117842350"
 ---
 # <a name="wpd_content_type_audio"></a>\_áudio de \_ tipo de conteúdo WPD \_
 
-Um objeto que descreve seu tipo como \_ áudio de tipo de conteúdo WPD \_ \_ representa um arquivo de áudio, como um arquivo de áudio do Windows Media (WMA) ou MP3.
+um objeto que descreve seu tipo de \_ áudio de tipo de conteúdo WPD \_ \_ representa um arquivo de áudio, como um arquivo de áudio Windows Media (WMA) ou MP3.
 
 Esse tipo de objeto dá suporte às propriedades a seguir.
 
@@ -67,22 +67,22 @@ Esse tipo de objeto dá suporte às propriedades a seguir.
 | [\_artista de mídia WPD \_](media-properties.md)                                                                            | Recomendável.                                                                       |
 | [\_artista do \_ álbum de mídia WPD \_](media-properties.md)                                                                     | Recomendável.                                                                       |
 | [\_URL de \_ origem de mídia WPD \_](media-properties.md)                                                                       | Opcional.                                                                          |
-| [\_URL de \_ destino de mídia WPD \_](media-properties.md)                                                                  | Opcional.                                                                          |
-| [\_Descrição da mídia WPD \_](media-properties.md)                                                                       | Opcional.                                                                          |
-| [\_gênero de mídia WPD \_](media-properties.md)                                                                             | Opcional.                                                                          |
-| [\_indicador de \_ tempo de mídia WPD \_](media-properties.md)                                                                    | Opcional.                                                                          |
-| [\_indicador de \_ byte de mídia WPD \_](media-properties.md)                                                                    | Opcional.                                                                          |
-| [\_GUID de mídia WPD \_](media-properties.md)                                                                              | Opcional.                                                                          |
-| [subdescrição de \_ mídia WPD \_ \_](media-properties.md)                                                                  | Opcional.                                                                          |
-| [\_álbum de música WPD \_](music-properties.md)                                                             | Recomendável.                                                                       |
-| [\_faixa de música WPD \_](music-properties.md)                                                             | Recomendável.                                                                       |
-| [\_letras de música WPD \_](music-properties.md)                                                           | Opcional.                                                                          |
-| [\_humor de música WPD \_](music-properties.md)                                                               | Opcional.                                                                          |
-| [taxa de bits de \_ áudio WPD \_](audio-properties.md)                                                         | Recomendável.                                                                       |
-| [\_contagem de \_ canais de áudio WPD \_](audio-properties.md)                                            | Opcional.                                                                          |
-| [\_código de \_ formato de áudio WPD \_](audio-properties.md)                                                | Opcional.                                                                          |
-| [\_profundidade de \_ bit de áudio WPD \_](audio-properties.md)                                                    | Opcional.                                                                          |
-| [\_alinhamento de \_ bloco de áudio WPD \_](audio-properties.md)                                        | Opcional.                                                                          |
+| [URL DE DESTINO DE MÍDIA WPD \_ \_ \_](media-properties.md)                                                                  | Opcional.                                                                          |
+| [DESCRIÇÃO DA MÍDIA WPD \_ \_](media-properties.md)                                                                       | Opcional.                                                                          |
+| [GÊNERO DE MÍDIA WPD \_ \_](media-properties.md)                                                                             | Opcional.                                                                          |
+| [INDICADOR DE TEMPO \_ \_ DE MÍDIA WPD \_](media-properties.md)                                                                    | Opcional.                                                                          |
+| [INDICADOR DE BYTE DE MÍDIA WPD \_ \_ \_](media-properties.md)                                                                    | Opcional.                                                                          |
+| [GUID DE \_ MÍDIA WPD \_](media-properties.md)                                                                              | Opcional.                                                                          |
+| [SUB DESCRIÇÃO DA MÍDIA WPD \_ \_ \_](media-properties.md)                                                                  | Opcional.                                                                          |
+| [WPD \_ MUSIC \_ ALBUM](music-properties.md)                                                             | Recomendável.                                                                       |
+| [WPD \_ MUSIC \_ TRACK](music-properties.md)                                                             | Recomendável.                                                                       |
+| [WPD \_ MUSIC \_ LYRICS](music-properties.md)                                                           | Opcional.                                                                          |
+| [WPD \_ MUSIC \_ MOOD](music-properties.md)                                                               | Opcional.                                                                          |
+| [TAXA DE BITS DE ÁUDIO WPD \_ \_](audio-properties.md)                                                         | Recomendável.                                                                       |
+| [CONTAGEM DE CANAIS \_ DE ÁUDIO \_ \_ WPD](audio-properties.md)                                            | Opcional.                                                                          |
+| [CÓDIGO DE FORMATO DE ÁUDIO WPD \_ \_ \_](audio-properties.md)                                                | Opcional.                                                                          |
+| [PROFUNDIDADE DO \_ BIT DE \_ ÁUDIO WPD \_](audio-properties.md)                                                    | Opcional.                                                                          |
+| [ALINHAMENTO DO BLOCO DE ÁUDIO WPD \_ \_ \_](audio-properties.md)                                        | Opcional.                                                                          |
 
 
 
@@ -90,15 +90,15 @@ Esse tipo de objeto dá suporte às propriedades a seguir.
 
 ## <a name="typical-resources"></a>Recursos típicos
 
-Esses objetos normalmente incluem os seguintes recursos.
+Esses objetos normalmente incluem os recursos a seguir.
 
 
 
-| Nome do Recurso                                               | Obrigatório ou opcional       | Descrição                                        |
+| Nome do Recurso                                               | Obrigatório ou Opcional       | Descrição                                        |
 |-------------------------------------------------------------|----------------------------|----------------------------------------------------|
-| [**\_padrão de recursos WPD \_**](wpd-resource-default.md)      | Opcional.                  | Contém o arquivo de áudio completo.                  |
-| [**\_arte do \_ álbum de recursos WPD \_**](wpd-resource-album-art.md) | Recomendado, se disponível. | Contém a imagem do álbum.                |
-| [**\_AUDIOCLIP de recursos WPD \_**](wpd-resource-audio-clip.md) | Opcional.                  | Contém um clipe de exemplo do arquivo de áudio completo. |
+| [**WPD \_ RESOURCE \_ DEFAULT**](wpd-resource-default.md)      | Opcional.                  | Contém o arquivo de áudio completo.                  |
+| [**WPD \_ RESOURCE \_ ALBUM \_ ART**](wpd-resource-album-art.md) | Recomendado, se disponível. | Contém a imagem do álbum.                |
+| [**WPD \_ RESOURCE \_ AUDIOCLIP**](wpd-resource-audio-clip.md) | Opcional.                  | Contém um clipe de exemplo do arquivo de áudio completo. |
 
 
 

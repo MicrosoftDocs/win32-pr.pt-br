@@ -1,61 +1,61 @@
 ---
-title: Erros de log e recuperação em funções no Active Directory Domain Services
-description: Este tópico lista os valores de retorno de erro de log e recuperação para funções no Active Directory Domain Services.
+title: Erros de registro em log e recuperação em funções Active Directory Domain Services
+description: Este tópico lista os valores de retorno de erro de log e recuperação para funções Active Directory Domain Services.
 ms.assetid: b927073a-8bbc-45d4-b9d3-25f3aa6c6f53
 ms.tgt_platform: multiple
 keywords:
-- Active Directory o registro em log e erros de recuperação
+- AD de erros de registro em log e recuperação do Active Directory
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e6fba921a63eb399d6ed4f44ef8569ed05370403
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 4b267b359b5244fddc0e8a9b2ddfbfb5d6e5f9ab0a7e647683d44759f8a7261b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105751015"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118186583"
 ---
-# <a name="logging-and-recovery-errors-in-functions-in-active-directory-domain-services"></a>Erros de log e recuperação em funções no Active Directory Domain Services
+# <a name="logging-and-recovery-errors-in-functions-in-active-directory-domain-services"></a>Erros de registro em log e recuperação em funções Active Directory Domain Services
 
-Este tópico lista os valores de retorno de erro de log e recuperação para funções no Active Directory Domain Services.
+Este tópico lista os valores de retorno de erro de log e recuperação para funções Active Directory Domain Services.
 
 
 
 | Valor                                | Descrição                                                                                                                      |
 |--------------------------------------|----------------------------------------------------------------------------------------------------------------------------------|
 | **hrLogFileCorrupt**                 | O arquivo de log está danificado.                                                                                                         |
-| **hrNoBackupDirectory**              | Nenhum diretório de backup foi fornecido.                                                                                                   |
+| **hrNoBackupDirectory**              | Nenhum diretório de backup foi dado.                                                                                                   |
 | **hrBackupDirectoryNotEmpty**        | O diretório de backup não está vazio.                                                                                               |
 | **hrBackupInProgress**               | O backup está ativo.                                                                                                                |
 | **hrMissingPreviousLogFile**         | Um arquivo de log para o ponto de verificação está ausente.                                                                                        |
 | **hrLogWriteFail**                   | Não é possível gravar no arquivo de log.                                                                                                 |
-| **hrBadLogVersion**                  | A versão do arquivo de log não é compatível com a versão do banco de dados do serviço de diretório do Windows NT/Windows 2000 (NTDS). |
-| **hrInvalidLogSequence**             | O carimbo de data/hora no próximo log não corresponde ao esperado.                                                                 |
+| **hrBadLogVersion**                  | A versão do arquivo de log não é compatível com a versão do banco de dados Windows NT/Windows 2000 Directory Service (NTDS). |
+| **hrInvalidLogSequence**             | O carimbo de data/hora no próximo log não é igual ao esperado.                                                                 |
 | **hrLoggingDisabled**                | O log não está ativo.                                                                                                           |
 | **hrLogBufferTooSmall**              | O buffer de log é muito pequeno para ser recuperado.                                                                                     |
 | **hrLogSequenceEnd**                 | O número máximo de arquivos de log foi excedido.                                                                               |
-| **hrNoBackup**                       | Não há backup em andamento.                                                                                                  |
+| **hrNoBackup**                       | Não há nenhum backup em andamento.                                                                                                  |
 | **hrInvalidBackupSequence**          | A chamada de backup está fora de sequência.                                                                                              |
 | **hrBackupNotAllowedYet**            | Não é possível executar um backup agora.                                                                                                  |
 | **hrDeleteBackupFileFail**           | Não é possível excluir o arquivo de backup.                                                                                                |
-| **hrMakeBackupDirectoryFail**        | Não é possível criar um diretório temporário de backup.                                                                                     |
+| **hrMakeBackupDirectoryFail**        | Não é possível fazer um diretório temporário de backup.                                                                                     |
 | **hrInvalidBackup**                  | Um backup incremental não pode ser executado quando o log circular está habilitado.                                                      |
-| **hrRecoveredWithErrors**            | Foram encontrados erros durante o processo de reparo.                                                                               |
+| **hrRecoveredWithErrors**            | Erros foram encontrados durante o processo de reparo.                                                                               |
 | **hrMissingLogFile**                 | O arquivo de log atual está faltando.                                                                                                 |
 | **hrLogDiskFull**                    | O disco de log está cheio.                                                                                                            |
 | **hrBadLogSignature**                | Um arquivo de log está danificado.                                                                                                           |
 | **hrBadDbSignature**                 | Um arquivo de banco de dados está danificado.                                                                                                      |
 | **hrBadCheckpointSignature**         | Um arquivo de ponto de verificação está danificado.                                                                                                    |
-| **hrCheckpointCorrupt**              | Não foi possível encontrar um arquivo de ponto de verificação ou ele está danificado.                                                                       |
+| **hrCheckpointCorrupt**              | Um arquivo de ponto de verificação não pôde ser encontrado ou está danificado.                                                                       |
 | **hrDatabaseInconsistent**           | O banco de dados está danificado.                                                                                                         |
 | **hrConsistentTimeMismatch**         | Há uma incompatibilidade na última hora consistente do banco de dados.                                                                      |
-| **hrPatchFileMismatch**              | O arquivo de patch não é gerado a partir deste backup.                                                                                |
+| **hrPatchFileMismatch**              | O arquivo de patch não é gerado com esse backup.                                                                                |
 | **hrRestoreLogTooLow**               | O número de log inicial é muito baixo para a restauração.                                                                              |
 | **hrRestoreLogTooHigh**              | O número de log inicial é muito alto para a restauração.                                                                             |
 | **hrGivenLogFileHasBadSignature**    | O arquivo de log baixado da fita está danificado.                                                                                |
-| **hrGivenLogFileIsNotContiguous**    | Não é possível localizar um arquivo de log obrigatório depois que a fita foi baixada.                                                               |
+| **hrGivenLogFileIsNotContiguous**    | Não é possível encontrar um arquivo de log obrigatório depois que a fita foi baixada.                                                               |
 | **hrMissingRestoreLogFiles**         | Os dados não são totalmente restaurados porque alguns arquivos de log estão ausentes.                                                               |
 | **hrExistingLogFileHasBadSignature** | O arquivo de log no caminho do arquivo de log está danificado.                                                                                    |
-| **hrExistingLogFileIsNotContiguous** | Não é possível localizar um arquivo de log obrigatório no caminho do arquivo de log.                                                                        |
+| **hrExistingLogFileIsNotContiguous** | Não é possível encontrar um arquivo de log obrigatório no caminho do arquivo de log.                                                                        |
 | **hrMissingFullBackup**              | O banco de dados perdeu um backup completo anterior antes do backup incremental.                                                        |
 | **hrBadBackupDatabaseSize**          | O tamanho do banco de dados de backup deve ser um múltiplo de 4000 (4096 bytes).                                                                |
 | **hrTermInProgress**                 | O banco de dados está sendo desligado.                                                                                                 |
@@ -63,19 +63,19 @@ Este tópico lista os valores de retorno de erro de log e recuperação para fun
 | **hrInvalidName**                    | O nome é inválido.                                                                                                             |
 | **hrInvalidParameter**               | O parâmetro é inválido.                                                                                                        |
 | **hrColumnNull**                     | O valor da coluna é nulo.                                                                                                 |
-| **hrBufferTruncated**                | O buffer é muito pequeno para os dados.                                                                                                |
+| **hrBufferTruncated**                | O buffer é muito pequeno para dados.                                                                                                |
 | **hrDatabaseAttached**               | O banco de dados já está anexado.                                                                                                |
 | **hrInvalidDatabaseId**              | A ID do banco de dados é inválida.                                                                                                      |
 | **hrOutOfMemory**                    | O computador está sem memória.                                                                                                   |
 | **hrOutOfDatabaseSpace**             | O banco de dados atingiu o tamanho máximo de 16 GB.                                                                              |
-| **hrOutOfCursors**                   | Sem cursores de tabela.                                                                                                            |
-| **hrOutOfBuffers**                   | Sem buffers de página de banco de dados.                                                                                                    |
+| **hrOutOfCursors**                   | Cursores fora da tabela.                                                                                                            |
+| **hrOutOfBuffers**                   | Buffers de página fora do banco de dados.                                                                                                    |
 | **hrTooManyIndexes**                 | Há muitos índices.                                                                                                      |
 | **hrTooManyKeys**                    | Há muitas colunas em um índice.                                                                                          |
 | **hrRecordDeleted**                  | O registro foi excluído.                                                                                                     |
 | **hrReadVerifyFailure**              | Ocorreu um erro de verificação de leitura.                                                                                              |
 | **hrOutOfFileHandles**               | Falta de identificadores de arquivos.                                                                                                             |
-| **hrDiskIO**                         | Ocorreu um erro de e/s de disco.                                                                                                       |
+| **hrDiskIO**                         | Ocorreu um erro de E/S de disco.                                                                                                       |
 | **hrInvalidPath**                    | O caminho para o arquivo é inválido.                                                                                                 |
 | **hrRecordTooBig**                   | O registro excedeu o tamanho máximo.                                                                                        |
 | **hrTooManyOpenDatabases**           | Há muitos bancos de dados abertos.                                                                                               |
@@ -84,31 +84,31 @@ Este tópico lista os valores de retorno de erro de log e recuperação para fun
 | **hrAlreadyInitialized**             | O banco de dados já foi chamado.                                                                                                 |
 | **hrFileAccessDenied**               | Não é possível acessar o arquivo.                                                                                                       |
 | **hrBufferTooSmall**                 | O buffer é muito pequeno.                                                                                                         |
-| **hrSeekNotEqual**                   | O SeekLE ou o SeekGE não pode encontrar uma correspondência exata.                                                                              |
+| **hrSeekNotEqual**                   | SeekLE ou SeekGE não podem encontrar uma combinação exata.                                                                              |
 | **hrTooManyColumns**                 | Há muitas colunas definidas.                                                                                              |
 | **hrContainerNotEmpty**              | O contêiner não está vazio.                                                                                                      |
 | **hrInvalidFilename**                | O nome do arquivo é inválido.                                                                                                         |
 | **hrInvalidBookmark**                | O indicador é inválido.                                                                                                         |
 | **hrColumnInUse**                    | A coluna é usada em um índice.                                                                                                  |
-| **hrInvalidBufferSize**              | O buffer de dados não corresponde ao tamanho da coluna.                                                                                  |
+| **hrInvalidBufferSize**              | O buffer de dados não é igual ao tamanho da coluna.                                                                                  |
 | **hrColumnNotUpdatable**             | Não é possível definir o valor da coluna.                                                                                                  |
 | **hrIndexInUse**                     | O índice está em uso.                                                                                                             |
 | **hrNullKeyDisallowed**              | Chaves nulas não são permitidas em um índice.                                                                                           |
 | **hrNotInTransaction**               | A operação deve ser executada dentro de uma transação.                                                                                      |
-| **hrNoIdleActivity**                 | Não ocorreu nenhuma atividade ociosa.                                                                                                       |
+| **hrNoIdleActivity**                 | Nenhuma atividade ociosa ocorreu.                                                                                                       |
 | **hrTooManyActiveUsers**             | Há muitos usuários de banco de dados ativos.                                                                                        |
 | **hrInvalidCountry**                 | O código de país ou região não é conhecido ou é inválido.                                                                    |
 | **hrInvalidLanguageId**              | A ID do idioma não é conhecida ou é inválida.                                                                               |
 | **hrInvalidCodePage**                | A página de código não é conhecida ou é inválida.                                                                                 |
 | **hrNoWriteLock**                    | Não há nenhum bloqueio de gravação no nível de transação 0.                                                                                   |
 | **hrColumnSetNull**                  | O valor da coluna é definido como nulo.                                                                                                 |
-| **hrVersionStoreOutOfMemory**        | O lMaxVerPages foi excedido (somente XJET).                                                                                           |
-| **hrCurrencyStackOutOfMemory**       | Sem cursores.                                                                                                                  |
-| **hrOutOfSessions**                  | Fora de sessões.                                                                                                                 |
+| **hrVersionStoreOutOfMemory**        | O lMaxVerPages excedeu (somente XJET).                                                                                           |
+| **hrCurrencyStackOutOfMemory**       | Fora dos cursores.                                                                                                                  |
+| **hrOutOfSessions**                  | Fora das sessões.                                                                                                                 |
 | **hrWriteConflict**                  | Falha no bloqueio de gravação devido a um bloqueio de gravação pendente.                                                                          |
-| **hrTransTooDeep**                   | As transações estão aninhadas muito profundamente.                                                                                          |
-| **hrInvalidSesid**                   | O identificador de sessão é inválido.                                                                                                   |
-| **hrSessionWriteConflict**           | Outra sessão tem uma versão particular da página.                                                                               |
+| **hrTransTooDeep**                   | As transações são aninhadas muito profundamente.                                                                                          |
+| **hrInvalidSesid**                   | O alça de sessão é inválido.                                                                                                   |
+| **hrSessionWriteConflict**           | Outra sessão tem uma versão privada da página.                                                                               |
 | **hrInTransaction**                  | A operação não é permitida em uma transação.                                                                               |
 | **hrDatabaseDuplicate**              | O banco de dados já existe.                                                                                                     |
 | **hrDatabaseInUse**                  | O banco de dados está em uso.                                                                                                          |
@@ -123,51 +123,51 @@ Este tópico lista os valores de retorno de erro de log e recuperação para fun
 | **hrTableInUse**                     | Não é possível bloquear a tabela porque ela já está em uso.                                                                           |
 | **hrObjectNotFound**                 | A tabela ou o objeto não existe.                                                                                              |
 | **hrCannotRename**                   | Não é possível renomear o arquivo temporário.                                                                                             |
-| **hrDensityInvalid**                 | A densidade do arquivo/índice é inválida.                                                                                               |
-| **hrTableNotEmpty**                  | Não é possível definir o índice clusterizado.                                                                                            |
+| **hrDensityInvalid**                 | A densidade de arquivo/índice é inválida.                                                                                               |
+| **hrTableNotEmpty**                  | Não é possível definir o índice cluster.                                                                                            |
 | **hrInvalidTableId**                 | A ID da tabela é inválida.                                                                                                         |
 | **hrTooManyOpenTables**              | Não é possível abrir mais tabelas.                                                                                                  |
-| **hrIllegalOperation**               | Não há suporte para a operação em tabelas.                                                                                        |
-| **hrObjectDuplicate**                | O nome da tabela ou do objeto já está sendo usado.                                                                                  |
+| **hrIagalOperation**               | Não há suporte para a operação em tabelas.                                                                                        |
+| **hrObjectDuplicate**                | O nome da tabela ou objeto já está sendo usado.                                                                                  |
 | **hrInvalidObject**                  | O objeto é inválido para a operação.                                                                                             |
-| **hrIndexCantBuild**                 | Não é possível criar um índice clusterizado.                                                                                               |
+| **hrIndexInaBuild**                 | Não é possível criar um índice cluster.                                                                                               |
 | **hrIndexHasPrimary**                | O índice primário já está definido.                                                                                            |
 | **hrIndexDuplicate**                 | O índice já está definido.                                                                                                    |
 | **hrIndexNotFound**                  | O índice não existe.                                                                                                        |
-| **hrIndexMustStay**                  | Não é possível excluir um índice clusterizado.                                                                                              |
-| **hrIndexInvalidDef**                | A definição do índice é inválida.                                                                                                 |
-| **hrIndexHasClustered**              | O índice clusterizado já está definido.                                                                                          |
+| **hrIndexMustStay**                  | Não é possível excluir um índice clusterado.                                                                                              |
+| **hrIndexInvalidDef**                | A definição de índice é ilegal.                                                                                                 |
+| **hrIndexHasClustered**              | O índice cluster já está definido.                                                                                          |
 | **hrCreateIndexFailed**              | Não é possível criar o índice porque ocorreu um erro ao criar uma tabela.                                                     |
-| **hrTooManyOpenIndexes**             | Fora dos blocos de descrição de índice.                                                                                                 |
+| **hrTooManyOpenIndexes**             | Blocos de descrição fora do índice.                                                                                                 |
 | **hrColumnLong**                     | O valor da coluna é muito longo.                                                                                                    |
-| **hrColumnDoesNotFit**               | O campo não será ajustado no registro.                                                                                            |
+| **hrColumnDoesNotFit**               | O campo não se ajustará ao registro.                                                                                            |
 | **hrNullInvalid**                    | O valor não pode ser nulo.                                                                                                        |
 | **hrColumnIndexed**                  | Não é possível excluir porque a coluna está indexada.                                                                                  |
 | **hrColumnTooBig**                   | O comprimento do campo excede o comprimento máximo de 255 bytes.                                                                 |
-| **hrColumnNotFound**                 | Não é possível localizar a coluna.                                                                                                       |
+| **hrColumnNotFound**                 | Não é possível encontrar a coluna.                                                                                                       |
 | **hrColumnDuplicate**                | O campo já está definido.                                                                                                    |
-| **hrColumn2ndSysMaint**              | Apenas uma coluna de incremento automático ou de versão é permitida por tabela.                                                                  |
-| **hrInvalidColumnType**              | O tipo de dados da coluna é inválido.                                                                                                 |
+| **hrColumn2ndSysMaint**              | Apenas uma coluna de incremento automático ou versão é permitida por tabela.                                                                  |
+| **hrInvalidColumnType**              | O tipo de dados de coluna é inválido.                                                                                                 |
 | **hrColumnMaxTruncated**             | A coluna foi truncada porque excedeu o comprimento máximo de 255 bytes.                                                    |
 | **hrColumnCannotIndex**              | Não é possível indexar uma coluna de valor longo.                                                                                             |
-| **hrTaggedNotNULL**                  | As colunas marcadas não podem ser nulas.                                                                                                   |
+| **hrTaggedNotNULL**                  | Colunas marcadas não podem ser nulas.                                                                                                   |
 | **hrNoCurrentIndex**                 | A entrada é inválida sem um índice atual.                                                                                    |
-| **hrKeyIsMade**                      | A chave foi concluída.                                                                                                             |
+| **hrKeyIsKeyIsKey**                      | A chave está concluída.                                                                                                             |
 | **hrBadColumnId**                    | A ID da coluna está incorreta.                                                                                                      |
-| **hrBadItagSequence**                | Há um identificador de instância inadequado para uma coluna com valores.                                                                     |
-| **hrCannotBeTagged**                 | O incremento automático e a versão não podem ter valores de multivalor.                                                                                 |
-| **hrRecordNotFound**                 | Não é possível localizar a chave.                                                                                                          |
+| **hrBadItagSequence**                | Há um identificador de instância ruim para uma coluna com vários valores.                                                                     |
+| **hrCannotBeTagged**                 | AutoIncrement e Version não podem ter vários valores.                                                                                 |
+| **hrRecordNotFound**                 | Não é possível encontrar a chave.                                                                                                          |
 | **hrNoCurrentRecord**                | A moeda não está em um registro.                                                                                                 |
-| **hrRecordClusteredChanged**         | Uma chave clusterizada não pode ser alterada.                                                                                               |
+| **hrRecordClusteredChanged**         | Uma chave clusterada não pode ser alterada.                                                                                               |
 | **hrKeyDuplicate**                   | A chave já existe.                                                                                                          |
-| **hrAlreadyPrepared**                | A entrada atual já foi copiada ou desmarcada.                                                                            |
-| **hrKeyNotMade**                     | Nenhuma chave foi feita.                                                                                                                 |
+| **hrAlreadyPrepared**                | A entrada atual já foi copiada ou limpa.                                                                            |
+| **hrKeyNotNot**                     | Nenhuma chave foi feita.                                                                                                                 |
 | **hrUpdateNotPrepared**              | A atualização não foi preparada.                                                                                                         |
 | **hrwrnDataHasChanged**              | Os dados foram alterados.                                                                                                                |
-| **hrerrDataHasChanged**              | A operação foi abandonada porque os dados foram alterados.                                                                            |
+| **mutrDataHasChanged**              | A operação foi abandonada porque os dados foram alterados.                                                                            |
 | **hrKeyChanged**                     | Movido para uma nova chave.                                                                                                              |
 | **hrTooManySorts**                   | Há muitos processos de classificação.                                                                                               |
-| **hrInvalidOnSort**                  | Uma operação que é inválida ocorreu na classificação.                                                                               |
+| **hrInvalidOnSort**                  | Uma operação inválida ocorreu na classificação.                                                                               |
 | **hrTempFileOpenError**              | Não é possível abrir o arquivo temporário.                                                                                               |
 | **hrTooManyAttachedDatabases**       | Há muitos bancos de dados abertos.                                                                                               |
 | **hrDiskFull**                       | O disco está cheio.                                                                                                                |
@@ -177,11 +177,11 @@ Este tópico lista os valores de retorno de erro de log e recuperação para fun
 | **hrAfterInitialization**            | Não é possível restaurar após a inicialização.                                                                                          |
 | **hrLogCorrupted**                   | Os arquivos de log do banco de dados estão danificados.                                                                                              |
 | **hrInvalidOperation**               | A operação é inválida.                                                                                                        |
-| **hrAccessDenied**                   | O acesso foi negado.                                                                                                                |
+| **hrAccessDenied**                   | Acesso negado.                                                                                                                |
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -202,9 +202,9 @@ Este tópico lista os valores de retorno de erro de log e recuperação para fun
 [Valores de retorno para funções no Active Directory Domain Services](return-values-for-functions-in-active-directory-domain-services.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

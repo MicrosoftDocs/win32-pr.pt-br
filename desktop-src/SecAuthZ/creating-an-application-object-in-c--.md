@@ -1,21 +1,21 @@
 ---
-description: Um repositório de diretivas de autorização contém informações de política de autorização para um ou mais aplicativos. Para cada aplicativo que usa esse repositório de políticas, você deve criar um objeto IAzApplication e salvá-lo em um repositório de políticas.
+description: Um armazenamento de política de autorização contém informações de política de autorização para um ou mais aplicativos. Para cada aplicativo que usa esse armazenamento de políticas, você deve criar um objeto IAzApplication e salvá-lo em um armazenamento de políticas.
 ms.assetid: 2bba1068-ae03-4388-be4d-9865e42e440e
 title: Criando um objeto de aplicativo em C++
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 86885124e2fff52bc5cce2260e3d7fb727b58eb5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a434bb87d064a7fe19698e78565577238f75051fbf233e36ddf2da1725987c06
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103827457"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117782620"
 ---
 # <a name="creating-an-application-object-in-c"></a>Criando um objeto de aplicativo em C++
 
-Um repositório de diretivas de autorização contém informações de política de autorização para um ou mais aplicativos. Para cada aplicativo que usa esse repositório de políticas, você deve criar um objeto [**IAzApplication**](/windows/desktop/api/Azroles/nn-azroles-iazapplication) e salvá-lo em um repositório de políticas.
+Um armazenamento de política de autorização contém informações de política de autorização para um ou mais aplicativos. Para cada aplicativo que usa esse armazenamento de políticas, você deve criar um objeto [**IAzApplication**](/windows/desktop/api/Azroles/nn-azroles-iazapplication) e salvá-lo em um armazenamento de políticas.
 
-O exemplo a seguir mostra como criar um objeto [**IAzApplication**](/windows/desktop/api/Azroles/nn-azroles-iazapplication) que representa um aplicativo e como adicionar o objeto **IAzApplication** ao armazenamento de política de autorização que o aplicativo usa. O exemplo supõe que haja um repositório de política XML existente chamado MyStore.xml no diretório raiz da unidade C.
+O exemplo a seguir mostra como criar um objeto [**IAzApplication**](/windows/desktop/api/Azroles/nn-azroles-iazapplication) que representa um aplicativo e como adicionar o objeto **IAzApplication** ao armazenamento de política de autorização usado pelo aplicativo. O exemplo supõe que haja um armazenamento de políticas XML existente chamado MyStore.xml no diretório raiz da unidade C.
 
 
 ```C++

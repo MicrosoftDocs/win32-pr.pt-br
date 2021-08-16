@@ -2,7 +2,7 @@
 description: Uma classe base para todos os eventos intrínsecos relacionados a um namespace.
 ms.assetid: 168637b1-217e-4b6d-bd07-25127b9e9f6c
 ms.tgt_platform: multiple
-title: __NamespaceOperationEvent classe
+title: Classe __NamespaceOperationEvent
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -26,7 +26,7 @@ ms.locfileid: "118320618"
 ---
 # <a name="__namespaceoperationevent-class"></a>\_\_Classe NamespaceOperationEvent
 
-A **\_ \_ classe de sistema NamespaceOperationEvent** é uma classe base para todos os eventos intrínsecos relacionados a um namespace.
+A classe de sistema **\_ \_ NamespaceOperationEvent** é uma classe base para todos os eventos intrínsecos relacionados a um namespace.
 
 A sintaxe a seguir é simplificada do código MOF (Managed Object Format) e inclui todas as propriedades herdadas. As propriedades são listadas em ordem alfabética, não em ordem MOF.
 
@@ -43,62 +43,62 @@ class __NamespaceOperationEvent : __Event
 
 ## <a name="members"></a>Membros
 
-A **\_ \_ classe NamespaceOperationEvent** tem estes tipos de membros:
+A classe **\_ \_ NamespaceOperationEvent** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A **\_ \_ classe NamespaceOperationEvent** tem essas propriedades.
+A classe **\_ \_ NamespaceOperationEvent** tem essas propriedades.
 
 <dl> <dt>
 
-**DESCRITOR \_ DE SEGURANÇA**
+**\_descritor de segurança**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **matriz uint8**
+Tipo de dados: matriz **uint8**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Descritor usado pelo provedor de eventos para determinar quais usuários podem receber o evento. Essa propriedade é herdada do [**\_ \_ Evento**](--event.md).
+Descritor usado pelo provedor de eventos para determinar quais usuários podem receber o evento. Esta propriedade é herdada do [**\_ \_ evento**](--event.md).
 
 </dd> <dt>
 
-**Targetnamespace**
+**TargetNamespace**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **\_ \_ Namespace**
+Tipo de dados: **\_ \_ namespace**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Namespace afetado pelo evento. Para eventos de criação, esse é o namespace recém-criado. Para eventos de modificação, esse é o namespace alterado. Para eventos de exclusão, esse é o namespace excluído.
+Namespace afetado pelo evento. Para eventos de criação, esse é o namespace recém-criado. Para eventos de modificação, este é o namespace alterado. Para eventos de exclusão, esse é o namespace excluído.
 
 </dd> <dt>
 
-**TEMPO \_ CRIADO**
+**HORA da \_ criação**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **uint64**
+Tipo de dados: **UInt64**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Valor exclusivo que indica a hora em que o evento foi gerado. Esse é um valor de 64 bits que representa o número de intervalos de 100 nanossegundos após 1º de janeiro de 1601. As informações estão no formato UTC (Tempos Universais Coordenados). Essa propriedade é herdada do [**\_ \_ Evento**](--event.md).
+Valor exclusivo que indica a hora em que o evento foi gerado. Este é um valor de 64 bits que representa o número de intervalos de 100 nanossegundos após 1º de janeiro de 1601. As informações estão no formato UTC (tempo Universal Coordenado). Esta propriedade é herdada do [**\_ \_ evento**](--event.md).
 
-Para obter mais informações sobre como **usar valores uint64** em scripts, consulte [Scripts no WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).
+Para obter mais informações sobre como usar valores de **UInt64** em scripts, consulte [scripts no WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-A **\_ \_ classe NamespaceOperationEvent** é derivada de [**\_ \_ Event**](--event.md).
+A classe **\_ \_ NamespaceOperationEvent** é derivada de [**\_ \_ Event**](--event.md).
 
-As instâncias dessa classe não são criadas. O WMI cria instâncias de uma das seguintes classes derivadas dessa classe:
+As instâncias dessa classe não são criadas. O WMI cria instâncias de uma das seguintes classes derivadas desta classe:
 
 [**\_\_NamespaceCreationEvent**](--namespacecreationevent.md)
 
@@ -114,7 +114,7 @@ As instâncias dessa classe não são criadas. O WMI cria instâncias de uma das
 |-------------------------------------|--------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>       |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/> |
-| Namespace<br/>                | Todos os namespaces WMI<br/>  |
+| Namespace<br/>                | Todos os namespaces do WMI<br/>  |
 
 
 

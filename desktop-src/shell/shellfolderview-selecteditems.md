@@ -1,6 +1,6 @@
 ---
-description: Método ShellFolderView. SelectedItems – Obtém um objeto FolderItems que representa todos os itens selecionados na exibição.
-title: Método ShellFolderView. SelectedItems (shldisp. h)
+description: Método ShellFolderView.SelectedItems – Obtém um objeto FolderItems que representa todos os itens selecionados na exibição.
+title: Método ShellFolderView.SelectedItems (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: 1ee3bf2e-f9c9-47d9-a0f2-efedd69770c5
-ms.openlocfilehash: 485eda530adc4955abb27899d67ac0900eb0a910
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: c8da62afba7e8cc2f594f15c34e2f2bcf6af1ae8e03f857324d18e79b0967d4b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109840737"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117857678"
 ---
-# <a name="shellfolderviewselecteditems-method"></a>Método ShellFolderView. SelectedItems
+# <a name="shellfolderviewselecteditems-method"></a>Método ShellFolderView.SelectedItems
 
-Obtém um objeto [**FolderItems**](folderitems.md) que representa todos os itens selecionados na exibição.
+Obtém [**um objeto FolderItems**](folderitems.md) que representa todos os itens selecionados na exibição.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -37,19 +37,19 @@ retVal = ShellFolderView.SelectedItems()
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **FolderItems**](folderitems.md)\*\***
 
-Uma referência de objeto para o objeto [**FolderItems**](folderitems.md) .
+Uma referência de objeto ao [**objeto FolderItems.**](folderitems.md)
 
 ## <a name="remarks"></a>Comentários
 
-**SelectedItems** só pode ser chamado no sistema local. Ele não funcionará quando for executado em uma página da Web por HTTP ou UNC.
+**SelectedItems** só pode ser chamado no sistema local. Ele não funcionará quando executado em uma página da Web por HTTP ou UNC.
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo a seguir mostra o uso apropriado desse método no JScript inserido em HTML.
+O exemplo a seguir mostra o uso adequado desse método em JScript inserido em HTML.
 
 
 ```JScript
@@ -103,11 +103,11 @@ O exemplo a seguir mostra o uso apropriado desse método no JScript inserido em 
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 2000 Professional, \[ somente aplicativos da área de trabalho do Windows XP\]<br/>                                         |
+| Cliente mínimo com suporte<br/> | Windows 2000 Professional, Windows aplicativos da área de \[ trabalho XP\]<br/>                                         |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                           |
-| Cabeçalho<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                           |
-| INSERI<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                         |
-| DLL<br/>                      | <dl> <dt>Shell32.dll (versão 4,71 ou posterior)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
+| DLL<br/>                      | <dl> <dt>Shell32.dll (versão 4.71 ou posterior)</dt> </dl> |
 
 
 

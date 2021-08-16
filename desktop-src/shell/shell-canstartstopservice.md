@@ -1,7 +1,7 @@
 ---
-description: Método Shell. CanStartStopService – determina se o usuário atual pode iniciar e parar o serviço nomeado.
+description: Método Shell.CanStartStopService – determina se o usuário atual pode iniciar e parar o serviço nomeado.
 ms.assetid: 1428F529-61F6-4113-A553-2C0D617FD859
-title: Método Shell. CanStartStopService (shldisp. h)
+title: Método Shell.CanStartStopService (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -20,7 +20,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117858039"
 ---
-# <a name="shellcanstartstopservice-method"></a>Método Shell. CanStartStopService
+# <a name="shellcanstartstopservice-method"></a>Método Shell.CanStartStopService
 
 Determina se o usuário atual pode iniciar e parar o serviço nomeado.
 
@@ -49,12 +49,12 @@ Shell.CanStartStopService( _
 
 <dl> <dt>
 
-*sServiceName* \[ no\]
+*sServiceName* \[ Em\]
 </dt> <dd>
 
-Tipo: **cadeia de caracteres**
+Tipo: Cadeia **de caracteres**
 
-Uma **cadeia de caracteres** que contém o nome do serviço.
+Uma **Cadeia de** caracteres que contém o nome do serviço.
 
 </dd> </dl>
 
@@ -62,23 +62,23 @@ Uma **cadeia de caracteres** que contém o nome do serviço.
 
 ### <a name="jscript"></a>JScript
 
-Tipo: **variante \***
+Tipo: **\* Variante**
 
-Retornará **true** se o usuário puder iniciar e parar o serviço; caso contrário, **false**.
+Retornará **true** se o usuário puder iniciar e parar o serviço; caso contrário, **false.**
 
 ### <a name="vb"></a>VB
 
-Tipo: **variante \***
+Tipo: **\* Variante**
 
-Retornará **true** se o usuário puder iniciar e parar o serviço; caso contrário, **false**.
+Retornará **true** se o usuário puder iniciar e parar o serviço; caso contrário, **false.**
 
 ## <a name="remarks"></a>Comentários
 
-Este método não está disponível atualmente no Microsoft Visual Basic.
+Esse método não está disponível atualmente no Microsoft Visual Basic.
 
 ## <a name="examples"></a>Exemplos
 
-os exemplos a seguir mostram o uso de **CanStartStopService** para JScript e VBScript.
+Os exemplos a seguir mostram o uso **de CanStartStopService** para JScript e VBScript.
 
 JScript:
 
@@ -97,7 +97,7 @@ JScript:
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -123,11 +123,11 @@ VBScript
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 2000 Professional, \[ somente aplicativos de área de trabalho do Windows XP\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                                          |
-| Cabeçalho<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                          |
-| INSERI<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                        |
-| DLL<br/>                      | <dl> <dt>Shell32.dll (versão 5,0 ou posterior)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 2000 Professional, Windows aplicativos da área de \[ trabalho XP\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                                          |
+| Cabeçalho<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
+| DLL<br/>                      | <dl> <dt>Shell32.dll (versão 5.0 ou posterior)</dt> </dl> |
 
 
 

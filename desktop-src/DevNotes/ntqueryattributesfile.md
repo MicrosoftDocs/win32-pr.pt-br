@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - ntdll.dll
-ms.openlocfilehash: a1d6d2ff20539f5ef65c0886ba51a0dbabafb44d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e6b1ecdc7cc7f0a5c18afc3eeb613c3f9cd9a38aa22a876ad156c3d1c6b1bc97
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105756512"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117826802"
 ---
 # <a name="ntqueryattributesfile-function"></a>Função NtQueryAttributesFile
 
-\[Essa função pode ser alterada ou removida do Windows sem aviso prévio.\]
+\[essa função pode ser alterada ou removida de Windows sem aviso prévio.\]
 
 Recupera os atributos básicos para o objeto de arquivo especificado.
 
@@ -56,7 +56,7 @@ Um ponteiro para uma estrutura de [ \_ \_ informações básicas de arquivo](htt
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um NTSTATUS ou um código de erro.
 

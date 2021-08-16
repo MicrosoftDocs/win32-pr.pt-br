@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d55691335faaf835b270013c6499197c0e3f7bee
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 53a3997e6c214a6421a3e1bb257d7ff742ed5b36f0d4a27f9fffe45990b88f55
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "105772591"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117844109"
 ---
 # <a name="wmtracknumber"></a>WM/TrackNumber
 
@@ -35,16 +35,16 @@ g \_ wszWMTrackNumber
 
 Muitos aplicativos existentes gravam o valor para o **WM/TrackNumber** como um **DWORD**. Se você criar um aplicativo que reproduza arquivos de fontes desconhecidas, deverá incluir o código para lidar com valores de cadeia de caracteres e **DWORD** .
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 
 [**Lista de Atributos**](attribute-list.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

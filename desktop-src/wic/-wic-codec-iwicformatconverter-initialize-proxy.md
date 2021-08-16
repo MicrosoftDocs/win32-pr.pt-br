@@ -1,7 +1,7 @@
 ---
-description: Função IWICFormatConverter_Initialize_Proxy function-proxy para o método Initialize.
+description: IWICFormatConverter_Initialize_Proxy função - função proxy para o método Initialize.
 ms.assetid: 26112d52-95e2-4c67-83fc-cf5e28712730
-title: Função IWICFormatConverter_Initialize_Proxy
+title: IWICFormatConverter_Initialize_Proxy função
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - Windowscodecs.dll
 - Wincodec.lib
-ms.openlocfilehash: d70d852adc8f810438ce46dc30345e68fa27e0fd
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: ade363204d9edca08003d5bfef1295c4dabf52aafed037cd2e9ca69b56d02a07
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108097154"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118206525"
 ---
-# <a name="iwicformatconverter_initialize_proxy-function"></a>Função de proxy de \_ inicialização IWICFormatConverter \_
+# <a name="iwicformatconverter_initialize_proxy-function"></a>Função Inicializar Proxy IWICFormatConverter \_ \_
 
-Função de proxy para o método [**Initialize**](/windows/desktop/api/Wincodec/nf-wincodec-iwicformatconverter-initialize) .
+Função proxy para o [**método Initialize.**](/windows/desktop/api/Wincodec/nf-wincodec-iwicformatconverter-initialize)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -46,16 +46,16 @@ HRESULT IWICFormatConverter_Initialize_Proxy(
 
 <dl> <dt>
 
-*Isso \_ PTR* \[\]
+*ESTE \_ PTR* \[ em\]
 </dt> <dd>
 
 Tipo: **[ **IWICFormatConverter**](/windows/desktop/api/Wincodec/nn-wincodec-iwicformatconverter)\***
 
-Ponteiro para este objeto [**IWICFormatConverter**](/windows/desktop/api/Wincodec/nn-wincodec-iwicformatconverter) .
+Ponteiro para este [**objeto IWICFormatConverter.**](/windows/desktop/api/Wincodec/nn-wincodec-iwicformatconverter)
 
 </dd> <dt>
 
-*pISource* \[ no\]
+*pISource* \[ Em\]
 </dt> <dd>
 
 Tipo: **[ **IWICBitmapSource**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapsource)\***
@@ -64,7 +64,7 @@ O bitmap de entrada a ser convertido
 
 </dd> <dt>
 
-*dstFormat* \[ no\]
+*dstFormat* \[ Em\]
 </dt> <dd>
 
 Tipo: **REFWICPixelFormatGUID**
@@ -73,7 +73,7 @@ O GUID de formato de pixel de destino.
 
 </dd> <dt>
 
-*pontilhado* \[ no\]
+*dither* \[ Em\]
 </dt> <dd>
 
 Tipo: **[ **WICBitmapDitherType**](/windows/desktop/api/Wincodec/ne-wincodec-wicbitmapdithertype)**
@@ -82,7 +82,7 @@ O [**WICBitmapDitherType**](/windows/desktop/api/Wincodec/ne-wincodec-wicbitmapd
 
 </dd> <dt>
 
-*pIPalette* \[ no\]
+*pIPalette* \[ Em\]
 </dt> <dd>
 
 Tipo: **[ **IWICPalette**](/windows/desktop/api/Wincodec/nn-wincodec-iwicpalette)\***
@@ -91,21 +91,21 @@ A paleta a ser usada para conversão.
 
 </dd> <dt>
 
-*alphaThresholdPercent* \[ no\]
+*alphaThresholdPercent* \[ Em\]
 </dt> <dd>
 
-Tipo: **duplo**
+Tipo: **double**
 
-O limite Alfa a ser usado para conversão.
+O limite alfa a ser usado para conversão.
 
 </dd> <dt>
 
-*paletteTranslate* \[ no\]
+*paleetteTranslate* \[ Em\]
 </dt> <dd>
 
 Tipo: **[ **WICBitmapPaletteType**](/windows/desktop/api/Wincodec/ne-wincodec-wicbitmappalettetype)**
 
-O tipo de tradução da paleta a ser usado para conversão.
+O tipo de conversão de paleta a ser usado para conversão.
 
 </dd> </dl>
 
@@ -113,7 +113,7 @@ O tipo de tradução da paleta a ser usado para conversão.
 
 Tipo: **HRESULT**
 
-Se essa função for bem sucedido, ela retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
+Se essa função for bem-sucedida, ela retornará **S \_ OK.** Caso contrário, ele retornará um **código de erro HRESULT.**
 
 ## <a name="remarks"></a>Comentários
 
@@ -123,9 +123,9 @@ Se essa função for bem sucedido, ela retornará **S \_ OK**. Caso contrário, 
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows XP com SP2, \[ somente aplicativos da área de trabalho do Windows Vista\]<br/>                                                                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                                                                                             |
-| DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec. lib</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows XP com SP2, Windows aplicativos da área de trabalho do Vista \[\]<br/>                                                                                              |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                                                                                             |
+| DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec.lib</dt> </dl> |
 
 
 

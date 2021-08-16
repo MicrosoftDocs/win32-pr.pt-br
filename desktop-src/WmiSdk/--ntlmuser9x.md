@@ -19,16 +19,16 @@ api_type:
 - Schema
 api_location:
 - All
-ms.openlocfilehash: 79aa5153869c7337b6849e8c465dbbf8b36a0f58
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2d05920b0936e8ff4de3eb338938e03e92edb4596efbf01f1064b6952a7df661
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105813694"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118320574"
 ---
 # <a name="__ntlmuser9x-class"></a>\_\_Classe NTLMUser9X
 
-A classe de sistema **\_ \_ NTLMUser9X** controla o acesso remoto a versões sem suporte do Windows. A sintaxe a seguir é simplificada do código MOF (Managed Object Format) e inclui todas as propriedades herdadas. As propriedades são listadas em ordem alfabética, não em ordem MOF.
+a classe de sistema **\_ \_ NTLMUser9X** controla o acesso remoto a versões sem suporte do Windows. A sintaxe a seguir é simplificada do código MOF (Managed Object Format) e inclui todas as propriedades herdadas. As propriedades são listadas em ordem alfabética, não em ordem MOF.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -97,7 +97,7 @@ Aplicar a namespaces filho, além do atual.
 
 </dd> <dt>
 
-**Mask**
+**Mascara**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **sint32**
@@ -146,7 +146,7 @@ Acesso permitido.
 2
 </dt> <dd>
 
-Acesso negado.
+Acesso negado
 
 </dd> </dl>
 

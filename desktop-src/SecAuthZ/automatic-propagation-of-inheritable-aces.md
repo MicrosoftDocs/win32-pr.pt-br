@@ -1,5 +1,5 @@
 ---
-description: As funções SetNamedSecurityInfo e SetSecurityInfo dão suporte à propagação automática de ACEs (entradas de controle de acesso) herdáveis.
+description: As funções SetNamedSecurityInfo e SetSecurityInfo são suportadas pela propagação automática de ACEs (entradas de controle de acesso) herdáveis.
 ms.assetid: 0aa49b9b-13e3-4ef9-921d-ea47a013e5a1
 title: Propagação automática de ACEs herdáveis
 ms.topic: article
@@ -13,24 +13,24 @@ ms.locfileid: "117783713"
 ---
 # <a name="automatic-propagation-of-inheritable-aces"></a>Propagação automática de ACEs herdáveis
 
-As funções [**SetNamedSecurityInfo**](/windows/desktop/api/Aclapi/nf-aclapi-setnamedsecurityinfoa) e [**SetSecurityInfo**](/windows/desktop/api/Aclapi/nf-aclapi-setsecurityinfo) dão suporte à propagação automática de ACEs (entradas de [*controle de acesso*](/windows/desktop/SecGloss/a-gly) ) herdáveis. Por exemplo, se você usar essas funções para adicionar uma ACE herdável a um diretório em um NTFS, o sistema aplicará a ACE conforme apropriado às ACLs ( [*listas de controle de acesso*](/windows/desktop/SecGloss/a-gly) ) de quaisquer subdiretórios ou arquivos existentes.
+As [**funções SetNamedSecurityInfo**](/windows/desktop/api/Aclapi/nf-aclapi-setnamedsecurityinfoa) e [**SetSecurityInfo**](/windows/desktop/api/Aclapi/nf-aclapi-setsecurityinfo) são suportadas pela propagação automática de ACEs (entradas de controle [*de acesso)*](/windows/desktop/SecGloss/a-gly) herdáveis. Por exemplo, se você usar essas funções para adicionar uma ACE herdável a um diretório em um NTFS, o sistema aplicará a ACE conforme apropriado às ACLs [*(listas*](/windows/desktop/SecGloss/a-gly) de controle de acesso) de quaisquer subdireários ou arquivos existentes.
 
-ACEs aplicadas diretamente têm precedência sobre ACEs herdadas. O sistema implementa essa precedência colocando ACEs diretamente aplicadas à frente de ACEs herdadas em uma DACL ( [*lista de controle de acesso discricionário*](/windows/desktop/SecGloss/d-gly) ). Quando você chama as funções [**SetNamedSecurityInfo**](/windows/desktop/api/Aclapi/nf-aclapi-setnamedsecurityinfoa) e [**SetSecurityInfo**](/windows/desktop/api/Aclapi/nf-aclapi-setsecurityinfo) para definir as informações de segurança de um objeto, o sistema impõe o modelo de herança atual nas ACLs de todos os objetos na hierarquia abaixo do objeto de destino. para objetos que foram convertidos para o modelo de herança atual, os \_ \_ bits herdados automáticos ES DACL \_ e ES \_ SACL \_ \_ herdados automaticamente são definidos no campo de controle do [*descritor de segurança*](/windows/desktop/SecGloss/s-gly) do objeto.
+AcEs aplicadas diretamente têm precedência sobre ACEs herdadas. O sistema implementa essa precedência colocando ACEs aplicadas diretamente à frente das ACEs herdadas em uma DACL (lista de controle [*de*](/windows/desktop/SecGloss/d-gly) acesso discricionário). Quando você chama as funções [**SetNamedSecurityInfo**](/windows/desktop/api/Aclapi/nf-aclapi-setnamedsecurityinfoa) e [**SetSecurityInfo**](/windows/desktop/api/Aclapi/nf-aclapi-setsecurityinfo) para definir as informações de segurança de um objeto, o sistema impõe o modelo de herança atual nas ACLs de todos os objetos na hierarquia abaixo do objeto de destino. Para objetos que foram convertidos no modelo de herança atual, os bits ES DACL AUTO INHERITED e ES SACL AUTO INHERITED são definidos no campo de controle do descritor de segurança do \_ \_ \_ \_ \_ \_ objeto. [](/windows/desktop/SecGloss/s-gly)
 
-Quando você cria um novo descritor de segurança que reflete o modelo de herança atual, é necessário ter cuidado para não alterar a semântica do descritor de segurança. Assim, as ACEs allow e Deny nunca são movidas em relação uma à outra. Se esse movimento for necessário (por exemplo, para posicionar todas as ACEs não herdadas na frente de uma ACL), a ACL será marcada como protegida para evitar a alteração semântica.
+Quando você cria um novo descritor de segurança que reflete o modelo de herança atual, é preciso ter cuidado para não alterar a semântica do descritor de segurança. Dessa forma, as ACEs de permitir e negar nunca são movidas em relação umas às outras. Se tal movimentação for necessária (por exemplo, para colocar todas as ACEs não herheritadas na frente de uma ACL), a ACL será marcada como protegida para evitar a alteração semântica.
 
 O sistema usa as seguintes regras ao propagar ACEs herdadas para objetos filho:
 
--   Se um objeto filho sem nenhuma DACL herdar uma ACE, o resultado será um objeto filho com uma DACL que contém apenas a ACE herdada.
+-   Se um objeto filho sem DACL herdar uma ACE, o resultado será um objeto filho com uma DACL que contém apenas a ACE herdada.
 -   Se um objeto filho com uma DACL vazia herdar uma ACE, o resultado será um objeto filho com uma DACL que contém apenas a ACE herdada.
--   Se você remover uma ACE herdável de um objeto pai, a herança automática removerá todas as cópias da ACE que foram herdadas por objetos filho.
--   Se a herança automática resultar na remoção de todas as ACEs da DACL de um objeto filho, o objeto filho terá uma DACL vazia em vez de nenhuma DACL.
+-   Se você remover uma ACE herdável de um objeto pai, a herança automática removerá todas as cópias da ACE herdadas por objetos filho.
+-   Se a herança automática resulta na remoção de todas as ACEs da DACL de um objeto filho, o objeto filho tem uma DACL vazia em vez de nenhuma DACL.
 
-Essas regras podem ter o resultado inesperado de converter um objeto sem DACL para um objeto com uma DACL vazia. Um objeto sem nenhuma DACL permite acesso completo, mas um objeto com uma DACL vazia não permite acesso. Como um exemplo de como essas regras podem criar uma DACL vazia, suponha que você adicione uma ACE herdável ao objeto raiz de uma árvore de objetos. A herança automática propaga a ACE herdável para todos os objetos na árvore. Os objetos filho que começaram com nenhuma DACL agora têm uma DACL com a ACE herdada. Se você remover a ACE herdável do objeto raiz, o sistema propagará automaticamente a alteração para os objetos filho. Os objetos filho iniciados sem nenhuma DACL (permitindo acesso completo) agora têm uma DACL vazia (não permitindo acesso).
+Essas regras podem ter o resultado inesperado de converter um objeto sem DACL em um objeto com uma DACL vazia. Um objeto sem DACL permite acesso completo, mas um objeto com uma DACL vazia não permite acesso. Como um exemplo de como essas regras podem criar uma DACL vazia, suponha que você adicione uma ACE herdável ao objeto raiz de uma árvore de objetos. A herança automática propaga o ACE herdável para todos os objetos na árvore. Objetos filho que iniciaram sem DACL agora têm uma DACL com a ACE herdada. Se você remover o ACE herdável do objeto raiz, o sistema propaga automaticamente a alteração para os objetos filho. Objetos filho que começaram sem DACL (permitindo acesso completo) agora têm uma DACL vazia (sem acesso).
 
-para garantir que um objeto filho sem nenhuma DACL não seja afetado por ACEs herdáveis, defina o \_ \_ sinalizador protegido ES DACL no descritor de segurança do objeto.
+Para garantir que um objeto filho sem DACL não seja afetado por ACEs herdáveis, de definir o sinalizador ES DACL PROTECTED no descritor \_ \_ de segurança do objeto.
 
-Para obter informações sobre como criar uma DACL corretamente, consulte [criando uma DACL](/windows/desktop/SecBP/creating-a-dacl).
+Para obter informações sobre como criar corretamente uma DACL, consulte [Criando uma DACL](/windows/desktop/SecBP/creating-a-dacl).
 
  
 

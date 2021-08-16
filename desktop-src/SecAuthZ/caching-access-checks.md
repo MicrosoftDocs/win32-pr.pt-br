@@ -1,17 +1,17 @@
 ---
 description: Quando um aplicativo executa uma verificação de acesso chamando a função AuthzAccessCheck, os resultados dessa verificação de acesso podem ser armazenados em cache.
 ms.assetid: d79a5683-6c67-487f-b9a6-4e80da38b827
-title: Cache de verificações de acesso
+title: Caching Verificações de acesso
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 967e0a5398d93c1715d7d08e5c7c75695e4120ee
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 83659c35fb9334e55bd7dfcd2368275dc16eb0d4836b8d6fa69a6ed8d713d953
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104297766"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117783551"
 ---
-# <a name="caching-access-checks"></a>Cache de verificações de acesso
+# <a name="caching-access-checks"></a>Caching Verificações de acesso
 
 Quando um aplicativo executa uma verificação de acesso chamando a função [**AuthzAccessCheck**](/windows/desktop/api/Authz/nf-authz-authzaccesscheck) , os resultados dessa verificação de acesso podem ser armazenados em cache. Quando o parâmetro *pAuthzHandle* da função [**AuthzAccessCheck**](/windows/desktop/api/Authz/nf-authz-authzaccesscheck) não for **nulo**, a função executará uma verificação de acesso separada, com uma [**\_ máscara de acesso**](access-mask.md) solicitada de **máximo \_ permitido** e armazenará em cache os resultados dessa verificação. Um identificador para os resultados dessa verificação pode ser passado como o parâmetro *AuthzHandle* para a função [**AuthzCachedAccessCheck**](/windows/desktop/api/Authz/nf-authz-authzcachedaccesscheck) . Isso permite a verificação de acesso mais rápida para um determinado cliente e [*descritores de segurança*](/windows/desktop/SecGloss/s-gly).
 

@@ -4,12 +4,12 @@ ms.assetid: 2f3a7cab-3296-41ec-ac7e-224655b92a7c
 title: Criando um soquete para o servidor
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bd3fb00cb8b1155f4d26d94c9a88328256effe23
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3e71d6ee0117153b00a9ab77c53bd7555aa031b3fa9d1f7a425ea9aaf0e358f7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104090399"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118322196"
 ---
 # <a name="creating-a-socket-for-the-server"></a>Criando um soquete para o servidor
 
@@ -60,7 +60,7 @@ Após a inicialização, um objeto de **soquete** deve ser instanciado para ser 
 
     Se o aplicativo de servidor quiser escutar no IPv6, a família de endereços precisará ser definida como AF \_ INET6 no parâmetro *Hints* . Se um servidor quiser escutar no IPv6 e no IPv4, dois soquetes de escuta deverão ser criados, um para IPv6 e outro para IPv4. Esses dois soquetes devem ser tratados separadamente pelo aplicativo.
 
-    O Windows Vista e versões posteriores oferecem a capacidade de criar um único soquete IPv6 que é colocado no modo de pilha dual para escutar no IPv6 e no IPv4. Para obter mais informações sobre esse recurso, consulte [soquetes de pilha dupla](dual-stack-sockets.md).
+    Windows O Vista e versões posteriores oferecem a capacidade de criar um único soquete IPv6 que é colocado no modo de pilha dual para escutar no IPv6 e no IPv4. Para obter mais informações sobre esse recurso, consulte [soquetes de pilha dupla](dual-stack-sockets.md).
 
     ```C++
     // Create a SOCKET for the server to listen for client connections

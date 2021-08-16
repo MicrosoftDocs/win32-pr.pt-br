@@ -1,7 +1,7 @@
 ---
-description: Links para documentação para os métodos e propriedades do wrapper de interoperabilidade do IAzTask.
+description: Links para a documentação dos métodos e propriedades de wrapper de interoperabilidade IAzTask.
 ms.assetid: 15691d42-f1bd-4bd1-9a01-e482a2c74e20
-title: Interface Microsoft. Interop. Security. AzRoles. IAzTask
+title: Interface Microsoft.Interop.Security.AzRoles.IAzTask
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -92,34 +92,34 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117780588"
 ---
-# <a name="microsoftinteropsecurityazrolesiaztask-interface"></a>Interface Microsoft. Interop. Security. AzRoles. IAzTask
+# <a name="microsoftinteropsecurityazrolesiaztask-interface"></a>Interface Microsoft.Interop.Security.AzRoles.IAzTask
 
-Os métodos e as propriedades do wrapper de interoperabilidade **Microsoft. Interop. Security. Azroles. IAzTask** são documentados na versão com do método ou da propriedade. Um link para a documentação COM correlacionada segue cada nome de membro.
+Os métodos e propriedades de wrapper de interoperabilidade **Microsoft.Interop.Security.Azroles.IAzTask** são documentados na versão COM do método ou propriedade. Um link para a documentação COM de correlação segue cada nome de membro.
 
 ## <a name="members"></a>Membros
 
-A interface **Microsoft. Interop. Security. AzRoles. IAzTask** tem estes tipos de membros:
+A interface **Microsoft.Interop.Security.AzRoles.IAzTask** tem estes tipos de membros:
 
 -   [Métodos](#methods)
 -   [Propriedades](#properties)
 
 ### <a name="methods"></a>Métodos
 
-A interface **Microsoft. Interop. Security. AzRoles. IAzTask** tem esses métodos.
+A interface **Microsoft.Interop.Security.AzRoles.IAzTask** tem esses métodos.
 
 
 
 | Método                                                            | Descrição                                                                  |
 |:------------------------------------------------------------------|:-----------------------------------------------------------------------------|
-| **Microsoft. Interop. Security. Azroles. IAzTask. AddOperation**       | [**IAzTask:: Addoperação**](/windows/desktop/api/Azroles/nf-azroles-iaztask-addoperation)<br/>             |
-| **Microsoft. Interop. Security. Azroles. IAzTask. AddPropertyItem**    | [**IAzTask::AddPropertyItem**](/windows/desktop/api/Azroles/nf-azroles-iaztask-addpropertyitem)<br/>       |
-| **Microsoft. Interop. Security. Azroles. IAzTask. AddTask**            | [**IAzTask:: AddTask**](/windows/desktop/api/Azroles/nf-azroles-iaztask-addtask)<br/>                       |
-| **Microsoft. Interop. Security. Azroles. IAzTask. DeleteOperation**    | [**IAzTask::D eleteOperation**](/windows/desktop/api/Azroles/nf-azroles-iaztask-deleteoperation)<br/>       |
-| **Microsoft. Interop. Security. Azroles. IAzTask. DeletePropertyItem** | [**IAzTask::D eletePropertyItem**](/windows/desktop/api/Azroles/nf-azroles-iaztask-deletepropertyitem)<br/> |
-| **Microsoft. Interop. Security. Azroles. IAzTask. DeleteTask**         | [**IAzTask::D eleteTask**](/windows/desktop/api/Azroles/nf-azroles-iaztask-deletetask)<br/>                 |
-| **Microsoft. Interop. Security. Azroles. IAzTask. GetProperty**        | [**IAzTask:: GetProperty**](/windows/desktop/api/Azroles/nf-azroles-iaztask-getproperty)<br/>               |
-| **Microsoft. Interop. Security. Azroles. IAzTask. SetProperty**        | [**IAzTask:: SetProperty**](/windows/desktop/api/Azroles/nf-azroles-iaztask-setproperty)<br/>               |
-| **Microsoft. Interop. Security. Azroles. IAzTask. Submit**             | [**IAzTask:: enviar**](/windows/desktop/api/Azroles/nf-azroles-iaztask-submit)<br/>                         |
+| **Microsoft.Interop.Security.Azroles.IAzTask.AddOperation**       | [**IAzTask::AddOperation**](/windows/desktop/api/Azroles/nf-azroles-iaztask-addoperation)<br/>             |
+| **Microsoft.Interop.Security.Azroles.IAzTask.AddPropertyItem**    | [**IAzTask::AddPropertyItem**](/windows/desktop/api/Azroles/nf-azroles-iaztask-addpropertyitem)<br/>       |
+| **Microsoft.Interop.Security.Azroles.IAzTask.AddTask**            | [**IAzTask::AddTask**](/windows/desktop/api/Azroles/nf-azroles-iaztask-addtask)<br/>                       |
+| **Microsoft.Interop.Security.Azroles.IAzTask.DeleteOperation**    | [**IAzTask::D eleteOperation**](/windows/desktop/api/Azroles/nf-azroles-iaztask-deleteoperation)<br/>       |
+| **Microsoft.Interop.Security.Azroles.IAzTask.DeletePropertyItem** | [**IAzTask::D eletePropertyItem**](/windows/desktop/api/Azroles/nf-azroles-iaztask-deletepropertyitem)<br/> |
+| **Microsoft.Interop.Security.Azroles.IAzTask.DeleteTask**         | [**IAzTask::D eleteTask**](/windows/desktop/api/Azroles/nf-azroles-iaztask-deletetask)<br/>                 |
+| **Microsoft.Interop.Security.Azroles.IAzTask.GetProperty**        | [**IAzTask::GetProperty**](/windows/desktop/api/Azroles/nf-azroles-iaztask-getproperty)<br/>               |
+| **Microsoft.Interop.Security.Azroles.IAzTask.SetProperty**        | [**IAzTask::SetProperty**](/windows/desktop/api/Azroles/nf-azroles-iaztask-setproperty)<br/>               |
+| **Microsoft.Interop.Security.Azroles.IAzTask.Submit**             | [**IAzTask::Submit**](/windows/desktop/api/Azroles/nf-azroles-iaztask-submit)<br/>                         |
 
 
 
@@ -127,22 +127,22 @@ A interface **Microsoft. Interop. Security. AzRoles. IAzTask** tem esses método
 
 ### <a name="properties"></a>Propriedades
 
-A interface **Microsoft. Interop. Security. AzRoles. IAzTask** tem essas propriedades.
+A interface **Microsoft.Interop.Security.AzRoles.IAzTask** tem essas propriedades.
 
 
 
 | Propriedade                                                                      | Tipo de acesso           | Descrição                                                                               |
 |:------------------------------------------------------------------------------|:----------------------|:------------------------------------------------------------------------------------------|
-| **Microsoft. Interop. Security. Azroles. IAzTask. ApplicationData**<br/>     | Leitura/gravação<br/> | [**Propriedade ApplicationData de IAzTask**](/windows/desktop/api/Azroles/nf-azroles-iaztask-get_applicationdata)<br/>         |
-| **Microsoft. Interop. Security. Azroles. IAzTask. BizRule**<br/>             | Leitura/gravação<br/> | [**Propriedade BizRule de IAzTask**](/windows/desktop/api/Azroles/nf-azroles-iaztask-get_bizrule)<br/>                         |
-| **Microsoft. Interop. Security. Azroles. IAzTask. BizRuleImportedPath**<br/> | Leitura/gravação<br/> | [**Propriedade BizRuleImportedPath de IAzTask**](/windows/desktop/api/Azroles/nf-azroles-iaztask-get_bizruleimportedpath)<br/> |
-| **Microsoft. Interop. Security. Azroles. IAzTask. BizRuleLanguage**<br/>     | Leitura/gravação<br/> | [**Propriedade BizRuleLanguage de IAzTask**](/windows/desktop/api/Azroles/nf-azroles-iaztask-get_bizrulelanguage)<br/>         |
-| **Microsoft. Interop. Security. Azroles. IAzTask. Description**<br/>         | Leitura/gravação<br/> | [**Propriedade de descrição de IAzTask**](/windows/desktop/api/Azroles/nf-azroles-iaztask-get_description)<br/>                 |
-| **Microsoft. Interop. Security. Azroles. IAzTask. IsRoleDefinition**<br/>    | Leitura/gravação<br/> | [**Propriedade IsRoleDefinition de IAzTask**](/windows/desktop/api/Azroles/nf-azroles-iaztask-get_isroledefinition)<br/>       |
+| **Microsoft.Interop.Security.Azroles.IAzTask.ApplicationData**<br/>     | Leitura/gravação<br/> | [**Propriedade ApplicationData de IAzTask**](/windows/desktop/api/Azroles/nf-azroles-iaztask-get_applicationdata)<br/>         |
+| **Microsoft.Interop.Security.Azroles.IAzTask.BizRule**<br/>             | Leitura/gravação<br/> | [**Propriedade BizRule de IAzTask**](/windows/desktop/api/Azroles/nf-azroles-iaztask-get_bizrule)<br/>                         |
+| **Microsoft.Interop.Security.Azroles.IAzTask.BizRuleImportedPath**<br/> | Leitura/gravação<br/> | [**Propriedade BizRuleImportedPath de IAzTask**](/windows/desktop/api/Azroles/nf-azroles-iaztask-get_bizruleimportedpath)<br/> |
+| **Microsoft.Interop.Security.Azroles.IAzTask.BizRuleLanguage**<br/>     | Leitura/gravação<br/> | [**Propriedade BizRuleLanguage de IAzTask**](/windows/desktop/api/Azroles/nf-azroles-iaztask-get_bizrulelanguage)<br/>         |
+| **Microsoft.Interop.Security.Azroles.IAzTask.Description**<br/>         | Leitura/gravação<br/> | [**Propriedade Description de IAzTask**](/windows/desktop/api/Azroles/nf-azroles-iaztask-get_description)<br/>                 |
+| **Microsoft.Interop.Security.Azroles.IAzTask.IsRoleDefinition**<br/>    | Leitura/gravação<br/> | [**Propriedade IsRoleDefinition de IAzTask**](/windows/desktop/api/Azroles/nf-azroles-iaztask-get_isroledefinition)<br/>       |
 | **Microsoft.Interop.Security.Azroles.IAzTask.Name**<br/>                | Leitura/gravação<br/> | [**Propriedade Name de IAzTask**](/windows/desktop/api/Azroles/nf-azroles-iaztask-get_name)<br/>                               |
-| **Microsoft. Interop. Security. Azroles. IAzTask. Operations**<br/>          | Somente leitura<br/>  | [**Propriedade de operações de IAzTask**](/windows/desktop/api/Azroles/nf-azroles-iaztask-get_operations)<br/>                   |
-| **Microsoft. Interop. Security. Azroles. IAzTask. Tasks**<br/>               | Somente leitura<br/>  | [**Propriedade Tasks de IAzTask**](/windows/desktop/api/Azroles/nf-azroles-iaztask-get_tasks)<br/>                             |
-| **Microsoft. Interop. Security. Azroles. IAzTask. Writable**<br/>            | Somente leitura<br/>  | [**Propriedade gravável de IAzTask**](/windows/desktop/api/Azroles/nf-azroles-iaztask-get_writable)<br/>                       |
+| **Microsoft.Interop.Security.Azroles.IAzTask.Operations**<br/>          | Somente leitura<br/>  | [**Propriedade Operations de IAzTask**](/windows/desktop/api/Azroles/nf-azroles-iaztask-get_operations)<br/>                   |
+| **Microsoft.Interop.Security.Azroles.IAzTask.Tasks**<br/>               | Somente leitura<br/>  | [**Propriedade Tasks de IAzTask**](/windows/desktop/api/Azroles/nf-azroles-iaztask-get_tasks)<br/>                             |
+| **Microsoft.Interop.Security.Azroles.IAzTask.Writable**<br/>            | Somente leitura<br/>  | [**Propriedade writable de IAzTask**](/windows/desktop/api/Azroles/nf-azroles-iaztask-get_writable)<br/>                       |
 
 
 

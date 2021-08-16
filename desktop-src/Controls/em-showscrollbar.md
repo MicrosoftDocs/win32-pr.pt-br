@@ -3,7 +3,7 @@ title: Mensagem de EM_SHOWSCROLLBAR (RichEdit. h)
 description: Mostra ou oculta uma das barras de rolagem na janela host de um controle rich edit.
 ms.assetid: 0a6ec010-4870-4faf-9dc2-1da961dc8194
 keywords:
-- Controles de EM_SHOWSCROLLBAR de mensagens do Windows
+- controles de Windows de mensagem de EM_SHOWSCROLLBAR
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: eb569b194be3d744db67f98b71a595ba18a2d3a8
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: dc3988ced825fed457549fc9f662a418295de7df6085f04c3e71255ca4ad54c1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918346"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117831136"
 ---
 # <a name="em_showscrollbar-message"></a>Na \_ mensagem de ScrollBar
 
@@ -43,7 +43,7 @@ Especifica se a barra de rolagem deve ser mostrada ou ocultada. Especifique **tr
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Essa mensagem não retorna um valor.
 
@@ -57,9 +57,9 @@ Esse método só é válido quando o controle está ativo no local. As chamadas 
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
 
 
 

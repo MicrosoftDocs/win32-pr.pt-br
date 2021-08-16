@@ -1,5 +1,5 @@
 ---
-description: 'Saiba mais sobre: Cláusula ORDER BY'
+description: 'Saiba mais sobre: cláusula ORDER BY'
 ms.assetid: e720cf0d-b034-48e2-a13e-e97dd23b2beb
 title: Cláusula ORDER BY
 ms.topic: article
@@ -13,7 +13,7 @@ ms.locfileid: "118227180"
 ---
 # <a name="order-by-clause"></a>Cláusula ORDER BY
 
-A cláusula ORDER BY classifica os resultados com base no valor de uma ou mais colunas que você especificar. A seguir está a sintaxe da cláusula ORDER BY:
+A cláusula ORDER BY classifica os resultados com base no valor de uma ou mais colunas que você especificar. A seguir, a sintaxe da cláusula ORDER BY:
 
 
 ```
@@ -22,11 +22,11 @@ ORDER BY <column> [<direction>] [,<column> [<direction>]]
 
 
 
-O especificador de coluna deve ser uma coluna válida. Você pode usar o especificador de coluna para se referir às colunas pela ordem em que elas aparecem na consulta. A primeira coluna na consulta é numerada como 1. Você pode incluir mais de uma coluna na cláusula ORDER BY, separada por vírgulas.
+O especificador de coluna deve ser uma coluna válida. Você pode usar o especificador de coluna para fazer referência a colunas pela ordem em que elas aparecem na consulta. A primeira coluna na consulta é numerada 1. Você pode incluir mais de uma coluna na cláusula ORDER BY, separada por vírgulas.
 
-O especificador de direção opcional pode ser "ASC" para crescente (baixo a alto) ou "DESC" para decrescente (de alto para baixo). Se você não fornecer um especificador de direção, o padrão, crescente, será usado. Se você especificar mais de uma coluna, mas não especificar todas as direções, a direção especificada por último será aplicada a cada coluna até que você altere explicitamente a direção.
+O especificador de direção opcional pode ser "ASC" para crescente (baixo para alto) ou "DESC" para decrescente (alto para baixo). Se você não fornecer um especificador de direção, o padrão, Ascending, será usado. Se você especificar mais de uma coluna, mas não especificar todas as direções, a direção especificada por último será aplicada a cada coluna até que você altere explicitamente a direção.
 
-Por exemplo, na cláusula ORDER BY a seguir, as colunas A, B, C e G são classificação em ordem crescente, enquanto as colunas D, E e F são classificação em ordem decrescente.
+Por exemplo, na cláusula ORDER BY a seguir, as colunas A, B, C e G são classificadas em ordem crescente, enquanto as colunas D, E e F são classificadas em ordem decrescente.
 
 
 ```
@@ -45,19 +45,19 @@ ORDER BY A ASC, B, C, D DESC, E, F, G ASC
 [Cláusula FROM](-search-sql-from.md)
 </dt> <dt>
 
-[Cláusula RANK BY](-search-sql-rankby.md)
+[CLASSIFICAR por cláusula](-search-sql-rankby.md)
 </dt> <dt>
 
 [Instrução SELECT](-search-sql-select.md)
 </dt> <dt>
 
-**Conceitual**
+**Conceitua**
 </dt> <dt>
 
 [Predicados de texto completo](-search-sql-fulltextpredicates.md)
 </dt> <dt>
 
-[Predicados que não são de texto completo](-search-sql-nonfulltextpredicates.md)
+[Predicados de texto não completo](-search-sql-nonfulltextpredicates.md)
 </dt> </dl>
 
  

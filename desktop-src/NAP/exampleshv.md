@@ -4,26 +4,26 @@ description: O exemplo a seguir configura um SHV (validador de integridade do si
 ms.assetid: 2264c1d7-b1fb-4937-bf24-d6fa05bdc6fe
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c071a1ce6ba974d2170cbd8a4cda2d7e66b18f46
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 82ec6d2f3f1c5f6aa7f9a1686d288177054f373a3962a9d7db47b9467d9b08a8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104453522"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118369010"
 ---
 # <a name="example-shv"></a>SHV de exemplo
 
 > [!Note]  
 > A plataforma de proteção de acesso à rede não está disponível a partir do Windows 10
 
- 
+ 
 
 O exemplo a seguir configura um SHV (validador de integridade do sistema) em um servidor de diretiva de integridade de NAP.
 
 > [!Note]  
 > O SDK do NAP também contém um conjunto completo de códigos de exemplo que podem ser encontrados no. \\ .. Exemplos \\ de \\ NAP NetDS... diretório da instalação do SDK. Este conjunto de exemplo inclui o e o agente de integridade do sistema (SHA), SHV e cliente de imposição (EC). Ele tem cenários NAP de trabalho completo Configurando a comunicação entre SHA-SHV e SHA-EC.
 
- 
+ 
 
 
 ```C++
@@ -285,9 +285,9 @@ HRESULT CSampleShv::FillResponseSoH(HRESULT validationResult,
 
 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,6 @@
 ---
 title: HttpCalculatorWithSslPolicyServiceExample
-description: Examine um exemplo de C++ da API de serviços Web do Windows (WWSAPI) de uma calculadora HTTP com o serviço de política SSL.
+description: examine um exemplo de Windows WWSAPI (API de serviços Web) C++ de uma calculadora de HTTP com o serviço de política SSL.
 ms.assetid: 5b3fc119-10c2-444b-91d3-415ad36a65ab
 keywords:
 - HttpCalculatorWithSslPolicyServiceExample nativo – Web-Services
@@ -8,12 +8,12 @@ keywords:
 - WWS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 05ef60e86ff6c14bb8fb91369785c197b3994c94
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: f6dc7f985ec42585f1a1044d4391254190e183ec2ab5c940e42c6f8a3a283743
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112409769"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117841550"
 ---
 # <a name="httpcalculatorwithsslpolicyserviceexample"></a>HttpCalculatorWithSslPolicyServiceExample
 

@@ -1,5 +1,5 @@
 ---
-description: O editor de controle de acesso pode incluir uma página de propriedades Auditoria que permite que o usuário veja e edite as ACEs (entradas de controle de acesso) em uma SACL (lista de controle de acesso do sistema) de objetos. Para obter mais informações sobre SACLs, consulte ACLs (Listas de Controle de Acesso).
+description: O editor de controle de acesso pode incluir uma página de propriedades de auditoria que permite ao usuário exibir e editar as ACEs (entradas de controle de acesso) em uma SACL (lista de controle de acesso) do sistema de objetos. Para obter mais informações sobre as SACLs, consulte listas de controle de acesso (ACLs).
 ms.assetid: 2a9152b7-c72d-4f03-bc3f-b75927fb4b6c
 title: Página de propriedades de auditoria
 ms.topic: article
@@ -13,13 +13,13 @@ ms.locfileid: "117784314"
 ---
 # <a name="auditing-property-page"></a>Página de propriedades de auditoria
 
-O editor de controle  de acesso pode incluir uma página de propriedades Auditoria que permite que o usuário veja e edite as ACEs [*(entradas*](/windows/desktop/SecGloss/a-gly) de controle de acesso) na SACL [*(lista*](/windows/desktop/SecGloss/s-gly) de controle de acesso do sistema) de um objeto. Para obter mais informações sobre SACLs, consulte [ACLs](access-control-lists.md) (Listas de Controle de Acesso).
+O editor de controle de acesso pode incluir uma página de propriedades de **auditoria** que permite ao usuário exibir e editar as ACEs ( [*entradas de controle de acesso*](/windows/desktop/SecGloss/a-gly) ) na SACL (lista de controle de acesso) do [*sistema*](/windows/desktop/SecGloss/s-gly) de um objeto. Para obter mais informações sobre as SACLs, consulte [listas de controle de acesso](access-control-lists.md) (ACLs).
 
-**Para exibir a página de propriedades Auditoria**
+**Para exibir a página de propriedades de auditoria**
 
--   Na página [de propriedades básicas de segurança](basic-security-property-page.md), clique em **Avançado.** A **página de propriedades** Auditoria está na folha de propriedades de segurança [avançada](advanced-security-property-sheet.md).
+-   Na [página de propriedades segurança básica](basic-security-property-page.md), clique em **avançado**. A página de propriedades de **auditoria** está na [folha de propriedades segurança avançada](advanced-security-property-sheet.md).
 
-Para incluir  a página de propriedades Auditoria, de definir os sinalizadores **SI \_ ADVANCED** e **SI \_ EDIT \_ AUDITS** na estrutura [**SI OBJECT \_ \_ INFO**](/windows/desktop/api/Aclui/ns-aclui-si_object_info) retornada pela implementação [**de ISecurityInformation::GetObjectInformation.**](/windows/win32/api/aclui/nf-aclui-isecurityinformation-getobjectinformation)
+Para incluir a página de propriedades de **auditoria** , defina os sinalizadores de **\_ \_ auditoria** **si \_ avançado** e si editar na estrutura de [**\_ \_ informações do objeto si**](/windows/desktop/api/Aclui/ns-aclui-si_object_info) retornada pela implementação de [**ISecurityInformation:: GetObjectInformation**](/windows/win32/api/aclui/nf-aclui-isecurityinformation-getobjectinformation) .
 
  
 

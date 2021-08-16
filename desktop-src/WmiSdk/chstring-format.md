@@ -6,12 +6,12 @@ ms.tgt_platform: multiple
 title: 'Métodos CHString:: Format (ChString. h)'
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: 7187d2c691c6efb2054d766ae432c55be893cd05
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5432ac16b3e59b3f5e56d862a5bf66f5b23f732f74d586066584b6b937327830
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105771419"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118319935"
 ---
 # <a name="chstringformat-methods"></a>Métodos CHString:: Format
 
@@ -37,8 +37,8 @@ O método **Format** formata e armazena uma série de caracteres e valores em um
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                                                                                      |
-| Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                                                                                                |
-| parâmetro<br/>                   | <dl> <dt>ChString. h (incluir FwCommon. h)</dt> </dl>                                                    |
+| Servidor mínimo com suporte<br/> | Windows Servidor 2008<br/>                                                                                                                                |
+| Cabeçalho<br/>                   | <dl> <dt>ChString. h (incluir FwCommon. h)</dt> </dl>                                                    |
 | Biblioteca<br/>                  | <dl> <dt>FrameDyn. lib</dt> </dl>                                                                       |
 | DLL<br/>                      | <dl> <dt>FrameDynOS.dll; </dt> <dt>FrameDyn.dll</dt> </dl> |
 

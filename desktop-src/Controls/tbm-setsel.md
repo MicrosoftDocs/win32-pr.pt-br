@@ -1,9 +1,9 @@
 ---
-title: Mensagem de TBM_SETSEL (commctrl. h)
-description: Define as posições inicial e final para o intervalo de seleção disponível em um TrackBar.
+title: TBM_SETSEL mensagem (Commctrl.h)
+description: Define as posições inicial e final para o intervalo de seleção disponível em uma barra de faixa.
 ms.assetid: 71f5b9f8-4850-44a8-8acf-adca9bda84c3
 keywords:
-- Controles de TBM_SETSEL de mensagens do Windows
+- TBM_SETSEL controles Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2edebc6b6dcf3b0b93e3047a39aac74c34d121bd
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d055b317cc6db5e17edbe57bc57e6dbfe287274788718e8e2a920e1f25d9316b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103644250"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117829319"
 ---
-# <a name="tbm_setsel-message"></a>\_Mensagem tbm SETSEL
+# <a name="tbm_setsel-message"></a>Mensagem TBM \_ SETSEL
 
-Define as posições inicial e final para o intervalo de seleção disponível em um TrackBar.
+Define as posições inicial e final para o intervalo de seleção disponível em uma barra de faixa.
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -32,26 +32,26 @@ Define as posições inicial e final para o intervalo de seleção disponível e
 *wParam* 
 </dt> <dd>
 
-Sinalizador de redesenho. Se esse parâmetro for **true**, a mensagem redesenhará o TrackBar depois que o intervalo de seleção for definido. Se esse parâmetro for **false**, a mensagem definirá o intervalo de seleção, mas não redesenhará o TrackBar.
+Redesenhar sinalizador. Se esse parâmetro for **TRUE,** a mensagem redesenhará a barra de faixas depois que o intervalo de seleção for definido. Se esse parâmetro for **FALSE,** a mensagem define o intervalo de seleção, mas não redesenha a barra de faixas.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-O [**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) especifica a posição lógica inicial para o intervalo de seleção e o [**HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) especifica a posição lógica final.
+A [**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) especifica a posição lógica inicial para o intervalo de seleção e [**HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) especifica a posição lógica final.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Sem valor de retorno.
 
 ## <a name="remarks"></a>Comentários
 
-Essa mensagem será ignorada se o TrackBar não tiver o [**estilo \_ ENABLESELRANGE TBS**](trackbar-control-styles.md) .
+Essa mensagem será ignorada se a barra de faixas não tiver o [**estilo TBS \_ ENABLESELRANGE.**](trackbar-control-styles.md)
 
-**Tbm \_ SETSEL** permite restringir o ponteiro a apenas uma parte do intervalo disponível para a barra de progresso.
+**TBM \_ SETSEL** permite restringir o ponteiro a apenas uma parte do intervalo disponível para a barra de progresso.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -59,9 +59,9 @@ Essa mensagem será ignorada se o TrackBar não tiver o [**estilo \_ ENABLESELRA
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

@@ -1,11 +1,11 @@
 ---
-title: Método INapEnforcementClientConnection2 GetIsolationInfoEx (NapEnforcementClient.h)
+title: Método INapEnforcementClientConnection2 GetIsolationInfoEx (NapEnforcementClient. h)
 description: É usado para obter informações de isolamento sobre o cliente.
 ms.assetid: ebacd056-5ab8-4096-821c-8f2987d853c4
 keywords:
-- Nap do método GetIsolationInfoEx
+- Método GetIsolationInfoEx NAP
 - Método GetIsolationInfoEx NAP, interface INapEnforcementClientConnection2
-- INapEnforcementClientConnection2 interface NAP , método GetIsolationInfoEx
+- INapEnforcementClientConnection2 interface NAP, método GetIsolationInfoEx
 topic_type:
 - apiref
 api_name:
@@ -23,14 +23,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118368049"
 ---
-# <a name="inapenforcementclientconnection2getisolationinfoex-method"></a>Método INapEnforcementClientConnection2::GetIsolationInfoEx
+# <a name="inapenforcementclientconnection2getisolationinfoex-method"></a>Método INapEnforcementClientConnection2:: GetIsolationInfoEx
 
 > [!Note]  
-> A plataforma de Proteção de Acesso à Rede não está disponível a partir do Windows 10
+> A plataforma de proteção de acesso à rede não está disponível a partir do Windows 10
 
  
 
-O **método INapEnforcementClientConnection2::GetIsolationInfoEx** é usado para obter informações de isolamento sobre o cliente.
+O método **INapEnforcementClientConnection2:: GetIsolationInfoEx** é usado para obter informações de isolamento sobre o cliente.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -47,7 +47,7 @@ HRESULT GetIsolationInfoEx(
 
 <dl> <dt>
 
-*isolationInfo* \[ out\]
+*isolationInfo* \[ fora\]
 </dt> <dd>
 
 Um ponteiro para um ponteiro para uma estrutura [**IsolationInfoEx**](/windows/win32/api/naptypes/ns-naptypes-isolationinfoex) que contém a conectividade e as informações de estado estendido do cliente.
@@ -56,7 +56,7 @@ Um ponteiro para um ponteiro para uma estrutura [**IsolationInfoEx**](/windows/w
 
 ## <a name="return-value"></a>Valor retornado
 
-Outros códigos de erro específicos do COM também podem ser retornados.
+Outros códigos de erro específicos de COM também podem ser retornados.
 
 
 
@@ -64,7 +64,7 @@ Outros códigos de erro específicos do COM também podem ser retornados.
 |-------------------------------------------------------------------------------------------------|--------------------------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>           | Êxito na operação.<br/>                                    |
 | <dl> <dt>**E \_ ACCESSDENIED**</dt> </dl> | Erro de permissões, acesso negado.<br/>                       |
-| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl>  | Limite de recursos do sistema, não foi possível executar a operação.<br/> |
+| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl>  | O limite de recursos do sistema não pôde executar a operação.<br/> |
 
 
 
@@ -72,9 +72,9 @@ Outros códigos de erro específicos do COM também podem ser retornados.
 
 ## <a name="remarks"></a>Comentários
 
-Essas informações são definidas pelo NapAgent após o processamento [**de um SoHResponse**](/windows/win32/api/naptypes/ns-naptypes-soh) e não devem ser definidas pelo executor.
+Essas informações são definidas pelo NapAgent após o processamento de um [**SoHResponse**](/windows/win32/api/naptypes/ns-naptypes-soh) e não devem ser definidas pelo aplicador.
 
-O SHA deve liberar a estrutura [**IsolationInfoEx**](/windows/win32/api/naptypes/ns-naptypes-isolationinfoex) chamando [**FreeIsolationInfoEx.**](freeisolationinfoex.md)
+O SHA deve liberar a estrutura [**IsolationInfoEx**](/windows/win32/api/naptypes/ns-naptypes-isolationinfoex) chamando [**FreeIsolationInfoEx**](freeisolationinfoex.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -82,10 +82,10 @@ O SHA deve liberar a estrutura [**IsolationInfoEx**](/windows/win32/api/naptypes
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                                      |
-| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                                |
-| Cabeçalho<br/>                   | <dl> <dt>NapEnforcementClient.h</dt> </dl>   |
-| Idl<br/>                      | <dl> <dt>NapEnforcementClient.idl</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                                      |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                                |
+| Cabeçalho<br/>                   | <dl> <dt>NapEnforcementClient. h</dt> </dl>   |
+| INSERI<br/>                      | <dl> <dt>NapEnforcementClient. idl</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Qagent.dll</dt> </dl>               |
 
 

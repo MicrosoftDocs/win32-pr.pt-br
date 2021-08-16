@@ -4,16 +4,16 @@ ms.assetid: 7748e111-9987-4685-8fc8-10c5d4631080
 title: Recuperando as categorias funcionais com suporte de um dispositivo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6514c6255fa089dc235b5edd8a25b5ef581aee84
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d410788616cc20563b914a293afcd8e2bbbd87099f738ae21463d2092c620597
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103829201"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117842688"
 ---
 # <a name="retrieving-the-functional-categories-supported-by-a-device"></a>Recuperando as categorias funcionais com suporte de um dispositivo
 
-Os dispositivos portáteis do Windows podem oferecer suporte a uma ou mais categorias funcionais. Essas categorias são descritas na tabela a seguir.
+Windows Os dispositivos portáteis podem oferecer suporte a uma ou mais categorias funcionais. Essas categorias são descritas na tabela a seguir.
 
 
 

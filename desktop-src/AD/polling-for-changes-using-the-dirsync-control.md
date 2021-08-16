@@ -7,12 +7,12 @@ keywords:
 - Sondando alterações usando o AD do controle DirSync
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8c3d105757d39bc25bd10df21ab68c4d1d1202be
-ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.openlocfilehash: 9b95e9fed93a962ef95e8cdbe08c202bd8e46df21959d9e1fcabe8eac033b6ee
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "103640392"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118185403"
 ---
 # <a name="polling-for-changes-using-the-dirsync-control"></a>Sondando alterações usando o controle DirSync
 
@@ -35,7 +35,7 @@ A tabela a seguir lista os parâmetros de pesquisa que a solicitação de pesqui
 
 
 
- 
+ 
 
 Além disso, lembre-se de que:
 
@@ -73,6 +73,6 @@ Para obter mais informações, consulte [recuperando objetos excluídos](retriev
 
 Você também pode executar uma pesquisa DirSync usando a API LDAP com o controle [ \_ \_ \_ OID do servidor LDAP](/previous-versions/windows/desktop/ldap/ldap-server-dirsync-oid) . Se você usar a API LDAP, especifique também o [ \_ \_ \_ \_ OID DN estendido do servidor LDAP](/previous-versions/windows/desktop/ldap/ldap-server-extended-dn-oid) e o [ \_ servidor LDAP mostrar controles \_ \_ \_ OID excluídos](/previous-versions/windows/desktop/ldap/ldap-server-show-deleted-oid) . O \_ \_ controle OID do DN estendido do servidor LDAP \_ \_ faz com que uma pesquisa LDAP retorne uma forma estendida do nome distinto que inclui o **objectGUID** e o **objectSid** para objetos de entidade de segurança, como usuários, grupos e computadores. O \_ servidor LDAP \_ Mostrar \_ \_ controle de OID excluído faz com que os resultados da pesquisa incluam dados para objetos excluídos. Lembre-se de que esses controles são incluídos automaticamente na implementação do ADSI.
 
- 
+ 
 
- 
+ 

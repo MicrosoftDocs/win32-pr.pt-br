@@ -1,7 +1,7 @@
 ---
 description: Retorna uma interface para enumerar tipos que estão atualmente registrados no banco de dados protegido.
 ms.assetid: 0c0c2ad7-90b0-4fc0-8972-82eb159653be
-title: 'Método IPStore:: EnumTypes (Pstore. h)'
+title: Método IPStore::EnumTypes (Pstore.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Pstorec.dll
-ms.openlocfilehash: 73166a9fc1d76ae9f67528636eda567b9fa190a2
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c44429b4145158bc54e52d700546a29caf3e9665d38e51679e596adbdec6c3b6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105750543"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117827109"
 ---
-# <a name="ipstoreenumtypes-method"></a>Método IPStore:: EnumTypes
+# <a name="ipstoreenumtypes-method"></a>Método IPStore::EnumTypes
 
-\[O armazenamento protegido (Pstore) está disponível para uso no Windows Server 2003 e no Windows XP. Ele só está disponível para operações somente leitura no Windows Server 2008 e no Windows Vista, mas pode estar indisponível nas versões subsequentes. A Pstore usa uma implementação mais antiga da proteção de dados. Os desenvolvedores são altamente incentivados a aproveitar a proteção de dados mais forte fornecida pelas funções [**CryptProtectData**](/windows/win32/api/dpapi/nf-dpapi-cryptprotectdata) e [**CryptUnprotectData**](/windows/win32/api/dpapi/nf-dpapi-cryptunprotectdata) .\]
+\[O Armazenamento (Pstore) está disponível para uso no Windows Server 2003 e Windows XP. Ele só está disponível para operações somente leitura no Windows Server 2008 e Windows Vista, mas pode não estar disponível nas versões subsequentes. O Pstore usa uma implementação mais antiga da proteção de dados. Os desenvolvedores são incentivados a aproveitar a proteção de dados mais forte fornecida pelas funções [**CryptProtectData**](/windows/win32/api/dpapi/nf-dpapi-cryptprotectdata) e [**CryptUnprotectData.**](/windows/win32/api/dpapi/nf-dpapi-cryptunprotectdata)\]
 
 Retorna uma interface para enumerar tipos que estão atualmente registrados no banco de dados protegido.
 
@@ -43,17 +43,17 @@ HRESULT EnumTypes(
 
 <dl> <dt>
 
-*Chave* \[ no\]
+*Chave* \[ Em\]
 </dt> <dd>
 
-Especifica se o tipo é local para o computador ou associado somente ao usuário de criação.
+Especifica se o tipo é local para o computador ou associado somente ao usuário que está criando.
 
 
 
 | Valor                                                                                                                                                                                                                                                   | Significado                                                                            |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
-| <span id="PST_KEY_CURRENT_USER"></span><span id="pst_key_current_user"></span><dl> <dt>**PST \_ CHAVE \_ do \_ usuário atual**</dt> <dt>0x00000000</dt> </dl>    | O armazenamento é mantido na seção usuário atual do registro.<br/>  |
-| <span id="PST_KEY_LOCAL_MACHINE"></span><span id="pst_key_local_machine"></span><dl> <dt>**PST \_ \_ \_ Computador local da chave**</dt> <dt>0x00000001</dt> </dl> | O armazenamento é mantido na seção máquina local do registro.<br/> |
+| <span id="PST_KEY_CURRENT_USER"></span><span id="pst_key_current_user"></span><dl> <dt>**PST \_ CHAVE \_ ATUAL \_ DO USUÁRIO**</dt> <dt>0X00000000</dt> </dl>    | O armazenamento é mantido na seção de usuário atual do Registro.<br/>  |
+| <span id="PST_KEY_LOCAL_MACHINE"></span><span id="pst_key_local_machine"></span><dl> <dt>**PST \_ CHAVE \_ DO \_ COMPUTADOR LOCAL**</dt> <dt>0X00000001</dt> </dl> | O armazenamento é mantido na seção computador local do Registro.<br/> |
 
 
 
@@ -61,23 +61,23 @@ Especifica se o tipo é local para o computador ou associado somente ao usuário
 
 </dd> <dt>
 
-*dwFlags* \[ no\]
+*dwFlags* \[ Em\]
 </dt> <dd>
 
 Reservado: deve ser definido como zero.
 
 </dd> <dt>
 
-*ppEnum* \[ no\]
+*ppenum* \[ Em\]
 </dt> <dd>
 
-Um ponteiro para uma interface [**IEnumPStoreTypes**](ienumpstoretypes.md) que é usada para executar as tarefas de enumeração.
+Um ponteiro para uma interface [**IEnumPStoreTypes**](ienumpstoretypes.md) usada para executar as tarefas de enumeração.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-O valor de retorno é um valor **HRESULT** . Um valor de **PST \_ E \_ OK** indica que a função foi bem-sucedida.
+O valor de retorno é um **valor HRESULT.** Um valor de **PST \_ E OK \_ indica** que a função foi bem-sucedida.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -85,7 +85,7 @@ O valor de retorno é um valor **HRESULT** . Um valor de **PST \_ E \_ OK** indi
 
 | Requisito | Valor |
 |-------------------|----------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>Pstore. h</dt> </dl>    |
+| parâmetro<br/> | <dl> <dt>Pstore.h</dt> </dl>    |
 | DLL<br/>    | <dl> <dt>Pstorec.dll</dt> </dl> |
 
 

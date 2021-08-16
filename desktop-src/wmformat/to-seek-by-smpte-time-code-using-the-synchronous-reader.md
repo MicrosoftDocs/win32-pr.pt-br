@@ -3,11 +3,11 @@ title: Para buscar pelo código de tempo SMPTE usando o leitor síncrono
 description: Para buscar pelo código de tempo SMPTE usando o leitor síncrono
 ms.assetid: 1fd8885c-a694-43fd-b2a2-23eb0ae7ed72
 keywords:
-- Formato de sistemas avançados (ASF), buscando por códigos de tempo SMPTE
-- ASF (formato de sistemas avançados), buscando por códigos de tempo SMPTE
+- ASF (Advanced Systems Format), buscando por códigos de tempo SMPTE
+- ASF (Formato de Sistemas Avançados), buscando por códigos de tempo SMPTE
 - ASF (Advanced Systems Format), leitores síncronos
-- ASF (formato de sistemas avançados), leitores síncronos
-- Formato de sistema avançado (ASF), códigos de tempo SMPTE
+- ASF (Formato de Sistemas Avançados), leitores síncronos
+- AsF (Advanced Systems Format), códigos de hora SMPTE
 - ASF (formato de sistemas avançados), códigos de tempo SMPTE
 - leitores síncronos, buscando por códigos de tempo SMPTE
 - leitores síncronos, códigos de tempo SMPTE
@@ -24,23 +24,23 @@ ms.locfileid: "118196465"
 ---
 # <a name="to-seek-by-smpte-time-code-using-the-synchronous-reader"></a>Para buscar pelo código de tempo SMPTE usando o leitor síncrono
 
-O objeto leitor síncrono pode buscar um ponto em um arquivo com base no código de tempo SMPTE associado a um fluxo de vídeo. Os dados de código de tempo são encapsulados em estruturas de dados de extensão do código de WMT que são anexadas a amostras de vídeo como extensões de unidade de dados. [**\_ \_ \_**](/previous-versions/windows/desktop/api/Wmsdkidl/ns-wmsdkidl-wmt_timecode_extension_data)
+O objeto de leitor síncrono pode buscar até um ponto em um arquivo com base no código de tempo SMPTE associado a um fluxo de vídeo. Os dados de código de hora são encapsulados em estruturas de DADOS DE EXTENSÃO [**DO WMT \_ TIMECODE \_ \_**](/previous-versions/windows/desktop/api/Wmsdkidl/ns-wmsdkidl-wmt_timecode_extension_data) anexadas a exemplos de vídeo como extensões de unidade de dados.
 
-Os códigos de tempo SMPTE são definidos por um intervalo e um código de tempo dentro desse intervalo. Um intervalo é uma série contínua de códigos de tempo. Cada código de tempo é definido por horas, minutos, segundos e quadros.
+Os códigos de tempo SMPTE são definidos por um intervalo e um código de tempo dentro desse intervalo. Um intervalo é uma série contínua de códigos de tempo. Cada código de hora é definido por horas, minutos, segundos e quadros.
 
-Para buscar dados em um arquivo ASF pelo código de tempo SMPTE usando o leitor síncrono, execute as etapas a seguir.
+Para buscar dados em um arquivo ASF por código de hora SMPTE usando o leitor síncrono, execute as etapas a seguir.
 
-1.  Defina o código de tempo de início e o código de tempo de término para a entrega de exemplo chamando [**IWMSyncReader:: SetRangeByFrame**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmsyncreader-setrangebyframe). Você deve especificar o número de fluxo de um fluxo de vídeo indexado por código de tempo. O leitor síncrono sincronizará o restante das saídas para a hora da apresentação do quadro especificado do fluxo especificado.
-2.  Comece a recuperar exemplos com chamadas para [**IWMSyncReader:: GetNextSample**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmsyncreader-getnextsample). Prossiga normalmente com o leitor síncrono.
+1.  De definir o código de hora inicial e o código de hora final para entrega de exemplo chamando [**IWMSyncReader::SetRangeByFrame**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmsyncreader-setrangebyframe). Você deve especificar o número de fluxo de um fluxo de vídeo indexado por código de tempo. O leitor síncrono sincroniza o restante das saídas com o tempo de apresentação do quadro especificado do fluxo especificado.
+2.  Comece a recuperar exemplos com chamadas para [**IWMSyncReader::GetNextSample.**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmsyncreader-getnextsample) Continue como faria normalmente com o leitor síncrono.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[**Lendo arquivos com o leitor síncrono**](reading-files-with-the-synchronous-reader.md)
+[**Lendo arquivos com o Leitor Síncrono**](reading-files-with-the-synchronous-reader.md)
 </dt> <dt>
 
-[**Suporte ao código de tempo SMPTE**](smpte-time-code-support.md)
+[**Suporte a código de hora SMPTE**](smpte-time-code-support.md)
 </dt> <dt>
 
 [**Trabalhando com índices**](working-with-indexes.md)

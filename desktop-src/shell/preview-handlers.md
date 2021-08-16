@@ -4,12 +4,12 @@ ms.assetid: 166a4001-d237-44a4-a457-e320e995639c
 title: Gerenciadores de visualização e host de visualização do Shell
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 993c6c8e7b15d9bfc24b5dd42352407a3a53c45b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c5ccc6c2a519b4f9646e76a0a0ef4d0d26348e08d114eb9a080aaee09a75b9f9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104968002"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117858758"
 ---
 # <a name="preview-handlers-and-shell-preview-host"></a>Gerenciadores de visualização e host de visualização do Shell
 
@@ -19,15 +19,15 @@ Este tópico aborda os seguintes tópicos:
 
 -   [Arquitetura do Gerenciador de visualização](#preview-handler-architecture)
 -   [Opções de modelo de servidor](#server-model-options)
--   [Initialization](#initialization)
--   [Fluxo de dados do Gerenciador de visualização](#preview-handler-data-flow)
+-   [Inicialização](#initialization)
+-   [Flow de dados do Gerenciador de visualização](#preview-handler-data-flow)
 -   [Depurando um Gerenciador de visualização](#debugging-a-preview-handler)
 -   [Fornecendo seu próprio processo para um Gerenciador de visualização](#providing-your-own-process-for-a-preview-handler)
 -   [Tópicos relacionados](#related-topics)
 
 ## <a name="preview-handler-architecture"></a>Arquitetura do Gerenciador de visualização
 
-Um Gerenciador de visualização é um aplicativo hospedado. Os hosts incluem o Windows Explorer no Windows Vista ou no Microsoft Outlook 2007. Os hosts implementam [**IPreviewHandlerFrame**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ipreviewhandlerframe) como um método de comunicação entre o Gerenciador de visualização e o host.
+Um Gerenciador de visualização é um aplicativo hospedado. os hosts incluem o Windows Explorer no Windows Vista ou no Microsoft Outlook 2007. Os hosts implementam [**IPreviewHandlerFrame**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ipreviewhandlerframe) como um método de comunicação entre o Gerenciador de visualização e o host.
 
 O próprio Gerenciador de visualização implementa essas interfaces:
 
@@ -43,7 +43,7 @@ Seu manipulador é chamado por meio de seu [**IObjectWithSite**](/windows/win32/
 
 Os gerenciadores de visualização sempre ficam fora do processo. Há dois métodos para implementar isso:
 
-1.  Um Gerenciador de visualização pode ser criado como um servidor em processo, mas executado por meio de um host alternativo fora do processo. Este é o método preferencial. O sistema fornece um host alternativo para isso no arquivo de Prevhost.exe. Os gerenciadores de visualização criados por esse método não são compatíveis com o Outlook 2007 no Windows XP. No entanto, esses mesmos manipuladores funcionarão no Windows Explorer e no Outlook 2007 em execução no Windows Vista.
+1.  Um Gerenciador de visualização pode ser criado como um servidor em processo, mas executado por meio de um host alternativo fora do processo. Este é o método preferencial. O sistema fornece um host alternativo para isso no arquivo de Prevhost.exe. os gerenciadores de visualização criados por esse método não são compatíveis com Outlook 2007 no Windows XP. no entanto, esses mesmos manipuladores funcionarão no Windows Explorer e no Outlook 2007 em execução no Windows Vista.
 2.  Um Gerenciador de visualização pode ser criado como um servidor local Component Object Model (COM). Isso não é recomendado por vários motivos. Primeiro, a implementação de um servidor em processo é mais fácil. O mais importante é que a implementação como um servidor em processo fornece maior controle sobre o tempo de vida do objeto do manipulador, o que permite melhor limpeza e eficiência.
 
 Por padrão, os gerenciadores de visualização são executados em um processo de nível de integridade baixo (IL) por motivos de segurança. Opcionalmente, você pode desabilitar a execução como um processo de IL baixo definindo o seguinte valor no registro. No entanto, não é recomendável fazer isso. Os sistemas podem eventualmente ser configurados para rejeitar qualquer processo que não seja de IL baixo.
@@ -65,9 +65,9 @@ Se você precisar inicializar com um item de arquivo ou de Shell, armazene o cam
 
 Em geral, a inicialização não deve fazer nenhum trabalho pesado, como compor e armazenar uma imagem de visualização. Para uma eficiência ideal, esse tipo de processamento não deve ser feito até que a versão prévia seja chamada para.
 
-## <a name="preview-handler-data-flow"></a>Fluxo de dados do Gerenciador de visualização
+## <a name="preview-handler-data-flow"></a>Flow de dados do Gerenciador de visualização
 
-O fluxo de dados no processo de visualização segue o caminho geral mostrado aqui. O host pode ser considerado como o Windows Explorer no Windows Vista ou no Outlook 2007.
+O fluxo de dados no processo de visualização segue o caminho geral mostrado aqui. o host pode ser considerado como Windows Explorer no Windows Vista ou Outlook 2007.
 
 1.  O Gerenciador de visualização é inicializado, preferencialmente com um fluxo.
 2.  A janela de exibição é passada do host para o manipulador por meio de [**IPreviewHandler:: SetWindow**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ipreviewhandler-setwindow).

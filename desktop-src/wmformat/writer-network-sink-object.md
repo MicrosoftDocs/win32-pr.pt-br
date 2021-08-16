@@ -3,19 +3,19 @@ title: Objeto de coletor de rede do gravador
 description: Objeto de coletor de rede do gravador
 ms.assetid: f7765b42-693a-4f48-b750-17579e860b6d
 keywords:
-- SDK do Windows Media Format, objetos do coletor de rede do Writer
+- Windows SDK do formato de mídia, objetos do coletor de rede do gravador
 - ASF (Advanced Systems Format), objetos do coletor de rede do Writer
 - ASF (formato de sistemas avançados), objetos de coletor de rede do gravador
 - objetos, objetos do coletor de rede do gravador
 - objetos do coletor de rede do gravador
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c85af356c1d326ddaaf3703ca87c3b7bdd1628b9
-ms.sourcegitcommit: ad672d3a10192c5ccac619ad2524407109266e93
+ms.openlocfilehash: c2011fd161fc4ac5e1cd03d955f06259e6499e343970cc309b1e8c41db051a32
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/25/2020
-ms.locfileid: "104084399"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117843721"
 ---
 # <a name="writer-network-sink-object"></a>Objeto de coletor de rede do gravador
 
@@ -35,7 +35,7 @@ O objeto de coletor de rede do gravador é criado pela função [**WMCreateWrite
 
 
 
- 
+ 
 
 A interface de retorno de chamada a seguir pode ser implementada pelo aplicativo para acompanhar o progresso de um objeto de coletor de rede do gravador.
 
@@ -47,7 +47,7 @@ A interface de retorno de chamada a seguir pode ser implementada pelo aplicativo
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -56,15 +56,15 @@ A interface de retorno de chamada a seguir pode ser implementada pelo aplicativo
 [**Transmissão de dados ASF**](broadcasting-asf-data.md)
 </dt> <dt>
 
-[**Objetos**](objects.md)
+[**Objeto**](objects.md)
 </dt> <dt>
 
 [**Trabalhando com coletores de gravador**](working-with-writer-sinks.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

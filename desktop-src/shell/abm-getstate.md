@@ -1,6 +1,6 @@
 ---
-description: recupera os estados de autoocultar e sempre visível da barra de tarefas Windows.
-title: Mensagem de ABM_GETSTATE (shellapi. h)
+description: Recupera os estados autohide e always on-top da barra de Windows tarefas.
+title: ABM_GETSTATE mensagem (Shellapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.assetid: 18e16752-16be-492b-a4fa-c951e18dc86c
@@ -20,9 +20,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118225225"
 ---
-# <a name="abm_getstate-message"></a>\_Mensagem GETstate do ABM
+# <a name="abm_getstate-message"></a>Mensagem \_ GETSTATE do ABM
 
-recupera os estados de autoocultar e sempre visível da barra de tarefas Windows.
+Recupera os estados autohide e always on-top da barra de Windows tarefas.
 
 
 ```C++
@@ -38,13 +38,13 @@ uState = (UINT) SHAppBarMessage(ABM_GETSTATE, pabd);
 *pabd* 
 </dt> <dd>
 
-Ponteiro para uma estrutura [**APPBARDATA**](/windows/desktop/api/Shellapi/ns-shellapi-appbardata) . Você deve especificar o membro **cbSize** ao enviar esta mensagem; todos os outros membros são ignorados.
+Ponteiro para uma [**estrutura APPBARDATA.**](/windows/desktop/api/Shellapi/ns-shellapi-appbardata) Você deve especificar o **membro cbSize** ao enviar essa mensagem; todos os outros membros são ignorados.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor retornado
 
-Retornará zero se a barra de tarefas não estiver no estado de ocultar automaticamente ou sempre visível. Caso contrário, o valor de retorno será um ou ambos os seguintes:
+Retornará zero se a barra de tarefas não estiver no estado autohide nem always on-top. Caso contrário, o valor de retorno será um ou ambos os seguintes:
 
 
 
@@ -62,16 +62,16 @@ Retornará zero se a barra de tarefas não estiver no estado de ocultar automati
 <tbody>
 <tr class="odd">
 <td><dl> <dt><strong>ABS_ALWAYSONTOP</strong></dt> </dl></td>
-<td>A barra de tarefas está no estado sempre visível. <br/>
+<td>A barra de tarefas está no estado always on-top. <br/>
 <blockquote>
 [!Note]<br />
-a partir do Windows 7, ABS_ALWAYSONTOP não é mais retornado porque a barra de tarefas sempre está nesse estado. O código mais antigo deve ser atualizado para ignorar a ausência desse valor em não pressupor que o valor de retorno signifique que a barra de tarefas não está no estado sempre visível.
+A partir Windows 7, ABS_ALWAYSONTOP é retornado porque a barra de tarefas está sempre nesse estado. O código mais antigo deve ser atualizado para ignorar a ausência desse valor, não pressupondo que o valor de retorno significa que a barra de tarefas não está no estado always on-top.
 </blockquote>
 <br/></td>
 </tr>
 <tr class="even">
 <td><dl> <dt><strong>ABS_AUTOHIDE</strong></dt> </dl></td>
-<td>A barra de tarefas está no estado de AutoOcultar.<br/></td>
+<td>A barra de tarefas está no estado de autohide.<br/></td>
 </tr>
 </tbody>
 </table>
@@ -86,9 +86,9 @@ a partir do Windows 7, ABS_ALWAYSONTOP não é mais retornado porque a barra de 
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho XP\]<br/>                                           |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho XP\]<br/>                                           |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                  |
-| Cabeçalho<br/>                   | <dl> <dt>Shellapi. h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Shellapi.h</dt> </dl> |
 
 
 

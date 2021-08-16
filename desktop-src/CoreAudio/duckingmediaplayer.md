@@ -4,12 +4,12 @@ ms.assetid: 667c8751-1d17-4b59-8ced-ed5f0c333ae9
 title: DuckingMediaPlayer
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f86952f1aa7b81c9a7dc711f0c4f36fc8531bd63
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: aab5a469ec2a7fb1551980d0a08a758e8e8e8f522831dc2148b2d8fb222ecdfb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "105754799"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117828277"
 ---
 # <a name="duckingmediaplayer"></a>DuckingMediaPlayer
 
@@ -28,7 +28,7 @@ Este tópico inclui as seções a seguir.
 
 Este exemplo demonstra os recursos a seguir.
 
--   DirectShow para reproduzir um arquivo de mídia.
+-   DirectShow reproduzir um arquivo de mídia.
 -   [WASAPI](wasapi.md) para gerenciamento de fluxo e manipulação de eventos de pato.
 
 ## <a name="requirements"></a>Requisitos
@@ -50,9 +50,9 @@ Este exemplo está disponível nos locais a seguir.
 
 
 
-| Local    | Caminho/URL                                                                                            |
+| Localização    | Caminho/URL                                                                                            |
 |-------------|-----------------------------------------------------------------------------------------------------|
-| SDK do Windows | \\Arquivos de programas \\ Microsoft SDKs \\ Windows \\ v 7.0 \\ amostras \\ áudio multimídia \\ \\ DuckingMediaPlayer \\ ... |
+| SDK do Windows | \\arquivos de programas \\ Microsoft SDKs \\ Windows \\ v 7.0 \\ amostras \\ áudio multimídia \\ \\ DuckingMediaPlayer \\ ... |
 
 
 
@@ -62,8 +62,8 @@ Este exemplo está disponível nos locais a seguir.
 
 Para criar o exemplo de DuckingMediaPlayer, use as seguintes etapas:
 
-1.  Abra o DuckingMediaPlayer. sln no Visual Studio 2008.
-2.  De dentro da janela, selecione a configuração da solução de **depuração** ou **versão** , selecione o menu **Compilar** na barra de menus e selecione a opção **Compilar** . Se você não abrir o Visual Studio a partir do Shell CMD para o SDK, o Visual Studio não terá acesso ao ambiente de compilação do SDK. Nesse caso, o exemplo não será compilado, a menos que você defina explicitamente a variável de ambiente MSSdk, que é usada no arquivo de projeto, DuckingMediaPlayer. vcproj.
+1.  abra o DuckingMediaPlayer. sln no Visual Studio 2008.
+2.  De dentro da janela, selecione a configuração da solução de **depuração** ou **versão** , selecione o menu **Compilar** na barra de menus e selecione a opção **Compilar** . se você não abrir Visual Studio do shell CMD para o SDK, Visual Studio não terão acesso ao ambiente de compilação do sdk. Nesse caso, o exemplo não será compilado, a menos que você defina explicitamente a variável de ambiente MSSdk, que é usada no arquivo de projeto, DuckingMediaPlayer. vcproj.
 
 ## <a name="running-the-sample"></a>Executando o exemplo
 

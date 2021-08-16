@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - Npptools.dll
-ms.openlocfilehash: 9bca0efe61824c6fb8dd41b0b241791b6303799d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a0fdc05052542c8606bf72d7250e29086a59b6cc69761229df4800abdc781027
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105757233"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118364044"
 ---
 # <a name="setdwordinblob-function"></a>Função SetDwordInBlob
 
@@ -78,7 +78,7 @@ Valor **DWORD** do blob que está sendo definido.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se a função for bem-sucedida, o valor de retorno será NMERR com \_ êxito.
 

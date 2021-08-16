@@ -1,18 +1,18 @@
 ---
-title: Glossário do Direct2D
-description: Descreve os termos comumente usados pela documentação do Direct2D.
+title: Direct2D Glossário
+description: descreve os termos comumente usados pela documentação do Direct2D.
 ROBOTS: NOINDEX, NOFOLLOW
 ms.assetid: 2e884390-56e4-45ae-b1c9-c58503d6f2dd
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4fd2fdaf284fee71724d7b9bb4ac4b5ad1100c82
-ms.sourcegitcommit: fdd00b445ee88366e9cdd1eed0cb3e42e2a73eca
+ms.openlocfilehash: b6102dc3ab10e48e5373bff2bcbe5e13ae3ca49a59417f05aae45d2106e0a3e6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "104453828"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117825626"
 ---
-# <a name="direct2d-glossary"></a>Glossário do Direct2D
+# <a name="direct2d-glossary"></a>Direct2D Glossário
 
 <dl> <dt>
 
@@ -61,7 +61,7 @@ O número de bits que são usados para armazenar e exibir os dados de cor de um 
 <span id="direct2d.direct2d_glossary_brush"></span><span id="DIRECT2D.DIRECT2D_GLOSSARY_BRUSH"></span>**pincel**
 </dt> <dd>
 
-Um recurso Direct2D que pinta um plano infinito com uma cor sólida, um gradiente ou um bitmap. Um pincel é normalmente usado para traçar e preencher uma geometria.
+um recurso Direct2D que pinta um plano infinito com uma cor sólida, um gradiente ou um bitmap. Um pincel é normalmente usado para traçar e preencher uma geometria.
 
 </dd> <dt>
 
@@ -96,7 +96,7 @@ Uma API de renderização com aceleração de hardware e modo imediato de 2-D.
 <span id="direct2d.direct2d_glossary_direct3d"></span><span id="DIRECT2D.DIRECT2D_GLOSSARY_DIRECT3D"></span>**Avalia**
 </dt> <dd>
 
-A plataforma de aceleração de hardware e o tempo de execução para gráficos 3D no Windows.
+A plataforma de aceleração de hardware e tempo de execução para gráficos 3D em Windows.
 
 </dd> <dt>
 
@@ -250,7 +250,7 @@ Um gradiente em que o ponto inicial é definido por um ponto focal e o ponto fin
 <span id="direct2d.direct2d_glossary_render_target"></span><span id="DIRECT2D.DIRECT2D_GLOSSARY_RENDER_TARGET"></span>**destino de renderização**
 </dt> <dd>
 
-Um recurso Direct2D que emite comandos de desenho. Há diferentes tipos de destinos de renderização, cada renderização em um destino diferente. Por exemplo, um ID2D1HwndRenderTarget é renderizado em uma janela e um ID2D1BitmapRenderTarget renderiza para um bitmap.
+um recurso Direct2D que emite comandos de desenho. Há diferentes tipos de destinos de renderização, cada renderização em um destino diferente. Por exemplo, um ID2D1HwndRenderTarget é renderizado em uma janela e um ID2D1BitmapRenderTarget renderiza para um bitmap.
 
 </dd> <dt>
 
@@ -271,7 +271,7 @@ Para dividir uma forma em uma coleção de triângulos.
 <span id="direct2d.direct2d_glossary_transform"></span><span id="DIRECT2D.DIRECT2D_GLOSSARY_TRANSFORM"></span>**tenha**
 </dt> <dd>
 
-Uma matriz que representa um mapeamento linear em várias dimensões. O Direct2D usa uma matriz 2-por-3, que limita a API a essas deformações que são afim.
+Uma matriz que representa um mapeamento linear em várias dimensões. Direct2D usa uma matriz 2-por-3, que limita a API a essas deformações que são afim.
 
 </dd> <dt>
 
@@ -292,34 +292,34 @@ O ponto mais alto de uma curva, o ponto em que uma curva termina ou o ponto em q
 <span id="direct2d.direct2d_glossary_vertex_shader"></span><span id="DIRECT2D.DIRECT2D_GLOSSARY_VERTEX_SHADER"></span>**sombreador de vértice**
 </dt> <dd>
 
-Um tipo de sombreador programável que contém um conjunto de instruções de assembly que são executadas na GPU por vértice e por pixel para a chamada de desenho atual. Um sombreador de vértice descarrega cálculos intensivos de CPU para GPU.
+Um tipo de sombreador programável que contém um conjunto de instruções de assembly que são executados na GPU por vértice e por pixel para a chamada de desenho atual. Um sombreador de vértice descarrega cálculos intensivos da CPU para a GPU.
 
 </dd> <dt>
 
-<span id="direct2d.direct2d_glossary_windows_imaging_component__wic_"></span><span id="DIRECT2D.DIRECT2D_GLOSSARY_WINDOWS_IMAGING_COMPONENT__WIC_"></span>**Windows Imaging Component (WIC)**
+<span id="direct2d.direct2d_glossary_windows_imaging_component__wic_"></span><span id="DIRECT2D.DIRECT2D_GLOSSARY_WINDOWS_IMAGING_COMPONENT__WIC_"></span>**Windows Componente de imagens (WIC)**
 </dt> <dd>
 
-Uma API que permite que os aplicativos (1) exibam e editem qualquer formato de imagem para o qual um CODEC compatível com WIC esteja instalado e para (2) ler e gravar arquivos de metadados ou de imagem.
+Uma API que permite que os aplicativos (1) exibem e editem qualquer formato de imagem para o qual um CODEC compatível com WIC está instalado e para (2) ler e gravar metadados ou arquivos de imagem.
 
 </dd> <dt>
 
 <span id="direct2d.direct2d_glossary_xml_paper_specification__xps_"></span><span id="DIRECT2D.DIRECT2D_GLOSSARY_XML_PAPER_SPECIFICATION__XPS_"></span>**XML Paper Specification (XPS)**
 </dt> <dd>
 
-Um formato de documento, descrito pela especificação de papel XML, que pode ser usado para armazenar documentos, para processá-los para impressão e para imprimi-los.
+Um formato de documento, descrito pela XML Paper Specification, que pode ser usado para armazenar documentos, processá-los para impressão e imprimi-los.
 
 </dd> <dt>
 
-<span id="direct2d.direct2d_glossary_xps"></span><span id="DIRECT2D.DIRECT2D_GLOSSARY_XPS"></span>**XPS**
+<span id="direct2d.direct2d_glossary_xps"></span><span id="DIRECT2D.DIRECT2D_GLOSSARY_XPS"></span>**Xps**
 </dt> <dd>
 
-Consulte definição para: XPS (XML Paper Specification).
+Consulte definição para: XML Paper Specification (XPS).
 
 </dd> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

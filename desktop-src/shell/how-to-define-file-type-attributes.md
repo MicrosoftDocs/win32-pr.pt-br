@@ -1,5 +1,5 @@
 ---
-description: Definindo atributos de tipo de arquivo no Registro.
+description: Definindo atributos de tipo de arquivo no registro.
 ms.assetid: EE35E3E7-0573-45CA-A21A-89E50B86487D
 title: Como definir atributos de tipo de arquivo
 ms.topic: article
@@ -13,23 +13,23 @@ ms.locfileid: "118223570"
 ---
 # <a name="how-to-define-file-type-attributes"></a>Como definir atributos de tipo de arquivo
 
-Atribuir atributos de tipo de arquivo a um ProgID associado permite controlar alguns aspectos do comportamento do tipo de arquivo. Antes do Windows Vista, esses atributos podem permitir que você limite  a extensão até a qual o usuário pode usar a guia de propriedades Opções de Pasta para modificar vários aspectos do tipo de arquivo, como seu ícone ou verbos.
+A atribuição de atributos de tipo de arquivo a um ProgID associado permite que você controle alguns aspectos do comportamento do tipo de arquivo. antes do Windows Vista, esses atributos poderiam permitir que você limite a extensão na qual o usuário poderia usar a guia de propriedades de **opções de pasta** para modificar vários aspectos do tipo de arquivo, como seu ícone ou verbos.
 
-Atributos de tipo de arquivo são sinalizadores binários especificados como **valores REG \_ DWORD** ou **REG \_ BINARY** na subkey ProgID associada do tipo de arquivo.
+Os atributos de tipo de arquivo são sinalizadores binários especificados como valores **reg \_ DWORD** ou **reg \_ Binary** na subchave ProgID associada do tipo de arquivo.
 
-Para atribuir atributos para um tipo de arquivo, siga estas etapas.
+Para atribuir atributos a um tipo de arquivo, siga estas etapas.
 
 ## <a name="instructions"></a>Instruções
 
 ### <a name="step-1"></a>Etapa 1:
 
-Adicione uma entrada EditFlags à sub-chave ProgID associada do tipo de arquivo.
+Adicione uma entrada EditFlags à subchave ProgID associada do tipo de arquivo.
 
 ### <a name="step-2"></a>Etapa 2:
 
-De definir a entrada como o valor de atributo apropriado.
+Defina a entrada para o valor de atributo apropriado.
 
-O exemplo a seguir mostra os atributos FTA \_ NoRemove (0x00000010) e FTA NoNewVerb (0x00000020) definidos para o tipo de arquivo \_ .myp.
+O exemplo a seguir mostra os \_ atributos FTAs NoRemove (0x00000010) e FTAs \_ NoNewVerb (0x00000020) definidos para o tipo de arquivo. MYP.
 
 ```
 HKEY_CLASSES_ROOT

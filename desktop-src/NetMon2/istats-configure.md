@@ -14,12 +14,12 @@ api_type:
 api_location:
 - Ndisnpp.dll
 - Rmtnpp.dll
-ms.openlocfilehash: 9f2dddea3132ce81a57f16737c0f90c6277d4efd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 357d0dd9dbb6e0f57a7ecd3dffcec4c0d1e546ce0bc058ce0144796ca8836113
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104171287"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118364963"
 ---
 # <a name="istatsconfigure-method"></a>Método IStats:: Configure
 
@@ -55,7 +55,7 @@ Identificador para um BLOB de erro que contém informações adicionais sobre o 
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se o método for bem-sucedido, o valor de retorno será NMERR com \_ êxito.
 
@@ -109,7 +109,7 @@ O BLOB de erro retornado por *hErrorBlob* contém entradas que monitor de rede n
 [IStats](istats.md)
 </dt> <dt>
 
-[ISTATS:: conectar](istats-connect.md)
+[ISTATS:: Conexão](istats-connect.md)
 </dt> <dt>
 
 [BLOBs de Monitor de Rede](network-monitor-blobs.md)
