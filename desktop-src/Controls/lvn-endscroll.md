@@ -1,9 +1,9 @@
 ---
-title: Mensagem de LVN_ENDSCROLL (commctrl. h)
-description: Notifica uma janela pai do controle de exibição de lista quando uma operação de rolagem termina. Esse código de notificação é enviado na forma de uma mensagem de notificação do WM \_ .
+title: LVN_ENDSCROLL mensagem (Commctrl.h)
+description: Notifica a janela pai de um controle de exibição de lista quando uma operação de rolagem termina. Esse código de notificação é enviado na forma de uma mensagem WM \_ NOTIFY.
 ms.assetid: 2838dcd0-ac0f-48c7-94ba-dc36febedb94
 keywords:
-- Controles de LVN_ENDSCROLL de mensagens do Windows
+- LVN_ENDSCROLL controles Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3b9dcdcff2d0bcfc28e1818d5add6d37838e5f9b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 308d0abc3c12170dbc14f5e8a67329ed226610baa7b00fd042a24ed67193e6df
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103824861"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119915136"
 ---
-# <a name="lvn_endscroll-message"></a>\_Mensagem de ENDrolagem do LVN
+# <a name="lvn_endscroll-message"></a>Mensagem LVN \_ ENDSCROLL
 
-Notifica uma janela pai do controle de exibição de lista quando uma operação de rolagem termina. Esse código de notificação é enviado na forma de uma mensagem de [**\_ notificação do WM**](wm-notify.md) .
+Notifica a janela pai de um controle de exibição de lista quando uma operação de rolagem termina. Esse código de notificação é enviado na forma de uma mensagem [**WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -41,18 +41,18 @@ LVN_ENDSCROLL
 *lParam* 
 </dt> <dd>
 
-Ponteiro para uma estrutura [**NMLVSCROLL**](/windows/win32/api/commctrl/ns-commctrl-nmlvscroll) que contém a posição horizontal ou vertical de onde a operação de rolagem termina.
+Ponteiro para uma [**estrutura NMLVSCROLL**](/windows/win32/api/commctrl/ns-commctrl-nmlvscroll) que contém a posição horizontal ou vertical de onde a operação de rolagem termina.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Valor de retorno não usado.
 
 ## <a name="remarks"></a>Comentários
 
 > [!Note]  
-> Para usar esse código de notificação, você deve fornecer um manifesto especificando Comclt32.dll versão 6,0. Para obter mais informações sobre manifestos, consulte [habilitando estilos visuais](cookbook-overview.md).
+> Para usar esse código de notificação, você deve fornecer um manifesto especificando Comclt32.dll versão 6.0. Para obter mais informações sobre manifestos, consulte [Habilitando estilos visuais.](cookbook-overview.md)
 
  
 
@@ -62,9 +62,9 @@ Valor de retorno não usado.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

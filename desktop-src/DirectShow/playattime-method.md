@@ -4,17 +4,17 @@ ms.assetid: 83e27c27-e402-43bc-8245-3a23dd49130b
 title: Método PlayAtTime
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 03fef548c50908e9ad8f2455e6f52de7a4077d27
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 12b9ce5bb84afe84dfa416ed1478a15eb76f901394c615b11e7bb1d0851d67a8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105757981"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119633546"
 ---
 # <a name="playattime-method"></a>Método PlayAtTime
 
 > [!Note]  
-> Esse componente está disponível para uso nos sistemas operacionais Microsoft Windows 2000, Windows XP e Windows Server 2003. Ele poderá ser alterado ou ficar indisponível em versões subsequentes.
+> esse componente está disponível para uso nos sistemas operacionais Microsoft Windows 2000, Windows XP e Windows Server 2003. Ele poderá ser alterado ou ficar indisponível em versões subsequentes.
 
  
 

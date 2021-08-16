@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 8a297680cc3cbbc5e5eabb1ae9bcae81a52e025b
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: ae1143bbd02bbfb82eb5cdd74e5ab7642e534174bea2c8cb5554b17a8562d2aa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104292302"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118883414"
 ---
 # <a name="counters-methods"></a>Métodos de contadores
 
@@ -23,9 +23,9 @@ A classe [**Counters**](counters.md) tem os seguintes métodos:
 -   [**Adicionar**](counters-add.md)
 -   [**Remover**](counters-remove.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -25,12 +25,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: fe9c7b1694a3f74c06084dab99fca9eb26d5a007
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 30fd8c3d4c64e524b637c85d88c9fb386156a641b2726f1422967601441e0d47
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104297404"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118979226"
 ---
 # <a name="jet_tableidnil-property"></a>JET_TABLEID. Propriedade nil
 

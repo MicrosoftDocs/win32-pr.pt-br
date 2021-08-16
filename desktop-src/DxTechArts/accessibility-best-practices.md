@@ -4,12 +4,12 @@ description: Este artigo destina-se a desenvolvedores de conteúdo de jogos e pr
 ms.assetid: 95580b75-fb8e-b8a9-2137-40d6c60ae35d
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 74499068877a400a94eb0ca32c2a1aff4bcf6c6d
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 686258873176c99f1942cff915c072d1c1290f6a8b2411130d7e701322d4e4e1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103641423"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120051207"
 ---
 # <a name="making-video-games-accessible-business-justifications-and-design-considerations"></a>Tornando os jogos de vídeo acessíveis: justificativas de negócios e considerações de design
 
@@ -40,7 +40,7 @@ Os recursos de acessibilidade geralmente tendem a servir um dos cinco tipos de d
 -   Audição-difícil de audição, deficiência auditiva.
 -   A fala-deficiências de fala, diferenças de linguagem.
 -   Deficiências de mobilidade, ARM, perna e mão.
--   Deficiências de aprendizado cognitiva e desafios de raciocínio, incluindo dislexia.
+-   cognitiva-Learning deficiências e desafios de raciocínio, incluindo dislexia.
 
 No contexto de videogames, adicionar acessibilidade significa tornar um título utilizável para alguém com uma dessas deficiências.
 
@@ -111,123 +111,123 @@ Para ajudá-lo a entender problemas de deficiência visual, imagine que:
 
 Com algumas etapas e recursos simples, você pode resolver esses problemas e melhorar a experiência de jogos para os dois jogadores com visão normal e jogos com deficiência visual.
 
-1.  Títulos de teste em televisão em preto e branco. Observe que as instâncias em que itens, players, objetivos e comandos não podem ser diferenciadas e ajustar sua paleta de cores de acordo.
-2.  Dê uma opção aos jogos para aumentar o tamanho do texto na tela. Além disso, forneça a capacidade de alterar a taxa de rolagem de texto. É importante lembrar que a experiência do console é de 10 metros, e não a experiência dos jogos de 2 metros que muitos desenvolvedores de PC estão acostumados a. Mesmo para os jogadores sem problemas de visão, a pequena interface do usuário e o texto podem ser difíceis de ler em longas distâncias.
-3.  Forneça recursos de conversão de texto em fala que podem fazer voz de todo o texto do jogo, incluindo os menus do jogo que controlam o foco nos botões. Permitir que o usuário controle a velocidade, a densidade e o sexo da voz. Para ajudar a evitar que a conversão de texto em fala seja desativada por outros ruídos de jogo, dê aos usuários a capacidade de ajustar o volume de fala, ruído de ambiente, sons de jogos ativos e música. Além disso, inclua a opção para reproduzir sons distintos ao fazer a transição por meio de itens de menu e de botões.
-4.  Por fim, dê aos jogos a opção de alterar as configurações de brilho e contraste no jogo. Forneça aos usuários a capacidade de escolher seus próprios esquemas de cores personalizados para que as cores de texto, de fundo e de HUD possam ser personalizadas configuradas para atender às necessidades de um indivíduo.
+1.  Testar títulos em tvs preto e branco. Observe todas as instâncias em que itens, jogadores, objetivos e comandos não podem ser diferenciados e ajustar sua paleta de cores de acordo.
+2.  Dê aos jogadores uma opção para aumentar o tamanho do texto na tela. Forneça também a capacidade de alterar a taxa de rolagem do texto. É importante lembrar que a experiência de console é de 10 pés, não a experiência de jogos de 2 pés com a que muitos desenvolvedores de computadores estão acostumados. Mesmo para jogadores sem problemas de visão, interface do usuário e texto pequenos podem ser difíceis de ler a longas distâncias.
+3.  Forneça recursos de texto em fala que podem dar voz a todo o texto do jogo, incluindo menus de jogo que acompanham o foco nos botões. Permitir que o usuário controle a velocidade, o tom e o gênero da voz. Para ajudar a evitar que o texto em fala seja esvasado por outros ruídos de jogo, dê aos usuários a capacidade de ajustar o volume de fala, o ruído do ambiente, os sons ativos do jogo e a música. Além disso, inclua a opção de reproduzir sons distintos ao fazer a transição entre itens de menu e botões.
+4.  Por fim, dê aos jogadores a opção de alterar as configurações de brilho e contraste no jogo. Forneça aos usuários a capacidade de escolher seus próprios esquemas de cores personalizados para que as cores text, background e WIDGET possam ser personalizadas configuradas de acordo com as necessidades de um indivíduo.
 
-## <a name="auditory-impairments"></a>Deficiências de auditoria
+## <a name="auditory-impairments"></a>Deficiências auditivas
 
-*"As memórias de Half-Life retornem para contra, já que outro halo de obra-prima tecnológica \[ \] é inútil para o jogador surdo... Espero que não pray! Isso se o Halo 2 já perceber a luz do dia em que ele será totalmente subtítulodo. "www.DeafGamers.com*
+*"As memórias de Half-Life retornam para nos desamparar, pois outro halo tecnológico é \[ inútil para o jogador \] mudo... Vamos esperar, sem dúvida! que se o Halo 2 vir a luz do dia em que ele será totalmente subtítulo." www.DeafGamers.com*
 
-A próxima forma predominante de deficiências que podem afetar a reprodução do jogo são deficiências auditivas. Apenas nos EUA, mais de 28 milhões pessoas são afetadas por algum tipo de deficiência auditiva. Embora os deficiências auditivos estejam frequentemente associados à idade, 17 de todos os 1.000 filhos sob a idade de 18 são afetados por uma deficiência auditiva ("[estatísticas sobre audição autoimunes, infecções Ear e deficiências](https://www.nidcd.nih.gov/health/statistics/pages/hearing.aspx)", Instituto Nacional de deficiência auditiva e outros autoimunes de comunicação). Quando um considera que os jogadores de hoje estão ficando mais antigos e perdendo sua audição a uma taxa cada vez maior, fica claro que a demanda pela acessibilidade de áudio só aumentará.
+A próxima forma mais predominante de deficiências que podem afetar o jogo são as deficiências auditivas. Somente nos EUA, mais de 28 milhões de pessoas são afetadas por algum tipo de deficiência auditiva. Embora as deficiências auditivas geralmente sejam associadas à idade, 17 entre cada 1.000 filhos com menos de 18 anos são afetados por uma deficiência auditiva (" Estatísticas sobre[deficiências auditivas,](https://www.nidcd.nih.gov/health/statistics/pages/hearing.aspx)doenças auditivas e deficiências", "National Institute on Deafness and Other Communication Desassociações). Quando se considera que os jogadores de hoje estão ficando mais antigos e perdendo a escuta a uma taxa cada vez maior, fica claro que a demanda por acessibilidade de áudio só aumentará.
 
-Para ajudá-lo a entender os problemas de deficiência da auditoria, imagine que:
+Para ajudá-lo a entender os problemas de deficiência auditiva, imagine que:
 
 
 
-| Você é um jogador           | E você está neste cenário                                                                                                                                                                                                                                                            |
+| Você é um jogador           | E você está nesse cenário                                                                                                                                                                                                                                                            |
 |---------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Com audição normal       | Você não quer incomodar ninguém para que você jogue com mudo sem som, mas não consegue jogar o jogo porque as direções são fornecidas apenas em áudio. <br/>                                                                                                                               |
-| Com um deficiência auditiva | Você está jogando em uma parte mais alta, mas não pode dizer que está sob incêndio porque não consegue ouvir as capturas de pressão.<br/> O jogo tem muitos ruídos de ambiente e você não pode ouvir as instruções verbal fornecidas a você. <br/>                                                     |
-| Quem é surdo               | O comentário de áudio é tão suave, não é possível ouvi-lo, mesmo em uma sala silenciosa. <br/> Todos os seus objetivos são fornecidos a você em áudio e você não pode determinar o que deve fazer. <br/> Todos os storyline são fornecidos de forma verbal, e você não pode seguir adiante. <br/> |
+| Com a escuta normal       | Você não quer interromper ninguém para que você toque com o som mudo, mas não pode reproduzir o jogo porque as instruções são fornecidas apenas no áudio. <br/>                                                                                                                               |
+| Com uma deficiência auditiva | Você está fazendo jogos em uma parte alta, mas não consegue dizer que está sob incêndio porque não consegue ouvir os disparos de disparo.<br/> O jogo tem muito ruído de ambiente e você não pode ouvir as instruções verbais fornecidas a você. <br/>                                                     |
+| Who é mudo               | A comentários de áudio são tão suaves que você não pode ouvir, mesmo em uma sala silenciosa. <br/> Todos os seus objetivos são dados a você no áudio e você não pode determinar o que deve fazer. <br/> Todo o storyline é dado de forma verbal e você não pode acompanhar. <br/> |
 
 
 
  
 
-Com algum trabalho relativamente pequeno, você pode tornar seu jogo utilizável e agradável para os jogadores com audição normal e para os jogadores que têm uma deficiência de auditoria.
+Com algum trabalho relativamente secundário, você pode tornar seu jogo usável e agradável para jogadores com a escuta normal e para jogadores que têm uma deficiência auditiva.
 
-1.  Fechar legenda todas as caixas de diálogo. Isso inclui conteúdo em jogo e cinematics. Dê ao jogador a capacidade de ativar e desativar essas legendas.
-2.  Quando um efeito de som fornece informações vitais, forneça um mecanismo textual ou tactile (vibração) para comentários também. Por exemplo, se normalmente um bomba em seu jogo fizer um ruído de bipe mais rápido perto de seu detalhamento, forneça um indicador visual (como uma barra de tempo) que também permita que o jogador saiba quanto tempo resta antes do detalhamento.
-3.  Se o seu jogo der suporte à reprodução online, dê aos jogos a opção de enviar mensagens de texto, bem como usar sua voz para fornecer informações entre os membros da equipe e outros jogadores online. Um headset não é útil para um indivíduo que não pode ouvir e, cada vez mais, jogadores estão pensando em brincar com outras pessoas com quem eles podem se comunicar e fazer uma estratégia online.
+1.  Feche todas as caixas de diálogo de legenda. Isso inclui conteúdo no jogo e filmes. Dê ao jogador a capacidade de ativar e desativar essas legendas.
+2.  Quando um efeito de som fornece informações vitais, forneça um mecanismo textual ou de tactile (vibração) para comentários também. Por exemplo, se normalmente uma bomba em seu jogo fizer um ruído de aviso mais rápido perto de sua explosão, forneça um indicador visual (como uma barra de tempo) que também permita que o jogador saiba quanto tempo resta antes da explosão.
+3.  Se o jogo der suporte ao jogo online, dê aos jogadores a opção de enviar mensagens de texto, bem como usar sua voz para fornecer informações entre membros da equipe e outros jogadores online. Um headset não é útil para um indivíduo que não consegue ouvir e, cada vez mais, os jogadores estão procurando jogar com outras pessoas com quem eles podem se comunicar e estratégias online.
 
 ## <a name="mobility-impairments"></a>Deficiências de mobilidade
 
-*"O videogames oferece às pessoas com deficiência a oportunidade de se reconectar com seus colegas e habilidades que foram perdidos ou nunca. Minha experiência pessoal vem de ser paralisaram na época de 14 anos de idade e visitar o centro de recriação no hospital e o único interesse que tive de invadir meu Depression era reproduzir o sistema videogame. Perdi rapidamente o interesse quando aprendi que eu não podia reproduzi-los... " Robert Florio*
+*"Os Videojogos oferecem às pessoas com deficiências a oportunidade de se reconectar com seus pares e habilidades que foram perdidas ou nunca tiveram. Minha experiência pessoal vem de ser esmaecida aos 14 anos de idade e visitar o centro de saúde no hospital e o único interesse que eu tinha para sair da minha mãe era jogar o sistema de videojogos. Eu rapidamente perdi o interesse quando aprendi que não podia reproduzi-los..." Robert Florio*
 
-Os deficiências de mobilidade são talvez o mais difícil dos vários conpars para obter as estatísticas. Isso se deve principalmente ao fato de que esses deficiências podem ser causados por doença, neurological autoimunes, perda de Limbs/dígitos, paralysis, etc., que cada um pode ter um grau de impacto variável sobre a experiência de um jogador de vídeo. Esses deficiências podem ser congenitals ou podem ocorrer mais tarde na vida.
+As deficiências de mobilidade talvez sejam as mais difíceis das várias deficiências para obter estatísticas corporativas. Isso se deve principalmente ao fato de que essas deficiências podem ser causadas por doença, deficiências de doença, perda de médicos/dígitos, paralise, etc., que podem ter um grau variável de impacto na experiência de um video gamer. Essas deficiências podem ser um problema ou podem ocorrer posteriormente na vida útil.
 
-Para ajudá-lo a entender os problemas de deficiência da auditoria, imagine que:
+Para ajudá-lo a entender os problemas de deficiência auditiva, imagine que:
 
 
 
-| Você é um jogador                                 | E você está neste cenário                                                                                                                                                                                                                                                                                     |
+| Você é um jogador                                 | E você está nesse cenário                                                                                                                                                                                                                                                                                     |
 |-------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Sem deficiência de mobilidade                     | O Game Controller tem tantos botões, você (como um jogo casual) são intimidados e você não quer saber como usá-lo. <br/>                                                                                                                                                                          |
-| Com um desemparelhamento de mobilidade temporário            | Você tem um Thumb quebrado para não poder usar o Thumbstick em seu controlador. <br/> Você tem um trecho quebrado para não poder usar o teclado de dança para um título de os.<br/>                                                                                                                                     |
-| Com uma deficiência de mobilidade permanente e severa | Você perdeu um ARM para não poder usar um controlador de duas mãos. <br/> Você tem a doença de Parkinson, suas mãos e isso faz com que você dispare acidentalmente botões no controlador. <br/> Você está paralisaram do pescoço para baixo, então não é possível usar um controlador de jogo padrão. <br/> |
+| Sem deficiência de mobilidade                     | O controlador de jogo tem tantos botões, que você (como um jogador casual) está desemocarado e não quer aprender a usá-lo. <br/>                                                                                                                                                                          |
+| Com uma deficiência de mobilidade temporária            | Você tem um polegar quebrado para não poder usar o thumbstick no controlador. <br/> Você tem uma mão quebrada, portanto, não pode usar o painel de música para um título de cadeado.<br/>                                                                                                                                     |
+| Com uma deficiência de mobilidade permanente e grave | Você perdeu um arm, portanto, não pode usar um controlador de duas mãos. <br/> Você tem a doença de Ela, suas mãos tremem e isso faz com que você acionar botões acidentalmente no controlador. <br/> Você está sem cabeça para baixo, portanto, não pode usar um controlador de jogo padrão. <br/> |
 
 
 
  
 
-Pensar em acomodar todos esses jogos é desafiador, mas há coisas fáceis que você pode ter em mente ao desenvolver seus jogos.
+Pensar em acomodar todos esses jogadores é um desafio, mas há algumas coisas fáceis que você pode ter em mente ao desenvolver seus jogos.
 
-1.  Minimize o uso do botão e pense mais sobre interfaces de menu para comandos. Isso é particularmente útil para indivíduos que podem estar faltando dígitos ou uma mão. Ele também é útil para indivíduos paralisaram que usam controladores personalizados.
-2.  Permitir que os jogos personalizem sua configuração de controlador e sensibilidade de botão/Thumbstick. Isso permitirá que os indivíduos com problemas de habilidades do motor fino personalizem o controlador para minimizar o impacto que sua deficiência tem sobre o jogo. Ele também permite um melhor suporte a controladores personalizados para pessoas com deficiências.
-3.  Se o seu jogo utiliza um tipo específico de periférico (teclado de dança, pressão leve, etc.), permita que outros controladores executem as mesmas funções. Por exemplo, um jogo, como c (dança dances), permite que até mesmo pessoas restritas a rodas joguem junto com seus amigos por meio do uso de um controlador de mão normal.
+1.  Minimize o uso do botão e pense mais sobre interfaces de menu para comandos. Isso é particularmente útil para indivíduos que podem estar sem dígitos ou mão. Também é útil para indivíduos com deficiências que usam controladores personalizados.
+2.  Permitir que os jogadores personalizem a configuração do controlador e a sensibilidade de botão/thumbstick. Isso permitirá que indivíduos com problemas de habilidades motoras finos personalizem o controlador para minimizar o impacto que suas deficiências têm no jogo. Ele também permite um melhor suporte de controladores personalizados para pessoas com deficiências.
+3.  Se o jogo utilizar um tipo específico de periférico (painel de música, leve, etc.), permita que outros controladores executem as mesmas funções. Por exemplo, um jogo, como a Revolution(c) de Música, permite que até mesmo indivíduos com restrições de sexo tocam junto com seus amigos por meio do uso de um controlador de mão regular.
 
-## <a name="vocal-impairments"></a>Deficiências de vozes
+## <a name="vocal-impairments"></a>Deficiências de voz
 
-Os deficiências de vozes compõem um percentual relativamente pequeno da comunidade de deficiências. Estatísticas específicas são difíceis de chegar, mas a evidência mostra que a maioria dos deficiências de vozes está vinculada a outras deficiências (como motor ou deficiência auditiva). No entanto, como mais editores de jogos começam a explorar o uso de conferências de voz e reconhecimento de fala em seus títulos, as pessoas com deficiências fiscais começarão a ver a qualidade da sua experiência com jogos. Para combater isso, há recursos de acessibilidade básicos que podem ser implementados.
+As deficiências visuais comem um percentual relativamente pequeno da comunidade de deficiências. Estatísticas específicas são difíceis de encontrar, mas as evidências mostram que a maioria das deficiências visuais está vinculada a outras deficiências (como deficiências motoras ou auditivas). No entanto, à medida que mais editores de jogos começam a explorar o uso da conferência de voz e do reconhecimento de fala em seus títulos, as pessoas com deficiências visuais começarão a ver a qualidade da experiência de jogo diminuir. Para combater isso, há recursos básicos de acessibilidade que podem ser implementados.
 
-Para ajudá-lo a entender os problemas de deficiência da auditoria, imagine que:
+Para ajudá-lo a entender os problemas de deficiência auditiva, imagine que:
 
 
 
-| Você é um jogador             | E você está neste cenário                                                                                                                                                                                                                                           |
+| Você é um jogador             | E você está nesse cenário                                                                                                                                                                                                                                           |
 |-----------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Sem deficiências de vozes    | Você está jogando um jogo que requer comandos falados para controlar seus caracteres e não pode jogar porque você não tem um microfone. <br/> Você está jogando na noite e não deseja perturbar ninguém para que não possa usar o Communicator. <br/> |
-| Quem tem uma deficiência de fala | Você está jogando um jogo que requer comandos falados para controlar seus caracteres e não pode jogar porque o jogo não reconhece o que você está dizendo.                                                                                                               |
-| Quem não consegue falar      | O jogo que você está jogando requer entrada de fala para que você não possa jogar. <br/> O jogo online que você está jogando espera que você coordene a estratégia por meio do Communicator para que você não possa brincar com eficiência. <br/>                                               |
+| Sem deficiência vocal    | Você está fazendo um jogo que requer comandos falados para controlar seus caracteres e não pode jogar porque não tem um microfone. <br/> Você está tocando tarde da noite e não deseja prejudicar ninguém, portanto, não pode usar seu comunicador. <br/> |
+| Who tem uma deficiência de fala | Você está fazendo um jogo que requer comandos falados para controlar seus caracteres e não pode jogar porque o jogo não consegue reconhecer o que você está dizendo.                                                                                                               |
+| Who não é possível falar      | O jogo que você está fazendo requer entrada de fala para que você não consiga jogar. <br/> O jogo online que você está fazendo espera que você coordene a estratégia por meio do comunicador para que você não possa jogar com eficiência. <br/>                                               |
 
 
 
  
 
-Felizmente, há algumas correções fáceis que podem tornar seu jogo utilizável e agradável para esses jogos.
+Felizmente, há algumas correções fáceis que podem tornar seu jogo acessível e agradável para esses jogadores.
 
-1.  Se um jogo usar o reconhecimento de fala, forneça aos jogadores uma opção para escolher comandos de uma combinação de menus ou botões.
-2.  Se o seu título também oferecer suporte a vários jogadores online, dê aos jogos a opção de uma macro personalizável com mensagens de áudio ou (ainda melhor para aqueles com deficiência auditiva) mensagens de texto. Fornecer suporte ao teclado para o chat também é uma opção.
+1.  Se um jogo usar o reconhecimento de fala, forneça aos jogadores uma opção para escolher comandos em uma combinação de menus ou botões.
+2.  Se seu título também der suporte a vários jogadores online, dê aos jogadores a opção de uma macro personalizável com mensagens de áudio ou mensagens de texto (ainda melhor para aqueles com deficiências auditivas). Fornecer suporte ao teclado para chat também é uma opção.
 
 ## <a name="conclusion"></a>Conclusão
 
-Neste ponto, você pode estar pensando que não foi possível acomodar todos esses jogadores em todos esses cenários. E mesmo que você fosse implementar cada sugestão neste documento, não poderia garantir que um título estaria totalmente acessível a todos. Mas seguindo essas diretrizes de acessibilidade, você pode tornar seu título muito mais atraente para a comunidade de acessibilidade. E isso só pode aumentar as vendas.
+Neste ponto, você pode estar pensando que não poderia acomodar todos esses jogadores em todos esses cenários. E mesmo que você implemente todas as sugestões neste documento, você não poderia garantir que um título fosse completamente acessível a todos. Mas seguindo essas diretrizes de acessibilidade, você pode tornar seu título muito mais atraente para a comunidade de acessibilidade. E isso só pode aumentar as vendas.
 
-Para tornar um título mais acessível, os desenvolvedores e editores precisam encontrar pessoas com vários tipos de deficiências para o teste de usabilidade de seus jogos. Essa abordagem fornece informações de primeira mão sobre se um jogo pode ou não ser acessado por um determinado público. Como um benefício adicional, ter diversos recursos de desenvolvimento e teste pode oferecer informações adicionais que podem melhorar a diversão de jogos para todos os jogadores. Mais importante, envolva a comunidade de acessibilidade e conheça esses clientes potenciais. Mantenha um jogo para o seu título em um centro de serviços surdo local, hospital de crianças ou centro de veterano. Incentive os desenvolvedores e testadores a voluntariar com organizações locais que trabalham com pessoas com deficiências, para pegar uma classe de linguagem de assinatura ou para se inscrever em boletins informativos relacionados à acessibilidade para acompanhar a Comunidade. Solicite comentários sobre os títulos anteriores de desabilitados-jogos em escolas e faculdades locais.
+Para tornar um título mais acessível, os desenvolvedores e editores precisam encontrar pessoas com vários tipos de deficiências para testar seus jogos. Essa abordagem fornece informações em primeira mão sobre se um jogo está acessível ou não para um determinado público. Como um benefício adicional, ter diversos recursos de desenvolvimento e teste pode oferecer insights adicionais que podem melhorar o jogo para todos os jogadores. O mais importante é envolver a comunidade de acessibilidade e conhecer esses clientes potenciais. Mantenha um bash de jogos para seu título em um centro de serviços de deficiências auditivas local, um hospital de crianças ou um centro de crianças. Incentive os desenvolvedores e testadores a se inscreverem com organizações locais que trabalham com pessoas com deficiências, fazer uma aula de linguagem de sinais ou inscrever-se para receber boletins informativos relacionados à acessibilidade para acompanhar a comunidade. Solicite comentários sobre títulos anteriores de jogadores desabilitados em escolas e faculdades locais.
 
-Ninguém gosta de se sentir um estranho. Ao incluir a comunidade de acessibilidade em teste e design de jogos, você poderá comercializar seu título para um público muito mais amplo e fazer a coisa certa para a Comunidade e seu resultado.
+Ninguém gosta de se sentir um artista. Ao incluir a comunidade de acessibilidade em teste e design de jogos, você poderá comercializar seu título para um público muito mais amplo e fazer a coisa certa para a comunidade e sua parte inferior.
 
 ## <a name="more-resources"></a>Mais recursos
 
-Há vários recursos da Web disponíveis que abordam a acessibilidade do jogo de vídeo, bem como várias empresas que se concentram em jogadores desabilitados. Além disso, o grupo de tecnologias acessíveis na Microsoft pode ser contatado com perguntas de acessibilidade relacionadas a PCs em: ablecat@microsoft.com . As perguntas de acessibilidade relacionadas ao Xbox podem ser enviadas para: xaccess@microsoft.com .
+Há vários recursos da Web disponíveis que discutem a acessibilidade do jogo de vídeo, bem como várias empresas que se concentram em jogadores desabilitados. Além disso, o Grupo de Tecnologia Acessível na Microsoft pode ser contatado com perguntas de acessibilidade relacionadas ao PC em: ablecat@microsoft.com . As perguntas de acessibilidade relacionadas ao Xbox podem ser enviadas para: xaccess@microsoft.com .
 
-Locais de deficiência geral:
+Sites de deficiência geral:
 
 -   [Acessibilidade do jogo](https://www.game-accessibility.com/)
 -   [Site de acessibilidade da Microsoft](https://www.microsoft.com/enable/)
 -   [Acessibilidade](/previous-versions/windows/internet-explorer/ie-developer/accessibility/gg701968(v=vs.85))
 
-Sites de desemparelhamento de auditoria:
+Sites de deficiência auditiva:
 
 -   [DeafGamers.com](https://www.deafgamers.com/)
--   [A biblioteca de recursos surdo](https://www.deaflibrary.org/)
+-   [A biblioteca de recursos de deficiências](https://www.deaflibrary.org/)
 
 Sites de deficiência visual:
 
--   [Instituto Nacional de olhos](https://www.nei.nih.gov/)
+-   [National Eye Institute](https://www.nei.nih.gov/)
 -   [Vischeck](https://www.vischeck.com/)
 -   [WebExhibits.org](https://www.webexhibits.org/causesofcolor/2.mdl)
 
 Sites de deficiência de mobilidade:
 
 -   [RobertFlorio.com](https://www.robertflorio.com/games)
--   [WebAIM](https://webaim.org/articles/motor/)
+-   [Webaim](https://webaim.org/articles/motor/)
 
 Sites de deficiência de fala:
 
--   [American Speech-The Audiling Association](https://www.asha.org/public/speech/)
+-   [Associação De Fala-Auditiva Dos EUA](https://www.asha.org/public/speech/)
 
  
 

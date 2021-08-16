@@ -10,12 +10,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 8fdcfe3f547e58fa60e552abad9867f8556fc8b7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ffdb05bd92a7e02c710fd91d73f947f980fc8a170e91871da5cc4284b6910c79
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105790390"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118815574"
 ---
 # <a name="wmi-tasks-event-logs"></a>Tarefas WMI: logs de eventos 
 
@@ -28,7 +28,7 @@ O procedimento a seguir descreve como executar um script.
 
 **Para executar um script**
 
-1.  Copie o código e salve-o em um arquivo com uma extensão. vbs, como *filename.vbs*. Verifique se o editor de texto não adiciona uma extensão. txt ao arquivo.
+1.  Copie o código e salve-o em um arquivo com uma extensão. vbs, como *filename.vbs*. Verifique se o editor de texto não adiciona uma extensão de .txt ao arquivo.
 2.  Abra uma janela de prompt de comando e navegue até o diretório em que você salvou o arquivo.
 3.  Digite **cscript filename.vbs** no prompt de comando.
 4.  Se você não puder acessar um log de eventos, verifique se você está executando a partir de um prompt de comandos com privilégios elevados. Alguns logs de eventos, como o log de eventos de segurança, podem ser protegidos por UAC (controles de acesso do usuário).

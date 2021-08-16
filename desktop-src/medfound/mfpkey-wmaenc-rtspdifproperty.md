@@ -34,7 +34,7 @@ Disponível somente usando [**IPropertyStore.**](/windows/win32/api/propsys/nn-p
 | Requisito | Valor |
 |-------------------|-----------------------------------------------------------------------------------------|
 | Cliente<br/> | Windows Vista ou Windows 7<br/>                                                   |
-| parâmetro<br/> | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
+| Cabeçalho<br/> | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 

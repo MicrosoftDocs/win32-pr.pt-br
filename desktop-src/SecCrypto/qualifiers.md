@@ -69,7 +69,7 @@ A [**propriedade de objeto CAPICOM PolicyInformation.Qualifiers**](policyinforma
 | Requisito | Valor |
 |----------------------------|----------------------------------------------------------------------------------------|
 | Redistribuível<br/> | CAPICOM 2.0 ou posterior no Windows Server 2003 e Windows XP<br/>                  |
-| parâmetro<br/>          | <dl> <dt>Iads.h</dt> </dl>      |
+| Cabeçalho<br/>          | <dl> <dt>Iads.h</dt> </dl>      |
 | DLL<br/>             | <dl> <dt>Capicom.dll</dt> </dl> |
 
 

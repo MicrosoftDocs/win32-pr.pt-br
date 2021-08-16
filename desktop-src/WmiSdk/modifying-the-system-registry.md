@@ -5,16 +5,16 @@ ms.tgt_platform: multiple
 title: Modificando o registro do sistema
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: eb274163999996267b5f1df62fb9352831763d4e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 33562e2747d63d8531ff2b23d07eadac33d830ef3ecf3b8613f22170c0b735ed
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105749395"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118992836"
 ---
 # <a name="modifying-the-system-registry"></a>Modificando o registro do sistema
 
-O registro do sistema contém dados de configuração que o sistema operacional, os serviços e os aplicativos usam. Instrumentação de Gerenciamento do Windows (WMI) tem um [provedor de registro do sistema](/previous-versions/windows/desktop/regprov/system-registry-provider) e a classe [**StdRegProv**](/previous-versions/windows/desktop/regprov/stdregprov) com métodos que usam o para monitorar ou modificar o registro no computador local ou em computadores remotos. O [Provedor Win32](/windows/desktop/CIMWin32Prov/win32-provider) dá suporte à classe de [**\_ registro do Win32**](/windows/desktop/CIMWin32Prov/win32-registry) que contém dados estáticos sobre o tamanho de um registro.
+O registro do sistema contém dados de configuração que o sistema operacional, os serviços e os aplicativos usam. Windows A instrumentação de gerenciamento (WMI) tem um [provedor de registro do sistema](/previous-versions/windows/desktop/regprov/system-registry-provider) e a classe [**StdRegProv**](/previous-versions/windows/desktop/regprov/stdregprov) com métodos que usam o para monitorar ou modificar o registro no computador local ou em computadores remotos. O [Provedor Win32](/windows/desktop/CIMWin32Prov/win32-provider) dá suporte à classe de [**\_ registro do Win32**](/windows/desktop/CIMWin32Prov/win32-registry) que contém dados estáticos sobre o tamanho de um registro.
 
 O provedor de registro do sistema é uma instância, uma propriedade e um provedor de eventos que se interfaces com o registro do sistema. O provedor de registro do sistema é um provedor padrão com a interface [**IWbemServices**](/windows/desktop/api/WbemCli/nn-wbemcli-iwbemservices) . Você pode usar o provedor de registro do sistema para acessar as informações e as chaves do registro em sistemas locais e remotos. Para obter mais informações, consulte [provedor de registro do sistema](/previous-versions/windows/desktop/regprov/system-registry-provider).
 

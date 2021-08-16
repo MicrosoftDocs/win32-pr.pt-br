@@ -6,12 +6,12 @@ keywords:
 - COM valor do registro AppIDFlags COM
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cdad2b80625d6a60460d43f242d7897e0ae7eb40
-ms.sourcegitcommit: 5f33645661bf8c825a7a2e73950b1f4ea0f1cd82
+ms.openlocfilehash: 44ecf7d0d112d2ceff913f3de6250c130e16455c1810cc6234db63a6aaf463fe
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "105791374"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119048864"
 ---
 # <a name="appidflags"></a>AppIDFlags
 
@@ -21,8 +21,8 @@ Um conjunto de sinalizadores que controlam o comportamento de ativação de um s
 
 ```
 HKEY_LOCAL_MACHINE\SOFTWARE\Classes\AppID
-   {AppID_GUID}
-      AppIDFlags = flags
+   {AppID_GUID}
+      AppIDFlags = flags
 ```
 
 ## <a name="remarks"></a>Comentários
@@ -39,7 +39,7 @@ Esse é um valor de **reg \_ DWORD** .
 
 
 
- 
+ 
 
 ### <a name="appidregflags_activate_iuserver_indesktop-description"></a>APPIDREGFLAGS \_ Ativar \_ \_ Descrição de INárea de trabalho do IUSERVER
 
@@ -57,7 +57,7 @@ Se o **sinalizador \_ \_ \_ \_ SD \_ e \_ BIND do APPIDREGFLAGS Secure Server** 
 
 Se o **sinalizador \_ \_ \_ \_ SD \_ e \_ BIND do APPIDREGFLAGS Secure Server** for definido em **AppIDFlags**, os servidores com configurados para executar como "este usuário" serão iniciados com um descritor de segurança do processo que permite [processar \_ todo o \_ acesso](/windows/desktop/ProcThread/process-security-and-access-rights) no SID de LogonId do token de processo. Além disso, o proprietário do descritor de segurança será definido como o SID de LogonId do token de processo. Além disso, o SCM (Gerenciador de controle de serviço) do COM modifica o token do processo do servidor COM da seguinte maneira:
 
--   Ele adiciona um SID do APPID ao token. Ele concede ao APPID SID Full Access na DACL (lista de controle de acesso discricionário) padrão do token. No Windows Vista e versões posteriores do Windows, ele concede a permissão de controle de leitura de SID OwnerRights \_ na DACL padrão do token. Nas versões anteriores ao Windows Vista do Windows, ele define o proprietário do token para o SID do APPID.
+-   Ele adiciona um SID do APPID ao token. Ele concede ao APPID SID Full Access na DACL (lista de controle de acesso discricionário) padrão do token. no Windows Vista e versões posteriores do Windows, ele concede a permissão de controle de leitura de SID OwnerRights \_ na DACL padrão do token. nas versões Windows Vista do Windows, ele define o proprietário do token para o SID do APPID.
 
 As considerações de segurança a seguir devem ser levadas em conta ao usar o **\_ processo de servidor seguro APPIDREGFLAGS do SD e o sinalizador \_ \_ \_ \_ de \_ ligação** :
 
@@ -65,7 +65,7 @@ As considerações de segurança a seguir devem ser levadas em conta ao usar o *
 -   Quando o **sinalizador \_ \_ \_ \_ SD \_ and \_ BIND do processo de servidor seguro do APPIDREGFLAGS** é definido, o com protege o descritor de segurança do objeto de processo no caso de servidores com "ativados" do runas. Para esses servidores, espera-se que o cliente COM proteja o token que ele usa para a ativação COM.
 -   Quando o **sinalizador \_ \_ \_ \_ SD \_ and \_ BIND do processo do servidor seguro do APPIDREGFLAGS** é definido, o com protege o descritor de segurança do objeto de processo no caso dos servidores com "este usuário" do runas. Ele também protege o token do processo do servidor COM, já que o SCM COM é a entidade que cria o token.
 
-O **sinalizador \_ \_ \_ \_ SD \_ e \_ BIND do processo APPIDREGFLAGS Secure Server** tem suporte no Windows XP, no Windows Server 2003, no Windows Vista e no Windows Server 2008 somente quando o patch MSRC8322 ([Boletim de segurança MS09-012](https://support.microsoft.com/kb/959454)) é aplicado. Há suporte nativo no Windows 7 e em versões posteriores do Windows.
+o **sinalizador \_ \_ \_ \_ SD \_ e \_ BIND do processo APPIDREGFLAGS SECURE SERVER** tem suporte no Windows XP, Windows server 2003, Windows Vista e Windows server 2008 somente quando o patch MSRC8322 ([boletim de segurança MS09-012](https://support.microsoft.com/kb/959454)) é aplicado. há suporte nativo no Windows 7 e em versões posteriores do Windows.
 
 O **sinalizador \_ \_ \_ \_ SD \_ e \_ BIND do APPIDREGFLAGS Secure Server** aplica-se somente a servidores com que são configurados para executar como runas "Activator" ou "este usuário". Ele não se aplica a servidores COM que são serviços NT.
 
@@ -77,9 +77,9 @@ Se o sinalizador de **ativação do problema de APPIDREGFLAGS não estiver defin
 
 As considerações de segurança a seguir devem ser levadas em conta ao usar o **\_ RPC de ativação do problema APPIDREGFLAGS no sinalizador \_ \_ \_ de \_ identificação** :
 
--   O **\_ RPC de ativação do problema APPIDREGFLAGS \_ \_ \_ no \_** sinalizador de identificação deve ser usado por servidores com que não executam o trabalho em nome de clientes em solicitações de ativação de objeto. Para esses servidores, ter as solicitações de ativação do objeto de emissão de SCM no [RPC \_ C \_ IMP \_ Level \_ identifica](impersonation-levels.md) minimiza as chances de tokens com privilégios com nível de [**\_ \_ nome de representação se**](/windows/desktop/SecAuthZ/privilege-constants) aparecer no processo.
+-   O **\_ RPC de ativação do problema APPIDREGFLAGS \_ \_ \_ no \_** sinalizador de identificação deve ser usado por servidores com que não executam o trabalho em nome de clientes em solicitações de ativação de objeto. para esses servidores, ter as solicitações de ativação do objeto de emissão de SCM no [RPC \_ C \_ IMP \_ level \_ identifica](impersonation-levels.md) minimiza as chances de tokens com privilégios com ES representar o nível de [**\_ \_ nome**](/windows/desktop/SecAuthZ/privilege-constants) que aparece no processo.
 
-O **APPIDREGFLAGS de \_ ativação do problema de \_ \_ RPC \_ no \_** sinalizador de identificação tem suporte no Windows 7 e versões posteriores do Windows.
+o **APPIDREGFLAGS de \_ ativação do problema de \_ \_ RPC \_ no \_** sinalizador de identificação tem suporte no Windows 7 e em versões posteriores do Windows.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -100,6 +100,6 @@ O **APPIDREGFLAGS de \_ ativação do problema de \_ \_ RPC \_ no \_** sinalizad
 [Estações de janela](/windows/desktop/winstation/window-stations)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

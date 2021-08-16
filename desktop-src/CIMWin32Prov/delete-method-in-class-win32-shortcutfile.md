@@ -2,7 +2,7 @@
 description: O método excluir classe WMI exclui o arquivo de atalho lógico (ou diretório) especificado no caminho do objeto.
 ms.assetid: 4059eca3-44d9-48a7-b69f-e9598f939266
 ms.tgt_platform: multiple
-title: Método Delete da classe Win32_ShortcutFile
+title: Método Delete da classe Win32_ShortcutFile dados
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 46ad2ffcd768603d90c86a8d4751e76268a9e919
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: b6eed363a10be0f56fa72146e5029ac60e68dd77d596d5fbc58bb7261d18b179
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105750954"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119080100"
 ---
-# <a name="delete-method-of-the-win32_shortcutfile-class"></a>Método Delete da \_ classe shortcutfile do Win32
+# <a name="delete-method-of-the-win32_shortcutfile-class"></a>Método Delete da classe \_ ShortcutFile win32
 
-O método **excluir** [classe WMI](/windows/desktop/WmiSdk/retrieving-a-class) exclui o arquivo de atalho lógico (ou diretório) especificado no caminho do objeto.
+O **método excluir** [classe WMI](/windows/desktop/WmiSdk/retrieving-a-class) exclui o arquivo de atalho lógico (ou diretório) especificado no caminho do objeto.
 
-Este tópico usa a sintaxe formato MOF (MOF). Para obter mais informações sobre como usar esse método, consulte [chamando um método](/windows/desktop/WmiSdk/calling-a-method).
+Este tópico usa sintaxe Managed Object Format (MOF). Para obter mais informações sobre como usar esse método, consulte [Chamando um método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,9 +40,9 @@ uint32 Delete();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna um valor de 0 (zero) se o arquivo foi excluído com êxito e qualquer outro número para indicar um erro.
+Retornará um valor de 0 (zero) se o arquivo tiver sido excluído com êxito e qualquer outro número para indicar um erro.
 
 <dl> <dt>
 
@@ -56,7 +56,7 @@ A solicitação foi bem-sucedida.
 **2**
 </dt> <dd>
 
-Acesso negado.
+O acesso foi negado.
 
 </dd> <dt>
 
@@ -91,7 +91,7 @@ O sistema de arquivos não é NTFS.
 **12**
 </dt> <dd>
 
-A plataforma não é o Windows.
+A plataforma não é Windows.
 
 </dd> <dt>
 
@@ -119,7 +119,7 @@ Houve uma violação de compartilhamento.
 **16**
 </dt> <dd>
 
-O arquivo de inicialização especificado não era válido.
+O arquivo inicial especificado não era válido.
 
 </dd> <dt>
 
@@ -130,7 +130,7 @@ Um privilégio necessário para a operação não é mantido.
 
 </dd> <dt>
 
-**Abril**
+**21**
 </dt> <dd>
 
 Um parâmetro especificado não é válido.
@@ -145,8 +145,8 @@ Um parâmetro especificado não é válido.
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| Namespace<br/>                | Raiz \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Namespace<br/>                | RAIZ \\ CIMV2<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -158,7 +158,7 @@ Um parâmetro especificado não é válido.
 [Classes do sistema operacional](/previous-versions//aa392727(v=vs.85))
 </dt> <dt>
 
-[**Atalho do Win32 \_**](win32-shortcutfile.md)
+[**Win32 \_ ShortcutFile**](win32-shortcutfile.md)
 </dt> </dl>
 
  

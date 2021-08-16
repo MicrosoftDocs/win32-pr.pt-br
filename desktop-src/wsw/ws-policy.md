@@ -6,12 +6,12 @@ keywords:
 - WS_POLICY
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 74312490bf0e44c1119c0ca1203ac2f581eb7683
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5f3daf0ac353e8d239ae03eb83e7a5dcbfe963754c52b90bf426566fc4ebae0f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104085743"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120109676"
 ---
 # <a name="ws_policy"></a>\_política WS
 
@@ -34,9 +34,9 @@ Este objeto não é thread-safe. Para obter mais informações, consulte [segura
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Aplicativos de \[ aplicativos da área de trabalho do Windows 7 \| UWP\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Aplicativos UWP para aplicativos da área de trabalho do Windows Server 2008 R2 \|\]<br/>                           |
-| parâmetro<br/>                   | <dl> <dt>WebServices. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[aplicativos UWP para aplicativos de área de trabalho Windows 7 \|\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Aplicativos de aplicativos de área de trabalho do servidor 2008 R2 \[ \| UWP\]<br/>                           |
+| Cabeçalho<br/>                   | <dl> <dt>WebServices. h</dt> </dl> |
 
 
 

@@ -1,9 +1,9 @@
 ---
-title: Mensagem de TBM_GETTICPOS (commctrl. h)
-description: Recupera a posição física atual de uma marca de escala em um TrackBar.
+title: TBM_GETTICPOS mensagem (Commctrl.h)
+description: Recupera a posição física atual de uma marca de escala em uma barra de faixa.
 ms.assetid: a4b0ec32-ef4e-4607-ade1-5e2be02bebe4
 keywords:
-- Controles de TBM_GETTICPOS de mensagens do Windows
+- TBM_GETTICPOS controles de Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5bb1346f63e9bb10b919c678373e0e8df0724861
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 56d191034fc1551d4ffc1840498e352e2f3cd82985f1bbc5a7ae8d5350a41fb1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105750300"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120046336"
 ---
-# <a name="tbm_getticpos-message"></a>\_Mensagem tbm GETTICPOS
+# <a name="tbm_getticpos-message"></a>Mensagem \_ GETTICPOS do TBM
 
-Recupera a posição física atual de uma marca de escala em um TrackBar.
+Recupera a posição física atual de uma marca de escala em uma barra de faixa.
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -32,7 +32,7 @@ Recupera a posição física atual de uma marca de escala em um TrackBar.
 *wParam* 
 </dt> <dd>
 
-Índice com base em zero que identifica uma marca de escala. As posições da primeira e da última marca de escala não estão diretamente disponíveis por esta mensagem.
+Índice baseado em zero que identifica uma marca de escala. As posições da primeira e da última marca de escala não estão diretamente disponíveis por meio dessa mensagem.
 
 </dd> <dt>
 
@@ -43,15 +43,15 @@ Deve ser zero.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna a distância, em coordenadas do cliente, do lado esquerdo ou superior da área do cliente do TrackBar para a marca de escala especificada. O valor de retorno é a coordenada x da marca de escala para uma TrackBar horizontal ou a coordenada y para um TrackBar vertical. Se *wParam* não for um índice válido, o valor de retorno será-1.
+Retorna a distância, nas coordenadas do cliente, da esquerda ou superior da área de cliente da barra de faixas para a marca de escala especificada. O valor de retorno é a coordenada x da marca de escala para uma barra de faixa horizontal ou a coordenada y para uma barra de faixa vertical. Se *wParam* não for um índice válido, o valor de retorno será -1.
 
 ## <a name="remarks"></a>Comentários
 
-Como a primeira e a última marca de escala não estão disponíveis por essa mensagem, os índices válidos são deslocados da posição de tique na TrackBar. Se a diferença entre [**tbm \_ GETRANGEMIN**](tbm-getrangemin.md) e [**tbm \_ GETRANGEMAX**](tbm-getrangemax.md) for menor que dois, não haverá nenhum índice válido e essa mensagem falhará.
+Como a primeira e a última marca de escala não estão disponíveis por meio dessa mensagem, os índices válidos são deslocamentos de sua posição de escala na barra de faixa. Se a diferença entre [**TBM \_ GETRANGEMIN**](tbm-getrangemin.md) e [**TBM \_ GETRANGEMAX**](tbm-getrangemax.md) for menor que dois, não haverá nenhum índice válido e essa mensagem falhará.
 
-O seguinte ilustra a relação entre os tiques em um TrackBar, os tiques disponíveis por essa mensagem e seus índices com base em zero.
+O exemplo a seguir ilustra a relação entre os tiques em uma barra de faixa, os tiques disponíveis por meio dessa mensagem e seus índices baseados em zero.
 
 ``` syntax
 0 1 2 3 4 5 6 7 8 9    // Tick positions seen on the trackbar.
@@ -65,9 +65,9 @@ O seguinte ilustra a relação entre os tiques em um TrackBar, os tiques dispon�
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

@@ -1,9 +1,9 @@
 ---
-title: SLIDER. Max
-description: O atributo Max especifica ou recupera o valor máximo do intervalo definido pelo controle deslizante.
+title: SLIDER.max
+description: O atributo max especifica ou recupera o valor máximo do intervalo definido pelo controle deslizante.
 ms.assetid: c38e7868-d144-4e40-871a-e70181a6dfb5
 keywords:
-- Controle deslizante. Max do Windows Media Player
+- CONTROLE DESLIZANTE.max Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 67482943e33a553589e5a16d7ce1e2264022cdf5
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5bff22d623729cec14afdfd44232217a748c4788e679ba3dd2b194b7197da901
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105754899"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118995176"
 ---
-# <a name="slidermax"></a>SLIDER. Max
+# <a name="slidermax"></a>SLIDER.max
 
-O atributo **Max** especifica ou recupera o valor máximo do intervalo definido pelo controle deslizante.
+O **atributo** max especifica ou recupera o valor máximo do intervalo definido pelo controle deslizante.
 
 ``` syntax
         elementID.max
@@ -29,13 +29,13 @@ O atributo **Max** especifica ou recupera o valor máximo do intervalo definido 
 
 ## <a name="possible-values"></a>Valores possíveis
 
-Esse atributo é um **número** de leitura/gravação (**float**) com um valor padrão de 100.
+Esse atributo é um  número de leitura/gravação (**float**) com um valor padrão de 100.
 
 ## <a name="remarks"></a>Comentários
 
-O valor especificado para **Max** deve ser maior que aquele para **min**.
+O valor especificado para **max** deve ser maior que o valor de **mín.**
 
-Consulte o **CUSTOMSLIDER**. atributo [positionImage](customslider-positionimage.md) para um exemplo que ilustra como os atributos do elemento **Slider** são usados.
+Consulte **o DELIDER.** [atributo positionImage](customslider-positionimage.md) para um exemplo que ilustra como os atributos do **elemento SLIDER** são usados.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -43,7 +43,7 @@ Consulte o **CUSTOMSLIDER**. atributo [positionImage](customslider-positionimage
 
 | Requisito | Valor |
 |--------------------|------------------------------------------------------|
-| Versão<br/> | Windows Media Player versão 7,0 ou posterior<br/> |
+| Versão<br/> | Windows Media Player versão 7.0 ou posterior<br/> |
 
 
 
@@ -54,10 +54,10 @@ Consulte o **CUSTOMSLIDER**. atributo [positionImage](customslider-positionimage
 [**Elemento SLIDER**](slider-element.md)
 </dt> <dt>
 
-[**SLIDER. min**](slider-min.md)
+[**SLIDER.min**](slider-min.md)
 </dt> <dt>
 
-[**Controle deslizante. valor**](slider-value.md)
+[**SLIDER.value**](slider-value.md)
 </dt> </dl>
 
  

@@ -1,5 +1,5 @@
 ---
-title: Enumerações Direct2D
+title: enumerações de Direct2D
 description: Direct2D define as enumerações a seguir.
 ms.assetid: 1491f241-5b67-4883-9ee9-d934a3a66e73
 keywords:
@@ -7,14 +7,14 @@ keywords:
 ms.topic: article
 ms.date: 01/31/2019
 ms.custom: seodec18
-ms.openlocfilehash: 317233bc170cfb3064d1c076ed1031a577c0186a
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 5ee52a02341d992be7bb930caf0f7d69682ce1bef9dd4e8a3cec5aec3393145e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103917661"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120108846"
 ---
-# <a name="direct2d-enumerations"></a>Enumerações Direct2D
+# <a name="direct2d-enumerations"></a>enumerações de Direct2D
 
 Direct2D define as enumerações a seguir.
 
@@ -65,7 +65,7 @@ Direct2D define as enumerações a seguir.
 |[**D2D1_COLOR_INTERPOLATION_MODE**](/windows/desktop/api/d2d1_1/ne-d2d1_1-d2d1_color_interpolation_mode). Define como interpolar entre cores.|
 |[**D2D1_COMBINE_MODE**](/windows/desktop/api/d2d1/ne-d2d1-d2d1_combine_mode). Especifica os métodos diferentes pelos quais duas geometrias podem ser combinadas.|
 |[**D2D1_COMPATIBLE_RENDER_TARGET_OPTIONS**](/windows/desktop/api/d2d1/ne-d2d1-d2d1_compatible_render_target_options). Especifica recursos adicionais com suporte por um destino de renderização compatível quando ele é criado. Essa enumeração permite uma combinação de bit a bit de seus valores de membro.|
-|[**D2D1_COMPOSITE_MODE**](/windows/desktop/api/D2d1_1/ne-d2d1_1-d2d1_composite_mode). Usado para especificar o modo de mesclagem para todas as operações de mesclagem [Direct2D](direct2d-portal.md) .|
+|[**D2D1_COMPOSITE_MODE**](/windows/desktop/api/D2d1_1/ne-d2d1_1-d2d1_composite_mode). usado para especificar o modo de mesclagem para todas as [Direct2D](direct2d-portal.md) operações de mesclagem.|
 |[**D2D1_COMPOSITE_PROP**](/windows/desktop/api/d2d1effects/ne-d2d1effects-d2d1_composite_prop). Identificadores para propriedades do [efeito composto](composite.md).|
 |[**D2D1_CONTRAST_PROP**](/windows/desktop/api/d2d1effects_2/ne-d2d1effects_2-d2d1_contrast_prop). Identificadores para propriedades do [efeito de contraste](contrast-effect.md).|
 |[**D2D1_CONVOLVEMATRIX_PROP**](/windows/desktop/api/d2d1effects/ne-d2d1effects-d2d1_convolvematrix_prop). Identificadores para propriedades do [efeito de matriz convolve](convolve-matrix.md).|
@@ -73,7 +73,7 @@ Direct2D define as enumerações a seguir.
 |[**D2D1_CROP_PROP**](/windows/desktop/api/d2d1effects/ne-d2d1effects-d2d1_crop_prop). Identificadores para propriedades do [efeito de corte](crop.md).|
 |[**D2D1_DASH_STYLE**](/windows/desktop/api/d2d1/ne-d2d1-d2d1_dash_style). Descreve a sequência de traços e intervalos em um traço.|
 |[**D2D1_DC_INITIALIZE_MODE**](/windows/desktop/api/d2d1/ne-d2d1-d2d1_dc_initialize_mode). Especifica como um contexto de dispositivo é inicializado para renderização GDI quando é recuperado do destino de renderização.|
-|[**D2D1_DEBUG_LEVEL**](/windows/desktop/api/d2d1/ne-d2d1-d2d1_debug_level). Indica o tipo de informações fornecidas pela [camada de depuração Direct2D](direct2ddebuglayer-overview.md).|
+|[**D2D1_DEBUG_LEVEL**](/windows/desktop/api/d2d1/ne-d2d1-d2d1_debug_level). indica o tipo de informações fornecidas pela [camada de depuração Direct2D](direct2ddebuglayer-overview.md).|
 |[**D2D1_DEVICE_CONTEXT_OPTIONS**](/windows/desktop/api/D2d1_1/ne-d2d1_1-d2d1_device_context_options). Isso especifica as opções que se aplicam ao contexto do dispositivo durante seu tempo de vida.|
 |[**D2D1_DIRECTIONALBLUR_OPTIMIZATION**](/windows/desktop/api/d2d1effects/ne-d2d1effects-d2d1_directionalblur_optimization). Especifica o modo de otimização para o [efeito de desfoque direcional](directional-blur.md).|
 |[**D2D1_DIRECTIONALBLUR_PROP**](/windows/desktop/api/d2d1effects/ne-d2d1effects-d2d1_directionalblur_prop). Identificadores para propriedades do [efeito de desfoque direcional](directional-blur.md).|
@@ -91,7 +91,7 @@ Direct2D define as enumerações a seguir.
 |[**D2D1_EMBOSS_PROP**](/windows/desktop/api/d2d1effects_2/ne-d2d1effects_2-d2d1_emboss_prop). Identificadores para propriedades do [efeito de entalhe](emboss-effect.md).|
 |[**D2D1_EXPOSURE_PROP**](/windows/desktop/api/d2d1effects_2/ne-d2d1effects_2-d2d1_exposure_prop). Identificadores para propriedades do [efeito de exposição](exposure-effect.md).|
 |[**D2D1_EXTEND_MODE**](/windows/desktop/api/d2d1/ne-d2d1-d2d1_extend_mode). Especifica como um pincel pinta áreas fora de sua área de conteúdo normal.|
-|[**D2D1_FACTORY_TYPE**](/windows/desktop/api/d2d1/ne-d2d1-d2d1_factory_type). Especifica se o [Direct2D](direct2d-portal.md) fornece sincronização para um [**ID2D1Factory**](/windows/desktop/api/d2d1/nn-d2d1-id2d1factory) e os recursos que ele cria, para que eles possam ser acessados com segurança de vários threads.|
+|[**D2D1_FACTORY_TYPE**](/windows/desktop/api/d2d1/ne-d2d1-d2d1_factory_type). especifica se [Direct2D](direct2d-portal.md) fornece sincronização para um [**ID2D1Factory**](/windows/desktop/api/d2d1/nn-d2d1-id2d1factory) e os recursos que ele cria, para que eles possam ser acessados com segurança de vários threads.|
 |[**D2D1_FEATURE**](/windows/desktop/api/D2d1effectauthor/ne-d2d1effectauthor-d2d1_feature). Define os recursos do dispositivo Direct3D subjacente que pode ser consultado usando [**ID2D1EffectContext:: CheckFeatureSupport**](/windows/win32/api/d2d1effectauthor/nf-d2d1effectauthor-id2d1effectcontext-checkfeaturesupport).|
 |[**D2D1_FEATURE_LEVEL**](/windows/desktop/api/d2d1/ne-d2d1-d2d1_feature_level). Descreve o suporte mínimo do DirectX necessário para a renderização de hardware por um destino de renderização.|
 |[**D2D1_FIGURE_BEGIN**](/windows/desktop/api/d2d1/ne-d2d1-d2d1_figure_begin). Indica se uma figura [**ID2D1SimplifiedGeometrySink**](/windows/win32/api/d2d1/nn-d2d1-id2d1simplifiedgeometrysink) específica está preenchida ou vazia.|
@@ -128,7 +128,7 @@ Direct2D define as enumerações a seguir.
 |[**D2D1_MORPHOLOGY_PROP**](/windows/desktop/api/d2d1effects/ne-d2d1effects-d2d1_morphology_prop). Identificadores para propriedades do [efeito de morphology](morphology.md).|
 |[**D2D1_MAP_OPTIONS**](/windows/desktop/api/D2d1_1/ne-d2d1_1-d2d1_map_options). Especifica como a memória a ser mapeada do [**ID2D1Bitmap1**](/windows/win32/api/d2d1_1/nn-d2d1_1-id2d1bitmap1) correspondente deve ser tratada.|
 |[**D2D1_OPACITYMETADATA_PROP**](/windows/desktop/api/d2d1effects/ne-d2d1effects-d2d1_opacitymetadata_prop). Identificadores para propriedades do [efeito de metadados de opacidade](opacity-metadata-effect.md).|
-|[**D2D1_OPACITY_MASK_CONTENT**](/windows/desktop/api/d2d1/ne-d2d1-d2d1_opacity_mask_content). Descreve se uma máscara de opacidade contém gráficos ou texto. O [Direct2D](direct2d-portal.md) usa essas informações para determinar qual espaço de gama usar ao misturar a máscara de opacidade.|
+|[**D2D1_OPACITY_MASK_CONTENT**](/windows/desktop/api/d2d1/ne-d2d1-d2d1_opacity_mask_content). Descreve se uma máscara de opacidade contém gráficos ou texto. [Direct2D](direct2d-portal.md) usa essas informações para determinar qual espaço gama usar ao misturar a máscara de opacidade.|
 |[**D2D1_ORIENTATION**](/windows/desktop/api/d2d1_3/ne-d2d1_3-d2d1_orientation). Especifica a inversão e rotação em que uma imagem é exibida.|
 |[**D2D1_PATCH_EDGE_MODE**](/windows/desktop/api/d2d1_3/ne-d2d1_3-d2d1_patch_edge_mode). Especifica como renderizar bordas de malha gradiente.|
 |[**D2D1_PATH_SEGMENT**](/windows/desktop/api/d2d1/ne-d2d1-d2d1_path_segment). Indica se um segmento deve ser traçado e se a junção entre esse segmento e o anterior deve ser suave. Essa enumeração permite uma combinação de bit a bit de seus valores de membro.|
@@ -139,12 +139,12 @@ Direct2D define as enumerações a seguir.
 |[**D2D1_POINTSPECULAR_SCALE_MODE**](/windows/desktop/api/d2d1effects/ne-d2d1effects-d2d1_pointspecular_scale_mode). O modo de interpolação é usado pelo [efeito de iluminação especular ponto](point-specular.md) para dimensionar a imagem para o comprimento da unidade de kernel correspondente. Há seis modos de escala, que variam de qualidade e velocidade.|
 |[**D2D1_POSTERIZE_PROP**](/windows/desktop/api/d2d1effects_2/ne-d2d1effects_2-d2d1_posterize_prop). Identificadores para propriedades do [efeito de Posterização](posterize-effect.md).|
 |[**D2D1_PRESENT_OPTIONS**](/windows/desktop/api/d2d1/ne-d2d1-d2d1_present_options). Descreve como um destino de renderização se comporta quando apresenta seu conteúdo. Essa enumeração permite uma combinação de bit a bit de seus valores de membro.|
-|[**D2D1_PRIMITIVE_BLEND**](/windows/win32/api/d2d1_1/ne-d2d1_1-d2d1_primitive_blend). Usado para especificar o modo de mesclagem geométrica para todos os primitivos [Direct2D](direct2d-portal.md) .|
+|[**D2D1_PRIMITIVE_BLEND**](/windows/win32/api/d2d1_1/ne-d2d1_1-d2d1_primitive_blend). usado para especificar o modo de mesclagem geométrica para todos os primitivos de [Direct2D](direct2d-portal.md) .|
 |[**D2D1_PRINT_FONT_SUBSET_MODE**](/windows/desktop/api/d2d1_1/ne-d2d1_1-d2d1_print_font_subset_mode). Define quando os recursos de fonte devem ser subconjuntos durante a impressão.|
-|[**D2D1_PROPERTY_TYPE**](/windows/desktop/api/D2d1_1/ne-d2d1_1-d2d1_property_type). Especifica os tipos de propriedades com suporte pela interface de propriedade [Direct2D](direct2d-portal.md) .|
+|[**D2D1_PROPERTY_TYPE**](/windows/desktop/api/D2d1_1/ne-d2d1_1-d2d1_property_type). especifica os tipos de propriedades com suporte pela interface de propriedade [Direct2D](direct2d-portal.md) .|
 |[**D2D1_PROPERTY**](/windows/desktop/api/D2d1_1/ne-d2d1_1-d2d1_property). Especifica os índices das propriedades do sistema presentes na interface [**ID2D1Properties**](/windows/win32/api/d2d1_1/nn-d2d1_1-id2d1properties) para um [**ID2D1Effect**](/windows/win32/api/d2d1_1/nn-d2d1_1-id2d1effect).|
-|[**D2D1_RENDERING_PRIORITY**](/windows/desktop/api/D2D1_2/ne-d2d1_2-d2d1_rendering_priority). A prioridade de renderização afeta a extensão para a qual o [Direct2D](direct2d-portal.md) limita sua carga de trabalho de renderização.|
-|[**D2D1_RENDER_TARGET_TYPE**](/windows/desktop/api/d2d1/ne-d2d1-d2d1_render_target_type). Descreve se um destino de renderização usa renderização de hardware ou de software ou se [Direct2D](direct2d-portal.md) deve selecionar o modo de renderização.|
+|[**D2D1_RENDERING_PRIORITY**](/windows/desktop/api/D2D1_2/ne-d2d1_2-d2d1_rendering_priority). a prioridade de renderização afeta a extensão para a qual [Direct2D](direct2d-portal.md) limita sua carga de trabalho de renderização.|
+|[**D2D1_RENDER_TARGET_TYPE**](/windows/desktop/api/d2d1/ne-d2d1-d2d1_render_target_type). descreve se um destino de renderização usa renderização de hardware ou de software, ou se [Direct2D](direct2d-portal.md) deve selecionar o modo de renderização.|
 |[**D2D1_RENDER_TARGET_USAGE**](/windows/desktop/api/d2d1/ne-d2d1-d2d1_render_target_usage). Descreve como um destino de renderização é remoto e se deve ser compatível com GDI. Essa enumeração permite uma combinação de bit a bit de seus valores de membro.|
 |[**D2D1_RESOURCE_TYPE**](/previous-versions/windows/desktop/legacy/hh447014(v=vs.85)). Especifica quais tipos de recursos devem ser liberados quando [**ID2D1Device:: ClearResources**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1device-clearresources) for invocado.|
 |[**D2D1_RGBTOHUE_OUTPUT_COLOR_SPACE**](/windows/desktop/api/d2d1effects_2/ne-d2d1effects_2-d2d1_rgbtohue_output_color_space). Valores para a propriedade [**D2D1_RGBTOHUE_PROP_OUTPUT_COLOR_SPACE**](/windows/desktop/api/d2d1effects_2/ne-d2d1effects_2-d2d1_rgbtohue_prop) do [efeito de RGB para matiz](rgb-to-hue-effect.md).|
@@ -159,40 +159,40 @@ Direct2D define as enumerações a seguir.
 |[**D2D1_SPOTDIFFUSE_PROP**](/windows/desktop/api/d2d1effects/ne-d2d1effects-d2d1_spotdiffuse_prop). Identificadores para propriedades do [efeito de iluminação difusa de spot](diffuse-lighting.md).|
 |[**D2D1_SPOTDIFFUSE_SCALE_MODE**](/windows/desktop/api/d2d1effects/ne-d2d1effects-d2d1_spotdiffuse_scale_mode). O modo de interpolação que o [efeito de iluminação difusa de spot](diffuse-lighting.md) usa para dimensionar a imagem para o comprimento da unidade de kernel correspondente. Há seis modos de escala, que variam de qualidade e velocidade.|
 |[**D2D1_SPOTSPECULAR_PROP**](/windows/desktop/api/d2d1effects/ne-d2d1effects-d2d1_spotspecular_prop). Identificadores para propriedades do [efeito de iluminação especular de spot](specular-lighting.md).|
-|[**D2D1_SPOTSPECULAR_SCALE_MODE**](/windows/desktop/api/d2d1effects/ne-d2d1effects-d2d1_spotspecular_scale_mode). O modo de interpolação que o [efeito de iluminação especular de spot](specular-lighting.md) usa para dimensionar a imagem para o comprimento da unidade de kernel correspondente. Há seis modos de escala, que variam de qualidade e velocidade.|
-|[**D2D1_SPRITE_OPTIONS**](/windows/desktop/api/d2d1_3/ne-d2d1_3-d2d1_sprite_options). Especifica aspectos adicionais de como um lote Sprite deve ser desenhado, como parte de uma chamada para [**ID2D1DeviceContext3::D rawspritebatch**](/windows/desktop/api/d2d1_3/nf-d2d1_3-id2d1devicecontext3-drawspritebatch(id2d1spritebatch_uint32_uint32_id2d1bitmap_d2d1_bitmap_interpolation_mode_d2d1_sprite_options)).|
-|[**D2D1_STRAIGHTEN_PROP**](/windows/desktop/api/d2d1effects_2/ne-d2d1effects_2-d2d1_straighten_prop). Identificadores para propriedades do [efeito de retificação](straighten-effect.md).|
-|[**D2D1_STRAIGHTEN_SCALE_MODE**](/windows/desktop/api/d2d1effects_2/ne-d2d1effects_2-d2d1_straighten_scale_mode). Valores para a propriedade [**D2D1_STRAIGHTEN_PROP_SCALE_MODE**](/windows/desktop/api/d2d1effects_2/ne-d2d1effects_2-d2d1_straighten_prop) do [efeito de retificação](straighten-effect.md).|
-|[**D2D1_STROKE_TRANSFORM_TYPE**](/windows/desktop/api/D2d1_1/ne-d2d1_1-d2d1_stroke_transform_type). Define como a transformação do mundo, os pontos por polegada (DPI) e a largura do traço afetam a forma da caneta usada para traçar um primitivo.|
-|[**D2D1_SUBPROPERTY**](/windows/desktop/api/D2d1_1/ne-d2d1_1-d2d1_subproperty). Especifica os índices das subpropriedades do sistema que podem estar presentes em qualquer propriedade.|
-|[**D2D1_SVG_ASPECT_ALIGN**](/windows/desktop/api/d2d1svg/ne-d2d1svg-d2d1_svg_aspect_align). A parte de alinhamento do atributo SVG preserveAspectRatio.|
+|[**D2D1_SPOTSPECULAR_SCALE_MODE**](/windows/desktop/api/d2d1effects/ne-d2d1effects-d2d1_spotspecular_scale_mode). O modo de interpolação que o [efeito de iluminação especular de spot](specular-lighting.md) usa para dimensionar a imagem para o comprimento da unidade de kernel correspondente. Há seis modos de escala, que variam em qualidade e velocidade.|
+|[**D2D1_SPRITE_OPTIONS**](/windows/desktop/api/d2d1_3/ne-d2d1_3-d2d1_sprite_options). Especifica aspectos adicionais de como um lote de sprite deve ser desenhado, como parte de uma chamada para [**ID2D1DeviceContext3::D rawSpriteBatch**](/windows/desktop/api/d2d1_3/nf-d2d1_3-id2d1devicecontext3-drawspritebatch(id2d1spritebatch_uint32_uint32_id2d1bitmap_d2d1_bitmap_interpolation_mode_d2d1_sprite_options)).|
+|[**D2D1_STRAIGHTEN_PROP**](/windows/desktop/api/d2d1effects_2/ne-d2d1effects_2-d2d1_straighten_prop). Identificadores para propriedades do [efeito de ressarção](straighten-effect.md).|
+|[**D2D1_STRAIGHTEN_SCALE_MODE**](/windows/desktop/api/d2d1effects_2/ne-d2d1effects_2-d2d1_straighten_scale_mode). Valores para a [**D2D1_STRAIGHTEN_PROP_SCALE_MODE**](/windows/desktop/api/d2d1effects_2/ne-d2d1effects_2-d2d1_straighten_prop) do [efeito de responsabilidade](straighten-effect.md).|
+|[**D2D1_STROKE_TRANSFORM_TYPE**](/windows/desktop/api/D2d1_1/ne-d2d1_1-d2d1_stroke_transform_type). Define como o mundo se transforma, os pontos por polegada (dpi) e a largura do traço afetam a forma da caneta usada para traço de um primitivo.|
+|[**D2D1_SUBPROPERTY**](/windows/desktop/api/D2d1_1/ne-d2d1_1-d2d1_subproperty). Especifica os índices das sub-propriedades do sistema que podem estar presentes em qualquer propriedade.|
+|[**D2D1_SVG_ASPECT_ALIGN**](/windows/desktop/api/d2d1svg/ne-d2d1svg-d2d1_svg_aspect_align). A parte de alinhamento do atributo preserveAspectRatio do SVG.|
 |[**D2D1_SVG_ASPECT_SCALING**](/windows/desktop/api/d2d1svg/ne-d2d1svg-d2d1_svg_aspect_scaling). A parte meetOrSlice do atributo preserveAspectRatio do SVG.|
-|[**D2D1_SVG_ATTRIBUTE_POD_TYPE**](/windows/desktop/api/d2d1svg/ne-d2d1svg-d2d1_svg_attribute_pod_type). Define o tipo de atributo de POD SVG a ser definido ou obtido.|
-|[**D2D1_SVG_ATTRIBUTE_STRING_TYPE**](/windows/desktop/api/d2d1svg/ne-d2d1svg-d2d1_svg_attribute_string_type). Define o tipo de atributo de cadeia de caracteres SVG a ser definido ou obtido.|
+|[**D2D1_SVG_ATTRIBUTE_POD_TYPE**](/windows/desktop/api/d2d1svg/ne-d2d1svg-d2d1_svg_attribute_pod_type). Define o tipo de atributo POD SVG a ser definido ou get.|
+|[**D2D1_SVG_ATTRIBUTE_STRING_TYPE**](/windows/desktop/api/d2d1svg/ne-d2d1svg-d2d1_svg_attribute_string_type). Define o tipo de atributo de cadeia de caracteres SVG a ser definido ou get.|
 |[**D2D1_SVG_DISPLAY**](/windows/desktop/api/d2d1svg/ne-d2d1svg-d2d1_svg_display). Especifica um valor para a propriedade de exibição SVG.|
 |[**D2D1_SVG_LENGTH_UNITS**](/windows/desktop/api/d2d1svg/ne-d2d1svg-d2d1_svg_length_units). Especifica as unidades para um comprimento SVG.|
-|[**D2D1_SVG_LINE_CAP**](/windows/desktop/api/d2d1svg/ne-d2d1svg-d2d1_svg_line_cap). Especifica um valor para a propriedade de Stroke-LineCap SVG.|
-|[**D2D1_SVG_LINE_JOIN**](/windows/desktop/api/d2d1svg/ne-d2d1svg-d2d1_svg_line_join). Especifica um valor para a propriedade de Stroke-LineJoin SVG.|
+|[**D2D1_SVG_LINE_CAP**](/windows/desktop/api/d2d1svg/ne-d2d1svg-d2d1_svg_line_cap). Especifica um valor para a propriedade stroke-linecap SVG.|
+|[**D2D1_SVG_LINE_JOIN**](/windows/desktop/api/d2d1svg/ne-d2d1svg-d2d1_svg_line_join). Especifica um valor para a propriedade stroke-linejoin do SVG.|
 |[**D2D1_SVG_OVERFLOW**](/windows/desktop/api/d2d1svg/ne-d2d1svg-d2d1_svg_overflow). Especifica um valor para a propriedade de estouro SVG.|
-|[**D2D1_SVG_PAINT_TYPE**](/windows/desktop/api/d2d1svg/ne-d2d1svg-d2d1_svg_paint_type). Especifica o tipo de pintura para um preenchimento ou traçado SVG.|
-|[**D2D1_SVG_PATH_COMMAND**](/windows/desktop/api/d2d1svg/ne-d2d1svg-d2d1_svg_path_command). Representa um comando de caminho. Cada comando pode referenciar floats dos dados do segmento. Comandos que terminam em _ABSOLUTE interpretam dados como coordenadas absolutas. Comandos que terminam em _RELATIVE interpretam dados como sendo relativos ao ponto anterior.|
-|[**D2D1_SVG_UNIT_TYPE**](/windows/desktop/api/d2d1svg/ne-d2d1svg-d2d1_svg_unit_type). Define o sistema de coordenadas usado para elementos clipPath ou gradiente SVG.|
+|[**D2D1_SVG_PAINT_TYPE**](/windows/desktop/api/d2d1svg/ne-d2d1svg-d2d1_svg_paint_type). Especifica o tipo de pintura para um preenchimento ou traço SVG.|
+|[**D2D1_SVG_PATH_COMMAND**](/windows/desktop/api/d2d1svg/ne-d2d1svg-d2d1_svg_path_command). Representa um comando de caminho. Cada comando pode fazer referência a floats dos dados do segmento. Os comandos que terminam _ABSOLUTE interpretam dados como coordenada absoluta. Comandos que terminam _RELATIVE interpretam os dados como sendo relativos ao ponto anterior.|
+|[**D2D1_SVG_UNIT_TYPE**](/windows/desktop/api/d2d1svg/ne-d2d1svg-d2d1_svg_unit_type). Define o sistema de coordenadas usado para elementos de gradiente SVG ou clipPath.|
 |[**D2D1_SVG_VISIBILITY**](/windows/desktop/api/d2d1svg/ne-d2d1svg-d2d1_svg_visibility). Especifica um valor para a propriedade de visibilidade SVG.|
 |[**D2D1_SWEEP_DIRECTION**](/windows/desktop/api/d2d1/ne-d2d1-d2d1_sweep_direction). Define a direção em que um arco elíptico é desenhado.|
-|[**D2D1_TABLETRANSFER_PROP**](/windows/desktop/api/d2d1effects/ne-d2d1effects-d2d1_tabletransfer_prop). Identificadores para propriedades do [efeito de transferência de tabela](table-transfer.md).|
-|[**D2D1_TEMPERATUREANDTINT_PROP**](/windows/desktop/api/d2d1effects_2/ne-d2d1effects_2-d2d1_temperatureandtint_prop). Identificadores para propriedades do [efeito de temperatura e de tonalidade](temperature-and-tint-effect.md).|
-|[**D2D1_TEXT_ANTIALIAS_MODE**](/windows/desktop/api/d2d1/ne-d2d1-d2d1_text_antialias_mode). Descreve o modo de suavização usado para desenhar texto.|
-|[**D2D1_THREADING_MODE**](/windows/desktop/api/d2d1_1/ne-d2d1_1-d2d1_threading_mode). Especifica o modo de Threading usado ao criar simultaneamente o dispositivo, a fábrica e o contexto do dispositivo.|
-|[**D2D1_TILE_PROP**](/windows/desktop/api/d2d1effects/ne-d2d1effects-d2d1_tile_prop). Identificadores para propriedades do [efeito de bloco](tile.md).|
+|[**D2D1_TABLETRANSFER_PROP**](/windows/desktop/api/d2d1effects/ne-d2d1effects-d2d1_tabletransfer_prop). Identificadores para propriedades do efeito [de transferência de tabela](table-transfer.md).|
+|[**D2D1_TEMPERATUREANDTINT_PROP**](/windows/desktop/api/d2d1effects_2/ne-d2d1effects_2-d2d1_temperatureandtint_prop). Identificadores para propriedades da [temperatura e do efeito de tonalidade](temperature-and-tint-effect.md).|
+|[**D2D1_TEXT_ANTIALIAS_MODE**](/windows/desktop/api/d2d1/ne-d2d1-d2d1_text_antialias_mode). Descreve o modo de aninhamento usado para desenhar texto.|
+|[**D2D1_THREADING_MODE**](/windows/desktop/api/d2d1_1/ne-d2d1_1-d2d1_threading_mode). Especifica o modo de threading usado ao criar simultaneamente o contexto do dispositivo, da fábrica e do dispositivo.|
+|[**D2D1_TILE_PROP**](/windows/desktop/api/d2d1effects/ne-d2d1effects-d2d1_tile_prop). Identificadores para as propriedades do [efeito do azul.](tile.md)|
 |[**D2D1_TRANSFORMED_IMAGE_SOURCE_OPTIONS**](/windows/desktop/api/d2d1_3/ne-d2d1_3-d2d1_transformed_image_source_options). Sinalizadores de opção para fontes de imagem transformadas.|
-|[**D2D1_TURBULENCE_NOISE**](/windows/desktop/api/d2d1effects/ne-d2d1effects-d2d1_turbulence_noise). O modo de ruído turbulência para o [efeito de turbulência](turbulence.md). Indica se um bitmap deve ser gerado com base no ruído de fractal ou na função turbulência.|
-|[**D2D1_TURBULENCE_PROP**](/windows/desktop/api/d2d1effects/ne-d2d1effects-d2d1_turbulence_prop). Identificadores para propriedades do [efeito de turbulência](turbulence.md).|
-|[**D2D1_UNIT_MODE**](/windows/desktop/api/D2d1_1/ne-d2d1_1-d2d1_unit_mode). Especifica como as unidades em [Direct2D](direct2d-portal.md) serão interpretadas.|
-|[**D2D1_VERTEX_OPTIONS**](/windows/desktop/api/D2d1effectauthor/ne-d2d1effectauthor-d2d1_vertex_options). Descreve sinalizadores que influenciam como o renderizador interage com um sombreador de vértice personalizado.|
-|[**D2D1_VERTEX_USAGE**](/windows/desktop/api/D2d1effectauthor/ne-d2d1effectauthor-d2d1_vertex_usage). Indica se o buffer de vértices é alterado com frequência ou muitas vezes.|
-|[**D2D1_VIGNETTE_PROP**](/windows/desktop/api/d2d1effects_2/ne-d2d1effects_2-d2d1_vignette_prop). Identificadores para propriedades do [efeito de Vignette](vignette-effect.md).|
-|[**D2D1_WHITELEVELADJUSTMENT_PROP**](/windows/desktop/api/d2d1effects_2/ne-d2d1effects_2-d2d1_whiteleveladjustment_prop). Define constantes que identificam as propriedades de nível superior do [efeito de ajuste de nível branco](/windows/desktop/Direct2D/white-level-adjustment-effect).|
-|[**D2D1_WINDOW_STATE**](/windows/desktop/api/d2d1/ne-d2d1-d2d1_window_state). Descreve se uma janela é obstruído.|
-|[**D2D1_YCBCR_CHROMA_SUBSAMPLING**](/windows/desktop/api/d2d1effects_1/ne-d2d1effects_1-d2d1_ycbcr_chroma_subsampling). Especifica a subamostragem croma da imagem croma de entrada usada pelo [efeito YCbCr](ycbcr-effect.md).|
+|[**D2D1_TURBULENCE_NOISE**](/windows/desktop/api/d2d1effects/ne-d2d1effects-d2d1_turbulence_noise). O modo de ruído de ruído de [ruído para o efeito de ataque](turbulence.md). Indica se um bitmap deve ser gerado com base no Ruído Funcional ou na função Desalocar.|
+|[**D2D1_TURBULENCE_PROP**](/windows/desktop/api/d2d1effects/ne-d2d1effects-d2d1_turbulence_prop). Identificadores para propriedades do [efeito de ressarção](turbulence.md).|
+|[**D2D1_UNIT_MODE**](/windows/desktop/api/D2d1_1/ne-d2d1_1-d2d1_unit_mode). Especifica como as [unidades](direct2d-portal.md) Direct2D serão interpretadas.|
+|[**D2D1_VERTEX_OPTIONS**](/windows/desktop/api/D2d1effectauthor/ne-d2d1effectauthor-d2d1_vertex_options). Descreve sinalizadores que influenciam como o renderdor interage com um sombreador de vértice personalizado.|
+|[**D2D1_VERTEX_USAGE**](/windows/desktop/api/D2d1effectauthor/ne-d2d1effectauthor-d2d1_vertex_usage). Indica se o buffer de vértice muda com pouca frequência ou com frequência.|
+|[**D2D1_VIGNETTE_PROP**](/windows/desktop/api/d2d1effects_2/ne-d2d1effects_2-d2d1_vignette_prop). Identificadores para propriedades do [efeito vigette](vignette-effect.md).|
+|[**D2D1_WHITELEVELADJUSTMENT_PROP**](/windows/desktop/api/d2d1effects_2/ne-d2d1effects_2-d2d1_whiteleveladjustment_prop). Define constantes que identificam as propriedades de nível superior do efeito [de ajuste de nível branco](/windows/desktop/Direct2D/white-level-adjustment-effect).|
+|[**D2D1_WINDOW_STATE**](/windows/desktop/api/d2d1/ne-d2d1-d2d1_window_state). Descreve se uma janela está oclusa.|
+|[**D2D1_YCBCR_CHROMA_SUBSAMPLING**](/windows/desktop/api/d2d1effects_1/ne-d2d1effects_1-d2d1_ycbcr_chroma_subsampling). Especifica a subsamplagem chroma da imagem de chroma de entrada usada pelo [efeito YCbCr](ycbcr-effect.md).|
 |[**D2D1_YCBCR_INTERPOLATION_MODE**](/windows/desktop/api/d2d1effects_1/ne-d2d1effects_1-d2d1_ycbcr_interpolation_mode). Especifica o modo de interpolação para o [efeito YCbCr](ycbcr-effect.md).|
-|[**D2D1_YCBCR_PROP**](/windows/desktop/api/d2d1effects_1/ne-d2d1effects_1-d2d1_ycbcr_prop). Identificadores para propriedades do [efeito de YCbCr](ycbcr-effect.md).|
+|[**D2D1_YCBCR_PROP**](/windows/desktop/api/d2d1effects_1/ne-d2d1effects_1-d2d1_ycbcr_prop). Identificadores para propriedades do [efeito YCbCr](ycbcr-effect.md).|

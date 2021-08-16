@@ -21,12 +21,12 @@ keywords:
 - tipos de controle, janela
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 422742381cd501d295e4cb7e354ca07e10c13360
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: a70ae728ded97bb68f3984b6fba323710d3582e984610ad6dec248d8509ea97f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104292577"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118824571"
 ---
 # <a name="window-control-type"></a>Tipo de controle de janela
 
@@ -75,7 +75,7 @@ A tabela a seguir descreve um controle típico e a exibição de conteúdo da á
 
 
 
- 
+ 
 
 ## <a name="relevant-properties"></a>Propriedades relevantes
 
@@ -98,7 +98,7 @@ A tabela a seguir lista as propriedades de automação da interface do usuário 
 
 
 
- 
+ 
 
 ## <a name="required-control-patterns"></a>Padrões de controle necessários
 
@@ -109,12 +109,12 @@ A tabela a seguir lista os padrões de controle de automação da interface do u
 | Propriedade padrão de controle/padrão                        | Suporte/valor | Observações                                                                                                                                                                        |
 |---------------------------------------------------------|---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**IDockProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-idockprovider)           | Condicional   | O padrão de controle [Dock](uiauto-implementingdock.md) deve ter suporte se a janela puder ser encaixada.                                                                       |
-| [**ITransformProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-itransformprovider) | Obrigatório      | O padrão de controle [transformar](uiauto-implementingtransform.md) permite que a janela seja movida, redimensionada ou girada na tela. (Não se aplica a aplicativos da Windows Store.) |
+| [**ITransformProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-itransformprovider) | Obrigatório      | O padrão de controle [transformar](uiauto-implementingtransform.md) permite que a janela seja movida, redimensionada ou girada na tela. (não se aplica a aplicativos da Windows Store.) |
 | [**IWindowProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iwindowprovider)       | Obrigatório      | O padrão de controle [Window](uiauto-implementingwindow.md) permite operações específicas para a janela.                                                                      |
 
 
 
- 
+ 
 
 ## <a name="required-events"></a>Eventos necessários
 
@@ -144,7 +144,7 @@ A tabela a seguir lista os eventos de automação da interface do usuário aos q
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -159,9 +159,9 @@ A tabela a seguir lista os eventos de automação da interface do usuário aos q
 [Visão geral de automação da interface do usuário](uiauto-uiautomationoverview.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

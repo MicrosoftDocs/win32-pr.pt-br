@@ -1,6 +1,6 @@
 ---
-title: Tipos de dados de log de eventos do Windows (WinEvt. h)
-description: O log de eventos do Windows define os seguintes tipos de dados
+title: Windows Tipos de dados de log de eventos (WinEvt. h)
+description: Windows O log de eventos define os seguintes tipos de dados
 ms.assetid: 1aad25fe-7503-4ef8-a40a-63457bd9a007
 keywords:
 - EVT_HANDLE
@@ -8,16 +8,16 @@ keywords:
 - EVT_OBJECT_ARRAY_PROPERTY_HANDLE
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 71a93794d8cc3a254fe182c439698324dccdfc20
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5c309dd52471bd501aa2668220d39882ab8de7e1c23a646084364659df4ae4fe
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103644621"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119619986"
 ---
-# <a name="windows-event-log-data-types"></a>Tipos de dados de log de eventos do Windows
+# <a name="windows-event-log-data-types"></a>Windows Tipos de dados de log de eventos
 
-O log de eventos do Windows define os seguintes tipos de dados:
+Windows O log de eventos define os seguintes tipos de dados:
 
 
 ```C++
@@ -33,21 +33,21 @@ typedef HANDLE EVT_OBJECT_ARRAY_PROPERTY_HANDLE;
 **\_alça EVT**
 </dt> <dd>
 
-Um identificador para um objeto de log de eventos do Windows.
+um identificador para um objeto de Log de eventos Windows.
 
 </dd> <dt>
 
 **identificador de PEVT \_**
 </dt> <dd>
 
-Um ponteiro para o identificador de um objeto de log de eventos do Windows.
+um ponteiro para o identificador de um objeto de Log de eventos Windows.
 
 </dd> <dt>
 
 **\_identificador da \_ propriedade da matriz de objetos EVT \_ \_**
 </dt> <dd>
 
-Um identificador para uma matriz de objetos de log de eventos do Windows.
+um identificador para uma matriz de Windows objetos de Log de eventos.
 
 </dd> </dl>
 
@@ -57,9 +57,9 @@ Um identificador para uma matriz de objetos de log de eventos do Windows.
 
 | Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                      |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                |
-| parâmetro<br/>                   | <dl> <dt>WinEvt. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                      |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                |
+| Cabeçalho<br/>                   | <dl> <dt>WinEvt. h</dt> </dl> |
 
 
 

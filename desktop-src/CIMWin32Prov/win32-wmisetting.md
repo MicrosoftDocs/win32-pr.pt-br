@@ -1,8 +1,8 @@
 ---
-description: A \_ classe WMI singleton do Win32 WMISetting contém os parâmetros operacionais para o serviço WMI. Essa classe pode ter apenas uma instância, que sempre existe para cada sistema Windows e não pode ser excluída. Não é possível criar instâncias adicionais.
+description: A classe \_ WMI singleton WMISetting do Win32 contém os parâmetros operacionais para o serviço WMI. Essa classe só pode ter uma instância, que sempre existe para cada Windows sistema e não pode ser excluída. Instâncias adicionais não podem ser criadas.
 ms.assetid: d33cd4f3-969b-46ce-baff-466f1a464906
 ms.tgt_platform: multiple
-title: Classe Win32_WMISetting
+title: Win32_WMISetting classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -41,18 +41,18 @@ api_type:
 - DllExport
 api_location:
 - Wbemcore.dll
-ms.openlocfilehash: 8f94524d18074e3a35c7bcad09e9b9fba80e8470
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 39c976a6a8b4c25fbc42561b7d0a8db52b9029f679ad72993f931efa596d2d6d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103826171"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119079570"
 ---
-# <a name="win32_wmisetting-class"></a>\_Classe Win32 WMISetting
+# <a name="win32_wmisetting-class"></a>Classe \_ WMISetting Win32
 
-A [classe WMI](../wmisdk/retrieving-a-class.md) singleton do **Win32 \_ WMISetting** contém os parâmetros operacionais para o serviço WMI. Essa classe pode ter apenas uma instância, que sempre existe para cada sistema Windows e não pode ser excluída. Não é possível criar instâncias adicionais.
+A **classe \_ WMI singleton WMISetting** [do](../wmisdk/retrieving-a-class.md) Win32 contém os parâmetros operacionais para o serviço WMI. Essa classe só pode ter uma instância, que sempre existe para cada Windows sistema e não pode ser excluída. Instâncias adicionais não podem ser criadas.
 
-A sintaxe a seguir é simplificada do código MOF (Managed Object Format) e inclui todas as propriedades herdadas. As propriedades e os métodos estão em ordem alfabética, não em ordem de MOF.
+A sintaxe a seguir é simplificada do código MOF (Managed Object Format) e inclui todas as propriedades herdadas. As propriedades e os métodos estão em ordem alfabética, não em ordem MOF.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -92,13 +92,13 @@ class Win32_WMISetting : CIM_Setting
 
 ## <a name="members"></a>Membros
 
-A classe **Win32 \_ WMISetting** tem estes tipos de membros:
+A **classe \_ WMISetting Win32** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **Win32 \_ WMISetting** tem essas propriedades.
+A **classe \_ WMISetting Win32** tem essas propriedades.
 
 <dl> <dt>
 
@@ -108,73 +108,73 @@ A classe **Win32 \_ WMISetting** tem essas propriedades.
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| software \\ \\ Microsoft \\ \\ WBEM \\ \\ scripting \| padrão namespace")
+Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| Software Microsoft \\ \\ \\ \\ WBEM \\ \\ scripting Default \| Namespace")
 </dt> </dl>
 
-Namespace de script padrão. Essa propriedade contém o namespace usado por chamadas da API de script para WMI se nenhum for especificado pelo chamador.
+Namespace de script padrão. Essa propriedade contém o namespace usado por chamadas da API de Script para WMI se nenhum for especificado pelo chamador.
 
-Essa propriedade reflete o valor na chave do registro.
+Essa propriedade reflete o valor na chave do Registro.
 
-**HKEY \_ \_** \\  \\ Namespace padrão do software do computador local **Microsoft** \\ **WBEM** \\ **scripting \|**    
+**HKEY \_ \_Namespace** \\ **padrão de** script \\  \\ **WBEM** \\ **da \|** Microsoft MACHINE Software LOCAL    
 
 Exemplo: raiz \\ cimv2
 
-Para obter um exemplo de script que usa essa propriedade, consulte a seção comentários.
+Para ver um script de exemplo que usa essa propriedade, consulte a seção Comentários.
 
 </dd> <dt>
 
 **ASPScriptEnabled**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| software \\ \\ Microsoft \\ \\ WBEM \\ \\ scripting \| enable for ASP")
+Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| Software Microsoft \\ \\ \\ \\ WBEM \\ \\ scripting Enable for \| ASP")
 </dt> </dl>
 
-Se **for true**, o script WMI poderá ser usado em páginas de Active Server (ASP). Essa propriedade é válida em sistemas que executam apenas versões sem suporte do Windows. Para sistemas Windows com suporte, o script WMI sempre é permitido no ASP.
+Se **For True,** o script WMI poderá ser usado Active Server Pages (ASP). Essa propriedade é válida em sistemas que executam versões sem suporte do Windows somente. Para sistemas de Windows com suporte, o script WMI sempre é permitido no ASP.
 
 </dd> <dt>
 
 **AutorecoverMofs**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: matriz de **cadeia de caracteres**
+Tipo de dados: matriz **de cadeia de** caracteres
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| software \\ \\ Microsoft \\ \\ WBEM \\ \\ CIMOM \| Recover MOFs")
+Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WIN32Registry \| Software Microsoft \\ \\ \\ \\ WBEM \\ \\ CIMOM \| AUTOrecover MOFs")
 </dt> </dl>
 
-Lista de nomes de arquivos MOF totalmente qualificados usados para inicializar ou recuperar o repositório WMI. A lista determina a ordem na qual os arquivos MOF são compilados.
+Lista de nomes de arquivo MOF totalmente qualificados usados para inicializar ou recuperar o repositório WMI. A lista determina a ordem na qual os arquivos MOF são compilados.
 
-Essa propriedade reflete o valor na chave do registro.
+Essa propriedade reflete o valor na chave do Registro.
 
-**HKEY \_ \_Computador local** \\ **software** \\ **Microsoft** \\ **WBEM** \\ **CIMOM \| AutoRecuperação MOFs**    
+**HKEY \_ MOFs \_ de** recuperação automática do \\  \\ **MICROSOFT** \\ **WBEM** \\ **CIMOM \| do** MACHINE Software LOCAL    
 
 </dd> <dt>
 
 **AutoStartWin9X**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| software \\ \\ Microsoft \\ \\ WBEM \\ \\ CIMOM \| AutostartWin9X")
+Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| Software Microsoft \\ \\ \\ \\ WBEM \\ \\ CIMOM \| AutostartWin9X")
 </dt> </dl>
 
-Não há suporte.
+Sem suporte.
 
 <dt>
 
@@ -187,7 +187,7 @@ Não há suporte.
 
 <span id="Autostart"></span><span id="autostart"></span><span id="AUTOSTART"></span>
 
-**Início automática** (1)
+**Início Automático** (1)
 
 
 </dt> <dd></dd> <dt>
@@ -201,32 +201,32 @@ Não há suporte.
 
 </dd> <dt>
 
-**BackupInterval que**
+**BackupInterval**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) (" \| \\ \\ limite do intervalo de backup do Microsoft \\ \\ WBEM \\ \\ CIMOM software Win32Registry \| "), [**unidades**](../wmisdk/standard-qualifiers.md) ("minutos")
+Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| Software Microsoft \\ \\ \\ \\ WBEM \\ \\ CIMOM Backup Interval \| Threshold"), [**Unidades**](../wmisdk/standard-qualifiers.md) ("minutos")
 </dt> </dl>
 
-Não há suporte. Em vez disso, faça backup do repositório WMI manualmente.
+Sem suporte. Em vez disso, faça backup do repositório WMI manualmente.
 
 </dd> <dt>
 
 **BackupLastTime**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **DateTime**
+Tipo de dados: **datetime**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("win32api \| time Functions \| GetTimeZoneInformation")
+Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Time Functions \| GetTimeZoneInformation")
 </dt> </dl>
 
 Data e hora em que o último backup foi executado.
@@ -242,16 +242,16 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| software \\ \\ Microsoft \\ \\ WBEM \| Build")
+Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| Software Microsoft \\ \\ \\ \\ WBEM \| Build")
 </dt> </dl>
 
-Informações de versão para o serviço WMI atualmente instalado.
+Informações de versão para o serviço WMI instalado no momento.
 
-Período de tempo decorrido entre os backups do banco de dados WMI.
+Período de tempo que se desdoce entre backups do banco de dados WMI.
 
-Essa propriedade reflete o valor na chave do registro.
+Essa propriedade reflete o valor na chave do Registro.
 
-**HKEY \_ Build do \_ computador local** \\ **software** \\ **Microsoft** \\ **WBEM \|**
+**HKEY \_ Build \_** \\  \\  \\ **\| WBEM** do Microsoft MACHINE Software LOCAL
 
 </dd> <dt>
 
@@ -264,12 +264,12 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**maxlen**](../wmisdk/standard-qualifiers.md) (64)
+Qualificadores: [**MaxLen**](../wmisdk/standard-qualifiers.md) (64)
 </dt> </dl>
 
-Breve descrição textual do objeto atual.
+Descrição textual curta do objeto atual.
 
-Essa propriedade é herdada [**da \_ configuração de CIM**](cim-setting.md).
+Essa propriedade é herdada da [**Configuração cim \_**](cim-setting.md).
 
 </dd> <dt>
 
@@ -282,7 +282,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) (" \| diretório de \\ \\ repositório do Microsoft \\ \\ WBEM \\ \\ CIMOM software Win32Registry \| ")
+Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| Software Microsoft \\ \\ \\ \\ WBEM \\ \\ CIMOM Repository \| Directory")
 </dt> </dl>
 
 Caminho do diretório que contém o repositório WMI.
@@ -292,13 +292,13 @@ Caminho do diretório que contém o repositório WMI.
 **DatabaseMaxSize**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| software \\ \\ Microsoft \\ \\ WBEM \\ \\ CIMOM \| Max DB size"), [**Units**](../wmisdk/standard-qualifiers.md) ("quilobytes")
+Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| Software Microsoft \\ \\ \\ \\ WBEM \\ \\ CIMOM Max DB \| Size"), [**Unidades**](../wmisdk/standard-qualifiers.md) ("quilobytes")
 </dt> </dl>
 
 Tamanho máximo do repositório WMI.
@@ -316,100 +316,100 @@ Tipo de acesso: Somente leitura
 
 Descrição textual do objeto atual.
 
-Essa propriedade é herdada [**da \_ configuração de CIM**](cim-setting.md).
+Essa propriedade é herdada da [**Configuração cim \_**](cim-setting.md).
 
 </dd> <dt>
 
 **EnableAnonWin9xConnections**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| software \\ \\ Microsoft \\ \\ WBEM \\ \\ CIMOM \| EnableAnonConnections")
+Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| Software Microsoft \\ \\ \\ \\ WBEM \\ \\ CIMOM \| EnableAnonConnections")
 </dt> </dl>
 
-Não há suporte.
+Sem suporte.
 
 </dd> <dt>
 
 **EnableEvents**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| software \\ \\ Microsoft \\ \\ WBEM \\ \\ CIMOM \| EnableEvents")
+Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| Software Microsoft \\ \\ \\ \\ WBEM \\ \\ CIMOM \| EnableEvents")
 </dt> </dl>
 
-Se **for true**, o subsistema de eventos do WMI deverá ser habilitado.
+Se **True**, o subsistema de evento WMI deverá ser habilitado.
 
-Essa propriedade reflete o valor na chave do registro.
+Essa propriedade reflete o valor na chave do Registro.
 
-**HKEY \_ \_Computador local** \\ **software** \\ **Microsoft** \\ **WBEM \| CIMOM \| EnableEvents**
+**HKEY \_ Local \_ MACHINE** \\ **Software** \\ **Microsoft** \\ **WBEM \| CIMOM \| EnableEvents**
 
 </dd> <dt>
 
 **EnableStartupHeapPreallocation**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| software \\ \\ Microsoft \\ \\ WBEM \\ \\ CIMOM \| EnableStartupHeapPreallocation")
+Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| Software Microsoft \\ \\ \\ \\ WBEM \\ \\ CIMOM \| EnableStartupHeapPreallocation")
 </dt> </dl>
 
-Se **for true**, o WMI criará um heap pré-alocado com o tamanho do valor **LASTSTARTUPHEAPPREALLOCATION** quando o WMI for inicializado.
+Se **True**, o WMI criará um heap pré-alocado com o tamanho do valor **LastStartupHeapPreallocation** quando o WMI for inicializado.
 
 </dd> <dt>
 
 **HighThresholdOnClientObjects**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| software \\ \\ Microsoft \\ \\ WBEM \\ \\ CIMOM \| alto Threshold nos objetos cliente"), [**unidades**](../wmisdk/standard-qualifiers.md) ("objetos por segundo")
+Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| Software Microsoft \\ \\ \\ \\ WBEM \\ \\ CIMOM High Threshold On Client \| Objects"), [**Units**](../wmisdk/standard-qualifiers.md) ("objects per second")
 </dt> </dl>
 
-Taxa máxima em que os objetos criados pelo provedor podem ser entregues aos clientes. Para acomodar diferenciais de velocidade entre provedores e clientes, o WMI mantém objetos em filas antes de entregá-los aos consumidores. Para obter mais eficiência, os consumidores devem coletar os objetos em um ritmo que corresponda ao provedor. Se a memória mantida por objetos não coletados atingir **LowThresholdOnObjects**, o WMI reduzirá a adição de novos objetos à fila. Se os eventos não coletados continuarem a ser acumulados e a espera máxima de entrega de eventos em **MaxWaitOnClientObjects** for atingida enquanto a memória usada estiver no valor em **HIGHTHRESHOLDONCLIENTOBJECTS**, o WMI não aceitará mais objetos de provedores e retornará o **WBEM \_ e a \_ \_ \_ memória insuficiente** para os clientes.
+Taxa máxima na qual os objetos criados pelo provedor podem ser entregues aos clientes. Para acomodar diferenciais de velocidade entre provedores e clientes, o WMI mantém objetos em filas antes de entregar aos consumidores. Para obter mais eficiência, os consumidores devem coletar os objetos em um ritmo que corresponde ao provedor. Se a memória mantida por objetos não recolhidos atingir **LowThresholdOnObjects**, o WMI reduzirá a adição de novos objetos à fila. Se eventos não encontrados continuarem se acumulando e a espera máxima para entregar eventos em **MaxWaitOnClientObjects** for atingida enquanto a memória usada estiver no valor em **HighThresholdOnClientObjects**, o WMI não aceitará mais objetos de provedores e retornará **WBEM \_ E OUT OF \_ \_ \_ MEMORY** para os clientes.
 
 </dd> <dt>
 
 **HighThresholdOnEvents**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| \\ \\ de software Microsoft \\ \\ WBEM \\ \\ CIMOM \| limite alto nos eventos"), [**unidades**](../wmisdk/standard-qualifiers.md) ("eventos por segundo")
+Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| Software Microsoft \\ \\ \\ \\ WBEM \\ \\ CIMOM High Threshold On \| Events"), [**Unidades**](../wmisdk/standard-qualifiers.md) ("eventos por segundo")
 </dt> </dl>
 
-Taxa máxima na qual os eventos devem ser entregues aos clientes. Para acomodar diferenciais de velocidade entre provedores e clientes, os eventos de filas do WMI antes de entregá-los aos consumidores. Para obter mais eficiência, os consumidores devem coletar os eventos em um ritmo que corresponda ao provedor. Se a memória mantida por eventos não coletados atingir **LowThresholdOnObjects**, o WMI reduzirá a adição de novos eventos na fila. Se os eventos não coletados continuarem a ser acumulados e a espera máxima de entrega de eventos em **MaxWaitOnEvents** for atingida enquanto a memória usada estiver no valor em **HighThresholdOnEvents**, o WMI não aceitará mais eventos de provedores e retornará o **WBEM \_ e a \_ \_ \_ memória insuficiente** para os clientes.
+Taxa máxima na qual os eventos devem ser entregues aos clientes. Para acomodar diferenciais de velocidade entre provedores e clientes, o WMI enfilia eventos antes de entregar aos consumidores. Para obter mais eficiência, os consumidores devem coletar os eventos em um ritmo que corresponde ao provedor. Se a memória mantida por eventos não recolhidos atingir **LowThresholdOnObjects**, o WMI reduzirá a adição de novos eventos à fila. Se eventos não recolhidos continuarem se acumulando e a espera máxima para entregar eventos em **MaxWaitOnEvents** for atingida enquanto a memória usada estiver no valor em **HighThresholdOnEvents,** o WMI não aceitará mais eventos de provedores e retornará **WBEM \_ E OUT OF \_ \_ \_ MEMORY** para os clientes.
 
 > [!Note]  
-> A limitação só é feita para consumidores de eventos permanentes, portanto, os consumidores temporários não devem esperar a limitação quando os eventos são submetidos a backup na fila de eventos internos do WMI.
+> A interrupção só é feita para consumidores de Eventos Permanentes, portanto, os consumidores temporários não devem esperar a interrupção quando os eventos são feitos backup na fila de eventos interna do WMI.
 
  
 
-Essa propriedade reflete o valor na chave do registro.
+Essa propriedade reflete o valor na chave do Registro.
 
-**HKEY \_ \_Computador local** \\ **software** \\ **Microsoft** \\ **WBEM** \\ **CIMOM \| limite alto nos objetos cliente (B)**    
+**HKEY \_ Limite \_ alto** cimom do \\  \\ **MICROSOFT** \\ **WBEM** MACHINE Software LOCAL \\ **em objetos cliente \| (B)**    
 
 </dd> <dt>
 
@@ -422,34 +422,34 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) (" \| diretório de \\ \\ instalação do Microsoft WBEM software Win32Registry \\ \\ \| ")
+Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| Software Microsoft \\ \\ \\ \\ WBEM Installation \| Directory")
 </dt> </dl>
 
-Caminho do diretório em que o software WMI foi instalado. O local padrão é \\ System32 \\ WBEM.
+Caminho do diretório em que o software WMI foi instalado. O local padrão é \\ System32 \\ Wbem.
 
-Essa propriedade reflete o valor na chave do registro.
+Essa propriedade reflete o valor na chave do Registro.
 
-**HKEY \_ \_** Diretório de \\  \\ **instalação do software Microsoft** \\ **WBEM \|** do computador local
+**HKEY \_ Diretório \_ de instalação do** \\  \\  \\ **WBEM \|** da Microsoft MACHINE Software LOCAL
 
 </dd> <dt>
 
 **LastStartupHeapPreallocation**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| software \\ \\ Microsoft \\ \\ WBEM \\ \\ CIMOM \| LastStartupHeapPreallocation"), [**Units**](../wmisdk/standard-qualifiers.md) ("bytes")
+Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| Software Microsoft \\ \\ \\ \\ WBEM \\ \\ CIMOM \| LastStartupHeapPreallocation"), [**Unidades**](../wmisdk/standard-qualifiers.md) ("bytes")
 </dt> </dl>
 
 Tamanho do heap pré-alocado criado pelo WMI durante a inicialização.
 
-Essa propriedade reflete o valor na chave do registro.
+Essa propriedade reflete o valor na chave do Registro.
 
-**HKEY \_ \_Computador local** \\ **software** \\ **Microsoft** \\ **WBEM \| CIMOM \| LastStartupHeapPreallocation**
+**HKEY \_ LOCAL \_ MACHINE** \\ **Software** \\ **Microsoft** \\ **WBEM \| CIMOM \| LastStartupHeapPreallocation**
 
 </dd> <dt>
 
@@ -459,43 +459,43 @@ Essa propriedade reflete o valor na chave do registro.
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) (" \| diretório de \\ \\ log do Microsoft \\ \\ WBEM \\ \\ CIMOM software Win32Registry \| ")
+Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| Software Microsoft \\ \\ \\ \\ WBEM \\ \\ CIMOM Logging \| Directory")
 </dt> </dl>
 
 Caminho do diretório que contém o local dos arquivos de log do sistema WMI.
 
-Essa propriedade reflete o valor na chave do registro.
+Essa propriedade reflete o valor na chave do Registro.
 
-**HKEY \_ \_** Diretório de log do \\  \\ **Microsoft** \\ **WBEM \| CIMOM \| do** software de computador local
+**HKEY \_ Diretório \_ de log CIMOM** do \\  \\ **MICROSOFT** \\ **WBEM \| SOFTWARE \| LOCAL** MACHINE
 
 </dd> <dt>
 
 **LoggingLevel**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| software \\ \\ Microsoft \\ \\ WBEM \\ \\ CIMOM \| log")
+Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| Software Microsoft \\ \\ \\ \\ WBEM \\ \\ CIMOM \| Logging")
 </dt> </dl>
 
-Habilitação do log de eventos e o nível de detalhamento do log usado.
+Habilitando o log de eventos e o nível de detalhes do log usado.
 
-Essa propriedade reflete o valor na chave do registro.
+Essa propriedade reflete o valor na chave do Registro.
 
-**HKEY \_ \_** Registro em \\  \\ **log do Microsoft** \\ **WBEM \| CIMOM \|** no software da máquina local
+**HKEY \_ Log \_ CIMOM** do \\  \\ **Microsoft** \\ **WBEM \| SOFTWARE \|** LOCAL MACHINE
 
 <dt>
 
 <span id="Off"></span><span id="off"></span><span id="OFF"></span>
 
-**Desativado** (0)
+**Off** (0)
 
 
 </dt> <dd></dd> <dt>
@@ -519,91 +519,91 @@ Essa propriedade reflete o valor na chave do registro.
 **LowThresholdOnClientObjects**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| \\ \\ de software Microsoft \\ \\ WBEM \\ \\ CIMOM \| limite baixo em objetos de cliente"), [**unidades**](../wmisdk/standard-qualifiers.md) ("objetos por segundo")
+Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| Software Microsoft \\ \\ \\ \\ WBEM \\ \\ CIMOM Low Threshold On Client \| Objects"), [**Unidades**](../wmisdk/standard-qualifiers.md) ("objetos por segundo")
 </dt> </dl>
 
-Taxa na qual o WMI começa a reduzir a criação de novos objetos criados para clientes. Para acomodar diferenciais de velocidade entre provedores e clientes, o WMI mantém objetos em filas antes de entregá-los aos consumidores. Para obter mais eficiência, os consumidores devem coletar os objetos em um ritmo que corresponda ao provedor. Se a taxa de solicitações de objetos atingir **LowThresholdOnClientObjects**, o WMI reduzirá gradualmente a criação de novos objetos para corresponder à taxa de uso do cliente. Essa lentidão começa quando a taxa na qual os objetos estão sendo criados excede o valor dessa propriedade. Consulte **HighThresholdOnClientObjects**.
+Taxa na qual o WMI começa a diminuir a criação de novos objetos criados para clientes. Para acomodar diferenciais de velocidade entre provedores e clientes, o WMI mantém objetos em filas antes de entregar aos consumidores. Para obter mais eficiência, os consumidores devem coletar os objetos em um ritmo que corresponde ao provedor. Se a taxa de solicitações de objetos atingir **LowThresholdOnClientObjects**, o WMI reduzirá gradualmente a criação de novos objetos para corresponder à taxa de uso do cliente. Essa lentidão começa quando a taxa na qual os objetos estão sendo criados excede o valor dessa propriedade. Consulte **HighThresholdOnClientObjects**.
 
-Essa propriedade reflete o valor do registro.
+Essa propriedade reflete o valor do Registro.
 
-**Chave \_ \_Computador local** \\ **software** \\ **Microsoft** \\ **WBEM** \\ **CIMOM \| limite alto nos objetos cliente (B)**    
+**CHAVE \_ Limite \_ alto** cimom do \\  \\ **MICROSOFT** \\ **WBEM** MACHINE Software LOCAL \\ **em objetos cliente \| (B)**    
 
 </dd> <dt>
 
 **LowThresholdOnEvents**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| \\ \\ de software Microsoft \\ \\ WBEM \\ \\ CIMOM \| limite baixo nos eventos"), [**unidades**](../wmisdk/standard-qualifiers.md) ("eventos por segundo")
+Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| Software Microsoft \\ \\ \\ \\ WBEM \\ \\ CIMOM Low Threshold On \| Events"), [**Unidades**](../wmisdk/standard-qualifiers.md) ("eventos por segundo")
 </dt> </dl>
 
-Taxa na qual o WMI começa a reduzir a entrega de novos eventos. Para acomodar diferenciais de velocidade entre provedores e clientes, os eventos de filas do WMI antes de entregá-los aos consumidores. Para obter mais eficiência, os consumidores devem coletar os objetos em um ritmo que corresponda ao provedor. Se a fila ficar fora de controle, as restrições de WMI — ficarão mais lentas — a entrega de eventos gradualmente para alinhar com a taxa do cliente. Essa lentidão começa quando a taxa na qual os eventos são gerados excede o valor dessa propriedade. Consulte **HighThresholdOnEvents**.
+Taxa na qual o WMI começa a reduzir a entrega de novos eventos. Para acomodar diferenciais de velocidade entre provedores e clientes, o WMI enfilia eventos antes de entregar aos consumidores. Para obter mais eficiência, os consumidores devem coletar os objetos em um ritmo que corresponde ao provedor. Se a fila ficar fora de controle, o WMI diminuirá– a entrega de eventos gradualmente para se alinhar à taxa do cliente. Essa lentidão começa quando a taxa na qual os eventos são gerados excede o valor dessa propriedade. Consulte **HighThresholdOnEvents**.
 
 > [!Note]  
-> A limitação só é feita para consumidores de eventos permanentes, portanto, os consumidores temporários não devem esperar a limitação quando os eventos são submetidos a backup na fila de eventos internos do WMI.
+> A interrupção só é feita para consumidores de eventos permanentes, portanto, os consumidores temporários não devem esperar a interrupção quando os eventos são feitos backup na fila de eventos interna do WMI.
 
  
 
-Essa propriedade reflete o valor do registro.
+Essa propriedade reflete o valor do Registro.
 
-**HKEY \_ \_Computador local** \\ **software** \\ **Microsoft** \\ **WBEM** \\ **CIMOM \| limite alto nos objetos cliente {B}**    
+**HKEY \_ Limite \_ alto** \\  \\ **do MICROSOFT** \\ **WBEM** CIMOM do SOFTWARE LOCAL \\ **MACHINE em objetos \| cliente {B}**    
 
 </dd> <dt>
 
 **MaxLogFileSize**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| software \\ \\ Microsoft \\ \\ WBEM \\ \\ CIMOM \| tamanho máximo do arquivo de log"), [**unidades**](../wmisdk/standard-qualifiers.md) ("bytes")
+Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| Software Microsoft \\ \\ \\ \\ WBEM CIMOM Log Size \\ \\ \| Max"), [**Unidades**](../wmisdk/standard-qualifiers.md) ("bytes")
 </dt> </dl>
 
 Tamanho máximo dos arquivos de log produzidos pelo serviço WMI.
 
-Essa propriedade reflete o valor na chave do registro.
+Essa propriedade reflete o valor na chave do Registro.
 
-**HKEY \_ \_** \\  \\  \\ **\| \| Tamanho máximo do arquivo de log do Microsoft WBEM CIMOM** software do computador local
+**HKEY \_ Tamanho \_ máximo do** arquivo de log CIMOM do \\  \\ **Microsoft** \\ **WBEM \| \| Software** LOCAL MACHINE
 
 </dd> <dt>
 
 **MaxWaitOnClientObjects**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry de \| software \\ \\ Microsoft \\ \\ WBEM \\ \\ CIMOM \| Max em eventos"), [**unidades**](../wmisdk/standard-qualifiers.md) ("milissegundos")
+Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| Software Microsoft \\ \\ \\ \\ WBEM \\ \\ CIMOM Max Wait On \| Events"), [**Unidades**](../wmisdk/standard-qualifiers.md) ("milissegundos")
 </dt> </dl>
 
-Quantidade de tempo que um objeto recém-criado espera para ser usado pelo cliente antes de ser descartado e um valor de erro é retornado. Essa propriedade interage com as propriedades **LowThresholdOnClientObjects** e **HighThresholdOnClientObjects** para limitação — lentidão – a entrega de objetos aos consumidores quando o consumidor está recebendo os objetos muito lentamente.
+Quantidade de tempo que um objeto recém-criado aguarda para ser usado pelo cliente antes de ser descartado e um valor de erro é retornado. Essa propriedade interage com as propriedades **LowThresholdOnClientObjects** e **HighThresholdOnClientObjects** para reduzir — reduzir — a entrega de objetos aos consumidores quando o consumidor estiver recebendo os objetos muito lentamente.
 
 </dd> <dt>
 
 **MaxWaitOnEvents**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
 Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry de \| software \\ \\ Microsoft \\ \\ WBEM \\ \\ CIMOM \| Max em eventos"), [**unidades**](../wmisdk/standard-qualifiers.md) ("milissegundos")
@@ -673,13 +673,13 @@ Você pode usar a **classe \_ WMISetting do Win32** para determinar como o WMI f
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo de código do VBScript [Modificar configurações do WMI](https://Gallery.TechNet.Microsoft.Com/aa80d174-3592-4fed-9c50-11f34e541445) na galeria do TechNet usa a classe **Win32 \_ WMISetting** para configurar o intervalo de backup e o nível de log do WMI.
+o exemplo de código [Modify WMI Configurações](https://Gallery.TechNet.Microsoft.Com/aa80d174-3592-4fed-9c50-11f34e541445) VBScript na galeria do TechNet usa a classe **Win32 \_ WMISetting** para configurar o intervalo de backup do wmi e o nível de log.
 
 A [lista do exemplo de código VBScript do namespace padrão](https://Gallery.TechNet.Microsoft.Com/3fc69acd-ead0-4dd1-9ea1-e15a7331cfa0) na galeria do TechNet usa a classe **Win32 \_ WMISetting** para recuperar e exibir a configuração atual do WMI "namespace padrão para script".
 
 O exemplo de código de [Modificar o namespace padrão do WMI](https://Gallery.TechNet.Microsoft.Com/6dbb20e6-036d-43a2-ad6d-58325ada6a19) do VBScript na galeria do TechNet usa a propriedade **ASPScriptDefaultNamespace** para definir a configuração "namespace padrão para script" do WMI como "raiz \\ cimv2".
 
-A [lista todas as configurações do WMI](https://Gallery.TechNet.Microsoft.Com/29c04301-e9b2-46d1-8714-2dbb51014c92) exemplo de código VBSCript usa várias propriedades no **Win32 \_ WMISetting** para retornar uma lista de configurações do WMI configuradas em um computador.
+a [lista todos os](https://Gallery.TechNet.Microsoft.Com/29c04301-e9b2-46d1-8714-2dbb51014c92) exemplos de código wmi Configurações VBSCript usa várias propriedades no **Win32 \_ WMISetting** para retornar uma lista de configurações de WMI configuradas em um computador.
 
 O exemplo de código JavaScript [listar informações de configuração do WMI](https://Gallery.TechNet.Microsoft.Com/0427cfde-4cd9-4a3d-9140-3bb622a1df5d) usa várias propriedades no **Win32 \_ WMISetting** para retornar uma lista de configurações do WMI configuradas em um computador.
 

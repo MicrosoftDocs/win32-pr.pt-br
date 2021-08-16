@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre a propriedade: JET_INDEXLIST. TableName'
-title: Propriedade JET_INDEXLIST. TableName
+description: 'Saiba mais sobre: JET_INDEXLIST.tableid'
+title: propriedade JET_INDEXLIST.tableid
 TOCTitle: 'tableid property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.JET_INDEXLIST.tableid
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_indexlist.tableid(v=EXCHG.10)
@@ -26,19 +26,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: b680562a9a43162ffb82a726a410632774e39c86
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a8c1da6b96f0ce842d7287e7f674db07bfd875a83669548de499ddc12de80825
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105811036"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118980206"
 ---
-# <a name="jet_indexlisttableid-property"></a>Propriedade JET_INDEXLIST. TableName
+# <a name="jet_indexlisttableid-property"></a>propriedade JET_INDEXLIST.tableid
 
-Obtém TableName da tabela temporária. Isso deve ser fechado quando a tabela não for mais necessária.
+Obtém tableid da tabela temporária. Isso deve ser fechado quando a tabela não for mais necessária.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Syntax
 
@@ -60,14 +60,14 @@ public JET_TABLEID tableid { get; internal set; }
 
 #### <a name="property-value"></a>Valor da propriedade
 
-Tipo: [Microsoft.ISAM.ESENT.Interop.JET_TABLEID](./jet-tableid-structure.md)  
+Tipo: [Microsoft.Isam.Esent.Interop.JET_TABLEID](./jet-tableid-structure.md)  
 
 ## <a name="see-also"></a>Confira também
 
 #### <a name="reference"></a>Referência
 
-[Classe JET_INDEXLIST](./jet-indexlist-class.md)
+[JET_INDEXLIST classe](./jet-indexlist-class.md)
 
-[Membros do JET_INDEXLIST](./jet-indexlist-members.md)
+[JET_INDEXLIST membros](./jet-indexlist-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

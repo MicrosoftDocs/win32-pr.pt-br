@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 71e6210f1395f0f213d7b44ae81417609c30b40c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8a4d482aaafc75f8d109b6332d3051a020f3d32616430aa01913fe72db111ca0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103662482"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118981806"
 ---
 # <a name="esentrunninginoneinstancemodeexception-constructor"></a>Construtor EsentRunningInOneInstanceModeException
 
 Inicializa uma nova instância da classe EsentRunningInOneInstanceModeException.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -58,6 +58,6 @@ public EsentRunningInOneInstanceModeException()
 
 [Classe EsentRunningInOneInstanceModeException](./esentrunninginoneinstancemodeexception-class.md)
 
-[Membros do EsentRunningInOneInstanceModeException](./esentrunninginoneinstancemodeexception-members.md)
+[Membros EsentRunningInOneInstanceModeException](./esentrunninginoneinstancemodeexception-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

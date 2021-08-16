@@ -1,8 +1,8 @@
 ---
-description: A \_ classe CIM conectadoto representa uma associação que indica que dois ou mais conectores físicos estão conectados.
+description: A classe CIM \_ ConnectedTo representa uma associação que indica que dois ou mais conectores físicos estão conectados.
 ms.assetid: fedd9227-8a3b-461a-995b-08cbceb81181
 ms.tgt_platform: multiple
-title: Classe CIM_ConnectedTo
+title: CIM_ConnectedTo classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,19 +16,19 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 1f1a507cb529f2040607024e1a6167ddcd5dc7c0
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 5837dcabef1eeb43edf8bfdfb5cfd318802c7f2cd28bc52157ee8322bdae1392
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104010222"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119080840"
 ---
-# <a name="cim_connectedto-class"></a>\_Classe conectada CIM
+# <a name="cim_connectedto-class"></a>Classe CIM \_ ConnectedTo
 
-A classe **CIM \_ conectadoto** representa uma associação que indica que dois ou mais conectores físicos estão conectados.
+A **classe CIM \_ ConnectedTo** representa uma associação que indica que dois ou mais conectores físicos estão conectados.
 
 > [!IMPORTANT]
-> As classes DMTF (Distributed Management Task Force) CIM (modelo CIM) são as classes pai nas quais as classes WMI são criadas. Atualmente, o WMI dá suporte apenas aos [esquemas de versão do CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> As classes CIM (Distributed Management Task Force) do DMTF (Distributed Management Task Force) modelo CIM são as classes pai nas quais as classes WMI são criadas. Atualmente, o WMI dá suporte apenas aos esquemas de versão [do CIM 2.x.](https://dmtf.org/standards/cim/schemas)
 
  
 
@@ -47,55 +47,55 @@ class CIM_ConnectedTo : CIM_Dependency
 
 ## <a name="members"></a>Membros
 
-A classe **CIM \_ conectadoto** tem estes tipos de membros:
+A **classe CIM \_ ConnectedTo** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **CIM \_ conectadoto** tem essas propriedades.
+A **classe CIM \_ ConnectedTo** tem essas propriedades.
 
 <dl> <dt>
 
-**Antecedent**
+**Antecedente**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **CIM \_ PhysicalConnector**
+Tipo de dados: **Cim \_ PhysicalConnector**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Antecedent")
+Qualificadores: [**substituir**](/windows/desktop/WmiSdk/standard-qualifiers) ("antecessor")
 </dt> </dl>
 
-Um [**\_ PhysicalConnector CIM**](cim-physicalconnector.md) que representa um conector físico que serve como uma extremidade da conexão.
+Um [**\_ PhysicalConnector cim**](cim-physicalconnector.md) que representa um conector físico que serve como uma extremidade da conexão.
 
 </dd> <dt>
 
-**Depende**
+**Dependente**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **CIM \_ PhysicalConnector**
+Tipo de dados: **Cim \_ PhysicalConnector**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("dependente")
+Qualificadores: [**Substituir**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dependente")
 </dt> </dl>
 
-Um [**\_ PhysicalConnector CIM**](cim-physicalconnector.md) que representa outro conector físico que serve como a outra extremidade da conexão.
+Um [**\_ PhysicalConnector cim**](cim-physicalconnector.md) que representa outro conector físico que serve como a outra extremidade da conexão.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-A **classe \_ conectada ao CIM** é herdada da [**\_ dependência CIM**](cim-dependency.md).
+A **classe CIM \_ ConnectedTo** é herdada da [**\_ Dependência CIM.**](cim-dependency.md)
 
 O WMI não implementa essa classe.
 
-Esta documentação é derivada das descrições da classe CIM publicadas pela DMTF. A Microsoft pode ter feito alterações para corrigir erros secundários, obedecer aos padrões de documentação do Microsoft SDK ou fornecer mais informações.
+Esta documentação é derivada das descrições da classe CIM publicadas pelo DMTF. A Microsoft pode ter feito alterações para corrigir erros secundários, estar em conformidade com os padrões de documentação do SDK da Microsoft ou fornecer mais informações.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -105,8 +105,8 @@ Esta documentação é derivada das descrições da classe CIM publicadas pela D
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| Namespace<br/>                | Raiz \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Namespace<br/>                | RAIZ \\ CIMV2<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -115,7 +115,7 @@ Esta documentação é derivada das descrições da classe CIM publicadas pela D
 
 <dl> <dt>
 
-[**\_Dependência CIM**](cim-dependency.md)
+[**Dependência cim \_**](cim-dependency.md)
 </dt> </dl>
 
  

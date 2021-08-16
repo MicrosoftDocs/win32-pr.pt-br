@@ -4,12 +4,12 @@ ms.assetid: 50E9516C-6078-4466-A593-3F29E4783740
 title: RIO_RQ (Mswsockdef. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c25abebbe40842532f3cca180868b5b3786e756d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 162b87d1ae320bfa0e74f08e5a0ef7493c053f39573249246e8b2884e74f599c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104296597"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118993576"
 ---
 # <a name="rio_rq"></a>RIO de \_ RQ
 
@@ -50,9 +50,9 @@ O [**typedef \_ RQ do Rio**](riocqueue.md) é definido no arquivo de cabeçalho 
 
 | Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                                                  |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                                        |
-| parâmetro<br/>                   | <dl> <dt>Mswsockdef. h (incluir mswsock. h)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 8 \[ somente aplicativos da área de trabalho\]<br/>                                                                  |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 \[ somente aplicativos da área de trabalho\]<br/>                                                        |
+| Cabeçalho<br/>                   | <dl> <dt>Mswsockdef. h (incluir mswsock. h)</dt> </dl> |
 
 
 

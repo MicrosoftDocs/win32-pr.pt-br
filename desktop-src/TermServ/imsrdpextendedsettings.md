@@ -4,8 +4,8 @@ description: Usado para definir e recuperar propriedades nomeadas para o control
 ms.assetid: b78eebc1-e514-4201-becf-770ee4a15187
 ms.tgt_platform: multiple
 keywords:
-- Serviços de Área de Trabalho Remota de interface IMsRdpExtendedSettings
-- Serviços de Área de Trabalho Remota da interface IMsRdpExtendedSettings, descrita
+- Interface IMsRdpExtendedSettings Serviços de Área de Trabalho Remota
+- Interface IMsRdpExtendedSettings Serviços de Área de Trabalho Remota , descrita
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 57dd61a399176f70b66b46b6180d0e10756780f7
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 16ec34087b7bb6e943029cb6051a91b30d1ba5e40f01f6cb620735ceb0d14e46
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105781020"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119058894"
 ---
 # <a name="imsrdpextendedsettings-interface"></a>Interface IMsRdpExtendedSettings
 
@@ -29,7 +29,7 @@ Usado para definir e recuperar propriedades nomeadas para o controle de cliente.
 
 ## <a name="members"></a>Membros
 
-A interface **IMsRdpExtendedSettings** herda da interface [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) . **IMsRdpExtendedSettings** também tem estes tipos de membros:
+A interface **IMsRdpExtendedSettings** herda da interface [**IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **IMsRdpExtendedSettings** também tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 

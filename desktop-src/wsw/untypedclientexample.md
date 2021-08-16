@@ -1,29 +1,29 @@
 ---
 title: UnTypedClientExample
-description: Examine um exemplo de cliente não tipado que usa a API de serviços Web do Windows (WWSAPI). Este exemplo mostra um cliente HTTP que envia mensagens de solicitação-resposta.
+description: Revise um exemplo de cliente sem tipo que usa a API Windows Web Services (WWSAPI). Este exemplo mostra um cliente HTTP que envia mensagens de solicitação-resposta.
 ms.assetid: ea6d8696-fd43-4d3c-bfec-3602658a08a7
 keywords:
-- UnTypedClientExample nativo – Web-Services
+- UnTypedClientExample Native-Web-Services
 - WWSAPI
-- WWS
+- Wws
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d66e1fcb2a26ddb0f55aa87f0aa6c4a3ace3a945
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 72c7a7148705eba20485c852ea7dcaa45e820e1efb06af067dc8a64ac1cf251a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112409729"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120109806"
 ---
 # <a name="untypedclientexample"></a>UnTypedClientExample
 
 Este exemplo mostra um cliente HTTP que envia mensagens de solicitação-resposta.
 
--   [UnTypedClient. cpp](#untypedclientcpp)
--   [PurchaseOrder. WSDL](#purchaseorderwsdl)
+-   [UnTypedClient.cpp](#untypedclientcpp)
+-   [PurchaseOrder.wsdl](#purchaseorderwsdl)
 -   [Makefile](#makefile)
 
-## <a name="untypedclientcpp"></a>UnTypedClient. cpp
+## <a name="untypedclientcpp"></a>UnTypedClient.cpp
 
 
 ```C++
@@ -274,7 +274,7 @@ Exit:
 
 
 
-## <a name="purchaseorderwsdl"></a>PurchaseOrder. WSDL
+## <a name="purchaseorderwsdl"></a>PurchaseOrder.wsdl
 
 ``` syntax
 <wsdl:definitions 

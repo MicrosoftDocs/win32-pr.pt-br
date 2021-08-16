@@ -4,12 +4,12 @@ ms.assetid: b9ff5296-9076-4492-833c-7402b7090f8f
 title: Habilitando verificações de acesso no nível do componente
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e5da2de5f9d2f4f2d39f43330c8320c0bb0218bf
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 3063873923d3d4c491312ca4efccd9bcd665b46bf1bdfc882b69dbe4942757f1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105797609"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119047464"
 ---
 # <a name="enabling-access-checks-at-the-component-level"></a>Habilitando verificações de acesso no nível do componente
 
@@ -32,7 +32,7 @@ Por padrão, quando você instala um componente, as verificações de acesso no 
 A nova configuração entrará em vigor na próxima vez em que o aplicativo for iniciado.
 
 > [!Note]  
-> A partir do Windows Server 2003, as verificações de acesso no nível de componente são desabilitadas por padrão durante a criação de um aplicativo COM+. As verificações de acesso são habilitadas por padrão no nível do aplicativo e desabilitadas por padrão no nível do componente. Anteriormente, as verificações de acesso foram desabilitadas por padrão no nível do aplicativo e habilitadas por padrão no nível do componente.
+> a partir do Windows Server 2003, As verificações de acesso no nível de componente são desabilitadas por padrão durante a criação de um aplicativo COM+. As verificações de acesso são habilitadas por padrão no nível do aplicativo e desabilitadas por padrão no nível do componente. Anteriormente, as verificações de acesso foram desabilitadas por padrão no nível do aplicativo e habilitadas por padrão no nível do componente.
 
  
 

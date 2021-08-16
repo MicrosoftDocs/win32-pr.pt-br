@@ -1,29 +1,29 @@
 ---
 title: MulticastUdpClientExample
-description: Este exemplo mostra um cliente UDP que faz a difusão de uma solicitação e, em seguida, aguarda mensagens de resposta dos servidores.
+description: Este exemplo mostra um cliente UDP que multicasta uma solicitação e, em seguida, aguarda mensagens de resposta de servidores.
 ms.assetid: 61ca7e05-1a60-43b2-9ff7-cb355fae2f77
 keywords:
-- MulticastUdpClientExample nativo – Web-Services
+- MulticastUdpClientExample Native-Web-Services
 - WWSAPI
-- WWS
+- Wws
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9c1697c49b83f0e43fa332e36943ebea6129795d
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: e96ab6b78b79525725cb5652fdd847bd27da4b413de974fae0136c96bdebc83b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104159490"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119545886"
 ---
 # <a name="multicastudpclientexample"></a>MulticastUdpClientExample
 
-Este exemplo mostra um cliente UDP que faz a difusão de uma solicitação e, em seguida, aguarda mensagens de resposta dos servidores.
+Este exemplo mostra um cliente UDP que multicasta uma solicitação e, em seguida, aguarda mensagens de resposta de servidores.
 
--   [MulticastUdpClient. cpp](#multicastudpclientcpp)
--   [PurchaseOrder. WSDL](#purchaseorderwsdl)
+-   [MulticastUdpClient.cpp](#multicastudpclientcpp)
+-   [PurchaseOrder.wsdl](#purchaseorderwsdl)
 -   [Makefile](#makefile)
 
-## <a name="multicastudpclientcpp"></a>MulticastUdpClient. cpp
+## <a name="multicastudpclientcpp"></a>MulticastUdpClient.cpp
 
 
 ```C++
@@ -564,7 +564,7 @@ Exit:
 
 
 
-## <a name="purchaseorderwsdl"></a>PurchaseOrder. WSDL
+## <a name="purchaseorderwsdl"></a>PurchaseOrder.wsdl
 
 ``` syntax
 <wsdl:definitions 
@@ -708,9 +708,9 @@ clean:
     $(CLEANUP)
 ```
 
- 
+ 
 
- 
+ 
 
 
 

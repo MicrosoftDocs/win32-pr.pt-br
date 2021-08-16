@@ -25,12 +25,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 4e42b5e21937ae8af4ccd04708520ece40558c5b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2f7e300a99a00f50d8d79a66ced9edac35875eb337bd860a114c38a869b5ce3c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104090125"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118979406"
 ---
 # <a name="jet_sesidinequality-operator"></a>JET_SESID. Operador de desigualdade
 
@@ -76,7 +76,7 @@ public static bool operator !=(
     
     A segunda instância a ser comparada.
 
-#### <a name="return-value"></a>Retornar valor
+#### <a name="return-value"></a>Valor retornado
 
 Tipo: [System. Boolean](/dotnet/api/system.boolean)  
 True se as duas instâncias não forem iguais.  
