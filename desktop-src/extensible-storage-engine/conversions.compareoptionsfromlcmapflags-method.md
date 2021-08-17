@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre: método conversões. CompareOptionsFromLCMapFlags'
-title: Método conversões. CompareOptionsFromLCMapFlags
+description: 'Saiba mais sobre: Método Conversions.CompareOptionsFromLCMapFlags'
+title: Método Conversions.CompareOptionsFromLCMapFlags
 TOCTitle: 'CompareOptionsFromLCMapFlags method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Conversions.CompareOptionsFromLCMapFlags(System.UInt32)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.conversions.compareoptionsfromlcmapflags(v=EXCHG.10)
@@ -24,21 +24,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 79e0d6a92aef75f3758adc16e9c82de81b8c6962
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bfe3a65c52d23ee335a81560775f0063b8ca81a10cc43c1787e353a5b803eed4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104164797"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117901842"
 ---
-# <a name="conversionscompareoptionsfromlcmapflags-method"></a>Método conversões. CompareOptionsFromLCMapFlags
+# <a name="conversionscompareoptionsfromlcmapflags-method"></a>Método Conversions.CompareOptionsFromLCMapFlags
 
-Determinados sinalizadores para LCMapFlags, transforme-os em opções de comparação. Opções desconhecidas são ignoradas.
+Determinados sinalizadores para LCMapFlags, transforme-os em opções de comparação. As opções desconhecidas são ignoradas.
 
 Esta API não está em conformidade com CLS. 
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -65,21 +65,21 @@ public static CompareOptions CompareOptionsFromLCMapFlags(
 #### <a name="parameters"></a>Parâmetros
 
   - lcmapFlags  
-    Tipo: [System. UInt32](/dotnet/api/system.uint32)  
+    Tipo: [System.UInt32](/dotnet/api/system.uint32)  
     
     Sinalizadores LCMapString.
 
-#### <a name="return-value"></a>Retornar valor
+#### <a name="return-value"></a>Valor retornado
 
-Tipo: [System. Globalization. CompareOptions](/dotnet/api/system.globalization.compareoptions)  
-CompareOptions que descreve os sinalizadores (conhecidos).  
+Tipo: [System.Globalization.CompareOptions](/dotnet/api/system.globalization.compareoptions)  
+CompareOptions que descrevem os sinalizadores (conhecidos).  
 
 ## <a name="see-also"></a>Confira também
 
 #### <a name="reference"></a>Referência
 
-[Classe conversões](./conversions-class.md)
+[Classe Conversions](./conversions-class.md)
 
 [Membros de conversões](./conversions-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -4,33 +4,33 @@ ms.assetid: add946ec-604c-4bfe-aff8-2f172ba44f73
 title: Trabalhando com fontes
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6db17aceb0eef409901bd2ad179fe3a67c712299
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a155fa0537521741f31397385e54efe4a1739e93c89fb86c0b280f5c063022ed
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104296924"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119964266"
 ---
 # <a name="working-with-sources"></a>Trabalhando com fontes
 
-\[Essa API não tem suporte e pode ser alterada ou não estar disponível no futuro.\]
+\[Essa API não tem suporte e pode ser alterada ou não disponível no futuro.\]
 
-Um objeto de origem representa um único fluxo de mídia de um arquivo de origem. As fontes fornecem o material bruto para um projeto. Tudo o mais na linha do tempo existe para fornecer estrutura (faixas, composições e grupos) ou para modificar fontes (efeitos e transições).
+Um objeto de origem representa um único fluxo de mídia de um arquivo de origem. As fontes fornecem o material bruto para um projeto. Todo o resto na linha do tempo existe para fornecer estrutura (faixas, composições e grupos) ou para modificar fontes (efeitos e transições).
 
-Este artigo descreve vários detalhes relacionados a fontes no Microsoft® DirectShow® a edição de serviços (DES). Para obter informações sobre as etapas básicas necessárias para adicionar uma origem à linha do tempo, consulte [construindo uma linha do tempo](constructing-a-timeline.md).
+Este artigo descreve vários detalhes relacionados às fontes no DES (Microsoft® DirectShow® Editing Services). Para obter informações sobre as etapas básicas necessárias para adicionar uma fonte à linha do tempo, consulte [Constructing a Timeline](constructing-a-timeline.md).
 
 Este artigo inclui as seções a seguir.
 
 -   [Definindo propriedades em fontes](setting-properties-on-sources.md)
--   [Usando o detector de mídia](using-the-media-detector.md)
--   [Usando o localizador de mídia](using-the-media-locator.md)
+-   [Usando o Detector de Mídia](using-the-media-detector.md)
+-   [Usando o Localizador de Mídia](using-the-media-locator.md)
 -   [Outros objetos de origem](other-source-objects.md)
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[Usando os serviços de edição do DirectShow](using-directshow-editing-services.md)
+[Usando DirectShow de edição](using-directshow-editing-services.md)
 </dt> </dl>
 
  

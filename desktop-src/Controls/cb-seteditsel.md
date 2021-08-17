@@ -1,9 +1,9 @@
 ---
-title: Mensagem de CB_SETEDITSEL (WinUser. h)
-description: Um aplicativo envia uma \_ mensagem de SETEDITSEL CB para selecionar caracteres no controle de edição de uma caixa de combinação.
+title: CB_SETEDITSEL mensagem (Winuser.h)
+description: Um aplicativo envia uma mensagem CB SETEDITSEL para selecionar caracteres \_ no controle de edição de uma caixa de combinação.
 ms.assetid: 25a07341-a21c-42a9-a220-62650997757b
 keywords:
-- Controles de CB_SETEDITSEL de mensagens do Windows
+- CB_SETEDITSEL controles Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a54e09697e266b4e0c4260104e90f454a5e3edfb
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 0e8deb133559332ea8f727758086e19cb17483b4c343f8b3f8f1a3694911eedd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455118"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117832263"
 ---
-# <a name="cb_seteditsel-message"></a>\_Mensagem de SETEDITSEL CB
+# <a name="cb_seteditsel-message"></a>Mensagem CB \_ SETEDITSEL
 
-Um aplicativo envia uma mensagem de **\_ SETEDITSEL CB** para selecionar caracteres no controle de edição de uma caixa de combinação.
+Um aplicativo envia uma **mensagem CB \_ SETEDITSEL** para selecionar caracteres no controle de edição de uma caixa de combinação.
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -36,18 +36,18 @@ Este parâmetro não é usado.
 
 </dd> <dt>
 
-*lParam* \[ no\]
+*lParam* \[ Em\]
 </dt> <dd>
 
-O [**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) de *lParam* especifica a posição inicial. Se **LOWORD** for-1, a seleção, se houver, será removida.
+A [**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) de *lParam* especifica a posição inicial. Se o **LOWORD** for -1, a seleção, se for, será removida.
 
-O [**HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) de *lParam* especifica a posição final. Se **HIWORD** for-1, todo o texto da posição inicial para o último caractere no controle de edição será selecionado.
+A [**HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) de *lParam* especifica a posição final. Se **HIWORD for** -1, todo o texto da posição inicial para o último caractere no controle de edição será selecionado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Se a mensagem tiver sucesso, o valor de retorno será **true**. Se a mensagem for enviada para uma caixa de combinação com o estilo do [**CBS \_ DROPDOWNLIST**](combo-box-styles.md) , será CB \_ Err.
+Se a mensagem for bem-sucedida, o valor de retorno será **TRUE.** Se a mensagem for enviada para uma caixa de combinação com o estilo [**CBS \_ DROPDOWNLIST,**](combo-box-styles.md) ela será CB \_ ERR.
 
 ## <a name="remarks"></a>Comentários
 
@@ -59,9 +59,9 @@ As posições são baseadas em zero. O primeiro caractere do controle de ediçã
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                                     |
-| parâmetro<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                                           |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                                     |
+| Cabeçalho<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -72,7 +72,7 @@ As posições são baseadas em zero. O primeiro caractere do controle de ediçã
 **Referência**
 </dt> <dt>
 
-[**\_GETEDITSEL CB**](cb-geteditsel.md)
+[**CB \_ GETEDITSEL**](cb-geteditsel.md)
 </dt> <dt>
 
 **Outros recursos**

@@ -4,9 +4,9 @@ description: Chamado quando o cliente recebe uma mensagem do sistema.
 ms.assetid: 9D230AA3-30F8-4BDF-89D6-D33AF42D0E85
 ms.tgt_platform: multiple
 keywords:
-- Serviços de Área de Trabalho Remota do método OnServiceMessageReceived
-- Método OnServiceMessageReceived Serviços de Área de Trabalho Remota, interface IMsTscAxEvents
-- Serviços de Área de Trabalho Remota de interface IMsTscAxEvents, método OnServiceMessageReceived
+- Método OnServiceMessageReceived Serviços de Área de Trabalho Remota
+- Método OnServiceMessageReceived Serviços de Área de Trabalho Remota interface , IMsTscAxEvents
+- Interface IMsTscAxEvents Serviços de Área de Trabalho Remota método , OnServiceMessageReceived
 topic_type:
 - apiref
 api_name:
@@ -17,14 +17,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 05a26b78fa31667fb550848d4edd7918aa2bde3e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 9ca511710834f8aa9fdda02565c33c4732e4cba9300e74ad3b48276d74890bc2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103644797"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117757244"
 ---
-# <a name="imstscaxeventsonservicemessagereceived-method"></a>Método IMsTscAxEvents:: OnServiceMessageReceived
+# <a name="imstscaxeventsonservicemessagereceived-method"></a>Método IMsTscAxEvents::OnServiceMessageReceived
 
 Chamado quando o cliente recebe uma mensagem do sistema.
 
@@ -43,20 +43,20 @@ void OnServiceMessageReceived(
 
 <dl> <dt>
 
-*mensagens* \[ no\]
+*serviceMessage* \[ Em\]
 </dt> <dd>
 
 Especifica a mensagem do sistema.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-Para obter mais informações sobre mensagens do sistema, consulte [Configurar mensagens para um servidor Gateway área de trabalho remota](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd834700(v=ws.11)).
+Para obter mais informações sobre mensagens do sistema, consulte [Configure Messaging for a Área de Trabalho Remota Gateway Server](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd834700(v=ws.11)).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -76,7 +76,7 @@ Para obter mais informações sobre mensagens do sistema, consulte [Configurar m
 
 <dl> <dt>
 
-[**IMsTscAxEvents**](imstscaxevents-interface.md)
+[**Imstscaxevents**](imstscaxevents-interface.md)
 </dt> </dl>
 
  

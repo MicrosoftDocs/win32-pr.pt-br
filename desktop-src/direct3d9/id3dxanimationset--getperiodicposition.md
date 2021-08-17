@@ -1,7 +1,7 @@
 ---
-description: Retorna a posição de hora no período de tempo local de um conjunto de animações.
+description: Retorna a posição de hora no período local de um conjunto de animação.
 ms.assetid: d822e1d8-f371-43a1-bbcf-2223e28a200a
-title: 'Método ID3DXAnimationSet:: GetPeriodicPosition (D3dx9anim. h)'
+title: Método ID3DXAnimationSet::GetPeriodicPosition (D3dx9anim.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: a3c4f2e8e57efdfe0681b8ae691e0b5de42624e1
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 8451e3332b61d7e6e993de7df0832a78c0c45c0240633fd5f421998816f7f26f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104298836"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119122057"
 ---
-# <a name="id3dxanimationsetgetperiodicposition-method"></a>Método ID3DXAnimationSet:: GetPeriodicPosition
+# <a name="id3dxanimationsetgetperiodicposition-method"></a>Método ID3DXAnimationSet::GetPeriodicPosition
 
-Retorna a posição de hora no período de tempo local de um conjunto de animações.
+Retorna a posição de hora no período local de um conjunto de animação.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,24 +40,24 @@ DOUBLE GetPeriodicPosition(
 
 <dl> <dt>
 
-*Posição* \[ no\]
+*Posição* \[ Em\]
 </dt> <dd>
 
-Tipo: **[ **duplo**](../winprog/windows-data-types.md)**
+Tipo: **[ **DOUBLE**](../winprog/windows-data-types.md)**
 
-Hora local do conjunto de animações.
+Hora local do conjunto de animação.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Tipo: **[ **duplo**](../winprog/windows-data-types.md)**
+Tipo: **[ **DOUBLE**](../winprog/windows-data-types.md)**
 
-Posição de tempo conforme medida no período do conjunto de animações. Esse valor será limitado pelo período do conjunto de animações.
+Posição de tempo, conforme medido no período do conjunto de animação. Esse valor será limitado pelo período do conjunto de animação.
 
 ## <a name="remarks"></a>Comentários
 
-A posição de tempo retornada por esse método pode ser usada como o parâmetro PeriodicPosition de [**ID3DXAnimationSet:: GetSRT**](id3dxanimationset--getsrt.md).
+A posição de tempo retornada por esse método pode ser usada como o parâmetro PeriodicPosition de [**ID3DXAnimationSet::GetSRT.**](id3dxanimationset--getsrt.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -65,8 +65,8 @@ A posição de tempo retornada por esse método pode ser usada como o parâmetro
 
 | Requisito | Valor |
 |--------------------|----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3dx9anim. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| parâmetro<br/>  | <dl> <dt>D3dx9anim.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

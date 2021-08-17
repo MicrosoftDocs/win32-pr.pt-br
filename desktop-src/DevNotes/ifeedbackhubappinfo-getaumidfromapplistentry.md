@@ -1,7 +1,7 @@
 ---
-description: 'Método IFeedbackHubAppInfo:: GetAumidFromAppListEntry-essa API não está disponível para todos os aplicativos. A menos que seu aplicativo seja provisionado especialmente pela Microsoft, as chamadas para essas APIs falharão em tempo de execução.'
+description: Método IFeedbackHubAppInfo::GetAumidFromAppListEntry – essa API não está disponível para todos os aplicativos. A menos que seu aplicativo seja especialmente provisionado pela Microsoft, as chamadas a essas APIs falharão em runtime.
 ms.assetid: F205911F-7AA3-464F-A408-3BF549E1112A
-title: 'Método IFeedbackHubAppInfo:: GetAumidFromAppListEntry'
+title: Método IFeedbackHubAppInfo::GetAumidFromAppListEntry
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -19,9 +19,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118404542"
 ---
-# <a name="ifeedbackhubappinfogetaumidfromapplistentry-method"></a>Método IFeedbackHubAppInfo:: GetAumidFromAppListEntry
+# <a name="ifeedbackhubappinfogetaumidfromapplistentry-method"></a>Método IFeedbackHubAppInfo::GetAumidFromAppListEntry
 
-Esta API não está disponível para todos os aplicativos. A menos que seu aplicativo seja provisionado especialmente pela Microsoft, as chamadas para essas APIs falharão em tempo de execução.
+Essa API não está disponível para todos os aplicativos. A menos que seu aplicativo seja especialmente provisionado pela Microsoft, as chamadas a essas APIs falharão em runtime.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -39,17 +39,17 @@ virtual void GetAumidFromAppListEntry(
 
 <dl> <dt>
 
-*appListEntry* \[ em, opcional\]
+*appListEntry* \[ in, opcional\]
 </dt> <dd>
 
-Esta API não está disponível para todos os aplicativos. A menos que seu aplicativo seja provisionado especialmente pela Microsoft, as chamadas para essas APIs falharão em tempo de execução.
+Essa API não está disponível para todos os aplicativos. A menos que seu aplicativo seja especialmente provisionado pela Microsoft, as chamadas a essas APIs falharão em runtime.
 
 </dd> <dt>
 
-*valor* \[ do out, opcional\]
+*value* \[ out, opcional\]
 </dt> <dd>
 
-Esta API não está disponível para todos os aplicativos. A menos que seu aplicativo seja provisionado especialmente pela Microsoft, as chamadas para essas APIs falharão em tempo de execução.
+Essa API não está disponível para todos os aplicativos. A menos que seu aplicativo seja especialmente provisionado pela Microsoft, as chamadas a essas APIs falharão em runtime.
 
 </dd> </dl>
 
@@ -63,8 +63,8 @@ Esse método não retorna um valor.
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 10 \[ somente aplicativos da área de trabalho\]<br/>          |
-| Servidor mínimo com suporte<br/> | Windows Server 2016 \[ somente aplicativos da área de trabalho\]<br/> |
+| Cliente mínimo com suporte<br/> | \[Windows 10 somente aplicativos da área de trabalho\]<br/>          |
+| Servidor mínimo com suporte<br/> | \[Windows Server 2016 somente aplicativos da área de trabalho\]<br/> |
 
 
 

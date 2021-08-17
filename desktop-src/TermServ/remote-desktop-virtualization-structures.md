@@ -1,42 +1,42 @@
 ---
-title: Estruturas de virtualização Área de Trabalho Remota
-description: A API de virtualização Área de Trabalho Remota dá suporte às seguintes estruturas.
+title: estruturas Área de Trabalho Remota virtualização
+description: A API Área de Trabalho Remota Virtualização do Área de Trabalho Remota dá suporte às estruturas a seguir.
 ms.assetid: 04bfba72-4118-4a1c-af8f-c19994521695
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: faa066f955c596ca2a454934458b626ab2280f52
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: de33d9c6e37be54c63ae17af62575c2f8201194e4c88f14bfef1613a5fde6f46
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105788031"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117756123"
 ---
-# <a name="remote-desktop-virtualization-structures"></a>Estruturas de virtualização Área de Trabalho Remota
+# <a name="remote-desktop-virtualization-structures"></a>estruturas Área de Trabalho Remota virtualização
 
-A API de virtualização Área de Trabalho Remota dá suporte às seguintes estruturas.
+A API Área de Trabalho Remota Virtualização do Área de Trabalho Remota dá suporte às estruturas a seguir.
 
 ## <a name="in-this-section"></a>Nesta seção
 
 <dl> <dt>
 
-[**exibição do cliente \_**](/windows/win32/api/sessdirpublictypes/ns-sessdirpublictypes-client_display)
+[**EXIBIÇÃO DO \_ CLIENTE**](/windows/win32/api/sessdirpublictypes/ns-sessdirpublictypes-client_display)
 </dt> <dd>
 
-Contém informações sobre a exibição de um cliente de Conexão de Área de Trabalho Remota (RDC).
+Contém informações sobre a exibição de um Conexão de Área de Trabalho Remota (RDC).
 
 </dd> <dt>
 
-[**\_CONNECTIONPOINT tssd**](/windows/win32/api/sessdirpublictypes/ns-sessdirpublictypes-tssd_connectionpoint)
+[**ConnectionPoint do \_ TSSD**](/windows/win32/api/sessdirpublictypes/ns-sessdirpublictypes-tssd_connectionpoint)
 </dt> <dd>
 
 Define o endereço IP de um destino.
 
 </dd> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

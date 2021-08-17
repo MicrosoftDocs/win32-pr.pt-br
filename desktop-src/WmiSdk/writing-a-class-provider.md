@@ -5,16 +5,16 @@ ms.tgt_platform: multiple
 title: Escrevendo um provedor de classe
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ff1e20115c4f833ad828e8d181ca97782d233130
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7b45815c795b6f43f3e7ec99b9ce9535c4d14b2bc8426ea5ca6b44f736415bbf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105815535"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118311935"
 ---
 # <a name="writing-a-class-provider"></a>Escrevendo um provedor de classe
 
-Um provedor de classe gerencia uma classe ou uma série de classes para o WMI. Um provedor de classe pode ser Push ou pull; ou seja, ele pode armazenar seus próprios dados ou permitir que o WMI armazene dados para ele no serviço de gerenciamento do Windows. Embora um provedor de classes seja instalado em um computador específico, ele pode alterar as definições de classe em toda a empresa. Portanto, a maioria dos desenvolvedores geralmente não cria provedores de classe.
+Um provedor de classe gerencia uma classe ou uma série de classes para o WMI. Um provedor de classe pode ser Push ou pull; ou seja, ele pode armazenar seus próprios dados ou permitir que o WMI armazene dados para ele no serviço de gerenciamento de Windows. Embora um provedor de classes seja instalado em um computador específico, ele pode alterar as definições de classe em toda a empresa. Portanto, a maioria dos desenvolvedores geralmente não cria provedores de classe.
 
 Antes de construir um provedor de classe, verifique se as classes com suporte realmente devem ser geradas dinamicamente. Na maioria dos casos, a lista de classes é uma alteração lenta e finita. Se esse for o caso, você não precisará criar um provedor de classe. Em vez disso, você pode posicionar as definições de classe no repositório WMI usando a API WMI ou um arquivo MOF.
 

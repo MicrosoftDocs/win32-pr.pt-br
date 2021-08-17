@@ -1,11 +1,11 @@
 ---
-title: Atributo local-sinalizadores de política
+title: Atributo Local-Policy-Flags
 description: Sinalizadores que determinam onde um computador obtém sua política. Referência de política local.
 ms.assetid: 1f2fa723-507a-4e27-a325-8bd6f6cb6bd6
 ms.tgt_platform: multiple
 keywords:
-- Atributo local-de-política-sinalizadores-esquema do AD
-- Esquema de AD do atributo localPolicyFlags
+- Esquema do AD do atributo Local-Policy-Flags
+- Esquema do AD do atributo localPolicyFlags
 topic_type:
 - apiref
 api_name:
@@ -21,7 +21,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119301846"
 ---
-# <a name="local-policy-flags-attribute"></a>Atributo local-sinalizadores de política
+# <a name="local-policy-flags-attribute"></a>Atributo Local-Policy-Flags
 
 Sinalizadores que determinam onde um computador obtém sua política. Referência de política local.
 
@@ -30,12 +30,12 @@ Sinalizadores que determinam onde um computador obtém sua política. Referênci
 | Entrada | Valor |
 |-------------------|--------------------------------------|
 | CN                | Sinalizadores de política local                   |
-| LDAP-Display-Name | localPolicyFlags                     |
+| Ldap-Display-Name | localPolicyFlags                     |
 | Tamanho              | \-                                   |
 | Privilégio de atualização  | \-                                   |
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.56                |
-| System-ID-GUID    | bf96799e-0de6-11d0-a285-00aa003049e2 |
+| System-Id-Guid    | bf96799e-0de6-11d0-a285-00aa003049e2 |
 | Syntax            | [**Enumeração**](s-enumeration.md) |
 
 
@@ -58,10 +58,10 @@ Sinalizadores que determinam onde um computador obtém sua política. Referênci
 | ID do link                | \-                                        |
 | MAPI-Id                | \-                                        |
 | System-Only            | Falso                                     |
-| É de valor único       | Verdadeiro                                      |
+| Tem valor único       | Verdadeiro                                      |
 | É indexado             | Falso                                     |
-| No catálogo global      | Falso                                     |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                              |
+| No Catálogo Global      | Falso                                     |
+| Descritor de segurança NT | O:BAG:BAD:S:                              |
 | Range-Lower            | \-                                        |
 | Range-Upper            | \-                                        |
 | Search-Flags           | 0x00000000                                |
@@ -79,10 +79,10 @@ Sinalizadores que determinam onde um computador obtém sua política. Referênci
 | ID do link                | \-                                        |
 | MAPI-Id                | \-                                        |
 | System-Only            | Falso                                     |
-| É de valor único       | Verdadeiro                                      |
+| Tem valor único       | Verdadeiro                                      |
 | É indexado             | Falso                                     |
-| No catálogo global      | Falso                                     |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                              |
+| No Catálogo Global      | Falso                                     |
+| Descritor de segurança NT | O:BAG:BAD:S:                              |
 | Range-Lower            | \-                                        |
 | Range-Upper            | \-                                        |
 | Search-Flags           | 0x00000000                                |
@@ -100,10 +100,10 @@ Sinalizadores que determinam onde um computador obtém sua política. Referênci
 | ID do link                | \-                                        |
 | MAPI-Id                | \-                                        |
 | System-Only            | Falso                                     |
-| É de valor único       | Verdadeiro                                      |
+| Tem valor único       | Verdadeiro                                      |
 | É indexado             | Falso                                     |
-| No catálogo global      | Falso                                     |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                              |
+| No Catálogo Global      | Falso                                     |
+| Descritor de segurança NT | O:BAG:BAD:S:                              |
 | Range-Lower            | \-                                        |
 | Range-Upper            | \-                                        |
 | Search-Flags           | 0x00000000                                |
@@ -121,10 +121,10 @@ Sinalizadores que determinam onde um computador obtém sua política. Referênci
 | ID do link                | \-                                        |
 | MAPI-Id                | \-                                        |
 | System-Only            | Falso                                     |
-| É de valor único       | Verdadeiro                                      |
+| Tem valor único       | Verdadeiro                                      |
 | É indexado             | Falso                                     |
-| No catálogo global      | Falso                                     |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                              |
+| No Catálogo Global      | Falso                                     |
+| Descritor de segurança NT | O:BAG:BAD:S:                              |
 | Range-Lower            | \-                                        |
 | Range-Upper            | \-                                        |
 | Search-Flags           | 0x00000000                                |
@@ -142,10 +142,10 @@ Sinalizadores que determinam onde um computador obtém sua política. Referênci
 | ID do link                | \-                                        |
 | MAPI-Id                | \-                                        |
 | System-Only            | Falso                                     |
-| É de valor único       | Verdadeiro                                      |
+| Tem valor único       | Verdadeiro                                      |
 | É indexado             | Falso                                     |
-| No catálogo global      | Falso                                     |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                              |
+| No Catálogo Global      | Falso                                     |
+| Descritor de segurança NT | O:BAG:BAD:S:                              |
 | Range-Lower            | \-                                        |
 | Range-Upper            | \-                                        |
 | Search-Flags           | 0x00000000                                |
@@ -163,10 +163,10 @@ Sinalizadores que determinam onde um computador obtém sua política. Referênci
 | ID do link                | \-                                        |
 | MAPI-Id                | \-                                        |
 | System-Only            | Falso                                     |
-| É de valor único       | Verdadeiro                                      |
+| Tem valor único       | Verdadeiro                                      |
 | É indexado             | Falso                                     |
-| No catálogo global      | Falso                                     |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                              |
+| No Catálogo Global      | Falso                                     |
+| Descritor de segurança NT | O:BAG:BAD:S:                              |
 | Range-Lower            | \-                                        |
 | Range-Upper            | \-                                        |
 | Search-Flags           | 0x00000000                                |

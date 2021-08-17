@@ -1,23 +1,23 @@
 ---
-description: A política de metadados de foto para a propriedade System. GPS. LongitudeRef.
+description: A política de metadados de foto para a propriedade System.GPS.LongitudeRef.
 ms.assetid: 6e7b3b87-70e5-4c6a-a9b3-959eab38f1f0
-title: Política de metadados de foto System. GPS. LongitudeRef
+title: Política de metadados de foto System.GPS.LongitudeRef
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 72a93d37b59ca7c77bc05e049860cf4e2608eb60
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 00908f0c76305c745e1146677f32bee7b9724c08510f273c1627ed56e139d02b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105760723"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119931726"
 ---
-# <a name="systemgpslongituderef-photo-metadata-policy"></a>Política de metadados de foto System. GPS. LongitudeRef
+# <a name="systemgpslongituderef-photo-metadata-policy"></a>Política de metadados de foto System.GPS.LongitudeRef
 
-A política de metadados de foto para a propriedade [System. GPS. LongitudeRef](../properties/props-system-gps-longituderef.md) .
+A política de metadados de foto para a [propriedade System.GPS.LongitudeRef.](../properties/props-system-gps-longituderef.md)
 
-### <a name="pkey"></a>PKEY
+### <a name="pkey"></a>Pkey
 
-PKEY \_ GPS \_ LongitudeRef
+\_LongitudeRef do GPS \_ PKEY
 
 ### <a name="containers"></a>Contêineres
 
@@ -25,19 +25,19 @@ JPEG, TIFF
 
 ### <a name="read-only"></a>Somente leitura
 
-No
+Não
 
-### <a name="output-propvariant-type"></a>Tipo de PROPVARIANT de saída
+### <a name="output-propvariant-type"></a>Tipo PROPVARIANT de saída
 
-LPWStr do VT \_
+VT \_ LPWSTR
 
 ### <a name="input-type"></a>Tipo de entrada
 
 Cadeia de caracteres.
 
-### <a name="conflict-resolution-policy"></a>Política de resolução de conflito
+### <a name="conflict-resolution-policy"></a>Política de resolução de conflitos
 
-Os valores de esquemas diferentes são reconciliados.
+Valores de esquemas diferentes são reconciliados.
 
 ### <a name="precedence-of-paths-jpeg"></a>Precedência de caminhos (JPEG)
 
@@ -47,8 +47,8 @@ Se o arquivo estiver no formato JPEG, o manipulador lerá, gravará e removerá 
 
 | Ordem | Caminho                         | Formato de disco | Obrigatório |
 |-------|------------------------------|-------------|----------|
-| 1     | /xmp/exif:GPSLongitudeRef    | Unicode     | Yes      |
-| 2     | /App1/IFD/GPS/ \\ {UShort = 3 \\ } | ASCII       | No       |
+| 1     | /xmp/exif:GPSLongitudeRef    | Unicode     | Sim      |
+| 2     | /app1/ifd/gps/ \\ {ushort=3 \\ } | ASCII       | Não       |
 
 
 
@@ -62,8 +62,8 @@ Se o arquivo estiver no formato TIFF, o manipulador lerá, gravará e removerá 
 
 | Ordem | Caminho                          | Formato de disco | Obrigatório |
 |-------|-------------------------------|-------------|----------|
-| 1     | /ifd/xmp/exif:GPSLongitudeRef | Unicode     | Yes      |
-| 2     | /IFD/GPS/ \\ {UShort = 3 \\ }       | ASCII       | Não       |
+| 1     | /ifd/xmp/exif:GPSLongitudeRef | Unicode     | Sim      |
+| 2     | /ifd/gps/ \\ {ushort=3 \\ }       | ASCII       | Não       |
 
 
 
@@ -75,7 +75,7 @@ Se o arquivo estiver no formato TIFF, o manipulador lerá, gravará e removerá 
 
 <dl> <dt>
 
-[System. GPS. LongitudeRef](../properties/props-system-gps-longituderef.md)
+[System.GPS.LongitudeRef](../properties/props-system-gps-longituderef.md)
 </dt> </dl>
 
  

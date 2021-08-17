@@ -1,11 +1,11 @@
 ---
-title: Atributo ms-DFSR-DirectoryFilter
-description: Contém a cadeia de caracteres de filtro aplicada aos diretórios.
+title: atributo ms-DFSR-DirectoryFilter
+description: Contém a cadeia de caracteres de filtro que é aplicada aos diretórios.
 ms.assetid: baea6575-80d3-4f69-8e98-47f4a5941388
 ms.tgt_platform: multiple
 keywords:
-- Esquema do AD do atributo ms-DFSR-DirectoryFilter
-- Esquema do AD do atributo msDFSR-DirectoryFilter
+- Esquema de AD do atributo ms-DFSR-DirectoryFilter
+- Esquema de AD do atributo msDFSR-DirectoryFilter
 topic_type:
 - apiref
 api_name:
@@ -21,22 +21,22 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118685862"
 ---
-# <a name="ms-dfsr-directoryfilter-attribute"></a>Atributo ms-DFSR-DirectoryFilter
+# <a name="ms-dfsr-directoryfilter-attribute"></a>atributo ms-DFSR-DirectoryFilter
 
-Contém a cadeia de caracteres de filtro aplicada aos diretórios.
+Contém a cadeia de caracteres de filtro que é aplicada aos diretórios.
 
 
 
 | Entrada | Valor |
 |-------------------|---------------------------------------------|
-| CN                | ms-DFSR-DirectoryFilter                     |
-| Ldap-Display-Name | msDFSR-DirectoryFilter                      |
+| CN                | MS-DFSR-DirectoryFilter                     |
+| LDAP-Display-Name | msDFSR-DirectoryFilter                      |
 | Tamanho              | \-                                          |
 | Privilégio de atualização  | \-                                          |
 | Frequência de atualização  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.6.13.3.13                  |
-| System-Id-Guid    | 93c7b477-1f2e-4b40-b7bf-007e8d038ccf        |
-| Sintaxe            | [**String(Unicode)**](s-string-unicode.md) |
+| System-ID-GUID    | 93c7b477-1f2e-4b40-b7bf-007e8d038ccf        |
+| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
 
 
 
@@ -56,15 +56,15 @@ Contém a cadeia de caracteres de filtro aplicada aos diretórios.
 | ID do link                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| Tem valor único       | True                                                         |
+| É de valor único       | Verdadeiro                                                         |
 | É indexado             | Falso                                                        |
-| No Catálogo Global      | Falso                                                        |
-| Descritor de segurança NT | O:BAG:BAD:S:                                                 |
+| No catálogo global      | Falso                                                        |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                 |
 | Range-Lower            | 0                                                            |
 | Range-Upper            | 32767                                                        |
 | Search-Flags           | 0x00000000                                                   |
 | System-Flags           | 0x00000000                                                   |
-| Classes usadas em        | [**ms-DFSR-ContentSet**](c-msdfsr-contentset.md)<br/> |
+| Classes usadas em        | [**MS-DFSR-Contentset**](c-msdfsr-contentset.md)<br/> |
 
 
 
@@ -77,15 +77,15 @@ Contém a cadeia de caracteres de filtro aplicada aos diretórios.
 | ID do link                | \-                                                                                                                                    |
 | MAPI-Id                | \-                                                                                                                                    |
 | System-Only            | Falso                                                                                                                                 |
-| Tem valor único       | True                                                                                                                                  |
+| É de valor único       | Verdadeiro                                                                                                                                  |
 | É indexado             | Falso                                                                                                                                 |
-| No Catálogo Global      | Falso                                                                                                                                 |
-| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                                          |
+| No catálogo global      | Falso                                                                                                                                 |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                          |
 | Range-Lower            | 0                                                                                                                                     |
 | Range-Upper            | 32767                                                                                                                                 |
 | Search-Flags           | 0x00000000                                                                                                                            |
 | System-Flags           | 0x00000000                                                                                                                            |
-| Classes usadas em        | [**ms-DFSR-ReplicationGroup**](c-msdfsr-replicationgroup.md)<br/> [**ms-DFSR-ContentSet**](c-msdfsr-contentset.md)<br/> |
+| Classes usadas em        | [**MS-DFSR-telereplication**](c-msdfsr-replicationgroup.md)<br/> [**MS-DFSR-Contentset**](c-msdfsr-contentset.md)<br/> |
 
 
 
@@ -98,10 +98,10 @@ Contém a cadeia de caracteres de filtro aplicada aos diretórios.
 | ID do link                | \-                                                                                                                                    |
 | MAPI-Id                | \-                                                                                                                                    |
 | System-Only            | Falso                                                                                                                                 |
-| Tem valor único       | True                                                                                                                                  |
+| É de valor único       | Verdadeiro                                                                                                                                  |
 | É indexado             | Falso                                                                                                                                 |
-| No Catálogo Global      | Falso                                                                                                                                 |
-| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                                          |
+| No catálogo global      | Falso                                                                                                                                 |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                          |
 | Range-Lower            | 0                                                                                                                                     |
 | Range-Upper            | 32767                                                                                                                                 |
 | Search-Flags           | 0x00000000                                                                                                                            |
@@ -119,7 +119,7 @@ Contém a cadeia de caracteres de filtro aplicada aos diretórios.
 | ID do link                | \-                                                                                                                                    |
 | MAPI-Id                | \-                                                                                                                                    |
 | System-Only            | Falso                                                                                                                                 |
-| Tem valor único       | True                                                                                                                                  |
+| Tem valor único       | Verdadeiro                                                                                                                                  |
 | É indexado             | Falso                                                                                                                                 |
 | No Catálogo Global      | Falso                                                                                                                                 |
 | Descritor de segurança NT | O:BAG:BAD:S:                                                                                                                          |

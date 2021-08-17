@@ -1,5 +1,5 @@
 ---
-description: Define efeitos de permuta.
+description: Define os efeitos de permuta.
 ms.assetid: 522a5f71-3ad9-4cfc-a899-e25b9b721b1b
 title: Enumeração D3DSWAPEFFECT (D3D9Types.h)
 ms.topic: reference
@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - D3D9Types.h
-ms.openlocfilehash: 58354e35ca8456f6fde57d2f2567a6b6a202f6d7
-ms.sourcegitcommit: b40a986d5ded926ae7617119cdd35d99b533bad9
+ms.openlocfilehash: db869d277c98c3e99bd2bbc54f7e40ac86770f647e8258ee5718a96eaedec18c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "110343031"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118096611"
 ---
 # <a name="d3dswapeffect-enumeration"></a>Enumeração D3DSWAPEFFECT
 
-Define efeitos de permuta.
+Define os efeitos de permuta.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```cpp
 typedef enum D3DSWAPEFFECT { 
@@ -41,18 +41,18 @@ typedef enum D3DSWAPEFFECT {
 
 <dl> <dt>
 
-<span id="D3DSWAPEFFECT_DISCARD"></span><span id="d3dswapeffect_discard"></span>**D3DSWAPEFFECT \_ DISCARD**
+<span id="D3DSWAPEFFECT_DISCARD"></span><span id="d3dswapeffect_discard"></span>**\_Descartar D3DSWAPEFFECT**
 </dt> <dd>
 
-Quando uma cadeia de permuta é criada com um efeito de permuta de D3DSWAPEFFECT FLIP ou \_ D3DSWAPEFFECT COPY, o runtime garantirá que uma \_ operação [**IDirect3DDevice9::P resent**](/windows/desktop/api) não afetará o conteúdo de nenhum dos buffers de fundo. Infelizmente, atender a essa garantia pode envolver sobrecargas substanciais de processamento ou memória de vídeo, especialmente ao implementar semântica de invasões para uma cadeia de permuta em janelas ou semântica de cópia para uma cadeia de permuta de tela inteira. Um aplicativo pode usar o efeito de troca D3DSWAPEFFECT DISCARD para evitar essas sobrecargas e permitir que o driver de exibição selecione a técnica de apresentação mais eficiente para a cadeia \_ de permuta. Esse também é o único efeito de permuta que pode ser usado ao especificar um valor diferente de D3DMULTISAMPLE NONE para o membro \_ MultiSampleType [**de D3DPRESENT \_ PARAMETERS**](d3dpresent-parameters.md).
+Quando uma cadeia de permuta é criada com um efeito de permuta de D3DSWAPEFFECT \_ flip ou D3DSWAPEFFECT \_ Copy, o tempo de execução garantirá que uma operação [**IDirect3DDevice9::P reenviada**](/windows/desktop/api) não afete o conteúdo de nenhum buffer de fundo. Infelizmente, atender a essa garantia pode envolver uma memória de vídeo substancial ou sobrecargas de processamento, especialmente ao implementar semânticas invertidas para uma cadeia de permuta em janelas ou uma semântica de cópia para uma cadeia de troca de tela inteira. Um aplicativo pode usar o \_ efeito de permuta de descarte D3DSWAPEFFECT para evitar essas sobrecargas e habilitar o driver de vídeo para selecionar a técnica de apresentação mais eficiente para a cadeia de permuta. Esse também é o único efeito de permuta que pode ser usado ao especificar um valor diferente de D3DMULTISAMPLE \_ None para o membro Multiamostratype [**dos \_ parâmetros D3DPRESENT**](d3dpresent-parameters.md).
 
-Como uma cadeia de permuta que usa D3DSWAPEFFECT FLIP, uma cadeia de permuta que usa D3DSWAPEFFECT DISCARD pode incluir mais de um buffer de retorno, qualquer um deles pode ser acessado usando \_ \_ [**IDirect3DDevice9::GetBackBuffer**](/windows/desktop/api) ou [**IDirect3DSwapChain9::GetBackBuffer**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3dswapchain9-getbackbuffer). A cadeia de permuta é melhor prevista como uma fila na qual 0 sempre indexa o buffer de fundo que será exibido pela próxima operação Presente e da qual os buffers serão descartados quando eles foram exibidos.
+Como uma cadeia de permuta que usa D3DSWAPEFFECT \_ flip, uma cadeia de troca que usa o \_ descarte D3DSWAPEFFECT pode incluir mais de um buffer de fundo, qualquer um deles pode ser acessado usando [**IDirect3DDevice9:: GetBackBuffer**](/windows/desktop/api) ou [**IDirect3DSwapChain9:: GetBackBuffer**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3dswapchain9-getbackbuffer). A cadeia de permuta é a melhor previu como uma fila na qual 0 sempre indexa o buffer de fundo que será exibido pela próxima operação presente e de quais buffers serão descartados quando forem exibidos.
 
-Um aplicativo que usa esse efeito de permuta não pode fazer suposições sobre o conteúdo de um buffer de fundo descartado e, portanto, deve atualizar um buffer de fundo inteiro antes de invocar uma operação Present que o exibiria. Embora isso não seja imposto, a versão de depuração do runtime substituirá o conteúdo dos buffers de fundo descartados por dados aleatórios para permitir que os desenvolvedores verifiquem se seus aplicativos estão atualizando todas as superfícies do buffer de fundo corretamente.
+Um aplicativo que usa esse efeito de permuta não pode fazer suposições sobre o conteúdo de um buffer de fundo descartado e, portanto, atualizar um buffer de fundo inteiro antes de invocar uma operação presente que o exibiria. Embora isso não seja imposto, a versão de depuração do tempo de execução substituirá o conteúdo dos buffers de fundo descartados por dados aleatórios para permitir que os desenvolvedores verifiquem se os aplicativos estão atualizando todas as superfícies de buffer de fundo corretamente.
 
 </dd> <dt>
 
-<span id="D3DSWAPEFFECT_FLIP"></span><span id="d3dswapeffect_flip"></span>**D3DSWAPEFFECT \_ FLIP**
+<span id="D3DSWAPEFFECT_FLIP"></span><span id="d3dswapeffect_flip"></span>**D3DSWAPEFFECT \_ inverter**
 </dt> <dd>
 
 A cadeia de permuta pode incluir vários buffers de fundo e é a melhor previu como uma fila circular que inclui o buffer frontal. Nessa fila, os buffers traseiros são sempre numerados sequencialmente de 0 a (n-1), em que n é o número de buffers de fundo, de modo que 0 denota o buffer apresentado menos recentemente. Quando presente é invocado, a fila é "girada" para que o buffer frontal se torne buffer (n-1), enquanto o buffer de fundo 0 se torna o novo buffer frontal.
@@ -75,34 +75,34 @@ Use uma área dedicada de memória de vídeo que possa ser sobreposta na superf�
 
 Diferenças entre o Direct3D 9 e o Direct3D 9Ex:
 
-- D3DSWAPEFFECT OVERLAY só está disponível no Direct3D9Ex em execução no \_ Windows 7 (ou sistema operacional mais atual).
+- a \_ sobreposição de D3DSWAPEFFECT só está disponível no Direct3D9Ex em execução no Windows 7 (ou mais no sistema operacional atual).
 
 </dd> <dt>
 
 <span id="D3DSWAPEFFECT_FLIPEX"></span><span id="d3dswapeffect_flipex"></span>**D3DSWAPEFFECT \_ FLIPEX**
 </dt> <dd>
 
-Designa quando um aplicativo está adotando o modo de in flip, durante o qual o quadro de um aplicativo é passado em vez de copiado para o DWM (Gerenciador de Janelas da Área de Trabalho) para composição quando o aplicativo está apresentando no modo em janelas. O modo de invasão permite que um aplicativo use com mais eficiência a largura de banda de memória, além de permitir que um aplicativo aproveite as estatísticas de tela inteira presentes. O modo de in flip não afeta o comportamento de tela inteira.
+Designa quando um aplicativo está adotando o modo flip, durante o qual o quadro de um aplicativo é passado em vez de copiado para o Gerenciador de Janelas da Área de Trabalho (DWM) para composição quando o aplicativo é apresentado no modo de janela. O modo Inverter permite que um aplicativo use com mais eficiência a largura de banda da memória, além de permitir que um aplicativo aproveite as estatísticas de tela inteira. O modo Inverter não afeta o comportamento de tela inteira.
 
 > [!Note]  
-> Se você criar uma cadeia de permuta com D3DSWAPEFFECT FLIPEX, não poderá substituir o \_ **membro hDeviceWindow** da estrutura [**D3DPRESENT \_ PARAMETERS**](d3dpresent-parameters.md) quando apresentar um novo quadro para exibição. Ou seja, você deve passar **NULL** para o parâmetro *hDestWindowOverride* [**de IDirect3DDevice9Ex::P resentEx**](/windows/desktop/api/d3d9/nf-d3d9-idirect3ddevice9ex-presentex) para instruir o runtime a usar o **membro hDeviceWindow** **de D3DPRESENT \_ PARAMETERS** para a apresentação.
+> Se você criar uma cadeia de permuta com D3DSWAPEFFECT \_ FLIPEX, não será possível substituir o membro **hDeviceWindow** da estrutura de [**\_ parâmetros D3DPRESENT**](d3dpresent-parameters.md) quando você apresentar um novo quadro para exibição. Ou seja, você deve passar **NULL** para o parâmetro *hDestWindowOverride* de [**IDirect3DDevice9Ex::P resentex**](/windows/desktop/api/d3d9/nf-d3d9-idirect3ddevice9ex-presentex) para instruir o tempo de execução a usar o membro **hDeviceWindow** dos **\_ parâmetros D3DPRESENT** para a apresentação.
 
 Diferenças entre o Direct3D 9 e o Direct3D 9Ex:
 
-- D3DSWAPEFFECT FLIPEX só está disponível no Direct3D9Ex em execução no \_ Windows 7 (ou sistema operacional mais atual).
+- o D3DSWAPEFFECT \_ FLIPEX só está disponível no Direct3D9Ex em execução no Windows 7 (ou mais no sistema operacional atual).
 
 </dd> <dt>
 
-<span id="D3DSWAPEFFECT_FORCE_DWORD"></span><span id="d3dswapeffect_force_dword"></span>**D3DSWAPEFFECT \_ FORCE \_ DWORD**
+<span id="D3DSWAPEFFECT_FORCE_DWORD"></span><span id="d3dswapeffect_force_dword"></span>**D3DSWAPEFFECT \_ forçar \_ DWORD**
 </dt> <dd>
 
-Força essa enumeração a compilar para 32 bits de tamanho. Sem esse valor, alguns compiladores permitiriam que essa enumeração fosse compilada para um tamanho diferente de 32 bits. Este valor não é usado.
+Força essa enumeração a compilar a 32 bits de tamanho. Sem esse valor, alguns compiladores permitiriam que essa enumeração fosse compilada em um tamanho diferente de 32 bits. Este valor não é usado.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-O estado do buffer de fundo após uma chamada para Present é bem definido por cada um desses efeitos de permuta e se o dispositivo Direct3D foi criado com uma cadeia de permuta de tela inteira ou uma cadeia de permuta em janelas não tem efeito sobre esse estado. Em particular, o efeito de troca FLIP D3DSWAPEFFECT opera da mesma forma, seja em janelas ou em tela inteira, e o runtime do Direct3D garante isso criando \_ buffers extras. Como resultado, é recomendável que os aplicativos usem D3DSWAPEFFECT DISCARD sempre que possível para \_ evitar tais penalidades. Isso ocorre porque esse efeito de permuta será sempre o mais eficiente em termos de desempenho e consumo de memória.
+O estado do buffer de fundo após uma chamada para Present é bem definido por cada um desses efeitos de permuta e se o dispositivo Direct3D foi criado com uma cadeia de troca de tela inteira ou se uma cadeia de permuta em janela não tem nenhum efeito sobre esse estado. Em particular, o efeito de permuta alternada do D3DSWAPEFFECT \_ funciona da mesma forma em janela ou em tela inteira, e o tempo de execução do Direct3D garante isso criando buffers extras. Como resultado, é recomendável que os aplicativos usem D3DSWAPEFFECT \_ descarte sempre que possível para evitar essas penalidades. Isso ocorre porque esse efeito de permuta será sempre o mais eficiente em termos de desempenho e consumo de memória.
 
 Os aplicativos que usam D3DSWAPEFFECT \_ inverter ou D3DSWAPEFFECT \_ descartar não devem esperar que o destino de tela inteira funcione. Isso significa que o \_ estado de RENDERIZAÇÃO D3DRS DESTBLEND não funcionará conforme o esperado porque as cadeias de troca de tela inteira com esses efeitos de permuta não têm um formato de pixel explícito do ponto de vista do driver. O driver infere que eles devem assumir o formato de exibição, que não tem um canal alfa. Para contornar isso, execute as seguintes etapas:
 

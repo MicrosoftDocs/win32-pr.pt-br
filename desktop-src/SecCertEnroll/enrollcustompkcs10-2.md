@@ -4,20 +4,20 @@ ms.assetid: ACBD3CE1-6A2A-47EE-9482-7398ABE15F5C
 title: enrollCustomPKCS10_2
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3d20615826bb72b6282144b72a394cde41e35910
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fb88a2295217874a12da8b701a46f8dafe3db1cbf53d01273222e607195a789a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105762033"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117780035"
 ---
 # <a name="enrollcustompkcs10_2"></a>enrollCustomPKCS10 \_ 2
 
 O exemplo de enrollCustomPKCS10 \_ 2 cria uma solicitação personalizada de PKCS \# 10 e tenta registrá-la em uma CA ( [*autoridade de certificação*](/windows/desktop/SecGloss/c-gly) ) corporativa.
 
-## <a name="location"></a>Local
+## <a name="location"></a>Localização
 
-Ao instalar o Microsoft Windows Software Development Kit (SDK), o exemplo é instalado por padrão na pasta *% ProgramFiles%* \\ Microsoft SDKs \\ Windows \\ v 7.0 \\ Samples \\ Security \\ X509 Certificate Enrollment \\ vc \\ enrollCustomPKCS10 \_ 2.
+ao instalar o Microsoft Windows Software Development Kit (SDK), o exemplo é instalado por padrão na pasta *% programfiles%* \\ Microsoft SDKs \\ Windows \\ v 7.0 \\ samples \\ Security \\ X509 Certificate enrollment \\ VC \\ enrollCustomPKCS10 \_ 2.
 
 ## <a name="discussion"></a>Discussão
 

@@ -4,17 +4,17 @@ description: Este tópico descreve os tipos de conteúdo de bitmap aos quais o D
 ms.assetid: BC32CF76-D5E4-4B25-AFD5-42E8DABFA0D0
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c390778fef1ee7ad96c90a8b7706fa635f3615ff
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: bc36253511c060b264039f27975c694272c1c916ad0067c1955fd02f00553d6d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104366643"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118089046"
 ---
 # <a name="bitmap-objects"></a>Objetos de bitmap
 
 > [!NOTE]
-> Para aplicativos no Windows 10, é recomendável usar APIs do Windows. UI. composição em vez de DirectComposition. Para obter mais informações, consulte [modernizar seu aplicativo de área de trabalho usando a camada Visual](/windows/uwp/composition/visual-layer-in-desktop-apps).
+> para aplicativos no Windows 10, é recomendável usar as APIs Windows. UI. composição em vez de DirectComposition. Para obter mais informações, consulte [modernizar seu aplicativo de área de trabalho usando a camada Visual](/windows/uwp/composition/visual-layer-in-desktop-apps).
 
 O Microsoft DirectComposition é um mecanismo de composição de bitmap. Ele permite que os desenvolvedores de aplicativos combinem vários bitmaps e os manipulem de várias maneiras para obter animações e efeitos visuais interessantes em uma interface do usuário do aplicativo. Este tópico descreve os tipos de conteúdo de bitmap aos quais o DirectComposition dá suporte.
 
@@ -27,9 +27,9 @@ O Microsoft DirectComposition é um mecanismo de composição de bitmap. Ele per
 
 ## <a name="bitmap-content"></a>Conteúdo de bitmap
 
-Os aplicativos fornecem DirectComposition com o conteúdo do bitmap para compor e animar criando objetos visuais e, em seguida, definindo a [Propriedade Content](basic-concepts.md) desses objetos. O DirectComposition não oferece nenhum serviço de rasterização. Um aplicativo deve usar outra biblioteca de rasterização baseada em software ou hardware, como [Direct2D](../direct2d/direct2d-portal.md) ou [Direct3D](/windows/desktop/direct3d11/atoc-dx-graphics-direct3d-11) , para preencher os bitmaps que devem ser compostos. Após a composição, o DirectComposition passa o conteúdo de bitmap composto para [Gerenciador de janelas da área de trabalho (DWM)](/windows/desktop/dwm/dwm-overview) para renderização na tela.
+Os aplicativos fornecem DirectComposition com o conteúdo do bitmap para compor e animar criando objetos visuais e, em seguida, definindo a [Propriedade Content](basic-concepts.md) desses objetos. O DirectComposition não oferece nenhum serviço de rasterização. um aplicativo deve usar outra biblioteca de rasterização baseada em software ou por hardware, como [Direct2D](../direct2d/direct2d-portal.md) ou [Direct3D](/windows/desktop/direct3d11/atoc-dx-graphics-direct3d-11) , para preencher os bitmaps que devem ser compostos. Após a composição, o DirectComposition passa o conteúdo de bitmap composto para [Gerenciador de janelas da área de trabalho (DWM)](/windows/desktop/dwm/dwm-overview) para renderização na tela.
 
-**Tipos de conteúdo**   de bitmap com suporte O Microsoft DirectComposition dá suporte aos seguintes tipos de bitmaps:
+**Tipos de conteúdo de bitmap com suporte** O Microsoft DirectComposition dá suporte aos seguintes tipos de bitmaps:
 
 -   [Bitmaps de memória de vídeo](#video-memory-bitmaps)
 -   [Bitmaps de janela](#window-bitmaps)
@@ -70,7 +70,7 @@ Para todos os três tipos de bitmaps, um aplicativo pode associar o mesmo bitmap
 
 Todos os bitmaps têm um formato de 32 bits por pixel (BPP), que inclui oito bits para a transparência por pixel. No entanto, um aplicativo pode especificar como o DirectComposition deve consumir o canal alfa. Em particular, o DirectComposition pode respeitar o canal alfa, ou pode ignorar alfa totalmente; nesse caso, o bitmap é considerado totalmente opaco.
 
-Um modo alfa adicional ignora o canal alfa, mas trata os valores vermelho, verde e azul como valores Alfa por canal em vez da interpretação normal desses canais como intensidades de cor. Esse modo é útil para renderização de ClearType, que requer informações de cobertura de sub-pixel. Para usar o modo alfa por canal, um aplicativo deve primeiro usar [Direct2D](../direct2d/direct2d-portal.md) e [DirectWrite](/windows/desktop/DirectWrite/direct-write-portal) para gravar dados de cobertura de sub-pixel em um bitmap. Em seguida, o aplicativo deve definir o modo alfa correto e especificar uma cor de texto ao associar o bitmap a um Visual. O DirectComposition mistura a cor do texto com os dados de cobertura, que produzem a mesclagem de ClearType em relação ao plano de fundo.
+Um modo alfa adicional ignora o canal alfa, mas trata os valores vermelho, verde e azul como valores Alfa por canal em vez da interpretação normal desses canais como intensidades de cor. Esse modo é útil para renderização de ClearType, que requer informações de cobertura de sub-pixel. para usar o modo alfa por canal, um aplicativo deve primeiro usar [Direct2D](../direct2d/direct2d-portal.md) e [DirectWrite](/windows/desktop/DirectWrite/direct-write-portal) para gravar dados de cobertura de sub-pixel em um bitmap. Em seguida, o aplicativo deve definir o modo alfa correto e especificar uma cor de texto ao associar o bitmap a um Visual. O DirectComposition mistura a cor do texto com os dados de cobertura, que produzem a mesclagem de ClearType em relação ao plano de fundo.
 
 Em situações em que o algoritmo ClearType não é aplicável, como se o bitmap não estiver alinhado em pixel e alinhado com eixo, ou se precisar ser desenhado em uma superfície intermediária, o DirectComposition poderá usar os dados de cobertura de subpixel no bitmap para produzir uma rasterização em escala de cinza, automaticamente e sem custo adicional.
 
@@ -83,6 +83,6 @@ Para obter mais informações, consulte a descrição do parâmetro *alphamode* 
 [Conceitos de DirectComposition](directcomposition-concepts.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

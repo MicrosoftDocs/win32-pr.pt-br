@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 9be825d6117cf1cc14464973146dbe176d696d25
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 041ffccb3301831c91554ef3cda835d3f2e79204730e838b25f26660e76d9a52
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104292840"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119119720"
 ---
 # <a name="output-depth-register"></a>Registro de profundidade de saída
 
@@ -29,19 +29,19 @@ Syntax
 
 
 
- 
+ 
 
 Em que:
 
 
 
-| Name   | Descrição                                                       |
+| Nome   | Descrição                                                       |
 |--------|-------------------------------------------------------------------|
 | oDepth | Novo valor de profundidade para um teste de profundidade no buffer de estêncil de profundidade |
 
 
 
- 
+ 
 
 É importante estar ciente de que a gravação em oDepth causa a perda de qualquer algoritmo de otimização de buffer de profundidade específico do hardware (ou seja, a Z hierárquico) que acelera o desempenho do teste de profundidade.
 
@@ -73,9 +73,9 @@ Se um aplicativo tiver um conjunto de buffer w como seu buffer de profundidade, 
 [Register](dx9-graphics-reference-asm-ps-registers.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

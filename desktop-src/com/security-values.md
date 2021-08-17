@@ -1,27 +1,27 @@
 ---
 title: Valores de segurança
-description: Vários valores afetam a segurança para aplicativos COM, incluindo nível de autenticação, nível de representação, encobrimento, identidade do aplicativo, configuração de política de restrição de software e acompanhamento de referência.
+description: Vários valores afetam a segurança para aplicativos COM, incluindo nível de autenticação, nível de representação, desaproteção, identidade do aplicativo, configuração de política de restrição de software e acompanhamento de referência.
 ms.assetid: c5b6b821-6bc9-43a3-b540-d187efe2533d
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b04c04df77932f1775c4b67579c5d08416e72034
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 07e0a95da867557e7210625a5e668a6955f83fa0c9c4cb679187d2e22dcb172f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104292047"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117918107"
 ---
 # <a name="security-values"></a>Valores de segurança
 
-Vários valores afetam a segurança para aplicativos COM, incluindo nível de autenticação, nível de representação, encobrimento, identidade do aplicativo, configuração de política de restrição de software e acompanhamento de referência.
+Vários valores afetam a segurança para aplicativos COM, incluindo nível de autenticação, nível de representação, desaproteção, identidade do aplicativo, configuração de política de restrição de software e acompanhamento de referência.
 
-Para mais informações, consulte os seguintes tópicos:
+Para obter mais informações, consulte estes tópicos:
 
--   [Nível de autenticação](authentication-level.md) descreve como ajudar a controlar a quantidade de proteção para a comunicação entre objetos com.
--   A [delegação e a representação](delegation-and-impersonation.md) explicam como o encobrimento afeta a identidade apresentada ao servidor durante a representação e como o cliente concede ao servidor a autoridade para agir em seu nome.
--   A [identidade do aplicativo](application-identity.md) identifica e explica as identidades que seu aplicativo pode usar.
--   A [política de restrição de software](software-restriction-policy.md) explica como ajudar a proteger seu sistema contra os perigos associados à execução de código desconhecido.
--   O [acompanhamento de referência](reference-tracking.md) explica como você pode garantir que os objetos não sejam liberados muito cedo.
+-   [Nível de](authentication-level.md) Autenticação descreve como ajudar a controlar a quantidade de proteção para comunicação entre objetos COM.
+-   [A delegação e](delegation-and-impersonation.md) a representação explicam como a desajuste afeta a identidade apresentada ao servidor durante a representação e como o cliente concede ao servidor a autoridade para agir em seu nome.
+-   [A Identidade do](application-identity.md) Aplicativo identifica e explica as identidades que seu aplicativo pode usar.
+-   [A Política de Restrição](software-restriction-policy.md) de Software explica como ajudar a proteger seu sistema contra os riscos associados à execução de código desconhecido.
+-   [O Rastreamento de](reference-tracking.md) Referência explica como você pode garantir que os objetos não sejam liberados muito cedo.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -30,9 +30,9 @@ Para mais informações, consulte os seguintes tópicos:
 [Segurança em COM](security-in-com.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

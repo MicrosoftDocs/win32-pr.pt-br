@@ -26,12 +26,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: e6273df56b588419f2e5ce091a66aeb6912070e3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e523850d41543c55c6662d53c5fe74aa4b18f4dae42a313ab8c149355411e378
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104297154"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119968376"
 ---
 # <a name="jet_columnlistcolumnidcp-property"></a>Propriedade JET_COLUMNLIST. columnidCp
 
@@ -40,7 +40,7 @@ Obtém o columnid da coluna na tabela temporária que armazena a página de cód
 **Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration

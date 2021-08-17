@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 43711c6c394761f599271809419a46311265d8b4
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f80b43cfcf0c89283237f8ff2d3e4f8612050296d7462f54890c3efa908fa9be
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105751768"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119930886"
 ---
 # <a name="drm_saplevel-deprecated"></a>\_SAPLEVEL DRM (preterido)
 
-\[**DRM \_ O SAPLEVEL** não está mais disponível para uso a partir do Windows Vista. Em vez disso, use o PUMA (áudio do modo de usuário protegido) na biblioteca Media Foundation. \]
+\[**DRM \_ o SAPLEVEL** não está mais disponível para uso a partir do Windows Vista. Em vez disso, use o PUMA (áudio do modo de usuário protegido) na biblioteca Media Foundation. \]
 
 A propriedade **DRM \_ SAPLEVEL** especifica o nível de caminho de áudio seguro (SAP) com suporte do seu aplicativo.
 

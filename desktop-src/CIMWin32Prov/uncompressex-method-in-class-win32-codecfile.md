@@ -1,8 +1,8 @@
 ---
-description: Descompacta o arquivo de codec lógico (ou diretório) especificado no caminho do objeto. Esse método é uma versão estendida do método uncompact.
+description: Descompacta o arquivo codec lógico (ou diretório) especificado no caminho do objeto. Esse método é uma versão estendida do método Uncompress.
 ms.assetid: 257c69fa-c4f7-48be-8317-55db4b01601b
 ms.tgt_platform: multiple
-title: Método UncompressEx da classe Win32_CodecFile
+title: Método UncompressEx da classe Win32_CodecFile classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 547062a85336681b78a6081646801e78e4713e3c
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 75a22bbb8050d31778619cb4a5870254e1e840c334fbe8d93d9b7882dc1a9132
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104501067"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117834467"
 ---
-# <a name="uncompressex-method-of-the-win32_codecfile-class"></a>Método UncompressEx da classe de um codec do Win32 \_
+# <a name="uncompressex-method-of-the-win32_codecfile-class"></a>Método UncompressEx da classe \_ CodecFile win32
 
-O método de [classe WMI](/windows/desktop/WmiSdk/retrieving-a-class) **UncompressEx** descompacta o arquivo de codec lógico (ou diretório) especificado no caminho do objeto. Esse método é uma versão estendida do método [**uncompact**](uncompress-method-in-class-win32-directory.md) .
+O método de classe [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **UncompressEx** descompacta o arquivo codec lógico (ou diretório) especificado no caminho do objeto. Esse método é uma versão estendida do [**método Uncompress.**](uncompress-method-in-class-win32-directory.md)
 
-Este tópico usa a sintaxe formato MOF (MOF). Para obter mais informações sobre como usar esse método, consulte [chamando um método](/windows/desktop/WmiSdk/calling-a-method).
+Este tópico usa sintaxe Managed Object Format (MOF). Para obter mais informações sobre como usar esse método, consulte [Chamando um método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -44,30 +44,30 @@ uint32 UncompressEx(
 
 <dl> <dt>
 
-*StopFileName* \[ fora\]
+*StopFileName* \[ out\]
 </dt> <dd>
 
-Nome do arquivo ou diretório em que o método **UncompressEx** falhou. Esse parâmetro será **NULL** se o método tiver sucesso.
+Nome do arquivo ou diretório em que o **método UncompressEx** falhou. Esse parâmetro será **nulo se** o método for bem-sucedido.
 
 </dd> <dt>
 
-*StartFileName* \[ em, opcional\]
+*StartFileName* \[ in, opcional\]
 </dt> <dd>
 
-Nomeia o arquivo ou diretório filho a ser usado como ponto de partida para **UncompressEx**. O parâmetro *StartFileName* normalmente é o parâmetro *StopFileName* que especifica o arquivo ou diretório no qual ocorreu um erro da chamada do método anterior. Se esse parâmetro for **nulo**, a operação será executada no arquivo ou diretório especificado na chamada de **ExecMethod** .
+Nomeia o arquivo ou diretório filho a ser usado como um ponto de partida para **UncompressEx.** O *parâmetro StartFileName* normalmente é o parâmetro *StopFileName* que especifica o arquivo ou diretório no qual ocorreu um erro da chamada de método anterior. Se esse parâmetro for **NULL,** a operação será executada no arquivo ou diretório especificado na **chamada ExecMethod.**
 
 </dd> <dt>
 
-*Recursivo* \[ em, opcional\]
+*Recursivo* \[ in, opcional\]
 </dt> <dd>
 
-Se **for true**, a alteração de propriedade será aplicada recursivamente aos arquivos e diretórios dentro do diretório especificado pela instância [**de \_ LogicalFile do CIM**](cim-logicalfile.md) . Observação: para instâncias de arquivo, o parâmetro de entrada *recursivo* é ignorado.
+Se **true**, a alteração de propriedade será aplicada recursivamente a arquivos e diretórios dentro do diretório especificado pela [**instância de \_ LogicalFile cim.**](cim-logicalfile.md) Observação: para instâncias de arquivo, o *parâmetro de entrada recursiva* é ignorado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna um valor inteiro de 0 (zero) se o arquivo tiver sido descompactado com êxito e qualquer outro número para indicar um erro.
+Retornará um valor inteiro de 0 (zero) se o arquivo tiver sido descompactado com êxito e qualquer outro número para indicar um erro.
 
 <dl> <dt>
 
@@ -81,7 +81,7 @@ A solicitação foi bem-sucedida.
 **2**
 </dt> <dd>
 
-Acesso negado.
+O acesso foi negado.
 
 </dd> <dt>
 
@@ -116,7 +116,7 @@ O sistema de arquivos não é NTFS.
 **12**
 </dt> <dd>
 
-A plataforma não é o Windows.
+A plataforma não é Windows.
 
 </dd> <dt>
 
@@ -144,7 +144,7 @@ Houve uma violação de compartilhamento.
 **16**
 </dt> <dd>
 
-O arquivo de inicialização especificado não era válido.
+O arquivo inicial especificado não era válido.
 
 </dd> <dt>
 
@@ -155,7 +155,7 @@ Um privilégio necessário para a operação não é mantido.
 
 </dd> <dt>
 
-**Abril**
+**21**
 </dt> <dd>
 
 Um parâmetro especificado não é válido.
@@ -170,8 +170,8 @@ Um parâmetro especificado não é válido.
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| Namespace<br/>                | Raiz \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Namespace<br/>                | RAIZ \\ CIMV2<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -183,7 +183,7 @@ Um parâmetro especificado não é válido.
 [Classes do sistema operacional](/previous-versions//aa392727(v=vs.85))
 </dt> <dt>
 
-[**Codec do Win32 \_**](win32-codecfile.md)
+[**CodecFile do Win32 \_**](win32-codecfile.md)
 </dt> </dl>
 
  

@@ -1,15 +1,15 @@
 ---
-description: Os desenvolvedores de Windows Installer pacotes podem optar por usar um tipo de ação personalizada 35 quando as ações padrão são insuficientes para executar a instalação.
+description: os desenvolvedores de Windows Installer pacotes podem optar por usar um tipo de ação personalizada 35 quando as ações padrão são insuficientes para executar a instalação.
 ms.assetid: b88b5f48-5353-4876-9dda-2eeda288fa4b
 title: Tipo de ação personalizada 35
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8401f26f40ccc7de811ea0d290d556789284680f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7a724fa5a7fc469ea688c64e5935242f088c010da02d963f2f1dc4b05f5eb5e2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105783274"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118947964"
 ---
 # <a name="custom-action-type-35"></a>Tipo de ação personalizada 35
 

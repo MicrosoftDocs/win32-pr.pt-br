@@ -1,26 +1,26 @@
 ---
-title: Propriedade IMsRdpClientAdvancedSettings ShadowBitmap
-description: Especifica se os bitmaps de sombra devem ser usados.
+title: Propriedade ShadowBitmap IMsRdpClientAdvancedSettings
+description: Especifica se bitmaps de sombra devem ser usados.
 ms.assetid: b329e367-7579-466d-877a-16253f85e5a2
 ms.tgt_platform: multiple
 keywords:
-- Serviços de Área de Trabalho Remota da propriedade ShadowBitmap
-- Propriedade ShadowBitmap Serviços de Área de Trabalho Remota, interface IMsRdpClientAdvancedSettings
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientAdvancedSettings, Propriedade ShadowBitmap
-- Propriedade ShadowBitmap Serviços de Área de Trabalho Remota, interface IMsRdpClientAdvancedSettings2
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientAdvancedSettings2, Propriedade ShadowBitmap
-- Propriedade ShadowBitmap Serviços de Área de Trabalho Remota, interface IMsRdpClientAdvancedSettings3
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientAdvancedSettings3, Propriedade ShadowBitmap
-- Propriedade ShadowBitmap Serviços de Área de Trabalho Remota, interface IMsRdpClientAdvancedSettings4
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientAdvancedSettings4, Propriedade ShadowBitmap
-- Propriedade ShadowBitmap Serviços de Área de Trabalho Remota, interface IMsRdpClientAdvancedSettings5
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientAdvancedSettings5, Propriedade ShadowBitmap
-- Propriedade ShadowBitmap Serviços de Área de Trabalho Remota, interface IMsRdpClientAdvancedSettings6
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientAdvancedSettings6, Propriedade ShadowBitmap
-- Propriedade ShadowBitmap Serviços de Área de Trabalho Remota, interface IMsRdpClientAdvancedSettings7
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientAdvancedSettings7, Propriedade ShadowBitmap
-- Propriedade ShadowBitmap Serviços de Área de Trabalho Remota, interface IMsRdpClientAdvancedSettings8
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientAdvancedSettings8, Propriedade ShadowBitmap
+- Propriedade ShadowBitmap Serviços de Área de Trabalho Remota
+- A propriedade ShadowBitmap Serviços de Área de Trabalho Remota , interface IMsRdpClientAdvancedSettings
+- Interface IMsRdpClientAdvancedSettings Serviços de Área de Trabalho Remota , propriedade ShadowBitmap
+- A propriedade ShadowBitmap Serviços de Área de Trabalho Remota , interface IMsRdpClientAdvancedSettings2
+- Interface IMsRdpClientAdvancedSettings2 Serviços de Área de Trabalho Remota , propriedade ShadowBitmap
+- A propriedade ShadowBitmap Serviços de Área de Trabalho Remota , interface IMsRdpClientAdvancedSettings3
+- Interface IMsRdpClientAdvancedSettings3 Serviços de Área de Trabalho Remota , propriedade ShadowBitmap
+- A propriedade ShadowBitmap Serviços de Área de Trabalho Remota , interface IMsRdpClientAdvancedSettings4
+- Interface IMsRdpClientAdvancedSettings4 Serviços de Área de Trabalho Remota , propriedade ShadowBitmap
+- A propriedade ShadowBitmap Serviços de Área de Trabalho Remota , interface IMsRdpClientAdvancedSettings5
+- Interface IMsRdpClientAdvancedSettings5 Serviços de Área de Trabalho Remota , propriedade ShadowBitmap
+- A propriedade ShadowBitmap Serviços de Área de Trabalho Remota , interface IMsRdpClientAdvancedSettings6
+- Interface IMsRdpClientAdvancedSettings6 Serviços de Área de Trabalho Remota , propriedade ShadowBitmap
+- A propriedade ShadowBitmap Serviços de Área de Trabalho Remota , interface IMsRdpClientAdvancedSettings7
+- Interface IMsRdpClientAdvancedSettings7 Serviços de Área de Trabalho Remota , propriedade ShadowBitmap
+- A propriedade ShadowBitmap Serviços de Área de Trabalho Remota , interface IMsRdpClientAdvancedSettings8
+- Interface IMsRdpClientAdvancedSettings8 Serviços de Área de Trabalho Remota , propriedade ShadowBitmap
 topic_type:
 - apiref
 api_name:
@@ -54,22 +54,22 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fc6c43862b498fe5828d2746666c5e414de4c71e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d04e41845bc3c7ebb32b5b6300c5ccd1bc9d1444ef86497e613bc833c220cec1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104454651"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117757433"
 ---
-# <a name="imsrdpclientadvancedsettingsshadowbitmap-property"></a>Propriedade IMsRdpClientAdvancedSettings:: ShadowBitmap
+# <a name="imsrdpclientadvancedsettingsshadowbitmap-property"></a>Propriedade IMsRdpClientAdvancedSettings::ShadowBitmap
 
-\[Não há suporte a esta propriedade. A partir do Windows Server 2008 e do Windows 7, as chamadas para **ShadowBitmap** sempre retornam **S \_ false**.\]
+\[Não há suporte a esta propriedade. A partir do Windows Server 2008 e Windows 7, as chamadas para **ShadowBitmap** sempre retornam **S \_ FALSE.**\]
 
-Especifica se os bitmaps de sombra devem ser usados.
+Especifica se bitmaps de sombra devem ser usados.
 
-Os bitmaps de sombra são sempre desabilitados no modo de tela inteira, portanto, essa propriedade não tem nenhum efeito quando estiver no modo de tela inteira.
+Os bitmaps de sombra sempre são desabilitados no modo de tela inteira, portanto, essa propriedade não tem efeito quando está no modo de tela inteira.
 
-Esta propriedade é de leitura/gravação.
+Essa propriedade é leitura/gravação.
 
 ## <a name="syntax"></a>Syntax
 
@@ -88,11 +88,11 @@ HRESULT get_ShadowBitmap(
 
 ## <a name="property-value"></a>Valor da propriedade
 
-Defina esse parâmetro como 0 para desabilitar o recurso ou um valor diferente de zero para habilitar o recurso. A desabilitação desse recurso normalmente melhora o desempenho, mas pode resultar em artefatos ao pintar telas.
+De definir esse parâmetro como 0 para desabilitar o recurso ou um valor não zero para habilitar o recurso. Desabilitar esse recurso normalmente melhora o desempenho, mas pode resultar em artefatos ao pintar telas.
 
 ## <a name="remarks"></a>Comentários
 
-Para obter mais informações sobre Conexão Web de Área de Trabalho Remota, consulte [Requirements for conexão Web de área de trabalho remota](requirements-for-remote-desktop-web-connection.md).
+Para obter mais informações sobre Conexão Web de Área de Trabalho Remota, consulte [Requirements for Conexão Web de Área de Trabalho Remota](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -102,11 +102,11 @@ Para obter mais informações sobre Conexão Web de Área de Trabalho Remota, co
 |-------------------------------------|-------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                        |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                       |
-| Fim do suporte do cliente<br/>    | Windows Vista<br/>                                                                        |
-| Fim do suporte do servidor<br/>    | Nenhum compatível<br/>                                                                       |
+| Fim do suporte ao cliente<br/>    | Windows Vista<br/>                                                                        |
+| Fim do suporte ao servidor<br/>    | Nenhum compatível<br/>                                                                       |
 | Biblioteca de tipos<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl>          |
 | DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl>          |
-| IID<br/>                      | IID \_ IMsRdpClientAdvancedSettings é definido como 3c65b4ab-12B3-465b-acd4-b8dad3bff9e2<br/> |
+| IID<br/>                      | \_IMs IIDRdpClientAdvancedSettings é definido como 3c65b4ab-12b3-465b-acd4-b8dad3bff9e2<br/> |
 
 
 
@@ -135,7 +135,7 @@ Para obter mais informações sobre Conexão Web de Área de Trabalho Remota, co
 [**IMsRdpClientAdvancedSettings8**](imsrdpclientadvancedsettings8.md)
 </dt> <dt>
 
-[**IMsRdpClientAdvancedSettings**](imsrdpclientadvancedsettings-interface.md)
+[**Imsrdpclientadvancedsettings**](imsrdpclientadvancedsettings-interface.md)
 </dt> </dl>
 
  

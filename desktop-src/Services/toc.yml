@@ -1,11 +1,11 @@
 - name: Serviços
   href: services.md
   items:
-    - name: O que há de novo nos serviços do Windows 8
+    - name: Novidades nos serviços para Windows 8
       href: what-s-new-in-services-for-windows-8.md
-    - name: O que há de novo nos serviços do Windows 7
+    - name: Novidades nos Serviços para Windows 7
       href: what-s-new-in-services.md
-    - name: Alterações de serviço do Windows Vista
+    - name: Alterações de serviço para Windows Vista
       href: service-changes-for-windows-vista.md
     - name: Sobre serviços
       href: about-services.md
@@ -13,22 +13,22 @@
         - name: Gerenciador de Controle de Serviço
           href: service-control-manager.md
           items:
-            - name: Banco de dados dos serviços instalados
+            - name: Banco de dados de serviços instalados
               href: database-of-installed-services.md
-            - name: Iniciando serviços automaticamente
+            - name: Iniciando automaticamente os serviços
               href: automatically-starting-services.md
             - name: Iniciando serviços sob demanda
               href: starting-services-on-demand.md
             - name: Lista de registros de serviço
               href: service-record-list.md
-            - name: Identificadores SCM
+            - name: Alças SCM
               href: scm-handles.md
         - name: Programas de serviço
           href: service-programs.md
           items:
             - name: Ponto de entrada de serviço
               href: service-entry-point.md
-            - name: Função Service-Main
+            - name: Função ServiceMain
               href: service-servicemain-function.md
             - name: Função do manipulador do controle de serviço
               href: service-control-handler-function.md
@@ -38,7 +38,7 @@
               href: receiving-events-in-a-service.md
             - name: Serviços multithread
               href: multithreaded-services.md
-            - name: Serviços e o registro
+            - name: Serviços e o Registro
               href: services-and-the-registry.md
             - name: Serviços e unidades redirecionadas
               href: services-and-redirected-drives.md
@@ -47,7 +47,7 @@
         - name: Programas de configuração de serviço
           href: service-configuration-programs.md
           items:
-            - name: 'Instalação, remoção e enumeração de serviço'
+            - name: 'Instalação, remoção e enumeração do serviço'
               href: service-installation-removal-and-enumeration.md
             - name: Configuração de Serviço
               href: service-configuration.md
@@ -65,13 +65,13 @@
         - name: Contas de usuário de serviço
           href: service-user-accounts.md
           items:
-            - name: Conta do LocalService
+            - name: Conta LocalService
               href: localservice-account.md
             - name: Conta NetworkService
               href: networkservice-account.md
-            - name: Conta LocalSystem
+            - name: Conta localSystem
               href: localsystem-account.md
-        - name: Serviços interativos
+        - name: Serviços Interativos
           href: interactive-services.md
         - name: Segurança do serviço e direitos de acesso
           href: service-security-and-access-rights.md
@@ -79,21 +79,21 @@
           href: debugging-a-service.md
         - name: Eventos de gatilho de serviço
           href: service-trigger-events.md
-        - name: Protegendo serviços Antimalware
+        - name: Protegendo serviços anti malware
           href: protecting-anti-malware-services-.md
     - name: Usando serviços
       href: using-services.md
       items:
-        - name: Tarefas do programa de serviço
+        - name: Tarefas do Programa de Serviço
           href: service-program-tasks.md
           items:
-            - name: Escrevendo a função main de um programa de serviço
+            - name: Escrevendo a função principal de um programa de serviço
               href: writing-a-service-program-s-main-function.md
-            - name: Escrevendo uma função de immain
+            - name: Escrevendo uma função ServiceMain
               href: writing-a-servicemain-function.md
             - name: Escrevendo uma função de manipulador de controle
               href: writing-a-control-handler-function.md
-        - name: Tarefas do programa de configuração de serviço
+        - name: Tarefas do Programa de Configuração de Serviço
           href: service-configuration-program-tasks.md
           items:
             - name: Instalando um serviço
@@ -104,14 +104,14 @@
               href: changing-a-service-configuration.md
             - name: Consultando a configuração de um serviço
               href: querying-a-service-s-configuration.md
-        - name: Tarefas do programa de controle de serviço
+        - name: Tarefas do Programa de Controle de Serviço
           href: service-control-program-tasks.md
           items:
             - name: Iniciando um serviço
               href: starting-a-service.md
             - name: Interrompendo um serviço
               href: stopping-a-service.md
-            - name: Modificando a DACL de um serviço
+            - name: Modificando a DACL para um serviço
               href: modifying-the-dacl-for-a-service.md
         - name: O exemplo de serviço completo
           href: the-complete-service-sample.md
@@ -122,7 +122,7 @@
               href: svc-cpp.md
             - name: SvcConfig.cpp
               href: svcconfig-cpp.md
-            - name: SvcControl. cpp
+            - name: SvcControl.cpp
               href: svccontrol-cpp.md
     - name: Referência de serviço
       href: service-reference.md
@@ -173,7 +173,7 @@
               href: /windows/desktop/api/Winsvc/nf-winsvc-notifyservicestatuschangea
             - name: OpenSCManager
               href: /windows/desktop/api/Winsvc/nf-winsvc-openscmanagera
-            - name: OpenService
+            - name: Openservice
               href: /windows/desktop/api/Winsvc/nf-winsvc-openservicea
             - name: QueryServiceConfig
               href: /windows/desktop/api/Winsvc/nf-winsvc-queryserviceconfiga
@@ -195,7 +195,7 @@
               href: /windows/desktop/api/winsvc/nc-winsvc-lpservice_main_functiona
             - name: SetServiceBits
               href: /windows/desktop/api/Lmserver/nf-lmserver-setservicebits
-            - name: Falha em SetServiceStatus
+            - name: SetServiceStatus
               href: /windows/desktop/api/Winsvc/nf-winsvc-setservicestatus
             - name: StartService
               href: /windows/desktop/api/Winsvc/nf-winsvc-startservicea

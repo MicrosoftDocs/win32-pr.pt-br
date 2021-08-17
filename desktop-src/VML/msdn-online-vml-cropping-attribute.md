@@ -1,26 +1,26 @@
 ---
-title: Atributo de corte de VML
-description: Atributo de corte de VML
+title: Atributo de corte VML
+description: Atributo de corte VML
 ms.assetid: f6b8853b-a26e-43e4-a976-7125ac0d5423
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bf7ffb9d31d8093005f04fd9ff48e9858218d039
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 2de3e6afac6c2df0deb6e1fbd50af12a99fb2a5a0b51ded44dfdff70c471ad06
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104499060"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117754792"
 ---
-# <a name="vml-cropping-attribute"></a>Atributo de corte de VML
+# <a name="vml-cropping-attribute"></a>Atributo de corte VML
 
-Este tópico descreve a VML, um recurso que foi preterido a partir do Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem de VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
+Este tópico descreve o VML, um recurso que foi preterido a partir Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem do VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
 
 > [!Note]  
-> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [conteúdo arquivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obter informações, recomendações e orientações sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
+> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [Conteúdo arquivado.](/previous-versions/windows/internet-explorer/ie-developer/) Para obter informações, recomendações e diretrizes sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center.](https://msdn.microsoft.com/ie/)
 
- 
+ 
 
-Determina se o corte será permitido em um editor. Leitura/gravação. **VgTriState**.
+Determina se o corte será permitido em um editor. Leitura/gravação. **VgTriState.**
 
 **Aplica-se a**
 
@@ -28,14 +28,14 @@ Determina se o corte será permitido em um editor. Leitura/gravação. **VgTriSt
 
 **Sintaxe de marca**
 
-<o: *elemento* recorte = " *expressão* " >
+<o: *elemento cropping="* *expressão* ">
 
 **Comentários**
 
-Se **for true**, o corte não será permitido em um editor gráfico. O valor padrão é **Falso**.
+Se **True**, o corte não será permitido em um editor gráfico. O valor padrão é **Falso**.
 
-*Atributo de extensões de Microsoft Office*
+*Microsoft Office Atributo Extensions*
 
- 
+ 
 
- 
+ 

@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d12bddec3fac5dc918f06d926fe5e5656b70d84d
-ms.sourcegitcommit: cb87082135319cbdc5df541e3071eebb83a58972
+ms.openlocfilehash: 955b70986640fab8cefe9f02b28b02015397c964f1b10fc26057533fc79a3809
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111387642"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117753558"
 ---
 # <a name="ivmguestosgetparameter-method"></a>Método IVMGuestOS:: getParameter
 
-\[O Windows Virtual PC não está mais disponível para uso a partir do Windows 8. Em vez disso, use o [provedor WMI do Hyper-V (v2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
+\[Windows O Virtual PC não está mais disponível para uso a partir de Windows 8. Em vez disso, use o [provedor WMI do Hyper-V (v2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
 
 Recupera um parâmetro nomeado dentro do sistema operacional convidado.
 
@@ -59,7 +59,7 @@ O valor do parâmetro.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método pode retornar um desses valores.
 
@@ -82,7 +82,7 @@ Esse método pode retornar um desses valores.
 
 ## <a name="remarks"></a>Comentários
 
-A máquina virtual deve estar em execução e os componentes de integração devem ser instalados quando esse método é invocado. Esse método só tem suporte em sistemas operacionais convidados baseados no Windows.
+A máquina virtual deve estar em execução e os componentes de integração devem ser instalados quando esse método é invocado. esse método só tem suporte para sistemas operacionais convidados baseados em Windows.
 
 Com os componentes de integração instalados, a chave a seguir é automaticamente adicionada ao registro do sistema operacional convidado:
 
@@ -101,7 +101,7 @@ Quando o sistema operacional convidado é iniciado, os seguintes valores de cade
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>                                                    |
+| Cliente mínimo com suporte<br/> | \[somente aplicativos de área de trabalho Windows 7\]<br/>                                                    |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                     |
 | Fim do suporte do cliente<br/>    | Windows 7<br/>                                                                          |
 | Produto<br/>                  | Windows Virtual PC<br/>                                                                 |

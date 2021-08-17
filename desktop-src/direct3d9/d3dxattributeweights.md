@@ -1,7 +1,7 @@
 ---
-description: Estrutura D3DXATTRIBUTEWEIGHTS-especifica os atributos de peso de malha.
+description: Estrutura D3DXATTRIBUTEWEIGHTS – especifica atributos de peso da malha.
 ms.assetid: 8901a0fe-e38a-4045-8e8d-584be2620cc3
-title: Estrutura D3DXATTRIBUTEWEIGHTS (D3dx9mesh. h)
+title: Estrutura D3DXATTRIBUTEWEIGHTS (D3dx9mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9mesh.h
-ms.openlocfilehash: 7a833d2a58db0f434f836126926e461cd2ee3ea0
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: fa40476bdd1f65dddf0f78b57cfca2b20ac7bd8186eaf78546ddda9b3fa8771a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108115964"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118096591"
 ---
 # <a name="d3dxattributeweights-structure"></a>Estrutura D3DXATTRIBUTEWEIGHTS
 
-Especifica os atributos de peso de malha.
+Especifica atributos de peso da malha.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -49,7 +49,7 @@ typedef struct D3DXATTRIBUTEWEIGHTS {
 **Posição**
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -60,18 +60,18 @@ Posição.
 **Limite**
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Peso de mistura.
+Peso da mistura.
 
 </dd> <dt>
 
 **Normal**
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -82,7 +82,7 @@ Normal.
 **Difusa**
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -93,7 +93,7 @@ Valor de iluminação difusa.
 **Especular**
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -104,7 +104,7 @@ Valor de iluminação especular.
 **Texcoord**
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -115,7 +115,7 @@ Oito coordenadas de textura.
 **Tangente**
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -126,7 +126,7 @@ Tangente.
 **Binormal**
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -136,9 +136,9 @@ Binormal.
 
 ## <a name="remarks"></a>Comentários
 
-Esta estrutura descreve como uma operação de simplificação considerará os dados de vértice ao calcular os custos relativos entre as bordas de recolhimento. Por exemplo, se o campo normal for 0,0, a operação de simplificação irá ignorar o componente normal de vértice ao calcular o erro para o recolhimento. No entanto, se o campo normal for 1,0, a operação de simplificação usará o componente normal de vértice. Se o campo normal for 2,0, dobrar a quantidade de erros; Se o campo normal for 4,0, o número de erros será quádruplo e assim por diante.
+Essa estrutura descreve como uma operação de simplificação considerará dados de vértice ao calcular os custos relativos entre bordas de redução. Por exemplo, se o campo Normal for 0,0, a operação de simplificação ignorará o componente normal do vértice ao calcular o erro para o ressalvamento. No entanto, se o campo Normal for 1.0, a operação de simplificação usará o componente normal do vértice. Se o campo Normal for 2.0, dobre a quantidade de erros; se o campo Normal for 4.0, quadruplicar o número de erros e assim por diante.
 
-O tipo LPD3DXATTRIBUTEWEIGHTS é definido como um ponteiro para a estrutura **D3DXATTRIBUTEWEIGHTS** .
+O tipo LPD3DXATTRIBUTEWEIGHTS é definido como um ponteiro para a **estrutura D3DXATTRIBUTEWEIGHTS.**
 
 
 ```
@@ -154,11 +154,11 @@ O tipo LPD3DXATTRIBUTEWEIGHTS é definido como um ponteiro para a estrutura **D3
 
 | Requisito | Valor |
 |-------------------|----------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>D3dx9mesh. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>D3dx9mesh.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 
