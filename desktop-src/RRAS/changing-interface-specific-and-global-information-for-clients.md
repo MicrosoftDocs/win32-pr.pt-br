@@ -4,12 +4,12 @@ description: Para alterar as informações de interface de um cliente específic
 ms.assetid: 208e356b-328e-416d-881c-732fed460ebf
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3e5c8f2ef3c37d75db1cc7686a67108530b16b28
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: bcea02c6d70e7d7e2da53926854879f1ca5b76526a83185b786b0074b8098434
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103916272"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117791749"
 ---
 # <a name="changing-interface-specific-and-global-information-for-clients"></a>Alterando Interface-Specific e informações globais para clientes
 
@@ -26,9 +26,9 @@ Chamadas para as funções de administração anteriores passam pelo Gerenciador
 
 O Gerenciador de roteador chama as funções [**GetInterfaceInfo**](/windows/desktop/api/Routprot/nc-routprot-pget_interface_info) para cada um dos clientes para coletar as informações retornadas de uma chamada para [**MprAdminInterfaceTransportGetInfo**](/windows/desktop/api/Mprapi/nf-mprapi-mpradmininterfacetransportgetinfo). Da mesma forma, quando o Gerenciador de roteador recebe informações atualizadas por meio de chamada [**MprAdminInterfaceTransportSetInfo**](/windows/desktop/api/Mprapi/nf-mprapi-mpradmininterfacetransportsetinfo) , ele usa as funções [**SetInterfaceInfo**](/windows/desktop/api/Routprot/nc-routprot-pset_interface_info) para atualizar as informações de interface para cada um dos clientes.
 
- 
+ 
 
- 
+ 
 
 
 

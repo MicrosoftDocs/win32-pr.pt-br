@@ -4,8 +4,8 @@ description: A interface IRDVTaskPlugin é implementada por um agente de tarefa 
 ms.assetid: e06eb707-be78-4d1f-96d3-21526b167e61
 ms.tgt_platform: multiple
 keywords:
-- Serviços de Área de Trabalho Remota de interface IRDVTaskPlugin
-- Serviços de Área de Trabalho Remota da interface IRDVTaskPlugin, descrita
+- Interface IRDVTaskPlugin Serviços de Área de Trabalho Remota
+- Interface IRDVTaskPlugin Serviços de Área de Trabalho Remota , descrita
 topic_type:
 - apiref
 api_name:
@@ -15,20 +15,20 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 59e90e899e8084f7fbc6b0b6f11067061eaa807b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: fe76f0b0b92286d5a4b7db5126706fd55bdb6f580c11fda1dcaa55a47be4678c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103919134"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118129165"
 ---
 # <a name="irdvtaskplugin-interface"></a>Interface IRDVTaskPlugin
 
-A interface **IRDVTaskPlugin** é implementada por um agente de *tarefa* de atualização de máquina virtual para permitir que o agente de tarefa gerencie atualizações do sistema para uma máquina virtual. Essa interface é usada pelo *agente de gatilho*, que é implementado pelo sistema host.
+A interface **IRDVTaskPlugin** é implementada  por um agente de tarefa de atualização de máquina virtual para permitir que o agente de tarefa gerencie atualizações do sistema para uma máquina virtual. Essa interface é usada pelo agente *de gatilho*, que é implementado pelo sistema host.
 
 ## <a name="members"></a>Membros
 
-A interface **IRDVTaskPlugin** herda da interface [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) . **IRDVTaskPlugin** também tem estes tipos de membros:
+A interface **IRDVTaskPlugin** herda da interface [**IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **IRDVTaskPlugin** também tem estes tipos de membros:
 
 -   [Métodos](#methods)
 -   [Propriedades](#properties)
@@ -65,19 +65,19 @@ A interface **IRDVTaskPlugin** tem essas propriedades.
 
 ## <a name="remarks"></a>Comentários
 
-O agente de tarefa é executado na máquina virtual quando essa máquina virtual está agendada para uma atualização do sistema. O agente de tarefa atualiza a máquina virtual quando o método [**StartTask**](irdvtaskplugin-starttask.md) é chamado.
+O agente de tarefa é executado na máquina virtual quando essa máquina virtual está agendada para uma atualização do sistema. O agente de tarefa atualiza a máquina virtual quando o [**método StartTask**](irdvtaskplugin-starttask.md) é chamado.
 
 Para registrar o agente de tarefa, adicione a seguinte chave ao registro da máquina virtual:
 
-**HKEY \_ Software do \_ computador local** \\  \\ **Microsoft** \\ **Windows NT** \\ **CurrentVersion** \\ **Terminal Server** \\ plugins da **tarefa** \\  \\ **TaskAgentName**
+**HKEY \_ Local \_ MACHINE** \\ **Software** \\ **Microsoft** \\ **Windows NT** Plug-ins de tarefa do servidor do terminal \\ **CurrentVersion** \\  \\  \\  \\ **TaskAgentName**
 
-Nessa chave do registro, adicione os seguintes valores:
+Nessa chave do Registro, adicione os seguintes valores:
 
 
 
 | Nome                     | Tipo                      | Descrição                                                                   |
 |--------------------------|---------------------------|-------------------------------------------------------------------------------|
-| **CLSID**<br/>     | **REG \_ sz**<br/>    | Uma cadeia de caracteres que representa o **CLSID** do agente de tarefa.<br/>          |
+| **Clsid**<br/>     | **REG \_ SZ**<br/>    | Uma cadeia de caracteres que **representa o CLSID** do agente de tarefa.<br/>          |
 | **IsEnabled**<br/> | **REG \_ DWORD**<br/> | 0 se o agente de tarefa estiver desabilitado ou 1 se o agente de tarefa estiver habilitado.<br/> |
 
 
@@ -89,7 +89,7 @@ Nessa chave do registro, adicione os seguintes valores:
 
  
 
-Embora essa interface tenha suporte nos sistemas operacionais identificados nos requisitos abaixo, ela só será usada se a máquina virtual estiver hospedada no Windows Server 2012.
+Embora essa interface tenha suporte nos sistemas operacionais identificados nos Requisitos abaixo, ela só será usada se a máquina virtual estiver hospedada no Windows Server 2012.
 
 ## <a name="requirements"></a>Requisitos
 

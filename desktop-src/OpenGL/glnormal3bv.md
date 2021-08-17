@@ -1,9 +1,9 @@
 ---
-title: função glNormal3bv (GL. h)
-description: Define o vetor normal atual. | função glNormal3bv (GL. h)
+title: Função glNormal3bv (Gl.h)
+description: Define o vetor normal atual. | Função glNormal3bv (Gl.h)
 ms.assetid: 1d9be974-93c9-45ac-89f1-92c14ff1c242
 keywords:
-- função glNormal3bv OpenGL
+- Função glNormal3bv OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d758c1768425ecb736096d59a49133ff4c8918c4
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 10578bbf22aa2cb0e3415715999018db4a3aefd39933cd802e1abbc196d5b706
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105761881"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117795600"
 ---
-# <a name="glnormal3bv-function"></a>função glNormal3bv
+# <a name="glnormal3bv-function"></a>Função glNormal3bv
 
 Define o vetor normal atual.
 
@@ -40,7 +40,7 @@ void WINAPI glNormal3bv(
 
 <dl> <dt>
 
-*l* 
+*v* 
 </dt> <dd>
 
 Um ponteiro para uma matriz de três elementos: as coordenadas x, y e z do novo normal atual.
@@ -53,15 +53,15 @@ Essa função não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-O normal atual é definido para as coordenadas fornecidas sempre que você chama a função **glNormal3bv**.
+O normal atual é definido para as coordenadas fornecidas sempre que você chama a **função glNormal3bv.**
 
-Os argumentos byte, Short ou Integer são convertidos em formato de ponto flutuante usando um mapeamento linear que mapeia o valor inteiro representável mais positivo para 1,0 e o valor inteiro reapresentável mais negativo para-1,0.
+Os argumentos de byte, curto ou inteiro são convertidos em formato de ponto flutuante usando um mapeamento linear que mapeia o valor inteiro representável mais positivo para 1,0 e o valor inteiro representável mais negativo para -1,0.
 
-Os normais especificados usando **glNormal3bv** não precisam ter comprimento de unidade. Se a normalização estiver habilitada, os normais especificados usando **glNormal3bv** serão normalizados após a transformação. Você pode controlar a normalização usando [**glEnable**](glenable.md) e [**glDisable**](gldisable.md) com o argumento GL \_ NORMALIZE. Por padrão, a normalização é desabilitada. Você pode atualizar o normal atual a qualquer momento. Em particular, você pode chamar **glNormal3bv** entre uma chamada para [**glBegin**](glbegin.md) e a chamada correspondente para [**glEnd**](glend.md). As funções a seguir recuperam informações relacionadas ao **glNormal3bv**:
+Os normais especificados usando **glNormal3bv** não precisam ter comprimento de unidade. Se a normalização estiver habilitada, os normais especificados usando **glNormal3bv** serão normalizados após a transformação. Você pode controlar a normalização usando [**glEnable e**](glenable.md) [**glDisable**](gldisable.md) com o argumento GL \_ NORMALIZE. Por padrão, a normalização está desabilitada. Você pode atualizar o normal atual a qualquer momento. Em particular, você pode chamar **glNormal3bv** entre uma chamada para [**glBegin**](glbegin.md) e a chamada correspondente para [**glEnd.**](glend.md) As seguintes funções recuperam informações relacionadas **a glNormal3bv**:
 
-[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) com Argument GL \_ atual \_ normal
+[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) com o argumento GL \_ CURRENT \_ NORMAL
 
-[**glIsEnable**](glisenabled.md) com o Argument GL \_ NORMALIZE
+[**glIsEnable com**](glisenabled.md) o argumento GL \_ NORMALIZE
 
 ## <a name="requirements"></a>Requisitos
 
@@ -71,8 +71,8 @@ Os normais especificados usando **glNormal3bv** não precisam ter comprimento de
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                              |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                    |
-| Cabeçalho<br/>                   | <dl> <dt>GL. h</dt> </dl>         |
-| Biblioteca<br/>                  | <dl> <dt>Opengl32. lib</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Gl.h</dt> </dl>         |
+| Biblioteca<br/>                  | <dl> <dt>Opengl32.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Opengl32.dll</dt> </dl> |
 
 

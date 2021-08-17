@@ -4,12 +4,12 @@ ms.assetid: f626c0b2-a5a1-475d-9a24-64e7b0407278
 title: Convertendo um valor de time_t em uma hora de arquivo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ee866efaed716fb12d2501337236afdb7cf641b9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 30fc7161e55bb235690f5c7d5fe0f4cd575bd7c902d5357606290def0509f6b1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105749435"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117764507"
 ---
 # <a name="converting-a-time_t-value-to-a-file-time"></a>Convertendo um \_ valor t de tempo em uma hora de arquivo
 

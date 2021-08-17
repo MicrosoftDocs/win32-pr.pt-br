@@ -4,12 +4,12 @@ ms.assetid: ff13a941-4e62-4c13-9c74-99b39fb031e1
 title: System. Communication. SecurityFlags
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dcff7ac4838f747fadd173b2a7637444b830cb9c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0b041191f0ca8d60c3cb4f0c102dcce0a8374dbe1ca9b7526dac558c7691fcaa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104165262"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118055706"
 ---
 # <a name="systemcommunicationsecurityflags"></a>System. Communication. SecurityFlags
 

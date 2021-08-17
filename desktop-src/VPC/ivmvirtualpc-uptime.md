@@ -45,7 +45,7 @@ HRESULT get_UpTime(
 
 ## <a name="property-value"></a>Valor da propriedade
 
-O número de segundos que o Windows aplicativo de COMPUTADOR Virtual está em execução.
+O número de segundos que o Windows aplicativo de computador virtual está em execução.
 
 ## <a name="error-codes"></a>Códigos do Erro
 

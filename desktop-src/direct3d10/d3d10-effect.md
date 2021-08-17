@@ -1,33 +1,33 @@
 ---
-description: Essas constantes são usadas ao criar um efeito para definir o comportamento de compilação ou o comportamento de efeito de tempo de execução.
+description: Essas constantes usadas ao criar um efeito para definir o comportamento de compilação ou o comportamento de efeito de runtime.
 ms.assetid: cff99200-8bdc-416c-b1a5-3ae515a17a17
 title: D3D10_EFFECT constantes
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3c12b7a458bb7c97bb53436565513673006a2884
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 7e3738a95a843020f7c0f8af30e8c5d035f0a86ac7098d36cae422eb01ed4dc0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104296081"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117736045"
 ---
-# <a name="d3d10_effect-constants"></a>Constantes de efeito de D3D10 \_
+# <a name="d3d10_effect-constants"></a>Constantes D3D10 \_ EFFECT
 
-Essas constantes são usadas ao criar um efeito para definir o comportamento de compilação ou o comportamento de efeito de tempo de execução.
+Essas constantes usadas ao criar um efeito para definir o comportamento de compilação ou o comportamento de efeito de runtime.
 
 
 
-| \#definir                                 | Valor        | Descrição                                                                                                                                                                                                                                                 |
+| \#Definir                                 | Valor        | Descrição                                                                                                                                                                                                                                                 |
 |------------------------------------------|--------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Efeito \_ \_ filho de compilação de efeitos d3d10 \_ \_    | 1 << 0 | Compile o arquivo. FX para um efeito filho. Os efeitos filho não têm inicializações para nenhum valor compartilhado porque eles são inicializados no pool de efeitos.                                                                                                           |
-| D3D10 de \_ efeito de \_ compilação \_ permitir \_ operações lentas \_ | 1 << 1 | Por padrão, o modo de desempenho está habilitado. O modo de desempenho não permite objetos de estado mutável, impedindo que expressões não literais apareçam nas definições de objeto de estado. A especificação desse sinalizador desabilitará o modo e permitirá objetos de estado mutável. |
-| \_Efeito de \_ d3d10 \_ thread único          | 1 << 3 | Não tente sincronizar com outros threads que carregam efeitos no mesmo pool.                                                                                                                                                                        |
+| EFEITO D3D10 \_ \_ EFEITO COMPILAR EFEITO \_ \_ FILHO    | 1 << 0 | Compile o arquivo .fx em um efeito filho. Os efeitos filho não têm inicializações para nenhum valor compartilhado porque eles são inicializados no pool de efeitos.                                                                                                           |
+| D3D10 \_ EFFECT \_ COMPILE \_ ALLOW \_ SLOW \_ OPS | 1 << 1 | Por padrão, o modo de desempenho está habilitado. O modo de desempenho não permite objetos de estado mutáveis impedindo que expressões não literais apareçam em definições de objeto de estado. Especificar esse sinalizador desabilitará o modo e permitirá objetos de estado mutáveis. |
+| THREAD ÚNICO DO EFEITO D3D10 \_ \_ \_          | 1 << 3 | Não tente sincronizar com outros threads carregando efeitos no mesmo pool.                                                                                                                                                                        |
 
 
 
  
 
-Essas constantes são definidas como macros em d3d10effect. h.
+Essas constantes são definidas como macros em d3d10effect.h.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

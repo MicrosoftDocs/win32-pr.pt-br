@@ -12,12 +12,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: ccd4b98efc987630ab625e5c9788f0be16018e88
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: afdacd0b4579bcb73bfaaa2da0b3714c7d597d94c0d25020e7353e3afd168d71
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105764973"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117927317"
 ---
 # <a name="sockaddr"></a>SOCKADDR
 
@@ -25,7 +25,7 @@ A estrutura sockaddr varia dependendo do protocolo selecionado. Exceto para o *p
 
 As funções do Winsock usando SOCKADDR não são estritamente interpretadas para serem ponteiros para uma estrutura sockaddr. A estrutura é interpretada de forma diferente no contexto de famílias de endereços diferentes. Os únicos requisitos são que o primeiro **u \_ curto** é a família de endereços e o tamanho total do buffer de memória em bytes é *namelen*.
 
-A estrutura de [**\_ armazenamento SOCKADDR**](/previous-versions/windows/desktop/legacy/ms740504(v=vs.85)) também armazena informações de endereço de soquete e a estrutura é suficientemente grande para armazenar informações de endereço IPv4 ou IPv6. O uso da estrutura **de \_ armazenamento SOCKADDR** promove a independência de versão do protocolo e da família de protocolos e simplifica o desenvolvimento. É recomendável que a estrutura de **\_ armazenamento SOCKADDR** seja usada no lugar da estrutura sockaddr. A estrutura de **\_ armazenamento SOCKADDR** tem suporte no Windows Server 2003 e posterior.
+A estrutura de [**\_ armazenamento SOCKADDR**](/previous-versions/windows/desktop/legacy/ms740504(v=vs.85)) também armazena informações de endereço de soquete e a estrutura é suficientemente grande para armazenar informações de endereço IPv4 ou IPv6. O uso da estrutura **de \_ armazenamento SOCKADDR** promove a independência de versão do protocolo e da família de protocolos e simplifica o desenvolvimento. É recomendável que a estrutura de **\_ armazenamento SOCKADDR** seja usada no lugar da estrutura sockaddr. a estrutura de **\_ armazenamento SOCKADDR** tem suporte no Windows Server 2003 e posterior.
 
 A estrutura sockaddr e SOCKADDR \_ nas estruturas abaixo são usadas com IPv4. Outros protocolos usam estruturas semelhantes.
 
@@ -67,7 +67,7 @@ struct sockaddr_in6_old {
 };
 ```
 
-No SDK (Software Development Kit) do Microsoft Windows lançado para Windows Vista e posterior, **SOCKADDR** e **SOCKADDR \_ em** marcas typedef são definidos para SOCKADDR e SOCKADDR \_ em estruturas da seguinte maneira:
+no SDK (Software Development Kit) do Microsoft Windows lançado para Windows Vista e posterior, **SOCKADDR** e **SOCKADDR \_ em** marcas typedef são definidos para SOCKADDR e SOCKADDR \_ em estruturas da seguinte maneira:
 
 ``` syntax
 typedef struct sockaddr {
@@ -92,7 +92,7 @@ typedef struct sockaddr_in {
 } SOCKADDR_IN, *PSOCKADDR_IN;
 ```
 
-No SDK do Windows lançado para o Windows Vista e posterior, a organização dos arquivos de cabeçalho foi alterada e as SOCKADDR e SOCKADDR \_ nas estruturas são definidas no arquivo de cabeçalho *Ws2def. h* , não no arquivo de cabeçalho *Winsock2. h* . O arquivo de cabeçalho *Ws2def. h* é incluído automaticamente pelo arquivo de cabeçalho *Winsock2. h* . A \_ estrutura sockaddr In6 é definida no arquivo de cabeçalho *Ws2ipdef. h* , não no arquivo de cabeçalho *Ws2tcpip. h* . O arquivo de cabeçalho *Ws2ipdef. h* é incluído automaticamente pelo arquivo de cabeçalho *Ws2tcpip. h* . Os arquivos de cabeçalho *Ws2def. h* e *Ws2ipdef. h* nunca devem ser usados diretamente.
+no SDK do Windows lançado para Windows Vista e posterior, a organização dos arquivos de cabeçalho foi alterada e as sockaddr e sockaddr \_ nas estruturas são definidas no arquivo de cabeçalho *Ws2def. h* , não no arquivo de cabeçalho *Winsock2. h* . O arquivo de cabeçalho *Ws2def. h* é incluído automaticamente pelo arquivo de cabeçalho *Winsock2. h* . A \_ estrutura sockaddr In6 é definida no arquivo de cabeçalho *Ws2ipdef. h* , não no arquivo de cabeçalho *Ws2tcpip. h* . O arquivo de cabeçalho *Ws2ipdef. h* é incluído automaticamente pelo arquivo de cabeçalho *Ws2tcpip. h* . Os arquivos de cabeçalho *Ws2def. h* e *Ws2ipdef. h* nunca devem ser usados diretamente.
 
 ## <a name="example-code"></a>Código de exemplo
 

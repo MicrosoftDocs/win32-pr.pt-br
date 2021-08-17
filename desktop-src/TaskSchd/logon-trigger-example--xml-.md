@@ -1,6 +1,6 @@
 ---
 title: Exemplo de gatilho de logon (XML)
-description: O XML neste exemplo define uma tarefa que inicia o bloco de notas quando um usuário faz logon.
+description: O XML neste exemplo define uma tarefa que começa Bloco de notas quando um usuário faz login.
 ms.assetid: c1cce95f-7558-489e-b092-c82d55b42165
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,27 +9,27 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: d66766ce4cae33c3526ac9d30071ff2082ddc1f2
-ms.sourcegitcommit: 40dd8501397fc79a643deb528c6c57ac2e9726ce
+ms.openlocfilehash: f7e92216748a799c5cf8a3ae32393db2b33c680861b2a5d3249eb19c527474e0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2020
-ms.locfileid: "104365430"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117760053"
 ---
 # <a name="logon-trigger-example-xml"></a>Exemplo de gatilho de logon (XML)
 
-O XML neste exemplo define uma tarefa que inicia o bloco de notas quando um usuário faz logon.
+O XML neste exemplo define uma tarefa que começa Bloco de notas quando um usuário faz login.
 
-Para registrar uma tarefa que é definida em XML, você pode usar a função [**ITaskFolder:: RegisterTask**](/windows/desktop/api/taskschd/nf-taskschd-itaskfolder-registertask) ([**TaskFolder. RegisterTask**](taskfolder-registertask.md) para scripts) ou a ferramenta de linha de comando Schtasks.exe. Se você usar a ferramenta de Schtasks.exe (localizada no diretório C: \\ Windows \\ System32), poderá usar o comando a seguir para registrar a tarefa: **SCHTASKS/CREATE/XML** *<path to the XML file containing the task definition>* **/TN** *<task name>* .
+Para registrar uma tarefa definida em XML, você pode usar a função [**ITaskFolder::RegisterTask**](/windows/desktop/api/taskschd/nf-taskschd-itaskfolder-registertask) ([**TaskFolder.RegisterTask**](taskfolder-registertask.md) para scripts) ou a ferramenta Schtasks.exe de linha de comando. Se você usar a ferramenta Schtasks.exe (localizada no diretório C: Windows System32), poderá usar o seguinte comando para registrar a \\ \\ tarefa: **schtasks /create /XML** *<path to the XML file containing the task definition>* **/tn** *<task name>* .
 
-## <a name="to-define-a-task-to-start-notepad-on-system-boot"></a>Para definir uma tarefa para iniciar o bloco de notas na inicialização do sistema
+## <a name="to-define-a-task-to-start-notepad-on-system-boot"></a>Para definir uma tarefa para iniciar o Bloco de notas na inicialização do sistema
 
-O exemplo de XML a seguir mostra como definir uma tarefa com uma única ação de execução (iniciando o bloco de notas), um único gatilho de logon que inicia a tarefa quando um usuário faz logon e várias outras configurações de tarefa que afetam o modo como a tarefa é manipulada pelo Agendador de Tarefas.
+O exemplo XML a seguir mostra como definir uma tarefa com uma única ação de execução (iniciando o Bloco de notas), um único gatilho de logon que inicia a tarefa quando um usuário faz logon e várias outras configurações de tarefa que afetam como a tarefa é tratada pelo Agendador de Tarefas.
 
 > [!Note]  
-> Defina o valor do elemento **userid** como um nome de usuário no computador em que a tarefa está registrada.
+> De definir o valor do **elemento UserId** como um nome de usuário no computador no qual a tarefa está registrada.
 
- 
+ 
 
 
 ```XML
@@ -72,16 +72,16 @@ This sample schedules a task to start notepad.exe when a user logs on.
 
 
 
-## <a name="taskscheduler-schema-elements"></a>Elementos do esquema TaskScheduler
+## <a name="taskscheduler-schema-elements"></a>Elementos de esquema TaskScheduler
 
-Veja a seguir alguns elementos importantes para ter em mente ao usar este exemplo:
+Veja a seguir alguns elementos importantes a ter em mente ao usar este exemplo:
 
--   [**RegistrationInfo**](taskschedulerschema-registrationinfo-tasktype-element.md): contém informações de registro sobre a tarefa.
--   [**Triggers**](taskschedulerschema-triggers-tasktype-element.md): define o gatilho que inicia a tarefa.
--   [**LogonTrigger**](taskschedulerschema-logontrigger-triggergroup-element.md): define o gatilho de logon. Nesse caso, três elementos filho são usados: os limites inicial e final que especificam quando o gatilho é ativado e desativado e o elemento [**userid**](taskschedulerschema-userid-logontriggertype-element.md) que o identificador do usuário. A tarefa é iniciada quando esse usuário faz logon no computador.
--   [**Principal**](taskschedulerschema-principal-principaltype-element.md): define o contexto de segurança em que uma tarefa é executada.
--   [**Configurações**](taskschedulerschema-settings-tasktype-element.md): define as configurações de tarefa que o Agendador de tarefas usa para executar a tarefa.
--   [**Ações**](taskschedulerschema-actions-tasktype-element.md): define as ações que a tarefa executa. Nesse caso, executar o bloco de notas.
+-   [**RegistrationInfo:**](taskschedulerschema-registrationinfo-tasktype-element.md)contém informações de registro sobre a tarefa.
+-   [**Gatilhos:**](taskschedulerschema-triggers-tasktype-element.md)define o gatilho que inicia a tarefa.
+-   [**LogonTrigger:**](taskschedulerschema-logontrigger-triggergroup-element.md)define o gatilho de logon. Nesse caso, três elementos filho são usados: os limites de início e término que especificam quando o gatilho é ativado e desativado e o [**elemento UserId**](taskschedulerschema-userid-logontriggertype-element.md) que identifica o usuário. A tarefa é iniciada quando esse usuário faz logona no computador..
+-   [**Entidade**](taskschedulerschema-principal-principaltype-element.md)de segurança: define o contexto de segurança no qual uma tarefa é executado.
+-   [**Configurações**](taskschedulerschema-settings-tasktype-element.md): define as configurações de tarefa que o Agendador de Tarefas usa para executar a tarefa.
+-   [**Ações**](taskschedulerschema-actions-tasktype-element.md): define as ações que a tarefa executa. Nesse caso, executando Bloco de notas.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -90,9 +90,9 @@ Veja a seguir alguns elementos importantes para ter em mente ao usar este exempl
 [Usando o Agendador de Tarefas](using-the-task-scheduler.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

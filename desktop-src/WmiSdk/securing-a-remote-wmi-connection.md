@@ -5,12 +5,12 @@ ms.tgt_platform: multiple
 title: Protegendo uma conexão WMI remota
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: df2a044e49fed5eaa27fbc246dca3306a6c29650
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8650ee47c549121a51e5d131055a84c176da944c6146f0532ffc86f1d2f9e4c6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104505675"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117739510"
 ---
 # <a name="securing-a-remote-wmi-connection"></a>Protegendo uma conexão WMI remota
 
@@ -20,19 +20,19 @@ O WMI tem configurações padrão de representação, autenticação e serviço 
 
 As seções a seguir são discutidas neste tópico:
 
--   [Configurações de representação e autenticação DCOM para WMI](#dcom-impersonation-and-authentication-settings-for-wmi)
+-   [Configurações de autenticação e representação DCOM para WMI](#dcom-impersonation-and-authentication-settings-for-wmi)
 -   [Definindo a segurança DCOM para permitir que um usuário acesse um computador remotamente](#setting-dcom-security-to-allow-a-user-to-access-a-computer-remotely)
 -   [Permitindo que os usuários acessem um namespace WMI específico](#allowing-users-access-to-a-specific-wmi-namespace)
 -   [Definindo a segurança do namespace para exigir a criptografia de dados para conexões remotas](#setting-namespace-security-to-require-data-encryption-for-remote-connections)
 -   [Tópicos relacionados](#related-topics)
 
-## <a name="dcom-impersonation-and-authentication-settings-for-wmi"></a>Configurações de representação e autenticação DCOM para WMI
+## <a name="dcom-impersonation-and-authentication-settings-for-wmi"></a>Configurações de autenticação e representação DCOM para WMI
 
 O WMI tem configurações de representação, autenticação e serviço de autenticação (NTLM ou Kerberos) padrão do DCOM que o sistema remoto exige. Seu sistema local pode usar padrões diferentes que o sistema remoto de destino não aceita. Você pode alterar essas configurações na chamada de conexão. Para obter mais informações, consulte [definindo a segurança do processo do aplicativo cliente](setting-client-application-process-security.md). No entanto, para o serviço de autenticação, é recomendável que você especifique o **\_ \_ \_ padrão de autenticação RPC C** e permitir que o DCOM escolha o serviço apropriado para o computador de destino.
 
 Você pode fornecer configurações em parâmetros para as chamadas para [**CoInitializeSecurity**](/windows/win32/api/combaseapi/nf-combaseapi-coinitializesecurity) ou [**CoSetProxyBlanket**](/windows/win32/api/combaseapi/nf-combaseapi-cosetproxyblanket) em C++. Em scripts, você pode estabelecer configurações de segurança em chamadas para [**SWbemLocator. ConnectServer**](swbemlocator-connectserver.md), em um objeto [**SWbemSecurity**](swbemsecurity.md) ou na cadeia de caracteres do [moniker do identificador](constructing-a-moniker-string.md) de script.
 
-Para obter uma lista de todas as constantes de representação de C++, consulte [definindo o nível de segurança do processo padrão usando C++](setting-the-default-process-security-level-using-c-.md). Para obter as constantes de Visual Basic e as cadeias de caracteres de script para usar a conexão do moniker, consulte [definindo o nível de segurança do processo padrão usando o VBScript](setting-the-default-process-security-level-using-vbscript.md).
+Para obter uma lista de todas as constantes de representação de C++, consulte [definindo o nível de segurança do processo padrão usando C++](setting-the-default-process-security-level-using-c-.md). para obter as constantes de Visual Basic e as cadeias de caracteres de script para usar a conexão do moniker, consulte [definindo o nível de segurança do processo padrão usando o VBScript](setting-the-default-process-security-level-using-vbscript.md).
 
 A tabela a seguir lista as configurações padrão de representação, autenticação e serviço de autenticação do DCOM exigidas pelo computador de destino (computador B) em uma conexão remota. Para obter mais informações, consulte protegendo uma conexão WMI remota.
 
@@ -46,7 +46,7 @@ A tabela a seguir lista as configurações padrão de representação, autentica
 
  
 
-As conexões remotas do WMI são afetadas pelo [controle de conta de usuário (UAC)](/previous-versions/aa905108(v=msdn.10)) e pelo [Firewall do Windows](https://www.microsoft.com/technet/itsolutions/network/wf/default.mspx). Para obter mais informações, consulte [conectando-se ao WMI remotamente a partir do vista](connecting-to-wmi-remotely-starting-with-vista.md) e [conectando por meio do firewall do Windows](/windows/desktop/WmiSdk/connecting-to-wmi-remotely-starting-with-vista).
+as conexões remotas do WMI são afetadas pelo [controle de conta de usuário (UAC)](/previous-versions/aa905108(v=msdn.10)) e pelo [Firewall Windows](https://www.microsoft.com/technet/itsolutions/network/wf/default.mspx). para obter mais informações, consulte [conectando-se ao WMI remotamente a partir do Vista](connecting-to-wmi-remotely-starting-with-vista.md) e [conectando por meio do Firewall Windows](/windows/desktop/WmiSdk/connecting-to-wmi-remotely-starting-with-vista).
 
 Lembre-se de que conectar-se ao WMI no computador local tem um nível de autenticação padrão de **PktPrivacy**.
 
@@ -89,7 +89,7 @@ O procedimento a seguir define permissões de habilitação remota para um usuá
 
 **Para definir permissões de habilitação remota**
 
-1.  Conecte-se ao computador remoto usando o controle WMI.
+1.  Conexão ao computador remoto usando o controle WMI.
 
     Para obter mais informações sobre o controle WMI, consulte [definindo a segurança do namespace com o controle WMI](setting-namespace-security-with-the-wmi-control.md).
 

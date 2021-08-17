@@ -36,7 +36,7 @@ O UUID da sintaxe de transferência com suporte pela entrada atual.
 | Frequência de atualização  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.314                      |
 | System-Id-Guid    | 29401c4a-7a27-11d0-afd6-00c04fd930c9        |
-| Sintaxe            | [**String(Unicode)**](s-string-unicode.md) |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -58,8 +58,8 @@ O UUID da sintaxe de transferência com suporte pela entrada atual.
 | ID do link                | \-                                                          |
 | MAPI-Id                | \-                                                          |
 | System-Only            | Falso                                                       |
-| Tem valor único       | True                                                        |
-| É indexado             | True                                                        |
+| Tem valor único       | Verdadeiro                                                        |
+| É indexado             | Verdadeiro                                                        |
 | No Catálogo Global      | Falso                                                       |
 | Descritor de segurança NT | O:BAG:BAD:S:                                                |
 | Range-Lower            | \-                                                          |
@@ -79,8 +79,8 @@ O UUID da sintaxe de transferência com suporte pela entrada atual.
 | ID do link                | \-                                                          |
 | MAPI-Id                | \-                                                          |
 | System-Only            | Falso                                                       |
-| Tem valor único       | True                                                        |
-| É indexado             | True                                                        |
+| Tem valor único       | Verdadeiro                                                        |
+| É indexado             | Verdadeiro                                                        |
 | No Catálogo Global      | Falso                                                       |
 | Descritor de segurança NT | O:BAG:BAD:S:                                                |
 | Range-Lower            | \-                                                          |
@@ -100,8 +100,8 @@ O UUID da sintaxe de transferência com suporte pela entrada atual.
 | ID do link                | \-                                                          |
 | MAPI-Id                | \-                                                          |
 | System-Only            | Falso                                                       |
-| Tem valor único       | True                                                        |
-| É indexado             | True                                                        |
+| Tem valor único       | Verdadeiro                                                        |
+| É indexado             | Verdadeiro                                                        |
 | No Catálogo Global      | Falso                                                       |
 | Descritor de segurança NT | O:BAG:BAD:S:                                                |
 | Range-Lower            | \-                                                          |
@@ -121,15 +121,15 @@ O UUID da sintaxe de transferência com suporte pela entrada atual.
 | ID do link                | \-                                                          |
 | MAPI-Id                | \-                                                          |
 | System-Only            | Falso                                                       |
-| É de valor único       | True                                                        |
-| É indexado             | True                                                        |
-| No catálogo global      | Falso                                                       |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                |
+| Tem valor único       | Verdadeiro                                                        |
+| É indexado             | Verdadeiro                                                        |
+| No Catálogo Global      | Falso                                                       |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                |
 | Range-Lower            | \-                                                          |
 | Range-Upper            | \-                                                          |
 | Search-Flags           | 0x00000001                                                  |
 | System-Flags           | 0x00000010                                                  |
-| Classes usadas em        | [**Servidor RPC-elemento**](c-rpcserverelement.md)<br/> |
+| Classes usadas em        | [**rpc-Server-Element**](c-rpcserverelement.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ O UUID da sintaxe de transferência com suporte pela entrada atual.
 | ID do link                | \-                                                          |
 | MAPI-Id                | \-                                                          |
 | System-Only            | Falso                                                       |
-| É de valor único       | True                                                        |
-| É indexado             | True                                                        |
-| No catálogo global      | Falso                                                       |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                |
+| Tem valor único       | Verdadeiro                                                        |
+| É indexado             | Verdadeiro                                                        |
+| No Catálogo Global      | Falso                                                       |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                |
 | Range-Lower            | \-                                                          |
 | Range-Upper            | \-                                                          |
 | Search-Flags           | 0x00000001                                                  |
 | System-Flags           | 0x00000010                                                  |
-| Classes usadas em        | [**Servidor RPC-elemento**](c-rpcserverelement.md)<br/> |
+| Classes usadas em        | [**rpc-Server-Element**](c-rpcserverelement.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ O UUID da sintaxe de transferência com suporte pela entrada atual.
 | ID do link                | \-                                                          |
 | MAPI-Id                | \-                                                          |
 | System-Only            | Falso                                                       |
-| É de valor único       | True                                                        |
-| É indexado             | True                                                        |
-| No catálogo global      | Falso                                                       |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                |
+| Tem valor único       | Verdadeiro                                                        |
+| É indexado             | Verdadeiro                                                        |
+| No Catálogo Global      | Falso                                                       |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                |
 | Range-Lower            | \-                                                          |
 | Range-Upper            | \-                                                          |
 | Search-Flags           | 0x00000001                                                  |
 | System-Flags           | 0x00000010                                                  |
-| Classes usadas em        | [**Servidor RPC-elemento**](c-rpcserverelement.md)<br/> |
+| Classes usadas em        | [**rpc-Server-Element**](c-rpcserverelement.md)<br/> |
 
 
 

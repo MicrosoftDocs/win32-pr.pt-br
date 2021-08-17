@@ -1,25 +1,25 @@
 ---
-description: 'Saiba mais sobre: Propriedades de EsentBadBackupDatabaseSizeException'
-title: Propriedades de EsentBadBackupDatabaseSizeException
+description: 'Saiba mais sobre: Propriedades EsentBadBackupDatabaseSizeException'
+title: Propriedades EsentBadBackupDatabaseSizeException
 TOCTitle: EsentBadBackupDatabaseSizeException properties
 ms:assetid: Properties.T:Microsoft.Isam.Esent.Interop.EsentBadBackupDatabaseSizeException
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentbadbackupdatabasesizeexception_properties(v=EXCHG.10)
 ms:contentKeyID: 55101048
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 5a4dba4654a83e13b5b5db610a2fa0e606210052
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b7e569aab22c90669e0acabf54b51327cb83927535258583d7ee0d9c92764d43
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104562040"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118083280"
 ---
-# <a name="esentbadbackupdatabasesizeexception-properties"></a>Propriedades de EsentBadBackupDatabaseSizeException
+# <a name="esentbadbackupdatabasesizeexception-properties"></a>Propriedades EsentBadBackupDatabaseSizeException
 
 Incluir membros protegidos  
 Incluir membros herdados  
 
-O tipo [EsentBadBackupDatabaseSizeException](./esentbadbackupdatabasesizeexception-class.md) expõe os membros a seguir.
+O [tipo EsentBadBackupDatabaseSizeException](./esentbadbackupdatabasesizeexception-class.md) expõe os membros a seguir.
 
 ## <a name="properties"></a>Propriedades
 
@@ -40,16 +40,16 @@ O tipo [EsentBadBackupDatabaseSizeException](./esentbadbackupdatabasesizeexcepti
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
 <td><a href="dn274313(v=exchg.10).md">Erro</a></td>
-<td>Obtém o erro de ESENT subjacente para esta exceção. (Herdado de <a href="dn274314(v=exchg.10).md">EsentErrorException</a>.)</td>
+<td>Obtém o erro Esent subjacente para essa exceção. (Herdado de <a href="dn274314(v=exchg.10).md">EsentErrorException</a>.)</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
-<td><a href="/dotnet/api/system.exception.helplink#System_Exception_HelpLink">HelpLink</a></td>
+<td><a href="/dotnet/api/system.exception.helplink#System_Exception_HelpLink">Helplink</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.protproperty(exchg.10).gif" title="Propriedade protegida" alt="Protected property" /></td>
-<td><a href="/dotnet/api/system.exception.hresult#System_Exception_HResult">Resultado</a></td>
+<td><a href="/dotnet/api/system.exception.hresult#System_Exception_HResult">HResult</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="odd">
@@ -69,7 +69,7 @@ O tipo [EsentBadBackupDatabaseSizeException](./esentbadbackupdatabasesizeexcepti
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
-<td><a href="/dotnet/api/system.exception.stacktrace#System_Exception_StackTrace">Pilha</a></td>
+<td><a href="/dotnet/api/system.exception.stacktrace#System_Exception_StackTrace">StackTrace</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="odd">
@@ -89,4 +89,4 @@ Parte superior
 
 [Classe EsentBadBackupDatabaseSizeException](./esentbadbackupdatabasesizeexception-class.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

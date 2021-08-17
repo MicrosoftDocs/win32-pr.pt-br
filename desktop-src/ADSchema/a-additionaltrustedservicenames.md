@@ -36,7 +36,7 @@ Uma lista de serviços no domínio que pode ser confiável. Não usado pelo AD.
 | Frequência de atualização  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.889                      |
 | System-ID-GUID    | 032160be-9824-11d1-aec0-0000f80367c1        |
-| Sintaxe            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
 
 
 

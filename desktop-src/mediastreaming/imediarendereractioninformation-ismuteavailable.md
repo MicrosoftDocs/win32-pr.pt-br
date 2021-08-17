@@ -1,11 +1,11 @@
 ---
 title: Método IMediaRendererActionInformation IsMuteAvailable
-description: Recupera um valor que indica se o DMR é capaz de desativar o áudio.
+description: Recupera um valor que indica se a DMR é capaz de muting do áudio.
 ms.assetid: F744C2D7-5518-4A9F-A71E-60CF0B312177
 keywords:
-- API de streaming de mídia do método IsMuteAvailable
-- API de streaming de mídia do método IsMuteAvailable, interface IMediaRendererActionInformation
-- API de streaming de mídia da interface IMediaRendererActionInformation, método IsMuteAvailable
+- API de Streaming de Mídia do método IsMuteAvailable
+- API de Streaming de Mídia do método IsMuteAvailable, interface IMediaRendererActionInformation
+- API de Streaming de Mídia da interface IMediaRendererActionInformation , método IsMuteAvailable
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 96751a7f2f1aedcd9e29be981ffadf6c43bf4008
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 331e2831ff18656f23a3d7067b8ab472835bf4a25760f6e86a92302621048a48
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104007435"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117871063"
 ---
-# <a name="imediarendereractioninformationismuteavailable-method"></a>Método IMediaRendererActionInformation:: IsMuteAvailable
+# <a name="imediarendereractioninformationismuteavailable-method"></a>Método IMediaRendererActionInformation::IsMuteAvailable
 
-Recupera um valor que indica se o DMR é capaz de desativar o áudio.
+Recupera um valor que indica se a DMR é capaz de muting do áudio.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -41,16 +41,16 @@ HRESULT IsMuteAvailable(
 
 <dl> <dt>
 
-*valor* \[ do fora\]
+*value* \[ out\]
 </dt> <dd>
 
-Um valor booliano que será **true** se o DMR for capaz de desativar o áudio e **false** se não for.
+Um valor boolano que será **True** se a DMR for capaz de muting o áudio e **False** se não for.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
+O método retorna um **HRESULT.** Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
 
 
 

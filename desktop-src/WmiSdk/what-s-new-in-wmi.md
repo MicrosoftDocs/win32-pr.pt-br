@@ -5,18 +5,18 @@ ms.tgt_platform: multiple
 title: Novidades no WMI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4e60c096cf72fe3ee48559c95b6ba643fa46b1f2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7bec41c28985090368e9f16e0f75c663ca2b811db44ece6e930e04bb1dd2c8c0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105782285"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117921236"
 ---
 # <a name="whats-new-in-wmi"></a>O que há de novo no WMI
 
-## <a name="new-security-feature-in-windows-7"></a>Novo recurso de segurança no Windows 7
+## <a name="new-security-feature-in-windows-7"></a>novo recurso de segurança no Windows 7
 
-O seguinte lista o novo recurso de segurança Instrumentação de Gerenciamento do Windows (WMI) que está disponível no Windows 7.
+o seguinte lista o novo recurso de segurança Instrumentação de Gerenciamento do Windows (WMI) que está disponível no Windows 7.
 
 <dl> <dt>
 
@@ -29,9 +29,9 @@ Alterações para aprimorar a segurança do processo de host do provedor compart
 
 ## <a name="new-or-updated-features-in-windows-8"></a>Recursos novos ou atualizados no Windows 8
 
-A principal atualização para Instrumentação de Gerenciamento do Windows foi a versão completa da versão de última geração do WMI, conhecida como a MI (infraestrutura de gerenciamento do Windows). MI é totalmente compatível com as versões anteriores do WMI e fornece um host de recursos e benefícios que facilitam ainda mais o projeto e o desenvolvimento de provedores e clientes. Para obter mais informações sobre MI, consulte [novidades na mi?](/previous-versions/windows/desktop/wmi_v2/what-s-new-in-mi)
+a principal atualização para Instrumentação de Gerenciamento do Windows foi a versão completa da versão de última geração do WMI, conhecida como infraestrutura de gerenciamento de Windows (MI). MI é totalmente compatível com as versões anteriores do WMI e fornece um host de recursos e benefícios que facilitam ainda mais o projeto e o desenvolvimento de provedores e clientes. Para obter mais informações sobre MI, consulte [novidades na mi?](/previous-versions/windows/desktop/wmi_v2/what-s-new-in-mi)
 
-Para obter mais informações sobre os novos recursos do WMI em versões anteriores do sistema operacional, consulte [novidades do Windows 7](what-s-new-in-windows-7.md)e [o que há de novo no Windows Vista](what-s-new-in-windows-vista.md).
+para obter mais informações sobre os novos recursos do WMI em versões anteriores do sistema operacional, consulte [novidades do Windows 7](what-s-new-in-windows-7.md)e [o que há de novo no Windows Vista](what-s-new-in-windows-vista.md).
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

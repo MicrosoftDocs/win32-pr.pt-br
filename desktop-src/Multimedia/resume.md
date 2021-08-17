@@ -1,9 +1,9 @@
 ---
-title: comando retomar
-description: O comando retomar continua a reproduzir ou gravar em um dispositivo que foi pausado usando o comando PAUSE.
+title: comando resume
+description: O comando resume continua a reprodução ou gravação em um dispositivo que foi pausado usando o comando pause.
 ms.assetid: 0a2cdd23-8c1d-4d9e-9b63-3fdcbb13e3a2
 keywords:
-- retomar a multimídia do Windows do comando
+- retomar comando Windows Multimídia
 topic_type:
 - apiref
 api_name:
@@ -12,18 +12,18 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 87f01fd96e2b25e191608c7c6abf70bfd842158d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c7e4a728e3ca89e2b4ddc21809830d5af3be9a2b04e004f99d5a792a9be5da01
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105810304"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117801888"
 ---
-# <a name="resume-command"></a>comando retomar
+# <a name="resume-command"></a>comando resume
 
-O comando retomar continua a reproduzir ou gravar em um dispositivo que foi pausado usando o comando [Pause](pause.md) . Digital-Video, VCR e Wave-Audio Devices reconhecem este comando. Embora os dispositivos de áudio CD, MIDI Sequencer e VIDEODISC também reconheçam esse comando, os drivers de dispositivo MCICDA, MCISEQ e MCIPIONR não dão suporte a ele.
+O comando resume continua a reprodução ou gravação em um dispositivo que foi pausado usando o [comando pause.](pause.md) Os dispositivos de vídeo digital, VCR e waveform-audio reconhecem esse comando. Embora os dispositivos de áudio CD, MIDI sequencer e videodisc também reconheçam esse comando, os drivers de dispositivo MCICDA, MCISEQ e MCIPIONR não são compatíveis com ele.
 
-Para enviar esse comando, chame a função [**mciSendString**](/previous-versions//dd757161(v=vs.85)) com o parâmetro *lpszCommand* definido da seguinte maneira.
+Para enviar esse comando, chame a [**função mciSendString**](/previous-versions//dd757161(v=vs.85)) com *o parâmetro lpszCommand* definido da seguinte forma.
 
 ``` syntax
 _stprintf_s(
@@ -48,17 +48,17 @@ Identificador de um dispositivo MCI. Esse identificador ou alias é atribuído q
 <span id="lpszFlags"></span><span id="lpszflags"></span><span id="LPSZFLAGS"></span>*lpszFlags*
 </dt> <dd>
 
-Pode ser "Wait", "notificar" ou ambos. Para dispositivos de vídeo digital e VCR, o "teste" também pode ser especificado. Para obter mais informações sobre esses sinalizadores, consulte [os sinalizadores aguardar, notificar e testar](the-wait-notify-and-test-flags.md).
+Pode ser "wait", "notify" ou ambos. Para dispositivos de vídeo digital e VCR, "teste" também pode ser especificado. Para obter mais informações sobre esses sinalizadores, consulte [Os sinalizadores de espera, notificação e teste.](the-wait-notify-and-test-flags.md)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor Retornado
 
-Retornará zero se for bem-sucedido ou um erro de outra forma.
+Retornará zero se for bem-sucedido ou um erro, caso contrário.
 
 ## <a name="examples"></a>Exemplos
 
-O comando a seguir continua a reproduzir ou gravar o dispositivo "newsound".
+O comando a seguir continua a tocar ou gravar o dispositivo "newsound".
 
 ``` syntax
 resume newsound
@@ -79,7 +79,7 @@ resume newsound
 
 <dl> <dt>
 
-[MCI](mci.md)
+[Mci](mci.md)
 </dt> <dt>
 
 [Cadeias de caracteres de comando MCI](mci-command-strings.md)

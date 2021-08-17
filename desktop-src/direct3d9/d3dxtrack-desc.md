@@ -1,7 +1,7 @@
 ---
-description: Descreve uma faixa de animação e especifica o peso, a velocidade e a posição de mesclagem para a faixa em um determinado momento.
+description: Descreve uma faixa de animação e especifica o peso, a velocidade e a posição da mistura para a faixa em um determinado momento.
 ms.assetid: f1469b6f-861f-4b7d-a187-933092a5d257
-title: Estrutura de D3DXTRACK_DESC (D3dx9anim. h)
+title: D3DXTRACK_DESC (D3dx9anim.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9anim.h
-ms.openlocfilehash: 12f1604cf954bcdd6a2a898fec5410804112e498
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: cddabb3ea79951e35831c2cdc32e11baeb5c7c1c4ce174fd29d9382edb391953
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105802053"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117731113"
 ---
-# <a name="d3dxtrack_desc-structure"></a>\_Estrutura desc de D3DXTRACK
+# <a name="d3dxtrack_desc-structure"></a>Estrutura D3DXTRACK \_ DESC
 
-Descreve uma faixa de animação e especifica o peso, a velocidade e a posição de mesclagem para a faixa em um determinado momento.
+Descreve uma faixa de animação e especifica o peso, a velocidade e a posição da mistura para a faixa em um determinado momento.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -46,61 +46,61 @@ typedef struct D3DXTRACK_DESC {
 **Prioridade**
 </dt> <dd>
 
-Tipo: **[ **\_ tipo de D3DXPRIORITY**](./d3dxpriority-type.md)**
+Tipo: **[ **D3DXPRIORITY \_ TYPE**](./d3dxpriority-type.md)**
 
 </dd> <dd>
 
-Tipo de prioridade, conforme definido [**no \_ tipo D3DXPRIORITY**](./d3dxpriority-type.md).
+Tipo de prioridade, conforme definido [**em D3DXPRIORITY \_ TYPE**](./d3dxpriority-type.md).
 
 </dd> <dt>
 
 **Weight**
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Valor de peso. O peso determina a proporção dessa faixa para misturar com outras faixas.
+Valor de peso. O peso determina a proporção dessa faixa para combinar com outras faixas.
 
 </dd> <dt>
 
 **Velocidade**
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Valor de velocidade. Isso é usado da mesma forma que um multiplicador para dimensionar o período da faixa.
+Valor de velocidade. Isso é usado de forma semelhante a um multiplicador para dimensionar o período da faixa.
 
 </dd> <dt>
 
 **Posição**
 </dt> <dd>
 
-Tipo: **[ **duplo**](../winprog/windows-data-types.md)**
+Tipo: **[ **DOUBLE**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Posição de hora da faixa, no período de tempo local do conjunto de animações atual.
+Posição de hora da faixa, no período local de seu conjunto de animação atual.
 
 </dd> <dt>
 
 **Habilitar**
 </dt> <dd>
 
-Tipo: **[ **bool**](../winprog/windows-data-types.md)**
+Tipo: **[ **BOOL**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Controle habilitar/desabilitar. Para habilitar, defina como **true**. Para desabilitar, defina como **false**.
+Acompanhe habilitar/desabilitar. Para habilitar, de definido como **TRUE.** Para desabilitar, de definido como **FALSE.**
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-As faixas com a mesma prioridade são mescladas e os dois valores resultantes são mesclados usando o fator de mesclagem de prioridade. Uma faixa deve ter uma animação definida (armazenada separadamente) associada a ela.
+As faixas com a mesma prioridade são mescladas e os dois valores resultantes são então mesclados usando o fator de combinação de prioridade. Uma faixa deve ter um conjunto de animação (armazenado separadamente) associado a ela.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -108,7 +108,7 @@ As faixas com a mesma prioridade são mescladas e os dois valores resultantes s�
 
 | Requisito | Valor |
 |-------------------|----------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>D3dx9anim. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>D3dx9anim.h</dt> </dl> |
 
 
 

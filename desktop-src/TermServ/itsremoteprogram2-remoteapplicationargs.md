@@ -4,11 +4,11 @@ description: Os argumentos de linha de comando para o RemoteApp.
 ms.assetid: c1c36876-df3d-4ef9-a5ac-f623bc51fe7b
 ms.tgt_platform: multiple
 keywords:
-- Propriedade RemoteApplicationArgs Serviços de Área de Trabalho Remota
-- Propriedade RemoteApplicationArgs Serviços de Área de Trabalho Remota , interface ITSRemoteProgram2
-- Interface ITSRemoteProgram2 Serviços de Área de Trabalho Remota , propriedade RemoteApplicationArgs
-- Propriedade RemoteApplicationArgs Serviços de Área de Trabalho Remota , interface ITSRemoteProgram3
-- Interface ITSRemoteProgram3 Serviços de Área de Trabalho Remota , propriedade RemoteApplicationArgs
+- Serviços de Área de Trabalho Remota da propriedade RemoteApplicationArgs
+- Propriedade RemoteApplicationArgs Serviços de Área de Trabalho Remota, interface ITSRemoteProgram2
+- Serviços de Área de Trabalho Remota de interface ITSRemoteProgram2, Propriedade RemoteApplicationArgs
+- Propriedade RemoteApplicationArgs Serviços de Área de Trabalho Remota, interface ITSRemoteProgram3
+- Serviços de Área de Trabalho Remota de interface ITSRemoteProgram3, Propriedade RemoteApplicationArgs
 topic_type:
 - apiref
 api_name:
@@ -29,7 +29,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117756768"
 ---
-# <a name="itsremoteprogram2remoteapplicationargs-property"></a>Propriedade ITSRemoteProgram2::RemoteApplicationArgs
+# <a name="itsremoteprogram2remoteapplicationargs-property"></a>Propriedade ITSRemoteProgram2:: RemoteApplicationArgs
 
 Os argumentos de linha de comando para o RemoteApp.
 

@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e4be10c5e1c7073afb3abf359c3ec2fb79a4335b
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 16729e0a0a422c8ed2d8a8f323b563cb6a268fcb041e6a9d2ba13a9c9b847d79
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104294035"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117806654"
 ---
 # <a name="midl_user_allocate-attribute"></a>atributo de alocação de \_ usuário MIDL \_
 
@@ -71,7 +71,7 @@ void __RPC_FAR * __RPC_API midl_user_allocate(size_t cBytes)
 [**aloca**](allocate.md)
 </dt> <dt>
 
-[**Storage**](arrays-1.md)
+[**matrizes**](arrays-1.md)
 </dt> <dt>
 
 [Matrizes e ponteiros](/windows/desktop/Rpc/arrays-and-pointers)
@@ -101,6 +101,6 @@ void __RPC_FAR * __RPC_API midl_user_allocate(size_t cBytes)
 [**diferente**](unique.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

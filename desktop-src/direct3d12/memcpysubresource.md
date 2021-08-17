@@ -1,6 +1,6 @@
 ---
-title: Função MemcpySubresource (D3dx12. h)
-description: Copia uma linha de subrecurso por linha.
+title: Função MemcpySubresource (D3dx12.h)
+description: Copia uma sub-fonte linha por linha.
 ms.assetid: 33A9F99D-FD85-4FD6-AFD6-7A10F16C3D9B
 keywords:
 - Função MemcpySubresource
@@ -15,16 +15,16 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b955211a490927033186442480b3449773b4ebcd
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 8c27e8cf9ffda237c2dad017b3a981ff71498a22c1c7b54ede032d6bf8c012a1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105781143"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117733358"
 ---
 # <a name="memcpysubresource-function"></a>Função MemcpySubresource
 
-Copia uma linha de subrecurso por linha.
+Copia uma sub-fonte linha por linha.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -45,28 +45,28 @@ void inline MemcpySubresource(
 
 <dl> <dt>
 
-*pDest* \[ no\]
+*pDest* \[ Em\]
 </dt> <dd>
 
-Tipo: **const [**D3D12 \_ MEMCPY \_ dest**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_memcpy_dest) \***
+Tipo: **const [**D3D12 \_ MEMCPY \_ DEST**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_memcpy_dest) \***
 
-Um ponteiro para uma estrutura de [**\_ \_ dest D3D12 MEMCPY**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_memcpy_dest) que descreve o destino da operação de cópia de memória.
+Um ponteiro para uma [**estrutura D3D12 \_ MEMCPY \_ DEST**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_memcpy_dest) que descreve o destino da operação de cópia de memória.
 
 </dd> <dt>
 
-*pSrc* \[ no\]
+*pSrc* \[ Em\]
 </dt> <dd>
 
-Tipo: **const [**D3D12 \_ subresource \_ Data**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_subresource_data) \***
+Tipo: **const [**D3D12 \_ SUBRESOURCE \_ DATA**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_subresource_data) \***
 
-Um ponteiro para uma estrutura de [**\_ \_ dados de subrecurso D3D12**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_subresource_data) que descreve a origem da operação de cópia de memória.
+Um ponteiro para uma [**estrutura D3D12 \_ SUBRESOURCE \_ DATA**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_subresource_data) que descreve a origem da operação de cópia de memória.
 
 </dd> <dt>
 
 *RowSizeInBytes* 
 </dt> <dd>
 
-Tipo: **[ **tamanho \_ T**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **SIZE \_ T**](/windows/desktop/WinProg/windows-data-types)**
 
 O tamanho, em bytes, de cada linha.
 
@@ -75,7 +75,7 @@ O tamanho, em bytes, de cada linha.
 *NumRows* 
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
 O número de linhas.
 
@@ -84,7 +84,7 @@ O número de linhas.
 *NumSlices* 
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
 O número de fatias.
 
@@ -108,8 +108,8 @@ Considere também os seguintes métodos:
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3dx12. h</dt> </dl>  |
-| Biblioteca<br/> | <dl> <dt>D3D12. lib</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>D3dx12.h</dt> </dl>  |
+| Biblioteca<br/> | <dl> <dt>D3D12.lib</dt> </dl> |
 | DLL<br/>     | <dl> <dt>D3D12.dll</dt> </dl> |
 
 

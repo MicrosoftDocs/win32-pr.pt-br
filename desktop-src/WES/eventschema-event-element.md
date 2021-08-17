@@ -1,9 +1,9 @@
 ---
-title: Elemento Event (log de eventos do Windows)
-description: Este é o nó raiz do evento registrado.
+title: Elemento Event (Windows Log de Eventos)
+description: Esse é o nó raiz do evento registrado.
 ms.assetid: 35f93856-e88b-4cce-9439-ad1a01fc8f38
 keywords:
-- Evento EventLog do elemento Event
+- Elemento EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: e020fbcdf17c2eeb803bab152a738252122cc43a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 4db0b0ca90ff617a78bfa393adc057ba8bfdd9ae260ecebb487bd890bce8ff5e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105761132"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118120310"
 ---
 # <a name="event-element"></a>Elemento Event
 
-Este é o nó raiz do evento registrado.
+Esse é o nó raiz do evento registrado.
 
 ``` syntax
 <xs:element name="Event"
@@ -36,8 +36,8 @@ Este é o nó raiz do evento registrado.
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
 
 
 

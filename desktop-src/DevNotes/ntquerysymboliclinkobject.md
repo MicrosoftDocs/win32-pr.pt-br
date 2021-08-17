@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Ntdll.dll
-ms.openlocfilehash: c79b7b40e0d3c8622ee263d96836f738d76942ae
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 805f3de5da380c4749e58dd7467f1f4ccb2471119ffed81b79695a98feb1b090
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105751952"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118003626"
 ---
 # <a name="ntquerysymboliclinkobject-function"></a>Função NtQuerySymbolicLinkObject
 
-\[Essa função pode ser alterada ou não estar disponível no futuro.\]
+\[Essa função pode ser alterada ou não disponível no futuro.\]
 
 Recupera o destino de um link simbólico.
 
@@ -43,34 +43,34 @@ NTSTATUS WINAPI NtQuerySymbolicLinkObject(
 
 <dl> <dt>
 
-*LinkHandle* \[ no\]
+*LinkHandle* \[ Em\]
 </dt> <dd>
 
-Um identificador para o objeto de vínculo simbólico.
+Um identificador para o objeto de link simbólico.
 
 </dd> <dt>
 
-*LinkTarget* \[ entrada, saída\]
+*LinkTarget* \[ in, out\]
 </dt> <dd>
 
-Um ponteiro para uma cadeia de caracteres Unicode inicializada que recebe o destino do link simbólico. O **MaximumLength** e os membros do **buffer** devem ser definidos se a chamada falhar.
+Um ponteiro para uma cadeia de caracteres Unicode inicializada que recebe o destino do link simbólico. Os **membros MaximumLength** **e Buffer** deverão ser definidos se a chamada falhar.
 
 </dd> <dt>
 
 *ReturnedLength* \[ out, opcional\]
 </dt> <dd>
 
-Um ponteiro para uma variável que recebe o comprimento da cadeia de caracteres Unicode retornado no parâmetro *LinkTarget* . Se a função retornar **o \_ buffer de status \_ muito \_ pequeno**, essa variável receberá o tamanho de buffer necessário.
+Um ponteiro para uma variável que recebe o comprimento da cadeia de caracteres Unicode retornada no *parâmetro LinkTarget.* Se a função retornar **STATUS \_ BUFFER MUITO \_ \_ PEQUENO**, essa variável receberá o tamanho do buffer necessário.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-A função retorna o **status \_ êxito** ou um status de erro.
+A função retorna **STATUS \_ SUCCESS ou** um status de erro.
 
 ## <a name="remarks"></a>Comentários
 
-Esta função não tem biblioteca de importação ou arquivo de cabeçalho associado; Você deve chamá-lo usando as funções [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) .
+Essa função não tem nenhuma biblioteca de importação ou arquivo de header associado; você deve chamá-lo usando [**as funções LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) [**e GetProcAddress.**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress)
 
 ## <a name="requirements"></a>Requisitos
 

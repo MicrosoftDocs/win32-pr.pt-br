@@ -4,12 +4,12 @@ description: O sistema cria automaticamente a estação de janela interativa.
 ms.assetid: 5b908cb6-3a72-4afc-aed0-8411e8d0888f
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 34aff24a29432e3e394a199bf881aa386bf17e71
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 52a3cc85a3194bea6c8eaea00a7ce794901426e794c962e1b23713561f8fc744
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104294062"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118030512"
 ---
 # <a name="window-station-and-desktop-creation"></a>Estação de janela e criação de área de trabalho
 
@@ -45,6 +45,6 @@ enumerar área de trabalho \_
 \_direitos padrão \_ necessários  
 </dl>
 
- 
+ 
 
- 
+ 

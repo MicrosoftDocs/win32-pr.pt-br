@@ -18,23 +18,23 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: e9aad9828a92d67f2e7411aa534103696d913934
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ec5c83bb78528a61bbe7af9bafa59567100ee9da669915b96230bfb97b8bf390
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104501291"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117891112"
 ---
 # <a name="jetreadfileinstance-function"></a>Função JetReadFileInstance
 
 
-_**Aplica-se a:** Windows | Windows Server_
+_**Aplica-se a:** Windows | Windows Servidor_
 
 ## <a name="jetreadfileinstance-function"></a>Função JetReadFileInstance
 
 A função **JetReadFileInstance** recupera o conteúdo de um arquivo aberto com a função [JetOpenFileInstance](./jetopenfileinstance-function.md) .
 
-**Windows XP**: o   **JetReadFileInstance** é introduzido no Windows XP.
+**Windows xp**: o **JetReadFileInstance** é introduzido no Windows XP.
 
 ```cpp
     JET_ERR JET_API JetReadFileInstance(
@@ -52,9 +52,9 @@ A função **JetReadFileInstance** recupera o conteúdo de um arquivo aberto com
 
 A instância a ser usada para uma chamada de API específica.
 
-Observe que para o Windows 2000, a variante de API que aceita esse parâmetro não está disponível porque há suporte para apenas uma instância. O uso dessa instância global é implícito nesse caso.
+observe que, para Windows 2000, a variante de API que aceita esse parâmetro não está disponível porque há suporte apenas para uma instância. O uso dessa instância global é implícito nesse caso.
 
-Para o Windows XP e versões posteriores, você pode chamar a variante de API que não aceita esse parâmetro somente quando o mecanismo está no modo herdado (modo de compatibilidade do Windows 2000) nos casos em que há suporte para apenas uma instância. Caso contrário, a operação falhará e retornará o erro de JET_errRunningInMultiInstanceMode.
+para Windows XP e versões posteriores, você pode chamar a variante de API que não aceita esse parâmetro somente quando o mecanismo está no modo herdado (modo de compatibilidade Windows 2000) nos casos em que há suporte para apenas uma instância. Caso contrário, a operação falhará e retornará o erro de JET_errRunningInMultiInstanceMode.
 
 *hfFile*
 
@@ -74,7 +74,7 @@ A quantidade real de dados de arquivo recuperados.
 
 ### <a name="return-value"></a>Valor Retornado
 
-Essa função facilita o retorno de quaisquer [JET_ERR](./jet-err.md) tipos de dados que são definidos na API do ESE (mecanismo de armazenamento extensível). Para obter mais informações sobre erros do JET, consulte [erros do mecanismo de armazenamento extensível](./extensible-storage-engine-errors.md) e [parâmetros de tratamento de erros](./error-handling-parameters.md).
+essa função facilita o retorno de quaisquer [JET_ERR](./jet-err.md) tipos de dados que são definidos na API do ESE (mecanismo de Armazenamento extensível). para obter mais informações sobre erros do JET, consulte [erros do mecanismo de Armazenamento extensível](./extensible-storage-engine-errors.md) e [parâmetros de tratamento de erros](./error-handling-parameters.md).
 
 <table>
 <colgroup>
@@ -94,7 +94,7 @@ Essa função facilita o retorno de quaisquer [JET_ERR](./jet-err.md) tipos de d
 </tr>
 <tr class="even">
 <td><p>JET_errBackupAbortByServer</p></td>
-<td><p>A operação falhou porque o backup externo atual foi anulado por uma chamada para a função <a href="gg269240(v=exchg.10).md">JetStopService</a> . Esse erro será retornado somente pelo Windows XP e por versões posteriores do Windows.</p></td>
+<td><p>A operação falhou porque o backup externo atual foi anulado por uma chamada para a função <a href="gg269240(v=exchg.10).md">JetStopService</a> . esse erro será retornado somente pelo Windows XP e versões posteriores Windows.</p></td>
 </tr>
 <tr class="odd">
 <td><p>JET_errClientRequestToStopJetService</p></td>
@@ -102,20 +102,20 @@ Essa função facilita o retorno de quaisquer [JET_ERR](./jet-err.md) tipos de d
 </tr>
 <tr class="even">
 <td><p>JET_errInstanceUnavailable</p></td>
-<td><p>Não é possível concluir a operação porque a instância associada à sessão encontrou um erro fatal que exige que o acesso a todos os dados seja revogado para proteger a integridade desses dados. Esse erro será retornado somente pelo Windows XP e por versões posteriores do Windows.</p></td>
+<td><p>Não é possível concluir a operação porque a instância associada à sessão encontrou um erro fatal que exige que o acesso a todos os dados seja revogado para proteger a integridade desses dados. esse erro será retornado somente pelo Windows XP e versões posteriores Windows.</p></td>
 </tr>
 <tr class="odd">
 <td><p>JET_errInvalidParameter</p></td>
 <td><p>Um dos parâmetros especificados continha um valor inesperado ou um valor que não fazia sentido quando combinado com o valor de outro parâmetro. Isso pode acontecer para a função <strong>JetReadFileInstance</strong> quando ocorrer um dos seguintes:</p>
 <ul>
-<li><p>O identificador de instância especificado é inválido. Windows XP e versões posteriores do Windows.</p></li>
-<li><p>O tamanho do buffer de saída não é um múltiplo do tamanho da página do banco de dados (<a href="gg269337(v=exchg.10).md">JET_paramDatabasePageSize</a>). Windows XP e versões posteriores do Windows.</p></li>
-<li><p>O tamanho do buffer de saída é menor do que três páginas de banco de dados (<a href="gg269337(v=exchg.10).md">JET_paramDatabasePageSize</a>), e essa é a primeira chamada para a função <strong>JetReadFileInstance</strong> para o identificador especificado. Windows XP e versões posteriores do Windows.</p></li>
+<li><p>O identificador de instância especificado é inválido. Windows XP e versões mais recentes do Windows.</p></li>
+<li><p>O tamanho do buffer de saída não é um múltiplo do tamanho da página do banco de dados (<a href="gg269337(v=exchg.10).md">JET_paramDatabasePageSize</a>). Windows XP e versões mais recentes do Windows.</p></li>
+<li><p>O tamanho do buffer de saída é menor do que três páginas de banco de dados (<a href="gg269337(v=exchg.10).md">JET_paramDatabasePageSize</a>), e essa é a primeira chamada para a função <strong>JetReadFileInstance</strong> para o identificador especificado. Windows XP e versões mais recentes do Windows.</p></li>
 </ul></td>
 </tr>
 <tr class="even">
 <td><p>JET_errLogReadVerifyFailure</p></td>
-<td><p>A operação falhou porque o corrompimento de dados irrecuperáveis foi detectado durante a leitura de um arquivo de log de transações. Esse erro será retornado somente pelo Windows XP e por versões posteriores do Windows.</p></td>
+<td><p>A operação falhou porque o corrompimento de dados irrecuperáveis foi detectado durante a leitura de um arquivo de log de transações. esse erro será retornado somente pelo Windows XP e versões posteriores Windows.</p></td>
 </tr>
 <tr class="odd">
 <td><p>JET_errNoBackup</p></td>
@@ -135,7 +135,7 @@ Essa função facilita o retorno de quaisquer [JET_ERR](./jet-err.md) tipos de d
 </tr>
 <tr class="odd">
 <td><p>JET_errRunningInMultiInstanceMode</p></td>
-<td><p>A operação falhou porque foi feita uma tentativa de usar o mecanismo no modo herdado (modo de compatibilidade do Windows 2000) em um caso em que apenas uma instância tem suporte, mas várias instâncias já existem.</p></td>
+<td><p>a operação falhou porque foi feita uma tentativa de usar o mecanismo no modo herdado (Windows modo de compatibilidade 2000) em um caso em que apenas uma instância tem suporte, mas várias instâncias já existem.</p></td>
 </tr>
 <tr class="even">
 <td><p>JET_errTermInProgress</p></td>
@@ -147,7 +147,7 @@ Essa função facilita o retorno de quaisquer [JET_ERR](./jet-err.md) tipos de d
 
 Em caso de sucesso, a próxima parte dos dados do arquivo será lida no buffer de saída. O número real de bytes recuperados também será retornado. O deslocamento do arquivo no qual a próxima leitura ocorrerá será avançado por esse valor.
 
-Em caso de falha, o estado do buffer de saída é indefinido. A falha resultará no cancelamento de todo o processo de backup para a instância atual. No Windows XP e versões posteriores do Windows, o backup não será cancelado se ocorrer um erro durante a leitura de um arquivo de banco de dados. No entanto, o backup desse arquivo de banco de dados ainda será cancelado e o identificador correspondente será fechado automaticamente.
+Em caso de falha, o estado do buffer de saída é indefinido. A falha resultará no cancelamento de todo o processo de backup para a instância atual. no Windows XP e versões mais recentes do Windows, o backup não será cancelado se ocorrer um erro durante a leitura de um arquivo de banco de dados. No entanto, o backup desse arquivo de banco de dados ainda será cancelado e o identificador correspondente será fechado automaticamente.
 
 #### <a name="remarks"></a>Comentários
 
@@ -175,14 +175,14 @@ A corrupção de dados é detectada pelo mecanismo de banco de dados com o uso d
 <tbody>
 <tr class="odd">
 <td><p>Cliente</p></td>
-<td><p>Requer o Windows Vista ou o Windows XP.</p></td>
+<td><p>requer o Windows Vista ou Windows XP.</p></td>
 </tr>
 <tr class="even">
 <td><p>Servidor</p></td>
-<td><p>Requer o Windows Server 2008 ou o Windows Server 2003.</p></td>
+<td><p>requer o Windows server 2008 ou Windows server 2003.</p></td>
 </tr>
 <tr class="odd">
-<td><p>parâmetro</p></td>
+<td><p>Cabeçalho</p></td>
 <td><p>É declarado em ESENT. h.</p></td>
 </tr>
 <tr class="even">

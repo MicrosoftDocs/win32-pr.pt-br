@@ -1,6 +1,6 @@
 ---
 title: Estrutura de RAS_PPP_IPXCP_RESULT (Rassapi. h)
-description: A \_ estrutura de resultados do protocolo PPP do RAS \_ \_ é usada para relatar o resultado de uma operação de projeção de intercâmbio de pacotes de rede PPP (IPX) para uma porta.
+description: a \_ estrutura de resultados do protocolo ppp do RAS \_ \_ é usada para relatar o resultado de uma operação de projeção IPX (pacote de rede ppp Exchange) para uma porta.
 ms.assetid: e1236e1b-f0ef-46cf-a12f-35529215752c
 keywords:
 - RAS da estrutura de RAS_PPP_IPXCP_RESULT
@@ -14,18 +14,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5bb7ca4d006bd1a1df5a645799998b463c0b14f7
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 8bc79b7700fc47176928688b517377f5e02903da04841b50949937448065086d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104009444"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117789600"
 ---
 # <a name="ras_ppp_ipxcp_result-structure"></a>Estrutura de resultados do protocolo RAS \_ PPP \_ \_
 
-\[Não há suporte para a estrutura de **\_ \_ \_ resultado do protocolo RAS PPP** no Windows Vista.\]
+\[não há suporte para a estrutura de **\_ \_ \_ resultado do protocolo RAS PPP** no Windows Vista.\]
 
-A estrutura de **\_ \_ \_ resultados do protocolo PPP do RAS** é usada para relatar o resultado de uma operação de projeção de intercâmbio de pacotes de rede PPP (IPX) para uma porta.
+a estrutura de **\_ \_ \_ resultados do protocolo ppp do RAS** é usada para relatar o resultado de uma operação de projeção IPX (pacote de rede ppp Exchange) para uma porta.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -67,7 +67,7 @@ Uma cadeia de caracteres Unicode terminada em nulo que especifica o Endereço IP
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                 |
 | Fim do suporte do cliente<br/>    | Windows XP<br/>                                                                |
 | Fim do suporte do servidor<br/>    | Windows Server 2003<br/>                                                       |
-| parâmetro<br/>                   | <dl> <dt>Rassapi. h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Rassapi. h</dt> </dl> |
 
 
 

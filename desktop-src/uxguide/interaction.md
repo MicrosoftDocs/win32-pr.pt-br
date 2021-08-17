@@ -4,31 +4,31 @@ description: A interação é a variedade de maneiras como os usuários interage
 ms.assetid: 1509c885-f4dc-4cf9-86a3-cc6754d3b4a0
 ms.topic: article
 ms.date: 10/20/2020
-ms.openlocfilehash: 869034e8d7cc8b9d7023e1511482dae203c14b49
-ms.sourcegitcommit: 8ebcf6cd36f67f8bcf78e76ae8923d65b8995c8a
+ms.openlocfilehash: 09991d9b1c16c0605c89a695beb14c1117cb54fe8a5de1e2a805f6717070b1d1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "111524170"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117853274"
 ---
 # <a name="interaction"></a>Interação
 
 > [!NOTE]
-> Este guia de design foi criado para o Windows 7 e não foi atualizado para versões mais recentes do Windows. Grande parte da orientação ainda se aplica em princípio, mas a apresentação e os exemplos não refletem nossas [diretrizes de design atuais](/windows/uwp/design/).
+> este guia de design foi criado para o Windows 7 e não foi atualizado para versões mais recentes do Windows. Grande parte da orientação ainda se aplica em princípio, mas a apresentação e os exemplos não refletem nossas [diretrizes de design atuais](/windows/uwp/design/).
 
 A interação é a variedade de maneiras como os usuários interagem com seu aplicativo, incluindo toque, teclado, mouse e assim por diante. Use essas diretrizes para criar experiências intuitivas e informativas que são otimizadas para toque, mas funcionam consistentemente entre dispositivos de entrada.
 
 ## <a name="design-for-a-touch-first-experience"></a>Design para uma experiência de toque inicial
 
-Primeiro e mais importante, projete o seu aplicativo com a expectativa de que o toque será o método de entrada principal dos usuários. Se você usar os controles de plataforma, o suporte para Touchpad, mouse e caneta/caneta não precisará de programação adicional, pois o Windows fornece isso gratuitamente.
+Primeiro e mais importante, projete o seu aplicativo com a expectativa de que o toque será o método de entrada principal dos usuários. se você usar os controles de plataforma, o suporte para touchpad, mouse e caneta/caneta não precisará de programação adicional, porque Windows fornece isso gratuitamente.
 
-Tenha em mente, porém, que uma interface do usuário otimizada para toque nem sempre é superior a uma interface do usuário tradicional. Ambos fornecem vantagens e desvantagens exclusivas para a tecnologia e o aplicativo. Na mudança para uma interface do usuário do touch-First, é importante entender as principais diferenças entre o toque (incluindo Touchpad), caneta/caneta, mouse e entrada de teclado. Não considere as propriedades e os comportamentos do dispositivo de entrada conhecidos para que sejam concedidos, pois o toque no Windows 8 faz mais do que simplesmente emular essa funcionalidade.
+Tenha em mente, porém, que uma interface do usuário otimizada para toque nem sempre é superior a uma interface do usuário tradicional. Ambos fornecem vantagens e desvantagens exclusivas para a tecnologia e o aplicativo. Na mudança para uma interface do usuário do touch-First, é importante entender as principais diferenças entre o toque (incluindo Touchpad), caneta/caneta, mouse e entrada de teclado. não assuma as propriedades e os comportamentos do dispositivo de entrada conhecidos para que sejam concedidos, pois o toque em Windows 8 faz mais do que simplesmente emular essa funcionalidade.
 
 Como você descobrirá em breve, a entrada por toque requer uma abordagem diferente para o design da interface do usuário.
 
 **Compare os requisitos de interação por toque**
 
-Esta tabela mostra algumas das diferenças entre os dispositivos de entrada que você deve considerar ao projetar aplicativos da Windows Store com otimização de toque.
+esta tabela mostra algumas das diferenças entre os dispositivos de entrada que você deve considerar ao criar aplicativos da Store com otimização de toque Windows.
 
 
 
@@ -62,7 +62,7 @@ Fornecemos algumas diretrizes gerais de interação do usuário aqui e abordarem
 
 ## <a name="visuals-for-feedback"></a>Visuais para comentários
 
-Os comentários visuais apropriados durante as interações com seu aplicativo ajudam os usuários a reconhecer, aprender e adaptar-se à forma como as interações são interpretadas pelo aplicativo e os comentários visuais do Windows podem indicar interações bem-sucedidas, retransmitir o status do sistema, melhorar a sensação de controle, reduzir erros, ajudar os usuários a entender o sistema e o dispositivo de entrada e incentivar a interação.
+os comentários visuais apropriados durante as interações com seu aplicativo ajudam os usuários a reconhecer, aprender e adaptar-se a como suas interações são interpretadas pelo aplicativo e Windows comentários visuais podem indicar interações bem-sucedidas, retransmitir o status do sistema, melhorar a sensação de controle, reduzir erros, ajudar os usuários a entender o sistema e o dispositivo de entrada e incentivar a interação.
 
 A resposta visual é importante quando o usuário recorre à entrada por toque em atividades que exigem exatidão e precisão com base no local. A exibição do feedback sempre que a entrada por toque for detectada ajudará o usuário a entender as regras de direcionamento personalizadas definidas pelo aplicativo e seus respectivos controles.
 

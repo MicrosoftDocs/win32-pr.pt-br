@@ -22,8 +22,8 @@ ms.locfileid: "117790389"
 
 | Constante                     | Valor | Descrição                              |
 |------------------------------|-------|------------------------------------------|
-| RTM \_ NEXTHOP \_ STATE \_ CREATED | 0     | Indica que o próximo salto foi criado. |
-| ESTADO \_ NEXTHOP \_ \_ RTM EXCLUÍDO | 1     | Indica que o próximo salto foi excluído. |
+| Estado de NEXTHOP do RTM \_ \_ \_ criado | 0     | Indica que o próximo salto foi criado. |
+| Estado de NEXTHOP do RTM \_ \_ \_ excluído | 1     | Indica que o próximo salto foi excluído. |
 
 
 
@@ -35,20 +35,20 @@ ms.locfileid: "117790389"
 
 | Constante                    | Valor  | Descrição                                                                                                                                           |
 |-----------------------------|--------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
-| RTM \_ NEXTHOP \_ FLAGS \_ REMOTE | 0x0001 | Este próximo salto aponta para um destino remoto que não está diretamente acessível. Para obter o caminho completo, o cliente deve executar uma análise recursiva. |
-| RTM \_ NEXTHOP \_ SINALIZA PARA \_ BAIXO   | 0x0002 | Esse sinalizador é reservado para uso futuro.                                                                                                                 |
+| sinalizadores de NEXTHOP do RTM \_ \_ \_ remotos | 0x0001 | Este próximo salto aponta para um destino remoto que não está acessível diretamente. Para obter o caminho completo, o cliente deve executar uma pesquisa recursiva. |
+| sinalizadores de NEXTHOP do RTM \_ \_ \_ inativos   | 0x0002 | Esse sinalizador é reservado para uso futuro.                                                                                                                 |
 
 
 
  
 
-## <a name="next-hop-added"></a>Próximo Salto Adicionado
+## <a name="next-hop-added"></a>Próximo salto adicionado
 
 
 
 | Constante                  | Valor | Descrição                 |
 |---------------------------|-------|-----------------------------|
-| RTM \_ NEXTHOP \_ CHANGE \_ NEW | 0x01  | Um novo próximo salto foi criado. |
+| \_ \_ nova alteração de NEXTHOP do RTM \_ | 0x01  | Um novo salto seguinte foi criado. |
 
 
 

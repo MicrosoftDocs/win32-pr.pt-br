@@ -1,7 +1,7 @@
 ---
-description: Define um tipo de cadeia de caracteres para o perfil de banda larga móvel.
+description: Define um tipo de cadeia de caracteres para o perfil de Banda Larga Móvel.
 ms.assetid: a5c14c39-2731-44f0-9fd2-e78d900b66f0
-title: tipo simples nametype (banda larga móvel)
+title: tipo simples nameType (Banda Larga Móvel)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -11,16 +11,16 @@ api_name:
 - nameType
 api_type:
 - Schema
-ms.openlocfilehash: d8c6032e17eaf2d067dc23030a7a6279bd41eafa
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9b07bfb62e23b0c82ef69bc924147675caad10d61258a5c49edc906c4b6bf2a8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105755282"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117881400"
 ---
-# <a name="nametype-simple-type-mobile-broadband"></a>tipo simples nametype (banda larga móvel)
+# <a name="nametype-simple-type-mobile-broadband"></a>tipo simples nameType (Banda Larga Móvel)
 
-O tipo simples **nametype** define um tipo de cadeia de caracteres para o perfil de banda larga móvel. Essa cadeia de caracteres tem pelo menos um caractere e, no máximo, 255 caracteres de comprimento.
+O **tipo simples nameType** define um tipo de cadeia de caracteres para o perfil de Banda Larga Móvel. Essa cadeia de caracteres tem pelo menos um caractere de comprimento e, no máximo, 255 caracteres.
 
 ``` syntax
 <xs:simpleType name="nameType">
@@ -43,7 +43,7 @@ O tipo simples **nametype** define um tipo de cadeia de caracteres para o perfil
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Aplicativos de \[ aplicativos da área de trabalho do Windows 7 \| UWP\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows 7 \[ aplicativos da área de trabalho \| UWP\]<br/> |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                         |
 
 

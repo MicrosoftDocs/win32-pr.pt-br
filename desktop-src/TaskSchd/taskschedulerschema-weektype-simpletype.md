@@ -1,9 +1,9 @@
 ---
-title: Tipo simples de weektype
+title: tipo simples weekType
 description: Define os valores que podem ser usados no elemento Week.
 ms.assetid: 83a525ae-020b-4528-9e14-1e7d9df7b8c0
 keywords:
-- tipo simples de semanatype Agendador de Tarefas
+- tipo de semanaTipo simples Agendador de Tarefas
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 6513efe0fe0ef4fcbf6b849627d09ec9da6feb82
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 923d5a5d672407f9d15fed62bd554853f23ce5b31debd6a7c331e4b1217f15fe
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104085362"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117757929"
 ---
-# <a name="weektype-simple-type"></a>Tipo simples de weektype
+# <a name="weektype-simple-type"></a>tipo simples weekType
 
-Define os valores que podem ser usados no elemento [**Week**](taskschedulerschema-week-weekstype-element.md) .
+Define os valores que podem ser usados no [**elemento Week.**](taskschedulerschema-week-weekstype-element.md)
 
 ``` syntax
 <xs:simpleType name="weekType">
@@ -38,11 +38,11 @@ Define os valores que podem ser usados no elemento [**Week**](taskschedulerschem
 
 ## <a name="patterns"></a>Padrões
 
-O tipo simples **weektype** é uma **cadeia de caracteres** que é restrita pelo seguinte padrão:
+O **tipo simples weekType** é **uma** cadeia de caracteres restrita pelo seguinte padrão:
 
 -   `[1-4]|Last`
 
-    Especifica o primeiro na quarta semana do mês (1-4) ou sempre na última semana do mês.
+    Especifica a primeira até a quarta semana do mês (1-4) ou sempre a última semana do mês.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,8 +50,8 @@ O tipo simples **weektype** é uma **cadeia de caracteres** que é restrita pelo
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
 
 
 
@@ -59,7 +59,7 @@ O tipo simples **weektype** é uma **cadeia de caracteres** que é restrita pelo
 
 <dl> <dt>
 
-[Tipos simples de esquema de Agendador de Tarefas](task-scheduler-schema-complex-types.md)
+[Agendador de Tarefas tipos simples de esquema de Agendador de Tarefas](task-scheduler-schema-complex-types.md)
 </dt> <dt>
 
 [Agendador de Tarefas](task-scheduler-start-page.md)

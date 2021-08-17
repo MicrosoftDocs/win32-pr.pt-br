@@ -1,6 +1,6 @@
 ---
 title: Elemento Weeks (monthlyDayOfWeekScheduleType)
-description: Especifica as semanas do mês em que a tarefa é executada.
+description: Especifica as semanas do mês em que a tarefa é executado.
 ms.assetid: c126d1e2-6e60-4067-9fc2-86c9522cce5d
 keywords:
 - Elemento Weeks Agendador de Tarefas
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 2e032b936353d2c89a84b5da684f681ea3c2b6d3
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 81219236012146dac54965af471412369d5c5bb34319897d4d821bb10a730aee
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103645102"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117757973"
 ---
 # <a name="weeks-monthlydayofweekscheduletype-element"></a>Elemento Weeks (monthlyDayOfWeekScheduleType)
 
-Especifica as semanas do mês em que a tarefa é executada.
+Especifica as semanas do mês em que a tarefa é executado.
 
 ``` syntax
 <xs:element name="Weeks"
@@ -30,7 +30,7 @@ Especifica as semanas do mês em que a tarefa é executada.
  />
 ```
 
-O elemento **Weeks** é definido pelo tipo complexo [**monthlyDayOfWeekScheduleType**](taskschedulerschema-monthlydayofweekscheduletype-complextype.md) .
+O **elemento Weeks** é definido pelo tipo complexo [**monthlyDayOfWeekScheduleType.**](taskschedulerschema-monthlydayofweekscheduletype-complextype.md)
 
 ## <a name="parent-element"></a>Elemento pai
 
@@ -38,7 +38,7 @@ O elemento **Weeks** é definido pelo tipo complexo [**monthlyDayOfWeekScheduleT
 
 | Elemento                                                                                                      | Derivado de                                                                                         | Descrição                                                                         |
 |--------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------|
-| [**ScheduleByMonthDayOfWeek**](taskschedulerschema-schedulebymonthdayofweek-calendartriggertype-element.md) | [**monthlyDayOfWeekScheduleType**](taskschedulerschema-monthlydayofweekscheduletype-complextype.md) | Especifica um gatilho que inicia um trabalho em uma agenda mensal de dia da semana.<br/> |
+| [**ScheduleByMonthDayOfWeek**](taskschedulerschema-schedulebymonthdayofweek-calendartriggertype-element.md) | [**monthlyDayOfWeekScheduleType**](taskschedulerschema-monthlydayofweekscheduletype-complextype.md) | Especifica um gatilho que inicia um trabalho em uma agenda mensal do dia da semana.<br/> |
 
 
 
@@ -48,21 +48,21 @@ O elemento **Weeks** é definido pelo tipo complexo [**monthlyDayOfWeekScheduleT
 
 | Elemento                                                    | Type                                                        | Descrição                                        |
 |------------------------------------------------------------|-------------------------------------------------------------|----------------------------------------------------|
-| [**Semana**](taskschedulerschema-week-weekstype-element.md) | [**weektype**](taskschedulerschema-weektype-simpletype.md) | Especifica uma semana específica do mês.<br/> |
+| [**Semana**](taskschedulerschema-week-weekstype-element.md) | [**weekType**](taskschedulerschema-weektype-simpletype.md) | Especifica uma semana específica do mês.<br/> |
 
 
 
 ## <a name="remarks"></a>Comentários
 
-Para o desenvolvimento de scripts, as semanas do mês são especificadas usando a propriedade [**MonthlyDOWTrigger. WeeksOfMonth**](monthlydowtrigger-weeksofmonth.md) .
+Para o desenvolvimento de scripts, as semanas do mês são especificadas usando a [**propriedade MonthlyDOWTrigger.WeeksOfMonth.**](monthlydowtrigger-weeksofmonth.md)
 
-Para desenvolvimento em C++, as semanas do mês são especificadas usando a propriedade [**IMonthlyDOWTrigger:: WeeksOfMonth**](/windows/desktop/api/taskschd/nf-taskschd-imonthlydowtrigger-get_weeksofmonth) .
+Para desenvolvimento em C++, as semanas do mês são especificadas usando a propriedade [**IMonthlyDOWTrigger::WeeksOfMonth.**](/windows/desktop/api/taskschd/nf-taskschd-imonthlydowtrigger-get_weeksofmonth)
 
-Ao especificar as semanas do mês, use 1-4 para especificar as primeiras quatro semanas do mês ou use a cadeia de caracteres "Last" para indicar a semana passada, independentemente de qual é a semana.
+Ao especificar as semanas do mês, use de 1 a 4 para especificar as primeiras quatro semanas do mês ou use a cadeia de caracteres "Last" para indicar a última semana, independentemente de qual é a semana.
 
 ## <a name="examples"></a>Exemplos
 
-O XML a seguir define um calendário mensal de dia da semana que inicia a tarefa na segunda-feira da primeira semana para cada mês do ano.
+O XML a seguir define um calendário mensal do dia da semana que inicia a tarefa na segunda-feira da primeira semana para cada mês do ano.
 
 
 ```XML
@@ -98,8 +98,8 @@ O XML a seguir define um calendário mensal de dia da semana que inicia a tarefa
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
 
 
 
@@ -107,7 +107,7 @@ O XML a seguir define um calendário mensal de dia da semana que inicia a tarefa
 
 <dl> <dt>
 
-[Elementos do esquema de Agendador de Tarefas](task-scheduler-schema-elements.md)
+[Agendador de Tarefas de esquema](task-scheduler-schema-elements.md)
 </dt> <dt>
 
 [Agendador de Tarefas](task-scheduler-start-page.md)

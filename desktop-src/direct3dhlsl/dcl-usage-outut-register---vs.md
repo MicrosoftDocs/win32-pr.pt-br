@@ -1,6 +1,6 @@
 ---
-title: saída de dcl_usage (SM1, SM2, SM3-vs ASM)
-description: Os vários tipos de registros de saída foram recolhidos em doze registros de saída (dois para cor, oito para textura, um para posição e outro para sombra e tamanho de ponto).
+title: dcl_usage saída (sm1, sm2, sm3 – vs asm)
+description: Os vários tipos de registros de saída foram recolhidos em doze registros de saída (dois para cor, oito para textura, um para posição e outro para tamanho de ponto e de 12 pontos).
 ms.assetid: 500ca6b3-0f8a-446e-b1b9-edc51f006ad4
 ms.topic: reference
 ms.date: 05/31/2018
@@ -16,23 +16,23 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117726713"
 ---
-# <a name="dcl_usage-output-sm1-sm2-sm3---vs-asm"></a>\_saída de uso de DCL (SM1, SM2, SM3-vs ASM)
+# <a name="dcl_usage-output-sm1-sm2-sm3---vs-asm"></a>saída \_ de uso dcl (sm1, sm2, sm3 - vs asm)
 
-Os vários tipos de registros de saída foram recolhidos em doze registros de saída (dois para cor, oito para textura, um para posição e outro para sombra e tamanho de ponto). Eles podem ser usados para qualquer coisa que o usuário queira interpolar para o sombreador de pixel: coordenadas de textura, cores, neblina e assim por diante.
+Os vários tipos de registros de saída foram recolhidos em doze registros de saída (dois para cor, oito para textura, um para posição e outro para tamanho de ponto e de 12 pontos). Eles podem ser usados para qualquer coisa que o usuário deseja interpolar para o sombreador de pixel: coordenadas de textura, cores, cinza e assim por diante.
 
-Os registros de saída exigem declarações que incluem semânticas. Por exemplo, os registros de posição antiga e de tamanho de ponto são substituídos por meio da declaração de um registro de saída com uma semântica de posição ou de tamanho de ponto.
+Os registros de saída exigem declarações que incluem semântica. Por exemplo, os registros de posição e tamanho de ponto antigos são substituídos declarando um registro de saída com uma posição ou semântica de tamanho de ponto.
 
-Dos doze registros de saída, quaisquer dez (não necessariamente o0 a O9) têm quatro componentes (xyzw), outro deve ser declarado como posição (e também deve incluir todos os quatro componentes) e, opcionalmente, mais um pode ser um tamanho de ponto escalar.
+Dos doze registros de saída, quaisquer dez (não necessariamente o0 a o9) têm quatro componentes (xyzw), outro deve ser declarado como posição (e também deve incluir todos os quatro componentes) e, opcionalmente, mais um pode ser um tamanho de ponto escalar.
 
 ## <a name="syntax"></a>Syntax
 
-A sintaxe para declarar registros de saída é semelhante às declarações para o registro de entrada:
+A sintaxe para declarar registros de saída é semelhante às declarações do registro de entrada:
 
 
 
 |                                  |
 |----------------------------------|
-| a semântica de DCL a \_ \[ . Write \_ Mask\] |
+| dcl \_ semantics o \[ .write \_ mask\] |
 
 
 
@@ -40,23 +40,23 @@ A sintaxe para declarar registros de saída é semelhante às declarações para
 
 Em que:
 
--   a \_ semântica de DCL pode usar o mesmo conjunto de semânticas para a declaração de entrada. Os nomes semânticos vêm de [**D3DDECLUSAGE**](/windows/desktop/direct3d9/d3ddeclusage) (e são emparelhados com um índice, como position3). Sempre deve haver um registro de saída com a semântica positiont0 quando não for usado para processar vértices. A semântica positiont0 e a semântica pointsize0 são as únicas que têm significado além de simplesmente permitir a vinculação de vértice a sombreadores de pixel. Para sombreadores com controle de fluxo, supõe-se que a pior saída de caso seja declarada. Não haverá padrões se um sombreador não gerar realmente o que ele declara (devido ao controle de fluxo).
--   o é um registro de saída. Consulte [ \_ registros de saída](dx9-graphics-reference-asm-vs-registers-vs-3-0.md).
--   \_a máscara de gravação indica o mesmo registro de saída que pode ser declarado várias vezes (portanto, uma semântica diferente pode ser aplicada a componentes individuais), cada vez com uma máscara de gravação exclusiva. No entanto, a mesma semântica não pode ser usada várias vezes em uma declaração. Isso significa que os vetores devem ter quatro componentes ou menos, e não podem passar pelos limites de registro de quatro componentes (registros individuais). Quando a semântica de tamanho de ponto é usada, ela deve ter uma máscara de gravação completa porque é considerada uma escalar. Quando a semântica de posição é usada, ela deve ter uma máscara de gravação completa porque todos os quatro componentes precisam ser escritos.
+-   A \_ semântica dcl pode usar o mesmo conjunto de semânticas que para a declaração de entrada. Nomes semânticos [**vêm de D3DDECLUSAGE**](/windows/desktop/direct3d9/d3ddeclusage) (e são emparelhados com um índice, como position3). Sempre deve haver um registro de saída com a semântica positiont0 quando não for usado para processar vértices. A semântica positiont0 e a semântica pointsize0 são as únicas que têm significado além de simplesmente permitir a vinculação de sombreadores de vértice a pixel. Para sombreadores com controle de fluxo, supõe-se que a pior saída de caso seja declarada. Não haverá nenhum padrão se um sombreador não realmente saída o que ele declara que deve (devido ao controle de fluxo).
+-   o é um registro de saída. Consulte [Registros \_ de Saída](dx9-graphics-reference-asm-vs-registers-vs-3-0.md).
+-   write mask indica o mesmo registro de saída que pode ser declarado várias vezes (para que uma semântica diferente possa ser aplicada a componentes individuais), sempre com uma \_ máscara de gravação exclusiva. No entanto, a mesma semântica não pode ser usada várias vezes em uma declaração. Isso significa que os vetores devem ser quatro componentes ou menos e não podem passar pelos limites de registro de quatro componentes (registros individuais). Quando a semântica de tamanho de ponto é usada, ela deve ter máscara de gravação completa porque é considerada escalar. Quando a semântica de posição é usada, ela deve ter uma máscara de gravação completa porque todos os quatro componentes devem ser gravados.
 
 ## <a name="remarks"></a>Comentários
 
 
 
-| Versões do sombreador de vértice | 3 \_ 0 | 3 \_ SW |
+| Versões do sombreador de vértice | 3 \_ 0 | 3 \_ sw |
 |------------------------|------|-------|
-| uso de DCL \_             | x    | x     |
+| uso \_ de dcl             | x    | x     |
 
 
 
  
 
-Todas as instruções de [ \_ uso de DCL](dcl-usage-input-register---vs.md) devem aparecer antes da primeira instrução executável.
+Todas [as instruções de uso \_ de dcl](dcl-usage-input-register---vs.md) devem aparecer antes da primeira instrução executável.
 
 ## <a name="declaration-examples"></a>Exemplos de declaração
 

@@ -1,6 +1,6 @@
 ---
 title: SV_GroupIndex
-description: O \ 0034; achatado \ 0034; índice de um thread de sombreador de computação dentro de um grupo de threads, que transforma a GroupThreadID de VA multidimensional \_ em um valor 1D. \_GROUPINDEX VA varia de 0 a (numthreadsX \ numthreadsY \ numThreadsZ) \ 8211; uma.
+description: O \ 0034;nivelado \ 0034; índice de um thread de sombreador de computação dentro de um grupo de threads, que transforma o GroupThreadID de SV \_ multidimensional em um valor 1D. O SV \_ GroupIndex varia de 0 a (numthreadsX \ numthreadsY \ numThreadsZ) \ 8211; 1.
 ms.assetid: e793be10-7c83-478c-859a-4b0a2c537570
 keywords:
 - SV_GroupIndex HLSL
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 952a94378a0570d5bb7bc4f08959074bc8a4da4d
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: fd8c10212a2dd91e4ecbe7fd48a427e4019b2cd79b3d56457635ab9ef9d9262a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103641319"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118508246"
 ---
-# <a name="sv_groupindex"></a>\_GROUPINDEX VA
+# <a name="sv_groupindex"></a>SV \_ GroupIndex
 
-O índice "achatado" de um thread de sombreador de computação em um grupo de threads, que transforma a GroupThreadID de VA multidimensional \_ em um valor 1D. \_A GroupIndex de VA varia de 0 a (numthreadsX \* numthreadsY \* numThreadsZ) – 1.
+O índice "nivelado" de um thread de sombreador de computação dentro de um grupo de threads, que transforma o GroupThreadID de SV multidimensional em \_ um valor 1D. O SV \_ GroupIndex varia de 0 a (numthreadsX \* numthreadsY \* numThreadsZ) – 1.
 
 ## <a name="type"></a>Tipo
 
@@ -34,7 +34,7 @@ O índice "achatado" de um thread de sombreador de computação em um grupo de t
 
 
 
- 
+ 
 
 ## <a name="remarks"></a>Comentários
 
@@ -47,11 +47,11 @@ SV_GroupIndex = SV_GroupThreadID.z*dimx*dimy +
 
 
 
-em que Dimx e Dimy são as dimensões especificadas no atributo [numthreads](sm5-attributes-numthreads.md) para o ponto de entrada.
+em que dimx e dimy são as dimensões especificadas no [atributo numthreads](sm5-attributes-numthreads.md) para o ponto de entrada.
 
-Esse valor de sistema é opcional. No entanto, seu uso garante que um thread só grave em sua região atribuída de memória na variável groupshared.
+Esse valor do sistema é opcional. No entanto, seu uso garante que um thread só grava em sua região de memória atribuída na variável groupshared.
 
-A ilustração a seguir mostra a relação entre os parâmetros passados [**para ID3D11DeviceContext::D ispatch**](/windows/desktop/api/d3d11/nf-d3d11-id3d11devicecontext-dispatch), expedição (5, 3, 2), os valores especificados no [atributo numthreads](sm5-attributes-numthreads.md) , numthreads (10, 8, 3) e valores que serão passados para o sombreador de computação para os valores do sistema relacionados ao thread (VA \_ GroupIndex,[VA \_ DispatchThreadID](sv-dispatchthreadid.md),[VA \_ GroupThreadID](sv-groupthreadid.md), a [ \_ DefaultGroupID](sv-groupid.md)).
+A ilustração a seguir mostra a relação entre os parâmetros passados para [**ID3D11DeviceContext::D ispatch**](/windows/desktop/api/d3d11/nf-d3d11-id3d11devicecontext-dispatch), Dispatch(5,3,2), os valores especificados no [atributo numthreads,](sm5-attributes-numthreads.md) numthreads(10,8,3) e valores que serão passados para o sombreador de computação para os valores do sistema relacionados ao thread (SV \_ GroupIndex,[SV \_ DispatchThreadID,](sv-dispatchthreadid.md)[SV \_ GroupThreadID,](sv-groupthreadid.md)[SV \_ GroupID](sv-groupid.md)).
 
 ![ilustração da relação entre expedição, grupos de threads e threads](images/threadgroupids.png)
 
@@ -59,13 +59,13 @@ Essa função tem suporte nos seguintes tipos de sombreadores:
 
 
 
-| Vértice | Envoltória | Domínio | Geometria | 16x16 | Computação |
+| Vértice | Casco | Domínio | Geometry | Pixel | Computação |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          |       | x       |
 
 
 
- 
+ 
 
 ## <a name="see-also"></a>Confira também
 
@@ -77,6 +77,6 @@ Essa função tem suporte nos seguintes tipos de sombreadores:
 [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

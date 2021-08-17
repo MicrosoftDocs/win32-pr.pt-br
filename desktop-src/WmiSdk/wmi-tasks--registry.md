@@ -1,8 +1,8 @@
 ---
-description: As tarefas do WMI para o registro criam e modificam valores e chaves do registro. Para obter outros exemplos, consulte o TechNet ScriptCenter em https://www.microsoft.com/technet .
+description: As tarefas WMI para o Registro criam e modificam valores e chaves do Registro. Para outros exemplos, consulte o TechNet ScriptCenter em https://www.microsoft.com/technet .
 ms.assetid: 0785189e-9638-4776-8414-1414d7b02524
 ms.tgt_platform: multiple
-title: 'Tarefas do WMI: registro'
+title: 'Tarefas WMI: Registro'
 ms.topic: article
 ms.date: 05/31/2018
 topic_type:
@@ -17,28 +17,28 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117738865"
 ---
-# <a name="wmi-tasks-registry"></a>Tarefas do WMI: registro
+# <a name="wmi-tasks-registry"></a>Tarefas WMI: Registro
 
-As tarefas do WMI para o registro criam e modificam valores e chaves do registro. Para obter outros exemplos, consulte o TechNet ScriptCenter em [https://www.microsoft.com/technet](https://technet.microsoft.com/default.aspx) .
+As tarefas WMI para o Registro criam e modificam valores e chaves do Registro. Para outros exemplos, consulte o TechNet ScriptCenter em [https://www.microsoft.com/technet](https://technet.microsoft.com/default.aspx) .
 
-Os exemplos de script mostrados neste tópico obtêm dados somente do computador local. Para obter mais informações sobre como usar o script para obter dados de computadores remotos, consulte [conectando-se ao WMI em um computador remoto](connecting-to-wmi-on-a-remote-computer.md).
+Os exemplos de script mostrados neste tópico só obtém dados do computador local. Para obter mais informações sobre como usar o script para obter dados de computadores remotos, consulte Conectando-se [ao WMI em um computador remoto.](connecting-to-wmi-on-a-remote-computer.md)
 
 
 O procedimento a seguir descreve como executar um script.
 
 **Para executar um script**
 
-1.  Copie o código e salve-o em um arquivo com uma extensão. vbs, como *filename.vbs*. Verifique se o editor de texto não adiciona uma extensão de .txt ao arquivo.
-2.  Abra uma janela de prompt de comando e navegue até o diretório em que você salvou o arquivo.
+1.  Copie o código e salve-o em um arquivo com uma extensão .vbs, *como* filename.vbs. Verifique se o editor de texto não adiciona uma .txt de texto ao arquivo.
+2.  Abra uma janela do prompt de comando e navegue até o diretório em que você salvou o arquivo.
 3.  Digite **cscript filename.vbs** no prompt de comando.
-4.  Se você não puder acessar um log de eventos, verifique se você está executando a partir de um prompt de comandos com privilégios elevados. Alguns logs de eventos, como o log de eventos de segurança, podem ser protegidos por UAC (controles de acesso do usuário).
+4.  Se não for possível acessar um log de eventos, verifique se você está executando em um prompt de comando Elevado. Alguns log de eventos, como o Log de Eventos de Segurança, podem ser protegidos por UAC (Controles de Acesso do Usuário).
 
 > [!Note]  
-> Por padrão, o cscript exibe a saída de um script na janela de prompt de comando. Como os scripts WMI podem produzir grandes quantidades de saída, convém redirecionar a saída para um arquivo. Digite **cscript filename.vbs > outfile.txt** no prompt de comando para redirecionar a saída do script de *filename.vbs* para *outfile.txt*.
+> Por padrão, o cscript exibe a saída de um script na janela do prompt de comando. Como os scripts WMI podem produzir grandes quantidades de saída, talvez você queira redirecionar a saída para um arquivo. Digite **cscript filename.vbs > outfile.txt** no prompt de comando para redirecionar a saída do script *filename.vbs* para *outfile.txt*.
 
  
 
-A tabela a seguir lista os exemplos de script que podem ser usados para obter vários tipos de dados do computador local.
+A tabela a seguir lista exemplos de script que podem ser usados para obter vários tipos de dados do computador local.
 
 
 
@@ -55,8 +55,8 @@ A tabela a seguir lista os exemplos de script que podem ser usados para obter v�
 </thead>
 <tbody>
 <tr class="odd">
-<td>... ler valores de chave do registro usando o WMI?</td>
-<td>Use a classe <a href="/previous-versions/windows/desktop/regprov/stdregprov"><strong>StdRegProv</strong></a> , localizada no namespace root\default. Você não pode obter nenhuma instância dessa classe porque o <a href="/previous-versions/windows/desktop/regprov/system-registry-provider">provedor de registro do sistema</a> é apenas um método e provedor de eventos. No entanto, você pode obter dados do registro por meio de métodos como <a href="/previous-versions/windows/desktop/regprov/enumkey-method-in-class-stdregprov"><strong>EnumKey</strong></a> ou <a href="/previous-versions/windows/desktop/regprov/enumvalues-method-in-class-stdregprov"><strong>EnumValue</strong></a>. O <a href="/windows/desktop/CIMWin32Prov/win32-registry"><strong>Win32_Registry</strong></a>, localizado no namespace root\cimv2, obtém dados sobre o registro como um todo, como o tamanho do seu.<br/> <span data-codelanguage="VisualBasic"></span>
+<td>... ler valores de chave do Registro usando o WMI?</td>
+<td>Use a <a href="/previous-versions/windows/desktop/regprov/stdregprov"><strong>classe StdRegProv,</strong></a> localizada no namespace root\default. Você não pode obter nenhuma instância dessa classe porque o Provedor <a href="/previous-versions/windows/desktop/regprov/system-registry-provider">de Registro</a> do Sistema é apenas um método e um provedor de eventos. No entanto, você pode obter dados do Registro por meio de métodos como <a href="/previous-versions/windows/desktop/regprov/enumkey-method-in-class-stdregprov"><strong>EnumKey</strong></a> ou <a href="/previous-versions/windows/desktop/regprov/enumvalues-method-in-class-stdregprov"><strong>EnumValue.</strong></a> O <a href="/windows/desktop/CIMWin32Prov/win32-registry"><strong>Win32_Registry</strong></a>, localizado no namespace root\cimv2, obtém dados sobre o Registro como um todo, como o tamanho dele.<br/> <span data-codelanguage="VisualBasic"></span>
 <table>
 <colgroup>
 <col style="width: 100%" />
@@ -103,8 +103,8 @@ $results = $reg.GetDWORDValue($HKEY_CURRENT_USER, $Key, $value)
 </td>
 </tr>
 <tr class="even">
-<td>... criar uma nova chave do registro?</td>
-<td><p>Use a classe <a href="/previous-versions/windows/desktop/regprov/stdregprov"><strong>StdRegProv</strong></a> , localizada no namespace root\default e o método <a href="/previous-versions/windows/desktop/regprov/createkey-method-in-class-stdregprov"><strong>CreateKey</strong></a> .</p>
+<td>... criar uma nova chave do Registro?</td>
+<td><p>Use a <a href="/previous-versions/windows/desktop/regprov/stdregprov"><strong>classe StdRegProv,</strong></a> localizada no namespace root\default e no <a href="/previous-versions/windows/desktop/regprov/createkey-method-in-class-stdregprov"><strong>método CreateKey.</strong></a></p>
 <div class="code">
 <span data-codelanguage="VisualBasic"></span>
 <table>
@@ -154,7 +154,7 @@ If ($results.Returnvalue -eq 0) {&quot;Key created&quot;} </code></pre></td>
 </tr>
 <tr class="odd">
 <td>... criar um novo valor de registro em uma chave?</td>
-<td><p>Use a classe <a href="/previous-versions/windows/desktop/regprov/stdregprov"><strong>StdRegProv</strong></a> , localizada no namespace root\default e no método <a href="/previous-versions/windows/desktop/regprov/createkey-method-in-class-stdregprov"><strong>CreateKey</strong></a> . Em seguida, use um dos métodos set, dependendo de qual tipo de dados de registro o valor é, como <a href="/previous-versions/windows/desktop/regprov/setdwordvalue-method-in-class-stdregprov"><strong>SETdwordvalue</strong></a>. Os métodos set criam um valor se ele ainda não existir. Para obter mais informações, consulte <a href="mapping-a-registry-data-type-to-a-wmi-data-type.md">mapeando um tipo de dados do registro para um tipo de dados do WMI</a>.</p>
+<td><p>Use a <a href="/previous-versions/windows/desktop/regprov/stdregprov"><strong>classe StdRegProv,</strong></a> localizada no namespace root\default e no <a href="/previous-versions/windows/desktop/regprov/createkey-method-in-class-stdregprov"><strong>método CreateKey.</strong></a> Em seguida, use um dos métodos Set, dependendo de qual tipo de dados do Registro o valor é, como <a href="/previous-versions/windows/desktop/regprov/setdwordvalue-method-in-class-stdregprov"><strong>SetDWORDValue.</strong></a> Os métodos Set criarão um valor se ele ainda não existir. Para obter mais informações, consulte <a href="mapping-a-registry-data-type-to-a-wmi-data-type.md">Mapeando um tipo de dados do Registro para um tipo de dados WMI</a>.</p>
 <div class="code">
 <span data-codelanguage="VisualBasic"></span>
 <table>
@@ -206,8 +206,8 @@ If ($results.Returnvalue -eq 0) {&quot;Value created&quot;}</code></pre></td>
 </div></td>
 </tr>
 <tr class="even">
-<td>... Evite obter um erro de classe inválido ao tentar gravar um script para ler o registro?</td>
-<td><p>Use o namespace root\default ao acessar a classe <a href="/previous-versions/windows/desktop/regprov/stdregprov"><strong>StdRegProv</strong></a> . <strong>StdRegProv</strong> não faz parte do namespace CIMV2, que é o motivo pelo qual um &quot; erro de classe inválido &quot; é gerado se você tentar se conectar a &quot; root\cimv2: StdRegProv &quot; .</p>
+<td>... evitar receber um erro de Classe Inválida ao tentar escrever um script para ler o Registro?</td>
+<td><p>Use o namespace root\default ao acessar a <a href="/previous-versions/windows/desktop/regprov/stdregprov"><strong>classe StdRegProv.</strong></a> <strong>StdRegProv</strong> não faz parte do namespace cimv2, motivo pelo qual um erro de Classe Inválida será gerado se você tentar se conectar a &quot; &quot; &quot; root\cimv2:StdRegProv. &quot;</p>
 <div class="code">
 <span data-codelanguage="VisualBasic"></span>
 <table>
@@ -235,12 +235,12 @@ Wscript.Echo &quot;Current History Buffer Size: &quot; & dwValue</code></pre></t
 </div></td>
 </tr>
 <tr class="odd">
-<td>... verificar a segurança em uma chave de Registro específica?</td>
-<td><p>Use a classe <a href="/previous-versions/windows/desktop/regprov/stdregprov"><strong>StdRegProv</strong></a> , localizada no namespace root\default e no método <a href="/previous-versions/windows/desktop/regprov/checkaccess-method-in-class-stdregprov"><strong>CheckAccess</strong></a> . Você só pode verificar os direitos de acesso para o usuário atual que está executando o script ou o aplicativo. Você não pode verificar os direitos de acesso de outro usuário especificado.</p></td>
+<td>... verificar a segurança em uma chave do Registro específica?</td>
+<td><p>Use a <a href="/previous-versions/windows/desktop/regprov/stdregprov"><strong>classe StdRegProv,</strong></a> localizada no namespace root\default e no <a href="/previous-versions/windows/desktop/regprov/checkaccess-method-in-class-stdregprov"><strong>método CheckAccess.</strong></a> Você só pode verificar os direitos de acesso para o usuário atual que está executando o script ou o aplicativo. Você não pode verificar os direitos de acesso de outro usuário especificado.</p></td>
 </tr>
 <tr class="even">
 <td>... ler e gravar valores de registro binários?</td>
-<td><p>Use a classe <a href="/previous-versions/windows/desktop/regprov/stdregprov"><strong>StdRegProv</strong></a> , localizada no &quot; &quot; namespace Root\Default e os métodos <a href="/previous-versions/windows/desktop/regprov/getbinaryvalue-method-in-class-stdregprov"><strong>Getbinaryvalue</strong></a> e <a href="/previous-versions/windows/desktop/regprov/setbinaryvalue-method-in-class-stdregprov"><strong>SetBinaryValue</strong></a> . Os valores do registro que aparecem no utilitário RegEdt32 como uma série de valores hexadecimais de bytes estão no formato de dados <strong>REG_BINARY</strong> . Para obter mais informações, consulte <a href="mapping-a-registry-data-type-to-a-wmi-data-type.md">mapeando um tipo de dados do registro para um tipo de dados do WMI</a>. O exemplo de código VBScript a seguir cria uma nova chave com um valor binário. O valor binário é fornecido na matriz de bytes <em>iValues</em> especificada em Hex.</p>
+<td><p>Use a <a href="/previous-versions/windows/desktop/regprov/stdregprov"><strong>classe StdRegProv,</strong></a> localizada no namespace Root\Default e nos métodos &quot; &quot; <a href="/previous-versions/windows/desktop/regprov/getbinaryvalue-method-in-class-stdregprov"><strong>GetBinaryValue</strong></a> e <a href="/previous-versions/windows/desktop/regprov/setbinaryvalue-method-in-class-stdregprov"><strong>SetBinaryValue.</strong></a> Os valores do Registro que aparecem no utilitário RegEdt32 como uma série de valores hexadecimais de byte estão no <strong>formato REG_BINARY</strong> dados. Para obter mais informações, consulte <a href="mapping-a-registry-data-type-to-a-wmi-data-type.md">Mapeando um tipo de dados do Registro para um tipo de dados WMI</a>. O exemplo de código VBScript a seguir cria uma nova chave com um valor binário. O valor binário é fornecido na matriz de byte <em>iValues</em> especificada em Hex.</p>
 <div class="code">
 <span data-codelanguage="VisualBasic"></span>
 <table>
@@ -323,8 +323,8 @@ Foreach ($byte in $results.uvalue) {&quot;{0}&quot; -f $byte.tostring(&quot;x&qu
 </div></td>
 </tr>
 <tr class="odd">
-<td>... ler e gravar valores de registro que contêm várias cadeias de caracteres?</td>
-<td><p>Use a classe <a href="/previous-versions/windows/desktop/regprov/stdregprov"><strong>StdRegProv</strong></a> , localizada no namespace root\default e nos métodos <a href="/previous-versions/windows/desktop/regprov/getmultistringvalue-method-in-class-stdregprov"><strong>GetMultiStringValue</strong></a> e <a href="/previous-versions/windows/desktop/regprov/setmultistringvalue-method-in-class-stdregprov"><strong>SetMultiStringValue</strong></a> . As chaves do registro que aparecem no utilitário RegEdt32 como uma série de cadeias de caracteres separadas por espaços estão no formato de dados <strong>REG_MULTI_SZ</strong> . Para obter mais informações, consulte <a href="mapping-a-registry-data-type-to-a-wmi-data-type.md">mapeando um tipo de dados do registro para um tipo de dados do WMI</a>. O exemplo de código VBScript a seguir cria uma nova chave e um novo valor multistring.</p>
+<td>... ler e gravar valores do Registro que contêm várias cadeias de caracteres?</td>
+<td><p>Use a <a href="/previous-versions/windows/desktop/regprov/stdregprov"><strong>classe StdRegProv,</strong></a> localizada no namespace root\default e nos métodos <a href="/previous-versions/windows/desktop/regprov/getmultistringvalue-method-in-class-stdregprov"><strong>GetMultiStringValue</strong></a> e <a href="/previous-versions/windows/desktop/regprov/setmultistringvalue-method-in-class-stdregprov"><strong>SetMultiStringValue.</strong></a> As chaves do Registro que aparecem no utilitário RegEdt32 como uma série de cadeias de caracteres separadas por espaços estão no formato <strong>REG_MULTI_SZ</strong> dados. Para obter mais informações, consulte <a href="mapping-a-registry-data-type-to-a-wmi-data-type.md">Mapeando um tipo de dados do Registro para um tipo de dados WMI</a>. O exemplo de código VBScript a seguir cria uma nova chave e um novo valor de multistring.</p>
 <div class="code">
 <span data-codelanguage="VisualBasic"></span>
 <table>
@@ -375,7 +375,7 @@ If ($results.Returnvalue -eq 0) {&quot;Value Set&quot;} </code></pre></td>
 </table>
 
 </div>
-<p>O script a seguir lê o valor de multistring.</p>
+<p>O script a seguir lê o valor de váriasstring.</p>
 <div class="code">
 <span data-codelanguage="VisualBasic"></span>
 <table>
@@ -429,8 +429,8 @@ $results.svalue</code></pre></td>
 </div></td>
 </tr>
 <tr class="even">
-<td>... remover uma chave do registro?</td>
-<td><p>Use a classe <a href="/previous-versions/windows/desktop/regprov/stdregprov"><strong>StdRegProv</strong></a> , localizada no namespace root\default e nos métodos <a href="/previous-versions/windows/desktop/regprov/deletevalue-method-in-class-stdregprov"><strong>DeleteKey</strong></a> .</p>
+<td>... remover uma chave do Registro?</td>
+<td><p>Use a <a href="/previous-versions/windows/desktop/regprov/stdregprov"><strong>classe StdRegProv,</strong></a> localizada no namespace root\default e nos <a href="/previous-versions/windows/desktop/regprov/deletevalue-method-in-class-stdregprov"><strong>métodos DeleteKey.</strong></a></p>
 <div class="code">
 <span data-codelanguage="PowerShell"></span>
 <table>
@@ -467,16 +467,16 @@ If ($results.Returnvalue -eq 0) {&quot;Key Removed&quot;} </code></pre></td>
 
 <dl> <dt>
 
-[Tarefas do WMI para scripts e aplicativos](wmi-tasks-for-scripts-and-applications.md)
+[Tarefas WMI para scripts e aplicativos](wmi-tasks-for-scripts-and-applications.md)
 </dt> <dt>
 
-[Exemplos de aplicativos WMI C++](wmi-c---application-examples.md)
+[Exemplos de aplicativo WMI C++](wmi-c---application-examples.md)
 </dt> <dt>
 
-[ScriptCenter do TechNet](https://www.microsoft.com/technet/scriptcenter)
+[TechNet ScriptCenter](https://www.microsoft.com/technet/scriptcenter)
 </dt> <dt>
 
-[Modificando o registro do sistema](modifying-the-system-registry.md)
+[Modificando o Registro do Sistema](modifying-the-system-registry.md)
 </dt> <dt>
 
 [**StdRegProv**](/previous-versions/windows/desktop/regprov/stdregprov)

@@ -1,7 +1,7 @@
 ---
-description: Função D3DXVec4Hermite (D3dx9math. h) – executa uma interpolação de spline Hermite, usando os vetores de 4D especificados.
+description: Função D3DXVec4Hermite (D3dx9math.h) – executa uma interpolação de spline hermite, usando os vetores 4D especificados.
 ms.assetid: 687d4dcf-ee75-4dda-b6d2-5ba0b5281a64
-title: Função D3DXVec4Hermite (D3dx9math. h)
+title: Função D3DXVec4Hermite (D3dx9math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: b08ed785c24ba9580be0fc7f620a471ea96184a8
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: a62d96181b4242073b9e6a2176d841add86cbfeab4238bfb4cbb538bfd88e1e5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108097694"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117730724"
 ---
-# <a name="d3dxvec4hermite-function-d3dx9mathh"></a>Função D3DXVec4Hermite (D3dx9math. h)
+# <a name="d3dxvec4hermite-function-d3dx9mathh"></a>Função D3DXVec4Hermite (D3dx9math.h)
 
-Executa uma interpolação de spline Hermite, usando os vetores de 4D especificados.
+Executa uma interpolação de spline hermite usando os vetores 4D especificados.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -45,55 +45,55 @@ D3DXVECTOR4* D3DXVec4Hermite(
 
 <dl> <dt>
 
-*pout* \[ entrada, saída\]
+*pOut* \[ in, out\]
 </dt> <dd>
 
 Tipo: **[ **D3DXVECTOR4**](d3dxvector4.md)\***
 
-Ponteiro para a estrutura [**D3DXVECTOR4**](d3dxvector4.md) que é o resultado da operação.
+Ponteiro para a [**estrutura D3DXVECTOR4**](d3dxvector4.md) que é o resultado da operação.
 
 </dd> <dt>
 
-*pV1* \[ no\]
+*pV1* \[ Em\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR4**](d3dxvector4.md) \***
 
-Ponteiro para uma estrutura de [**D3DXVECTOR4**](d3dxvector4.md) de origem, um vetor de posição.
+Ponteiro para uma estrutura [**D3DXVECTOR4 de**](d3dxvector4.md) origem, um vetor de posição.
 
 </dd> <dt>
 
-*pT1* \[ no\]
+*pT1* \[ Em\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR4**](d3dxvector4.md) \***
 
-Ponteiro para uma estrutura de [**D3DXVECTOR4**](d3dxvector4.md) de origem, um vetor tangente.
+Ponteiro para uma estrutura [**D3DXVECTOR4 de**](d3dxvector4.md) origem, um vetor tangente.
 
 </dd> <dt>
 
-*pV2* \[ no\]
+*pV2* \[ Em\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR4**](d3dxvector4.md) \***
 
-Ponteiro para uma estrutura de [**D3DXVECTOR4**](d3dxvector4.md) de origem, um vetor de posição.
+Ponteiro para uma estrutura [**D3DXVECTOR4 de**](d3dxvector4.md) origem, um vetor de posição.
 
 </dd> <dt>
 
-*pT2* \[ no\]
+*pT2* \[ Em\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR4**](d3dxvector4.md) \***
 
-Ponteiro para uma estrutura de [**D3DXVECTOR4**](d3dxvector4.md) de origem, um vetor tangente.
+Ponteiro para uma estrutura [**D3DXVECTOR4 de**](d3dxvector4.md) origem, um vetor tangente.
 
 </dd> <dt>
 
 *s* \[ em\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 Fator de ponderação. Consulte Observações.
 
@@ -103,25 +103,25 @@ Fator de ponderação. Consulte Observações.
 
 Tipo: **[ **D3DXVECTOR4**](d3dxvector4.md)\***
 
-Ponteiro para uma estrutura [**D3DXVECTOR4**](d3dxvector4.md) que é o resultado da interpolação Hermite spline.
+Ponteiro para uma [**estrutura D3DXVECTOR4**](d3dxvector4.md) que é o resultado da interpolação de spline hermite.
 
 ## <a name="remarks"></a>Comentários
 
-A função **D3DXVec4Hermite** interpola de (positiona, tangentea) a (PositionB, tangentB) usando a interpolação Hermite spline.
+A **função D3DXVec4Hermite** interpola de (positionA, tangentA) para (positionB, tangentB) usando a interpolação de spline hermite.
 
-A interpolação de spline é uma generalização da spline de fácil entrada, de fácil saída. A rampa é uma função de Q (s) com as propriedades a seguir.
+A interpolação de spline é uma generalização do spline fácil de entrar e sair. A rampa é uma função de P(s) com as propriedades a seguir.
 
-Q (s) = as ³ + BS ² + CS + D (e, portanto, Q ' s) = 3As ² + 2Bs + C)
+P(s) = As(s) = As(s) + Bs(s) + Cs + D (e, portanto, Q(s) = 3As(s) + 2Bs + C)
 
-a) Q (0) = v1, portanto, Q ' (0) = T1
+a) Q(0) = v1, portanto, Q'(0) = t1
 
-b) Q (1) = v2, portanto Q ' (1) = T2
+b) Q(1) = v2, portanto, Q'(1) = t2
 
-v1 é o conteúdo de pV1, V2 no conteúdo de pV2, T1 é o conteúdo de pT1 e T2 é o conteúdo de pT2.
+v1 é o conteúdo de pV1, v2 no conteúdo de pV2, t1 é o conteúdo de pT1 e t2 é o conteúdo de pT2.
 
-Essas propriedades são usadas para resolver para A, B, C, D.
+Essas propriedades são usadas para resolver A, B, C, D.
 
-Conecte as soluções para a, B, C e D para gerar Q (s).
+Conecte as soluções para A, B, C e D para gerar P(s).
 
 ``` syntax
 A = 2v1 - 2v2 + t2 + t1 
@@ -132,15 +132,15 @@ D = v1
 
 Isso resulta em:
 
-Q (s) = (2v1-2v2 + T2 + T1) s ³ + (3v2-3V1-2T1-T2) s ² + T1s + v1
+Q(s) = (2v1 - 2v2 + t2 + t1)sÁ + (3v2 - 3v1 - 2t1 - t2)sU + t1s + v1
 
-Que pode ser reorganizado como:
+Que pode ser reorganizar como:
 
-Q (s) = (2S ³-3S ² + 1) V1 + (-2S ³ + 3S ²) V2 + (s ³-2s ² + s) T1 + (s ³-s ²) T2
+Q(s) = (2s polegadas - 3su + 1)v1 + (-2s polegada + 3s)v2 + (sá - 2sU + s)t1 + (sá - su)t2
 
-As Hermites são úteis para controlar a animação porque a curva é executada por todos os pontos de controle. Além disso, como a posição e a tangente são especificadas explicitamente nas extremidades de cada segmento, é fácil criar uma curva contínua C2, contanto que você verifique se a posição inicial e a tangente correspondem aos valores finais do último segmento.
+Splines de hermite são úteis para controlar a animação porque a curva é executado em todos os pontos de controle. Além disso, como a posição e a tangente são especificadas explicitamente nas extremidades de cada segmento, é fácil criar uma curva contínua C2, desde que você certifique-se de que a posição inicial e a tangente corresponderão aos valores finais do último segmento.
 
-O valor de retorno para essa função é o mesmo valor retornado no parâmetro pOut. Dessa forma, a função **D3DXVec4Hermite** pode ser usada como um parâmetro para outra função.
+O valor retornado para essa função é o mesmo valor retornado no parâmetro pOut. Dessa forma, a **função D3DXVec4Hermite** pode ser usada como um parâmetro para outra função.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -148,12 +148,12 @@ O valor de retorno para essa função é o mesmo valor retornado no parâmetro p
 
 | Requisito | Valor |
 |--------------------|----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3dx9math. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| parâmetro<br/>  | <dl> <dt>D3dx9math.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

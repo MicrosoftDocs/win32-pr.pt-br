@@ -1,11 +1,11 @@
 ---
-title: Propriedade De erro IWMPMedia2
-description: A propriedade Error obtém uma interface IWMPErrorItem se o item de mídia tiver uma condição de erro.
+title: Propriedade de erro IWMPMedia2
+description: A Propriedade Error obterá uma interface IWMPErrorItem se o item de mídia tiver uma condição de erro.
 ms.assetid: 57dc8aef-5f22-43da-87bc-fdc0c8ebe49b
 keywords:
-- Erro de propriedade Windows Media Player
-- Propriedade error Windows Media Player interface , IWMPMedia2
-- Interface IWMPMedia2 Windows Media Player , propriedade Error
+- Windows Media Player de propriedade de erro
+- propriedade de erro Windows Media Player, interface IWMPMedia2
+- Windows Media Player de interface IWMPMedia2, propriedade Error
 topic_type:
 - apiref
 api_name:
@@ -24,9 +24,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118331965"
 ---
-# <a name="iwmpmedia2error-property"></a>Propriedade IWMPMedia2::Error
+# <a name="iwmpmedia2error-property"></a>Propriedade IWMPMedia2:: Error
 
-A **propriedade Error** obtém uma interface **IWMPErrorItem** se o item de mídia tiver uma condição de erro.
+A propriedade **Error** obterá uma interface **IWMPErrorItem** se o item de mídia tiver uma condição de erro.
 
 Esta propriedade é somente para leitura.
 
@@ -49,11 +49,11 @@ Public ReadOnly Property Error As IWMPErrorItem
 
 ## <a name="property-value"></a>Valor da propriedade
 
-Uma interface **WMPLib.IWMPErrorItem** que fornece acesso a informações sobre a condição de erro.
+Uma interface **WMPLib. IWMPErrorItem** que fornece acesso a informações sobre a condição de erro.
 
 ## <a name="remarks"></a>Comentários
 
-Se o item de mídia não puder ser tocado, essa propriedade obterá uma interface **IWMPErrorItem** que contém informações sobre o problema encontrado.
+Se o item de mídia não puder ser reproduzido, essa propriedade obterá uma interface **IWMPErrorItem** que contém informações sobre o problema encontrado.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -61,7 +61,7 @@ Se o item de mídia não puder ser tocado, essa propriedade obterá uma interfac
 
 | Requisito | Valor |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versão<br/>   | Windows Media Player série 9 ou posterior<br/>                                                                      |
+| Versão<br/>   | Windows Media Player 9 Series ou posterior<br/>                                                                      |
 | Namespace<br/> | **WMPLib**<br/>                                                                                                  |
 | Assembly<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 

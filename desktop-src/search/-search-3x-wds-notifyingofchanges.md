@@ -1,21 +1,21 @@
 ---
-description: O uso dos componentes de APIs de notificação pode notificar o indexador de que um item foi alterado, movido ou excluído e pode adicionar escopos de pesquisa à fila de URLs do indexador do Windows Search que exigem a indexação.
+description: o uso dos componentes de APIs de notificação pode notificar o indexador de que um item foi alterado, movido ou excluído e pode adicionar escopos de pesquisa à fila de URLs do indexador de pesquisa da Windows que exigem indexação.
 ms.assetid: 817550e2-a256-48d5-9fa6-1ea04f8b8589
-title: Notificando o índice de alterações (pesquisa do Windows)
+title: notificando o índice de alterações (Windows pesquisa)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f5a89112da20c4010e1fc23fab16778309195d20
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4cb386763be5192851368b1f46b69f94576fbe261a57d215d649d38ac5a19ecf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104090097"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118052223"
 ---
-# <a name="notifying-the-index-of-changes-windows-search"></a>Notificando o índice de alterações (pesquisa do Windows)
+# <a name="notifying-the-index-of-changes-windows-search"></a>notificando o índice de alterações (Windows pesquisa)
 
-O uso dos componentes de APIs de notificação pode notificar o indexador de que um item foi alterado, movido ou excluído e pode adicionar escopos de pesquisa à fila de URLs do indexador do Windows Search que exigem a indexação.
+o uso dos componentes de APIs de notificação pode notificar o indexador de que um item foi alterado, movido ou excluído e pode adicionar escopos de pesquisa à fila de URLs do indexador de pesquisa da Windows que exigem indexação.
 
-Os componentes do podem notificar o indexador do Windows Search de que os dados em seu armazenamento foram alterados. Normalmente, você pode contar com os rastreamentos agendados do indexador. No entanto, o fornecimento de notificações ao indexador pode melhorar o desempenho, garantindo que o indexador não rastreie toda a loja em índices incrementais. Por exemplo, isso pode ser recomendado se você espera que o armazenamento de dados seja excepcionalmente grande e/ou intensamente ocupado, como um armazenamento de dados de email, por exemplo.
+os componentes do podem notificar os Windows indexador de pesquisa de que os dados em seu armazenamento foram alterados. Normalmente, você pode contar com os rastreamentos agendados do indexador. No entanto, o fornecimento de notificações ao indexador pode melhorar o desempenho, garantindo que o indexador não rastreie toda a loja em índices incrementais. Por exemplo, isso pode ser recomendado se você espera que o armazenamento de dados seja excepcionalmente grande e/ou intensamente ocupado, como um armazenamento de dados de email, por exemplo.
 
 -   [Implementando notificações gerenciadas pelo indexador](#implementing-indexer-managed-notifications)
     -   [Fila de notificações](#notifications-queue)
@@ -51,7 +51,7 @@ Na chamada para esse método, você inclui o número de alterações que estão 
 
 ## <a name="implementing-provider-managed-notifications"></a>Implementando notificações gerenciadas pelo provedor
 
-As notificações gerenciadas pelo provedor permitem que você controle o acesso ao seu armazenamento de dados e monitore o progresso do indexador à medida que ele atualiza o catálogo do Windows Search. Seu provedor deve monitorar as alterações no armazenamento de dados e criar uma fila de notificações. Periodicamente, seu provedor envia um lote de notificações de alteração para o indexador. Quando o indexador recebe suas notificações, ele retorna uma confirmação. Se, após um período de tempo, você não receber uma confirmação, poderá enviar novamente as notificações. Como o indexador rastreia o armazenamento de dados e atualiza o catálogo de pesquisa do Windows, ele notifica seu provedor sobre cada atualização de catálogo e você pode remover os itens da sua fila. Seu provedor mantém sua fila de notificação em todo esse processo para que, em caso de falha, você possa reenviar notificações para o indexador.
+as notificações gerenciadas pelo provedor permitem que você controle o acesso ao seu armazenamento de dados e monitore o progresso do indexador à medida que ele atualiza o catálogo de pesquisa Windows. Seu provedor deve monitorar as alterações no armazenamento de dados e criar uma fila de notificações. Periodicamente, seu provedor envia um lote de notificações de alteração para o indexador. Quando o indexador recebe suas notificações, ele retorna uma confirmação. Se, após um período de tempo, você não receber uma confirmação, poderá enviar novamente as notificações. como o indexador rastreia o armazenamento de dados e atualiza o catálogo de pesquisa Windows, ele notifica seu provedor sobre cada atualização de catálogo e você pode remover os itens da sua fila. Seu provedor mantém sua fila de notificação em todo esse processo para que, em caso de falha, você possa reenviar notificações para o indexador.
 
 Para implementar notificações gerenciadas pelo provedor, você precisa implementar o seguinte:
 
@@ -78,9 +78,9 @@ Desse ponto em diante, o indexador envia atualizações usando a interface [**IS
 
 Para obter atualizações sobre o status de seus itens e do catálogo, você deve registrar sua interface [**ISearchNotifyInlineSite**](/windows/desktop/api/Searchapi/nn-searchapi-isearchnotifyinlinesite) com o indexador para que ele possa enviar retornos de chamada. Cada atualização enviada usando [**ISearchNotifyInlineSite:: OnItemIndexedStatusChange**](/windows/desktop/api/Searchapi/nf-searchapi-isearchnotifyinlinesite-onitemindexedstatuschange) identifica os itens por DocId, o status de cada item ([**\_ status de \_ indexação \_ de item de pesquisa**](/windows/desktop/api/Searchapi/ns-searchapi-search_item_indexing_status)) e a fase de indexação ([**\_ \_ fase de indexação de pesquisa**](/windows/desktop/api/Searchapi/ne-searchapi-search_indexing_phase)) em que os itens estão.
 
-Você não só recebe atualizações sobre o status de cada item, conforme descrito anteriormente, você também obtém informações importantes sobre o status do próprio catálogo. O serviço de pesquisa do Windows pode ser interrompido ou reiniciado pelo usuário final, por um aplicativo de terceiros ou por alguma outra falha. Quando isso acontece, você precisa de uma maneira de determinar quais notificações enviar por push para o indexador.
+Você não só recebe atualizações sobre o status de cada item, conforme descrito anteriormente, você também obtém informações importantes sobre o status do próprio catálogo. o serviço de pesquisa Windows pode ser interrompido ou reiniciado pelo usuário final, por um aplicativo de terceiros ou por alguma outra falha. Quando isso acontece, você precisa de uma maneira de determinar quais notificações enviar por push para o indexador.
 
-O método [**ISearchNotifyInlineSite:: OnCatalogStatusChange**](/windows/desktop/api/Searchapi/nf-searchapi-isearchnotifyinlinesite-oncatalogstatuschange) , chamado pelo serviço de pesquisa do Windows, informa os clientes sobre o status do catálogo usando os parâmetros descritos na tabela a seguir.
+o método [**ISearchNotifyInlineSite:: OnCatalogStatusChange**](/windows/desktop/api/Searchapi/nf-searchapi-isearchnotifyinlinesite-oncatalogstatuschange) , chamado pelo serviço de pesquisa Windows, informa os clientes sobre o status do catálogo usando os parâmetros descritos na tabela a seguir.
 
 
 

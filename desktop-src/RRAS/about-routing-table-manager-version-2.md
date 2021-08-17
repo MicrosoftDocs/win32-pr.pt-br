@@ -9,20 +9,20 @@ keywords:
 - Gerenciador de tabela de roteamento versão 2 RRAS, descrito
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5014dc894c4a517bfdfac8478e520658a4987d4a
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: c87228222f31daf7f951064d05c92d950a3fff0d570fcac3536887b50193b16b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104005640"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117792103"
 ---
 # <a name="about-routing-table-manager-version-2"></a>Sobre o Gerenciador de tabela de roteamento versão 2
 
-A documentação a seguir descreve a tecnologia de Gerenciador de tabela de roteamento versão 2 (RTMv2). A API do RTMv2 é um recurso do Windows 2000 e sistemas operacionais posteriores que você pode usar para gravar protocolos de roteamento que interagem com o Gerenciador de tabela de roteamento.
+A documentação a seguir descreve a tecnologia de Gerenciador de tabela de roteamento versão 2 (RTMv2). a API do RTMv2 é um recurso do Windows 2000 e sistemas operacionais posteriores que você pode usar para gravar protocolos de roteamento que interagem com o gerenciador de tabela de roteamento.
 
 O Gerenciador de tabela de roteamento é o repositório central de informações de roteamento para todos os protocolos de roteamento que operam no RRAS (serviço de roteamento e acesso remoto).
 
-O RTMv2 não está disponível para o Windows NT versão 4,0. Além disso, o RTMv2 não pode ser usado para protocolos de roteamento IPX que são executados no Windows NT 4,0 ou no Windows 2000. Se você estiver usando IPX ou gravando protocolos de roteamento para o Windows NT 4,0, consulte [sobre o Gerenciador de tabela de roteamento versão 1](about-routing-table-manager-version-1.md).
+RTMv2 não está disponível para a versão Windows NT 4,0. além disso, RTMv2 não pode ser usado para protocolos de roteamento IPX que são executados em Windows NT 4,0 ou Windows 2000. se você estiver usando IPX ou gravando protocolos de roteamento para Windows NT 4,0, consulte [sobre o gerenciador de tabela de roteamento versão 1](about-routing-table-manager-version-1.md).
 
 Esta visão geral descreve os seguintes tópicos:
 
@@ -42,9 +42,9 @@ Esta visão geral descreve os seguintes tópicos:
 -   [Manutenção de listas de Client-Specific](maintaining-client-specific-lists.md)
 -   [Gerenciando identificadores](managing-handles.md)
 
- 
+ 
 
- 
+ 
 
 
 

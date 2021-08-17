@@ -1,11 +1,11 @@
 ---
-title: Método DownloadItem. Cancel
-description: Observação Esta seção descreve a funcionalidade projetada para uso por lojas online. Não há suporte para o uso dessa funcionalidade fora do contexto de uma loja online. O método Cancel cancela o download.
+title: Método DownloadItem.cancel
+description: Observação Esta seção descreve a funcionalidade projetada para uso por lojas online. Não há suporte para o uso dessa funcionalidade fora do contexto de uma loja online. O método cancel cancel cancel cancela o download.
 ms.assetid: b3715fde-6a83-45fa-92ea-1cbffbee7274
 keywords:
-- Windows Media Player do método Cancel
-- método cancel Windows Media Player, classe DownloadItem
-- classe DownloadItem Windows Media Player, método cancel
+- cancelar o método Windows Media Player
+- classe cancel method Windows Media Player , DownloadItem
+- Classe DownloadItem Windows Media Player , método cancel
 topic_type:
 - apiref
 api_name:
@@ -23,14 +23,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117749727"
 ---
-# <a name="downloaditemcancel-method"></a>Método DownloadItem. Cancel
+# <a name="downloaditemcancel-method"></a>Método DownloadItem.cancel
 
 > [!Note]  
 > Esta seção descreve a funcionalidade projetada para uso por lojas online. Não há suporte para o uso dessa funcionalidade fora do contexto de uma loja online.
 
  
 
-O método **Cancel** cancela o download.
+O **método cancel** cancel cancel cancela o download.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -51,7 +51,7 @@ Esse método não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-Os itens cancelados não são removidos da coleção de download. Os itens cancelados retornam um valor de **downloadstate** de 4 (cancelado).
+Os itens cancelados não são removidos da coleção de download. Os itens cancelados retornam **um valor downloadState** de 4 (cancelado).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -59,7 +59,7 @@ Os itens cancelados não são removidos da coleção de download. Os itens cance
 
 | Requisito | Valor |
 |--------------------|------------------------------------------------------------------------------------|
-| Versão<br/> | Windows Media Player 9 Series ou posterior.<br/>                                 |
+| Versão<br/> | Windows Media Player Série 9 ou posterior.<br/>                                 |
 | DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
@@ -71,7 +71,7 @@ Os itens cancelados não são removidos da coleção de download. Os itens cance
 [**Objeto DownloadItem**](downloaditem-object.md)
 </dt> <dt>
 
-[**DownloadItem. downloadstate**](downloaditem-downloadstate.md)
+[**DownloadItem.downloadState**](downloaditem-downloadstate.md)
 </dt> </dl>
 
  

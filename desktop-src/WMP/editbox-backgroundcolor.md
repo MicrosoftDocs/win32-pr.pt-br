@@ -1,9 +1,9 @@
 ---
-title: Admy. backgroundColor
-description: O atributo backgroundColor especifica ou recupera a cor do plano de fundo do controle caixa de edição.
+title: EDITBOX.backgroundColor
+description: O atributo backgroundColor especifica ou recupera a cor da tela de fundo do controle de caixa de edição.
 ms.assetid: 9ce247fe-c033-40fd-95fe-3e9445bf6d62
 keywords:
-- Admy. backgroundColor Windows Media Player
+- EDITBOX.backgroundColor Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ebfd247cec4669da8748fb5986087eff25696de0
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: afafb7158dcc35d0449886b1ebd2f2cac5eaa06a94c01910ee43c5f66b6bccb9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105758221"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117749447"
 ---
-# <a name="editboxbackgroundcolor"></a>Admy. backgroundColor
+# <a name="editboxbackgroundcolor"></a>EDITBOX.backgroundColor
 
-O atributo **backgroundColor** especifica ou recupera a cor do plano de fundo do controle caixa de edição.
+O **atributo backgroundColor** especifica ou recupera a cor da tela de fundo para o controle de caixa de edição.
 
 ``` syntax
         elementID.backgroundColor
@@ -29,7 +29,7 @@ O atributo **backgroundColor** especifica ou recupera a cor do plano de fundo do
 
 ## <a name="possible-values"></a>Valores possíveis
 
-Esse atributo é uma **cadeia de caracteres** de leitura/gravação que contém qualquer valor de cor do Microsoft Internet Explorer ou o valor "None". Ele tem um valor padrão igual à cor do plano de fundo no Windows.
+Esse atributo é uma Cadeia de **caracteres** de leitura/gravação que contém qualquer valor de cor Internet Explorer Microsoft ou o valor "none". Ele tem um valor padrão igual à cor da tela de fundo Windows.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -45,13 +45,13 @@ Esse atributo é uma **cadeia de caracteres** de leitura/gravação que contém 
 
 <dl> <dt>
 
-[**Referência de cor**](color-reference.md)
+[**Referência de cores**](color-reference.md)
 </dt> <dt>
 
-[**Elemento admy**](editbox-element.md)
+[**Elemento EDITBOX**](editbox-element.md)
 </dt> <dt>
 
-[**ForegroundColor de edição**](editbox-foregroundcolor.md)
+[**EDITBOX.foregroundColor**](editbox-foregroundcolor.md)
 </dt> </dl>
 
  
