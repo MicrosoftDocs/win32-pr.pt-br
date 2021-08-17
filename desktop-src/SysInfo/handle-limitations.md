@@ -4,12 +4,12 @@ ms.assetid: 3eafd0e0-3923-4489-8a0a-63007dd3183a
 title: Limitações de identificador
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 99caa991b1ffa0a4e0c02ff32225c3260eb4a016
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7f194ed8464d2731c15e9b88ae62549f9fa090928c14cf7dc66e139944863b72
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104171471"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117764404"
 ---
 # <a name="handle-limitations"></a>Limitações de identificador
 

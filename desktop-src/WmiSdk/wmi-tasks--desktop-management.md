@@ -10,12 +10,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 33f027c808a30463f2747d11020f45d1b8d40edf
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e1bb50e58b4db01b01b2122fd55c14bf73be0eb8601d732fa658752b33c35fcd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103827834"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117738970"
 ---
 # <a name="wmi-tasks-desktop-management"></a>Tarefas WMI: gerenciamento de área de trabalho 
 
@@ -28,7 +28,7 @@ O procedimento a seguir descreve como executar um script.
 
 **Para executar um script**
 
-1.  Copie o código e salve-o em um arquivo com uma extensão. vbs, como *filename.vbs*. Verifique se o editor de texto não adiciona uma extensão. txt ao arquivo.
+1.  Copie o código e salve-o em um arquivo com uma extensão. vbs, como *filename.vbs*. Verifique se o editor de texto não adiciona uma extensão de .txt ao arquivo.
 2.  Abra uma janela de prompt de comando e navegue até o diretório em que você salvou o arquivo.
 3.  Digite **cscript filename.vbs** no prompt de comando.
 4.  Se você não puder acessar um log de eventos, verifique se você está executando a partir de um prompt de comandos com privilégios elevados. Alguns logs de eventos, como o log de eventos de segurança, podem ser protegidos por UAC (controles de acesso do usuário).
@@ -55,7 +55,7 @@ A tabela a seguir lista os exemplos de script que podem ser usados para obter v�
 </thead>
 <tbody>
 <tr class="odd">
-<td>... determinar se um computador remoto foi inicializado no modo de segurança com o estado de rede?</td>
+<td>... determinar se um computador remoto foi inicializado no modo de Cofre com o estado de rede?</td>
 <td>Use a classe <a href="/windows/desktop/CIMWin32Prov/win32-computersystem"><strong>Win32_ComputerSystem</strong></a> e verifique o valor da propriedade <strong>PrimaryOwnerName</strong> .<br/> <span data-codelanguage="VisualBasic"></span>
 <table>
 <colgroup>
@@ -324,7 +324,7 @@ foreach ($objOperatingSystem in $colOperatingSystem)
 </div></td>
 </tr>
 <tr class="even">
-<td>... determinar quais aplicativos são executados automaticamente toda vez que eu iniciar o Windows?</td>
+<td>... determinar quais aplicativos são executados automaticamente cada vez que eu iniciar Windows?</td>
 <td><p>Use a classe <a href="/windows/desktop/CIMWin32Prov/win32-startupcommand"><strong>Win32_StartupCommand</strong></a> .</p>
 <div class="code">
 <span data-codelanguage="VisualBasic"></span>

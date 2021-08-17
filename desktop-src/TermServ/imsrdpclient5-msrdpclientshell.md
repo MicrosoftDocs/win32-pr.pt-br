@@ -1,22 +1,22 @@
 ---
-title: Propriedade IMsRdpClient5 MsRdpClientShell
-description: Recupera a interface de configuração de cliente programável IMsRdpClientShell.
+title: Propriedade MsRdpClient5 do IMsRdpClientShell
+description: Recupera a interface de configuração do cliente que pode ser escrita por script IMsRdpClientShell.
 ms.assetid: cc56cec4-779d-4b51-8e94-ae0dd9bae997
 ms.tgt_platform: multiple
 keywords:
-- Serviços de Área de Trabalho Remota da propriedade MsRdpClientShell
-- Propriedade MsRdpClientShell Serviços de Área de Trabalho Remota, interface IMsRdpClient5
-- Serviços de Área de Trabalho Remota de interface IMsRdpClient5, Propriedade MsRdpClientShell
-- Propriedade MsRdpClientShell Serviços de Área de Trabalho Remota, interface IMsRdpClient6
-- Serviços de Área de Trabalho Remota de interface IMsRdpClient6, Propriedade MsRdpClientShell
-- Propriedade MsRdpClientShell Serviços de Área de Trabalho Remota, interface IMsRdpClient7
-- Serviços de Área de Trabalho Remota de interface IMsRdpClient7, Propriedade MsRdpClientShell
-- Propriedade MsRdpClientShell Serviços de Área de Trabalho Remota, interface IMsRdpClient8
-- Serviços de Área de Trabalho Remota de interface IMsRdpClient8, Propriedade MsRdpClientShell
-- Propriedade MsRdpClientShell Serviços de Área de Trabalho Remota, interface IMsRdpClient9
-- Serviços de Área de Trabalho Remota de interface IMsRdpClient9, Propriedade MsRdpClientShell
-- Propriedade MsRdpClientShell Serviços de Área de Trabalho Remota, interface IMsRdpClient10
-- Serviços de Área de Trabalho Remota de interface IMsRdpClient10, Propriedade MsRdpClientShell
+- Propriedade MsRdpClientShell Serviços de Área de Trabalho Remota
+- Propriedade MsRdpClientShell Serviços de Área de Trabalho Remota , interface IMsRdpClient5
+- Interface IMsRdpClient5 Serviços de Área de Trabalho Remota , propriedade MsRdpClientShell
+- Propriedade MsRdpClientShell Serviços de Área de Trabalho Remota , interface IMsRdpClient6
+- Interface IMsRdpClient6 Serviços de Área de Trabalho Remota , propriedade MsRdpClientShell
+- Propriedade MsRdpClientShell Serviços de Área de Trabalho Remota , interface IMsRdpClient7
+- Interface IMsRdpClient7 Serviços de Área de Trabalho Remota , propriedade MsRdpClientShell
+- Propriedade MsRdpClientShell Serviços de Área de Trabalho Remota , interface IMsRdpClient8
+- Interface IMsRdpClient8 Serviços de Área de Trabalho Remota , propriedade MsRdpClientShell
+- Propriedade MsRdpClientShell Serviços de Área de Trabalho Remota , interface IMsRdpClient9
+- Interface IMsRdpClient9 Serviços de Área de Trabalho Remota , propriedade MsRdpClientShell
+- Propriedade MsRdpClientShell Serviços de Área de Trabalho Remota , interface IMsRdpClient10
+- Interface IMsRdpClient10 Serviços de Área de Trabalho Remota , propriedade MsRdpClientShell
 topic_type:
 - apiref
 api_name:
@@ -38,16 +38,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 46129dc4736b50e8b6a650cc7a59f9b238da56e2
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f56b403bb5fd754e95786c2a1d4012ccbbacd3e103b1ee02fbf290ff05d30d3a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104086388"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117942038"
 ---
-# <a name="imsrdpclient5msrdpclientshell-property"></a>Propriedade IMsRdpClient5:: MsRdpClientShell
+# <a name="imsrdpclient5msrdpclientshell-property"></a>Propriedade IMsRdpClient5::MsRdpClientShell
 
-Recupera a interface de configuração de cliente programável [**IMsRdpClientShell**](imsrdpclientshell.md).
+Recupera o [**IMsRdpClientShell**](imsrdpclientshell.md)da interface de configuração de cliente que pode ser scriptável.
 
 Esta propriedade é somente para leitura.
 
@@ -64,7 +64,7 @@ HRESULT get_MsRdpClientShell(
 
 ## <a name="property-value"></a>Valor da propriedade
 
-Um ponteiro de interface [**IMsRdpClientShell**](imsrdpclientshell.md) .
+Um ponteiro de interface [**IMsRdpClientShell.**](imsrdpclientshell.md)
 
 ## <a name="requirements"></a>Requisitos
 

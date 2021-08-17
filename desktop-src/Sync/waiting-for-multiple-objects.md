@@ -4,18 +4,18 @@ ms.assetid: 0132ac94-b45b-438a-b96a-e77cfe522702
 title: Aguardando vários objetos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a6fc04d8737b0c404cf6296e1264fa86eb359be6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fe4c8ac12585a32ede0fc96506fa770a19198b18fea833b42a5cf45c75be677b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103829522"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117765037"
 ---
 # <a name="waiting-for-multiple-objects"></a>Aguardando vários objetos
 
-O exemplo a seguir usa a função [**CreateEvent**](/windows/win32/api/synchapi/nf-synchapi-createeventa) para criar dois objetos de evento e a função [**CreateThread**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-createthread) para criar um thread. Em seguida, ele usa a função [**WaitForMultipleObjects**](/windows/win32/api/synchapi/nf-synchapi-waitformultipleobjects) para aguardar que o thread defina o estado de um dos objetos a serem sinalizados usando a função [**SetEvent**](/windows/win32/api/synchapi/nf-synchapi-resetevent) .
+O exemplo a seguir usa a [**função CreateEvent**](/windows/win32/api/synchapi/nf-synchapi-createeventa) para criar dois objetos de evento e a [**função CreateThread**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-createthread) para criar um thread. Em seguida, ele usa a função [**WaitForMultipleObjects**](/windows/win32/api/synchapi/nf-synchapi-waitformultipleobjects) para aguardar o thread definir o estado de um dos objetos a ser sinalizado usando a [**função SetEvent.**](/windows/win32/api/synchapi/nf-synchapi-resetevent)
 
-Para obter um exemplo que aguarda um único objeto, consulte [usando objetos mutex](using-mutex-objects.md).
+Para ver um exemplo que aguarda um único objeto, consulte [Usando objetos Mutex](using-mutex-objects.md).
 
 
 ```C++

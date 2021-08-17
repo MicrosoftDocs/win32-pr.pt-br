@@ -1,11 +1,11 @@
 ---
-title: Classe Win32_TSLicenseServer
-description: Fornece métodos e propriedades para exibir e configurar o licenciamento de Área de Trabalho Remota (Licenciamento RD) em um servidor de licença Área de Trabalho Remota.
+title: Win32_TSLicenseServer classe
+description: Fornece métodos e propriedades para exibir e configurar o Área de Trabalho Remota (Licenciamento de RD) em um Área de Trabalho Remota de licença.
 ms.assetid: 699ddd9f-a91a-450c-b131-a7471252a4cc
 ms.tgt_platform: multiple
 keywords:
-- Classe de Win32_TSLicenseServer Serviços de Área de Trabalho Remota
-- Serviços de Área de Trabalho Remota de Win32_TSLicenseServer classe, descrita
+- Win32_TSLicenseServer classe Serviços de Área de Trabalho Remota
+- Win32_TSLicenseServer classe Serviços de Área de Trabalho Remota , descrito
 topic_type:
 - apiref
 api_name:
@@ -31,16 +31,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 31951b943723e620414b2f714327db8c786f9ab9
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 0f7c73c1d1a48bbc76b4988afca8a07fd9ce505d0633c74f67306901259d9f89
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918727"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118126506"
 ---
-# <a name="win32_tslicenseserver-class"></a>\_Classe Win32 TSLicenseServer
+# <a name="win32_tslicenseserver-class"></a>Classe Win32 \_ TSLicenseServer
 
-Fornece métodos e propriedades para exibir e configurar o licenciamento de Área de Trabalho Remota (Licenciamento RD) em um servidor de licença Área de Trabalho Remota.
+Fornece métodos e propriedades para exibir e configurar o Área de Trabalho Remota (Licenciamento de RD) em um Área de Trabalho Remota de licença.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -68,45 +68,45 @@ class Win32_TSLicenseServer
 
 ## <a name="members"></a>Membros
 
-A classe **Win32 \_ TSLicenseServer** tem estes tipos de membros:
+A **classe Win32 \_ TSLicenseServer** tem estes tipos de membros:
 
 -   [Métodos](#methods)
 -   [Propriedades](#properties)
 
 ### <a name="methods"></a>Métodos
 
-A classe **Win32 \_ TSLicenseServer** tem esses métodos.
+A **classe \_ Win32 TSLicenseServer** tem esses métodos.
 
 
 
 | Método                                                                                   | Descrição                                                                                                                                                                                                                                   |
 |:-----------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**ActivateServer**](activateserver-win32-tslicenseserver.md)                           | Ativa o Área de Trabalho Remota servidor de licença usando uma ID de servidor de licença de Área de Trabalho Remota que é obtida pelo telefone ou pela Internet.<br/>                                                                                           |
-| [**ActivateServerAutomatic**](activateserverautomatic-win32-tslicenseserver.md)         | Ativa a Área de Trabalho Remota servidor de licença automaticamente pela Internet. As propriedades **FirstName**, **LastName**, **Company** e **CountryRegion** não devem estar vazias quando esse método for chamado ou o método falhará.<br/> |
-| [**AddLStoTSLSGroup**](addlstotslsgroup-win32-tslicenseserver.md)                       | Adiciona o Área de Trabalho Remota servidor de licença ao grupo Área de Trabalho Remota servidores de licença em um controlador de domínio no mesmo domínio que o servidor de licença.<br/>                                                                                |
-| [**ChangeRole**](changerole-win32-tslicenseserver.md)                                   | Altera o escopo de descoberta do servidor de licença Área de Trabalho Remota.<br/>                                                                                                                                                                  |
-| [**CreateTSCGroup**](createtscgroup-win32-tslicenseserver.md)                           | Não há suporte para o método.<br/> **Windows server 2008 R2 e Windows server 2008:** Cria o grupo local computadores Terminal Server no Área de Trabalho Remota servidor de licença.<br/>                                               |
-| [**DeactivateServer**](deactivateserver-win32-tslicenseserver.md)                       | Desativa o servidor de licença Área de Trabalho Remota usando um código de confirmação que é recebido pelo telefone.<br/>                                                                                                                        |
-| [**DeactivateServerAutomatic**](deactivateserverautomatic-win32-tslicenseserver.md)     | Desativa o servidor de licença Área de Trabalho Remota pela Internet. As propriedades **FirstName** e **LastName** não devem estar vazias quando esse método for chamado ou o método apresentar falha.<br/>                                              |
+| [**ActivateServer**](activateserver-win32-tslicenseserver.md)                           | Ativa o servidor Área de Trabalho Remota licença usando uma ID do Área de Trabalho Remota de licença que é obtida por telefone ou Internet.<br/>                                                                                           |
+| [**ActivateServerAutomatic**](activateserverautomatic-win32-tslicenseserver.md)         | Ativa o servidor Área de Trabalho Remota de licença automaticamente pela Internet. As **propriedades FirstName**, **LastName**, **Company** e **CountryRegion** não devem estar vazias quando esse método é chamado ou o método falhará.<br/> |
+| [**AddLStoTSLSGroup**](addlstotslsgroup-win32-tslicenseserver.md)                       | Adiciona o Área de Trabalho Remota de licença ao grupo Área de Trabalho Remota servidores de licença em um controlador de domínio no mesmo domínio que o servidor de licença.<br/>                                                                                |
+| [**ChangeRole**](changerole-win32-tslicenseserver.md)                                   | Altera o escopo de descoberta do servidor Área de Trabalho Remota licença.<br/>                                                                                                                                                                  |
+| [**CreateTSCGroup**](createtscgroup-win32-tslicenseserver.md)                           | Não há suporte para o método.<br/> **Windows Server 2008 R2 e Windows Server 2008:** Cria o grupo local Computadores do Servidor de Terminal Área de Trabalho Remota servidor de licença.<br/>                                               |
+| [**DesativarServer**](deactivateserver-win32-tslicenseserver.md)                       | Desativa o servidor Área de Trabalho Remota licença usando um código de confirmação recebido por telefone.<br/>                                                                                                                        |
+| [**DeactivateServerAutomatic**](deactivateserverautomatic-win32-tslicenseserver.md)     | Desativa o servidor de Área de Trabalho Remota de licença pela Internet. As **propriedades FirstName** **e LastName** não devem estar vazias quando esse método é chamado ou o método falhará.<br/>                                              |
 | [**GetActivationStatus**](getactivationstatus-win32-tslicenseserver.md)                 | Recupera o status de ativação atual.<br/>                                                                                                                                                                                           |
-| [**GetLicenseServerId**](getlicenseserverid-win32-tslicenseserver.md)                   | Recupera uma Área de Trabalho Remota ID do servidor de licença se o servidor estiver ativado no momento.<br/>                                                                                                                                                 |
-| [**IsLSinTSLSGroup**](islsintslsgroup-win32-tslicenseserver.md)                         | Recupera se o servidor de licença Área de Trabalho Remota é membro do grupo de servidores de licença Área de Trabalho Remota em um controlador de domínio em um determinado domínio.<br/>                                                                              |
-| [**IsLSonDC**](islsondc-win32-tslicenseserver.md)                                       | Recupera se o Licenciamento RD está instalado em um controlador de domínio.<br/>                                                                                                                                                                |
-| [**IsLSPreventUpgradeGPEnabled**](islspreventupgradegpenabled-win32-tslicenseserver.md) | Recupera se a configuração da política de grupo "impedir atualização de licença" está habilitada no servidor de licença Área de Trabalho Remota.<br/>                                                                                                              |
-| [**IsLSPublished**](islspublished-win32-tslicenseserver.md)                             | Recupera se o servidor de licença Área de Trabalho Remota está publicado no Active Directory Domain Services (AD DS).<br/>                                                                                                                      |
-| [**IsLSRegisteredToSCP**](win32-tslicenseserver-islsregisteredtoscp.md)                 | Recupera se o servidor de licença Área de Trabalho Remota está registrado como um ponto de conexão de serviço no Active Directory Domain Services.<br/>                                                                                               |
-| [**IsLSSecGrpGPEnabled**](islssecgrpgpenabled-win32-tslicenseserver.md)                 | Recupera se a configuração da política de grupo "grupo de segurança do servidor de licenças" está habilitada no servidor de licença Área de Trabalho Remota.<br/>                                                                                                        |
-| [**IsSecureAccessAllowed**](issecureaccessallowed-win32-tslicenseserver.md)             | Recupera se um servidor de Host da Sessão RD tem permissão para solicitar Serviços de Área de Trabalho Remota licenças de acesso para cliente (RDS CALs) do servidor de licença Área de Trabalho Remota.<br/>                                                                |
-| [**IsTSCGroupPresent**](istscgrouppresent-win32-tslicenseserver.md)                     | Não há suporte para o método.<br/> **Windows server 2008 R2 e Windows server 2008:** Recupera se o grupo local computadores Terminal Server existe no servidor de licença Área de Trabalho Remota.<br/>                              |
-| [**IsTSinTSCGroup**](istsintscgroup-win32-tslicenseserver.md)                           | Recupera se um servidor de Host da Sessão RD é membro do grupo local de computadores Terminal Server no servidor de licença Área de Trabalho Remota.<br/>                                                                                         |
-| [**PublishLS**](publishls-win32-tslicenseserver.md)                                     | Publica o servidor de licença Área de Trabalho Remota no AD DS.<br/>                                                                                                                                                                              |
-| [**ReactivateServer**](reactivateserver-win32-tslicenseserver.md)                       | Reativa o servidor de licença Área de Trabalho Remota usando uma nova ID de servidor de licença de Área de Trabalho Remota que é obtida pelo telefone ou pela Internet.<br/>                                                                                     |
-| [**ReactivateServerAutomatic**](reactivateserverautomatic-win32-tslicenseserver.md)     | Reativa o servidor de licença Área de Trabalho Remota pela Internet. As propriedades **FirstName** e **LastName** não devem estar vazias quando esse método for chamado ou o método apresentar falha.<br/>                                              |
-| [**RegisterLSToSCP**](win32-tslicenseserver-registerlstoscp.md)                         | Registra o servidor de licença de Área de Trabalho Remota como um ponto de conexão de serviço no Active Directory Domain Services.<br/>                                                                                                                     |
-| [**RemoveLSfromTSLSGroup**](removelsfromtslsgroup-win32-tslicenseserver.md)             | Remove o Área de Trabalho Remota servidor de licença do grupo Área de Trabalho Remota servidores de licenças em um controlador de domínio no mesmo domínio que o servidor de licença.<br/>                                                                           |
-| [**RemoveTSCGroup**](removetscgroup-win32-tslicenseserver.md)                           | Não há suporte para o método.<br/> **Windows server 2008 R2 e Windows server 2008:** Remove o grupo local computadores Terminal Server do Área de Trabalho Remota servidor de licença.<br/>                                             |
-| [**UnpublishLS**](unpublishls-win32-tslicenseserver.md)                                 | Cancelar a publicação de um servidor de licença Área de Trabalho Remota do AD DS.<br/>                                                                                                                                                                            |
-| [**UnRegisterLSFromSCP**](win32-tslicenseserver-unregisterlsfromscp.md)                 | Remove o servidor de licença Área de Trabalho Remota como um ponto de conexão de serviço no Active Directory Domain Services.<br/>                                                                                                                       |
+| [**GetLicenseServerId**](getlicenseserverid-win32-tslicenseserver.md)                   | Recupera uma ID Área de Trabalho Remota do servidor de licença se o servidor estiver ativado no momento.<br/>                                                                                                                                                 |
+| [**IsLSinTSLSGroup**](islsintslsgroup-win32-tslicenseserver.md)                         | Recupera se o servidor Área de Trabalho Remota licença de usuário é membro do grupo Área de Trabalho Remota servidores de licença em um controlador de domínio em um determinado domínio.<br/>                                                                              |
+| [**IsLSonDC**](islsondc-win32-tslicenseserver.md)                                       | Recupera se o Licenciamento de Área de Trabalho Local está instalado em um controlador de domínio.<br/>                                                                                                                                                                |
+| [**IsLSPreventUpgradeGPEnabled**](islspreventupgradegpenabled-win32-tslicenseserver.md) | Recupera se a configuração de política de grupo "impedir a atualização de licença" está habilitada no servidor Área de Trabalho Remota licença.<br/>                                                                                                              |
+| [**IsLSPublished**](islspublished-win32-tslicenseserver.md)                             | Recupera se o servidor Área de Trabalho Remota licença de usuário está publicado Active Directory Domain Services (AD DS).<br/>                                                                                                                      |
+| [**IsLSRegisteredToSCP**](win32-tslicenseserver-islsregisteredtoscp.md)                 | Recupera se o servidor Área de Trabalho Remota licença está registrado como um ponto de conexão de serviço no Active Directory Domain Services.<br/>                                                                                               |
+| [**IsLSSecGrpGPEnabled**](islssecgrpgpenabled-win32-tslicenseserver.md)                 | Recupera se a configuração de política de grupo "grupo de segurança do servidor de licença" está habilitada no servidor Área de Trabalho Remota licença.<br/>                                                                                                        |
+| [**IsSecureAccessAllowed**](issecureaccessallowed-win32-tslicenseserver.md)             | Recupera se um servidor Host da Sessão RD pode solicitar licenças Serviços de Área de Trabalho Remota de acesso do cliente (CALs RDS) do servidor de Área de Trabalho Remota licença.<br/>                                                                |
+| [**IsTSCGroupPresent**](istscgrouppresent-win32-tslicenseserver.md)                     | Não há suporte para o método.<br/> **Windows Server 2008 R2 e Windows Server 2008:** Recupera se o grupo local Computadores Do Servidor de Terminal existe no servidor Área de Trabalho Remota licença.<br/>                              |
+| [**IsTSinTSCGroup**](istsintscgroup-win32-tslicenseserver.md)                           | Recupera se um servidor Host da Sessão RD é membro do grupo local Computadores Do Servidor terminal no servidor Área de Trabalho Remota licença.<br/>                                                                                         |
+| [**PublishLS**](publishls-win32-tslicenseserver.md)                                     | Publica o servidor Área de Trabalho Remota licença do AD DS.<br/>                                                                                                                                                                              |
+| [**ReactivateServer**](reactivateserver-win32-tslicenseserver.md)                       | Reativa o servidor Área de Trabalho Remota licença usando uma nova ID do Área de Trabalho Remota de licença que é obtida pelo telefone ou pela Internet.<br/>                                                                                     |
+| [**ReactivateServerAutomatic**](reactivateserverautomatic-win32-tslicenseserver.md)     | Reativa o servidor de Área de Trabalho Remota de licença pela Internet. As **propriedades FirstName** **e LastName** não devem estar vazias quando esse método é chamado ou o método falhará.<br/>                                              |
+| [**RegisterLSToSCP**](win32-tslicenseserver-registerlstoscp.md)                         | Registra o servidor Área de Trabalho Remota licença como um ponto de conexão de serviço no Active Directory Domain Services.<br/>                                                                                                                     |
+| [**RemoveLSfromTSLSGroup**](removelsfromtslsgroup-win32-tslicenseserver.md)             | Remove o servidor Área de Trabalho Remota licença do grupo Área de Trabalho Remota licenças em um controlador de domínio no mesmo domínio que o servidor de licença.<br/>                                                                           |
+| [**RemoveTSCGroup**](removetscgroup-win32-tslicenseserver.md)                           | Não há suporte para o método.<br/> **Windows Server 2008 R2 e Windows Server 2008:** Remove o grupo local Computadores Do Servidor de Terminal do servidor Área de Trabalho Remota licença.<br/>                                             |
+| [**UnpublishLS**](unpublishls-win32-tslicenseserver.md)                                 | Não publica um servidor Área de Trabalho Remota licença do AD DS.<br/>                                                                                                                                                                            |
+| [**UnRegisterLSFromSCP**](win32-tslicenseserver-unregisterlsfromscp.md)                 | Remove o servidor Área de Trabalho Remota licença como um ponto de conexão de serviço no Active Directory Domain Services.<br/>                                                                                                                       |
 
 
 
@@ -114,7 +114,7 @@ A classe **Win32 \_ TSLicenseServer** tem esses métodos.
 
 ### <a name="properties"></a>Propriedades
 
-A classe **Win32 \_ TSLicenseServer** tem essas propriedades.
+A **classe Win32 \_ TSLicenseServer** tem essas propriedades.
 
 <dl> <dt>
 
@@ -124,10 +124,10 @@ A classe **Win32 \_ TSLicenseServer** tem essas propriedades.
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
-Endereço do contato para o Licenciamento RD. Essa propriedade é usada quando o método [**ActivateServerAutomatic**](activateserverautomatic-win32-tslicenseserver.md) é chamado. (Essa propriedade é opcional ao usar o método **ActivateServerAutomatic** .)
+Endereço da rua do contato para Licenciamento de RD. Essa propriedade é usada quando [**o método ActivateServerAutomatic**](activateserverautomatic-win32-tslicenseserver.md) é chamado. (Essa propriedade é opcional ao usar o **método ActivateServerAutomatic.)**
 
 </dd> <dt>
 
@@ -137,10 +137,10 @@ Endereço do contato para o Licenciamento RD. Essa propriedade é usada quando o
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
-Cidade do contato para Licenciamento RD. Essa propriedade é usada quando o método [**ActivateServerAutomatic**](activateserverautomatic-win32-tslicenseserver.md) é chamado. (Essa propriedade é opcional ao usar o método **ActivateServerAutomatic** .)
+Cidade do contato para Licenciamento de RD. Essa propriedade é usada quando [**o método ActivateServerAutomatic**](activateserverautomatic-win32-tslicenseserver.md) é chamado. (Essa propriedade é opcional ao usar o **método ActivateServerAutomatic.)**
 
 </dd> <dt>
 
@@ -150,27 +150,27 @@ Cidade do contato para Licenciamento RD. Essa propriedade é usada quando o mét
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
-Empresa do contato para Licenciamento RD. Essa propriedade é usada (e obrigatória) quando o método [**ActivateServerAutomatic**](activateserverautomatic-win32-tslicenseserver.md) é chamado.
+Empresa do contato para Licenciamento de RD. Essa propriedade é usada (e necessária) quando [**o método ActivateServerAutomatic**](activateserverautomatic-win32-tslicenseserver.md) é chamado.
 
 </dd> <dt>
 
-**CountryRegion**
+**Countryregion**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
-País/região do contato para Licenciamento RD. Essa propriedade é usada (e obrigatória) quando o método [**ActivateServerAutomatic**](activateserverautomatic-win32-tslicenseserver.md) é chamado.
+País/região do contato para licenciamento de área de trabalho. Essa propriedade é usada (e necessária) quando [**o método ActivateServerAutomatic**](activateserverautomatic-win32-tslicenseserver.md) é chamado.
 
 </dd> <dt>
 
-**DatabasePath**
+**Databasepath**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
@@ -189,10 +189,10 @@ Caminho do banco de dados de licenciamento do RDS.
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
-Endereço de email do contato para o Licenciamento RD. Essa propriedade é usada quando os métodos [**ActivateServerAutomatic**](activateserverautomatic-win32-tslicenseserver.md), [**ReactivateServerAutomatic**](reactivateserverautomatic-win32-tslicenseserver.md)ou [**DeactivateServerAutomatic**](deactivateserverautomatic-win32-tslicenseserver.md) são chamados. (Essa propriedade é opcional para essas chamadas de método.)
+Endereço de email do contato para Licenciamento de RD. Essa propriedade é usada quando os [**métodos ActivateServerAutomatic**](activateserverautomatic-win32-tslicenseserver.md), [**ReactivateServerAutomatic**](reactivateserverautomatic-win32-tslicenseserver.md)ou [**DeactivateServerAutomatic**](deactivateserverautomatic-win32-tslicenseserver.md) são chamados. (Essa propriedade é opcional para essas chamadas de método.)
 
 </dd> <dt>
 
@@ -202,10 +202,10 @@ Endereço de email do contato para o Licenciamento RD. Essa propriedade é usada
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
-Nome do contato para o Licenciamento RD. Essa propriedade é usada (e obrigatória) quando os métodos [**ActivateServerAutomatic**](activateserverautomatic-win32-tslicenseserver.md), [**ReactivateServerAutomatic**](reactivateserverautomatic-win32-tslicenseserver.md)ou [**DeactivateServerAutomatic**](deactivateserverautomatic-win32-tslicenseserver.md) são chamados.
+Nome do contato para Licenciamento de RD. Essa propriedade é usada (e necessária) quando os métodos [**ActivateServerAutomatic**](activateserverautomatic-win32-tslicenseserver.md), [**ReactivateServerAutomatic**](reactivateserverautomatic-win32-tslicenseserver.md)ou [**DeactivateServerAutomatic**](deactivateserverautomatic-win32-tslicenseserver.md) são chamados.
 
 </dd> <dt>
 
@@ -215,10 +215,10 @@ Nome do contato para o Licenciamento RD. Essa propriedade é usada (e obrigatór
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
-Sobrenome do contato para o Licenciamento RD. Essa propriedade é usada (e obrigatória) quando os métodos [**ActivateServerAutomatic**](activateserverautomatic-win32-tslicenseserver.md), [**ReactivateServerAutomatic**](reactivateserverautomatic-win32-tslicenseserver.md)ou [**DeactivateServerAutomatic**](deactivateserverautomatic-win32-tslicenseserver.md) são chamados.
+Sobrenome do contato para Licenciamento de RD. Essa propriedade é usada (e necessária) quando os métodos [**ActivateServerAutomatic**](activateserverautomatic-win32-tslicenseserver.md), [**ReactivateServerAutomatic**](reactivateserverautomatic-win32-tslicenseserver.md)ou [**DeactivateServerAutomatic**](deactivateserverautomatic-win32-tslicenseserver.md) são chamados.
 
 </dd> <dt>
 
@@ -228,10 +228,10 @@ Sobrenome do contato para o Licenciamento RD. Essa propriedade é usada (e obrig
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
-Unidade organizacional do contato para Licenciamento RD. Essa propriedade é usada quando o [**ActivateServerAutomatic**](activateserverautomatic-win32-tslicenseserver.md) é chamado. (Essa propriedade é opcional ao usar o método **ActivateServerAutomatic** .)
+Unidade organizacional do contato para Licenciamento de RD. Essa propriedade é usada quando [**ActivateServerAutomatic**](activateserverautomatic-win32-tslicenseserver.md) é chamado. (Essa propriedade é opcional ao usar o **método ActivateServerAutomatic.)**
 
 </dd> <dt>
 
@@ -241,10 +241,10 @@ Unidade organizacional do contato para Licenciamento RD. Essa propriedade é usa
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
-Código postal do contato para o Licenciamento RD. Essa propriedade é usada quando o método [**ActivateServerAutomatic**](activateserverautomatic-win32-tslicenseserver.md) é chamado. (Essa propriedade é opcional ao usar o método **ActivateServerAutomatic** .)
+Código postal do contato para licenciamento de área de trabalho. Essa propriedade é usada quando [**o método ActivateServerAutomatic**](activateserverautomatic-win32-tslicenseserver.md) é chamado. (Essa propriedade é opcional ao usar o **método ActivateServerAutomatic.)**
 
 </dd> <dt>
 
@@ -257,20 +257,20 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-ID do produto do servidor de licença de Área de Trabalho Remota.
+ID do produto do servidor Área de Trabalho Remota licença.
 
 </dd> <dt>
 
-**ServerRole**
+**Serverrole**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Descreve o escopo de licenciamento para o servidor de licença Área de Trabalho Remota dentro da organização.
+Descreve o escopo de licenciamento para o Área de Trabalho Remota de licenças na organização.
 
 <dt>
 
@@ -303,10 +303,10 @@ Host da Sessão RD servidores de vários domínios na mesma floresta podem desco
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
-Estado do contato para o Licenciamento RD. Essa propriedade é usada quando o método [**ActivateServerAutomatic**](activateserverautomatic-win32-tslicenseserver.md) é chamado. (Essa propriedade é opcional ao usar o método **ActivateServerAutomatic** .)
+Estado do contato para Licenciamento de RD. Essa propriedade é usada quando [**o método ActivateServerAutomatic**](activateserverautomatic-win32-tslicenseserver.md) é chamado. (Essa propriedade é opcional ao usar o **método ActivateServerAutomatic.)**
 
 </dd> <dt>
 
@@ -319,7 +319,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Versão do servidor de licença do Área de Trabalho Remota.
+Versão do servidor Área de Trabalho Remota licença.
 
 </dd> <dt>
 
@@ -332,17 +332,17 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Número de versão do servidor de licença de Área de Trabalho Remota.
+Número de versão do servidor Área de Trabalho Remota licença.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-Essa classe é uma classe [singleton](/windows/desktop/WmiSdk/standard-wmi-qualifiers) e pode ter apenas uma instância. Todos os métodos contidos nessa classe são estáticos.
+Essa classe é uma [classe singleton](/windows/desktop/WmiSdk/standard-wmi-qualifiers) e pode ter apenas uma instância. Todos os métodos contidos nessa classe são estáticos.
 
-Você deve ser um membro do grupo Administradores para usar essa classe. Se o chamador não for um membro do grupo Administradores, as propriedades retornadas estarão vazias.
+Você deve ser um membro do grupo Administradores para usar essa classe. Se o chamador não for membro do grupo Administradores, as propriedades retornadas estarão vazias.
 
-Os arquivos de formato MOF (MOF) contêm as definições de classes de Instrumentação de Gerenciamento do Windows (WMI). Os arquivos MOF não são instalados como parte do SDK (Software Development Kit) do Microsoft Windows. Eles são instalados no servidor quando você adiciona a função associada usando o Gerenciador do Servidor. Para obter mais informações sobre arquivos MOF, consulte [formato MOF (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
+arquivos Managed Object Format (MOF) contêm as definições para classes WMI (Instrumentação de Gerenciamento de Windows). Os arquivos MOF não são instalados como parte do Microsoft Windows Software Development Kit (SDK). Eles são instalados no servidor quando você adiciona a função associada usando o Gerenciador do Servidor. Para obter mais informações sobre arquivos MOF, [consulte Managed Object Format (MOF).](/windows/desktop/WmiSdk/managed-object-format--mof-)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -353,7 +353,7 @@ Os arquivos de formato MOF (MOF) contêm as definições de classes de Instrumen
 | Cliente mínimo com suporte<br/> | Nenhum compatível<br/>                                                                 |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                            |
 | Namespace<br/>                | Raiz\\CIMv2<br/>                                                                    |
-| MOF<br/>                      | <dl> <dt>TlsWmiProv. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>TlsWmiProv.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>TlsWmiProv.dll</dt> </dl> |
 
 
@@ -362,16 +362,16 @@ Os arquivos de formato MOF (MOF) contêm as definições de classes de Instrumen
 
 <dl> <dt>
 
-[**\_TSIssuedLicense Win32**](win32-tsissuedlicense.md)
+[**Win32 \_ TSIssuedLicense**](win32-tsissuedlicense.md)
 </dt> <dt>
 
-[**\_TSLicenseKeyPack Win32**](win32-tslicensekeypack.md)
+[**Win32 \_ TSLicenseKeyPack**](win32-tslicensekeypack.md)
 </dt> <dt>
 
-[**\_TSLicenseReport Win32**](win32-tslicensereport.md)
+[**Win32 \_ TSLicenseReport**](win32-tslicensereport.md)
 </dt> <dt>
 
-[**\_TSLicenseReportEntry Win32**](win32-tslicensereportentry.md)
+[**Win32 \_ TSLicenseReportEntry**](win32-tslicensereportentry.md)
 </dt> </dl>
 
  

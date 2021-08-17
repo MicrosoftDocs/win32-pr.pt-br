@@ -1,6 +1,6 @@
 ---
-title: Constantes de enumeração (WSManDisp. h)
-description: A enumeração contém constantes, conforme listado na lista a seguir, usada no parâmetro flags por chamadas para a enumeração Session. Enumerate e IWSManSession.
+title: Constantes de enumeração (WSManDisp.h)
+description: A enumeração contém constantes, conforme listado na lista a seguir, usadas no parâmetro flags por chamadas para Session.Enumerate e IWSManSession Enumerate.
 ms.assetid: c0f2763b-a549-43d5-84a6-8cebf33a1ea2
 ms.tgt_platform: multiple
 topic_type:
@@ -19,18 +19,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e422f688fea992ee2d9b1d0d25af00a1d24ad798
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f9c8182352d2ebf3763a38f74dd6f100dc836e88cfa10212ffaa971048ebd1aa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104369420"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118113258"
 ---
 # <a name="enumeration-constants"></a>Constantes de enumeração
 
-A enumeração **\_ \_ WSManEnumFlags** contém constantes, conforme listado na lista a seguir, usada no parâmetro *flags* por chamadas para [**Session. Enumerate**](session-enumerate.md) e [**IWSManSession:: Enumerate**](/windows/desktop/api/WSManDisp/nf-wsmandisp-iwsmansession-enumerate).
+A enumeração **\_ \_ WSManEnumFlags** contém constantes, conforme listada na lista a seguir, usadas no parâmetro *flags* por chamadas para [**Session.Enumerate**](session-enumerate.md) e [**IWSManSession::Enumerate**](/windows/desktop/api/WSManDisp/nf-wsmandisp-iwsmansession-enumerate).
 
-Lembre-se de que **WSManFlagReturnObject** e **WSManFlagHierarchyDeep** são o padrão se o parâmetro *flags* não for especificado.
+Esteja ciente de **que WSManFlagReturnObject** e **WSManFlagHierarchyDeep** são o padrão se o parâmetro *flags* não for especificado.
 
 <dl> <dt>
 
@@ -42,9 +42,9 @@ Lembre-se de que **WSManFlagReturnObject** e **WSManFlagHierarchyDeep** são o p
 
 
 
-Os lotes contêm as instâncias XML solicitadas. Esse é o valor padrão para o parâmetro Flag.
+Os lotes contêm as instâncias XML solicitadas. Esse é o valor padrão para o parâmetro de sinalizador.
 
-O método de script associado é [**WSMan. EnumerationFlagReturnObject**](wsman-enumerationflagreturnobject.md) e o método C++ é [**IWSManEx. EnumerationFlagReturnObject**](/windows/desktop/api/WSManDisp/nf-wsmandisp-iwsmanex-enumerationflagreturnobject).
+O método de script associado é [**WSMan.EnumerationFlagReturnObject**](wsman-enumerationflagreturnobject.md) e o método C++ [**é IWSManEx.EnumerationFlagReturnObject**](/windows/desktop/api/WSManDisp/nf-wsmandisp-iwsmanex-enumerationflagreturnobject).
 
 
 </dt> </dl> </dd> <dt>
@@ -57,11 +57,11 @@ O método de script associado é [**WSMan. EnumerationFlagReturnObject**](wsman-
 
 
 
-Esse sinalizador controla como o parâmetro de *filtro* na chamada para [**Session. Enumerate**](session-enumerate.md) é interpretado pelo WinRM.
+Esse sinalizador controla como o *parâmetro de* filtro na chamada para [**Session.Enumerate**](session-enumerate.md) é interpretado pelo WinRM.
 
-O formato do filtro pode ser um fragmento XML ou uma cadeia de caracteres de texto sem formatação. O formato é determinado pelo [*dialeto de filtro*](windows-remote-management-glossary.md) do [*filtro*](windows-remote-management-glossary.md) usado na chamada para [**Session. enumerar**](session-enumerate.md) ou [**IWSManSession:: enumerar**](/windows/desktop/api/WSManDisp/nf-wsmandisp-iwsmansession-enumerate), que é específica para a operação executada.
+O formato do filtro pode ser um fragmento XML ou uma cadeia de caracteres de texto sem formatação. O formato é [](windows-remote-management-glossary.md) determinado pelo [](windows-remote-management-glossary.md) dialeto de filtro do filtro usado na chamada para [**Session.Enumerate**](session-enumerate.md) ou [**IWSManSession::Enumerate**](/windows/desktop/api/WSManDisp/nf-wsmandisp-iwsmansession-enumerate), que é específico para a operação executada.
 
-Se o parâmetro *dialeto* não for especificado, o WinRM tentará determinar o dialeto com base no primeiro caractere do filtro. Se o primeiro caractere for <, mas o filtro não for, na verdade, um fragmento XML, esse sinalizador deverá ser definido. Por exemplo, um filtro no formato a seguir requer que você defina **WSManFlagNonXmlText** para que o filtro seja interpretado corretamente:
+Se o *parâmetro de* dialeto não for especificado, o WinRM tentará determinar o dialeto com base no primeiro caractere do filtro. Se o primeiro caractere for <, mas o filtro não for realmente um fragmento XML, esse sinalizador deverá ser definido. Por exemplo, um filtro no seguinte formato requer que você defina **WSManFlagNonXmlText** para que o filtro seja interpretado corretamente:
 
 `<25 && > 1`
 
@@ -69,11 +69,11 @@ Se o filtro for um fragmento XML, esse sinalizador não será necessário porque
 
 `<filter>select * from aDataStructure</filter>`
 
-Se o filtro estiver em texto sem formatação que não comece com <, esse sinalizador não será necessário. Por exemplo,
+Se o filtro estiver em texto sem-texto que não começa com <, esse sinalizador não será necessário. Por exemplo,
 
 `select * from aDataStructure`
 
-O método de script associado é [**WSMan. EnumerationFlagNonXmlText**](wsman-enumerationflagnonxmltext.md) e o método C++ é [**IWSManEx. EnumerationFlagNonXmlText**](/windows/desktop/api/WSManDisp/nf-wsmandisp-iwsmanex-enumerationflagnonxmltext).
+O método de script associado é [**WSMan.EnumerationFlagNonXmlText**](wsman-enumerationflagnonxmltext.md) e o método C++ [**é IWSManEx.EnumerationFlagNonXmlText.**](/windows/desktop/api/WSManDisp/nf-wsmandisp-iwsmanex-enumerationflagnonxmltext)
 
 
 </dt> </dl> </dd> <dt>
@@ -86,9 +86,9 @@ O método de script associado é [**WSMan. EnumerationFlagNonXmlText**](wsman-en
 
 
 
-Os lotes contêm referências de ponto de extremidade (EPRs) para as instâncias XML correspondentes, mas não as instâncias reais.
+Os lotes contêm EPRs (referências de ponto de extremidade) para as instâncias XML correspondentes, mas não as instâncias reais.
 
-O método de script associado é [**WSMan. EnumerationFlagReturnEPR**](wsman-enumerationflagreturnepr.md) e o método C++ é [**IWSManEx. EnumerationFlagReturnEPR**](/windows/desktop/api/WSManDisp/nf-wsmandisp-iwsmanex-enumerationflagreturnepr).
+O método de script associado é [**WSMan.EnumerationFlagReturnEPR**](wsman-enumerationflagreturnepr.md) e o método C++ [**é IWSManEx.EnumerationFlagReturnEPR**](/windows/desktop/api/WSManDisp/nf-wsmandisp-iwsmanex-enumerationflagreturnepr).
 
 
 </dt> </dl> </dd> <dt>
@@ -101,9 +101,9 @@ O método de script associado é [**WSMan. EnumerationFlagReturnEPR**](wsman-enu
 
 
 
-Os lotes contêm as instâncias XML solicitadas e os EPRs correspondentes contidos em um elemento [*WSMan: Items*](windows-remote-management-glossary.md) .
+Os lotes contêm as instâncias XML solicitadas e os EPRs correspondentes contidos em um [*elemento wsman:Items.*](windows-remote-management-glossary.md)
 
-O método de script associado é [**WSMan. EnumerationFlagReturnObjectAndEPR**](wsman-enumerationflagreturnobjectandepr.md) e o método C++ é [**IWSManEx. EnumerationFlagReturnObjectAndEPR**](/windows/desktop/api/WSManDisp/nf-wsmandisp-iwsmanex-enumerationflagreturnobjectandepr).
+O método de script associado é [**WSMan.EnumerationFlagReturnObjectAndEPR**](wsman-enumerationflagreturnobjectandepr.md) e o método C++ [**é IWSManEx.EnumerationFlagReturnObjectAndEPR.**](/windows/desktop/api/WSManDisp/nf-wsmandisp-iwsmanex-enumerationflagreturnobjectandepr)
 
 
 </dt> </dl> </dd> <dt>
@@ -116,9 +116,9 @@ O método de script associado é [**WSMan. EnumerationFlagReturnObjectAndEPR**](
 
 
 
-As instâncias de classe derivadas são incluídas e são representadas de acordo com seus esquemas reais.
+As instâncias de classe derivada são incluídas e representadas de acordo com seus esquemas reais.
 
-O método de script associado é [**WSMan. EnumerationFlagHierarchyDeep**](wsman-enumerationflaghierarchydeep.md) e o método C++ é [**IWSManEx. EnumerationFlagHierarchyDeep**](/windows/desktop/api/WSManDisp/nf-wsmandisp-iwsmanex-enumerationflaghierarchydeep).
+O método de script associado é [**WSMan.EnumerationFlagHierarchyDeep**](wsman-enumerationflaghierarchydeep.md) e o método C++ [**é IWSManEx.EnumerationFlagHierarchyDeep.**](/windows/desktop/api/WSManDisp/nf-wsmandisp-iwsmanex-enumerationflaghierarchydeep)
 
 
 </dt> </dl> </dd> <dt>
@@ -131,9 +131,9 @@ O método de script associado é [**WSMan. EnumerationFlagHierarchyDeep**](wsman
 
 
 
-As instâncias de classe derivadas são excluídas. Somente as instâncias do tipo solicitado são mostradas.
+Instâncias de classe derivadas são excluídas. Somente as instâncias do tipo solicitado são mostradas.
 
-O método de script associado é [**WSMan. EnumerationFlagHierarchyShallow**](wsman-enumerationflaghierarchyshallow.md) e o método C++ é [**IWSManEx. EnumerationFlagHierarchyShallow**](/windows/desktop/api/WSManDisp/nf-wsmandisp-iwsmanex-enumerationflaghierarchyshallow).
+O método de script associado é [**WSMan.EnumerationFlagHierarchyShallow**](wsman-enumerationflaghierarchyshallow.md) e o método C++ [**é IWSManEx.EnumerationFlagHierarchyShallow.**](/windows/desktop/api/WSManDisp/nf-wsmandisp-iwsmanex-enumerationflaghierarchyshallow)
 
 
 </dt> </dl> </dd> <dt>
@@ -146,9 +146,9 @@ O método de script associado é [**WSMan. EnumerationFlagHierarchyShallow**](ws
 
 
 
-As instâncias de classe derivadas são incluídas e são representadas de acordo com o esquema de classe base. As propriedades definidas na classe derivada não são mostradas.
+As instâncias de classe derivada são incluídas e representadas de acordo com o esquema de classe base. As propriedades definidas na classe derivada não são mostradas.
 
-O método de script associado é [**WSMan. EnumerationFlagHierarchyDeepBasePropsOnly**](wsman-enumerationflaghierarchydeepbasepropsonly.md) e o método C++ é [**IWSManEx. EnumerationFlagHierarchyDeepBasePropsOnly**](/windows/desktop/api/WSManDisp/nf-wsmandisp-iwsmanex-enumerationflaghierarchydeepbasepropsonly).
+O método de script associado é [**WSMan.EnumerationFlagHierarchyDeepBasePropsOnly**](wsman-enumerationflaghierarchydeepbasepropsonly.md) e o método C++ [**é IWSManEx.EnumerationFlagHierarchyDeepBasePropsOnly.**](/windows/desktop/api/WSManDisp/nf-wsmandisp-iwsmanex-enumerationflaghierarchydeepbasepropsonly)
 
 
 </dt> </dl> </dd> </dl>
@@ -161,8 +161,8 @@ O método de script associado é [**WSMan. EnumerationFlagHierarchyDeepBaseProps
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                 |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                           |
-| parâmetro<br/>                   | <dl> <dt>WSManDisp. h</dt> </dl>   |
-| INSERI<br/>                      | <dl> <dt>WSManDisp. idl</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>WSManDisp.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>WSManDisp.idl</dt> </dl> |
 
 
 
@@ -170,7 +170,7 @@ O método de script associado é [**WSMan. EnumerationFlagHierarchyDeepBaseProps
 
 <dl> <dt>
 
-[Constantes e enumerações do WinRM](winrm-constants-and-enumerations.md)
+[Constantes e enumerações winRM](winrm-constants-and-enumerations.md)
 </dt> <dt>
 
 [Enumerando ou listando todas as instâncias de um recurso](enumerating-or-listing-all-instances-of-a-resource.md)

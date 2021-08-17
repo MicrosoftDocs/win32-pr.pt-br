@@ -1,5 +1,5 @@
 ---
-description: Os exemplos de código a seguir demonstram a implementação de um manipulador de eventos simples, o registro da interface de evento principal da TAPI, a configuração do filtro de eventos e o registro de notificações de chamada.
+description: Os exemplos de código a seguir demonstram a implementação de um manipulador de eventos simples, o registro da interface de evento TAPI principal, a configuração do filtro de evento e o registro para notificações de chamada.
 ms.assetid: e7662a26-d7b2-4bff-aa72-e38b58bc15df
 title: Registrar eventos
 ms.topic: article
@@ -13,14 +13,14 @@ ms.locfileid: "117761173"
 ---
 # <a name="register-events"></a>Registrar eventos
 
-Os exemplos de código a seguir demonstram a implementação de um manipulador de eventos simples, o registro da interface de evento principal da TAPI, a configuração do filtro de eventos e o registro de notificações de chamada.
+Os exemplos de código a seguir demonstram a implementação de um manipulador de eventos simples, o registro da interface de evento TAPI principal, a configuração do filtro de evento e o registro para notificações de chamada.
 
-O manipulador de eventos mostrado é um exemplo em vez de um requisito. O objetivo principal é garantir que o thread que recebe eventos faça o processamento mínimo antes de passar o trabalho para outro thread. Isso impede que o manipulador de eventos se torne um problema de desempenho em situações de alta carga de eventos.
+O manipulador de eventos mostrado é um exemplo em vez de um requisito. A meta principal é garantir que o thread que recebe eventos faça processamento mínimo antes de passar o trabalho para outro thread. Isso impede que o manipulador de eventos se torne um problema de desempenho em situações de alta carga de eventos.
 
-Antes de usar este exemplo de código, você deve executar as operações em [inicializar TAPI](initialize-tapi.md) e [selecionar um endereço](select-an-address.md).
+Antes de usar este exemplo de código, você deve executar as operações em [Inicializar TAPI](initialize-tapi.md) [e Selecionar um Endereço](select-an-address.md).
 
 > [!Note]  
-> Este exemplo não tem a verificação de erros e as versões apropriadas para o código de produção.
+> Este exemplo não tem a verificação de erro e as versões apropriadas para o código de produção.
 
  
 
@@ -130,16 +130,16 @@ hr = gpTapi->RegisterCallNotifications(
 
 <dl> <dt>
 
-[**Evento ITTAPIEventNotification::**](/windows/desktop/api/Tapi3if/nf-tapi3if-ittapieventnotification-event)
+[**ITTAPIEventNotification::Event**](/windows/desktop/api/Tapi3if/nf-tapi3if-ittapieventnotification-event)
 </dt> <dt>
 
-[**\_evento TAPI**](/windows/desktop/api/Tapi3if/ne-tapi3if-tapi_event)
+[**EVENTO \_ TAPI**](/windows/desktop/api/Tapi3if/ne-tapi3if-tapi_event)
 </dt> <dt>
 
-[**ITTAPI::p UT \_ EventFilter**](/windows/desktop/api/tapi3if/nf-tapi3if-ittapi-put_eventfilter)
+[**ITTAPI::put \_ EventFilter**](/windows/desktop/api/tapi3if/nf-tapi3if-ittapi-put_eventfilter)
 </dt> <dt>
 
-[\_Constantes TAPIMEDIATYPE](tapimediatype--constants.md)
+[Constantes TAPIMEDIATYPE \_](tapimediatype--constants.md)
 </dt> <dt>
 
 [**ITTAPI::RegisterCallNotifications**](/windows/desktop/api/tapi3if/nf-tapi3if-ittapi-registercallnotifications)

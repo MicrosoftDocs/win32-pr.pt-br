@@ -1,6 +1,6 @@
 ---
-title: Atributo preenchido da VML
-description: Atributo preenchido da VML
+title: Atributo preenchido por VML
+description: Atributo preenchido por VML
 ms.assetid: c5a71a8d-5310-4e58-9153-c5cc64b0a5e0
 ms.topic: article
 ms.date: 05/31/2018
@@ -11,16 +11,16 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118346600"
 ---
-# <a name="vml-filled-attribute"></a>Atributo preenchido da VML
+# <a name="vml-filled-attribute"></a>Atributo preenchido por VML
 
-este tópico descreve a VML, um recurso que foi preterido a partir do Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem de VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
+Este tópico descreve o VML, um recurso que foi preterido a partir Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem do VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
 
 > [!Note]  
-> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [conteúdo arquivado](/previous-versions/windows/internet-explorer/ie-developer/). para obter informações, recomendações e orientações sobre a versão atual do Windows Internet explorer, consulte [internet explorer developer Center](https://msdn.microsoft.com/ie/).
+> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [Conteúdo arquivado.](/previous-versions/windows/internet-explorer/ie-developer/) Para obter informações, recomendações e diretrizes sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center.](https://msdn.microsoft.com/ie/)
 
  
 
-Determina se o caminho fechado será preenchido. Leitura/gravação. **VgTriState**.
+Determina se o caminho fechado será preenchido. Leitura/gravação. **VgTriState.**
 
 **Aplica-se a**
 
@@ -28,23 +28,23 @@ Determina se o caminho fechado será preenchido. Leitura/gravação. **VgTriStat
 
 **Sintaxe de marca**
 
-<v: *Element* preenchida = " *expression* " >
+<v: *elemento* filled=" *expressão* ">
 
 **Sintaxe do script**
 
-*Element* . preenchida = "*expression*"
+*expressão* element .filled=""
 
-*expressão* = de *elemento*. preenchido
+*expressão* = *elemento*.filled
 
 **Comentários**
 
-O valor é duplicado a partir do atributo **on** do elemento [Fill](msdn-online-vml-fill-element.md) .
+O valor é duplicado do **atributo On** do [elemento](msdn-online-vml-fill-element.md) Fill.
 
-*Atributo padrão da VML*
+*Atributo padrão VML*
 
 **Exemplo**
 
-O caminho da forma é preenchido.
+O caminho de forma é preenchido.
 
 
 ```HTML
@@ -58,7 +58,7 @@ O caminho da forma é preenchido.
 
 
 
-[Exemplo de atributo preenchido](/previous-versions/bb229669(v=vs.85)). (Requer o Microsoft Internet Explorer 5 ou superior.)
+[Exemplo de atributo preenchido.](/previous-versions/bb229669(v=vs.85)) (Requer o Microsoft Internet Explorer 5 ou superior.)
 
  
 

@@ -1,19 +1,19 @@
 ---
 description: A finalidade do teste de clique é determinar se o cursor está sobre um determinado objeto, como um ícone ou um botão.
 ms.assetid: 9776b73e-191e-4a8e-9abe-e485ffed954c
-title: Teste de clique com uma região
+title: Teste de acerto com uma região
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 24913d8d890e3e1ded87eb48e2d52f1726663a03
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ff0673466bc368c9288765b1c7e6f460716d8d40674802a0977690a7ef79b58b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104988867"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117885394"
 ---
-# <a name="hit-testing-with-a-region"></a>Teste de clique com uma região
+# <a name="hit-testing-with-a-region"></a>Teste de acerto com uma região
 
-A finalidade do teste de clique é determinar se o cursor está sobre um determinado objeto, como um ícone ou um botão. O exemplo a seguir cria uma região com formato de mais, formando a União de duas regiões retangulares. Suponha que o **ponto** da variável contenha o local do clique mais recente. O código verifica se o **ponto** está na região com formato de mais. Se o **ponto** estiver na região (um pressionamento), a região será preenchida com um pincel vermelho opaco. Caso contrário, a região será preenchida com um pincel vermelho semitransparente.
+A finalidade do teste de clique é determinar se o cursor está sobre um determinado objeto, como um ícone ou um botão. O exemplo a seguir cria uma região em forma de a mais, formando a união de duas regiões retangulares. Suponha que o ponto **de variável** contém o local do clique mais recente. O código verifica se o **ponto está** na região em forma de a mais. Se **o** ponto estiver na região (um acerto), a região será preenchida com um pincel vermelho opaco. Caso contrário, a região será preenchida com um pincel vermelho semitransparente.
 
 
 ```

@@ -18,17 +18,17 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 9f50d30b2edeca716895d8dd2339d659f0e1382f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ff0f704c30737d6cfc2d8bd823da8207e8d7d8c3fb4458687baf8bc400718304
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103826928"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117703844"
 ---
 # <a name="jetsetcolumndefaultvalue-function"></a>Função JetSetColumnDefaultValue
 
 
-_**Aplica-se a:** Windows | Windows Server_
+_**Aplica-se a:** Windows | Windows Servidor_
 
 ## <a name="jetsetcolumndefaultvalue-function"></a>Função JetSetColumnDefaultValue
 
@@ -78,7 +78,7 @@ Reservado para uso futuro.
 
 ### <a name="return-value"></a>Valor Retornado
 
-Essa função retorna o tipo de dados [JET_ERR](./jet-err.md) com um dos códigos de retorno a seguir. Para obter mais informações sobre os possíveis erros do ESE, consulte [erros do mecanismo de armazenamento extensível](./extensible-storage-engine-errors.md) e [parâmetros de tratamento de erros](./error-handling-parameters.md).
+Essa função retorna o tipo de dados [JET_ERR](./jet-err.md) com um dos códigos de retorno a seguir. para obter mais informações sobre os possíveis erros do ESE, consulte [erros do mecanismo de Armazenamento extensível](./extensible-storage-engine-errors.md) e [parâmetros de tratamento de erros](./error-handling-parameters.md).
 
 <table>
 <colgroup>
@@ -115,7 +115,7 @@ Essa função retorna o tipo de dados [JET_ERR](./jet-err.md) com um dos código
 </tr>
 <tr class="even">
 <td><p>JET_errInstanceUnavailable</p></td>
-<td><p>Não é possível concluir a operação porque a instância associada à sessão encontrou um erro fatal que exige que o acesso a todos os dados seja revogado para proteger a integridade desses dados. Esse erro só será retornado pelo Windows XP e por versões posteriores.</p></td>
+<td><p>Não é possível concluir a operação porque a instância associada à sessão encontrou um erro fatal que exige que o acesso a todos os dados seja revogado para proteger a integridade desses dados. esse erro só será retornado pelo Windows XP e versões posteriores.</p></td>
 </tr>
 <tr class="odd">
 <td><p>JET_errInvalidDatabaseId</p></td>
@@ -157,12 +157,12 @@ Essa função retorna o tipo de dados [JET_ERR](./jet-err.md) com um dos código
 </tr>
 <tr class="odd">
 <td><p>JET_errSessionSharingViolation</p></td>
-<td><p>A mesma sessão não pode ser usada para mais de um thread ao mesmo tempo. Esse erro só será retornado pelo Windows XP e por versões posteriores.</p></td>
+<td><p>A mesma sessão não pode ser usada para mais de um thread ao mesmo tempo. esse erro só será retornado pelo Windows XP e versões posteriores.</p></td>
 </tr>
 <tr class="even">
 <td><p>JET_errTableInUse</p></td>
 <td><p>Esta tabela especificada está em uso por outra sessão.</p>
-<p><strong>JetSetColumnDefaultValue</strong> requer acesso exclusivo a uma tabela para alterar o valor padrão da coluna para versões anteriores ao Windows Server 2003.</p></td>
+<p>o <strong>JetSetColumnDefaultValue</strong> requer acesso exclusivo a uma tabela para alterar o valor padrão da coluna para versões anteriores ao Windows Server 2003.</p></td>
 </tr>
 <tr class="odd">
 <td><p>JET_errTermInProgress</p></td>
@@ -170,7 +170,7 @@ Essa função retorna o tipo de dados [JET_ERR](./jet-err.md) com um dos código
 </tr>
 <tr class="even">
 <td><p>JET_errTransReadOnly</p></td>
-<td><p>É ilegal tentar uma atualização quando dentro do escopo de uma transação somente leitura. Uma transação somente leitura é uma transação que foi iniciada usando uma chamada para <a href="gg269268(v=exchg.10).md">JetBeginTransaction2</a> com JET_bitTransactionReadOnly. Esse erro só será retornado pelo Windows XP e por versões posteriores.</p></td>
+<td><p>É ilegal tentar uma atualização quando dentro do escopo de uma transação somente leitura. Uma transação somente leitura é uma transação que foi iniciada usando uma chamada para <a href="gg269268(v=exchg.10).md">JetBeginTransaction2</a> com JET_bitTransactionReadOnly. esse erro só será retornado pelo Windows XP e versões posteriores.</p></td>
 </tr>
 <tr class="odd">
 <td><p>JET_errWriteConflict</p></td>
@@ -200,11 +200,11 @@ O mecanismo de banco de dados truncará silenciosamente o valor padrão de uma c
 <tbody>
 <tr class="odd">
 <td><p><strong>Cliente</strong></p></td>
-<td><p>Requer o Windows Vista, o Windows XP ou o Windows 2000 Professional.</p></td>
+<td><p>requer o Windows Vista, Windows XP ou Windows 2000 Professional.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Servidor</strong></p></td>
-<td><p>Requer o Windows Server 2008, o Windows Server 2003 ou o Windows 2000 Server.</p></td>
+<td><p>requer o Windows server 2008, Windows server 2003 ou Windows servidor 2000.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Cabeçalho</strong></p></td>

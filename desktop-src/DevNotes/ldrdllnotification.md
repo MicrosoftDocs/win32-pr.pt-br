@@ -13,20 +13,20 @@ api_name:
 api_type:
 - UserDefined
 api_location: ''
-ms.openlocfilehash: e29cd7b17c634250f56cbafcf86379449ac88199
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: e1e9bea21cd4e21ca7549ce34343b42c50b293471e69576d7c1164f92a371c62
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103826117"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118004101"
 ---
 # <a name="ldrdllnotification-callback-function"></a>Função de retorno de chamada LdrDllNotification
 
 \[Essa função pode ser alterada ou removida do Windows sem aviso prévio.\]
 
-Uma função de retorno de chamada de notificação especificada com a função [**LdrRegisterDllNotification**](ldrregisterdllnotification.md) . O carregador chama essa função quando uma DLL é carregada pela primeira vez.
+Uma função de retorno de chamada de notificação especificada com a [**função LdrRegisterDllNotification.**](ldrregisterdllnotification.md) O carregador chama essa função quando uma DLL é carregada pela primeira vez.
 
-**AVISO:** Não é seguro que a função de retorno de chamada de notificação chame funções em qualquer DLL.
+**Aviso:** Não é seguro para a função de retorno de chamada de notificação chamar funções em qualquer DLL.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -45,7 +45,7 @@ VOID CALLBACK LdrDllNotification(
 
 <dl> <dt>
 
-*NotificationReason* \[ no\]
+*NotificationReason* \[ Em\]
 </dt> <dd>
 
 O motivo pelo qual a função de retorno de chamada de notificação foi chamada. Esse parâmetro pode usar um dos valores a seguir.
@@ -54,8 +54,8 @@ O motivo pelo qual a função de retorno de chamada de notificação foi chamada
 
 | Valor                                                                                                                                                                                                                                                                                        | Significado                                                                                                                               |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="LDR_DLL_NOTIFICATION_REASON_LOADED"></span><span id="ldr_dll_notification_reason_loaded"></span><dl> <dt>**LDR \_ Motivo da notificação de DLL \_ \_ \_ carregado**</dt> <dt>1</dt> </dl>       | A DLL foi carregada. O parâmetro *NotificationData* aponta para a estrutura de dados de notificação de uma **\_ dll LDR \_ carregada \_ \_** . <br/>     |
-| <span id="LDR_DLL_NOTIFICATION_REASON_UNLOADED"></span><span id="ldr_dll_notification_reason_unloaded"></span><dl> <dt>**LDR \_ Motivo da notificação de DLL \_ \_ \_ descarregado**</dt> <dt>2</dt> </dl> | A DLL foi descarregada. O parâmetro *NotificationData* aponta para uma estrutura de **\_ \_ \_ \_ dados de notificação descarregada da DLL de LDR** . <br/> |
+| <span id="LDR_DLL_NOTIFICATION_REASON_LOADED"></span><span id="ldr_dll_notification_reason_loaded"></span><dl> <dt>**LDR \_ MOTIVO DA NOTIFICAÇÃO DE DLL \_ \_ \_ CARREGADO**</dt> <dt>1</dt> </dl>       | A DLL foi carregada. O *parâmetro NotificationData* aponta para uma estrutura de DADOS DE NOTIFICAÇÃO CARREGADA **de \_ DLL \_ \_ \_ LDR.** <br/>     |
+| <span id="LDR_DLL_NOTIFICATION_REASON_UNLOADED"></span><span id="ldr_dll_notification_reason_unloaded"></span><dl> <dt>**LDR \_ MOTIVO DA NOTIFICAÇÃO DE DLL \_ \_ \_ DESCARREGADO**</dt> <dt>2</dt> </dl> | A DLL foi descarregada. O *parâmetro NotificationData* aponta para uma estrutura de DADOS DE NOTIFICAÇÃO **\_ \_ DESCARREGADA \_ \_ de DLL LDR.** <br/> |
 
 
 
@@ -63,10 +63,10 @@ O motivo pelo qual a função de retorno de chamada de notificação foi chamada
 
 </dd> <dt>
 
-*NotificationData* \[ no\]
+*NotificationData* \[ Em\]
 </dt> <dd>
 
-Um ponteiro para uma constante **de \_ \_ notificação de dll DDL de LDR** que contém dados de notificação. Essa União tem a seguinte definição:
+Um ponteiro para uma união **constante de NOTIFICAÇÃO \_ de DLL \_ LDR** que contém dados de notificação. Essa união tem a seguinte definição:
 
 ``` syntax
 typedef union _LDR_DLL_NOTIFICATION_DATA {
@@ -75,7 +75,7 @@ typedef union _LDR_DLL_NOTIFICATION_DATA {
 } LDR_DLL_NOTIFICATION_DATA, *PLDR_DLL_NOTIFICATION_DATA;
 ```
 
-A estrutura de **\_ dados de notificação da dll LDR \_ carregada \_ \_** tem a seguinte definição:
+A **estrutura de DADOS DE \_ NOTIFICAÇÃO CARREGADA de DLL \_ \_ \_ LDR** tem a seguinte definição:
 
 ``` syntax
 typedef struct _LDR_DLL_LOADED_NOTIFICATION_DATA {
@@ -87,7 +87,7 @@ typedef struct _LDR_DLL_LOADED_NOTIFICATION_DATA {
 } LDR_DLL_LOADED_NOTIFICATION_DATA, *PLDR_DLL_LOADED_NOTIFICATION_DATA;
 ```
 
-A estrutura de dados de notificação de a **dll de LDR \_ \_ descarregada \_ \_** tem a seguinte definição:
+A **estrutura de DADOS DE \_ NOTIFICAÇÃO \_ DESCARREGADA \_ \_ da DLL LDR** tem a seguinte definição:
 
 ``` syntax
 typedef struct _LDR_DLL_UNLOADED_NOTIFICATION_DATA {
@@ -101,20 +101,20 @@ typedef struct _LDR_DLL_UNLOADED_NOTIFICATION_DATA {
 
 </dd> <dt>
 
-*Contexto* \[ do em, opcional\]
+*Contexto* \[ in, opcional\]
 </dt> <dd>
 
 Um ponteiro para dados de contexto para a função de retorno de chamada.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Essa função de retorno de chamada não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-A função de retorno de chamada de notificação é chamada antes que a vinculação dinâmica ocorra.
+A função de retorno de chamada de notificação é chamada antes da vinculação dinâmica ocorrer.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -122,8 +122,8 @@ A função de retorno de chamada de notificação é chamada antes que a vincula
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
 
 
 

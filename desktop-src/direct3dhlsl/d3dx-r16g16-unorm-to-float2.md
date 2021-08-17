@@ -1,9 +1,9 @@
 ---
-title: D3DX_R16G16_UNORM_to_FLOAT2 função
-description: Desempacotar dados do \_ \_ sombreador UNORM DXGI FORMAT R16G16 \_ para um XMFLOAT2.
+title: Função D3DX_R16G16_UNORM_to_FLOAT2
+description: Desempacota \_ o formato dxgi \_ R16G16 \_ UNORM dados do sombreador para um XMFLOAT2.
 ms.assetid: e82e2a47-f494-4085-8c02-1bac3088d29f
 keywords:
-- D3DX_R16G16_UNORM_to_FLOAT2 função HLSL
+- Função D3DX_R16G16_UNORM_to_FLOAT2 HLSL
 topic_type:
 - apiref
 api_name:
@@ -21,9 +21,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117727368"
 ---
-# <a name="d3dx_r16g16_unorm_to_float2-function"></a>Função D3DX \_ R16G16 \_ UNORM \_ para \_ FLOAT2
+# <a name="d3dx_r16g16_unorm_to_float2-function"></a>D3DX \_ R16G16 \_ UNORM \_ \_ FLOAT2 function
 
-Desempacotar dados do \_ \_ sombreador UNORM DXGI FORMAT R16G16 \_ para um XMFLOAT2.
+Desempacota \_ o formato dxgi \_ R16G16 \_ UNORM dados do sombreador para um XMFLOAT2.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,13 +40,13 @@ XMFLOAT2 D3DX_R16G16_UNORM_to_FLOAT2(
 *packedInput* 
 </dt> <dd>
 
-Os dados de sombreador empacotados.
+Os dados do sombreador embalado.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor retornado
 
-Os dados do sombreador desempacodados.
+Os dados do sombreador desempacotado.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,7 +54,7 @@ Os dados do sombreador desempacodados.
 
 | Requisito | Valor |
 |-------------------|--------------------------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>D3DX \_ DXGIFormatConvert.inl</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>D3DX \_ DXGIFormatConvert. inl</dt> </dl> |
 
 
 
@@ -65,7 +65,7 @@ Os dados do sombreador desempacodados.
 [Funções](format-conversion-functions.md)
 </dt> <dt>
 
-[Desempacotar e empacotar formato DXGI \_ para In-Place edição de imagem](dx-graphics-hlsl-unpacking-packing-dxgi-format.md)
+[Descompactando e empacotando o \_ formato dxgi para a edição de imagem In-Place](dx-graphics-hlsl-unpacking-packing-dxgi-format.md)
 </dt> </dl>
 
  

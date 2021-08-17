@@ -3,7 +3,7 @@ title: Mensagem de LVM_SORTITEMSEX (commctrl. h)
 description: Usa uma função de comparação definida pelo aplicativo para classificar os itens de um controle de exibição de lista. O índice de cada item é alterado para refletir a nova sequência. Você pode enviar essa mensagem explicitamente ou usando a \_ macro SortItemsEx do ListView.
 ms.assetid: eab2f6f5-68fd-4cb6-acf4-cb267ee40fdc
 keywords:
-- Controles de LVM_SORTITEMSEX de mensagens do Windows
+- controles de Windows de mensagem de LVM_SORTITEMSEX
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 99e524b00cb5ff1260eb68e7d86e185e5ae60c75
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ef492ff11980e764b33942f54c0732a64e799a94dde0e3d872ef0cb7bfb66c0a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104008935"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118170362"
 ---
 # <a name="lvm_sortitemsex-message"></a>\_Mensagem SORTITEMSEX LVM
 
@@ -43,7 +43,7 @@ Ponteiro para uma função de comparação definida pelo aplicativo. Ele é cham
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna **verdadeiro** se for bem-sucedido ou **false** caso contrário.
 
@@ -70,9 +70,9 @@ A função de comparação deve retornar um valor negativo se o primeiro item de
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 
 

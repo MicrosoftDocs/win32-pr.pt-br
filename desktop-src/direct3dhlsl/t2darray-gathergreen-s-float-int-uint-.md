@@ -1,9 +1,9 @@
 ---
-title: 'Função Texture2DArray:: GatherGreen (S, float, int, uint)'
-description: 'Retorna os componentes verdes dos quatro valores de Texel que seriam usados em uma operação de filtragem de bi-linear, juntamente com o status de mapeamento de bloco. | Função Texture2DArray:: GatherGreen (S, float, int, uint)'
+title: Função Texture2DArray::GatherGreen(S,float,int,uint)
+description: Retorna os componentes verdes dos quatro valores de texel que seriam usados em uma operação de filtragem bi-linear, juntamente com o status de mapeamento de peças. | Função Texture2DArray::GatherGreen(S,float,int,uint)
 ms.assetid: 90BEB8B3-F851-469B-B55A-E51CB8463CC8
 keywords:
-- HLSL da função GatherGreen
+- Função GatherGreen HLSL
 topic_type:
 - apiref
 api_name:
@@ -20,9 +20,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117723740"
 ---
-# <a name="texture2darraygathergreensfloatintuint-function"></a>Função Texture2DArray:: GatherGreen (S, float, int, uint)
+# <a name="texture2darraygathergreensfloatintuint-function"></a>Função Texture2DArray::GatherGreen(S,float,int,uint)
 
-Retorna os componentes verdes dos quatro valores de Texel que seriam usados em uma operação de filtragem de bi-linear, juntamente com o status de mapeamento de bloco.
+Retorna os componentes verdes dos quatro valores de texel que seriam usados em uma operação de filtragem bi-linear, juntamente com o status de mapeamento de peças.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -45,22 +45,22 @@ TemplateType GatherGreen(
 *S* \[ em\]
 </dt> <dd>
 
-Tipo: **samplestate**
+Tipo: **SamplerState**
 
 O índice de amostra baseado em zero.
 
 </dd> <dt>
 
-*Local* \[ do no\]
+*Localização* \[ Em\]
 </dt> <dd>
 
 Tipo: **float**
 
-As coordenadas de exemplo (u, v).
+As coordenadas de exemplo (u,v).
 
 </dd> <dt>
 
-*Deslocamento* \[ no\]
+*Deslocamento* \[ Em\]
 </dt> <dd>
 
 Tipo: **int**
@@ -69,12 +69,12 @@ O deslocamento aplicado às coordenadas de textura antes da amostragem.
 
 </dd> <dt>
 
-*Status* \[ do fora\]
+*Status* \[ out\]
 </dt> <dd>
 
 Tipo: **uint**
 
-O status da operação. Você não pode acessar o status diretamente; em vez disso, passe o status para a função intrínseca [**CheckAccessFullyMapped**](checkaccessfullymapped.md) . **CheckAccessFullyMapped** retornará **true** se todos os valores da operação de **amostra**, **coleta** ou **carregamento** correspondente acessaram os blocos mapeados em um recurso de bloco ao [lado](/windows/desktop/direct3d11/direct3d-11-2-features). Se qualquer valor tiver sido tirado de um bloco não mapeado, **CheckAccessFullyMapped** retornará **false**.
+O status da operação. Você não pode acessar o status diretamente; Em vez disso, passe o status para a [**função intrínseca CheckAccessFullyMapped.**](checkaccessfullymapped.md) **CheckAccessFullyMapped** retornará **TRUE** se todos os valores  da operação de **Exemplo,** **Coletar** ou Carregar correspondente acessarem blocos mapeados em um recurso lado a [lado.](/windows/desktop/direct3d11/direct3d-11-2-features) Se algum valor tiver sido retirado de um tile não mapeado, **CheckAccessFullyMapped** retornará **FALSE.**
 
 </dd> </dl>
 
@@ -86,13 +86,13 @@ Um valor de quatro componentes cujo tipo é o mesmo que o tipo de modelo.
 
 ## <a name="remarks"></a>Comentários
 
-Os exemplos de textura podem ser usados para interpolação bilinear.
+As amostras de textura podem ser usadas para interpolação bilinear.
 
 Essa função tem suporte para os seguintes tipos de sombreadores:
 
 
 
-| Vértice | Envoltória | Domínio | Geometry | 16x16 | Computação |
+| Vértice | Casco | Domínio | Geometry | Pixel | Computação |
 |--------|------|--------|----------|-------|---------|
 | x      | x    | x      | x        | x     | x       |
 

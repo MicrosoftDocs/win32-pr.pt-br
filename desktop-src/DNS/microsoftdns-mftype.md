@@ -18,12 +18,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e030f695e95ee736b1c53a345201e0bd1addfe3e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 4e0b2f2e08a7e9144f2fe2a6ac3e94578428109d7f3e712ac8c54752721f7592
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104085909"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118163207"
 ---
 # <a name="microsoftdns_mftype-class"></a>\_Classe MicrosoftDNS MFType
 

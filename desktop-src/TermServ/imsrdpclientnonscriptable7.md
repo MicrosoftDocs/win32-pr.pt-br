@@ -1,10 +1,10 @@
 ---
 title: Interface do IMsRdpClientNonScriptable7
-description: Fornece acesso às propriedades não programáveis da sessão remota de um cliente no controle ActiveX Área de Trabalho Remota. Deriva da interface IMsRdpClientNonScriptable6.
+description: Fornece acesso às propriedades nãoscriptáveis da sessão remota de um cliente no controle Área de Trabalho Remota ActiveX cliente. Deriva da interface IMsRdpClientNonScriptable6.
 ms.tgt_platform: multiple
 keywords:
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientNonScriptable7
-- Serviços de Área de Trabalho Remota da interface IMsRdpClientNonScriptable7, descrita
+- Interface IMsRdpClientNonScriptable7 Serviços de Área de Trabalho Remota
+- Interface IMsRdpClientNonScriptable7 Serviços de Área de Trabalho Remota , descrita
 topic_type:
 - apiref
 api_name:
@@ -15,18 +15,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 12/16/2020
-ms.openlocfilehash: 8becf3bbf66ea18b2df87069ba38bab44c56db70
-ms.sourcegitcommit: 04e801237156e90b48111d60bddf437f87f5cdfe
+ms.openlocfilehash: 01065ef73d1a23f0ac9416a39c4af74042c883e3b4d7f596cb95f6c01043f662
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "105791106"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117941103"
 ---
 # <a name="imsrdpclientnonscriptable7-interface"></a>Interface do IMsRdpClientNonScriptable7
 
-Fornece acesso às propriedades não programáveis da sessão remota de um cliente no controle ActiveX Área de Trabalho Remota. Deriva da interface [**IMsRdpClientNonScriptable6**](imsrdpclientnonscriptable6.md) . Os métodos desta interface só podem ser acessados por meio de vtable; Eles não estão disponíveis para uso em clientes programáveis.
+Fornece acesso às propriedades nãoscriptáveis da sessão remota de um cliente no controle Área de Trabalho Remota ActiveX cliente. Deriva da interface [**IMsRdpClientNonScriptable6.**](imsrdpclientnonscriptable6.md) Os métodos dessa interface só podem ser acessados por meio da vtable; eles não estão disponíveis para uso em clientes que podem ser scripts.
 
-Uma instância dessa interface é obtida chamando [**QueryInterface**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-queryinterface(q)) no objeto [**IMsTscAx**](imstscax-interface.md) , passando **\_ IMsRdpClientNonScriptable7 de IID**.
+Uma instância dessa interface é obtida chamando [**QueryInterface**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-queryinterface(q)) no objeto [**IMsTscAx,**](imstscax-interface.md) passando **\_ IMsRdpClientNonScriptable7**.
 
 ## <a name="members"></a>Membros
 
@@ -51,7 +51,7 @@ A interface **IMsRdpClientNonScriptable7** tem essas propriedades.
 | Propriedade         | Tipo de acesso           | Descrição            |
 |:-----------------|:----------------------|:-----------------------|
 | [**CameraRedirConfigCollection**](imsrdpclientnonscriptable7-cameraredirconfigcollection.md)      | Somente leitura |  Obtém a coleção de câmeras (e as configurações associadas) que estão disponíveis para redirecionamento.   |
-| [**Área de Transferência**](imsrdpclientnonscriptable7-clipboard.md)                       | Somente leitura |    Obtém o controlador da área de transferência usado para sincronizar as áreas de transferência local e remota se a sincronização da área de transferência manual estiver habilitada.    |
+| [**Área de Transferência**](imsrdpclientnonscriptable7-clipboard.md)                       | Somente leitura |    Obtém o controlador de área de transferência usado para sincronizar as áreas de transferência locais e remotas se a sincronização manual da área de transferência estiver habilitada.    |
 
 ## <a name="requirements"></a>Requisitos
 

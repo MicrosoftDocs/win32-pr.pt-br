@@ -1,17 +1,17 @@
 ---
 description: Veja a seguir dicas e dicas a serem consideradas ao escrever um aplicativo para a TAPI 3
 ms.assetid: 55aae46a-af5c-4b6d-89fc-9063f078bcd6
-title: Dicas e dicas
+title: dicas e Dicas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9202bdef97fb87b9f0736ed032b298af56917d8c
-ms.sourcegitcommit: 70f39ec77d19d3c32c376ee2831753d2cafae41a
+ms.openlocfilehash: 57d51e8c7e3f8c6e4a9e38b27fa5cfe4c10e45d37cfa67af095d573eea319614
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105758120"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117762926"
 ---
-# <a name="hints-and-tips"></a>Dicas e dicas
+# <a name="hints-and-tips"></a>dicas e Dicas
 
 Veja a seguir dicas e dicas a serem consideradas ao escrever um aplicativo para a TAPI 3:
 

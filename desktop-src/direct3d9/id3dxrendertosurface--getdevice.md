@@ -1,7 +1,7 @@
 ---
 description: Recupera o dispositivo Direct3D associado à superfície de renderização.
 ms.assetid: 579cf7da-b8e0-4d9f-93b8-b1f47c3d5654
-title: Método ID3DXRenderToSurface::GetDevice (D3dx9core.h)
+title: 'Método ID3DXRenderToSurface:: GetDevice (D3dx9core. h)'
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -21,7 +21,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117729600"
 ---
-# <a name="id3dxrendertosurfacegetdevice-method"></a>Método ID3DXRenderToSurface::GetDevice
+# <a name="id3dxrendertosurfacegetdevice-method"></a>Método ID3DXRenderToSurface:: GetDevice
 
 Recupera o dispositivo Direct3D associado à superfície de renderização.
 
@@ -45,7 +45,7 @@ HRESULT GetDevice(
 
 Tipo: **[ **LPDIRECT3DDEVICE9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3ddevice9)\***
 
-Endereço de um ponteiro para uma interface [**IDirect3DDevice9,**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3ddevice9) que representa o objeto de dispositivo Direct3D associado à superfície de renderização.
+Endereço de um ponteiro para uma interface [**IDirect3DDevice9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3ddevice9) , que representa o objeto de dispositivo Direct3D associado à superfície de renderização.
 
 </dd> </dl>
 
@@ -53,7 +53,7 @@ Endereço de um ponteiro para uma interface [**IDirect3DDevice9,**](/windows/win
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se o método for bem-sucedido, o valor de retorno será D3D \_ OK. Se o método falhar, o valor de retorno poderá ser D3DERR \_ INVALIDCALL. Chamar esse método aumentará a contagem de referência interna na interface [**IDirect3DDevice9.**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3ddevice9) Certifique-se de [**chamar IUnknown**](/windows/win32/api/unknwn/nn-unknwn-iunknown) quando terminar de usar essa interface **IDirect3DDevice9** ou você terá uma perda de memória.
+Se o método for bem sucedido, o valor de retorno será D3D \_ OK. Se o método falhar, o valor de retorno poderá ser D3DERR \_ INVALIDCALL. Chamar esse método aumentará a contagem de referência interna na interface [**IDirect3DDevice9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3ddevice9) . Não se esqueça de chamar [**IUnknown**](/windows/win32/api/unknwn/nn-unknwn-iunknown) quando terminar de usar essa interface **IDirect3DDevice9** ou você terá um vazamento de memória.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -61,8 +61,8 @@ Se o método for bem-sucedido, o valor de retorno será D3D \_ OK. Se o método 
 
 | Requisito | Valor |
 |--------------------|----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3dx9core.h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
+| parâmetro<br/>  | <dl> <dt>D3dx9core. h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
 
 
 

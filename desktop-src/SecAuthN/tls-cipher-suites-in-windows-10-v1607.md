@@ -4,12 +4,12 @@ ms.assetid: C7B6D1DE-E8CC-47EA-827A-A220F7AFB06B
 title: Conjunto de Criptografia TLS Windows 10 v1607
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cfc724d69bedb1b9092260f0c5e37b051c802b5f
-ms.sourcegitcommit: d0eb44d0a95f5e5efbfec3d3e9c143f5cba25bc3
+ms.openlocfilehash: 25f54e7aba580b2f1b20554552d3f1e05044253b3aae2554befb9fc0983b34a1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112262488"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117786195"
 ---
 # <a name="tls-cipher-suites-in-windows-10-v1607"></a>Conjunto de Criptografia TLS Windows 10 v1607
 
@@ -27,7 +27,7 @@ A disponibilidade de conjunto de criptografias deve ser controlada de duas manei
 
 A conformidade com FIPS tornou-se mais complexa com a adição de curvas elípticas, tornando a coluna habilitada para o modo FIPS nas versões anteriores desta tabela enganosa. Por exemplo, um conjunto de criptografias como TLS \_ ECDHE \_ RSA \_ WITH \_ AES \_ 128 \_ CBC SHA256 é apenas uma reclamações \_ FIPS ao usar curvas elípticas NIST. Para descobrir quais combinações de curvas elípticas e de conjunto de codificação serão habilitadas no modo FIPS, consulte a seção 3.3.1 de Diretrizes para seleção, configuração e uso de implementações [TLS.]( https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-52r1.pdf)
 
-Por Windows 10, versão 1607 e Windows Server 2016, os seguintes pacote de codificação estão habilitados e nessa ordem de prioridade por padrão usando o Provedor Schannel da Microsoft:
+Por Windows 10, versão 1607 e Windows Server 2016, os seguintes pacote de criptografia estão habilitados e, nessa ordem de prioridade, por padrão, usando o Provedor Schannel da Microsoft:
 
 
 
@@ -88,7 +88,7 @@ Os seguintes conjuntos de codificação têm suporte do Microsoft Schannel Provi
 
  
 
-A partir do Windows 10, versão 1607 e Windows Server 2016, os seguintes pacotes de codificação PSK estão habilitados e nesta ordem de prioridade por padrão usando o provedor Microsoft Schannel:
+a partir do Windows 10, versão 1607 e Windows Server 2016, os seguintes conjuntos de codificação PSK estão habilitados e nesta ordem de prioridade por padrão usando o provedor Microsoft Schannel:
 
 
 
@@ -112,11 +112,11 @@ A partir do Windows 10, versão 1607 e Windows Server 2016, os seguintes pacotes
 
 Para adicionar conjuntos de codificação, implante uma política de grupo ou use os cmdlets TLS:
 
--   Para usar a política de grupo, configure a ordem do conjunto de codificação SSL em configuração do computador > Modelos Administrativos > rede > definições de configuração SSL com a lista de prioridades para todos os conjuntos de codificação que você deseja habilitar.
+-   para usar a política de grupo, configure a ordem do conjunto de codificação ssl em configuração do computador > Modelos Administrativos > rede > configuração ssl Configurações com a lista de prioridade para todos os conjuntos de codificação que você deseja habilitar.
 -   Para usar o PowerShell, consulte [cmdlets do TLS](/powershell/module/tls/?view=win10-ps).
 
 > [!Note]  
-> Antes do Windows 10, as cadeias de caracteres do pacote de codificação foram anexadas com a curva elíptica para determinar a prioridade da curva. O Windows 10 dá suporte a uma configuração de ordem de prioridade de curva elíptica, portanto, o sufixo de curva elíptica não é necessário e é substituído pela nova ordem de prioridade de curva elíptica, quando fornecida, para permitir que as organizações usem a diretiva de grupo para configurar versões diferentes do Windows com os mesmos conjuntos de codificação.
+> antes da Windows 10, as cadeias de caracteres do conjunto de codificação foram anexadas à curva elíptica para determinar a prioridade da curva. o Windows 10 dá suporte a uma configuração de ordem de prioridade de curva elíptica, portanto, o sufixo de curva elíptica não é necessário e é substituído pela nova ordem de prioridade de curva elíptica, quando fornecida, para permitir que as organizações usem a política de grupo para configurar versões diferentes do Windows com os mesmos conjuntos de codificação.
 
  
 

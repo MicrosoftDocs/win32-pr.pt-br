@@ -9,12 +9,12 @@ keywords:
 - ADSI ADSI, código de exemplo C/C++, usando IADsObjectOptions
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3049d4dee7f6bf2e7ebb61f01f42ef9fc39271c1
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 43701b4b846e4bf4e69dc8882397b5aba6b19ffc370ba418a34239782433073f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103915895"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117839919"
 ---
 # <a name="iadsobjectoptions-interface"></a>Interface IADsObjectOptions
 
@@ -99,9 +99,9 @@ HRESULT GetGCServerName(VARIANT *vGCServer)
 
 
 
- 
+ 
 
- 
+ 
 
 
 

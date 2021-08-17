@@ -1,7 +1,7 @@
 ---
-description: Recupera o PROPVARIANT e a cadeia de caracteres de entrada que representa um bloco de dados. Chamar esse método é o mesmo que chamar GetData.
+description: Recupera o PROPVARIANT e a cadeia de caracteres de entrada que representa uma parte dos dados. Chamar esse método é o mesmo que chamar GetData.
 ms.assetid: 78846D1D-923F-4FEA-8BF2-B16BB1B21BB3
-title: 'Método IRichChunk:: RemoteGetData'
+title: Método IRichChunk::RemoteGetData
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 002c85b189a3994b70795c05228ae5331c610284
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: caaa4ab9688ab8169bd0955c8abb1e976e7eb318e94875be1486e61b32e13207
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104090049"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117862780"
 ---
-# <a name="irichchunkremotegetdata-method"></a>Método IRichChunk:: RemoteGetData
+# <a name="irichchunkremotegetdata-method"></a>Método IRichChunk::RemoteGetData
 
-Recupera o [PROPVARIANT](/windows/win32/api/propidlbase/ns-propidlbase-propvariant) e a cadeia de caracteres de entrada que representa um bloco de dados. Chamar esse método é o mesmo que chamar [**GetData**](/windows/desktop/api/StructuredQueryCondition/nf-structuredquerycondition-irichchunk-getdata).
+Recupera o [PROPVARIANT e](/windows/win32/api/propidlbase/ns-propidlbase-propvariant) a cadeia de caracteres de entrada que representa uma parte dos dados. Chamar esse método é o mesmo que chamar [**GetData.**](/windows/desktop/api/StructuredQueryCondition/nf-structuredquerycondition-irichchunk-getdata)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -41,37 +41,37 @@ HRESULT RemoteGetData(
 
 <dl> <dt>
 
-*pFirstPos* \[ fora\]
+*pFirstPos* \[ out\]
 </dt> <dd>
 
-Recebe a posição inicial de base zero do intervalo. Este parâmetro pode ser **NULL**.
+Recebe a posição inicial baseada em zero do intervalo. Este parâmetro pode ser **NULL**.
 
 </dd> <dt>
 
-*PLength* \[ fora\]
+*pLength* \[ out\]
 </dt> <dd>
 
 Recebe o comprimento do intervalo. Este parâmetro pode ser **NULL**.
 
 </dd> <dt>
 
-*ppsz* \[ fora\]
+*ppsz* \[ out\]
 </dt> <dd>
 
-Recebe o valor de cadeia de caracteres Unicode associado ou **nulo** se não estiver disponível.
+Recebe o valor de cadeia de caracteres Unicode associado ou **NULL,** se não estiver disponível.
 
 </dd> <dt>
 
-*valores* \[ fora\]
+*pValue* \[ out\]
 </dt> <dd>
 
-Recebe o valor [PROPVARIANT](/windows/win32/api/propidlbase/ns-propidlbase-propvariant) associado ou **VT \_ vazio** se não estiver disponível. Este parâmetro pode ser **NULL**.
+Recebe o valor [PROPVARIANT associado](/windows/win32/api/propidlbase/ns-propidlbase-propvariant) ou **VT \_ EMPTY,** se não estiver disponível. Este parâmetro pode ser **NULL**.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
+Se esse método for bem-sucedido, ele **retornará S \_ OK.** Caso contrário, ele retornará um **código de erro HRESULT.**
 
 ## <a name="see-also"></a>Confira também
 

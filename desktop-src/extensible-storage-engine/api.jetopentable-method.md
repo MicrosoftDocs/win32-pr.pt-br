@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre: método API. JetOpenTable'
-title: Método API. JetOpenTable
+description: 'Saiba mais sobre: Método Api.JetOpenTable'
+title: Método Api.JetOpenTable
 TOCTitle: 'JetOpenTable method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Api.JetOpenTable(Microsoft.Isam.Esent.Interop.JET_SESID,Microsoft.Isam.Esent.Interop.JET_DBID,System.String,System.Byte[],System.Int32,Microsoft.Isam.Esent.Interop.OpenTableGrbit,Microsoft.Isam.Esent.Interop.JET_TABLEID@)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.api.jetopentable(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 5764138d4ea387b68c94805c6966f7ce0e817c37
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4969b21ed195f67f03dbdd3477f51a5abdf15e29fbf5928575f1b1a196b9e4c2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103922708"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117718704"
 ---
-# <a name="apijetopentable-method"></a>Método API. JetOpenTable
+# <a name="apijetopentable-method"></a>Método Api.JetOpenTable
 
 Abre um cursor em uma tabela criada anteriormente.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -81,56 +81,56 @@ public static JET_wrn JetOpenTable(
 #### <a name="parameters"></a>Parâmetros
 
   - sesid  
-    Tipo: [Microsoft.ISAM.ESENT.Interop.JET_SESID](./jet-sesid-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)  
     
     A sessão de banco de dados a ser usada.
 
 <!-- end list -->
 
   - dbid  
-    Tipo: [Microsoft.ISAM.ESENT.Interop.JET_DBID](./jet-dbid-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_DBID](./jet-dbid-structure.md)  
     
-    O banco de dados no qual abrir a tabela.
+    O banco de dados no onde abrir a tabela.
 
 <!-- end list -->
 
   - tablename  
-    Tipo: [System. String](/dotnet/api/system.string)  
+    Tipo: [System.String](/dotnet/api/system.string)  
     
     O nome da tabela a ser aberta.
 
 <!-- end list -->
 
-  - parameters  
-    Escreva \[\]  
+  - parâmetros  
+    Tipo: \[\]  
     
     O parâmetro não é usado.
 
 <!-- end list -->
 
   - parametersSize  
-    Tipo: [System. Int32](/dotnet/api/system.int32)  
+    Tipo: [System.Int32](/dotnet/api/system.int32)  
     
     O parâmetro não é usado.
 
 <!-- end list -->
 
   - grbit  
-    Tipo: [Microsoft. ISAM. ESENT. Interop. OpenTableGrbit](./opentablegrbit-enumeration.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.OpenTableGrbit](./opentablegrbit-enumeration.md)  
     
-    Opções de abertura de tabela.
+    Opções abertas da tabela.
 
 <!-- end list -->
 
-  - TableID  
-    Tipo: [Microsoft.ISAM.ESENT.Interop.JET_TABLEID](./jet-tableid-structure.md)  
+  - Tableid  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_TABLEID](./jet-tableid-structure.md)  
     
     Retorna a tabela aberta.
 
-#### <a name="return-value"></a>Retornar valor
+#### <a name="return-value"></a>Valor retornado
 
-Tipo: [Microsoft.ISAM.ESENT.Interop.JET_wrn](./jet-wrn-enumeration.md)  
-Um aviso de ESENT.  
+Tipo: [Microsoft.Isam.Esent.Interop.JET_wrn](./jet-wrn-enumeration.md)  
+Um aviso do ESENT.  
 
 ## <a name="see-also"></a>Confira também
 
@@ -140,4 +140,4 @@ Um aviso de ESENT.
 
 [Membros da API](./api-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

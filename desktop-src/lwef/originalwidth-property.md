@@ -4,16 +4,16 @@ description: Propriedade OriginalWidth
 ms.assetid: bec2c0cd-bad4-4187-9535-3fd35f0daf22
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1362f3b9a516ba1e52b553bb6f61ec8f3c872ddc
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: e1861ae30ddbf8994236f49bd142c80afe2ffbe8ec5a021699d5b45f5eea6006
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103635903"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117882956"
 ---
 # <a name="originalwidth-property"></a>Propriedade OriginalWidth
 
-\[O Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
+\[o Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
 
 <dl> <dt>
 
@@ -27,7 +27,7 @@ Retorna um valor inteiro que especifica a largura original do caractere.
 <span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>**Sintaxe**
 </dt> <dd>
 
-*Agente. ***Caracteres ("*** characterid * * *"). OriginalWidth**
+*caracteres Agent. ***("**_characterid_*_"). OriginalWidth_*
 
 </dd> </dl>
 
@@ -40,9 +40,9 @@ Essa propriedade retorna a largura do quadro do caractere, como criado com o edi
 [**Propriedade Width**](width-property.md), [ **Propriedade OriginalHeight**](originalheight-property.md)
 
 
- 
+ 
 
- 
+ 
 
 
 

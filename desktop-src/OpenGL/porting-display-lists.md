@@ -10,12 +10,12 @@ keywords:
 - Exibir listas, portando do íris GL
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 461000e6d785f0d03bbbc8f738eba60768bc5d74
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 858f1f3be180b3ef09c81bb8d61b18705fc9485742d7384562eecff142f4bfb8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104291894"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117980798"
 ---
 # <a name="porting-display-lists"></a>Portando listas de exibição
 
@@ -45,7 +45,7 @@ A tabela a seguir lista as funções de lista de exibição do íris GL com suas
 
 
 
- 
+ 
 
 Este tópico inclui informações sobre o seguinte.
 
@@ -53,9 +53,9 @@ Este tópico inclui informações sobre o seguinte.
 -   [Portando listas de exibição editadas](porting-edited-display-lists.md)
 -   [Uma porta de exemplo de uma lista de exibição](a-sample-port-of-a-display-list.md)
 
- 
+ 
 
- 
+ 
 
 
 

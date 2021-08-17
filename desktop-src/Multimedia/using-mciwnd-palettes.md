@@ -8,12 +8,12 @@ keywords:
 - Macro MCIWndRealize
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d970e0e33c9dd03c7f1133576f371b713f7174df
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 074dece2c1dac95e24a465413cae686acea5a8e9055913bfb832341efdb12c1a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "103917272"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117801115"
 ---
 # <a name="using-mciwnd-palettes"></a>Usando paletas do MCIWnd
 
@@ -26,7 +26,7 @@ A reprodução de clipes de vídeo com intensidade de cor de 8 bits (256-capacid
 > [!Note]  
 > Quando um clipe de vídeo com profundidade de cor de 8 bits é carregado na janela MCIWnd, a paleta incluída nesse clipe substitui a paleta associada à janela MCIWnd.
 
- 
+ 
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -35,6 +35,6 @@ A reprodução de clipes de vídeo com intensidade de cor de 8 bits (256-capacid
 [Aprimoramentos de reprodução](playback-enhancements.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

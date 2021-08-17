@@ -1,21 +1,21 @@
 ---
-description: 'A enumeração AudioDeviceProperty é usada pelos métodos ITAudioDeviceControl:: GetRange, ITAudioDeviceControl:: Get e ITAudioDeviceControl:: set para indicar a propriedade que está sendo endereçada.'
+description: A enum AudioDeviceProperty é usada pelos métodos ITAudioDeviceControl::GetRange, ITAudioDeviceControl::Get e ITAudioDeviceControl::Set para indicar a propriedade que está sendo endereçada.
 ms.assetid: 0ed9b75e-3c79-4e41-9883-63b85ebfae06
-title: Enumeração AudioDeviceProperty (Ipmsp. h)
+title: Enumeração AudioDeviceProperty (Ipmsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ab807759bfb316858be41ea9bb4b78d795ee1a1a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e5a634caa627f5d518e8783ce056e89a69931aa981466754a9d320f36787186f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105811936"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117948788"
 ---
 # <a name="audiodeviceproperty-enumeration"></a>Enumeração AudioDeviceProperty
 
-\[ Essa enumeração não está disponível para uso no Windows Vista, no Windows Server 2008 e em versões subsequentes do sistema operacional. A API do cliente RTC fornece funcionalidade semelhante.\]
+\[Essa enumeração não está disponível para uso no Windows Vista, Windows Server 2008 e versões subsequentes do sistema operacional. A API do Cliente RTC fornece funcionalidade semelhante.\]
 
-A enumeração **AudioDeviceProperty** é usada pelos métodos [**ITAudioDeviceControl:: GetRange**](itaudiodevicecontrol-getrange.md), [**ITAudioDeviceControl:: Get**](itaudiodevicecontrol-get.md)e [**ITAudioDeviceControl:: Set**](itaudiodevicecontrol-set.md) para indicar a propriedade que está sendo endereçada.
+A enum **AudioDeviceProperty** é usada pelos métodos [**ITAudioDeviceControl::GetRange**](itaudiodevicecontrol-getrange.md), [**ITAudioDeviceControl::Get**](itaudiodevicecontrol-get.md)e [**ITAudioDeviceControl::Set**](itaudiodevicecontrol-set.md) para indicar a propriedade que está sendo resolvida.
 
 ## <a name="syntax"></a>Syntax
 
@@ -30,7 +30,7 @@ A enumeração **AudioDeviceProperty** é usada pelos métodos [**ITAudioDeviceC
 
 <dl> <dt>
 
-<span id="AudioDevice_DuplexMode"></span><span id="audiodevice_duplexmode"></span><span id="AUDIODEVICE_DUPLEXMODE"></span>**AudioDevice \_ duplexmode**
+<span id="AudioDevice_DuplexMode"></span><span id="audiodevice_duplexmode"></span><span id="AUDIODEVICE_DUPLEXMODE"></span>**AudioDevice \_ DuplexMode**
 </dt> <dd>
 
 Indica que o modo duplex do dispositivo está sendo definido ou recuperado.
@@ -40,7 +40,7 @@ Indica que o modo duplex do dispositivo está sendo definido ou recuperado.
 <span id="AudioDevice_AutomaticGainControl"></span><span id="audiodevice_automaticgaincontrol"></span><span id="AUDIODEVICE_AUTOMATICGAINCONTROL"></span>**AudioDevice \_ AutomaticGainControl**
 </dt> <dd>
 
-Indica que o controle de lucro automático do dispositivo está sendo definido ou recuperado.
+Indica que o controle de ganho automático do dispositivo está sendo definido ou recuperado.
 
 </dd> <dt>
 
@@ -57,8 +57,8 @@ Indica que as propriedades de cancelamento de eco acústico do dispositivo estã
 
 | Requisito | Valor |
 |-------------------------|------------------------------------------------------------------------------------|
-| Versão da TAPI<br/> | Requer TAPI 3,1<br/>                                                       |
-| parâmetro<br/>       | <dl> <dt>Ipmsp. h</dt> </dl> |
+| Versão do TAPI<br/> | Requer TAPI 3.1<br/>                                                       |
+| Cabeçalho<br/>       | <dl> <dt>Ipmsp.h</dt> </dl> |
 
 
 
@@ -66,13 +66,13 @@ Indica que as propriedades de cancelamento de eco acústico do dispositivo estã
 
 <dl> <dt>
 
-[**ITAudioDeviceControl:: GetRange**](itaudiodevicecontrol-getrange.md)
+[**ITAudioDeviceControl::GetRange**](itaudiodevicecontrol-getrange.md)
 </dt> <dt>
 
-[**ITAudioDeviceControl:: Get**](itaudiodevicecontrol-get.md)
+[**ITAudioDeviceControl::Get**](itaudiodevicecontrol-get.md)
 </dt> <dt>
 
-[**ITAudioDeviceControl:: Set**](itaudiodevicecontrol-set.md)
+[**ITAudioDeviceControl::Set**](itaudiodevicecontrol-set.md)
 </dt> </dl>
 
  

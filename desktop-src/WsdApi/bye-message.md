@@ -1,28 +1,28 @@
 ---
-description: Uma WS-Discovery mensagem usada para anunciar a saída de um dispositivo ou serviço da rede.
+description: Uma WS-Discovery usada para anunciar a partida de um dispositivo ou serviço da rede.
 ms.assetid: 7b9abfcc-28ab-4f29-af69-6dc68e3f51b6
-title: Adeus mensagem
+title: Mensagem de adeus
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 26880e8b1d4eae7f366f797017b033f9f444fe1f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8276c05314b31782442bfdf6de998dd41241391de9dc94947409041c8f4aa420
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104506130"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117738646"
 ---
-# <a name="bye-message"></a>Adeus mensagem
+# <a name="bye-message"></a>Mensagem de adeus
 
-Uma mensagem de adeus é uma WS-Discovery mensagem usada para anunciar a saída de um dispositivo ou serviço da rede. Para obter mais informações sobre mensagens de adeus, consulte a seção 4,2 da [especificação do WS-Discovery](https://specs.xmlsoap.org/ws/2005/04/discovery/ws-discovery.pdf).
+Uma mensagem de WS-Discovery é uma mensagem de WS-Discovery usada para anunciar a partida de um dispositivo ou serviço da rede. Para obter mais informações sobre mensagens Bye, consulte a seção 4.2 da [Especificação WS-Discovery](https://specs.xmlsoap.org/ws/2005/04/discovery/ws-discovery.pdf).
 
 As mensagens de adeus não são solicitadas. As mensagens são opcionais.
 
 > [!Note]  
-> Este tópico mostra uma mensagem DPWS de exemplo gerada por clientes e hosts WSDAPI. O WSDAPI analisará e aceitará outras mensagens em conformidade com o DPWS que não estão em conformidade com este exemplo. Não use este exemplo para verificar a interoperabilidade do DPWS; em vez disso, use a [ferramenta de interoperabilidade básica do WSDAPI (WSDBIT)](https://msdn.microsoft.com/library/cc264250.aspx) .
+> Este tópico mostra uma mensagem DPWS de exemplo gerada por clientes e hosts WSDAPI. O WSDAPI analisará e aceitará outras mensagens compatíveis com DPWS que não estão em conformidade com este exemplo. Não use este exemplo para verificar a interoperabilidade do DPWS; use a [WSDBIT (Ferramenta de Interoperabilidade Básica) do WSDAPI.](https://msdn.microsoft.com/library/cc264250.aspx)
 
  
 
-A mensagem SOAP a seguir mostra uma mensagem de exemplo de adeus.
+A mensagem SOAP a seguir mostra um exemplo de mensagem de Bye.
 
 ``` syntax
 <?xml version="1.0" encoding="utf-8" ?>
@@ -56,7 +56,7 @@ A mensagem SOAP a seguir mostra uma mensagem de exemplo de adeus.
 </soap:Body>
 ```
 
-Uma mensagem de adeus tem os seguintes pontos de foco.
+Uma mensagem de Bye tem os seguintes pontos de foco.
 
 
 
@@ -75,26 +75,26 @@ Uma mensagem de adeus tem os seguintes pontos de foco.
 </thead>
 <tbody>
 <tr class="odd">
-<td>Logo</td>
+<td>Tchau</td>
 <td><pre class="syntax" data-space="preserve"><code><wsa:Action>
     https://schemas.xmlsoap.org/ws/2005/04/discovery/Bye
 </wsa:Action></code></pre></td>
-<td>A ação do SOAP de adeus identifica a mensagem como uma mensagem de adeus.</td>
+<td>A ação Soap de Adeus identifica a mensagem como uma mensagem de Bye.</td>
 </tr>
 <tr class="even">
-<td>AppSequence</td>
+<td>Appsequence</td>
 <td><pre class="syntax" data-space="preserve"><code><wsd:AppSequence InstanceId=&quot;2&quot;
     SequenceId=&quot;urn:uuid:369a7d7b-5f87-48a4-aa9a-189edf2a8772&quot;
     MessageNumber=&quot;21&quot;>
 </wsd:AppSequence></code></pre></td>
-<td>Contém informações de sequenciamento de aplicativo, o que ajuda a manter a sequência de mensagens, mesmo que elas sejam recebidas fora de ordem. O AppSequence é validado conforme descrito em <a href="appsequence-validation-rules.md">regras de validação do AppSequence</a>.</td>
+<td>Contém informações de sequenciamento de aplicativos, o que ajuda a manter a sequência de mensagens, mesmo que elas sejam recebidas fora de ordem. O AppSequence é validado conforme descrito em Regras de validação do <a href="appsequence-validation-rules.md">AppSequence.</a></td>
 </tr>
 <tr class="odd">
 <td>Endereço</td>
 <td><pre class="syntax" data-space="preserve"><code><wsa:Address>
     urn:uuid:37f86d35-e6ac-4241-964f-1d9ae46fb366
 </wsa:Address></code></pre></td>
-<td>Contém o endereço do ponto de extremidade ficando offline.</td>
+<td>Contém o endereço do ponto de extremidade que está offline.</td>
 </tr>
 </tbody>
 </table>
@@ -107,10 +107,10 @@ Uma mensagem de adeus tem os seguintes pontos de foco.
 
 <dl> <dt>
 
-[Descoberta e mensagens de troca de metadados](discovery-and-metadata-exchange-message-patterns.md)
+[Mensagens de descoberta e Exchange metadados](discovery-and-metadata-exchange-message-patterns.md)
 </dt> <dt>
 
-[Mensagem de saudação](hello-message.md)
+[Mensagem olá](hello-message.md)
 </dt> </dl>
 
  

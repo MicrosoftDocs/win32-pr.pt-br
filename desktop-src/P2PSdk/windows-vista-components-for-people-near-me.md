@@ -1,23 +1,23 @@
 ---
-description: Componentes do Windows Vista para pessoas ao meu redor
+description: Windows Componentes do Vista para Pessoas ao meu Redor
 ms.assetid: 87d0cc0d-fbbb-4a22-9946-7296d53df773
-title: Componentes do Windows Vista para pessoas ao meu redor
+title: Windows Componentes do Vista para Pessoas ao meu Redor
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5b294084cacec5d4ed737993720be72f1b4d8671
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c28af479bbb4e23e375802edf82a74225e68e2059613ad6f94b417e83d2cc1d2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105757092"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117794061"
 ---
-# <a name="windows-vista-components-for-people-near-me"></a>Componentes do Windows Vista para pessoas ao meu redor
+# <a name="windows-vista-components-for-people-near-me"></a>Windows Componentes do Vista para Pessoas ao meu Redor
 
-[As pessoas ao meu redor](about-people-near-me.md) (PNM) usam os seguintes componentes do Windows Vista:
+[Pessoas ao meu Redor](about-people-near-me.md) (PNM) usa os seguintes componentes do Windows Vista:
 
-### <a name="web-service-discovery"></a>Descoberta de serviço Web
+### <a name="web-service-discovery"></a>Descoberta de Serviço Web
 
-O componente de descoberta de serviço Web permite a publicação e a descoberta de serviços na sub-rede local. No PNM, um usuário é um serviço que é anunciado na sub-rede local. Para obter mais informações sobre descoberta de serviço Web, consulte [descoberta de serviço Web XML](/previous-versions/dotnet/netframework-4.0/fxx6cfx2(v=vs.100)).
+O componente Descoberta de Serviço Web permite a publicação e a descoberta de serviços na sub-rede local. No PNM, um usuário é um serviço que é anunciado na sub-rede local. Para obter mais informações sobre a descoberta de serviço Web, consulte [Descoberta de serviço Web XML.](/previous-versions/dotnet/netframework-4.0/fxx6cfx2(v=vs.100))
 
 ### <a name="schannel"></a>SChannel
 
@@ -25,11 +25,11 @@ O componente Schannel permite a comunicação criptografada entre dois pontos de
 
 ### <a name="windows-sockets"></a>Windows Sockets
 
-O componente Windows Sockets é usado por aplicativos para comunicações em TCP/IP.
+O Windows soquetes é usado por aplicativos para comunicações por TCP/IP.
 
 ### <a name="next-generation-tcpip-stack"></a>Pilha TCP/IP da próxima geração
 
-Nova pilha de TCP/IP no Windows Vista que tem o IPv6 interno e habilitada por padrão. Para obter mais informações, consulte [pilha TCP/IP da próxima geração no Windows Vista](https://www.microsoft.com/technet/itsolutions/network/tcpip/default.mspx).
+Nova pilha TCP/IP no Windows Vista que tem IPv6 interno e habilitado por padrão. Para obter mais informações, consulte [Next Generation TCP/IP Stack in Windows Vista](https://www.microsoft.com/technet/itsolutions/network/tcpip/default.mspx).
 
  
 

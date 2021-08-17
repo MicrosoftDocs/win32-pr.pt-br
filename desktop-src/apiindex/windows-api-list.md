@@ -1,31 +1,31 @@
 ---
-description: Uma lista do conteúdo de referência para a API do Windows.
+description: uma lista do conteúdo de referência para a API de Windows.
 ms.assetid: 9CA123F9-92F1-4761-9468-266DA422F70E
 title: Índice de API do Windows
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6f6cace235af1c729e450bdf99b276eca1bfc000
-ms.sourcegitcommit: 11f52354f570aacaf1ba2a266b2e507abd73352a
+ms.openlocfilehash: 07e61a3f738905e98ad9cd1db85dbaa1746d7c613b1cc5b628805bcc3ddbea74
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "105807288"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117737633"
 ---
 # <a name="windows-api-index"></a>Índice de API do Windows
 
-A seguir está uma lista do conteúdo de referência para a API (interface de programação de aplicativo) do Windows para aplicativos de desktop e de servidor.
+a seguir está uma lista do conteúdo de referência para a API (interface de programação de aplicativo) Windows para aplicativos de desktop e de servidor.
 
-Usando a API do Windows, você pode desenvolver aplicativos que são executados com êxito em todas as versões do Windows, aproveitando os recursos e as funcionalidades exclusivos de cada versão. (Observe que isso era chamado anteriormente de API do Win32. O nome API do Windows reflete com mais precisão suas raízes no Windows de 16 bits e seu suporte no Windows de 64 bits.)
+usando a API de Windows, você pode desenvolver aplicativos que são executados com êxito em todas as versões do Windows, aproveitando os recursos e os recursos exclusivos de cada versão. (Observe que isso era chamado anteriormente de API do Win32. o nome Windows API reflete com mais precisão suas raízes em Windows de 16 bits e seu suporte no Windows de 64 bits.)
 
 ## <a name="user-interface"></a>Interface do usuário
 
-A API da interface do usuário do Windows cria e usa o Windows para exibir a saída, solicitar a entrada do usuário e executar as outras tarefas que dão suporte à interação com o usuário. A maioria dos aplicativos cria pelo menos uma janela.
+a API da interface do usuário do Windows criar e usar o Windows para exibir a saída, solicitar a entrada do usuário e executar as outras tarefas que dão suporte à interação com o usuário. A maioria dos aplicativos cria pelo menos uma janela.
 
 -   [Acessibilidade](../winauto/windows-accessibility-features-reference.md)
 -   [Gerenciador de Janelas da Área de Trabalho (DWM)](../dwm/reference.md)
 -   [Serviços de globalização](../intl/globalization-services.md)
 -   [DPI alto](../hidpi/high-dpi-reference.md)
--   [MUI (Multilingual User interface)](../intl/multilingual-user-interface-reference.md)
+-   [Interface de Usuário Multilíngue (MUI)](../intl/multilingual-user-interface-reference.md)
 -   [NLS (suporte ao idioma nacional)](../intl/national-language-support-reference.md)
 -   [Elementos da interface do usuário](../devnotes/user-interface.md):
 
@@ -54,13 +54,13 @@ A API da interface do usuário do Windows cria e usa o Windows para exibir a sa�
     -   [Trackbars](../controls/bumper-trackbar-trackbar-control-reference.md)
     -   [Controles de exibição de árvore](../controls/bumper-tree-view-tree-view-control-reference.md)
 
--   [Gerenciador de animação do Windows](../uianimation/windows-animation-reference.md)
--   [Estrutura da faixa de dasgem do Windows](../windowsribbon/windowsribbon-reference-entry.md)
+-   [Windows Gerenciador de animação](../uianimation/windows-animation-reference.md)
+-   [Windows Estrutura da faixa de faixas](../windowsribbon/windowsribbon-reference-entry.md)
 
-## <a name="windows-environment-shell"></a>Ambiente do Windows (Shell)
+## <a name="windows-environment-shell"></a>ambiente de Windows (Shell)
 
--   [Sistema de propriedades do Windows](../properties/property-system-reference.md)
--   [Shell do Windows](/previous-versions/windows/desktop/legacy/ff521731(v=vs.85))
+-   [Windows Sistema de propriedades](../properties/property-system-reference.md)
+-   [Windows Shell](/previous-versions/windows/desktop/legacy/ff521731(v=vs.85))
 -   [Windows Search](../search/-search-reference-entry-page.md)
 -   [Consoles](/windows/console/console-reference)
 
@@ -100,17 +100,17 @@ A API da interface do usuário do Windows cria e usa o Windows para exibir a sa�
     -   [Eliminação de Duplicação de Dados](/previous-versions/windows/desktop/dedup/data-deduplication-api-reference)
     -   [Cópias de Sombra de Volume](../vss/volume-shadow-copy-reference.md)
     -   [Backup do Windows Server](/previous-versions/windows/desktop/wsb/windows-server-backup-api-interfaces)
--   [Troca de dados](../dataxchg/data-exchange.md):
+-   [Exchange de dados](../dataxchg/data-exchange.md):
 
     -   [Área de transferência](../dataxchg/clipboard-reference.md)
-    -   [Troca dinâmica de dados (DDE)](../dataxchg/dynamic-data-exchange-reference.md)
-    -   [Gerenciamento de troca dinâmica de dados (DDEML)](../dataxchg/dynamic-data-exchange-management-library-reference.md)
+    -   [troca dinâmica de dados (DDE)](../dataxchg/dynamic-data-exchange-reference.md)
+    -   [gerenciamento de troca dinâmica de dados (DDEML)](../dataxchg/dynamic-data-exchange-management-library-reference.md)
 
 -   [Gerenciamento de diretórios](../fileio/directory-management-reference.md)
 -   [Gerenciamento de disco](../fileio/disk-management-reference.md)
 -   [DFS (Sistema de Arquivos Distribuído)](/previous-versions/windows/desktop/dfs/distributed-file-system-reference)
 -   [Replicação DFS](/previous-versions/windows/desktop/dfsr/dfsr-wmi-classes)
--   [Mecanismo de armazenamento extensível](../extensible-storage-engine/extensible-storage-engine-reference.md)
+-   [mecanismo de Armazenamento extensível](../extensible-storage-engine/extensible-storage-engine-reference.md)
 -   [Arquivos e e/s (sistema de arquivos local)](../fileio/file-management-reference.md)
 -   [API da biblioteca de descoberta do iSCSI](/previous-versions/windows/desktop/iscsidisc/iscsi-discovery-library-reference)
 -   [Arquivos Offline](/previous-versions/windows/desktop/offlinefiles/offline-files-reference)
@@ -146,7 +146,7 @@ A API de [diagnóstico](/previous-versions//bb648685(v=vs.85)) permite soluciona
 -   [Passagem de cadeia de espera](../debug/wait-chain-traversal.md)
 -   [Relatório de Erros do Windows (WER)](../wer/wer-reference.md)
 -   [Log de eventos do Windows](../wes/windows-event-log-reference.md)
--   [Plataforma de solução de problemas do Windows](/previous-versions/windows/desktop/wintt/windows-troubleshooting-reference)
+-   [Windows Plataforma de solução de problemas](/previous-versions/windows/desktop/wintt/windows-troubleshooting-reference)
 
 ## <a name="graphics-and-multimedia"></a>Gráficos e multimídia
 
@@ -169,14 +169,14 @@ As APIs de [gráficos, multimídia](/previous-versions//aa969176(v=vs.85)) , [á
 -   [Aquisição de imagem](/previous-versions/windows/desktop/acquisition/programming-reference)
 -   [Sistema de cores do Windows](../wcs/reference.md)
 -   [Windows Imaging Component (WIC)](../wic/-wic-codec-reference.md)
--   [Codec de áudio e vídeo do Windows Media e DSP](/previous-versions//dd443208(v=vs.85))
--   [Windows Media Center](/previous-versions/windows/desktop/acquisition/programming-reference)
--   [Formato de mídia do Windows](../wmformat/programming-reference.md)
--   [Serviços de compartilhamento da biblioteca do Windows Media](/previous-versions/windows/desktop/wmlss/windowsmedialibrarysharingservicesportal)
+-   [Windows Áudio de mídia e codec de vídeo e DSP](/previous-versions//dd443208(v=vs.85))
+-   [Windows Centro de mídia](/previous-versions/windows/desktop/acquisition/programming-reference)
+-   [Windows Formato de mídia](../wmformat/programming-reference.md)
+-   [Windows Serviços de compartilhamento de biblioteca de mídia](/previous-versions/windows/desktop/wmlss/windowsmedialibrarysharingservicesportal)
 -   [Windows Media Player](../wmp/windows-media-player-object-model-reference.md)
--   [Serviços de mídia do Windows](/previous-versions/windows/desktop/dd893580(v=vs.85))
+-   [Windows Media Services](/previous-versions/windows/desktop/dd893580(v=vs.85))
 -   [Windows Movie Maker](/previous-versions/windows/desktop/wmmdvdm/windows-movie-maker-apis)
--   [Multimídia do Windows](../multimedia/multimedia-reference.md)
+-   [Windows Média](../multimedia/multimedia-reference.md)
 
 ## <a name="devices"></a>Dispositivos
 
@@ -187,7 +187,7 @@ As APIs de [gráficos, multimídia](/previous-versions//aa969176(v=vs.85)) , [á
 -   [Armazenamento Avançado](/previous-versions/windows/desktop/enstor/enhanced-storage-reference)
 -   [Descoberta de função](/previous-versions/windows/desktop/fundisc/function-discovery-reference)
 -   [Mestre de imagem](../imapi/imapi-reference.md)
--   [Localidade](../locationapi/windows-location-programming-reference.md)
+-   [Localização](../locationapi/windows-location-programming-reference.md)
 -   [Banco de dados de associação PnP-X](/previous-versions/windows/desktop/fundisc/pnp-x-association-database-reference)
 -   [Impressão](/windows-hardware/drivers/print/introduction-to-printing)
     -   [Spooler de impressão](../printdocs/printing-and-print-spooler-reference.md)
@@ -201,8 +201,8 @@ As APIs de [gráficos, multimídia](/previous-versions//aa969176(v=vs.85)) , [á
 -   [UPnP](../upnp/universal-plug-and-play-start-page.md)
 -   [Serviços Web em dispositivos](../wsdapi/web-services-for-devices-reference.md)
 -   [WIA (Windows Image Acquisition)](../wia/-wia-reference.md)
--   [Gerenciador de Dispositivos de mídia do Windows](../wmdm/programming-reference.md)
--   [Dispositivos portáteis do Windows](../wpd_sdk/programming-reference.md)
+-   [Windows Gerenciador de Dispositivos de mídia](../wmdm/programming-reference.md)
+-   [Windows Dispositivos portáteis](../wpd_sdk/programming-reference.md)
 
 ## <a name="system-services"></a>Serviços do sistema
 
@@ -226,8 +226,8 @@ As APIs de [Serviços do sistema](/previous-versions//aa969179(v=vs.85)) fornece
 -   [Serviços](../services/service-reference.md)
 -   [Sincronização](../sync/synchronization-reference.md)
 -   [Threads](../procthread/process-and-thread-reference.md)
--   [Compartilhamento de área de trabalho do Windows](/previous-versions/windows/desktop/rdp/windows-desktop-sharing-reference)
--   [Informações do sistema Windows](../sysinfo/windows-system-information.md)
+-   [Windows Compartilhamento de área de trabalho](/previous-versions/windows/desktop/rdp/windows-desktop-sharing-reference)
+-   [Windows Informações do Sistema](../sysinfo/windows-system-information.md)
     -   [Identificador e objetos](../sysinfo/handle-and-object-functions.md)
     -   [Registro](../sysinfo/registry-reference.md)
     -   [Hora](../sysinfo/time-reference.md)
@@ -235,129 +235,129 @@ As APIs de [Serviços do sistema](/previous-versions//aa969179(v=vs.85)) fornece
 
 ## <a name="security-and-identity"></a>Segurança e identidade
 
-As APIs de [segurança e identidade](../devnotes/security.md) habilitam a autenticação de senha durante o logon, proteção condicional para todos os objetos do sistema compartilháveis, controle de acesso privilegiado, Rights Management e auditoria de segurança.
+As APIs de Segurança e Identidade habilitam a autenticação de senha no logon, proteção discricionário para todos os objetos do sistema compartilháveis, controle de [acesso privilegiado,](../devnotes/security.md) gerenciamento de direitos e auditoria de segurança.
 
 -   [Autenticação](../secauthn/authentication-reference.md)
 -   [Autorização](../secauthz/authorization-reference.md)
 -   [Registro de certificado](../seccertenroll/certificate-enrollment-api-reference.md)
 -   [Criptografia](../seccrypto/cryptography-reference.md)
--   [CNG (criptografia próxima geração)](../seccng/cng-reference.md)
--   [Serviços de diretório](/previous-versions//ms682458(v=vs.85))
+-   [CNG (Cryptographic Next Generation)](../seccng/cng-reference.md)
+-   [Serviços de Diretório](/previous-versions//ms682458(v=vs.85))
     -   [Active Directory Domain Services](../ad/active-directory-domain-services-reference.md)
-    -   [ADSI (interfaces de serviço Active Directory)](../adsi/adsi-reference.md)
+    -   [ADSI (Interfaces de Serviço do Active Directory)](../adsi/adsi-reference.md)
 -   [Protocolo EAP (Extensible Authentication Protocol)](../eap/extensible-authentication-protocol-reference.md)
--   [Host de protocolo de autenticação extensível (EAPHost)](../eaphost/about-eap-host.md)
+-   [Host de Protocolo de Autenticação Extensível (EAPHost)](../eaphost/about-eap-host.md)
 -   [Gerenciamento de senhas MS-CHAP](/previous-versions/windows/desktop/mschap/ms-chap-password-management-reference)
--   [NAP (proteção de acesso à rede)](../nap/nap-reference.md)
--   [NPS (extensões do servidor de políticas de rede)](../nps/ias-internet-authentication-service-reference.md)
+-   [NAP (Proteção de Acesso à Rede)](../nap/nap-reference.md)
+-   [NpS (Extensões do Servidor de Políticas de Rede)](../nps/ias-internet-authentication-service-reference.md)
 -   [Controles dos pais](../parcon/parental-controls-reference.md)
 -   [Provedores WMI de segurança](../secprov/security-wmi-providers-reference.md)
--   [Serviços de base do TPM (TBS)](../tbs/tbs-reference.md)
+-   [TBS (Serviços Base do TPM)](../tbs/tbs-reference.md)
 -   [Windows Biometric Framework](../secbiomet/biometric-service-api-reference.md)
 
 ## <a name="application-installation-and-servicing"></a>Instalação e manutenção de aplicativos
 
--   [Explorador de jogos](/previous-versions/windows/desktop/legacy/ee415251(v=vs.85))
+-   [Explorador de Jogos](/previous-versions/windows/desktop/legacy/ee415251(v=vs.85))
 -   [Assemblies lado a lado](../sbscs/side-by-side-assemblies-reference.md)
--   [APIs de empacotamento, implantação e consulta](../appxpkg/api-reference.md
+-   [Empacotamento, implantação e APIs de consulta](../appxpkg/api-reference.md
 )
--   [Licença de desenvolvedor](../devlic/developer-license-apis.md)
--   [Gerenciador de reinicialização](../rstmgr/restart-manager-reference.md)
+-   [Licença do desenvolvedor](../devlic/developer-license-apis.md)
+-   [Gerenciador de Reinicialização](../rstmgr/restart-manager-reference.md)
 -   [Windows Installer](../msi/windows-installer-portal.md)
 
-## <a name="system-admin-and-management"></a>Administração e gerenciamento do sistema
+## <a name="system-admin-and-management"></a>Administrador e gerenciamento do sistema
 
-As interfaces de [Administração do sistema](../srvnodes/system-administration.md) permitem instalar, configurar e fazer a manutenção de aplicativos ou sistemas.
+As [interfaces de](../srvnodes/system-administration.md) administração do sistema permitem instalar, configurar e serviços de aplicativos ou sistemas.
 
--   [Provedor WMI de Dados de Configuração da Inicialização](/previous-versions/windows/desktop/bcd/bcd-reference)
+-   [Dados de Configuração da Inicialização provedor WMI](/previous-versions/windows/desktop/bcd/bcd-reference)
 -   [Clusters de failover](/previous-versions/windows/desktop/mscs/failover-cluster-apis-portal)
 -   [Gerenciador de Recursos de Servidor de Arquivos (FSRM)](/previous-versions/windows/desktop/fsrm/fsrm-reference)
 -   [Política de Grupo](/previous-versions/windows/desktop/Policy/group-policy-reference)
--   [MMC (console de gerenciamento Microsoft) 2,0](/previous-versions/windows/desktop/mmc/mmc-reference)
+-   [Console de Gerenciamento Microsoft (MMC) 2.0](/previous-versions/windows/desktop/mmc/mmc-reference)
 -   [NetShell](/previous-versions/windows/desktop/netshell/netshell-reference)
--   [Infraestrutura de gerenciamento de configurações](/previous-versions/windows/desktop/smi/settings-management-infrastructure--smi-)
+-   [Configurações Infraestrutura de gerenciamento](/previous-versions/windows/desktop/smi/settings-management-infrastructure--smi-)
 -   [Log de Inventário de Software](/previous-versions/windows/desktop/sil/software-inventory-logging-portal)
 -   [Licenciamento de software](/previous-versions/windows/desktop/secslapi/software-licensing-api-reference)
--   [Gerenciador de reinicialização](../rstmgr/restart-manager-portal.md)
--   [Infraestrutura de gerenciamento de configurações](/previous-versions/windows/desktop/smi/settings-management-infrastructure--smi-)
+-   [Gerenciador de Reinicialização](../rstmgr/restart-manager-portal.md)
+-   [Configurações Infraestrutura de gerenciamento](/previous-versions/windows/desktop/smi/settings-management-infrastructure--smi-)
 -   [Restauração do Sistema](../sr/system-restore-portal.md)
 -   [Desligamento do sistema](../shutdown/system-shutdown.md)
 -   [Agendador de Tarefas](../taskschd/task-scheduler-start-page.md)
 -   [Log de acesso do usuário](/previous-versions/windows/desktop/ual/user-access-logging-reference)
 -   [Windows Virtual PC](../vpc/virtual-pc-reference.md)
--   [Servidor virtual da Microsoft](/previous-versions/windows/desktop/msvs/microsoft-virtual-server-reference)
--   [Provedor de balanceamento de carga de rede](/previous-versions/windows/desktop/wlbsprov/network-load-balancing-provider-reference)
--   [WMI do Windows Defender v2](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
--   [Windows Deployment Services](../wds/windows-deployment-services-portal.md)
--   [Vantagem do Windows Genuine](/previous-versions/windows/desktop/wingen/windows-genuine-advantage-api-functions)
--   [Infraestrutura de gerenciamento do Windows](/previous-versions/windows/desktop/wmi_v2/wmi-reference)
+-   [Microsoft Virtual Server](/previous-versions/windows/desktop/msvs/microsoft-virtual-server-reference)
+-   [Provedor de Balanceamento de Carga de Rede](/previous-versions/windows/desktop/wlbsprov/network-load-balancing-provider-reference)
+-   [Windows Defender WMI v2](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
+-   [Windows Serviços de Implantação](../wds/windows-deployment-services-portal.md)
+-   [Windows Vantagem original](/previous-versions/windows/desktop/wingen/windows-genuine-advantage-api-functions)
+-   [Windows Infraestrutura de gerenciamento](/previous-versions/windows/desktop/wmi_v2/wmi-reference)
 -   [WMI (Instrumentação de Gerenciamento do Windows)](../wmisdk/wmi-reference.md)
 -   [Gerenciamento Remoto do Windows](../winrm/portal.md)
--   [Proteção de Recursos do Windows](../wfp/windows-resource-protection-portal.md)
+-   [Windows Proteção de recursos](../wfp/windows-resource-protection-portal.md)
 -   [Windows Server Update Services](/previous-versions/windows/desktop/ms744624(v=vs.85))
--   [Ferramenta de avaliação do sistema do Windows](../winsat/winsat-reference.md)
+-   [Windows Ferramenta de Avaliação do Sistema](../winsat/winsat-reference.md)
 -   [Windows Update Agent](../wua_sdk/portal-client.md)
 
 ## <a name="networking-and-internet"></a>Rede e Internet
 
-As APIs de [rede](../devnotes/networking.md) permitem a comunicação entre aplicativos em uma rede. Você também pode criar e gerenciar o acesso a recursos compartilhados, como diretórios e impressoras de rede.
+As APIs [de](../devnotes/networking.md) Rede permitem a comunicação entre aplicativos em uma rede. Você também pode criar e gerenciar o acesso a recursos compartilhados, como diretórios e impressoras de rede.
 
 -   [Sistema de nome de domínio (DNS)](../dns/dns-reference.md)
 -   [Protocolo DHCP](/previous-versions/windows/desktop/dhcp/dhcp-start-page)
--   [Serviço de fax](/previous-versions/windows/desktop/fax/-mfax-fax-service-reference)
+-   [Serviço de Fax](/previous-versions/windows/desktop/fax/-mfax-fax-service-reference)
 -   [Assistente para Conexão](/previous-versions/windows/desktop/get_connected/get-connected-wizard-api-reference)
 -   [Servidor HTTP](../http/http-server-api-reference.md)
 -   [Firewall e compartilhamento de conexão com a Internet](/previous-versions/windows/desktop/ics/internet-connection-sharing-and-internet-connection-firewall-reference)
 -   [Auxiliar de IP](../iphlp/ip-helper-function-reference.md)
--   [Firewall de conexão com a Internet IPv6](/previous-versions/windows/desktop/ics/ipv6-firewall-configuration-reference)
+-   [Firewall de Conexão com a Internet IPv6](/previous-versions/windows/desktop/ics/ipv6-firewall-configuration-reference)
 -   [Base de informações de gerenciamento](/previous-versions/windows/desktop/mib/management-information-base-reference)
 -   [Serviço de enfileiramento de mensagens (MSMQ)](/previous-versions/windows/desktop/legacy/ms700112(v=vs.85))
--   [Protocolo de alocação de cliente dinâmico (MADCAP) de endereço multicast](/previous-versions/windows/desktop/madcap/madcap-reference)
--   [NAT (conversão de endereços de rede)](/previous-versions/windows/desktop/ics/network-address-translation-traversal-reference)
--   [NLM (Gerenciador de lista de rede)](../nla/network-list-manager-api-reference.md)
--   [Gerenciamento de rede](../netmgmt/network-management-reference.md)
+-   [Protocolo DE ALOCAÇÃO de Cliente Dinâmico de Endereço Multicast (MADCAP)](/previous-versions/windows/desktop/madcap/madcap-reference)
+-   [NAT (Conversão de Endereços de Rede)](/previous-versions/windows/desktop/ics/network-address-translation-traversal-reference)
+-   [NLM (Gerenciador de Listas de Rede)](../nla/network-list-manager-api-reference.md)
+-   [Gerenciamento de Rede](../netmgmt/network-management-reference.md)
 -   [Gerenciamento de compartilhamento de rede](../netshare/network-share-management-reference.md)
 -   [Ponto a ponto](../p2psdk/portal.md)
--   [QOS (qualidade de serviço)](/previous-versions/windows/desktop/qos/qos-reference)
+-   [QOS (Qualidade de Serviço)](/previous-versions/windows/desktop/qos/qos-reference)
 -   [Chamada de Procedimento Remoto](../rpc/reference.md)
--   [Serviço de roteamento e acesso remoto (RAS)](../rras/portal.md)
+-   [RAS (Serviço de Roteamento e Acesso Remoto)](../rras/portal.md)
 -   [Protocolo SNMP](../snmp/snmp-reference.md)
 -   [Gerenciamento de SMB](/previous-versions/windows/desktop/smb/smb-management-api-portal)
--   [TAPI (interfaces de programação de aplicativo) de telefonia](../tapi/telephony-application-programming-interfaces.md)
+-   [TAPI (Interfaces de Programação de Aplicativos de Telefonia)](../tapi/telephony-application-programming-interfaces.md)
 -   [WebDAV](../webdav/webdav-api-reference.md)
 -   [Componente de protocolo WebSocket](../websock/web-socket-protocol-component-api-portal.md)
 -   Rede sem fio:
     -   [Bluetooth](../bluetooth/bluetooth-reference.md)
-    -   [IrDA](/previous-versions/windows/desktop/irda/irda-and-windows-sockets-reference)
+    -   [Irda](/previous-versions/windows/desktop/irda/irda-and-windows-sockets-reference)
     -   [Banda larga móvel](../mbn/mobile-broadband-networks-api-reference.md)
-    -   [WiFi nativo](../nativewifi/native-wifi-reference.md)
-    -   [Windows Connect agora](../wcn/windows-connect-now-reference.md)
+    -   [Wi-Fi nativo](../nativewifi/native-wifi-reference.md)
+    -   [Conexão Fácil do Windows](../wcn/windows-connect-now-reference.md)
     -   [Gerenciador de Conexão do Windows](../wcm/windows-connection-manager-reference.md)
 -   [Plataforma de filtragem do Windows](../fwp/fwp-reference.md)
 -   [Firewall do Windows com Advanced Security](/previous-versions/windows/desktop/ics/windows-firewall-with-advanced-security-reference)
--   [WinHTTP (serviços HTTP do Windows)](../winhttp/winhttp-reference.md)
--   [Internet do Windows (WinINet)](../wininet/wininet-reference.md)
--   [Sistema de rede do Windows (WNet)](../wnet/windows-networking-reference.md)
--   [Virtualização de rede do Windows](/previous-versions/windows/desktop/wnv/windows-network-virtualization-portal)
--   [Plataforma Windows RSS](/previous-versions/windows/desktop/ms684702(v=vs.85))
--   [Windows Sockets (Winsock)](../winsock/winsock-reference.md)
--   [Serviços Web do Windows](../wsw/windows-web-services-reference.md)
+-   [Windows Serviços HTTP (WinHTTP)](../winhttp/winhttp-reference.md)
+-   [Windows Internet (WinINet)](../wininet/wininet-reference.md)
+-   [Windows Rede (WNet)](../wnet/windows-networking-reference.md)
+-   [Windows Virtualização de rede](/previous-versions/windows/desktop/wnv/windows-network-virtualization-portal)
+-   [Windows Plataforma RSS](/previous-versions/windows/desktop/ms684702(v=vs.85))
+-   [Windows Soquetes (Winsock)](../winsock/winsock-reference.md)
+-   [Windows Serviços Web](../wsw/windows-web-services-reference.md)
 -   [Solicitação estendida HTTP XML](/previous-versions/windows/desktop/ixhr2/ixmlhttprequest2-portal)
 
 ## <a name="deprecated-or-legacy-apis"></a>APIs preteridas ou herdadas
 
-Veja a seguir as tecnologias e as APIs que estão desatualizadas ou foram substituídas ou preteridas dos sistemas operacionais cliente e servidor do Windows.
+veja a seguir as tecnologias e as APIs que estão desatualizadas ou foram substituídas ou preteridas dos sistemas operacionais cliente e servidor do Windows.
 
 -   [DirectMusic](/previous-versions/ms807133(v=msdn.10))
 -   [DirectSound](/previous-versions/windows/desktop/ee416975(v=vs.85))
 -   O Microsoft [UDDI SDK](/previous-versions/windows/desktop/aa966237(v=bts.10)) agora está incluído com [o Microsoft BizTalk Server](/previous-versions/bb905520(v=msdn.10)).
--   [Troca dinâmica de dados de rede (DDE)](../ipc/network-dde-reference.md)
--   [Serviço de instalação remota](/previous-versions/windows/it-pro/windows-server-2003/cc786442(v=ws.10)): em vez disso, use os [serviços de implantação do Windows](../wds/windows-deployment-services-portal.md) .
--   [VDS (serviço de disco virtual)](../vds/vds-reference.md): Use o [Gerenciamento de armazenamento do Windows](/previous-versions/windows/desktop/stormgmt/windows-storage-management-api-portal) .
+-   [troca dinâmica de dados de rede (DDE)](../ipc/network-dde-reference.md)
+-   [serviço de instalação remota](/previous-versions/windows/it-pro/windows-server-2003/cc786442(v=ws.10)): Use [Windows serviços de implantação](../wds/windows-deployment-services-portal.md) em vez disso.
+-   [VDS (serviço de disco Virtual)](../vds/vds-reference.md): Use [Windows gerenciamento de Armazenamento](/previous-versions/windows/desktop/stormgmt/windows-storage-management-api-portal) em vez disso.
 -   Serviços de terminal: use [serviços de área de trabalho remota](../termserv/terminal-services-reference.md).
--   [Gerenciador de direitos do Windows Media](/previous-versions//bb614742(v=vs.85))
--   [Sistema de mensagens do Windows (MAPI)](/previous-versions/windows/desktop/windowsmapi/mapi-stub-library-and-simple-mapi): use [MAPI do Office](/previous-versions/office/developer/office-2007/cc765775(v=office.12)) em vez disso.
--   [Plataforma de gadget do Windows](/previous-versions/windows/desktop/gadgetplatform/windows-gadget-platform-portal): Crie aplicativos UWP em vez disso.
--   [Barra lateral do Windows](/previous-versions/windows/desktop/sidebar/-sidebar-ref-entry): Crie aplicativos UWP em vez disso.
+-   [Windows Gerenciador de direitos de mídia](/previous-versions//bb614742(v=vs.85))
+-   [Windows Messaging (mapi)](/previous-versions/windows/desktop/windowsmapi/mapi-stub-library-and-simple-mapi): Use [Office mapi](/previous-versions/office/developer/office-2007/cc765775(v=office.12)) em vez disso.
+-   [plataforma de Gadget Windows](/previous-versions/windows/desktop/gadgetplatform/windows-gadget-platform-portal): crie aplicativos UWP em vez disso.
+-   [barra lateral do Windows](/previous-versions/windows/desktop/sidebar/-sidebar-ref-entry): crie aplicativos UWP em vez disso.
 -   [Windows SideShow](/previous-versions//ms744179(v=vs.85)): sem substituição.
 -   [Efeitos de bitmap do WPF](/previous-versions/windows/desktop/wibe/-wibe-about-bitmapeffects)

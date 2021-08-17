@@ -1,5 +1,5 @@
 ---
-description: Enviado a um aplicativo que iniciou um cartão de treinamento com a ajuda do Windows.
+description: enviado a um aplicativo que iniciou um cartão de treinamento com Windows ajuda.
 title: Mensagem de WM_TCARD (WinUser. h)
 ms.topic: reference
 ms.date: 05/31/2018
@@ -13,16 +13,16 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 5eb6a3b5a4b840549b75e152f0420bfa055138c4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 85435c5674ad6a2ac4e05edaa5d450dc61de9eac6dae05d3b19662aec91a61f9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104169416"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117856981"
 ---
 # <a name="wm_tcard-message"></a>Mensagem do WM \_ TCARD
 
-Enviado a um aplicativo que iniciou um cartão de treinamento com a ajuda do Windows. A mensagem informa ao aplicativo quando o usuário clica em um botão autoria. Um aplicativo inicia um cartão de treinamento especificando o comando HELP \_ TCARD em uma chamada para a função [**WinHelp**](/windows/desktop/api/Winuser/nf-winuser-winhelpa) .
+enviado a um aplicativo que iniciou um cartão de treinamento com Windows ajuda. A mensagem informa ao aplicativo quando o usuário clica em um botão autoria. Um aplicativo inicia um cartão de treinamento especificando o comando HELP \_ TCARD em uma chamada para a função [**WinHelp**](/windows/desktop/api/Winuser/nf-winuser-winhelpa) .
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -75,7 +75,7 @@ O usuário fechou o cartão de treinamento.
 
 </dt> <dd>
 
-O usuário clicou em um botão de **ajuda** do Windows autorizado.
+o usuário clicou em um botão de **ajuda** de Windows autorizado.
 
 </dd> <dt>
 
@@ -163,7 +163,7 @@ Se *idAction* especificar \_ o help TCARD \_ data, esse parâmetro será um **lo
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O valor de retorno é ignorado; Use zero.
 
@@ -173,7 +173,7 @@ O valor de retorno é ignorado; Use zero.
 
 | Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                                          |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho XP\]<br/>                                          |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                 |
 | Cabeçalho<br/>                   | <dl> <dt>WinUser. h</dt> </dl> |
 

@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 607b583b89358d2d28030a4187b1608174d849c0
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 410ec268da89ad4033c88a90c2b37bfa8e78a7b9c229cab72c8ad07e666fce42
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105784683"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117730032"
 ---
 # <a name="id3dxprtcompbufferextracttomesh-method"></a>Método ID3DXPRTCompBuffer:: ExtractToMesh
 
@@ -79,7 +79,7 @@ Ponteiro para um objeto de malha [**ID3DXMesh**](id3dxmesh.md) que armazenará o
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 

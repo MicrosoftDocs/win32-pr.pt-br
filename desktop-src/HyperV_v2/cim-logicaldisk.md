@@ -15,16 +15,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: b7305d0fa6ef45b5a97eb0fb6ab9ea740c98a392
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0fccc6600e0eb5f04fd7d00360402ad85a94746e55781acbd6b1a35c7f9b94fa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103922258"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117812101"
 ---
 # <a name="cim_logicaldisk-class-hyper-v-management"></a>Classe CIM_LogicalDisk (gerenciamento do Hyper-V)
 
-Representa um intervalo contíguo de blocos lógicos que é identificável por um sistema de arquivos por meio do campo **DeviceID** (chave) do disco. Por exemplo, em um ambiente do Windows, o campo **DeviceID** contém uma letra da unidade; em um ambiente UNIX, ele contém o caminho de acesso; e em um ambiente do NetWare, ele contém o nome do volume.
+Representa um intervalo contíguo de blocos lógicos que é identificável por um sistema de arquivos por meio do campo **DeviceID** (chave) do disco. por exemplo, em um ambiente Windows, o campo **deviceid** contém uma letra da unidade; em um ambiente UNIX, ele contém o caminho de acesso; e em um ambiente do NetWare, ele contém o nome do volume.
 
 ## <a name="syntax"></a>Sintaxe
 

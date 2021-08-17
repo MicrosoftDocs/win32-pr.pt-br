@@ -1,19 +1,19 @@
 ---
-description: O exemplo a seguir mostra como iniciar uma sessão de rastreamento, habilita um provedor baseado em manifesto ou clássico, desabilita o provedor e, em seguida, interrompe a sessão.
+description: O exemplo a seguir mostra como iniciar uma sessão de rastreamento, habilita um provedor clássico ou baseado em manifesto, desabilita o provedor e interrompe a sessão.
 ms.assetid: 13c83b62-9235-4101-82a9-a118e6ece3d5
 title: Exemplo que cria uma sessão e habilita um provedor clássico ou baseado em manifesto
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d407bc1570e154dca99784c24a93911fe55409f5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b660daf969db71e9d4c6f7f9d7b5afaeb32737f1575923663df678d88b14cde1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104967429"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117814598"
 ---
 # <a name="example-that-creates-a-session-and-enables-a-manifest-based-or-classic-provider"></a>Exemplo que cria uma sessão e habilita um provedor clássico ou baseado em manifesto
 
-O exemplo a seguir mostra como iniciar uma sessão de rastreamento, habilita um provedor baseado em manifesto ou clássico, desabilita o provedor e, em seguida, interrompe a sessão.
+O exemplo a seguir mostra como iniciar uma sessão de rastreamento, habilita um provedor clássico ou baseado em manifesto, desabilita o provedor e interrompe a sessão.
 
 
 ```C++

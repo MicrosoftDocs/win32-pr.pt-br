@@ -4,12 +4,12 @@ ms.assetid: aaa4069e-0b6a-4a76-b950-1a85a9ed969d
 title: Implementando DllRegisterServer
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b994e80a181b69efffbe6123382957e7a38f8278
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: e39d55b73dd70a21c10df26a100f964917a57dd9f036ebd5c2708359bca1dd50
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104087778"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117998087"
 ---
 # <a name="implementing-dllregisterserver"></a>Implementando DllRegisterServer
 
@@ -36,7 +36,7 @@ g_Templates
 
 
 
-matriz. No entanto, essa função tem algumas limitações. Primeiro, ele atribui todos os filtros à categoria "filtros do DirectShow" (CLSID \_ LegacyAmFilterCategory), mas nem todos os filtros pertencem a essa categoria. Filtros de captura e filtros de compactação, por exemplo, têm suas próprias categorias. Em segundo lugar, se o filtro der suporte a um dispositivo de hardware, talvez seja necessário registrar duas partes adicionais de informações que o **AMovieDLLRegisterServer2** não manipula: a *média* e a *categoria do PIN*. Um meio define um método de comunicação em um dispositivo de hardware, como um barramento. A categoria de PIN define a função de um PIN. Para obter informações sobre médias, consulte "KSPIN \_ Medium" no Microsoft Windows Driver Development Kit (DDK). Para obter uma lista de categorias de PIN, consulte [Pin Property Set](pin-property-set.md).
+matriz. No entanto, essa função tem algumas limitações. primeiro, ele atribui todos os filtros à categoria "filtros de DirectShow" (CLSID \_ LegacyAmFilterCategory), mas nem todos os filtros pertencem a essa categoria. Filtros de captura e filtros de compactação, por exemplo, têm suas próprias categorias. Em segundo lugar, se o filtro der suporte a um dispositivo de hardware, talvez seja necessário registrar duas partes adicionais de informações que o **AMovieDLLRegisterServer2** não manipula: a *média* e a *categoria do PIN*. Um meio define um método de comunicação em um dispositivo de hardware, como um barramento. A categoria de PIN define a função de um PIN. para obter informações sobre médias, consulte "KSPIN \_ medium" no Microsoft Windows Driver Development Kit (DDK). Para obter uma lista de categorias de PIN, consulte [Pin Property Set](pin-property-set.md).
 
 Se você quiser especificar uma categoria de filtro, uma média ou uma categoria de PIN, chame o método [**IFilterMapper2:: RegisterFilter**](/windows/desktop/api/Strmif/nf-strmif-ifiltermapper2-registerfilter) de em **DllRegisterServer**. Esse método usa um ponteiro para uma estrutura [**REGFILTER2**](/windows/desktop/api/strmif/ns-strmif-regfilter2) , que especifica informações sobre o filtro.
 

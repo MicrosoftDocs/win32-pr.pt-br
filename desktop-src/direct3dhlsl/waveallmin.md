@@ -1,9 +1,9 @@
 ---
 title: Função WaveActiveMin
-description: Retorna o valor mínimo da expressão em todas as pistas ativas na onda atual, replicando-a de volta para todas as pistas ativas.
+description: Retorna o valor mínimo da expressão em todas as faixas ativas na onda atual replica-a de volta para todas as faixas ativas.
 ms.assetid: BA762C02-894C-4AF9-A226-C1E3AAC286FF
 keywords:
-- HLSL da função WaveActiveMin
+- Função WaveActiveMin HLSL
 topic_type:
 - apiref
 api_name:
@@ -22,7 +22,7 @@ ms.locfileid: "117721783"
 ---
 # <a name="waveactivemin-function"></a>Função WaveActiveMin
 
-Retorna o valor mínimo da expressão em todas as pistas ativas na onda atual, replicando-a de volta para todas as pistas ativas.
+Retorna o valor mínimo da expressão em todas as faixas ativas na onda atual replica-a de volta para todas as faixas ativas.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -51,7 +51,7 @@ O valor mínimo.
 
 A ordem das operações é indefinida.
 
-Essa função tem suporte do modelo de sombreador 6,0 em todos os estágios de sombreador. 
+Essa função tem suporte do modelo de sombreador 6.0 em todos os estágios do sombreador. 
 
 
 
@@ -68,10 +68,10 @@ Essa função tem suporte do modelo de sombreador 6,0 em todos os estágios de s
 
 <dl> <dt>
 
-[Visão geral do modelo do sombreador 6](hlsl-shader-model-6-0-features-for-direct3d-12.md)
+[Visão geral do Modelo de Sombreador 6](hlsl-shader-model-6-0-features-for-direct3d-12.md)
 </dt> <dt>
 
-[Modelo do sombreador 6](shader-model-6-0.md)
+[Modelo de sombreador 6](shader-model-6-0.md)
 </dt> </dl>
 
  

@@ -18,12 +18,12 @@ api_location:
 - API-MS-Win-Core-threadpool-legacy-l1-1-0.dll
 - API-MS-Win-DownLevel-Kernel32-l1-1-0.dll
 - MinKernelBase.dll
-ms.openlocfilehash: 30f5ad5f88bec9eb7eebff5a73d8f84f633cb249
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4181aa43cb0c2844f99b7ad81b448271366eb2925740c25d400f891389efb129
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103828532"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117765506"
 ---
 # <a name="unregisterwaitex-function"></a>Função UnregisterWaitEx
 
@@ -83,9 +83,9 @@ Em algumas condições, a função falhará com o **erro \_ e/s \_ pendente** se
 
 Se *CompletionEvent* for um identificador para um evento fornecido pelo chamador, é possível que a função seja bem-sucedida, falhe com **erro \_ e/s \_ pendente** ou falhe com um código de erro diferente. Se a função for bem-sucedida ou se a função falhar com **erro \_ e/s \_ pendente**, o chamador sempre deverá esperar até que o evento seja sinalizado para fechar o evento. Se a função falhar com um código de erro diferente, não será necessário aguardar até que o evento seja sinalizado para fechar o evento.
 
-**Windows XP:** Se *CompletionEvent* for um identificador para um evento fornecido pelo chamador e a função falhar com **erro e \_ /s \_ pendente**, o chamador deverá aguardar até que o evento seja sinalizado para fechar o evento. Esse comportamento mudou a partir do Windows Vista.
+**Windows XP:** Se *CompletionEvent* for um identificador para um evento fornecido pelo chamador e a função falhar com **erro e \_ /s \_ pendente**, o chamador deverá aguardar até que o evento seja sinalizado para fechar o evento. esse comportamento mudou a partir do Windows Vista.
 
-Para compilar um aplicativo que usa essa função, defina **\_ Win32 \_ WinNT** como 0x0500 ou posterior. Para obter mais informações, consulte [usando os cabeçalhos do Windows](../winprog/using-the-windows-headers.md).
+Para compilar um aplicativo que usa essa função, defina **\_ Win32 \_ WinNT** como 0x0500 ou posterior. para obter mais informações, consulte [usando os cabeçalhos de Windows](../winprog/using-the-windows-headers.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -93,9 +93,9 @@ Para compilar um aplicativo que usa essa função, defina **\_ Win32 \_ WinNT** 
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                                                                                                                                                                                                                                                                                                                    |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                                                                                                                                                                                                                                                                                           |
-| parâmetro<br/>                   | <dl> <dt>Threadpoollegacyapiset. h no Windows 8 e no Windows Server 2012 (incluir Windows. h); </dt> <dt>Winbase. h no Windows 7, Windows server 2008 R2, Windows Vista, Windows Server 2008, Windows XP e Windows Server 2003 (inclua o Windows. h)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho XP\]<br/>                                                                                                                                                                                                                                                                                                                    |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                                                                                                                                                                                                                                                                                           |
+| Cabeçalho<br/>                   | <dl> <dt>Threadpoollegacyapiset. h em Windows 8 e Windows Server 2012 (inclua Windows. h);</dt> <dt>WinBase. h no Windows 7, Windows server 2008 R2, Windows Vista, Windows server 2008, Windows XP e Windows server 2003 (incluir Windows. h)</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>Kernel32.lib</dt> </dl>                                                                                                                                                                                                                                                                        |
 | DLL<br/>                      | <dl> <dt>Kernel32.dll</dt> </dl>                                                                                                                                                                                                                                                                        |
 

@@ -6,12 +6,12 @@ keywords:
 - padrão de repetição Agendador de Tarefas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 451b2c2cf7e48c40496ddba95728f435ab494ab7
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 7039b57bdc6cc7f53125e74b8a6fda7d017106cd44c66d2535f7fdf27505a960
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104292496"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117759347"
 ---
 # <a name="repeating-a-task"></a>Repetindo uma tarefa
 
@@ -31,7 +31,7 @@ Se você registrar uma tarefa que contém um gatilho com um intervalo de repeti�
 4.  A próxima tarefa começa no final do terceiro minuto.
 5.  A próxima tarefa é iniciada no final do quarto minuto.
 
-**Windows Server 2003, Windows XP e windows 2000:** Se você registrar uma tarefa que contém um gatilho com um intervalo de repetição igual a um minuto e uma duração de repetição igual a quatro minutos, a tarefa será iniciada quatro vezes.
+**Windows Server 2003, Windows XP e Windows 2000:** Se você registrar uma tarefa que contém um gatilho com um intervalo de repetição igual a um minuto e uma duração de repetição igual a quatro minutos, a tarefa será iniciada quatro vezes.
 
 ## <a name="objects-interfaces-and-xml-elements"></a>Objetos, interfaces e elementos XML
 
@@ -48,9 +48,9 @@ Ao ler ou gravar XML para uma tarefa, o padrão de repetição é especificado n
 [Gatilhos de tarefa](task-triggers.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

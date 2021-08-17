@@ -16,18 +16,18 @@ api_type:
 - COM
 api_location:
 - Wbemdisp.dll
-ms.openlocfilehash: 3f8a8c85cb4c78be578187b1f55afce078fe7bd5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8c35daf5b6e986b2519f127969edc5bbcf05a260bd23e8aa1168b1a7c20a5372
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104461312"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117739433"
 ---
 # <a name="swbemdatetimegetfiletime-method"></a>Método SWbemDateTime. GetFileTime
 
 O método **GetFileTime** do objeto [**SWbemDateTime**](swbemdatetime.md) converte um valor de data e hora no formato de [DateTime](datetime.md) do CIM para o formato FILETIME.
 
-Se o parâmetro for definido como **true**, o valor de retorno representará uma hora local para o cliente. Caso contrário, o valor de retorno será uma hora UTC (tempo Universal Coordenado). Uma estrutura de [data e hora](datetime.md) **FILETIME** é um valor de 64 bits que representa o número de unidades de 100 nanossegundos desde o início de 1º de janeiro de 1601. Instrumentação de Gerenciamento do Windows (WMI) trata os valores de **FILETIME** como representações de cadeia de caracteres de números de 64 bits sem sinal.
+Se o parâmetro for definido como **true**, o valor de retorno representará uma hora local para o cliente. Caso contrário, o valor de retorno será uma hora UTC (tempo Universal Coordenado). Uma estrutura de [data e hora](datetime.md) **FILETIME** é um valor de 64 bits que representa o número de unidades de 100 nanossegundos desde o início de 1º de janeiro de 1601. Windows A instrumentação de gerenciamento (WMI) trata os valores de **FILETIME** como representações de cadeia de caracteres de números de 64 bits sem sinal.
 
 Para obter uma explicação dessa sintaxe, consulte [convenções de documento para a API de script](document-conventions-for-the-scripting-api.md).
 
@@ -53,7 +53,7 @@ Indica se o valor retornado é interpretado como hora local. A propriedade UTC e
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 A data e a hora no formato **FILETIME** .
 
@@ -99,7 +99,7 @@ Para obter exemplos de como usar o objeto [**SWbemDateTime**](swbemdatetime.md) 
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| parâmetro<br/>                   | <dl> <dt>Wbemdisp. h</dt> </dl>   |
+| Cabeçalho<br/>                   | <dl> <dt>Wbemdisp. h</dt> </dl>   |
 | Biblioteca de tipos<br/>             | <dl> <dt>Wbemdisp. tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Wbemdisp.dll</dt> </dl> |
 | CLSID<br/>                    | \_SWBEMDATETIME CLSID<br/>                                                         |

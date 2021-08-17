@@ -1,29 +1,29 @@
 ---
-title: Bloqueio de conta (provedor de WinNT)
-description: Quando o número de tentativas de logon com falha for excedido, a conta de usuário ficará bloqueada durante o número de minutos especificado pelo atributo lockoutDuration.
+title: Bloqueio de conta (provedor WinNT)
+description: Quando o número de tentativas de logon com falha é excedido, a conta de usuário fica bloqueada pelo número de minutos especificado pelo atributo lockoutDuration.
 ms.assetid: d7c4134a-0712-4809-83ec-cc09e87afae9
 ms.tgt_platform: multiple
 keywords:
-- Bloqueio de conta ADSI, provedor de WinNT
-- ADSI do provedor WinNT, exemplos de gerenciamento de usuário, bloqueio de conta
+- ADSI de bloqueio de conta, provedor WinNT
+- ADSI do provedor WinNT, exemplos de gerenciamento de usuários, Bloqueio de Conta
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0ffeacb18b42beeb20b4af8bf571e611a85ab118
-ms.sourcegitcommit: b0ebdefc3dcd5c04bede94091833aa1015a2f95c
+ms.openlocfilehash: 86e28c2a4bf58f5559070af78ca55235e8b10c16b2b856a63a256767d4d67a53
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "105755485"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117838356"
 ---
-# <a name="account-lockout-winnt-provider"></a>Bloqueio de conta (provedor de WinNT)
+# <a name="account-lockout-winnt-provider"></a>Bloqueio de conta (provedor WinNT)
 
-Quando o número de tentativas de logon com falha for excedido, a conta de usuário ficará bloqueada durante o número de minutos especificado pelo atributo [**lockoutDuration**](/windows/desktop/ADSchema/a-lockoutduration) . A propriedade [**IADsUser. IsAccountLocked**](iadsuser-property-methods.md) parece ser a propriedade a ser usada para ler e modificar o estado de bloqueio de uma conta de usuário, mas o provedor ADSI do Winnt tem restrições que limitam o uso da propriedade **IsAccountLocked** .
+Quando o número de tentativas de logon com falha é excedido, a conta de usuário fica bloqueada pelo número de minutos especificado pelo [**atributo lockoutDuration.**](/windows/desktop/ADSchema/a-lockoutduration) A [**propriedade IADsUser.IsAccountLocked**](iadsuser-property-methods.md) parece ser a propriedade a ser usada para ler e modificar o estado de bloqueio de uma conta de usuário, mas o provedor ADSI do WinNT tem restrições que limitam o uso da **propriedade IsAccountLocked.**
 
 ## <a name="resetting-the-account-lockout-status"></a>Redefinindo o status de bloqueio da conta
 
-Ao usar o provedor WinNT, a propriedade [**IsAccountLocked**](iadsuser-property-methods.md) só pode ser definida como **false**, o que desbloqueia a conta. A tentativa de definir a propriedade **IsAccountLocked** como **true** falhará. Somente o sistema pode bloquear uma conta.
+Ao usar o provedor WinNT, a [**propriedade IsAccountLocked**](iadsuser-property-methods.md) só pode ser definida como **FALSE,** que desbloqueia a conta. A tentativa de definir a **propriedade IsAccountLocked** como **TRUE** falhará. Somente o sistema pode bloquear uma conta.
 
-O exemplo de código a seguir demonstra como usar Visual Basic com ADSI para desbloquear uma conta de usuário.
+O exemplo de código a seguir demonstra como usar o Visual Basic adsi para desbloquear uma conta de usuário.
 
 
 ```VB
@@ -43,7 +43,7 @@ End Sub
 
 
 
-O exemplo de código a seguir demonstra como usar o C++ com ADSI para desbloquear uma conta de usuário.
+O exemplo de código a seguir demonstra como usar c++ com ADSI para desbloquear uma conta de usuário.
 
 
 ```C++
@@ -87,9 +87,9 @@ HRESULT UnlockAccount(LPCWSTR pwszUserDN)
 
 ## <a name="reading-the-account-lockout-status"></a>Lendo o status de bloqueio da conta
 
-Com o provedor WinNT, a propriedade [**IsAccountLocked**](iadsuser-property-methods.md) pode ser usada para determinar se uma conta está bloqueada. Se uma conta estiver bloqueada, a propriedade **IsAccountLocked** conterá **true**. Se uma conta não estiver bloqueada, a propriedade **IsAccountLocked** conterá **false**.
+Com o provedor WinNT, a [**propriedade IsAccountLocked**](iadsuser-property-methods.md) pode ser usada para determinar se uma conta está bloqueada. Se uma conta estiver bloqueada, a **propriedade IsAccountLocked** conterá **TRUE.** Se uma conta não estiver bloqueada, a **propriedade IsAccountLocked** conterá **FALSE.**
 
-O exemplo de código a seguir demonstra como usar Visual Basic com ADSI para determinar se uma conta está bloqueada.
+O exemplo de código a seguir demonstra como usar Visual Basic ADSI para determinar se uma conta está bloqueada.
 
 
 ```VB
@@ -106,7 +106,7 @@ End Function
 
 
 
-O exemplo de código a seguir demonstra como usar C++ com ADSI para determinar se uma conta está bloqueada.
+O exemplo de código a seguir demonstra como usar c++ com ADSI para determinar se uma conta está bloqueada.
 
 
 ```C++
@@ -153,6 +153,6 @@ HRESULT IsAccountLocked(LPCWSTR pwszUserDN, BOOL *pfLocked)
 
 
 
- 
+ 
 
- 
+ 

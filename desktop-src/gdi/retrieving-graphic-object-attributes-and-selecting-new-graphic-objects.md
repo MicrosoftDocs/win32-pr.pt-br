@@ -4,12 +4,12 @@ description: Um aplicativo pode recuperar os atributos de uma caneta, pincel, pa
 ms.assetid: 09d8412f-a67d-48d5-9c04-9233dee43cf9
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9b18dcef03bf769e8b2d11574429b64f481b1a79
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 61c58d946f61a6a83dcfeb2ddae24d735d3596e5e864cf672bab832d7db3aedf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104967588"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117886137"
 ---
 # <a name="retrieve-object-attributes-select-new-objects"></a>Recuperar atributos de objeto, selecionar novos objetos
 

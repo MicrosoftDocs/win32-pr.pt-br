@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: e4e3514d4717262a7afab7ae808d747de3a1b635
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 12cb5f1b41cc4450173c3a2fc35d01afb00e1cab9984edabfa3684ab33b8228d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108115624"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117730803"
 ---
 # <a name="d3dxvec3transformcoord-function-d3dx9mathh"></a>Função D3DXVec3TransformCoord (D3dx9math. h)
 
@@ -92,7 +92,7 @@ O valor de retorno para essa função é o mesmo valor retornado no parâmetro *
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

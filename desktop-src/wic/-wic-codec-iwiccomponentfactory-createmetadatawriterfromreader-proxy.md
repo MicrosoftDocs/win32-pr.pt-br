@@ -1,7 +1,7 @@
 ---
-description: Função de proxy para o método CreateMetadataWriterFromReader.
+description: Função proxy para o método CreateMetadataWriterFromReader.
 ms.assetid: da9e80d3-3265-428d-987e-8b344472527a
-title: Função IWICComponentFactory_CreateMetadataWriterFromReader_Proxy
+title: IWICComponentFactory_CreateMetadataWriterFromReader_Proxy função
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -21,9 +21,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118206657"
 ---
-# <a name="iwiccomponentfactory_createmetadatawriterfromreader_proxy-function"></a>\_Função de \_ proxy IWICComponentFactory CreateMetadataWriterFromReader
+# <a name="iwiccomponentfactory_createmetadatawriterfromreader_proxy-function"></a>Função proxy IWICComponentFactory \_ CreateMetadataWriterFromReader \_
 
-Função de proxy para o método [**CreateMetadataWriterFromReader**](/windows/desktop/api/Wincodecsdk/nf-wincodecsdk-iwiccomponentfactory-createmetadatawriterfromreader) .
+Função proxy para o [**método CreateMetadataWriterFromReader.**](/windows/desktop/api/Wincodecsdk/nf-wincodecsdk-iwiccomponentfactory-createmetadatawriterfromreader)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -43,30 +43,30 @@ HRESULT IWICComponentFactory_CreateMetadataWriterFromReader_Proxy(
 
 <dl> <dt>
 
-*Isso \_ PTR* \[\]
+*ESTE \_ PTR* \[ em\]
 </dt> <dd>
 
 Tipo: **[ **IWICComponentFactory**](/windows/desktop/api/Wincodecsdk/nn-wincodecsdk-iwiccomponentfactory)\***
 
-Ponteiro para este objeto [**IWICComponentFactory**](/windows/desktop/api/Wincodecsdk/nn-wincodecsdk-iwiccomponentfactory) .
+Ponteiro para este [**objeto IWICComponentFactory.**](/windows/desktop/api/Wincodecsdk/nn-wincodecsdk-iwiccomponentfactory)
 
 </dd> <dt>
 
-*pIReader* \[ no\]
+*pIReader* \[ Em\]
 </dt> <dd>
 
 Tipo: **[ **IWICMetadataReader**](/windows/desktop/api/Wincodecsdk/nn-wincodecsdk-iwicmetadatareader)\***
 
 </dd> <dt>
 
-*pguidVendor* \[ no\]
+*pguidVendor* \[ Em\]
 </dt> <dd>
 
-Tipo: **GUID \* const**
+Tipo: **const \* GUID**
 
 </dd> <dt>
 
-*ppIWriter* \[ fora\]
+*ppIWriter* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **IWICMetadataWriter**](/windows/desktop/api/Wincodecsdk/nn-wincodecsdk-iwicmetadatawriter)\*\***
@@ -77,7 +77,7 @@ Tipo: **[ **IWICMetadataWriter**](/windows/desktop/api/Wincodecsdk/nn-wincodecsd
 
 Tipo: **HRESULT**
 
-Se essa função for bem sucedido, ela retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
+Se essa função for bem-sucedida, ela retornará **S \_ OK.** Caso contrário, ele retornará um **código de erro HRESULT.**
 
 ## <a name="remarks"></a>Comentários
 
@@ -87,9 +87,9 @@ Se essa função for bem sucedido, ela retornará **S \_ OK**. Caso contrário, 
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows XP com SP2, somente aplicativos do Windows Vista \[ desktop\]<br/>                                                                                              |
-| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                                                                                             |
-| DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec. lib</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows XP com SP2, Windows aplicativos da área de trabalho do Vista \[\]<br/>                                                                                              |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                                                                                             |
+| DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec.lib</dt> </dl> |
 
 
 

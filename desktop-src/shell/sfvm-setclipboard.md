@@ -13,12 +13,12 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: c9c30848de77ef7de101eaa9d724f2f26f9d384c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 99548be90c7f4fb9b840e4d4c6f816710c6e02cc1a888ce0c1c774f73c58f668
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104989102"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117858208"
 ---
 # <a name="sfvm_setclipboard-message"></a>SFVM \_ mensagem da área de transferência
 
@@ -46,7 +46,7 @@ Use (WPARAM)-2 se o item estiver sendo recortado para a área de transferência 
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Sem valor de retorno.
 

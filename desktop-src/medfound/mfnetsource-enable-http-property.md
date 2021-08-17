@@ -1,31 +1,31 @@
 ---
-description: Especifica se o protocolo HTTP está habilitado na fonte de rede.
+description: Especifica se o protocolo HTTP está habilitado na origem da rede.
 ms.assetid: dcc4db5c-0274-4a8a-89a4-66cda62e1520
-title: Propriedade MFNETSOURCE_ENABLE_HTTP (Mfidl. h)
+title: MFNETSOURCE_ENABLE_HTTP propriedade (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 004868c92962702b774a8f6c0a9b75708c5727b2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 09d033594e223b8219f168e86d82ef02012bfafd4be9d758a438d042356735f0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103921119"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117874762"
 ---
-# <a name="mfnetsource_enable_http-property"></a>MFNETSOURCE \_ habilitar a \_ Propriedade http
+# <a name="mfnetsource_enable_http-property"></a>Propriedade MFNETSOURCE \_ ENABLE \_ HTTP
 
-Especifica se o protocolo HTTP está habilitado na fonte de rede.
+Especifica se o protocolo HTTP está habilitado na origem da rede.
 
 
 
 Tipo de dados
 
-Tipo PROPVARIANT (VT)
+Tipo PROPVARIANT (vt)
 
 Membro PROPVARIANT
 
-Booliano (**longo**)
+Booliana (**LONG**)
 
-\_I4 VT
+VT \_ I4
 
 **lVal**
 
@@ -33,9 +33,9 @@ Booliano (**longo**)
 
 ## <a name="remarks"></a>Comentários
 
-A constante **MFNETSOURCE \_ habilitação de \_ http** define o GUID para essa chave de propriedade. O identificador de propriedade (PID) é zero.
+A constante **MFNETSOURCE \_ ENABLE \_ HTTP** define o GUID dessa chave de propriedade. O PID (identificador de propriedade) é zero.
 
-Os aplicativos podem usar essa propriedade para configurar a origem da rede. Para definir a propriedade, passe um ponteiro **IPropertyStore** para o resolvedor de origem. Para obter mais informações, consulte [Configurando uma origem de mídia](configuring-a-media-source.md).
+Os aplicativos podem usar essa propriedade para configurar a origem da rede. Para definir a propriedade , passe um ponteiro **IPropertyStore** para o resolvedor de origem. Para obter mais informações, consulte [Configurando uma fonte de mídia](configuring-a-media-source.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -43,9 +43,9 @@ Os aplicativos podem usar essa propriedade para configurar a origem da rede. Par
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                     |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                               |
-| parâmetro<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                     |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                               |
+| Cabeçalho<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
@@ -53,10 +53,10 @@ Os aplicativos podem usar essa propriedade para configurar a origem da rede. Par
 
 <dl> <dt>
 
-[Propriedades de Media Foundation](media-foundation-properties.md)
+[Media Foundation propriedades](media-foundation-properties.md)
 </dt> <dt>
 
-[Rede em Media Foundation](networking-in-media-foundation.md)
+[Rede no Media Foundation](networking-in-media-foundation.md)
 </dt> <dt>
 
 [Protocolos com suporte](supported-protocols.md)
