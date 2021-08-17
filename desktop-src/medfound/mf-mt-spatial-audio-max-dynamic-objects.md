@@ -4,12 +4,12 @@ ms.assetid: 6B6D73C1-C2E6-4C23-BBAD-7B51E8441C71
 title: Atributo MF_MT_SPATIAL_AUDIO_MAX_DYNAMIC_OBJECTS (Mfapi. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 358045079fb9cf52ad1fd0c8969f54723c7f02d9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 42ae239354076dae309ba9e1c63f9c19b408994958b2523a2c0e170f460188e2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105749516"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119104392"
 ---
 # <a name="mf_mt_spatial_audio_max_dynamic_objects-attribute"></a>\_Atributo de \_ máximo \_ de \_ \_ objetos dinâmicos de áudio \_ do MF MT
 
@@ -29,9 +29,9 @@ Um [**IMFSpatialAudioSample**](/windows/desktop/api/mfspatialaudio/nn-mfspatiala
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10, versão 1703\]<br/>                          |
+| Cliente mínimo com suporte<br/> | Windows 10, \[ somente aplicativos da área de trabalho da versão 1703\]<br/>                          |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                          |
-| parâmetro<br/>                   | <dl> <dt>Mfapi. h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Mfapi. h</dt> </dl> |
 
 
 

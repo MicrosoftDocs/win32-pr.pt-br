@@ -1,7 +1,7 @@
 ---
 description: Localiza todos os endereços IP para localhost.
 ms.assetid: 47f7d03e-c1a1-4395-9889-01891208fe0f
-title: Função myIPAddressEx
+title: função myIPAddressEx
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -19,7 +19,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117744158"
 ---
-# <a name="myipaddressex-function"></a>Função myIPAddressEx
+# <a name="myipaddressex-function"></a>função myIPAddressEx
 
 Localiza todos os endereços IP para localhost.
 
@@ -29,11 +29,11 @@ Essa função não tem parâmetros.
 
 ## <a name="return-value"></a>Valor retornado
 
-Uma cadeia de caracteres delimitada por pontos e vírgulas que contém todos os endereços IP para localhost (IPv6 e/ou IPv4) ou uma cadeia de caracteres vazia se não for possível resolver localhost para um endereço IP.
+Uma cadeia de caracteres delimitada por ponto e vírgula contendo todos os endereços IP para localhost (IPv6 e/ou IPv4) ou uma cadeia de caracteres vazia se não for possível resolver o localhost para um endereço IP.
 
 ## <a name="remarks"></a>Comentários
 
-Os implementadores FindProxyforURLEx devem adicionar código que divide a cadeia de caracteres de endereços IP delimitados por e vírgula em endereços separados.
+Os implementadores de FindProxyforURLEx devem adicionar um código que interrompa a cadeia de caracteres de endereços IP delimitados por ponto e vírgula em endereços separados.
 
 ## <a name="examples"></a>Exemplos
 
@@ -47,10 +47,10 @@ myIpAddressEx();
 
 <dl> <dt>
 
-[Definições de API do Auxiliar de Proxy com IPv6](ipv6-aware-proxy-helper-api-definitions.md)
+[Definições da API auxiliar de proxy com reconhecimento de IPv6](ipv6-aware-proxy-helper-api-definitions.md)
 </dt> <dt>
 
-[Extensões IPv6 para o formato de arquivo de configuração automática do navegador](ipv6-extensions-to-navigator-auto-config-file-format.md)
+[Formato de arquivo de configuração automática de extensões IPv6 para navegador](ipv6-extensions-to-navigator-auto-config-file-format.md)
 </dt> </dl>
 
  

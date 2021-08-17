@@ -1,25 +1,25 @@
 ---
-description: 'Saiba mais sobre: Propriedades de JET_THREADSTATS'
-title: Propriedades de JET_THREADSTATS (Microsoft. ISAM. ESENT. Interop. vista)
+description: 'Saiba mais sobre: JET_THREADSTATS propriedades'
+title: JET_THREADSTATS propriedades (Microsoft.Isam.Esent.Interop.Vista)
 TOCTitle: JET_THREADSTATS properties
 ms:assetid: Properties.T:Microsoft.Isam.Esent.Interop.Vista.JET_THREADSTATS
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.vista.jet_threadstats_properties(v=EXCHG.10)
 ms:contentKeyID: 39510639
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 55f2a3575a607e9b0505321151c2be29811d7022
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ac11a6855fb0d21eba76fd29ca14f062cd3773df876b45298dc17dea7b867299
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104457257"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119719556"
 ---
-# <a name="jet_threadstats-properties"></a>Propriedades de JET_THREADSTATS
+# <a name="jet_threadstats-properties"></a>JET_THREADSTATS propriedades
 
 Incluir membros protegidos  
 Incluir membros herdados  
 
-O tipo de [JET_THREADSTATS](./jet-threadstats-structure2.md) expõe os membros a seguir.
+O [JET_THREADSTATS](./jet-threadstats-structure2.md) tipo expõe os membros a seguir.
 
 ## <a name="properties"></a>Propriedades
 
@@ -45,12 +45,12 @@ O tipo de [JET_THREADSTATS](./jet-threadstats-structure2.md) expõe os membros a
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
 <td><a href="hh578651(v=exchg.10).md">cPageDirtied</a></td>
-<td>Obtém o número total de páginas de banco de dados, sem alterações não gravadas, que foram modificadas pelo mecanismo de banco de dados no thread atual.</td>
+<td>Obtém o número total de páginas de banco de dados, sem alterações não escritas, que foram modificadas pelo mecanismo de banco de dados no thread atual.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
 <td><a href="hh557376(v=exchg.10).md">cPagePreread</a></td>
-<td>Obtém o número total de páginas de banco de dados pré-busca do disco pelo mecanismo de banco de dados no thread atual.</td>
+<td>Obtém o número total de páginas de banco de dados pré-buscadas do disco pelo mecanismo de banco de dados no thread atual.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
@@ -60,7 +60,7 @@ O tipo de [JET_THREADSTATS](./jet-threadstats-structure2.md) expõe os membros a
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
 <td><a href="hh596234(v=exchg.10).md">cPageRedirtied</a></td>
-<td>Obtém o número total de páginas de banco de dados, com alterações não gravadas, que foram modificadas pelo mecanismo de banco de dados no thread atual.</td>
+<td>Obtém o número total de páginas de banco de dados, com alterações não escritas, que foram modificadas pelo mecanismo de banco de dados no thread atual.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
@@ -77,6 +77,6 @@ Parte superior
 
 #### <a name="reference"></a>Referência
 
-[Estrutura de JET_THREADSTATS](./jet-threadstats-structure2.md)
+[JET_THREADSTATS estrutura](./jet-threadstats-structure2.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)

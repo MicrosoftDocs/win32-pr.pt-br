@@ -36,7 +36,7 @@ Atributo de link para trás para [**MS-DS-NC-RO-Replica-Locations**](a-msds-nc-r
 | Frequência de atualização  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.1968                 |
 | System-ID-GUID    | f547511c-5b2a-44cc-8358-992a88258164    |
-| Sintaxe            | [**Objeto (DS-DN)**](s-object-ds-dn.md) |
+| Syntax            | [**Objeto (DS-DN)**](s-object-ds-dn.md) |
 
 
 

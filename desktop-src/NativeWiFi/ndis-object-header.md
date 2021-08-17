@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - ntddndis.h
-ms.openlocfilehash: fe28a87eeb1457bace0b72a386bcb07667b24a64
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f9f4a4ef2a833081cde0c3c7ca4d395e59743944291a95d7680c241191988b35
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105762052"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119065045"
 ---
 # <a name="ndis_object_header-structure"></a>Estrutura de cabeçalho de \_ objeto NDIS \_
 
@@ -68,10 +68,10 @@ Especifica o tamanho total, em bytes, da estrutura NDIS que contém o **cabeçal
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Somente Windows Vista, Windows XP com \[ aplicativos de área de trabalho do SP3\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                                       |
+| Cliente mínimo com suporte<br/> | Windows Vista, somente Windows XP com \[ aplicativos de área de trabalho do SP3\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                                       |
 | Redistribuível<br/>          | API de LAN sem fio para Windows XP com SP2<br/>                                                        |
-| parâmetro<br/>                   | <dl> <dt>Ntddndis. h (incluir Windot11. h)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Ntddndis. h (incluir Windot11. h)</dt> </dl> |
 
 
 

@@ -1,11 +1,11 @@
 ---
-title: Atributo Modify-Time-Stamp
+title: Modificar-atributo de carimbo de data/hora
 description: Um atributo computado que representa a data em que esse objeto foi alterado pela última vez. Esse valor não é replicado.
 ms.assetid: ad8fea90-9a78-484d-9549-26d78e87ec44
 ms.tgt_platform: multiple
 keywords:
-- Esquema do AD do atributo Modify-Time-Stamp
-- Esquema do AD do atributo modifyTimeStamp
+- Modificar-esquema de atributos do atributo de carimbo de data/hora
+- Esquema de AD do atributo modifyTimeStamp
 topic_type:
 - apiref
 api_name:
@@ -21,7 +21,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119300366"
 ---
-# <a name="modify-time-stamp-attribute"></a>Atributo Modify-Time-Stamp
+# <a name="modify-time-stamp-attribute"></a>Modificar-atributo de carimbo de data/hora
 
 Um atributo computado que representa a data em que esse objeto foi alterado pela última vez. Esse valor não é replicado.
 
@@ -29,14 +29,14 @@ Um atributo computado que representa a data em que esse objeto foi alterado pela
 
 | Entrada | Valor |
 |-------------------|---------------------------------------------------------------|
-| CN                | Modificar carimbo de data/hora                                             |
-| Ldap-Display-Name | modifyTimeStamp                                               |
+| CN                | Modificar-carimbo de data/hora                                             |
+| LDAP-Display-Name | modifyTimeStamp                                               |
 | Tamanho              | 8 bytes                                                       |
 | Privilégio de atualização  | Esse valor é definido pelo sistema.                              |
 | Frequência de atualização  | \-                                                            |
 | Attribute-Id      | 2.5.18.2                                                      |
-| System-Id-Guid    | 9a7ad94a-ca53-11d1-bbd0-0080c76670c0                          |
-| Syntax            | [**String(Generalized-Time)**](s-string-generalized-time.md) |
+| System-ID-GUID    | 9a7ad94a-ca53-11d1-bbd0-0080c76670c0                          |
+| Syntax            | [**Cadeia de caracteres (em tempo geral)**](s-string-generalized-time.md) |
 
 
 
@@ -44,7 +44,7 @@ Um atributo computado que representa a data em que esse objeto foi alterado pela
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**Adam**](#adam)
+-   [**ADAM**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -59,15 +59,15 @@ Um atributo computado que representa a data em que esse objeto foi alterado pela
 | ID do link                | \-                                                                          |
 | MAPI-Id                | \-                                                                          |
 | System-Only            | Verdadeiro                                                                        |
-| Tem valor único       | Verdadeiro                                                                        |
+| É de valor único       | Verdadeiro                                                                        |
 | É indexado             | Falso                                                                       |
-| No Catálogo Global      | Falso                                                                       |
-| Descritor de segurança NT | O:BAG:BAD:S:                                                                |
+| No catálogo global      | Falso                                                                       |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                |
 | Range-Lower            | \-                                                                          |
 | Range-Upper            | \-                                                                          |
 | Search-Flags           | 0x00000000                                                                  |
 | System-Flags           | 0x08000014                                                                  |
-| Classes usadas em        | [**SubSchema**](c-subschema.md)<br/> [**Início**](c-top.md)<br/> |
+| Classes usadas em        | [**Subesquema**](c-subschema.md)<br/> [**Início**](c-top.md)<br/> |
 
 
 
@@ -80,19 +80,19 @@ Um atributo computado que representa a data em que esse objeto foi alterado pela
 | ID do link                | \-                                                                          |
 | MAPI-Id                | \-                                                                          |
 | System-Only            | Verdadeiro                                                                        |
-| Tem valor único       | Verdadeiro                                                                        |
+| É de valor único       | Verdadeiro                                                                        |
 | É indexado             | Falso                                                                       |
-| No Catálogo Global      | Falso                                                                       |
-| Descritor de segurança NT | O:BAG:BAD:S:                                                                |
+| No catálogo global      | Falso                                                                       |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                |
 | Range-Lower            | \-                                                                          |
 | Range-Upper            | \-                                                                          |
 | Search-Flags           | 0x00000000                                                                  |
 | System-Flags           | 0x08000014                                                                  |
-| Classes usadas em        | [**SubSchema**](c-subschema.md)<br/> [**Início**](c-top.md)<br/> |
+| Classes usadas em        | [**Subesquema**](c-subschema.md)<br/> [**Início**](c-top.md)<br/> |
 
 
 
-## <a name="adam"></a>Adam
+## <a name="adam"></a>ADAM
 
 
 
@@ -101,15 +101,15 @@ Um atributo computado que representa a data em que esse objeto foi alterado pela
 | ID do link                | \-                                                                          |
 | MAPI-Id                | \-                                                                          |
 | System-Only            | Verdadeiro                                                                        |
-| Tem valor único       | Verdadeiro                                                                        |
+| É de valor único       | Verdadeiro                                                                        |
 | É indexado             | Falso                                                                       |
-| No Catálogo Global      | Falso                                                                       |
-| Descritor de segurança NT | O:BAG:BAD:S:                                                                |
+| No catálogo global      | Falso                                                                       |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                |
 | Range-Lower            | \-                                                                          |
 | Range-Upper            | \-                                                                          |
 | Search-Flags           | 0x00000000                                                                  |
 | System-Flags           | 0x08000014                                                                  |
-| Classes usadas em        | [**Subesquema**](c-subschema.md)<br/> [**Início**](c-top.md)<br/> |
+| Classes usadas em        | [**SubSchema**](c-subschema.md)<br/> [**Início**](c-top.md)<br/> |
 
 
 
@@ -122,15 +122,15 @@ Um atributo computado que representa a data em que esse objeto foi alterado pela
 | ID do link                | \-                                                                          |
 | MAPI-Id                | \-                                                                          |
 | System-Only            | Verdadeiro                                                                        |
-| É de valor único       | Verdadeiro                                                                        |
+| Tem valor único       | Verdadeiro                                                                        |
 | É indexado             | Falso                                                                       |
-| No catálogo global      | Falso                                                                       |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                |
+| No Catálogo Global      | Falso                                                                       |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                |
 | Range-Lower            | \-                                                                          |
 | Range-Upper            | \-                                                                          |
 | Search-Flags           | 0x00000000                                                                  |
 | System-Flags           | 0x08000014                                                                  |
-| Classes usadas em        | [**Subesquema**](c-subschema.md)<br/> [**Início**](c-top.md)<br/> |
+| Classes usadas em        | [**SubSchema**](c-subschema.md)<br/> [**Início**](c-top.md)<br/> |
 
 
 
@@ -143,15 +143,15 @@ Um atributo computado que representa a data em que esse objeto foi alterado pela
 | ID do link                | \-                                                                          |
 | MAPI-Id                | \-                                                                          |
 | System-Only            | Verdadeiro                                                                        |
-| É de valor único       | Verdadeiro                                                                        |
+| Tem valor único       | Verdadeiro                                                                        |
 | É indexado             | Falso                                                                       |
-| No catálogo global      | Falso                                                                       |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                |
+| No Catálogo Global      | Falso                                                                       |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                |
 | Range-Lower            | \-                                                                          |
 | Range-Upper            | \-                                                                          |
 | Search-Flags           | 0x00000000                                                                  |
 | System-Flags           | 0x08000014                                                                  |
-| Classes usadas em        | [**Subesquema**](c-subschema.md)<br/> [**Início**](c-top.md)<br/> |
+| Classes usadas em        | [**SubSchema**](c-subschema.md)<br/> [**Início**](c-top.md)<br/> |
 
 
 
@@ -164,15 +164,15 @@ Um atributo computado que representa a data em que esse objeto foi alterado pela
 | ID do link                | \-                                                                          |
 | MAPI-Id                | \-                                                                          |
 | System-Only            | Verdadeiro                                                                        |
-| É de valor único       | Verdadeiro                                                                        |
+| Tem valor único       | Verdadeiro                                                                        |
 | É indexado             | Falso                                                                       |
-| No catálogo global      | Falso                                                                       |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                |
+| No Catálogo Global      | Falso                                                                       |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                |
 | Range-Lower            | \-                                                                          |
 | Range-Upper            | \-                                                                          |
 | Search-Flags           | 0x00000000                                                                  |
 | System-Flags           | 0x08000014                                                                  |
-| Classes usadas em        | [**Subesquema**](c-subschema.md)<br/> [**Início**](c-top.md)<br/> |
+| Classes usadas em        | [**SubSchema**](c-subschema.md)<br/> [**Início**](c-top.md)<br/> |
 
 
 
@@ -185,15 +185,15 @@ Um atributo computado que representa a data em que esse objeto foi alterado pela
 | ID do link                | \-                                                                          |
 | MAPI-Id                | \-                                                                          |
 | System-Only            | Verdadeiro                                                                        |
-| É de valor único       | Verdadeiro                                                                        |
+| Tem valor único       | Verdadeiro                                                                        |
 | É indexado             | Falso                                                                       |
-| No catálogo global      | Falso                                                                       |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                |
+| No Catálogo Global      | Falso                                                                       |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                |
 | Range-Lower            | \-                                                                          |
 | Range-Upper            | \-                                                                          |
 | Search-Flags           | 0x00000000                                                                  |
 | System-Flags           | 0x08000014                                                                  |
-| Classes usadas em        | [**Subesquema**](c-subschema.md)<br/> [**Início**](c-top.md)<br/> |
+| Classes usadas em        | [**SubSchema**](c-subschema.md)<br/> [**Início**](c-top.md)<br/> |
 
 
 

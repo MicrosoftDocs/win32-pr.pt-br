@@ -16,12 +16,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 236e69d80db2ad30b8cc2934b6b2016d7eecbed6
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: fcd9d2cf44063dfb1a7ec1bfcbb0fe785d1747d34e84ef2c2d8c78598e6e6b0e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104086206"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117743321"
 ---
 # <a name="other-session-constants"></a>Outras constantes de sessão
 
@@ -95,7 +95,7 @@ Envia a solicitação em UTF16.
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                 |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                           |
-| parâmetro<br/>                   | <dl> <dt>WSManDisp. h</dt> </dl>   |
+| Cabeçalho<br/>                   | <dl> <dt>WSManDisp. h</dt> </dl>   |
 | INSERI<br/>                      | <dl> <dt>WSManDisp. idl</dt> </dl> |
 
 

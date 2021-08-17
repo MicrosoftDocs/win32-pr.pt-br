@@ -88,7 +88,7 @@ O método retorna um dos seguintes valores possíveis.
 
 
 
-| Código de retorno                                                                                   | Description                                  |
+| Código de retorno                                                                                   | Descrição                                  |
 |-----------------------------------------------------------------------------------------------|----------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>          | Operação concluída com sucesso.<br/> |
 | <dl> <dt>**E \_ INVALIDARG**</dt> </dl>  | Parâmetro inválido.<br/>                |
@@ -123,7 +123,7 @@ Além dos códigos de erro COM listados acima, essa interface pode retornar um c
 | Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                    |
 | Fim do suporte do cliente<br/>    | Windows XP<br/>                                                                   |
 | Fim do suporte do servidor<br/>    | Windows Server 2003<br/>                                                          |
-| parâmetro<br/>                   | <dl> <dt>Scardssp. h</dt> </dl>   |
+| Cabeçalho<br/>                   | <dl> <dt>Scardssp. h</dt> </dl>   |
 | Biblioteca de tipos<br/>             | <dl> <dt>Scardsrv. tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Scardssp.dll</dt> </dl> |
 | IID<br/>                      | IID \_ ISCardISO7816 é definido como 53B6AA68-3F56-11D0-916B-00AA00C18068<br/>        |

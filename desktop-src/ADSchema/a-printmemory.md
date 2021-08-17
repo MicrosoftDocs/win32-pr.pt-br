@@ -36,7 +36,7 @@ A quantidade de memória instalada em uma impressora.
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.282               |
 | System-ID-GUID    | ba305f74-47e3-11d0-a1a6-00c04fd930c9 |
-| Sintaxe            | [**Enumeração**](s-enumeration.md) |
+| Syntax            | [**Enumeração**](s-enumeration.md) |
 
 
 
@@ -58,7 +58,7 @@ A quantidade de memória instalada em uma impressora.
 | ID do link                | \-                                             |
 | MAPI-Id                | \-                                             |
 | System-Only            | Falso                                          |
-| É de valor único       | True                                           |
+| É de valor único       | Verdadeiro                                           |
 | É indexado             | Falso                                          |
 | No catálogo global      | Falso                                          |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                   |
@@ -79,9 +79,9 @@ A quantidade de memória instalada em uma impressora.
 | ID do link                | \-                                             |
 | MAPI-Id                | \-                                             |
 | System-Only            | Falso                                          |
-| É de valor único       | True                                           |
+| É de valor único       | Verdadeiro                                           |
 | É indexado             | Falso                                          |
-| No catálogo global      | True                                           |
+| No catálogo global      | Verdadeiro                                           |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |
@@ -100,9 +100,9 @@ A quantidade de memória instalada em uma impressora.
 | ID do link                | \-                                             |
 | MAPI-Id                | \-                                             |
 | System-Only            | Falso                                          |
-| É de valor único       | True                                           |
+| É de valor único       | Verdadeiro                                           |
 | É indexado             | Falso                                          |
-| No catálogo global      | True                                           |
+| No catálogo global      | Verdadeiro                                           |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |
@@ -121,15 +121,15 @@ A quantidade de memória instalada em uma impressora.
 | ID do link                | \-                                             |
 | MAPI-Id                | \-                                             |
 | System-Only            | Falso                                          |
-| É de valor único       | True                                           |
+| Tem valor único       | Verdadeiro                                           |
 | É indexado             | Falso                                          |
-| No catálogo global      | True                                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                   |
+| No Catálogo Global      | Verdadeiro                                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |
 | Search-Flags           | 0x00000000                                     |
 | System-Flags           | 0x00000010                                     |
-| Classes usadas em        | [**Fila de impressão**](c-printqueue.md)<br/> |
+| Classes usadas em        | [**Fila de Impressão**](c-printqueue.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ A quantidade de memória instalada em uma impressora.
 | ID do link                | \-                                             |
 | MAPI-Id                | \-                                             |
 | System-Only            | Falso                                          |
-| É de valor único       | True                                           |
+| Tem valor único       | Verdadeiro                                           |
 | É indexado             | Falso                                          |
-| No catálogo global      | True                                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                   |
+| No Catálogo Global      | Verdadeiro                                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |
 | Search-Flags           | 0x00000000                                     |
 | System-Flags           | 0x00000010                                     |
-| Classes usadas em        | [**Fila de impressão**](c-printqueue.md)<br/> |
+| Classes usadas em        | [**Fila de Impressão**](c-printqueue.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ A quantidade de memória instalada em uma impressora.
 | ID do link                | \-                                             |
 | MAPI-Id                | \-                                             |
 | System-Only            | Falso                                          |
-| É de valor único       | True                                           |
+| Tem valor único       | Verdadeiro                                           |
 | É indexado             | Falso                                          |
-| No catálogo global      | True                                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                   |
+| No Catálogo Global      | Verdadeiro                                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |
 | Search-Flags           | 0x00000000                                     |
 | System-Flags           | 0x00000010                                     |
-| Classes usadas em        | [**Fila de impressão**](c-printqueue.md)<br/> |
+| Classes usadas em        | [**Fila de Impressão**](c-printqueue.md)<br/> |
 
 
 

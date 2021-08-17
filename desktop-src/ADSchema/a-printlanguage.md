@@ -1,6 +1,6 @@
 ---
 title: Print-Language atributo
-description: A linguagem de descrição de página com suporte (por exemplo, PostScript, PCL).
+description: a linguagem de descrição de página com suporte (por exemplo, PostScript, PCL).
 ms.assetid: 454f2425-012f-4a2d-b383-7e1e626b0871
 ms.tgt_platform: multiple
 keywords:
@@ -14,16 +14,16 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ac354fe2053ae82405adf96e2ff709ab891ecd77
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: f2db3f709a07ac5ee79e7fc73df95ec3d6381b9e839370fe20fc2d067b4f0193
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104087004"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119837902"
 ---
 # <a name="print-language-attribute"></a>Print-Language atributo
 
-A linguagem de descrição de página com suporte (por exemplo, PostScript, PCL).
+a linguagem de descrição de página com suporte (por exemplo, PostScript, PCL).
 
 
 
@@ -108,7 +108,7 @@ A linguagem de descrição de página com suporte (por exemplo, PostScript, PCL)
 | Range-Upper            | 256                                            |
 | Search-Flags           | 0x00000000                                     |
 | System-Flags           | 0x00000010                                     |
-| Classes usadas em        | [**Fila de impressão**](c-printqueue.md)<br/> |
+| Classes usadas em        | [**Fila de Impressão**](c-printqueue.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ A linguagem de descrição de página com suporte (por exemplo, PostScript, PCL)
 | ID do link                | \-                                             |
 | MAPI-Id                | \-                                             |
 | System-Only            | Falso                                          |
-| É de valor único       | Falso                                          |
+| Tem valor único       | Falso                                          |
 | É indexado             | Falso                                          |
-| No catálogo global      | Falso                                          |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                   |
+| No Catálogo Global      | Falso                                          |
+| Descritor de segurança NT | O:BAG:BAD:S:                                   |
 | Range-Lower            | 1                                              |
 | Range-Upper            | 256                                            |
 | Search-Flags           | 0x00000000                                     |
 | System-Flags           | 0x00000010                                     |
-| Classes usadas em        | [**Fila de impressão**](c-printqueue.md)<br/> |
+| Classes usadas em        | [**Fila de Impressão**](c-printqueue.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ A linguagem de descrição de página com suporte (por exemplo, PostScript, PCL)
 | ID do link                | \-                                             |
 | MAPI-Id                | \-                                             |
 | System-Only            | Falso                                          |
-| É de valor único       | Falso                                          |
+| Tem valor único       | Falso                                          |
 | É indexado             | Falso                                          |
-| No catálogo global      | Falso                                          |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                   |
+| No Catálogo Global      | Falso                                          |
+| Descritor de segurança NT | O:BAG:BAD:S:                                   |
 | Range-Lower            | 1                                              |
 | Range-Upper            | 256                                            |
 | Search-Flags           | 0x00000000                                     |
 | System-Flags           | 0x00000010                                     |
-| Classes usadas em        | [**Fila de impressão**](c-printqueue.md)<br/> |
+| Classes usadas em        | [**Fila de Impressão**](c-printqueue.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ A linguagem de descrição de página com suporte (por exemplo, PostScript, PCL)
 | ID do link                | \-                                             |
 | MAPI-Id                | \-                                             |
 | System-Only            | Falso                                          |
-| É de valor único       | Falso                                          |
+| Tem valor único       | Falso                                          |
 | É indexado             | Falso                                          |
-| No catálogo global      | Falso                                          |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                   |
+| No Catálogo Global      | Falso                                          |
+| Descritor de segurança NT | O:BAG:BAD:S:                                   |
 | Range-Lower            | 1                                              |
 | Range-Upper            | 256                                            |
 | Search-Flags           | 0x00000000                                     |
 | System-Flags           | 0x00000010                                     |
-| Classes usadas em        | [**Fila de impressão**](c-printqueue.md)<br/> |
+| Classes usadas em        | [**Fila de Impressão**](c-printqueue.md)<br/> |
 
 
 

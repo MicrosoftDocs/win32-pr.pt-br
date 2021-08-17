@@ -1,5 +1,5 @@
 ---
-description: Este guia fornece as informações necessárias para permitir que seu aplicativo microsoft Windows use a próxima geração do Protocolo IPv6, versão 6.
+description: Este guia fornece as informações necessárias para permitir que seu aplicativo microsoft Windows use a próxima geração do protocolo IPv6, versão 6.
 ms.assetid: 8e862eb0-2ba9-40b0-ac73-fcb0e625965e
 title: Guia IPv6 para aplicativos Windows soquetes
 ms.topic: article
@@ -13,13 +13,13 @@ ms.locfileid: "117741110"
 ---
 # <a name="ipv6-guide-for-windows-sockets-applications"></a>Guia IPv6 para aplicativos Windows soquetes
 
-Este guia fornece as informações necessárias para permitir que seu aplicativo microsoft Windows use a próxima geração do Protocolo IPv6, versão 6. Adicionar a funcionalidade IPv6 ao seu aplicativo não é necessariamente um processo de portação. A portabilidade de um aplicativo sugere modificar o código para funcionar em uma plataforma diferente, o que implica deixar a plataforma anterior para trás. Este guia é especificamente estruturado para ajudar a adicionar a funcionalidade IPv6 a um aplicativo, mantendo a funcionalidade IPv4.
+Este guia fornece as informações necessárias para permitir que seu aplicativo microsoft Windows use a próxima geração do protocolo IPv6, versão 6. Adicionar a funcionalidade IPv6 ao seu aplicativo não é necessariamente um processo de portação. A portabilidade de um aplicativo sugere modificar o código para funcionar em uma plataforma diferente, o que implica deixar a plataforma anterior para trás. Este guia é especificamente estruturado para ajudar a adicionar a funcionalidade IPv6 a um aplicativo, mantendo a funcionalidade IPv4.
 
-Este guia aborda os problemas associados à adição da funcionalidade IPv6 e, em seguida, tem como alvo as áreas de desenvolvimento mais afetadas pela transição. Cada área recebe uma explicação completa das armadilhas a observar, as estratégias sugeridas para evitá-las e dicas sobre como fazer o melhor uso dos novos elementos [programáticos do Windows Sockets 2](what-s-new-for-windows-sockets-2.md) (funções e estruturas). Para obter informações adicionais sobre IPv6, consulte [Suporte a IPv6.](ipv6-support-2.md)
+Este guia aborda os problemas associados à adição da funcionalidade IPv6 e, em seguida, tem como alvo as áreas de desenvolvimento mais afetadas pela transição. Cada área recebe uma explicação completa das armadilhas a observar, as estratégias sugeridas para evitá-las e dicas sobre como fazer o melhor uso dos novos [elementos programáticos do Windows Sockets 2](what-s-new-for-windows-sockets-2.md) (funções e estruturas). Para obter informações adicionais sobre IPv6, consulte [Suporte a IPv6.](ipv6-support-2.md)
 
 Este guia também fornece exemplos de código para lhe dar experiência prática e representações visuais dos problemas que você pode encontrar ao modificar seus aplicativos. Os exemplos vêm de exemplos completos de um aplicativo Windows Sockets simples que foi modificado para dar suporte a IPv4 e IPv6. O código-fonte para esses exemplos de trabalho está incluído em sua totalidade em dois apêndices no final deste documento: [Apêndice A: Código-fonte somente IPv4](appendix-a-ipv4-only-source-code-2.md) inclui o código-fonte de um aplicativo antes de ser modificado para dar suporte a IPv6; [Apêndice B: o Código-fonte Agnostic](appendix-b-ip-version-agnostic-source-code-2.md) da versão IP fornece o código-fonte depois que o aplicativo tiver sido habilitado para IPv6.
 
-A Microsoft fornece um utilitário chamado Checkv4.exe que ajuda você a encontrar código potencialmente sensível à portação no código do aplicativo e também faz recomendações para correções. O Checkv4.exe utilitário é demonstrado neste documento, usando o aplicativo de exemplo incluído nos apêndices, juntamente com capturas de tela exibindo a saída que o utilitário Checkv4.exe produz. Para obter mais informações, [consulte Usando o utilitário Checkv4.exe .](using-the-checkv4-exe-utility-2.md)
+A Microsoft fornece um utilitário chamado Checkv4.exe que ajuda você a encontrar código potencialmente sensível à portação no código do aplicativo e também faz recomendações para correções. O Checkv4.exe utilitário é demonstrado neste documento, usando o aplicativo de exemplo incluído nos apêndices, juntamente com capturas de tela que exibem a saída que o utilitário Checkv4.exe produz. Para obter mais informações, [consulte Usando o utilitário Checkv4.exe .](using-the-checkv4-exe-utility-2.md)
 
 As áreas de programação abordadas por este guia são:
 

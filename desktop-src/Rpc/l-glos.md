@@ -28,7 +28,7 @@ Chamada de procedimento remoto para outro processo no mesmo computador que o pro
 <span id="_rpc_locator_glos"></span><span id="_RPC_LOCATOR_GLOS"></span>**Localizador**
 </dt> <dd>
 
-Provedor de nome e serviço Windows Microsoft. Consulte também serviço [*de nome*](n-glos.md).
+Microsoft Windows provedor de nome-serviço. Consulte também serviço [*de nome*](n-glos.md).
 
 </dd> </dl>
 

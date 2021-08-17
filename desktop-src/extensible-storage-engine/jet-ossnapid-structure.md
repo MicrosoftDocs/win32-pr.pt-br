@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 215bd8f096ba9c1788f4db70a014cab48b74afa7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 13c68c7e441df06d1c51ddfbf0da66226b42c453183e82c5bda79e8a472c7928
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105755019"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118073905"
 ---
 # <a name="jet_ossnapid-structure"></a>Estrutura de JET_OSSNAPID
 

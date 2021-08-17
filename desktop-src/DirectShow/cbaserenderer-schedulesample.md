@@ -1,7 +1,7 @@
 ---
-description: O método ScheduleSample agenda uma amostra para renderização.
+description: O método ScheduleSample agenda um exemplo para renderização.
 ms.assetid: 08c218d1-6d0a-4c66-bbde-a39e5d31561c
-title: Método CBaseRenderer. ScheduleSample (Renbase. h)
+title: Método CBaseRenderer.ScheduleSample (Renbase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: c340e54f35b353820b128681cfbc0c5798d38849
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 88e728b90078ab11a6215dad60a88b819b2c513071637e2aa5c6b6ed7226189b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105748820"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118157588"
 ---
-# <a name="cbaserendererschedulesample-method"></a>Método CBaseRenderer. ScheduleSample
+# <a name="cbaserendererschedulesample-method"></a>Método CBaseRenderer.ScheduleSample
 
-O `ScheduleSample` método agenda uma amostra para renderização.
+O `ScheduleSample` método agenda um exemplo para renderização.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -45,17 +45,17 @@ virtual BOOL ScheduleSample(
 *pMediaSample* 
 </dt> <dd>
 
-Ponteiro para a interface [**IMediaSample**](/windows/desktop/api/Strmif/nn-strmif-imediasample) do exemplo.
+Ponteiro para a interface [**IMediaSample do**](/windows/desktop/api/Strmif/nn-strmif-imediasample) exemplo.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna **true** se o exemplo foi agendado ou **false** se o exemplo foi Descartado.
+Retornará **TRUE** se o exemplo tiver sido agendado ou **FALSE** se o exemplo tiver sido descartado.
 
 ## <a name="remarks"></a>Comentários
 
-Esse método primeiro determina se o exemplo deve ser renderizado imediatamente, renderizado no futuro ou descartado. (Para fazer isso, ele chama o método [**CBaseRenderer:: GetSampleTimes**](cbaserenderer-getsampletimes.md) .) Se o exemplo deve ser processado imediatamente, o método sinaliza o evento [**CBaseRenderer:: m \_ RenderEvent**](cbaserenderer-m-renderevent.md) . Se o exemplo for renderizado no futuro, o método chamará o método [**IReferenceClock:: aconselhetime**](/windows/desktop/api/Strmif/nf-strmif-ireferenceclock-advisetime) para agendamento.
+Esse método primeiro determina se o exemplo deve ser renderizado imediatamente, renderizado no futuro ou descartado. (Para fazer isso, ele chama o [**método CBaseRenderer::GetSampleTimes.)**](cbaserenderer-getsampletimes.md) Se o exemplo deve ser renderizado imediatamente, o método sinaliza o [**evento CBaseRenderer::m \_ RenderEvent.**](cbaserenderer-m-renderevent.md) Se o exemplo precisar ser renderizado no futuro, o método chamará o método [**IReferenceClock::AdviseTime**](/windows/desktop/api/Strmif/nf-strmif-ireferenceclock-advisetime) para agendamento.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -63,8 +63,8 @@ Esse método primeiro determina se o exemplo deve ser renderizado imediatamente,
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Renbase. h (incluir fluxos. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Renbase.h (incluir Fluxos.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

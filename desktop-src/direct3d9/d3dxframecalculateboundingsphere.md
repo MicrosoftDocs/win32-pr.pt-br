@@ -1,7 +1,7 @@
 ---
-description: Computa a esfera delimitadora de todas as malhas na hierarquia de quadros.
+description: Calcula a esfera delimitada de todas as malhas na hierarquia de quadros.
 ms.assetid: 8c3f5a9e-73ff-4d83-8f85-a3fc2a9a53f7
-title: Função D3DXFrameCalculateBoundingSphere (D3dx9anim. h)
+title: Função D3DXFrameCalculateBoundingSphere (D3dx9anim.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: f10043d2c897bf6ab24c442b8e134f31221c498e
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: a8a4706fcbd421072e2b82cd9e228fe24c35651c17ce4ab0f48e05b946946fb4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105810804"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119123212"
 ---
 # <a name="d3dxframecalculateboundingsphere-function"></a>Função D3DXFrameCalculateBoundingSphere
 
-Computa a esfera delimitadora de todas as malhas na hierarquia de quadros.
+Calcula a esfera delimitada de todas as malhas na hierarquia de quadros.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,7 +42,7 @@ HRESULT D3DXFrameCalculateBoundingSphere(
 
 <dl> <dt>
 
-*pFrameRoot* \[ no\]
+*pFrameRoot* \[ Em\]
 </dt> <dd>
 
 Tipo: **const [**D3DXFRAME**](d3dxframe.md) \***
@@ -51,29 +51,29 @@ Ponteiro para o nó raiz.
 
 </dd> <dt>
 
-*pObjectCenter* \[ fora\]
+*pObjectCenter* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXVECTOR3**](d3dxvector3.md)**
 
-Retorna o centro da esfera delimitadora.
+Retorna o centro da esfera delimitada.
 
 </dd> <dt>
 
-*pObjectRadius* \[ fora\]
+*pObjectRadius* \[ out\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)\***
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)\***
 
-Retorna o raio da esfera delimitadora.
+Retorna o raio da esfera delimitada.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se a função for bem sucedido, o valor de retorno será D3D \_ OK. Se a função falhar, o valor de retorno poderá ser um dos seguintes valores: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
+Se a função for bem-sucedida, o valor de retorno será D3D \_ OK. Se a função falhar, o valor de retorno poderá ser um dos seguintes valores: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -81,8 +81,8 @@ Se a função for bem sucedido, o valor de retorno será D3D \_ OK. Se a funçã
 
 | Requisito | Valor |
 |--------------------|----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3dx9anim. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| parâmetro<br/>  | <dl> <dt>D3dx9anim.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

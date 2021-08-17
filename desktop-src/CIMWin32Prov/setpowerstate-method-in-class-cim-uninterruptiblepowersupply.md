@@ -26,7 +26,7 @@ ms.locfileid: "119332936"
 O **método SetPowerState** da classe CIM UninterruptiblePowerSupply define o estado de energia desejado para um dispositivo lógico e quando um dispositivo deve ser \_ colocado nesse estado. Em uma subclasse, o conjunto de códigos de retorno possíveis deve ser especificado usando um qualificador **ValueMap** no método . As cadeias de caracteres para as quais o conteúdo **valueMap** são convertidos também devem ser especificadas na subclasse como um qualificador da matriz **Valores.** Esse método é herdado [**de CIM \_ LogicalDevice.**](cim-logicaldevice.md)
 
 > [!IMPORTANT]
-> As classes CIM (Distributed Management Task Force) modelo CIM DMTF são as classes pai nas quais as classes WMI são criadas. Atualmente, o WMI dá suporte apenas aos esquemas de versão [do CIM 2.x.](https://dmtf.org/standards/cim/schemas)
+> As classes CIM (Distributed Management Task Force) do DMTF (Distributed Management Task Force) modelo CIM são as classes pai nas quais as classes WMI são criadas. Atualmente, o WMI dá suporte apenas aos esquemas de versão [do CIM 2.x.](https://dmtf.org/standards/cim/schemas)
 
  
 
@@ -49,7 +49,7 @@ uint32 SetPowerState(
 *PowerState* \[ Em\]
 </dt> <dd>
 
-Um **valor valueMap** que especifica o estado de energia desejado para este dispositivo lógico.
+Um **valor ValueMap** que especifica o estado de energia desejado para este dispositivo lógico.
 
 <dt>
 

@@ -1,17 +1,17 @@
 ---
-title: formatos de entrada, Configurações de entrada e extensões de unidade de dados
-description: formatos de entrada, Configurações de entrada e extensões de unidade de dados
+title: Formatos de entrada, Configurações entrada e extensões de unidade de dados
+description: Formatos de entrada, Configurações entrada e extensões de unidade de dados
 ms.assetid: 8e8a0ec8-cb7c-4483-86b0-142ea9f2b835
 keywords:
-- Windows SDK do formato de mídia, formatos de entrada e configurações
-- Windows SDK do formato de mídia, extensões de unidade de dados
-- Windows SDK do formato de mídia, sistemas de extensão de carga
+- Windows SDK de Formato de Mídia, formatos de entrada e configurações
+- Windows SDK de Formato de Mídia, extensões de unidade de dados
+- Windows SDK de Formato de Mídia, sistemas de extensão de payload
 - ASF (Advanced Systems Format), formatos de entrada e configurações
-- ASF (formato de sistemas avançados), formatos de entrada e configurações
+- ASF (Formato de Sistemas Avançados), formatos de entrada e configurações
 - ASF (Advanced Systems Format), extensões de unidade de dados
-- ASF (formato de sistemas avançados), extensões de unidade de dados
+- ASF (Formato de Sistemas Avançados), extensões de unidade de dados
 - ASF (Advanced Systems Format), sistemas de extensão de carga
-- ASF (formato de sistemas avançados), sistemas de extensão de carga
+- ASF (Formato de Sistemas Avançados), sistemas de extensão de carga
 - extensões de unidade de dados, sobre
 - sistemas de extensão de carga
 ms.topic: article
@@ -23,15 +23,15 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118702008"
 ---
-# <a name="input-formats-input-settings-and-data-unit-extensions"></a>formatos de entrada, Configurações de entrada e extensões de unidade de dados
+# <a name="input-formats-input-settings-and-data-unit-extensions"></a>Formatos de entrada, Configurações entrada e extensões de unidade de dados
 
-O objeto gravador dá suporte a configurações de entrada, formatos de entrada e extensões de unidade de dados, todos os quais permitem controlar os recursos do gravador. Nem sempre é óbvio quais métodos usar para controlar um recurso específico.
+O objeto writer dá suporte a configurações de entrada, formatos de entrada e extensões de unidade de dados, que permitem controlar os recursos do autor. Nem sempre é óbvio quais métodos usar para controlar um recurso específico.
 
-Os formatos de entrada são formatos de mídia que descrevem as propriedades básicas da mídia que você passa para o gravador para codificação. Por exemplo, o tamanho do quadro e o espaço de cores do vídeo de entrada são descritos pelo formato de entrada.
+Formatos de entrada são formatos de mídia que descrevem as propriedades básicas da mídia que você passa para o autor para codificação. Por exemplo, o tamanho do quadro e o espaço de cor do vídeo de entrada são descritos pelo formato de entrada.
 
-As configurações de entrada são características dos dados de entrada além das noções básicas ou informações sobre transformações a serem executadas nos dados. As configurações de vídeo entrelaçadas e as informações sobre um sistema de marca d' água são exemplos de configurações de entrada.
+As configurações de entrada são características dos dados de entrada além dos conceitos básicos ou informações sobre as transformaçãos a executar nos dados. Configurações de vídeo entrelaçadas e informações sobre um sistema de marca d'água são exemplos de configurações de entrada.
 
-As extensões de unidade de dados, também chamadas de sistemas de extensão de carga, são valores anexados a amostras individuais na seção de dados do arquivo. Os códigos de tempo SMPTE e as informações de pixel não quadrado são exemplos de extensões de unidade de dados.
+As extensões de unidade de dados, também chamadas de sistemas de extensão de carga, são valores anexados a exemplos individuais na seção de dados do arquivo. Códigos de hora SMPTE e informações de pixel não quadrado são exemplos de extensões de unidade de dados.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -43,13 +43,13 @@ As extensões de unidade de dados, também chamadas de sistemas de extensão de 
 [**Extensões de unidade de dados**](data-unit-extensions.md)
 </dt> <dt>
 
-[**Recursos de gravação de arquivo**](file-writing-features.md)
+[**Recursos de escrita de arquivo**](file-writing-features.md)
 </dt> <dt>
 
 [**Enumeração de formato de entrada**](input-format-enumeration.md)
 </dt> <dt>
 
-[**Configurações de entrada**](input-settings.md)
+[**Entrada Configurações**](input-settings.md)
 </dt> <dt>
 
 [**Trabalhando com entradas**](working-with-inputs.md)

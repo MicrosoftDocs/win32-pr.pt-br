@@ -1,11 +1,11 @@
 ---
 title: UNC-Name atributo
-description: O nome da convenção de nomenização universal para volumes compartilhados e impressoras.
+description: O nome da Convenção de nomenclatura universal para volumes e impressoras compartilhadas.
 ms.assetid: 967fd0dc-10af-4482-bc2c-1d1dc13dee39
 ms.tgt_platform: multiple
 keywords:
-- UNC-Name atributo AD Schema
-- Esquema do AD do atributo uNCName
+- Esquema de UNC-Name do atributo AD
+- Esquema de AD do atributo uncname
 topic_type:
 - apiref
 api_name:
@@ -23,20 +23,20 @@ ms.locfileid: "118681591"
 ---
 # <a name="unc-name-attribute"></a>UNC-Name atributo
 
-O nome da convenção de nomenização universal para volumes compartilhados e impressoras.
+O nome da Convenção de nomenclatura universal para volumes e impressoras compartilhadas.
 
 
 
 | Entrada | Valor |
 |-------------------|-----------------------------------------------|
 | CN                | UNC-Name                                      |
-| Ldap-Display-Name | uNCName                                       |
+| LDAP-Display-Name | uNCName                                       |
 | Tamanho              | \-                                            |
 | Privilégio de atualização  | Administrador de domínio                          |
 | Frequência de atualização  | Quando novos volumes ou filas de impressão são criados. |
 | Attribute-Id      | 1.2.840.113556.1.4.137                        |
-| System-Id-Guid    | bf967a64-0de6-11d0-a285-00aa003049e2          |
-| Sintaxe            | [**String(Unicode)**](s-string-unicode.md)   |
+| System-ID-GUID    | bf967a64-0de6-11d0-a285-00aa003049e2          |
+| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md)   |
 
 
 
@@ -58,15 +58,15 @@ O nome da convenção de nomenização universal para volumes compartilhados e i
 | ID do link                | \-                                                                                                                                                   |
 | MAPI-Id                | \-                                                                                                                                                   |
 | System-Only            | Falso                                                                                                                                                |
-| Tem valor único       | True                                                                                                                                                 |
-| É indexado             | True                                                                                                                                                 |
-| No Catálogo Global      | True                                                                                                                                                 |
-| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                                                         |
+| É de valor único       | Verdadeiro                                                                                                                                                 |
+| É indexado             | Verdadeiro                                                                                                                                                 |
+| No catálogo global      | Verdadeiro                                                                                                                                                 |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                         |
 | Range-Lower            | \-                                                                                                                                                   |
 | Range-Upper            | \-                                                                                                                                                   |
 | Search-Flags           | 0x00000001                                                                                                                                           |
 | System-Flags           | 0x00000010                                                                                                                                           |
-| Classes usadas em        | [**Index-Server-Catalog**](c-indexservercatalog.md)<br/> [**Fila de Impressão**](c-printqueue.md)<br/> [**Volume**](c-volume.md)<br/> |
+| Classes usadas em        | [**Index-Server-Catalog**](c-indexservercatalog.md)<br/> [**Fila de impressão**](c-printqueue.md)<br/> [**Volume**](c-volume.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ O nome da convenção de nomenização universal para volumes compartilhados e i
 | ID do link                | \-                                                                                                                                                                                        |
 | MAPI-Id                | \-                                                                                                                                                                                        |
 | System-Only            | Falso                                                                                                                                                                                     |
-| Tem valor único       | True                                                                                                                                                                                      |
-| É indexado             | True                                                                                                                                                                                      |
-| No Catálogo Global      | True                                                                                                                                                                                      |
-| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                                                                                              |
+| É de valor único       | Verdadeiro                                                                                                                                                                                      |
+| É indexado             | Verdadeiro                                                                                                                                                                                      |
+| No catálogo global      | Verdadeiro                                                                                                                                                                                      |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                                                              |
 | Range-Lower            | \-                                                                                                                                                                                        |
 | Range-Upper            | \-                                                                                                                                                                                        |
 | Search-Flags           | 0x00000001                                                                                                                                                                                |
 | System-Flags           | 0x00000010                                                                                                                                                                                |
-| Classes usadas em        | [**FT-Dfs**](c-ftdfs.md)<br/> [**Index-Server-Catalog**](c-indexservercatalog.md)<br/> [**Fila de Impressão**](c-printqueue.md)<br/> [**Volume**](c-volume.md)<br/> |
+| Classes usadas em        | [**FT-DFS**](c-ftdfs.md)<br/> [**Index-Server-Catalog**](c-indexservercatalog.md)<br/> [**Fila de impressão**](c-printqueue.md)<br/> [**Volume**](c-volume.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ O nome da convenção de nomenização universal para volumes compartilhados e i
 | ID do link                | \-                                                                                                                                                                                                                                                                   |
 | MAPI-Id                | \-                                                                                                                                                                                                                                                                   |
 | System-Only            | Falso                                                                                                                                                                                                                                                                |
-| Tem valor único       | True                                                                                                                                                                                                                                                                 |
-| É indexado             | True                                                                                                                                                                                                                                                                 |
-| No Catálogo Global      | True                                                                                                                                                                                                                                                                 |
-| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                                                                                                                                                                         |
+| É de valor único       | Verdadeiro                                                                                                                                                                                                                                                                 |
+| É indexado             | Verdadeiro                                                                                                                                                                                                                                                                 |
+| No catálogo global      | Verdadeiro                                                                                                                                                                                                                                                                 |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                                                                                                                                         |
 | Range-Lower            | \-                                                                                                                                                                                                                                                                   |
 | Range-Upper            | \-                                                                                                                                                                                                                                                                   |
 | Search-Flags           | 0x00000001                                                                                                                                                                                                                                                           |
 | System-Flags           | 0x00000010                                                                                                                                                                                                                                                           |
-| Classes usadas em        | [**FT-Dfs**](c-ftdfs.md)<br/> [**Index-Server-Catalog**](c-indexservercatalog.md)<br/> [**ms-Print-ConnectionPolicy**](c-msprint-connectionpolicy.md)<br/> [**Fila de Impressão**](c-printqueue.md)<br/> [**Volume**](c-volume.md)<br/> |
+| Classes usadas em        | [**FT-DFS**](c-ftdfs.md)<br/> [**Index-Server-Catalog**](c-indexservercatalog.md)<br/> [**MS-Print-ConnectionPolicy**](c-msprint-connectionpolicy.md)<br/> [**Fila de impressão**](c-printqueue.md)<br/> [**Volume**](c-volume.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ O nome da convenção de nomenização universal para volumes compartilhados e i
 | ID do link                | \-                                                                                                                                                                                                                                                                   |
 | MAPI-Id                | \-                                                                                                                                                                                                                                                                   |
 | System-Only            | Falso                                                                                                                                                                                                                                                                |
-| Tem valor único       | True                                                                                                                                                                                                                                                                 |
-| É indexado             | True                                                                                                                                                                                                                                                                 |
-| No Catálogo Global      | True                                                                                                                                                                                                                                                                 |
-| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                                                                                                                                                                         |
+| É de valor único       | Verdadeiro                                                                                                                                                                                                                                                                 |
+| É indexado             | Verdadeiro                                                                                                                                                                                                                                                                 |
+| No catálogo global      | Verdadeiro                                                                                                                                                                                                                                                                 |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                                                                                                                                         |
 | Range-Lower            | \-                                                                                                                                                                                                                                                                   |
 | Range-Upper            | \-                                                                                                                                                                                                                                                                   |
 | Search-Flags           | 0x00000001                                                                                                                                                                                                                                                           |
 | System-Flags           | 0x00000010                                                                                                                                                                                                                                                           |
-| Classes usadas em        | [**FT-Dfs**](c-ftdfs.md)<br/> [**Index-Server-Catalog**](c-indexservercatalog.md)<br/> [**ms-Print-ConnectionPolicy**](c-msprint-connectionpolicy.md)<br/> [**Fila de Impressão**](c-printqueue.md)<br/> [**Volume**](c-volume.md)<br/> |
+| Classes usadas em        | [**FT-DFS**](c-ftdfs.md)<br/> [**Index-Server-Catalog**](c-indexservercatalog.md)<br/> [**MS-Print-ConnectionPolicy**](c-msprint-connectionpolicy.md)<br/> [**Fila de impressão**](c-printqueue.md)<br/> [**Volume**](c-volume.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ O nome da convenção de nomenização universal para volumes compartilhados e i
 | ID do link                | \-                                                                                                                                                                                                                                                                   |
 | MAPI-Id                | \-                                                                                                                                                                                                                                                                   |
 | System-Only            | Falso                                                                                                                                                                                                                                                                |
-| Tem valor único       | True                                                                                                                                                                                                                                                                 |
-| É indexado             | True                                                                                                                                                                                                                                                                 |
-| No Catálogo Global      | True                                                                                                                                                                                                                                                                 |
-| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                                                                                                                                                                         |
+| É de valor único       | Verdadeiro                                                                                                                                                                                                                                                                 |
+| É indexado             | Verdadeiro                                                                                                                                                                                                                                                                 |
+| No catálogo global      | Verdadeiro                                                                                                                                                                                                                                                                 |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                                                                                                                                         |
 | Range-Lower            | \-                                                                                                                                                                                                                                                                   |
 | Range-Upper            | \-                                                                                                                                                                                                                                                                   |
 | Search-Flags           | 0x00000001                                                                                                                                                                                                                                                           |
 | System-Flags           | 0x00000010                                                                                                                                                                                                                                                           |
-| Classes usadas em        | [**FT-Dfs**](c-ftdfs.md)<br/> [**Index-Server-Catalog**](c-indexservercatalog.md)<br/> [**ms-Print-ConnectionPolicy**](c-msprint-connectionpolicy.md)<br/> [**Fila de Impressão**](c-printqueue.md)<br/> [**Volume**](c-volume.md)<br/> |
+| Classes usadas em        | [**FT-DFS**](c-ftdfs.md)<br/> [**Index-Server-Catalog**](c-indexservercatalog.md)<br/> [**MS-Print-ConnectionPolicy**](c-msprint-connectionpolicy.md)<br/> [**Fila de impressão**](c-printqueue.md)<br/> [**Volume**](c-volume.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ O nome da convenção de nomenização universal para volumes compartilhados e i
 | ID do link                | \-                                                                                                                                                                                                                                                                   |
 | MAPI-Id                | \-                                                                                                                                                                                                                                                                   |
 | System-Only            | Falso                                                                                                                                                                                                                                                                |
-| Tem valor único       | True                                                                                                                                                                                                                                                                 |
-| É indexado             | True                                                                                                                                                                                                                                                                 |
-| No Catálogo Global      | True                                                                                                                                                                                                                                                                 |
-| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                                                                                                                                                                         |
+| É de valor único       | Verdadeiro                                                                                                                                                                                                                                                                 |
+| É indexado             | Verdadeiro                                                                                                                                                                                                                                                                 |
+| No catálogo global      | Verdadeiro                                                                                                                                                                                                                                                                 |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                                                                                                                                         |
 | Range-Lower            | \-                                                                                                                                                                                                                                                                   |
 | Range-Upper            | \-                                                                                                                                                                                                                                                                   |
 | Search-Flags           | 0x00000001                                                                                                                                                                                                                                                           |
 | System-Flags           | 0x00000010                                                                                                                                                                                                                                                           |
-| Classes usadas em        | [**FT-Dfs**](c-ftdfs.md)<br/> [**Index-Server-Catalog**](c-indexservercatalog.md)<br/> [**ms-Print-ConnectionPolicy**](c-msprint-connectionpolicy.md)<br/> [**Fila de Impressão**](c-printqueue.md)<br/> [**Volume**](c-volume.md)<br/> |
+| Classes usadas em        | [**FT-DFS**](c-ftdfs.md)<br/> [**Index-Server-Catalog**](c-indexservercatalog.md)<br/> [**MS-Print-ConnectionPolicy**](c-msprint-connectionpolicy.md)<br/> [**Fila de impressão**](c-printqueue.md)<br/> [**Volume**](c-volume.md)<br/> |
 
 
 

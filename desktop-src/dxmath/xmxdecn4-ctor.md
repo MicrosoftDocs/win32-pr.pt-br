@@ -22,7 +22,7 @@ ms.locfileid: "119978556"
 
 Construtores expostos por `XMXDECN4` .
 
-Constrói instâncias da estrutura [**XMXDECN4**](/windows/win32/api/directxpackedvector/ns-directxpackedvector-xmxdecn4) .
+Constrói instâncias da [**estrutura XMXDECN4.**](/windows/win32/api/directxpackedvector/ns-directxpackedvector-xmxdecn4)
 
 > [!Note]  
 > Os construtores listados aqui só estão disponíveis em C++.
@@ -47,7 +47,7 @@ Constrói instâncias da estrutura [**XMXDECN4**](/windows/win32/api/directxpack
 <tbody>
 <tr class="odd">
 <td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmxdecn4-xmxdecn4(constfloat)"><strong>XMXDECN4 ()</strong></a></td>
-<td style="text-align: left;">Construtor padrão para <code>XMXDECN4</code> . <br/> Construtor padrão para <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmxdecn4"><strong>XMXDECN4</strong></a>. <br/>
+<td style="text-align: left;">Construtor padrão para <code>XMXDECN4</code> . <br/> Construtor padrão para <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmxdecn4"><strong>XMXDECN4.</strong></a> <br/>
 <blockquote>
 [!Note]<br />
 Esse construtor só está disponível em C++.
@@ -56,7 +56,7 @@ Esse construtor só está disponível em C++.
 </tr>
 <tr class="even">
 <td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmxdecn4-xmxdecn4(uint32_t)"><strong>XMXDECN4 (uint32_t)</strong></a></td>
-<td style="text-align: left;">Inicializa uma nova instância de <code>XMXDECN4</code> de uma <code>uint32_t</code> variável que contém dados de componente em um formato empacotado. <br/> Esse construtor inicializa uma nova instância de <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmxdecn4"><strong>XMXDECN4</strong></a> de uma <code>uint32_t</code> variável que contém dados de componente em um formato empacotado. <br/>
+<td style="text-align: left;">Inicializa uma nova instância de de uma <code>XMXDECN4</code> <code>uint32_t</code> variável que contém dados de componente em um formato empacotado. <br/> Esse construtor inicializa uma nova instância do <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmxdecn4"><strong>XMXDECN4</strong></a> de uma variável que contém dados de componente <code>uint32_t</code> em um formato empacotado. <br/>
 <blockquote>
 [!Note]<br />
 Esse construtor só está disponível em C++.
@@ -64,8 +64,8 @@ Esse construtor só está disponível em C++.
 <br/></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmxdecn4-xmxdecn4(constfloat)"><strong>XMXDECN4 (const float *)</strong></a></td>
-<td style="text-align: left;">Inicializa uma nova instância de <code>XMXDECN4</code> de um argumento de matriz de quatro elementos <code>float</code> . <br/> Esse construtor inicializa uma nova instância de <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmxdecn4"><strong>XMXDECN4</strong></a> de um de um argumento de matriz de quatro elementos <code>float</code> . <br/>
+<td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmxdecn4-xmxdecn4(constfloat)"><strong>XMXDECN4 (const float*)</strong></a></td>
+<td style="text-align: left;">Inicializa uma nova instância de de um <code>XMXDECN4</code> argumento de matriz de quatro <code>float</code> elementos. <br/> Esse construtor inicializa uma nova instância de <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmxdecn4"><strong>XMXDECN4</strong></a> de um de um argumento de matriz de <code>float</code> quatro elementos. <br/>
 <blockquote>
 [!Note]<br />
 Esse construtor só está disponível em C++.
@@ -73,8 +73,8 @@ Esse construtor só está disponível em C++.
 <br/></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmxdecn4-xmxdecn4(float_float_float_float)"><strong>XMXDECN4 (float, float, float, float)</strong></a></td>
-<td style="text-align: left;">Inicializa uma nova instância do <code>XMXDECN4</code> de quatro argumentos normalizados <code>float</code> . <br/> Esse construtor inicializa uma nova instância de <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmxdecn4"><strong>XMXDECN4</strong></a> de quatro argumentos normalizados <code>float</code> . <br/>
+<td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmxdecn4-xmxdecn4(float_float_float_float)"><strong>XMXDECN4 (float, float, float,float)</strong></a></td>
+<td style="text-align: left;">Inicializa uma nova instância de de <code>XMXDECN4</code> quatro <code>float</code> argumentos normalizados. <br/> Esse construtor inicializa uma nova instância de <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmxdecn4"><strong>XMXDECN4</strong></a> de quatro <code>float</code> argumentos normalizados. <br/>
 <blockquote>
 [!Note]<br />
 Esse construtor só está disponível em C++.

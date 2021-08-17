@@ -57,7 +57,7 @@ GUID que identifica a lista de revogação a ser usada. De definido como um dos 
 |-------------------------------|--------------------------------------------------------------------------------------------|
 | APLICATIVO WMDRM \_ \_ REVOCATIONTYPE    | Especifica a lista de certificados revogados do aplicativo.                                     |
 | DISPOSITIVO WMDRM \_ \_ REVOCATIONTYPE | Especifica a lista de certificados revogados do dispositivo.                                          |
-| WMDRM \_ REVOCATIONTYPE \_ LTD | Especifica a lista de certificados Windows DRM de Mídia para Dispositivos de Rede. |
+| WMDRM \_ REVOCATIONTYPE \_ LTD | Especifica a lista de certificados revogados Windows DRM de Mídia do Microsoft Windows para Dispositivos de Rede. |
 
 
 

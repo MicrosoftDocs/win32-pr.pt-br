@@ -17,15 +17,15 @@ ms.locfileid: "119982586"
 
 Aplicativo de captura simples.
 
-Esse aplicativo cria uma janela de visualização para o primeiro dispositivo de captura de vídeo que ele localiza no sistema do usuário (se algum). Ele demonstra um exemplo simples de como usar as interfaces [**ICaptureGraphBuilder2**](/windows/desktop/api/Strmif/nn-strmif-icapturegraphbuilder2) e [**ICreateDevEnum**](/windows/desktop/api/Strmif/nn-strmif-icreatedevenum) para criar um grafo de captura.
+Esse aplicativo cria uma janela de visualização para o primeiro dispositivo de captura de vídeo que ele localiza no sistema do usuário (se houver). Ele demonstra um exemplo simples de como usar as interfaces [**ICaptureGraphBuilder2**](/windows/desktop/api/Strmif/nn-strmif-icapturegraphbuilder2) e [**ICreateDevEnum**](/windows/desktop/api/Strmif/nn-strmif-icreatedevenum) para criar um grafo de captura.
 
-Para obter um aplicativo de captura de exemplo que dá suporte a mais recursos, consulte [Exemplo de AmCap](amcap-sample.md).
+Para obter um aplicativo de captura de exemplo que dê suporte a mais recursos, consulte [exemplo de AMCAP](amcap-sample.md).
 
 ## <a name="downloading-the-sample"></a>Baixando o exemplo
 
-Para baixar os DirectShow exemplos do SDK do DirectShow, instale a versão mais recente [do SDK Windows .](https://msdn.microsoft.com/windowsvista/bb980924.aspx)
+para baixar os exemplos do SDK do DirectShow, instale a versão mais recente do [SDK do Windows](https://msdn.microsoft.com/windowsvista/bb980924.aspx).
 
-Este exemplo é instalado no seguinte caminho: *\[ SDK \] Root* \\ Samples Multimedia DirectShow Capture \\ \\ \\ \\ PlayCap.
+este exemplo é instalado no seguinte caminho: exemplos de *\[ raiz \] do SDK* \\ \\ multimídia \\ DirectShow \\ capturar \\ PlayCap.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

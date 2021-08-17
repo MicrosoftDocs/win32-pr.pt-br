@@ -56,12 +56,12 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 6c7e7d3b754a0399acb152dba043da269f67a06f
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 515651c4e9d82bc88053187ae8ed3517662fb53a81080e54cd54097b7243a225
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105755838"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119020094"
 ---
 # <a name="win32_tapedrive-class"></a>\_Classe Win32 TapeDrive
 
@@ -358,7 +358,7 @@ Tipo de dados: a matriz **UInt16**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**ArrayType**](../wmisdk/standard-qualifiers.md) ("indexado"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("MIF. \|Dispositivos de armazenamento DMTF \| 1,9 "," MIF. \|Dispositivos de armazenamento DMTF \| 1,11 "," MIF. \|Dispositivos de armazenamento DMTF \| 1,12 "," MIF. \|Discos DMTF \| 3,7 "), [**ModelCorrespondence**](../wmisdk/standard-qualifiers.md) ("[**CIM \_ MediaAccessDevice**](cim-mediaaccessdevice.md).**CapabilityDescriptions**")
+Qualificadores: [**ArrayType**](../wmisdk/standard-qualifiers.md) ("indexado"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("MIF. \|dispositivos DMTF Armazenamento \| 1,9 "," MIF. \|dispositivos DMTF Armazenamento \| 1,11 "," MIF. \|dispositivos DMTF Armazenamento \| 1,12 "," MIF. \|Discos DMTF \| 3,7 "), [**ModelCorrespondence**](../wmisdk/standard-qualifiers.md) ("[**CIM \_ MediaAccessDevice**](cim-mediaaccessdevice.md).**CapabilityDescriptions**")
 </dt> </dl>
 
 Matriz de recursos do dispositivo de acesso à mídia. Por exemplo, o dispositivo pode dar suporte a acesso aleatório, mídia removível e limpeza automática. Nesse caso, os valores 3, 7 e 9 seriam gravados na matriz.
@@ -636,7 +636,7 @@ O dispositivo não está configurado corretamente.
 
 <span id="Windows_cannot_load_the_driver_for_this_device."></span><span id="windows_cannot_load_the_driver_for_this_device."></span><span id="WINDOWS_CANNOT_LOAD_THE_DRIVER_FOR_THIS_DEVICE."></span>
 
-<span id="windows_cannot_load_the_driver_for_this_device."></span><span id="WINDOWS_CANNOT_LOAD_THE_DRIVER_FOR_THIS_DEVICE."></span>**O Windows não pode carregar o driver para este dispositivo.** (2)
+<span id="windows_cannot_load_the_driver_for_this_device."></span><span id="WINDOWS_CANNOT_LOAD_THE_DRIVER_FOR_THIS_DEVICE."></span>**Windows não pode carregar o driver para este dispositivo.** (2)
 
 
 </dt> <dd></dd> <dt>
@@ -665,12 +665,12 @@ O dispositivo não está funcionando corretamente. Um de seus drivers ou o regis
 
 <span id="The_driver_for_this_device_needs_a_resource_that_Windows_cannot_manage."></span><span id="the_driver_for_this_device_needs_a_resource_that_windows_cannot_manage."></span><span id="THE_DRIVER_FOR_THIS_DEVICE_NEEDS_A_RESOURCE_THAT_WINDOWS_CANNOT_MANAGE."></span>
 
-<span id="the_driver_for_this_device_needs_a_resource_that_windows_cannot_manage."></span><span id="THE_DRIVER_FOR_THIS_DEVICE_NEEDS_A_RESOURCE_THAT_WINDOWS_CANNOT_MANAGE."></span>**O driver para este dispositivo precisa de um recurso que o Windows não possa gerenciar.** (5)
+<span id="the_driver_for_this_device_needs_a_resource_that_windows_cannot_manage."></span><span id="THE_DRIVER_FOR_THIS_DEVICE_NEEDS_A_RESOURCE_THAT_WINDOWS_CANNOT_MANAGE."></span>**o driver para este dispositivo precisa de um recurso que Windows não pode gerenciar.** (5)
 
 
 </dt> <dd>
 
-O driver para o dispositivo requer um recurso que o Windows não pode gerenciar.
+o Driver para o dispositivo requer um recurso que Windows não pode gerenciar.
 
 </dd> <dt>
 
@@ -749,12 +749,12 @@ O dispositivo não pode encontrar recursos livres suficientes para usar.
 
 <span id="Windows_cannot_verify_this_device_s_resources."></span><span id="windows_cannot_verify_this_device_s_resources."></span><span id="WINDOWS_CANNOT_VERIFY_THIS_DEVICE_S_RESOURCES."></span>
 
-<span id="windows_cannot_verify_this_device_s_resources."></span><span id="WINDOWS_CANNOT_VERIFY_THIS_DEVICE_S_RESOURCES."></span>**O Windows não pode verificar os recursos deste dispositivo.** (13)
+<span id="windows_cannot_verify_this_device_s_resources."></span><span id="WINDOWS_CANNOT_VERIFY_THIS_DEVICE_S_RESOURCES."></span>**Windows não pode verificar os recursos desse dispositivo.** (13)
 
 
 </dt> <dd>
 
-O Windows não pode verificar os recursos do dispositivo.
+Windows não pode verificar os recursos do dispositivo.
 
 </dd> <dt>
 
@@ -782,12 +782,12 @@ O dispositivo não está funcionando corretamente devido a um possível problema
 
 <span id="Windows_cannot_identify_all_the_resources_this_device_uses."></span><span id="windows_cannot_identify_all_the_resources_this_device_uses."></span><span id="WINDOWS_CANNOT_IDENTIFY_ALL_THE_RESOURCES_THIS_DEVICE_USES."></span>
 
-<span id="windows_cannot_identify_all_the_resources_this_device_uses."></span><span id="WINDOWS_CANNOT_IDENTIFY_ALL_THE_RESOURCES_THIS_DEVICE_USES."></span>**O Windows não pode identificar todos os recursos que este dispositivo usa.** (16)
+<span id="windows_cannot_identify_all_the_resources_this_device_uses."></span><span id="WINDOWS_CANNOT_IDENTIFY_ALL_THE_RESOURCES_THIS_DEVICE_USES."></span>**Windows não pode identificar todos os recursos que este dispositivo usa.** (16)
 
 
 </dt> <dd>
 
-O Windows não pode identificar todos os recursos que o dispositivo usa.
+Windows não pode identificar todos os recursos que o dispositivo usa.
 
 </dd> <dt>
 
@@ -833,12 +833,12 @@ O registro pode estar corrompido.
 
 <span id="System_failure__Try_changing_the_driver_for_this_device._If_that_does_not_work__see_your_hardware_documentation._Windows_is_removing_this_device."></span><span id="system_failure__try_changing_the_driver_for_this_device._if_that_does_not_work__see_your_hardware_documentation._windows_is_removing_this_device."></span><span id="SYSTEM_FAILURE__TRY_CHANGING_THE_DRIVER_FOR_THIS_DEVICE._IF_THAT_DOES_NOT_WORK__SEE_YOUR_HARDWARE_DOCUMENTATION._WINDOWS_IS_REMOVING_THIS_DEVICE."></span>
 
-<span id="System_failure__Try_changing_the_driver_for_this_device._If_that_does_not_work__see_your_hardware_documentation._Windows_is_removing_this_device."></span><span id="system_failure__try_changing_the_driver_for_this_device._if_that_does_not_work__see_your_hardware_documentation._windows_is_removing_this_device."></span><span id="SYSTEM_FAILURE__TRY_CHANGING_THE_DRIVER_FOR_THIS_DEVICE._IF_THAT_DOES_NOT_WORK__SEE_YOUR_HARDWARE_DOCUMENTATION._WINDOWS_IS_REMOVING_THIS_DEVICE."></span>**Falha do sistema: Tente alterar o driver deste dispositivo. Se isso não funcionar, consulte a documentação do hardware. O Windows está removendo este dispositivo.** (21)
+<span id="System_failure__Try_changing_the_driver_for_this_device._If_that_does_not_work__see_your_hardware_documentation._Windows_is_removing_this_device."></span><span id="system_failure__try_changing_the_driver_for_this_device._if_that_does_not_work__see_your_hardware_documentation._windows_is_removing_this_device."></span><span id="SYSTEM_FAILURE__TRY_CHANGING_THE_DRIVER_FOR_THIS_DEVICE._IF_THAT_DOES_NOT_WORK__SEE_YOUR_HARDWARE_DOCUMENTATION._WINDOWS_IS_REMOVING_THIS_DEVICE."></span>**Falha do sistema: Tente alterar o driver deste dispositivo. Se isso não funcionar, consulte a documentação do hardware. Windows está removendo este dispositivo.** (21)
 
 
 </dt> <dd>
 
-Falha do sistema. Se a alteração do driver de dispositivo não for eficaz, consulte a documentação do hardware. O Windows está removendo o dispositivo.
+Falha do sistema. Se a alteração do driver de dispositivo não for eficaz, consulte a documentação do hardware. Windows está removendo o dispositivo.
 
 </dd> <dt>
 
@@ -877,34 +877,34 @@ O dispositivo não está presente, não está funcionando corretamente ou não t
 
 <span id="Windows_is_still_setting_up_this_device."></span><span id="windows_is_still_setting_up_this_device."></span><span id="WINDOWS_IS_STILL_SETTING_UP_THIS_DEVICE."></span>
 
-<span id="windows_is_still_setting_up_this_device."></span><span id="WINDOWS_IS_STILL_SETTING_UP_THIS_DEVICE."></span>**O Windows ainda está configurando este dispositivo.** (25)
+<span id="windows_is_still_setting_up_this_device."></span><span id="WINDOWS_IS_STILL_SETTING_UP_THIS_DEVICE."></span>**Windows ainda está configurando esse dispositivo.** (25)
 
 
 </dt> <dd>
 
-O Windows ainda está configurando o dispositivo.
+Windows ainda está configurando o dispositivo.
 
 </dd> <dt>
 
 <span id="Windows_is_still_setting_up_this_device."></span><span id="windows_is_still_setting_up_this_device."></span><span id="WINDOWS_IS_STILL_SETTING_UP_THIS_DEVICE."></span>
 
-<span id="windows_is_still_setting_up_this_device."></span><span id="WINDOWS_IS_STILL_SETTING_UP_THIS_DEVICE."></span>**O Windows ainda está configurando este dispositivo.** (26)
+<span id="windows_is_still_setting_up_this_device."></span><span id="WINDOWS_IS_STILL_SETTING_UP_THIS_DEVICE."></span>**Windows ainda está configurando esse dispositivo.** (26)
 
 
 </dt> <dd>
 
-O Windows ainda está configurando o dispositivo.
+Windows ainda está configurando o dispositivo.
 
 </dd> <dt>
 
 <span id="This_device_does_not_have_valid_log_configuration."></span><span id="this_device_does_not_have_valid_log_configuration."></span><span id="THIS_DEVICE_DOES_NOT_HAVE_VALID_LOG_CONFIGURATION."></span>
 
-<span id="this_device_does_not_have_valid_log_configuration."></span><span id="THIS_DEVICE_DOES_NOT_HAVE_VALID_LOG_CONFIGURATION."></span>**Este dispositivo não tem uma configuração de log válida.** (27)
+<span id="this_device_does_not_have_valid_log_configuration."></span><span id="THIS_DEVICE_DOES_NOT_HAVE_VALID_LOG_CONFIGURATION."></span>**Esse dispositivo não tem configuração de log válida.** (27)
 
 
 </dt> <dd>
 
-O dispositivo não tem uma configuração de log válida.
+O dispositivo não tem configuração de log válida.
 
 </dd> <dt>
 
@@ -921,7 +921,7 @@ Os drivers de dispositivo não estão instalados.
 
 <span id="This_device_is_disabled_because_the_firmware_of_the_device_did_not_give_it_the_required_resources."></span><span id="this_device_is_disabled_because_the_firmware_of_the_device_did_not_give_it_the_required_resources."></span><span id="THIS_DEVICE_IS_DISABLED_BECAUSE_THE_FIRMWARE_OF_THE_DEVICE_DID_NOT_GIVE_IT_THE_REQUIRED_RESOURCES."></span>
 
-<span id="this_device_is_disabled_because_the_firmware_of_the_device_did_not_give_it_the_required_resources."></span><span id="THIS_DEVICE_IS_DISABLED_BECAUSE_THE_FIRMWARE_OF_THE_DEVICE_DID_NOT_GIVE_IT_THE_REQUIRED_RESOURCES."></span>**Este dispositivo está desabilitado porque o firmware do dispositivo não forneceu os recursos necessários.** (29)
+<span id="this_device_is_disabled_because_the_firmware_of_the_device_did_not_give_it_the_required_resources."></span><span id="THIS_DEVICE_IS_DISABLED_BECAUSE_THE_FIRMWARE_OF_THE_DEVICE_DID_NOT_GIVE_IT_THE_REQUIRED_RESOURCES."></span>**Esse dispositivo está desabilitado porque o firmware do dispositivo não lhe deu os recursos necessários.** (29)
 
 
 </dt> <dd>
@@ -932,23 +932,23 @@ O dispositivo está desabilitado. O firmware do dispositivo não forneceu os rec
 
 <span id="This_device_is_using_an_Interrupt_Request__IRQ__resource_that_another_device_is_using."></span><span id="this_device_is_using_an_interrupt_request__irq__resource_that_another_device_is_using."></span><span id="THIS_DEVICE_IS_USING_AN_INTERRUPT_REQUEST__IRQ__RESOURCE_THAT_ANOTHER_DEVICE_IS_USING."></span>
 
-<span id="this_device_is_using_an_interrupt_request__irq__resource_that_another_device_is_using."></span><span id="THIS_DEVICE_IS_USING_AN_INTERRUPT_REQUEST__IRQ__RESOURCE_THAT_ANOTHER_DEVICE_IS_USING."></span>**Este dispositivo está usando um recurso de IRQ (solicitação de interrupção) que outro dispositivo está usando.** (30)
+<span id="this_device_is_using_an_interrupt_request__irq__resource_that_another_device_is_using."></span><span id="THIS_DEVICE_IS_USING_AN_INTERRUPT_REQUEST__IRQ__RESOURCE_THAT_ANOTHER_DEVICE_IS_USING."></span>**Esse dispositivo está usando um recurso IRQ (Solicitação de Interrupção) que outro dispositivo está usando.** (30)
 
 
 </dt> <dd>
 
-O dispositivo está usando um recurso de IRQ que outro dispositivo está usando.
+O dispositivo está usando um recurso IRQ que outro dispositivo está usando.
 
 </dd> <dt>
 
 <span id="This_device_is_not_working_properly_because_Windows_cannot_load_the_drivers_required_for_this_device."></span><span id="this_device_is_not_working_properly_because_windows_cannot_load_the_drivers_required_for_this_device."></span><span id="THIS_DEVICE_IS_NOT_WORKING_PROPERLY_BECAUSE_WINDOWS_CANNOT_LOAD_THE_DRIVERS_REQUIRED_FOR_THIS_DEVICE."></span>
 
-<span id="this_device_is_not_working_properly_because_windows_cannot_load_the_drivers_required_for_this_device."></span><span id="THIS_DEVICE_IS_NOT_WORKING_PROPERLY_BECAUSE_WINDOWS_CANNOT_LOAD_THE_DRIVERS_REQUIRED_FOR_THIS_DEVICE."></span>**Este dispositivo não está funcionando corretamente porque o Windows não pode carregar os drivers necessários para este dispositivo.** (31)
+<span id="this_device_is_not_working_properly_because_windows_cannot_load_the_drivers_required_for_this_device."></span><span id="THIS_DEVICE_IS_NOT_WORKING_PROPERLY_BECAUSE_WINDOWS_CANNOT_LOAD_THE_DRIVERS_REQUIRED_FOR_THIS_DEVICE."></span>**Esse dispositivo não está funcionando corretamente porque Windows pode carregar os drivers necessários para esse dispositivo.** (31)
 
 
 </dt> <dd>
 
-O dispositivo não está funcionando corretamente. O Windows não pode carregar os drivers de dispositivo necessários.
+O dispositivo não está funcionando corretamente. Windows pode carregar os drivers de dispositivo necessários.
 
 </dd> </dl>
 
@@ -957,7 +957,7 @@ O dispositivo não está funcionando corretamente. O Windows não pode carregar 
 **ConfigManagerUserConfig**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -966,9 +966,9 @@ Tipo de acesso: Somente leitura
 Qualificadores: [**esquema**](../wmisdk/standard-qualifiers.md) ("Win32")
 </dt> </dl>
 
-Se for **true**, o dispositivo estará usando uma configuração definida pelo usuário.
+Se **TRUE**, o dispositivo está usando uma configuração definida pelo usuário.
 
-Essa propriedade é herdada [**de \_ LogicalDevice CIM**](cim-logicaldevice.md).
+Essa propriedade é herdada de [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
 
 </dd> <dt>
 
@@ -981,19 +981,19 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [ **\_ chave CIM**](../wmisdk/standard-wmi-qualifiers.md)
+Qualificadores: [ **Chave CIM \_**](../wmisdk/standard-wmi-qualifiers.md)
 </dt> </dl>
 
-Nome da primeira classe concreta a ser exibida na cadeia de herança usada na criação de uma instância. Quando usado com as outras propriedades de chave da classe, essa propriedade permite que todas as instâncias dessa classe e suas subclasses sejam identificadas exclusivamente.
+Nome da primeira classe concreta a ser exibida na cadeia de herança usada na criação de uma instância. Quando usada com as outras propriedades de chave da classe , essa propriedade permite que todas as instâncias dessa classe e suas subclasses sejam identificadas exclusivamente.
 
-Essa propriedade é herdada [**de \_ LogicalDevice CIM**](cim-logicaldevice.md).
+Essa propriedade é herdada de [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
 
 </dd> <dt>
 
-**Defaultblockize**
+**DefaultBlockSize**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt64**
+Tipo de dados: **uint64**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -1002,11 +1002,11 @@ Tipo de acesso: Somente leitura
 Qualificadores: [**unidades**](../wmisdk/standard-qualifiers.md) ("bytes")
 </dt> </dl>
 
-Tamanho de bloco padrão, em bytes, para este dispositivo.
+Tamanho do bloco padrão, em bytes, para este dispositivo.
 
-Essa propriedade é herdada do [**CIM \_ MediaAccessDevice**](cim-mediaaccessdevice.md).
+Essa propriedade é herdada [**de CIM \_ MediaAccessDevice**](cim-mediaaccessdevice.md).
 
-Para obter mais informações sobre como usar valores de **UInt64** em scripts, consulte [scripts no WMI](../wmisdk/creating-a-wmi-script.md).
+Para obter mais informações sobre como **usar valores uint64** em scripts, consulte [Scripts no WMI](../wmisdk/creating-a-wmi-script.md).
 
 </dd> <dt>
 
@@ -1024,11 +1024,11 @@ Qualificadores: [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Descriçã
 
 Descrição do objeto.
 
-Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
-**DeviceID**
+**Deviceid**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
@@ -1037,28 +1037,28 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**Key**](../wmisdk/key-qualifier.md), [**override**](../wmisdk/standard-qualifiers.md) ("DeviceID"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("win32api \| File Functions \| CreateFile")
+Qualificadores: [**Key**](../wmisdk/key-qualifier.md), [**Override**](../wmisdk/standard-qualifiers.md) ("DeviceId"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| File Functions \| CreateFile")
 </dt> </dl>
 
 Identificador exclusivo da unidade de fita com outros dispositivos no sistema.
 
-Essa propriedade é herdada [**de \_ LogicalDevice CIM**](cim-logicaldevice.md).
+Essa propriedade é herdada de [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
 
 </dd> <dt>
 
 **ECC**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) (" \| estruturas de backup em fita win32api \| [**fita \_ obter \_ \_ parâmetros de unidade**](/windows/win32/api/winnt/ns-winnt-tape_get_drive_parameters) \| ECC")
+Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Tape Backup Structures TAPE GET DRIVE \| [**\_ \_ \_ PARAMETERS**](/windows/win32/api/winnt/ns-winnt-tape_get_drive_parameters) \| ECC")
 </dt> </dl>
 
-Se **for true**, o dispositivo dará suporte à correção de erro de hardware.
+Se **TRUE**, o dispositivo dá suporte à correção de erro de hardware.
 
 <dt>
 
@@ -1071,7 +1071,7 @@ Se **for true**, o dispositivo dará suporte à correção de erro de hardware.
 
 <span id="True"></span><span id="true"></span><span id="TRUE"></span>
 
-**Verdadeiro** (1)
+**True** (1)
 
 
 </dt> <dd></dd> </dl>
@@ -1081,7 +1081,7 @@ Se **for true**, o dispositivo dará suporte à correção de erro de hardware.
 **EOTWarningZoneSize**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -1090,24 +1090,24 @@ Tipo de acesso: Somente leitura
 Qualificadores: [**unidades**](../wmisdk/standard-qualifiers.md) ("bytes")
 </dt> </dl>
 
-Tamanho da zona para o aviso de fim de fita (EOT).
+Tamanho da zona para o aviso de EOT (fim da fita).
 
-Essa propriedade é herdada do [**CIM \_ TapeDrive**](cim-tapedrive.md).
+Essa propriedade é herdada de [**CIM \_ TapeDrive.**](cim-tapedrive.md)
 
 </dd> <dt>
 
 **ErrorCleared**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Se **for true**, o erro relatado em **LastErrorCode** agora será limpo.
+Se **TRUE**, o erro relatado em **LastErrorCode** agora será limpo.
 
-Essa propriedade é herdada [**de \_ LogicalDevice CIM**](cim-logicaldevice.md).
+Essa propriedade é herdada de [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
 
 </dd> <dt>
 
@@ -1120,9 +1120,9 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Cadeia de caracteres de forma livre fornecendo mais informações sobre o erro registrado em **LastErrorCode** e informações sobre as ações corretivas que podem ser executadas.
+Cadeia de caracteres de forma livre fornecendo mais informações sobre o erro registrado em **LastErrorCode** e informações sobre quaisquer ações corretivas que possam ser tomadas.
 
-Essa propriedade é herdada [**de \_ LogicalDevice CIM**](cim-logicaldevice.md).
+Essa propriedade é herdada de [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
 
 </dd> <dt>
 
@@ -1135,41 +1135,41 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Cadeia de caracteres de forma livre que descreve o tipo de detecção de erros e correção com suporte neste dispositivo.
+Cadeia de caracteres de forma livre que descreve o tipo de detecção e correção de erro com suporte neste dispositivo.
 
-Essa propriedade é herdada do [**CIM \_ MediaAccessDevice**](cim-mediaaccessdevice.md).
+Essa propriedade é herdada [**de CIM \_ MediaAccessDevice**](cim-mediaaccessdevice.md).
 
 </dd> <dt>
 
 **FeaturesHigh**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) (" \| estruturas de backup em fita win32api \| [**fita \_ obter \_ \_ parâmetros de unidade**](/windows/win32/api/winnt/ns-winnt-tape_get_drive_parameters) \| FeaturesHigh")
+Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Tape Backup Structures TAPE GET DRIVE \| [**\_ \_ \_ PARAMETERS**](/windows/win32/api/winnt/ns-winnt-tape_get_drive_parameters) \| FeaturesHigh")
 </dt> </dl>
 
-Ordem superior 32 bits do sinalizador de recursos do dispositivo.
+32 bits de alta ordem do sinalizador de recursos do dispositivo.
 
 </dd> <dt>
 
-**FeaturesLow**
+**RecursosLow**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) (" \| estruturas de backup em fita win32api \| [**fita \_ obter \_ \_ parâmetros de unidade**](/windows/win32/api/winnt/ns-winnt-tape_get_drive_parameters) \| FeaturesLow")
+Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Tape Backup Structures TAPE GET DRIVE \| [**\_ \_ \_ PARAMETERS**](/windows/win32/api/winnt/ns-winnt-tape_get_drive_parameters) \| FeaturesLow")
 </dt> </dl>
 
-Ordem inferior 32 bits do sinalizador de recursos do dispositivo.
+32 bits de baixa ordem do sinalizador de recursos do dispositivo.
 
 </dd> <dt>
 
@@ -1182,49 +1182,49 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) (" \| funções de arquivo win32api")
+Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Funções de arquivo Win32API") \|
 </dt> </dl>
 
-Nome de identificação do fabricante da unidade de CD ROM do Windows.
+O nome de identificação do fabricante da unidade Windows CD ROM.
 
-Exemplo: "PLEXTOR CD-ROM PX-12CS 1, 1"
+Exemplo: "PLEXTOR CD-ROM PX-12CS 1.01"
 
 </dd> <dt>
 
 **InstallDate**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **DateTime**
+Tipo de dados: **datetime**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("MIF. \|Componente DMTF \| 1,5 "), [**DisplayName**](../wmisdk/standard-qualifiers.md) (" data de instalação ")
+Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("MIF. DMTF \| ComponentID \| 001.5"), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Data de instalação")
 </dt> </dl>
 
 Data e hora em que o objeto foi instalado. Essa propriedade não precisa de um valor para indicar que o objeto está instalado.
 
-Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **LastErrorCode**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Código do último erro relatado pelo dispositivo lógico.
+Último código de erro relatado pelo dispositivo lógico.
 
-Essa propriedade é herdada [**de \_ LogicalDevice CIM**](cim-logicaldevice.md).
+Essa propriedade é herdada de [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
 
 </dd> <dt>
 
-**Manufacturer**
+**Fabricante**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
@@ -1236,7 +1236,7 @@ Tipo de acesso: Somente leitura
 Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry")
 </dt> </dl>
 
-Fabricante da unidade de CD-ROM do Windows.
+Fabricante da unidade Windows CD-ROM.
 
 Exemplo: "PLEXTOR"
 
@@ -1245,7 +1245,7 @@ Exemplo: "PLEXTOR"
 **MaxBlockSize**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt64**
+Tipo de dados: **uint64**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -1254,38 +1254,38 @@ Tipo de acesso: Somente leitura
 Qualificadores: [**unidades**](../wmisdk/standard-qualifiers.md) ("bytes")
 </dt> </dl>
 
-Tamanho máximo do bloco, em bytes, para a mídia acessada por este dispositivo.
+Tamanho máximo do bloco, em bytes, para mídia acessada por este dispositivo.
 
-Essa propriedade é herdada do [**CIM \_ MediaAccessDevice**](cim-mediaaccessdevice.md).
+Essa propriedade é herdada [**de CIM \_ MediaAccessDevice**](cim-mediaaccessdevice.md).
 
-Para obter mais informações sobre como usar valores de **UInt64** em scripts, consulte [scripts no WMI](../wmisdk/creating-a-wmi-script.md).
+Para obter mais informações sobre como **usar valores uint64** em scripts, consulte [Scripts no WMI](../wmisdk/creating-a-wmi-script.md).
 
 </dd> <dt>
 
 **MaxMediaSize**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt64**
+Tipo de dados: **uint64**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("MIF. \|Dispositivos de acesso sequencial DMTF \| 1,2 "), [**unidades**](../wmisdk/standard-qualifiers.md) (" kilobytes ")
+Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("MIF. Dispositivos de acesso sequencial DMTF \| \| 001.2"), [**Unidades**](../wmisdk/standard-qualifiers.md) ("quilobytes")
 </dt> </dl>
 
-Tamanho máximo, em quilobytes, de mídia com suporte neste dispositivo.
+Tamanho máximo, em quilobytes, da mídia com suporte neste dispositivo.
 
-Essa propriedade é herdada do [**CIM \_ MediaAccessDevice**](cim-mediaaccessdevice.md).
+Essa propriedade é herdada [**de CIM \_ MediaAccessDevice**](cim-mediaaccessdevice.md).
 
-Para obter mais informações sobre como usar valores de **UInt64** em scripts, consulte [scripts no WMI](../wmisdk/creating-a-wmi-script.md).
+Para obter mais informações sobre como **usar valores uint64** em scripts, consulte [Scripts no WMI](../wmisdk/creating-a-wmi-script.md).
 
 </dd> <dt>
 
 **MaxPartitionCount**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -1293,7 +1293,7 @@ Tipo de acesso: Somente leitura
 
 Contagem máxima de partições para a unidade de fita.
 
-Essa propriedade é herdada do [**CIM \_ TapeDrive**](cim-tapedrive.md).
+Essa propriedade é herdada de [**CIM \_ TapeDrive.**](cim-tapedrive.md)
 
 </dd> <dt>
 
@@ -1306,17 +1306,17 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) (" \_ unidade de fita de MediaType Win32 TapeDrive \| \| ")
+Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Unidade de Fita Win32 \_ TapeDrive \| \| MediaType")
 </dt> </dl>
 
-Tipo de mídia usado pelo (ou acessado por) este dispositivo. Nesse caso, ele é definido como "unidade de fita".
+Tipo de mídia usado por (ou acessado por) este dispositivo. Nesse caso, ele é definido como "Unidade de Fita".
 
 </dd> <dt>
 
 **MinBlockSize**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt64**
+Tipo de dados: **uint64**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -1325,11 +1325,11 @@ Tipo de acesso: Somente leitura
 Qualificadores: [**unidades**](../wmisdk/standard-qualifiers.md) ("bytes")
 </dt> </dl>
 
-Tamanho mínimo do bloco, em bytes, para a mídia acessada por este dispositivo.
+Tamanho mínimo do bloco, em bytes, para mídia acessada por esse dispositivo.
 
-Essa propriedade é herdada do [**CIM \_ MediaAccessDevice**](cim-mediaaccessdevice.md).
+Essa propriedade é herdada [**de CIM \_ MediaAccessDevice**](cim-mediaaccessdevice.md).
 
-Para obter mais informações sobre como usar valores de **UInt64** em scripts, consulte [scripts no WMI](../wmisdk/creating-a-wmi-script.md).
+Para obter mais informações sobre como **usar valores uint64** em scripts, consulte [Scripts no WMI](../wmisdk/creating-a-wmi-script.md).
 
 </dd> <dt>
 
@@ -1342,34 +1342,34 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Name")
+Qualificadores: [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Nome")
 </dt> </dl>
 
-Rótulo pelo qual o objeto é conhecido. Quando em uma subclasse, a propriedade pode ser substituída para ser uma propriedade de chave.
+Rótulo pelo qual o objeto é conhecido. Quando subclasse, a propriedade pode ser substituído para ser uma propriedade de chave.
 
-Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **NeedsCleaning**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Se **for true**, o dispositivo de acesso à mídia precisará de limpeza. Se a limpeza manual ou automática for possível, ela será indicada na propriedade **Capabilities** .
+Se **TRUE**, o dispositivo de acesso à mídia precisará ser limpo. Se a limpeza manual ou automática é possível é indicada na **propriedade Funcionalidades.**
 
-Essa propriedade é herdada do [**CIM \_ MediaAccessDevice**](cim-mediaaccessdevice.md).
+Essa propriedade é herdada [**de CIM \_ MediaAccessDevice**](cim-mediaaccessdevice.md).
 
 </dd> <dt>
 
 **NumberOfMediaSupported**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -1377,14 +1377,14 @@ Tipo de acesso: Somente leitura
 
 Número máximo de mídias individuais que podem ser suportadas ou inseridas no dispositivo de acesso à mídia (quando há suporte).
 
-Essa propriedade é herdada do [**CIM \_ MediaAccessDevice**](cim-mediaaccessdevice.md).
+Essa propriedade é herdada [**de CIM \_ MediaAccessDevice**](cim-mediaaccessdevice.md).
 
 </dd> <dt>
 
 **Preenchimento**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -1393,9 +1393,9 @@ Tipo de acesso: Somente leitura
 Qualificadores: [**unidades**](../wmisdk/standard-qualifiers.md) ("bytes")
 </dt> </dl>
 
-Número de bytes inseridos entre os blocos em uma mídia de fita.
+Número de bytes inseridos entre blocos em uma mídia de fita.
 
-Essa propriedade é herdada do [**CIM \_ TapeDrive**](cim-tapedrive.md).
+Essa propriedade é herdada de [**CIM \_ TapeDrive.**](cim-tapedrive.md)
 
 </dd> <dt>
 
@@ -1411,9 +1411,9 @@ Tipo de acesso: Somente leitura
 Qualificadores: [**esquema**](../wmisdk/standard-qualifiers.md) ("Win32")
 </dt> </dl>
 
-Identificador de dispositivo do Windows Plug and Play do dispositivo lógico.
+Windows Plug and Play identificador de dispositivo lógico do dispositivo lógico.
 
-Essa propriedade é herdada [**de \_ LogicalDevice CIM**](cim-logicaldevice.md).
+Essa propriedade é herdada de [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
 
 Exemplo: " \* PNP030b"
 
@@ -1422,15 +1422,15 @@ Exemplo: " \* PNP030b"
 **PowerManagementCapabilities**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: a matriz **UInt16**
+Tipo de dados: **matriz uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Matriz de recursos específicos relacionados à energia de um dispositivo lógico.
+Matriz das funcionalidades específicas relacionadas a energia de um dispositivo lógico.
 
-Essa propriedade é herdada **de \_ LogicalDevice CIM**.
+Essa propriedade é herdada de **CIM \_ LogicalDevice.**
 
 <dt>
 
@@ -1483,23 +1483,23 @@ O dispositivo pode alterar seu estado de energia com base no uso ou em outros cr
 
 <span id="Power_State_Settable"></span><span id="power_state_settable"></span><span id="POWER_STATE_SETTABLE"></span>
 
-<span id="Power_State_Settable"></span><span id="power_state_settable"></span><span id="POWER_STATE_SETTABLE"></span>**Estado de energia configurável** (5)
+<span id="Power_State_Settable"></span><span id="power_state_settable"></span><span id="POWER_STATE_SETTABLE"></span>**Power State Settable** (5)
 
 
 </dt> <dd>
 
-Há suporte para o método [**SetPowerState**](setpowerstate-method-in-class-cim-controller.md) . Esse método é encontrado na classe pai **de \_ LogicalDevice CIM** e pode ser implementado. Para obter mais informações, consulte [Designing formato MOF (MOF) classes](../wmisdk/designing-managed-object-format--mof--classes.md).
+Há suporte para o método [**SetPowerState.**](setpowerstate-method-in-class-cim-controller.md) Esse método é encontrado na classe **\_ LogicalDevice cim** pai e pode ser implementado. Para obter mais informações, consulte [Designando classes Managed Object Format (MOF).](../wmisdk/designing-managed-object-format--mof--classes.md)
 
 </dd> <dt>
 
 <span id="Power_Cycling_Supported"></span><span id="power_cycling_supported"></span><span id="POWER_CYCLING_SUPPORTED"></span>
 
-<span id="Power_Cycling_Supported"></span><span id="power_cycling_supported"></span><span id="POWER_CYCLING_SUPPORTED"></span>**Ciclo de energia com suporte** (6)
+<span id="Power_Cycling_Supported"></span><span id="power_cycling_supported"></span><span id="POWER_CYCLING_SUPPORTED"></span>**Power Cycling com suporte** (6)
 
 
 </dt> <dd>
 
-O método [**SetPowerState**](setpowerstate-method-in-class-cim-controller.md) pode ser invocado com o parâmetro *PowerState* definido como 5 (ciclo de energia).
+O [**método SetPowerState**](setpowerstate-method-in-class-cim-controller.md) pode ser invocado com o *parâmetro PowerState* definido como 5 (Power Cycle).
 
 </dd> <dt>
 

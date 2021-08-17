@@ -16,12 +16,12 @@ api_type:
 - COM
 api_location:
 - Wbemdisp.dll
-ms.openlocfilehash: 2447d8361d02626e1f5ea8fae1928ffd563d52ff
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d33e4f3f530bf7d9bda2e228243026de7d3768efb668cf6c8683690e8127f65f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105749469"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118992056"
 ---
 # <a name="swbemobjectgetobjecttext_-method"></a>Método SWbemObject. GetObjectText \_
 
@@ -51,7 +51,7 @@ Reservado e deve ser 0 (zero) se especificado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se for bem-sucedido, esse método retornará uma cadeia de caracteres que contém o texto de saída.
 
@@ -113,7 +113,7 @@ WScript.Echo strMOF
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| parâmetro<br/>                   | <dl> <dt>Wbemdisp. h</dt> </dl>   |
+| Cabeçalho<br/>                   | <dl> <dt>Wbemdisp. h</dt> </dl>   |
 | Biblioteca de tipos<br/>             | <dl> <dt>Wbemdisp. tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Wbemdisp.dll</dt> </dl> |
 | CLSID<br/>                    | CLSID \_ SWbemObject<br/>                                                           |

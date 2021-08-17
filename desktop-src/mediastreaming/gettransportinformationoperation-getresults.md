@@ -15,12 +15,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 17f846a5824ed07bcaf849a540429eaabe46f3d2
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 2bbcc6345a09d0553df240c57e50b4498618be76cc75814f268892aa6e0b4dc2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104365957"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119100630"
 ---
 # <a name="gettransportinformationoperationgetresults-method"></a>Método GetTransportInformationOperation:: GetResults
 
@@ -48,7 +48,7 @@ Uma referência a uma estrutura [**TransportInformation**](/previous-versions/wi
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
 

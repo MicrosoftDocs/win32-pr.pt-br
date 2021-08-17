@@ -1,7 +1,7 @@
 ---
-description: O método SetRepaintStatus habilita ou desabilita os eventos redesenhados.
+description: O método SetRepaintStatus habilita ou desabilita eventos de repaint.
 ms.assetid: 94ae4935-459e-4009-9f64-c7c5b14504ae
-title: Método CBaseRenderer. SetRepaintStatus (Renbase. h)
+title: Método CBaseRenderer.SetRepaintStatus (Renbase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 39822b535680a699654e969abc316c10c54ba51b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 748d0091bd3d2eae11773a9f94b62ceeb92b2d3ca64049f1a1981e38bf222e8d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105811747"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119016844"
 ---
-# <a name="cbaserenderersetrepaintstatus-method"></a>Método CBaseRenderer. SetRepaintStatus
+# <a name="cbaserenderersetrepaintstatus-method"></a>Método CBaseRenderer.SetRepaintStatus
 
-O `SetRepaintStatus` método habilita ou desabilita os eventos redesenhados.
+O `SetRepaintStatus` método habilita ou desabilita eventos de repaint.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -45,17 +45,17 @@ void SetRepaintStatus(
 *bRepaint* 
 </dt> <dd>
 
-Valor booliano que indica se os eventos redesenhados estão habilitados. Se **for true**, o filtro enviará eventos [**\_ Repaints do EC**](ec-repaint.md) para o Gerenciador do grafo de filtro. Caso contrário, ele não enviará \_ eventos de REdesenhos do EC.
+Valor booliano que indica se os eventos de repaint estão habilitados. Se **TRUE**, o filtro enviará [**eventos EC \_ REPAINT**](ec-repaint.md) para o gerenciador de grafo de filtro. Caso contrário, ele não enviará eventos \_ EC REPAINT.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-Esse método garante que o Gerenciador de gráficos de filtro não seja inundado com \_ eventos de REdesenhos de EC redundantes. Depois que o filtro envia um evento de [**\_ redesenho de EC**](ec-repaint.md) , ele chama esse método com o valor **true**. O filtro não envia mais eventos de \_ REdesenho de EC até receber mais dados.
+Esse método garante que o gerenciador de grafo de filtro não seja inundado com eventos \_ REPAINT de EC redundantes. Depois que o filtro envia [**um evento \_ EC REPAINT,**](ec-repaint.md) ele chama esse método com o valor **TRUE**. O filtro não envia mais eventos \_ EC REPAINT até receber mais dados.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -63,8 +63,8 @@ Esse método garante que o Gerenciador de gráficos de filtro não seja inundado
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Renbase. h (incluir fluxos. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Renbase.h (incluir Fluxos.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

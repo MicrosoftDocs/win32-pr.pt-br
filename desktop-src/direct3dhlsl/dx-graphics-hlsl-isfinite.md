@@ -1,9 +1,9 @@
 ---
-title: isfinite (Corecrt \_ math.h)
+title: isfinito (Corecrt \_ Math. h)
 description: Determina se o valor de ponto flutuante especificado é finito.
 ms.assetid: 8be10499-2d06-4520-9697-dab2f461bd0d
 keywords:
-- isfinite HLSL
+- HLSL isfinito
 topic_type:
 - apiref
 api_name:
@@ -21,13 +21,13 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118792108"
 ---
-# <a name="isfinite"></a>isfinite
+# <a name="isfinite"></a>isfinito
 
 Determina se o valor de ponto flutuante especificado é finito.
 
 
 
-| *ret* isfinite(*x*) |
+| *RET* isfinito (*x*) |
 |---------------------|
 
 
@@ -40,7 +40,7 @@ Determina se o valor de ponto flutuante especificado é finito.
 
 | Item                                                   | Descrição                            |
 |--------------------------------------------------------|----------------------------------------|
-| <span id="x"></span><span id="X"></span>*X*<br/> | \[em \] O valor especificado.<br/> |
+| <span id="x"></span><span id="X"></span>*w.x.y.*<br/> | \[no \] valor especificado.<br/> |
 
 
 
@@ -48,7 +48,7 @@ Determina se o valor de ponto flutuante especificado é finito.
 
 ## <a name="return-value"></a>Valor Retornado
 
-Retorna um valor do mesmo tamanho que a entrada, com um valor definido como **True se** o *parâmetro x* for finito; caso **contrário, False.**
+Retorna um valor do mesmo tamanho que a entrada, com um valor definido como **true** se o parâmetro *x* for finito; caso contrário, **false**.
 
 ## <a name="type-description"></a>Descrição do tipo
 
@@ -56,23 +56,23 @@ Retorna um valor do mesmo tamanho que a entrada, com um valor definido como **Tr
 
 | Nome  | [**Tipo de modelo**](dx-graphics-hlsl-intrinsic-functions.md)                                                  | [**Tipo de componente**](dx-graphics-hlsl-intrinsic-functions.md) | Tamanho     |
 |-------|----------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------|----------|
-| *x*   | [**escalar,**](dx-graphics-hlsl-intrinsic-functions.md) **vetor** ou **matriz** | [**Flutuar**](/windows/desktop/WinProg/windows-data-types)                        | any      |
-| *Ret* | [**escalar,**](dx-graphics-hlsl-intrinsic-functions.md) **vetor** ou **matriz** | [**Bool**](/windows/desktop/WinProg/windows-data-types)                         | como entrada |
+| *x*   | [**escalar**](dx-graphics-hlsl-intrinsic-functions.md), **vetor** ou **matriz** | [**barra**](/windows/desktop/WinProg/windows-data-types)                        | any      |
+| *RET* | [**escalar**](dx-graphics-hlsl-intrinsic-functions.md), **vetor** ou **matriz** | [**bool**](/windows/desktop/WinProg/windows-data-types)                         | como entrada |
 
 
 
  
 
-## <a name="minimum-shader-model"></a>Modelo de sombreador mínimo
+## <a name="minimum-shader-model"></a>Modelo de sombreamento mínimo
 
-Essa função tem suporte nos modelos de sombreador a seguir.
+Essa função tem suporte nos seguintes modelos de sombreador.
 
 
 
 | Modelo de Sombreador                                                                       | Com suporte           |
 |------------------------------------------------------------------------------------|---------------------|
-| [Modelo de sombreador 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) e modelos de sombreador superior | sim                 |
-| [Modelo de sombreador 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md)                          | sim (somente \_ versus \_ 1 1) |
+| [Modelo do sombreador 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) e modelos de sombreador mais altos | sim                 |
+| [Modelo de sombreador 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md)                          | Sim ( \_ apenas vs 1 \_ 1) |
 
 
 
@@ -84,7 +84,7 @@ Essa função tem suporte nos modelos de sombreador a seguir.
 
 | Requisito | Valor |
 |-------------------|--------------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>Corecrt \_ math.h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>Corecrt \_ Math. h</dt> </dl> |
 
 
 

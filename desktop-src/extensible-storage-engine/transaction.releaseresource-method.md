@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre: método Transaction. ReleaseResource'
-title: Método Transaction. ReleaseResource
+description: 'Saiba mais sobre: Método Transaction.ReleaseResource'
+title: Método Transaction.ReleaseResource
 TOCTitle: 'ReleaseResource method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Transaction.ReleaseResource
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.transaction.releaseresource(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 78d3dc358b6c7c5dfe297132fd83f08c64693c85
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8c9ca7a00a5c824b9f73db5d9e5f225a772a34e8d0d67f36d17a46958dffa78d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104090650"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119107040"
 ---
-# <a name="transactionreleaseresource-method"></a>Método Transaction. ReleaseResource
+# <a name="transactionreleaseresource-method"></a>Método Transaction.ReleaseResource
 
-Chamado quando a transação está sendo descartada enquanto ativa. Isso deve reverter a transação.
+Chamado quando a transação está sendo descartada enquanto está ativa. Isso deve reverter a transação.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -60,4 +60,4 @@ protected override void ReleaseResource()
 
 [Membros da transação](./transaction-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -4,12 +4,12 @@ ms.assetid: 3de6a35d-41e9-4fce-ab92-e970c7c07e55
 title: Códigos de status HTTP (WinHTTP. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fcf4103cdc382bd5ab0d582fe99212083e2780ad
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 86f145a2a7b5f7e807d1b393d9c4fd9b4f71c81052f0f023a04f72e139842637
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104170198"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117744567"
 ---
 # <a name="http-status-codes-winhttph"></a>Códigos de status HTTP (WinHTTP. h)
 
@@ -420,7 +420,7 @@ O servidor não pode processar a solicitação porque a entidade de solicitaçã
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_STATUS_URI_TOO_LONG"></span><span id="http_status_uri_too_long"></span>**\_URI de status http \_ \_ muito \_ longo**
+<span id="HTTP_STATUS_URI_TOO_LONG"></span><span id="http_status_uri_too_long"></span>**URI \_ DE STATUS HTTP MUITO \_ \_ \_ LONGO**
 </dt> <dd> <dl> <dt>
 
 414
@@ -428,12 +428,12 @@ O servidor não pode processar a solicitação porque a entidade de solicitaçã
 
 
 
-O servidor não pode atender à solicitação porque o URI da solicitação é maior do que o servidor pode interpretar.
+O servidor não pode fazer o serviço da solicitação porque o URI da solicitação é maior do que o servidor pode interpretar.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_STATUS_UNSUPPORTED_MEDIA"></span><span id="http_status_unsupported_media"></span>**\_mídia de status http \_ sem suporte \_**
+<span id="HTTP_STATUS_UNSUPPORTED_MEDIA"></span><span id="http_status_unsupported_media"></span>**MÍDIA \_ SEM SUPORTE DO STATUS \_ \_ HTTP**
 </dt> <dd> <dl> <dt>
 
 415
@@ -441,12 +441,12 @@ O servidor não pode atender à solicitação porque o URI da solicitação é m
 
 
 
-O servidor não pode atender à solicitação porque a entidade da solicitação está em um formato sem suporte pelo recurso solicitado para o método solicitado.
+O servidor não pode fazer o serviço da solicitação porque a entidade da solicitação está em um formato sem suporte pelo recurso solicitado para o método solicitado.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_STATUS_RETRY_WITH"></span><span id="http_status_retry_with"></span>**\_ \_ repetição de status http \_ com**
+<span id="HTTP_STATUS_RETRY_WITH"></span><span id="http_status_retry_with"></span>**REPETIR \_ STATUS HTTP \_ \_ COM**
 </dt> <dd> <dl> <dt>
 
 449
@@ -454,12 +454,12 @@ O servidor não pode atender à solicitação porque a entidade da solicitação
 
 
 
-A solicitação deve ser repetida após a ação apropriada.
+A solicitação deve ser recuperada depois de fazer a ação apropriada.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_STATUS_SERVER_ERROR"></span><span id="http_status_server_error"></span>**\_ \_ erro do servidor de status http \_**
+<span id="HTTP_STATUS_SERVER_ERROR"></span><span id="http_status_server_error"></span>**ERRO \_ DO SERVIDOR DE STATUS \_ \_ HTTP**
 </dt> <dd> <dl> <dt>
 
 500
@@ -467,12 +467,12 @@ A solicitação deve ser repetida após a ação apropriada.
 
 
 
-O servidor encontrou uma condição inesperada que o impediu de atender à solicitação.
+O servidor encontrou uma condição inesperada que o impedia de atender à solicitação.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_STATUS_NOT_SUPPORTED"></span><span id="http_status_not_supported"></span>**\_status http \_ sem \_ suporte**
+<span id="HTTP_STATUS_NOT_SUPPORTED"></span><span id="http_status_not_supported"></span>**STATUS \_ HTTP \_ SEM \_ SUPORTE**
 </dt> <dd> <dl> <dt>
 
 501
@@ -480,12 +480,12 @@ O servidor encontrou uma condição inesperada que o impediu de atender à solic
 
 
 
-O servidor não oferece suporte à funcionalidade necessária para atender à solicitação.
+O servidor não dá suporte à funcionalidade necessária para atender à solicitação.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_STATUS_BAD_GATEWAY"></span><span id="http_status_bad_gateway"></span>**\_ \_ Gateway insatisfatório de status http \_**
+<span id="HTTP_STATUS_BAD_GATEWAY"></span><span id="http_status_bad_gateway"></span>**GATEWAY \_ DE STATUS RUIM \_ \_ DE HTTP**
 </dt> <dd> <dl> <dt>
 
 502
@@ -493,12 +493,12 @@ O servidor não oferece suporte à funcionalidade necessária para atender à so
 
 
 
-O servidor, ao atuar como gateway ou proxy, recebeu uma resposta inválida do servidor upstream acessado na tentativa de atender à solicitação.
+O servidor, ao atuar como um gateway ou proxy, recebeu uma resposta inválida do servidor upstream que ele acessou ao tentar atender à solicitação.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_STATUS_SERVICE_UNAVAIL"></span><span id="http_status_service_unavail"></span>**serviço de status HTTP não \_ \_ \_ disp.**
+<span id="HTTP_STATUS_SERVICE_UNAVAIL"></span><span id="http_status_service_unavail"></span>**\_ \_ INDISPONIBILIDADE DO SERVIÇO DE STATUS HTTP \_**
 </dt> <dd> <dl> <dt>
 
 503
@@ -511,7 +511,7 @@ O serviço está temporariamente sobrecarregado.
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_STATUS_GATEWAY_TIMEOUT"></span><span id="http_status_gateway_timeout"></span>**\_ \_ tempo limite do gateway de status http \_**
+<span id="HTTP_STATUS_GATEWAY_TIMEOUT"></span><span id="http_status_gateway_timeout"></span>**TEMPOOUT \_ \_ DO GATEWAY DE STATUS HTTP \_**
 </dt> <dd> <dl> <dt>
 
 504
@@ -524,7 +524,7 @@ A solicitação atingiu o tempo limite ao aguardar um gateway.
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_STATUS_VERSION_NOT_SUP"></span><span id="http_status_version_not_sup"></span>**\_versão de status http \_ \_ não \_ sup**
+<span id="HTTP_STATUS_VERSION_NOT_SUP"></span><span id="http_status_version_not_sup"></span>**VERSÃO \_ DE STATUS HTTP NÃO \_ \_ \_ SUP**
 </dt> <dd> <dl> <dt>
 
 505
@@ -532,7 +532,7 @@ A solicitação atingiu o tempo limite ao aguardar um gateway.
 
 
 
-O servidor não oferece suporte à versão do protocolo HTTP que foi usada na mensagem de solicitação.
+O servidor não dá suporte à versão do protocolo HTTP que foi usada na mensagem de solicitação.
 
 
 </dt> </dl> </dd> </dl>
@@ -543,9 +543,9 @@ O servidor não oferece suporte à versão do protocolo HTTP que foi usada na me
 
 | Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Somente Windows XP, Windows 2000 Professional com \[ aplicativos de área de trabalho do SP3\]<br/>      |
-| Servidor mínimo com suporte<br/> | Windows Server 2003, Windows 2000 Server com aplicativos de área de trabalho do SP3 \[ somente\]<br/>   |
-| parâmetro<br/>                   | <dl> <dt>WinHTTP. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows XP, Windows 2000 Professional somente com aplicativos da área de trabalho SP3 \[\]<br/>      |
+| Servidor mínimo com suporte<br/> | Windows Server 2003, Windows 2000 Server com somente aplicativos da área de trabalho SP3 \[\]<br/>   |
+| Cabeçalho<br/>                   | <dl> <dt>Winhttp.h</dt> </dl> |
 
 
 

@@ -1,7 +1,7 @@
 ---
-description: Define os diferentes Estados prontos da extensão de origem de mídia.
+description: Define os diferentes estados prontos da Extensão de Fonte de Mídia.
 ms.assetid: 7455B92F-CC2D-4743-935D-F5EBFD834397
-title: Enumeração de MF_MSE_READY
+title: MF_MSE_READY enumeração
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - mfmediaengine.h
-ms.openlocfilehash: bff2155a2cb2cb21d4c25d868f95472f47f15b1a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 28f476c32abbffa8faadd8a7c527f07d81632eee10f1c6cfc54eacc926b4f4e4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103828622"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119104572"
 ---
-# <a name="mf_mse_ready-enumeration"></a>\_ \_ Enumeração pronta do MF MSE
+# <a name="mf_mse_ready-enumeration"></a>\_Enumeração MSE READY do MF \_
 
-Define os diferentes Estados prontos da extensão de origem de mídia.
+Define os diferentes estados prontos da Extensão de Fonte de Mídia.
 
 ## <a name="syntax"></a>Syntax
 
@@ -41,24 +41,24 @@ typedef enum _MF_MSE_READY {
 
 <dl> <dt>
 
-<span id="MF_MSE_READY_CLOSED"></span><span id="mf_mse_ready_closed"></span>**MF \_ MSE \_ pronto \_ fechado**
+<span id="MF_MSE_READY_CLOSED"></span><span id="mf_mse_ready_closed"></span>**MF \_ MSE \_ READY \_ CLOSED**
 </dt> <dd>
 
-A origem da mídia está fechada.
+A fonte de mídia está fechada.
 
 </dd> <dt>
 
-<span id="MF_MSE_READY_OPEN"></span><span id="mf_mse_ready_open"></span>**MF \_ MSE \_ pronto \_ aberto**
+<span id="MF_MSE_READY_OPEN"></span><span id="mf_mse_ready_open"></span>**MF \_ MSE \_ READY \_ OPEN**
 </dt> <dd>
 
-A origem da mídia está aberta.
+A fonte de mídia está aberta.
 
 </dd> <dt>
 
-<span id="MF_MSE_READY_ENDED"></span><span id="mf_mse_ready_ended"></span>**o MF \_ MSE \_ pronto \_ terminou**
+<span id="MF_MSE_READY_ENDED"></span><span id="mf_mse_ready_ended"></span>**MF \_ MSE \_ READY \_ ENCERRADO**
 </dt> <dd>
 
-A origem da mídia foi encerrada.
+A fonte de mídia é encerrada.
 
 </dd> </dl>
 
@@ -68,9 +68,9 @@ A origem da mídia foi encerrada.
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 8.1 \[ apenas aplicativos de área de trabalho\]<br/>                                                 |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012 R2\]<br/>                                      |
-| INSERI<br/>                      | <dl> <dt>Mfmediaengine. idl</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[Windows 8.1 somente aplicativos da área de trabalho\]<br/>                                                 |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 Somente \[ aplicativos da área de trabalho R2\]<br/>                                      |
+| Idl<br/>                      | <dl> <dt>Mfmediaengine.idl</dt> </dl> |
 
 
 
@@ -78,7 +78,7 @@ A origem da mídia foi encerrada.
 
 <dl> <dt>
 
-[Enumerações de Media Foundation](media-foundation-enumerations.md)
+[Media Foundation enumerações](media-foundation-enumerations.md)
 </dt> </dl>
 
  

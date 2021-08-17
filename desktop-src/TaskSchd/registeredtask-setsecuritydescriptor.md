@@ -1,11 +1,11 @@
 ---
-title: Método RegisteredTask. SetSecurityDescriptor
-description: Para scripts, define o descritor de segurança que é usado como credenciais para a tarefa registrada.
+title: Método RegisteredTask.SetSecurityDescriptor
+description: Para scripts, define o descritor de segurança usado como credenciais para a tarefa registrada.
 ms.assetid: 2dc10df0-5827-4199-940e-865a03a694f5
 keywords:
-- Agendador de Tarefas do método SetSecurityDescriptor
-- Método SetSecurityDescriptor Agendador de Tarefas, objeto RegisteredTask
-- Objeto RegisteredTask Agendador de Tarefas, método SetSecurityDescriptor
+- Método SetSecurityDescriptor Agendador de Tarefas
+- Método SetSecurityDescriptor Agendador de Tarefas , objeto RegisteredTask
+- Objeto RegisteredTask Agendador de Tarefas , método SetSecurityDescriptor
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 386c97c470b94686c0a1f654313c6ef1e0bca5a3
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c7ac6845624ab2032b9b90d742c1346081c3ba4719d0814cfd257d3787c2bf70
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104086224"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117759587"
 ---
-# <a name="registeredtasksetsecuritydescriptor-method"></a>Método RegisteredTask. SetSecurityDescriptor
+# <a name="registeredtasksetsecuritydescriptor-method"></a>Método RegisteredTask.SetSecurityDescriptor
 
-Para scripts, define o descritor de segurança que é usado como credenciais para a tarefa registrada.
+Para scripts, define o descritor de segurança usado como credenciais para a tarefa registrada.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -43,32 +43,32 @@ RegisteredTask.SetSecurityDescriptor( _
 
 <dl> <dt>
 
-*SDDL* \[ no\]
+*sddl* \[ Em\]
 </dt> <dd>
 
-O descritor de segurança que é usado como credenciais para a tarefa registrada.
+O descritor de segurança usado como credenciais para a tarefa registrada.
 
 > [!Note]  
-> Se a conta do sistema local tiver acesso negado a uma tarefa, o serviço Agendador de Tarefas poderá produzir resultados inesperados.
+> Se a conta sistema local tiver o acesso negado a uma tarefa, o serviço Agendador de Tarefas poderá produzir resultados inesperados.
 
  
 
 </dd> <dt>
 
-*sinalizadores* \[ de no\]
+*sinalizadores* \[ Em\]
 </dt> <dd>
 
-Sinalizadores que especificam como definir o descritor de segurança. A tarefa \_ \_ não adicionar \_ sinalizador de ACE de entidade de segurança \_ (0x10) da enumeração de [**\_ criação de tarefa**](/windows/desktop/api/taskschd/ne-taskschd-task_creation) pode ser especificada.
+Sinalizadores que especificam como definir o descritor de segurança. O sinalizador TASK \_ DONT \_ ADD PRINCIPAL ACE (0x10) da \_ \_ [**enumeração TASK \_ CREATION**](/windows/desktop/api/taskschd/ne-taskschd-task_creation) pode ser especificado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-Você pode especificar a lista de controle de acesso (ACL) no descritor de segurança para uma tarefa a fim de permitir ou negar a determinados usuários e grupos o acesso a uma tarefa.
+Você pode especificar a ACL (lista de controle de acesso) no descritor de segurança de uma tarefa para permitir ou negar acesso a determinadas tarefas por usuários e grupos.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -76,9 +76,9 @@ Você pode especificar a lista de controle de acesso (ACL) no descritor de segur
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                          |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                    |
-| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd. tlb</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                          |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                    |
+| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 
 
@@ -90,7 +90,7 @@ Você pode especificar a lista de controle de acesso (ACL) no descritor de segur
 [**RegisteredTask**](registeredtask.md)
 </dt> <dt>
 
-[**TaskFolder. GetSecurityDescriptor**](taskfolder-getsecuritydescriptor.md)
+[**TaskFolder.GetSecurityDescriptor**](taskfolder-getsecuritydescriptor.md)
 </dt> <dt>
 
 [**RegisteredTask.SetSecurityDescriptor**](registeredtask-setsecuritydescriptor.md)

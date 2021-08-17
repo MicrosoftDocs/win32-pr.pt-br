@@ -133,7 +133,7 @@ HRESULT put_VolumeName(
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| parâmetro<br/>                   | <dl> <dt>IADs. h</dt> </dl>       |
+| Cabeçalho<br/>                   | <dl> <dt>IADs. h</dt> </dl>       |
 | DLL<br/>                      | <dl> <dt>Activeds.dll</dt> </dl> |
 | IID<br/>                      | IID \_ IADsPath é definido como B287FCD5-4080-11D1-A3AC-00C04FB950DC<br/>             |
 

@@ -36,7 +36,7 @@ Contém o nome ou o nome phoneético da pessoa.
 | Frequência de atualização  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.1942                     |
 | System-Id-Guid    | 4b1cba4e-302f-4134-ac7c-f01f6c797843        |
-| Sintaxe            | [**String(Unicode)**](s-string-unicode.md) |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -55,9 +55,9 @@ Contém o nome ou o nome phoneético da pessoa.
 | ID do link                | \-                                                                 |
 | MAPI-Id                | 0x8C8E                                                             |
 | System-Only            | Falso                                                              |
-| Tem valor único       | True                                                               |
-| É indexado             | True                                                               |
-| No Catálogo Global      | True                                                               |
+| Tem valor único       | Verdadeiro                                                               |
+| É indexado             | Verdadeiro                                                               |
+| No Catálogo Global      | Verdadeiro                                                               |
 | Descritor de segurança NT | O:BAG:BAD:S:                                                       |
 | Range-Lower            | 1                                                                  |
 | Range-Upper            | 64                                                                 |
@@ -76,9 +76,9 @@ Contém o nome ou o nome phoneético da pessoa.
 | ID do link                | \-                                                                 |
 | MAPI-Id                | 0x8C8E                                                             |
 | System-Only            | Falso                                                              |
-| Tem valor único       | True                                                               |
-| É indexado             | True                                                               |
-| No Catálogo Global      | True                                                               |
+| Tem valor único       | Verdadeiro                                                               |
+| É indexado             | Verdadeiro                                                               |
+| No Catálogo Global      | Verdadeiro                                                               |
 | Descritor de segurança NT | O:BAG:BAD:S:                                                       |
 | Range-Lower            | 1                                                                  |
 | Range-Upper            | 64                                                                 |
@@ -97,9 +97,9 @@ Contém o nome ou o nome phoneético da pessoa.
 | ID do link                | \-                                                                 |
 | MAPI-Id                | 0x8C8E                                                             |
 | System-Only            | Falso                                                              |
-| Tem valor único       | True                                                               |
-| É indexado             | True                                                               |
-| No Catálogo Global      | True                                                               |
+| Tem valor único       | Verdadeiro                                                               |
+| É indexado             | Verdadeiro                                                               |
+| No Catálogo Global      | Verdadeiro                                                               |
 | Descritor de segurança NT | O:BAG:BAD:S:                                                       |
 | Range-Lower            | 1                                                                  |
 | Range-Upper            | 64                                                                 |

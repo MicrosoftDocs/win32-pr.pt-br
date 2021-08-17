@@ -1,9 +1,9 @@
 ---
-title: WM/Gênero
-description: O atributo WM/Genre contém o gênero do conteúdo.
+title: WM/gênero
+description: O atributo WM/gênero contém o gênero do conteúdo.
 ms.assetid: 50279c96-e8f2-40a3-9d5b-5827eb91b61e
 keywords:
-- Formato de mídia do windows WM/Genre
+- Formato de mídia do Windows do WM/gênero
 topic_type:
 - apiref
 api_name:
@@ -19,9 +19,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118699026"
 ---
-# <a name="wmgenre"></a>WM/Gênero
+# <a name="wmgenre"></a>WM/gênero
 
-O **atributo WM/Genre** contém o gênero do conteúdo.
+O atributo **WM/gênero** contém o gênero do conteúdo.
 
 ## <a name="global-constant"></a>Constante global
 
@@ -29,13 +29,13 @@ g \_ wszWMGenre
 
 ## <a name="data-type"></a>Tipo de Dados
 
-**CADEIA DE CARACTERES DE \_ TIPO \_ WMT**
+**Cadeia de caracteres do \_ tipo WMT \_**
 
 ## <a name="remarks"></a>Comentários
 
-Esse é o atributo preferencial para especificar o gênero do conteúdo.
+Esse é o atributo preferencial para especificar o gênero de conteúdo.
 
-Se você alterar **WM/Genre ou** **WM/GenreID** em um arquivo MP3, o outro atributo será alterado para corresponder.
+Se você alterar o **WM/gênero** ou o **WM/gêneroid** em um arquivo MP3, o outro atributo será alterado para coincidir.
 
 ### <a name="example"></a>Exemplo
 
@@ -43,8 +43,8 @@ Se você alterar **WM/Genre ou** **WM/GenreID** em um arquivo MP3, o outro atrib
 
 | Tipo de arquivo | Valor de exemplo |
 |-----------|---------------|
-| Áudio     | "Rocha"        |
-| Vídeo     | "Émá"       |
+| Áudio     | Rock        |
+| Vídeo     | Drama       |
 
 
 

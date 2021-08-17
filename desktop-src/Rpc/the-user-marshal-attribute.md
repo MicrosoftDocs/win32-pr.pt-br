@@ -24,7 +24,7 @@ Assim como acontece com o atributo de **\[ \_ marshaling \] de fio** , você for
 
 
 
-| Rotina                                                            | Description                                                               |
+| Rotina                                                            | Descrição                                                               |
 |--------------------------------------------------------------------|---------------------------------------------------------------------------|
 | [<type>\_Usersize](the-type-usersize-function.md)           | Dimensiona o buffer de dados RPC antes do marshaling no lado do cliente ou do servidor. |
 | [<type>\_Usermarshal](the-type-usermarshal-function.md)     | Realiza marshaling dos dados no lado do cliente ou do servidor.                           |
