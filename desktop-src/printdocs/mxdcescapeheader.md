@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - mxdc.h
-ms.openlocfilehash: a16e0d5bb1a8ce48e071fe1b32543610d8433e86
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 53dd83e362ab21938121a986ee2402076d72f870460bc9db608b9a048cee0f28
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103837144"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119099070"
 ---
 # <a name="mxdc_escape_header_t-structure"></a>\_ \_ Estrutura T do cabeçalho de escape MXDC \_
 
@@ -62,7 +62,7 @@ A constante de código que diz ao MXDC o que fazer.
 
 
 
-| Código de operações                      | Description                                                                                                                                                                                                            |
+| Código de operações                      | Descrição                                                                                                                                                                                                            |
 |--------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | MXDCOP \_ obter \_ nome de arquivo                | Retorna, no parâmetro *lpszOutData* da função [**ExtEscape**](/windows/desktop/api/Wingdi/nf-wingdi-extescape) , o caminho completo do arquivo de saída como uma cadeia de caracteres terminada em zero ou o tamanho dessa cadeia de caracteres. Consulte Observações.                   |
 | \_Seq de \_ \_ Doc fixo \_ do MXDCOP PRINTTICKET | Associa um tíquete de impressão a uma sequência de documento fixa XPS.                                                                                                                                                         |
@@ -125,9 +125,9 @@ Quando **opcode** é MXDCOP, \_ defina o \_ \_ modo XPSPASSTHRU:
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                    |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                              |
-| parâmetro<br/>                   | <dl> <dt>Mxdc. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                    |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                              |
+| Cabeçalho<br/>                   | <dl> <dt>Mxdc. h</dt> </dl> |
 
 
 

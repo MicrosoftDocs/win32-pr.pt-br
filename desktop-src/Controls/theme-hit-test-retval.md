@@ -4,12 +4,12 @@ description: Esta seção lista os valores de código de teste de clique que sã
 ms.assetid: 95b4fc1a-2f9b-4464-b672-552d36b60c42
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 219cb59115bae56ac6cc3ba7f05384c331969b34
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 020765e6f766efc2c79e869a1b06cfceac2c13a451cc381d88ae066cc1478c11
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104005358"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119797596"
 ---
 # <a name="hit-test-return-values"></a>Valores de retorno de teste de clique
 
@@ -45,11 +45,11 @@ A tabela a seguir lista as opções de teste de clique e os códigos de retorno 
 
 
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

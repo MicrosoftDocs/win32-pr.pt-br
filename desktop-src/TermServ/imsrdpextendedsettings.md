@@ -4,8 +4,8 @@ description: Usado para definir e recuperar propriedades nomeadas para o control
 ms.assetid: b78eebc1-e514-4201-becf-770ee4a15187
 ms.tgt_platform: multiple
 keywords:
-- Interface IMsRdpExtendedSettings Serviços de Área de Trabalho Remota
-- Interface IMsRdpExtendedSettings Serviços de Área de Trabalho Remota , descrita
+- Serviços de Área de Trabalho Remota de interface IMsRdpExtendedSettings
+- Serviços de Área de Trabalho Remota da interface IMsRdpExtendedSettings, descrita
 topic_type:
 - apiref
 api_name:
@@ -29,7 +29,7 @@ Usado para definir e recuperar propriedades nomeadas para o controle de cliente.
 
 ## <a name="members"></a>Membros
 
-A interface **IMsRdpExtendedSettings** herda da interface [**IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **IMsRdpExtendedSettings** também tem estes tipos de membros:
+A interface **IMsRdpExtendedSettings** herda da interface [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) . **IMsRdpExtendedSettings** também tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 

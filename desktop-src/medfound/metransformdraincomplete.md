@@ -1,49 +1,49 @@
 ---
-description: Enviado por uma Media Foundation de transformação assíncrona (MFT) quando uma operação de descarga é concluída.
+description: Enviado por uma MFT (transformação Media Foundation assíncrona) quando uma operação de esgotamento é concluída.
 ms.assetid: 923055e5-a09a-402e-983b-6fa3cebb1b3a
-title: Evento METransformDrainComplete (Mfobjects. h)
+title: Evento METransformDrainComplete (Mfobjects.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ed291f9edacb11ba6edf7f5bd50a0715ae61a281
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fd5ab03ac5027d1dc7549e7b7f0b8494cd8066b07afb64c5df17415a4986866e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104297398"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118974025"
 ---
 # <a name="metransformdraincomplete-event"></a>Evento METransformDrainComplete
 
-Enviado por uma Media Foundation de transformação assíncrona (MFT) quando uma operação de descarga é concluída.
+Enviado por uma MFT (transformação Media Foundation assíncrona) quando uma operação de esgotamento é concluída.
 
 ## <a name="event-values"></a>Valores de evento
 
-Os valores possíveis recuperados de [**IMFMediaEvent:: GetValue**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaevent-getvalue) incluem o seguinte.
+Os valores possíveis recuperados [**de IMFMediaEvent::GetValue**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaevent-getvalue) incluem o seguinte.
 
 
 
-| VARTYPE              | Descrição               |
+| Vartype              | Descrição               |
 |----------------------|---------------------------|
-| VT \_ vazio<br/> | Nenhum dado do evento.<br/> |
+| VT \_ VAZIO<br/> | Nenhum dado do evento.<br/> |
 
 
 
 ## <a name="attributes"></a>Atributos
 
-Os atributos a seguir são definidos para este evento.
+Os atributos a seguir são definidos para esse evento.
 
 
 
 | Atributo                                                                        | Descrição                                                                      |
 |----------------------------------------------------------------------------------|----------------------------------------------------------------------------------|
-| [\_ID do \_ fluxo de entrada do MFT do evento MF \_ \_ \_](mf-event-mft-input-stream-id.md)<br/> | O identificador do fluxo que foi esgotado.<br/>*Necessária*<br/> |
+| [ID DO FLUXO \_ \_ DE ENTRADA MFT DO EVENTO \_ \_ \_ MF](mf-event-mft-input-stream-id.md)<br/> | O identificador do fluxo que foi esvaziado.<br/>*(Obrigatório)*<br/> |
 
 
 
 ## <a name="remarks"></a>Comentários
 
-MFTs assíncronas envie esse evento por meio da interface [**IMFMediaEventGenerator**](/windows/desktop/api/mfobjects/nn-mfobjects-imfmediaeventgenerator) . O MFTs síncrono nunca envia este evento.
+Os MFTs assíncronos enviam esse evento por meio da interface [**IMFMediaEventGenerator.**](/windows/desktop/api/mfobjects/nn-mfobjects-imfmediaeventgenerator) Os MFTs síncronos nunca enviam esse evento.
 
-Para drenar uma MFT, chame [**IMFTransform::P rocessmessage**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-processmessage) com a mensagem de **dreno de \_ \_ comando \_ de mensagem MFT** . Especifique o fluxo de entrada a ser esgotado no parâmetro *ulParam* . Quando a operação de descarga é concluída, um MFT assíncrono envia o evento METransformDrainComplete. O atributo de [ID do fluxo de entrada do \_ MFT do evento \_ \_ \_ \_ MF](mf-event-mft-input-stream-id.md) do evento contém o identificador de fluxo fornecido no parâmetro *ulParam* .
+Para esvaziar uma MFT, chame [**IMFTransform::P rocessMessage**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-processmessage) com a mensagem DRAIN do COMANDO DE MENSAGEM **\_ \_ \_ MFT.** Especifique o fluxo de entrada a ser esvaziado no *parâmetro ulParam.* Quando a operação de dreno é concluída, um MFT assíncrono envia o evento METransformDrainComplete. O [atributo MF \_ EVENT \_ MFT INPUT STREAM \_ \_ \_ ID](mf-event-mft-input-stream-id.md) do evento contém o identificador de fluxo dado no *parâmetro ulParam.*
 
 ## <a name="requirements"></a>Requisitos
 
@@ -51,9 +51,9 @@ Para drenar uma MFT, chame [**IMFTransform::P rocessmessage**](/windows/desktop/
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>                                                               |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008 R2\]<br/>                                                  |
-| parâmetro<br/>                   | <dl> <dt>Mfobjects. h (incluir Mfidl. h)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 7 \[ aplicativos da área de trabalho\]<br/>                                                               |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho do Server 2008 R2 \[\]<br/>                                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Mfobjects.h (inclua Mfidl.h)</dt> </dl> |
 
 
 
@@ -61,10 +61,10 @@ Para drenar uma MFT, chame [**IMFTransform::P rocessmessage**](/windows/desktop/
 
 <dl> <dt>
 
-[Eventos de Media Foundation](media-foundation-events.md)
+[Media Foundation eventos](media-foundation-events.md)
 </dt> <dt>
 
-[MFTs assíncrona](asynchronous-mfts.md)
+[MFTs assíncronos](asynchronous-mfts.md)
 </dt> </dl>
 
  

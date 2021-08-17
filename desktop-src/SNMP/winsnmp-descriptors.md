@@ -4,12 +4,12 @@ description: No ambiente de programação WinSNMP, um descritor é uma das duas 
 ms.assetid: a329963b-cdb9-40d2-9a82-6f0d9f4ac73a
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8cd7f844ab1365d6020afce0ca7bfeb3afa244a8
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 875112d8519f93f4b5ae6729401f2689294a84c55dc729f0ffa24d05076e300b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104291890"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119142909"
 ---
 # <a name="winsnmp-descriptors"></a>Descritores de WinSNMP
 
@@ -26,9 +26,9 @@ A implementação do Microsoft WinSNMP aloca e desaloca memória para todas as e
 
 Membros de cadeia de caracteres nos descritores não exigem um byte de terminação **nulo** . Para obter informações adicionais sobre como gerenciar a memória alocada para descritores, consulte [alocando objetos de memória WinSNMP](allocating-winsnmp-memory-objects.md).
 
- 
+ 
 
- 
+ 
 
 
 

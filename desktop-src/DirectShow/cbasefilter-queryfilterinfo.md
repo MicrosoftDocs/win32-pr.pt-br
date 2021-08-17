@@ -1,7 +1,7 @@
 ---
-description: 'O método QueryFilterInfo recupera informações sobre o filtro. Esse método implementa o método IBaseFilter:: QueryFilterInfo.'
+description: O método QueryFilterInfo recupera informações sobre o filtro. Esse método implementa o método IBaseFilter::QueryFilterInfo.
 ms.assetid: 0c25aa9e-933c-4c45-a1cc-ffc9253dd561
-title: Método CBaseFilter. QueryFilterInfo (Amfilter. h)
+title: Método CBaseFilter.QueryFilterInfo (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -23,9 +23,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119341735"
 ---
-# <a name="cbasefilterqueryfilterinfo-method"></a>Método CBaseFilter. QueryFilterInfo
+# <a name="cbasefilterqueryfilterinfo-method"></a>Método CBaseFilter.QueryFilterInfo
 
-O `QueryFilterInfo` método recupera informações sobre o filtro. Esse método implementa o método [**IBaseFilter:: QueryFilterInfo**](/windows/desktop/api/Strmif/nf-strmif-ibasefilter-queryfilterinfo) .
+O `QueryFilterInfo` método recupera informações sobre o filtro. Esse método implementa o [**método IBaseFilter::QueryFilterInfo.**](/windows/desktop/api/Strmif/nf-strmif-ibasefilter-queryfilterinfo)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,22 +42,22 @@ HRESULT QueryFilterInfo(
 
 <dl> <dt>
 
-*pInfo* 
+*Pinfo* 
 </dt> <dd>
 
-Ponteiro para uma estrutura de [**\_ informações de filtro**](/windows/win32/api/strmif/ns-strmif-filter_info) .
+Ponteiro para uma [**estrutura FILTER \_ INFO.**](/windows/win32/api/strmif/ns-strmif-filter_info)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor retornado
 
-Retorna S \_ OK ou o \_ ponteiro.
+Retorna S \_ OK ou E \_ POINTER.
 
 ## <a name="remarks"></a>Comentários
 
-Esse método copia o nome do filtro da variável de membro [**CBaseFilter:: m \_ pname**](cbasefilter-m-pname.md) para o membro **achName** da estrutura de \_ informações de filtro. Se **m \_ pname** for **nulo**, o método definirá **achName** como L ' \\ 0 '.
+Esse método copia o nome do filtro da variável de membro [**CBaseFilter::m \_ pName**](cbasefilter-m-pname.md) para o membro **achName** da estrutura FILTER \_ INFO. Se **m \_ pName** for **NULL,** o método define **achName** como L' \\ 0'.
 
-O método define o membro **pGraph** da estrutura de \_ informações de filtro igual à variável de membro [**CBaseFilter:: m \_ pGraph**](cbasefilter-m-pgraph.md) e incrementa a contagem de referência. O chamador deve liberar a interface.
+O método define o **membro pGraph** da estrutura FILTER INFO igual à variável de membro \_ [**CBaseFilter::m \_ pGraph**](cbasefilter-m-pgraph.md) e incrementa a contagem de referência. O chamador deve liberar a interface.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -65,8 +65,8 @@ O método define o membro **pGraph** da estrutura de \_ informações de filtro 
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Amfilter. h (incluir Fluxos. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Amfilter.h (incluir Fluxos.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

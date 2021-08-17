@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3dxof.lib
 - D3dxof.dll
-ms.openlocfilehash: 7c5a67a72f6ff5a63730167d2fe2d12213a9ab72
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: e1497ad06919833e0ba716877dc81b8df51a99361a49e43fa9a0f756e296040c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104298584"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117728908"
 ---
 # <a name="idirectxfilesaveobjectcreatedataobject-method"></a>Método IDirectXFileSaveObject:: createdataobject
 
@@ -99,7 +99,7 @@ Endereço de um ponteiro para uma interface [**IDirectXFileData**](idirectxfiled
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 

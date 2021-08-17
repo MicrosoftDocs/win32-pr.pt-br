@@ -1,5 +1,5 @@
 ---
-title: Elemento String (StringTableType)
+title: Elemento string (StringTableType)
 description: Define uma cadeia de caracteres localizada.
 ms.assetid: 845476a9-bcf4-4821-824c-06c9a9f64649
 keywords:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: c46fc43366d6472e8047b529d847eefd5369c263
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 82eae0fa7007790995617b2c26bc5aff2bca720fb689b9ac468ef551d3400e05
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918636"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119136168"
 ---
-# <a name="string-stringtabletype-element"></a>Elemento String (StringTableType)
+# <a name="string-stringtabletype-element"></a>Elemento string (StringTableType)
 
 Define uma cadeia de caracteres localizada.
 
@@ -43,7 +43,7 @@ Define uma cadeia de caracteres localizada.
 </xs:element>
 ```
 
-O elemento **String** é definido pelo tipo complexo [**StringTableType**](eventmanifestschema-stringtabletype-complextype.md) .
+O **elemento string** é definido pelo tipo complexo [**StringTableType.**](eventmanifestschema-stringtabletype-complextype.md)
 
 ## <a name="attributes"></a>Atributos
 
@@ -51,8 +51,8 @@ O elemento **String** é definido pelo tipo complexo [**StringTableType**](event
 
 | Nome       | Tipo   | Descrição                                                                           |
 |------------|--------|---------------------------------------------------------------------------------------|
-| id         | string | Um identificador que identifica exclusivamente a cadeia de caracteres na tabela de cadeias de caracteres.<br/> |
-| StringType | string | Não usado.<br/>                                                                  |
+| id         | string | Um identificador que identifica exclusivamente a cadeia de caracteres dentro da tabela de cadeia de caracteres.<br/> |
+| Stringtype | string | Não usado.<br/>                                                                  |
 | value      | string | A cadeia de caracteres localizada.<br/>                                                      |
 
 
@@ -63,8 +63,8 @@ O elemento **String** é definido pelo tipo complexo [**StringTableType**](event
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
 
 
 
@@ -75,7 +75,7 @@ O elemento **String** é definido pelo tipo complexo [**StringTableType**](event
 **Elemento pai**
 </dt> <dt>
 
-[**stringTable (corlocalizatype)**](eventmanifestschema-stringtable-localizationtype-element.md)
+[**stringTable (LocalizationType)**](eventmanifestschema-stringtable-localizationtype-element.md)
 </dt> </dl>
 
  

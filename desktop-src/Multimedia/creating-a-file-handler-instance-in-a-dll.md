@@ -1,19 +1,19 @@
 ---
-title: Criando uma instância de File-Handler em uma DLL
-description: Criando uma instância de File-Handler em uma DLL
+title: Criando uma File-Handler instância em uma DLL
+description: Criando uma File-Handler instância em uma DLL
 ms.assetid: 0cf7ef72-c675-4a67-97b3-18cccfb7ddc1
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c95a462d9c2f56abb5985904c4acc1fb12d10877
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 0023de28f660473a1747ff05528ec5360674754b5c0bcd34f5ae3a28cc39412f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "103640850"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119144749"
 ---
-# <a name="creating-a-file-handler-instance-in-a-dll"></a>Criando uma instância de File-Handler em uma DLL
+# <a name="creating-a-file-handler-instance-in-a-dll"></a>Criando uma File-Handler instância em uma DLL
 
-Quando um aplicativo especifica a DLL do manipulador de arquivos ou o manipulador de fluxo, o sistema procura no registro por seu identificador de classe e carregado. Em seguida, o sistema chama a função [**DllGetClassObject**](/previous-versions//dd797891(v=vs.85)) da dll para criar uma instância do manipulador de arquivo ou fluxo. O exemplo a seguir (escrito em C++) mostra como um manipulador de arquivo cria uma instância.
+Quando um aplicativo especifica a DLL do manipulador de arquivos ou o manipulador de fluxo, o sistema o procura no Registro por seu identificador de classe e carregado. Em seguida, o sistema chama a [**função DllGetClassObject**](/previous-versions//dd797891(v=vs.85)) da DLL para criar uma instância do manipulador de arquivo ou fluxo. O exemplo a seguir (escrito em C++) mostra como um manipulador de arquivos cria uma instância.
 
 
 ```C++
@@ -50,6 +50,6 @@ HRESULT CAVIFileCF::Create(const CLSID FAR&   rclsid,
 
 
 
- 
+ 
 
- 
+ 

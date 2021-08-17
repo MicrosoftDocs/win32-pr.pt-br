@@ -7,12 +7,12 @@ keywords:
 - Solicitação de comentários, acesso remoto
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7636f148570e9e1f3f488dad7b23043cec5e7c03
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 4fb84dace29ab2924eec2f9071a1aedda08cc96705e2cc9ff2da06e7b3e0bdda
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112406619"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117788561"
 ---
 # <a name="remote-access-request-for-comments"></a>Solicitação de acesso remoto para comentários
 
@@ -32,7 +32,7 @@ As RFCs (solicitações de comentários) são uma série contínua de documentos
 -   [RFC 2548](https://www.ietf.org/rfc/rfc2848.txt) – Atributos RADIUS específicos do fornecedor da Microsoft
 -   [RFC 2865](https://www.ietf.org/rfc/rfc2865.txt) – Radius (Remote Authentication Dial in User Service), junho de 2000
 -   [RFC 2866](https://www.ietf.org/rfc/rfc2866.txt) – Contabilidade do Radius, junho de 2000
--   [RFC 2868](https://www.ietf.org/rfc/rfc2868.txt) – Atributos radius para suporte ao protocolo Tunnel, junho de 2000
+-   [RFC 2868](https://www.ietf.org/rfc/rfc2868.txt) – Atributos radius para suporte Tunnel protocolo, junho de 2000
 -   [RFC 2869](https://www.ietf.org/rfc/rfc2869.txt) – Extensões RADIUS, junho de 2000
 -   [Rascunho radius MSCHAP Attr 01](https://www.freeradius.org/rfc/draft-ietf-radius-mschap-attr-01.txt) – Atributos RADIUS para suporte a MS-CHAP, novembro de 1997
 

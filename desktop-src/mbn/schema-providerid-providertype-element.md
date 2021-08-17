@@ -11,12 +11,12 @@ api_name:
 - ProviderID
 api_type:
 - Schema
-ms.openlocfilehash: 750e6c3f4397f710bb1ccbcea0286be68a89e145
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b40ac5abab2abf850d927c21f0de66ad419987f594f28dffcd380ead7f982d63
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104164574"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119959786"
 ---
 # <a name="providerid-providertype-element"></a>Elemento ProviderId (providerType)
 
@@ -40,7 +40,7 @@ O elemento **ProviderID** é definido pelo tipo complexo [**ProviderType**](sche
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Aplicativos de \[ aplicativos da área de trabalho do Windows 7 \| UWP\]<br/> |
+| Cliente mínimo com suporte<br/> | \[aplicativos UWP para aplicativos de área de trabalho Windows 7 \|\]<br/> |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                         |
 
 

@@ -1,21 +1,21 @@
 ---
-description: O método clone cria outro enumerador que contém o mesmo estado de enumeração que o atual. Esse método é ocultado das linguagens de Visual Basic e script.
+description: O método Clone cria outro enumerador que contém o mesmo estado de enumeração que o atual. Esse método está oculto de linguagens Visual Basic script e de script.
 ms.assetid: 551e0ddc-7ebf-4fc2-a155-0c9ee2f406d4
-title: 'Método IEnumParticipant:: clone (Confpriv. h)'
+title: Método IEnumParticipant::Clone (Confpriv.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c5b094f47738fd23f2762b7012a4e23c8b89da57
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: eccd4bd29442daa01e632ae83510a87eebb06cb72beafc206b04d47c3dd761db
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105780606"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119140489"
 ---
-# <a name="ienumparticipantclone-method"></a>Método IEnumParticipant:: clone
+# <a name="ienumparticipantclone-method"></a>Método IEnumParticipant::Clone
 
-\[O **clone** não está disponível para uso no Windows Vista, no windows Server 2008 e em versões subsequentes do sistema operacional. A API do cliente RTC fornece funcionalidade semelhante.\]
+\[**O** clone não está disponível para uso no Windows Vista, Windows Server 2008 e versões subsequentes do sistema operacional. A API do Cliente RTC fornece funcionalidade semelhante.\]
 
-O método **clone** cria outro enumerador que contém o mesmo estado de enumeração que o atual. Esse método é ocultado das linguagens de Visual Basic e script.
+O **método Clone** cria outro enumerador que contém o mesmo estado de enumeração que o atual. Esse método está oculto de linguagens Visual Basic script e de script.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -32,14 +32,14 @@ HRESULT Clone(
 
 <dl> <dt>
 
-*ppEnum* \[ fora\]
+*ppEnum* \[ out\]
 </dt> <dd>
 
-Ponteiro para a nova interface [**IEnumParticipant**](ienumparticipant.md) .
+Ponteiro para a nova interface [**IEnumParticipant.**](ienumparticipant.md)
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método pode retornar um desses valores.
 
@@ -48,9 +48,9 @@ Esse método pode retornar um desses valores.
 | Código de retorno                                                                                   | Descrição                                                     |
 |-----------------------------------------------------------------------------------------------|-----------------------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>          | O método foi bem-sucedido.<br/>                                    |
-| <dl> <dt>**\_ponteiro E**</dt> </dl>     | O parâmetro *ppEnum* não é um ponteiro válido.<br/>       |
+| <dl> <dt>**PONTEIRO \_ E**</dt> </dl>     | O *parâmetro ppEnum* não é um ponteiro válido.<br/>       |
 | <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | Há memória insuficiente para executar a operação.<br/> |
-| <dl> <dt>**E \_ inesperado**</dt> </dl>  | Falha por motivos desconhecidos.<br/>                          |
+| <dl> <dt>**E \_ UNEXPECTED**</dt> </dl>  | Falha por motivos desconhecidos.<br/>                          |
 
 
 
@@ -58,7 +58,7 @@ Esse método pode retornar um desses valores.
 
 ## <a name="remarks"></a>Comentários
 
-A TAPI chama o método [**AddRef**](/windows/win32/api/unknwn/nf-unknwn-iunknown-addref) na interface [**IEnumParticipant**](ienumparticipant.md) retornada por **IEnumParticipant:: clone**. O aplicativo deve chamar [**Release**](/windows/win32/api/unknwn/nf-unknwn-iunknown-release) na interface **IEnumParticipant** para liberar recursos associados a ela.
+TAPI chama o [**método AddRef**](/windows/win32/api/unknwn/nf-unknwn-iunknown-addref) na interface [**IEnumParticipant**](ienumparticipant.md) retornada por **IEnumParticipant::Clone.** O aplicativo deve chamar [**Release**](/windows/win32/api/unknwn/nf-unknwn-iunknown-release) na interface **IEnumParticipant** para liberar recursos associados a ele.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -66,9 +66,9 @@ A TAPI chama o método [**AddRef**](/windows/win32/api/unknwn/nf-unknwn-iunknown
 
 | Requisito | Valor |
 |-------------------------|---------------------------------------------------------------------------------------|
-| Versão da TAPI<br/> | Requer TAPI 3,0 ou posterior<br/>                                                 |
-| parâmetro<br/>       | <dl> <dt>Confpriv. h</dt> </dl> |
-| Biblioteca<br/>      | <dl> <dt>UUID. lib</dt> </dl>   |
+| Versão do TAPI<br/> | Requer TAPI 3.0 ou posterior<br/>                                                 |
+| Cabeçalho<br/>       | <dl> <dt>Confpriv.h</dt> </dl> |
+| Biblioteca<br/>      | <dl> <dt>Uuid.lib</dt> </dl>   |
 | DLL<br/>          | <dl> <dt>Tapi3.dll</dt> </dl>  |
 
 

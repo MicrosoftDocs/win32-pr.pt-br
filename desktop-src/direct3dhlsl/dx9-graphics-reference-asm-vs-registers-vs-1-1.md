@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: e6776fef206f9ced0608e86cbf596585399d4a12
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 4bcfadae2b1dca70298ffed188de2e6075892563b27bf6f624f2139e441600cd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103822849"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117908000"
 ---
 # <a name="registers---vs_1_1"></a>Registros-vs \_ 1 \_ 1
 
@@ -24,16 +24,16 @@ Esta seção contém informações de referência para os registros de entrada e
 
 
 
-| Registre-se | Name                                                                                  | Contagem      | R/W | \# Portas de leitura | \# Leituras/InStr | Dimensão  | RelAddr | Padrões     | Requer DCL |
+| Registre-se | Nome                                                                                  | Contagem      | R/W | \# Portas de leitura | \# Leituras/InStr | Dimensão  | RelAddr | Padrões     | Requer DCL |
 |----------|---------------------------------------------------------------------------------------|------------|-----|---------------|-----------------|------------|---------|--------------|--------------|
-| a0       | [Registro de endereço](dx9-graphics-reference-asm-vs-registers-address.md)               | 1          | R/W | 1             | Ilimitado       | Veja a observação 3 | Não      | Nenhum         | No           |
-| c\#      | [Registro de float de constante](dx9-graphics-reference-asm-vs-registers-constant-float.md) | Confira a observação 2 | R   | 1             | Ilimitado       | 4          | a0 x    | (0, 0, 0, 0) | No           |
-| l\#      | [Registro de entrada](dx9-graphics-reference-asm-vs-registers-input.md)                   | 16         | R   | 1             | Ilimitado       | 4          | Não      | Veja a observação 1   | Yes          |
-| d\#      | [Registro temporário](dx9-graphics-reference-asm-vs-registers-temporary.md)           | 12         | R/W | 3             | Ilimitado       | 4          | Não      | Nenhum         | No           |
+| a0       | [Registro de endereço](dx9-graphics-reference-asm-vs-registers-address.md)               | 1          | R/W | 1             | Ilimitado       | Veja a observação 3 | Não      | Nenhum         | Não           |
+| c\#      | [Registro de float de constante](dx9-graphics-reference-asm-vs-registers-constant-float.md) | Confira a observação 2 | R   | 1             | Ilimitado       | 4          | a0 x    | (0, 0, 0, 0) | Não           |
+| l\#      | [Registro de entrada](dx9-graphics-reference-asm-vs-registers-input.md)                   | 16         | R   | 1             | Ilimitado       | 4          | Não      | Confira a Observação 1   | Sim          |
+| d\#      | [Registro temporário](dx9-graphics-reference-asm-vs-registers-temporary.md)           | 12         | R/W | 3             | Ilimitado       | 4          | Não      | Nenhum         | Não           |
 
 
 
- 
+ 
 
 Observações:
 
@@ -45,17 +45,17 @@ Observações:
 
 
 
-| Registre-se | Name                        | Contagem | R/W | Dimensão | RelAddr | Padrões | Requer DCL |
+| Registre-se | Nome                        | Contagem | R/W | Dimensão | RelAddr | Padrões | Requer DCL |
 |----------|-----------------------------|-------|-----|-----------|---------|----------|--------------|
-| oPos     | Registro de posição           | 1     | W   | 4         | Não      | Nenhum     | No           |
-| oFog     | Registro de neblina                | 1     | W   | 1         | Não      | Nenhum     | No           |
-| oPts     | Registro de tamanho do ponto         | 1     | W   | 1         | Não      | Nenhum     | No           |
-| oD\#     | Registro de cores; Veja a observação 1  | 2     | W   | 4         | Não      | Nenhum     | No           |
-| To\#     | Registro de coordenadas de textura | 8     | W   | 4         | Não      | Nenhum     | No           |
+| oPos     | Registro de posição           | 1     | W   | 4         | Não      | Nenhum     | Não           |
+| oFog     | Registro de neblina                | 1     | W   | 1         | Não      | Nenhum     | Não           |
+| oPts     | Registro de tamanho do ponto         | 1     | W   | 1         | Não      | Nenhum     | Não           |
+| oD\#     | Registro de cores; Veja a observação 1  | 2     | W   | 4         | Não      | Nenhum     | Não           |
+| Ot\#     | Registro de coordenadas de textura | 8     | W   | 4         | Não      | Nenhum     | Não           |
 
 
 
- 
+ 
 
 Observações:
 
@@ -68,9 +68,9 @@ Observações:
 [Registros de sombreador de vértice](dx9-graphics-reference-asm-vs-registers.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -4,12 +4,12 @@ ms.assetid: b4f63642-9282-4e11-b40c-eec406b2dd2b
 title: Troca de serviços de concessão de tíquete
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d3b227ee551d762abd145ca56c6cced110b6a2dd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a691235b3e7f0faed68f38f0663c7792e381666f441399397f7e653bbb550080
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105750452"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117786564"
 ---
 # <a name="ticket-granting-service-exchange"></a>Troca de serviços de concessão de tíquete
 
@@ -17,7 +17,7 @@ Após um tíquete de concessão de tíquete (TGT) e uma [*chave de sessão*](../
 
 **Para solicitar um tíquete para outro serviço**
 
-1.  O cliente Kerberos na estação de trabalho do usuário solicita [*credenciais*](../secgloss/c-gly.md) para o serviço enviando para o [*centro de distribuição de chaves*](../secgloss/k-gly.md) (KDC), uma mensagem do tipo KRB \_ TGS \_ req (Ticket-Granting solicitação de serviço Kerberos). Essa mensagem consiste na identidade do serviço para o qual o cliente está solicitando credenciais, uma mensagem de autenticador criptografada com a nova [*chave de sessão*](../secgloss/s-gly.md)de logon do usuário e o TGT obtido da [troca do serviço de autenticação](authentication-service-exchange.md).
+1.  O cliente Kerberos na estação de trabalho do usuário solicita [*credenciais*](../secgloss/c-gly.md) para o serviço enviando para o [*centro de distribuição de chaves*](../secgloss/k-gly.md) (KDC), uma mensagem do tipo KRB \_ TGS \_ req (Ticket-Granting solicitação de serviço Kerberos). Essa mensagem consiste na identidade do serviço para o qual o cliente está solicitando credenciais, uma mensagem de autenticador criptografada com a nova [*chave de sessão*](../secgloss/s-gly.md)de logon do usuário e o TGT obtido do [serviço de autenticação Exchange](authentication-service-exchange.md).
 2.  Quando o KDC recebe um KRB \_ TGS \_ req, o KDC DESCRIPTOGRAFA o TGT com sua chave secreta e extrai a chave de sessão de logon do usuário.
 3.  O KDC usa a [*chave de sessão*](../secgloss/s-gly.md) de logon para descriptografar a mensagem do autenticador do usuário e a avalia. Se o autenticador passar no teste, o KDC extrairá os dados de autorização do usuário do TGT e ininventará uma chave de sessão para o usuário compartilhar com o servidor solicitado.
 4.  O KDC criptografa uma cópia da chave de sessão de serviço com a chave de sessão de logon do usuário.

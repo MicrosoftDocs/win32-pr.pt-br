@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a5e4841627ce5df3feee3f885b399a070388ed55
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 989b86cbf78a47a62c8d98799ac18adf987cbe623dc92e703537c54b54bf892a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105752346"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117788868"
 ---
 # <a name="rasadminportenum-function"></a>Função RasAdminPortEnum
 
-\[Essa função é fornecida somente para compatibilidade com versões anteriores do Windows NT Server 4,0. Ele retorna uma \_ chamada \_ de erro não \_ implementada no Windows Server 2003. Os aplicativos devem usar a função [**MprAdminPortEnum**](/windows/desktop/api/Mprapi/nf-mprapi-mpradminportenum) .\]
+\[essa função é fornecida somente para compatibilidade com versões anteriores com o Windows NT Server 4,0. ele retorna uma \_ chamada \_ de erro não \_ implementada no Windows Server 2003. Os aplicativos devem usar a função [**MprAdminPortEnum**](/windows/desktop/api/Mprapi/nf-mprapi-mpradminportenum) .\]
 
 A função **RasAdminPortEnum** enumera todas as portas no servidor RAS especificado. Para cada porta no servidor, a função retorna a estrutura [**de \_ porta \_ 0 do RAS**](ras-port-0-str.md) que contém informações sobre a porta.
 
@@ -65,7 +65,7 @@ Ponteiro para uma variável de 16 bits que recebe o número total de estruturas 
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se a função for bem-sucedida, o valor de retorno será \_ êxito no erro.
 
@@ -91,7 +91,7 @@ Não há informações de erro estendidas para esta função; Não chame [**GetL
 |----------------------------------|----------------------------------------------------------------------------------------|
 | Fim do suporte do cliente<br/> | Windows 2000 Professional<br/>                                                   |
 | Fim do suporte do servidor<br/> | Windows 2000 Server<br/>                                                         |
-| parâmetro<br/>                | <dl> <dt>Rassapi. h</dt> </dl>   |
+| Cabeçalho<br/>                | <dl> <dt>Rassapi. h</dt> </dl>   |
 | Biblioteca<br/>               | <dl> <dt>Rassapi. lib</dt> </dl> |
 | DLL<br/>                   | <dl> <dt>Rassapi.dll</dt> </dl> |
 

@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: ea9a8090a794f23693ae4fef10556bc207f16531
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 582341c97b6373fa0c04abf69642930328a34223a7c7b0dbc7792d8c7aec4680
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103646568"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119093082"
 ---
 # <a name="folderparsename-method"></a>Método Folder. ParseName
 
@@ -48,7 +48,7 @@ Uma cadeia de caracteres que especifica o nome do item.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **FolderItem**](folderitem.md)\*\***
 
@@ -60,9 +60,9 @@ Uma referência de objeto para o objeto [**FolderItem**](folderitem.md) .
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo a seguir usa **ParseName** para criar um objeto que representa o item de pasta Clock.avi na \\ pasta C: Windows. O uso adequado é mostrado para JScript, VBScript e Visual Basic.
+o exemplo a seguir usa **parsename** para criar um objeto que representa o item de pasta Clock.avi na \\ pasta C: Windows. o uso adequado é mostrado para JScript, VBScript e Visual Basic.
 
-JScript
+JScript:
 
 
 ```JScript
@@ -152,7 +152,7 @@ End Sub
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 2000 Professional, \[ somente aplicativos da área de trabalho do Windows XP\]<br/>                                         |
+| Cliente mínimo com suporte<br/> | Windows 2000 Professional, \[ somente aplicativos de área de trabalho do Windows XP\]<br/>                                         |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                           |
 | Cabeçalho<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                           |
 | INSERI<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                         |

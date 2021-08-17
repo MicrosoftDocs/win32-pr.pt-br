@@ -26,7 +26,7 @@ ms.locfileid: "119433286"
 ---
 # <a name="mdm_secureassessment-class"></a>Classe \_ SecureAssessment MDM
 
-\[Algumas informações estão relacionadas ao produto pré-lançado, que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não oferece garantias, expressas ou implícitas, quanto às informações fornecidas aqui.\]
+\[Algumas informações estão relacionadas ao produto pré-lançado, que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não oferece garantias, expressas ou implícitas, das informações aqui fornecidas.\]
 
 A **classe \_ SecureAssessment do MDM** é usada para fornecer informações de configuração para o navegador de avaliação segura.
 

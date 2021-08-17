@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre: membros do ColumnInfo'
-title: Membros do ColumnInfo
+description: 'Saiba mais sobre: Membros columnInfo'
+title: Membros columnInfo
 TOCTitle: ColumnInfo members
 ms:assetid: AllMembers.T:Microsoft.Isam.Esent.Interop.ColumnInfo
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.columninfo_members(v=EXCHG.10)
@@ -14,14 +14,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119455126"
 ---
-# <a name="columninfo-members"></a>Membros do ColumnInfo
+# <a name="columninfo-members"></a>Membros columnInfo
 
 Incluir membros protegidos  
 Incluir membros herdados  
 
-Informações sobre uma coluna ESENT. Essa não é uma classe de interoperabilidade, mas é usada pelos métodos auxiliares de meta-dados.
+Informações sobre uma coluna Esent. Essa não é uma classe de interop, mas é usada pelos métodos auxiliares de metadados.
 
-O tipo [ColumnInfo](./columninfo-class.md) expõe os membros a seguir.
+O [tipo ColumnInfo](./columninfo-class.md) expõe os membros a seguir.
 
 ## <a name="properties"></a>Propriedades
 
@@ -46,12 +46,12 @@ O tipo [ColumnInfo](./columninfo-class.md) expõe os membros a seguir.
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
-<td><a href="dn334185(v=exchg.10).md">CP</a></td>
+<td><a href="dn334185(v=exchg.10).md">Cp</a></td>
 <td>Obtém a página de código da coluna.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
-<td><a href="dn334137(v=exchg.10).md">ValorPadrão</a></td>
+<td><a href="dn334137(v=exchg.10).md">Defaultvalue</a></td>
 <td>Obtém o valor padrão da coluna.</td>
 </tr>
 <tr class="odd">
@@ -103,18 +103,18 @@ Parte superior
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><a href="/dotnet/api/system.object.gettype#System_Object_GetType">GetType</a></td>
+<td><a href="/dotnet/api/system.object.gettype#System_Object_GetType">Gettype</a></td>
 <td>(Herdado do <a href="/dotnet/api/system.object">objeto</a>.)</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Método protegido" alt="Protected method" /></td>
-<td><a href="/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">MemberwiseClone</a></td>
+<td><a href="/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Memberwiseclone</a></td>
 <td>(Herdado do <a href="/dotnet/api/system.object">objeto</a>.)</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
 <td><a href="dn334183(v=exchg.10).md">ToString</a></td>
-<td>Retorna uma <a href="/dotnet/api/system.string">cadeia de caracteres</a> que representa o <a href="dn334128(v=exchg.10).md">ColumnInfo</a>atual. (Substitui <a href="/dotnet/api/system.object.tostring#System_Object_ToString">Object. ToString ()</a>.)</td>
+<td>Retorna uma <a href="/dotnet/api/system.string">Cadeia de</a> Caracteres que representa o <a href="dn334128(v=exchg.10).md">ColumnInfo atual.</a> (Substitui <a href="/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>.)</td>
 </tr>
 </tbody>
 </table>
@@ -128,4 +128,4 @@ Parte superior
 
 [Classe ColumnInfo](./columninfo-class.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

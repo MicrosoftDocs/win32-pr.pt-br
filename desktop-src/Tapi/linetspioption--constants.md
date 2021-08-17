@@ -34,7 +34,7 @@ A TAPI deve chamar funções neste provedor de serviços, uma de cada vez; Ele d
 | Requisito | Valor |
 |-------------------------|-----------------------------------------------------------------------------------|
 | Versão da TAPI<br/> | Requer TAPI 2,0 ou posterior<br/>                                             |
-| parâmetro<br/>       | <dl> <dt>TSPI. h</dt> </dl> |
+| Cabeçalho<br/>       | <dl> <dt>TSPI. h</dt> </dl> |
 
 
 

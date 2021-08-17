@@ -4,12 +4,12 @@ ms.assetid: DD6836EE-DF73-4A07-9DF1-0F5A959DDE8F
 title: Autorização para páginas da Web
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 88c26e9bc8333d74d18989c5c581cc54054a29ab
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 73e4f64cbbf3dd9ac38a13719cd8835a198f1fbb3b522e8ac368ffaf4e759fc1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103827597"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119141319"
 ---
 # <a name="authorization-for-web-pages"></a>Autorização para páginas da Web
 
@@ -21,31 +21,31 @@ A autorização define a quais recursos você tem acesso.
 
 Nenhum
 
-**Tempo para conclusão:** 2 minutos.
+**Tempo para concluir:** 2 minutos.
 
 ## <a name="instructions"></a>Instruções
 
-### <a name="1-authorization"></a>1. autorização
+### <a name="1-authorization"></a>1. Autorização
 
-Quando o usuário insere suas credenciais e clica no botão de logon, a página permissões é mostrada. Essa página é melhor para permitir que os usuários controlem as permissões granulares ao conceder ao aplicativo acesso aos dados da contoso. ![página de permissões da contoso](images/wab-figure9.png)
+Quando o usuário insinte suas credenciais e clica no botão Logon, a página de permissões é mostrada. Essa página é melhor para permitir que os usuários controlem permissões granulares ao conceder ao aplicativo acesso aos dados da Contoso. ![página de permissões contoso](images/wab-figure9.png)
 
-### <a name="2-how-to-use-the-sample"></a>2. como usar o exemplo
+### <a name="2-how-to-use-the-sample"></a>2. Como usar o exemplo
 
 Você precisa saber sobre os seguintes arquivos HTML e CSS.
 
-1.  Os seguintes arquivos HTML correspondem às duas páginas no fluxo de autorização da Web
+1.  Os arquivos HTML a seguir correspondem às duas páginas no fluxo de autorização da Web
     -   WebAuthLogin.html – HTML de exemplo para a página de logon
     -   WebAuthPermissions.html – HTML de exemplo para a página de permissões
-2.  Os arquivos CSS contêm estilos do Windows 8 para ajudar a criar uma página da Web do aplicativo da Windows Store.
-    -   UI-Light. css – isso foi derivado da folha de estilos base para controles do Windows 8.
-    -   UI-webauth. css – fornece estilo incremental para otimizar o layout para páginas de autenticação na Web.
-    -   Theme-Colors. css – fornece o estilo incremental para substituir as cores de destaque padrão dos controles pela cor da marca do provedor.
+2.  Os arquivos CSS contêm Windows 8 estilos para ajudar a criar uma página da Web do Windows Store.
+    -   ui-light.css – isso foi derivado da folha de estilos base para Windows 8 controles.
+    -   ui-webauth.css – isso fornece estilo incremental para otimizar o layout para páginas de auth da Web.
+    -   theme-colors.css – isso fornece o estilo incremental para substituir as cores de destaque padrão dos controles pela cor da marca do provedor.
 
 ## <a name="summary-and-next-steps"></a>Resumo e próximas etapas
 
-[Tutorial de resumo para autenticação de páginas da Web](tutorial-for-authenticating-web-pages.md)
+Tutorial [de resumo para autenticação de páginas da Web](tutorial-for-authenticating-web-pages.md)
 
-Próximas [práticas recomendadas para a criação de páginas da Web de autenticação](best-practices-for-designing-authentication-web-pages.md)
+Próximas [práticas recomendadas para criar páginas da Web de autenticação](best-practices-for-designing-authentication-web-pages.md)
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -54,7 +54,7 @@ Próximas [práticas recomendadas para a criação de páginas da Web de autenti
 [Considerações para o desenvolvimento de páginas da Web](considerations-for-the-web-page-development.md)
 </dt> <dt>
 
-[Aplicativo de exemplo do SDK do agente de autenticação da Web](https://github.com/microsoft/Windows-universal-samples/tree/master/Samples/WebAuthenticationBroker)
+[Aplicativo de exemplo do SDK do Agente de Autenticação da Web](https://github.com/microsoft/Windows-universal-samples/tree/master/Samples/WebAuthenticationBroker)
 </dt> <dt>
 
 [**Windows.Security.Authentication.Web**](/uwp/api/Windows.Security.Authentication.Web)

@@ -4,12 +4,12 @@ ms.assetid: 6fbad59b-27b7-4ac1-bad5-8a608c7b270f
 title: Códigos de produto
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: edca03d54dcd14068e89b2314b729e672b0c631c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0b2afe0c96e78d14bc989d4acdc7195d374b82466c4b345a999df7085468587e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104170956"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119145369"
 ---
 # <a name="product-codes"></a>Códigos de produto
 
@@ -21,7 +21,7 @@ Se um servidor exposto na [tabela PublishComponent](publishcomponent-table.md) f
 
 Observe que as letras em GUIDs de código do produto devem estar em letras maiúsculas. Utilitários como o GUIDGEN geram GUIDs contendo letras minúsculas. As letras minúsculas nesses GUIDs devem ser alteradas para letras maiúsculas para serem usadas como código do produto ou código do pacote. Para obter mais informações, consulte [alterando o código do produto](changing-the-product-code.md).
 
-O código do pacote é um GUID que identifica um determinado [*pacote*](p-gly.md)de Windows Installer. O código do pacote associa um arquivo. msi a um aplicativo ou produto e também pode ser usado para a verificação de fontes. Os códigos do produto e do pacote não são intercambiáveis. Dois arquivos. msi não idênticos já devem ter o mesmo código de pacote. Embora seja comum enviar um aplicativo que tenha o mesmo código de pacote e código do produto, os dois valores podem divergir à medida que o aplicativo é atualizado. Para obter mais informações, consulte [Package codes](package-codes.md).
+o código do pacote é um GUID que identifica um determinado [*pacote*](p-gly.md)de Windows Installer. O código do pacote associa um arquivo de .msi a um aplicativo ou produto e também pode ser usado para a verificação de fontes. Os códigos do produto e do pacote não são intercambiáveis. Dois arquivos de .msi não idênticos já devem ter o mesmo código de pacote. Embora seja comum enviar um aplicativo que tenha o mesmo código de pacote e código do produto, os dois valores podem divergir à medida que o aplicativo é atualizado. Para obter mais informações, consulte [Package codes](package-codes.md).
 
  
 

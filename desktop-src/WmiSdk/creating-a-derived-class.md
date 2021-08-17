@@ -1,41 +1,41 @@
 ---
-description: A criação de uma classe derivada no WMI é muito semelhante à criação de uma classe base. Assim como com uma classe base, você deve primeiro definir a classe derivada e, em seguida, registrar a classe derivada com o WMI.
+description: A criação de uma classe derivada no WMI é muito semelhante à criação de uma classe base. Assim como com uma classe base, você deve primeiro definir a classe derivada e, em seguida, registrar a classe derivada com wMI.
 ms.assetid: 8dd483b8-8bc2-4a5c-b981-6c2ffaccdb95
 ms.tgt_platform: multiple
 title: Criando uma classe derivada de WMI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5b65079d206cb7a0a490622018f6d2e2df98867d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3cddc2b381346b2765e836bb3606cc06845280c41a7505b872098f383ac0409c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105785929"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119374866"
 ---
 # <a name="creating-a-wmi-derived-class"></a>Criando uma classe derivada de WMI
 
-A criação de uma classe derivada no WMI é muito semelhante à criação de uma classe base. Assim como com uma classe base, você deve primeiro definir a classe derivada e, em seguida, registrar a classe derivada com o WMI. A principal diferença é que você deve primeiro localizar a classe pai da qual deseja derivar. Para obter mais informações, consulte [escrevendo um provedor de classe](writing-a-class-provider.md) e [escrevendo um provedor de instância](writing-an-instance-provider.md).
+A criação de uma classe derivada no WMI é muito semelhante à criação de uma classe base. Assim como com uma classe base, você deve primeiro definir a classe derivada e, em seguida, registrar a classe derivada com wMI. A principal diferença é que você deve primeiro localizar a classe pai da qual deseja derivar. Para obter mais informações, consulte [Escrevendo um provedor de classe](writing-a-class-provider.md) e escrevendo um provedor de [instância](writing-an-instance-provider.md).
 
-A maneira recomendada para criar classes para um provedor é em arquivos formato MOF (MOF). Várias classes derivadas que estão relacionadas entre si devem ser agrupadas em um arquivo MOF, juntamente com quaisquer classes base das quais derivam Propriedades ou métodos. Se você posicionar cada classe em um arquivo MOF separado, cada arquivo deverá ser compilado antes que o provedor possa funcionar corretamente.
+A maneira recomendada de criar classes para um provedor está em arquivos Managed Object Format (MOF). Várias classes derivadas relacionadas entre si devem ser agrupadas em um arquivo MOF, juntamente com quaisquer classes base das quais derivam propriedades ou métodos. Se você colocar cada classe em um arquivo MOF separado, cada arquivo deverá ser compilado antes que o provedor possa funcionar corretamente.
 
-Depois de criar sua classe, você deve excluir todas as instâncias da sua classe antes de poder executar qualquer uma das seguintes atividades em sua classe derivada:
+Depois de criar sua classe, você deve excluir todas as instâncias de sua classe antes de executar qualquer uma das seguintes atividades em sua classe derivada:
 
 -   Altere a classe pai da classe derivada.
 -   Adicionar ou remover propriedades.
 -   Alterar tipos de propriedade.
--   Adicionar ou remover qualificadores **indexados** ou de [**chave**](key-qualifier.md) .
--   Adicionar ou remover qualificadores [**singleton**](standard-wmi-qualifiers.md), **dinâmico** ou [**abstrato**](standard-qualifiers.md) .
+-   Adicionar ou remover [**qualificadores de**](key-qualifier.md) chave **ou** indexados.
+-   Adicionar ou remover [**qualificadores Singleton,**](standard-wmi-qualifiers.md) **Dynamic** ou [**Abstract.**](standard-qualifiers.md)
 
 > [!Note]  
-> Para adicionar, remover ou modificar uma propriedade ou um qualificador, chame [**IWbemServices::P utclass**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-putclass) ou [**SWbemObject. \_ Put**](swbemobject-put-.md) e defina o parâmetro Flag como "modo forçado". O qualificador [**abstrato**](standard-qualifiers.md) só poderá ser usado se a classe pai for abstrata.
+> Para adicionar, remover ou modificar uma propriedade ou qualificador, chame [**IWbemServices::P utClass**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-putclass) ou [**SWbemObject.Put \_**](swbemobject-put-.md) e desmarque o parâmetro de sinalizador como "modo de força". O [**qualificador**](standard-qualifiers.md) Abstract só poderá ser usado se a classe pai for abstrata.
 
  
 
-Quando você declarar sua classe derivada, observe as seguintes regras e restrições:
+Ao declarar sua classe derivada, observe as seguintes regras e restrições:
 
 -   A classe pai da classe derivada já deve existir.
 
-    A declaração da classe pai pode aparecer no mesmo arquivo MOF que a classe derivada ou em um arquivo diferente. Se a classe pai for desconhecida, o compilador gerará um erro em tempo de execução.
+    A declaração da classe pai pode aparecer no mesmo arquivo MOF que a classe derivada ou em um arquivo diferente. Se a classe pai for desconhecida, o compilador gerará um erro em tempo de executar.
 
 -   Uma classe derivada pode ter apenas uma única classe pai.
 
@@ -43,23 +43,23 @@ Quando você declarar sua classe derivada, observe as seguintes regras e restri�
 
 -   Você pode definir índices para classes derivadas, mas o WMI não usa esses índices.
 
-    Portanto, a especificação de um índice em uma classe derivada não melhora o desempenho de consultas para instâncias da classe derivada. Você pode melhorar o desempenho de uma consulta em uma classe derivada especificando propriedades indexadas para a classe pai da classe derivada.
+    Portanto, especificar um índice em uma classe derivada não melhora o desempenho de consultas para instâncias da classe derivada. Você pode melhorar o desempenho de uma consulta em uma classe derivada especificando propriedades indexadas para a classe pai da classe derivada.
 
--   As definições de classe derivada podem ser mais complexas e podem incluir recursos como aliases, qualificadores e tipos de qualificador.
+-   As definições de classe derivadas podem ser mais complexas e podem incluir recursos como aliases, qualificadores e tipo de qualificador.
 
-    Para obter mais informações, consulte [criando um alias](creating-an-alias.md) e [adicionando um qualificador](adding-a-qualifier.md).
+    Para obter mais informações, consulte [Criando um alias](creating-an-alias.md) e [adicionando um qualificador](adding-a-qualifier.md).
 
--   Se você quiser alterar um qualificador, alterar o valor padrão de uma propriedade de classe base ou digitar com mais rigidez uma propriedade de referência ou de objeto incorporado de uma classe base, você deve declarar a classe base inteira novamente.
+-   Se você quiser alterar um qualificador, altere o valor padrão de uma propriedade de classe base ou, mais fortemente, digite uma propriedade de objeto de referência ou inserida de uma classe base, você deverá declarar toda a classe base novamente.
 -   O número máximo de propriedades que você pode definir em uma classe WMI é 1024.
 
 > [!Note]  
-> Classes não podem ser alteradas durante a execução de provedores. Você deve interromper a atividade, alterar a classe e reiniciar o serviço de gerenciamento do Windows. Atualmente, não é possível detectar uma alteração de classe.
+> As classes não podem ser alteradas durante a execução de provedores. Você deve interromper a atividade, alterar a classe e, em seguida, reiniciar o serviço Windows Management. Atualmente, não é possível detectar uma alteração de classe.
 
  
 
-Assim como acontece com a classe base, o uso mais comum dessa técnica será por aplicativos cliente. No entanto, um provedor também pode criar uma classe derivada. Para obter mais informações, consulte [criando uma classe base](creating-a-base-class.md) e [gravando um provedor de classe](writing-a-class-provider.md).
+Assim como na classe base, o uso mais comum dessa técnica será pelos aplicativos cliente. No entanto, um provedor também pode criar uma classe derivada. Para obter mais informações, consulte [Criando uma classe base e](creating-a-base-class.md) escrevendo um provedor de [classe](writing-a-class-provider.md).
 
-O exemplo de código neste tópico requer que a seguinte \# instrução include seja compilada corretamente.
+O exemplo de código neste tópico requer que a instrução \# include a seguir seja compilada corretamente.
 
 
 ```C++
@@ -72,9 +72,9 @@ O procedimento a seguir descreve como criar uma classe derivada usando C++.
 
 **Para criar uma classe derivada usando C++**
 
-1.  Localize a classe base com uma chamada para [**IWbemServices:: GetObject**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-getobject).
+1.  Localize a classe base com uma chamada para [**IWbemServices::GetObject**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-getobject).
 
-    O exemplo de código a seguir mostra como localizar a classe base de exemplo.
+    O exemplo de código a seguir mostra como localizar a classe base Example.
 
     ```C++
     // The pSv variable is of type IWbemServices *
@@ -91,7 +91,7 @@ O procedimento a seguir descreve como criar uma classe derivada usando C++.
 
     
 
-2.  Crie um objeto derivado da classe base com uma chamada para [**IWbemClassObject:: SpawnDerivedClass**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemclassobject-spawnderivedclass).
+2.  Crie um objeto derivado da classe base com uma chamada para [**IWbemClassObject::SpawnDerivedClass.**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemclassobject-spawnderivedclass)
 
     O exemplo de código a seguir mostra como criar um objeto de classe derivada.
 
@@ -102,7 +102,7 @@ O procedimento a seguir descreve como criar uma classe derivada usando C++.
 
     
 
-3.  Estabeleça um nome para a classe definindo a propriedade do sistema de **\_ \_ classe** com uma chamada para o método [**IWbemClassObject::P UT**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemclassobject-put) .
+3.  Estabeleça um nome para a classe definindo a propriedade do sistema **\_ \_ CLASS** com uma chamada para o [**método IWbemClassObject::P ut.**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemclassobject-put)
 
     O exemplo de código a seguir mostra como atribuir um nome à classe derivada.
 
@@ -120,7 +120,7 @@ O procedimento a seguir descreve como criar uma classe derivada usando C++.
 
     
 
-4.  Crie propriedades adicionais com [**IWbemClassObject::P UT**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemclassobject-put).
+4.  Crie propriedades adicionais [**com IWbemClassObject::P ut**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemclassobject-put).
 
     O exemplo de código a seguir mostra como criar propriedades adicionais.
 
@@ -132,7 +132,7 @@ O procedimento a seguir descreve como criar uma classe derivada usando C++.
 
     
 
-5.  Salve a nova classe chamando [**IWbemServices::P utclass**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-putclass).
+5.  Salve a nova classe chamando [**IWbemServices::P utClass**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-putclass).
 
     O exemplo de código a seguir mostra como salvar a nova classe derivada.
 
@@ -143,7 +143,7 @@ O procedimento a seguir descreve como criar uma classe derivada usando C++.
 
     
 
-O exemplo de código a seguir combina os exemplos de código discutidos no procedimento anterior para descrever como criar uma classe derivada usando a API do WMI.
+O exemplo de código a seguir combina os exemplos de código discutidos no procedimento anterior para descrever como criar uma classe derivada usando a API WMI.
 
 
 ```C++
@@ -198,7 +198,7 @@ O procedimento a seguir descreve como definir uma classe derivada usando o códi
 
 **Para definir uma classe derivada usando o código MOF**
 
-1.  Defina a classe derivada com a palavra-chave **Class** , seguida pelo nome da classe derivada e o nome da classe pai separada por dois-pontos.
+1.  Defina sua classe derivada com a palavra-chave **Class,** seguida pelo nome da classe derivada e o nome da classe pai separada por dois-pontos.
 
     O exemplo de código a seguir descreve uma implementação de uma classe derivada.
 
@@ -217,9 +217,9 @@ O procedimento a seguir descreve como definir uma classe derivada usando o códi
     };
     ```
 
-2.  Ao concluir, compile seu código MOF com o compilador MOF.
+2.  Ao concluir, compile o código MOF com o compilador MOF.
 
-    Para obter mais informações, consulte [compilando arquivos MOF](compiling-mof-files.md).
+    Para obter mais informações, consulte [Compilando arquivos MOF](compiling-mof-files.md).
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

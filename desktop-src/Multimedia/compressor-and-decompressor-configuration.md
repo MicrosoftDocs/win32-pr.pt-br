@@ -1,32 +1,32 @@
 ---
-title: Configuração de compactador e descompactador
-description: Configuração de compactador e descompactador
+title: Configuração de descompactador e Descompactador Descompactador
+description: Configuração de descompactador e Descompactador Descompactador
 ms.assetid: 677241d2-3ddd-423a-a1e7-b5fa3ce0a4eb
 keywords:
-- VCM (Gerenciador de compactação de vídeo), configurando os compactadores
-- VCM (Gerenciador de compactação de vídeo), configurando os compactadores
+- VCM (gerenciador de compactação de vídeo), configurando os vcms
+- VCM (gerenciador de compactação de vídeo), configurando os vcs
 - ICM_CONFIGURE mensagem
 - Macro ICQueryConfigure
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a38fbbeb852d09296e5be7929738c9d4d71f118e
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: c8905ea35d65fc3eda3ddee130039503d8e26555665aae9efa517cb399349475
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103916198"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119144969"
 ---
-# <a name="compressor-and-decompressor-configuration"></a>Configuração de compactador e descompactador
+# <a name="compressor-and-decompressor-configuration"></a>Configuração de descompactador e Descompactador Descompactador
 
-Seu aplicativo pode configurar o compactador ou o descompactador automaticamente, ou pode permitir que o usuário os configure. Se for prático, permita que o usuário configure o compressor ou o descompactador; Isso lhe libera de considerar todas as opções para o compressor ou o descompactador.
+Seu aplicativo pode configurar o descompactador ou o descompactador automaticamente ou pode permitir que o usuário os configure. Se for prático, permita que o usuário configure o descompactador ou o descompactador; isso o libera de considerar todas as opções para o descompactador ou o descompactador.
 
-O usuário pode configurar o compressor ou o descompactador usando uma caixa de diálogo de configuração. Você pode enviar a mensagem de [**\_ configuração de ICM**](icm-configure.md) para VCM (ou usar a macro [**ICQueryConfigure**](/windows/desktop/api/Vfw/nf-vfw-icqueryconfigure) ) para determinar se um compactador ou descompactador pode exibir uma caixa de diálogo de configuração. Nesse caso, envie a \_ mensagem ICM configure (ou use a macro [**ICConfigure**](/windows/desktop/api/Vfw/nf-vfw-icconfigure) ) para exibi-la.
+O usuário pode configurar o compactador ou o descompactador usando uma caixa de diálogo de configuração. Você pode enviar a [**mensagem ICM \_ CONFIGURAR**](icm-configure.md) para o VCM (ou usar a macro [**ICQueryConfigure)**](/windows/desktop/api/Vfw/nf-vfw-icqueryconfigure) para determinar se um descompactador ou um descompactador pode exibir uma caixa de diálogo de configuração. Em caso afirmacional, ICM a mensagem CONFIGURE (ou use a \_ macro [**ICConfigure)**](/windows/desktop/api/Vfw/nf-vfw-icconfigure) para exibi-la.
 
-Seu aplicativo pode enviar as mensagens de [**ICM \_ GetState**](icm-getstate.md) e [**ICM \_ SetState**](icm-setstate.md) (ou usar as macros [**ICGetStateSize**](/windows/desktop/api/Vfw/nf-vfw-icgetstatesize), [**ICGetState**](/windows/desktop/api/Vfw/nf-vfw-icgetstate)e [**ICSetState**](/windows/desktop/api/Vfw/nf-vfw-icsetstate) ) para obter e definir o status de um compressor ou descompactador. Se o seu aplicativo criar ou modificar o status, ele deverá obter o layout dos dados do compressor ou do descompactador antes de restaurar seu status. Como alternativa, se seu aplicativo obtiver o status de um compressor ou descompactador e usá-lo para restaurar o status em uma sessão subsequente, ele deverá garantir que ele restaura apenas as informações de status obtidas do compressor ou descompactador que está usando no momento.
+Seu aplicativo pode enviar as [**mensagens ICM \_ GETSTATE**](icm-getstate.md) e [**ICM \_ SETSTATE**](icm-setstate.md) (ou usar as macros [**ICGetStateSize,**](/windows/desktop/api/Vfw/nf-vfw-icgetstatesize) [**ICGetState**](/windows/desktop/api/Vfw/nf-vfw-icgetstate)e [**ICSetState)**](/windows/desktop/api/Vfw/nf-vfw-icsetstate) para obter e definir o status de um compactador ou descompactador. Se o aplicativo criar ou modificar o status, ele deverá obter o layout dos dados de descompactador ou descompactador antes de restaurar seu status. Como alternativa, se seu aplicativo obtiver o status de umimpactador ou descompactador e usá-lo para restaurar o status em uma sessão subsequente, ele deverá garantir que ele restaure apenas as informações de status obtidas do grupo ou do descompactador que está usando no momento.
 
- 
+ 
 
- 
+ 
 
 
 

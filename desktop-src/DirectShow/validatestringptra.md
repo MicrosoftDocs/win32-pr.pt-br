@@ -1,7 +1,7 @@
 ---
-description: Verifica se o processo de chamada tem acesso de leitura a uma cadeia de caracteres ANSI. Caso contrário, a macro chamará a macro DbgBreak.
+description: Verifica se o processo de chamada tem acesso de leitura a uma cadeia de caracteres ANSI. Caso não seja, a macro chamará a macro DbgBreak.
 ms.assetid: 44be67f8-9896-4360-82de-083a5f28a3d0
-title: Macro ValidateStringPtrA (Wxdebug. h)
+title: Macro ValidateStringPtrA (Wxdebug.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -22,10 +22,10 @@ ms.locfileid: "119432096"
 ---
 # <a name="validatestringptra-macro"></a>Macro ValidateStringPtrA
 
-Verifica se o processo de chamada tem acesso de leitura a uma cadeia de caracteres ANSI. Caso contrário, a macro chamará a macro [**DbgBreak**](dbgbreak.md) .
+Verifica se o processo de chamada tem acesso de leitura a uma cadeia de caracteres ANSI. Caso não seja, a macro chamará a macro [**DbgBreak.**](dbgbreak.md)
 
 > [!Note]  
-> Esta macro foi preterida. no SDK do Windows para Windows Vista (e posterior), essa macro não faz nada.
+> Essa macro foi preterida. No SDK Windows para Windows Vista (e posterior), essa macro não faz nada.
 
  
 
@@ -44,10 +44,10 @@ void ValidateStringPtrA(
 
 <dl> <dt>
 
-*p* 
+*P* 
 </dt> <dd>
 
-Ponteiro para uma cadeia de caracteres ANSI terminada em nulo.
+Ponteiro para uma cadeia de caracteres ANSI terminada em NULL.
 
 </dd> </dl>
 
@@ -57,7 +57,7 @@ Essa macro não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-essa macro é ignorada a menos que DEBUG, \_ debug ou VFWROBUST seja definido quando o arquivo de cabeçalho da classe base DirectShow for incluído.
+Essa macro é ignorada, a menos que DEBUG, DEBUG ou VFWROBUST seja definido quando o arquivo de DirectShow de classe \_ base for incluído.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -65,7 +65,7 @@ essa macro é ignorada a menos que DEBUG, \_ debug ou VFWROBUST seja definido qu
 
 | Requisito | Valor |
 |-------------------|----------------------------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>Wxdebug. h (incluir Fluxos. h)</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>Wxdebug.h (incluir Fluxos.h)</dt> </dl> |
 
 
 

@@ -12,12 +12,12 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: 462c9df0ec4e5ded26c3b4aeefa94af79f380a95
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8c066263e932cdb958a489cb8702b046e8489e6c021c89557c439ae84e266c56
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105796123"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119092950"
 ---
 # <a name="contenttype-complex-type"></a>Tipo complexo de ContentType
 
@@ -33,7 +33,7 @@ Define o tipo que contém alguma forma de conteúdo dentro de um arquivo XML de 
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Somente aplicativos de área de trabalho do Windows XP Tablet PC Edition \[\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do XP Tablet PC Edition\]<br/> |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                     |
 
 

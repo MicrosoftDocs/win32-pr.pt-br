@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 6eec52139710d0ffafe06f22504a735e59312818
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4470754e710faf9f7abe5a94cfb2e08e6e79c1b0415110b96dbac35807556911
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103828378"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119061063"
 ---
 # <a name="provider-complex-type"></a>Tipo complexo do provedor
 
@@ -184,7 +184,7 @@ Define um provedor e os contadores que ele fornece.
 <tr class="odd">
 <td>applicationIdentity</td>
 <td><strong>xs:string</strong></td>
-<td>O nome do arquivo binário que contém as cadeias de caracteres de recurso localizado, um arquivo. exe ou. dll (não inclua o caminho para o binário).<br/> O utilitário Lodctr.exe usa o caminho do parâmetro opcional [<em>path</em>] para pesquisar o arquivo binário. Por exemplo, <strong>lodctr</strong> [<strong>/m:</strong><em>manifest</em> [<em>caminho</em>]]. Se você não incluir o parâmetro [<em>path</em>], Lodctr.exe pesquisará a pasta que contém o manifesto.<br/></td>
+<td>O nome do arquivo binário que contém as cadeias de caracteres de recurso localizadas, um .exe ou um arquivo de .dll (não inclua o caminho para o binário).<br/> O utilitário Lodctr.exe usa o caminho do parâmetro opcional [<em>path</em>] para pesquisar o arquivo binário. Por exemplo, <strong>lodctr</strong> [<strong>/m:</strong><em>manifest</em> [<em>caminho</em>]]. Se você não incluir o parâmetro [<em>path</em>], Lodctr.exe pesquisará a pasta que contém o manifesto.<br/></td>
 </tr>
 <tr class="even">
 <td>retorno de chamada</td>
@@ -215,11 +215,11 @@ Define um provedor e os contadores que ele fornece.
 <tbody>
 <tr class="odd">
 <td><span id="userMode"></span><span id="usermode"></span><span id="USERMODE"></span>Modo<br/></td>
-<td>Especifique esse modo para um componente de modo de usuário, como um aplicativo, uma DLL ou um driver de modo de usuário. As extensões típicas para os componentes do modo de usuário são. exe ou. dll. Esse é o padrão.<br/></td>
+<td>Especifique esse modo para um componente de modo de usuário, como um aplicativo, uma DLL ou um driver de modo de usuário. As extensões típicas para componentes do modo de usuário são .exe ou .dll. Esse é o padrão.<br/></td>
 </tr>
 <tr class="even">
 <td><span id="kernel"></span><span id="KERNEL"></span>kernel<br/></td>
-<td>Especifique esse modo para um componente do modo kernel, como um driver WDM ou WDF. A extensão típica para componentes do modo kernel é. sys.<br/> <strong>Windows Vista e Windows Server 2008:</strong> Esse valor não tem suporte até o Windows 7 e o Windows Server 2008 R2.<br/></td>
+<td>Especifique esse modo para um componente do modo kernel, como um driver WDM ou WDF. A extensão típica para componentes do modo kernel é .sys.<br/> <strong>Windows Vista e Windows Server 2008:</strong> não há suporte para esse valor até que Windows 7 e Windows Server 2008 R2.<br/></td>
 </tr>
 </tbody>
 </table>
@@ -248,8 +248,8 @@ Define um provedor e os contadores que ele fornece.
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/> |
 
 
 

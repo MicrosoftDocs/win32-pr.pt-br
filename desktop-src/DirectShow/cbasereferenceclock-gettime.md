@@ -1,7 +1,7 @@
 ---
-description: 'O método getTime recupera o tempo de referência atual. Esse método implementa o método IReferenceClock:: getTime.'
+description: O método GetTime recupera a hora de referência atual. Esse método implementa o método IReferenceClock::GetTime.
 ms.assetid: 4e4e5954-b899-4741-8b7c-7bc98a3f0404
-title: Método CBaseReferenceClock. getTime (Refclock. h)
+title: Método CBaseReferenceClock.GetTime (Refclock.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: a91f0015756d2ccfb545c4039d67434eb6d3c403
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5a1ffd021ac917a7aa1e12f3d3dc9c4a62ea1f883f126bca1d9c1300d335bdae
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105753348"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118954975"
 ---
-# <a name="cbasereferenceclockgettime-method"></a>Método CBaseReferenceClock. getTime
+# <a name="cbasereferenceclockgettime-method"></a>Método CBaseReferenceClock.GetTime
 
-O `GetTime` método recupera o tempo de referência atual. Esse método implementa o método [**IReferenceClock:: getTime**](/windows/desktop/api/Strmif/nf-strmif-ireferenceclock-gettime) .
+O `GetTime` método recupera a hora de referência atual. Esse método implementa o [**método IReferenceClock::GetTime.**](/windows/desktop/api/Strmif/nf-strmif-ireferenceclock-gettime)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -45,20 +45,20 @@ HRESULT GetTime(
 *pTime* 
 </dt> <dd>
 
-Ponteiro para uma variável que recebe a hora atual, em unidades de 100 a nanossegundos.
+Ponteiro para uma variável que recebe a hora atual, em unidades de 100 nanossegundos.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna um dos valores **HRESULT** mostrados na tabela a seguir.
+Retorna um dos **valores HRESULT** mostrados na tabela a seguir.
 
 
 
 | Código de retorno                                                                               | Descrição                                                 |
 |-------------------------------------------------------------------------------------------|-------------------------------------------------------------|
-| <dl> <dt>**\_ponteiro E**</dt> </dl> | Argumento de ponteiro **nulo** .<br/>                       |
-| <dl> <dt>**\_falso**</dt> </dl>   | A hora retornada é igual ao valor anterior.<br/> |
+| <dl> <dt>**PONTEIRO \_ E**</dt> </dl> | Argumento de ponteiro **NULL.**<br/>                       |
+| <dl> <dt>**S \_ FALSE**</dt> </dl>   | A hora retornada é igual ao valor anterior.<br/> |
 | <dl> <dt>**S \_ OK**</dt> </dl>      | Êxito.<br/>                                         |
 
 
@@ -67,7 +67,7 @@ Retorna um dos valores **HRESULT** mostrados na tabela a seguir.
 
 ## <a name="remarks"></a>Comentários
 
-Esse método chama o método [**CBaseReferenceClock:: Getparticulartime**](cbasereferenceclock-getprivatetime.md) para determinar o tempo real do relógio. Se a hora do relógio for estritamente maior que o valor anterior, o `GetTime` usará a hora do relógio e retornará S \_ OK. Caso contrário, `GetTime` o usará o valor anterior e retornará S \_ false. Portanto, o relógio interno pode ficar recuado por um curto período, sem fazer com que o tempo de referência seja executado retroativamente. Em vez disso, o tempo de referência será "paralisado" no mesmo valor até que o relógio interno seja atualizado.
+Esse método chama o [**método CBaseReferenceClock::GetPrivateTime**](cbasereferenceclock-getprivatetime.md) para determinar a hora do relógio real. Se a hora do relógio for estritamente maior que o valor anterior, `GetTime` usará a hora do relógio e retornará S \_ OK. Caso contrário, `GetTime` usa o valor anterior e retorna S \_ FALSE. Portanto, o relógio interno pode ser executado para trás por um curto período, sem fazer com que o tempo de referência seja executado para trás. Em vez disso, o tempo de referência será "parado" com o mesmo valor até que o relógio interno seja atualizado.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -75,8 +75,8 @@ Esse método chama o método [**CBaseReferenceClock:: Getparticulartime**](cbase
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Refclock. h (incluir fluxos. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Refclock.h (incluir Fluxos.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

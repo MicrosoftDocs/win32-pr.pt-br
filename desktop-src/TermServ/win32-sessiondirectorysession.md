@@ -1,11 +1,11 @@
 ---
-title: Classe Win32_SessionDirectorySession
-description: Fornece propriedades para exibir as propriedades de uma sessão do agente de Conexão de Área de Trabalho Remota (agente de conexão RD).
+title: Win32_SessionDirectorySession classe
+description: Fornece propriedades para exibir as propriedades de uma sessão Conexão de Área de Trabalho Remota Broker (Agente de Conexão de Área de Trabalho Remota).
 ms.assetid: 34b5a898-3952-493c-ba62-dd0d298b0600
 ms.tgt_platform: multiple
 keywords:
-- Classe de Win32_SessionDirectorySession Serviços de Área de Trabalho Remota
-- Serviços de Área de Trabalho Remota de Win32_SessionDirectorySession classe, descrita
+- Win32_SessionDirectorySession classe Serviços de Área de Trabalho Remota
+- Win32_SessionDirectorySession classe Serviços de Área de Trabalho Remota , descrito
 topic_type:
 - apiref
 api_name:
@@ -29,19 +29,19 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fba8fdbdffc764c3bdcc1a8f5bc53aa479f318d4
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d0a7d883d3b356713f2f9c3d2b1f9de76676e845020b211ee8a600604a674c54
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104369361"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118848190"
 ---
-# <a name="win32_sessiondirectorysession-class"></a>\_Classe Win32 SessionDirectorySession
+# <a name="win32_sessiondirectorysession-class"></a>Classe \_ SessionDirectorySession do Win32
 
-Fornece propriedades para exibir as propriedades de uma sessão do agente de Conexão de Área de Trabalho Remota (agente de conexão RD).
+Fornece propriedades para exibir as propriedades de uma sessão Conexão de Área de Trabalho Remota Broker (Agente de Conexão de Área de Trabalho Remota).
 
 > [!Note]  
-> No Windows Server 2008 R2, o nome do agente de sessão dos serviços de terminal (agente de Sessão TS) foi alterado para o agente de conexão RD. Essas propriedades se aplicam a todos os sistemas operacionais com suporte, salvo indicação em contrário.
+> No Windows Server 2008 R2, o nome do Agente de Sessão dos Serviços de Terminal (Agente de Sessão TS) foi alterado para Agente de Conexão de Área de Trabalho Remoto. Essas propriedades se aplicam a todos os sistemas operacionais com suporte, a menos que seja notado de outra forma.
 
  
 
@@ -69,13 +69,13 @@ class Win32_SessionDirectorySession
 
 ## <a name="members"></a>Membros
 
-A classe **Win32 \_ SessionDirectorySession** tem estes tipos de membros:
+A **classe \_ SessionDirectorySession do Win32** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **Win32 \_ SessionDirectorySession** tem essas propriedades.
+A **classe \_ SessionDirectorySession do Win32** tem essas propriedades.
 
 <dl> <dt>
 
@@ -88,14 +88,14 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Aplicativo iniciado com esta sessão. Isso é o mesmo que a propriedade **StartProgram** de [**IMsTscSecuredSettings**](imstscsecuredsettings-interface.md).
+Aplicativo iniciado com esta sessão. Isso é o mesmo que a **propriedade StartProgram** de [**IMsTscSecuredSettings**](imstscsecuredsettings-interface.md).
 
 </dd> <dt>
 
-**ColorDepth**
+**Colordepth**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -118,7 +118,7 @@ Data e hora em que a sessão foi criada. Esse valor não é redefinido quando um
 
 </dd> <dt>
 
-**Desconectartime**
+**DisconnectTime**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **DateTime**
@@ -147,7 +147,7 @@ Nome de domínio do usuário conectado a esta sessão.
 **ResolutionHeight**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -160,7 +160,7 @@ Altura da sessão, em pixels, para esta sessão.
 **ResolutionWidth**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -179,7 +179,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Endereço IP do servidor do agente de conexão RD para esta sessão.
+Endereço IP do servidor do Agente de Conexão de RD para esta sessão.
 
 </dd> <dt>
 
@@ -195,14 +195,14 @@ Tipo de acesso: Somente leitura
 Qualificadores: [ **chave**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-Nome do servidor do agente de conexão RD para esta sessão.
+Nome do servidor do Agente de Conexão de RD para esta sessão.
 
 </dd> <dt>
 
-**SessionID**
+**Sessionid**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -215,10 +215,10 @@ ID da sessão para esta sessão.
 
 </dd> <dt>
 
-**SessionState**
+**Sessionstate**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -247,7 +247,7 @@ A sessão está desconectada.
 **TSProtocol**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -267,14 +267,14 @@ Esta sessão está em execução em um console físico.
 1
 </dt> <dd>
 
-Um protocolo de terceiros proprietário é usado para esta sessão.
+Um protocolo proprietário de terceiros é usado para esta sessão.
 
 </dd> <dt>
 
 2
 </dt> <dd>
 
-Protocolo RDP (RDP) é usado para esta sessão.
+protocolo RDP (RDP) é usado para esta sessão.
 
 </dd> </dl>
 
@@ -295,7 +295,7 @@ Nome de usuário do usuário conectado a esta sessão.
 
 ## <a name="remarks"></a>Comentários
 
-Os arquivos de formato MOF (MOF) contêm as definições de classes de Instrumentação de Gerenciamento do Windows (WMI). Os arquivos MOF não são instalados como parte do SDK (Software Development Kit) do Microsoft Windows. Eles são instalados no servidor quando você adiciona a função associada usando o Gerenciador do Servidor. Para obter mais informações sobre arquivos MOF, consulte [formato MOF (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
+arquivos Managed Object Format (MOF) contêm as definições para classes WMI (Instrumentação de Gerenciamento de Windows). Os arquivos MOF não são instalados como parte do Microsoft Windows Software Development Kit (SDK). Eles são instalados no servidor quando você adiciona a função associada usando o Gerenciador do Servidor. Para obter mais informações sobre arquivos MOF, [consulte Managed Object Format (MOF).](/windows/desktop/WmiSdk/managed-object-format--mof-)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -306,7 +306,7 @@ Os arquivos de formato MOF (MOF) contêm as definições de classes de Instrumen
 | Cliente mínimo com suporte<br/> | Nenhum compatível<br/>                                                              |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                         |
 | Namespace<br/>                | Raiz\\CIMv2<br/>                                                                 |
-| MOF<br/>                      | <dl> <dt>TssdWmi. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>TssdWmi.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>TssdWmi.dll</dt> </dl> |
 
 
@@ -315,7 +315,7 @@ Os arquivos de formato MOF (MOF) contêm as definições de classes de Instrumen
 
 <dl> <dt>
 
-[**\_SessionDirectoryCluster Win32**](win32-sessiondirectorycluster.md)
+[**Win32 \_ SessionDirectoryCluster**](win32-sessiondirectorycluster.md)
 </dt> <dt>
 
 [**\_SessionDirectoryServer Win32**](win32-sessiondirectoryserver.md)

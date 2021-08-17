@@ -4,12 +4,12 @@ ms.assetid: cd331f79-b64d-479e-aea8-5118ccc87224
 title: Evento de PBT_APMRESUMEAUTOMATIC (WinUser. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4a7a481dee356c85b3831fcace0c1ff127b0b276
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 43e66fcd2201e9fb3c4feeb135843e92a350303b89a5c5045836428b9a326a30
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103828365"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119143339"
 ---
 # <a name="pbt_apmresumeautomatic-event"></a>\_Evento PBT APMRESUMEAUTOMATIC
 
@@ -18,7 +18,7 @@ Notifica os aplicativos que o sistema está retomando do modo de suspensão ou h
 Uma janela recebe esse evento por meio da mensagem do [**WM \_ POWERBROADCAST**](wm-powerbroadcast.md) . Os parâmetros *wParam* e *lParam* são definidos conforme descrito a seguir.
 
 > [!Note]  
-> Nos sistemas Windows 10, versão 1507 ou posterior, se o sistema estiver retomando do modo de suspensão somente para entrar imediatamente em hibernação, esse evento não será entregue. Uma mensagem do [**WM \_ POWERBROADCAST**](wm-powerbroadcast.md) não é enviada nesse caso.
+> em Windows 10, versão 1507 sistemas ou posteriores, se o sistema estiver retomando do modo de suspensão somente para entrar imediatamente em hibernação, esse evento não será entregue. Uma mensagem do [**WM \_ POWERBROADCAST**](wm-powerbroadcast.md) não é enviada nesse caso.
 
  
 
@@ -72,7 +72,7 @@ Reservado deve ser zero.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Sem valor de retorno.
 
@@ -86,9 +86,9 @@ Se o sistema detectar qualquer atividade do usuário após a difusão PBT \_ APM
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                                     |
-| parâmetro<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho XP\]<br/>                                                              |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                                     |
+| Cabeçalho<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
 
 
 

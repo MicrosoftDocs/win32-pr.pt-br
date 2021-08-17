@@ -4,17 +4,17 @@ ms.assetid: 75451c01-2cd3-484a-b864-6681896b9796
 title: Propriedade DefaultSubpictureLanguage
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b24f8b3cd91530d005e428dc5679b9b89c4c21e0
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 77ae061e8a752c17f9bbb111b3399b576eda55d0bd1ce1dd6a0c5084e66e5d00
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104500642"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118952995"
 ---
 # <a name="defaultsubpicturelanguage-property"></a>Propriedade DefaultSubpictureLanguage
 
 > [!Note]  
-> Esse componente está disponível para uso nos sistemas operacionais Microsoft Windows 2000, Windows XP e Windows Server 2003. Ele poderá ser alterado ou ficar indisponível em versões subsequentes.
+> esse componente está disponível para uso nos sistemas operacionais Microsoft Windows 2000, Windows XP e Windows Server 2003. Ele poderá ser alterado ou ficar indisponível em versões subsequentes.
 
  
 

@@ -1,21 +1,21 @@
 ---
-description: O ICE54 verifica os componentes que usam um arquivo complementar como seu caminho de chave.
+description: ICE54 verifica se há componentes que usam um arquivo de adoção como seu caminho de chave.
 ms.assetid: 94fcabfe-4500-42f2-acea-13b9a6681ca6
 title: ICE54
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 99df2ba90ccb44e33b67aaf8ecdcadc723e8d2fe
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 00658bb62b5c29b25f9fb653e216920fc776ba6df0e3fc2f8b47bbdf715040b4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103828568"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118946603"
 ---
 # <a name="ice54"></a>ICE54
 
-O ICE54 verifica os componentes que usam um arquivo complementar como seu caminho de chave.
+ICE54 verifica se há componentes que usam um arquivo de adoção como seu caminho de chave.
 
-O arquivo de caminho de chave de um componente não deve derivar sua versão de um arquivo diferente. Isso pode fazer com que alguns arquivos falhem na instalação. Consulte a [tabela de arquivos](file-table.md) para obter mais informações sobre arquivos complementares.
+O arquivo de caminho de chave de um componente não deve derivar sua versão de um arquivo diferente. Isso pode fazer com que alguns arquivos falhem na instalação. Consulte a [tabela Arquivo para](file-table.md) obter mais informações sobre arquivos adicionais.
 
 ## <a name="result"></a>Resultado
 

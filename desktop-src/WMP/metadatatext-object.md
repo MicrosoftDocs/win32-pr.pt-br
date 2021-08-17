@@ -13,18 +13,18 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: b043a9050d03ca562159aa5be0c113084ac152fb
-ms.sourcegitcommit: 4f5016b1fbfd703dbf769c508db464c2518c0fa5
+ms.openlocfilehash: 2f79c4f4bb80855cf84d576c126e30dc5301c45ca6f1a7c34c5d54e57844abfb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "104365061"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119135019"
 ---
 # <a name="metadatatext-object"></a>Objeto MetadataText
 
-O objeto **MetadataText** fornece uma maneira de recuperar metadados para atributos de metadados textuais complexos.
+O **objeto MetadataText** fornece uma maneira de recuperar metadados para atributos de metadados textuais complexos.
 
-O objeto **MetadataText** dá suporte às propriedades a seguir.
+O **objeto MetadataText** dá suporte às propriedades a seguir.
 
 
 
@@ -35,9 +35,9 @@ O objeto **MetadataText** dá suporte às propriedades a seguir.
 
 
 
- 
+ 
 
-O objeto **MetadataText** é acessado por meio do método a seguir.
+O **objeto MetadataText** é acessado por meio do método a seguir.
 
 
 
@@ -47,9 +47,9 @@ O objeto **MetadataText** é acessado por meio do método a seguir.
 
 
 
- 
+ 
 
-Para fins de ilustração, *Player*. *currentMedia*. **getItemInfoByType**(*nome*, *idioma*, *índice*) é usado nas seções de sintaxe de referência.
+Para fins de ilustração, *player*. *currentMedia*. **getItemInfoByType**(*name*, *language*, *index*) é usado nas seções de sintaxe de referência.
 
 ## <a name="see-also"></a>Confira também
 
@@ -58,9 +58,9 @@ Para fins de ilustração, *Player*. *currentMedia*. **getItemInfoByType**(*nome
 [**Referência de modelo de objeto para scripts**](object-model-reference-for-scripting.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

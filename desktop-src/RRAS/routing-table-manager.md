@@ -4,12 +4,12 @@ description: O Gerenciador de tabela de roteamento é o repositório central de 
 ms.assetid: 7b01704e-c1fb-40e3-89cf-1206fdf9fd75
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 98094eb34c8575e0c24854813fc7458c98749568
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 850726cd2203eca85be33aea3bd33f1ed903ba2d197d102ff7de294c5e852626
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105759601"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117787464"
 ---
 # <a name="routing-table-manager"></a>Gerenciador de tabela de roteamento
 
@@ -21,9 +21,9 @@ O Gerenciador de tabela de roteamento passa as informações de melhor rota para
 
 Cada cliente é registrado com o Gerenciador de tabela de roteamento e, em retorno, recebe um identificador que o cliente usa para adicionar ou excluir rotas. Os clientes podem recuperar informações armazenadas na tabela de roteamento. Além disso, os clientes podem se registrar no Gerenciador de tabelas de roteamento para receber notificações de alterações na melhor rota para um destino.
 
- 
+ 
 
- 
+ 
 
 
 

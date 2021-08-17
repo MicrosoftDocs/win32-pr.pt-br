@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 21b0e421b68287b983fc43482e3a2385b2a160f6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 667658a14f10af5ed0955055dbcd02556c52f82d764bc319ca4c5d487caad7bd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104170184"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117717742"
 ---
 # <a name="apiserializeobjecttocolumn-method"></a>Método API. SerializeObjectToColumn
 
@@ -88,7 +88,7 @@ public static void SerializeObjectToColumn(
 
 <!-- end list -->
 
-  - value  
+  - valor  
     Tipo: [System. Object](/dotnet/api/system.object)  
     
     O objeto a ser gravado. O objeto deve ser serializável.

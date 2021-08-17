@@ -4,12 +4,12 @@ ms.assetid: 741aa729-35c3-43c2-93d8-e25ed508cfa6
 title: PageDeviceFontSubstitution
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4dc5650c687a4c96e6c54ef7ea0631e77407e874
-ms.sourcegitcommit: 998d50f6def8a25850fc113fc8a2df903c829c5e
+ms.openlocfilehash: 2104ac8fd6c0dde2275bbba5640fef75918fffbdb2596d81576f1877380068f8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "113549194"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119098850"
 ---
 # <a name="pagedevicefontsubstitution"></a>PageDeviceFontSubstitution
 
@@ -28,7 +28,7 @@ Descreve o estado habilitado/desabilitado da substituição de fonte do disposit
 | Nome | Valor |
 |----------------------------|--------------------|
 | Tipo de elemento <br/>   | Recurso<br/> |
-| Prefixo de definição de scoping <br/> | Página<br/>    |
+| Prefixo de definição de scoping <br/> | ?<br/>    |
 | Observações <br/>          | Nenhum<br/>    |
 
 
@@ -70,7 +70,7 @@ A tabela a seguir descreve as características das variáveis definidas na estru
 
 ## <a name="extensible-markup-language-xml-content"></a>linguagem XML conteúdo (XML)
 
-As palavras-chave public Print Schema são definidas no https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords namespace . O conteúdo linguagem XML XML (public linguagem XML) para essa palavra-chave é definido abaixo:
+As palavras-chave public Print Schema são definidas no https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords namespace . O conteúdo linguagem XML xml público para essa palavra-chave está definido abaixo:
 
 ``` syntax
 <psf:Feature name="psk:PageDeviceFontSubstitution">

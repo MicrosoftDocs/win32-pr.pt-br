@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - Ntddvdeo.h
-ms.openlocfilehash: 547501a28492aecfe06f63f95b0e007fc80d3d02
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 673930fbde301c031049316255c9bcee40fd4e6a4f3c362977caf6e0569c5f5b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105812886"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119143409"
 ---
 # <a name="ioctl_video_query_display_brightness-control-code"></a>\_Código de \_ controle de brilho de \_ exibição de consulta de vídeo do IOCTL \_
 
-\[Esse código de controle está disponível para uso nos sistemas operacionais especificados na seção requisitos. O suporte para esse código de controle foi removido do Windows Server 2008 e do Windows Vista. Em vez disso, use a classe [**WmiMonitorBrightness**](/windows/desktop/WmiCoreProv/wmimonitorbrightness) .\]
+\[Esse código de controle está disponível para uso nos sistemas operacionais especificados na seção requisitos. o suporte para esse código de controle foi removido no Windows Server 2008 e Windows Vista. Em vez disso, use a classe [**WmiMonitorBrightness**](/windows/desktop/WmiCoreProv/wmimonitorbrightness) .\]
 
 Recupera os níveis atuais de luz de CA e CC e o estado de energia atual.
 
@@ -116,7 +116,7 @@ Se *hDevice* tiver sido aberto sem especificar o \_ sinalizador sobreposto do si
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se a operação for concluída com êxito, [**DeviceIoControl**](/windows/desktop/api/ioapiset/nf-ioapiset-deviceiocontrol) retornará um valor diferente de zero.
 
@@ -124,7 +124,7 @@ Se a operação falhar ou estiver pendente, [**DeviceIoControl**](/windows/deskt
 
 ## <a name="remarks"></a>Comentários
 
-O arquivo de cabeçalho usado para criar aplicativos que incluem essa funcionalidade, Ntddvdeo. h, está incluído no Microsoft Windows Driver Development Kit (DDK). Para obter informações sobre como obter o DDK, consulte [https://www.microsoft.com/whdc/devtools/ddk/default.mspx](https://msdn.microsoft.com/windows/hardware/gg454513) .
+o arquivo de cabeçalho usado para criar aplicativos que incluem essa funcionalidade, Ntddvdeo. h, está incluído no Microsoft Windows Driver Development Kit (DDK). Para obter informações sobre como obter o DDK, consulte [https://www.microsoft.com/whdc/devtools/ddk/default.mspx](https://msdn.microsoft.com/windows/hardware/gg454513) .
 
 Como alternativa, você pode definir esse código de controle da seguinte maneira:
 
@@ -139,11 +139,11 @@ Como alternativa, você pode definir esse código de controle da seguinte maneir
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP com SP1\]<br/>                                  |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
+| Cliente mínimo com suporte<br/> | Windows XP somente com \[ aplicativos da área de trabalho do SP1\]<br/>                                  |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
 | Fim do suporte do cliente<br/>    | Windows XP com SP2<br/>                                                        |
 | Fim do suporte do servidor<br/>    | Windows Server 2003 R2<br/>                                                     |
-| parâmetro<br/>                   | <dl> <dt>Ntddvdeo. h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Ntddvdeo. h</dt> </dl> |
 
 
 

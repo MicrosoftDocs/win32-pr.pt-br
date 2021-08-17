@@ -4,9 +4,9 @@ description: Define o valor da propriedade VirtualIPActive.
 ms.assetid: e485aeb1-afdf-4572-bac7-daa80d903edc
 ms.tgt_platform: multiple
 keywords:
-- Serviços de Área de Trabalho Remota do método SetVirtualIPActive
-- Método SetVirtualIPActive Serviços de Área de Trabalho Remota, classe Win32_TSVirtualIP
-- Classe Win32_TSVirtualIP Serviços de Área de Trabalho Remota, método SetVirtualIPActive
+- Método SetVirtualIPActive Serviços de Área de Trabalho Remota
+- Método SetVirtualIPActive Serviços de Área de Trabalho Remota , Win32_TSVirtualIP classe
+- Win32_TSVirtualIP classe Serviços de Área de Trabalho Remota , método SetVirtualIPActive
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 06534c967c5d86a7a19c060254b3b988ff98b17e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 2ab43a007a2a8b04e91d5225e648d5667a87c468cbd52c005d85f4ba6496c919
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918645"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118850915"
 ---
-# <a name="setvirtualipactive-method-of-the-win32_tsvirtualip-class"></a>Método SetVirtualIPActive da classe Win32 \_ TSVirtualIP
+# <a name="setvirtualipactive-method-of-the-win32_tsvirtualip-class"></a>Método SetVirtualIPActive da classe \_ TSVirtualIP do Win32
 
-Define o valor da propriedade **VirtualIPActive** .
+Define o **valor da propriedade VirtualIPActive.**
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -43,12 +43,12 @@ uint32 SetVirtualIPActive(
 
 <dl> <dt>
 
-*VirtualIPActive* \[ no\]
+*VirtualIPActive* \[ Em\]
 </dt> <dd>
 
-Tipo: **UInt32**
+Tipo: **uint32**
 
-Especifica se a virtualização de IP está ativa no servidor. Isso pode ser um dos valores a seguir.
+Especifica se a virtualização de IP está ativa no servidor. Esse pode ser um dos valores a seguir.
 
 <dt>
 
@@ -59,18 +59,18 @@ A virtualização de IP não está ativa.
 
 </dd> <dt>
 
-diferente
+Zero
 </dt> <dd>
 
 A virtualização de IP está ativa.
 
 </dd> </dl> </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Tipo: **UInt32**
+Tipo: **uint32**
 
-Retorna 0 em caso de êxito; caso contrário, retorna um código de erro WMI. Consulte [serviços de área de trabalho remota códigos de erro do provedor WMI](terminal-services-wmi-provider-error-codes.md) para obter uma lista desses valores. O método retornará um erro se a configuração estiver sob controle de diretiva de grupo.
+Retorna 0 em caso de êxito; caso contrário, retorna um código de erro WMI. Consulte Serviços de Área de Trabalho Remota códigos de erro do provedor [WMI](terminal-services-wmi-provider-error-codes.md) para ver uma lista desses valores. O método retornará um erro se a configuração estiver sob controle de política de grupo.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -80,8 +80,8 @@ Retorna 0 em caso de êxito; caso contrário, retorna um código de erro WMI. Co
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Nenhum compatível<br/>                                                               |
 | Servidor mínimo com suporte<br/> | Windows Server 2008 R2<br/>                                                       |
-| Namespace<br/>                | \\TerminalServices da CIMv2 raiz \\<br/>                                                |
-| MOF<br/>                      | <dl> <dt>TSCfgWmi. mof</dt> </dl> |
+| Namespace<br/>                | \\CiMv2 \\ TerminalServices raiz<br/>                                                |
+| MOF<br/>                      | <dl> <dt>TSCfgWmi.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>TSCfgWmi.dll</dt> </dl> |
 
 
@@ -90,7 +90,7 @@ Retorna 0 em caso de êxito; caso contrário, retorna um código de erro WMI. Co
 
 <dl> <dt>
 
-[**\_TSVirtualIP Win32**](win32-tsvirtualip.md)
+[**Win32 \_ TSVirtualIP**](win32-tsvirtualip.md)
 </dt> </dl>
 
  

@@ -1,19 +1,19 @@
 ---
-description: As seguintes funções administrativas permitem que um provedor de rede adote uma ação específica da rede para exibir e manipular diretórios específicos da rede, em outras palavras, diretórios mapeados para protocolos não Windows.
+description: as seguintes funções administrativas permitem que um provedor de rede adote uma ação específica da rede para exibir e manipular diretórios específicos da rede, em outras palavras, diretórios mapeados para protocolos não Windows.
 ms.assetid: df2f1bd6-5257-46e4-a4d4-ad2f5c0a1517
 title: Funções administrativas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b83cb5b7c515fe8e22dc5542a4d29e54e8b01329
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bf2812c996f45c355147748a6ceba7106546332dd744b5f3fb783fee34420125
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105749972"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119141509"
 ---
 # <a name="administrative-functions"></a>Funções administrativas
 
-As seguintes funções administrativas permitem que um provedor de rede adote uma ação específica da rede para exibir e manipular diretórios específicos da rede, em outras palavras, diretórios mapeados para protocolos não Windows.
+as seguintes funções administrativas permitem que um provedor de rede adote uma ação específica da rede para exibir e manipular diretórios específicos da rede, em outras palavras, diretórios mapeados para protocolos não Windows.
 
 
 

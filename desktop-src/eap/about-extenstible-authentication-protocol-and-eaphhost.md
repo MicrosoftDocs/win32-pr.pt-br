@@ -1,29 +1,29 @@
 ---
-title: Sobre o EAP e o EAPHost
-description: Saiba mais sobre o EAP (Extensible Authentication Protocol) e o EAPHost. Exiba recursos adicionais disponíveis sobre o EAP e o EAPHost.
+title: Sobre EAP e EAPHost
+description: Saiba mais sobre o EAP (Protocolo de Autenticação Extensível) e o EAPHost. Exibir recursos adicionais disponíveis sobre EAP e EAPHost.
 ms.assetid: 2669c858-c4cc-4319-a29c-93fe2fe67f41
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 29f6e087a96adff43e5c8300ae68e7c0980d4fa4
-ms.sourcegitcommit: b0ebdefc3dcd5c04bede94091833aa1015a2f95c
+ms.openlocfilehash: 9323109f850d4782a5aed644f5a3fdfece42ac2ea122de4399ca584dd15299c5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "104008350"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119117816"
 ---
-# <a name="about-eap-and-eaphost"></a>Sobre o EAP e o EAPHost
+# <a name="about-eap-and-eaphost"></a>Sobre EAP e EAPHost
 
-## <a name="about-eaphost"></a>Sobre o EAPHost
+## <a name="about-eaphost"></a>Sobre O EAPHost
 
-O EAPHost implementa a máquina de estado EAP (Extensible Authentication Protocol) e a estrutura do protocolo EAP, de acordo com a [RFC 3748](https://go.microsoft.com/fwlink/p/?linkid=84063). Para obter mais informações, consulte [about EAPHost](about-eaphost.md).
+O EAPHost implementa o computador de estado EAP (Protocolo de Autenticação Extensível) e a estrutura de protocolo EAP, de acordo com [o RFC 3748](https://go.microsoft.com/fwlink/p/?linkid=84063). Para obter mais informações, consulte [Sobre O EAPHost.](about-eaphost.md)
 
 ## <a name="about-extensible-authentication-protocol"></a>Sobre o protocolo de autenticação extensível
 
-O EAP é um componente de rede do Microsoft Windows que fornece uma infraestrutura EAP (Extensible Authentication Protocol). Para obter mais informações, consulte [sobre o EAP](about-extensible-authentication-protocol.md).
+O EAP é um componente de Rede Windows Microsoft que fornece uma infraestrutura EAP (Extensible Authentication Protocol). Para obter mais informações, consulte [Sobre o EAP](about-extensible-authentication-protocol.md).
 
- 
+ 
 
- 
+ 
 
 
 

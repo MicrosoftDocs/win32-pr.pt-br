@@ -1,7 +1,7 @@
 ---
-description: Especifica o segundo número inicial no cabeçalho do grupo de imagens (GOP).
+description: Especifica o segundo número inicial no header do grupo de imagens (GOP).
 ms.assetid: 599964bd-a7d8-4cdd-82ce-d229b4b7ac72
-title: Propriedade AVEncVideoHeaderSeconds (Codecapi. h)
+title: Propriedade AVEncVideoHeaderSeconds (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 074a6dd0b2beab7a0245af4b513f5fffa5a543cf80e3fe3259309540bf0c2691
@@ -13,9 +13,9 @@ ms.locfileid: "119342396"
 ---
 # <a name="avencvideoheaderseconds-property"></a>Propriedade AVEncVideoHeaderSeconds
 
-Especifica o segundo número inicial no cabeçalho do grupo de imagens (GOP).
+Especifica o segundo número inicial no header do grupo de imagens (GOP).
 
-Esta propriedade é de leitura/gravação.
+Essa propriedade é leitura/gravação.
 
 ## <a name="data-type"></a>Tipo de dados
 
@@ -35,9 +35,9 @@ O intervalo válido dessa propriedade é de 0 a 59, inclusive.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | aplicativos Windows 2000 Professional \[ desktop aplicativos \| UWP\]<br/>                     |
-| Servidor mínimo com suporte<br/> | Windows \[ aplicativos da área de trabalho do servidor 2000 \| aplicativo UWP\]<br/>                           |
-| parâmetro<br/>                   | <dl> <dt>Codecapi. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 2000 Professional aplicativos \[ UWP da área de \| trabalho\]<br/>                     |
+| Servidor mínimo com suporte<br/> | Windows aplicativos da área de trabalho do servidor 2000 \[ \| aplicativos UWP\]<br/>                           |
+| Cabeçalho<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
@@ -45,10 +45,10 @@ O intervalo válido dessa propriedade é de 0 a 59, inclusive.
 
 <dl> <dt>
 
-[Propriedades da API do codec](codec-api-properties.md)
+[Propriedades da API do Codec](codec-api-properties.md)
 </dt> <dt>
 
-[**Interface ICodecAPI**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)
+[**ICodecAPI Interface**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)
 </dt> </dl>
 
  

@@ -4,16 +4,16 @@ description: As funções usadas com o WinSNMP se enquadram nos seguintes agrupa
 ms.assetid: ae95ac47-81ff-4715-b3e9-e19c07223712
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9d7c5ebb49e8ec56c0d0b1174fd667d847c09d3f
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: e29169e8cf86b7f21ebbc40ced2ac37a46668c727183a9b2970eb368c7e81d85
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104084694"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119142799"
 ---
 # <a name="winsnmp-functions"></a>Funções WinSNMP
 
-\[O SNMP está disponível para uso nos sistemas operacionais especificados na seção requisitos. Ele poderá ser alterado ou ficar indisponível em versões subsequentes. Em vez disso, use [gerenciamento remoto do Windows](/windows/desktop/WinRM/portal), que é a implementação da Microsoft do WS-Man.\]
+\[O SNMP está disponível para uso nos sistemas operacionais especificados na seção requisitos. Ele poderá ser alterado ou ficar indisponível em versões subsequentes. em vez disso, use [Gerenciamento Remoto do Windows](/windows/desktop/WinRM/portal), que é a implementação da Microsoft do WS-Man.\]
 
 As funções usadas com o WinSNMP se enquadram nos seguintes agrupamentos funcionais. Segue uma lista alfabética.
 

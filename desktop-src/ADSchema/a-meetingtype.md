@@ -1,10 +1,10 @@
 ---
-title: atributo meetingtype
-description: O tipo de reunião que está sendo mantido.
+title: Atributo meetingType
+description: O tipo de reunião que está sendo realizada.
 ms.assetid: d0095be1-0b02-4be4-8324-694ffe26094b
 ms.tgt_platform: multiple
 keywords:
-- atributo de anúncio de atributos de reuniãotype
+- Esquema do AD do atributo meetingType
 topic_type:
 - apiref
 api_name:
@@ -13,29 +13,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1419b0e5bac36e7c1f989d122dc420b07c64142d
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: de1e8b691d57016be5dd423cf8aee478f5196e06b31e3215226d5157a92dd426
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104086735"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118961225"
 ---
-# <a name="meetingtype-attribute"></a>atributo meetingtype
+# <a name="meetingtype-attribute"></a>Atributo meetingType
 
-O tipo de reunião que está sendo mantido.
+O tipo de reunião que está sendo realizada.
 
 
 
 | Entrada | Valor |
 |-------------------|---------------------------------------------|
-| CN                | reuniãotype                                 |
-| LDAP-Display-Name | reuniãotype                                 |
+| CN                | meetingType                                 |
+| Ldap-Display-Name | meetingType                                 |
 | Tamanho              | \-                                          |
 | Privilégio de atualização  | \-                                          |
 | Frequência de atualização  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.571                      |
-| System-ID-GUID    | 11b6cc82-48c4-11d1-a9c3-0000f80367c1        |
-| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | 11b6cc82-48c4-11d1-a9c3-0000f80367c1        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -57,10 +57,10 @@ O tipo de reunião que está sendo mantido.
 | ID do link                | \-                                      |
 | MAPI-Id                | \-                                      |
 | System-Only            | Falso                                   |
-| É de valor único       | True                                    |
+| Tem valor único       | Verdadeiro                                    |
 | É indexado             | Falso                                   |
-| No catálogo global      | Falso                                   |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                            |
+| No Catálogo Global      | Falso                                   |
+| Descritor de segurança NT | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |
@@ -78,10 +78,10 @@ O tipo de reunião que está sendo mantido.
 | ID do link                | \-                                      |
 | MAPI-Id                | \-                                      |
 | System-Only            | Falso                                   |
-| É de valor único       | True                                    |
+| Tem valor único       | Verdadeiro                                    |
 | É indexado             | Falso                                   |
-| No catálogo global      | Falso                                   |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                            |
+| No Catálogo Global      | Falso                                   |
+| Descritor de segurança NT | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |
@@ -99,10 +99,10 @@ O tipo de reunião que está sendo mantido.
 | ID do link                | \-                                      |
 | MAPI-Id                | \-                                      |
 | System-Only            | Falso                                   |
-| É de valor único       | True                                    |
+| Tem valor único       | Verdadeiro                                    |
 | É indexado             | Falso                                   |
-| No catálogo global      | Falso                                   |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                            |
+| No Catálogo Global      | Falso                                   |
+| Descritor de segurança NT | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |
@@ -120,10 +120,10 @@ O tipo de reunião que está sendo mantido.
 | ID do link                | \-                                      |
 | MAPI-Id                | \-                                      |
 | System-Only            | Falso                                   |
-| É de valor único       | True                                    |
+| Tem valor único       | Verdadeiro                                    |
 | É indexado             | Falso                                   |
-| No catálogo global      | Falso                                   |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                            |
+| No Catálogo Global      | Falso                                   |
+| Descritor de segurança NT | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |
@@ -141,10 +141,10 @@ O tipo de reunião que está sendo mantido.
 | ID do link                | \-                                      |
 | MAPI-Id                | \-                                      |
 | System-Only            | Falso                                   |
-| É de valor único       | True                                    |
+| Tem valor único       | Verdadeiro                                    |
 | É indexado             | Falso                                   |
-| No catálogo global      | Falso                                   |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                            |
+| No Catálogo Global      | Falso                                   |
+| Descritor de segurança NT | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |
@@ -162,10 +162,10 @@ O tipo de reunião que está sendo mantido.
 | ID do link                | \-                                      |
 | MAPI-Id                | \-                                      |
 | System-Only            | Falso                                   |
-| É de valor único       | True                                    |
+| Tem valor único       | Verdadeiro                                    |
 | É indexado             | Falso                                   |
-| No catálogo global      | Falso                                   |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                            |
+| No Catálogo Global      | Falso                                   |
+| Descritor de segurança NT | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |

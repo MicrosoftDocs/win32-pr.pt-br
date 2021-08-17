@@ -3,7 +3,7 @@ title: Evento DurationUnitChange do objeto AxWindowsMediaPlayer
 description: O evento DurationUnitChange é reservado para uso futuro.
 ms.assetid: d8d7da21-bc61-49f8-91bd-4c232295c1ac
 keywords:
-- Evento DurationUnitChange do objeto AxWindowsMediaPlayer do Windows Media Player
+- Evento DurationUnitChange do objeto AxWindowsMediaPlayer Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - Assembly
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f90aa052c61893d83683d10f482cd05841a49fab
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 1efa872389ad88a236808de64ed299dd3afc123cee59f39f1215f7a16bcb589f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105813385"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119136039"
 ---
 # <a name="durationunitchange-event-of-the-axwindowsmediaplayer-object"></a>Evento DurationUnitChange do objeto AxWindowsMediaPlayer
 
@@ -41,13 +41,13 @@ Private Sub player_DurationUnitChange(
 
 ## <a name="event-data"></a>Dados de evento
 
-O manipulador associado a esse evento é do tipo **AxWMPLib. \_ WMPOCXEvents \_ DurationUnitChangeEventHandler**. Esse manipulador recebe um argumento do tipo **AxWMPLib. \_ WMPOCXEvents \_ DurationUnitChangeEvent**, que contém a seguinte propriedade relacionada a este evento.
+O manipulador associado a esse evento é do tipo **AxWMPLib. \_ WMPOCXEvents \_ DurationUnitChangeEventHandler**. Esse manipulador recebe um argumento do tipo **AxWMPLib. \_ WMPOCXEvents \_ DurationUnitChangeEvent**, que contém a propriedade a seguir relacionada a esse evento.
 
 
 
 | Propriedade        | Descrição                               |
 |-----------------|-------------------------------------------|
-| newDurationUnit | **System. Int32** Sem suporte.<br/> |
+| newDurationUnit | **System.Int32** Sem suporte.<br/> |
 
 
 
@@ -63,7 +63,7 @@ Esse evento é reservado para uso futuro.
 
 | Requisito | Valor |
 |----------------------|----------------------------------------------------------------------------------------------------------------------------|
-| Versão<br/>   | Windows Media Player 9 Series ou posterior<br/>                                                                          |
+| Versão<br/>   | Windows Media Player série 9 ou posterior<br/>                                                                          |
 | Namespace<br/> | **AxWMPLib**<br/>                                                                                                    |
 | Assembly<br/>  | <dl> <dt>AxInterop.WMPLib.dll (AxInterop.WMPLib.dll.dll)</dt> </dl> |
 

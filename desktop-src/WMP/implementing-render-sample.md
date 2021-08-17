@@ -1,28 +1,28 @@
 ---
-title: Implementando exemplo de renderização
-description: Implementando exemplo de renderização
+title: Implementando o exemplo de renderização
+description: Implementando o exemplo de renderização
 ms.assetid: 5791f6ea-ddad-49e6-8c6f-8093592895d4
 keywords:
-- visualizações, exemplo de brilho
-- visualizações personalizadas, exemplo de brilho
-- Guia de programação, visualizações
-- amostras, visualização de brilho
+- visualizações, exemplo de Brilho
+- visualizações personalizadas, amostra de Brilho
+- guia de programação, visualizações
+- exemplos, visualização do Brilho
 - Exemplo de visualização de brilho
-- visualizações, função render
-- visualizações personalizadas, função render
-- Função render, exemplo de brilho
+- visualizações, função Renderizar
+- visualizações personalizadas, função Renderizar
+- Função renderizar, exemplo de Brilho
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dabc816283113a82c1d5d677dfc0ca8e8887d344
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: 8c00b57f15655468e5bd0000ccc3b5120e19c2af58d5a1ad6b5493b535c7253f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "104499225"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119135569"
 ---
-# <a name="implementing-render-sample"></a>Implementando exemplo de renderização
+# <a name="implementing-render-sample"></a>Implementando o exemplo de renderização
 
-O código a seguir é usado para implementar a função **render** :
+O código a seguir é usado para implementar a **função Renderizar:**
 
 
 ```C++
@@ -67,17 +67,17 @@ STDMETHODIMP CGlow::Render(TimedLevel *pLevels, HDC hdc, RECT *prc)
 
 Aqui está uma explicação do código:
 
-Uma variável chamada *MyColor* é usada para a cor do brilho e é declarada com **COLORREF**. Todas as cores devem usar o tipo de dados **COLORREF** .
+Uma variável *chamada mycolor* é usada para a cor do brilho e é declarada com **COLORREF**. Todas as cores devem usar o **tipo de dados COLORREF.**
 
-Uma variável chamada *MyLevel* é usada para o instantâneo do nível de onda de áudio. Esse valor dependerá do nível de energia real no momento do instantâneo.
+Uma variável chamada *mylevel* é usada para o instantâneo de nível de forma de onda de áudio. Esse valor dependerá do nível de energia real no momento do instantâneo.
 
-A instrução **switch** é definida pela predefinição que o usuário escolheu no Windows Media Player. A opção definirá *MyColor* como a cor desejada (vermelho, verde ou azul). No entanto, a cor exata será determinada pelo nível de energia de áudio. Por exemplo, se a predefinição vermelha for escolhida, a cor será um vermelho sólido, mas será mais clara ou mais escura dependendo da forma de onda de áudio no momento do instantâneo. Certifique-se de usar a macro **RGB** para criar sua cor.
+A **instrução** switch é definida pela predefinição que o usuário escolheu Windows Media Player. A opção definirá *mycolor* como a cor desejada (vermelho, verde ou azul). No entanto, a cor exata será determinada pelo nível de energia de áudio. Por exemplo, se a predefinição vermelha for escolhida, a cor será um vermelho sólido, mas será mais clara ou mais escura, dependendo da forma de onda de áudio no momento do instantâneo. Use a macro **RBG** para criar sua cor.
 
-Um pincel é criado chamado *hNewBrush* e é usado para preencher o retângulo *prc* fornecido pelo Windows Media Player. A superfície de desenho é o contexto de dispositivo *HDC* fornecido pelo Windows Media Player.
+Um pincel é criado chamado *hNewBrush* e é usado para preencher o retângulo *prc* fornecido por Windows Media Player. A superfície de desenho é o contexto do dispositivo *hdc* fornecido pelo Windows Media Player.
 
-O pincel é excluído por **ExcluirObjeto**. Sempre certifique-se de excluir as canetas ou os pincéis que você criar.
+O pincel é excluído por **DeleteObject.** Sempre exclua as canetas ou pincéis que você criar.
 
-Depois que o código de **renderização** for concluído, o Windows Media Player exibirá os gráficos *HDC* em uma janela determinada pela capa que está sendo usada.
+Depois que **o código** renderizar for concluído, Windows Media Player exibirá os elementos gráficos *hdc* em uma janela determinada pela capa que está sendo usada.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
