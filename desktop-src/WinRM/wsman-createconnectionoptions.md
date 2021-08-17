@@ -4,8 +4,8 @@ description: Cria um objeto ConnectionOptions que especifica o nome de usuário 
 ms.assetid: 3669a5fe-8305-4fa3-aa75-fafefcd8b33d
 ms.tgt_platform: multiple
 keywords:
-- Método createconnectoptions Gerenciamento Remoto do Windows
-- Método createconnectoptions Gerenciamento Remoto do Windows, objeto WSMan
+- método createconnectoptions Gerenciamento Remoto do Windows
+- método createconnectoptions Gerenciamento Remoto do Windows, objeto WSMan
 - Gerenciamento Remoto do Windows de objeto WSMan, método createconnectoptions
 topic_type:
 - apiref
@@ -17,12 +17,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e051b65e7ab85f11d6a10b94573082da8823ce50
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 3a4bd1218fcf6ca228cbc7538434b00b7b4e80d4c5b2df54807e031c11c14f99
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103824278"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117742663"
 ---
 # <a name="wsmancreateconnectionoptions-method"></a>Método WSMan. createconnectoptions
 
@@ -41,7 +41,7 @@ WSMan.CreateConnectionOptions()
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Um objeto [**ConnectionOptions**](connectionoptions.md) usado para especificar um par de nome de usuário e senha que é usado para identificar um usuário para autenticação.
 
@@ -64,7 +64,7 @@ Set options = wsman.CreateConnectionOptions
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                 |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                           |
-| parâmetro<br/>                   | <dl> <dt>WSManDisp. h</dt> </dl>   |
+| Cabeçalho<br/>                   | <dl> <dt>WSManDisp. h</dt> </dl>   |
 | INSERI<br/>                      | <dl> <dt>WSManDisp. idl</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>WSManDisp. tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>WSMAuto.dll</dt> </dl>   |

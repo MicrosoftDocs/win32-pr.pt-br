@@ -15,7 +15,7 @@ ms.locfileid: "118326729"
 
 ## <a name="text"></a>Texto
 
-O aplicativo parece não oferecer suporte à tabulação.
+O aplicativo parece não dar suporte à tabulação.
 
 ## <a name="type"></a>Tipo
 
@@ -23,20 +23,20 @@ Erro
 
 ## <a name="description"></a>Descrição
 
-O aplicativo não dá suporte à navegação de teclado padrão (TAB ou Shift + Tab).
+O aplicativo não dá suporte à navegação de teclado padrão (Tab ou Shift+Tab).
 
-Esse problema causa problemas de usabilidade para as pessoas que dependem de um leitor de tela ou do teclado para navegação porque nenhum dos elementos no aplicativo é detectável.
+Esse problema causa problemas de usabilidade para pessoas que dependem de um leitor de tela ou do teclado para navegação porque nenhum dos elementos no aplicativo é descobrivel.
 
 ## <a name="possible-causes"></a>Possíveis causas
 
--   A estrutura de interface do usuário do aplicativo não dá suporte a MSAA.
+-   A estrutura de interface do usuário do aplicativo não dá suporte à MSAA.
 -   A MSAA não é implementada em nenhum controle no aplicativo.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[Diretrizes para design de interface de usuário de teclado](/previous-versions/windows/desktop/dnacc/guidelines-for-keyboard-user-interface-design)
+[Diretrizes para design de Interface do Usuário teclado](/previous-versions/windows/desktop/dnacc/guidelines-for-keyboard-user-interface-design)
 </dt> </dl>
 
  

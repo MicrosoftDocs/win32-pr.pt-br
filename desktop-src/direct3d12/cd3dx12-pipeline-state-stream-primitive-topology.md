@@ -15,12 +15,12 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e597da8ea1ed4a4291142065e8e06f89d2664e03
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 7a828ef50956d9ab5336dfe88fa12bed9f7541633ec4589a9c556511e8487a9e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105781563"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117734258"
 ---
 # <a name="cd3dx12_pipeline_state_stream_primitive_topology-structure"></a>\_Estrutura de \_ \_ \_ topologia primitiva de fluxo de estado de pipeline CD3DX12 \_
 

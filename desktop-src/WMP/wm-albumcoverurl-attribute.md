@@ -3,7 +3,7 @@ title: Atributo WM/AlbumCoverURL
 description: O atributo WM/AlbumCoverURL é o Uniform Resource Locator (URL) para arte de álbum ou uma imagem em miniatura.
 ms.assetid: 0134867a-7c11-4d50-9ab5-b48c1ca6c473
 keywords:
-- Atributo WM/AlbumCoverURL do Windows Media Player
+- Windows Media Player do atributo WM/AlbumCoverURL
 topic_type:
 - apiref
 api_name:
@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6939c5451f3ae8f41214a817293e3c7f3cb3b66c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ce3e3d2948419761a139139493e737df1a9a709147613eadd3e077f0f5101f3a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105813745"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118332620"
 ---
 # <a name="wmalbumcoverurl-attribute"></a>Atributo WM/AlbumCoverURL
 

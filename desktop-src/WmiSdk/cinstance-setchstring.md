@@ -14,12 +14,12 @@ api_type:
 api_location:
 - FrameDynOS.dll
 - FrameDyn.dll
-ms.openlocfilehash: 187c07b5cf0f867ee838f2f3725d6a82319d4634
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3f53081c284ea60f77039b12c6bb43928ea45c306a0ddfbb1cc6e8c804661c3d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105762818"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117925772"
 ---
 # <a name="cinstancesetchstring-methods"></a>Métodos CInstance:: SetCHString
 
@@ -46,7 +46,7 @@ O método **CInstance:: SetCHString** define uma propriedade de cadeia de caract
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                                                                                      |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                                                                                                |
-| parâmetro<br/>                   | <dl> <dt>Instance. h (incluir FwCommon. h)</dt> </dl>                                                    |
+| Cabeçalho<br/>                   | <dl> <dt>Instance. h (incluir FwCommon. h)</dt> </dl>                                                    |
 | Biblioteca<br/>                  | <dl> <dt>FrameDyn. lib</dt> </dl>                                                                       |
 | DLL<br/>                      | <dl> <dt>FrameDynOS.dll; </dt> <dt>FrameDyn.dll</dt> </dl> |
 

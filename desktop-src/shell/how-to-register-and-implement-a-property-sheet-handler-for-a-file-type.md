@@ -3,12 +3,12 @@ description: Quando o usuário clica com o botão direito do mouse em um membro 
 title: Como registrar e implementar um manipulador de folha de propriedades para um tipo de arquivo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 77cf54886f7819fa910da23393c6db488ddfee72
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5ce0451071ba1f454ffae9ca1444f30428909946442f5aead853e74095d0c0c9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104988979"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118049802"
 ---
 # <a name="how-to-register-and-implement-a-property-sheet-handler-for-a-file-type"></a>Como registrar e implementar um manipulador de folha de propriedades para um tipo de arquivo
 

@@ -1,9 +1,9 @@
 ---
 title: Elemento Value (headerFieldType)
-description: Contém o valor de um campo de cabeçalho em uma mensagem de email.
+description: Contém o valor de um campo de header em uma mensagem de email.
 ms.assetid: 4518a924-e519-4e2b-ad8c-2c39b046b5c8
 keywords:
-- Elemento de valor Agendador de Tarefas
+- Elemento Value Agendador de Tarefas
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 50c90be3908da8e09726d6b812a533426faeefdb
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 0d346fbe0410a9085078f909dea5cef67788f5b1194e19be1bdb74529e4e56f6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105766956"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118355359"
 ---
 # <a name="value-headerfieldtype-element"></a>Elemento Value (headerFieldType)
 
-Contém o valor de um campo de cabeçalho em uma mensagem de email.
+Contém o valor de um campo de header em uma mensagem de email.
 
 ``` syntax
 <xs:element name="Value"
@@ -30,7 +30,7 @@ Contém o valor de um campo de cabeçalho em uma mensagem de email.
  />
 ```
 
-O elemento **Value** é definido pelo tipo complexo [**headerFieldType**](taskschedulerschema-headerfieldtype-complextype.md) .
+O **elemento Value** é definido pelo tipo complexo [**headerFieldType.**](taskschedulerschema-headerfieldtype-complextype.md)
 
 ## <a name="parent-element"></a>Elemento pai
 
@@ -38,7 +38,7 @@ O elemento **Value** é definido pelo tipo complexo [**headerFieldType**](tasksc
 
 | Elemento                                                                         | Derivado de                                                               | Descrição                                                    |
 |---------------------------------------------------------------------------------|----------------------------------------------------------------------------|----------------------------------------------------------------|
-| [**Cabeçalho**](taskschedulerschema-headerfield-headerfieldstype-element.md) | [**headerFieldType**](taskschedulerschema-headerfieldtype-complextype.md) | Contém um campo para um cabeçalho em uma mensagem de email. <br/> |
+| [**HeaderField**](taskschedulerschema-headerfield-headerfieldstype-element.md) | [**headerFieldType**](taskschedulerschema-headerfieldtype-complextype.md) | Contém um campo para um header em uma mensagem de email. <br/> |
 
 
 
@@ -48,8 +48,8 @@ O elemento **Value** é definido pelo tipo complexo [**headerFieldType**](tasksc
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
 
 
 

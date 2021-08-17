@@ -15,7 +15,7 @@ ms.locfileid: "118325375"
 
 ## <a name="text"></a>Texto
 
-a ordem de tabulação pode não estar seguindo as diretrizes de Windows padrão
+A ordem de tabulação pode não estar seguindo as diretrizes Windows padrão
 
 ## <a name="type"></a>Tipo
 
@@ -23,15 +23,15 @@ Informativo
 
 ## <a name="description"></a>Descrição
 
-Usar a navegação de teclado padrão (TAB ou Shift + Tab) expõe uma ordem de tabulação não padrão. Por exemplo, dependendo das configurações do sistema local, a ordem de tabulação normalmente imita a ordem de leitura.
+O uso da navegação por teclado padrão (Tab ou Shift+Tab) expõe uma ordem de tabulação não padrão. Por exemplo, dependendo das configurações do sistema local, a ordem de tabulação normalmente imita a ordem de leitura.
 
-Esse problema causa problemas para as pessoas que contam com um leitor de tela e um teclado para navegação porque a passagem de elementos pode ser irregular e imprevisível.
+Esse problema causa problemas para pessoas que dependem de um leitor de tela e teclado para navegação porque a travessia de elementos pode ser imprevisível e imprevisível.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[Diretrizes para design de interface de usuário de teclado](/previous-versions/windows/desktop/dnacc/guidelines-for-keyboard-user-interface-design)
+[Diretrizes para design de Interface do Usuário teclado](/previous-versions/windows/desktop/dnacc/guidelines-for-keyboard-user-interface-design)
 </dt> <dt>
 
 [Windows Diretrizes de interação da experiência do usuário – teclado](https://msdn.microsoft.com/library/bb545460.aspx#guidelines)

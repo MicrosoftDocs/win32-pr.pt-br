@@ -15,12 +15,12 @@ keywords:
 - interfaces, IScrollProvider
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b525c77a7f89f7adc95a3d90d999f8b243cfcdb6
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: c1d1cf3c04be18f362a64e619ec4659fac58923f29e6105174057b18a580f8d8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103636459"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118324386"
 ---
 # <a name="scroll-control-pattern"></a>Padrão de controle Scroll
 
@@ -44,7 +44,7 @@ Ao implementar o padrão de controle de **rolagem** , observe as seguintes diret
 -   As barras de rolagem de um controle de contêiner não dão suporte ao padrão de controle **Scroll** . Em vez disso, eles devem oferecer suporte ao padrão de controle [RangeValue](uiauto-implementingrangevalue.md) .
 -   Quando a rolagem é medida em percentuais, todos os valores ou quantidades relacionados à formatura de rolagem devem ser normalizados para um intervalo de 0 a 100.
 -   A propriedade [**IScrollProvider:: HorizontallyScrollable**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iscrollprovider-get_horizontallyscrollable) e a propriedade [**VerticallyScrollable**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iscrollprovider-get_verticallyscrollable) são independentes da propriedade **IsEnabled** .
--   Se a propriedade [**IScrollProvider:: HorizontallyScrollable**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iscrollprovider-get_horizontallyscrollable) for **false**, a propriedade [**HorizontalViewSize**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iscrollprovider-get_horizontalviewsize) deverá ser definida como 100 (100%) e a propriedade [**HorizontalScrollPercent**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iscrollprovider-get_horizontalscrollpercent) deve ser definida como **UIA \_ ScrollPatternNoScroll** (-1). Da mesma forma, se a propriedade [**VerticallyScrollable**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iscrollprovider-get_verticallyscrollable) for **false**, a propriedade [**VerticalViewSize**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iscrollprovider-get_verticalviewsize) deverá ser definida como 100 (100%) e a propriedade [**VerticalScrollPercent**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iscrollprovider-get_verticalscrollpercent) deve ser definida como **UIA \_ ScrollPatternNoScroll** (-1). Isso permite que um cliente de automação da interface do usuário da Microsoft use esses valores de propriedade dentro do método [**SetScrollPercent**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iscrollprovider-setscrollpercent) enquanto evita uma condição de corrida se uma direção na qual o cliente não está interessado em rolar é ativada.
+-   Se a propriedade [**IScrollProvider:: HorizontallyScrollable**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iscrollprovider-get_horizontallyscrollable) for **false**, a propriedade [**HorizontalViewSize**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iscrollprovider-get_horizontalviewsize) deverá ser definida como 100 (100%) e a propriedade [**HorizontalScrollPercent**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iscrollprovider-get_horizontalscrollpercent) deverá ser definida como **UIA \_ ScrollPatternNoScroll** (-1). Da mesma forma, se a propriedade [**VerticallyScrollable**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iscrollprovider-get_verticallyscrollable) for **false**, a propriedade [**VerticalViewSize**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iscrollprovider-get_verticalviewsize) deverá ser definida como 100 (100%) e a propriedade [**VerticalScrollPercent**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iscrollprovider-get_verticalscrollpercent) deverá ser definida como **UIA \_ ScrollPatternNoScroll** (-1). Isso permite que um cliente de automação da interface do usuário da Microsoft use esses valores de propriedade dentro do método [**SetScrollPercent**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iscrollprovider-setscrollpercent) enquanto evita uma condição de corrida se uma direção na qual o cliente não está interessado em rolar é ativada.
 -   A propriedade [**IScrollProvider:: HorizontalScrollPercent**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iscrollprovider-get_horizontalscrollpercent) é específica à localidade. Definir **HorizontalScrollPercent** como 100 deve definir o local de rolagem do controle para o equivalente de sua posição mais à direita para idiomas como o inglês que são lidos da esquerda para a direita. Como alternativa, para idiomas como árabe que são lidos da direita para a esquerda, definir **HorizontalScrollPercent** como 100 deve definir o local de rolagem para a posição mais à esquerda.
 
 ## <a name="required-members-for-iscrollprovider"></a>Membros necessários para **IScrollProvider**
@@ -61,12 +61,12 @@ As propriedades e os métodos a seguir são necessários para implementar a inte
 | [**VerticalViewSize**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iscrollprovider-get_verticalviewsize)               | Propriedade    | Nenhum  |
 | [**HorizontallyScrollable**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iscrollprovider-get_horizontallyscrollable)   | Propriedade    | Nenhum  |
 | [**VerticallyScrollable**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iscrollprovider-get_verticallyscrollable)       | Propriedade    | Nenhum  |
-| [**Rolagem**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iscrollprovider-scroll)                                   | Método      | Nenhum  |
+| [**Pergaminho**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iscrollprovider-scroll)                                   | Método      | Nenhum  |
 | [**SetScrollPercent**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iscrollprovider-setscrollpercent)               | Método      | Nenhum  |
 
 
 
- 
+ 
 
 Este padrão de controle não tem eventos associados.
 
@@ -83,9 +83,9 @@ Este padrão de controle não tem eventos associados.
 [Visão geral da árvore de automação de interface do usuário](uiauto-treeoverview.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

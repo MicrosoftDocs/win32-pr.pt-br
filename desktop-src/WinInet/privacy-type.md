@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 38583d5f0c5cee148353f98f5d2be2d4f1a50216
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: af6f29461f57a2209fde00b30bce7914c207958f27e28062e2c3bd3d94d442e1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103824809"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117743723"
 ---
 # <a name="privacy-type"></a>Tipo de privacidade
 
@@ -57,7 +57,7 @@ Refere-se às configurações de privacidade para cookies de terceiros.
 Os cookies são categorizados como primários e de terceiros. Um cookie primário é aquele originado do domínio do host. Se " https://www.blueyonderairlines.com " for encontrado na barra de endereços do Microsoft Internet Explorer, "www.blueyonderairlines.com" será o domínio do host. Ao visitar essa página, se um cookie for definido de um domínio diferente de "www.blueyonderairlines.com", como "www.fourthcoffee.com", esse cookie será considerado um cookie de terceiros.
 
 > [!Note]  
-> O WinINet não oferece suporte a implementações de servidor. Além disso, ele não deve ser usado de um serviço. Para implementações de servidor ou serviços, use [o Microsoft Windows http Services (WinHTTP)](/windows/desktop/WinHttp/winhttp-start-page).
+> O WinINet não oferece suporte a implementações de servidor. Além disso, ele não deve ser usado de um serviço. para implementações de servidor ou serviços, use [o Microsoft Windows HTTP services (WinHTTP)](/windows/desktop/WinHttp/winhttp-start-page).
 
  
 

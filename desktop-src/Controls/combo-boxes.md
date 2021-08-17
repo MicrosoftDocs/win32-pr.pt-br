@@ -1,17 +1,17 @@
 ---
-title: Caixa de combinação (controles do Windows)
+title: caixa de combinação (controles de Windows)
 description: Esta seção contém informações sobre os elementos de programação usados com caixas de combinação. Uma caixa de combinação é um tipo exclusivo de controle, definido pela classe COMBOBOX, que combina grande parte da funcionalidade de uma caixa de listagem e um controle de edição.
 ms.assetid: vs|controls|~\controls\comboboxes\comboboxes.htm
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cf5ab64b07539f19c640a41710eca93ab544fac6
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: 62c133237bd10f2412dcdfad6ea6ab2148e487e4b25f57b5559276de961dbcf9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "103917891"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117832207"
 ---
-# <a name="combo-box-windows-controls"></a>Caixa de combinação (controles do Windows)
+# <a name="combo-box-windows-controls"></a>caixa de combinação (controles de Windows)
 
 Esta seção contém informações sobre os elementos de programação usados com caixas de combinação. Uma *caixa de combinação* é um tipo exclusivo de controle, definido pela classe ComboBox, que combina grande parte da funcionalidade de uma caixa de listagem e um controle de edição.
 

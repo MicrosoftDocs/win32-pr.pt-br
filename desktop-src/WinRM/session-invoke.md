@@ -5,7 +5,7 @@ ms.assetid: c83d0631-2efb-47d9-abcf-ab0c8de06c36
 ms.tgt_platform: multiple
 keywords:
 - Gerenciamento Remoto do Windows do método Invoke
-- Método Invoke Gerenciamento Remoto do Windows, objeto Session
+- método Invoke Gerenciamento Remoto do Windows, objeto Session
 - Gerenciamento Remoto do Windows de objeto de sessão, método Invoke
 topic_type:
 - apiref
@@ -17,12 +17,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 117c688b616f377730524a09234b1dc38a4996c2
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ac2afa20390890c53a7362d776c1df7c84d0a638e7fcb10269c901d194a50dea
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103645080"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117743247"
 ---
 # <a name="sessioninvoke-method"></a>Método Session. Invoke
 
@@ -60,7 +60,7 @@ O identificador do recurso a ser recuperado.
 
 Esse parâmetro pode conter um dos seguintes:
 
--   URI com ou sem [*seletores*](windows-remote-management-glossary.md). No exemplo a seguir Visual Basic Scripting Edition (VBScript), a chave é especificada por `Win32_Service?Name=winmgmt` .
+-   URI com ou sem [*seletores*](windows-remote-management-glossary.md). no exemplo a seguir Visual Basic scripting Edition (VBScript), a chave é especificada por `Win32_Service?Name=winmgmt` .
 
     ```VB
     strResourceUri = "http://schemas.microsoft.com/wbem/wsman/1/" _ 
@@ -88,7 +88,7 @@ Reservado. Deve ser definido como 0.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 A representação XML da saída do método.
 
@@ -203,7 +203,7 @@ End Sub
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                 |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                           |
-| parâmetro<br/>                   | <dl> <dt>WSManDisp. h</dt> </dl>   |
+| Cabeçalho<br/>                   | <dl> <dt>WSManDisp. h</dt> </dl>   |
 | INSERI<br/>                      | <dl> <dt>WSManDisp. idl</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>WSManDisp. tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>WSMAuto.dll</dt> </dl>   |
@@ -214,7 +214,7 @@ End Sub
 
 <dl> <dt>
 
-[**Session**](session.md)
+[**Sessão**](session.md)
 </dt> </dl>
 
  

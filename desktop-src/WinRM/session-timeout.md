@@ -1,12 +1,12 @@
 ---
 title: Propriedade Session. Timeout (WSManDisp. h)
-description: Define e obtém a quantidade máxima de tempo, em milissegundos, que o aplicativo cliente aguarda Gerenciamento Remoto do Windows concluir suas operações.
+description: define e obtém a quantidade máxima de tempo, em milissegundos, que o aplicativo cliente aguarda Gerenciamento Remoto do Windows concluir suas operações.
 ms.assetid: ca35722a-1fd3-48bf-a11b-4624cb81aae3
 ms.tgt_platform: multiple
 keywords:
-- Gerenciamento Remoto do Windows da Propriedade Timeout
-- Propriedade Timeout Gerenciamento Remoto do Windows, objeto Session
-- Gerenciamento Remoto do Windows de objeto de sessão, Propriedade Timeout
+- Gerenciamento Remoto do Windows da propriedade Timeout
+- propriedade Timeout Gerenciamento Remoto do Windows, objeto Session
+- Gerenciamento Remoto do Windows de objeto de sessão, propriedade Timeout
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c6c28b5284d9061e1c80fb3c66193d394c347a18
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 4731e4f76ee890bc925a14b69c8ffb3d50e47406939b76183359021242a5fadc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104295920"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117743237"
 ---
 # <a name="sessiontimeout-property"></a>Propriedade Session. Timeout
 
-Define e obtém a quantidade máxima de tempo, em milissegundos, que o aplicativo cliente aguarda Gerenciamento Remoto do Windows concluir suas operações.
+define e obtém a quantidade máxima de tempo, em milissegundos, que o aplicativo cliente aguarda Gerenciamento Remoto do Windows concluir suas operações.
 
 Esta propriedade é de leitura/gravação.
 
@@ -107,7 +107,7 @@ End Sub
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                 |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                           |
-| parâmetro<br/>                   | <dl> <dt>WSManDisp. h</dt> </dl>   |
+| Cabeçalho<br/>                   | <dl> <dt>WSManDisp. h</dt> </dl>   |
 | INSERI<br/>                      | <dl> <dt>WSManDisp. idl</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>WSManDisp. tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>WSMAuto.dll</dt> </dl>   |
@@ -118,7 +118,7 @@ End Sub
 
 <dl> <dt>
 
-[**Session**](session.md)
+[**Sessão**](session.md)
 </dt> </dl>
 
  

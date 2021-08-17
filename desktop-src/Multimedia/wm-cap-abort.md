@@ -3,7 +3,7 @@ title: Mensagem de WM_CAP_ABORT (VFW. h)
 description: A \_ mensagem de anulação da Cap do WM \_ interrompe a operação de captura.
 ms.assetid: a0479d73-8422-4833-9e8a-c262ec386f58
 keywords:
-- Multimídia do Windows de mensagem WM_CAP_ABORT
+- mensagem de WM_CAP_ABORT Windows multimídia
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2843e3c4d59b62f2b58be20cef63ed0dc2e79d4b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 904edb47c371ee13ed3492fd9257e3933bf2f001010d7dd2b0177a7729500813
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104499356"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117800647"
 ---
 # <a name="wm_cap_abort-message"></a>\_Mensagem de anulação de Cap do WM \_
 

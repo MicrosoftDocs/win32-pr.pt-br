@@ -3,9 +3,9 @@ title: Propriedade mimeType IWMPMetadataPicture
 description: A propriedade mimeType Obtém o tipo MIME da imagem representada pelo atributo Metadata.
 ms.assetid: 3ddd7f20-a183-4b95-bdcf-5497349f6db6
 keywords:
-- Propriedade mimeType do Windows Media Player
-- Propriedade mimeType do Windows Media Player, interface IWMPMetadataPicture
-- Interface IWMPMetadataPicture Windows Media Player, Propriedade mimeType
+- Propriedade mimeType Windows Media Player
+- propriedade mimeType Windows Media Player, interface IWMPMetadataPicture
+- Windows Media Player de interface IWMPMetadataPicture, propriedade mimeType
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b79602e1cdf8d4cc2ceda6ca217b81a7f899c6cc
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e61f155394ecf91b73b0f6056f3c1aaed53b87f3202928e86d10db1298a430b9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105763237"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117745984"
 ---
 # <a name="iwmpmetadatapicturemimetype-property"></a>Propriedade IWMPMetadataPicture:: mimeType
 

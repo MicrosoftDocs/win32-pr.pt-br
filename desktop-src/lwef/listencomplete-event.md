@@ -4,16 +4,16 @@ description: Evento ListenComplete
 ms.assetid: 29e3f424-17b4-4287-b644-ed62b80e0035
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0dbfe0fac272b50af3f82efdc8a422bebddbf786
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: d25e9bfbf23c6a2911c718b576c99395ef06fd802853b39b699384a9ab92429b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104364358"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117883888"
 ---
 # <a name="listencomplete-event"></a>Evento ListenComplete
 
-\[O Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
+\[o Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
 
 <dl> <dt>
 

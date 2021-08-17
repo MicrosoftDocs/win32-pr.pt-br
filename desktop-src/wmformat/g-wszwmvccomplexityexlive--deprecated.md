@@ -1,9 +1,9 @@
 ---
 title: g_wszWMVCComplexityExLive
-description: Para obter a documentação atual sobre os codecs de mídia do Windows e os processadores de sinal digital, consulte codec de áudio e vídeo do Windows Media e APIs do DSP. | g_wszWMVCComplexityExLive
+description: Para ver a documentação atual sobre Windows de mídia e processadores de sinal digital, consulte Windows codec de áudio e vídeo de mídia e APIs DSP. | g_wszWMVCComplexityExLive
 ms.assetid: 12f4254c-5827-4b3c-9df9-ba3358da11ab
 keywords:
-- g_wszWMVCComplexityExLive o formato Windows Media
+- g_wszWMVCComplexityExLive formato de mídia do Windows
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2901e6a732bf92d12905ee08bda99d3abbb70e6e
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 4526bc8069d9d67908aa31006ca5cb8d36347879c2494d032fe56a5bf7d4cafb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105751964"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117847818"
 ---
 # <a name="g_wszwmvccomplexityexlive"></a>g \_ wszWMVCComplexityExLive
 
-Para obter a documentação atual sobre os codecs de mídia do Windows e os processadores de sinal digital, consulte [codec de áudio e vídeo do Windows Media e APIs do DSP.](/previous-versions//dd464626(v=vs.85))
+Para ver a documentação atual Windows codecs de mídia e processadores de sinal digital, consulte Windows codec de áudio e vídeo de mídia e [APIs DSP.](/previous-versions//dd464626(v=vs.85))
 
  
 

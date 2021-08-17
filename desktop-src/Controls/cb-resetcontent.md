@@ -3,7 +3,7 @@ title: Mensagem de CB_RESETCONTENT (WinUser. h)
 description: Remove todos os itens da caixa de listagem e edita o controle de uma caixa de combinação.
 ms.assetid: 55203c34-87ca-46e9-a914-a480d43ccadd
 keywords:
-- Controles de CB_RESETCONTENT de mensagens do Windows
+- controles de Windows de mensagem de CB_RESETCONTENT
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3567f31ef98fffe42e53c4811acc786d41ae9f78
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 4918437d7b0d347e071386486b31e5f4b9d948b4ff55b4c6eea6e3afe93fb1c4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103824404"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117832244"
 ---
 # <a name="cb_resetcontent-message"></a>\_Mensagem de RESETCONTENT CB
 
@@ -43,7 +43,7 @@ Não usado; deve ser zero.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Essa mensagem sempre retorna CB \_ OK.
 
@@ -57,9 +57,9 @@ Se você criar a caixa de combinação com um estilo desenhado pelo proprietári
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                                     |
-| parâmetro<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                                           |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                                     |
+| Cabeçalho<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
 
 
 

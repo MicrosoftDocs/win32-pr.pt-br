@@ -1,19 +1,19 @@
 ---
-description: O processamento de vídeo de DXVA encapsula as funções do hardware de gráficos que são dedicadas ao processamento de imagens de vídeo descompactadas. Os serviços de processamento de vídeo incluem desentrelaçamento e mixagem de vídeo.
+description: O processamento de vídeo DXVA encapsula as funções do hardware gráfico dedicado ao processamento de imagens de vídeo descompactados. Os serviços de processamento de vídeo incluem desintercalação e combinação de vídeo.
 ms.assetid: bd688f81-4b7c-4016-b0bd-e40782131f8e
-title: Processamento de vídeo de DXVA
+title: Processamento de vídeo DXVA
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bcf5058d93ddd7c506a501eb6ca07c4661755fc8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e38da7505e8ec877c332aaeb06f884c49a9ca590b239c603d4664bbf97131c50
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104501173"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117879629"
 ---
-# <a name="dxva-video-processing"></a>Processamento de vídeo de DXVA
+# <a name="dxva-video-processing"></a>Processamento de vídeo DXVA
 
-O processamento de vídeo de DXVA encapsula as funções do hardware de gráficos que são dedicadas ao processamento de imagens de vídeo descompactadas. Os serviços de processamento de vídeo incluem desentrelaçamento e mixagem de vídeo.
+O processamento de vídeo DXVA encapsula as funções do hardware gráfico dedicado ao processamento de imagens de vídeo descompactados. Os serviços de processamento de vídeo incluem desintercalação e combinação de vídeo.
 
 Este tópico contém as seguintes seções:
 
@@ -21,21 +21,21 @@ Este tópico contém as seguintes seções:
 -   [Criando um dispositivo de processamento de vídeo](#creating-a-video-processing-device)
     -   [Obter o ponteiro IDirectXVideoProcessorService](#get-the-idirectxvideoprocessorservice-pointer)
     -   [Enumerar os dispositivos de processamento de vídeo](#enumerate-the-video-processing-devices)
-    -   [Enumerar formatos de Render-Target](#enumerate-render-target-formats)
-    -   [Consultar os recursos do dispositivo](#query-the-device-capabilities)
+    -   [Enumerar Render-Target formatos](#enumerate-render-target-formats)
+    -   [Consultar as funcionalidades do dispositivo](#query-the-device-capabilities)
     -   [Criar o dispositivo](#create-the-device)
--   [Blit de processo de vídeo](#video-process-blit)
-    -   [Parâmetros de blit](#blit-parameters)
+-   [Processo de vídeo Blit](#video-process-blit)
+    -   [Parâmetros Blit](#blit-parameters)
     -   [Exemplos de entrada](#input-samples)
 -   [Composição de imagem](#image-composition)
-    -   [Exemplo 1: formato Letterbox](#example-1-letterboxing)
-    -   [Exemplo 2: alongar imagens de Subfluxo](#example-2-stretching-substream-images)
-    -   [Exemplo 3: alturas de fluxo incompatíveis](#example-3-mismatched-stream-heights)
-    -   [Exemplo 4: retângulo de destino menor que superfície de destino](#example-4-target-rectangle-smaller-than-destination-surface)
+    -   [Exemplo 1: Letterboxing](#example-1-letterboxing)
+    -   [Exemplo 2: Alongando imagens de substream](#example-2-stretching-substream-images)
+    -   [Exemplo 3: Alturas de fluxo incompatibilidades](#example-3-mismatched-stream-heights)
+    -   [Exemplo 4: retângulo de destino menor que a superfície de destino](#example-4-target-rectangle-smaller-than-destination-surface)
     -   [Exemplo 5: retângulos de origem](#example-5-source-rectangles)
-    -   [Exemplo 6: retângulos de destino com interseção](#example-6-intersecting-destination-rectangles)
-    -   [Exemplo 7: alongando e cortando vídeo](#example-7-stretching-and-cropping-video)
--   [Ordem de amostra de entrada](#input-sample-order)
+    -   [Exemplo 6: Intersecção de retângulos de destino](#example-6-intersecting-destination-rectangles)
+    -   [Exemplo 7: Vídeo de alongamento e corte](#example-7-stretching-and-cropping-video)
+-   [Pedido de exemplo de entrada](#input-sample-order)
     -   [Exemplo 1](#example-1-letterboxing)
     -   [Exemplo 2](#example-2-stretching-substream-images)
     -   [Exemplo 3](#example-3-mismatched-stream-heights)
@@ -44,45 +44,45 @@ Este tópico contém as seguintes seções:
 
 ## <a name="overview"></a>Visão geral
 
-O hardware de gráficos pode usar a GPU (unidade de processamento gráfico) para processar imagens de vídeo descompactadas. Um dispositivo de *processamento de vídeo* é um componente de software que encapsula essas funções. Os aplicativos podem usar um dispositivo de processamento de vídeo para executar funções como:
+O hardware gráfico pode usar a GPU (unidade de processamento gráfico) para processar imagens de vídeo descompactados. Um *dispositivo de processamento de* vídeo é um componente de software que encapsula essas funções. Os aplicativos podem usar um dispositivo de processamento de vídeo para executar funções como:
 
--   Desentrelaçamento e telecineon inverso
--   Misturando subfluxos de vídeo na imagem de vídeo principal
--   Ajuste de cores (Procamp) e filtragem de imagem
--   Dimensionamento de imagem
--   Conversão de espaço de cor
--   Mesclagem alfa
+-   Intercalação e teletrabaçamento inverso
+-   Misturando substreams de vídeo na imagem de vídeo principal
+-   Ajuste de cor (ProcAmp) e filtragem de imagem
+-   Colocação em escala da imagem
+-   Conversão de espaço em cores
+-   combinação alfa
 
-O diagrama a seguir mostra os estágios no pipeline de processamento de vídeo. O diagrama não deve mostrar uma implementação real. Por exemplo, o driver de gráficos pode combinar vários estágios em uma única operação. Todas essas operações podem ser executadas em uma única chamada para o dispositivo de processamento de vídeo. Alguns estágios mostrados aqui, como filtragem de ruído e de detalhes, podem não ser suportados pelo driver.
+O diagrama a seguir mostra os estágios no pipeline de processamento de vídeo. O diagrama não se pretende mostrar uma implementação real. Por exemplo, o driver de gráficos pode combinar vários estágios em uma única operação. Todas essas operações podem ser executadas em uma única chamada para o dispositivo de processamento de vídeo. Alguns estágios mostrados aqui, como filtragem de ruído e detalhes, podem não ser suportados pelo driver.
 
-![diagrama mostrando os estágios do processamento de vídeo DXVA.](images/8581554e-a1bc-4cab-9ae1-99a6537e2a84.gif)
+![diagrama mostrando os estágios do processamento de vídeo dxva.](images/8581554e-a1bc-4cab-9ae1-99a6537e2a84.gif)
 
-A entrada para o pipeline de processamento de vídeo sempre inclui um fluxo de vídeo *primário* , que contém os dados da imagem principal. O fluxo de vídeo primário determina a taxa de quadros para o vídeo de saída. Cada quadro do vídeo de saída é calculado em relação aos dados de entrada do fluxo de vídeo primário. Os pixels no fluxo primário são sempre opacos, sem dados alfa por pixel. O fluxo de vídeo primário pode ser progressivo ou entrelaçado.
+A entrada para o pipeline de processamento de vídeo sempre inclui um *fluxo de* vídeo primário, que contém os dados da imagem principal. O fluxo de vídeo primário determina a taxa de quadros para o vídeo de saída. Cada quadro do vídeo de saída é calculado em relação aos dados de entrada do fluxo de vídeo primário. Os pixels no fluxo primário são sempre opacos, sem dados alfa por pixel. O fluxo de vídeo primário pode ser progressivo ou entrelaçado.
 
-Opcionalmente, o pipeline de processamento de vídeo pode receber até 15 subfluxos de vídeo. Um subfluxo contém dados de imagem auxiliares, como legendas codificadas ou subfiguras de DVD. Essas imagens são exibidas sobre o fluxo de vídeo primário e, em geral, não devem ser mostradas por si mesmas. As imagens de substream podem conter dados alfa por pixel e são sempre quadros progressivos. O dispositivo de processamento de vídeo Alpha-combina as imagens de subfluxo com o quadro desentrelaçado atual do fluxo de vídeo primário.
+Opcionalmente, o pipeline de processamento de vídeo pode receber até 15 substreams de vídeo. Um substream contém dados de imagem auxiliares, como legendas fechadas ou subtípicos de DVD. Essas imagens são exibidas no fluxo de vídeo primário e geralmente não devem ser mostradas por si mesmas. As imagens de substream podem conter dados alfa por pixel e são sempre quadros progressivos. O dispositivo de processamento de vídeo combina as imagens de substream com o quadro desintercalado atual do fluxo de vídeo primário.
 
-No restante deste tópico, o termo *imagem* é usado para os dados de entrada para um dispositivo de processamento de vídeo. Uma imagem pode consistir em um quadro progressivo, um único campo ou dois campos intercalados. A saída é sempre um quadro desentrelaçado.
+No restante deste tópico, o termo *imagem* é usado para os dados de entrada para um dispositivo de processamento de vídeo. Uma imagem pode consistir em um quadro progressivo, um único campo ou dois campos intercalados. A saída é sempre um quadro desinteressado.
 
-Um driver de vídeo pode implementar mais de um dispositivo de processamento de vídeo, para fornecer diferentes conjuntos de recursos de processamento de vídeo. Os dispositivos são identificados por GUID. Os GUIDs a seguir são predefinidos:
+Um driver de vídeo pode implementar mais de um dispositivo de processamento de vídeo para fornecer diferentes conjuntos de recursos de processamento de vídeo. Os dispositivos são identificados pelo GUID. Os SEGUINTES GUIDs são predefinidos:
 
--   **DXVA2 \_ VideoProcBobDevice**. Este dispositivo executa Bob deentrelaçando.
--   **DXVA2 \_ VideoProcProgressiveDevice**. Este dispositivo será usado se o vídeo contiver apenas quadros progressivos, sem quadros entrelaçados. (Alguns conteúdos de vídeo contêm uma mistura de quadros progressivos e entrelaçados. O dispositivo progressivo não pode ser usado para esse tipo de conteúdo de vídeo "misto", pois uma etapa de desentrelaçamento é necessária para os quadros entrelaçados.)
+-   **DXVA2 \_ VideoProcBobDevice.** Esse dispositivo executa a desintercalação de bob.
+-   **DXVA2 \_ VideoProcProgressiveDevice**. Esse dispositivo será usado se o vídeo contiver apenas quadros progressivos, sem quadros entrelaçados. (Algum conteúdo de vídeo contém uma combinação de quadros progressivos e entrelaçados. O dispositivo progressivo não pode ser usado para esse tipo de conteúdo de vídeo "misto", porque uma etapa de desintercalação é necessária para os quadros entrelaçados.)
 
-Cada driver de gráficos que dá suporte ao processamento de vídeo de DXVA deve implementar pelo menos esses dois dispositivos. O driver de gráficos também pode fornecer outros dispositivos, que são identificados por GUIDs específicos de driver. Por exemplo, um driver pode implementar um algoritmo de desentrelaçamento proprietário que produz uma saída de qualidade melhor do que Bob desentrelaçar. Alguns algoritmos de desentrelaçamento podem exigir imagens de referência diretas ou regressivas do fluxo principal. Nesse caso, o chamador deve fornecer essas imagens para o driver na sequência correta, conforme descrito posteriormente nesta seção.
+Cada driver gráfico que dá suporte ao processamento de vídeo DXVA deve implementar pelo menos esses dois dispositivos. O driver gráfico também pode fornecer outros dispositivos, que são identificados por GUIDs específicos do driver. Por exemplo, um driver pode implementar um algoritmo de desintercalação proprietário que produz uma saída de melhor qualidade do que a desintercalação de Bob. Alguns algoritmos de desintercalação podem exigir imagens de referência para frente ou para trás do fluxo primário. Nesse caso, o chamador deve fornecer essas imagens ao driver na sequência correta, conforme descrito posteriormente nesta seção.
 
-Também é fornecido um dispositivo de software de referência. O dispositivo de software é otimizado para qualidade em vez de velocidade e pode não ser adequado para processamento de vídeo em tempo real. O dispositivo de software de referência usa o valor de GUID DXVA2 \_ VideoProcSoftwareDevice.
+Um dispositivo de software de referência também é fornecido. O dispositivo de software é otimizado para qualidade em vez de velocidade e pode não ser adequado para processamento de vídeo em tempo real. O dispositivo de software de referência usa o valor GUID DXVA2 \_ VideoProcSoftwareDevice.
 
 ## <a name="creating-a-video-processing-device"></a>Criando um dispositivo de processamento de vídeo
 
-Antes de usar o processamento de vídeo de DXVA, o aplicativo deve criar um dispositivo de processamento de vídeo. Aqui está uma breve descrição das etapas, que são explicadas com mais detalhes no restante desta seção:
+Antes de usar o processamento de vídeo DXVA, o aplicativo deve criar um dispositivo de processamento de vídeo. Aqui está um breve contorno das etapas, que são explicadas em mais detalhes no restante desta seção:
 
-1.  Obtenha um ponteiro para a interface [**IDirectXVideoProcessorService**](/windows/desktop/api/dxva2api/nn-dxva2api-idirectxvideoprocessorservice) .
-2.  Crie uma descrição do formato de vídeo para o fluxo de vídeo primário. Use esta descrição para obter uma lista dos dispositivos de processamento de vídeo que dão suporte ao formato de vídeo. Os dispositivos são identificados por GUID.
-3.  Para um dispositivo específico, obtenha uma lista de formatos de destino de renderização com suporte no dispositivo. Os formatos são retornados como uma lista de valores de **D3DFORMAT** . Se você planeja misturar subfluxos, obtenha também uma lista dos formatos de subfluxo com suporte.
+1.  Obter um ponteiro para a interface [**IDirectXVideoProcessorService.**](/windows/desktop/api/dxva2api/nn-dxva2api-idirectxvideoprocessorservice)
+2.  Crie uma descrição do formato de vídeo para o fluxo de vídeo primário. Use essa descrição para obter uma lista dos dispositivos de processamento de vídeo que são compatíveis com o formato de vídeo. Os dispositivos são identificados pelo GUID.
+3.  Para um dispositivo específico, obter uma lista de formatos de destino de renderização com suporte pelo dispositivo. Os formatos são retornados como uma lista de **valores D3DFORMAT.** Se você planeja misturar substreams, também obter uma lista dos formatos de substream com suporte.
 4.  Consulte os recursos de cada dispositivo.
 5.  Crie o dispositivo de processamento de vídeo.
 
-Às vezes, você pode omitir algumas dessas etapas. Por exemplo, em vez de obter a lista de formatos de destino de renderização, você poderia simplesmente tentar criar o dispositivo de processamento de vídeo com seu formato preferido e ver se ele foi bem sucedido. Um formato comum, como D3DFMT \_ X8R8G8B8, provavelmente será bem sucedido.
+Às vezes, você pode omitir algumas dessas etapas. Por exemplo, em vez de obter a lista de formatos de destino de renderização, você pode simplesmente tentar criar o dispositivo de processamento de vídeo com seu formato preferido e ver se ele é bem-sucedido. Um formato comum, como D3DFMT \_ X8R8G8B8, provavelmente terá êxito.
 
 O restante desta seção descreve essas etapas em detalhes.
 
@@ -91,9 +91,9 @@ O restante desta seção descreve essas etapas em detalhes.
 A interface [**IDirectXVideoProcessorService**](/windows/desktop/api/dxva2api/nn-dxva2api-idirectxvideoprocessorservice) é obtida do dispositivo Direct3D. Há duas maneiras de obter um ponteiro para essa interface:
 
 -   De um dispositivo Direct3D.
--   Do [Direct3D gerenciador de dispositivos](direct3d-device-manager.md).
+-   Do [direct3D Gerenciador de Dispositivos](direct3d-device-manager.md).
 
-Se você tiver um ponteiro para um dispositivo Direct3D, poderá obter um ponteiro [**IDirectXVideoProcessorService**](/windows/desktop/api/dxva2api/nn-dxva2api-idirectxvideoprocessorservice) chamando a função [**DXVA2CreateVideoService**](/windows/desktop/api/dxva2api/nf-dxva2api-dxva2createvideoservice) . Passe um ponteiro para a interface **IDirect3DDevice9** do dispositivo e especifique IDirectXVideoProcessorService de **IID \_** para o parâmetro *riid* , conforme mostrado no código a seguir:
+Se você tiver um ponteiro para um dispositivo Direct3D, poderá obter um ponteiro [**IDirectXVideoProcessorService**](/windows/desktop/api/dxva2api/nn-dxva2api-idirectxvideoprocessorservice) chamando a [**função DXVA2CreateVideoService.**](/windows/desktop/api/dxva2api/nf-dxva2api-dxva2createvideoservice) Passe um ponteiro para a interface **IDirect3DDevice9** do dispositivo e especifique **IID \_ IDirectXVideoProcessorService** para o parâmetro *riid,* conforme mostrado no código a seguir:
 
 
 ```C++
@@ -103,7 +103,7 @@ Se você tiver um ponteiro para um dispositivo Direct3D, poderá obter um pontei
 
 
 
-n alguns casos, um objeto cria o dispositivo Direct3D e, em seguida, compartilha-o com outros objetos por meio do [Direct3D gerenciador de dispositivos](direct3d-device-manager.md). Nessa situação, você pode chamar [**IDirect3DDeviceManager9:: GetVideoService**](/windows/desktop/api/dxva2api/nf-dxva2api-idirect3ddevicemanager9-getvideoservice) no Gerenciador de dispositivos para obter o ponteiro [**IDirectXVideoProcessorService**](/windows/desktop/api/dxva2api/nn-dxva2api-idirectxvideoprocessorservice) , conforme mostrado no código a seguir:
+em alguns casos, um objeto cria o dispositivo Direct3D e, em seguida, compartilha-o com outros objetos por meio do [direct3D Gerenciador de Dispositivos](direct3d-device-manager.md). Nessa situação, você pode chamar [**IDirect3DDeviceManager9::GetVideoService**](/windows/desktop/api/dxva2api/nf-dxva2api-idirect3ddevicemanager9-getvideoservice) no gerenciador de dispositivos para obter o ponteiro [**IDirectXVideoProcessorService,**](/windows/desktop/api/dxva2api/nn-dxva2api-idirectxvideoprocessorservice) conforme mostrado no código a seguir:
 
 
 ```C++
@@ -147,9 +147,9 @@ HRESULT GetVideoProcessorService(
 
 ### <a name="enumerate-the-video-processing-devices"></a>Enumerar os dispositivos de processamento de vídeo
 
-Para obter uma lista de dispositivos de processamento de vídeo, preencha uma estrutura [**DXVA2 \_ VideoDesc**](/windows/desktop/api/dxva2api/ns-dxva2api-dxva2_videodesc) com o formato do fluxo de vídeo primário e passe essa estrutura para o método [**IDirectXVideoProcessorService:: GetVideoProcessorDeviceGuids**](/windows/desktop/api/dxva2api/nf-dxva2api-idirectxvideoprocessorservice-getvideoprocessordeviceguids) . O método retorna uma matriz de GUIDs, uma para cada dispositivo de processamento de vídeo que pode ser usado com este formato de vídeo.
+Para obter uma lista de dispositivos de processamento de vídeo, preencha uma estrutura [**DXVA2 \_ VideoDesc**](/windows/desktop/api/dxva2api/ns-dxva2api-dxva2_videodesc) com o formato do fluxo de vídeo primário e passe essa estrutura para o método [**IDirectXVideoProcessorService::GetVideoProcessorDeviceGuids.**](/windows/desktop/api/dxva2api/nf-dxva2api-idirectxvideoprocessorservice-getvideoprocessordeviceguids) O método retorna uma matriz de GUIDs, uma para cada dispositivo de processamento de vídeo que pode ser usado com esse formato de vídeo.
 
-Considere um aplicativo que renderiza um fluxo de vídeo no formato YUY2, usando a definição BT. 709 da cor YUV, com uma taxa de quadros de 29,97 quadros por segundo. Suponha que o conteúdo do vídeo consiste inteiramente em quadros progressivos. O fragmento de código a seguir mostra como preencher a descrição do formato e obter os GUIDs do dispositivo:
+Considere um aplicativo que renderiza um fluxo de vídeo no formato YUY2, usando a definição BT.709 de cor YUV, com uma taxa de quadros de 29,97 quadros por segundo. Suponha que o conteúdo do vídeo consiste inteiramente em quadros progressivos. O fragmento de código a seguir mostra como preencher a descrição do formato e obter os GUIDs do dispositivo:
 
 
 ```C++
@@ -180,13 +180,13 @@ Considere um aplicativo que renderiza um fluxo de vídeo no formato YUY2, usando
 
 
 
-O código para este exemplo é obtido do exemplo de SDK do [DXVA2 \_ VideoProc](dxva2-videoproc-sample.md) .
+O código para este exemplo é retirado do exemplo de SDK do [ \_ VideoProc DXVA2.](dxva2-videoproc-sample.md)
 
-A matriz *pGuids* neste exemplo é alocada pelo método [**GetVideoProcessorDeviceGuids**](/windows/desktop/api/dxva2api/nf-dxva2api-idirectxvideoprocessorservice-getvideoprocessordeviceguids) , de modo que o aplicativo deve liberar a matriz chamando [**CoTaskMemFree**](/windows/win32/api/combaseapi/nf-combaseapi-cotaskmemfree). As etapas restantes podem ser executadas usando qualquer um dos GUIDs de dispositivo retornados por esse método.
+A *matriz pGuids* neste exemplo é alocada pelo método [**GetVideoProcessorDeviceGuids,**](/windows/desktop/api/dxva2api/nf-dxva2api-idirectxvideoprocessorservice-getvideoprocessordeviceguids) portanto, o aplicativo deve liberar a matriz chamando [**CoTaskMemFree**](/windows/win32/api/combaseapi/nf-combaseapi-cotaskmemfree). As etapas restantes podem ser executadas usando qualquer um dos GUIDs de dispositivo retornados por esse método.
 
-### <a name="enumerate-render-target-formats"></a>Enumerar formatos de Render-Target
+### <a name="enumerate-render-target-formats"></a>Enumerar Render-Target formatos
 
-Para obter a lista de formatos de destino de renderização com suporte pelo dispositivo, passe o GUID do dispositivo e a estrutura [**DXVA2 \_ VideoDesc**](/windows/desktop/api/dxva2api/ns-dxva2api-dxva2_videodesc) para o método [**IDirectXVideoProcessorService:: GetVideoProcessorRenderTargets**](/windows/desktop/api/dxva2api/nf-dxva2api-idirectxvideoprocessorservice-getvideoprocessorrendertargets) , conforme mostrado no código a seguir:
+Para obter a lista de formatos de destino de renderização com suporte pelo dispositivo, passe o GUID do dispositivo e a estrutura [**DXVA2 \_ VideoDesc**](/windows/desktop/api/dxva2api/ns-dxva2api-dxva2_videodesc) para o método [**IDirectXVideoProcessorService::GetVideoProcessorRenderTargets,**](/windows/desktop/api/dxva2api/nf-dxva2api-idirectxvideoprocessorservice-getvideoprocessorrendertargets) conforme mostrado no código a seguir:
 
 
 ```C++
@@ -223,9 +223,9 @@ Para obter a lista de formatos de destino de renderização com suporte pelo dis
 
 
 
-O método retorna uma matriz de valores **D3DFORMAT** . Neste exemplo, onde o tipo de entrada é YUY2, uma lista típica de formatos pode ser D3DFMT \_ X8R8G8B8 (32-bit RGB) e D3DMFT \_ YUY2 (o formato de entrada). No entanto, a lista exata dependerá do driver.
+O método retorna uma matriz de **valores D3DFORMAT.** Neste exemplo, em que o tipo de entrada é YUY2, uma lista típica de formatos pode ser D3DFMT \_ X8R8G8B8 (RGB de 32 bits) e D3DMFT YUY2 (o formato de \_ entrada). No entanto, a lista exata dependerá do driver.
 
-A lista de formatos disponíveis para os subfluxos pode variar dependendo do formato de destino de renderização e do formato de entrada. Para obter a lista de formatos de Subfluxo, passe o GUID do dispositivo, a estrutura de formato e o formato de destino de renderização para o método [**IDirectXVideoProcessorService:: GetVideoProcessorSubStreamFormats**](/windows/desktop/api/dxva2api/nf-dxva2api-idirectxvideoprocessorservice-getvideoprocessorsubstreamformats) , conforme mostrado no código a seguir:
+A lista de formatos disponíveis para os substreams pode variar dependendo do formato de destino de renderização e do formato de entrada. Para obter a lista de formatos de substream, passe o GUID do dispositivo, a estrutura de formato e o formato de destino de renderização para o método [**IDirectXVideoProcessorService::GetVideoProcessorSubStreamFormats,**](/windows/desktop/api/dxva2api/nf-dxva2api-idirectxvideoprocessorservice-getvideoprocessorsubstreamformats) conforme mostrado no código a seguir:
 
 
 ```C++
@@ -261,11 +261,11 @@ A lista de formatos disponíveis para os subfluxos pode variar dependendo do for
 
 
 
-Esse método retorna outra matriz de valores **D3DFORMAT** . Os formatos de Subfluxo típicos são AYUV e AI44.
+Esse método retorna outra matriz de **valores D3DFORMAT.** Formatos de substream típicos são AYUV e AI44.
 
-### <a name="query-the-device-capabilities"></a>Consultar os recursos do dispositivo
+### <a name="query-the-device-capabilities"></a>Consultar as funcionalidades do dispositivo
 
-Para obter os recursos de um dispositivo específico, passe o GUID do dispositivo, a estrutura de formato e um formato de destino de renderização para o método [**IDirectXVideoProcessorService:: GetVideoProcessorCaps**](/windows/desktop/api/dxva2api/nf-dxva2api-idirectxvideoprocessorservice-getvideoprocessorcaps) . O método preenche uma estrutura de estrutura [**DXVA2 \_ VideoProcessorCaps**](/windows/desktop/api/dxva2api/ns-dxva2api-dxva2_videoprocessorcaps) com os recursos do dispositivo.
+Para obter os recursos de um dispositivo específico, passe o GUID do dispositivo, a estrutura de formato e um formato de destino de renderização para o método [**IDirectXVideoProcessorService::GetVideoProcessorCaps.**](/windows/desktop/api/dxva2api/nf-dxva2api-idirectxvideoprocessorservice-getvideoprocessorcaps) O método preenche uma estrutura [**DXVA2 \_ VideoProcessorCaps**](/windows/desktop/api/dxva2api/ns-dxva2api-dxva2_videoprocessorcaps) com as funcionalidades do dispositivo.
 
 
 ```C++
@@ -285,7 +285,7 @@ Para obter os recursos de um dispositivo específico, passe o GUID do dispositiv
 
 ### <a name="create-the-device"></a>Criar o dispositivo
 
-Para criar o dispositivo de processamento de vídeo, chame [**IDirectXVideoProcessorService:: CreateVideoProcessor**](/windows/desktop/api/dxva2api/nf-dxva2api-idirectxvideoprocessorservice-createvideoprocessor). A entrada para esse método é o GUID do dispositivo, a descrição do formato, o formato de destino de renderização e o número máximo de subfluxos que você planeja misturar. O método retorna um ponteiro para a interface [**IDirectXVideoProcessor**](/windows/desktop/api/dxva2api/nn-dxva2api-idirectxvideoprocessor) , que representa o dispositivo de processamento de vídeo.
+Para criar o dispositivo de processamento de vídeo, chame [**IDirectXVideoProcessorService::CreateVideoProcessor**](/windows/desktop/api/dxva2api/nf-dxva2api-idirectxvideoprocessorservice-createvideoprocessor). A entrada para esse método é o GUID do dispositivo, a descrição do formato, o formato de destino de renderização e o número máximo de substreams que você planeja misturar. O método retorna um ponteiro para a interface [**IDirectXVideoProcessor,**](/windows/desktop/api/dxva2api/nn-dxva2api-idirectxvideoprocessor) que representa o dispositivo de processamento de vídeo.
 
 
 ```C++
@@ -302,33 +302,33 @@ Para criar o dispositivo de processamento de vídeo, chame [**IDirectXVideoProce
 
 
 
-## <a name="video-process-blit"></a>Blit de processo de vídeo
+## <a name="video-process-blit"></a>Processo de vídeo Blit
 
-A principal operação de processamento de vídeo é o *blit de processamento de vídeo*. (Um *blit* é qualquer operação que combina dois ou mais bitmaps em um único bitmap. Um blit de processamento de vídeo combina imagens de entrada para criar um quadro de saída.) Para executar um blit de processamento de vídeo, chame [**IDirectXVideoProcessor:: VideoProcessBlt**](/windows/desktop/api/dxva2api/nf-dxva2api-idirectxvideoprocessor-videoprocessblt). Esse método passa um conjunto de amostras de vídeo para o dispositivo de processamento de vídeo. Em resposta, o dispositivo de processamento de vídeo processa as imagens de entrada e gera um quadro de saída. O processamento pode incluir desentrelaçamento, conversão de espaço em cores e mistura de Subfluxo. A saída é gravada em uma superfície de destino fornecida pelo chamador.
+A principal operação de processamento de vídeo é o *blit de processamento de vídeo.* (Um *blit* é qualquer operação que combina dois ou mais bitmaps em um único bitmap. Um blit de processamento de vídeo combina imagens de entrada para criar um quadro de saída.) Para executar um blit de processamento de vídeo, chame [**IDirectXVideoProcessor::VideoProcessBlt**](/windows/desktop/api/dxva2api/nf-dxva2api-idirectxvideoprocessor-videoprocessblt). Esse método passa um conjunto de exemplos de vídeo para o dispositivo de processamento de vídeo. Em resposta, o dispositivo de processamento de vídeo processa as imagens de entrada e gera um quadro de saída. O processamento pode incluir desintercalação, conversão de espaço em cores e combinação de substream. A saída é escrita em uma superfície de destino fornecida pelo chamador.
 
-O método [**VideoProcessBlt**](/windows/desktop/api/dxva2api/nf-dxva2api-idirectxvideoprocessor-videoprocessblt) usa os seguintes parâmetros:
+O [**método VideoProcessBlt**](/windows/desktop/api/dxva2api/nf-dxva2api-idirectxvideoprocessor-videoprocessblt) assume os seguintes parâmetros:
 
--   o *pRT* aponta para uma superfície de destino de renderização **IDirect3DSurface9** que receberá o quadro de vídeo processado.
--   *pBltParams* aponta para uma [**estrutura \_ VideoProcessBltParams DXVA2**](/windows/desktop/api/dxva2api/ns-dxva2api-dxva2_videoprocessbltparams) que especifica os parâmetros para o blit.
--   *pSamples* é o endereço de uma matriz de [**estruturas \_ VideoSample DXVA2**](/windows/desktop/api/dxva2api/ns-dxva2api-dxva2_videosample) . Essas estruturas contêm os exemplos de entrada para o blit.
--   *NumSamples* fornece o tamanho da matriz *pSamples* .
--   O parâmetro *reservado* é reservado e deve ser definido como **nulo**.
+-   *pRT* aponta para uma superfície de destino de renderização **IDirect3DSurface9** que receberá o quadro de vídeo processado.
+-   *pBltParams* aponta para uma estrutura [**DXVA2 \_ VideoProcessBltParams**](/windows/desktop/api/dxva2api/ns-dxva2api-dxva2_videoprocessbltparams) que especifica os parâmetros para o blit.
+-   *pSamples é* o endereço de uma matriz de estruturas [**DXVA2 \_ VideoSample.**](/windows/desktop/api/dxva2api/ns-dxva2api-dxva2_videosample) Essas estruturas contêm os exemplos de entrada para o blit.
+-   *NumSamples* fornece o tamanho da *matriz pSamples.*
+-   O *parâmetro Reservado* é reservado e deve ser definido como **NULL.**
 
-Na matriz *pSamples* , o chamador deve fornecer os seguintes exemplos de entrada:
+Na matriz *pSamples,* o chamador deve fornecer os seguintes exemplos de entrada:
 
 -   A imagem atual do fluxo de vídeo primário.
--   Imagens de referência para frente e para trás, se exigido pelo algoritmo de desentrelaçamento.
--   Zero ou mais imagens de Subfluxo, até um máximo de 15 subfluxos.
+-   Imagens de referência para frente e para trás, se necessário, pelo algoritmo de desintercalação.
+-   Zero ou mais imagens de substream, até um máximo de 15 substreams.
 
-O driver espera que essa matriz esteja em uma ordem específica, conforme descrito em [ordem de amostra de entrada](#input-sample-order).
+O driver espera que essa matriz seja em uma ordem específica, conforme descrito em [Ordem de Exemplo de Entrada](#input-sample-order).
 
-### <a name="blit-parameters"></a>Parâmetros de blit
+### <a name="blit-parameters"></a>Parâmetros Blit
 
-A estrutura [**DXVA2 \_ VideoProcessBltParams**](/windows/desktop/api/dxva2api/ns-dxva2api-dxva2_videoprocessbltparams) contém parâmetros gerais para o blit. Os parâmetros mais importantes são armazenados nos seguintes membros da estrutura:
+A [**estrutura DXVA2 \_ VideoProcessBltParams**](/windows/desktop/api/dxva2api/ns-dxva2api-dxva2_videoprocessbltparams) contém parâmetros gerais para o blit. Os parâmetros mais importantes são armazenados nos seguintes membros da estrutura:
 
--   **TargetFrame** é a hora da apresentação do quadro de saída. Para conteúdo progressivo, essa hora deve ser igual à hora de início do quadro atual do fluxo de vídeo primário. Esse tempo é especificado no membro **inicial** da estrutura [**DXVA2 \_ VideoSample**](/windows/desktop/api/dxva2api/ns-dxva2api-dxva2_videosample) para esse exemplo de entrada.
+-   **TargetFrame** é a hora de apresentação do quadro de saída. Para conteúdo progressivo, esse tempo deve ser igual à hora de início do quadro atual do fluxo de vídeo primário. Esse tempo é especificado no membro **Start** da estrutura [**DXVA2 \_ VideoSample**](/windows/desktop/api/dxva2api/ns-dxva2api-dxva2_videosample) para esse exemplo de entrada.
 
-    Para conteúdo entrelaçado, um quadro com dois campos intercalados produz dois quadros de saída desentrelaçados. No primeiro quadro de saída, a hora da apresentação deve ser igual à hora de início da imagem atual no fluxo de vídeo primário, assim como o conteúdo progressivo. No segundo quadro de saída, a hora de início deve ser igual ao ponto médio entre a hora de início da imagem atual no fluxo de vídeo primário e a hora de início da próxima imagem no fluxo. Por exemplo, se o vídeo de entrada for de 25 quadros por segundo (50 campos por segundo), os quadros de saída terão os carimbos de data/hora mostrados na tabela a seguir. Os carimbos de data/hora são mostrados em unidades de 100 nanossegundos.
+    Para conteúdo entrelaçado, um quadro com dois campos intercalados produz dois quadros de saída desintercalados. No primeiro quadro de saída, a hora da apresentação deve ser igual à hora de início da imagem atual no fluxo de vídeo primário, assim como o conteúdo progressivo. No segundo quadro de saída, a hora de início deve ser igual ao ponto médio entre a hora de início da imagem atual no fluxo de vídeo primário e a hora de início da próxima imagem no fluxo. Por exemplo, se o vídeo de entrada for de 25 quadros por segundo (50 campos por segundo), os quadros de saída terão os carimbos de data/hora mostrados na tabela a seguir. Os carimbos de data/hora são mostrados em unidades de 100 nanossegundos.
 
     
 
@@ -337,31 +337,31 @@ A estrutura [**DXVA2 \_ VideoProcessBltParams**](/windows/desktop/api/dxva2api/n
     | 0             | 0                   | 200000              |
     | 400000        | 0                   | 600000              |
     | 800000        | 800000              | 1.000.000             |
-    | 1,2 milhões       | 1,2 milhões             | 1,4 milhões             |
+    | 1200000       | 1200000             | 1400000             |
 
     
 
      
 
-    Se o conteúdo entrelaçado consistir em campos únicos em vez de campos intercalados, os tempos de saída sempre corresponderão aos tempos de entrada, como com conteúdo progressivo.
+    Se o conteúdo entrelaçado consistir em campos individuais em vez de campos intercalados, os tempos de saída sempre corresponderão aos tempos de entrada, como no conteúdo progressivo.
 
--   **TargetRect** define uma região retangular dentro da superfície de destino. O blit gravará a saída nessa região. Especificamente, todos os pixels dentro de **TargetRect** serão modificados e nenhum pixel fora do **TargetRect** será modificado. O retângulo de destino define o retângulo delimitador para todos os fluxos de vídeo de entrada. O posicionamento de fluxos individuais dentro desse retângulo é controlado por meio do parâmetro *pSamples* de [**IDirectXVideoProcessor:: VideoProcessBlt**](/windows/desktop/api/dxva2api/nf-dxva2api-idirectxvideoprocessor-videoprocessblt).
--   **BackgroundColor** fornece a cor do plano de fundo sempre que nenhuma imagem de vídeo é exibida. Por exemplo, quando uma imagem de vídeo de 16 x 9 é exibida dentro de uma área 4 x 3 (formato Letterbox), as regiões letterboxed são exibidas com a cor do plano de fundo. A cor do plano de fundo só se aplica dentro do retângulo de destino (**TargetRect**). Quaisquer pixels fora de **TargetRect** não são modificados.
--   **DestFormat** descreve o espaço de cores para o vídeo de saída — por exemplo, se a cor ITU-R BT. 709 ou BT. 601 é usada. Essas informações podem afetar a forma como a imagem é exibida. Para obter mais informações, consulte [informações de cores estendidas](extended-color-information.md).
+-   **TargetRect** define uma região retangular dentro da superfície de destino. O blit gravará a saída nessa região. Especificamente, cada pixel dentro **de TargetRect** será modificado e nenhum pixel fora de **TargetRect** será modificado. O retângulo de destino define o retângulo delimitado para todos os fluxos de vídeo de entrada. O posicionamento de fluxos individuais dentro desse retângulo é controlado por meio do parâmetro *pSamples* [**de IDirectXVideoProcessor::VideoProcessBlt**](/windows/desktop/api/dxva2api/nf-dxva2api-idirectxvideoprocessor-videoprocessblt).
+-   **BackgroundColor** fornece a cor da tela de fundo sempre que nenhuma imagem de vídeo é exibida. Por exemplo, quando uma imagem de vídeo 16 x 9 é exibida em uma área 4 x 3 (letterboxing), as regiões com caixa de texto são exibidas com a cor da tela de fundo. A cor da tela de fundo se aplica somente dentro do retângulo de destino (**TargetRect**). Os pixels fora de **TargetRect** não são modificados.
+-   **DestFormat descreve** o espaço de cores para o vídeo de saída— por exemplo, se a cor BT.709 ou BT.601 de ITU-R é usada. Essas informações podem afetar como a imagem é exibida. Para obter mais informações, consulte [Informações de cores estendidas.](extended-color-information.md)
 
-Outros parâmetros são descritos na página de referência da estrutura [**DXVA2 \_ VideoProcessBltParams**](/windows/desktop/api/dxva2api/ns-dxva2api-dxva2_videoprocessbltparams) .
+Outros parâmetros são descritos na página de referência da estrutura [**DXVA2 \_ VideoProcessBltParams.**](/windows/desktop/api/dxva2api/ns-dxva2api-dxva2_videoprocessbltparams)
 
 ### <a name="input-samples"></a>Exemplos de entrada
 
-O parâmetro *pSamples* de [**IDirectXVideoProcessor:: VideoProcessBlt**](/windows/desktop/api/dxva2api/nf-dxva2api-idirectxvideoprocessor-videoprocessblt) aponta para uma matriz de [**estruturas \_ VideoSample DXVA2**](/windows/desktop/api/dxva2api/ns-dxva2api-dxva2_videosample) . Cada uma dessas estruturas contém informações sobre um exemplo de entrada e um ponteiro para a superfície do Direct3D que contém o exemplo. Cada exemplo é um dos seguintes:
+O *parâmetro pSamples* [**de IDirectXVideoProcessor::VideoProcessBlt**](/windows/desktop/api/dxva2api/nf-dxva2api-idirectxvideoprocessor-videoprocessblt) aponta para uma matriz de estruturas [**DXVA2 \_ VideoSample.**](/windows/desktop/api/dxva2api/ns-dxva2api-dxva2_videosample) Cada uma dessas estruturas contém informações sobre um exemplo de entrada e um ponteiro para a superfície direct3D que contém o exemplo. Cada exemplo é um dos seguintes:
 
 -   A imagem atual do fluxo primário.
--   Uma imagem de referência para frente ou para trás do fluxo principal, usada para desentrelaçar.
--   Uma imagem de Subfluxo.
+-   Uma imagem de referência para frente ou para trás do fluxo primário, usada para desintercalar.
+-   Uma imagem de substream.
 
-A ordem exata na qual os exemplos devem aparecer na matriz é descrita posteriormente, na seção ordem de [exemplo de entrada](#input-sample-order).
+A ordem exata na qual os exemplos devem aparecer na matriz é descrita posteriormente, na seção [Pedido de Exemplo de Entrada](#input-sample-order).
 
-Até 15 imagens de Subfluxo podem ser fornecidas, embora a maioria dos aplicativos de vídeo precise apenas de um subfluxo, no máximo. O número de subfluxos pode ser alterado com cada chamada para [**VideoProcessBlt**](/windows/desktop/api/dxva2api/nf-dxva2api-idirectxvideoprocessor-videoprocessblt). As imagens de substream são indicadas pela configuração do membro **SampleFormat. SampleFormat** da estrutura [**DXVA2 \_ VideoSample**](/windows/desktop/api/dxva2api/ns-dxva2api-dxva2_videosample) igual a DXVA2 \_ SampleSubStream. Para o fluxo de vídeo primário, esse membro descreve o entrelaçamento do vídeo de entrada. Para obter mais informações, consulte Enumeração do [**DXVA2 \_ SampleFormat**](/windows/desktop/api/dxva2api/ne-dxva2api-dxva2_sampleformat) .
+Até 15 imagens de substream podem ser fornecidas, embora a maioria dos aplicativos de vídeo precise de apenas um substream, no máximo. O número de substreams pode mudar com cada chamada para [**VideoProcessBlt**](/windows/desktop/api/dxva2api/nf-dxva2api-idirectxvideoprocessor-videoprocessblt). As imagens de substream são indicadas definindo o membro **SampleFormat.SampleFormat** da estrutura [**DXVA2 \_ VideoSample**](/windows/desktop/api/dxva2api/ns-dxva2api-dxva2_videosample) igual a DXVA2 \_ SampleSubStream. Para o fluxo de vídeo primário, esse membro descreve o entrelaçamento do vídeo de entrada. Para obter mais informações, consulte [**Enumeração DXVA2 \_ SampleFormat.**](/windows/desktop/api/dxva2api/ne-dxva2api-dxva2_sampleformat)
 
 Para o fluxo de vídeo primário, os membros de **início** e **término** da estrutura [**DXVA2 \_ VideoSample**](/windows/desktop/api/dxva2api/ns-dxva2api-dxva2_videosample) fornecem os horários de início e término do exemplo de entrada. Para imagens de Subfluxo, defina esses valores como zero, porque a hora da apresentação é sempre calculada a partir do fluxo primário. O aplicativo é responsável por controlar quando cada imagem de Subfluxo deve ser apresentada e enviá-la para [**VideoProcessBlt**](/windows/desktop/api/dxva2api/nf-dxva2api-idirectxvideoprocessor-videoprocessblt) no momento adequado.
 
@@ -432,7 +432,7 @@ Esses valores preservam a altura da imagem e dimensionam as imagens horizontalme
 
 ### <a name="example-3-mismatched-stream-heights"></a>Exemplo 3: alturas de fluxo incompatíveis
 
-No exemplo anterior, o Subfluxo e o fluxo principal têm a mesma altura. Os fluxos também podem ter alturas incompatíveis, conforme mostrado neste exemplo. As áreas dentro do retângulo de destino onde nenhum vídeo é exibido são desenhadas usando a cor do plano de fundo — preto neste exemplo. Os retângulos de origem e de destino são mostrados no diagrama a seguir.
+No exemplo anterior, o Subfluxo e o fluxo principal têm a mesma altura. Fluxos também pode ter alturas incompatíveis, conforme mostrado neste exemplo. As áreas dentro do retângulo de destino onde nenhum vídeo é exibido são desenhadas usando a cor do plano de fundo — preto neste exemplo. Os retângulos de origem e de destino são mostrados no diagrama a seguir.
 
 ![diagrama mostrando alturas de fluxo incompatíveis,](images/0190a15a-d971-450f-90ed-ce5633e1069c.gif)
 
@@ -576,9 +576,9 @@ Agora suponha que o algoritmo de desentrelaçamento exija um exemplo de referên
 
 | Índice           | Tipo de superfície                   | Local temporal | Ordem z        |
 |-----------------|--------------------------------|-------------------|----------------|
-| *pSamples* \[ 0\] | Imagem entrelaçada (referência) | *T* − 1            | Não aplicável |
+| *pSamples* \[ 0\] | Imagem entrelaçada (referência) | *T* − 1            | Não se aplica |
 | *pSamples* \[ uma\] | Imagem entrelaçada             | *T*               | 0              |
-| *pSamples* \[ 2\] | Imagem entrelaçada (referência) | *T* + 1            | Não aplicável |
+| *pSamples* \[ 2\] | Imagem entrelaçada (referência) | *T* + 1            | Não se aplica |
 | *pSamples* \[ Beta\] | Subfluxo                      | 0                 | 1              |
 | *pSamples* \[ quatro\] | Subfluxo                      | 0                 | 2              |
 
@@ -594,9 +594,9 @@ Se o fluxo de vídeo mudar para o conteúdo progressivo, usando o mesmo modo de 
 
 | Índice           | Tipo de superfície                    | Local temporal | Ordem z        |
 |-----------------|---------------------------------|-------------------|----------------|
-| *pSamples* \[ 0\] | Imagem progressiva (referência) | *T* − 1            | Não aplicável |
+| *pSamples* \[ 0\] | Imagem progressiva (referência) | *T* − 1            | Não se aplica |
 | *pSamples* \[ uma\] | Imagem progressiva             | *T*               | 0              |
-| *pSamples* \[ 2\] | Imagem progressiva (referência) | *T* + 1            | Não aplicável |
+| *pSamples* \[ 2\] | Imagem progressiva (referência) | *T* + 1            | Não se aplica |
 | *pSamples* \[ Beta\] | Subfluxo                       | 0                 | 1              |
 | *pSamples* \[ quatro\] | Subfluxo                       | 0                 | 2              |
 

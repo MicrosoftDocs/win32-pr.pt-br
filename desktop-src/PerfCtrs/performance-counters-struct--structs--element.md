@@ -1,7 +1,7 @@
 ---
 description: Identifica uma estrutura que contém os valores dos contadores no conjunto de contadores pai.
 ms.assetid: f232e9bb-0c65-4197-929a-b1b67340ef85
-title: Elemento struct (Structs)
+title: Elemento struct (structs)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -9,14 +9,14 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 5a426cf8b97331c4ad9de577ddfcc9a753c06b0f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 223d5b742649b405242c146edb565a5c9fa537828d895206faf88ae50e0d50ea
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105770360"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117793693"
 ---
-# <a name="struct-structs-element"></a>Elemento struct (Structs)
+# <a name="struct-structs-element"></a>Elemento struct (structs)
 
 Identifica uma estrutura que contém os valores dos contadores no conjunto de contadores pai.
 
@@ -26,7 +26,7 @@ Identifica uma estrutura que contém os valores dos contadores no conjunto de co
  />
 ```
 
-O elemento **struct** é definido pelo tipo complexo [**structs**](performance-counters-structs-complex-type.md) .
+O **elemento struct** é definido pelo [**tipo complexo structs.**](performance-counters-structs-complex-type.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -34,8 +34,8 @@ O elemento **struct** é definido pelo tipo complexo [**structs**](performance-c
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
 
 
 
@@ -46,7 +46,7 @@ O elemento **struct** é definido pelo tipo complexo [**structs**](performance-c
 **Elementos pai**
 </dt> <dt>
 
-[**estruturas (CounterSet)**](performance-counters-structs--counterset--element.md)
+[**structs (counterSet)**](performance-counters-structs--counterset--element.md)
 </dt> </dl>
 
  

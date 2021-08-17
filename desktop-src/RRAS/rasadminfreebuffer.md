@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1bf86a3005a2b865b2096eddc5ffa9c0c33f848a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 9550c072840fabf5d862e32f3bbdc6c26d3b32faf9cf6bf6dcfeae1be400e0a3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105757739"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117789091"
 ---
 # <a name="rasadminfreebuffer-function"></a>Função RasAdminFreeBuffer
 
-\[Essa função é fornecida somente para compatibilidade com versões anteriores do Windows NT Server 4,0. Ele retorna uma \_ chamada \_ de erro não \_ implementada no Windows Server 2003. Os aplicativos devem usar a função [**MprAdminBufferFree**](/windows/desktop/api/Mprapi/nf-mprapi-mpradminbufferfree) .\]
+\[essa função é fornecida somente para compatibilidade com versões anteriores com o Windows NT Server 4,0. ele retorna uma \_ chamada \_ de erro não \_ implementada no Windows Server 2003. Os aplicativos devem usar a função [**MprAdminBufferFree**](/windows/desktop/api/Mprapi/nf-mprapi-mpradminbufferfree) .\]
 
 A função **RasAdminFreeBuffer** libera a memória que foi alocada pelo RAS em nome do chamador.
 
@@ -49,7 +49,7 @@ Ponteiro para o buffer a ser liberado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se a função for bem-sucedida, o valor de retorno será \_ êxito no erro.
 
@@ -79,7 +79,7 @@ Use a função **RasAdminFreeBuffer** para liberar os buffers alocados pelas fun
 |----------------------------------|----------------------------------------------------------------------------------------|
 | Fim do suporte do cliente<br/> | Windows 2000 Professional<br/>                                                   |
 | Fim do suporte do servidor<br/> | Windows 2000 Server<br/>                                                         |
-| parâmetro<br/>                | <dl> <dt>Rassapi. h</dt> </dl>   |
+| Cabeçalho<br/>                | <dl> <dt>Rassapi. h</dt> </dl>   |
 | Biblioteca<br/>               | <dl> <dt>Rassapi. lib</dt> </dl> |
 | DLL<br/>                   | <dl> <dt>Rassapi.dll</dt> </dl> |
 

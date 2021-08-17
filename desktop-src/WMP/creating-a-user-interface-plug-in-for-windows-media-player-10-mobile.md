@@ -1,15 +1,15 @@
 ---
-title: criando um Plug-in de Interface do usuário para o Windows Media Player 10 Mobile
-description: criando um Plug-in de Interface do usuário para o Windows Media Player 10 Mobile
+title: Criando um Interface do Usuário plug-in para o Windows Media Player 10 Mobile
+description: Criando um Interface do Usuário plug-in para o Windows Media Player 10 Mobile
 ms.assetid: 050418b7-d99c-49ab-8ce6-6511b194ffe6
 keywords:
-- Windows Media Player Dispositivos móveis, plug-ins
-- Windows Media Player Dispositivos móveis, plug-ins de interface do usuário
+- Windows Media Player Móveis, plug-ins
+- Windows Media Player Plug-ins móveis e de interface do usuário
 - Windows Media Player Plug-ins móveis
 - plug-ins, interface do usuário
-- plug-ins, Windows Media Player dispositivos móveis
+- plug-ins, Windows Media Player Mobile
 - plug-ins de interface do usuário, Windows Media Player Mobile
-- plug-ins de interface do usuário, Windows Media Player dispositivos móveis
+- Plug-ins de interface do usuário, Windows Media Player Mobile
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 40f75d18303953464dc7d16be14daeb60ffd34167507dc6344499cc8b0f3a97d
@@ -19,18 +19,18 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117750473"
 ---
-# <a name="creating-a-user-interface-plug-in-for-windows-media-player-10-mobile"></a>criando um Plug-in de Interface do usuário para o Windows Media Player 10 Mobile
+# <a name="creating-a-user-interface-plug-in-for-windows-media-player-10-mobile"></a>Criando um Interface do Usuário plug-in para o Windows Media Player 10 Mobile
 
-o Windows Media Player 10 Mobile usa o mesmo modelo de plug-in de interface do usuário que o Windows Media Player da área de trabalho. no entanto, Windows Media Player 10 Mobile só pode interagir com plug-ins de interface do usuário em segundo plano. devido aos modelos de plug-in semelhantes, as mesmas chamadas à API que se aplicam aos plug-ins de interface do usuário em segundo plano na área de trabalho também se aplicam a plug-ins de interface do usuário em um dispositivo móvel Windows.
+Windows Media Player 10 Mobile usa o mesmo modelo de plug-in de interface do usuário que a área de trabalho Windows Media Player. No entanto, Windows Media Player 10 Mobile só pode interagir com plug-ins de interface do usuário em segundo plano. Devido aos modelos de plug-in semelhantes, as mesmas chamadas à API que se aplicam a plug-ins de interface do usuário em segundo plano na área de trabalho também se aplicam a plug-ins de interface do usuário em segundo plano em um dispositivo Windows Mobile.
 
-as seções a seguir descrevem como criar um plug-in de iu em segundo plano usando o código gerado pelo assistente do assistente de plug-in Windows Media Player.
+As seções a seguir descrevem como criar um plug-in de interface do usuário em segundo plano usando o código gerado pelo assistente do Assistente Windows Media Player Plug-in.
 
 
 
 | Seção                                                                | Descrição                                                                                                                                            |
 |------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Introdução](getting-started.md)                                 | descreve o que você precisa instalar e como usar o assistente de Plug-in de Windows Media Player para ajudar a automatizar a criação de um Plug-in de interface do usuário em segundo plano.    |
-| [Modificando código gerado pelo assistente](modifying-wizard-generated-code.md) | descreve o que você precisa modificar do código gerado pelo assistente criado na seção anterior para que ele funcione com o Windows Media Player 10 Mobile. |
+| [Introdução](getting-started.md)                                 | Descreve o que você precisa instalar e como usar o Assistente Windows Media Player Plug-in do Windows Media Player para ajudar a automatizar a criação de um plug-in de interface do usuário em segundo plano.    |
+| [Modificando o código gerado pelo assistente](modifying-wizard-generated-code.md) | Descreve o que você precisa modificar do código gerado pelo assistente criado na seção anterior para que ele funcione com o Windows Media Player 10 Mobile. |
 
 
 
@@ -40,7 +40,7 @@ as seções a seguir descrevem como criar um plug-in de iu em segundo plano usan
 
 <dl> <dt>
 
-[**Guia de programação de plug-ins de interface do usuário**](user-interface-plug-ins-programming-guide.md)
+[**Interface do Usuário guia de programação de plug-ins do Interface do Usuário**](user-interface-plug-ins-programming-guide.md)
 </dt> </dl>
 
  

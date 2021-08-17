@@ -335,15 +335,15 @@ Depois de fazer a instalação, o loop principal é atualizado no **método Popu
 
 Não ocluído:
 
-![duas caixas não ocluídos](images/not-occluded.png)
+![duas caixas não obstruído](images/not-occluded.png)
 
-Obscurecidas:
+Obstruído
 
-![uma caixa totalmente oclusa](images/occluded.png)
+![uma caixa totalmente obstruído](images/occluded.png)
 
-Parcialmente ocluído:
+Obstruído parcialmente:
 
-![uma caixa parcialmente oclusa](images/partially-occluded.png)
+![obstruído uma caixa parcialmente](images/partially-occluded.png)
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

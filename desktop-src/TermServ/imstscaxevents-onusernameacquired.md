@@ -1,12 +1,12 @@
 ---
-title: Método IMsTscAxEvents OnUserNameAcquired
-description: Chamado quando o nome de usuário foi adquirido pelo controle.
+title: Método OnUserNameAcquired de IMsTscAxEvents
+description: Chamado quando o nome de usuário foi adquirido pelo controle .
 ms.assetid: 0653B28B-2D46-429F-8A36-5656786C0B26
 ms.tgt_platform: multiple
 keywords:
-- Serviços de Área de Trabalho Remota do método OnUserNameAcquired
-- Método OnUserNameAcquired Serviços de Área de Trabalho Remota, interface IMsTscAxEvents
-- Serviços de Área de Trabalho Remota de interface IMsTscAxEvents, método OnUserNameAcquired
+- Método OnUserNameAcquired Serviços de Área de Trabalho Remota
+- Método OnUserNameAcquired Serviços de Área de Trabalho Remota interface , IMsTscAxEvents
+- Interface IMsTscAxEvents Serviços de Área de Trabalho Remota , método OnUserNameAcquired
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cf5d77f0eb739daa54f8385112b79f67f279eae9
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f05b63d59ebe0610b28198d264caf0fb7d3cd87f9ee664f804dc38eb2996abd3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105810435"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117757149"
 ---
-# <a name="imstscaxeventsonusernameacquired-method"></a>Método IMsTscAxEvents:: OnUserNameAcquired
+# <a name="imstscaxeventsonusernameacquired-method"></a>Método IMsTscAxEvents::OnUserNameAcquired
 
-Chamado quando o nome de usuário foi adquirido pelo controle.
+Chamado quando o nome de usuário foi adquirido pelo controle .
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -50,7 +50,7 @@ O nome do usuário.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 
@@ -72,7 +72,7 @@ Esse método não retorna um valor.
 
 <dl> <dt>
 
-[**IMsTscAxEvents**](imstscaxevents-interface.md)
+[**Imstscaxevents**](imstscaxevents-interface.md)
 </dt> </dl>
 
  

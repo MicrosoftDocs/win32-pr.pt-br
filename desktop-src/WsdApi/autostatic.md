@@ -1,19 +1,19 @@
 ---
-description: Indica se WsdCodeGen deve tentar sinalizar automaticamente determinados campos gerados como estáticos.
+description: Indica se o WsdCodeGen deve ou não tentar sinalizar automaticamente determinados campos gerados como estáticos.
 ms.assetid: 0c858567-e17a-46a0-b3ff-a0dc8089b0cd
-title: elemento autoestático
+title: Elemento autoStatic
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9414470f56021d475fb7cf52e570ac2793228445
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 2f6b9a447e964c90354c909fc0399276d8ed69e7d1dfb3a493d5590a6470d0cd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107994923"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117738669"
 ---
-# <a name="autostatic-element"></a>elemento autoestático
+# <a name="autostatic-element"></a>Elemento autoStatic
 
-Indica se WsdCodeGen deve tentar sinalizar automaticamente determinados campos gerados como estáticos. Esse comportamento é habilitado por padrão.
+Indica se o WsdCodeGen deve ou não tentar sinalizar automaticamente determinados campos gerados como estáticos. Esse comportamento é habilitado por padrão.
 
 ## <a name="usage"></a>Uso
 
@@ -41,15 +41,15 @@ Não há elementos filho.
 
 ## <a name="remarks"></a>Comentários
 
-O elemento **autostatic** não é obrigatório e pode ser omitido do arquivo de configuração XML. O elemento pode ser usado para desabilitar a sinalização de campos gerados como estático ou para forçar explicitamente a sinalização de determinados campos gerados como estáticos.
+O **elemento autoStatic** não é necessário e pode ser omitido do arquivo de configuração XML. O elemento pode ser usado para desabilitar a sinalização de campos gerados como estáticos ou para forçar explicitamente a sinalização de determinados campos gerados como estáticos.
 
-Os valores possíveis são 1 (habilitado, padrão) e 0 (desabilitado). Habilitar o **autostatic** pode causar problemas de compilação dependendo de como o gerador de código é direcionado para os dados de saída.
+Os valores possíveis são 1 (habilitado, padrão) e 0 (desabilitado). A habilitação **de autoStatic** pode causar problemas de compilação, dependendo de como o gerador de código é direcionado para os dados de saída.
 
 ## <a name="element-information"></a>Informações do elemento
 
 
 
-| Label | Valor |
+| Rótulo | Valor |
 |-------------------------------------|---------------|
 | Sistema mínimo com suporte<br/> | Windows Vista |
 | Pode estar vazio                        | Sim           |

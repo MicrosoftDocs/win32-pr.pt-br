@@ -4,12 +4,12 @@ ms.assetid: 6f143c51-ec46-46d4-9a1e-b04fcc0d8bea
 title: MFPlay
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bc0231041afbb32025636ccb5c4738c3cce4cf0b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6f840888cd0b9f4941531664f811092b51a93eea69eff146afa93d80998a4d45
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105813505"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117871319"
 ---
 # <a name="mfplay"></a>MFPlay
 
@@ -30,7 +30,7 @@ Esta seção contém os seguintes tópicos.
 
 ## <a name="requirements"></a>Requisitos
 
-O MFPlay requer o Windows 7.
+MFPlay requer Windows 7.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

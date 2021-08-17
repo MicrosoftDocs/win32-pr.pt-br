@@ -1,25 +1,25 @@
 ---
-description: O exemplo a seguir demonstra os aspectos do trabalho com o objeto Store. Ele mostra a abertura de armazenamentos no armazenamento de memória CAPICOM \_ \_ , CAPICOM o \_ \_ armazenamento de usuário atual e os locais de armazenamento do \_ \_ \_ computador local \_ .
+description: O exemplo a seguir demonstra aspectos de trabalhar com o objeto Store. Ele mostra a abertura de lojas nos locais DE ARMAZENAMENTO DE MEMÓRIA CAPICOM, ARMAZENAMENTO DE USUÁRIO ATUAL DO CAPICOM e ARMAZENAMENTO DE \_ \_ MÁQUINAS LOCAIS \_ \_ \_ \_ \_ CAPICOM. \_
 ms.assetid: bfb7ff48-1d6b-404f-9dd4-6de1898354b7
 title: Usando lojas em locais diferentes
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1e22fa4d4eca4748d6c4652a8b33d22a1db492a1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6e57e1c1584754f0b02b61438a7a6a83694c36cd77c633c52f6bec216721d7c1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103647634"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117971402"
 ---
 # <a name="using-stores-in-different-locations"></a>Usando lojas em locais diferentes
 
-\[O CAPICOM é um componente somente de 32 bits que está disponível para uso nos seguintes sistemas operacionais: Windows Server 2008, Windows Vista e Windows XP. Em vez disso, use o .NET Framework para implementar recursos de segurança. Para obter mais informações, consulte [alternativas ao uso do CApicom](alternatives-to-using-capicom.md).\]
+\[CAPICOM é um componente somente de 32 bits que está disponível para uso nos seguintes sistemas operacionais: Windows Server 2008, Windows Vista e Windows XP. Em vez disso, use o .NET Framework para implementar recursos de segurança. Para obter mais informações, [consulte Alternativas ao uso de CAPICOM.](alternatives-to-using-capicom.md)\]
 
-O exemplo a seguir demonstra os aspectos do trabalho com o objeto [**Store**](store.md) . Ele mostra a abertura de armazenamentos no armazenamento de memória CAPICOM \_ \_ , CAPICOM o \_ \_ armazenamento de usuário atual e os locais de armazenamento do \_ \_ \_ computador local \_ .
+O exemplo a seguir demonstra aspectos de trabalhar com o [**objeto**](store.md) Store. Ele mostra a abertura de lojas nos locais DE ARMAZENAMENTO DE MEMÓRIA CAPICOM, ARMAZENAMENTO DE USUÁRIO ATUAL DO CAPICOM e ARMAZENAMENTO DE \_ \_ MÁQUINAS LOCAIS \_ \_ \_ \_ \_ CAPICOM. \_
 
-O exemplo mostra a exportação de [*certificados*](../secgloss/c-gly.md) de um [*armazenamento*](../secgloss/c-gly.md)aberto, gravando os certificados exportados em um arquivo, lendo-os de volta e importando-os em um repositório diferente. Os certificados recém importados são enumerados e exibidos.
+O exemplo mostra a exportação [*de certificados*](../secgloss/c-gly.md) de um armazenamento [*aberto,*](../secgloss/c-gly.md)escrevendo os certificados exportados em um arquivo, lendo-os novamente e importando-os para um armazenamento diferente. Os certificados recém-importados são enumerados e exibidos.
 
-Em qualquer erro de CAPICOM, um valor decimal negativo de **Err. Number** é retornado. Para obter mais informações, [**consulte \_ \_ código de erro CAPICOM**](capicom-error-code.md). Para obter informações sobre valores decimais positivos de **Err. Number**, consulte Winerror. h.
+Em qualquer erro CAPICOM, um valor decimal negativo de **Err.Number** é retornado. Para obter mais informações, consulte [**CAPICOM \_ ERROR \_ CODE**](capicom-error-code.md). Para obter informações sobre valores decimais positivos de **Err.Number,** consulte Winerror.h.
 
 
 ```VB

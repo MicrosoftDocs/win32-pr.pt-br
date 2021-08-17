@@ -1,7 +1,7 @@
 ---
-description: O método gettimelinetype recupera o tipo do objeto.
+description: O método GetTimelineType recupera o tipo do objeto.
 ms.assetid: db46457f-25d0-4421-af73-426d65b720d3
-title: 'Método IAMTimelineObj:: gettimelinetype (QEdit. h)'
+title: Método IAMTimelineObj::GetTimelineType (Qedit.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 76b9c2a847cc0d0150b21062810290aaaab702cf
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 9f9c69bcd6b14b489fab4caa399e481613bc7cbeeb30245e00ece480b97b31ac
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105785493"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118155330"
 ---
-# <a name="iamtimelineobjgettimelinetype-method"></a>Método IAMTimelineObj:: gettimelinetype
+# <a name="iamtimelineobjgettimelinetype-method"></a>Método IAMTimelineObj::GetTimelineType
 
 > [!Note]  
 > \[Preterido. Essa API pode ser removida de versões futuras do Windows.\]
@@ -45,26 +45,26 @@ HRESULT GetTimelineType(
 
 <dl> <dt>
 
-*pVal* 
+*Pval* 
 </dt> <dd>
 
-Recebe um membro do tipo enumerado de [**\_ \_ tipo principal da linha do tempo**](timeline-major-type.md) , indicando o tipo de objeto.
+Recebe um membro do tipo enumerado [**TIMELINE \_ MAJOR \_ TYPE,**](timeline-major-type.md) indicando o tipo de objeto .
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
+Se esse método for bem-sucedido, ele **retornará S \_ OK.** Caso contrário, ele retornará um **código de erro HRESULT.**
 
 ## <a name="remarks"></a>Comentários
 
 > [!Note]  
-> O arquivo de cabeçalho QEdit. h não é compatível com cabeçalhos do Direct3D posteriores à versão 7.
+> O arquivo de título Qedit.h não é compatível com os headers direct3D posteriores à versão 7.
 
  
 
 > [!Note]  
-> Para obter o QEdit. h, baixe a [atualização SDK do Microsoft Windows para Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). O QEdit. h não está disponível no SDK do Microsoft Windows para Windows 7 e .NET Framework 3,5 Service Pack 1.
+> Para obter o Qedit.h, baixe [o Microsoft Windows SDK Update para Windows Vista e .NET Framework 3.0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). O Qedit.h não está disponível no SDK do Microsoft Windows para Windows 7 e .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -74,8 +74,8 @@ Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, e
 
 | Requisito | Valor |
 |--------------------|-----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>QEdit. h</dt> </dl>      |
-| Biblioteca<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Biblioteca<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 
@@ -83,7 +83,7 @@ Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, e
 
 <dl> <dt>
 
-[**Interface IAMTimelineObj**](iamtimelineobj.md)
+[**IAMTimelineObj Interface**](iamtimelineobj.md)
 </dt> <dt>
 
 [Códigos de erro e êxito](error-and-success-codes.md)

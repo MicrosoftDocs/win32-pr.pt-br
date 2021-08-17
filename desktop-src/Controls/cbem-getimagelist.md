@@ -1,9 +1,9 @@
 ---
-title: Mensagem de CBEM_GETIMAGELIST (commctrl. h)
-description: Obtém o identificador para uma lista de imagens atribuída a um controle ComboBoxEx.
+title: CBEM_GETIMAGELIST mensagem (Commctrl.h)
+description: Obtém o handle para uma lista de imagens atribuída a um controle ComboBoxEx.
 ms.assetid: d577f920-b8f7-4d51-9507-765b7f925408
 keywords:
-- controles de Windows de mensagem de CBEM_GETIMAGELIST
+- CBEM_GETIMAGELIST controles de Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -21,9 +21,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118414076"
 ---
-# <a name="cbem_getimagelist-message"></a>\_Mensagem CBEM GETimagelist
+# <a name="cbem_getimagelist-message"></a>Mensagem CBEM \_ GETIMAGELIST
 
-Obtém o identificador para uma lista de imagens atribuída a um controle ComboBoxEx.
+Obtém o handle para uma lista de imagens atribuída a um controle ComboBoxEx.
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -37,7 +37,7 @@ Obtém o identificador para uma lista de imagens atribuída a um controle ComboB
 
 ## <a name="return-value"></a>Valor retornado
 
-Retorna o identificador para a lista de imagens atribuída ao controle, se for bem-sucedido, ou **NULL** de outra forma.
+Retorna o alça para a lista de imagens atribuída ao controle se for bem-sucedido ou **NULL** caso contrário.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -45,9 +45,9 @@ Retorna o identificador para a lista de imagens atribuída ao controle, se for b
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

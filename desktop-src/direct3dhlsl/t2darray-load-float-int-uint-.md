@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 0a1dd61506eba7ea6e334f2b3e3f89dd6bca5873
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 0907ddb4f5100ae6bffc81214ed0bed0d7857462e12c4625f179d6b769915569
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104989190"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117723581"
 ---
 # <a name="texture2darrayloadintintuint-function"></a>Função Texture2DArray:: Load (int, int, uint)
 
@@ -68,7 +68,7 @@ O status da operação. Você não pode acessar o status diretamente; em vez dis
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo:
 

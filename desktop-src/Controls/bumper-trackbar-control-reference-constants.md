@@ -1,6 +1,6 @@
 ---
-title: Constantes de controle da barra de faixas
-description: Constantes de controle da barra de faixas
+title: Constantes de controle TrackBar
+description: Constantes de controle TrackBar
 ms.assetid: a1dba5fc-efa4-4901-b639-309398a1725f
 ms.topic: article
 ms.date: 05/31/2018
@@ -11,12 +11,12 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118414939"
 ---
-# <a name="trackbar-control-constants"></a>Constantes de controle da barra de faixas
+# <a name="trackbar-control-constants"></a>Constantes de controle TrackBar
 
 ## <a name="in-this-section"></a>Nesta seção
 
 -   [Valores de desenho personalizados](custom-draw-values.md)
--   [Estilos de controle da barra de faixas](trackbar-control-styles.md)
+-   [Estilos de controle TrackBar](trackbar-control-styles.md)
 
  
 

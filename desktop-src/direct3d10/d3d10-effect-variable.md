@@ -4,12 +4,12 @@ ms.assetid: ef996443-b558-4aa6-acc1-38f8a89c9855
 title: D3D10_EFFECT_VARIABLE constantes
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 58d6367fe89f66ff90991b8493a03a6d1b4244f4
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 7541253fffd6671e01a8da38c06fd15924d45b461d5acc0e468fd17660746f42
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105784562"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117736065"
 ---
 # <a name="d3d10_effect_variable-constants"></a>\_Constantes variáveis de efeito d3d10 \_
 

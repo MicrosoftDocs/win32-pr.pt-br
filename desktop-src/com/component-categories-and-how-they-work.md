@@ -4,12 +4,12 @@ description: Categorias de componentes e como elas funcionam
 ms.assetid: efbf4a25-3c73-4d09-a172-6676c6d6501b
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: faf8065584ae2dc83e470428b7345eb2d9321d32
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: ddfd5580e12ce3d4a44ca251142e29f6eea8f9f5823cf18999f876a4ef732d09
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103915966"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117737012"
 ---
 # <a name="component-categories-and-how-they-work"></a>Categorias de componentes e como elas funcionam
 
@@ -34,7 +34,7 @@ Essa não é uma lista definitiva de categorias; outras categorias provavelmente
 
 Observe que controles e contêineres mais antigos não fazem uso de categorias de componente e, em vez disso, dependem da palavra-chave Control que está presente no controle no registro. Para ser reconhecido por controles de contêineres mais antigos pode desejar registrar a palavra-chave Control no registro, os desenvolvedores de controle devem verificar se o controle pode ser hospedado com êxito nesses contêineres antes de fazer isso. Os contêineres que usam categorias de componentes podem usá-los com êxito para hospedar controles mais antigos à medida que a DLL de categoria de componentes manipula o mapeamento, existe uma categoria separada para controles mais antigos do CATID \_ ControlV1 para que um contêiner, opcionalmente, possa excluí-los, se necessário.
 
-Como as categorias de componente são identificadas por GUIDs, é possível que os contêineres que oferecem determinada funcionalidade específica tenham suas próprias IDs de categoria, geradas usando uma ferramenta de geração de GUID. No entanto, isso pode prejudicar a vantagem da interoperabilidade de controles e contêineres, portanto, é preferível que sempre que as categorias de componentes existentes forem usadas. Os fornecedores são incentivados a se consultar ao definir novas categorias de componentes para garantir que atendam aos requisitos comuns do Marketplace e sigam o espírito de interoperabilidade dos controles ActiveX.
+Como as categorias de componente são identificadas por GUIDs, é possível que os contêineres que oferecem determinada funcionalidade específica tenham suas próprias IDs de categoria, geradas usando uma ferramenta de geração de GUID. No entanto, isso pode prejudicar a vantagem da interoperabilidade de controles e contêineres, portanto, é preferível que sempre que as categorias de componentes existentes forem usadas. os fornecedores são incentivados a se consultar ao definir novas categorias de componentes para garantir que atendam aos requisitos comuns do marketplace e sigam o espírito de interoperabilidade dos controles de ActiveX.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -43,9 +43,9 @@ Como as categorias de componente são identificadas por GUIDs, é possível que 
 [Categorias de componentes](component-categories.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,9 +1,9 @@
 ---
-title: Mensagem de EM_NOSETFOCUS (commctrl. h)
-description: Impede que um controle de edição de linha única receba o foco do teclado. Você pode enviar essa mensagem explicitamente ou usando a macro editar \_ nosetfocus.
+title: EM_NOSETFOCUS mensagem (Commctrl.h)
+description: Impede que um controle de edição de linha única receba o foco do teclado. Você pode enviar essa mensagem explicitamente ou usando a \_ macro Editar NoSetFocus.
 ms.assetid: aeb5ed6b-7d4f-4c0d-a172-6cee7cab959c
 keywords:
-- Controles de EM_NOSETFOCUS de mensagens do Windows
+- EM_NOSETFOCUS controles de Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,18 +14,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b82830cda3402d2089d3421debaa7c4dbf13de5d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 02ac35a30ff3deac7e9d6d227a6e8c403e6096e272ea89067dd817add9b2426e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104086030"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117831188"
 ---
-# <a name="em_nosetfocus-message"></a>\_Mensagem em NOsetfocus
+# <a name="em_nosetfocus-message"></a>Mensagem EM \_ NOSETFOCUS
 
-\[Destinado ao uso interno; Não recomendado para uso em aplicativos. Essa mensagem pode não ter suporte em versões futuras do Windows.\]
+\[Destinado a uso interno; não recomendado para uso em aplicativos. Essa mensagem pode não ter suporte em versões futuras do Windows.\]
 
-Impede que um controle de edição de linha única receba o foco do teclado. Você pode enviar essa mensagem explicitamente ou usando a macro [**Editar \_ nosetfocus**](/windows/desktop/api/Commctrl/nf-commctrl-edit_nosetfocus) .
+Impede que um controle de edição de linha única receba o foco do teclado. Você pode enviar essa mensagem explicitamente ou usando a [**macro \_ Editar NoSetFocus.**](/windows/desktop/api/Commctrl/nf-commctrl-edit_nosetfocus)
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -45,13 +45,13 @@ Não usado; deve ser zero.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O valor de retorno não é usado.
 
 ## <a name="security-considerations"></a>Considerações de segurança
 
-O uso dessa mensagem pode comprometer a segurança do seu programa.
+Usar essa mensagem pode comprometer a segurança do programa.
 
 ## <a name="remarks"></a>Comentários
 
@@ -65,9 +65,9 @@ Depois que essa mensagem é enviada, o efeito é permanente.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 
@@ -78,10 +78,10 @@ Depois que essa mensagem é enviada, o efeito é permanente.
 **Referência**
 </dt> <dt>
 
-[**Editar \_ Nosetfocus**](/windows/desktop/api/Commctrl/nf-commctrl-edit_nosetfocus)
+[**Editar \_ NoSetFocus**](/windows/desktop/api/Commctrl/nf-commctrl-edit_nosetfocus)
 </dt> <dt>
 
-[**em \_ TAKEFOCUS**](em-takefocus.md)
+[**EM \_ TAKEFOCUS**](em-takefocus.md)
 </dt> </dl>
 
  

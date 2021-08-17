@@ -11,12 +11,12 @@ api_name:
 - SharedProperty
 api_type:
 - COM
-ms.openlocfilehash: a7a7857ad280ad722601bdced6c25d04b03dc0b3
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 9b0daa74c7329f8dc9f2566852d863715d22fd556ce3d4674dfaf246c17504b0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104089131"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117915763"
 ---
 # <a name="sharedproperty-class"></a>Classe SharedProperty
 
@@ -46,7 +46,7 @@ Use essa classe para acessar os métodos de [**ISharedProperty**](/windows/deskt
 
 Você pode criar um objeto **SharedProperty** usando os métodos [**CreateProperty**](/windows/desktop/api/ComSvcs/nf-comsvcs-isharedpropertygroup-createproperty) ou [**CreatePropertyByPosition**](/windows/desktop/api/ComSvcs/nf-comsvcs-isharedpropertygroup-createpropertybyposition) de [**ISharedPropertyGroup**](/windows/desktop/api/ComSvcs/nn-comsvcs-isharedpropertygroup).
 
-Para usar essa classe do Microsoft Visual Basic, adicione uma referência à biblioteca de tipos de serviços COM+. Um objeto SharedProperty é criado chamando os métodos [**CreateProperty**](/windows/desktop/api/ComSvcs/nf-comsvcs-isharedpropertygroup-createproperty) ou [**CreatePropertyByPosition**](/windows/desktop/api/ComSvcs/nf-comsvcs-isharedpropertygroup-createpropertybyposition) do objeto [**SharedPropertyGroup**](sharedpropertygroup.md) .
+para usar essa classe do Microsoft Visual Basic, adicione uma referência à biblioteca de tipos de serviços COM+. Um objeto SharedProperty é criado chamando os métodos [**CreateProperty**](/windows/desktop/api/ComSvcs/nf-comsvcs-isharedpropertygroup-createproperty) ou [**CreatePropertyByPosition**](/windows/desktop/api/ComSvcs/nf-comsvcs-isharedpropertygroup-createpropertybyposition) do objeto [**SharedPropertyGroup**](sharedpropertygroup.md) .
 
 ## <a name="requirements"></a>Requisitos
 

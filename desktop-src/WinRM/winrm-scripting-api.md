@@ -1,6 +1,6 @@
 ---
 title: API de script do WinRM
-description: Gerenciamento Remoto do Windows objetos de script são implementados como uma camada acima do protocolo WS-Management.
+description: Windows Os objetos de script de gerenciamento remoto são implementados como uma camada acima do protocolo WS-Management.
 ms.assetid: bd642669-554f-40ab-bd40-235013afa077
 ms.tgt_platform: multiple
 ms.topic: article
@@ -10,20 +10,20 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 7910213487f525b74c3d1a8819a450f95336aba1
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: c7ce6311fe80884ab0c71e66360a2072381221b5b85a8626fda0e0104168b4f0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105782473"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117742754"
 ---
 # <a name="winrm-scripting-api"></a>API de script do WinRM
 
-Gerenciamento Remoto do Windows objetos de script são implementados como uma camada acima da [protocolo WS-Management](ws-management-protocol.md). Os objetos de script permitem que você obtenha dados ou gerencie [*recursos*](windows-remote-management-glossary.md) em computadores locais e remotos.
+Windows Os objetos de script de gerenciamento remoto são implementados como uma camada acima da [protocolo WS-Management](ws-management-protocol.md). Os objetos de script permitem que você obtenha dados ou gerencie [*recursos*](windows-remote-management-glossary.md) em computadores locais e remotos.
 
 ## <a name="ws-management-objects"></a>Objetos WS-Management
 
-Cada objeto de script tem uma interface C++ correspondente. Para obter mais informações, consulte [API C++ do WinRM](winrm-c---api.md) e [scripts em gerenciamento remoto do Windows](scripting-in-windows-remote-management.md).
+Cada objeto de script tem uma interface C++ correspondente. para obter mais informações, consulte [API C++ do WinRM](winrm-c---api.md) e [scripts em Gerenciamento Remoto do Windows](scripting-in-windows-remote-management.md).
 
 Os objetos a seguir são fornecidos pela API de script do WinRM.
 
@@ -60,7 +60,7 @@ Define as operações de rede e as propriedades disponíveis para a sessão, com
 <span id="WSMan"></span><span id="wsman"></span><span id="WSMAN"></span>[**WSMan**](wsman.md)
 </dt> <dd>
 
-Fornece métodos e propriedades usados para criar uma nova sessão ou gerenciar uma sessão estabelecida. Para obter mais informações, consulte [usando gerenciamento remoto do Windows](using-windows-remote-management.md). As interfaces C++ correspondentes são [**IWSMan**](/windows/desktop/api/WSManDisp/nn-wsmandisp-iwsman) e [**IWSManEx**](/windows/desktop/api/WSManDisp/nn-wsmandisp-iwsmanex).
+Fornece métodos e propriedades usados para criar uma nova sessão ou gerenciar uma sessão estabelecida. para obter mais informações, consulte [usando Gerenciamento Remoto do Windows](using-windows-remote-management.md). As interfaces C++ correspondentes são [**IWSMan**](/windows/desktop/api/WSManDisp/nn-wsmandisp-iwsman) e [**IWSManEx**](/windows/desktop/api/WSManDisp/nn-wsmandisp-iwsmanex).
 
 </dd> </dl>
 
@@ -68,21 +68,21 @@ Fornece métodos e propriedades usados para criar uma nova sessão ou gerenciar 
 
 <dl> <dt>
 
-[Sobre Gerenciamento Remoto do Windows](about-windows-remote-management.md)
+[sobre Gerenciamento Remoto do Windows](about-windows-remote-management.md)
 </dt> <dt>
 
-[Usando Gerenciamento Remoto do Windows](using-windows-remote-management.md)
+[usando Gerenciamento Remoto do Windows](using-windows-remote-management.md)
 </dt> <dt>
 
-[Criando scripts no Gerenciamento Remoto do Windows](scripting-in-windows-remote-management.md)
+[criando scripts no Gerenciamento Remoto do Windows](scripting-in-windows-remote-management.md)
 </dt> <dt>
 
-[Referência de Gerenciamento Remoto do Windows](windows-remote-management-reference.md)
+[Windows Referência de gerenciamento remoto](windows-remote-management-reference.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

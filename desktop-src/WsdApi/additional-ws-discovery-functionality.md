@@ -4,12 +4,12 @@ ms.assetid: ae7eff53-c932-4cba-9e71-c60f308f0e2d
 title: Funcionalidade adicional de WS-Discovery
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ce9856605273bec9c757e0b29c389991bf061309
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7a7ee4094950c51ed84724abb9eaea493f7dad7cf7803832fb6e8762fdd99811
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104171230"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118106774"
 ---
 # <a name="additional-ws-discovery-functionality"></a>Funcionalidade adicional de WS-Discovery
 
@@ -43,7 +43,7 @@ Os dispositivos e serviços criados no WSDAPI não fornecem seu WSDL na troca de
 
 ## <a name="app_max_delay"></a>\_atraso máximo do aplicativo \_
 
-DPWS define \_ \_ o atraso máximo do aplicativo, o intervalo aleatório a ser atrasado entre o recebimento de uma [investigação](probe-message.md) e o envio de um [ProbeMatch](probematches-message.md), como 5.000 milissegundos. O Firewall do Windows requer que o modelo de resposta de difusão unicast/solicitação multicast para UDP funcione apenas na janela de firewall de 4 segundos. Como resultado, o WSDAPI transmitirá respostas em 2.500 MS ou menos, em vez da janela 5.000 MS descrita pelo \_ atraso máximo do aplicativo \_ .
+DPWS define \_ \_ o atraso máximo do aplicativo, o intervalo aleatório a ser atrasado entre o recebimento de uma [investigação](probe-message.md) e o envio de um [ProbeMatch](probematches-message.md), como 5.000 milissegundos. Windows O Firewall requer que o modelo de resposta de difusão unicast/solicitação multicast para UDP funcione apenas na janela de firewall de 4 segundos. Como resultado, o WSDAPI transmitirá respostas em 2.500 MS ou menos, em vez da janela 5.000 MS descrita pelo \_ atraso máximo do aplicativo \_ .
 
 ## <a name="iana-port-reservations"></a>Reservas de porta IANA
 

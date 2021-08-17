@@ -1,26 +1,26 @@
 ---
-title: Atributo BWMode de VML
-description: Atributo BWMode de VML
+title: Atributo BWMode VML
+description: Atributo BWMode VML
 ms.assetid: 929daebb-c402-46a0-9abc-b91c4ebda7fa
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9f595159398e32fdb1c80ad5d949ef48758aea95
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 5640680af40f4649f7ab34b2ec8cfd4e5cf94ee4c7c6ce3c3f2185e68bdac360
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103641348"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117754961"
 ---
-# <a name="vml-bwmode-attribute"></a>Atributo BWMode de VML
+# <a name="vml-bwmode-attribute"></a>Atributo BWMode VML
 
-Este tópico descreve a VML, um recurso que foi preterido a partir do Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem de VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
+Este tópico descreve o VML, um recurso que foi preterido a partir Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem do VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
 
 > [!Note]  
-> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [conteúdo arquivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obter informações, recomendações e orientações sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
+> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [Conteúdo arquivado.](/previous-versions/windows/internet-explorer/ie-developer/) Para obter informações, recomendações e diretrizes sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center.](https://msdn.microsoft.com/ie/)
 
- 
+ 
 
-Determina como uma forma será renderizada para dispositivos de saída em preto e branco. Leitura/gravação. [VgBlackWhiteMode](msdn-online-vml-vgblackwhitemode.md).
+Determina como uma forma será renderizar para dispositivos de saída em preto e branco. Leitura/gravação. [VgBlackWhiteMode.](msdn-online-vml-vgblackwhitemode.md)
 
 **Aplica-se a**
 
@@ -28,19 +28,19 @@ Determina como uma forma será renderizada para dispositivos de saída em preto 
 
 **Sintaxe de marca**
 
-<v: *Element* o:bwmode = " *expressão* " >
+<v: *elemento* o:bwmode=" *expressão* ">
 
 **Comentários**
 
-Quando uma forma é impressa em uma impressora preto e branco ou exibida em uma exibição em preto e branco em um aplicativo, várias opções são possíveis. Para obter mais informações sobre os valores desse atributo, consulte o tópico [VgBlackWhiteMode](msdn-online-vml-vgblackwhitemode.md) . O valor padrão é **auto**.
+Quando uma forma é impressa em uma impressora em preto e branco ou exibida em uma exibição em preto e branco em um aplicativo, várias opções são possíveis. Para obter mais informações sobre os valores desse atributo, consulte o [tópico VgBlackWhiteMode.](msdn-online-vml-vgblackwhitemode.md) O valor padrão é **auto.**
 
-Se **auto** for especificado, [BWNormal](msdn-online-vml-bwnormal-attribute.md) será usado para determinar o comportamento para saída normal de preto e branco, e [BWPure](msdn-online-vml-bwpure-attribute.md) será usado para determinar o comportamento de saída puro de preto e branco.
+Se **auto** for especificado, [BWNormal](msdn-online-vml-bwnormal-attribute.md) será usado para determinar o comportamento da saída normal em preto e branco e [BWPure](msdn-online-vml-bwpure-attribute.md) será usado para determinar o comportamento da saída em preto e branco puro.
 
-*Atributo de extensões de Microsoft Office*
+*Microsoft Office Atributo Extensions*
 
 **Exemplo**
 
-O modo preto e branco da forma é **automático**.
+O modo preto e branco da forma é **automático.**
 
 
 ```HTML
@@ -50,6 +50,6 @@ O modo preto e branco da forma é **automático**.
 
 
 
- 
+ 
 
- 
+ 
