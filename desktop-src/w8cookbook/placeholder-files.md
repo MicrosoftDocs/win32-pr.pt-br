@@ -15,33 +15,33 @@ ms.locfileid: "119452496"
 
 ## <a name="platform"></a>Plataforma
 
-**Clientes – Windows 8.1**  
-**Servidores – Windows Server 2012** R2  
+**clientes-** Windows 8.1  
+**servidores-** Windows Server 2012 R2  
 
 ## <a name="description"></a>Descrição
 
-Os arquivos de espaço reservado permitem aos usuários exibir e gerenciar Microsoft OneDrive arquivos, independentemente da conectividade. Os arquivos de espaço reservado representam o namespace OneDrive, mesmo quando os arquivos não são armazenados em cache localmente. Eles contêm metadados de arquivo e imagens em miniatura de fotos.
+os arquivos de espaço reservado permitem que os usuários exibam e gerenciem Microsoft OneDrive arquivos, independentemente da conectividade. os arquivos de espaço reservado representam o namespace OneDrive, mesmo quando os arquivos não são armazenados em cache localmente. Eles contêm metadados de arquivo e imagens em miniatura de fotos.
 
 ## <a name="manifestation"></a>Manifestação
 
-Para usuários e desenvolvedores finais, os arquivos de espaço reservado parecem e se comportam quase da mesma forma que os arquivos locais.
+Para usuários finais e desenvolvedores, os arquivos de espaço reservado parecem e se comportam quase iguais aos arquivos locais.
 
-Se seu aplicativo usar a Caixa de Diálogo de Arquivo Comum para enumerar o sistema de arquivos, seu aplicativo não será afetado. Quando o usuário tentar abrir o arquivo na caixa de diálogo comum /file, o conteúdo do arquivo será baixado e será passado para seu aplicativo.
+Se seu aplicativo usar a caixa de diálogo arquivo comum para enumerar o sistema de arquivos, seu aplicativo não será afetado. Quando o usuário tenta abrir o arquivo da caixa de diálogo do/File comum, o conteúdo do arquivo será baixado e será passado para seu aplicativo.
 
-Se seu aplicativo acessar o sistema de arquivos diretamente, seu aplicativo poderá aproveitar os arquivos de espaço reservado usando as diretrizes abaixo.
+Se seu aplicativo acessa o sistema de arquivos diretamente, seu aplicativo pode tirar proveito dos arquivos de espaço reservado usando as diretrizes abaixo.
 
 ## <a name="solution"></a>Solução
 
--   Os espaço reservados são ocultos por convenção com base em atributos
--   Identificar os espaço reservados usando a marca de ID de marca de reparse IO \_ REPARSE \_ TAG ESPAÇO RESERVADO DO \_ \_ ARQUIVO
+-   Espaços reservados são ocultos por convenção com base em atributos
+-   Identificar espaços reservados usando a ID da marca de nova análise e o \_ \_ \_ \_ espaço reservado para arquivo de marca de nova análise
 
-Use o modelo de dados do shell para um comportamento contínuo:
+Use o modelo de dados do Shell para um comportamento contínuo:
 
--   Usar SHCreateItemFromParsingName() para criar um item de shell
--   A vincular ao fluxo usando IShellItem::BindToHandler(STREAM \_ DERIAID)
--   Manipulador de propriedades do usuário para acesso à propriedade (IShellItem2::GetPropertyHandler)
--   Miniatura do shell do usuário para obter imagens em miniatura para os espaço reservados
--   Especifique SupportedProtocols= em sua implementação de verbo se o verbo se vincular \* ao fluxo por meio de BindToHandler
+-   Usar SHCreateItemFromParsingName () para criar um item de Shell
+-   Associar ao fluxo usando IShellItem:: BindToHandler (fluxo de BHID \_ )
+-   Manipulador de propriedades de usuário para acesso à propriedade (IShellItem2:: GetPropertyHandler)
+-   Shell do usuário thumbnailhandler para obter imagens em miniatura para espaços reservados
+-   Especifique SupportedProtocols = \* na sua implementação de verbo se o verbo for associado ao fluxo por meio de BindToHandler
 
 
 ```

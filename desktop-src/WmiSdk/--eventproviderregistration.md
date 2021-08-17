@@ -79,7 +79,7 @@ Caminho do objeto para o provedor de eventos. Essa propriedade é herdada [**\_ 
 
 ## <a name="remarks"></a>Comentários
 
-Somente os administradores podem registrar ou excluir um provedor de eventos criando uma instância de [**\_ \_ Win32Provider**](--win32provider.md) [**\_ \_ e EventProviderRegistration**](--eventconsumerproviderregistration.md). A **\_ \_ classe EventProviderRegistration** é derivada de [**\_ \_ ProviderRegistration**](--providerregistration.md).
+Somente os administradores podem registrar ou excluir um provedor de eventos criando uma instância de [**\_ \_ Win32Provider**](--win32provider.md) e [**\_ \_ EventProviderRegistration**](--eventconsumerproviderregistration.md). A **\_ \_ classe EventProviderRegistration** é derivada de [**\_ \_ ProviderRegistration**](--providerregistration.md).
 
 ## <a name="requirements"></a>Requisitos
 

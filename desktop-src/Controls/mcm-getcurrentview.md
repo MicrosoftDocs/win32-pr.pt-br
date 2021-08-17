@@ -1,9 +1,9 @@
 ---
-title: Mensagem de MCM_GETCURRENTVIEW (commctrl. h)
-description: Obtém a exibição atual do calendário. Você pode enviar essa mensagem explicitamente ou usando a macro calendário mensal \_ GetCurrentView.
+title: MCM_GETCURRENTVIEW mensagem (Commctrl.h)
+description: Obtém a exibição atual do calendário. Você pode enviar essa mensagem explicitamente ou usando a \_ macro MonthCal GetCurrentView.
 ms.assetid: 9c42ebf6-611e-4e50-9dcc-cf7fd63b32eb
 keywords:
-- controles de Windows de mensagem de MCM_GETCURRENTVIEW
+- MCM_GETCURRENTVIEW controles de Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -21,9 +21,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119319676"
 ---
-# <a name="mcm_getcurrentview-message"></a>\_Mensagem MCM GETCURRENTVIEW
+# <a name="mcm_getcurrentview-message"></a>Mensagem MCM \_ GETCURRENTVIEW
 
-Obtém a exibição atual do calendário. Você pode enviar essa mensagem explicitamente ou usando a macro [**calendário mensal \_ GetCurrentView**](/windows/desktop/api/Commctrl/nf-commctrl-monthcal_getcurrentview) .
+Obtém a exibição atual do calendário. Você pode enviar essa mensagem explicitamente ou usando a macro [**\_ MonthCal GetCurrentView.**](/windows/desktop/api/Commctrl/nf-commctrl-monthcal_getcurrentview)
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -49,12 +49,12 @@ Exibição atual. Um dos valores a seguir.
 
 
 
-| Código de retorno                                                                                  | Description              |
+| Código de retorno                                                                                  | Descrição              |
 |----------------------------------------------------------------------------------------------|--------------------------|
-| <dl> <dt>**MCMV \_ mês**</dt> </dl>   | Exibição mensal.<br/> |
-| <dl> <dt>**MCMV \_ ano**</dt> </dl>    | Exibição anual.<br/>  |
-| <dl> <dt>**década de MCMV \_**</dt> </dl>  | Exibição da década.<br/>  |
-| <dl> <dt>**\_século MCMV**</dt> </dl> | Exibição do século.<br/> |
+| <dl> <dt>**MCMV \_ MONTH**</dt> </dl>   | Exibição mensal.<br/> |
+| <dl> <dt>**MCMV \_ YEAR**</dt> </dl>    | Exibição anual.<br/>  |
+| <dl> <dt>**MCMV \_ DECADE**</dt> </dl>  | Exibição de década.<br/>  |
+| <dl> <dt>**MCMV \_ CENTURY**</dt> </dl> | Exibição de século.<br/> |
 
 
 
@@ -66,9 +66,9 @@ Exibição atual. Um dos valores a seguir.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

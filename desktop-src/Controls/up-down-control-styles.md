@@ -1,6 +1,6 @@
 ---
-title: Up-Down estilos de controle (CommCtrl. h)
-description: Esta seção lista os estilos usados ao criar controles de cima para baixo.
+title: Up-Down de controle (CommCtrl.h)
+description: Esta seção lista os estilos usados ao criar controles para cima e para baixo.
 ms.assetid: d35198cb-6a5b-485e-a914-1b2ede53462f
 topic_type:
 - apiref
@@ -20,30 +20,30 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9b27cd27123f4c1a071314fd20d1874e61b590d4
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 809ab4ce2c4d8670363dc7f0751ae4a3756ee7b4e5dc9b75c79986c3a56d359d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105749535"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118957695"
 ---
-# <a name="up-down-control-styles"></a>Up-Down estilos de controle
+# <a name="up-down-control-styles"></a>Up-Down de controle
 
-Esta seção lista os estilos usados ao criar controles de cima para baixo.
+Esta seção lista os estilos usados ao criar controles para cima e para baixo.
 
 
 
 | Constante                                                                                                                                                            | Descrição                                                                                                                                                                                                                                                                                                                                                                                               |
 |:--------------------------------------------------------------------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="UDS_ALIGNLEFT"></span><span id="uds_alignleft"></span><dl> <dt>**UDS \_ ALIGNLEFT**</dt> </dl>       | Posiciona o controle de cima para baixo ao lado da borda esquerda da janela do Buddy. A janela Buddy é movida para a direita e sua largura é diminuída para acomodar a largura do controle acima-abaixo.<br/>                                                                                                                                                                                                   |
-| <span id="UDS_ALIGNRIGHT"></span><span id="uds_alignright"></span><dl> <dt>**UDS \_ ALIGNRIGHT**</dt> </dl>    | Posiciona o controle de cima para baixo ao lado da borda direita da janela do Buddy. A largura da janela Buddy é diminuída para acomodar a largura do controle acima-abaixo.<br/>                                                                                                                                                                                                                          |
-| <span id="UDS_ARROWKEYS"></span><span id="uds_arrowkeys"></span><dl> <dt>**UDS \_ ARROWKEYS**</dt> </dl>       | Faz com que o controle de cima para baixo aumente e reduza a posição quando as teclas seta para cima e seta para baixo são pressionadas.<br/>                                                                                                                                                                                                                                                                          |
-| <span id="UDS_AUTOBUDDY"></span><span id="uds_autobuddy"></span><dl> <dt>**UDS \_ AUTObuddy**</dt> </dl>       | Seleciona automaticamente a janela anterior na ordem z como a janela de amigo do controle de cima para baixo.<br/>                                                                                                                                                                                                                                                                                                |
-| <span id="UDS_HORZ"></span><span id="uds_horz"></span><dl> <dt>**UDS \_ na horizontal**</dt> </dl>                      | Faz com que as setas do controle de cima para baixo apontem para a esquerda e para a direita, em vez de para cima e para baixo.<br/>                                                                                                                                                                                                                                                                                                            |
-| <span id="UDS_HOTTRACK"></span><span id="uds_hottrack"></span><dl> <dt>**UDS \_ HOTTRACK**</dt> </dl>          | Faz com que o controle exiba o comportamento de "acompanhamento dinâmico". Ou seja, ele realça a seta para cima e a seta para baixo no controle conforme o ponteiro passa sobre eles. Este estilo requer o Windows 98 ou o Windows 2000. Se o sistema estiver executando o Windows 95 ou o Windows NT 4,0, o sinalizador será ignorado. Para verificar se o rastreamento dinâmico está habilitado, chame [**SystemParametersInfo**](/windows/desktop/api/winuser/nf-winuser-systemparametersinfoa). <br/> |
-| <span id="UDS_NOTHOUSANDS"></span><span id="uds_nothousands"></span><dl> <dt>**UDS \_ NOmilhares**</dt> </dl> | Não insere um separador de milhar entre cada três dígitos decimais. <br/>                                                                                                                                                                                                                                                                                                                     |
-| <span id="UDS_SETBUDDYINT"></span><span id="uds_setbuddyint"></span><dl> <dt>**UDS \_ SETBUDDYINT**</dt> </dl> | Faz com que o controle de cima para baixo defina o texto da janela Buddy (usando a mensagem [**\_ SetText do WM**](/windows/desktop/winmsg/wm-settext) ) quando a posição é alterada. O texto consiste na posição formatada como uma cadeia de caracteres decimal ou hexadecimal.<br/>                                                                                                                                                             |
-| <span id="UDS_WRAP"></span><span id="uds_wrap"></span><dl> <dt>**\_encapsulamento de UDS**</dt> </dl>                      | Faz com que a posição seja "encapsulada" se for incrementada ou diminuída além do final ou do início do intervalo.<br/>                                                                                                                                                                                                                                                                                 |
+| <span id="UDS_ALIGNLEFT"></span><span id="uds_alignleft"></span><dl> <dt>**UDS \_ ALIGNLEFT**</dt> </dl>       | Posiciona o controle para cima para baixo ao lado da borda esquerda da janela do parceiro. A janela do colega é movida para a direita e sua largura é reduzida para acomodar a largura do controle de cima para baixo.<br/>                                                                                                                                                                                                   |
+| <span id="UDS_ALIGNRIGHT"></span><span id="uds_alignright"></span><dl> <dt>**UDS \_ ALIGNRIGHT**</dt> </dl>    | Posiciona o controle para cima para baixo ao lado da borda direita da janela do colega. A largura da janela do parceiro é reduzida para acomodar a largura do controle de cima para baixo.<br/>                                                                                                                                                                                                                          |
+| <span id="UDS_ARROWKEYS"></span><span id="uds_arrowkeys"></span><dl> <dt>**TECLAS DE DIREÇÃO \_ DO UDS**</dt> </dl>       | Faz com que o controle para cima para baixo incremente e decremente a posição quando as teclas SETA PARA CIMA e SETA PARA BAIXO são pressionadas.<br/>                                                                                                                                                                                                                                                                          |
+| <span id="UDS_AUTOBUDDY"></span><span id="uds_autobuddy"></span><dl> <dt>**UDS \_ AUTOBUDDY**</dt> </dl>       | Seleciona automaticamente a janela anterior na ordem z como a janela do parceiro do controle de cima para baixo.<br/>                                                                                                                                                                                                                                                                                                |
+| <span id="UDS_HORZ"></span><span id="uds_horz"></span><dl> <dt>**UDS \_ HORZ**</dt> </dl>                      | Faz com que as setas do controle para cima para baixo apontem para a esquerda e para a direita em vez de para cima e para baixo.<br/>                                                                                                                                                                                                                                                                                                            |
+| <span id="UDS_HOTTRACK"></span><span id="uds_hottrack"></span><dl> <dt>**UDS \_ HOTTRACK**</dt> </dl>          | Faz o controle exibir o comportamento de "acompanhamento a quente". Ou seja, ele realça a SETA PARA CIMA e a SETA PARA BAIXO no controle à medida que o ponteiro passa sobre eles. Esse estilo requer Windows 98 ou Windows 2000. Se o sistema estiver executando Windows 95 ou Windows NT 4.0, o sinalizador será ignorado. Para verificar se o acompanhamento a quente está habilitado, chame [**SystemParametersInfo**](/windows/desktop/api/winuser/nf-winuser-systemparametersinfoa). <br/> |
+| <span id="UDS_NOTHOUSANDS"></span><span id="uds_nothousands"></span><dl> <dt>**UDS \_ NOTHOUSANDS**</dt> </dl> | Não insere um separador de milhares entre cada três dígitos decimais. <br/>                                                                                                                                                                                                                                                                                                                     |
+| <span id="UDS_SETBUDDYINT"></span><span id="uds_setbuddyint"></span><dl> <dt>**UDS \_ SETBUDDYINT**</dt> </dl> | Faz com que o controle para cima para baixo de definir o texto da janela do parceiro (usando a mensagem [**WM \_ SETTEXT)**](/windows/desktop/winmsg/wm-settext) quando a posição é muda. O texto consiste na posição formatada como uma cadeia de caracteres decimal ou hexadecimal.<br/>                                                                                                                                                             |
+| <span id="UDS_WRAP"></span><span id="uds_wrap"></span><dl> <dt>**UDS \_ WRAP**</dt> </dl>                      | Faz com que a posição seja "wrap" se ela for incrementada ou decrementada além do término ou início do intervalo.<br/>                                                                                                                                                                                                                                                                                 |
 
 
 
@@ -53,7 +53,7 @@ Esta seção lista os estilos usados ao criar controles de cima para baixo.
 
 | Requisito | Valor |
 |-------------------|---------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>CommCtrl. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>CommCtrl.h</dt> </dl> |
 
 
 

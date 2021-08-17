@@ -5,12 +5,12 @@ ROBOTS: NOINDEX, NOFOLLOW
 ms.assetid: 3e780705-09f9-4368-9bae-ad20c45e4fe1
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7ec592153e823fe6ffaabf0afa1e7b8be24379a8
-ms.sourcegitcommit: 3e70ae762629e244028b437420ed50b5850db4e3
+ms.openlocfilehash: 8b10405473a92a9bd93471c94ef497dbb50f04fc260724f00c6dabf2f07c7341
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "104007166"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118977106"
 ---
 # <a name="glossary-imapi"></a>Glossário (IMAPi)
 
@@ -229,14 +229,14 @@ A API de Mestração de imagem usada para criar e gravar imagens mestras (em opo
 <span id="imapi.imapi2_glossary_IMAPIv1"></span><span id="imapi.imapi2_glossary_imapiv1"></span><span id="IMAPI.IMAPI2_GLOSSARY_IMAPIV1"></span>**IMAPIv1** 
 </dt> <dd>
 
-A versão do IMAPi primeiro exposta no Windows XP. O IMAPi 1,0 dá suporte a mídia CD-R e CD-RW.
+a versão do imapi primeiro exposta no Windows XP. O IMAPi 1,0 dá suporte a mídia CD-R e CD-RW.
 
 </dd> <dt>
 
 <span id="imapi.imapi2_glossary_IMAPIv2"></span><span id="imapi.imapi2_glossary_imapiv2"></span><span id="IMAPI.IMAPI2_GLOSSARY_IMAPIV2"></span>**IMAPIv2** 
 </dt> <dd>
 
-A segunda versão do IMAPi, lançada com o Windows Vista.
+a segunda versão do imapi, lançada com o Windows Vista.
 
 </dd> <dt>
 
@@ -278,11 +278,11 @@ O conjunto de comandos de multimídia que é definido pelo grupo de trabalho T10
 <span id="imapi.imapi2_glossary_MtFuji"></span><span id="imapi.imapi2_glossary_mtfuji"></span><span id="IMAPI.IMAPI2_GLOSSARY_MTFUJI"></span>**Mt. Fuji**
 </dt> <dd>
 
-Um conjunto de comandos para controlar dispositivos multimídia, semelhante ao conjunto de comandos do MMC. Alguns itens (como recursos ou tipos de mídia) são descritos no Mt. Os documentos Fuji, enquanto outros são descritos pela primeira vez nos documentos do MMC. Os rascunhos de trabalho atuais do conjunto de comandos podem ser encontrados em [ftp://ftp.AVC-Pioneer.com](ftp://ftp.avc-pioneer.com/).
+Um conjunto de comandos para controlar dispositivos multimídia, semelhante ao conjunto de comandos do MMC. Alguns itens (como recursos ou tipos de mídia) são descritos no Mt. Os documentos de São Paulo, enquanto outros são descritos pela primeira vez nos documentos do MMC. Os rascunhos de trabalho atuais do conjunto de comandos podem ser encontrados [em ftp://ftp.avc-pioneer.com](ftp://ftp.avc-pioneer.com/).
 
 </dd> <dt>
 
-<span id="imapi.imapi2_glossary_SCSI"></span><span id="imapi.imapi2_glossary_scsi"></span><span id="IMAPI.IMAPI2_GLOSSARY_SCSI"></span>**SCSI**
+<span id="imapi.imapi2_glossary_SCSI"></span><span id="imapi.imapi2_glossary_scsi"></span><span id="IMAPI.IMAPI2_GLOSSARY_SCSI"></span>**Scsi**
 </dt> <dd>
 
 A interface do sistema de computador pequeno.
@@ -292,41 +292,41 @@ A interface do sistema de computador pequeno.
 <span id="imapi.imapi2_glossary_SCSICommand"></span><span id="imapi.imapi2_glossary_scsicommand"></span><span id="IMAPI.IMAPI2_GLOSSARY_SCSICOMMAND"></span>**Comando SCSI**
 </dt> <dd>
 
-Qualquer um dos vários comandos de pacote, como os definidos no documento do MMC. Esses comandos podem ser enviados usando qualquer mecanismo de transporte apropriado, como SCSI, ATAPI, USB ou IEEE1394.
+Qualquer um de vários comandos de pacote, como aqueles definidos no documento do MMC. Esses comandos podem ser enviados usando qualquer mecanismo de transporte apropriado, como SCSI, ATAPI, USB ou IEEE1394.
 
 </dd> <dt>
 
-<span id="imapi.imapi2_glossary_SessonAtOnce"></span><span id="imapi.imapi2_glossary_sessonatonce"></span><span id="IMAPI.IMAPI2_GLOSSARY_SESSONATONCE"></span>**Sessão em uma só vez**
+<span id="imapi.imapi2_glossary_SessonAtOnce"></span><span id="imapi.imapi2_glossary_sessonatonce"></span><span id="IMAPI.IMAPI2_GLOSSARY_SESSONATONCE"></span>**Sessão ao mesmo tempo**
 </dt> <dd>
 
-Um método para criar um CD mais um disco. Uma sessão de gravação registra as faixas de áudio no disco e uma segunda sessão grava uma única faixa de CD-XA no disco e fecha o disco.
+Um método de criação de um disco CD Plus. Uma sessão de gravação registra faixas de áudio no disco e uma segunda sessão grava uma única faixa CD-XA no disco e fecha o disco.
 
 </dd> <dt>
 
-<span id="imapi.imapi2_glossary_TrackAtOnce"></span><span id="imapi.imapi2_glossary_trackatonce"></span><span id="IMAPI.IMAPI2_GLOSSARY_TRACKATONCE"></span>**Acompanhar uma vez**
+<span id="imapi.imapi2_glossary_TrackAtOnce"></span><span id="imapi.imapi2_glossary_trackatonce"></span><span id="IMAPI.IMAPI2_GLOSSARY_TRACKATONCE"></span>**Acompanhar de uma vez**
 </dt> <dd>
 
-Um método de gravação na mídia de CD em que os dados de uma única faixa são gravados ao mesmo tempo. Quando todas as faixas são gravadas, a sessão é fechada como uma etapa final que envolve a gravação das áreas de cliente potencial e de saída do disco.
+Um método de gravação na mídia de CD em que os dados de uma única faixa são gravados ao mesmo tempo. Quando todas as faixas são escritas, a sessão é fechada como uma etapa final que envolve a escrita das áreas de lead-in e de saída do disco.
 
 </dd> <dt>
 
-<span id="imapi.imapi2_glossary_UDF"></span><span id="imapi.imapi2_glossary_udf"></span><span id="IMAPI.IMAPI2_GLOSSARY_UDF"></span>**UDF (formato de disco universal)**
+<span id="imapi.imapi2_glossary_UDF"></span><span id="imapi.imapi2_glossary_udf"></span><span id="IMAPI.IMAPI2_GLOSSARY_UDF"></span>**Formato de disco universal (UDF)**
 </dt> <dd>
 
-Esse sistema de arquivos é definido por OSTA (a associação de tecnologia de armazenamento óptico) que dá suporte a discos de sessão única e de várias sessões.
+Esse sistema de arquivos é definido pelo OSTA (Associação de Tecnologia Armazenamento Óptico) que dá suporte a discos de sessão única e de várias sessões.
 
 </dd> <dt>
 
-<span id="imapi.imapi2_glossary_VTable"></span><span id="imapi.imapi2_glossary_vtable"></span><span id="IMAPI.IMAPI2_GLOSSARY_VTABLE"></span>**VTable** 
+<span id="imapi.imapi2_glossary_VTable"></span><span id="imapi.imapi2_glossary_vtable"></span><span id="IMAPI.IMAPI2_GLOSSARY_VTABLE"></span>**Tabelav** 
 </dt> <dd>
 
-Uma designação de interface COM em que uma determinada interface dá suporte ao método vtable de chamar uma função. Consulte o MSDN para obter mais informações sobre este tópico COM avançado.
+Uma designação de interface COM em que uma determinada interface dá suporte ao método vtable de chamar uma função. Consulte MSDN para obter mais informações sobre este tópico COM avançado.
 
 </dd> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,12 +1,12 @@
 ---
 title: Método SetCurrentRedirectableAddresses da classe Win32_TSSessionDirectory
-description: Define a lista configurada de endereços DNS qualificados que podem ser usados para redirecionamento.
+description: Define a lista configurada de endereços qualificados para DNS que podem ser usados para redirecionamento.
 ms.assetid: cad6a8a8-fdf1-406e-abeb-37acb396ac16
 ms.tgt_platform: multiple
 keywords:
-- Serviços de Área de Trabalho Remota do método SetCurrentRedirectableAddresses
-- Método SetCurrentRedirectableAddresses Serviços de Área de Trabalho Remota, classe Win32_TSSessionDirectory
-- Classe Win32_TSSessionDirectory Serviços de Área de Trabalho Remota, método SetCurrentRedirectableAddresses
+- Método SetCurrentRedirectableAddresses Serviços de Área de Trabalho Remota
+- Método SetCurrentRedirectableAddresses Serviços de Área de Trabalho Remota , Win32_TSSessionDirectory classe
+- Win32_TSSessionDirectory classe Serviços de Área de Trabalho Remota , método SetCurrentRedirectableAddresses
 topic_type:
 - apiref
 api_name:
@@ -24,9 +24,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117756096"
 ---
-# <a name="setcurrentredirectableaddresses-method-of-the-win32_tssessiondirectory-class"></a>Método SetCurrentRedirectableAddresses da classe Win32 \_ TSSessionDirectory
+# <a name="setcurrentredirectableaddresses-method-of-the-win32_tssessiondirectory-class"></a>Método SetCurrentRedirectableAddresses da classe \_ Win32 TSSessionDirectory
 
-O método **SetCurrentRedirectableAddresses** define a lista configurada de endereços DNS qualificados que podem ser usados para redirecionamento.
+O **método SetCurrentRedirectableAddresses** define a lista configurada de endereços qualificados para DNS que podem ser usados para redirecionamento.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -44,33 +44,33 @@ uint32 SetCurrentRedirectableAddresses(
 
 <dl> <dt>
 
-*fTokenRedirection* \[ no\]
+*fTokenRedirection* \[ Em\]
 </dt> <dd>
 
-Tipo: **UInt32**
+Tipo: **uint32**
 
 Um sinalizador que indica se o redirecionamento de token deve ser usado.
 
 </dd> <dt>
 
-*IPAddresses* \[ no\]
+*IPAddresses* \[ Em\]
 </dt> <dd>
 
-Tipo: **cadeia \[ \] de caracteres**
+Tipo: cadeia **de caracteres \[ \]**
 
-Uma matriz de cadeias de caracteres que representa a lista de endereços IP qualificados do DNS que podem ser usados para redirecionamento.
+Uma matriz de cadeias de caracteres que representa a lista de endereços IP qualificados para DNS que podem ser usados para redirecionamento.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor retornado
 
-Tipo: **UInt32**
+Tipo: **uint32**
 
-Retorna 0 em caso de êxito; caso contrário, retorna um código de erro WMI. Consulte [serviços de área de trabalho remota códigos de erro do provedor WMI](terminal-services-wmi-provider-error-codes.md) para obter uma lista desses valores.
+Retorna 0 em caso de êxito; caso contrário, retornará um código de erro WMI. Consulte Serviços de Área de Trabalho Remota códigos de erro do provedor [WMI](terminal-services-wmi-provider-error-codes.md) para ver uma lista desses valores.
 
 ## <a name="remarks"></a>Comentários
 
-os arquivos de formato MOF (MOF) contêm as definições de classes de Instrumentação de Gerenciamento do Windows (WMI). os arquivos MOF não são instalados como parte do SDK (Software Development Kit) do Microsoft Windows. Eles são instalados no servidor quando você adiciona a função associada usando o Gerenciador do Servidor. Para obter mais informações sobre arquivos MOF, consulte [formato MOF (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
+arquivos Managed Object Format (MOF) contêm as definições para classes WMI (Instrumentação de Gerenciamento de Windows). Os arquivos MOF não são instalados como parte do Microsoft Windows Software Development Kit (SDK). Eles são instalados no servidor quando você adiciona a função associada usando o Gerenciador do Servidor. Para obter mais informações sobre arquivos MOF, [consulte Managed Object Format (MOF).](/windows/desktop/WmiSdk/managed-object-format--mof-)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -80,8 +80,8 @@ os arquivos de formato MOF (MOF) contêm as definições de classes de Instrumen
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Nenhum compatível<br/>                                                               |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| Namespace<br/>                | \\TerminalServices da CIMv2 raiz \\<br/>                                                |
-| MOF<br/>                      | <dl> <dt>TSCfgWmi. mof</dt> </dl> |
+| Namespace<br/>                | \\CiMv2 \\ TerminalServices raiz<br/>                                                |
+| MOF<br/>                      | <dl> <dt>TSCfgWmi.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>TSCfgWmi.dll</dt> </dl> |
 
 
@@ -90,7 +90,7 @@ os arquivos de formato MOF (MOF) contêm as definições de classes de Instrumen
 
 <dl> <dt>
 
-[**\_TSSessionDirectory Win32**](win32-tssessiondirectory.md)
+[**Win32 \_ TSSessionDirectory**](win32-tssessiondirectory.md)
 </dt> </dl>
 
  

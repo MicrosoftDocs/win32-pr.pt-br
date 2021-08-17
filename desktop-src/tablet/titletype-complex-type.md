@@ -12,12 +12,12 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: ee57b54f10af432a8e30c1d304b5acba16b232f0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fdfa8e0ad25955c92adac195f6c5d6c7b53d56bb90e0df1f10b0b94d5f1ff7e5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103837217"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118966695"
 ---
 # <a name="titletype-complex-type"></a>Tipo complexo titletype
 
@@ -33,7 +33,7 @@ Define o tipo que contém informações de título para a nota do diário.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Somente aplicativos de área de trabalho do Windows XP Tablet PC Edition \[\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do XP Tablet PC Edition\]<br/> |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                     |
 
 

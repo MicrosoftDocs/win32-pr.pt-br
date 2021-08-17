@@ -4,18 +4,18 @@ ms.assetid: 69114875-f3e0-45e9-8e87-1f4e9de08db1
 title: Marcadores de desenho
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 497b725e3a266e296950394a9bb9b2b76a17cb25
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9b5e05c651bf95aa48a8ef11fd0819523ee5da7652e27ecebaeff8ee9de4f1e0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103661614"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117887114"
 ---
 # <a name="drawing-markers"></a>Marcadores de desenho
 
 Você pode usar as funções de linha para desenhar marcadores. Um marcador é um símbolo centralizado em um ponto. Os aplicativos de desenho usam marcadores para designar pontos de partida, pontos finais e pontos de controle. Os aplicativos de planilha usam marcadores para designar pontos de interesse em um gráfico ou grafo.
 
-No exemplo de código a seguir, a função de marcador definida pelo aplicativo cria um marcador usando as funções [**MoveToEx**](/windows/desktop/api/Wingdi/nf-wingdi-movetoex) e [**LineTo**](/windows/desktop/api/Wingdi/nf-wingdi-lineto) . Essas funções desenham duas linhas interseccionadas, 20 pixels de comprimento, centralizadas nas coordenadas do cursor.
+No exemplo de código a seguir, a função Marker definida pelo aplicativo cria um marcador usando as [**funções MoveToEx**](/windows/desktop/api/Wingdi/nf-wingdi-movetoex) e [**LineTo.**](/windows/desktop/api/Wingdi/nf-wingdi-lineto) Essas funções desenham duas linhas de interseção, 20 pixels de comprimento, centralizadas sobre as coordenadas do cursor.
 
 
 ```C++
@@ -35,7 +35,7 @@ void Marker(LONG x, LONG y, HWND hwnd)
 
 
 
-O sistema armazena as coordenadas do cursor no parâmetro *lParam* da mensagem LBUTTONDOWN do [**WM \_**](../inputdev/wm-lbuttondown.md) quando o usuário pressiona o botão esquerdo do mouse. O código a seguir demonstra como um aplicativo obtém essas coordenadas, determina se elas estão dentro de sua área de cliente e as transmite para a função de marcador para desenhar o marcador.
+O sistema armazena as coordenadas do cursor no parâmetro *lParam* da mensagem [**WM \_ LBUTTONDOWN**](../inputdev/wm-lbuttondown.md) quando o usuário pressiona o botão esquerdo do mouse. O código a seguir demonstra como um aplicativo obtém essas coordenadas, determina se elas estão dentro de sua área de cliente e as passa para a função Marker para desenhar o marcador.
 
 
 ```C++

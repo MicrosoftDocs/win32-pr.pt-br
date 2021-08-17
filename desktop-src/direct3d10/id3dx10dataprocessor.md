@@ -1,7 +1,7 @@
 ---
 description: Objeto de processamento de dados usado pela interface ID3DX10ThreadPump para processar dados carregados de forma assíncrona.
 ms.assetid: c932f558-10da-45fc-a833-8ed86fa065ab
-title: Interface ID3DX10DataProcessor (D3DX10. h)
+title: Interface ID3DX10DataProcessor (D3DX10.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -27,7 +27,7 @@ Objeto de processamento de dados usado pela [**interface ID3DX10ThreadPump**](id
 
 ## <a name="members"></a>Membros
 
-A interface **ID3DX10DataProcessor** herda da interface [**IUnknown**](/windows/win32/api/unknwn/nn-unknwn-iunknown) . **ID3DX10DataProcessor** também tem estes tipos de membros:
+A interface **ID3DX10DataProcessor** herda da interface [**IUnknown.**](/windows/win32/api/unknwn/nn-unknwn-iunknown) **ID3DX10DataProcessor** também tem estes tipos de membros:
 
 -   [Métodos](#methods)
 
@@ -39,9 +39,9 @@ A interface **ID3DX10DataProcessor** tem esses métodos.
 
 | Método                                                                | Descrição                                                                                                                         |
 |:----------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------|
-| [**Deviceobject**](id3dx10dataprocessor-createdeviceobject.md) | Crie um objeto de dispositivo.<br/>                                                                                                  |
+| [**CreateDeviceObject**](id3dx10dataprocessor-createdeviceobject.md) | Crie um objeto de dispositivo.<br/>                                                                                                  |
 | [**Destruir**](id3dx10dataprocessor-destroy.md)                       | Usado por uma [**interface ID3DX10ThreadPump**](id3dx10threadpump.md) para destruir o processador após a conclusão de um item de trabalho.<br/> |
-| [**Processar**](id3dx10dataprocessor-process.md)                       | Processar alguns dados.<br/>                                                                                                       |
+| [**Processar**](id3dx10dataprocessor-process.md)                       | Processe alguns dados.<br/>                                                                                                       |
 
 
 
@@ -49,7 +49,7 @@ A interface **ID3DX10DataProcessor** tem esses métodos.
 
 ## <a name="remarks"></a>Comentários
 
-Esse objeto pode ser herdado e seus membros são redefinidos. Isso permitiria que você personalize a API para processar seus próprios formatos de arquivo personalizados.
+Esse objeto pode ser herdado e seus membros redefinidos. Isso permite que você personalize a API para processar seus próprios formatos de arquivo personalizados.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -57,8 +57,8 @@ Esse objeto pode ser herdado e seus membros são redefinidos. Isso permitiria qu
 
 | Requisito | Valor |
 |--------------------|---------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3DX10. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>D3DX10. lib</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>D3DX10.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>D3DX10.lib</dt> </dl> |
 
 
 
@@ -66,7 +66,7 @@ Esse objeto pode ser herdado e seus membros são redefinidos. Isso permitiria qu
 
 <dl> <dt>
 
-[Interfaces D3DX](d3d10-graphics-reference-d3dx10-interfaces.md)
+[D3DX Interfaces](d3d10-graphics-reference-d3dx10-interfaces.md)
 </dt> </dl>
 
  

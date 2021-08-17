@@ -21,17 +21,17 @@ ms.locfileid: "119444386"
 ---
 # <a name="cfolderitemsfdf-class"></a>Classe CFolderItemsFDF
 
-**CFolderItemsFDF** é uma coleção de [**FolderItems**](folderitems.md). Ele implementa a interface [**IInsertItem**](/windows/desktop/api/Shobjidl/nn-shobjidl-iinsertitem) .
+**CFolderItemsFDF** é uma coleção de [**FolderItems**](folderitems.md). Ele implementa a interface [**IInsertItem.**](/windows/desktop/api/Shobjidl/nn-shobjidl-iinsertitem)
 
 ## <a name="members"></a>Membros
 
-A classe **CFolderItemsFDF** herda de [**CFolderItems**](class-cfolderitems-class.md) , mas não tem membros adicionais.
+A **classe CFolderItemsFDF** herda [**de CFolderItems,**](class-cfolderitems-class.md) mas não tem membros adicionais.
 
 ## <a name="remarks"></a>Comentários
 
-O FDF significa *de pastas diferentes*.
+FDF significa *From Different Folders*.
 
-A classe [**CFolderItems**](class-cfolderitems-class.md) enumera itens de várias pastas e usa a interface [**IInsertItem**](/windows/desktop/api/Shobjidl/nn-shobjidl-iinsertitem) para inserir os itens na coleção.
+A [**classe CFolderItems**](class-cfolderitems-class.md) enumera itens de várias pastas e usa a interface [**IInsertItem**](/windows/desktop/api/Shobjidl/nn-shobjidl-iinsertitem) para inserir os itens na coleção.
 
 ## <a name="see-also"></a>Confira também
 

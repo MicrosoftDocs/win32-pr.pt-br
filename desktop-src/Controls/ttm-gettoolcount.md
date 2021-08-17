@@ -1,9 +1,9 @@
 ---
-title: Mensagem de TTM_GETTOOLCOUNT (commctrl. h)
-description: Recupera uma contagem das ferramentas mantidas por um controle ToolTip.
+title: TTM_GETTOOLCOUNT mensagem (Commctrl.h)
+description: Recupera uma contagem das ferramentas mantidas por um controle de dica de ferramenta.
 ms.assetid: 0b0f3ba0-0361-4398-a828-30b7bd278652
 keywords:
-- Controles de TTM_GETTOOLCOUNT de mensagens do Windows
+- TTM_GETTOOLCOUNT controles Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 57c320abc38035fc432e9c121457524cb8621f53
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: dd61f90a1789989603e1bde459f33a92a8bf4c35a460f0a3c3757645e49588e4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104085574"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119967876"
 ---
-# <a name="ttm_gettoolcount-message"></a>\_Mensagem TTM GETTOOLCOUNT
+# <a name="ttm_gettoolcount-message"></a>Mensagem \_ GETTOOLCOUNT TTM
 
-Recupera uma contagem das ferramentas mantidas por um controle ToolTip.
+Recupera uma contagem das ferramentas mantidas por um controle de dica de ferramenta.
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -35,7 +35,7 @@ Recupera uma contagem das ferramentas mantidas por um controle ToolTip.
 *lParam* 
 </dt> <dd>Deve ser zero.</dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna uma contagem de ferramentas.
 
@@ -45,9 +45,9 @@ Retorna uma contagem de ferramentas.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

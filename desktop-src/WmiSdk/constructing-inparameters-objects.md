@@ -1,28 +1,28 @@
 ---
-description: Um objeto de inparâmetros contém a lista de parâmetros para chamar métodos de provedor ao usar um tipo de chamada de ExecMethod.
+description: Um objeto InParameters contém a lista de parâmetros para chamar métodos de provedor ao usar um tipo ExecMethod de chamada.
 ms.assetid: 8cc65129-1698-4ada-b493-672772c94045
 ms.tgt_platform: multiple
-title: Construindo objetos de inparâmetros
+title: Construindo objetos InParameters
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fbf9a351caec1ca7af3113bead4078670c88a5f3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0bc13a51687954331a050337fe785bab29b23ee9c72785ffde78d4f8a8e0d198
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103827847"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119131578"
 ---
-# <a name="constructing-inparameters-objects"></a>Construindo objetos de inparâmetros
+# <a name="constructing-inparameters-objects"></a>Construindo objetos InParameters
 
-Um objeto de [**inparâmetros**](swbemmethod-inparameters.md) contém a lista de parâmetros para chamar métodos de provedor ao usar um tipo de chamada de **ExecMethod** . Os métodos [**SWbemObject.Exe\_ cMethod**](swbemobject-execmethod-.md), [**SWbemObject.Exe\_ cMethodAsync**](swbemobject-execmethodasync-.md), [**SWbemServices.ExecMethod**](swbemservices-execmethod.md)e [**SWbemServices.ExecMethodAsync**](swbemservices-execmethodasync.md) requerem um objeto de **inparâmetros** .
+Um [**objeto InParameters**](swbemmethod-inparameters.md) contém a lista de parâmetros para chamar métodos de provedor ao usar **um tipo execMethod** de chamada. Os [**métodosSWbemObject.ExecMethod \_**](swbemobject-execmethod-.md),SWbemObject.Exe [**cMethodAsync, \_**](swbemobject-execmethodasync-.md)SWbemServices.Exe [**cMethod**](swbemservices-execmethod.md)e [**SWbemServices.ExecMethodAsync**](swbemservices-execmethodasync.md) exigem um objeto **InParameters.**
 
-O procedimento a seguir descreve como construir um objeto de [**inparâmetros**](swbemmethod-inparameters.md) .
+O procedimento a seguir descreve como construir um [**objeto InParameters.**](swbemmethod-inparameters.md)
 
-**Para construir o parâmetro *objwbemInParams***
+**Para construir o *parâmetro objwbemInParams***
 
-1.  Conecte-se ao WMI.
+1.  Conexão para WMI.
 2.  Obtenha a definição da classe WMI que define o método que você deseja executar.
-3.  Obtenha um objeto de [**inparâmetros**](swbemmethod-inparameters.md) específico para o método de classe WMI que você deseja executar.
+3.  Obtenha um [**objeto InParameters**](swbemmethod-inparameters.md) específico para o método de classe WMI que você deseja executar.
 
     ```VB
     Set objInParam = objShare.Methods_("Create"). _
@@ -31,9 +31,9 @@ O procedimento a seguir descreve como construir um objeto de [**inparâmetros**]
 
     
 
-4.  Defina as propriedades da instância para quaisquer valores apropriados. Certifique-se de atribuir valores às propriedades de chave na classe WMI que contém o método que você deseja executar.
+4.  De definir as propriedades da instância como quaisquer valores apropriados. Certifique-se de dar valores para as propriedades de chave na classe WMI que contém o método que você deseja executar.
 
-    Por exemplo, se você quiser definir um parâmetro de entrada chamado myinputparam para o valor "ABC" em uma instância de [**inparâmetros**](swbemmethod-inparameters.md) chamada "Inst", o código ficaria assim.
+    Por exemplo, se você quiser definir um parâmetro de entrada chamado myinputparam com o valor "abc" em uma instância do [**InParameters**](swbemmethod-inparameters.md) chamada "INST", o código será assim.
 
     ```VB
     INST.Properties_.Add ("myinputparam").Value = "abc".
@@ -43,7 +43,7 @@ O procedimento a seguir descreve como construir um objeto de [**inparâmetros**]
 
 5.  Execute o método e obtenha o status de retorno do método que você está executando.
 
-O exemplo de código a seguir ilustra a configuração do objeto [**Parameters**](swbemmethod-inparameters.md) para criar um novo objeto WMI que representa um compartilhamento. Para obter mais informações sobre o objeto [**Parameters**](swbemmethod-outparameters.md) , consulte [analisando objetos de Parameters](parsing-outparameters-objects.md). Este exemplo retorna um valor de retorno com êxito (0) se houver uma pasta chamada "compartilhamento" no local "C:/compartilhamento". Este exemplo permite que essa pasta seja compartilhada com outros usuários.
+O exemplo de código a seguir ilustra a configuração do [**objeto InParameters**](swbemmethod-inparameters.md) para criar um novo objeto WMI que representa um compartilhamento. Para obter mais informações sobre o [**objeto OutParameters,**](swbemmethod-outparameters.md) consulte [Análise de objetos OutParameters](parsing-outparameters-objects.md). Este exemplo retornará um valor de retorno bem-sucedido (0) se houver uma pasta chamada "Compartilhamento" no local "C:/Share". Este exemplo permite que essa pasta seja compartilhada com outros usuários.
 
 
 ```VB

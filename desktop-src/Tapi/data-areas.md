@@ -4,12 +4,12 @@ ms.assetid: 5734107d-8104-4d8a-b3f7-3cc2a48f71ca
 title: Áreas de dados
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 81376549c63b4fcea92f705246cd58161faeac94
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ed05d6233a8c8ed31a2d00d28970a517ef181f00689c7da34673d3044fffb4dd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105781051"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117946139"
 ---
 # <a name="data-areas"></a>Áreas de dados
 

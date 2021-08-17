@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre: enumeração de JET_DbInfo'
-title: Enumeração de JET_DbInfo
+description: 'Saiba mais sobre: JET_DbInfo enumeração'
+title: JET_DbInfo enumeração
 TOCTitle: JET_DbInfo enumeration
 ms:assetid: T:Microsoft.Isam.Esent.Interop.JET_DbInfo
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_dbinfo(v=EXCHG.10)
@@ -48,19 +48,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 39c6c3175c08e4f7644ad4f0b41137e12e84f71d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c364b89ccb50542130c988a643fed594a34e370e5adb5e9d0a13f77eab5b04d8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105771268"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119112225"
 ---
-# <a name="jet_dbinfo-enumeration"></a>Enumeração de JET_DbInfo
+# <a name="jet_dbinfo-enumeration"></a>JET_DbInfo enumeração
 
 Níveis de informações para recuperar informações do banco de dados.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -99,12 +99,12 @@ public enum JET_DbInfo
 <tr class="odd">
 <td></td>
 <td>Opções</td>
-<td>Retorna um <a href="hh579532(v=exchg.10).md">OpenDatabaseGrbit</a>. Isso indica se o banco de dados está aberto em modo exclusivo. Se o banco de dados estiver em modo exclusivo, o <a href="hh579532(v=exchg.10).md">exclusivo</a> será retornado, caso contrário, zero será retornado. Outras opções de grbit de banco de dados para JetAttachDatabase e JetOpenDatabase não são retornadas.</td>
+<td>Retorna um <a href="hh579532(v=exchg.10).md">OpenDatabaseGrbit.</a> Isso indica se o banco de dados é aberto no modo exclusivo. Se o banco de dados estiver no modo exclusivo, <a href="hh579532(v=exchg.10).md">Exclusivo</a> será retornado, caso contrário, zero será retornado. Outras opções de grbit de banco de dados para JetAttachDatabase e JetOpenDatabase não são retornadas.</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>Transactions</td>
-<td>Retorna um número um maior do que o nível máximo para o qual as transações podem ser aninhadas. Se <a href="dn292105(v=exchg.10).md">JetBeginTransaction (JET_SESID)</a> for chamado (em um modo de aninhamento, ou seja, na mesma sessão, sem uma confirmação ou reversão) quantas vezes esse valor, na última chamada, <a href="hh564840(v=exchg.10).md">TransTooDeep</a> será retornado (Int32).</td>
+<td>Retorna um número um maior que o nível máximo ao qual as transações podem ser aninhadas. Se <a href="dn292105(v=exchg.10).md">JetBeginTransaction(JET_SESID)</a> for chamado (de forma aninhada, ou seja, na mesma sessão, sem uma confirmação ou reposição) tantas vezes quanto esse valor, na última chamada <a href="hh564840(v=exchg.10).md">TransTooDeep</a> será retornado (Int32).</td>
 </tr>
 <tr class="odd">
 <td></td>
@@ -113,13 +113,13 @@ public enum JET_DbInfo
 </tr>
 <tr class="even">
 <td></td>
-<td>Tamanho</td>
-<td>Retorna o tamanho do banco de dados, em páginas (Int32).</td>
+<td>Filesize</td>
+<td>Retorna o filesize do banco de dados, em páginas (Int32).</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>SpaceOwned</td>
-<td>Retorna o espaço de Propriedade do banco de dados, em páginas (Int32).</td>
+<td>Retorna o espaço de propriedade do banco de dados, em páginas (Int32).</td>
 </tr>
 <tr class="even">
 <td></td>
@@ -129,12 +129,12 @@ public enum JET_DbInfo
 <tr class="odd">
 <td></td>
 <td>Diversos</td>
-<td>Retorna um objeto <a href="hh538867(v=exchg.10).md">JET_DBINFOMISC</a> .</td>
+<td>Retorna um <a href="hh538867(v=exchg.10).md">JET_DBINFOMISC</a> objeto .</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>DBInUse</td>
-<td>Retorna um valor booleano que indica se o banco de dados está anexado (booliano).</td>
+<td>Retorna um booliana que indica se o banco de dados está anexado (booliana).</td>
 </tr>
 <tr class="odd">
 <td></td>
@@ -154,4 +154,4 @@ public enum JET_DbInfo
 
 #### <a name="reference"></a>Referência
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

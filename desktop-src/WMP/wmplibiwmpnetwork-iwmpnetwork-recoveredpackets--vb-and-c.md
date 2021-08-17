@@ -1,11 +1,11 @@
 ---
 title: Propriedade IWMPNetwork recoveredPackets
-description: A propriedade recoveredPackets Obtém o número de pacotes recuperados.
+description: A propriedade recoveredPackets obtém o número de pacotes recuperados.
 ms.assetid: 90fcefcd-2bd7-4fb5-8337-36bec5d44e60
 keywords:
-- Propriedade recoveredPackets Windows Media Player
-- Propriedade recoveredPackets Windows Media Player, interface IWMPNetwork
-- Interface IWMPNetwork Windows Media Player, Propriedade recoveredPackets
+- propriedade recoveredPackets Windows Media Player
+- propriedade recoveredPackets Windows Media Player , interface IWMPNetwork
+- Interface IWMPNetwork Windows Media Player , propriedade recoveredPackets
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9fe9fb8b44249be30289abb2f8922343285ca074
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7665fad35e87b32b4e5cf20875e7b0f59c5e7fb8915fa7595fd625a04303835c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105749551"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119956076"
 ---
-# <a name="iwmpnetworkrecoveredpackets-property"></a>Propriedade IWMPNetwork:: recoveredPackets
+# <a name="iwmpnetworkrecoveredpackets-property"></a>Propriedade IWMPNetwork::recoveredPackets
 
-A propriedade **recoveredPackets** Obtém o número de pacotes recuperados.
+A **propriedade recoveredPackets** obtém o número de pacotes recuperados.
 
 ## <a name="syntax"></a>Syntax
 
@@ -46,17 +46,17 @@ Public ReadOnly Property recoveredPackets As System.Int32
 
 ## <a name="property-value"></a>Valor da propriedade
 
-Um **System. Int32** que é o número de pacotes recuperados.
+Um **System.Int32** que é o número de pacotes recuperados.
 
 ## <a name="remarks"></a>Comentários
 
-Toda vez que a reprodução é interrompida e reiniciada, essa propriedade é redefinida como zero. O valor não será redefinido se a reprodução for pausada.
+Cada vez que a reprodução é interrompida e reiniciada, essa propriedade é redefinida como zero. O valor não será redefinido se a reprodução estiver em pausa.
 
-Essa propriedade obtém informações válidas somente durante o tempo de execução quando a URL para reprodução é definida usando a propriedade **AxWindowsMediaPlayer. URL** . O valor será zero ao usar o protocolo HTTP, que é sem perdas.
+Essa propriedade obtém informações válidas somente durante o tempo de reprodução quando a URL para reprodução é definida usando **a propriedade AxWindowsMediaPlayer.URL.** O valor será zero ao usar o protocolo HTTP, que é sem perda.
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo a seguir usa **recoveredPackets** para exibir o número de pacotes recuperados em um rótulo, em resposta ao evento **PlayStateChange** . O exemplo usa um temporizador com um intervalo de 1 segundo para atualizar a exibição. O objeto **AxWMPLib. AxWindowsMediaPlayer** é representado pela variável chamada Player.
+O exemplo a seguir **usa recoveredPackets** para exibir o número de pacotes recuperados em um rótulo, em resposta ao Evento **PlayStateChange.** O exemplo usa um temporizador com um intervalo de 1 segundo para atualizar a exibição. O **objeto AxWMPLib.AxWindowsMediaPlayer** é representado pela variável chamada player.
 
 
 ```CSharp
@@ -132,7 +132,7 @@ End Sub
 
 | Requisito | Valor |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versão<br/>   | Windows Media Player 9 Series ou posterior<br/>                                                                      |
+| Versão<br/>   | Windows Media Player série 9 ou posterior<br/>                                                                      |
 | Namespace<br/> | **WMPLib**<br/>                                                                                                  |
 | Assembly<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 
@@ -142,7 +142,7 @@ End Sub
 
 <dl> <dt>
 
-[**AxWindowsMediaPlayer. URL (VB e C#)**](axwmplib-axwindowsmediaplayer-url--vb-and-c.md)
+[**AxWindowsMediaPlayer.URL (VB e C#)**](axwmplib-axwindowsmediaplayer-url--vb-and-c.md)
 </dt> <dt>
 
 [**Interface IWMPNetwork (VB e C#)**](iwmpnetwork--vb-and-c.md)

@@ -31,7 +31,7 @@ Especifica se o fluxo de vídeo é codificado em H.264 ou não.
 
 Essa propriedade é leitura/gravação.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```C++
 HRESULT put_EncodeVideo(

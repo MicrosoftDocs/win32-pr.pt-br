@@ -1,6 +1,6 @@
 ---
-title: interfaces de cliente Conexão de Área de Trabalho Remota Broker
-description: A API de cliente Conexão de Área de Trabalho Remota Broker define as interfaces a seguir.
+title: Interfaces de cliente do Conexão de Área de Trabalho Remota Broker
+description: A API de cliente do agente de Conexão de Área de Trabalho Remota define as interfaces a seguir.
 ms.assetid: BC7AF6B4-BA1B-464C-849C-40ACB2BC7E37
 ms.tgt_platform: multiple
 ms.topic: reference
@@ -12,9 +12,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119308945"
 ---
-# <a name="remote-desktop-connection-broker-client-interfaces"></a>interfaces de cliente Conexão de Área de Trabalho Remota Broker
+# <a name="remote-desktop-connection-broker-client-interfaces"></a>Interfaces de cliente do Conexão de Área de Trabalho Remota Broker
 
-A API de cliente Conexão de Área de Trabalho Remota Broker define as interfaces a seguir.
+A API de cliente do agente de Conexão de Área de Trabalho Remota define as interfaces a seguir.
 
 ## <a name="in-this-section"></a>Nesta seção
 
@@ -23,14 +23,14 @@ A API de cliente Conexão de Área de Trabalho Remota Broker define as interface
 [**IConnectionBrokerClient**](iconnectionbrokerclient.md)
 </dt> <dd>
 
-Fornece os métodos necessários para usar o Conexão de Área de Trabalho Remota Broker.
+Fornece os métodos necessários para usar o cliente do agente do Conexão de Área de Trabalho Remota.
 
 </dd> <dt>
 
 [**IConnectionBrokerRequest**](iconnectionbrokerrequest.md)
 </dt> <dd>
 
-Fornece os métodos necessários para obter os resultados do método [**IConnectionBrokerClient::GetTargetInfo**](iconnectionbrokerclient-gettargetinfo.md) assíncrono.
+Fornece os métodos necessários para obter os resultados do método assíncrona [**IConnectionBrokerClient:: GetTargetInfo**](iconnectionbrokerclient-gettargetinfo.md) .
 
 </dd> </dl>
 

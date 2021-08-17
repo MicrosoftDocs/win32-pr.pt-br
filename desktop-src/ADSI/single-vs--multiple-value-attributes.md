@@ -31,7 +31,7 @@ O ADSI normalmente carregará dados de esquema se o diretório for compatível c
 Se o diretório não tiver esquema, fornece o tipo de dados ao acessar um atributo.
 
 > [!Note]  
-> Active Directory, Exchange, Windows NT 4.0 e Servidor do Site têm um esquema. Além disso, o Active Directory tem um esquema extensível.
+> O Active Directory, Exchange, Windows NT 4.0 e o Servidor do Site têm um esquema. Além disso, o Active Directory tem um esquema extensível.
 
  
 

@@ -14,12 +14,12 @@ api_type:
 api_location:
 - Ndisnpp.dll
 - Rmtnpp.dll
-ms.openlocfilehash: 10bf0886032c93288435ade05fec46077d53753c
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 285d26e4eb141904e8a1951e6e42d0df0ef5d9738e5849057bbfe1e0a978e0b0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108113514"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119742996"
 ---
 # <a name="irtcstop-method"></a>Método IRTC:: Stop
 
@@ -48,9 +48,9 @@ Se o método não for bem-sucedido, o valor de retorno será um dos seguintes c�
 
 | Código de retorno                                                                                          | Descrição                                                                                                                   |
 |------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**NMERR \_ não \_ conectado**</dt> </dl> | O NPP não está conectado à rede. Chame [IRTC:: Connect](irtc-connect.md) para conectar o NPP à rede.<br/> |
+| <dl> <dt>**NMERR \_ não \_ conectado**</dt> </dl> | O NPP não está conectado à rede. chame [IRTC:: Conexão](irtc-connect.md) para conectar o NPP à rede.<br/> |
 | <dl> <dt>**NMERR \_ não \_ capturando**</dt> </dl> | O NPP não está capturando dados. Chame [IRTC:: Start](irtc-start.md) para iniciar a captura.<br/>                            |
-| <dl> <dt>**NMERR \_ não está em \_ tempo real**</dt> </dl>  | O NPP está conectado à rede, mas não com o método [IRTC:: Connect](irtc-connect.md) .<br/>                     |
+| <dl> <dt>**NMERR \_ não está em \_ tempo real**</dt> </dl>  | o NPP está conectado à rede, mas não com o método [IRTC:: Conexão](irtc-connect.md) .<br/>                     |
 
 
 
@@ -73,14 +73,14 @@ Ao reiniciar a captura depois de chamar o método **IRTC:: Stop** , chame [IRTC:
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 
 [IRTC](irtc.md)
 </dt> <dt>
 
-[IRTC:: conectar](irtc-connect.md)
+[IRTC:: Conexão](irtc-connect.md)
 </dt> <dt>
 
 [IRTC:: configurar](irtc-configure.md)

@@ -1,7 +1,7 @@
 ---
-description: Determina se um Quaternion é um Quaternion de identidade.
+description: Determina se um quatrion é um quaterão de identidade.
 ms.assetid: 1cd39e1b-9b68-434d-b7b0-3ec6cddb8757
-title: Função D3DXQuaternionIsIdentity (D3dx9math. h)
+title: Função D3DXQuaternionIsIdentity (D3dx9math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: b2b02bdddb4b7a2d31a685f576434e34952c0a22
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: b34debbe70ec6edcd3f08a1ec83383335a0d4f97801d122bc1bd73a82a81ff36
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105773002"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117731588"
 ---
 # <a name="d3dxquaternionisidentity-function"></a>Função D3DXQuaternionIsIdentity
 
-Determina se um Quaternion é um Quaternion de identidade.
+Determina se um quatrion é um quaterão de identidade.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,24 +40,24 @@ BOOL D3DXQuaternionIsIdentity(
 
 <dl> <dt>
 
-*pQ* \[ no\]
+*pQ* \[ Em\]
 </dt> <dd>
 
 Tipo: **const [**D3DXQUATERNION**](d3dxquaternion.md) \***
 
-Ponteiro para a estrutura [**D3DXQUATERNION**](d3dxquaternion.md) que será testada para identidade.
+Ponteiro para a [**estrutura D3DXQUATERNION**](d3dxquaternion.md) que será testada quanto à identidade.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Tipo: **[ **bool**](../winprog/windows-data-types.md)**
+Tipo: **[ **BOOL**](../winprog/windows-data-types.md)**
 
-Se o quaternion for uma identidade Quaternion, essa função retornará **true**. Caso contrário, essa função retornará **false**.
+Se o quatternion for um quatternion de identidade, essa função retornará **TRUE.** Caso contrário, essa função **retornará FALSE.**
 
 ## <a name="remarks"></a>Comentários
 
-Use [**D3DXQuaternionNormalize**](d3dxquaternionnormalize.md) para qualquer entrada de Quaternion que ainda não esteja normalizada.
+Use [**D3DXQuaternionNormalize para**](d3dxquaternionnormalize.md) qualquer entrada de quatérnion que ainda não tenha sido normalizada.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -65,8 +65,8 @@ Use [**D3DXQuaternionNormalize**](d3dxquaternionnormalize.md) para qualquer entr
 
 | Requisito | Valor |
 |--------------------|----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3dx9math. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| parâmetro<br/>  | <dl> <dt>D3dx9math.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

@@ -1,6 +1,6 @@
 ---
 title: Exemplo de gatilho diário (XML)
-description: O XML neste exemplo define uma tarefa que inicia o bloco de notas às 8 00, todos os dias.
+description: O XML neste exemplo define uma tarefa que começa a Bloco de notas às 8h todos os dias.
 ms.assetid: b7818071-12b6-41df-85b9-282c08cf6e31
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,22 +9,22 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: fe673a764e6e7e4e3ae5089022da2232821d9184
-ms.sourcegitcommit: 40dd8501397fc79a643deb528c6c57ac2e9726ce
+ms.openlocfilehash: cd98ada9a69f694d59262682317b7e5be91509b4862f8b896e22b7b0deac2167
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2020
-ms.locfileid: "103639066"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119139499"
 ---
 # <a name="daily-trigger-example-xml"></a>Exemplo de gatilho diário (XML)
 
-O XML neste exemplo define uma tarefa que inicia o bloco de notas às 8:00, todos os dias. O exemplo também mostra como definir um padrão de repetição para o gatilho repetir a tarefa.
+O XML neste exemplo define uma tarefa que começa Bloco de notas às 8h todos os dias. O exemplo também mostra como definir um padrão de repetição para o gatilho repetir a tarefa.
 
-Para registrar uma tarefa que é definida em XML, você pode usar a função [**ITaskFolder:: RegisterTask**](/windows/desktop/api/taskschd/nf-taskschd-itaskfolder-registertask) ([**TaskFolder. RegisterTask**](taskfolder-registertask.md) para scripts) ou a ferramenta de linha de comando Schtasks.exe. Se você usar a ferramenta de Schtasks.exe (localizada no diretório C: \\ Windows \\ System32), poderá usar o comando a seguir para registrar a tarefa: **SCHTASKS/CREATE/XML** *<path to the XML file containing the task definition>* **/TN** *<task name>* .
+Para registrar uma tarefa definida em XML, você pode usar a função [**ITaskFolder::RegisterTask**](/windows/desktop/api/taskschd/nf-taskschd-itaskfolder-registertask) ([**TaskFolder.RegisterTask**](taskfolder-registertask.md) para scripts) ou a ferramenta Schtasks.exe de linha de comando. Se você usar a ferramenta Schtasks.exe (localizada no diretório C: Windows System32), poderá usar o seguinte comando para registrar a \\ \\ tarefa: **schtasks /create /XML** *<path to the XML file containing the task definition>* **/tn** *<task name>* .
 
-## <a name="to-define-a-task-to-start-notepad-every-day-at-800-am"></a>Para definir uma tarefa para iniciar o bloco de notas todos os dias às 8:00
+## <a name="to-define-a-task-to-start-notepad-every-day-at-800-am"></a>Para definir uma tarefa para iniciar Bloco de notas todos os dias às 8h
 
-O exemplo de XML a seguir mostra como definir uma tarefa com uma única ação de execução (iniciando o bloco de notas), um único gatilho de calendário (inicia a tarefa todos os dias às 8:00 AM) e várias outras configurações de tarefa que afetam o modo como a tarefa é manipulada pelo Agendador de Tarefas.
+O exemplo XML a seguir mostra como definir uma tarefa com uma única ação de execução (a partir do Bloco de notas), um único gatilho de calendário (inicia a tarefa todos os dias às 8h) e várias outras configurações de tarefa que afetam como a tarefa é tratada pelo Agendador de Tarefas.
 
 
 ```XML
@@ -73,9 +73,9 @@ This sample schedules a task to start on a daily basis.
 
 
 
-## <a name="taskscheduler-schema-elements"></a>Elementos do esquema TaskScheduler
+## <a name="taskscheduler-schema-elements"></a>Elementos de esquema TaskScheduler
 
-Aqui estão alguns elementos importantes para ter em mente ao usar este exemplo.
+Aqui estão alguns elementos importantes a ter em mente ao usar este exemplo.
 
 -   [**RegistrationInfo**](taskschedulerschema-registrationinfo-tasktype-element.md)
 
@@ -87,20 +87,20 @@ Aqui estão alguns elementos importantes para ter em mente ao usar este exemplo.
 
 -   [**CalendarTrigger**](taskschedulerschema-calendartrigger-triggergroup-element.md)
 
-    Define o gatilho de calendário diário. Nesse caso, quatro elementos filho são usados: os limites inicial e final que especificam quando o gatilho é ativado e desativado, o agendamento diário e o padrão de repetição para a tarefa. O elemento [**StartBoundary**](taskschedulerschema-startboundary-triggerbasetype-element.md) é um elemento necessário para gatilhos de calendário.
+    Define o gatilho de calendário diário. Nesse caso, quatro elementos filho são usados: os limites de início e término que especificam quando o gatilho é ativado e desativado, o agendamento diário e o padrão de repetição para a tarefa. O [**elemento StartBoundary**](taskschedulerschema-startboundary-triggerbasetype-element.md) é um elemento necessário para gatilhos de calendário.
 
 -   [**ScheduleByDay**](taskschedulerschema-schedulebyday-calendartriggertype-element.md)
 
-    Define o agendamento diário. Nesse caso, o intervalo é definido para executar a tarefa todos os dias.
+    Define a agenda diária. Nesse caso, o intervalo é definido para executar a tarefa todos os dias.
 
--   [**Principal**](taskschedulerschema-principal-principaltype-element.md): define o contexto de segurança em que uma tarefa é executada.
+-   [**Entidade**](taskschedulerschema-principal-principaltype-element.md)de segurança: define o contexto de segurança no qual uma tarefa é executado.
 -   [**Configurações**](taskschedulerschema-settings-tasktype-element.md)
 
     Define as configurações de tarefa que Agendador de Tarefas usa para executar a tarefa.
 
 -   [**Ações**](taskschedulerschema-actions-tasktype-element.md)
 
-    Define as ações que a tarefa executa (nesse caso, executando o bloco de notas).
+    Define as ações que a tarefa executa (nesse caso, executando Bloco de notas).
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -109,9 +109,9 @@ Aqui estão alguns elementos importantes para ter em mente ao usar este exemplo.
 [Usando o Agendador de Tarefas](using-the-task-scheduler.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

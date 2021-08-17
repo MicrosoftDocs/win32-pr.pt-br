@@ -4,12 +4,12 @@ ms.assetid: 3bfb5d96-c37e-4113-9074-9f99658a8ce6
 title: ReturnFromSubmenu
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 53ceeaeae5a09f8c92768aa7e963c7c56c5777e4
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 04cb5342c80041dbd2f918c23d975544744209830c281438d129acc694e916d8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103646019"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118952055"
 ---
 # <a name="returnfromsubmenu"></a>ReturnFromSubmenu
 
@@ -18,7 +18,7 @@ ms.locfileid: "103646019"
 
  
 
-O `ReturnFromSubmenu` evento é enviado quando o `ReturnFromSubmenu` comando tiver sido habilitado ou desabilitado.
+O `ReturnFromSubmenu` evento é enviado quando o comando foi habilitado ou `ReturnFromSubmenu` desabilitado.
 
 ``` syntax
 ReturnFromSubmenu(bEnabled)
@@ -31,7 +31,7 @@ ReturnFromSubmenu(bEnabled)
 <span id="bEnabled"></span><span id="benabled"></span><span id="BENABLED"></span>*bEnabled*
 </dt> <dd>
 
-Especifica se a operação está habilitada ou desabilitada como um booliano.
+Especifica se a operação está habilitada ou desabilitada como booliana.
 
 </dd> </dl>
 

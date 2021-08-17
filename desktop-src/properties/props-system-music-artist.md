@@ -4,12 +4,12 @@ ms.assetid: 99094e2f-e3be-4561-b0a5-4ad3934cd1d8
 title: System. Music. artista
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0e87f78be072303bd2f2e1141dd7ed95dcf8a916
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: a4a1082c4dbc37a2c34a87cfcfc45105e26bc3b7bbb281d71cf6706a9bd8435d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108091854"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118970235"
 ---
 # <a name="systemmusicartist"></a>System. Music. artista
 

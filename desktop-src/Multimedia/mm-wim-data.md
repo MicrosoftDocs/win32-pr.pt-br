@@ -3,7 +3,7 @@ title: Mensagem de MM_WIM_DATA (mmsystem. h)
 description: A \_ mensagem de \_ dados wim mm é enviada para uma janela quando a onda de dados de áudio está presente no buffer de entrada e o buffer está sendo retornado para o aplicativo. A mensagem pode ser enviada quando o buffer está cheio ou depois que a função waveInReset é chamada.
 ms.assetid: 14298153-ea2f-40b7-bca7-196f4e6c1155
 keywords:
-- Multimídia do Windows de mensagem MM_WIM_DATA
+- mensagem de MM_WIM_DATA Windows multimídia
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c663d669635116500bc8aa7e7fdc994cdccd6dfe
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b8b209e59032c0da4c875a316008c889cf064ae7d8bc48f5c621125a06582673
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105779395"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119065466"
 ---
 # <a name="mm_wim_data-message"></a>MM \_ \_ mensagem de dados wim
 

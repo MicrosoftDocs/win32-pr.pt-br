@@ -4,12 +4,12 @@ ms.assetid: 8a51ca50-0e05-4f1e-9dfc-c5d0118f65ed
 title: Função falha AcquireCredentialsHandle (NTLM) (SSPI. h)
 ms.topic: reference
 ms.date: 07/25/2019
-ms.openlocfilehash: 233bfd57c6e3a7471d7c26204157cd1451d7884f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 59e1e0142a53e0baaadd8cdf9d35b3b8fa4a3eae3abf843064c77732ad35afbe
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104170950"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119141529"
 ---
 # <a name="acquirecredentialshandle-ntlm-function"></a>Função falha AcquireCredentialsHandle (NTLM)
 
@@ -125,7 +125,7 @@ Um ponteiro para uma estrutura de [**carimbo de data/**](timestamp.md) hora que 
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se a função for realizada com sucesso, a função retornará s \_ E \_ OK.
 
@@ -150,7 +150,7 @@ Se a função falhar, ela retornará um dos seguintes códigos de erro.
 
 A função **falha AcquireCredentialsHandle (NTLM)** retorna um identificador para as credenciais de uma entidade de segurança, como um usuário ou cliente, conforme usado por uma [*delegação restrita*](../secgloss/s-gly.md)específica. Isso pode ser o identificador para credenciais preexistentes ou a função pode criar um novo conjunto de credenciais e retorná-la. Esse identificador pode ser usado em chamadas subsequentes para as funções [**AcceptSecurityContext (NTLM)**](acceptsecuritycontext--ntlm.md) e [**InitializeSecurityContext (NTLM)**](initializesecuritycontext--ntlm.md) .
 
-Em geral, o **falha AcquireCredentialsHandle (NTLM)** não permite que um processo obtenha um identificador para as credenciais de outros usuários conectados ao mesmo computador. No entanto, um \_ \_ [*privilégio*](../secgloss/s-gly.md) de nome do chamador com o Name TCB tem a opção de especificar o [*identificador de logon*](../secgloss/l-gly.md) (LUID) de qualquer token de sessão de logon existente para obter um identificador para as credenciais dessa sessão. Normalmente, isso é usado por módulos de modo kernel que devem agir em nome de um usuário conectado.
+Em geral, o **falha AcquireCredentialsHandle (NTLM)** não permite que um processo obtenha um identificador para as credenciais de outros usuários conectados ao mesmo computador. no entanto, um chamador com \_ privilégio de nome ES TCB \_ tem a opção de especificar o [*identificador de logon*](../secgloss/l-gly.md) (LUID) de qualquer token de sessão de logon existente para obter um identificador para as credenciais dessa sessão. [](../secgloss/s-gly.md) Normalmente, isso é usado por módulos de modo kernel que devem agir em nome de um usuário conectado.
 
 Um pacote pode chamar a função no *pGetKeyFn* fornecido pelo transporte de tempo de execução RPC. Se o transporte não oferecer suporte à noção de retorno de chamada para recuperar credenciais, esse parâmetro deverá ser **nulo**.
 
@@ -167,9 +167,9 @@ Quando você terminar de usar as credenciais retornadas, libere a memória usada
 
 | Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                                                            |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                                   |
-| parâmetro<br/>                   | <dl> <dt>SSPI. h (incluir Security. h)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho XP\]<br/>                                                            |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                                   |
+| Cabeçalho<br/>                   | <dl> <dt>SSPI. h (incluir Security. h)</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>Secur32. lib</dt> </dl>                 |
 | DLL<br/>                      | <dl> <dt>Secur32.dll</dt> </dl>                 |
 | Nomes Unicode e ANSI<br/>   | **AcquireCredentialsHandleW** (Unicode) e **AcquireCredentialsHandleA** (ANSI)<br/>            |

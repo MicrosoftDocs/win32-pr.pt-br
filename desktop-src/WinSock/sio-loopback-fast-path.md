@@ -1,7 +1,7 @@
 ---
 description: O código de controle configura um soquete TCP para operações de menor latência e mais rápidas na interface de loopback.
 ms.assetid: 4F7A6454-E3ED-4529-A531-B0640B0767EF
-title: SIO_LOOPBACK_FAST_PATH de controle
+title: SIO_LOOPBACK_FAST_PATH código de controle
 ms.topic: reference
 ms.date: 05/20/2019
 req.target-min-winverclnt: Windows Vista [desktop apps only]
@@ -15,13 +15,13 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117740405"
 ---
-# <a name="sio_loopback_fast_path-control-code"></a>SIO_LOOPBACK_FAST_PATH de controle
+# <a name="sio_loopback_fast_path-control-code"></a>SIO_LOOPBACK_FAST_PATH código de controle
 
 ## <a name="description"></a>Descrição
 
-O código de controle PATH FAST **\_ LOOPBACK \_ \_** do SIO configura um soquete TCP para operações de menor latência e mais rápidas na interface de loopback.
+O código de controle PATH FAST **\_ \_ \_ LOOPBACK SIO** configura um soquete TCP para operações de menor latência e mais rápidas na interface de loopback.
 
-**Importante**  O **CAMINHO DO \_ LOOPBACK FAST \_ \_ SIO** foi preterido e não é recomendável ser usado em seu código.
+**Importante**  O **SIO \_ LOOPBACK \_ FAST \_ PATH** foi preterido e não é recomendável ser usado em seu código.
 
 Para executar essa operação, chame a [**função WSAIoctl**](/windows/desktop/api/winsock2/nf-winsock2-wsaioctl) **ou WSPIoctl** com os parâmetros a seguir.
 
@@ -152,7 +152,7 @@ Para obter informações de erro estendidas, [**chame WSAGetLastError**](/window
 
 Um aplicativo pode usar o **SIO \_ LOOPBACK \_ FAST \_ PATH** IOCTL para reduzir a latência e melhorar o desempenho de operações de loopback em um soquete TCP.
 Esse IOCTL solicita que a pilha TCP/IP use um caminho rápido especial para operações de loopback nesse soquete.
-O **SIO \_ LOOPBACK \_ FAST \_ PATH** IOCTL só pode ser usado com soquetes TCP.
+O **LOOPBACK SIO \_ FAST \_ \_ PATH** IOCTL só pode ser usado com soquetes TCP.
 Esse IOCTL deve ser usado em ambos os lados da sessão de loopback.
 Há suporte para o caminho rápido de loopback TCP usando a interface de loopback IPv4 ou IPv6.
 

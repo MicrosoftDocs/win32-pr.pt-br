@@ -1,5 +1,5 @@
 ---
-description: 'Saiba mais sobre: classe EsentMissingRestoreLogFilesException'
+description: 'Saiba mais sobre: Classe EsentMissingRestoreLogFilesException'
 title: Classe EsentMissingRestoreLogFilesException
 TOCTitle: EsentMissingRestoreLogFilesException class
 ms:assetid: T:Microsoft.Isam.Esent.Interop.EsentMissingRestoreLogFilesException
@@ -24,29 +24,29 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: d3e13e2101291dc130700531f4e4245c547cfb30
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7bce3b7a1323b90650efee124bd9a267831edc35e594d8e3bc32436bf1d2b1bd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104090816"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119115426"
 ---
 # <a name="esentmissingrestorelogfilesexception-class"></a>Classe EsentMissingRestoreLogFilesException
 
-Classe base para JET_err. MissingRestoreLogFiles exceções.
+Classe base para JET_err. Exceções MissingRestoreLogFiles.
 
 ## <a name="inheritance-hierarchy"></a>Hierarquia de herança
 
 [System.Object](/dotnet/api/system.object)  
-  [System. Exception](/dotnet/api/system.exception)  
-    [Microsoft. ISAM. ESENT. EsentException](./esentexception-class.md)  
-      [Microsoft. ISAM. ESENT. Interop. EsentErrorException](./esenterrorexception-class.md)  
-        [Microsoft. ISAM. ESENT. Interop. EsentDataException](./esentdataexception-class.md)  
-          [Microsoft. ISAM. ESENT. Interop. EsentInconsistentException](./esentinconsistentexception-class.md)  
-            Microsoft. ISAM. ESENT. Interop. EsentMissingRestoreLogFilesException  
+  [System.Exception](/dotnet/api/system.exception)  
+    [Microsoft.Isam.Esent.EsentException](./esentexception-class.md)  
+      [Microsoft.Isam.Esent.Interop.EsentErrorException](./esenterrorexception-class.md)  
+        [Microsoft.Isam.Esent.Interop.EsentDataException](./esentdataexception-class.md)  
+          [Microsoft.Isam.Esent.Interop.EsentInconsistentException](./esentinconsistentexception-class.md)  
+            Microsoft.Isam.Esent.Interop.EsentMissingRestoreLogFilesException  
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Syntax
 
@@ -72,6 +72,6 @@ Qualquer membro estático público (Shared no Visual Basic) desse tipo é seguro
 
 #### <a name="reference"></a>Referência
 
-[Membros do EsentMissingRestoreLogFilesException](./esentmissingrestorelogfilesexception-members.md)
+[Membros EsentMissingRestoreLogFilesException](./esentmissingrestorelogfilesexception-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

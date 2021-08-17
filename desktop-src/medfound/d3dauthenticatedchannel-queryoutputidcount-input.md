@@ -72,7 +72,7 @@ Um alça para a sessão criptográfica.
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 7 \[ aplicativos da área de trabalho\]<br/>                                             |
 | Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho do Server 2008 R2 \[\]<br/>                                |
-| parâmetro<br/>                   | <dl> <dt>D3d9types.h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>D3d9types.h</dt> </dl> |
 
 
 

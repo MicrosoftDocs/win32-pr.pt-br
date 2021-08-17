@@ -1,11 +1,11 @@
 ---
-title: Propriedade execaction. WorkingDirectory
-description: Para scripts, Obtém ou define o diretório que contém o arquivo executável ou os arquivos que são usados pelo arquivo executável.
+title: Propriedade ExecAction.WorkingDirectory
+description: Para scripts, obtém ou define o diretório que contém o arquivo executável ou os arquivos usados pelo arquivo executável.
 ms.assetid: 7b1e3c9d-ba08-4812-b50e-f97b6c12f8bd
 keywords:
-- Agendador de Tarefas da propriedade WorkingDirectory
-- Propriedade WorkingDirectory Agendador de Tarefas, objeto Execaction
-- Agendador de Tarefas de objeto execaction, Propriedade WorkingDirectory
+- Propriedade WorkingDirectory Agendador de Tarefas
+- Propriedade WorkingDirectory Agendador de Tarefas objeto , ExecAction
+- Objeto ExecAction Agendador de Tarefas propriedade , WorkingDirectory
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 28d4755b6f760ed1af75c676ecb70074c3ea7c92
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 362b6cbb977e66a92425da1355f0747660d867f67aec0ad684f7e8e3956edc63
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105758392"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119139439"
 ---
-# <a name="execactionworkingdirectory-property"></a>Propriedade execaction. WorkingDirectory
+# <a name="execactionworkingdirectory-property"></a>Propriedade ExecAction.WorkingDirectory
 
-Para scripts, Obtém ou define o diretório que contém o arquivo executável ou os arquivos que são usados pelo arquivo executável.
+Para scripts, obtém ou define o diretório que contém o arquivo executável ou os arquivos usados pelo arquivo executável.
 
 ## <a name="syntax"></a>Syntax
 
@@ -38,13 +38,13 @@ ExecAction.WorkingDirectory As String
 
 ## <a name="property-value"></a>Valor da propriedade
 
-O diretório que contém o arquivo executável ou os arquivos que são usados pelo arquivo executável.
+O diretório que contém o arquivo executável ou os arquivos usados pelo arquivo executável.
 
 ## <a name="remarks"></a>Comentários
 
-Ao ler ou gravar XML, o diretório de trabalho do aplicativo é especificado no elemento [**WorkingDirectory**](taskschedulerschema-workingdirectory-exectype-element.md) do esquema de Agendador de tarefas.
+Ao ler ou escrever XML, o diretório de trabalho do aplicativo é especificado no elemento [**WorkingDirectory**](taskschedulerschema-workingdirectory-exectype-element.md) do Agendador de Tarefas esquema.
 
-O caminho é verificado para certificar-se de que ele é válido quando a tarefa é registrada, não quando essa propriedade é definida.
+O caminho é verificado para verificar se ele é válido quando a tarefa é registrada, não quando essa propriedade está definida.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -52,9 +52,9 @@ O caminho é verificado para certificar-se de que ele é válido quando a tarefa
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                          |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                    |
-| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd. tlb</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                          |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                    |
+| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 
 
@@ -63,7 +63,7 @@ O caminho é verificado para certificar-se de que ele é válido quando a tarefa
 
 <dl> <dt>
 
-[**Execaction**](execaction.md)
+[**ExecAction**](execaction.md)
 </dt> <dt>
 
 [Agendador de Tarefas](task-scheduler-start-page.md)

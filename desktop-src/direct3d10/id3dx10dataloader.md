@@ -1,7 +1,7 @@
 ---
 description: Objeto de carregamento de dados usado pela interface ID3DX10ThreadPump para carregar dados de forma assíncrona.
 ms.assetid: bda2414c-bbab-47ac-b23a-f58fb86e732d
-title: Interface ID3DX10DataLoader (D3DX10. h)
+title: Interface ID3DX10DataLoader (D3DX10.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -27,7 +27,7 @@ Objeto de carregamento de dados usado pela [**interface ID3DX10ThreadPump**](id3
 
 ## <a name="members"></a>Membros
 
-A interface **ID3DX10DataLoader** herda da interface [**IUnknown**](/windows/win32/api/unknwn/nn-unknwn-iunknown) . **ID3DX10DataLoader** também tem estes tipos de membros:
+A interface **ID3DX10DataLoader** herda da interface [**IUnknown.**](/windows/win32/api/unknwn/nn-unknwn-iunknown) **ID3DX10DataLoader** também tem estes tipos de membros:
 
 -   [Métodos](#methods)
 
@@ -39,7 +39,7 @@ A interface **ID3DX10DataLoader** tem esses métodos.
 
 | Método                                             | Descrição                                                                                                                                                                                                                        |
 |:---------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**Descompactar**](id3dx10dataloader-decompress.md) | Usado para descompactar dados codificados. Normalmente, isso seria usado para carregar recursos de sistemas de arquivos, como arquivos ZIP. Ao carregar de um recurso descompactado, o estágio de descompactação não precisa fazer nenhum trabalho.<br/> |
+| [**Descomprimir**](id3dx10dataloader-decompress.md) | Usado para descompactar dados codificados. Normalmente, isso seria usado para carregar recursos de sistemas de arquivos, como arquivos ZIP. Ao carregar de um recurso descompactado, o estágio de descompactação não precisa fazer nenhum trabalho.<br/> |
 | [**Destruir**](id3dx10dataloader-destroy.md)       | Usado por uma [**interface ID3DX10ThreadPump**](id3dx10threadpump.md) para destruir o carregador após a conclusão de um item de trabalho.<br/>                                                                                                   |
 | [**Carregar**](id3dx10dataloader-load.md)             | Usado por uma [**interface ID3DX10ThreadPump**](id3dx10threadpump.md) para carregar dados de um disco.<br/>                                                                                                                            |
 
@@ -49,7 +49,7 @@ A interface **ID3DX10DataLoader** tem esses métodos.
 
 ## <a name="remarks"></a>Comentários
 
-Esse objeto pode ser herdado e seus membros são redefinidos. Isso permitiria que você personalize a API para carregar e descompactar seus próprios formatos de arquivo personalizados.
+Esse objeto pode ser herdado e seus membros redefinidos. Isso permite que você personalize a API para carregar e descompactar seus próprios formatos de arquivo personalizados.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -57,8 +57,8 @@ Esse objeto pode ser herdado e seus membros são redefinidos. Isso permitiria qu
 
 | Requisito | Valor |
 |--------------------|---------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3DX10. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>D3DX10. lib</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>D3DX10.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>D3DX10.lib</dt> </dl> |
 
 
 
@@ -66,7 +66,7 @@ Esse objeto pode ser herdado e seus membros são redefinidos. Isso permitiria qu
 
 <dl> <dt>
 
-[Interfaces D3DX](d3d10-graphics-reference-d3dx10-interfaces.md)
+[D3DX Interfaces](d3d10-graphics-reference-d3dx10-interfaces.md)
 </dt> </dl>
 
  

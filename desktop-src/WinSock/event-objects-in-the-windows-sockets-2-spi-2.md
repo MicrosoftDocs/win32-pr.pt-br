@@ -1,19 +1,19 @@
 ---
-description: Os objetos de evento são introduzidos no Windows Sockets 2 como um mecanismo de sincronização geral entre os provedores de serviço do Winsock e os aplicativos.
+description: os objetos de evento são introduzidos no Windows sockets 2 como um mecanismo de sincronização geral entre os provedores de serviço do Winsock e os aplicativos.
 ms.assetid: 0ec8fe77-8465-4530-834c-c90ff8e4fe8c
-title: Objetos de evento no SPI do Windows Sockets 2
+title: objetos de evento no SPI do Windows sockets 2
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 13b89ec07790ecc3560e8b9d23e714c9c935d118
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e3763a087a97f57d5626ebb80c30274c6b4c6d09078713dd123dbfd0ad50796f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103647141"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119132599"
 ---
-# <a name="event-objects-in-the-windows-sockets-2-spi"></a>Objetos de evento no SPI do Windows Sockets 2
+# <a name="event-objects-in-the-windows-sockets-2-spi"></a>objetos de evento no SPI do Windows sockets 2
 
-Os objetos de evento são introduzidos no Windows Sockets 2 como um mecanismo de sincronização geral entre os provedores de serviço do Winsock e os aplicativos. Eles são usados para uma série de finalidades que incluem indicar a conclusão de operações sobrepostas e a ocorrência de um ou mais eventos de rede.
+os objetos de evento são introduzidos no Windows sockets 2 como um mecanismo de sincronização geral entre os provedores de serviço do Winsock e os aplicativos. Eles são usados para uma série de finalidades que incluem indicar a conclusão de operações sobrepostas e a ocorrência de um ou mais eventos de rede.
 
  
 

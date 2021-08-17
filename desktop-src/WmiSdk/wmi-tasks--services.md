@@ -97,7 +97,7 @@ Next</code></pre></td>
 </tr>
 <tr class="even">
 <td>... impedir que o Power Users insisse determinados serviços?</td>
-<td><p>Use a <a href="/windows/desktop/CIMWin32Prov/win32-service"><strong>Win32_Service</strong></a> e o <a href="/windows/desktop/CIMWin32Prov/changestartmode-method-in-class-win32-service"><strong>método ChangeStartMode</strong></a> para definir a propriedade <strong>StartMode</strong> como Disabled. Os serviços desabilitados não podem ser iniciados e, por padrão, o Power Users não pode alterar o modo de início de um serviço.</p>
+<td><p>Use a <a href="/windows/desktop/CIMWin32Prov/win32-service"><strong>Win32_Service</strong></a> e o <a href="/windows/desktop/CIMWin32Prov/changestartmode-method-in-class-win32-service"><strong>método ChangeStartMode</strong></a> para definir a <strong>propriedade StartMode</strong> como Disabled. Os serviços desabilitados não podem ser iniciados e, por padrão, o Power Users não pode alterar o modo de início de um serviço.</p>
 <div class="code">
 <span data-codelanguage="VisualBasic"></span>
 <table>

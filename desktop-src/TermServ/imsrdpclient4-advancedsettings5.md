@@ -4,21 +4,21 @@ description: Recupera um ponteiro para uma interface IMsRdpClientAdvancedSetting
 ms.assetid: 2dd0cc5f-7822-485f-8b3f-12407af1e091
 ms.tgt_platform: multiple
 keywords:
-- Serviços de Área de Trabalho Remota da propriedade AdvancedSettings5
-- Propriedade AdvancedSettings5 Serviços de Área de Trabalho Remota, interface IMsRdpClient4
-- Serviços de Área de Trabalho Remota de interface IMsRdpClient4, Propriedade AdvancedSettings5
-- Propriedade AdvancedSettings5 Serviços de Área de Trabalho Remota, interface IMsRdpClient5
-- Serviços de Área de Trabalho Remota de interface IMsRdpClient5, Propriedade AdvancedSettings5
-- Propriedade AdvancedSettings5 Serviços de Área de Trabalho Remota, interface IMsRdpClient6
-- Serviços de Área de Trabalho Remota de interface IMsRdpClient6, Propriedade AdvancedSettings5
-- Propriedade AdvancedSettings5 Serviços de Área de Trabalho Remota, interface IMsRdpClient7
-- Serviços de Área de Trabalho Remota de interface IMsRdpClient7, Propriedade AdvancedSettings5
-- Propriedade AdvancedSettings5 Serviços de Área de Trabalho Remota, interface IMsRdpClient8
-- Serviços de Área de Trabalho Remota de interface IMsRdpClient8, Propriedade AdvancedSettings5
-- Propriedade AdvancedSettings5 Serviços de Área de Trabalho Remota, interface IMsRdpClient9
-- Serviços de Área de Trabalho Remota de interface IMsRdpClient9, Propriedade AdvancedSettings5
-- Propriedade AdvancedSettings5 Serviços de Área de Trabalho Remota, interface IMsRdpClient10
-- Serviços de Área de Trabalho Remota de interface IMsRdpClient10, Propriedade AdvancedSettings5
+- Propriedades AdvancedSettings5 Serviços de Área de Trabalho Remota
+- A propriedade AdvancedSettings5 Serviços de Área de Trabalho Remota , interface IMsRdpClient4
+- Interface IMsRdpClient4 Serviços de Área de Trabalho Remota , propriedade AdvancedSettings5
+- A propriedade AdvancedSettings5 Serviços de Área de Trabalho Remota , interface IMsRdpClient5
+- Interface IMsRdpClient5 Serviços de Área de Trabalho Remota , propriedade AdvancedSettings5
+- A propriedade AdvancedSettings5 Serviços de Área de Trabalho Remota , interface IMsRdpClient6
+- Interface IMsRdpClient6 Serviços de Área de Trabalho Remota , propriedade AdvancedSettings5
+- A propriedade AdvancedSettings5 Serviços de Área de Trabalho Remota , interface IMsRdpClient7
+- Interface IMsRdpClient7 Serviços de Área de Trabalho Remota , propriedade AdvancedSettings5
+- A propriedade AdvancedSettings5 Serviços de Área de Trabalho Remota , interface IMsRdpClient8
+- Interface IMsRdpClient8 Serviços de Área de Trabalho Remota , propriedade AdvancedSettings5
+- A propriedade AdvancedSettings5 Serviços de Área de Trabalho Remota , interface IMsRdpClient9
+- Interface IMsRdpClient9 Serviços de Área de Trabalho Remota , propriedade AdvancedSettings5
+- A propriedade AdvancedSettings5 Serviços de Área de Trabalho Remota , interface IMsRdpClient10
+- Interface IMsRdpClient10 Serviços de Área de Trabalho Remota , propriedade AdvancedSettings5
 topic_type:
 - apiref
 api_name:
@@ -42,16 +42,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6ad96588b2109375aed23c1024ef925936cb3368
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 8cb8efd8fae25be768a1b758389b5ca7c20a9f3f8b414e62acb865fecf83eeda
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104499788"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119138949"
 ---
-# <a name="imsrdpclient4advancedsettings5-property"></a>Propriedade IMsRdpClient4:: AdvancedSettings5
+# <a name="imsrdpclient4advancedsettings5-property"></a>Propriedade IMsRdpClient4::AdvancedSettings5
 
-Recupera um ponteiro para uma interface [**IMsRdpClientAdvancedSettings4**](imsrdpclientadvancedsettings4.md) .
+Recupera um ponteiro para uma interface [**IMsRdpClientAdvancedSettings4.**](imsrdpclientadvancedsettings4.md)
 
 Esta propriedade é somente para leitura.
 
@@ -68,17 +68,17 @@ HRESULT get_AdvancedSettings5(
 
 ## <a name="property-value"></a>Valor da propriedade
 
-Um ponteiro para a interface [**IMsRdpClientAdvancedSettings4**](imsrdpclientadvancedsettings4.md) . A interface pode ser usada para definir configurações avançadas para o controle de cliente.
+Um ponteiro para a interface [**IMsRdpClientAdvancedSettings4.**](imsrdpclientadvancedsettings4.md) A interface pode ser usada para definir configurações avançadas para o controle do cliente.
 
 ## <a name="error-codes"></a>Códigos do Erro
 
-Se o método for bem sucedido, **S \_ OK** será retornado. Qualquer outro valor **HRESULT** indica que a chamada falhou.
+Se o método for bem-sucedido, **S \_ OK** será retornado. Qualquer outro **valor HRESULT** indica que a chamada falhou.
 
 ## <a name="remarks"></a>Comentários
 
-Esta propriedade não pode ser definida quando o controle está conectado.
+Essa propriedade não pode ser definida quando o controle está conectado.
 
-Para obter mais informações sobre Conexão Web de Área de Trabalho Remota, consulte [Requirements for conexão Web de área de trabalho remota](requirements-for-remote-desktop-web-connection.md).
+Para obter mais informações sobre Conexão Web de Área de Trabalho Remota, consulte [Requirements for Conexão Web de Área de Trabalho Remota](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisitos
 

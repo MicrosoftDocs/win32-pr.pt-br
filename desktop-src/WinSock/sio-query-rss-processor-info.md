@@ -1,7 +1,7 @@
 ---
 description: O código de controle consulta a associação entre um soquete e um núcleo do processador RSS e um nó NUMA.
 ms.assetid: DAF18C92-B479-474F-B438-0746CBA20653
-title: SIO_QUERY_RSS_PROCESSOR_INFO código de controle
+title: SIO_QUERY_RSS_PROCESSOR_INFO de controle
 ms.topic: reference
 ms.date: 05/20/2019
 req.target-min-winverclnt: Windows Vista [desktop apps only]
@@ -15,7 +15,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117740378"
 ---
-# <a name="sio_query_rss_processor_info-control-code"></a>SIO_QUERY_RSS_PROCESSOR_INFO código de controle
+# <a name="sio_query_rss_processor_info-control-code"></a>SIO_QUERY_RSS_PROCESSOR_INFO de controle
 
 ## <a name="description"></a>Descrição
 

@@ -1,17 +1,17 @@
 ---
 description: Gera declarações para funções que criam classes de origem de evento.
 ms.assetid: ba303691-d331-4831-8416-47bb9eeb70da
-title: elemento eventSourceBuilderDeclarations
+title: Elemento eventSourceBuilderDeclarations
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0baba3dd7013b2e684713e801caa87316266fc2e
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 3dc5f553aef289ea37657b3524db91897f3f7910b474859b627fd35af91b3c23
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107995943"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119130808"
 ---
-# <a name="eventsourcebuilderdeclarations-element"></a>elemento eventSourceBuilderDeclarations
+# <a name="eventsourcebuilderdeclarations-element"></a>Elemento eventSourceBuilderDeclarations
 
 Gera declarações para funções que criam classes de origem de evento.
 
@@ -33,7 +33,7 @@ Não há atributos.
 
 | Elemento                                     | Descrição                                                                           |
 |---------------------------------------------|---------------------------------------------------------------------------------------|
-| [**proxyClass**](proxyclass.md)<br/> | Nome da classe a ser gerada a partir da função do construtor de origem do evento.<br/> <br/> |
+| [**proxyClass**](proxyclass.md)<br/> | Nome da classe a ser gerado da função do construtor de origem do evento.<br/> <br/> |
 
 
 
@@ -49,7 +49,7 @@ proxyClass
 
 | Elemento                         | Descrição                                                    |
 |---------------------------------|----------------------------------------------------------------|
-| [**Grupo**](file.md)<br/> | Gera um arquivo do gerador de código.<br/> <br/> |
+| [**Arquivo**](file.md)<br/> | Saída de um arquivo do gerador de código.<br/> <br/> |
 
 
 
@@ -57,7 +57,7 @@ proxyClass
 
 
 
-| Label | Valor |
+| Rótulo | Valor |
 |-------------------------------------|---------------|
 | Sistema mínimo com suporte<br/> | Windows Vista |
 | Pode estar vazio                        | Não            |

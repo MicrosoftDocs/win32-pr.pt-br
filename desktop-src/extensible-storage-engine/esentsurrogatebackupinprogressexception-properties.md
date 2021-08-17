@@ -1,25 +1,25 @@
 ---
-description: 'Saiba mais sobre: Propriedades de EsentSurrogateBackupInProgressException'
-title: Propriedades de EsentSurrogateBackupInProgressException
+description: 'Saiba mais sobre: Propriedades EsentSurrogateBackupInProgressException'
+title: Propriedades EsentSurrogateBackupInProgressException
 TOCTitle: EsentSurrogateBackupInProgressException properties
 ms:assetid: Properties.T:Microsoft.Isam.Esent.Interop.EsentSurrogateBackupInProgressException
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentsurrogatebackupinprogressexception_properties(v=EXCHG.10)
 ms:contentKeyID: 55102953
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 5573a7bd00e34e283051dfc27bff48372f0829fe
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 688ace6e365c69e7aab03940202deecd9bd84c0b72715ad2e4f5382ab2ff9011
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103828783"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119113650"
 ---
-# <a name="esentsurrogatebackupinprogressexception-properties"></a>Propriedades de EsentSurrogateBackupInProgressException
+# <a name="esentsurrogatebackupinprogressexception-properties"></a>Propriedades EsentSurrogateBackupInProgressException
 
 Incluir membros protegidos  
 Incluir membros herdados  
 
-O tipo [EsentSurrogateBackupInProgressException](./esentsurrogatebackupinprogressexception-class.md) expõe os membros a seguir.
+O [tipo EsentSurrogateBackupInProgressException](./esentsurrogatebackupinprogressexception-class.md) expõe os membros a seguir.
 
 ## <a name="properties"></a>Propriedades
 
@@ -40,16 +40,16 @@ O tipo [EsentSurrogateBackupInProgressException](./esentsurrogatebackupinprogres
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
 <td><a href="dn274313(v=exchg.10).md">Erro</a></td>
-<td>Obtém o erro de ESENT subjacente para esta exceção. (Herdado de <a href="dn274314(v=exchg.10).md">EsentErrorException</a>.)</td>
+<td>Obtém o erro Esent subjacente para essa exceção. (Herdado de <a href="dn274314(v=exchg.10).md">EsentErrorException</a>.)</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
-<td><a href="/dotnet/api/system.exception.helplink#System_Exception_HelpLink">HelpLink</a></td>
+<td><a href="/dotnet/api/system.exception.helplink#System_Exception_HelpLink">Helplink</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.protproperty(exchg.10).gif" title="Propriedade protegida" alt="Protected property" /></td>
-<td><a href="/dotnet/api/system.exception.hresult#System_Exception_HResult">Resultado</a></td>
+<td><a href="/dotnet/api/system.exception.hresult#System_Exception_HResult">HResult</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="odd">
@@ -69,7 +69,7 @@ O tipo [EsentSurrogateBackupInProgressException](./esentsurrogatebackupinprogres
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
-<td><a href="/dotnet/api/system.exception.stacktrace#System_Exception_StackTrace">Pilha</a></td>
+<td><a href="/dotnet/api/system.exception.stacktrace#System_Exception_StackTrace">StackTrace</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="odd">
@@ -89,4 +89,4 @@ Parte superior
 
 [Classe EsentSurrogateBackupInProgressException](./esentsurrogatebackupinprogressexception-class.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

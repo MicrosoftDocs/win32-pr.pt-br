@@ -5,12 +5,12 @@ ms.tgt_platform: multiple
 title: 'CHStringArray:: operator [] (ChStrArr. h)'
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e92b30768b9d013bfca672548a7c58b0eeffb455
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 859cfe52535aea0fb43d6195648215431f80cff86f0525b9ef7c5247b6a831a9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105780423"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119131768"
 ---
 # <a name="chstringarrayoperator--"></a>Operador \[ CHStringArray:: \]
 
@@ -77,7 +77,7 @@ assert( array[0] == L"String 3" );
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                                                                                      |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                                                                                                |
-| parâmetro<br/>                   | <dl> <dt>ChStrArr. h (incluir FwCommon. h)</dt> </dl>                                                    |
+| Cabeçalho<br/>                   | <dl> <dt>ChStrArr. h (incluir FwCommon. h)</dt> </dl>                                                    |
 | Biblioteca<br/>                  | <dl> <dt>FrameDyn. lib</dt> </dl>                                                                       |
 | DLL<br/>                      | <dl> <dt>FrameDynOS.dll; </dt> <dt>FrameDyn.dll</dt> </dl> |
 

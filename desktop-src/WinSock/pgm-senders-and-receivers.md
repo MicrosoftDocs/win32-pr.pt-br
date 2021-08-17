@@ -4,12 +4,12 @@ ms.assetid: 777e0106-0314-4ec8-b064-88ceb694614b
 title: Remetentes e receptores de PGM
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e300a0c9de199e1f836e71407caf6487812cf7b4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 559ac30ace4374b48c86efeb579e1426cc455b00adb803e97244a37d8df7fda5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104501678"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117741063"
 ---
 # <a name="pgm-senders-and-receivers"></a>Remetentes e receptores de PGM
 
@@ -144,7 +144,7 @@ As sessões PGM têm duas opções para modos de dados: modo de mensagem e modo 
 
 O modo de mensagem é apropriado para aplicativos que precisam enviar mensagens discretas e é especificado por um tipo de soquete de SOCK \_ RDM. O modo de fluxo é apropriado para aplicativos que precisam enviar dados de streaming para receptores, como aplicativos de voz ou vídeo, e é especificado por um tipo de soquete de \_ fluxo Sock. A escolha do modo afeta a forma como o Winsock processa os dados.
 
-Considere o seguinte exemplo: um remetente PGM de modo de mensagem faz três chamadas para a função [**WSASend**](/windows/desktop/api/Winsock2/nf-winsock2-wsasend) , cada uma com um buffer de 100 bytes. Essa operação aparece na conexão como três pacotes PGM discretos. No lado do destinatário, cada chamada para a função [**WSARecv**](/windows/desktop/api/Winsock2/nf-winsock2-wsarecv) retorna apenas 100 bytes, mesmo se um buffer de recebimento maior for fornecido. Por outro lado, com um retransmissor de modo de fluxo de PGM, essas transmissões de 3 100 bytes podem ser Unidas em menos de três pacotes físicos na conexão (ou Unidos em um blob de dados no lado do destinatário). Assim, quando o receptor chama uma das funções Receive do Windows Sockets, qualquer quantidade de dados recebidos pelo transporte de PGM pode ser retornada ao aplicativo sem considerar como os dados foram transmitidos fisicamente ou recebidos.
+Considere o seguinte exemplo: um remetente PGM de modo de mensagem faz três chamadas para a função [**WSASend**](/windows/desktop/api/Winsock2/nf-winsock2-wsasend) , cada uma com um buffer de 100 bytes. Essa operação aparece na conexão como três pacotes PGM discretos. No lado do destinatário, cada chamada para a função [**WSARecv**](/windows/desktop/api/Winsock2/nf-winsock2-wsarecv) retorna apenas 100 bytes, mesmo se um buffer de recebimento maior for fornecido. Por outro lado, com um retransmissor de modo de fluxo de PGM, essas transmissões de 3 100 bytes podem ser Unidas em menos de três pacotes físicos na conexão (ou Unidos em um blob de dados no lado do destinatário). assim, quando o receptor chama uma das funções de recebimento de soquetes de Windows, qualquer quantidade de dados recebidos pelo transporte de PGM pode ser retornada ao aplicativo sem considerar como os dados foram transmitidos fisicamente ou recebidos.
 
  
 

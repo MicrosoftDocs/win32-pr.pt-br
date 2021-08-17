@@ -1,11 +1,11 @@
 ---
-title: Método IDWriteFactory2 GetSystemFontFallback
-description: Cria um objeto de fallback de fonte da lista de fallback de fontes do sistema.
+title: Método GetSystemFontFallback de IDWriteFactory2
+description: Cria um objeto de fallback de fonte da lista de fallback de fonte do sistema.
 ms.assetid: 7F2BDB39-2CB4-4DB7-BBBA-74B0C07E7420
 keywords:
 - Gravação direta do método GetSystemFontFallback
 - Método GetSystemFontFallback Direct Write, interface IDWriteFactory2
-- IDWriteFactory2 interface de gravação direta, método GetSystemFontFallback
+- IDWriteFactory2 interface Direct Write , GetSystemFontFallback method
 topic_type:
 - apiref
 api_name:
@@ -22,9 +22,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119329436"
 ---
-# <a name="idwritefactory2getsystemfontfallback-method"></a>Método IDWriteFactory2:: GetSystemFontFallback
+# <a name="idwritefactory2getsystemfontfallback-method"></a>Método IDWriteFactory2::GetSystemFontFallback
 
-Cria um objeto de fallback de fonte da lista de fallback de fontes do sistema.
+Cria um objeto de fallback de fonte da lista de fallback de fonte do sistema.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -41,7 +41,7 @@ HRESULT GetSystemFontFallback(
 
 <dl> <dt>
 
-*fontFallback* \[ fora\]
+*fontFallback* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **IDWriteFontFallback**](/windows/win32/api/dwrite_2/nn-dwrite_2-idwritefontfallback)\*\***
@@ -54,7 +54,7 @@ Contém um endereço de um ponteiro para o objeto de fallback de fonte recém-cr
 
 Tipo: **HRESULT**
 
-Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
+Se esse método for bem-sucedido, ele **retornará S \_ OK.** Caso contrário, ele retornará um **código de erro HRESULT.**
 
 ## <a name="see-also"></a>Confira também
 

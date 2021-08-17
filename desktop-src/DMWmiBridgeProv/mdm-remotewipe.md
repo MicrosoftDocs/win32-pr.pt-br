@@ -1,10 +1,10 @@
 ---
-title: Classe MDM_RemoteWipe
-description: A \_ classe MDM RemoteWipe permite um apagamento remoto de um dispositivo.
+title: MDM_RemoteWipe classe
+description: A classe RemoteWipe do MDM \_ permite um apagaamento remoto de um dispositivo.
 ms.assetid: 8c7c8705-8694-4ce3-ba21-ca610fe1f547
 keywords:
-- Classe MDM_RemoteWipe
-- Classe MDM_RemoteWipe, descrita
+- MDM_RemoteWipe classe
+- MDM_RemoteWipe, descrita
 topic_type:
 - apiref
 api_name:
@@ -17,18 +17,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8ece626fca573e34cf938105f5e59b61e0585fd3
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 800d59ad1b2bc281027e3181faa7ff33103bd1e934584bbc91e3d34bd7cea5d9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104008901"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119587826"
 ---
-# <a name="mdm_remotewipe-class"></a>\_Classe RemoteWipe do MDM
+# <a name="mdm_remotewipe-class"></a>Classe RemoteWipe MDM \_
 
-\[Algumas informações estão relacionadas ao produto de pré-lançamento que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não faz nenhuma garantia, expressa ou implícita, com relação às informações fornecidas aqui.\]
+\[Algumas informações estão relacionadas ao produto pré-lançado, que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não oferece garantias, expressas ou implícitas, das informações aqui fornecidas.\]
 
-A classe **MDM \_ RemoteWipe** permite um apagamento remoto de um dispositivo.
+A **classe \_ RemoteWipe do MDM** permite um apagaamento remoto de um dispositivo.
 
 A sintaxe a seguir é simplificada do código MOF (Managed Object Format) e inclui todas as propriedades herdadas.
 
@@ -45,20 +45,20 @@ class MDM_RemoteWipe
 
 ## <a name="members"></a>Membros
 
-A classe **MDM \_ RemoteWipe** tem estes tipos de membros:
+A **classe \_ RemoteWipe do MDM** tem estes tipos de membros:
 
 -   [Métodos](#methods)
 -   [Propriedades](#properties)
 
 ### <a name="methods"></a>Métodos
 
-A classe **MDM \_ RemoteWipe** tem esses métodos.
+A **classe \_ RemoteWipe do MDM** tem esses métodos.
 
 
 
 | Método                                              | Descrição                                              |
 |:----------------------------------------------------|:---------------------------------------------------------|
-| [**doWipeMethod**](mdm-remotewipe-dowipemethod.md) | Dispara o dispositivo para iniciar o apagamento remoto.<br/> |
+| [**doWipeMethod**](mdm-remotewipe-dowipemethod.md) | Dispara o dispositivo para iniciar o apagaamento remoto.<br/> |
 
 
 
@@ -66,7 +66,7 @@ A classe **MDM \_ RemoteWipe** tem esses métodos.
 
 ### <a name="properties"></a>Propriedades
 
-A classe **MDM \_ RemoteWipe** tem essas propriedades.
+A **classe \_ RemoteWipe do MDM** tem essas propriedades.
 
 <dl> <dt>
 
@@ -86,7 +86,7 @@ Identifica o nome do nó pai. Para essa classe, a cadeia de caracteres é "Remot
 
 </dd> <dt>
 
-**ParentID**
+**Parentid**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
@@ -107,7 +107,7 @@ Descreve o caminho completo para o nó pai. Para essa classe, a cadeia de caract
 O exemplo a seguir demonstra como usar o RemoteWipe e invocar o doWipeMethod.
 
 > [!Note]  
-> Este exemplo deve ser executado em usuário do sistema local. Para fazer isso, baixe a ferramenta PsExec do <https://technet.microsoft.com/sysinternals/bb897553.aspx> e execute a `psexec.exe -i -s cmd.exe` partir de um prompt de comando de administrador elevado.
+> Este exemplo deve ser executado no usuário do sistema local. Para fazer isso, baixe a ferramenta psexec de <https://technet.microsoft.com/sysinternals/bb897553.aspx> e execute em um prompt de comando de administrador com privilégios `psexec.exe -i -s cmd.exe` elevados.
 
  
 
@@ -139,10 +139,10 @@ catch [Exception]
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10\]<br/>                                                    |
+| Cliente mínimo com suporte<br/> | \[Windows 10 somente aplicativos da área de trabalho\]<br/>                                                    |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                      |
-| Namespace<br/>                | \\DMMap de \\ MDM \\ CIMv2 raiz<br/>                                                             |
-| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv. mof</dt> </dl> |
+| Namespace<br/>                | \\DMMap de \\ MDM cimv2 \\ raiz<br/>                                                             |
+| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>DMWmiBridgeProv.dll</dt> </dl> |
 
 

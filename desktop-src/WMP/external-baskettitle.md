@@ -1,9 +1,9 @@
 ---
-title: External. basketTitle
-description: Observação Este tópico descreve a funcionalidade projetada para uso por lojas online. | External. basketTitle
+title: External.basketTitle
+description: Observação Este tópico descreve a funcionalidade projetada para uso por lojas online. | External.basketTitle
 ms.assetid: 528b7d8e-7702-4139-b2bd-a06c7f15cb87
 keywords:
-- Windows Media Player externo. basketTitle
+- External.basketTitle Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -14,21 +14,21 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 610ce5ecf054d6ab1edba4e0aab5f2eff3a969fa
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f20b01fd9b0185dcd1d20a2d063f464699d51e51d54560dfc43f87da21dc9c44
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105810554"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119649526"
 ---
-# <a name="externalbaskettitle"></a>External. basketTitle
+# <a name="externalbaskettitle"></a>External.basketTitle
 
 > [!Note]  
 > Este tópico descreve a funcionalidade projetada para uso por lojas online. Não há suporte para o uso dessa funcionalidade fora do contexto de uma loja online.
 
  
 
-A propriedade **basketTitle** recupera o título do botão no painel de lista (também chamado de cesta) no Windows Media Player.
+A **propriedade basketTitle** recupera o título do botão no painel de lista (também chamado de cesta) Windows Media Player.
 
 ``` syntax
 window.external.basketTitle
@@ -37,7 +37,7 @@ window.external.basketTitle
 
 ## <a name="possible-values"></a>Valores possíveis
 
-Esta propriedade é uma **cadeia de caracteres** somente leitura.
+Essa propriedade é uma Cadeia de Caracteres somente **leitura.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,13 +54,13 @@ Esta propriedade é uma **cadeia de caracteres** somente leitura.
 
 <dl> <dt>
 
-[**Objeto externo para repositórios online do tipo 1**](external-object-for-type-1-online-stores.md)
+[**Objeto externo para lojas online do tipo 1**](external-object-for-type-1-online-stores.md)
 </dt> <dt>
 
-[**External. addToBasket**](external-addtobasket.md)
+[**External.addToBasket**](external-addtobasket.md)
 </dt> <dt>
 
-[**Tarefa externa**](external-task.md)
+[**External.task**](external-task.md)
 </dt> </dl>
 
  

@@ -1,8 +1,8 @@
 ---
-description: O qualificador de tipo contém o valor inteiro para o tipo de contador de propriedade para propriedades em \_ classes PerfRawData do Win32. O Culináriatype contém as constantes para tipos de fórmulas de propriedade em \_ classes PerfFormattedData do Win32.
+description: O qualificador CounterType contém o valor inteiro para o tipo de contador de propriedade para propriedades nas classes Win32 \_ PerfRawData. OTtedType contém as constantes para tipos de fórmula de propriedade nas classes Win32 \_ PerfFormattedData.
 ms.assetid: aa79fcdb-503f-4928-b2b7-f07baeaf9fb5
 ms.tgt_platform: multiple
-title: Qualificador de tipo
+title: Qualificador CounterType
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,63 +13,63 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 883ee7aa2f230756d62294d46e6402fe7f962d4e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7795633355eccdc19da235a56d211f4913ac532e9df51f6d30f33635f9b2d39a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105768617"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119131434"
 ---
-# <a name="countertype-qualifier"></a>Qualificador de tipo
+# <a name="countertype-qualifier"></a>Qualificador CounterType
 
-O qualificador de **tipo** contém o valor inteiro para o tipo de contador de propriedade para propriedades em classes [**\_ PerfRawData do Win32**](/windows/desktop/CIMWin32Prov/win32-perfrawdata) . O **culináriatype** contém as constantes para tipos de fórmulas de propriedade em classes [**\_ PerfFormattedData do Win32**](/windows/desktop/CIMWin32Prov/win32-perfformatteddata) .
+O **qualificador CounterType** contém o valor inteiro para o tipo de contador de propriedade para propriedades nas classes [**Win32 \_ PerfRawData.**](/windows/desktop/CIMWin32Prov/win32-perfrawdata) **OTtedType** contém as constantes para tipos de fórmula de propriedade nas [**classes Win32 \_ PerfFormattedData.**](/windows/desktop/CIMWin32Prov/win32-perfformatteddata)
 
-Para obter mais informações e uma divisão dos tipos de contadores por função, consulte [tipos de contadores](/previous-versions/windows/it-pro/windows-server-2003/cc785636(v=ws.10)).
+Para obter mais informações e um detalhamento dos tipos de contador por função, consulte [Tipos de contador](/previous-versions/windows/it-pro/windows-server-2003/cc785636(v=ws.10)).
 
 
 
-| CounterType | Culináriatype                              |
+| Countertype | Tipo de Cozimento                              |
 |-------------|------------------------------------------|
-| 0           | contador de desempenho \_ \_ RAWCOUNT \_ hex             |
-| 256         | contador de desempenho \_ \_ grande \_ RAWCOUNT \_ hex      |
-| 2816        | \_texto do contador de desempenho \_                      |
-| 65536       | contador de desempenho \_ \_ RAWCOUNT                  |
-| 65792       | contador de desempenho \_ \_ grande \_ RAWCOUNT           |
-| 73728       | PERF \_ duplo \_ bruto                        |
-| 4195328     | \_Delta do contador de desempenho \_                     |
-| 4195584     | \_ \_ Delta grande do contador de desempenho \_              |
-| 4260864     | \_contador de exemplo de desempenho \_                    |
-| 4523008     | \_tipo de \_ QUEUELEN do contador de desempenho \_            |
-| 4523264     | \_tipo de \_ \_ QUEUELEN grande do contador \_ de desempenho     |
-| 5571840     | Tipo de QUEUELEN do contador de desempenho de \_ \_ 100 NS \_ \_     |
-| 6620416     | \_tipo de \_ QUEUELEN de tempo de obj do contador de \_ \_ desempenho \_ |
-| 272696320   | \_contador de contador de desempenho \_                   |
-| 272696576   | \_ \_ contagem em massa do contador de desempenho \_               |
-| 537003008   | \_fração bruta de desempenho \_                      |
-| 541132032   | \_Timer do contador de desempenho \_                     |
-| 541525248   | \_ \_ temporizador do sistema de precisão de desempenho \_           |
-| 542180608   | \_ \_ Temporizador 100NSEC perf                     |
-| 542573824   | \_ \_ Temporizador de 100ns de precisão de desempenho \_            |
-| 543229184   | \_ \_ temporizador de tempo de obj perf \_                   |
-| 543622400   | \_ \_ temporizador de objeto de precisão de desempenho \_           |
-| 549585920   | \_fração de exemplo de perf \_                   |
-| 557909248   | Timer do contador de desempenho \_ \_ \_ inv                |
-| 558957824   | \_Contador de \_ temporizador 100NSEC de desempenho \_ inv                |
-| 574686464   | \_ \_ múltiplo Timer do contador de desempenho \_              |
-| 575735040   | \_Timer de \_ vários \_ 100NSEC perf              |
-| 591463680   | \_ \_ multi timer de \_ contador de desempenho \_         |
-| 592512256   | PERF \_ 100NSEC \_ multi \_ timer \_ inv         |
-| 805438464   | \_temporizador de média de desempenho \_                     |
-| 807666944   | \_tempo decorrido de desempenho \_                      |
-| 1073742336  | contador de desempenho \_ \_ NODATA                    |
-| 1073874176  | \_massa média de desempenho \_                      |
-| 1073939457  | \_base de exemplo de perf \_                       |
-| 1073939458  | \_base média de desempenho \_                      |
-| 1073939459  | \_base bruta de desempenho \_                          |
-| 1073939712  | \_timestamp de precisão de desempenho \_               |
-| 1073939715  | \_ \_ base bruta de perf grande \_                   |
-| 1107494144  | \_ \_ vários base do contador de desempenho \_               |
-| 2147483648  | \_tipo de \_ histograma do contador de desempenho \_           |
+| 0           | HEX DE \_ \_ RAWCOUNT DO CONTADOR \_ DE PERF             |
+| 256         | HEX RAWCOUNT GRANDE DO CONTADOR \_ \_ DE \_ \_ PERF      |
+| 2816        | TEXTO DO CONTADOR \_ DE \_ PERF                      |
+| 65536       | CONTA BRUTA \_ DO \_ CONTADOR DE PERF                  |
+| 65792       | CONTA BRUTA \_ GRANDE DO CONTADOR DE \_ \_ PERF           |
+| 73728       | PERF \_ DOUBLE \_ RAW                        |
+| 4195328     | DELTA DO \_ CONTADOR DE \_ PERF                     |
+| 4195584     | DELTA GRANDE \_ DO \_ CONTADOR DE \_ PERF              |
+| 4260864     | CONTADOR DE EXEMPLO \_ DE \_ PERF                    |
+| 4523008     | TIPO \_ QUEUELEN DO \_ CONTADOR DE \_ PERF            |
+| 4523264     | TIPO \_ \_ QUEUELEN GRANDE DO CONTADOR \_ DE \_ PERF     |
+| 5571840     | TIPO \_ QUEUELEN DO CONTADOR \_ DE PERF 100NS \_ \_     |
+| 6620416     | TIPO DE FILA DE \_ \_ TEMPO OBJ \_ DO \_ \_ CONTADOR DE PERF |
+| 272696320   | CONTADOR \_ DE PERF \_                   |
+| 272696576   | CONTAGEM EM MASSA \_ DO \_ CONTADOR DE \_ PERF               |
+| 537003008   | FRAÇÃO BRUTA DE PERF \_ \_                      |
+| 541132032   | TEMPORIZADOR DO \_ CONTADOR DE \_ PERF                     |
+| 541525248   | TEMPORIZADOR DO \_ SISTEMA \_ DE PRECISÃO DE \_ PERF           |
+| 542180608   | TEMPORIZADOR PERF \_ 100NSEC \_                     |
+| 542573824   | TEMPORIZADOR DE \_ \_ PRECISÃO DE 100NS DE \_ PERF            |
+| 543229184   | TEMPORIZADOR DE \_ TEMPO OBJ \_ PERF \_                   |
+| 543622400   | TEMPORIZADOR DE \_ OBJETO DE \_ PRECISÃO DE PERF \_           |
+| 549585920   | FRAÇÃO DE \_ EXEMPLO DE \_ PERF                   |
+| 557909248   | INV \_ DO TEMPORIZADOR DE CONTADOR DE \_ \_ PERF                |
+| 558957824   | INV DO TEMPORIZADOR PERF \_ 100NSEC \_ \_                |
+| 574686464   | TEMPORIZADOR MÚLTIPLO \_ DO \_ CONTADOR DE \_ PERF              |
+| 575735040   | PERF \_ 100NSEC \_ MULTI \_ TIMER              |
+| 591463680   | INV DE VÁRIOS TEMPORIZADORES DO \_ CONTADOR DE \_ \_ \_ PERF         |
+| 592512256   | PERF \_ 100NSEC \_ MULTI \_ TIMER \_ INV         |
+| 805438464   | TEMPORIZADOR DE \_ MÉDIA DE \_ PERF                     |
+| 807666944   | TEMPO \_ DECORRIDO DE \_ PERF                      |
+| 1073742336  | NODATA \_ DO CONTADOR DE \_ PERF                    |
+| 1073874176  | PERF \_ AVERAGE \_ BULK                      |
+| 1073939457  | BASE DE EXEMPLO \_ DE \_ PERF                       |
+| 1073939458  | PERF \_ AVERAGE \_ BASE                      |
+| 1073939459  | BASE BRUTA \_ DE \_ PERF                          |
+| 1073939712  | \_ \_ TIMESTAMP DE PRECISÃO DE PERF               |
+| 1073939715  | BASE BRUTA \_ \_ GRANDE DE \_ PERF                   |
+| 1107494144  | MULTI \_ BASE DO \_ CONTADOR DE \_ PERF               |
+| 2147483648  | TIPO DE \_ \_ HISTOGRAMA DO CONTADOR DE \_ PERF           |
 
 
 

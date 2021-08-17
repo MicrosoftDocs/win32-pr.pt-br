@@ -1,11 +1,11 @@
 ---
-title: Método getlicenciadoproperty IWMDRMLicense (wmdrmsdk. h)
-description: O método getlicenciadoproperty recupera uma propriedade da licença atual.
+title: Método GetLicenseProperty IWMDRMLicense (Wmdrmsdk.h)
+description: O método GetLicenseProperty recupera uma propriedade da licença atual.
 ms.assetid: 5431f849-b37e-40b7-8bdb-ee30948aeff1
 keywords:
-- Método getlicenciadoproperty Windows Media Format
-- Método getlicenciadoproperty Windows Media Format, interface IWMDRMLicense
-- IWMDRMLicense interface formato Windows Media, método getlicenciadoproperty
+- Formato de mídia do windows do método GetLicenseProperty
+- Formato de mídia do windows do método GetLicenseProperty, interface IWMDRMLicense
+- Formato de mídia da interface IWMDRMLicense , método GetLicenseProperty
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9bf7fe91c57b9c69934f093cdd504b5e6d35efb8
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 167fc0aa050765700805b4339e68142fa5d1eb7fc99e010c7393095dd9aa5c0e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105793274"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119084836"
 ---
-# <a name="iwmdrmlicensegetlicenseproperty-method"></a>Método IWMDRMLicense:: getlicenseproperty
+# <a name="iwmdrmlicensegetlicenseproperty-method"></a>Método IWMDRMLicense::GetLicenseProperty
 
-O método **Getlicenciadoproperty** recupera uma propriedade da licença atual.
+O **método GetLicenseProperty** recupera uma propriedade da licença atual.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -44,21 +44,21 @@ HRESULT GetLicenseProperty(
 
 <dl> <dt>
 
-*bstrname* \[ no\]
+*bstrName* \[ Em\]
 </dt> <dd>
 
-Nome da propriedade a ser recuperada. Defina como uma das constantes na tabela a seguir:
+Nome da propriedade a ser recuperada. De acordo com uma das constantes na tabela a seguir:
 
 
 
 | Constante                   | Descrição                                                                                                          |
 |----------------------------|----------------------------------------------------------------------------------------------------------------------|
-| \_wszWMDRMNet \_ revogação de g | Use para obter a lista de certificados do Windows Media DRM para dispositivos de rede para a licença atual.                        |
-| g \_ wszWMDRM \_ SAPLEVEL      | Use para obter o nível de caminho de áudio seguro (SAP) necessário para reproduzir o conteúdo coberto pela licença atual.                |
+| g \_ wszWMDRMNet \_ Revocation | Use para obter a lista Windows DRM de Mídia para Dispositivos de Rede revogada para a licença atual.                        |
+| g \_ wszWMDRM \_ SAPLEVEL      | Use para obter o nível sap (caminho de áudio seguro) necessário para reproduzir o conteúdo coberto pela licença atual.                |
 | g \_ wszWMDRM \_ SAPRequired   | Use para verificar se a licença atual requer que o SAP seja usado para reproduzir o conteúdo.                               |
-| \_fonte de wszWMDRM g \_      | Use para obter o identificador de origem para a licença atual.                                                            |
-| \_prioridade g wszWMDRM \_      | Use para obter a prioridade da licença atual. As licenças de prioridade mais alta são aplicadas antes das licenças de prioridade mais baixa. |
-| g \_ wszWMDRM \_ uplinkid      | Use para obter a ID de chave da licença raiz na cadeia de licença à qual a licença atual pertence.                  |
+| g \_ wszWMDRM \_ SOURCEID      | Use para obter o identificador de origem da licença atual.                                                            |
+| g \_ wszWMDRM \_ PRIORITY      | Use para obter a prioridade da licença atual. Licenças de prioridade mais alta são aplicadas antes de licenças de prioridade mais baixa. |
+| g \_ wszWMDRM \_ UplinkID      | Use para obter a ID da chave da licença raiz na cadeia de licenças à que a licença atual pertence.                  |
 
 
 
@@ -66,16 +66,16 @@ Nome da propriedade a ser recuperada. Defina como uma das constantes na tabela a
 
 </dd> <dt>
 
-*ppropVariant* \[ fora\]
+*ppropVariant* \[ out\]
 </dt> <dd>
 
 Recebe o valor da propriedade.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
+O método retorna um **HRESULT.** Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
 
 
 
@@ -97,8 +97,8 @@ Nenhum.
 
 | Requisito | Valor |
 |--------------------|-----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Wmdrmsdk. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>Wmdrmsdk. lib</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Wmdrmsdk.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>Wmdrmsdk.lib</dt> </dl> |
 
 
 
@@ -106,10 +106,10 @@ Nenhum.
 
 <dl> <dt>
 
-[**GetLicense**](iwmdrmlicense-getlicense.md)
+[**Getlicense**](iwmdrmlicense-getlicense.md)
 </dt> <dt>
 
-[**Interface IWMDRMLicense**](iwmdrmlicense.md)
+[**IWMDRMLicense Interface**](iwmdrmlicense.md)
 </dt> </dl>
 
  

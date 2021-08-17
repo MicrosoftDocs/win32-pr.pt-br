@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre: Método Update.ReleaseResource'
-title: Método Update.ReleaseResource
+description: 'Saiba mais sobre: método Update. ReleaseResource'
+title: Método Update. ReleaseResource
 TOCTitle: 'ReleaseResource method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Update.ReleaseResource
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.update.releaseresource(v=EXCHG.10)
@@ -31,12 +31,12 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119471426"
 ---
-# <a name="updatereleaseresource-method"></a>Método Update.ReleaseResource
+# <a name="updatereleaseresource-method"></a>Método Update. ReleaseResource
 
-Chamado quando a transação está sendo descartada enquanto está ativa. Isso deve reverter a transação.
+Chamado quando a transação está sendo descartada enquanto ativa. Isso deve reverter a transação.
 
-**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -56,8 +56,8 @@ protected override void ReleaseResource()
 
 #### <a name="reference"></a>Referência
 
-[Classe update](./update-class.md)
+[Atualizar classe](./update-class.md)
 
-[Atualizar membros](./update-members.md)
+[Atualizar Membros](./update-members.md)
 
-[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)

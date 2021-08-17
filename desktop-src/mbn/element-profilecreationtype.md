@@ -18,7 +18,7 @@ ms.locfileid: "119358706"
 
 Especifica o criador do perfil.
 
-Para obter mais informações sobre esse elemento, consulte a documentação do elemento v1 [**ProfileCreationType**](./schema-profilecreationtype-mbnprofile-element.md) .
+Para obter mais informações sobre esse elemento, consulte a documentação do elemento [**ProfileCreationType**](./schema-profilecreationtype-mbnprofile-element.md) v1.
 
 ## <a name="element-hierarchy"></a>Hierarquia de elementos
 
@@ -55,14 +55,14 @@ Nenhum.
 <thead>
 <tr class="header">
 <th>Elemento pai</th>
-<th>Description</th>
+<th>Descrição</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td><a href="element-mbnprofileext.md">MBNProfileExt</a></td>
-<td><p>O elemento <strong>MBNProfileExt</strong> é uma extensão do elemento MBNProfile anterior. Ele identifica um perfil de banda larga móvel com um conjunto mais rico de opções do que o elemento MBNProfile.</p>
-<p>Pode haver mais de um elemento MbnProfileExt em um perfil, descrevendo as configurações de perfil para um determinado conjunto de condições operacionais. Use o elemento filho <a href="element-profileconditionedon.md"><strong>ProfileConditionedOn</strong></a> de <strong>MBNProfileExt</strong> para especificar quais condições operacionais tornam um perfil específico o perfil ativo.</p></td>
+<td><p>O <strong>elemento MBNProfileExt</strong> é uma extensão do elemento MBNProfile anterior. Ele identifica um perfil de Banda Larga Móvel com um conjunto mais avançado de opções do que o elemento MBNProfile.</p>
+<p>Pode haver mais de um elemento MbnProfileExt em um perfil, descrevendo as configurações de perfil para um conjunto específico de condições operacionais. Use o <a href="element-profileconditionedon.md"><strong>elemento filho ProfileConditionedOn</strong></a> <strong>de MBNProfileExt</strong> para especificar quais condições operacionais fazem de um perfil específico o perfil ativo.</p></td>
 </tr>
 </tbody>
 </table>
@@ -71,7 +71,7 @@ Nenhum.
 
 ## <a name="related-elements"></a>Elementos relacionados
 
-Os elementos a seguir têm o mesmo nome que este, mas um conteúdo ou atributos diferentes:
+Os elementos a seguir têm o mesmo nome que este, mas conteúdo ou atributos diferentes:
 
 -   **[ProfileCreationType (em ModemDMConfigProfile)](element-1-profilecreationtype.md)**
 

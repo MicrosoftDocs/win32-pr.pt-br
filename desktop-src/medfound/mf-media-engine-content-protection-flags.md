@@ -1,19 +1,19 @@
 ---
-description: Especifica se o mecanismo de mídia irá reproduzir conteúdo protegido.
+description: Especifica se o Mecanismo de Mídia reproduzirá o conteúdo protegido.
 ms.assetid: 2A593499-BF40-440E-AF1D-3B0E7732489A
-title: Atributo MF_MEDIA_ENGINE_CONTENT_PROTECTION_FLAGS (Mfmediaengine. h)
+title: MF_MEDIA_ENGINE_CONTENT_PROTECTION_FLAGS atributo (Mfmediaengine.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e33feb8d3e1d7c216cfd0392a1fcf9df0100f924
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: ec1cb6b9c9a49c690af84678435ac2bb4fdab76a2fb13c95fecd9ddc33771d7b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "104297919"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119956436"
 ---
-# <a name="mf_media_engine_content_protection_flags-attribute"></a>\_Atributo de \_ \_ sinalizadores de proteção de conteúdo do mecanismo de \_ mídia MF \_
+# <a name="mf_media_engine_content_protection_flags-attribute"></a>Atributo MF \_ MEDIA ENGINE CONTENT PROTECTION \_ \_ \_ \_ FLAGS
 
-Especifica se o mecanismo de mídia irá reproduzir conteúdo protegido.
+Especifica se o Mecanismo de Mídia reproduzirá o conteúdo protegido.
 
 ## <a name="data-type"></a>Tipo de dados
 
@@ -21,7 +21,7 @@ Especifica se o mecanismo de mídia irá reproduzir conteúdo protegido.
 
 ## <a name="remarks"></a>Comentários
 
-O valor desse atributo é um bit a bit **ou** dos sinalizadores da enumeração de sinalizadores de [**proteção do \_ \_ mecanismo de \_ \_ mídia MF**](/windows/desktop/api/mfmediaengine/ne-mfmediaengine-mf_media_engine_protection_flags) . Para habilitar a reprodução de conteúdo protegido, defina o sinalizador de **\_ \_ \_ habilitação de \_ \_ conteúdo protegido do MF Media Engine** .
+O valor desse atributo é um **OR** bit a bit de sinalizadores da [**enumeração MF \_ MEDIA ENGINE PROTECTION \_ \_ \_ FLAGS.**](/windows/desktop/api/mfmediaengine/ne-mfmediaengine-mf_media_engine_protection_flags) Para habilitar a reprodução de conteúdo protegido, de definir o **sinalizador \_ \_ \_ \_ HABILITAR \_** CONTEÚDO PROTEGIDO DO MECANISMO DE MÍDIA do MF.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -29,9 +29,9 @@ O valor desse atributo é um bit a bit **ou** dos sinalizadores da enumeração 
 
 | Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Aplicativos de \[ aplicativos da área de trabalho do Windows 8 \| UWP\]<br/>                                          |
-| Servidor mínimo com suporte<br/> | Aplicativos do Windows Server 2012 \[ Desktop aplicativos \| UWP\]<br/>                                |
-| parâmetro<br/>                   | <dl> <dt>Mfmediaengine. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[Windows 8 aplicativos UWP de aplicativos da área \| de trabalho\]<br/>                                          |
+| Servidor mínimo com suporte<br/> | \[Windows Server 2012 aplicativos UWP de aplicativos da área \| de trabalho\]<br/>                                |
+| Cabeçalho<br/>                   | <dl> <dt>Mfmediaengine.h</dt> </dl> |
 
 
 
@@ -39,13 +39,13 @@ O valor desse atributo é um bit a bit **ou** dos sinalizadores da enumeração 
 
 <dl> <dt>
 
-[Lista alfabética de atributos de Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
-[Atributos do mecanismo de mídia](media-engine-attributes.md)
+[Atributos do Mecanismo de Mídia](media-engine-attributes.md)
 </dt> <dt>
 
-[**IMFMediaEngineClassFactory:: CreateInstance**](/windows/desktop/api/mfmediaengine/nf-mfmediaengine-imfmediaengineclassfactory-createinstance)
+[**IMFMediaEngineClassFactory::CreateInstance**](/windows/desktop/api/mfmediaengine/nf-mfmediaengine-imfmediaengineclassfactory-createinstance)
 </dt> </dl>
 
  

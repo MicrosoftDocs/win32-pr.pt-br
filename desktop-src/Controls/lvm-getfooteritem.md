@@ -1,9 +1,9 @@
 ---
-title: Mensagem de LVM_GETFOOTERITEM (commctrl. h)
-description: Obtém informações sobre um item de rodapé em um controle de exibição de lista. Envie essa mensagem explicitamente ou usando a \_ macro GetFooterItem do ListView.
+title: LVM_GETFOOTERITEM mensagem (Commctrl.h)
+description: Obtém informações sobre um item de rodapé em um controle de exibição de lista. Envie essa mensagem explicitamente ou usando a \_ macro ListView GetFooterItem.
 ms.assetid: 92f55719-c265-433f-84fc-a673680c7ad9
 keywords:
-- Controles de LVM_GETFOOTERITEM de mensagens do Windows
+- LVM_GETFOOTERITEM controles de Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,38 +14,38 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1e642c9d853ae11edcd9199e48de61592de4883c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c0b38bb8a91f93c456bd8096a3736eaec79e6c3472d0f18a133de482bb2c0328
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104008860"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119968276"
 ---
-# <a name="lvm_getfooteritem-message"></a>\_Mensagem GETFOOTERITEM LVM
+# <a name="lvm_getfooteritem-message"></a>Mensagem \_ GETFOOTERITEM LVM
 
-Obtém informações sobre um item de rodapé em um controle de exibição de lista. Envie essa mensagem explicitamente ou usando a macro [**\_ GetFooterItem do ListView**](/windows/desktop/api/Commctrl/nf-commctrl-listview_getfooteritem) .
+Obtém informações sobre um item de rodapé em um controle de exibição de lista. Envie essa mensagem explicitamente ou usando a macro [**\_ ListView GetFooterItem.**](/windows/desktop/api/Commctrl/nf-commctrl-listview_getfooteritem)
 
 ## <a name="parameters"></a>Parâmetros
 
 <dl> <dt>
 
-*wParam* \[ no\]
+*wParam* \[ Em\]
 </dt> <dd>
 
 O índice do item.
 
 </dd> <dt>
 
-*lParam* \[ entrada, saída\]
+*lParam* \[ in, out\]
 </dt> <dd>
 
-Um ponteiro para uma estrutura [**LVFOOTERITEM**](/windows/win32/api/commctrl/ns-commctrl-lvfooteritem) para receber um valor para os membros **State** e/ou **pszText** de acordo com o valor do membro **Mask** . O processo de chamada é responsável por alocar essa estrutura e definir seus membros para indicar ao destinatário quais informações retornar. Para obter mais informações, consulte **LVFOOTERITEM**.
+Um ponteiro para uma [**estrutura LV SENIORERITEM**](/windows/win32/api/commctrl/ns-commctrl-lvfooteritem) para receber um valor para os membros **state** e/ou **pszText** de acordo com o valor do **membro de** máscara. O processo de chamada é responsável por alocar essa estrutura e definir seus membros para indicar ao receptor quais informações retornar. Para obter mais informações, **consulte LVFOOTERITEM**.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna **verdadeiro** se for bem-sucedido ou **false** caso contrário.
+Retorna **TRUE se** for bem-sucedido ou FALSE **caso** contrário.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -53,9 +53,9 @@ Retorna **verdadeiro** se for bem-sucedido ou **false** caso contrário.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

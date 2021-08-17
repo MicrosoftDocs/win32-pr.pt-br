@@ -33,7 +33,7 @@ Recupera e define os caminhos do sistema de arquivos usados para encontrar arqui
 
 Essa propriedade é leitura/gravação.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -65,7 +65,7 @@ Especifica uma safearray que contém um caminho do sistema de arquivos para cada
 | <dl> <dt>HRESULT \_ FROM \_ WIN32(ERROR \_ PATH NOT \_ \_ FOUND)</dt> <dt>0X80070003</dt> </dl> | O sistema não pode encontrar um caminho especificado pelo *parâmetro searchPaths.*<br/>                                                     |
 | <dl> <dt>HRESULT \_ FROM \_ WIN32(ERROR \_ INVALID \_ NAME)</dt> <dt>0X8007007B</dt> </dl>    | Um caminho especificado no parâmetro *searchPaths* contém caracteres ilícitos. Os caracteres ilícitos são " \* ?<>/ \| ":".<br/> |
 | <dl> <dt>HRESULT \_ FROM \_ WIN32(ERROR \_ \_ BAD PATHNAME)</dt> <dt>0x800700a1</dt> </dl>    | Um caminho contido no parâmetro *searchPaths* especifica um caminho vazio ou relativo. Um caminho absoluto é necessário.<br/>          |
-| <dl> <dt>HRESULT \_ FROM \_ WIN32(ERROR \_ BUFFER \_ OVERFLOW)</dt> <dt>0x8007006f</dt> </dl> | O caminho especificado no parâmetro *searchPaths* é muito longo. O comprimento do caminho deve ter menos de 260 caracteres.<br/>     |
+| <dl> <dt>HRESULT \_ FROM \_ WIN32(ERROR \_ BUFFER \_ OVERFLOW)</dt> <dt>0X8007006F</dt> </dl> | O caminho especificado no parâmetro *searchPaths* é muito longo. O comprimento do caminho deve ter menos de 260 caracteres.<br/>     |
 | <dl> <dt>VM \_ E \_ PREF \_ NÃO ENCONTRADO \_ 0XA0040300</dt> <dt></dt> </dl>                       | A preferência não foi encontrada.<br/>                                                                                               |
 | <dl> <dt>VM \_ VIRTUALIZAÇÃO \_ DE HARDWARE E \_ \_ DESABILITADA</dt> <dt>0XA0040951</dt> </dl>     | O processador não dá suporte a extensões de HAV (Virtualização Acelerada de Hardware).<br/>                                        |
 | <dl> <dt>DISP \_ E \_ EXCEPTION</dt> <dt>0x80020009</dt> </dl>                            | Ocorreu um erro inesperado.<br/>                                                                                           |
@@ -82,7 +82,7 @@ Especifica uma safearray que contém um caminho do sistema de arquivos para cada
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                     |
 | Fim do suporte ao cliente<br/>    | Windows 7<br/>                                                                          |
 | Produto<br/>                  | Windows Virtual PC<br/>                                                                 |
-| parâmetro<br/>                   | <dl> <dt>VPCCOMInterfaces.h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>VPCCOMInterfaces.h</dt> </dl> |
 | IID<br/>                      | IID IVMVirtualPC é definido como \_ 236ba0d9-a24a-4292-a132-27c1421dfd01<br/>               |
 
 

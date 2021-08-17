@@ -4,17 +4,17 @@ description: Este tópico demonstra como usar um objeto de clipe de retângulo p
 ms.assetid: 377EF49A-F9F2-4A72-9D22-DEC33803AD0D
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0d26019f37949b0111ee9b5958fa3fba2c9507cb
-ms.sourcegitcommit: 73417d55867c804274a55abe5ca71bcba7006119
+ms.openlocfilehash: 10386f3e99dead7fff04a57463c2ee753bd1d712e9a59e6b928136c32f25ae75
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "104008578"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119119090"
 ---
 # <a name="how-to-clip-with-a-rectangle-clip-object"></a>Como recortar com um objeto de clipe de retângulo
 
 > [!NOTE]
-> Para aplicativos no Windows 10, é recomendável usar APIs do Windows. UI. composição em vez de DirectComposition. Para obter mais informações, consulte [modernizar seu aplicativo de área de trabalho usando a camada Visual](/windows/uwp/composition/visual-layer-in-desktop-apps).
+> para aplicativos no Windows 10, é recomendável usar as APIs Windows. UI. composição em vez de DirectComposition. Para obter mais informações, consulte [modernizar seu aplicativo de área de trabalho usando a camada Visual](/windows/uwp/composition/visual-layer-in-desktop-apps).
 
 Este tópico demonstra como usar um objeto de clipe de retângulo para recortar uma árvore visual ou Visual.
 
@@ -147,9 +147,9 @@ Certifique-se de liberar o objeto de clipe de retângulo quando você não preci
 
 <dl> <dt>
 
-[Recorte](clipping.md)
+[Recortando](clipping.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

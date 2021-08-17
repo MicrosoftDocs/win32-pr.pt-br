@@ -1,26 +1,26 @@
 ---
-title: Atributo ForeDepth de VML
-description: Atributo ForeDepth de VML
+title: Atributo ForeDepth VML
+description: Atributo ForeDepth VML
 ms.assetid: 6668a2ed-a751-4f92-8151-b098c93f8a50
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4d0421772ce3513eb7b29dfc497aa1c63a91c4bd
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 8fd07277fbf390578fc179a7951d0688ceaaa9b82acc06234a3a106616708927
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "105757348"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119137009"
 ---
-# <a name="vml-foredepth-attribute"></a>Atributo ForeDepth de VML
+# <a name="vml-foredepth-attribute"></a>Atributo ForeDepth VML
 
-Este tópico descreve a VML, um recurso que foi preterido a partir do Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem de VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
+Este tópico descreve o VML, um recurso que foi preterido a partir Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem do VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
 
 > [!Note]  
-> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [conteúdo arquivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obter informações, recomendações e orientações sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
+> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [Conteúdo arquivado.](/previous-versions/windows/internet-explorer/ie-developer/) Para obter informações, recomendações e diretrizes sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center.](https://msdn.microsoft.com/ie/)
 
- 
+ 
 
-Define a quantidade de extrusão posterior. Leitura/gravação. **VgNumber**.
+Define a quantidade deion de avanço. Leitura/gravação. **VgNumber.**
 
 **Aplica-se a**
 
@@ -28,20 +28,20 @@ Define a quantidade de extrusão posterior. Leitura/gravação. **VgNumber**.
 
 **Sintaxe de marca**
 
-<o: *Element* foredepth = " *expressão* " >
+<o: *elemento* foredepth=" *expressão* ">
 
 **Sintaxe do script**
 
-*Element* . foredepth = "*expressão*"
+*elemento* .foredepth="*expression*"
 
-*expressão* = de *elemento*. foredepth
+*expressão* = *elemento*.foredepth
 
 **Comentários**
 
-A extrusão posterior é a quantidade de extrusão que parece estar na frente da forma. As unidades padrão estão em pontos e o valor padrão é 0.
+Aion de avanço é a quantidade de shape que parece estar na frente da forma. As unidades padrão estão em pontos e o valor padrão é 0.
 
-*Atributo de extensões de Microsoft Office*
+*Microsoft Office Atributo Extensions*
 
- 
+ 
 
- 
+ 

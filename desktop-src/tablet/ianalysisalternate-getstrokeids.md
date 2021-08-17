@@ -1,7 +1,7 @@
 ---
 description: Retorna os identificadores de traço associados a este IAnalysisAlternate.
 ms.assetid: 495d485f-0d16-4085-9213-cc55f3f259f0
-title: 'Método IAnalysisAlternate:: GetStrokeIds (IACom. h)'
+title: Método IAnalysisAlternate::GetRogkeIds (IACom.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -20,9 +20,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118967495"
 ---
-# <a name="ianalysisalternategetstrokeids-method"></a>Método IAnalysisAlternate:: GetStrokeIds
+# <a name="ianalysisalternategetstrokeids-method"></a>Método IAnalysisAlternate::GetRogkeIds
 
-Retorna os identificadores de traço associados a este [**IAnalysisAlternate**](ianalysisalternate.md).
+Retorna os identificadores de traço associados a [**este IAnalysisAlternate.**](ianalysisalternate.md)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,30 +40,30 @@ HRESULT GetStrokeIds(
 
 <dl> <dt>
 
-*pulStrokeIdsCount* \[ entrada, saída\]
+*pulStrokeIdsCount* \[ in, out\]
 </dt> <dd>
 
-Um ponteiro para um **ULONG** que é definido como o número de identificadores de traço associados a este [**IAnalysisAlternate**](ianalysisalternate.md).
+Um ponteiro para um **ULONG** definido como o número de identificadores de traço associados a [**este IAnalysisAlternate.**](ianalysisalternate.md)
 
 </dd> <dt>
 
-*pplStrokeIds* \[ fora\]
+*pplStrkeIds* \[ out\]
 </dt> <dd>
 
-\[out, tamanho \_ é ( \* *PULSTROKEIDSCOUNT* \* sizeof (Long))\]
+\[out, size \_ is( \* *pulStrkeIdsCount* \* sizeof(LONG))\]
 
-Uma matriz de *pulStrokeIdsCount* de comprimento **longa** que é definida para os identificadores de traço associados a esse [**IAnalysisAlternate**](ianalysisalternate.md).
+Uma matriz **de LONG** de comprimento *pulRogkeIdsCount* que é definida para os identificadores de traço associados a [**este IAnalysisAlternate.**](ianalysisalternate.md)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor retornado
 
-Para obter uma descrição dos valores de retorno, consulte [classes e interfaces – análise de tinta](classes-and-interfaces---ink-analysis.md).
+Para ver uma descrição dos valores de retorno, consulte [Classes e interfaces – Análise de Tinta.](classes-and-interfaces---ink-analysis.md)
 
 ## <a name="remarks"></a>Comentários
 
 > [!Caution]  
-> Para evitar um vazamento de memória, use [CoTaskMemFree](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemfree) para liberar a memória do \* *pplStrokeIds* quando você não precisar mais das informações.
+> Para evitar uma perda de memória, use [CoTaskMemFree](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemfree) para liberar a memória de \* *pplStrkeIds* quando você não precisar mais das informações.
 
  
 
@@ -73,9 +73,9 @@ Para obter uma descrição dos valores de retorno, consulte [classes e interface
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do XP Tablet PC Edition\]<br/>                                                 |
+| Cliente mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho do XP Tablet PC \[ Edition\]<br/>                                                 |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                                     |
-| Cabeçalho<br/>                   | <dl> <dt>IACom. h (também requer IACom \_ i. c)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>IACom.h (também requer IACom \_ i.c)</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |
 
 

@@ -1,12 +1,12 @@
 ---
 title: Propriedade IMsRdpClientNonScriptable5 DisableConnectionBar
-description: Especifica se o controle ActiveX Área de Trabalho Remota deve desabilitar a barra de conexão.
+description: Especifica se o controle Área de Trabalho Remota ActiveX deve desabilitar a barra de conexão.
 ms.assetid: 82c57b93-f976-43e6-97f9-3602bf97e466
 ms.tgt_platform: multiple
 keywords:
-- Serviços de Área de Trabalho Remota da propriedade DisableConnectionBar
-- Propriedade DisableConnectionBar Serviços de Área de Trabalho Remota, interface IMsRdpClientNonScriptable5
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientNonScriptable5, Propriedade DisableConnectionBar
+- Propriedade DisableConnectionBar Serviços de Área de Trabalho Remota
+- A propriedade DisableConnectionBar Serviços de Área de Trabalho Remota , interface IMsRdpClientNonScriptable5
+- Interface IMsRdpClientNonScriptable5 Serviços de Área de Trabalho Remota propriedade DisableConnectionBar
 topic_type:
 - apiref
 api_name:
@@ -18,16 +18,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a129d4781db69a564eecbca3a715c3c5ccf1a9cc
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 4f74fce650eb82514538eed7066b937c29f8618aba1eab7531f3bdb7e1127da5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104499845"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119138739"
 ---
-# <a name="imsrdpclientnonscriptable5disableconnectionbar-property"></a>IMsRdpClientNonScriptable5: Propriedade isableConnectionBar de:D
+# <a name="imsrdpclientnonscriptable5disableconnectionbar-property"></a>Propriedade IMsRdpClientNonScriptable5::D isableConnectionBar
 
-Especifica se o controle ActiveX Área de Trabalho Remota deve desabilitar a barra de conexão. Se essa propriedade contiver a **variante \_ true**, a barra de conexão deverá ser desabilitada. Se essa propriedade contiver a **variante \_ false**, a barra de conexão deverá ser habilitada.
+Especifica se o controle Área de Trabalho Remota ActiveX deve desabilitar a barra de conexão. Se essa propriedade **contiver VARIANT \_ TRUE**, a barra de conexão deverá ser desabilitada. Se essa propriedade **contiver VARIANT \_ FALSE**, a barra de conexão deverá ser habilitada.
 
 Essa propriedade é somente gravação.
 
@@ -56,7 +56,7 @@ Especifica o novo valor da propriedade.
 | Servidor mínimo com suporte<br/> | Windows Server 2008 R2<br/>                                                             |
 | Biblioteca de tipos<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl>        |
 | DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl>        |
-| IID<br/>                      | IID \_ IMsRdpClientNonScriptable5 é definido como 4f6996d5-d7b1-412C-b0ff-063718566907<br/> |
+| IID<br/>                      | IID \_ IMsRdpClientNonScriptable5 é definido como 4f6996d5-d7b1-412c-b0ff-063718566907<br/> |
 
 
 

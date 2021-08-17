@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f6885d9dabb1d5d41cec20cc6922671f54b1a8a1
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: aaf2dca0a2370dbddee78641d07d5bfe2068856b62e1ce42d1779e137f731bda
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103825218"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119297576"
 ---
 # <a name="ms-dns-propagation-time-attribute"></a>atributo ms-DNS-Propagation-time
 
@@ -53,7 +53,7 @@ Um atributo usado para definir, em segundos, o tempo esperado necessário para p
 | ID do link                | \-                                       |
 | MAPI-Id                | \-                                       |
 | System-Only            | Falso                                    |
-| É de valor único       | True                                     |
+| É de valor único       | Verdadeiro                                     |
 | É indexado             | Falso                                    |
 | No catálogo global      | Falso                                    |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                             |

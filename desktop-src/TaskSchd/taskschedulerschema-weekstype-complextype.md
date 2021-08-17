@@ -1,9 +1,9 @@
 ---
-title: Tipo complexo weeksType
+title: Tipo de Weekly Complex
 description: Define o elemento filho e as informações de sequenciamento para o elemento Week.
 ms.assetid: c9e8814c-b8f9-426d-943d-ca3efa5d914b
 keywords:
-- tipo complexo weeksType Agendador de Tarefas
+- tipo complexo de weektype Agendador de Tarefas
 topic_type:
 - apiref
 api_name:
@@ -20,9 +20,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117757983"
 ---
-# <a name="weekstype-complex-type"></a>Tipo complexo weeksType
+# <a name="weekstype-complex-type"></a>Tipo de Weekly Complex
 
-Define o elemento filho e as informações de sequenciamento para o [**elemento Week.**](taskschedulerschema-week-weekstype-element.md)
+Define o elemento filho e as informações de sequenciamento para o elemento [**Week**](taskschedulerschema-week-weekstype-element.md) .
 
 ``` syntax
 <xs:complexType name="weeksType">
@@ -42,7 +42,7 @@ Define o elemento filho e as informações de sequenciamento para o [**elemento 
 
 | Elemento                                                    | Type                                                        | Descrição                                             |
 |------------------------------------------------------------|-------------------------------------------------------------|---------------------------------------------------------|
-| [**Semana**](taskschedulerschema-week-weekstype-element.md) | [**weekType**](taskschedulerschema-weektype-simpletype.md) | Especifica a semana em que a tarefa é executado.<br/> |
+| [**Semana**](taskschedulerschema-week-weekstype-element.md) | [**weektype**](taskschedulerschema-weektype-simpletype.md) | Especifica a semana em que a tarefa é executada.<br/> |
 
 
 
@@ -52,8 +52,8 @@ Define o elemento filho e as informações de sequenciamento para o [**elemento 
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/> |
 
 
 

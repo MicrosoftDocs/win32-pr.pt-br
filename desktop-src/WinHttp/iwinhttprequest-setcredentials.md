@@ -1,7 +1,7 @@
 ---
 description: Define as credenciais a serem usadas com um servidor HTTP, seja um servidor proxy ou um servidor de origem.
 ms.assetid: d96c6e76-92b8-4ad7-8ca7-a9acbed523ff
-title: 'Método IWinHttpRequest:: SetCredentials'
+title: Método IWinHttpRequest::SetCredentials
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 - COM
 api_location:
 - Winhttp.dll
-ms.openlocfilehash: 46b0dfb321763a3b3bfe622e116f2e76c5e59423
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9246352e78472461bfbfe37569d9bd631905fda03c87571ed7ed3dad04edb797
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105765322"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117744462"
 ---
-# <a name="iwinhttprequestsetcredentials-method"></a>Método IWinHttpRequest:: SetCredentials
+# <a name="iwinhttprequestsetcredentials-method"></a>Método IWinHttpRequest::SetCredentials
 
-O método **SetCredentials** define as credenciais a serem usadas com um servidor http, seja um servidor proxy ou um servidor de origem.
+O **método SetCredentials** define as credenciais a serem usadas com um servidor HTTP, seja um servidor proxy ou um servidor de origem.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,21 +42,21 @@ HRESULT SetCredentials(
 
 <dl> <dt>
 
-*Nome de usuário* \[ no\]
+*UserName* \[ Em\]
 </dt> <dd>
 
 Especifica o nome de usuário para autenticação.
 
 </dd> <dt>
 
-*Senha* \[ do no\]
+*Senha* \[ Em\]
 </dt> <dd>
 
-Especifica a senha para autenticação. Esse parâmetro será ignorado se *bstrUserName* for **nulo** ou estiver ausente.
+Especifica a senha para autenticação. Esse parâmetro será ignorado se *bstrUserName* for **NULL** ou ausente.
 
 </dd> <dt>
 
-*Flags* \[in\]
+*Sinalizadores* \[ Em\]
 </dt> <dd>
 
 Especifica quando [**IWinHttpRequest**](iwinhttprequest-interface.md) usa credenciais. Pode ser um dos valores a seguir.
@@ -65,8 +65,8 @@ Especifica quando [**IWinHttpRequest**](iwinhttprequest-interface.md) usa creden
 
 | Valor                                                                                                               | Significado                                        |
 |---------------------------------------------------------------------------------------------------------------------|------------------------------------------------|
-| <dl> <dt>HTTPREQUEST \_ SETcredentials \_ para o \_ servidor</dt> </dl> | As credenciais são passadas para um servidor.<br/> |
-| <dl> <dt>HTTPREQUEST \_ SETcredentials \_ para o \_ proxy</dt> </dl>  | As credenciais são passadas para um proxy.<br/>  |
+| <dl> <dt>HTTPREQUEST \_ SETCREDENTIALS \_ FOR \_ SERVER</dt> </dl> | As credenciais são passadas para um servidor.<br/> |
+| <dl> <dt>HTTPREQUEST \_ SETCREDENTIALS \_ PARA \_ PROXY</dt> </dl>  | As credenciais são passadas para um proxy.<br/>  |
 
 
 
@@ -74,20 +74,20 @@ Especifica quando [**IWinHttpRequest**](iwinhttprequest-interface.md) usa creden
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-O valor de retorno será **S \_ OK** em caso de êxito ou um valor de erro, caso contrário.
+O valor de retorno é **S \_ OK em** caso de êxito ou um valor de erro, caso contrário.
 
 ## <a name="remarks"></a>Comentários
 
-Esse método retornará um valor de erro se uma chamada para [**abrir**](iwinhttprequest-open.md) não tiver sido concluída com êxito. Supõe-se que alguma medida de interação com um servidor proxy ou servidor de origem deve ocorrer antes que os usuários possam definir credenciais para a sessão. Além disso, até que os usuários saibam quais esquemas de autenticação têm suporte, eles não podem formatar as credenciais.
+Esse método retornará um valor de erro se uma chamada para [**Abrir**](iwinhttprequest-open.md) não tiver sido concluída com êxito. Supõe-se que alguma medida de interação com um servidor proxy ou servidor de origem deve ocorrer antes que os usuários possam definir credenciais para a sessão. Além disso, até que os usuários saibam quais esquemas de autenticação têm suporte, eles não podem formatar as credenciais.
 
 > [!Note]  
-> Para o Windows XP e o Windows 2000, consulte a seção [requisitos de tempo de execução](winhttp-start-page.md) da página inicial do WinHTTP.
+> Para Windows XP e Windows 2000, consulte [](winhttp-start-page.md) a seção Requisitos de tempo de executar da página inicial do WinHTTP.
 
  
 
-Para autenticar com o servidor e o proxy, o aplicativo deve chamar **SetCredentials** duas vezes; Primeiro, com o parâmetro *flags* definido como **HttpRequest \_ SetCredentials \_ para \_ Server** e Second, com o parâmetro *flags* definido como **HttpRequest \_ SetCredentials \_ para \_ proxy**.
+Para autenticar com o servidor e o proxy, o aplicativo deve chamar **SetCredentials** duas vezes; primeiro com o parâmetro *Flags* definido como **HTTPREQUEST \_ SETCREDENTIALS \_ FOR \_ SERVER** e, em segundo lugar, com o parâmetro *Flags* definido como **HTTPREQUEST \_ SETCREDENTIALS \_ FOR \_ PROXY**.
 
 ## <a name="examples"></a>Exemplos
 
@@ -191,7 +191,7 @@ int main()
 
 
 
-O exemplo de script a seguir mostra como abrir uma conexão HTTP, definir credenciais para o servidor, definir credenciais para um proxy, se um for usado, enviar uma solicitação HTTP e ler o texto da resposta.
+O exemplo de script a seguir mostra como abrir uma conexão HTTP, definir credenciais para o servidor, definir credenciais para um proxy se um for usado, enviar uma solicitação HTTP e ler o texto da resposta.
 
 
 ```JScript
@@ -285,11 +285,11 @@ WScript.Echo(WinHttpReq.GetAllResponseHeaders());
 
 | Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Somente Windows XP, Windows 2000 Professional com \[ aplicativos de área de trabalho do SP3\]<br/>            |
-| Servidor mínimo com suporte<br/> | Windows Server 2003, Windows 2000 Server com aplicativos de área de trabalho do SP3 \[ somente\]<br/>         |
-| Redistribuível<br/>          | WinHTTP 5,0 e Internet Explorer 5, 1 ou posterior no Windows XP e no Windows 2000.<br/> |
-| INSERI<br/>                      | <dl> <dt>HttpRequest. idl</dt> </dl> |
-| Biblioteca<br/>                  | <dl> <dt>WinHTTP. lib</dt> </dl>     |
+| Cliente mínimo com suporte<br/> | Windows XP, Windows 2000 Professional somente com aplicativos da área de trabalho SP3 \[\]<br/>            |
+| Servidor mínimo com suporte<br/> | Windows Server 2003, Windows 2000 Server com somente aplicativos da área de trabalho SP3 \[\]<br/>         |
+| Redistribuível<br/>          | WinHTTP 5.0 e Internet Explorer 5.01 ou posterior no Windows XP e Windows 2000.<br/> |
+| Idl<br/>                      | <dl> <dt>HttpRequest.idl</dt> </dl> |
+| Biblioteca<br/>                  | <dl> <dt>Winhttp.lib</dt> </dl>     |
 | DLL<br/>                      | <dl> <dt>Winhttp.dll</dt> </dl>     |
 
 

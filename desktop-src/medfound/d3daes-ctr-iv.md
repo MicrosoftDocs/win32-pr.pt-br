@@ -1,7 +1,7 @@
 ---
-description: Contém um vetor de inicialização (IV) para CTR de 128 bits criptografia AES modo de criptografia de codificação de bloco (AES-CTR).
+description: Contém um IV (vetor de inicialização) para criptografia de criptografia de bloco criptografia AES modo CTR (AES-CTR) de 128 bits.
 ms.assetid: 2ee738c2-d56c-4a50-94b8-b7180918aa8c
-title: Estrutura de D3DAES_CTR_IV (D3d9types. h)
+title: D3DAES_CTR_IV (D3d9types.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -20,9 +20,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118974785"
 ---
-# <a name="d3daes_ctr_iv-structure"></a>\_Estrutura D3DAES CTR \_ IV
+# <a name="d3daes_ctr_iv-structure"></a>Estrutura D3DAES \_ CTR \_ IV
 
-Contém um vetor de inicialização (IV) para CTR de 128 bits criptografia AES modo de criptografia de codificação de bloco (AES-CTR).
+Contém um IV (vetor de inicialização) para criptografia de criptografia de bloco criptografia AES modo CTR (AES-CTR) de 128 bits.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -43,7 +43,7 @@ typedef struct _D3DAES_CTR_IV {
 **IV**
 </dt> <dd>
 
-O IV, no formato big-endian.
+O IV, em formato big-endian.
 
 </dd> <dt>
 
@@ -56,9 +56,9 @@ A contagem de blocos, no formato big-endian.
 
 ## <a name="remarks"></a>Comentários
 
-A estrutura **D3DAES \_ CTR \_ IV** e a estrutura [**DXVA2 \_ AES \_ CTR \_ IV**](/windows/desktop/api/dxva2api/ns-dxva2api-dxva2_aes_ctr_iv) são equivalentes.
+A **estrutura \_ CTR \_ IV D3DAES** e a estrutura [**\_ \_ CTR \_ IV do DXVA2 AES**](/windows/desktop/api/dxva2api/ns-dxva2api-dxva2_aes_ctr_iv) são equivalentes.
 
-Para obter detalhes, consulte [**DXVA2 \_ AES \_ CTR \_ IV**](/windows/desktop/api/dxva2api/ns-dxva2api-dxva2_aes_ctr_iv).
+Para obter detalhes, [**consulte DXVA2 \_ AES \_ CTR \_ IV**](/windows/desktop/api/dxva2api/ns-dxva2api-dxva2_aes_ctr_iv).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -66,9 +66,9 @@ Para obter detalhes, consulte [**DXVA2 \_ AES \_ CTR \_ IV**](/windows/desktop/a
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[somente aplicativos de área de trabalho Windows 7\]<br/>                                                              |
-| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do Server 2008 R2\]<br/>                                                 |
-| Cabeçalho<br/>                   | <dl> <dt>D3d9types. h (incluir D3d9. h)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 7 \[ aplicativos da área de trabalho\]<br/>                                                              |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho do Server 2008 R2 \[\]<br/>                                                 |
+| Cabeçalho<br/>                   | <dl> <dt>D3d9types.h (inclua D3d9.h)</dt> </dl> |
 
 
 

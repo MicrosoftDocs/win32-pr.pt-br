@@ -1,12 +1,12 @@
 ---
-title: Propriedade do rótulo ITsSbTaskInfo
+title: Propriedade rótulo ITsSbTaskInfo
 description: Recupera o rótulo que descreve a finalidade da tarefa.
 ms.assetid: 075de6a4-53b0-43b0-9bca-03bf312fff6e
 ms.tgt_platform: multiple
 keywords:
-- Serviços de Área de Trabalho Remota de Propriedade do rótulo
-- Propriedade do rótulo Serviços de Área de Trabalho Remota, interface ITsSbTaskInfo
-- Serviços de Área de Trabalho Remota de interface ITsSbTaskInfo, Propriedade Label
+- Rótulo da propriedade Serviços de Área de Trabalho Remota
+- A propriedade label Serviços de Área de Trabalho Remota , interface ITsSbTaskInfo
+- Interface ITsSbTaskInfo Serviços de Área de Trabalho Remota , propriedade Label
 topic_type:
 - apiref
 api_name:
@@ -18,14 +18,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e1f85aaea366cf002d4ec1bacce8f29a6aa67fdb
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5e2414dd83d44add4084a4176f575817875e933f9770039e49b02364bd8103cc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103645151"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119138299"
 ---
-# <a name="itssbtaskinfolabel-property"></a>Propriedade ITsSbTaskInfo:: Label
+# <a name="itssbtaskinfolabel-property"></a>Propriedade ITsSbTaskInfo::Label
 
 Recupera o rótulo que descreve a finalidade da tarefa.
 
@@ -44,7 +44,7 @@ HRESULT get_Label(
 
 ## <a name="property-value"></a>Valor da propriedade
 
-Um ponteiro para um valor **BSTR** que contém o rótulo.
+Um ponteiro para um **valor BSTR** que contém o rótulo.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,7 +54,7 @@ Um ponteiro para um valor **BSTR** que contém o rótulo.
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Nenhum compatível<br/>                                                            |
 | Servidor mínimo com suporte<br/> | Windows Server 2012<br/>                                                       |
-| INSERI<br/>                      | <dl> <dt>Sbtsv. idl</dt> </dl> |
+| Idl<br/>                      | <dl> <dt>Sbtsv.idl</dt> </dl> |
 
 
 

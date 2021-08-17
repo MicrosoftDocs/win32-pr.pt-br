@@ -1,27 +1,27 @@
 ---
-title: Considerações sobre segurança controles do Microsoft Windows
-description: Este tópico fornece informações sobre considerações de segurança relacionadas aos controles do Windows.
+title: considerações de segurança sobre controles do Microsoft Windows
+description: este tópico fornece informações sobre considerações de segurança relacionadas aos controles de Windows.
 ms.assetid: d5396fa1-452e-40e1-beaf-ae04690048f1
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e29ba986ddd1db980134f428c8abf152321617ef
-ms.sourcegitcommit: 773fa6257ead6c74154ad3cf46d21e49adc900aa
+ms.openlocfilehash: 45faa0f3d2f521038c056055329d70541625bac88c16e62c1581b55ae2a6c5bf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "104084973"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119696506"
 ---
-# <a name="security-considerations-microsoft-windows-controls"></a>Considerações de segurança: controles do Microsoft Windows
+# <a name="security-considerations-microsoft-windows-controls"></a>considerações de segurança: controles do Microsoft Windows
 
-Este tópico fornece informações sobre considerações de segurança relacionadas aos controles do Windows. As informações neste tópico não fornecem tudo o que você precisa saber sobre problemas de segurança — Use-o como ponto de partida e referência para essa área de tecnologia.
+este tópico fornece informações sobre considerações de segurança relacionadas aos controles de Windows. As informações neste tópico não fornecem tudo o que você precisa saber sobre problemas de segurança — Use-o como ponto de partida e referência para essa área de tecnologia.
 
-A interconectividade entre computadores é comum; a principal preocupação do desenvolvedor deve ser a segurança do aplicativo. As seções a seguir discutem alguns possíveis problemas de segurança a serem considerados ao programar controles do Windows.
+A interconectividade entre computadores é comum; a principal preocupação do desenvolvedor deve ser a segurança do aplicativo. as seções a seguir discutem alguns problemas potenciais de segurança a serem considerados ao programar Windows controles.
 
 -   [Mensagens de controle terminadas em nulo](#null-terminated-control-messages)
 -   [Uso de cadeia de caracteres](#string-use)
--   [Validação da entrada](#input-validation)
+-   [Validação de entrada](#input-validation)
 -   [Uso de senha](#password-use)
--   [Alertas de segurança](#security-alerts)
+-   [Alertas de Segurança](#security-alerts)
 -   [Tópicos relacionados](#related-topics)
 
 ## <a name="null-terminated-control-messages"></a>Mensagens de controle terminadas em nulo
@@ -30,7 +30,7 @@ Muitas das mensagens de controle e macros têm parâmetros de cadeia de caracter
 
 ## <a name="string-use"></a>Uso de cadeia de caracteres
 
-Quando você programa os controles do Windows, é necessário manipular cadeias de caracteres. Quase todos os controles exigem que o texto seja inserido. Por exemplo, para preencher uma caixa de listagem, você deve carregar cadeias de caracteres no controle. Como usar cadeias de caracteres incorretamente geralmente causa estouros de buffer, tome precauções para evitar esse risco de segurança.
+quando você programa Windows controles, é necessário manipular cadeias de caracteres. Quase todos os controles exigem que o texto seja inserido. Por exemplo, para preencher uma caixa de listagem, você deve carregar cadeias de caracteres no controle. Como usar cadeias de caracteres incorretamente geralmente causa estouros de buffer, tome precauções para evitar esse risco de segurança.
 
 Para obter mais informações sobre estouros de buffer, consulte *escrevendo código seguro* por Michael Howard e David LeBlanc, Microsoft Press, 2002 e práticas [recomendadas para as APIs de segurança](/windows/desktop/SecBP/best-practices-for-the-security-apis).
 
@@ -74,7 +74,7 @@ A tabela a seguir lista os recursos que, se usados incorretamente, podem comprom
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -83,7 +83,7 @@ A tabela a seguir lista os recursos que, se usados incorretamente, podem comprom
 **Outros recursos**
 </dt> <dt>
 
-[Microsoft Security](https://www.microsoft.com/security/default.aspx)
+[Segurança da Microsoft](https://www.microsoft.com/security/default.aspx)
 </dt> <dt>
 
 [Segurança](/windows/desktop/security)
@@ -95,6 +95,6 @@ A tabela a seguir lista os recursos que, se usados incorretamente, podem comprom
 [Práticas recomendadas para as APIs de segurança](/windows/desktop/SecBP/best-practices-for-the-security-apis)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

@@ -1,11 +1,11 @@
 ---
-title: atributo ms-PKI-RA-Application-Policies
-description: O OID da política de aplicativo RA necessário nas assinaturas do contador da solicitação de certificado.
+title: Atributo ms-PKI-RA-Application-Policies
+description: O OID da política de aplicativo ra necessária nas assinaturas de contador da solicitação de certificado.
 ms.assetid: 1ce61107-01aa-4a03-8a00-21890fb610d7
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD do atributo ms-PKI-RA-Application-Policies
-- msPKI-RA-Application-Policies atributo AD Schema
+- Atributo aD MS-PKI-RA-Application-Policies
+- Atributo AD msPKI-RA-Application-Policies
 topic_type:
 - apiref
 api_name:
@@ -21,22 +21,22 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118960345"
 ---
-# <a name="ms-pki-ra-application-policies-attribute"></a>atributo ms-PKI-RA-Application-Policies
+# <a name="ms-pki-ra-application-policies-attribute"></a>Atributo ms-PKI-RA-Application-Policies
 
-O OID da política de aplicativo RA necessário nas assinaturas do contador da solicitação de certificado.
+O OID da política de aplicativo ra necessária nas assinaturas de contador da solicitação de certificado.
 
 
 
 | Entrada | Valor |
 |-------------------|--------------------------------------------------------------------------------------------|
-| CN                | MS-PKI-RA-Application-Policies                                                             |
-| LDAP-Display-Name | msPKI-RA-Application-Policies                                                              |
+| CN                | ms-PKI-RA-Application-Policies                                                             |
+| Ldap-Display-Name | msPKI-RA-Application-Policies                                                              |
 | Tamanho              | \-                                                                                         |
 | Privilégio de atualização  | Administrador corporativo                                                                   |
-| Frequência de atualização  | Sempre que um novo modelo é criado ou os atributos de modelos existentes são editados. |
+| Frequência de atualização  | Sempre que um novo modelo é criado ou os atributos de um modelo existente são editados. |
 | Attribute-Id      | 1.2.840.113556.1.4.1675                                                                    |
-| System-ID-GUID    | 3c91fbbf-4773-4ccd-a87b-85d53e7bcf6a                                                       |
-| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md)                                                |
+| System-Id-Guid    | 3c91fbbf-4773-4ccd-a87b-85d53e7bcf6a                                                       |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md)                                                |
 
 
 
@@ -57,15 +57,15 @@ O OID da política de aplicativo RA necessário nas assinaturas do contador da s
 | ID do link                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| É de valor único       | Falso                                                                   |
+| Tem valor único       | Falso                                                                   |
 | É indexado             | Falso                                                                   |
-| No catálogo global      | Falso                                                                   |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                            |
+| No Catálogo Global      | Falso                                                                   |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Classes usadas em        | [**PKI-certificado-modelo**](c-pkicertificatetemplate.md)<br/> |
+| Classes usadas em        | [**PKI-Certificate-Template**](c-pkicertificatetemplate.md)<br/> |
 
 
 
@@ -78,15 +78,15 @@ O OID da política de aplicativo RA necessário nas assinaturas do contador da s
 | ID do link                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| É de valor único       | Falso                                                                   |
+| Tem valor único       | Falso                                                                   |
 | É indexado             | Falso                                                                   |
-| No catálogo global      | Falso                                                                   |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                            |
+| No Catálogo Global      | Falso                                                                   |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Classes usadas em        | [**PKI-certificado-modelo**](c-pkicertificatetemplate.md)<br/> |
+| Classes usadas em        | [**PKI-Certificate-Template**](c-pkicertificatetemplate.md)<br/> |
 
 
 
@@ -99,15 +99,15 @@ O OID da política de aplicativo RA necessário nas assinaturas do contador da s
 | ID do link                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| É de valor único       | Falso                                                                   |
+| Tem valor único       | Falso                                                                   |
 | É indexado             | Falso                                                                   |
-| No catálogo global      | Falso                                                                   |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                            |
+| No Catálogo Global      | Falso                                                                   |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Classes usadas em        | [**PKI-certificado-modelo**](c-pkicertificatetemplate.md)<br/> |
+| Classes usadas em        | [**PKI-Certificate-Template**](c-pkicertificatetemplate.md)<br/> |
 
 
 

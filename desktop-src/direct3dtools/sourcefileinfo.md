@@ -17,12 +17,12 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 3e0528e61e830872a3e3b1c0555e541fc41d9d39
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 9b6afd5f3b383aff5c6d5168b259b13fe4429ac40d5b19a21c8e2f6a207cecd2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104456692"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119119230"
 ---
 # <a name="span-idvspixenginesourcefileinfospansourcefileinfo-structure"></a><span id="vspixengine.sourcefileinfo"></span>Estrutura SourceFileInfo
 
@@ -37,7 +37,7 @@ Representa informações sobre um arquivo de código-fonte.
 
 ## <a name="members"></a>Membros
 
-**Nome do arquivo**  
+**fileName**  
 Uma cadeia de caracteres COM comtaining o FilePath do arquivo de origem associado.
 
 **checksumByteCount**  
@@ -60,7 +60,7 @@ A quarta parte de 8 bytes da soma de verificação.
 
 ## <a name="requirements"></a>Requisitos
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>parâmetro</p></td><td>Vspixengine. h</td></tr></tbody></table>
+<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Cabeçalho</p></td><td>Vspixengine. h</td></tr></tbody></table>
 
  
 

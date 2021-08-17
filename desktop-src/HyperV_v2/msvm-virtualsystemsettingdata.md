@@ -73,12 +73,12 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 2787abbacfe4220b135544eecd3aeb7e86596c81
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fb57c7b96a6e2cd1839f4d830074bb69d742aef688325a37d61b67589d026436
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103920722"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119147889"
 ---
 # <a name="msvm_virtualsystemsettingdata-class"></a>\_Classe Msvm VirtualSystemSettingData
 
@@ -229,7 +229,7 @@ Tipo de acesso: Somente leitura
 A arquitetura deste sistema.
 
 > [!Note]  
-> Adicionado no Windows 10, versão 1709.
+> adicionado em Windows 10, versão 1709.
 
  
 
@@ -263,7 +263,7 @@ Tipo de acesso: leitura/gravação
 Identifica a ação a ser executada na VM, quando ocorre um erro crítico, como o armazenamento desconectado.
 
 > [!Note]  
-> Adicionado ao Windows 10 e ao Windows Server 2016.
+> adicionado em Windows 10 e Windows Server 2016.
 
  
 
@@ -308,7 +308,7 @@ Qualificadores: [**subtipo**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) (
 Identifica a duração máxima para a qual o **AutomaticCriticalErrorAction** será executado para resolver o erro crítico. Isso é aplicável somente quando o valor da propriedade **AutomaticCriticalErrorAction** não é 0 (None). Quando o tempo limite expirar, a VM será desligada. O valor será arredondado para o minuto mais próximo. Um valor de 0 implica que a VM deve ser desligada imediatamente quando encontra uma condição de erro crítica.
 
 > [!Note]  
-> Adicionado ao Windows 10 e ao Windows Server 2016.
+> adicionado em Windows 10 e Windows Server 2016.
 
  
 
@@ -382,7 +382,7 @@ Tipo de acesso: leitura/gravação
 Indica se esta máquina virtual deve ter instantâneos automáticos habilitados.
 
 > [!Note]  
-> Adicionado no Windows 10, versão 1709.
+> adicionado em Windows 10, versão 1709.
 
  
 
@@ -581,7 +581,7 @@ Tipo de acesso: leitura/gravação
 
 A ordem de origem da inicialização para a máquina virtual.
 
-**Windows 8.1:** Não há suporte para esse valor até Windows 8.1 e Windows Server 2012 R2.
+**Windows 8.1:** não há suporte para esse valor até Windows 8.1 e Windows Server 2012 R2.
 
 </dd> <dt>
 
@@ -663,19 +663,19 @@ O identificador exclusivo da configuração da máquina virtual. Essa propriedad
 
 </dd> <dt>
 
-**Consolemode**
+**ConsoleMode**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
-Identifica o modo de console para a VM.
+Identifica o Modo de Console para a VM.
 
 > [!Note]  
-> Essa propriedade foi adicionada no Windows 10 e no Windows Server 2016.
+> Essa propriedade foi adicionada em Windows 10 e Windows Server 2016.
 
  
 
@@ -711,39 +711,39 @@ Identifica o modo de console para a VM.
 
 </dd> <dt>
 
-**CreationTime**
+**Creationtime**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **DateTime**
+Tipo de dados: **datetime**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-A data e a hora em que as configurações da máquina virtual foram criadas. Se esse objeto representar as configurações atuais para a máquina virtual, esse valor será a hora em que o sistema foi criado. Se esse objeto representar as configurações de instantâneo para a máquina virtual, esse valor será a hora em que o instantâneo foi tirado. Essa propriedade é herdada do [**CIM \_ VirtualSystemSettingData**](/previous-versions//cc136954(v=vs.85)).
+A data e a hora em que as configurações da máquina virtual foram criadas. Se esse objeto representa as configurações atuais para a máquina virtual, esse valor seria a hora em que o sistema foi criado. Se esse objeto representa as configurações de instantâneo para a máquina virtual, esse valor seria a hora em que o instantâneo foi tirado. Essa propriedade é herdada de [**CIM \_ VirtualSystemSettingData**](/previous-versions//cc136954(v=vs.85)).
 
 </dd> <dt>
 
 **DebugChannelId**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 O identificador de canal usado para depurar a máquina virtual usando o depurador unificado.
 
 </dd> <dt>
 
-**DebugPort**
+**DepurarPort**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 A porta TCP/IP usada para depurar a máquina virtual usando a depuração sintética.
@@ -753,26 +753,26 @@ A porta TCP/IP usada para depurar a máquina virtual usando a depuração sinté
 **DebugPortEnabled**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
-Especifica se a máquina virtual está usando a depuração sintética. Isso pode ser um dos valores a seguir.
+Especifica se a máquina virtual está usando a depuração sintética. Esse pode ser um dos valores a seguir.
 
 <dt>
 
 <span id="Off"></span><span id="off"></span><span id="OFF"></span>
 
-<span id="Off"></span><span id="off"></span><span id="OFF"></span>**Desativado** (0)
+<span id="Off"></span><span id="off"></span><span id="OFF"></span>**Off** (0)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="On"></span><span id="on"></span><span id="ON"></span>
 
-<span id="On"></span><span id="on"></span><span id="ON"></span>**Em** (1)
+<span id="On"></span><span id="on"></span><span id="ON"></span>**On** (1)
 
 
 </dt> <dd></dd> <dt>
@@ -799,14 +799,14 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Uma descrição do objeto . Essa propriedade é herdada de [**CIM \_ managedelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)e é sempre definida como um dos valores a seguir.
+Uma descrição do objeto . Essa propriedade é herdada [**de \_ ManagedElement do CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)e sempre é definida como um dos valores a seguir.
 
 
 
 | Valor                                                                                                                  | Significado                                               |
 |------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------|
-| <dl> <dt>"Configurações ativas para a máquina virtual"</dt> </dl>   | Essa instância se refere a uma máquina virtual.<br/> |
-| <dl> <dt>"Configurações de instantâneo para a máquina virtual"</dt> </dl> | Essa instância se refere a um instantâneo.<br/>        |
+| <dl> <dt>"Configurações ativas para a máquina virtual"</dt> </dl>   | Essa instância refere-se a uma máquina virtual.<br/> |
+| <dl> <dt>"Configurações de instantâneo para a máquina virtual"</dt> </dl> | Essa instância refere-se a um instantâneo.<br/>        |
 
 
 
@@ -823,20 +823,20 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Um nome de exibição para o objeto. Essa propriedade é herdada do [**CIM \_ VirtualSystemSettingData**](/previous-versions//cc136954(v=vs.85))e é sempre definida como o nome de exibição do computador. Esse nome não pode exceder 100 caracteres de comprimento.
+Um nome de exibição para o objeto . Essa propriedade é herdada [**de CIM \_ VirtualSystemSettingData**](/previous-versions//cc136954(v=vs.85))e sempre é definida como o nome de exibição do computador. Esse nome pode não exceder 100 caracteres de comprimento.
 
 </dd> <dt>
 
 **EnhancedSessionTransportType**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
-Indica o tipo de transporte a ser usado ao se conectar a uma sessão avançada.
+Indica o tipo de transporte a ser usado ao se conectar a uma sessão aprimorada.
 
 > [!Note]  
 > Essa propriedade foi adicionada no Windows 10, versão 1803.
@@ -864,16 +864,16 @@ Indica o tipo de transporte a ser usado ao se conectar a uma sessão avançada.
 **GuestControlledCacheTypes**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
-Indica se o convidado pode controlar os tipos de cache.
+Indica se o convidado pode controlar tipos de cache.
 
 > [!Note]  
-> Adicionado ao Windows 10 e ao Windows Server 2016.
+> Adicionado em Windows 10 e Windows Server 2016.
 
  
 
@@ -888,7 +888,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-FilePath de um diretório em que as informações sobre o estado do tempo de execução do convidado são armazenadas.
+Caminho do arquivo de um diretório em que as informações sobre o estado do runtime de convidado são armazenadas.
 
 > [!Note]  
 > Adicionado no Windows 10, versão 1709.
@@ -906,7 +906,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-FilePath de um arquivo em que as informações sobre o estado do tempo de execução do convidado são armazenadas. Um caminho relativo é acrescentado ao valor da propriedade **GuestStateDataRoot** .
+Caminho do arquivo de um arquivo em que as informações sobre o estado de runtime do convidado são armazenadas. Um caminho relativo é anexado ao valor da **propriedade GuestStateDataRoot.**
 
 > [!Note]  
 > Adicionado no Windows 10, versão 1709.
@@ -918,13 +918,13 @@ FilePath de um arquivo em que as informações sobre o estado do tempo de execu�
 **HighMmioGapSize**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt64**
+Tipo de dados: **uint64**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
-O tamanho do intervalo de e/s alto (acima de 4GB) Memory-Mapped em MB
+O tamanho da lacuna de E/S alta (acima de 4 GB) Memory-Mapped E/S em MB
 
 > [!Note]  
 > Essa propriedade foi adicionada no Windows 10, versão 1703.
@@ -936,13 +936,13 @@ O tamanho do intervalo de e/s alto (acima de 4GB) Memory-Mapped em MB
 **IncrementalBackupEnabled**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
-Indica se o gravador VSS do Hyper-V dá suporte para fazer backups incrementais desta máquina virtual.
+Indica se o vss writer do Hyper-V dá suporte à tomada de backups incrementais dessa máquina virtual.
 
 </dd> <dt>
 
@@ -955,23 +955,23 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: **chave**
+Qualificadores: **Chave**
 </dt> </dl>
 
-Identifica exclusivamente uma instância dessa classe. Essa propriedade é herdada do [**CIM \_ SettingData**](/previous-versions//cc136911(v=vs.85)).
+Identifica exclusivamente uma instância dessa classe. Essa propriedade é herdada de [**CIM \_ SettingData.**](/previous-versions//cc136911(v=vs.85))
 
 </dd> <dt>
 
 **IsAutomaticSnapshot**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Indica se este é um instantâneo criado automaticamente para o usuário.
+Indica se esse é um instantâneo criado automaticamente para o usuário.
 
 > [!Note]  
 > Adicionado no Windows 10, versão 1709.
@@ -983,20 +983,20 @@ Indica se este é um instantâneo criado automaticamente para o usuário.
 **IsSaved**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-**True** se a configuração tiver uma referência a um arquivo de estado salvo; caso contrário, **false**. Isso não indica a presença desse arquivo, apenas que a configuração especifica um.
+**True** se a configuração tiver uma referência a um arquivo de estado salvo; caso contrário, **False.** Isso não indica a presença desse arquivo, apenas que a configuração especifica um.
 
 </dd> <dt>
 
 **LockOnDisconnect**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
 Tipo de acesso: leitura/gravação
@@ -1005,7 +1005,7 @@ Tipo de acesso: leitura/gravação
 Bloqueie o console ao desconectar do vmconnect.
 
 > [!Note]  
-> Adicionado ao Windows 10 e ao Windows Server 2016.
+> adicionado em Windows 10 e Windows Server 2016.
 
  
 
@@ -1035,7 +1035,7 @@ Tipo de acesso: leitura/gravação
 
 Configura o tamanho, em megabytes, da primeira lacuna de MMIO para uma VM (máquina virtual).
 
-**Windows 8.1:** Não há suporte para esse valor até Windows 8.1 e Windows Server 2012 R2.
+**Windows 8.1:** não há suporte para esse valor até Windows 8.1 e Windows Server 2012 R2.
 
 Intervalo: 128 3584
 
@@ -1052,7 +1052,7 @@ Tipo de acesso: leitura/gravação
 
 Determina se o protocolo preferencial para inicialização PXE é IPv4 ou IPv6.
 
-**Windows 8.1:** Não há suporte para esse valor até Windows 8.1 e Windows Server 2012 R2.
+**Windows 8.1:** não há suporte para esse valor até Windows 8.1 e Windows Server 2012 R2.
 
 <dt>
 
@@ -1127,7 +1127,7 @@ Tipo de acesso: leitura/gravação
 
 Indica se o BIOS pausa após cada falha na entrada de inicialização aguardando que o usuário pressione uma tecla. **True** se o BIOS pausar; caso contrário, **false**.
 
-**Windows 8.1:** Não há suporte para esse valor até Windows 8.1 e Windows Server 2012 R2.
+**Windows 8.1:** não há suporte para esse valor até Windows 8.1 e Windows Server 2012 R2.
 
 </dd> <dt>
 
@@ -1160,7 +1160,7 @@ Indica se a inicialização segura está habilitada para a VM (máquina virtual)
 
  
 
-**Windows 8.1:** Não há suporte para esse valor até Windows 8.1 e Windows Server 2012 R2.
+**Windows 8.1:** não há suporte para esse valor até Windows 8.1 e Windows Server 2012 R2.
 
 </dd> <dt>
 
@@ -1178,7 +1178,7 @@ O identificador global exclusivo do modelo de valores iniciales de variáveis re
 Esta é uma propriedade somente leitura, mas pode ser alterada usando o método [**ModifyVirtualSystem**](https://www.bing.com/search?q=**ModifyVirtualSystem**) da classe [**Msvm \_ VirtualSystemManagementService**](msvm-virtualsystemmanagementservice.md) .
 
 > [!Note]  
-> Adicionado ao Windows 10 e ao Windows Server 2016.
+> adicionado em Windows 10 e Windows Server 2016.
 
  
 
@@ -1235,7 +1235,7 @@ Tipo de acesso: leitura/gravação
 Indica o tipo de instantâneo definido pelo usuário.
 
 > [!Note]  
-> Adicionado ao Windows 10 e ao Windows Server 2016.
+> adicionado em Windows 10 e Windows Server 2016.
 
  
 
@@ -1343,7 +1343,7 @@ Tipo de acesso: Somente leitura
 
 Os valores válidos para essa propriedade são Microsoft: Hyper-V: subtipo: 1 e Microsoft: Hyper-V: subtipo: 2. Uma VM de geração 1 é o subtipo 1. Uma VM de geração 2 é o subtipo 2.
 
-**Windows 8.1:** Não há suporte para esse valor até Windows 8.1 e Windows Server 2012 R2.
+**Windows 8.1:** não há suporte para esse valor até Windows 8.1 e Windows Server 2012 R2.
 
 <dt>
 
@@ -1404,8 +1404,8 @@ O acesso à classe **Msvm \_ VirtualSystemSettingData** pode ser restringido pel
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                                    |
+| Cliente mínimo com suporte<br/> | Windows 8 \[ somente aplicativos da área de trabalho\]<br/>                                                              |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 \[ somente aplicativos da área de trabalho\]<br/>                                                    |
 | Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
 | MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |

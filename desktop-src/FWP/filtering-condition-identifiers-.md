@@ -1,6 +1,6 @@
 ---
-title: Filtrando identificadores de condição (Fwpmu. h)
-description: Os identificadores de condição de filtragem da WFP (Windows Filtering Platform) são representados por um GUID.
+title: Filtrando identificadores de condição (Fwpmu.h)
+description: Os identificadores de condição de filtragem Windows WFP (Plataforma de Filtragem de Dados) são representados por um GUID.
 ms.assetid: 4f0b970a-e511-4107-8023-22a8775905b9
 topic_type:
 - apiref
@@ -138,21 +138,21 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 617946e5708bb982f96edcad155bcbf2509596dc
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5d5d1eaf0a86cfdb2cb1051e6ae18f149bcb7934e1de5730857eead42b14917f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103644236"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118951235"
 ---
 # <a name="filtering-condition-identifiers"></a>Filtrando identificadores de condição
 
-Os identificadores de condição de filtragem da WFP (Windows Filtering Platform) são representados por um **GUID**. O tipo de dados para o valor da condição para cada condição de filtragem é especificado como um [**\_ \_ tipo de dados fwp**](/windows/desktop/api/Fwptypes/ne-fwptypes-fwp_data_type). Esses identificadores e seus tipos de dados são definidos aqui.
+Os identificadores de condição de filtragem Windows WFP (Plataforma de Filtragem de Dados) são representados por um **GUID.** O tipo de dados para o valor da condição para cada condição de filtragem é especificado como um [**TIPO de DADOS FWP \_ \_**](/windows/desktop/api/Fwptypes/ne-fwptypes-fwp_data_type). Esses identificadores e seus tipos de dados são definidos aqui.
 
-As condições padrão são listadas primeiro, seguidas pelas condições específicas para o modo de usuário. As condições são agrupadas por sistema operacional com suporte, para que você possa identificar facilmente quais condições têm suporte para um determinado so.
+As condições padrão são listadas primeiro, seguidas pelas condições específicas para o modo de usuário. As condições são agrupadas pelo sistema operacional com suporte, para que você possa facilmente saber quais condições têm suporte para um determinado sistema operacional.
 
 > [!Note]  
-> Cada uma das condições de filtragem a seguir está disponível apenas em um subconjunto das camadas de filtragem WFP. Para obter mais informações sobre a disponibilidade de cada condição em uma determinada camada, consulte [**condições de filtragem disponíveis em cada camada de filtragem**](filtering-conditions-available-at-each-filtering-layer.md).
+> Cada uma das condições de filtragem a seguir está disponível apenas em um subconjunto das camadas de filtragem WFP. Para obter mais informações sobre a disponibilidade de cada condição em qualquer camada específica, consulte Condições de filtragem [**disponíveis em Cada camada de filtragem**](filtering-conditions-available-at-each-filtering-layer.md).
 
  
 
@@ -165,7 +165,7 @@ As condições padrão são listadas primeiro, seguidas pelas condições espec�
 </colgroup>
 <thead>
 <tr class="header">
-<th style="text-align: left;">Condições disponíveis para o Windows 8 e o Windows Server 2012</th>
+<th style="text-align: left;">Condições disponíveis para Windows 8 e Windows Server 2012</th>
 <th style="text-align: left;">Descrição</th>
 </tr>
 </thead>
@@ -184,11 +184,11 @@ As condições padrão são listadas primeiro, seguidas pelas condições espec�
 </tr>
 <tr class="even">
 <td style="text-align: left;"><span id="FWPM_CONDITION_ETHER_TYPE"></span><span id="fwpm_condition_ether_type"></span><dl> <dt><strong>FWPM_CONDITION_ETHER_TYPE</strong></dt> </dl></td>
-<td style="text-align: left;">O tipo de dados de carga de rede Ethernet v2. (Consulte ETHERNET_TYPE_IPV4, etc. em netiodef. h.)<br/> <strong>Tipo de dados:</strong> FWP_UINT16<br/></td>
+<td style="text-align: left;">O tipo de dados de carga de rede Ethernet V2. (Consulte ETHERNET_TYPE_IPV4, etc. em netiodef.h.)<br/> <strong>Tipo de dados:</strong> FWP_UINT16<br/></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><span id="FWPM_CONDITION_VLAN_ID"></span><span id="fwpm_condition_vlan_id"></span><dl> <dt><strong>FWPM_CONDITION_VLAN_ID</strong></dt> </dl></td>
-<td style="text-align: left;">Os 16 bits de cabeçalho de VLAN, incluindo os campos VID, IPF e Priority de acordo com o padrão 802.1 q (consulte VLAN_TAG em netiodef. h para as posições de bitfields).<br/> <strong>Tipo de dados:</strong> FWP_UINT16<br/></td>
+<td style="text-align: left;">Os 16 bits do header de VLAN, incluindo os campos VID, CFI e Priority, de acordo com o padrão 802.1q (consulte VLAN_TAG em netiodef.h para as posições dos campos de bits).<br/> <strong>Tipo de dados:</strong> FWP_UINT16<br/></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><span id="FWPM_CONDITION_VSWITCH_TENANT_NETWORK_ID"></span><span id="fwpm_condition_vswitch_tenant_network_id"></span><dl> <dt><strong>FWPM_CONDITION_VSWITCH_TENANT_NETWORK_ID</strong></dt> </dl></td>
@@ -196,19 +196,19 @@ As condições padrão são listadas primeiro, seguidas pelas condições espec�
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><span id="FWPM_CONDITION_NDIS_PORT"></span><span id="fwpm_condition_ndis_port"></span><dl> <dt><strong>FWPM_CONDITION_NDIS_PORT</strong></dt> </dl></td>
-<td style="text-align: left;">O número da porta da porta NDIS.<br/> <strong>Tipo de dados:</strong> FWP_UINT32<br/></td>
+<td style="text-align: left;">O número da porta NDIS.<br/> <strong>Tipo de dados:</strong> FWP_UINT32<br/></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><span id="FWPM_CONDITION_NDIS_MEDIA_TYPE"></span><span id="fwpm_condition_ndis_media_type"></span><dl> <dt><strong>FWPM_CONDITION_NDIS_MEDIA_TYPE</strong></dt> </dl></td>
-<td style="text-align: left;">O tipo de mídia da porta NDIS.<br/> <strong>Tipo de dados:</strong> FWP_UINT32<br/> <strong>Valores possíveis:</strong> Qualquer um dos <strong>NDIS_MEDIUM</strong> valores de enumeração. (Consulte Ntddndis. h.) <br/></td>
+<td style="text-align: left;">O tipo de mídia da porta NDIS.<br/> <strong>Tipo de dados:</strong> FWP_UINT32<br/> <strong>Valores possíveis:</strong> Qualquer um dos <strong>valores NDIS_MEDIUM</strong> enumeração. (Consulte ntddndis.h.) <br/></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><span id="FWPM_CONDITION_NDIS_PHYSICAL_MEDIA_TYPE"></span><span id="fwpm_condition_ndis_physical_media_type"></span><dl> <dt><strong>FWPM_CONDITION_NDIS_PHYSICAL_MEDIA_TYPE</strong></dt> </dl></td>
-<td style="text-align: left;">O tipo de mídia física da porta NDIS.<br/> <strong>Tipo de dados:</strong> FWP_UINT32<br/> <strong>Valores possíveis:</strong> Qualquer um dos <strong>NDIS_PHYSICAL_MEDIUM</strong> valores de enumeração. (Consulte Ntddndis. h.) <br/></td>
+<td style="text-align: left;">O tipo de mídia física da porta NDIS.<br/> <strong>Tipo de dados:</strong> FWP_UINT32<br/> <strong>Valores possíveis:</strong> Qualquer um dos <strong>valores NDIS_PHYSICAL_MEDIUM</strong> enumeração. (Consulte ntddndis.h.) <br/></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><span id="FWPM_CONDITION_L2_FLAGS"></span><span id="fwpm_condition_l2_flags"></span><dl> <dt><strong>FWPM_CONDITION_L2_FLAGS</strong></dt> </dl></td>
-<td style="text-align: left;">Uma operação OR de uma combinação de sinalizadores de condição de filtragem. <br/> <strong>Tipo de dados:</strong> FWP_UINT32<br/> <strong>Valores possíveis:  </strong>
+<td style="text-align: left;">Um OR bit a bit de uma combinação de sinalizadores de condição de filtragem. <br/> <strong>Tipo de dados:</strong> FWP_UINT32<br/> <strong>Valores possíveis:  </strong>
 <ul>
 <li>FWP_CONDITION_L2_IS_MOBILE_BROADBAND</li>
 <li>FWP_CONDITION_L2_IS_NATIVE_ETHERNET</li>
@@ -219,7 +219,7 @@ As condições padrão são listadas primeiro, seguidas pelas condições espec�
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><span id="FWPM_CONDITION_MAC_LOCAL_ADDRESS_TYPE"></span><span id="fwpm_condition_mac_local_address_type"></span><dl> <dt><strong>FWPM_CONDITION_MAC_LOCAL_ADDRESS_TYPE</strong></dt> </dl></td>
-<td style="text-align: left;">O tipo de endereço do endereço local físico.<br/> <strong>Tipo de dados:</strong> FWP_UINT8<br/> <strong>Valores possíveis:</strong> Qualquer um dos seguintes <strong>DL_ADDRESS_TYPE</strong> valores de enumeração.
+<td style="text-align: left;">O tipo de endereço do endereço local físico.<br/> <strong>Tipo de dados:</strong> FWP_UINT8<br/> <strong>Valores possíveis:</strong> Qualquer um dos <strong>valores</strong> DL_ADDRESS_TYPE enumeração a seguir.
 <ul>
 <li>DlUnicast</li>
 <li>DlMulticast</li>
@@ -229,7 +229,7 @@ As condições padrão são listadas primeiro, seguidas pelas condições espec�
 </tr>
 <tr class="even">
 <td style="text-align: left;"><span id="FWPM_CONDITION_MAC_REMOTE_ADDRESS_TYPE"></span><span id="fwpm_condition_mac_remote_address_type"></span><dl> <dt><strong>FWPM_CONDITION_MAC_REMOTE_ADDRESS_TYPE</strong></dt> </dl></td>
-<td style="text-align: left;">O tipo de endereço do endereço remoto físico.<br/> <strong>Tipo de dados:</strong> FWP_UINT8<br/> <strong>Valores possíveis:</strong> Qualquer um dos seguintes <strong>DL_ADDRESS_TYPE</strong> valores de enumeração.
+<td style="text-align: left;">O tipo de endereço do endereço remoto físico.<br/> <strong>Tipo de dados:</strong> FWP_UINT8<br/> <strong>Valores possíveis:</strong> Qualquer um dos <strong>valores</strong> DL_ADDRESS_TYPE enumeração a seguir.
 <ul>
 <li>DlUnicast</li>
 <li>DlMulticast</li>
@@ -247,7 +247,7 @@ As condições padrão são listadas primeiro, seguidas pelas condições espec�
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><span id="FWPM_CONDITION_MAC_SOURCE_ADDRESS_TYPE"></span><span id="fwpm_condition_mac_source_address_type"></span><dl> <dt><strong>FWPM_CONDITION_MAC_SOURCE_ADDRESS_TYPE</strong></dt> </dl></td>
-<td style="text-align: left;">O tipo de endereço do endereço de destino físico.<br/> <strong>Tipo de dados:</strong> FWP_UINT8<br/> <strong>Valores possíveis:</strong> Qualquer um dos seguintes <strong>DL_ADDRESS_TYPE</strong> valores de enumeração.
+<td style="text-align: left;">O tipo de endereço do endereço de destino físico.<br/> <strong>Tipo de dados:</strong> FWP_UINT8<br/> <strong>Valores possíveis:</strong> Qualquer um dos <strong>valores</strong> DL_ADDRESS_TYPE enumeração a seguir.
 <ul>
 <li>DlUnicast</li>
 <li>DlMulticast</li>
@@ -257,7 +257,7 @@ As condições padrão são listadas primeiro, seguidas pelas condições espec�
 </tr>
 <tr class="even">
 <td style="text-align: left;"><span id="FWPM_CONDITION_MAC_DESTINATION_ADDRESS_TYPE"></span><span id="fwpm_condition_mac_destination_address_type"></span><dl> <dt><strong>FWPM_CONDITION_MAC_DESTINATION_ADDRESS_TYPE</strong></dt> </dl></td>
-<td style="text-align: left;">O tipo de endereço do endereço de destino físico.<br/> <strong>Tipo de dados:</strong> FWP_UINT8<br/> <strong>Valores possíveis:</strong> Qualquer um dos seguintes <strong>DL_ADDRESS_TYPE</strong> valores de enumeração.
+<td style="text-align: left;">O tipo de endereço do endereço de destino físico.<br/> <strong>Tipo de dados:</strong> FWP_UINT8<br/> <strong>Valores possíveis:</strong> Qualquer um dos <strong>valores</strong> DL_ADDRESS_TYPE enumeração a seguir.
 <ul>
 <li>DlUnicast</li>
 <li>DlMulticast</li>
@@ -271,7 +271,7 @@ As condições padrão são listadas primeiro, seguidas pelas condições espec�
 </tr>
 <tr class="even">
 <td style="text-align: left;"><span id="FWPM_CONDITION_VSWITCH_ICMP_TYPE"></span><span id="fwpm_condition_vswitch_icmp_type"></span><dl> <dt><strong>FWPM_CONDITION_VSWITCH_ICMP_TYPE</strong></dt> </dl></td>
-<td style="text-align: left;">O campo tipo de ICMP, conforme especificado no RFC 792.<br/> <strong>Tipo de dados:</strong> FWP_UINT16<br/></td>
+<td style="text-align: left;">O campo de tipo ICMP, conforme especificado em RFC 792.<br/> <strong>Tipo de dados:</strong> FWP_UINT16<br/></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><span id="FWPM_CONDITION_IP_DESTINATION_PORT"></span><span id="fwpm_condition_ip_destination_port"></span><dl> <dt><strong>FWPM_CONDITION_IP_DESTINATION_PORT</strong></dt> </dl></td>
@@ -279,15 +279,15 @@ As condições padrão são listadas primeiro, seguidas pelas condições espec�
 </tr>
 <tr class="even">
 <td style="text-align: left;"><span id="FWPM_CONDITION_VSWITCH_ICMP_CODE"></span><span id="fwpm_condition_vswitch_icmp_code"></span><dl> <dt><strong>FWPM_CONDITION_VSWITCH_ICMP_CODE</strong></dt> </dl></td>
-<td style="text-align: left;">O campo de código ICMP, conforme especificado no RFC 792. <br/> <strong>Tipo de dados:</strong> FWP_UINT16<br/></td>
+<td style="text-align: left;">O campo de código ICMP, conforme especificado em RFC 792. <br/> <strong>Tipo de dados:</strong> FWP_UINT16<br/></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><span id="FWPM_CONDITION_VSWITCH_ID"></span><span id="fwpm_condition_vswitch_id"></span><dl> <dt><strong>FWPM_CONDITION_VSWITCH_ID</strong></dt> </dl></td>
-<td style="text-align: left;">Identificador exclusivo de uma instância de vSwitch.<br/> <strong>Tipo de dados:</strong> FWP_BYTE_BLOB_TYPE<br/></td>
+<td style="text-align: left;">Identificador exclusivo de uma instância vSwitch.<br/> <strong>Tipo de dados:</strong> FWP_BYTE_BLOB_TYPE<br/></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><span id="FWPM_CONDITION_VSWITCH_NETWORK_TYPE"></span><span id="fwpm_condition_vswitch_network_type"></span><dl> <dt><strong>FWPM_CONDITION_VSWITCH_NETWORK_TYPE</strong></dt> </dl></td>
-<td style="text-align: left;">Especifica se a instância do vSwitch faz parte de uma rede virtual externa, interna ou privada.<br/> <strong>Tipo de dados:</strong> FWP_UINT8<br/></td>
+<td style="text-align: left;">Especifica se a instância vSwitch faz parte de uma rede virtual externa, interna ou privada.<br/> <strong>Tipo de dados:</strong> FWP_UINT8<br/></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><span id="FWPM_CONDITION_VSWITCH_SOURCE_INTERFACE_ID"></span><span id="fwpm_condition_vswitch_source_interface_id"></span><dl> <dt><strong>FWPM_CONDITION_VSWITCH_SOURCE_INTERFACE_ID</strong></dt> </dl></td>
@@ -299,11 +299,11 @@ As condições padrão são listadas primeiro, seguidas pelas condições espec�
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><span id="FWPM_CONDITION_VSWITCH_SOURCE_VM_ID"></span><span id="fwpm_condition_vswitch_source_vm_id"></span><dl> <dt><strong>FWPM_CONDITION_VSWITCH_SOURCE_VM_ID</strong></dt> </dl></td>
-<td style="text-align: left;">Identificador exclusivo da máquina virtual de origem do vSwitch.<br/> <strong>Tipo de dados:</strong> FWP_BYTE_BLOB_TYPE<br/></td>
+<td style="text-align: left;">Identificador exclusivo da máquina virtual de origem vSwitch.<br/> <strong>Tipo de dados:</strong> FWP_BYTE_BLOB_TYPE<br/></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><span id="FWPM_CONDITION_VSWITCH_DESTINATION_VM_ID"></span><span id="fwpm_condition_vswitch_destination_vm_id"></span><dl> <dt><strong>FWPM_CONDITION_VSWITCH_DESTINATION_VM_ID</strong></dt> </dl></td>
-<td style="text-align: left;">Identificador exclusivo da máquina virtual de destino do vSwitch.<br/> <strong>Tipo de dados:</strong> FWP_BYTE_BLOB_TYPE<br/></td>
+<td style="text-align: left;">Identificador exclusivo da máquina virtual de destino vSwitch.<br/> <strong>Tipo de dados:</strong> FWP_BYTE_BLOB_TYPE<br/></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><span id="FWPM_CONDITION_VSWITCH_SOURCE_INTERFACE_TYPE"></span><span id="fwpm_condition_vswitch_source_interface_type"></span><dl> <dt><strong>FWPM_CONDITION_VSWITCH_SOURCE_INTERFACE_TYPE</strong></dt> </dl></td>
@@ -329,7 +329,7 @@ As condições padrão são listadas primeiro, seguidas pelas condições espec�
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><span id="FWPM_CONDITION_INTERFACE"></span><span id="fwpm_condition_interface"></span><dl> <dt><strong>FWPM_CONDITION_INTERFACE</strong></dt> </dl></td>
-<td style="text-align: left;">O LUID para a interface de rede associada ao endereço IP local. <br/> <strong>Tipo de dados:</strong> FWP_UINT64<br/></td>
+<td style="text-align: left;">O LUID para o interface de rede associado ao endereço IP local. <br/> <strong>Tipo de dados:</strong> FWP_UINT64<br/></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><span id="FWPM_CONDITION_ALE_PACKAGE_ID"></span><span id="fwpm_condition_ale_package_id"></span><dl> <dt><strong>FWPM_CONDITION_ALE_PACKAGE_ID</strong></dt> </dl></td>
@@ -337,7 +337,7 @@ As condições padrão são listadas primeiro, seguidas pelas condições espec�
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><span id="FWPM_CONDITION_ALE_ORIGINAL_APP_ID"></span><span id="fwpm_condition_ale_original_app_id"></span><dl> <dt><strong>FWPM_CONDITION_ALE_ORIGINAL_APP_ID</strong></dt> </dl></td>
-<td style="text-align: left;">O caminho do dispositivo totalmente qualificado do aplicativo, como &quot; \device0\hardiskvolume1\Program Files\Application.exe&quot; . Quando uma conexão for redirecionada, esse será o identificador do aplicativo de origem; caso contrário, isso será o mesmo que <strong>FWPM_CONDITION_ALE_APP_ID</strong>.<br/> <strong>Tipo de dados:</strong> FWP_BYTE_BLOB_TYPE<br/></td>
+<td style="text-align: left;">O caminho do dispositivo totalmente qualificado do aplicativo, como &quot; \device0\hardiskvolume1\Program Files\Application.exe&quot; . Quando uma conexão tiver sido redirecionada, esse será o identificador do aplicativo de origem; caso contrário, isso será o mesmo <strong>que FWPM_CONDITION_ALE_APP_ID</strong>.<br/> <strong>Tipo de dados:</strong> FWP_BYTE_BLOB_TYPE<br/></td>
 </tr>
 </tbody>
 </table>
@@ -346,32 +346,32 @@ As condições padrão são listadas primeiro, seguidas pelas condições espec�
 
 
 
-| Condições disponíveis para o Windows 7, o Windows Server 2008 R2 e posterior                                                                                                                                                                                                    | Descrição                                                                                                                                                                                                                                                                               |
+| Condições disponíveis para Windows 7, Windows Server 2008 R2 e posterior                                                                                                                                                                                                    | Descrição                                                                                                                                                                                                                                                                               |
 |:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="FWPM_CONDITION_IP_NEXTHOP_ADDRESS"></span><span id="fwpm_condition_ip_nexthop_address"></span><dl> <dt>**\_ \_ \_ endereço IP NEXTHOP \_ da condição FWPM**</dt> </dl>                                             | O endereço IP da interface de próximo salto.<br/> **Tipo de dados:** \_Máscara de \_ endereço \_ v4 de fwp<br/>                                                                                                                                                                                        |
-| <span id="FWPM_CONDITION_IP_NEXTHOP_INTERFACE"></span><span id="fwpm_condition_ip_nexthop_interface"></span><dl> <dt>**\_ \_ interface NEXTHOP de IP de condição FWPM \_ \_**</dt> </dl>                                       | A interface de próximo salto da qual o pacote será desparte. <br/> **Tipo de dados:** FWP \_ UINT64<br/>                                                                                                                                                                         |
-| <span id="FWPM_CONDITION_NEXTHOP_INTERFACE_TYPE"></span><span id="fwpm_condition_nexthop_interface_type"></span><dl> <dt>**\_tipo de \_ \_ interface NEXTHOP da condição \_ FWPM**</dt> </dl>                                 | O tipo de interface da interface de próximo salto.<br/> **Tipo de dados:** FWP \_ UINT32<br/>                                                                                                                                                                                            |
-| <span id="FWPM_CONDITION_NEXTHOP_TUNNEL_TYPE"></span><span id="fwpm_condition_nexthop_tunnel_type"></span><dl> <dt>**\_tipo de \_ \_ túnel NEXTHOP da condição \_ FWPM**</dt> </dl>                                          | O tipo de túnel da interface de próximo salto.<br/> **Tipo de dados:** FWP \_ UINT32<br/>                                                                                                                                                                                               |
-| <span id="FWPM_CONDITION_NEXTHOP_INTERFACE_INDEX"></span><span id="fwpm_condition_nexthop_interface_index"></span><dl> <dt>**\_índice da \_ \_ interface NEXTHOP da condição \_ FWPM**</dt> </dl>                              | O índice de interface da interface de próximo salto.<br/> **Tipo de dados:** FWP \_ UINT32<br/>                                                                                                                                                                                           |
-| <span id="FWPM_CONDITION_NEXTHOP_SUB_INTERFACE_INDEX"></span><span id="fwpm_condition_nexthop_sub_interface_index"></span><dl> <dt>**\_índice de \_ sub \_ - \_ interface NEXTHOP da \_ condição FWPM**</dt> </dl>                 | O índice de subinterface da interface de próximo salto.<br/> **Tipo de dados:** FWP \_ UINT32<br/>                                                                                                                                                                                       |
-| <span id="FWPM_CONDITION_ORIGINAL_PROFILE_ID"></span><span id="fwpm_condition_original_profile_id"></span><dl> <dt>**\_ID do \_ \_ perfil original da condição \_ FWPM**</dt> </dl>                                          | A categoria de rede da interface de chegada ou do próximo salto por meio da qual o fluxo ALE (entrada ou saída) é criado. <br/> **Tipo de dados:** FWP \_ UINT32<br/>                                                                                                                  |
-| <span id="FWPM_CONDITION_CURRENT_PROFILE_ID"></span><span id="fwpm_condition_current_profile_id"></span><dl> <dt>**\_ID do \_ \_ perfil atual da condição \_ FWPM**</dt> </dl>                                             | A categoria de rede da interface de chegada ou do próximo salto por meio da qual o pacote atual (entrada ou saída) é criado. <br/> **Tipo de dados:** FWP \_ UINT32<br/>                                                                                                            |
-| <span id="FWPM_CONDITION_LOCAL_INTERFACE_PROFILE_ID"></span><span id="fwpm_condition_local_interface_profile_id"></span><dl> <dt>**\_ID do \_ \_ perfil da interface local da condição \_ FWPM \_**</dt> </dl>                    | A categoria de rede da interface de entrega.<br/> **Tipo de dados:** FWP \_ UINT32<br/>                                                                                                                                                                                          |
-| <span id="FWPM_CONDITION_ARRIVAL_INTERFACE_PROFILE_ID"></span><span id="fwpm_condition_arrival_interface_profile_id"></span><dl> <dt>**\_ID do \_ perfil da interface de chegada da condição FWPM \_ \_ \_**</dt> </dl>              | A categoria de rede da interface de chegada.<br/> **Tipo de dados:** FWP \_ UINT32<br/>                                                                                                                                                                                           |
-| <span id="FWPM_CONDITION_NEXTHOP_INTERFACE_PROFILE_ID"></span><span id="fwpm_condition_nexthop_interface_profile_id"></span><dl> <dt>**\_ID do \_ \_ perfil da interface NEXTHOP \_ \_ do FWPM Condition**</dt> </dl>              | A categoria de rede da interface de próximo salto.<br/> **Tipo de dados:** FWP \_ UINT32<br/>                                                                                                                                                                                          |
-| <span id="FWPM_CONDITION_REAUTHORIZE_REASON"></span><span id="fwpm_condition_reauthorize_reason"></span><dl> <dt>**\_motivo da \_ Reautorização da \_ condição FWPM**</dt> </dl>                                              | O motivo para reautorizar uma conexão anteriormente autorizada.<br/> **Tipo de dados:** FWP \_ UINT32<br/>                                                                                                                                                                         |
-| <span id="FWPM_CONDITION_ALE_REAUTH_REASON"></span><span id="fwpm_condition_ale_reauth_reason"></span><dl> <dt>**\_motivo da \_ \_ reautenticação Ale da condição FWPM \_**</dt> </dl>                                                | O motivo para reautorizar uma conexão anteriormente autorizada, como **fwp \_ condição de \_ reautorizar a \_ alteração da \_ política \_ de motivo** (ou um dos outros valores listados em sinalizadores de condição de [**filtragem**](filtering-condition-flags-.md)).<br/> **Tipo de dados:** FWP \_ UINT32<br/> |
-| <span id="FWPM_CONDITION_ORIGINAL_ICMP_TYPE"></span><span id="fwpm_condition_original_icmp_type"></span><dl> <dt>**\_tipo de \_ \_ ICMP original da condição \_ FWPM**</dt> </dl>                                             | O tipo de ICMP com o qual o fluxo foi criado.<br/> **Tipo de dados:** FWP \_ UINT16<br/>                                                                                                                                                                                           |
-| <span id="FWPM_CONDITION_IP_PHYSICAL_ARRIVAL_INTERFACE"></span><span id="fwpm_condition_ip_physical_arrival_interface"></span><dl> <dt>**\_interface de \_ \_ chegada física \_ de IP de condição FWPM \_**</dt> </dl>           | O LUID da interface física associada ao endereço IP de chegada.<br/> **Tipo de dados:** FWP \_ UINT64<br/>                                                                                                                                                               |
-| <span id="FWPM_CONDITION_IP_PHYSICAL_NEXTHOP_INTERFACE"></span><span id="fwpm_condition_ip_physical_nexthop_interface"></span><dl> <dt>**\_interface de \_ \_ salto físico \_ de IP de condição FWPM \_**</dt> </dl>           | O LUID da interface física do próximo salto.<br/> **Tipo de dados:** FWP \_ UINT64<br/>                                                                                                                                                                                      |
-| <span id="FWPM_CONDITION_INTERFACE_QUARANTINE_EPOCH"></span><span id="fwpm_condition_interface_quarantine_epoch"></span><dl> <dt>**\_época de \_ quarentena da interface de condição FWPM \_ \_**</dt> </dl>                     | A contagem de época associada a uma interface. Reservado.<br/> **Tipo de dados:** FWP \_ UINT64<br/>                                                                                                                                                                                  |
-| <span id="FWPM_CONDITION_ALE_SIO_FIREWALL_SOCKET_PROPERTY"></span><span id="fwpm_condition_ale_sio_firewall_socket_property"></span><dl> <dt>**\_propriedade de \_ \_ soquete do \_ Firewall \_ sio da FWPM condição Ale \_**</dt> </dl> | Reservado para uso interno. <br/> **Tipo de dados:** FWP \_ UINT32<br/>                                                                                                                                                                                                              |
+| <span id="FWPM_CONDITION_IP_NEXTHOP_ADDRESS"></span><span id="fwpm_condition_ip_nexthop_address"></span><dl> <dt>**ENDEREÇO \_ NEXTHOP DO IP DA CONDIÇÃO DO FWPM \_ \_ \_**</dt> </dl>                                             | O endereço IP da interface do próximo salto.<br/> **Tipo de dados:** FWP \_ V4 \_ ADDR \_ MASK<br/>                                                                                                                                                                                        |
+| <span id="FWPM_CONDITION_IP_NEXTHOP_INTERFACE"></span><span id="fwpm_condition_ip_nexthop_interface"></span><dl> <dt>**\_ \_ INTERFACE NEXTHOP DO IP \_ DE \_ CONDIÇÃO do FWPM**</dt> </dl>                                       | A interface do próximo salto da qual o pacote será partindo. <br/> **Tipo de dados:** FWP \_ UINT64<br/>                                                                                                                                                                         |
+| <span id="FWPM_CONDITION_NEXTHOP_INTERFACE_TYPE"></span><span id="fwpm_condition_nexthop_interface_type"></span><dl> <dt>**TIPO DE \_ \_ INTERFACE NEXTHOP DE CONDIÇÃO \_ DO FWPM \_**</dt> </dl>                                 | O tipo de interface da interface do próximo salto.<br/> **Tipo de dados:** FWP \_ UINT32<br/>                                                                                                                                                                                            |
+| <span id="FWPM_CONDITION_NEXTHOP_TUNNEL_TYPE"></span><span id="fwpm_condition_nexthop_tunnel_type"></span><dl> <dt>**TIPO DE TÚNEL \_ NEXTHOP DA \_ CONDIÇÃO \_ DO FWPM \_**</dt> </dl>                                          | O tipo de túnel da interface do próximo salto.<br/> **Tipo de dados:** FWP \_ UINT32<br/>                                                                                                                                                                                               |
+| <span id="FWPM_CONDITION_NEXTHOP_INTERFACE_INDEX"></span><span id="fwpm_condition_nexthop_interface_index"></span><dl> <dt>**FWPM \_ CONDITION \_ NEXTHOP \_ INTERFACE \_ INDEX**</dt> </dl>                              | O índice de interface da interface do próximo salto.<br/> **Tipo de dados:** FWP \_ UINT32<br/>                                                                                                                                                                                           |
+| <span id="FWPM_CONDITION_NEXTHOP_SUB_INTERFACE_INDEX"></span><span id="fwpm_condition_nexthop_sub_interface_index"></span><dl> <dt>**FWPM \_ CONDITION \_ NEXTHOP \_ SUB \_ INTERFACE \_ INDEX**</dt> </dl>                 | O índice da sub-interface da interface do próximo salto.<br/> **Tipo de dados:** FWP \_ UINT32<br/>                                                                                                                                                                                       |
+| <span id="FWPM_CONDITION_ORIGINAL_PROFILE_ID"></span><span id="fwpm_condition_original_profile_id"></span><dl> <dt>**ID DO PERFIL \_ ORIGINAL DA \_ CONDIÇÃO \_ \_ DO FWPM**</dt> </dl>                                          | A categoria de rede da interface de chegada ou próximo salto por meio da qual o fluxo ALE (entrada ou saída) é criado. <br/> **Tipo de dados:** FWP \_ UINT32<br/>                                                                                                                  |
+| <span id="FWPM_CONDITION_CURRENT_PROFILE_ID"></span><span id="fwpm_condition_current_profile_id"></span><dl> <dt>**ID DO PERFIL \_ \_ ATUAL DA CONDIÇÃO \_ \_ DO FWPM**</dt> </dl>                                             | A categoria de rede da interface de chegada ou próximo salto por meio da qual o pacote atual (entrada ou saída) é criado. <br/> **Tipo de dados:** FWP \_ UINT32<br/>                                                                                                            |
+| <span id="FWPM_CONDITION_LOCAL_INTERFACE_PROFILE_ID"></span><span id="fwpm_condition_local_interface_profile_id"></span><dl> <dt>**ID DO PERFIL \_ \_ DA INTERFACE LOCAL \_ \_ \_ DA CONDIÇÃO DO FWPM**</dt> </dl>                    | A categoria de rede da interface de entrega.<br/> **Tipo de dados:** FWP \_ UINT32<br/>                                                                                                                                                                                          |
+| <span id="FWPM_CONDITION_ARRIVAL_INTERFACE_PROFILE_ID"></span><span id="fwpm_condition_arrival_interface_profile_id"></span><dl> <dt>**ID DO PERFIL \_ DA INTERFACE DE CHEGADA DA \_ CONDIÇÃO \_ \_ DO FWPM \_**</dt> </dl>              | A categoria de rede da interface de chegada.<br/> **Tipo de dados:** FWP \_ UINT32<br/>                                                                                                                                                                                           |
+| <span id="FWPM_CONDITION_NEXTHOP_INTERFACE_PROFILE_ID"></span><span id="fwpm_condition_nexthop_interface_profile_id"></span><dl> <dt>**ID DO PERFIL DA \_ \_ INTERFACE NEXTHOP DA \_ \_ CONDIÇÃO DO FWPM \_**</dt> </dl>              | A categoria de rede da interface do próximo salto.<br/> **Tipo de dados:** FWP \_ UINT32<br/>                                                                                                                                                                                          |
+| <span id="FWPM_CONDITION_REAUTHORIZE_REASON"></span><span id="fwpm_condition_reauthorize_reason"></span><dl> <dt>**FWPM \_ CONDITION \_ REAUTHORIZE \_ REASON**</dt> </dl>                                              | O motivo para autorizar uma conexão autorizada anteriormente.<br/> **Tipo de dados:** FWP \_ UINT32<br/>                                                                                                                                                                         |
+| <span id="FWPM_CONDITION_ALE_REAUTH_REASON"></span><span id="fwpm_condition_ale_reauth_reason"></span><dl> <dt>**FWPM \_ CONDITION \_ ALE \_ REAUTH \_ REASON**</dt> </dl>                                                | O motivo para autorizar uma conexão autorizada anteriormente, como **FWP \_ CONDITION \_ REAUTHORIZE \_ REASON POLICY \_ \_ CHANGE** (ou um dos outros valores listados em Sinalizadores de Condição [**de Filtragem**](filtering-condition-flags-.md)).<br/> **Tipo de dados:** FWP \_ UINT32<br/> |
+| <span id="FWPM_CONDITION_ORIGINAL_ICMP_TYPE"></span><span id="fwpm_condition_original_icmp_type"></span><dl> <dt>**TIPO \_ ICMP ORIGINAL DA \_ CONDIÇÃO \_ DO FWPM \_**</dt> </dl>                                             | O tipo ICMP com o qual o fluxo foi criado.<br/> **Tipo de dados:** FWP \_ UINT16<br/>                                                                                                                                                                                           |
+| <span id="FWPM_CONDITION_IP_PHYSICAL_ARRIVAL_INTERFACE"></span><span id="fwpm_condition_ip_physical_arrival_interface"></span><dl> <dt>**INTERFACE DE CHEGADA FÍSICA \_ \_ DE IP \_ DE \_ \_ CONDIÇÃO DO FWPM**</dt> </dl>           | O LUID da interface física associada ao endereço IP de chegada.<br/> **Tipo de dados:** FWP \_ UINT64<br/>                                                                                                                                                               |
+| <span id="FWPM_CONDITION_IP_PHYSICAL_NEXTHOP_INTERFACE"></span><span id="fwpm_condition_ip_physical_nexthop_interface"></span><dl> <dt>**INTERFACE \_ NEXTHOP FÍSICA \_ DE IP \_ DE CONDIÇÃO \_ \_ DO FWPM**</dt> </dl>           | O LUID da interface física do próximo salto.<br/> **Tipo de dados:** FWP \_ UINT64<br/>                                                                                                                                                                                      |
+| <span id="FWPM_CONDITION_INTERFACE_QUARANTINE_EPOCH"></span><span id="fwpm_condition_interface_quarantine_epoch"></span><dl> <dt>**ÉPOCA DE QUARENTENA \_ DA INTERFACE DE \_ \_ CONDIÇÃO \_ DO FWPM**</dt> </dl>                     | A contagem de época associada a uma interface. Reservado.<br/> **Tipo de dados:** FWP \_ UINT64<br/>                                                                                                                                                                                  |
+| <span id="FWPM_CONDITION_ALE_SIO_FIREWALL_SOCKET_PROPERTY"></span><span id="fwpm_condition_ale_sio_firewall_socket_property"></span><dl> <dt>**PROPRIEDADE DE SOQUETE DE \_ \_ FIREWALL DO ALE \_ SIO \_ \_ CONDITION ALE SIO DO FWPM \_**</dt> </dl> | Reservado para uso interno. <br/> **Tipo de dados:** FWP \_ UINT32<br/>                                                                                                                                                                                                              |
 
 
 
 
 
-| Constantes disponíveis para o Windows Vista com SP1, Windows Server 2008 e posterior                                                                                                                                                                           | Descrição                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| constantes disponíveis para o Windows Vista com SP1, Windows Server 2008 e posterior                                                                                                                                                                           | Descrição                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 |:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <span id="FWPM_CONDITION_IP_ARRIVAL_INTERFACE"></span><span id="fwpm_condition_ip_arrival_interface"></span><dl> <dt>**\_interface de \_ chegada de IP da condição FWPM \_ \_**</dt> </dl>                       | O LUID para a interface de rede associada ao endereço IP de chegada. <br/> **Tipo de dados:** FWP \_ UINT64<br/>                                                                                                                                                                                                                                                                                                                                                                          |
 | <span id="FWPM_CONDITION_ARRIVAL_INTERFACE_TYPE"></span><span id="fwpm_condition_arrival_interface_type"></span><dl> <dt>**\_tipo de \_ interface de chegada da condição FWPM \_ \_**</dt> </dl>                 | O tipo de interface de rede de chegada, conforme definido pela IANA (Internet Assigned Names Authority). Para obter mais informações, confira [https://www.iana.org/assignments/ianaiftype-mib](https://www.iana.org/assignments/ianaiftype-mib). <br/> **Valores possíveis:** Os valores do tipo de interface listados no arquivo de cabeçalho Ipifcons. h.<br/> **Tipo de dados:** FWP \_ UINT32<br/>                                                                                                                   |
@@ -393,7 +393,7 @@ As condições padrão são listadas primeiro, seguidas pelas condições espec�
 </colgroup>
 <thead>
 <tr class="header">
-<th style="text-align: left;">Constantes disponíveis para o Windows Vista e posterior</th>
+<th style="text-align: left;">constantes disponíveis para o Windows Vista e posterior</th>
 <th style="text-align: left;">Descrição</th>
 </tr>
 </thead>
@@ -628,13 +628,13 @@ Para obter uma descrição desses modos de soquete bruto, consulte a função <a
 
 
 
-As constantes a seguir estão disponíveis somente para o modo de usuário.
+As constantes a seguir estão disponíveis apenas para o modo de usuário.
 
 
 
-| Condições de modo de usuário disponíveis para o Windows 8 e o Windows Server 2012                                                                                                                       | Descrição                                                                                                                                                               |
+| Condições de modo de usuário disponíveis para Windows 8 e Windows Server 2012                                                                                                                       | Descrição                                                                                                                                                               |
 |:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="FWPM_CONDITION_QM_MODE"></span><span id="fwpm_condition_qm_mode"></span><dl> <dt>**\_ \_ modo QM da condição FWPM \_**</dt> </dl> | O modo do filtro de modo rápido (QM). Consulte [**\_ \_ tipo de tráfego IPSec**](/windows/desktop/api/Ipsectypes/ne-ipsectypes-ipsec_traffic_type) para obter os valores possíveis.<br/> **Tipo de dados:** FWP \_ UINT32<br/> |
+| <span id="FWPM_CONDITION_QM_MODE"></span><span id="fwpm_condition_qm_mode"></span><dl> <dt>**MODO \_ QM DE CONDIÇÃO DO FWPM \_ \_**</dt> </dl> | O modo do filtro de modo rápido (QM). Confira [**TIPO DE TRÁFEGO \_ IPSEC \_ para**](/windows/desktop/api/Ipsectypes/ne-ipsectypes-ipsec_traffic_type) ver os valores possíveis.<br/> **Tipo de dados:** FWP \_ UINT32<br/> |
 
 
 
@@ -647,7 +647,7 @@ As constantes a seguir estão disponíveis somente para o modo de usuário.
 </colgroup>
 <thead>
 <tr class="header">
-<th style="text-align: left;">Condições de modo de usuário disponíveis para o Windows 7, o Windows Server 2008 R2 e posterior</th>
+<th style="text-align: left;">Condições de modo de usuário disponíveis para Windows 7, Windows Server 2008 R2 e posterior</th>
 <th style="text-align: left;">Descrição</th>
 </tr>
 </thead>
@@ -670,7 +670,7 @@ As constantes a seguir estão disponíveis somente para o modo de usuário.
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><span id="FWPM_CONDITION_KM_TYPE"></span><span id="fwpm_condition_km_type"></span><dl> <dt><strong>FWPM_CONDITION_KM_TYPE</strong></dt> </dl></td>
-<td style="text-align: left;">O tipo de módulo de criação de chaves.<br/> <strong>Tipo de dados:</strong> IKEEXT_KEY_MODULE_TYPE<br/></td>
+<td style="text-align: left;">O tipo de módulo de chave.<br/> <strong>Tipo de dados:</strong> IKEEXT_KEY_MODULE_TYPE<br/></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><span id="FWPM_CONDITION_KM_MODE"></span><span id="fwpm_condition_km_mode"></span><dl> <dt><strong>FWPM_CONDITION_KM_MODE</strong></dt> </dl></td>
@@ -678,14 +678,14 @@ As constantes a seguir estão disponíveis somente para o modo de usuário.
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><span id="FWPM_CONDITION_IPSEC_POLICY_KEY"></span><span id="fwpm_condition_ipsec_policy_key"></span><dl> <dt><strong>FWPM_CONDITION_IPSEC_POLICY_KEY</strong></dt> </dl></td>
-<td style="text-align: left;">A chave de contexto do provedor de política de modo principal (MM) ou de modo rápido (QM) do SA que está sendo autorizado. Útil para restringir o escopo da regra de autorização à SAs formada usando uma chave de política IPsec MM ou QM especificada.<br/> <strong>Tipo de dados:</strong> FWP_BYTE_ARRAY16_TYPE<br/></td>
+<td style="text-align: left;">A chave de contexto do provedor de política do modo principal (MM) ou do modo rápido (QM) da SA que está sendo autorizada. Útil para restringir o escopo da regra de autorização a SAs formadas usando uma chave de política IPsec MM ou QM especificada.<br/> <strong>Tipo de dados:</strong> FWP_BYTE_ARRAY16_TYPE<br/></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><span id="FWPM_CONDITION_AUTHENTICATION_TYPE"></span><span id="fwpm_condition_authentication_type"></span><dl> <dt><strong>FWPM_CONDITION_AUTHENTICATION_TYPE</strong></dt> </dl></td>
 <td style="text-align: left;">O método usado para autenticar a associação de segurança.<br/>
 <blockquote>
 [!Note]<br />
-Disponível apenas no Windows Server 2008 R2, Windows 7 e posterior.
+Disponível somente no Windows Server 2008 R2, Windows 7 e posterior.
 </blockquote>
 <br/> <strong>Tipo de dados:</strong> FWP_UINT32 <br/></td>
 </tr>
@@ -734,7 +734,7 @@ Disponível apenas no Windows Server 2008 R2, Windows 7 e posterior.
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><span id="FWPM_CONDITION_RPC_PROTOCOL"></span><span id="fwpm_condition_rpc_protocol"></span><dl> <dt><strong>FWPM_CONDITION_RPC_PROTOCOL</strong></dt> </dl></td>
-<td style="text-align: left;">O Protocolo RPC. <br/> <strong>Valores possíveis:  </strong>
+<td style="text-align: left;">O protocolo RPC. <br/> <strong>Valores possíveis:  </strong>
 <ul>
 <li>RPC_PROTSEQ_TCP</li>
 <li>RPC_PROTSEQ_NMP</li>
@@ -745,15 +745,15 @@ Disponível apenas no Windows Server 2008 R2, Windows 7 e posterior.
 </tr>
 <tr class="even">
 <td style="text-align: left;"><span id="FWPM_CONDITION_RPC_AUTH_TYPE"></span><span id="fwpm_condition_rpc_auth_type"></span><dl> <dt><strong>FWPM_CONDITION_RPC_AUTH_TYPE</strong></dt> </dl></td>
-<td style="text-align: left;">O tipo de serviço de autenticação. Para obter mais informações sobre os tipos de serviço de autenticação, consulte <a href="/windows/desktop/Rpc/authentication-service-constants"><strong>autenticação-constantes de serviço</strong></a>. <br/> <strong>Tipo de dados:</strong> FWP_UINT8<br/></td>
+<td style="text-align: left;">O tipo de serviço de autenticação. Para obter mais informações sobre tipos de serviço de autenticação, consulte <a href="/windows/desktop/Rpc/authentication-service-constants"><strong>Constantes de serviço de autenticação</strong></a>. <br/> <strong>Tipo de dados:</strong> FWP_UINT8<br/></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><span id="FWPM_CONDITION_RPC_AUTH_LEVEL"></span><span id="fwpm_condition_rpc_auth_level"></span><dl> <dt><strong>FWPM_CONDITION_RPC_AUTH_LEVEL</strong></dt> </dl></td>
-<td style="text-align: left;">O nível de serviço de autenticação. Para obter mais informações sobre os níveis de serviço de autenticação, consulte <a href="/windows/desktop/Rpc/authentication-level-constants"><strong>constantes de nível de autenticação</strong></a>. <br/> <strong>Tipo de dados:</strong> FWP_UINT8<br/></td>
+<td style="text-align: left;">O nível do serviço de autenticação. Para obter mais informações sobre níveis de serviço de autenticação, consulte <a href="/windows/desktop/Rpc/authentication-level-constants"><strong>Constantes de nível de autenticação</strong></a>. <br/> <strong>Tipo de dados:</strong> FWP_UINT8<br/></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><span id="FWPM_CONDITION_SEC_ENCRYPT_ALGORITHM"></span><span id="fwpm_condition_sec_encrypt_algorithm"></span><dl> <dt><strong>FWPM_CONDITION_SEC_ENCRYPT_ALGORITHM</strong></dt> </dl></td>
-<td style="text-align: left;">O algoritmo de criptografia SSPI (interface de provedor de serviço de segurança) baseado em certificado.<br/> <strong>Tipo de dados:</strong> FWP_UINT32<br/></td>
+<td style="text-align: left;">O algoritmo de criptografia SSPI (Interface do Provedor de Serviços de Segurança) baseado em certificado.<br/> <strong>Tipo de dados:</strong> FWP_UINT32<br/></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><span id="FWPM_CONDITION_SEC_KEY_SIZE"></span><span id="fwpm_condition_sec_key_size"></span><dl> <dt><strong>FWPM_CONDITION_SEC_KEY_SIZE</strong></dt> </dl></td>
@@ -854,6 +854,6 @@ Quando os endereços IP são armazenados no \_ formato fwp UINT32 ou quando uma 
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                     |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                               |
-| parâmetro<br/>                   | <dl> <dt>Fwpmu. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                     |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                               |
+| Cabeçalho<br/>                   | <dl> <dt>Fwpmu. h</dt> </dl> |

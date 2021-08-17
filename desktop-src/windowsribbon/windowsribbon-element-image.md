@@ -3,7 +3,7 @@ title: Elemento Image (Windows Ribbon Framework)
 description: Representa uma imagem.
 ms.assetid: 2c71bb16-93ac-484f-b81b-1b95842472b3
 keywords:
-- Faixa de Opções do Windows do elemento Image
+- Elemento Image Windows Ribbon
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: fe0b9afb51697d50de9cb80886cf829b90c81262
-ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
+ms.openlocfilehash: aad95d62be63434653908d54a290c3213fd22bf644150b70fa995e86bf5e39af
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111442887"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119931446"
 ---
 # <a name="image-element"></a>Elemento Image
 

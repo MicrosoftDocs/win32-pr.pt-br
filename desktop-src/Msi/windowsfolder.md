@@ -1,23 +1,23 @@
 ---
-description: O instalador define a propriedade WindowsFolder para o caminho completo da pasta do Windows.
+description: o instalador define a propriedade WindowsFolder como o caminho completo da pasta Windows.
 ms.assetid: 196f7862-8dfc-4214-845f-7dc1f5c709f3
 title: Propriedade WindowsFolder
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ad1530c2dd82ae4d0477a8632aab82b22206a08a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5cbf8bb74099d227e28e23abed9081fd7dd26c845a43894bf4e1f9acbba681e5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105770166"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119145209"
 ---
 # <a name="windowsfolder-property"></a>Propriedade WindowsFolder
 
-O instalador define a propriedade **WindowsFolder** para o caminho completo da pasta do Windows.
+o instalador define a propriedade **WindowsFolder** como o caminho completo da pasta Windows.
 
 ## <a name="remarks"></a>Comentários
 
-Essa pasta é local, mesmo quando configurada para janelas compartilhadas.
+Essa pasta é local, mesmo quando configurada para Windows compartilhadas.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -25,7 +25,7 @@ Essa pasta é local, mesmo quando configurada para janelas compartilhadas.
 
 | Requisito | Valor |
 |--------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versão<br/> | Windows Installer 5,0 no Windows Server 2012, Windows 8, Windows Server 2008 R2 ou Windows 7. Windows Installer 4,0 ou Windows Installer 4,5 no Windows Server 2008 ou no Windows Vista. Windows Installer no Windows Server 2003 ou no Windows XP, consulte os [requisitos de Run-Time de Windows Installer](windows-installer-portal.md) para obter informações sobre a Service Pack mínima do Windows exigida por uma versão Windows Installer.<br/> |
+| Versão<br/> | Windows instalador 5,0 em Windows Server 2012, Windows 8, Windows Server 2008 R2 ou Windows 7. Windows Installer 4,0 ou Windows Installer 4,5 no Windows Server 2008 ou Windows Vista. Windows instalador no Windows Server 2003 ou Windows XP consulte os [Windows Installer Run-Time requisitos](windows-installer-portal.md) para obter informações sobre o Windows de service pack mínimo exigido por uma versão Windows Installer.<br/> |
 
 
 

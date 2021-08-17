@@ -1,11 +1,11 @@
 ---
-title: Atributo phone-fax-outro
-description: Uma lista de números de fax alternativos.
+title: Telefone-Fax-Other
+description: Uma lista de números de facsimile alternativos.
 ms.assetid: b5e4ef38-ce91-4943-bad5-c299f83387d3
 ms.tgt_platform: multiple
 keywords:
-- AD-fax-outro esquema de anúncio de atributo
-- Esquema de AD do atributo otherFacsimileTelephoneNumber
+- Telefone-Fax-Other atributo AD Schema
+- otherFacsimileTelephoneNumber atributo AD Schema
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 12e765ce2c3f9b74b894714b99ae87deadd760d6
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 99fd2e8a720299c903210f891df83e5f144882d5816fd647042190610814547d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103825303"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119924036"
 ---
-# <a name="phone-fax-other-attribute"></a>Atributo phone-fax-outro
+# <a name="phone-fax-other-attribute"></a>Telefone-Fax-Other
 
-Uma lista de números de fax alternativos.
+Uma lista de números de facsimile alternativos.
 
 
 
 | Entrada | Valor |
 |-------------------|----------------------------------------------------------------------------------|
-| CN                | Telefone-fax-outro                                                                  |
-| LDAP-Display-Name | otherFacsimileTelephoneNumber                                                    |
+| CN                | Telefone-Fax-Other                                                                  |
+| Ldap-Display-Name | otherFacsimileTelephoneNumber                                                    |
 | Tamanho              | \-                                                                               |
 | Privilégio de atualização  | Administrador de domínio ou proprietário da conta.                                           |
 | Frequência de atualização  | Quando o registro do usuário é criado e sempre que o número de telefone precisa ser alterado. |
 | Attribute-Id      | 1.2.840.113556.1.4.646                                                           |
-| System-ID-GUID    | 0296c11d-40da-11d1-a9c0-0000f80367c1                                             |
-| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md)                                      |
+| System-Id-Guid    | 0296c11d-40da-11d1-a9c0-0000f80367c1                                             |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md)                                      |
 
 
 
@@ -58,10 +58,10 @@ Uma lista de números de fax alternativos.
 | ID do link                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
 | System-Only            | Falso                                                              |
-| É de valor único       | Falso                                                              |
+| Tem valor único       | Falso                                                              |
 | É indexado             | Falso                                                              |
-| No catálogo global      | Falso                                                              |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                       |
+| No Catálogo Global      | Falso                                                              |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                       |
 | Range-Lower            | 1                                                                  |
 | Range-Upper            | 64                                                                 |
 | Search-Flags           | 0x00000000                                                         |
@@ -79,10 +79,10 @@ Uma lista de números de fax alternativos.
 | ID do link                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
 | System-Only            | Falso                                                              |
-| É de valor único       | Falso                                                              |
+| Tem valor único       | Falso                                                              |
 | É indexado             | Falso                                                              |
-| No catálogo global      | Falso                                                              |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                       |
+| No Catálogo Global      | Falso                                                              |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                       |
 | Range-Lower            | 1                                                                  |
 | Range-Upper            | 64                                                                 |
 | Search-Flags           | 0x00000000                                                         |
@@ -100,10 +100,10 @@ Uma lista de números de fax alternativos.
 | ID do link                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
 | System-Only            | Falso                                                              |
-| É de valor único       | Falso                                                              |
+| Tem valor único       | Falso                                                              |
 | É indexado             | Falso                                                              |
-| No catálogo global      | Falso                                                              |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                       |
+| No Catálogo Global      | Falso                                                              |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                       |
 | Range-Lower            | 1                                                                  |
 | Range-Upper            | 64                                                                 |
 | Search-Flags           | 0x00000000                                                         |

@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: c1465b76b758f6a5ed9e7dff4c7126935fb7c5d1
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: a41a43f8f319ee09f24c4f62092e4718773dc312cb7886b0fc7c95781e614c8f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105812389"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119628726"
 ---
 # <a name="id3dxsaveuserdataregistertemplates-method"></a>Método ID3DXSaveUserData:: RegisterTemplates
 
@@ -49,7 +49,7 @@ Use esse ponteiro para registrar modelos de arquivo. x definidos pelo usuário. 
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 

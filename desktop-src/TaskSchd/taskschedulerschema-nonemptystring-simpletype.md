@@ -1,9 +1,9 @@
 ---
-title: Tipo simples de nonEmptyStringType
-description: Define os valores usados para uma cadeia de caracteres não vazia de texto.
+title: Tipo simples nonEmptyStringType
+description: Define os valores usados para uma cadeia de caracteres de texto não vazia.
 ms.assetid: cb3b1ca6-4531-467c-a27a-b27a62233514
 keywords:
-- tipo simples não vazio Agendador de Tarefas
+- tipo simples nonEmptyString Agendador de Tarefas
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: ab9c9fa84c510fc4e67f6f63664a58d6d4093709
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6359240c2baba14460ab4478c31c490725646130ea2181efdcb8e92a94090d5d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104369741"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117758412"
 ---
-# <a name="nonemptystringtype-simple-type"></a>Tipo simples de nonEmptyStringType
+# <a name="nonemptystringtype-simple-type"></a>Tipo simples nonEmptyStringType
 
-Define os valores usados para uma cadeia de caracteres não vazia de texto.
+Define os valores usados para uma cadeia de caracteres de texto não vazia.
 
 ``` syntax
 <xs:simpleType name="nonEmptyString">
@@ -38,7 +38,7 @@ Define os valores usados para uma cadeia de caracteres não vazia de texto.
 
 ## <a name="enumeration-values"></a>Valores de enumeração
 
-O tipo simples **Nonemptytype** define o valor a seguir.
+O **tipo simples nonEmptyString** define o valor a seguir.
 
 
 
@@ -54,8 +54,8 @@ O tipo simples **Nonemptytype** define o valor a seguir.
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
 
 
 
