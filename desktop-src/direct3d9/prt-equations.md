@@ -1,23 +1,23 @@
 ---
-description: Para entender totalmente um sombreador que implementa o PRT, é útil derivar a fórmula usada pelo sombreador para calcular Exit radiante.
+description: Para entender totalmente um sombreador que implementa PRT, é útil derivar a fórmula que o sombreador usa para calcular o radiance de saída.
 ms.assetid: 66876e9e-cde1-4d04-9b31-30be1c115e6b
-title: Equações de PRT (Direct3D 9)
+title: Equações prt (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a65559fada82fda7f7eed1c7d05543883a06a19e
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: bcd3dc716349ce46d4e678f0e408e5c964eb5f01d633649e3d512db6115c0267
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104087705"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118798122"
 ---
-# <a name="prt-equations-direct3d-9"></a>Equações de PRT (Direct3D 9)
+# <a name="prt-equations-direct3d-9"></a>Equações prt (Direct3D 9)
 
-Para entender totalmente um sombreador que implementa o PRT, é útil derivar a fórmula usada pelo sombreador para calcular Exit radiante.
+Para entender totalmente um sombreador que implementa PRT, é útil derivar a fórmula que o sombreador usa para calcular o radiance de saída.
 
-Para começar, a equação a seguir é a equação geral para calcular o radiante de saída resultante da iluminação direta em um objeto difuso com iluminação distante arbitrária.
+Para começar, a equação a seguir é a equação geral para calcular o radiamento de saída resultante da iluminação direta em um objeto difuso com iluminação distante arbitrária.
 
-![equação da radiante de saída resultante da iluminação direta em um objeto difuso com iluminação distante arbitrária](images/prt-theory-eq1.png)
+![equação do radiamento de saída resultante da iluminação direta em um objeto difuso com iluminação distante arbitrária](images/prt-theory-eq1.png)
 
 em que:
 
@@ -25,19 +25,19 @@ em que:
 
 | Parâmetro     | Descrição                                                                                             |
 |---------------|---------------------------------------------------------------------------------------------------------|
-| RP            | O radiante de saída no vértice p. Avaliado em cada vértice na malha.                                   |
+| Rp            | O radiance de saída no vértice p. Avaliado em cada vértice na malha.                                   |
 | p<sub>d</sub> | O albedo da superfície.                                                                              |
-| pi            | Uma constante, usada como um fator de normalização de conservação de energia.                                        |
-| L (s)          | O ambiente de iluminação (radiante de origem).                                                             |
-| VP de ₍ s ₎         | Uma função de visibilidade binária para o ponto p. Será 1 se o ponto puder ver a luz, 0 se não for.             |
-| HNP ₍ s ₎        | O termo do cosseno da lei do Lambert. Igual a Max ((NP · s), 0), em que NP é a superfície normal no ponto p. |
-| s             | A variável que se integra à esfera.                                                           |
+| pi            | Uma constante, usada como um fator de normalização de economia de energia.                                        |
+| L(s)          | O ambiente de iluminação (radiação de origem).                                                             |
+| Vp₍s₎         | Uma função de visibilidade binária para o ponto p. Será 1 se o ponto puder ver a luz, 0 se não.             |
+| Hnp₍s₎        | O termo cosseno da lei de Lambert. Igual a max((Np· s), 0) em que Np é a superfície normal no ponto p. |
+| s             | A variável que se integra sobre a esfera.                                                           |
 
 
 
  
 
-Usando funções de base esféricas, como harmônicas esféricas, a equação a seguir aproxima o ambiente de iluminação.
+Usando funções de base esféricas, como harmônicos esféricos, a equação a seguir aproxima o ambiente de iluminação.
 
 ![equação do ambiente de iluminação](images/prt-theory-eq2.png)
 
@@ -47,27 +47,27 @@ em que:
 
 | Parâmetro        | Descrição                                              |
 |------------------|----------------------------------------------------------|
-| L (s)             | O ambiente de iluminação (radiante de origem).              |
+| L(s)             | O ambiente de iluminação (radiação de origem).              |
 | i                | Um inteiro que soma o número de funções de base. |
-| O                | A ordem das harmônicas esféricas.                        |
+| O                | A ordem de harmônicos esféricos.                        |
 | l<sub>i</sub>    | Um coeficiente.                                           |
-| Y<sub>i (s)</sub> | Uma função base sobre a esfera.                     |
+| Y<sub>i(s)</sub> | Alguma função de base sobre a esfera.                     |
 
 
 
  
 
-A coleção desses coeficientes, L ', fornece a aproximação ideal para a função L (s) com as funções de base Y (s). A substituição e a distribuição produz a equação a seguir.
+A coleção desses coeficientes, L', fornece a aproximação ideal para a função L(s) com as funções base Y(s). Substituir e distribuir gera a equação a seguir.
 
-![equação do radiante de saída depois de substituir l (s) e distribuir](images/prt-theory-eq3.png)
+![equação do radiance de saída depois de substituir l(s) e distribuir](images/prt-theory-eq3.png)
 
-O integral de Y<sub>i (s)</sub>VP de ₍ s ₎ HNP ₍ s ₎ é um coeficiente de transferência t<sub>PI</sub> que o simulador computa para cada vértice na malha. Substituir isso produz a equação a seguir.
+A integral de Y<sub>i(s)</sub>Vp₍s₎Hnp₍s₎ é um coeficiente de transferência t<sub>pi</sub> que o simulador pré-comuta para cada vértice na malha. Substituir isso gera a equação a seguir.
 
-![equação do radiante de saída depois de substituir o coeficiente de transferência](images/prt-theory-eq4.png)
+![equação do radiance de saída depois de substituir o coeficiente de transferência](images/prt-theory-eq4.png)
 
-A alteração dessa notação de vetor produz a seguinte equação descompactada para calcular a saída radiante para cada canal.
+Alterar isso para notação de vetor gera a seguinte equação descompactada para calcular o radiamento de saída para cada canal.
 
-![equação da radiante de saída após alterar para notação de vetor](images/prt-theory-eq5.png)
+![equação do radiamento de saída depois de alterar para notação de vetor](images/prt-theory-eq5.png)
 
 em que:
 
@@ -75,18 +75,18 @@ em que:
 
 | Parâmetro     | Descrição                                                                                                                                                                         |
 |---------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| RP            | O radiante de saída no vértice p.                                                                                                                                                      |
+| Rp            | O radiance de saída no vértice p.                                                                                                                                                      |
 | p<sub>d</sub> | O albedo da superfície.                                                                                                                                                          |
-| Debug            | O vetor de l<sub>i</sub>e é a projeção do radiante de origem nas funções de base harmônicas esféricas. Este é um vetor do pedido ² de coeficientes de harmônica esférica. |
-| TP            | Um vetor de transferência do pedido ² para o vértice p. O simulador divide os coeficientes de transferência por p.                                                                                       |
+| L'            | O vetor de l<sub>i</sub>e é a projeção do radiance de origem para as funções base esféricas. Esse é um vetor de ordem de coeficientes de coeficientes alfabéticos esféricos. |
+| Tp            | Um vetor de transferência orderu para vértice p. O simulador divide os coeficientes de transferência por p.                                                                                       |
 
 
 
  
 
-Esses dois vetores são um vetor de pedido ² de coeficientes de harmônica esférica, portanto, observe que esse é simplesmente um produto de ponto. Dependendo da ordem, o ponto pode ser caro, portanto, a compactação pode ser usada. Um algoritmo chamado análise de componente principal clusterizado (CPCA) compacta os dados com eficiência. Isso permite o uso de uma aproximação harmônica esférica de ordem superior, que resulta em sombras mais nítidas.
+Esses dois vetores são um vetor de ordem de coeficientes de coeficientes alfabéticos esféricos, portanto, observe que este é simplesmente um produto de ponto. Dependendo da ordem, o ponto pode ser caro para que a compactação possa ser usada. Um algoritmo chamado CPCA (Análise de Componente Principal Clustered) compacta com eficiência os dados. Isso permite o uso de uma aproximação cônica esférica de ordem superior, o que resulta em sombras mais fortes.
 
-O CPCA fornece a equação a seguir para aproximar o vetor de transferência.
+A CPCA fornece a equação a seguir para aproximar o vetor de transferência.
 
 ![equação do vetor de transferência aproximado](images/prt-theory-eq6.png)
 
@@ -96,34 +96,34 @@ em que:
 
 | Parâmetro      | Descrição                                          |
 |----------------|------------------------------------------------------|
-| TP             | O vetor de transferência para o vértice p.                    |
-| MK             | A média do cluster k.                              |
-| j              | Um inteiro que soma o número de vetores do PCA. |
-| N              | O número de vetores do PCA.                           |
-| w<sub>PJ</sub> | O peso do PCA jth para o ponto p.                      |
-| B<sub>KJ</sub> | O vetor de base do PCA do jth para o cluster k.              |
+| Tp             | O vetor de transferência para vértice p.                    |
+| Mk             | A média do cluster k.                              |
+| j              | Um inteiro que soma o número de vetores PCA. |
+| N              | O número de vetores PCA.                           |
+| w<sub>pj</sub> | O peso da PCA jth para o ponto p.                      |
+| B<sub>kj</sub> | O vetor base da PCA jth para o cluster k.              |
 
 
 
  
 
-Um cluster é simplesmente um número de vértices que compartilham o mesmo vetor médio. Como obter a média do cluster, os pesos do PCA, os vetores de base do PCA e as IDs de cluster para os vértices são discutidos abaixo.
+Um cluster é simplesmente um número de vértices que compartilham o mesmo vetor de média. Como obter a média do cluster, os pesos da PCA, os vetores base da PCA e as IDs do cluster para os vértices são discutidos abaixo.
 
 A substituição dessas duas equações gera:
 
-![equação do radiante de saída depois de substituir o vetor de transferência](images/prt-theory-eq7.png)
+![equação do radiance de saída depois de substituir o vetor de transferência](images/prt-theory-eq7.png)
 
-Em seguida, a distribuição do produto dot produz a equação a seguir.
+Em seguida, distribuir o produto de ponto produz a equação a seguir.
 
-![equação do radiante de saída após a distribuição do produto dot](images/prt-theory-eq8.png)
+![equação do radiance de saída depois de distribuir o produto de ponto](images/prt-theory-eq8.png)
 
-Porque ambos (MK · L ') e (B<sub>KJ</sub>· L ') são constantes por vértice, o exemplo calcula esses valores com a CPU e os passa como constantes para o sombreador de vértice; como w<sub>PJ</sub> muda para cada vértice, o exemplo armazena esses dados por vértice no buffer de vértice.
+Porque ambos (Mk· L') e (B<sub>kj</sub>· L') são constantes por vértice, o exemplo calcula esses valores com a CPU e os passa como constantes para o sombreador de vértice; como w<sub>pj muda</sub> para cada vértice, o exemplo armazena esses dados por vértice no buffer de vértice.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[Transferência de radiante preputada](precomputed-radiance-transfer.md)
+[Transferência de Radiance pré-comutada](precomputed-radiance-transfer.md)
 </dt> </dl>
 
  

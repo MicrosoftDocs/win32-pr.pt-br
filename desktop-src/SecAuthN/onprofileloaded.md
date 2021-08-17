@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - Lsaidprov.h
-ms.openlocfilehash: cff9056ab5ea5437bb37da9b3c01368127db11cf
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6a8ed0d96ab7c9c63f9574472cac0daedba54e42beec244271efcc309c04dd95
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103662133"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118921140"
 ---
 # <a name="onprofileloaded-function"></a>Função OnProfileLoaded
 
@@ -62,7 +62,7 @@ Token do usuário cujo perfil está sendo carregado ou descarregado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se a função for bem-sucedida, a função retornará o STATUS \_ êxito.
 
@@ -78,8 +78,8 @@ Essa função é chamada cada vez que a função [**LoadUserProfile**](/windows/
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                             |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                   |
+| Cliente mínimo com suporte<br/> | Windows 8 \[ somente aplicativos da área de trabalho\]<br/>                                             |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 \[ somente aplicativos da área de trabalho\]<br/>                                   |
 | parâmetro<br/>                   | <dl> <dt>Lsaidprov. h</dt> </dl> |
 
 

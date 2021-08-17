@@ -17,12 +17,12 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: afb3e962569b1871282577f3d46618374b59425f
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: e0f60234ef62ac915502b54063d8579bad64c74125b27683c79e3f61e0b00b66
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105795462"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118985806"
 ---
 # <a name="span-idvspixengineipixprogresscallbackspanipixprogresscallback-interface"></a><span id="vspixengine.ipixprogresscallback"></span>Interface IPixProgressCallback
 
@@ -34,7 +34,7 @@ A interface **IPixProgressCallback** herda da interface [**IUnknown**](/windows/
 
 -   [Métodos](#methods)
 
-### <a name="span-idmethodsspanmethods"></a><span id="methods"></span>Maneiras
+### <a name="span-idmethodsspanmethods"></a><span id="methods"></span>Métodos
 
 A interface **IPixProgressCallback** tem esses métodos.
 
@@ -44,7 +44,7 @@ A interface **IPixProgressCallback** tem esses métodos.
 
 ## <a name="requirements"></a>Requisitos
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>parâmetro</p></td><td>Vspixengine. h</td></tr></tbody></table>
+<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Cabeçalho</p></td><td>Vspixengine. h</td></tr></tbody></table>
 
  
 

@@ -14,12 +14,12 @@ keywords:
 - Portabilidade OpenGL do íris GL, função greset
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 078482f47dcaf7fd5f84605e2e0fa32d0cf14729
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: bf5a48c09e7078f3eccd316de9cb86872d61343aabfa0faf60fbe5af2bef218c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104364181"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118936144"
 ---
 # <a name="porting-greset"></a>Portando greset
 
@@ -59,13 +59,13 @@ Este exemplo usa uma constante de bits ou de uma operação simbólica, indicand
 
 
 
- 
+ 
 
 Para restaurar os valores das variáveis de estado para aquelas salvas com o último [**glPushAttrib**](glpushattrib.md), basta chamar [**glPopAttrib**](glpopattrib.md). As variáveis que você não salvou permanecerão inalteradas. A pilha de atributos tem uma profundidade finita de pelo menos 16.
 
- 
+ 
 
- 
+ 
 
 
 

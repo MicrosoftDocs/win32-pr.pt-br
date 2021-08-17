@@ -4,12 +4,12 @@ description: Ponteiros únicos ou completos que são \ out somente não são ace
 ms.assetid: 0477980e-d76e-452f-9ab1-71a8ed8642d9
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b5b21baa370c1b68fb3c708a8fdb21115686646f
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 5b9511c21045892eb7a5b3230d8f0180578b489b06b5b5402fb0b11f6a3ff31a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104499107"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118927565"
 ---
 # <a name="out-only-unique-or-full-pointer-parameters-not-accepted"></a>Out-Only parâmetros de ponteiro exclusivos ou completos não aceitos
 
@@ -19,6 +19,6 @@ O stub de servidor gerado automaticamente precisa alocar memória para o ponteir
 
 Em vez de \[ **out**, [Unique](/windows/desktop/Midl/unique) \] ou \[ **out**, ponteiros [PTR](/windows/desktop/Midl/ptr) \] , use \[ ponteiros **in**, **out**, **Unique** \] ou \[ **in**, **out**, **PTR** \] ou use outro nível de indireção, como um ponteiro de referência que aponte para o ponteiro exclusivo ou completo válido.
 
- 
+ 
 
- 
+ 

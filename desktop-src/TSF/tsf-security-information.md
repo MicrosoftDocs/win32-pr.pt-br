@@ -29,12 +29,12 @@ keywords:
 - Aplicativos habilitados para TSF, chamadas LoadLibrary
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0d71966106cde0f59d39442f7e2bf9b2a216cd94
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 432418fbcb6221082083d6595aa374939bc2f4d5cf5aad145cac87444e75bdc0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "105758123"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118873571"
 ---
 # <a name="security-considerations-text-services-framework"></a>Considerações de segurança: estrutura de serviços de texto
 
@@ -64,6 +64,6 @@ ms.locfileid: "105758123"
 [GetProcAddress](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

@@ -4,12 +4,12 @@ ms.assetid: ca8df7a4-caa4-4fe7-81a8-8fce372454f4
 title: Extensões da versão 3
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ee23ce35ba7031a1a9f7a2c9caa79fd955ccbe2d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c96bc15ca4089499f5573fc83d2a33445377d2b7947d70900019f0629acaf1f0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104169487"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118903223"
 ---
 # <a name="version-3-extensions"></a>Extensões da versão 3
 

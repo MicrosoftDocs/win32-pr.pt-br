@@ -1,5 +1,5 @@
 ---
-description: Especifica um certificado usado para assinar um documento. O certificado pode ser armazenado em um arquivo de certificado do fornecedor de software (SPC) ou em um repositório de certificados.
+description: Especifica um certificado usado para assinar um documento. o certificado pode ser armazenado em um arquivo de certificado de Publisher de Software (SPC) ou em um repositório de certificados.
 ms.assetid: 9a99ce98-237d-4223-ab3d-0576041038e3
 title: Estrutura de SIGNER_CERT
 ms.topic: reference
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: a14f955749e98ca34cda0be2c57a3d5c546afc41
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d31670575db045430e78b6c6b3182f4561b0d4784c1e1c0da95ff8629154d2c5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104171107"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118898869"
 ---
 # <a name="signer_cert-structure"></a>Estrutura do certificado do ASSINAnte \_
 
-A estrutura de **\_ certificado do signatário** especifica um [*certificado*](../secgloss/c-gly.md) usado para assinar um documento. O certificado pode ser armazenado em um arquivo de [*certificado do fornecedor de software*](../secgloss/s-gly.md) (SPC) ou em um repositório de [*certificados*](../secgloss/c-gly.md).
+A estrutura de **\_ certificado do signatário** especifica um [*certificado*](../secgloss/c-gly.md) usado para assinar um documento. o certificado pode ser armazenado em um arquivo de [*certificado de Publisher de Software*](../secgloss/s-gly.md) (SPC) ou em um repositório de [*certificados*](../secgloss/c-gly.md).
 
 > [!Note]  
 > Essa estrutura não está definida em nenhum arquivo de cabeçalho. Para usar essa estrutura, você deve defini-la por conta própria, conforme mostrado neste tópico.
@@ -110,8 +110,8 @@ O identificador da janela a ser usada como o proprietário de qualquer caixa de 
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>          |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho XP\]<br/>          |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/> |
 
 
 

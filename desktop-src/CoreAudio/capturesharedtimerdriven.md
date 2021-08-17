@@ -4,12 +4,12 @@ ms.assetid: 06124b99-89b3-4dfa-b989-a54746ecd697
 title: CaptureSharedTimerDriven
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b635462767f22d3e31fe6deaa79b5c00911b378b
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: bf6d9e8cbd686bdd71804ed067a5b3d9ff36ed8271c8b0edb04b8077ca162fbd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104010204"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118957375"
 ---
 # <a name="capturesharedtimerdriven"></a>CaptureSharedTimerDriven
 
@@ -50,9 +50,9 @@ Este exemplo está disponível nos locais a seguir.
 
 
 
-| Local    | Caminho/URL                                                                                                  |
+| Localização    | Caminho/URL                                                                                                  |
 |-------------|-----------------------------------------------------------------------------------------------------------|
-| SDK do Windows | \\Arquivos de programas \\ Microsoft SDKs \\ Windows \\ v 7.0 \\ amostras \\ áudio multimídia \\ \\ CaptureSharedTimerDriven \\ ... |
+| SDK do Windows | \\arquivos de programas \\ Microsoft SDKs \\ Windows \\ v 7.0 \\ amostras \\ áudio multimídia \\ \\ CaptureSharedTimerDriven \\ ... |
 
 
 
@@ -62,9 +62,9 @@ Este exemplo está disponível nos locais a seguir.
 
 Para criar o exemplo de CaptureSharedTimerDriven, use as seguintes etapas:
 
-1.  Abra o Shell CMD para o SDK do Windows e altere para o diretório de exemplo CaptureSharedTimerDriven.
-2.  Execute o comando `start WASAPICaptureSharedTimerDriven.sln` no diretório CaptureSharedTimerDriven para abrir o projeto WASAPICaptureSharedTimerDriven na janela do Visual Studio.
-3.  De dentro da janela, selecione a configuração da solução de **depuração** ou **versão** , selecione o menu **Compilar** na barra de menus e selecione a opção **Compilar** . Se você não abrir o Visual Studio a partir do Shell CMD para o SDK, o Visual Studio não terá acesso ao ambiente de compilação do SDK. Nesse caso, o exemplo não será compilado, a menos que você defina explicitamente a variável de ambiente MSSdk, que é usada no arquivo de projeto, WASAPICaptureSharedTimerDriven. vcproj.
+1.  abra o shell CMD para o SDK do Windows e altere para o diretório de exemplo CaptureSharedTimerDriven.
+2.  execute o comando `start WASAPICaptureSharedTimerDriven.sln` no diretório CaptureSharedTimerDriven para abrir o projeto WASAPICaptureSharedTimerDriven na janela Visual Studio.
+3.  De dentro da janela, selecione a configuração da solução de **depuração** ou **versão** , selecione o menu **Compilar** na barra de menus e selecione a opção **Compilar** . se você não abrir Visual Studio do shell CMD para o SDK, Visual Studio não terão acesso ao ambiente de compilação do sdk. Nesse caso, o exemplo não será compilado, a menos que você defina explicitamente a variável de ambiente MSSdk, que é usada no arquivo de projeto, WASAPICaptureSharedTimerDriven. vcproj.
 
 ## <a name="running-the-sample"></a>Executando o exemplo
 

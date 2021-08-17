@@ -4,12 +4,12 @@ ms.assetid: 8aa25afd-efa8-4fe0-92d4-8432f9d633c9
 title: Atributo MFSampleExtension_PacketCrossOffsets (Wmcontainer. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d416f41fef9caab3d73c2bdd015d345452ccbd69
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b39abdcaf0dfb5888c1705a0a76a19c3a55be522b82405f5a77345efe0d8f13e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105808353"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119102302"
 ---
 # <a name="mfsampleextension_packetcrossoffsets-attribute"></a>\_Atributo MFSampleExtension PacketCrossOffsets
 
@@ -31,7 +31,7 @@ Para definir esse atributo, chame [**IMFAttributes:: setBlob**](/windows/desktop
 
 ## <a name="remarks"></a>Comentários
 
-Esse atributo se aplica a amostras de mídia protegidas pelo Windows Media Digital Rights Management (DRM). O valor do atributo é uma matriz de **DWORD** s. Cada entrada na matriz é o deslocamento de um limite de carga, em relação ao início do quadro. Um aplicativo pode usar esses valores ao descriptografar e reconstruir os quadros.
+esse atributo se aplica a amostras de mídia protegidas pelo DRM (Rights Management Digital Windows media). O valor do atributo é uma matriz de **DWORD** s. Cada entrada na matriz é o deslocamento de um limite de carga, em relação ao início do quadro. Um aplicativo pode usar esses valores ao descriptografar e reconstruir os quadros.
 
 A constante de GUID para esse atributo é exportada de mfuuid. lib.
 
@@ -41,9 +41,9 @@ A constante de GUID para esse atributo é exportada de mfuuid. lib.
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Aplicativos de \[ aplicativos \| UWP do Windows Vista desktop\]<br/>                                    |
-| Servidor mínimo com suporte<br/> | Aplicativos do Windows Server 2008 \[ Desktop aplicativos \| UWP\]<br/>                              |
-| parâmetro<br/>                   | <dl> <dt>Wmcontainer. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Aplicativos de aplicativos UWP do vista desktop \|\]<br/>                                    |
+| Servidor mínimo com suporte<br/> | Windows \[Aplicativos da área de trabalho do servidor 2008 \| aplicativo UWP\]<br/>                              |
+| Cabeçalho<br/>                   | <dl> <dt>Wmcontainer. h</dt> </dl> |
 
 
 

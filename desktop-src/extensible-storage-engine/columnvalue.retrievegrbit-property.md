@@ -26,12 +26,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 880041a979aab7f6715dd0735caebe39a8eac3ab
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4469e374caffce494f62b10c6a2a4032cb27b2413de37f707a5862f95e7360b0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105780255"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118982616"
 ---
 # <a name="columnvalueretrievegrbit-property"></a>Propriedade columnvalue. RetrieveGrbit
 
@@ -40,7 +40,7 @@ Obtém ou define opções de recuperação de coluna.
 **Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration

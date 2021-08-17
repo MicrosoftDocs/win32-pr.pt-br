@@ -1,9 +1,9 @@
 ---
-title: Função D3DX_B8G8R8X8_UNORM_SRGB_to_FLOAT3_inexact
-description: Desempacota \_ \_ \_ \_ os dados do sombreador B8G8R8X8 UNORM sRGB no formato dxgi para um XMFLOAT3. | Função D3DX_B8G8R8X8_UNORM_SRGB_to_FLOAT3_inexact
+title: D3DX_B8G8R8X8_UNORM_SRGB_to_FLOAT3_inexact função
+description: Desempacotar dados de sombreador \_ \_ SRGB UNORM FORMAT B8G8R8X8 \_ DXGI para um \_ XMFLOAT3. | D3DX_B8G8R8X8_UNORM_SRGB_to_FLOAT3_inexact função
 ms.assetid: caa64f89-7b9e-4bc0-82dc-31edfd31d495
 keywords:
-- Função D3DX_B8G8R8X8_UNORM_SRGB_to_FLOAT3_inexact HLSL
+- D3DX_B8G8R8X8_UNORM_SRGB_to_FLOAT3_inexact função HLSL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2ef3f0b97ee3d5e21fef7b0227304fc5b187df2c
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: f696381402d8ad42c92310029631e66b457e3b211d22d8f9de3dd98c1f1312ef
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104968552"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118986866"
 ---
-# <a name="d3dx_b8g8r8x8_unorm_srgb_to_float3_inexact-function"></a>D3DX \_ B8G8R8X8 \_ UNORM \_ sRGB \_ \_ FLOAT3 \_ função inexata
+# <a name="d3dx_b8g8r8x8_unorm_srgb_to_float3_inexact-function"></a>Função \_ inexact D3DX B8G8R8X8 \_ UNORM \_ SRGB \_ para \_ FLOAT3 \_
 
-Desempacota \_ \_ \_ \_ os dados do sombreador B8G8R8X8 UNORM sRGB no formato dxgi para um XMFLOAT3.
+Desempacotar dados de sombreador \_ \_ SRGB UNORM FORMAT B8G8R8X8 \_ DXGI para um \_ XMFLOAT3.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,17 +40,17 @@ XMFLOAT3 D3DX_B8G8R8X8_UNORM_SRGB_to_FLOAT3_inexact(
 *packedInput* 
 </dt> <dd>
 
-Os dados do sombreador embalado.
+Os dados de sombreador empacotados.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Os dados do sombreador desempacotado.
+Os dados do sombreador desempacodados.
 
 ## <a name="remarks"></a>Comentários
 
-Essa função usa instruções de sombreador que não têm precisão alta o suficiente para fornecer a resposta exata. A função alternativa [**D3DX \_ B8G8R8X8 \_ UNORM \_ sRGB \_ para \_ FLOAT3**](d3dx-b8g8r8x8-unorm-srgb-to-float3.md) usa uma tabela de pesquisa armazenada no sombreador para fornecer uma conversão exata de sRGB para float.
+Essa função usa instruções de sombreador que não têm precisão alta o suficiente para dar a resposta exata. A função alternativa [**D3DX \_ B8G8R8X8 \_ UNORM \_ SRGB \_ to \_ FLOAT3**](d3dx-b8g8r8x8-unorm-srgb-to-float3.md) usa uma tabela de lookup armazenada no sombreador para dar um SRGB exato para conversão float.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -58,7 +58,7 @@ Essa função usa instruções de sombreador que não têm precisão alta o sufi
 
 | Requisito | Valor |
 |-------------------|--------------------------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>D3DX \_ DXGIFormatConvert. inl</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>D3DX \_ DXGIFormatConvert.inl</dt> </dl> |
 
 
 
@@ -69,7 +69,7 @@ Essa função usa instruções de sombreador que não têm precisão alta o sufi
 [Funções](format-conversion-functions.md)
 </dt> <dt>
 
-[Descompactando e empacotando o \_ formato dxgi para a edição de imagem In-Place](dx-graphics-hlsl-unpacking-packing-dxgi-format.md)
+[Desempacotar e empacotar formato DXGI \_ para In-Place edição de imagem](dx-graphics-hlsl-unpacking-packing-dxgi-format.md)
 </dt> </dl>
 
  

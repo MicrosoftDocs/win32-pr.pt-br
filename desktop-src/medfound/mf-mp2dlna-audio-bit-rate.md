@@ -4,12 +4,12 @@ ms.assetid: d0ae573a-7ce3-49e8-9609-f72d067f1ce1
 title: Atributo MF_MP2DLNA_AUDIO_BIT_RATE (Mfmp2dlna. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 15c61554f592aefbb863057339d807e23fc96567
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: aed622a2f826e061dc4b909eec09490974fe83a7ac850cd0fcdfcede0abd578b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103921271"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119104762"
 ---
 # <a name="mf_mp2dlna_audio_bit_rate-attribute"></a>\_Atributo de \_ taxa de bits de áudio MF MP2DLNA \_ \_
 
@@ -37,9 +37,9 @@ Para definir esse atributo no coletor de mídia DLNA, consulte o coletor de míd
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>                                             |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008 R2\]<br/>                                |
-| parâmetro<br/>                   | <dl> <dt>Mfmp2dlna. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[somente aplicativos de área de trabalho Windows 7\]<br/>                                             |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do Server 2008 R2\]<br/>                                |
+| Cabeçalho<br/>                   | <dl> <dt>Mfmp2dlna. h</dt> </dl> |
 
 
 

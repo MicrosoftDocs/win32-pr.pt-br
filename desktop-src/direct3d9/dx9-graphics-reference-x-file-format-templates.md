@@ -4,12 +4,12 @@ ms.assetid: 1403fd1e-9799-4683-87ab-cfad102d1fae
 title: Modelos
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 228ca6d2d7e59d0f91fb5412161bc3feed888a7a
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 7876166661c50c1a3bc1e4d3275cd56f3c4e26cfbfad5fd8fce31568ef04931e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103645993"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118803043"
 ---
 # <a name="templates"></a>Modelos
 
@@ -17,7 +17,7 @@ Esta seção lista os modelos de arquivo. x. O formato do modelo é discutido em
 
 -   [**Animação**](animation.md)
 -   [**AnimationKey**](animationkey.md)
--   [**Animaçãooptions**](animationoptions.md)
+-   [**AnimationOptions**](animationoptions.md)
 -   [**Animaçãoset**](animationset.md)
 -   [**AnimTicksPerSecond**](animtickspersecond.md)
 -   [**Boolean**](boolean.md)
@@ -44,14 +44,14 @@ Esta seção lista os modelos de arquivo. x. O formato do modelo é discutido em
 -   [**Material**](material.md)
 -   [**MaterialWrap**](materialwrap.md)
 -   [**Matrix4x4**](matrix4x4.md)
--   [**Integrada**](mesh.md)
+-   [**Malha**](mesh.md)
 -   [**MeshFace**](meshface.md)
 -   [**MeshFaceWraps**](meshfacewraps.md)
 -   [**MeshMaterialList**](meshmateriallist.md)
 -   [**MeshNormals**](meshnormals.md)
 -   [**MeshTextureCoords**](meshtexturecoords.md)
 -   [**MeshVertexColors**](meshvertexcolors.md)
--   [**Patch**](patch.md)
+-   [**Distribuído**](patch.md)
 -   [**PatchMesh**](patchmesh.md)
 -   [**PatchMesh9**](patchmesh9.md)
 -   [**PMAttributeRange**](pmattributerange.md)

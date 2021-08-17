@@ -36,7 +36,7 @@ Propriedades associadas à raiz ou link do DFS.
 | Frequência de atualização  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.2037                     |
 | System-Id-Guid    | 0c3e5bc5-eb0e-40f5-9b53-334e958dffdb        |
-| Sintaxe            | [**String(Unicode)**](s-string-unicode.md) |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 

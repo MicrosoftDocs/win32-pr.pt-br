@@ -4,16 +4,16 @@ ms.assetid: 61575839-4604-4c8b-ae4d-fe796c3c5314
 title: Estrutura de TAPI_AUDIO_STREAM_CONFIG_CAPS (Ipmsp. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: daec587a8e760bedd3ab9c6b3469ef8f70b72383
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 51fc4777e6d174f7d4aaeac9bbd3f6d467123275b4030c9fa21363223584e8b9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105780588"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118861215"
 ---
 # <a name="tapi_audio_stream_config_caps-structure"></a>\_Estrutura de \_ Caps de configuração de fluxo de áudio TAPI \_ \_
 
-\[ Essa estrutura não está disponível para uso no Windows Vista, no Windows Server 2008 e em versões subsequentes do sistema operacional. A API do cliente RTC fornece funcionalidade semelhante.\]
+\[essa estrutura não está disponível para uso no Windows Vista, no Windows Server 2008 e em versões subsequentes do sistema operacional. A API do cliente RTC fornece funcionalidade semelhante.\]
 
 A estrutura de **\_ \_ \_ \_ Caps config do fluxo de áudio TAPI** está contida na estrutura [**\_ \_ \_ Caps de configuração do fluxo TAPI**](tapi-stream-config-caps.md) quando o membro **capstype** é definido como o membro **AudioCap** da União [**StreamConfigCapsType**](streamconfigcapstype.md) .
 
@@ -128,7 +128,7 @@ A granularidade dos valores de bytes por segundo.
 | Requisito | Valor |
 |-------------------------|------------------------------------------------------------------------------------|
 | Versão da TAPI<br/> | Requer TAPI 3,1<br/>                                                       |
-| parâmetro<br/>       | <dl> <dt>Ipmsp. h</dt> </dl> |
+| Cabeçalho<br/>       | <dl> <dt>Ipmsp. h</dt> </dl> |
 
 
 

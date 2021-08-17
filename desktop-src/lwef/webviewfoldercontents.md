@@ -3,8 +3,8 @@ title: Objeto WebViewFolderContents (Shldisp.h)
 description: Implementado pelo shell para uso dentro de uma WebView.
 ms.assetid: c9c46e21-2721-43c9-a6f4-38fafbda3798
 keywords:
-- Recursos do ambiente Windows herdado do objeto WebViewFolderContents
-- Recursos do ambiente Windows herdado do objeto WebViewFolderContents, descritos
+- recursos de ambiente de Windows herdado do objeto WebViewFolderContents
+- recursos de ambiente herdado Windows do objeto WebViewFolderContents, descritos
 topic_type:
 - apiref
 api_name:
@@ -15,12 +15,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a9ea2020e2d9baaffbc026692faafc702db14781
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 179fe0146f49d0e5172410ca119953a7b3f245af20c0e4c2d83ff78fa23b93e1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105812017"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119035954"
 ---
 # <a name="webviewfoldercontents-object"></a>Objeto WebViewFolderContents
 
@@ -91,7 +91,7 @@ O objeto **WebViewFolderContents** tem essas propriedades.
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 2000 Professional, \[ somente aplicativos da área de trabalho do Windows XP\]<br/>                                         |
+| Cliente mínimo com suporte<br/> | Windows 2000 Professional, \[ somente aplicativos de área de trabalho do Windows XP\]<br/>                                         |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                           |
 | Cabeçalho<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                           |
 | INSERI<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                         |

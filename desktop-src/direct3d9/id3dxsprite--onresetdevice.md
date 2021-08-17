@@ -1,7 +1,7 @@
 ---
-description: 'Método ID3DXSprite:: OnResetDevice – Use este método para adquirir novamente os recursos e salvar o estado inicial.'
+description: Método ID3DXSprite::OnResetDevice – use esse método para adquirir recursos e salvar o estado inicial.
 ms.assetid: 74f8616e-c3ed-4231-b701-009213ea48c0
-title: 'Método ID3DXSprite:: OnResetDevice (D3dx9core. h)'
+title: Método ID3DXSprite::OnResetDevice (D3dx9core.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: cb58c682ab30f54461e6b3c1870f5db703a3876d
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 16086aca86e0df8c2c75e6a055be9fa95f7cc97259f37401aa932af962409811
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108117754"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118800574"
 ---
-# <a name="id3dxspriteonresetdevice-method"></a>Método ID3DXSprite:: OnResetDevice
+# <a name="id3dxspriteonresetdevice-method"></a>Método ID3DXSprite::OnResetDevice
 
-Use este método para readquirir recursos e salvar o estado inicial.
+Use esse método para adquirir recursos e salvar o estado inicial.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,11 +42,11 @@ Esse método não tem parâmetros.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se o método for bem sucedido, o valor de retorno será S \_ OK. Se o método falhar, o valor de retorno poderá ser D3DERR \_ INVALIDCALL.
+Se o método for bem-sucedido, o valor de retorno será S \_ OK. Se o método falhar, o valor de retorno poderá ser D3DERR \_ INVALIDCALL.
 
 ## <a name="remarks"></a>Comentários
 
-**ID3DXSprite:: OnResetDevice** deve ser chamado cada vez que o dispositivo for redefinido (usando [**IDirect3DDevice9:: Reset**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-reset)), antes que quaisquer outros métodos sejam chamados. Este é um bom lugar para readquirir recursos de memória de vídeo e capturar blocos de estado.
+**ID3DXSprite::OnResetDevice** deve ser chamado sempre que o dispositivo for redefinido (usando [**IDirect3DDevice9::Reset**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-reset)), antes que qualquer outro método seja chamado. Esse é um bom lugar para adquirir recursos de memória de vídeo e capturar blocos de estado.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,12 +54,12 @@ Se o método for bem sucedido, o valor de retorno será S \_ OK. Se o método fa
 
 | Requisito | Valor |
 |--------------------|----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3dx9core. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| parâmetro<br/>  | <dl> <dt>D3dx9core.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

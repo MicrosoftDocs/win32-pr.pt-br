@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 01e83520943abafd814425b6ff3fb53f48775627
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5d8f9d30b057c1c011dcbff1b7d8c88e9183d50ca1fc2b7dd046b79fe8279d37
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105748807"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118953946"
 ---
 # <a name="creftime-class"></a>Classe CReftime
 
@@ -29,7 +29,7 @@ ms.locfileid: "105748807"
 
 A `CRefTime` classe é uma classe auxiliar para gerenciar tempos de referência.
 
-Um *tempo de referência* é uma unidade de tempo representada em unidades de 100 nanossegundos. Essa classe compartilha o mesmo layout de dados que o tipo de dados de [**\_ tempo de referência**](reference-time.md) , mas adiciona alguns métodos e operadores que fornecem funções de comparação, conversão e aritmética. Para obter mais informações sobre os tempos de referência, consulte [tempo e relógios no DirectShow](time-and-clocks-in-directshow.md).
+Um *tempo de referência* é uma unidade de tempo representada em unidades de 100 nanossegundos. Essa classe compartilha o mesmo layout de dados que o tipo de dados de [**\_ tempo de referência**](reference-time.md) , mas adiciona alguns métodos e operadores que fornecem funções de comparação, conversão e aritmética. Para obter mais informações sobre os tempos de referência, consulte [tempo e relógios em DirectShow](time-and-clocks-in-directshow.md).
 
 
 
@@ -80,7 +80,7 @@ rt = rt + val; // CRefTime, rt.m_time is 20.
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>REFTIME. h (incluir fluxos. h)</dt> </dl>                                                                                   |
+| parâmetro<br/>  | <dl> <dt>Reftime. h (incluir Fluxos. h)</dt> </dl>                                                                                   |
 | Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
 
 

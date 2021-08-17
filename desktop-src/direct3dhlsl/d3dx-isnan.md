@@ -1,9 +1,9 @@
 ---
-title: Função D3DX_IsNan
+title: D3DX_IsNan função
 description: Determina se o valor é um NaN (não um número).
 ms.assetid: 862d1d34-36ab-471e-b3ce-ce71896441e5
 keywords:
-- Função D3DX_IsNan HLSL
+- D3DX_IsNan função HLSL
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 60aac82ebfb145bc11aac8d4ab509a4260767a74
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 6b8851fb216bf400971a281fb589b92205014e006651d4fc89592d98f5c93916
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103930726"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118793745"
 ---
-# <a name="d3dx_isnan-function"></a>\_Função D3DX IsNaN
+# <a name="d3dx_isnan-function"></a>Função IsNan D3DX \_
 
 Determina se o valor é um NaN (não um número).
 
@@ -37,16 +37,16 @@ bool D3DX_IsNan(
 
 <dl> <dt>
 
-*\_L* 
+*\_V* 
 </dt> <dd>
 
 O valor especificado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-verdadeiro se um NaN; caso contrário, false.
+true se um NaN; caso contrário, false.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,7 +54,7 @@ verdadeiro se um NaN; caso contrário, false.
 
 | Requisito | Valor |
 |-------------------|--------------------------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>D3DX \_ DXGIFormatConvert. inl</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>D3DX \_ DXGIFormatConvert.inl</dt> </dl> |
 
 
 
@@ -65,7 +65,7 @@ verdadeiro se um NaN; caso contrário, false.
 [Funções](format-conversion-functions.md)
 </dt> <dt>
 
-[Descompactando e empacotando o \_ formato dxgi para a edição de imagem In-Place](dx-graphics-hlsl-unpacking-packing-dxgi-format.md)
+[Desempacotar e empacotar formato DXGI \_ para In-Place edição de imagem](dx-graphics-hlsl-unpacking-packing-dxgi-format.md)
 </dt> </dl>
 
  

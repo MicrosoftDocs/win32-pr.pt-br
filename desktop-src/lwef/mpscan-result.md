@@ -1,10 +1,10 @@
 ---
-title: Estrutura de MPSCAN_RESULT (MpClient. h)
+title: MPSCAN_RESULT (MpClient.h)
 description: Os resultados de uma verificação.
 ms.assetid: 9031A371-092A-4175-BE1D-90442A5BED2D
 keywords:
-- Recursos do ambiente Windows herdado da estrutura de MPSCAN_RESULT
-- Ponteiro de estrutura de PMPSCAN_RESULT recursos de ambiente herdados do Windows
+- MPSCAN_RESULT estrutura herdada Windows recursos de ambiente
+- PMPSCAN_RESULT de estrutura herdada Windows recursos de ambiente
 topic_type:
 - apiref
 api_name:
@@ -15,14 +15,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e7be60df7993732bafcd7c44ac2fb581c111aed6
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a41efd40529976d4b7fe639c4907729ed39ae261f5ac644faf1a36e1a213a97e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104163623"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118747147"
 ---
-# <a name="mpscan_result-structure"></a>\_Estrutura de resultados MPSCAN
+# <a name="mpscan_result-structure"></a>Estrutura MPSCAN \_ RESULT
 
 Os resultados de uma verificação.
 
@@ -51,11 +51,11 @@ typedef struct tagMPSCAN_RESULT {
 **ScanType**
 </dt> <dd>
 
-Tipo: **[ **\_ tipo de MPSCAN**](mpscan-type.md)**
+Tipo: **[ **MPSCAN \_ TYPE**](mpscan-type.md)**
 
 </dd> <dd>
 
-Tipo de verificação. Consulte [**\_ tipo de MPSCAN**](mpscan-type.md).
+Tipo de verificação. Consulte [**MPSCAN \_ TYPE**](mpscan-type.md).
 
 </dd> <dt>
 
@@ -66,7 +66,7 @@ Tipo: **[ **MPSOURCE**](mpsource.md)**
 
 </dd> <dd>
 
-Verifique a origem, como o usuário ou o sistema iniciado. Consulte [**MPSOURCE**](mpsource.md).
+Origem da verificação, como iniciado pelo usuário ou pelo sistema. Consulte [**MPSOURCE**](mpsource.md).
 
 </dd> <dt>
 
@@ -84,7 +84,7 @@ Identificador de verificação.
 **StartTime**
 </dt> <dd>
 
-Tipo: **ULARGE \_ inteiro**
+Tipo: **ULARGE \_ INTEGER**
 
 </dd> <dd>
 
@@ -95,7 +95,7 @@ Hora de início da verificação.
 **EndTime**
 </dt> <dd>
 
-Tipo: **ULARGE \_ inteiro**
+Tipo: **ULARGE \_ INTEGER**
 
 </dd> <dd>
 
@@ -106,22 +106,22 @@ Hora de término da verificação.
 **ThreatStats**
 </dt> <dd>
 
-Tipo: **[ **\_ Estatísticas de MPTHREAT**](mpthreat-stats.md)**
+Tipo: **[ **ESTATÍSTICAS DE \_ MPTHREAT**](mpthreat-stats.md)**
 
 </dd> <dd>
 
-Estatísticas relacionadas a ameaças. Consulte [**\_ Estatísticas de MPTHREAT**](mpthreat-stats.md).
+Estatísticas relacionadas a ameaças. Consulte [**ESTATÍSTICAS DE MPTHREAT \_**](mpthreat-stats.md).
 
 </dd> <dt>
 
 **ResourceStats**
 </dt> <dd>
 
-Tipo: **[ **\_ Estatísticas de MPRESOURCE**](mpresource-stats.md)**
+Tipo: **[ **ESTATÍSTICAS de \_ MPRESOURCE**](mpresource-stats.md)**
 
 </dd> <dd>
 
-Estatísticas relacionadas a recursos. Consulte [**\_ Estatísticas de MPRESOURCE**](mpresource-stats.md).
+Estatísticas relacionadas a recursos. Consulte [**ESTATÍSTICAS DO \_ MPRESOURCE.**](mpresource-stats.md)
 
 </dd> <dt>
 
@@ -142,9 +142,9 @@ Versão da assinatura usada para verificação.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                            |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>MpClient. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[Windows 8 somente aplicativos da área de trabalho\]<br/>                                            |
+| Servidor mínimo com suporte<br/> | \[Windows Server 2012 somente aplicativos da área de trabalho\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>MpClient.h</dt> </dl> |
 
 
 
@@ -152,16 +152,16 @@ Versão da assinatura usada para verificação.
 
 <dl> <dt>
 
-[**Estatísticas de MPRESOURCE \_**](mpresource-stats.md)
+[**ESTATÍSTICAS DO MPRESOURCE \_**](mpresource-stats.md)
 </dt> <dt>
 
-[**tipo de MPSCAN \_**](mpscan-type.md)
+[**TIPO \_ MPSCAN**](mpscan-type.md)
 </dt> <dt>
 
 [**MPSOURCE**](mpsource.md)
 </dt> <dt>
 
-[**Estatísticas de MPTHREAT \_**](mpthreat-stats.md)
+[**ESTATÍSTICAS DE \_ MPTHREAT**](mpthreat-stats.md)
 </dt> </dl>
 
  

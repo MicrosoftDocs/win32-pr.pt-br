@@ -4,12 +4,12 @@ ms.assetid: 680211de-3f81-4ea7-b03e-741096b5dde0
 title: Palavras reservadas, cabeçalho e comentários
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8879d0dbb518f92f0d8a6c38793ab315ae48b73e
-ms.sourcegitcommit: b40a986d5ded926ae7617119cdd35d99b533bad9
+ms.openlocfilehash: f583084b3faa4777a5fe6031cc247fdb99c27cc1fb23c6a5676e60afe00aba20
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "110343651"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119044274"
 ---
 # <a name="reserved-words-header-and-comments"></a>Palavras reservadas, cabeçalho e comentários
 
@@ -41,8 +41,8 @@ O cabeçalho de comprimento variável é obrigatório e deve estar no início do
 |                |          |                 | bin   | Arquivo binário                  |
 |                |          |                 | tzip  | Arquivo de texto compactado MSZip   |
 |                |          |                 | bzip  | Arquivo binário compactado do MSZip |
-| Tamanho do float     | x        | 0064            |       | Floats de 64 bits                |
-|                | x        | "0032"          |       | Floats de 32 bits                |
+| Tamanho do float     | x        | 0064            |       | floats de 64 bits                |
+|                | x        | "0032"          |       | floats de 32 bits                |
 
 
 
@@ -50,7 +50,7 @@ O cabeçalho de comprimento variável é obrigatório e deve estar no início do
 
 Os valores na tabela são delimitados por aspas para chamar a atenção para o número de caracteres em cada valor. Aqueles com 4 bytes contêm quatro caracteres, aqueles com 2 bytes contêm dois caracteres.
 
-Os comentários são aplicáveis somente em arquivos de texto. Os comentários podem ocorrer em qualquer lugar no fluxo de dados. Um comentário começa com barras duplas no estilo C++ (//) ou um sinal de quilo \# (). O comentário é executado para a próxima nova linha. O exemplo a seguir mostra comentários válidos.
+Os comentários são aplicáveis somente em arquivos de texto. Os comentários podem ocorrer em qualquer lugar no fluxo de dados. Um comentário começa com as barras duplas do estilo C++ (//) ou um sinal de sustenido ( \# ). O comentário é executado na próxima linha nova. O exemplo a seguir mostra comentários válidos.
 
 
 ```

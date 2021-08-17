@@ -4,12 +4,12 @@ ms.assetid: 1afcf2e6-5d6d-4b87-a005-15d42a610f69
 title: PageOutputColor
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 79fc71f58bde44224642d3a5f6979e3aef929976
-ms.sourcegitcommit: 998d50f6def8a25850fc113fc8a2df903c829c5e
+ms.openlocfilehash: 34b9b60c6ec144c6f24c9bb3ba5848f27bfef855c6af0a0c838cd232a1167883
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "113548984"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118732071"
 ---
 # <a name="pageoutputcolor"></a>PageOutputColor
 
@@ -25,10 +25,10 @@ Descreve as características das configurações de cor para a saída.
 
 
 
-| Nome | Valor |
+| Name | Valor |
 |----------------------------|--------------------|
 | Tipo de elemento <br/>   | Recurso<br/> |
-| Prefixo de escopo <br/> | Página<br/>    |
+| Prefixo de escopo <br/> | ?<br/>    |
 | Observações <br/>          | Nenhum<br/>    |
 
 

@@ -3,8 +3,8 @@ title: Estrutura de MPCOMPONENT_STATUS (MpClient. h)
 description: Informações de status do componente.
 ms.assetid: 0E589E52-A204-425C-880B-CF13C16893F3
 keywords:
-- Recursos do ambiente Windows herdado da estrutura de MPCOMPONENT_STATUS
-- Ponteiro de estrutura de PMPCOMPONENT_STATUS recursos de ambiente herdados do Windows
+- recursos de ambiente de Windows herdado da estrutura de MPCOMPONENT_STATUS
+- Windows recursos de ambiente herdados do ponteiro de estrutura do PMPCOMPONENT_STATUS
 topic_type:
 - apiref
 api_name:
@@ -15,12 +15,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f2923136d2599440bc6ccfe863af9795f7d7ff96
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: dcb12a0358cf4d0112ca1cb8dfedc90c7c3aec504578685e78291dbe5e006cda
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103644530"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118747794"
 ---
 # <a name="mpcomponent_status-structure"></a>Estrutura de status do MPCOMPONENT \_
 
@@ -70,9 +70,9 @@ Código de êxito ou de falha associado ao status.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                            |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>MpClient. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 8 \[ somente aplicativos da área de trabalho\]<br/>                                            |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 \[ somente aplicativos da área de trabalho\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>MpClient. h</dt> </dl> |
 
 
 

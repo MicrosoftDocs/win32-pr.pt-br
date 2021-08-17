@@ -4,12 +4,12 @@ description: Saiba mais sobre as funções de tempo de execução do suplicante 
 ms.assetid: b1c473ba-9a12-4929-b4d0-27262117e9c0
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f2bbb6aee83cff6354877b661acb7f3389f5b77b
-ms.sourcegitcommit: b0ebdefc3dcd5c04bede94091833aa1015a2f95c
+ms.openlocfilehash: 97481347535de03cb1d3c04f341f382c270f0ae89482060e9952c38cfbdc5b98
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "105796080"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118785324"
 ---
 # <a name="eaphost-supplicant-run-time-functions"></a>Funções Run-Time do suplicante EAPHost
 
@@ -38,11 +38,11 @@ As funções de tempo de execução da API suplicante EAP são as seguintes.
 
 
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

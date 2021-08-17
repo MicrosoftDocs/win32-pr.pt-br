@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - Apphelp.dll
-ms.openlocfilehash: 4ac588d99408d0d7f13bc0fd13d8abe8a6580e69
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 942d7995e002f7f211a84c333d44e26531e361beec0adfaaa75ad7dc433ea3b5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103826273"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119075960"
 ---
 # <a name="sdbwritestringtag-function"></a>Função SdbWriteStringTag
 
@@ -41,30 +41,30 @@ BOOL WINAPI SdbWriteStringTag(
 
 <dl> <dt>
 
-*PDB* \[ no\]
+*pdb* \[ Em\]
 </dt> <dd>
 
-Um identificador para o banco de dados de Shim.
+Um alça para o banco de dados shim.
 
 </dd> <dt>
 
-*tTag* \[ no\]
+*tTag* \[ Em\]
 </dt> <dd>
 
-A marca para a entrada. Essa marca deve ser do tipo **marca \_ tipo \_ STRINGREF**.
+A TAG para a entrada. Essa TAG deve ser do tipo **TAG \_ TYPE \_ STRINGREF.**
 
 </dd> <dt>
 
-*pwszData* \[ no\]
+*pwszData* \[ Em\]
 </dt> <dd>
 
-A cadeia de caracteres terminada em nulo. Este parâmetro não pode ser **nulo**.
+A cadeia de caracteres terminada em nulo. Esse parâmetro não pode ser **NULL.**
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-A função retorna **true** em caso de êxito ou **false** em caso de falha.
+A função retorna **TRUE em** caso de êxito **ou FALSE** em caso de falha.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -72,8 +72,8 @@ A função retorna **true** em caso de êxito ou **false** em caso de falha.
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                         |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                   |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                         |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                   |
 | DLL<br/>                      | <dl> <dt>Apphelp.dll</dt> </dl> |
 
 

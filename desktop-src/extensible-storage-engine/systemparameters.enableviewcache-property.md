@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre: Propriedade SystemParameters. EnableViewCache'
-title: Propriedade SystemParameters. EnableViewCache
+description: 'Saiba mais sobre: propriedade SystemParameters.EnableViewCache'
+title: Propriedade SystemParameters.EnableViewCache
 TOCTitle: 'EnableViewCache property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.SystemParameters.EnableViewCache
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.systemparameters.enableviewcache(v=EXCHG.10)
@@ -26,19 +26,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 4b22808109b8fd69df18b9a6ae98de17a814b5ea
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 271039ad83ce67348cef93101e9f685589ecea51f6881a4d6f1109cc7098e985
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104172208"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119107010"
 ---
-# <a name="systemparametersenableviewcache-property"></a>Propriedade SystemParameters. EnableViewCache
+# <a name="systemparametersenableviewcache-property"></a>Propriedade SystemParameters.EnableViewCache
 
-Obtém ou define um valor que indica se o mecanismo de banco de dados deve usar a e/s de arquivo mapeada de memória para arquivos de banco de dados.
+Obtém ou define um valor que indica se o mecanismo de banco de dados deve usar a E/S de arquivo mapeada em memória para arquivos de banco de dados.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Syntax
 
@@ -61,7 +61,7 @@ public static bool EnableViewCache { get; set; }
 
 #### <a name="property-value"></a>Valor da propriedade
 
-Tipo: [System. Boolean](/dotnet/api/system.boolean)  
+Tipo: [System.Boolean](/dotnet/api/system.boolean)  
 
 ## <a name="see-also"></a>Confira também
 
@@ -71,4 +71,4 @@ Tipo: [System. Boolean](/dotnet/api/system.boolean)
 
 [Membros do SystemParameters](./systemparameters-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

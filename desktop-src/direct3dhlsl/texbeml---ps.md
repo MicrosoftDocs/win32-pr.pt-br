@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: d97877c67970f43a995fcfbe21d9aead2d792e09
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: c549e93829c3165d4921342d4e74a8dc15bc1518f7c88aa205f8afc889fae95e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103917629"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118788060"
 ---
 # <a name="texbeml---ps"></a>texbeml-PS
 
@@ -29,7 +29,7 @@ Aplicar um ambiente de relevo falso – mapear transformação com correção de
 
 
 
- 
+ 
 
 onde
 
@@ -46,7 +46,7 @@ onde
 
 
 
- 
+ 
 
 Os dados de cor vermelho e verde no registro src são interpretados como os dados de muito (du, DV). Os dados de cor azul no registro src são interpretados como os dados de luminância.
 
@@ -147,6 +147,6 @@ Este exemplo requer as seguintes texturas nos seguintes estágios de textura.
 [Instruções do sombreador de pixel](dx9-graphics-reference-asm-ps-instructions.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

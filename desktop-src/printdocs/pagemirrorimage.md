@@ -4,12 +4,12 @@ ms.assetid: a05357c0-6a82-42ff-b4f8-d3e0ee089055
 title: PageMirrorImage
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0fe917d6973fbd074111a5da7b6fe5620e7251e9
-ms.sourcegitcommit: 998d50f6def8a25850fc113fc8a2df903c829c5e
+ms.openlocfilehash: dd4c8f64611180d8510d5e58c8e99167dbed1cb1ff4d1cd2ae91e5de191b4f38
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "113549083"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118732566"
 ---
 # <a name="pagemirrorimage"></a>PageMirrorImage
 
@@ -19,16 +19,16 @@ Descreve a configuração de espelhamento da saída.
 
 -   [Informações do elemento](#element-information)
 -   [Conteúdo estrutural](#structural-content)
--   [linguagem XML conteúdo (XML)](#extensible-markup-language-xml-content)
+-   [conteúdo linguagem XML (XML)](#extensible-markup-language-xml-content)
 
 ## <a name="element-information"></a>Informações do elemento
 
 
 
-| Nome | Valor |
+| Name | Valor |
 |----------------------------|--------------------|
 | Tipo de elemento <br/>   | Recurso<br/> |
-| Prefixo de definição de scoping <br/> | Página<br/>    |
+| Prefixo de definição de scoping <br/> | ?<br/>    |
 | Observações <br/>          | Nenhum<br/>    |
 
 
@@ -68,9 +68,9 @@ A tabela a seguir descreve as características das variáveis definidas na estru
 
  
 
-## <a name="extensible-markup-language-xml-content"></a>linguagem XML conteúdo (XML)
+## <a name="extensible-markup-language-xml-content"></a>conteúdo linguagem XML (XML)
 
-As palavras-chave public Print Schema são definidas no https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords namespace . O conteúdo linguagem XML XML (public linguagem XML) para essa palavra-chave é definido abaixo:
+As palavras-chave public Print Schema são definidas no https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords namespace . O conteúdo linguagem XML xml público para essa palavra-chave está definido abaixo:
 
 ``` syntax
 <psf:Feature name="psk:PageMirrorImage">

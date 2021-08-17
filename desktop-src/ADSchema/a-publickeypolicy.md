@@ -36,7 +36,7 @@ Referência à política de chave pública para este domínio.
 | Frequência de atualização  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.420                                |
 | System-ID-GUID    | 80a67e28-9f22-11d0-afdd-00c04fd930c9                  |
-| Sintaxe            | [**Objeto (link de réplica)**](s-object-replica-link.md) |
+| Syntax            | [**Objeto (link de réplica)**](s-object-replica-link.md) |
 
 
 
@@ -58,7 +58,7 @@ Referência à política de chave pública para este domínio.
 | ID do link                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | Falso                                              |
-| É de valor único       | True                                               |
+| É de valor único       | Verdadeiro                                               |
 | É indexado             | Falso                                              |
 | No catálogo global      | Falso                                              |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                       |
@@ -79,7 +79,7 @@ Referência à política de chave pública para este domínio.
 | ID do link                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | Falso                                              |
-| É de valor único       | True                                               |
+| É de valor único       | Verdadeiro                                               |
 | É indexado             | Falso                                              |
 | No catálogo global      | Falso                                              |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                       |
@@ -100,7 +100,7 @@ Referência à política de chave pública para este domínio.
 | ID do link                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | Falso                                              |
-| É de valor único       | True                                               |
+| É de valor único       | Verdadeiro                                               |
 | É indexado             | Falso                                              |
 | No catálogo global      | Falso                                              |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                       |
@@ -121,10 +121,10 @@ Referência à política de chave pública para este domínio.
 | ID do link                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | Falso                                              |
-| Tem valor único       | True                                               |
+| É de valor único       | Verdadeiro                                               |
 | É indexado             | Falso                                              |
-| No Catálogo Global      | Falso                                              |
-| Descritor de segurança NT | O:BAG:BAD:S:                                       |
+| No catálogo global      | Falso                                              |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
@@ -142,10 +142,10 @@ Referência à política de chave pública para este domínio.
 | ID do link                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | Falso                                              |
-| Tem valor único       | True                                               |
+| É de valor único       | Verdadeiro                                               |
 | É indexado             | Falso                                              |
-| No Catálogo Global      | Falso                                              |
-| Descritor de segurança NT | O:BAG:BAD:S:                                       |
+| No catálogo global      | Falso                                              |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
@@ -163,10 +163,10 @@ Referência à política de chave pública para este domínio.
 | ID do link                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | Falso                                              |
-| Tem valor único       | True                                               |
+| É de valor único       | Verdadeiro                                               |
 | É indexado             | Falso                                              |
-| No Catálogo Global      | Falso                                              |
-| Descritor de segurança NT | O:BAG:BAD:S:                                       |
+| No catálogo global      | Falso                                              |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |

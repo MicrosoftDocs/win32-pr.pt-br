@@ -1,7 +1,7 @@
 ---
-description: Representa uma associação na qual um serviço é um componente de um serviço pai, que, juntos, formam um serviço de nível superior.
+description: Representa uma associação na qual um serviço é um componente de um serviço pai, que juntos formam um serviço de nível superior.
 ms.assetid: c629d59d-d9d3-4019-a378-cd1d4d31a5d9
-title: Classe CIM_ServiceComponent
+title: CIM_ServiceComponent classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -22,9 +22,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118647541"
 ---
-# <a name="cim_servicecomponent-class"></a>\_Classe de Filecomponent CIM
+# <a name="cim_servicecomponent-class"></a>Classe CIM \_ ServiceComponent
 
-Representa uma associação na qual um serviço é um componente de um serviço pai, que, juntos, formam um serviço de nível superior.
+Representa uma associação na qual um serviço é um componente de um serviço pai, que juntos formam um serviço de nível superior.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -39,26 +39,26 @@ class CIM_ServiceComponent : CIM_Component
 
 ## <a name="members"></a>Membros
 
-A classe **CIM \_ filecomponent** tem estes tipos de membros:
+A **classe \_ ServiceComponent cim** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **CIM \_ filecomponent** tem essas propriedades.
+A **classe \_ ServiceComponent cim** tem essas propriedades.
 
 <dl> <dt>
 
-**GroupComponent**
+**Groupcomponent**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados **: \_ serviço CIM**
+Tipo de dados: **Serviço CIM \_**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**agregação**](/windows/desktop/WmiSdk/standard-qualifiers), [**substituição**](/windows/desktop/WmiSdk/standard-qualifiers) ("GroupComponent")
+Qualificadores: [**Aggregate**](/windows/desktop/WmiSdk/standard-qualifiers), [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("GroupComponent")
 </dt> </dl>
 
 O serviço pai.
@@ -68,13 +68,13 @@ O serviço pai.
 **PartComponent**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados **: \_ serviço CIM**
+Tipo de dados: **Serviço CIM \_**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("PartComponent")
+Qualificadores: [**substituir**](/windows/desktop/WmiSdk/standard-qualifiers) ("PartComponent")
 </dt> </dl>
 
 O serviço de componente.
@@ -89,8 +89,8 @@ O serviço de componente.
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 8.1<br/>                                                                                  |
 | Servidor mínimo com suporte<br/> | Windows Server 2012 R2<br/>                                                                       |
-| Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Namespace<br/>                | Virtualização \\ raiz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -99,7 +99,7 @@ O serviço de componente.
 
 <dl> <dt>
 
-[**\_Componente CIM**](cim-component.md)
+[**Componente \_ CIM**](cim-component.md)
 </dt> </dl>
 
  

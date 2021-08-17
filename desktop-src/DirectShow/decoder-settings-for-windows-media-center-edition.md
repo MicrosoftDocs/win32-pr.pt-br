@@ -4,16 +4,16 @@ ms.assetid: 019b063f-f215-44d8-a916-3125bee6af93
 title: Configurações do decodificador para Windows Media Center Edition
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c2f66b5107fa0316f6ce2547e1f5f066165ed598
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: cfc373f2ea58bc169748ff42841650cf979822014e579a78459e47da5c694814
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "105747576"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118953155"
 ---
 # <a name="decoder-settings-for-windows-media-center-edition"></a>Configurações do decodificador para Windows Media Center Edition
 
-O Windows XP Media Center Edition 2005 e posterior usa a interface [**ICodecAPI**](/windows/desktop/api/Strmif/nn-strmif-icodecapi) para configurar o filtro de decodificador de áudio para reprodução de televisão e DVD. Há suporte para as seguintes propriedades.
+Windows O XP Media Center Edition 2005 e posterior usa a interface [**ICodecAPI**](/windows/desktop/api/Strmif/nn-strmif-icodecapi) para configurar o filtro de decodificador de áudio para reprodução de televisão e DVD. Há suporte para as seguintes propriedades.
 
 
 

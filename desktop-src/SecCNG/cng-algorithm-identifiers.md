@@ -4,12 +4,12 @@ ms.assetid: a05ae7e6-d882-4287-9990-23e4cd340b05
 title: Identificadores de algoritmo CNG (bcrypt. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ba244f2a815933322793fdd572ed7a4e69256a0a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c1f2f9539f9fc446d0c313d32117890bc3b1eff4ed8261a815e41acdda13cbe4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105787467"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118908912"
 ---
 # <a name="cng-algorithm-identifiers"></a>Identificadores de algoritmo CNG
 
@@ -47,7 +47,7 @@ Os identificadores a seguir são usados para identificar algoritmos de criptogra
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><span id="BCRYPT_AES_GMAC_ALGORITHM"></span><span id="bcrypt_aes_gmac_algorithm"></span><dl> <dt><strong>BCRYPT_AES_GMAC_ALGORITHM</strong></dt> <dt> &quot; AES-GMAC &quot; </dt> </dl></td>
-<td style="text-align: left;">O algoritmo de criptografia simétrica GMAC (código de autenticação de mensagem) Galois do padrão de criptografia avançada (AES).<br/> Standard: SP800-38D<br/> <strong>Windows Vista:</strong> Esse algoritmo tem suporte a partir do Windows Vista com SP1.<br/></td>
+<td style="text-align: left;">O algoritmo de criptografia simétrica GMAC (código de autenticação de mensagem) Galois do padrão de criptografia avançada (AES).<br/> Standard: SP800-38D<br/> <strong>Windows Vista:</strong> esse algoritmo tem suporte a partir do Windows Vista com SP1.<br/></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><span id="BCRYPT_CAPI_KDF_ALGORITHM"></span><span id="bcrypt_capi_kdf_algorithm"></span><dl> <dt><strong>BCRYPT_CAPI_KDF_ALGORITHM</strong></dt> <dt>L &quot; CAPI_KDF &quot; </dt> </dl></td>
@@ -67,7 +67,7 @@ Os identificadores a seguir são usados para identificar algoritmos de criptogra
 </tr>
 <tr class="even">
 <td style="text-align: left;"><span id="BCRYPT_DSA_ALGORITHM"></span><span id="bcrypt_dsa_algorithm"></span><dl> <dt><strong>BCRYPT_DSA_ALGORITHM</strong></dt> <dt> &quot; DSA &quot; </dt> </dl></td>
-<td style="text-align: left;">O algoritmo de assinatura digital.<br/> Standard: FIPS 186-2<br/> <strong>Windows 8:</strong> A partir do Windows 8, esse algoritmo oferece suporte a FIPS 186-3. Chaves menores ou iguais a 1024 bits aderem ao FIPS 186-2 e às chaves maiores que 1024 a FIPS 186-3.<br/></td>
+<td style="text-align: left;">O algoritmo de assinatura digital.<br/> Standard: FIPS 186-2<br/> <strong>Windows 8:</strong> a partir do Windows 8, esse algoritmo oferece suporte a FIPS 186-3. Chaves menores ou iguais a 1024 bits aderem ao FIPS 186-2 e às chaves maiores que 1024 a FIPS 186-3.<br/></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><span id="BCRYPT_ECDH_P256_ALGORITHM"></span><span id="bcrypt_ecdh_p256_algorithm"></span><dl> <dt><strong>BCRYPT_ECDH_P256_ALGORITHM</strong></dt> <dt> &quot; ECDH_P256 &quot; </dt> </dl></td>
@@ -118,13 +118,13 @@ Os identificadores a seguir são usados para identificar algoritmos de criptogra
 <td style="text-align: left;">O algoritmo gerador de número aleatório.<br/> Standard: FIPS 186-2, FIPS 140-2, NIST SP 800-90<br/>
 <blockquote>
 [!Note]<br />
-A partir do Windows Vista com SP1 e do Windows Server 2008, o gerador de números aleatórios é baseado no modo de contador AES especificado no padrão NIST SP 800-90.
+a partir do Windows Vista com SP1 e Windows Server 2008, o gerador de números aleatórios é baseado no modo de contador AES especificado no padrão NIST SP 800-90.
 </blockquote>
-<br/> <strong>Windows Vista:</strong> O gerador de número aleatório é baseado no gerador de números aleatórios com base em hash especificado no padrão FIPS 186-2.<br/> <strong>Windows 8:</strong> A partir do Windows 8, o algoritmo RNG dá suporte a FIPS 186-3. Chaves menores ou iguais a 1024 bits aderem ao FIPS 186-2 e às chaves maiores que 1024 a FIPS 186-3.<br/></td>
+<br/> <strong>Windows Vista:</strong> O gerador de número aleatório é baseado no gerador de números aleatórios com base em hash especificado no padrão FIPS 186-2.<br/> <strong>Windows 8:</strong> a partir do Windows 8, o algoritmo RNG dá suporte a FIPS 186-3. Chaves menores ou iguais a 1024 bits aderem ao FIPS 186-2 e às chaves maiores que 1024 a FIPS 186-3.<br/></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><span id="BCRYPT_RNG_DUAL_EC_ALGORITHM"></span><span id="bcrypt_rng_dual_ec_algorithm"></span><dl> <dt><strong>BCRYPT_RNG_DUAL_EC_ALGORITHM</strong></dt> <dt> &quot; DUALECRNG &quot; </dt> </dl></td>
-<td style="text-align: left;">O algoritmo gerador de número aleatório de curva elíptica dupla. <br/> Standard: SP800-90.<br/> <strong>Windows 8:</strong> A partir do Windows 8, o algoritmo EC RNG dá suporte a FIPS 186-3. Chaves menores ou iguais a 1024 bits aderem ao FIPS 186-2 e às chaves maiores que 1024 a FIPS 186-3.<br/> <strong>Windows 10:</strong> A partir do Windows 10, o algoritmo gerador de número aleatório de curva elíptica dupla foi removido. Os usos existentes desse algoritmo continuarão funcionando; no entanto, o gerador de número aleatório é baseado no modo de contador AES especificado no padrão NIST SP 800-90. O novo código deve usar <strong>BCRYPT_RNG_ALGORITHM</strong>, e é recomendável que o código existente seja alterado para usar <strong>BCRYPT_RNG_ALGORITHM</strong>. <br/></td>
+<td style="text-align: left;">O algoritmo gerador de número aleatório de curva elíptica dupla. <br/> Standard: SP800-90.<br/> <strong>Windows 8:</strong> a partir do Windows 8, o algoritmo EC RNG dá suporte a FIPS 186-3. Chaves menores ou iguais a 1024 bits aderem ao FIPS 186-2 e às chaves maiores que 1024 a FIPS 186-3.<br/> <strong>Windows 10:</strong> a partir do Windows 10, o algoritmo gerador de número aleatório de curva elíptica dupla foi removido. Os usos existentes desse algoritmo continuarão funcionando; no entanto, o gerador de número aleatório é baseado no modo de contador AES especificado no padrão NIST SP 800-90. O novo código deve usar <strong>BCRYPT_RNG_ALGORITHM</strong>, e é recomendável que o código existente seja alterado para usar <strong>BCRYPT_RNG_ALGORITHM</strong>. <br/></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><span id="BCRYPT_RNG_FIPS186_DSA_ALGORITHM"></span><span id="bcrypt_rng_fips186_dsa_algorithm"></span><dl> <dt><strong>BCRYPT_RNG_FIPS186_DSA_ALGORITHM</strong></dt> <dt> &quot; FIPS186DSARNG &quot; </dt> </dl></td>
@@ -187,7 +187,7 @@ A partir do Windows Vista com SP1 e do Windows Server 2008, o gerador de número
 
 Para usar o algoritmo **BCrypt \_ ECDSA \_ ALGORITM** ou **BCrypt \_ ECDH \_**, chame [**BCryptOpenAlgorithmProvider**](/windows/desktop/api/Bcrypt/nf-bcrypt-bcryptopenalgorithmprovider) com algoritmo de ECDSA de **BCrypt \_ \_** ou **\_ \_ algoritmo BCrypt ECDH** como o *pszAlgId*. Em seguida, use [**BCryptSetProperty**](/windows/desktop/api/Bcrypt/nf-bcrypt-bcryptsetproperty) para definir a propriedade de **nome de \_ \_ curva \_ BCRYPT ECC** para um algoritmo nomeado listado na CNG denominada curvas.
 
-Para os parâmetros de curva elíptica definidos pelo usuário do provedor diretamente, use [**BCryptSetProperty**](/windows/desktop/api/Bcrypt/nf-bcrypt-bcryptsetproperty) para definir a propriedade de **\_ \_ parâmetros de ECC BCRYPT** . Baixe o [Kit de desenvolvedor do provedor criptográfico do Windows 10 (CPDK)](https://www.microsoft.com/download/details.aspx?id=30688) para obter mais informações.
+Para os parâmetros de curva elíptica definidos pelo usuário do provedor diretamente, use [**BCryptSetProperty**](/windows/desktop/api/Bcrypt/nf-bcrypt-bcryptsetproperty) para definir a propriedade de **\_ \_ parâmetros de ECC BCRYPT** . baixe o [Windows 10 CPDK (Kit de desenvolvedor do provedor de criptografia)](https://www.microsoft.com/download/details.aspx?id=30688) para obter mais informações.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -195,8 +195,8 @@ Para os parâmetros de curva elíptica definidos pelo usuário do provedor diret
 
 | Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                      |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                      |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                |
 | parâmetro<br/>                   | <dl> <dt>Bcrypt. h</dt> </dl> |
 
 

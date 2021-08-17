@@ -4,12 +4,12 @@ ms.assetid: 4E43FAA9-7D6F-43DB-A998-189411E0AB4C
 title: Constantes CNG DPAPI (NCryptprotect. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ece376a0b7282f26ef933b249a1356b2d012d438
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1afc589afa113250728b46639b7cd47442034f7b3bc82264099f334919a94c76
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104457267"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118908794"
 ---
 # <a name="cng-dpapi-constants"></a>Constantes CNG DPAPI
 
@@ -141,7 +141,7 @@ Protege o conteúdo para o computador local. Todos os usuários no computador lo
 <span id="NCRYPT_KEY_PROTECTION_LOCAL_USER"></span><span id="ncrypt_key_protection_local_user"></span>**\_ \_ usuário local de proteção de chave NCRYPT \_ \_**
 </dt> <dd> <dl> <dt>
 
-usuário
+"usuário"
 </dt> <dt>
 
 
@@ -171,7 +171,7 @@ Representa o provedor de proteção de chave da Microsoft que dá suporte a form
 <span id="WINDOWS_CLIENT_KEY_PROTECTION_PROVIDER"></span><span id="windows_client_key_protection_provider"></span>**\_provedor de \_ proteção de chave do cliente do Windows \_ \_**
 </dt> <dd> <dl> <dt>
 
-"Provedor de proteção de chave do cliente do Windows"
+"provedor de proteção de chave de cliente Windows"
 </dt> <dt>
 
 
@@ -189,8 +189,8 @@ Representa o provedor de proteção de chave da Microsoft que está disponível 
 
 | Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                                 |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                       |
+| Cliente mínimo com suporte<br/> | Windows 8 \[ somente aplicativos da área de trabalho\]<br/>                                                 |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 \[ somente aplicativos da área de trabalho\]<br/>                                       |
 | parâmetro<br/>                   | <dl> <dt>NCryptprotect. h</dt> </dl> |
 
 

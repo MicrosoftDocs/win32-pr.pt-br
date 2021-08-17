@@ -36,7 +36,7 @@ Contém o nome de exibição DN da parte do usuário de um grupo.
 | Frequência de atualização  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.6.18.1.346             |
 | System-Id-Guid    | c875d82d-2848-4cec-bb50-3c5486d09d57    |
-| Sintaxe            | [**Object(DS-DN)**](s-object-ds-dn.md) |
+| Syntax            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
 
@@ -119,10 +119,10 @@ Contém o nome de exibição DN da parte do usuário de um grupo.
 | ID do link                | 2030                                |
 | MAPI-Id                | \-                                  |
 | System-Only            | Falso                               |
-| Tem valor único       | Falso                               |
+| É de valor único       | Falso                               |
 | É indexado             | Falso                               |
-| No Catálogo Global      | Falso                               |
-| Descritor de segurança NT | O:BAG:BAD:S:                        |
+| No catálogo global      | Falso                               |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                        |
 | Range-Lower            | \-                                  |
 | Range-Upper            | \-                                  |
 | Search-Flags           | 0x00000000                          |

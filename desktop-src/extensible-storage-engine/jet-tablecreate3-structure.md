@@ -17,21 +17,21 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 587649b592f2b0d213a481c3bfbecc723240e486
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 64f820b9e9a42099cdb99d8ab8f0756e8fdbb23256917821d05573afd9068017
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105798425"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118979236"
 ---
 # <a name="jet_tablecreate3-structure"></a>Estrutura JET_TABLECREATE3
 
 
-_**Aplica-se a:** Windows | Windows Server_
+_**Aplica-se a:** Windows | Windows Servidor_
 
-A estrutura de **JET_TABLECREATE3** contém as informações necessárias para criar uma tabela populada com colunas e índices em um banco de dados ESE (mecanismo de armazenamento extensível) e que designa uma função de retorno de chamada. A estrutura de **JET_TABLECREATE3** é usada pela função [JetCreateTableColumnIndex3](./jetcreatetablecolumnindex3-function.md) .
+a estrutura de **JET_TABLECREATE3** contém as informações necessárias para criar uma tabela populada com colunas e índices em um banco de dados ESE (Extensible Armazenamento Engine) e que designa uma função de retorno de chamada. A estrutura de **JET_TABLECREATE3** é usada pela função [JetCreateTableColumnIndex3](./jetcreatetablecolumnindex3-function.md) .
 
-A estrutura de **JET_TABLECREATE3** foi introduzida no sistema operacional Windows 7.
+a estrutura de **JET_TABLECREATE3** foi introduzida no sistema operacional Windows 7.
 
 ``` cpp
 typedef struct tagJET_TABLECREATE3 {
@@ -245,19 +245,19 @@ A contagem de objetos criados é igual à soma de colunas, tabelas e índices cr
 <tbody>
 <tr class="odd">
 <td><p><strong>Cliente</strong></p></td>
-<td><p>Requer o Windows Vista ou o Windows XP.</p></td>
+<td><p>Requer Windows Vista ou Windows XP.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Servidor</strong></p></td>
-<td><p>Requer o Windows Server 2008 ou o Windows Server 2003.</p></td>
+<td><p>Requer Windows Server 2008 ou Windows Server 2003.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Cabeçalho</strong></p></td>
-<td><p>Declarado em ESENT. h.</p></td>
+<td><p>Declarado em Esent.h.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Unicode</strong></p></td>
-<td><p>Implementado como <strong>JET_TABLECREATE3_W</strong> (Unicode) e <strong>JET_TABLECREATE3_A</strong> (ANSI).</p></td>
+<td><p>Implementado como <strong>JET_TABLECREATE3_W</strong> (Unicode) <strong>e JET_TABLECREATE3_A</strong> (ANSI).</p></td>
 </tr>
 </tbody>
 </table>

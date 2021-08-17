@@ -1,9 +1,9 @@
 ---
-title: Estrutura de WINBIO_BDB_ANSI_381_HEADER (WinBio \_ Types. h)
-description: Especifica informações sobre uma série de exemplos de impressão digital ou Palm.
+title: WINBIO_BDB_ANSI_381_HEADER estrutura (Tipos \_ winbio.h)
+description: Especifica informações sobre uma série de amostras de impressão digital ou de mão.
 ms.assetid: 8b0caa50-9bba-45c4-b4bf-514540894793
 keywords:
-- API de Windows Biometric Framework de estrutura de WINBIO_BDB_ANSI_381_HEADER
+- WINBIO_BDB_ANSI_381_HEADER estrutura Windows API do Biometric Framework
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9da04643bbdff273a2594394011ba46c16bfa29d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 3bc9eee5d3ca99799c76b849e7b990eee2b94c61309c4d729f736ad33a00eecc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105811070"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118911274"
 ---
-# <a name="winbio_bdb_ansi_381_header-structure"></a>\_Estrutura de cabeçalho WINBIO BdB \_ ANSI \_ 381 \_
+# <a name="winbio_bdb_ansi_381_header-structure"></a>Estrutura DE \_ HEADER WINBIO BDB \_ ANSI \_ 381 \_
 
-A estrutura de **\_ cabeçalho WINBIO BDB \_ ANSI \_ 381 \_** especifica informações sobre uma série de exemplos de impressão digital ou Palm.
+A **estrutura DE HEADER DO WINBIO \_ BDB \_ ANSI \_ 381 \_** especifica informações sobre uma série de amostras de impressão digital ou de coquelinha.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -54,10 +54,10 @@ typedef struct _WINBIO_BDB_ANSI_381_HEADER {
 
 <dl> <dt>
 
-**RecordLength**
+**Recordlength**
 </dt> <dd>
 
-O tamanho, em bytes, dessa estrutura mais o tamanho de todas as estruturas de [**\_ registro WINBIO BDB \_ ANSI \_ 381 \_**](winbio-bdb-ansi-381-record.md) para as amostras de impressão digital ou Palm capturadas de um usuário final. Somente os seis bytes baixos são válidos.
+O tamanho, em bytes, dessa estrutura mais o tamanho de todas as estruturas [**WINBIO \_ BDB \_ ANSI \_ 381 \_ RECORD**](winbio-bdb-ansi-381-record.md) para a impressão digital ou amostras de mão capturadas de um usuário final. Somente os seis bytes baixos são válidos.
 
 </dd> <dt>
 
@@ -78,7 +78,7 @@ Especifica o número de versão. Atualmente, isso deve ser 0x30313000 que corres
 **ProductId**
 </dt> <dd>
 
-Uma estrutura de [**\_ \_ formato registrada WINBIO**](winbio-registered-format.md) que contém o formato de dados registrado como um par de proprietário/tipo.
+Uma [**estrutura WINBIO \_ REGISTERED \_ FORMAT**](winbio-registered-format.md) que contém o formato de dados registrado como um par proprietário/tipo.
 
 </dd> <dt>
 
@@ -113,21 +113,21 @@ Especifica a resolução vertical da verificação.
 **HorizontalImageResolution**
 </dt> <dd>
 
-Especifica a resolução horizontal da imagem de impressão digital ou Palm capturada.
+Especifica a resolução horizontal da impressão digital capturada ou da imagem de mão.
 
 </dd> <dt>
 
 **VerticalImageResolution**
 </dt> <dd>
 
-Especifica a resolução vertical da imagem de impressão digital ou Palm capturada.
+Especifica a resolução vertical da impressão digital capturada ou da imagem de mão.
 
 </dd> <dt>
 
 **ElementCount**
 </dt> <dd>
 
-Número de registros de dedos ou de Palm nesta estrutura.
+Número de registros de dedo ou de mão nessa estrutura.
 
 </dd> <dt>
 
@@ -141,14 +141,14 @@ Contém a unidade de medida, 1 para polegadas e 2 para centímetros.
 **PixelDepth**
 </dt> <dd>
 
-Especifica o número de bits em um pixel. Pode ser de 1 a 16 bits por pixel para cor.
+Especifica o número de bits em um pixel. Isso pode ser de 1 a 16 bits por pixel para cor.
 
 </dd> <dt>
 
 **ImageCompressionAlg**
 </dt> <dd>
 
-Especifica o algoritmo usado para compactar a imagem de dedo ou Palm.
+Especifica o algoritmo usado para compactar a imagem do dedo ou da mão.
 
 </dd> <dt>
 
@@ -161,9 +161,9 @@ Especifica o algoritmo usado para compactar a imagem de dedo ou Palm.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>                                                                    |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008 R2\]<br/>                                                       |
-| parâmetro<br/>                   | <dl> <dt>WinBio \_ Types. h (inclui WinBio. h)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 7 \[ aplicativos da área de trabalho\]<br/>                                                                    |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho do Server 2008 R2 \[\]<br/>                                                       |
+| parâmetro<br/>                   | <dl> <dt>Winbio \_ types.h (inclua Winbio.h)</dt> </dl> |
 
 
 
