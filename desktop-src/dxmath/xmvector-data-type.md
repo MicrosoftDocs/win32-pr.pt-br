@@ -1,39 +1,39 @@
 ---
-description: Um tipo portátil usado para representar um vetor de ponto flutuante de 4 32 bits ou componentes inteiros, cada um alinhado de forma ideal e mapeado para um registro de vetor de hardware.
+description: Um tipo portátil usado para representar um vetor de quatro componentes inteiros ou de ponto flutuante de 32 bits, cada um alinhado de forma ideal e mapeado para um registro de vetor de hardware.
 ms.assetid: 1a044094-444d-e787-fa6a-76e88531aef1
-title: Tipo de dados XMVECTOR (DirectXMath. h)
+title: Tipo de dados XMVECTOR (DirectXMath.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c62cab01098cd95f904ac2e2ee33d420309e8e99
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f0a65c7da346163c3cbfaab7c68982f56eb6c424b7f74a3ec01c754eb4104a5e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105765673"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120094476"
 ---
 # <a name="xmvector-data-type"></a>Tipo de dados XMVECTOR
 
-Um tipo portátil usado para representar um vetor de ponto flutuante de 4 32 bits ou componentes inteiros, cada um alinhado de forma ideal e mapeado para um registro de vetor de hardware.
+Um tipo portátil usado para representar um vetor de quatro componentes inteiros ou de ponto flutuante de 32 bits, cada um alinhado de forma ideal e mapeado para um registro de vetor de hardware.
 
 ## <a name="remarks"></a>Comentários
 
-Para obter uma lista de funcionalidades adicionais, como construtores e operadores, disponíveis usando `XMVECTOR` ao programar em C++, consulte [extensões de XMVECTOR](ovw-xmvector-extensions.md).
+Para obter uma lista de funcionalidades adicionais, como construtores e operadores, disponíveis ao programar em `XMVECTOR` C++, consulte [Extensões XMVECTOR](ovw-xmvector-extensions.md).
 
-Na biblioteca DirectXMath, para dar suporte total à portabilidade e otimização, `XMVECTOR` é, por design, um tipo opaco. A implementação real do `XMVECTOR` é dependente da plataforma.
+Na Biblioteca DirectXMath, para dar suporte completo à portabilidade e à otimização, `XMVECTOR` é, por design, um tipo opaco. A implementação real de `XMVECTOR` depende da plataforma.
 
-Em geral, o código não deve contar com as especificidades de uma determinada implementação específica da plataforma do `XMVECTOR` . Implementações específicas da plataforma têm estas características:
+Em geral, o código não deve depender das especificações de qualquer implementação específica da plataforma específica de `XMVECTOR` . Implementações específicas da plataforma têm estas características:
 
 -   Eles não são portáteis.
--   Eles podem ser alterados entre as versões.
--   O uso incriterioso de detalhes de implementação pode ser inferior.
+-   Eles podem mudar entre as versões.
+-   O uso indevido de detalhes de implementação pode ser abaixo do ideal.
 
-Os desenvolvedores devem usar as funções [acessador](ovw-xnamath-reference-functions-accessors.md), [carga](ovw-xnamath-reference-functions-load.md)e [armazenamento](ovw-xnamath-reference-functions-storage.md) da biblioteca DirectXMath para obter e definir os vetores e as [funções de vetor 4D da biblioteca DirectXMath](ovw-xnamath-reference-functions-vector4.md) para manipulá-los.
+Os desenvolvedores devem usar o acessador [](ovw-xnamath-reference-functions-load.md)da [](ovw-xnamath-reference-functions-storage.md) Biblioteca DirectXMath, [](ovw-xnamath-reference-functions-accessors.md)carregar e armazenar funções para obter e definir os vetores e as Funções de Vetor 4D da Biblioteca [DirectXMath](ovw-xnamath-reference-functions-vector4.md) para manipulá-los.
 
-Para projetos que precisam de informações detalhadas sobre como implementar `XMVECTOR` em diferentes plataformas, consulte [elementos internos da biblioteca](pg-xnamath-internals.md).
+Para projetos que precisam de informações detalhadas sobre como implementar em `XMVECTOR` diferentes plataformas, consulte [Biblioteca Internas](pg-xnamath-internals.md).
 
 ### <a name="compiler-aliases"></a>Aliases do compilador
 
-O arquivo de cabeçalho DirectXMath. h usa aliases para o `XMVECTOR` objeto, especificamente **CXMVECTOR** e **FXMVECTOR**. O cabeçalho usa esses aliases para obedecer às convenções de chamada internas ideais de compiladores diferentes. Para a maioria dos projetos que usam DirectXMath, é suficiente tratar esses tipos como um alias exato para `XMVECTOR` .
+O arquivo de header DirectXMath.h usa aliases para o objeto , especificamente `XMVECTOR` **CXMVECTOR** e **FXMVECTOR**. O header usa esses aliases para atender às convenções de chamada em linha ideais de compiladores diferentes. Para a maioria dos projetos que usam o DirectXMath, é suficiente tratar esses tipos como um alias exato para `XMVECTOR` .
 
 Por exemplo:
 
@@ -47,15 +47,15 @@ typedef const XMVECTOR CXMVECTOR;
 
 
 
-Para projetos que precisam de informações detalhadas sobre como diferentes plataformas manipulam suas convenções de chamada, consulte [elementos internos da biblioteca](pg-xnamath-internals.md).
+Para projetos que precisam de informações detalhadas sobre como diferentes plataformas lidam com suas convenções de chamada, consulte [Biblioteca Internas](pg-xnamath-internals.md).
 
-Para XNAMATH 2. x, o `XMVECTOR` tipo de dados tem os membros do elemento. x,. y,. z,. e. w, o que geralmente causa baixo desempenho. O uso do tipo XM \_ estrito \_ VECTOR4 fornece uma aceitação da definição de DirectXMath de um tipo de dados opaco.
+Para XNAMATH 2.x, o tipo de dados tem membros de elemento `XMVECTOR` .x, .y, .z, .e .w, o que geralmente causa baixo desempenho. O uso do tipo VECTOR4 STRICT XM fornece uma aceitação da definição \_ \_ directXMath de um tipo de dados opaco.
 
-**Namespace**: usar DirectX
+**Namespace**: usar o DirectX
 
 ### <a name="platform-requirements"></a>Requisitos de plataforma
 
-Microsoft Visual Studio 2010 ou Microsoft Visual Studio 2012 com o SDK do Windows para Windows 8. Com suporte para aplicativos de área de trabalho Win32, aplicativos da Windows Store e aplicativos Windows Phone 8.
+Microsoft Visual Studio 2010 ou Microsoft Visual Studio 2012 com o SDK do Windows para Windows 8. Com suporte para aplicativos da área de trabalho win32, aplicativos Windows Store e Windows Phone 8 aplicativos.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -63,7 +63,7 @@ Microsoft Visual Studio 2010 ou Microsoft Visual Studio 2012 com o SDK do Window
 
 | Requisito | Valor |
 |-------------------|------------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>DirectXMath. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>DirectXMath.h</dt> </dl> |
 
 
 

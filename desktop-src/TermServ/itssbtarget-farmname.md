@@ -24,12 +24,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b94f86b2cf0ec257be9fe9b801e6fceae364a46e
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: fecf452bd6f879773a3fe200f721afbda5d29f1c41ae816846c261608d38ddca
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "103638508"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119138289"
 ---
 # <a name="itssbtargetfarmname-property"></a>Propriedade ITsSbTarget:: Farmname
 
@@ -83,7 +83,7 @@ Uma variável **BSTR** que contém o nome do farm.
 <td>IID_ITsSbTarget é definido como:
 <ul>
 <li>16616ECC-272D-411D-B324-126893033856</li>
-<li>e85e10ea-db0b-4752-b456-5fd5840901c0 no Windows Server 2008 R2</li>
+<li>e85e10ea-db0b-4752-b456-5fd5840901c0 no servidor Windows 2008 R2</li>
 </ul></td>
 </tr>
 </tbody>

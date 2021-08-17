@@ -1,5 +1,5 @@
 ---
-description: 'Esta seção sobre diretrizes de aplicativo para associações de arquivos e programas padrão é organizada da seguinte forma:'
+description: 'Esta seção sobre as diretrizes de aplicativo para associações de arquivos e programas padrão é organizada da seguinte maneira:'
 title: Diretrizes para associações de arquivos e programas padrão
 ms.topic: article
 ms.date: 05/31/2018
@@ -18,20 +18,20 @@ ms.locfileid: "119338206"
 ---
 # <a name="guidelines-for-file-associations-and-default-programs"></a>Diretrizes para associações de arquivos e programas padrão
 
-Esta seção sobre diretrizes de aplicativo para associações de arquivos e programas padrão é organizada da seguinte forma:
+Esta seção sobre as diretrizes de aplicativo para associações de arquivos e programas padrão é organizada da seguinte maneira:
 
--   [Práticas recomendadas para associações de arquivos](fa-best-practices.md)
+-   [Práticas recomendadas para associações de arquivo](fa-best-practices.md)
 -   [Exemplo de associação de arquivo](fa-sample-scenarios.md)
 -   [Gerenciando aplicativos padrão](vista-managing-defaults.md)
 -   [Programas padrão](default-programs.md)
--   [Definir acesso ao programa e padrões de computador (SPAD)](cpl-setprogramaccess.md)
+-   [Definir o acesso do programa e padrões do computador (SPAD)](cpl-setprogramaccess.md)
 
 ## <a name="additional-resources"></a>Recursos adicionais
 
-Para uma experiência conceitual relacionada, consulte os seguintes tópicos:
+Para obter informações conceituais relacionadas, consulte os seguintes tópicos:
 
--   Para obter informações sobre o registro de aplicativo por meio Painel de Controle do registro que não é específico para os itens Definir padrões de computador de acesso ao programa (SPAD) ou Definir seus programas padrão (EIP), consulte Registro de aplicativo [.](app-registration.md)
--   Para obter informações adicionais, consulte [Tipos de arquivo e associações de arquivo](fa-intro.md).
+-   Para obter informações sobre o registro do aplicativo por meio do registro que não é específico para os itens definir padrões do computador de acesso do programa (SPAD) ou definir seus programas padrão (SYDP) do painel de controle, consulte [registro do aplicativo](app-registration.md).
+-   Para obter mais informações, consulte [tipos de arquivo e associações de arquivo](fa-intro.md).
 
  
 

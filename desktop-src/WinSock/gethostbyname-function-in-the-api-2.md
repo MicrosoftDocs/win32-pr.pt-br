@@ -4,12 +4,12 @@ ms.assetid: 015637ed-7a3e-49eb-96ef-8fe82d2902f5
 title: Função gethostbyname na API
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dc3881897a0c971c48ca9a02e6205ec1cae0476f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2a63bf7884cd170721de9b7d5009ed53c7bcb60bb36869986862f5e81e03215b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104090392"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119132299"
 ---
 # <a name="gethostbyname-function-in-the-api"></a>Função gethostbyname na API
 
@@ -28,7 +28,7 @@ A função [**gethostbyname**](/windows/win32/api/wsipv6ok/nf-wsipv6ok-gethostby
 
 <dl> <dt>
 
-[Resolução de nomes compatível com TCP/IP na API do Windows Sockets 1,1](compatible-name-resolution-for-tcp-ip-in-the-windows-sockets-1-1-api-2.md)
+[resolução de nome compatível para TCP/IP na API do Windows sockets 1,1](compatible-name-resolution-for-tcp-ip-in-the-windows-sockets-1-1-api-2.md)
 </dt> <dt>
 
 [Resolução de nomes independente de protocolo](protocol-independent-name-resolution-2.md)

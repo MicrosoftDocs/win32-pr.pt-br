@@ -1,19 +1,19 @@
 ---
-title: Exemplo de código do C/C++ iniciando uma tarefa
-description: Este exemplo tenta executar uma tarefa existente. Este exemplo supõe que a tarefa e a tarefa de teste já existam no computador local.
+title: Exemplo de código C/C++ iniciando uma tarefa
+description: Este exemplo tenta executar uma tarefa existente. Este exemplo presume que a tarefa e a tarefa de teste já existem no computador local.
 ms.assetid: e4f38f8a-3488-4802-913b-f627ecca8bb2
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0c9fa9ba112b642aa5e14abc3b408c1536c527d9
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: e11abcbd4581db306b8ca60f478e9b2927e531b7dd2fd8461742f4dc1c93a169
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104363823"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119139619"
 ---
 # <a name="cc-code-example-starting-a-task"></a>Exemplo de código C/C++: iniciando uma tarefa
 
-Este exemplo tenta executar uma tarefa existente. Este exemplo supõe que a tarefa e a tarefa de teste já existam no computador local.
+Este exemplo tenta executar uma tarefa existente. Este exemplo presume que a tarefa e a tarefa de teste já existem no computador local.
 
 
 ```C++
@@ -101,12 +101,12 @@ int main(int argc, char **argv)
 
 <dl> <dt>
 
-[Exemplos de Agendador de Tarefas 1,0](task-scheduler-1-0-examples.md)
+[Agendador de Tarefas exemplos 1.0](task-scheduler-1-0-examples.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

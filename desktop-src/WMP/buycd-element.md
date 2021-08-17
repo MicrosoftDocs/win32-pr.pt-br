@@ -3,7 +3,7 @@ title: Elemento BuyCD
 description: Observação Esta seção descreve a funcionalidade projetada para uso por lojas online. | Elemento BuyCD
 ms.assetid: 01aaf20a-49ee-420b-a612-f09155390d4a
 keywords:
-- Elemento BuyCD do Windows Media Player
+- Windows Media Player do elemento BuyCD
 topic_type:
 - apiref
 api_name:
@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5ca1ebe4bd85015ca9ce1c0bece24e7dc47ff9fe
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: fc0b2af0f12b06c7d5701db3fcc073d7b7c330e8798408206b64a8b9811f27d0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105760459"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119135839"
 ---
 # <a name="buycd-element"></a>Elemento BuyCD
 
@@ -26,7 +26,7 @@ ms.locfileid: "105760459"
 
  
 
-O elemento **BuyCD** especifica as URLs para páginas da Web que o Windows Media Player exibe quando o usuário opta por fazer uma compra.
+o elemento **BuyCD** especifica as URLs para páginas da web que Windows Media Player são exibidas quando o usuário escolhe fazer uma compra.
 
 ``` syntax
 <BuyCD
@@ -50,14 +50,14 @@ A URL da página da Web que a loja online exibe para oferecer um CD ou DVD para 
 <span id="MediaCenterURL"></span><span id="mediacenterurl"></span><span id="MEDIACENTERURL"></span>**MediaCenterURL**
 </dt> <dd>
 
-A URL da página da Web que a loja online exibe para oferecer um CD ou DVD para compra na atualização do Windows XP Media Center Edition 2004.
+a URL da página da web que a loja online exibe para oferecer um CD ou DVD para compra na atualização do Windows XP Media Center Edition 2004.
 
 </dd> <dt>
 
 <span id="BrowserURL"></span><span id="browserurl"></span><span id="BROWSERURL"></span>**BrowserURL**
 </dt> <dd>
 
-A URL da página da Web que a loja online exibe para oferecer um CD ou DVD para compra em uma janela separada do navegador. Essa URL também é usada pelo Windows XP Service Pack 2 ou posterior para o recurso **comprar para música online** .
+A URL da página da Web que a loja online exibe para oferecer um CD ou DVD para compra em uma janela separada do navegador. essa URL também é usada pelo Windows XP Service Pack 2 ou posterior para o recurso **comprar para música online** .
 
 </dd> </dl>
 
@@ -76,26 +76,26 @@ A URL da página da Web que a loja online exibe para oferecer um CD ou DVD para 
 
 ## <a name="remarks"></a>Comentários
 
-Quando o usuário clica em um botão ou link no Windows Media Player para comprar um CD ou DVD, o Player envia a solicitação de URL para ServiceTask1 com parâmetros anexados usando um separador de cadeia de caracteres de consulta de ponto de interrogação (?). A tabela a seguir detalha os parâmetros enviados com a solicitação de URL. Outros podem estar presentes para fins de compatibilidade herdada.
+quando o usuário clica em um botão ou link em Windows Media Player para comprar um CD ou DVD, o Player envia a solicitação de URL para ServiceTask1 com parâmetros anexados usando um separador de cadeia de caracteres de consulta de ponto de interrogação (?). A tabela a seguir detalha os parâmetros enviados com a solicitação de URL. Outros podem estar presentes para fins de compatibilidade herdada.
 
 
 
 | Nome         | Valor                                                                                                                                                               |
 |--------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| *Álbuns*      | Valor do atributo **WM/campos AlbumTitle** para o item de mídia.                                                                                                        |
+| *Álbum*      | Valor do atributo **WM/campos AlbumTitle** para o item de mídia.                                                                                                        |
 | *Autor*     | Valor do atributo **WM/AlbumArtist** , se houver um, ou o valor do atributo **Author** para o item de mídia.                                         |
-| *GeoId*      | ID da localização geográfica do Windows. A ID de local é especificada pelo usuário na área **local** das configurações de opções regionais e de idiomas no painel de controle. |
-| *locale*     | ID de localidade do Windows Media Player.                                                                                                                                     |
+| *GeoId*      | ID de localização geográfica Windows. A ID de local é especificada pelo usuário na área **local** das configurações de opções regionais e de idiomas no painel de controle. |
+| *locale*     | ID de localidade Windows Media Player.                                                                                                                                     |
 | *Título*      | Valor do atributo de **título** para o item de mídia.                                                                                                                |
 | *UFID*       | Valor do atributo **WM/UniqueFileIdentifier** para o item de mídia.                                                                                              |
-| *UserLocale* | IDENTIFICAÇÃO de localidade do Windows. A localidade é especificada pelo usuário na área **padrões e formatos** das configurações de opções regionais e de idiomas no painel de controle.        |
-| *version*    | Número de versão do Windows Media Player usando o seguinte formato: 10.0. x. xxxx ou 11.0. x. xxxx.                                                                         |
+| *UserLocale* | ID de localidade Windows. A localidade é especificada pelo usuário na área **padrões e formatos** das configurações de opções regionais e de idiomas no painel de controle.        |
+| *version*    | Windows Media Player número de versão usando o seguinte formato: 10.0. x. xxxx ou 11.0. x. xxxx.                                                                         |
 
 
 
  
 
-O Windows XP Media Center Edition 2004 fornece aos usuários uma interface do usuário projetada para ser exibida em uma distância. Você deve criar páginas da Web para que o parâmetro *MediaCenterURL* seja exibido em grandes exibições.
+Windows O XP Media Center Edition 2004 fornece aos usuários uma interface do usuário projetada para ser exibida em uma distância. Você deve criar páginas da Web para que o parâmetro *MediaCenterURL* seja exibido em grandes exibições.
 
 ## <a name="requirements"></a>Requisitos
 

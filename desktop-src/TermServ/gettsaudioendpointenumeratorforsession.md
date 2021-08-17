@@ -14,12 +14,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: d6c09896fc4b35fcb0b6a01a7d592421dd5d5654
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 2f64af1d7e886b418ac87cd360302101a60d746d707652f605a648e9812a5547
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105782881"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119059584"
 ---
 # <a name="gettsaudioendpointenumeratorforsession-callback-function"></a>Função de retorno de chamada GetTSAudioEndpointEnumeratorForSession
 
@@ -55,7 +55,7 @@ O endereço de um ponteiro para uma interface [**IMMDeviceEnumerator**](/windows
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se o método for bem sucedido, ele retornará **S \_ OK**.
 

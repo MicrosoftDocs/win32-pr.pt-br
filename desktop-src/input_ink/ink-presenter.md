@@ -4,12 +4,12 @@ ms.assetid: 8BD52813-3741-4C1F-B62A-B3C366A86362
 title: Apresentador de tinta
 ms.topic: article
 ms.date: 02/03/2020
-ms.openlocfilehash: 9bd9f4c3c98b443110a0a7948075ab836a9493c4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ccd201f39cf232e91c65d8ef15c6ccc0e8202b231818aa50d34d70f780f2d9e1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104170526"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118977016"
 ---
 # <a name="ink-presenter"></a>Apresentador de tinta
 
@@ -19,9 +19,9 @@ As APIs do apresentador de tinta permitem que os aplicativos Microsoft Win32 ger
 >
 > A entrada por tinta padrão (dica de caneta ou dica/botão de borracha) não é modificada com uma unificação secundária, como um botão de rosca de caneta, botão direito do mouse ou semelhante.
 
-Os aplicativos Plataforma Universal do Windows (UWP) usando linguagem XAML (XAML) fornecem essa funcionalidade por meio de um controle [**InkCanvas**](/uwp/api/Windows.UI.Xaml.Controls.InkCanvas) junto com um objeto [**InkPresenter**](/uwp/api/windows.ui.input.inking.inkpresenter) que se conecta à árvore visual [DirectComposition](../directcomp/directcomposition-portal.md) XAML. Para obter mais detalhes, consulte [interações de caneta e](/windows/uwp/design/input/pen-and-stylus-interactions)caneta.
+os aplicativos Plataforma Universal do Windows (UWP) usando linguagem XAML (XAML) fornecem essa funcionalidade por meio de um controle [**InkCanvas**](/uwp/api/Windows.UI.Xaml.Controls.InkCanvas) junto com um objeto [**inkpresenter**](/uwp/api/windows.ui.input.inking.inkpresenter) que se conecta à árvore visual [DirectComposition](../directcomp/directcomposition-portal.md) XAML. Para obter mais detalhes, consulte [interações de caneta e](/windows/uwp/design/input/pen-and-stylus-interactions)caneta.
 
-O [processador de tinta](ink-renderer.md) foi projetado para uso por desenvolvedores de aplicativos universais do Windows interessados em fornecer a funcionalidade [**InkCanvas**](/uwp/api/Windows.UI.Xaml.Controls.InkCanvas) / [**InkPresenter**](/uwp/api/windows.ui.input.inking.inkpresenter) baseada em XAML em aplicativos nativos do Win32.
+o [processador de tinta](ink-renderer.md) foi projetado para ser usado por desenvolvedores de aplicativos universais Windows interessados em fornecer a funcionalidade de [**InkCanvas**](/uwp/api/Windows.UI.Xaml.Controls.InkCanvas) / [**inkpresenter**](/uwp/api/windows.ui.input.inking.inkpresenter) baseada em XAML em aplicativos nativos do Win32.
 
 ## <a name="in-this-section"></a>Nesta seção
 

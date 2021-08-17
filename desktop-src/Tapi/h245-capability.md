@@ -4,16 +4,16 @@ ms.assetid: 76aeb3a1-3233-4425-b9db-efacbedc309e
 title: Enumeração de H245_CAPABILITY (H323priv. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ae7a6f81f87480f221f87680d9cf086120deb2de
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 1666eb918748696263247f00f0d0e17ac9424e6c4bf85c5574f866bb10e28be1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105792629"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119140549"
 ---
 # <a name="h245_capability-enumeration"></a>\_Enumeração de recursos H245
 
-\[**H245 \_ A funcionalidade** não está disponível para uso no Windows Vista, no Windows Server 2008 e em versões subsequentes do sistema operacional. A API do cliente RTC fornece funcionalidade semelhante.\]
+\[**H245 \_ a funcionalidade** não está disponível para uso no Windows Vista, no Windows Server 2008 e em versões subsequentes do sistema operacional. A API do cliente RTC fornece funcionalidade semelhante.\]
 
 A enumeração de **\_ recursos H245** descreve o suporte a formatos de áudio e vídeo.
 
@@ -65,7 +65,7 @@ Há suporte para o protocolo de vídeo H. 263.
 | Requisito | Valor |
 |-------------------------|---------------------------------------------------------------------------------------|
 | Versão da TAPI<br/> | Requer TAPI 3,0 ou posterior<br/>                                                 |
-| parâmetro<br/>       | <dl> <dt>H323priv. h</dt> </dl> |
+| Cabeçalho<br/>       | <dl> <dt>H323priv. h</dt> </dl> |
 
 
 

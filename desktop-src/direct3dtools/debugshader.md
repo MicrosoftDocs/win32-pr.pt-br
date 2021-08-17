@@ -17,12 +17,12 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 4103d62a52c08fac6ed775b8f1eb19e358789c9c
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 5a87947d6d3eae5191b212610af66728fa0a80fbcb1699cc83e68adf22dd9496
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104456570"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120095106"
 ---
 # <a name="span-idvspixenginedebugshaderspandebugshader-structure"></a><span id="vspixengine.debugshader"></span>Estrutura DebugShader
 
@@ -37,18 +37,18 @@ Representa informações sobre um sombreador no depurador.
 
 ## <a name="members"></a>Membros
 
-**sourceFile**  
-Uma cadeia de caracteres COM que contém o caminho de arquivo de origem associado.
+**Sourcefile**  
+Uma cadeia de caracteres COM que contém o caminho do arquivo de origem associado.
 
-**lineNumber**  
-O número da linha associada.
+**Linenumber**  
+O número de linha associado.
 
-**processId**  
-A ID do processo associado.
+**Processid**  
+A ID de processo associada.
 
 ## <a name="requirements"></a>Requisitos
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>parâmetro</p></td><td>Vspixengine. h</td></tr></tbody></table>
+<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Cabeçalho</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
  
 

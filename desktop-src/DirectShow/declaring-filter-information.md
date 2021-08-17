@@ -4,32 +4,32 @@ ms.assetid: ed3c1d44-ccef-4dde-819b-f5d4d3be6d1e
 title: Declarando informações de filtro
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8975217f1b7746b26dc5dd16ce9f4e7f694f44bc
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 89c22fb13b524bed56e8cc9d51e573f2729f843e56565db2793d1a8b4568af52
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103646127"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118953195"
 ---
 # <a name="declaring-filter-information"></a>Declarando informações de filtro
 
-A primeira etapa é declarar as informações de filtro, se necessário. O DirectShow define as seguintes estruturas para descrever filtros, pins e tipos de mídia:
+A primeira etapa é declarar as informações de filtro, se necessário. DirectShow define as seguintes estruturas para descrever filtros, pinos e tipos de mídia:
 
 
 
 | Estrutura                                               | Descrição             |
 |---------------------------------------------------------|-------------------------|
-| [**filtro de AMOVIESETUP \_**](amoviesetup-filter.md)       | Descreve um filtro.     |
-| [**AMOVIESETUP \_ PIN**](amoviesetup-pin.md)             | Descreve um PIN.        |
-| [**\_MediaType AMOVIESETUP**](amoviesetup-mediatype.md) | Descreve um tipo de mídia. |
+| [**FILTRO \_ AMOVIESETUP**](amoviesetup-filter.md)       | Descreve um filtro.     |
+| [**AMOVIESETUP \_ PIN**](amoviesetup-pin.md)             | Descreve um pin.        |
+| [**AMOVIESETUP \_ MEDIATYPE**](amoviesetup-mediatype.md) | Descreve um tipo de mídia. |
 
 
 
  
 
-Essas estruturas são aninhadas. A estrutura do **\_ filtro AMOVEIESETUP** tem um ponteiro para uma matriz de estruturas de **\_ PIN AMOVIESETUP** , e cada uma delas tem um ponteiro para uma matriz de estruturas **AMOVEIESETUP \_ MediaType** . Juntas, essas estruturas fornecem informações suficientes para a interface [**IFilterMapper2**](/windows/desktop/api/Strmif/nn-strmif-ifiltermapper2) localizar um filtro. Elas não são uma descrição completa de um filtro. Por exemplo, se o filtro criar várias instâncias do mesmo PIN, você deverá declarar apenas uma estrutura [**de \_ PIN AMOVIESETUP**](amoviesetup-pin.md) para esse PIN. Além disso, um filtro não é necessário para dar suporte a todas as combinações de tipos de mídia que ele registra; Nem é necessário registrar todos os tipos de mídia aos quais ele dá suporte.
+Essas estruturas são aninhadas. A **estrutura AMOVEIESETUP \_ FILTER** tem um ponteiro para uma matriz de estruturas DE **\_ PIN AMOVIESETUP** e cada uma delas tem um ponteiro para uma matriz de estruturas **AMOVEIESETUP \_ MEDIATYPE.** Juntas, essas estruturas fornecem informações suficientes para a interface [**IFilterMapper2**](/windows/desktop/api/Strmif/nn-strmif-ifiltermapper2) localizar um filtro. Eles não são uma descrição completa de um filtro. Por exemplo, se o filtro criar várias instâncias do mesmo pin, você deverá declarar apenas uma estrutura [**AMOVIESETUP \_ PIN**](amoviesetup-pin.md) para esse pino. Além disso, um filtro não é necessário para dar suporte a todas as combinações de tipos de mídia que ele registra; nem é necessário para registrar todos os tipos de mídia com suporte.
 
-Declare as estruturas de configuração como variáveis globais dentro de sua DLL. O exemplo a seguir mostra um filtro com um pino de saída:
+Declare as estruturas de configuração como variáveis globais em sua DLL. O exemplo a seguir mostra um filtro com um pino de saída:
 
 
 ```C++
@@ -63,13 +63,13 @@ AMOVIESETUP_FILTER sudFilterReg = {
 
 
 
-O nome do filtro é declarado como uma variável global estática, pois ele será usado novamente em outro lugar.
+O nome do filtro é declarado como uma variável global estática, porque ele será usado novamente em outro lugar.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[Como registrar filtros do DirectShow](how-to-register-directshow-filters.md)
+[Como registrar filtros DirectShow dados](how-to-register-directshow-filters.md)
 </dt> </dl>
 
  

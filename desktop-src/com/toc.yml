@@ -1,13 +1,13 @@
 - name: COM (Component Object Model)
   href: component-object-model--com--portal.md
   items:
-    - name: Conceitos básicos de COM
+    - name: Conceitos básicos do COM
       href: com-fundamentals.md
       items:
         - name: Guia
           href: guide.md
           items:
-            - name: O que há de novo no COM
+            - name: Novidades no COM
               href: what-s-new-in-com.md
               items:
                 - name: Alterações no COM no Windows 7
@@ -17,7 +17,7 @@
             - name: O Component Object Model
               href: the-component-object-model.md
               items:
-                - name: Visão geral técnica COM
+                - name: Visão geral técnica do COM
                   href: com-technical-overview.md
                 - name: Objetos e interfaces COM
                   href: com-objects-and-interfaces.md
@@ -26,23 +26,23 @@
                       href: interfaces-and-interface-implementations.md
                     - name: Ponteiros de interface e interfaces
                       href: interface-pointers-and-interfaces.md
-                    - name: IUnknown e herança de interface
+                    - name: Herança de interface e IUnknown
                       href: iunknown-and-interface-inheritance.md
                 - name: Usando e implementando IUnknown
                   href: using-and-implementing-iunknown.md
                   items:
                     - name: 'QueryInterface: navegando em um objeto'
                       href: queryinterface--navigating-in-an-object.md
-                    - name: Regras para implementação de QueryInterface
+                    - name: Regras para implementar QueryInterface
                       href: rules-for-implementing-queryinterface.md
-                    - name: Gerenciando tempos de vida de objeto por meio de contagem de referência
+                    - name: Gerenciando os tempos de vida do objeto por meio da contagem de referência
                       href: managing-object-lifetimes-through-reference-counting.md
                       items:
                         - name: Implementando a contagem de referência
                           href: implementing-reference-counting.md
                         - name: Regras para gerenciar contagens de referência
                           href: rules-for-managing-reference-counts.md
-                - name: Reutilizando objetos
+                - name: Reutilando objetos
                   href: reusing-objects.md
                   items:
                     - name: Contenção/delegação
@@ -51,7 +51,7 @@
                       href: aggregation.md
                 - name: A biblioteca COM
                   href: the-com-library.md
-                - name: Gerenciando a alocação de memória
+                - name: Gerenciando alocação de memória
                   href: managing-memory-allocation.md
                   items:
                     - name: O alocador de memória OLE
@@ -60,20 +60,20 @@
                       href: memory-management-rules.md
                     - name: Depurando alocações de memória
                       href: debugging-memory-allocations.md
-            - name: 'Processos, threads e Apartments'
+            - name: 'Processos, threads e apartments'
               href: processes--threads--and-apartments.md
               items:
-                - name: Escolhendo o modelo de Threading
+                - name: Escolhendo o modelo de threading
                   href: choosing-the-threading-model.md
                 - name: Single-Threaded Apartments
                   href: single-threaded-apartments.md
-                - name: Apartments multithread
+                - name: Multithreaded Apartments
                   href: multithreaded-apartments.md
-                - name: Comunicação Single-Threaded e multithread
+                - name: Single-Threaded comunicação multithread
                   href: single-threaded-and-multithreaded-communication.md
-                - name: Problemas de Threading do In-Process Server
+                - name: In-Process threading do servidor
                   href: in-process-server-threading-issues.md
-                - name: Acessando interfaces em Apartments
+                - name: Acessando interfaces entre apartments
                   href: accessing-interfaces-across-apartments.md
                   items:
                     - name: Criando a tabela de interface global
@@ -83,12 +83,12 @@
             - name: Clientes e servidores COM
               href: com-clients-and-servers.md
               items:
-                - name: Obtendo um ponteiro para um objeto
+                - name: Obter um ponteiro para um objeto
                   href: getting-a-pointer-to-an-object.md
                 - name: Criando um objeto por meio de um objeto de classe
                   href: creating-an-object-through-a-class-object.md
                   items:
-                    - name: Objetos de classe COM e CLSIDs
+                    - name: CLSIDs e objetos de classe COM
                       href: com-class-objects-and-clsids.md
                     - name: Localizando um objeto remoto
                       href: locating-a-remote-object.md
@@ -99,7 +99,7 @@
                   items:
                     - name: Implementando IClassFactory
                       href: implementing-iclassfactory.md
-                    - name: Licenciamento e IClassFactory2
+                    - name: Licensing e IClassFactory2
                       href: licensing-and-iclassfactory2.md
                     - name: Registrando servidores COM
                       href: registering-com-servers.md
@@ -108,20 +108,20 @@
                           href: registering-a-class-at-installation.md
                         - name: Registrando um servidor EXE em execução
                           href: registering-a-running-exe-server.md
-                        - name: Registrando objetos no corrompidos
+                        - name: Registrando objetos no ROT
                           href: registering-objects-in-the-rot.md
                         - name: Self-Registration
                           href: self-registration.md
                         - name: Instalando como um aplicativo de serviço
                           href: installing-as-a-service-application.md
-                    - name: Auxiliares de implementação do servidor fora do processo
+                    - name: Auxiliares de implementação de servidor fora de processo
                       href: out-of-process-server-implementation-helpers.md
                     - name: Criação e otimizações de GUID
                       href: guid-creation-and-optimizations.md
-                - name: Estado de objeto persistente
+                - name: Estado do objeto persistente
                   href: persistent-object-state.md
                   items:
-                    - name: Interfaces de objeto persistentes
+                    - name: Interfaces de objeto persistente
                       href: persistent-object-interfaces.md
                     - name: Inicializando objetos persistentes
                       href: initializing-persistent-objects.md
@@ -134,19 +134,19 @@
                       href: marshaling-details.md
                     - name: Proxy
                       href: proxy.md
-                    - name: Gerenciador
+                    - name: Esboço
                       href: stub.md
                     - name: Canal
                       href: channel.md
-                    - name: RPC da Microsoft
+                    - name: Microsoft RPC
                       href: microsoft-rpc.md
-            - name: Fazendo e processando chamadas assíncronas
+            - name: Fazendo e izando chamadas assíncronas
               href: making-and-processing-asynchronous-calls.md
               items:
                 - name: Fazendo uma chamada assíncrona
                   href: making-an-asynchronous-call.md
                   items:
-                    - name: Client Security durante uma chamada assíncrona
+                    - name: Segurança do cliente durante uma chamada assíncrona
                       href: client-security-during-an-asynchronous-call.md
                     - name: Representação e chamadas assíncronas
                       href: impersonation-and-asynchronous-calls.md
@@ -154,16 +154,16 @@
                   href: canceling-an-asynchronous-call.md
                 - name: Cancelando chamadas de método
                   href: canceling-method-calls.md
-                - name: Sincronização de chamadas
+                - name: Sincronização de chamada
                   href: call-synchronization.md
             - name: Definição de interfaces COM
               href: defining-com-interfaces.md
               items:
-                - name: Empacotamento de interface
+                - name: Interface Marshaling
                   href: interface-marshaling.md
                 - name: Anatomia de um arquivo IDL
                   href: anatomy-of-an-idl-file.md
-                - name: Compilação de MIDL
+                - name: Compilação MIDL
                   href: midl-compilation.md
                 - name: Opções do compilador MIDL
                   href: midl-compiler-options.md
@@ -181,21 +181,21 @@
             - name: Registrando aplicativos COM
               href: registering-com-applications.md
               items:
-                - name: Hierarquia do registro
+                - name: Hierarquia do Registro
                   href: registry-hierarchy.md
                 - name: Classes e servidores
                   href: classes-and-servers.md
                 - name: Classificando componentes
                   href: classifying-components.md
-                - name: Usando OleView
+                - name: Usando o OleView
                   href: using-oleview.md
                 - name: Registrando componentes
                   href: registering-components.md
-                - name: Verificando registro
+                - name: Verificando o registro
                   href: checking-registration.md
                 - name: Tipos de usuário desconhecidos
                   href: unknown-user-types.md
-                - name: Chaves do registro COM
+                - name: Chaves do Registro COM
                   href: com-registry-keys.md
             - name: Segurança em COM
               href: security-in-com.md
@@ -218,7 +218,7 @@
                           href: impersonation.md
                         - name: Níveis de representação
                           href: impersonation-levels.md
-                        - name: Encobrimento
+                        - name: Camuflagem
                           href: cloaking.md
                     - name: Identidade do Aplicativo
                       href: application-identity.md
@@ -238,10 +238,10 @@
                 - name: Definindo a segurança para aplicativos COM
                   href: setting-security-for-com-applications.md
                   items:
-                    - name: Modificando os padrões de segurança de um computador
+                    - name: Modificando os padrões de segurança para um computador
                       href: modifying-the-security-defaults-for-a-computer.md
                       items:
-                        - name: Valores de registro para segurança de System-Wide
+                        - name: Valores do Registro para System-Wide Segurança
                           href: registry-values-for-machine-wide-security.md
                         - name: Definindo System-Wide segurança usando DCOMCNFG
                           href: setting-machine-wide-security-using-dcomcnfg.md
@@ -252,39 +252,39 @@
                           href: setting-processwide-security-using-dcomcnfg.md
                         - name: Definindo Process-Wide segurança com CoInitializeSecurity
                           href: setting-processwide-security-with-coinitializesecurity.md
-                        - name: Configurando a segurança do Process-Wide por meio do registro
+                        - name: Definindo Process-Wide segurança por meio do Registro
                           href: setting-processwide-security-through-the-registry.md
                     - name: Definindo a segurança no nível de proxy da interface
                       href: setting-security-at-the-interface-proxy-level.md
                 - name: Habilitando a segurança COM usando DCOMCNFG
                   href: enabling-com-security-using-dcomcnfg.md
-                - name: Desativando a segurança
+                - name: Como desligar a segurança
                   href: turning-off-security.md
                   items:
-                    - name: Desativando a segurança de ativação
+                    - name: Como desligar a segurança de ativação
                       href: turning-off-activation-security.md
-                    - name: Desativando a segurança da chamada
+                    - name: Como desligar a segurança de chamada
                       href: turning-off-call-security.md
-                - name: Segurança de Server-Side
+                - name: Server-Side segurança
                   href: server-side-security.md
-                - name: Negociação em cobertura de segurança
+                - name: Negociação de garantia de segurança
                   href: security-blanket-negotiation.md
-                - name: Pacotes de segurança e COM
+                - name: Pacotes COM e de segurança
                   href: com-and-security-packages.md
                   items:
-                    - name: NTLMSSP
+                    - name: Ntlmssp
                       href: ntlmssp.md
-                    - name: Protocolo Kerberos V5
+                    - name: Protocolo Kerberos v5
                       href: kerberos-v5-protocol.md
                     - name: SChannel
                       href: schannel.md
                     - name: Snego
                       href: snego.md
-                - name: Aprimoramentos de segurança DCOM no Windows XP Service Pack 2 e no Windows Server 2003 Service Pack 1
+                - name: Aprimoramentos de segurança do DCOM no Windows XP Service Pack 2 e Windows Server 2003 Service Pack 1
                   href: dcom-security-enhancements-in-windows-xp-service-pack-2-and-windows-server-2003-service-pack-1.md
                 - name: Listas de controle de acesso para COM
                   href: access-control-lists-for-com.md
-                - name: O moniker de elevação COM
+                - name: O Moniker de Elevação COM
                   href: the-com-elevation-moniker.md
             - name: Tratamento de erro em COM
               href: error-handling-in-com.md
@@ -293,7 +293,7 @@
                   href: structure-of-com-error-codes.md
                 - name: Códigos em FACILITY_ITF
                   href: codes-in-facility-itf.md
-                - name: Usando macros para tratamento de erro
+                - name: Usando macros para tratamento de erros
                   href: using-macros-for-error-handling.md
                 - name: Tratamento de erro COM em Java e Visual Basic
                   href: com-error-handling-in-java-and-visual-basic.md
@@ -304,19 +304,19 @@
                       href: retrieving-error-information.md
                 - name: Estratégias de tratamento de erros
                   href: error-handling-strategies.md
-                - name: Manipulando erros desconhecidos
+                - name: Tratamento de erros desconhecidos
                   href: handling-unknown-errors.md
             - name: Manipuladores COM
               href: com-handlers.md
               items:
                 - name: O manipulador OLE
                   href: the-ole-handler.md
-                - name: O manipulador de Client-Side leve
+                - name: O manipulador de Client-Side lightweight
                   href: the-lightweight-client-side-handler.md
                   items:
-                    - name: Implementando e ativando um manipulador sem dados de servidor adicionais
+                    - name: Implementando e ativando um manipulador sem dados adicionais do servidor
                       href: implementing-and-activating-a-handler-with-no-extra-server-data.md
-                    - name: Implementando e ativando um manipulador com dados adicionais fornecidos pelo servidor
+                    - name: Implementando e ativando um manipulador com dados extras fornecidos pelo servidor
                       href: implementing-and-activating-a-handler-with-extra-data-supplied-by-server.md
                     - name: Delegação de QueryInterface
                       href: delegation-of-queryinterface.md
@@ -328,29 +328,29 @@
                   items:
                     - name: Compartilhamento substituto
                       href: surrogate-sharing.md
-                    - name: Registrando o servidor DLL para ativação alternativa
+                    - name: Registrando o servidor DLL para ativação substituta
                       href: registering-the-dll-server-for-surrogate-activation.md
-                - name: Usando o System-Supplied substituto
+                - name: Usando a System-Supplied Substituto
                   href: using-the-system-supplied-surrogate.md
-                - name: Gravando um substituto personalizado
+                - name: Escrevendo um substituto personalizado
                   href: writing-a-custom-surrogate.md
             - name: Monikers
               href: monikers.md
               items:
-                - name: Clientes de moniker
+                - name: Clientes Moniker
                   href: moniker-clients.md
-                - name: Provedores de moniker
+                - name: Provedores de Moniker
                   href: moniker-providers.md
-                - name: Implementações de moniker OLE
+                - name: Implementações do OLE Moniker
                   href: ole-moniker-implementations.md
                   items:
                     - name: Monikers de arquivo
                       href: file-monikers.md
                     - name: Monikers compostos
                       href: composite-monikers.md
-                    - name: Monikers de item
+                    - name: Item Monikers
                       href: item-monikers.md
-                    - name: Anti-moniker
+                    - name: Anti monikers
                       href: anti-monikers.md
                     - name: Monikers de ponteiro
                       href: pointer-monikers.md
@@ -363,20 +363,20 @@
                           href: asynchronous-vs.-synchronous-monikers.md
                         - name: Associação assíncrona e síncrona
                           href: asynchronous-vs.-synchronous-binding.md
-                        - name: Armazenamento assíncrono e síncrono
+                        - name: Assíncrono e síncrono Armazenamento
                           href: asynchronous-vs.-synchronous-storage.md
-                        - name: Modelo de Data-Pull e modelo de Data-Push
+                        - name: Data-Pull modelo e Data-Push modelo
                           href: data-pull-model-vs.-data-push-model.md
-                    - name: Identificadores de URL
+                    - name: URL Monikers
                       href: url-monikers.md
                       items:
                         - name: Sincronização de retorno de chamada
                           href: callback-synchronization.md
-                        - name: Negociação de Media-Type
+                        - name: Media-Type negociação
                           href: media-type-negotiation.md
-                        - name: Funções de moniker de URL
+                        - name: Funções de Moniker de URL
                           href: url-moniker-api-functions.md
-            - name: Eventos em objetos COM e conectáveis
+            - name: Eventos em OBJETOS COM e Conectáveis
               href: events-in-com-and-connectable-objects.md
               items:
                 - name: Arquitetura de objetos conectáveis
@@ -386,18 +386,18 @@
                   items:
                     - name: Usando IConnectionPointContainer
                       href: using-iconnectionpointcontainer.md
-                    - name: Usando IConnectionPoint
+                    - name: Usando o IConnectionPoint
                       href: using-iconnectionpoint.md
                     - name: Usando IProvideClassInfo
                       href: using-iprovideclassinfo.md
-            - name: Implementação do Gerenciador de categorias de componentes
+            - name: Implementação do Gerenciador de Categorias de Componentes
               href: component-categories-manager-implementation.md
               items:
-                - name: Categorizando por recursos de componente
+                - name: Categorizando por funcionalidades de componente
                   href: categorizing-by-component-capabilities.md
-                - name: Categorizando por recursos de contêiner
+                - name: Categorizando por funcionalidades de contêiner
                   href: categorizing-by-container-capabilities.md
-                - name: O Gerenciador de categorias de componentes
+                - name: O Gerenciador de Categorias de Componentes
                   href: the-component-categories-manager.md
                 - name: Classes e associações padrão
                   href: default-classes-and-associations.md
@@ -415,7 +415,7 @@
                   href: com-access-flags.md
                 - name: Constantes de nível de autenticação
                   href: com-authentication-level-constants.md
-                - name: Constantes do serviço de autenticação
+                - name: Constantes do Serviço de Autenticação
                   href: com-authentication-service-constants.md
                 - name: Constantes de autorização
                   href: com-authorization-constants.md
@@ -424,13 +424,13 @@
                   items:
                     - name: Códigos de erro COM (genérico)
                       href: com-error-codes-1.md
-                    - name: 'Códigos de erro COM (transação, SCHED, OLE)'
+                    - name: 'Códigos de erro COM (XACT, SCHED, OLE)'
                       href: com-error-codes-2.md
                     - name: 'Códigos de erro COM (STG, RPC)'
                       href: com-error-codes-3.md
-                    - name: Códigos de erro COM (segurança e configuração)
+                    - name: Códigos de erro COM (Segurança e Instalação)
                       href: com-error-codes-4.md
-                    - name: 'Códigos de erro COM (COMAdmin, filtro, gráficos)'
+                    - name: 'Códigos de erro COM (COMADMIN, FILTER, GRAPHICS)'
                       href: com-error-codes-5.md
                     - name: 'Códigos de erro COM (TPM, PLA, FVE)'
                       href: com-error-codes-6.md
@@ -440,7 +440,7 @@
                       href: com-error-codes-8.md
                     - name: 'Códigos de erro COM (WPN, MBN, P2P, Bluetooth)'
                       href: com-error-codes-9.md
-                    - name: 'Códigos de erro COM (interface do usuário, áudio, DirectX, codec)'
+                    - name: 'Códigos de erro COM (interface do usuário, áudio, DirectX, Codec)'
                       href: com-error-codes-10.md
                 - name: Constantes de nível de representação
                   href: com-impersonation-level-constants.md
@@ -465,13 +465,13 @@
                   href: /windows/desktop/api/CallObj/ne-callobj-callframe_null
                 - name: CALLFRAME_WALK
                   href: /windows/desktop/api/CallObj/ne-callobj-callframe_walk
-                - name: Call
+                - name: Calltype
                   href: /windows/win32/api/Objidl/ne-objidl-calltype
-                - name: CLSCTX
+                - name: Clsctx
                   href: /windows/desktop/api/wtypesbase/ne-wtypesbase-clsctx
                 - name: CO_MARSHALING_CONTEXT_ATTRIBUTES
                   href: /windows/desktop/api/objidl/ne-objidl-co_marshaling_context_attributes
-                - name: Coinit
+                - name: COINIT
                   href: /windows/win32/api/Objbase/ne-objbase-coinit
                 - name: COMSD
                   href: /windows/win32/api/Objbase/ne-objbase-comsd
@@ -489,7 +489,7 @@
                   href: /windows/win32/api/objidl/ne-objidl-globalopt_unmarshaling_policy_values
                 - name: MKRREDUCE
                   href: /windows/win32/api/Objidl/ne-objidl-mkrreduce
-                - name: MKSYS
+                - name: Mksys
                   href: /windows/win32/api/Objidl/ne-objidl-mksys
                 - name: MSHCTX
                   href: /windows/win32/api/wtypesbase/ne-wtypesbase-mshctx
@@ -497,11 +497,11 @@
                   href: /windows/win32/api/wtypesbase/ne-wtypesbase-mshlflags
                 - name: PENDINGMSG
                   href: /windows/win32/api/Objidl/ne-objidl-pendingmsg
-                - name: PENDINGtype
+                - name: PENDINGTYPE
                   href: /windows/win32/api/Objidl/ne-objidl-pendingtype
                 - name: RECORD_READING_POLICY
                   href: /windows/desktop/api/TxLogpub/ne-txlogpub-record_reading_policy
-                - name: REGCLS
+                - name: Regcls
                   href: /windows/win32/api/combaseapi/ne-combaseapi-regcls
                 - name: SERVERCALL
                   href: /windows/win32/api/Objidl/ne-objidl-servercall
@@ -526,7 +526,7 @@
                   items:
                     - name: Método desencaixado
                       href: /windows/desktop/api/shobjidl/nf-shobjidl-iaccessibilitydockingservicecallback-undocked
-                - name: IAccessControl
+                - name: Iaccesscontrol
                   href: /windows/desktop/api/IAccess/nn-iaccess-iaccesscontrol
                   items:
                     - name: Método GetAllAccessRights
@@ -543,7 +543,7 @@
                       href: /windows/desktop/api/IAccess/nf-iaccess-iaccesscontrol-setowner
                 - name: IAgileObject
                   href: /windows/desktop/api/objidl/nn-objidl-iagileobject
-                - name: IBindCtx
+                - name: Ibindctx
                   href: /windows/desktop/api/ObjIdl/nn-objidl-ibindctx
                   items:
                     - name: Método EnumObjectParam
@@ -576,7 +576,7 @@
                 - name: ICallFactory
                   href: /windows/desktop/api/objidl/nn-objidl-icallfactory
                   items:
-                    - name: Método createcall
+                    - name: Método CreateCall
                       href: /windows/desktop/api/objidl/nf-objidl-icallfactory-createcall
                 - name: ICallFrame
                   href: /windows/desktop/api/Callobj/nn-callobj-icallframe
@@ -611,7 +611,7 @@
                       href: /windows/desktop/api/Callobj/nf-callobj-icallframe-releasemarshaldata
                     - name: Método SetParam
                       href: /windows/desktop/api/Callobj/nf-callobj-icallframe-setparam
-                    - name: Método ReturnValue
+                    - name: Método SetReturnValue
                       href: /windows/desktop/api/Callobj/nf-callobj-icallframe-setreturnvalue
                     - name: Método SetStackLocation
                       href: /windows/desktop/api/Callobj/nf-callobj-icallframe-setstacklocation
@@ -622,7 +622,7 @@
                 - name: ICallFrameEvents
                   href: /windows/desktop/api/Callobj/nn-callobj-icallframeevents
                   items:
-                    - name: Método oncall
+                    - name: Método OnCall
                       href: /windows/desktop/api/Callobj/nf-callobj-icallframeevents-oncall
                 - name: ICallFrameWalker
                   href: /windows/desktop/api/Callobj/nn-callobj-icallframewalker
@@ -636,7 +636,7 @@
                       href: /windows/desktop/api/Callobj/nf-callobj-icallindirect-callindirect
                     - name: Método GetIID
                       href: /windows/desktop/api/Callobj/nf-callobj-icallindirect-getiid
-                    - name: Método getmethodinfo
+                    - name: Método GetMethodInfo
                       href: /windows/desktop/api/Callobj/nf-callobj-icallindirect-getmethodinfo
                     - name: Método GetStackSize
                       href: /windows/desktop/api/Callobj/nf-callobj-icallindirect-getstacksize
@@ -1244,14 +1244,14 @@
                 - name: IRpcProxyBuffer
                   href: /windows/desktop/api/objidl/nn-objidl-irpcproxybuffer
                   items:
-                    - name: Método Connect
+                    - name: Conexão Forma
                       href: /windows/desktop/api/objidl/nf-objidl-irpcproxybuffer-connect
                     - name: Método de desconexão
                       href: /windows/desktop/api/objidl/nf-objidl-irpcproxybuffer-disconnect
                 - name: IRpcStubBuffer
                   href: /windows/desktop/api/objidl/nn-objidl-irpcstubbuffer
                   items:
-                    - name: Método Connect
+                    - name: Conexão Forma
                       href: /windows/desktop/api/objidl/nf-objidl-irpcstubbuffer-connect
                     - name: Método CountRefs
                       href: /windows/desktop/api/objidl/nf-objidl-irpcstubbuffer-countrefs
@@ -1561,7 +1561,7 @@
                         - name: AeDebug
                           href: aedebug.md
                           items:
-                            - name: Automático
+                            - name: Auto
                               href: auto.md
                             - name: Depurador
                               href: debugger.md
@@ -1745,7 +1745,7 @@
                   href: /windows/desktop/api/combaseapi/nf-combaseapi-colockobjectexternal
                 - name: CoMarshalHresult
                   href: /windows/desktop/api/combaseapi/nf-combaseapi-comarshalhresult
-                - name: CoMarshalInterface
+                - name: Comarshalinterface
                   href: /windows/desktop/api/combaseapi/nf-combaseapi-comarshalinterface
                 - name: CoMarshalInterThreadInterfaceInStream
                   href: /windows/desktop/api/combaseapi/nf-combaseapi-comarshalinterthreadinterfaceinstream
@@ -1759,11 +1759,11 @@
                   href: /windows/desktop/api/combaseapi/nf-combaseapi-coregisteractivationfilter
                 - name: CoRegisterChannelHook
                   href: /windows/desktop/api/objbase/nf-objbase-coregisterchannelhook
-                - name: CoRegisterClassObject
+                - name: Coregisterclassobject
                   href: /windows/desktop/api/combaseapi/nf-combaseapi-coregisterclassobject
                 - name: CoRegisterInitializeSpy
                   href: /windows/desktop/api/Objbase/nf-objbase-coregisterinitializespy
-                - name: CoRegisterMallocSpy
+                - name: Coregistermallocspy
                   href: /windows/desktop/api/Objbase/nf-objbase-coregistermallocspy
                 - name: CoRegisterMessageFilter
                   href: /windows/desktop/api/Objbase/nf-objbase-coregistermessagefilter
@@ -1773,13 +1773,13 @@
                   href: /windows/desktop/api/combaseapi/nf-combaseapi-coregistersurrogate
                 - name: CoReleaseMarshalData
                   href: /windows/desktop/api/combaseapi/nf-combaseapi-coreleasemarshaldata
-                - name: CoReleaseServerProcess
+                - name: Coreleaseserverprocess
                   href: /windows/desktop/api/combaseapi/nf-combaseapi-coreleaseserverprocess
-                - name: CoResumeClassObjects
+                - name: Coresumeclassobjects
                   href: /windows/desktop/api/combaseapi/nf-combaseapi-coresumeclassobjects
                 - name: CoRevertToSelf
                   href: /windows/desktop/api/combaseapi/nf-combaseapi-coreverttoself
-                - name: CoRevokeClassObject
+                - name: Corevokeclassobject
                   href: /windows/desktop/api/combaseapi/nf-combaseapi-corevokeclassobject
                 - name: CoRevokeInitializeSpy
                   href: /windows/desktop/api/Objbase/nf-objbase-corevokeinitializespy
@@ -1789,37 +1789,37 @@
                   href: /windows/desktop/api/combaseapi/nf-combaseapi-cosetcancelobject
                 - name: CoSetMessageDispatcher
                   href: /windows/desktop/api/messagedispatcherapi/nf-messagedispatcherapi-cosetmessagedispatcher
-                - name: CoSetProxyBlanket
+                - name: Cosetproxyblanket
                   href: /windows/desktop/api/combaseapi/nf-combaseapi-cosetproxyblanket
                 - name: CoSuspendClassObjects
                   href: /windows/desktop/api/combaseapi/nf-combaseapi-cosuspendclassobjects
-                - name: CoSwitchCallContext
+                - name: Coswitchcallcontext
                   href: /windows/desktop/api/combaseapi/nf-combaseapi-coswitchcallcontext
-                - name: CoTaskMemAlloc
+                - name: Cotaskmemalloc
                   href: /windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemalloc
-                - name: CoTaskMemFree
+                - name: Cotaskmemfree
                   href: /windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemfree
-                - name: CoTaskMemRealloc
+                - name: Cotaskmemrealloc
                   href: /windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemrealloc
                 - name: CoTestCancel
                   href: /windows/desktop/api/combaseapi/nf-combaseapi-cotestcancel
-                - name: CoTreatAsClass
+                - name: Cotreatasclass
                   href: /windows/desktop/api/Objbase/nf-objbase-cotreatasclass
-                - name: CoUninitialize
+                - name: Couninitialize
                   href: /windows/desktop/api/combaseapi/nf-combaseapi-couninitialize
                 - name: CoUnmarshalHresult
                   href: /windows/desktop/api/combaseapi/nf-combaseapi-counmarshalhresult
-                - name: CoUnmarshalInterface
+                - name: Counmarshalinterface
                   href: /windows/desktop/api/combaseapi/nf-combaseapi-counmarshalinterface
                 - name: CoWaitForMultipleHandles
                   href: /windows/desktop/api/combaseapi/nf-combaseapi-cowaitformultiplehandles
-                - name: Cowaitformultipleobjects
+                - name: CoWaitForMultipleObjects
                   href: /windows/desktop/api/combaseapi/nf-combaseapi-cowaitformultipleobjects
                 - name: CreateAntiMoniker
                   href: /windows/desktop/api/Objbase/nf-objbase-createantimoniker
                 - name: CreateAsyncBindCtx
                   href: /windows/desktop/api/Urlmon/nf-urlmon-createasyncbindctx
-                - name: CreateBindCtx
+                - name: Createbindctx
                   href: /windows/desktop/api/Objbase/nf-objbase-createbindctx
                 - name: CreateClassMoniker
                   href: /windows/desktop/api/Objbase/nf-objbase-createclassmoniker
@@ -1837,21 +1837,21 @@
                   href: /windows/desktop/api/combaseapi/nf-combaseapi-dllcanunloadnow
                 - name: DllDebugObjectRPCHook
                   href: dlldebugobjectrpchook.md
-                - name: DllGetClassObject
+                - name: Dllgetclassobject
                   href: /windows/desktop/api/combaseapi/nf-combaseapi-dllgetclassobject
-                - name: DllRegisterServer
+                - name: Dllregisterserver
                   href: /windows/desktop/api/olectl/nf-olectl-dllregisterserver
-                - name: DllUnregisterServer
+                - name: Dllunregisterserver
                   href: /windows/desktop/api/olectl/nf-olectl-dllunregisterserver
-                - name: GetClassFile
+                - name: Getclassfile
                   href: /windows/desktop/api/Objbase/nf-objbase-getclassfile
-                - name: GetRunningObjectTable
+                - name: Getrunningobjecttable
                   href: /windows/desktop/api/Objbase/nf-objbase-getrunningobjecttable
-                - name: Falha em IIDFromString
+                - name: IIDFromString
                   href: /windows/desktop/api/combaseapi/nf-combaseapi-iidfromstring
                 - name: Inicializar
                   href: /windows/desktop/api/roapi/nf-roapi-initialize
-                - name: Isacelerador
+                - name: IsAccelerator
                   href: /windows/desktop/api/Ole2/nf-ole2-isaccelerator
                 - name: IsEqualCLSID
                   href: /windows/desktop/api/GuidDef/nf-guiddef-isequalclsid
@@ -1859,7 +1859,7 @@
                   href: /windows/desktop/api/guiddef/nf-guiddef-isequalguid
                 - name: IsEqualIID
                   href: /windows/desktop/api/GuidDef/nf-guiddef-isequaliid
-                - name: MkParseDisplayName
+                - name: Mkparsedisplayname
                   href: /windows/desktop/api/Objbase/nf-objbase-mkparsedisplayname
                 - name: MonikerCommonPrefixWith
                   href: /windows/desktop/api/Objbase/nf-objbase-monikercommonprefixwith
@@ -1887,11 +1887,11 @@
                   href: /windows/desktop/api/combaseapi/nf-combaseapi-progidfromclsid
                 - name: StringFromCLSID
                   href: /windows/desktop/api/combaseapi/nf-combaseapi-stringfromclsid
-                - name: StringFromGUID2
+                - name: Stringfromguid2
                   href: /windows/desktop/api/combaseapi/nf-combaseapi-stringfromguid2
                 - name: StringFromIID
                   href: /windows/desktop/api/combaseapi/nf-combaseapi-stringfromiid
-    - name: OLE e Transferência de Dados
+    - name: OLE e transferência de dados
       href: ole-and-data-transfer.md
       items:
         - name: Guia
@@ -1912,9 +1912,9 @@
                 - name: Manipuladores de objetos
                   href: object-handlers.md
                   items:
-                    - name: O manipulador padrão e os manipuladores personalizados
+                    - name: O manipulador padrão e manipuladores personalizados
                       href: the-default-handler-and-custom-handlers.md
-                - name: Servidores In-Process
+                - name: In-Process servidores
                   href: in-process-servers.md
                   items:
                     - name: Vantagens
@@ -1928,29 +1928,29 @@
                   items:
                     - name: Tipos de notificações
                       href: types-of-notifications.md
-                    - name: Como as notificações funcionam
+                    - name: Como funcionam as notificações
                       href: how-notifications-work.md
-                - name: Interfaces de documento composto
+                - name: Interfaces compostas de documentos
                   href: compound-document-interfaces.md
                 - name: Estados de objeto
                   href: object-states.md
                   items:
                     - name: Inserindo o estado carregado
                       href: entering-the-loaded-state.md
-                    - name: Entrando no estado de execução
+                    - name: Inserindo o estado em execução
                       href: entering-the-running-state.md
                     - name: Inserindo o estado passivo
                       href: entering-the-passive-state.md
-                - name: Implementando a ativação do In-Place
+                - name: Implementando a ativação In-Place dados
                   href: implementing-in-place-activation.md
-                - name: Criando objetos vinculados e incorporados de dados existentes
+                - name: Criando objetos vinculados e inseridos de dados existentes
                   href: creating-linked-and-embedded-objects-from-existing-data.md
-                - name: Exibir cache
+                - name: Exibir Caching
                   href: view-caching.md
             - name: Transferência de dados
               href: data-transfer.md
               items:
-                - name: Interfaces Transferência de Dados
+                - name: Interfaces de transferência de dados
                   href: data-transfer-interfaces.md
                 - name: Formatos de dados e mídia de transferência
                   href: data-formats-and-transfer-media.md
@@ -1979,15 +1979,15 @@
               items:
                 - name: ACTIVATEFLAGS
                   href: /windows/win32/api/OCIdl/ne-ocidl-activateflags
-                - name: ADVF
+                - name: Advf
                   href: /windows/win32/api/ObjIdl/ne-objidl-advf
-                - name: DATADIR
+                - name: Datadir
                   href: /windows/win32/api/ObjIdl/ne-objidl-datadir
                 - name: DISCARDCACHE
                   href: /windows/win32/api/OleIdl/ne-oleidl-discardcache
                 - name: DOCMISC
                   href: /windows/win32/api/DocObj/ne-docobj-docmisc
-                - name: DVASPECT
+                - name: Dvaspect
                   href: /windows/win32/api/WTypes/ne-wtypes-dvaspect
                 - name: DVASPECT2
                   href: /windows/win32/api/OCIdl/ne-ocidl-dvaspect2
@@ -1997,9 +1997,9 @@
                   href: /windows/win32/api/OCIdl/ne-ocidl-dvextentmode
                 - name: HITRESULT
                   href: /windows/win32/api/OCIdl/ne-ocidl-hitresult
-                - name: OLECLOSE
+                - name: Oleclose
                   href: /windows/desktop/api/oleidl/ne-oleidl-oleclose
-                - name: OLECMDEXECOPT
+                - name: Olecmdexecopt
                   href: /windows/desktop/api/DocObj/ne-docobj-olecmdexecopt
                 - name: OLECMDF
                   href: /windows/desktop/api/DocObj/ne-docobj-olecmdf
@@ -2017,9 +2017,9 @@
                   href: /windows/win32/api/OleIdl/ne-oleidl-olegetmoniker
                 - name: OLELINKBIND
                   href: /windows/win32/api/OleIdl/ne-oleidl-olelinkbind
-                - name: OLEMISC
+                - name: Olemisc
                   href: /windows/win32/api/OleIdl/ne-oleidl-olemisc
-                - name: OLERENDER
+                - name: Olerender
                   href: /windows/win32/api/OleIdl/ne-oleidl-olerender
                 - name: OLEUIPASTEFLAG
                   href: /windows/win32/api/OleDlg/ne-oledlg-oleuipasteflag
@@ -2029,13 +2029,13 @@
                   href: /windows/win32/api/OleIdl/ne-oleidl-oleverbattrib
                 - name: OLEWHICHMK
                   href: /windows/win32/api/OleIdl/ne-oleidl-olewhichmk
-                - name: TYMED
+                - name: Tymed
                   href: /windows/win32/api/ObjIdl/ne-objidl-tymed
                 - name: UASFLAGS
                   href: /windows/win32/api/OCIdl/ne-ocidl-uasflags
-                - name: Userclassidtype
+                - name: USERCLASSTYPE
                   href: /windows/win32/api/OleIdl/ne-oleidl-userclasstype
-                - name: VIEWSTATUS
+                - name: Viewstatus
                   href: /windows/win32/api/OCIdl/ne-ocidl-viewstatus
             - name: Funções
               href: functions-odt.md
@@ -2046,11 +2046,11 @@
                   href: /windows/desktop/api/ObjBase/nf-objbase-createdatacache
                 - name: CreateFormatEnumerator
                   href: /windows/desktop/api/Urlmon/nf-urlmon-createformatenumerator
-                - name: CreateOleAdviseHolder
+                - name: Createoleadviseholder
                   href: /windows/desktop/api/Ole2/nf-ole2-createoleadviseholder
-                - name: DoDragDrop
+                - name: Dodragdrop
                   href: /windows/desktop/api/Ole2/nf-ole2-dodragdrop
-                - name: OleCreate
+                - name: Olecreate
                   href: /windows/desktop/api/ole/nf-ole-olecreate
                 - name: OleCreateDefaultHandler
                   href: /windows/desktop/api/Ole2/nf-ole2-olecreatedefaulthandler
@@ -2098,7 +2098,7 @@
                   href: /windows/desktop/api/Ole2/nf-ole2-olegetclipboard
                 - name: OleGetClipboardWithEnterpriseInfo
                   href: /windows/desktop/api/Ole2/nf-ole2-olegetclipboardwithenterpriseinfo
-                - name: OleInitialize
+                - name: Oleinitialize
                   href: /windows/desktop/api/Ole2/nf-ole2-oleinitialize
                 - name: OleIsCurrentClipboard
                   href: /windows/desktop/api/Ole2/nf-ole2-oleiscurrentclipboard
@@ -2126,15 +2126,15 @@
                   href: /windows/desktop/api/Ole2/nf-ole2-oleregenumformatetc
                 - name: OleRegEnumVerbs
                   href: /windows/desktop/api/Ole2/nf-ole2-oleregenumverbs
-                - name: OleRun
+                - name: Olerun
                   href: /windows/desktop/api/Ole2/nf-ole2-olerun
                 - name: OleSave
                   href: /windows/desktop/api/Ole2/nf-ole2-olesave
-                - name: OleSaveToStream
+                - name: Olesavetostream
                   href: /windows/desktop/api/ole/nf-ole-olesavetostream
                 - name: OleSetClipboard
                   href: /windows/desktop/api/Ole2/nf-ole2-olesetclipboard
-                - name: OleSetContainedObject
+                - name: Olesetcontainedobject
                   href: /windows/desktop/api/Ole2/nf-ole2-olesetcontainedobject
                 - name: OleSetMenuDescriptor
                   href: /windows/desktop/api/Ole2/nf-ole2-olesetmenudescriptor
@@ -2142,23 +2142,23 @@
                   href: /windows/desktop/api/Ole2/nf-ole2-oletranslateaccelerator
                 - name: OleUIAddVerbMenu
                   href: /windows/desktop/api/OleDlg/nf-oledlg-oleuiaddverbmenua
-                - name: OleUIBusy
+                - name: Oleuibusy
                   href: /windows/desktop/api/OleDlg/nf-oledlg-oleuibusya
                 - name: OleUICanConvertOrActivateAs
                   href: /windows/desktop/api/OleDlg/nf-oledlg-oleuicanconvertoractivateas
-                - name: OleUIChangeIcon
+                - name: Oleuichangeicon
                   href: /windows/desktop/api/OleDlg/nf-oledlg-oleuichangeicona
-                - name: OleUIChangeSource
+                - name: Oleuichangesource
                   href: /windows/desktop/api/OleDlg/nf-oledlg-oleuichangesourcea
-                - name: OleUIConvert
+                - name: Oleuiconvert
                   href: /windows/desktop/api/OleDlg/nf-oledlg-oleuiconverta
                 - name: OleUIEditLinks
                   href: /windows/desktop/api/OleDlg/nf-oledlg-oleuieditlinksa
-                - name: OleUIInsertObject
+                - name: Oleuiinsertobject
                   href: /windows/desktop/api/OleDlg/nf-oledlg-oleuiinsertobjecta
                 - name: OleUIObjectProperties
                   href: /windows/desktop/api/OleDlg/nf-oledlg-oleuiobjectpropertiesa
-                - name: OleUIPasteSpecial
+                - name: Oleuipastespecial
                   href: /windows/desktop/api/OleDlg/nf-oledlg-oleuipastespeciala
                 - name: OleUIPromptUser
                   href: /windows/desktop/api/OleDlg/nf-oledlg-oleuipromptusera
@@ -2399,14 +2399,14 @@
                       href: /windows/desktop/api/DocObj/nf-docobj-iolecommandtarget-exec
                     - name: Método QueryStatus
                       href: /windows/desktop/api/DocObj/nf-docobj-iolecommandtarget-querystatus
-                - name: IOleContainer
+                - name: Iolecontainer
                   href: /windows/desktop/api/OleIdl/nn-oleidl-iolecontainer
                   items:
                     - name: Método EnumObjects
                       href: /windows/desktop/api/OleIdl/nf-oleidl-iolecontainer-enumobjects
                     - name: Método LockContainer
                       href: /windows/desktop/api/OleIdl/nf-oleidl-iolecontainer-lockcontainer
-                - name: IOleDocument
+                - name: Ioledocument
                   href: /windows/desktop/api/DocObj/nn-docobj-ioledocument
                   items:
                     - name: Método CreateView
@@ -2415,12 +2415,12 @@
                       href: /windows/desktop/api/DocObj/nf-docobj-ioledocument-enumviews
                     - name: Método GetDocMiscStatus
                       href: /windows/desktop/api/DocObj/nf-docobj-ioledocument-getdocmiscstatus
-                - name: IOleDocumentSite
+                - name: Ioledocumentsite
                   href: /windows/desktop/api/DocObj/nn-docobj-ioledocumentsite
                   items:
                     - name: Método ActivateMe
                       href: /windows/desktop/api/DocObj/nf-docobj-ioledocumentsite-activateme
-                - name: IOleDocumentView
+                - name: Ioledocumentview
                   href: /windows/desktop/api/DocObj/nn-docobj-ioledocumentview
                   items:
                     - name: Método ApplyViewState
@@ -2435,7 +2435,7 @@
                       href: /windows/desktop/api/DocObj/nf-docobj-ioledocumentview-getinplacesite
                     - name: Método GetRect
                       href: /windows/desktop/api/DocObj/nf-docobj-ioledocumentview-getrect
-                    - name: Abrir método
+                    - name: Método Open
                       href: /windows/desktop/api/DocObj/nf-docobj-ioledocumentview-open
                     - name: Método SaveViewState
                       href: /windows/desktop/api/DocObj/nf-docobj-ioledocumentview-saveviewstate
@@ -2445,11 +2445,11 @@
                       href: /windows/desktop/api/DocObj/nf-docobj-ioledocumentview-setrect
                     - name: Método SetRectComplex
                       href: /windows/desktop/api/DocObj/nf-docobj-ioledocumentview-setrectcomplex
-                    - name: Mostrar método
+                    - name: Mostrar Método
                       href: /windows/desktop/api/DocObj/nf-docobj-ioledocumentview-show
                     - name: Método UIActivate
                       href: /windows/desktop/api/DocObj/nf-docobj-ioledocumentview-uiactivate
-                - name: IOleInPlaceActiveObject
+                - name: Ioleinplaceactiveobject
                   href: /windows/desktop/api/OleIdl/nn-oleidl-ioleinplaceactiveobject
                   items:
                     - name: Método EnableModeless
@@ -2462,7 +2462,7 @@
                       href: /windows/desktop/api/OleIdl/nf-oleidl-ioleinplaceactiveobject-resizeborder
                     - name: Método TranslateAccelerator
                       href: /windows/desktop/api/OleIdl/nf-oleidl-ioleinplaceactiveobject-translateaccelerator
-                - name: IOleInPlaceFrame
+                - name: Ioleinplaceframe
                   href: /windows/desktop/api/OleIdl/nn-oleidl-ioleinplaceframe
                   items:
                     - name: Método EnableModeless
@@ -2477,7 +2477,7 @@
                       href: /windows/desktop/api/OleIdl/nf-oleidl-ioleinplaceframe-setstatustext
                     - name: Método TranslateAccelerator
                       href: /windows/desktop/api/OleIdl/nf-oleidl-ioleinplaceframe-translateaccelerator
-                - name: IOleInPlaceObject
+                - name: Ioleinplaceobject
                   href: /windows/desktop/api/OleIdl/nn-oleidl-ioleinplaceobject
                   items:
                     - name: Método InPlaceDeactivate
@@ -2495,7 +2495,7 @@
                       href: /windows/desktop/api/OCIdl/nf-ocidl-ioleinplaceobjectwindowless-getdroptarget
                     - name: Método OnWindowMessage
                       href: /windows/desktop/api/OCIdl/nf-ocidl-ioleinplaceobjectwindowless-onwindowmessage
-                - name: IOleInPlaceSite
+                - name: Ioleinplacesite
                   href: /windows/desktop/api/OleIdl/nn-oleidl-ioleinplacesite
                   items:
                     - name: Método CanInPlaceActivate
@@ -2518,7 +2518,7 @@
                       href: /windows/desktop/api/OleIdl/nf-oleidl-ioleinplacesite-onuideactivate
                     - name: Método Scroll
                       href: /windows/desktop/api/OleIdl/nf-oleidl-ioleinplacesite-scroll
-                - name: IOleInPlaceSiteEx
+                - name: Ioleinplacesiteex
                   href: /windows/desktop/api/OCIdl/nn-ocidl-ioleinplacesiteex
                   items:
                     - name: Método OnInPlaceActivateEx
@@ -2527,7 +2527,7 @@
                       href: /windows/desktop/api/OCIdl/nf-ocidl-ioleinplacesiteex-oninplacedeactivateex
                     - name: Método RequestUIActivate
                       href: /windows/desktop/api/OCIdl/nf-ocidl-ioleinplacesiteex-requestuiactivate
-                - name: IOleInPlaceSiteWindowless
+                - name: Ioleinplacesitewindowless
                   href: /windows/desktop/api/OCIdl/nn-ocidl-ioleinplacesitewindowless
                   items:
                     - name: Método AdjustRect
@@ -2554,25 +2554,25 @@
                       href: /windows/desktop/api/OCIdl/nf-ocidl-ioleinplacesitewindowless-setcapture
                     - name: Método SetFocus
                       href: /windows/desktop/api/OCIdl/nf-ocidl-ioleinplacesitewindowless-setfocus
-                - name: IOleInPlaceUIWindow
+                - name: Ioleinplaceuiwindow
                   href: /windows/desktop/api/OleIdl/nn-oleidl-ioleinplaceuiwindow
                   items:
                     - name: Método GetBorder
                       href: /windows/desktop/api/OleIdl/nf-oleidl-ioleinplaceuiwindow-getborder
                     - name: Método RequestBorderSpace
                       href: /windows/desktop/api/OleIdl/nf-oleidl-ioleinplaceuiwindow-requestborderspace
-                    - name: Método setactiveobject
+                    - name: Método SetActiveObject
                       href: /windows/desktop/api/OleIdl/nf-oleidl-ioleinplaceuiwindow-setactiveobject
                     - name: Método SetBorderSpace
                       href: /windows/desktop/api/OleIdl/nf-oleidl-ioleinplaceuiwindow-setborderspace
-                - name: IOleLink
+                - name: Iolelink
                   href: /windows/desktop/api/OleIdl/nn-oleidl-iolelink
                   items:
                     - name: Método BindIfRunning
                       href: /windows/desktop/api/OleIdl/nf-oleidl-iolelink-bindifrunning
                     - name: Método BindToSource
                       href: /windows/desktop/api/OleIdl/nf-oleidl-iolelink-bindtosource
-                    - name: Método getboundname
+                    - name: Método GetBoundSource
                       href: /windows/desktop/api/OleIdl/nf-oleidl-iolelink-getboundsource
                     - name: Método GetSourceDisplayName
                       href: /windows/desktop/api/OleIdl/nf-oleidl-iolelink-getsourcedisplayname
@@ -2586,18 +2586,18 @@
                       href: /windows/desktop/api/OleIdl/nf-oleidl-iolelink-setsourcemoniker
                     - name: Método SetUpdateOptions
                       href: /windows/desktop/api/OleIdl/nf-oleidl-iolelink-setupdateoptions
-                    - name: Método Unassociate
+                    - name: Método UnbindSource
                       href: /windows/desktop/api/OleIdl/nf-oleidl-iolelink-unbindsource
                     - name: Método Update
                       href: /windows/desktop/api/OleIdl/nf-oleidl-iolelink-update
-                - name: IOleObject
+                - name: Ioleobject
                   href: /windows/desktop/api/OleIdl/nn-oleidl-ioleobject
                   items:
                     - name: Método Advise
                       href: /windows/desktop/api/OleIdl/nf-oleidl-ioleobject-advise
                     - name: Método Close
                       href: /windows/desktop/api/OleIdl/nf-oleidl-ioleobject-close
-                    - name: Método doverbo
+                    - name: Método DoVerb
                       href: /windows/desktop/api/OleIdl/nf-oleidl-ioleobject-doverb
                     - name: Método EnumAdvise
                       href: /windows/desktop/api/OleIdl/nf-oleidl-ioleobject-enumadvise
@@ -2607,7 +2607,7 @@
                       href: /windows/desktop/api/OleIdl/nf-oleidl-ioleobject-getclientsite
                     - name: Método GetClipboardData
                       href: /windows/desktop/api/OleIdl/nf-oleidl-ioleobject-getclipboarddata
-                    - name: Método getestende
+                    - name: Método GetExtent
                       href: /windows/desktop/api/OleIdl/nf-oleidl-ioleobject-getextent
                     - name: Método GetMiscStatus
                       href: /windows/desktop/api/OleIdl/nf-oleidl-ioleobject-getmiscstatus
@@ -2644,16 +2644,16 @@
                       href: /windows/desktop/api/OCIdl/nf-ocidl-ioleparentundounit-close
                     - name: Método FindUnit
                       href: /windows/desktop/api/OCIdl/nf-ocidl-ioleparentundounit-findunit
-                    - name: Método getparentstate
+                    - name: Método GetParentState
                       href: /windows/desktop/api/OCIdl/nf-ocidl-ioleparentundounit-getparentstate
-                    - name: Abrir método
+                    - name: Método Open
                       href: /windows/desktop/api/OCIdl/nf-ocidl-ioleparentundounit-open
                 - name: IOleUILinkContainer
                   href: /windows/desktop/api/OleDlg/nn-oledlg-ioleuilinkcontainera
                   items:
                     - name: Método CancelLink
                       href: /windows/desktop/api/OleDlg/nf-oledlg-ioleuilinkcontainera-cancellink
-                    - name: Método getlinkid
+                    - name: Método GetLinkSource
                       href: /windows/desktop/api/OleDlg/nf-oledlg-ioleuilinkcontainera-getlinksource
                     - name: Método GetLinkUpdateOptions
                       href: /windows/desktop/api/OleDlg/nf-oledlg-ioleuilinkcontainera-getlinkupdateoptions
@@ -2661,7 +2661,7 @@
                       href: /windows/desktop/api/OleDlg/nf-oledlg-ioleuilinkcontainera-getnextlink
                     - name: Método OpenLinkSource
                       href: /windows/desktop/api/OleDlg/nf-oledlg-ioleuilinkcontainera-openlinksource
-                    - name: Método setlinkid
+                    - name: Método SetLinkSource
                       href: /windows/desktop/api/OleDlg/nf-oledlg-ioleuilinkcontainera-setlinksource
                     - name: Método SetLinkUpdateOptions
                       href: /windows/desktop/api/OleDlg/nf-oledlg-ioleuilinkcontainera-setlinkupdateoptions
@@ -2675,7 +2675,7 @@
                 - name: IOleUIObjInfo
                   href: /windows/desktop/api/OleDlg/nn-oledlg-ioleuiobjinfoa
                   items:
-                    - name: Método convertobject
+                    - name: Método ConvertObject
                       href: /windows/desktop/api/OleDlg/nf-oledlg-ioleuiobjinfoa-convertobject
                     - name: Método GetConvertInfo
                       href: /windows/desktop/api/OleDlg/nf-oledlg-ioleuiobjinfoa-getconvertinfo
@@ -2694,7 +2694,7 @@
                       href: /windows/desktop/api/OCIdl/nf-ocidl-ioleundomanager-close
                     - name: Método DiscardFrom
                       href: /windows/desktop/api/OCIdl/nf-ocidl-ioleundomanager-discardfrom
-                    - name: Habilitar método
+                    - name: Método Enable
                       href: /windows/desktop/api/OCIdl/nf-ocidl-ioleundomanager-enable
                     - name: Método EnumRedoable
                       href: /windows/desktop/api/OCIdl/nf-ocidl-ioleundomanager-enumredoable
@@ -2706,51 +2706,51 @@
                       href: /windows/desktop/api/OCIdl/nf-ocidl-ioleundomanager-getlastundodescription
                     - name: Método GetOpenParentState
                       href: /windows/desktop/api/OCIdl/nf-ocidl-ioleundomanager-getopenparentstate
-                    - name: Abrir método
+                    - name: Método Open
                       href: /windows/desktop/api/OCIdl/nf-ocidl-ioleundomanager-open
-                    - name: Método refazer
+                    - name: Método RedoTo
                       href: /windows/desktop/api/OCIdl/nf-ocidl-ioleundomanager-redoto
-                    - name: Método undoto
+                    - name: Método UndoTo
                       href: /windows/desktop/api/OCIdl/nf-ocidl-ioleundomanager-undoto
                 - name: IOleUndoUnit
                   href: /windows/desktop/api/OCIdl/nn-ocidl-ioleundounit
                   items:
-                    - name: Método do
+                    - name: Método Do
                       href: /windows/desktop/api/OCIdl/nf-ocidl-ioleundounit-do
                     - name: Método GetDescription
                       href: /windows/desktop/api/OCIdl/nf-ocidl-ioleundounit-getdescription
-                    - name: Método getunittype
+                    - name: Método GetUnitType
                       href: /windows/desktop/api/OCIdl/nf-ocidl-ioleundounit-getunittype
                     - name: Método OnNextAdd
                       href: /windows/desktop/api/OCIdl/nf-ocidl-ioleundounit-onnextadd
-                - name: IOleWindow
+                - name: Iolewindow
                   href: /windows/desktop/api/OleIdl/nn-oleidl-iolewindow
                   items:
                     - name: Método ContextSensitiveHelp
                       href: /windows/desktop/api/OleIdl/nf-oleidl-iolewindow-contextsensitivehelp
                     - name: Método GetWindow
                       href: /windows/desktop/api/OleIdl/nf-oleidl-iolewindow-getwindow
-                - name: IViewObject
+                - name: Iviewobject
                   href: /windows/desktop/api/OleIdl/nn-oleidl-iviewobject
                   items:
                     - name: Método Draw
                       href: /windows/desktop/api/OleIdl/nf-oleidl-iviewobject-draw
-                    - name: Congelar método
+                    - name: Método Freeze
                       href: /windows/desktop/api/OleIdl/nf-oleidl-iviewobject-freeze
-                    - name: Método getaconselhe
+                    - name: Método GetAdvise
                       href: /windows/desktop/api/OleIdl/nf-oleidl-iviewobject-getadvise
                     - name: Método GetColorSet
                       href: /windows/desktop/api/OleIdl/nf-oleidl-iviewobject-getcolorset
-                    - name: Método setaconselhe
+                    - name: Método SetAdvise
                       href: /windows/desktop/api/OleIdl/nf-oleidl-iviewobject-setadvise
-                    - name: Descongelar método
+                    - name: Método Unfreeze
                       href: /windows/desktop/api/OleIdl/nf-oleidl-iviewobject-unfreeze
                 - name: IViewObject2
                   href: /windows/desktop/api/OleIdl/nn-oleidl-iviewobject2
                   items:
-                    - name: Método getestende
+                    - name: Método GetExtent
                       href: /windows/desktop/api/OleIdl/nf-oleidl-iviewobject2-getextent
-                - name: IViewObjectEx
+                - name: Iviewobjectex
                   href: /windows/desktop/api/OCIdl/nn-ocidl-iviewobjectex
                   items:
                     - name: Método GetNaturalExtent
@@ -2770,33 +2770,33 @@
                   href: /windows/desktop/api/OCIdl/ns-ocidl-dvaspectinfo
                 - name: DVEXTENTINFO
                   href: /windows/win32/api/OCIdl/ns-ocidl-dvextentinfo
-                - name: DVTARGETDEVICE
+                - name: Dvtargetdevice
                   href: /windows/win32/api/ObjIdl/ns-objidl-dvtargetdevice
-                - name: FORMATETC
+                - name: Formatetc
                   href: /windows/win32/api/ObjIdl/ns-objidl-formatetc
-                - name: Objectdescriptor
+                - name: OBJECTDESCRIPTOR
                   href: /windows/win32/api/OleIdl/ns-oleidl-objectdescriptor
                 - name: OLECMD
                   href: /windows/desktop/api/DocObj/ns-docobj-olecmd
                 - name: OLECMDTEXT
                   href: /windows/desktop/api/DocObj/ns-docobj-olecmdtext
-                - name: OLEINPLACEFRAMEINFO
+                - name: Oleinplaceframeinfo
                   href: /windows/win32/api/OleIdl/ns-oleidl-oleinplaceframeinfo
-                - name: OLEMENUGROUPWIDTHS
+                - name: Olemenugroupwidths
                   href: /windows/win32/api/OleIdl/ns-oleidl-olemenugroupwidths
-                - name: OLEUIBUSY
+                - name: Oleuibusy
                   href: /windows/win32/api/OleDlg/ns-oledlg-oleuibusya
-                - name: OLEUICHANGEICON
+                - name: Oleuichangeicon
                   href: /windows/win32/api/OleDlg/ns-oledlg-oleuichangeicona
-                - name: OLEUICHANGESOURCE
+                - name: Oleuichangesource
                   href: /windows/win32/api/OleDlg/ns-oledlg-oleuichangesourcea
-                - name: OLEUICONVERT
+                - name: Oleuiconvert
                   href: /windows/win32/api/OleDlg/ns-oledlg-oleuiconverta
                 - name: OLEUIEDITLINKS
                   href: /windows/win32/api/OleDlg/ns-oledlg-oleuieditlinksa
                 - name: OLEUIGNRLPROPS
                   href: /windows/win32/api/OleDlg/ns-oledlg-oleuignrlpropsa
-                - name: OLEUIINSERTOBJECT
+                - name: Oleuiinsertobject
                   href: /windows/win32/api/OleDlg/ns-oledlg-oleuiinsertobjecta
                 - name: OLEUILINKPROPS
                   href: /windows/win32/api/OleDlg/ns-oledlg-oleuilinkpropsa
@@ -2804,19 +2804,19 @@
                   href: /windows/win32/api/OleDlg/ns-oledlg-oleuiobjectpropsa
                 - name: OLEUIPASTEENTRY
                   href: /windows/win32/api/OleDlg/ns-oledlg-oleuipasteentrya
-                - name: OLEUIPASTESPECIAL
+                - name: Oleuipastespecial
                   href: /windows/win32/api/OleDlg/ns-oledlg-oleuipastespeciala
                 - name: OLEUIVIEWPROPS
                   href: /windows/win32/api/OleDlg/ns-oledlg-oleuiviewpropsa
                 - name: OLEVERB
                   href: /windows/win32/api/OleIdl/ns-oleidl-oleverb
-                - name: POINTF
+                - name: Pointf
                   href: /windows/win32/api/OCIdl/ns-ocidl-pointf
-                - name: STATDATA
+                - name: Statdata
                   href: /windows/win32/api/ObjIdl/ns-objidl-statdata
-                - name: STGMEDIUM
+                - name: Stgmedium
                   href: /windows/win32/api/objidl/ns-objidl-ustgmedium-r1
-    - name: Páginas de controles e de propriedades
+    - name: Controles e páginas de propriedades
       href: controls-and-property-pages.md
       items:
         - name: Guia
@@ -2825,14 +2825,14 @@
             - name: Controles ActiveX
               href: activex-controls.md
               items:
-                - name: Arquitetura de controles ActiveX
+                - name: ActiveX Arquitetura de controles
                   href: activex-controls-architecture.md
-                - name: Interfaces de controles ActiveX
+                - name: ActiveX Interfaces de controles
                   href: activex-controls-interfaces.md
                 - name: Propriedades e métodos
                   href: properties-and-methods.md
                   items:
-                    - name: Propriedades de controle
+                    - name: Propriedades do controle
                       href: control-properties.md
                       items:
                         - name: Propriedades padrão
@@ -2854,7 +2854,7 @@
                 - name: Registro e licenciamento
                   href: registration-and-licensing.md
                   items:
-                    - name: Informações do registro de controles ActiveX
+                    - name: ActiveX Controla informações do Registro
                       href: activex-controls-registry-information.md
             - name: Páginas de propriedades e folhas de propriedades
               href: property-pages-and-property-sheets.md
@@ -2863,7 +2863,7 @@
                   href: property-sheets-and-property-pages.md
                 - name: Vinculação de dados por meio de IPropertyNotifySink
                   href: data-binding-through-ipropertynotifysink.md
-            - name: Diretrizes de contêiner de controle e controle ActiveX
+            - name: ActiveX Diretrizes de contêiner de controle e controle
               href: activex-control-and-control-container-guidelines.md
               items:
                 - name: Visão geral das diretrizes de contêiner de controle e controle
@@ -2871,17 +2871,17 @@
                 - name: Controles
                   href: controls.md
                   items:
-                    - name: Registro automático para controles
+                    - name: Autoregiso para controles
                       href: self-registration-for-controls.md
-                    - name: O que é o suporte para uma interface significa
+                    - name: O que o suporte para uma interface significa
                       href: what-support-for-an-interface-means.md
                     - name: Interfaces de persistência
                       href: persistence-interfaces.md
                     - name: Métodos opcionais em interfaces de controle
                       href: optional-methods-in-control-interfaces.md
-                    - name: Opções de fábrica de classes
+                    - name: Opções de fábrica de classe
                       href: class-factory-options.md
-                    - name: Expondo Propriedades por meio de IDispatch
+                    - name: Expondo propriedades por meio de IDispatch
                       href: properties.md
                     - name: Expondo métodos por meio de IDispatch
                       href: exposing-methods-through-idispatch.md
@@ -2904,7 +2904,7 @@
                       href: miscellaneous-status-bits-support.md
                     - name: Manipulação de teclado em controles
                       href: keyboard-handling-in-controls.md
-                    - name: Interfaces de armazenamento
+                    - name: Armazenamento Interfaces
                       href: storage-interfaces.md
                     - name: Propriedades de ambiente
                       href: ambient-properties.md
@@ -2914,26 +2914,26 @@
                       href: message-reflection.md
                     - name: Recorte automático
                       href: automatic-clipping.md
-                    - name: Degradar normalmente na ausência de uma interface
+                    - name: Degradando normalmente na ausência de uma interface
                       href: degrading-gracefully-in-the-absence-of-an-interface.md
                 - name: Categorias de componentes
                   href: component-categories.md
                   items:
                     - name: Categorias de componentes e como elas funcionam
                       href: component-categories-and-how-they-work.md
-                    - name: Confinamento de site de quadro simples
+                    - name: Contenção de site de quadro simples
                       href: simple-frame-site-containment.md
-                    - name: Vinculação de dados simples
+                    - name: Associação de dados simples
                       href: simple-data-binding.md
-                    - name: Ligação de dados avançada
+                    - name: Associação de dados avançada
                       href: advanced-data-binding.md
-                    - name: Visual Basic interfaces privadas
+                    - name: Visual Basic Interfaces privadas
                       href: visual-basic-private-interfaces.md
                       items:
                         - name: IGetOleObject
                           href: /windows/desktop/api/VbInterf/nn-vbinterf-igetoleobject
                           items:
-                            - name: Método getoleobject
+                            - name: Método GetOleObject
                               href: /windows/desktop/api/VbInterf/nf-vbinterf-igetoleobject-getoleobject
                         - name: IGetVBAObject
                           href: /windows/desktop/api/VbInterf/nn-vbinterf-igetvbaobject
@@ -2950,11 +2950,11 @@
                           items:
                             - name: Método EnumControls
                               href: /windows/desktop/api/VbInterf/nf-vbinterf-ivbgetcontrol-enumcontrols
-                    - name: Objetos Internet-Aware
+                    - name: Internet-Aware objetos
                       href: internet-aware-objects.md
                     - name: Controles sem janelas
                       href: windowless-controls.md
-                    - name: Categorizando proxies e stubs DCOM
+                    - name: Categorizando stubs e proxies DCOM
                       href: categorizing-dcom-proxies-and-stubs.md
                 - name: Diretrizes gerais
                   href: general-guidelines.md
@@ -2963,29 +2963,29 @@
                       href: overloading-ipropertynotifysink.md
                     - name: Container-Specific interfaces privadas
                       href: container-specific-private-interfaces.md
-                    - name: Problemas multi-threaded
+                    - name: Problemas com vários threads
                       href: multithreaded-issues.md
                     - name: Congelamento de eventos
                       href: event-freezing.md
                     - name: Controles de contêiner
                       href: container-controls.md
-                    - name: WS_GROUP e WS_TABSTOP sinalizadores em controles
+                    - name: WS_GROUP e WS_TABSTOP em controles
                       href: ws-group-and-ws-tabstop-flags-in-controls.md
                     - name: Vários controles em uma DLL
                       href: multiple-controls-in-one-dll.md
-                    - name: 'O método IOleContainer:: EnumObjects'
+                    - name: 'O método IOleContainer::EnumObjects'
                       href: the-iolecontainer--enumobjects-method.md
-                    - name: Metarquivos aprimorados
+                    - name: Metadados aprimorados
                       href: enhanced-metafiles.md
-                    - name: Licenças
+                    - name: Licenciamento
                       href: licensing.md
                     - name: Interfaces duplas
                       href: dual-interfaces.md
                     - name: IPropertyBag e IPersistPropertyBag
                       href: ipropertybag-and-ipersistpropertybag.md
-                - name: Tradução de coordenadas de eventos
+                - name: Tradução de coordenadas de evento
                   href: event-coordinate-translation.md
-                - name: DISPIDs padrão
+                - name: DISPIDS Padrão
                   href: standard-dispids.md
                 - name: Associação de dados
                   href: databinding.md
@@ -3002,16 +3002,16 @@
               items:
                 - name: GUIDKIND
                   href: /windows/win32/api/OCIdl/ne-ocidl-guidkind
-                - name: IMAGEMattributes
+                - name: PICTUREATTRIBUTES
                   href: /windows/win32/api/OCIdl/ne-ocidl-pictureattributes
-                - name: POINTERINACTIVE
+                - name: Pointerinactive
                   href: /windows/win32/api/OCIdl/ne-ocidl-pointerinactive
                 - name: QACONTAINERFLAGS
                   href: /windows/win32/api/OCIdl/ne-ocidl-qacontainerflags
             - name: Funções
               href: functions-ctrls.md
               items:
-                - name: OleCreatePropertyFrame
+                - name: Olecreatepropertyframe
                   href: /windows/desktop/api/OleCtl/nf-olectl-olecreatepropertyframe
                 - name: OleCreatePropertyFrameIndirect
                   href: /windows/desktop/api/OleCtl/nf-olectl-olecreatepropertyframeindirect
@@ -3022,14 +3022,14 @@
             - name: Interfaces
               href: interfaces-ctrls.md
               items:
-                - name: IFont
+                - name: Ifont
                   href: /windows/desktop/api/OCIdl/nn-ocidl-ifont
                   items:
                     - name: Método AddRefHfont
                       href: /windows/desktop/api/OCIdl/nf-ocidl-ifont-addrefhfont
                     - name: Método Clone
                       href: /windows/desktop/api/OCIdl/nf-ocidl-ifont-clone
-                    - name: Método de get_Bold
+                    - name: Get_Bold método
                       href: /windows/desktop/api/OCIdl/nf-ocidl-ifont-get_bold
                     - name: Método de get_Charset
                       href: /windows/desktop/api/OCIdl/nf-ocidl-ifont-get_charset
@@ -3286,7 +3286,7 @@
                   href: translating-to-c---from-visual-basic.md
                 - name: Convertendo para C++ do Java
                   href: translating-to-c---from-java.md
-                - name: Adicionando um controle ActiveX a um projeto Visual C++
+                - name: adicionar um controle de ActiveX a um Visual C++ Project
                   href: adding-an-activex-control-to-a-visual-c---project.md
                 - name: Compilador de MIDL
                   href: midl-compiler.md
@@ -3297,15 +3297,15 @@
             - name: Convertendo para Visual Basic
               href: translating-to-visual-basic.md
               items:
-                - name: Convertendo para Visual Basic do C++
+                - name: convertendo para Visual Basic do C++
                   href: translating-to-visual-basic-from-c--.md
-                - name: Convertendo para Visual Basic do Java
+                - name: convertendo para Visual Basic do Java
                   href: translating-to-visual-basic-from-java.md
-                - name: Adicionando um componente a um projeto Visual Basic
+                - name: adicionando um componente a um Visual Basic Project
                   href: adding-a-component-to-a-visual-basic-project.md
-                - name: Adicionando uma referência a um projeto Visual Basic
+                - name: adicionando uma referência a um Visual Basic Project
                   href: adding-a-reference-to-a-visual-basic-project.md
-                - name: Pesquisador de objetos do Visual Basic
+                - name: Visual Basic Pesquisador de objetos
                   href: visual-basic-object-browser.md
             - name: Convertendo para Java
               href: translating-to-java.md
@@ -3327,30 +3327,30 @@
               href: embedding-com-objects-in-web-pages.md
             - name: Usando objetos COM em páginas Active Server
               href: using-com-objects-in-active-server-pages.md
-            - name: Usando objetos COM no Windows Script Host
+            - name: usando objetos COM no Host de Script Windows
               href: using-com-objects-in-windows-script-host.md
             - name: Criando scripts de objetos COM em aplicativos personalizados
               href: scripting-com-objects-in-custom-applications.md
             - name: Convertendo para VBScript
               href: translating-to-vbscript.md
               items:
-                - name: Convertendo para VBScript do JScript
+                - name: Convertendo para o VBScript do JScript
                   href: translating-to-vbscript-from-jscript.md
                 - name: Convertendo para VBScript do JavaScript
                   href: translating-to-vbscript-from-javascript.md
-            - name: Traduzindo para o JScript
+            - name: Convertendo para JScript
               href: translating-to-jscript.md
               items:
-                - name: Convertendo para JScript do VBScript
+                - name: convertendo para JScript do VBScript
                   href: translating-to-jscript-from-vbscript.md
-                - name: Convertendo para JScript do JavaScript
+                - name: convertendo para JScript do JavaScript
                   href: translating-to-jscript-from-javascript.md
             - name: Convertendo para JavaScript
               href: translating-to-javascript.md
               items:
                 - name: Convertendo para JavaScript a partir do VBScript
                   href: translating-to-javascript-from-vbscript.md
-                - name: Convertendo para JavaScript do JScript
+                - name: Convertendo para JavaScript de JScript
                   href: translating-to-javascript-from-jscript.md
     - name: Glossário do COM
       href: com-glossary.md

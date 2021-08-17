@@ -4,16 +4,16 @@ ms.assetid: e51f25d7-41e5-408e-930b-396c7ac24437
 title: 'Método ITSdp:: getemailnames (Sdpblb. h)'
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 31f0200b5cc6ea0422f47a323cd1c57d7e0f9a5d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f74ea369210a6ca32e47bb3359000195c544374b7352da96570f6d0f58f2af4f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105784089"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119140259"
 ---
 # <a name="itsdpgetemailnames-method"></a>Método ITSdp:: getemailnames
 
-\[ Os controles e as interfaces da conferência de telefonia IP de reunião não estão disponíveis para uso no Windows Vista, no Windows Server 2008 e nas versões subsequentes do sistema operacional. A API do cliente RTC fornece funcionalidade semelhante.\]
+\[os controles e as interfaces de conferência de telefonia IP de reunião não estão disponíveis para uso no Windows Vista, no Windows Server 2008 e em versões subsequentes do sistema operacional. A API do cliente RTC fornece funcionalidade semelhante.\]
 
 O método **Getemailnames** Obtém uma matriz de nomes de email associados ao blob de conferência.
 
@@ -47,7 +47,7 @@ Ponteiro de **variante** para um SafeArray de nomes de listagem **BSTR** s.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método pode retornar um desses valores.
 
@@ -76,7 +76,7 @@ As listas das quais *pAddresses* e *pNames* apontam têm o mesmo comprimento.
 | Requisito | Valor |
 |-------------------------|---------------------------------------------------------------------------------------|
 | Versão da TAPI<br/> | Requer TAPI 3,0 ou posterior<br/>                                                 |
-| parâmetro<br/>       | <dl> <dt>Sdpblb. h</dt> </dl>   |
+| Cabeçalho<br/>       | <dl> <dt>Sdpblb. h</dt> </dl>   |
 | Biblioteca<br/>      | <dl> <dt>UUID. lib</dt> </dl>   |
 | DLL<br/>          | <dl> <dt>Sdpblb.dll</dt> </dl> |
 

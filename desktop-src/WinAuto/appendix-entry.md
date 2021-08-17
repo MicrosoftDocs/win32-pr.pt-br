@@ -4,12 +4,12 @@ description: Esta seção fornece informações complementares sobre a automaç�
 ms.assetid: faea97d1-5937-4fa2-acbf-a2142dd2a382
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b9fa80882c02c849fd568ee37bee5fe19f3fa0b7
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: 2019a86cb58c4bda60ad3f79b5186cfcb7bfab30e888a4a134128c78b1a2abe7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "105765033"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119955946"
 ---
 # <a name="appendixes-ui-automation"></a>Apêndices (automação da interface do usuário)
 

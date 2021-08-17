@@ -1,5 +1,5 @@
 ---
-description: Recupera informações sobre a execução de aplicativos.
+description: Recupera informações sobre aplicativos em execução.
 ms.assetid: 148e42aa-e99e-4fa2-8b74-a7ebf82b99d0
 title: Coleção ApplicationInstances
 ms.topic: reference
@@ -12,45 +12,45 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 56680a81cc564466dc3586bf0381cf4db97f914b
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 957fe3fa556a3e41e2484116ff2c9242fd63efa1469a4a6040f31aa04a3627e9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104456985"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119129378"
 ---
 # <a name="applicationinstances-collection"></a>Coleção ApplicationInstances
 
-Recupera informações sobre a execução de aplicativos.
+Recupera informações sobre aplicativos em execução.
 
-Esta coleção dá suporte aos métodos [**Add**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-add) e [**Remove**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-remove) do objeto [**COMAdminCatalogCollection**](comadmincatalogcollection.md) .
+Essa coleção dá suporte [**aos métodos Add**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-add) e [**Remove**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-remove) do [**objeto COMAdminCatalogCollection.**](comadmincatalogcollection.md)
 
 ## <a name="members"></a>Membros
 
-A coleção **ApplicationInstances** herda da interface [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) , mas não tem membros adicionais.
+A **coleção ApplicationInstances** herda da interface [**IUnknown,**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) mas não tem membros adicionais.
 
 ## <a name="related-collections"></a>Coleções relacionadas
 
 Você pode navegar desta coleção para qualquer uma das seguintes coleções:
 
 -   [**ErrorInfo**](errorinfo.md)
--   [**PropertyInfo**](propertyinfo.md)
+-   [**Propertyinfo**](propertyinfo.md)
 -   [**RelatedCollectionInfo**](relatedcollectioninfo.md)
 
 Você pode navegar até essa coleção das seguintes coleções:
 
 -   [**Aplicativos**](applications.md)
--   [**Básica**](root.md)
+-   [**Raiz**](root.md)
 
 ## <a name="properties"></a>Propriedades
 
-As propriedades a seguir têm suporte pelo objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) dentro da coleção:
+As propriedades a seguir têm suporte no [**objeto COMAdminCatalogObject**](comadmincatalogobject.md) dentro da coleção:
 
 -   [Aplicativo](#applicationinstances-collection)
 -   [HasRecycled](#hasrecycled)
 -   [InstanceID](#instanceid)
--   [IsPaused](#ispaused)
--   [PartitionID](#partitionid)
+-   [Ispaused](#ispaused)
+-   [Partitionid](#partitionid)
 -   [ProcessID](#processid)
 
 ### <a name="application"></a>Aplicativo
@@ -91,7 +91,7 @@ As propriedades a seguir têm suporte pelo objeto [**COMAdminCatalogObject**](co
 
 | Entrada | Valor |
 |----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Descrição    | O identificador global exclusivo para a instância do aplicativo. Essa propriedade é retornada quando o método de propriedade de [**chave**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_key) ou [**nome**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_name) é chamado em um objeto desta coleção. |
+| Descrição    | O identificador global exclusivo para a instância do aplicativo. Essa propriedade é retornada quando [**o método de**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_key) propriedade Key ou [**Name**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_name) é chamado em um objeto dessa coleção. |
 | Access         | ReadOnly                                                                                                                                                                                                                            |
 | Type           | String                                                                                                                                                                                                                              |
 | Padrão        | N/D                                                                                                                                                                                                                                 |
@@ -101,13 +101,13 @@ As propriedades a seguir têm suporte pelo objeto [**COMAdminCatalogObject**](co
 
  
 
-### <a name="ispaused"></a>IsPaused
+### <a name="ispaused"></a>Ispaused
 
 
 
 | Entrada | Valor |
 |----------------|-----------------------------------------------------------------|
-| Descrição    | Indica se a instância do aplicativo está pausada no momento. |
+| Descrição    | Indica se a instância do aplicativo está em pausa no momento. |
 | Access         | ReadOnly                                                        |
 | Tipo           | Bool                                                            |
 | Padrão        | Falso                                                           |
@@ -117,13 +117,13 @@ As propriedades a seguir têm suporte pelo objeto [**COMAdminCatalogObject**](co
 
  
 
-### <a name="partitionid"></a>PartitionID
+### <a name="partitionid"></a>Partitionid
 
 
 
 | Entrada | Valor |
 |----------------|-------------------------------------------------|
-| Descrição    | A ID da partição que o aplicativo está usando. |
+| Descrição    | A ID de partição que o aplicativo está usando. |
 | Access         | ReadOnly                                        |
 | Type           | String                                          |
 | Padrão        | N/D                                             |

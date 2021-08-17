@@ -1,11 +1,11 @@
 ---
-title: Propriedade TaskSettings. NetworkSettings
-description: Para scripts, Obtém ou define o objeto de configurações de rede que contém um nome e identificador de perfil de rede.
+title: Propriedade TaskSettings.NetworkSettings
+description: Para scripts, obtém ou define o objeto de configurações de rede que contém um nome e um identificador de perfil de rede.
 ms.assetid: 3d368f6c-4534-4e71-8fbd-84361730a3e2
 keywords:
-- Agendador de Tarefas da propriedade NetworkSettings
-- Propriedade NetworkSettings Agendador de Tarefas, objeto TaskSettings
-- Objeto TaskSettings Agendador de Tarefas, Propriedade NetworkSettings
+- Propriedade NetworkSettings Agendador de Tarefas
+- Propriedade NetworkSettings Agendador de Tarefas objeto , TaskSettings
+- Objeto TaskSettings Agendador de Tarefas propriedade , NetworkSettings
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 68c81350c8516a47eb7eb160541b86945c86e29b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 730701c71a69f05b73524d6f9d1d8ad3d89b5e93620664be33a80c5c41af1479
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103644381"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119059645"
 ---
-# <a name="tasksettingsnetworksettings-property"></a>Propriedade TaskSettings. NetworkSettings
+# <a name="tasksettingsnetworksettings-property"></a>Propriedade TaskSettings.NetworkSettings
 
-Para scripts, Obtém ou define o objeto de configurações de rede que contém um nome e identificador de perfil de rede. Se a propriedade [**RunOnlyIfNetworkAvailable**](tasksettings-runonlyifnetworkavailable.md) de [**TaskSettings**](tasksettings.md) for **true** e um propfile de rede for especificado na propriedade **NetworkSettings** , a tarefa será executada somente se o perfil de rede especificado estiver disponível.
+Para scripts, obtém ou define o objeto de configurações de rede que contém um nome e um identificador de perfil de rede. Se a propriedade [**RunOnlyIfNetworkAvailable**](tasksettings-runonlyifnetworkavailable.md) de [**TaskSettings**](tasksettings.md) for **True** e um propfile de rede for especificado na propriedade **NetworkSettings,** a tarefa será executado somente se o perfil de rede especificado estiver disponível.
 
 ## <a name="syntax"></a>Syntax
 
@@ -38,7 +38,7 @@ TaskSettings.NetworkSettings As NetworkSettings
 
 ## <a name="property-value"></a>Valor da propriedade
 
-Um objeto [**NetworkSettings**](networksettings.md) que contém um identificador e nome de perfil de rede.
+Um [**objeto NetworkSettings**](networksettings.md) que contém um nome e um identificador de perfil de rede.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -46,9 +46,9 @@ Um objeto [**NetworkSettings**](networksettings.md) que contém um identificador
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                          |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                    |
-| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd. tlb</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                          |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                    |
+| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 
 

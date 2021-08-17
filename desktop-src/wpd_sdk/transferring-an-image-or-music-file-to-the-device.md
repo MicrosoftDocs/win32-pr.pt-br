@@ -1,38 +1,38 @@
 ---
-description: Transferindo um arquivo de imagem ou música para o dispositivo
+description: Transferindo uma imagem ou arquivo de música para o dispositivo
 ms.assetid: bace274c-512a-46da-80a7-84734ee880b7
-title: Transferindo um arquivo de imagem ou música para o dispositivo
+title: Transferindo uma imagem ou arquivo de música para o dispositivo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2f3308212825f6c67ea79a40873fc466164d62f4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 44cf16c4c95080b5479825bbc4a0f8dcfd131fdb603821edab0a2e9df4d03c41
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105791412"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119928056"
 ---
-# <a name="transferring-an-image-or-music-file-to-the-device"></a>Transferindo um arquivo de imagem ou música para o dispositivo
+# <a name="transferring-an-image-or-music-file-to-the-device"></a>Transferindo uma imagem ou arquivo de música para o dispositivo
 
 Uma das operações mais comuns realizadas por um aplicativo é a transferência de conteúdo para um dispositivo conectado.
 
-Transferências de conteúdo são realizadas usando as interfaces descritas na tabela a seguir.
+As transferências de conteúdo são realizadas usando as interfaces descritas na tabela a seguir.
 
 
 
 | Interface                                                                | Descrição                                                    |
 |--------------------------------------------------------------------------|----------------------------------------------------------------|
-| [**Interface IPortableDeviceContent**](/windows/desktop/api/portabledeviceapi/nn-portabledeviceapi-iportabledevicecontent)       | Fornece acesso aos métodos específicos de conteúdo.               |
-| [**Interface IPortableDeviceDataStream**](/windows/desktop/api/PortableDeviceApi/nn-portabledeviceapi-iportabledevicedatastream) | Usado ao gravar o conteúdo no dispositivo.                   |
-| [**Interface IPortableDeviceValues**](iportabledevicevalues.md)         | Usado para recuperar propriedades que descrevem o conteúdo.         |
-| Interface IStream                                                        | Usado para simplificar a leitura do conteúdo e a gravação no dispositivo. |
+| [**IPortableDeviceContent Interface**](/windows/desktop/api/portabledeviceapi/nn-portabledeviceapi-iportabledevicecontent)       | Fornece acesso aos métodos específicos do conteúdo.               |
+| [**IPortableDeviceDataStream Interface**](/windows/desktop/api/PortableDeviceApi/nn-portabledeviceapi-iportabledevicedatastream) | Usado ao escrever o conteúdo no dispositivo.                   |
+| [**IPortableDeviceValues Interface**](iportabledevicevalues.md)         | Usado para recuperar propriedades que descrevem o conteúdo.         |
+| IStream Interface                                                        | Usado para simplificar a leitura de conteúdo e a escrita no dispositivo. |
 
 
 
  
 
-A `TransferContentToDevice` função no módulo ContentTransfer. cpp do aplicativo de exemplo demonstra como um aplicativo pode transferir conteúdo de um PC para um dispositivo conectado. Neste exemplo específico, o conteúdo transferido pode ser um arquivo que contém uma imagem, música ou informações de contato.
+A `TransferContentToDevice` função no módulo ContentTransfer.cpp do aplicativo de exemplo demonstra como um aplicativo pode transferir conteúdo de um computador para um dispositivo conectado. Neste exemplo específico, o conteúdo transferido pode ser um arquivo que contém uma imagem, música ou informações de contato.
 
-A primeira tarefa realizada pela `TransferContentToDevice` função é solicitar que o usuário insira um identificador de objeto, que identifica o objeto a ser transferido.
+A primeira tarefa realizada pela função é solicitar que o usuário insira um identificador de objeto, que identifica o objeto a `TransferContentToDevice` ser transferido.
 
 
 ```C++
@@ -57,7 +57,7 @@ if (FAILED(hr))
 
 
 
-A segunda tarefa realizada pela `TransferContentToDevice` função é criar um objeto [**IPortableDeviceContent**](/windows/desktop/api/portabledeviceapi/nn-portabledeviceapi-iportabledevicecontent) chamando o método [**IPortableDevice:: content**](/windows/desktop/api/PortableDeviceApi/nf-portabledeviceapi-iportabledevice-content) .
+A segunda tarefa realizada pela função é criar um objeto `TransferContentToDevice` [**IPortableDeviceContent**](/windows/desktop/api/portabledeviceapi/nn-portabledeviceapi-iportabledevicecontent) chamando o [**método IPortableDevice::Content.**](/windows/desktop/api/PortableDeviceApi/nf-portabledeviceapi-iportabledevice-content)
 
 
 ```C++
@@ -73,7 +73,7 @@ if (SUCCEEDED(hr))
 
 
 
-A próxima tarefa realizada pela `TransferContentToDevice` função é a criação de uma caixa de diálogo do **FileOpen** com a qual o usuário pode especificar o local e o nome do arquivo a ser transferido.
+A próxima tarefa realizada pela função é a criação de uma caixa de diálogo FileOpen com a qual o usuário pode especificar o local e o nome do arquivo `TransferContentToDevice` a ser transferido. 
 
 
 ```C++
@@ -100,9 +100,9 @@ if (SUCCEEDED(hr))
 
 
 
-A `TransferContentToDevice` função passa uma cadeia de caracteres de filtro ( `wszFileTypeFilter` ) para o método GetOpenFileName, que determina o tipo de arquivos que o usuário pode escolher. Consulte a `DoMenu` função no módulo WpdApiSample. cpp para obter exemplos dos três filtros diferentes permitidos pelo exemplo.
+A função passa uma cadeia de caracteres de filtro ( ) para o `TransferContentToDevice` método GetOpenFileName, que determina o tipo de `wszFileTypeFilter` arquivos que o usuário pode escolher. Consulte a `DoMenu` função no módulo WpdApiSample.cpp para ver exemplos dos três filtros diferentes permitidos pelo exemplo.
 
-Depois que o usuário identifica um arquivo específico para transferência para o dispositivo, a `TransferContentToDevice` função abre esse arquivo como um objeto IStream e recupera as propriedades necessárias para concluir a transferência.
+Depois que o usuário identifica um arquivo específico para transferência para o dispositivo, a função abre esse arquivo como um objeto IStream e recupera as propriedades necessárias para concluir a `TransferContentToDevice` transferência.
 
 
 ```C++
@@ -135,7 +135,7 @@ if (SUCCEEDED(hr))
 
 
 
-As propriedades obrigatórias são recuperadas chamando `GetRequiredPropertiesForContentType` -se a função auxiliar, que opera no objeto IStream. A `GetRequiredPropertiesForContentType` função auxiliar cria um objeto [**IPortableDeviceValues**](iportabledevicevalues.md) , recupera as propriedades na lista a seguir e as adiciona a esse objeto.
+As propriedades necessárias são recuperadas chamando `GetRequiredPropertiesForContentType` a função auxiliar, que opera no objeto IStream. A função auxiliar cria um objeto `GetRequiredPropertiesForContentType` [**IPortableDeviceValues,**](iportabledevicevalues.md) recupera as propriedades na lista a seguir e as adiciona a esse objeto.
 
 -   Identificador de objeto pai
 -   Tamanho do fluxo em bytes
@@ -146,9 +146,9 @@ As propriedades obrigatórias são recuperadas chamando `GetRequiredPropertiesFo
 
 O aplicativo de exemplo usa as propriedades recuperadas para criar o novo conteúdo no dispositivo. Isso é feito em três fases:
 
-1.  O aplicativo chama o método [**IPortableDeviceContent:: CreateObjectWithPropertiesAndData**](/windows/desktop/api/PortableDeviceApi/nf-portabledeviceapi-iportabledevicecontent-createobjectwithpropertiesanddata) para criar um novo objeto IStream no dispositivo.
-2.  O aplicativo usa esse objeto para obter um objeto [**IPortableDeviceDataStream**](/windows/desktop/api/PortableDeviceApi/nn-portabledeviceapi-iportabledevicedatastream) do driver WPD.
-3.  O aplicativo usa o novo objeto **IPortableDeviceDataStream** para gravar o conteúdo no dispositivo (por meio da função auxiliar StreamCopy). A função auxiliar grava os dados do arquivo de origem no fluxo retornado por [**IPortableDeviceContent:: CreateObjectWithPropertiesAndData**](/windows/desktop/api/PortableDeviceApi/nf-portabledeviceapi-iportabledevicecontent-createobjectwithpropertiesanddata).
+1.  O aplicativo chama o método [**IPortableDeviceContent::CreateObjectWithPropertiesAndData**](/windows/desktop/api/PortableDeviceApi/nf-portabledeviceapi-iportabledevicecontent-createobjectwithpropertiesanddata) para criar um novo objeto IStream no dispositivo.
+2.  O aplicativo usa esse objeto para obter um [**objeto IPortableDeviceDataStream**](/windows/desktop/api/PortableDeviceApi/nn-portabledeviceapi-iportabledevicedatastream) do driver WPD.
+3.  O aplicativo usa o novo **objeto IPortableDeviceDataStream** para gravar o conteúdo no dispositivo (por meio da função auxiliar StreamCopy). A função auxiliar grava os dados do arquivo de origem no fluxo retornado por [**IPortableDeviceContent::CreateObjectWithPropertiesAndData**](/windows/desktop/api/PortableDeviceApi/nf-portabledeviceapi-iportabledevicecontent-createobjectwithpropertiesanddata).
 4.  O aplicativo conclui a operação chamando o método Commit no fluxo de destino.
 
 
@@ -236,16 +236,16 @@ if (SUCCEEDED(hr))
 
 <dl> <dt>
 
-[**Interface IPortableDevice**](/windows/desktop/api/PortableDeviceApi/nn-portabledeviceapi-iportabledevice)
+[**IPortableDevice Interface**](/windows/desktop/api/PortableDeviceApi/nn-portabledeviceapi-iportabledevice)
 </dt> <dt>
 
-[**Interface IPortableDeviceContent**](/windows/desktop/api/portabledeviceapi/nn-portabledeviceapi-iportabledevicecontent)
+[**IPortableDeviceContent Interface**](/windows/desktop/api/portabledeviceapi/nn-portabledeviceapi-iportabledevicecontent)
 </dt> <dt>
 
-[**Interface IPortableDeviceDataStream**](/windows/desktop/api/PortableDeviceApi/nn-portabledeviceapi-iportabledevicedatastream)
+[**IPortableDeviceDataStream Interface**](/windows/desktop/api/PortableDeviceApi/nn-portabledeviceapi-iportabledevicedatastream)
 </dt> <dt>
 
-[**Interface IPortableDeviceValues**](iportabledevicevalues.md)
+[**IPortableDeviceValues Interface**](iportabledevicevalues.md)
 </dt> <dt>
 
 [**Guia de programação**](programming-guide.md)

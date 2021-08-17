@@ -3,9 +3,9 @@ title: Evento Player. Error
 description: O evento de erro ocorre quando há uma condição de erro.
 ms.assetid: 1e418a56-ae81-4ff0-b721-3390be08970d
 keywords:
-- Evento de erro do Windows Media Player
-- Evento de erro Windows Media Player, classe Player
-- Classe de Player Windows Media Player, evento de erro
+- Windows Media Player de eventos de erro
+- Windows Media Player de eventos de erro, classe de jogador
+- Windows Media Player de classe de Player, evento de erro
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a99411773994ad012155eea5a203ed341d50b460
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6a7e4642eef19b4edc4b1aa5bc75022a307d279d0d60482af0c7e2f0a9368c06
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105773073"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119134809"
 ---
 # <a name="playererror-event"></a>Evento Player. Error
 
@@ -40,13 +40,13 @@ Player.Error()
 
 Este evento não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse evento não retorna um valor.
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo de JScript a seguir cria um manipulador de eventos para exibir o texto de descrição do primeiro erro na fila de erros. O objeto de **jogador** foi criado com ID = "Player".
+o exemplo a seguir JScript cria um manipulador de eventos para exibir o texto de descrição do primeiro erro na fila de erros. O objeto de **jogador** foi criado com ID = "Player".
 
 
 ```JScript

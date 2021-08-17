@@ -4,18 +4,18 @@ ms.assetid: eaf1c298-f0af-4b29-a09a-f399da20335d
 title: Tipos de credenciais
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f30968484b2cfc89b9238f624d9299fb75c72bd7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 99d0e067b3918496310f3244153864abbf7548e5367569f4f2fbd06de40f207c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103921900"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119140929"
 ---
 # <a name="kinds-of-credentials"></a>Tipos de credenciais
 
 A API de gerenciamento de credenciais funciona com dois tipos de credenciais:
 
--   [Credenciais do domínio](#domain-credentials)
+-   [Credenciais de domínio](#domain-credentials)
 -   [Credenciais genéricas](#generic-credentials)
 
 ## <a name="domain-credentials"></a>Credenciais do domínio
@@ -26,7 +26,7 @@ As funções de gerenciamento de credenciais fornecem um mecanismo para que os a
 
 A parte secreta das credenciais de domínio, a senha, é protegida pelo sistema operacional. Somente o código em execução no processo com o LSA pode ler e gravar credenciais de domínio. Os aplicativos são limitados à gravação de credenciais de domínio.
 
-O Windows dá suporte ao uso expandido de credenciais de cartão inteligente e certificado. Para ajudar a garantir a segurança, a API de gerenciamento de credenciais nunca armazena o PIN do cartão inteligente no computador.
+o Windows dá suporte ao uso expandido de credenciais de cartão inteligente e certificado. Para ajudar a garantir a segurança, a API de gerenciamento de credenciais nunca armazena o PIN do cartão inteligente no computador.
 
 ## <a name="generic-credentials"></a>Credenciais genéricas
 

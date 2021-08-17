@@ -1,9 +1,9 @@
 ---
-title: Ambiente de. elementType
-description: O atributo elementType recupera o tipo do elemento (por exemplo, botão).
+title: AmbientAttributes.elementType
+description: O atributo elementType recupera o tipo do elemento (por exemplo, BUTTON).
 ms.assetid: afff5a23-d981-4a60-b709-a5b926ea1fc3
 keywords:
-- Windows Media Player de ambiente. elementType
+- AmbienteAttributes.elementType Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -19,9 +19,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119470066"
 ---
-# <a name="ambientattributeselementtype"></a>Ambiente de. elementType
+# <a name="ambientattributeselementtype"></a>AmbientAttributes.elementType
 
-O atributo **ElementType** recupera o tipo do elemento (por exemplo, botão).
+O **atributo elementType** recupera o tipo do elemento (por exemplo, BUTTON).
 
 ``` syntax
         elementID.elementType
@@ -29,7 +29,7 @@ O atributo **ElementType** recupera o tipo do elemento (por exemplo, botão).
 
 ## <a name="possible-values"></a>Valores possíveis
 
-Esse atributo é uma **cadeia de caracteres** somente leitura que indica o nome do elemento.
+Esse atributo é uma Cadeia de **Caracteres** somente leitura que indica o nome do elemento.
 
 ## <a name="remarks"></a>Comentários
 
@@ -41,7 +41,7 @@ Esse atributo é útil para determinar o tipo de elemento que disparou um evento
 
 | Requisito | Valor |
 |--------------------|------------------------------------------------------|
-| Versão<br/> | Windows Media Player versão 7,0 ou posterior<br/> |
+| Versão<br/> | Windows Media Player versão 7.0 ou posterior<br/> |
 
 
 

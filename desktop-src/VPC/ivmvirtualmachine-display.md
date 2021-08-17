@@ -1,11 +1,11 @@
 ---
-title: Propriedade de exibição IVMVirtualMachine (VPCCOMInterfaces. h)
+title: Propriedade de exibição IVMVirtualMachine (VPCCOMInterfaces.h)
 description: Recupera a exibição de vídeo para a máquina virtual.
 ms.assetid: ca5a433d-4613-4b6d-9de7-d9c6a2038e38
 keywords:
-- Exibir Propriedade PC virtual
-- Exibir a propriedade Virtual PC, interface IVMVirtualMachine
-- IVMVirtualMachine interface virtual PC, exibir Propriedade
+- Exibir a propriedade Pc Virtual
+- Propriedade de exibição PC Virtual, interface IVMVirtualMachine
+- INTERFACE IVMVirtualMachine PC Virtual, propriedade Display
 topic_type:
 - apiref
 api_name:
@@ -26,7 +26,7 @@ ms.locfileid: "119471937"
 ---
 # <a name="ivmvirtualmachinedisplay-property"></a>Propriedade IVMVirtualMachine::D isplay
 
-\[Windows O Virtual PC não está mais disponível para uso a partir de Windows 8. Em vez disso, use o [provedor WMI do Hyper-V (v2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
+\[Windows O PC virtual não está mais disponível para uso a partir Windows 8. Em vez disso, use o provedor WMI do [Hyper-V (V2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
 
 Recupera a exibição de vídeo para a máquina virtual.
 
@@ -45,7 +45,7 @@ HRESULT get_Display(
 
 ## <a name="property-value"></a>Valor da propriedade
 
-O objeto [**IVMDisplay**](ivmdisplay.md) .
+O [**objeto IVMDisplay.**](ivmdisplay.md)
 
 ## <a name="error-codes"></a>Códigos do Erro
 
@@ -54,9 +54,9 @@ O objeto [**IVMDisplay**](ivmdisplay.md) .
 | Nome/valor                                                                                                                                                    | Significado                                      |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------|
 | <dl> <dt>S \_ OK</dt> <dt>0</dt> </dl>                       | A operação foi bem-sucedida.<br/>     |
-| <dl> <dt>E \_ </dt> <dt>0X80004003</dt> de ponteiro </dl>         | O parâmetro é **NULL**.<br/>        |
-| <dl> <dt>VM \_ E 0xA0040207 de \_ VM \_ desconhecido</dt> <dt></dt> </dl> | A configuração é desconhecida.<br/>     |
-| <dl> <dt>DISP \_ E \_ </dt> <dt>0x80020009</dt> de exceção </dl> | Ocorreu um erro inesperado.<br/> |
+| <dl> <dt>E \_ PONTEIRO</dt> <dt>0x80004003</dt> </dl>         | O parâmetro é **NULL.**<br/>        |
+| <dl> <dt>VM \_ E \_ VM \_ UNKNOWN</dt> <dt>0xA0040207</dt> </dl> | A configuração é desconhecida.<br/>     |
+| <dl> <dt>DISP \_ E \_ EXCEPTION</dt> <dt>0x80020009</dt> </dl> | Ocorreu um erro inesperado.<br/> |
 
 
 
@@ -66,11 +66,11 @@ O objeto [**IVMDisplay**](ivmdisplay.md) .
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[somente aplicativos de área de trabalho Windows 7\]<br/>                                                    |
+| Cliente mínimo com suporte<br/> | Windows 7 \[ aplicativos da área de trabalho\]<br/>                                                    |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                     |
-| Fim do suporte do cliente<br/>    | Windows 7<br/>                                                                          |
+| Fim do suporte ao cliente<br/>    | Windows 7<br/>                                                                          |
 | Produto<br/>                  | Windows Virtual PC<br/>                                                                 |
-| parâmetro<br/>                   | <dl> <dt>VPCCOMInterfaces. h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>VPCCOMInterfaces.h</dt> </dl> |
 | IID<br/>                      | IID \_ IVMVirtualMachine é definido como f7092aa1-33ed-4f78-a59f-c00adfc2edd7<br/>          |
 
 

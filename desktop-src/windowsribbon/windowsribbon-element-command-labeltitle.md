@@ -3,7 +3,7 @@ title: Propriedade Command. LabelTitle
 description: Representa um título de rótulo.
 ms.assetid: 97378ec3-7988-4e39-9cf5-c382b246c5c9
 keywords:
-- Faixa de das propriedades do Windows de Propriedade Command. LabelTitle
+- propriedade Command. LabelTitle da faixa de Windows
 topic_type:
 - apiref
 api_name:
@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ed6d6c72ddd60cca63834fdcf21cf8f8b726ad22
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c44995d3f17b165c38f9fe7490a33e5d140c8d2b375d5d6b625bb00e3228b21e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104499678"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119810786"
 ---
 # <a name="commandlabeltitle-property"></a>Propriedade Command. LabelTitle
 
@@ -137,8 +137,8 @@ O exemplo a seguir demonstra a marcação para um elemento [**Command**](windows
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008 R2\]<br/> |
+| Cliente mínimo com suporte<br/> | \[somente aplicativos de área de trabalho Windows 7\]<br/>              |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do Server 2008 R2\]<br/> |
 
 
 

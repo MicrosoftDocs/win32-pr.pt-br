@@ -1,28 +1,28 @@
 ---
 title: Monitorando aplicativos
-description: Este tópico discute como os elementos da biblioteca de gerenciamento de troca dinâmica de dados podem ser usados para criar um aplicativo que monitora a atividade de troca de dados dinâmicos no sistema.
+description: este tópico discute como os elementos da biblioteca de gerenciamento de troca dinâmica de dados podem ser usados para criar um aplicativo que monitora a atividade de troca de dados dinâmicos no sistema.
 ms.assetid: 6705dc8e-d1e9-4057-9fa2-42cd5cf818af
 keywords:
-- Interface do usuário do Windows, troca dinâmica de dados (DDE)
-- Troca dinâmica de dados (DDE), monitoramento de aplicativos
+- Windows Interface do usuário, troca dinâmica de dados (DDE)
+- troca dinâmica de dados (DDE), monitoramento de aplicativos
 - DDE (troca dinâmica de dados), monitorando aplicativos
 - troca de dados, troca dinâmica de dados (DDE)
-- Interface do usuário do Windows, biblioteca de gerenciamento de troca dinâmica de dados (DDEML)
+- Windows Interface do usuário, biblioteca de gerenciamento de troca dinâmica de dados (DDEML)
 - DDEML (biblioteca de gerenciamento de troca dinâmica de dados), aplicativos de monitoramento
 - DDEML (biblioteca de gerenciamento de troca dinâmica de dados), aplicativos de monitoramento
-- Data Exchange, biblioteca de gerenciamento de troca dinâmica de dados (DDEML)
+- data exchange, biblioteca de gerenciamento de troca dinâmica de dados (DDEML)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f1f75685d4caa15e519485b2d8b37983faa35366
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 8fbf6db1faa765378ea2b22b1146de770e9c94b14cf7e9e511ab862be48369c2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104005261"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119128548"
 ---
 # <a name="monitoring-applications"></a>Monitorando aplicativos
 
-Os elementos de API da biblioteca de gerenciamento de troca dinâmica de dados (DDEML) podem ser usados para criar um aplicativo que monitora a atividade de troca dinâmica de dados (DDE) no sistema. Como qualquer aplicativo de DDEML, um aplicativo de monitoramento de DDE contém uma função de retorno de chamada DDE. O DDEML notifica uma função de retorno de chamada DDE do aplicativo de monitoramento sempre que um evento DDE ocorrer, passando informações sobre o evento para a função de retorno de chamada. O aplicativo normalmente exibe as informações em uma janela ou grava-as em um arquivo.
+os elementos de API da biblioteca de gerenciamento de troca dinâmica de dados (DDEML) podem ser usados para criar um aplicativo que monitora a atividade de troca dinâmica de dados (DDE) no sistema. Como qualquer aplicativo de DDEML, um aplicativo de monitoramento de DDE contém uma função de retorno de chamada DDE. O DDEML notifica uma função de retorno de chamada DDE do aplicativo de monitoramento sempre que um evento DDE ocorrer, passando informações sobre o evento para a função de retorno de chamada. O aplicativo normalmente exibe as informações em uma janela ou grava-as em um arquivo.
 
 Para receber notificações do DDEML, um aplicativo deve ter sido registrado como um monitor DDE, especificando o \_ sinalizador do monitor APPCLASS em uma chamada para a função [**DdeInitialize**](/windows/desktop/api/Ddeml/nf-ddeml-ddeinitializea) . Nesta mesma chamada, o aplicativo pode especificar um ou mais sinalizadores de monitor para indicar os tipos de eventos para os quais o DDEML é notificar a função de retorno de chamada do aplicativo. Os sinalizadores de monitor a seguir podem ser especificados por um aplicativo:
 
@@ -40,7 +40,7 @@ Para receber notificações do DDEML, um aplicativo deve ter sido registrado com
 
 
 
- 
+ 
 
 O exemplo a seguir mostra como registrar um aplicativo de monitoramento de DDE para que sua função de retorno de chamada DDE receba notificações de todos os eventos DDE.
 
@@ -84,7 +84,7 @@ O DDEML informa um aplicativo de monitoramento de um evento DDE enviando uma tra
 
 
 
- 
+ 
 
 O exemplo a seguir mostra a função de retorno de chamada DDE de um aplicativo de monitoramento DDE que formata informações sobre cada evento de identificador de cadeia de caracteres e, em seguida, exibe as informações em uma janela. A função usa a estrutura [**MONHSZSTRUCT**](/windows/win32/api/ddeml/ns-ddeml-monhszstructa) para extrair as informações do objeto DDE.
 
@@ -189,9 +189,9 @@ DWORD dwData2;
 
 
 
- 
+ 
 
- 
+ 
 
 
 

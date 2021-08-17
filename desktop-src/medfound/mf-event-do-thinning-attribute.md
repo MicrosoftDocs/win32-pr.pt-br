@@ -1,33 +1,33 @@
 ---
-description: Quando uma fonte de mídia solicita uma nova taxa de reprodução, esse atributo especifica se a origem também solicita a fina. Para obter uma definição de estreitamento, consulte sobre o controle de taxa.
+description: Quando uma fonte de mídia solicita uma nova taxa de reprodução, esse atributo especifica se a origem também solicita a afinação. Para uma definição de afinamento, consulte Sobre o Controle de Taxa.
 ms.assetid: 42b6d0b3-e5af-4a48-969c-53628d1b7c31
-title: Atributo MF_EVENT_DO_THINNING (Mfapi. h)
+title: MF_EVENT_DO_THINNING atributo (Mfapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8a08807413881a13789c50dbf2d063693e7e4539
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b9305df2b17e00b03bd9788ecd8caf26db82b8e331d1c72626374b63e7dcaf15
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103921029"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119104932"
 ---
-# <a name="mf_event_do_thinning-attribute"></a>O \_ evento MF \_ faz o atributo de \_ finamento
+# <a name="mf_event_do_thinning-attribute"></a>Atributo MF \_ EVENT \_ DO \_ THINNING
 
-Quando uma fonte de mídia solicita uma nova taxa de reprodução, esse atributo especifica se a origem também solicita a fina. Para obter uma definição de estreitamento, consulte [sobre o controle de taxa](about-rate-control.md).
+Quando uma fonte de mídia solicita uma nova taxa de reprodução, esse atributo especifica se a origem também solicita a afinação. Para uma definição de afinamento, consulte [About Rate Control](about-rate-control.md).
 
 ## <a name="data-type"></a>Tipo de dados
 
 **UINT32**
 
-Tratar como um valor booliano.
+Trate como um valor booliana.
 
 ## <a name="remarks"></a>Comentários
 
-Esse atributo é usado com o evento [MESourceRateChangeRequested](mesourceratechangerequested.md) . Se o valor for **true**, a origem da mídia estará solicitando um comutador para reprodução fina.
+Esse atributo é usado com o [evento MESourceRateChangeRequested.](mesourceratechangerequested.md) Se o valor for **TRUE,** a fonte de mídia solicitará uma opção para reprodução emagretada.
 
-O valor padrão é **false**.
+O valor padrão é **FALSE**.
 
-A constante de GUID para esse atributo é exportada de mfuuid. lib.
+A constante GUID para esse atributo é exportada de mfuuid.lib.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -35,9 +35,9 @@ A constante de GUID para esse atributo é exportada de mfuuid. lib.
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                     |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                               |
-| parâmetro<br/>                   | <dl> <dt>Mfapi. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                     |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                               |
+| Cabeçalho<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
 
 
 
@@ -45,16 +45,16 @@ A constante de GUID para esse atributo é exportada de mfuuid. lib.
 
 <dl> <dt>
 
-[Lista alfabética de atributos de Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
-[Atributos do evento](event-attributes.md)
+[Atributos de evento](event-attributes.md)
 </dt> <dt>
 
-[**IMFAttributes:: GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32)
+[**IMFAttributes::GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32)
 </dt> <dt>
 
-[**IMFAttributes:: setuint32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)
+[**IMFAttributes::SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)
 </dt> </dl>
 
  

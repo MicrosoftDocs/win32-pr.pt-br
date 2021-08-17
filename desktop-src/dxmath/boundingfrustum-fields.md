@@ -4,12 +4,12 @@ ms.assetid: 4c42f638-e909-4e40-bd35-572910294e4d
 title: Campos BoundingFrustum
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 121bbc72fd665e0c96c4db76811e95949891c905
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3b8939cfd950ea2571043f67b30563ec1d9bbf5013d274b5d8031ade9611901d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105772645"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119118543"
 ---
 # <a name="boundingfrustum-fields"></a>Campos BoundingFrustum
 
@@ -22,8 +22,8 @@ ms.locfileid: "105772645"
 | [**Far**](boundingfrustum-far.md)<br/>                    | A distância do plano distante da origem do [**BoundingFrustum**](/windows/win32/api/directxcollision/ns-directxcollision-boundingfrustum).<br/>  |
 | [**LeftSlope**](boundingfrustum-leftslope.md)<br/>        | A inclinação do lado esquerdo do [**BoundingFrustum**](/windows/win32/api/directxcollision/ns-directxcollision-boundingfrustum).<br/>                     |
 | [**Meu**](boundingfrustum-near.md)<br/>                  | A distância do próximo plano do [**BoundingFrustum**](/windows/win32/api/directxcollision/ns-directxcollision-boundingfrustum) de sua origem.<br/> |
-| [**Direção**](boundingfrustum-orientation.md)<br/>    | A orientação do [**BoundingFrustum**](/windows/win32/api/directxcollision/ns-directxcollision-boundingfrustum).<br/>                                |
-| [**Ter**](boundingfrustum-origin.md)<br/>              | A origem do [**BoundingFrustum**](/windows/win32/api/directxcollision/ns-directxcollision-boundingfrustum).<br/>                                     |
+| [**Orientation**](boundingfrustum-orientation.md)<br/>    | A orientação do [**BoundingFrustum**](/windows/win32/api/directxcollision/ns-directxcollision-boundingfrustum).<br/>                                |
+| [**Origem**](boundingfrustum-origin.md)<br/>              | A origem do [**BoundingFrustum**](/windows/win32/api/directxcollision/ns-directxcollision-boundingfrustum).<br/>                                     |
 | [**RightSlope**](boundingfrustum-rightslope.md)<br/>      | A inclinação do lado direito do [**BoundingFrustum**](/windows/win32/api/directxcollision/ns-directxcollision-boundingfrustum).<br/>                    |
 | [**TopSlope**](boundingfrustum-topslope.md)<br/>          | A inclinação da parte superior do [**BoundingFrustum**](/windows/win32/api/directxcollision/ns-directxcollision-boundingfrustum).<br/>                           |
 

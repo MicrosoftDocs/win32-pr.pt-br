@@ -6,12 +6,12 @@ keywords:
 - MIDL, atributos, biblioteca de tipos de IDL
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5ddbe0399a526c8c4093d23b160452d23bed257a
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 302597f8a4600c2ce168a9f16996dfa274a53bd6e47d1dda3533dd85cc03dcba
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104007415"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119066656"
 ---
 # <a name="type-library-attributes"></a>Atributos da biblioteca de tipos
 
@@ -29,7 +29,7 @@ As palavras-chave a seguir especificam informações de biblioteca de tipos dent
 | [**Personalizar**](custom.md)                     | Define um atributo personalizado (um não definido no MIDL).                                                                                                                                                                                                                                                                                                                                                  |
 | [**os**](default.md)                   | Indica que a interface ou dispinterface, definida em uma [**coclass**](coclass.md), representa a interface padrão.                                                                                                                                                                                                                                                                          |
 | [**defaultbind**](defaultbind.md)           | Indica a propriedade única e vinculável que melhor representa o objeto.                                                                                                                                                                                                                                                                                                                               |
-| [**defaultcollelem**](defaultcollelem.md)   | Sinaliza a propriedade como uma função de acessador para um elemento da coleção padrão. Usado para a otimização de código do Microsoft Visual Basic.                                                                                                                                                                                                                                                                |
+| [**defaultcollelem**](defaultcollelem.md)   | Sinaliza a propriedade como uma função de acessador para um elemento da coleção padrão. usado para a otimização de código do Microsoft Visual Basic.                                                                                                                                                                                                                                                                |
 | [**ValorPadrão**](defaultvalue.md)         | Permite a especificação de um valor padrão para um parâmetro opcional tipado.                                                                                                                                                                                                                                                                                                                                |
 | [**defaultvtable**](defaultvtable.md)       | Permite que um objeto tenha duas interfaces de origem diferentes.                                                                                                                                                                                                                                                                                                                                              |
 | [**dispinterface**](dispinterface.md)       | Define um conjunto de propriedades e métodos nos quais você pode chamar **IDispatch:: Invoke**.                                                                                                                                                                                                                                                                                                                   |
@@ -55,13 +55,13 @@ As palavras-chave a seguir especificam informações de biblioteca de tipos dent
 | [**propget**](propget.md)                   | Especifica uma função de acessador de propriedade.                                                                                                                                                                                                                                                                                                                                                                |
 | [**propput**](propput.md)                   | Especifica uma função de configuração de propriedade.                                                                                                                                                                                                                                                                                                                                                                 |
 | [**propputref**](propputref.md)             | Especifica uma função de configuração de propriedade que usa uma referência em vez de um valor.                                                                                                                                                                                                                                                                                                                        |
-| [**publicada**](public.md)                     | Garante que um alias declarado com [**typedef**](typedef.md) se torne parte da biblioteca de tipos.                                                                                                                                                                                                                                                                                                       |
+| [**público**](public.md)                     | Garante que um alias declarado com [**typedef**](typedef.md) se torne parte da biblioteca de tipos.                                                                                                                                                                                                                                                                                                       |
 | [**leitura**](readonly.md)                 | Proíbe a atribuição de um novo valor a uma variável.                                                                                                                                                                                                                                                                                                                                                         |
 | [**requestedit**](requestedit.md)           | Indica que a propriedade dá suporte à notificação **OnRequestEdit** .                                                                                                                                                                                                                                                                                                                               |
 | [**Restricted**](restricted.md)             | Especifica que uma biblioteca ou membro de um módulo, interface ou Dispinterface não pode ser chamado arbitrariamente.                                                                                                                                                                                                                                                                                             |
 | [**retval**](retval.md)                     | Designa o parâmetro que recebe o valor de retorno do membro.                                                                                                                                                                                                                                                                                                                                 |
 | [**original**](source.md)                     | Indica que um membro de uma [**coclass**](coclass.md), propriedade ou método é uma fonte de eventos.                                                                                                                                                                                                                                                                                                    |
-| [**string**](string.md)                     | Indica que a matriz [**Char**](char-idl.md)-dimensional, [**WCHAR \_ t**](wchar-t.md), [**byte**](byte.md) (ou equivalente) ou o ponteiro para tal matriz deve ser tratado como uma cadeia de caracteres.                                                                                                                                                                                                      |
+| [**Strings**](string.md)                     | Indica que a matriz [**Char**](char-idl.md)-dimensional, [**WCHAR \_ t**](wchar-t.md), [**byte**](byte.md) (ou equivalente) ou o ponteiro para tal matriz deve ser tratado como uma cadeia de caracteres.                                                                                                                                                                                                      |
 | [**uidefault**](uidefault.md)               | Indica que o membro de informações de tipo é o membro padrão para exibição na interface do usuário.                                                                                                                                                                                                                                                                                                    |
 | [**usesgetlasterror**](usesgetlasterror.md) | Especifica que um ponto de entrada de módulo usa [**SetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-setlasterror) para retornar códigos de erro e que um chamador pode chamar [**GetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) para recuperar o código de erro se houver um erro ao inserir uma função.                                                                                                                                                     |
 | [**personalizado**](uuid.md)                         | Designa um identificador exclusivo para uma biblioteca de tipos, [**coclass**](coclass.md)ou interface.                                                                                                                                                                                                                                                                                                           |
@@ -70,7 +70,7 @@ As palavras-chave a seguir especificam informações de biblioteca de tipos dent
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -85,6 +85,6 @@ As palavras-chave a seguir especificam informações de biblioteca de tipos dent
 [Gerando uma biblioteca de tipos com MIDL](generating-a-type-library-with-midl-2.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

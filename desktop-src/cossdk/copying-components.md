@@ -1,34 +1,34 @@
 ---
-description: Você pode copiar um componente de um aplicativo COM+ para outro. Depois de copiar um componente para outro aplicativo COM+, você pode configurar esse componente de maneira diferente do componente original.
+description: Você pode copiar um componente de um aplicativo COM+ para outro. Depois de copiar um componente para outro aplicativo COM+, você pode configurar esse componente de forma diferente do componente original.
 ms.assetid: 49dfd449-05eb-4442-989f-15bc1586d8c5
 title: Copiando componentes
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2224c42e9891c67999934062a50cd2215da2adc4
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 5cbc9d556a9e8ad375eca93d7edb7530aff5f4d9d5fde7c19cfa6b7fcb7220ad
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104500926"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119128798"
 ---
 # <a name="copying-components"></a>Copiando componentes
 
-Você pode copiar um componente de um aplicativo COM+ para outro. Depois de copiar um componente para outro aplicativo COM+, você pode configurar esse componente de maneira diferente do componente original.
+Você pode copiar um componente de um aplicativo COM+ para outro. Depois de copiar um componente para outro aplicativo COM+, você pode configurar esse componente de forma diferente do componente original.
 
 **Para copiar um componente de um aplicativo COM+ para outro**
 
-1.  No painel de detalhes da ferramenta administrativa serviços de componentes, clique com o botão direito do mouse no componente que você deseja copiar e clique em **copiar**.
+1.  No painel de detalhes da ferramenta administrativa serviços de componentes, clique com o botão direito do mouse no componente que você deseja copiar e clique em **Copiar**.
 
-2.  Na caixa de diálogo **copiar componente** , no painel **selecionar um destino** , selecione o aplicativo com+ para o qual o componente será copiado.
+2.  Na caixa **de diálogo Copiar** Componente, no painel Selecionar um Destino, selecione o aplicativo COM+ para o qual o componente será copiado. 
 
 3.  Insira o novo ProgID para o componente copiado.
 
     > [!Note]  
-    > O ProgID do componente original é exibido para referência e não pode ser alterado.
+    > O ProgID para o componente original é exibido para referência e não pode ser alterado.
 
      
 
-4.  Insira o novo CLSID para o componente copiado. COM+ exibe um CLSID gerado automaticamente. Na maioria dos casos, isso será suficiente para identificar exclusivamente o componente copiado. Insira um novo CLSID somente se desejar alterar aquele fornecido pelo COM+.
+4.  Insira o novo CLSID para o componente copiado. O COM+ exibe um CLSID gerado automaticamente. Na maioria dos casos, isso será suficiente para identificar exclusivamente o componente copiado. Insira um novo CLSID somente se você quiser alterar o fornecido pelo COM+.
 
 5.  Clique em **OK**.
 

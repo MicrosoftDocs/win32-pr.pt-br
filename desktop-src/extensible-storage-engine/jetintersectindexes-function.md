@@ -18,17 +18,17 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 4bdffa6f21a65ae7f438f87ea0d8d2adf4aed6a9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 23d9d7bcd7d41251883313517db34f0cbca0ec8e6d2aaa5946348057cc29d844
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105761206"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118978866"
 ---
 # <a name="jetintersectindexes-function"></a>Função JetIntersectIndexes
 
 
-_**Aplica-se a:** Windows | Windows Server_
+_**Aplica-se a:** Windows | Windows Servidor_
 
 ## <a name="jetintersectindexes-function"></a>Função JetIntersectIndexes
 
@@ -70,7 +70,7 @@ Reservado para uso futuro.
 
 ### <a name="return-value"></a>Valor Retornado
 
-Essa função retorna o tipo de dados [JET_ERR](./jet-err.md) com um dos códigos de retorno a seguir. Para obter mais informações sobre erros do ESE, consulte [erros do mecanismo de armazenamento extensível](./extensible-storage-engine-errors.md) e [parâmetros de tratamento de erros](./error-handling-parameters.md).
+Essa função retorna o tipo de dados [JET_ERR](./jet-err.md) com um dos códigos de retorno a seguir. para obter mais informações sobre erros do ESE, consulte [erros do mecanismo de Armazenamento extensível](./extensible-storage-engine-errors.md) e [parâmetros de tratamento de erros](./error-handling-parameters.md).
 
 <table>
 <colgroup>
@@ -95,7 +95,7 @@ Essa função retorna o tipo de dados [JET_ERR](./jet-err.md) com um dos código
 <tr class="odd">
 <td><p>JET_errInstanceUnavailable</p></td>
 <td><p>Não é possível concluir a operação porque a instância associada à sessão encontrou um erro fatal que exige que o acesso a todos os dados seja revogado para proteger a integridade desses dados.</p>
-<p><strong>Windows XP:</strong>  Esse valor de retorno é introduzido no Windows XP.</p></td>
+<p><strong>Windows XP:</strong>  esse valor de retorno é introduzido no Windows XP.</p></td>
 </tr>
 <tr class="even">
 <td><p>JET_errInvalidgrbit</p></td>
@@ -143,7 +143,7 @@ Essa função retorna o tipo de dados [JET_ERR](./jet-err.md) com um dos código
 <tr class="odd">
 <td><p>JET_errSessionSharingViolation</p></td>
 <td><p>É ilegal usar a mesma sessão de mais de um thread ao mesmo tempo.</p>
-<p><strong>Windows XP:</strong>  Esse valor de retorno é introduzido no Windows XP.</p></td>
+<p><strong>Windows XP:</strong>  esse valor de retorno é introduzido no Windows XP.</p></td>
 </tr>
 <tr class="even">
 <td><p>JET_errTermInProgress</p></td>
@@ -185,7 +185,7 @@ A tabela temporária que contém o conjunto de resultados é uma tabela simples 
 
 A tabela temporária retornada por **JetIntersectIndexes** só pode ser verificada em uma direção de encaminhamento. Ele também deve ser fechado por meio de [JetCloseTable](./jetclosetable-function.md) quando a verificação for concluída. Para obter mais informações sobre tabelas temporárias e como elas funcionam, consulte [JetOpenTemporaryTable](./jetopentemporarytable-function.md).
 
-O **JetIntersectIndexes** geralmente é uma maneira eficiente e conveniente de filtrar registros com base em vários critérios indexados. No entanto, há algumas dicas importantes que devem ser seguidas para maximizar a utilidade desse recurso. Se você souber que um dos critérios é tão restritivo que o intervalo de índice resultante tem poucos registros, é provável que seja melhor simplesmente percorrer esse intervalo de índice e filtrar os registros no nível do aplicativo. Além disso, se você souber que tem critérios muito menos restritivos do que outros critérios em sua interseção, você pode considerar descartar os critérios muito menos restritivos da interseção. Por fim, se você souber que um dos critérios não é tão restritivo, de modo que o intervalo de índice resultante seja quase tão grande quanto o índice primário, é improvável que a interseção com esse intervalo de índice se beneficiará (reduza o tamanho do) do conjunto de resultados. Em todos os casos, você deve estar selecionando critérios de uma maneira que utilizará o menor número possível de entradas de índice na entrada e gerará o conjunto mais específico de indicadores na saída para o desempenho máximo.
+**JetIntersectIndexes geralmente** é uma maneira eficiente e conveniente de filtrar registros com base em vários critérios indexados. No entanto, há algumas dicas importantes que devem ser seguidas para maximizar a utilidade desse recurso. Se você sabe que um dos critérios é tão restritivo que o intervalo de índice resultante tem muito poucos registros, provavelmente é melhor simplesmente seguir esse intervalo de índice e filtrar os registros no nível do aplicativo. Além disso, se você sabe que tem critérios muito menos restritivos do que outros critérios em sua interseção, considere a possibilidade de excluir esses critérios muito menos restritivos da interseção. Por fim, se você sabe que um dos critérios não é restritivo, de forma que o intervalo de índice resultante seja quase tão grande quanto o índice primário, é improvável que a interseção com esse intervalo de índice se beneficie (reduza o tamanho) do conjunto de resultados. Em todos os casos, você deve selecionar critérios de uma maneira que leve o menor número possível de entradas de índice na entrada e gere o conjunto mais específico de indicadores na saída para o desempenho máximo.
 
 #### <a name="requirements"></a>Requisitos
 
@@ -197,19 +197,19 @@ O **JetIntersectIndexes** geralmente é uma maneira eficiente e conveniente de f
 <tbody>
 <tr class="odd">
 <td><p><strong>Cliente</strong></p></td>
-<td><p>Requer o Windows Vista, o Windows XP ou o Windows 2000 Professional.</p></td>
+<td><p>Requer Windows Vista, Windows XP ou Windows 2000 Professional.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Servidor</strong></p></td>
-<td><p>Requer o Windows Server 2008, o Windows Server 2003 ou o Windows 2000 Server.</p></td>
+<td><p>Requer Windows Server 2008, Windows Server 2003 ou Windows 2000 Server.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Cabeçalho</strong></p></td>
-<td><p>Declarado em ESENT. h.</p></td>
+<td><p>Declarado em Esent.h.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Biblioteca</strong></p></td>
-<td><p>Use ESENT. lib.</p></td>
+<td><p>Use ESENT.lib.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>DLL</strong></p></td>

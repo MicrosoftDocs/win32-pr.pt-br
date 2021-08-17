@@ -128,7 +128,7 @@ Observe que o [**CreateBitmapFromWicBitmap**](id2d1devicecontext-createbitmapfro
 
 ### <a name="windows-imaging-component-apis"></a>Windows APIs do componente de geração de imagens
 
-o Windows o componente de geração de imagens (WIC) adiciona um novo codec DDS no Windows 8.1. Além disso, ele adiciona novas interfaces que dão suporte ao acesso a dados específicos de DDS, incluindo dados de pixels compactados em bloco:
+O Windows WIC (componente de geração de imagens) adiciona um novo codec DDS Windows 8.1. Além disso, ele adiciona novas interfaces que suportam o acesso a dados específicos de DDS, incluindo dados de pixel compactados em bloco:
 
 -   [**IWICDdsDecoder**](/windows/desktop/api/wincodec/nn-wincodec-iwicddsdecoder)
 -   [**IWICDdsEncoder**](/windows/desktop/api/wincodec/nn-wincodec-iwicddsencoder)
@@ -136,15 +136,15 @@ o Windows o componente de geração de imagens (WIC) adiciona um novo codec DDS 
 
 ### <a name="block-compressed-wic-pixel-formats"></a>Bloquear formatos de pixel WIC compactados
 
-Não há novos formatos de pixel compactados em bloco de WIC no Windows 8.1. Em vez disso, se você obtiver um [**IWICBitmapFrameDecode**](/windows/desktop/api/wincodec/nn-wincodec-iwicbitmapframedecode) do decodificador DDS e chamar [**CopyPixels**](/windows/desktop/api/wincodec/nf-wincodec-iwicbitmapsource-copypixels), receberá pixels não compactados padrão, como WICPixelFormat32bppPBGRA. Você pode usar [**IWICDdsFrameDecode:: CopyBlocks**](/windows/desktop/api/wincodec/nf-wincodec-iwicddsframedecode-copyblocks) para obter os dados compactados de blocos brutos na forma de um buffer de memória de um arquivo DDS.
+Não há nenhum novo formato de pixel compactado de bloco WIC Windows 8.1. Em vez disso, se você obter um [**IWICBitmapFrameDecode**](/windows/desktop/api/wincodec/nn-wincodec-iwicbitmapframedecode) do decodificador DDS e chamar [**CopyPixels**](/windows/desktop/api/wincodec/nf-wincodec-iwicbitmapsource-copypixels), receberá pixels descompactados padrão, como WICPixelFormat32bppPBGRA. Você pode usar [**IWICDdsFrameDecode::CopyBlocks**](/windows/desktop/api/wincodec/nf-wincodec-iwicddsframedecode-copyblocks) para obter os dados brutos compactados do bloco na forma de um buffer de memória de um arquivo DDS.
 
-### <a name="multi-frame-dds-access"></a>Acesso de DDS de vários quadros
+### <a name="multi-frame-dds-access"></a>Acesso a DDS de vários quadros
 
-O formato de arquivo DDS permite que várias imagens relacionadas sejam armazenadas em um único arquivo. Por exemplo, um arquivo DDS pode conter um cubemap, uma textura de volume ou uma matriz de textura, que pode ser mipmapped. No Direct3D, essas várias imagens são expostas como subrecursos. No WIC, várias imagens são expostas como quadros ([**IWICBitmapFrameDecode**](/windows/desktop/api/wincodec/nn-wincodec-iwicbitmapframedecode) e [**IWICBitmapFrameEncode**](/windows/desktop/api/wincodec/nn-wincodec-iwicbitmapframeencode)).
+O formato de arquivo DDS permite que várias imagens relacionadas sejam armazenadas em um único arquivo. Por exemplo, um arquivo DDS pode conter um cubemap, textura de volume ou matriz de textura, que pode ser mapeado. No Direct3D, essas várias imagens são expostas como sub-recursos. No WIC, várias imagens são expostas como quadros ([**IWICBitmapFrameDecode**](/windows/desktop/api/wincodec/nn-wincodec-iwicbitmapframedecode) e [**IWICBitmapFrameEncode**](/windows/desktop/api/wincodec/nn-wincodec-iwicbitmapframeencode)).
 
-O WIC só dá suporte à noção de uma única matriz dimensional de quadros, enquanto o DDS dá suporte a três dimensões independentes (embora somente duas possam ser usadas em um arquivo). O WIC fornece métodos de conveniência para auxiliar no mapeamento entre um subrecurso DDS e um quadro WIC. Para decodificação, [**IWICDdsDecoder:: GetFrame**](/windows/desktop/api/wincodec/nf-wincodec-iwicddsdecoder-getframe) permite que você especifique o índice de matriz, o nível de MIP e o índice de fatia do subrecurso e retorna o quadro WIC correto.
+O WIC dá suporte apenas à noção de uma matriz dimensional única de quadros, enquanto o DDS dá suporte a três dimensões independentes (embora apenas duas possam ser usadas em qualquer arquivo). O WIC fornece métodos de conveniência para auxiliar no mapeamento entre uma sub-fonte DDS e um quadro WIC. Para decodificação, [**IWICDdsDecoder::GetFrame**](/windows/desktop/api/wincodec/nf-wincodec-iwicddsdecoder-getframe) permite especificar o índice de matriz, o nível de mip e o índice de fatia da sub-fonte e retorna o quadro WIC correto.
 
-Para codificação, [**IWICDdsEncoder:: CreateNewFrame**](/windows/desktop/api/wincodec/nf-wincodec-iwicddsencoder-createnewframe) computa o índice de matriz resultante, o nível de MIP e o índice de fatia quando você cria um novo quadro. Primeiro, você deve ter chamado [**IWICDdsEncoder:: Parameters**](/windows/desktop/api/wincodec/nf-wincodec-iwicddsencoder-setparameters) para definir os parâmetros de arquivo específicos do DDS.
+Para codificação, [**IWICDdsEncoder::CreateNewFrame**](/windows/desktop/api/wincodec/nf-wincodec-iwicddsencoder-createnewframe) calcula o índice de matriz resultante, o nível de mip e o índice de fatia quando você cria um novo quadro. Primeiro, você deve ter chamado [**IWICDdsEncoder::SetParameters**](/windows/desktop/api/wincodec/nf-wincodec-iwicddsencoder-setparameters) para definir os parâmetros de arquivo específicos do DDS.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

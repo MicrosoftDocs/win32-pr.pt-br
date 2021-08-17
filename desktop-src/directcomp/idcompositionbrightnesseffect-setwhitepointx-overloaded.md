@@ -1,6 +1,6 @@
 ---
-title: Métodos IDCompositionBrightnessEffect SetWhitePointX (DCOMP. h)
-description: Define o valor x do ponto branco.
+title: Métodos IDCompositionBrightnessEffect SetWhitePointX (Dcomp.h)
+description: Define o valor x do ponto em branco.
 ms.assetid: a35c4a79-bf30-3334-1cea-ddd055427a0f
 keywords:
 - Métodos SetWhitePointX DirectComposition
@@ -12,16 +12,16 @@ api_type:
 - HeaderDef
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: 70f3d53339b513baff56f11d9c707f6895ad80d8
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 78512800ae0db84971dac7f3ee190409f912a1229791f3601048bf8ea198b414
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105812366"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119119010"
 ---
-# <a name="idcompositionbrightnesseffectsetwhitepointx-methods"></a>Métodos IDCompositionBrightnessEffect:: SetWhitePointX
+# <a name="idcompositionbrightnesseffectsetwhitepointx-methods"></a>Métodos IDCompositionBrightnessEffect::SetWhitePointX
 
-Define o valor x do ponto branco.
+Define o valor x do ponto em branco.
 
 ### <a name="overload-list"></a>Lista de sobrecargas
 
@@ -29,8 +29,8 @@ Define o valor x do ponto branco.
 
 | Método                                                                                               | Descrição                                     |
 |:-----------------------------------------------------------------------------------------------------|:------------------------------------------------|
-| [**SetWhitePointX**](/windows/win32/api/dcomp/nf-dcomp-idcompositionbrightnesseffect-setwhitepointx(float))                               | Define o valor x do ponto branco.<br/> |
-| [**SetWhitePointX (IDCompositionAnimation \* )**](/windows/win32/api/dcomp/nf-dcomp-idcompositionbrightnesseffect-setwhitepointx(idcompositionanimation)) | Define o valor x do ponto branco.<br/> |
+| [**SetWhitePointX**](/windows/win32/api/dcomp/nf-dcomp-idcompositionbrightnesseffect-setwhitepointx(float))                               | Define o valor x do ponto em branco.<br/> |
+| [**SetWhitePointX (IDCompositionAnimation \* )**](/windows/win32/api/dcomp/nf-dcomp-idcompositionbrightnesseffect-setwhitepointx(idcompositionanimation)) | Define o valor x do ponto em branco.<br/> |
 
 
 
@@ -40,7 +40,7 @@ Define o valor x do ponto branco.
 
 | Requisito | Valor |
 |-------------------|------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>DCOMP. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>Dcomp.h</dt> </dl> |
 
 
 

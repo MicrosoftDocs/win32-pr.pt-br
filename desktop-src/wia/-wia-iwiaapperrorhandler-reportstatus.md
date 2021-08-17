@@ -1,7 +1,7 @@
 ---
-description: Lida com o status do dispositivo e mensagens de erro durante transferências de dados de imagem e exibe as mensagens para o usuário.
+description: Trata o status do dispositivo e as mensagens de erro durante transferências de dados de imagem e exibe as mensagens para o usuário.
 ms.assetid: 8d3ba598-8649-4108-aebc-94f2bcb64ad8
-title: 'Método IWiaAppErrorHandler:: ReportStatus (WIA. h)'
+title: Método IWiaAppErrorHandler::ReportStatus (Wia.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - Wiaguid.lib
 - Wiaguid.dll
-ms.openlocfilehash: 1285b5391014919d7108f207917b0c44c03fa360
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9cc727845489740fae54dcc96bf5bc903bceb0205688c1c60bee3df980f66845
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105811658"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118965745"
 ---
-# <a name="iwiaapperrorhandlerreportstatus-method"></a>Método IWiaAppErrorHandler:: ReportStatus
+# <a name="iwiaapperrorhandlerreportstatus-method"></a>Método IWiaAppErrorHandler::ReportStatus
 
-Lida com o status do dispositivo e mensagens de erro durante transferências de dados de imagem e exibe as mensagens para o usuário.
+Trata o status do dispositivo e as mensagens de erro durante transferências de dados de imagem e exibe as mensagens para o usuário.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -43,25 +43,25 @@ HRESULT ReportStatus(
 
 <dl> <dt>
 
-*lFlags* \[ no\]
+*lFlags* \[ Em\]
 </dt> <dd>
 
-Tipo: **longo**
+Tipo: **LONG**
 
 Não usado. Defina como 0.
 
 </dd> <dt>
 
-*pWiaItem2* \[ no\]
+*pWiaItem2* \[ Em\]
 </dt> <dd>
 
-Tipo: **[**IWiaItem2**](-wia-iwiaitem2.md) \** _
+Tipo: **[ **IWiaItem2**](-wia-iwiaitem2.md)\***
 
 Ponteiro para o item que está sendo transferido.
 
 </dd> <dt>
 
-_hrStatus * \[ in\]
+*hrStatus* \[ Em\]
 </dt> <dd>
 
 Tipo: **HRESULT**
@@ -70,28 +70,28 @@ Código de status do dispositivo.
 
 </dd> <dt>
 
-*lPercentComplete* \[ no\]
+*lPercentComplete* \[ Em\]
 </dt> <dd>
 
-Tipo: **longo**
+Tipo: **LONG**
 
-Porcentagem concluída da operação atual.
+Percentual concluído da operação atual.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **HRESULT**
 
-Retorna *hrStatus* se a recuperação do erro não for possível. Caso contrário, ele retorna um dos valores a seguir.
+Retornará *hrStatus* se a recuperação do erro não for possível. Caso contrário, retornará um dos valores a seguir.
 
 
 
 | Código de retorno                                                                                              | Descrição                                                                                                                                                                                                                                        |
 |----------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**S \_ OK**</dt> </dl>                     | Se *hrStatus* for um erro, a ação apropriada foi executada para corrigir o erro e a transferência poderá continuar. Se *hrStatus* for informativo, o usuário foi informado com uma caixa de diálogo sem janela restrita e optou por não cancelar a transferência.<br/> |
-| <dl> <dt>**\_falso**</dt> </dl>                  | O usuário cancelou a transferência da caixa de diálogo sem janela restrita de manipulador de erros. Esse valor pode ser retornado em qualquer ponto, independentemente do que *hrStatus* é. <br/>                                                                                      |
-| <dl> <dt>**\_status WIA \_ não \_ Tratado**</dt> </dl> | Nenhuma ação foi executada; ou seja, nenhuma caixa de diálogo foi apresentada ao usuário. O próximo manipulador de erro será invocado. A ordem dos manipuladores de erro é: aplicativo, Driver e padrão do sistema.<br/>                                                 |
+| <dl> <dt>**S \_ OK**</dt> </dl>                     | Se *hrStatus* for um erro, a ação apropriada foi tomada para corrigir o erro e a transferência pode continuar. Se *hrStatus* for informativo, o usuário foi informado com uma caixa de diálogo sem modo e optou por não cancelar a transferência.<br/> |
+| <dl> <dt>**S \_ FALSE**</dt> </dl>                  | O usuário cancelou a transferência da caixa de diálogo sem modo do manipulador de erros. Esse valor pode ser retornado a qualquer momento, independentemente do *que seja hrStatus.* <br/>                                                                                      |
+| <dl> <dt>**STATUS DO WIA \_ \_ NÃO \_ TRATADO**</dt> </dl> | Nenhuma ação foi tomada; ou seja, nenhuma caixa de diálogo foi apresentada ao usuário. O próximo manipulador de erros será invocado. A ordem dos manipuladores de erros é: aplicativo, driver e padrão do sistema.<br/>                                                 |
 
 
 
@@ -99,13 +99,13 @@ Retorna *hrStatus* se a recuperação do erro não for possível. Caso contrári
 
 ## <a name="remarks"></a>Comentários
 
-O parâmetro *lPercentComplete* habilita uma janela de manipulador de erros para mostrar o progresso. Por exemplo, um driver pode fornecer uma estimativa de quanto tempo o "aquecimento" leva. O parâmetro *lPercentComplete* passado para **IWiaAppErrorHandler:: ReportStatus** é o mesmo valor que o **lPercentComplete** que o driver define na estrutura [**WiaTransferParams**](-wia-wiatransferparams.md) .
+O *parâmetro lPercentComplete* permite que uma janela do manipulador de erros mostre o progresso. Por exemplo, um driver pode fornecer uma estimativa de quanto tempo o "aquecimento" leva. O *parâmetro lPercentComplete* passado para **IWiaAppErrorHandler::ReportStatus** é o mesmo valor que **lPercentComplete** que o driver define na estrutura [**WiaTransferParams.**](-wia-wiatransferparams.md)
 
-Um manipulador de erro pode usar as macros com êxito e com falha para descobrir se *hrStatus* tem erro de severidade \_ ou êxito na severidade \_ .
+Um manipulador de erros pode usar as macros SUCCEEDED e FAILED para descobrir se *hrStatus* tem ERRO DE GRAVIDADE ou \_ ÊXITO DE \_ GRAVIDADE.
 
-Se *hrStatus* for \_ êxito na gravidade, o usuário deverá ter permissão para cancelar a transferência.
+Se *hrStatus* for SEVERITY \_ SUCCESS, o usuário deverá ter permissão para cancelar a transferência.
 
-Se *hrStatus* for um \_ erro de gravidade, o manipulador de erro deverá exibir uma caixa de diálogo modal pertencente à janela pai do aplicativo.
+Se *hrStatus* for SEVERITY ERROR, o manipulador de erros deverá exibir uma caixa de diálogo \_ modal pertencente à janela pai do aplicativo.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -113,11 +113,11 @@ Se *hrStatus* for um \_ erro de gravidade, o manipulador de erro deverá exibir 
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                         |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                   |
-| parâmetro<br/>                   | <dl> <dt>WIA. h</dt> </dl>       |
-| INSERI<br/>                      | <dl> <dt>WIA. idl</dt> </dl>     |
-| Biblioteca<br/>                  | <dl> <dt>Wiaguid. lib</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                         |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                   |
+| Cabeçalho<br/>                   | <dl> <dt>Wia.h</dt> </dl>       |
+| Idl<br/>                      | <dl> <dt>Wia.idl</dt> </dl>     |
+| Biblioteca<br/>                  | <dl> <dt>Wiaguid.lib</dt> </dl> |
 
 
 

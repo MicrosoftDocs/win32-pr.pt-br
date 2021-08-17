@@ -229,28 +229,28 @@ Você pode usar esse argumento com o argumento **-um**, **-cs**, **-CSS** ou **-
 <span id="-P_prefix"></span><span id="-p_prefix"></span><span id="-P_PREFIX"></span>**-P** *prefixo*
 </dt> <dd>
 
-Use este argumento para remover os caracteres do início do nome simbólico que você especificou para o evento. A comparação não diferencia maiúsculas de minúsculas. O compilador usa o nome simbólico para formar os nomes de macro de log e nomes de método.
+Use este argumento para remover os caracteres do início do nome simbólico que você especificou para o evento. A comparação não diferencia maiúsculas de minúsculas. O compilador usa o nome simbólico para formar os nomes de macro e nomes de método de registro em log.
 
-O nome padrão para uma macro de log é EventWrite *SymbolName,* em que *SymbolName* é o nome simbólico especificado para o evento. Por exemplo, se você definir o atributo de símbolo do evento como PrinterConnection, o nome da macro será EventWritePrinterConnection. Para remover a Impressora do nome, use **-P** **Printer**, que resulta em EventWriteConnection.
+O nome padrão de uma macro de registro em log é EventWrite *symbolname*, em que *symbolname* é o nome simbólico que você especificou para o evento. Por exemplo, se você definir o atributo Symbol do evento como PrinterConnection, o nome da macro será EventWritePrinterConnection. Para remover a impressora do nome, use **-P** **Printer**, que resulta em EventWriteConnection.
 
-Você pode usar esse argumento com **o argumento -um**, **-cs**, **-css** ou **-km.**
+Você pode usar esse argumento com o argumento **-um**, **-cs**, **-CSS** ou **-km** .
 
 </dd> <dt>
 
 <span id="-um"></span><span id="-UM"></span>**-um**
 </dt> <dd>
 
-Use esse argumento para que o compilador gere o código de modo de usuário que você usaria para registrar os eventos definidos em seu manifesto.
+Use este argumento para que o compilador gere o código de modo de usuário que você usaria para registrar os eventos definidos em seu manifesto.
 
 </dd> </dl>
 
-Para que o compilador gere o código de log, você deve especificar o **argumento -um**, **-cs**, **-css** ou **-km;** esses argumentos são mutuamente exclusivos.
+Para que o compilador gere o código de registro em log, você deve especificar o argumento **-um**, **-cs**, **-CSS** ou **-km** ; esses argumentos são mutuamente exclusivos.
 
-Para especificar onde colocar os arquivos .h, .cs e .mof que o compilador gera, use o **argumento -h.** Se você não especificar o **argumento -h,** os arquivos serão colocados na pasta atual.
+Para especificar onde posicionar os arquivos. h,. cs e. mof gerados pelo compilador, use o argumento **-h** . Se você não especificar o argumento **-h** , os arquivos serão colocados na pasta atual.
 
-Para especificar onde colocar o arquivo .rc e os arquivos binários (que contêm os recursos de metadados) gerados pelo compilador, use o **argumento -r.** Se você não especificar o **argumento -r,** os arquivos serão colocados na pasta atual.
+Para especificar onde posicionar o arquivo. rc e os arquivos binários (que contêm os recursos de metadados) gerados pelo compilador, use o argumento **-r** . Se você não especificar o argumento **-r** , os arquivos serão colocados na pasta atual.
 
-O compilador usa o nome base do arquivo de entrada como o nome base dos arquivos que ele gera. Para especificar um nome base, use o **argumento -z.**
+O compilador usa o nome base do arquivo de entrada como o nome base dos arquivos que ele gera. Para especificar um nome de base, use o argumento **-z** .
 
 ### <a name="arguments-specific-to-message-text-files"></a>Argumentos específicos para arquivos de texto de mensagem
 
@@ -259,100 +259,100 @@ O compilador usa o nome base do arquivo de entrada como o nome base dos arquivos
 <span id="-a"></span><span id="-A"></span>**-a**
 </dt> <dd>
 
-Use esse argumento para especificar que o arquivo de entrada *filename* contém conteúdo na página de código ANSI Windows padrão do sistema (CP_ACP). Esse é o padrão. Use **-u** para Unicode. Se o arquivo de entrada contiver uma BOM, esse argumento será ignorado.
+Use este argumento para especificar que o arquivo de entrada de *nome* de arquivos contém conteúdo na página de código ANSI de Windows padrão do sistema (CP_ACP). Esse é o padrão. Use **-u** para Unicode. Se o arquivo de entrada contiver uma BOM, esse argumento será ignorado.
 
 </dd> <dt>
 
 <span id="-A"></span><span id="-a"></span>**-A**
 </dt> <dd>
 
-Preterido. Use esse argumento para especificar que as mensagens no arquivo .bin de saída devem ser ANSI.
+Preterido. Use este argumento para especificar que as mensagens no arquivo output. bin devem ser ANSI.
 
 </dd> <dt>
 
 <span id="-b"></span><span id="-B"></span>**-b**
 </dt> <dd>
 
-Use esse argumento para que o compilador use o nome base do arquivo de entrada *filename* para os nomes de arquivo .bin. O padrão é usar "MSG".
+Use este argumento para fazer com que o compilador use o nome base do arquivo de entrada de *nome* de arquivo para os nomes de arquivos. bin. O padrão é usar "MSG".
 
 </dd> <dt>
 
 <span id="-d"></span><span id="-D"></span>**-d**
 </dt> <dd>
 
-Use esse argumento para usar valores decimais para as constantes Severity e Facility no arquivo de header em vez de valores hexadecimais.
+Use este argumento para usar valores decimais para as constantes de severidade e instalação no arquivo de cabeçalho em vez de valores hexadecimais.
 
 </dd> <dt>
 
 <span id="-n"></span><span id="-N"></span>**-n**
 </dt> <dd>
 
-Use esse argumento para especificar que as mensagens terminem imediatamente após o corpo da mensagem. O padrão é encerrar o corpo da mensagem com um CR/LF.
+Use este argumento para especificar que as mensagens sejam encerradas imediatamente após o corpo da mensagem. O padrão é encerrar o corpo da mensagem com uma CR/LF.
 
 </dd> <dt>
 
 <span id="-o"></span><span id="-O"></span>**-o**
 </dt> <dd>
 
-Use esse argumento para que o compilador gere um arquivo de header OLE2 usando **definições HRESULT** em vez de códigos de status. Usar códigos de status é o padrão.
+Use este argumento para fazer com que o compilador gere um arquivo de cabeçalho OLE2 usando definições **HRESULT** em vez de códigos de status. O uso de códigos de status é o padrão.
 
 </dd> <dt>
 
 <span id="-u"></span><span id="-U"></span>**-u**
 </dt> <dd>
 
-Use esse argumento para especificar que o *arquivo de entrada de nome* de arquivo contém conteúdo UTF-16LE. O padrão é o conteúdo ANSI. Se o arquivo de entrada contiver uma BOM, esse argumento será ignorado.
+Use este argumento para especificar que o arquivo de entrada *filename* contém conteúdo UTF-16LE. O padrão é o conteúdo ANSI. Se o arquivo de entrada contiver uma BOM, esse argumento será ignorado.
 
 </dd> <dt>
 
 <span id="-U"></span><span id="-u"></span>**-U**
 </dt> <dd>
 
-Use esse argumento para especificar que as mensagens no arquivo .bin de saída devem ser Unicode. Esse é o padrão.
+Use este argumento para especificar que as mensagens no arquivo output. bin devem ser Unicode. Esse é o padrão.
 
 </dd> <dt>
 
 <span id="-v"></span><span id="-V"></span>**-v**
 </dt> <dd>
 
-Use esse argumento para gerar uma saída detalhada.
+Use este argumento para gerar saída detalhada.
 
 </dd> <dt>
 
-<span id="-x_path"></span><span id="-X_PATH"></span>**Caminho -x** 
+<span id="-x_path"></span><span id="-X_PATH"></span>**-x** *caminho*
 </dt> <dd>
 
-Use esse argumento para especificar a pasta na qual você deseja que o compilador coloque o arquivo de inclusão .dbg C. O arquivo .dbg mapeia IDs de mensagem para seus nomes simbólicos.
+Use este argumento para especificar a pasta na qual você deseja que o compilador Coloque o arquivo de inclusão C. dbg. O arquivo. dbg mapeia IDs de mensagem para seus nomes simbólicos.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-Os **argumentos -A** e **-mof** foram preterido e serão removidos no futuro.
+Os argumentos **-** a e **-MOF** são preteridos e serão removidos no futuro.
 
-O compilador aceita como entrada um arquivo de manifesto (.man) ou um arquivo de texto de mensagem (.mc) e gera os seguintes arquivos:
+O compilador aceita como entrada um arquivo de manifesto (. Man) ou um arquivo de texto de mensagem (. MC) e gera os seguintes arquivos:
 
--   *filename*.h
+-   *nome do arquivo*. h
 
-    Um arquivo de header C/C++ que contém os descritores de evento, o GUID do provedor e os nomes de símbolo que você referencia em seu aplicativo.
+    Um arquivo de cabeçalho C/C++ que contém os descritores de eventos, o GUID do provedor e os nomes de símbolo que você faz referência em seu aplicativo.
 
--   *filename* TEMP.bin
+-   *nome do arquivo* TEMP. bin
 
-    Um arquivo de recurso binário que contém os metadados do provedor e do evento. Esse é o recurso de modelo, que é significado pelo sufixo TEMP do nome base do arquivo.
+    Um arquivo de recurso binário que contém os metadados do provedor e do evento. Esse é o recurso de modelo, que é representado pelo sufixo temporário do nome de base do arquivo.
 
--   Msg00001.bin
+-   Msg00001. bin
 
-    Um arquivo de recurso binário para cada idioma especificado (por exemplo, se o manifesto contiver cadeias de caracteres de mensagem em en-US e fr-FR, o compilador gerará Msg00001.bin e Msg00002.bin).
+    Um arquivo de recurso binário para cada idioma que você especificar (por exemplo, se o seu manifesto contiver cadeias de caracteres de mensagem em en-US e fr-FR, o compilador geraria Msg00001. bin e Msg00002. bin).
 
--   *filename*.rc
+-   *nome do arquivo*. rc
 
-    Um script do compilador de recursos que contém as instruções para incluir cada arquivo .bin como um recurso.
+    Um script de compilador de recurso que contém as instruções para incluir cada arquivo. bin como um recurso.
 
-Para argumentos que levam um caminho, o caminho pode ser um caminho absoluto, relativo ou UNC e pode conter variáveis de ambiente.
+Para argumentos que usam um caminho, o caminho pode ser um caminho absoluto, relativo ou UNC e pode conter variáveis de ambiente.
 
 **Antes do MC versão 1.12.7051:** O compilador não permite caminhos relativos ou variáveis de ambiente.
 
-O Windows SDK inclui o compilador (mc.exe) na \\ pasta Bin.
+a SDK do Windows inclui o compilador (mc.exe) na \\ pasta Bin.
 
 ## <a name="examples"></a>Exemplos
 
@@ -362,7 +362,7 @@ O exemplo a seguir compila um manifesto usando os padrões do compilador.
 mc spooler.man
 ```
 
-O exemplo a seguir compila o manifesto e coloca o header e os arquivos de recurso nas pastas especificadas.
+O exemplo a seguir compila o manifesto e coloca os arquivos de cabeçalho e de recurso nas pastas especificadas.
 
 ``` syntax
 mc -h <pathgoeshere> -r <pathgoeshere> spooler.man

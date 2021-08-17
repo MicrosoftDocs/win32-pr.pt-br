@@ -1,10 +1,10 @@
 ---
-title: atributo meetingURL
-description: O endereço da Web da reunião.
+title: Atributo meetingURL
+description: O endereço Web para a reunião.
 ms.assetid: 57784fb9-3983-42f9-9b77-2932af1fca0f
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD do atributo meetingURL
+- Esquema do AD do atributo meetingURL
 topic_type:
 - apiref
 api_name:
@@ -20,22 +20,22 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119300506"
 ---
-# <a name="meetingurl-attribute"></a>atributo meetingURL
+# <a name="meetingurl-attribute"></a>Atributo meetingURL
 
-O endereço da Web da reunião.
+O endereço Web para a reunião.
 
 
 
 | Entrada | Valor |
 |-------------------|----------------------------------------------------------------------------------|
 | CN                | meetingURL                                                                       |
-| LDAP-Display-Name | meetingURL                                                                       |
+| Ldap-Display-Name | meetingURL                                                                       |
 | Tamanho              | \-                                                                               |
 | Privilégio de atualização  | Qualquer pessoa pode atualizar esse objeto com base na segurança do objeto que está sendo criado. |
 | Frequência de atualização  | \-                                                                               |
 | Attribute-Id      | 1.2.840.113556.1.4.583                                                           |
-| System-ID-GUID    | 11b6cc8c-48c4-11d1-a9c3-0000f80367c1                                             |
-| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md)                                      |
+| System-Id-Guid    | 11b6cc8c-48c4-11d1-a9c3-0000f80367c1                                             |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md)                                      |
 
 
 
@@ -57,10 +57,10 @@ O endereço da Web da reunião.
 | ID do link                | \-                                      |
 | MAPI-Id                | \-                                      |
 | System-Only            | Falso                                   |
-| É de valor único       | Falso                                   |
+| Tem valor único       | Falso                                   |
 | É indexado             | Falso                                   |
-| No catálogo global      | Falso                                   |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                            |
+| No Catálogo Global      | Falso                                   |
+| Descritor de segurança NT | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |
@@ -78,10 +78,10 @@ O endereço da Web da reunião.
 | ID do link                | \-                                      |
 | MAPI-Id                | \-                                      |
 | System-Only            | Falso                                   |
-| É de valor único       | Falso                                   |
+| Tem valor único       | Falso                                   |
 | É indexado             | Falso                                   |
-| No catálogo global      | Falso                                   |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                            |
+| No Catálogo Global      | Falso                                   |
+| Descritor de segurança NT | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |
@@ -99,10 +99,10 @@ O endereço da Web da reunião.
 | ID do link                | \-                                      |
 | MAPI-Id                | \-                                      |
 | System-Only            | Falso                                   |
-| É de valor único       | Falso                                   |
+| Tem valor único       | Falso                                   |
 | É indexado             | Falso                                   |
-| No catálogo global      | Falso                                   |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                            |
+| No Catálogo Global      | Falso                                   |
+| Descritor de segurança NT | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |

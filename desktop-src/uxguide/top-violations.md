@@ -1,6 +1,6 @@
 ---
-title: Lista de verificação de UX para aplicativos de área de trabalho
-description: Aqui está uma coleção de algumas das diretrizes importantes no guia do UX. Você pode usar isso como uma lista de verificação para verificar se a interface do usuário do programa obtém esses itens importantes.
+title: Lista de verificação de experiência do usuário para aplicativos da área de trabalho
+description: Aqui está uma coleção de algumas das diretrizes importantes no Guia de UX. Você pode usar isso como uma lista de verificação para garantir que a interface do usuário do programa tenha esses itens importantes corretos.
 ms.assetid: 4705a807-5949-4957-8ea6-70871beaf8e0
 ms.topic: article
 ms.date: 10/20/2020
@@ -11,66 +11,66 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119332466"
 ---
-# <a name="ux-checklist-for-desktop-applications"></a>Lista de verificação de UX para aplicativos de área de trabalho
+# <a name="ux-checklist-for-desktop-applications"></a>Lista de verificação de experiência do usuário para aplicativos da área de trabalho
 
 > [!NOTE]
-> este guia de design foi criado para o Windows 7 e não foi atualizado para versões mais recentes do Windows. Grande parte da orientação ainda se aplica em princípio, mas a apresentação e os exemplos não refletem nossas [diretrizes de design atuais](/windows/uwp/design/).
+> Este guia de design foi criado para Windows 7 e não foi atualizado para versões mais recentes do Windows. Grande parte das diretrizes ainda se aplica em princípio, mas a apresentação e os exemplos não refletem nossas [diretrizes de design atuais.](/windows/uwp/design/)
 
-Aqui está uma coleção de algumas das diretrizes importantes no guia do UX. Você pode usar isso como uma lista de verificação para verificar se a interface do usuário do programa obtém esses itens importantes.
+Aqui está uma coleção de algumas das diretrizes importantes no Guia de UX. Você pode usar isso como uma lista de verificação para garantir que a interface do usuário do programa tenha esses itens importantes corretos.
 
 ## <a name="windows"></a>Windows
 
--   **suporte à resolução mínima Windows efetiva de 800x600 pixels.** Para interfaces de usuário críticas (UIs) que devem funcionar no modo de segurança, dê suporte a uma [resolução efetiva](glossary.md) de 640x480 pixels. Certifique-se de considerar o espaço usado pela barra de tarefas reservando 48 [pixels relativos](glossary.md) verticais para o Windows exibido com a barra de tarefas.
--   **Otimize layouts de janela redimensionáveis para uma resolução efetiva de 1024x768 pixels.** Redimensione automaticamente essas janelas para resoluções de tela mais baixa de uma maneira que ainda está funcional.
--   **Certifique-se de testar suas janelas em 96 pontos por polegada (DPI) (em 800x600 pixels), 120 DPI (a 1024x768 pixels) e 144 DPI (em 1200x900 pixels).** Verifique se há problemas de layout, como recorte de controles, texto e janelas, e alargamento de ícones e bitmaps.
--   **Para programas com cenários de uso móvel e de toque, otimize para 120 dpi.** As telas de alto dpi atualmente são predominantes em PCs móveis e de toque.
--   **Se uma janela for uma janela de propriedade, você a exibirá inicialmente "centralizado" na janela do proprietário.** Nunca abaixo de. Para exibição subsequente, considere exibi-lo em seu último local (relativo à janela do proprietário) se isso for mais conveniente.
--   **Se uma janela for contextual, sempre a exibirá perto do objeto do qual foi iniciada.** No entanto, coloque-o fora do caminho (preferivelmente desloca para baixo e para a direita) para que o objeto não seja coberto pela janela.
+-   **Dar suporte à resolução Windows efetiva mínima de 800 x 600 pixels.** Para UIs (interfaces de usuário) críticas que devem funcionar no modo de segurança, suporte [a](glossary.md) uma resolução efetiva de 640 x 480 pixels. Certifique-se de levar em conta o espaço usado pela barra de tarefas reservando 48 [pixels relativos verticais para janelas exibidas](glossary.md) com a barra de tarefas.
+-   **Otimize layouts de janela reizáveis para uma resolução efetiva de 1024 x 768 pixels.** Reorganize automaticamente essas janelas para resoluções de tela inferior de uma maneira que ainda seja funcional.
+-   **Teste suas janelas em 96 pontos por polegada (dpi) (a 800 x 600 pixels), 120 dpi (em 1024 x 768 pixels) e 144 dpi (a 1200 x 900 pixels).** Verifique se há problemas de layout, como recorte de controles, texto e janelas e alongamento de ícones e bitmaps.
+-   **Para programas com cenários de uso móvel e de toque, otimize para 120 dpi.** Atualmente, as telas de alto dpi são predominantes em PCs móveis e de toque.
+-   **Se uma janela for uma janela de propriedade, inicialmente a exibirá "centralizada" na parte superior da janela do proprietário.** Nunca abaixo. Para exibição subsequente, considere exibi-lo em seu último local (em relação à janela do proprietário) se for provável que isso seja mais conveniente.
+-   **Se uma janela for contextual, sempre a exibirá perto do objeto do qual ela foi lançada.** No entanto, coloque-o fora do caminho (preferencialmente deslocamento para baixo e para a direita) para que o objeto não seja coberto pela janela.
 
 ## <a name="layout"></a>Layout
 
--   **Dimensionar controles e painéis dentro de uma janela para corresponder ao conteúdo típico.** Evite texto truncado e suas reticências associadas. Os usuários nunca devem ter que interagir com uma janela para exibir seu conteúdo típico, reservar redimensionamento e rolagem para conteúdo excepcionalmente grande. Verifique especificamente:
-    -   **Tamanhos de controle.** Dimensionar controles para seu conteúdo típico, tornando os controles mais largos, mais altos ou de várias linhas, se necessário. Controles de tamanho para eliminar ou reduzir a rolagem no Windows com bastante espaço disponível. Além disso, nunca deve haver rótulos truncados ou texto truncado dentro do Windows com muito espaço disponível. No entanto, para facilitar a leitura do texto, considere limitar larguras de linha a 65 caracteres.
-    -   **Larguras de coluna.** Verifique se as colunas de exibição de lista têm o dimensionamento padrão, mínimo e máximo adequado. Escolher lista exibe as larguras de coluna padrão que não resultam em texto truncado, especialmente se houver espaço disponível na exibição de lista.
-    -   **Balanceamento de layout.** O layout de uma janela deve parecer aproximadamente equilibrado. Se o layout ficar pesado para a esquerda, considere tornar os controles mais largos e mover alguns controles para a direita.
-    -   **Redimensionamento de layout.** Quando uma janela é redimensionável e os dados são truncados, certifique-se de que os tamanhos de janela maiores mostrem mais dados. Quando os dados são truncados, os usuários esperam redimensionar janelas para mostrar mais informações.
--   **Defina um tamanho mínimo de janela se houver um tamanho abaixo do qual o conteúdo não seja mais utilizável.** Para controles redimensionáveis, defina tamanhos mínimos de elemento redimensionáveis para seus menores tamanhos funcionais, como larguras de coluna funcionais mínimas em exibições de lista.
+-   **Controles de tamanho e painéis dentro de uma janela para corresponder ao conteúdo típico.** Evite texto truncado e suas reellips associadas. Os usuários nunca devem ter que interagir com uma janela para exibir seu conteúdo típico– reservar reizing e rolagem para conteúdo incomummente grande. Verifique especificamente:
+    -   **Tamanhos de controle.** Controles de tamanho para seu conteúdo típico, tornando os controles mais largos, mais altos ou de várias linhas, se necessário. Controles de tamanho para eliminar ou reduzir a rolagem em janelas que têm muito espaço disponível. Além disso, nunca deve haver rótulos truncados ou texto truncado em janelas que tenham muito espaço disponível. No entanto, para facilitar a leitura do texto, considere limitar as larguras de linha a 65 caracteres.
+    -   **Larguras de coluna.** Certifique-se de que as colunas de exibição de lista tenham um tamanho padrão, mínimo e máximo adequado. Escolha larguras de coluna padrão de exibições de lista que não resultam em texto truncado, especialmente se houver espaço disponível na exibição de lista.
+    -   **Saldo de layout.** O layout de uma janela deve ser aproximadamente equilibrado. Se o layout for pesado para a esquerda, considere tornar os controles mais largos e mover alguns controles mais para a direita.
+    -   **Resize de layout.** Quando uma janela é resizável e os dados são truncados, certifique-se de que tamanhos de janela maiores mostrem mais dados. Quando os dados são truncados, os usuários esperam reizing de janelas para mostrar mais informações.
+-   **Definir um tamanho mínimo da janela se houver um tamanho abaixo do qual o conteúdo não é mais acessível.** Para controles reizáveis, de definir tamanhos mínimos de elementos reizáveis para seus menores tamanhos funcionais, como larguras mínimas de coluna funcional em exibições de lista.
 
 ## <a name="text"></a>Texto
 
--   **Use termos comuns e de conversação quando puder.** Concentre-se nas metas do usuário, não na tecnologia. Isso é especialmente eficaz se você estiver explicando uma ação ou um conceito técnico complexo. Imagine examinando o ressalto do usuário e explicando como realizar a tarefa.
--   **Seja educado, de apoio e incentivador.** O usuário nunca deve se sentir à vontade, à culpa ou intimidação.
--   **Remova o texto redundante.** Procure texto redundante em títulos de janela, instruções principais, instruções complementares, áreas de conteúdo, links de comando e botões de confirmação. Em geral, deixe texto completo nas instruções principais e nos controles interativos e remova qualquer redundância dos outros locais.
--   **Use a capitalização de estilo de título para títulos e a capitalização de estilo de frase para todos os outros elementos da interface do usuário.** fazer isso é mais apropriado para o tom de Windows.
-    -   **Exceção:** Para aplicativos herdados, você pode usar a capitalização de estilo de título para botões de comando, menus e títulos de coluna, se necessário, para evitar a mistura de estilos de capitalização.
--   **Para nomes de recursos e tecnologias, seja conservador em maiúsculas.** Normalmente, somente os principais componentes devem ser capitalizados (usando a capitalização de estilo de título).
--   **Para nomes de recursos e tecnologias, seja consistente em maiúsculas.** Se o nome aparecer mais de uma vez em uma tela de interface do usuário, ele sempre deverá aparecer da mesma maneira. Da mesma forma, em todas as telas de interface do usuário no programa, o nome deve ser apresentado consistentemente.
--   **Não coloque maiúsculas nos nomes dos elementos genéricos da interface do usuário,** como barra de ferramentas, menu, barra de rolagem, botão e ícone.
-    -   **Exceções:** Barra de endereços, barra de links, faixa de faixas.
--   **Não use todas as letras maiúsculas para as teclas do teclado.** Em vez disso, siga as letras maiúsculas usadas por teclados padrão ou em minúsculas se a chave não estiver rotulada como um painel.
--   **As reticências significam inintegridade.** Use reticências no texto da interface do usuário da seguinte maneira:
-    -   **Comandos.** Indique que um comando precisa de informações adicionais. Não use reticências sempre que uma ação exibir outra janela — somente quando forem necessárias informações adicionais. os comandos cujo verbo implícito é mostrar outra janela não têm uma elipse, como avançado, ajuda, opções, propriedades ou Configurações.
-    -   **Dado.** Indica que o texto está truncado.
-    -   **Las.** Indique que uma tarefa está em andamento (por exemplo, "pesquisando...").
+-   **Use termos comuns e conversacionais quando possível.** Concentre-se nas metas do usuário, não na tecnologia. Isso é especialmente eficaz se você estiver explicando um conceito técnico complexo ou uma ação. Imagine você mesmo olhando sobre o responsabilidade do usuário e explicando como realizar a tarefa.
+-   **Seja cortês, reatêm e incentivador.** O usuário nunca deve se sentir desaixado, responsabilizado ou descarado.
+-   **Remova texto redundante.** Procure texto redundante em títulos de janela, instruções principais, instruções complementares, áreas de conteúdo, links de comando e botões de commit. Em geral, deixe o texto completo nas instruções principais e controles interativos e remova qualquer redundância de outros locais.
+-   **Use a capitalização de estilo de título para títulos e a capitalização de estilo de frase para todos os outros elementos da interface do usuário.** Fazer isso é mais apropriado para o Windows tom.
+    -   **Exceção:** Para aplicativos herdado, você pode usar a capitalização de estilo de título para botões de comando, menus e títulos de coluna, se necessário, para evitar a combinação de estilos de capitalização.
+-   **Para nomes de recursos e tecnologias, seja conservadora na capitalização.** Normalmente, somente os componentes principais devem ser em maiúsculas (usando a capitalização de estilo de título).
+-   **Para nomes de recursos e tecnologias, seja consistente na capitalização.** Se o nome aparecer mais de uma vez em uma tela de interface do usuário, ele sempre deverá aparecer da mesma maneira. Da mesma forma, em todas as telas da interface do usuário no programa, o nome deve ser apresentado consistentemente.
+-   **Não use maiúsculas os nomes** de elementos de interface do usuário genéricos, como barra de ferramentas, menu, barra de rolagem, botão e ícone.
+    -   **Exceções:** Barra de endereços, Barra de links, faixa de opções.
+-   **Não use todas as letras maiúsculas para teclas de teclado.** Em vez disso, siga a capitalização usada por teclados padrão ou minúsculas se a tecla não estiver rotulada no teclado.
+-   **As re elipses significam a incompleta.** Use re elipses no texto da interface do usuário da seguinte forma:
+    -   **Comandos.** Indique que um comando precisa de informações adicionais. Não use reellipses sempre que uma ação exibir outra janela — somente quando informações adicionais são necessárias. Comandos cujo verbo implícito é mostrar outra janela não têm reellipses, como Avançado, Ajuda, Opções, Propriedades ou Configurações.
+    -   **Dados.** Indique que o texto está truncado.
+    -   **Rótulos.** Indique que uma tarefa está em andamento (por exemplo, "Pesquisando...").
 
-**Dica:** O texto truncado em uma janela ou página com espaço não utilizado indica um layout insatisfatório ou um tamanho de janela padrão muito pequeno. Busque layouts e tamanhos de janela padrão que eliminem ou reduzem a quantidade de texto truncado. Veja [Layout](vis-layout.md) para obter mais informações.
+**Dica:** Texto truncado em uma janela ou página com espaço nãoutilado indica um layout ruim ou um tamanho de janela padrão muito pequeno. Busque layouts e tamanhos de janela padrão que eliminam ou reduzem a quantidade de texto truncado. Veja [Layout](vis-layout.md) para obter mais informações.
 
--   **Não use um texto azul que não seja um link, pois os usuários podem pressupor que ele é um link.** Use negrito ou um tom de cinza onde, caso contrário, você usaria texto colorido.
--   **Use em negrito para chamar atenção para texto que os usuários devem ler.**
--   **Use a instrução principal para explicar de forma concisa o que os usuários devem fazer em uma determinada janela ou página.** Boas instruções principais comunicam o objetivo do usuário em vez de se concentrar apenas na manipulação da interface do usuário.
--   **Expresse a instrução principal na forma de uma direção imperativa ou uma pergunta específica.**
--   **Não faça períodos no final dos rótulos de controle ou nas instruções principais.**
--   **Use um espaço entre as frases.** Não dois.
+-   **Não use texto azul que não seja um link, pois os usuários podem presumir que se trata de um link.** Use negrito ou um tom de cinza em que, de outra forma, você usaria texto colorido.
+-   **Use negrito com moderação para chamar a atenção para o texto que os usuários devem ler.**
+-   **Use a instrução principal para explicar concisamente o que os usuários devem fazer em uma determinada janela ou página.** Boas instruções principais comunicam o objetivo do usuário em vez de se concentrar apenas na manipulação da interface do usuário.
+-   **Expresse a instrução principal na forma de uma direção imperativa ou pergunta específica.**
+-   **Não coloque pontos no final dos rótulos de controle ou instruções principais.**
+-   **Use um espaço entre frases.** Não dois.
 
 ## <a name="controls"></a>Controles
 
 -   **Geral**
-    -   **Rotular cada controle ou grupo de controles. Exceção**
-        -   Caixas de texto e listas suspensas podem ser rotuladas usando prompts.
-        -   Controles subordinados usam o rótulo de seu controle associado. Controles de rotação são sempre controles subordinados.
-    -   **Para todos os controles, selecione o mais seguro (para evitar a perda de dados ou acesso ao sistema), o valor mais seguro por padrão.** Se não houver fatores de segurança e segurança, selecione o valor mais provável ou conveniente.
-    -   **Prefira controles restritos.** Use controles restritos como listas e controles deslizantes sempre que possível, em vez de controlar unrestrição como caixas de texto, para reduzir a necessidade de entrada de texto.
-    -   **Reconsidere os controles desabilitados.** Controles desabilitados podem ser difíceis de usar porque os usuários literalmente precisam deduzir por que estão desabilitados. Desabilite um controle quando os usuários esperam que eles se apliquem e podem facilmente deduzir por que o controle está desabilitado. Remova o controle quando não há nenhuma maneira para os usuários habilitá-lo ou se eles não esperam que ele seja aplicado, ou deixe-o habilitado, mas forneça uma mensagem de erro quando ele for usado incorretamente.
+    -   **Rotule cada controle ou grupo de controles. Exceções:**
+        -   Caixas de texto e listas listadas podem ser rotuladas usando prompts.
+        -   Os controles subordinados usam o rótulo de seu controle associado. Controles de rotação são sempre controles subordinados.
+    -   **Para todos os controles, selecione o mais seguro (para evitar a perda de dados ou acesso ao sistema), o valor mais seguro por padrão.** Se segurança e segurança não são fatores, selecione o valor mais provável ou conveniente.
+    -   **Prefira controles restritos.** Use controles restritos, como listas e controles deslizantes sempre que possível, em vez de controles irrados, como caixas de texto, para reduzir a necessidade de entrada de texto.
+    -   **Reavaliar controles desabilitados.** Controles desabilitados podem ser difíceis de usar porque os usuários precisam deduzir literalmente por que estão desabilitados. Desabilite um controle quando os usuários esperam que eles se apliquem e podem facilmente deduzir por que o controle está desabilitado. Remova o controle quando não há nenhuma maneira para os usuários habilitá-lo ou se eles não esperam que ele seja aplicado, ou deixe-o habilitado, mas forneça uma mensagem de erro quando ele for usado incorretamente.
         -   **Dica:** Se você não tiver certeza se deve desabilitar um controle ou fornecer uma mensagem de erro, comece compondo a mensagem de erro que você pode fornecer. Se a mensagem de erro contiver informações úteis que os usuários de destino não têm probabilidade de deduzir rapidamente, deixe o controle habilitado e forneça o erro. Caso contrário, desabilite o controle.
 -   **Botões de comando**
     -   **Prefira rótulos específicos sobre aqueles genéricos.** Idealmente, os usuários não precisam ler mais nada para entender o rótulo. Os usuários têm muito mais probabilidade de ler rótulos de botão de comando do que texto estático.
@@ -119,144 +119,144 @@ Aqui está uma coleção de algumas das diretrizes importantes no guia do UX. Vo
     -   **Use um aviso quando o espaço da tela estiver em um nível tão alto que usar um rótulo ou instrução é indesejável,** como em uma barra de ferramentas.
     -   **O prompt destina-se principalmente a identificar a finalidade da caixa de texto ou da caixa de combinação de forma compacta.** Elas não devem ser informações cruciais que o usuário precisa ver ao usar o controle.
     -   **O texto do prompt não deve ser confundido com texto real.** Para fazer isso:
-        -   Desenhe o texto do prompt em cinza itálico e o texto de entrada real em preto romano.
-        -   O texto do prompt não deve ser editável e deve desaparecer quando os usuários clicarem na guia ou na caixa de texto.
-            -   **Exceção:** Se a caixa de texto tiver o foco de entrada padrão, o prompt será exibido e desaparece quando o usuário começa a digitar.
-    -   Não use pontuação final ou reticências.
+        -   Desenhe o texto do prompt em cinza itálico e o texto de entrada real em preto-branco.
+        -   O texto do prompt não deve ser editável e deve desaparecer depois que os usuários clicarem na guia ou na caixa de texto.
+            -   **Exceção:** Se a caixa de texto tiver o foco de entrada padrão, o prompt será exibido e desaparecerá depois que o usuário começar a digitar.
+    -   Não use a pontuação final ou as reticpses.
 -   **Notificações**
     -   **Use notificações para eventos que não estão relacionados à atividade do usuário atual, não exigem ação imediata do usuário e os usuários podem ignorar livremente.**
-    -   **Não incorra em notificações:**
-        -   **Use notificações somente se precisar.** Quando você exibe uma notificação, você está potencialmente interrompendo os usuários ou até mesmo irritantes. Certifique-se de que a interrupção seja justificada.
+    -   **Não abuso de notificações:**
+        -   **Use notificações somente se for necessário.** Ao exibir uma notificação, você pode interromper os usuários ou até mesmo desative-los. Certifique-se de que a interrupção seja justificada.
         -   **Use notificações para eventos não críticos ou situações que não exigem ação imediata do usuário.** Para eventos críticos ou situações que exigem ação imediata do usuário, use um elemento de interface do usuário alternativo (como uma caixa de diálogo modal).
         -   **Não use notificações para anúncios de recursos!**
 
 ## <a name="keyboard"></a>Keyboard
 
--   **Atribua o foco de entrada inicial ao controle que os usuários têm mais probabilidade de interagir com o primeiro,** que é geralmente o primeiro controle interativo. Se o primeiro controle interativo não for uma boa opção, considere alterar o layout da janela.
--   **Atribuir tabulações para todos os controles interativos, incluindo caixas de edição somente leitura. Exceção**
-    -   Agrupar conjuntos de controles relacionados que se comportam como um único controle, como botões de opção. Esses grupos têm uma única parada de tabulação.
-    -   Contém adequadamente os grupos para que as teclas de direção passem para frente e para trás dentro do grupo e permaneçam dentro do grupo.
--   **A ordem de tabulação deve fluir da esquerda para a direita, de cima para baixo.** Em geral, a ordem de tabulação deve seguir a ordem de leitura. Considere fazer exceções para controles comumente usados colocando-os anteriormente na ordem de tabulação. Tab deve percorrer todas as paradas de tabulação em ambas as direções sem parar. Dentro de um grupo, a ordem de tabulação deve estar em ordem sequencial, sem exceções.
--   **Dentro de uma parada de tabulação, a ordem da tecla de direção deve fluir da esquerda para a direita, de cima para baixo,** sem exceções. As teclas de direção devem percorrer todos os itens em ambas as direções sem parar.
+-   **Atribua o foco de entrada inicial ao controle com o** qual os usuários têm maior probabilidade de interagir primeiro, que geralmente é o primeiro controle interativo. Se o primeiro controle interativo não for uma boa opção, considere alterar o layout da janela.
+-   **Atribua paradas de guias a todos os controles interativos, incluindo caixas de edição somente leitura. Exceções:**
+    -   Agrupa conjuntos de controles relacionados que se comportam como um único controle, como botões de rádio. Esses grupos têm uma única parada de tabulação.
+    -   Contêm grupos corretamente para que as teclas de direção andem para frente e para trás dentro do grupo e permaneçam dentro do grupo.
+-   **A ordem de tabulação deve fluir da esquerda para a direita, de cima para baixo.** Em geral, a ordem de tabulação deve seguir a ordem de leitura. Considere fazer exceções para controles comumente usados colocando-os anteriormente na ordem de tabulação. A guia deve passar por todas as paradas da guia em ambas as direções sem parar. Dentro de um grupo, a ordem de tabulação deve estar em ordem sequencial, sem exceções.
+-   **Em uma parada de tabulação, a ordem** de tecla de direção deve fluir da esquerda para a direita, de cima para baixo, sem exceções. As teclas de direção devem passar por todos os itens em ambas as direções sem parar.
 -   **Apresente os botões de confirmação na seguinte ordem:**
-    -   OK/ \[ fazer o \] /Yes
-    -   \[Não faça isso \] /não
+    -   OK/ \[ Faça isso \] /Sim
+    -   \[Não faça isso \] /Não
     -   Cancelar
-    -   Aplicar (se houver)
+    -   Aplicar (se presente)
 
-onde \[ fazer isso \] e \[ não fazer isso \] são respostas específicas para a instrução principal.
+em \[ que Fazer isso e Não fazer isso são respostas \] \[ \] específicas para a instrução principal.
 
--   **Não confunda chaves de acesso com teclas de atalho.** Embora as teclas de acesso e as chaves de atalho forneçam acesso de teclado à interface do usuário, elas têm finalidades e diretrizes diferentes.
--   **Sempre que possível, atribua chaves de acesso exclusivas a todos os controles interativos ou seus rótulos.** [Caixas de texto somente leitura](ctrl-text-boxes.md) são controles interativos (porque os usuários podem rolar e copiar texto), para que se beneficiem das chaves de acesso. **Não atribua chaves de acesso para:**
-    -   Botões OK, cancelar e fechar. Enter e ESC são usados para suas chaves de acesso. No entanto, sempre atribua uma chave de acesso a um controle que significa OK ou cancelar, mas tem um rótulo diferente.
--   **Atribua teclas de atalho para os comandos usados com mais frequência.** Os programas e recursos usados raramente não precisam de teclas de atalho porque os usuários podem usar chaves de acesso em vez disso.
--   **Não crie uma tecla de atalho a única maneira de executar uma tarefa.** Os usuários também devem ser capazes de usar o mouse ou o teclado com teclas de tabulação, seta e acesso.
--   **Não atribua diferentes significados a teclas de atalho bem conhecidas.** Como eles são memorizados, os significados inconsistentes para atalhos bem conhecidos são frustrantes e sujeitos a erros.
--   **Não tente atribuir teclas de atalho do programa em todo o sistema.** As teclas de atalho do programa terão efeito somente quando o seu programa tiver o foco de entrada.
+-   **Não confunda chaves de acesso com teclas de atalho.** Embora as teclas de acesso e as teclas de atalho forneçam acesso de teclado à interface do usuário, elas têm diferentes finalidades e diretrizes.
+-   **Sempre que possível, atribua chaves de acesso exclusivas a todos os controles interativos ou seus rótulos.** [Caixas de texto somente leitura são](ctrl-text-boxes.md) controles interativos (porque os usuários podem rolar e copiar texto), portanto, eles se beneficiam das chaves de acesso. **Não atribua chaves de acesso a:**
+    -   Botões OK, Cancelar e Fechar. Enter e Esc são usados para suas chaves de acesso. No entanto, sempre atribua uma chave de acesso a um controle que significa OK ou Cancelar, mas tem um rótulo diferente.
+-   **Atribua teclas de atalho aos comandos mais usados.** Programas e recursos usados raramente não precisam de teclas de atalho porque os usuários podem usar chaves de acesso.
+-   **Não faça uma tecla de atalho a única maneira de executar uma tarefa.** Os usuários também devem ser capazes de usar o mouse ou o teclado com teclas tab, seta e acesso.
+-   **Não atribua significados diferentes a teclas de atalho conhecidas.** Como eles são memorizados, significados inconsistentes para atalhos conhecidos são frustrantes e propensos a erros.
+-   **Não tente atribuir teclas de atalho do programa em todo o sistema.** As teclas de atalho do programa terão efeito somente quando o programa tiver o foco de entrada.
 
 ## <a name="mouse"></a>Mouse
 
--   **Nunca exija que os usuários cliquem em um objeto para determinar se ele é clicável.** Os usuários devem ser capazes de determinar a possibilidade de clicar por inspeção visual apenas.
-    -   A interface do usuário primária (como botões de confirmação) deve ter uma premissa de clique estático. Os usuários não devem ter que focalizar para descobrir a interface do usuário principal.
-    -   A interface do usuário secundária (como comandos secundários ou controles de divulgação progressiva) pode exibir a sua preposição de clique ao focalizar.
-    -   Os links de texto devem sugerir estaticamente o texto do link e, em seguida, exibir a sua preposição de clique (sublinhado ou outra alteração de apresentação, com ponteiro à mão) ao focalizar.
-    -   Os links gráficos exibem apenas um ponteiro de mão ao focalizar.
--   **Use o ponteiro de mão (ou "vincular seleção") somente para links de texto e gráficos.** Caso contrário, os usuários teriam que clicar em objetos para determinar se eles são links.
+-   **Nunca exigir que os usuários cliquem em um objeto para determinar se ele é clicável.** Os usuários devem ser capazes de determinar a capacidade de clique somente pela inspeção visual.
+    -   A interface do usuário primária (como botões de commit) deve ter uma capacidade de clique estático. Os usuários não devem ter que passar o mouse para descobrir a interface do usuário primária.
+    -   A interface do usuário secundária (como comandos secundários ou controles de divulgação progressiva) pode exibir sua responsabilidade de clique ao passar o mouse.
+    -   Os links de texto devem sugerir estaticamente o texto do link e exibir a capacidade de clique (sublinhado ou outra alteração de apresentação, com ponteiro de mão) ao passar o mouse.
+    -   Os links gráficos exibem apenas um ponteiro de mão ao passar o mouse.
+-   **Use o ponteiro de mão (ou "seleção de link") somente para links de texto e gráficos.** Caso contrário, os usuários teriam que clicar em objetos para determinar se são links.
 
 ## <a name="dialog-boxes"></a>Caixas de diálogo
 
--   **As caixas de diálogo modais exigem interação, portanto, use-as para as coisas que os usuários devem responder antes de continuar com sua tarefa.** Certifique-se de que a interrupção seja justificada, como para tarefas críticas ou pouco frequentes que exigem a conclusão. Caso contrário, considere alternativas sem janela restrita.
--   **As caixas de diálogo sem janela restrita não exigem interação, portanto, use-as quando os usuários precisarem alternar entre uma caixa de diálogo e a janela do proprietário.** Elas são mais bem usadas para tarefas frequentes, repetitivas ou contínuas. No entanto, as faixas de opções, as barras de ferramentas e as janelas de paleta geralmente são melhores alternativas.
+-   **As caixas de diálogo modais exigem interação, portanto, use-as para coisas às qual os usuários devem responder antes de continuar com suas tarefas.** Certifique-se de que a interrupção seja justificada, como para tarefas críticas ou pouco frequentes que exigem conclusão. Caso contrário, considere alternativas sem modo.
+-   **As caixas de diálogo sem modo não exigem interação, portanto, use-as quando os usuários precisam alternar entre uma caixa de diálogo e a janela do proprietário.** Eles são mais usados para tarefas frequentes, repetitivas ou contínuas. No entanto, faixas de opções, barras de ferramentas e janelas de paleta geralmente são alternativas melhores.
 
 ## <a name="property-sheets"></a>Folhas de propriedade
 
--   **Verifique se as propriedades são necessárias.** Não contorne suas páginas de propriedades com propriedades desnecessárias apenas para evitar tomar decisões de design rígido.
--   **Apresente as propriedades em termos de metas de usuário em vez de tecnologia.** Só porque uma propriedade configura uma tecnologia específica não significa que você deve apresentar a propriedade em termos dessa tecnologia.
-    -   Se você precisar apresentar as configurações em termos de tecnologia (talvez porque seus usuários reconheçam o nome da tecnologia), inclua uma breve descrição do benefício do usuário.
--   **Use rótulos de guias específicos e significativos.** evite rótulos de guia genéricos que possam se aplicar a qualquer guia, como geral, avançado ou Configurações.
--   **Evite páginas gerais.** Não é necessário ter uma página geral. Use uma página Geral somente se:
-    -   As propriedades se aplicam a várias tarefas e são significativas para a maioria dos usuários. Não coloque propriedades especializadas ou avançadas em uma página geral, mas você pode torná-las acessíveis por meio de um botão de comando na página geral.
-    -   As propriedades não se ajustam a uma categoria mais específica. Em vez disso, use esse nome para a página.
--   **Evite páginas avançadas.** Use uma página avançada somente se:
-    -   As propriedades se aplicam a tarefas não comuns e são significativas principalmente para usuários avançados.
-    -   As propriedades não se ajustam a uma categoria mais específica. Em vez disso, use esse nome para a página.
--   **Não use guias se uma janela de propriedades tiver apenas uma única guia e não for extensível.** Use uma caixa de diálogo normal com OK, cancelar e um botão de aplicação opcional em vez disso. No entanto, as janelas de propriedades extensíveis (que podem ser estendidas por terceiros) devem usar guias.
+-   **Certifique-se de que as propriedades sejam necessárias.** Não atrapalha suas páginas de propriedades com propriedades desnecessárias apenas para evitar tomar decisões de design difíceis.
+-   **Apresentar propriedades em termos de metas do usuário em vez de tecnologia.** Só porque uma propriedade configura uma tecnologia específica não significa que você deve apresentar a propriedade em termos dessa tecnologia.
+    -   Se você precisa apresentar configurações em termos de tecnologia (talvez porque os usuários reconheçam o nome da tecnologia), inclua uma breve descrição do benefício do usuário.
+-   **Use rótulos de tabulação específicos e significativos.** Evite rótulos de guia genéricos que podem ser aplicados a qualquer guia, como Geral, Avançado ou Configurações.
+-   **Evite páginas gerais.** Você não precisa ter uma página Geral. Use uma página Geral somente se:
+    -   As propriedades se aplicam a várias tarefas e são significativas para a maioria dos usuários. Não coloque propriedades especializadas ou avançadas em uma página Geral, mas você pode torná-las acessíveis por meio de um botão de comando na página Geral.
+    -   As propriedades não se ajustam a uma categoria mais específica. Se fizerem isso, use esse nome para a página.
+-   **Evite páginas avançadas.** Use uma página Avançado somente se:
+    -   As propriedades se aplicam a tarefas incomuns e são significativas principalmente para usuários avançados.
+    -   As propriedades não se ajustam a uma categoria mais específica. Se fizerem isso, use esse nome para a página.
+-   **Não use guias se uma janela de propriedade tiver apenas uma única guia e não for extensível.** Use uma caixa de diálogo regular com OK, Cancelar e um botão Aplicar opcional. No entanto, as janelas de propriedades extensíveis (que podem ser estendidas por terceiros) devem usar guias.
 
 ## <a name="wizards"></a>Assistentes
 
--   **Considere as alternativas leves primeiro, como caixas de diálogo, painéis de tarefas ou páginas únicas.** Os assistentes são uma interface do usuário pesada, melhor usada para tarefas de várias etapas executadas com pouca frequência. Você não precisa usar assistentes — você pode fornecer informações úteis e assistência em qualquer interface do usuário.
--   **Use o próximo somente ao avançar para a próxima página sem compromisso.** Avançar para a próxima página é considerado um compromisso quando seu efeito não pode ser desfeito ao clicar em voltar ou cancelar.
--   **Use novamente para corrigir erros.** Além de corrigir erros, os usuários não precisam clicar em voltar para fazer o progresso em uma tarefa.
--   **quando os usuários estão confirmando uma tarefa, use um botão confirmar que seja uma resposta específica para a instrução principal (por exemplo, imprimir, Conexão ou iniciar).** Não use rótulos genéricos como Next (que não implicam em compromisso) ou Finish (que não é específico) para confirmar uma tarefa. Os rótulos desses botões de confirmação devem fazer sentido por conta própria. Sempre iniciar os rótulos do botão de confirmação com um verbo. **Exceções:**
-    -   Use concluir quando as respostas específicas ainda forem genéricas, como salvar, selecionar, escolher ou obter.
-    -   Use concluir para alterar uma configuração específica ou uma coleção de configurações.
--   **Use links de comando somente para escolhas, não para compromissos.** Botões de confirmação específicos indicam o compromisso muito melhor do que os links de comando em um assistente.
--   **Ao usar links de comando, oculte o botão Avançar, mas deixe o botão Cancelar.**
--   **Use fechar para obter Follow-Up e páginas de conclusão.** Não use cancelar porque fechar a janela não abandonará nenhuma alteração ou ação feita neste momento. Não use o Done porque não é um verbo imperativo.
--   **Não use "assistente" em nomes de assistente.** por exemplo, use "Conexão para uma rede" em vez de "assistente de configuração de rede". No entanto, é aceitável referir-se a assistentes como assistentes. por exemplo: "se você estiver configurando uma rede pela primeira vez, poderá obter ajuda usando o Conexão para um assistente de rede".
--   **Preserve as seleções de usuário por meio de navegação.** Por exemplo, se o usuário fizer alterações, clicar em voltar e, em seguida, essas alterações deverão ser preservadas. Os usuários não esperam ter de reinserir as alterações, a menos que decidam explicitamente desmarcá-las.
+-   **Considere alternativas leves primeiro, como caixas de diálogo, painéis de tarefas ou páginas individuais.** Os assistentes são uma interface do usuário pesada, mais usada para tarefas de várias etapas e executadas raramente. Você não precisa usar assistentes– você pode fornecer informações úteis e assistência em qualquer interface do usuário.
+-   **Use Avançar somente ao avançar para a próxima página sem compromisso.** Avançar para a próxima página é considerado um compromisso quando seu efeito não pode ser desfeito clicando em Voltar ou Cancelar.
+-   **Use Voltar somente para corrigir erros.** Além de corrigir erros, os usuários não devem ter que clicar em Voltar para fazer progresso em uma tarefa.
+-   **Quando os usuários estão se comprometendo com uma tarefa, use um botão de confirmação que seja uma resposta específica à instrução principal (por exemplo, Imprimir, Conexão ou Iniciar).** Não use rótulos genéricos como Next (o que não implica compromisso) ou Concluir (que não é específico) para comprometer uma tarefa. Os rótulos nesses botões de confirmação devem fazer sentido por conta própria. Sempre inicie rótulos de botão de commit com um verbo. **Exceções:**
+    -   Use Concluir quando as respostas específicas ainda são genéricas, como Salvar, Selecionar, Escolher ou Obter.
+    -   Use Concluir para alterar uma configuração específica ou uma coleção de configurações.
+-   **Use links de comando somente para opções, não compromissos.** Botões de commit específicos indicam o compromisso muito melhor do que os links de comando em um assistente.
+-   **Ao usar links de comando, oculta o botão Próximo, mas deixe o botão Cancelar.**
+-   **Use Fechar para Follow-Up e Páginas de conclusão.** Não use Cancelar porque fechar a janela não abandonará nenhuma alteração ou ação feita neste ponto. Não use Done porque ele não é um verbo imperativo.
+-   **Não use "assistente" em nomes de assistente.** Por exemplo, use "Conexão para uma rede" em vez de "Rede Assistente de Instalação". No entanto, é aceitável referir-se a assistentes como assistentes. Por exemplo: "Se você estiver configurando uma rede pela primeira vez, poderá obter ajuda usando o Conexão para um assistente de rede".
+-   **Preservar seleções de usuário por meio da navegação.** Por exemplo, se o usuário fizer alterações, clicar em Voltar e em Próximo, essas alterações deverão ser preservadas. Os usuários não esperam ter que inserir as alterações de forma re-inserir, a menos que tenham optado explicitamente por desemá-las.
 
 ## <a name="wizard-pages"></a>Páginas do Assistente
 
--   **Concentre-se na tomada de decisão eficiente.** Reduza o número de páginas para se concentrar no Essentials. Consolide páginas relacionadas e faça páginas opcionais fora do fluxo principal. Fazer com que os usuários cliquem em Avançar completamente por meio do assistente pode parecer uma boa experiência inicialmente, mas se os usuários nunca precisarem alterar os padrões, as páginas provavelmente serão desnecessárias.
--   **Não use páginas de boas-vindas — torne a primeira página funcional sempre que possível.** Use uma página de Introdução opcional somente quando:
-    -   O assistente tem pré-requisitos que são necessários para concluir o assistente com êxito.
-    -   Os usuários podem não entender a finalidade do assistente com base em sua primeira página de escolha e não há espaço para mais explicações.
-    -   A instrução principal para as páginas Introdução é "antes de começar:".
+-   **Concentre-se na tomada de decisão eficiente.** Reduza o número de páginas para se concentrar nos fundamentos. Consolide páginas relacionadas e tire páginas opcionais do fluxo principal. Fazer com que os usuários cliquem completamente em Próximo por meio do assistente pode parecer uma boa experiência no início, mas se os usuários nunca precisam alterar os padrões, as páginas provavelmente serão desnecessárias.
+-   **Não use páginas de boas-vindas — faça com que a primeira página seja funcional sempre que possível.** Use uma página Ponto de Partida opcional somente quando:
+    -   O assistente tem pré-requisitos necessários para concluir o assistente com êxito.
+    -   Os usuários podem não entender a finalidade do assistente com base em sua primeira página Escolha e não há espaço para mais explicações.
+    -   A instrução principal para Ponto de Partida páginas é "Antes de começar:".
 -   **Em páginas nas quais os usuários são solicitados a fazer escolhas, otimize para os casos mais prováveis.** Esses tipos de páginas devem apresentar opções reais, não apenas instruções.
-    -   Se você não usar uma página Introdução, explique a finalidade do assistente na parte superior da primeira página de opções.
--   **Use as páginas de confirmação para torná-las claras quando os usuários estiverem confirmando a tarefa.** Geralmente, a página de confirmação é a última página de opções e o botão Avançar é rotulado novamente para indicar a tarefa que está sendo confirmada.
-    -   Não use páginas de resumo que meramente resumam as seleções anteriores do usuário, a menos que a tarefa seja arriscada (envolvendo segurança ou perda de tempo ou dinheiro) ou haja uma boa chance de que os usuários não compreendam suas seleções e precisem examiná-las.
--   **Não use páginas de parabenização que não façam nada, mas terminem o assistente.** Se os resultados do assistente forem claramente aparentes para os usuários, basta fechar o assistente no botão de confirmação final.
-    -   Use Follow-Up páginas quando houver tarefas relacionadas que os usuários provavelmente farão como acompanhamento. Evite tarefas de acompanhamento familiares, como "Enviar uma mensagem de email".
-    -   Use as páginas de conclusão somente quando os resultados não estiverem visíveis e não houver uma maneira melhor de fornecer comentários para a conclusão da tarefa.
-    -   Os assistentes que têm páginas de progresso devem usar uma página de conclusão ou Follow-Up para indicar a conclusão da tarefa. Para tarefas de execução longa, feche o assistente na página de confirmação e use as notificações para fornecer comentários.
+    -   Se você não usar uma página Ponto de Partida, explique a finalidade do assistente na parte superior da primeira página de opções.
+-   **Use Páginas de confirmação para deixar claro quando os usuários estão se comprometendo com a tarefa.** Normalmente, a página Confirmação é a última página de opções e o botão Próximo é rotulado de novo para indicar a tarefa que está sendo comprometida.
+    -   Não use páginas de Resumo que simplesmente resumem as seleções anteriores do usuário, a menos que a tarefa seja arriscada (envolvendo segurança ou perda de tempo ou dinheiro) ou haja uma boa chance de os usuários não entenderem suas seleções e precisem revisá-las.
+-   **Não use páginas parabéns que não fazem nada além de encerrar o assistente.** Se os resultados do assistente são claramente aparentes para os usuários, basta fechar o assistente no botão de confirmação final.
+    -   Use Follow-Up páginas quando houver tarefas relacionadas que os usuários provavelmente realizarão como acompanhamento. Evite tarefas de acompanhamento familiares, como "Enviar uma mensagem de email".
+    -   Use Páginas de conclusão somente quando os resultados não estão visíveis e não há uma maneira melhor de fornecer comentários para a conclusão da tarefa.
+    -   Os assistentes que têm páginas Progresso devem usar uma página conclusão ou Follow-Up página para indicar a conclusão da tarefa. Para tarefas de execução longa, feche o assistente na página Confirmação e use notificações para fazer comentários.
 
 ## <a name="error-messages"></a>Mensagens de erro
 
--   **Não forneça mensagens de erro quando não for provável que os usuários executem uma ação ou alterem seu comportamento** como resultado da mensagem. Se não houver ação que os usuários podem executar ou se o problema não for significativo, suprima a mensagem de erro.
--   **Sempre que possível, proponha uma solução para que os usuários possam corrigir o problema.** No entanto, certifique-se de que a solução proposta provavelmente resolverá o problema. Não gaste o tempo dos usuários sugerindo soluções possíveis, mas que podem ser investigadas.
--   **Seja específico.** Evite palavras vagas, como erro de sintaxe e operação ilegal. Forneça nomes, locais e valores específicos dos objetos envolvidos.
--   **Não use frases que culpam o usuário ou implicam erro do usuário.** Evite usar você e seu na formulação. Embora a voz ativa seja geralmente preferida, use a voz passiva quando o usuário for o assunto e poderá sentir a culpa do erro se a voz ativa fosse usada.
--   **Não use OK para mensagens de erro.** Os usuários não exibem erros como OK. Se a mensagem de erro não tiver nenhuma ação direta, use fechar em vez disso.
+-   **Não dê mensagens de erro quando os usuários não têm** probabilidade de executar uma ação ou alterar seu comportamento como resultado da mensagem. Se não houver nenhuma ação que os usuários possam tomar ou se o problema não for significativo, suprime a mensagem de erro.
+-   **Sempre que possível, propor uma solução para que os usuários possam corrigir o problema.** No entanto, certifique-se de que a solução proposta provavelmente resolva o problema. Não perca tempo dos usuários sugerindo soluções possíveis, mas improváveis.
+-   **Seja específico.** Evite palavras vaga, como erro de sintaxe e operação ilegal. Forneça nomes, locais e valores específicos dos objetos envolvidos.
+-   **Não use frases que responsabilizam o usuário ou implicam em erro do usuário.** Evite usar você e seu na frase. Embora a voz ativa seja geralmente preferencial, use a voz passiva quando o usuário for o assunto e poderá se sentir responsável pelo erro se a voz ativa tiver sido usada.
+-   **Não use OK para mensagens de erro.** Os usuários não visualizam erros como sendo OK. Se a mensagem de erro não tiver nenhuma ação direta, use Fechar.
 -   **Não use as seguintes palavras:**
-    -   Erro, falha (em vez disso, use o problema)
-    -   Falha ao (em vez disso, use não é possível)
-    -   Inválido, inválido, incorreto (use incorreto ou não válido em vez disso)
-    -   Abort, Kill e Terminate (use parar em vez disso)
-    -   Catastrófico, fatal (em vez disso, use grave)
+    -   Erro, falha (use o problema em vez disso)
+    -   Falha ao (não é possível usar em vez disso)
+    -   Ilegal, inválido, inválido (use incorreto ou inválido em vez disso)
+    -   Anular, encerrar, encerrar (usar parar em vez disso)
+    -   Catastrófico, fatal (use sério em vez disso)
 
-Esses termos são desnecessários e ao contrário do Tom incentivado de Windows. Em vez disso, um ícone de erro, [quando usado corretamente](vis-std-icons.md), comunica suficientemente que há um problema.
+Esses termos são desnecessários e contrários ao tom incentivador de Windows. Em vez disso, um ícone [de erro, quando usado corretamente,](vis-std-icons.md)comunica suficientemente que há um problema.
 
--   **Não acompanha mensagens de erro com efeitos de som.** Fazer isso é dissonante e desnecessário.
+-   **Não acompanhe mensagens de erro com efeitos de som.** Fazer isso é jarring e desnecessário.
 
 ## <a name="warning-messages"></a>Mensagens de aviso
 
--   **Os avisos descrevem uma condição que pode causar um problema no futuro.** Avisos não são erros ou perguntas, portanto, não frases perguntas rotineiras como avisos.
--   **Não forneça mensagens de aviso quando não for provável que os usuários executem uma ação ou alterem seu comportamento como resultado da mensagem.** Se não houver ação que os usuários podem executar ou se a condição não for significativa, omita a mensagem de aviso.
+-   **Avisos descrevem uma condição que pode causar um problema no futuro.** Avisos não são erros ou perguntas, portanto, não expresse perguntas de rotina como avisos.
+-   **Não dê mensagens de aviso quando os usuários não têm probabilidade de executar uma ação ou alterar seu comportamento como resultado da mensagem.** Se não houver nenhuma ação que os usuários possam tomar ou se a condição não for significativa, suprime a mensagem de aviso.
 
 ## <a name="confirmations"></a>Confirmações
 
 -   **Não use confirmações desnecessárias.** Use confirmações somente quando:
-    -   Há um motivo claro para não continuar e uma chance razoável que às vezes os usuários não.
+    -   Há um motivo claro para não continuar e uma chance razoável de que, às vezes, os usuários não continuarão.
     -   A ação tem consequências significativas ou não pode ser facilmente desfeita.
-    -   A ação tem consequências de que os usuários podem não estar cientes.
-    -   Prosseguir com a ação requer que os usuários façam uma escolha que não tenha um padrão adequado.
-    -   Considerando o contexto atual, é provável que os usuários tenham executado uma ação em caso de erro.
--   **Confirmações de frase como uma pergunta Sim ou não e forneça respostas sim ou não.** Ao contrário de outros tipos de caixas de diálogo, as confirmações são projetadas para impedir que os usuários tomem decisões rápidas. Se os usuários não tiverem pensado em sua resposta, uma confirmação não terá valor.
+    -   A ação tem consequências das quais os usuários podem não estar cientes.
+    -   Continuar com a ação exige que os usuários façam uma escolha que não tenha um padrão adequado.
+    -   Considerando o contexto atual, é provável que os usuários tenham executado uma ação com erro.
+-   **Confirmações de frase como uma pergunta sim ou não e fornecem respostas sim ou nenhuma.** Ao contrário de outros tipos de caixas de diálogo, as confirmações são projetadas para impedir que os usuários tomam decisões rápidas. Se os usuários não pensarem na resposta, uma confirmação não terá valor.
 
 ## <a name="icons"></a>Ícones
 
--   **Todos os ícones devem aderir às diretrizes de ícone do** [estilo Aero](vis-icons.md). substituir todos os ícones de estilo do Windows XP.
--   **Escolha ícones padrão com base em seu tipo de mensagem, não a severidade do problema subjacente:**
-    -   **Ao.** Erro ou problema ocorrido.
-    -   **Alerta.** Uma condição que pode causar um problema no futuro.
-    -   **Divulgação.** Informações úteis.
+-   **Todos os ícones devem seguir as diretrizes** [do ícone de estilo](vis-icons.md)aero. Substitua todos Windows ícones no estilo XP.
+-   **Escolha ícones padrão com base no tipo de mensagem, não na gravidade do problema subjacente:**
+    -   **Erro.** Um erro ou problema que ocorreu.
+    -   **Aviso.** Uma condição que pode causar um problema no futuro.
+    -   **Informações.** Informações úteis.
 
-Se um problema combinar tipos de mensagens diferentes, concentre-se no aspecto mais importante em que os usuários precisam agir.
+Se um problema combinar diferentes tipos de mensagem, concentre-se no aspecto mais importante no quais os usuários precisam agir.
 
 -   **Os ícones devem sempre corresponder à instrução principal ou a outro texto correspondente.**
--   **Ícones de erro não são necessários para problemas de entrada não críticos do usuário.** No entanto, os ícones são necessários para erros in-loco, pois, caso contrário, esses comentários contextuais seriam muito fáceis de se ignorar.
+-   **Ícones de erro não são necessários para problemas de entrada de usuário não críticos.** No entanto, os ícones são necessários para erros in-loco, porque, caso contrário, esses comentários contextuais seriam muito fáceis de ignorar.
 -   **Não use ícones de aviso para "suavizar" erros não críticos.** Erros não são avisos; em vez disso, aplique as diretrizes de ícone de erro.
 -   **Para caixas de diálogo de pergunta, use ícones de aviso somente para perguntas com consequências significativas.** Não use ícones de aviso para perguntas rotineiras.
 

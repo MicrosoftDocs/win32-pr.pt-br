@@ -1,9 +1,9 @@
 ---
-title: Mensagem de WM_UNINITMENUPOPUP (WinUser. h)
+title: WM_UNINITMENUPOPUP mensagem (Winuser.h)
 description: Enviado quando um menu suspenso ou submenu foi destruído.
 ms.assetid: 06129d88-6cf9-4d55-b8eb-6f78994bc87a
 keywords:
-- WM_UNINITMENUPOPUP menus de mensagens e outros recursos
+- WM_UNINITMENUPOPUP menus de mensagem e outros recursos
 topic_type:
 - apiref
 api_name:
@@ -21,7 +21,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118971785"
 ---
-# <a name="wm_uninitmenupopup-message"></a>Mensagem do WM \_ UNINITMENUPOPUP
+# <a name="wm_uninitmenupopup-message"></a>Mensagem WM \_ UNINITMENUPOPUP
 
 Enviado quando um menu suspenso ou submenu foi destruído.
 
@@ -39,20 +39,20 @@ Enviado quando um menu suspenso ou submenu foi destruído.
 *wParam* 
 </dt> <dd>
 
-Um identificador para o menu
+Um alça para o menu
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-A palavra de ordem superior identifica o menu que foi destruído. Atualmente, esse parâmetro só pode ser **MF \_ SYSMENU** (o menu janela).
+A palavra de ordem alta identifica o menu que foi destruído. Atualmente, esse parâmetro só pode ser **\_ MF SYSMENU** (o menu da janela).
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-Se um aplicativo receber uma mensagem do [**WM \_ INITMENUPOPUP**](wm-initmenupopup.md) , ele receberá uma mensagem do **WM \_ UNINITMENUPOPUP** .
+Se um aplicativo receber uma [**mensagem WM \_ INITMENUPOPUP,**](wm-initmenupopup.md) ele receberá uma mensagem **WM \_ UNINITMENUPOPUP.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -62,7 +62,7 @@ Se um aplicativo receber uma mensagem do [**WM \_ INITMENUPOPUP**](wm-initmenupo
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                                               |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                     |
-| Cabeçalho<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -73,10 +73,10 @@ Se um aplicativo receber uma mensagem do [**WM \_ INITMENUPOPUP**](wm-initmenupo
 **Referência**
 </dt> <dt>
 
-[**HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85))
+[**Hiword**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85))
 </dt> <dt>
 
-**Conceitua**
+**Conceitual**
 </dt> <dt>
 
 [Menus](menus.md)

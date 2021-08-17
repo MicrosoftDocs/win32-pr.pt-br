@@ -3,22 +3,22 @@ title: Detectando o status da instalação
 description: Detectando o status da instalação
 ms.assetid: d502a5d6-798b-4269-aef3-1412fc379819
 keywords:
-- SDK do Windows Media Format, redistribuição de software
+- Windows SDK de formato de mídia, redistribuição de software
 - Formato de sistema avançado (ASF), redistribuição de software
 - ASF (formato de sistemas avançados), redistribuição de software
-- SDK do Windows Media Format, redistribuição
+- Windows SDK do formato de mídia, redistribuição
 - Formato de sistema avançado (ASF), redistribuição
 - ASF (formato de sistemas avançados), redistribuição
 - redistribuição de software, detectando o status da instalação
 - redistribuição, detectando o status da instalação
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6add696f2b2989de1e77d48504a1d540634213d8
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 250ab87fd81592b868e1dbf13106577f83e680796310aff246f0c1483fa847cc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103637141"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119931378"
 ---
 # <a name="detecting-setup-status"></a>Detectando o status da instalação
 
@@ -32,13 +32,13 @@ A entrada do registro **InstallResult** tem o seguinte formato.
 
 | Nome              | Tipo           | Valor                                                                                                                   |
 |-------------------|----------------|-------------------------------------------------------------------------------------------------------------------------|
-| **InstallResult** | **REG \_ DWORD** | Um **HRESULT** que indica se a instalação do Windows Media Player foi bem-sucedida e se uma reinicialização é necessária. |
+| **InstallResult** | **REG \_ DWORD** | um **HRESULT** que indica se a instalação do Windows Media Player foi bem-sucedida e se é necessária uma reinicialização. |
 
 
 
- 
+ 
 
-O código a seguir definirá as variáveis *fSucess* e *fRebootNeeded* como **true** ou **false**, conforme apropriado, com base no valor **HRESULT** gravado pela instalação do Windows Media no pacote de redistribuição de componentes.
+o código a seguir definirá as variáveis *fSucess* e *fRebootNeeded* como **True** ou **False**, conforme apropriado, com base no valor **HRESULT** gravado pela configuração de mídia Windows no pacote de redistribuição de componentes.
 
 
 ```C++
@@ -122,9 +122,9 @@ int main( void )
 [**Redistribuição de software**](software-redistribution.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

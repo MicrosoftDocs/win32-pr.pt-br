@@ -20,12 +20,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e9394068721920836f61871ca42471469fd4c592
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 481aa3e9b6b5b5519bac6e458de1acba90f2cfa20dd0a5babac016d0003c70b5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455997"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119955556"
 ---
 # <a name="privacy-templates"></a>Modelos de privacidade
 
@@ -132,7 +132,7 @@ Definido pelo usuário. Consulte [como criar um arquivo de importação de priva
 
 
 
-Definido pelo usuário. As opções avançadas são definidas na caixa de diálogo **configurações de privacidade avançadas** acessíveis na guia **privacidade** em **Opções da Internet**.
+Definido pelo usuário. as opções avançadas são definidas na caixa de diálogo de **privacidade avançada Configurações** acessível na guia **privacidade** em **opções da Internet**.
 
 
 </dt> </dl> </dd> <dt>
@@ -153,7 +153,7 @@ O mesmo **modelo de privacidade é \_ \_ baixo**.
 ## <a name="remarks"></a>Comentários
 
 > [!Note]  
-> O WinINet não oferece suporte a implementações de servidor. Além disso, ele não deve ser usado de um serviço. Para implementações de servidor ou serviços, use [o Microsoft Windows http Services (WinHTTP)](/windows/desktop/WinHttp/winhttp-start-page).
+> O WinINet não oferece suporte a implementações de servidor. Além disso, ele não deve ser usado de um serviço. para implementações de servidor ou serviços, use [o Microsoft Windows HTTP services (WinHTTP)](/windows/desktop/WinHttp/winhttp-start-page).
 
  
 

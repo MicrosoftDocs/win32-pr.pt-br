@@ -19,12 +19,12 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 550290a19c275108d52472129084b80ef81b71e3
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 8024dccf49d6ade3fb7d7345e814beb12db66540369cb8031f518c2629945b4c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103920577"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119971887"
 ---
 # <a name="win32_pnpdevicepropertysecuritydescriptorarray-class"></a>\_Classe Win32 PnPDevicePropertySecurityDescriptorArray
 
@@ -232,7 +232,7 @@ Os valores possíveis são.
 
 <span id="Currency"></span><span id="currency"></span><span id="CURRENCY"></span>
 
-**Moeda** (14)
+**Conversor de Moedas** (14)
 
 
 </dt> <dd></dd> <dt>
@@ -504,10 +504,10 @@ Os valores possíveis são.
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10\]<br/>                                             |
+| Cliente mínimo com suporte<br/> | Windows 10 \[ somente aplicativos da área de trabalho\]<br/>                                             |
 | Servidor mínimo com suporte<br/> | Windows Server 2016<br/>                                                          |
 | Namespace<br/>                | Raiz \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>Cimwin32. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>Cimwin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -519,13 +519,13 @@ Os valores possíveis são.
 [Classes de hardware do sistema de computador](computer-system-hardware-classes.md)
 </dt> <dt>
 
-[**\_PnPDeviceProperty Win32**](win32-pnpdeviceproperty.md)
+[**Win32 \_ PnPDeviceProperty**](win32-pnpdeviceproperty.md)
 </dt> <dt>
 
-[**\_SecurityDescriptor Win32**](/previous-versions/windows/desktop/secrcw32prov/win32-securitydescriptor)
+[**Win32 \_ SecurityDescriptor**](/previous-versions/windows/desktop/secrcw32prov/win32-securitydescriptor)
 </dt> <dt>
 
-[**Getdeviceproperties**](getdeviceproperties-win32-pnpentity.md)
+[**GetDeviceProperties**](getdeviceproperties-win32-pnpentity.md)
 </dt> </dl>
 
  

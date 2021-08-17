@@ -1,7 +1,7 @@
 ---
-description: obtém as interfaces de extensão que podem vir com um driver de dispositivo de aquisição de Windows Image (WIA) 2,0.
+description: Obtém as interfaces de extensão que podem vir com um driver de dispositivo WIA (Aquisição Windows Imagem) 2.0.
 ms.assetid: 70f20f33-905c-4a88-8065-1cf876e98302
-title: 'Método IWiaItem2:: GetExtension (WIA. h)'
+title: Método IWiaItem2::GetExtension (Wia.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -20,9 +20,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119450406"
 ---
-# <a name="iwiaitem2getextension-method"></a>Método IWiaItem2:: GetExtension
+# <a name="iwiaitem2getextension-method"></a>Método IWiaItem2::GetExtension
 
-obtém as interfaces de extensão que podem vir com um driver de dispositivo de aquisição de Windows Image (WIA) 2,0.
+Obtém as interfaces de extensão que podem vir com um driver de dispositivo WIA (Aquisição Windows Imagem) 2.0.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,21 +42,21 @@ HRESULT GetExtension(
 
 <dl> <dt>
 
-*lFlags* \[ no\]
+*lFlags* \[ Em\]
 </dt> <dd>
 
-Tipo: **longo**
+Tipo: **LONG**
 
-Atualmente não utilizado. Deve ser definido como zero.
+Atualmente não éusado. Deve ser definido como zero.
 
 </dd> <dt>
 
-*bstrname* \[ no\]
+*bstrName* \[ Em\]
 </dt> <dd>
 
 Tipo: **BSTR**
 
-Especifica o nome da extensão à qual o aplicativo de chamada requer um ponteiro.
+Especifica o nome da extensão para a que o aplicativo de chamada requer um ponteiro.
 
 <dt>
 
@@ -67,11 +67,11 @@ Especifica o nome da extensão à qual o aplicativo de chamada requer um ponteir
 
 </dt> <dd>
 
-A extensão do filtro de segmentação. Atualmente, esse é o único valor válido para esse parâmetro.
+A extensão de filtro de segmentação. Atualmente, esse é o único valor válido para esse parâmetro.
 
 </dd> </dl> </dd> <dt>
 
-*riidExtensionInterface* \[ no\]
+*riidExtensionInterface* \[ Em\]
 </dt> <dd>
 
 Tipo: **REFIID**
@@ -80,10 +80,10 @@ Especifica o identificador da interface de extensão.
 
 </dd> <dt>
 
-*ppOut* \[ fora\]
+*ppOut* \[ out\]
 </dt> <dd>
 
-Tipo: **void \* \***
+Tipo: **\* \* VOID**
 
 Recebe o endereço de um ponteiro para a interface de extensão.
 
@@ -93,17 +93,17 @@ Recebe o endereço de um ponteiro para a interface de extensão.
 
 Tipo: **HRESULT**
 
-Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
+Se esse método for bem-sucedido, ele **retornará S \_ OK.** Caso contrário, ele retornará um **código de erro HRESULT.**
 
 ## <a name="remarks"></a>Comentários
 
-Um aplicativo invoca esse método para criar um objeto de extensão que implementa uma das interfaces de extensão de driver WIA 2,0. **IWiaItem2:: GetExtension** armazena o endereço da interface de extensão do objeto de extensão no parâmetro *riidExtensionInterface* . Em seguida, o aplicativo usa o ponteiro de interface para chamar seus métodos.
+Um aplicativo invoca esse método para criar um objeto de extensão que implementa uma das interfaces de extensão de driver WIA 2.0. **IWiaItem2::GetExtension** armazena o endereço da interface de extensão do objeto de extensão no *parâmetro riidExtensionInterface.* Em seguida, o aplicativo usa o ponteiro de interface para chamar seus métodos.
 
-Os aplicativos devem chamar o método [IUnknown:: Release](/windows/win32/api/unknwn/nf-unknwn-iunknown-release) nos ponteiros de interface recebidos por meio do parâmetro *riidExtensionInterface* .
+Os aplicativos devem chamar o método [IUnknown::Release](/windows/win32/api/unknwn/nf-unknwn-iunknown-release) nos ponteiros de interface que recebem por meio do *parâmetro riidExtensionInterface.*
 
 ## <a name="examples"></a>Exemplos
 
-CreateSegmentationFilter cria uma instância do [**IWiaSegmentationFilter**](-wia-iwiasegmentationfilter.md)(filtro de segmentação do driver) chamando **IWiaItem2:: GetExtension** na interface de [**IWiaItem2**](-wia-iwiaitem2.md) passada.
+CreateSegmentationFilter cria uma instância do filtro de segmentação do driver ([**IWiaSegmentationFilter**](-wia-iwiasegmentationfilter.md)) chamando **IWiaItem2::GetExtension** na interface [**IWiaItem2**](-wia-iwiaitem2.md) passada.
 
 
 ```C++
@@ -156,10 +156,10 @@ CreateSegmentationFilter(
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                     |
-| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                               |
-| parâmetro<br/>                   | <dl> <dt>WIA. h</dt> </dl>   |
-| INSERI<br/>                      | <dl> <dt>WIA. idl</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                     |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                               |
+| Cabeçalho<br/>                   | <dl> <dt>Wia.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>Wia.idl</dt> </dl> |
 
 
 

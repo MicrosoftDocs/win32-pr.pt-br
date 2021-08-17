@@ -1,7 +1,7 @@
 ---
 description: Recupera todos os cabeçalhos de resposta HTTP.
 ms.assetid: 68b13d4c-5afd-486d-8b78-a7eef0f59a24
-title: 'Método IWinHttpRequest:: GetAllResponseHeaders'
+title: Método IWinHttpRequest::GetAllResponseHeaders
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 - COM
 api_location:
 - Winhttp.dll
-ms.openlocfilehash: 74c113216cf41e2f9816176dd28ba5e84208c635
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d853cfd80038081865eeefbbc456f470485b69a2dae02384e91e8b4d78d90810
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105749545"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119133099"
 ---
-# <a name="iwinhttprequestgetallresponseheaders-method"></a>Método IWinHttpRequest:: GetAllResponseHeaders
+# <a name="iwinhttprequestgetallresponseheaders-method"></a>Método IWinHttpRequest::GetAllResponseHeaders
 
-O método **GetAllResponseHeaders** recupera todos os cabeçalhos de resposta http.
+O **método GetAllResponseHeaders** recupera todos os cabeçalhos de resposta HTTP.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,23 +40,23 @@ HRESULT GetAllResponseHeaders(
 
 <dl> <dt>
 
-*Cabeçalhos* \[ de out, retval\]
+*Headers* \[ out, retval\]
 </dt> <dd>
 
-Recebe as informações de cabeçalho resultantes.
+Recebe as informações de header resultantes.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-O valor de retorno será **S \_ OK** em caso de êxito ou um valor de erro, caso contrário.
+O valor de retorno é **S \_ OK em** caso de êxito ou um valor de erro, caso contrário.
 
 ## <a name="remarks"></a>Comentários
 
-Esse método retorna todos os cabeçalhos contidos na resposta mais recente do servidor. Os cabeçalhos individuais são delimitados por uma combinação de retorno de carro e alimentação de linha (ASCII 13 e 10). A última entrada é seguida por dois delimitadores (13, 10, 13, 10). Invoque esse método somente depois que o método [**Send**](iwinhttprequest-send.md) tiver sido chamado.
+Esse método retorna todos os headers contidos na resposta do servidor mais recente. Os headers individuais são delimitados por uma combinação de retorno de carro e alimentação de linha (ASCII 13 e 10). A última entrada é seguida por dois delimitadores (13, 10, 13, 10). Invoque esse método somente depois [**que o método Send**](iwinhttprequest-send.md) tiver sido chamado.
 
 > [!Note]  
-> Para o Windows XP e o Windows 2000, consulte a seção [requisitos de tempo de execução](winhttp-start-page.md) da página inicial do WinHTTP.
+> Para Windows XP e Windows 2000, consulte [](winhttp-start-page.md) a seção Requisitos de tempo de executar da página inicial do WinHTTP.
 
  
 
@@ -179,11 +179,11 @@ WScript.Echo( WinHttpReq.GetAllResponseHeaders());
 
 | Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Somente Windows XP, Windows 2000 Professional com \[ aplicativos de área de trabalho do SP3\]<br/>            |
-| Servidor mínimo com suporte<br/> | Windows Server 2003, Windows 2000 Server com aplicativos de área de trabalho do SP3 \[ somente\]<br/>         |
-| Redistribuível<br/>          | WinHTTP 5,0 e Internet Explorer 5, 1 ou posterior no Windows XP e no Windows 2000.<br/> |
-| INSERI<br/>                      | <dl> <dt>HttpRequest. idl</dt> </dl> |
-| Biblioteca<br/>                  | <dl> <dt>WinHTTP. lib</dt> </dl>     |
+| Cliente mínimo com suporte<br/> | Windows XP, Windows 2000 Professional somente com aplicativos da área de trabalho SP3 \[\]<br/>            |
+| Servidor mínimo com suporte<br/> | Windows Server 2003, Windows 2000 Server com somente aplicativos da área de trabalho SP3 \[\]<br/>         |
+| Redistribuível<br/>          | WinHTTP 5.0 e Internet Explorer 5.01 ou posterior no Windows XP e Windows 2000.<br/> |
+| Idl<br/>                      | <dl> <dt>HttpRequest.idl</dt> </dl> |
+| Biblioteca<br/>                  | <dl> <dt>Winhttp.lib</dt> </dl>     |
 | DLL<br/>                      | <dl> <dt>Winhttp.dll</dt> </dl>     |
 
 
@@ -198,7 +198,7 @@ WScript.Echo( WinHttpReq.GetAllResponseHeaders());
 [**WinHttpRequest**](winhttprequest.md)
 </dt> <dt>
 
-[**GetResponseHeader**](iwinhttprequest-getresponseheader.md)
+[**Getresponseheader**](iwinhttprequest-getresponseheader.md)
 </dt> <dt>
 
 [Versões do WinHTTP](winhttp-versions.md)

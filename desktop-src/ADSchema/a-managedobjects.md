@@ -1,11 +1,11 @@
 ---
 title: Managed-Objects atributo
-description: Contém a lista de objetos que são gerenciados pelo usuário. Os objetos listados são aqueles que têm a propriedade managedBy da propriedade definida para esse usuário. Cada item da lista é uma referência vinculada ao objeto gerenciado.
+description: Contém a lista de objetos que são gerenciados pelo usuário. Os objetos listados são aqueles que têm a propriedade managedBy definida para esse usuário. Cada item na lista é uma referência vinculada ao objeto gerenciado.
 ms.assetid: 59b76431-03a5-4839-8800-ef03d26b66cc
 ms.tgt_platform: multiple
 keywords:
-- Esquema de Managed-Objects do atributo AD
-- Esquema de AD do atributo managedObjects
+- Managed-Objects atributo AD Schema
+- Esquema do AD do atributo managedObjects
 topic_type:
 - apiref
 api_name:
@@ -23,20 +23,20 @@ ms.locfileid: "119301246"
 ---
 # <a name="managed-objects-attribute"></a>Managed-Objects atributo
 
-Contém a lista de objetos que são gerenciados pelo usuário. Os objetos listados são aqueles que têm a propriedade managedBy da propriedade definida para esse usuário. Cada item da lista é uma referência vinculada ao objeto gerenciado.
+Contém a lista de objetos que são gerenciados pelo usuário. Os objetos listados são aqueles que têm a propriedade managedBy definida para esse usuário. Cada item na lista é uma referência vinculada ao objeto gerenciado.
 
 
 
 | Entrada | Valor |
 |-------------------|------------------------------------------------------------------------------------|
 | CN                | Managed-Objects                                                                    |
-| LDAP-Display-Name | managedObjects                                                                     |
+| Ldap-Display-Name | Managedobjects                                                                     |
 | Tamanho              | \-                                                                                 |
 | Privilégio de atualização  | Esse valor é definido pelo sistema.                                                   |
-| Frequência de atualização  | Quando o registro dos usuários é criado e sempre que os objetos gerenciados precisam ser alterados. |
+| Frequência de atualização  | Quando o registro de usuários é criado e sempre que os objetos gerenciados precisam ser alterados. |
 | Attribute-Id      | 1.2.840.113556.1.4.654                                                             |
-| System-ID-GUID    | 0296c124-40da-11d1-a9c0-0000f80367c1                                               |
-| Syntax            | [**Objeto (DS-DN)**](s-object-ds-dn.md)                                            |
+| System-Id-Guid    | 0296c124-40da-11d1-a9c0-0000f80367c1                                               |
+| Syntax            | [**Object(DS-DN)**](s-object-ds-dn.md)                                            |
 
 
 
@@ -44,7 +44,7 @@ Contém a lista de objetos que são gerenciados pelo usuário. Os objetos listad
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adam**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -59,10 +59,10 @@ Contém a lista de objetos que são gerenciados pelo usuário. Os objetos listad
 | ID do link                | 73                              |
 | MAPI-Id                | 0x8024                          |
 | System-Only            | Verdadeiro                            |
-| É de valor único       | Falso                           |
+| Tem valor único       | Falso                           |
 | É indexado             | Falso                           |
-| No catálogo global      | Falso                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| No Catálogo Global      | Falso                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -80,10 +80,10 @@ Contém a lista de objetos que são gerenciados pelo usuário. Os objetos listad
 | ID do link                | 73                              |
 | MAPI-Id                | 0x8024                          |
 | System-Only            | Verdadeiro                            |
-| É de valor único       | Falso                           |
+| Tem valor único       | Falso                           |
 | É indexado             | Falso                           |
-| No catálogo global      | Falso                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| No Catálogo Global      | Falso                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -92,7 +92,7 @@ Contém a lista de objetos que são gerenciados pelo usuário. Os objetos listad
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adam
 
 
 
@@ -101,9 +101,9 @@ Contém a lista de objetos que são gerenciados pelo usuário. Os objetos listad
 | ID do link                | 73                              |
 | MAPI-Id                | 0x8024                          |
 | System-Only            | Verdadeiro                            |
-| É de valor único       | Falso                           |
+| Tem valor único       | Falso                           |
 | É indexado             | Falso                           |
-| No catálogo global      | Falso                           |
+| No Catálogo Global      | Falso                           |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
@@ -188,7 +188,7 @@ Contém a lista de objetos que são gerenciados pelo usuário. Os objetos listad
 | É de valor único       | Falso                           |
 | É indexado             | Falso                           |
 | No catálogo global      | Falso                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |

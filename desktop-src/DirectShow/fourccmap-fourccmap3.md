@@ -57,7 +57,7 @@ Se esse objeto for construído com o código **FOURCC,** um **GUID** será criad
 
 | Requisito | Valor |
 |-|-|
-| parâmetro  | Fourcc.h (include Fluxos.h) |
+| parâmetro  | Fourcc.h (incluir Fluxos.h) |
 | Biblioteca | Strmbase.lib (builds de varejo); Strmbasd.lib (builds de depuração) |
 
 ## <a name="see-also"></a>Confira também

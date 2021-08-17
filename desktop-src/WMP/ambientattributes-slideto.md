@@ -1,9 +1,9 @@
 ---
-title: AmbientAttributes.slideTo
-description: O método slideTo move o controle para um novo local. O controle se move de maneira não linear durante o período de tempo especificado.
+title: Ambienteattributes. deslizeto
+description: O método slideto move o controle para um novo local. O controle é movido de forma não linear no período de tempo especificado.
 ms.assetid: 06dd610b-cb58-4b60-9f4b-8929c54c3c33
 keywords:
-- AmbientAttributes.slideTo Windows Media Player
+- Windows Media Player de ambiente. Deslize para
 topic_type:
 - apiref
 api_name:
@@ -19,9 +19,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119469906"
 ---
-# <a name="ambientattributesslideto"></a>AmbientAttributes.slideTo
+# <a name="ambientattributesslideto"></a>Ambienteattributes. deslizeto
 
-O **método slideTo** move o controle para um novo local. O controle se move de maneira não linear durante o período de tempo especificado.
+O método **slideto** move o controle para um novo local. O controle é movido de forma não linear no período de tempo especificado.
 
 ``` syntax
         elementID.slideTo(newX, newY, moveTime)
@@ -34,21 +34,21 @@ O **método slideTo** move o controle para um novo local. O controle se move de 
 <span id="newX"></span><span id="newx"></span><span id="NEWX"></span>*newX*
 </dt> <dd>
 
-**Number** (**long**) especificando o novo valor para o **atributo esquerdo** do controle .
+**Número** (**longo**) especificando o novo valor para o atributo **esquerdo** do controle.
 
 </dd> <dt>
 
 <span id="newY"></span><span id="newy"></span><span id="NEWY"></span>*newY*
 </dt> <dd>
 
-**Number** (**long**) especificando o novo valor para o **atributo superior** do controle.
+**Número** (**longo**) especificando o novo valor para o atributo **superior** do controle.
 
 </dd> <dt>
 
-<span id="moveTime"></span><span id="movetime"></span><span id="MOVETIME"></span>*moveTime*
+<span id="moveTime"></span><span id="movetime"></span><span id="MOVETIME"></span>*mover para*
 </dt> <dd>
 
-**Número** (**longo**) especificando o tempo, em milissegundos, que leva para o controle mudar para seu novo local.
+**Número** (**longo**) que especifica o tempo, em milissegundos, que leva para que o controle seja movido para o novo local.
 
 </dd> </dl>
 
@@ -58,7 +58,7 @@ Esse método não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-Esse método é diferente de **moveTo**, que cria um movimento linear ao mover o controle. O movimento não linear criado por esse método é um movimento deslizante que acelera de uma velocidade de zero no início do movimento e desacelera de volta para zero no final, chegando a uma parada suave.
+Esse método é diferente de **MoveTo**, que cria um movimento linear ao mover o controle. O movimento não linear criado por esse método é um movimento deslizante que acelera a partir de uma velocidade de zero no início do movimento e faz a desaceleração para zero no final, chegando a uma parada suave.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -77,10 +77,10 @@ Esse método é diferente de **moveTo**, que cria um movimento linear ao mover o
 [**Atributos de ambiente**](ambient-attributes.md)
 </dt> <dt>
 
-[**AmbientAttributes.left**](ambientattributes-left.md)
+[**Ambienteattributes. esquerda**](ambientattributes-left.md)
 </dt> <dt>
 
-[**AmbientAttributes.moveTo**](ambientattributes-moveto.md)
+[**Ambienteattributes. moveTo**](ambientattributes-moveto.md)
 </dt> <dt>
 
 [**AmbientAttributes.top**](ambientattributes-top.md)

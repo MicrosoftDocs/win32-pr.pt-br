@@ -1,19 +1,19 @@
 ---
 title: Manutenção automática (Agendador de Tarefas)
-description: A atividade de manutenção refere-se a um aplicativo ou processo que ajuda a manter a integridade e o desempenho de um computador Windows.
+description: a atividade de manutenção refere-se a um aplicativo ou processo que ajuda a manter a integridade e o desempenho de um computador Windows.
 ms.assetid: 1D38341B-15AA-422F-AED1-647FCDE69E2E
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 456383eeb75c3b29bf575357d4b17d5f8a66234b
-ms.sourcegitcommit: 857e701bbd35004661bb047e1f24622af9ff1dd7
+ms.openlocfilehash: 43fe72159ac5fd14c2dcc80126e572fa1475ed52ffd5710b74621cf00ad40a39
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "104366862"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119139299"
 ---
 # <a name="automatic-maintenance"></a>Manutenção automática
 
-A atividade de manutenção refere-se a um aplicativo ou processo que ajuda a manter a integridade e o desempenho de um computador Windows. A manutenção inclui manter o sistema operacional Windows (SO) e os aplicativos atualizados, verificar a segurança e executar verificações de malware. O gerenciamento automático do Windows (WAM) é um conjunto de aprimoramentos para a API Agendador de Tarefas que você pode usar para vincular seus aplicativos ao agendamento de manutenção do Windows. Especificamente, o WAM permite que você adicione atividades que exigem agendamento regular, mas que não têm requisitos de tempo exatos. Em vez disso, o WAM conta com o sistema operacional para escolher o tempo apropriado para ativar a tarefa ao longo do dia. O sistema escolhe esses horários com base no impacto mínimo sobre o usuário, o desempenho do PC e a eficiência energética.
+a atividade de manutenção refere-se a um aplicativo ou processo que ajuda a manter a integridade e o desempenho de um computador Windows. a manutenção inclui manter o sistema operacional Windows (so) e os aplicativos atualizados, verificar a segurança e executar verificações de malware. Windows o gerenciamento automático (WAM) é um conjunto de aprimoramentos para a API de Agendador de Tarefas que você pode usar para vincular seus aplicativos ao Windows agendamento de manutenção. Especificamente, o WAM permite que você adicione atividades que exigem agendamento regular, mas que não têm requisitos de tempo exatos. Em vez disso, o WAM conta com o sistema operacional para escolher o tempo apropriado para ativar a tarefa ao longo do dia. O sistema escolhe esses horários com base no impacto mínimo sobre o usuário, o desempenho do PC e a eficiência energética.
 
 ## <a name="how-scheduled-maintenance-works"></a>Como funciona a manutenção agendada
 
@@ -31,7 +31,7 @@ Depois que o sistema concluir a tarefa (mesmo com um código de erro de falha), 
 
 ## <a name="automatic-maintenancemdashdaily-wakeup"></a>Ativação diária de manutenção automática &mdash;
 
-No Windows 7, uma tarefa de manutenção é executada exclusivamente durante a *hora de manutenção*, padronizando para 3 AM e configurável por meio de política de grupo. A máquina seria ativada em espera, executa tarefas de manutenção e volta para o modo de suspensão. Esta sessão diária foi limitada a uma duração máxima de 1 hora por tentativa. Isso permitiria que o sistema executasse a manutenção diariamente, começando às 3 AM por padrão. Observe que o usuário pode reagendar a hora em que a manutenção é disparada Configurando essas configurações.
+no Windows 7, uma tarefa de manutenção é executada exclusivamente durante a *hora de manutenção*, padronizando para 3 AM e configurável por meio de Política de Grupo. A máquina seria ativada em espera, executa tarefas de manutenção e volta para o modo de suspensão. Esta sessão diária foi limitada a uma duração máxima de 1 hora por tentativa. Isso permitiria que o sistema executasse a manutenção diariamente, começando às 3 AM por padrão. Observe que o usuário pode reagendar a hora em que a manutenção é disparada Configurando essas configurações.
 
 Com o advento dos laptops e o foco pesado na vida útil da bateria, as máquinas não são mais configuradas para permitir a ativação S3 na maioria das circunstâncias e, geralmente, doze-to-S4 (hibernação) assim que possível, para economizar bateria. Em resposta a essas alterações, Agendador de Tarefas (> Win7) executa tarefas de manutenção sempre que elas estiverem vencidas e o computador estiver ocioso e em corrente alternada.
 
@@ -49,7 +49,7 @@ powercfg /a
 Hora de manutenção, se a máquina estiver configurada corretamente, ainda funciona, mas se não estiver,
   - Verifique as configurações do BIOS para obter as configurações de ativação. 
   - Verifique se a opção permitir temporizador de ativação está habilitada nas opções de energia.
-    Vá para **painel de controle**  >  **hardware e sons**  >  **Opções de energia**  >  **Editar configurações do plano**  >  **alterar configurações de energia avançadas** > clique em **suspensão**  >  **permitir temporizador de ativação**.
+    vá para **painel de controle**  >  **Hardware e sons**  >  **opções de energia**  >  **editar plano Configurações**  >  **alterar configurações de energia avançadas** > clique em **suspensão**  >  **permitir Timer de ativação**.
   - Verifique se a tarefa agendada está configurada com o seguinte.
       * MaintenanceSettings: a tarefa deve ser configurada com período, prazo final.
       * Habilitado: a tarefa deve ser habilitada.

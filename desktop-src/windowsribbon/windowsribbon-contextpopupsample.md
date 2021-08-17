@@ -1,19 +1,19 @@
 ---
 title: Exemplo de ContextPopup
-description: Este exemplo de código demonstra a marcação e o código necessários para implementar um aplicativo Windows Faixa de Opções com ContextPopups.
+description: Este exemplo de código demonstra a marcação e o código necessários para implementar um aplicativo Windows Ribbon com ContextPopups.
 ms.assetid: f334dbfc-710a-4652-b914-a668ae36aecd
 ms.topic: article
 ms.date: 07/13/2021
-ms.openlocfilehash: 5f469ac892f063fbd6c8beb0fe8af0c054216dbc
-ms.sourcegitcommit: 63c93e0ad0b48d60b11008767196718feb475cb0
+ms.openlocfilehash: f0c739e368a26b2664b71efd4ff7cd8c3e7f8490ef7df8ccbe8ec6ace18af115
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "113691695"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118964385"
 ---
 # <a name="contextpopup-sample"></a>Exemplo de ContextPopup
 
-Este exemplo de código demonstra a marcação e o código necessários para implementar um aplicativo Windows Faixa de Opções com ContextPopups.
+Este exemplo de código demonstra a marcação e o código necessários para implementar um aplicativo Windows Ribbon com ContextPopups.
 
 - [Usage](#usage)
   - [Compilando o exemplo](#building-the-sample)
@@ -40,13 +40,13 @@ Para compilar o exemplo no Microsoft Visual Studio, carregue a solução or arqu
 
 ### <a name="running-the-sample"></a>Executando o exemplo
 
-Para executar o exemplo na janela de comando do ambiente de build, execute os arquivos .exe na pasta Bin Debug ou Bin Release contida na \\ \\ pasta de origem de exemplo.
+Para executar o exemplo na janela de comando do ambiente de build, execute os arquivos .exe na pasta Bin Debug ou Bin Release contida na pasta de origem \\ \\ de exemplo.
 
 Para executar o exemplo compilado com a depuração no Visual Studio, pressione F5.
 
 ## <a name="support"></a>Suporte
 
-O [Fórum Windows de Desenvolvimento](https://social.msdn.microsoft.com/Forums/windowsdesktop/home?forum=windowsribbondevelopment) da Faixa de Opções está disponível para discutir tópicos e fazer perguntas relacionadas ao desenvolvimento de Windows faixa de opções.
+O [Fórum Windows Desenvolvimento](https://social.msdn.microsoft.com/Forums/windowsdesktop/home?forum=windowsribbondevelopment) da Faixa de Opções do Windows está disponível para discutir tópicos e fazer perguntas relacionadas ao desenvolvimento de aplicativos Windows Faixa de Opções.
 
 ## <a name="minimum-requirements"></a>Requisitos mínimos
 
@@ -65,7 +65,7 @@ O [Fórum Windows de Desenvolvimento](https://social.msdn.microsoft.com/Forums/w
  
 
 > [!Note]  
-> A Atualização de Plataforma para [Windows Vista](https://msdn.microsoft.com/library/dd378748.aspx) e Atualização de Plataforma para o Windows [Server 2008](https://msdn.microsoft.com/library/dd378748.aspx) são conjuntos de bibliotecas em tempo de run time que permitem aos desenvolvedores direcionar aplicativos da Faixa de Opções do Windows para o Windows Vista e o Windows Server 2008. As atualizações da plataforma estarão disponíveis para todos os clientes Windows Vista e Windows Server 2008 por meio Windows Update. Aplicativos de terceiros que exigem a Atualização de Plataforma para [Windows Vista](https://msdn.microsoft.com/library/dd378748.aspx) ou Atualização de Plataforma para o Windows [Server 2008](https://msdn.microsoft.com/library/dd378748.aspx) podem fazer com que Windows Atualização detecte se o atualizado necessário está instalado; se não estiver, Windows Update baixará e o instalará em segundo plano.
+> A Atualização de Plataforma para [Windows Vista](https://msdn.microsoft.com/library/dd378748.aspx) e Atualização de Plataforma para o Windows [Server 2008](https://msdn.microsoft.com/library/dd378748.aspx) são conjuntos de bibliotecas em tempo de run time que permitem aos desenvolvedores direcionar aplicativos da Faixa de Opções do Windows para o Windows Vista e o Windows Server 2008. As atualizações da plataforma estarão disponíveis para todos os clientes Windows Vista e Windows Server 2008 por meio do Windows Update. Aplicativos de terceiros que exigem a Atualização de Plataforma para Windows Vista ou Atualização de Plataforma para [o Windows Server 2008](https://msdn.microsoft.com/library/dd378748.aspx) podem fazer com que Windows Atualização detecte se [a](https://msdn.microsoft.com/library/dd378748.aspx) atualização necessária está instalada; se não estiver, Windows Update baixará e o instalará em segundo plano.
 
  
 

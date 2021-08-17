@@ -1,11 +1,11 @@
 ---
-title: Propriedade MonthlyTrigger. DaysOfMonth
-description: Para scripts, Obtém ou define os dias do mês durante os quais a tarefa é executada.
+title: Propriedade MonthlyTrigger.DaysOfMonth
+description: Para scripts, obtém ou define os dias do mês durante os quais a tarefa é executado.
 ms.assetid: 4da80d0f-ae0c-4e56-b51b-6ee6ab309d7c
 keywords:
-- Agendador de Tarefas da propriedade DaysOfMonth
-- Propriedade DaysOfMonth Agendador de Tarefas, objeto MonthlyTrigger
-- Objeto MonthlyTrigger Agendador de Tarefas, Propriedade DaysOfMonth
+- Propriedade DaysOfMonth Agendador de Tarefas
+- Propriedade DaysOfMonth Agendador de Tarefas objeto , MonthlyTrigger
+- Objeto MonthlyTrigger Agendador de Tarefas propriedade , DaysOfMonth
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 81a3bd671266cfbe459218367fadf20fd52f94a7
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b256295b98105f79b144285d4aec77768f0648fc327be8be29d3f203586fe484
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104085782"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119139399"
 ---
-# <a name="monthlytriggerdaysofmonth-property"></a>Propriedade MonthlyTrigger. DaysOfMonth
+# <a name="monthlytriggerdaysofmonth-property"></a>Propriedade MonthlyTrigger.DaysOfMonth
 
-Para scripts, Obtém ou define os dias do mês durante os quais a tarefa é executada.
+Para scripts, obtém ou define os dias do mês durante os quais a tarefa é executado.
 
 ## <a name="syntax"></a>Syntax
 
@@ -38,7 +38,7 @@ MonthlyTrigger.DaysOfMonth As long
 
 ## <a name="property-value"></a>Valor da propriedade
 
-Uma máscara de bits bit que indica os dias do mês durante os quais a tarefa é executada.
+Uma máscara bit a bit que indica os dias do mês durante os quais a tarefa é executado.
 
 ## <a name="remarks"></a>Comentários
 
@@ -83,7 +83,7 @@ Uma máscara de bits bit que indica os dias do mês durante os quais a tarefa é
 
  
 
-Ao ler ou gravar seu próprio XML para uma tarefa, os dias do mês são especificados usando o elemento [**DaysOfMonth**](taskschedulerschema-daysofmonth-monthlyscheduletype-element.md) do esquema de Agendador de tarefas.
+Ao ler ou escrever seu próprio XML para uma tarefa, os dias do mês são especificados usando o [**elemento DaysOfMonth**](taskschedulerschema-daysofmonth-monthlyscheduletype-element.md) do Agendador de Tarefas esquema.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -91,9 +91,9 @@ Ao ler ou gravar seu próprio XML para uma tarefa, os dias do mês são especifi
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                          |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                    |
-| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd. tlb</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                          |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                    |
+| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 
 

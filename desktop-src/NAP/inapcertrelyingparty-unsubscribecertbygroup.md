@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b01bbad5ef48b5f709f93f018c56b5798907d08c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 7d8b9f5398ba63c0e6108adfefd51d0546180db4536dbd95615e5b15dddde523
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918591"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118940214"
 ---
 # <a name="inapcertrelyingpartyunsubscribecertbygroup-method"></a>Método INapCertRelyingParty:: UnSubscribeCertByGroup
 
@@ -62,7 +62,7 @@ Deve ser **NULL**.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um dos seguintes códigos de erro com base no resultado dessa operação.
 
@@ -90,9 +90,9 @@ Antes de chamar esse método, chame [**SubscribeCertByGroup**](inapcertrelyingpa
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                                     |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                               |
-| parâmetro<br/>                   | <dl> <dt>NapCertRelyingParty. h</dt> </dl>   |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                                     |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                               |
+| Cabeçalho<br/>                   | <dl> <dt>NapCertRelyingParty. h</dt> </dl>   |
 | INSERI<br/>                      | <dl> <dt>NapCertRelyingParty. idl</dt> </dl> |
 
 

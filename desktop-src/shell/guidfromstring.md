@@ -26,7 +26,7 @@ ms.locfileid: "119351056"
 ---
 # <a name="guidfromstring-function"></a>Função GUIDFromString
 
-\[**GUIDFromString** está disponível por meio Windows XP com Service Pack 2 (SP2) ou Windows Vista. Ele pode ser alterado ou não disponível nas versões subsequentes. Os aplicativos [**devem usar CLSIDFromString**](/windows/win32/api/combaseapi/nf-combaseapi-clsidfromstring) ou [**IIDFromString**](/windows/win32/api/combaseapi/nf-combaseapi-iidfromstring) no lugar dessa função.\]
+\[o **GUIDFromString** está disponível por meio do Windows XP com Service Pack 2 (SP2) ou Windows Vista. Ele pode ser alterado ou indisponível nas versões subsequentes. Os aplicativos devem usar [**CLSIDFromString**](/windows/win32/api/combaseapi/nf-combaseapi-clsidfromstring) ou [**falha em IIDFromString**](/windows/win32/api/combaseapi/nf-combaseapi-iidfromstring) no lugar dessa função.\]
 
 Converte uma cadeia de caracteres em um GUID.
 
@@ -46,7 +46,7 @@ BOOL GUIDFromString(
 
 <dl> <dt>
 
-*psz* \[ Em\]
+*psz* \[ no\]
 </dt> <dd>
 
 Tipo: **LPCTSTR**
@@ -57,26 +57,26 @@ Um ponteiro para a cadeia de caracteres terminada em nulo a ser convertida. A ca
 
 </dd> <dt>
 
-*pguid* \[ out\]
+*pGuid* \[ fora\]
 </dt> <dd>
 
 Tipo: **LPGUID**
 
-Ponteiro para um buffer para receber o GUID quando este método retornar.
+Ponteiro para um buffer para receber o GUID quando esse método retorna.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor retornado
 
-Tipo: **BOOL**
+Tipo: **bool**
 
-**TRUE** se o GUID foi criado com êxito; caso contrário, **FALSE.**
+**True** se o GUID foi criado com êxito; caso contrário, **false**.
 
 ## <a name="remarks"></a>Comentários
 
-Essa função não é declarada em um header ou exportada por nome de um .dll arquivo. Ele deve ser carregado do Shell32.dll como ordinal 703 para **GUIDFromStringA** e ordinal 704 para **GUIDFromStringW.**
+Essa função não é declarada em um cabeçalho ou exportada pelo nome de um arquivo .dll. Ele deve ser carregado de Shell32.dll como ordinal 703 para **GUIDFromStringA** e ordinal 704 para **GUIDFromStringW**.
 
-Ele também pode ser acessado do Shlwapi.dll como ordinal 269 para **GUIDFromStringA** e ordinal 270 para **GUIDFromStringW.**
+Ele também pode ser acessado de Shlwapi.dll como ordinal 269 para **GUIDFromStringA** e ordinal 270 para **GUIDFromStringW**.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -84,7 +84,7 @@ Ele também pode ser acessado do Shlwapi.dll como ordinal 269 para **GUIDFromStr
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho XP\]<br/>                                            |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho XP\]<br/>                                            |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                   |
 | DLL<br/>                      | <dl> <dt>Shell32.dll</dt> </dl> |
 | Nomes Unicode e ANSI<br/>   | **GUIDFromStringW** (Unicode) e **GUIDFromStringA** (ANSI)<br/>                |

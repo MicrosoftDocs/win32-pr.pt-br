@@ -12,12 +12,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 1c63ba3e20653c41864394d9c563c851f2aab5e6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f0f0100367d4fad6d6e0b013e5d552f733086e6ddd5bc720779ef1fb5b65cdce
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105791375"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119133219"
 ---
 # <a name="dnsresolveex-function"></a>função dnsResolveEx
 
@@ -27,14 +27,14 @@ Resolver uma cadeia de caracteres de host para seu endereço IP
 
 <dl> <dt>
 
-*hospedeira* 
+*host* 
 </dt> <dd>
 
 Uma cadeia de caracteres que contém o host HTTP que é fornecido para FindProxyForUrl.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Uma cadeia de caracteres delimitada por ponto e vírgula contendo endereços IPv6 e IPv4 ou uma cadeia de caracteres vazia se o host não puder ser resolvido.
 

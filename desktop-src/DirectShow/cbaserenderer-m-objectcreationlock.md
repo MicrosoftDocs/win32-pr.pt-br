@@ -27,7 +27,7 @@ ms.locfileid: "119429306"
 
 Bloquear para proteger a criação de objetos dentro do filtro. O filtro mantém esse bloqueio quando cria o pino de entrada ([**CBaseRenderer:: m \_ pInputPin**](cbaserenderer-m-pinputpin.md)) ou o objeto [**CRendererPosPassThru**](crendererpospassthru.md) ([**CBaseRenderer:: m \_ pPosition**](cbaserenderer-m-pposition.md)). Esse bloqueio impede que vários threads tentem criar um desses objetos ao mesmo tempo.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 ```C++
