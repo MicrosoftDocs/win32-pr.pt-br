@@ -4,12 +4,12 @@ ms.assetid: 2EFFA81C-5609-43FA-8151-D06C28A0FCC4
 title: Atributo MFT_ENUM_VIDEO_RENDERER_EXTENSION_PROFILE (Mfapi. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c7d7c758dac39c7dd93054eb28d5ef7dcc5325db
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cb1d9ece298f2ec8b906bfc28a5a76bfa755660b4ba162040884744bdaa7764b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104091052"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119102146"
 ---
 # <a name="mft_enum_video_renderer_extension_profile-attribute"></a>\_Atributo de \_ \_ perfil de extensão de processador de vídeo MFT \_ enum \_
 
@@ -23,9 +23,9 @@ Contém uma lista de todas as entradas **VideoRendererExtensionProfile** na marc
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10, versão 1709\]<br/>                          |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2016\]<br/>                               |
-| parâmetro<br/>                   | <dl> <dt>Mfapi. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 10, \[ somente aplicativos da área de trabalho da versão 1709\]<br/>                          |
+| Servidor mínimo com suporte<br/> | Windows Server 2016 \[ somente aplicativos da área de trabalho\]<br/>                               |
+| Cabeçalho<br/>                   | <dl> <dt>Mfapi. h</dt> </dl> |
 
 
 

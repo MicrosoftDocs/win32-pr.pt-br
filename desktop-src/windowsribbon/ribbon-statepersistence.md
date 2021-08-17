@@ -1,6 +1,6 @@
 ---
 title: Persistindo o estado da faixa de opções
-description: A Windows Framework do Windows (Faixa de Opções) fornece a capacidade de preservar o estado de uma variedade de configurações e preferências do usuário entre as sessões do aplicativo.
+description: O Windows Framework (Faixa de Opções) fornece a capacidade de preservar o estado de uma variedade de configurações e preferências do usuário entre as sessões do aplicativo.
 ms.assetid: f59e36be-8e3d-454a-b93c-9fc5fc5ecb47
 ms.topic: article
 ms.date: 05/31/2018
@@ -13,7 +13,7 @@ ms.locfileid: "118707925"
 ---
 # <a name="persisting-ribbon-state"></a>Persistindo o estado da faixa de opções
 
-A Windows Framework do Windows (Faixa de Opções) fornece a capacidade de preservar o estado de uma variedade de configurações e preferências do usuário entre as sessões do aplicativo.
+O Windows Framework (Faixa de Opções) fornece a capacidade de preservar o estado de uma variedade de configurações e preferências do usuário entre as sessões do aplicativo.
 
 -   [Introdução](#introduction)
 -   [Uma experiência previsível](#a-predictable-experience)
@@ -29,7 +29,7 @@ Vários aspectos de uma faixa de opções, incluindo preferências de configura�
 
 As Diretrizes de Experiência do Usuário da Faixa de Opções aconselham que, para fornecer a experiência do usuário mais previsível possível, os [aplicativos](https://msdn.microsoft.com/library/cc872782.aspx) da Faixa de Opções devem preservar o estado da faixa de opções (além da última guia selecionada) conforme o aplicativo é fechado. Dessa forma, quando o mesmo aplicativo é lançado, as configurações e as personalizações da sessão anterior podem ser restauradas e o usuário pode esperar continuar interagindo com o aplicativo da mesma maneira que o deixou.
 
-As configurações da faixa de opções que podem ser modificadas em tempo de operação e preservadas entre as sessões do aplicativo são listadas no menu Contexto de comando. Elas incluem:
+As configurações da faixa de opções que podem ser modificadas em tempo de operação e preservadas entre as sessões do aplicativo são listadas no menu Contexto de comando. Eles incluem:
 
 -   Comandos adicionados à [lista Comando da Barra](windowsribbon-controls-quickaccesstoolbar.md) de Ferramentas de Acesso Rápido pelo usuário. Especificado por um objeto [**IUICollection por**](/windows/desktop/api/uiribbon/nn-uiribbon-iuicollection) meio da chave de propriedade [ \_ PKEY \_ ItemsSource da](windowsribbon-reference-properties-uipkey-itemssource.md) interface do usuário.
 

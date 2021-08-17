@@ -3,43 +3,43 @@ title: Manipulando eventos em uma página da Web exibida pelo Firefox
 description: Manipulando eventos em uma página da Web exibida pelo Firefox
 ms.assetid: 361c46ff-36e2-4497-a511-86b0439e9437
 keywords:
-- Windows Media Player, incorporando controle ActiveX
-- Modelo de objeto do Windows Media Player, inserindo controle ActiveX
-- modelo de objeto, inserindo controle ActiveX
-- Windows Media Player Mobile, inserindo controle ActiveX
-- Controle ActiveX do Windows Media Player, incorporando
-- Controle ActiveX móvel do Windows Media Player, incorporando
-- Controle ActiveX, incorporando
-- Controle ActiveX do Windows Media Player, páginas da Web
-- Controle ActiveX móvel do Windows Media Player, páginas da Web
-- Controle ActiveX, páginas da Web
-- Controle ActiveX do Windows Media Player, manipulação de eventos
-- Controle ActiveX móvel do Windows Media Player, manipulação de eventos
-- Controle ActiveX, manipulação de eventos
+- Windows Media Player, inserindo controle de ActiveX
+- modelo de objeto Windows Media Player, inserindo ActiveX controle
+- modelo de objeto, inserindo ActiveX controle
+- Windows Media Player controle de ActiveX móvel, incorporando
+- Windows Media Player controle de ActiveX, inserindo
+- Windows Media Player controle de ActiveX móvel, incorporando
+- controle de ActiveX, inserindo
+- controle de ActiveX de Windows Media Player, páginas da Web
+- Windows Media Player controle de ActiveX móvel, páginas da Web
+- controle de ActiveX, páginas da Web
+- controle de ActiveX de Windows Media Player, manipulação de eventos
+- Windows Media Player controle de ActiveX móvel, manipulação de eventos
+- controle de ActiveX, manipulação de eventos
 - inserindo, páginas da Web
 - Incorporação de página da Web, manipulação de eventos
 - Windows Media Player, Firefox
-- Modelo de objeto do Windows Media Player, Firefox
+- modelo de objeto Windows Media Player, Firefox
 - modelo de objeto, Firefox
-- Windows Media Player Mobile, Firefox
-- Controle ActiveX do Windows Media Player, Firefox
-- Controle ActiveX móvel do Windows Media Player, Firefox
-- Controle ActiveX, Firefox
+- Windows Media Player Móvel, Firefox
+- controle de ActiveX de Windows Media Player, Firefox
+- Windows Media Player controle de ActiveX móvel, Firefox
+- controle de ActiveX, Firefox
 - Firefox, manipulação de eventos
 - Incorporação de página da Web, Firefox
 - eventos, Firefox
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7b9659d1920ffc4d5e39f4cd44e15e24b08f6ddc
-ms.sourcegitcommit: e22adfb0dd3bb989e59455baedb4d905a877a240
+ms.openlocfilehash: e971caef18114b670678fc76d0515858bee77a94a5e3f8b5c24ca5322177b8e6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "104292908"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117748411"
 ---
 # <a name="handling-events-in-a-web-page-displayed-by-firefox"></a>Manipulando eventos em uma página da Web exibida pelo Firefox
 
-Ao inserir o controle do Windows Media Player em uma página da Web, você pode escrever um script que manipule eventos. Para obter uma lista de eventos gerados pelo controle de jogador, consulte [objeto Player](player-object.md).
+ao inserir o controle de Windows Media Player em uma página da web, você pode escrever um script que manipule eventos. Para obter uma lista de eventos gerados pelo controle de jogador, consulte [objeto Player](player-object.md).
 
 Se o tipo MIME associado a um controle player incorporado for application/x-MS-WMP, você poderá escrever manipuladores de eventos que tenham o seguinte formato:
 
@@ -52,7 +52,7 @@ Se o tipo MIME associado a um controle player incorporado for application/x-MS-W
 
 
 
-em que *EventName* é o nome de um evento do Windows Media Player, e *params* é uma lista dos parâmetros do evento. Por exemplo, o código a seguir tem um manipulador para o evento [PlayStateChange](player-player-playstatechange.md) .
+em que *eventname* é o nome de um evento Windows Media Player, e *params* é uma lista dos parâmetros do evento. Por exemplo, o código a seguir tem um manipulador para o evento [PlayStateChange](player-player-playstatechange.md) .
 
 
 ```HTML
@@ -83,7 +83,7 @@ Se o tipo MIME associado a um controle player incorporado não for application/x
 
 
 
-em que *EventName* é o nome de um evento do Windows Media Player, e *params* é uma lista dos parâmetros do evento. Por exemplo, o código a seguir tem um manipulador para o evento **PlayStateChange** .
+em que *eventname* é o nome de um evento Windows Media Player, e *params* é uma lista dos parâmetros do evento. Por exemplo, o código a seguir tem um manipulador para o evento **PlayStateChange** .
 
 
 ```HTML
@@ -109,18 +109,18 @@ Se você tiver várias instâncias do controle Player em uma página da Web e se
 > [!Note]  
 > Se o tipo MIME não for application/x-MS-WMP, o evento **DoubleClick** será enviado como OnDSDblClickEvt (não OnDSDoubleClickEvt) para compatibilidade com a versão 6,4 do controle Player.
 
- 
+ 
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[**Usando o controle do Windows Media Player com o Firefox**](using-the-windows-media-player-control-with-firefox.md)
+[**usando o controle de Windows Media Player com o Firefox**](using-the-windows-media-player-control-with-firefox.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

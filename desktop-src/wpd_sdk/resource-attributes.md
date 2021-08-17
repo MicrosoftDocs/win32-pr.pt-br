@@ -1,5 +1,5 @@
 ---
-description: Os dispositivos portáteis do Windows oferecem suporte aos seguintes atributos de recurso.
+description: Windows Os dispositivos portáteis oferecem suporte aos seguintes atributos de recurso.
 ms.assetid: 0cbf8777-5cea-4839-a4c3-366bb9e18488
 title: Atributos de recurso (PortableDevice. h)
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - PortableDevice.h
-ms.openlocfilehash: 300add64d332dbc509bef6ec5bb2ad124f7a6b3e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 303f43f1061dd9d8b05855b3c2af94a1ace3c071c12b308303b1524b255a6133
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105791417"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118963506"
 ---
 # <a name="resource-attributes"></a>Atributos de recurso
 
-Os dispositivos portáteis do Windows oferecem suporte aos seguintes atributos de recurso. Esses atributos são retornados pelos seguintes métodos:
+Windows Os dispositivos portáteis oferecem suporte aos seguintes atributos de recurso. Esses atributos são retornados pelos seguintes métodos:
 
 -   [**IPortableDeviceResources:: getresourceattributes**](/windows/desktop/api/PortableDeviceApi/nf-portabledeviceapi-iportabledevicecapabilities-getfixedpropertyattributes)
 

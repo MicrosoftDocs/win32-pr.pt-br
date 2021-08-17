@@ -4,22 +4,22 @@ description: Sobre dispositivos
 ms.assetid: 9e68c5eb-5fcb-4d7d-8dbb-7e951f253df8
 keywords:
 - Windows Media Player, sincronizando dispositivos
-- Modelo de objeto do Windows Media Player, sincronizando dispositivos
+- modelo de objeto Windows Media Player, sincronizando dispositivos
 - modelo de objeto, sincronizando dispositivos
-- Controle ActiveX do Windows Media Player, sincronizando dispositivos
-- Controle ActiveX, sincronizando dispositivos
-- Controle ActiveX móvel do Windows Media Player, sincronizando dispositivos
-- Windows Media Player Mobile, sincronizando dispositivos
+- Windows Media Player controle de ActiveX, sincronizando dispositivos
+- controle de ActiveX, sincronizando dispositivos
+- Windows Media Player controle de ActiveX móvel, sincronizando dispositivos
+- Windows Media Player Dispositivos móveis, sincronizando
 - Sincronizando dispositivos, sobre
 - sincronização de dispositivo, sobre
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e89a074e4edb5bdbc7d90391398d5e0e4133505a
-ms.sourcegitcommit: 48d1c892045445bcbd0f22bafa2fd3861ffaa6e7
+ms.openlocfilehash: 66383082bae772b48f913f6bd4615724de8f7b7735e387ba93407a9848f17074
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "105760903"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119956916"
 ---
 # <a name="about-devices"></a>Sobre dispositivos
 
@@ -34,7 +34,7 @@ Para saber quando os dispositivos se conectam ou se desconectam, você pode rece
 A interface **IWMPSyncDevice** fornece métodos adicionais para permitir que você obtenha ou defina informações sobre um dispositivo. Por exemplo:
 
 -   Os métodos **Get \_ FriendlyName** e **Put \_ FriendlyName** permitem recuperar e especificar o nome do dispositivo definido pelo usuário.
--   O método **Get \_ DeviceName** permite que você recupere o nome do dispositivo que os usuários veem no Shell do Windows XP.
+-   o método **get \_ devicename** permite que você recupere o nome do dispositivo que os usuários veem no shell do Windows XP.
 -   O método **getItemInfo** permite que você recupere metadados de dispositivos.
 
 ## <a name="related-topics"></a>Tópicos relacionados
@@ -53,9 +53,9 @@ A interface **IWMPSyncDevice** fornece métodos adicionais para permitir que voc
 [**Trabalhando com dispositivos portáteis**](working-with-portable-devices.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

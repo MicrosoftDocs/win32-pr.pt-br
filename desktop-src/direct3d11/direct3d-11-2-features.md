@@ -1,19 +1,19 @@
 ---
 title: Recursos do Direct3D 11,2
-description: A funcionalidade a seguir foi adicionada no Direct3D 11,2, que está incluído com Windows 8.1, Windows RT 8,1 e Windows Server 2012 R2.
+description: a funcionalidade a seguir foi adicionada no Direct3D 11,2, que está incluído com Windows 8.1, Windows RT 8,1 e Windows Server 2012 R2.
 ms.assetid: 2A2D9BBB-F53A-4187-A25B-F4E58C896EE2
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 299b720bfb91297043c8e7d76beb50067eb64e17
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: b1cd253cf618b3915c4f303691cab86a11cc9268061d536892c0ff5ccf4fffe4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104967195"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119124541"
 ---
 # <a name="direct3d-112-features"></a>Recursos do Direct3D 11,2
 
-A funcionalidade a seguir foi adicionada no Direct3D 11,2, que está incluído com Windows 8.1, Windows RT 8,1 e Windows Server 2012 R2.
+a funcionalidade a seguir foi adicionada no Direct3D 11,2, que está incluído com Windows 8.1, Windows RT 8,1 e Windows Server 2012 R2.
 
 -   [Recursos em ladrilho](#tiled-resources)
     -   [Verifique o suporte a recursos de ladrilho](#check-tiled-resources-support)
@@ -102,11 +102,11 @@ Conclua estas etapas para criar um sombreador final usando vinculação dinâmic
 
 ### <a name="function-linking-graph-flg"></a>Grafo de vinculação de função (FLG)
 
-Windows 8.1 também adiciona o grafo de vinculação de função (FLG). Você pode usar FLG para construir sombreadores que consistem em uma sequência de invocações de função pré-compiladas que passam valores entre si. Ao usar o FLG, não há necessidade de escrever HLSL e invocar o compilador HLSL. Em vez disso, a estrutura do sombreador é especificada programaticamente usando chamadas à API do C++. Os nós FLG representam assinaturas de entrada e saída e invocações de funções de biblioteca pré-compiladas. A ordem de registro dos nós de chamada de função define a sequência de invocações. O nó de assinatura de entrada deve ser especificado primeiro, enquanto o nó de assinatura de saída deve ser especificado por último. As bordas FLG definem como os valores são passados de um nó para outro. Os tipos de dados dos valores passados devem ser os mesmos; Não há nenhuma conversão implícita de tipo. As regras Shape e swizzling seguem o comportamento de HLSL e os valores só podem ser passados para frente nessa sequência. Para obter informações sobre a API do FLG, consulte [**ID3D11FunctionLinkingGraph**](/windows/desktop/api/D3D11Shader/nn-d3d11shader-id3d11functionlinkinggraph).
+Windows 8.1 também adiciona o Graph de vinculação de função (FLG). Você pode usar FLG para construir sombreadores que consistem em uma sequência de invocações de função pré-compiladas que passam valores entre si. Ao usar o FLG, não há necessidade de escrever HLSL e invocar o compilador HLSL. Em vez disso, a estrutura do sombreador é especificada programaticamente usando chamadas à API do C++. Os nós FLG representam assinaturas de entrada e saída e invocações de funções de biblioteca pré-compiladas. A ordem de registro dos nós de chamada de função define a sequência de invocações. O nó de assinatura de entrada deve ser especificado primeiro, enquanto o nó de assinatura de saída deve ser especificado por último. As bordas FLG definem como os valores são passados de um nó para outro. Os tipos de dados dos valores passados devem ser os mesmos; Não há nenhuma conversão implícita de tipo. As regras Shape e swizzling seguem o comportamento de HLSL e os valores só podem ser passados para frente nessa sequência. Para obter informações sobre a API do FLG, consulte [**ID3D11FunctionLinkingGraph**](/windows/desktop/api/D3D11Shader/nn-d3d11shader-id3d11functionlinkinggraph).
 
 ## <a name="inbox-hlsl-compiler"></a>Compilador HLSL de caixa de entrada
 
-O compilador HLSL agora é a caixa de entrada no Windows 8.1 e posterior. Agora, a maioria das APIs para a programação de sombreador pode ser usada em aplicativos da Windows Store criados para Windows 8.1 e posterior. Muitas APIs para programação de sombreador não puderam ser usadas em aplicativos da Windows Store criados para o Windows 8; as páginas de referência para essas APIs foram marcadas com uma observação. Mas algumas APIs de sombreador (por exemplo, [**D3DCompileFromFile**](/windows/desktop/direct3dhlsl/d3dcompilefromfile)) ainda podem ser usadas apenas para desenvolver aplicativos da Windows Store, e não em aplicativos que você envia para a Windows Store; as páginas de referência para essas APIs ainda são marcadas com uma observação.
+o compilador HLSL agora é a caixa de entrada no Windows 8.1 e posterior. agora, a maioria das APIs para a programação de sombreador pode ser usada em aplicativos de Windows store criados para Windows 8.1 e posterior. muitas APIs para programação de sombreador não puderam ser usadas em aplicativos de Windows Store criados para Windows 8; as páginas de referência para essas APIs foram marcadas com uma observação. mas algumas APIs de sombreador (por exemplo, [**D3DCompileFromFile**](/windows/desktop/direct3dhlsl/d3dcompilefromfile)) ainda podem ser usadas apenas para desenvolver Windows aplicativos da loja e não em aplicativos que você envia para o repositório de Windows; as páginas de referência para essas APIs ainda são marcadas com uma observação.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -115,6 +115,6 @@ O compilador HLSL agora é a caixa de entrada no Windows 8.1 e posterior. Agora,
 [O que há de novo no Direct3D 11](dx-graphics-overviews-introduction.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

@@ -65,7 +65,7 @@ Essa mensagem é enviada para a função de retorno de chamada ou o objeto de re
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                      |
 | Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                |
-| parâmetro<br/>                   | <dl> <dt>Shlobj.h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Shlobj.h</dt> </dl> |
 
 
 

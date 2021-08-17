@@ -1,9 +1,9 @@
 ---
 title: ncacn_nb_ipx atributo
-description: A \_ \_ palavra-chave IPX do ncacn NB identifica o NetBIOS sobre IPX como a família de protocolos para o ponto de extremidade. Esta família de protocolos está obsoleta e não deve ser usada em novos aplicativos.
+description: A palavra-chave \_ ncacn nb \_ ipx identifica NetBIOS sobre IPX como a família de protocolo para o ponto de extremidade. Essa família de protocolos está obsoleta e não deve ser usada em novos aplicativos.
 ms.assetid: 641471d4-eba4-4d4a-a3fe-1e40b3751e38
 keywords:
-- ncacn_nb_ipx do atributo MIDL
+- ncacn_nb_ipx atributo MIDL
 topic_type:
 - apiref
 api_name:
@@ -19,9 +19,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118642217"
 ---
-# <a name="ncacn_nb_ipx-attribute"></a>\_ \_ atributo IPX do ncacn NB
+# <a name="ncacn_nb_ipx-attribute"></a>Atributo ncacn \_ nb \_ ipx
 
-A palavra-chave **\_ \_ IPX do ncacn NB** identifica o NetBIOS sobre IPX como a família de protocolos para o ponto de extremidade. Esta família de protocolos está obsoleta e não deve ser usada em novos aplicativos.
+A **palavra-chave \_ ncacn nb \_ ipx** identifica NetBIOS sobre IPX como a família de protocolo para o ponto de extremidade. Essa família de protocolos está obsoleta e não deve ser usada em novos aplicativos.
 
 ``` syntax
 endpoint("ncacn_nb_ipx:[port-name]")
@@ -31,19 +31,19 @@ endpoint("ncacn_nb_ipx:[port-name]")
 
 <dl> <dt>
 
-*nome da porta* 
+*port-name* 
 </dt> <dd>
 
-Especifica um valor opcional de 8 bits que varia de 1 a 254. Valores menores que 0x20 são reservados. Se o valor de *Port-Name* não for especificado, o serviço de mapeamento de ponto de extremidade selecionará o valor da porta.
+Especifica um valor opcional de 8 bits que varia de 1 a 254. Valores menores que 0x20 são reservados. Se o *valor de nome da* porta não for especificado, o serviço de mapeamento de ponto de extremidade selecionará o valor da porta.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-A sintaxe da cadeia de caracteres de porta NetBIOS, como todas as cadeias de porta, é definida pela implementação de transporte e é independente da especificação de IDL. O compilador MIDL executa uma verificação de sintaxe limitada, mas não garante que a especificação do ponto de extremidade esteja correta. Algumas classes de erros podem ser relatadas em tempo de execução em vez de em tempo de compilação.
+A sintaxe da cadeia de caracteres de porta NetBIOS, como todas as cadeias de caracteres de porta, é definida pela implementação de transporte e é independente da especificação de IDL. O compilador MIDL executa verificação de sintaxe limitada, mas não garante que a especificação do ponto de extremidade está correta. Algumas classes de erros podem ser relatadas em tempo de run em vez de em tempo de compilação.
 
 > [!Note]  
-> Não há suporte para essa família de protocolos no WindowsÂ XP.
+> Não há suporte para essa família de protocolos no Windows XP.
 
  
 
@@ -65,40 +65,40 @@ interface iface
 
 <dl> <dt>
 
-[**extremidade**](endpoint.md)
+[**Extremidade**](endpoint.md)
 </dt> <dt>
 
-[Arquivo de definição de interface (IDL)](interface-definition-idl-file.md)
+[Arquivo IDL (definição de interface)](interface-definition-idl-file.md)
 </dt> <dt>
 
-[**\_TCP IP \_ ncacn**](ncacn-ip-tcp.md)
+[**ncacn \_ ip \_ tcp**](ncacn-ip-tcp.md)
 </dt> <dt>
 
-[**ncacn \_ NB \_ TCP**](ncacn-nb-tcp.md)
+[**ncacn \_ nb \_ tcp**](ncacn-nb-tcp.md)
 </dt> <dt>
 
-[**ncacn \_ NB NB \_**](ncacn-nb-nb.md)
+[**ncacn \_ nb \_ nb**](ncacn-nb-nb.md)
 </dt> <dt>
 
-[**ncacn \_ no \_ DSP**](ncacn-at-dsp.md)
+[**ncacn \_ em \_ dsp**](ncacn-at-dsp.md)
 </dt> <dt>
 
-[**ncacn \_ SPX**](ncacn-spx.md)
+[**ncacn \_ spx**](ncacn-spx.md)
 </dt> <dt>
 
-[**ncacn \_ NP**](ncacn-np.md)
+[**ncacn \_ np**](ncacn-np.md)
 </dt> <dt>
 
 [**ncalrpc**](ncalrpc.md)
 </dt> <dt>
 
-[**\_UDP IP \_ ncadg**](ncadg-ip-udp.md)
+[**ncadg \_ ip \_ udp**](ncadg-ip-udp.md)
 </dt> <dt>
 
-[**ncadg \_ IPX**](ncadg-ipx.md)
+[**ncadg \_ ipx**](ncadg-ipx.md)
 </dt> <dt>
 
-[**Associação de cadeia de caracteres**](/windows/desktop/Rpc/string-binding)
+[**associação de cadeia de caracteres**](/windows/desktop/Rpc/string-binding)
 </dt> </dl>
 
  

@@ -1,7 +1,7 @@
 ---
-description: Esta seção lista os valores usados para a funcionalidade de portador de banda larga.
+description: Esta seção lista os valores usados para o recurso portador de banda larga.
 ms.assetid: 9e45ca17-2aec-42e5-88a5-5ef1dc4238d9
-title: Funcionalidade de portador de banda larga
+title: Recurso portador de banda larga
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 1f1294724726d766c209c9f83adc5dd2bfc0db2680cf144759b95654748b0d81
@@ -11,9 +11,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118560323"
 ---
-# <a name="broadband-bearer-capability"></a>Funcionalidade de portador de banda larga
+# <a name="broadband-bearer-capability"></a>Recurso portador de banda larga
 
-Esta seção lista os valores usados para a funcionalidade de portador de banda larga.
+Esta seção lista os valores usados para o recurso portador de banda larga.
 
 ``` syntax
 #include <windows.h>

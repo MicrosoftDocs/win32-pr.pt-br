@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 41236c541fc251902a7a0a5ad6030a28dd36e3a4
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 8087f45ad94fe3e45f78a1be9d86b30f6f7e3f2c9161b9c4498865b12582436e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104298721"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119124931"
 ---
 # <a name="d3dx11_state_block_mask-structure"></a>\_Estrutura de \_ máscara de bloco de estado D3DX11 \_
 
@@ -193,7 +193,7 @@ Matriz de interfaces envoltória-Shader. A matriz é um bitmask de vários bytes
 
 </dd> <dt>
 
-**AD**
+**DS**
 </dt> <dd>
 
 Tipo: **[ **byte**](/windows/desktop/WinProg/windows-data-types)**
@@ -354,222 +354,222 @@ Tipo: **[ **byte**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Matriz de interfaces de sombreador de pixel. A matriz é um bitmask de vários bytes em que cada bit representa um slot de interface.
+Matriz de interfaces de sombreador de pixel. A matriz é um bitmask de vários byte em que cada bit representa um slot de interface.
 
 </dd> <dt>
 
 **PSUnorderedAccessViews**
 </dt> <dd>
 
-Tipo: **[ **byte**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **BYTE**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Valor booliano que indica se as exibições de acesso não ordenadas do sombreador de pixel devem ser salvas.
+Valor booliana que indica se as exibições de acesso nãoordados do sombreador de pixels são salvas.
 
 </dd> <dt>
 
 **CS**
 </dt> <dd>
 
-Tipo: **[ **byte**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **BYTE**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Valor booliano que indica se o estado do sombreador de computação deve ser salvo.
+Valor booliana que indica se o estado do sombreador de computação deve ser salvo.
 
 </dd> <dt>
 
 **CSSamplers**
 </dt> <dd>
 
-Tipo: **[ **byte**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **BYTE**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Matriz de amostras de sombreador de computação. A matriz é um bitmask de vários bytes em que cada bit representa um slot de amostra.
+Matriz de exemplos de sombreador de computação. A matriz é um bitmask de vários byte em que cada bit representa um slot de exemplo.
 
 </dd> <dt>
 
 **CSShaderResources**
 </dt> <dd>
 
-Tipo: **[ **byte**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **BYTE**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Matriz de recursos de sombreador de computação. A matriz é um bitmask de vários bytes em que cada bit representa um slot de recurso.
+Matriz de recursos de sombreador de computação. A matriz é um bitmask de vários byte em que cada bit representa um slot de recurso.
 
 </dd> <dt>
 
 **CSConstantBuffers**
 </dt> <dd>
 
-Tipo: **[ **byte**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **BYTE**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Matriz de buffers de constante Compute-Shader. A matriz é um bitmask de vários bytes em que cada bit representa um slot de buffer constante.
+Matriz de buffers constantes do sombreador de computação. A matriz é um bitmask de vários byte em que cada bit representa um slot de buffer constante.
 
 </dd> <dt>
 
 **CSInterfaces**
 </dt> <dd>
 
-Tipo: **[ **byte**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **BYTE**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Matriz de interfaces de sombreador de computação. A matriz é um bitmask de vários bytes em que cada bit representa um slot de interface.
+Matriz de interfaces de sombreador de computação. A matriz é um bitmask de vários byte em que cada bit representa um slot de interface.
 
 </dd> <dt>
 
 **CSUnorderedAccessViews**
 </dt> <dd>
 
-Tipo: **[ **byte**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **BYTE**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Valor booliano que indica se as exibições de acesso não ordenadas do sombreador de computação devem ser salvas.
+Valor booliana que indica se as exibições de acesso nãoordados do sombreador de computação deverão ser salvas.
 
 </dd> <dt>
 
 **IAVertexBuffers**
 </dt> <dd>
 
-Tipo: **[ **byte**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **BYTE**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Matriz de buffers de vértice. A matriz é um bitmask de vários bytes em que cada bit representa um slot de recurso.
+Matriz de buffers de vértice. A matriz é um bitmask de vários byte em que cada bit representa um slot de recurso.
 
 </dd> <dt>
 
 **IAIndexBuffer**
 </dt> <dd>
 
-Tipo: **[ **byte**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **BYTE**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Valor booliano que indica se o estado do buffer de índice deve ser salvo.
+Valor booliana que indica se o estado do buffer de índice deve ser salvo.
 
 </dd> <dt>
 
 **IAInputLayout**
 </dt> <dd>
 
-Tipo: **[ **byte**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **BYTE**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Valor booliano que indica se o estado de layout de entrada deve ser salvo.
+Valor booliana que indica se o estado de layout de entrada deve ser salvo.
 
 </dd> <dt>
 
 **IAPrimitiveTopology**
 </dt> <dd>
 
-Tipo: **[ **byte**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **BYTE**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Valor booliano que indica se o estado da topologia primitiva deve ser salvo.
+Valor booliana que indica se o estado primitivo da topologia deve ser salvo.
 
 </dd> <dt>
 
 **OMRenderTargets**
 </dt> <dd>
 
-Tipo: **[ **byte**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **BYTE**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Valor booliano que indica se os Estados de destino de renderização devem ser salvos.
+Valor booliana que indica se os estados de destino de renderização de deve ser salvo.
 
 </dd> <dt>
 
 **OMDepthStencilState**
 </dt> <dd>
 
-Tipo: **[ **byte**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **BYTE**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Valor booliano que indica se o estado de estêncil de profundidade deve ser salvo.
+Valor booliana que indica se o estado de estêncil de profundidade deve ser salvo.
 
 </dd> <dt>
 
 **OMBlendState**
 </dt> <dd>
 
-Tipo: **[ **byte**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **BYTE**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Valor booliano que indica se o estado de mesclagem deve ser salvo.
+Valor booliana que indica se o estado de mesclagem deve ser salvo.
 
 </dd> <dt>
 
 **RSViewports**
 </dt> <dd>
 
-Tipo: **[ **byte**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **BYTE**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Valor booliano que indica se os Estados de visores devem ser salvos.
+Valor booliana que indica se é preciso salvar os estados dos viewports.
 
 </dd> <dt>
 
 **RSScissorRects**
 </dt> <dd>
 
-Tipo: **[ **byte**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **BYTE**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Valor booliano que indica se os Estados dos retângulos da mola devem ser salvos.
+Valor booliana que indica se é preciso salvar os estados de retângulos de tesoura.
 
 </dd> <dt>
 
 **RSRasterizerState**
 </dt> <dd>
 
-Tipo: **[ **byte**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **BYTE**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Valor booliano que indica se o estado do rasterizador deve ser salvo.
+Valor booliana que indica se o estado do rasterizador deve ser salvo.
 
 </dd> <dt>
 
 **SOBuffers**
 </dt> <dd>
 
-Tipo: **[ **byte**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **BYTE**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Valor booliano que indica se os Estados de buffers de saída de streaming devem ser salvos.
+Valor booliana que indica se os estados de buffers de fluxo-out são salvo.
 
 </dd> <dt>
 
 **Predicação**
 </dt> <dd>
 
-Tipo: **[ **byte**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **BYTE**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Valor booliano que indica se o estado predicação deve ser salvo.
+Valor booliana que indica se o estado de pré-sindicalização deve ser salvo.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-Uma máscara de bloco de estado indica que o dispositivo informa que uma passagem ou uma técnica altera.
+Uma máscara de bloco de estado indica que o dispositivo declara que uma passagem ou uma técnica muda.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -577,7 +577,7 @@ Uma máscara de bloco de estado indica que o dispositivo informa que uma passage
 
 | Requisito | Valor |
 |-------------------|-------------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>D3dx11effect. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>D3dx11effect.h</dt> </dl> |
 
 
 
@@ -585,7 +585,7 @@ Uma máscara de bloco de estado indica que o dispositivo informa que uma passage
 
 <dl> <dt>
 
-[Efeitos 11 estruturas](d3d11-graphics-reference-effects11-structures.md)
+[Estruturas effects 11](d3d11-graphics-reference-effects11-structures.md)
 </dt> </dl>
 
  

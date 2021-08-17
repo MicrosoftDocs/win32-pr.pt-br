@@ -26,7 +26,7 @@ ms.locfileid: "118901458"
 
 A propriedade **EncodedKey** recupera o valor da chave pública.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 ```VB

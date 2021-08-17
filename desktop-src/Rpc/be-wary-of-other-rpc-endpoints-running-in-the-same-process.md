@@ -4,12 +4,12 @@ description: Quando um aplicativo reside em um processo com outros servidores RP
 ms.assetid: edb20108-e0c3-4b9b-b57d-45a96d9472ba
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 00828ddf95fd024069a8a535c95673eb014d84b9
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 5e2044b83de96a352546d90c45cd54879fc87923786b7852133ffeb28dbf9cbe
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103636259"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118932347"
 ---
 # <a name="be-wary-of-other-rpc-endpoints-running-in-the-same-process"></a>Tenha cuidado com outros pontos de extremidade RPC em execução no mesmo processo
 
@@ -19,9 +19,9 @@ Semelhante a identificadores estritos de contexto, não colocar outro ponto de e
 
 Para garantir que um processo seja chamado somente em uma sequência de protocolo específica, registre uma função de retorno de chamada de segurança e, nessa função, verifique em qual sequência de protocolo a chamada é feita.
 
- 
+ 
 
- 
+ 
 
 
 

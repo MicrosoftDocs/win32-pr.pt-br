@@ -1,10 +1,10 @@
 ---
-title: Estrutura de MPRESERVED_DATA (MpClient. h)
+title: MPRESERVED_DATA (MpClient.h)
 description: Dados de notificação reservados.
 ms.assetid: C92206BD-6E56-4B7D-ABB1-DC1149AE141D
 keywords:
-- Recursos do ambiente Windows herdado da estrutura de MPRESERVED_DATA
-- Ponteiro de estrutura de PMPRESERVED_DATA recursos de ambiente herdados do Windows
+- MPRESERVED_DATA estrutura herdada Windows recursos de ambiente
+- PMPRESERVED_DATA de estrutura herdada Windows recursos de ambiente
 topic_type:
 - apiref
 api_name:
@@ -15,14 +15,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8b1e08184da71fe857cb412ef986c986a0c59baa
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: faabacdcfb581f9b4fc7e9d9a42464dd61e152ca533865acfb7231a711f02317
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104085845"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118747650"
 ---
-# <a name="mpreserved_data-structure"></a>\_Estrutura de dados MPRESERVED
+# <a name="mpreserved_data-structure"></a>Estrutura MPRESERVED \_ DATA
 
 Dados de notificação reservados.
 
@@ -56,7 +56,7 @@ Tamanho dos dados reservados, em bytes.
 **pbReservedData**
 </dt> <dd>
 
-Tipo: **byte \***
+Tipo: **BYTE \***
 
 </dd> <dd>
 
@@ -70,9 +70,9 @@ Ponteiro para dados reservados.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                            |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>MpClient. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[Windows 8 somente aplicativos da área de trabalho\]<br/>                                            |
+| Servidor mínimo com suporte<br/> | \[Windows Server 2012 somente aplicativos da área de trabalho\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>MpClient.h</dt> </dl> |
 
 
 

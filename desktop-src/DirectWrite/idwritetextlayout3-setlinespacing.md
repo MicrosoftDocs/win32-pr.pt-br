@@ -1,11 +1,11 @@
 ---
-title: Método SetLineSpacing de IDWriteTextLayout3
-description: Definir o espaçamento de linha. | Método SetLineSpacing de IDWriteTextLayout3
+title: Método IDWriteTextLayout3 SetLineSpacing
+description: Definir espaçamento de linha. | Método IDWriteTextLayout3 SetLineSpacing
 ms.assetid: 1bfca257-189c-4d18-628c-aff8217d2775
 keywords:
 - Gravação direta do método SetLineSpacing
-- Método SetLineSpacing Direct Write , interface IDWriteTextLayout3
-- IDWriteTextLayout3 interface Direct Write , Método SetLineSpacing
+- Método SetLineSpacing Direct Write, interface IDWriteTextLayout3
+- IDWriteTextLayout3 interface de gravação direta, método SetLineSpacing
 topic_type:
 - apiref
 api_name:
@@ -23,9 +23,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118649374"
 ---
-# <a name="idwritetextlayout3setlinespacing-method"></a>Método IDWriteTextLayout3::SetLineSpacing
+# <a name="idwritetextlayout3setlinespacing-method"></a>Método IDWriteTextLayout3:: SetLineSpacing
 
-Definir o espaçamento de linha.
+Definir espaçamento de linha.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,16 +42,16 @@ HRESULT SetLineSpacing(
 
 <dl> <dt>
 
-*lineSpacingOptions* \[ Em\]
+*lineSpacingOptions* \[ no\]
 </dt> <dd>
 
-Como gerenciar o espaço entre linhas.
+Como gerenciar o espaço entre as linhas.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor retornado
 
-Se esse método for bem-sucedido, ele **retornará S \_ OK.** Caso contrário, ele retornará um **código de erro HRESULT.**
+Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
 
 ## <a name="requirements"></a>Requisitos
 
@@ -59,10 +59,10 @@ Se esse método for bem-sucedido, ele **retornará S \_ OK.** Caso contrário, e
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Windows 8.1 somente aplicativos da área de trabalho\]<br/>                                            |
-| Servidor mínimo com suporte<br/> | Windows Server 2012 Somente \[ aplicativos da área de trabalho R2\]<br/>                                 |
-| Telefone mínimo com suporte<br/>  | Windows Phone 8.1 \[ Windows Phone Silverlight 8.1 e Windows runtime\]<br/> |
-| Biblioteca<br/>                  | <dl> <dt>Dwrite.lib</dt> </dl>   |
+| Cliente mínimo com suporte<br/> | Windows 8.1 \[ somente aplicativos da área de trabalho\]<br/>                                            |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 \[Somente aplicativos da área de trabalho R2\]<br/>                                 |
+| Número mínimo de telefone com suporte<br/>  | Windows Phone 8,1 \[ Windows Phone Silverlight 8,1 e aplicativos de Windows Runtime\]<br/> |
+| Biblioteca<br/>                  | <dl> <dt>Dwrite. lib</dt> </dl>   |
 | DLL<br/>                      | <dl> <dt>Dwrite.dll</dt> </dl>   |
 
 

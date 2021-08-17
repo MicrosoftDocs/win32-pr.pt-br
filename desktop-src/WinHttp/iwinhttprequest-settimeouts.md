@@ -82,7 +82,7 @@ Todos os parâmetros são obrigatórios. Um valor de 0 ou -1 define um tempo-out
 Os valores de tempo-out são aplicados na camada Winsock.
 
 > [!Note]  
-> Para Windows XP e Windows 2000, consulte a seção [Requisitos](winhttp-start-page.md) de tempo de executar da página inicial do WinHttp.
+> Para Windows XP e Windows 2000, consulte [](winhttp-start-page.md) a seção Requisitos de tempo de executar da página inicial do WinHttp.
 
  
 
@@ -211,7 +211,7 @@ WinHttpReq.Send();
 | Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows XP, Windows 2000 Professional somente com aplicativos da área de trabalho SP3 \[\]<br/>            |
-| Servidor mínimo com suporte<br/> | Windows Server 2003, Windows 2000 Server somente com aplicativos da área de trabalho SP3 \[\]<br/>         |
+| Servidor mínimo com suporte<br/> | Windows Server 2003, Windows 2000 Server com somente aplicativos da área de trabalho SP3 \[\]<br/>         |
 | Redistribuível<br/>          | WinHTTP 5.0 e Internet Explorer 5.01 ou posterior no Windows XP e Windows 2000.<br/> |
 | Idl<br/>                      | <dl> <dt>HttpRequest.idl</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>Winhttp.lib</dt> </dl>     |

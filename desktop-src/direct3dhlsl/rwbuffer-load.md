@@ -1,5 +1,5 @@
 ---
-title: 'Métodos de carga RWBuffer:: RWBuffer'
+title: Métodos RWBuffer::RWBuffer Load
 description: Obtém um valor de um RWBuffer.
 ms.assetid: 85A8F1C9-6896-4E3A-AFDF-B82D1D3E96EA
 keywords:
@@ -12,16 +12,16 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
 api_location: ''
-ms.openlocfilehash: 017a2aeb1cbbbda051c4349c3837f574a97f7557
-ms.sourcegitcommit: 476861130ea63675206d1f06e517059705b930ed
+ms.openlocfilehash: 1a365643558d8bc31c63dd2d3c0e40a2ecc5fb8b6d63a08c5dd5aaa1bb13c4a1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "104365083"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118791457"
 ---
-# <a name="rwbufferload-methods"></a>Métodos RWBuffer:: Load
+# <a name="rwbufferload-methods"></a>Métodos RWBuffer::Load
 
-Obtém um valor de um [**RWBuffer**](sm5-object-rwbuffer.md).
+Obtém um valor de [**um RWBuffer.**](sm5-object-rwbuffer.md)
 
 ### <a name="overload-list"></a>Lista de sobrecargas
 
@@ -29,8 +29,8 @@ Obtém um valor de um [**RWBuffer**](sm5-object-rwbuffer.md).
 
 | Método                                              | Descrição                                                       |
 |:----------------------------------------------------|:------------------------------------------------------------------|
-| [**Carga (int, uint)**](rwbuffer-load-float-uint-.md) | Lê os dados de buffer e retorna o status da operação.<br/> |
-| [**Carga (int)**](rwbuffer-load-float-.md)           | Lê dados de buffer.<br/>                                     |
+| [**Load(int,uint)**](rwbuffer-load-float-uint-.md) | Lê dados de buffer e retorna o status da operação.<br/> |
+| [**Load(int)**](rwbuffer-load-float-.md)           | Lê dados de buffer.<br/>                                     |
 
 
 

@@ -1,11 +1,11 @@
 ---
-title: Método SystemMonitor. Configurations
-description: Adiciona os contadores no arquivo de modelo HTML ao monitor do sistema.
+title: Método SystemMonitor.LoadSettings
+description: Adiciona os contadores no arquivo de modelo HTML ao Monitor do Sistema.
 ms.assetid: 3f88e590-df2b-4861-8ee6-a08f8742e6ad
 keywords:
 - Método LoadSettings SysMon
 - Método LoadSettings SysMon, objeto SystemMonitor
-- Objeto SystemMonitor Sysmon, método Configurations
+- Objeto SystemMonitor SysMon, método LoadSettings
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6e412ebfe97035c4847391a7cc9166cf512897bd
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 387bf2e42475d27f5440afb3fa0b945c910b3ac3bad610495936cd3a4a900bbc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104369641"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118882321"
 ---
-# <a name="systemmonitorloadsettings-method"></a>Método SystemMonitor. Configurations
+# <a name="systemmonitorloadsettings-method"></a>Método SystemMonitor.LoadSettings
 
-Adiciona os contadores no arquivo de modelo HTML ao monitor do sistema.
+Adiciona os contadores no arquivo de modelo HTML ao Monitor do Sistema.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,20 +42,20 @@ SystemMonitor.LoadSettings( _
 
 <dl> <dt>
 
-*SettingsFileName* \[ no\]
+*ConfiguraçõesFileName* \[ Em\]
 </dt> <dd>
 
-Cadeia de caracteres HTML que especifica os contadores a serem adicionados ao monitor do sistema.
+Cadeia de caracteres HTML que especifica os contadores a adicionar ao Monitor do Sistema.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-Para salvar os contadores atuais no monitor do sistema em um arquivo HTML, chame o método [**SystemMonitor. SaveAs**](systemmonitor-saveas.md) .
+Para salvar os contadores atuais no Monitor do Sistema em um arquivo HTML, chame o [**método SystemMonitor.SaveAs.**](systemmonitor-saveas.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -63,9 +63,9 @@ Para salvar os contadores atuais no monitor do sistema em um arquivo HTML, chame
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                  |
-| DLL<br/>                      | <dl> <dt>Sysmon. ocx</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                  |
+| DLL<br/>                      | <dl> <dt>Sysmon.ocx</dt> </dl> |
 
 
 

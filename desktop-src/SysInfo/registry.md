@@ -1,33 +1,33 @@
 ---
-description: O registro é um banco de dados definido pelo sistema no qual os aplicativos e componentes do sistema são armazenados e recuperados.
+description: O Registro é um banco de dados definido pelo sistema no qual aplicativos e componentes do sistema armazenam e recuperam dados de configuração.
 ms.assetid: ffb06903-593e-47ce-adb2-baed5d379110
 title: Registro
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f74262dc2f214b349d7d75d2ba362e3a6771e29c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 901662a0d35e53c6970dda45babcde8cb5f63a0c25d7ba5a2fb4c2f3f3f52301
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103837483"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118885003"
 ---
 # <a name="registry"></a>Registro
 
-O *registro* é um banco de dados definido pelo sistema no qual os aplicativos e componentes do sistema são armazenados e recuperados. Os dados armazenados no registro variam de acordo com a versão do Microsoft Windows. Os aplicativos usam a API do registro para recuperar, modificar ou excluir dados do registro.
+O *Registro é um banco* de dados definido pelo sistema no qual aplicativos e componentes do sistema armazenam e recuperam dados de configuração. Os dados armazenados no Registro variam de acordo com a versão do Microsoft Windows. Os aplicativos usam a API do Registro para recuperar, modificar ou excluir dados do Registro.
 
-Você não deve editar dados do registro que não pertençam ao seu aplicativo, a menos que seja absolutamente necessário. Se houver um erro no registro, o sistema poderá não funcionar corretamente. Se isso acontecer, você poderá restaurar o registro para o estado em que ele estava quando você iniciou o computador com êxito pela última vez. Para obter mais informações, consulte a ajuda do seu sistema operacional.
+Você não deve editar dados do Registro que não pertencem ao seu aplicativo, a menos que seja absolutamente necessário. Se houver um erro no Registro, o sistema poderá não funcionar corretamente. Se isso acontecer, você poderá restaurar o Registro para o estado em que estava quando iniciou o computador com êxito pela última vez. Para obter mais informações, consulte a ajuda para seu sistema operacional.
 
-Para obter mais informações sobre o banco de dados do registro e o acesso programático a eles, consulte os seguintes tópicos:
+Para obter mais informações sobre o banco de dados do Registro e o acesso programático aos dados do Registro, consulte os seguintes tópicos:
 
--   [Sobre o registro](about-the-registry.md)
--   [Usando o registro](using-the-registry.md)
--   [Referência de registro](registry-reference.md)
+-   [Sobre o Registro](about-the-registry.md)
+-   [Usando o Registro](using-the-registry.md)
+-   [Referência do Registro](registry-reference.md)
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[Referência de registro do Windows Server 2003 Resource Kit](/previous-versions/windows/it-pro/windows-server-2003/cc778196(v=ws.10))
+[Windows Referência do Registro do Kit de Recursos do Server 2003](/previous-versions/windows/it-pro/windows-server-2003/cc778196(v=ws.10))
 </dt> </dl>
 
  

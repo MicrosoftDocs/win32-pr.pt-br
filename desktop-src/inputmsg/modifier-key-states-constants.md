@@ -1,6 +1,6 @@
 ---
-title: Estado da chave modificadora
-description: Indica quais teclas modificadora de teclado foram pressionadas no momento em que a entrada estava sendo gerada.
+title: Estado de chave do modificador
+description: Indica quais teclas modificadoras de teclado foram pressionadas na hora em que a entrada estava sendo gerada.
 ms.assetid: 721f5109-67ab-4242-921e-580c2dc0463b
 topic_type:
 - apiref
@@ -20,9 +20,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118756876"
 ---
-# <a name="modifier-key-state"></a>Estado da chave modificadora
+# <a name="modifier-key-state"></a>Estado de chave do modificador
 
-Indica quais teclas modificadora de teclado foram pressionadas no momento em que a entrada estava sendo gerada.
+Indica quais teclas modificadoras de teclado foram pressionadas na hora em que a entrada estava sendo gerada.
 
 <dl> <dt>
 
@@ -47,7 +47,7 @@ Uma tecla Shift foi pressionada.
 
 
 
-Uma tecla Ctrl foi pressionada.
+Uma tecla CTRL foi pressionada.
 
 
 </dt> </dl> </dd> </dl>
@@ -58,9 +58,9 @@ Uma tecla Ctrl foi pressionada.
 
 | Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Windows 8 somente aplicativos da área de trabalho\]<br/>                                           |
-| Servidor mínimo com suporte<br/> | \[Windows Server 2012 somente aplicativos da área de trabalho\]<br/>                                 |
-| Cabeçalho<br/>                   | <dl> <dt>Winuser.h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 8 \[ somente aplicativos da área de trabalho\]<br/>                                           |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 \[ somente aplicativos da área de trabalho\]<br/>                                 |
+| Cabeçalho<br/>                   | <dl> <dt>WinUser. h</dt> </dl> |
 
 
 

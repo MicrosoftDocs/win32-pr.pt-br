@@ -124,7 +124,7 @@ Se a função falhar, o valor de retorno será um código **HRESULT** com falha.
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 8 \[ somente aplicativos da área de trabalho\]<br/>                                              |
 | Servidor mínimo com suporte<br/> | Windows Server 2012 \[ somente aplicativos da área de trabalho\]<br/>                                    |
-| parâmetro<br/>                   | <dl> <dt>MpClient. h</dt> </dl>   |
+| Cabeçalho<br/>                   | <dl> <dt>MpClient. h</dt> </dl>   |
 | DLL<br/>                      | <dl> <dt>MpClient.dll</dt> </dl> |
 
 

@@ -10,12 +10,12 @@ keywords:
 - Estrutura WAVEHDR
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d8a81a5a29ec9718e7c11306b6bafc1aa20369e5
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 08a4a0c7236c52854911b51677cf792fa504371fb18900ac947e8fdf1391bd69
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "103917190"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118941750"
 ---
 # <a name="audio-data-blocks"></a>Blocos de dados de áudio
 
@@ -34,7 +34,7 @@ Antes de usar uma dessas funções para passar um bloco de dados para um driver 
 
 
 
- 
+ 
 
 Antes de passar um bloco de dados de áudio para um driver de dispositivo, você deve preparar o bloco de dados passando-o para [**waveInPrepareHeader**](/windows/win32/api/mmeapi/nf-mmeapi-waveinprepareheader) ou [**waveOutPrepareHeader**](/windows/win32/api/mmeapi/nf-mmeapi-waveoutprepareheader). Quando o driver de dispositivo for concluído com o bloco de dados e o retornar, você deverá limpar essa preparação passando o bloco de dados para [**waveInUnprepareHeader**](/windows/win32/api/mmeapi/nf-mmeapi-waveinunprepareheader) ou [**waveOutUnprepareHeader**](/windows/win32/api/mmeapi/nf-mmeapi-waveoutunprepareheader) antes que qualquer memória alocada possa ser liberada.
 
@@ -58,6 +58,6 @@ Usando uma função de retorno de chamada para processar mensagens de driver
 -   [Usando uma janela ou thread para processar mensagens do driver](using-a-window-or-thread-to-process-driver-messages.md)
 -   [Gerenciando blocos de dados por sondagem](managing-data-blocks-by-polling.md)
 
- 
+ 
 
- 
+ 

@@ -1,6 +1,6 @@
 ---
-title: Variáveis de estado diversas
-description: Variáveis de estado diversas
+title: Variáveis de Estado Diversas
+description: Variáveis de Estado Diversas
 ms.assetid: 4c99b9b6-5cd3-49d1-9bfe-fa1421d892f2
 keywords:
 - Variáveis de estado variadas OpenGL
@@ -12,14 +12,14 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: de565d9e6f8055f1b2ebc90c4deec83da463e7d5
-ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
+ms.openlocfilehash: a9ac073ee9e71a47a36a34bf774698b7d00bec2cc675d9c1c1214725eb389dc2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "107909853"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118937305"
 ---
-# <a name="miscellaneous-state-variables"></a>Variáveis de estado diversas
+# <a name="miscellaneous-state-variables"></a>Variáveis de Estado Diversas
 
 <dl> <dt><span id="GL_LIST_BASE"></span><span id="gl_list_base"></span>\_base da lista GL \_</dt> <dd> 
 

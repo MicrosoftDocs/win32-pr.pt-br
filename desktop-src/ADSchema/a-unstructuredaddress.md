@@ -4,7 +4,7 @@ description: O endereço IP do roteador (por exemplo, 100.11.22.33).
 ms.assetid: 60ca9fb4-c897-47cd-9bbe-751fff2e290a
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD do atributo unstructuredAddress
+- esquema do AD do atributo unstructuredAddress
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 811f69c2670a3913a44c255c058f12374ed6ed4f
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 8dd18851058321615c9d89958f77ffc733300a84cd29998d2b3e024d66f723bb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105748942"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119922956"
 ---
 # <a name="unstructuredaddress-attribute"></a>atributo unstructuredAddress
 
@@ -29,13 +29,13 @@ O endereço IP do roteador (por exemplo: 100.11.22.33).
 | Entrada | Valor |
 |-------------------|---------------------------------------------|
 | CN                | unstructuredAddress                         |
-| LDAP-Display-Name | unstructuredAddress                         |
+| Ldap-Display-Name | unstructuredAddress                         |
 | Tamanho              | \-                                          |
 | Privilégio de atualização  | \-                                          |
 | Frequência de atualização  | \-                                          |
 | Attribute-Id      | 1.2.840.113549.1.9.8                        |
-| System-ID-GUID    | 50950839-cc4c-4491-863a-fcf942d684b7        |
-| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | 50950839-cc4c-4491-863a-fcf942d684b7        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -56,10 +56,10 @@ O endereço IP do roteador (por exemplo: 100.11.22.33).
 | ID do link                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| É de valor único       | Falso        |
+| Tem valor único       | Falso        |
 | É indexado             | Falso        |
-| No catálogo global      | Falso        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S: |
+| No Catálogo Global      | Falso        |
+| Descritor de segurança NT | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
@@ -77,10 +77,10 @@ O endereço IP do roteador (por exemplo: 100.11.22.33).
 | ID do link                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| É de valor único       | Falso        |
+| Tem valor único       | Falso        |
 | É indexado             | Falso        |
-| No catálogo global      | Falso        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S: |
+| No Catálogo Global      | Falso        |
+| Descritor de segurança NT | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
@@ -98,10 +98,10 @@ O endereço IP do roteador (por exemplo: 100.11.22.33).
 | ID do link                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| É de valor único       | Falso        |
+| Tem valor único       | Falso        |
 | É indexado             | Falso        |
-| No catálogo global      | Falso        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S: |
+| No Catálogo Global      | Falso        |
+| Descritor de segurança NT | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
@@ -119,10 +119,10 @@ O endereço IP do roteador (por exemplo: 100.11.22.33).
 | ID do link                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| É de valor único       | Falso        |
+| Tem valor único       | Falso        |
 | É indexado             | Falso        |
-| No catálogo global      | Falso        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S: |
+| No Catálogo Global      | Falso        |
+| Descritor de segurança NT | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
@@ -140,10 +140,10 @@ O endereço IP do roteador (por exemplo: 100.11.22.33).
 | ID do link                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| É de valor único       | Falso        |
+| Tem valor único       | Falso        |
 | É indexado             | Falso        |
-| No catálogo global      | Falso        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S: |
+| No Catálogo Global      | Falso        |
+| Descritor de segurança NT | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |

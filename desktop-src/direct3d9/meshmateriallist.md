@@ -1,5 +1,5 @@
 ---
-description: Usado em um objeto de malha para especificar qual material se aplica a quais faces. O membro nMaterials especifica quantos materiais estão presentes e os materiais especificam qual material deve ser aplicado.
+description: Usado em um objeto de malha para especificar qual material se aplica a quais rostos. O membro nMaterials especifica quantos materiais estão presentes e os materiais especificam qual material aplicar.
 ms.assetid: b38fd445-1a31-41ed-abbe-084abfe1c221
 title: MeshMaterialList
 ms.topic: reference
@@ -13,7 +13,7 @@ ms.locfileid: "118798782"
 ---
 # <a name="meshmateriallist"></a>MeshMaterialList
 
-Usado em um objeto de malha para especificar qual material se aplica a quais faces. O membro nMaterials especifica quantos materiais estão presentes e os materiais especificam qual material deve ser aplicado.
+Usado em um objeto de malha para especificar qual material se aplica a quais rostos. O membro nMaterials especifica quantos materiais estão presentes e os materiais especificam qual material aplicar.
 
 ``` syntax
 template MeshMaterialList
@@ -28,8 +28,8 @@ template MeshMaterialList
 
 Em que:
 
--   nMaterials-um DWORD. O número de materiais.
--   nFaceIndexes-um DWORD. O número de índices.
+-   nMaterials – A DWORD. O número de materiais.
+-   nFaceIndexes – A DWORD. O número de índices.
 -   faceIndexes \[ nFaceIndexes \] – uma matriz de DWORDs que contém os índices de face.
 
 ## <a name="see-also"></a>Confira também

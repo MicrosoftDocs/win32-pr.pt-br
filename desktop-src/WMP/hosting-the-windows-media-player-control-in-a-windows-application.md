@@ -1,40 +1,40 @@
 ---
-title: Hospedando o controle do Windows Media Player em um aplicativo do Windows
-description: Hospedando o controle do Windows Media Player em um aplicativo do Windows
+title: Hospedando o Windows Media Player controle em um Windows aplicativo
+description: Hospedando o Windows Media Player controle em um Windows aplicativo
 ms.assetid: 8da04160-b9db-4082-aeff-b0107189e33e
 keywords:
-- Windows Media Player, incorporando controle ActiveX
-- Modelo de objeto do Windows Media Player, inserindo controle ActiveX
-- modelo de objeto, inserindo controle ActiveX
-- Windows Media Player Mobile, inserindo controle ActiveX
-- Controle ActiveX do Windows Media Player, incorporando
-- Controle ActiveX móvel do Windows Media Player, incorporando
-- Controle ActiveX, incorporando
-- Windows Media Player, programas baseados no Windows
-- Modelo de objeto do Windows Media Player, programas baseados no Windows
-- modelo de objeto, programas baseados no Windows
-- Windows Media Player Mobile, programas baseados no Windows
-- Controle ActiveX do Windows Media Player, programas baseados no Windows
-- Controle ActiveX móvel do Windows Media Player, programas baseados no Windows
-- Controle ActiveX, programas baseados no Windows
-- Incorporação de programas baseados no Windows
-- incorporação, programas baseados no Windows
+- Windows Media Player, incorporando ActiveX controle
+- Windows Media Player modelo de objeto, incorporando ActiveX controle
+- modelo de objeto, incorporando ActiveX controle
+- Windows Media Player Mobile, incorporando ActiveX controle
+- Windows Media Player ActiveX controle,incorporação
+- Windows Media Player Controle ActiveX dispositivo móvel, incorporação
+- ActiveX controle,incorporação
+- Windows Media Player,Windows baseados em Windows
+- Windows Media Player modelo de objeto, Windows programas baseados em dados
+- modelo de objeto, Windows com base em programas baseados em
+- Windows Media Player Programas Windows baseados em dispositivos móveis
+- Windows Media Player ActiveX controle,Windows programas baseados em Windows
+- Windows Media Player Controle ActiveX dispositivos móveis,Windows baseados em Windows aplicativo
+- ActiveX controle,Windows programas baseados em Windows
+- incorporação Windows programa baseado em Windows
+- incorporação,Windows baseados em programas baseados em
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d2190f0d0076fe3253c39f583ae7d2c197f8cb11
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 9f3c2b4d84194376bd16842f0a9567c83fce2aa616ed4bfef4f20f7255068e8f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104292552"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117748273"
 ---
-# <a name="hosting-the-windows-media-player-control-in-a-windows-application"></a>Hospedando o controle do Windows Media Player em um aplicativo do Windows
+# <a name="hosting-the-windows-media-player-control-in-a-windows-application"></a>Hospedando o Windows Media Player controle em um Windows aplicativo
 
-Para usar o controle ActiveX do Windows Media Player (incluindo a interface do usuário) em um programa baseado no Windows, você deve fornecer um contêiner de controle ActiveX. A ATL fornece a classe **CAxWindow** para fornecer a funcionalidade de janela do host do ActiveX.
+Para usar o Windows Media Player ActiveX (incluindo a interface do usuário) em um programa baseado em Windows, você deve fornecer um contêiner ActiveX controle. A ATL fornece a **classe CAxWindow** para fornecer ActiveX de janela do host.
 
-Para hospedar o controle do Windows Media Player usando a classe **CAxWindow** , siga estas etapas:
+Para hospedar o Windows Media Player usando a **classe CAxWindow,** siga estas etapas:
 
-1.  Inclua os seguintes cabeçalhos:
+1.  Inclua os seguintes headers:
     ```C++
     #include "wmp.h"
     #include <atlbase.h>
@@ -45,7 +45,7 @@ Para hospedar o controle do Windows Media Player usando a classe **CAxWindow** ,
 
     
 
-2.  Declare variáveis de membro, da seguinte maneira:
+2.  Declare variáveis de membro, da seguinte forma:
     ```C++
     CAxWindow  m_wndView;  // ActiveX host window class.
     CComPtr<IWMPPlayer>  m_spWMPPlayer;  // Smart pointer to IWMPPlayer interface.
@@ -54,7 +54,7 @@ Para hospedar o controle do Windows Media Player usando a classe **CAxWindow** ,
 
     
 
-3.  Quando a janela do aplicativo for criada, chame **AtlAxWinInit**, que é necessário ao usar a janela host ActiveX do ATL.
+3.  Quando a janela do aplicativo for criada, chame **AtlAxWinInit**, que é necessário ao usar a janela ActiveX host da ATL.
     ```C++
     AtlAxWinInit();
     
@@ -62,7 +62,7 @@ Para hospedar o controle do Windows Media Player usando a classe **CAxWindow** ,
 
     
 
-4.  Declare variáveis locais para códigos de retorno e que contenham o ponteiro para a interface de janela do host:
+4.  Declare variáveis locais para códigos de retorno e para conter o ponteiro para a interface da janela do host:
     ```C++
     CComPtr<IAxWinHostWindow>  spHost;
     HRESULT  hr;
@@ -80,7 +80,7 @@ Para hospedar o controle do Windows Media Player usando a classe **CAxWindow** ,
 
     
 
-6.  Recupere o ponteiro de interface de janela do host:
+6.  Recuperar o ponteiro da interface da janela do host:
     ```C++
     hr = m_wndView.QueryHost(&spHost);
     
@@ -88,7 +88,7 @@ Para hospedar o controle do Windows Media Player usando a classe **CAxWindow** ,
 
     
 
-7.  Crie o controle do Windows Media Player na janela do host usando a ID da classe:
+7.  Crie o Windows Media Player na janela do host usando a ID da classe:
     ```C++
     hr = spHost->CreateControl(CComBSTR(_T("{6BF52A52-394A-11d3-B153-00C04F79FAA6}")), m_wndView, 0);
     
@@ -96,7 +96,7 @@ Para hospedar o controle do Windows Media Player usando a classe **CAxWindow** ,
 
     
 
-8.  Recupere o ponteiro de interface **IWMPPlayer** :
+8.  Recupere o ponteiro da interface **IWMPPlayer:**
     ```C++
     hr = m_wndView.QueryControl(&m_spWMPPlayer);
     
@@ -104,13 +104,13 @@ Para hospedar o controle do Windows Media Player usando a classe **CAxWindow** ,
 
     
 
-Ao escrever seu próprio código, certifique-se de verificar se há erros em cada código de retorno de **HRESULT** .
+Ao escrever seu próprio código, verifique se há erros em cada código de retorno **HRESULT.**
 
-Para obter um exemplo completo que ilustra como hospedar o controle ActiveX do Windows Media Player usando a classe **CAxWindow** , consulte o exemplo WMPHost.
+Para ver um exemplo completo que ilustra como hospedar o controle Windows Media Player ActiveX usando a **classe CAxWindow,** consulte o exemplo WMPHost.
 
-## <a name="hosting-the-windows-media-player-10-mobile-control-in-windows-ce"></a>Hospedando o controle móvel do Windows Media Player 10 no Windows CE
+## <a name="hosting-the-windows-media-player-10-mobile-control-in-windows-ce"></a>Hospedando o Windows Media Player 10 Mobile no Windows CE
 
-O Microsoft eMbedded Visual C++ 4,0 e o SDK do Pocket PC 2003 ou o SDK do Smartphone 2003 devem ser instalados durante o desenvolvimento de aplicativos baseados em Windows CE que hospedam um controle móvel do Windows Media Player 10. Além disso, diferentemente do ATL para Windows, a ATL para Windows CE não oferece suporte ao modelo de Threading Apartment. Portanto, você deve encontrar todas as instâncias de threading de apartamento em seu projeto ATL e alterá-las para usar Threading gratuito.
+O Microsoft eMbedded Visual C++ 4.0 e o SDK do Pocket PC 2003 ou o SDK do Smartphone 2003 devem ser instalados ao desenvolver aplicativos baseados em Windows CE que hospedam um controle móvel do Windows Media Player 10. Além disso, ao contrário da ATL para Windows, a ATL para Windows CE não dá suporte ao modelo de threading de apartment. Portanto, você deve encontrar todas as instâncias de threading de apartment em seu projeto da ATL e alterá-las para usar threading livre.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -119,12 +119,12 @@ O Microsoft eMbedded Visual C++ 4,0 e o SDK do Pocket PC 2003 ou o SDK do Smartp
 [**Exemplos**](samples.md)
 </dt> <dt>
 
-[**Usando o controle do Windows Media Player em um programa C++**](using-the-windows-media-player-control-in-a-c---program.md)
+[**Usando o Windows Media Player controle em um programa C++**](using-the-windows-media-player-control-in-a-c---program.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

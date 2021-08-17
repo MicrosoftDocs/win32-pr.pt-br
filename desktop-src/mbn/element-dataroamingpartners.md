@@ -25,16 +25,16 @@ ms.locfileid: "118745098"
 ---
 # <a name="span-idwwan_profile_v4element_dataroamingpartnersspandataroamingpartners"></a><span id="WWAN_profile_v4.element_DataRoamingPartners"></span>DataRoamingPartners
 
-Especifica uma lista de provedores de rede preferenciais ao roaming.
+Especifica uma lista de provedores de rede preferenciais durante o roaming.
 
-Para obter detalhes, consulte a documentação do [**elemento DataRoamingPartners**](./schema-dataroamingpartners-mbnprofile-element.md) v1.
+Para obter detalhes, consulte a documentação do elemento v1 [**DataRoamingPartners**](./schema-dataroamingpartners-mbnprofile-element.md) .
 
 ## <a name="element-hierarchy"></a>Hierarquia de elementos
 
 [<MBNProfileExt>](element-mbnprofileext.md)  
 **<DataRoamingPartners>**
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ``` syntax
 <DataRoamingPartners>
@@ -47,7 +47,7 @@ Para obter detalhes, consulte a documentação do [**elemento DataRoamingPartner
 
 ### <a name="key"></a>Chave
 
-`+`   obrigatório (um ou mais)
+`+`   necessário (um ou mais)
 
 ## <a name="span-idattributes_and_elementsspanspan-idattributes_and_elementsspanspan-idattributes_and_elementsspanattributes-and-elements"></a><span id="Attributes_and_Elements"></span><span id="attributes_and_elements"></span><span id="ATTRIBUTES_AND_ELEMENTS"></span>Atributos e elementos
 
@@ -72,7 +72,7 @@ Nenhum.
 <tr class="odd">
 <td><a href="element-provider.md">Provedor</a></td>
 <td><p>Especifica um provedor de rede preferencial em uma lista de provedores a serem usados durante o roaming.</p>
-<p>O valor desse elemento é uma instância do tipo complexo <a href="../mbn/schema-providertype-complextype.md"><strong>providerType</strong></a> v1.</p></td>
+<p>O valor desse elemento é uma instância do tipo complexo v1 <a href="../mbn/schema-providertype-complextype.md"><strong>ProviderType</strong></a> .</p></td>
 </tr>
 </tbody>
 </table>
@@ -95,8 +95,8 @@ Nenhum.
 <tbody>
 <tr class="odd">
 <td><a href="element-mbnprofileext.md">MBNProfileExt</a></td>
-<td><p>O <strong>elemento MBNProfileExt</strong> é uma extensão do elemento MBNProfile anterior. Ele identifica um perfil de Banda Larga Móvel com um conjunto mais avançado de opções do que o elemento MBNProfile.</p>
-<p>Pode haver mais de um elemento MbnProfileExt em um perfil, descrevendo as configurações de perfil para um conjunto específico de condições operacionais. Use o <a href="element-profileconditionedon.md"><strong>elemento filho ProfileConditionedOn</strong></a> <strong>de MBNProfileExt</strong> para especificar quais condições operacionais fazem de um perfil específico o perfil ativo.</p></td>
+<td><p>O elemento <strong>MBNProfileExt</strong> é uma extensão do elemento MBNProfile anterior. Ele identifica um perfil de banda larga móvel com um conjunto mais rico de opções do que o elemento MBNProfile.</p>
+<p>Pode haver mais de um elemento MbnProfileExt em um perfil, descrevendo as configurações de perfil para um determinado conjunto de condições operacionais. Use o elemento filho <a href="element-profileconditionedon.md"><strong>ProfileConditionedOn</strong></a> de <strong>MBNProfileExt</strong> para especificar quais condições operacionais tornam um perfil específico o perfil ativo.</p></td>
 </tr>
 </tbody>
 </table>

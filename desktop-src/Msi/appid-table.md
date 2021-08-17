@@ -4,12 +4,12 @@ ms.assetid: d76ed6df-944b-4996-bf07-e42ceb7a1b69
 title: Tabela AppId
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 07fa202907c094d8c12f73d838f5ad1d6b942125
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4e8452635cd7c167d6a8618629eaec2f6f6c1aa2e72e0b3628a7d4542a9e7160
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103828075"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119066266"
 ---
 # <a name="appid-table"></a>Tabela AppId
 
@@ -28,13 +28,13 @@ A tabela AppId tem as colunas a seguir.
 
 | Coluna               | Tipo                       | Chave | Nullable |
 |----------------------|----------------------------|-----|----------|
-| AppId                | [GUID](guid.md)           | S   | N        |
-| RemoteServerName     | [Binário](formatted.md) | N   | S        |
-| LocalService         | [Text](text.md)           | N   | S        |
-| Serviceparameters    | [Text](text.md)           | N   | S        |
-| DllSurrogate         | [Text](text.md)           | N   | S        |
-| ActivateAtStorage    | [Inteiro](integer.md)     | N   | S        |
-| RunAsInteractiveUser | [Inteiro](integer.md)     | N   | S        |
+| AppId                | [GUID](guid.md)           | Y   | N        |
+| RemoteServerName     | [Binário](formatted.md) | N   | Y        |
+| LocalService         | [Text](text.md)           | N   | Y        |
+| Serviceparameters    | [Text](text.md)           | N   | Y        |
+| DllSurrogate         | [Text](text.md)           | N   | Y        |
+| ActivateAtStorage    | [Inteiro](integer.md)     | N   | Y        |
+| RunAsInteractiveUser | [Inteiro](integer.md)     | N   | Y        |
 
 
 
@@ -82,14 +82,14 @@ Esta coluna contém o valor de DllSurrogate que será gravado em HKCR \\ AppID \
 <span id="ActivateAtStorage"></span><span id="activateatstorage"></span><span id="ACTIVATEATSTORAGE"></span>ActivateAtStorage
 </dt> <dd>
 
-Um valor inteiro diferente de zero nesse campo faz com que Windows Installer grave \\ o HKCR AppID \\ { <appid> } "ActivateAtStorage" = "Y" no registro. Se o campo for deixado vazio ou tiver um valor igual a zero, nenhum valor será gravado.
+um valor inteiro diferente de zero nesse campo faz com que Windows Installer grave \\ o HKCR AppID \\ { <appid> } "ActivateAtStorage" = "Y" no registro. Se o campo for deixado vazio ou tiver um valor igual a zero, nenhum valor será gravado.
 
 </dd> <dt>
 
 <span id="RunAsInteractiveUser"></span><span id="runasinteractiveuser"></span><span id="RUNASINTERACTIVEUSER"></span>RunAsInteractiveUser
 </dt> <dd>
 
-Um valor inteiro diferente de zero nesse campo faz com que Windows Installer grave o HKCR \\ AppID \\ {AppID>} "runas" = "usuário interativo" no registro. Se o campo for deixado vazio ou tiver um valor igual a zero, nenhum valor será gravado.
+um valor inteiro diferente de zero nesse campo faz com que Windows Installer grave o HKCR \\ AppID \\ {appid>} "RunAs" = "usuário interativo" no registro. Se o campo for deixado vazio ou tiver um valor igual a zero, nenhum valor será gravado.
 
 </dd> </dl>
 

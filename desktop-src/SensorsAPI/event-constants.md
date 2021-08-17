@@ -1,19 +1,19 @@
 ---
-description: O sensor do Windows e a plataforma de localização definem constantes para eventos de driver. O sensor manfuactureres também pode definir suas próprias constantes.
+description: o Sensor de Windows e a plataforma de localização definem constantes para eventos de driver. O sensor manfuactureres também pode definir suas próprias constantes.
 ms.assetid: ca61c912-bce5-4e41-ab48-40615d5b93ba
 title: Constantes de evento (sensores. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bc9fb3ced92c1fe263538f2ce27c3fc65fdd7676
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f1b16be770777c8e679e74123ce1c40c385893afee11ff3792dd58df007ae4c3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105753091"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118890224"
 ---
 # <a name="event-constants-sensorsh"></a>Constantes de evento (sensores. h)
 
-O sensor do Windows e a plataforma de localização definem constantes para eventos de driver. O sensor manfuactureres também pode definir suas próprias constantes.
+o Sensor de Windows e a plataforma de localização definem constantes para eventos de driver. O sensor manfuactureres também pode definir suas próprias constantes.
 
 **Tipos de evento de sensor**
 
@@ -63,9 +63,9 @@ A plataforma do sensor reserva esse GUID para uso futuro.
 
 | Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>                                           |
+| Cliente mínimo com suporte<br/> | \[somente aplicativos de área de trabalho Windows 7\]<br/>                                           |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                            |
-| parâmetro<br/>                   | <dl> <dt>Sensores. h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Sensores. h</dt> </dl> |
 
 
 

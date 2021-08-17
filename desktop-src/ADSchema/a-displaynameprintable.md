@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0eff05c2279f026e3a94b707b522509b4801ff27
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 1354cb59920460d83ad63b0e30498332dcce03b24a3a17db842cf87edf18119d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103825407"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118961695"
 ---
 # <a name="display-name-printable-attribute"></a>Nome de exibição-atributo imprimível
 
@@ -58,7 +58,7 @@ O nome de exibição imprimível de um objeto. O nome de exibição imprimível 
 | ID do link                | \-                              |
 | MAPI-Id                | 0x39FF                          |
 | System-Only            | Falso                           |
-| É de valor único       | True                            |
+| É de valor único       | Verdadeiro                            |
 | É indexado             | Falso                           |
 | No catálogo global      | Falso                           |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
@@ -79,7 +79,7 @@ O nome de exibição imprimível de um objeto. O nome de exibição imprimível 
 | ID do link                | \-                              |
 | MAPI-Id                | 0x39FF                          |
 | System-Only            | Falso                           |
-| É de valor único       | True                            |
+| É de valor único       | Verdadeiro                            |
 | É indexado             | Falso                           |
 | No catálogo global      | Falso                           |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
@@ -100,7 +100,7 @@ O nome de exibição imprimível de um objeto. O nome de exibição imprimível 
 | ID do link                | \-                              |
 | MAPI-Id                | 0x39FF                          |
 | System-Only            | Falso                           |
-| É de valor único       | True                            |
+| É de valor único       | Verdadeiro                            |
 | É indexado             | Falso                           |
 | No catálogo global      | Falso                           |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
@@ -121,7 +121,7 @@ O nome de exibição imprimível de um objeto. O nome de exibição imprimível 
 | ID do link                | \-                              |
 | MAPI-Id                | 0x39FF                          |
 | System-Only            | Falso                           |
-| É de valor único       | True                            |
+| É de valor único       | Verdadeiro                            |
 | É indexado             | Falso                           |
 | No catálogo global      | Falso                           |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
@@ -142,7 +142,7 @@ O nome de exibição imprimível de um objeto. O nome de exibição imprimível 
 | ID do link                | \-                              |
 | MAPI-Id                | 0x39FF                          |
 | System-Only            | Falso                           |
-| É de valor único       | True                            |
+| É de valor único       | Verdadeiro                            |
 | É indexado             | Falso                           |
 | No catálogo global      | Falso                           |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
@@ -163,7 +163,7 @@ O nome de exibição imprimível de um objeto. O nome de exibição imprimível 
 | ID do link                | \-                              |
 | MAPI-Id                | 0x39FF                          |
 | System-Only            | Falso                           |
-| É de valor único       | True                            |
+| É de valor único       | Verdadeiro                            |
 | É indexado             | Falso                           |
 | No catálogo global      | Falso                           |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |

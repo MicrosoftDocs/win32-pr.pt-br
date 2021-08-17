@@ -1,7 +1,7 @@
 ---
-description: Uma associação usada para estabelecer &\# 0034; parte de&\# 0034; relações entre uma instância de Msvm \_ VirtualEthernetSwitchSettingData e uma ou mais instâncias de Msvm \_ EthernetSwitchFeatureSettingData.
+description: Uma associação usada para estabelecer &\# 0034;parte do&0034; relações entre uma instância do \# Msvm \_ VirtualEthernetSwitchSettingData e uma ou mais instâncias de Msvm \_ EthernetSwitchFeatureSettingData.
 ms.assetid: b3adac33-056e-4f39-8022-5d9ef78370e9
-title: Classe Msvm_VirtualEthernetSwitchSettingDataComponent
+title: Msvm_VirtualEthernetSwitchSettingDataComponent classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,18 +15,18 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 8fa53514c5db3128e13f0504bb883cb802021c20
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 52c64997ebc0bbcda5cbf8a81416827670597c647e9c3ee1d3a4cab76d9f4cf1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104165245"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118949658"
 ---
-# <a name="msvm_virtualethernetswitchsettingdatacomponent-class"></a>\_Classe Msvm VirtualEthernetSwitchSettingDataComponent
+# <a name="msvm_virtualethernetswitchsettingdatacomponent-class"></a>Classe Msvm \_ VirtualEthernetSwitchSettingDataComponent
 
-Uma associação usada para estabelecer relações "parte de" entre uma instância de [**Msvm \_ VirtualEthernetSwitchSettingData**](msvm-virtualethernetswitchsettingdata.md) e uma ou mais instâncias do [**Msvm \_ EthernetSwitchFeatureSettingData**](msvm-ethernetswitchfeaturesettingdata.md).
+Uma associação usada para estabelecer relações de "parte de" entre uma instância do [**Msvm \_ VirtualEthernetSwitchSettingData**](msvm-virtualethernetswitchsettingdata.md) e uma ou mais instâncias de [**Msvm \_ EthernetSwitchFeatureSettingData**](msvm-ethernetswitchfeaturesettingdata.md).
 
-A sintaxe a seguir é simplificada formato MOF código (MOF) e inclui todas as propriedades herdadas.
+A sintaxe a seguir é simplificada Managed Object Format código MOF e inclui todas as propriedades herdadas.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -41,17 +41,17 @@ class Msvm_VirtualEthernetSwitchSettingDataComponent : CIM_Component
 
 ## <a name="members"></a>Membros
 
-A classe **Msvm \_ VirtualEthernetSwitchSettingDataComponent** tem estes tipos de membros:
+A **classe Msvm \_ VirtualEthernetSwitchSettingDataComponent** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **Msvm \_ VirtualEthernetSwitchSettingDataComponent** tem essas propriedades.
+A **classe Msvm \_ VirtualEthernetSwitchSettingDataComponent** tem essas propriedades.
 
 <dl> <dt>
 
-**GroupComponent**
+**Groupcomponent**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **Msvm \_ VirtualEthernetSwitchSettingData**
@@ -60,10 +60,10 @@ Tipo de dados: **Msvm \_ VirtualEthernetSwitchSettingData**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**chave**](/windows/desktop/WmiSdk/key-qualifier), [**substituição**](/windows/desktop/WmiSdk/standard-qualifiers) ("GroupComponent"), [**agregação**](/windows/desktop/WmiSdk/standard-qualifiers)
+Qualificadores: [**Chave**](/windows/desktop/WmiSdk/key-qualifier), [**Substituir**](/windows/desktop/WmiSdk/standard-qualifiers) ("GroupComponent"), [**Agregação**](/windows/desktop/WmiSdk/standard-qualifiers)
 </dt> </dl>
 
-Referência a uma instância da classe [**Msvm \_ VirtualEthernetSwitchSettingData**](msvm-virtualethernetswitchsettingdata.md) que representa uma porta Ethernet.
+Referência a uma instância da [**classe Msvm \_ VirtualEthernetSwitchSettingData**](msvm-virtualethernetswitchsettingdata.md) que representa uma porta Ethernet.
 
 </dd> <dt>
 
@@ -76,10 +76,10 @@ Tipo de dados: **Msvm \_ EthernetSwitchFeatureSettingData**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**chave**](/windows/desktop/WmiSdk/key-qualifier), [**substituição**](/windows/desktop/WmiSdk/standard-qualifiers) ("PartComponent")
+Qualificadores: [**Chave**](/windows/desktop/WmiSdk/key-qualifier), [**Substituir**](/windows/desktop/WmiSdk/standard-qualifiers) ("PartComponent")
 </dt> </dl>
 
-Referência a uma instância da classe [**Msvm \_ EthernetSwitchFeatureSettingData**](msvm-ethernetswitchfeaturesettingdata.md) que representa as configurações aplicadas à opção.
+Referência a uma instância da [**classe \_ EthernetSwitchFeatureSettingData Msvm**](msvm-ethernetswitchfeaturesettingdata.md) que representa as configurações aplicadas à opção.
 
 </dd> </dl>
 
@@ -89,10 +89,10 @@ Referência a uma instância da classe [**Msvm \_ EthernetSwitchFeatureSettingDa
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                                    |
-| Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[Windows 8 somente aplicativos da área de trabalho\]<br/>                                                              |
+| Servidor mínimo com suporte<br/> | \[Windows Server 2012 somente aplicativos da área de trabalho\]<br/>                                                    |
+| Namespace<br/>                | Virtualização \\ raiz \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 

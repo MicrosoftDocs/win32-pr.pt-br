@@ -1,11 +1,11 @@
 ---
-title: atributo MS-SQL-UnicodeSortOrder
+title: Atributo MS-SQL-UnicodeSortOrder
 description: A ordem de classificação Unicode para a instância atual do SQL Server.
 ms.assetid: c7f9d81d-a9c3-4be9-8ead-cf3d59352dbb
 ms.tgt_platform: multiple
 keywords:
-- esquema de AD do atributo MS-SQL-UnicodeSortOrder
-- esquema de AD do atributo mS-SQL-UnicodeSortOrder
+- Esquema AD SQL atributo MS-SQL-UnicodeSortOrder
+- Esquema do AD do atributo mS-SQL-UnicodeSortOrder
 topic_type:
 - apiref
 api_name:
@@ -21,7 +21,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118686456"
 ---
-# <a name="ms-sql-unicodesortorder-attribute"></a>atributo MS-SQL-UnicodeSortOrder
+# <a name="ms-sql-unicodesortorder-attribute"></a>Atributo MS-SQL-UnicodeSortOrder
 
 A ordem de classificação Unicode para a instância atual do SQL Server.
 
@@ -30,13 +30,13 @@ A ordem de classificação Unicode para a instância atual do SQL Server.
 | Entrada | Valor |
 |-------------------|--------------------------------------|
 | CN                | MS-SQL-UnicodeSortOrder              |
-| LDAP-Display-Name | mS-SQL-UnicodeSortOrder              |
+| Ldap-Display-Name | mS-SQL-UnicodeSortOrder              |
 | Tamanho              | 4 bytes                              |
 | Privilégio de atualização  | Administrador de domínio                 |
 | Frequência de atualização  | Na inicialização do sistema.                   |
 | Attribute-Id      | 1.2.840.113556.1.4.1372              |
-| System-ID-GUID    | 72dc918a-ccee-11d2-9993-0000f87a57d4 |
-| Sintaxe            | [**Enumeração**](s-enumeration.md) |
+| System-Id-Guid    | 72dc918a-ccee-11d2-9993-0000f87a57d4 |
+| Syntax            | [**Enumeração**](s-enumeration.md) |
 
 
 
@@ -58,10 +58,10 @@ A ordem de classificação Unicode para a instância atual do SQL Server.
 | ID do link                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| É de valor único       | True                                                      |
+| Tem valor único       | Verdadeiro                                                      |
 | É indexado             | Falso                                                     |
-| No catálogo global      | Falso                                                     |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                              |
+| No Catálogo Global      | Falso                                                     |
+| Descritor de segurança NT | O:BAG:BAD:S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
 | Search-Flags           | 0x00000000                                                |
@@ -79,10 +79,10 @@ A ordem de classificação Unicode para a instância atual do SQL Server.
 | ID do link                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| É de valor único       | True                                                      |
+| Tem valor único       | Verdadeiro                                                      |
 | É indexado             | Falso                                                     |
-| No catálogo global      | Falso                                                     |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                              |
+| No Catálogo Global      | Falso                                                     |
+| Descritor de segurança NT | O:BAG:BAD:S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
 | Search-Flags           | 0x00000000                                                |
@@ -100,10 +100,10 @@ A ordem de classificação Unicode para a instância atual do SQL Server.
 | ID do link                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| É de valor único       | True                                                      |
+| Tem valor único       | Verdadeiro                                                      |
 | É indexado             | Falso                                                     |
-| No catálogo global      | Falso                                                     |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                              |
+| No Catálogo Global      | Falso                                                     |
+| Descritor de segurança NT | O:BAG:BAD:S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
 | Search-Flags           | 0x00000000                                                |
@@ -121,7 +121,7 @@ A ordem de classificação Unicode para a instância atual do SQL Server.
 | ID do link                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| É de valor único       | True                                                      |
+| É de valor único       | Verdadeiro                                                      |
 | É indexado             | Falso                                                     |
 | No catálogo global      | Falso                                                     |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                              |
@@ -142,7 +142,7 @@ A ordem de classificação Unicode para a instância atual do SQL Server.
 | ID do link                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| É de valor único       | True                                                      |
+| É de valor único       | Verdadeiro                                                      |
 | É indexado             | Falso                                                     |
 | No catálogo global      | Falso                                                     |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                              |
@@ -163,7 +163,7 @@ A ordem de classificação Unicode para a instância atual do SQL Server.
 | ID do link                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| É de valor único       | True                                                      |
+| É de valor único       | Verdadeiro                                                      |
 | É indexado             | Falso                                                     |
 | No catálogo global      | Falso                                                     |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                              |

@@ -20,9 +20,9 @@ ms.locfileid: "118744453"
 ---
 # <a name="description-mbnprofile-element"></a>Elemento Description (MBNProfile)
 
-O **elemento Description (MBNProfile)** contém uma descrição do perfil.
+O elemento **Description (MBNProfile)** contém uma descrição do perfil.
 
-É uma cadeia de caracteres de comprimento de até 255 caracteres.
+É uma cadeia de caracteres com comprimento de até 255 caracteres.
 
 ``` syntax
 <xs:element name="Description"
@@ -30,7 +30,7 @@ O **elemento Description (MBNProfile)** contém uma descrição do perfil.
  />
 ```
 
-O **elemento Description** é definido pelo elemento [**MBNProfile.**](schema-mbnprofile-element.md)
+O elemento **Description** é definido pelo elemento [**MBNProfile**](schema-mbnprofile-element.md) .
 
 ## <a name="requirements"></a>Requisitos
 
@@ -38,7 +38,7 @@ O **elemento Description** é definido pelo elemento [**MBNProfile.**](schema-mb
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows aplicativos UWP de 7 \[ \| áreas de trabalho\]<br/> |
+| Cliente mínimo com suporte<br/> | \[aplicativos UWP para aplicativos de área de trabalho Windows 7 \|\]<br/> |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                         |
 
 

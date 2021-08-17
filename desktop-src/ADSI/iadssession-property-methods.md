@@ -1,10 +1,10 @@
 ---
-title: Métodos de propriedade IADsSession (IADs. h)
-description: Os métodos de propriedade da interface IADsSession obtêm ou definem as propriedades descritas na tabela a seguir. Para obter mais informações e uma discussão geral sobre métodos de propriedade, consulte interface Property Methods.
+title: Métodos de propriedade IADsSession (Iads.h)
+description: Os métodos de propriedade da interface IADsSession obterão ou definirão as propriedades descritas na tabela a seguir. Para obter mais informações e uma discussão geral sobre métodos de propriedade, consulte Métodos de propriedade de interface.
 ms.assetid: b2366da7-c51c-4279-8931-2000d3110d72
 ms.tgt_platform: multiple
 keywords:
-- ADSI de métodos de propriedade IADsSession
+- Métodos de propriedade IADsSession ADSI
 topic_type:
 - apiref
 api_name:
@@ -36,7 +36,7 @@ ms.locfileid: "118690731"
 ---
 # <a name="iadssession-property-methods"></a>Métodos de propriedade IADsSession
 
-Os métodos de propriedade da interface [**IADsSession**](/windows/desktop/api/Iads/nn-iads-iadssession) obtêm ou definem as propriedades descritas na tabela a seguir. Para obter mais informações e uma discussão geral sobre métodos de propriedade, consulte [interface Property Methods](interface-property-methods.md).
+Os métodos de propriedade da interface [**IADsSession**](/windows/desktop/api/Iads/nn-iads-iadssession) obterão ou definirão as propriedades descritas na tabela a seguir. Para obter mais informações e uma discussão geral sobre métodos de propriedade, consulte [Métodos de propriedade de interface](interface-property-methods.md).
 
 ## <a name="properties"></a>Propriedades
 
@@ -45,7 +45,7 @@ Os métodos de propriedade da interface [**IADsSession**](/windows/desktop/api/I
 **Computador**
 </dt> <dd> <dl>
 
-Nome da estação de trabalho cliente.
+Nome da estação de trabalho do cliente.
 
 <dt>
 
@@ -92,17 +92,17 @@ HRESULT get_ComputerPath(
 
 </dt> </dl> </dd> <dt>
 
-**Connecttime**
+**ConnectTime**
 </dt> <dd> <dl>
 
-Tempo decorrido, em segundos, desde que a sessão foi iniciada.
+Tempo decorrido, em segundos, desde o início da sessão.
 
 <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Tipo de dados de script: **longo**
+Tipo de dados de script: **LONG**
 </dt> <dt>
 
 
@@ -117,7 +117,7 @@ HRESULT get_ConnectTime(
 
 </dt> </dl> </dd> <dt>
 
-**Tempo ocioso**
+**IdleTime**
 </dt> <dd> <dl>
 
 Tempo ocioso, em segundos, da sessão.
@@ -127,7 +127,7 @@ Tempo ocioso, em segundos, da sessão.
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Tipo de dados de script: **longo**
+Tipo de dados de script: **LONG**
 </dt> <dt>
 
 
@@ -297,9 +297,9 @@ Cleanup:
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| parâmetro<br/>                   | <dl> <dt>IADs. h</dt> </dl>       |
+| Cabeçalho<br/>                   | <dl> <dt>Iads.h</dt> </dl>       |
 | DLL<br/>                      | <dl> <dt>Activeds.dll</dt> </dl> |
-| IID<br/>                      | IID \_ IADsSession é definido como 398B7DA0-4AAB-11CF-AE2C-00AA006EBFB9<br/>          |
+| IID<br/>                      | IID \_ IADsSession é definido como 398B7DA0-4AAB-11CF-AE2C-00AAA006EBFB9<br/>          |
 
 
 
@@ -307,7 +307,7 @@ Cleanup:
 
 <dl> <dt>
 
-[**IADsFileServiceOperations:: sessões**](/windows/desktop/api/Iads/nf-iads-iadsfileserviceoperations-sessions)
+[**IADsFileServiceOperations::Sessions**](/windows/desktop/api/Iads/nf-iads-iadsfileserviceoperations-sessions)
 </dt> <dt>
 
 [**IADsSession**](/windows/desktop/api/Iads/nn-iads-iadssession)

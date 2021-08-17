@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - Winsmcrd.h
-ms.openlocfilehash: fe3205311789ee51bb9b96b3b425b735e1fdf887
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9a377643e794b679be593bb99b8750698c92dd3aa8abacd79bfdb1c478c9c7b3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104296713"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118918882"
 ---
 # <a name="scard_io_request-structure"></a>\_Estrutura de solicitação de e/s scartar \_
 
@@ -60,8 +60,8 @@ Comprimento, em bytes, da estrutura **de \_ \_ solicitação de e/s scartar** , 
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho XP\]<br/>                                           |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
 | parâmetro<br/>                   | <dl> <dt>Winsmcrd. h</dt> </dl> |
 
 

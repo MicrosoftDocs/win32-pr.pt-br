@@ -1,21 +1,21 @@
 ---
-description: 'As funções a seguir fazem parte da API de instalação:'
+description: 'As seguintes funções fazem parte da API de Instalação:'
 ms.assetid: 0a9518b7-f231-48f2-ba50-5b802f8ccaed
-title: Funções (API de instalação)
+title: Funções (API de Instalação)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 24051c52d7c7555e1e1b84c03fafd6faf6ad1b96
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4e2bf2b8797faa22576fc78deb58e46fd1f2a140721b0d71df469812fabab314
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105756367"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118886876"
 ---
-# <a name="functions-setup-api"></a>Funções (API de instalação)
+# <a name="functions-setup-api"></a>Funções (API de Instalação)
 
-\[Essas funções estão disponíveis para uso nos sistemas operacionais indicados nas seções requisitos. Eles podem ter sido alterados ou não estarem disponíveis em versões subsequentes. O SetupAPI não deve mais ser usado para instalar aplicativos. Em vez disso, use o Windows Installer para desenvolver instaladores de aplicativos. O SetupAPI continua a ser usado para instalar drivers de dispositivo.\]
+\[Essas funções estão disponíveis para uso nos sistemas operacionais indicados nas seções Requisitos. Eles podem ter sido alterados ou não estarem disponíveis em versões subsequentes. SetupAPI não deve mais ser usado para instalar aplicativos. Em vez disso, use o instalador Windows para desenvolver instaladores de aplicativos. SetupAPI continua sendo usado para instalar drivers de dispositivo.\]
 
-As funções a seguir fazem parte da API de instalação:
+As seguintes funções fazem parte da API de Instalação:
 
 -   [**InstallHinfSection**](/windows/desktop/api/Setupapi/nf-setupapi-installhinfsectiona)
 -   [**SetupAddInstallSectionToDiskSpaceList**](/windows/desktop/api/Setupapi/nf-setupapi-setupaddinstallsectiontodiskspacelista)

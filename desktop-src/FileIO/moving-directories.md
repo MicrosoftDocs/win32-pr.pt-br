@@ -1,21 +1,21 @@
 ---
-description: Para mover um diretório para outro local, juntamente com os arquivos e subdiretórios contidos nele, chame a função MoveFileEx, MoveFileWithProgress ou MoveFileTransacted.
+description: Para mover um diretório para outro local, juntamente com os arquivos e subdireários contidos nele, chame a função MoveFileEx, MoveFileWithProgress ou MoveFileTransacted.
 ms.assetid: ca56c109-d6a3-456e-956c-126ce4aee8ba
 title: Movendo diretórios
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 56167f0831894350a044104bce1f41ef3c5770ba
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: da891e22c2840ad9460f5fb43c8cc1b130905b86de80a988be2eeeb9a4010ac5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105750864"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118951135"
 ---
 # <a name="moving-directories"></a>Movendo diretórios
 
-Para mover um diretório para outro local, juntamente com os arquivos e subdiretórios contidos nele, chame a função [**MoveFileEx**](/windows/desktop/api/WinBase/nf-winbase-movefileexa), [**MoveFileWithProgress**](/windows/desktop/api/WinBase/nf-winbase-movefilewithprogressa)ou [**MoveFileTransacted**](/windows/desktop/api/WinBase/nf-winbase-movefiletransacteda) . A função [**MoveFileWithProgress**](/windows/desktop/api/WinBase/nf-winbase-movefilewithprogressa) tem a mesma funcionalidade que [**MoveFileEx**](/windows/desktop/api/WinBase/nf-winbase-movefileexa), exceto que **MoveFileWithProgress** permite que você especifique uma rotina de retorno de chamada que recebe notificações sobre o andamento da operação. A função [**MoveFileTransacted**](/windows/desktop/api/WinBase/nf-winbase-movefiletransacteda) permite que você execute a operação como uma operação transacionada.
+Para mover um diretório para outro local, juntamente com os arquivos e subdireários contidos nele, chame a função [**MoveFileEx**](/windows/desktop/api/WinBase/nf-winbase-movefileexa), [**MoveFileWithProgress**](/windows/desktop/api/WinBase/nf-winbase-movefilewithprogressa)ou [**MoveFileTransacted.**](/windows/desktop/api/WinBase/nf-winbase-movefiletransacteda) A [**função MoveFileWithProgress**](/windows/desktop/api/WinBase/nf-winbase-movefilewithprogressa) tem a mesma funcionalidade que [**MoveFileEx**](/windows/desktop/api/WinBase/nf-winbase-movefileexa), exceto que **MoveFileWithProgress** permite que você especifique uma rotina de retorno de chamada que recebe notificações sobre o progresso da operação. A [**função MoveFileTransacted**](/windows/desktop/api/WinBase/nf-winbase-movefiletransacteda) permite que você execute a operação como uma operação transatada.
 
-O exemplo a seguir demonstra o uso da função [**MoveFileEx**](/windows/desktop/api/WinBase/nf-winbase-movefileexa) com um diretório.
+O exemplo a seguir demonstra o uso da [**função MoveFileEx**](/windows/desktop/api/WinBase/nf-winbase-movefileexa) com um diretório .
 
 
 ```C++

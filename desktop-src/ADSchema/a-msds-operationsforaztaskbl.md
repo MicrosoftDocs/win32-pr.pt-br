@@ -36,7 +36,7 @@ Link para trás Az-Operation para Az-Task objetos que se vinculam a ele.
 | Frequência de atualização  | Esse valor é definido pelo sistema.        |
 | Attribute-Id      | 1.2.840.113556.1.4.1809                 |
 | System-Id-Guid    | a637d211-5739-4ed1-89b2-88974548bc59    |
-| Sintaxe            | [**Object(DS-DN)**](s-object-ds-dn.md) |
+| Syntax            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
 
@@ -56,7 +56,7 @@ Link para trás Az-Operation para Az-Task objetos que se vinculam a ele.
 |------------------------|---------------------------------|
 | ID do link                | 2019                            |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
+| System-Only            | Verdadeiro                            |
 | Tem valor único       | Falso                           |
 | É indexado             | Falso                           |
 | No Catálogo Global      | Falso                           |
@@ -77,7 +77,7 @@ Link para trás Az-Operation para Az-Task objetos que se vinculam a ele.
 |------------------------|---------------------------------|
 | ID do link                | 2019                            |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
+| System-Only            | Verdadeiro                            |
 | Tem valor único       | Falso                           |
 | É indexado             | Falso                           |
 | No Catálogo Global      | Falso                           |
@@ -98,7 +98,7 @@ Link para trás Az-Operation para Az-Task objetos que se vinculam a ele.
 |------------------------|---------------------------------|
 | ID do link                | 2019                            |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
+| System-Only            | Verdadeiro                            |
 | Tem valor único       | Falso                           |
 | É indexado             | Falso                           |
 | No Catálogo Global      | Falso                           |
@@ -119,11 +119,11 @@ Link para trás Az-Operation para Az-Task objetos que se vinculam a ele.
 |------------------------|---------------------------------|
 | ID do link                | 2019                            |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| Tem valor único       | Falso                           |
+| System-Only            | Verdadeiro                            |
+| É de valor único       | Falso                           |
 | É indexado             | Falso                           |
-| No Catálogo Global      | Falso                           |
-| Descritor de segurança NT | O:BAG:BAD:S:                    |
+| No catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -140,11 +140,11 @@ Link para trás Az-Operation para Az-Task objetos que se vinculam a ele.
 |------------------------|---------------------------------|
 | ID do link                | 2019                            |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| Tem valor único       | Falso                           |
+| System-Only            | Verdadeiro                            |
+| É de valor único       | Falso                           |
 | É indexado             | Falso                           |
-| No Catálogo Global      | Falso                           |
-| Descritor de segurança NT | O:BAG:BAD:S:                    |
+| No catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |

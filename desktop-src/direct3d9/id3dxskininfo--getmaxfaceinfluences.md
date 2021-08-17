@@ -1,7 +1,7 @@
 ---
-description: Obtém o número máximo de influências em uma malha de triângulos com o buffer de índice especificado.
+description: Obtém o máximo de influências de face em uma malha de triângulo com o buffer de índice especificado.
 ms.assetid: 72dc2440-87df-461e-80d0-9ad9b1e4d8ee
-title: 'Método ID3DXSkinInfo:: GetMaxFaceInfluences (D3DX9Mesh. h)'
+title: Método ID3DXSkinInfo::GetMaxFaceInfluences (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -21,9 +21,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118800665"
 ---
-# <a name="id3dxskininfogetmaxfaceinfluences-method"></a>Método ID3DXSkinInfo:: GetMaxFaceInfluences
+# <a name="id3dxskininfogetmaxfaceinfluences-method"></a>Método ID3DXSkinInfo::GetMaxFaceInfluences
 
-Obtém o número máximo de influências em uma malha de triângulos com o buffer de índice especificado.
+Obtém o máximo de influências de face em uma malha de triângulo com o buffer de índice especificado.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,16 +42,16 @@ HRESULT GetMaxFaceInfluences(
 
 <dl> <dt>
 
-*pIB* \[ no\]
+*pIB* \[ Em\]
 </dt> <dd>
 
 Tipo: **[ **LPDIRECT3DINDEXBUFFER9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dindexbuffer9)**
 
-Ponteiro para o buffer de índice que contém os dados do índice de malha.
+Ponteiro para o buffer de índice que contém os dados de índice de malha.
 
 </dd> <dt>
 
-*NumFaces* \[ no\]
+*NumFaces* \[ Em\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
@@ -60,12 +60,12 @@ Número de faces na malha.
 
 </dd> <dt>
 
-*maxFaceInfluences* \[ no\]
+*maxFaceInfluences* \[ Em\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)\***
 
-Ponteiro para a superfície máxima influencia.
+O ponteiro para o rosto máximo influencia.
 
 </dd> </dl>
 
@@ -73,7 +73,7 @@ Ponteiro para a superfície máxima influencia.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se o método for bem sucedido, o valor de retorno será D3D \_ OK. Se o método falhar, o valor de retorno poderá ser D3DERR \_ INVALIDCALL.
+Se o método for bem-sucedido, o valor de retorno será D3D \_ OK. Se o método falhar, o valor de retorno poderá ser D3DERR \_ INVALIDCALL.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -81,8 +81,8 @@ Se o método for bem sucedido, o valor de retorno será D3D \_ OK. Se o método 
 
 | Requisito | Valor |
 |--------------------|----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| parâmetro<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

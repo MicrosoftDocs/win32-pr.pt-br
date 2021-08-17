@@ -36,7 +36,7 @@ Link para trás de um grupo não membro ou usuário para AZ grupos que se vincul
 | Frequência de atualização  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.1794                 |
 | System-ID-GUID    | 2a8c68fc-3a7a-4e87-8720-fe77c51cbe74    |
-| Sintaxe            | [**Objeto (DS-DN)**](s-object-ds-dn.md) |
+| Syntax            | [**Objeto (DS-DN)**](s-object-ds-dn.md) |
 
 
 
@@ -56,7 +56,7 @@ Link para trás de um grupo não membro ou usuário para AZ grupos que se vincul
 |------------------------|---------------------------------|
 | ID do link                | 2015                            |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
+| System-Only            | Verdadeiro                            |
 | É de valor único       | Falso                           |
 | É indexado             | Falso                           |
 | No catálogo global      | Falso                           |
@@ -77,7 +77,7 @@ Link para trás de um grupo não membro ou usuário para AZ grupos que se vincul
 |------------------------|---------------------------------|
 | ID do link                | 2015                            |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
+| System-Only            | Verdadeiro                            |
 | É de valor único       | Falso                           |
 | É indexado             | Falso                           |
 | No catálogo global      | Falso                           |
@@ -98,7 +98,7 @@ Link para trás de um grupo não membro ou usuário para AZ grupos que se vincul
 |------------------------|---------------------------------|
 | ID do link                | 2015                            |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
+| System-Only            | Verdadeiro                            |
 | É de valor único       | Falso                           |
 | É indexado             | Falso                           |
 | No catálogo global      | Falso                           |
@@ -119,7 +119,7 @@ Link para trás de um grupo não membro ou usuário para AZ grupos que se vincul
 |------------------------|---------------------------------|
 | ID do link                | 2015                            |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
+| System-Only            | Verdadeiro                            |
 | É de valor único       | Falso                           |
 | É indexado             | Falso                           |
 | No catálogo global      | Falso                           |
@@ -140,7 +140,7 @@ Link para trás de um grupo não membro ou usuário para AZ grupos que se vincul
 |------------------------|---------------------------------|
 | ID do link                | 2015                            |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
+| System-Only            | Verdadeiro                            |
 | É de valor único       | Falso                           |
 | É indexado             | Falso                           |
 | No catálogo global      | Falso                           |

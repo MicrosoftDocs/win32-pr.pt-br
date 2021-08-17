@@ -1,7 +1,7 @@
 ---
 description: Obtém uma textura.
 ms.assetid: e009ccc2-4491-4976-9460-7478b2bd34c2
-title: 'Método ID3DXBaseEffect:: GetTexture (D3DX9Shader. h)'
+title: Método ID3DXBaseEffect::GetTexture (D3DX9Shader.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: 25ef71df1f9dcd84bbe6726fd3a13f9ec09eff17
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 7b7f52eaa5d78e7f1a88d88a077536f5ece581b588c60817f3947baa3dbfc9b1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103663970"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119121845"
 ---
-# <a name="id3dxbaseeffectgettexture-method"></a>Método ID3DXBaseEffect:: GetTexture
+# <a name="id3dxbaseeffectgettexture-method"></a>Método ID3DXBaseEffect::GetTexture
 
 Obtém uma textura.
 
@@ -41,7 +41,7 @@ HRESULT GetTexture(
 
 <dl> <dt>
 
-*hParameter* \[ no\]
+*hParameter* \[ Em\]
 </dt> <dd>
 
 Tipo: **[D3DXHANDLE](dx9-graphics-reference-effects-constants.md)**
@@ -50,7 +50,7 @@ Identificador exclusivo. Consulte [Handles (Direct3D 9)](handles.md).
 
 </dd> <dt>
 
-*ppTexture* \[ fora\]
+*ppTexture* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **LPDIRECT3DBASETEXTURE9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dbasetexture9)\***
@@ -59,11 +59,11 @@ Retorna um objeto de textura. Consulte [**IDirect3DBaseTexture9**](/windows/win3
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se o método for bem sucedido, o valor de retorno será D3D \_ OK. Se o método falhar, o valor de retorno poderá ser D3DERR \_ INVALIDCALL.
+Se o método for bem-sucedido, o valor de retorno será D3D \_ OK. Se o método falhar, o valor de retorno poderá ser D3DERR \_ INVALIDCALL.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -71,8 +71,8 @@ Se o método for bem sucedido, o valor de retorno será D3D \_ OK. Se o método 
 
 | Requisito | Valor |
 |--------------------|------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3DX9Shader. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>     |
+| parâmetro<br/>  | <dl> <dt>D3DX9Shader.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>     |
 
 
 
@@ -83,7 +83,7 @@ Se o método for bem sucedido, o valor de retorno será D3D \_ OK. Se o método 
 [ID3DXBaseEffect](id3dxbaseeffect.md)
 </dt> <dt>
 
-[**SetTexture**](id3dxbaseeffect--settexture.md)
+[**Settexture**](id3dxbaseeffect--settexture.md)
 </dt> </dl>
 
  

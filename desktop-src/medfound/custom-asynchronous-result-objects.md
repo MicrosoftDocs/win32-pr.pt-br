@@ -1,7 +1,7 @@
 ---
-description: Objetos de resultados assíncronos personalizados
+description: Objetos de resultado assíncronos personalizados
 ms.assetid: 78cef367-b007-46d5-bb7f-2b3f7eed9926
-title: Objetos de resultados assíncronos personalizados
+title: Objetos de resultado assíncronos personalizados
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 7212152de737a0af8e290b2c837b40cd4ad68840a49df79db148b4691068678b
@@ -11,17 +11,17 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118742922"
 ---
-# <a name="custom-asynchronous-result-objects"></a>Objetos de resultados assíncronos personalizados
+# <a name="custom-asynchronous-result-objects"></a>Objetos de resultado assíncronos personalizados
 
-Este tópico descreve como implementar a interface [**IMFAsyncResult**](/windows/desktop/api/mfobjects/nn-mfobjects-imfasyncresult) .
+Este tópico descreve como implementar a interface [**IMFAsyncResult.**](/windows/desktop/api/mfobjects/nn-mfobjects-imfasyncresult)
 
-É raro que você precise escrever uma implementação personalizada da interface [**IMFAsyncResult**](/windows/desktop/api/mfobjects/nn-mfobjects-imfasyncresult) . Em quase todos os casos, a implementação de Media Foundation padrão é suficiente. (Essa implementação é retornada pela função [**MFCreateAsyncResult**](/windows/desktop/api/mfapi/nf-mfapi-mfcreateasyncresult) .) No entanto, se você escrever uma implementação personalizada, haverá alguns problemas que você deve conhecer.
+É raro que você precise escrever uma implementação personalizada da interface [**IMFAsyncResult.**](/windows/desktop/api/mfobjects/nn-mfobjects-imfasyncresult) Em quase todos os casos, a implementação Media Foundation padrão é suficiente. (Essa implementação é retornada pela [**função MFCreateAsyncResult.)**](/windows/desktop/api/mfapi/nf-mfapi-mfcreateasyncresult) No entanto, se você escrever uma implementação personalizada, haverá alguns problemas a serem abordados.
 
-Primeiro, sua implementação deve herdar a estrutura [**MFASYNCRESULT**](/windows/win32/api/mfapi/ns-mfapi-mfasyncresult) . O Media Foundation filas de trabalho usam essa estrutura internamente para distribuir a operação. Inicialize todos os membros da estrutura para zero, exceto para o membro **pCallback** , que contém um ponteiro para a interface de retorno de chamada do chamador.
+Primeiro, sua implementação deve herdar a [**estrutura MFASYNCRESULT.**](/windows/win32/api/mfapi/ns-mfapi-mfasyncresult) As Media Foundation de trabalho usam essa estrutura internamente para expedir a operação. Inicialize todos os membros da estrutura como zero, exceto pelo membro **pCallback,** que contém um ponteiro para a interface de retorno de chamada do chamador.
 
-Em segundo lugar, o objeto deve chamar [**MFLockPlatform**](/windows/desktop/api/mfapi/nf-mfapi-mflockplatform) em seu construtor para bloquear a plataforma Media Foundation. Chame [**MFUnlockPlatform**](/windows/desktop/api/mfapi/nf-mfapi-mfunlockplatform) para desbloquear a plataforma. Essas funções ajudam a impedir que a plataforma seja desligada antes que o objeto seja destruído. Para obter mais informações, consulte [filas de trabalho](work-queues.md).
+Em segundo lugar, seu objeto deve [**chamar MFLockPlatform**](/windows/desktop/api/mfapi/nf-mfapi-mflockplatform) em seu construtor, para bloquear a Media Foundation plataforma. Chame [**MFUnlockPlatform para**](/windows/desktop/api/mfapi/nf-mfapi-mfunlockplatform) desbloquear a plataforma. Essas funções ajudam a impedir que a plataforma seja fechada antes que o objeto seja destruído. Para obter mais informações, consulte [Filas de trabalho.](work-queues.md)
 
-O código a seguir mostra uma implementação básica da interface [**IMFAsyncResult**](/windows/desktop/api/mfobjects/nn-mfobjects-imfasyncresult) . Como mostrado, esse código não fornece recursos adicionais além da implementação de Media Foundation padrão.
+O código a seguir mostra uma implementação básica da interface [**IMFAsyncResult.**](/windows/desktop/api/mfobjects/nn-mfobjects-imfasyncresult) Conforme mostrado, esse código não fornece recursos adicionais além da implementação Media Foundation padrão.
 
 
 ```C++
@@ -223,7 +223,7 @@ public:
 
 <dl> <dt>
 
-[Filas de trabalho](work-queues.md)
+[Filas de Trabalho](work-queues.md)
 </dt> <dt>
 
 [Métodos de retorno de chamada assíncrono](asynchronous-callback-methods.md)

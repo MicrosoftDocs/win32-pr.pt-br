@@ -1,6 +1,6 @@
 ---
 title: atributo propputref
-description: O atributo \ propputref\ especifica uma função de configuração de propriedade que usa uma referência em vez de um valor .
+description: O atributo \ propputref\ especifica uma função de configuração de propriedade que usa uma referência em vez de um valor.
 ms.assetid: 84f1cd08-3c42-4a6d-bb1d-0bfd3f4c33f2
 keywords:
 - atributo propputref MIDL

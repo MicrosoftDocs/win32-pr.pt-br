@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre a propriedade: JET_RECSIZE. cTaggedColumns'
-title: Propriedade JET_RECSIZE. cTaggedColumns (Microsoft. ISAM. ESENT. Interop. vista)
+description: 'Saiba mais sobre: JET_RECSIZE.cTaggedColumns'
+title: JET_RECSIZE.cTaggedColumns (Microsoft.Isam.Esent.Interop.Vista)
 TOCTitle: 'cTaggedColumns property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.Vista.JET_RECSIZE.cTaggedColumns
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.vista.jet_recsize.ctaggedcolumns(v=EXCHG.10)
@@ -26,19 +26,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 531a2a453737e03b66ad1a5a86a80f3ba61c4711
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 566e79819a978ff5227474ee70cbf9d757de0a0e3d6ec30d93cc9d6cc6e33a0e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104501310"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118763634"
 ---
-# <a name="jet_recsizectaggedcolumns-property"></a>Propriedade JET_RECSIZE. cTaggedColumns
+# <a name="jet_recsizectaggedcolumns-property"></a>JET_RECSIZE.cTaggedColumns
 
 Obtém o número total de colunas marcadas definidas neste registro.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Syntax
 
@@ -60,14 +60,14 @@ public long cTaggedColumns { get; internal set; }
 
 #### <a name="property-value"></a>Valor da propriedade
 
-Tipo: [System. Int64](/dotnet/api/system.int64)  
+Tipo: [System.Int64](/dotnet/api/system.int64)  
 
 ## <a name="see-also"></a>Confira também
 
 #### <a name="reference"></a>Referência
 
-[Estrutura de JET_RECSIZE](./jet-recsize-structure2.md)
+[JET_RECSIZE estrutura](./jet-recsize-structure2.md)
 
-[Membros do JET_RECSIZE](./jet-recsize-members.md)
+[JET_RECSIZE membros](./jet-recsize-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)

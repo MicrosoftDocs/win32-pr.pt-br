@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 9b89ed7ff724eabef9fc2b2757c6ac0e5272c69e
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 5bc2630d339bfb465b570ba62b346cd931301425f4feeb4367407ffd52336e7e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104298183"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118789859"
 ---
 # <a name="rwtexture3d"></a>RWTexture3D
 
@@ -29,7 +29,7 @@ Um recurso de leitura/gravação.
 | Método                                                        | Descrição                   |
 |---------------------------------------------------------------|-------------------------------|
 | [**GetDimensions**](sm5-object-rwtexture3d-getdimensions.md) | Obtém as dimensões do recurso. |
-| [**Carregamento**](rwtexture3d-load.md)                              | Lê dados de textura.           |
+| [**Carregar**](rwtexture3d-load.md)                              | Lê dados de textura.           |
 | [**Operador\[\]**](sm5-object-rwtexture3d-operatorindex.md)  | Obtém uma variável de recurso.     |
 
 
@@ -74,7 +74,7 @@ Este objeto tem suporte para os seguintes tipos de sombreadores:
 
 
 
-| Vértice | Envoltória | Domínio | Geometria | 16x16 | Computação |
+| Vértice | Envoltória | Domínio | Geometry | 16x16 | Computação |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | x     | x       |
 

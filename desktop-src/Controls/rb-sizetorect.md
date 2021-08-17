@@ -1,9 +1,9 @@
 ---
-title: Mensagem de RB_SIZETORECT (commctrl. h)
-description: Tenta encontrar o melhor layout das faixas para o retângulo fornecido.
+title: RB_SIZETORECT mensagem (Commctrl.h)
+description: Tenta encontrar o melhor layout das faixas para o retângulo determinado.
 ms.assetid: c6242b54-bd65-489b-b417-9680cc39b64a
 keywords:
-- Controles de RB_SIZETORECT de mensagens do Windows
+- RB_SIZETORECT controles de Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a3db5727ee8c94d2473b503c9a81b7669bb829a0
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ba63630fc64f56dff914b4fb576ecc6cef43d12d192606a5088924fd6a5832e6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104086413"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119078540"
 ---
-# <a name="rb_sizetorect-message"></a>\_Mensagem SIZETORECT RB
+# <a name="rb_sizetorect-message"></a>Mensagem RB \_ SIZETORECT
 
-Tenta encontrar o melhor layout das faixas para o retângulo fornecido.
+Tenta encontrar o melhor layout das faixas para o retângulo determinado.
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -35,17 +35,17 @@ Tenta encontrar o melhor layout das faixas para o retângulo fornecido.
 *lParam* 
 </dt> <dd>
 
-Ponteiro para uma estrutura [**Rect**](/previous-versions//dd162897(v=vs.85)) que especifica o retângulo para o qual o controle rebar deve ser dimensionado.
+Ponteiro para uma [**estrutura RECT**](/previous-versions//dd162897(v=vs.85)) que especifica o retângulo para o qual o controle de barra de rebar deve ser dimensionado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retornará um valor diferente de zero se ocorrer uma alteração de layout ou nenhum outro.
+Retornará diferente de zero se ocorrer uma alteração de layout ou zero caso contrário.
 
 ## <a name="remarks"></a>Comentários
 
-As bandas de rebar serão organizadas e encapsuladas conforme necessário para caber no retângulo. As faixas que têm o \_ estilo RBBS VARIABLEHEIGHT serão redimensionadas de maneira uniforme possível para caber no retângulo. A altura de um rebar horizontal ou a largura de um rebar vertical pode ser alterada, dependendo do novo layout.
+As faixas de barra de rebar serão organizadas e empacotadas conforme necessário para caber no retângulo. As faixas que têm o estilo RBBS VARIABLEHEIGHT serão resized da maneira mais adequada \_ possível para se ajustarem ao retângulo. A altura de uma barra de rebar horizontal ou a largura de uma barra vertical pode mudar, dependendo do novo layout.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -53,9 +53,9 @@ As bandas de rebar serão organizadas e encapsuladas conforme necessário para c
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

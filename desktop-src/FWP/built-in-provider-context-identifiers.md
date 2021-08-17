@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 942ed1d21d2acd46f0dc6b303049e0936e3cf63d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c0247b58b38de55eb67479c68e0c0955fb9d2a56a793215330366ca8ccfbe4e4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104454609"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118951325"
 ---
 # <a name="built-in-provider-context-identifiers"></a>Identificadores de contexto do provedor interno
 
-Os identificadores para os contextos de provedor que são internos à WFP (Windows Filtering Platform) são representados por um GUID. Esses contextos de provedor internos identificam as políticas padrão a serem usadas com soquetes seguros.
+os identificadores para os contextos do provedor que são internos para a Windows a plataforma de filtragem (WFP) são representados por um GUID. Esses contextos de provedor internos identificam as políticas padrão a serem usadas com soquetes seguros.
 
 Esses identificadores são definidos da seguinte maneira.
 
@@ -54,9 +54,9 @@ Política padrão de modo rápido do IPsec (Internet Protocol Security) para soq
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                     |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                               |
-| parâmetro<br/>                   | <dl> <dt>Fwpmu. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                     |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                               |
+| Cabeçalho<br/>                   | <dl> <dt>Fwpmu. h</dt> </dl> |
 
 
 

@@ -23,12 +23,12 @@ keywords:
 - menus, fontes
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6d216b5fe5e6c25a98b5bdf3abe9d55b4bb0b34f
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 61f3a71a580a323fa2058613f8c9a14d9c2782bd3ba139e5d182750e5047fe74
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "103640962"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118971925"
 ---
 # <a name="using-menus"></a>Uso de Menus
 
@@ -79,7 +79,7 @@ Um modelo de menu estendido consiste em uma estrutura de [**\_ \_ cabeçalho de 
 
 ### <a name="old-menu-template-format"></a>Antigo formato de Menu-Template
 
-Um modelo de menu antigo (Microsoft Windows NT 3,51 e anterior) define um menu, mas não oferece suporte à nova funcionalidade de menu. Um recurso de modelo de menu antigo tem o tipo de recurso de **\_ menu RT** .
+um modelo de menu antigo (Microsoft Windows NT 3,51 e anterior) define um menu, mas não oferece suporte à nova funcionalidade de menu. Um recurso de modelo de menu antigo tem o tipo de recurso de **\_ menu RT** .
 
 Um modelo de menu antigo consiste em uma estrutura [**MENUITEMTEMPLATEHEADER**](/windows/desktop/api/Winuser/ns-winuser-menuitemtemplateheader) seguida por uma ou mais estruturas [**MenuItemTemplate**](/windows/desktop/api/Winuser/ns-winuser-menuitemtemplate) .
 
@@ -231,9 +231,9 @@ Você deve permitir que o usuário escolha um item em um menu de atalho usando o
 
 ### <a name="processing-the-wm_contextmenu-message"></a>Processando a \_ mensagem CONTEXTMENU do WM
 
-A mensagem de [**\_ CONTEXTMENU do WM**](wm-contextmenu.md) é gerada quando um procedimento de janela do aplicativo passa a mensagem do [**WM \_ RBUTTONUP**](/windows/desktop/inputdev/wm-rbuttonup) ou do [**WM \_ NCRBUTTONUP**](/windows/desktop/inputdev/wm-ncrbuttonup) para a função [**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) . O aplicativo pode processar essa mensagem para exibir um menu de atalho apropriado para uma parte específica de sua tela. Se o aplicativo não exibir um menu de atalho, ele deverá passar a mensagem para **DefWindowProc** para manipulação padrão.
+A mensagem de [**\_ CONTEXTMENU do WM**](wm-contextmenu.md) é gerada quando um procedimento de janela do aplicativo passa a mensagem do [**WM \_ RBUTTONUP**](/windows/desktop/inputdev/wm-rbuttonup) ou do [**WM \_ NCRBUTTONUP**](/windows/desktop/inputdev/wm-ncrbuttonup) para a função [**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) . O aplicativo pode processar essa mensagem para exibir um menu de atalho apropriado para uma parte específica de sua tela. Se o aplicativo não exibir um menu de atalho, ele deverá passar a mensagem para **DefWindowProc** para tratamento padrão.
 
-A seguir, um exemplo de processamento de mensagem [**\_ CONTEXTMENU do WM**](wm-contextmenu.md) como ele pode aparecer no procedimento de janela de um aplicativo. As palavras de ordem inferior e de ordem superior do parâmetro *lParam* especificam as coordenadas de tela do mouse quando o botão direito do mouse é liberado (Observe que essas coordenadas podem ter valores negativos em sistemas com vários monitores). A função **oncontextmenu** definida pelo aplicativo retornará **true** se exibir um menu de contexto ou **false** se não tiver.
+A seguir está um exemplo de processamento de mensagens [**WM \_ CONTEXTMENU,**](wm-contextmenu.md) pois ele pode aparecer no procedimento de janela de um aplicativo. As palavras de ordem baixa e alta do parâmetro *lParam* especificam as coordenadas de tela do mouse quando o botão direito do mouse é liberado (observe que essas coordenadas podem receber valores negativos em sistemas com vários monitores). A função **OnContextMenu** definida pelo aplicativo retornará **TRUE** se exibir um menu de contexto ou **FALSE** se não exibir.
 
 
 ```
@@ -246,7 +246,7 @@ case WM_CONTEXTMENU:
 
 
 
-A função oncontextmenu definida pelo aplicativo a seguir exibirá um menu de atalho se a posição do mouse especificada estiver dentro da área do cliente da janela. Uma função mais sofisticada pode exibir um dos vários menus diferentes, dependendo de qual parte da área do cliente é especificada. Para realmente exibir o menu de atalho, este exemplo chama uma função definida pelo aplicativo chamada DisplayContextMenu. Para obter uma descrição dessa função, consulte [exibindo um menu de atalho](#displaying-a-shortcut-menu).
+A função OnContextMenu definida pelo aplicativo a seguir exibirá um menu de atalho se a posição especificada do mouse estiver dentro da área do cliente da janela. Uma função mais sofisticada pode exibir um dos vários menus diferentes, dependendo de qual parte da área do cliente é especificada. Para exibir o menu de atalho, este exemplo chama uma função definida pelo aplicativo chamada DisplayContextMenu. Para uma descrição dessa função, consulte [Exibindo um menu de atalho](#displaying-a-shortcut-menu).
 
 
 ```
@@ -281,11 +281,11 @@ BOOL WINAPI OnContextMenu(HWND hwnd, int x, int y)
 
 
 
-### <a name="creating-a-shortcut-font-attributes-menu"></a>Criando um menu de Font-Attributes de atalho
+### <a name="creating-a-shortcut-font-attributes-menu"></a>Criando um menu de Font-Attributes atalho
 
-O exemplo nesta seção contém partes do código de um aplicativo que cria e exibe um menu de atalho que permite ao usuário definir fontes e atributos de fonte. O aplicativo exibe o menu na área do cliente de sua janela principal sempre que o usuário clica no botão esquerdo do mouse.
+O exemplo nesta seção contém partes de código de um aplicativo que cria e exibe um menu de atalho que permite ao usuário definir fontes e atributos de fonte. O aplicativo exibe o menu na área do cliente da janela principal sempre que o usuário clica no botão esquerdo do mouse.
 
-Aqui está o modelo de menu para o menu de atalho que é fornecido no arquivo de definição de recurso do aplicativo.
+Este é o modelo de menu para o menu de atalho fornecido no arquivo de definição de recursos do aplicativo.
 
 
 ```
@@ -403,7 +403,7 @@ VOID APIENTRY HandlePopupMenu(HWND hwnd, POINT pt)
 
 A função mostrada no exemplo a seguir exibe um menu de atalho.
 
-O aplicativo inclui um recurso de menu identificado pela cadeia de caracteres "ShortcutExample". A barra de menus simplesmente contém um nome de menu. O aplicativo usa a função [**TrackPopupMenu**](/windows/desktop/api/Winuser/nf-winuser-trackpopupmenu) para exibir o menu associado a esse item de menu. (A própria barra de menus não é exibida porque **TrackPopupMenu** requer um identificador para um menu, submenu ou menu de atalho.)
+O aplicativo inclui um recurso de menu identificado pela cadeia de caracteres "ShortcutExample". A barra de menus simplesmente contém um nome de menu. O aplicativo usa a [**função TrackPopupMenu**](/windows/desktop/api/Winuser/nf-winuser-trackpopupmenu) para exibir o menu associado a este item de menu. (A barra de menus em si não é exibida porque **TrackPopupMenu** requer um alça para um menu, submenu ou menu de atalho.)
 
 
 ```
@@ -439,41 +439,41 @@ VOID APIENTRY DisplayContextMenu(HWND hwnd, POINT pt)
 
 ## <a name="using-menu-item-bitmaps"></a>Usando Menu-Item bitmaps
 
-O sistema pode usar um bitmap em vez de uma cadeia de texto para exibir um item de menu. Para usar um bitmap, você deve definir o sinalizador de **\_ bitmap MIIM** para o item de menu e especificar um identificador para o bitmap que o sistema deve exibir para o item de menu no membro **hbmpItem** da estrutura [**MENUITEMINFO**](/windows/win32/api/winuser/ns-winuser-menuiteminfoa) . Esta seção descreve como usar bitmaps para itens de menu.
+O sistema pode usar um bitmap em vez de uma cadeia de caracteres de texto para exibir um item de menu. Para usar um bitmap, você deve definir o sinalizador **\_ BITMAP MIIM** para o item de menu e especificar um alça para o bitmap que o sistema deve exibir para o item de menu no membro **hbmpItem** da estrutura [**MENUITEMINFO.**](/windows/win32/api/winuser/ns-winuser-menuiteminfoa) Esta seção descreve como usar bitmaps para itens de menu.
 
--   [Configurando o sinalizador de tipo de bitmap](#setting-the-bitmap-type-flag)
--   [Criando o bitmap](#creating-the-bitmap)
+-   [Definindo o sinalizador de tipo bitmap](#setting-the-bitmap-type-flag)
+-   [Criando o Bitmap](#creating-the-bitmap)
 -   [Adicionando linhas e grafos a um menu](#adding-lines-and-graphs-to-a-menu)
--   [Exemplo de bitmaps de Menu-Item](#example-of-menu-item-bitmaps)
+-   [Exemplo de Menu-Item Bitmaps](#example-of-menu-item-bitmaps)
 
-### <a name="setting-the-bitmap-type-flag"></a>Configurando o sinalizador de tipo de bitmap
+### <a name="setting-the-bitmap-type-flag"></a>Definindo o sinalizador de tipo bitmap
 
-O **sinalizador \_ bitmap MIIM** ou **\_ MF** mostra o sistema para usar um bitmap em vez de uma cadeia de texto para exibir um item de menu. Um **\_ bitmap MIIM** de um item de menu ou um sinalizador de **\_ bitmap MF** deve ser definido em tempo de execução; você não pode defini-lo no arquivo de definição de recurso.
+O **sinalizador \_ BITMAP ou** **\_ MF BITMAP** do MIIM informa ao sistema para usar um bitmap em vez de uma cadeia de caracteres de texto para exibir um item de menu. O **\_ bitmap miim** de um item de menu ou o sinalizador **\_ BITMAP MF** devem ser definidos em tempo de executar; você não pode defini-lo no arquivo de definição de recurso.
 
-Para novos aplicativos, você pode usar a função [**SetMenuItemInfo**](/windows/desktop/api/Winuser/nf-winuser-setmenuiteminfoa) ou [**InsertMenuItem**](/windows/desktop/api/Winuser/nf-winuser-insertmenuitema) para definir o sinalizador de tipo de **\_ bitmap MIIM** . Para alterar um item de menu de um item de texto para um item de bitmap, use **SetMenuItemInfo**. Para adicionar um novo item de bitmap a um menu, use a função **InsertMenuItem** .
+Para novos aplicativos, você pode usar a [**função SetMenuItemInfo**](/windows/desktop/api/Winuser/nf-winuser-setmenuiteminfoa) ou [**InsertMenuItem**](/windows/desktop/api/Winuser/nf-winuser-insertmenuitema) para definir o sinalizador de tipo **\_ BITMAP MIIM.** Para alterar um item de menu de um item de texto para um item de bitmap, use **SetMenuItemInfo**. Para adicionar um novo item de bitmap a um menu, use a **função InsertMenuItem.**
 
-Os aplicativos escritos para versões anteriores do sistema podem continuar a usar as funções [**ModifyMenu**](/windows/desktop/api/Winuser/nf-winuser-modifymenua), [**InsertMenu**](/windows/desktop/api/Winuser/nf-winuser-insertmenua)ou [**AppendMenu**](/windows/desktop/api/Winuser/nf-winuser-appendmenua) para definir o sinalizador **de \_ bitmap MF** . Para alterar um item de menu de um item de cadeia de texto para um item de bitmap, use **ModifyMenu**. Para adicionar um novo item de bitmap a um menu, use o sinalizador de **\_ bitmap MF** com a função **InsertMenu** ou **AppendMenu** .
+Os aplicativos escritos para versões anteriores do sistema podem continuar a usar as funções [**ModifyMenu,**](/windows/desktop/api/Winuser/nf-winuser-modifymenua) [**InsertMenu**](/windows/desktop/api/Winuser/nf-winuser-insertmenua)ou [**AppendMenu**](/windows/desktop/api/Winuser/nf-winuser-appendmenua) para definir o **sinalizador MF \_ BITMAP.** Para alterar um item de menu de um item de cadeia de caracteres de texto para um item de bitmap, use **ModifyMenu**. Para adicionar um novo item de bitmap a um menu, use o sinalizador **\_ MF BITMAP** com a função **InsertMenu** ou **AppendMenu.**
 
-### <a name="creating-the-bitmap"></a>Criando o bitmap
+### <a name="creating-the-bitmap"></a>Criando o Bitmap
 
-Quando você define o **sinalizador \_ bitmap MIIM** ou tipo de **\_ bitmap MF** para um item de menu, também deve especificar um identificador para o bitmap que o sistema deve exibir para o item de menu. Você pode fornecer o bitmap como um recurso de bitmap ou criar o bitmap em tempo de execução. Se você usar um recurso de bitmap, poderá usar a função [**LoadBitmap**](/windows/desktop/api/winuser/nf-winuser-loadbitmapa) para carregar o bitmap e obter seu identificador.
+Ao definir o sinalizador de tipo **\_ BITMAP miim** ou **\_ MF BITMAP** para um item de menu, você também deve especificar um identificador para o bitmap que o sistema deve exibir para o item de menu. Você pode fornecer o bitmap como um recurso de bitmap ou criar o bitmap em tempo de executar. Se você usar um recurso de bitmap, poderá usar a [**função LoadBitmap**](/windows/desktop/api/winuser/nf-winuser-loadbitmapa) para carregar o bitmap e obter seu handle.
 
-Para criar o bitmap em tempo de execução, use as funções do Windows Graphics Device Interface (GDI). O GDI fornece várias maneiras de criar um bitmap em tempo de execução, mas os desenvolvedores normalmente usam o seguinte método:
+Para criar o bitmap em tempo de executar, use funções Windows Graphics Device Interface (GDI). A GDI fornece várias maneiras de criar um bitmap em tempo de executar, mas os desenvolvedores normalmente usam o seguinte método:
 
-1.  Use a função [**CreateCompatibleDC**](/windows/desktop/api/wingdi/nf-wingdi-createcompatibledc) para criar um contexto de dispositivo compatível com o contexto do dispositivo usado pela janela principal do aplicativo.
-2.  Use a função [**CreateCompatibleBitmap**](/windows/desktop/api/wingdi/nf-wingdi-createcompatiblebitmap) para criar um bitmap compatível com a janela principal do aplicativo ou use a função [**CreateBitmap**](/windows/desktop/api/wingdi/nf-wingdi-createbitmap) para criar um bitmap monocromático.
-3.  Use a função [**SelectObject**](/windows/desktop/api/wingdi/nf-wingdi-selectobject) para selecionar o bitmap no contexto do dispositivo compatível.
-4.  Use funções de desenho GDI, como [**Ellipse**](/windows/desktop/api/wingdi/nf-wingdi-ellipse) e [**LineTo**](/windows/desktop/api/wingdi/nf-wingdi-lineto), para desenhar uma imagem no bitmap.
+1.  Use a [**função CreateCompatibleDC**](/windows/desktop/api/wingdi/nf-wingdi-createcompatibledc) para criar um contexto de dispositivo compatível com o contexto do dispositivo usado pela janela principal do aplicativo.
+2.  Use a [**função CreateCompatibleBitmap**](/windows/desktop/api/wingdi/nf-wingdi-createcompatiblebitmap) para criar um bitmap compatível com a janela principal do aplicativo ou use a [**função CreateBitmap**](/windows/desktop/api/wingdi/nf-wingdi-createbitmap) para criar um bitmap monocromático.
+3.  Use a [**função SelectObject**](/windows/desktop/api/wingdi/nf-wingdi-selectobject) para selecionar o bitmap no contexto do dispositivo compatível.
+4.  Use funções de desenho GDI, como [**Ellipse**](/windows/desktop/api/wingdi/nf-wingdi-ellipse) e [**LineTo,**](/windows/desktop/api/wingdi/nf-wingdi-lineto)para desenhar uma imagem no bitmap.
 
-Para obter mais informações, consulte [bitmaps](/windows/desktop/gdi/bitmaps).
+Para obter mais informações, consulte [Bitmaps](/windows/desktop/gdi/bitmaps).
 
 ### <a name="adding-lines-and-graphs-to-a-menu"></a>Adicionando linhas e grafos a um menu
 
-O exemplo de código a seguir mostra como criar um menu que contém bitmaps de item de menu. Ele cria dois menus. O primeiro é um menu de gráfico que contém três bitmaps de item de menu: um gráfico de pizza, um gráfico de linhas e um gráfico de barras. O exemplo demonstra como carregar esses bitmaps do arquivo de recursos do aplicativo e, em seguida, usar as funções [**CreatePopupMenu**](/windows/desktop/api/Winuser/nf-winuser-createpopupmenu) e [**AppendMenu**](/windows/desktop/api/Winuser/nf-winuser-appendmenua) para criar os itens de menu e menu.
+O exemplo de código a seguir mostra como criar um menu que contém bitmaps de item de menu. Ele cria dois menus. A primeira é um menu Gráfico que contém três bitmaps de item de menu: um gráfico de pizza, um gráfico de linhas e um gráfico de barras. O exemplo demonstra como carregar esses bitmaps do arquivo de recurso do aplicativo e, em seguida, usar as funções [**CreatePopupMenu**](/windows/desktop/api/Winuser/nf-winuser-createpopupmenu) e [**AppendMenu**](/windows/desktop/api/Winuser/nf-winuser-appendmenua) para criar os itens de menu e menu.
 
-O segundo menu é um menu de linhas. Ele contém bitmaps que mostram os estilos de linha fornecidos pela caneta predefinida no sistema. Os bitmaps de estilo de linha são criados em tempo de execução usando funções GDI.
+O segundo menu é um menu Linhas. Ele contém bitmaps mostrando os estilos de linha fornecidos pela caneta predefinida no sistema. Os bitmaps de estilo de linha são criados em tempo de execução usando funções GDI.
 
-Aqui estão as definições dos recursos de bitmap no arquivo de definição de recurso do aplicativo.
+Aqui estão as definições dos recursos de bitmap no arquivo de definição de recursos do aplicativo.
 
 
 ```
@@ -485,7 +485,7 @@ BAR BITMAP bar.bmp
 
 
 
-Aqui estão as partes relevantes do arquivo de cabeçalho do aplicativo.
+Aqui estão as partes relevantes do arquivo de header do aplicativo.
 
 
 ```
@@ -527,7 +527,7 @@ VOID MakeLineMenu(HWND, HPEN, HBITMAP);
 
 
 
-O exemplo a seguir mostra como os menus e bitmaps de item de menu são criados em um aplicativo.
+O exemplo a seguir mostra como menus e bitmaps de item de menu são criados em um aplicativo.
 
 
 ```
@@ -690,17 +690,17 @@ VOID MakeLineMenu(HWND hwnd, HPEN phpen, HBITMAP phbmp)
 
 
 
-### <a name="example-of-menu-item-bitmaps"></a>Exemplo de bitmaps de Menu-Item
+### <a name="example-of-menu-item-bitmaps"></a>Exemplo de Menu-Item Bitmaps
 
-O exemplo neste tópico cria dois menus, cada um contendo vários itens de menu de bitmap. Para cada menu, o aplicativo adiciona um nome de menu correspondente à barra de menus da janela principal.
+O exemplo neste tópico cria dois menus, cada um contendo vários itens de menu bitmap. Para cada menu, o aplicativo adiciona um nome de menu correspondente à barra de menus da janela principal.
 
-O primeiro menu contém itens de menu mostrando cada um dos três tipos de gráfico: pizza, linha e barra. Os bitmaps desses itens de menu são definidos como recursos e carregados usando a função [**LoadBitmap**](/windows/desktop/api/winuser/nf-winuser-loadbitmapa) . Associado a esse menu há um nome de menu "gráfico" na barra de menus.
+O primeiro menu contém itens de menu mostrando cada um dos três tipos de gráfico: pizza, linha e barra. Os bitmaps para esses itens de menu são definidos como recursos e carregados usando a [**função LoadBitmap.**](/windows/desktop/api/winuser/nf-winuser-loadbitmapa) Associado a esse menu, há um nome de menu "Gráfico" na barra de menus.
 
-O segundo menu contém itens de menu mostrando cada um dos cinco estilos de linha usados com a função [**CreatePen**](/windows/desktop/api/wingdi/nf-wingdi-createpen) : **PS \_ Solid**, **PS \_ Dash**, **PS \_ dot**, **PS \_ travessão ponto** e **PS \_ travessão ponto ponto**. O aplicativo cria os bitmaps para esses itens de menu em tempo de execução usando funções de desenho GDI. Associado a esse menu há um nome de menu de **linhas** na barra de menus.
+O segundo menu contém itens de menu mostrando cada um dos cinco estilos de linha usados com a função [**CreatePen:**](/windows/desktop/api/wingdi/nf-wingdi-createpen) **PS \_ SOLID,** **PS \_ DASH,** **PS \_ DOT,** **PS \_ DASHDOT** e **PS \_ DASHDOTDOT.** O aplicativo cria os bitmaps para esses itens de menu em tempo de executar usando funções de desenho GDI. Associado a esse menu, há um **nome de** menu Linhas na barra de menus.
 
-Definido no procedimento de janela do aplicativo são duas matrizes estáticas de identificadores de bitmap. Uma matriz contém os identificadores dos três bitmaps usados para o menu de **gráfico** . O outro contém os identificadores dos cinco bitmaps usados para o menu **linhas** . Ao processar a mensagem de [**\_ criação do WM**](/windows/desktop/winmsg/wm-create) , o procedimento de janela carrega os bitmaps de gráfico, cria os bitmaps de linha e, em seguida, adiciona os itens de menu correspondentes. Ao processar a mensagem de [**\_ destruição do WM**](/windows/desktop/winmsg/wm-destroy) , o procedimento de janela exclui todos os bitmaps.
+Definidas no procedimento de janela do aplicativo são duas matrizes estáticas de alças de bitmap. Uma matriz contém os alças dos três bitmaps usados para **o** menu Gráfico. O outro contém os alças dos cinco bitmaps usados para **o** menu Linhas. Ao processar a mensagem [**WM \_ CREATE,**](/windows/desktop/winmsg/wm-create) o procedimento de janela carrega os bitmaps do gráfico, cria os bitmaps de linha e adiciona os itens de menu correspondentes. Ao processar a mensagem [**WM \_ DESTROY,**](/windows/desktop/winmsg/wm-destroy) o procedimento de janela exclui todos os bitmaps.
 
-A seguir estão as partes relevantes do arquivo de cabeçalho do aplicativo.
+A seguir estão as partes relevantes do arquivo de header do aplicativo.
 
 
 ```
@@ -794,7 +794,7 @@ LRESULT CALLBACK MainWindowProc(
 
 
 
-A função LoadChartBitmaps definida pelo aplicativo carrega os recursos de bitmap para o menu do gráfico chamando a função [**LoadBitmap**](/windows/desktop/api/winuser/nf-winuser-loadbitmapa) , da seguinte maneira.
+A função LoadChartBitmaps definida pelo aplicativo carrega os recursos de bitmap para o menu do gráfico chamando a [**função LoadBitmap,**](/windows/desktop/api/winuser/nf-winuser-loadbitmapa) da seguinte forma.
 
 
 ```
@@ -808,7 +808,7 @@ VOID WINAPI LoadChartBitmaps(HBITMAP *paHbm)
 
 
 
-A função CreateLineBitmaps definida pelo aplicativo cria os bitmaps para o menu linhas usando funções de desenho GDI. A função cria um DC (contexto de dispositivo de memória) com as mesmas propriedades que o DC da janela da área de trabalho. Para cada estilo de linha, a função cria um bitmap, seleciona-o no controlador de domínio de memória e o desenha.
+A função CreateLineBitmaps definida pelo aplicativo cria os bitmaps para o menu Linhas usando funções de desenho GDI. A função cria um DC (contexto de dispositivo de memória) com as mesmas propriedades que o DC da janela da área de trabalho. Para cada estilo de linha, a função cria um bitmap, seleciona-o no DC de memória e desenha nele.
 
 
 ```
@@ -876,7 +876,7 @@ VOID WINAPI CreateLineBitmaps(HBITMAP *paHbm)
 
 
 
-A função AddBitmapMenu definida pelo aplicativo cria um menu e adiciona o número especificado de itens de menu de bitmap a ele. Em seguida, ele adiciona um nome de menu correspondente à barra de menus da janela especificada.
+A função AddBitmapMenu definida pelo aplicativo cria um menu e adiciona o número especificado de itens de menu bitmap a ele. Em seguida, ele adiciona um nome de menu correspondente à barra de menus da janela especificada.
 
 
 ```
@@ -915,26 +915,26 @@ VOID WINAPI AddBitmapMenu(
 
 
 
-## <a name="creating-owner-drawn-menu-items"></a>Criando Owner-Drawn itens de menu
+## <a name="creating-owner-drawn-menu-items"></a>Criando Owner-Drawn de menu
 
-Se você precisar de controle total sobre a aparência de um item de menu, poderá usar um item de menu desenhado pelo proprietário em seu aplicativo. Esta seção descreve as etapas envolvidas na criação e uso de um item de menu desenhado pelo proprietário.
+Se você precisar de controle total sobre a aparência de um item de menu, poderá usar um item de menu desenhado pelo proprietário em seu aplicativo. Esta seção descreve as etapas envolvidas na criação e no uso de um item de menu desenhado pelo proprietário.
 
--   [Definindo o sinalizador de Owner-Drawn](#setting-the-owner-drawn-flag)
--   [Menus desenhados pelo proprietário e a mensagem do WM \_ MEASUREITEM](/windows)
--   [Menus desenhados pelo proprietário e a mensagem do WM \_ DRAWITEM](/windows)
--   [Menus desenhados pelo proprietário e a mensagem do WM \_ MENUCHAR](/windows)
--   [Definindo fontes para Menu-Item cadeias de caracteres de texto](#setting-fonts-for-menu-item-text-strings)
--   [Exemplo de itens de menu Owner-Drawn](#example-of-owner-drawn-menu-items)
+-   [Definindo o sinalizador Owner-Drawn de dados](#setting-the-owner-drawn-flag)
+-   [Menus desenhados pelo proprietário e a mensagem WM \_ MEASUREITEM](/windows)
+-   [Menus desenhados pelo proprietário e a mensagem WM \_ DRAWITEM](/windows)
+-   [Menus desenhados pelo proprietário e a mensagem \_ WM MENUCHAR](/windows)
+-   [Definindo fontes para cadeias Menu-Item de texto](#setting-fonts-for-menu-item-text-strings)
+-   [Exemplo de itens Owner-Drawn menu](#example-of-owner-drawn-menu-items)
 
-### <a name="setting-the-owner-drawn-flag"></a>Definindo o sinalizador de Owner-Drawn
+### <a name="setting-the-owner-drawn-flag"></a>Definindo o sinalizador Owner-Drawn de dados
 
-Você não pode definir um item de menu desenhado pelo proprietário no arquivo de definição de recurso de seu aplicativo. Em vez disso, você deve criar um novo item de menu ou modificar um existente usando o sinalizador de menu **MFT \_ OWNERDRAW** .
+Não é possível definir um item de menu desenhado pelo proprietário no arquivo de definição de recursos do aplicativo. Em vez disso, você deve criar um novo item de menu ou modificar um existente usando o sinalizador de menu **MFT \_ OWNERDRAW.**
 
-Você pode usar a função [**InsertMenuItem**](/windows/desktop/api/Winuser/nf-winuser-insertmenuitema) ou [**SetMenuItemInfo**](/windows/desktop/api/Winuser/nf-winuser-setmenuiteminfoa) para especificar um item de menu desenhado pelo proprietário. Use **InsertMenuItem** para inserir um novo item de menu na posição especificada em uma barra de menus ou em um menu. Use **SetMenuItemInfo** para alterar o conteúdo de um menu.
+Você pode usar a [**função InsertMenuItem**](/windows/desktop/api/Winuser/nf-winuser-insertmenuitema) ou [**SetMenuItemInfo**](/windows/desktop/api/Winuser/nf-winuser-setmenuiteminfoa) para especificar um item de menu desenhado pelo proprietário. Use **InsertMenuItem** para inserir um novo item de menu na posição especificada em uma barra de menus ou menu. Use **SetMenuItemInfo** para alterar o conteúdo de um menu.
 
-Ao chamar essas duas funções, você deve especificar um ponteiro para uma estrutura [**MENUITEMINFO**](/windows/win32/api/winuser/ns-winuser-menuiteminfoa) , que especifica as propriedades do novo item de menu ou as propriedades que você deseja alterar para um item de menu existente. Para transformar um item em um item desenhado pelo proprietário, especifique o valor de **\_ ftype MIIM** para o membro **fMask** e o valor de **\_ OWNERDRAW de MFT** para o membro **ftype** .
+Ao chamar essas duas funções, você deve especificar um ponteiro para uma estrutura [**MENUITEMINFO,**](/windows/win32/api/winuser/ns-winuser-menuiteminfoa) que especifica as propriedades do novo item de menu ou as propriedades que você deseja alterar para um item de menu existente. Para tornar um item um item desenhado pelo proprietário, especifique o valor **MIIM \_ FTYPE** para o membro **fMask** e o **valor \_ MFT OWNERDRAW** para o **membro fType.**
 
-Ao definir os membros apropriados da estrutura [**MENUITEMINFO**](/windows/win32/api/winuser/ns-winuser-menuiteminfoa) , você pode associar um valor definido pelo aplicativo, que é chamado de **dados de item**, com cada item de menu. Para fazer isso, especifique o valor de **\_ dados MIIM** para o membro **fMask** e o valor definido pelo aplicativo para o membro **dwItemData** .
+Ao definir os membros apropriados da estrutura [**MENUITEMINFO,**](/windows/win32/api/winuser/ns-winuser-menuiteminfoa) você pode associar um valor definido pelo aplicativo, que é chamado de dados de **item**, a cada item de menu. Para fazer isso, especifique o **valor MIIM \_ DATA** para o membro **fMask** e o valor definido pelo aplicativo para o **membro dwItemData.**
 
 Você pode usar dados de item com qualquer tipo de item de menu, mas é particularmente útil para itens desenhados pelo proprietário. Por exemplo, suponha que uma estrutura contenha informações usadas para desenhar um item de menu. Um aplicativo pode usar os dados do item para um item de menu para armazenar um ponteiro para a estrutura. Os dados do item são enviados para a janela do proprietário do menu com as mensagens do [**WM \_ MEASUREITEM**](../controls/wm-measureitem.md) e do [**WM \_ DRAWITEM**](../controls/wm-drawitem.md) . Para recuperar os dados do item para um menu a qualquer momento, use a função [**GetMenuItemInfo**](/windows/desktop/api/Winuser/nf-winuser-getmenuiteminfoa) .
 
@@ -995,7 +995,7 @@ As constantes a seguir correspondem aos possíveis valores de retorno da mensage
 
 
 
- 
+ 
 
 ### <a name="setting-fonts-for-menu-item-text-strings"></a>Definindo fontes para Menu-Item cadeias de caracteres de texto
 
@@ -1277,7 +1277,7 @@ O procedimento de janela processa a mensagem do [**WM \_ DRAWITEM**](../controls
 
 O procedimento de janela processa a mensagem de [**\_ destruição do WM**](/windows/desktop/winmsg/wm-destroy) para destruir fontes e liberar memória. O aplicativo exclui a fonte e libera a estrutura MYITEM definida pelo aplicativo para cada item de menu.
 
-A seguir estão as partes relevantes do arquivo de cabeçalho do aplicativo.
+A seguir estão as partes relevantes do arquivo de header do aplicativo.
 
 
 ```
@@ -1528,61 +1528,61 @@ O sistema fornece um bitmap de marca de seleção padrão para exibição ao lad
 
 -   [Criando bitmaps de marca de seleção personalizados](#creating-custom-check-mark-bitmaps)
 -   [Associando bitmaps a um item de menu](#associating-bitmaps-with-a-menu-item)
--   [Definindo o atributo de marca de seleção](#setting-the-check-mark-attribute)
+-   [Definindo o atributo check-mark](#setting-the-check-mark-attribute)
 -   [Simulando caixas de seleção em um menu](#simulating-check-boxes-in-a-menu)
 -   [Exemplo de como usar bitmaps de marca de seleção personalizados](#example-of-using-custom-check-mark-bitmaps)
 
 ### <a name="creating-custom-check-mark-bitmaps"></a>Criando bitmaps de marca de seleção personalizados
 
-Um bitmap de marca de seleção personalizado deve ter o mesmo tamanho que o bitmap de marca de seleção padrão. Você pode recuperar o tamanho da marca de seleção padrão do bitmap chamando a função [**GetSystemMetrics**](/windows/desktop/api/winuser/nf-winuser-getsystemmetrics) . A palavra de ordem inferior do valor de retorno da função especifica a largura; a palavra de ordem superior especifica a altura.
+Um bitmap de marca de seleção personalizado deve ter o mesmo tamanho que o bitmap de marca de seleção padrão. Você pode recuperar o tamanho da marca de seleção padrão do bitmap chamando a [**função GetSystemMetrics.**](/windows/desktop/api/winuser/nf-winuser-getsystemmetrics) A palavra de ordem baixa do valor de retorno dessa função especifica a largura; a palavra de ordem alta especifica a altura.
 
-Você pode usar recursos de bitmap para fornecer bitmaps de marca de seleção. No entanto, como o tamanho de bitmap necessário varia dependendo do tipo de exibição, talvez seja necessário redimensionar o bitmap em tempo de execução usando a função [**StretchBlt**](/windows/desktop/api/wingdi/nf-wingdi-stretchblt) . Dependendo do bitmap, a distorção causada pelo dimensionamento pode produzir resultados inaceitáveis.
+Você pode usar recursos de bitmap para fornecer bitmaps de marca de seleção. No entanto, como o tamanho do bitmap necessário varia dependendo do tipo de exibição, talvez seja necessário reestilizar o bitmap em tempo de operação usando a [**função StretchBlt.**](/windows/desktop/api/wingdi/nf-wingdi-stretchblt) Dependendo do bitmap, a distorção causada peloizing pode produzir resultados inaceitáveis.
 
-Em vez de usar um recurso de bitmap, você pode criar um bitmap em tempo de execução usando funções GDI.
+Em vez de usar um recurso de bitmap, você pode criar um bitmap em tempo de executar usando funções GDI.
 
-**Para criar um bitmap em tempo de execução**
+**Para criar um bitmap em tempo de executar**
 
-1.  Use a função [**CreateCompatibleDC**](/windows/desktop/api/wingdi/nf-wingdi-createcompatibledc) para criar um contexto de dispositivo compatível com aquele usado pela janela principal do aplicativo.
+1.  Use a [**função CreateCompatibleDC**](/windows/desktop/api/wingdi/nf-wingdi-createcompatibledc) para criar um contexto de dispositivo compatível com aquele usado pela janela principal do aplicativo.
 
-    O parâmetro *HDC* da função pode especificar **NULL** ou o valor de retorno da função. [**CreateCompatibleDC**](/windows/desktop/api/wingdi/nf-wingdi-createcompatibledc) retorna um identificador para o contexto do dispositivo compatível.
+    O parâmetro *hdc* da função pode especificar **NULL** ou o valor de retorno da função. [**CreateCompatibleDC retorna**](/windows/desktop/api/wingdi/nf-wingdi-createcompatibledc) um handle para o contexto do dispositivo compatível.
 
-2.  Use a função [**CreateCompatibleBitmap**](/windows/desktop/api/wingdi/nf-wingdi-createcompatiblebitmap) para criar um bitmap compatível com a janela principal do aplicativo.
+2.  Use a [**função CreateCompatibleBitmap**](/windows/desktop/api/wingdi/nf-wingdi-createcompatiblebitmap) para criar um bitmap compatível com a janela principal do aplicativo.
 
-    Os parâmetros *nWidth* e *nHeight* da função definem o tamanho do bitmap; Eles devem especificar as informações de largura e altura retornadas pela função [**GetSystemMetrics**](/windows/desktop/api/winuser/nf-winuser-getsystemmetrics) .
+    Os parâmetros *nWidth* e *nHeight* dessa função definirão o tamanho do bitmap; eles devem especificar as informações de largura e altura retornadas pela [**função GetSystemMetrics.**](/windows/desktop/api/winuser/nf-winuser-getsystemmetrics)
 
     > [!Note]  
-    > Você também pode usar a função [**CreateBitmap**](/windows/desktop/api/wingdi/nf-wingdi-createbitmap) para criar um bitmap monocromático.
+    > Você também pode usar a [**função CreateBitmap**](/windows/desktop/api/wingdi/nf-wingdi-createbitmap) para criar um bitmap monocromático.
 
-     
+     
 
-3.  Use a função [**SelectObject**](/windows/desktop/api/wingdi/nf-wingdi-selectobject) para selecionar o bitmap no contexto do dispositivo compatível.
-4.  Use funções de desenho GDI, como [**Ellipse**](/windows/desktop/api/wingdi/nf-wingdi-ellipse) e [**LineTo**](/windows/desktop/api/wingdi/nf-wingdi-lineto), para desenhar uma imagem no bitmap ou usar funções como [**BitBlt**](/windows/desktop/api/wingdi/nf-wingdi-bitblt) e [**StretchBlt**](/windows/desktop/api/wingdi/nf-wingdi-stretchblt) para copiar uma imagem no bitmap.
+3.  Use a [**função SelectObject**](/windows/desktop/api/wingdi/nf-wingdi-selectobject) para selecionar o bitmap no contexto do dispositivo compatível.
+4.  Use funções de desenho GDI, como [**Ellipse**](/windows/desktop/api/wingdi/nf-wingdi-ellipse) e [**LineTo,**](/windows/desktop/api/wingdi/nf-wingdi-lineto)para desenhar uma imagem no bitmap ou usar funções como [**BitBlt**](/windows/desktop/api/wingdi/nf-wingdi-bitblt) e [**StretchBlt**](/windows/desktop/api/wingdi/nf-wingdi-stretchblt) para copiar uma imagem no bitmap.
 
-Para obter mais informações, consulte [bitmaps](/windows/desktop/gdi/bitmaps).
+Para obter mais informações, consulte [Bitmaps](/windows/desktop/gdi/bitmaps).
 
 ### <a name="associating-bitmaps-with-a-menu-item"></a>Associando bitmaps a um item de menu
 
-Você associa um par de bitmaps de marca de seleção a um item de menu passando os identificadores dos bitmaps para a função [**SetMenuItemBitmaps**](/windows/desktop/api/Winuser/nf-winuser-setmenuitembitmaps) . O parâmetro *hBitmapUnchecked* identifica o bitmap limpo e o parâmetro *hBitmapChecked* identifica o bitmap selecionado. Se você quiser remover uma ou ambas as marcas de seleção de um item de menu, poderá definir o parâmetro *hBitmapUnchecked* ou *hBitmapChecked* , ou ambos, como **NULL**.
+Você associa um par de bitmaps de marca de seleção a um item de menu passando os alças dos bitmaps para a [**função SetMenuItemBitmaps.**](/windows/desktop/api/Winuser/nf-winuser-setmenuitembitmaps) O *parâmetro hBitmapUnchecked* identifica o bitmap claro e o parâmetro *hBitmapChecked* identifica o bitmap selecionado. Se você quiser remover uma ou ambas as marcas de seleção de um item de menu, poderá definir o parâmetro *hBitmapUnchecked* ou *hBitmapChecked* ou ambos como **NULL.**
 
-### <a name="setting-the-check-mark-attribute"></a>Definindo o atributo de marca de seleção
+### <a name="setting-the-check-mark-attribute"></a>Definindo o atributo check-mark
 
-A função [**CheckMenuItem**](/windows/desktop/api/Winuser/nf-winuser-checkmenuitem) define o atributo de marca de seleção de um item de menu como selecionado ou desmarcado. Você pode especificar o **valor \_ selecionado MF** para definir o atributo de marca de seleção como selecionado e o valor de **MF \_ desmarcado** para defini-lo como Clear.
+A [**função CheckMenuItem**](/windows/desktop/api/Winuser/nf-winuser-checkmenuitem) define o atributo de marca de seleção de um item de menu como selecionado ou limpo. Você pode especificar o **valor MF \_ CHECKED** para definir o atributo de marca de seleção como selecionado e o **valor MF \_ UNCHECKED** para defini-lo como desmarcado.
 
-Você também pode definir o estado de verificação de um item de menu usando a função [**SetMenuItemInfo**](/windows/desktop/api/Winuser/nf-winuser-setmenuiteminfoa) .
+Você também pode definir o estado de verificação de um item de menu usando a [**função SetMenuItemInfo.**](/windows/desktop/api/Winuser/nf-winuser-setmenuiteminfoa)
 
-Às vezes, um grupo de itens de menu representa um conjunto de opções mutuamente exclusivas. Usando a função [**CheckMenuRadioItem**](/windows/desktop/api/Winuser/nf-winuser-checkmenuradioitem) , você pode verificar um item de menu enquanto remove simultaneamente a marca de seleção de todos os outros itens de menu no grupo.
+Às vezes, um grupo de itens de menu representa um conjunto de opções mutuamente exclusivas. Usando a [**função CheckMenuRadioItem,**](/windows/desktop/api/Winuser/nf-winuser-checkmenuradioitem) você pode verificar um item de menu ao remover simultaneamente a marca de seleção de todos os outros itens de menu no grupo.
 
 ### <a name="simulating-check-boxes-in-a-menu"></a>Simulando caixas de seleção em um menu
 
-Este tópico contém um exemplo que mostra como simular caixas de seleção em um menu. O exemplo contém um menu de caracteres cujos itens permitem que o usuário defina os atributos negrito, itálico e sublinhado da fonte atual. Quando um atributo de fonte está em vigor, uma marca de seleção é exibida na caixa de seleção ao lado do item de menu correspondente; caso contrário, uma caixa de seleção vazia será exibida ao lado do item.
+Este tópico contém um exemplo que mostra como simular caixas de seleção em um menu. O exemplo contém um menu Caractere cujos itens permitem ao usuário definir os atributos em negrito, itálico e sublinhado da fonte atual. Quando um atributo de fonte está em vigor, uma marca de seleção é exibida na caixa de seleção ao lado do item de menu correspondente; caso contrário, uma caixa de seleção vazia será exibida ao lado do item.
 
-O exemplo substitui o bitmap de marca de seleção padrão por dois bitmaps: um bitmap com uma caixa de seleção selecionada e o bitmap com uma caixa vazia. O bitmap da caixa de seleção selecionada é exibido ao lado do item de menu negrito, itálico ou sublinhado quando o atributo de marca de seleção do item é definido como **MF \_ marcado**. O bitmap da caixa de seleção limpar ou vazio é exibido quando o atributo de marca de seleção é definido como **MF \_ desmarcado**.
+O exemplo substitui o bitmap de marca de seleção padrão por dois bitmaps: um bitmap com uma caixa de seleção selecionada e o bitmap por uma caixa vazia. O bitmap da caixa de seleção selecionado é exibido ao lado do item de menu Negrito, Itálico ou Sublinhado quando o atributo de marca de seleção do item é definido como **MF \_ CHECKED.** O bitmap de caixa de seleção desmarcado ou vazio é exibido quando o atributo de marca de seleção é definido como **MF \_ UNCHECKED**.
 
-O sistema fornece um bitmap predefinido que contém as imagens usadas para caixas de seleção e botões de opção. O exemplo isola as caixas de seleção selecionadas e vazias, as copia para dois bitmaps separados e, em seguida, as usa como os bitmaps selecionados e limpos para itens no menu de **caracteres** .
+O sistema fornece um bitmap predefinido que contém as imagens usadas para caixas de seleção e botões de rádio. O exemplo isola as caixas de seleção selecionadas e vazias, copia-as para dois bitmaps separados e, em seguida, os usa como os bitmaps selecionados e limpos para itens no **menu** Caractere.
 
-Para recuperar um identificador para o bitmap da caixa de seleção definido pelo sistema, o exemplo chama a função [**LoadBitmap**](/windows/desktop/api/winuser/nf-winuser-loadbitmapa) , especificando **NULL** como o parâmetro *HINSTANCE* e as **caixas de \_ seleção OBM** como o parâmetro *lpBitmapName* . Como as imagens no bitmap têm o mesmo tamanho, o exemplo pode isolá-las dividindo a largura e a altura do bitmap pelo número de imagens em suas linhas e colunas.
+Para recuperar um handle para o bitmap da caixa de seleção definido pelo sistema, o exemplo chama a função [**LoadBitmap,**](/windows/desktop/api/winuser/nf-winuser-loadbitmapa) especificando **NULL** como o parâmetro *hInstance* e **OBM \_ CHECKBOXES** como o parâmetro *lpBitmapName.* Como as imagens no bitmap têm o mesmo tamanho, o exemplo pode isolá-las dividindo a largura e a altura do bitmap pelo número de imagens em suas linhas e colunas.
 
-A seguinte parte de um arquivo de definição de recurso mostra como os itens de menu no menu de **caracteres** são definidos. Observe que, inicialmente, nenhum atributo de fonte está em vigor, portanto, os atributos de marca de seleção para o item **regular** são definidos como selecionado e, por padrão, o atributo de marca de seleção dos itens restantes é definido como Clear.
+A parte a seguir de um arquivo de definição de recurso mostra como os itens de menu **no** menu Caractere são definidos. Observe que nenhum atributo de fonte está em vigor inicialmente, portanto, o atributo de marca de seleção para o item **Regular** é definido como selecionado e, por padrão, o atributo de marca de seleção dos itens restantes está definido como limpo.
 
 
 ```
@@ -1603,7 +1603,7 @@ END
 
 
 
-Aqui estão os conteúdos relevantes do arquivo de cabeçalho do aplicativo.
+Aqui estão os conteúdos relevantes do arquivo de header do aplicativo.
 
 
 ```
@@ -1632,7 +1632,7 @@ BYTE CheckOrUncheckMenuItem(BYTE, HMENU);
 
 
 
-O exemplo a seguir mostra as partes do procedimento de janela que criam os bitmaps de marca de seleção; definir o atributo de marca de seleção dos itens de menu **negrito**, **itálico** e **sublinhado** ; e destrua os bitmaps de marca de seleção.
+O exemplo a seguir mostra as partes do procedimento de janela que criam os bitmaps de marca de seleção; definir o atributo de marca de seleção dos itens de menu **Negrito,** **Itálico** e **Sublinhado;** e destruir bitmaps de marca de seleção.
 
 
 ```
@@ -1906,25 +1906,25 @@ BYTE CheckOrUncheckMenuItem(BYTE bMenuItemID, HMENU hmenu)
 
 ### <a name="example-of-using-custom-check-mark-bitmaps"></a>Exemplo de como usar bitmaps de marca de seleção personalizados
 
-O exemplo neste tópico atribui bitmaps de marca de seleção personalizados a itens de menu em dois menus. Os itens de menu no primeiro menu especificam atributos de caractere: negrito, itálico e sublinhado. Cada item de menu pode ser selecionado ou limpo. Para esses itens de menu, o exemplo usa bitmaps de marca de seleção que se assemelham aos Estados selecionado e limpo de um controle de caixa de seleção.
+O exemplo neste tópico atribui bitmaps de marca de seleção personalizados a itens de menu em dois menus. Os itens de menu no primeiro menu especificam atributos de caractere: negrito, itálico e sublinhado. Cada item de menu pode ser selecionado ou limpo. Para esses itens de menu, o exemplo usa bitmaps de marca de seleção que se assemelham aos estados selecionados e limpos de um controle de caixa de seleção.
 
-Os itens de menu no segundo menu especificam as configurações de alinhamento de parágrafo: esquerda, centralizado e direita. Somente um desses itens de menu é selecionado a qualquer momento. Para esses itens de menu, o exemplo usa bitmaps de marca de seleção que se assemelham aos Estados selecionado e claro de um controle de botão de opção.
+Os itens de menu no segundo menu especificam as configurações de alinhamento de parágrafo: esquerda, centralizada e direita. Somente um desses itens de menu é selecionado a qualquer momento. Para esses itens de menu, o exemplo usa bitmaps de marca de seleção que se assemelham aos estados selecionados e claros de um controle de botão de opção.
 
-O procedimento de janela processa a mensagem do [**WM \_ Create**](/windows/desktop/winmsg/wm-create) chamando a função OnCreate definida pelo aplicativo. `OnCreate` cria os quatro bitmaps de marca de seleção e os atribui aos itens de menu apropriados usando a função [**SetMenuItemBitmaps**](/windows/desktop/api/Winuser/nf-winuser-setmenuitembitmaps) .
+O procedimento de janela [**processa a mensagem WM \_ CREATE**](/windows/desktop/winmsg/wm-create) chamando a função OnCreate definida pelo aplicativo. `OnCreate`cria os quatro bitmaps de marca de seleção e os atribui a seus itens de menu apropriados usando a [**função SetMenuItemBitmaps.**](/windows/desktop/api/Winuser/nf-winuser-setmenuitembitmaps)
 
-Para criar cada bitmap, OnCreate chama a função CreateMenuBitmaps definida pelo aplicativo, especificando um ponteiro para uma função de desenho específica de bitmap. O CreateMenuBitmaps cria um bitmap monocromático do tamanho necessário, seleciona-o em um contexto de dispositivo de memória e apaga o plano de fundo. Em seguida, ele chama a função de desenho especificada para preencher o primeiro plano.
+Para criar cada bitmap, OnCreate chama a função CreateMenuBitmaps definida pelo aplicativo, especificando um ponteiro para uma função de desenho específica do bitmap. CreateMenuBitmaps cria um bitmap monocromático do tamanho necessário, seleciona-o em um contexto de dispositivo de memória e apaga a tela de fundo. Em seguida, ele chama a função de desenho especificada para preencher o primeiro plano.
 
-As quatro funções de desenho definidas pelo aplicativo são DrawCheck, DrawUncheck, **DrawRadioCheck** e DrawRadioUncheck. Eles desenham um retângulo com um X, um retângulo vazio, uma elipse contendo uma elipse preenchida menor e uma elipse vazia, respectivamente.
+As quatro funções de desenho definidas pelo aplicativo são DrawCheck, DrawUncheck, **DrawRadioCheck** e DrawRadioUncheck. Eles desenham um retângulo com um X, um retângulo vazio, uma elipse que contém uma elipse preenchida menor e uma elipse vazia, respectivamente.
 
-O procedimento de janela processa a mensagem do [**WM \_ Destroy**](/windows/desktop/winmsg/wm-destroy) excluindo os bitmaps de marca de seleção. Ele recupera cada identificador de bitmap usando a função [**GetMenuItemInfo**](/windows/desktop/api/Winuser/nf-winuser-getmenuiteminfoa) e, em seguida, passa um identificador para a função.
+O procedimento de janela processa [**a mensagem WM \_ DESTROY**](/windows/desktop/winmsg/wm-destroy) excluindo os bitmaps de marca de seleção. Ele recupera cada alça de bitmap usando a [**função GetMenuItemInfo**](/windows/desktop/api/Winuser/nf-winuser-getmenuiteminfoa) e, em seguida, passa um alça para a função .
 
-Quando o usuário escolhe um item de menu, uma mensagem de [**\_ comando do WM**](wm-command.md) é enviada para a janela do proprietário. Para itens de menu no menu de **caracteres** , o procedimento de janela chama a função CheckCharacterItem definida pelo aplicativo. Para itens no menu de **parágrafo** , o procedimento de janela chama a função CheckParagraphItem definida pelo aplicativo.
+Quando o usuário escolhe um item de menu, uma mensagem [**WM \_ COMMAND**](wm-command.md) é enviada para a janela do proprietário. Para itens de menu no menu **Caractere,** o procedimento de janela chama a função CheckCharacterItem definida pelo aplicativo. Para itens no menu **Parágrafo,** o procedimento de janela chama a função CheckParagraphItem definida pelo aplicativo.
 
-Cada item no menu de **caracteres** pode ser selecionado e limpo de forma independente. Portanto, CheckCharacterItem simplesmente alterna o estado de verificação do item de menu especificado. Primeiro, a função chama a função [**GetMenuItemInfo**](/windows/desktop/api/Winuser/nf-winuser-getmenuiteminfoa) para obter o estado do item de menu atual. Em seguida, ele alterna o sinalizador de estado **\_ verificado do MFS** e define o novo estado chamando a função [**SetMenuItemInfo**](/windows/desktop/api/Winuser/nf-winuser-setmenuiteminfoa) .
+Cada item no menu **Caractere** pode ser selecionado e limpo independentemente. Portanto, CheckCharacterItem simplesmente alterna o estado de verificação do item de menu especificado. Primeiro, a função chama a [**função GetMenuItemInfo**](/windows/desktop/api/Winuser/nf-winuser-getmenuiteminfoa) para obter o estado do item de menu atual. Em seguida, ele alterna o sinalizador **de estado \_ MFS CHECKED** e define o novo estado chamando a função [**SetMenuItemInfo.**](/windows/desktop/api/Winuser/nf-winuser-setmenuiteminfoa)
 
-Ao contrário dos atributos de caractere, somente um alinhamento de parágrafo pode ser selecionado de cada vez. Portanto, CheckParagraphItem verifica o item de menu especificado e remove a marca de seleção de todos os outros itens no menu. Para fazer isso, ele chama a função [**CheckMenuRadioItem**](/windows/desktop/api/Winuser/nf-winuser-checkmenuradioitem) .
+Ao contrário dos atributos de caractere, apenas um alinhamento de parágrafo pode ser selecionado por vez. Portanto, CheckParagraphItem verifica o item de menu especificado e remove a marca de seleção de todos os outros itens no menu. Para fazer isso, ele chama a [**função CheckMenuRadioItem.**](/windows/desktop/api/Winuser/nf-winuser-checkmenuradioitem)
 
-A seguir estão as partes relevantes do arquivo de cabeçalho do aplicativo.
+A seguir estão as partes relevantes do arquivo de header do aplicativo.
 
 
 ```
@@ -2206,6 +2206,6 @@ VOID WINAPI OnDestroy(HWND hwnd)
 
 
 
- 
+ 
 
- 
+ 

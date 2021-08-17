@@ -40,11 +40,11 @@ Este tópico inclui as seções a seguir.
 
  
 
-Para obter requisitos adicionais, consulte o arquivo Leiame incluído no exemplo.
+Para obter requisitos adicionais, consulte o arquivo Leiame incluído com o exemplo.
 
 ## <a name="downloading-the-sample"></a>Baixando o exemplo
 
-| Location      | URL do caminho                                                                                             |
+| Localização      | URL do caminho                                                                                             |
 |---------------|------------------------------------------------------------------------------------------------------|
 | GitHub  | [Exemplo de NameSpaceTreeControl](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/winui/shell/appplatform/namespacetreecontrol) |
 

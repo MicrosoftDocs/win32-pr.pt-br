@@ -1,11 +1,11 @@
 ---
-title: atributo ms-COM-PartitionSetLink
-description: Um link usado para associar uma partição COM+ a um objeto de partição do COM+.
+title: Atributo ms-COM-PartitionSetLink
+description: Um link usado para associar uma Partição COM+ a um objeto PARTITIONSet COM+.
 ms.assetid: b36a9a3a-987c-41ff-9743-d0c806eb7ae9
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD do atributo ms-COM-PartitionSetLink
-- Esquema de AD do atributo msCOM-PartitionSetLink
+- Esquema do AD do atributo ms-COM-PartitionSetLink
+- Esquema do AD do atributo msCOM-PartitionSetLink
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 52e2d6fa4046ac95d0fcbde6dea999e1ef2968ec
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: ddc17fb3e1f6ff80b5834d1d96f2758bd56bf3a6941890cd3f184d7229ece1c1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105753654"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118961105"
 ---
-# <a name="ms-com-partitionsetlink-attribute"></a>atributo ms-COM-PartitionSetLink
+# <a name="ms-com-partitionsetlink-attribute"></a>Atributo ms-COM-PartitionSetLink
 
-Um link usado para associar uma partição COM+ a um objeto de partição do COM+.
+Um link usado para associar uma Partição COM+ a um objeto PARTITIONSet COM+.
 
 
 
 | Entrada | Valor |
 |-------------------|-----------------------------------------|
-| CN                | MS-COM-PartitionSetLink                 |
-| LDAP-Display-Name | msCOM-PartitionSetLink                  |
+| CN                | ms-COM-PartitionSetLink                 |
+| Ldap-Display-Name | msCOM-PartitionSetLink                  |
 | Tamanho              | \-                                      |
 | Privilégio de atualização  | Esse valor é definido pelo sistema.        |
 | Frequência de atualização  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.1424                 |
-| System-ID-GUID    | 67f121dc-7d02-4c7d-82f5-9ad4c950ac34    |
-| Syntax            | [**Objeto (DS-DN)**](s-object-ds-dn.md) |
+| System-Id-Guid    | 67f121dc-7d02-4c7d-82f5-9ad4c950ac34    |
+| Syntax            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
 
@@ -56,11 +56,11 @@ Um link usado para associar uma partição COM+ a um objeto de partição do COM
 |------------------------|---------------------------------|
 | ID do link                | 1041                            |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| É de valor único       | Falso                           |
+| System-Only            | Verdadeiro                            |
+| Tem valor único       | Falso                           |
 | É indexado             | Falso                           |
-| No catálogo global      | Falso                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| No Catálogo Global      | Falso                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -77,11 +77,11 @@ Um link usado para associar uma partição COM+ a um objeto de partição do COM
 |------------------------|---------------------------------|
 | ID do link                | 1041                            |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| É de valor único       | Falso                           |
+| System-Only            | Verdadeiro                            |
+| Tem valor único       | Falso                           |
 | É indexado             | Falso                           |
-| No catálogo global      | Falso                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| No Catálogo Global      | Falso                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -98,11 +98,11 @@ Um link usado para associar uma partição COM+ a um objeto de partição do COM
 |------------------------|---------------------------------|
 | ID do link                | 1041                            |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| É de valor único       | Falso                           |
+| System-Only            | Verdadeiro                            |
+| Tem valor único       | Falso                           |
 | É indexado             | Falso                           |
-| No catálogo global      | Falso                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| No Catálogo Global      | Falso                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -119,7 +119,7 @@ Um link usado para associar uma partição COM+ a um objeto de partição do COM
 |------------------------|---------------------------------|
 | ID do link                | 1041                            |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
+| System-Only            | Verdadeiro                            |
 | É de valor único       | Falso                           |
 | É indexado             | Falso                           |
 | No catálogo global      | Falso                           |
@@ -140,7 +140,7 @@ Um link usado para associar uma partição COM+ a um objeto de partição do COM
 |------------------------|---------------------------------|
 | ID do link                | 1041                            |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
+| System-Only            | Verdadeiro                            |
 | É de valor único       | Falso                           |
 | É indexado             | Falso                           |
 | No catálogo global      | Falso                           |

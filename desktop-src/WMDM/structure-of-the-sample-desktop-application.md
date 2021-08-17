@@ -3,20 +3,20 @@ title: Estrutura do aplicativo de desktop de exemplo
 description: Estrutura do aplicativo de desktop de exemplo
 ms.assetid: e042470d-dc78-488c-bcad-2e8d34714d5d
 keywords:
-- Gerenciador de Dispositivos de mídia do Windows, amostras
+- Windows Gerenciador de Dispositivos de mídia, amostras
 - Gerenciador de Dispositivos, exemplos
 - aplicativos de área de trabalho, exemplos
-- Windows Media Gerenciador de Dispositivos, exemplo de aplicativo da área de trabalho
+- Windows Gerenciador de Dispositivos de mídia, exemplo de aplicativo da área de trabalho
 - Gerenciador de Dispositivos, exemplo de aplicativo de desktop
 - exemplos, aplicativos de desktop
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 34fb377c1bb6ebf943721b55ec6175e65f70ddde
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: a7dde8250a5efc8bc0f0b9582739bd8770d95ee586ea571a43bcbb9be69e8774
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103636108"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119957156"
 ---
 # <a name="structure-of-the-sample-desktop-application"></a>Estrutura do aplicativo de desktop de exemplo
 
@@ -35,16 +35,16 @@ O executável usa o projeto auxiliar somente quando o usuário seleciona **usar 
 | CDevices             | Devices. cpp             | A classe que manipula o painel esquerdo da janela principal do aplicativo, onde os dispositivos disponíveis são listados. Essa classe gerencia o loop de mensagens, que manipula a entrada do usuário, como selecionar um dispositivo e notificar o painel CDevFiles para carregar os arquivos apropriados quando a seleção do dispositivo for alterada.                                                                              |
 | CDevFiles            | Devfiles. cpp            | A classe que manipula o painel à direita da janela principal do aplicativo, em que os arquivos no dispositivo selecionado são listados. Essa classe gerencia o loop de mensagens e manipula a entrada do usuário, como arrastar arquivos para o dispositivo e excluir arquivos do dispositivo.                                                                                                                          |
 | CStatus              | Status. cpp              | A classe que manipula a barra de status inferior na janela principal, em que o número de dispositivos e arquivos é listado, junto com a quantidade de memória livre e usada no dispositivo selecionado.                                                                                                                                                                                                         |
-| CWMDM                | Wmdevmgr. cpp            | A interface de nível superior do Windows Media Gerenciador de Dispositivos. Essa classe manipula a autenticação, recupera a interface **IWMDeviceManager** de nível superior e registra as notificações com a interface **IWMDMNotification** .                                                                                                                                                                  |
+| CWMDM                | Wmdevmgr. cpp            | a interface de nível superior para Windows Gerenciador de Dispositivos de mídia. Essa classe manipula a autenticação, recupera a interface **IWMDeviceManager** de nível superior e registra as notificações com a interface **IWMDMNotification** .                                                                                                                                                                  |
 | CProgress            | Progress. cpp            | A classe no projeto de aplicativo principal que cria e gerencia a caixa de diálogo mostrando o progresso de um evento.                                                                                                                                                                                                                                                                             |
 | CItemData            | Defaultdata. cpp            | Uma classe wrapper que mantém um ponteiro para um armazenamento (se representar um arquivo ou pasta no dispositivo) ou um dispositivo (se representar um dispositivo), bem como uma variedade de informações sobre o objeto, incluindo tamanho e atributos.                                                                                                                                                                  |
 | CNotificationHandler | Notificationhandler. cpp | Manipula notificações de chegada e remoção de dispositivos alertando a janela CDevices.                                                                                                                                                                                                                                                                                                               |
-| CProgressHelper      | ProgressHelper. cpp      | Criado por CDevFiles em funções locais para receber notificações do Windows Media Gerenciador de Dispositivos implementando **IWMDMProgress**. Ele é usado pela classe CProgress para determinar a quantidade de barras na barra de progresso e quando uma ação é concluída. Essa classe é definida como um objeto COM que expõe a interface do SDK **IWMDMProgress** e uma interface personalizada IWMDMProgressHelper. |
+| CProgressHelper      | ProgressHelper. cpp      | criado por CDevFiles em funções locais para receber notificações de Windows mídia Gerenciador de Dispositivos implementando **IWMDMProgress**. Ele é usado pela classe CProgress para determinar a quantidade de barras na barra de progresso e quando uma ação é concluída. Essa classe é definida como um objeto COM que expõe a interface do SDK **IWMDMProgress** e uma interface personalizada IWMDMProgressHelper. |
 | COperationHelper     | Operationhelper. cpp     | Essa classe implementa o **IWMDMOperation** para lidar com a transferência manual de arquivos. Ele é multi-threaded para permitir que ele ocorra de forma assíncrona e é definido como um objeto COM que expõe uma interface personalizada, IWMDMOperationHelper, para instanciar e inicializar a classe. Essa classe só será usada se o usuário selecionar "usar a interface de operação" no menu de **Opções** .                            |
 
 
 
- 
+ 
 
 As listas a seguir descrevem as etapas básicas que ocorrem para várias ações do usuário:
 
@@ -88,9 +88,9 @@ Depois de clicar em "criar playlist" no menu **contêineres** , o aplicativo cha
 [**Aplicativo de desktop de exemplo**](sample-desktop-application.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

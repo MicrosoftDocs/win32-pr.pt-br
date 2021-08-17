@@ -6,19 +6,19 @@ keywords:
 - funções, DirectX 11 D3DX
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2b76c1764f464461b4800a9161ac37dcff8c539a
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
-ms.translationtype: HT
+ms.openlocfilehash: a6b4c98dda5f85f03af1add120d22b95fa620d4a45e8e4db80d3b607f2c3e70e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "104369054"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119126050"
 ---
 # <a name="d3dx-functions-direct3d-11-graphics"></a>Funções D3DX (gráficos do Direct3D 11)
 
 Esta seção contém informações sobre as funções do D3DX 11.
 
 > [!Note]  
-> A biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida para o Windows 8 e não tem suporte para aplicativos da Windows Store.
+> a biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida por Windows 8 e não tem suporte para aplicativos da loja Windows.
 
  
 
@@ -43,7 +43,7 @@ Esta seção contém informações sobre as funções do D3DX 11.
 <td><a href="d3dx11compilefromfile.md"><strong>D3DX11CompileFromFile</strong></a><br/></td>
 <td><blockquote>
 [!Note]<br />
-A biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida para o Windows 8 e não tem suporte para aplicativos da Windows Store.
+a biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida por Windows 8 e não tem suporte para aplicativos da loja Windows.
 </blockquote>
 <br/>
 <blockquote>
@@ -56,7 +56,7 @@ Em vez de usar essa função, recomendamos que você compile offline usando o co
 <td><a href="d3dx11compilefrommemory.md"><strong>D3DX11CompileFromMemory</strong></a><br/></td>
 <td><blockquote>
 [!Note]<br />
-A biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida para o Windows 8 e não tem suporte para aplicativos da Windows Store.
+a biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida por Windows 8 e não tem suporte para aplicativos da loja Windows.
 </blockquote>
 <br/>
 <blockquote>
@@ -69,7 +69,7 @@ Em vez de usar essa função, recomendamos que você compile offline usando o co
 <td><a href="d3dx11compilefromresource.md"><strong>D3DX11CompileFromResource</strong></a><br/></td>
 <td><blockquote>
 [!Note]<br />
-A biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida para o Windows 8 e não tem suporte para aplicativos da Windows Store.
+a biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida por Windows 8 e não tem suporte para aplicativos da loja Windows.
 </blockquote>
 <br/>
 <blockquote>
@@ -82,7 +82,7 @@ Em vez de usar essa função, recomendamos que você use <a href="/windows/deskt
 <td><a href="d3dx11computenormalmap.md"><strong>D3DX11ComputeNormalMap</strong></a><br/></td>
 <td><blockquote>
 [!Note]<br />
-A biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida para o Windows 8 e não tem suporte para aplicativos da Windows Store.
+a biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida por Windows 8 e não tem suporte para aplicativos da loja Windows.
 </blockquote>
 <br/>
 <blockquote>
@@ -95,7 +95,7 @@ Em vez de usar essa função, recomendamos que você use a biblioteca <a href="h
 <td><a href="d3dx11createasynccompilerprocessor.md"><strong>D3DX11CreateAsyncCompilerProcessor</strong></a><br/></td>
 <td><blockquote>
 [!Note]<br />
-A biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida para o Windows 8 e não tem suporte para aplicativos da Windows Store. Consulte Observações.
+a biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida por Windows 8 e não tem suporte para aplicativos da loja Windows. Consulte Observações.
 </blockquote>
 <br/> Crie um processador de dados assíncronos para um sombreador.<br/></td>
 </tr>
@@ -103,7 +103,7 @@ A biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida para
 <td><a href="d3dx11createasyncfileloader.md"><strong>D3DX11CreateAsyncFileLoader</strong></a><br/></td>
 <td><blockquote>
 [!Note]<br />
-A biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida para o Windows 8 e não tem suporte para aplicativos da Windows Store. Consulte Observações.
+a biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida por Windows 8 e não tem suporte para aplicativos da loja Windows. Consulte Observações.
 </blockquote>
 <br/> Crie um carregador de arquivo assíncrono.<br/></td>
 </tr>
@@ -111,7 +111,7 @@ A biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida para
 <td><a href="d3dx11createasyncmemoryloader.md"><strong>D3DX11CreateAsyncMemoryLoader</strong></a><br/></td>
 <td><blockquote>
 [!Note]<br />
-A biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida para o Windows 8 e não tem suporte para aplicativos da Windows Store. Consulte Observações.
+a biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida por Windows 8 e não tem suporte para aplicativos da loja Windows. Consulte Observações.
 </blockquote>
 <br/> Crie um carregador de memória assíncrona.<br/></td>
 </tr>
@@ -119,7 +119,7 @@ A biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida para
 <td><a href="d3dx11createasyncresourceloader.md"><strong>D3DX11CreateAsyncResourceLoader</strong></a><br/></td>
 <td><blockquote>
 [!Note]<br />
-A biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida para o Windows 8 e não tem suporte para aplicativos da Windows Store. Consulte Observações.
+a biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida por Windows 8 e não tem suporte para aplicativos da loja Windows. Consulte Observações.
 </blockquote>
 <br/> Crie um carregador de recurso assíncrono.<br/></td>
 </tr>
@@ -127,7 +127,7 @@ A biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida para
 <td><a href="d3dx11createasyncshaderpreprocessprocessor.md"><strong>D3DX11CreateAsyncShaderPreprocessProcessor</strong></a><br/></td>
 <td><blockquote>
 [!Note]<br />
-A biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida para o Windows 8 e não tem suporte para aplicativos da Windows Store. Consulte Observações.
+a biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida por Windows 8 e não tem suporte para aplicativos da loja Windows. Consulte Observações.
 </blockquote>
 <br/> Crie um processador de dados para um sombreador de forma assíncrona.<br/></td>
 </tr>
@@ -135,7 +135,7 @@ A biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida para
 <td><a href="d3dx11createasynctextureinfoprocessor.md"><strong>D3DX11CreateAsyncTextureInfoProcessor</strong></a><br/></td>
 <td><blockquote>
 [!Note]<br />
-A biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida para o Windows 8 e não tem suporte para aplicativos da Windows Store. Consulte Observações.
+a biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida por Windows 8 e não tem suporte para aplicativos da loja Windows. Consulte Observações.
 </blockquote>
 <br/> Crie um processador de dados para ser usado com uma <a href="id3dx11threadpump.md"><strong>bomba de thread</strong></a>.<br/></td>
 </tr>
@@ -143,7 +143,7 @@ A biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida para
 <td><a href="d3dx11createasynctextureprocessor.md"><strong>D3DX11CreateAsyncTextureProcessor</strong></a><br/></td>
 <td><blockquote>
 [!Note]<br />
-A biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida para o Windows 8 e não tem suporte para aplicativos da Windows Store. Consulte Observações.
+a biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida por Windows 8 e não tem suporte para aplicativos da loja Windows. Consulte Observações.
 </blockquote>
 <br/> Crie um processador de dados para ser usado com uma <a href="id3dx11threadpump.md"><strong>bomba de thread</strong></a>.<br/></td>
 </tr>
@@ -151,7 +151,7 @@ A biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida para
 <td><a href="d3dx11createasyncshaderresourceviewprocessor.md"><strong>D3DX11CreateAsyncShaderResourceViewProcessor</strong></a><br/></td>
 <td><blockquote>
 [!Note]<br />
-A biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida para o Windows 8 e não tem suporte para aplicativos da Windows Store. Consulte Observações.
+a biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida por Windows 8 e não tem suporte para aplicativos da loja Windows. Consulte Observações.
 </blockquote>
 <br/> Crie um processador de dados que carregará um recurso e, em seguida, crie uma exibição de recurso de sombreador para ele. Os processadores de dados são um componente do recurso de carregamento de dados assíncronos no D3DX11 que usa <a href="id3dx11threadpump.md"><strong>bombas de thread</strong></a>.<br/></td>
 </tr>
@@ -159,7 +159,7 @@ A biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida para
 <td><a href="d3dx11createshaderresourceviewfromfile.md"><strong>D3DX11CreateShaderResourceViewFromFile</strong></a><br/></td>
 <td><blockquote>
 [!Note]<br />
-A biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida para o Windows 8 e não tem suporte para aplicativos da Windows Store.
+a biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida por Windows 8 e não tem suporte para aplicativos da loja Windows.
 </blockquote>
 <br/>
 <blockquote>
@@ -176,7 +176,7 @@ Em vez de usar essa função, recomendamos que você as use:</p>
 <td><a href="d3dx11createshaderresourceviewfrommemory.md"><strong>D3DX11CreateShaderResourceViewFromMemory</strong></a><br/></td>
 <td><blockquote>
 [!Note]<br />
-A biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida para o Windows 8 e não tem suporte para aplicativos da Windows Store.
+a biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida por Windows 8 e não tem suporte para aplicativos da loja Windows.
 </blockquote>
 <br/>
 <blockquote>
@@ -193,7 +193,7 @@ Em vez de usar essa função, recomendamos que você as use:</p>
 <td><a href="d3dx11createshaderresourceviewfromresource.md"><strong>D3DX11CreateShaderResourceViewFromResource</strong></a><br/></td>
 <td><blockquote>
 [!Note]<br />
-A biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida para o Windows 8 e não tem suporte para aplicativos da Windows Store.
+a biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida por Windows 8 e não tem suporte para aplicativos da loja Windows.
 </blockquote>
 <br/>
 <blockquote>
@@ -210,7 +210,7 @@ Em vez de usar essa função, recomendamos que você use <a href="/windows/deskt
 <td><a href="d3dx11createtexturefromfile.md"><strong>D3DX11CreateTextureFromFile</strong></a><br/></td>
 <td><blockquote>
 [!Note]<br />
-A biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida para o Windows 8 e não tem suporte para aplicativos da Windows Store.
+a biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida por Windows 8 e não tem suporte para aplicativos da loja Windows.
 </blockquote>
 <br/>
 <blockquote>
@@ -227,7 +227,7 @@ Em vez de usar essa função, recomendamos que você as use:</p>
 <td><a href="d3dx11createtexturefrommemory.md"><strong>D3DX11CreateTextureFromMemory</strong></a><br/></td>
 <td><blockquote>
 [!Note]<br />
-A biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida para o Windows 8 e não tem suporte para aplicativos da Windows Store.
+a biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida por Windows 8 e não tem suporte para aplicativos da loja Windows.
 </blockquote>
 <br/>
 <blockquote>
@@ -244,7 +244,7 @@ Em vez de usar essa função, recomendamos que você as use:</p>
 <td><a href="d3dx11createtexturefromresource.md"><strong>D3DX11CreateTextureFromResource</strong></a><br/></td>
 <td><blockquote>
 [!Note]<br />
-A biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida para o Windows 8 e não tem suporte para aplicativos da Windows Store.
+a biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida por Windows 8 e não tem suporte para aplicativos da loja Windows.
 </blockquote>
 <br/>
 <blockquote>
@@ -261,7 +261,7 @@ Em vez de usar essa função, recomendamos que você use <a href="/windows/deskt
 <td><a href="d3dx11createthreadpump.md"><strong>D3DX11CreateThreadPump</strong></a><br/></td>
 <td><blockquote>
 [!Note]<br />
-A biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida para o Windows 8 e não tem suporte para aplicativos da Windows Store. Consulte Observações.
+a biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida por Windows 8 e não tem suporte para aplicativos da loja Windows. Consulte Observações.
 </blockquote>
 <br/> Criar uma bomba de thread.<br/></td>
 </tr>
@@ -269,7 +269,7 @@ A biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida para
 <td><a href="d3dx11filtertexture.md"><strong>D3DX11FilterTexture</strong></a><br/></td>
 <td><blockquote>
 [!Note]<br />
-A biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida para o Windows 8 e não tem suporte para aplicativos da Windows Store.
+a biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida por Windows 8 e não tem suporte para aplicativos da loja Windows.
 </blockquote>
 <br/>
 <blockquote>
@@ -282,7 +282,7 @@ Em vez de usar essa função, recomendamos que você use a biblioteca <a href="h
 <td><a href="d3dx11getimageinfofromfile.md"><strong>D3DX11GetImageInfoFromFile</strong></a><br/></td>
 <td><blockquote>
 [!Note]<br />
-A biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida para o Windows 8 e não tem suporte para aplicativos da Windows Store.
+a biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida por Windows 8 e não tem suporte para aplicativos da loja Windows.
 </blockquote>
 <br/>
 <blockquote>
@@ -295,7 +295,7 @@ Em vez de usar essa função, recomendamos que você use a biblioteca <a href="h
 <td><a href="d3dx11getimageinfofrommemory.md"><strong>D3DX11GetImageInfoFromMemory</strong></a><br/></td>
 <td><blockquote>
 [!Note]<br />
-A biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida para o Windows 8 e não tem suporte para aplicativos da Windows Store.
+a biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida por Windows 8 e não tem suporte para aplicativos da loja Windows.
 </blockquote>
 <br/>
 <blockquote>
@@ -308,7 +308,7 @@ Em vez de usar essa função, recomendamos que você use a biblioteca <a href="h
 <td><a href="d3dx11getimageinfofromresource.md"><strong>D3DX11GetImageInfoFromResource</strong></a><br/></td>
 <td><blockquote>
 [!Note]<br />
-A biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida para o Windows 8 e não tem suporte para aplicativos da Windows Store.
+a biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida por Windows 8 e não tem suporte para aplicativos da loja Windows.
 </blockquote>
 <br/>
 <blockquote>
@@ -321,7 +321,7 @@ Em vez de usar essa função, recomendamos que você use <a href="/windows/deskt
 <td><a href="d3dx11loadtexturefromtexture.md"><strong>D3DX11LoadTextureFromTexture</strong></a><br/></td>
 <td><blockquote>
 [!Note]<br />
-A biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida para o Windows 8 e não tem suporte para aplicativos da Windows Store.
+a biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida por Windows 8 e não tem suporte para aplicativos da loja Windows.
 </blockquote>
 <br/>
 <blockquote>
@@ -334,7 +334,7 @@ Em vez de usar essa função, recomendamos que você use a biblioteca <a href="h
 <td><a href="d3dx11preprocessshaderfromfile.md"><strong>D3DX11PreprocessShaderFromFile</strong></a><br/></td>
 <td><blockquote>
 [!Note]<br />
-A biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida para o Windows 8 e não tem suporte para aplicativos da Windows Store.
+a biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida por Windows 8 e não tem suporte para aplicativos da loja Windows.
 </blockquote>
 <br/>
 <blockquote>
@@ -347,7 +347,7 @@ Em vez de usar essa função, recomendamos que você use a API <a href="/windows
 <td><a href="d3dx11preprocessshaderfrommemory.md"><strong>D3DX11PreprocessShaderFromMemory</strong></a><br/></td>
 <td><blockquote>
 [!Note]<br />
-A biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida para o Windows 8 e não tem suporte para aplicativos da Windows Store.
+a biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida por Windows 8 e não tem suporte para aplicativos da loja Windows.
 </blockquote>
 <br/>
 <blockquote>
@@ -360,7 +360,7 @@ Em vez de usar essa função, recomendamos que você use a API <a href="/windows
 <td><a href="d3dx11preprocessshaderfromresource.md"><strong>D3DX11PreprocessShaderFromResource</strong></a><br/></td>
 <td><blockquote>
 [!Note]<br />
-A biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida para o Windows 8 e não tem suporte para aplicativos da Windows Store.
+a biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida por Windows 8 e não tem suporte para aplicativos da loja Windows.
 </blockquote>
 <br/>
 <blockquote>
@@ -373,7 +373,7 @@ Em vez de usar essa função, recomendamos que você use a API <a href="/windows
 <td><a href="d3dx11savetexturetofile.md"><strong>D3DX11SaveTextureToFile</strong></a><br/></td>
 <td><blockquote>
 [!Note]<br />
-A biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida para o Windows 8 e não tem suporte para aplicativos da Windows Store.
+a biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida por Windows 8 e não tem suporte para aplicativos da loja Windows.
 </blockquote>
 <br/>
 <blockquote>
@@ -386,7 +386,7 @@ Em vez de usar essa função, recomendamos que você use a biblioteca <a href="h
 <td><a href="d3dx11savetexturetomemory.md"><strong>D3DX11SaveTextureToMemory</strong></a><br/></td>
 <td><blockquote>
 [!Note]<br />
-A biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida para o Windows 8 e não tem suporte para aplicativos da Windows Store.
+a biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida por Windows 8 e não tem suporte para aplicativos da loja Windows.
 </blockquote>
 <br/>
 <blockquote>
@@ -399,7 +399,7 @@ Em vez de usar essa função, recomendamos que você use a biblioteca <a href="h
 <td><a href="d3dx11shprojectcubemap.md"><strong>D3DX11SHProjectCubeMap</strong></a><br/></td>
 <td><blockquote>
 [!Note]<br />
-A biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida para o Windows 8 e não tem suporte para aplicativos da Windows Store.
+a biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida por Windows 8 e não tem suporte para aplicativos da loja Windows.
 </blockquote>
 <br/>
 <blockquote>
@@ -412,7 +412,7 @@ Em vez de usar essa função, recomendamos que você use a biblioteca <a href="h
 <td><a href="d3dx11unsetalldeviceobjects.md"><strong>D3DX11UnsetAllDeviceObjects</strong></a><br/></td>
 <td><blockquote>
 [!Note]<br />
-A biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida para o Windows 8 e não tem suporte para aplicativos da Windows Store.
+a biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida por Windows 8 e não tem suporte para aplicativos da loja Windows.
 </blockquote>
 <br/>
 <blockquote>

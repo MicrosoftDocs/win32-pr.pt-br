@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ed9a04df634fe54c82230ade679afb3259519173
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 794cd84dd62518cc3089b8644f41b5545aeaf547b275c703a4cb87f5fec2b4a6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105755773"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118883655"
 ---
 # <a name="counteritemscalefactor-property"></a>Propriedade MyItem. ScaleFactor
 
@@ -42,7 +42,7 @@ Property ScaleFactor As Long
 
 Fator de escala usado na exibição dos valores do contador grafado. Os valores válidos variam de-9 a 9 (os valores correspondem a 0, 1-100000000,0).
 
-**Antes do Windows Vista:** Os valores válidos variam de-7 a 7 (os valores correspondem a 0, 1-1000000,0).
+**antes do Windows Vista:** Os valores válidos variam de-7 a 7 (os valores correspondem a 0, 1-1000000,0).
 
 ## <a name="remarks"></a>Comentários
 

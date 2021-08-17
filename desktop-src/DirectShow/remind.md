@@ -1,7 +1,7 @@
 ---
-description: A macro lembrar gera um lembrete no momento da compilação. Essa macro gera uma cadeia de caracteres que inclui a cadeia de caracteres do parâmetro, o nome do arquivo de origem e o número da linha.
+description: A macro REMIND gera um lembrete no tempo de compilação. Essa macro gera uma cadeia de caracteres que inclui a cadeia de caracteres de parâmetro, o nome do arquivo de origem e o número de linha.
 ms.assetid: 12043df5-ed68-4980-91aa-7598d8ab1951
-title: LEMBREte (Wxdebug. h)
+title: REMIND (Wxdebug.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 305e5df628244293b643da8882f57dd83041c4c6
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c17ec8fac190cd98803a0dfa85acff015d0ac2c18ce712cc87316dd2dca181bb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105779837"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118952115"
 ---
-# <a name="remind"></a>-
+# <a name="remind"></a>Lembrar
 
-A `REMIND` macro gera um lembrete no momento da compilação. Essa macro gera uma cadeia de caracteres que inclui a cadeia de caracteres do parâmetro, o nome do arquivo de origem e o número da linha.
+A `REMIND` macro gera um lembrete no tempo de compilação. Essa macro gera uma cadeia de caracteres que inclui a cadeia de caracteres de parâmetro, o nome do arquivo de origem e o número de linha.
 
 ``` syntax
 REMIND(strLiteral);
@@ -38,7 +38,7 @@ REMIND(strLiteral);
 <span id="strLiteral"></span><span id="strliteral"></span><span id="STRLITERAL"></span>*strLiteral*
 </dt> <dd>
 
-Cadeia de texto.
+Cadeia de caracteres de texto.
 
 </dd> </dl>
 
@@ -59,8 +59,8 @@ Essa macro é útil para gerar avisos de tempo de compilação:
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Wxdebug. h (incluir fluxos. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Wxdebug.h (incluir Fluxos.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

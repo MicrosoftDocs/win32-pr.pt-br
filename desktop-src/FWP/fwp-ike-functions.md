@@ -1,21 +1,21 @@
 ---
 title: Funções IKE/AuthIP
-description: (WFP) funções usadas para interagir com módulos de criação de chaves \ 8212; protocolo IKE (IKE), protocolo IKE v2 (IKEv2) e protocolo Authenticated IP (AuthIP).
+description: (WFP) funções usadas para interagir com módulos de chave \ 8212;IKE (Chave de Internet Exchange), Chave de Internet Exchange v2 (IKEv2) e protocolo Authenticated IP (AuthIP).
 ms.assetid: df36b6cc-a304-4426-8f16-1bf92fd721e1
 keywords:
-- Funções protocolo IKE API da plataforma de filtragem do Windows
+- Windows Filtrando funções de chave de internet da API da Exchange plataforma
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6cce5d3e2393bb1a83ebf816375f537318bb4b1f
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: f0841ad333b57631170a3e34f247baa515fdf81fb17cf83d3021425fc85c91a8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104292446"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119069256"
 ---
 # <a name="ikeauthip-functions"></a>Funções IKE/AuthIP
 
-As funções da WFP (plataforma de filtragem do Windows) usadas para interagir com módulos de chaveamento, protocolo IKE (IKE), protocolo IKE v2 (IKEv2) e protocolo Authenticated IP (AuthIP) — são as seguintes.
+As funções da WFP (plataforma de filtragem de Windows) usadas para interagir com módulos de chave —IKE (Chave de Internet Exchange), IKEv2 (Chave de Exchange Internet v2) e protocolo Authenticated IP (AuthIP)— são as a seguir.
 
 -   IkeextGetStatistics:
     -   [**IkeextGetStatistics0**](/windows/desktop/api/Fwpmu/nf-fwpmu-ikeextgetstatistics0) (Windows Vista)
@@ -34,9 +34,9 @@ As funções da WFP (plataforma de filtragem do Windows) usadas para interagir c
     -   [**IkeextSaGetById1**](/windows/desktop/api/Fwpmu/nf-fwpmu-ikeextsagetbyid1) (Windows 7)
     -   [**IkeextSaGetById2**](/windows/desktop/api/Fwpmu/nf-fwpmu-ikeextsagetbyid2) (Windows 8)
 
- 
+ 
 
- 
+ 
 
 
 

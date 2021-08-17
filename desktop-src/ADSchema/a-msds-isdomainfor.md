@@ -1,11 +1,11 @@
 ---
-title: ms-DS-is-domain-para atributo
-description: Link para trás para MS-DS-tem-Domain-NCs. Identifica quais DCs mantêm essa partição como seu domínio primário. | ms-DS-is-domain-para atributo
+title: Atributo ms-DS-Is-Domain-For
+description: Link para trás para ms-DS-Has-Domain-NCs. Identifica quais controladores de domínio têm essa partição como seu domínio primário. | Atributo ms-DS-Is-Domain-For
 ms.assetid: ec63ddb4-c220-492b-92ce-e3da2069bcb8
 ms.tgt_platform: multiple
 keywords:
-- ms-DS-is-domain-for atributo AD Schema
-- atributo msDS-IsDomainFor do AD Schema
+- ms-DS-Is-Domain-For atributo AD Schema
+- msDS-IsDomainFor attribute AD Schema
 topic_type:
 - apiref
 api_name:
@@ -21,22 +21,22 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118685106"
 ---
-# <a name="ms-ds-is-domain-for-attribute"></a>ms-DS-is-domain-para atributo
+# <a name="ms-ds-is-domain-for-attribute"></a>Atributo ms-DS-Is-Domain-For
 
-Link para trás para [**MS-DS-tem-Domain-NCS**](a-msds-hasdomainncs.md). Identifica quais DCs mantêm essa partição como seu domínio primário.
+Link para trás [**para ms-DS-Has-Domain-NCs**](a-msds-hasdomainncs.md). Identifica quais controladores de domínio têm essa partição como seu domínio primário.
 
 
 
 | Entrada | Valor |
 |-------------------|-----------------------------------------|
-| CN                | ms-DS-is-domain-for                     |
-| LDAP-Display-Name | msDS-IsDomainFor                        |
+| CN                | ms-DS-Is-Domain-For                     |
+| Ldap-Display-Name | msDS-IsDomainFor                        |
 | Tamanho              | \-                                      |
 | Privilégio de atualização  | \-                                      |
 | Frequência de atualização  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.1933                 |
-| System-ID-GUID    | ff155a2a-44e5-4de0-8318-13a58988de4f    |
-| Sintaxe            | [**Objeto (DS-DN)**](s-object-ds-dn.md) |
+| System-Id-Guid    | ff155a2a-44e5-4de0-8318-13a58988de4f    |
+| Syntax            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
 
@@ -54,11 +54,11 @@ Link para trás para [**MS-DS-tem-Domain-NCS**](a-msds-hasdomainncs.md). Identif
 |------------------------|---------------------------------|
 | ID do link                | 2027                            |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| É de valor único       | Falso                           |
+| System-Only            | Verdadeiro                            |
+| Tem valor único       | Falso                           |
 | É indexado             | Falso                           |
-| No catálogo global      | Falso                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| No Catálogo Global      | Falso                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -75,11 +75,11 @@ Link para trás para [**MS-DS-tem-Domain-NCS**](a-msds-hasdomainncs.md). Identif
 |------------------------|---------------------------------|
 | ID do link                | 2027                            |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| É de valor único       | Falso                           |
+| System-Only            | Verdadeiro                            |
+| Tem valor único       | Falso                           |
 | É indexado             | Falso                           |
-| No catálogo global      | Falso                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| No Catálogo Global      | Falso                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -96,11 +96,11 @@ Link para trás para [**MS-DS-tem-Domain-NCS**](a-msds-hasdomainncs.md). Identif
 |------------------------|---------------------------------|
 | ID do link                | 2027                            |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| É de valor único       | Falso                           |
+| System-Only            | Verdadeiro                            |
+| Tem valor único       | Falso                           |
 | É indexado             | Falso                           |
-| No catálogo global      | Falso                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| No Catálogo Global      | Falso                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |

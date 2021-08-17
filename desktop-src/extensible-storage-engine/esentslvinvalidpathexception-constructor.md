@@ -33,8 +33,8 @@ ms.locfileid: "118772698"
 ---
 # <a name="esentslvinvalidpathexception-constructor"></a>Construtor EsentSLVInvalidPathException
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -56,6 +56,6 @@ public EsentSLVInvalidPathException()
 
 [Classe EsentSLVInvalidPathException](./esentslvinvalidpathexception-class.md)
 
-[Membros do EsentSLVInvalidPathException](./esentslvinvalidpathexception-members.md)
+[Membros EsentSLVInvalidPathException](./esentslvinvalidpathexception-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)
