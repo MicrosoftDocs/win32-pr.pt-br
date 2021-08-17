@@ -3,9 +3,9 @@ title: Método IWMPNetwork setProxyExceptionList
 description: O método setProxyExceptionList especifica a lista de exceções de proxy. | Método IWMPNetwork setProxyExceptionList
 ms.assetid: a7a5e9ad-f71f-431e-9a53-b56456778104
 keywords:
-- método setProxyExceptionList Windows Media Player
+- Windows Media Player do método setProxyExceptionList
 - método setProxyExceptionList Windows Media Player, interface IWMPNetwork
-- Interface IWMPNetwork Windows Media Player, método setProxyExceptionList
+- Windows Media Player de interface IWMPNetwork, método setProxyExceptionList
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5dad011dee8e1199e6111be60acfec41d85d1e58
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: eddfd3ce8495c02fc6ae352f918349ff7174afb99e69d9e1ba8aa19c45d1a49d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105761926"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117745758"
 ---
 # <a name="iwmpnetworksetproxyexceptionlist-method"></a>Método IWMPNetwork:: setProxyExceptionList
 
@@ -69,7 +69,7 @@ Um **System. String** que é uma lista delimitada por ponto-e-vírgula de hosts 
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 

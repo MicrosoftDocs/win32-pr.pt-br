@@ -1,5 +1,5 @@
 ---
-description: Aplicativos, processos e janelas podem optar por se tornar indisponíveis para fixação na barra de tarefas ou para inclusão na lista MFU (mais frequentemente usado) do menu Iniciar.
+description: Aplicativos, processos e janelas podem optar por se tornar indisponíveis para fixação na barra de tarefas ou para inclusão na lista MFU (mais usada) do menu Iniciar.
 title: Como excluir itens da pinagem da barra de tarefas e listas recentes/frequentes
 ms.topic: article
 ms.date: 05/31/2018

@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ee3d5547d66ca6dc1b770242301bd95ed010a8d0
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e4a3833987ebdbbf2700d9426da31b8efc80f64787e93be1a8418d83065724d0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105780016"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117749973"
 ---
 # <a name="customslideronpositionchange"></a>CUSTOMSLIDER.onPositionChange
 

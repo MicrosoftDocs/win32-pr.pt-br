@@ -3,7 +3,7 @@ title: Mensagem de WM_CTLCOLORBTN (WinUser. h)
 description: A mensagem do WM \_ CTLCOLORBTN é enviada para a janela pai de um botão antes de desenhar o botão. A janela pai pode alterar o texto do botão e as cores do plano de fundo. No entanto, somente botões desenhados pelo proprietário respondem à janela pai que processa essa mensagem.
 ms.assetid: fd2ab917-ffd6-4f71-9b1c-0ecdfe53ae8b
 keywords:
-- Controles de WM_CTLCOLORBTN de mensagens do Windows
+- controles de Windows de mensagem de WM_CTLCOLORBTN
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bfdaed4682cbd87bfd86d7829f7c828494ec46fb
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c5689d7c76499f1ed180f76831af325c5e311bf06e052ea1446805c39ddf8642
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103917978"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118407635"
 ---
 # <a name="wm_ctlcolorbtn-message"></a>Mensagem do WM \_ CTLCOLORBTN
 
@@ -53,7 +53,7 @@ Um **HWND** que especifica o identificador para o botão.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se um aplicativo processar essa mensagem, ele deverá retornar um identificador para um pincel. O sistema usa o pincel para pintar o plano de fundo do botão.
 
@@ -75,9 +75,9 @@ Se um procedimento de caixa de diálogo tratar essa mensagem, ele deverá conver
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                                     |
-| parâmetro<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                                           |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                                     |
+| Cabeçalho<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
 
 
 

@@ -1,9 +1,9 @@
 ---
-title: EQUALIZERSETTINGS. bandas
-description: O atributo de faixas recupera o número de faixas de frequência com suporte.
+title: EQUALIZERSETTINGS.bands
+description: O atributo de bandas recupera o número de faixas de frequência com suporte.
 ms.assetid: 602db39e-de47-4bee-be98-9e565a137591
 keywords:
-- EQUALIZERSETTINGS. bandas Windows Media Player
+- EQUALIZERSETTINGS.bands Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9146ba21c52af7ce152fdda8671e30e9f63aeebd
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: fd481f3565f7e58ffa480ed72b902f99578794bef9daa7089236947826f2e8e2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105762083"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117748924"
 ---
-# <a name="equalizersettingsbands"></a>EQUALIZERSETTINGS. bandas
+# <a name="equalizersettingsbands"></a>EQUALIZERSETTINGS.bands
 
-O atributo de **faixas** recupera o número de faixas de frequência com suporte.
+O **atributo de** bandas recupera o número de faixas de frequência com suporte.
 
 ``` syntax
         elementID.bands
@@ -29,7 +29,7 @@ O atributo de **faixas** recupera o número de faixas de frequência com suporte
 
 ## <a name="possible-values"></a>Valores possíveis
 
-Esse atributo é um **número** somente leitura (**Long**).
+Esse atributo é um Número somente **leitura** (**long).**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -37,7 +37,7 @@ Esse atributo é um **número** somente leitura (**Long**).
 
 | Requisito | Valor |
 |--------------------|------------------------------------------------------|
-| Versão<br/> | Windows Media Player versão 7,0 ou posterior<br/> |
+| Versão<br/> | Windows Media Player versão 7.0 ou posterior<br/> |
 
 
 

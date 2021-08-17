@@ -3,7 +3,7 @@ title: LVM_GETEMPTYTEXT mensagem (Commctrl.h)
 description: Obtém o texto destinado à exibição quando o controle de exibição de lista aparece vazio. Envie essa mensagem explicitamente ou usando a \_ macro ListView GetEmptyText.
 ms.assetid: aa6cb0ae-0c6c-42b7-80c5-c086c9579c81
 keywords:
-- LVM_GETEMPTYTEXT controles de Windows mensagem
+- LVM_GETEMPTYTEXT controles Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -55,7 +55,7 @@ Retorna **TRUE se** for bem-sucedido ou FALSE **caso** contrário.
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
 | Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

@@ -1,9 +1,9 @@
 ---
-title: Tipo de versãoTipo Simples
+title: Tipo simples versiontype
 description: Define um padrão que especifica uma versão de uma tarefa.
 ms.assetid: e9eebbc1-5465-4af6-8b97-f1fd5827442e
 keywords:
-- tipo de versãoTipo simples Agendador de Tarefas
+- tipo simples de versiontype Agendador de Tarefas
 topic_type:
 - apiref
 api_name:
@@ -20,7 +20,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118355032"
 ---
-# <a name="versiontype-simple-type"></a>Tipo de versãoTipo Simples
+# <a name="versiontype-simple-type"></a>Tipo simples versiontype
 
 Define um padrão que especifica uma versão de uma tarefa.
 
@@ -38,11 +38,11 @@ Define um padrão que especifica uma versão de uma tarefa.
 
 ## <a name="patterns"></a>Padrões
 
-O **tipo simples versionType** é **uma** cadeia de caracteres restrita pelo seguinte padrão:
+O tipo simples **versiontype** é uma **cadeia de caracteres** que é restrita pelo seguinte padrão:
 
 -   `\d+(\.\d+){1,3}`
 
-    Um duplo seguido por um, dois ou três duplos. Por exemplo, 1.2 ou 1.2.3.
+    Um duplo seguido de um, dois ou três duplos. Por exemplo, 1,2 ou 1.2.3.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,8 +50,8 @@ O **tipo simples versionType** é **uma** cadeia de caracteres restrita pelo seg
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/> |
 
 
 

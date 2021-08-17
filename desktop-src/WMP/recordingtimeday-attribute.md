@@ -3,7 +3,7 @@ title: Atributo RecordingTimeDay
 description: O atributo RecordingTimeDay é a parte do dia da data da gravação original, para itens em que essa data é diferente da data de lançamento.
 ms.assetid: fb2d9eb6-ea06-492c-839b-27f6bd3fd986
 keywords:
-- Atributo RecordingTimeDay Windows Media Player
+- Windows Media Player de atributo RecordingTimeDay
 topic_type:
 - apiref
 api_name:
@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8f6f4bbd80625df7b3a548cc6ad89707a5e595ab
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ff864607ceced7942ccb759caab6be2bbef299c647f4b749056e172876d08a71
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105813626"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117746575"
 ---
 # <a name="recordingtimeday-attribute"></a>Atributo RecordingTimeDay
 

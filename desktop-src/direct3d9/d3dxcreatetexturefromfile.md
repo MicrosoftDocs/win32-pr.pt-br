@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 19453986405ee4d46a3e72145c2117bb113663bd
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: b3ffce68a8044267e67d874412264d5a915c65b88ea5cc13b0cd8d2cd1400828
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104370955"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117732155"
 ---
 # <a name="d3dxcreatetexturefromfile-function"></a>Função D3DXCreateTextureFromFile
 
@@ -69,7 +69,7 @@ Endereço de um ponteiro para uma interface [**IDirect3DTexture9**](/windows/win
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
@@ -79,7 +79,7 @@ Se a função for bem sucedido, o valor de retorno será D3D \_ OK. Se a funçã
 
 A configuração do compilador também determina a versão da função. Se o Unicode for definido, a chamada de função será resolvida como D3DXCreateTextureFromFileW. Caso contrário, a chamada de função é resolvida como D3DXCreateTextureFromFileA porque as cadeias de caracteres ANSI estão sendo usadas.
 
-Essa função dá suporte aos seguintes formatos de arquivo:. bmp,. DDS,. dib,. HDR,. jpg,. PFM,. png,. ppm e. tga. Consulte [**D3DXIMAGE \_ FileFormat**](./d3dximage-fileformat.md).
+Essa função dá suporte aos seguintes formatos de arquivo: .bmp,. DDS,. dib,. HDR, .jpg,. PFM, .png,. ppm e. tga. Consulte [**D3DXIMAGE \_ FileFormat**](./d3dximage-fileformat.md).
 
 A função é equivalente a D3DXCreateTextureFromFileEx (pDevice, pSrcFile, D3DX \_ padrão, D3DX padrão \_ , D3DX padrão \_ , 0, D3DFMT \_ desconhecido, D3DPOOL \_ gerenciado, D3DX \_ padrão, D3DX \_ Default, 0, **NULL**, **null**, ppTexture).
 

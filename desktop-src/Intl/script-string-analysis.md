@@ -37,7 +37,7 @@ Como a análise pode ser grande, é importante que seu aplicativo chame [**Scrip
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                         |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                               |
 | Redistribuível<br/>          | Internet Explorer 5 ou posterior emWindows Me/98/95<br/>                         |
-| parâmetro<br/>                   | <dl> <dt>Usp10.h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Usp10.h</dt> </dl> |
 
 
 

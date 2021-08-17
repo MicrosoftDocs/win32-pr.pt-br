@@ -1,7 +1,7 @@
 ---
 description: Este exemplo mostra como implantar um aplicativo de tablet gerenciado pela Web usando a implantação sem toque.
 ms.assetid: d226bd67-e20d-431b-b0c3-9361b00a9340
-title: No-Touch web de implantação
+title: No-Touch web de implantação de dados
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 7d8fb9989785dc081022c2e76d8fade6d48bf521b3f27449ff5aac963706f356
@@ -11,13 +11,13 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118449647"
 ---
-# <a name="no-touch-deployment-web-sample"></a>No-Touch web de implantação
+# <a name="no-touch-deployment-web-sample"></a>No-Touch web de implantação de dados
 
-Este exemplo mostra como implantar um aplicativo de tablet gerenciado pela Web usando a implantação sem toque. Você deve estar familiarizado com os conceitos discutidos em [Implantação](/documentation/?url=%2flibrary%2fdv_vstechart%2fhtml%2fvbtchno-touchdeploymentinnetframework.asp)sem toque no .NET Framework . O computador deve ter Serviços de Informações da Internet da Microsoft (IIS) instalado para executar este exemplo.
+Este exemplo mostra como implantar um aplicativo de tablet gerenciado pela Web usando a implantação sem toque. Você deve estar familiarizado com os conceitos discutidos em [Implantação](/documentation/?url=%2flibrary%2fdv_vstechart%2fhtml%2fvbtchno-touchdeploymentinnetframework.asp)sem toque no .NET Framework . Seu computador deve ter Serviços de Informações da Internet da Microsoft (IIS) instalado para executar este exemplo.
 
 ## <a name="overview"></a>Visão geral
 
-Com a implantação sem toque, o Tablet PCWindows Forms aplica aplicativos da área de trabalho criado usando as classes no Sistema. Windows. O namespace de formulários do Microsoft .NET Framework e do Kit de Desenvolvimento do Microsoft Windows XP Tablet PC Edition 1.7 pode ser baixado, instalado e executado diretamente nos computadores dos usuários sem nenhuma alteração do Registro ou dos componentes do sistema compartilhado.
+Com a implantação sem toque, o Tablet PCWindows Forms aplica aplicativos da área de trabalho criado usando as classes no Sistema. Windows. O namespace de formulários do Microsoft .NET Framework e do Microsoft Windows XP Tablet PC Edition Development Kit 1.7 pode ser baixado, instalado e executado diretamente nos computadores dos usuários sem nenhuma alteração do Registro ou dos componentes do sistema compartilhado.
 
 Este exemplo leva o projeto original para [Exemplo](auto-claims-form-sample.md)de Formulário de Declarações Automáticas, AutoClaims e fornece um projeto do instalador, AutoClaims \_ NoTouchWeb. Depois de compilado e executado, o projeto do instalador cria uma nova raiz virtual, também chamada AutoClaims \_ NoTouchWeb. O instalador copia um arquivo, default.htm, que inclui um link para o assembly AutoClaims.exe. Para iniciar o aplicativo cliente rico, navegue até a raiz virtual com o Microsoft Internet Explorer e clique no link na página default.htm aplicativo.
 

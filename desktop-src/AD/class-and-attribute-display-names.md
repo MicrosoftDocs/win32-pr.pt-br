@@ -9,12 +9,12 @@ keywords:
 - nome de exibição do atributo AD
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1d65cd6ac6fc3077ff0d2bba15ffa9904b147654
-ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.openlocfilehash: 213132acfa6463b1c1e8a7615f5d7f488e53edfcdf9b75f8df5759fcd0e4d398
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "104453953"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118022587"
 ---
 # <a name="class-and-attribute-display-names"></a>Nomes de exibição de classe e atributo
 
@@ -42,7 +42,7 @@ Cada fornecedor deve prefixar o nome de exibição da classe com um identificado
 
 Se um fornecedor estende uma classe existente com novos atributos, ele deve novamente identificar exclusivamente o nome de exibição do atributo para que nenhum conflito ocorra com outros nomes de exibição de atributo. Novamente, a prefixação do nome de exibição do atributo com identificador amigável exclusivo com base no nome do fornecedor é uma prática recomendada. Por exemplo, se a empresa Fabrikam estende a classe user com um novo atributo HR, ela poderia exibir exclusivamente o atributo como "informações da Fabrikam HR".
 
-Além disso, de uma perspectiva de localização, cada fornecedor deve localizar os nomes de exibição de classe e atributo em cada idioma com suporte no Windows 2000.
+além disso, de uma perspectiva de localização, cada fornecedor deve localizar os nomes de exibição de classe e atributo em cada idioma com suporte no Windows 2000.
 
 ## <a name="adding-a-value-to-the-attributedisplaynames-attribute"></a>Adicionando um valor ao atributo attributeDisplayNames
 
@@ -55,6 +55,6 @@ Além disso, de uma perspectiva de localização, cada fornecedor deve localizar
 
 Para obter mais informações sobre como nomear novas classes e atributos, consulte [nomenclatura de atributos e classes](naming-attributes-and-classes.md).
 
- 
+ 
 
- 
+ 

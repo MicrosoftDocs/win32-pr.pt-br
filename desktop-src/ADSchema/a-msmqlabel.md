@@ -1,11 +1,11 @@
 ---
 title: MSMQ-Label atributo
-description: Substituído por MSMQ-Label-ex.
+description: Substituído por MSMQ-Label-Ex.
 ms.assetid: d225fc59-8130-4a5f-98ed-0b1f83198e97
 ms.tgt_platform: multiple
 keywords:
-- Esquema de MSMQ-Label do atributo AD
-- Esquema de AD do atributo mSMQLabel
+- MSMQ-Label atributo AD Schema
+- Esquema do AD do atributo mSMQLabel
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4b24d71e42849e30cfc34ed058d7453f77eb7753
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: a3e9bb3bbf70a82b99c1f1549617fa4aa67ae7563c3eaee3e6dda268096fbb30
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103645439"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118013846"
 ---
 # <a name="msmq-label-attribute"></a>MSMQ-Label atributo
 
-Substituído por [**MSMQ-Label-ex**](a-msmqlabelex.md).
+Substituído por [**MSMQ-Label-Ex.**](a-msmqlabelex.md)
 
 
 
 | Entrada | Valor |
 |-------------------|---------------------------------------------|
 | CN                | MSMQ-Label                                  |
-| LDAP-Display-Name | mSMQLabel                                   |
+| Ldap-Display-Name | mSMQLabel                                   |
 | Tamanho              | \-                                          |
 | Privilégio de atualização  | \-                                          |
 | Frequência de atualização  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.922                      |
-| System-ID-GUID    | 9a0dc325-c100-11d1-bbc5-0080c76670c0        |
-| Syntax            | [**Cadeia de caracteres (Teletex)**](s-string-teletex.md) |
+| System-Id-Guid    | 9a0dc325-c100-11d1-football5-0080c76670c0        |
+| Syntax            | [**String(Teletex)**](s-string-teletex.md) |
 
 
 
@@ -58,10 +58,10 @@ Substituído por [**MSMQ-Label-ex**](a-msmqlabelex.md).
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | True                                         |
-| É indexado             | True                                         |
-| No catálogo global      | True                                         |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
+| Tem valor único       | Verdadeiro                                         |
+| É indexado             | Verdadeiro                                         |
+| No Catálogo Global      | Verdadeiro                                         |
+| Descritor de segurança NT | O:BAG:BAD:S:                                 |
 | Range-Lower            | 0                                            |
 | Range-Upper            | 124                                          |
 | Search-Flags           | 0x00000001                                   |
@@ -79,10 +79,10 @@ Substituído por [**MSMQ-Label-ex**](a-msmqlabelex.md).
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | True                                         |
-| É indexado             | True                                         |
-| No catálogo global      | True                                         |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
+| Tem valor único       | Verdadeiro                                         |
+| É indexado             | Verdadeiro                                         |
+| No Catálogo Global      | Verdadeiro                                         |
+| Descritor de segurança NT | O:BAG:BAD:S:                                 |
 | Range-Lower            | 0                                            |
 | Range-Upper            | 124                                          |
 | Search-Flags           | 0x00000001                                   |
@@ -100,10 +100,10 @@ Substituído por [**MSMQ-Label-ex**](a-msmqlabelex.md).
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | True                                         |
-| É indexado             | True                                         |
-| No catálogo global      | True                                         |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
+| Tem valor único       | Verdadeiro                                         |
+| É indexado             | Verdadeiro                                         |
+| No Catálogo Global      | Verdadeiro                                         |
+| Descritor de segurança NT | O:BAG:BAD:S:                                 |
 | Range-Lower            | 0                                            |
 | Range-Upper            | 124                                          |
 | Search-Flags           | 0x00000001                                   |
@@ -121,10 +121,10 @@ Substituído por [**MSMQ-Label-ex**](a-msmqlabelex.md).
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | True                                         |
-| É indexado             | True                                         |
-| No catálogo global      | True                                         |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
+| Tem valor único       | Verdadeiro                                         |
+| É indexado             | Verdadeiro                                         |
+| No Catálogo Global      | Verdadeiro                                         |
+| Descritor de segurança NT | O:BAG:BAD:S:                                 |
 | Range-Lower            | 0                                            |
 | Range-Upper            | 124                                          |
 | Search-Flags           | 0x00000001                                   |
@@ -142,10 +142,10 @@ Substituído por [**MSMQ-Label-ex**](a-msmqlabelex.md).
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | True                                         |
-| É indexado             | True                                         |
-| No catálogo global      | True                                         |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
+| Tem valor único       | Verdadeiro                                         |
+| É indexado             | Verdadeiro                                         |
+| No Catálogo Global      | Verdadeiro                                         |
+| Descritor de segurança NT | O:BAG:BAD:S:                                 |
 | Range-Lower            | 0                                            |
 | Range-Upper            | 124                                          |
 | Search-Flags           | 0x00000001                                   |
@@ -163,10 +163,10 @@ Substituído por [**MSMQ-Label-ex**](a-msmqlabelex.md).
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | True                                         |
-| É indexado             | True                                         |
-| No catálogo global      | True                                         |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
+| Tem valor único       | Verdadeiro                                         |
+| É indexado             | Verdadeiro                                         |
+| No Catálogo Global      | Verdadeiro                                         |
+| Descritor de segurança NT | O:BAG:BAD:S:                                 |
 | Range-Lower            | 0                                            |
 | Range-Upper            | 124                                          |
 | Search-Flags           | 0x00000001                                   |

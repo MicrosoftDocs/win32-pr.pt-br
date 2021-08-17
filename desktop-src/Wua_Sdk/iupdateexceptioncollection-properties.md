@@ -19,7 +19,7 @@ A interface [**IUpdateExceptionCollection**](/windows/desktop/api/Wuapi/nn-wuapi
 
 | Propriedade                                                 | Descrição                                                                                                          |
 |----------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|
-| [**\_NewEnum**](/windows/desktop/api/Wuapi/nf-wuapi-iupdateexceptioncollection-get__newenum) | Obtém uma interface [**IEnumVARIANT**](/windows/win32/api/oaidl/nn-oaidl-ienumvariant) usada para enumerar a coleção. |
+| [**\_NewEnum**](/windows/desktop/api/Wuapi/nf-wuapi-iupdateexceptioncollection-get__newenum) | Obtém uma interface [**IEnumVARIANT**](/windows/win32/api/oaidl/nn-oaidl-ienumvariant) que é usada para enumerar a coleção. |
 | [**Contagem**](/windows/desktop/api/Wuapi/nf-wuapi-iupdateexceptioncollection-get_count)        | Obtém o número de elementos na coleção.                                                                       |
 | [**Item**](/windows/desktop/api/Wuapi/nf-wuapi-iupdateexceptioncollection-get_item)          | Obtém uma interface [**IUpdateException**](/windows/desktop/api/Wuapi/nn-wuapi-iupdateexception) na coleção.                                    |
 

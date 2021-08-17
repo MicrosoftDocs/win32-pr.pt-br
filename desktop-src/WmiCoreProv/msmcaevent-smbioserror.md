@@ -1,7 +1,7 @@
 ---
-description: Indica um erro de BIOS do sistema de arquitetura de verificação de máquina (MCA). essa classe está disponível somente em sistemas Windows de 64 bits.
+description: Indica um erro de BIOS do sistema MCA (Machine Check Architecture). Essa classe está disponível somente em sistemas de Windows de 64 bits.
 ms.assetid: b451ca45-6208-4445-b9f1-b4e3174837a4
-title: Classe MSMCAEvent_SMBIOSError
+title: MSMCAEvent_SMBIOSError classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -32,11 +32,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118558391"
 ---
-# <a name="msmcaevent_smbioserror-class"></a>\_Classe MSMCAEvent SMBIOSError
+# <a name="msmcaevent_smbioserror-class"></a>Classe MSMCAEvent \_ SMBIOSError
 
-A classe **MSMCAEvent \_ SMBIOSError** indica um erro de BIOS do sistema de arquitetura de verificação de máquina (MCA). essa classe está disponível somente em sistemas Windows de 64 bits.
+A **classe MSMCAEvent \_ SMBIOSError** indica um erro de BIOS do sistema MCA (Arquitetura de Verificação de Máquina). Essa classe está disponível somente em sistemas de Windows de 64 bits.
 
-A sintaxe a seguir é simplificada do código formato MOF (MOF) e inclui todas as suas propriedades herdadas. As propriedades e os métodos estão em ordem alfabética, não em ordem de MOF.
+A sintaxe a seguir é simplificada Managed Object Format código (MOF) e inclui todas as suas propriedades herdadas. As propriedades e os métodos estão em ordem alfabética, não em ordem MOF.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -60,33 +60,33 @@ class MSMCAEvent_SMBIOSError : WMIEvent
 
 ## <a name="members"></a>Membros
 
-A classe **MSMCAEvent \_ SMBIOSError** tem estes tipos de membros:
+A **classe MSMCAEvent \_ SMBIOSError** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **MSMCAEvent \_ SMBIOSError** tem essas propriedades.
+A **classe MSMCAEvent \_ SMBIOSError** tem essas propriedades.
 
 <dl> <dt>
 
 **Ativo**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-**True**, se esta instância da classe estiver ativa; caso contrário, **false**.
+**TRUE**, se esta instância da classe estiver ativa; caso contrário, **FALSE.**
 
 </dd> <dt>
 
 **AdditionalErrors**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -96,20 +96,20 @@ Número de erros adicionais no registro.
 
 </dd> <dt>
 
-**CPUs**
+**Cpu**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-CPU que relatou o erro. Essa propriedade se aplica somente a um sistema multiprocessador no qual o primeiro processador recebe o número 0, o segundo processador recebe o número 1 e assim por diante.
+CPU que relatou o erro. Essa propriedade só se aplica a um sistema multiprocessador no qual o primeiro processador recebe o número 0, o segundo processador recebe o número 1 e assim por diante.
 
 </dd> <dt>
 
-**ErrorSeverity**
+**Errorseverity**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **uint8**
@@ -125,7 +125,7 @@ Nível de severidade do erro relatado.
 | Valor                                                                                                | Significado                |
 |------------------------------------------------------------------------------------------------------|------------------------|
 | <span id="0"></span><dl> <dt>**0**</dt> </dl> | Recuperável<br/> |
-| <span id="1"></span><dl> <dt>**1**</dt> </dl> | Fatais<br/>       |
+| <span id="1"></span><dl> <dt>**1**</dt> </dl> | Fatal<br/>       |
 | <span id="2"></span><dl> <dt>**2**</dt> </dl> | Corrigível<br/> |
 
 
@@ -143,58 +143,58 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [ **chave**](/windows/desktop/WmiSdk/standard-qualifiers)
+Qualificadores: [ **Chave**](/windows/desktop/WmiSdk/standard-qualifiers)
 </dt> </dl>
 
-Identificador exclusivo desta instância da classe.
+Identificador exclusivo dessa instância da classe .
 
 </dd> <dt>
 
 **LogToEventlog**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Se for 0 (zero), esse evento não será registrado no log de eventos do sistema.
+Se 0 (zero), esse evento não será registrado no log de eventos do sistema.
 
 </dd> <dt>
 
 **RawRecord**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: matriz **uint8**
+Tipo de dados: **matriz uint8**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Matriz de bytes que contém o registro de erro bruto. O número de elementos na matriz que a propriedade **size** especifica.
+Matriz de bytes que contém o registro de erro bruto. O número de elementos na matriz especificada **pela propriedade** Size.
 
 </dd> <dt>
 
-**RecordId**
+**Recordid**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt64**
+Tipo de dados: **uint64**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Identificador de registro do registro de erro para este erro.
+Identificador de registro do registro de erro para esse erro.
 
-Para obter mais informações sobre como usar valores de **UInt64** em scripts, consulte [scripts no WMI](/previous-versions//aa393262(v=vs.85)).
+Para obter mais informações sobre como **usar valores uint64** em scripts, consulte [Scripts no WMI](/previous-versions//aa393262(v=vs.85)).
 
 </dd> <dt>
 
 **Tamanho**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -204,7 +204,7 @@ Tamanho do registro de erro bruto.
 
 </dd> <dt>
 
-**\_tipo de evento SMBIOS \_**
+**TIPO DE EVENTO \_ \_ SMBIOS**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **uint8**
@@ -222,18 +222,18 @@ Tipo de evento.
 | <span id="0"></span><dl> <dt>**0**</dt> </dl>   | Reservado.<br/>                                                                                                        |
 | <span id="1"></span><dl> <dt>**1**</dt> </dl>   | Erro de memória ECC de bit único.<br/>                                                                                     |
 | <span id="2"></span><dl> <dt>**2**</dt> </dl>   | Erro de memória ECC de vários bits.<br/>                                                                                   |
-| <span id="3"></span><dl> <dt>**3**</dt> </dl>   | Erro de memória de paridade.<br/>                                                                                             |
-| <span id="4"></span><dl> <dt>**4**</dt> </dl>   | Tempo limite do barramento.<br/>                                                                                                    |
-| <span id="5"></span><dl> <dt>**5**</dt> </dl>   | Verificação de canal de e/s.<br/>                                                                                               |
-| <span id="6"></span><dl> <dt>**6**</dt> </dl>   | NMI de software.<br/>                                                                                                    |
-| <span id="7"></span><dl> <dt>**7**</dt> </dl>   | Redimensionamento da memória de post.<br/>                                                                                              |
-| <span id="8"></span><dl> <dt>**8**</dt> </dl>   | Erro de POSTAgem.<br/>                                                                                                      |
+| <span id="3"></span><dl> <dt>**3**</dt> </dl>   | Erro de Memória de Paridade.<br/>                                                                                             |
+| <span id="4"></span><dl> <dt>**4**</dt> </dl>   | Tempo de tempo de barramento.<br/>                                                                                                    |
+| <span id="5"></span><dl> <dt>**5**</dt> </dl>   | Verificação de canal de E/S.<br/>                                                                                               |
+| <span id="6"></span><dl> <dt>**6**</dt> </dl>   | Software NMI.<br/>                                                                                                    |
+| <span id="7"></span><dl> <dt>**7**</dt> </dl>   | Post Memory Resize.<br/>                                                                                              |
+| <span id="8"></span><dl> <dt>**8**</dt> </dl>   | Erro POST.<br/>                                                                                                      |
 | <span id="9"></span><dl> <dt>**9**</dt> </dl>   | Erro de paridade de PCI.<br/>                                                                                                |
 | <span id="10"></span><dl> <dt>**10**</dt> </dl> | Erro do sistema PCI.<br/>                                                                                                |
 | <span id="11"></span><dl> <dt>**11**</dt> </dl> | Falha de CPU.<br/>                                                                                                     |
-| <span id="12"></span><dl> <dt>**12**</dt> </dl> | Tempo limite do temporizador de failsafe de EISA.<br/>                                                                                    |
-| <span id="13"></span><dl> <dt>**13**</dt> </dl> | Log de memória corrigível desabilitado.<br/>                                                                                 |
-| <span id="14"></span><dl> <dt>**140**</dt> </dl> | Registro em log desabilitado para um tipo de evento específico. Muitos erros do mesmo tipo recebidos em um curto período de tempo.<br/> |
+| <span id="12"></span><dl> <dt>**12**</dt> </dl> | Tempo de tempo de temporizador de failsafe de EISA.<br/>                                                                                    |
+| <span id="13"></span><dl> <dt>**13**</dt> </dl> | Log de memória corrigida desabilitado.<br/>                                                                                 |
+| <span id="14"></span><dl> <dt>**14**</dt> </dl> | Registro em log desabilitado para um tipo de evento específico. Muitos erros do mesmo tipo recebidos em um curto período de tempo.<br/> |
 | <span id="15"></span><dl> <dt>**15**</dt> </dl> | Reservado.<br/>                                                                                                        |
 | <span id="16"></span><dl> <dt>**16**</dt> </dl> | Limite do sistema excedido (por exemplo, limite de tensão ou temperatura excedido).<br/>                                  |
 | <span id="17"></span><dl> <dt>**17**</dt> </dl> | O temporizador de hardware assíncrono expirou e emitiu uma redefinição do sistema.<br/>                                                   |
@@ -259,7 +259,7 @@ Tipo de dados: **uint32**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Tipo de mensagem de log de eventos. Essas mensagens correspondem aos códigos de mensagem do log de eventos usados para inserir mensagens de log de eventos Windows provedor de consumidor do log de eventos quando recebe um dos eventos.
+Tipo de mensagem de log de eventos. Essas mensagens correspondem aos códigos de mensagem do log de eventos usados para inserir mensagens de log de eventos pelo provedor de consumidor do Windows log de eventos quando recebe um dos eventos.
 
 </dd> <dt>
 

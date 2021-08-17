@@ -1,11 +1,11 @@
 ---
-title: Método INapSystemHealthAgentCallback ProcessSoHResponse (NapSystemHealthAgent. h)
-description: É chamado quando o NapAgent recebe um SoHResponse destinado a esse agente de integridade.
+title: Método INapSystemHealthAgentCallback ProcessSoHResponse (NapSystemHealthAgent.h)
+description: É chamado quando NapAgent recebe uma SoHResponse destinada a esse agente de saúde.
 ms.assetid: 860b1012-7df8-456f-8f21-eb0e1abd2b3b
 keywords:
-- Método ProcessSoHResponse NAP
+- Nap do método ProcessSoHResponse
 - Método ProcessSoHResponse NAP, interface INapSystemHealthAgentCallback
-- INapSystemHealthAgentCallback interface NAP, método ProcessSoHResponse
+- Interface NAP de INapSystemHealthAgentCallback , método ProcessSoHResponse
 topic_type:
 - apiref
 api_name:
@@ -23,14 +23,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118367751"
 ---
-# <a name="inapsystemhealthagentcallbackprocesssohresponse-method"></a>INapSystemHealthAgentCallback: método rocessSoHResponse de:P
+# <a name="inapsystemhealthagentcallbackprocesssohresponse-method"></a>Método INapSystemHealthAgentCallback::P rocessSoHResponse
 
 > [!Note]  
-> A plataforma de proteção de acesso à rede não está disponível a partir do Windows 10
+> A plataforma de Proteção de Acesso à Rede não está disponível a partir do Windows 10
 
  
 
-O método **INapSystemHealthAgentCallback::P rocesssohresponse** é chamado quando o NapAgent recebe um [**SoHResponse**](/windows/win32/api/naptypes/ns-naptypes-soh) destinado a esse agente de integridade.
+O **método INapSystemHealthAgentCallback::P rocessSoHResponse** é chamado quando o NapAgent recebe uma [**SoHResponse**](/windows/win32/api/naptypes/ns-naptypes-soh) destinada a esse agente de saúde.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -47,10 +47,10 @@ HRESULT ProcessSoHResponse(
 
 <dl> <dt>
 
-*solicitação* \[ do no\]
+*solicitação* \[ Em\]
 </dt> <dd>
 
-Um ponteiro COM para um objeto [**INapSystemHealthAgentRequest**](inapsystemhealthagentrequest.md) que identifica o objeto de solicitação.
+Um ponteiro COM para um [**objeto INapSystemHealthAgentRequest**](inapsystemhealthagentrequest.md) que identifica o objeto de solicitação.
 
 </dd> </dl>
 
@@ -63,7 +63,7 @@ Esse método pode retornar um desses valores.
 | Código de retorno                                                                                            | Descrição                                                                              |
 |--------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>                   | Indica êxito.<br/>                                                            |
-| <dl> <dt>**\_pacote NAP E \_ inválido \_**</dt> </dl> | Retornado por essa implementação se a resposta não estiver no formato correto.<br/> |
+| <dl> <dt>**NAP \_ E \_ PACOTE \_ INVÁLIDO**</dt> </dl> | Retornado por essa implementação se a resposta não estiver no formato correto.<br/> |
 
 
 
@@ -71,13 +71,13 @@ Esse método pode retornar um desses valores.
 
 ## <a name="remarks"></a>Comentários
 
-Esse método de retorno de chamada é declarado pelo sistema NAP e deve ser implementado pelo gravador SHA.
+Esse método de retorno de chamada é declarado pelo sistema NAP e deve ser implementado pelo sha writer.
 
-Quando o NapAgent recebe um [**SoHResponse**](/windows/win32/api/naptypes/ns-naptypes-soh) destinado a esse agente de integridade, ele invoca esse método. O agente de integridade deve consultar o SoHResponse do objeto de solicitação. Ele não deve manter referências ao objeto de solicitação depois que essa chamada for concluída.
+Quando NapAgent recebe um [**SoHResponse**](/windows/win32/api/naptypes/ns-naptypes-soh) destinado a esse agente de saúde, ele invoca esse método. O agente de saúde deve consultar o SoHResponse do objeto de solicitação. Ele não deve conter referências ao objeto de solicitação depois que essa chamada é concluída.
 
-O método **INapSystemHealthAgentCallback::P rocesssohresponse** não deve bloquear. Se qualquer processamento de correção for necessário, qualquer implementação de **ProcessSoHResponse** deverá iniciar um novo thread para executar o processamento de correção. O NapAgent deve chamar [**INapSystemHealthAgentCallBack:: GetFixupInfo**](inapsystemhealthagentcallback-getfixupinfo-method.md) para determinar o status de correção do Sha.
+O **método INapSystemHealthAgentCallback::P rocessSoHResponse** não deve ser bloqueado. Se qualquer processamento de correção for necessário, qualquer implementação de **ProcessSoHResponse** deverá iniciar um novo thread para executar o processamento de correção. O NapAgent deve chamar [**INapSystemHealthAgentCallBack::GetFixupInfo**](inapsystemhealthagentcallback-getfixupinfo-method.md) para determinar o status de correção do SHA.
 
-Esse método deve retornar **um \_ \_ \_ pacote NAP E inválido** se a resposta não estiver no formato correto.
+Esse método deverá retornar **NAP \_ E INVALID \_ \_ PACKET** se a resposta não estiver no formato correto.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -85,10 +85,10 @@ Esse método deve retornar **um \_ \_ \_ pacote NAP E inválido** se a resposta 
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                                      |
-| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                                |
-| Cabeçalho<br/>                   | <dl> <dt>NapSystemHealthAgent. h</dt> </dl>   |
-| INSERI<br/>                      | <dl> <dt>NapSystemHealthAgent. idl</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                                      |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                                |
+| Cabeçalho<br/>                   | <dl> <dt>NapSystemHealthAgent.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>NapSystemHealthAgent.idl</dt> </dl> |
 
 
 

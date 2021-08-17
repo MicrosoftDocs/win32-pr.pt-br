@@ -1,5 +1,5 @@
 ---
-description: A tabela a seguir lista as classes para consumidores permanentes pré-instalados do WMI.
+description: A tabela a seguir lista as classes de consumidores permanentes pré-instalados do WMI.
 ms.assetid: 1239ea25-2835-4546-b66d-20a83704653e
 ms.tgt_platform: multiple
 title: Classes de consumidor padrão
@@ -14,20 +14,20 @@ ms.locfileid: "118315273"
 ---
 # <a name="standard-consumer-classes"></a>Classes de consumidor padrão
 
-A tabela a seguir lista as classes para consumidores permanentes pré-instalados do WMI. Você pode criar instâncias dessas classes para fornecer a classe de consumidor permanente para fornecer o consumidor lógico que responde quando disparado pelos eventos especificados no filtro. Por exemplo, use a [**classe ActiveScriptEventConsumer**](activescripteventconsumer.md) para definir o script que é executado quando ocorre um evento especificado.
+A tabela a seguir lista as classes de consumidores permanentes pré-instalados do WMI. Você pode criar instâncias dessas classes para fornecer a classe de consumidor permanente para fornecer o consumidor lógico que responde quando disparado pelos eventos especificados no filtro. Por exemplo, use a classe [**ActiveScriptEventConsumer**](activescripteventconsumer.md) para definir o script que é executado quando um evento especificado ocorre.
 
-Para obter mais informações, [consulte Monitoramento e resposta a eventos com consumidores padrão](monitoring-and-responding-to-events-with-standard-consumers.md) e eventos de [monitoramento](monitoring-events.md).
+Para obter mais informações, consulte [monitorando e respondendo a eventos com consumidores padrão](monitoring-and-responding-to-events-with-standard-consumers.md) e [eventos de monitoramento](monitoring-events.md).
 
 
 
 | Classe                                                                        | Descrição                                                                                                                                                                                                                                           |
 |------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**ActiveScriptEventConsumer**](activescripteventconsumer.md)               | Executa um script predefinido em uma linguagem de script arbitrária quando um evento é entregue a ele.<br/> Exemplo: [executando um script com base em um evento](running-a-script-based-on-an-event.md)<br/>                                         |
-| [**CommandLineEventConsumer**](commandlineeventconsumer.md)                 | Inicia um processo arbitrário no contexto do sistema local quando um evento é entregue a ele.<br/> Exemplo: [executando um programa na linha de comando com base em um evento](running-a-program-from-the-command-line-based-on-an-event.md)<br/> |
-| [**LogFileEventConsumer**](logfileeventconsumer.md)                         | Grava cadeias de caracteres personalizadas em um arquivo de log de texto quando os eventos são entregues a ele.<br/> Exemplo: [escrevendo em um arquivo de log com base em um evento](writing-to-a-log-file-based-on-an-event.md)<br/>                                                   |
-| [**NTEventLogEventConsumer**](nteventlogeventconsumer.md)                   | Registra uma mensagem específica no log Windows eventos quando um evento é entregue a ele.<br/> Exemplo: [registro em log no log de eventos do NT com base em um evento](logging-to-nt-event-log-based-on-an-event.md)<br/>                                          |
-| [**ScriptingStandardConsumerSetting**](scriptingstandardconsumersetting.md) | Fornece dados de registro comuns a todas as instâncias da [**classe ActiveScriptEventConsumer.**](activescripteventconsumer.md)<br/>                                                                                                            |
-| [**SMTPEventConsumer**](smtpeventconsumer.md)                               | Envia uma mensagem de email usando SMTP sempre que um evento é entregue a ele.<br/> Exemplo: [enviar email com base em um evento](sending-e-mail-based-on-an-event.md)<br/>                                                                       |
+| [**CommandLineEventConsumer**](commandlineeventconsumer.md)                 | Inicia um processo arbitrário no contexto do sistema local quando um evento é entregue a ele.<br/> Exemplo: [executando um programa da linha de comando com base em um evento](running-a-program-from-the-command-line-based-on-an-event.md)<br/> |
+| [**LogFileEventConsumer**](logfileeventconsumer.md)                         | Grava cadeias de caracteres personalizadas em um arquivo de log de texto quando os eventos são entregues a ele.<br/> Exemplo: [gravando em um arquivo de log baseado em um evento](writing-to-a-log-file-based-on-an-event.md)<br/>                                                   |
+| [**NTEventLogEventConsumer**](nteventlogeventconsumer.md)                   | registra uma mensagem específica no log de eventos Windows quando um evento é entregue a ele.<br/> Exemplo: [log no log de eventos NT com base em um evento](logging-to-nt-event-log-based-on-an-event.md)<br/>                                          |
+| [**ScriptingStandardConsumerSetting**](scriptingstandardconsumersetting.md) | Fornece dados de registro comuns a todas as instâncias da classe [**ActiveScriptEventConsumer**](activescripteventconsumer.md) .<br/>                                                                                                            |
+| [**SMTPEventConsumer**](smtpeventconsumer.md)                               | Envia uma mensagem de email usando SMTP cada vez que um evento é entregue a ele.<br/> Exemplo: [enviando email com base em um evento](sending-e-mail-based-on-an-event.md)<br/>                                                                       |
 
 
 
@@ -46,7 +46,7 @@ Para obter mais informações, [consulte Monitoramento e resposta a eventos com 
 [Executando um script com base em um evento](running-a-script-based-on-an-event.md)
 </dt> <dt>
 
-[Enviar email com base em um evento](sending-e-mail-based-on-an-event.md)
+[Enviando email com base em um evento](sending-e-mail-based-on-an-event.md)
 </dt> </dl>
 
  

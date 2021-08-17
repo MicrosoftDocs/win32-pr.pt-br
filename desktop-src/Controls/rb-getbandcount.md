@@ -1,9 +1,9 @@
 ---
-title: Mensagem de RB_GETBANDCOUNT (commctrl. h)
-description: Recupera a contagem de faixas atualmente no controle rebar.
+title: RB_GETBANDCOUNT mensagem (Commctrl.h)
+description: Recupera a contagem de faixas atualmente no controle de barra de rebar.
 ms.assetid: cd521a6b-18ed-4343-8bd8-1b6548b1ac81
 keywords:
-- controles de Windows de mensagem de RB_GETBANDCOUNT
+- RB_GETBANDCOUNT controles de Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -21,9 +21,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118409626"
 ---
-# <a name="rb_getbandcount-message"></a>\_Mensagem GETBANDCOUNT RB
+# <a name="rb_getbandcount-message"></a>Mensagem GETBANDCOUNT do RB \_
 
-Recupera a contagem de faixas atualmente no controle rebar.
+Recupera a contagem de faixas atualmente no controle de barra de rebar.
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -37,7 +37,7 @@ Recupera a contagem de faixas atualmente no controle rebar.
 
 ## <a name="return-value"></a>Valor retornado
 
-Retorna um valor **uint** que representa o número de faixas atribuídas ao controle.
+Retorna um **valor UINT** que representa o número de faixas atribuídas ao controle.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -45,9 +45,9 @@ Retorna um valor **uint** que representa o número de faixas atribuídas ao cont
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

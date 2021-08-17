@@ -3,7 +3,7 @@ title: Referência de MCIWnd
 description: Referência de MCIWnd
 ms.assetid: 11fba6bb-17f1-4fbe-b148-4755a3c6216a
 keywords:
-- MCI (Interface de Controle de Mídia), Referência de MCIWnd
+- MCI (interface de controle de mídia), referência de MCIWnd
 - Classe de janela MCIWnd, referência
 - Janela MCIWnd, referência
 - Referência de MCIWnd, sobre
@@ -18,7 +18,7 @@ ms.locfileid: "118374352"
 ---
 # <a name="mciwnd-reference"></a>Referência de MCIWnd
 
-Esta seção descreve as funções, mensagens e macros associadas à classe de janela MCIWnd. Esses elementos são agrupados da seguinte forma.
+Esta seção descreve as funções, as mensagens e as macros associadas à classe de janela MCIWnd. Esses elementos são agrupados da seguinte maneira.
 
 ## <a name="window-management"></a>Gerenciamento de janela
 
@@ -27,7 +27,7 @@ Esta seção descreve as funções, mensagens e macros associadas à classe de j
 -   [**MCIWndGetStyles**](/windows/desktop/api/Vfw/nf-vfw-mciwndgetstyles)
 -   [**MCIWndRegisterClass**](/windows/desktop/api/Vfw/nf-vfw-mciwndregisterclass)
 
-## <a name="file-and-device-management"></a>Arquivo e Gerenciamento de Dispositivos
+## <a name="file-and-device-management"></a>Gerenciamento de arquivos e dispositivos
 
 -   [**MCIWndClose**](/windows/desktop/api/Vfw/nf-vfw-mciwndclose)
 -   [**MCIWndDestroy**](/windows/desktop/api/Vfw/nf-vfw-mciwnddestroy)
@@ -64,7 +64,7 @@ Esta seção descreve as funções, mensagens e macros associadas à classe de j
 -   [**MCIWndSeek**](/windows/desktop/api/Vfw/nf-vfw-mciwndseek)
 -   [**MCIWndStep**](/windows/desktop/api/Vfw/nf-vfw-mciwndstep)
 
-## <a name="pause-and-resume-playback"></a>Pausar e retomar a reprodução
+## <a name="pause-and-resume-playback"></a>Pausar e retomar reprodução
 
 -   [**MCIWndGetRepeat**](/windows/desktop/api/Vfw/nf-vfw-mciwndgetrepeat)
 -   [**MCIWndPlay**](/windows/desktop/api/Vfw/nf-vfw-mciwndplay)
@@ -98,7 +98,7 @@ Esta seção descreve as funções, mensagens e macros associadas à classe de j
 -   [**MCIWndGetError**](/windows/desktop/api/Vfw/nf-vfw-mciwndgeterror)
 -   [**MCIWNDM \_ NOTIFYERROR**](mciwndm-notifyerror.md)
 -   [**MCIWNDM \_ NOTIFYMEDIA**](mciwndm-notifymedia.md)
--   [**MCIWNDM \_ NOTIFYMODE**](mciwndm-notifymode.md)
+-   [**\_notificador MCIWNDM**](mciwndm-notifymode.md)
 -   [**MCIWNDM \_ NOTIFYPOS**](mciwndm-notifypos.md)
 -   [**MCIWNDM \_ NOTIFYSIZE**](mciwndm-notifysize.md)
 
@@ -127,7 +127,7 @@ Esta seção descreve as funções, mensagens e macros associadas à classe de j
 -   [**MCIWndCanSave**](/windows/desktop/api/Vfw/nf-vfw-mciwndcansave)
 -   [**MCIWndCanWindow**](/windows/desktop/api/Vfw/nf-vfw-mciwndcanwindow)
 
-## <a name="mci-device-settings"></a>Dispositivo MCI Configurações
+## <a name="mci-device-settings"></a>Configurações de dispositivo MCI
 
 -   [**MCIWndGetAlias**](/windows/desktop/api/Vfw/nf-vfw-mciwndgetalias)
 -   [**MCIWndGetDevice**](/windows/desktop/api/Vfw/nf-vfw-mciwndgetdevice)
@@ -135,7 +135,7 @@ Esta seção descreve as funções, mensagens e macros associadas à classe de j
 -   [**MCIWndGetFileName**](/windows/desktop/api/Vfw/nf-vfw-mciwndgetfilename)
 -   [**MCIWndGetMode**](/windows/desktop/api/Vfw/nf-vfw-mciwndgetmode)
 
-## <a name="mci-command-string-interface"></a>MCI Command-String Interface
+## <a name="mci-command-string-interface"></a>Interface de Command-String MCI
 
 -   [**MCIWndReturnString**](/windows/desktop/api/Vfw/nf-vfw-mciwndreturnstring)
 -   [**MCIWndSendString**](/windows/desktop/api/Vfw/nf-vfw-mciwndsendstring)

@@ -11,20 +11,20 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 90283ddf2aad0a1a5affb5a503ac693ee3350742
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 62c8b2553abc94c7764a630e4943bae31ac82f0193fda472af4e388883a18a4c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104293282"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117789101"
 ---
 # <a name="rasadminacceptnewconnection-callback-function"></a>Função de retorno de chamada RasAdminAcceptNewConnection
 
 Não há suporte para essa função de retorno de chamada.
 
- 
+ 
 
- 
+ 
 
 
 

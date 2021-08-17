@@ -13,12 +13,12 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: aab18245c6502d4d3424e6ed6727eceb5a329d48
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 31ac0164ed3cd69dbeb71adc44c6e3a15b9092db79c7972800068dc06a378786
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103829099"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118046997"
 ---
 # <a name="smc_refresh-message"></a>Mensagem de atualização do SMC \_
 
@@ -36,7 +36,7 @@ SMC_REFRESH
 
 Esta mensagem não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retornar S \_ OK.
 

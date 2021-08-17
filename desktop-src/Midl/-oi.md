@@ -1,9 +1,9 @@
 ---
-title: Comutador/Oi
-description: As opções/Oi e/OIC orientam o compilador MIDL a usar um método de marshaling totalmente interpretado. A opção/Oicf fornece aprimoramentos de desempenho adicionais.
+title: /Oi switch
+description: As opções /Oi e /Oic direcionam o compilador MIDL a usar um método de marshaling totalmente interpretado. A opção /Oicf fornece aprimoramentos de desempenho adicionais.
 ms.assetid: cf597a45-410f-4098-850b-240c6ebce23b
 keywords:
-- MIDL do comutador/Oi
+- /Oi switch MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,81 +12,81 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1671b16640d3f3214f10138e50a2ac08b6114674
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: f38b6faee202e15b7c551297678ce301cbfdcb853b48ecd15c75dda7bb281e72
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104161922"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118385280"
 ---
-# <a name="oi-switch"></a>Comutador/Oi
+# <a name="oi-switch"></a>/Oi switch
 
-As opções **/Oi** e **/OIC** orientam o compilador MIDL a usar um método de marshaling totalmente interpretado. A opção **/Oicf** fornece aprimoramentos de desempenho adicionais.
+As **opções /Oi** e **/Oic** direcionam o compilador MIDL a usar um método de marshaling totalmente interpretado. A **opção /Oicf** fornece aprimoramentos de desempenho adicionais.
 
 ``` syntax
 midl /{Oi | Oic | Oif | Oicf}
 ```
 
-## <a name="switch-options"></a>Opções de comutação
+## <a name="switch-options"></a>Opções de opção
 
 <dl> <dt>
 
 *Oi* 
 </dt> <dd>
 
-Especifica o método totalmente interpretado para o empacotamento do código stub passado entre o cliente e o servidor.
+Especifica o método totalmente interpretado para marshaling de código stub passado entre o cliente e o servidor.
 
 > [!Note]  
-> Essa opção é obsoleta. É recomendável que a opção **/Oicf** seja usada em seu lugar.
+> Essa opção está obsoleta. É recomendável que a **opção /Oicf** seja usada em seu lugar.
 
- 
+ 
 
 </dd> <dt>
 
 *Oic* 
 </dt> <dd>
 
-Especifica o método de proxy sem código de marshaling que fornece todos os recursos do **/Oi** e também reduz ainda mais o tamanho do código stub do cliente para interfaces de objeto.
+Especifica o método de proxy sem código de marshaling que fornece todos os recursos **de /Oi** e também reduz ainda mais o tamanho do código stub do cliente para interfaces de objeto.
 
 > [!Note]  
-> Essa opção é obsoleta. É recomendável que a opção **/Oicf** seja usada em seu lugar.
+> Essa opção está obsoleta. É recomendável que a **opção /Oicf** seja usada em seu lugar.
 
- 
+ 
 
 </dd> <dt>
 
-*OIF ou Oicf* 
+*Oif ou Oicf* 
 </dt> <dd>
 
-Especifica o método de proxy sem código de marshaling que inclui todos os recursos fornecidos por **/Oi** e **/OIC** , mas usa um novo interpretador (cadeias de caracteres de formato rápido) que fornece melhor desempenho do que o **/Oi** ou o **/OIC**. Essa opção inclui aprimoramentos de RPC recentes e é recomendada para cenários de RPC modernos.
+Especifica o método de proxy sem código de marshaling que inclui todos os recursos fornecidos por **/Oi** e **/Oic,** mas usa um novo interpretador (cadeias de caracteres de formato rápido) que fornece melhor desempenho do que **/Oi** **ou /Oic**. Essa opção inclui aprimoramentos recentes de RPC e é recomendada para cenários RPC modernos.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-Observe as restrições relacionadas às plataformas de suporte.
+Observe as restrições relacionadas a plataformas de suporte.
 
-O compilador MIDL 3,0 fornece dois métodos para empacotamento de código: totalmente interpretado ( **/Oi**, **/OIC** e **/Oicf**) e [**/os**](-os.md)(modo misto). Começando com o MIDL versão 6.0.359, o compilador MIDL gera stubs **/Oicf** Â  [**/robust**](-robust.md) por padrão. Alguns recursos de linguagem não têm suporte em alguns modos. Nesse caso, o compilador alterna automaticamente para o modo apropriado e emite um aviso.
+O compilador MIDL 3.0 fornece dois métodos para marshaling de código: totalmente interpretado ( **/Oi**, **/Oic** e **/Oicf**) e modo misto ( [**/Os**](-os.md)). A partir da versão MIDL 6.0.359, o compilador MIDL gera **/Oicf** Â [**/robust**](-robust.md) stubs por padrão. Alguns recursos de linguagem não têm suporte em alguns modos. Nesse caso, o compilador alterna automaticamente para o modo apropriado e emite um aviso.
 
-Se o desempenho for uma preocupação, o método de modo misto ( [**/os**](-os.md)) pode ser a melhor abordagem. Nesse modo, o compilador escolhe realizar marshaling de alguns parâmetros embutidos nos stubs gerados. Embora isso resulte em um tamanho maior de stub, ele oferece maior desempenho.
+Se o desempenho for uma preocupação, o método de modo misto ( [**/Os**](-os.md)) poderá ser a melhor abordagem. Nesse modo, o compilador opta por fazer marshal de alguns parâmetros em linha nos stubs gerados. Embora isso resulta em um tamanho maior de stub, ele oferece maior desempenho.
 
-O método totalmente interpretado realiza marshaling de dados completamente offline. Isso reduz consideravelmente o tamanho do código stub, mas resulta em desempenho reduzido. Além disso, com o método totalmente interpretado, há um limite de 16 parâmetros para cada procedimento. Qualquer procedimento que contenha mais de 16 parâmetros será automaticamente processado no modo [**/os**](-os.md) . Entre os modos interpretados, o **/Oicf** oferece o melhor desempenho e o **/Oi** oferece a melhor compatibilidade com versões anteriores.
+O método totalmente interpretado marshals de dados completamente offline. Isso reduz consideravelmente o tamanho do código stub, mas resulta em desempenho reduzido. Além disso, com o método totalmente interpretado, há um limite de 16 parâmetros para cada procedimento. Qualquer procedimento que contenha mais de 16 parâmetros será processado automaticamente no [**modo /Os.**](-os.md) Entre os modos interpretados, **/Oicf** oferece o melhor desempenho e **/Oi** oferece a melhor compatibilidade com backward.
 
-Talvez você queira usar a opção **/OIF** se seu aplicativo usar recursos de MIDL que foram introduzidos com MIDL 3,0, como os \[ atributos de [**\_ marshaling de conexão**](wire-marshal.md) \] e de \[ [**\_ marshaling do usuário**](user-marshal.md) \] . Se seu aplicativo usa [pipes](/windows/desktop/Rpc/pipes) , você deve usar a opção **/OIF** ; Se você especificar outro modo, o compilador MIDL será alternado para **/OIF**.
+Talvez você queira usar a opção **/Oif** se seu aplicativo usar recursos MIDL introduzidos com MIDL 3.0, como o marshal de transmissão e os atributos de \[ [**\_**](wire-marshal.md) \] marshal \[ [**\_ do**](user-marshal.md) \] usuário. Se o aplicativo usar [pipes,](/windows/desktop/Rpc/pipes) você deverá usar a **opção /Oif;** se você especificar outro modo, o compilador MIDL alterna para **/Oif**.
 
-Para ajustar a maneira como seu código de stub é empacotado, o Microsoft RPC fornece um atributo de ACF \[ [**Optimize**](optimize.md) \] . Esse atributo é usado como um atributo de interface ou atributo de operação para selecionar o modo de marshaling para interfaces individuais ou para operações individuais.
+Para ajustar a maneira como o código stub é empacotado, o Microsoft RPC fornece um atributo de \[ [**otimização**](optimize.md) do \] ACF. Esse atributo é usado como um atributo de interface ou atributo de operação para selecionar o modo de marshaling para interfaces individuais ou para operações individuais.
 
 ### <a name="calling-conventions"></a>Convenções de chamada
 
-Os stubs gerados pelo compilador MIDL no método interpretado usando as opções **/Oi**, **/OIC** ou **/OIF** devem ser compilados como um procedimento stdcall ou cdecl durante a compilação de C. Uma Convenção de chamada PASCAL ou fastcall não funcionará. Além disso, o stub do servidor deve ser compilado como stdcall.
+Stubs gerados pelo compilador MIDL no método interpretado usando as opções **/Oi**, **/Oic** ou **/Oif** devem ser compilados como um procedimento stdcall ou cdecl durante a compilação C. Uma convenção de chamada PASCAL ou Fastcall não funcionará. Além disso, o stub do servidor deve ser compilado como stdcall.
 
 ## <a name="examples"></a>Exemplos
 
-**MIDL/Oi filename. idl**
+**midl /Oi filename.idl**
 
-**MIDL/OIC filename. idl**
+**midl /Oic filename.idl**
 
-**MIDL/OIF filename. idl**
+**midl /Oif filename.idl**
 
 ## <a name="see-also"></a>Confira também
 
@@ -95,21 +95,21 @@ Os stubs gerados pelo compilador MIDL no método interpretado usando as opções
 [**/robust**](-robust.md)
 </dt> <dt>
 
-[**// \_ avançado**](-no-robust.md)
+[**/no \_ robust**](-no-robust.md)
 </dt> <dt>
 
-[Sintaxe de linha de comando MIDL geral](general-midl-command-line-syntax.md)
+[Sintaxe geral da linha de comando MIDL](general-midl-command-line-syntax.md)
 </dt> <dt>
 
-[**/Os**](-os.md)
+[**/os**](-os.md)
 </dt> <dt>
 
-[**formato**](optimize.md)
+[**Otimizar**](optimize.md)
 </dt> <dt>
 
-[**\_opção de formato de/// \_**](-no-format-opt.md)
+[**/no \_ format \_ opt**](-no-format-opt.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

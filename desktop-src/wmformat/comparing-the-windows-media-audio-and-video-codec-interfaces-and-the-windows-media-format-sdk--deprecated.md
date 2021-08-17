@@ -1,9 +1,9 @@
 ---
-title: comparando as Interfaces do Codec de áudio e vídeo de mídia Windows e o SDK do formato de mídia do Windows
-description: para obter a documentação atual sobre codecs de mídia Windows e processadores de sinal digitais, consulte Windows áudio de mídia e o Codec de vídeo e APIs do DSP. | comparando as Interfaces do Codec de áudio e vídeo de mídia Windows e o SDK do formato de mídia do Windows
+title: Comparando as interfaces Windows codec de áudio e vídeo de mídia e o SDK Windows formato de mídia
+description: Para ver a documentação atual sobre Windows de mídia e processadores de sinal digital, consulte Windows codec de áudio e vídeo de mídia e APIs DSP. | Comparando as interfaces Windows codec de áudio e vídeo de mídia e o SDK Windows formato de mídia
 ms.assetid: 829c289e-f297-43bb-9628-0f6da397e80f
 keywords:
-- comparando as Interfaces do Codec de áudio e vídeo de mídia Windows e o formato Windows de mídia do Windows media format SDK
+- Comparando as interfaces Windows codec de áudio e vídeo de mídia e o formato de mídia Windows formato de mídia do SDK do Windows
 topic_type:
 - apiref
 api_name:
@@ -19,9 +19,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118434363"
 ---
-# <a name="comparing-the-windows-media-audio-and-video-codec-interfaces-and-the-windows-media-format-sdk"></a>comparando as Interfaces do Codec de áudio e vídeo de mídia Windows e o SDK do formato de mídia do Windows
+# <a name="comparing-the-windows-media-audio-and-video-codec-interfaces-and-the-windows-media-format-sdk"></a>Comparando as interfaces Windows codec de áudio e vídeo de mídia e o SDK Windows formato de mídia
 
-para obter a documentação atual sobre codecs de mídia Windows e processadores de sinal digitais, consulte [Windows áudio de mídia e o Codec de vídeo e APIs do DSP.](/previous-versions//dd464626(v=vs.85))
+Para ver a documentação atual Windows codecs de mídia e processadores de sinal digital, consulte Windows codec de áudio e vídeo de mídia e [APIs DSP.](/previous-versions//dd464626(v=vs.85))
 
  
 

@@ -1,13 +1,13 @@
 ---
-title: Sobre as APIs estendidas Windows cliente DRM de mídia
-description: Sobre as APIs estendidas Windows cliente DRM de mídia
+title: sobre as APIs estendidas do cliente de DRM de mídia Windows
+description: sobre as APIs estendidas do cliente de DRM de mídia Windows
 ms.assetid: 8a410929-bf47-45f0-9a7b-a161efd353f3
 keywords:
-- Windows SDK de Formato de Mídia, APIs Estendidas do Cliente DRM
-- Windows SDK de formato de mídia, APIs estendidas do cliente
-- Windows SDK de formato de mídia, APIs estendidas
-- Windows SDK de formato de mídia, APIs
-- Windows SDK de Formato de Mídia, DRM (gerenciamento de direitos digitais)
+- Windows SDK do formato de mídia, APIs estendidas do cliente DRM
+- Windows SDK do formato de mídia, APIs estendidas do cliente
+- Windows SDK do formato de mídia, APIs estendidas
+- Windows SDK do formato de mídia, APIs
+- Windows SDK do formato de mídia, DRM (gerenciamento de direitos digitais)
 - DRM (gerenciamento de direitos digitais), APIs estendidas do cliente
 - DRM (gerenciamento de direitos digitais), APIs estendidas do cliente
 - DRM (gerenciamento de direitos digitais), APIs estendidas
@@ -25,9 +25,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118434722"
 ---
-# <a name="about-the-windows-media-drm-client-extended-apis"></a>Sobre as APIs estendidas Windows cliente DRM de mídia
+# <a name="about-the-windows-media-drm-client-extended-apis"></a>sobre as APIs estendidas do cliente de DRM de mídia Windows
 
-As Windows APIs (Interfaces de Programação de Aplicativos Estendidos) Rights Management DRM (Media Digital Rights Management) permitem que os desenvolvedores de aplicativos gerenciem operações de DRM do lado do cliente.
+as Interfaces de programação de aplicativo (APIs) estendidas do cliente de Rights Management Digital Windows (DRM) permitem que os desenvolvedores de aplicativos gerenciem operações de DRM do lado do cliente.
 
 Esta visão geral contém as seções a seguir.
 
@@ -35,12 +35,12 @@ Esta visão geral contém as seções a seguir.
 
 | Seção                                                                                                              | Descrição                                                                                                |
 |----------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
-| [Visão geral do DRM Windows Mídia](overview-of-windows-media-drm.md)                                                   | Fornece uma visão geral simples do processo drm.                                                             |
-| [Conceitos](drmconcepts.md)                                                                                          | Descreve conceitos centrais para entender as APIs estendidas Windows cliente DRM de mídia.                    |
-| [Introdução aos usuários do SDK Windows Formato de Mídia](introduction-for-users-of-the-windows-media-format-sdk.md) | Fornece informações sobre como usar essas APIs em conjunto com o SDK Windows Formato de Mídia.              |
-| [Importando e exportando conteúdo protegido por DRM](importing-and-exporting-drm-protected-content.md)                   | Descreve a função principal das APIs estendidas Windows cliente drm de mídia.                                  |
-| [Aplicativos de exemplo](drm-sample-applications.md)                                                                   | Descreve os aplicativos de exemplo e o código de exemplo contidos nas APIs Estendidas Windows Cliente DRM de Mídia. |
-| [Para obter mais informações](drm-for-more-information.md)                                                                 | Descreve onde encontrar recursos adicionais Windows DRM de Mídia no site da Microsoft.                  |
+| [visão geral do DRM de mídia Windows](overview-of-windows-media-drm.md)                                                   | Fornece uma visão geral simples do processo DRM.                                                             |
+| [Conceitos](drmconcepts.md)                                                                                          | descreve os conceitos centrais para compreender as Windows APIs estendidas do cliente DRM de mídia.                    |
+| [introdução para usuários do SDK do formato de mídia do Windows](introduction-for-users-of-the-windows-media-format-sdk.md) | fornece informações sobre como usar essas APIs em conjunto com o SDK do formato de mídia Windows.              |
+| [Importando e exportando conteúdo protegido por DRM](importing-and-exporting-drm-protected-content.md)                   | descreve a função primária do Windows de APIs estendidas do cliente DRM de mídia.                                  |
+| [Aplicativos de exemplo](drm-sample-applications.md)                                                                   | descreve os aplicativos de exemplo e o código de exemplo contidos no Windows as APIs estendidas do cliente DRM de mídia. |
+| [Para obter mais informações](drm-for-more-information.md)                                                                 | descreve onde encontrar recursos adicionais de DRM de mídia Windows no site da Microsoft.                  |
 
 
 

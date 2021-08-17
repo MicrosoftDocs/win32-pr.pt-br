@@ -6,12 +6,12 @@ keywords:
 - multiamostrando, estado do rasterizador (Direct3D 10)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ac95a15221f6fd4bd422e96c0686816afb35d4e8
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 8e819dd92dd9c07a71f3830d3b67e371bc3d0e0c98f62fa36fdcf8ee3550ecd3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104294086"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117913997"
 ---
 # <a name="getting-started-with-the-rasterizer-stage"></a>Introdução com o estágio rasterizador
 
@@ -142,6 +142,6 @@ Não há restrições para misturar renderização de multiamostra e sem amostra
 [Estágio de rasterizador](d3d10-graphics-programming-guide-rasterizer-stage.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

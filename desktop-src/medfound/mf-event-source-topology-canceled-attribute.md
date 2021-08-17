@@ -4,12 +4,12 @@ ms.assetid: b7252336-1612-43fc-8f08-1fdfdbb293eb
 title: Atributo MF_EVENT_SOURCE_TOPOLOGY_CANCELED (Mfapi. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a2a161aec292d834b0418f59f1c26ea2f11a538e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ef612c8a1081ecc26eaa9dc593a5906ff965d0387ab02490eedd68f7fbf5e813
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105755500"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118060653"
 ---
 # <a name="mf_event_source_topology_canceled-attribute"></a>\_Atributo de topologia de origem de evento MF \_ \_ \_ cancelado
 
@@ -38,9 +38,9 @@ A constante de GUID para esse atributo é exportada de mfuuid. lib.
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                     |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                               |
-| parâmetro<br/>                   | <dl> <dt>Mfapi. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                     |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                               |
+| Cabeçalho<br/>                   | <dl> <dt>Mfapi. h</dt> </dl> |
 
 
 

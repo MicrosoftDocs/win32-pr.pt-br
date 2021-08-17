@@ -3,7 +3,7 @@ title: RB_GETBANDINFO mensagem (Commctrl.h)
 description: Recupera informações sobre uma faixa especificada em um controle de barra rebar.
 ms.assetid: c2a76c91-7d44-4278-823d-bd263520e7a8
 keywords:
-- RB_GETBANDINFO controles Windows mensagem
+- RB_GETBANDINFO controles de Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -57,7 +57,7 @@ Retornará diferente de zero se for bem-sucedido ou zero caso contrário.
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
 | Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 | Nomes Unicode e ANSI<br/>   | **RB \_ GETBANDINFOW** (Unicode) e **RB \_ GETBANDINFOA** (ANSI)<br/>             |
 
 

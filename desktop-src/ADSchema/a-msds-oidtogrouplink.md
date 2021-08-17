@@ -1,11 +1,11 @@
 ---
-title: atributo ms-DS-OIDToGroup-link
+title: Atributo ms-DS-OIDToGroup-Link
 description: Para um OID, identifica o objeto de grupo que corresponde à política de emissão representada por esse OID.
 ms.assetid: aebd0803-9c8f-4a33-8982-739941d65754
 ms.tgt_platform: multiple
 keywords:
-- ms-DS-OIDToGroup-vincular atributo AD Schema
-- atributo msDS-OIDToGroupLink do AD Schema
+- Esquema do AD do atributo ms-DS-OIDToGroup-Link
+- Esquema do AD do atributo msDS-OIDToGroupLink
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 61d562cb2ac1c07b5dd0507bc8b059662e3abc55
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 7acd07f3d1d323b300f914724cfc3d75492eb65631eef8b0331b974d4f54379b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103919491"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118014417"
 ---
-# <a name="ms-ds-oidtogroup-link-attribute"></a>atributo ms-DS-OIDToGroup-link
+# <a name="ms-ds-oidtogroup-link-attribute"></a>Atributo ms-DS-OIDToGroup-Link
 
 Para um OID, identifica o objeto de grupo que corresponde à política de emissão representada por esse OID.
 
@@ -29,14 +29,14 @@ Para um OID, identifica o objeto de grupo que corresponde à política de emiss�
 
 | Entrada | Valor |
 |-------------------|-----------------------------------------|
-| CN                | ms-DS-OIDToGroup-link                   |
-| LDAP-Display-Name | msDS-OIDToGroupLink                     |
+| CN                | ms-DS-OIDToGroup-Link                   |
+| Ldap-Display-Name | msDS-OIDToGroupLink                     |
 | Tamanho              | \-                                      |
 | Privilégio de atualização  | \-                                      |
 | Frequência de atualização  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.2051                 |
-| System-ID-GUID    | f9c9a57c-3941-438d-bebf-0edaf2aca187    |
-| Syntax            | [**Objeto (DS-DN)**](s-object-ds-dn.md) |
+| System-Id-Guid    | f9c9a57c-3941-438d-bebf-0edaf2bf187    |
+| Syntax            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
 
@@ -54,15 +54,15 @@ Para um OID, identifica o objeto de grupo que corresponde à política de emiss�
 | ID do link                | 2164                                                               |
 | MAPI-Id                | \-                                                                 |
 | System-Only            | Falso                                                              |
-| É de valor único       | True                                                               |
+| Tem valor único       | Verdadeiro                                                               |
 | É indexado             | Falso                                                              |
-| No catálogo global      | Falso                                                              |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                       |
+| No Catálogo Global      | Falso                                                              |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000010                                                         |
-| Classes usadas em        | [**MS-PKI-Enterprise-OID**](c-mspki-enterprise-oid.md)<br/> |
+| Classes usadas em        | [**ms-PKI-Enterprise-Oid**](c-mspki-enterprise-oid.md)<br/> |
 
 
 
@@ -75,15 +75,15 @@ Para um OID, identifica o objeto de grupo que corresponde à política de emiss�
 | ID do link                | 2164                                                               |
 | MAPI-Id                | \-                                                                 |
 | System-Only            | Falso                                                              |
-| É de valor único       | True                                                               |
+| Tem valor único       | Verdadeiro                                                               |
 | É indexado             | Falso                                                              |
-| No catálogo global      | Falso                                                              |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                       |
+| No Catálogo Global      | Falso                                                              |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000010                                                         |
-| Classes usadas em        | [**MS-PKI-Enterprise-OID**](c-mspki-enterprise-oid.md)<br/> |
+| Classes usadas em        | [**ms-PKI-Enterprise-Oid**](c-mspki-enterprise-oid.md)<br/> |
 
 
 

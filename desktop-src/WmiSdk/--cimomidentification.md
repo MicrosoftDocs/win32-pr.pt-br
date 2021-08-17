@@ -18,12 +18,12 @@ api_type:
 - Schema
 api_location:
 - Root
-ms.openlocfilehash: a8590a2a83cdbc9bd06575cf17ddbe65138a4a31
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 50d81fb8cfc5580ad0868df307771c493c0919e1bf2ce4de4b67d48db034a0d2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105765710"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118321106"
 ---
 # <a name="__cimomidentification-class"></a>\_\_Classe CIMOMIdentification
 
@@ -124,7 +124,7 @@ A classe **\_ \_ CIMOMIdentification** é derivada de [**\_ \_ SystemClass**](--
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo de código VBScript a seguir descreve como exibir informações de identificação do modelo de objeto CIM e foi tirado do diretório de exemplo em \\ \\ arquivos de programas \\ Microsoft SDKs \\ Windows \\ v 7.0 \\ Samples \\ Sysmgmt \\ WMI \\ scripting.
+o exemplo de código VBScript a seguir descreve como exibir informações de identificação do modelo de objeto CIM e foi tirado do diretório de exemplo em \\ \\ arquivos de programas \\ Microsoft SDKs \\ Windows \\ v 7.0 \\ samples \\ sysmgmt \\ wmi \\ scripting.
 
 
 ```VB
@@ -141,7 +141,7 @@ end if
 
 
 
-O exemplo de código Perl a seguir descreve como exibir informações de identificação do modelo de objeto CIM e foi tirado do diretório de exemplo em \\ \\ arquivos de programas \\ Microsoft SDKs \\ Windows \\ v 7.0 \\ Samples \\ Sysmgmt \\ WMI \\ scripting.
+o exemplo de código Perl a seguir descreve como exibir informações de identificação do modelo de objeto CIM e foi tirado do diretório de exemplo em \\ \\ arquivos de programas \\ Microsoft SDKs \\ Windows \\ v 7.0 \\ samples \\ sysmgmt \\ wmi \\ scripting.
 
 
 ```Perl

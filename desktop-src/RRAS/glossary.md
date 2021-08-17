@@ -1,21 +1,21 @@
 ---
 title: Glossário (RRAS)
-description: Este glossário contém definições para termos usados na documentação dos serviços de roteamento e acesso remoto (RRAS).
+description: este glossário contém definições para termos usados na documentação do roteamento e Serviços do Access remoto (RRAS).
 ms.assetid: f01310bb-dd74-41de-8a55-ca91b805dfd2
 keywords:
 - RRAS, Glossário
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0bc73cab4d3f8be9f14e09a49ee89c6f5a800f79
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: 267df34f4e0e5dd1eb81547714f917c55c770b659471b5cecae8c5e3cfdd35f7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "103917929"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117791459"
 ---
 # <a name="glossary-rras"></a>Glossário (RRAS)
 
-Este glossário contém definições para termos usados na documentação dos serviços de roteamento e acesso remoto (RRAS).
+este glossário contém definições para termos usados na documentação do roteamento e Serviços do Access remoto (RRAS).
 
 O RRAS usa sua própria coleção de termos. Leia a lista de definições a seguir com cuidado para entender o que significa quando esses termos ocorrem na documentação do RRAS.
 

@@ -65,7 +65,7 @@ Se um controle de edição for criado com o estilo [**SENHA do \_ ES,**](edit-co
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                                           |
 | Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                                     |
-| parâmetro<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 

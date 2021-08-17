@@ -7,12 +7,12 @@ keywords:
 - Active Directory de segurança
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1260260d1eea02bbb242d42989208c43b32231fa
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: f2a37c3791fdcd5c9f9bbe8a1b43e1ac88a8892ba1b725b9d3279f7079146b8a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103915933"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118183890"
 ---
 # <a name="security-in-active-directory-domain-services"></a>Segurança em Active Directory Domain Services
 
@@ -26,9 +26,9 @@ Os tópicos a seguir discutem os elementos importantes de segurança no Active D
 
 Para obter mais informações e exemplos de código, consulte [controlando o acesso a objetos no Active Directory Domain Services](controlling-access-to-objects-in-active-directory-domain-services.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -24,26 +24,26 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: eea249347acd18ec71f03fcdc82b8a2baa1da9ed
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ec768d48a03216a7cad72b5125c9444437f78a7738c2986235174fb5eac24623
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104170182"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118083869"
 ---
 # <a name="columnstream-class"></a>Classe ColumnStream
 
-Essa classe fornece uma interface de streaming para uma coluna de valor longo (ou seja, uma coluna do tipo [LongBinary](./jet-coltyp-enumeration.md) ou [LONGTEXT](./jet-coltyp-enumeration.md)).
+Essa classe fornece uma interface de streaming para uma coluna de valor longo (ou seja, uma coluna do tipo [LongBinary](./jet-coltyp-enumeration.md) ou [LongText](./jet-coltyp-enumeration.md)).
 
 ## <a name="inheritance-hierarchy"></a>Hierarquia de herança
 
 [System.Object](/dotnet/api/system.object)  
   [System.MarshalByRefObject](/dotnet/api/system.marshalbyrefobject)  
-    [System. IO. Stream](/dotnet/api/system.io.stream)  
-      Microsoft. ISAM. ESENT. Interop. ColumnStream  
+    [System.IO.Stream](/dotnet/api/system.io.stream)  
+      Microsoft.Isam.Esent.Interop.ColumnStream  
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Syntax
 
@@ -67,6 +67,6 @@ Qualquer membro estático público (Shared no Visual Basic) desse tipo é seguro
 
 #### <a name="reference"></a>Referência
 
-[Membros do ColumnStream](./columnstream-members.md)
+[Membros de ColumnStream](./columnstream-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

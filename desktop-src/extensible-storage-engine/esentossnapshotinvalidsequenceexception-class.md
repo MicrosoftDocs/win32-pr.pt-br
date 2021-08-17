@@ -1,5 +1,5 @@
 ---
-description: 'Saiba mais sobre: classe EsentOSSnapshotInvalidSequenceException'
+description: 'Saiba mais sobre: Classe EsentOSSnapshotInvalidSequenceException'
 title: Classe EsentOSSnapshotInvalidSequenceException
 TOCTitle: EsentOSSnapshotInvalidSequenceException class
 ms:assetid: T:Microsoft.Isam.Esent.Interop.EsentOSSnapshotInvalidSequenceException
@@ -24,29 +24,29 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 8de0731ab72e313ad6a6563e06d6204d196ffea7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d4b77af3e2881fb1ec134114154c956e80a033354cae7995a800f87e09a397a5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103827998"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117898801"
 ---
 # <a name="esentossnapshotinvalidsequenceexception-class"></a>Classe EsentOSSnapshotInvalidSequenceException
 
-Classe base para JET_err. OSSnapshotInvalidSequence exceções.
+Classe base para JET_err. Exceções OSSnapshotInvalidSequence.
 
 ## <a name="inheritance-hierarchy"></a>Hierarquia de herança
 
 [System.Object](/dotnet/api/system.object)  
-  [System. Exception](/dotnet/api/system.exception)  
-    [Microsoft. ISAM. ESENT. EsentException](./esentexception-class.md)  
-      [Microsoft. ISAM. ESENT. Interop. EsentErrorException](./esenterrorexception-class.md)  
-        [Microsoft. ISAM. ESENT. Interop. EsentApiException](./esentapiexception-class.md)  
-          [Microsoft. ISAM. ESENT. Interop. EsentUsageException](./esentusageexception-class.md)  
-            Microsoft. ISAM. ESENT. Interop. EsentOSSnapshotInvalidSequenceException  
+  [System.Exception](/dotnet/api/system.exception)  
+    [Microsoft.Isam.Esent.EsentException](./esentexception-class.md)  
+      [Microsoft.Isam.Esent.Interop.EsentErrorException](./esenterrorexception-class.md)  
+        [Microsoft.Isam.Esent.Interop.EsentApiException](./esentapiexception-class.md)  
+          [Microsoft.Isam.Esent.Interop.EsentUsageException](./esentusageexception-class.md)  
+            Microsoft.Isam.Esent.Interop.EsentOSSnapshotInvalidSequenceException  
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Syntax
 
@@ -72,6 +72,6 @@ Qualquer membro estático público (Shared no Visual Basic) desse tipo é seguro
 
 #### <a name="reference"></a>Referência
 
-[Membros do EsentOSSnapshotInvalidSequenceException](./esentossnapshotinvalidsequenceexception-members.md)
+[Membros EsentOSSnapshotInvalidSequenceException](./esentossnapshotinvalidsequenceexception-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

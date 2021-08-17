@@ -7,12 +7,12 @@ keywords:
 - ADSI de segurança, ADSI ADSI, usando, segurança
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 886d7f174df48a6d78e546d0987a3f5743a6a2b5
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: eac7667bb0ab8a30be0e95e90a2c752b3a1bc076d16bd29007875025a22a9639
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104363658"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118018166"
 ---
 # <a name="adsi-security-model"></a>Modelo de segurança ADSI
 
@@ -23,9 +23,9 @@ Esta seção descreve os tópicos a seguir.
 -   [Autenticação](authentication.md)
 -   [Descritores de segurança em arquivos e chaves do registro](security-descriptors-on-files-and-registry-keys.md)
 
- 
+ 
 
- 
+ 
 
 
 

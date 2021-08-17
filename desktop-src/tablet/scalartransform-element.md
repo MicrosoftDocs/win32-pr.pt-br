@@ -1,5 +1,5 @@
 ---
-description: Transformação escalar usada pelo Drawing ou InkWord.
+description: Transformação escalar usada pelo desenho ou InkWord.
 ms.assetid: 88fc3b90-9ec6-41c0-9267-ed5b585ea07b
 title: Elemento ScalarTransform
 ms.topic: reference
@@ -13,7 +13,7 @@ ms.locfileid: "118449336"
 ---
 # <a name="scalartransform-element"></a>Elemento ScalarTransform
 
-Transformação escalar usada pelo [**Drawing**](drawing-element.md) ou [**InkWord.**](inkword-element.md)
+Transformação escalar usada pelo [**desenho**](drawing-element.md) ou [**InkWord**](inkword-element.md).
 
 ## <a name="definition"></a>Definição
 
@@ -57,9 +57,9 @@ Nenhum.
 
 | Elemento      | Valor                                                                       |
 |--------------|-----------------------------------------------------------------------------|
-| Tipo de elemento | [**ComplexType ScalarTransformType**](scalartransformtype-complex-type.md) |
-| Namespace    | urn:schemas-microsoft-com:tabletpc:richink                                  |
-| Nome do esquema  | Leitor de Diário                                                              |
+| Tipo de elemento | ComplexType [**ScalarTransformType**](scalartransformtype-complex-type.md) |
+| Namespace    | urn: esquemas-Microsoft-com: Tablet: RichInk                                  |
+| Nome do esquema  | Leitor de diário                                                              |
 
 
 

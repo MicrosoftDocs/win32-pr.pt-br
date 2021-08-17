@@ -162,7 +162,7 @@ Inicie cada documento novo e adicione páginas a ele. Depois de passar todos os 
 
 1.  Crie um fluxo de trabalho de impressão chamando [**StartXpsPrintJob.**](/windows/win32/api/xpsprint/nf-xpsprint-startxpsprintjob)
 2.  Crie um URI de parte para a parte FixedDocumentSequence.
-3.  Crie um novo autor do pacote no fluxo de trabalho de impressão.
+3.  Crie um novo autor de pacote no fluxo de trabalho de impressão.
 4.  Para cada documento a ser gravado:
     1.  Crie um novo URI de parte para a parte FixedDocument.
     2.  Inicie um novo documento no autor do pacote.

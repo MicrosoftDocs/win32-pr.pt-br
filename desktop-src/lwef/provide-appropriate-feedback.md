@@ -4,16 +4,16 @@ description: Fornecer comentários apropriados
 ms.assetid: e89b5f08-645e-4048-a153-4f01de8e82f0
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b8002e79822e03c3f1044b61ec2b25ab4e807f71
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: d872abbd1f21d0b3a5e30797258be62216b8e9b43adc544ac9bc71790c38ee43
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104004771"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118475378"
 ---
 # <a name="provide-appropriate-feedback"></a>Fornecer comentários apropriados
 
-\[O Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
+\[o Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
 
 Qualidade, adequação e tempo são fatores importantes a serem considerados ao fornecer comentários em qualquer design de interface. Quando você incorpora caracteres interativos, as oportunidades de formas naturais de comentários aumentam, assim como a expectativa do usuário de que os comentários estão em conformidade com a interação social apropriada. Um caractere pode ser criado para fornecer indicações de conversas verbal e não verbal, além da saída de áudio falada. Use gestos ou expressões faciais para transmitir informações sobre seu humor ou intenção. A face é especialmente importante na comunicação, portanto, sempre considere a expressão facial do caractere. Tenha em mente que nenhuma expressão facial *é* uma expressão facial.
 
@@ -23,9 +23,9 @@ Por outro lado, o movimento de corpo grande, o movimento de corpo incomum ou uma
 
 O posicionamento e a movimentação do caractere devem ser apropriados para sua participação na tarefa atual do usuário. Se a tarefa atual envolver o caractere, o caractere poderá ser colocado no ponto de foco. Quando o usuário não estiver interagindo com o caractere, mova-o para um local de "espera" consistente ou para onde ele não interfira nas tarefas ou distraia o usuário. Sempre forneça uma lógica para a forma como o caractere obtém de um local para outro. Da mesma forma, os usuários se sentem mais confortáveis quando o caractere é exibido no mesmo local da tela do qual ele é repartedo.
 
- 
+ 
 
- 
+ 
 
 
 

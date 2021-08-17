@@ -39,7 +39,7 @@ LocationDisp.CivicAddressReportFactory.ReportInterval = ReportInterval
 
 ## <a name="property-value"></a>Valor da propriedade
 
-Essa propriedade é um **ULONG de leitura/gravação.**
+Essa propriedade é um ULONG de **leitura/gravação.**
 
 ## <a name="remarks"></a>Comentários
 

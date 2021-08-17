@@ -64,7 +64,7 @@ UpdateWindow(hwndMain);
 
 
 
-Observe que o exemplo anterior chama a [**função ShowWindow**](/windows/win32/api/winuser/nf-winuser-showwindow) depois de criar a janela principal. Isso é feito porque o sistema não exibe automaticamente a janela principal após a criação. Passando o **sinalizador SW \_ SHOWDEFAULT** para **ShowWindow**, o aplicativo permite que o programa que iniciou o aplicativo de definir o estado inicial do show da janela principal. A [**função UpdateWindow**](/windows/win32/api/winuser/nf-winuser-updatewindow) envia à janela sua primeira mensagem [**WM \_ PAINT.**](../gdi/wm-paint.md)
+Observe que o exemplo anterior chama a [**função ShowWindow**](/windows/win32/api/winuser/nf-winuser-showwindow) depois de criar a janela principal. Isso é feito porque o sistema não exibe automaticamente a janela principal após a criação. Ao passar o **sinalizador SW \_ SHOWDEFAULT** para **ShowWindow**, o aplicativo permite que o programa que iniciou o aplicativo de definir o estado inicial do show da janela principal. A [**função UpdateWindow**](/windows/win32/api/winuser/nf-winuser-updatewindow) envia à janela sua primeira mensagem [**WM \_ PAINT.**](../gdi/wm-paint.md)
 
 ## <a name="creating-enumerating-and-sizing-child-windows"></a>Criação, enumeração e criação de Windows
 

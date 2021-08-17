@@ -133,14 +133,14 @@ As funções **glBegin** e [**glend**](glend.md) delimitam os vértices que defi
     | 1                          | point             |
     | 2                          | line              |
     | 3                          | triangle          |
-    | 4                          | diamante     |
+    | 4                          | Quadrilátero     |
     | 3                          | polygon           |
 
     
 
      
 
--   Os modos que exigem um determinado múltiplo de vértices são \_ linhas GL (2), \_ triângulos GL (3), GL \_ quádruplos (4) e GL \_ Quad \_ strip (2).
+-   Os modos que exigem um determinado múltiplo de vértices são GL \_ LINES (2), GL \_ TRIANGLES (3), GL \_ QUADS (4) e GL \_ QUAD STRIP \_ (2).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -150,8 +150,8 @@ As funções **glBegin** e [**glend**](glend.md) delimitam os vértices que defi
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                              |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                    |
-| Cabeçalho<br/>                   | <dl> <dt>GL. h</dt> </dl>         |
-| Biblioteca<br/>                  | <dl> <dt>Opengl32. lib</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Gl.h</dt> </dl>         |
+| Biblioteca<br/>                  | <dl> <dt>Opengl32.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Opengl32.dll</dt> </dl> |
 
 

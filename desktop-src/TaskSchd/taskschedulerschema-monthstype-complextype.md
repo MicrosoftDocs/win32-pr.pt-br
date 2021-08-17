@@ -1,9 +1,9 @@
 ---
-title: Tipo complexo monthtype
-description: Define os elementos filho e as informações de sequenciamento dos elementos months (monthlyDayOfWeekScheduleType) e months (monthlyScheduleType).
+title: Tipo complexo monthsType
+description: Define os elementos filho e informações de sequenciamento para os elementos Months (monthlyDayOfWeekScheduleType) e Months (monthlyScheduleType).
 ms.assetid: f1faa67a-2f5f-4a00-a1df-2d44e218278b
 keywords:
-- tipo complexo monthtype Agendador de Tarefas
+- tipo complexo monthsType Agendador de Tarefas
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: e6a19000073fd12e05aa915921850264979a0541
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a0873f07cc76af9fab827c3df98a8f08ef300de93d4ae6b316809ba32aac87ba
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103644384"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117758742"
 ---
-# <a name="monthstype-complex-type"></a>Tipo complexo monthtype
+# <a name="monthstype-complex-type"></a>Tipo complexo monthsType
 
-Define os elementos filho e as informações de sequenciamento dos elementos [**months (monthlyDayOfWeekScheduleType)**](taskschedulerschema-months-monthlydayofweekscheduletype-element.md) e [**months (monthlyScheduleType)**](taskschedulerschema-months-monthlyscheduletype-element.md) .
+Define os elementos filho e informações de sequenciamento para os elementos [**Months (monthlyDayOfWeekScheduleType)**](taskschedulerschema-months-monthlydayofweekscheduletype-element.md) e [**Months (monthlyScheduleType).**](taskschedulerschema-months-monthlyscheduletype-element.md)
 
 ``` syntax
 <xs:complexType name="monthsType">
@@ -97,18 +97,18 @@ Define os elementos filho e as informações de sequenciamento dos elementos [**
 
 | Elemento                                                               | Type | Descrição                                            |
 |-----------------------------------------------------------------------|------|--------------------------------------------------------|
-| [**Amanda**](taskschedulerschema-april-monthstype-element.md)         | N/D  | Especifica que a tarefa é executada em abril. <br/>     |
-| [**Agosto**](taskschedulerschema-august-monthstype-element.md)       | N/D  | Especifica que a tarefa é executada em agosto. <br/>    |
-| [**Dezembro**](taskschedulerschema-december-monthstype-element.md)   | N/D  | Especifica que a tarefa é executada em dezembro. <br/>  |
-| [**Fevereiro**](taskschedulerschema-february-monthstype-element.md)   | N/D  | Especifica que a tarefa é executada em fevereiro. <br/>  |
-| [**Janeiro**](taskschedulerschema-january-monthstype-element.md)     | N/D  | Especifica que a tarefa é executada em Janeiro. <br/>   |
-| [**Julho**](taskschedulerschema-july-monthstype-element.md)           | N/D  | Especifica que a tarefa é executada em julho. <br/>      |
-| [**Junho**](taskschedulerschema-june-monthstype-element.md)           | N/D  | Especifica que a tarefa é executada em junho. <br/>      |
-| [**Março**](taskschedulerschema-march-monthstype-element.md)         | N/D  | Especifica que a tarefa é executada em março. <br/>     |
-| [**Mai**](taskschedulerschema-may-monthstype-element.md)             | N/D  | Especifica que a tarefa é executada em maio. <br/>       |
-| [**Novembro**](taskschedulerschema-november-monthstype-element.md)   | N/D  | Especifica que a tarefa é executada em novembro. <br/>  |
-| [**Outubro**](taskschedulerschema-october-monthstype-element.md)     | N/D  | Especifica que a tarefa é executada em outubro. <br/>   |
-| [**Setembro**](taskschedulerschema-september-monthstype-element.md) | N/D  | Especifica que a tarefa é executada em setembro. <br/> |
+| [**Abril**](taskschedulerschema-april-monthstype-element.md)         | N/D  | Especifica que a tarefa é executado em abril. <br/>     |
+| [**Agosto**](taskschedulerschema-august-monthstype-element.md)       | N/D  | Especifica que a tarefa é executado em agosto. <br/>    |
+| [**Dezembro**](taskschedulerschema-december-monthstype-element.md)   | N/D  | Especifica que a tarefa é executado em dezembro. <br/>  |
+| [**Fevereiro**](taskschedulerschema-february-monthstype-element.md)   | N/D  | Especifica que a tarefa é executado em fevereiro. <br/>  |
+| [**Janeiro**](taskschedulerschema-january-monthstype-element.md)     | N/D  | Especifica que a tarefa é executado em janeiro. <br/>   |
+| [**Julho**](taskschedulerschema-july-monthstype-element.md)           | N/D  | Especifica que a tarefa é executado em julho. <br/>      |
+| [**Junho**](taskschedulerschema-june-monthstype-element.md)           | N/D  | Especifica que a tarefa é executado em junho. <br/>      |
+| [**Março**](taskschedulerschema-march-monthstype-element.md)         | N/D  | Especifica que a tarefa é executado em março. <br/>     |
+| [**Mai**](taskschedulerschema-may-monthstype-element.md)             | N/D  | Especifica que a tarefa é executado em maio. <br/>       |
+| [**Novembro**](taskschedulerschema-november-monthstype-element.md)   | N/D  | Especifica que a tarefa é executado em novembro. <br/>  |
+| [**Outubro**](taskschedulerschema-october-monthstype-element.md)     | N/D  | Especifica que a tarefa é executado em outubro. <br/>   |
+| [**Setembro**](taskschedulerschema-september-monthstype-element.md) | N/D  | Especifica que a tarefa é executado em setembro. <br/> |
 
 
 
@@ -118,8 +118,8 @@ Define os elementos filho e as informações de sequenciamento dos elementos [**
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
 
 
 
@@ -127,7 +127,7 @@ Define os elementos filho e as informações de sequenciamento dos elementos [**
 
 <dl> <dt>
 
-[Tipos complexos de esquema de Agendador de Tarefas](task-scheduler-schema-complex-types.md)
+[Agendador de Tarefas complexos de esquema](task-scheduler-schema-complex-types.md)
 </dt> <dt>
 
 [Agendador de Tarefas](task-scheduler-start-page.md)

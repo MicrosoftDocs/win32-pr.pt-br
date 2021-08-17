@@ -2,7 +2,7 @@
 description: O método Reset da classe CIM \_ USBDevice solicita uma redefinição do dispositivo lógico.
 ms.assetid: fdb9d23c-60b4-4a32-aa69-5bef501d8c6a
 ms.tgt_platform: multiple
-title: Método reset da classe CIM_USBDevice dados
+title: Método de redefinição da CIM_USBDevice classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -26,7 +26,7 @@ ms.locfileid: "118418519"
 O **método Reset** da classe CIM \_ USBDevice solicita uma redefinição do dispositivo lógico. Esse método é herdado [**de CIM \_ LogicalDevice.**](cim-logicaldevice.md)
 
 > [!IMPORTANT]
-> As classes CIM (Distributed Management Task Force) modelo CIM DMTF são as classes pai nas quais as classes WMI são criadas. Atualmente, o WMI dá suporte apenas aos esquemas de versão [do CIM 2.x.](https://dmtf.org/standards/cim/schemas)
+> As classes CIM (Distributed Management Task Force) do DMTF (Distributed Management Task Force) modelo CIM são as classes pai nas quais as classes WMI são criadas. Atualmente, o WMI dá suporte apenas aos esquemas de versão [do CIM 2.x.](https://dmtf.org/standards/cim/schemas)
 
  
 

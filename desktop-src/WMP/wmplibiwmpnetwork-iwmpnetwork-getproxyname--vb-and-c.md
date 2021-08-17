@@ -1,11 +1,11 @@
 ---
-title: Método getproxyname de IWMPNetwork
-description: O método getproxyname retorna o nome do servidor proxy que está sendo usado.
+title: Método getProxyName de IWMPNetwork
+description: O método getProxyName retorna o nome do servidor proxy que está sendo usado.
 ms.assetid: 69396b01-1da7-450c-b229-0cc4fb832ae9
 keywords:
-- método getproxyname do Windows Media Player
-- método getproxyname Windows Media Player, interface IWMPNetwork
-- Interface IWMPNetwork do Windows Media Player, método getproxyname
+- Método getProxyName Windows Media Player
+- Método getProxyName Windows Media Player , interface IWMPNetwork
+- Interface IWMPNetwork Windows Media Player , método getProxyName
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3e5e05b6552e5e6a922cf02037a0bfc4956bfc28
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2e5c8c15df5e741c02bf3c47ecac8b3f57d4adddfeeb41cb6a71cf418b600006
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105754476"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117745934"
 ---
-# <a name="iwmpnetworkgetproxyname-method"></a>Método IWMPNetwork:: getproxyname
+# <a name="iwmpnetworkgetproxyname-method"></a>Método IWMPNetwork::getProxyName
 
-O método **Getproxyname** retorna o nome do servidor proxy que está sendo usado.
+O **método getProxyName** retorna o nome do servidor proxy que está sendo usado.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -53,24 +53,24 @@ Implements IWMPNetwork.getProxyName
 
 <dl> <dt>
 
-*bstrProtocol* \[ no\]
+*bstrProtocol* \[ Em\]
 </dt> <dd>
 
-Um **System. String** que é o nome do protocolo. Para obter uma lista de protocolos com suporte, consulte [protocolos e tipos de arquivos com suporte](supported-protocols-and-file-types.md).
+Um **System.String que** é o nome do protocolo. Para ver uma lista de protocolos com suporte, consulte [Protocolos com suporte e tipos de arquivo](supported-protocols-and-file-types.md).
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Um **System. String** que é o nome do servidor proxy que está sendo usado. O valor é significativo somente quando **IWMPNetwork. getProxySettings** retorna um valor de 2 (use as configurações manuais).
+Um **System.String** que é o nome do servidor proxy que está sendo usado. O valor é significativo somente quando **IWMPNetwork.getProxySettings** retorna um valor de 2 (use configurações manuais).
 
 ## <a name="remarks"></a>Comentários
 
-Esse método falha a menos que o aplicativo de chamada esteja em execução no computador local ou na intranet.
+Esse método falha, a menos que o aplicativo de chamada esteja em execução no computador local ou na intranet.
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo de código a seguir usa **Getproxyname** para exibir os nomes do servidor proxy do Windows Media Player para os protocolos http e MMS. O objeto **AxWMPLib. AxWindowsMediaPlayer** é representado pela variável chamada Player.
+O exemplo de código a seguir **usa getProxyName** para exibir os Windows Media Player de servidor proxy para os protocolos HTTP e MMS. O **objeto AxWMPLib.AxWindowsMediaPlayer** é representado pela variável chamada player.
 
 
 ```CSharp
@@ -135,7 +135,7 @@ proxyNameText.Lines = proxyNames
 
 | Requisito | Valor |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versão<br/>   | Windows Media Player 9 Series ou posterior<br/>                                                                      |
+| Versão<br/>   | Windows Media Player série 9 ou posterior<br/>                                                                      |
 | Namespace<br/> | **WMPLib**<br/>                                                                                                  |
 | Assembly<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 
@@ -148,10 +148,10 @@ proxyNameText.Lines = proxyNames
 [**Interface IWMPNetwork (VB e C#)**](iwmpnetwork--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPNetwork. getProxySettings (VB e C#)**](wmplibiwmpnetwork-iwmpnetwork-getproxysettings--vb-and-c.md)
+[**IWMPNetwork.getProxySettings (VB e C#)**](wmplibiwmpnetwork-iwmpnetwork-getproxysettings--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPNetwork. setproxyname (VB e C#)**](wmplibiwmpnetwork-iwmpnetwork-setproxyname--vb-and-c.md)
+[**IWMPNetwork.setProxyName (VB e C#)**](wmplibiwmpnetwork-iwmpnetwork-setproxyname--vb-and-c.md)
 </dt> </dl>
 
  

@@ -4,12 +4,12 @@ ms.assetid: 4F33BF2D-EB32-46B6-B071-F9130D404201
 title: Atributo MF_MT_VIDEO_3D_FIRST_IS_LEFT (Mfapi. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 027d91509d772a9200cdfc0ac64cce15514aa5a5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 19b7deed122f3de419455abf54bfcc18ad50ef199d87afa8bcaad8d34000a011
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104370785"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117876797"
 ---
 # <a name="mf_mt_video_3d_first_is_left-attribute"></a>O \_ \_ atributo 3D de vídeo MF MT \_ \_ First \_ é \_ Left
 
@@ -49,9 +49,9 @@ Por padrão, a primeira exibição é a exibição à esquerda e a segunda exibi
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Aplicativos de \[ aplicativos da área de trabalho do Windows 8 \| UWP\]<br/>                                  |
-| Servidor mínimo com suporte<br/> | Aplicativos do Windows Server 2012 \[ Desktop aplicativos \| UWP\]<br/>                        |
-| parâmetro<br/>                   | <dl> <dt>Mfapi. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 8 \[ aplicativos UWP de aplicativos de desktop \|\]<br/>                                  |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 \[ aplicativos UWP de aplicativos de desktop \|\]<br/>                        |
+| Cabeçalho<br/>                   | <dl> <dt>Mfapi. h</dt> </dl> |
 
 
 

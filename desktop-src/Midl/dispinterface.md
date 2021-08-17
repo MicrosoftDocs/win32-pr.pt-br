@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2f7cc2b6087b53ff81aa7270a209266dd8248884
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 3df65adc3bfa486907df0465f2fca5a1427f6d0b1eb89b5c02e6f199be71e9e8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "103823754"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118384663"
 ---
 # <a name="dispinterface-attribute"></a>atributo dispinterface
 
@@ -74,13 +74,13 @@ O nome pelo qual a **dispinterface** é conhecida na biblioteca de tipos. Esse n
 
 (Sintaxe 1) Uma lista que inclui um protótipo de função para cada método e Propriedade na **dispinterface**. Qualquer número de definições de função pode aparecer em *methlist*. Uma função em *methlist* tem o seguinte formato:
 
-**\[  atributos \]** *ReturnType methname tipo paramName ***(*** params * * *);**
+**\[**_atributos_ *_\]_* do *ReturnType methname tipo paramName ***(**_params_*_);_*
 
 Os atributos a seguir são aceitos em um método em uma **dispinterface**: **\[ \] HelpString**, **\[ HelpContext \]**, **\[** [**propget**](propget.md) **\]** , **\[** [**propput**](propput.md) **\]** , **\[** [**propputref**](propputref.md) **\]** , **\[** [**String**](string.md) **\]** e **\[** [**vararg**](vararg.md) **\]** . Se **\[ vararg \]** for especificado, o último parâmetro deverá ser uma matriz segura de tipo **Variant** .
 
 A lista de parâmetros é uma lista delimitada por vírgula, cada elemento do qual tem o seguinte formato:
 
-**\[***atributos***\]**
+**\[**_atributos_*_\]_*
 
 O *tipo* pode ser qualquer tipo declarado ou interno, ou um ponteiro para qualquer tipo. Os atributos em parâmetros são:
 
@@ -134,7 +134,7 @@ O exemplo anterior declara todos os membros de Hello e todos os membros que Hell
 > [!Note]  
 > A ferramenta de Mktyplib.exe está obsoleta. Em vez disso, use o compilador MIDL.
 
- 
+ 
 
 As propriedades e os métodos de uma Dispinterface não fazem parte do VTBL da dispinterface. Consequentemente, [CreateStdDispatch](/windows/win32/api/oleauto/nf-oleauto-createstddispatch) e [DispInvoke](/windows/win32/api/oleauto/nf-oleauto-dispinvoke) não podem ser usados para implementar IDispatch:: Invoke. A dispinterface é usada quando um aplicativo precisa expor funções não VTBL existentes por meio da automação. Esses aplicativos podem implementar IDispatch:: Invoke examinando o parâmetro dispidMember e chamando diretamente a função correspondente.
 
@@ -250,6 +250,6 @@ dispinterface MyObject
 [**Versão**](version.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

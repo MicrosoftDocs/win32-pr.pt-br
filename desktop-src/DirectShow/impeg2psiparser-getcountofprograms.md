@@ -1,7 +1,7 @@
 ---
-description: Método IMpeg2PsiParser::GetCountOfPrograms – a implementação desse método é fornecida como código de exemplo com o SDK do DirectShow. Não é uma API de DirectShow com suporte.
+description: 'método IMpeg2PsiParser:: GetCountOfPrograms – a implementação desse método é fornecida como um código de exemplo com o SDK DirectShow. não é uma API DirectShow com suporte.'
 ms.assetid: 282dd779-9aca-46e3-a791-cb9ea86f637d
-title: Método IMpeg2PsiParser::GetCountOfPrograms
+title: 'Método IMpeg2PsiParser:: GetCountOfPrograms'
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -19,9 +19,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118398103"
 ---
-# <a name="impeg2psiparsergetcountofprograms-method"></a>Método IMpeg2PsiParser::GetCountOfPrograms
+# <a name="impeg2psiparsergetcountofprograms-method"></a>Método IMpeg2PsiParser:: GetCountOfPrograms
 
-A implementação desse método é fornecida como código de exemplo com o DirectShow SDK. Não é uma API de DirectShow com suporte.
+a implementação desse método é fornecida como um código de exemplo com o SDK do DirectShow. não é uma API DirectShow com suporte.
 
 O `GetCountOfPrograms` método recupera o número de programas no fluxo de transporte.
 
@@ -40,7 +40,7 @@ HRESULT GetCountOfPrograms(
 
 <dl> <dt>
 
-*pNumOfPrograms* \[ out\]
+*pNumOfPrograms* \[ fora\]
 </dt> <dd>
 
 Ponteiro para uma variável que recebe o número de programas.
@@ -49,11 +49,11 @@ Ponteiro para uma variável que recebe o número de programas.
 
 ## <a name="return-value"></a>Valor retornado
 
-O método retorna um valor HRESULT. Os valores possíveis incluem, mas não estão limitados a, os valores mostrados na tabela a seguir.
+O método retorna um valor HRESULT. Os valores possíveis incluem, mas não se limitam a, os valores mostrados na tabela a seguir.
 
 
 
-| Código de retorno                                                                          | Description         |
+| Código de retorno                                                                          | Descrição         |
 |--------------------------------------------------------------------------------------|---------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl> | Êxito.<br/> |
 
@@ -65,7 +65,7 @@ O método retorna um valor HRESULT. Os valores possíveis incluem, mas não est�
 
 <dl> <dt>
 
-[**IMpeg2PsiParser Interface**](impeg2psiparser.md)
+[**Interface IMpeg2PsiParser**](impeg2psiparser.md)
 </dt> <dt>
 
 [Exemplo de filtro do analisador PSI](psi-parser-filter-sample.md)

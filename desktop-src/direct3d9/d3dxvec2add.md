@@ -1,7 +1,7 @@
 ---
 description: Adiciona dois vetores 2D.
 ms.assetid: 82b2fdf6-1b1f-4768-8c0b-ac8faa77d7ed
-title: Função D3DXVec2Add (D3dx9math. h)
+title: Função D3DXVec2Add (D3dx9math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 5087177448b01763bd94acb9b50c27c6cdf38815
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: f9ab63d23a4370c2c64143d2289bd1324a3ebf684d30caf06db3eab2cd4e2915
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103930574"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117730889"
 ---
 # <a name="d3dxvec2add-function"></a>Função D3DXVec2Add
 
@@ -42,42 +42,42 @@ D3DXVECTOR2* D3DXVec2Add(
 
 <dl> <dt>
 
-*pout* \[ entrada, saída\]
+*pOut* \[ in, out\]
 </dt> <dd>
 
 Tipo: **[ **D3DXVECTOR2**](d3dxvector2.md)\***
 
-Ponteiro para a estrutura [**D3DXVECTOR2**](d3dxvector2.md) que é o resultado da operação.
+Ponteiro para a [**estrutura D3DXVECTOR2**](d3dxvector2.md) que é o resultado da operação.
 
 </dd> <dt>
 
-*pV1* \[ no\]
+*pV1* \[ Em\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR2**](d3dxvector2.md) \***
 
-Ponteiro para uma estrutura de [**D3DXVECTOR2**](d3dxvector2.md) de origem.
+Ponteiro para uma estrutura [**D3DXVECTOR2 de**](d3dxvector2.md) origem.
 
 </dd> <dt>
 
-*pV2* \[ no\]
+*pV2* \[ Em\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR2**](d3dxvector2.md) \***
 
-Ponteiro para uma estrutura de [**D3DXVECTOR2**](d3dxvector2.md) de origem.
+Ponteiro para uma estrutura [**D3DXVECTOR2 de**](d3dxvector2.md) origem.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **D3DXVECTOR2**](d3dxvector2.md)\***
 
-Ponteiro para uma estrutura [**D3DXVECTOR2**](d3dxvector2.md) que é a soma dos dois vetores.
+Ponteiro para uma [**estrutura D3DXVECTOR2**](d3dxvector2.md) que é a soma dos dois vetores.
 
 ## <a name="remarks"></a>Comentários
 
-O valor de retorno para essa função é o mesmo valor retornado no parâmetro *pout* . Dessa forma, a função **D3DXVec2Add** pode ser usada como um parâmetro para outra função.
+O valor retornado para essa função é o mesmo valor retornado no *parâmetro pOut.* Dessa forma, a **função D3DXVec2Add** pode ser usada como um parâmetro para outra função.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -85,8 +85,8 @@ O valor de retorno para essa função é o mesmo valor retornado no parâmetro *
 
 | Requisito | Valor |
 |--------------------|----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3dx9math. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| parâmetro<br/>  | <dl> <dt>D3dx9math.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

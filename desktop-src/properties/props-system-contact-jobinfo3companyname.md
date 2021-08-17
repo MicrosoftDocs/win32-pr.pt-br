@@ -1,7 +1,7 @@
 ---
-description: System.Contact.JobInfo3CompanyName
+description: System. Contact. JobInfo3CompanyName
 ms.assetid: 19f2d22e-432d-4dfc-aff3-7e8793f87f54
-title: System.Contact.JobInfo3CompanyName
+title: System. Contact. JobInfo3CompanyName
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 13c1ec37501da8d1101fb81fa6dc9385f87503b9055092fcdeaa0b64f3027dab
@@ -11,7 +11,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118468053"
 ---
-# <a name="systemcontactjobinfo3companyname"></a>System.Contact.JobInfo3CompanyName
+# <a name="systemcontactjobinfo3companyname"></a>System. Contact. JobInfo3CompanyName
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81"></a>Windows 10, versão 1703, Windows 10, versão 1607, Windows 10, versão 1511, Windows 10, versão 1507, Windows 8.1
 
@@ -30,13 +30,13 @@ propertyDescription
 
 ## <a name="remarks"></a>Comentários
 
-Os valores PKEY são definidos em Propkey.h.
+Os valores de PKEY são definidos em Propkey. h.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[Propertydescription](./propdesc-schema-propertydescription.md)
+[propertyDescription](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -45,19 +45,19 @@ Os valores PKEY são definidos em Propkey.h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Typeinfo](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[Stringformat](./propdesc-schema-stringformat.md)
+[stringFormat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numberformat](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -72,7 +72,7 @@ Os valores PKEY são definidos em Propkey.h.
 [editControl](./propdesc-schema-editcontrol.md)
 </dt> <dt>
 
-[Filtercontrol](./propdesc-schema-filtercontrol.md)
+[filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
 [queryControl](./propdesc-schema-querycontrol.md)

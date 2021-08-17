@@ -3,7 +3,7 @@ title: Mensagem de LVM_GETGROUPINFO (commctrl. h)
 description: Obtém informações do grupo.
 ms.assetid: 72d84e0b-121e-473b-a34d-874234c598b6
 keywords:
-- Controles de LVM_GETGROUPINFO de mensagens do Windows
+- controles de Windows de mensagem de LVM_GETGROUPINFO
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b55d5b1d781e7749df97bd0c9f7782f56545dbee
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f5c48a21a1bba0c6dd1af3fd567ea853dc922591c553ea11a935fb705ad65bf6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104009201"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118411390"
 ---
 # <a name="lvm_getgroupinfo-message"></a>\_Mensagem GETGROUPINFO LVM
 
@@ -35,7 +35,7 @@ Obtém informações do grupo.
 *lParam* 
 </dt> <dd>Um ponteiro de uma estrutura <a href="/windows/win32/api/commctrl/ns-commctrl-lvgroup">**LVGROUP**</a> que recebe as informações recuperadas. Defina o membro **cbSize** dessa estrutura como sizeof (LVGROUP). </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna a ID do grupo se for bem-sucedida ou-1 caso contrário.
 
@@ -54,9 +54,9 @@ Antes de tentar recuperar o cabeçalho de um grupo, primeiro verifique se o grup
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 
 

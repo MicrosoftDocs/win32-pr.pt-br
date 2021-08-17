@@ -5,12 +5,12 @@ ms.tgt_platform: multiple
 title: Mapeando instâncias de Active Directory
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f51eaec7b2c6ef121d0f65df375e1bb0fce32cc9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 66a3e40a6f4a85ebb1bb3d7e1e5a5de7bc43c754ff7672f694aff05b62853dbf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104011350"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118317633"
 ---
 # <a name="mapping-active-directory-instances"></a>Mapeando instâncias de Active Directory
 
@@ -58,7 +58,7 @@ A tabela a seguir lista o mapeamento entre cada atributo de um Active Directory 
 | Imprimir cadeia de caracteres de caso       | **\_cadeia de caracteres CIM**                               | Mapeado a partir do valor da cadeia de caracteres.                                      |
 | Link de réplica            | Objeto inserido da classe **Uint8Array**       | Mapeado para instâncias da classe **Uint8Array** .                          |
 | SID                     | Objeto inserido da classe **Uint8Array**       | Mapeado para instâncias da classe **Uint8Array** .                          |
-| Hora                    | **\_data e hora CIM**                             | Convertido na representação de \_ data e hora CIM e mapeado.                 |
+| Tempo                    | **\_data e hora CIM**                             | Convertido na representação de \_ data e hora CIM e mapeado.                 |
 | Indefinido               | N/D                                           | N/D                                                                       |
 | Cadeia de caracteres Unicode          | **\_cadeia de caracteres CIM**                               | Mapeado a partir do valor da cadeia de caracteres.                                      |
 | Hora codificada UTC          | **\_data e hora CIM**                             | Convertido na representação de \_ data e hora CIM e mapeado.                 |

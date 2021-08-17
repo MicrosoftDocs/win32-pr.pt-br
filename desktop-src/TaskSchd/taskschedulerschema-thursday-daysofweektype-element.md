@@ -1,9 +1,9 @@
 ---
-title: Elemento da quinta (daysOfWeekType)
-description: Especifica que a tarefa é executada na quinta-feira.
+title: Elemento Thursday (daysOfWeekType)
+description: Especifica que a tarefa é executado na quinta-feira.
 ms.assetid: 01d0e7e8-7135-4f43-9d8f-b50c002b93bc
 keywords:
-- Elemento da quinta Agendador de Tarefas
+- Elemento Thursday Agendador de Tarefas
 topic_type:
 - apiref
 api_name:
@@ -20,9 +20,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118356064"
 ---
-# <a name="thursday-daysofweektype-element"></a>Elemento da quinta (daysOfWeekType)
+# <a name="thursday-daysofweektype-element"></a>Elemento Thursday (daysOfWeekType)
 
-Especifica que a tarefa é executada na quinta-feira.
+Especifica que a tarefa é executado na quinta-feira.
 
 ``` syntax
 <xs:element name="Thursday">
@@ -30,7 +30,7 @@ Especifica que a tarefa é executada na quinta-feira.
 </xs:element>
 ```
 
-O elemento da **quinta-feira** é definido pelo tipo complexo [**daysOfWeekType**](taskschedulerschema-daysofweektype-complextype.md) .
+O **elemento Thursday** é definido pelo tipo complexo [**daysOfWeekType.**](taskschedulerschema-daysofweektype-complextype.md)
 
 ## <a name="parent-element"></a>Elemento pai
 
@@ -38,8 +38,8 @@ O elemento da **quinta-feira** é definido pelo tipo complexo [**daysOfWeekType*
 
 | Elemento                                                                                                                  | Derivado de                                                             | Descrição                                                                                          |
 |--------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------|
-| [**DaysOfWeek (monthlyDayOfWeekScheduleType)**](taskschedulerschema-daysofweek-monthlydayofweekscheduletype-element.md) | [**daysOfWeekType**](taskschedulerschema-daysofweektype-complextype.md) | Especifica os dias da semana em que a tarefa é executada por uma agenda mensal de dia da semana.<br/> |
-| [**DaysOfWeek (weeklyScheduleType)**](taskschedulerschema-daysofweek-weeklyscheduletype-element.md)                     | [**daysOfWeekType**](taskschedulerschema-daysofweektype-complextype.md) | Especifica os dias da semana em que a tarefa é executada para uma agenda semanal.<br/>              |
+| [**DaysOfWeek (monthlyDayOfWeekScheduleType)**](taskschedulerschema-daysofweek-monthlydayofweekscheduletype-element.md) | [**daysOfWeekType**](taskschedulerschema-daysofweektype-complextype.md) | Especifica os dias da semana em que a tarefa é executado para uma agenda mensal do dia da semana.<br/> |
+| [**DaysOfWeek (weeklyScheduleType)**](taskschedulerschema-daysofweek-weeklyscheduletype-element.md)                     | [**daysOfWeekType**](taskschedulerschema-daysofweektype-complextype.md) | Especifica os dias da semana em que a tarefa é executado para uma agenda semanal.<br/>              |
 
 
 
@@ -62,8 +62,8 @@ O XML a seguir define um calendário de dia da semana que inicia uma tarefa na q
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
 
 
 
@@ -71,7 +71,7 @@ O XML a seguir define um calendário de dia da semana que inicia uma tarefa na q
 
 <dl> <dt>
 
-[Elementos do esquema de Agendador de Tarefas](task-scheduler-schema-elements.md)
+[Agendador de Tarefas de esquema](task-scheduler-schema-elements.md)
 </dt> <dt>
 
 [Agendador de Tarefas](task-scheduler-start-page.md)

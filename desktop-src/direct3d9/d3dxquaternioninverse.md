@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 6ebb2520efa3c7c78d98fd8b90ec1ba9615e9927
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: beb9445edaffd913483e74da5703e76137d363dd6f464c7b634264a680c8ab29
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108094064"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117731598"
 ---
 # <a name="d3dxquaternioninverse-function-d3dx9mathh"></a>Função D3DXQuaternionInverse (D3dx9math. h)
 
@@ -91,7 +91,7 @@ Use [**D3DXQuaternionNormalize**](d3dxquaternionnormalize.md) para qualquer entr
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

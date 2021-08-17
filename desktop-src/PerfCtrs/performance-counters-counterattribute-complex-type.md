@@ -1,7 +1,7 @@
 ---
 description: Define um atributo de um contador que especifica como os dados do contador são exibidos em um aplicativo de consumidor.
 ms.assetid: 3749501b-4f3e-42e5-b1d5-2700b6d4a48a
-title: Tipo complexo de atributo
+title: Tipo complexo counterAttribute
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,7 +16,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117793730"
 ---
-# <a name="counterattribute-complex-type"></a>Tipo complexo de atributo
+# <a name="counterattribute-complex-type"></a>Tipo complexo counterAttribute
 
 Define um atributo de um contador que especifica como os dados do contador são exibidos em um aplicativo de consumidor.
 
@@ -62,7 +62,7 @@ Define um atributo de um contador que especifica como os dados do contador são 
 
 | Nome | Tipo | Descrição                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 |------|------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| name |      | O nome do atributo de exibição a ser aplicado. Você pode especificar um dos seguintes nomes:<br/> <dl> <dt><span id="reference"></span><span id="REFERENCE"></span>referência</dt> <dd> Recupere o valor do contador por referência, em oposição ao valor.<br/> </dd> <dt><span id="noDisplay"></span><span id="nodisplay"></span><span id="NODISPLAY"></span>NoDisplay</dt> <dd> Não exiba o valor do contador. Normalmente, você usará esse atributo se os dados do contador forem usados como entrada para calcular o valor de outro contador. <br/> </dd> <dt><span id="noDigitGrouping"></span><span id="nodigitgrouping"></span><span id="NODIGITGROUPING"></span>noDigitGrouping</dt> <dd> Aplicativos de monitoramento ou de consumidor não devem usar separadores de dígitos ao exibir valores de contadores. <br/> </dd> <dt><span id="displayAsHex"></span><span id="displayashex"></span><span id="DISPLAYASHEX"></span>displayAsHex</dt> <dd> Os aplicativos de monitoramento ou consumidor devem exibir o valor do contador como um hexadecimal, em vez do valor inteiro padrão.<br/> </dd> <dt><span id="displayAsReal"></span><span id="displayasreal"></span><span id="DISPLAYASREAL"></span>displayAsReal</dt> <dd> Os aplicativos de monitoramento ou consumidor devem exibir o valor do contador como um número real, em vez do valor inteiro padrão. <br/> </dd> </dl> |
+| name |      | O nome do atributo de exibição a ser aplicado. Você pode especificar um dos seguintes nomes:<br/> <dl> <dt><span id="reference"></span><span id="REFERENCE"></span>Referência</dt> <dd> Recupere o valor do contador por referência em vez de por valor.<br/> </dd> <dt><span id="noDisplay"></span><span id="nodisplay"></span><span id="NODISPLAY"></span>noDisplay</dt> <dd> Não exibir o valor do contador. Normalmente, você usará esse atributo se os dados do contador são usados como entrada para calcular o valor de outro contador. <br/> </dd> <dt><span id="noDigitGrouping"></span><span id="nodigitgrouping"></span><span id="NODIGITGROUPING"></span>noDigitGrouping</dt> <dd> Os aplicativos de monitoramento ou consumidor não devem usar separadores de dígitos ao exibir valores de contador. <br/> </dd> <dt><span id="displayAsHex"></span><span id="displayashex"></span><span id="DISPLAYASHEX"></span>displayAsHex</dt> <dd> Aplicativos de monitoramento ou consumidor devem exibir o valor do contador como um hexadecimal, em vez do valor inteiro padrão.<br/> </dd> <dt><span id="displayAsReal"></span><span id="displayasreal"></span><span id="DISPLAYASREAL"></span>displayAsReal</dt> <dd> Aplicativos de monitoramento ou consumidor devem exibir o valor do contador como um número real, em vez do valor inteiro padrão. <br/> </dd> </dl> |
 
 
 
@@ -72,8 +72,8 @@ Define um atributo de um contador que especifica como os dados do contador são 
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
 
 
 

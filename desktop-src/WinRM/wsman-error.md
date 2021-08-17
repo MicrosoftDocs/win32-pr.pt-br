@@ -1,6 +1,6 @@
 ---
 title: Propriedade WSMan.Error (WSManDisp.h)
-description: Obtém informações de erro adicionais, em um fluxo XML, para a chamada anterior a um método WSMan se o serviço de Gerenciamento Remoto do Windows não pôde criar um objeto Session, um objeto ConnectionOptions ou um objeto ResourceLocator.
+description: Obtém informações de erro adicionais, em um fluxo XML, para a chamada anterior para um método WSMan se o serviço de Gerenciamento Remoto do Windows não pôde criar um objeto Session, um objeto ConnectionOptions ou um objeto ResourceLocator.
 ms.assetid: 72d05ef9-672c-4693-b7c9-6d689858acd4
 ms.tgt_platform: multiple
 keywords:
@@ -26,7 +26,7 @@ ms.locfileid: "117742191"
 ---
 # <a name="wsmanerror-property"></a>Propriedade WSMan.Error
 
-Obtém informações de erro adicionais, em um fluxo XML, para a chamada anterior para um método [**WSMan**](wsman.md) se o serviço de Gerenciamento Remoto do Windows não pôde criar um objeto [**Session,**](session.md) um objeto [**ConnectionOptions**](connectionoptions.md) ou um [**objeto ResourceLocator.**](resourcelocator.md)
+Obtém informações de erro adicionais, em um fluxo XML, para a chamada anterior a um método [**WSMan**](wsman.md) se o serviço de Gerenciamento Remoto do Windows não pôde criar um objeto [**Session,**](session.md) um objeto [**ConnectionOptions**](connectionoptions.md) ou um [**objeto ResourceLocator.**](resourcelocator.md)
 
 Esta propriedade é somente para leitura.
 
