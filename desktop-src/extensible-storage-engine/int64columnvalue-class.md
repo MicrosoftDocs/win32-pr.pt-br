@@ -1,5 +1,5 @@
 ---
-description: 'Saiba mais sobre: Classe Int64ColumnValue'
+description: 'Saiba mais sobre: classe Int64ColumnValue'
 title: Classe Int64ColumnValue
 TOCTitle: Int64ColumnValue class
 ms:assetid: T:Microsoft.Isam.Esent.Interop.Int64ColumnValue
@@ -33,19 +33,19 @@ ms.locfileid: "118767595"
 ---
 # <a name="int64columnvalue-class"></a>Classe Int64ColumnValue
 
-Um [valor de coluna Int64.](/dotnet/api/system.int64)
+Um valor de coluna [Int64](/dotnet/api/system.int64) .
 
 ## <a name="inheritance-hierarchy"></a>Hierarquia de herança
 
 [System.Object](/dotnet/api/system.object)  
-  [Microsoft.Isam.Esent.Interop.ColumnValue](./columnvalue-class.md)  
-    [Microsoft.Isam.Esent.Interop.ColumnValueOfStruct](./columnvalueofstruct-t-class.md)\<[Int64](/dotnet/api/system.int64)\>  
-      Microsoft.Isam.Esent.Interop.Int64ColumnValue  
+  [Microsoft. ISAM. ESENT. Interop. Columnvalue](./columnvalue-class.md)  
+    [Microsoft. ISAM. ESENT. Interop. ColumnValueOfStruct](./columnvalueofstruct-t-class.md)\<[Int64](/dotnet/api/system.int64)\>  
+      Microsoft. ISAM. ESENT. Interop. Int64ColumnValue  
 
-**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -67,6 +67,6 @@ Qualquer membro estático público (Shared no Visual Basic) desse tipo é seguro
 
 #### <a name="reference"></a>Referência
 
-[Membros Int64ColumnValue](./int64columnvalue-members.md)
+[Membros do Int64ColumnValue](./int64columnvalue-members.md)
 
-[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)

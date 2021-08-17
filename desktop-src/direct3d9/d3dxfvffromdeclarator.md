@@ -1,7 +1,7 @@
 ---
-description: Retorna um código de formato de vértice flexível (FVF) de um Declarador.
+description: Retorna um código FVF (formato de vértice flexível) de um declarador.
 ms.assetid: 4f30087e-0042-44bc-a7a5-5386b18fcad7
-title: Função D3DXFVFFromDeclarator (D3DX9Mesh. h)
+title: Função D3DXFVFFromDeclarator (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -23,7 +23,7 @@ ms.locfileid: "118525643"
 ---
 # <a name="d3dxfvffromdeclarator-function"></a>Função D3DXFVFFromDeclarator
 
-Retorna um código de formato de vértice flexível (FVF) de um Declarador.
+Retorna um código FVF (formato de vértice flexível) de um declarador.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -41,21 +41,21 @@ HRESULT D3DXFVFFromDeclarator(
 
 <dl> <dt>
 
-*pDeclaration* \[ no\]
+*pDeclaration* \[ Em\]
 </dt> <dd>
 
 Tipo: **const [**LPD3DVERTEXELEMENT9**](d3dvertexelement9.md) \***
 
-Matriz de elementos [**D3DVERTEXELEMENT9**](d3dvertexelement9.md) , que descreve o código FVF.
+Matriz de [**elementos D3DVERTEXELEMENT9,**](d3dvertexelement9.md) descrevendo o código FVF.
 
 </dd> <dt>
 
-*pFVF* \[ fora\]
+*pFVF* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)\***
 
-Ponteiro para um valor DWORD, que representa a combinação retornada de [D3DFVF](d3dfvf.md) que descreve o formato de vértice retornado do Declarador.
+Ponteiro para um valor DWORD, que representa a combinação retornada de [D3DFVF](d3dfvf.md) que descreve o formato de vértice retornado do declarador.
 
 </dd> </dl>
 
@@ -63,11 +63,11 @@ Ponteiro para um valor DWORD, que representa a combinação retornada de [D3DFVF
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se a função for bem sucedido, o valor de retorno será D3D \_ OK. Se a função falhar, o valor de retorno poderá ser: D3DERR \_ INVALIDCALL.
+Se a função for bem-sucedida, o valor de retorno será D3D \_ OK. Se a função falhar, o valor de retorno poderá ser: D3DERR \_ INVALIDCALL.
 
 ## <a name="remarks"></a>Comentários
 
-Essa função falhará para qualquer Declarador que não mapeie diretamente para um FVF.
+Essa função falhará para qualquer declarador que não mapeie diretamente para um FVF.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -75,8 +75,8 @@ Essa função falhará para qualquer Declarador que não mapeie diretamente para
 
 | Requisito | Valor |
 |--------------------|----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| parâmetro<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

@@ -25,12 +25,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 36815693c078146faec7d604dd28e5d74d475af2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6fb259e54141e3e94e6ee106724e4e737334519398c42ceb11c86026417407db
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104502122"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119112365"
 ---
 # <a name="jet_commit_idequality-operator"></a>Operador de JET_COMMIT_ID. igualdade
 
@@ -76,7 +76,7 @@ public static bool operator ==(
     
     A segunda confirmação de comparação a ser comparada.
 
-#### <a name="return-value"></a>Retornar valor
+#### <a name="return-value"></a>Valor retornado
 
 Tipo: [System. Boolean](/dotnet/api/system.boolean)  
 True se o LHS vier for igual ao RHS.  

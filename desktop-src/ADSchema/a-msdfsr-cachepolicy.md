@@ -1,11 +1,11 @@
 ---
-title: atributo ms-DFSR-CachePolicy
+title: Atributo ms-DFSR-CachePolicy
 description: Opções de política de cache sob demanda.
 ms.assetid: a8754b4f-ebb3-446e-81ca-8b009f55a716
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD do atributo ms-DFSR-CachePolicy
-- msDFSR-esquema de AD do atributo de CachePolicy
+- Esquema do AD do atributo ms-DFSR-CachePolicy
+- Esquema do AD do atributo msDFSR-CachePolicy
 topic_type:
 - apiref
 api_name:
@@ -21,7 +21,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118686052"
 ---
-# <a name="ms-dfsr-cachepolicy-attribute"></a>atributo ms-DFSR-CachePolicy
+# <a name="ms-dfsr-cachepolicy-attribute"></a>Atributo ms-DFSR-CachePolicy
 
 Opções de política de cache sob demanda.
 
@@ -29,14 +29,14 @@ Opções de política de cache sob demanda.
 
 | Entrada | Valor |
 |-------------------|--------------------------------------|
-| CN                | MS-DFSR-CachePolicy                  |
-| LDAP-Display-Name | msDFSR – CachePolicy                   |
+| CN                | ms-DFSR-CachePolicy                  |
+| Ldap-Display-Name | msDFSR-CachePolicy                   |
 | Tamanho              | \-                                   |
 | Privilégio de atualização  | \-                                   |
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.6.13.3.29           |
-| System-ID-GUID    | db7a08e7-fc76-4569-a45f-f5ecb66a88b5 |
-| Sintaxe            | [**Enumeração**](s-enumeration.md) |
+| System-Id-Guid    | db7a08e7-fc76-4569-a45f-f5ecb66a88b5 |
+| Syntax            | [**Enumeração**](s-enumeration.md) |
 
 
 
@@ -55,15 +55,15 @@ Opções de política de cache sob demanda.
 | ID do link                | \-                                                               |
 | MAPI-Id                | \-                                                               |
 | System-Only            | Falso                                                            |
-| É de valor único       | True                                                             |
+| Tem valor único       | Verdadeiro                                                             |
 | É indexado             | Falso                                                            |
-| No catálogo global      | Falso                                                            |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                     |
+| No Catálogo Global      | Falso                                                            |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                     |
 | Range-Lower            | \-                                                               |
 | Range-Upper            | \-                                                               |
 | Search-Flags           | 0x00000000                                                       |
 | System-Flags           | 0x00000000                                                       |
-| Classes usadas em        | [**MS-DFSR-Subscription**](c-msdfsr-subscription.md)<br/> |
+| Classes usadas em        | [**ms-DFSR-Subscription**](c-msdfsr-subscription.md)<br/> |
 
 
 
@@ -76,15 +76,15 @@ Opções de política de cache sob demanda.
 | ID do link                | \-                                                               |
 | MAPI-Id                | \-                                                               |
 | System-Only            | Falso                                                            |
-| É de valor único       | True                                                             |
+| Tem valor único       | Verdadeiro                                                             |
 | É indexado             | Falso                                                            |
-| No catálogo global      | Falso                                                            |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                     |
+| No Catálogo Global      | Falso                                                            |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                     |
 | Range-Lower            | \-                                                               |
 | Range-Upper            | \-                                                               |
 | Search-Flags           | 0x00000000                                                       |
 | System-Flags           | 0x00000000                                                       |
-| Classes usadas em        | [**MS-DFSR-Subscription**](c-msdfsr-subscription.md)<br/> |
+| Classes usadas em        | [**ms-DFSR-Subscription**](c-msdfsr-subscription.md)<br/> |
 
 
 
@@ -97,15 +97,15 @@ Opções de política de cache sob demanda.
 | ID do link                | \-                                                               |
 | MAPI-Id                | \-                                                               |
 | System-Only            | Falso                                                            |
-| É de valor único       | True                                                             |
+| Tem valor único       | Verdadeiro                                                             |
 | É indexado             | Falso                                                            |
-| No catálogo global      | Falso                                                            |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                     |
+| No Catálogo Global      | Falso                                                            |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                     |
 | Range-Lower            | \-                                                               |
 | Range-Upper            | \-                                                               |
 | Search-Flags           | 0x00000000                                                       |
 | System-Flags           | 0x00000000                                                       |
-| Classes usadas em        | [**MS-DFSR-Subscription**](c-msdfsr-subscription.md)<br/> |
+| Classes usadas em        | [**ms-DFSR-Subscription**](c-msdfsr-subscription.md)<br/> |
 
 
 

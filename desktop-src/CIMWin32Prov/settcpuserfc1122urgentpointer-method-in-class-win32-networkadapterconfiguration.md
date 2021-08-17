@@ -379,7 +379,7 @@ Interface não configurável.
 
 </dd> <dt>
 
-**Nem todas as concessões DHCP puderam ser liberadas/renovadas**
+**Nem todas as concessões DHCP podem ser liberadas/renovadas**
 </dt> <dd>
 
 98
@@ -393,7 +393,7 @@ Nem todas as concessões DHCP podem ser liberadas ou renovadas.
 
 100
 
-DHCP não habilitado no adaptador.
+O DHCP não está habilitado no adaptador.
 
 </dd> <dt>
 
@@ -406,11 +406,11 @@ DHCP não habilitado no adaptador.
 
 ## <a name="remarks"></a>Comentários
 
-O RFC 1122 e o BSD interpretam o ponteiro urgente no cabeçalho TCP e o comprimento dos dados urgentes de forma diferente. Eles não são interoperáveis. O padrão é o modo BSD.
+RFC 1122 e BSD interpretam o ponteiro urgente no header TCP e o comprimento dos dados urgentes de maneira diferente. Eles não são interoperáveis. O padrão é o modo BSD.
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo [Modificar ponteiro urgente usar para todos os adaptadores de rede](https://Gallery.TechNet.Microsoft.Com/0ff22a90-0be6-4914-8db7-aaf72cbea9cb) configura um computador para usar a especificação RFC 1122 para dados urgentes.
+O [exemplo Modificar Uso de](https://Gallery.TechNet.Microsoft.Com/0ff22a90-0be6-4914-8db7-aaf72cbea9cb) Ponteiro Urgente para Todos os Adaptadores de Rede VBScript configura um computador para usar a especificação RFC 1122 para dados urgentes.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -420,8 +420,8 @@ O exemplo [Modificar ponteiro urgente usar para todos os adaptadores de rede](ht
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| Namespace<br/>                | Raiz \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Namespace<br/>                | RAIZ \\ CIMV2<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -433,13 +433,13 @@ O exemplo [Modificar ponteiro urgente usar para todos os adaptadores de rede](ht
 [Classes de hardware do sistema de computador](computer-system-hardware-classes.md)
 </dt> <dt>
 
-[**\_NetworkAdapterConfiguration Win32**](win32-networkadapterconfiguration.md)
+[**Win32 \_ NetworkAdapterConfiguration**](win32-networkadapterconfiguration.md)
 </dt> <dt>
 
-[Tarefas do WMI: rede](/windows/desktop/WmiSdk/wmi-tasks--networking)
+[Tarefas WMI: Rede](/windows/desktop/WmiSdk/wmi-tasks--networking)
 </dt> <dt>
 
-[Tarefas do WMI: contas e domínios](/windows/desktop/WmiSdk/wmi-tasks--accounts-and-domains)
+[Tarefas WMI: contas e domínios](/windows/desktop/WmiSdk/wmi-tasks--accounts-and-domains)
 </dt> <dt>
 
 [Suporte a IPv6 e IPv4 no WMI](/windows/desktop/WmiSdk/ipv6-and-ipv4-support-in-wmi)

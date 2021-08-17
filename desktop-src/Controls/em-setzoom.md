@@ -1,9 +1,9 @@
 ---
-title: Mensagem de EM_SETZOOM (RichEdit. h)
-description: Define a taxa de zoom. A proporção deve ser um valor entre 1/64 e 64. Você pode enviar essa mensagem para um controle de edição ou um controle de edição rico.
+title: EM_SETZOOM mensagem (Richedit.h)
+description: Define a taxa de zoom. A taxa deve ser um valor entre 1/64 e 64. Você pode enviar essa mensagem para um controle de edição ou um controle de edição rico.
 ms.assetid: 6cdec5b8-4ce7-4fd5-8083-4daa63d17f63
 keywords:
-- controles de Windows de mensagem de EM_SETZOOM
+- EM_SETZOOM controles Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -22,9 +22,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119437176"
 ---
-# <a name="em_setzoom-message"></a>\_Mensagem em SETzoom
+# <a name="em_setzoom-message"></a>Mensagem EM \_ SETZOOM
 
-Define a taxa de zoom para um controle de edição de várias linhas ou um controle de edição rico. A proporção deve ser um valor entre 1/64 e 64. O controle de edição precisa ter o estilo estendido de **s \_ ex \_ zoom** definido, para que essa mensagem tenha um efeito, consulte [Editar estilos estendidos de controle](edit-control-window-extended-styles.md).
+Define a taxa de zoom para um controle de edição multilinha ou um controle de edição rico. A taxa deve ser um valor entre 1/64 e 64. O controle de edição precisa ter o estilo estendido **\_ ES EX \_ ZOOMABLE** definido, para que essa mensagem tenha um efeito, consulte [Editar estilos estendidos de controle](edit-control-window-extended-styles.md).
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -40,13 +40,13 @@ Numerador da taxa de zoom.
 *lParam* 
 </dt> <dd>
 
-O denominador da taxa de zoom. Esses parâmetros podem ter os valores a seguir.
+Denominador da taxa de zoom. Esses parâmetros podem ter os seguintes valores.
 
 
 
 | Valor                                                                                                                                                                                                                                                              | Significado                                                                                                                                         |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="Both_0"></span><span id="both_0"></span><span id="BOTH_0"></span><dl> <dt>**Ambos 0**</dt> </dl>                                                                                                   | Desativa o zoom usando a mensagem em **\_ setZoom** (o zoom ainda pode ocorrer usando [**TxGetExtent**](/windows/desktop/api/Textserv/nf-textserv-itexthost-txgetextent)).<br/> |
+| <span id="Both_0"></span><span id="both_0"></span><span id="BOTH_0"></span><dl> <dt>**Ambos 0**</dt> </dl>                                                                                                   | Desliga o zoom usando a mensagem **EM \_ SETZOOM** (o zoom ainda pode ocorrer usando [**TxGetExtent**](/windows/desktop/api/Textserv/nf-textserv-itexthost-txgetextent)).<br/> |
 | <span id="1_64____wParam___lParam____64"></span><span id="1_64____wparam___lparam____64"></span><span id="1_64____WPARAM___LPARAM____64"></span><dl> <dt>**1/64 < (wParam/lParam) < 64**</dt> </dl> | Amplia a exibição pelo numerador/denominador da taxa de zoom<br/>                                                                                |
 
 
@@ -57,13 +57,13 @@ O denominador da taxa de zoom. Esses parâmetros podem ter os valores a seguir.
 
 ## <a name="return-value"></a>Valor retornado
 
-Se a nova configuração de zoom for aceita, o valor de retorno será **true**.
+Se a nova configuração de zoom for aceita, o valor de retorno será **TRUE.**
 
-Se a nova configuração de zoom não for aceita, o valor de retorno será **false**.
+Se a nova configuração de zoom não for aceita, o valor de retorno será **FALSE.**
 
 ## <a name="remarks"></a>Comentários
 
-**Editar:** com suporte no Windows 10 1809 e posterior. O controle de edição precisa ter o estilo estendido de **s \_ ex \_ zoom** definido, para que essa mensagem tenha um efeito, consulte [Editar estilos estendidos de controle](edit-control-window-extended-styles.md). Para obter informações sobre o controle de edição, consulte [Editar controles](about-edit-controls.md).
+**Editar:** Com suporte no Windows 10 1809 e posterior. O controle de edição precisa ter o estilo estendido **\_ ES EX \_ ZOOMABLE** definido, para que essa mensagem tenha um efeito, consulte [Editar estilos estendidos de controle](edit-control-window-extended-styles.md). Para obter informações sobre o controle de edição, consulte [Editar controles](about-edit-controls.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -71,10 +71,10 @@ Se a nova configuração de zoom não for aceita, o valor de retorno será **fal
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
-| Redistribuível<br/>          | Edição avançada 3,0<br/>                                                              |
-| parâmetro<br/>                   | <dl> <dt>RichEdit. h/commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| Redistribuível<br/>          | Rich Edit 3.0<br/>                                                              |
+| Cabeçalho<br/>                   | <dl> <dt>Richedit.h/Commctrl.h</dt> </dl> |
 
 
 
@@ -82,7 +82,7 @@ Se a nova configuração de zoom não for aceita, o valor de retorno será **fal
 
 <dl> <dt>
 
-[**em \_ GETzoom**](em-getzoom.md)
+[**EM \_ GETZOOM**](em-getzoom.md)
 </dt> </dl>
 
  

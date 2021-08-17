@@ -1,5 +1,5 @@
 ---
-description: Adiciona recursos a uma configuração de sistema virtual.
+description: Adiciona recursos a uma configuração do sistema virtual.
 ms.assetid: c2541571-74f0-48f8-997c-56c152980eea
 title: Método AddResourceSettings da classe CIM_VirtualSystemManagementService
 ms.topic: reference
@@ -20,11 +20,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118646464"
 ---
-# <a name="addresourcesettings-method-of-the-cim_virtualsystemmanagementservice-class"></a>Método AddResourceSettings da \_ classe VIRTUALSYSTEMMANAGEMENTSERVICE CIM
+# <a name="addresourcesettings-method-of-the-cim_virtualsystemmanagementservice-class"></a>Método AddResourceSettings da classe CIM \_ VirtualSystemManagementService
 
-Adiciona recursos a uma configuração de sistema virtual.
+Adiciona recursos a uma configuração do sistema virtual.
 
-Quando aplicado a uma configuração de sistema virtual "State", como os recursos de efeito colateral são adicionados ao sistema virtual ativo.
+Quando aplicado a uma configuração de sistema virtual de "estado", como um efeito colateral, os recursos são adicionados ao sistema virtual ativo.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -44,31 +44,31 @@ uint32 AddResourceSettings(
 
 <dl> <dt>
 
-*AffectedConfiguration* \[ no\]
+*AffectedConfiguration* \[ Em\]
 </dt> <dd>
 
-Uma referência do [**CIM \_ VirtualSystemSettingData**](cim-virtualsystemsettingdata.md) à configuração do sistema virtual afetada.
+Uma [**referência CIM \_ VirtualSystemSettingData**](cim-virtualsystemsettingdata.md) à configuração do sistema virtual afetada.
 
 </dd> <dt>
 
-*ResourceSettings* \[ no\]
+*ResourceSettings* \[ Em\]
 </dt> <dd>
 
-Matriz de cadeias de caracteres que contém uma instância inserida da classe [**CIM \_ ResourceAllocationSettingData**](cim-resourceallocationsettingdata.md) que descreve os aspectos virtuais de um recurso virtual a ser adicionado ao sistema virtual.
+Matriz de cadeias de caracteres que contêm uma instância inserida da classe [**CIM \_ ResourceAllocationSettingData**](cim-resourceallocationsettingdata.md) que descreve os aspectos virtuais de um recurso virtual a ser adicionado ao sistema virtual.
 
 </dd> <dt>
 
-*ResultingResourceSettings* \[ fora\]
+*ResultingResourceSettings* \[ out\]
 </dt> <dd>
 
-Matriz de referências a instâncias da classe [**CIM \_ ResourceAllocationSettingData**](cim-resourceallocationsettingdata.md) que representa aspectos virtuais dos recursos virtuais adicionados.
+Matriz de referências a instâncias da classe [**CIM \_ ResourceAllocationSettingData**](cim-resourceallocationsettingdata.md) representando aspectos virtuais dos recursos virtuais adicionados.
 
 </dd> <dt>
 
-*Trabalho* \[ do fora\]
+*Trabalho* \[ out\]
 </dt> <dd>
 
-Se a operação for de longa execução, opcionalmente, um trabalho poderá ser retornado. Nesse caso, as instâncias da classe [**CIM \_ ResourceAllocationSettingData**](cim-resourceallocationsettingdata.md) que representa as configurações de recurso adicionadas estão disponíveis por meio da **\_ ConreteComponent de CIM** de associação da instância da classe [**CIM \_ VirtualSystemSettingData**](cim-virtualsystemsettingdata.md) que representa a configuração do sistema virtual afetado.
+Se a operação for de execução longa, opcionalmente, um trabalho poderá ser retornado. Nesse caso, as instâncias da classe [**CIM \_ ResourceAllocationSettingData**](cim-resourceallocationsettingdata.md) que representam as configurações de recurso adicionadas estão disponíveis por meio da associação **CIM \_ ConreteComponent** da instância da classe [**CIM \_ VirtualSystemSettingData**](cim-virtualsystemsettingdata.md) que representa a configuração do sistema virtual afetada.
 
 </dd> </dl>
 
@@ -87,22 +87,22 @@ Retorna um 0 em caso de êxito; caso contrário, retornará um erro.
 **Falha** (2)
 </dt> <dt>
 
-**Tempo limite** (3)
+**Tempoout** (3)
 </dt> <dt>
 
 **Parâmetro inválido** (4)
 </dt> <dt>
 
-**DMTF reservado** (..)
+**DMTF Reservado** (..)
 </dt> <dt>
 
-**Parâmetros de método marcados-trabalho iniciado** (4096)
+**Parâmetros de método verificados – Trabalho iniciado** (4096)
 </dt> <dt>
 
-**Método reservado** (4097.. 32767)
+**Método Reservado** (4097..32767)
 </dt> <dt>
 
-**Específico do fornecedor** (32768.. 65535)
+**Específico do** fornecedor (32768..65535)
 </dt> </dl>
 
 ## <a name="requirements"></a>Requisitos
@@ -113,8 +113,8 @@ Retorna um 0 em caso de êxito; caso contrário, retornará um erro.
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 8.1<br/>                                                                                  |
 | Servidor mínimo com suporte<br/> | Windows Server 2012 R2<br/>                                                                       |
-| Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Namespace<br/>                | Virtualização \\ raiz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -123,7 +123,7 @@ Retorna um 0 em caso de êxito; caso contrário, retornará um erro.
 
 <dl> <dt>
 
-[**\_VIRTUALSYSTEMMANAGEMENTSERVICE CIM**](cim-virtualsystemmanagementservice.md)
+[**CIM \_ VirtualSystemManagementService**](cim-virtualsystemmanagementservice.md)
 </dt> </dl>
 
  

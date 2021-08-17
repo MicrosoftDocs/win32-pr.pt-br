@@ -3,7 +3,7 @@ title: Usando temporizadores de multimídia
 description: Usando temporizadores de multimídia
 ms.assetid: 3f15e48f-d72c-4a63-b1ec-21d8de21c8f7
 keywords:
-- Multimídia do Windows, temporizadores
+- Windows multimídia, timers
 - multimídia, Timers
 - entrada de multimídia, temporizadores
 - Timers de multimídia, sobre
@@ -12,12 +12,12 @@ keywords:
 - temporizadores, exemplos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c904935b99d9a17f41da1f93b60f52b5b033318e
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 0f5d3b1f520f27422902ed7477ab01f4cdbf313d91ba1541ccf359fbaa6bc646
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105750795"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118940957"
 ---
 # <a name="using-multimedia-timers"></a>Usando temporizadores de multimídia
 
@@ -28,9 +28,9 @@ Esta seção contém exemplos que demonstram como executar as seguintes tarefas:
 -   [Escrevendo uma função de retorno de chamada do temporizador](writing-a-timer-callback-function.md)
 -   [Cancelando um evento de timer](canceling-a-timer-event.md)
 
- 
+ 
 
- 
+ 
 
 
 

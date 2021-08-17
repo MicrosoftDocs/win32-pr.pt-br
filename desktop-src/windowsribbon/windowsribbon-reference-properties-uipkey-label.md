@@ -1,6 +1,6 @@
 ---
 title: UI_PKEY_Label
-description: Identifica a propriedade rótulo \_ PKEY \_ da interface do usuário.
+description: Identifica a \_ Propriedade do rótulo PKEY da interface do usuário \_ .
 ms.assetid: 4d704133-bba7-4c32-a552-d748b66455eb
 ms.topic: article
 ms.date: 05/31/2018
@@ -11,9 +11,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118706427"
 ---
-# <a name="ui_pkey_label"></a>Rótulo \_ PKEY da interface do \_ usuário
+# <a name="ui_pkey_label"></a>\_Rótulo de PKEY da interface do usuário \_
 
-Identifica a propriedade rótulo \_ PKEY \_ da interface do usuário.
+Identifica a \_ Propriedade do rótulo PKEY da interface do usuário \_ .
 
 ```
 propertyDescription
@@ -27,25 +27,25 @@ propertyDescription
 
 ## <a name="remarks"></a>Comentários
 
-O rótulo PKEY da interface do usuário é usado por um aplicativo para consultar o texto do rótulo de \_ guias, grupos, botões, itens da galeria e outros controles da Faixa \_ de Opções.
+O rótulo PKEY da interface do usuário \_ \_ é usado por um aplicativo para consultar o texto do rótulo de guias, grupos, botões, itens da galeria e outros controles da faixa de tipos.
 
 > [!Note]  
-> Windows 8 e mais novos: imagem [do botão Menu](windowsribbon-controls-applicationmenu.md) do Aplicativo alterada para rótulo: **Arquivo**. Recomendamos que você não use Arquivo como o rótulo para qualquer uma de suas próprias guias.
+> Windows 8 e mais recente: imagem do botão de [Menu do aplicativo](windowsribbon-controls-applicationmenu.md) alterada para o rótulo: **arquivo**. Recomendamos que você não use o arquivo como rótulo para qualquer uma das suas próprias guias.
 
  
 
 O valor da propriedade é uma cadeia de caracteres restrita a qualquer sequência de caracteres, incluindo espaços em branco e caracteres de quebra de linha.
 
 > [!Note]  
-> Use a referência de caractere XML do Conjunto de Caracteres Universal (UCS) `&#xA;` para especificar uma quebra de linha.
+> Use a referência de caractere XML UCS (conjunto de caracteres universal) `&#xA;` para especificar uma quebra de linha.
 
  
 
-Não há suporte para o alinhamento à direita.
+Não há suporte para alinhamento à direita.
 
-O comprimento máximo do rótulo PKEY da interface do \_ \_ usuário é ilimitado.
+O comprimento máximo do rótulo de PKEY da interface do usuário \_ \_ é não associado.
 
-Se um Comando for exposto por meio de um item de menu e o valor de [**Command.LabelTitle**](windowsribbon-element-command-labeltitle.md) ou rótulo PKEY da interface do usuário contiver uma letra precedida por um e comercial, conforme mostrado no exemplo a seguir, essa letra será tratada como uma dica de tecla e um acelerador de teclado para esse comando pela estrutura \_ \_ ribbon.
+Se um comando for exposto por meio de um item de menu e o valor do rótulo [**Command. LabelTitle**](windowsribbon-element-command-labeltitle.md) ou UI \_ PKEY \_ contiver uma letra precedida por um e comercial, conforme mostrado no exemplo a seguir, essa letra será tratada como um KeyTip e um acelerador de teclado para esse comando pela estrutura da faixa de opções.
 
 
 ```XML
@@ -58,7 +58,7 @@ Se um Comando for exposto por meio de um item de menu e o valor de [**Command.La
 
 
 
-Para exibir um e ampersand em um rótulo, escape da designação de caractere especial com um e ampersand duplo ( ), conforme `&&` mostrado no exemplo a seguir.
+Para exibir um e comercial em um rótulo, escape a designação de caractere especial com um e comercial duplo ( `&&` ), conforme mostrado no exemplo a seguir.
 
 
 ```XML
@@ -78,10 +78,10 @@ Para exibir um e ampersand em um rótulo, escape da designação de caractere es
 [Propriedades do recurso](windowsribbon-reference-properties-resource.md)
 </dt> <dt>
 
-[**Command.LabelTitle**](windowsribbon-element-command-labeltitle.md)
+[**Comando. LabelTitle**](windowsribbon-element-command-labeltitle.md)
 </dt> <dt>
 
-[IU \_ PKEY \_ LabelDescription](windowsribbon-reference-properties-uipkey-labeldescription.md)
+[\_LabelDescription PKEY \_ UI](windowsribbon-reference-properties-uipkey-labeldescription.md)
 </dt> </dl>
 
  

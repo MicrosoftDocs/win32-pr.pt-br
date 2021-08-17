@@ -1,6 +1,6 @@
 ---
-title: Desenvolvimento de servidor usando alças de contexto
-description: Da perspectiva do desenvolvimento do programa de servidor, um indicador de contexto é um ponteiro sem tipo. Os programas de servidor inicializam os handles de contexto apontando-os para dados na memória ou em alguma outra forma de armazenamento (como arquivos em discos).
+title: Desenvolvimento de servidor usando identificadores de contexto
+description: Da perspectiva do desenvolvimento do programa de servidor, um identificador de contexto é um ponteiro não tipado. Os programas de servidor inicializam identificadores de contexto apontando-os em dados na memória ou em alguma outra forma de armazenamento (como arquivos em discos).
 ms.assetid: 6a1aabca-4cb9-401c-90c7-0cff7a69b7b6
 ms.topic: article
 ms.date: 05/31/2018
@@ -11,15 +11,15 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118925332"
 ---
-# <a name="server-development-using-context-handles"></a>Desenvolvimento de servidor usando alças de contexto
+# <a name="server-development-using-context-handles"></a>Desenvolvimento de servidor usando identificadores de contexto
 
-Da perspectiva do desenvolvimento do programa de servidor, um indicador de contexto é um ponteiro sem tipo. Os programas de servidor inicializam os handles de contexto apontando-os para dados na memória ou em alguma outra forma de armazenamento (como arquivos em discos).
+Da perspectiva do desenvolvimento do programa de servidor, um identificador de contexto é um ponteiro não tipado. Os programas de servidor inicializam identificadores de contexto apontando-os em dados na memória ou em alguma outra forma de armazenamento (como arquivos em discos).
 
-Por exemplo, suponha que um cliente use um alça de contexto para solicitar uma série de atualizações para um registro em um banco de dados. O cliente chama um procedimento remoto no servidor e passa uma chave de pesquisa. O programa de servidor pesquisa a chave de pesquisa no banco de dados e obtém o número de registro inteiro do registro correspondente. Em seguida, o servidor pode apontar um ponteiro para nulo em um local de memória que contém o número do registro. Quando ele retorna, o procedimento remoto precisaria retornar o ponteiro como um indicador de contexto por meio de seu valor de retorno ou sua lista de parâmetros. O cliente precisaria passar o ponteiro para o servidor sempre que chamasse procedimentos remotos para atualizar o registro. Durante cada uma dessas operações de atualização, o servidor poderia lançar o ponteiro nulo para ser um ponteiro para um inteiro.
+Por exemplo, suponha que um cliente use um identificador de contexto para solicitar uma série de atualizações para um registro em um banco de dados. O cliente chama um procedimento remoto no servidor e passa a ele uma chave de pesquisa. O programa de servidor pesquisa o banco de dados para a chave de pesquisa e Obtém o número de registro inteiro do registro correspondente. Em seguida, o servidor pode apontar um ponteiro para void em um local da memória que contém o número do registro. Quando ele retorna, o procedimento remoto precisaria retornar o ponteiro como um identificador de contexto por meio de seu valor de retorno ou sua lista de parâmetros. O cliente precisaria passar o ponteiro para o servidor cada vez que ele chamou procedimentos remotos para atualizar o registro. Durante cada uma dessas operações de atualização, o servidor converteria o ponteiro void para ser um ponteiro para um inteiro.
 
-Depois que o programa de servidor aponta o alça de contexto em dados de contexto, o handle é considerado aberto. Os alças que contêm **um valor NULL** são fechados. O servidor mantém um alça de contexto aberto até que o cliente chama um procedimento remoto que o fecha. Se a sessão do cliente for encerrada enquanto o handle estiver aberto, o tempo de executar RPC chamará a rotina de run-down do servidor para liberar o handle.
+Depois que o programa do servidor apontar o identificador de contexto nos dados de contexto, o identificador será considerado aberto. Identificadores contendo um valor **nulo** são fechados. O servidor mantém um identificador de contexto aberto até que o cliente chame um procedimento remoto que o feche. Se a sessão do cliente for encerrada enquanto o identificador estiver aberto, o tempo de execução do RPC chamará a rotina de execução do servidor para liberar o identificador.
 
-O fragmento de código a seguir demonstra como um servidor pode implementar um lidar com contexto. Neste exemplo, o servidor mantém um arquivo de dados que o cliente grava usando procedimentos remotos. As informações de contexto são um alça de arquivo que mantém o controle do local atual no arquivo em que o servidor gravará dados. O alça de arquivo é empacotado como um alça de contexto na lista de parâmetros para chamadas de procedimento remoto. Uma estrutura contém o nome do arquivo e o alça de arquivo. A definição de interface para este exemplo é mostrada em [Desenvolvimento de interface usando alças de contexto](interface-development-using-context-handles.md).
+O fragmento de código a seguir demonstra como um servidor pode implementar um identificador de contexto. Neste exemplo, o servidor mantém um arquivo de dados que o cliente grava para usar procedimentos remotos. As informações de contexto são um identificador de arquivo que controla o local atual no arquivo em que o servidor gravará os dados. O identificador de arquivo é empacotado como um identificador de contexto na lista de parâmetros para chamadas de procedimento remoto. Uma estrutura contém o nome do arquivo e o identificador do arquivo. A definição de interface para este exemplo é mostrada em [desenvolvimento de interface usando identificadores de contexto](interface-development-using-context-handles.md).
 
 
 ```C++
@@ -86,7 +86,7 @@ short RemoteRead(
 
 
 
-A função RemoteClose fecha um arquivo no servidor. Observe que o aplicativo de servidor precisa atribuir **NULL ao** alça de contexto como parte da função close. Isso se comunica com o stub do servidor e com a biblioteca em tempo de executar RPC que o alça de contexto foi excluído. Caso contrário, a conexão será mantida aberta e, eventualmente, ocorrerá um run-down de contexto.
+A função RemoteClose fecha um arquivo no servidor. Observe que o aplicativo de servidor precisa atribuir **NULL** ao identificador de contexto como parte da função close. Isso se comunica com o stub do servidor e a biblioteca de tempo de execução RPC que o identificador de contexto foi excluído. Caso contrário, a conexão será mantida aberta e, eventualmente, uma execução de contexto ocorrerá.
 
 
 ```C++
@@ -113,7 +113,7 @@ void RemoteClose(PPCONTEXT_HANDLE_TYPE pphContext)
 
 
 > [!Note]  
-> Embora seja esperado que o cliente passe um alça de contexto válido para uma chamada com atributos direcionais de entrada e saída, o RPC não rejeita os alças de contexto NULL para essa combinação de atributos \[ \] direcionais.  O **handle de** contexto NULL é passado para o servidor como um ponteiro **NULL.** O código do servidor para chamadas que contêm um handle de contexto de entrada e saída deve ser gravado para evitar uma violação de acesso \[ quando um ponteiro \] **NULL** é recebido.
+> Embora seja esperado que o cliente passe um identificador de contexto válido para uma chamada com \[ \] atributos direcionais in, out, o RPC não rejeita identificadores de contexto **nulo** para essa combinação de atributos direcionais. O identificador de contexto **nulo** é passado para o servidor como um ponteiro **nulo** . O código do servidor para chamadas contendo um \[ identificador de contexto in, out \] deve ser escrito para evitar uma violação de acesso quando um ponteiro **NULL** é recebido.
 
  
 

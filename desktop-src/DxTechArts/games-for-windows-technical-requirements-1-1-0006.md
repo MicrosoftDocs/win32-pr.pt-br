@@ -170,86 +170,86 @@ jogos de computador são uma experiência de entretenimento importante em Window
 
 <dl> <dt>
 
-<span id="Requirement"></span><span id="requirement"></span><span id="REQUIREMENT"></span>**Exigência**
+<span id="Requirement"></span><span id="requirement"></span><span id="REQUIREMENT"></span>**Obrigatoriedade**
 </dt> <dd>
 
-O jogo deve estar visível no Games Explorer (a **pasta Jogos)** no Windows Vista e Windows 7. Quando selecionado, o jogo também deve exibir metadados corretos, que incluem publicador, desenvolvedor, data de lançamento, versão, pontuações Windows Índice de Experiência, classificação (se aplicável) e hiperlinks associados.
+o jogo deve estar visível no explorador de jogos (a pasta **jogos** ) no Windows Vista e Windows 7. quando selecionado, o jogo também deve exibir metadados corretos, o que inclui publicador, desenvolvedor, data de lançamento, versão, Windows pontuações de índice de experiência, classificação (se aplicável) e hiperlinks associados.
 
-Se o jogo for distribuído digitalmente por meio de um serviço de jogo online, o provedor de serviços também deverá aparecer no Games Explorer. Para garantir o tratamento adequado do provedor e habilitar o uso de feeds RSS, a versão 2 do esquema para GDFs (arquivos de definição de jogo) deve ser usada. (Para obter mais informações sobre GDFs, consulte Informações adicionais.)
+Se o jogo for distribuído digitalmente por meio de um serviço de jogo online, o provedor de serviços também deverá aparecer no explorador de jogos. Para garantir o tratamento adequado do provedor e habilitar o uso de RSS feeds, a versão 2 do esquema para GDFs (arquivos de definição de jogo) deve ser usada. (Para obter mais informações sobre GDFs, consulte informações adicionais.)
 
-Além disso, os instaladores de jogos devem observar as seguintes regras quando são executados no Windows Vista e Windows 7:
+além disso, os instaladores de jogos devem observar as seguintes regras quando são executados no Windows Vista e Windows 7:
 
--   A instalação não deve criar um atalho para iniciar o jogo na área de trabalho, no menu Iniciar ou em qualquer outro local.
+-   a instalação não deve criar um atalho para iniciar o jogo na área de trabalho, na menu Iniciar ou em qualquer outro local.
 -   Tarefas e atalhos para remoção não devem ser criados.
--   Os usuários devem ser capazes de remover o jogo usando Programas e Recursos no Painel de Controle no Windows Vista e Windows 7 ou Adicionar ou Remover Programas no Painel de Controle no Windows XP.
+-   os usuários devem ser capazes de remover o jogo usando programas e recursos no painel de controle no Windows Vista e no Windows 7, ou adicionar ou remover programas no painel de controle no Windows XP.
 
-No Windows XP e nas versões anteriores do Windows, o instalador do jogo é gratuito para criar grupos de programas, ícones de área de trabalho ou atalhos, conforme necessário.
+no Windows XP e nas versões anteriores do Windows, o instalador do jogo é gratuito para criar grupos de programas, ícones da área de trabalho ou atalhos, conforme necessário.
 
 </dd> <dt>
 
 <span id="Rationale"></span><span id="rationale"></span><span id="RATIONALE"></span>**Lógica**
 </dt> <dd>
 
-Windows O Games Explorer é semelhante no conceito às pastas Windows XP **Meus Documentos** ou **Minhas Imagens**. A ideia é centralizar conteúdo semelhante em um só lugar e permitir atividades mais fáceis de organização e contextitivas. O Games Explorer estende o **conceito Meus Documentos** ou **Minhas Imagens,** permitindo uma organização mais rica e controle sobre jogos. O Games Explorer permite que os jogadores vejam, organizem e interajam com todos os jogos instalados em seus sistemas. Ele também permite que os editores de jogos comuniquem informações importantes do jogo com mais eficiência. O sistema é orientado por dados, facilitando para um editor de jogos atualizar informações do jogo ao longo da vida útil do produto.
+Windows o explorador de jogos é semelhante em conceito às pastas Windows XP **meus documentos** ou **minhas imagens**. A ideia é centralizar o conteúdo semelhante em um único local e permitir atividades mais fáceis e sensíveis ao contexto. O explorador de jogos estende o conceito **meus documentos** ou **minhas imagens** , permitindo uma organização mais rica e controle sobre jogos. O explorador de jogos permite que os jogadores exibam, organizem e interajam com todos os jogos instalados em seus sistemas. Ele também permite que os editores de jogos comuniquem informações importantes do jogo com mais eficiência. O sistema é controlado por dados, facilitando para um editor de jogos atualizar as informações do jogo durante a vida útil do produto.
 
 </dd> <dt>
 
 <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>**Informações adicionais**
 </dt> <dd>
 
-A integração com o Games Explorer exige que você autore um GDF (arquivo de definição de jogo), que é um arquivo de texto XML inserido em um arquivo binário (um arquivo executável ou uma DLL) como um recurso, juntamente com um ícone de Windows. Em seguida, o jogo deve ser registrado com o Games Explorer. O GDF também permite a exposição de informações fornecidas, como título do jogo, editor, desenvolvedor, links para sites e tarefas opcionais. Observe que as tarefas de suporte podem ser apenas links para sites, mas tarefas de reprodução também podem ser usadas para tarefas de suporte opcionais.
+a integração com o explorador de jogos exige que você crie um arquivo de definição de jogo (GDF), que é um arquivo de texto XML que é inserido em um arquivo binário (um arquivo executável ou uma DLL) como um recurso, juntamente com um ícone de Windows. O jogo deve então ser registrado com o explorador de jogos. O GDF também permite a exposição de informações fornecidas, como o título do jogo, o editor, o desenvolvedor, links para sites e tarefas opcionais. Observe que as tarefas de suporte podem ser apenas links para sites da Web, mas as tarefas de reprodução também podem ser usadas para tarefas opcionais de suporte.
 
-O Games Explorer pode usar uma imagem de bitmap em miniatura, mas é recomendável que, em vez disso, você forneça um recurso de ícone de Windows com ícones grandes (256 256). O recurso de ícone deve incluir tamanhos de imagem de 256 256 48 48, 32 32 e 16 16 em profundidades de cor de 24 bits (Cor Verdadeira) e 8 bits (256). O editor de ícones fornecido no Visual Studio 2008 e 2010 dá suporte a esses formatos de ícone grandes, assim como o IconWorkshop Lite.
+o explorador de jogos pode fazer uso de uma imagem de bitmap em miniatura, mas é recomendável que, em vez disso, você forneça um recurso de ícone de Windows com ícones grandes (256 256). O recurso de ícone deve incluir tamanhos de imagem de 256 256 48 48, 32 32 e 16 16 nas profundidades de cores de 24 bits (true color) e de 8 bits (256). o editor de ícone fornecido no Visual Studio 2008 e 2010 dá suporte a esses formatos de ícones grandes, assim como o IconWorkshop Lite.
 
-Detalhes sobre a integração **com Windows Games Explorer** são fornecidos no SDK do DirectX. O SDK do DirectX inclui um editor de GDF (arquivo de definição de jogo), bem como um exemplo de GDF incluído em GDFExampleBinary, um exemplo. Outro exemplo, GameUxInstallHelper, fornece rotinas para integrar a funcionalidade necessária aos sistemas de instalação existentes. O validador de arquivo de definição de gdftrace.exe de jogos fornece suporte de depuração para avaliar uma GDF. Consulte também "Windows Integração do Games Explorer" na Documentação do SDK do DirectX para C++.
+detalhes sobre a integração com o **Windows Games Explorer** são fornecidos no SDK do DirectX. O SDK do DirectX inclui um editor de GDF (arquivo de definição de jogo), bem como um GDF de exemplo que é incluído no GDFExampleBinary, um exemplo. Outro exemplo, GameUxInstallHelper, fornece rotinas para integrar a funcionalidade necessária aos sistemas de instalação existentes. O validador de arquivo de definição de jogo (gdftrace.exe) fornece suporte de depuração para avaliar um GDF. consulte também "integração do gerenciador de jogos de Windows" na documentação do SDK do DirectX para C++.
 
-Windows 7 introduz suporte para a segunda versão de um esquema para arquivos GDF. A nova versão inclui um método simplificado para criar tarefas de reprodução e suporte para notificações de atualização, provedores de serviços de jogos, estatísticas de jogo e RSS feeds para provedores de serviços de jogos. A versão mais recente do GameUxInstallHelper lida com todo o registro e o suporte herdado necessários para usar um arquivo GDF versão 2 com Windows Vista. Use as ferramentas e o código de exemplo do SDK do DirectX de agosto de 2009 ou posterior. É recomendável usar um arquivo GDF versão 2 para habilitar o suporte para feeds RSS, estatísticas de jogo e notificações de atualização. Além disso, consulte os exemplos ProviderGDFExampleBinary e GameStatisticsExample.
+o Windows 7 apresenta suporte para a segunda versão de um esquema para arquivos GDF. A nova versão inclui um método simplificado para criar tarefas de reprodução e suporte para notificações de atualização, provedores de serviço de jogos, estatísticas de jogos e RSS feeds para provedores de serviço de jogos. a versão mais recente do GameUxInstallHelper manipula todo o registro e o suporte herdado necessários para usar um arquivo GDF da versão 2 com o Windows Vista. Use as ferramentas e o código de exemplo do SDK do DirectX de agosto de 2009 ou posterior. É recomendável usar um arquivo GDF de versão 2 para habilitar o suporte para RSS feeds, estatísticas de jogos e notificações de atualização. Além disso, consulte os exemplos ProviderGDFExampleBinary e GameStatisticsExample.
 
-No Windows Vista Business Edition, Windows 7 Professional Edition e Edição Enterprise do Windows Vista e Windows 7, o link Jogos no menu Iniciar fica oculto. O Games Explorer ainda está disponível no menu Iniciar **clicando** em Todos os Programas e, em seguida, clicando em **Jogos**.
+no Windows vista Business edition, Windows 7 Professional edition e Edição Enterprise do Windows vista e do Windows 7, o link jogos na menu Iniciar está oculto. o explorador de jogos ainda está disponível no menu Iniciar clicando em **todos os programas** e, em seguida, clicando em **jogos**.
 
-Para aplicativos associados instalados com seu jogo, mas não os próprios jogos, você pode criar grupos de programas, atalhos e ícones de área de trabalho do menu Iniciar em todas as versões do Windows, incluindo Windows Vista e Windows 7. Esses aplicativos associados devem passar os Jogos aplicáveis para Windows requisitos; Para obter detalhes, consulte [Diretrizes para produtos de middleware de jogos.](#guidelines-for-game-middleware-products) Os serviços de jogos são incentivados a se registrar com o Games Explorer como um Provedor de Jogos Windows 7. 1
+para aplicativos associados que são instalados com seu jogo, mas não em jogos, você tem a liberdade de criar menu Iniciar grupos de programas, atalhos e ícones de área de trabalho em todas as versões do Windows, incluindo Windows Vista e Windows 7. esses aplicativos associados devem passar em jogos aplicáveis para requisitos de Windows; para obter detalhes, consulte [diretrizes para produtos de middleware de jogos](#guidelines-for-game-middleware-products). os serviços de jogos são incentivados a se registrarem no explorador de jogos como um provedor de jogos para o Windows 7. 1
 
 </dd> </dl>
 
-### <a name="12-support-family-safety--parental-controls"></a>1.2 Dar suporte a controles de segurança de família/pais
+### <a name="12-support-family-safety--parental-controls"></a>1,2 controles de segurança/pais da família de suporte
 
 <dl> <dt>
 
-<span id="Requirement"></span><span id="requirement"></span><span id="REQUIREMENT"></span>**Exigência**
+<span id="Requirement"></span><span id="requirement"></span><span id="REQUIREMENT"></span>**Obrigatoriedade**
 </dt> <dd>
 
-Os jogos devem dar suporte completo Windows Segurança da Família, aderindo às seguintes regras:
+os jogos devem dar suporte total à segurança da família Windows de acordo com as seguintes regras:
 
--   Os jogos não devem exigir que o usuário tenha credenciais administrativas para jogar. A instalação, a adoção de patch e a remoção podem exigir credenciais administrativas, sujeitos aos requisitos na seção 3. (Relacionado a isso é o requisito 2.1, Siga as Diretrizes de Controle de Conta de Usuário.)
--   Os jogos classificados por Windows de classificações com suporte, como ESRB e DRAI, devem incluir suas informações de classificações atribuídas no GDF (arquivo de definição de jogo). Todos os dados de classificações disponíveis devem ser incluídos em todas as versões localizadas do GDF, bem como na versão neutra para idioma.
--   Os jogos devem listar seus executáveis no GDF para fornecer uma boa experiência do usuário para Restrições Gerais de Aplicativo, a menos que o jogo use uma tecnologia antileição que cria executáveis nomeados aleatoriamente em runtime.
--   Os jogos devem chamar o **método VerifyAccess** da interface do Games Explorer durante a inicialização, se disponível, e sair se ele retornar \* pfHasAccess como FALSE.
+-   Os jogos não devem exigir que o usuário tenha credenciais administrativas para reproduzir. A instalação, a aplicação de patches e a remoção podem exigir credenciais administrativas, sujeitas aos requisitos da seção 3. (Relacionado a isso é requisito 2,1, siga as diretrizes de controle de conta de usuário.)
+-   os jogos classificados por Windows placas de classificação com suporte, como ESRB e PEGI, devem incluir suas informações de classificações atribuídas em seu GDF (arquivo de definição de jogo). Todos os dados de classificação disponíveis devem ser incluídos em todas as versões localizadas do GDF, bem como na versão neutra da linguagem.
+-   Os jogos devem listar seus executáveis no GDF para fornecer uma boa experiência de usuário para restrições gerais de aplicativos, a menos que o jogo use uma tecnologia antipirataria que cria executáveis aleatoriamente nomeados em tempo de execução.
+-   Os jogos devem chamar o método **VerifyAccess** da interface do explorador de jogos durante a inicialização, se disponível, e sair se retornar \* pfHasAccess como falso.
 
 </dd> <dt>
 
 <span id="Rationale"></span><span id="rationale"></span><span id="RATIONALE"></span>**Lógica**
 </dt> <dd>
 
-Todos os jogos devem ser executados dentro do contexto de uma conta de usuário padrão para permitir que as contas controladas Windows controles dos pais executem o jogo. Os pais querem a capacidade de monitorar e controlar o acesso dos filhos aos jogos. Além disso, vários grupos do setor, governo e advocacy desejam maneiras melhores de permitir que os pais monitorem e controlem os jogos aos quais seus filhos são expostos. Em conjunto com a arquitetura oferecida pelo Games Explorer, a Microsoft fornece aos pais essa capacidade por meio Windows de pais.
+todos os jogos devem ser executados dentro do contexto de uma conta de usuário padrão para permitir contas controladas por Windows controles dos pais para executar o jogo. Os pais desejam a capacidade de monitorar e controlar o acesso de seus filhos aos jogos. Além disso, vários grupos do setor, do governo e do advocacy desejam maneiras melhores de permitir que os pais monitorem e controlem os jogos nos quais seus filhos são expostos. em conjunto com a arquitetura oferecida pelo explorador de jogos, a Microsoft fornece aos pais essa capacidade por meio de Windows controles dos pais.
 
-Mesmo para jogos que não participam de um programa de quadro de classificações, exigir privilégios elevados cria uma experiência de jogo ruim para a maioria das contas de usuário. Esse é particularmente o caso se os Controles Dos Pais estão habilitados, o que exigiria que o pai insira a senha de administrador sempre que o jogo for lançado.
+Mesmo para jogos que não participam de um programa de tabuleiro de classificação, exigir privilégios elevados cria uma experiência de reprodução ruim para a maioria das contas de usuário. Isso é particularmente o caso se os controles dos pais estiverem habilitados, o que exigiria que o pai entrasse na senha de administrador sempre que o jogo for iniciado.
 
-O Windows controles dos pais permite que os pais selecionem as classificações que eles acredita que são apropriadas para seus filhos. Os Controles Dos Pais são suportados por muitos dos sistemas de classificações em todo o mundo. Os Controles dos Pais também permitem que os pais restrinjam o acesso a jogos com base em Descritores de Conteúdo (se o sistema de classificação aplicável dá suporte a eles) e para permitir ou não permitir o acesso a jogos individuais.
+o sistema de controles dos pais Windows permite que os pais selecionem as classificações que eles acreditam que são apropriadas para seus filhos. Os controles dos pais dão suporte a muitos dos sistemas de classificação mundiais. Os controles dos pais também permitem que os pais restrinjam o acesso a jogos com base em descritores de conteúdo (se o sistema de classificação aplicável oferecer suporte a eles) e para permitir ou impedir o acesso a jogos individuais.
 
-A opção padrão do sistema de classificação para Windows Controles Dos Pais é baseada na configuração de localidade do sistema, mas pode ser modificada pelo usuário em **Opções** Regionais e **de Idioma no Painel de Controle**. Portanto, cada idioma com suporte deve fornecer todos os dados de classificações disponíveis para que o usuário tenha a liberdade de selecionar qualquer quadro de classificações desejado.
+a opção padrão de sistema de classificação para Windows controles dos pais é baseada na configuração de localidade do sistema, mas pode ser modificada pelo usuário em **opções regionais e de idioma** no **painel de controle**. Portanto, cada idioma com suporte deve fornecer todos os dados de classificação disponíveis para que o usuário tenha a liberdade de selecionar qualquer quadro de classificação desejado.
 
 </dd> <dt>
 
 <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>**Informações adicionais**
 </dt> <dd>
 
-Os jogos sem uma classificação ainda devem atender aos requisitos para dar suporte ao jogo como um Usuário Padrão e chamar **VerifyAccess**. Esses jogos são padrão para a categoria Não rateado, exibem o texto  "Sem Classificação Fornecida" no Games Explorer e estão sujeitos à configuração Restrições de Jogo em Controles Dos **Pais** para jogos não rateados. A **configuração padrão Restrições** é Permitir.
+Os jogos sem uma classificação ainda devem atender aos requisitos para dar suporte à reprodução como usuário padrão e chamar **VerifyAccess**. Esses jogos assumem como padrão a categoria não classificada, exibem o texto "nenhuma classificação fornecida" no explorador de jogos e estão sujeitos à configuração de **restrições do jogo** nos **controles dos pais** para jogos sem classificação. A configuração de **restrições** padrão é permitir.
 
-As informações de classificação na GDF serão ignoradas se o binário que contém não estiver assinado corretamente pelo Authenticode. Consulte o requisito 2.3.
+As informações de classificação no GDF serão ignoradas se o binário que o contém não for corretamente assinado por Authenticode. Consulte o requisito 2,3.
 
-O Editor de Arquivos de Definição de Jogo no SDK do DirectX inclui todos os sistemas de classificações com suporte e replicará corretamente essas informações para todas as versões localizadas do GDF, bem como uma versão neutra de idioma. A ferramenta GDFTrace decodificará e verificará todas as informações de classificações presentes. Use a versão de agosto de 2009 ou posterior dessas ferramentas.
+O editor de arquivo de definição de jogo no SDK do DirectX inclui todos os sistemas de classificação com suporte e replicará corretamente essas informações para todas as versões localizadas do GDF, bem como uma versão neutra de idioma. A ferramenta GDFTrace decodificará e verificará todas as informações de classificação presentes. Use a versão de agosto de 2009 ou posterior dessas ferramentas.
 
-O GDF para um provedor de jogos normalmente não contém informações de classificação e está sujeito às configurações de conteúdo não rateado.
+O GDF para um provedor de jogos normalmente não contém informações de classificação e está sujeito às configurações de conteúdo sem classificação.
 
 
 
@@ -271,40 +271,40 @@ O GDF para um provedor de jogos normalmente não contém informações de classi
 <li>CERO (Japão)</li>
 <li>ESRB (EUA)</li>
 <li>OFLC (Austrália)</li>
-<li>DRAI (Europa)</li>
-<li>FINLÂNDIA (preterido)</li>
-<li>PORTUGALI Portugal</li>
-<li>DRAI/BBFC (Reino Unido)</li>
+<li>PEGI (Europa)</li>
+<li>PEGI Finlândia (preterido)</li>
+<li>PEGI Portugal</li>
+<li>PEGI/BBFC (Reino Unido)</li>
 <li>USK (Alemanha)</li>
 </ul></td>
 </tr>
 <tr class="even">
 <td>Windows Vista com um service pack</td>
-<td>Os service packs para Windows Vista adicionam suporte para o seguinte:<br/>
+<td>os Service packs do Windows Vista adicionam suporte para o seguinte:<br/>
 <ul>
 <li>GRB (Coreia do Sul)</li>
-<li>Descritores de conteúdo variantes do ESRB &quot; Variant &quot;</li>
+<li>&quot;Descritores de conteúdo de variante leve do ESRB &quot;</li>
 </ul></td>
 </tr>
 <tr class="odd">
 <td>Windows 7</td>
-<td>Windows 7 dá suporte aos sistemas de classificações com suporte do Windows Vista e adiciona suporte para o seguinte: <br/>
+<td>o Windows 7 dá suporte aos sistemas de classificação com suporte do Windows Vista e adiciona suporte para o seguinte: <br/>
 <ul>
 <li>CSRR (Taiwan)</li>
 </ul></td>
 </tr>
 <tr class="even">
 <td>Windows 8</td>
-<td>Windows 8 dá suporte aos sistemas de classificações anteriores e adiciona suporte para o seguinte:<br/>
+<td>o Windows 8 dá suporte aos sistemas de classificação anteriores e adiciona ao seguinte:<br/>
 <ul>
 <li>COB-AU (Austrália)</li>
 <li>DJCTQ (Brasil)</li>
 <li>PFB (África do Sul)</li>
 <li>OFLC-NZ (Nova Zelândia)</li>
 </ul>
-Windows 8 o suporte para os seguintes sistemas preterido agora:<br/>
+Windows 8 o rearo dá suporte para os seguintes sistemas preteridos agora:<br/>
 <ul>
-<li>PEGI-FI (Finlândia)</li>
+<li>FINI-FI (Finlândia)</li>
 <li>OFLC (Austrália)</li>
 </ul></td>
 </tr>
@@ -316,34 +316,34 @@ Windows 8 o suporte para os seguintes sistemas preterido agora:<br/>
  
 
 > [!Note]  
-> qualquer título que inclua os novos descritores de conteúdo do ESRB Windows Vista Service Pack 1 (SP1) mostrará como sem classificação no Windows Vista que não seja um service pack.
+> Qualquer título que inclua novos descritores de conteúdo do ESRB Windows Vista Service Pack 1 (SP1) será show as Unrated on Windows Vista without a service pack.
 
  
 
-Os dados de classificação mais recentes são ignorados em versões de sistemas operacionais sem suporte para eles. A variante PEGI (Finlândia) agora foi preterida em favor do sistema de classificação padrão PEGI (Europa). O sistema OFLC agora foi preterido em favor de COB-AU para Austrália.
+Os dados de classificações mais recentes são ignorados em versões de sistemas operacionais sem suporte para eles. Agora, a variante DOEI (Finlândia) foi preterida em favor do sistema de classificação PADRÃO DAL (Europa). O sistema OFLC agora foi preterido em favor do COB-AU para a Austrália.
 
-Para obter mais informações sobre como tornar um jogo compatível com privilégios de usuário padrão, consulte o artigo DirectX [controle de conta de usuário para desenvolvedores de jogos](/windows/desktop/DxTechArts/user-account-control-for-game-developers).
+Para obter mais informações sobre como tornar um jogo compatível com privilégios de usuário padrão, consulte o artigo Controle de conta de usuário do DirectX [para desenvolvedores de jogos](/windows/desktop/DxTechArts/user-account-control-for-game-developers).
 
-Consulte o requisito 1,1 para obter mais detalhes sobre o arquivo de definição de jogo (GDF).
+Consulte o requisito 1.1 para obter mais detalhes sobre o GDF (arquivo de definição de jogo).
 
 </dd> </dl>
 
-### <a name="13-support-rich-saved-games"></a>1,3 suporte a jogos salvos avançados
+### <a name="13-support-rich-saved-games"></a>1.3 Suporte a jogos salvos com rich
 
-\[Este requisito foi desativado\]
+\[Esse requisito foi retirado\]
 
-### <a name="14-support-the-xbox-360-common-controller-for-windows-conditional-requirement"></a>1,4 suporte ao controlador comum do Xbox 360 para Windows \[ requisito condicional\]
+### <a name="14-support-the-xbox-360-common-controller-for-windows-conditional-requirement"></a>1.4 Dar suporte ao Xbox 360 Common Controller para Windows \[ requisito condicional\]
 
 <dl> <dt>
 
-<span id="Requirement"></span><span id="requirement"></span><span id="REQUIREMENT"></span>**Obrigatoriedade**
+<span id="Requirement"></span><span id="requirement"></span><span id="REQUIREMENT"></span>**Exigência**
 </dt> <dd>
 
-jogos que dão suporte a controladores de gamepad devem dar suporte ao Controle Xbox 360 para Windows usando a API [XInput](/windows/desktop/xinput/xinput-game-controller-apis-portal) . Se os periféricos do DirectInput também tiverem suporte, o DirectInput também poderá ser usado. No entanto, XInput deverá ser a API padrão se um dispositivo compatível com o Xbox 360 for usado.
+Os jogos que suportam controladores de gamepad devem dar suporte ao Controle Xbox 360 para Windows usando a API [XInput.](/windows/desktop/xinput/xinput-game-controller-apis-portal) Se também há suporte para periféricos directInput, o DirectInput também pode ser usado. No entanto, o XInput deverá ser a API padrão se um Xbox 360 compatível for usado.
 
-Todas as referências a gatilhos e botões comuns do controlador devem usar os nomes do Xbox 360. consulte a lista de [terminologia do controlador comum do Xbox 360 para Windows](#xbox-360-common-controller-for-windows-terminology) para obter detalhes.
+Todas as referências a gatilhos e botões de controlador comuns devem usar os nomes Xbox 360 dados. Consulte a [Xbox 360 Common Controller para obter Windows terminologia](#xbox-360-common-controller-for-windows-terminology) para obter detalhes.
 
-A vibração do controlador deve ser desativada quando o jogo estiver em um estado de pausa ou suspenso.
+A vibração do controlador deve ser desligada quando o jogo está em um estado em pausa ou suspenso.
 
 O controle de mouse/teclado não pode ser totalmente desabilitado a qualquer momento. No mínimo, uma opção para retornar aos menus do jogo deve estar disponível.
 
@@ -352,7 +352,7 @@ O controle de mouse/teclado não pode ser totalmente desabilitado a qualquer mom
 <span id="Rationale"></span><span id="rationale"></span><span id="RATIONALE"></span>**Lógica**
 </dt> <dd>
 
-Esse requisito faz com que os jogadores tenham liberdade de escolha para usar o controlador Xbox 360 ou o teclado e o mouse, dependendo de qual método de entrada é uma interface mais natural e intuitiva.
+Esse requisito dá aos jogadores a liberdade de escolha de usar o controlador Xbox 360 ou o teclado e o mouse, dependendo de qual método de entrada é uma interface mais natural e intuitiva.
 
 </dd> <dt>
 
@@ -361,26 +361,26 @@ Esse requisito faz com que os jogadores tenham liberdade de escolha para usar o 
 
 Esse requisito não se aplica a jogos que usam apenas o mouse e/ou o teclado.
 
-Recomendamos que a navegação do menu seja implementada para usar os botões do controlador padrão amplamente aceitos:
+Recomendamos que a navegação de menu seja implementada para usar os botões de controlador padrão amplamente aceitos:
 
--   A-aceitar
--   B-cancelar
--   Iniciar-aceitar ou pausar
--   Back-Cancel, voltar uma tela ou um nível de menu acima
+-   A - Aceitar
+-   B – Cancelar
+-   Iniciar – Aceitar ou pausar
+-   Voltar – Cancelar, voltar uma tela ou um nível de menu acima
 
 Para obter mais informações, consulte [XInput](/windows/desktop/xinput/xinput-game-controller-apis-portal).
 
-O tópico [XInput e DirectInput](/windows/desktop/xinput/xinput-and-directinput) discute problemas com o uso de ambas as APIs ao mesmo tempo.
+O tópico [XInput e DirectInput](/windows/desktop/xinput/xinput-and-directinput) aborda problemas com o uso de ambas as APIs ao mesmo tempo.
 
-É recomendável que o DirectInput não seja usado para implementar controles de teclado ou mouse. os controles de teclado e mouse só devem ser implementados usando mensagens Windows e APIs do Win32. Para obter detalhes sobre como obter informações de movimentação de mouse de alta resolução sem usar o DirectInput, consulte [aproveitando High-Definition movimento do mouse](/windows/desktop/DxTechArts/taking-advantage-of-high-dpi-mouse-movement).
+É recomendável que o DirectInput não seja usado para implementar controles de teclado ou mouse. Os controles de teclado e mouse só devem ser implementados usando Windows e APIs do Win32. Para obter detalhes sobre como obter informações de movimentação do mouse de alta resolução sem usar o DirectInput, consulte Aproveitando a High-Definition [do mouse.](/windows/desktop/DxTechArts/taking-advantage-of-high-dpi-mouse-movement)
 
 </dd> </dl>
 
-### <a name="15-support-multiple-aspect-ratios-and-resolutions"></a>1,5 suporte a várias taxas de proporção e resoluções
+### <a name="15-support-multiple-aspect-ratios-and-resolutions"></a>1.5 Dar suporte a várias taxas de proporção e resoluções
 
 <dl> <dt>
 
-<span id="Requirement"></span><span id="requirement"></span><span id="REQUIREMENT"></span>**Obrigatoriedade**
+<span id="Requirement"></span><span id="requirement"></span><span id="REQUIREMENT"></span>**Exigência**
 </dt> <dd>
 
 O jogo deve dar suporte a pelo menos as seguintes taxas de proporção e resoluções de tela associadas:
@@ -389,22 +389,22 @@ O jogo deve dar suporte a pelo menos as seguintes taxas de proporção e resolu�
 -   16:9 widescreen (1280 720)
 -   16:10 widescreen (1152 720 ou 1680 1050 ou 800 480)
 
-Para configuração e detecção de resolução de tela, o jogo deve aderir às seguintes regras:
+Para configuração e detecção de resolução de tela, o jogo deve seguir as seguintes regras:
 
--   O jogo usa a resolução de desktop do dispositivo de vídeo por padrão se for uma resolução com suporte. A taxa de proporção da área de trabalho deve ser usada como critério de pesquisa se o jogo escolher uma resolução padrão diferente.
--   O jogo deve solicitar que o usuário confirme as novas configurações de exibição quando uma alteração é feita. Se o usuário não aceitar dentro de 15 segundos, a exibição deverá reverter para a configuração anterior.
--   O jogo não deve alongar os pixels ou centralizar uma janela de renderização 4:3 para dar suporte a taxas de proporção widescreen. No entanto, o formato Letterbox é aceitável.
+-   O jogo usa a resolução da área de trabalho do dispositivo de exibição por padrão se for uma resolução com suporte. A taxa de proporção da área de trabalho deve ser usada como um critério de pesquisa se o jogo escolher uma resolução padrão diferente.
+-   O jogo deve solicitar que o usuário confirme novas configurações de exibição quando uma alteração for feita. Se o usuário não aceitar dentro de 15 segundos, a exibição deverá ser revertida para a configuração anterior.
+-   O jogo não deve alongar pixels nem centralizar uma janela de renderização 4:3 para dar suporte a taxas de proporção de widescreen. No entanto, o letterboxing é aceitável.
 
 </dd> <dt>
 
 <span id="Rationale"></span><span id="rationale"></span><span id="RATIONALE"></span>**Lógica**
 </dt> <dd>
 
-com o Windows área de trabalho 3d, uma taxa de proporção ou resolução específica não pode ser assumida, devido aos seguintes fatores:
+Com o Windows desktop 3D, uma taxa de proporção ou resolução específica não pode ser assumida, devido aos seguintes fatores:
 
--   Suporte para exibições de alto nível.
--   Maior participação no mercado de monitores widescreen.
--   implantações de HDTV para Windows Media Center.
+-   Suporte para exibições de alto detalhe.
+-   Maior participação no mercado de monitores de tela larga.
+-   Implantações de HDTV para Windows Media Center.
 -   Requisitos de acessibilidade.
 
 </dd> <dt>
@@ -412,64 +412,64 @@ com o Windows área de trabalho 3d, uma taxa de proporção ou resolução espec
 <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>**Informações adicionais**
 </dt> <dd>
 
-Idealmente, o jogo assume como padrão a taxa de proporção nativa da exibição. No entanto, a obtenção dessas informações de forma confiável pode ser um desafio, assim como uma solução mais geral, o jogo pode assumir que a área de trabalho está sendo executada na proporção de aspecto nativa. A resolução da área de trabalho pode ser obtida chamando [**EnumDisplaySettings**](/windows/desktop/api/winuser/nf-winuser-enumdisplaysettingsa) com \_ as configurações de enumeração do registro \_ .
+O ideal é que o jogo padrão seja a taxa de proporção nativa da exibição. No entanto, obter essas informações de forma confiável pode ser um desafio, portanto, como uma solução mais geral, o jogo pode assumir que a área de trabalho está em execução na taxa de proporção nativa. A resolução da área de trabalho pode ser obtida chamando [**EnumDisplaySettings com**](/windows/desktop/api/winuser/nf-winuser-enumdisplaysettingsa) CONFIGURAÇÕES DE REGISTRO \_ \_ ENUM.
 
-para obter mais detalhes, consulte as seções taxa de proporção e Widescreen do artigo do DirectX [introdução à experiência de 10 pés para desenvolvedores de Windows jogos](/windows/desktop/DxTechArts/introduction-to-the-10-foot-experience-for-windows-game-developers).
+Para obter mais detalhes, consulte as seções Taxa de Proporção e Widescreen do artigo Do DirectX Introdução à experiência de 10 pés para [desenvolvedores Windows jogos.](/windows/desktop/DxTechArts/introduction-to-the-10-foot-experience-for-windows-game-developers)
 
 </dd> </dl>
 
-### <a name="16-support-launch-from-windows-media-center"></a>lançamento do suporte do 1,6 do Windows Media Center
+### <a name="16-support-launch-from-windows-media-center"></a>1.6 Lançamento de suporte do Windows Media Center
 
-\[Esse requisito foi desativado.\]
+\[Esse requisito foi retirado.\]
 
-### <a name="17-direct3d-support"></a>Suporte do Direct3D 1,7
+### <a name="17-direct3d-support"></a>1.7 Suporte direct3D
 
 <dl> <dt>
 
-<span id="Requirement"></span><span id="requirement"></span><span id="REQUIREMENT"></span>**Obrigatoriedade**
+<span id="Requirement"></span><span id="requirement"></span><span id="REQUIREMENT"></span>**Exigência**
 </dt> <dd>
 
-Se o jogo usar o Direct3D, a versão mínima com suporte deverá ser o Direct3D 9 e o Direct3D deverá ser o renderizador padrão selecionado.
+Se o jogo usar Direct3D, a versão mínima com suporte deverá ser Direct3D 9 e Direct3D deverá ser o renderador padrão selecionado.
 
 </dd> <dt>
 
 <span id="Rationale"></span><span id="rationale"></span><span id="RATIONALE"></span>**Lógica**
 </dt> <dd>
 
-a arquitetura gráfica do Windows Vista e do Windows 7 core foi projetada em todo o Direct3D. O Direct3D 8 e versões anteriores têm suporte ao remapear interfaces herdadas.
+A Windows vista e a Windows elementos gráficos principais 7 são projetadas em torno do Direct3D. O Direct3D 8 e versões anteriores têm suporte remapeando interfaces herdadas.
 
-O uso de versões do Direct3D mais recentes do que o Direct3D 9 é altamente incentivado. consulte os jogos para Windows Showcase S. 1. Exigir o Direct3D 10 ou o Direct3D 11 é totalmente compatível com o requisito 1,7.
+É fortemente incentivado o uso de versões do Direct3D mais recentes do que o Direct3D 9. Consulte Os Jogos para Windows Demonstração S.1. Exigir Direct3D 10 ou Direct3D 11 é totalmente compatível com o requisito 1.7.
 
 </dd> </dl>
 
-### <a name="18-enable-high-dpi-aware"></a>1,8 habilitar reconhecimento de DPI alto
+### <a name="18-enable-high-dpi-aware"></a>1.8 Habilitar alto nível de DPI
 
 <dl> <dt>
 
-<span id="Requirement"></span><span id="requirement"></span><span id="REQUIREMENT"></span>**Obrigatoriedade**
+<span id="Requirement"></span><span id="requirement"></span><span id="REQUIREMENT"></span>**Exigência**
 </dt> <dd>
 
-os jogos e seus instaladores devem ser executados corretamente sem problemas visuais quando o dimensionamento de pontos por polegada (DPI) estiver habilitado (testado com 144 DPI para 150% de dimensionamento na resolução de vídeo de 1600 1200) no Windows Vista e Windows 7.
+Os jogos e seus instaladores devem ser executados corretamente sem problemas visuais quando o dimensionamento DPI (pontos por polegada) está habilitado (testado com 144 DPI para 150% de dimensionamento na resolução de exibição de 1600 1200) no Windows Vista e Windows 7.
 
-Isso normalmente requer que o executável do jogo declare ser compatível com DPI. Isso é feito inserindo um elemento de manifesto: <dpiAware> true <dpiAware> .
+Normalmente, isso requer que o executável do jogo declare estar ciente de DPI. Isso é feito pela incorporação de um elemento de manifesto: <dpiAware> <dpiAware> true.
 
 </dd> <dt>
 
 <span id="Rationale"></span><span id="rationale"></span><span id="RATIONALE"></span>**Lógica**
 </dt> <dd>
 
-Monitores LCD de alta qualidade são comuns à medida que o computador é exibido e eles parecem melhores quando controlados em suas resoluções nativas (geralmente 1280 1024, 1600 1200 e assim por diante). Os clientes que têm dificuldade de ler texto e ver as imagens nessa resolução geralmente definem suas áreas de trabalho de computador com uma resolução mais baixa e sofrem artefatos visuais do dimensionamento de LCD. em vez disso, os clientes podem deixar a resolução no tamanho nativo e alterar o DPI da exibição do Windows, tornando a aparência do item e do texto maior sem sacrificar a qualidade da imagem.
+Monitores DE MONITORES de alta qualidade são comuns à medida que o computador é exibido e têm uma melhor aparência quando orientados em suas resoluções nativas (normalmente 1280 1024, 1600 1200 e assim por diante). Os clientes que têm dificuldade para ler texto e ver imagens nessa resolução geralmente configuram suas áreas de trabalho de computador para uma resolução mais baixa e sofrem artefatos visuais do dimensionamento do LCD. Em vez disso, os clientes podem deixar a resolução no tamanho nativo e alterar o DPI da exibição Windows, tornando a aparência de item e texto maior sem sacrificar a qualidade da imagem.
 
-embora esse recurso esteja disponível em algum formato desde o Windows XP, raramente é habilitado por clientes ou por OEMs. Mais da metade de todas as exibições de computador hoje estão definidas para uma resolução mais baixa do que a resolução nativa do monitor, com base nos comentários do cliente. o Windows 7 torna esse recurso muito mais visível para os clientes durante a configuração inicial e ao alterar as configurações de exibição, incentivando-os a usar o dimensionamento de DPI em vez de alterar a resolução da área de trabalho.
+Embora esse recurso tenha sido disponibilizado em alguma forma desde o Windows XP, ele raramente é habilitado por clientes ou por OEMs. Mais da metade de todas as exibições de computador hoje são definidas como uma resolução menor do que a resolução nativa do monitor, com base nos comentários dos clientes. Windows 7 torna esse recurso muito mais visível para os clientes durante a configuração inicial e ao alterar as configurações de exibição, incentivando-os a usar o dimensionamento de DPI em vez de alterar a resolução da área de trabalho.
 
 </dd> <dt>
 
 <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>**Informações adicionais**
 </dt> <dd>
 
-Em vez disso, a função [**SetProcessDPIAware**](/windows/desktop/api/winuser/nf-winuser-setprocessdpiaware) pode ser usada, se chamada antecipada no código de inicialização do processo. A adição ao manifesto é preferida, para garantir que não haja nenhuma condição de corrida com elementos de software (como DLLs) que possam ser inicializados antes do ponto de entrada principal ser chamado. observe que o **SetProcessDPIAware** está presente apenas no Windows Vista e Windows 7.
+A [**função SetProcessDPIAware**](/windows/desktop/api/winuser/nf-winuser-setprocessdpiaware) pode ser usada, se chamada no início do código de inicialização do processo. É preferível adicionar ao manifesto, para garantir que não haja condições de corrida com elementos de software (como DLLs) que possam ser inicializados antes que o ponto de entrada principal seja chamado. Observe que **SetProcessDPIAware** está presente apenas no Windows Vista e Windows 7.
 
-a adição do elemento manifest é fácil com Visual Studio 2005 e 2008; Crie um arquivo chamado dpiaware. manifest que contenha o seguinte texto:
+Adicionar o elemento de manifesto é fácil de fazer com Visual Studio 2005 e 2008; crie um arquivo chamado dpiaware.manifest que contém o seguinte texto:
 
 ``` syntax
             <assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3">
@@ -481,13 +481,13 @@ a adição do elemento manifest é fácil com Visual Studio 2005 e 2008; Crie um
             </assembly>
 ```
 
-em seguida, dentro de Visual Studio, adicione dpiware. manifest ao projeto. Verifique se **Inserir manifesto** está definido como **Sim** nas propriedades do projeto. Observe que as versões mais antigas da ferramenta de manifesto (Mt.exe) irão gerar um aviso falso com os elementos de manifesto com reconhecimento de DPI. para resolver isso, atualize Mt.exe para a versão mais recente do SDK do Windows.
+Em seguida, Visual Studio, adicione dpiware.manifest ao projeto. Verifique se **Inserir Manifesto** está definido como **Sim** nas propriedades do projeto. Observe que versões mais antigas da Ferramenta de Manifesto (Mt.exe) gerarão um aviso ilídio com os elementos de manifesto com conhecimento de DPI. Para resolver isso, atualize Mt.exe para a versão mais recente do SDK do Windows.
 
-Visual Studio 2010 inclui uma configuração nas propriedades do projeto, denominada **habilitar reconhecimento de DPI**, que elimina a necessidade de um arquivo como dpiaware. manifest. Localize **habilitar reconhecimento de DPI** expandindo **as propriedades de configuração** e a **ferramenta de manifesto** e, em seguida, selecionando **entrada & saída**.
+Visual Studio 2010 inclui uma configuração nas propriedades do projeto, chamada Habilitar Reconhecimento **de DPI,** que elimina a necessidade de um arquivo como dpiaware.manifest. Encontre **Habilitar Reconhecimento de DPI** expandindo Propriedades de **Configuração** e **Ferramenta** de Manifesto e, em seguida, selecionando **Entrada & Saída**.
 
-em Windows, o modo de exibição tradicional usa como padrão 96 DPI, que era comum para monitores CRT.
+No Windows, o modo de exibição tradicional assume como padrão 96 DPI, o que era comum para monitores CRT.
 
-Enquanto os aplicativos de tela inteira alteram a resolução de vídeo, geralmente usam as mensagens e métricas da janela ao configurar buffers e exibir retângulos. A virtualização de DPI faz com que esses modos de exibição de tela inteira pareçam cortados e a declaração de reconhecimento de DPI irá impedir esses problemas. Para obter mais informações, consulte [escrevendo DPI-Aware aplicativos Win32](../hidpi/high-dpi-desktop-application-development-on-windows.md).
+Embora os aplicativos de tela inteira alterem a resolução de exibição, eles geralmente usam mensagens de janela e métricas ao configurar buffers e exibir retângulos. A virtualização de DPI faz com que esses modos de exibição de tela inteira apareçam cortados e a declaração com conhecimento de DPI impedirá esses problemas. Para obter mais informações, consulte [Escrevendo DPI-Aware aplicativos Win32](../hidpi/high-dpi-desktop-application-development-on-windows.md).
 
 </dd> </dl>
 
@@ -497,40 +497,40 @@ Enquanto os aplicativos de tela inteira alteram a resolução de vídeo, geralme
 
 **Benefícios do cliente**
 
-os requisitos a seguir melhoram a segurança geral dos jogos e ajudam a garantir que eles trabalhem com Windows em diferentes arquiteturas, em configurações diferentes e em modos diferentes.
+Os requisitos a seguir melhoram a segurança geral dos jogos e ajudam a garantir que eles trabalhem com Windows diferentes arquiteturas, em configurações diferentes e em modos diferentes.
 
-### <a name="21-follow-user-account-control-guidelines"></a>2,1 seguir as diretrizes de controle de conta de usuário
+### <a name="21-follow-user-account-control-guidelines"></a>2.1 Seguir as diretrizes de controle de conta de usuário
 
 <dl> <dt>
 
-<span id="Requirement"></span><span id="requirement"></span><span id="REQUIREMENT"></span>**Obrigatoriedade**
+<span id="Requirement"></span><span id="requirement"></span><span id="REQUIREMENT"></span>**Exigência**
 </dt> <dd>
 
-Cada arquivo executável (ou seja, todos os arquivos que têm uma extensão .exe) deve conter um manifesto inserido que define seu nível de execução, incluindo a seguinte marca:
+Cada arquivo executável (ou seja, cada arquivo que tem uma extensão .exe) deve conter um manifesto inserido que define seu nível de execução incluindo a seguinte marca:
 
 ``` syntax
             <requestedExecutionLevel>
 ```
 
-Por requisito 1,2, o jogo principal e o executável de Autorun devem ter o nível de execução de asInvoker para dar suporte a contextos de usuário padrão.
+De acordo com o requisito 1.2, o jogo principal e o executável de execução automática devem ter o nível de execução do asInvoker para dar suporte a contextos de Usuário Padrão.
 
-Os arquivos de dados do usuário que têm associações de arquivos registradas com o **Explorador de arquivos** devem ser colocados em uma subpasta da pasta especificada por CSIDL \_ pessoal (também chamada de **documentos** ou **meus documentos**). Todos os outros arquivos de dados de usuário devem ser armazenados em uma subpasta das pastas que são especificadas por CSIDl \_ local \_ AppData ou CSIDL \_ comum \_ AppData. (Esses diretórios ficam ocultos por padrão para usuários individuais e para todos os usuários.)
+Os arquivos de dados do usuário que têm associações de arquivos registradas com **Explorador de Arquivos** devem ser colocados em uma subpasta da pasta especificada pelo CSIDL PERSONAL (também chamado de Documentos \_ ou **Meus Documentos**).  Todos os outros arquivos de dados de usuário devem ser armazenados em uma subpasta das pastas especificadas por CSIDL \_ LOCAL \_ APPDATA ou CSIDL \_ COMMON \_ APPDATA. (Esses diretórios são ocultos por padrão para usuários individuais e para todos os usuários.)
 
 </dd> <dt>
 
 <span id="Rationale"></span><span id="rationale"></span><span id="RATIONALE"></span>**Lógica**
 </dt> <dd>
 
-a experiência de Windows de um usuário será mais segura se os aplicativos forem executados somente com as permissões necessárias.
+A experiência de Windows usuário é mais segura se os aplicativos são executados somente com as permissões necessárias.
 
 </dd> <dt>
 
 <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>**Informações adicionais**
 </dt> <dd>
 
-Se apenas alguns recursos em um aplicativo exigirem privilégios administrativos (por exemplo, um aplicativo que precise configurar um firewall), o processo principal do aplicativo ainda deverá ser executado usando privilégios de usuário padrão. Recursos que exigem privilégios administrativos devem ser movidos para um processo separado, como um instalador ou utilitário de configuração.
+Se apenas alguns recursos em um aplicativo exigirem privilégios administrativos (por exemplo, um aplicativo que precisa configurar um firewall), o processo principal do aplicativo ainda deverá ser executado usando privilégios de usuário padrão. Os recursos que exigem privilégios administrativos devem ser movidos para um processo separado, como um instalador ou utilitário de configuração.
 
-Se privilégios administrativos não forem necessários, o XML do manifesto inserido deverá incluir o seguinte:
+Se os privilégios administrativos não são necessários, o XML do manifesto inserido deve incluir o seguinte:
 
 ``` syntax
             <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
@@ -545,7 +545,7 @@ Se privilégios administrativos não forem necessários, o XML do manifesto inse
             </assembly>
 ```
 
-Se forem necessários privilégios administrativos, o XML do manifesto inserido deverá incluir o seguinte:
+Se os privilégios administrativos são necessários, o XML do manifesto inserido deve incluir o seguinte:
 
 ``` syntax
             <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
@@ -560,188 +560,188 @@ Se forem necessários privilégios administrativos, o XML do manifesto inserido 
             </assembly>
 ```
 
-com o Visual Studio 2005, isso é facilmente inserido simplesmente adicionando um arquivo de manifesto (. manifest) que contém um dos blocos anteriores ao projeto e garantindo que o **manifesto de inserção** seja definido como **sim** na ferramenta de manifesto propriedades do projeto. para Visual Studio 2008 e 2010, as propriedades do UAC podem ser definidas diretamente nas propriedades do projeto para o vinculador na página do **arquivo de manifesto** . Observe que as versões mais antigas da ferramenta de manifesto (Mt.exe) geram um aviso falso com os elementos de manifesto do UAC. para resolver isso, atualize Mt.exe para a versão mais recente do SDK do Windows.
+Com o Visual Studio 2005, isso é facilmente inserido apenas adicionando um arquivo de manifesto (.manifest) que contém um dos blocos anteriores ao projeto e garantindo que **Inserir** Manifesto seja definido como **Sim** nas propriedades do projeto para a Ferramenta de Manifesto. Por Visual Studio 2008 e 2010, as propriedades UAC podem ser definidas diretamente nas propriedades do projeto para o vinculador na página Arquivo **de** Manifesto. Observe que as versões mais antigas da Ferramenta de Manifesto (Mt.exe) geram um aviso imputioso com os elementos de manifesto UAC. Para resolver isso, atualize Mt.exe para a versão mais recente do SDK do Windows.
 
-Consulte o requisito 3,1 para obter detalhes sobre os casos especiais de instalação, aplicação de patch e remoção.
+Consulte o requisito 3.1 para obter detalhes sobre os casos especiais de instalação, a patch e a remoção.
 
-As DLLs (bibliotecas de vínculo dinâmico) não exigem esses manifestos.
+DLLs (Bibliotecas de Vínculo Dinâmico) não exigem esses manifestos.
 
-Para obter mais informações sobre o controle de conta de usuário, consulte [controle de conta de usuário para desenvolvedores de jogos](/windows/desktop/DxTechArts/user-account-control-for-game-developers).
-
-</dd> </dl>
-
-### <a name="22-support-windows-x64-versions"></a>suporte a 2,2 Windows versões x64
-
-<dl> <dt>
-
-<span id="Requirement"></span><span id="requirement"></span><span id="REQUIREMENT"></span>**Obrigatoriedade**
-</dt> <dd>
-
-para manter a compatibilidade com as edições de 64 bits do Windows, os jogos devem atender aos seguintes requisitos.
-
--   Os títulos e os instaladores de título não devem conter nenhum código de 16 bits nem contar com nenhum componente de 16 bits.
--   Se o jogo for dependente dos drivers do modo kernel para a operação, as versões x64 desses drivers deverão estar disponíveis. A instalação do jogo deve detectar e instalar os drivers e componentes adequados para as edições de 64 bits do Windows.
-
-</dd> <dt>
-
-<span id="Rationale"></span><span id="rationale"></span><span id="RATIONALE"></span>**Lógica**
-</dt> <dd>
-
-muitos usuários Windows Vista e Windows 7 executarão edições de 64 bits do sistema operacional durante a vida útil do produto, portanto, é crucial que os aplicativos sejam compatíveis com esse sistema operacional.
-
-</dd> <dt>
-
-<span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>**Informações adicionais**
-</dt> <dd>
-
-Windows em Windows 64 (WOW64) permite que o código de 32 bits seja executado em edições de 64 bits do Windows, portanto, não é necessário que o aplicativo seja um código nativo de 64 bits em edições de 64 bits do Windows. O código de 16 bits não é executado em edições de 64 bits do Windows.
-
-não é necessário manter a compatibilidade com o Windows XP Professional x64 Edition, mas é altamente recomendável.
-
-Para obter detalhes, consulte [programação de 64 bits para desenvolvedores de jogos](/windows/desktop/DxTechArts/sixty-four-bit-programming-for-game-developers).
+Para obter mais informações sobre o Controle de Conta de Usuário, consulte [Controle de conta de usuário para desenvolvedores de jogos](/windows/desktop/DxTechArts/user-account-control-for-game-developers).
 
 </dd> </dl>
 
-### <a name="23-sign-files"></a>2,3 assinar arquivos
-
-<dl> <dt>
-
-<span id="Requirement"></span><span id="requirement"></span><span id="REQUIREMENT"></span>**Obrigatoriedade**
-</dt> <dd>
-
-Todos os arquivos de código executáveis (normalmente, arquivos com a extensão .exe ou .dll) devem ser assinados com um certificado Authenticode válido publicamente e devem ter uma URL de servidor de carimbo de data/hora válida para assinatura de produção.
-
-se seu jogo usa Windows Installer, os arquivos do pacote do instalador (arquivos .msi) devem ser assinados.
-
-</dd> <dt>
-
-<span id="Rationale"></span><span id="rationale"></span><span id="RATIONALE"></span>**Lógica**
-</dt> <dd>
-
-Assinar um arquivo ajuda os usuários a decidir se devem confiar em um aplicativo e garante aos usuários que os arquivos não foram adulterados. Ele também permite que os aplicativos sejam executados corretamente em ambientes bloqueados.
-
-</dd> <dt>
-
-<span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>**Informações adicionais**
-</dt> <dd>
-
-Para obter detalhes, consulte [assinatura Authenticode para desenvolvedores de jogos](/windows/desktop/DxTechArts/authenticode-signing-for-game-developers).
-
-se seu jogo usa Windows Installer, recomendamos que você habilite o UAC/aplicação de patches de LUA, incluindo uma tabela MsiPatchCertificate. Para obter mais informações, consulte [aplicação de patch de UAC (controle de conta de usuário)](/windows/desktop/Msi/user-account-control--uac--patching).
-
-Não recomendamos a assinatura de arquivos de gabinete (.cab), a menos que eles sejam relativamente pequenos (menos de 100 MB).
-
-</dd> </dl>
-
-### <a name="24-sign-drivers"></a>Drivers de assinatura 2,4
-
-<dl> <dt>
-
-<span id="Requirement"></span><span id="requirement"></span><span id="REQUIREMENT"></span>**Obrigatoriedade**
-</dt> <dd>
-
-Qualquer driver de modo kernel instalado pelo jogo deve ser assinado com um certificado de Authenticode válido publicamente.
-
-qualquer driver de dispositivo de hardware de modo kernel instalado pelo jogo deve ter uma assinatura da Microsoft, que pode ser obtida do Windows WHQL (laboratórios de qualidade de hardware) ou do programa DRS (assinatura de confiabilidade do driver).
-
-</dd> <dt>
-
-<span id="Rationale"></span><span id="rationale"></span><span id="RATIONALE"></span>**Lógica**
-</dt> <dd>
-
-Mal gravados ou drivers de malware podem afetar seriamente a estabilidade e a segurança de um sistema. em edições de 64 bits do Windows Vista e Windows 7, os drivers não assinados não são carregados. essa política também pode ser habilitada para edições de 32 bits do Windows Vista e Windows 7.
-
-</dd> <dt>
-
-<span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>**Informações adicionais**
-</dt> <dd>
-
-As versões nativas de 32 bits e 64 bits de todos os drivers de modo kernel são necessárias por requisito 2,2.
-
-mais informações sobre programas de assinatura de driver da Microsoft podem ser encontradas no [portal do desenvolvedor de Hardware Windows](https://www.microsoft.com/whdc/winlogo/hwrequirements.mspx).
-
-</dd> </dl>
-
-### <a name="25-perform-proper-version-checking"></a>2,5 executar a verificação de versão apropriada
-
-<dl> <dt>
-
-<span id="Requirement"></span><span id="requirement"></span><span id="REQUIREMENT"></span>**Obrigatoriedade**
-</dt> <dd>
-
-os jogos não devem falhar na execução em sistemas operacionais futuros, conforme indicado pelas alterações no número de versão Windows, a menos que o contrato de licença de usuário final proíba o uso em sistemas operacionais futuros. Se o jogo for supostamente reprovado, ele deverá fazer isso normalmente exibindo uma mensagem apropriada ao usuário.
-
-se Windows verificações de versão forem feitas, as APIs de verificação de versão ([**GetVersionEx**](/windows/desktop/api/sysinfoapi/nf-sysinfoapi-getversionexa) ou [**VerifyVersionInfo**](/windows/desktop/api/winbase/nf-winbase-verifyversioninfoa)) deverão ser usadas para verificar a versão do sistema operacional. As chaves do registro não devem ser lidas para determinar a versão.
-
-As verificações explícitas de versão do tempo de execução do DirectX não devem estar presentes no jogo. Essas verificações de versão não devem estar presentes na instalação que inicia a instalação do DirectX Runtime (DirectSetup).
-
-</dd> <dt>
-
-<span id="Rationale"></span><span id="rationale"></span><span id="RATIONALE"></span>**Lógica**
-</dt> <dd>
-
-quando Windows usuários atualizam seus sistemas operacionais, eles não devem ser impedidos de reproduzir jogos atuais simplesmente porque o número de versão do Windows aumentou. os verificadores de versão mal escritos continuam a criar problemas de software que, caso contrário, funciona bem em versões mais recentes do Windows ou simplesmente com a adição de um service pack de Windows.
-
-A lógica de comparação de verificação de versão frágil para o tempo de execução do DirectX criou várias instalações com falha quando ele é executado em versões diferentes do Windows. O número de versão do DirectX aplica-se apenas aos principais componentes do sistema operacional. Ele não se aplica aos componentes do SDK do DirectX lado a lado que são usados por muitos jogos.
-
-</dd> <dt>
-
-<span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>**Informações adicionais**
-</dt> <dd>
-
-É muito comum ver OS instaladores verificar se há uma versão mínima do so. No entanto, essa verificação precisa ser feita com cuidado para garantir que ela teste para maior ou igual a, em vez de igualdade simples, bloqueando assim para uma versão específica do sistema operacional. Usar o teste de **HighVersionLie** do Application Verifier é uma maneira rápida e fácil de determinar como o seu instalador reagirá a uma alteração significativa no número de versão do sistema operacional.
-
-O uso adequado do pacote de redistribuição do DirectX Runtime (instalação do DirectX) envolve sempre iniciá-lo durante a instalação, preferencialmente no modo silencioso. Isso permite que o código fornecido pela Microsoft execute todas as atualizações de versão necessárias. Ele também permite a instalação de quaisquer componentes opcionais do SDK do DirectX lado a lado, como D3DX, transação, MDX ou XInput.
-
-Para obter as práticas recomendadas para implantar o tempo de execução do DirectX, consulte [instalação do DirectX para desenvolvedores de jogos](/windows/desktop/DxTechArts/directx-setup-for-game-developers).
-
-é recomendável que os jogos que dão suporte ao Windows XP verifiquem um nível de service pack 2 ou superior, pois o service pack 2 (SP2) e o service pack 3 (SP3) fornecem melhorias de segurança significativas, um requisito simplificado de redistribuição de tempo de execução do DirectX e uma implantação extremamente ampla. as tecnologias mais modernas da Microsoft que dão suporte ao Windows XP exigem SP2 ou SP3 (XAudio2, jogos para Windows-LIVE e assim por diante).
-
-</dd> </dl>
-
-### <a name="26-support-concurrent-user-sessions"></a>2,6 suporte a sessões de usuário simultâneas
-
-<dl> <dt>
-
-<span id="Requirement"></span><span id="requirement"></span><span id="REQUIREMENT"></span>**Obrigatoriedade**
-</dt> <dd>
-
-Não é necessário que os jogos que dependem de gráficos 3D funcionem em uma conexão de área de trabalho remota, mas o usuário deve ser alertado quando o jogo falhar.
-
-os jogos devem oferecer suporte a cenários de Windows multitarefa padrão ao aderir às seguintes regras:
-
--   Os jogos não devem bloquear o uso de sessões de usuário simultâneas.
--   Um jogo deve ser executado em uma nova sessão de usuário quando ele já estiver em execução em outra sessão.
--   O som do jogo em uma sessão de usuário não deve ser ouvido quando outro usuário estiver ativo em uma sessão diferente.
--   Os jogos devem dar suporte à troca rápida de usuário.
--   Os jogos não devem tentar desabilitar a alternância de tarefas padrão. Os jogos não devem desabilitar o atalho de teclado ALT + TAB. Os jogos têm permissão para desabilitar atalhos de teclado de acessibilidade, conforme descrito em [desabilitando teclas de atalho em jogos](/windows/desktop/DxTechArts/disabling-shortcut-keys-in-games).
-
-</dd> <dt>
-
-<span id="Rationale"></span><span id="rationale"></span><span id="RATIONALE"></span>**Lógica**
-</dt> <dd>
-
-Windows os usuários devem ser capazes de executar sessões simultâneas sem conflitos ou interrupções. esse é um cenário comum para um computador Windows que é compartilhado por uma família, roommates ou outros.
-
-</dd> <dt>
-
-<span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>**Informações adicionais**
-</dt> <dd>
-
-Para testar se o jogo é iniciado em uma sessão remota, chame [**GetSystemMetrics**](/windows/desktop/api/winuser/nf-winuser-getsystemmetrics)(SM \_ REMOTESESSION). Um valor diferente de zero indica que a sessão é remota.
-
-Para obter mais informações, consulte [troca rápida de usuário](/windows-hardware/drivers/display/fast-user-switching). Observe que a troca rápida de usuário ocorre se as restrições de tempo dos controles pais estiverem habilitadas quando o tempo do usuário estiver ativo. Consulte o requisito 1.2 para obter mais detalhes.
-
-</dd> </dl>
-
-### <a name="27-support-long-names"></a>2.7 Suporte a nomes longos
+### <a name="22-support-windows-x64-versions"></a>2.2 Suporte a Windows versões x64
 
 <dl> <dt>
 
 <span id="Requirement"></span><span id="requirement"></span><span id="REQUIREMENT"></span>**Exigência**
 </dt> <dd>
 
-Se um jogo dá suporte à salvação de arquivos, ele deve ser capaz de salvar arquivos que têm nomes e caminhos longos. O jogo deve lidar corretamente com caracteres especiais do sistema de arquivos, como \\ / : \* ? " < >, em qualquer campo de entrada do usuário usado para criar nomes de arquivo ou caminhos.
+Para manter a compatibilidade com as edições de 64 bits Windows, os jogos devem atender aos requisitos a seguir.
+
+-   Os títulos e instaladores de título não devem conter nenhum código de 16 bits nem depender de nenhum componente de 16 bits.
+-   Se o jogo for dependente de drivers de modo kernel para operação, as versões x64 desses drivers deverão estar disponíveis. A configuração do jogo deve detectar e instalar os drivers e componentes adequados para as edições de 64 bits Windows.
+
+</dd> <dt>
+
+<span id="Rationale"></span><span id="rationale"></span><span id="RATIONALE"></span>**Lógica**
+</dt> <dd>
+
+Muitos usuários Windows Vista e Windows 7 executarão edições de 64 bits do sistema operacional ao longo da vida útil do produto, portanto, é crucial que os aplicativos sejam compatíveis com esse sistema operacional.
+
+</dd> <dt>
+
+<span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>**Informações adicionais**
+</dt> <dd>
+
+Windows no Windows 64 (WOW64) permite que o código de 32 bits seja executado em edições de 64 bits do Windows, portanto, não é necessário que o aplicativo seja um código nativo de 64 bits em edições de 64 bits do Windows. O código de 16 bits não é executado em edições de 64 bits do Windows.
+
+Manter a compatibilidade com Windows XP Professional x64 Edition não é necessário, mas é fortemente incentivado.
+
+Para obter detalhes, consulte [Programação de 64 bits para desenvolvedores de jogos.](/windows/desktop/DxTechArts/sixty-four-bit-programming-for-game-developers)
+
+</dd> </dl>
+
+### <a name="23-sign-files"></a>2.3 Assinar arquivos
+
+<dl> <dt>
+
+<span id="Requirement"></span><span id="requirement"></span><span id="REQUIREMENT"></span>**Exigência**
+</dt> <dd>
+
+Todos os arquivos de código executáveis (normalmente, arquivos com a extensão .exe ou .dll) devem ser assinados com um certificado Authenticode válido publicamente e devem ter uma URL de servidor de data/hora válida para assinatura de produção.
+
+Se o seu jogo usar Windows Instalador, os arquivos de pacote do instalador (arquivos .msi) deverão ser assinados.
+
+</dd> <dt>
+
+<span id="Rationale"></span><span id="rationale"></span><span id="RATIONALE"></span>**Lógica**
+</dt> <dd>
+
+A assinatura de um arquivo ajuda os usuários a decidir se confiam em um aplicativo e garante que os arquivos não foram adulterados. Ele também permite que os aplicativos executem corretamente em ambientes bloqueados.
+
+</dd> <dt>
+
+<span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>**Informações adicionais**
+</dt> <dd>
+
+Para obter detalhes, consulte [Autenticação authenticode para desenvolvedores de jogos.](/windows/desktop/DxTechArts/authenticode-signing-for-game-developers)
+
+Se seu jogo usar Windows Instalador, recomendamos que você habilita a adoção de patch UAC/LUA, incluindo uma tabela MsiPatchCertificate. Para obter mais informações, consulte [UAC (Controle de Conta de Usuário).](/windows/desktop/Msi/user-account-control--uac--patching)
+
+Não recomendamos assinar arquivos de gabinete (.cab), a menos que sejam relativamente pequenos (menos de 100 MB).
+
+</dd> </dl>
+
+### <a name="24-sign-drivers"></a>2.4 Assinar Drivers
+
+<dl> <dt>
+
+<span id="Requirement"></span><span id="requirement"></span><span id="REQUIREMENT"></span>**Exigência**
+</dt> <dd>
+
+Qualquer driver de modo kernel instalado pelo jogo deve ser assinado com um certificado Authenticode válido publicamente.
+
+Qualquer driver de dispositivo de hardware no modo kernel instalado pelo jogo deve ter uma assinatura da Microsoft, que pode ser obtida do WHQL (Hardware Quality Labs) do Windows ou do programa DRS (Assinatura de Confiabilidade do Driver).
+
+</dd> <dt>
+
+<span id="Rationale"></span><span id="rationale"></span><span id="RATIONALE"></span>**Lógica**
+</dt> <dd>
+
+Drivers mal escritos ou malware podem afetar gravemente a estabilidade e a segurança de um sistema. Em edições de 64 bits do Windows Vista e Windows 7, os drivers não assinados não são carregados. Essa política também pode ser habilitada para edições de 32 bits do Windows Vista e Windows 7.
+
+</dd> <dt>
+
+<span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>**Informações adicionais**
+</dt> <dd>
+
+As versões nativas de 32 e 64 bits de todos os drivers de modo kernel são necessárias de acordo com o requisito 2.2.
+
+Mais informações sobre programas de assinatura de driver da Microsoft podem ser encontradas [no portal Windows Desenvolvedor de Hardware](https://www.microsoft.com/whdc/winlogo/hwrequirements.mspx).
+
+</dd> </dl>
+
+### <a name="25-perform-proper-version-checking"></a>2.5 Executar verificação de versão adequada
+
+<dl> <dt>
+
+<span id="Requirement"></span><span id="requirement"></span><span id="REQUIREMENT"></span>**Exigência**
+</dt> <dd>
+
+Os jogos não devem falhar ao ser executados em sistemas operacionais futuros, conforme indicado pelas alterações no número de versão Windows, a menos que o Contrato de Licença do Usuário Final proíbe o uso em sistemas operacionais futuros. Se o jogo tiver que falhar, ele deverá fazer isso normalmente exibindo uma mensagem apropriada para o usuário.
+
+Se Windows de versão for feita, as APIs de verificação de versão ([**GetVersionEx**](/windows/desktop/api/sysinfoapi/nf-sysinfoapi-getversionexa) ou [**VerifyVersionInfo**](/windows/desktop/api/winbase/nf-winbase-verifyversioninfoa)) deverão ser usadas para verificar a versão do sistema operacional. As chaves do Registro não devem ser lidas para determinar a versão.
+
+Verificações explícitas de versão para o runtime do DirectX não devem estar presentes no jogo. Essas verificações de versão não devem estar presentes na instalação que inicia a instalação do runtime do DirectX (DirectSetup).
+
+</dd> <dt>
+
+<span id="Rationale"></span><span id="rationale"></span><span id="RATIONALE"></span>**Lógica**
+</dt> <dd>
+
+Quando Windows os usuários atualizem seus sistemas operacionais, eles não devem ser impedidos de jogar jogos atuais simplesmente porque o Windows de versão aumentou. Os verificadores de versão mal escritos continuam a criar problemas para softwares que, caso contrário, funcionam bem em versões mais recentes do Windows ou simplesmente com a adição de um Windows service pack.
+
+A lógica de comparação de verificação de versão frágil para o runtime do DirectX criou várias instalações com falha quando é executado em diferentes versões do Windows. O número de versão do DirectX se aplica somente aos componentes principais do sistema operacional. Ele não se aplica aos componentes do SDK do DirectX lado a lado que são usados por muitos jogos.
+
+</dd> <dt>
+
+<span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>**Informações adicionais**
+</dt> <dd>
+
+É muito comum ver os instaladores verificarem se há uma versão mínima do sistema operacional. Essa verificação, no entanto, precisa ser feita com cuidado para garantir que ela teste para maior ou igual a, em vez de igualdade simples, assim, bloquear para uma versão específica do sistema operacional. Usar Application Verifier teste **HighVersionLie** é uma maneira rápida e fácil de determinar como o instalador reagirá a uma alteração significativa no número de versão do sistema operacional.
+
+O uso adequado do pacote de redistribuição de runtime do DirectX (Instalação do DirectX) envolve sempre inove-o durante a instalação, preferencialmente no modo silencioso. Isso permite que o código fornecido pela Microsoft execute as atualizações de versão necessárias. Ele também permite a instalação de quaisquer componentes opcionais do SDK do DirectX lado a lado, como D3DX, XACT, MDX ou XInput.
+
+Para ver as práticas recomendadas para implantar o runtime do DirectX, consulte [Instalação do DirectX para desenvolvedores de jogos.](/windows/desktop/DxTechArts/directx-setup-for-game-developers)
+
+É recomendável que os jogos que dão suporte ao Windows XP verifiquem se há um nível de service pack 2 ou superior, pois o Service Pack 2 (SP2) e o Service Pack 3 (SP3) fornecem melhorias significativas de segurança, um requisito simplificado de Redistribuição do DirectX Runtime e uma implantação extremamente ampla. A maioria das tecnologias modernas da Microsoft que Windows o XP exige SP2 ou SP3 (XAudio2, Jogos para Windows – LIVE e assim por diante).
+
+</dd> </dl>
+
+### <a name="26-support-concurrent-user-sessions"></a>2.6 Suporte a sessões de usuário simultâneas
+
+<dl> <dt>
+
+<span id="Requirement"></span><span id="requirement"></span><span id="REQUIREMENT"></span>**Exigência**
+</dt> <dd>
+
+Os jogos que dependem de gráficos 3D não precisam funcionar em uma conexão de área de trabalho remota, mas o usuário deve ser alertado quando o jogo falhar.
+
+Os jogos devem dar suporte Windows cenários de multitarefa padrão, aderindo às seguintes regras:
+
+-   Os jogos não devem bloquear o uso de sessões de usuário simultâneas.
+-   Um jogo deve ser executado em uma nova sessão de usuário quando ele já estiver em execução em outra sessão.
+-   O som do jogo em uma sessão de usuário não deve ser ouvido quando outro usuário está ativo em uma sessão diferente.
+-   Os jogos devem dar suporte à Troca Rápida de Usuários.
+-   Os jogos não devem tentar desabilitar a alternação de tarefas padrão. Os jogos não devem desabilitar o atalho de teclado ALT+TAB. Os jogos têm permissão para desabilitar atalhos de teclado de acessibilidade, conforme descrito em [Desabilitando teclas de atalho em Jogos](/windows/desktop/DxTechArts/disabling-shortcut-keys-in-games).
+
+</dd> <dt>
+
+<span id="Rationale"></span><span id="rationale"></span><span id="RATIONALE"></span>**Lógica**
+</dt> <dd>
+
+Windows os usuários devem ser capazes de executar sessões simultâneas sem conflitos ou interrupções. Esse é um cenário comum para um computador Windows que é compartilhado por uma família, desamidados ou outros.
+
+</dd> <dt>
+
+<span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>**Informações adicionais**
+</dt> <dd>
+
+Para testar se o jogo é lançado em uma sessão remota, chame [**GetSystemMetrics**](/windows/desktop/api/winuser/nf-winuser-getsystemmetrics)(SM \_ REMOTESESSION). Um valor não zero indica que a sessão é remota.
+
+Para obter mais informações, consulte [Troca rápida de usuário.](/windows-hardware/drivers/display/fast-user-switching) Observe que a Opção Rápida de Usuário ocorrerá se as restrições de tempo dos Controles Dos Pais estão habilitadas quando o tempo do usuário está acima. Consulte o requisito 1,2 para obter mais detalhes.
+
+</dd> </dl>
+
+### <a name="27-support-long-names"></a>2,7 nomes longos de suporte
+
+<dl> <dt>
+
+<span id="Requirement"></span><span id="requirement"></span><span id="REQUIREMENT"></span>**Obrigatoriedade**
+</dt> <dd>
+
+Se um jogo oferecer suporte para salvar arquivos, ele deverá ser capaz de salvar arquivos que têm nomes e caminhos longos. O jogo deve lidar corretamente com caracteres especiais do sistema de arquivos, como \\ /: \* ? " < >, em qualquer campo de entrada do usuário que é usado para criar nomes de arquivo ou caminhos.
 
 Os jogos devem funcionar corretamente quando um usuário tem um nome de usuário longo.
 
@@ -750,14 +750,14 @@ Os jogos devem funcionar corretamente quando um usuário tem um nome de usuário
 <span id="Rationale"></span><span id="rationale"></span><span id="RATIONALE"></span>**Lógica**
 </dt> <dd>
 
-Os jogadores estão acostumados a usar nomes longos em caminhos profundos com suporte pelo sistema operacional subjacente.
+Os jogadores estão acostumados a usar nomes longos em caminhos profundos que são suportados pelo sistema operacional subjacente.
 
 </dd> <dt>
 
 <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>**Informações adicionais**
 </dt> <dd>
 
-Nomes longos são definidos como aqueles que contêm os valores máximos definidos no SDK Windows dados.
+nomes longos são definidos como aqueles que contêm os valores máximos definidos no SDK do Windows.
 
 </dd> </dl>
 
@@ -767,148 +767,148 @@ Nomes longos são definidos como aqueles que contêm os valores máximos definid
 
 **Benefícios do cliente**
 
-Os clientes podem ter certeza de que os aplicativos serão instalados no Windows sem degradar o sistema operacional ou outros aplicativos se os aplicativos usarem métodos oficiais de distribuição de componentes do sistema. Uma experiência de instalação simplificada fornece uma experiência mais acessível e sem problemas para jogos.
+os clientes podem ter certeza de que os aplicativos serão instalados em Windows sem degradar o sistema operacional ou outros aplicativos se os aplicativos usarem métodos oficiais de distribuição de componentes do sistema. Uma experiência de instalação simplificada fornece uma experiência pronta para uso mais acessível e sem problemas para jogos.
 
-### <a name="31-support-easy-installation"></a>3.1 Dar suporte à instalação fácil
+### <a name="31-support-easy-installation"></a>3,1 suporte à instalação fácil
 
 <dl> <dt>
 
-<span id="Requirement"></span><span id="requirement"></span><span id="REQUIREMENT"></span>**Exigência**
+<span id="Requirement"></span><span id="requirement"></span><span id="REQUIREMENT"></span>**Obrigatoriedade**
 </dt> <dd>
 
 Os jogos devem fornecer um caminho simplificado na interface do usuário de instalação implementando o seguinte:
 
 -   Exibir um máximo de um prompt de EULA.
--   O caminho de instalação padrão deve ignorar todas as seleções para a instalação (como seleções de componente ou pasta de instalação), assumir as seleções padrão e, em seguida, executar o jogo ou o launcher após a instalação bem-sucedida, sem prompts adicionais. Se desejado, uma opção de instalação personalizada pode ser fornecida para opções de configuração avançadas.
--   Instale os componentes necessários do sistema operacional (como os runtimes do DirectX e do Visual C) usando os pacotes de redistribuição corretos da Microsoft. A instalação deve ser executada silenciosamente, sem solicitar e sem ser protegido por verificações de versão do componente.
--   Forneça a remoção **por meio de Programas** e Recursos **Painel de Controle** para o aplicativo de jogos e arquivos de trabalho gerados. Uma opção para excluir todos os arquivos de dados criados pelo usuário é recomendada. O processo de remoção deve garantir que todos os arquivos instalados sejam removidos e que todas as configurações (por exemplo, entradas de lista de exceção de firewall e chaves do Registro) sejam limpas. Os componentes do sistema operacional redistribuídos não devem ser removidos.
--   Se o jogo exigir que exceções sejam adicionadas ao firewall Windows, o processo de instalação poderá solicitar que os usuários informem que essa alteração é necessária. Esse prompt deve aparecer antes do início da instalação.
+-   O caminho de instalação padrão deve ignorar todas as seleções para a instalação (como a pasta de instalação ou seleções de componentes), assumir as seleções padrão e, em seguida, executar o jogo ou o iniciador após a instalação bem-sucedida, sem prompts adicionais. Se desejar, uma opção de instalação personalizada pode ser fornecida para opções de configuração avançadas.
+-   Instale todos os componentes necessários do sistema operacional (como os tempos de execução do DirectX e do Visual C) usando os pacotes de redistribuição da Microsoft corretos. A instalação deve ser executada silenciosamente, sem avisar e sem ser protegida por verificações de versão de componente.
+-   Forneça a remoção por meio de **programas e recursos** no **painel de controle** para o aplicativo do jogo e os arquivos de trabalho gerados. É recomendável uma opção para excluir qualquer arquivo de dados criado pelo usuário. O processo de remoção deve garantir que todos os arquivos instalados sejam removidos e todas as configurações (por exemplo, entradas da lista de exceção do firewall e chaves do registro) sejam limpas. Os componentes redistribuídos do sistema operacional não devem ser removidos.
+-   se o jogo exigir exceções a serem adicionadas ao Windows Firewall, o processo de instalação poderá solicitar que o informe os usuários de que essa alteração é necessária. Esse prompt deve aparecer antes do início da instalação.
 
-A instalação e a remoção podem exigir direitos administrativos. A adoção de patch pode exigir a solicitação de credenciais administrativas, dependendo da frequência da atualização. O jogo normal não deve exigir direitos administrativos, de acordo com o requisito 2.1 Siga as Diretrizes de Controle de Conta de Usuário.
+A instalação e a remoção podem exigir direitos administrativos. A aplicação de patch pode exigir a solicitação de credenciais administrativas, dependendo da frequência de atualização. A reprodução normal do jogo não deve exigir direitos administrativos, por requisito 2,1 Siga as diretrizes de controle de conta de usuário.
 
 </dd> <dt>
 
 <span id="Rationale"></span><span id="rationale"></span><span id="RATIONALE"></span>**Lógica**
 </dt> <dd>
 
-A instalação fácil é uma filosofia de desenvolvimento de jogos centrada em Windows que foi projetada para simplificar e simplificar o processo, às vezes, entediante e confuso de instalação de jogos em computadores que executam Windows operacionais. A instalação fácil é habilitada utilizando um conjunto de tecnologias e práticas recomendadas que reduzem a complexidade desnecessária e o risco percebido de instalação de jogos em Windows computadores.
+a fácil instalação é uma filosofia de desenvolvimento de jogos centrada em Windows que foi projetada para simplificar e simplificar o processo, às vezes, entediante e confuso de instalar jogos em computadores que executam Windows sistemas operacionais. a instalação fácil é habilitada utilizando um conjunto de tecnologias e práticas recomendadas que reduzem a complexidade desnecessária e o risco percebido de instalar jogos em computadores Windows.
 
-As principais metas são:
+Os principais objetivos são:
 
 -   Reduza a quantidade de tempo para entrar no jogo e começar a jogar.
--   Reduza o número de caixas de diálogo e opções para muito poucas ou nenhuma para simplificar a experiência de instalação do jogo.
+-   Reduza o número de caixas de diálogo e opções a muito poucos, ou nenhum, para simplificar a experiência de instalação do jogo.
 
-Algumas instalações tradicionais têm prompts que permitem instalações não funcionais, mesmo que o aplicativo pareça ter sido instalado com êxito. Por exemplo, um jogo pode exigir que um usuário aceite um EULA. O jogo é instalado e, em seguida, o EULA do DirectX é exibido. Esse EULA permite que os usuários se recusam e, portanto, ignoram a instalação do runtime do DirectX. Esse cenário pode resultar em um jogo que não é executado devido a componentes ausentes.
+Algumas instalações tradicionais têm prompts que permitem instalações não funcionais, embora o aplicativo pareça estar instalado com êxito. Por exemplo, um jogo pode exigir que um usuário aceite um EULA. O jogo é instalado e, em seguida, o EULA do DirectX é exibido. Esse EULA permite que os usuários recusem e, portanto, ignoram a instalação do tempo de execução do DirectX. Esse cenário pode resultar em um jogo que não é executado devido a componentes ausentes.
 
 </dd> <dt>
 
 <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>**Informações adicionais**
 </dt> <dd>
 
-Para obter mais informações sobre a instalação de jogos, técnicas de instalação de jogos não tradicionais, soluções de a patch compatíveis com UAC e tratamento de a patch frequente, consulte os seguintes artigos do DirectX:
+Para obter mais informações sobre instalação de jogos, técnicas de instalação de jogos não tradicionais, soluções de aplicação de patches compatíveis com o UAC e manipulação de patches frequentes, consulte os seguintes artigos do DirectX:
 
 -   [Simplificando a instalação do jogo](/windows/desktop/DxTechArts/simplifying-game-installation)
--   [Instalação sob demanda para jogos](/windows/desktop/DxTechArts/install-on-demand-for-games)
--   [Patching Game Software no Windows XP, Windows Vista e Windows 7](/windows/desktop/DxTechArts/patching-methods-in-windows-xp-and-vista)
--   [Práticas recomendadas de instalação para jogos online de multijogador maciço](/windows/desktop/DxTechArts/mmo-installation-best-practices)
+-   [Instale-sob demanda para jogos](/windows/desktop/DxTechArts/install-on-demand-for-games)
+-   [aplicação de patch no Software de jogos no Windows XP, Windows Vista e Windows 7](/windows/desktop/DxTechArts/patching-methods-in-windows-xp-and-vista)
+-   [Práticas recomendadas de instalação para jogos online com vários participantes](/windows/desktop/DxTechArts/mmo-installation-best-practices)
 
 > [!Note]  
-> A remoção de arquivos de dados gerados específicos do usuário deve ser executada somente para o usuário atual e para locais comuns de usuário compartilhado. Não há nenhuma maneira robusta de verificar o sistema para remover arquivos específicos do usuário para outros usuários, mesmo que a remoção exija credenciais administrativas.
+> A remoção de arquivos de dados gerados específicos do usuário deve ser executada somente para o usuário atual e para locais de usuário compartilhados comuns. Não há uma maneira robusta de verificar o sistema para remover arquivos específicos do usuário para outros usuários, mesmo que a remoção exija credenciais administrativas.
 
  
 
 </dd> </dl>
 
-### <a name="32-support-user-account-control-for-installation"></a>3.2 Dar suporte ao controle de conta de usuário para instalação
+### <a name="32-support-user-account-control-for-installation"></a>3,2 controle de conta de usuário de suporte para instalação
 
 <dl> <dt>
 
-<span id="Requirement"></span><span id="requirement"></span><span id="REQUIREMENT"></span>**Exigência**
+<span id="Requirement"></span><span id="requirement"></span><span id="REQUIREMENT"></span>**Obrigatoriedade**
 </dt> <dd>
 
-O instalador do jogo não deve supor que ele está em execução no mesmo contexto que o usuário. Locais específicos do usuário serão diferentes do instalador e do player até mesmo para sistemas de usuário único devido à elevação de credenciais de administrador. Portanto, quando um jogo é executado pela primeira vez, ele deve executar tarefas específicas do usuário, separadamente do processo de instalação.
+O instalador de jogos não deve pressupor que esteja em execução no mesmo contexto que o usuário. Os locais específicos do usuário serão diferentes do instalador e do Player até mesmo para sistemas de usuário único devido à elevação de credenciais do administrador. Portanto, quando um jogo é executado pela primeira vez, ele deve executar tarefas específicas do usuário, separadamente do processo de instalação.
 
-A Windows de diálogo Exceção do firewall não deve aparecer quando um usuário hospeda ou insinte um jogo multijogador. Qualquer configuração necessária deve ser feita no momento da instalação. As instruções de instalação devem informar o usuário de que essa operação ocorrerá como parte da instalação.
+a caixa de diálogo Windows exceção de Firewall não deve aparecer quando um usuário hospeda ou ingressa em um jogo com vários participantes. Qualquer configuração necessária deve ser feita no momento da instalação. As instruções de instalação devem informar ao usuário que essa operação ocorrerá como parte da configuração.
 
-O instalador do jogo deve fornecer um manifesto inserido que designa o nível de execução necessário, de acordo com o requisito 2.1 Siga as Diretrizes de Controle de Conta de Usuário.
+O instalador do jogo deve fornecer um manifesto incorporado que designa o nível de execução necessário, por requisito 2,1 Siga as diretrizes de controle de conta de usuário.
 
-Se o jogo for lançado pelo instalador após a conclusão da instalação, ele deverá ser lançado no contexto do usuário original.
+Se o jogo for iniciado pelo instalador após a conclusão da instalação, ele deverá ser iniciado no contexto do usuário original.
 
 </dd> <dt>
 
 <span id="Rationale"></span><span id="rationale"></span><span id="RATIONALE"></span>**Lógica**
 </dt> <dd>
 
-Uma das maiores alterações no sistema operacional Windows no Windows Vista é a adição do UAC (Controle de Conta de Usuário), que executa aplicativos com privilégios reduzidos por padrão. Como resultado, os instaladores precisam gerenciar níveis de privilégio de acordo. Windows 7 também faz uso extensivo do UAC. Embora Windows 7 aprimora a experiência do usuário do UAC, os instaladores ainda devem atender aos mesmos requisitos do Windows Vista para funcionar corretamente, sem depender do comportamento de virtualização potencialmente confuso.
+uma das maiores alterações no sistema operacional Windows no Windows Vista é a adição do UAC (controle de conta de usuário), que executa aplicativos com privilégios reduzidos por padrão. Como resultado, os instaladores precisam gerenciar níveis de privilégio de acordo. Windows 7 também faz uso extensivo do UAC. embora Windows 7 aprimore a experiência do usuário do UAC, os instaladores ainda devem atender aos mesmos requisitos que o Windows Vista para funcionar corretamente, sem depender do comportamento potencialmente confuso de virtualização.
 
-O UAC está ativo por padrão no Windows Vista e Windows 7, e a grande maioria dos clientes (88% ou mais, com base nos comentários) deixa esse recurso habilitado.
+o UAC está ativo por padrão no Windows Vista e no Windows 7, e a grande maioria dos clientes (88% ou mais, com base nos comentários) deixa esse recurso habilitado.
 
 </dd> <dt>
 
 <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>**Informações adicionais**
 </dt> <dd>
 
-Para obter mais detalhes sobre como configurar o firewall Windows, consulte o artigo do DirectX [Windows Firewall para](/windows/desktop/DxTechArts/games-and-firewalls) Desenvolvedores de Jogos e o exemplo FirewallInstallHelper.
+para obter mais detalhes sobre como configurar o firewall do Windows, consulte o artigo sobre o DirectX [Windows firewall para desenvolvedores de jogos](/windows/desktop/DxTechArts/games-and-firewalls) e o exemplo FirewallInstallHelper.
 
-O lançamento padrão do jogo no final do processo de instalação não atenderá ao último aspecto desse requisito se a instalação for lançada por um usuário padrão e se o processo de instalação exigir privilégios administrativos (ou seja, solicitará credenciais de administrador). Ele também herda privilégios administrativos, que é um risco de segurança potencial. Em vez disso, um carregador de inicialização de instalação deve iniciar o jogo depois de retornar de uma invocação bem-sucedida do instalador. Para obter mais informações, consulte o artigo da MSDN Magazine Ensinar seus aplicativos a reproduzirem-se bem com Windows controle de conta de usuário [do Vista](/archive/msdn-magazine/2007/january/teach-your-apps-to-work-with-windows-vista-user-account-control).
+A inicialização padrão do jogo no final do processo de instalação falhará em atender ao último aspecto desse requisito se a instalação for iniciada por um usuário padrão e se o processo de instalação exigir privilégios administrativos (ou seja, solicitar credenciais de administrador). Ele também herda privilégios administrativos, o que é um risco de segurança potencial. Em vez disso, um carregador de inicialização da instalação deve iniciar o jogo depois de retornar de uma invocação bem-sucedida do instalador. para obter mais informações, consulte o artigo da MSDN Magazine [ensinar seus aplicativos a brincar com o Windows o controle de conta de usuário Vista](/archive/msdn-magazine/2007/january/teach-your-apps-to-work-with-windows-vista-user-account-control).
 
 </dd> </dl>
 
-### <a name="33-install-to-correct-folders"></a>3.3 Instalar para corrigir pastas
+### <a name="33-install-to-correct-folders"></a>3,3 instalar em pastas corretas
 
 <dl> <dt>
 
-<span id="Requirement"></span><span id="requirement"></span><span id="REQUIREMENT"></span>**Exigência**
+<span id="Requirement"></span><span id="requirement"></span><span id="REQUIREMENT"></span>**Obrigatoriedade**
 </dt> <dd>
 
-Os jogos instalados para todos os usuários devem ser instalados na pasta Arquivos de Programas por padrão. Os dados do usuário devem ser gravados quando o jogo é executado pela primeira vez, não durante a instalação.
+Os jogos instalados para todos os usuários devem ser instalados na pasta arquivos de programas por padrão. Os dados do usuário devem ser gravados quando o jogo é executado pela primeira vez, não durante a instalação.
 
 </dd> <dt>
 
 <span id="Rationale"></span><span id="rationale"></span><span id="RATIONALE"></span>**Lógica**
 </dt> <dd>
 
-Os usuários devem ter a flexibilidade de instalar aplicativos onde eles precisam. Eles também devem ter uma experiência consistente e segura com o local padrão dos arquivos.
+Os usuários devem ter a flexibilidade de instalar aplicativos onde precisam deles. Eles também devem ter uma experiência consistente e segura com o local padrão dos arquivos.
 
 </dd> <dt>
 
 <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>**Informações adicionais**
 </dt> <dd>
 
-Os jogos podem usar os vários locais de pastas conhecidos (como os especificados por CSIDL LOCAL APPDATA e \_ \_ CSIDL \_ COMMON APPDATA) para armazenar quantidades significativas de dados de jogos e dar suporte a arquivos executáveis para implementar cenários avançados de instalação sob demanda e aplicação de \_ patch.
+Os jogos podem fazer uso de vários locais de pasta conhecidos (como aqueles especificados por CSIDl \_ local de \_ AppData e CSIDL \_ comuns \_ de AppData) para armazenar quantidades significativas de dados de jogos e dar suporte a arquivos executáveis para implementar cenários avançados de instalação sob demanda e aplicação de patches.
 
-Como a instalação pode exigir elevação para uma conta de usuário diferente durante o processo de instalação de todos os usuários, não há nenhum local de usuário correto no qual armazenar dados no momento da instalação. Além disso, se a criptografia de arquivos estiver habilitada, os arquivos criptografados só poderão ser acessados pela conta de usuário que os criou.
+Como a instalação pode exigir a elevação para uma conta de usuário diferente durante o processo de instalação de todos os usuários, não há nenhum local de usuário correto no qual armazenar dados no momento da instalação. Além disso, se a criptografia de arquivo estiver habilitada, os arquivos criptografados só poderão ser acessados pela conta de usuário que os criou.
 
 </dd> </dl>
 
-### <a name="34-install-windows-resources-properly"></a>3.4 Instalar recursos Windows corretamente
+### <a name="34-install-windows-resources-properly"></a>3,4 instalar Windows recursos corretamente
 
 <dl> <dt>
 
-<span id="Requirement"></span><span id="requirement"></span><span id="REQUIREMENT"></span>**Exigência**
+<span id="Requirement"></span><span id="requirement"></span><span id="REQUIREMENT"></span>**Obrigatoriedade**
 </dt> <dd>
 
-Os aplicativos não devem tentar instalar arquivos ou chaves do Registro que são protegidos pelo WINDOWS Proteção de Recursos (WRP). Se o aplicativo exigir versões mais recentes dos componentes do sistema, ele deverá atualizar esses componentes usando um Microsoft Service Pack ou um pacote de instalação aprovado pela Microsoft que contém o componente do sistema. Os componentes do sistema nunca devem ser reempacodados.
+os aplicativos não devem tentar instalar arquivos ou chaves do registro protegidos por Proteção de Recursos do Windows (WRP). Se o aplicativo exigir versões mais recentes dos componentes do sistema, ele deverá atualizar esses componentes usando um Microsoft Service Pack ou um pacote de instalação aprovado pela Microsoft que contenha o componente do sistema. Os componentes do sistema nunca devem ser reempacotados.
 
 </dd> <dt>
 
 <span id="Rationale"></span><span id="rationale"></span><span id="RATIONALE"></span>**Lógica**
 </dt> <dd>
 
-Windows A WRP (Proteção de Recursos) foi projetada para garantir que os recursos protegidos do sistema sejam atualizados somente usando mecanismos de atualização ou instalação aprovados pela Microsoft. A WRP melhora a confiabilidade do sistema, garantindo que os resultados de uma instalação sejam previsíveis.
+Windows A WRP (proteção de recursos) foi projetada para garantir que os recursos protegidos do sistema sejam atualizados somente usando os mecanismos de instalação ou atualização aprovados pela Microsoft. A WRP melhora a confiabilidade do sistema, garantindo que os resultados de uma instalação sejam previsíveis.
 
 </dd> <dt>
 
 <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>**Informações adicionais**
 </dt> <dd>
 
-A WRP é a sucessora Windows Proteção de Arquivos, que protege a maioria dos componentes do sistema instalados na pasta Windows. A WRP protege a maioria das chaves do Registro que armazenam configurações para criação de objeto COM. Ele também reserva determinadas pastas para uso exclusivo pelo sistema operacional. As tentativas de acessar recursos protegidos normalmente resultam em um erro de negação de acesso.
+a WRP é o sucessor de Windows proteção de arquivo, que protege a maioria dos componentes do sistema instalados na pasta Windows. A WRP protege a maioria das chaves do registro que armazenam configurações para a criação de objetos COM. Ele também reserva certas pastas para uso exclusivo pelo sistema operacional. As tentativas de acessar recursos protegidos normalmente resultam em um erro de negação de acesso.
 
-Para obter detalhes das práticas recomendadas quando o runtime do DirectX é implantado com um jogo, consulte o artigo Instalação do DirectX para [desenvolvedores de jogos](/windows/desktop/DxTechArts/directx-setup-for-game-developers).
+Para obter detalhes de práticas recomendadas quando o tempo de execução do DirectX é implantado com um jogo, consulte o artigo DirectX [instalação do DirectX para desenvolvedores de jogos](/windows/desktop/DxTechArts/directx-setup-for-game-developers).
 
 </dd> </dl>
 
-### <a name="35-avoid-reboots-during-installation"></a>3.5 Evitar reinicializações durante a instalação
+### <a name="35-avoid-reboots-during-installation"></a>3,5 evitar reinicializações durante a instalação
 
 <dl> <dt>
 
@@ -1129,7 +1129,7 @@ para obter mais informações sobre as APIs de Relatório de Erros do Windows e 
 
 
 
-| Name                                          | Descrição                                                                                                 |
+| Nome                                          | Descrição                                                                                                 |
 |------------------------------------------|--------------------------------------------------------------------------------------------------|
 | Um                                        | O botão a.                                                                                     |
 | B                                        | O botão B.                                                                                     |
@@ -1408,7 +1408,7 @@ além de atender aos requisitos técnicos e adotar um ou mais casos no seu títu
 | <span id="User_Account_Control_Guidelines__"></span><span id="user_account_control_guidelines__"></span><span id="USER_ACCOUNT_CONTROL_GUIDELINES__"></span>Diretrizes de controle de conta de usuário <br/>                      | [Windows Requisitos de desenvolvimento de aplicativo vista para compatibilidade de controle de conta de usuário](/previous-versions/dotnet/articles/bb530410(v=msdn.10))<br/> |
 | <span id="WinQual_Developer_Portal__"></span><span id="winqual_developer_portal__"></span><span id="WINQUAL_DEVELOPER_PORTAL__"></span>WinQual Portal do Desenvolvedor <br/>                                                  | [Windows Quality Online Services (Winqual)](/windows-hardware/drivers/dashboard/winqual-submission-tool--winqualexe-)<br/>                                                                         |
 | <span id="DirectX_Developer_Portal__"></span><span id="directx_developer_portal__"></span><span id="DIRECTX_DEVELOPER_PORTAL__"></span>DirectX Portal do Desenvolvedor <br/>                                                  | [Central de Desenvolvedores do Directx](/previous-versions/windows/apps/hh452744(v=win.10))<br/>                                                                               |
-| <span id="Games_for_Windows_and_DirectX_SDK_Blog"></span><span id="games_for_windows_and_directx_sdk_blog"></span><span id="GAMES_FOR_WINDOWS_AND_DIRECTX_SDK_BLOG"></span>Blog de jogos para Windows sdk do DirectX e do DirectX<br/> | [Jogos para Windows e SDK do DirectX](https://walbourn.github.io/)<br/>                                                                           |
+| <span id="Games_for_Windows_and_DirectX_SDK_Blog"></span><span id="games_for_windows_and_directx_sdk_blog"></span><span id="GAMES_FOR_WINDOWS_AND_DIRECTX_SDK_BLOG"></span>Blog de jogos Windows sDK do DirectX e do Windows DirectX<br/> | [Jogos para Windows e SDK do DirectX](https://walbourn.github.io/)<br/>                                                                           |
 | <span id="Additional_DirectX_Articles"></span><span id="additional_directx_articles"></span><span id="ADDITIONAL_DIRECTX_ARTICLES"></span>Artigos adicionais do DirectX<br/>                                             | [Artigos técnicos do DirectX](/windows/desktop/DxTechArts/dx9-technical-articles)<br/>                                                                                    |
 
 

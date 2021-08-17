@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 97ac67ab66a0072598bfea3b190bdf2c81ceba9a
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: d24a550e4f07d0c82e6c114cb70eadf496b3bc3db312c27492b94112a8ca27c6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103930578"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118525623"
 ---
 # <a name="d3dxloadvolumefromfileinmemory-function"></a>Função D3DXLoadVolumeFromFileInMemory
 
@@ -129,7 +129,7 @@ Ponteiro para uma estrutura de [**\_ informações de D3DXIMAGE**](d3dximage-inf
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
@@ -137,7 +137,7 @@ Se a função for bem sucedido, o valor de retorno será D3D \_ OK. Se a funçã
 
 ## <a name="remarks"></a>Comentários
 
-Essa função manipula a conversão de e para formatos de textura compactados e oferece suporte aos seguintes formatos de arquivo:. bmp,. DDS,. dib,. HDR,. jpg,. PFM,. png,. ppm e. tga. Consulte [**D3DXIMAGE \_ FileFormat**](./d3dximage-fileformat.md).
+Essa função manipula a conversão de e para formatos de textura compactados e dá suporte aos seguintes formatos de arquivo: .bmp,. DDS,. dib,. HDR, .jpg,. PFM, .png,. ppm e. tga. Consulte [**D3DXIMAGE \_ FileFormat**](./d3dximage-fileformat.md).
 
 Gravar em uma superfície de não nível zero da textura do volume não fará com que o retângulo sujo seja atualizado. Se **D3DXLoadVolumeFromFileInMemory** for chamado e a textura ainda não tiver sido suja (isso é improvável em cenários de uso normal), o aplicativo precisa chamar explicitamente [**IDirect3DVolumeTexture9:: AddDirtyBox**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3dvolumetexture9-adddirtybox) na textura do volume.
 

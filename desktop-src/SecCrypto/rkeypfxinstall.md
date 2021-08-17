@@ -1,7 +1,7 @@
 ---
 description: Não há suporte para a função RKeyPFXInstall.
 ms.assetid: 061e3d9d-fc92-4204-92f3-f3425afdbe27
-title: Função RKeyPFXInstall (Rkeysvcc. h)
+title: Função RKeyPFXInstall (Rkeysvcc.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - Rkeysvcc.h
-ms.openlocfilehash: 4908b7224a02f5a28b876b1ff67cbcec7d23df5f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f19a01e9132bf9c4b1e281a75b0e0d7a27b4f9c7f299eefdd47bef8d60daea97
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103920926"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118900541"
 ---
 # <a name="rkeypfxinstall-function"></a>Função RKeyPFXInstall
 
-Não há suporte para a função **RKeyPFXInstall** .
+Não há suporte para a função **RKeyPFXInstall.**
 
-**Windows Server 2003:** A função **RKeyPFXInstall** instala um certificado em um computador remoto. Observe que esse comportamento foi alterado com o Windows Server 2003 com Service Pack 1 (SP1).
+**Windows Server 2003:** A **função RKeyPFXInstall** instala um certificado em um computador remoto. Observe que esse comportamento foi alterado com Windows Server 2003 com Service Pack 1 (SP1).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -44,28 +44,28 @@ ULONG RKeyPFXInstall(
 
 <dl> <dt>
 
-*hKeySvcCli* \[ no\]
+*hKeySvcCli* \[ Em\]
 </dt> <dd>
 
-Um identificador de [**\_ identificador KEYSVCC**](keysvcc-handle.md) aberto anteriormente pelo [**RKeyOpenKeyService**](rkeyopenkeyservice.md). O identificador representa o computador remoto que receberá o certificado. Esse valor não pode ser **nulo**.
+Um [**handle KEYSVCC \_ HANDLE**](keysvcc-handle.md) aberto anteriormente por [**RKeyOpenKeyService**](rkeyopenkeyservice.md). O handle representa o computador remoto que receberá o certificado. Esse valor não pode ser **NULL.**
 
 </dd> <dt>
 
-*pPFX* \[ no\]
+*pPFX* \[ Em\]
 </dt> <dd>
 
-Um ponteiro para uma estrutura de [**\_ blob KEYSVC**](keysvc-blob.md) que representa o certificado a ser instalado. O BLOB está no formato [*PKCS \# 12*](../secgloss/p-gly.md) .
+Um ponteiro para uma estrutura [**DE \_ BLOB KEYSVC**](keysvc-blob.md) que representa o certificado a ser instalado. O BLOB está no [*formato PKCS \# 12.*](../secgloss/p-gly.md)
 
 </dd> <dt>
 
-*ppassword* \[ no\]
+*pPassword* \[ Em\]
 </dt> <dd>
 
-Um ponteiro para uma estrutura de [**\_ cadeia de \_ caracteres Unicode KEYSVC**](keysvc-unicode-string.md) que representa a senha para o blob. Quando você terminar de usar a senha, limpe a senha da memória chamando a função [**SecureZeroMemory**](/previous-versions/windows/desktop/legacy/aa366877(v=vs.85)) . Para obter mais informações sobre como proteger senhas, consulte [manipulando senhas](../secbp/handling-passwords.md).
+Um ponteiro para uma estrutura [**KEYSVC \_ UNICODE \_ STRING**](keysvc-unicode-string.md) que representa a senha para o BLOB. Quando terminar de usar a senha, limpe a senha da memória chamando a [**função SecureZeroMemory.**](/previous-versions/windows/desktop/legacy/aa366877(v=vs.85)) Para obter mais informações sobre como proteger senhas, consulte [Tratamento de senhas](../secbp/handling-passwords.md).
 
 </dd> <dt>
 
-*ulFlags* \[ no\]
+*ulFlags* \[ Em\]
 </dt> <dd>
 
 Sinalizadores que especificam as opções de instalação do certificado. Esse parâmetro pode ser um zero ou uma combinação dos valores a seguir.
@@ -74,8 +74,8 @@ Sinalizadores que especificam as opções de instalação do certificado. Esse p
 
 | Valor                                                                                                                                                                                                                                     | Significado                                                                                      |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------|
-| <span id="CRYPT_EXPORTABLE"></span><span id="crypt_exportable"></span><dl> <dt>**Cript \_ Exportável**</dt><dt></dt> </dl>              | As chaves importadas são marcadas como exportáveis.<br/>                                           |
-| <span id="CRYPT_MACHINE_KEYSET"></span><span id="crypt_machine_keyset"></span><dl> <dt>**Cript \_ conjunto de \_ chaves da máquina**</dt><dt></dt> </dl> | As chaves privadas são armazenadas no computador remoto e não no usuário atual.<br/> |
+| <span id="CRYPT_EXPORTABLE"></span><span id="crypt_exportable"></span><dl> <dt>**CRYPT \_ EXPORTÁVEL**</dt><dt></dt> </dl>              | As chaves importadas são marcadas como exportáveis.<br/>                                           |
+| <span id="CRYPT_MACHINE_KEYSET"></span><span id="crypt_machine_keyset"></span><dl> <dt>**CRYPT \_ MACHINE \_ KEYSET**</dt><dt></dt> </dl> | As chaves privadas são armazenadas no computador remoto e não no usuário atual.<br/> |
 
 
 
@@ -83,11 +83,11 @@ Sinalizadores que especificam as opções de instalação do certificado. Esse p
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se a função for bem-sucedida, o valor de retorno será S \_ OK.
 
-Se a função falhar, o valor de retorno será um **ULONG** que indica o erro.
+Se a função falhar, o valor de retorno será **um ULONG** que indica o erro.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -96,8 +96,8 @@ Se a função falhar, o valor de retorno será um **ULONG** que indica o erro.
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Nenhum compatível<br/>                                                             |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Rkeysvcc. h</dt> </dl> |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Rkeysvcc.h</dt> </dl> |
 
 
 

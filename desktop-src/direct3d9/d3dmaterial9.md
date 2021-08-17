@@ -1,7 +1,7 @@
 ---
-description: Especifica as propriedades do material.
+description: Especifica propriedades de material.
 ms.assetid: 943e6f6d-8091-462f-8c44-e0c27686934a
-title: Estrutura D3DMATERIAL9 (D3D9Types. h)
+title: Estrutura D3DMATERIAL9 (D3D9Types.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -22,7 +22,7 @@ ms.locfileid: "118527576"
 ---
 # <a name="d3dmaterial9-structure"></a>Estrutura D3DMATERIAL9
 
-Especifica as propriedades do material.
+Especifica propriedades de material.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -87,20 +87,20 @@ Valor que especifica a cor emissiva do material. Consulte [**D3DCOLORVALUE**](d3
 
 </dd> <dt>
 
-**Energia**
+**Poder**
 </dt> <dd>
 
 Tipo: **float**
 
 </dd> <dd>
 
-Valor de ponto flutuante especificando a nitidez dos realces especulares. Quanto maior o valor, mais nítido o realce.
+Valor de ponto flutuante que especifica a sharpness de realçamentos especular. Quanto maior o valor, mais nítido o realçador.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-Para desativar os realces especulares, defina D3DRS \_ SPECULARENABLE como **false**, usando [**D3DRENDERSTATETYPE**](./d3drenderstatetype.md). Essa é a opção mais rápida porque nenhum realce especular será calculado.
+Para desativar os destaques especular, de conjunto D3DRS \_ SPECUABLE como **FALSE,** usando [**D3DRENDERSTATETYPE**](./d3drenderstatetype.md). Essa é a opção mais rápida porque nenhum realçando especular será calculado.
 
 Para obter mais informações sobre como usar o mecanismo de iluminação para calcular a iluminação especular, consulte [Iluminação especular (Direct3D 9)](specular-lighting.md).
 
@@ -110,7 +110,7 @@ Para obter mais informações sobre como usar o mecanismo de iluminação para c
 
 | Requisito | Valor |
 |-------------------|----------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>D3D9Types. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>D3D9Types.h</dt> </dl> |
 
 
 
@@ -118,13 +118,13 @@ Para obter mais informações sobre como usar o mecanismo de iluminação para c
 
 <dl> <dt>
 
-[Estruturas do Direct3D](dx9-graphics-reference-d3d-structures.md)
+[Estruturas Direct3D](dx9-graphics-reference-d3d-structures.md)
 </dt> <dt>
 
-[**IDirect3DDevice9:: GetMaterial**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-getmaterial)
+[**IDirect3DDevice9::GetMaterial**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-getmaterial)
 </dt> <dt>
 
-[**IDirect3DDevice9:: SetMaterial**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setmaterial)
+[**IDirect3DDevice9::SetMaterial**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setmaterial)
 </dt> </dl>
 
  

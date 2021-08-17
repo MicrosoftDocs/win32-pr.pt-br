@@ -29,9 +29,9 @@ _**Aplica-se a:** Windows | Windows Servidor_
 
 ## <a name="jet_ls"></a>JET_LS
 
-O tipo de dados **JET_LS** contém um identificador de contexto para armazenamento local (ls). Esse identificador pode ser associado a um cursor ou uma tabela e pode se referir a recursos alocados dinamicamente.
+O **JET_LS** de dados contém um identificador de contexto para o armazenamento local (LS). Esse handle pode ser associado a um cursor ou a uma tabela e pode se referir a recursos alocados dinamicamente.
 
-**Windows xp: JET_LS** é introduzido no Windows XP.
+**Windows XP: JET_LS** é introduzido no Windows XP.
 
 ```cpp
     typedef JET_API_PTR JET_LS;
@@ -41,15 +41,15 @@ O tipo de dados **JET_LS** contém um identificador de contexto para armazenamen
 
 JET_LS
 
-Um valor de JET_LSNil indica um identificador de contexto inválido.
+Um valor de JET_LSNil indica um alça de contexto inválido.
 
 ### <a name="remarks"></a>Comentários
 
-Um identificador de contexto é inicialmente associado ao tipo de dados **JET_LS** , usando [JetSetLS](./jetsetls-function.md). O identificador de contexto pode ser recuperado do tipo de dados **JET_LS** , usando [JetGetLS](./jetgetls-function.md).
+Um identificador de contexto é inicialmente associado ao tipo **JET_LS** de dados, usando [JetSetLS](./jetsetls-function.md). O identificador de contexto pode ser recuperado do tipo **JET_LS** de dados, usando [JetGetLS](./jetgetls-function.md).
 
-O identificador de contexto pode ser explicitamente desassociado do tipo de dados **JET_LS** usando [JetGetLS](./jetgetls-function.md) com JET_bitLSReset. Como alternativa, o identificador de contexto pode ser implicitamente desassociado do tipo de dados **JET_LS** quando o objeto subjacente é liberado pelo mecanismo de banco de dados como resultado de uma ação direta ou indireta pelo aplicativo. No caso implícito, um retorno de chamada de tempo de execução é emitido para o aplicativo para que ele possa limpar o identificador de contexto. Para obter mais informações sobre como desassociar implicitamente do tipo de dados **JET_LS** , consulte [JetSetLS](./jetsetls-function.md).
+O identificador de contexto pode ser desassociado explicitamente do **tipo de dados JET_LS** usando [JetGetLS](./jetgetls-function.md) com JET_bitLSReset. Como alternativa, o identificador de contexto pode ser desassociado implicitamente do tipo de dados **JET_LS** quando o objeto subjacente é liberado pelo mecanismo de banco de dados como resultado da ação direta ou indireta do aplicativo. No caso implícito, um retorno de chamada de runtime é emitido para o aplicativo para que ele possa limpar o handle de contexto. Para obter mais informações sobre a desassociação implícita do **tipo JET_LS** dados, consulte [JetSetLS](./jetsetls-function.md).
 
-Os sinalizadores a seguir são associados ao tipo de dados JET_LS.
+Os sinalizadores a seguir são associados ao tipo JET_LS dados.
 
 <table>
 <colgroup>
@@ -65,7 +65,7 @@ Os sinalizadores a seguir são associados ao tipo de dados JET_LS.
 <tbody>
 <tr class="odd">
 <td><p>JET_bitLSReset</p></td>
-<td><p>O identificador de contexto é desassociado do objeto.</p></td>
+<td><p>O identificador de contexto é desassociado do objeto .</p></td>
 </tr>
 <tr class="even">
 <td><p>JET_bitLSCursor</p></td>
@@ -77,7 +77,7 @@ Os sinalizadores a seguir são associados ao tipo de dados JET_LS.
 </tr>
 <tr class="even">
 <td><p>JET_LSNil</p></td>
-<td><p>O identificador de contexto é inválido.</p></td>
+<td><p>O alça de contexto é inválido.</p></td>
 </tr>
 </tbody>
 </table>
@@ -93,15 +93,15 @@ Os sinalizadores a seguir são associados ao tipo de dados JET_LS.
 <tbody>
 <tr class="odd">
 <td><p><strong>Cliente</strong></p></td>
-<td><p>requer o Windows Vista ou Windows XP.</p></td>
+<td><p>Requer Windows Vista ou Windows XP.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Servidor</strong></p></td>
-<td><p>requer o Windows server 2008 ou Windows server 2003.</p></td>
+<td><p>Requer Windows Server 2008 ou Windows Server 2003.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Cabeçalho</strong></p></td>
-<td><p>Declarado em ESENT. h.</p></td>
+<td><p>Declarado em Esent.h.</p></td>
 </tr>
 </tbody>
 </table>

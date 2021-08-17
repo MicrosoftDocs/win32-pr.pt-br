@@ -36,7 +36,7 @@ Contém os nomes DNS de Windows NT servidores que têm permissão para executar 
 | Frequência de atualização  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.1312                     |
 | System-Id-Guid    | 7cbd59a5-3b90-11d2-90cc-00c04fd91ab1        |
-| Sintaxe            | [**String(Unicode)**](s-string-unicode.md) |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 

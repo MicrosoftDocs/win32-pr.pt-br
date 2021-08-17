@@ -1,11 +1,11 @@
 ---
-title: Método INapEnforcementClientConnection2 GetInstalledShvs (NapEnforcementClient. h)
-description: Usado pelo agente NAP para consultar os SHVs (validadores da integridade do sistema) instalados no cliente.
+title: Método INapEnforcementClientConnection2 GetInstalledShvs (NapEnforcementClient.h)
+description: Usado pelo Agente NAP para consultar os SHVs (Validadores de Saúde do Sistema) instalados no cliente.
 ms.assetid: b2e3ab29-90bf-4117-bc2e-2ff2827ee15c
 keywords:
-- Método GetInstalledShvs NAP
+- NAP do método GetInstalledShvs
 - Método GetInstalledShvs NAP, interface INapEnforcementClientConnection2
-- INapEnforcementClientConnection2 interface NAP, método GetInstalledShvs
+- INapEnforcementClientConnection2 interface NAP , método GetInstalledShvs
 topic_type:
 - apiref
 api_name:
@@ -16,21 +16,21 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fa54d09a0c3d3c524262231982f662c497920a0b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 40cb18f749adc9a1b7003a777cc821fb5e003b83322a7d54c2efda4b8e5739f8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104456026"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118939637"
 ---
-# <a name="inapenforcementclientconnection2getinstalledshvs-method"></a>Método INapEnforcementClientConnection2:: GetInstalledShvs
+# <a name="inapenforcementclientconnection2getinstalledshvs-method"></a>Método INapEnforcementClientConnection2::GetInstalledShvs
 
 > [!Note]  
-> A plataforma de proteção de acesso à rede não está disponível a partir do Windows 10
+> A plataforma de Proteção de Acesso à Rede não está disponível a partir do Windows 10
 
  
 
-O método **GetInstalledShvs** é usado pelo agente NAP para consultar os SHVs (validadores da integridade do sistema) instalados no cliente.
+O **método GetInstalledShvs** é usado pelo Agente NAP para consultar os SHVs (Validadores de Saúde do Sistema) instalados no cliente.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -48,30 +48,30 @@ HRESULT GetInstalledShvs(
 
 <dl> <dt>
 
-*contagem* \[ de fora\]
+*count* \[ out\]
 </dt> <dd>
 
-Um ponteiro para um valor de [SystemHealthEntityCount](nap-datatypes.md) que especifica o número de SHVs instalados em *IDs*.
+Um ponteiro para um [valor SystemHealthEntityCount](nap-datatypes.md) que especifica o número de SHVs *instalados em ids*.
 
 </dd> <dt>
 
-*IDs* \[ do fora\]
+*IDs* \[ out\]
 </dt> <dd>
 
-Um ponteiro para uma matriz de valores [SystemHealthEntityId](nap-datatypes.md) que contêm as IDs SHV instaladas.
+Um ponteiro para uma matriz de [valores SystemHealthEntityId](nap-datatypes.md) que contêm as IDs de SHV instaladas.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Outros códigos de erro específicos de COM também podem ser retornados.
+Outros códigos de erro específicos do COM também podem ser retornados.
 
 
 
 | Código de retorno                                                                                   | Descrição                                              |
 |-----------------------------------------------------------------------------------------------|----------------------------------------------------------|
-| <dl> <dt>**S \_ OK**</dt> </dl>         | Operação bem-sucedida.<br/>                          |
-| <dl> <dt>**E \_ INVALIDARG**</dt> </dl> | Um argumento inválido foi passado para o método.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>         | Êxito na operação.<br/>                          |
+| <dl> <dt>**E \_ INVALIDARG**</dt> </dl> | Um argumento inválido foi passado para o método .<br/> |
 
 
 
@@ -83,10 +83,10 @@ Outros códigos de erro específicos de COM também podem ser retornados.
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                                      |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                                |
-| parâmetro<br/>                   | <dl> <dt>NapEnforcementClient. h</dt> </dl>   |
-| INSERI<br/>                      | <dl> <dt>NapEnforcementClient. idl</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                                      |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                                |
+| Cabeçalho<br/>                   | <dl> <dt>NapEnforcementClient.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>NapEnforcementClient.idl</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Qagent.dll</dt> </dl>               |
 
 

@@ -1,6 +1,6 @@
 ---
 title: UI_PKEY_CategoryId
-description: Identifica a propriedade \_ PKEY CategoryId da interface do \_ usuário.
+description: Identifica a \_ Propriedade PKEY categoryId da interface do usuário \_ .
 ms.assetid: c1e81b2f-3f89-4bc5-a69b-64e841778790
 ms.topic: article
 ms.date: 05/31/2018
@@ -11,9 +11,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119441516"
 ---
-# <a name="ui_pkey_categoryid"></a>IU \_ PKEY \_ CategoryId
+# <a name="ui_pkey_categoryid"></a>\_PKEY \_ categoryId da interface do usuário
 
-Identifica a propriedade \_ PKEY CategoryId da interface do \_ usuário.
+Identifica a \_ Propriedade PKEY categoryId da interface do usuário \_ .
 
 ```
 propertyDescription
@@ -27,13 +27,13 @@ propertyDescription
 
 ## <a name="remarks"></a>Comentários
 
-A IU PKEY CategoryId é usada por um aplicativo para consultar as IDs das categorias usadas para agrupar itens relacionados em \_ \_ um controle de galeria.
+A interface do usuário \_ PKEY \_ CategoryID é usada por um aplicativo para consultar as IDs das categorias usadas para agrupar itens relacionados em um controle de galeria.
 
-O valor da propriedade é o índice baseado em zero de um item em uma coleção de categorias.
+O valor da propriedade é o índice de base zero de um item em uma coleção de categorias.
 
-A captura de tela a seguir ilustra o uso  de categorias em um  menu [**SplitButton**](windowsribbon-element-splitbutton.md) em que Formas de seleção têm uma ID de 0 e Opções de seleção têm uma ID de 1.
+A captura de tela a seguir ilustra o uso de categorias em um menu [**SplitButton**](windowsribbon-element-splitbutton.md) em que **as formas de seleção** têm uma ID de 0 e **as opções de seleção** têm uma ID de 1.
 
-![captura de tela que mostra categorias em uma galeria de faixa de opções.](images/properties/ui-pkey-collection-categories2.png)
+![captura de tela que mostra categorias em uma galeria de faixas de uma.](images/properties/ui-pkey-collection-categories2.png)
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -42,7 +42,7 @@ A captura de tela a seguir ilustra o uso  de categorias em um  menu [**SplitButt
 [Propriedades da coleção](windowsribbon-reference-properties-collection.md)
 </dt> <dt>
 
-[Categorias \_ PKEY da interface do \_ usuário](windowsribbon-reference-properties-uipkey-categories.md)
+[\_Categorias de PKEY da interface do usuário \_](windowsribbon-reference-properties-uipkey-categories.md)
 </dt> </dl>
 
  

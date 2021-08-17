@@ -57,7 +57,7 @@ O valor para **String.Id** deve ser exclusivo.
 
 A ID está associada a uma definição de cadeia de caracteres no arquivo de header da Faixa de Opções, por exemplo, `#define strSave 59999` .
 
-Esse elemento contém um valor da união dos tipos *xs:positiveInteger* *e xs:string*. O valor é restrito a um valor inteiro entre 2 e 59999, inclusive ou 0x2 e 0xea5f em hexadecimal, inclusivo.
+Esse elemento contém um valor da união dos tipos *xs:positiveInteger* *e xs:string*. O valor é restrito a um valor inteiro entre 2 e 59999, inclusive, ou 0x2 e 0xea5f em hexadecimal, inclusive.
 
 O comprimento máximo é de 10 caracteres com zeros à esquerda opcionais.
 

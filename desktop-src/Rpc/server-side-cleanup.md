@@ -1,6 +1,6 @@
 ---
-title: Limpeza no lado do servidor
-description: Limpeza do lado do servidor e RPC (chamada de procedimento remoto).
+title: Limpeza do lado do servidor
+description: Limpeza do lado do servidor e RPC (Chamada de Procedimento Remoto).
 ms.assetid: 8a48f698-82ae-464b-bdd9-f0245bbc7733
 ms.topic: article
 ms.date: 05/31/2018
@@ -11,11 +11,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118925288"
 ---
-# <a name="server-side-cleanup"></a>Limpeza no lado do servidor
+# <a name="server-side-cleanup"></a>Limpeza do lado do servidor
 
-Imagine o cenário a seguir:
+Imagine o seguinte cenário:
 
-Um cliente abre um identificador de contexto e, em seguida, interrompe ou perde a conectividade com o servidor. Como o servidor detecta que o cliente falhou e o identificador de contexto deve ser executado? Há dois subcenários: um é que o cliente é desligado de maneira ordenada. Nesse caso, ele notifica o servidor de que ele está sendo desligado e o servidor pode ser limpo, incluindo a execução de um contexto. Se o cliente não desligar de maneira ordenada ou não puder notificar o servidor, o servidor usará o Keep Alive para determinar se o cliente ainda está disponível. No lado do servidor, a função [**RpcMgmtSetComTimeout**](/windows/desktop/api/Rpcdce/nf-rpcdce-rpcmgmtsetcomtimeout) não tem nenhum efeito. Em vez disso, o servidor usa a configuração global por máquina – Keep Alive, cujo padrão é aproximadamente duas horas. Se o cliente não responder à Keep Alive do servidor, a conexão será fechada. Quando todas as conexões com um determinado processo de cliente são fechadas, o servidor limpa e executa identificadores de contexto pendentes.
+Um cliente abre um handle de contexto e, em seguida, para ou perde a conectividade com o servidor. Como o servidor detecta que o cliente falhou e o identificador de contexto deve ser executado? Há dois subscenários: um é que o cliente é desligado de maneira organizada. Nesse caso, ele notifica o servidor de que está desligando e o servidor pode limpar, incluindo a execução de run downs de contexto. Se o cliente não for desligado de maneira organizada ou não puder notificar o servidor, o servidor usará keep alives para determinar se o cliente ainda está disponível. No lado do servidor, a [**função RpcMgmtSetComTimeout**](/windows/desktop/api/Rpcdce/nf-rpcdce-rpcmgmtsetcomtimeout) não tem nenhum efeito. Em vez disso, o servidor usa a configuração global por computador keep alive, que usa como padrão aproximadamente duas horas. Se o cliente não responder aos keep alives do servidor, a conexão será fechada. Quando todas as conexões com um determinado processo de cliente são fechadas, o servidor limpa e executa os alças de contexto pendentes.
 
  
 

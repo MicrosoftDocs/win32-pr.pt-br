@@ -1,5 +1,5 @@
 ---
-description: Cada desenvolvedor que cria aplicativos em tempo real que usam gráficos 3D está preocupado com a otimização de desempenho. Esta seção fornece diretrizes para obter o melhor desempenho do seu código.
+description: Todo desenvolvedor que cria aplicativos em tempo real que usam gráficos 3D está preocupado com a otimização do desempenho. Esta seção fornece diretrizes para obter o melhor desempenho do seu código.
 ms.assetid: 074f848e-4a42-48a2-adf7-4026b8967413
 title: Otimizações de desempenho (Direct3D 9)
 ms.topic: article
@@ -13,34 +13,34 @@ ms.locfileid: "118520422"
 ---
 # <a name="performance-optimizations-direct3d-9"></a>Otimizações de desempenho (Direct3D 9)
 
-Cada desenvolvedor que cria aplicativos em tempo real que usam gráficos 3D está preocupado com a otimização de desempenho. Esta seção fornece diretrizes para obter o melhor desempenho do seu código.
+Todo desenvolvedor que cria aplicativos em tempo real que usam gráficos 3D está preocupado com a otimização do desempenho. Esta seção fornece diretrizes para obter o melhor desempenho do seu código.
 
--   [Desempenho geral Dicas](#general-performance-tips)
--   [Bancos de dados e ressarções](#databases-and-culling)
--   [Primitivos de lote](#batching-primitives)
--   [Iluminação Dicas](#lighting-tips)
+-   [Dicas de desempenho geral](#general-performance-tips)
+-   [Bancos de dados e remoção](#databases-and-culling)
+-   [Primitivos de envio em lote](#batching-primitives)
+-   [Dicas de iluminação](#lighting-tips)
 -   [Tamanho da textura](#texture-size)
 -   [Transformações de matriz](#matrix-transforms)
 -   [Usando texturas dinâmicas](#using-dynamic-textures)
--   [Usando vértice dinâmico e buffers de índice](#using-dynamic-vertex-and-index-buffers)
+-   [Usando um vértice dinâmico e buffers de índice](#using-dynamic-vertex-and-index-buffers)
 -   [Usando malhas](#using-meshes)
--   [Desempenho do Buffer Z](#z-buffer-performance)
+-   [Desempenho de buffer Z](#z-buffer-performance)
 
-## <a name="general-performance-tips"></a>Desempenho geral Dicas
+## <a name="general-performance-tips"></a>Dicas de desempenho geral
 
--   Limpe somente quando for necessário.
--   Minimize as alterações de estado e a agrupar as alterações de estado restantes.
--   Use texturas menores, se você puder fazer isso.
--   Desenhar objetos em sua cena de frente para trás.
--   Use faixas de triângulo em vez de listas e ventiladores. Para obter um desempenho de cache de vértice ideal, organize faixas para reutilizar vértices de triângulo mais cedo, em vez de posterior.
--   Degradar normalmente efeitos especiais que exigem uma compartilhamento desproporcional dos recursos do sistema.
--   Teste constantemente o desempenho do aplicativo.
+-   Desmarque somente quando precisar.
+-   Minimize as alterações de estado e agrupe as alterações de estado restantes.
+-   Use texturas menores, se puder fazer isso.
+-   Desenhe objetos em sua cena de frente para trás.
+-   Use as faixas de triângulo em vez de listas e ventiladores. Para obter um desempenho de cache de vértice ideal, organize as faixas para reutilizar vértices de triângulo mais cedo, em vez de mais tarde
+-   Degradar normalmente efeitos especiais que exigem um compartilhamento desproporcional de recursos do sistema.
+-   Teste constantemente o desempenho do seu aplicativo.
 -   Minimize as opções de buffer de vértice.
 -   Use buffers de vértice estáticos sempre que possível.
 -   Use um buffer de vértice estático grande por FVF para objetos estáticos, em vez de um por objeto.
--   Se o aplicativo precisar de acesso aleatório ao buffer de vértice na memória AGP, escolha um tamanho de formato de vértice que seja um múltiplo de 32 bytes. Caso contrário, selecione o menor formato apropriado.
--   Desenhar usando primitivos indexados. Isso pode permitir um cache de vértice mais eficiente dentro do hardware.
--   Se o formato de buffer de profundidade contiver um canal de estêncil, limpe sempre os canais de profundidade e estêncil ao mesmo tempo.
+-   Se seu aplicativo precisar de acesso aleatório no buffer de vértice na memória AGP, escolha um tamanho de formato de vértice que seja múltiplo de 32 bytes. Caso contrário, selecione o menor formato apropriado.
+-   Desenhar usando primitivos indexados. Isso pode permitir um cache de vértices mais eficiente no hardware.
+-   Se o formato de buffer de profundidade contiver um canal de estêncil, sempre Limpe os canais de profundidade e estêncil ao mesmo tempo.
 -   Combine a instrução do sombreador e a saída de dados sempre que possível. Por exemplo:
     ```
     // Rather than doing a multiply and add, and then output the data with 
@@ -55,49 +55,49 @@ Cada desenvolvedor que cria aplicativos em tempo real que usam gráficos 3D est�
 
     
 
-## <a name="databases-and-culling"></a>Bancos de dados e ressarções
+## <a name="databases-and-culling"></a>Bancos de dados e remoção
 
-A criação de um banco de dados confiável dos objetos em seu mundo é fundamental para um excelente desempenho no Direct3D. É mais importante do que melhorias na rasterização ou no hardware.
+Criar um banco de dados confiável dos objetos em seu mundo é a chave para um desempenho excelente no Direct3D. É mais importante do que melhorias na rasterização ou no hardware.
 
-Você deve manter a contagem de polígonos mais baixa que você pode gerenciar. Projete uma contagem baixa de polígonos criando modelos de baixo polígono desde o início. Adicione polígonos se você puder fazer isso sem sacrificar o desempenho posteriormente no processo de desenvolvimento. Lembre-se de que os polígonos mais rápidos são aqueles que você não desenha.
+Você deve manter a contagem de polígonos mais baixa que possivelmente pode gerenciar. Crie um pequeno número de polígonos criando modelos de baixo polígono desde o início. Adicione polígonos se você puder fazer isso sem sacrificar o desempenho posteriormente no processo de desenvolvimento. Lembre-se de que os polígonos mais rápidos são aqueles que você não desenha.
 
-## <a name="batching-primitives"></a>Primitivos de lote
+## <a name="batching-primitives"></a>Primitivos de envio em lote
 
-Para obter o melhor desempenho de renderização durante a execução, tente trabalhar com primitivos em lotes e mantenha o número de alterações de estado de renderização o mais baixo possível. Por exemplo, se você tiver um objeto com duas texturas, a agrupar os triângulos que usam a primeira textura e siga-os com o estado de renderização necessário para alterar a textura. Em seguida, a agrupar todos os triângulos que usam a segunda textura. O suporte de hardware mais simples para Direct3D é chamado com lotes de estados de renderização e lotes de primitivos por meio da CAMADA de abstração de hardware (HAL). Quanto mais efetivamente as instruções são em lote, menos chamadas DE HAL são executadas durante a execução.
+Para obter o melhor desempenho de renderização durante a execução, tente trabalhar com primitivos em lotes e mantenha o número de alterações de estado de processamento o mais baixo possível. Por exemplo, se você tiver um objeto com duas texturas, agrupe os triângulos que usam a primeira textura e siga-os com o estado de processamento necessário para alterar a textura. Em seguida, agrupe todos os triângulos que usam a segunda textura. O suporte de hardware mais simples para o Direct3D é chamado com lotes de Estados de renderização e lotes de primitivos por meio da HAL (camada de abstração de hardware). Quanto mais efetivamente as instruções forem em lote, menos chamadas de HAL serão executadas durante a execução.
 
-## <a name="lighting-tips"></a>Iluminação Dicas
+## <a name="lighting-tips"></a>Dicas de iluminação
 
-Como as luzes adicionam um custo por vértice a cada quadro renderizado, você pode melhorar significativamente o desempenho, sendo cuidadoso sobre como usá-los em seu aplicativo. A maioria das dicas a seguir deriva da máxima , "o código mais rápido é o código que nunca é chamado".
+Como as luzes adicionam um custo por vértice a cada quadro renderizado, você pode melhorar o desempenho de forma significativa com o cuidado de usá-los em seu aplicativo. A maioria das dicas a seguir derivam do máximo, "o código mais rápido é o código que nunca é chamado".
 
--   Use o máximo possível de fontes de luz. Para aumentar o nível de iluminação geral, por exemplo, use a luz ambiente em vez de adicionar uma nova fonte de luz.
--   As luzes direcionais são mais eficientes do que luzes de ponto ou destaques. Para luzes direcionais, a direção para a luz é fixa e não precisa ser calculada por vértice.
--   Os destaques podem ser mais eficientes do que as luzes de ponto, porque a área fora do cone de luz é calculada rapidamente. Se os destaques são mais eficientes ou não, depende de quanto da sua cena é acessada pelo destaque.
--   Use o parâmetro range para limitar as luzes apenas às partes da cena que você precisa para se apagar. Todos os tipos de luz saem bastante cedo quando estão fora do intervalo.
--   O especular realça quase o dobro do custo de uma luz. Use-os somente quando for necessário. De definir o estado de \_ renderização SPECUABLE D3DRS como 0, o valor padrão, sempre que possível. Ao definir materiais, você deve definir o valor de energia especular como zero para desativar os destaques especular para esse material; apenas definir a cor especular como 0,0,0 não é suficiente.
+-   Use o menor número possível de fontes leves. Para aumentar o nível de iluminação geral, por exemplo, use a luz ambiente em vez de adicionar uma nova fonte de luz.
+-   Luzes direcionais são mais eficientes do que luzes de ponto ou Spotlights. Para luzes direcionais, a direção da luz é fixa e não precisa ser calculada por vértice.
+-   Os destaques podem ser mais eficientes do que as luzes de ponto, pois a área fora do cone de luz é calculada rapidamente. Se os Spotlights são mais eficientes ou não depende de quanto de sua cena está acesa pelo destaque.
+-   Use o parâmetro Range para limitar as luzes a apenas as partes da cena que você precisa iluminar. Todos os tipos de luz saem bastante cedo quando estão fora do intervalo.
+-   Os realces especulares quase duplos são o custo de uma luz. Use-os somente quando precisar. Defina o \_ estado de RENDERIZAÇÃO D3DRS SPECULARENABLE como 0, o valor padrão, sempre que possível. Ao definir materiais, você deve definir o valor de energia especular como zero para desativar os realces especulares para esse material; apenas definir a cor especular como 0, 0, 0 não é suficiente.
 
 ## <a name="texture-size"></a>Tamanho da textura
 
-O desempenho do mapeamento de textura depende muito da velocidade da memória. Há várias maneiras de maximizar o desempenho do cache das texturas do aplicativo.
+O desempenho de mapeamento de textura depende muito da velocidade da memória. Há várias maneiras de maximizar o desempenho do cache das texturas do seu aplicativo.
 
--   Mantenha as texturas pequenas. Quanto menores as texturas, maior a chance de serem mantidas no cache secundário da CPU principal.
--   Não altere as texturas por primitivo. Tente manter os polígonos agrupados na ordem das texturas que eles usam.
--   Use texturas quadradas sempre que possível. Texturas cujas dimensões são 256x256 são as mais rápidas. Se seu aplicativo usar quatro texturas 128x128, por exemplo, tente garantir que eles usem a mesma paleta e coloque-as em uma textura de 256 x 256. Essa técnica também reduz a quantidade de troca de textura. É claro que você não deve usar texturas de 256 x 256, a menos que seu aplicativo exija essa quantidade de texto porque, conforme mencionado, as texturas devem ser mantidas o menor possível.
+-   Mantenha as texturas pequenas. Quanto menores forem as texturas, maior a chance de serem mantidas no cache secundário da CPU principal.
+-   Não altere as texturas em uma base por primitiva. Tente manter os polígonos agrupados na ordem das texturas que eles usam.
+-   Use texturas quadradas sempre que possível. As texturas cujas dimensões são 256x256 são as mais rápidas. Se seu aplicativo usar quatro texturas 128x128, por exemplo, tente garantir que elas usem a mesma paleta e coloque-as em uma textura 256x256. Essa técnica também reduz a quantidade de permutação de textura. É claro que você não deve usar texturas 256x256, a menos que seu aplicativo exija que muito texturing porque, como mencionado, as texturas devem ser mantidas o menor possível.
 
 ## <a name="matrix-transforms"></a>Transformações de matriz
 
-O Direct3D usa as matrizes de mundo e modo de exibição que você definiu para configurar várias estruturas de dados internas. Cada vez que você define um novo mundo ou uma matriz de exibição, o sistema recalcula as estruturas internas associadas. Definir essas matrizes com frequência – por exemplo, milhares de vezes por quadro – é computacionalmente demorado. Você pode minimizar o número de cálculos necessários concatenando as matrizes de mundo e modo de exibição em uma matriz de exibição de mundo que você define como matriz de mundo, e, em seguida, definindo a matriz de visualização para a identidade. Mantenha cópias em cache das matrizes individuais de mundo e modo de exibição para que você possa modificar, concatenar e restaurar a matriz de mundo conforme necessário. Para maior clareza nesta documentação, os exemplos do Direct3D raramente empregam essa otimização.
+O Direct3D usa as matrizes de mundo e modo de exibição que você definiu para configurar várias estruturas de dados internas. Cada vez que você define um novo mundo ou uma matriz de exibição, o sistema recalcula as estruturas internas associadas. A definição dessas matrizes com frequência – por exemplo, milhares de vezes por quadro – é computacionalmente demorada. Você pode minimizar o número de cálculos necessários concatenando as matrizes de mundo e modo de exibição em uma matriz de exibição de mundo que você define como matriz de mundo, e, em seguida, definindo a matriz de visualização para a identidade. Mantenha cópias em cache das matrizes individuais de mundo e modo de exibição para que você possa modificar, concatenar e restaurar a matriz de mundo conforme necessário. Para maior clareza nesta documentação, os exemplos de Direct3D raramente empregam essa otimização.
 
 ## <a name="using-dynamic-textures"></a>Usando texturas dinâmicas
 
-Para descobrir se o driver dá suporte a texturas dinâmicas, verifique o sinalizador D3DCAPS2 \_ DYNAMICTEXTURES da [**estrutura D3DCAPS9.**](/windows/desktop/api/D3D9Caps/ns-d3d9caps-d3dcaps9)
+Para descobrir se o driver dá suporte a texturas dinâmicas, verifique o \_ sinalizador D3DCAPS2 DYNAMICTEXTURES da estrutura [**D3DCAPS9**](/windows/desktop/api/D3D9Caps/ns-d3d9caps-d3dcaps9) .
 
 Lembre-se das seguintes coisas ao trabalhar com texturas dinâmicas.
 
--   Eles não podem ser gerenciados. Por exemplo, seu pool não pode ser D3DPOOL \_ MANAGED.
--   Texturas dinâmicas podem ser bloqueadas, mesmo se elas são criadas em D3DPOOL \_ DEFAULT.
--   D3DLOCK \_ DISCARD é um sinalizador de bloqueio válido para texturas dinâmicas.
+-   Eles não podem ser gerenciados. Por exemplo, seu pool não pode ser \_ gerenciado por D3DPOOL.
+-   Texturas dinâmicas podem ser bloqueadas, mesmo que elas sejam criadas no \_ padrão D3DPOOL.
+-   D3DLOCK \_ descarte é um sinalizador de bloqueio válido para texturas dinâmicas.
 
-É uma boa ideia criar apenas uma textura dinâmica por formato e, possivelmente, por tamanho. Mipmaps dinâmicos, cubos e volumes não são recomendados devido à sobrecarga adicional no bloqueio de todos os níveis. Para mipmaps, D3DLOCK \_ DISCARD é permitido somente no nível superior. Todos os níveis são descartados ao bloquear apenas o nível superior. Esse comportamento é o mesmo para volumes e cubos. Para cubos, os níveis superior e face 0 são bloqueados.
+É uma boa ideia criar apenas uma textura dinâmica por formato e, possivelmente, por tamanho. Mipmaps dinâmicos, cubos e volumes não são recomendados devido à sobrecarga adicional no bloqueio de cada nível. Para mipmaps, o \_ descarte de D3DLOCK é permitido somente no nível superior. Todos os níveis são descartados bloqueando apenas o nível superior. Esse comportamento é o mesmo para volumes e cubos. Para cubos, o nível superior e a face 0 estão bloqueados.
 
 O pseudocódigo a seguir mostra um exemplo de como usar uma textura dinâmica.
 
@@ -118,9 +118,9 @@ DrawProceduralTexture(pTex)
 
 
 
-## <a name="using-dynamic-vertex-and-index-buffers"></a>Usando vértice dinâmico e buffers de índice
+## <a name="using-dynamic-vertex-and-index-buffers"></a>Usando um vértice dinâmico e buffers de índice
 
-Bloquear um buffer de vértice estático enquanto o processador de gráficos está usando o buffer pode ter uma penalidade de desempenho significativa. A chamada de bloqueio deve aguardar até que o processador gráfico termine de ler os dados de vértice ou índice do buffer antes de poder retornar ao aplicativo de chamada, um atraso significativo. O bloqueio e a renderização de um buffer estático várias vezes por quadro também impedem que o processador de elementos gráficos bloqueie comandos de renderização, pois ele deve concluir comandos antes de retornar o ponteiro de bloqueio. Sem comandos armazenados em buffer, o processador gráfico permanece ocioso até que o aplicativo termine de preencher o buffer de vértice ou buffer de índice e emite um comando de renderização.
+Bloquear um buffer de vértices estáticos enquanto o processador de gráficos está usando o buffer pode ter uma penalidade de desempenho significativa. A chamada de bloqueio deve aguardar até que o processador de gráficos termine de ler os dados de vértice ou de índice do buffer antes que ele possa retornar ao aplicativo de chamada, um atraso significativo. O bloqueio e a renderização de um buffer estático várias vezes por quadro também impede que o processador de gráficos faça o armazenamento em buffer de comandos de renderização, já que ele deve concluir os comandos antes de retornar o ponteiro de bloqueio. Sem comandos armazenados em buffer, o processador gráfico permanece ocioso até que o aplicativo termine de preencher o buffer de vértice ou buffer de índice e emite um comando de renderização.
 
 O ideal é que os dados de vértice ou índice nunca mudem, no entanto, isso nem sempre é possível. Há muitas situações em que o aplicativo precisa alterar dados de vértice ou índice a cada quadro, talvez até várias vezes por quadro. Para essas situações, o vértice ou buffer de índice deve ser criado com D3DUSAGE \_ DYNAMIC. Esse sinalizador de uso faz com que o Direct3D otimize para operações de bloqueio frequentes. D3DUSAGE DYNAMIC só é útil quando o buffer é bloqueado com frequência; os dados que permanecem constantes devem ser colocados em um \_ vértice estático ou buffer de índice.
 
@@ -128,7 +128,7 @@ Para receber uma melhoria de desempenho ao usar buffers de vértice dinâmicos, 
 
 Há casos em que a quantidade de dados que o aplicativo precisa armazenar por bloqueio é pequena, como adicionar quatro vértices para renderizar um sprite. D3DLOCK NOOVERWRITE indica que o aplicativo não substituirá os dados já em \_ uso no buffer dinâmico. A chamada de bloqueio retornará um ponteiro para os dados antigos, permitindo que o aplicativo adicione novos dados em regiões nãoutilizadas do vértice ou buffer de índice. O aplicativo não deve modificar os vértices ou índices usados em uma operação de desenho, pois eles ainda podem estar em uso pelo processador de gráficos. Em seguida, o aplicativo deve usar D3DLOCK DISCARD depois que o buffer dinâmico está cheio para receber uma nova região de memória, descartando o vértice antigo ou os dados de índice depois que o processador gráfico \_ for concluído.
 
-O mecanismo de consulta assíncrona é útil para determinar se os vértices ainda estão em uso pelo processador gráfico. Emita uma consulta do tipo D3DQUERYTYPE EVENT após a última \_ chamada DrawPrimitive que usa os vértices. Os vértices não estão mais em uso quando [**IDirect3DQuery9::GetData**](/windows/desktop/api) retorna S \_ OK. Bloquear um buffer com D3DLOCK DISCARD ou nenhum sinalizador sempre garantirá que os vértices sejam sincronizados corretamente com o processador gráfico, no entanto, usar o bloqueio sem sinalizadores incorre na penalidade de desempenho descrita \_ anteriormente. Outras chamadas à API como [**IDirect3DDevice9::BeginScene**](/windows/desktop/api), [**IDirect3DDevice9::EndScene**](/windows/desktop/api)e [**IDirect3DDevice9::P resent**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-present) não garantem que o processador gráfico seja concluído usando vértices.
+O mecanismo de consulta assíncrona é útil para determinar se os vértices ainda estão em uso pelo processador gráfico. Emita uma consulta do tipo D3DQUERYTYPE EVENT após a última \_ chamada DrawPrimitive que usa os vértices. Os vértices não estão mais em uso quando [**IDirect3DQuery9::GetData**](/windows/desktop/api) retorna S \_ OK. Bloquear um buffer com D3DLOCK DISCARD ou nenhum sinalizador sempre garantirá que os vértices sejam sincronizados corretamente com o processador gráfico, no entanto, usar o bloqueio sem sinalizadores incorre na penalidade de desempenho descrita \_ anteriormente. Outras chamadas à API, como [**IDirect3DDevice9::BeginScene**](/windows/desktop/api), [**IDirect3DDevice9::EndScene**](/windows/desktop/api)e [**IDirect3DDevice9::P resent,**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-present) não garantem que o processador gráfico seja concluído usando vértices.
 
 Abaixo estão maneiras de usar buffers dinâmicos e os sinalizadores de bloqueio adequados.
 

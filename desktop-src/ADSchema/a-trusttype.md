@@ -1,11 +1,11 @@
 ---
 title: Trust-Type atributo
-description: o tipo de confiança, por exemplo, Windows NT ou MIT.
+description: O tipo de confiança, por exemplo, Windows NT ou MIT.
 ms.assetid: ad3640cd-d634-4ec1-8be8-1fb8272e4b23
 ms.tgt_platform: multiple
 keywords:
-- Esquema de Trust-Type do atributo AD
-- Esquema de AD do atributo TrustType
+- Trust-Type atributo AD Schema
+- Esquema do AD do atributo trustType
 topic_type:
 - apiref
 api_name:
@@ -23,20 +23,20 @@ ms.locfileid: "118681600"
 ---
 # <a name="trust-type-attribute"></a>Trust-Type atributo
 
-o tipo de confiança, por exemplo, Windows NT ou MIT.
+O tipo de confiança, por exemplo, Windows NT ou MIT.
 
 
 
 | Entrada | Valor |
 |-------------------|--------------------------------------|
 | CN                | Trust-Type                           |
-| LDAP-Display-Name | trustType                            |
+| Ldap-Display-Name | trustType                            |
 | Tamanho              | 4 bytes                              |
 | Privilégio de atualização  | Esse valor é definido pelo sistema.     |
-| Frequência de atualização  | Quando uma nova relação de confiança é criada.         |
+| Frequência de atualização  | Quando uma nova confiança é criada.         |
 | Attribute-Id      | 1.2.840.113556.1.4.136               |
-| System-ID-GUID    | bf967a60-0de6-11d0-a285-00aa003049e2 |
-| Sintaxe            | [**Enumeração**](s-enumeration.md) |
+| System-Id-Guid    | bf967a60-0de6-11d0-a285-00aa003049e2 |
+| Syntax            | [**Enumeração**](s-enumeration.md) |
 
 
 
@@ -58,10 +58,10 @@ o tipo de confiança, por exemplo, Windows NT ou MIT.
 | ID do link                | \-                                                   |
 | MAPI-Id                | \-                                                   |
 | System-Only            | Falso                                                |
-| É de valor único       | True                                                 |
+| Tem valor único       | Verdadeiro                                                 |
 | É indexado             | Falso                                                |
-| No catálogo global      | Falso                                                |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                         |
+| No Catálogo Global      | Falso                                                |
+| Descritor de segurança NT | O:BAG:BAD:S:                                         |
 | Range-Lower            | \-                                                   |
 | Range-Upper            | \-                                                   |
 | Search-Flags           | 0x00000000                                           |
@@ -79,10 +79,10 @@ o tipo de confiança, por exemplo, Windows NT ou MIT.
 | ID do link                | \-                                                   |
 | MAPI-Id                | \-                                                   |
 | System-Only            | Falso                                                |
-| É de valor único       | True                                                 |
+| Tem valor único       | Verdadeiro                                                 |
 | É indexado             | Falso                                                |
-| No catálogo global      | True                                                 |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                         |
+| No Catálogo Global      | Verdadeiro                                                 |
+| Descritor de segurança NT | O:BAG:BAD:S:                                         |
 | Range-Lower            | \-                                                   |
 | Range-Upper            | \-                                                   |
 | Search-Flags           | 0x00000000                                           |
@@ -100,10 +100,10 @@ o tipo de confiança, por exemplo, Windows NT ou MIT.
 | ID do link                | \-                                                   |
 | MAPI-Id                | \-                                                   |
 | System-Only            | Falso                                                |
-| É de valor único       | True                                                 |
+| Tem valor único       | Verdadeiro                                                 |
 | É indexado             | Falso                                                |
-| No catálogo global      | True                                                 |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                         |
+| No Catálogo Global      | Verdadeiro                                                 |
+| Descritor de segurança NT | O:BAG:BAD:S:                                         |
 | Range-Lower            | \-                                                   |
 | Range-Upper            | \-                                                   |
 | Search-Flags           | 0x00000000                                           |
@@ -121,9 +121,9 @@ o tipo de confiança, por exemplo, Windows NT ou MIT.
 | ID do link                | \-                                                   |
 | MAPI-Id                | \-                                                   |
 | System-Only            | Falso                                                |
-| É de valor único       | True                                                 |
+| É de valor único       | Verdadeiro                                                 |
 | É indexado             | Falso                                                |
-| No catálogo global      | True                                                 |
+| No catálogo global      | Verdadeiro                                                 |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                         |
 | Range-Lower            | \-                                                   |
 | Range-Upper            | \-                                                   |
@@ -142,9 +142,9 @@ o tipo de confiança, por exemplo, Windows NT ou MIT.
 | ID do link                | \-                                                   |
 | MAPI-Id                | \-                                                   |
 | System-Only            | Falso                                                |
-| É de valor único       | True                                                 |
+| É de valor único       | Verdadeiro                                                 |
 | É indexado             | Falso                                                |
-| No catálogo global      | True                                                 |
+| No catálogo global      | Verdadeiro                                                 |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                         |
 | Range-Lower            | \-                                                   |
 | Range-Upper            | \-                                                   |
@@ -163,9 +163,9 @@ o tipo de confiança, por exemplo, Windows NT ou MIT.
 | ID do link                | \-                                                   |
 | MAPI-Id                | \-                                                   |
 | System-Only            | Falso                                                |
-| É de valor único       | True                                                 |
+| É de valor único       | Verdadeiro                                                 |
 | É indexado             | Falso                                                |
-| No catálogo global      | True                                                 |
+| No catálogo global      | Verdadeiro                                                 |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                         |
 | Range-Lower            | \-                                                   |
 | Range-Upper            | \-                                                   |

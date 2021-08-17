@@ -164,7 +164,7 @@ A amostra [Modificar a prioridade de um processo em execução](https://Gallery.
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

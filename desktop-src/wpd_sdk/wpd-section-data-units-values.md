@@ -1,7 +1,7 @@
 ---
-description: A \_ enumeração de valores das unidades de dados da seção WPD \_ \_ \_ indica as unidades de uma seção de dados referenciada.
+description: A \_ enumeração WPD SECTION \_ DATA UNITS VALUES indica as unidades de uma seção de dados \_ \_ referenciada.
 ms.assetid: d787d8b4-b622-4370-baf9-a2783133260f
-title: Enumeração de WPD_SECTION_DATA_UNITS_VALUES (PortableDevice. h)
+title: WPD_SECTION_DATA_UNITS_VALUES enumeração (PortableDevice.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -20,11 +20,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118696244"
 ---
-# <a name="wpd_section_data_units_values-enumeration"></a>\_Enumeração de \_ valores de unidades de dados da seção WPD \_ \_
+# <a name="wpd_section_data_units_values-enumeration"></a>\_Enumeração WPD SECTION \_ DATA \_ UNITS \_ VALUES
 
-A enumeração de **valores das unidades de \_ dados da seção \_ \_ \_ WPD** indica as unidades de uma seção de dados referenciada.
+A **enumeração \_ WPD SECTION \_ DATA UNITS \_ \_ VALUES** indica as unidades de uma seção de dados referenciada.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -40,14 +40,14 @@ typedef enum WPD_SECTION_DATA_UNITS_VALUES {
 
 <dl> <dt>
 
-<span id="WPD_SECTION_DATA_UNITS_BYTES"></span><span id="wpd_section_data_units_bytes"></span>**\_bytes de \_ unidades de dados da seção WPD \_ \_**
+<span id="WPD_SECTION_DATA_UNITS_BYTES"></span><span id="wpd_section_data_units_bytes"></span>**BYTES DE UNIDADES DE \_ \_ DADOS DA SEÇÃO \_ WPD \_**
 </dt> <dd>
 
-As unidades fornecidas são especificadas em bytes.
+As unidades especificadas são especificadas em bytes.
 
 </dd> <dt>
 
-<span id="WPD_SECTION_DATA_UNITS_MILLISECONDS"></span><span id="wpd_section_data_units_milliseconds"></span>**unidades de dados da seção WPD em \_ \_ \_ \_ milissegundos**
+<span id="WPD_SECTION_DATA_UNITS_MILLISECONDS"></span><span id="wpd_section_data_units_milliseconds"></span>**MILISSEGUNDOS DE UNIDADES DE \_ \_ \_ \_ DADOS DA SEÇÃO WPD**
 </dt> <dd>
 
 As unidades fornecidas são especificadas em milissegundos.
@@ -60,7 +60,7 @@ As unidades fornecidas são especificadas em milissegundos.
 
 | Requisito | Valor |
 |-------------------|---------------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>PortableDevice. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>PortableDevice.h</dt> </dl> |
 
 
 

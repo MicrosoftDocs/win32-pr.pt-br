@@ -4,12 +4,12 @@ ms.assetid: f90d9346-10ed-4eba-bae2-9a1f1e6dc6b7
 title: Conta NetworkService
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c319518dbe925a146882014211d131c30420a282
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 24f8256a15b43d9a9c0403067a61f9a7cbf6b9d2df0d78936c4d9c06f6dfd87c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105756144"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118889390"
 ---
 # <a name="networkservice-account"></a>Conta NetworkService
 
@@ -23,14 +23,14 @@ A conta NetworkService tem sua própria subchave na chave do registro **HKEY \_ 
 
 A conta NetworkService tem os seguintes privilégios:
 
--   **Se \_ \_Nome do ASSIGNPRIMARYTOKEN** (desabilitado)
--   **Se \_ \_Nome da auditoria** (desabilitado)
--   **Se \_ ALTERAR \_ \_ nome da notificação** (habilitado)
--   **Se \_ CRIAR \_ \_ nome global** (habilitado)
--   **Se \_ REPRESENTAR \_ nome** (habilitado)
--   **Se \_ AUMENTAR \_ o \_ nome da cota** (desabilitado)
--   **Se \_ \_Nome do DESligamento** (desabilitado)
--   **Se \_ Desencaixar \_ nome** (desabilitado)
+-   **ES \_ \_Nome do ASSIGNPRIMARYTOKEN** (desabilitado)
+-   **ES \_ \_Nome da auditoria** (desabilitado)
+-   **ES \_ ALTERAR \_ \_ nome da notificação** (habilitado)
+-   **ES \_ CRIAR \_ \_ nome global** (habilitado)
+-   **ES \_ REPRESENTAR \_ nome** (habilitado)
+-   **ES \_ AUMENTAR \_ o \_ nome da cota** (desabilitado)
+-   **ES \_ \_Nome do DESligamento** (desabilitado)
+-   **ES \_ Desencaixar \_ nome** (desabilitado)
 -   Quaisquer privilégios atribuídos a usuários e usuários autenticados
 
 Para obter mais informações, consulte [segurança de serviço e direitos de acesso](service-security-and-access-rights.md).

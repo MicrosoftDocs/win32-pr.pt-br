@@ -1,6 +1,6 @@
 ---
 description: Obtém o nome da exibição padrão. Chame GetDisplayNameOf para recuperar os nomes das outras exibições.
-title: Método IShellFolderViewType::GetDefaultViewName
+title: 'Método IShellFolderViewType:: getmodopadrãoname'
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -20,7 +20,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119443266"
 ---
-# <a name="ishellfolderviewtypegetdefaultviewname-method"></a>Método IShellFolderViewType::GetDefaultViewName
+# <a name="ishellfolderviewtypegetdefaultviewname-method"></a>Método IShellFolderViewType:: getmodopadrãoname
 
 Obtém o nome da exibição padrão. Chame [**GetDisplayNameOf**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ishellfolder-getdisplaynameof) para recuperar os nomes das outras exibições.
 
@@ -40,7 +40,7 @@ HRESULT GetDefaultViewName(
 
 <dl> <dt>
 
-*uFlags* \[ Em\]
+*uFlags* \[ no\]
 </dt> <dd>
 
 Tipo: **DWORD**
@@ -49,12 +49,12 @@ Sinalizadores opcionais; deve ser definido como 0.
 
 </dd> <dt>
 
-*ppwszName* \[ out\]
+*ppwszName* \[ fora\]
 </dt> <dd>
 
 Tipo: **LPWSTR \***
 
-O endereço de um ponteiro de cadeia de caracteres que recebe o nome de exibição padrão. A memória da cadeia de caracteres é alocada com [**SHStrDup.**](/windows/desktop/api/Shlwapi/nf-shlwapi-shstrdupa)
+O endereço de um ponteiro de cadeia de caracteres que recebe o nome de exibição padrão. A memória da cadeia de caracteres é alocada com [**SHStrDup**](/windows/desktop/api/Shlwapi/nf-shlwapi-shstrdupa).
 
 </dd> </dl>
 
@@ -62,7 +62,7 @@ O endereço de um ponteiro de cadeia de caracteres que recebe o nome de exibiç�
 
 Tipo: **HRESULT**
 
-Se esse método for bem-sucedido, ele **retornará S \_ OK.** Caso contrário, ele retornará um **código de erro HRESULT.**
+Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
 
 ## <a name="requirements"></a>Requisitos
 

@@ -4,16 +4,16 @@ ms.assetid: 7ae672d3-e11d-453c-b9c0-354d21830ae4
 title: Enviando uma mensagem de dados envelopada
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f59c04418a2f1d0186ddc0d88c30e7cc790c715b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9d93c73e22a9ac98e08d12164e78aa585a6b2ba3da6f47bf53675a7320bc206e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104370707"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118900356"
 ---
 # <a name="sending-an-enveloped-data-message"></a>Enviando uma mensagem de dados envelopada
 
-\[O CAPICOM é um componente somente de 32 bits que está disponível para uso nos seguintes sistemas operacionais: Windows Server 2008, Windows Vista e Windows XP. Em vez disso, use o .NET Framework para implementar recursos de segurança. Para obter mais informações, consulte [alternativas ao uso do CApicom](alternatives-to-using-capicom.md).\]
+\[o capicom é um componente somente de 32 bits que está disponível para uso nos seguintes sistemas operacionais: Windows Server 2008, Windows Vista e Windows XP. em vez disso, use o .NET Framework para implementar recursos de segurança. Para obter mais informações, consulte [alternativas ao uso do CApicom](alternatives-to-using-capicom.md).\]
 
 No exemplo a seguir, uma mensagem de texto sem formatação é lida em de um arquivo e um repositório de certificados que contém os certificados dos destinatários da mensagem pretendido é aberto. Todos os certificados no repositório são adicionados como destinatários da mensagem, a mensagem é envelopada e a mensagem envelopada é gravada em um arquivo.
 

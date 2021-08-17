@@ -1,9 +1,9 @@
 ---
 title: WM/UserWebURL
-description: O atributo WM/UserWebURL contém o endereço de um site e uma descrição do site.
+description: O atributo WM/UserWebURL contém o endereço de um site da Web e uma descrição do site.
 ms.assetid: 22ef04fd-9da8-47a5-a2c7-31f6a48e2859
 keywords:
-- Formato de mídia do Windows WM/UserWebURL
+- Formato de mídia do Windows do WM/UserWebURL
 topic_type:
 - apiref
 api_name:
@@ -21,7 +21,7 @@ ms.locfileid: "118698296"
 ---
 # <a name="wmuserweburl"></a>WM/UserWebURL
 
-O **atributo WM/UserWebURL** contém o endereço de um site e uma descrição do site.
+O atributo **WM/UserWebURL** contém o endereço de um site da Web e uma descrição do site.
 
 ## <a name="global-constant"></a>Constante global
 
@@ -29,7 +29,7 @@ g \_ wszWMUserWebURL
 
 ## <a name="data-type"></a>Tipo de Dados
 
-[**WM \_ \_URL DA WEB DO \_ USUÁRIO**](/previous-versions/windows/desktop/api/wmsdkidl/ns-wmsdkidl-wm_user_web_url) (**TIPO \_ \_ WMT BINARY**)
+[**WM \_ \_ \_ URL da Web do usuário**](/previous-versions/windows/desktop/api/wmsdkidl/ns-wmsdkidl-wm_user_web_url) (**\_ tipo WMT \_ Binary**)
 
 ## <a name="see-also"></a>Confira também
 

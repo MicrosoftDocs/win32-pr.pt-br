@@ -1,7 +1,7 @@
 ---
-description: Fornece sobrecargas de operador e casts de tipo para estruturas D3DXFLOAT16.
+description: Fornece sobrecargas de operador e conversões de tipo para estruturas D3DXFLOAT16.
 ms.assetid: d287efb5-d15e-46dc-924d-012e1a108efc
-title: Extensões D3DXFLOAT16 (D3dx9math.h)
+title: Extensões D3DXFLOAT16 (D3dx9math. h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -22,7 +22,7 @@ ms.locfileid: "118526140"
 ---
 # <a name="d3dxfloat16-extensions"></a>Extensões D3DXFLOAT16
 
-Fornece sobrecargas de operador e casts de tipo [**para estruturas D3DXFLOAT16.**](d3dxfloat16.md)
+Fornece sobrecargas de operador e conversões de tipo para estruturas [**D3DXFLOAT16**](d3dxfloat16.md) .
 
 ``` syntax
 typedef struct D3DXFLOAT16
@@ -50,11 +50,11 @@ Tipos derivados: \* LPD3DXFLOAT16
 
 ## <a name="members"></a>Membros
 
-Para obter mais informações sobre membros da estrutura, consulte D3DXFLOAT16.
+Para obter mais informações sobre membros de estrutura, consulte D3DXFLOAT16.
 
 ## <a name="remarks"></a>Comentários
 
-Sobrecargas de operador e casts de tipo para essa estrutura são implementadas em d3dx9math.inl.
+As sobrecargas de operador e as conversões de tipo para essa estrutura são implementadas em d3dx9math. inl.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -62,7 +62,7 @@ Sobrecargas de operador e casts de tipo para essa estrutura são implementadas e
 
 | Requisito | Valor |
 |-------------------|----------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>D3dx9math.h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>D3dx9math. h</dt> </dl> |
 
 
 

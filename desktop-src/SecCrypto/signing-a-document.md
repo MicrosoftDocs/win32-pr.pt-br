@@ -4,16 +4,16 @@ ms.assetid: 67a36123-4fce-4d40-83c3-b9668221276b
 title: Assinando um documento
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4ce1754cdfa1e89c23525474bae880dc2809c242
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 526bc4cd98d6cab40efc884a2377f3720c9849dbb7f6c1d4e8da5d49898bfa64
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105756675"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118898160"
 ---
 # <a name="signing-a-document"></a>Assinando um documento
 
-\[O CAPICOM é um componente somente de 32 bits que está disponível para uso nos seguintes sistemas operacionais: Windows Server 2008, Windows Vista e Windows XP. Em vez disso, use o .NET Framework para implementar recursos de segurança. Para obter mais informações, consulte [alternativas ao uso do CApicom](alternatives-to-using-capicom.md).\]
+\[o capicom é um componente somente de 32 bits que está disponível para uso nos seguintes sistemas operacionais: Windows Server 2008, Windows Vista e Windows XP. em vez disso, use o .NET Framework para implementar recursos de segurança. Para obter mais informações, consulte [alternativas ao uso do CApicom](alternatives-to-using-capicom.md).\]
 
 Um uso padrão de uma assinatura é assinar um texto e salvar esse texto assinado em um arquivo. O texto assinado também pode ser enviado pela Internet. A mensagem assinada está no \# formato PKCS 7.
 

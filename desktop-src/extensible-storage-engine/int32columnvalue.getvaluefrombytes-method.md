@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre: método Int32ColumnValue. GetValueFromBytes'
-title: Método Int32ColumnValue. GetValueFromBytes
+description: 'Saiba mais sobre: Método Int32ColumnValue.GetValueFromBytes'
+title: Método Int32ColumnValue.GetValueFromBytes
 TOCTitle: 'GetValueFromBytes method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Int32ColumnValue.GetValueFromBytes(System.Byte[],System.Int32,System.Int32,System.Int32)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.int32columnvalue.getvaluefrombytes(v=EXCHG.10)
@@ -31,12 +31,12 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118767796"
 ---
-# <a name="int32columnvaluegetvaluefrombytes-method"></a>Método Int32ColumnValue. GetValueFromBytes
+# <a name="int32columnvaluegetvaluefrombytes-method"></a>Método Int32ColumnValue.GetValueFromBytes
 
-Dados obtidos recuperados do ESENT, decodifique os dados e defina o valor no objeto Columnvalue.
+Dados recuperados do ESENT, decodificar os dados e definir o valor no objeto ColumnValue.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -69,31 +69,31 @@ protected override void GetValueFromBytes(
 
 #### <a name="parameters"></a>Parâmetros
 
-  - value  
-    Escreva \[\]  
+  - valor  
+    Tipo: \[\]  
     
     Uma matriz de bytes.
 
 <!-- end list -->
 
   - startIndex  
-    Tipo: [System. Int32](/dotnet/api/system.int32)  
+    Tipo: [System.Int32](/dotnet/api/system.int32)  
     
     A posição inicial dentro dos bytes.
 
 <!-- end list -->
 
   - count  
-    Tipo: [System. Int32](/dotnet/api/system.int32)  
+    Tipo: [System.Int32](/dotnet/api/system.int32)  
     
     O número de bytes a serem decodificados.
 
 <!-- end list -->
 
-  - erra  
-    Tipo: [System. Int32](/dotnet/api/system.int32)  
+  - Err  
+    Tipo: [System.Int32](/dotnet/api/system.int32)  
     
-    O erro retornado de ESENT.
+    O erro retornado do ESENT.
 
 ## <a name="see-also"></a>Confira também
 
@@ -101,6 +101,6 @@ protected override void GetValueFromBytes(
 
 [Classe Int32ColumnValue](./int32columnvalue-class.md)
 
-[Membros do Int32ColumnValue](./int32columnvalue-members.md)
+[Membros Int32ColumnValue](./int32columnvalue-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

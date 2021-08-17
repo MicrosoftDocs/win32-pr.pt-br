@@ -4,12 +4,12 @@ ms.assetid: 93fa9e29-1ff1-496d-9551-99ae88ba7253
 title: Teste para o final de um arquivo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 25e6b60f8e17fc452b0638b820be5978775ea5ba
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b1b345a0b908e88cfbb98129bc05350c2e265db8bc943d10151a89a17a10fc14
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103921389"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118950995"
 ---
 # <a name="testing-for-the-end-of-a-file"></a>Teste para o final de um arquivo
 

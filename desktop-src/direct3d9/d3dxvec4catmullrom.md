@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 06ba24374ee2ad4e6fd008d90c55d2990dc166f6
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 7f55eb0434b36daca81e8e3e93b335c2d58124a53d31d59d20ddaa525a6b1c04
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108115524"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118803764"
 ---
 # <a name="d3dxvec4catmullrom-function-d3dx9mathh"></a>Função D3DXVec4CatmullRom (D3dx9math. h)
 
@@ -179,7 +179,7 @@ Q(s) = [(-s3 + 2s2 - s)p1 + (3s3 - 5s2 + 2)p2 + (-3s3 + 4s2 + s)p3 + (s3 - s2)p4
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 
