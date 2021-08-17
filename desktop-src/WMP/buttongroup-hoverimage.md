@@ -3,7 +3,7 @@ title: BUTTON. hoverImage
 description: O atributo hoverImage especifica ou recupera o nome da imagem que representa o estado de foco de um botão no botão. O estado de foco ocorre quando o botão está no estado ativo e o usuário passa o mouse sobre ele.
 ms.assetid: 319b8770-8c4a-441a-ad03-9ff895958cf2
 keywords:
-- HoverImage Windows Media Player.
+- Windows Media Player de BUTTON. hoverImage
 topic_type:
 - apiref
 api_name:
@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 702a7aa73f5800628fdf14deb0dbfe142cd80dbf
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3ee872c06d405d0f9cf5c09f59a86ba1962d0a5b349460c978e37fb5022f1d60
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105770517"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119135899"
 ---
 # <a name="buttongrouphoverimage"></a>BUTTON. hoverImage
 

@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: da332ecc7823796eca1cf7e59178655378674b95
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: b4d68ad96c645c006842e63b2d0294cd4198c5dbeeb507c404df614d05ef644b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105769100"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119924086"
 ---
 # <a name="next-rid-attribute"></a>Atributo Next-RID
 
@@ -58,7 +58,7 @@ O próximo campo RID usado pelo alocador de modo misto.
 | ID do link                | \-                                                                                                 |
 | MAPI-Id                | \-                                                                                                 |
 | System-Only            | Falso                                                                                              |
-| É de valor único       | True                                                                                               |
+| É de valor único       | Verdadeiro                                                                                               |
 | É indexado             | Falso                                                                                              |
 | No catálogo global      | Falso                                                                                              |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                       |
@@ -79,7 +79,7 @@ O próximo campo RID usado pelo alocador de modo misto.
 | ID do link                | \-                                                                                                 |
 | MAPI-Id                | \-                                                                                                 |
 | System-Only            | Falso                                                                                              |
-| É de valor único       | True                                                                                               |
+| É de valor único       | Verdadeiro                                                                                               |
 | É indexado             | Falso                                                                                              |
 | No catálogo global      | Falso                                                                                              |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                       |
@@ -100,7 +100,7 @@ O próximo campo RID usado pelo alocador de modo misto.
 | ID do link                | \-                                                                                                 |
 | MAPI-Id                | \-                                                                                                 |
 | System-Only            | Falso                                                                                              |
-| É de valor único       | True                                                                                               |
+| É de valor único       | Verdadeiro                                                                                               |
 | É indexado             | Falso                                                                                              |
 | No catálogo global      | Falso                                                                                              |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                       |
@@ -121,7 +121,7 @@ O próximo campo RID usado pelo alocador de modo misto.
 | ID do link                | \-                                                                                                 |
 | MAPI-Id                | \-                                                                                                 |
 | System-Only            | Falso                                                                                              |
-| É de valor único       | True                                                                                               |
+| É de valor único       | Verdadeiro                                                                                               |
 | É indexado             | Falso                                                                                              |
 | No catálogo global      | Falso                                                                                              |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                       |
@@ -142,7 +142,7 @@ O próximo campo RID usado pelo alocador de modo misto.
 | ID do link                | \-                                                                                                 |
 | MAPI-Id                | \-                                                                                                 |
 | System-Only            | Falso                                                                                              |
-| É de valor único       | True                                                                                               |
+| É de valor único       | Verdadeiro                                                                                               |
 | É indexado             | Falso                                                                                              |
 | No catálogo global      | Falso                                                                                              |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                       |
@@ -163,7 +163,7 @@ O próximo campo RID usado pelo alocador de modo misto.
 | ID do link                | \-                                                                                                 |
 | MAPI-Id                | \-                                                                                                 |
 | System-Only            | Falso                                                                                              |
-| É de valor único       | True                                                                                               |
+| É de valor único       | Verdadeiro                                                                                               |
 | É indexado             | Falso                                                                                              |
 | No catálogo global      | Falso                                                                                              |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                       |

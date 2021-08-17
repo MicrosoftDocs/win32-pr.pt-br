@@ -1,17 +1,17 @@
 ---
-description: As \_ constantes LINEAGENTSTATEEX descrevem o estado de um agente em um endereço.
+description: As constantes LINEAGENTSTATEEX \_ descrevem o estado de um agente em um endereço.
 ms.assetid: d49025c5-f1db-4b71-a2d5-1cf3df66f3e5
-title: Constantes de LINEAGENTSTATEEX_ (TAPI. h)
+title: LINEAGENTSTATEEX_ constantes (Tapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 214b816a35e3fdb420a9d95772c466791c6d2f2c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a3f46c00b337a9106165616fe2eaf86bd2b2634b0c113369558953203313d59f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105792616"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119140089"
 ---
-# <a name="lineagentstateex_-constants"></a>\_Constantes LINEAGENTSTATEEX
+# <a name="lineagentstateex_-constants"></a>Constantes LINEAGENTSTATEEX \_
 
 As **\_ constantes LINEAGENTSTATEEX** descrevem o estado de um agente em um endereço.
 
@@ -22,7 +22,7 @@ As **\_ constantes LINEAGENTSTATEEX** descrevem o estado de um agente em um ende
 
 
 
-O agente está ocupado tratando uma chamada roteada de uma fila AD.
+O agente está ocupado tratando uma chamada roteada de uma fila ACD.
 
 
 </dt> </dl> </dd> <dt>
@@ -32,7 +32,7 @@ O agente está ocupado tratando uma chamada roteada de uma fila AD.
 
 
 
-O agente está ocupado tratando uma chamada de entrada que não foi transferida para o agente de uma fila ad na qual o agente está conectado.
+O agente está ocupado tratando uma chamada de entrada que não foi transferida para o agente de uma fila ACD na qual o agente está conectado.
 
 
 </dt> </dl> </dd> <dt>
@@ -47,17 +47,17 @@ O agente está ocupado tratando uma chamada de saída, como uma roteada de uma f
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEAGENTSTATEEX_NOTREADY"></span><span id="lineagentstateex_notready"></span>**LINEAGENTSTATEEX \_ ilegível**
+<span id="LINEAGENTSTATEEX_NOTREADY"></span><span id="lineagentstateex_notready"></span>**LINEAGENTSTATEEX \_ NOTREADY**
 </dt> <dd> <dl> <dt>
 
 
 
-O agente está conectado, mas ocupado com uma tarefa que não atende a uma chamada (como em uma interrupção). Nenhuma chamada adicional deve ser roteada para o agente.
+O agente está conectado, mas ocupado com uma tarefa diferente de atender a uma chamada (como em uma pausa). Nenhuma chamada adicional deve ser roteada para o agente.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEAGENTSTATEEX_READY"></span><span id="lineagentstateex_ready"></span>**LINEAGENTSTATEEX \_ pronto**
+<span id="LINEAGENTSTATEEX_READY"></span><span id="lineagentstateex_ready"></span>**LINEAGENTSTATEEX \_ READY**
 </dt> <dd> <dl> <dt>
 
 
@@ -67,22 +67,22 @@ O agente está pronto para aceitar chamadas.
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEAGENTSTATEEX_RELEASED"></span><span id="lineagentstateex_released"></span>**LINEAGENTSTATEEX \_ liberada**
+<span id="LINEAGENTSTATEEX_RELEASED"></span><span id="lineagentstateex_released"></span>**LINEAGENTSTATEEX \_ LANÇADO**
 </dt> <dd> <dl> <dt>
 
 
 
-O agente foi liberado, provavelmente porque fez logoff.
+O agente foi liberado, provavelmente porque foi desconectado.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEAGENTSTATEEX_UNKNOWN"></span><span id="lineagentstateex_unknown"></span>**LINEAGENTSTATEEX \_ desconhecido**
+<span id="LINEAGENTSTATEEX_UNKNOWN"></span><span id="lineagentstateex_unknown"></span>**LINEAGENTSTATEEX \_ UNKNOWN**
 </dt> <dd> <dl> <dt>
 
 
 
-O estado do agente é desconhecido no momento, mas pode ser conhecido mais tarde. Esse pode ser um estado de transição quando uma linha ou um endereço é aberto pela primeira vez.
+O estado do agente é desconhecido no momento, mas pode se tornar conhecido posteriormente. Isso pode ser um estado de transição quando uma linha ou endereço é aberto pela primeira vez.
 
 
 </dt> </dl> </dd> </dl>
@@ -93,8 +93,8 @@ O estado do agente é desconhecido no momento, mas pode ser conhecido mais tarde
 
 | Requisito | Valor |
 |-------------------------|-----------------------------------------------------------------------------------|
-| Versão da TAPI<br/> | Requer TAPI 2,2<br/>                                                      |
-| parâmetro<br/>       | <dl> <dt>TAPI. h</dt> </dl> |
+| Versão do TAPI<br/> | Requer TAPI 2.2<br/>                                                      |
+| Cabeçalho<br/>       | <dl> <dt>Tapi.h</dt> </dl> |
 
 
 

@@ -1,8 +1,8 @@
 ---
-description: A \_ classe CIM DMA representa o DMA (acesso direto à memória) da arquitetura do computador.
+description: A classe CIM DMA representa o DMA (acesso direto à memória) da \_ arquitetura do computador.
 ms.assetid: 101fa9f3-a403-487d-8482-b1e8e9f957d6
 ms.tgt_platform: multiple
-title: Classe CIM_DMA
+title: CIM_DMA classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -32,19 +32,19 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 71fe9c0ad29afa7be20df6fbf05c5d1183d23d13
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 82519db788c063909b48aec26f77c131865e4752f69b63feb1daf5d2e9745092
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103920395"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119924106"
 ---
-# <a name="cim_dma-class"></a>\_Classe DMA de CIM
+# <a name="cim_dma-class"></a>Classe CIM \_ DMA
 
-A classe **CIM \_ DMA** representa o DMA (acesso direto à memória) da arquitetura do computador.
+A **classe CIM \_ DMA** representa o DMA (acesso direto à memória) da arquitetura do computador.
 
 > [!IMPORTANT]
-> As classes DMTF (Distributed Management Task Force) CIM (modelo CIM) são as classes pai nas quais as classes WMI são criadas. Atualmente, o WMI dá suporte apenas aos [esquemas de versão do CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> As classes CIM (Distributed Management Task Force) do DMTF (Distributed Management Task Force) modelo CIM são as classes pai nas quais as classes WMI são criadas. Atualmente, o WMI dá suporte apenas aos esquemas de versão [do CIM 2.x.](https://dmtf.org/standards/cim/schemas)
 
  
 
@@ -79,26 +79,26 @@ class CIM_DMA : CIM_SystemResource
 
 ## <a name="members"></a>Membros
 
-A classe de **\_ DMA do CIM** tem estes tipos de membros:
+A **classe CIM \_ DMA** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe de **\_ DMA do CIM** tem essas propriedades.
+A **classe CIM \_ DMA** tem essas propriedades.
 
 <dl> <dt>
 
 **AddressSize**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. \|Informações de DMA do recurso do sistema DMTF \| 1,3 "), [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) (" bits ")
+Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| System Resource DMA Info \| 001.3"), [**Units**](/windows/desktop/WmiSdk/standard-qualifiers) ("bits")
 </dt> </dl>
 
 Tamanho do endereço do canal DMA, em bits. Os valores permitidos são 8, 16, 32 e 64. Se for desconhecido, insira 0.
@@ -145,13 +145,13 @@ Tamanho do endereço do canal DMA, em bits. Os valores permitidos são 8, 16, 32
 **Disponibilidade**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| DMA \| 1,2 ")
+Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| DMA \| 001.2")
 </dt> </dl>
 
 Disponibilidade do DMA.
@@ -160,7 +160,7 @@ Disponibilidade do DMA.
 
 <span id="Other"></span><span id="other"></span><span id="OTHER"></span>
 
-<span id="Other"></span><span id="other"></span><span id="OTHER"></span>**Outro** (1)
+<span id="Other"></span><span id="other"></span><span id="OTHER"></span>**Outros** (1)
 
 
 </dt> <dd></dd> <dt>
@@ -189,7 +189,7 @@ Disponível.
 
 <span id="In_Use_Not_Available"></span><span id="in_use_not_available"></span><span id="IN_USE_NOT_AVAILABLE"></span>
 
-<span id="In_Use_Not_Available"></span><span id="in_use_not_available"></span><span id="IN_USE_NOT_AVAILABLE"></span>**Em uso/não disponível** (4)
+<span id="In_Use_Not_Available"></span><span id="in_use_not_available"></span><span id="IN_USE_NOT_AVAILABLE"></span>**Em Uso/Não Disponível** (4)
 
 
 </dt> <dd>
@@ -200,7 +200,7 @@ Em uso (não disponível).
 
 <span id="In_Use_and_Available_Shareable"></span><span id="in_use_and_available_shareable"></span><span id="IN_USE_AND_AVAILABLE_SHAREABLE"></span>
 
-<span id="In_Use_and_Available_Shareable"></span><span id="in_use_and_available_shareable"></span><span id="IN_USE_AND_AVAILABLE_SHAREABLE"></span>**Em uso e disponível/compartilhável** (5)
+<span id="In_Use_and_Available_Shareable"></span><span id="in_use_and_available_shareable"></span><span id="IN_USE_AND_AVAILABLE_SHAREABLE"></span>**Em Uso e Disponível/Compartilhável** (5)
 
 
 </dt> <dd>
@@ -211,41 +211,41 @@ Em uso, mas disponível (compartilhável).
 
 </dd> <dt>
 
-**Intermitênciamode**
+**BurstMode**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| DMA \| 1,3 ")
+Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| DMA \| 001.3")
 </dt> </dl>
 
-Se **for true**, o canal DMA dará suporte ao modo de intermitência.
+Se **TRUE**, o canal DMA dá suporte ao modo de estouro.
 
 </dd> <dt>
 
-**Bytemode**
+**ByteMode**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. \|Informações de DMA do recurso do sistema DMTF \| 1,7 ")
+Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| System Resource DMA Info \| 001.7")
 </dt> </dl>
 
-Indica se o DMA pode ser executado no modo de contagem por byte.
+Indica se o DMA pode ser executado no modo contagem por byte.
 
 <dt>
 
 <span id="Other"></span><span id="other"></span><span id="OTHER"></span>
 
-<span id="Other"></span><span id="other"></span><span id="OTHER"></span>**Outro** (1)
+<span id="Other"></span><span id="other"></span><span id="OTHER"></span>**Outros** (1)
 
 
 </dt> <dd>
@@ -267,23 +267,23 @@ Desconhecido.
 
 <span id="Not_execute_in__count_by_byte__mode"></span><span id="not_execute_in__count_by_byte__mode"></span><span id="NOT_EXECUTE_IN__COUNT_BY_BYTE__MODE"></span>
 
-<span id="Not_execute_in__count_by_byte__mode"></span><span id="not_execute_in__count_by_byte__mode"></span><span id="NOT_EXECUTE_IN__COUNT_BY_BYTE__MODE"></span>**Não executar no modo ' contagem por byte '** (3)
+<span id="Not_execute_in__count_by_byte__mode"></span><span id="not_execute_in__count_by_byte__mode"></span><span id="NOT_EXECUTE_IN__COUNT_BY_BYTE__MODE"></span>**Não executar no modo 'contagem por byte'** (3)
 
 
 </dt> <dd>
 
-Não é possível executar no modo de contagem por byte.
+Não é possível executar no modo contagem por byte.
 
 </dd> <dt>
 
 <span id="Execute_in__count_by_byte__mode"></span><span id="execute_in__count_by_byte__mode"></span><span id="EXECUTE_IN__COUNT_BY_BYTE__MODE"></span>
 
-<span id="Execute_in__count_by_byte__mode"></span><span id="execute_in__count_by_byte__mode"></span><span id="EXECUTE_IN__COUNT_BY_BYTE__MODE"></span>**Executar no modo ' contagem por byte '** (4)
+<span id="Execute_in__count_by_byte__mode"></span><span id="execute_in__count_by_byte__mode"></span><span id="EXECUTE_IN__COUNT_BY_BYTE__MODE"></span>**Executar no modo 'contagem por byte'** (4)
 
 
 </dt> <dd>
 
-Capaz de executar em modo de contagem por byte.
+Capaz de executar no modo contagem por byte.
 
 </dd> </dl>
 
@@ -298,34 +298,34 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Caption")
+Qualificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Legenda")
 </dt> </dl>
 
-Breve descrição textual do objeto.
+Descrição textual curta do objeto.
 
-Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **ChannelTiming**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. \|Informações de DMA do recurso do sistema DMTF \| 1,9 ")
+Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| System Resource DMA Info \| 001.9")
 </dt> </dl>
 
-Tempo de canal de DMA.
+Tempo do canal DMA.
 
 <dt>
 
 <span id="Other"></span><span id="other"></span><span id="OTHER"></span>
 
-<span id="Other"></span><span id="other"></span><span id="OTHER"></span>**Outro** (1)
+<span id="Other"></span><span id="other"></span><span id="OTHER"></span>**Outros** (1)
 
 
 </dt> <dd>
@@ -358,7 +358,7 @@ Compatível com ISA.
 
 <span id="Type_A"></span><span id="type_a"></span><span id="TYPE_A"></span>
 
-<span id="Type_A"></span><span id="type_a"></span><span id="TYPE_A"></span>**Digite A** (4)
+<span id="Type_A"></span><span id="type_a"></span><span id="TYPE_A"></span>**Tipo A** (4)
 
 
 </dt> <dd>
@@ -374,13 +374,13 @@ Digite A.
 
 </dt> <dd>
 
-Digite B.
+Tipo B.
 
 </dd> <dt>
 
 <span id="Type_F"></span><span id="type_f"></span><span id="TYPE_F"></span>
 
-<span id="Type_F"></span><span id="type_f"></span><span id="TYPE_F"></span>**Digite F** (6)
+<span id="Type_F"></span><span id="type_f"></span><span id="TYPE_F"></span>**Tipo F** (6)
 
 
 </dt> <dd>
@@ -400,10 +400,10 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256), [**\_ chave CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
+Qualificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256), [**Chave CIM \_**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
-Nome da classe ou subclasse usada na criação de uma instância. Quando usado com outras propriedades de chave da classe, essa propriedade permite que todas as instâncias da classe e suas subclasses sejam identificadas exclusivamente.
+Nome da classe ou subclasse usada na criação de uma instância. Quando usada com outras propriedades de chave da classe , essa propriedade permite que todas as instâncias da classe e suas subclasses sejam identificadas exclusivamente.
 
 </dd> <dt>
 
@@ -416,10 +416,10 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ([**" \_ sistema de ComputerSystem CIM**](cim-computersystem.md).**CreationClassName**"), [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256), [**\_ chave CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
+Qualificadores: [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ ComputerSystem**](cim-computersystem.md).**CreationClassName**"), [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256), [**Chave CIM \_**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
-Nome da classe de criação do sistema do computador de escopo.
+Definindo o scoping do nome da classe de criação do sistema de computadores.
 
 </dd> <dt>
 
@@ -432,10 +432,10 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ([**" \_ sistema de ComputerSystem CIM**](cim-computersystem.md).**Name**"), [**\_ chave CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
+Qualificadores: [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ ComputerSystem**](cim-computersystem.md).**Name**"), [**CIM \_ Key**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
-Nome do sistema do computador de escopo.
+Definindo o scoping do nome do sistema de computador.
 
 </dd> <dt>
 
@@ -747,7 +747,7 @@ Compatível com ISA.
 
 </dt> <dd>
 
-Não há suporte.
+Sem suporte.
 
 </dd> <dt>
 
@@ -842,8 +842,8 @@ Esta documentação é derivada das descrições da classe CIM publicadas pela D
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| Namespace<br/>                | Raiz \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Namespace<br/>                | RAIZ \\ CIMV2<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -852,7 +852,7 @@ Esta documentação é derivada das descrições da classe CIM publicadas pela D
 
 <dl> <dt>
 
-[**\_SYSTEMRESOURCE CIM**](cim-systemresource.md)
+[**CIM \_ SystemResource**](cim-systemresource.md)
 </dt> </dl>
 
  

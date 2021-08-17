@@ -4,12 +4,12 @@ ms.assetid: 65e53587-0e40-411b-8d6c-d6adfc9d1e6c
 title: Iniciar uma sessão
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9e925ba90460b88c85a9aab1624923acdbc4572a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0226fc1b04ea5859bc4a96b6f5ca43e3749e7664a9ccf6810b586115171530b2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103827758"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119975846"
 ---
 # <a name="initiate-a-session"></a>Iniciar uma sessão
 
@@ -34,7 +34,7 @@ Parâmetros de configuração de chamada podem ser armazenados ou alterados usan
 Se a sessão for configurada com êxito, a TAPI retornará um ponteiro de interface [**ITBasicCallControl**](/windows/desktop/api/tapi3if/nn-tapi3if-itbasiccallcontrol) que pode ser usado para operações de sessão adicionais ou para obter um ponteiro de interface [**ITCallInfo**](/windows/desktop/api/tapi3if/nn-tapi3if-itcallinfo) que possa ser usado para obter informações de sessão adicional. A interface [**ITCallStateEvent**](/windows/desktop/api/tapi3if/nn-tapi3if-itcallstateevent) processa eventos de estado de chamada TAPI.
 
 > [!Note]  
-> A TAPI não deve ser usada para transmissões de fax. Em vez disso, use as funções disponíveis por MAPI, a API do sistema de mensagens da Microsoft.
+> A TAPI não deve ser usada para transmissões de fax. em vez disso, use as funções disponíveis por meio de MAPI, a API Mensagens Microsoft.
 
  
 

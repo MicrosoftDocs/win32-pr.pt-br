@@ -9,23 +9,23 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: fc7d8c78f77854a9adbedad7c0870721b3b037ab
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bf98c11b285d4c7aa4705095af99f35c129e27311dbe19ff42e4b0d288c45efc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105765589"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119451216"
 ---
 # <a name="connecting-to-a-device"></a>Conectando a um dispositivo
 
 > [!Note]  
-> Este sistema de scripts foi substituído pela camada de automação da WIA (aquisição de imagem do Windows). Consulte [camada de automação de aquisição de imagem do Windows](/previous-versions/windows/desktop/wiaaut/-wiaaut-startpage).
+> este sistema de scripts foi substituído pela camada de automação da WIA (Windows Image Acquisition). consulte [Windows camada de automação de aquisição de imagem](/previous-versions/windows/desktop/wiaaut/-wiaaut-startpage).
 
  
 
-A primeira etapa em qualquer aplicativo ou script que usa o modelo de script de aquisição de imagem do Windows (WIA) está criando o objeto [**WIA**](-wia-wia.md) . Esse objeto fornece métodos para obter uma coleção de objetos [**DeviceInfo**](-wia-deviceinfo.md) e conectar esses objetos a dispositivos. Ele também fornece a capacidade de escutar eventos de hardware WIA.
+a primeira etapa em qualquer aplicativo ou script que usa o modelo de script wia (Windows Image Acquisition) está criando o objeto [**WIA**](-wia-wia.md) . Esse objeto fornece métodos para obter uma coleção de objetos [**DeviceInfo**](-wia-deviceinfo.md) e conectar esses objetos a dispositivos. Ele também fornece a capacidade de escutar eventos de hardware WIA.
 
-A linha a seguir do código do Microsoft Visual Basic Scripting Edition (VBScript) cria o objeto [**WIA**](-wia-wia.md) :
+a linha a seguir do código do Microsoft Visual Basic scripting Edition (VBScript) cria o objeto [**Wia**](-wia-wia.md) :
 
 
 ```

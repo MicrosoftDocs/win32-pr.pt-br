@@ -1,19 +1,19 @@
 ---
-description: A seguir está a lista completa do esquema do arquivo de configuração do Publicador.
+description: Veja a seguir a lista completa do esquema de arquivo de configuração do publicador.
 ms.assetid: 501151ee-67f5-4127-b048-91ea4a42f9e7
-title: Esquema do arquivo de configuração do Publicador
+title: Publisher Esquema do arquivo de configuração
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 88a8e3d86adc71efda144bb5eed72876bf99911a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1f0e7d2b794d2fadd8e7906b2e4eeacc252fd6b6b802898070185ac2ae4c97f9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105748745"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119141989"
 ---
-# <a name="publisher-configuration-file-schema"></a>Esquema do arquivo de configuração do Publicador
+# <a name="publisher-configuration-file-schema"></a>Publisher Esquema do arquivo de configuração
 
-A seguir está a lista completa do esquema do arquivo de configuração do Publicador.
+Veja a seguir a lista completa do esquema de arquivo de configuração do publicador.
 
 ``` syntax
 <?xml version="1.0" encoding="US-ASCII"?>

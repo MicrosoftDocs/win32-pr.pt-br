@@ -1,6 +1,6 @@
 ---
 title: Método InstallBrokerDatabase da classe Win32_SessionBrokerServiceProperties
-description: Instala um banco de dados do agente de conexão RD em um SQL Server central.
+description: instala um banco de dados do agente de conexão RD em um servidor SQL central.
 ms.assetid: 9cc6fa4a-f1eb-49eb-bec4-acaff73190e8
 ms.tgt_platform: multiple
 keywords:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: da560bd4746c41864b3c56438f841efebe71ecd7
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 4e77a34c70fbf06bac5501c8cacddce9feb9211d1fe21c1ef30fe429d3e75308
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103644324"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119422446"
 ---
 # <a name="installbrokerdatabase-method-of-the-win32_sessionbrokerserviceproperties-class"></a>Método InstallBrokerDatabase da classe Win32 \_ SessionBrokerServiceProperties
 
-Instala um banco de dados do agente de conexão RD em um SQL Server central.
+instala um banco de dados do agente de conexão RD em um servidor SQL central.
 
 ## <a name="syntax"></a>Sintaxe
 

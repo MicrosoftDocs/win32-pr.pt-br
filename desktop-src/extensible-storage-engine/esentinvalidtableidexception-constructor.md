@@ -35,8 +35,8 @@ ms.locfileid: "119480536"
 
 Inicializa uma nova instância da classe EsentInvalidTableIdException.
 
-**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -58,6 +58,6 @@ public EsentInvalidTableIdException()
 
 [Classe EsentInvalidTableIdException](./esentinvalidtableidexception-class.md)
 
-[Membros EsentInvalidTableIdException](./esentinvalidtableidexception-members.md)
+[Membros do EsentInvalidTableIdException](./esentinvalidtableidexception-members.md)
 
-[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)

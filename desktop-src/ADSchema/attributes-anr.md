@@ -1,32 +1,32 @@
 ---
 title: Atributos ANR
-description: A seguir estão os atributos que dão suporte à ANR (resolução de nomes ambíguas).
+description: A seguir estão os atributos que suportam ANR (resolução de nomes ambíguos).
 ms.assetid: fc76c2e8-461f-48bf-82ed-329b8f74408e
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dcb0324fc39d3a492aeaf7eb843fab3d2dbb0b56
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 71dd9873ef5aad455b4b8c9a0cc62b8dcce4034c2eb383247f647d779b463f45
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104159265"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119922826"
 ---
 # <a name="anr-attributes"></a>Atributos ANR
 
-A seguir estão os atributos que dão suporte à ANR (resolução de nomes ambíguas).
+A seguir estão os atributos que suportam ANR (resolução de nomes ambíguos).
 
 ## <a name="windows-2000-server"></a>Windows 2000 Server
 
 <dl>
 
 [**Nome de exibição**](a-displayname.md)  
-[**Nome fornecido**](a-givenname.md)  
+[**Nome determinado**](a-givenname.md)  
 [**Legacy-Exchange-DN**](a-legacyexchangedn.md)  
-[**Entrega física-nome do escritório**](a-physicaldeliveryofficename.md)  
-[**Endereços de proxy**](a-proxyaddresses.md)  
-[**RDN**](a-name.md)  
-[**SAM-Account-Name**](a-samaccountname.md)  
+[**Physical-Delivery-Office-Name**](a-physicaldeliveryofficename.md)  
+[**Endereços proxy**](a-proxyaddresses.md)  
+[**Rdn**](a-name.md)  
+[**Sam-Account-Name**](a-samaccountname.md)  
 [**Sobrenome**](a-sn.md)  
 </dl>
 
@@ -35,24 +35,24 @@ A seguir estão os atributos que dão suporte à ANR (resolução de nomes ambí
 <dl>
 
 [**Nome de exibição**](a-displayname.md)  
-[**Nome fornecido**](a-givenname.md)  
+[**Nome determinado**](a-givenname.md)  
 [**Legacy-Exchange-DN**](a-legacyexchangedn.md)  
-[**ms-DS-adicional-Sam-Account-Name**](a-msds-additionalsamaccountname.md)  
-[**Entrega física-nome do escritório**](a-physicaldeliveryofficename.md)  
-[**Endereços de proxy**](a-proxyaddresses.md)  
-[**RDN**](a-name.md)  
-[**SAM-Account-Name**](a-samaccountname.md)  
+[**ms-DS-Additional-Sam-Account-Name**](a-msds-additionalsamaccountname.md)  
+[**Physical-Delivery-Office-Name**](a-physicaldeliveryofficename.md)  
+[**Endereços proxy**](a-proxyaddresses.md)  
+[**Rdn**](a-name.md)  
+[**Sam-Account-Name**](a-samaccountname.md)  
 [**Sobrenome**](a-sn.md)  
 </dl>
 
-## <a name="active-directory-application-mode-adam"></a>Modo de aplicativo Active Directory (ADAM)
+## <a name="active-directory-application-mode-adam"></a>Modo de Aplicativo do Active Directory (ADAM)
 
 <dl>
 
 [**Nome de exibição**](a-displayname.md)  
-[**Entrega física-nome do escritório**](a-physicaldeliveryofficename.md)  
-[**Endereços de proxy**](a-proxyaddresses.md)  
-[**RDN**](a-name.md)  
+[**Physical-Delivery-Office-Name**](a-physicaldeliveryofficename.md)  
+[**Endereços proxy**](a-proxyaddresses.md)  
+[**Rdn**](a-name.md)  
 </dl>
 
 ## <a name="windows-server-2003-r2"></a>Windows Server 2003 R2
@@ -60,13 +60,13 @@ A seguir estão os atributos que dão suporte à ANR (resolução de nomes ambí
 <dl>
 
 [**Nome de exibição**](a-displayname.md)  
-[**Nome fornecido**](a-givenname.md)  
+[**Nome determinado**](a-givenname.md)  
 [**Legacy-Exchange-DN**](a-legacyexchangedn.md)  
-[**ms-DS-adicional-Sam-Account-Name**](a-msds-additionalsamaccountname.md)  
-[**Entrega física-nome do escritório**](a-physicaldeliveryofficename.md)  
-[**Endereços de proxy**](a-proxyaddresses.md)  
-[**RDN**](a-name.md)  
-[**SAM-Account-Name**](a-samaccountname.md)  
+[**ms-DS-Additional-Sam-Account-Name**](a-msds-additionalsamaccountname.md)  
+[**Physical-Delivery-Office-Name**](a-physicaldeliveryofficename.md)  
+[**Endereços proxy**](a-proxyaddresses.md)  
+[**Rdn**](a-name.md)  
+[**Sam-Account-Name**](a-samaccountname.md)  
 [**Sobrenome**](a-sn.md)  
 </dl>
 
@@ -75,18 +75,18 @@ A seguir estão os atributos que dão suporte à ANR (resolução de nomes ambí
 <dl>
 
 [**Nome de exibição**](a-displayname.md)  
-[**Nome fornecido**](a-givenname.md)  
+[**Nome determinado**](a-givenname.md)  
 [**Legacy-Exchange-DN**](a-legacyexchangedn.md)  
-[**ms-DS-adicional-Sam-Account-Name**](a-msds-additionalsamaccountname.md)  
-[**ms-DS-fonética-Company-Name**](a-msds-phoneticcompanyname.md)  
-[**ms-DS-fonético-Department**](a-msds-phoneticdepartment.md)  
+[**ms-DS-Additional-Sam-Account-Name**](a-msds-additionalsamaccountname.md)  
+[**ms-DS-Phonetic-Company-Name**](a-msds-phoneticcompanyname.md)  
+[**ms-DS-Phonetic-Department**](a-msds-phoneticdepartment.md)  
 [**ms-DS-Phonetic-Display-Name**](a-msds-phoneticdisplayname.md)  
 [**ms-DS-Phonetic-First-Name**](a-msds-phoneticfirstname.md)  
 [**ms-DS-Phonetic-Last-Name**](a-msds-phoneticlastname.md)  
-[**Entrega física-nome do escritório**](a-physicaldeliveryofficename.md)  
-[**Endereços de proxy**](a-proxyaddresses.md)  
-[**RDN**](a-name.md)  
-[**SAM-Account-Name**](a-samaccountname.md)  
+[**Physical-Delivery-Office-Name**](a-physicaldeliveryofficename.md)  
+[**Endereços proxy**](a-proxyaddresses.md)  
+[**Rdn**](a-name.md)  
+[**Sam-Account-Name**](a-samaccountname.md)  
 [**Sobrenome**](a-sn.md)  
 </dl>
 
@@ -95,18 +95,18 @@ A seguir estão os atributos que dão suporte à ANR (resolução de nomes ambí
 <dl>
 
 [**Nome de exibição**](a-displayname.md)  
-[**Nome fornecido**](a-givenname.md)  
+[**Nome determinado**](a-givenname.md)  
 [**Legacy-Exchange-DN**](a-legacyexchangedn.md)  
-[**ms-DS-adicional-Sam-Account-Name**](a-msds-additionalsamaccountname.md)  
-[**ms-DS-fonética-Company-Name**](a-msds-phoneticcompanyname.md)  
-[**ms-DS-fonético-Department**](a-msds-phoneticdepartment.md)  
+[**ms-DS-Additional-Sam-Account-Name**](a-msds-additionalsamaccountname.md)  
+[**ms-DS-Phonetic-Company-Name**](a-msds-phoneticcompanyname.md)  
+[**ms-DS-Phonetic-Department**](a-msds-phoneticdepartment.md)  
 [**ms-DS-Phonetic-Display-Name**](a-msds-phoneticdisplayname.md)  
 [**ms-DS-Phonetic-First-Name**](a-msds-phoneticfirstname.md)  
 [**ms-DS-Phonetic-Last-Name**](a-msds-phoneticlastname.md)  
-[**Entrega física-nome do escritório**](a-physicaldeliveryofficename.md)  
-[**Endereços de proxy**](a-proxyaddresses.md)  
-[**RDN**](a-name.md)  
-[**SAM-Account-Name**](a-samaccountname.md)  
+[**Physical-Delivery-Office-Name**](a-physicaldeliveryofficename.md)  
+[**Endereços proxy**](a-proxyaddresses.md)  
+[**Rdn**](a-name.md)  
+[**Sam-Account-Name**](a-samaccountname.md)  
 [**Sobrenome**](a-sn.md)  
 </dl>
 
@@ -115,24 +115,24 @@ A seguir estão os atributos que dão suporte à ANR (resolução de nomes ambí
 <dl>
 
 [**Nome de exibição**](a-displayname.md)  
-[**Nome fornecido**](a-givenname.md)  
+[**Nome determinado**](a-givenname.md)  
 [**Legacy-Exchange-DN**](a-legacyexchangedn.md)  
-[**ms-DS-adicional-Sam-Account-Name**](a-msds-additionalsamaccountname.md)  
-[**ms-DS-fonética-Company-Name**](a-msds-phoneticcompanyname.md)  
-[**ms-DS-fonético-Department**](a-msds-phoneticdepartment.md)  
+[**ms-DS-Additional-Sam-Account-Name**](a-msds-additionalsamaccountname.md)  
+[**ms-DS-Phonetic-Company-Name**](a-msds-phoneticcompanyname.md)  
+[**ms-DS-Phonetic-Department**](a-msds-phoneticdepartment.md)  
 [**ms-DS-Phonetic-Display-Name**](a-msds-phoneticdisplayname.md)  
 [**ms-DS-Phonetic-First-Name**](a-msds-phoneticfirstname.md)  
 [**ms-DS-Phonetic-Last-Name**](a-msds-phoneticlastname.md)  
-[**Entrega física-nome do escritório**](a-physicaldeliveryofficename.md)  
-[**Endereços de proxy**](a-proxyaddresses.md)  
-[**RDN**](a-name.md)  
-[**SAM-Account-Name**](a-samaccountname.md)  
+[**Physical-Delivery-Office-Name**](a-physicaldeliveryofficename.md)  
+[**Endereços proxy**](a-proxyaddresses.md)  
+[**Rdn**](a-name.md)  
+[**Sam-Account-Name**](a-samaccountname.md)  
 [**Sobrenome**](a-sn.md)  
 </dl>
 
- 
+ 
 
- 
+ 
 
 
 

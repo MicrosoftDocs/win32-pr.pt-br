@@ -36,7 +36,7 @@ A região de impressão vertical máxima.
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.278               |
 | System-ID-GUID    | ba305f70-47e3-11d0-a1a6-00c04fd930c9 |
-| Sintaxe            | [**Enumeração**](s-enumeration.md) |
+| Syntax            | [**Enumeração**](s-enumeration.md) |
 
 
 
@@ -58,7 +58,7 @@ A região de impressão vertical máxima.
 | ID do link                | \-                                             |
 | MAPI-Id                | \-                                             |
 | System-Only            | Falso                                          |
-| É de valor único       | True                                           |
+| É de valor único       | Verdadeiro                                           |
 | É indexado             | Falso                                          |
 | No catálogo global      | Falso                                          |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                   |
@@ -79,7 +79,7 @@ A região de impressão vertical máxima.
 | ID do link                | \-                                             |
 | MAPI-Id                | \-                                             |
 | System-Only            | Falso                                          |
-| É de valor único       | True                                           |
+| É de valor único       | Verdadeiro                                           |
 | É indexado             | Falso                                          |
 | No catálogo global      | Falso                                          |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                   |
@@ -100,7 +100,7 @@ A região de impressão vertical máxima.
 | ID do link                | \-                                             |
 | MAPI-Id                | \-                                             |
 | System-Only            | Falso                                          |
-| É de valor único       | True                                           |
+| É de valor único       | Verdadeiro                                           |
 | É indexado             | Falso                                          |
 | No catálogo global      | Falso                                          |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                   |
@@ -121,15 +121,15 @@ A região de impressão vertical máxima.
 | ID do link                | \-                                             |
 | MAPI-Id                | \-                                             |
 | System-Only            | Falso                                          |
-| Tem valor único       | True                                           |
+| É de valor único       | Verdadeiro                                           |
 | É indexado             | Falso                                          |
-| No Catálogo Global      | Falso                                          |
-| Descritor de segurança NT | O:BAG:BAD:S:                                   |
+| No catálogo global      | Falso                                          |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |
 | Search-Flags           | 0x00000000                                     |
 | System-Flags           | 0x00000010                                     |
-| Classes usadas em        | [**Fila de Impressão**](c-printqueue.md)<br/> |
+| Classes usadas em        | [**Fila de impressão**](c-printqueue.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ A região de impressão vertical máxima.
 | ID do link                | \-                                             |
 | MAPI-Id                | \-                                             |
 | System-Only            | Falso                                          |
-| Tem valor único       | True                                           |
+| É de valor único       | Verdadeiro                                           |
 | É indexado             | Falso                                          |
-| No Catálogo Global      | Falso                                          |
-| Descritor de segurança NT | O:BAG:BAD:S:                                   |
+| No catálogo global      | Falso                                          |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |
 | Search-Flags           | 0x00000000                                     |
 | System-Flags           | 0x00000010                                     |
-| Classes usadas em        | [**Fila de Impressão**](c-printqueue.md)<br/> |
+| Classes usadas em        | [**Fila de impressão**](c-printqueue.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ A região de impressão vertical máxima.
 | ID do link                | \-                                             |
 | MAPI-Id                | \-                                             |
 | System-Only            | Falso                                          |
-| Tem valor único       | True                                           |
+| É de valor único       | Verdadeiro                                           |
 | É indexado             | Falso                                          |
-| No Catálogo Global      | Falso                                          |
-| Descritor de segurança NT | O:BAG:BAD:S:                                   |
+| No catálogo global      | Falso                                          |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |
 | Search-Flags           | 0x00000000                                     |
 | System-Flags           | 0x00000010                                     |
-| Classes usadas em        | [**Fila de Impressão**](c-printqueue.md)<br/> |
+| Classes usadas em        | [**Fila de impressão**](c-printqueue.md)<br/> |
 
 
 

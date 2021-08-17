@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre: <T> interface IDeepCloneable'
-title: Interface IDeepCloneable (T)
+description: 'Saiba mais sobre: interface IDeepCloneable <T>'
+title: Interface IDeepCloneable(T)
 TOCTitle: IDeepCloneable(T) interface
 ms:assetid: T:Microsoft.Isam.Esent.Interop.IDeepCloneable`1
 ms:mtpsurl: https://msdn.microsoft.com/library/Hh565368(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 5e1aa6ee4ce199438149b65984335ae24930596d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a0cb7089aa7c7e2d6593b6731d2bf6160e94d9526bee8aa75b8aa2d58c36f8d7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104502297"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120093646"
 ---
-# <a name="ideepcloneablet-interface"></a>\<T\>Interface IDeepCloneable
+# <a name="ideepcloneablet-interface"></a>Interface IDeepCloneable \<T\>
 
-Interface para objetos que podem ser clonados. Isso cria uma cópia profunda do objeto. Ele é usado para clonar objetos de meta-dados.
+Interface para objetos que podem ser clonados. Isso cria uma cópia profunda do objeto . Ele é usado para clonar objetos de metadados.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Syntax
 
@@ -60,6 +60,6 @@ public interface IDeepCloneable<T>
 
 #### <a name="reference"></a>Referência
 
-[Membros do IDeepCloneable \<T\>](./ideepcloneable-t-members.md)
+[Membros IDeepCloneable \<T\>](./ideepcloneable-t-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

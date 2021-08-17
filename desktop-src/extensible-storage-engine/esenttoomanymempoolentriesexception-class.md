@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 454abe6d19fedb2f318696b80d166f181e19fb0a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5e134f4b976ee0a2ed7ffe51e71e9a7e2c929180ba1de7e5ac63d44a7793c624
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105760368"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120093776"
 ---
 # <a name="esenttoomanymempoolentriesexception-class"></a>Classe EsentTooManyMempoolEntriesException
 
@@ -38,7 +38,7 @@ Classe base para JET_err. TooManyMempoolEntries exceções.
 ## <a name="inheritance-hierarchy"></a>Hierarquia de herança
 
 [System.Object](/dotnet/api/system.object)  
-  [System. Exception](/dotnet/api/system.exception)  
+  [System.Exception](/dotnet/api/system.exception)  
     [Microsoft. ISAM. ESENT. EsentException](./esentexception-class.md)  
       [Microsoft. ISAM. ESENT. Interop. EsentErrorException](./esenterrorexception-class.md)  
         [Microsoft. ISAM. ESENT. Interop. EsentOperationException](./esentoperationexception-class.md)  

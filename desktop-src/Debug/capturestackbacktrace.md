@@ -1,7 +1,7 @@
 ---
 UID: ''
 title: Função CaptureStackBackTrace
-description: Captura um rastreamento regressivo de pilha percorrendo a pilha.
+description: Captura um rastreamento de voltar da pilha, a caminho da pilha.
 old-location: ''
 ms.assetid: na
 ms.date: 04/10/2019
@@ -34,18 +34,18 @@ api_name:
 targetos: Windows
 req.typenames: ''
 req.redist: ''
-ms.openlocfilehash: 3c9edc9184000d513b82ad4131e3ac05c2ed22d6
-ms.sourcegitcommit: 1f6a1bfc1c4bb2641bc3ba44beb1f2727c94681b
+ms.openlocfilehash: 0b6cad22d7a52908c3aa02bef7e23a57899e421f87bda00660519750de742919
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "105749659"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119279497"
 ---
 # <a name="capturestackbacktrace-function"></a>Função CaptureStackBackTrace
 
 ## <a name="description"></a>Description
 
-Captura um rastreamento regressivo de pilha percorrendo a pilha e registrando as informações de cada quadro.
+Captura um rastreamento de voltar da pilha, a caminho da pilha e registrando as informações de cada quadro.
 
 ```cpp
 USHORT WINAPI CaptureStackBackTrace(
@@ -60,25 +60,25 @@ USHORT WINAPI CaptureStackBackTrace(
 
 ### <a name="framestoskip-in"></a>FramesToSkip [in]
 
-O número de quadros a serem ignorados desde o início do rastreamento de fundo.
+O número de quadros a ignorar desde o início do rastreamento de fundo.
 
 ### <a name="framestocapture-in"></a>FramesToCapture [in]
 
 O número de quadros a serem capturados.
-Você pode capturar até quadros de **MAXUSHORT** .
+Você pode capturar até **quadros MAXUSHORT.**
 
-**Windows Server 2003 e Windows XP:**  A soma dos parâmetros *FramesToSkip* e *FramesToCapture* deve ser menor que 63.
+**Windows Server 2003 e Windows XP:**  A soma dos *parâmetros FramesToSkip* e *FramesToCapture* deve ser menor que 63.
 
-### <a name="backtrace-out"></a>Backtrace [saída]
+### <a name="backtrace-out"></a>BackTrace [out]
 
 Uma matriz de ponteiros capturados do rastreamento de pilha atual.
 
-### <a name="backtracehash-out-optional"></a>BackTraceHash [saída, opcional]
+### <a name="backtracehash-out-optional"></a>BackTraceHash [out, optional]
 
 Um valor que pode ser usado para organizar tabelas de hash.
-Se esse parâmetro for **NULL**, nenhum valor de hash será computado.
+Se esse parâmetro for **NULL,** nenhum valor de hash será computado.
 
-Esse valor é calculado com base nos valores dos ponteiros retornados na matriz de backtrace.
+Esse valor é calculado com base nos valores dos ponteiros retornados na matriz BackTrace.
 Dois rastreamentos de pilha idênticos gerarão valores de hash idênticos.
 
 ## <a name="returns"></a>Retornos
@@ -87,7 +87,7 @@ O número de quadros capturados.
 
 ## <a name="remarks"></a>Comentários
 
-A função **CaptureStackBackTrace** é definida como a função **RtlCaptureStackBackTrace** (a definição é incluída no SDK do Windows a partir do Windows Vista).
-Para obter mais informações, consulte WinBase. h e WinNT. h.
+A **função CaptureStackBackTrace** é definida como a função **RtlCaptureStackBackTrace** (a definição é incluída no SDK do Windows a partir do Windows Vista).
+Para obter mais informações, consulte WinBase.h e WinNT.h.
 
 ## <a name="see-also"></a>Confira também

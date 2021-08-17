@@ -4,12 +4,12 @@ ms.assetid: 8464470f-49db-4559-80b2-02cfc473e30e
 title: OPM_GET_ACTUAL_OUTPUT_FORMAT (Opmapi. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 12eeca9bcf8fde670447afe4268a86ffa31b6a94
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a37f35e9f3d64bd1a72bb6800011978ea1cf2f4c60f523a344594f949beb4f81
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104296533"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119102070"
 ---
 # <a name="opm_get_actual_output_format"></a>formato de saída de OPM de \_ obtenção \_ real \_ \_
 
@@ -39,9 +39,9 @@ Essa consulta é equivalente à consulta DXVA \_ COPPQueryDisplayData usada no p
 
 | Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                      |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                |
-| parâmetro<br/>                   | <dl> <dt>Opmapi. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                      |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                |
+| Cabeçalho<br/>                   | <dl> <dt>Opmapi. h</dt> </dl> |
 
 
 

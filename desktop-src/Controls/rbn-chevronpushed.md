@@ -1,9 +1,9 @@
 ---
-title: RBN_CHEVRONPUSHED de notificação (Commctrl.h)
-description: Enviado por um controle de barra de rebar quando uma divisa é enviada por pushed. Esse código de notificação é enviado na forma de uma mensagem WM \_ NOTIFY.
+title: RBN_CHEVRONPUSHED código de notificação (commctrl. h)
+description: Enviado por um controle rebar quando uma divisa é enviada por push. Esse código de notificação é enviado na forma de uma mensagem de notificação do WM \_ .
 ms.assetid: 58aa2c9d-8ab6-46ee-b32f-5c04fb7afa84
 keywords:
-- RBN_CHEVRONPUSHED código de notificação Windows Controles
+- RBN_CHEVRONPUSHED código de notificação Windows controles
 topic_type:
 - apiref
 api_name:
@@ -21,9 +21,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119985316"
 ---
-# <a name="rbn_chevronpushed-notification-code"></a>Código de \_ notificação RBN CHEVRONPUSHED
+# <a name="rbn_chevronpushed-notification-code"></a>Código de notificação do RBN \_ CHEVRONPUSHED
 
-Enviado por um controle de barra de rebar quando uma divisa é enviada por pushed. Esse código de notificação é enviado na forma de uma mensagem [**WM \_ NOTIFY.**](wm-notify.md)
+Enviado por um controle rebar quando uma divisa é enviada por push. Esse código de notificação é enviado na forma de uma mensagem de [**\_ notificação do WM**](wm-notify.md) .
 
 
 ```C++
@@ -41,7 +41,7 @@ RBN_CHEVRONPUSHED
 *lParam* 
 </dt> <dd>
 
-Ponteiro para a estrutura [**NMREBAR LTDRON da**](/windows/win32/api/commctrl/ns-commctrl-nmrebarchevron) banda.
+Ponteiro para a estrutura [**NMREBARCHEVRON**](/windows/win32/api/commctrl/ns-commctrl-nmrebarchevron) da banda.
 
 </dd> </dl>
 
@@ -51,7 +51,7 @@ O valor de retorno para essa notificação não é usado.
 
 ## <a name="remarks"></a>Comentários
 
-Quando um aplicativo recebe esse código de notificação, ele é responsável por exibir um menu pop-up com itens para cada ferramenta oculta. Use o **membro rc** da estrutura [**NMREBAR LTDRON**](/windows/win32/api/commctrl/ns-commctrl-nmrebarchevron) para encontrar a posição correta para o menu pop-up.
+Quando um aplicativo recebe esse código de notificação, ele é responsável por exibir um menu pop-up com itens para cada ferramenta oculta. Use o membro **RC** da estrutura [**NMREBARCHEVRON**](/windows/win32/api/commctrl/ns-commctrl-nmrebarchevron) para localizar a posição correta para o menu pop-up.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -59,9 +59,9 @@ Quando um aplicativo recebe esse código de notificação, ele é responsável p
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
-| Cabeçalho<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 
 

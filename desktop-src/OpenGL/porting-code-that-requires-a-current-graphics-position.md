@@ -11,12 +11,12 @@ keywords:
 - posições de rasterização
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dd7e7cbbaf0a22385c83569775758e24f70cd210
-ms.sourcegitcommit: b95a94ffffda33f9ebbdd41787c01866444b4cf4
+ms.openlocfilehash: f2354264ed5ad022c0657c95a31007ad33df2882d3c9ab2c44cfafeea99b53d4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "103638934"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119485786"
 ---
 # <a name="port-code-that-needs-a-current-graphics-position"></a>Código de porta que precisa de uma posição de gráfico atual
 
@@ -40,9 +40,9 @@ Este tópico inclui informações sobre o seguinte.
 -   [Portando viewports, Screenmasks e Scrboxes](porting-viewports--screenmasks--and-scrboxes.md)
 -   [Portando planos de recorte](porting-clipping-planes.md)
 
- 
+ 
 
- 
+ 
 
 
 

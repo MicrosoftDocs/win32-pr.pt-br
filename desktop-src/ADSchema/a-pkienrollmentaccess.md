@@ -1,11 +1,11 @@
 ---
-title: PKI-registro-atributo de acesso
-description: O atributo PKI-registro-Access é somente para uso interno.
+title: Atributo PKI-Enrollment-Access
+description: O atributo PKI-Enrollment-Access é apenas para uso interno.
 ms.assetid: 09eab075-71a5-4a38-af34-dafedca9c2c6
 ms.tgt_platform: multiple
 keywords:
-- PKI-registro – atributo de acesso esquema do AD
-- Esquema de AD do atributo pKIEnrollmentAccess
+- Esquema do AD do atributo PKI-Enrollment-Access
+- pKIEnrollmentAccess attribute AD Schema
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f5f974e1072810b902fa42d30f067a67e22236ca
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 7af4331d5ed5069448848ba56cd331251eb055c10767f4b63d0b581da98f35fa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103919309"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119923876"
 ---
-# <a name="pki-enrollment-access-attribute"></a>PKI-registro-atributo de acesso
+# <a name="pki-enrollment-access-attribute"></a>Atributo PKI-Enrollment-Access
 
-O atributo **PKI-registro-Access** é somente para uso interno.
+O **atributo PKI-Enrollment-Access** é apenas para uso interno.
 
 
 
 | Entrada | Valor |
 |-------------------|-----------------------------------------------------|
-| CN                | PKI-registro-acesso                               |
-| LDAP-Display-Name | pKIEnrollmentAccess                                 |
+| CN                | PKI-Enrollment-Access                               |
+| Ldap-Display-Name | pKIEnrollmentAccess                                 |
 | Tamanho              | \-                                                  |
 | Privilégio de atualização  | \-                                                  |
 | Frequência de atualização  | \-                                                  |
 | Attribute-Id      | 1.2.840.113556.1.4.1335                             |
-| System-ID-GUID    | 926be278-56f9-11d2-90d0-00c04fd91ab1                |
-| Syntax            | [**Cadeia de caracteres (NT-SEC-DESC)**](s-string-nt-sec-desc.md) |
+| System-Id-Guid    | 926be278-56f9-11d2-90d0-00c04fd91ab1                |
+| Syntax            | [**String(NT-Sec-Desc)**](s-string-nt-sec-desc.md) |
 
 
 
@@ -58,15 +58,15 @@ O atributo **PKI-registro-Access** é somente para uso interno.
 | ID do link                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| É de valor único       | Falso                                                                   |
+| Tem valor único       | Falso                                                                   |
 | É indexado             | Falso                                                                   |
-| No catálogo global      | True                                                                    |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                            |
+| No Catálogo Global      | Verdadeiro                                                                    |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Classes usadas em        | [**PKI-certificado-modelo**](c-pkicertificatetemplate.md)<br/> |
+| Classes usadas em        | [**PKI-Certificate-Template**](c-pkicertificatetemplate.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ O atributo **PKI-registro-Access** é somente para uso interno.
 | ID do link                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| É de valor único       | Falso                                                                   |
+| Tem valor único       | Falso                                                                   |
 | É indexado             | Falso                                                                   |
-| No catálogo global      | True                                                                    |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                            |
+| No Catálogo Global      | Verdadeiro                                                                    |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Classes usadas em        | [**PKI-certificado-modelo**](c-pkicertificatetemplate.md)<br/> |
+| Classes usadas em        | [**PKI-Certificate-Template**](c-pkicertificatetemplate.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ O atributo **PKI-registro-Access** é somente para uso interno.
 | ID do link                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| É de valor único       | Falso                                                                   |
+| Tem valor único       | Falso                                                                   |
 | É indexado             | Falso                                                                   |
-| No catálogo global      | True                                                                    |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                            |
+| No Catálogo Global      | Verdadeiro                                                                    |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Classes usadas em        | [**PKI-certificado-modelo**](c-pkicertificatetemplate.md)<br/> |
+| Classes usadas em        | [**PKI-Certificate-Template**](c-pkicertificatetemplate.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ O atributo **PKI-registro-Access** é somente para uso interno.
 | ID do link                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| É de valor único       | Falso                                                                   |
+| Tem valor único       | Falso                                                                   |
 | É indexado             | Falso                                                                   |
-| No catálogo global      | True                                                                    |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                            |
+| No Catálogo Global      | Verdadeiro                                                                    |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Classes usadas em        | [**PKI-certificado-modelo**](c-pkicertificatetemplate.md)<br/> |
+| Classes usadas em        | [**PKI-Certificate-Template**](c-pkicertificatetemplate.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ O atributo **PKI-registro-Access** é somente para uso interno.
 | ID do link                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| É de valor único       | Falso                                                                   |
+| Tem valor único       | Falso                                                                   |
 | É indexado             | Falso                                                                   |
-| No catálogo global      | True                                                                    |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                            |
+| No Catálogo Global      | Verdadeiro                                                                    |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Classes usadas em        | [**PKI-certificado-modelo**](c-pkicertificatetemplate.md)<br/> |
+| Classes usadas em        | [**PKI-Certificate-Template**](c-pkicertificatetemplate.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ O atributo **PKI-registro-Access** é somente para uso interno.
 | ID do link                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| É de valor único       | Falso                                                                   |
+| Tem valor único       | Falso                                                                   |
 | É indexado             | Falso                                                                   |
-| No catálogo global      | True                                                                    |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                            |
+| No Catálogo Global      | Verdadeiro                                                                    |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Classes usadas em        | [**PKI-certificado-modelo**](c-pkicertificatetemplate.md)<br/> |
+| Classes usadas em        | [**PKI-Certificate-Template**](c-pkicertificatetemplate.md)<br/> |
 
 
 

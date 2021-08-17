@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 1cf70a24ad2fa7e77f7a5a90f6ec247179464f5c
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: ff602f2f14292407b81dca9e19048e88db645a1b3514b4b279282436046e11c5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103916270"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119276536"
 ---
 # <a name="registers---ps_4_1"></a>Registros-PS \_ 4 \_ 1
 
@@ -28,7 +28,7 @@ Esta seção contém informações de referência para os registros de entrada e
 |---------------|------|--------------------|-----|-----------|------------------|----------|--------------|
 | d\#           |      | 4096 (r \# + x \# \[ n \] ) | R/W | 4         | Não               | Nenhum     | Yes          |
 | x \# \[ n\]      |      | 4096 (r \# + x \# \[ n \] ) | R/W | 4         | Sim              | Nenhum     | Yes          |
-| l\#           |      | 32                 | R   | 4         | Sim              | Nenhum     | Yes          |
+| v\#           |      | 32                 | R   | 4         | Sim              | Nenhum     | Yes          |
 | t\#           |      | 128                | R   | 1         | Não               | Nenhum     | Yes          |
 | s\#           |      | 16                 | R   | 1         | Não               | Nenhum     | Yes          |
 | \# \[ índice CB\] |      | 15                 | R   | 4         | Sim (conteúdo)    | Nenhum     | Yes          |
@@ -36,7 +36,7 @@ Esta seção contém informações de referência para os registros de entrada e
 
 
 
- 
+ 
 
 ## <a name="output-registers"></a>Registros de saída
 
@@ -51,7 +51,7 @@ Esta seção contém informações de referência para os registros de entrada e
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -60,9 +60,9 @@ Esta seção contém informações de referência para os registros de entrada e
 [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

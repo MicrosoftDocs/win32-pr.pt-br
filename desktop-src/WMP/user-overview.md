@@ -3,7 +3,7 @@ title: Visão geral do usuário
 description: Visão geral do usuário
 ms.assetid: a1cf4b47-1410-464d-8542-334d3eb9c200
 keywords:
-- Plug-ins do Windows Media Player, visualizações
+- plug-ins Windows Media Player, visualizações
 - plug-ins, visualizações
 - visualizações, visão geral do usuário
 - visualizações personalizadas, visão geral do usuário
@@ -16,12 +16,12 @@ keywords:
 - predefinições em visualizações, visão geral do usuário
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8f0b8b389f07dc1a39c852f881a9c7d287176b73
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 1d78cb01fe5ee87857ea546fc8c225f9ca16217c642ebbee06025cb037d94fec
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105815508"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119134479"
 ---
 # <a name="user-overview"></a>Visão geral do usuário
 
@@ -33,7 +33,7 @@ Uma visualização típica aparece conforme mostrado na ilustração a seguir.
 
 ## <a name="standard-visualizations"></a>Visualizações padrão
 
-O Windows Media Player inclui várias visualizações, como as seguintes:
+o Windows Media Player inclui várias visualizações, como as seguintes:
 
 -   Ambience
 -   Plenoptic
@@ -50,7 +50,7 @@ Ambos os efeitos fazem parte da mesma visualização, mas têm predefinições d
 
 ## <a name="skin-attributes"></a>Atributos de capa
 
-Se você criar capas para o Windows Media Player, poderá exibir as visualizações padrão em suas capas usando o elemento **Effects** . Para obter mais detalhes sobre como usar visualizações em capas, consulte [capas do Windows Media Player](windows-media-player-skins.md).
+se você criar capas para Windows Media Player, poderá exibir as visualizações padrão em suas capas usando o elemento **effects** . para obter mais detalhes sobre como usar visualizações em capas, consulte [Windows Media Player skins](windows-media-player-skins.md).
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -59,9 +59,9 @@ Se você criar capas para o Windows Media Player, poderá exibir as visualizaç�
 [**Sobre visualizações personalizadas**](about-custom-visualizations.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,11 +1,11 @@
 ---
-title: atributo ms-DFSR-CommonStagingSizeInMb
-description: Tamanho, em megabytes, do diretório de preparo comum.
+title: Atributo ms-DFSR-CommonStagingSizeInMb
+description: Tamanho, em megabytes, do diretório de preparação comum.
 ms.assetid: a7344654-a5c6-40dc-a03a-a1fb6ca06311
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD do atributo ms-DFSR-CommonStagingSizeInMb
-- Esquema de AD do atributo msDFSR-CommonStagingSizeInMb
+- Esquema do AD do atributo ms-DFSR-CommonStagingSizeInMb
+- Esquema do AD do atributo msDFSR-CommonStagingSizeInMb
 topic_type:
 - apiref
 api_name:
@@ -21,22 +21,22 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118685980"
 ---
-# <a name="ms-dfsr-commonstagingsizeinmb-attribute"></a>atributo ms-DFSR-CommonStagingSizeInMb
+# <a name="ms-dfsr-commonstagingsizeinmb-attribute"></a>Atributo ms-DFSR-CommonStagingSizeInMb
 
-Tamanho, em megabytes, do diretório de preparo comum.
+Tamanho, em megabytes, do diretório de preparação comum.
 
 
 
 | Entrada | Valor |
 |-------------------|--------------------------------------|
-| CN                | MS-DFSR-CommonStagingSizeInMb        |
-| LDAP-Display-Name | msDFSR-CommonStagingSizeInMb         |
+| CN                | ms-DFSR-CommonStagingSizeInMb        |
+| Ldap-Display-Name | msDFSR-CommonStagingSizeInMb         |
 | Tamanho              | \-                                   |
 | Privilégio de atualização  | \-                                   |
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.6.13.3.39           |
-| System-ID-GUID    | 135eb00e-4846-458b-8ea2-a37559afd405 |
-| Sintaxe            | [**Intervalo**](s-interval.md)       |
+| System-Id-Guid    | 135eb00e-4846-458b-8ea2-a37559afd405 |
+| Syntax            | [**Intervalo**](s-interval.md)       |
 
 
 
@@ -55,15 +55,15 @@ Tamanho, em megabytes, do diretório de preparo comum.
 | ID do link                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
 | System-Only            | Falso                                                              |
-| É de valor único       | True                                                               |
+| Tem valor único       | Verdadeiro                                                               |
 | É indexado             | Falso                                                              |
-| No catálogo global      | Falso                                                              |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                       |
+| No Catálogo Global      | Falso                                                              |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000000                                                         |
-| Classes usadas em        | [**MS-DFSR-LocalSettings**](c-msdfsr-localsettings.md)<br/> |
+| Classes usadas em        | [**ms-DFSR-LocalSettings**](c-msdfsr-localsettings.md)<br/> |
 
 
 
@@ -76,15 +76,15 @@ Tamanho, em megabytes, do diretório de preparo comum.
 | ID do link                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
 | System-Only            | Falso                                                              |
-| É de valor único       | True                                                               |
+| Tem valor único       | Verdadeiro                                                               |
 | É indexado             | Falso                                                              |
-| No catálogo global      | Falso                                                              |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                       |
+| No Catálogo Global      | Falso                                                              |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000000                                                         |
-| Classes usadas em        | [**MS-DFSR-LocalSettings**](c-msdfsr-localsettings.md)<br/> |
+| Classes usadas em        | [**ms-DFSR-LocalSettings**](c-msdfsr-localsettings.md)<br/> |
 
 
 
@@ -97,15 +97,15 @@ Tamanho, em megabytes, do diretório de preparo comum.
 | ID do link                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
 | System-Only            | Falso                                                              |
-| É de valor único       | True                                                               |
+| Tem valor único       | Verdadeiro                                                               |
 | É indexado             | Falso                                                              |
-| No catálogo global      | Falso                                                              |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                       |
+| No Catálogo Global      | Falso                                                              |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000000                                                         |
-| Classes usadas em        | [**MS-DFSR-LocalSettings**](c-msdfsr-localsettings.md)<br/> |
+| Classes usadas em        | [**ms-DFSR-LocalSettings**](c-msdfsr-localsettings.md)<br/> |
 
 
 
