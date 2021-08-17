@@ -6,12 +6,12 @@ keywords:
 - Recuperando propriedades do item de trabalho Agendador de Tarefas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 74a51c623301a4a3b53369713abe95ea1dafba80
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 3519f3f995e4a5c49a58f0c8be590b34a82381bfd534b61bac6ff8aba05de33c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104366288"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119059974"
 ---
 # <a name="retrieving-work-item-property-examples"></a>Recuperando exemplos de propriedade de item de trabalho
 
@@ -22,7 +22,7 @@ Os exemplos de código listados na parte inferior desta página mostram como rec
 > [!Note]  
 > No exemplo de código a seguir, todas as interfaces são lançadas depois que elas não são mais necessárias.
 
- 
+ 
 
 Observe que, se você estiver recuperando uma propriedade de cadeia de caracteres (como comentário para um item de trabalho), deverá chamar [**CoTaskMemFree**](/windows/win32/api/combaseapi/nf-combaseapi-cotaskmemfree) para liberar a memória alocada para a cadeia de caracteres retornada.
 
@@ -52,7 +52,7 @@ O procedimento a seguir descreve como recuperar uma propriedade de tarefa.
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -61,6 +61,6 @@ O procedimento a seguir descreve como recuperar uma propriedade de tarefa.
 [Exemplos de Agendador de Tarefas 1,0](task-scheduler-1-0-examples.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

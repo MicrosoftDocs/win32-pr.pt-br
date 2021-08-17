@@ -1,19 +1,19 @@
 ---
-description: Uma barra de ferramentas de área de trabalho do aplicativo (também chamada de AppBar) é uma janela semelhante à barra de tarefas do Windows.
+description: uma barra de ferramentas de área de trabalho do aplicativo (também chamada de appbar) é uma janela semelhante à barra de tarefas Windows.
 ms.assetid: d9f63cb1-e2cc-4a3b-a3b8-de028e0f0123
 title: Usando as barras de ferramentas da área de trabalho do aplicativo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 140ef94c1daeb571cd0d766dfbd4dc28b7991efd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d3c8604136040f5f3a1b4c1e9fcecb3b0c26b087724f477e592857ca4046d3a2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104090031"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119351446"
 ---
 # <a name="using-application-desktop-toolbars"></a>Usando as barras de ferramentas da área de trabalho do aplicativo
 
-Uma *barra de ferramentas de área de trabalho do aplicativo* (também chamada de AppBar) é uma janela semelhante à barra de tarefas do Windows. Ele é ancorado em uma borda da tela e normalmente contém botões que dão ao usuário acesso rápido a outros aplicativos e janelas. O sistema impede que outros aplicativos usem a área de trabalho usada por um AppBar. Qualquer número de appbars pode existir na área de trabalho em um determinado momento.
+uma *barra de ferramentas de área de trabalho do aplicativo* (também chamada de appbar) é uma janela semelhante à barra de tarefas Windows. Ele é ancorado em uma borda da tela e normalmente contém botões que dão ao usuário acesso rápido a outros aplicativos e janelas. O sistema impede que outros aplicativos usem a área de trabalho usada por um AppBar. Qualquer número de appbars pode existir na área de trabalho em um determinado momento.
 
 Este tópico inclui as seções a seguir.
 
@@ -29,7 +29,7 @@ Este tópico inclui as seções a seguir.
 
 ## <a name="about-application-desktop-toolbars"></a>Sobre as barras de ferramentas da área de trabalho do aplicativo
 
-O Windows fornece uma API que permite que você aproveite os serviços AppBar fornecidos pelo sistema. Os serviços ajudam a garantir que os appbars definidos pelo aplicativo operem suavemente entre si e com a barra de tarefas. O sistema mantém informações sobre cada AppBar e envia as mensagens appbars para notificá-las sobre eventos que podem afetar seu tamanho, posição e aparência.
+Windows fornece uma API que permite aproveitar os serviços appbar fornecidos pelo sistema. Os serviços ajudam a garantir que os appbars definidos pelo aplicativo operem suavemente entre si e com a barra de tarefas. O sistema mantém informações sobre cada AppBar e envia as mensagens appbars para notificá-las sobre eventos que podem afetar seu tamanho, posição e aparência.
 
 ### <a name="sending-messages"></a>enviando mensagens
 
@@ -142,11 +142,11 @@ BOOL RegisterAccessBar(HWND hwndAccessBar, BOOL fRegister)
 
 ## <a name="setting-the-appbar-size-and-position"></a>Definindo o tamanho e a posição de AppBar
 
-Um aplicativo deve definir o tamanho e a posição de um AppBar depois de registrar o AppBar, depois que o usuário move ou dimensiona o AppBar e sempre que o AppBar recebe a mensagem de notificação do [**ABN \_ POSCHANGED**](abn-poschanged.md) . Antes de definir o tamanho e a posição do AppBar, o aplicativo consulta o sistema em busca de um retângulo delimitador aprovado enviando a mensagem [**\_ QUERYPOS do ABM**](abm-querypos.md) . O sistema retorna um retângulo delimitador que não interfira na barra de tarefas ou em qualquer outro AppBar. O sistema ajusta o retângulo puramente por subtração de retângulo; Não faz nenhum esforço para preservar o tamanho inicial do retângulo. Por esse motivo, o AppBar deve reajustar o retângulo, conforme necessário, depois de enviar **ABM \_ QUERYPOS**.
+Um aplicativo deve definir o tamanho e a posição de um AppBar depois de registrar o AppBar, depois que o usuário move ou dimensiona o AppBar e sempre que o AppBar recebe a mensagem de notificação do [**ABN \_ POSCHANGED**](abn-poschanged.md) . Antes de definir o tamanho e a posição do AppBar, o aplicativo consulta o sistema em busca de um retângulo delimitador aprovado enviando a mensagem [**\_ QUERYPOS do ABM**](abm-querypos.md) . O sistema retorna um retângulo delimitador que não interfira na barra de tarefas ou em qualquer outro AppBar. O sistema ajusta o retângulo puramente por subtração de retângulo; ele não faz nenhum esforço para preservar o tamanho inicial do retângulo. Por esse motivo, a barra de aplicativos deve reajustar o retângulo, conforme necessário, depois de enviar **ABM \_ QUERYPOS.**
 
-Em seguida, o aplicativo passa o retângulo delimitador de volta para o sistema usando a mensagem [**ABM \_ SETPOS**](abm-setpos.md) . Em seguida, ele chama a função [**MoveWindow**](/windows/win32/api/winuser/nf-winuser-movewindow) para mover a AppBar para a posição.
+Em seguida, o aplicativo passa o retângulo delimitativo de volta para o sistema usando a [**mensagem \_ SETPOS do ABM.**](abm-setpos.md) Em seguida, ele chama [**a função MoveWindow**](/windows/win32/api/winuser/nf-winuser-movewindow) para mover a barra de aplicativos para a posição.
 
-O exemplo a seguir mostra como definir o tamanho e a posição de um AppBar.
+O exemplo a seguir mostra como definir o tamanho e a posição de uma barra de aplicativos.
 
 
 ```C++
@@ -219,9 +219,9 @@ void PASCAL AppBarQuerySetPos(UINT uEdge, LPRECT lprc, PAPPBARDATA pabd)
 
 
 
-## <a name="processing-appbar-notification-messages"></a>Processando mensagens de notificação AppBar
+## <a name="processing-appbar-notification-messages"></a>Processamento de mensagens de notificação da Barra de Aplicativos
 
-Um AppBar recebe uma mensagem de notificação quando o estado da barra de tarefas é alterado, quando um aplicativo de tela inteira é iniciado (ou o último é fechado) ou quando ocorre um evento que pode afetar o tamanho e a posição do AppBar. O exemplo a seguir mostra como processar as várias mensagens de notificação.
+Uma barra de aplicativos recebe uma mensagem de notificação quando o estado da barra de tarefas muda, quando um aplicativo de tela inteira é iniciado (ou o último é fechado) ou quando ocorre um evento que pode afetar o tamanho e a posição da barra de aplicativos. O exemplo a seguir mostra como processar as várias mensagens de notificação.
 
 
 ```C++
@@ -288,7 +288,7 @@ void AppBarCallback(HWND hwndAccessBar, UINT uNotifyMsg,
 
 
 
-A função a seguir ajusta o retângulo delimitador de um AppBar e, em seguida, chama a função AppBarQuerySetPos definida pelo aplicativo (incluída na seção anterior) para definir o tamanho e a posição da barra de acordo.
+A função a seguir ajusta o retângulo delimitado de uma barra de aplicativos e, em seguida, chama a função AppBarQuerySetPos definida pelo aplicativo (incluída na seção anterior) para definir o tamanho e a posição da barra de acordo.
 
 
 ```C++

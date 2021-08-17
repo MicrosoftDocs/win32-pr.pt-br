@@ -1,19 +1,19 @@
 ---
-description: Especifica como criar um mixer personalizado para o processador de vídeo avançado (EVR).
+description: Especifica como criar um mixer personalizado para o renderização de vídeo aprimorado (EVR).
 ms.assetid: 00e65718-885f-4e1f-9b06-66c7f5786851
-title: Atributo MF_ACTIVATE_CUSTOM_VIDEO_MIXER_FLAGS (Mfidl. h)
+title: MF_ACTIVATE_CUSTOM_VIDEO_MIXER_FLAGS atributo (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6b17a0063b7ef4b6a1cbb5993ea2fb7af2a4a678
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bd536328bf454a70b35376aca3b7c6a0cea9ec7e0e2408a05cd6d0e8da0854ca
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103662611"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119957086"
 ---
-# <a name="mf_activate_custom_video_mixer_flags-attribute"></a>MF \_ Ativar \_ \_ atributo de \_ sinalizadores de mixer de vídeo personalizado \_
+# <a name="mf_activate_custom_video_mixer_flags-attribute"></a>Atributo MF \_ ACTIVATE CUSTOM VIDEO MIXER \_ \_ \_ \_ FLAGS
 
-Especifica como criar um mixer personalizado para o processador de vídeo avançado (EVR).
+Especifica como criar um mixer personalizado para o renderização de vídeo aprimorado (EVR).
 
 ## <a name="data-type"></a>Tipo de dados
 
@@ -21,21 +21,21 @@ Especifica como criar um mixer personalizado para o processador de vídeo avanç
 
 ## <a name="remarks"></a>Comentários
 
-Você pode definir esse atributo no ponteiro [**IMFActivate**](/windows/desktop/api/mfobjects/nn-mfobjects-imfactivate) obtido da função [**MFCreateVideoRendererActivate**](/windows/desktop/api/mfidl/nf-mfidl-mfcreatevideorendereractivate) . O valor desse atributo é **uma operação or** dos seguintes valores.
+Você pode definir esse atributo no ponteiro [**IMFActivate**](/windows/desktop/api/mfobjects/nn-mfobjects-imfactivate) obtido da [**função MFCreateVideoRendererActivate.**](/windows/desktop/api/mfidl/nf-mfidl-mfcreatevideorendereractivate) O valor desse atributo é um **OR** bit a bit dos valores a seguir.
 
 
 
 | Valor                                      | Descrição                                                                                                                                                                                                                                                                                                              |
 |--------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **MF \_ Ativar \_ \_ mixer personalizado \_ ALLOWFAIL** | Se o método [**IMFActivate:: activateobject**](/windows/desktop/api/mfobjects/nf-mfobjects-imfactivate-activateobject) falhar ao criar o mixer personalizado do aplicativo, ele usará o mixer EVR padrão em vez disso. Por padrão, se o objeto [**IMFActivate**](/windows/desktop/api/mfobjects/nn-mfobjects-imfactivate) falhar ao tentar criar o mixer personalizado, o método **activateobject** falhará. |
+| **MF \_ ACTIVATE \_ CUSTOM \_ MIXER \_ ALLOWFAIL** | Se o [**método IMFActivate::ActivateObject**](/windows/desktop/api/mfobjects/nf-mfobjects-imfactivate-activateobject) não conseguir criar o mixer personalizado do aplicativo, ele usará o mixer EVR padrão em vez disso. Por padrão, se o [**objeto IMFActivate**](/windows/desktop/api/mfobjects/nn-mfobjects-imfactivate) falhar ao tentar criar o mixer personalizado, o **método ActivateObject** falhará. |
 
 
 
  
 
-Os aplicativos podem usar o atributo de [**\_ \_ \_ CLSID ativar \_ mixer \_ de vídeo personalizado MF**](mf-activate-custom-video-mixer-clsid-attribute.md) para especificar um mixer personalizado para o EVR.
+Os aplicativos podem usar o [**atributo \_ MF ACTIVATE \_ CUSTOM VIDEO \_ MIXER \_ \_ CLSID**](mf-activate-custom-video-mixer-clsid-attribute.md) para especificar um mixer personalizado para o EVR.
 
-A constante de GUID para esse atributo é exportada de mfuuid. lib.
+A constante GUID para esse atributo é exportada de mfuuid.lib.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -43,9 +43,9 @@ A constante de GUID para esse atributo é exportada de mfuuid. lib.
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                     |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                               |
-| parâmetro<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                     |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                               |
+| Cabeçalho<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
@@ -53,16 +53,16 @@ A constante de GUID para esse atributo é exportada de mfuuid. lib.
 
 <dl> <dt>
 
-[Lista alfabética de atributos de Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
-[Atributos avançados de processador de vídeo](enhanced-video-renderer-attributes.md)
+[Atributos de renderização de vídeo aprimorados](enhanced-video-renderer-attributes.md)
 </dt> <dt>
 
-[**IMFAttributes:: GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32)
+[**IMFAttributes::GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32)
 </dt> <dt>
 
-[**IMFAttributes:: setuint32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)
+[**IMFAttributes::SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)
 </dt> <dt>
 
 [Objetos de ativação](activation-objects.md)

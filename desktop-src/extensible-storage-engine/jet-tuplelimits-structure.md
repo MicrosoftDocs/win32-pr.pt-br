@@ -15,23 +15,23 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 491f9248db607836b34f1fc0fcacc504b3c1d3f3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c4e2c118b7b42dce82ec0a95c53853ec501a7152c08ad088bbddde251edadf3e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103922844"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119472686"
 ---
 # <a name="jet_tuplelimits-structure"></a>Estrutura de JET_TUPLELIMITS
 
 
-_**Aplica-se a:** Windows | Windows Server_
+_**Aplica-se a:** Windows | Windows Servidor_
 
 ## <a name="jet_tuplelimits-structure"></a>Estrutura de JET_TUPLELIMITS
 
 A estrutura de **JET_TUPLELIMITS** permite a personalização das características de índice de tupla em uma base por índice, em vez de uma base por instância, usando [JetSetSystemParameter](./jetsetsystemparameter-function.md).
 
-**Windows Server 2003:** A estrutura de **JET_TUPLELIMITS** é introduzida no Windows Server 2003.
+**Windows Server 2003:** a estrutura de **JET_TUPLELIMITS** é introduzida no Windows Server 2003.
 
 ```cpp
     typedef struct tagJET_TUPLELIMITS {
@@ -61,13 +61,13 @@ O comprimento máximo de uma cadeia de caracteres a ser indexada. Por exemplo, s
 
 Isso permite que o stride seja configurado em uma base por índice.
 
-**Windows Vista:** O membro **cchIncrement** é introduzido no Windows Vista. Antes do Windows Vista, o valor para mudar a janela (o "Stride") era sempre 1, como é mostrado no exemplo na seção comentários.
+**Windows Vista:** o membro **cchIncrement** é introduzido no Windows Vista. antes do Windows Vista, o valor para deslocar a janela (o "stride") era sempre 1, como é mostrado no exemplo na seção comentários.
 
 **ichStart**
 
 O deslocamento no valor para começar a recuperar tuplas do valor.
 
-**Windows Vista:** O membro **ichStart** é introduzido no Windows Vista.
+**Windows Vista:** o membro **ichStart** é introduzido no Windows Vista.
 
 ### <a name="remarks"></a>Comentários
 
@@ -93,7 +93,7 @@ Ain
 
 Observe que "IN" ocorre duas vezes e que a última entrada ("N \! ") é menor que 3 (**chLengthMax**). Observe também que o algoritmo de divisão não está ciente de espaços ou palavras e trata todos os caracteres de forma idêntica.
 
-**Windows XP:** O Windows XP dá suporte a índices de tupla, mas não tem **JET_TUPLELIMITS**. O mecanismo de banco de dados usará os valores padrão (**chLengthMin**= 3, **chLengthMax**= 10, **chToIndexMax**= 32767). Ainda é possível alterar esses valores, mas eles são definidos em uma base por instância usando [JetSetSystemParameter](./jetsetsystemparameter-function.md) com [JET_paramIndexTuplesLengthMin](./index-parameters.md), [JET_paramIndexTuplesLengthMax](./index-parameters.md)e [JET_paramIndexTuplesToIndexMax](./index-parameters.md).
+**Windows xp:** o Windows xp oferece suporte a índices de tupla, mas não tem **JET_TUPLELIMITS**. O mecanismo de banco de dados usará os valores padrão (**chLengthMin**= 3, **chLengthMax**= 10, **chToIndexMax**= 32767). Ainda é possível alterar esses valores, mas eles são definidos em uma base por instância usando [JetSetSystemParameter](./jetsetsystemparameter-function.md) com [JET_paramIndexTuplesLengthMin](./index-parameters.md), [JET_paramIndexTuplesLengthMax](./index-parameters.md)e [JET_paramIndexTuplesToIndexMax](./index-parameters.md).
 
 ### <a name="requirements"></a>Requisitos
 
@@ -105,11 +105,11 @@ Observe que "IN" ocorre duas vezes e que a última entrada ("N \! ") é menor qu
 <tbody>
 <tr class="odd">
 <td><p><strong>Cliente</strong></p></td>
-<td><p>Requer o Windows Vista.</p></td>
+<td><p>requer o Windows Vista.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Servidor</strong></p></td>
-<td><p>Requer o Windows Server 2008, o Windows Server 2003.</p></td>
+<td><p>requer o Windows server 2008, Windows server 2003.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Cabeçalho</strong></p></td>

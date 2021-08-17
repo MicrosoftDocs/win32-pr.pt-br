@@ -6,12 +6,12 @@ keywords:
 - efeito de transferência linear
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cfedbb79f057ee871ce23cc086034afc3e6cdda0
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 7dcb2bb688d1e8ebf4b1b1ebfdd531d900755b46840bada2bade49d957ed0f6c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103645261"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119385286"
 ---
 # <a name="linear-transfer-effect"></a>Efeito de transferência linear
 
@@ -31,7 +31,7 @@ O CLSID para esse efeito é CLSID \_ D2D1LinearTransfer.
 | Antes                                                          |
 |-----------------------------------------------------------------|
 | ![a imagem antes do efeito.](images/default-before.jpg)      |
-| After (após)                                                           |
+| Depois                                                           |
 | ![a imagem após a transformação.](images/13-lineartransfer.png) |
 
 
@@ -99,10 +99,10 @@ Esse efeito funciona em imagens alfa retas e semimultiplicadas. O efeito gera bi
 
 | Requisito | Valor |
 |--------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte | Windows 8 e atualização de plataforma para aplicativos de área de trabalho do Windows 7 \[ \| aplicativos da Windows Store\] |
-| Servidor mínimo com suporte | Windows 8 e atualização de plataforma para aplicativos de área de trabalho do Windows 7 \[ \| aplicativos da Windows Store\] |
-| parâmetro                   | d2d1effects. h                                                                      |
-| Biblioteca                  | d2d1. lib, dxguid. lib                                                               |
+| Cliente mínimo com suporte | Windows 8 e Atualização de plataforma para Windows 7 aplicativos da área de trabalho \[ \| Windows Store\] |
+| Servidor mínimo com suporte | Windows 8 e Atualização de plataforma para Windows 7 aplicativos da área de trabalho \[ \| Windows Store\] |
+| Cabeçalho                   | d2d1effects.h                                                                      |
+| Biblioteca                  | d2d1.lib, dxguid.lib                                                               |
 
 
 

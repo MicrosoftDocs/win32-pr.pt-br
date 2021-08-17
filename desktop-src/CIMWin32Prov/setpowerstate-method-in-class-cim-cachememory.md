@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 8617014750dfeaa8f597e5877d2ce0f553de7841
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 99f89317636a94447a43630622a419e407ae7ecba44a81479da1f0c03e2b81d2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108086244"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119439666"
 ---
 # <a name="setpowerstate-method-of-the-cim_cachememory-class"></a>Método SetPowerState da classe CIM \_ CacheMemory
 
@@ -126,7 +126,7 @@ Esta documentação é derivada das descrições da classe CIM publicadas pela D
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

@@ -1,7 +1,7 @@
 ---
 description: Uma estrutura que descreve um único valor de cor.
 ms.assetid: 710f3ef1-bbc3-416d-9faf-aa4a716007c2
-title: XPS_COLOR (Xpsobjectmodel. h)
+title: XPS_COLOR (Xpsobjectmodel.h)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: f771bcbb516352b2ef689060c11003808d434be8059d16af78fe8db646c97000
@@ -11,7 +11,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118971145"
 ---
-# <a name="xps_color"></a>cor do XPS \_
+# <a name="xps_color"></a>XPS \_ COLOR
 
 Uma estrutura que descreve um único valor de cor.
 
@@ -36,13 +36,13 @@ typedef union switch (XPS_COLOR_TYPE colorType) value
 
 ## <a name="remarks"></a>Comentários
 
-O formato da estrutura depende do valor de *ColorType*.
+O formato da estrutura depende do valor de *colorType*.
 
 <dl>
 
-[**\_tipo de cor XPS \_ \_ sRGB**](/previous-versions/windows/desktop/dd372944(v=vs.85))  
-[**\_tipo de cor XPS \_ \_ SCRGB**](/previous-versions/windows/desktop/dd372943(v=vs.85))  
-[**\_contexto de \_ tipo de cor XPS \_**](/windows/win32/api/xpsobjectmodel/ns-xpsobjectmodel-xps_color)  
+[**TIPO DE COR XPS \_ \_ \_ SRGB**](/previous-versions/windows/desktop/dd372944(v=vs.85))  
+[**TIPO DE \_ COR \_ \_ XPS SCRGB**](/previous-versions/windows/desktop/dd372943(v=vs.85))  
+[**CONTEXTO DE TIPO \_ \_ DE COR XPS \_**](/windows/win32/api/xpsobjectmodel/ns-xpsobjectmodel-xps_color)  
 </dl>
 
 ## <a name="requirements"></a>Requisitos
@@ -51,10 +51,10 @@ O formato da estrutura depende do valor de *ColorType*.
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 7, Windows vista com SP2 e atualização de plataforma para aplicativos UWP do Windows Vista \[ desktop apps \|\]<br/>                          |
-| Servidor mínimo com suporte<br/> | Windows server 2008 R2, Windows Server 2008 com SP2 e atualização de plataforma para aplicativos do Windows Server 2008 \[ desktop aplicativos \| UWP\]<br/> |
-| Cabeçalho<br/>                   | <dl> <dt>Xpsobjectmodel. h</dt> </dl>                                              |
-| INSERI<br/>                      | <dl> <dt>XpsObjectModel. idl</dt> </dl>                                            |
+| Cliente mínimo com suporte<br/> | Windows 7, Windows Vista com SP2 e Atualização de Plataforma para Windows aplicativos \[ UWP da área de trabalho do Vista \|\]<br/>                          |
+| Servidor mínimo com suporte<br/> | Windows Server 2008 R2, Windows Server 2008 com SP2 e Atualização de Plataforma para aplicativos \[ UWP do Windows Server 2008 \|\]<br/> |
+| Cabeçalho<br/>                   | <dl> <dt>Xpsobjectmodel.h</dt> </dl>                                              |
+| Idl<br/>                      | <dl> <dt>XpsObjectModel.idl</dt> </dl>                                            |
 
 
 

@@ -3,7 +3,7 @@ title: Mensagem de IPM_SETRANGE (commctrl. h)
 description: Define o intervalo válido para o campo especificado no controle de endereço IP.
 ms.assetid: 03068c5d-822f-459d-8f79-e7f0430a27bf
 keywords:
-- Controles de IPM_SETRANGE de mensagens do Windows
+- controles de Windows de mensagem de IPM_SETRANGE
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e70df7b2b8f76f514d9a0cc6101aba2ee7cf4ec6
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d599619fa9a065a27a9721b890f6d52c496bf646504009e1950b7ca1279f8a2c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104009616"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119434466"
 ---
 # <a name="ipm_setrange-message"></a>\_Mensagem IPM SETRANGE
 
@@ -43,7 +43,7 @@ Um valor de **palavra** que contém o limite inferior do intervalo no byte de or
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retornará zero se for bem-sucedido ou nenhum outro.
 
@@ -57,9 +57,9 @@ Se o usuário inserir um valor no campo que está fora desse intervalo, o contro
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 
 

@@ -1,9 +1,9 @@
 ---
-title: Função InterlockedCompareStore (referência de HLSL)
-description: Compara atomicamente o destino com o valor de comparação. Se forem idênticos, o destino será substituído pelo valor de entrada.
+title: Função InterlockedCompareStore (referência HLSL)
+description: Compara atomicamente o destino com o valor de comparação. Se eles são idênticos, o destino é substituído pelo valor de entrada.
 ms.assetid: eaf7e669-5240-40c9-9840-f4e7916e51b4
 keywords:
-- HLSL da função InterlockedCompareStore
+- Função InterlockedCompareStore HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,24 +13,24 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: df3ffb51bbe8fe8150d19a390e62640e64ded5c9
-ms.sourcegitcommit: 12e9b14501d51641b690ee0cf764e2b91eb9a140
+ms.openlocfilehash: 7dbf13629b9c3b9b38cc3bd72a8a992ab40bd09c0333c155a7c109f71466f23b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "104365458"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119119240"
 ---
-# <a name="interlockedcomparestore-function-hlsl-reference"></a>Função InterlockedCompareStore (referência de HLSL)
+# <a name="interlockedcomparestore-function-hlsl-reference"></a>Função InterlockedCompareStore (referência HLSL)
 
-Compara atomicamente o destino com o valor de comparação. Se forem idênticos, o destino será substituído pelo valor de entrada.
+Compara atomicamente o destino com o valor de comparação. Se eles são idênticos, o destino é substituído pelo valor de entrada.
 
 ## <a name="syntax"></a>Sintaxe
 
 ``` syntax
 void InterlockedCompareStore(
-  in R dest,
-  in T compare_value,
-  in T value
+  in R dest,
+  in T compare_value,
+  in T value
 );
 ```
 
@@ -38,7 +38,7 @@ void InterlockedCompareStore(
 
 <dl> <dt>
 
-*dest* \[ no\]
+*dest* \[ Em\]
 </dt> <dd>
 
 Tipo: **R**
@@ -56,7 +56,7 @@ O valor de comparação.
 
 </dd> <dt>
 
-*valor* \[ do no\]
+*value* \[ Em\]
 </dt> <dd>
 
 Tipo: **T**
@@ -71,33 +71,33 @@ Essa função não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-Compara atomicamente o valor referenciado pelo *dest* com o *\_ valor de comparação* e armazena o *valor* no local referenciado pelo *dest* se os valores correspondem. Esta operação só pode ser executada em recursos tipados **int** ou **uint** e variáveis de memória compartilhada. Há dois usos possíveis para essa função. A primeira é quando R é um tipo de variável de memória compartilhada. Nesse caso, a função executa a operação no registro de memória compartilhada referenciado pelo *dest*. O segundo cenário é quando R é um tipo de variável de recurso. Nesse cenário, a função executa a operação no local do recurso referenciado pelo *dest*.
+Compara atomicamente o valor referenciado por *dest*  com *o \_* valor de comparação e armazena o valor no local referenciado *por dest* se os valores corresponderem. Essa operação só pode ser executada em **recursos digitados int** ou **uint** e variáveis de memória compartilhada. Há dois usos possíveis para essa função. A primeira é quando R é um tipo de variável de memória compartilhada. Nesse caso, a função executa a operação no registro de memória compartilhada referenciado por *dest*. O segundo cenário é quando R é um tipo de variável de recurso. Nesse cenário, a função executa a operação no local do recurso referenciado *por dest*.
 
-### <a name="minimum-shader-model"></a>Modelo de sombreamento mínimo
+### <a name="minimum-shader-model"></a>Modelo de sombreador mínimo
 
-Essa função tem suporte nos seguintes modelos de sombreador.
+Essa função tem suporte nos modelos de sombreador a seguir.
 
 
 
 | Modelo de Sombreador                                                                | Com suporte |
 |-----------------------------------------------------------------------------|-----------|
-| [Modelo](d3d11-graphics-reference-sm5.md) de sombreador 5 e modelos de sombreador mais altos | sim       |
+| [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md) e modelos de sombreador superior | sim       |
 
 
 
- 
+ 
 
 Essa função tem suporte nos seguintes tipos de sombreadores:
 
 
 
-| Vértice | Envoltória | Domínio | Geometria | 16x16 | Computação |
+| Vértice | Casco | Domínio | Geometry | Pixel | Computação |
 |--------|------|--------|----------|-------|---------|
 |  x     | x    |  x     |  x       | x     | x       |
 
 
 
- 
+ 
 
 ## <a name="see-also"></a>Confira também
 
@@ -109,9 +109,9 @@ Essa função tem suporte nos seguintes tipos de sombreadores:
 [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

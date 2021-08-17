@@ -1,9 +1,9 @@
 ---
 title: WM_POINTERLEAVE mensagem
-description: Enviado para uma janela quando um ponteiro deixa o intervalo de detecção sobre a janela (focalizar) ou quando um ponteiro se move para fora dos limites da janela.
+description: Enviado para uma janela quando um ponteiro deixa o intervalo de detecção sobre a janela (passar o mouse) ou quando um ponteiro se move para fora dos limites da janela.
 ms.assetid: 3bdc37da-227c-4be1-bf0b-99704b8c1322
 keywords:
-- Mensagens de entrada e notificações de WM_POINTERLEAVE mensagem
+- WM_POINTERLEAVE mensagens de entrada e notificações
 topic_type:
 - apiref
 api_name:
@@ -14,21 +14,21 @@ api_type:
 - HeaderDef
 ms.topic: article
 ms.date: 02/03/2020
-ms.openlocfilehash: 2ee58fd74f266d067f6211e156d984a3b3d1c477
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 519e354aa43cf31d0a2477aec2f50a1405b7c4a254f2641497229c14f55d4679
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105793754"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119964226"
 ---
 # <a name="wm_pointerleave-message"></a>WM_POINTERLEAVE mensagem
 
-Enviado para uma janela quando um ponteiro deixa o intervalo de detecção sobre a janela (focalizar) ou quando um ponteiro se move para fora dos limites da janela.
+Enviado para uma janela quando um ponteiro deixa o intervalo de detecção sobre a janela (passar o mouse) ou quando um ponteiro se move para fora dos limites da janela.
 
-Uma janela recebe essa mensagem por meio de sua função [**WindowProc**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85)) .
+Uma janela recebe essa mensagem por meio de [**sua função WindowProc.**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85))
 
-> \[! Fundamental\]  
-> Os aplicativos da área de trabalho devem ter reconhecimento de DPI. Se seu aplicativo não tiver reconhecimento de DPI, as coordenadas de tela contidas nas mensagens de ponteiro e estruturas relacionadas poderão parecer imprecisas devido à virtualização de DPI. A virtualização de DPI fornece suporte de dimensionamento automático para aplicativos que não têm reconhecimento de DPI e está ativo por padrão (os usuários podem desativá-lo). Para obter mais informações, consulte [Writing High-DPI Win32 Applications](/previous-versions//dd464660(v=vs.85)).
+> \[! Importante\]  
+> Os aplicativos da área de trabalho devem estar cientes de DPI. Se o aplicativo não estiver ciente de DPI, as coordenadas de tela contidas em mensagens de ponteiro e estruturas relacionadas poderão aparecer imprecisas devido à virtualização de DPI. A virtualização de DPI oferece suporte de dimensionamento automático para aplicativos que não têm conhecimento de DPI e estão ativos por padrão (os usuários podem desativar). Para obter mais informações, consulte [Escrevendo aplicativos Win32 de alto DPI.](/previous-versions//dd464660(v=vs.85))
 
  
 
@@ -48,9 +48,9 @@ Uma janela recebe essa mensagem por meio de sua função [**WindowProc**](/previ
 
 Contém o identificador de ponteiro e informações adicionais. Use as macros a seguir para recuperar essas informações.
 
--   [**GET_POINTERID_WPARAM**](/previous-versions/windows/desktop/api)(wParam): o identificador do ponteiro.
--   [**IS_POINTER_INRANGE_WPARAM**](/previous-versions/windows/desktop/api)(wParam): indica se esta mensagem foi gerada por um ponteiro que não tem o intervalo de detecção restante. Esse sinalizador não é definido quando o ponteiro sai do intervalo de detecção da janela.
--   [**IS_POINTER_INCONTACT_WPARAM**](/previous-versions/windows/desktop/api)(wParam): um sinalizador que indica se esta mensagem foi gerada por um ponteiro que está em contato. Este sinalizador não está definido para um ponteiro no intervalo de detecção (focalizar).
+-   [**GET_POINTERID_WPARAM**](/previous-versions/windows/desktop/api)(wParam): o identificador de ponteiro.
+-   [**IS_POINTER_INRANGE_WPARAM**](/previous-versions/windows/desktop/api)(wParam): indica se essa mensagem foi gerada por um ponteiro que não tem o intervalo de detecção à esquerda. Esse sinalizador não é definido quando o ponteiro sai do intervalo de detecção da janela.
+-   [**IS_POINTER_INCONTACT_WPARAM**](/previous-versions/windows/desktop/api)(wParam): um sinalizador que indica se essa mensagem foi gerada por um ponteiro que está em contato. Esse sinalizador não está definido para um ponteiro no intervalo de detecção (foco).
 
 </dd> <dt>
 
@@ -66,42 +66,42 @@ Contém o local do ponto do ponteiro.
 
 Use as macros a seguir para recuperar as coordenadas de tela física do ponto.
 
--   [**GET_X_LPARAM**](/windows/win32/api/windowsx/nf-windowsx-get_x_lparam)(lParam): a coordenada X (ponto horizontal).
--   [**GET_Y_LPARAM**](/windows/win32/api/windowsx/nf-windowsx-get_y_lparam)(lParam): a coordenada Y (ponto vertical).
+-   [**GET_X_LPARAM**](/windows/win32/api/windowsx/nf-windowsx-get_x_lparam)(lParam): a coordenada x (ponto horizontal).
+-   [**GET_Y_LPARAM**](/windows/win32/api/windowsx/nf-windowsx-get_y_lparam)(lParam): a coordenada y (ponto vertical).
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Se um aplicativo processar essa mensagem, ele deverá retornar zero.
+Se um aplicativo processa essa mensagem, ele deve retornar zero.
 
 Se o aplicativo não processar essa mensagem, ele deverá chamar [**DefWindowProc**](/windows/win32/api/winuser/nf-winuser-defwindowproca).
 
 ## <a name="remarks"></a>Comentários
 
-A notificação de **WM_POINTERLEAVE** pode ser usada por uma janela para alterar o modo ou parar os comentários para o usuário enquanto o ponteiro está sobre a superfície da janela.
+A **WM_POINTERLEAVE** pode ser usada por uma janela para alterar o modo ou parar comentários para o usuário enquanto o ponteiro está sobre a superfície da janela.
 
-Essa notificação é enviada somente para a janela que está recebendo entrada para o ponteiro. A tabela a seguir lista algumas das situações em que essa notificação é enviada.
+Essa notificação só é enviada para a janela que está recebendo entrada para o ponteiro. A tabela a seguir lista algumas das situações em que essa notificação é enviada.
 
 
 
 | Ação                                        | Conjunto de sinalizadores                                                         | Notificações enviadas para                                |
 |-----------------------------------------------|-------------------------------------------------------------------|------------------------------------------------------|
-| Um ponteiro de cursor cruza os limites da janela. | [**IS_POINTER_INRANGE_WPARAM**](/previous-versions/windows/desktop/api) | Janela fora de cujo limite o ponteiro moveu.  |
-| Um ponteiro sai do intervalo de detecção.        | N/D                                                               | Janela para a qual o ponteiro deixa o intervalo de detecção. |
+| Um ponteiro de foco cruza os limites da janela. | [**IS_POINTER_INRANGE_WPARAM**](/previous-versions/windows/desktop/api) | Janela fora de cujo limite o ponteiro foi movido.  |
+| Um ponteiro sai do intervalo de detecção.        | N/D                                                               | Janela para a qual o ponteiro sai do intervalo de detecção. |
 
 
 
  
 
-> \[! Fundamental\]  
-> Quando uma janela perde a captura de um ponteiro e recebe a notificação de [**WM_POINTERCAPTURECHANGED**](wm-pointercapturechanged.md) , ela normalmente não receberá notificações adicionais. Por esse motivo, é importante que você não faça nenhuma suposição com base em WM_POINTERDOWN igualmente emparelhadas [](wm-pointerdown.md) / [**WM_POINTERUP**](wm-pointerup.md) ou [**WM_POINTERENTER**](wm-pointerenter.md) / notificações de **WM_POINTERLEAVE** .
+> \[! Importante\]  
+> Quando uma janela perde a captura de um ponteiro e recebe a notificação [**WM_POINTERCAPTURECHANGED,**](wm-pointercapturechanged.md) ela normalmente não receberá nenhuma notificação adicional. Por esse motivo, é importante que você não faça suposições com base em notificações WM_POINTERDOWN [](wm-pointerdown.md) / [**WM_POINTERUP WM_POINTERENTER**](wm-pointerup.md) [](wm-pointerenter.md) / **WM_POINTERLEAVE** emparelhadas.
 
  
 
-Se o contato for mantido com o digitalizador de entrada e o ponteiro se mover para fora da janela, **WM_POINTERLEAVE** não será gerado. **WM_POINTERLEAVE** é gerado somente quando um ponteiro de cursor cruza os limites da janela ou o contato é encerrado.
+Se o contato for mantido com o digitalizador de entrada e o ponteiro se mover para fora da **janela,** WM_POINTERLEAVE será gerado. **WM_POINTERLEAVE** é gerado somente quando um ponteiro de foco cruza os limites da janela ou o contato é encerrado.
 
-**WM_POINTERLEAVE** será lançada na fila de mensagens postada se a entrada for originada de um dispositivo de mouse.
+**WM_POINTERLEAVE** será postado na fila de mensagens postadas se a entrada for originada de um dispositivo do mouse.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -109,9 +109,9 @@ Se o contato for mantido com o digitalizador de entrada e o ponteiro se mover pa
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                                               |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                                     |
-| parâmetro<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[Windows 8 somente aplicativos da área de trabalho\]<br/>                                                               |
+| Servidor mínimo com suporte<br/> | \[Windows Server 2012 somente aplicativos da área de trabalho\]<br/>                                                     |
+| Cabeçalho<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 

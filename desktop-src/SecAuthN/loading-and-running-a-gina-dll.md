@@ -1,19 +1,19 @@
 ---
-description: O Windows carrega e executa a DLL padrão do Microsoft GINA (MSGina.dll). Para carregar uma GINA diferente, você deve alterar um valor de chave do registro.
+description: Windows carrega e executa a DLL do Microsoft GINA (MSGina.dll) padrão. Para carregar uma GINA diferente, você deve alterar um valor de chave do registro.
 ms.assetid: 408511af-4430-4dd7-a2a1-c32b375821c4
 title: Carregando e executando uma DLL GINA
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f6242ac0124d85d280d951cbc0bfbdbe748fde0b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 10a4e8d68a1e1846a28e1db9402d730834768a132a7c502021fd101f20926f54
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105747510"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119140949"
 ---
 # <a name="loading-and-running-a-gina-dll"></a>Carregando e executando uma DLL GINA
 
-O Windows carrega e executa a DLL padrão do Microsoft GINA (MSGina.dll). Para carregar uma [*Gina*](../secgloss/g-gly.md)diferente, você deve alterar o seguinte valor de chave do registro:
+Windows carrega e executa a DLL do Microsoft GINA (MSGina.dll) padrão. Para carregar uma [*Gina*](../secgloss/g-gly.md)diferente, você deve alterar o seguinte valor de chave do registro:
 
 ```
 HKEY_LOCAL_MACHINE

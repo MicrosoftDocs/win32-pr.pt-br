@@ -1,11 +1,11 @@
 ---
-title: ms-DS-aprox-immed-atributo subordinado
-description: O valor retornado por esse atributo é baseado em tamanhos de índice. Isso pode ser desativado por +/\ 8211; 10 em contêineres grandes, e o erro é teoricamente desassociado, mas o uso desse atributo ajuda a interface do usuário a exibir o conteúdo de um contêiner.
+title: Atributo ms-DS-Approx-Immed-Subordinates
+description: O valor retornado por esse atributo é baseado em tamanhos de índice. Isso pode ser desligado por +/ \ 8211;10 em contêineres grandes e o erro é teoricamente não exclusivo, mas usar esse atributo ajuda a interface do usuário a exibir o conteúdo de um contêiner.
 ms.assetid: 0d6e3b53-dfad-49ac-bbb3-e53c33ea9cd8
 ms.tgt_platform: multiple
 keywords:
-- ms-DS-aprox-immed-subordinado esquema de atributo do AD
-- atributo msDS-aprox-immed-subordinado esquema do AD
+- Ms-DS-Approx-Immed-Subordinates atributo AD Schema
+- Atributo AD MSDS-Approx-Immed-Subordinates
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fdb51ef642c216d8e41b774ffc596a8f3d4feb28
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 2291cf5dc669d0f0cac64de8ab9cbfc128ecbdd99153c5f96b1cf07a44d9a02b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104500084"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119442716"
 ---
-# <a name="ms-ds-approx-immed-subordinates-attribute"></a>ms-DS-aprox-immed-atributo subordinado
+# <a name="ms-ds-approx-immed-subordinates-attribute"></a>Atributo ms-DS-Approx-Immed-Subordinates
 
-O valor retornado por esse atributo é baseado em tamanhos de índice. Isso pode ser desativado em +/10% em contêineres grandes, e o erro é teoricamente desassociado, mas usar esse atributo ajuda a interface do usuário a exibir o conteúdo de um contêiner.
+O valor retornado por esse atributo é baseado em tamanhos de índice. Isso pode ser desligado em +/ 10% em contêineres grandes e o erro é teoricamente não exclusivo, mas usar esse atributo ajuda a interface do usuário a exibir o conteúdo de um contêiner.
 
 
 
 | Entrada | Valor |
 |-------------------|--------------------------------------|
-| CN                | ms-DS-aprox-immed-subordinados      |
-| LDAP-Display-Name | msDS-aprox-immed-subordinados       |
+| CN                | ms-DS-Approx-Immed-Subordinates      |
+| Ldap-Display-Name | msDS-Approx-Immed-Subordinates       |
 | Tamanho              | \-                                   |
 | Privilégio de atualização  | Esse valor é definido pelo sistema.     |
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.1669              |
-| System-ID-GUID    | e185d243-f6ce-4adb-b496-b0c005d7823c |
+| System-Id-Guid    | e185d243-f6ce-4adb-b496-b0c005d7823c |
 | Syntax            | [**Enumeração**](s-enumeration.md) |
 
 
@@ -43,7 +43,7 @@ O valor retornado por esse atributo é baseado em tamanhos de índice. Isso pode
 ## <a name="implementations"></a>Implementações
 
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adam**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -57,11 +57,11 @@ O valor retornado por esse atributo é baseado em tamanhos de índice. Isso pode
 |------------------------|---------------------------------|
 | ID do link                | \-                              |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| É de valor único       | True                            |
+| System-Only            | Verdadeiro                            |
+| Tem valor único       | Verdadeiro                            |
 | É indexado             | Falso                           |
-| No catálogo global      | Falso                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| No Catálogo Global      | Falso                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -70,7 +70,7 @@ O valor retornado por esse atributo é baseado em tamanhos de índice. Isso pode
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adam
 
 
 
@@ -78,11 +78,11 @@ O valor retornado por esse atributo é baseado em tamanhos de índice. Isso pode
 |------------------------|---------------------------------|
 | ID do link                | \-                              |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| É de valor único       | True                            |
+| System-Only            | Verdadeiro                            |
+| Tem valor único       | Verdadeiro                            |
 | É indexado             | Falso                           |
-| No catálogo global      | Falso                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| No Catálogo Global      | Falso                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -99,11 +99,11 @@ O valor retornado por esse atributo é baseado em tamanhos de índice. Isso pode
 |------------------------|---------------------------------|
 | ID do link                | \-                              |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| É de valor único       | True                            |
+| System-Only            | Verdadeiro                            |
+| Tem valor único       | Verdadeiro                            |
 | É indexado             | Falso                           |
-| No catálogo global      | Falso                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| No Catálogo Global      | Falso                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -120,11 +120,11 @@ O valor retornado por esse atributo é baseado em tamanhos de índice. Isso pode
 |------------------------|---------------------------------|
 | ID do link                | \-                              |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| É de valor único       | True                            |
+| System-Only            | Verdadeiro                            |
+| Tem valor único       | Verdadeiro                            |
 | É indexado             | Falso                           |
-| No catálogo global      | Falso                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| No Catálogo Global      | Falso                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -141,11 +141,11 @@ O valor retornado por esse atributo é baseado em tamanhos de índice. Isso pode
 |------------------------|---------------------------------|
 | ID do link                | \-                              |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| É de valor único       | True                            |
+| System-Only            | Verdadeiro                            |
+| Tem valor único       | Verdadeiro                            |
 | É indexado             | Falso                           |
-| No catálogo global      | Falso                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| No Catálogo Global      | Falso                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -162,11 +162,11 @@ O valor retornado por esse atributo é baseado em tamanhos de índice. Isso pode
 |------------------------|---------------------------------|
 | ID do link                | \-                              |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| É de valor único       | True                            |
+| System-Only            | Verdadeiro                            |
+| Tem valor único       | Verdadeiro                            |
 | É indexado             | Falso                           |
-| No catálogo global      | Falso                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| No Catálogo Global      | Falso                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |

@@ -1,35 +1,35 @@
 ---
-title: Usando SAMI com o controle do Windows Media Player em um navegador
-description: Usando SAMI com o controle do Windows Media Player em um navegador
+title: Usando SAMI com o Windows Media Player controle em um navegador
+description: Usando SAMI com o Windows Media Player controle em um navegador
 ms.assetid: 41906e57-adaa-4df7-86ba-19b8a757e216
 keywords:
-- Windows Media Player, SAMI (intercâmbio de mídia acessível) sincronizado
-- Modelo de objeto do Windows Media Player, SAMI (sincronização de mídia acessível)
-- modelo de objeto, SAMI (intercâmbio de mídia acessível) sincronizado
-- Windows Media Player Mobile, SAMI (sincronização de mídia acessível) sincronizado
-- Controle ActiveX do Windows Media Player, SAMI (sincronização de mídia acessível)
-- Controle ActiveX móvel do Windows Media Player, SAMI (sincronização de mídia acessível)
-- Controle ActiveX, SAMI (sincronização de mídia acessível)
-- Arquivos SAMI (intercâmbio de mídia acessível) sincronizados
-- SAMI (sincronizado com o intercâmbio de mídia acessível), arquivos
-- SAMI (intercâmbio de mídia acessível), código de exemplo
-- SAMI (sincronizado com o intercâmbio de mídia acessível), código de exemplo
+- Windows Media Player,SAMI (Synchronized Accessible Media Interchange)
+- Windows Media Player de objeto, SAMI (Synchronized Accessible Media Interchange)
+- modelo de objeto, SAMI (Synchronized Accessible Media Interchange)
+- Windows Media Player Mobile,Synchronized Accessible Media Interchange (SAMI)
+- Windows Media Player ActiveX controle,SAMI (Synchronized Accessible Media Interchange)
+- Windows Media Player Controle ActiveX dispositivo móvel, SAMI (Synchronized Accessible Media Interchange)
+- ActiveX controle,SAMI (Synchronized Accessible Media Interchange)
+- SAMI (Intercâmbio de Mídia Acessível Sincronizado), arquivos
+- SAMI (Intercâmbio de Mídia Acessível Sincronizado), arquivos
+- SAMI (Intercâmbio de Mídia Acessível Sincronizado), código de exemplo
+- SAMI (Intercâmbio de Mídia Acessível Sincronizado), código de exemplo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b651c3af117942d56ffc5334323913d26cdf6f99
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: d277f2849e6036d85bc8c03940a7dbd59df8b81083ca88240ebd68be768fde9d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103916609"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119134339"
 ---
-# <a name="using-sami-with-the-windows-media-player-control-in-a-browser"></a>Usando SAMI com o controle do Windows Media Player em um navegador
+# <a name="using-sami-with-the-windows-media-player-control-in-a-browser"></a>Usando SAMI com o Windows Media Player controle em um navegador
 
-Em vez de criar um arquivo SAMI para cada estilo de fonte ou linguagem, você pode declarar classes de estilo diferentes em um arquivo usando scripts básicos e o modelo de objeto de controle do Windows Media Player. Você pode criar controles personalizados que permitem que o usuário escolha entre as diferentes opções de estilo e idioma. Além disso, você tem controle total sobre o design da interface do Player e a personalização de cada função.
+Em vez de criar um arquivo SAMI para cada linguagem ou estilo de fonte, você pode declarar classes de estilo diferentes em um arquivo usando scripts básicos e o modelo de objeto Windows Media Player controle. Você pode criar controles personalizados que permitem que o usuário escolha entre as diferentes opções de estilo e idioma. Além disso, você tem controle total sobre o design da interface player e a personalização de cada função.
 
-Para obter informações detalhadas sobre como inserir o controle do Windows Media Player em uma página [da Web, consulte um exemplo simples de script em uma página da Web](simple-example-of-scripting-in-a-web-page.md).
+Para obter informações detalhadas sobre como Windows Media Player controle de Windows Media Player em uma página da Web, consulte Exemplo simples de [script em uma página da Web](simple-example-of-scripting-in-a-web-page.md).
 
-O código de exemplo a seguir demonstra como usar legendas codificadas com o controle do Windows Media Player incorporado em uma página da Web. Ele inclui controles para permitir que o usuário selecione estilo de fonte e idioma.
+O código de exemplo a seguir demonstra como usar legendas fechadas com o controle Windows Media Player inserido em uma página da Web. Ele inclui controles para permitir que o usuário selecione o estilo e o idioma da fonte.
 
 
 ```C++
@@ -116,12 +116,12 @@ O código de exemplo a seguir demonstra como usar legendas codificadas com o con
 
 <dl> <dt>
 
-[**Adicionando legendas ocultas à mídia digital**](adding-closed-captions-to-digital-media.md)
+[**Adicionando legendas fechadas à mídia digital**](adding-closed-captions-to-digital-media.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -4,12 +4,12 @@ description: O comportamento de um dispositivo é definido pelos serviços que e
 ms.assetid: 5b352870-6de1-42f2-a178-ed7036b7afc9
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fb702adf3ccb0f21bc71f08e98427cca15495f3b
-ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.openlocfilehash: fce2857c11a02ef5eeebe7b2cd5e75ee76138929e5bd95a2e3bdfa7ffd2c71dd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "105751607"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119137259"
 ---
 # <a name="implementing-device-behavior"></a>Implementando o comportamento do dispositivo
 
@@ -175,7 +175,7 @@ Você deve usar a ferramenta Utl2idl para converter cada descrição de serviço
 
 Um objeto que fornece a funcionalidade para um serviço é chamado de objeto de [*serviço*](s-gly.md). Além de fornecer a funcionalidade de serviço, os objetos de serviço manipulam erros usando a interface [**IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) . Para obter mais informações, consulte [usando a API de host do dispositivo com tecnologia UPnP](using-the-device-host-api-with-upnp-technology.md).
 
-Para garantir a compatibilidade com Visual Basic, que não oferece \[ suporte \] a parâmetros de saída, a **direção** dos parâmetros **/Direction** na descrição do serviço são convertidas para \[ in, parâmetros de saída \] em IDL. O servidor deve liberar esses \[ parâmetros de saída \] .
+para garantir a compatibilidade com Visual Basic, que não oferece \[ suporte \] a parâmetros de saída, a **direção** dos parâmetros **/direction** na descrição do serviço são convertidas para \[ in, parâmetros de saída \] em IDL. O servidor deve liberar esses \[ parâmetros de saída \] .
 
 ## <a name="implementing-a-device-control-object"></a>Implementando um objeto de controle de dispositivo
 

@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: ea324ef94ab765bad25f7d07eef07972ab94cff6
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 7d383a458b99478eee8435aa46441cdd77cc5c953bbf489c657e448078c9931b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108114444"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119123222"
 ---
 # <a name="d3dxgetimageinfofromresource-function"></a>Função D3DXGetImageInfoFromResource
 
@@ -90,7 +90,7 @@ A configuração do compilador também determina a versão da função. Se o Uni
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

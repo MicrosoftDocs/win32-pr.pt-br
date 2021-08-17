@@ -4,12 +4,12 @@ description: Esta seção descreve as limitações de acesso de bloco com mapeam
 ms.assetid: 7A498E0D-9151-4A89-B7C3-C4F476457D17
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0909b0d10e286e5f774f6893b692abdeb19d3ef7
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: e5ea4839b8115ccffe1993d767bc19d2d7c3db0c230aff65f8dd0fd9f74d3cad
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104005040"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119124114"
 ---
 # <a name="tile-access-limitations-with-duplicate-mappings"></a>Limitações de acesso de bloco com mapeamentos duplicados
 
@@ -62,9 +62,9 @@ Por fim, se não houver nada em comum nos mapeamentos de blocos de compartilham 
 [Acesso ao pipeline para recursos lado a lado](pipeline-access-to-tiled-resources.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -17,12 +17,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3e71a33056f596afaf577968a5c725b3f64f79b6
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 7098f8f79212ed52d52ed408795284725735a1a7092988f35e416636675538fd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108090604"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119422046"
 ---
 # <a name="usercontrolservice-method-of-the-win32_service-class-remote-desktop-services"></a>Método UserControlService da classe Win32_Service (Serviços de Área de Trabalho Remota)
 
@@ -191,7 +191,7 @@ O serviço tem dependências circulares quando é iniciado.
 
 </dd> <dt>
 
-**aprimora**
+**19**
 </dt> <dd>
 
 Um serviço está sendo executado com o mesmo nome.
@@ -247,7 +247,7 @@ O serviço está pausado atualmente no sistema.
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

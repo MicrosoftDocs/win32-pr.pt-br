@@ -1,17 +1,17 @@
 ---
-title: Funções comuns (Internet do Windows)
+title: funções comuns (Windows Internet)
 description: Os diferentes protocolos de Internet (como FTP e http) usam várias das mesmas funções do WinINet para lidar com informações na Internet.
 ms.assetid: c80768cf-c8c0-4bdf-9ea2-f82c92ade05a
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1893b085da1b3e77228e4a9abf75acc166d84726
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: ed7b6a68c2633175eca793f48b2180b7212905762ca0f58290436aa17ae9a728
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "105762127"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119132889"
 ---
-# <a name="common-functions-windows-internet"></a>Funções comuns (Internet do Windows)
+# <a name="common-functions-windows-internet"></a>funções comuns (Windows Internet)
 
 Os diferentes protocolos de Internet (como FTP e http) usam várias das mesmas funções do WinINet para lidar com informações na Internet. Essas funções comuns manipulam suas tarefas de maneira consistente, independentemente do protocolo específico ao qual estão sendo aplicadas. Os aplicativos podem usar essas funções para criar funções de uso geral que manipulam tarefas em diferentes protocolos (como leitura de arquivos para FTP e http).
 
@@ -520,7 +520,7 @@ A função [**InternetLockRequestFile**](/windows/desktop/api/Wininet/nf-wininet
 Se o [sinalizador \_ Internet \_ sem \_ \_ gravação do cache](api-flags.md) ou sinalizador de Internet não tiver sido definido, o [**InternetLockRequestFile**](/windows/desktop/api/Wininet/nf-wininet-internetlockrequestfile) criará um arquivo temporário com a extensão tmp, a menos que o identificador esteja conectado a um recurso HTTPS. [ \_ \_ \_](api-flags.md) Se a função acessar um recurso HTTPS e um sinalizador de INTERNET \_ \_ sem \_ \_ gravação de cache (ou o sinalizador de Internet não \_ \_ \_ cache) tiver sido definido, [**InternetLockRequestFile**](/windows/desktop/api/Wininet/nf-wininet-internetlockrequestfile) falhará.
 
 > [!Note]  
-> O WinINet não oferece suporte a implementações de servidor. Além disso, ele não deve ser usado de um serviço. Para implementações de servidor ou serviços, use [o Microsoft Windows http Services (WinHTTP)](/windows/desktop/WinHttp/winhttp-start-page).
+> O WinINet não oferece suporte a implementações de servidor. Além disso, ele não deve ser usado de um serviço. para implementações de servidor ou serviços, use [o Microsoft Windows HTTP services (WinHTTP)](/windows/desktop/WinHttp/winhttp-start-page).
 
  
 

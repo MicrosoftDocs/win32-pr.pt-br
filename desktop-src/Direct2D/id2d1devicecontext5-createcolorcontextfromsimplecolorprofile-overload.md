@@ -3,7 +3,7 @@ title: Métodos ID2D1DeviceContext5 CreateColorContextFromSimpleColorProfile
 description: Cria um contexto de cor a partir de um perfil de cor simples. Ele só é válido para usar isso com o efeito de gerenciamento de cores no modo ' melhor '.
 ms.assetid: 5f2cddce-1579-bd8f-3fc5-e993c3254230
 keywords:
-- Métodos CreateColorContextFromSimpleColorProfile Direct2D
+- Direct2D métodos de CreateColorContextFromSimpleColorProfile
 topic_type:
 - apiref
 api_type:
@@ -12,12 +12,12 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
 api_location: ''
-ms.openlocfilehash: adaf8cc064e8001bf3106b5e9166af656c7a925b
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 75f5f40946b75b74853370657160f36ab3b85288199325b9a5d82609ccd95e6e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "105789720"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119966936"
 ---
 # <a name="id2d1devicecontext5createcolorcontextfromsimplecolorprofile-methods"></a>Métodos ID2D1DeviceContext5:: CreateColorContextFromSimpleColorProfile
 

@@ -1,9 +1,9 @@
 ---
 title: DRM_LicenseState
-description: A \_ Propriedade licensestate do DRM não é usada. Na verdade, ela não é uma propriedade, mas é simplesmente a cadeia de caracteres raiz para os outros identificadores de cadeia de caracteres de propriedade de estado de licença, como a \_ reprodução de licensestate DRM \_ .
+description: A propriedade LicenseState do DRM \_ não é usada. Na verdade, não é uma propriedade, mas é simplesmente a cadeia de caracteres raiz para os outros identificadores de cadeia de caracteres de propriedade de estado de licença, como DrM \_ LicenseState \_ Playback.
 ms.assetid: d130c8a6-d718-4378-ba69-00b55edf9fab
 keywords:
-- DRM_LicenseState o formato Windows Media
+- DRM_LicenseState formato de mídia do Windows
 topic_type:
 - apiref
 api_name:
@@ -12,24 +12,24 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bcec4c571d6e8c88e2bea70f628d2d85eac853ca
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: d3b57cd75a50a0a7acfb4dce09bd28f913296b65fb94097e852876fd41e4481e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104498857"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119447916"
 ---
-# <a name="drm_licensestate"></a>Licença do DRM \_
+# <a name="drm_licensestate"></a>DRM \_ LicenseState
 
-A **propriedade \_ Licensestate do DRM** não é usada. Na verdade, ela não é uma propriedade, mas é simplesmente a cadeia de caracteres raiz para os outros identificadores de cadeia de caracteres de propriedade de estado de licença, como a **\_ \_ reprodução de licensestate DRM**.
+A **propriedade \_ LicenseState do DRM** não é usada. Na verdade, não é uma propriedade, mas é simplesmente a cadeia de caracteres raiz para os outros identificadores de cadeia de caracteres de propriedade de estado de licença, como **DRM \_ LicenseState \_ Playback**.
 
 ## <a name="global-constant"></a>Constante global
 
-\_licença g wszWMDRM \_
+g \_ wszWMDRM \_ LicenseState
 
 ## <a name="data-type"></a>Tipo de Dados
 
-**WMT \_ tipo \_ binário**
+**TIPO WMT \_ \_ BINARY**
 
 ## <a name="remarks"></a>Comentários
 
@@ -39,12 +39,12 @@ Essa propriedade não retorna nenhuma informação.
 
 <dl> <dt>
 
-[**Propriedades de DRM**](drm-properties.md)
+[**Propriedades do DRM**](drm-properties.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

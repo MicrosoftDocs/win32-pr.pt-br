@@ -4,12 +4,12 @@ ms.assetid: e5334993-c621-4e26-a317-e2639b7e490e
 title: System. Media. Providerstyle
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: aa6b53fe8c3e7bef6cab2925e19ba550525daddb
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: f519d7e111674aa8137224b84f4eb1bd80444bd4f0d33b9235e5e74513b10bad
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "103663797"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118970335"
 ---
 # <a name="systemmediaproviderstyle"></a>System. Media. Providerstyle
 

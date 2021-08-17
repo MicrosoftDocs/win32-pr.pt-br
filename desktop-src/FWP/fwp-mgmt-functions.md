@@ -1,21 +1,21 @@
 ---
 title: Funções de gerenciamento
-description: As funções de gerenciamento da WFP (plataforma de filtragem do Windows) para o mecanismo de filtro são as seguintes.
+description: as funções de gerenciamento de Windows WFP (plataforma de filtragem) para o mecanismo de filtro são as seguintes.
 ms.assetid: 983eb1bb-af6b-42cf-8148-ed3a0e3102a9
 keywords:
-- Funções de gerenciamento de API da Windows Filtering Platform
+- Windows Filtrando funções de gerenciamento de API de plataforma
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2ab42fc22d6e51e85a1e03f4835ee510917ff534
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 0163119df45f278d4c5e0c4a2f2563cdc16db4e4994e17a2aba5ea7cc621f383
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "105812964"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119069206"
 ---
 # <a name="management-functions"></a>Funções de gerenciamento
 
-As funções de gerenciamento da WFP (plataforma de filtragem do Windows) para o mecanismo de filtro são as seguintes.
+as funções de gerenciamento de Windows WFP (plataforma de filtragem) para o mecanismo de filtro são as seguintes.
 
 Gerenciamento de texto explicativo
 
@@ -125,7 +125,7 @@ Gerenciamento de contexto do provedor
 
 Gerenciamento de provedor
 
--   [**\_CALLBACK0 de \_ alteração do provedor FWPM \_**](/windows/win32/api/fwpmu/nc-fwpmu-fwpm_provider_change_callback0)
+-   [**RETORNO DE CHAMADA DE ALTERAÇÃO DO PROVEDOR \_ FWPM0 \_ \_**](/windows/win32/api/fwpmu/nc-fwpmu-fwpm_provider_change_callback0)
 -   [**FwpmProviderAdd0**](/windows/desktop/api/Fwpmu/nf-fwpmu-fwpmprovideradd0)
 -   [**FwpmProviderCreateEnumHandle0**](/windows/desktop/api/Fwpmu/nf-fwpmu-fwpmprovidercreateenumhandle0)
 -   [**FwpmProviderDeleteByKey0**](/windows/desktop/api/Fwpmu/nf-fwpmu-fwpmproviderdeletebykey0)
@@ -150,9 +150,9 @@ Gerenciamento da sessão
 -   [**FwpmSessionDestroyEnumHandle0**](/windows/desktop/api/Fwpmu/nf-fwpmu-fwpmsessiondestroyenumhandle0)
 -   [**FwpmSessionEnum0**](/windows/desktop/api/Fwpmu/nf-fwpmu-fwpmsessionenum0)
 
-Gerenciamento de subcamadas
+Gerenciamento de subcamada
 
--   [**FWPM de \_ alteração de SUBcamada \_ \_ CALLBACK0**](/windows/win32/api/fwpmu/nc-fwpmu-fwpm_sublayer_change_callback0)
+-   [**RETORNO DE CHAMADA DE ALTERAÇÃO \_ DE SUBCAMADA DO FWPM0 \_ \_**](/windows/win32/api/fwpmu/nc-fwpmu-fwpm_sublayer_change_callback0)
 -   [**FwpmSubLayerAdd0**](/windows/desktop/api/Fwpmu/nf-fwpmu-fwpmsublayeradd0)
 -   [**FwpmSubLayerCreateEnumHandle0**](/windows/desktop/api/Fwpmu/nf-fwpmu-fwpmsublayercreateenumhandle0)
 -   [**FwpmSubLayerDeleteByKey0**](/windows/desktop/api/Fwpmu/nf-fwpmu-fwpmsublayerdeletebykey0)
@@ -167,7 +167,7 @@ Gerenciamento de subcamadas
 
 Gerenciamento de portas do sistema
 
--   [**FWPM \_ portas do sistema \_ \_ CALLBACK0**](/windows/win32/api/fwpmu/nc-fwpmu-fwpm_system_ports_callback0)
+-   [**RETORNO DE CHAMADA DE \_ PORTAS DO SISTEMA FWPM0 \_ \_**](/windows/win32/api/fwpmu/nc-fwpmu-fwpm_system_ports_callback0)
 -   [**FwpmSystemPortsGet0**](/windows/desktop/api/Fwpmu/nf-fwpmu-fwpmsystemportsget0)
 -   [**FwpmSystemPortsSubscribe0**](/windows/desktop/api/Fwpmu/nf-fwpmu-fwpmsystemportssubscribe0)
 -   [**FwpmSystemPortsUnsubscribe0**](/windows/desktop/api/Fwpmu/nf-fwpmu-fwpmsystemportsunsubscribe0)
@@ -178,14 +178,14 @@ Gerenciamento de transações
 -   [**FwpmTransactionBegin0**](/windows/desktop/api/Fwpmu/nf-fwpmu-fwpmtransactionbegin0)
 -   [**FwpmTransactionCommit0**](/windows/desktop/api/Fwpmu/nf-fwpmu-fwpmtransactioncommit0)
 
-Gerenciamento de vSwitch
+Gerenciamento do vSwitch
 
--   [**\_ \_ Evento \_ CALLBACK0 do FWPM VSWITCH**](/windows/win32/api/fwpmu/nc-fwpmu-fwpm_vswitch_event_callback0)
+-   [**FWPM \_ VSWITCH \_ EVENT \_ CALLBACK0**](/windows/win32/api/fwpmu/nc-fwpmu-fwpm_vswitch_event_callback0)
 -   [**FwpmvSwitchEventsGetSecurityInfo0**](/windows/desktop/api/Fwpmu/nf-fwpmu-fwpmvswitcheventsgetsecurityinfo0)
 -   [**FwpmvSwitchEventsSetSecurityInfo0**](/windows/desktop/api/Fwpmu/nf-fwpmu-fwpmvswitcheventssetsecurityinfo0)
 -   [**FwpmvSwitchEventSubscribe0**](/windows/desktop/api/Fwpmu/nf-fwpmu-fwpmvswitcheventsubscribe0)
 -   [**FwpmvSwitchEventUnsubscribe0**](/windows/desktop/api/Fwpmu/nf-fwpmu-fwpmvswitcheventunsubscribe0)
 
- 
+ 
 
- 
+ 

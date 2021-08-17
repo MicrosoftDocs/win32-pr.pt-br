@@ -1,25 +1,25 @@
 ---
-description: Para dar suporte a IPv4 e IPv6 no Windows XP com Service Pack 1 (SP1) e no Windows Server 2003, um aplicativo precisa criar dois soquetes, um soquete para uso com IPv4 e um soquete para uso com IPv6.
+description: para dar suporte a IPv4 e IPv6 no Windows XP com Service Pack 1 (SP1) e no Windows Server 2003, um aplicativo precisa criar dois soquetes, um soquete para uso com IPv4 e um soquete para uso com IPv6.
 ms.assetid: 7ae49081-ffb5-4eee-b488-2541398e7acc
 title: Soquetes de Dual-Stack para aplicativos Winsock IPv6
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 943d8150586bcf14a905ab32dcacaea63b7d6982
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 424580569fb3bed5e81c6232cb99dc2d53a30af1ab2c23c9b4afa6945c0a6eb9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105765694"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119132659"
 ---
 # <a name="dual-stack-sockets-for-ipv6-winsock-applications"></a>Soquetes de Dual-Stack para aplicativos Winsock IPv6
 
-Para dar suporte a IPv4 e IPv6 no Windows XP com Service Pack 1 (SP1) e no Windows Server 2003, um aplicativo precisa criar dois soquetes, um soquete para uso com IPv4 e um soquete para uso com IPv6. Esses dois soquetes devem ser tratados separadamente pelo aplicativo.
+para dar suporte a IPv4 e IPv6 no Windows XP com Service Pack 1 (SP1) e no Windows Server 2003, um aplicativo precisa criar dois soquetes, um soquete para uso com IPv4 e um soquete para uso com IPv6. Esses dois soquetes devem ser tratados separadamente pelo aplicativo.
 
-O Windows Vista e versões posteriores oferecem a capacidade de criar um único soquete IPv6 que pode lidar com tráfego IPv6 e IPv4. Por exemplo, um soquete de escuta TCP para IPv6 é criado, colocado em modo de pilha dupla e vinculado à porta 5001. Esse soquete de pilha dupla pode aceitar conexões de clientes IPv6 TCP conectando-se à porta 5001 e de clientes TCP IPv4 conectando-se à porta 5001. Esse recurso permite um design de aplicativo bastante simplificado e reduz a sobrecarga de recursos necessária ao lançamento de operações em dois soquetes separados.
+Windows O Vista e versões posteriores oferecem a capacidade de criar um único soquete IPv6 que pode lidar com tráfego IPv6 e IPv4. Por exemplo, um soquete de escuta TCP para IPv6 é criado, colocado em modo de pilha dupla e vinculado à porta 5001. Esse soquete de pilha dupla pode aceitar conexões de clientes IPv6 TCP conectando-se à porta 5001 e de clientes TCP IPv4 conectando-se à porta 5001. Esse recurso permite um design de aplicativo bastante simplificado e reduz a sobrecarga de recursos necessária ao lançamento de operações em dois soquetes separados.
 
 ## <a name="creating-a-dual-stack-socket"></a>Criando um soquete de Dual-Stack
 
-Por padrão, um soquete IPv6 criado no Windows Vista e posterior opera apenas sobre o protocolo IPv6. Para tornar um soquete IPv6 em um soquete de pilha dupla, a função [**setsockopt**](/windows/desktop/api/winsock/nf-winsock-setsockopt) deve ser chamada com a opção de **soquete \_ V6ONLY do IPv6** para definir esse valor como zero antes que o soquete seja associado a um endereço IP. Quando a opção de soquete de **\_ V6ONLY IPv6** é definida como zero, um soquete criado para a família de endereços **\_ INET6 de AF** pode ser usado para enviar e receber pacotes de e para um endereço IPv6 ou um endereço de IPv4 mapeado.
+por padrão, um soquete ipv6 criado no Windows Vista e posterior opera apenas sobre o protocolo ipv6. Para tornar um soquete IPv6 em um soquete de pilha dupla, a função [**setsockopt**](/windows/desktop/api/winsock/nf-winsock-setsockopt) deve ser chamada com a opção de **soquete \_ V6ONLY do IPv6** para definir esse valor como zero antes que o soquete seja associado a um endereço IP. Quando a opção de soquete de **\_ V6ONLY IPv6** é definida como zero, um soquete criado para a família de endereços **\_ INET6 de AF** pode ser usado para enviar e receber pacotes de e para um endereço IPv6 ou um endereço de IPv4 mapeado.
 
 ## <a name="ip-addresses-with-a-dual-stack-socket"></a>Endereços IP com um soquete de Dual-Stack
 
@@ -41,7 +41,7 @@ Para um soquete de pilha dupla ao enviar datagramas com a função [**WSASendMsg
 
 <dl> <dt>
 
-[Guia IPv6 para aplicativos do Windows Sockets](ipv6-guide-for-windows-sockets-applications-2.md)
+[guia de IPv6 para aplicativos de Windows sockets](ipv6-guide-for-windows-sockets-applications-2.md)
 </dt> <dt>
 
 [Alterando estruturas de dados para aplicativos Winsock do IPv6](changing-data-structures-2.md)

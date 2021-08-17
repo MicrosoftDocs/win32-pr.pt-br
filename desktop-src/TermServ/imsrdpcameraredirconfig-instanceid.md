@@ -3,9 +3,9 @@ title: Propriedade IMsRdpCameraRedirConfig InstanceId
 description: Obtém a ID da instância da câmera.
 ms.tgt_platform: multiple
 keywords:
-- Serviços de Área de Trabalho Remota de propriedade InstanceId
-- Serviços de Área de Trabalho Remota da propriedade InstanceId, interface IMsRdpCameraRedirConfig
-- Serviços de Área de Trabalho Remota de interface IMsRdpCameraRedirConfig, Propriedade InstanceId
+- Propriedade InstanceId Serviços de Área de Trabalho Remota
+- A propriedade InstanceId Serviços de Área de Trabalho Remota , interface IMsRdpCameraRedirConfig
+- Interface IMsRdpCameraRedirConfig Serviços de Área de Trabalho Remota , propriedade InstanceId
 topic_type:
 - apiref
 api_name:
@@ -17,14 +17,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 12/16/2020
-ms.openlocfilehash: 42654e84f64b25a051a78963339ca95d4ebf760f
-ms.sourcegitcommit: 04e801237156e90b48111d60bddf437f87f5cdfe
+ms.openlocfilehash: 621c865f9727cf484430d00609dcfcfac2431a514cf2bade714fdd4d81b0408c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "104163674"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119400996"
 ---
-# <a name="imsrdpcameraredirconfiginstanceid-property"></a>Propriedade IMsRdpCameraRedirConfig:: InstanceId
+# <a name="imsrdpcameraredirconfiginstanceid-property"></a>Propriedade IMsRdpCameraRedirConfig::InstanceId
 
 Obtém a ID da instância da câmera.
 

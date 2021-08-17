@@ -1,9 +1,9 @@
 ---
-title: Mensagem de EM_HIDESELECTION (RichEdit. h)
-description: A \_ mensagem em HIDESELECTION oculta ou mostra a seleção em um controle de edição rico.
+title: EM_HIDESELECTION mensagem (Richedit.h)
+description: A mensagem EM \_ HIDESELECTION oculta ou mostra a seleção em um controle de edição rico.
 ms.assetid: 1245618f-c9e6-4876-9133-6009370cdb97
 keywords:
-- Controles de EM_HIDESELECTION de mensagens do Windows
+- EM_HIDESELECTION controles Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2a5690e52c2a25f5a359de205ac1584e1ef45ed4
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 2d9e33ba0fd8f9a97dcc7ef9ba0a76acfd76110a4d718fa282f3ba66d8f1ef6d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918061"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119437926"
 ---
-# <a name="em_hideselection-message"></a>\_Mensagem em HIDESELECTION
+# <a name="em_hideselection-message"></a>Mensagem EM \_ HIDESELECTION
 
-A mensagem em **\_ HIDESELECTION** oculta ou mostra a seleção em um controle de edição rico.
+A **mensagem EM \_ HIDESELECTION** oculta ou mostra a seleção em um controle de edição rico.
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -32,18 +32,18 @@ A mensagem em **\_ HIDESELECTION** oculta ou mostra a seleção em um controle d
 *wParam* 
 </dt> <dd>
 
-Valor que especifica se a seleção deve ser ocultada ou mostrada. Se esse parâmetro for zero, a seleção será mostrada. Caso contrário, a seleção ficará oculta.
+Valor que especifica se a seleção deve ser ocultada ou mostrada. Se esse parâmetro for zero, a seleção será mostrada. Caso contrário, a seleção fica oculta.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Esse parâmetro não é usado; Ele deve ser zero.
+Esse parâmetro não é usado; ele deve ser zero.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Essa mensagem não retorna um valor.
 
@@ -53,9 +53,9 @@ Essa mensagem não retorna um valor.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
 
 
 

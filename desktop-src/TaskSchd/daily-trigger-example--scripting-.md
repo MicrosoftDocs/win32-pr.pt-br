@@ -1,6 +1,6 @@
 ---
 title: Exemplo de gatilho diário (script)
-description: Este exemplo de script mostra como criar uma tarefa que executa o bloco de notas às 8 00, todos os dias.
+description: Este exemplo de script mostra como criar uma tarefa que é Bloco de notas às 8h todos os dias.
 ms.assetid: a13bd54d-b45a-46e5-8281-d080f50f6bef
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,29 +9,29 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 3399934786e1cd0f95ca020c92027ccafafa5272
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 530d687264af9d2e7dbd4e9d05cf7dde39a449d3249c3576a35edc8a9e9f088d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103822541"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119139529"
 ---
 # <a name="daily-trigger-example-scripting"></a>Exemplo de gatilho diário (script)
 
-Este exemplo de script mostra como criar uma tarefa que executa o bloco de notas às 8:00, todos os dias. A tarefa contém um gatilho diário que especifica um limite inicial para ativar o gatilho e especificar a hora do dia em que a tarefa é executada, um intervalo de gatilho para especificar que a tarefa é executada todos os dias e um limite final para desativar o gatilho. O exemplo também mostra como definir um padrão de repetição para o gatilho repetir a tarefa. A tarefa também contém uma ação executável que executa o bloco de notas.
+Este exemplo de script mostra como criar uma tarefa que é Bloco de notas às 8h todos os dias. A tarefa contém um gatilho diário que especifica um limite inicial para ativar o gatilho e especificar a hora do dia em que a tarefa é executado, um intervalo de gatilho para especificar que a tarefa é executado todos os dias e um limite final para desativar o gatilho. O exemplo também mostra como definir um padrão de repetição para o gatilho repetir a tarefa. A tarefa também contém uma ação executável que é executada Bloco de notas.
 
-O procedimento a seguir descreve como agendar uma tarefa para iniciar um executável às 8:00, todos os dias. (Essas etapas correspondem aos comentários de código incluídos no código de exemplo.)
+O procedimento a seguir descreve como agendar uma tarefa para iniciar um executável às 8h todos os dias. (Essas etapas correspondem aos comentários de código incluídos no código de exemplo.)
 
-**Para agendar o bloco de notas para começar às 8:00, todos os dias**
+**Para agendar Bloco de notas comece às 8h todos os dias**
 
-1.  Crie um objeto [**TaskService**](taskservice.md) . Esse objeto permite que você crie a tarefa em uma pasta especificada.
-2.  Obter uma pasta de tarefas e criar uma tarefa. Use o método [**TaskService. GetFolder**](taskservice-getfolder.md) para obter a pasta onde a tarefa está armazenada e o método [**TaskService. NewTask**](taskservice-newtask.md) para criar o objeto [**TaskDefinition**](taskdefinition.md) que representa a tarefa.
-3.  Defina informações sobre a tarefa usando o objeto [**TaskDefinition**](taskdefinition.md) . Use a propriedade [**TaskDefinition. Settings**](taskdefinition-settings.md) para definir as configurações que determinam como o serviço de Agendador de tarefas executa a tarefa e a propriedade [**TaskDefinition. RegistrationInfo**](taskdefinition-registrationinfo.md) para definir as informações que descrevem a tarefa.
-4.  Crie um gatilho diário usando a propriedade [**TaskDefinition. Triggers**](taskdefinition-triggers.md) . Essa propriedade fornece acesso ao objeto [**TriggerCollection**](triggercollection.md) que é usado para criar o gatilho. Use o método [**TriggerCollection. Create**](triggercollection-create.md) (especificando o tipo de gatilho que você deseja criar) para criar um gatilho diário. Ao criar o gatilho, defina o limite inicial para ativar o gatilho e especifique a hora do dia em que a tarefa é executada, o intervalo entre os dias e o limite final para desativar o gatilho. O exemplo a seguir mostra como definir um padrão de repetição para o gatilho repetir a tarefa.
-5.  Crie uma ação para a tarefa Executar usando a propriedade [**TaskDefinition. Actions**](taskdefinition-actions.md) . Essa propriedade fornece acesso ao objeto [**ActionCollection**](actioncollection.md) usado para criar a ação. Use o método [**ActionCollection. Create**](actioncollection-create.md) para especificar o tipo de ação que você deseja criar. Este exemplo usa um objeto [**execaction**](execaction.md) , que representa uma ação que executa uma operação de linha de comando.
-6.  Registre a tarefa usando o método [**TaskFolder. RegisterTaskDefinition**](taskfolder-registertaskdefinition.md) . Para este exemplo, a tarefa iniciará o bloco de notas às 8:00, todos os dias.
+1.  Crie um [**objeto TaskService.**](taskservice.md) Esse objeto permite que você crie a tarefa em uma pasta especificada.
+2.  Obter uma pasta de tarefas e criar uma tarefa. Use o [**método TaskService.GetFolder**](taskservice-getfolder.md) para obter a pasta em que a tarefa está armazenada e o [**método TaskService.NewTask**](taskservice-newtask.md) para criar o [**objeto TaskDefinition**](taskdefinition.md) que representa a tarefa.
+3.  Defina informações sobre a tarefa usando o [**objeto TaskDefinition.**](taskdefinition.md) Use a propriedade [**TaskDefinition.Configurações**](taskdefinition-settings.md) para definir as configurações que determinam como o serviço Agendador de Tarefas executa a tarefa e a propriedade [**TaskDefinition.RegistrationInfo**](taskdefinition-registrationinfo.md) para definir as informações que descrevem a tarefa.
+4.  Crie um gatilho diário usando a [**propriedade TaskDefinition.Triggers.**](taskdefinition-triggers.md) Essa propriedade fornece acesso ao [**objeto TriggerCollection**](triggercollection.md) usado para criar o gatilho. Use o [**método TriggerCollection.Create**](triggercollection-create.md) (especificando o tipo de gatilho que você deseja criar) para criar um gatilho diário. Ao criar o gatilho, delimitue o limite inicial para ativar o gatilho e especifique a hora do dia em que a tarefa é executado, o intervalo entre os dias e o limite final para desativar o gatilho. O exemplo a seguir mostra como definir um padrão de repetição para o gatilho repetir a tarefa.
+5.  Crie uma ação para a tarefa a ser executada usando a [**propriedade TaskDefinition.Actions.**](taskdefinition-actions.md) Essa propriedade fornece acesso ao [**objeto ActionCollection**](actioncollection.md) usado para criar a ação. Use o [**método ActionCollection.Create**](actioncollection-create.md) para especificar o tipo de ação que você deseja criar. Este exemplo usa um [**objeto ExecAction,**](execaction.md) que representa uma ação que executa uma operação de linha de comando.
+6.  Registre a tarefa usando [**o método TaskFolder.RegisterTaskDefinition.**](taskfolder-registertaskdefinition.md) Neste exemplo, a tarefa será Bloco de notas às 8h todos os dias.
 
-O exemplo de VBScript a seguir mostra como agendar uma tarefa para executar o bloco de notas todos os dias às 8:00.
+O exemplo de VBScript a seguir mostra como agendar uma tarefa para executar Bloco de notas todos os dias às 8h.
 
 
 ```VB
@@ -141,9 +141,9 @@ WScript.Echo "Task submitted."
 [Usando o Agendador de Tarefas](using-the-task-scheduler.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

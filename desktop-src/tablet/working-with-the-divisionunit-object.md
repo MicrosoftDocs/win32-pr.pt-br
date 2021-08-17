@@ -4,12 +4,12 @@ ms.assetid: 13f6121c-2b83-4788-9d06-460dc03094bf
 title: Trabalhando com o objeto DivisionUnit
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ade8b617ae8e64c2641ef53a628a44e72e4fc35f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 77c2ce09bf2b67f5724bba523219d0555063c3f7215810d3b11c48596f979fdd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103827071"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118966505"
 ---
 # <a name="working-with-the-divisionunit-object"></a>Trabalhando com o objeto DivisionUnit
 

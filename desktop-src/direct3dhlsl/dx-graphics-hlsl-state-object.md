@@ -9,18 +9,18 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 53bfc903f8bc1be56962e912b1c82f02faaf0c44
-ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.openlocfilehash: 70ff3ca1fb2509cd5f788cc1965920c46af5791bec10bb833df19f4b4f9be533
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "104989134"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119119930"
 ---
 # <a name="state-objects"></a>Objetos de estado
 
-Com os modelos de sombreador 6,3 e posteriores, os aplicativos têm a conveniência e a flexibilidade de poder definir objetos de estado DXR diretamente no código do sombreador HLSL, além de usar as APIs do Direct3D 12.
+Com os modelos de sombreador 6.3 e posteriores, os aplicativos têm a conveniência e a flexibilidade de poder definir objetos de estado DXR diretamente no código de sombreador HLSL, além de usar APIs direct3D 12.
 
-No HLSL, os objetos de estado são declarados com essa sintaxe:
+No HLSL, os objetos de estado são declarados com esta sintaxe:
 
 ``` syntax
 Type Name = 
@@ -35,14 +35,14 @@ Type Name =
 
 | Item                                                                                         | Descrição                                                                            |
 |----------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------|
-| <span id="Type"></span><span id="type"></span><span id="TYPE"></span>**Escreva**<br/>     | Identifica o tipo de subobjeto. Deve ser um dos tipos de subobjeto HLSL com suporte.<br/>     |
-| <span id="Name"></span><span id="name"></span><span id="NAME"></span>**Nomes**<br/>     | Uma cadeia de caracteres ASCII que identifica exclusivamente o nome da variável.<br/>                 |
-| <span id="Field"></span><span id="field"></span><span id="FIELD"></span>**Campo [1, 2,...]**<br/> | Campos do subobjeto. Os campos específicos para cada tipo de subobjeto são descritos abaixo.<br/> |
+| <span id="Type"></span><span id="type"></span><span id="TYPE"></span>**Tipo**<br/>     | Identifica o tipo de subobjeto. Deve ser um dos tipos de subobjeto HLSL com suporte.<br/>     |
+| <span id="Name"></span><span id="name"></span><span id="NAME"></span>**Nome**<br/>     | Uma cadeia de caracteres ASCII que identifica exclusivamente o nome da variável.<br/>                 |
+| <span id="Field"></span><span id="field"></span><span id="FIELD"></span>**Campo[1, 2, ...]**<br/> | Campos do subobjeto. Campos específicos para cada tipo de subobjeto são descritos abaixo.<br/> |
 
 
 
 
-Lista de tipos de subobjetos:
+Lista de tipos de subobjeto:
 -   [StateObjectConfig](#stateobjectconfig)
 -   [GlobalRootSignature](#globalrootsignature)
 -   [LocalRootSignature](#localrootsignature)
@@ -54,9 +54,9 @@ Lista de tipos de subobjetos:
 
 ## <a name="stateobjectconfig"></a>StateObjectConfig
 
-O tipo de subobjeto StateObjectConfig corresponde a uma estrutura [D3D12_STATE_OBJECT_CONFIG](/windows/win32/api/d3d12/ns-d3d12-d3d12_state_object_config) .
+O tipo de subobjeto StateObjectConfig corresponde a uma [D3D12_STATE_OBJECT_CONFIG](/windows/win32/api/d3d12/ns-d3d12-d3d12_state_object_config) estrutura.
 
-Ele tem um campo, um sinalizador de bit, que é um ou ambos
+Ele tem um campo, um sinalizador bit a bit, que é um ou ambos
 
 * STATE_OBJECT_FLAGS_ALLOW_LOCAL_DEPENDENCIES_ON_EXTERNAL_DEFINITONS
 * STATE_OBJECT_FLAGS_ALLOW_EXTERNAL_DEPENDENCIES_ON_LOCAL_DEFINITIONS
@@ -73,9 +73,9 @@ StateObjectConfig MyStateObjectConfig =
 ```
 
 ## <a name="globalrootsignature"></a>GlobalRootSignature
-Um GlobalRootSignature corresponde a uma estrutura de [D3D12_GLOBAL_ROOT_SIGNATURE](/windows/win32/api/d3d12/ns-d3d12-d3d12_global_root_signature) .
+Um GlobalRootSignature corresponde a uma [estrutura D3D12_GLOBAL_ROOT_SIGNATURE](/windows/win32/api/d3d12/ns-d3d12-d3d12_global_root_signature) dados.
 
-Os campos consistem em um número de cadeias de caracteres que descrevem as partes da assinatura raiz. Para referência sobre isso, consulte [especificando assinaturas raiz no HLSL](../direct3d12/specifying-root-signatures-in-hlsl.md).
+Os campos consistem em um número de cadeias de caracteres que descrevem as partes da assinatura raiz. Para referência sobre isso, consulte [Especificando assinaturas raiz em HLSL.](../direct3d12/specifying-root-signatures-in-hlsl.md)
 
 Exemplo:
 ```
@@ -89,9 +89,9 @@ GlobalRootSignature MyGlobalRootSignature =
 ```
 
 ## <a name="localrootsignature"></a>LocalRootSignature
-Um LocalRootSignature corresponde a uma estrutura de [D3D12_LOCAL_ROOT_SIGNATURE](/windows/win32/api/d3d12/ns-d3d12-d3d12_local_root_signature) .
+Um LocalRootSignature corresponde a uma [estrutura D3D12_LOCAL_ROOT_SIGNATURE](/windows/win32/api/d3d12/ns-d3d12-d3d12_local_root_signature) dados.
 
-Assim como o subobjeto de assinatura de raiz global, os campos consistem em algum número de cadeias de caracteres que descrevem as partes da assinatura raiz. Para referência sobre isso, consulte [especificando assinaturas raiz no HLSL](../direct3d12/specifying-root-signatures-in-hlsl.md).
+Assim como o subobjeto de assinatura raiz global, os campos consistem em um número de cadeias de caracteres que descrevem as partes da assinatura raiz. Para referência sobre isso, consulte [Especificando assinaturas raiz em HLSL.](../direct3d12/specifying-root-signatures-in-hlsl.md)
 
 Exemplo:
 ```
@@ -102,11 +102,11 @@ LocalRootSignature MyLocalRootSignature =
 ```
 
 ## <a name="subobjecttoexportsassocation"></a>SubobjectToExportsAssocation
-Por padrão, um subobjeto meramente declarado na mesma biblioteca como uma exportação é capaz de aplicar a essa exportação. No entanto, os aplicativos têm a capacidade de substituí-lo e obter informações específicas sobre qual subobjeto é capaz de exportar. No HLSL, essa "Associação explícita" é feita usando SubobjectToExportsAssocation.
+Por padrão, um subobjeto simplesmente declarado na mesma biblioteca que uma exportação é capaz de aplicar a essa exportação. No entanto, os aplicativos têm a capacidade de substituir isso e ser específicos sobre qual subobjeto vai com qual exportação. No HLSL, essa "associação explícita" é feita usando SubobjectToExportsAssocation.
 
-Um SubobjectToExportsAssocation corresponde a uma estrutura de [D3D12_DXIL_SUBOBJECT_TO_EXPORTS_ASSOCIATION ](/windows/win32/api/d3d12/ns-d3d12-d3d12_dxil_subobject_to_exports_association) .
+Um SubobjectToExportsAssocation corresponde a uma [estrutura D3D12_DXIL_SUBOBJECT_TO_EXPORTS_ASSOCIATION ](/windows/win32/api/d3d12/ns-d3d12-d3d12_dxil_subobject_to_exports_association) dados.
 
-Este subobjeto é declarado com a sintaxe
+Esse subobjeto é declarado com a sintaxe
 
 ``` syntax
 SubobjectToExportsAssocation Name = 
@@ -118,9 +118,9 @@ SubobjectToExportsAssocation Name =
 
 | Item                                                                                         | Descrição                                                                            |
 |----------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------|
-| <span id="Name"></span><span id="name"></span><span id="NAME"></span>**Nomes**<br/>     | Uma cadeia de caracteres ASCII que identifica exclusivamente o nome da variável.<br/>                 |
-| <span id="SubobjectName"></span><span id="subobjectname"></span><span id="SUBOBJECTNAME"></span>**Subobjectname**<br/>     | Cadeia de caracteres que identifica um subobjeto exportado.<br/> |
-| <span id="Exports"></span><span id="exports"></span><span id="EXPORTS"></span>**Port**<br/> | Cadeia de caracteres que contém uma lista delimitada por ponto e vírgula de exportações.<br/> |
+| <span id="Name"></span><span id="name"></span><span id="NAME"></span>**Nome**<br/>     | Uma cadeia de caracteres ASCII que identifica exclusivamente o nome da variável.<br/>                 |
+| <span id="SubobjectName"></span><span id="subobjectname"></span><span id="SUBOBJECTNAME"></span>**SubobjectName**<br/>     | Cadeia de caracteres que identifica um subobjeto exportado.<br/> |
+| <span id="Exports"></span><span id="exports"></span><span id="EXPORTS"></span>**Exportações**<br/> | Cadeia de caracteres que contém uma lista delimitada por ponto e vírgula de exportações.<br/> |
 
 
 Exemplo:
@@ -132,13 +132,13 @@ SubobjectToExportsAssociation MyLocalRootSignatureAssociation =
 };
 ```
 
-Observe que os dois campos usam nomes *exportados* . Um nome exportado pode ser diferente do nome original em HLSL, se o aplicativo optar por fazer a exportação e renomear.
+Observe que ambos os campos usam *nomes exportados.* Um nome exportado pode ser diferente do nome original em HLSL, se o aplicativo optar por fazer a renomeação de exportação.
 
 ## <a name="raytracingshaderconfig"></a>RaytracingShaderConfig
 
-Um RaytracingShaderConfig corresponde a uma estrutura de [D3D12_RAYTRACING_SHADER_CONFIG](/windows/win32/api/d3d12/ns-d3d12-d3d12_raytracing_shader_config) .
+Um RaytracingShaderConfig corresponde a uma [estrutura D3D12_RAYTRACING_SHADER_CONFIG](/windows/win32/api/d3d12/ns-d3d12-d3d12_raytracing_shader_config) dados.
 
-Este subobjeto é declarado com a sintaxe
+Esse subobjeto é declarado com a sintaxe
 
 ``` syntax
 RaytracingShaderConfig Name = 
@@ -150,9 +150,9 @@ RaytracingShaderConfig Name =
 
 | Item                                                                                         | Descrição                                                                            |
 |----------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------|
-| <span id="Name"></span><span id="name"></span><span id="NAME"></span>**Nomes**<br/>     | Uma cadeia de caracteres ASCII que identifica exclusivamente o nome da variável.<br/>                 |
-| <span id="MaxPayloadSize"></span><span id="maxpayloadsize"></span><span id="MAXPAYLOADSIZE"></span>**MaxPayloadSize**<br/>     | Valor numérico para o armazenamento máximo de escalares (contado como 4 bytes cada) em Ray payloads para sombreadores raytracing associados.<br/> |
-| <span id="MaxAttributeSize"></span><span id="maxattributesize"></span><span id="MAXATTRIBUTESIZE"></span>**MaxAttributeSize**<br/> | Valor numérico para o número máximo de escalares (contado como 4 bytes cada) que pode ser usado para atributos em sombreadores raytracing associados. O valor não pode exceder [D3D12_RAYTRACING_MAX_ATTRIBUTE_SIZE_IN_BYTES](../direct3d12/constants.md).<br/> |
+| <span id="Name"></span><span id="name"></span><span id="NAME"></span>**Nome**<br/>     | Uma cadeia de caracteres ASCII que identifica exclusivamente o nome da variável.<br/>                 |
+| <span id="MaxPayloadSize"></span><span id="maxpayloadsize"></span><span id="MAXPAYLOADSIZE"></span>**MaxPayloadSize**<br/>     | Valor numérico para o armazenamento máximo para escalares (contados como 4 bytes cada) em cargas de raio para sombreadores de raio associados.<br/> |
+| <span id="MaxAttributeSize"></span><span id="maxattributesize"></span><span id="MAXATTRIBUTESIZE"></span>**MaxAttributeSize**<br/> | Valor numérico para o número máximo de escalares (contados como 4 bytes cada) que podem ser usados para atributos em sombreadores de raytracing associados. O valor não pode exceder [D3D12_RAYTRACING_MAX_ATTRIBUTE_SIZE_IN_BYTES](../direct3d12/constants.md).<br/> |
 
 
 Exemplo:
@@ -166,9 +166,9 @@ RaytracingShaderConfig MyShaderConfig =
 
 ## <a name="raytracingpipelineconfig"></a>RaytracingPipelineConfig
 
-Um RaytracingPipelineConfig corresponde a uma estrutura de [D3D12_RAYTRACING_PIPELINE_CONFIG](/windows/win32/api/d3d12/ns-d3d12-d3d12_raytracing_pipeline_config) .
+Um RaytracingPipelineConfig corresponde a uma [estrutura D3D12_RAYTRACING_PIPELINE_CONFIG](/windows/win32/api/d3d12/ns-d3d12-d3d12_raytracing_pipeline_config) dados.
 
-Este subobjeto é declarado com a sintaxe
+Esse subobjeto é declarado com a sintaxe
 
 ``` syntax
 RaytracingPipelineConfig Name = 
@@ -179,8 +179,8 @@ RaytracingPipelineConfig Name =
 
 | Item                                                                                         | Descrição                                                                            |
 |----------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------|
-| <span id="Name"></span><span id="name"></span><span id="NAME"></span>**Nomes**<br/>     | Uma cadeia de caracteres ASCII que identifica exclusivamente o nome da variável.<br/>                 |
-| <span id="MaxTraceRecursionDepth"></span><span id="maxtracerecursiondepth"></span><span id="MAXTRACERECURSIONDEPTH"></span>**MaxTraceRecursionDepth**<br/>     | Limite numérico a ser usado para Ray recursão no pipeline raytracing. É um número entre 0 e 31, inclusive. <br/> |
+| <span id="Name"></span><span id="name"></span><span id="NAME"></span>**Nome**<br/>     | Uma cadeia de caracteres ASCII que identifica exclusivamente o nome da variável.<br/>                 |
+| <span id="MaxTraceRecursionDepth"></span><span id="maxtracerecursiondepth"></span><span id="MAXTRACERECURSIONDEPTH"></span>**MaxTraceRecursionDepth**<br/>     | Limite numérico a ser usado para recursão de raio no pipeline de raytracing. É um número entre 0 e 31, inclusive. <br/> |
 
 
 Exemplo:
@@ -190,15 +190,15 @@ RaytracingPipelineConfig MyPipelineConfig =
     1  // Max trace recursion depth
 };
 ```
-Como há um custo de desempenho para recursão de raytracing, os aplicativos devem usar a profundidade de recursão mais baixa necessária para os resultados desejados.
+Como há um custo de desempenho para a recursão de raios, os aplicativos devem usar a profundidade de recursão mais baixa necessária para os resultados desejados.
 
-Se as invocações do sombreador ainda não atingiram a profundidade máxima de recursão, elas poderão chamar [TraceRay](../direct3d12/traceray-function.md) várias vezes. Mas se eles atingirem ou excederem a profundidade máxima de recursão, chamar TraceRay colocará o dispositivo em estado removido. Portanto, os sombreadores raytracing devem tomar cuidado para parar de chamar TraceRay se atingiram ou excederam a profundidade máxima de recursão.
+Se as invocações de sombreador ainda não atingirem a profundidade máxima de recursão, elas poderão chamar [TraceRay](../direct3d12/traceray-function.md) várias vezes. Mas se eles atingirem ou excederem a profundidade máxima de recursão, chamar TraceRay colocará o dispositivo no estado removido. Portanto, sombreadores de raios devem ter cuidado para parar de chamar TraceRay se eles excederam ou excederam a profundidade máxima de recursão.
 
 ## <a name="trianglehitgroup"></a>TriangleHitGroup
 
-Um TriangleHitGroup corresponde a uma estrutura de [D3D12_HIT_GROUP_DESC](/windows/win32/api/d3d12/ns-d3d12-d3d12_hit_group_desc) cujo campo de tipo está definido como [D3D12_HIT_GROUP_TYPE_TRIANGLES](/windows/win32/api/d3d12/ne-d3d12-d3d12_hit_group_type#constants).
+Um TriangleHitGroup corresponde a uma [estrutura D3D12_HIT_GROUP_DESC](/windows/win32/api/d3d12/ns-d3d12-d3d12_hit_group_desc) cujo campo Type está definido como [D3D12_HIT_GROUP_TYPE_TRIANGLES](/windows/win32/api/d3d12/ne-d3d12-d3d12_hit_group_type#constants).
 
-Este subobjeto é declarado com a sintaxe
+Esse subobjeto é declarado com a sintaxe
 
 ``` syntax
 TriangleHitGroup Name = 
@@ -210,9 +210,9 @@ TriangleHitGroup Name =
 
 | Item                                                                                         | Descrição                                                                            |
 |----------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------|
-| <span id="Name"></span><span id="name"></span><span id="NAME"></span>**Nomes**<br/>     | Uma cadeia de caracteres ASCII que identifica exclusivamente o nome da variável.<br/>                 |
-| <span id="AnyHitShader"></span><span id="anyhitshader"></span><span id="ANYHITSHADER"></span>**AnyHitShader**<br/>     | Nome da cadeia de caracteres do sombreador anyhit para o grupo de acesso ou uma cadeia de caracteres vazia.<br/> |
-| <span id="ClosestHitShader"></span><span id="closesthitshader"></span><span id="CLOSESTHITSHADER"></span>**ClosestHitShader**<br/> | Nome da cadeia de caracteres do sombreador de clique mais próximo para o grupo de acesso ou uma cadeia de caracteres vazia.<br/> |
+| <span id="Name"></span><span id="name"></span><span id="NAME"></span>**Nome**<br/>     | Uma cadeia de caracteres ASCII que identifica exclusivamente o nome da variável.<br/>                 |
+| <span id="AnyHitShader"></span><span id="anyhitshader"></span><span id="ANYHITSHADER"></span>**AnyHitShader**<br/>     | Nome da cadeia de caracteres do sombreador anyhit para o grupo de acertos ou uma cadeia de caracteres vazia.<br/> |
+| <span id="ClosestHitShader"></span><span id="closesthitshader"></span><span id="CLOSESTHITSHADER"></span>**ClosestHitShader**<br/> | Nome da cadeia de caracteres do sombreador de acerto mais próximo para o grupo de acertos ou uma cadeia de caracteres vazia.<br/> |
 
 
 Exemplo:
@@ -224,7 +224,7 @@ TriangleHitGroup MyHitGroup =
 };
 ```
 
-Observe que os dois campos usam nomes *exportados* . Um nome exportado pode ser diferente do nome original em HLSL, se o aplicativo optar por fazer a exportação e renomear.
+Observe que ambos os campos usam *nomes exportados.* Um nome exportado pode ser diferente do nome original em HLSL, se o aplicativo optar por fazer a renomeação de exportação.
 
 ## <a name="proceduralprimitivehitgroup"></a>ProceduralPrimitiveHitGroup
 

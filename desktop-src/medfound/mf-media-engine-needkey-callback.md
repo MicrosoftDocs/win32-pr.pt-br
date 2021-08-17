@@ -1,19 +1,19 @@
 ---
-description: O atributo que é passado no IMFMediaEngineNeedKeyNotify para o mecanismo de mídia na criação.
+description: Atributo que é passado no IMFMediaEngineNeedKeyNotify para o mecanismo de mídia na criação.
 ms.assetid: B9625B3C-00AC-4F46-BD76-5C77822F5829
 title: MF_MEDIA_ENGINE_NEEDKEY_CALLBACK atributo
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c3de502bbe1d7f83dfd8ee7478e20786244f654e
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: 3bec8dd3b802d9fc378d43648ad1d29dd30b6573881a044cc9f0d3aba2015cee
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "105763916"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119956306"
 ---
-# <a name="mf_media_engine_needkey_callback-attribute"></a>\_Atributo de \_ retorno de \_ chamada NEEDKEY do mecanismo de mídia MF \_
+# <a name="mf_media_engine_needkey_callback-attribute"></a>Atributo DE RETORNO DE \_ CHAMADA \_ \_ NEEDKEY \_ DO MECANISMO DE MÍDIA MF
 
-O atributo que é passado no [**IMFMediaEngineNeedKeyNotify**](/windows/desktop/api/mfmediaengine/nn-mfmediaengine-imfmediaengineneedkeynotify) para o mecanismo de mídia na criação.
+Atributo que é passado no [**IMFMediaEngineNeedKeyNotify**](/windows/desktop/api/mfmediaengine/nn-mfmediaengine-imfmediaengineneedkeynotify) para o mecanismo de mídia na criação.
 
 ## <a name="data-type"></a>Tipo de dados
 
@@ -21,13 +21,13 @@ O atributo que é passado no [**IMFMediaEngineNeedKeyNotify**](/windows/desktop/
 
 ## <a name="getset"></a>Obter/definir
 
-Para obter esse atributo, chame [**IMFAttributes:: getunknown**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getunknown).
+Para obter esse atributo, chame [**IMFAttributes::GetUnknown**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getunknown).
 
-Para definir esse atributo, chame [**IMFAttributes:: setunknown**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setunknown).
+Para definir esse atributo, chame [**IMFAttributes::SetUnknown**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setunknown).
 
 ## <a name="remarks"></a>Comentários
 
-O valor desse atributo é um ponteiro para a interface [**IMFMediaEngineNeedKeyNotify**](/windows/desktop/api/mfmediaengine/nn-mfmediaengine-imfmediaengineneedkeynotify) , implementado pelo aplicativo.
+O valor desse atributo é um ponteiro para a interface [**IMFMediaEngineNeedKeyNotify,**](/windows/desktop/api/mfmediaengine/nn-mfmediaengine-imfmediaengineneedkeynotify) implementada pelo aplicativo.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -35,9 +35,9 @@ O valor desse atributo é um ponteiro para a interface [**IMFMediaEngineNeedKeyN
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 8.1 \[ apenas aplicativos de área de trabalho\]<br/>                                                 |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012 R2\]<br/>                                      |
-| INSERI<br/>                      | <dl> <dt>Mfmediaengine. idl</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[Windows 8.1 somente aplicativos da área de trabalho\]<br/>                                                 |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 Somente \[ aplicativos da área de trabalho R2\]<br/>                                      |
+| Idl<br/>                      | <dl> <dt>Mfmediaengine.idl</dt> </dl> |
 
 
 
@@ -45,7 +45,7 @@ O valor desse atributo é um ponteiro para a interface [**IMFMediaEngineNeedKeyN
 
 <dl> <dt>
 
-[Lista alfabética de atributos de Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
 </dt> </dl>
 
  

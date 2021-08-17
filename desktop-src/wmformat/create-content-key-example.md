@@ -3,9 +3,9 @@ title: Criar exemplo de chave de conteúdo
 description: Criar exemplo de chave de conteúdo
 ms.assetid: 8e75bac3-d1fb-4a72-8088-fe5ff0899ac2
 keywords:
-- SDK do Windows Media Format, chaves de conteúdo
-- SDK do Windows Media Format, código de exemplo
-- SDK do Windows Media Format, exemplos de código
+- Windows SDK do formato de mídia, chaves de conteúdo
+- Windows SDK do formato de mídia, código de exemplo
+- Windows SDK do formato de mídia, exemplos de código
 - DRM (gerenciamento de direitos digitais), chaves de conteúdo
 - DRM (gerenciamento de direitos digitais), chaves de conteúdo
 - DRM (gerenciamento de direitos digitais), código de exemplo
@@ -21,16 +21,16 @@ keywords:
 - chaves de conteúdo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 881dfd0d318d7d699b44ca9c3f77f22f9acfc689
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: c97c63f55cd825de197ea7e13d9215971e1d3153aabb23ee41924a65f91849c5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104006140"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119931476"
 ---
 # <a name="create-content-key-example"></a>Criar exemplo de chave de conteúdo
 
-A chave de conteúdo é usada para criptografar amostras de mídia para a importação do DRM do Windows Media. O exemplo de código a seguir demonstra como criar e inicializar uma estrutura de chave de conteúdo.
+a chave de conteúdo é usada para criptografar amostras de mídia para Windows importação de DRM de mídia. O exemplo de código a seguir demonstra como criar e inicializar uma estrutura de chave de conteúdo.
 
 
 ```C++
@@ -119,9 +119,9 @@ EXIT:
 [**Exemplos de importação de DRM**](drm-import-examples.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

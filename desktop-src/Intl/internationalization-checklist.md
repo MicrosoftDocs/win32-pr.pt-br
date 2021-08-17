@@ -4,12 +4,12 @@ ms.assetid: cf2ac58e-7fc3-4635-8b82-586a0732b2a3
 title: Lista de verificação de internacionalização
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 22b18ef8cf88efa8d496d19c0b66208cd44abaf7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cd4650f7bd1111f35c911d6efe12bfbec4b537f2cdabdc50160965b5e602708b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103826786"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119147509"
 ---
 # <a name="internationalization-checklist"></a>Lista de verificação de internacionalização
 
@@ -19,7 +19,7 @@ Este tópico fornece ações a serem executadas para criar um código que dê su
     -   Crie ícones e bitmaps para serem significativos e não ofensivos em seus mercados de destino e não contenham texto.
     -   Menus de design e caixas de diálogo para deixar espaço para a expansão de texto. Por exemplo, cadeias de caracteres em inglês geralmente se expandem por 40% quando convertidas em alemão ou holandês.
     -   Não use referências gírias ou culturalmente específicas em mensagens ou elementos de interface do usuário.
-    -   Crie combinações de teclas de atalho que são acessíveis em teclados internacionais. Por exemplo, evite usar chaves de caractere de Pontuação como teclas de atalho porque elas nem sempre são encontradas em teclados internacionais ou facilmente produzidas pelo usuário. Para obter exemplos de layouts de teclado, consulte [layouts de teclado do Windows](https://msdn.microsoft.com/goglobal/bb964651.aspx).
+    -   Crie combinações de teclas de atalho que são acessíveis em teclados internacionais. Por exemplo, evite usar chaves de caractere de Pontuação como teclas de atalho porque elas nem sempre são encontradas em teclados internacionais ou facilmente produzidas pelo usuário. para obter exemplos de layouts de teclado, consulte [Windows layouts de teclado](https://msdn.microsoft.com/goglobal/bb964651.aspx).
     -   Considere as leis locais que afetam os designs de recursos, como requisitos que as entidades governamentais adquirem software que dá suporte a vários idiomas oficiais.
     -   Desenvolva contratos de terceiros que dão suporte aos padrões da interface do usuário internacional da sua organização e às decisões de design.
     -   Use uma terminologia consistente nas cadeias de caracteres da interface do usuário que devem ser convertidas.
@@ -52,7 +52,7 @@ Este tópico fornece ações a serem executadas para criar um código que dê su
 
 -   Compile todas as edições internacionais do programa de um conjunto de arquivos de origem.
     -   Minimize ou elimine os mecanismos que exigem que o código seja recompilado para diferentes edições de idioma.
-    -   Armazene itens localizáveis, como cadeias de caracteres e ícones, em arquivos de recursos do Windows.
+    -   armazene itens localizáveis, como cadeias de caracteres e ícones, em Windows arquivos de recursos.
     -   Armazene documentos em todas as edições de idioma usando o mesmo formato de arquivo.
 
 <!-- -->
@@ -77,7 +77,7 @@ Este tópico fornece ações a serem executadas para criar um código que dê su
     -   Os usuários devem ser capazes de digitar caracteres de scripts não europeus em documentos, caixas de diálogo e nomes de texto.
     -   Os usuários devem ser capazes de recortar, colar, salvar e imprimir caracteres de scripts não europeus com êxito.
     -   A classificação e a conversão de casos devem ser precisas para localidades diferentes.
-    -   O aplicativo deve funcionar corretamente nas edições localizadas do Windows.
+    -   O aplicativo deve funcionar corretamente em edições localizadas do Windows.
 
  
 

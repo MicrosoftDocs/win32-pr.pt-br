@@ -1,23 +1,23 @@
 ---
 description: GUIDs são usados para especificar o tipo de propriedade para propriedades de pacote e propriedades do reconhecedor.
 ms.assetid: 04452eeb-0282-4c4b-afc8-34be7c750f82
-title: GUIDs do reconhecedor
+title: GUIDs do Reconhecedor
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3547bfa155d83b2231a124ba04903436b2974090
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: eb5880464618727ab8226ae137ce5dd84b69cbc4411483b44bdda6c1b7516e7c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105780288"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119455336"
 ---
-# <a name="recognizer-guids"></a>GUIDs do reconhecedor
+# <a name="recognizer-guids"></a>GUIDs do Reconhecedor
 
 GUIDs são usados para especificar o tipo de propriedade para propriedades de pacote e propriedades do reconhecedor.
 
 ## <a name="in-this-section"></a>Nesta seção
 
--   [GUIDs de pacote](packetproperty-guids.md)
+-   [PacketProperty GUIDs](packetproperty-guids.md)
 -   [GUIDs de propriedade](property-guids.md)
 
  

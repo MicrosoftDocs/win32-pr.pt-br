@@ -1,17 +1,17 @@
 ---
-description: Reprodução de fluxos de áudio do karaokê
+description: reproduzindo Fluxos de áudio do karaokê
 ms.assetid: 1a8d0f42-35b8-4743-9ae7-619b99936f76
-title: Reprodução de fluxos de áudio do karaokê
+title: reproduzindo Fluxos de áudio do karaokê
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 907bfa3e359915cf537de75cdc739630fe607d97
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: b10912761034feb9ed82c85625324cd3091514b2c492c66b4e49af711d7d2152
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105759493"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119213296"
 ---
-# <a name="playing-karaoke-audio-streams"></a>Reprodução de fluxos de áudio do karaokê
+# <a name="playing-karaoke-audio-streams"></a>reproduzindo Fluxos de áudio do karaokê
 
 O navegador de DVD pode reproduzir discos DVD-Video com fluxos de áudio do karaokê, mas a reprodução do karaokê também requer um decodificador que dá suporte à mixagem de karaokê multicanal. Especificamente, o decodificador deve dar suporte ao [**conjunto de propriedades do DVD karaokê**](dvd-karaoke-property-set.md) (am \_ Property \_ DVDKARAOKE).
 

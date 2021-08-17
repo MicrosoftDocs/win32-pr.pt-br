@@ -4,12 +4,12 @@ ms.assetid: 3bdc37da-227c-4be1-bf0b-99704b8acbe1
 title: Mensagem de WM_ERASEBKGND (WinUser. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7dccde6ab4efa8a6589fe7d422dd9e1c04e425f9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1c74c3b0d1dd2e31e88715d0668f53676759c27cb986b6549fe9e001ab394579
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104170447"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119931776"
 ---
 # <a name="wm_erasebkgnd-message"></a>Mensagem do WM \_ ERASEBKGND
 
@@ -40,7 +40,7 @@ Este parâmetro não é usado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **LRESULT**
 
@@ -60,7 +60,7 @@ Um aplicativo deve retornar diferente de zero em resposta ao **WM \_ ERASEBKGND*
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                                               |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                     |
-| Cabeçalho<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
 
 
 

@@ -1,5 +1,5 @@
 ---
-description: 'Saiba mais sobre: métodos EsentBadLogSignatureException'
+description: 'Saiba mais sobre: Métodos EsentBadLogSignatureException'
 title: 'Métodos EsentBadLogSignatureException '
 TOCTitle: EsentBadLogSignatureException methods
 ms:assetid: Methods.T:Microsoft.Isam.Esent.Interop.EsentBadLogSignatureException
@@ -7,19 +7,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55101076
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 8d78e9d823a42c1887a71600219aef6a26f2f0cf
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 353f4b8e81c54cb83507008a2aaf635b6937bf24773baaeb49471f13345eb2ac
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103663110"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119365976"
 ---
 # <a name="esentbadlogsignatureexception-methods"></a>Métodos EsentBadLogSignatureException 
 
 Incluir membros protegidos  
 Incluir membros herdados  
 
-O tipo [EsentBadLogSignatureException](./esentbadlogsignatureexception-class.md) expõe os membros a seguir.
+O [tipo EsentBadLogSignatureException](./esentbadlogsignatureexception-class.md) expõe os membros a seguir.
 
 ## <a name="methods"></a>Métodos
 
@@ -44,7 +44,7 @@ O tipo [EsentBadLogSignatureException](./esentbadlogsignatureexception-class.md)
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><a href="/dotnet/api/system.exception.getbaseexception#System_Exception_GetBaseException">GetBaseException</a></td>
+<td><a href="/dotnet/api/system.exception.getbaseexception#System_Exception_GetBaseException">Getbaseexception</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="even">
@@ -59,12 +59,12 @@ O tipo [EsentBadLogSignatureException](./esentbadlogsignatureexception-class.md)
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><a href="/dotnet/api/system.exception.gettype#System_Exception_GetType">GetType</a></td>
+<td><a href="/dotnet/api/system.exception.gettype#System_Exception_GetType">Gettype</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Método protegido" alt="Protected method" /></td>
-<td><a href="/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">MemberwiseClone</a></td>
+<td><a href="/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Memberwiseclone</a></td>
 <td>(Herdado do <a href="/dotnet/api/system.object">objeto</a>.)</td>
 </tr>
 <tr class="even">
@@ -84,4 +84,4 @@ Parte superior
 
 [Classe EsentBadLogSignatureException](./esentbadlogsignatureexception-class.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -4,16 +4,16 @@ ms.assetid: 48259444-bf7b-4f0e-9068-2bdf89dde694
 title: Enumeração TAPIControlFlags (Ipmsp. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 07cc3e931c69a408d996fa28e6002b6c53c9df87
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 278cc2328335409d4ffcc95ea136826d121acd57776f98aaad947c8fb9ee5d93
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105788043"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119139799"
 ---
 # <a name="tapicontrolflags-enumeration"></a>Enumeração TAPIControlFlags
 
-\[ Essa enumeração não está disponível para uso no Windows Vista, no Windows Server 2008 e em versões subsequentes do sistema operacional. A API do cliente RTC fornece funcionalidade semelhante.\]
+\[essa enumeração não está disponível para uso no Windows Vista, no Windows Server 2008 e em versões subsequentes do sistema operacional. A API do cliente RTC fornece funcionalidade semelhante.\]
 
 A enumeração **TAPIControlFlags** é usada por vários métodos para indicar se uma determinada propriedade é controlada automaticamente ou manualmente.
 
@@ -58,7 +58,7 @@ A propriedade é controlada manualmente.
 | Requisito | Valor |
 |-------------------------|------------------------------------------------------------------------------------|
 | Versão da TAPI<br/> | Requer TAPI 3,1<br/>                                                       |
-| parâmetro<br/>       | <dl> <dt>Ipmsp. h</dt> </dl> |
+| Cabeçalho<br/>       | <dl> <dt>Ipmsp. h</dt> </dl> |
 
 
 

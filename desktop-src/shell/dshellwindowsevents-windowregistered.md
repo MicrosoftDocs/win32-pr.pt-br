@@ -13,12 +13,12 @@ api_type:
 api_location:
 - Shdocvw.dll
 ms.assetid: 7faf758a-daa0-47f5-9f95-61fe3d8286ea
-ms.openlocfilehash: 64bf83a88584c5d97994726696d4fb3a1e971bdf
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: 7ad7270f9054b875eabcb1fd9f5a7ab2e299a5916d55ef4630988921b6b2f4ab
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109841447"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119455566"
 ---
 # <a name="dshellwindowseventswindowregistered-method"></a>Método DShellWindowsEvents. WindowRegistered
 
@@ -48,7 +48,7 @@ O cookie que identifica a janela que foi registrada.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 
@@ -77,7 +77,7 @@ Uma janela recebe um cookie quando é registrada como uma janela do Shell. Para 
 [**WindowRevoked**](dshellwindowsevents-windowrevoked.md)
 </dt> <dt>
 
-[**Registre-se**](/windows/desktop/api/Exdisp/nf-exdisp-ishellwindows-register)
+[**Registr**](/windows/desktop/api/Exdisp/nf-exdisp-ishellwindows-register)
 </dt> <dt>
 
 [**RegisterPending**](/windows/desktop/api/Exdisp/nf-exdisp-ishellwindows-registerpending)

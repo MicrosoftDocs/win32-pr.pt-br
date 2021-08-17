@@ -1,9 +1,9 @@
 ---
-title: 'Função RWStructuredBuffer:: IncrementCounter (Httpserv. h)'
+title: Função RWStructuredBuffer::IncrementCounter (Httpserv.h)
 description: Incrementa o contador oculto do objeto.
 ms.assetid: 66385d4f-6db8-49ae-a73a-49089695f5ee
 keywords:
-- HLSL da função IncrementCounter
+- Função IncrementCounter HLSL
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c0002f82873de1c56ce5a7d79c9adb13bdf7ebc0
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: c39a857fc9a7a108cea05060caf86ce61479a382c5160f4f051c11423bc6a5d3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104298748"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120095166"
 ---
 # <a name="incrementcounter-function"></a>Função IncrementCounter
 
@@ -39,11 +39,11 @@ Essa função não tem parâmetros.
 
 Tipo: **uint**
 
-O valor do contador incrementado previamente.
+O valor do contador pré-incrementado.
 
 ## <a name="remarks"></a>Comentários
 
-O modo de exibição de acesso não ordenado associado deve ter o [**\_ \_ \_ \_ contador de sinalizador UAV de buffer de D3D11**](/windows/desktop/api/d3d11/ne-d3d11-d3d11_buffer_uav_flag) definido durante a criação para que esse método funcione.
+A exibição de acesso não organizado vinculada deve ter O CONTADOR DE SINALIZADOR [**\_ \_ UAV \_ \_ de BUFFER D3D11**](/windows/desktop/api/d3d11/ne-d3d11-d3d11_buffer_uav_flag) definido durante a criação para que esse método funcione.
 
 Um recurso estruturado pode ser indexado ainda mais com base nos nomes de componentes das estruturas.
 
@@ -51,7 +51,7 @@ Essa função tem suporte para os seguintes tipos de sombreadores:
 
 
 
-| Vértice | Envoltória | Domínio | Geometria | 16x16 | Computação |
+| Vértice | Casco | Domínio | Geometry | Pixel | Computação |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | x     | x       |
 
@@ -65,7 +65,7 @@ Essa função tem suporte para os seguintes tipos de sombreadores:
 
 | Requisito | Valor |
 |-------------------|---------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>Httpserv. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>Httpserv.h</dt> </dl> |
 
 
 

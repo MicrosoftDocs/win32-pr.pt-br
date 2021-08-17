@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 64f5138dc1794e9b2714e5f64762c1af17b47fb2
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 86ec4612bc1bd5db1a8cdcbecdced51911591cdf5c482c83381f86deafd66a9e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104293083"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119066956"
 ---
 # <a name="nocode-attribute"></a>atributo Nocode
 
@@ -86,7 +86,7 @@ Especifica os atributos que se aplicam à função como um todo, como o **\[** [
 
 </dd> <dt>
 
-*nome da função* 
+*Nome da função* 
 </dt> <dd>
 
 Especifica o nome da função, conforme definido no arquivo IDL.
@@ -150,9 +150,9 @@ O atributo **\[ Nocode \]** é ignorado quando stubs de servidor são gerados. V
 [**\_identificador implícito**](implicit-handle.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

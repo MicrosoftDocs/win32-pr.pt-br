@@ -4,12 +4,12 @@ ms.assetid: b5e99ad1-1698-483c-8173-796af33085c4
 title: Mensagens de erro do manipulador de protocolo de pesquisa (Searchapi. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 297ea44c367069a5558355cf6fe81cd9db57ee53
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4473e3e235641e5b4bb5d86313b4154cd00ec029fe96d42d8964dab51f33780f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104090076"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118969725"
 ---
 # <a name="search-protocol-handler-error-messages"></a>Mensagens de erro do manipulador de protocolo de pesquisa
 
@@ -40,10 +40,10 @@ Mensagens de erro retornadas por manipuladores de protocolo:
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows XP com SP2, \[ somente aplicativos da área de trabalho do Windows Vista\]<br/>                    |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                   |
-| Redistribuível<br/>          | Windows Desktop Search (WDS) 3,0<br/>                                            |
-| parâmetro<br/>                   | <dl> <dt>Searchapi. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows XP com SP2, somente aplicativos do Windows Vista \[ desktop\]<br/>                    |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                   |
+| Redistribuível<br/>          | Windows Pesquisa de desktop (WDS) 3,0<br/>                                            |
+| Cabeçalho<br/>                   | <dl> <dt>Searchapi. h</dt> </dl> |
 
 
 

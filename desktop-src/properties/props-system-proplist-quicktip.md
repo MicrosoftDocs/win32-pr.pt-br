@@ -4,12 +4,12 @@ ms.assetid: 4ebc928c-3f31-4322-8c0b-ee0eb2bf5a0f
 title: System. PropList. QuickTip
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 784320c7ef30a1a5babe411fdb9f79825d6995f7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d2ccb648f3882247b6b4216f41aa711daf2bb29589a60634160129766f93a4af
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103828122"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119095828"
 ---
 # <a name="systemproplistquicktip"></a>System. PropList. QuickTip
 

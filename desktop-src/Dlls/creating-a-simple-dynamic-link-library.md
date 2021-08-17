@@ -1,23 +1,23 @@
 ---
 description: O exemplo a seguir é o código-fonte necessário para criar uma DLL simples, Myputs.dll.
 ms.assetid: 3b11a83b-9943-4b66-8d0d-4a236ad5ffb8
-title: Criando uma biblioteca simples de Dynamic-Link
+title: Criando uma biblioteca de Dynamic-Link simples
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 572c25c87a3130739a55fcccfc9d8f9c6514d812
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 47c3708f98c6b916c54940bc1667ebc4827b29c78596f55102331491aca29e65
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105782825"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119963786"
 ---
-# <a name="creating-a-simple-dynamic-link-library"></a>Criando uma biblioteca simples de Dynamic-Link
+# <a name="creating-a-simple-dynamic-link-library"></a>Criando uma biblioteca de Dynamic-Link simples
 
-O exemplo a seguir é o código-fonte necessário para criar uma DLL simples, Myputs.dll. Ele define uma função de impressão de cadeia de caracteres simples chamada mycolocar. A DLL mycolocar não define uma função de ponto de entrada, porque está vinculada à biblioteca de tempo de execução C e não tem funções de inicialização ou limpeza próprias para executar.
+O exemplo a seguir é o código-fonte necessário para criar uma DLL simples, Myputs.dll. Ele define uma função de impressão de cadeia de caracteres simples chamada myPuts. A DLL myputs não define uma função de ponto de entrada, pois está vinculada à biblioteca em tempo de execução C e não tem nenhuma função de inicialização ou limpeza própria para executar.
 
 Para criar a DLL, siga as instruções na documentação incluída com suas ferramentas de desenvolvimento.
 
-Para obter um exemplo que usa mycolocações, consulte [usando Load-Time vinculação dinâmica](using-load-time-dynamic-linking.md) ou [usando Run-Time vinculação dinâmica](using-run-time-dynamic-linking.md).
+Para ver um exemplo que usa myPuts, consulte [Using Load-Time Dynamic Linking or](using-load-time-dynamic-linking.md) Using Run-Time Dynamic [Linking](using-run-time-dynamic-linking.md).
 
 
 ```C++

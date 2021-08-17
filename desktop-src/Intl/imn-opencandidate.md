@@ -4,12 +4,12 @@ ms.assetid: 439ff125-2731-4eb1-8287-4ca8ace7d8ec
 title: Evento de IMN_OPENCANDIDATE (IMM. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 27f8f412c60cc6b62904e562d450479af642de0c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4dbf6db7415a62b6d77925a4fb7106b70f0b42d77f922e0c1b6df76e71d10c43
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103828576"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119147629"
 ---
 # <a name="imn_opencandidate-event"></a>\_Evento IMN OPENCANDIDATE
 
@@ -58,7 +58,7 @@ Por padrão, a janela do IME cria uma janela candidata quando processa esse coma
 |-------------------------------------|------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                                           |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                 |
-| Cabeçalho<br/>                   | <dl> <dt>IMM. h (incluir Windows. h)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Imm. h (incluir Windows. h)</dt> </dl> |
 
 
 

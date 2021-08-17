@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 379cdf49a6ee1a467a0e5120e841e4d2179447be
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: e6aee5dd8a93611cf485286b4f833257a9e2525c96ed476ab55e7da32c645ccb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105762831"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119442136"
 ---
 # <a name="omt-guid-attribute"></a>OMT-Guid atributo
 
@@ -36,7 +36,7 @@ O identificador exclusivo para uma entrada de tabela link-Track-Object-move.
 | Frequência de atualização  | Sempre que o link de um arquivo é alterado.                 |
 | Attribute-Id      | 1.2.840.113556.1.4.505                                |
 | System-ID-GUID    | ddac0cf3-af8f-11d0-afeb-00c04fd930c9                  |
-| Syntax            | [**Objeto (link de réplica)**](s-object-replica-link.md) |
+| Sintaxe            | [**Objeto (link de réplica)**](s-object-replica-link.md) |
 
 
 
@@ -108,7 +108,7 @@ O identificador exclusivo para uma entrada de tabela link-Track-Object-move.
 | Range-Upper            | 16                                                             |
 | Search-Flags           | 0x00000000                                                     |
 | System-Flags           | 0x00000010                                                     |
-| Classes usadas em        | [**Link-Track-OMT-entry**](c-linktrackomtentry.md)<br/> |
+| Classes usadas em        | [**Link-Track-OMT-Entry**](c-linktrackomtentry.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ O identificador exclusivo para uma entrada de tabela link-Track-Object-move.
 | ID do link                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | Falso                                                          |
-| É de valor único       | True                                                           |
+| Tem valor único       | True                                                           |
 | É indexado             | Falso                                                          |
-| No catálogo global      | Falso                                                          |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                   |
+| No Catálogo Global      | Falso                                                          |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                   |
 | Range-Lower            | 0                                                              |
 | Range-Upper            | 16                                                             |
 | Search-Flags           | 0x00000000                                                     |
 | System-Flags           | 0x00000010                                                     |
-| Classes usadas em        | [**Link-Track-OMT-entry**](c-linktrackomtentry.md)<br/> |
+| Classes usadas em        | [**Link-Track-OMT-Entry**](c-linktrackomtentry.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ O identificador exclusivo para uma entrada de tabela link-Track-Object-move.
 | ID do link                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | Falso                                                          |
-| É de valor único       | True                                                           |
+| Tem valor único       | True                                                           |
 | É indexado             | Falso                                                          |
-| No catálogo global      | Falso                                                          |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                   |
+| No Catálogo Global      | Falso                                                          |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                   |
 | Range-Lower            | 0                                                              |
 | Range-Upper            | 16                                                             |
 | Search-Flags           | 0x00000000                                                     |
 | System-Flags           | 0x00000010                                                     |
-| Classes usadas em        | [**Link-Track-OMT-entry**](c-linktrackomtentry.md)<br/> |
+| Classes usadas em        | [**Link-Track-OMT-Entry**](c-linktrackomtentry.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ O identificador exclusivo para uma entrada de tabela link-Track-Object-move.
 | ID do link                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | Falso                                                          |
-| É de valor único       | True                                                           |
+| Tem valor único       | True                                                           |
 | É indexado             | Falso                                                          |
-| No catálogo global      | Falso                                                          |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                   |
+| No Catálogo Global      | Falso                                                          |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                   |
 | Range-Lower            | 0                                                              |
 | Range-Upper            | 16                                                             |
 | Search-Flags           | 0x00000000                                                     |
 | System-Flags           | 0x00000010                                                     |
-| Classes usadas em        | [**Link-Track-OMT-entry**](c-linktrackomtentry.md)<br/> |
+| Classes usadas em        | [**Link-Track-OMT-Entry**](c-linktrackomtentry.md)<br/> |
 
 
 

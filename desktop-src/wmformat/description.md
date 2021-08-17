@@ -1,9 +1,9 @@
 ---
-title: Descrição (SDK do Windows Media Format 11)
-description: O atributo de descrição contém uma descrição do conteúdo do arquivo.
+title: Descrição (Windows SDK de Formato de Mídia 11)
+description: O atributo Description contém uma descrição do conteúdo do arquivo.
 ms.assetid: b9a1dcb1-9e8a-49a0-8dd5-388c929645c3
 keywords:
-- Descrição formato de mídia do Windows
+- Formato de mídia das janelas de descrição
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7e1d2e47f7e320aa3fb66f5090e1bd7bf7c23e84
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: 2976c65317ab4430296948e88a0788a570ba061a41817d06614e970ae022856e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "103917910"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119931366"
 ---
-# <a name="description-windows-media-format-11-sdk"></a>Descrição (SDK do Windows Media Format 11)
+# <a name="description-windows-media-format-11-sdk"></a>Descrição (Windows SDK de Formato de Mídia 11)
 
-O atributo de **Descrição** contém uma descrição do conteúdo do arquivo.
+O **atributo Description** contém uma descrição do conteúdo do arquivo.
 
 ## <a name="global-constant"></a>Constante global
 
@@ -29,13 +29,13 @@ g \_ wszWMDescription
 
 ## <a name="data-type"></a>Tipo de Dados
 
-**Cadeia de caracteres do \_ tipo WMT \_**
+**CADEIA DE CARACTERES DE \_ TIPO \_ WMT**
 
 ## <a name="remarks"></a>Comentários
 
-Esse é um atributo em nível de arquivo.
+Esse é um atributo de nível de arquivo.
 
-Para arquivos MP3 ID3v1, esse atributo é limitado a 30 caracteres.
+Para arquivos ID3v1 MP3, esse atributo é limitado a 30 caracteres.
 
 ## <a name="see-also"></a>Confira também
 

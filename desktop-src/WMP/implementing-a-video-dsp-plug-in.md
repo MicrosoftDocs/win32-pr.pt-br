@@ -1,32 +1,32 @@
 ---
-title: Implementando um plug-in de DSP de vídeo
-description: Implementando um plug-in de DSP de vídeo
+title: Implementando um plug-in DSP de vídeo
+description: Implementando um plug-in DSP de vídeo
 ms.assetid: 36c06c57-7623-430b-8280-9dba7b0a2e9b
 keywords:
-- Plug-ins do Windows Media Player, DSP de vídeo
+- Windows Media Player plug-ins,DSP de vídeo
 - plug-ins, DSP de vídeo
 - plug-ins de processamento de sinal digital, implementando código
-- Plug-ins do DSP, implementando código
-- plug-ins de processamento de sinal digital, modificando código de exemplo
-- Plug-ins do DSP, modificando código de exemplo
+- Plug-ins DSP, implementando código
+- plug-ins de processamento de sinal digital, modificando o código de exemplo
+- Plug-ins DSP, modificando o código de exemplo
 - plug-ins de processamento de sinal digital, implementação de vídeo
-- Plug-ins do DSP, implementação de vídeo
-- plug-ins de DSP de vídeo, implementando código
-- plug-ins de DSP de vídeo, modificando código de exemplo
+- Plug-ins DSP, implementação de vídeo
+- plug-ins DSP de vídeo, implementando código
+- plug-ins DSP de vídeo, modificando o código de exemplo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 43f1b819f328fc586d21208c00b6f0d03dca4fe9
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: d4afdbabd36167c11ef7c1c57aeccb475605f9365c550c572422af3440d760ad
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104292298"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119135699"
 ---
-# <a name="implementing-a-video-dsp-plug-in"></a>Implementando um plug-in de DSP de vídeo
+# <a name="implementing-a-video-dsp-plug-in"></a>Implementando um plug-in DSP de vídeo
 
-Os adaptadores de vídeo do computador dão suporte a um conjunto de formatos de vídeo. Os codecs de vídeo digital também dão suporte a um conjunto de formatos de vídeo. Ao tentar reproduzir um arquivo de vídeo específico, o Windows Media Player deve escolher um formato a ser usado para renderização. O Player tenta encontrar a melhor correspondência entre os formatos suportados pelo codec de vídeo e os formatos suportados pelo adaptador de vídeo, ou seja, aquele que produz a qualidade mais alta.
+Os adaptadores de vídeo do computador são suportados por um conjunto de formatos de vídeo. Os codecs de vídeo digital também são suportados por um conjunto de formatos de vídeo. Ao tentar reproduzir um arquivo de vídeo específico, Windows Media Player deve escolher um formato a ser usado para renderização. O Player tenta encontrar a melhor combinação entre os formatos com suporte pelo codec de vídeo e os formatos com suporte pelo adaptador de exibição de vídeo, ou seja, aquele que produz a qualidade mais alta.
 
-Para criar um plug-in de DSP do Windows Media Player que processa vídeo, primeiro você precisará decidir quais formatos de vídeo deseja que seu plug-in processe. O plug-in DSP de vídeo de exemplo funciona com os seguintes formatos de vídeo:
+Para criar um Windows Media Player plug-in DSP que processa o vídeo, primeiro você precisará decidir quais formatos de vídeo você gostaria que seu plug-in processasse. O plug-in DSP de vídeo de exemplo funciona com os seguintes formatos de vídeo:
 
 -   NV12
 -   YV12
@@ -37,24 +37,24 @@ Para criar um plug-in de DSP do Windows Media Player que processa vídeo, primei
 -   RGB555
 -   RGB565
 
-Quais formatos você escolherá para processar cabe a você. Você pode remover formatos do plug-in de exemplo para que eles não sejam mais suportados e você possa adicionar código para processar formatos adicionais.
+Quais formatos você escolhe para processar são seus. Você pode remover formatos do plug-in de exemplo para que eles não sejam mais suportados e você pode adicionar código para processar formatos adicionais.
 
-As seções a seguir fornecem informações adicionais que você deve saber antes de criar seu próprio plug-in de DSP de vídeo para o Windows Media Player:
+As seções a seguir fornecem informações adicionais que você deve saber antes de criar seu próprio plug-in DSP de vídeo para Windows Media Player:
 
--   [Negociação de formato de vídeo no plug-in de DSP de vídeo de exemplo](video-format-negotiation-in-the-sample-video-dsp-plug-in.md)
--   [DoProcessOutput no plug-in de DSP de vídeo de exemplo](doprocessoutput-in-the-sample-video-dsp-plug-in.md)
--   [Processando o vídeo](processing-the-video.md)
+-   [Negociação de formato de vídeo no plug-in DSP de vídeo de exemplo](video-format-negotiation-in-the-sample-video-dsp-plug-in.md)
+-   [DoProcessOutput no plug-in DSP de vídeo de exemplo](doprocessoutput-in-the-sample-video-dsp-plug-in.md)
+-   [Processamento do vídeo](processing-the-video.md)
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[**Implementando seu código do DSP**](implementing-your-dsp-code.md)
+[**Implementando seu código DSP**](implementing-your-dsp-code.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

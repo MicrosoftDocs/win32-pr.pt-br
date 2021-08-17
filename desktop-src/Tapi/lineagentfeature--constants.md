@@ -4,12 +4,12 @@ ms.assetid: 5953eb49-08ac-4c13-9fd3-df5473f96af8
 title: Constantes de LINEAGENTFEATURE_ (TAPI. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 572246531e4259b5a77c649a251bfe28a138d831
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8bdd0ab13602f1a585697eba955f84cc23b940ec46c577b371a5f42e491c0d8e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105754735"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119060734"
 ---
 # <a name="lineagentfeature_-constants"></a>\_Constantes LINEAGENTFEATURE
 
@@ -84,7 +84,7 @@ A função [**lineSetAgentState**](/windows/desktop/api/Tapi/nf-tapi-linesetagen
 | Requisito | Valor |
 |-------------------------|-----------------------------------------------------------------------------------|
 | Versão da TAPI<br/> | Requer TAPI 2,0 ou posterior<br/>                                             |
-| parâmetro<br/>       | <dl> <dt>TAPI. h</dt> </dl> |
+| Cabeçalho<br/>       | <dl> <dt>TAPI. h</dt> </dl> |
 
 
 

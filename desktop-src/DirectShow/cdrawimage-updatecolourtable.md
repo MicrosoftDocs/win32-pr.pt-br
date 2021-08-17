@@ -1,7 +1,7 @@
 ---
-description: O método UpdateColourTable atualiza a tabela de cores com uma nova paleta.
+description: O método UpdateColorrTable atualiza a tabela de cores com uma nova paleta.
 ms.assetid: 61ad98c6-a526-4aac-ad68-d44fadc668de
-title: Método CDrawImage. UpdateColourTable (Winutil. h)
+title: Método CDrawImage.UpdateColorrTable (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: fcffdf9e7deaaac5a01f6559ee557c978fcda88f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5a53413cd1aaf60c17031f126f0a158629f5c41f8ca94981d293f003afadda8d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105758859"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119384026"
 ---
-# <a name="cdrawimageupdatecolourtable-method"></a>Método CDrawImage. UpdateColourTable
+# <a name="cdrawimageupdatecolourtable-method"></a>Método CDrawImage.UpdateColorrTable
 
 O `UpdateColourTable` método atualiza a tabela de cores com uma nova paleta.
 
@@ -43,7 +43,7 @@ void UpdateColourTable(
 
 <dl> <dt>
 
-*HDC* 
+*Hdc* 
 </dt> <dd>
 
 Contexto do dispositivo que contém a imagem.
@@ -53,11 +53,11 @@ Contexto do dispositivo que contém a imagem.
 *pbmi* 
 </dt> <dd>
 
-Ponteiro para uma estrutura [**BITMAPINFOHEADER**](/windows/win32/api/wingdi/ns-wingdi-bitmapinfoheader) que contém a nova paleta.
+Ponteiro para uma [**estrutura BITMAPINFOHEADER**](/windows/win32/api/wingdi/ns-wingdi-bitmapinfoheader) que contém a nova paleta.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 
@@ -67,8 +67,8 @@ Esse método não retorna um valor.
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Winutil. h (incluir fluxos. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Winutil.h (incluir Fluxos.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

@@ -1,6 +1,6 @@
 ---
 title: Máscara de caneta
-description: Os valores que podem aparecer no campo penMask da estrutura de POINTER_PEN_INFO.
+description: Valores que podem aparecer no campo penMask da estrutura POINTER_PEN_INFO dados.
 ms.assetid: 6A44B701-55E1-41D4-9C4A-807E57441DA4
 topic_type:
 - apiref
@@ -16,16 +16,16 @@ api_type:
 - HeaderDef
 ms.topic: article
 ms.date: 02/03/2020
-ms.openlocfilehash: bd181b5eafbe1cf6de56c95886deb04e5bd6d2b0
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f8b44787dd1039bd3ffd3fa9afef76a527e2143cfe52bdcfa7676c15efa51342
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104085850"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119666107"
 ---
 # <a name="pen-mask"></a>Máscara de caneta
 
-Os valores que podem aparecer no campo **penMask** da estrutura de [**POINTER_PEN_INFO**](/previous-versions/windows/desktop/api) .
+Valores que podem aparecer no campo **penMask** da [**estrutura POINTER_PEN_INFO.**](/previous-versions/windows/desktop/api)
 
 <dl> <dt>
 
@@ -50,7 +50,7 @@ Padrão. Nenhum dos campos opcionais é válido.
 
 
 
-a **pressão** da estrutura de [**POINTER_PEN_INFO**](/previous-versions/windows/desktop/api) é válida.
+**A** pressão da [**estrutura POINTER_PEN_INFO**](/previous-versions/windows/desktop/api) é válida.
 
 
 </dt> </dl> </dd> <dt>
@@ -63,7 +63,7 @@ a **pressão** da estrutura de [**POINTER_PEN_INFO**](/previous-versions/windows
 
 
 
-a **rotação** da estrutura de [**POINTER_PEN_INFO**](/previous-versions/windows/desktop/api) é válida.
+**rotação** da [**estrutura POINTER_PEN_INFO**](/previous-versions/windows/desktop/api) é válida.
 
 
 </dt> </dl> </dd> <dt>
@@ -76,7 +76,7 @@ a **rotação** da estrutura de [**POINTER_PEN_INFO**](/previous-versions/window
 
 
 
-**tiltX** da estrutura de [**POINTER_PEN_INFO**](/previous-versions/windows/desktop/api) é válido.
+**OtexX** da [**estrutura POINTER_PEN_INFO**](/previous-versions/windows/desktop/api) é válida.
 
 
 </dt> </dl> </dd> <dt>
@@ -89,7 +89,7 @@ a **rotação** da estrutura de [**POINTER_PEN_INFO**](/previous-versions/window
 
 
 
-a **inclinação** da estrutura de [**POINTER_PEN_INFO**](/previous-versions/windows/desktop/api) é válida.
+**O meio-dia** da [**estrutura POINTER_PEN_INFO**](/previous-versions/windows/desktop/api) é válida.
 
 
 </dt> </dl> </dd> </dl>
@@ -100,9 +100,9 @@ a **inclinação** da estrutura de [**POINTER_PEN_INFO**](/previous-versions/win
 
 | Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                 |
-| parâmetro<br/>                   | <dl> <dt>WinUser. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[Windows 8 somente aplicativos da área de trabalho\]<br/>                                           |
+| Servidor mínimo com suporte<br/> | \[Windows Server 2012 somente aplicativos da área de trabalho\]<br/>                                 |
+| Cabeçalho<br/>                   | <dl> <dt>Winuser.h</dt> </dl> |
 
 
 

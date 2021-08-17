@@ -17,12 +17,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 14b776d3e451d84c63be5bb61b98ed22081e1a29
-ms.sourcegitcommit: cb87082135319cbdc5df541e3071eebb83a58972
+ms.openlocfilehash: 911ecec0c0ad2cc248bcfdfa2b4e475538d6eff35e8d7bd568df29302b610ee9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111387115"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119137879"
 ---
 # <a name="create-method-of-the-win32_service-class-remote-desktop-services"></a>Método Create da classe Win32_Service (Serviços de Área de Trabalho Remota)
 
@@ -177,7 +177,7 @@ O sistema tenta iniciar com uma configuração válida.
 *StartMode* \[ no\]
 </dt> <dd>
 
-Modo de início do serviço base do Windows.
+modo de início do serviço base de Windows.
 
 <dt>
 
@@ -249,7 +249,7 @@ Nome do grupo associado ao novo serviço. Os grupos de ordem de carregamento est
 *LoadOrderGroupDependencies* \[ no\]
 </dt> <dd>
 
-Matriz de grupos de ordenação de carga que devem iniciar antes desse serviço. Cada item na matriz é delimitado por **NULL** e a lista é encerrada por dois valores **nulos** . Em Visual Basic ou script, você pode passar um vbArray. Se o ponteiro for **nulo** ou se apontar para uma cadeia de caracteres vazia, o serviço não terá dependências. Os nomes de grupo devem ser prefixados pelo **\_ \_ identificador do grupo SC** (definido no arquivo Winsvc. h) para diferenciá-lo de um nome de serviço, pois serviços e grupos de serviço compartilham o mesmo namespace. A dependência de um grupo significa que esse serviço pode ser executado se pelo menos um membro do grupo estiver em execução depois de uma tentativa de iniciar todos os membros do grupo.
+Matriz de grupos de ordenação de carga que devem iniciar antes desse serviço. Cada item na matriz é delimitado por **NULL** e a lista é encerrada por dois valores **nulos** . em Visual Basic ou script, você pode passar um vbArray. Se o ponteiro for **nulo** ou se apontar para uma cadeia de caracteres vazia, o serviço não terá dependências. Os nomes de grupo devem ser prefixados pelo **\_ \_ identificador do grupo SC** (definido no arquivo Winsvc. h) para diferenciá-lo de um nome de serviço, pois serviços e grupos de serviço compartilham o mesmo namespace. A dependência de um grupo significa que esse serviço pode ser executado se pelo menos um membro do grupo estiver em execução depois de uma tentativa de iniciar todos os membros do grupo.
 
 </dd> <dt>
 
@@ -260,7 +260,7 @@ Matriz que contém nomes de serviços que devem ser iniciados antes do início d
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um dos valores listados na lista a seguir ou qualquer outro valor para indicar um erro. Para obter códigos de erro adicionais, [**consulte Constantes de erro WMI**](/windows/desktop/WmiSdk/wmi-error-constants) ou [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para valores **gerais de HRESULT,** consulte [Códigos de erro do sistema.](/windows/desktop/Debug/system-error-codes)
 
@@ -304,7 +304,7 @@ O código de controle pedido não é válido ou é inaceitável para o serviço.
 **5**
 </dt> <dd>
 
-O código de controle solicitado não pode ser enviado para o serviço porque o estado do serviço ( propriedade **State** da classe [**\_ Win32 BaseService)**](/windows/desktop/CIMWin32Prov/win32-baseservice) é igual a 0, 1 ou 2.
+O código de controle solicitado não pode ser enviado ao serviço porque o estado do serviço ( propriedade **State** da classe [**\_ Win32 BaseService)**](/windows/desktop/CIMWin32Prov/win32-baseservice) é igual a 0, 1 ou 2.
 
 </dd> <dt>
 
