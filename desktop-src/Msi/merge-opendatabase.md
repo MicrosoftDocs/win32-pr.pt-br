@@ -1,5 +1,5 @@
 ---
-description: O método OpenDatabase do objeto Merge abre um Windows Installer banco de dados de instalação, localizado em um caminho especificado, que deve ser mesclado com um módulo.
+description: o método OpenDatabase do objeto Merge abre um Windows Installer banco de dados de instalação, localizado em um caminho especificado, que deve ser mesclado com um módulo.
 ms.assetid: 86f168e5-bc76-476d-9757-9b2a21bb9c4b
 title: Método Merge. OpenDatabase (Mergemod. h)
 ms.topic: reference
@@ -14,16 +14,16 @@ api_type:
 - COM
 api_location:
 - Mergemod.dll
-ms.openlocfilehash: 2e200da6fe3f4913e53d96a237cac2b4d4c9b77e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 63736c3346c68f6902c1e35b63be46a7a3f202dfb8ac0254ac448c808bf85bfc
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105810319"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119314886"
 ---
 # <a name="mergeopendatabase-method"></a>Método Merge. OpenDatabase
 
-O método **OpenDatabase** do objeto [**Merge**](merge-object.md) abre um Windows Installer banco de dados de instalação, localizado em um caminho especificado, que deve ser mesclado com um módulo.
+o método **OpenDatabase** do objeto [**Merge**](merge-object.md) abre um Windows Installer banco de dados de instalação, localizado em um caminho especificado, que deve ser mesclado com um módulo.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -47,7 +47,7 @@ Caminho para o banco de dados que está sendo aberto.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 

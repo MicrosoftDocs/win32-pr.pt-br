@@ -7,18 +7,18 @@ keywords:
 - Descritores de segurança em arquivos e chaves do registro ADSI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 11600a495b9a70513b9bd401777e9cdd61449ede
-ms.sourcegitcommit: b0ebdefc3dcd5c04bede94091833aa1015a2f95c
+ms.openlocfilehash: ae567e9550989153f0b85207be49a729bc0499c320f410c92fc993269d997da7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "104454346"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119333216"
 ---
 # <a name="security-descriptors-on-files-and-registry-keys"></a>Descritores de segurança em arquivos e chaves do registro
 
-A ADSI (Active Directory Service Interfaces) pode ser usada para gerenciar e proteger sistemas de arquivos em uma organização, incluindo a capacidade de definir ou modificar ACLs em arquivos ou compartilhamentos de arquivos criados por usuários. Interfaces de segurança, como [**IADsSecurityDescriptor**](/windows/desktop/api/Iads/nn-iads-iadssecuritydescriptor), [**IADsAccessControlList**](/windows/desktop/api/Iads/nn-iads-iadsaccesscontrollist)e [**IADsAccessControlEntry**](/windows/desktop/api/Iads/nn-iads-iadsaccesscontrolentry) definem ACLs em objetos de Active Directory, Exchange, arquivo, compartilhamento de arquivos ou chave do registro. Antes de usar essas interfaces, talvez seja necessário modificar o descritor de segurança se ele usar um formato diferente da interface ou se você não tiver direitos de acesso à SACL do descritor de segurança, pois você não é um membro do grupo de administradores de segurança.
+A ADSI (Active Directory Service Interfaces) pode ser usada para gerenciar e proteger sistemas de arquivos em uma organização, incluindo a capacidade de definir ou modificar ACLs em arquivos ou compartilhamentos de arquivos criados por usuários. interfaces de segurança, como [**IADsSecurityDescriptor**](/windows/desktop/api/Iads/nn-iads-iadssecuritydescriptor), [**IADsAccessControlList**](/windows/desktop/api/Iads/nn-iads-iadsaccesscontrollist)e [**IADsAccessControlEntry**](/windows/desktop/api/Iads/nn-iads-iadsaccesscontrolentry) , definem ACLs em Active Directory, Exchange, arquivo, compartilhamento de arquivos ou objetos de chave do registro. Antes de usar essas interfaces, talvez seja necessário modificar o descritor de segurança se ele usar um formato diferente da interface ou se você não tiver direitos de acesso à SACL do descritor de segurança, pois você não é um membro do grupo de administradores de segurança.
 
-Para obter, definir ou modificar o descritor de segurança, use a interface [**IADsSecurityUtility**](/windows/desktop/api/Iads/nn-iads-iadssecurityutility) . Essa interface permite que você recupere um descritor de segurança de vários recursos em seu formato original, como o formato ADSI [**IADsSecurityDescriptor**](/windows/desktop/api/Iads/nn-iads-iadssecuritydescriptor), um descritor de segurança bruto ou como uma cadeia de caracteres hexadecimal como usado no Exchange 5,5. Quando recuperada, você pode convertê-la em outro formato, por exemplo, de um descritor de segurança bruto para **IADsSecurityDescriptor**. Em seguida, você pode gravar o novo formato de volta no recurso.
+Para obter, definir ou modificar o descritor de segurança, use a interface [**IADsSecurityUtility**](/windows/desktop/api/Iads/nn-iads-iadssecurityutility) . essa interface permite que você recupere um descritor de segurança de vários recursos em seu formato original, como o formato ADSI [**IADsSecurityDescriptor**](/windows/desktop/api/Iads/nn-iads-iadssecuritydescriptor), um descritor de segurança bruto ou como uma cadeia de caracteres hexadecimal como usado no Exchange 5,5. Quando recuperada, você pode convertê-la em outro formato, por exemplo, de um descritor de segurança bruto para **IADsSecurityDescriptor**. Em seguida, você pode gravar o novo formato de volta no recurso.
 
 Alguns dos valores de propriedade [**IADsAccessControlEntry**](/windows/desktop/api/Iads/nn-iads-iadsaccesscontrolentry) , como [**AccessMask**](iadsaccesscontrolentry-property-methods.md) e **AceFlags**, serão diferentes para tipos de objeto diferentes. Por exemplo, um objeto Active Directory usará o membro de **\_ \_ \_ leitura genérico do ADS** da enumeração de [**\_ \_ enumeração de direitos do ADS**](/windows/win32/api/iads/ne-iads-ads_rights_enum) para a propriedade **IADsAccessControlEntry. AccessMask** , mas o direito de acesso equivalente para um objeto de arquivo será **\_ \_ leitura genérica de arquivo**. Não é seguro pressupor que todos os valores de propriedade serão os mesmos para objetos Active Directory e objetos não Active Directory. A lista a seguir mostra as propriedades **IADsAccessControlEntry** que diferem para objetos não Active Directory e onde os valores adequados podem ser obtidos.
 
@@ -86,7 +86,7 @@ Normalmente, [**IADsSecurityUtility. GetSecurityDescriptor**](/windows/desktop/a
 
 Para obter mais informações e um exemplo de código que usa a interface [**IADsSecurityUtility**](/windows/desktop/api/Iads/nn-iads-iadssecurityutility) para adicionar uma ACE a um arquivo, consulte [exemplo de código para adicionar uma ACE a um arquivo](example-code-for-adding-an-ace-to-a-file.md).
 
-O código de exemplo a seguir fornece os identificadores de constante para os objetos de arquivo, compartilhamento de arquivo e registro para as propriedades [**AccessMask**](iadsaccesscontrolentry-property-methods.md), **AceType**, **AceFlags** e **Flags** para uso com Visual Basic e Microsoft Visual Basic Scripting Edition.
+o código de exemplo a seguir fornece os identificadores de constante para objetos de arquivo, compartilhamento de arquivo e registro para as propriedades [**AccessMask**](iadsaccesscontrolentry-property-methods.md), **AceType**, **AceFlags** e **Flags** para uso com Visual Basic e o Microsoft Visual Basic scripting Edition.
 
 
 ```VB
@@ -183,6 +183,6 @@ Const ACE_INHERITED_OBJECT_TYPE_PRESENT = 2
 
 
 
- 
+ 
 
- 
+ 

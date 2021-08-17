@@ -108,7 +108,7 @@ Essa função retorna o [JET_ERR](./jet-err.md) tipo de dados com um dos código
 <thead>
 <tr class="header">
 <th><p>Código de retorno</p></th>
-<th><p>Description</p></th>
+<th><p>Descrição</p></th>
 </tr>
 </thead>
 <tbody>
@@ -182,7 +182,7 @@ Se o banco de dados especificado *em szFilename* existir e JET_bitDbOverwriteExi
 
 Se a API criar um arquivo de banco de dados e, em seguida, ocorrer outro erro, ela limpará e excluirá o arquivo.
 
-**JetCreateDatabase abrirá** implicitamente o banco de dados. Não é necessariamente chamar [JetOpenDatabase subsequentemente.](./jetopendatabase-function.md)
+**JetCreateDatabase abrirá** implicitamente o banco de dados. Não é necessariamente para chamar posteriormente [JetOpenDatabase](./jetopendatabase-function.md).
 
 #### <a name="requirements"></a>Requisitos
 

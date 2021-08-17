@@ -1,22 +1,22 @@
 ---
-description: O Windows envia todas as janelas de nível superior a um conjunto de mensagens padrão do WM \_ DEVICECHANGE quando novos dispositivos ou mídias (como um CD ou DVD) são adicionados e disponibilizados e quando dispositivos ou mídias existentes são removidos.
+description: Windows envia todas as janelas de nível superior a um conjunto de mensagens padrão do WM \_ DEVICECHANGE quando novos dispositivos ou mídias (como um CD ou DVD) são adicionados e disponibilizados e quando dispositivos ou mídias existentes são removidos.
 ms.assetid: 26baa3aa-e54d-42fe-b2b2-a3fcca6dee91
 title: Detectando a inserção ou remoção de mídia
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4e6cfd4539d6f2ce5eac41e355f56a5a87835505
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: 3f3f6d579ed654ae2d2f77d00f70b88dc1441d03bbce59c0f8cb39ca6800c6af
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "104091881"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119318346"
 ---
 # <a name="detecting-media-insertion-or-removal"></a>Detectando a inserção ou remoção de mídia
 
-O Windows envia todas as janelas de nível superior a um conjunto de mensagens padrão do [**WM \_ DEVICECHANGE**](wm-devicechange.md) quando novos dispositivos ou mídias (como um CD ou DVD) são adicionados e disponibilizados e quando dispositivos ou mídias existentes são removidos. Você não precisa se registrar para receber essas mensagens padrão. Consulte a seção comentários em [**RegisterDeviceNotification**](/windows/desktop/api/Winuser/nf-winuser-registerdevicenotificationa) para obter detalhes sobre quais mensagens são enviadas por padrão. As mensagens no exemplo de código abaixo estão entre as mensagens padrão.
+Windows envia todas as janelas de nível superior a um conjunto de mensagens padrão do [**WM \_ DEVICECHANGE**](wm-devicechange.md) quando novos dispositivos ou mídias (como um CD ou DVD) são adicionados e disponibilizados e quando dispositivos ou mídias existentes são removidos. Você não precisa se registrar para receber essas mensagens padrão. Consulte a seção comentários em [**RegisterDeviceNotification**](/windows/desktop/api/Winuser/nf-winuser-registerdevicenotificationa) para obter detalhes sobre quais mensagens são enviadas por padrão. As mensagens no exemplo de código abaixo estão entre as mensagens padrão.
 
 > [!Note]  
-> O Windows envia somente mensagens do [**WM \_ DEVICECHANGE**](wm-devicechange.md) para eventos de mídia de CD ou DVD para janelas de nível superior que pertencem a aplicativos executados na sessão de console ativa. As janelas de nível superior que pertencem a aplicativos executados em uma sessão de área de trabalho remota não recebem mensagens do [**WM \_ DEVICECHANGE**](wm-devicechange.md) para eventos de mídia de CD ou DVD.
+> Windows envia apenas [**mensagens \_ DEVICECHANGE do WM**](wm-devicechange.md) para eventos de mídia de CD ou DVD para janelas de nível superior que pertencem a aplicativos executados na sessão de console ativa. As janelas de nível superior que pertencem a aplicativos executados em uma sessão de área de trabalho remota não recebem mensagens do [**WM \_ DEVICECHANGE**](wm-devicechange.md) para eventos de mídia de CD ou DVD.
 
  
 

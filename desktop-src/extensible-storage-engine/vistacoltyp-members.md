@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre: membros do VistaColtyp'
-title: Membros VistaColtyp (Microsoft. ISAM. ESENT. Interop. vista)
+description: 'Saiba mais sobre: Membros do VistaColtyp'
+title: Membros do VistaColtyp (Microsoft.Isam.Esent.Interop.Vista)
 TOCTitle: VistaColtyp members
 ms:assetid: AllMembers.T:Microsoft.Isam.Esent.Interop.Vista.VistaColtyp
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.vista.vistacoltyp_members(v=EXCHG.10)
@@ -21,7 +21,7 @@ Incluir membros herdados
 
 Tipos de coluna que foram adicionados à versão vista do ESENT.
 
-O tipo [VistaColtyp](./vistacoltyp-class.md) expõe os membros a seguir.
+O [tipo VistaColtyp](./vistacoltyp-class.md) expõe os membros a seguir.
 
 ## <a name="fields"></a>Campos
 
@@ -37,22 +37,22 @@ O tipo [VistaColtyp](./vistacoltyp-class.md) expõe os membros a seguir.
 <tr class="odd">
 <td><img src="../images/hh596466.pubfield(exchg.10).gif" title="Campo público" alt="Public field" /><img src="../images/dn292146.static(exchg.10).gif" title="Membro estático" alt="Static member" /></td>
 <td><a href="dn335347(v=exchg.10).md">GUID</a></td>
-<td>GUID de 16 bytes.</td>
+<td>GUID de 16 byte.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/hh596466.pubfield(exchg.10).gif" title="Campo público" alt="Public field" /><img src="../images/dn292146.static(exchg.10).gif" title="Membro estático" alt="Static member" /></td>
-<td><a href="dn351276(v=exchg.10).md">LongLong</a></td>
-<td>Número de bits 64 assinado.</td>
+<td><a href="dn351276(v=exchg.10).md">Longlong</a></td>
+<td>Número de 64 bits assinado.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/hh596466.pubfield(exchg.10).gif" title="Campo público" alt="Public field" /><img src="../images/dn292146.static(exchg.10).gif" title="Membro estático" alt="Static member" /></td>
 <td><a href="dn335348(v=exchg.10).md">UnsignedLong</a></td>
-<td>Número de bits 32 não assinado.</td>
+<td>Número de 32 bits sem assinatura.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/hh596466.pubfield(exchg.10).gif" title="Campo público" alt="Public field" /><img src="../images/dn292146.static(exchg.10).gif" title="Membro estático" alt="Static member" /></td>
 <td><a href="dn351278(v=exchg.10).md">UnsignedShort</a></td>
-<td>Número de 16 bits sem sinal.</td>
+<td>Número de 16 bits sem assinatura.</td>
 </tr>
 </tbody>
 </table>
@@ -66,4 +66,4 @@ Parte superior
 
 [Classe VistaColtyp](./vistacoltyp-class.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)

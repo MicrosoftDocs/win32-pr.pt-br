@@ -1,9 +1,9 @@
 ---
 title: ncadg_ip_udp atributo
-description: A \_ \_ palavra-chave UDP IP ncadg identifica a versão do datagrama do TCP/IP como a família de protocolos para o ponto de extremidade. Esta família de protocolos está obsoleta e não deve ser usada em novos aplicativos.
+description: A palavra-chave ncadg ip udp identifica a \_ versão do \_ datagrama de TCP/IP como a família de protocolos para o ponto de extremidade. Essa família de protocolos está obsoleta e não deve ser usada em novos aplicativos.
 ms.assetid: c9133fcc-6dc2-49da-9c6f-5ce3c51090d5
 keywords:
-- ncadg_ip_udp do atributo MIDL
+- ncadg_ip_udp atributo MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 173ccd0b81eb5fa7d84a6fa4d2821162b852303d
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: f91db32fd7636f956e64dafc0db15efb520e643b435995dd977db7a631a20c78
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104084488"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119067056"
 ---
-# <a name="ncadg_ip_udp-attribute"></a>\_atributo UDP de IP ncadg \_
+# <a name="ncadg_ip_udp-attribute"></a>atributo ncadg \_ ip \_ udp
 
-A palavra-chave **\_ \_ UDP IP ncadg** identifica a versão do datagrama do TCP/IP como a família de protocolos para o ponto de extremidade. Esta família de protocolos está obsoleta e não deve ser usada em novos aplicativos.
+A **palavra-chave ncadg \_ ip \_ udp** identifica a versão do datagrama de TCP/IP como a família de protocolos para o ponto de extremidade. Essa família de protocolos está obsoleta e não deve ser usada em novos aplicativos.
 
 ``` syntax
 endpoint("ncadg_ip_udp:server-name[port-name]")
@@ -31,14 +31,14 @@ endpoint("ncadg_ip_udp:server-name[port-name]")
 
 <dl> <dt>
 
-*nome do servidor* 
+*server-name* 
 </dt> <dd>
 
-Especifica o nome ou endereço de Internet para o servidor, ou host, computador. O nome é uma cadeia de caracteres e pode ser um nome de domínio totalmente qualificado. O endereço da Internet é uma notação de endereço da Internet comum.
+Especifica o nome ou o endereço da Internet para o servidor ou host, computador. O nome é uma cadeia de caracteres e pode ser um nome de domínio totalmente qualificado. O endereço da Internet é uma notação de endereço da Internet comum.
 
 </dd> <dt>
 
-*nome da porta* 
+*port-name* 
 </dt> <dd>
 
 Especifica um número opcional de 16 bits. Valores menores que 1024 geralmente são reservados. Se nenhum valor for especificado, o serviço de mapeamento de ponto de extremidade selecionará um valor *de nome de porta* válido.
@@ -47,12 +47,12 @@ Especifica um número opcional de 16 bits. Valores menores que 1024 geralmente s
 
 ## <a name="remarks"></a>Comentários
 
-As restrições a seguir se aplicam aos protocolos de datagrama, [**ncadg \_ IPX**](ncadg-ipx.md) e **ncadg \_ IP \_ UDP**:
+As seguintes restrições se aplicam aos protocolos de datagram, [**ncadg \_ ipx**](ncadg-ipx.md) e **ncadg \_ ip \_ udp**:
 
--   Eles não oferecem suporte a retornos de chamada. Qualquer função que use o atributo de **\[** [**retorno de chamada**](callback.md) **\]** falhará.
--   Eles não dão suporte ao uso do construtor de tipo de [**pipe**](pipe.md) .
+-   Eles não são suportados retornos de chamada. Todas as funções que usam o **\[** [**atributo de retorno de**](callback.md) chamada **\]** falharão.
+-   Eles não suportam o uso do [**construtor de tipo**](pipe.md) pipe.
 
-A sintaxe da cadeia de caracteres da porta de transporte TCP/IP, como todas as cadeias de caracteres de porta, é definida independentemente da especificação IDL. O compilador executa alguma verificação de sintaxe, mas não garante que a especificação do ponto de extremidade esteja correta. Alguns erros podem ser relatados em tempo de execução em vez de em tempo de compilação.
+A sintaxe da cadeia de caracteres de porta de transporte TCP/IP, como todas as cadeias de caracteres de porta, é definida independentemente da especificação de IDL. O compilador executa alguma verificação de sintaxe, mas não garante que a especificação do ponto de extremidade está correta. Alguns erros podem ser relatados em tempo de run em vez de em tempo de compilação.
 
 ## <a name="examples"></a>Exemplos
 
@@ -82,48 +82,48 @@ interface iface2
 
 <dl> <dt>
 
-[**extremidade**](endpoint.md)
+[**Extremidade**](endpoint.md)
 </dt> <dt>
 
-[Arquivo de definição de interface (IDL)](interface-definition-idl-file.md)
+[Arquivo IDL (definição de interface)](interface-definition-idl-file.md)
 </dt> <dt>
 
-[**ncacn \_ no \_ DSP**](ncacn-at-dsp.md)
+[**ncacn \_ em \_ dsp**](ncacn-at-dsp.md)
 </dt> <dt>
 
-[**ncacn \_ dnet \_ NSP**](ncacn-dnet-nsp.md)
+[**ncacn \_ dnet \_ nsp**](ncacn-dnet-nsp.md)
 </dt> <dt>
 
-[**\_TCP IP \_ ncacn**](ncacn-ip-tcp.md)
+[**ncacn \_ ip \_ tcp**](ncacn-ip-tcp.md)
 </dt> <dt>
 
-[**IPX do ncacn \_ NB \_**](ncacn-nb-ipx.md)
+[**ncacn \_ nb \_ ipx**](ncacn-nb-ipx.md)
 </dt> <dt>
 
-[**ncacn \_ SPX**](ncacn-spx.md)
+[**ncacn \_ spx**](ncacn-spx.md)
 </dt> <dt>
 
-[**ncacn \_ NB NB \_**](ncacn-nb-nb.md)
+[**ncacn \_ nb \_ nb**](ncacn-nb-nb.md)
 </dt> <dt>
 
-[**ncacn \_ NB \_ TCP**](ncacn-nb-tcp.md)
+[**ncacn \_ nb \_ tcp**](ncacn-nb-tcp.md)
 </dt> <dt>
 
-[**ncacn \_ NP**](ncacn-np.md)
+[**ncacn \_ np**](ncacn-np.md)
 </dt> <dt>
 
-[**ncacn \_ VNS \_ spp**](ncacn-vns-spp.md)
+[**ncacn \_ vns \_ spp**](ncacn-vns-spp.md)
 </dt> <dt>
 
 [**ncalrpc**](ncalrpc.md)
 </dt> <dt>
 
-[**ncadg \_ IPX**](ncadg-ipx.md)
+[**ncadg \_ ipx**](ncadg-ipx.md)
 </dt> <dt>
 
 [Associação de cadeia de caracteres](/windows/desktop/Rpc/string-binding)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

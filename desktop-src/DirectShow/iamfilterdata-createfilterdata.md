@@ -1,7 +1,7 @@
 ---
-description: 'Saiba mais sobre o método IAMFilterData:: CreateFilterData, que cria dados de registro binários para um filtro. Essa interface foi substituída.'
+description: Saiba mais sobre o método IAMFilterData::CreateFilterData, que cria dados binários do Registro para um filtro. Essa interface foi substituída.
 ms.assetid: ab6972ef-7c28-4cd1-b007-eb70f9aeb2cb
-title: 'Método IAMFilterData:: CreateFilterData (Fil \_ Data. h)'
+title: Método IAMFilterData::CreateFilterData (Fil \_ data.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -20,16 +20,16 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119428666"
 ---
-# <a name="iamfilterdatacreatefilterdata-method"></a>Método IAMFilterData:: CreateFilterData
+# <a name="iamfilterdatacreatefilterdata-method"></a>Método IAMFilterData::CreateFilterData
 
 > [!Note]  
 > Essa interface foi substituída. Novos aplicativos não devem usá-lo.
 
  
 
-O `CreateFilterData` método cria dados de registro binários para um filtro. Esses dados podem ser gravados no registro como uma \_ subchave binária reg chamada FilterData, na chave CLSID do filtro.
+O `CreateFilterData` método cria dados binários do Registro para um filtro. Esses dados podem ser gravados no Registro como uma sub-chave BINÁRIA REG chamada FilterData, na chave \_ CLSID do filtro.
 
-Normalmente, não há motivo para um aplicativo chamar esse método. O método [**IFilterMapper2:: RegisterFilter**](/windows/desktop/api/Strmif/nf-strmif-ifiltermapper2-registerfilter) cria automaticamente os dados binários e os adiciona ao local correto no registro. para obter mais informações, consulte [como registrar filtros de DirectShow](how-to-register-directshow-filters.md).
+Normalmente, não há motivo para um aplicativo chamar esse método. O [**método IFilterMapper2::RegisterFilter**](/windows/desktop/api/Strmif/nf-strmif-ifiltermapper2-registerfilter) cria automaticamente os dados binários e os adiciona ao local correto no Registro. Para obter mais informações, [consulte How to Register DirectShow Filters](how-to-register-directshow-filters.md).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -48,21 +48,21 @@ HRESULT CreateFilterData(
 
 <dl> <dt>
 
-*prf2* \[ no\]
+*prf2* \[ Em\]
 </dt> <dd>
 
-Ponteiro para uma estrutura [**REGFILTER2**](/windows/desktop/api/strmif/ns-strmif-regfilter2) que contém as informações de filtro.
+Ponteiro para uma [**estrutura REGFILTER2**](/windows/desktop/api/strmif/ns-strmif-regfilter2) que contém as informações de filtro.
 
 </dd> <dt>
 
-*prgbFilterData* \[ fora\]
+*prgbFilterData* \[ out\]
 </dt> <dd>
 
-Endereço de uma variável que recebe um ponteiro para os dados binários. O método aloca a memória para os dados. O chamador deve liberar a memória chamando o método **CoTaskMemFree** .
+Endereço de uma variável que recebe um ponteiro para os dados binários. O método aloca a memória para os dados. O chamador deve liberar a memória chamando o **método CoTaskMemFree.**
 
 </dd> <dt>
 
-*PCB* \[ fora\]
+*pcb* \[ out\]
 </dt> <dd>
 
 Ponteiro para uma variável que recebe o tamanho dos dados binários, em bytes.
@@ -71,12 +71,12 @@ Ponteiro para uma variável que recebe o tamanho dos dados binários, em bytes.
 
 ## <a name="return-value"></a>Valor retornado
 
-Se o método for bem sucedido, ele retornará S \_ OK. Se falhar, retornará um código de erro.
+Se o método for bem-sucedido, ele retornará S \_ OK. Se falhar, retornará um código de erro.
 
 ## <a name="remarks"></a>Comentários
 
 > [!Note]  
-> o cabeçalho Fil \_ data. h está localizado no diretório de [exemplo do mapeador](mapper-sample.md) no SDK do Windows.
+> O header Fil \_ data.h está localizado no diretório [Exemplo do Mapeador](mapper-sample.md) no SDK Windows.
 
  
 
@@ -86,7 +86,7 @@ Se o método for bem sucedido, ele retornará S \_ OK. Se falhar, retornará um 
 
 | Requisito | Valor |
 |-------------------|----------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>Fil \_ Data. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>Fil \_ data.h</dt> </dl> |
 | DLL<br/>    | <dl> <dt>Quartz.dll</dt> </dl>  |
 
 
@@ -95,7 +95,7 @@ Se o método for bem sucedido, ele retornará S \_ OK. Se falhar, retornará um 
 
 <dl> <dt>
 
-[**Interface IAMFilterData**](iamfilterdata.md)
+[**IAMFilterData Interface**](iamfilterdata.md)
 </dt> </dl>
 
  

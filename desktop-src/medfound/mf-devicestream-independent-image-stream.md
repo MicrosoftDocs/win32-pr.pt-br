@@ -4,12 +4,12 @@ ms.assetid: DC4ED612-593B-40BF-BB42-946149042D1F
 title: Atributo MF_DEVICESTREAM_INDEPENDENT_IMAGE_STREAM (Mfidl. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 174e62a1bdd178ad2d8dce7fab5bf9ce3104d834
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f52392839c5f196159692bc9c4624cbda67b869471d6737c4cff60c847f890e3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105751336"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119956676"
 ---
 # <a name="mf_devicestream_independent_image_stream-attribute"></a>\_Atributo de \_ \_ fluxo de imagem independente MF DEVICESTREAM \_
 
@@ -37,9 +37,9 @@ Esse atributo se aplica somente quando o atributo de [ \_ \_ \_ fluxo de imagem 
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                         |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                               |
-| parâmetro<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 8 \[ somente aplicativos da área de trabalho\]<br/>                                         |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 \[ somente aplicativos da área de trabalho\]<br/>                               |
+| Cabeçalho<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
 
 
 

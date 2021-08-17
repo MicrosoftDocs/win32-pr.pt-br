@@ -1,26 +1,26 @@
 ---
-title: Atributo StrokeOK de VML
-description: Atributo StrokeOK de VML
+title: Atributo StrokeOK do VML
+description: Atributo StrokeOK do VML
 ms.assetid: f150f87b-1ed9-4c53-bf7f-ebe1e81642fd
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d7a2875e3e6e8374238340ff2a596852e5ebce7c
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 5051f3a2d5e7ac8e4d509d8b8f65182f86799db41bbd8a4d71741961c3a1e406
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103917514"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119475216"
 ---
-# <a name="vml-strokeok-attribute"></a>Atributo StrokeOK de VML
+# <a name="vml-strokeok-attribute"></a>Atributo StrokeOK do VML
 
-Este tópico descreve a VML, um recurso que foi preterido a partir do Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem de VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
+Este tópico descreve o VML, um recurso que foi preterido a partir Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem do VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
 
 > [!Note]  
-> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [conteúdo arquivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obter informações, recomendações e orientações sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
+> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [Conteúdo arquivado.](/previous-versions/windows/internet-explorer/ie-developer/) Para obter informações, recomendações e diretrizes sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center.](https://msdn.microsoft.com/ie/)
 
- 
+ 
 
-Determina se um traço será exibido. Leitura/gravação. **VgTriState**.
+Determina se um traço será exibido. Leitura/gravação. **VgTriState.**
 
 **Aplica-se a**
 
@@ -28,23 +28,23 @@ Determina se um traço será exibido. Leitura/gravação. **VgTriState**.
 
 **Sintaxe de marca**
 
-<v: *Element* strokeok = " *expressão* " >
+<v: *elemento* strokeok=" *expressão* ">
 
 **Sintaxe do script**
 
-*Element* . strokeok = "*expressão*"
+*expressão element* .strokeok=""
 
-*expressão* = de *elemento*. strokeok
+*expressão* = *elemento*.strokeok
 
 **Comentários**
 
-Se **for false**, o caminho não poderá ser traçado. O padrão é **True**. Esse atributo substitui todos os outros atributos de traço no elemento pai ou **Stroke** .
+Se **False**, o caminho não poderá ser traço. O padrão é **True**. Esse atributo substitui todos os outros atributos de traço no elemento pai **ou Traço.**
 
-*Atributo padrão da VML*
+*Atributo padrão VML*
 
 **Exemplo**
 
-O caminho não será traçado.
+O caminho não será traço.
 
 
 ```HTML
@@ -58,6 +58,6 @@ O caminho não será traçado.
 
 
 
- 
+ 
 
- 
+ 

@@ -14,12 +14,12 @@ api_type:
 - Assembly
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e932f0adb325c4c2f9f88e9f80d75ecaecd3ca85
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 590979677e79073466f7511b3f382a4bfcebc8bf0fd8ad4cb10f6dcd957db28a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105781181"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119135369"
 ---
 # <a name="iwmpsettingsisavailable-vb-and-c"></a>IWMPSettings. IsAvailable (VB e C#)
 
@@ -55,7 +55,7 @@ Um **System. String** que é um dos valores a seguir.
 
 | Valor              | Descrição                                                                                                             |
 |--------------------|-------------------------------------------------------------------------------------------------------------------------|
-| AutoStart          | Descobre se a propriedade AutoStart pode ser definida para especificar que o Windows Media Player inicia automaticamente a reprodução. |
+| AutoStart          | descobre se a propriedade autostart pode ser definida para especificar que Windows Media Player iniciará a reprodução automaticamente. |
 | Saldo            | Descobre se a propriedade de saldo pode ser usada para definir o saldo de estéreo.                                           |
 | BaseURL            | Descobre se a propriedade baseURL pode ser definida para especificar uma URL base.                                                |
 | DefaultFrame       | Descobre se a propriedade DefaultFrame pode ser definida para especificar o quadro padrão.                                    |

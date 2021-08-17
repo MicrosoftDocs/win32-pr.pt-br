@@ -1,28 +1,28 @@
-- name: Serviços de área de trabalho remota
+- name: Serviços da Área de Trabalho Remota
   href: terminal-services-portal.md
   items:
-    - name: Área de Trabalho Remota controle ActiveX
+    - name: Área de Trabalho Remota ActiveX controle
       href: remote-desktop-activex-control.md
       items:
-        - name: Usando o controle ActiveX Área de Trabalho Remota
+        - name: Usando o Área de Trabalho Remota ActiveX controle
           href: using-remote-desktop-web-connection.md
           items:
-            - name: Inserindo o controle ActiveX Área de Trabalho Remota em uma página da Web
+            - name: Incorporação do controle Área de Trabalho Remota ActiveX em uma página da Web
               href: embedding-the-remote-desktop-activex-control-in-a-web-page.md
-            - name: Implementando canais virtuais programáveis usando o Conexão Web de Área de Trabalho Remota
+            - name: Implementando canais virtuais que são scripts usando Conexão Web de Área de Trabalho Remota
               href: implementing-scriptable-virtual-channels-using-remote-desktop-web-connection.md
-            - name: Usando o controle ActiveX Área de Trabalho Remota com canais virtuais
+            - name: Usando o controle Área de Trabalho Remota ActiveX com canais virtuais
               href: using-the-remote-desktop-activex-control-with-virtual-channels.md
-            - name: Página da Web de exemplo incluída com o controle ActiveX Área de Trabalho Remota
+            - name: Página da Web de exemplo incluída com o Área de Trabalho Remota ActiveX controle
               href: sample-web-page-included-with-the-remote-desktop-activex-control.md
-            - name: Fornecendo para o RDP Client Security
+            - name: Fornecendo segurança de cliente RDP
               href: providing-for-rdp-client-security.md
-            - name: Desabilitando recursos de Serviços de Área de Trabalho Remota
+            - name: Desabilitando Serviços de Área de Trabalho Remota recursos
               href: disabling-terminal-services-features.md
-        - name: Área de Trabalho Remota referência de controle ActiveX
+        - name: Área de Trabalho Remota ActiveX de controle
           href: remote-desktop-activex-control-reference.md
           items:
-            - name: Área de Trabalho Remota interfaces de controle ActiveX
+            - name: Área de Trabalho Remota ActiveX interfaces de controle
               href: remote-desktop-web-connection-reference.md
               items:
                 - name: IMsRdpCameraRedirConfig
@@ -47,7 +47,7 @@
                       items:
                         - name: Método AddConfig
                           href: imsrdpcameraredirconfigcollection-addconfig.md
-                        - name: Reexaminar método
+                        - name: Método Rescan
                           href: imsrdpcameraredirconfigcollection-rescan.md
                     - name: Propriedades de IMsRdpCameraRedirConfigCollection
                       items:
@@ -65,7 +65,7 @@
                           href: imsrdpcameraredirconfigcollection-encodingquality.md
                         - name: Propriedade RedirectByDefault
                           href: imsrdpcameraredirconfigcollection-redirectbydefault.md
-                - name: IMsRdpClient
+                - name: Imsrdpclient
                   href: imsrdpclient-interface.md
                   items:
                     - name: Métodos IMsRdpClient
@@ -170,7 +170,7 @@
                     - name: Métodos IMsRdpClient8
                       href: imsrdpclient8-methods.md
                       items:
-                        - name: Reconectar método
+                        - name: Método Reconectar
                           href: imsrdpclient8-reconnect.md
                         - name: Método SendRemoteAction
                           href: imsrdpclient8-sendremoteaction.md
@@ -185,9 +185,9 @@
                     - name: Métodos IMsRdpClient9
                       href: imsrdpclient9-methods.md
                       items:
-                        - name: método attachEvent
+                        - name: Método attachEvent
                           href: imsrdpclient9-attachevent.md
-                        - name: método detachEvent
+                        - name: Método detachEvent
                           href: imsrdpclient9-detachevent.md
                         - name: Método SyncSessionDisplaySettings
                           href: imsrdpclient9-syncsessiondisplaysettings.md
@@ -206,7 +206,7 @@
                       items:
                         - name: Propriedade RemoteProgram3
                           href: imsrdpclient10-remoteprogram3.md
-                - name: IMsRdpClientAdvancedSettings
+                - name: Imsrdpclientadvancedsettings
                   href: imsrdpclientadvancedsettings-interface.md
                   items:
                     - name: Propriedades de IMsRdpClientAdvancedSettings
@@ -806,7 +806,7 @@
                     - name: Métodos IMsTscAx
                       href: imstscax-methods.md
                       items:
-                        - name: Método Connect
+                        - name: método de Conexão
                           href: imstscax-connect.md
                         - name: Método CreateVirtualChannels
                           href: imstscax-createvirtualchannels.md
@@ -962,7 +962,7 @@
                       items:
                         - name: método attachEvent
                           href: /windows/desktop/api/rdpappcontainerclient/nf-rdpappcontainerclient-iremotedesktopclient-attachevent
-                        - name: Método Connect
+                        - name: método de Conexão
                           href: /windows/desktop/api/rdpappcontainerclient/nf-rdpappcontainerclient-iremotedesktopclient-connect
                         - name: Método DeleteSavedCredentials
                           href: /windows/desktop/api/rdpappcontainerclient/nf-rdpappcontainerclient-iremotedesktopclient-deletesavedcredentials
@@ -979,7 +979,7 @@
                       items:
                         - name: Propriedade Actions
                           href: /windows/desktop/api/rdpappcontainerclient/nf-rdpappcontainerclient-iremotedesktopclient-get_actions
-                        - name: Propriedade de configurações
+                        - name: propriedade Configurações
                           href: iremotedesktopclient-settings.md
                         - name: Propriedade TouchPointer
                           href: /windows/desktop/api/rdpappcontainerclient/nf-rdpappcontainerclient-iremotedesktopclient-get_touchpointer
@@ -1090,7 +1090,7 @@
                       items:
                         - name: Método ServerStartApp
                           href: itsremoteprogram3-serverstartapp.md
-            - name: Área de Trabalho Remota enumerações de controle ActiveX
+            - name: enumerações de controle de ActiveX Área de Trabalho Remota
               href: remote-desktop-activex-control-enumerations.md
               items:
                 - name: ControlCloseStatus
@@ -1113,7 +1113,7 @@
                   href: /windows/win32/api/rdpappcontainerclient/ne-rdpappcontainerclient-snapshotencodingtype
                 - name: SnapshotFormatType
                   href: /windows/win32/api/rdpappcontainerclient/ne-rdpappcontainerclient-snapshotformattype
-            - name: Área de Trabalho Remota classes de controle ActiveX
+            - name: Área de Trabalho Remota ActiveX classes de controle
               href: remote-desktop-activex-control-classes.md
               items:
                 - name: MsRdpClient
@@ -1168,27 +1168,27 @@
                   href: mstscaxnotsafeforscripting.md
                 - name: RemoteDesktopClient
                   href: remotedesktopclient.md
-    - name: API do provedor de protocolo RDP
+    - name: API protocolo RDP provedor de serviços
       href: custom-remote-desktop-protocols.md
       items:
-        - name: Criando um provedor de protocolo RDP
+        - name: Criando um provedor protocolo RDP dados
           href: creating-a-custom-remote-protocol.md
           items:
-            - name: Registrando o Gerenciador de protocolo
+            - name: Registrando o Gerenciador de Protocolos
               href: registering-the-custom-protocol.md
             - name: Sequência de chamada de método
               href: method-call-sequence.md
               items:
-                - name: Iniciar sequência
+                - name: Sequência inicial
                   href: start-sequence.md
                 - name: Sequência de conexão
                   href: connection-sequence.md
-                - name: Reconectar sequência
+                - name: Sequência de reconexão
                   href: reconnect-sequence.md
-        - name: Referência do provedor de protocolo RDP
+        - name: referência protocolo RDP provedor de dados
           href: custom-remote-protocol-reference.md
           items:
-            - name: Enumerações de provedor de protocolo RDP
+            - name: enumerações protocolo RDP provedor de dados
               href: custom-remote-protocol-enumerations.md
               items:
                 - name: WRDS_CONNECTION_SETTING_LEVEL
@@ -1209,7 +1209,7 @@
                   href: /windows/desktop/api/Wtsdefs/ne-wtsdefs-wts_rcm_drain_state
                 - name: WTS_RCM_SERVICE_STATE
                   href: /windows/desktop/api/Wtsdefs/ne-wtsdefs-wts_rcm_service_state
-            - name: Interfaces do provedor de protocolo RDP
+            - name: interfaces protocolo RDP provedor de dados
               href: custom-remote-protocol-interfaces.md
               items:
                 - name: IWRdsProtocolConnection
@@ -1255,9 +1255,9 @@
                       href: /windows/desktop/api/wtsprotocol/nf-wtsprotocol-iwrdsprotocolconnection-logonnotify
                     - name: Método NotifySessionId
                       href: /windows/desktop/api/wtsprotocol/nf-wtsprotocol-iwrdsprotocolconnection-notifysessionid
-                    - name: Método de desconexão
+                    - name: Método PreDisconnect
                       href: /windows/desktop/api/wtsprotocol/nf-wtsprotocol-iwrdsprotocolconnection-predisconnect
-                    - name: Método queryproperty
+                    - name: Método QueryProperty
                       href: /windows/desktop/api/Wtsprotocol/nf-wtsprotocol-iwrdsprotocolconnection-queryproperty
                     - name: Método SessionArbitrationEnumeration
                       href: /windows/desktop/api/wtsprotocol/nf-wtsprotocol-iwrdsprotocolconnection-sessionarbitrationenumeration
@@ -1268,9 +1268,9 @@
                   items:
                     - name: Método BrokenConnection
                       href: /windows/desktop/api/wtsprotocol/nf-wtsprotocol-iwrdsprotocolconnectioncallback-brokenconnection
-                    - name: Método GetConnectionID
+                    - name: Método GetConnectionId
                       href: /windows/desktop/api/wtsprotocol/nf-wtsprotocol-iwrdsprotocolconnectioncallback-getconnectionid
-                    - name: Método onReady
+                    - name: Método OnReady
                       href: /windows/desktop/api/wtsprotocol/nf-wtsprotocol-iwrdsprotocolconnectioncallback-onready
                     - name: Método RedrawWindow
                       href: /windows/desktop/api/wtsprotocol/nf-wtsprotocol-iwrdsprotocolconnectioncallback-redrawwindow
@@ -1299,7 +1299,7 @@
                 - name: IWRdsProtocolListenerCallback
                   href: /windows/desktop/api/wtsprotocol/nn-wtsprotocol-iwrdsprotocollistenercallback
                   items:
-                    - name: Método onconnected
+                    - name: Método OnConnected
                       href: /windows/desktop/api/wtsprotocol/nf-wtsprotocol-iwrdsprotocollistenercallback-onconnected
                 - name: IWRdsProtocolLogonErrorRedirector
                   href: /windows/desktop/api/wtsprotocol/nn-wtsprotocol-iwrdsprotocollogonerrorredirector
@@ -1348,7 +1348,7 @@
                 - name: IWRdsProtocolShadowConnection
                   href: /windows/desktop/api/wtsprotocol/nn-wtsprotocol-iwrdsprotocolshadowconnection
                   items:
-                    - name: Método dotarget
+                    - name: Método DoTarget
                       href: /windows/desktop/api/wtsprotocol/nf-wtsprotocol-iwrdsprotocolshadowconnection-dotarget
                     - name: Método Start
                       href: /windows/desktop/api/wtsprotocol/nf-wtsprotocol-iwrdsprotocolshadowconnection-start
@@ -1361,7 +1361,7 @@
                       href: /windows/desktop/api/wtsprotocol/nf-wtsprotocol-iwrdsremotefxgraphicsconnection-enableremotefxgraphics
                     - name: Método GetVirtualChannelTransport
                       href: /windows/desktop/api/wtsprotocol/nf-wtsprotocol-iwrdsremotefxgraphicsconnection-getvirtualchanneltransport
-                - name: Interfaces do provedor de protocolo de desktop preteridas
+                - name: Interfaces preterida do provedor de protocolo de área de trabalho
                   href: deprecated-desktop-protocol-provider-interfaces.md
                   items:
                     - name: IWTSProtocolConnection
@@ -1398,7 +1398,7 @@
                               href: /windows/desktop/api/Wtsprotocol/nf-wtsprotocol-iwtsprotocolconnection-getshadowconnection
                             - name: Método GetUserCredentials
                               href: /windows/desktop/api/Wtsprotocol/nf-wtsprotocol-iwtsprotocolconnection-getusercredentials
-                            - name: Método getuserdata
+                            - name: Método GetUserData
                               href: /windows/desktop/api/Wtsprotocol/nf-wtsprotocol-iwtsprotocolconnection-getuserdata
                             - name: Método IsUserAllowedToLogon
                               href: /windows/desktop/api/Wtsprotocol/nf-wtsprotocol-iwtsprotocolconnection-isuserallowedtologon
@@ -1406,7 +1406,7 @@
                               href: /windows/desktop/api/Wtsprotocol/nf-wtsprotocol-iwtsprotocolconnection-logonnotify
                             - name: Método NotifySessionId
                               href: /windows/desktop/api/Wtsprotocol/nf-wtsprotocol-iwtsprotocolconnection-notifysessionid
-                            - name: Método queryproperty
+                            - name: Método QueryProperty
                               href: /windows/desktop/api/Wtsprotocol/nf-wtsprotocol-iwtsprotocolconnection-queryproperty
                             - name: Método SendBeep
                               href: /windows/desktop/api/Wtsprotocol/nf-wtsprotocol-iwtsprotocolconnection-sendbeep
@@ -1426,7 +1426,7 @@
                               href: /windows/desktop/api/Wtsprotocol/nf-wtsprotocol-iwtsprotocolconnectioncallback-brokenconnection
                             - name: Método DisplayIOCtl
                               href: /windows/desktop/api/Wtsprotocol/nf-wtsprotocol-iwtsprotocolconnectioncallback-displayioctl
-                            - name: Método onReady
+                            - name: Método OnReady
                               href: /windows/desktop/api/Wtsprotocol/nf-wtsprotocol-iwtsprotocolconnectioncallback-onready
                             - name: Método RedrawWindow
                               href: /windows/desktop/api/Wtsprotocol/nf-wtsprotocol-iwtsprotocolconnectioncallback-redrawwindow
@@ -1462,7 +1462,7 @@
                         - name: Métodos IWTSProtocolListenerCallback
                           href: iwtsprotocollistenercallback-methods.md
                           items:
-                            - name: Método onconnected
+                            - name: Método OnConnected
                               href: /windows/desktop/api/Wtsprotocol/nf-wtsprotocol-iwtsprotocollistenercallback-onconnected
                     - name: IWTSProtocolLogonErrorRedirector
                       href: /windows/desktop/api/wtsprotocol/nn-wtsprotocol-iwtsprotocollogonerrorredirector
@@ -1510,13 +1510,13 @@
                         - name: Métodos IWTSProtocolShadowConnection
                           href: iwtsprotocolshadowconnection-methods.md
                           items:
-                            - name: Método dotarget
+                            - name: Método DoTarget
                               href: /windows/desktop/api/Wtsprotocol/nf-wtsprotocol-iwtsprotocolshadowconnection-dotarget
                             - name: Método Start
                               href: /windows/desktop/api/Wtsprotocol/nf-wtsprotocol-iwtsprotocolshadowconnection-start
                             - name: Método Stop
                               href: /windows/desktop/api/Wtsprotocol/nf-wtsprotocol-iwtsprotocolshadowconnection-stop
-            - name: Estruturas de provedor de protocolo RDP
+            - name: estruturas protocolo RDP provedor de dados
               href: custom-remote-protocol-structures.md
               items:
                 - name: TSMF_SUPPORT_DATA_IN
@@ -1737,18 +1737,18 @@
               items:
                 - name: WRdsGraphicsChannelType
                   href: /windows/win32/api/wrdsgraphicschannels/ne-wrdsgraphicschannels-wrdsgraphicschanneltype
-    - name: API de redirecionamento de mídia do RemoteFX
+    - name: RemoteFX API de redirecionamento de mídia
       href: remotefx-api.md
       items:
-        - name: Referência da API de redirecionamento de mídia do RemoteFX
+        - name: RemoteFX Referência da API de redirecionamento de mídia
           href: remotefx-media-redirection-api-reference.md
           items:
-            - name: Funções da API de redirecionamento de mídia do RemoteFX
+            - name: RemoteFX Funções da API de redirecionamento de mídia
               href: remotefx-media-redirection-api-functions.md
               items:
                 - name: WTSSetRenderHint
                   href: /windows/desktop/api/WtsHintApi/nf-wtshintapi-wtssetrenderhint
-            - name: Interfaces de API de redirecionamento de mídia do RemoteFX
+            - name: RemoteFX Interfaces de API de redirecionamento de mídia
               href: remotefx-media-redirection-api-interfaces.md
               items:
                 - name: IWTSBitmapRenderer
@@ -1775,7 +1775,7 @@
                   items:
                     - name: Método GetService
                       href: /windows/desktop/api/tsvirtualchannels/nf-tsvirtualchannels-iwtspluginserviceprovider-getservice
-            - name: Estruturas de API de redirecionamento de mídia do RemoteFX
+            - name: RemoteFX Estruturas de API de redirecionamento de mídia
               href: remotefx-media-redirection-api-structures.md
               items:
                 - name: BITMAP_RENDERER_STATISTICS
@@ -1934,11 +1934,11 @@
           items:
             - name: Os serviços de terminal agora estão Serviços de Área de Trabalho Remota
               href: terminal-services-is-now-remote-desktop-services.md
-            - name: O que há de novo no Windows 7
+            - name: o que há de novo no Windows 7
               href: what-s-new-in-windows-7.md
-            - name: O que há de novo no Windows Server 2008 R2
+            - name: o que há de novo no Windows Server 2008 R2
               href: what-s-new-in-windows-server-2008-r2.md
-            - name: O que há de novo no Windows Server 2008
+            - name: o que há de novo no Windows Server 2008
               href: what-s-new-in-windows-server-2008.md
             - name: Novidades no Windows Vista
               href: what-s-new-in-windows-vista.md
@@ -2053,11 +2053,11 @@
               href: addvirtualdesktop-win32-rdmsvirtualdesktopcollection.md
             - name: Método CancelPatch
               href: cancelpatch-win32-rdmsvirtualdesktopcollection.md
-            - name: Método getint32property
+            - name: Método GetInt32Property
               href: getint32property-win32-rdmsvirtualdesktopcollection.md
-            - name: Método getpatchproperties
+            - name: Método GetPatchProperties
               href: getpatchproperties-win32-rdmsvirtualdesktopcollection.md
-            - name: Método getstringproperty
+            - name: Método GetStringProperty
               href: getstringproperty-win32-rdmsvirtualdesktopcollection.md
             - name: Método ProvisioningEnumerateJobs
               href: provisioningenumeratejobs-win32-rdmsvirtualdesktopcollection.md
@@ -2073,16 +2073,16 @@
               href: removevirtualdesktop-win32-rdmsvirtualdesktopcollection.md
             - name: Método SchedulePatch
               href: schedulepatch-win32-rdmsvirtualdesktopcollection.md
-            - name: Método setint32property
+            - name: Método SetInt32Property
               href: setint32property-win32-rdmsvirtualdesktopcollection.md
-            - name: Método setstringproperty
+            - name: Método SetStringProperty
               href: setstringproperty-win32-rdmsvirtualdesktopcollection.md
         - name: Win32_RDSHCollection
           href: win32-rdshcollection.md
           items:
-            - name: Método getint32property
+            - name: Método GetInt32Property
               href: getint32property-win32-rdshcollection.md
-            - name: Método getstringproperty
+            - name: Método GetStringProperty
               href: getstringproperty-win32-rdshcollection.md
             - name: Método KeyValueCompareAndSet
               href: win32-rdshcollection-keyvaluecompareandset.md
@@ -2090,44 +2090,44 @@
               href: win32-rdshcollection-keyvaluedelete.md
             - name: Método KeyValueGet
               href: win32-rdshcollection-keyvalueget.md
-            - name: Método setint32property
+            - name: Método SetInt32Property
               href: setint32property-win32-rdshcollection.md
-            - name: Método setstringproperty
+            - name: Método SetStringProperty
               href: setstringproperty-win32-rdshcollection.md
         - name: Win32_RDSHServer
           href: win32-rdshserver.md
           items:
-            - name: Método getint32property
+            - name: Método GetInt32Property
               href: getint32property-win32-rdshserver.md
             - name: Método GetPendingStartServerList
               href: win32-rdshserver-getpendingstartserverlist.md
-            - name: Método getstringproperty
+            - name: Método GetStringProperty
               href: getstringproperty-win32-rdshserver.md
-            - name: Método setint32property
+            - name: Método SetInt32Property
               href: setint32property-win32-rdshserver.md
-            - name: Método setstringproperty
+            - name: Método SetStringProperty
               href: setstringproperty-win32-rdshserver.md
             - name: Método TestAndSetState
               href: win32-rdshserver-testandsetstate.md
         - name: Win32_VirtualDesktopSession
           href: win32-virtualdesktopsession.md
           items:
-            - name: Método de desconexão
+            - name: Método Disconnect
               href: disconnect-win32-virtualdesktopsession.md
-            - name: Método de logoff
+            - name: Método logoff
               href: logoff-win32-virtualdesktopsession.md
             - name: Método SendMessage
               href: sendmessage-win32-virtualdesktopsession.md
-    - name: Referência de Serviços de Área de Trabalho Remota
+    - name: Serviços de Área de Trabalho Remota referência
       href: terminal-services-reference.md
       items:
-        - name: Referência para a extensão ADSI para Serviços de Área de Trabalho Remota configuração de usuário
+        - name: Referência para a extensão ADSI para configuração Serviços de Área de Trabalho Remota usuário
           href: reference-for-the-adsi-extension-for-terminal-services-user-configuration.md
           items:
             - name: IADsTSUserEx
               href: /windows/desktop/api/Tsuserex/nn-tsuserex-iadstsuserex
               items:
-                - name: Propriedades de IADsTSUserEx
+                - name: Propriedades IADsTSUserEx
                   href: iadstsuserex-properties.md
                   items:
                     - name: Propriedade AllowLogon
@@ -2148,7 +2148,7 @@
                       href: /windows/desktop/api/Tsuserex/nf-tsuserex-iadstsuserex-get_maxdisconnectiontime
                     - name: Propriedade MaxIdleTime
                       href: /windows/desktop/api/Tsuserex/nf-tsuserex-iadstsuserex-get_maxidletime
-                    - name: Propriedade reconnectaction
+                    - name: Propriedade ReconnectionAction
                       href: /windows/desktop/api/Tsuserex/nf-tsuserex-iadstsuserex-get_reconnectionaction
                     - name: Propriedade TerminalServicesHomeDirectory
                       href: /windows/desktop/api/Tsuserex/nf-tsuserex-iadstsuserex-get_terminalserviceshomedirectory
@@ -2160,10 +2160,10 @@
                       href: /windows/desktop/api/Tsuserex/nf-tsuserex-iadstsuserex-get_terminalservicesprofilepath
                     - name: Propriedade TerminalServicesWorkDirectory
                       href: /windows/desktop/api/Tsuserex/nf-tsuserex-iadstsuserex-get_terminalservicesworkdirectory
-        - name: Referência de API de gateway de Área de Trabalho Remota
+        - name: referência Área de Trabalho Remota API do Gateway de Área de Trabalho Remota
           href: remote-desktop-gateway-api-reference.md
           items:
-            - name: Tipos de enumeração de gateway Área de Trabalho Remota
+            - name: Área de Trabalho Remota tipos de enumeração de gateway
               href: remote-desktop-gateway-enumeration-types.md
               items:
                 - name: AAAccountingDataType
@@ -2172,7 +2172,7 @@
                   href: /windows/win32/api/Tsgpolicyengine/ne-tsgpolicyengine-aaauthschemes
                 - name: PolicyAttributeType
                   href: /windows/win32/api/TSGPolicyEngine/ne-tsgpolicyengine-policyattributetype
-            - name: Interfaces de gateway Área de Trabalho Remota
+            - name: interfaces Área de Trabalho Remota gateway do Área de Trabalho Remota
               href: remote-desktop-gateway-interfaces.md
               items:
                 - name: ITSGAccountingEngine
@@ -2181,7 +2181,7 @@
                     - name: Métodos ITSGAccountingEngine
                       href: itsgaccountingengine-methods.md
                       items:
-                        - name: Método Accounting
+                        - name: Método DoAccounting
                           href: /windows/desktop/api/TSGPolicyEngine/nf-tsgpolicyengine-itsgaccountingengine-doaccounting
                 - name: ITSGAuthenticateUserSink
                   href: /windows/desktop/api/TSGAuthenticationEngine/nn-tsgauthenticationengine-itsgauthenticateusersink
@@ -2237,22 +2237,22 @@
                           href: /windows/desktop/api/TSGPolicyEngine/nf-tsgpolicyengine-itsgpolicyengine-isquarantineenabled
                         - name: Método Refresh
                           href: /windows/desktop/api/TSGPolicyEngine/nf-tsgpolicyengine-itsgpolicyengine-refresh
-            - name: Estruturas Área de Trabalho Remota gateway
+            - name: estruturas Área de Trabalho Remota gateway
               href: remote-desktop-gateway-structures.md
               items:
                 - name: AAAccountingData
                   href: /windows/win32/api/TSGPolicyEngine/ns-tsgpolicyengine-aaaccountingdata
-        - name: Referência de API de Serviços de Área de Trabalho Remota
+        - name: referência Serviços de Área de Trabalho Remota API do Serviços de Área de Trabalho Remota
           href: terminal-services-api-reference.md
           items:
-            - name: Tipos de dados de API Serviços de Área de Trabalho Remota
+            - name: Serviços de Área de Trabalho Remota de dados da API do Serviços de Área de Trabalho Remota
               href: terminal-services-api-data-types.md
               items:
                 - name: TLS_HANDLE
                   href: tls-handle.md
                 - name: WTSLISTENERNAME
                   href: wtslistenername.md
-            - name: Serviços de Área de Trabalho Remota tipos de enumeração de API
+            - name: Serviços de Área de Trabalho Remota tipos de enumeração de API do Serviços de Área de Trabalho Remota
               href: terminal-services-api-enumeration-types.md
               items:
                 - name: WTS_CONFIG_CLASS
@@ -2464,12 +2464,12 @@
                   href: /windows/win32/api/Wtsapi32/ns-wtsapi32-wts_session_infoa
                 - name: WTS_SESSION_INFO_1
                   href: /windows/win32/api/Wtsapi32/ns-wtsapi32-wts_session_info_1a
-            - name: Serviços de Área de Trabalho Remota uniões de API
+            - name: uniões Serviços de Área de Trabalho Remota API do Serviços de Área de Trabalho Remota
               href: remote-desktop-services-api-unions.md
               items:
                 - name: WTSINFOEX_LEVEL
                   href: /windows/win32/api/Wtsapi32/ns-wtsapi32-wtsinfoex_level_a
-        - name: Serviços de Área de Trabalho Remota referência da API AudioEndpoint
+        - name: referência Serviços de Área de Trabalho Remota API do AudioEndpoint
           href: terminal-services-audioendpoint-api-reference.md
           items:
             - name: Serviços de Área de Trabalho Remota tipos de enumeração AudioEndpoint
@@ -2479,12 +2479,12 @@
                   href: /windows/desktop/api/Audioengineendpoint/ne-audioengineendpoint-ae_position_flags
                 - name: APO_BUFFER_FLAGS
                   href: /windows/desktop/api/Audioapotypes/ne-audioapotypes-apo_buffer_flags
-            - name: Serviços de Área de Trabalho Remota funções AudioEndpoint
+            - name: funções Serviços de Área de Trabalho Remota AudioEndpoint
               href: remote-desktop-services-audioendpoint-functions.md
               items:
                 - name: GetTSAudioEndpointEnumeratorForSession
                   href: gettsaudioendpointenumeratorforsession.md
-            - name: Serviços de Área de Trabalho Remota interfaces AudioEndpoint
+            - name: interfaces Serviços de Área de Trabalho Remota AudioEndpoint
               href: terminal-services-audioendpoint-interfaces.md
               items:
                 - name: IAudioDeviceEndpoint
@@ -2511,7 +2511,7 @@
                           href: /windows/desktop/api/Audioengineendpoint/nf-audioengineendpoint-iaudioendpoint-getframeformat
                         - name: Método GetFramesPerPacket
                           href: /windows/desktop/api/Audioengineendpoint/nf-audioengineendpoint-iaudioendpoint-getframesperpacket
-                        - name: Método getlatência
+                        - name: Método GetLatency
                           href: /windows/desktop/api/Audioengineendpoint/nf-audioengineendpoint-iaudioendpoint-getlatency
                         - name: Método SetEventHandle
                           href: /windows/desktop/api/Audioengineendpoint/nf-audioengineendpoint-iaudioendpoint-seteventhandle
@@ -2567,14 +2567,14 @@
                           href: /windows/desktop/api/Audioengineendpoint/nf-audioengineendpoint-iaudiooutputendpointrt-pulseendpoint
                         - name: Método ReleaseOutputDataPointer
                           href: /windows/desktop/api/Audioengineendpoint/nf-audioengineendpoint-iaudiooutputendpointrt-releaseoutputdatapointer
-            - name: Serviços de Área de Trabalho Remota estruturas AudioEndpoint
+            - name: estruturas Serviços de Área de Trabalho Remota AudioEndpoint
               href: terminal-services-audioendpoint-structures.md
               items:
                 - name: AE_CURRENT_POSITION
                   href: /windows/desktop/api/Audioengineendpoint/ns-audioengineendpoint-ae_current_position
                 - name: APO_CONNECTION_PROPERTY
                   href: /windows/desktop/api/Audioapotypes/ns-audioapotypes-apo_connection_property
-        - name: Serviços de Área de Trabalho Remota Acesso via Web interfaces de controle
+        - name: interfaces Serviços de Área de Trabalho Remota Acesso via Web Controle de Serviços de Área de Trabalho Remota Acesso via Web
           href: remote-desktop-services-web-access-control-interfaces.md
           items:
             - name: IMsRdpClientShell2
@@ -2601,7 +2601,7 @@
                       href: /previous-versions/windows/desktop/legacy/ee351598(v=vs.85)
                     - name: Método IsWorkspaceSSOEnabled
                       href: /previous-versions/windows/desktop/legacy/ee351599(v=vs.85)
-                    - name: Método onauthenticated
+                    - name: Método OnAuthenticated
                       href: /previous-versions/windows/desktop/legacy/ee351600(v=vs.85)
                     - name: Método StartWorkspace
                       href: /previous-versions/windows/desktop/legacy/ee351601(v=vs.85)
@@ -2610,17 +2610,17 @@
               items:
                 - name: Método StartWorkspaceEx
                   href: /previous-versions/windows/desktop/legacy/dn123459(v=vs.85)
-        - name: Referência de API de virtualização Área de Trabalho Remota
+        - name: referência Área de Trabalho Remota API de Virtualização do Área de Trabalho Remota
           href: terminal-services-virtualization-api-reference.md
           items:
-            - name: Enumerações de virtualização Área de Trabalho Remota
+            - name: Área de Trabalho Remota enumerações de virtualização
               href: remote-desktop-virtualization-enumerations.md
               items:
                 - name: TARGET_CHANGE_TYPE
                   href: /windows/win32/api/SessDirPublicTypes/ne-sessdirpublictypes-target_change_type
                 - name: TARGET_STATE
                   href: /windows/win32/api/SessDirPublicTypes/ne-sessdirpublictypes-target_state
-                - name: TARGET_TYPE
+                - name: Target_type
                   href: /windows/win32/api/SessDirPublicTypes/ne-sessdirpublictypes-target_type
                 - name: TSSESSION_STATE
                   href: /windows/win32/api/SessDirPublicTypes/ne-sessdirpublictypes-tssession_state
@@ -2628,7 +2628,7 @@
                   href: /windows/win32/api/SessDirPublicTypes/ne-sessdirpublictypes-tssd_addrv46type
                 - name: TS_SB_SORT_BY
                   href: /windows/win32/api/sbtsv/ne-sbtsv-ts_sb_sort_by
-            - name: Interfaces de virtualização Área de Trabalho Remota
+            - name: interfaces Área de Trabalho Remota virtualização do Área de Trabalho Remota
               href: remote-desktop-virtualization-interfaces.md
               items:
                 - name: ITsSbBaseNotifySink
@@ -2664,7 +2664,7 @@
                           href: itssbclientconnection-domain.md
                         - name: Propriedade de ambiente
                           href: itssbclientconnection-environment.md
-                        - name: Propriedade farmname
+                        - name: Propriedade FarmName
                           href: /windows/desktop/api/sbtsv/nf-sbtsv-itssbclientconnection-get_farmname
                         - name: Propriedade InitialProgram
                           href: /windows/desktop/api/sbtsv/nf-sbtsv-itssbclientconnection-get_initialprogram
@@ -3166,7 +3166,7 @@
                           href: /windows/desktop/api/tspubplugin2com/nf-tspubplugin2com-itspubplugin2-getresource2list
                         - name: Método ResolvePersonalDesktop
                           href: /windows/desktop/api/tspubplugin2com/nf-tspubplugin2com-itspubplugin2-resolvepersonaldesktop
-            - name: Estruturas de Serviço Gerenciamento de Conexão de RemoteApp e Área de Trabalho
+            - name: estruturas Gerenciamento de Conexão de RemoteApp e Área de Trabalho de serviço
               href: remoteapp-and-desktop-connection-management-service-structures.md
               items:
                 - name: pluginResource
@@ -3175,25 +3175,25 @@
                   href: /windows/win32/api/tspubplugin2com/ns-tspubplugin2com-pluginresource2
                 - name: pluginResource2FileAssociation
                   href: /windows/win32/api/tspubplugin2com/ns-tspubplugin2com-pluginresource2fileassociation
-            - name: Enumerações de Serviço Gerenciamento de Conexão de RemoteApp e Área de Trabalho
+            - name: Gerenciamento de Conexão de RemoteApp e Área de Trabalho enumerações de serviço
               href: remoteapp-and-desktop-connection-management-service-enumerations.md
               items:
                 - name: TSPUB_PLUGIN_PD_ASSIGNMENT_TYPE
                   href: /windows/win32/api/tspubplugin2com/ne-tspubplugin2com-tspub_plugin_pd_assignment_type
                 - name: TSPUB_PLUGIN_PD_RESOLUTION_TYPE
                   href: /windows/win32/api/tspubplugin2com/ne-tspubplugin2com-tspub_plugin_pd_resolution_type
-        - name: Conexão de RemoteApp e Área de Trabalho interfaces de tempo de execução
+        - name: interfaces Conexão de RemoteApp e Área de Trabalho Runtime
           href: remoteapp-and-desktop-connection-runtime-interfaces.md
           items:
             - name: IWorkspace
               href: /windows/desktop/api/workspaceruntime/nn-workspaceruntime-iworkspace
               items:
-                - name: Métodos IWorkspace
+                - name: Métodos do IWorkspace
                   href: iworkspace-methods.md
                   items:
-                    - name: Método getprocessid
+                    - name: Método GetProcessId
                       href: /windows/desktop/api/workspaceruntime/nf-workspaceruntime-iworkspace-getprocessid
-                    - name: Método getworkspacenames
+                    - name: Método GetWorkspaceNames
                       href: /windows/desktop/api/workspaceruntime/nf-workspaceruntime-iworkspace-getworkspacenames
                     - name: Método StartRemoteApplication
                       href: /windows/desktop/api/workspaceruntime/nf-workspaceruntime-iworkspace-startremoteapplication
@@ -3223,7 +3223,7 @@
                   items:
                     - name: Método GetResourceDisplayName
                       href: /windows/desktop/api/Workspaceruntimeclientext/nf-workspaceruntimeclientext-iworkspaceclientext-getresourcedisplayname
-                    - name: Método getresourceid
+                    - name: Método GetResourceId
                       href: /windows/desktop/api/Workspaceruntimeclientext/nf-workspaceruntimeclientext-iworkspaceclientext-getresourceid
                     - name: Método IssueDisconnect
                       href: /windows/desktop/api/Workspaceruntimeclientext/nf-workspaceruntimeclientext-iworkspaceclientext-issuedisconnect
@@ -3265,7 +3265,7 @@
                 - name: Métodos IWorkspaceResTypeRegistry
                   href: iworkspacerestyperegistry-methods.md
                   items:
-                    - name: Método addresourcetype
+                    - name: Método AddResourceType
                       href: /windows/desktop/api/WorkspaceAX/nf-workspaceax-iworkspacerestyperegistry-addresourcetype
                     - name: Método DeleteResourceType
                       href: /windows/desktop/api/WorkspaceAX/nf-workspaceax-iworkspacerestyperegistry-deleteresourcetype
@@ -3291,7 +3291,7 @@
                       href: /windows/desktop/api/workspaceruntime/nf-workspaceruntime-iworkspacescriptable-isworkspacecredentialspecified
                     - name: Método IsWorkspaceSSOEnabled
                       href: /windows/desktop/api/workspaceruntime/nf-workspaceruntime-iworkspacescriptable-isworkspacessoenabled
-                    - name: Método onauthenticated
+                    - name: Método OnAuthenticated
                       href: /windows/desktop/api/workspaceruntime/nf-workspaceruntime-iworkspacescriptable-onauthenticated
                     - name: Método StartWorkspace
                       href: /windows/desktop/api/workspaceruntime/nf-workspaceruntime-iworkspacescriptable-startworkspace
@@ -3313,15 +3313,15 @@
                   items:
                     - name: Método StartWorkspaceEx2
                       href: /windows/desktop/api/workspaceruntime/nf-workspaceruntime-iworkspacescriptable3-startworkspaceex2
-    - name: Teclas de atalho Serviços de Área de Trabalho Remota
+    - name: Serviços de Área de Trabalho Remota teclas de atalho
       href: terminal-services-shortcut-keys.md
-    - name: Provedor WMI de Serviços de Área de Trabalho Remota
+    - name: Serviços de Área de Trabalho Remota provedor WMI
       href: terminal-services-wmi-provider.md
       items:
-        - name: Serviços de Área de Trabalho Remota referência do provedor WMI
+        - name: Serviços de Área de Trabalho Remota de provedor WMI
           href: terminal-services-wmi-provider-reference.md
           items:
-            - name: Serviços de Área de Trabalho Remota classes de configuração
+            - name: classes Serviços de Área de Trabalho Remota Configuração do Serviços de Área de Trabalho Remota
               href: terminal-services-configuration-classes.md
               items:
                 - name: CIM_ElementSetting
@@ -3335,7 +3335,7 @@
                 - name: Win32_Terminal
                   href: win32-terminal.md
                   items:
-                    - name: Métodos de Win32_Terminal
+                    - name: Métodos Win32_Terminal dados
                       href: win32-terminal-methods.md
                       items:
                         - name: Método de criação
@@ -3361,7 +3361,7 @@
                       href: win32-terminalservice-delete.md
                     - name: Método GetSecurityDescriptor
                       href: win32-terminalservice-getsecuritydescriptor.md
-                    - name: Método InterrogateService
+                    - name: Método Desdroserviço
                       href: win32-terminalservice-interrogateservice.md
                     - name: Método PauseService
                       href: win32-terminalservice-pauseservice.md
@@ -3378,7 +3378,7 @@
                 - name: Win32_TerminalServiceSetting
                   href: win32-terminalservicesetting.md
                   items:
-                    - name: Métodos de Win32_TerminalServiceSetting
+                    - name: Win32_TerminalServiceSetting de dados
                       href: win32-terminalservicesetting-methods.md
                       items:
                         - name: Método AddDirectConnectLicenseServer
@@ -3387,7 +3387,7 @@
                           href: addlstospecifiedlicenseserverlist-win32-terminalservicesetting.md
                         - name: Método CanAccessLicenseServer
                           href: canaccesslicenseserver-win32-terminalservicesetting.md
-                        - name: Método altermode
+                        - name: Método ChangeMode
                           href: win32-terminalservicesetting-changemode.md
                         - name: Método CreateWinstation
                           href: createwinstation-win32-terminalservicesetting.md
@@ -3446,7 +3446,7 @@
                 - name: Win32_TSAccount
                   href: win32-tsaccount.md
                   items:
-                    - name: Métodos de Win32_TSAccount
+                    - name: Métodos Win32_TSAccount dados
                       href: win32-tsaccount-methods.md
                       items:
                         - name: Método Delete
@@ -3458,14 +3458,14 @@
                 - name: Win32_TSClientSetting
                   href: win32-tsclientsetting.md
                   items:
-                    - name: Métodos de Win32_TSClientSetting
+                    - name: Métodos Win32_TSClientSetting de Win32_TSClientSetting
                       href: win32-tsclientsetting-methods.md
                       items:
                         - name: Método ConnectionSettings
                           href: win32-tsclientsetting-connectionsettings.md
                         - name: Método SetAllowDwm
                           href: setallowdwm-win32-tsclientsetting.md
-                        - name: Método setclientproperty
+                        - name: Método SetClientProperty
                           href: win32-tsclientsetting-setclientproperty.md
                         - name: Método SetColorDepth
                           href: win32-tsclientsetting-setcolordepth.md
@@ -3482,7 +3482,7 @@
                 - name: Win32_TSEnvironmentSetting
                   href: win32-tsenvironmentsetting.md
                   items:
-                    - name: Métodos de Win32_TSEnvironmentSetting
+                    - name: Métodos Win32_TSEnvironmentSetting dados
                       href: win32-tsenvironmentsetting-methods.md
                       items:
                         - name: Método InitialProgram
@@ -3492,7 +3492,7 @@
                 - name: Win32_TSGeneralSetting
                   href: win32-tsgeneralsetting.md
                   items:
-                    - name: Métodos de Win32_TSGeneralSetting
+                    - name: Win32_TSGeneralSetting métodos
                       href: win32-tsgeneralsetting-methods.md
                       items:
                         - name: Método SetEncryptionLevel
@@ -3504,7 +3504,7 @@
                 - name: Win32_TSLogonSetting
                   href: win32-tslogonsetting.md
                   items:
-                    - name: Métodos de Win32_TSLogonSetting
+                    - name: Métodos Win32_TSLogonSetting dados
                       href: win32-tslogonsetting-methods.md
                       items:
                         - name: Método ExplicitLogon
@@ -3516,7 +3516,7 @@
                 - name: Win32_TSNetworkAdapterSetting
                   href: win32-tsnetworkadaptersetting.md
                   items:
-                    - name: Métodos de Win32_TSNetworkAdapterSetting
+                    - name: Métodos Win32_TSNetworkAdapterSetting dados
                       href: win32-tsnetworkadaptersetting-methods.md
                       items:
                         - name: Método SelectAllNetworkAdapters
@@ -3528,17 +3528,17 @@
                 - name: Win32_TSPermissionsSetting
                   href: win32-tspermissionssetting.md
                   items:
-                    - name: Métodos de Win32_TSPermissionsSetting
+                    - name: Win32_TSPermissionsSetting de dados
                       href: win32-tspermissionssetting-methods.md
                       items:
-                        - name: Método addaccount
+                        - name: Método AddAccount
                           href: win32-tspermissionssetting-addaccount.md
                         - name: Método RestoreDefaults
                           href: win32-tspermissionssetting-restoredefaults.md
                 - name: Win32_TSRemoteControlSetting
                   href: win32-tsremotecontrolsetting.md
                   items:
-                    - name: Métodos de Win32_TSRemoteControlSetting
+                    - name: Win32_TSRemoteControlSetting métodos de Win32_TSRemoteControlSetting
                       href: win32-tsremotecontrolsetting-methods.md
                       items:
                         - name: Método RemoteControl
@@ -3546,7 +3546,7 @@
                 - name: Win32_TSSessionDirectory
                   href: win32-tssessiondirectory.md
                   items:
-                    - name: Métodos de Win32_TSSessionDirectory
+                    - name: Win32_TSSessionDirectory de dados
                       href: win32-tssessiondirectory-methods.md
                       items:
                         - name: Método CreateUserDiskTemplate
@@ -3580,26 +3580,26 @@
                 - name: Win32_TSSessionSetting
                   href: win32-tssessionsetting.md
                   items:
-                    - name: Métodos de Win32_TSSessionSetting
+                    - name: Métodos Win32_TSSessionSetting de Win32_TSSessionSetting
                       href: win32-tssessionsetting-methods.md
                       items:
                         - name: Método BrokenConnection
                           href: win32-tssessionsetting-brokenconnection.md
-                        - name: Método timelimite
+                        - name: Método TimeLimit
                           href: win32-tssessionsetting-timelimit.md
                 - name: Win32_TSVirtualIP
                   href: win32-tsvirtualip.md
                   items:
-                    - name: Métodos de Win32_TSVirtualIP
+                    - name: Métodos Win32_TSVirtualIP dados
                       href: win32-tsvirtualip-methods.md
                       items:
-                        - name: Método addprogram
+                        - name: Método AddProgram
                           href: addprogram-win32-tsvirtualip.md
                         - name: Método RemoveProgram
                           href: removeprogram-win32-tsvirtualip.md
                         - name: Método SelectNetworkAdapter
                           href: selectnetworkadapter-win32-tsvirtualip.md
-                        - name: Método setprogramlist
+                        - name: Método SetProgramList
                           href: setprogramlist-win32-tsvirtualip.md
                         - name: Método SetVirtualIPActive
                           href: setvirtualipactive-win32-tsvirtualip.md
@@ -3609,7 +3609,7 @@
                           href: setvirtualizeloopbackaddressesenabled-win32-tsvirtualip.md
                 - name: Win32_TSVirtualIPSetting
                   href: win32-tsvirtualipsetting.md
-            - name: Classes de gateway de Área de Trabalho Remota
+            - name: Área de Trabalho Remota gateway
               href: terminal-services-gateway-classes.md
               items:
                 - name: Win32_TSGatewayConnection
@@ -4045,11 +4045,11 @@
                           href: setenabled-win32-sessiondirectoryvmmplugin.md
                         - name: Método SetName
                           href: setname-win32-sessiondirectoryvmmplugin.md
-                        - name: Método setfornecedor
+                        - name: Método SetProvider
                           href: setprovider-win32-sessiondirectoryvmmplugin.md
                         - name: Método SetServiceLocation
                           href: setservicelocation-win32-sessiondirectoryvmmplugin.md
-            - name: Área de Trabalho Remota classes de máquina virtual
+            - name: Área de Trabalho Remota de Máquina Virtual
               href: remote-desktop-virtual-machine-classes.md
               items:
                 - name: Win32_TSVirtualDesktopServerSettings
@@ -4057,7 +4057,7 @@
                 - name: Win32_TSVm
                   href: win32-tsvm.md
                   items:
-                    - name: Métodos de Win32_TSVm
+                    - name: Métodos Win32_TSVm dados
                       href: win32-tsvm-methods.md
                       items:
                         - name: Método QueryOfflineInformation
@@ -4073,7 +4073,7 @@
                 - name: Win32_RdvhManagement
                   href: win32-rdvhmanagement.md
                   items:
-                    - name: Métodos de Win32_RdvhManagement
+                    - name: Métodos Win32_RdvhManagement dados
                       href: win32-rdvhmanagement-methods.md
                       items:
                         - name: Método RdvMigrateVmToDifferentHost
@@ -4086,7 +4086,7 @@
                           href: rdvundovmpermissions-win32-rdvhmanagement.md
                         - name: Método RdvCreateUserDiskTemplate
                           href: rdvcreateuserdisktemplate-win32-rdvhmanagement.md
-            - name: Classes do RemoteApp
+            - name: Classes remoteApp
               href: terminal-services-remoteapp-classes.md
               items:
                 - name: Win32_RDAllowListFileAssociation
@@ -4098,10 +4098,10 @@
                 - name: Win32_TSApplicationFileExtensions
                   href: win32-tsapplicationfileextensions.md
                   items:
-                    - name: Métodos de Win32_TSApplicationFileExtensions
+                    - name: Win32_TSApplicationFileExtensions de dados
                       href: win32-tsapplicationfileextensions-methods.md
                       items:
-                        - name: Método fileassociações
+                        - name: Método FileAssociations
                           href: fileassociations-win32-tsapplicationfileextensions.md
                         - name: Método FileExtensions
                           href: fileextensions-win32-tsapplicationfileextensions.md
@@ -4112,7 +4112,7 @@
                 - name: Win32_TSExpandEnvironmentVariables
                   href: win32-tsexpandenvironmentvariables.md
                   items:
-                    - name: Métodos de Win32_TSExpandEnvironmentVariables
+                    - name: Métodos Win32_TSExpandEnvironmentVariables de Win32_TSExpandEnvironmentVariables
                       href: win32-tsexpandenvironmentvariables-methods.md
                       items:
                         - name: Método EnvironmentVariables
@@ -4120,7 +4120,7 @@
                 - name: Win32_TSGetIcon
                   href: win32-tsgeticon.md
                   items:
-                    - name: Métodos de Win32_TSGetIcon
+                    - name: Win32_TSGetIcon métodos
                       href: win32-tsgeticon-methods.md
                       items:
                         - name: Método GetIcon
@@ -4135,7 +4135,7 @@
                   href: win32-tsstartmenuapplication.md
                 - name: Win32_TSSystemInfo
                   href: win32-tssysteminfo.md
-            - name: Classes de Serviço Gerenciamento de Conexão de RemoteApp e Área de Trabalho
+            - name: Gerenciamento de Conexão de RemoteApp e Área de Trabalho de serviço
               href: remoteapp-and-desktop-connection-management-service-classes.md
               items:
                 - name: Win32_CentralPublishingChangeEvent
@@ -4158,34 +4158,34 @@
                   href: win32-tslegacyplugin.md
                 - name: Win32_Workspace
                   href: win32-workspace.md
-            - name: Serviços de Área de Trabalho Remota códigos de erro do provedor WMI
+            - name: Serviços de Área de Trabalho Remota de erro do provedor WMI
               href: terminal-services-wmi-provider-error-codes.md
     - name: Usando Serviços de Área de Trabalho Remota
       href: using-terminal-services.md
       items:
-        - name: Detectando se a função de Serviços de Área de Trabalho Remota está instalada
+        - name: Detectando se a função Serviços de Área de Trabalho Remota está instalada
           href: detecting-whether-terminal-services-is-installed.md
-        - name: Extensão do agente de sessão dos serviços de terminal
+        - name: Estendendo o Agente de Sessão dos Serviços de Terminal
           href: extending-ts-session-broker.md
         - name: Implementando um enumerador de ponto de extremidade de áudio personalizado
           href: implementing-an-audio-endpoint-enumerator.md
         - name: Monikers de sessão
           href: session-monikers.md
           items:
-            - name: Ativação de sessão para sessão com um moniker de sessão
+            - name: Ativação de sessão para sessão com um Moniker de sessão
               href: session-to-session-activation-with-a-session-moniker.md
-            - name: Usando um moniker de sessão
+            - name: Usando um Moniker de sessão
               href: using-a-session-moniker.md
-        - name: Usando a extensão ADSI para Serviços de Área de Trabalho Remota configuração de usuário
+        - name: Usando a extensão ADSI para configuração Serviços de Área de Trabalho Remota usuário
           href: using-the-adsi-extension-for-terminal-services-user-configuration.md
-        - name: Usando a API de Serviços de Área de Trabalho Remota
+        - name: Usando a API Serviços de Área de Trabalho Remota aplicativo
           href: using-the-terminal-services-api.md
           items:
-            - name: Administração de Serviços de Área de Trabalho Remota
+            - name: Serviços de Área de Trabalho Remota administração
               href: terminal-services-administration.md
             - name: Serviços de Área de Trabalho Remota configuração do usuário
               href: terminal-services-user-configuration.md
-        - name: Usando a API de virtualização Área de Trabalho Remota
+        - name: Usando a API Área de Trabalho Remota Virtualização
           href: using-the-remote-desktop-virtualization-api.md
-        - name: Interface WSDL para soluções de VDI personalizadas
+        - name: Interface WSDL para soluções VDI personalizadas
           href: wsdl-interface-for-custom-vdi-solutions.md

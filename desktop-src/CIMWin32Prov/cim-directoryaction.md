@@ -1,8 +1,8 @@
 ---
-description: A \_ classe abstrata do CIM directoryaction gerencia diretórios. A criação de diretório é tratada pela \_ classe CIM Createdirectoryaction e a remoção de diretório é tratada pela \_ classe CIM RemoveDirectoryAction.
+description: A classe \_ abstrata CIM DirectoryAction gerencia diretórios. A criação de diretório é manipulada pela classe CIM CreateDirectoryAction e a remoção de diretório é manipulada pela \_ classe CIM \_ RemoveDirectoryAction.
 ms.assetid: 3c1e7023-cf54-4321-a340-b8616300c4c0
 ms.tgt_platform: multiple
-title: Classe CIM_DirectoryAction
+title: CIM_DirectoryAction classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -24,19 +24,19 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 130284e8cf19640e7861b17d80a4612b130f7062
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: c197e419db97d4d602ef6710fdb668d9af3dcb9802414285d73d9fe66234691e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103826532"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119321436"
 ---
-# <a name="cim_directoryaction-class"></a>\_Classe directoryaction do CIM
+# <a name="cim_directoryaction-class"></a>Classe CIM \_ DirectoryAction
 
-A classe abstrata do **CIM \_ directoryaction** gerencia diretórios. A criação de diretório é tratada pela classe [**CIM \_ createdirectoryaction**](cim-createdirectoryaction.md) e a remoção de diretório é tratada pela classe [**CIM \_ RemoveDirectoryAction**](cim-removedirectoryaction.md) .
+A **classe \_ abstrata CIM DirectoryAction** gerencia diretórios. A criação de diretório é manipulada pela classe [**CIM \_ CreateDirectoryAction**](cim-createdirectoryaction.md) e a remoção de diretório é manipulada pela [**classe CIM \_ RemoveDirectoryAction.**](cim-removedirectoryaction.md)
 
 > [!IMPORTANT]
-> As classes DMTF (Distributed Management Task Force) CIM (modelo CIM) são as classes pai nas quais as classes WMI são criadas. Atualmente, o WMI dá suporte apenas aos [esquemas de versão do CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> As classes CIM (Distributed Management Task Force) modelo CIM DMTF são as classes pai nas quais as classes WMI são criadas. Atualmente, o WMI dá suporte apenas aos esquemas de versão [do CIM 2.x.](https://dmtf.org/standards/cim/schemas)
 
  
 
@@ -63,20 +63,20 @@ class CIM_DirectoryAction : CIM_Action
 
 ## <a name="members"></a>Membros
 
-A **classe \_ directoryaction do CIM** tem estes tipos de membros:
+A **classe CIM \_ DirectoryAction** tem estes tipos de membros:
 
 -   [Métodos](#methods)
 -   [Propriedades](#properties)
 
 ### <a name="methods"></a>Métodos
 
-A **classe \_ Directoryaction do CIM** tem esses métodos.
+A **classe CIM \_ DirectoryAction** tem esses métodos.
 
 
 
 | Método                                                       | Descrição                                                                  |
 |:-------------------------------------------------------------|:-----------------------------------------------------------------------------|
-| [**Chame**](invoke-method-in-class-cim-directoryaction.md) | Executa uma ação específica. Esse método não é implementado pelo WMI.<br/> |
+| [**Invoke**](invoke-method-in-class-cim-directoryaction.md) | Toma uma ação específica. Esse método não é implementado pelo WMI.<br/> |
 
 
 
@@ -84,11 +84,11 @@ A **classe \_ Directoryaction do CIM** tem esses métodos.
 
 ### <a name="properties"></a>Propriedades
 
-A **classe \_ Directoryaction do CIM** tem essas propriedades.
+A **classe CIM \_ DirectoryAction** tem essas propriedades.
 
 <dl> <dt>
 
-**ActionID**
+**Actionid**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
@@ -97,12 +97,12 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**chave**](/windows/desktop/WmiSdk/key-qualifier), [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
+Qualificadores: [**key**](/windows/desktop/WmiSdk/key-qualifier), [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
 Identificador exclusivo atribuído a uma ação específica para um elemento de software.
 
-Esta propriedade é herdada [**da \_ ação CIM**](cim-action.md).
+Essa propriedade é herdada da [**Ação CIM. \_**](cim-action.md)
 
 </dd> <dt>
 
@@ -118,9 +118,9 @@ Tipo de acesso: Somente leitura
 Qualificadores: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
 </dt> </dl>
 
-Breve descrição textual do objeto.
+Descrição textual curta do objeto.
 
-Esta propriedade é herdada [**da \_ ação CIM**](cim-action.md).
+Essa propriedade é herdada da [**Ação CIM. \_**](cim-action.md)
 
 </dd> <dt>
 
@@ -135,22 +135,22 @@ Tipo de acesso: Somente leitura
 
 Descrição do objeto.
 
-Esta propriedade é herdada [**da \_ ação CIM**](cim-action.md).
+Essa propriedade é herdada da [**Ação CIM. \_**](cim-action.md)
 
 </dd> <dt>
 
 **Direção**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Indica se um objeto [**de \_ ação CIM**](cim-action.md) específico faz parte de uma sequência de ações para fazer a transição do elemento de software atual para seu próximo estado, como "instalar" ou para remover o elemento de software atual, como "Desinstalar".
+Indica se um objeto de Ação [**CIM \_**](cim-action.md) específico faz parte de uma sequência de ações para fazer a transição do elemento de software atual para seu próximo estado, como "Instalar", ou para remover o elemento de software atual, como "Desinstalar".
 
-Esta propriedade é herdada [**da \_ ação CIM**](cim-action.md).
+Essa propriedade é herdada da [**Ação CIM. \_**](cim-action.md)
 
 <dt>
 
@@ -195,12 +195,12 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ softwareelement**](cim-softwareelement.md).**Name**"), [**\_ chave CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
+Qualificadores: [**Propagado**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ SoftwareElement**](cim-softwareelement.md).**Name**"), [**cim \_ key**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
 Identifica o elemento de software.
 
-Esta propriedade é herdada [**da \_ ação CIM**](cim-action.md).
+Essa propriedade é herdada da [**Ação CIM. \_**](cim-action.md)
 
 </dd> <dt>
 
@@ -213,30 +213,30 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ softwareelement**](cim-softwareelement.md).**SoftwareElementID**"), [**\_ chave CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
+Qualificadores: [**Propagado**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ SoftwareElement**](cim-softwareelement.md).**SoftwareElementID**"), [**chave \_ CIM,**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
 Identificador para o elemento de software.
 
-Esta propriedade é herdada [**da \_ ação CIM**](cim-action.md).
+Essa propriedade é herdada da [**Ação CIM. \_**](cim-action.md)
 
 </dd> <dt>
 
 **SoftwareElementState**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ softwareelement**](cim-softwareelement.md).**SoftwareElementState**"), [**\_ chave CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
+Qualificadores: [**Propagado**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ SoftwareElement**](cim-softwareelement.md).**SoftwareElementState**"), [**chave CIM \_**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
 Estado de um elemento de software.
 
-Esta propriedade é herdada [**da \_ ação CIM**](cim-action.md).
+Essa propriedade é herdada da [**Ação CIM. \_**](cim-action.md)
 
 <dt>
 
@@ -269,18 +269,18 @@ Descreve os detalhes necessários para a instalação bem-sucedida e os detalhes
 
 </dt> <dd>
 
-Descreve os detalhes necessários para a execução bem-sucedida e os detalhes (condições e ações) necessários para criar um elemento de software no estado em execução (ou seja, o próximo estado).
+Descreve os detalhes necessários para a execução bem-sucedida e os detalhes (condições e ações) necessários para criar um elemento de software no estado de execução (ou seja, o próximo estado).
 
 </dd> <dt>
 
 <span id="Running"></span><span id="running"></span><span id="RUNNING"></span>
 
-<span id="Running"></span><span id="running"></span><span id="RUNNING"></span>**Em execução** (3)
+<span id="Running"></span><span id="running"></span><span id="RUNNING"></span>**Executando** (3)
 
 
 </dt> <dd>
 
-Descreve os detalhes necessários para monitorar e operar em um elemento inicial.
+Descreve os detalhes necessários para monitorar e operar em um elemento start.
 
 </dd> </dl>
 
@@ -289,18 +289,18 @@ Descreve os detalhes necessários para monitorar e operar em um elemento inicial
 **TargetOperatingSystem**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ softwareelement**](cim-softwareelement.md).**TargetOperatingSystem**"), [**\_ chave CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) (" MIF. \|Informações do componente de software DMTF \| 2,5 ")
+Qualificadores: [**Propagado**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ SoftwareElement**](cim-softwareelement.md).**TargetOperatingSystem**"), [**chave CIM, \_**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. Informações do componente de software DMTF \| \| 002.5")
 </dt> </dl>
 
-Sistema operacional de destino do elemento de software proprietário.
+Sistema operacional de destino do elemento de software de propriedade.
 
-Esta propriedade é herdada [**da \_ ação CIM**](cim-action.md).
+Essa propriedade é herdada da [**Ação CIM. \_**](cim-action.md)
 
 <dt>
 
@@ -313,7 +313,7 @@ Esta propriedade é herdada [**da \_ ação CIM**](cim-action.md).
 
 <span id="Other"></span><span id="other"></span><span id="OTHER"></span>
 
-<span id="Other"></span><span id="other"></span><span id="OTHER"></span>**Outro** (1)
+<span id="Other"></span><span id="other"></span><span id="OTHER"></span>**Outros** (1)
 
 
 </dt> <dd></dd> <dt>
@@ -352,7 +352,7 @@ Mac OS
 
 <span id="Digital_Unix"></span><span id="digital_unix"></span><span id="DIGITAL_UNIX"></span>
 
-<span id="Digital_Unix"></span><span id="digital_unix"></span><span id="DIGITAL_UNIX"></span>**Unix Digital** (6)
+<span id="Digital_Unix"></span><span id="digital_unix"></span><span id="DIGITAL_UNIX"></span>**Digital Unix** (6)
 
 
 </dt> <dd></dd> <dt>
@@ -364,13 +364,13 @@ Mac OS
 
 </dt> <dd>
 
-Abrir VMS
+Abrir VMs
 
 </dd> <dt>
 
 <span id="HPUX"></span><span id="hpux"></span>
 
-<span id="HPUX"></span><span id="hpux"></span>HP **(8** )
+<span id="HPUX"></span><span id="hpux"></span>**HPUX** (8)
 
 
 </dt> <dd>
@@ -432,7 +432,7 @@ VM (máquina virtual) da Microsoft para Java
 
 </dt> <dd>
 
-Windows 3. x
+Windows Win
 
 </dd> <dt>
 
@@ -514,7 +514,7 @@ NCR 3000
 
 <span id="Reliant_UNIX"></span><span id="reliant_unix"></span><span id="RELIANT_UNIX"></span>
 
-<span id="Reliant_UNIX"></span><span id="reliant_unix"></span><span id="RELIANT_UNIX"></span>**Unix dependente** (24)
+<span id="Reliant_UNIX"></span><span id="reliant_unix"></span><span id="RELIANT_UNIX"></span>**UNIX dependentes** (24)
 
 
 </dt> <dd></dd> <dt>
@@ -642,7 +642,7 @@ BS2000/OSD
 
 <span id="Interactive_UNIX"></span><span id="interactive_unix"></span><span id="INTERACTIVE_UNIX"></span>
 
-<span id="Interactive_UNIX"></span><span id="interactive_unix"></span><span id="INTERACTIVE_UNIX"></span>**Unix interativo** (40)
+<span id="Interactive_UNIX"></span><span id="interactive_unix"></span><span id="INTERACTIVE_UNIX"></span>**UNIX interativos** (40)
 
 
 </dt> <dd></dd> <dt>
@@ -654,7 +654,7 @@ BS2000/OSD
 
 </dt> <dd>
 
-BSD UNIX
+UNIX BSD
 
 </dd> <dt>
 

@@ -4,12 +4,12 @@ ms.assetid: bb227536-3b29-4221-b2d5-bab5e9d91448
 title: Trabalhando com interfaces IXpsOMPageReference
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9f4526e6c561a962b77fa3f2fc62d56431359aa6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ee38856075a967fbf0f66255c922e181961dc42f1214f75e05da7d4062d6c4a2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103828762"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119098678"
 ---
 # <a name="working-with-ixpsompagereference-interfaces"></a>Trabalhando com interfaces IXpsOMPageReference
 
@@ -19,9 +19,9 @@ Este tópico descreve como usar as interfaces que fornecem acesso a referências
 
 | Nome da interface                                                  | Interfaces filho lógicas                    | Descrição                                                                                                                                                                                                                                                                                                                                                      |
 |-----------------------------------------------------------------|---------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**IXpsOMPageReference**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsompagereference)<br/>   | [**IXpsOMPage**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsompage)<br/> | Virtualiza o conteúdo de uma página de documento. <br/> Uma referência de página contém informações básicas sobre a página, algumas propriedades de página e um link para o conteúdo da página. A interface [**IXpsOMPage**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsompage) que compreende o conteúdo da página é retornada pelo método [**IXpsOMPageReference:: GetPage**](/windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsompagereference-getpage) .<br/> |
-| [**IXpsOMNameCollection**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomnamecollection)<br/> | Nenhum<br/>                             | Contém uma lista de itens de página que são destinos de hiperlink. A lista é retornada pelo método [**IXpsOMPageReference:: CollectLinkTargets**](/windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsompagereference-collectlinktargets) .<br/>                                                                                                                                                               |
-| [**IXpsOMPartResources**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsompartresources)<br/>   | Nenhum<br/>                             | Contém uma lista dos recursos baseados em parte associados à página. Essa lista é retornada pelo método [**IXpsOMPageReference:: CollectPartResources**](/windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsompagereference-collectpartresources) .<br/>                                                                                                                                     |
+| [**IXpsOMPageReference**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsompagereference)<br/>   | [**IXpsOMPage**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsompage)<br/> | Virtualiza o conteúdo de uma página de documento. <br/> Uma referência de página contém informações básicas sobre a página, algumas propriedades de página e um link para o conteúdo da página. A interface [**IXpsOMPage**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsompage) que inclui o conteúdo da página é retornada pelo [**método IXpsOMPageReference::GetPage.**](/windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsompagereference-getpage)<br/> |
+| [**IXpsOMNameCollection**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomnamecollection)<br/> | Nenhum<br/>                             | Contém uma lista de itens de página que são destinos de hiperlink. A lista é retornada pelo [**método IXpsOMPageReference::CollectLinkTargets.**](/windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsompagereference-collectlinktargets)<br/>                                                                                                                                                               |
+| [**IXpsOMPartResources**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsompartresources)<br/>   | Nenhum<br/>                             | Contém uma lista dos recursos baseados em parte associados à página. Essa lista é retornada pelo [**método IXpsOMPageReference::CollectPartResources.**](/windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsompagereference-collectpartresources)<br/>                                                                                                                                     |
 
 
 
@@ -33,11 +33,11 @@ Os exemplos de código a seguir ilustram como trabalhar com as interfaces de ref
 
 -   [Obter o conteúdo da página](#get-the-page-contents)
 -   [Obter a lista de destinos de hiperlink nesta página](#get-the-list-of-hyperlink-targets-on-this-page)
--   [Obter os recursos da parte associados a esta página](#get-the-part-resources-that-are-associated-with-this-page)
+-   [Obter os recursos de parte associados a esta página](#get-the-part-resources-that-are-associated-with-this-page)
 
 ### <a name="get-the-page-contents"></a>Obter o conteúdo da página
 
-O exemplo de código a seguir obtém um ponteiro para a interface [**IXpsOMPage**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsompage) que inclui o conteúdo da página. Se a página não tiver sido carregada no OM XPS, como acontece quando o OM XPS é inicializado chamando [**IXpsOMObjectFactory:: CreatePackageFromFile**](/windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomobjectfactory-createpackagefromfile), chamando [**IXpsOMPageReference:: GetPage**](/windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsompagereference-getpage) carregará a página no Om XPS.
+O exemplo de código a seguir obtém um ponteiro para a interface [**IXpsOMPage**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsompage) que inclui o conteúdo da página. Se a página não tiver sido carregada no OM XPS, como acontece quando o OM XPS é inicializado chamando [**IXpsOMObjectFactory::CreatePackageFromFile**](/windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomobjectfactory-createpackagefromfile), chamar [**IXpsOMPageReference::GetPage**](/windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsompagereference-getpage) carregará a página no OM XPS.
 
 
 ```C++
@@ -56,7 +56,7 @@ O exemplo de código a seguir obtém um ponteiro para a interface [**IXpsOMPage*
 
 ### <a name="get-the-list-of-hyperlink-targets-on-this-page"></a>Obter a lista de destinos de hiperlink nesta página
 
-O exemplo de código a seguir obtém um ponteiro para a interface [**IXpsOMNameCollection**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomnamecollection) que contém a lista de itens de página que são destinos de hiperlink. Se a página não tiver sido carregada no OM XPS, a lista de destinos de hiperlink será lida na marcação **PageContent. LinkTargets** . Se a página tiver sido carregada, [**CollectLinkTargets**](/windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsompagereference-collectlinktargets) verificará cada elemento na página e retornará uma lista de elementos cujo atributo **IsHyperlinkTarget** é **true**.
+O exemplo de código a seguir obtém um ponteiro para a interface [**IXpsOMNameCollection**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomnamecollection) que contém a lista de itens de página que são destinos de hiperlink. Se a página não tiver sido carregada no OM XPS, a lista de destinos de hiperlink será lida na **marcação PageContent.LinkTargets.** Se a página tiver sido carregada, [**CollectLinkTargets**](/windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsompagereference-collectlinktargets) verificará cada elemento na página e retornará uma lista de elementos cujo atributo **IsHyperlinkTarget** é **TRUE.**
 
 
 ```C++
@@ -104,9 +104,9 @@ O exemplo de código a seguir obtém um ponteiro para a interface [**IXpsOMNameC
 
 
 
-### <a name="get-the-part-resources-that-are-associated-with-this-page"></a>Obter os recursos da parte associados a esta página
+### <a name="get-the-part-resources-that-are-associated-with-this-page"></a>Obter os recursos de parte associados a esta página
 
-O exemplo de código a seguir obtém as listas dos diferentes recursos que são usados por essa página.
+O exemplo de código a seguir obtém as listas dos diferentes recursos usados por esta página.
 
 
 ```C++

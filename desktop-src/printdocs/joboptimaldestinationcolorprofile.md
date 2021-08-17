@@ -1,15 +1,15 @@
 ---
-description: Saiba mais sobre o elemento JobOptimalDestinationColorProfile que especifica o perfil de cor ideal, considerando a configuração atual do dispositivo.
+description: Saiba mais sobre o elemento JobOptimalDestinationColorProfile que especifica o perfil de cor ideal de acordo com a configuração atual do dispositivo.
 ms.assetid: 70790dc2-180a-4e04-91a9-a10ee76c836b
 title: JobOptimalDestinationColorProfile
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3e7ad2ea269594809b047922ea4f6c99b924e5ae
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 9f2a63f63993f6a9cf8de8ba0a332407bb645099d98e6d92669c18368bd7629a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112408839"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119099664"
 ---
 # <a name="joboptimaldestinationcolorprofile"></a>JobOptimalDestinationColorProfile
 
@@ -25,7 +25,7 @@ Especifica o perfil de cor ideal de acordo com a configuração atual do disposi
 
 
 
-| Name | Valor |
+| Nome | Valor |
 |----------------------------|---------------------|
 | Tipo de elemento <br/>   | Propriedade<br/> |
 | Prefixo de definição de scoping <br/> | Trabalho<br/>      |
@@ -71,7 +71,7 @@ A tabela a seguir descreve as características das variáveis definidas na estru
 
 ## <a name="extensible-markup-language-xml-content"></a>linguagem XML conteúdo (XML)
 
-As palavras-chave public Print Schema são definidas no https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords namespace . O conteúdo linguagem XML XML (public linguagem XML) para essa palavra-chave é definido abaixo:
+As palavras-chave public Print Schema são definidas no https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords namespace . O conteúdo linguagem XML xml público para essa palavra-chave está definido abaixo:
 
 ``` syntax
  <psf:Property name="psk:JobOptimalDestinationColorProfile">

@@ -4,12 +4,12 @@ ms.assetid: EB0F305D-806D-4ACB-8024-3A6FB125629D
 title: Utilitários comuns para exemplos de virtualização (v2)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9dcd826ba0c36f47ba0a474711b3c61ed1096a6c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c6b335efcf72a8b9a2103c0166842c61c39e92d02e4f153126b6b9e0f2ed9c4d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103829038"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119980486"
 ---
 # <a name="common-utilities-for-the-virtualization-samples-v2"></a>Utilitários comuns para exemplos de virtualização (v2)
 

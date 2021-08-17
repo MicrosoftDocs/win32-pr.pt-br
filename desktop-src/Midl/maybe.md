@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 68704e19d421150444933d74f6b78fc5bada46f6
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 178faf3d308f7dd282e31a8f0eabf8708bb8b3fe1a0d52a981e65adddb258ad1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104006374"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119067146"
 ---
 # <a name="maybe-attribute"></a>atributo talvez
 
@@ -65,7 +65,7 @@ Especifica o tipo de retorno da função.
 
 </dd> <dt>
 
-*nome da função* 
+*Nome da função* 
 </dt> <dd>
 
 Especifica o nome da função à qual o atributo **\[ talvez \]** será aplicado.
@@ -96,9 +96,9 @@ Uma chamada com o atributo de **\[ talvez \]** não pode conter parâmetros de s
 [Arquivo de definição de interface (IDL)](interface-definition-idl-file.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

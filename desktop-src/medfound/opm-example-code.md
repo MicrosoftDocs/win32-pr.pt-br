@@ -1,33 +1,33 @@
 ---
-description: Este tópico contém código de exemplo para usar o Gerenciador de proteção de saída.
+description: Este tópico contém um código de exemplo para usar o Gerenciador de Proteção de Saída.
 ms.assetid: ad2303a0-f3f3-43a0-83eb-023640da2ece
-title: Código de exemplo OPM
+title: Código de exemplo do OPM
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9883643829815d27725c392e2c4f13f34e816988
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e075b3fc8b88d87b80126c8dea307cf151e5f9fc817fa61b9ed8be37ef12c5e6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105812021"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119102116"
 ---
-# <a name="opm-example-code"></a>Código de exemplo OPM
+# <a name="opm-example-code"></a>Código de exemplo do OPM
 
-Este tópico contém código de exemplo para usar o [Gerenciador de proteção de saída](output-protection-manager.md).
+Este tópico contém um código de exemplo para usar [o Gerenciador de Proteção de Saída](output-protection-manager.md).
 
-O código de exemplo neste tópico demonstra como executar o handshake de OPM, enviar uma solicitação de status e enviar um comando OPM. Para operações criptográficas, o código usa a CNG (Cryptography API: Next Generation). O foco deste tópico é mostrar a funcionalidade OPM, para que as tarefas relacionadas ao certificado X. 509, como análise e validação do certificado, não sejam mostradas.
+O código de exemplo neste tópico demonstra como executar o handshake do OPM, enviar uma solicitação de status e enviar um comando OPM. Para operações criptográficas, o código usa a API de Criptografia: CNG (Próxima Geração). O foco deste tópico é mostrar a funcionalidade do OPM, portanto, as tarefas relacionadas ao certificado X.509, como análise e validação do certificado, não são mostradas.
 
-Os procedimentos mostrados neste tópico são explicados com mais detalhes em como [usar o Gerenciador de proteção de saída](using-output-protection-manager.md).
+Os procedimentos mostrados neste tópico são explicados mais detalhadamente em [Usando o Gerenciador de Proteção de Saída](using-output-protection-manager.md).
 
--   [Executando o handshake de OPM](#performing-the-opm-handshake)
--   [Enviando uma solicitação de status OPM](#sending-an-opm-status-request)
+-   [Executando o handshake do OPM](#performing-the-opm-handshake)
+-   [Enviando uma solicitação de status do OPM](#sending-an-opm-status-request)
 -   [Enviando um comando OPM](#sending-an-opm-command)
 -   [Computando o valor OMAC-1](#computing-the-omac-1-value)
 -   [Tópicos relacionados](#related-topics)
 
-## <a name="performing-the-opm-handshake"></a>Executando o handshake de OPM
+## <a name="performing-the-opm-handshake"></a>Executando o handshake do OPM
 
-1.  Depois de enumerar os dispositivos OPM e selecionar uma saída de vídeo (não mostrada), a primeira etapa é chamar [**IOPMVideoOutput:: StartInitialization**](/windows/desktop/api/opmapi/nf-opmapi-iopmvideooutput-startinitialization) para obter a cadeia de certificados X. 509 do dispositivo:
+1.  Depois de enumerar os dispositivos OPM e selecionar uma saída de vídeo (não mostrada), a primeira etapa é chamar [**IOPMVideoOutput::StartInitialization**](/windows/desktop/api/opmapi/nf-opmapi-iopmvideooutput-startinitialization) para obter a cadeia de certificados X.509 do dispositivo:
 
     ```C++
         OPM_RANDOM_NUMBER random;   // Random number from driver.
@@ -102,8 +102,8 @@ Os procedimentos mostrados neste tópico são explicados com mais detalhes em co
 
     
 
-2.  O aplicativo deve validar a cadeia de certificados e obter a chave pública do certificado de folha na cadeia. Essas etapas não são mostradas aqui.
-3.  Depois de ter a chave pública, você pode importar a chave para um provedor de algoritmos CNG. Chame a função **BCryptOpenAlgorithmProvider** para carregar o provedor. A função definida pelo aplicativo `ImportRsaPublicKey` importa a chave e retorna um identificador para a chave importada:
+2.  O aplicativo deve validar a cadeia de certificados e obter a chave pública do certificado folha na cadeia. Essas etapas não são mostradas aqui.
+3.  Depois de ter a chave pública, você pode importar a chave para um provedor de algoritmo CNG. Chame a **função BCryptOpenAlgorithmProvider** para carregar o provedor. A função definida `ImportRsaPublicKey` pelo aplicativo importa a chave e retorna um alça para a chave importada:
     ```C++
     void ReverseMemCopy(BYTE *pbDest, BYTE const *pbSource, DWORD cb)
     {
@@ -212,7 +212,7 @@ Os procedimentos mostrados neste tópico são explicados com mais detalhes em co
 
     
 
-4.  Em seguida, prepare o buffer que contém os números de sequência iniciais e a chave de sessão AES.
+4.  Em seguida, prepare o buffer que contém os números de sequência inicial e a chave de sessão AES.
     ```C++
     void CopyAndAdvancePtr(BYTE*& pDest, const BYTE* pSrc, DWORD cb)
     {
@@ -288,7 +288,7 @@ Os procedimentos mostrados neste tópico são explicados com mais detalhes em co
 
     
 
-5.  Criptografe esse buffer com a criptografia RSAES-OAEP, usando a chave pública do driver.
+5.  Criptografe esse buffer com criptografia RSAES-OAEP usando a chave pública do driver.
     ```C++
         //--------------------------------------------------------------------
         // RSAES-OAEP encrypt the signature. Use SHA2 hashing algorithm.
@@ -355,7 +355,7 @@ Os procedimentos mostrados neste tópico são explicados com mais detalhes em co
 
     
 
-6.  Chame [**IOPMVideoOutput:: FinishInitialization**](/windows/desktop/api/opmapi/nf-opmapi-iopmvideooutput-finishinitialization) para concluir o handshake.
+6.  Chame [**IOPMVideoOutput::FinishInitialization**](/windows/desktop/api/opmapi/nf-opmapi-iopmvideooutput-finishinitialization) para concluir o handshake.
     ```C++
         // Complete the handshake.
         hr = pVideoOutput->FinishInitialization(
@@ -370,11 +370,11 @@ Os procedimentos mostrados neste tópico são explicados com mais detalhes em co
 
     
 
-## <a name="sending-an-opm-status-request"></a>Enviando uma solicitação de status OPM
+## <a name="sending-an-opm-status-request"></a>Enviando uma solicitação de status do OPM
 
-O exemplo a seguir mostra como enviar a solicitação de status do [**\_ tipo de \_ conector \_ do OPM Get**](opm-get-connector-type.md) .
+O exemplo a seguir mostra como enviar a solicitação de status [**OPM \_ GET CONNECTOR \_ \_ TYPE.**](opm-get-connector-type.md)
 
-1.  Preencha uma estrutura [**de \_ \_ \_ parâmetros obter informações de OPM**](/windows/desktop/api/ksopmapi/ns-ksopmapi-opm_get_info_parameters) com as informações para a solicitação de status.
+1.  Preencha uma estrutura [**GET \_ INFO \_ \_ PARAMETERS do OPM**](/windows/desktop/api/ksopmapi/ns-ksopmapi-opm_get_info_parameters) com as informações da solicitação de status.
     ```C++
         //--------------------------------------------------------------------
         // Prepare the status request structure.
@@ -419,7 +419,7 @@ O exemplo a seguir mostra como enviar a solicitação de status do [**\_ tipo de
 
     
 
-2.  O membro **OMAC** da estrutura [**de \_ \_ \_ parâmetros Get Info de OPM**](/windows/desktop/api/ksopmapi/ns-ksopmapi-opm_get_info_parameters) é um OMAC (One-key CBC MAC) calculado para o restante da estrutura. A função ComputeOMAC (mostrada posteriormente) é declarada da seguinte maneira:
+2.  O **membro omac** da estrutura [**GET INFO \_ \_ \_ PARAMETERS do OPM**](/windows/desktop/api/ksopmapi/ns-ksopmapi-opm_get_info_parameters) é um OMAC (CBC MAC) de uma chave computado para o restante da estrutura. A função ComputeOMAC (mostrada posteriormente) é declarada da seguinte forma:
     ```C++
     HRESULT ComputeOMAC(
         OPM_RANDOM_NUMBER&  AesKey,     // Session key
@@ -431,7 +431,7 @@ O exemplo a seguir mostra como enviar a solicitação de status do [**\_ tipo de
 
     
 
-3.  Chame [**IOPMVideoOutput:: GetInformation**](/windows/desktop/api/opmapi/nf-opmapi-iopmvideooutput-getinformation) para enviar a solicitação de status.
+3.  Chame [**IOPMVideoOutput::GetInformation**](/windows/desktop/api/opmapi/nf-opmapi-iopmvideooutput-getinformation) para enviar a solicitação de status.
     ```C++
         //  Send the status request.
         hr = pVideoOutput->GetInformation(&StatusInput, &StatusOutput);
@@ -445,7 +445,7 @@ O exemplo a seguir mostra como enviar a solicitação de status do [**\_ tipo de
 
     
 
-4.  O driver grava a resposta para a estrutura de [**\_ \_ informações de OPM solicitado**](/windows/desktop/api/ksopmapi/ns-ksopmapi-opm_requested_information) . A estrutura de resposta inclui um valor OMAC, computado para o restante da estrutura. Verifique esse valor antes de confiar nos dados de resposta:
+4.  O driver grava a resposta na estrutura [**\_ INFORMAÇÕES SOLICITADAS \_ do OPM.**](/windows/desktop/api/ksopmapi/ns-ksopmapi-opm_requested_information) A estrutura de resposta inclui um valor OMAC, calculado para o restante da estrutura. Verifique esse valor antes de confiar nos dados de resposta:
     ```C++
         //--------------------------------------------------------------------
         // Verify the signature.
@@ -480,7 +480,7 @@ O exemplo a seguir mostra como enviar a solicitação de status do [**\_ tipo de
 
     
 
-5.  O membro **abRequestedInformation** da estrutura [**de \_ \_ informações de OPM solicitado**](/windows/desktop/api/ksopmapi/ns-ksopmapi-opm_requested_information) contém os dados de resposta. Para a solicitação de [**\_ \_ \_ tipo de conector**](opm-get-connector-type.md) de informações do OPM, os dados de resposta consistem em uma estrutura de [**\_ \_ informações padrão OPM**](/windows/desktop/api/ksopmapi/ns-ksopmapi-opm_standard_information) .
+5.  O **membro abRequestedInformation da** estrutura [**\_ OPM REQUESTED \_ INFORMATION**](/windows/desktop/api/ksopmapi/ns-ksopmapi-opm_requested_information) contém os dados de resposta. Para a [**solicitação OPM \_ GET CONNECTOR \_ \_ TYPE,**](opm-get-connector-type.md) os dados de resposta consistem em uma estrutura [**de INFORMAÇÕES PADRÃO \_ \_ do OPM.**](/windows/desktop/api/ksopmapi/ns-ksopmapi-opm_standard_information)
     ```C++
         // Examine the response. 
         // The response data is an OPM_STANDARD_INFORMATION structure.
@@ -522,9 +522,9 @@ O exemplo a seguir mostra como enviar a solicitação de status do [**\_ tipo de
 
 ## <a name="sending-an-opm-command"></a>Enviando um comando OPM
 
-O exemplo a seguir mostra como habilitar o High-Bandwidth digital Proteção de Conteúdo (HDCP) enviando o comando de [**\_ nível de \_ proteção \_ do OPM Set**](opm-set-protection-level.md) .
+O exemplo a seguir mostra como habilitar High-Bandwidth HDCP (Proteção de Conteúdo Digital) enviando o comando [**OPM \_ SET PROTECTION \_ \_ LEVEL.**](opm-set-protection-level.md)
 
-1.  Todos os comandos OPM usam a estrutura de [**\_ \_ parâmetros de configuração de OPM**](/windows/desktop/api/opmapi/ns-opmapi-opm_configure_parameters) para dados de entrada. A matriz **abParameters** nesta estrutura contém dados específicos de comando. Para o comando de [**\_ \_ \_ nível de proteção do OPM**](opm-set-protection-level.md) , a matriz **abParameters** contém uma estrutura de parâmetros de [**nível de proteção de OPM \_ definido \_ \_ \_**](/windows/desktop/api/opmapi/ns-opmapi-opm_set_protection_level_parameters) . Preencha esta estrutura da seguinte maneira:
+1.  Todos os comandos do OPM usam a [**estrutura \_ CONFIGURE \_ PARAMETERS do OPM**](/windows/desktop/api/opmapi/ns-opmapi-opm_configure_parameters) para dados de entrada. A **matriz abParameters** nessa estrutura contém dados específicos do comando. Para o [**comando OPM \_ SET PROTECTION \_ \_ LEVEL,**](opm-set-protection-level.md) a **matriz abParameters** contém uma [**estrutura OPM SET PROTECTION LEVEL \_ \_ \_ \_ PARAMETERS.**](/windows/desktop/api/opmapi/ns-opmapi-opm_set_protection_level_parameters) Preencha essa estrutura da seguinte forma:
     ```C++
         //--------------------------------------------------------------------
         // Prepare the command structure.
@@ -544,7 +544,7 @@ O exemplo a seguir mostra como habilitar o High-Bandwidth digital Proteção de 
 
     
 
-2.  Em seguida, preencha a estrutura de [**\_ Configurar \_ parâmetros de OPM**](/windows/desktop/api/opmapi/ns-opmapi-opm_configure_parameters) e Compute o OMAC.
+2.  Em seguida, preencha a estrutura [**\_ CONFIGURE \_ PARAMETERS do OPM**](/windows/desktop/api/opmapi/ns-opmapi-opm_configure_parameters) e compute o OMAC.
     ```C++
         // Common command parameters
         OPM_CONFIGURE_PARAMETERS Command;
@@ -572,7 +572,7 @@ O exemplo a seguir mostra como habilitar o High-Bandwidth digital Proteção de 
 
     
 
-3.  Para enviar o comando, chame [**IOPMVideoOutput:: Configure**](/windows/desktop/api/opmapi/nf-opmapi-iopmvideooutput-configure). Lembre-se de incrementar o número de sequência de comando após cada comando.
+3.  Para enviar o comando, chame [**IOPMVideoOutput::Configure**](/windows/desktop/api/opmapi/nf-opmapi-iopmvideooutput-configure). Lembre-se de incrementar o número da sequência de comandos após cada comando.
     ```C++
         //  Send the command.
         hr = pVideoOutput->Configure(
@@ -592,11 +592,11 @@ O exemplo a seguir mostra como habilitar o High-Bandwidth digital Proteção de 
 
     
 
-4.  Para verificar se a HDCP está habilitada, envie uma solicitação de status de [**\_ \_ \_ \_ nível de proteção de OPM**](opm-get-virtual-protection-level.md) (não mostrado).
+4.  Para verificar se o HDCP está habilitado, envie uma solicitação de status [**GET VIRTUAL PROTECTION LEVEL \_ \_ \_ \_ do OPM**](opm-get-virtual-protection-level.md) (não mostrada).
 
 ## <a name="computing-the-omac-1-value"></a>Computando o valor OMAC-1
 
-O código a seguir mostra como calcular o valor de OMAC-1 que é usado para assinar o comando OPM e estruturas de solicitação.
+O código a seguir mostra como calcular o valor OMAC-1 usado para assinar as estruturas de solicitação e comando do OPM.
 
 
 ```C++
@@ -816,7 +816,7 @@ O algoritmo OMAC-1 é descrito em detalhes em <https://www.nuee.nagoya-u.ac.jp/l
 
 <dl> <dt>
 
-[Gerenciador de proteção de saída](output-protection-manager.md)
+[Gerenciador de Proteção de Saída](output-protection-manager.md)
 </dt> </dl>
 
  

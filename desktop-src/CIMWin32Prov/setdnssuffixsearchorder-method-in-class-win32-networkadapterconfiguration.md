@@ -2,7 +2,7 @@
 description: O método estático da classe WMI SetDNSSuffixSearchOrder usa uma matriz de elementos de cadeia de caracteres para definir a ordem de pesquisa de sufixo.
 ms.assetid: 1ad9fc99-8c57-43d4-92d2-b12f2c1451cb
 ms.tgt_platform: multiple
-title: Método SetDNSSuffixSearchOrder da classe Win32_NetworkAdapterConfiguration
+title: Método SetDNSSuffixSearchOrder da Win32_NetworkAdapterConfiguration classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 10088b1d0722f968e5d3742984baa91ec3e423aa
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 85964d24c82367c8609e4f93b02f5614493c56efa299386038d7f73fd749dcab
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103826521"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119440036"
 ---
-# <a name="setdnssuffixsearchorder-method-of-the-win32_networkadapterconfiguration-class"></a>Método SetDNSSuffixSearchOrder da classe Win32 \_ NetworkAdapterConfiguration
+# <a name="setdnssuffixsearchorder-method-of-the-win32_networkadapterconfiguration-class"></a>Método SetDNSSuffixSearchOrder da classe \_ NetworkAdapterConfiguration do Win32
 
-O método estático da [classe WMI](/windows/desktop/WmiSdk/retrieving-a-class) **SetDNSSuffixSearchOrder** usa uma matriz de elementos de cadeia de caracteres para definir a ordem de pesquisa de sufixo.
+O método estático da classe [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **SetDNSSuffixSearchOrder** usa uma matriz de elementos de cadeia de caracteres para definir a ordem de pesquisa de sufixo.
 
-Este tópico usa a sintaxe formato MOF (MOF). Para obter mais informações sobre como usar esse método, consulte [chamando um método](/windows/desktop/WmiSdk/calling-a-method).
+Este tópico usa sintaxe Managed Object Format (MOF). Para obter mais informações sobre como usar esse método, consulte [Chamando um método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,18 +42,18 @@ uint32 SetDNSSuffixSearchOrder(
 
 <dl> <dt>
 
-*DNSDomainSuffixSearchOrder* \[ no\]
+*DNSDomainSuffixSearchOrder* \[ Em\]
 </dt> <dd>
 
-Lista de sufixos de servidor para consultar servidores DNS. O local do registro do sufixo DNS é **HKEY \_ local \_ Machine** \\ **System** \\ **CurrentControlSet** \\ **Services** \\ **tcpip \| nameserver**
+Lista de sufixos de servidor para consultar servidores DNS. O local do Registro do sufixo DNS é **HKEY \_ LOCAL \_ MACHINE** \\  \\ **System CurrentControlSet** \\ **Services** \\ **Tcpip \| NameServer**
 
 Exemplo: "suffix1.company.com", "suffix2.company.com"
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna um valor de 0 (zero) para uma conclusão bem-sucedida quando nenhuma reinicialização é necessária, 1 (uma) para uma conclusão bem-sucedida quando uma reinicialização é necessária e um número diferente se houver um erro. Para obter mais informações sobre códigos de erro, consulte [**WMI Error Constants**](/windows/desktop/WmiSdk/wmi-error-constants) or [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para obter valores gerais de **HRESULT** , consulte [códigos de erro do sistema](/windows/desktop/Debug/system-error-codes).
+Retorna um valor de 0 (zero) para uma conclusão bem-sucedida quando nenhuma reinicialização é necessária, 1 (um) para uma conclusão bem-sucedida quando uma reinicialização é necessária e um número diferente se houver um erro. Para obter mais informações sobre códigos de erro, consulte [**Constantes de erro WMI**](/windows/desktop/WmiSdk/wmi-error-constants) ou [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para valores **gerais de HRESULT,** consulte [Códigos de erro do sistema.](/windows/desktop/Debug/system-error-codes)
 
 <dl> <dt>
 
@@ -62,7 +62,7 @@ Retorna um valor de 0 (zero) para uma conclusão bem-sucedida quando nenhuma rei
 
 0
 
-Conclusão bem-sucedida, nenhuma reinicialização necessária.
+Conclusão bem-sucedida, sem necessidade de reinicialização.
 
 </dd> <dt>
 
@@ -80,7 +80,7 @@ Conclusão bem-sucedida, reinicialização necessária.
 
 64
 
-Método sem suporte nesta plataforma.
+Não há suporte para o método nesta plataforma.
 
 </dd> <dt>
 
@@ -102,7 +102,7 @@ Máscara de sub-rede inválida.
 
 </dd> <dt>
 
-**Ocorreu um erro ao processar uma instância que foi retornada**
+**Ocorreu um erro ao processar uma Instância que foi retornada**
 </dt> <dd>
 
 67
@@ -138,7 +138,7 @@ Endereço IP inválido.
 
 </dd> <dt>
 
-**Endereço IP de gateway inválido**
+**Endereço IP do gateway inválido**
 </dt> <dd>
 
 71
@@ -147,12 +147,12 @@ Endereço IP do gateway inválido.
 
 </dd> <dt>
 
-**Ocorreu um erro ao acessar o registro para as informações solicitadas**
+**Ocorreu um erro ao acessar o Registro para as informações solicitadas**
 </dt> <dd>
 
 72
 
-Ocorreu um erro ao acessar o registro para obter as informações solicitadas.
+Ocorreu um erro ao acessar o Registro para as informações solicitadas.
 
 </dd> <dt>
 
@@ -192,12 +192,12 @@ Arquivo inválido.
 
 </dd> <dt>
 
-**Caminho de sistema inválido**
+**Caminho do sistema inválido**
 </dt> <dd>
 
 77
 
-Caminho de sistema inválido.
+Caminho do sistema inválido.
 
 </dd> <dt>
 
@@ -237,21 +237,21 @@ Não é possível configurar o serviço DHCP.
 
 </dd> <dt>
 
-**Não é possível renovar a concessão DHCP**
+**Não é possível renovar a concessão de DHCP**
 </dt> <dd>
 
 82
 
-Não é possível renovar a concessão DHCP.
+Não é possível renovar a concessão de DHCP.
 
 </dd> <dt>
 
-**Não é possível liberar a concessão DHCP**
+**Não é possível liberar a concessão de DHCP**
 </dt> <dd>
 
 83
 
-Não é possível liberar a concessão DHCP.
+Não é possível liberar a concessão de DHCP.
 
 </dd> <dt>
 
@@ -260,7 +260,7 @@ Não é possível liberar a concessão DHCP.
 
 84
 
-O IP não está habilitado no adaptador.
+IP não habilitado no adaptador.
 
 </dd> <dt>
 
@@ -278,7 +278,7 @@ IPX não habilitado no adaptador.
 
 86
 
-Erro de limites de número de rede ou quadro.
+Erro de limites de quadro ou número de rede.
 
 </dd> <dt>
 
@@ -323,7 +323,7 @@ Parâmetro fora dos limites.
 
 91
 
-Acesso negado.
+Acesso negado
 
 </dd> <dt>
 
@@ -381,7 +381,7 @@ Interface não configurável.
 
 </dd> <dt>
 
-**Nem todas as concessões DHCP puderam ser liberadas/renovadas**
+**Nem todas as concessões DHCP podem ser liberadas/renovadas**
 </dt> <dd>
 
 98
@@ -395,7 +395,7 @@ Nem todas as concessões DHCP são liberadas ou renovadas.
 
 100
 
-DHCP não habilitado no adaptador.
+O DHCP não está habilitado no adaptador.
 
 </dd> <dt>
 
@@ -408,13 +408,13 @@ DHCP não habilitado no adaptador.
 
 ## <a name="remarks"></a>Comentários
 
-Essa é uma chamada independente de instância que se aplica a todos os adaptadores, mas somente ao Windows.
+Essa é uma chamada independente de instância que se aplica a todos os adaptadores, mas somente para Windows.
 
 ## <a name="examples"></a>Exemplos
 
-A amostra de código [Modificar a ordem de pesquisa de sufixo DNS para todos os adaptadores de rede](https://Gallery.TechNet.Microsoft.Com/2857b7b0-1327-4ce2-9f2b-b662cce387c6) VBScript configura um computador para usar dois sufixos DNS ao executar pesquisas de DNS.
+O exemplo de código Modificar a Ordem de Pesquisa de Sufixo [DNS](https://Gallery.TechNet.Microsoft.Com/2857b7b0-1327-4ce2-9f2b-b662cce387c6) para Todos os Adaptadores de Rede VBScript configura um computador para usar dois sufixos DNS ao executar pesquisas de DNS.
 
-A amostra [Ativar configurações de DHCP em um computador de](https://Gallery.TechNet.Microsoft.Com/41e6ab51-78c0-4413-b086-03fde33ea125) VBScript define todas as configurações normalmente necessárias para habilitar o DHCP em um computador.
+O [exemplo Habilitar Configurações DHCP](https://Gallery.TechNet.Microsoft.Com/41e6ab51-78c0-4413-b086-03fde33ea125) em um computador VBScript define todas as configurações normalmente necessárias para habilitar o DHCP em um computador.
 
 O código do PowerShell a seguir define a ordem de pesquisa de sufixo DNS.
 
@@ -438,8 +438,8 @@ $class.SetDNSSuffixSearchOrder($suffixes)
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| Namespace<br/>                | Raiz \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Namespace<br/>                | RAIZ \\ CIMV2<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -451,13 +451,13 @@ $class.SetDNSSuffixSearchOrder($suffixes)
 [Classes de hardware do sistema de computador](computer-system-hardware-classes.md)
 </dt> <dt>
 
-[**\_NetworkAdapterConfiguration Win32**](win32-networkadapterconfiguration.md)
+[**Win32 \_ NetworkAdapterConfiguration**](win32-networkadapterconfiguration.md)
 </dt> <dt>
 
-[Tarefas do WMI: rede](/windows/desktop/WmiSdk/wmi-tasks--networking)
+[Tarefas WMI: Rede](/windows/desktop/WmiSdk/wmi-tasks--networking)
 </dt> <dt>
 
-[Tarefas do WMI: contas e domínios](/windows/desktop/WmiSdk/wmi-tasks--accounts-and-domains)
+[Tarefas WMI: contas e domínios](/windows/desktop/WmiSdk/wmi-tasks--accounts-and-domains)
 </dt> <dt>
 
 [Suporte a IPv6 e IPv4 no WMI](/windows/desktop/WmiSdk/ipv6-and-ipv4-support-in-wmi)

@@ -1,9 +1,9 @@
 ---
-title: Mensagem de MCIWNDM_GETSPEED (VFW. h)
-description: A \_ mensagem GETspeed do MCIWNDM recupera a velocidade de reprodução de um dispositivo MCI. Você pode enviar essa mensagem explicitamente ou usando a macro MCIWndGetSpeed.
+title: MCIWNDM_GETSPEED mensagem (Vfw.h)
+description: A mensagem GETSPEED MCIWNDM \_ recupera a velocidade de reprodução de um dispositivo MCI. Você pode enviar essa mensagem explicitamente ou usando a macro MCIWndGetSpeed.
 ms.assetid: d10a8f88-e85e-449b-8655-bb0832031d59
 keywords:
-- mensagem de MCIWNDM_GETSPEED Windows multimídia
+- MCIWNDM_GETSPEED mensagem Windows Multimídia
 topic_type:
 - apiref
 api_name:
@@ -21,9 +21,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119429246"
 ---
-# <a name="mciwndm_getspeed-message"></a>MCIWNDM \_ mensagem de GETspeed
+# <a name="mciwndm_getspeed-message"></a>Mensagem GETSPEED MCIWNDM \_
 
-A **mensagem \_ getspeed do MCIWNDM** recupera a velocidade de reprodução de um dispositivo MCI. Você pode enviar essa mensagem explicitamente ou usando a macro [**MCIWndGetSpeed**](/windows/desktop/api/Vfw/nf-vfw-mciwndgetspeed) .
+A **mensagem \_ GETSPEED MCIWNDM** recupera a velocidade de reprodução de um dispositivo MCI. Você pode enviar essa mensagem explicitamente ou usando a macro [**MCIWndGetSpeed.**](/windows/desktop/api/Vfw/nf-vfw-mciwndgetspeed)
 
 
 ```C++
@@ -36,7 +36,7 @@ lParam = 0;
 
 ## <a name="return-value"></a>Valor Retornado
 
-Retorna a velocidade de reprodução se for bem-sucedida. O valor da velocidade normal é de 1000. Valores maiores indicam velocidades mais rápidas, valores menores indicam velocidades mais lentas.
+Retornará a velocidade de reprodução se for bem-sucedida. O valor da velocidade normal é 1000. Valores maiores indicam velocidades mais rápidas, valores menores indicam velocidades mais lentas.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -46,7 +46,7 @@ Retorna a velocidade de reprodução se for bem-sucedida. O valor da velocidade 
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                       |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                             |
-| Cabeçalho<br/>                   | <dl> <dt>VFW. h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Vfw.h</dt> </dl> |
 
 
 

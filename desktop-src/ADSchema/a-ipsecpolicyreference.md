@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 54d66417d126d787ff75bb7f02620f27a9fa5593
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 22976883dc6f8b01282e3b774bad42ce5e719f67cce4e3507bea1e423feaf093
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103645480"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119322486"
 ---
 # <a name="ipsec-policy-reference-attribute"></a>Atributo IPSec-Policy-Reference
 
@@ -58,7 +58,7 @@ O nome distinto da política de IPsec (segurança de protocolo de Internet) rela
 | ID do link                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | Falso                                              |
-| É de valor único       | True                                               |
+| É de valor único       | Verdadeiro                                               |
 | É indexado             | Falso                                              |
 | No catálogo global      | Falso                                              |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                       |
@@ -79,7 +79,7 @@ O nome distinto da política de IPsec (segurança de protocolo de Internet) rela
 | ID do link                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | Falso                                              |
-| É de valor único       | True                                               |
+| É de valor único       | Verdadeiro                                               |
 | É indexado             | Falso                                              |
 | No catálogo global      | Falso                                              |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                       |
@@ -100,7 +100,7 @@ O nome distinto da política de IPsec (segurança de protocolo de Internet) rela
 | ID do link                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | Falso                                              |
-| É de valor único       | True                                               |
+| É de valor único       | Verdadeiro                                               |
 | É indexado             | Falso                                              |
 | No catálogo global      | Falso                                              |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                       |
@@ -121,7 +121,7 @@ O nome distinto da política de IPsec (segurança de protocolo de Internet) rela
 | ID do link                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | Falso                                              |
-| É de valor único       | True                                               |
+| É de valor único       | Verdadeiro                                               |
 | É indexado             | Falso                                              |
 | No catálogo global      | Falso                                              |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                       |
@@ -142,7 +142,7 @@ O nome distinto da política de IPsec (segurança de protocolo de Internet) rela
 | ID do link                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | Falso                                              |
-| É de valor único       | True                                               |
+| É de valor único       | Verdadeiro                                               |
 | É indexado             | Falso                                              |
 | No catálogo global      | Falso                                              |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                       |
@@ -163,7 +163,7 @@ O nome distinto da política de IPsec (segurança de protocolo de Internet) rela
 | ID do link                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | Falso                                              |
-| É de valor único       | True                                               |
+| É de valor único       | Verdadeiro                                               |
 | É indexado             | Falso                                              |
 | No catálogo global      | Falso                                              |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                       |

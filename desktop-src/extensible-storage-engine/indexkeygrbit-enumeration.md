@@ -28,12 +28,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: f28a3f0c7d69f8ce7e8e688b6fb7b2fecafcce44
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5ff5ea8eecefdbc68a07fef0dd51776428f2b8ef159b89b7d6d4ecd5deb49a2b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104164787"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120093626"
 ---
 # <a name="indexkeygrbit-enumeration"></a>Enumeração IndexKeyGrbit
 
@@ -41,8 +41,8 @@ Grbits de definição de chave. Usado ao recuperar informações sobre um índic
 
 Esta enumeração tem um atributo [FlagsAttribute](/dotnet/api/system.flagsattribute) que permite uma combinação bit a bit dos valores membros dela.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -73,7 +73,7 @@ public enum IndexKeyGrbit
 <tr class="odd">
 <td></td>
 <td>Crescente</td>
-<td>O segmento-chave é crescente.</td>
+<td>O segmento de chave é crescente.</td>
 </tr>
 <tr class="even">
 <td></td>
@@ -88,4 +88,4 @@ public enum IndexKeyGrbit
 
 #### <a name="reference"></a>Referência
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -91,12 +91,12 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 0ec6b287f3281fd0224e9c2efc39391781bd7f82
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d149c733bfc9ccf408b7798a37a762b947eac23b25888beeda375e77c60417f3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103837135"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119148349"
 ---
 # <a name="msvm_memory-class"></a>\_Classe de memória Msvm
 
@@ -204,7 +204,7 @@ A classe de **\_ memória Msvm** tem esses métodos.
 | **OnlineDevice**                                             | Não há suporte para o método.<br/> |
 | **QuiesceDevice**                                            | Não há suporte para o método.<br/> |
 | [**RequestStateChange**](msvm-memory-requeststatechange.md) | Solicita uma alteração de estado.<br/>      |
-| [**Redefinir**](msvm-memory-reset.md)                           | Redefine a memória virtual.<br/>    |
+| [**Definido**](msvm-memory-reset.md)                           | Redefine a memória virtual.<br/>    |
 | **Restaurarproperties**                                        | Não há suporte para o método.<br/> |
 | **Salvarproperties**                                           | Não há suporte para o método.<br/> |
 | **SetPowerState**                                            | Não há suporte para o método.<br/> |
@@ -407,7 +407,7 @@ Tipo de dados: **UInt16**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-O número de cópias completas dos dados atualmente mantidos. Essa propriedade é herdada do [**CIM \_ StorageExtent**](/windows/desktop/CIMWin32Prov/cim-storageextent)e é sempre definida como 1.
+O número de cópias completas de dados que são mantidas no momento. Essa propriedade é herdada [**de Cim \_ StorageExtent**](/windows/desktop/CIMWin32Prov/cim-storageextent)e é sempre definida como 1.
 
 </dd> <dt>
 
@@ -420,7 +420,7 @@ Tipo de dados: **uint8**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-O valor atual para reserva de deltas. Essa propriedade é herdada do [**CIM \_ StorageExtent**](/windows/desktop/CIMWin32Prov/cim-storageextent)e é sempre definida como 0.
+O valor atual da reserva delta. Essa propriedade é herdada de [**Cim \_ StorageExtent**](/windows/desktop/CIMWin32Prov/cim-storageextent)e é sempre definida como 0.
 
 </dd> <dt>
 
@@ -433,20 +433,20 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Uma descrição do objeto . Essa propriedade é herdada de [**CIM \_ managedelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement).
+Uma descrição do objeto . Essa propriedade é herdada de [**\_ ManagedElement do CIM.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
 
 </dd> <dt>
 
 **DetailedStatus**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Complementa a propriedade **PrimaryStatus** com detalhes de status adicionais. Um valor **nulo** indica que essa propriedade não está implementada. Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement).
+Complementa a propriedade **PrimaryStatus com** detalhes de status adicionais. Um **valor** Nulo indica que essa propriedade não está implementada. Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)
 
 <dl> <dt>
 
@@ -456,7 +456,7 @@ Complementa a propriedade **PrimaryStatus** com detalhes de status adicionais. U
 <span id="No_Additional_Information"></span><span id="no_additional_information"></span><span id="NO_ADDITIONAL_INFORMATION"></span>**Nenhuma informação adicional** (1)
 </dt> <dt>
 
-<span id="Stressed"></span><span id="stressed"></span><span id="STRESSED"></span>**Sob estresse** (2)
+<span id="Stressed"></span><span id="stressed"></span><span id="STRESSED"></span>**Estresse** (2)
 </dt> <dt>
 
 <span id="Predictive_Failure"></span><span id="predictive_failure"></span><span id="PREDICTIVE_FAILURE"></span>**Falha preditiva** (3)
@@ -465,18 +465,18 @@ Complementa a propriedade **PrimaryStatus** com detalhes de status adicionais. U
 <span id="Non-Recoverable_Error"></span><span id="non-recoverable_error"></span><span id="NON-RECOVERABLE_ERROR"></span>**Erro não recuperável** (4)
 </dt> <dt>
 
-<span id="Supporting_Entity_in_Error"></span><span id="supporting_entity_in_error"></span><span id="SUPPORTING_ENTITY_IN_ERROR"></span>**Entidade de suporte com erro** (5)
+<span id="Supporting_Entity_in_Error"></span><span id="supporting_entity_in_error"></span><span id="SUPPORTING_ENTITY_IN_ERROR"></span>**Entidade de suporte em erro** (5)
 </dt> <dt>
 
-<span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>**DMTF reservado** (..)
+<span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>**DMTF Reservado** (..)
 </dt> <dt>
 
-<span id="Vendor_Reserved_"></span><span id="vendor_reserved_"></span><span id="VENDOR_RESERVED_"></span>**Fornecedor reservado** (0x8000.. )
+<span id="Vendor_Reserved_"></span><span id="vendor_reserved_"></span><span id="VENDOR_RESERVED_"></span>**Fornecedor Reservado** (0x8000.. )
 </dt> </dl>
 
 </dd> <dt>
 
-**DeviceID**
+**Deviceid**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
@@ -485,7 +485,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Um endereço ou outras informações de identificação para nomear exclusivamente o dispositivo lógico. Essa propriedade é herdada [**de \_ LogicalDevice CIM**](/windows/desktop/CIMWin32Prov/cim-logicaldevice).
+Um endereço ou outras informações de identificação para nomear exclusivamente o dispositivo lógico. Essa propriedade é herdada de [**CIM \_ LogicalDevice.**](/windows/desktop/CIMWin32Prov/cim-logicaldevice)
 
 </dd> <dt>
 
@@ -498,49 +498,49 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Um nome de exibição para o objeto. Essa propriedade é herdada de [**CIM \_ managedelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement).
+Um nome de exibição para o objeto . Essa propriedade é herdada de [**\_ ManagedElement do CIM.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
 
 </dd> <dt>
 
 **EnabledDefault**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-A configuração de inicialização ou padrão de um administrador para o estado habilitado de um elemento. Essa propriedade é herdada do [**CIM \_ EnabledLogicalElement**](/previous-versions//cc136818(v=vs.85)).
+Configuração padrão ou de inicialização de um administrador para o estado habilitado de um elemento. Essa propriedade é herdada de [**CIM \_ EnabledLogicalElement.**](/previous-versions//cc136818(v=vs.85))
 
 </dd> <dt>
 
 **EnabledState**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Os Estados habilitado e desabilitado de um elemento. Ele também pode indicar as transições entre esses Estados solicitados. Essa propriedade é herdada do [**CIM \_ EnabledLogicalElement**](/previous-versions//cc136818(v=vs.85)).
+Os estados habilitados e desabilitados de um elemento. Ele também pode indicar as transições entre esses estados solicitados. Essa propriedade é herdada de [**CIM \_ EnabledLogicalElement.**](/previous-versions//cc136818(v=vs.85))
 
 
 
 | Valor                                                                                                                                                                                                                                                                       | Significado                                                                                                                                                                                                                |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span><dl> <dt></dt> <dt>0</dt> desconhecido </dl>                                                 | Não foi possível determinar o estado do elemento.<br/>                                                                                                                                                           |
+| <span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span><dl> <dt>**Desconhecido**</dt> <dt>0</dt> </dl>                                                 | Não foi possível determinar o estado do elemento.<br/>                                                                                                                                                           |
 | <span id="Other"></span><span id="other"></span><span id="OTHER"></span><dl> <dt>**Outros**</dt> <dt>1</dt> </dl>                                                         |                                                                                                                                                                                                                        |
-| <span id="Enabled"></span><span id="enabled"></span><span id="ENABLED"></span><dl> <dt>**Habilitado**</dt> <dt>2</dt> </dl>                                                 | O elemento está em execução.<br/>                                                                                                                                                                                     |
-| <span id="Disabled"></span><span id="disabled"></span><span id="DISABLED"></span><dl> <dt>**Desabilitado**</dt> <dt>3</dt> </dl>                                             | O elemento está desativado.<br/>                                                                                                                                                                                  |
-| <span id="Shutting_Down"></span><span id="shutting_down"></span><span id="SHUTTING_DOWN"></span><dl> <dt>**Desligando**</dt> <dt>4</dt> </dl>                         | O elemento está no processo de ir para um estado desabilitado.<br/>                                                                                                                                                 |
-| <span id="Not_Applicable"></span><span id="not_applicable"></span><span id="NOT_APPLICABLE"></span><dl> <dt>**Não aplicável**</dt> <dt>5</dt> </dl>                     | O elemento não dá suporte a ser habilitado ou desabilitado.<br/>                                                                                                                                                     |
-| <span id="Enabled_but_Offline"></span><span id="enabled_but_offline"></span><span id="ENABLED_BUT_OFFLINE"></span><dl> <dt>**Habilitado, mas offline**</dt> <dt>6</dt> </dl> | O elemento pode estar concluindo comandos e removerá todas as novas solicitações.<br/>                                                                                                                                |
-| <span id="In_Test"></span><span id="in_test"></span><span id="IN_TEST"></span><dl> <dt>**No teste**</dt> <dt>7</dt> </dl>                                                 | O elemento está em um estado de teste.<br/>                                                                                                                                                                             |
-| <span id="Deferred"></span><span id="deferred"></span><span id="DEFERRED"></span><dl> <dt>**Adiado**</dt> <dt>8</dt> </dl>                                             | O elemento pode estar concluindo comandos, mas colocará todas as novas solicitações na fila.<br/>                                                                                                                               |
-| <span id="Quiesce"></span><span id="quiesce"></span><span id="QUIESCE"></span><dl> <dt>**Desativar**</dt> <dt>9</dt> </dl>                                                 | O elemento está habilitado, mas está em um modo restrito. O comportamento do elemento é semelhante ao estado habilitado (2), mas processa apenas um conjunto restrito de comandos. Todas as outras solicitações são enfileiradas.<br/> |
-| <span id="Starting"></span><span id="starting"></span><span id="STARTING"></span><dl> <dt>**Iniciando**</dt> em <dt>10</dt> </dl>                                            | O elemento está no processo de ir para um estado habilitado (2). Novas solicitações são enfileiradas.<br/>                                                                                                                    |
+| <span id="Enabled"></span><span id="enabled"></span><span id="ENABLED"></span><dl> <dt>**Habilitado 2**</dt> <dt></dt> </dl>                                                 | O elemento está em execução.<br/>                                                                                                                                                                                     |
+| <span id="Disabled"></span><span id="disabled"></span><span id="DISABLED"></span><dl> <dt>**Desabilitado**</dt> <dt>3</dt> </dl>                                             | O elemento está desligado.<br/>                                                                                                                                                                                  |
+| <span id="Shutting_Down"></span><span id="shutting_down"></span><span id="SHUTTING_DOWN"></span><dl> <dt>**Desligando**</dt> <dt>4</dt> </dl>                         | O elemento está no processo de ir para um estado Desabilitado.<br/>                                                                                                                                                 |
+| <span id="Not_Applicable"></span><span id="not_applicable"></span><span id="NOT_APPLICABLE"></span><dl> <dt>**Não aplicável**</dt> <dt>5</dt> </dl>                     | O elemento não dá suporte à habilitação ou desabilitação.<br/>                                                                                                                                                     |
+| <span id="Enabled_but_Offline"></span><span id="enabled_but_offline"></span><span id="ENABLED_BUT_OFFLINE"></span><dl> <dt>**Habilitado, mas offline**</dt> <dt>6</dt> </dl> | O elemento pode estar concluindo comandos e soltará todas as novas solicitações.<br/>                                                                                                                                |
+| <span id="In_Test"></span><span id="in_test"></span><span id="IN_TEST"></span><dl> <dt>**No Teste**</dt> <dt>7</dt> </dl>                                                 | O elemento está em um estado de teste.<br/>                                                                                                                                                                             |
+| <span id="Deferred"></span><span id="deferred"></span><span id="DEFERRED"></span><dl> <dt>**Adiado**</dt> <dt>8</dt> </dl>                                             | O elemento pode estar concluindo comandos, mas enfilerá todas as novas solicitações.<br/>                                                                                                                               |
+| <span id="Quiesce"></span><span id="quiesce"></span><span id="QUIESCE"></span><dl> <dt>**Quiesce**</dt> <dt>9</dt> </dl>                                                 | O elemento está habilitado, mas está em um modo restrito. O comportamento do elemento é semelhante ao estado Habilitado (2), mas ele processa apenas um conjunto restrito de comandos. Todas as outras solicitações estão na fila.<br/> |
+| <span id="Starting"></span><span id="starting"></span><span id="STARTING"></span><dl> <dt>**Começando**</dt> <dt>em 10</dt> </dl>                                            | O elemento está no processo de ir para um estado Habilitado (2). Novas solicitações estão na fila.<br/>                                                                                                                    |
 
 
 
@@ -551,78 +551,78 @@ Os Estados habilitado e desabilitado de um elemento. Ele também pode indicar as
 **EndingAddress**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt64**
+Tipo de dados: **uint64**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-O endereço final do bloco de memória contíguo. Como a propriedade **StartingAddress** é sempre 0, esse valor sempre reflete a quantidade total de memória na máquina virtual.
+O endereço final do bloco de memória contíguo. Como a **propriedade StartingAddress** é sempre 0, esse valor sempre reflete a quantidade total de memória na máquina virtual.
 
 </dd> <dt>
 
 **ErrorAccess**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Essa propriedade é herdada [**da \_ memória CIM**](/windows/desktop/CIMWin32Prov/cim-memory), mas não é usada.
+Essa propriedade é herdada da [**\_ Memória CIM,**](/windows/desktop/CIMWin32Prov/cim-memory)mas não é usada.
 
 </dd> <dt>
 
 **ErrorAddress**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt64**
+Tipo de dados: **uint64**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Essa propriedade é herdada [**da \_ memória CIM**](/windows/desktop/CIMWin32Prov/cim-memory), mas não é usada.
+Essa propriedade é herdada da [**\_ Memória CIM,**](/windows/desktop/CIMWin32Prov/cim-memory)mas não é usada.
 
 </dd> <dt>
 
 **ErrorCleared**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Essa propriedade é herdada [**do \_ LogicalDevice CIM**](/windows/desktop/CIMWin32Prov/cim-logicaldevice), mas não é usada.
+Essa propriedade é herdada [**de CIM \_ LogicalDevice**](/windows/desktop/CIMWin32Prov/cim-logicaldevice), mas não é usada.
 
 </dd> <dt>
 
-**ErrorData**
+**Errordata**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: matriz **uint8**
+Tipo de dados: **matriz uint8**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Essa propriedade é herdada [**da \_ memória CIM**](/windows/desktop/CIMWin32Prov/cim-memory), mas não é usada.
+Essa propriedade é herdada da [**\_ Memória CIM,**](/windows/desktop/CIMWin32Prov/cim-memory)mas não é usada.
 
 </dd> <dt>
 
 **ErrorDataOrder**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Essa propriedade é herdada [**da \_ memória CIM**](/windows/desktop/CIMWin32Prov/cim-memory), mas não é usada.
+Essa propriedade é herdada da [**\_ Memória CIM,**](/windows/desktop/CIMWin32Prov/cim-memory)mas não é usada.
 
 </dd> <dt>
 
@@ -713,7 +713,7 @@ Tipo de dados: a matriz **UInt16**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-As extensões de armazenamento têm informações de status adicionais além das capturadas no **OperationalStatus** e outras propriedades herdadas do [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement). Essas informações adicionais (por exemplo, "proteção desabilitada", valor = 9) são capturadas na propriedade **VolumeStatus** . Essa propriedade é herdada do [**CIM \_ StorageExtent**](/windows/desktop/CIMWin32Prov/cim-storageextent)e é sempre definida como 2 (nenhuma/não aplicável).
+as extensões de Armazenamento têm informações de status adicionais além das capturadas no **OperationalStatus** e outras propriedades herdadas do [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement). Essas informações adicionais (por exemplo, "proteção desabilitada", valor = 9) são capturadas na propriedade **VolumeStatus** . Essa propriedade é herdada do [**CIM \_ StorageExtent**](/windows/desktop/CIMWin32Prov/cim-storageextent)e é sempre definida como 2 (nenhuma/não aplicável).
 
 </dd> <dt>
 
@@ -781,7 +781,7 @@ Tipo de dados: **booliano**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-**True** se as extensões de armazenamento subjacentes participarem de um grupo de redundância de armazenamento. Essa propriedade é herdada do [**CIM \_ StorageExtent**](/windows/desktop/CIMWin32Prov/cim-storageextent)e é sempre definida como **false**.
+**True** se as extensões de armazenamento subjacentes participarem de um grupo de redundância Armazenamento. Essa propriedade é herdada do [**CIM \_ StorageExtent**](/windows/desktop/CIMWin32Prov/cim-storageextent)e é sempre definida como **false**.
 
 </dd> <dt>
 
@@ -1162,20 +1162,20 @@ Tipo de dados: **booliano**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-**True** se o armazenamento for acessado sequencialmente por um dispositivo de acesso à mídia. Uma partição de fita é um exemplo de uma extensão de armazenamento acessada em sequência. Volumes de armazenamento, partições de disco e discos lógicos representam extensões acessadas aleatoriamente. Essa propriedade é herdada do [**CIM \_ StorageExtent**](/windows/desktop/CIMWin32Prov/cim-storageextent)e é sempre definida como **false**.
+**True** se o armazenamento for acessado sequencialmente por um dispositivo de acesso à mídia. Uma partição de fita é um exemplo de uma extensão de armazenamento acessada em sequência. Armazenamento volumes, partições de disco e discos lógicos representam extensões acessadas aleatoriamente. Essa propriedade é herdada do [**CIM \_ StorageExtent**](/windows/desktop/CIMWin32Prov/cim-storageextent)e é sempre definida como **false**.
 
 </dd> <dt>
 
 **StartingAddress**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt64**
+Tipo de dados: **uint64**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-O endereço inicial referenciado por um aplicativo ou sistema operacional e mapeado por um controlador de memória para esse objeto de memória. Essa propriedade é herdada [**da \_ memória CIM**](/windows/desktop/CIMWin32Prov/cim-memory)e é sempre definida como 0.
+O endereço inicial referenciado por um aplicativo ou sistema operacional e mapeado por um controlador de memória para esse objeto de memória. Essa propriedade é herdada da [**\_ Memória CIM**](/windows/desktop/CIMWin32Prov/cim-memory)e sempre é definida como 0.
 
 </dd> <dt>
 
@@ -1188,33 +1188,33 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement), mas não é usada.
+Essa propriedade é herdada [**de CIM \_ ManagedSystemElement,**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)mas não é usada.
 
 </dd> <dt>
 
 **StatusDescriptions**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: matriz de **cadeia de caracteres**
+Tipo de dados: matriz **de cadeia de** caracteres
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Cadeias de caracteres que descrevem os vários valores de matriz de **OperationalStatus** . Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement).
+Cadeias de caracteres que descrevem os **vários valores de matriz OperationalStatus.** Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)
 
 </dd> <dt>
 
 **StatusInfo**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Essa propriedade é herdada [**do \_ LogicalDevice CIM**](/windows/desktop/CIMWin32Prov/cim-logicaldevice), mas não é usada.
+Essa propriedade é herdada [**de CIM \_ LogicalDevice**](/windows/desktop/CIMWin32Prov/cim-logicaldevice), mas não é usada.
 
 </dd> <dt>
 
@@ -1227,24 +1227,24 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-O nome da classe de criação do sistema de escopo. Essa propriedade é herdada [**de \_ LogicalDevice CIM**](/windows/desktop/CIMWin32Prov/cim-logicaldevice).
+O nome da classe de criação do sistema de scoping. Essa propriedade é herdada de [**CIM \_ LogicalDevice.**](/windows/desktop/CIMWin32Prov/cim-logicaldevice)
 
 </dd> <dt>
 
 **SystemLevelAddress**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Essa propriedade é herdada [**da \_ memória CIM**](/windows/desktop/CIMWin32Prov/cim-memory), mas não é usada.
+Essa propriedade é herdada da [**\_ Memória CIM,**](/windows/desktop/CIMWin32Prov/cim-memory)mas não é usada.
 
 </dd> <dt>
 
-**SystemName**
+**Systemname**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
@@ -1253,65 +1253,65 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-O identificador exclusivo para a máquina virtual de escopo. Essa propriedade é herdada [**de \_ LogicalDevice CIM**](/windows/desktop/CIMWin32Prov/cim-logicaldevice).
+O identificador exclusivo para a máquina virtual de definição de código. Essa propriedade é herdada de [**CIM \_ LogicalDevice.**](/windows/desktop/CIMWin32Prov/cim-logicaldevice)
 
 </dd> <dt>
 
 **TimeOfLastStateChange**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **DateTime**
+Tipo de dados: **datetime**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-A data ou a hora em que o estado habilitado do elemento foi alterado pela última vez. Essa propriedade é herdada do [**CIM \_ EnabledLogicalElement**](/previous-versions//cc136818(v=vs.85))e é sempre definida como "NULL".
+A data ou a hora em que o estado habilitado do elemento foi alterado pela última vez. Essa propriedade é herdada [**de CIM \_ EnabledLogicalElement**](/previous-versions//cc136818(v=vs.85))e sempre é definida como "NULL".
 
 </dd> <dt>
 
 **TotalPowerOnHours**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt64**
+Tipo de dados: **uint64**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Essa propriedade é herdada [**do \_ LogicalDevice CIM**](/windows/desktop/CIMWin32Prov/cim-logicaldevice), mas não é usada.
+Essa propriedade é herdada [**de CIM \_ LogicalDevice**](/windows/desktop/CIMWin32Prov/cim-logicaldevice), mas não é usada.
 
 </dd> <dt>
 
 **TransitioningToState**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Indica o estado de destino para o qual a instância está em transição. Essa propriedade é herdada do [**CIM \_ EnabledLogicalElement**](/previous-versions//cc136818(v=vs.85)).
+Indica o estado de destino para o qual a instância está em transição. Essa propriedade é herdada de [**CIM \_ EnabledLogicalElement.**](/previous-versions//cc136818(v=vs.85))
 
 </dd> <dt>
 
 **Volátil**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Indica se a memória é volátil. Essa propriedade é herdada [**da \_ memória CIM**](/windows/desktop/CIMWin32Prov/cim-memory)e é sempre definida como **true**.
+Indica se a memória é volátil. Essa propriedade é herdada da [**\_ Memória CIM**](/windows/desktop/CIMWin32Prov/cim-memory)e sempre é definida como **True.**
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-O acesso à classe de **\_ memória Msvm** pode ser restringido pela filtragem UAC. Para obter mais informações, consulte [controle de conta de usuário e WMI](/windows/desktop/WmiSdk/user-account-control-and-wmi).
+O acesso à **classe Msvm \_ Memory** pode ser restrito pela Filtragem de UAC. Para obter mais informações, consulte [Controle de conta de usuário e WMI](/windows/desktop/WmiSdk/user-account-control-and-wmi).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -1319,10 +1319,10 @@ O acesso à classe de **\_ memória Msvm** pode ser restringido pela filtragem U
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                                    |
-| Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[Windows 8 somente aplicativos da área de trabalho\]<br/>                                                              |
+| Servidor mínimo com suporte<br/> | \[Windows Server 2012 somente aplicativos da área de trabalho\]<br/>                                                    |
+| Namespace<br/>                | Virtualização \\ raiz \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -1331,10 +1331,10 @@ O acesso à classe de **\_ memória Msvm** pode ser restringido pela filtragem U
 
 <dl> <dt>
 
-[**\_Memória CIM**](cim-memory.md)
+[**Memória \_ CIM**](cim-memory.md)
 </dt> <dt>
 
-[**\_Memória CIM**](/windows/desktop/CIMWin32Prov/cim-memory)
+[**Memória \_ CIM**](/windows/desktop/CIMWin32Prov/cim-memory)
 </dt> <dt>
 
 [Classes de memória](memory-classes.md)

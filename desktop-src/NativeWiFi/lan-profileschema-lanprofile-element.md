@@ -12,16 +12,16 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: 58ad88c9f975455bdd2d77a0ef8ee028d9027d9f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6adaa0f4884ad275137a6c949dbc466416006f33bb6603dc61e87153d9b23361
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104170414"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119065096"
 ---
 # <a name="lanprofile-element"></a>Elemento LANProfile
 
-O elemento LANProfile contém um perfil de rede com fio. Esse é o elemento raiz exclusivo para um perfil de rede com fio.
+O elemento LANProfile contém um perfil de rede com fio. Esse elemento é o elemento raiz exclusivo para um perfil de rede com fio.
 
 O namespace de destino para o elemento LANProfile é `https://www.microsoft.com/networking/LAN/profile/v1` .
 
@@ -76,16 +76,16 @@ O namespace de destino para o elemento LANProfile é `https://www.microsoft.com/
 
 | Elemento                                                                 | Type    | Descrição                                                                                                                              |
 |-------------------------------------------------------------------------|---------|------------------------------------------------------------------------------------------------------------------------------------------|
-| [**MSM**](lan-profileschema-msm-lanprofile-element.md)                 |         | Contém configurações do módulo de mídia específica (MSM). <br/>                                                                               |
-| [**OneXEnabled**](lan-profileschema-onexenabled-security-element.md)   | booleano | Especifica se o serviço de configuração automática para redes com fio tentará a autenticação de porta usando 802.1 X. <br/>      |
-| [**OneXEnforced**](lan-profileschema-onexenforced-security-element.md) | booleano | Especifica se o serviço de configuração automática para redes com fio requer o uso do 802.1 X para autenticação de porta. <br/> |
-| [**segurança**](lan-profileschema-security-msm-element.md)              |         | Contém configurações de segurança. <br/>                                                                                                  |
+| [**Msm**](lan-profileschema-msm-lanprofile-element.md)                 |         | Contém configurações de MSM (módulo específico de mídia). <br/>                                                                               |
+| [**OneXEnabled**](lan-profileschema-onexenabled-security-element.md)   | booleano | Especifica se o serviço de configuração automática para redes com fio tentará a autenticação de porta usando 802.1X. <br/>      |
+| [**OneXEnforced**](lan-profileschema-onexenforced-security-element.md) | booleano | Especifica se o serviço de configuração automática para redes com fio requer o uso de 802.1X para autenticação de porta. <br/> |
+| [**Segurança**](lan-profileschema-security-msm-element.md)              |         | Contém configurações de segurança. <br/>                                                                                                  |
 
 
 
 ## <a name="remarks"></a>Comentários
 
-Para exibir a lista de elementos filho em uma estrutura do tipo árvore, consulte [ \_ elementos do esquema de perfil de LAN](lan-profileschema-elements.md).
+Para exibir a lista de elementos filho em uma estrutura como árvore, consulte Elementos de [ \_ esquema do perfil lan.](lan-profileschema-elements.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -93,8 +93,8 @@ Para exibir a lista de elementos filho em uma estrutura do tipo árvore, consult
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
 
 
 

@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 78fecfe7277470c8423a6657df58ce343515a7d1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 81b0f88ee8c5fd883636512e2fd73c11f41b879582da50c5d0ea294ba9402c8b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103921455"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119478466"
 ---
 # <a name="esentoutofbuffersexception-constructor"></a>Construtor EsentOutOfBuffersException
 
 Inicializa uma nova instância da classe EsentOutOfBuffersException.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -58,6 +58,6 @@ public EsentOutOfBuffersException()
 
 [Classe EsentOutOfBuffersException](./esentoutofbuffersexception-class.md)
 
-[Membros do EsentOutOfBuffersException](./esentoutofbuffersexception-members.md)
+[Membros EsentOutOfBuffersException](./esentoutofbuffersexception-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

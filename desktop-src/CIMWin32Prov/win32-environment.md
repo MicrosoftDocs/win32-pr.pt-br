@@ -1,8 +1,8 @@
 ---
-description: Representa uma configuração de ambiente do sistema ou ambiente em um sistema de computador Windows.
+description: Representa uma configuração de ambiente ou de sistema em um Windows de computador.
 ms.assetid: da7ee891-c759-4046-a9d8-d3caf66ab5a9
 ms.tgt_platform: multiple
-title: Classe Win32_Environment
+title: Win32_Environment classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -22,22 +22,22 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 3b7267e3ac03c14cfc6ad6ca73ede42cc8478b41
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 5d7237d83c298916045b4bd0443eadc3048c94dc7ad028a1bd7bfa993c4ce764
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103826687"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119391746"
 ---
-# <a name="win32_environment-class"></a>\_Classe de ambiente Win32
+# <a name="win32_environment-class"></a>Classe Ambiente \_ Win32
 
-A [classe WMI](/windows/desktop/WmiSdk/retrieving-a-class) do **\_ ambiente Win32** representa uma configuração de ambiente ou ambiente do sistema em um sistema de computador Windows. Consultar essa classe retorna variáveis de ambiente encontradas em:
+A **classe WMI de \_ ambiente Win32** [representa](/windows/desktop/WmiSdk/retrieving-a-class) uma configuração de ambiente ou ambiente do sistema em um Windows computador. Consultar essa classe retorna variáveis de ambiente encontradas em:
 
-**HKEY \_ \_** Ambiente de \\  \\  \\ **controle** \\  \\  CurrentControlSet do sistema de máquina local
+**HKEY \_ Ambiente \_** \\  \\  \\  \\ **sessionmanager** \\  do controle CurrentControlSet do sistema LOCAL MACHINE
 
 e
 
-**HKEY \_** \\ Ambiente de **< usuário >** dos usuários \\ 
+**HKEY \_ Ambiente** \\ **< *do usuário USUÁRIOS* >** \\ 
 
 A sintaxe a seguir é simplificada do código MOF (Managed Object Format) e inclui todas as propriedades herdadas. As propriedades são listadas em ordem alfabética, não em ordem MOF.
 
@@ -60,13 +60,13 @@ class Win32_Environment : CIM_SystemResource
 
 ## <a name="members"></a>Membros
 
-A classe de **\_ ambiente Win32** tem estes tipos de membros:
+A **classe \_ Ambiente Win32** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe de **\_ ambiente Win32** tem essas propriedades.
+A **classe \_ Ambiente Win32** tem essas propriedades.
 
 <dl> <dt>
 
@@ -79,12 +79,12 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Caption")
+Qualificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Legenda")
 </dt> </dl>
 
-Uma breve descrição textual do objeto.
+Uma breve descrição textual do objeto .
 
-Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
@@ -100,27 +100,27 @@ Tipo de acesso: Somente leitura
 Qualificadores: [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Descrição")
 </dt> </dl>
 
-Uma descrição textual do objeto.
+Uma descrição textual do objeto .
 
-Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **InstallDate**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **DateTime**
+Tipo de dados: **datetime**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. \|Componente DMTF \| 1,5 "), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) (" data de instalação ")
+Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| ComponentID \| 001.5"), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Data de instalação")
 </dt> </dl>
 
 Indica quando o objeto foi instalado. A falta de um valor não indica que o objeto não está instalado.
 
-Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
@@ -130,15 +130,15 @@ Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](cim-managedsyst
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
-Qualificadores: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Name"), [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| sistema \\ \\ CurrentControlSet \\ \\ Control \\ \\ Session Manager \\ \\ Environment")
+Qualificadores: [**Substituir**](/windows/desktop/WmiSdk/standard-qualifiers) ("Nome"), [**chave**](/windows/desktop/WmiSdk/key-qualifier), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Ambiente do Gerenciador de Sessão do Controle CurrentControlSet do Sistema \| Win32Registry") \\ \\ \\ \\ \\ \\ \\ \\
 </dt> </dl>
 
-Cadeia de caracteres que especifica o nome de uma variável de ambiente baseada no Windows. Ao especificar o nome de uma variável que ainda não existe, um aplicativo cria uma nova variável de ambiente.
+Cadeia de caracteres que especifica o nome de uma variável de ambiente Windows com base em dados. Especificando o nome de uma variável que ainda não existe, um aplicativo cria uma nova variável de ambiente.
 
-Exemplo: "caminho"
+Exemplo: "Caminho"
 
 </dd> <dt>
 
@@ -151,14 +151,14 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (10), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("status")
+Qualificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (10), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Status")
 </dt> </dl>
 
-Cadeia de caracteres que indica o status atual do objeto. O status operacional e não operacional pode ser definido. O status operacional pode incluir "OK", "degradado" e "Pred falha". "Pred Fail" indica que um elemento está funcionando corretamente, mas está prevendo uma falha (por exemplo, uma unidade de disco rígido habilitada para inteligente).
+Cadeia de caracteres que indica o status atual do objeto. O status operacional e não operacional pode ser definido. O status operacional pode incluir "OK", "Degradado" e "Pred Fail". "Pred Fail" indica que um elemento está funcionando corretamente, mas está prevendo uma falha (por exemplo, uma unidade de disco rígido habilitada para SMART).
 
-O status não operacional pode incluir "erro", "Iniciando", "parando" e "serviço". O "serviço" pode ser aplicado durante o espelhamento de disco – reprateando, recarregando uma lista de permissões de usuário ou outro trabalho administrativo. Nem todo esse trabalho está online, mas o elemento gerenciado não é "OK" nem em um dos outros Estados.
+O status não operacional pode incluir "Erro", "Iniciando", "Parando" e "Serviço". O "Serviço" pode ser aplicado durante a resilvering de espelhamento de disco, o recarregamento de uma lista de permissões de usuário ou outro trabalho administrativo. Nem todo esse trabalho está online, mas o elemento gerenciado não é "OK" nem em um dos outros estados.
 
-Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 Os valores incluem o seguinte:
 
@@ -173,28 +173,28 @@ Os valores incluem o seguinte:
 
 <span id="Error"></span><span id="error"></span><span id="ERROR"></span>
 
-**Erro** ("erro")
+**Erro** ("Erro")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Degraded"></span><span id="degraded"></span><span id="DEGRADED"></span>
 
-**Degradado** ("degradado")
+**Degradado** ("Degradado")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>
 
-**Desconhecido** ("desconhecido")
+**Desconhecido** ("Desconhecido")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Pred_Fail"></span><span id="pred_fail"></span><span id="PRED_FAIL"></span>
 
-**Falha de Pred** ("Pred Fail")
+**Pred Fail** ("Pred Fail")
 
 
 </dt> <dd></dd> <dt>
@@ -208,42 +208,42 @@ Os valores incluem o seguinte:
 
 <span id="Stopping"></span><span id="stopping"></span><span id="STOPPING"></span>
 
-**Parando** ("parando")
+**Parando** ("Parando")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Service"></span><span id="service"></span><span id="SERVICE"></span>
 
-**Serviço** ("serviço")
+**Serviço** ("Serviço")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Stressed"></span><span id="stressed"></span><span id="STRESSED"></span>
 
-**Sob estresse** ("sob estresse")
+**Stressed** ("Stressed")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="NonRecover"></span><span id="nonrecover"></span><span id="NONRECOVER"></span>
 
-Não **recuperar** ("Recover")
+**NonRecover** ("NonRecover")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="No_Contact"></span><span id="no_contact"></span><span id="NO_CONTACT"></span>
 
-**Sem contato** ("sem contato")
+**Sem contato** ("Sem contato")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Lost_Comm"></span><span id="lost_comm"></span><span id="LOST_COMM"></span>
 
-**Perda de comunicação** ("perda de comunicação")
+**Perda de vírgula** ("comm perdida")
 
 
 </dt> <dd></dd> </dl>
@@ -253,16 +253,16 @@ Não **recuperar** ("Recover")
 **SystemVariable**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) (" \| ambiente do Gerenciador de sessão de controle de CurrentControlSet do sistema Win32Registry \\ \\ \\ \\ \\ \\ \\ \\ ")
+Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Control Session \\ \\ \\ \\ Manager Environment")
 </dt> </dl>
 
-Indica se a variável é uma variável do sistema. Uma variável de sistema é definida pelo sistema operacional e é independente das configurações de ambiente do usuário.
+Indica se a variável é uma variável do sistema. Uma variável do sistema é definida pelo sistema operacional e é independente das configurações de ambiente do usuário.
 
 </dd> <dt>
 
@@ -275,44 +275,44 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**chave**](/windows/desktop/WmiSdk/key-qualifier), [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (260), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("ambiente do Gerenciador de sessão de controle do Win32Registry do \| sistema \\ \\ \\ \\ \\ \\ \\ \\ )
+Qualificadores: [**key**](/windows/desktop/WmiSdk/key-qualifier), [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (260), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| System \\ \\ CurrentControlSet Control Session Manager \\ \\ \\ \\ \\ \\ Environment")
 </dt> </dl>
 
-Nome do proprietário da configuração de ambiente. Ele é definido como <SYSTEM> para as configurações específicas do sistema baseado no Windows (em oposição a um usuário específico) e <DEFAULT> para as configurações de usuário padrão.
+Nome do proprietário da configuração de ambiente. Ele é definido como para configurações específicas do sistema baseado em Windows (em vez de um usuário específico) e para configurações <SYSTEM> <DEFAULT> de usuário padrão.
 
 Exemplo: "JSmith"
 
 </dd> <dt>
 
-**VariableValue**
+**Variablevalue**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) (" \| ambiente do Gerenciador de sessão de controle de CurrentControlSet do sistema Win32Registry \\ \\ \\ \\ \\ \\ \\ \\ ")
+Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Control Session \\ \\ \\ \\ Manager Environment")
 </dt> </dl>
 
-Variável de espaço reservado de uma variável de ambiente baseada no Windows. Informações como o diretório do sistema de arquivos podem mudar de computador para computador. O sistema operacional substitui espaços reservados para eles.
+Variável de espaço reservado de uma Windows de ambiente baseada em dados. Informações como o diretório do sistema de arquivos podem mudar de computador para computador. O sistema operacional substitui os espaço reservados por eles.
 
-Exemplo: "% SystemRoot%"
+Exemplo: "%SystemRoot%"
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-A classe de **\_ ambiente do Win32** é derivada do [**CIM \_ SystemResource**](cim-systemresource.md). Você pode usar essa classe para localizar os caminhos de pastas especiais, como a pasta do sistema ou os arquivos de programas em um computador remoto. Alguns exemplos são: WINDIR, SystemRoot, ProgramFiles e UserProfile. **Win32 \_** Basicamente, o ambiente retorna o que pode ser encontrado em:
+A **classe \_ Ambiente Win32** é derivada de [**CIM \_ SystemResource**](cim-systemresource.md). Você pode usar essa classe para encontrar os caminhos de pastas especiais, como a pasta Sistema ou Arquivos de programas em um computador remoto. Alguns exemplos são: windir, systemroot, programfiles e userprofile. **Win32 \_ Basicamente,** o ambiente retorna o que pode ser encontrado em:
 
-**HKEY \_ \_** Ambiente de \\  \\  \\ **controle** \\  \\  CurrentControlSet do sistema de máquina local
+**HKEY \_ Ambiente \_** \\  \\  \\  \\ **sessionmanager** \\  do controle CurrentControlSet do sistema LOCAL MACHINE
 
 e
 
-**HKEY \_** \\ Ambiente de **< usuário >** dos usuários \\ 
+**HKEY \_ Ambiente** \\ **< *do usuário USUÁRIOS* >** \\ 
 
-O processo de chamada que usa essa classe deve ter o privilégio **se \_ Restore \_ Name** no computador em que o registro reside. Por exemplo, se você enumerar essa classe no computador local, a conta sob a qual seu aplicativo é executado deverá ter esse privilégio. Para obter mais informações, consulte [executando operações privilegiadas](/windows/desktop/WmiSdk/executing-privileged-operations).
+O processo de chamada que usa essa classe deve ter ES **\_ privilégio RESTORE \_ NAME** no computador no qual o Registro reside. Por exemplo, se você enumerar essa classe no computador local, a conta na qual o aplicativo é executado deverá ter esse privilégio. Para obter mais informações, consulte [Executando operações privilegiadas.](/windows/desktop/WmiSdk/executing-privileged-operations)
 
 ## <a name="examples"></a>Exemplos
 

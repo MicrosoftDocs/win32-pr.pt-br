@@ -5,12 +5,12 @@ ms.tgt_platform: multiple
 title: Determinando o tipo de evento a ser recebido
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 477f3d10536e5b0622e1e64b6cec9abdf4183c7d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9172e3246a31cb42ada3b9f5099bc3b0575959c125dedd44d7c6ed745134a4a6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103662661"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119374646"
 ---
 # <a name="determining-the-type-of-event-to-receive"></a>Determinando o tipo de evento a ser recebido
 

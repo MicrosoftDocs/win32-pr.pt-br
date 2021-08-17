@@ -1,8 +1,8 @@
 ---
-description: A \_ classe CIM ElementCapacity associa um \_ objeto CIM PhysicalCapacity a um ou mais elementos físicos. Ele associa uma descrição dos requisitos mínimos e máximos de hardware (ou recursos) aos elementos físicos descritos.
+description: A classe \_ ElementCapacity cim associa um objeto Cim \_ PhysicalCapacity a um ou mais elementos físicos. Ele associa uma descrição dos requisitos mínimos e máximos de hardware (ou funcionalidades) aos elementos físicos que estão sendo descritos.
 ms.assetid: 368c31e8-d56b-4b90-ba3f-20d9b0de8730
 ms.tgt_platform: multiple
-title: Classe CIM_ElementCapacity
+title: CIM_ElementCapacity classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,19 +16,19 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 7c6ecac913f6d4affcd9784a30d85fa08dfe0486
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: e108fb959b95148b8eb3be2e56346e41d2b2a5ab4d5b97c81394d583b395e9ac
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104457038"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119924116"
 ---
-# <a name="cim_elementcapacity-class"></a>\_Classe CIM ElementCapacity
+# <a name="cim_elementcapacity-class"></a>Classe \_ ElementCapacity cim
 
-A classe **CIM \_ ElementCapacity** associa um objeto [**CIM \_ PhysicalCapacity**](cim-physicalcapacity.md) a um ou mais elementos físicos. Ele associa uma descrição dos requisitos mínimos e máximos de hardware (ou recursos) aos elementos físicos descritos.
+A **classe \_ ElementCapacity** cim associa um objeto [**Cim \_ PhysicalCapacity**](cim-physicalcapacity.md) a um ou mais elementos físicos. Ele associa uma descrição dos requisitos mínimos e máximos de hardware (ou funcionalidades) aos elementos físicos que estão sendo descritos.
 
 > [!IMPORTANT]
-> As classes DMTF (Distributed Management Task Force) CIM (modelo CIM) são as classes pai nas quais as classes WMI são criadas. Atualmente, o WMI dá suporte apenas aos [esquemas de versão do CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> As classes CIM (Distributed Management Task Force) do DMTF (Distributed Management Task Force) modelo CIM são as classes pai nas quais as classes WMI são criadas. Atualmente, o WMI dá suporte apenas aos esquemas de versão [do CIM 2.x.](https://dmtf.org/standards/cim/schemas)
 
  
 
@@ -47,39 +47,39 @@ class CIM_ElementCapacity
 
 ## <a name="members"></a>Membros
 
-A classe **CIM \_ ElementCapacity** tem estes tipos de membros:
+A **classe \_ ElementCapacity cim** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **CIM \_ ElementCapacity** tem essas propriedades.
+A **classe \_ ElementCapacity cim** tem essas propriedades.
 
 <dl> <dt>
 
 **Capacidade**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **CIM \_ PhysicalCapacity**
+Tipo de dados: **Cim \_ PhysicalCapacity**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Referência à classe [**CIM \_ PhysicalCapacity**](cim-physicalcapacity.md) que descreve os requisitos mínimo e máximo e a capacidade de dar suporte a diferentes tipos de hardware para um elemento físico.
+Referência à classe [**Cim \_ PhysicalCapacity**](cim-physicalcapacity.md) que descreve os requisitos mínimos e máximos e a capacidade de dar suporte a diferentes tipos de hardware para um elemento físico.
 
 </dd> <dt>
 
 **Element**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **CIM \_ físicoelement**
+Tipo de dados: **Cim \_ PhysicalElement**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**mín**](/windows/desktop/WmiSdk/standard-qualifiers) . (1)
+Qualificadores: [**Min**](/windows/desktop/WmiSdk/standard-qualifiers) (1)
 </dt> </dl>
 
 Referência ao elemento físico que está sendo descrito.
@@ -90,7 +90,7 @@ Referência ao elemento físico que está sendo descrito.
 
 O WMI não implementa essa classe.
 
-Esta documentação é derivada das descrições da classe CIM publicadas pela DMTF. A Microsoft pode ter feito alterações para corrigir erros secundários, obedecer aos padrões de documentação do Microsoft SDK ou fornecer mais informações.
+Esta documentação é derivada das descrições da classe CIM publicadas pelo DMTF. A Microsoft pode ter feito alterações para corrigir erros secundários, estar em conformidade com os padrões de documentação do SDK da Microsoft ou fornecer mais informações.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -100,8 +100,8 @@ Esta documentação é derivada das descrições da classe CIM publicadas pela D
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| Namespace<br/>                | Raiz \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Namespace<br/>                | RAIZ \\ CIMV2<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 

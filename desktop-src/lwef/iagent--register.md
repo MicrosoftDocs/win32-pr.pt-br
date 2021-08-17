@@ -4,16 +4,16 @@ description: Registro de IAgent
 ms.assetid: 3592e8ba-979e-4914-8197-17e645806f97
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b9dd611219fa994f4fe61f7f3e08facf02c9fb73
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 00f3400e6f29e62b3d8c194186f52591a0f7bb039a858c3d450e8e8332df4313
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103822680"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119962666"
 ---
 # <a name="iagentregister"></a>IAgent:: Register
 
-\[O Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
+\[o Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
 
 ``` syntax
 HRESULT Register(
@@ -49,9 +49,9 @@ Você precisa registrar seu coletor de notificações (também conhecido como co
 [**IAgent:: cancelar registro**](iagent--unregister.md)
 
 
- 
+ 
 
- 
+ 
 
 
 

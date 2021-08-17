@@ -1,9 +1,9 @@
 ---
 title: Função REExtendedRegisterClass
-description: Registra dois nomes de classe, REListBox20W e RECombobox20W, que podem ser usados para criar janelas de caixa de listagem de edição rica ou de caixa de combinação.
+description: Registra dois nomes de classe, REListBox20W e RECombobox20W, que podem ser usados para criar janelas de caixa de listagem ou caixa de combinação Rich Edit.
 ms.assetid: D27A97A8-8B44-4C07-9903-8D958BF97109
 keywords:
-- Controles do Windows da função REExtendedRegisterClass
+- Função REExtendedRegisterClass Windows Controls
 topic_type:
 - apiref
 api_name:
@@ -14,18 +14,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 965394eaf71812e503c31aa2c65e0128a75dbfe3
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 1da26b1a978f85858e9943b212d4bcef8304ddbe2a4f2e9f25372776155db591
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105755830"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119434806"
 ---
 # <a name="reextendedregisterclass-function"></a>Função REExtendedRegisterClass
 
-\[Destinado ao uso interno; Não recomendado para uso em aplicativos. Essa função pode não ter suporte em versões futuras.\]
+\[Destinado a uso interno; não recomendado para uso em aplicativos. Essa função pode não ter suporte em versões futuras.\]
 
-Registra dois nomes de classe, REListBox20W e RECombobox20W, que podem ser usados para criar janelas de caixa de listagem de edição rica ou de caixa de combinação.
+Registra dois nomes de classe, REListBox20W e RECombobox20W, que podem ser usados para criar janelas de caixa de listagem ou caixa de combinação Rich Edit.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,7 +42,7 @@ Essa função não tem parâmetros.
 
 ## <a name="return-value"></a>Valor retornado
 
-Retorna verdadeiro se for bem-sucedido ou FALSE caso contrário.
+Retorna TRUE se for bem-sucedido ou FALSE caso contrário.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,8 +50,8 @@ Retorna verdadeiro se for bem-sucedido ou FALSE caso contrário.
 
 | Requisito | Valor |
 |-------------------|-----------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>Nenhuma</dt> </dl>                                 |
-| DLL<br/>    | <dl> <dt>Riched20.dll (Rich Edit versão 3,0)</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>Nenhum</dt> </dl>                                 |
+| DLL<br/>    | <dl> <dt>Riched20.dll (Rich Edit versão 3.0)</dt> </dl> |
 
 
 

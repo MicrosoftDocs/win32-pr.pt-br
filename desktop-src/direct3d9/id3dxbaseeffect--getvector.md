@@ -1,7 +1,7 @@
 ---
 description: Obtém um vetor.
 ms.assetid: 55f5512f-42f2-4588-abd4-1cdea530b9bf
-title: Método ID3DXBaseEffect::GetVector (D3DX9Shader.h)
+title: 'Método ID3DXBaseEffect:: getvector (D3DX9Shader. h)'
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -21,7 +21,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119459956"
 ---
-# <a name="id3dxbaseeffectgetvector-method"></a>Método ID3DXBaseEffect::GetVector
+# <a name="id3dxbaseeffectgetvector-method"></a>Método ID3DXBaseEffect:: getvector
 
 Obtém um vetor.
 
@@ -41,7 +41,7 @@ HRESULT GetVector(
 
 <dl> <dt>
 
-*hParameter* \[ Em\]
+*hParameter* \[ no\]
 </dt> <dd>
 
 Tipo: **[D3DXHANDLE](dx9-graphics-reference-effects-constants.md)**
@@ -50,7 +50,7 @@ Identificador exclusivo. Consulte [Handles (Direct3D 9)](handles.md).
 
 </dd> <dt>
 
-*pVector* \[ out\]
+*pVector* \[ fora\]
 </dt> <dd>
 
 Tipo: **[ **D3DXVECTOR4**](d3dxvector4.md)\***
@@ -63,7 +63,7 @@ Retorna um vetor 4D.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se o método for bem-sucedido, o valor de retorno será D3D \_ OK. Se o método falhar, o valor de retorno poderá ser D3DERR \_ INVALIDCALL.
+Se o método for bem sucedido, o valor de retorno será D3D \_ OK. Se o método falhar, o valor de retorno poderá ser D3DERR \_ INVALIDCALL.
 
 ## <a name="remarks"></a>Comentários
 
@@ -75,8 +75,8 @@ Se o vetor de destino for maior que o vetor de origem, somente os componentes in
 
 | Requisito | Valor |
 |--------------------|------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3DX9Shader.h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>     |
+| parâmetro<br/>  | <dl> <dt>D3DX9Shader. h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>     |
 
 
 
@@ -87,7 +87,7 @@ Se o vetor de destino for maior que o vetor de origem, somente os componentes in
 [ID3DXBaseEffect](id3dxbaseeffect.md)
 </dt> <dt>
 
-[**SetVector**](id3dxbaseeffect--setvector.md)
+[**Setvector**](id3dxbaseeffect--setvector.md)
 </dt> </dl>
 
  

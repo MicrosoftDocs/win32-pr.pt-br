@@ -4,12 +4,12 @@ ms.assetid: 36afaabc-1334-42d1-8004-7952ce3c119e
 title: Sobre bitmaps
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 53dbba516734dc255ce33005a7a9073865765785
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: eb155a2d96b32303c38438663cb7cc9b893a1560e8f33956ff894d309f055010
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104502207"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119355506"
 ---
 # <a name="about-bitmaps"></a>Sobre bitmaps
 
@@ -17,7 +17,7 @@ Um bitmap é um dos objetos GDI que podem ser selecionados em um *contexto de di
 
 
 
-| Objeto gráfico                         | Description                                                                                                                                                                                          |
+| Objeto gráfico                         | Descrição                                                                                                                                                                                          |
 |----------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [Bitmaps](bitmaps.md)                 | Cria, manipula (dimensiona, rola, gira e pinta) e armazena imagens como arquivos em um disco.                                                                                                       |
 | [Pincéis](brushes.md)                 | Pinta o interior dos polígonos, das reticências e dos caminhos.                                                                                                                                                |
@@ -63,11 +63,11 @@ Os tópicos a seguir descrevem áreas diferentes de bitmaps.
 -   [Rotação de bitmap](bitmap-rotation.md)
 -   [Dimensionamento de bitmap](bitmap-scaling.md)
 -   [Bitmaps como pincéis](bitmaps-as-brushes.md)
--   [Armazenamento de bitmap](bitmap-storage.md)
+-   [Armazenamento de Bitmap](bitmap-storage.md)
 -   [Compactação de bitmap](bitmap-compression.md)
 -   [Mesclagem alfa](alpha-blending.md)
 -   [Sombreamento suave](smooth-shading.md)
--   [Funções de bitmap habilitadas para ICM](icm-enabled-bitmap-functions.md)
+-   [funções de Bitmap habilitadas para ICM](icm-enabled-bitmap-functions.md)
 
  
 

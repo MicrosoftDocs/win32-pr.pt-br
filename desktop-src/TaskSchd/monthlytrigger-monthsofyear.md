@@ -27,7 +27,7 @@ ms.locfileid: "119253776"
 
 Para scripts, Obtém ou define os meses do ano durante os quais a tarefa é executada.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 ```VB

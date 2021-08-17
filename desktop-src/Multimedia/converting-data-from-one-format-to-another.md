@@ -15,12 +15,12 @@ keywords:
 - função acmStreamClose
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9645342aa9f19b2c31de77dc9d1031122ed0b2ac
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 29ec1050066b92a356067085b491f5ddbf4bded47789c6e15a5187ea74c47c0b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104292128"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119144800"
 ---
 # <a name="converting-data-from-one-format-to-another"></a>Convertendo dados de um formato para outro
 
@@ -43,9 +43,9 @@ A próxima etapa é preparar os buffers a serem usados na conversão usando [**a
 
 Para executar a conversão, use [**acmStreamConvert**](/windows/desktop/api/Msacm/nf-msacm-acmstreamconvert) até que todos os buffers tenham sido processados. Quando a conversão for concluída, use [**acmStreamUnprepareHeader**](/windows/desktop/api/Msacm/nf-msacm-acmstreamunprepareheader) para limpar os buffers e, em seguida, use [**acmStreamClose**](/windows/desktop/api/Msacm/nf-msacm-acmstreamclose) para fechar o fluxo de conversão.
 
- 
+ 
 
- 
+ 
 
 
 

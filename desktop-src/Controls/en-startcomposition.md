@@ -1,9 +1,9 @@
 ---
-title: EN_STARTCOMPOSITION código de notificação (RichEdit. h)
-description: Notifica uma janela pai do controle de edição rico que o usuário iniciou digitando com o IME ou a estrutura de serviços de texto.
+title: EN_STARTCOMPOSITION de notificação (Richedit.h)
+description: Notifica uma janela pai de controle de edição rica que o usuário começou a digitar com o IME ou Estrutura de Serviços de Texto.
 ms.assetid: 755C0C5F-061B-44AF-98A5-776AEE1B7AF8
 keywords:
-- EN_STARTCOMPOSITION de código de notificação controles do Windows
+- EN_STARTCOMPOSITION de notificação Windows Controles
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a103431427a9325a6b74c27927fb56e65f6fe771
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 4b182322175d03ab1c6906132c8f5970ce1d716e7e1c745406b009e5b224ec2c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104086181"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119436666"
 ---
-# <a name="en_startcomposition-notification-code"></a>\_Código de notificação en STARTCOMPOSITION
+# <a name="en_startcomposition-notification-code"></a>Código de \_ notificação EN STARTCOMPOSITION
 
-Notifica uma janela pai do controle de edição rico que o usuário iniciou digitando com o IME ou a [estrutura de serviços de texto](/windows/desktop/TSF/text-services-framework).
+Notifica uma janela pai de controle de edição rica que o usuário começou a digitar com o IME ou [Estrutura de Serviços de Texto](/windows/desktop/TSF/text-services-framework).
 
 
 ```C++
@@ -41,7 +41,7 @@ EN_STARTCOMPOSITION
 *lParam* 
 </dt> <dd>
 
-Uma estrutura [**NMHDR**](/windows/desktop/api/richedit/ns-richedit-nmhdr) .
+Uma [**estrutura NMHDR.**](/windows/desktop/api/richedit/ns-richedit-nmhdr)
 
 </dd> </dl>
 
@@ -51,9 +51,9 @@ Uma estrutura [**NMHDR**](/windows/desktop/api/richedit/ns-richedit-nmhdr) .
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                            |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[Windows 8 somente aplicativos da área de trabalho\]<br/>                                            |
+| Servidor mínimo com suporte<br/> | \[Windows Server 2012 somente aplicativos da área de trabalho\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
 
 
 

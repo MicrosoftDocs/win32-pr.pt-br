@@ -4,12 +4,12 @@ ms.assetid: 046f2646-6043-4d68-a42a-8750c016b3c8
 title: Interfaces de objeto TAPI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 906bda205f0d00a54cdb14cf408431cc45cad124
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ada1e49fe83a75c802b06ded953f309a157365d482d22d06c6bbedf97a5b8ac7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105759040"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119139848"
 ---
 # <a name="tapi-object-interfaces"></a>Interfaces de objeto TAPI
 

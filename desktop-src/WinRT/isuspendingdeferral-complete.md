@@ -49,7 +49,7 @@ Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, e
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 8<br/>                                                                                    |
 | Servidor mínimo com suporte<br/> | Windows Server 2012<br/>                                                                          |
-| parâmetro<br/>                   | <dl> <dt>Windows. ApplicationModel. h</dt> </dl>   |
+| Cabeçalho<br/>                   | <dl> <dt>Windows. ApplicationModel. h</dt> </dl>   |
 | INSERI<br/>                      | <dl> <dt>Windows. ApplicationModel. idl</dt> </dl> |
 
 

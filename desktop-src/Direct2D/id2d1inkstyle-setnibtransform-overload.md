@@ -3,7 +3,7 @@ title: Métodos ID2D1InkStyle SetNibTransform (D2d1 \_ 3. h)
 description: Define a transformação a ser aplicada à forma NIB deste estilo.
 ms.assetid: e2caee05-192c-1ea5-103c-e1d44e8c30a8
 keywords:
-- Métodos SetNibTransform Direct2D
+- Direct2D métodos de SetNibTransform
 topic_type:
 - apiref
 api_location:
@@ -12,12 +12,12 @@ api_type:
 - HeaderDef
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: 981711e4ae40affb54eccc73ec12471ae4cd4156
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ab44baf88ee9511679210177989a0cfb495d113f98a18b14ce65c67f1d6950c0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105752317"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119317946"
 ---
 # <a name="id2d1inkstylesetnibtransform-methods"></a>Métodos ID2D1InkStyle:: SetNibTransform
 

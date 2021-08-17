@@ -4,12 +4,12 @@ ms.assetid: 8a6aa39c-ec81-42ac-a26e-29f1f6960220
 title: Configurando e iniciando uma sessão de rastreamento de eventos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0f86ec57975e8f12ede17e5e2cda962c010aa1af
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1650e503b8c54108d58f6e7cebda546eb9d9e32d8ef014da0c27e5d062af4567
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104968250"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119963156"
 ---
 # <a name="configuring-and-starting-an-event-tracing-session"></a>Configurando e iniciando uma sessão de rastreamento de eventos
 
@@ -17,7 +17,7 @@ Para configurar uma sessão de rastreamento de eventos, use a estrutura [**\_ \_
 
 Depois de especificar as propriedades da sessão, chame a função [**StartTrace**](/windows/win32/api/evntrace/nf-evntrace-starttracea) para iniciar a sessão. Se a função for bem sucedido, o parâmetro *SessionHandle* conterá o identificador de sessão e a propriedade **LoggerNameOffset** conterá o deslocamento para o nome da sessão.
 
-Para habilitar os provedores em que você deseja registrar eventos em sua sessão, chame a função [**EnableTrace**](/windows/win32/api/evntrace/nf-evntrace-enabletrace) para habilitar provedores clássicos e a função [**EnableTraceEx**](/windows/win32/api/evntrace/nf-evntrace-enabletraceex) para habilitar provedores [baseados em manifesto](about-event-tracing.md) . Para habilitar os provedores em que você deseja que os eventos de log sejam filtrados em condições específicas em Windows 8.1, Windows Server 2012 R2 e posterior, chame a função [**EnableTraceEx2**](/windows/win32/api/evntrace/nf-evntrace-enabletraceex2) .
+Para habilitar os provedores em que você deseja registrar eventos em sua sessão, chame a função [**EnableTrace**](/windows/win32/api/evntrace/nf-evntrace-enabletrace) para habilitar provedores clássicos e a função [**EnableTraceEx**](/windows/win32/api/evntrace/nf-evntrace-enabletraceex) para habilitar provedores [baseados em manifesto](about-event-tracing.md) . para habilitar os provedores em que você deseja que os eventos de log sejam filtrados na sessão em condições específicas em Windows 8.1, Windows Server 2012 R2 e posterior, chame a função [**EnableTraceEx2**](/windows/win32/api/evntrace/nf-evntrace-enabletraceex2) .
 
 Além disso, você também pode rastrear informações adicionais sobre um evento com uma chamada para a função [**TraceSetInformation**](/windows/win32/api/evntrace/nf-evntrace-tracesetinformation) . O **TraceSetInformation** coloca informações de rastreamento adicionais na seção de dados estendidos de um evento e pode incluir informações como as informações de versão de rastreamento ou quais provedores estão atualmente registrados no sistema. Para obter mais informações, consulte [recuperando dados adicionais de rastreamento de eventos](retrieving-additional-event-tracing-data.md).
 
@@ -25,7 +25,7 @@ Até oito sessões de rastreamento podem habilitar e receber eventos do mesmo pr
 
 Você pode usar qualquer uma das três funções para habilitar um provedor, mas poderá perder a funcionalidade se usar o [**EnableTrace**](/windows/win32/api/evntrace/nf-evntrace-enabletrace) para habilitar um provedor baseado em manifesto porque não será possível fornecer um valor de MatchAllKeyword, especificar itens de dados estendidos para incluir no evento ou fornecer dados de filtro definidos pelo provedor. Para obter mais informações, consulte a seção comentários de cada função.
 
-No Windows 8.1, o Windows Server 2012 R2 e posterior, o conteúdo do evento, o escopo e os filtros de exame de pilha podem ser usados pela função [**EnableTraceEx2**](/windows/win32/api/evntrace/nf-evntrace-enabletraceex2) e pelas estruturas [**habilitar \_ \_ parâmetros de rastreamento**](/windows/win32/api/evntrace/ns-evntrace-enable_trace_parameters) e [**\_ \_ descritor de filtro de evento**](/windows/desktop/api/Evntprov/ns-evntprov-event_filter_descriptor) para filtrar as condições específicas em uma sessão de agente. Para obter mais informações sobre filtros de carga de evento, consulte as funções [**TdhCreatePayloadFilter**](/windows/desktop/api/Tdh/nf-tdh-tdhcreatepayloadfilter)e [**TdhAggregatePayloadFilters**](/windows/desktop/api/Tdh/nf-tdh-tdhaggregatepayloadfilters) e as estruturas [**\_ \_ predicado**](/windows/desktop/api/Tdh/ns-tdh-payload_filter_predicate) **Enable \_ trace \_**, **\_ \_ descritor de filtro de evento** e conteúdo de filtro de carga.
+no Windows 8.1, o Windows Server 2012 R2 e posterior, a carga do evento, o escopo e os filtros de movimentação de pilha podem ser usados pela função [**EnableTraceEx2**](/windows/win32/api/evntrace/nf-evntrace-enabletraceex2) e pelas estruturas [**habilitar \_ \_ parâmetros de rastreamento**](/windows/win32/api/evntrace/ns-evntrace-enable_trace_parameters) e [**\_ \_ descritor de filtro de evento**](/windows/desktop/api/Evntprov/ns-evntprov-event_filter_descriptor) para filtrar as condições específicas em uma sessão de agente. Para obter mais informações sobre filtros de carga de evento, consulte as funções [**TdhCreatePayloadFilter**](/windows/desktop/api/Tdh/nf-tdh-tdhcreatepayloadfilter)e [**TdhAggregatePayloadFilters**](/windows/desktop/api/Tdh/nf-tdh-tdhaggregatepayloadfilters) e as estruturas [**\_ \_ predicado**](/windows/desktop/api/Tdh/ns-tdh-payload_filter_predicate) **Enable \_ trace \_**, **\_ \_ descritor de filtro de evento** e conteúdo de filtro de carga.
 
 Para determinar o nível e as palavras-chave usadas para habilitar um provedor baseado em manifesto, use um dos seguintes comandos:
 

@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: f921ca795e761522828de14ede61894defe44f6e
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 58eacc277eac2d55aca0e6068698d11110768cfbe3ab6b564b97a0607715a7ec
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104366194"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120095146"
 ---
 # <a name="rwstructuredbuffer"></a>RWStructuredBuffer
 
@@ -31,7 +31,7 @@ Um buffer de leitura/gravação que pode usar um tipo T que é uma estrutura.
 | [**DecrementCounter**](sm5-object-rwstructuredbuffer-decrementcounter.md) | Decrementa o contador oculto do objeto. |
 | [**GetDimensions**](sm5-object-rwstructuredbuffer-getdimensions.md)       | Obtém as dimensões do recurso.           |
 | [**IncrementCounter**](sm5-object-rwstructuredbuffer-incrementcounter.md) | Incrementa o contador oculto do objeto. |
-| [**Carregamento**](rwstructuredbuffer-load.md)                                    | Lê dados de buffer.                      |
+| [**Carregar**](rwstructuredbuffer-load.md)                                    | Lê dados de buffer.                      |
 | [**Operador\[\]**](sm5-object-rwstructuredbuffer-operatorindex.md)        | Retorna uma variável de recurso.            |
 
 
@@ -64,7 +64,7 @@ Este objeto tem suporte para os seguintes tipos de sombreadores:
 
 
 
-| Vértice | Envoltória | Domínio | Geometria | 16x16 | Computação |
+| Vértice | Envoltória | Domínio | Geometry | 16x16 | Computação |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | x     | x       |
 

@@ -4,7 +4,7 @@ description: O idioma de uma reunião.
 ms.assetid: 105bf324-deef-430d-91a2-f1d737f49318
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD do atributo meetingLanguage
+- Esquema do AD do atributo meetingLanguage
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8ae52b800eee8c6ff35a4d671bf367015e0610c7
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: de007bb18de8ac0da2cd00d98ac89901a00e6b442a278c9be1dac11d40f3af0c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103919514"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119300756"
 ---
 # <a name="meetinglanguage-attribute"></a>atributo meetingLanguage
 
@@ -29,13 +29,13 @@ O idioma de uma reunião.
 | Entrada | Valor |
 |-------------------|----------------------------------------------------------------------------------|
 | CN                | meetingLanguage                                                                  |
-| LDAP-Display-Name | meetingLanguage                                                                  |
+| Ldap-Display-Name | meetingLanguage                                                                  |
 | Tamanho              | \-                                                                               |
 | Privilégio de atualização  | Qualquer pessoa pode atualizar esse objeto com base na segurança do objeto que está sendo criado. |
 | Frequência de atualização  | \-                                                                               |
 | Attribute-Id      | 1.2.840.113556.1.4.574                                                           |
-| System-ID-GUID    | 11b6cc84-48c4-11d1-a9c3-0000f80367c1                                             |
-| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md)                                      |
+| System-Id-Guid    | 11b6cc84-48c4-11d1-a9c3-0000f80367c1                                             |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md)                                      |
 
 
 
@@ -57,10 +57,10 @@ O idioma de uma reunião.
 | ID do link                | \-                                      |
 | MAPI-Id                | \-                                      |
 | System-Only            | Falso                                   |
-| É de valor único       | Falso                                   |
+| Tem valor único       | Falso                                   |
 | É indexado             | Falso                                   |
-| No catálogo global      | Falso                                   |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                            |
+| No Catálogo Global      | Falso                                   |
+| Descritor de segurança NT | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |
@@ -78,10 +78,10 @@ O idioma de uma reunião.
 | ID do link                | \-                                      |
 | MAPI-Id                | \-                                      |
 | System-Only            | Falso                                   |
-| É de valor único       | Falso                                   |
+| Tem valor único       | Falso                                   |
 | É indexado             | Falso                                   |
-| No catálogo global      | Falso                                   |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                            |
+| No Catálogo Global      | Falso                                   |
+| Descritor de segurança NT | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |
@@ -99,10 +99,10 @@ O idioma de uma reunião.
 | ID do link                | \-                                      |
 | MAPI-Id                | \-                                      |
 | System-Only            | Falso                                   |
-| É de valor único       | Falso                                   |
+| Tem valor único       | Falso                                   |
 | É indexado             | Falso                                   |
-| No catálogo global      | Falso                                   |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                            |
+| No Catálogo Global      | Falso                                   |
+| Descritor de segurança NT | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |

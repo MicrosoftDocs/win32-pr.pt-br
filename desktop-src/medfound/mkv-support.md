@@ -3,12 +3,12 @@ description: Esta seção descreve o suporte Media Foundation para arquivos MKV 
 title: Suporte ao MKV (Contêiner de Mídia matroska)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fdd860f58087bc8a0f3fe95d278bfa81edc412d0
-ms.sourcegitcommit: 88049609e29f91a42442235885abf56f598b06b3
+ms.openlocfilehash: aceb7a836b4a0409af3c359c8d81a0f232e6eb61082960cfb2b0705531de199c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110154208"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119102136"
 ---
 # <a name="matroska-media-container-mkv-support"></a>Suporte ao MKV (Contêiner de Mídia matroska)
 
@@ -36,36 +36,36 @@ Há suporte para arquivos MKV que contêm faixas de áudio e vídeo codificadas 
 
 ID do Matroska: V_MPEG4/ISO/AVC
 
-- MF_MT_SUBTYPE de Media Foundation MSFT: MFVideoFormat_H264
-- Descrição: vídeo H. 264
+- MSFT Media Foundation MF_MT_SUBTYPE: MFVideoFormat_H264
+- Descrição: vídeo H.264
 - Identificadores FourCC ou WAV: H264
 
 ID do Matroska: V_MPEG2
 
-- MF_MT_SUBTYPE de Media Foundation MSFT: MFVideoFormat_MPEG2
-- Descrição: vídeo MPEG-2
+- MSFT Media Foundation MF_MT_SUBTYPE: MFVideoFormat_MPEG2
+- Descrição: vídeo do MPEG-2
 
 ID do Matroska: V_MPEG1
 
-- MF_MT_SUBTYPE de Media Foundation MSFT: MFVideoFormat_MPG1
-- Descrição: vídeo MPEG-1
+- MSFT Media Foundation MF_MT_SUBTYPE: MFVideoFormat_MPG1
+- Descrição: vídeo do MPEG-1
 - Identificadores FourCC ou WAV: MPG1
 
 ID do Matroska: V_MPEG4/MS/V3
 
-- MF_MT_SUBTYPE de Media Foundation MSFT: MFVideoFormat_MP43
-- Descrição: Microsoft MPEG 4 codec versão 3
+- MSFT Media Foundation MF_MT_SUBTYPE: MFVideoFormat_MP43
+- Descrição: Codec do Microsoft MPEG 4 versão 3
 - Identificadores FourCC ou WAV: MP43
 
 ID do Matroska: V_MPEG4/ISO/ASP
 
-- MF_MT_SUBTYPE de Media Foundation MSFT: MFVideoFormat_MP4V
-- Descrição: vídeo MPEG-4 parte 2
+- MSFT Media Foundation MF_MT_SUBTYPE: MFVideoFormat_MP4V
+- Descrição: vídeo do MPEG-4 parte 2
 - Identificadores FourCC ou WAV: MP4V
 
 ID do Matroska: V_MS/VFW/FOURCC
 
-- Descrição: mapeia para vários codecs geralmente com suporte no formato AVI que estão disponíveis no console.
+- Descrição: Mapas para vários codecs geralmente com suporte no formato AVI que estão disponíveis no console.
 
 ID do Matroska: V_THEORA
 
@@ -94,34 +94,34 @@ ID do Matroska: V_MPEGH/ISO/HEVC
 
 ID do Matroska: V_VP8
 
-- MF_MT_SUBTYPE de Media Foundation MSFT: MFVideoFormat_VP80
-- Descrição: formato de codec VP8
+- MSFT Media Foundation MF_MT_SUBTYPE: MFVideoFormat_VP80
+- Descrição: formato codec vp8
 - Identificadores FourCC ou WAV: VP80
 
 ID do Matroska: V_VP9
 
-- MF_MT_SUBTYPE de Media Foundation MSFT: MFVideoFormat_VP90
-- Descrição: formato de codec VP9
+- MSFT Media Foundation MF_MT_SUBTYPE: MFVideoFormat_VP90
+- Descrição: formato codec VP9
 - Identificadores FourCC ou WAV: VP90
 
 ID do Matroska: V_MJPEG
 
-- MF_MT_SUBTYPE de Media Foundation MSFT: MFVideoFormat_MJPG
-- Descrição: animação JPEG
+- MSFT Media Foundation MF_MT_SUBTYPE: MFVideoFormat_MJPG
+- Descrição: JPEG de movimento
 - Identificadores FourCC ou WAV: MJPG
 
 ID do Matroska: V_AV1
 
-- MF_MT_SUBTYPE de Media Foundation MSFT: MFVideoFormat_AV1
-- Descrição: vídeo AOMedia 1
+- MSFT Media Foundation MF_MT_SUBTYPE: MFVideoFormat_AV1
+- Descrição: AOMedia Video 1
 - Identificadores FourCC ou WAV: AV01
 
 ### <a name="audio-codec-support-for-mkv"></a>Suporte a codec de áudio para MKV
 
 ID do Matroska: A_AAC
 
-- MF_MT_SUBTYPE de Media Foundation MSFT: MFAudioFormat_AAC
-- Descrição: AAC (codificação de áudio avançada)
+- MSFT Media Foundation MF_MT_SUBTYPE: MFAudioFormat_AAC
+- Descrição: Codificação de Áudio Avançada (AAC)
 - Identificadores FourCC ou WAV: WAVE_FORMAT_MPEG_HEAAC
 
 ID do Matroska: A_AC3
@@ -186,37 +186,37 @@ ID do Matroska: A_OPUS
 
 ID do Matroska: A_VORBIS
 
-- MSFT Media Foundation MF_MT_SUBTYPE: MFAudioFormat_Vorbis
+- MF_MT_SUBTYPE de Media Foundation MSFT: MFAudioFormat_Vorbis
 - Descrição: Vorbis
 - Identificadores FourCC ou WAV: 
 
 ID do Matroska: A_FLAC
 
-- MSFT Media Foundation MF_MT_SUBTYPE: MFAudioFormat_FLAC
-- Descrição: Codec de áudio sem perda gratuita
+- MF_MT_SUBTYPE de Media Foundation MSFT: MFAudioFormat_FLAC
+- Descrição: codec de áudio sem perdas gratuita
 - Identificadores FourCC ou WAV: WAVE_FORMAT_FLAC
 
-ID do Matroska: A_AAC/MAIN
+ID de Matroska: A_AAC/MAIN
 
-- MSFT Media Foundation MF_MT_SUBTYPE: MFAudioFormat_AAC
-- Descrição: Codificação de Áudio Avançada (AAC)
+- MF_MT_SUBTYPE de Media Foundation MSFT: MFAudioFormat_AAC
+- Descrição: AAC (codificação de áudio avançada)
 - Identificadores FourCC ou WAV: WAVE_FORMAT_MPEG_HEAAC
 
 ID do Matroska: A_EAC3
 
-- MSFT Media Foundation MF_MT_SUBTYPE: MFAudioFormat_Dolby_DDPlus
-- Descrição: AC-3 aprimorado
+- MF_MT_SUBTYPE de Media Foundation MSFT: MFAudioFormat_Dolby_DDPlus
+- Descrição: AC avançada-3
 - Identificadores FourCC ou WAV: 
 
 ID do Matroska: A_TRUEHD
 
-- MSFT Media Foundation MF_MT_SUBTYPE: MEDIASUBTYPE_DOLBY_TRUEHD
+- MF_MT_SUBTYPE de Media Foundation MSFT: MEDIASUBTYPE_DOLBY_TRUEHD
 - Descrição: Dolby TrueHD
 - Identificadores FourCC ou WAV: 
 
 ID do Matroska: A_MS/ACM
 
-- MF_MT_SUBTYPE de Media Foundation MSFT: mapeia para vários tipos de WAVE_FORMAT de áudio definidos em Mmreg. h
+- MF_MT_SUBTYPE de Media Foundation MSFT: Mapas a vários tipos de áudio WAVE_FORMAT definidos em mmreg. h
 
 
 ### <a name="subtitles-codec-support-for-mkv"></a>Suporte ao codec de legendas para MKV
@@ -249,14 +249,14 @@ ID do Matroska: S_VOBSUB
 ID do Matroska: S_HDMV/PGS
 
 - MF_MT_SUBTYPE de Media Foundation MSFT: MFSubtitleFormat_PGS
-- Descrição: subtítulos de gráficos de apresentação do HDMV (PGS)
+- Descrição: HDMV de apresentação de imagens (PGS)
 
 
 ## <a name="technical-details-regarding-codecs"></a>Detalhes técnicos sobre codecs
 
-Consulte o seguinte para obter detalhes técnicos sobre codecs.
+Consulte os detalhes técnicos a seguir sobre os codecs.
 
-- [Especificações do Codec matroska](http://www.matroska.org/technical/specs/codecid/index.html)
+- [Especificações do codec Matroska](http://www.matroska.org/technical/specs/codecid/index.html)
 - [GUIDs de subtipo de áudio](audio-subtype-guids.md)
 - [GUIDs de subtipo de vídeo](video-subtype-guids.md)
 
@@ -268,7 +268,7 @@ Consulte o seguinte para obter detalhes técnicos sobre codecs.
 [Formatos de mídia compatíveis com o Media Foundation](supported-media-formats-in-media-foundation.md)
 </dt> <dt>
 
-[Guia Media Foundation programação do Media Foundation](media-foundation-programming-guide.md)
+[Guia de programação Media Foundation](media-foundation-programming-guide.md)
 </dt> </dl>
 
  

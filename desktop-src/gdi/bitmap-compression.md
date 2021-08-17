@@ -1,19 +1,19 @@
 ---
-description: O Windows dá suporte a formatos para compactação de bitmaps que definem suas cores com 8 ou 4 bits por pixel. A compactação reduz o armazenamento de disco e memória necessário para o bitmap.
+description: o Windows dá suporte a formatos para compactação de bitmaps que definem suas cores com 8 ou 4 bits por pixel. A compactação reduz o armazenamento de disco e memória necessário para o bitmap.
 ms.assetid: 14d14662-910a-4f3f-914e-6ccfc602c822
 title: Compactação de bitmap
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 38739f0e33f095b8eff567fc63b57db96b8cdc66
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6a3fa089401e77e882cf62472d007495e3e6c686d52259f095cb5a2758204736
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104091223"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119105765"
 ---
 # <a name="bitmap-compression"></a>Compactação de bitmap
 
-O Windows dá suporte a formatos para compactação de bitmaps que definem suas cores com 8 ou 4 bits por pixel. A compactação reduz o armazenamento de disco e memória necessário para o bitmap.
+o Windows dá suporte a formatos para compactação de bitmaps que definem suas cores com 8 ou 4 bits por pixel. A compactação reduz o armazenamento de disco e memória necessário para o bitmap.
 
 Quando o membro de **compactação** da estrutura de cabeçalho de informações de bitmap é bi \_ RLE8, um formato RLE (codificação de comprimento de execução) é usado para compactar um bitmap de 8 bits. Esse formato pode ser compactado em modos codificados ou absolutos. Ambos os modos podem ocorrer em qualquer lugar no mesmo bitmap:
 
@@ -31,13 +31,13 @@ Quando o membro de **compactação** da estrutura de cabeçalho de informações
 
  
 
--   No *modo absoluto*, o primeiro byte é zero e o segundo byte é um valor no intervalo de 03H a FFH. O segundo byte representa o número de bytes a seguir, cada um contendo o índice de cores de um único pixel. Quando o segundo byte é dois ou menos, o escape tem o mesmo significado que o modo codificado. No modo absoluto, cada execução deve estar alinhada em um limite de palavra.
+-   No *modo absoluto*, o primeiro byte é zero e o segundo byte é um valor no intervalo de 03H a FFH. O segundo byte representa o número de bytes a seguir, cada um contendo o índice de cores de um único pixel. Quando o segundo byte é dois ou menos, o escape tem o mesmo significado que o modo codificado. No modo absoluto, cada execução deve ser preenchida com zero para terminar em um limite de palavras de 16 bits.
 
 O exemplo a seguir mostra os valores hexadecimais de um bitmap compactado de 8 bits:
 
 
 ```C++
-[03 04] [05 06] [00 03 45 56 67] [02 78] [00 02 05 01] 
+[03 04] [05 06] [00 03 45 56 67 00] [02 78] [00 02 05 01] 
 [02 78] [00 00] [09 1E] [00 01] 
 ```
 

@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: dc59103a1a98b0baf1559ead159221ea42288936
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 29796a259810cd03739c45338709966bd765f0c1fd9026777f435acb2c5de253
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105756697"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119978846"
 ---
 # <a name="struct-complex-type"></a>Tipo complexo de struct
 
@@ -45,8 +45,8 @@ Define uma estrutura que contém um ou mais valores de contador.
 
 | Nome | Tipo                                                                    | Descrição                                                                                                                                      |
 |------|-------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
-| name | [**homem: CSymbolType**](performance-counters-csymboltype-simple-type.md) | O nome da estrutura.<br/>                                                                                                            |
-| tipo | [**homem: CSymbolType**](performance-counters-csymboltype-simple-type.md) | Um nome simbólico que identifica a estrutura. A ferramenta [ctrpp](ctrpp.md) cria uma variável de struct com esse nome que você pode usar.<br/> |
+| name | [**man:CSymbolType**](performance-counters-csymboltype-simple-type.md) | O nome da estrutura.<br/>                                                                                                            |
+| tipo | [**man:CSymbolType**](performance-counters-csymboltype-simple-type.md) | Um nome simbólico que identifica a estrutura. A [ferramenta CTRPP](ctrpp.md) cria uma variável de struct com esse nome que você pode usar.<br/> |
 
 
 
@@ -56,8 +56,8 @@ Define uma estrutura que contém um ou mais valores de contador.
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
 
 
 

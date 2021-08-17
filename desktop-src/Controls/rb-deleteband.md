@@ -1,9 +1,9 @@
 ---
-title: Mensagem de RB_DELETEBAND (commctrl. h)
-description: Exclui uma faixa de um controle rebar.
+title: RB_DELETEBAND mensagem (Commctrl.h)
+description: Exclui uma faixa de um controle de barra de rebar.
 ms.assetid: 15f2ea78-5c3f-4fe1-a020-025c33f00703
 keywords:
-- Controles de RB_DELETEBAND de mensagens do Windows
+- RB_DELETEBAND controles de Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a15fd8593c816b64f0d7f82058b3779f256dd521
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 0e85acfea41492cd68b98da0613f6014f0e4dabddf817d9402c93b7c143d8e02
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105756027"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119642656"
 ---
-# <a name="rb_deleteband-message"></a>\_Mensagem DELETEBAND RB
+# <a name="rb_deleteband-message"></a>Mensagem RB \_ DELETEBAND
 
-Exclui uma faixa de um controle rebar.
+Exclui uma faixa de um controle de barra de rebar.
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -32,16 +32,16 @@ Exclui uma faixa de um controle rebar.
 *wParam* 
 </dt> <dd>
 
-Índice de base zero da banda a ser excluída.
+Índice baseado em zero da banda a ser excluída.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>Deve ser zero.</dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retornará zero se for bem-sucedido ou nenhum outro.
+Retornará diferente de zero se for bem-sucedido ou zero caso contrário.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -49,9 +49,9 @@ Retornará zero se for bem-sucedido ou nenhum outro.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

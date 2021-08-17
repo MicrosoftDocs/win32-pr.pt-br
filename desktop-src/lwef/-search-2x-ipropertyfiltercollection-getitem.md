@@ -1,11 +1,11 @@
 ---
-title: Propriedade IPropertyFilterCollection GetITem (WdsSharedIDL. h)
+title: Propriedade GetITem IPropertyFilterCollection (WdsSharedIDL.h)
 description: Retorna um filtro específico dentro da coleção.
 ms.assetid: 72a35d98-b2d8-4dfb-84a7-365a3778fc85
 keywords:
-- recursos de ambiente herdado Windows da propriedade GetITem
-- propriedade GetITem recursos de ambiente herdados Windows, interface IPropertyFilterCollection
-- recursos de ambiente Windows da interface IPropertyFilterCollection herdada, propriedade GetITem
+- Propriedade GetITem Herdado Windows Recursos de Ambiente
+- Propriedade GetITem Recursos Windows ambiente herdado, interface IPropertyFilterCollection
+- Interface IPropertyFilterCollection Recursos Windows ambiente herdado, propriedade GetITem
 topic_type:
 - apiref
 api_name:
@@ -25,16 +25,16 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119451077"
 ---
-# <a name="ipropertyfiltercollectiongetitem-property"></a>Propriedade IPropertyFilterCollection:: GetITem
+# <a name="ipropertyfiltercollectiongetitem-property"></a>Propriedade IPropertyFilterCollection::GetITem
 
 > [!NOTE]
-> Windows o Desktop Search 2. x é uma tecnologia obsoleta que estava originalmente disponível como um suplemento para o Windows XP e o Windows Server 2003. em versões posteriores, use a [API de pesquisa Windows](../search/-search-reference-entry-page.md) em vez disso. 
+> Windows A Pesquisa de Área de Trabalho 2.x é uma tecnologia obsoleta que estava originalmente disponível como um complemento para Windows XP e Windows Server 2003. Em versões posteriores, use a [API Windows Search.](../search/-search-reference-entry-page.md) 
 
 Retorna um filtro específico dentro da coleção.
 
-Esta propriedade é de leitura/gravação.
+Essa propriedade é leitura/gravação.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -59,10 +59,10 @@ Define o endereço do filtro.
 
 | Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows XP somente com \[ aplicativos de área de trabalho do SP2\]<br/>                                      |
-| Servidor mínimo com suporte<br/> | Windows Servidor 2003 somente com \[ aplicativos de área de trabalho do SP1\]<br/>                             |
-| Redistribuível<br/>          | Windows Pesquisador de desktops (WDS) 2.6.5<br/>                                             |
-| parâmetro<br/>                   | <dl> <dt>WdsSharedIDL. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows XP somente com \[ aplicativos da área de trabalho SP2\]<br/>                                      |
+| Servidor mínimo com suporte<br/> | Windows Servidor 2003 somente com aplicativos da área de trabalho SP1 \[\]<br/>                             |
+| Redistribuível<br/>          | Windows Pesquisa de Área de Trabalho (WDS) 2.6.5<br/>                                             |
+| Cabeçalho<br/>                   | <dl> <dt>WdsSharedIDL.h</dt> </dl> |
 
 
 

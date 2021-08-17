@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre: classe VistaApi'
-title: Classe VistaApi (Microsoft. ISAM. ESENT. Interop. vista)
+description: 'Saiba mais sobre: Classe VistaApi'
+title: Classe VistaApi (Microsoft.Isam.Esent.Interop.Vista)
 TOCTitle: VistaApi class
 ms:assetid: T:Microsoft.Isam.Esent.Interop.Vista.VistaApi
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.vista.vistaapi(v=EXCHG.10)
@@ -24,24 +24,24 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 77f9b3ab7e3ab94ae6b4181253cf735ba92699f6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a2cec15da58bc53c44c5bf6ed588b5c6c6c71ea1a42e2f5eb488e2ba3d5b2c0f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104296583"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119106900"
 ---
 # <a name="vistaapi-class"></a>Classe VistaApi
 
-APIs ESENT que foram suportadas primeiro no Windows Vista.
+APIs ESENT com suporte pela primeira vez no Windows Vista.
 
 ## <a name="inheritance-hierarchy"></a>Hierarquia de herança
 
 [System.Object](/dotnet/api/system.object)  
-  Microsoft. ISAM. ESENT. Interop. vista. VistaApi  
+  Microsoft.Isam.Esent.Interop.Vista.VistaApi  
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Syntax
 
@@ -66,4 +66,4 @@ Qualquer membro estático público (Shared no Visual Basic) desse tipo é seguro
 
 [Membros do VistaApi](./vistaapi-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)

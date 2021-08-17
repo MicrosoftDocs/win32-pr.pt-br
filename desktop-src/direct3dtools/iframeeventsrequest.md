@@ -17,12 +17,12 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: a66c098c8808eadcf31d39d76a48b6185871aded
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: c4a90607cacd36225811245cbf6d9a260ad90b80ef537aae2b811911f064788e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103919815"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120094826"
 ---
 # <a name="span-idvspixengineiframeeventsrequestspaniframeeventsrequest-interface"></a><span id="vspixengine.iframeeventsrequest"></span>Interface IFrameEventsRequest
 
@@ -30,11 +30,11 @@ Solicitação para retornar a lista de eventos em um quadro.
 
 ## <a name="members"></a>Membros
 
-A interface **IFrameEventsRequest** herda da interface [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) . **IFrameEventsRequest** também tem estes tipos de membros:
+A interface **IFrameEventsRequest** herda da interface [**IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **IFrameEventsRequest** também tem estes tipos de membros:
 
 -   [Métodos](#methods)
 
-### <a name="span-idmethodsspanmethods"></a><span id="methods"></span>Maneiras
+### <a name="span-idmethodsspanmethods"></a><span id="methods"></span>Métodos
 
 A interface **IFrameEventsRequest** tem esses métodos.
 
@@ -44,7 +44,7 @@ A interface **IFrameEventsRequest** tem esses métodos.
 
 ## <a name="requirements"></a>Requisitos
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>parâmetro</p></td><td>Vspixengine. h</td></tr></tbody></table>
+<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Cabeçalho</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
  
 

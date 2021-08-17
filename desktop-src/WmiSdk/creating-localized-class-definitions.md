@@ -5,26 +5,26 @@ ms.tgt_platform: multiple
 title: Criando definições de classe localizadas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d41a183c1478c259b0428cd827088a769e680425
-ms.sourcegitcommit: b7a1da2711221fa99072079bf52399cbdfc6bd9d
+ms.openlocfilehash: a2d7cb5f2970c3696de7cdd1bdb9d61d6eed5e86dc60c8941eec475d15145dd0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "105762173"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119374766"
 ---
 # <a name="creating-localized-class-definitions"></a>Criando definições de classe localizadas
 
-A criação de definições de classe localizadas é um processo de três etapas. Comece escrevendo o código MOF que define as classes, incluindo todos os qualificadores que devem ser localizados. Esse arquivo original é chamado de arquivo de "MOF mestre" porque contém todos os qualificadores e propriedades que definem a classe.
+A criação de definições de classe localizadas é um processo de três etapas. Comece escrevendo código MOF que define as classes, incluindo todos os qualificadores que devem ser localizados. Esse arquivo original é chamado de arquivo "MOF mestre" porque contém todos os qualificadores e propriedades que definem a classe.
 
-Em seguida, use o [compilador MOF](mofcomp.md) para criar as versões de linguagem neutra e específica do idioma do arquivo MOF. O compilador MOF coloca a descrição básica da classe em um novo arquivo MOF e cria uma versão localizada do arquivo MOF que contém apenas as propriedades e os qualificadores que devem ser localizados. Embora as versões específicas do idioma e do idioma neutro do arquivo MOF possam ter o mesmo nome de arquivo, você deve usar uma extensão de nome de arquivo. MFL para indicar que o arquivo contém informações localizadas. Você pode localizar o arquivo. MFL em outras localidades, se necessário. O armazenamento das definições de classe no repositório CIM requer uma etapa adicional de usar o compilador MOF para compilar os arquivos MOF de idioma neutro e específico do idioma.
+Em seguida, use [o compilador MOF](mofcomp.md) para criar as versões específicas de idioma e neutras ao idioma do arquivo MOF. O compilador MOF coloca a descrição da classe básica em um novo arquivo MOF e cria uma versão localizada do arquivo MOF que contém apenas as propriedades e qualificadores que devem ser localizados. Embora as versões específicas ao idioma e neutras ao idioma do arquivo MOF possam ter o mesmo nome de arquivo, você deve usar uma extensão de nome de arquivo .mfl para indicar que o arquivo contém informações localizadas. Você pode localizar o arquivo .mfl para outras localidades, se necessário. O armazenamento das definições de classe no repositório CIM requer uma etapa adicional do uso do compilador MOF para compilar os arquivos MOF específicos a um idioma.
 
 As etapas a seguir descrevem como criar e armazenar uma definição de classe localizada.
 
 **Para criar e armazenar uma definição de classe localizada**
 
-1.  Crie o arquivo MOF mestre que define as classes que você deseja que sejam localizadas.
+1.  Crie o arquivo MOF mestre que define as classes que você deseja localizadas.
 
-    Salve esse código MOF em um arquivo chamado Mastermof. mof.
+    Salve esse código MOF em um arquivo chamado Mastermof.mof.
 
     ```syntax
     #pragma namespace("\\\\.\\root")
@@ -55,21 +55,21 @@ As etapas a seguir descrevem como criar e armazenar uma definição de classe lo
     };
     ```
 
-2.  Crie versões de idioma neutros e específicas do idioma do arquivo MOF compilando o arquivo MasterMOF. mof.
+2.  Crie versões específicas de idioma e neutras ao idioma do arquivo MOF compilando o arquivo MasterMOF.mof.
 
-    Digite o seguinte comando em um prompt de comando para compilar o arquivo MasterMOF. mof.
+    Digite o comando a seguir em um prompt de comando para compilar o arquivo MasterMOF.mof.
 
-    **Mofcomp-MOF: Lnmof. mof-MFL: Lsmof. MFL-emenda: MS \_ 409 Mastermof. mof**
+    **mofcomp -MOF:Lnmof.mof -MFL:Lsmof.mfl -Amendment:MS \_ 409 Mastermof.mof**
 
-3.  Compile os arquivos de idioma neutro (Lnmof. MOF) e específicos do idioma (Lsmof. MFL) e armazene as informações de classe no repositório do CIM.
+3.  Compile os arquivos Lsmof.mof (language-neutral) e Lsmof.mfl (específicos da linguagem) e armazene as informações de classe no repositório CIM.
 
     Digite os comandos a seguir em um prompt de comando para armazenar as informações de classe no repositório CIM.
 
-    **Mofcomp Lnmof. mof**
+    **Mofcomp Lnmof.mof**
 
-    **Mofcomp Lsmof. MFL**
+    **Mofcomp Lsmof.mfl**
 
-    Depois de compilar esses arquivos, você terá uma definição de classe neutra de idioma no namespace de \\ teste raiz e uma definição de classe localizada no \\ namespace raiz \\ MS \_ 409 de teste. Para obter mais informações sobre como compilar arquivos MOF localizados, consulte [compilando arquivos MOF localizados](compiling-localized-mof-files.md).
+    Depois de compilar esses arquivos, você terá uma definição de classe neutra em idioma no namespace de teste raiz e uma definição de classe localizada no \\ \\ \\ namespace ms \_ 409 do teste raiz. Para obter mais informações sobre como compilar arquivos MOF localizados, consulte [Compilando arquivos MOF localizados](compiling-localized-mof-files.md).
 
  
 

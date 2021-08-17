@@ -1,30 +1,30 @@
 ---
-title: Obtendo mensagens de erro de um coletor
-description: Obtendo mensagens de erro de um coletor
+title: Recebendo mensagens de erro de um sink
+description: Recebendo mensagens de erro de um sink
 ms.assetid: c948d06f-7728-4d89-8dc4-40d192c94099
 keywords:
-- ASF (Advanced Systems Format), mensagens de erro de coletores
-- ASF (formato de sistemas avançados), mensagens de erro de coletores
-- ASF (Advanced Systems Format), coletores
-- ASF (formato de sistemas avançados), coletores
-- coletores, mensagens de erro
+- ASF (Advanced Systems Format), mensagens de erro de sinks
+- ASF (Formato de Sistemas Avançados), mensagens de erro de sinks
+- ASF (Advanced Systems Format), sinks
+- ASF (Formato de Sistemas Avançados), sinks
+- sinks, mensagens de erro
 - mensagens de erro
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c6b3fbb43d72107dbffc13eb27425e253bc13839
-ms.sourcegitcommit: 48d1c892045445bcbd0f22bafa2fd3861ffaa6e7
+ms.openlocfilehash: e432f805b5e33de0e830a2f319713bccec328d429f8eb04064d87edc56bf375c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "104084356"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119930866"
 ---
-# <a name="getting-error-messages-from-a-sink"></a>Obtendo mensagens de erro de um coletor
+# <a name="getting-error-messages-from-a-sink"></a>Recebendo mensagens de erro de um sink
 
-O objeto Writer não envia mensagens para o método de retorno de chamada [**IWMStatusCallback:: OnStatus**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmstatuscallback-onstatus) . No entanto, você pode definir coletores de gravador para enviar mensagens para OnStatus. Cada coletor deve ser definido para entregar o status separadamente, mas todos os coletores podem relatar para o mesmo retorno de chamada.
+O objeto writer não envia mensagens para o método de retorno de chamada [**IWMStatusCallback::OnStatus.**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmstatuscallback-onstatus) No entanto, você pode definir os sinks de writer para enviar mensagens para OnStatus. Cada sink deve ser definido para entregar o status separadamente, mas todos os sinks podem relatar para o mesmo retorno de chamada.
 
-Para definir um coletor para entregar mensagens de status para **OnStatus**, chame o método [**IWMRegisterCallback:: Advise**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmregistercallback-advise) .
+Para definir um sink para entregar mensagens de status para **OnStatus,** chame o [**método IWMRegisterCallback::Advise.**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmregistercallback-advise)
 
-O código de exemplo a seguir demonstra como definir todos os coletores para entregar mensagens de status a um retorno de chamada **OnStatus** . Neste exemplo, o índice de cada coletor será usado como o parâmetro de contexto para que o método **OnStatus** possa diferenciar as mensagens dos coletores diferentes. Para obter mais informações sobre como usar esse código, consulte [usando os exemplos de código](using-the-code-examples.md).
+O código de exemplo a seguir demonstra como definir todos os sinks para entregar mensagens de status para um retorno de chamada **OnStatus.** Neste exemplo, o índice de cada sink será usado como o parâmetro de contexto para que o **método OnStatus** possa diferenciar entre mensagens dos diferentes sinks. Para obter mais informações sobre como usar esse código, [consulte Usando os exemplos de código](using-the-code-examples.md).
 
 
 ```C++
@@ -83,15 +83,15 @@ Exit:
 
 <dl> <dt>
 
-[**Interface IWMRegisterCallback**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmregistercallback)
+[**IWMRegisterCallback Interface**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmregistercallback)
 </dt> <dt>
 
-[**Trabalhando com coletores de gravador**](working-with-writer-sinks.md)
+[**Trabalhando com os sinks do Writer**](working-with-writer-sinks.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

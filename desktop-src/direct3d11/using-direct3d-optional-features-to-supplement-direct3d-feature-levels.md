@@ -4,12 +4,12 @@ description: Descubra como verificar o suporte ao dispositivo para recursos opci
 ms.assetid: 91D9706A-47C5-4220-8AC7-167095E74F74
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1dcc770812281ea89e8ebb68065aa68a00e1887d
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 03c2e7392f576b8c0dca059a4ef2fdd2ee6415230e5fd41e497d60899332f674
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104294212"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119124044"
 ---
 # <a name="using-direct3d-11-feature-data-to-supplement-direct3d-feature-levels"></a>Usando os dados de recurso do Direct3D 11 para complementar os níveis de recursos do Direct3D
 
@@ -25,9 +25,9 @@ Chame [**ID3D11Device:: CheckFeatureSupport**](/windows/desktop/api/D3D11/nf-d3d
 
 ## <a name="can-i-minimize-the-work-required-for-feature-support-checks"></a>Posso minimizar o trabalho necessário para verificações de suporte a recursos?
 
-Além de ter o tempo de execução do Direct3D 11 correto (geralmente associado a uma versão do Windows), o driver de gráficos também deve ser recente o suficiente para oferecer suporte ao recurso opcional. As especificações do WDDM exigem que recursos opcionais sejam suportados se o hardware puder dar suporte a ele. Assim, quando um driver de gráficos dá suporte a um dos recursos opcionais que foram adicionados em uma versão específica do Windows, isso geralmente significa que o driver de gráficos dá suporte aos outros recursos adicionados nessa versão do Windows. Por exemplo, se um driver de dispositivo der suporte a sombras no nível de recurso 9, você saberá que o driver de dispositivo é pelo menos o WDDM 1,2.
+além de ter o tempo de execução do Direct3D 11 correto (geralmente associado a uma versão Windows), o driver de gráficos também deve ser recente o suficiente para oferecer suporte ao recurso opcional. As especificações do WDDM exigem que recursos opcionais sejam suportados se o hardware puder dar suporte a ele. assim, quando um driver de gráficos dá suporte a um dos recursos opcionais que foram adicionados em uma versão específica do Windows, isso geralmente significa que o driver de gráficos dá suporte aos outros recursos adicionados nessa versão do Windows. Por exemplo, se um driver de dispositivo der suporte a sombras no nível de recurso 9, você saberá que o driver de dispositivo é pelo menos o WDDM 1,2.
 
-**Observação**    Se um dispositivo Microsoft Direct3D oferecer suporte ao [nível de recurso](overviews-direct3d-11-devices-downlevel-intro.md) 11,1, todos os recursos opcionais indicados pelas opções de [**\_ D3D11 de dados de recurso \_ \_ \_ D3D11**](/windows/desktop/api/D3D11/ns-d3d11-d3d11_feature_data_d3d11_options) serão automaticamente suportados, exceto **SAD4ShaderInstructions** e **ExtendedDoublesShaderInstructions**.
+**Observação**  Se um dispositivo Microsoft Direct3D oferecer suporte ao [nível de recurso](overviews-direct3d-11-devices-downlevel-intro.md) 11,1, todos os recursos opcionais indicados pelas opções de [**\_ D3D11 de dados de recurso \_ \_ \_ D3D11**](/windows/desktop/api/D3D11/ns-d3d11-d3d11_feature_data_d3d11_options) serão automaticamente suportados, exceto **SAD4ShaderInstructions** e **ExtendedDoublesShaderInstructions**.
 
 O tempo de execução sempre define os seguintes agrupamentos de membros de forma idêntica. Ou seja, todos os valores em um agrupamento são **verdadeiros** ou **falsos** juntos:
 
@@ -37,11 +37,11 @@ O tempo de execução sempre define os seguintes agrupamentos de membros de form
 
 **Opções de nível de recurso 11,2 ([**D3D11 \_ Feature \_ D3D11 \_ OPTIONS1**](/windows/desktop/api/D3D11/ne-d3d11-d3d11_feature)):** os recursos opcionais indicados por esse campo são independentes e devem ser verificados individualmente.
 
-### <a name="feature-support-on-windows-rt-81-and-windows-phone-81-devices"></a>Suporte a recursos em dispositivos Windows RT 8,1 e Windows Phone 8,1
+### <a name="feature-support-on-windows-rt-81-and-windows-phone-81-devices"></a>suporte a recursos em dispositivos Windows RT 8,1 e Windows Phone 8,1
 
-Os dispositivos Tablet Windows RT podem dar suporte a uma variedade de níveis de recursos e recursos opcionais, são otimizados para reduzir o consumo de energia e usar gráficos integrados em vez de GPUs discretas. Os aplicativos da Windows Store para dispositivos ARM devem dar suporte ao nível de recurso 9,1. Os aplicativos DirectX para Windows RT devem aproveitar os recursos opcionais que podem economizar energia e ciclos, como instanciação simples – quando estão disponíveis.
+Windows RT dispositivos tablets podem dar suporte a uma variedade de níveis de recursos e recursos opcionais, são otimizados para consumo de energia reduzido e usam gráficos integrados em vez de GPUs discretas. Windows Os aplicativos da loja para dispositivos ARM devem dar suporte ao nível de recurso 9,1. os aplicativos DirectX para Windows RT devem aproveitar os recursos opcionais que podem economizar energia e ciclos, como instanciação simples – quando estão disponíveis.
 
-Windows Phone 8 dispositivos móveis dão suporte ao nível de recurso 9,3 com recursos opcionais específicos. Consulte [nível de recurso do Direct3D 9 \_ 3 para Windows Phone 8](/previous-versions/windows/apps/jj714085(v=vs.105)).
+Windows Phone 8 dispositivos móveis dão suporte ao nível de recurso 9,3 com recursos opcionais específicos. consulte [nível de recurso do Direct3D 9 \_ 3 para Windows Phone 8](/previous-versions/windows/apps/jj714085(v=vs.105)).
 
 ## <a name="what-are-the-direct3d-11-optional-features"></a>Quais são os recursos opcionais do Direct3D 11?
 
@@ -104,6 +104,6 @@ O Direct3D 11,2 adiciona quatro novos recursos opcionais que podem ser suportado
 [Dispositivos](overviews-direct3d-11-devices.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

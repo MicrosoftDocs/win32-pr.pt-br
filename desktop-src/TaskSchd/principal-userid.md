@@ -1,11 +1,11 @@
 ---
-title: Propriedade principal. UserId
-description: Para scripts, Obtém ou define o identificador de usuário que é necessário para executar as tarefas associadas à entidade de segurança.
+title: Propriedade Principal.UserId
+description: Para scripts, obtém ou define o identificador de usuário necessário para executar as tarefas associadas à entidade de entidade.
 ms.assetid: 57a34d7b-70b2-4156-b525-befecbaf070d
 keywords:
-- Agendador de Tarefas da propriedade UserId
-- Propriedade UserId Agendador de Tarefas, objeto principal
-- Objeto principal Agendador de Tarefas, Propriedade UserId
+- Propriedade UserId Agendador de Tarefas
+- Propriedade UserId Agendador de Tarefas objeto , principal
+- Objeto principal Agendador de Tarefas , propriedade UserId
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ae6fce7fcfdf235ba8a83f262161c2e0f2afc71c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 9501184f3316e464aa26f42d51e0b4c27eccaeb72d447faa91edaa33b0b4774c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104085781"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119060024"
 ---
-# <a name="principaluserid-property"></a>Propriedade principal. UserId
+# <a name="principaluserid-property"></a>Propriedade Principal.UserId
 
-Para scripts, Obtém ou define o identificador de usuário que é necessário para executar as tarefas associadas à entidade de segurança.
+Para scripts, obtém ou define o identificador de usuário necessário para executar as tarefas associadas à entidade de entidade.
 
 ## <a name="syntax"></a>Syntax
 
@@ -38,13 +38,13 @@ Principal.UserId As String
 
 ## <a name="property-value"></a>Valor da propriedade
 
-O identificador de usuário que é necessário para executar a tarefa.
+O identificador de usuário necessário para executar a tarefa.
 
 ## <a name="remarks"></a>Comentários
 
-Não defina essa propriedade se um identificador de grupo for especificado na propriedade [**GroupId**](principal-groupid.md) .
+Não de definir essa propriedade se um identificador de grupo for especificado na [**propriedade GroupId.**](principal-groupid.md)
 
-Ao ler ou gravar XML para uma tarefa, o identificador de usuário para a entidade de segurança é especificado usando o elemento [**userid**](taskschedulerschema-userid-principaltype-element.md) do esquema de Agendador de tarefas.
+Ao ler ou escrever XML para uma tarefa, o identificador de usuário para a entidade de entidade é especificado usando o [**elemento UserId**](taskschedulerschema-userid-principaltype-element.md) do Agendador de Tarefas esquema.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -52,9 +52,9 @@ Ao ler ou gravar XML para uma tarefa, o identificador de usuário para a entidad
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                          |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                    |
-| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd. tlb</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                          |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                    |
+| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 
 
@@ -66,10 +66,10 @@ Ao ler ou gravar XML para uma tarefa, o identificador de usuário para a entidad
 [Agendador de Tarefas](task-scheduler-start-page.md)
 </dt> <dt>
 
-[**Beneficiário**](principal.md)
+[**Principal**](principal.md)
 </dt> <dt>
 
-[**Entidade. GroupId**](principal-groupid.md)
+[**Principal.GroupId**](principal-groupid.md)
 </dt> </dl>
 
  

@@ -135,7 +135,7 @@ Pode conter uma referência ao [**\_ ConcreteJob CIM**](cim-concretejob.md) cria
 *TimeoutPeriod* \[ Em\]
 </dt> <dd>
 
-Um período de tempo limite que especifica a quantidade máxima de tempo que o cliente espera que a transição para o novo estado leve. O formato de intervalo deve ser usado para especificar o período de tempo." Um valor de 0 ou **Null** indica que o cliente não tem requisitos de tempo para a transição. Se essa propriedade não contém 0 ou **Null** e a implementação não dá suporte a esse parâmetro, um código de retorno de 4098 ( Uso do parâmetro **de** tempoout não suportado ) deve ser retornado.
+Um período de tempo limite que especifica a quantidade máxima de tempo que o cliente espera que a transição para o novo estado leve. O formato de intervalo deve ser usado para especificar o período de tempo." Um valor de 0 ou **Null** indica que o cliente não tem requisitos de tempo para a transição. Se essa propriedade não contém 0 ou **Null** e a implementação não dá suporte a esse parâmetro, um código de retorno de 4098 ( Uso do parâmetro **de** tempoout sem suporte ) deve ser retornado.
 
 </dd> </dl>
 

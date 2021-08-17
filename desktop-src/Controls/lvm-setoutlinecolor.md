@@ -1,9 +1,9 @@
 ---
-title: LVM_SETOUTLINECOLOR mensagem (Commctrl.h)
-description: Define a cor da borda de um controle de exibição de lista se o estilo de janela estendida LVS \_ EX \_ BORDERSELECT estiver definido.
+title: Mensagem de LVM_SETOUTLINECOLOR (commctrl. h)
+description: Define a cor da borda de um controle de exibição de lista se o \_ estilo de \_ janela estendida LVS ex BORDERSELECT for definido.
 ms.assetid: c2b606fa-8d47-4192-94b7-d01c3cfdc514
 keywords:
-- LVM_SETOUTLINECOLOR controles Windows mensagem
+- controles de Windows de mensagem de LVM_SETOUTLINECOLOR
 topic_type:
 - apiref
 api_name:
@@ -21,9 +21,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119217386"
 ---
-# <a name="lvm_setoutlinecolor-message"></a>Mensagem LVM \_ SETOUTLINECOLOR
+# <a name="lvm_setoutlinecolor-message"></a>\_Mensagem SETOUTLINECOLOR LVM
 
-Define a cor da borda de um controle de exibição de lista se o estilo de janela estendida [**LVS \_ EX \_ BORDERSELECT**](extended-list-view-styles.md) estiver definido.
+Define a cor da borda de um controle de exibição de lista se o estilo de janela estendida [**LVS \_ ex \_ BORDERSELECT**](extended-list-view-styles.md) for definido.
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -33,16 +33,16 @@ Define a cor da borda de um controle de exibição de lista se o estilo de janel
 </dt> <dd>Deve ser zero.</dd> <dt>
 
 *lParam* 
-</dt> <dd>**Estrutura COLORREF** que especifica a cor para definir a borda.</dd> </dl>
+</dt> <dd>Estrutura **COLORREF** que especifica a cor para definir a borda.</dd> </dl>
 
 ## <a name="return-value"></a>Valor retornado
 
-Retorna **a estrutura COLORREF** que contém a cor do contorno.
+Retorna a estrutura **COLORREF** que contém a cor da estrutura de tópicos.
 
 ## <a name="remarks"></a>Comentários
 
 > [!Note]  
-> Para usar essa mensagem, você deve fornecer um manifesto especificando Comclt32.dll versão 6.0. Para obter mais informações sobre manifestos, consulte [Habilitando estilos visuais.](cookbook-overview.md)
+> Para usar essa mensagem, você deve fornecer um manifesto especificando Comclt32.dll versão 6,0. Para obter mais informações sobre manifestos, consulte [habilitando estilos visuais](cookbook-overview.md).
 
  
 
@@ -52,9 +52,9 @@ Retorna **a estrutura COLORREF** que contém a cor do contorno.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 
 

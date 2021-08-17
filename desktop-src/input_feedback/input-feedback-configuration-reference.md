@@ -29,7 +29,7 @@ Os tópicos nesta seção fornecem as especificações de referência para a [co
 
 | Tópico                                       | Descrição                                                                                                                                                          |
 |---------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**:**](constants.md)<br/>   | Esta seção fornece as especificações de referência para as constantes de [configuração de comentários de entrada](input-feedback-configuration-portal.md) .<br/>                 |
+| [**Constantes**](constants.md)<br/>   | Esta seção fornece as especificações de referência para as constantes de [configuração de comentários de entrada](input-feedback-configuration-portal.md) .<br/>                 |
 | [Enumerações](enumerations.md)<br/> | Os tópicos nesta seção fornecem as especificações de referência para enumerações de [configuração de comentários de entrada](input-feedback-configuration-portal.md) .<br/> |
 | [Funções](functions.md)<br/>       | Os tópicos nesta seção fornecem as especificações de referência para funções de [configuração de comentários de entrada](input-feedback-configuration-portal.md) .<br/>    |
 

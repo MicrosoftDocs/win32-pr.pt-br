@@ -12,12 +12,12 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: 6ef421e35f7fa121c31e58cfeba4eee969a1b6fb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9272f61e7efeaf90ba68b1577af9b0062e507984372f7f09ebdbfc15e4ac6fbb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104090662"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119064966"
 ---
 # <a name="userbasedvirtuallan-singlesignon-element"></a>Elemento userBasedVirtualLan (logon único)
 
@@ -25,7 +25,7 @@ O elemento userBasedVirtualLan (logon único) especifica se a LAN virtual (VLAN)
 
 Esse elemento é opcional. Quando userBasedVirtualLan não é especificado em um perfil, um valor de FALSE é usado.
 
-**Windows XP com SP3 e API de LAN sem fio para Windows XP com SP2:** Esse elemento será ignorado se estiver presente em um perfil.
+**Windows xp com SP3 e API de LAN sem fio para Windows XP com SP2:** Esse elemento será ignorado se estiver presente em um perfil.
 
 ``` syntax
 <xs:element name="userBasedVirtualLan"
@@ -46,8 +46,8 @@ Esse parâmetro pode ser definido na linha de comando usando o comando **netsh w
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/> |
 
 
 
