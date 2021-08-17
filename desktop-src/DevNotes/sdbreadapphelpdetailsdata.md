@@ -1,5 +1,5 @@
 ---
-Description: Recupera dados do banco de dado detalhes de AppHelp.
+Description: Recupera dados do banco de dados de detalhes do Apphelp.
 ms.assetid: f3731561-bf3f-4139-9890-bd4ce73d83fa
 title: Função SdbReadApphelpDetailsData
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Apphelp.dll
-ms.openlocfilehash: a0a352e3fe33115133b827b5ad03d99a14101b34
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a9e116080ffbfd81cff7dca8674b6be6fc977f3f7b3024bf32779887bde04d03
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918383"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118404405"
 ---
 # <a name="sdbreadapphelpdetailsdata-function"></a>Função SdbReadApphelpDetailsData
 
-Recupera dados do banco de dado detalhes de AppHelp.
+Recupera dados do banco de dados de detalhes do Apphelp.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,23 +40,23 @@ BOOL WINAPI SdbReadApphelpDetailsData(
 
 <dl> <dt>
 
-*PDB* \[ no\]
+*pdb* \[ Em\]
 </dt> <dd>
 
-Um identificador para o banco de dados de detalhes AppHelp, AppHelp. sdb.
+Um handle para o banco de dados de detalhes apphelp, Apphelp.sdb.
 
 </dd> <dt>
 
-*pData* \[ fora\]
+*pData* \[ out\]
 </dt> <dd>
 
-Uma estrutura de [**\_ dados APPHELP**](apphelp-data.md) .
+Uma [**estrutura APPHELP \_ DATA.**](apphelp-data.md)
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-A função retorna **true** em caso de êxito ou **false** em caso de falha.
+A função retorna **TRUE em** caso de êxito **ou FALSE** em caso de falha.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -64,8 +64,8 @@ A função retorna **true** em caso de êxito ou **false** em caso de falha.
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                         |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                   |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                         |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                   |
 | DLL<br/>                      | <dl> <dt>Apphelp.dll</dt> </dl> |
 
 

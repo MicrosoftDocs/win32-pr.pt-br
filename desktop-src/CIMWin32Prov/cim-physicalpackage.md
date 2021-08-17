@@ -1,8 +1,8 @@
 ---
-description: A \_ classe CIM PhysicalPackage representa os elementos físicos que contêm ou hospedam outros componentes. Os exemplos são um compartimento de rack ou uma placa de adaptador.
+description: A classe \_ Cim PhysicalPackage representa elementos físicos que contêm ou hospedam outros componentes. Exemplos são um compartimento de rack ou uma placa de adaptador.
 ms.assetid: 9182d413-aa7e-4c2f-94fe-12e99980520c
 ms.tgt_platform: multiple
-title: Classe CIM_PhysicalPackage
+title: CIM_PhysicalPackage classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -43,12 +43,12 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118677528"
 ---
-# <a name="cim_physicalpackage-class"></a>\_Classe CIM PhysicalPackage
+# <a name="cim_physicalpackage-class"></a>Classe Cim \_ PhysicalPackage
 
-A classe **CIM \_ PhysicalPackage** representa os elementos físicos que contêm ou hospedam outros componentes. Os exemplos são um compartimento de rack ou uma placa de adaptador.
+A **classe \_ Cim PhysicalPackage** representa elementos físicos que contêm ou hospedam outros componentes. Exemplos são um compartimento de rack ou uma placa de adaptador.
 
 > [!IMPORTANT]
-> As classes DMTF (Distributed Management Task Force) CIM (modelo CIM) são as classes pai nas quais as classes WMI são criadas. Atualmente, o WMI dá suporte apenas aos [esquemas de versão do CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> As classes CIM (Distributed Management Task Force) do DMTF (Distributed Management Task Force) modelo CIM são as classes pai nas quais as classes WMI são criadas. Atualmente, o WMI dá suporte apenas aos esquemas de versão [do CIM 2.x.](https://dmtf.org/standards/cim/schemas)
 
  
 
@@ -87,20 +87,20 @@ class CIM_PhysicalPackage : CIM_PhysicalElement
 
 ## <a name="members"></a>Membros
 
-A classe **CIM \_ PhysicalPackage** tem estes tipos de membros:
+A **classe \_ Cim PhysicalPackage** tem estes tipos de membros:
 
 -   [Métodos](#methods)
 -   [Propriedades](#properties)
 
 ### <a name="methods"></a>Métodos
 
-A classe **CIM \_ PhysicalPackage** tem esses métodos.
+A **classe \_ Cim PhysicalPackage** tem esses métodos.
 
 
 
 | Método                                                                   | Descrição                                                                                                                                      |
 |:-------------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**Iscompatível**](iscompatible-method-in-class-cim-physicalpackage.md) | Verifica se o elemento físico referenciado pode ser contido ou inserido no pacote físico. Não implementado pelo WMI.<br/> |
+| [**IsCompatible**](iscompatible-method-in-class-cim-physicalpackage.md) | Verifica se o elemento físico referenciado pode ser contido ou inserido no pacote físico. Não implementado pelo WMI.<br/> |
 
 
 
@@ -108,7 +108,7 @@ A classe **CIM \_ PhysicalPackage** tem esses métodos.
 
 ### <a name="properties"></a>Propriedades
 
-A classe **CIM \_ PhysicalPackage** tem essas propriedades.
+A **classe \_ Cim PhysicalPackage** tem essas propriedades.
 
 <dl> <dt>
 
@@ -121,12 +121,12 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Caption")
+Qualificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Legenda")
 </dt> </dl>
 
-Breve descrição textual do objeto.
+Descrição textual curta do objeto.
 
-Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
@@ -139,12 +139,12 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**\_ chave CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
+Qualificadores: [**\_ Chave CIM,**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
-Nome da classe ou subclasse usada na criação de uma instância. Quando usado com outras propriedades de chave da classe, essa propriedade permite que todas as instâncias da classe e suas subclasses sejam identificadas exclusivamente.
+Nome da classe ou subclasse usada na criação de uma instância. Quando usada com outras propriedades de chave da classe , essa propriedade permite que todas as instâncias da classe e suas subclasses sejam identificadas exclusivamente.
 
-Essa propriedade é herdada do [**CIM \_ físicoelement**](cim-physicalelement.md).
+Essa propriedade é herdada de [**CIM \_ PhysicalElement.**](cim-physicalelement.md)
 
 </dd> <dt>
 
@@ -178,7 +178,7 @@ Qualificadores: [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) (
 
 Descrição textual do objeto.
 
-Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
@@ -201,35 +201,35 @@ Altura do pacote físico, em polegadas.
 **HotSwappable**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Se **for true**, o pacote poderá ser intercambiável. Um pacote físico pode ser intercambiável se o elemento puder ser substituído por um fisicamente diferente (mas equivalente) um enquanto o pacote que o contém está ativado. Por exemplo, um componente de ventilador pode ser projetado para ser intercambiável. Todos os componentes que podem ser intercambiáveis são inerentemente removíveis e substituíveis.
+Se **TRUE**, o pacote poderá ser trocado por hot-swapp. Um pacote físico poderá ser trocado por hot-swapp se o elemento puder ser substituído por um fisicamente diferente (mas equivalente) enquanto o pacote que o contém está ligado. Por exemplo, um componente de ventilador pode ser projetado para ser trocado por hot-swapp. Todos os componentes que podem ser trocados por hot-swapp são inerentemente removíveis e substituíveis.
 
 </dd> <dt>
 
 **InstallDate**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **DateTime**
+Tipo de dados: **datetime**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. \|Componente DMTF \| 1,5 "), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) (" data de instalação ")
+Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| ComponentID \| 001.5"), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Data de instalação")
 </dt> </dl>
 
 Data e hora em que o objeto foi instalado. Essa propriedade não precisa de um valor para indicar que o objeto está instalado.
 
-Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
-**Manufacturer**
+**Fabricante**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
@@ -238,12 +238,12 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
+Qualificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
-Nome da organização que produziu o elemento físico. Para obter mais informações, consulte a propriedade **Vendor** do [**\_ produto CIM**](cim-product.md).
+Nome da organização que produziu o elemento físico. Para obter mais informações, consulte **a propriedade Vendor** do produto [**CIM \_**](cim-product.md).
 
-Essa propriedade é herdada do [**CIM \_ físicoelement**](cim-physicalelement.md).
+Essa propriedade é herdada de [**CIM \_ PhysicalElement.**](cim-physicalelement.md)
 
 </dd> <dt>
 
@@ -256,12 +256,12 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
+Qualificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
 </dt> </dl>
 
 Nome pelo qual o elemento físico é geralmente conhecido.
 
-Essa propriedade é herdada do [**CIM \_ físicoelement**](cim-physicalelement.md).
+Essa propriedade é herdada de [**CIM \_ PhysicalElement.**](cim-physicalelement.md)
 
 </dd> <dt>
 
@@ -274,12 +274,12 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Name")
+Qualificadores: [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Nome")
 </dt> </dl>
 
-Rótulo pelo qual o objeto é conhecido. Quando em uma subclasse, essa propriedade pode ser substituída como uma propriedade de chave.
+Rótulo pelo qual o objeto é conhecido. Quando subclasse, essa propriedade pode ser substituído para ser uma propriedade de chave.
 
-Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
@@ -292,9 +292,9 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Dados adicionais, além das informações de marca do ativo, que podem ser usados para identificar um elemento físico. Um exemplo são dados de código de barras associados a um elemento, que também tem uma marca de ativo. Observe que, se apenas os dados de código de barras estiverem disponíveis e for exclusivo e puderem ser usados como uma chave de elemento, essa propriedade será nula e os dados de código de barras seriam usados como a chave de classe na propriedade de **marca** .
+Dados adicionais, além das informações de marca de ativo, que podem ser usados para identificar um elemento físico. Um exemplo são dados de código de barras associados a um elemento , que também tem uma marca de ativo. Observe que, se apenas os dados de código de barras estão disponíveis e são exclusivos e podem ser usados como uma chave de elemento, essa propriedade seria nula e os dados de código de barra seriam usados como a chave de classe na propriedade **Tag.**
 
-Essa propriedade é herdada do [**CIM \_ físicoelement**](cim-physicalelement.md).
+Essa propriedade é herdada de [**CIM \_ PhysicalElement.**](cim-physicalelement.md)
 
 </dd> <dt>
 
@@ -307,12 +307,12 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
+Qualificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
-Número de peça atribuído pela organização que produziu ou fabricou o elemento físico.
+Número da parte atribuído pela organização que produziu ou fabricou o elemento físico.
 
-Essa propriedade é herdada do [**CIM \_ físicoelement**](cim-physicalelement.md).
+Essa propriedade é herdada de [**CIM \_ PhysicalElement.**](cim-physicalelement.md)
 
 </dd> <dt>
 
@@ -589,7 +589,7 @@ Esta documentação é derivada das descrições da classe CIM publicadas pela D
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

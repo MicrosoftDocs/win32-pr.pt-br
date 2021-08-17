@@ -6,12 +6,12 @@ keywords:
 - efeito de escala
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ad3af77bc24db387fff0854e0432c270fa2ce6d5
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d3a28e71dfb552a35bf138c245a82937bd600e61acd8b4a82b42cbc8d9d66a65
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104369534"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118003653"
 ---
 # <a name="scale-effect"></a>Efeito de escala
 
@@ -36,7 +36,7 @@ Este exemplo mostra o efeito de escala zoom em 2 vezes a entrada e o corte para 
 | Antes                                                     |
 |------------------------------------------------------------|
 | ![a imagem antes do efeito.](images/default-before.jpg) |
-| After (após)                                                      |
+| Depois                                                      |
 | ![a imagem após a transformação.](images/22-scale.png)     |
 
 
@@ -168,8 +168,8 @@ O local do bitmap é (0, 0) ou o valor da Propriedade do ponto central.
 
 | Requisito | Valor |
 |--------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte | Windows 8 e atualização de plataforma para aplicativos de área de trabalho do Windows 7 \[ \| aplicativos da Windows Store\] |
-| Servidor mínimo com suporte | Windows 8 e atualização de plataforma para aplicativos de área de trabalho do Windows 7 \[ \| aplicativos da Windows Store\] |
+| Cliente mínimo com suporte | Windows 8 e atualização de plataforma para aplicativos de área de trabalho Windows 7 \[ \| Windows aplicativos da loja\] |
+| Servidor mínimo com suporte | Windows 8 e atualização de plataforma para aplicativos de área de trabalho Windows 7 \[ \| Windows aplicativos da loja\] |
 | parâmetro                   | d2d1effects. h                                                                      |
 | Biblioteca                  | d2d1. lib, dxguid. lib                                                               |
 

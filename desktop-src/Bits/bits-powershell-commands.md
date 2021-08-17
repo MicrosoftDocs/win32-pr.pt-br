@@ -1,19 +1,19 @@
 ---
 title: Managed Reference for BITS PowerShell Commands (Referência gerenciada para comandos do PowerShell do BITS)
-description: Serviço de Transferência Inteligente em Segundo Plano (BITS) 4,0 podem usar cmdlets do Windows PowerShell para gerenciar trabalhos de transferência.
+description: Serviço de Transferência Inteligente em Segundo Plano (BITS) 4,0 podem usar cmdlets Windows PowerShell para gerenciar trabalhos de transferência.
 ms.assetid: 2c151dfe-4f89-41ea-a533-21ffcf0aa39e
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c5bd195d2202849c2bf2df580d159ee401911c51
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 7acc88c557209ed2958d06766215278e75223a1b297bd2704ca1dcba062cfed6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103823882"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118173852"
 ---
 # <a name="managed-reference-for-bits-powershell-commands"></a>Managed Reference for BITS PowerShell Commands (Referência gerenciada para comandos do PowerShell do BITS)
 
-Serviço de Transferência Inteligente em Segundo Plano (BITS) 4,0 podem usar os cmdlets do Windows PowerShell para criar e gerenciar o download de arquivos e carregar trabalhos de transferência.
+Serviço de Transferência Inteligente em Segundo Plano (BITS) 4,0 podem usar os cmdlets Windows PowerShell para criar e gerenciar o download de arquivos e carregar trabalhos de transferência.
 
 ```PowerShell
 Import-Module BitsTransfer
@@ -21,7 +21,7 @@ mkdir -force c:\temp\BITSFILES
 Start-BitsTransfer -Source https://aka.ms/WinServ16/StndPDF -Destination c:\temp\BITSFILES\WindowsServer2016.pdf
 ```
 
-Os cmdlets do Windows PowerShell para BITS fornecem grande parte da mesma funcionalidade que o utilitário de linha de comando Bitsadmin. No entanto, o Windows PowerShell também faz o seguinte:
+Windows PowerShell cmdlets para BITS fornecem grande parte da mesma funcionalidade que o utilitário de linha de comando bitsadmin. no entanto, Windows PowerShell também faz o seguinte:
 
 -   Automatiza tarefas de BITS em uma linguagem de script extensível e orientada por gerenciamento.
 -   Fornece uma única ferramenta para todas as tarefas relacionadas ao trabalho.
@@ -31,7 +31,7 @@ Os cmdlets do Windows PowerShell para BITS fornecem grande parte da mesma funcio
 
  
 
-Para obter mais informações sobre como usar o Windows PowerShell, consulte [Windows PowerShell](https://msdn.microsoft.com/library/dd835506(v=vs.85).aspx).
+para obter mais informações sobre como usar Windows Powershell, consulte [Windows PowerShell](https://msdn.microsoft.com/library/dd835506(v=vs.85).aspx).
 
 ## <a name="bits-powershell-classes"></a>Classes do PowerShell do BITS
 
@@ -39,7 +39,7 @@ Para obter mais informações sobre como usar o Windows PowerShell, consulte [Wi
 
 **Assembly**: System. Management. Automation
 
-Essas classes de comando do BITS são implementadas pelo Windows PowerShell. Essas classes são incluídas neste Software Development Kit (SDK) apenas para fins de integridade. Os membros dessas classes não podem ser usados diretamente, nem devem ser usados para derivar outras classes.
+Essas classes de comando do BITS são implementadas por Windows PowerShell. Essas classes são incluídas neste Software Development Kit (SDK) apenas para fins de integridade. Os membros dessas classes não podem ser usados diretamente, nem devem ser usados para derivar outras classes.
 
 
 

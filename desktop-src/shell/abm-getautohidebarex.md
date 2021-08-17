@@ -13,12 +13,12 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 2ef95739a1031efb199e6acd99686e0858a9630e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 9aecbc81e313c3d971b310cc35bd399b93cc18f2ef2a4f02a00d51a16745eb61
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "104970801"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118225235"
 ---
 # <a name="abm_getautohidebarex-message"></a>\_Mensagem ABM GETAUTOHIDEBAREX
 
@@ -42,7 +42,7 @@ Um ponteiro para uma estrutura [**APPBARDATA**](/windows/desktop/api/Shellapi/ns
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna o identificador para o AutoOcultar AppBar. O valor de retorno será **nulo** se ocorrer um erro ou se nenhuma AppBar de AutoOcultar estiver associada à borda fornecida do monitor especificado.
 

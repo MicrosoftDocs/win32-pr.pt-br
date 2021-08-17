@@ -1,6 +1,6 @@
 ---
-description: Obtém o uso do disco atual do usuário como uma cadeia de texto.
-title: Propriedade DIDiskQuotaUser. QuotaUsedText
+description: Obtém o uso atual do disco do usuário como uma cadeia de caracteres de texto.
+title: Propriedade DIDiskQuotaUser.QuotaUsedText
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: be27a17c-77ec-4016-8c2e-16fbc88c7c7a
-ms.openlocfilehash: bf818bdcd22b734c6f4638a837af97bfecef1695
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: 40fca179fd415ca548bdb8b07c16696fde54f165bfde7d373087ec1a763e787c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109843207"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118050669"
 ---
-# <a name="didiskquotauserquotausedtext-property"></a>Propriedade DIDiskQuotaUser. QuotaUsedText
+# <a name="didiskquotauserquotausedtext-property"></a>Propriedade DIDiskQuotaUser.QuotaUsedText
 
-Obtém o uso do disco atual do usuário como uma cadeia de texto.
+Obtém o uso atual do disco do usuário como uma cadeia de caracteres de texto.
 
 Esta propriedade é somente para leitura.
 
@@ -37,7 +37,7 @@ QuotaUsedText = DIDiskQuotaUser.QuotaUsedText
 
 ## <a name="property-value"></a>Valor da propriedade
 
-Um valor de cadeia de caracteres que é definido como a quantidade de espaço em disco em uso no momento. Se a compactação de arquivo NTFS estiver habilitada, essa propriedade refletirá a quantidade de espaço em disco que os dados precisariam em um estado descompactado.
+Um valor de cadeia de caracteres definido como a quantidade de espaço em disco atualmente em uso. Se a compactação de arquivo NTFS estiver habilitada, essa propriedade refletirá a quantidade de espaço em disco que os dados exigiriam em um estado descompactado.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -47,7 +47,7 @@ Um valor de cadeia de caracteres que é definido como a quantidade de espaço em
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                                                    |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                          |
-| DLL<br/>                      | <dl> <dt>Shell32.dll (versão 5,0 ou posterior)</dt> </dl> |
+| DLL<br/>                      | <dl> <dt>Shell32.dll (versão 5.0 ou posterior)</dt> </dl> |
 
 
 

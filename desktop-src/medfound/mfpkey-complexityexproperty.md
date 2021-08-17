@@ -1,17 +1,17 @@
 ---
-description: Propriedade MFPKEY_COMPLEXITYEX-especifica a complexidade do algoritmo do codificador.
+description: MFPKEY_COMPLEXITYEX propriedade - especifica a complexidade do algoritmo do codificador.
 ms.assetid: abfc84d5-954f-4524-b3cb-5c5b9cfc7fa0
-title: Propriedade MFPKEY_COMPLEXITYEX (Wmcodecdsp. h)
+title: MFPKEY_COMPLEXITYEX propriedade (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 20579bcf7a06dc11f47cbef6a53629f3a36b48dc
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: e658e438909677f326372caa9e4da533e350b7133cc647b8f56562d09ad949e0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108087603"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117873533"
 ---
-# <a name="mfpkey_complexityex-property"></a>\_Propriedade MFPKEY COMPLEXITYEX
+# <a name="mfpkey_complexityex-property"></a>Propriedade MFPKEY \_ COMPLEXITYEX
 
 Especifica a complexidade do algoritmo do codificador.
 
@@ -21,7 +21,7 @@ g \_ wszWMVCComplexityEx
 
 ## <a name="data-type"></a>Tipo de Dados
 
-\_I4 VT
+VT \_ I4
 
 ## <a name="default-value"></a>Valor padrão
 
@@ -31,8 +31,8 @@ O valor padrão depende da versão do codificador de vídeo, conforme mostrado n
 
 | Versão do codificador                 | Valor padrão |
 |---------------------------------|---------------|
-| Codificador do Windows Media Video 9   | 3             |
-| Codificador de vídeo 7/8 do Windows Media | 1             |
+| Windows Codificador de Vídeo de Mídia 9   | 3             |
+| Windows Codificador de Vídeo de Mídia 7/8 | 1             |
 
 
 
@@ -46,8 +46,8 @@ Os valores possíveis dependem da versão do codificador de vídeo, conforme mos
 
 | Versão do codificador                 | Valores possíveis  |
 |---------------------------------|------------------|
-| Codificador do Windows Media Video 9   | 0, 1, 2, 3, 4, 5 |
-| Codificador de vídeo 7/8 do Windows Media | 0, 1             |
+| Windows Codificador de Vídeo de Mídia 9   | 0, 1, 2, 3, 4, 5 |
+| Windows Codificador de Vídeo de Mídia 7/8 | 0, 1             |
 
 
 
@@ -55,9 +55,9 @@ Os valores possíveis dependem da versão do codificador de vídeo, conforme mos
 
 ## <a name="remarks"></a>Comentários
 
-Valores mais baixos fazem com que o codec use algoritmos de codificação menos complicados. Embora os algoritmos mais simples produzam uma saída de qualidade inferior, o processo de codificação é mais rápido e requer menos capacidade de processamento. Isso pode ser importante ao codificar o conteúdo de uma fonte dinâmica porque o codificador deve processar entradas com rapidez suficiente para acompanhar a origem.
+Valores inferiores fazer com que o codec use algoritmos de codificação menos complicados. Embora os algoritmos mais simples produzam uma saída de qualidade inferior, o processo de codificação é mais rápido e requer menos capacidade de processamento. Isso pode ser importante ao codificar conteúdo de uma fonte ao vivo porque o codificador deve processar entradas rápido o suficiente para acompanhar a origem.
 
-Qualquer valor atribuído a essa propriedade será ignorado se a propriedade [MFPKEY \_ COMPRESSIONOPTIMIZATIONTYPE](mfpkey-compressionoptimizationtypeproperty.md) for definida como 1. Nesse caso, MFPKEY \_ COMPLEXITYEX é definido automaticamente como 3.
+Qualquer valor atribuído a essa propriedade será ignorado se a propriedade [MFPKEY \_ COMPRESSIONOPTIMIZATIONTYPE](mfpkey-compressionoptimizationtypeproperty.md) estiver definida como 1. Nesse caso, MFPKEY \_ COMPLEXITYEX é definido automaticamente como 3.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -65,17 +65,17 @@ Qualquer valor atribuído a essa propriedade será ignorado se a propriedade [MF
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                          |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                    |
-| parâmetro<br/>                   | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                          |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                    |
+| Cabeçalho<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 
-[Propriedades de Media Foundation](media-foundation-properties.md)
+[Media Foundation propriedades](media-foundation-properties.md)
 </dt> </dl>
 
  

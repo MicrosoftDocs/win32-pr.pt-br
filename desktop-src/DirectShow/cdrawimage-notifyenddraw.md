@@ -1,7 +1,7 @@
 ---
 description: Não há suporte para o método NotifyEndDraw.
 ms.assetid: a71d0686-fee8-4adf-8a3b-da3854710ffd
-title: Método CDrawImage. NotifyEndDraw (Winutil. h)
+title: Método CDrawImage.NotifyEndDraw (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: d7b23cd9ca304ab4722c705ef87a813c28c0689d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 02f45ddeb8f16ca608c216eab9bf8cf96f469e2e75d4a29a45fe6eec2b3679e0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105755595"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117822069"
 ---
-# <a name="cdrawimagenotifyenddraw-method"></a>Método CDrawImage. NotifyEndDraw
+# <a name="cdrawimagenotifyenddraw-method"></a>Método CDrawImage.NotifyEndDraw
 
-`NotifyEndDraw`Não há suporte para o método.
+Não `NotifyEndDraw` há suporte para o método .
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,13 +40,13 @@ void NotifyEndDraw();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-Em versões anteriores da biblioteca de classe base, esse método suportava medidas de desempenho pelo objeto [**CDrawImage**](cdrawimage.md) .
+Em versões anteriores da biblioteca de classes base, esse método suportava medidas de desempenho pelo [**objeto CDrawImage.**](cdrawimage.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,8 +54,8 @@ Em versões anteriores da biblioteca de classe base, esse método suportava medi
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Winutil. h (incluir fluxos. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Winutil.h (incluir Fluxos.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

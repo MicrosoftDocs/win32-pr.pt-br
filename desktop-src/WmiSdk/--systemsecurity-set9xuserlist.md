@@ -1,5 +1,5 @@
 ---
-description: Define os direitos de acesso remoto para uma lista de usuários individuais em computadores que executam versões obsoletas do Windows, em que o controle de acesso por meio de descritores de segurança do Windows não está disponível.
+description: define os direitos de acesso remoto para uma lista de usuários individuais em computadores que executam versões obsoletas do Windows, em que o controle de acesso através de Windows descritores de segurança não está disponível.
 ms.assetid: f6da65d3-86dd-4fc8-b4c0-f7ddc8536d4e
 ms.tgt_platform: multiple
 title: 'Método __SystemSecurity:: Set9XUserList'
@@ -14,16 +14,16 @@ api_type:
 - COM
 api_location:
 - all
-ms.openlocfilehash: dd377da3adf55aef6a78576e1c978196f349f619
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d1185fa91d9d12e240f592d458b975b650947cf5b8cd1b289a7e016b455556a4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105813325"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118109957"
 ---
 # <a name="__systemsecurityset9xuserlist-method"></a>\_\_Método SystemSecurity:: Set9XUserList
 
-O método **\_ \_ SystemSecurity:: Set9XUserList** define os direitos de acesso remoto para uma lista de usuários individuais em computadores que executam versões obsoletas do Windows, em que o controle de acesso por meio de descritores de segurança do Windows não está disponível.
+o método **\_ \_ SystemSecurity:: Set9XUserList** define os direitos de acesso remoto para uma lista de usuários individuais em computadores que executam versões obsoletas do Windows, em que o controle de acesso por meio de descritores de segurança Windows não está disponível.
 
 A lista é especificada como uma matriz de objetos inseridos onde cada objeto é uma instância da classe [**\_ \_ NTLMUser9X**](--ntlmuser9x.md) . Isso funciona de forma semelhante ao descritor de segurança, mas é mais limitado. Não há suporte para grupos e não há nenhum controle sobre o acesso local, pois o usuário local sempre tem acesso completo. Tanto a negação quanto as entradas de controle de acesso (ACE) são permitidas e, por isso, a ordem de ACE é importante na DACL (lista de controle de acesso discricionário). Para obter mais informações, consulte [ordem das ACEs em uma DACL](/windows/desktop/SecAuthZ/order-of-aces-in-a-dacl).
 
@@ -49,9 +49,9 @@ Matriz de usuários.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Esse método retorna um **HRESULT** que indica o status da chamada do método. A lista a seguir lista os valores de retorno que são de significância a **Set9XUserList**. Para aplicativos de script e Visual Basic, o resultado pode ser obtido de [Parameters. ReturnValue](parsing-outparameters-objects.md). Para obter mais informações, consulte [construindo objetos de inparâmetros e analisando objetos de Parameters](constructing-inparameters-objects-and-parsing-outparameters-objects.md).
+Esse método retorna um **HRESULT** que indica o status da chamada do método. A lista a seguir lista os valores de retorno que são de significância a **Set9XUserList**. para aplicativos de script e Visual Basic, o resultado pode ser obtido de [parameters. ReturnValue](parsing-outparameters-objects.md). Para obter mais informações, consulte [construindo objetos de inparâmetros e analisando objetos de Parameters](constructing-inparameters-objects-and-parsing-outparameters-objects.md).
 
 <dl> <dt>
 

@@ -1,9 +1,9 @@
 ---
 title: Elemento Privilege (requiredPrivilegesType)
-description: Especifica a direita de uma tarefa para executar várias operações relacionadas ao sistema, como desligar o sistema, carregar drivers de dispositivo ou alterar a hora do sistema.
+description: Especifica o direito de uma tarefa executar várias operações relacionadas ao sistema, como desligar o sistema, carregar drivers de dispositivo ou alterar a hora do sistema.
 ms.assetid: d5585d1c-e121-4770-a13e-108158bc703e
 keywords:
-- Agendador de Tarefas de elemento de privilégio
+- Elemento Privilege Agendador de Tarefas
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 55e9263ae9d02bb384bfbe56101ea82f98c2e076
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f181c2dbe21e31c752a44a4a3b0e27abd0f9396939c9a9dcee3127f796760527
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455703"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117758314"
 ---
 # <a name="privilege-requiredprivilegestype-element"></a>Elemento Privilege (requiredPrivilegesType)
 
-Especifica a direita de uma tarefa para executar várias operações relacionadas ao sistema, como desligar o sistema, carregar drivers de dispositivo ou alterar a hora do sistema.
+Especifica o direito de uma tarefa executar várias operações relacionadas ao sistema, como desligar o sistema, carregar drivers de dispositivo ou alterar a hora do sistema.
 
 ``` syntax
 <xs:element name="Privilege"
@@ -32,7 +32,7 @@ Especifica a direita de uma tarefa para executar várias operações relacionada
  />
 ```
 
-O elemento **Privilege** é definido pelo tipo complexo [**requiredPrivilegesType**](taskschedulerschema-requiredprivilegestype-complextype.md) .
+O **elemento Privilege** é definido pelo tipo complexo [**requiredPrivilegesType.**](taskschedulerschema-requiredprivilegestype-complextype.md)
 
 ## <a name="parent-element"></a>Elemento pai
 
@@ -46,11 +46,11 @@ O elemento **Privilege** é definido pelo tipo complexo [**requiredPrivilegesTyp
 
 ## <a name="remarks"></a>Comentários
 
-Para desenvolvimento em C++, essas informações são acessadas por meio da propriedade [**IPrincipal2:: RequiredPrivilege**](/windows/desktop/api/taskschd/nf-taskschd-iprincipal2-get_requiredprivilege) .
+Para desenvolvimento em C++, essas informações são acessadas por meio da [**propriedade IPrincipal2::RequiredPrivilege.**](/windows/desktop/api/taskschd/nf-taskschd-iprincipal2-get_requiredprivilege)
 
 ## <a name="examples"></a>Exemplos
 
-O XML a seguir define um elemento Settings que especifica a direita de uma tarefa para executar várias operações relacionadas ao sistema, como desligar o sistema, carregar drivers de dispositivo ou alterar a hora do sistema.
+O XML a seguir define um elemento de configurações que especifica o direito de uma tarefa executar várias operações relacionadas ao sistema, como desligar o sistema, carregar drivers de dispositivo ou alterar a hora do sistema.
 
 
 ```XML
@@ -70,8 +70,8 @@ O XML a seguir define um elemento Settings que especifica a direita de uma taref
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008 R2\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows 7 \[ aplicativos da área de trabalho\]<br/>              |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho do Server 2008 R2 \[\]<br/> |
 
 
 
@@ -79,7 +79,7 @@ O XML a seguir define um elemento Settings que especifica a direita de uma taref
 
 <dl> <dt>
 
-[Elementos do esquema de Agendador de Tarefas](task-scheduler-schema-elements.md)
+[Agendador de Tarefas de esquema](task-scheduler-schema-elements.md)
 </dt> </dl>
 
  

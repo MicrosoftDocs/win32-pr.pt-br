@@ -3,9 +3,9 @@ title: Método IBasicDevice DiscoveredOnCurrentNetwork
 description: Recupera um valor que indica se o dispositivo está na rede atual.
 ms.assetid: E64D4E49-9790-4647-9A01-2C28C407F238
 keywords:
-- API de Streaming de Mídia do método DiscoveredOnCurrentNetwork
-- API de Streaming de Mídia do método DiscoveredOnCurrentNetwork, interface IBasicDevice
-- API de Streaming de Mídia da interface IBasicDevice , método DiscoveredOnCurrentNetwork
+- API de streaming de mídia do método DiscoveredOnCurrentNetwork
+- API de streaming de mídia do método DiscoveredOnCurrentNetwork, interface IBasicDevice
+- API de streaming de mídia da interface IBasicDevice, método DiscoveredOnCurrentNetwork
 topic_type:
 - apiref
 api_name:
@@ -22,7 +22,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118473485"
 ---
-# <a name="ibasicdevicediscoveredoncurrentnetwork-method"></a>Método IBasicDevice::D iscoveredOnCurrentNetwork
+# <a name="ibasicdevicediscoveredoncurrentnetwork-method"></a>IBasicDevice: método iscoveredOnCurrentNetwork de:D
 
 Recupera um valor que indica se o dispositivo está na rede atual.
 
@@ -41,20 +41,20 @@ HRESULT DiscoveredOnCurrentNetwork(
 
 <dl> <dt>
 
-*value* \[ out\]
+*valor* \[ do fora\]
 </dt> <dd>
 
-Recebe um ponteiro para um valor booliana que é **True** se o dispositivo estiver na rede atual.
+Recebe um ponteiro para um valor booliano que é **verdadeiro** se o dispositivo estiver na rede atual.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor retornado
 
-O método retorna um **HRESULT.** Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
+O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
 
 
 
-| Código de retorno                                                                          | Description                      |
+| Código de retorno                                                                          | Descrição                      |
 |--------------------------------------------------------------------------------------|----------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl> | O método foi bem-sucedido.<br/> |
 

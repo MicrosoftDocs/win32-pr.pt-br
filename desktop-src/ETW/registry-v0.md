@@ -1,7 +1,7 @@
 ---
-description: Classe Registry_V0-essa classe é a classe pai para eventos de registro. A sintaxe a seguir é simplificada do código MOF.
+description: Registry_V0 classe - essa classe é a classe pai para eventos do Registro. A sintaxe a seguir é simplificada do código MOF.
 ms.assetid: 879ac606-f451-4d5d-bf78-3e7fd3093189
-title: Classe Registry_V0
+title: Registry_V0 classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: ee3aa8d5e4f7b7cb557af5eeb4a02c9a10dafbbf
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 92aeae3e9859c97a425806f9f24d23ea741d1d32132ac99cefac5fafb9fa7126
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108106174"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118394228"
 ---
-# <a name="registry_v0-class"></a>\_Classe V0 do registro
+# <a name="registry_v0-class"></a>Classe \_ Registry V0
 
-Essa classe é a classe pai para eventos de registro.
+Essa classe é a classe pai para eventos do Registro.
 
 A sintaxe a seguir é simplificada do código MOF.
 
@@ -36,7 +36,7 @@ class Registry_V0 : MSNT_SystemTrace
 
 ## <a name="members"></a>Membros
 
-A **classe \_ V0 do registro** não define nenhum membro.
+A **classe \_ Registry V0** não define nenhum membro.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -44,25 +44,25 @@ A **classe \_ V0 do registro** não define nenhum membro.
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>          |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho XP\]<br/>          |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 
-[**MSNT \_ SystemTrace**](msnt-systemtrace.md)
+[**SystemTrace do MSNT \_**](msnt-systemtrace.md)
 </dt> <dt>
 
 [**Registro**](registry.md)
 </dt> <dt>
 
-[**V0 do registro \_ \_ TypeGroup1**](registry-v0-typegroup1.md)
+[**Registro \_ V0 \_ TypeGroup1**](registry-v0-typegroup1.md)
 </dt> <dt>
 
-[**Registro \_ v1**](registry-v1.md)
+[**Registro \_ V1**](registry-v1.md)
 </dt> </dl>
 
  

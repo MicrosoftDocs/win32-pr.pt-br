@@ -1,24 +1,24 @@
 ---
-title: Removendo uma origem do evento de uma assinatura iniciada pelo coletor
-description: Você pode remover uma origem do evento de uma assinatura iniciada pelo coletor sem excluir a assinatura inteira.
+title: Removendo uma origem de evento de uma assinatura iniciada pelo coletor
+description: Você pode remover uma origem do evento de uma assinatura iniciada pelo coletor sem excluir toda a assinatura.
 ms.assetid: 6c9e0dbf-59a2-4db9-8fb8-0dbfda5cf38b
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 303e0a708c2b52225af83475674e5f60d1a8418d
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 46e155e4d8467722e9ac5eae04189ed3ba8333f65ec162ffb50f6b9268cf8a92
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103822783"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117751037"
 ---
-# <a name="removing-an-event-source-from-a-collector-initiated-subscription"></a>Removendo uma origem do evento de uma assinatura iniciada pelo coletor
+# <a name="removing-an-event-source-from-a-collector-initiated-subscription"></a>Removendo uma origem de evento de uma assinatura iniciada pelo coletor
 
-Você pode remover uma origem do evento de uma assinatura iniciada pelo coletor sem excluir a assinatura inteira. Você deve saber o endereço da origem do evento que deseja excluir. Você pode encontrar o endereço de uma origem de evento associada a uma assinatura usando o exemplo de C++ mostrado em [exibindo as propriedades de uma assinatura do coletor de eventos](displaying-the-properties-of-an-event-collector-subscription.md)ou pode digitar o seguinte comando no prompt de comando:
+Você pode remover uma origem do evento de uma assinatura iniciada pelo coletor sem excluir toda a assinatura. Você deve saber o endereço da origem do evento que deseja excluir. Você pode encontrar o endereço de uma origem do evento associada a [](displaying-the-properties-of-an-event-collector-subscription.md)uma assinatura usando o exemplo C++ mostrado em Exibindo as propriedades de uma assinatura do coletor de eventos ou digite o seguinte comando no prompt de comando:
 
-a *assinatura* de **wecutil GS**
+**wecutil gs** *SubscriptionName*
 
-Para listar as assinaturas atuais em um computador local, você pode usar o exemplo de código C++ mostrado em [listando assinaturas do coletor de eventos](listing-event-collector-subscriptions.md)ou pode digitar o seguinte comando no prompt de comando:
+Para listar as assinaturas atuais em um computador local, você pode usar o exemplo de código C++ mostrado em [Listando assinaturas](listing-event-collector-subscriptions.md)do coletor de eventos ou pode digitar o seguinte comando no prompt de comando:
 
 **wecutil es**
 
@@ -26,24 +26,24 @@ Para listar as assinaturas atuais em um computador local, você pode usar o exem
 >
 > Você pode usar este exemplo para remover uma origem de evento de uma assinatura iniciada pelo coletor ou pode digitar o seguinte comando no prompt de comando:
 >
-> **wecutil SS** *subscriptionname*  * */ESA: * * * EventSourceAddress* **/res**
+> **wecutil ss** *SubscriptionName* **/esa:**_EventSourceAddress_ **/res**
 >
 > *EventSourceAddress* pode ser localhost para o computador local ou um nome de domínio totalmente qualificado para um computador remoto.
 
- 
+ 
 
 Este exemplo segue uma série de etapas para remover uma origem de evento de uma assinatura iniciada pelo coletor.
 
-**Para remover uma origem do evento de uma assinatura iniciada pelo coletor**
+**Para remover uma origem de evento de uma assinatura iniciada pelo coletor**
 
-1.  Abra a assinatura existente fornecendo o nome da assinatura e os direitos de acesso como parâmetros para a função [**EcOpenSubscription**](/windows/desktop/api/Evcoll/nf-evcoll-ecopensubscription) . Para obter mais informações sobre direitos de acesso, consulte as [**constantes do coletor de eventos do Windows**](windows-event-collector-constants.md).
-2.  Obtenha a matriz de fontes de eventos da assinatura chamando a função [**EcGetSubscriptionProperty**](/windows/desktop/api/Evcoll/nf-evcoll-ecgetsubscriptionproperty) . Para obter mais informações sobre as propriedades de assinatura que podem ser recuperadas, consulte a enumeração de [**ID de propriedade da assinatura do EC \_ \_ \_**](/windows/desktop/api/Evcoll/ne-evcoll-ec_subscription_property_id) .
-3.  Pesquise a origem do evento especificado na matriz origens do evento da assinatura chamando a função [**EcGetObjectArrayProperty**](/windows/desktop/api/Evcoll/nf-evcoll-ecgetobjectarrayproperty) . O valor da propriedade **EcSubscriptionEventSourceAddress** será localhost para o computador local ou será um nome de domínio totalmente qualificado para um computador remoto. Para obter mais informações sobre as propriedades de origem do evento que podem ser recuperadas, consulte a enumeração da **ID de propriedade da assinatura do EC \_ \_ \_** .
-4.  Exclua a origem do evento da assinatura chamando a função [**EcRemoveObjectArrayElement**](/windows/desktop/api/Evcoll/nf-evcoll-ecremoveobjectarrayelement) .
-5.  Salve a assinatura chamando a função [**EcSaveSubscription**](/windows/desktop/api/Evcoll/nf-evcoll-ecsavesubscription) .
-6.  Feche a assinatura chamando a função [**EcClose**](/windows/desktop/api/Evcoll/nf-evcoll-ecclose) .
+1.  Abra a assinatura existente fornecendo o nome da assinatura e os direitos de acesso como parâmetros para a [**função EcOpenSubscription.**](/windows/desktop/api/Evcoll/nf-evcoll-ecopensubscription) Para obter mais informações sobre direitos de acesso, [**consulte constantes Windows coletor de eventos**](windows-event-collector-constants.md).
+2.  Obter a matriz de fontes de evento da assinatura chamando a [**função EcGetSubscriptionProperty.**](/windows/desktop/api/Evcoll/nf-evcoll-ecgetsubscriptionproperty) Para obter mais informações sobre as propriedades de assinatura que podem ser recuperadas, consulte a enumeração [**\_ \_ \_ ID da PROPRIEDADE DA**](/windows/desktop/api/Evcoll/ne-evcoll-ec_subscription_property_id) ASSINATURA ec.
+3.  Pesquise a origem do evento especificada na matriz de fontes de eventos da assinatura chamando a [**função EcGetObjectArrayProperty.**](/windows/desktop/api/Evcoll/nf-evcoll-ecgetobjectarrayproperty) O valor da propriedade **EcSubscriptionEventSourceAddress** será Localhost para o computador local ou será um nome de domínio totalmente qualificado para um computador remoto. Para obter mais informações sobre as propriedades de origem do evento que podem ser recuperadas, consulte a enumeração **\_ \_ \_ ID da PROPRIEDADE DA ASSINATURA** DE EC.
+4.  Exclua a origem do evento da assinatura chamando a [**função EcRemoveObjectArrayElement.**](/windows/desktop/api/Evcoll/nf-evcoll-ecremoveobjectarrayelement)
+5.  Salve a assinatura chamando a [**função EcSaveSubscription.**](/windows/desktop/api/Evcoll/nf-evcoll-ecsavesubscription)
+6.  Feche a assinatura chamando a [**função EcClose.**](/windows/desktop/api/Evcoll/nf-evcoll-ecclose)
 
-O exemplo de código C++ a seguir mostra como remover uma origem do evento de uma assinatura do coletor de eventos.
+O exemplo de código C++ a seguir mostra como remover uma origem de evento de uma assinatura do Coletor de Eventos.
 
 
 ```C++
@@ -325,12 +325,12 @@ DWORD GetEventSourceProperty(EC_OBJECT_ARRAY_PROPERTY_HANDLE hArray,
 [Listando assinaturas do coletor de eventos](listing-event-collector-subscriptions.md)
 </dt> <dt>
 
-[Referência do coletor de eventos do Windows](windows-event-collector-reference.md)
+[Windows Referência do coletor de eventos](windows-event-collector-reference.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

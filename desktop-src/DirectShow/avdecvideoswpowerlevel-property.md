@@ -1,21 +1,21 @@
 ---
 description: Especifica o nível de economia de energia de um decodificador de vídeo.
 ms.assetid: 7e2ff8be-b21f-4833-a165-0112d4220677
-title: Propriedade AVDecVideoSWPowerLevel (Codecapi. h)
+title: Propriedade AVDecVideoSWPowerLevel (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1196c45cf038085856b1d63a5cd3a1c7dc350d0d
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: a7c362e066a16e333cda402704a720b5e1b0b8534f1b56536d32009e6fa29663
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105756833"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117824216"
 ---
 # <a name="avdecvideoswpowerlevel-property"></a>Propriedade AVDecVideoSWPowerLevel
 
 Especifica o nível de economia de energia de um decodificador de vídeo.
 
-Esta propriedade é de leitura/gravação.
+Essa propriedade é leitura/gravação.
 
 ## <a name="data-type"></a>Tipo de dados
 
@@ -27,7 +27,7 @@ Esta propriedade é de leitura/gravação.
 
 ## <a name="property-value"></a>Valor da propriedade
 
-O intervalo de valores possíveis é \[ 0.. 100 \] , inclusive, com o significado a seguir.
+O intervalo de valores possíveis \[ é 0,.100 \] , inclusive, com o seguinte significado.
 
 
 
@@ -40,7 +40,7 @@ O intervalo de valores possíveis é \[ 0.. 100 \] , inclusive, com o significad
 
  
 
-A enumeração [**eAVDecVideoSWPowerLevel**](/windows/desktop/api/codecapi/ne-codecapi-eavdecvideoswpowerlevel) define algumas constantes específicas dentro desse intervalo.
+A [**enumeração eAVDecVideoSWPowerLevel**](/windows/desktop/api/codecapi/ne-codecapi-eavdecvideoswpowerlevel) define algumas constantes específicas dentro desse intervalo.
 
 ## <a name="remarks"></a>Comentários
 
@@ -52,9 +52,9 @@ Você pode definir essa propriedade durante a reprodução para alterar o nível
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Aplicativos do Windows 2000 Professional \[ Desktop aplicativos \| UWP\]<br/>                     |
-| Servidor mínimo com suporte<br/> | Aplicativos da área de trabalho do Windows 2000 Server aplicativos \[ \| UWP\]<br/>                           |
-| parâmetro<br/>                   | <dl> <dt>Codecapi. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 2000 Professional \[ aplicativos UWP da área de \| trabalho\]<br/>                     |
+| Servidor mínimo com suporte<br/> | Windows aplicativos da área de trabalho do servidor 2000 \[ \| aplicativos UWP\]<br/>                           |
+| Cabeçalho<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
@@ -62,10 +62,10 @@ Você pode definir essa propriedade durante a reprodução para alterar o nível
 
 <dl> <dt>
 
-[Propriedades da API do codec](codec-api-properties.md)
+[Propriedades da API do Codec](codec-api-properties.md)
 </dt> <dt>
 
-[**Interface ICodecAPI**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)
+[**ICodecAPI Interface**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)
 </dt> </dl>
 
  

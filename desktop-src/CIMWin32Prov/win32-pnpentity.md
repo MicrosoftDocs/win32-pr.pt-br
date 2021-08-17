@@ -758,12 +758,12 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [ **Chave CIM \_**](../wmisdk/standard-wmi-qualifiers.md)
+Qualificadores: [ **\_ chave CIM**](../wmisdk/standard-wmi-qualifiers.md)
 </dt> </dl>
 
-Nome da primeira classe concreta a ser exibida na cadeia de herança usada na criação de uma instância. Quando usada com as outras propriedades de chave da classe , a propriedade permite que todas as instâncias dessa classe e suas subclasses sejam identificadas exclusivamente.
+Nome da primeira classe concreta a ser exibida na cadeia de herança usada na criação de uma instância. Quando usado com as outras propriedades de chave da classe, a propriedade permite que todas as instâncias dessa classe e suas subclasses sejam identificadas exclusivamente.
 
-Essa propriedade é herdada de [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
+Essa propriedade é herdada [**de \_ LogicalDevice CIM**](cim-logicaldevice.md).
 
 </dd> <dt>
 
@@ -781,11 +781,11 @@ Qualificadores: [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Descriçã
 
 Descrição do objeto.
 
-Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
+Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
 
 </dd> <dt>
 
-**Deviceid**
+**DeviceID**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
@@ -794,27 +794,27 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**Key**](../wmisdk/key-qualifier.md), [**Override**](../wmisdk/standard-qualifiers.md) ("DeviceId"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WMI")
+Qualificadores: [**Key**](../wmisdk/key-qualifier.md), [**override**](../wmisdk/standard-qualifiers.md) ("DeviceID"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WMI")
 </dt> </dl>
 
-Identificador do dispositivo Plug and Play dispositivo.
+Identificador do dispositivo de Plug and Play.
 
-Essa propriedade é herdada de [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
+Essa propriedade é herdada [**de \_ LogicalDevice CIM**](cim-logicaldevice.md).
 
 </dd> <dt>
 
 **ErrorCleared**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliana**
+Tipo de dados: **booliano**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Se **TRUE**, o erro relatado em **LastErrorCode** agora será limpo.
+Se **for true**, o erro relatado em **LastErrorCode** agora será limpo.
 
-Essa propriedade é herdada de [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
+Essa propriedade é herdada [**de \_ LogicalDevice CIM**](cim-logicaldevice.md).
 
 </dd> <dt>
 
@@ -827,79 +827,79 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Mais informações sobre o erro registrado em **LastErrorCode** e informações sobre as ações corretivas que podem ser tomadas.
+Mais informações sobre o erro registrado em **LastErrorCode** e informações sobre as ações corretivas que podem ser executadas.
 
-Essa propriedade é herdada de [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
+Essa propriedade é herdada [**de \_ LogicalDevice CIM**](cim-logicaldevice.md).
 
 </dd> <dt>
 
 **HardwareID**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: matriz **de cadeia de** caracteres
+Tipo de dados: matriz de **cadeia de caracteres**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Uma cadeia de caracteres de identificação definida pelo fornecedor que a Instalação usa para corresponder um dispositivo a um arquivo INF. Normalmente, um dispositivo tem uma lista associada de IDs de hardware. Uma exceção é o driver de barramento 1394, que não usa IDs de hardware. A primeira ID de hardware na lista deve ser a ID do dispositivo. As IDs restantes devem ser listadas em ordem de diminuição da adequação.
+Uma cadeia de caracteres de identificação definida pelo fornecedor que a instalação usa para corresponder a um dispositivo em um arquivo INF. Normalmente, um dispositivo tem uma lista associada de IDs de hardware. Uma exceção é o driver de barramento 1394, que não usa IDs de hardware. A primeira ID de hardware na lista deve ser a ID do dispositivo. As IDs restantes devem ser listadas para diminuir a adequação.
 
 As IDs de hardware aparecem em um dos seguintes formatos:
 
--   enumerador \\ específico do enumerador-device-ID
+-   \\enumerador de enumerador-específico-Device-ID
 
-    Esse é o formato mais comum para dispositivos PnP individuais. Um exemplo de um enumerador é o BIOS ou ISAPNP.
+    Esse é o formato mais comum para dispositivos PnP individuais. Um exemplo de um enumerador é o BIOS ou o ISAPNP.
 
 -   \*ID específica do enumerador
 
-    Um asterisco ( \* ) indica o uso por mais de um enumerador.
+    Um asterisco ( \* ) indica uso por mais de um enumerador.
 
--   ID específica da classe de dispositivo
+-   ID específica de classe de dispositivo
 
     Um formato personalizado.
 
-Exemplos de IDs de hardware são:
+Exemplos de IDs de hardware:
 
-<dl> <dd>\\ \* PNPOF08 raiz</dd> <dd>PC \\ VEN \_ 1000&DEV \_ 001&SUBSYS \_ 000000000&REV \_ 02</dd> </dl>
+<dl> <dd>\\ \* PNPOF08 raiz</dd> <dd>PC \\ VEN \_ 1000&DEV \_ 001&subsis \_ 00000000&rev \_ 02</dd> </dl>
 
-Para obter mais informações, consulte o [Windows Driver Kit](https://developer.microsoft.com/windows/hardware/download-kits-windows-hardware-development).
+para obter mais informações, consulte o [Windows Driver Kit](https://developer.microsoft.com/windows/hardware/download-kits-windows-hardware-development).
 
 </dd> <dt>
 
 **InstallDate**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **datetime**
+Tipo de dados: **DateTime**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("MIF. DMTF \| ComponentID \| 001.5"), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Data de instalação")
+Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("MIF. \|Componente DMTF \| 1,5 "), [**DisplayName**](../wmisdk/standard-qualifiers.md) (" data de instalação ")
 </dt> </dl>
 
 Data e hora em que o objeto foi instalado. Essa propriedade não precisa de um valor para indicar que o objeto está instalado.
 
-Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
+Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
 
 </dd> <dt>
 
 **LastErrorCode**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **uint32**
+Tipo de dados: **UInt32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Último código de erro relatado pelo dispositivo lógico.
+Código do último erro relatado pelo dispositivo lógico.
 
-Essa propriedade é herdada de [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
+Essa propriedade é herdada [**de \_ LogicalDevice CIM**](cim-logicaldevice.md).
 
 </dd> <dt>
 
-**Fabricante**
+**Manufacturer**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
@@ -911,7 +911,7 @@ Tipo de acesso: Somente leitura
 Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WMI")
 </dt> </dl>
 
-Nome do fabricante do Plug and Play dispositivo.
+Nome do fabricante do dispositivo de Plug and Play.
 
 Exemplo: "Acme"
 
@@ -926,12 +926,12 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Nome")
+Qualificadores: [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Name")
 </dt> </dl>
 
-Rótulo pelo qual o objeto é conhecido. Quando subclasse, a propriedade pode ser substituído para ser uma propriedade de chave.
+Rótulo pelo qual o objeto é conhecido. Quando em uma subclasse, a propriedade pode ser substituída para ser uma propriedade de chave.
 
-Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
+Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
 
 </dd> <dt>
 
@@ -948,13 +948,13 @@ Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WMI")
 </dt> </dl>
 
 > [!WARNING]
-> Essa propriedade, apesar de estar listada no arquivo MOF, não existe realmente na classe . A propriedade é descrita aqui apenas para a conclusão e para esclarecer o próprio arquivo MOF.
+> Essa propriedade, apesar de estar listada no arquivo MOF, na verdade não existe na classe. A propriedade é descrita aqui apenas para fins de integridade e para esclarecer o próprio arquivo MOF.
 
  
 
-O nome do tipo desse Plug and Play dispositivo.
+O nome do tipo deste Plug and Play dispositivo.
 
-**Windows Server 2012 R2, Windows 8.1, Windows Server 2012, Windows 8, Windows Server 2008 R2, Windows 7, Windows Server 2008** e Windows Vista: Essa propriedade não está no arquivo MOF.
+**Windows Server 2012 r2, Windows 8.1, Windows Server 2012, Windows 8, Windows server 2008 R2, Windows 7, Windows server 2008 e Windows Vista:** Essa propriedade não está no arquivo MOF.
 
 </dd> <dt>
 
@@ -970,9 +970,9 @@ Tipo de acesso: Somente leitura
 Qualificadores: [**esquema**](../wmisdk/standard-qualifiers.md) ("Win32")
 </dt> </dl>
 
-Windows Plug and Play identificador de dispositivo lógico do dispositivo lógico.
+Windows Plug and Play identificador do dispositivo lógico.
 
-Essa propriedade é herdada de [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
+Essa propriedade é herdada [**de \_ LogicalDevice CIM**](cim-logicaldevice.md).
 
 Exemplo: " \* PNP030b"
 
@@ -981,7 +981,7 @@ Exemplo: " \* PNP030b"
 **PowerManagementCapabilities**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **matriz uint16**
+Tipo de dados: a matriz **UInt16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -989,7 +989,7 @@ Tipo de acesso: Somente leitura
 
 Não implementado.
 
-Essa propriedade é herdada de [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
+Essa propriedade é herdada [**de \_ LogicalDevice CIM**](cim-logicaldevice.md).
 
 <dt>
 
@@ -1000,7 +1000,7 @@ Essa propriedade é herdada de [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
 
 </dt> <dd>
 
-As capacidades relacionadas a energia são desconhecidas.
+As capacidades relacionadas à energia são desconhecidas.
 
 </dd> <dt>
 
@@ -1022,7 +1022,7 @@ Não há suporte para capacidades relacionadas a energia para este dispositivo.
 
 </dt> <dd>
 
-Capacidades relacionadas a energia foram desabilitadas.
+As capacidades relacionadas à energia foram desabilitadas.
 
 </dd> <dt>
 
@@ -1050,34 +1050,34 @@ O dispositivo pode alterar seu estado de energia com base no uso ou em outros cr
 
 <span id="Power_State_Settable"></span><span id="power_state_settable"></span><span id="POWER_STATE_SETTABLE"></span>
 
-<span id="Power_State_Settable"></span><span id="power_state_settable"></span><span id="POWER_STATE_SETTABLE"></span>**Power State Settable** (5)
+<span id="Power_State_Settable"></span><span id="power_state_settable"></span><span id="POWER_STATE_SETTABLE"></span>**Estado de energia configurável** (5)
 
 
 </dt> <dd>
 
-Há suporte para o método **SetPowerState.** Esse método é encontrado na classe [**\_ LogicalDevice cim**](cim-logicaldevice.md) pai e pode ser implementado. Para obter mais informações, consulte [Designando classes Managed Object Format (MOF).](../wmisdk/designing-managed-object-format--mof--classes.md)
+Há suporte para o método **SetPowerState** . Esse método é encontrado na classe pai [**de \_ LogicalDevice CIM**](cim-logicaldevice.md) e pode ser implementado. Para obter mais informações, consulte [Designing formato MOF (MOF) classes](../wmisdk/designing-managed-object-format--mof--classes.md).
 
 </dd> <dt>
 
 <span id="Power_Cycling_Supported"></span><span id="power_cycling_supported"></span><span id="POWER_CYCLING_SUPPORTED"></span>
 
-<span id="Power_Cycling_Supported"></span><span id="power_cycling_supported"></span><span id="POWER_CYCLING_SUPPORTED"></span>**Power Cycling com suporte** (6)
+<span id="Power_Cycling_Supported"></span><span id="power_cycling_supported"></span><span id="POWER_CYCLING_SUPPORTED"></span>**Ciclo de energia com suporte** (6)
 
 
 </dt> <dd>
 
-O **método SetPowerState** pode ser invocado com o *parâmetro PowerState* definido como 5 ("Power Cycle").
+O método **SetPowerState** pode ser invocado com o parâmetro *PowerState* definido como 5 ("ciclo de energia").
 
 </dd> <dt>
 
 <span id="Timed_Power_On_Supported"></span><span id="timed_power_on_supported"></span><span id="TIMED_POWER_ON_SUPPORTED"></span>
 
-<span id="Timed_Power_On_Supported"></span><span id="timed_power_on_supported"></span><span id="TIMED_POWER_ON_SUPPORTED"></span>**Energia com tempo de energia com suporte** (7)
+<span id="Timed_Power_On_Supported"></span><span id="timed_power_on_supported"></span><span id="TIMED_POWER_ON_SUPPORTED"></span>**Energia cronometrada com suporte** (7)
 
 
 </dt> <dd>
 
-O **método SetPowerState** pode ser invocado com o parâmetro *PowerState*  definido como 5 ("Power Cycle") e o parâmetro Time definido como uma data e hora específicas, ou intervalo, para o power-on.
+O método **SetPowerState** pode ser invocado com o parâmetro *PowerState* definido como 5 ("ciclo de energia") e o parâmetro de *hora* definido como uma data e hora e um intervalo específicos para o Power-on.
 
 </dd> </dl>
 
@@ -1086,7 +1086,7 @@ O **método SetPowerState** pode ser invocado com o parâmetro *PowerState*  def
 **PowerManagementSupported**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliana**
+Tipo de dados: **booliano**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -1094,14 +1094,14 @@ Tipo de acesso: Somente leitura
 
 Não implementado.
 
-Essa propriedade é herdada de [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
+Essa propriedade é herdada [**de \_ LogicalDevice CIM**](cim-logicaldevice.md).
 
 </dd> <dt>
 
 **Presente**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliana**
+Tipo de dados: **booliano**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -1110,9 +1110,9 @@ Tipo de acesso: Somente leitura
 Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WMI")
 </dt> </dl>
 
-Se esse Plug and Play dispositivo está atualmente no sistema.
+Se este Plug and Play dispositivo está atualmente no sistema.
 
-**Windows Server 2012 R2, Windows 8.1, Windows Server 2012, Windows 8, Windows Server 2008 R2, Windows 7, Windows Server 2008** e Windows Vista: Não há suporte para essa propriedade.
+**Windows Server 2012 r2, Windows 8.1, Windows Server 2012, Windows 8, Windows server 2008 R2, Windows 7, Windows server 2008 e Windows Vista:** Não há suporte para essa propriedade.
 
 </dd> <dt>
 
@@ -1128,9 +1128,9 @@ Tipo de acesso: Somente leitura
 Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WMI")
 </dt> </dl>
 
-Nome do serviço que dá suporte a esse Plug and Play dispositivo. Para obter mais informações, [**consulte Win32 \_ SystemDriverPnPEntity**](win32-systemdriverpnpentity.md).
+Nome do serviço que dá suporte a este Plug and Play dispositivo. Para obter mais informações, consulte [**Win32 \_ SystemDriverPnPEntity**](win32-systemdriverpnpentity.md).
 
-Exemplo: "atapi"
+Exemplo: "ATAPI"
 
 </dd> <dt>
 
@@ -1143,12 +1143,12 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MaxLen**](../wmisdk/standard-qualifiers.md) (10), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Status")
+Qualificadores: [**maxlen**](../wmisdk/standard-qualifiers.md) (10), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("status")
 </dt> </dl>
 
-Status atual do objeto. Vários status operacionais e não operacionais podem ser definidos. Os status operacionais incluem: "OK", "Degradado" e "Pred Fail" (um elemento, como uma unidade de disco rígido habilitada para SMART, pode estar funcionando corretamente, mas prevendo uma falha em um futuro próximo). Os status nãooperacionais incluem: "Error", "Starting", "Stopping" e "Service". O último, "Serviço", pode ser aplicado durante o espelhamento de um disco, o recarregamento de uma lista de permissões de usuário ou outro trabalho administrativo. Nem todo esse trabalho está online, mas o elemento gerenciado não é "OK" nem em um dos outros estados.
+Status atual do objeto. Vários status de operação e não operacional podem ser definidos. Os status operacionais incluem: "OK", "degradado" e "Pred falha" (um elemento, como uma unidade de disco rígido habilitado para inteligente, pode estar funcionando corretamente, mas prevendo uma falha em um futuro próximo). Os status não operacionais incluem: "erro", "Iniciando", "parando" e "serviço". O último, "Service", pode ser aplicado durante o espelhamento de espelho de um disco, recarregar uma lista de permissões de usuário ou outro trabalho administrativo. Nem todo esse trabalho está online, mas o elemento gerenciado não é "OK" nem em um dos outros Estados.
 
-Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
+Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
 
 Os valores incluem o seguinte:
 
@@ -1163,28 +1163,28 @@ Os valores incluem o seguinte:
 
 <span id="Error"></span><span id="error"></span><span id="ERROR"></span>
 
-**Erro** ("Erro")
+**Erro** ("erro")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Degraded"></span><span id="degraded"></span><span id="DEGRADED"></span>
 
-**Degradado** ("Degradado")
+**Degradado** ("degradado")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>
 
-**Desconhecido** ("Desconhecido")
+**Desconhecido** ("desconhecido")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Pred_Fail"></span><span id="pred_fail"></span><span id="PRED_FAIL"></span>
 
-**Pred Fail** ("Pred Fail")
+**Falha de Pred** ("Pred Fail")
 
 
 </dt> <dd></dd> <dt>
@@ -1198,42 +1198,42 @@ Os valores incluem o seguinte:
 
 <span id="Stopping"></span><span id="stopping"></span><span id="STOPPING"></span>
 
-**Parando** ("Parando")
+**Parando** ("parando")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Service"></span><span id="service"></span><span id="SERVICE"></span>
 
-**Serviço** ("Serviço")
+**Serviço** ("serviço")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Stressed"></span><span id="stressed"></span><span id="STRESSED"></span>
 
-**Stressed** ("Stressed")
+**Sob estresse** ("sob estresse")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="NonRecover"></span><span id="nonrecover"></span><span id="NONRECOVER"></span>
 
-**NonRecover** ("NonRecover")
+Não **recuperar** ("Recover")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="No_Contact"></span><span id="no_contact"></span><span id="NO_CONTACT"></span>
 
-**Sem contato** ("Sem contato")
+**Sem contato** ("sem contato")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Lost_Comm"></span><span id="lost_comm"></span><span id="LOST_COMM"></span>
 
-**Perda de vírgula** ("comm perdida")
+**Perda de comunicação** ("perda de comunicação")
 
 
 </dt> <dd></dd> </dl>
@@ -1243,24 +1243,24 @@ Os valores incluem o seguinte:
 **StatusInfo**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **uint16**
+Tipo de dados: **UInt16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("MIF. Estado Operacional DMTF \| \| 003.3")
+Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("MIF. \|Estado operacional da DMTF \| 3,3 ")
 </dt> </dl>
 
-Estado do dispositivo lógico. Se essa propriedade não se aplicar ao dispositivo lógico, o valor 5 (Não Aplicável) deverá ser usado.
+Estado do dispositivo lógico. Se essa propriedade não se aplicar ao dispositivo lógico, o valor 5 (não aplicável) deverá ser usado.
 
-Essa propriedade é herdada de [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
+Essa propriedade é herdada [**de \_ LogicalDevice CIM**](cim-logicaldevice.md).
 
 <dt>
 
 <span id="Other"></span><span id="other"></span><span id="OTHER"></span>
 
-**Outros** (1)
+**Outro** (1)
 
 
 </dt> <dd></dd> <dt>
@@ -1304,16 +1304,16 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**propagados**](../wmisdk/standard-qualifiers.md) ("[**Sistema CIM \_**](cim-system.md).**CreationClassName**"), [**chave CIM \_**](../wmisdk/standard-wmi-qualifiers.md)
+Qualificadores: [**propagados**](../wmisdk/standard-qualifiers.md) ([**" \_ sistema CIM**](cim-system.md).**CreationClassName**"), [**\_ chave CIM**](../wmisdk/standard-wmi-qualifiers.md)
 </dt> </dl>
 
-Valor da propriedade **CreationClassName** do computador de definição de tela.
+Valor da propriedade **CreationClassName** do computador de escopo.
 
-Essa propriedade é herdada de [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
+Essa propriedade é herdada [**de \_ LogicalDevice CIM**](cim-logicaldevice.md).
 
 </dd> <dt>
 
-**Systemname**
+**SystemName**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
@@ -1322,24 +1322,24 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**propagados**](../wmisdk/standard-qualifiers.md) ("[**Sistema CIM \_**](cim-system.md).**Nome**"), [**Chave CIM \_**](../wmisdk/standard-wmi-qualifiers.md)
+Qualificadores: [**propagados**](../wmisdk/standard-qualifiers.md) ([**" \_ sistema CIM**](cim-system.md).**Name**"), [**\_ chave CIM**](../wmisdk/standard-wmi-qualifiers.md)
 </dt> </dl>
 
-Nome do sistema de scoping.
+Nome do sistema de escopo.
 
-Essa propriedade é herdada de [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
+Essa propriedade é herdada [**de \_ LogicalDevice CIM**](cim-logicaldevice.md).
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-A **classe Win32 \_ PnPEntity** é derivada de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
+A classe **Win32 \_ PnPEntity** é derivada do [**\_ LogicalDevice CIM**](cim-logicaldevice.md).
 
 ## <a name="examples"></a>Exemplos
 
-O [Get-BrokenHardware.ps1](https://Gallery.TechNet.Microsoft.Com/dbb678f4-b95b-45c3-bc8b-2ae2d052448e) exemplo do PowerShell na Galeria do TechNet usa **o Win32 \_ PnPEntity** para recuperar uma lista de hardwares que não estão funcionando usando o WMI.
+A amostra do [Get-BrokenHardware.ps1](https://Gallery.TechNet.Microsoft.Com/dbb678f4-b95b-45c3-bc8b-2ae2d052448e) PowerShell na galeria do TechNet usa o **Win32 \_ PnPEntity** para recuperar uma lista de hardwares que não funciona usando o WMI.
 
-O exemplo de código VBScript a seguir se conecta a um grupo de computadores remotos no mesmo domínio criando uma matriz de nomes de computador remotos e, em seguida, exibindo nomes dos dispositivos Plug and Play — instâncias do Win32 PnPEntity — em \_ cada computador.
+O exemplo de código VBScript a seguir se conecta a um grupo de computadores remotos no mesmo domínio criando uma matriz de nomes de computador remoto e, em seguida, exibindo os nomes dos dispositivos Plug and Play — instâncias do Win32 \_ PnPEntity — em cada computador.
 
 
 ```VB
@@ -1375,8 +1375,8 @@ Next
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| Namespace<br/>                | RAIZ \\ CIMV2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
+| Namespace<br/>                | Raiz \\ cimv2<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -1385,7 +1385,7 @@ Next
 
 <dl> <dt>
 
-[**CIM \_ LogicalDevice**](cim-logicaldevice.md)
+[**\_LOGICALDEVICE CIM**](cim-logicaldevice.md)
 </dt> <dt>
 
 [Classes de hardware do sistema de computador](computer-system-hardware-classes.md)
@@ -1394,7 +1394,7 @@ Next
 [Conectando-se ao WMI em um computador remoto](../wmisdk/connecting-to-wmi-on-a-remote-computer.md)
 </dt> <dt>
 
-[Tarefas WMI: Hardware do Computador](../wmisdk/wmi-tasks--computer-hardware.md)
+[Tarefas do WMI: hardware do computador](../wmisdk/wmi-tasks--computer-hardware.md)
 </dt> </dl>
 
  

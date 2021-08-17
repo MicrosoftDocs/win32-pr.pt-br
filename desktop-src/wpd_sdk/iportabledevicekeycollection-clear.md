@@ -14,12 +14,12 @@ api_type:
 api_location:
 - PortableDeviceGUIDs.lib
 - PortableDeviceGUIDs.dll
-ms.openlocfilehash: 9e5efb8b3784b9ddc04a9e28a83c39ef75d723b3
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 0c1cf89a3898722b846ed34c40b639dcd9e9f1f4be372d344fdd25e424f39f4b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108106804"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118194495"
 ---
 # <a name="iportabledevicekeycollectionclear-method"></a>Método IPortableDeviceKeyCollection:: Clear
 
@@ -63,7 +63,7 @@ O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limita�
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

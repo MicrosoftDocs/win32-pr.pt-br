@@ -1,7 +1,7 @@
 ---
-description: A tabela a seguir descreve \_ as opções sol de soquete do AppleTalk que se aplicam aos soquetes criados para a família de endereços AppleTalk (AF \_ AppleTalk).
+description: A tabela a seguir descreve as opções de soquete SOL APPLETALK que se aplicam a soquetes criados para a família de \_ endereços AppleTalk (AF \_ APPLETALK).
 ms.assetid: 1a6b18e3-1fea-4ba2-8076-c38e7f679e9e
-title: Opções de soquete SOL_APPLETALK (Atalkwsh. h)
+title: SOL_APPLETALK opções de soquete (Atalkwsh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,51 +14,51 @@ api_type:
 - HeaderDef
 api_location:
 - Atalkwsh.h
-ms.openlocfilehash: 146cfa02706cc9a2669cf21ba6d9eac0ac74ee4d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5ea45b4007a3bd36d2cfbceda5b7ec4f2cff20d9bb2387fb2d184710a8a4492c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105764158"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117740003"
 ---
-# <a name="sol_appletalk-socket-options"></a>Opções de soquete de SOL \_
+# <a name="sol_appletalk-socket-options"></a>Opções \_ de soquete SOL APPLETALK
 
-A tabela a seguir descreve as opções sol de soquete do **\_ AppleTalk** que se aplicam aos soquetes criados para a família de endereços AppleTalk (AF \_ AppleTalk). Consulte as páginas de referência de função [**getsockopt**](/windows/desktop/api/winsock/nf-winsock-getsockopt) e [**setsockopt**](/windows/desktop/api/winsock/nf-winsock-setsockopt) para obter mais informações sobre como obter e definir opções de soquete.
+A tabela a seguir descreve as opções de soquete **SOL \_ APPLETALK** que se aplicam a soquetes criados para a família de endereços AppleTalk (AF \_ APPLETALK). Consulte as páginas de referência da função [**getsockopt**](/windows/desktop/api/winsock/nf-winsock-getsockopt) e [**setsockopt**](/windows/desktop/api/winsock/nf-winsock-setsockopt) para obter mais informações sobre como obter e definir opções de soquete.
 
-Para enumerar protocolos e descobrir Propriedades com suporte para cada protocolo instalado, use a função [**WSAEnumProtocols**](/windows/desktop/api/Winsock2/nf-winsock2-wsaenumprotocolsa), [**WSCEnumProtocols**](/windows/desktop/api/Ws2spi/nf-ws2spi-wscenumprotocols)ou [**WSCEnumProtocols32**](/windows/desktop/api/Ws2spi/nf-ws2spi-wscenumprotocols32) .
+Para enumerar protocolos e descobrir propriedades com suporte para cada protocolo instalado, use a função [**WSAEnumProtocols**](/windows/desktop/api/Winsock2/nf-winsock2-wsaenumprotocolsa), [**WSCEnumProtocols**](/windows/desktop/api/Ws2spi/nf-ws2spi-wscenumprotocols)ou [**WSCEnumProtocols32.**](/windows/desktop/api/Ws2spi/nf-ws2spi-wscenumprotocols32)
 
-<dl> <dt><span id="SOL_APPLETALK_Socket_Options"></span><span id="sol_appletalk_socket_options"></span><span id="SOL_APPLETALK_SOCKET_OPTIONS"></span>**Opções de soquete de SOL \_**</dt> <dd> <dl> <dt> 
+<dl> <dt><span id="SOL_APPLETALK_Socket_Options"></span><span id="sol_appletalk_socket_options"></span><span id="SOL_APPLETALK_SOCKET_OPTIONS"></span>**Opções \_ de soquete SOL APPLETALK**</dt> <dd> <dl> <dt> 
 
-| Opção                          | Obter | Definir | Tipo de optval                          | Descrição                                                                                                                                                                                          |
+| Opção                          | Obter | Definir | Tipo de aceitação                          | Descrição                                                                                                                                                                                          |
 |---------------------------------|-----|-----|--------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Portanto, \_ confirme o \_ nome               | sim |     | **\_tupla de NBP do WSH \_**                  | Confirma que um determinado nome AppleTalk está associado ao endereço fornecido.                                                                                                                                  |
-| Então, \_ DESREGISTRE o \_ nome            |     | sim | **\_nome do registro do WSH \_**              | Cancela o registro do nome da rede.                                                                                                                                                               |
-| \_GETLOCALZONES               | sim |     | **\_zonas de pesquisa do WSH \_**               | Retorna uma lista de nomes de zona conhecida pelo nome de adaptador fornecido.                                                                                                                                        |
-| \_GETMYZONE                   | sim |     | º \[\]                            | Retorna a zona padrão na rede.                                                                                                                                                             |
-| \_GETNETINFO                  | sim |     | **o WSH \_ pesquisa \_ NETDEF \_ no \_ adaptador** | Retorna os valores propagados para a rede, bem como a zona padrão. O parâmetro *optlen* deve ser pelo menos um byte maior do que o tamanho da **consulta do WSH \_ \_ na estrutura \_ do \_ adaptador** .  |
-| Então \_ GETzonelist                 | sim |     | **\_zonas de pesquisa do WSH \_**               | Retorna nomes de zona da lista de zona da Internet. O parâmetro *optlen* deve ser pelo menos um byte maior que o tamanho da estrutura **de \_ \_ zonas de pesquisa do WSH** .                                       |
-| Portanto, \_ pesquise \_ MyZone              | sim |     |                                      | O mesmo que \_ GETMYZONE                                                                                                                                                                                |
-| Então \_ , \_ nome da pesquisa                | sim |     | **\_nome de pesquisa do WSH \_**                | Pesquisa um nome de NBP especificado e retorna as tuplas correspondentes de informações de nome e NBP. O parâmetro *optlen* deve ser pelo menos um byte maior que o tamanho da estrutura do \_ nome de pesquisa do WSH \_ . |
-| Então, \_ pesquise o \_ NETDEF \_ no \_ adaptador | sim |     | **o WSH \_ pesquisa \_ NETDEF \_ no \_ adaptador** | O mesmo que \_ GETNETINFO.                                                                                                                                                                              |
-| Portanto \_ , \_ zonas de pesquisa               | sim |     | **\_zonas de pesquisa do WSH \_**               | O mesmo que \_ GETzonelist.                                                                                                                                                                             |
-| Portanto \_ , \_ zonas \_ de pesquisa no \_ adaptador  | sim |     | **\_zonas de pesquisa do WSH \_**               | O mesmo que \_ GETLOCALZONES.                                                                                                                                                                           |
-| Portanto, o \_ PAP \_ Obtém o \_ status do servidor \_    | sim |     | **\_ \_ \_ status do servidor Get PAP do WSH \_**    | Retorna o status do PAP de um determinado servidor                                                                                                                                                           |
-| Portanto \_ , \_ Leia a linha PAP \_            |     | sim | º \[\]                            | Essa chamada Prime uma leitura em uma conexão PAP para que o remetente possa começar a enviar os dados                                                                                                                 |
-| Portanto \_ , \_ defina o \_ status do servidor do PAP \_    |     | sim | º \[\]                            | Define o status a ser enviado se outro cliente solicitar o status                                                                                                                                     |
-| Portanto \_ , \_ nome do registro              |     | sim | **\_nome do registro do WSH \_**              | Registra o nome fornecido na rede AppleTalk                                                                                                                                                    |
-| Então, \_ Remover \_ nome                |     | sim | **\_nome do registro do WSH \_**              | O mesmo que \_ o nome de CANcelamento de registro \_                                                                                                                                                                         |
+| PORTANTO, \_ CONFIRME \_ O NOME               | sim |     | **TUPLA \_ NBP do WSH \_**                  | Confirma se um determinado nome do AppleTalk está vinculado ao endereço determinado.                                                                                                                                  |
+| PORTANTO, \_ NOME DO REGISTRO \_            |     | sim | **NOME DO REGISTRO \_ WSH \_**              | Desregula o nome da rede.                                                                                                                                                               |
+| PORTANTO, \_ GETLOCALZONES               | sim |     | **ZONAS DE \_ LOOKUP \_ WSH**               | Retorna uma lista de nomes de zona conhecidos pelo nome do adaptador determinado.                                                                                                                                        |
+| PORTANTO, \_ GETMYZONE                   | sim |     | Char \[\]                            | Retorna a zona padrão na rede.                                                                                                                                                             |
+| PORTANTO, \_ GETNETINFO                  | sim |     | **WSH \_ LOOKUP \_ NETDEF \_ NO \_ ADAPTADOR** | Retorna os valores de semente para a rede, bem como a zona padrão. O *parâmetro optlen* deve ser pelo menos um byte maior que o tamanho da estrutura **WSH \_ LOOKUP \_ NETDEF \_ ON \_ ADAPTER.**  |
+| PORTANTO, \_ GETZONELIST                 | sim |     | **ZONAS DE \_ LOOKUP \_ WSH**               | Retorna nomes de zona da lista de zonas da Internet. O *parâmetro optlen* deve ser pelo menos um byte maior que o tamanho da estrutura **WSH \_ LOOKUP \_ ZONES.**                                       |
+| ENTÃO, \_ PROCURE \_ MYZONE              | sim |     |                                      | O mesmo que SO \_ GETMYZONE                                                                                                                                                                                |
+| PORTANTO, \_ NOME DA \_ LOOKUP                | sim |     | **NOME DA LOOKUP DO WSH \_ \_**                | Procura um nome NBP especificado e retorna as tuplas correspondentes de nome e informações de NBP. O *parâmetro optlen* deve ser pelo menos um byte maior que o tamanho da estrutura WSH \_ LOOKUP \_ NAME. |
+| PORTANTO, \_ PROCURE \_ NETDEF \_ NO \_ ADAPTADOR | sim |     | **WSH \_ LOOKUP \_ NETDEF \_ NO \_ ADAPTADOR** | O mesmo que SO \_ GETNETINFO.                                                                                                                                                                              |
+| PORTANTO, \_ AS \_ ZONAS DE LOOKUP               | sim |     | **ZONAS DE \_ LOOKUP \_ WSH**               | O mesmo que SO \_ GETZONELIST.                                                                                                                                                                             |
+| PORTANTO, \_ PROCURE \_ ZONAS \_ NO \_ ADAPTADOR  | sim |     | **ZONAS DE \_ LOOKUP \_ WSH**               | O mesmo que SO \_ GETLOCALZONES.                                                                                                                                                                           |
+| PORTANTO, \_ O PAP OBTER STATUS DO \_ \_ \_ SERVIDOR    | sim |     | **WSH \_ PAP OBTER STATUS DO \_ \_ \_ SERVIDOR**    | Retorna o status de PAP de um determinado servidor                                                                                                                                                           |
+| ENTÃO, \_ PAP \_ PRIME \_ READ            |     | sim | Char \[\]                            | Essa chamada é uma leitura em uma conexão PAP para que o remetente possa começar a enviar os dados                                                                                                                 |
+| PORTANTO, \_ STATUS DO SERVIDOR DO CONJUNTO \_ \_ DE PAP \_    |     | sim | Char \[\]                            | Define o status a ser enviado se outro cliente solicitar o status                                                                                                                                     |
+| PORTANTO, \_ \_ REGISTRE O NOME              |     | sim | **NOME DO REGISTRO \_ WSH \_**              | Registra o nome determinado na rede AppleTalk                                                                                                                                                    |
+| PORTANTO, \_ REMOVA \_ O NOME                |     | sim | **NOME DO REGISTRO \_ WSH \_**              | O mesmo QUE SO \_ DEREGISTER \_ NAME                                                                                                                                                                         |
 
 
 
  
 
-</dt> </dl> </dd> <dt><span id="Windows_Support_for_SOL_APPLETALK_options"></span><span id="windows_support_for_sol_appletalk_options"></span><span id="WINDOWS_SUPPORT_FOR_SOL_APPLETALK_OPTIONS"></span>**Suporte do Windows para opções de SOL do \_ APPLETALK**</dt> <dd> <dl> <dt> 
+</dt> </dl> </dd> <dt><span id="Windows_Support_for_SOL_APPLETALK_options"></span><span id="windows_support_for_sol_appletalk_options"></span><span id="WINDOWS_SUPPORT_FOR_SOL_APPLETALK_OPTIONS"></span>**Windows Suporte para opções \_ SOL APPLETALK**</dt> <dd> <dl> <dt> 
 
-| Opção                          | Windows Vista e posterior | Windows Server 2003 | Windows XP | Windows 2000 | Windows NT4 | Windows 9x/me |
+| Opção                          | Windows Vista e posterior | Windows Server 2003 | Windows XP | Windows 2000 | Windows NT4 | Windows 9x/Me |
 |---------------------------------|-------------------------|---------------------|------------|--------------|-------------|---------------|
-| Portanto, \_ confirme o \_ nome               |                         | x                   | x          | x            | x           |               |
-| Então, \_ DESREGISTRE o \_ nome            |                         | x                   | x          | x            | x           |               |
-| \_GETLOCALZONES               |                         | x                   | x          | x            | x           |               |
+| PORTANTO, \_ CONFIRME \_ O NOME               |                         | x                   | x          | x            | x           |               |
+| PORTANTO, \_ NOME DO REGISTRO \_            |                         | x                   | x          | x            | x           |               |
+| PORTANTO, \_ GETLOCALZONES               |                         | x                   | x          | x            | x           |               |
 | \_GETMYZONE                   |                         | x                   | x          | x            | x           |               |
 | \_GETNETINFO                  |                         | x                   | x          | x            | x           |               |
 | Então \_ GETzonelist                 |                         | x                   | x          | x            | x           |               |
@@ -77,7 +77,7 @@ Para enumerar protocolos e descobrir Propriedades com suporte para cada protocol
 
  
 
-As opções de **sol \_ APPLETALK** só têm suporte nas versões de servidor do Windows 2000 e do Windows NT 4,0.
+as opções de **SOL \_ APPLETALK** só têm suporte nas versões de servidor do Windows 2000 e Windows NT 4,0.
 
 
 </dt> </dl> </dd> </dl>

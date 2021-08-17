@@ -3,7 +3,7 @@ title: Função MpErrorMessageFormat (MpClient. h)
 description: Retorna uma mensagem de erro formatada com base em um código de erro.
 ms.assetid: C125FCE4-3BB0-4608-BBF3-E7FEF17D0807
 keywords:
-- Recursos do ambiente Windows herdado da função MpErrorMessageFormat
+- recursos de ambiente de Windows herdado da função MpErrorMessageFormat
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3a3499b3be885b29135d22b470da4143cfb23ea6
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 124bf9e2c5c2ecc18f286b99f0c3b93695abd3f6a40853fcc47de580edef5db4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103919026"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117883503"
 ---
 # <a name="mperrormessageformat-function"></a>Função MpErrorMessageFormat
 
@@ -63,13 +63,13 @@ Um código de erro com base em **HRESULT**.
 *pwszErrorDesc* \[ fora\]
 </dt> <dd>
 
-Tipo: **LPWSTR \** _
+Tipo: **LPWSTR \***
 
-Retorna uma mensagem de erro formatada com base em _hrError *. Essa cadeia de caracteres deve ser liberada usando [**MpFreeMemory**](mpfreememory.md).
+Retorna uma mensagem de erro formatada com base em *hrError*. Essa cadeia de caracteres deve ser liberada usando [**MpFreeMemory**](mpfreememory.md).
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **HRESULT**
 
@@ -104,9 +104,9 @@ Essa função é capaz de Formatar códigos de erro do sistema, além de código
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                    |
-| parâmetro<br/>                   | <dl> <dt>MpClient. h</dt> </dl>   |
+| Cliente mínimo com suporte<br/> | Windows 8 \[ somente aplicativos da área de trabalho\]<br/>                                              |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 \[ somente aplicativos da área de trabalho\]<br/>                                    |
+| Cabeçalho<br/>                   | <dl> <dt>MpClient. h</dt> </dl>   |
 | DLL<br/>                      | <dl> <dt>MpClient.dll</dt> </dl> |
 
 

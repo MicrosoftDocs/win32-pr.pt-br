@@ -20,16 +20,16 @@ api_type:
 - DllExport
 api_location:
 - WmiProv.dll
-ms.openlocfilehash: e457757a3542bbfc8ded7536396458ef3e592714
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 958eb9134062d5380a2afda77eeaad3034a2da7430d2f6a3094916ceae211e4f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105760664"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117926778"
 ---
 # <a name="wmimonitorbasicdisplayparams-class"></a>Classe WmiMonitorBasicDisplayParams
 
-A classe WMI **WmiMonitorBasicDisplayParams** representa os recursos de exibição básicos de um monitor de computador. O valor da propriedade **VideoInputType** indica se o monitor é analógico ou digital. Os dados nessa classe correspondem aos dados no bloco de parâmetros/recursos de exibição básico de VESA (vídeo de associação padrão de tela de eletrônicos) avançado (E-EDID) padrão de dados de identificação de exibição estendida.
+A **classe WMI WMI WmiMonitorBasicDisplayParams** representa os recursos de exibição básicos de um monitor de computador. O valor da propriedade **VideoInputType** indica se o monitor é análogo ou digital. Os dados nesta classe correspondem aos dados no bloco Parâmetros de Exibição/Recursos Básicos da VESA (Video Electronics Standard Association) padrão E-EDID (Extended Display Identification Data).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -48,20 +48,20 @@ class WmiMonitorBasicDisplayParams : MSMonitorClass
 
 ## <a name="members"></a>Membros
 
-A classe **WmiMonitorBasicDisplayParams** tem estes tipos de membros:
+A **classe WmiMonitorBasicDisplayParams** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **WmiMonitorBasicDisplayParams** tem essas propriedades.
+A **classe WmiMonitorBasicDisplayParams** tem essas propriedades.
 
 <dl> <dt>
 
 **Ativo**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -80,7 +80,7 @@ Tipo de dados: **uint8**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Característica de transferência de exibição (100 \* gama-100).
+Característica de transferência de exibição (100 \* Gama-100).
 
 </dd> <dt>
 
@@ -93,7 +93,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: **chave**
+Qualificadores: **Chave**
 </dt> </dl>
 
 Nome da instância de monitor específica.
@@ -135,7 +135,7 @@ Tipo de dados: **[ **SupportedDisplayFeaturesDescriptor**](supporteddisplayfeatu
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Exibir recursos com suporte no monitor.
+Exibir recursos com suporte pelo monitor.
 
 </dd> <dt>
 
@@ -154,7 +154,7 @@ Tipo de entrada de vídeo.
 
 | Valor                                                                              | Significado            |
 |------------------------------------------------------------------------------------|--------------------|
-| <dl> <dt>0 (0x0)</dt> </dl> | Analog<br/>  |
+| <dl> <dt>0 (0x0)</dt> </dl> | Analógico<br/>  |
 | <dl> <dt>1 (0x1)</dt> </dl> | Digital<br/> |
 
 
@@ -165,7 +165,7 @@ Tipo de entrada de vídeo.
 
 ## <a name="remarks"></a>Comentários
 
-**MaxHorizontalImageSize** e **MaxVerticalImageSize** representam as dimensões de imagem máxima que o monitor pode exibir corretamente para todo o conjunto de combinações de tempo e formato com suporte. A dimensão de imagem máxima é definida pelo padrão da VIAD (linguagem de imagem de vídeo) VESA e é arredondada para o centímetro mais próximo. O sistema de computador host pode usar esses dados para selecionar o tamanho da imagem e a taxa de proporção que permitirá o texto corretamente dimensionado. Lembre-se de que, se um ou ambos os campos forem zero, o sistema não fará suposições sobre o tamanho de exibição. Por exemplo, o tamanho de uma exibição de projeção pode não ser determinado.
+**MaxHorizontalImageSize** e **MaxVerticalImageSize** representam as dimensões máximas de imagem que o monitor pode exibir corretamente para todo o conjunto de combinações de tempo e formato com suporte. A dimensão máxima da imagem é definida pelo PADRÃO VIAD (Definição de Área de Imagem de Vídeo) VESA e arredonda para o centímetro mais próximo. O sistema de computador host pode usar esses dados para selecionar o tamanho da imagem e a taxa de proporção que permitirão o texto dimensionado corretamente. Esteja ciente de que, se um ou ambos os campos são zero, o sistema não faz suposições sobre o tamanho da exibição. Por exemplo, o tamanho de uma exibição de projeção pode ser indeterminado.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -175,8 +175,8 @@ Tipo de entrada de vídeo.
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                               |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                         |
-| Namespace<br/>                | \\WMI raiz<br/>                                                                   |
-| MOF<br/>                      | <dl> <dt>WmiCore. mof</dt> </dl> |
+| Namespace<br/>                | WMI \\ raiz<br/>                                                                   |
+| MOF<br/>                      | <dl> <dt>WmiCore.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>WmiProv.dll</dt> </dl> |
 
 

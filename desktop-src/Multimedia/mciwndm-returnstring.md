@@ -1,9 +1,9 @@
 ---
-title: Mensagem de MCIWNDM_RETURNSTRING (VFW. h)
-description: A \_ mensagem returnstring MCIWNDM recupera a resposta para o comando de cadeia de caracteres MCI mais recente enviado para um dispositivo MCI.
+title: MCIWNDM_RETURNSTRING mensagem (Vfw.h)
+description: A mensagem RETURNSTRING MCIWNDM recupera a resposta ao comando de cadeia de \_ caracteres MCI mais recente enviado a um dispositivo MCI.
 ms.assetid: 36a5222c-a63c-4b8c-ad0c-a00477e95b96
 keywords:
-- Multimídia do Windows de mensagem MCIWNDM_RETURNSTRING
+- MCIWNDM_RETURNSTRING mensagem Windows Multimídia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7b99307bd7d61a70db594d0a696cceccd6d246a3
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d2ea9624c70245c67f0f6a78af68bf291ae3ce60ba65ae2cd273008bbc914ec2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104009340"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118137653"
 ---
-# <a name="mciwndm_returnstring-message"></a>Mensagem de retorno de MCIWNDM \_
+# <a name="mciwndm_returnstring-message"></a>Mensagem RETURNSTRING MCIWNDM \_
 
-A **mensagem \_ returnstring MCIWNDM** recupera a resposta para o comando de cadeia de caracteres MCI mais recente enviado para um dispositivo MCI. As informações na resposta são fornecidas como uma cadeia de caracteres terminada em nulo. Você pode enviar essa mensagem explicitamente ou usando a macro [**MCIWndReturnString**](/windows/desktop/api/Vfw/nf-vfw-mciwndreturnstring) .
+A **mensagem \_ RETURNSTRING MCIWNDM** recupera a resposta ao comando de cadeia de caracteres MCI mais recente enviado a um dispositivo MCI. As informações na resposta são fornecidas como uma cadeia de caracteres terminada em nulo. Você pode enviar essa mensagem explicitamente ou usando a macro [**MCIWndReturnString.**](/windows/desktop/api/Vfw/nf-vfw-mciwndreturnstring)
 
 
 ```C++
@@ -45,7 +45,7 @@ Tamanho, em bytes, do buffer.
 
 </dd> <dt>
 
-<span id="lp"></span><span id="LP"></span>*LP*
+<span id="lp"></span><span id="LP"></span>*Lp*
 </dt> <dd>
 
 Ponteiro para um buffer definido pelo aplicativo para conter a cadeia de caracteres terminada em nulo.
@@ -68,7 +68,7 @@ Se a cadeia de caracteres terminada em nulo for maior que o buffer, a cadeia de 
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                       |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                             |
-| Cabeçalho<br/>                   | <dl> <dt>VFW. h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Vfw.h</dt> </dl> |
 
 
 

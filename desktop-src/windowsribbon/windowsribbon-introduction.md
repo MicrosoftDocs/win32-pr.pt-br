@@ -1,41 +1,41 @@
 ---
-title: Apresentando o Windows Ribbon Framework
-description: Exiba a página de aterrissagem do Windows Ribbon Framework, que é uma alternativa para os menus, barras de ferramentas e painéis de tarefas em camadas de aplicativos tradicionais do Windows.
+title: Introdução à estrutura Windows faixa de opções
+description: Veja a página de aterrissagem da estrutura Windows Faixa de Opções, que é uma alternativa aos menus em camadas, barras de ferramentas e painéis de tarefas de aplicativos Windows tradicionais.
 ms.assetid: bc19d5eb-e3a4-4022-8051-512cb3a3e065
 keywords:
-- Faixa de Ribbon do Windows, estrutura
-- Faixa de Ribbon, estrutura
-- Faixa de, sobre o Windows, sobre
-- Faixa de, sobre
-- Faixa de, componentes do Windows
-- Faixa de, componentes
-- Faixa de da vista do Windows, exibições
-- Faixa de modos, exibições
-- Windows Ribbon, arquitetura
-- Faixa de faixas, arquitetura
-- Windows Ribbon, APIs
-- Faixa de das, APIs
-- Faixa de das, segurança do Windows
-- Faixa de, segurança
+- Windows Faixa de opções, estrutura
+- Faixa de opções, estrutura
+- Windows Faixa de opções, sobre
+- Faixa de opções, sobre
+- Windows Faixa de opções, componentes
+- Faixa de opções, componentes
+- Windows Faixa de opções, exibições
+- Faixa de opções, exibições
+- Windows Faixa de opções, arquitetura
+- Faixa de opções, arquitetura
+- Windows Faixa de opções, APIs
+- Faixa de opções, APIs
+- Windows Faixa de opções, segurança
+- Faixa de opções, segurança
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: db15165b91708a85e5ae6237b66a15bf733e80a7
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 65576d90abb68b0efddf850f4855633f4b362d8cb21ce6f6f85f7924085e8810
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112404389"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117850634"
 ---
-# <a name="introducing-the-windows-ribbon-framework"></a>Apresentando o Windows Ribbon Framework
+# <a name="introducing-the-windows-ribbon-framework"></a>Introdução à estrutura Windows faixa de opções
 
-O Windows Ribbon Framework é um sistema de apresentação de comando avançado que fornece uma alternativa moderna para os menus, barras de ferramentas e painéis de tarefas em camadas de aplicativos tradicionais do Windows.
+A estrutura Windows Faixa de Opções é um sistema de apresentação de comandos rico que fornece uma alternativa moderna para menus em camadas, barras de ferramentas e painéis de tarefas de aplicativos Windows tradicionais.
 
 -   [Um novo paradigma de comando](#a-new-command-paradigm)
 -   [Exibições](#views)
-    -   [A exibição da faixa de modos](#the-ribbon-view)
+    -   [A exibição da faixa de opções](#the-ribbon-view)
     -   [A exibição ContextPopup](#the-contextpopup-view)
--   [Arquitetura da faixa de das](#ribbon-architecture)
-    -   [As APIs da faixa de das](#the-ribbon-apis)
+-   [Arquitetura da faixa de opções](#ribbon-architecture)
+    -   [As APIs da Faixa de Opções](#the-ribbon-apis)
     -   [Segurança e Privacidade](#security-and-privacy)
     -   [Acessibilidade e localização](#accessibility-and-localization)
 -   [Conclusão](#conclusion)
@@ -43,93 +43,93 @@ O Windows Ribbon Framework é um sistema de apresentação de comando avançado 
 
 ## <a name="a-new-command-paradigm"></a>Um novo paradigma de comando
 
-A estrutura da faixa de as é uma coleção de APIs do Microsoft Win32 que oferece suporte a um host de novos recursos de interface do usuário para desenvolvedores do Windows.
+A estrutura ribbon é uma coleção de APIs do Microsoft Win32 que suportam um host de novos recursos de interface do usuário para Windows desenvolvedores.
 
-Essa estrutura de comando de interface do usuário moderna, rica, oferece:
+Essa estrutura de comando de interface do usuário moderna e rica oferece:
 
--   Implementação fácil para aplicativos de estrutura de faixa de faixas novos e migração direta de aplicativos Win32 existentes.
--   Aparência e comportamento consistentes em aplicativos de faixa de das faixas.
--   Adesão às diretrizes de interface do usuário do Windows para uma experiência de primeira classe do Windows por meio de padrões de acessibilidade, suporte a estilo visual (temas), ajustes automáticos de alto contraste e reconhecimento de DPI (pontos por polegada).
+-   Implementação fácil para aplicativos de estrutura de Faixa de Opções novos e migração simples de aplicativos Win32 existentes.
+-   Aparência e comportamento consistentes em aplicativos da Faixa de Opções.
+-   Adesão Windows diretrizes de interface do usuário para uma experiência de Windows de primeira classe por meio de padrões de acessibilidade, suporte a estilo visual (temas), ajustes automáticos de alto contraste e reconhecimento de dpi (pontos por polegada).
 
-A estrutura da faixa de faixas consiste em dois componentes principais da interface do usuário:
+A estrutura ribbon consiste em dois componentes principais da interface do usuário:
 
--   A barra de comandos da faixa de, que é composta pela barra de ferramentas de acesso rápido (QAT) que expõe e realça vários comandos de faixa de forma, conforme especificado pelo usuário ou pelo aplicativo, e uma linha de guia que contém o menu do aplicativo, as guias padrão ou contextual e um botão de ajuda.
--   Um sistema de menus de contexto avançado.
+-   A barra de comandos da faixa de opções, que é composta pela QAT (Barra de Ferramentas de Acesso Rápido) que expõe e realça vários comandos da faixa de opções, conforme especificado pelo usuário ou pelo aplicativo, e uma linha de tabulação que contém o menu do aplicativo, guias padrão ou contextuais e um botão de ajuda.
+-   Um sistema de menu de contexto rico.
 
-Uma combinação de XML declarativo e interfaces COM nativas é usada para desacoplar a apresentação e a funcionalidade desses componentes.
+Uma combinação de interfaces XML declarativas e COM nativas é usada para desacoplar a apresentação e a funcionalidade desses componentes.
 
 ## <a name="views"></a>Exibições
 
-Os principais componentes da interface do usuário da estrutura da faixa de faixas, a barra de comandos da faixa de guia e o sistema de menus de contexto, são diferenciados estruturalmente através de *exibições*. A estrutura dá suporte a duas exibições: a exibição [**da faixa**](windowsribbon-element-ribbon.md) de modo e a exibição [**ContextPopup**](windowsribbon-element-contextpopup.md) .
+Os componentes primários da interface do usuário da estrutura da Faixa de Opções, a barra de comandos da faixa de opções e o sistema de menu de contexto são diferenciados estruturalmente por meio de *Exibições*. A estrutura dá suporte a duas Exibições: a [**Exibição da Faixa**](windowsribbon-element-ribbon.md) de Opções e [**a Exibição ContextPopup.**](windowsribbon-element-contextpopup.md)
 
-### <a name="the-ribbon-view"></a>A exibição da faixa de modos
+### <a name="the-ribbon-view"></a>A exibição da faixa de opções
 
-A interface do usuário da exibição da [**faixa**](windowsribbon-element-ribbon.md) de visão é o principal recurso da estrutura da faixa de faixas e fornece a experiência do usuário da próxima geração para apresentar comandos em aplicativos do Windows.
+A interface do usuário da [**Exibição**](windowsribbon-element-ribbon.md) da Faixa de Opções é o principal recurso da estrutura da Faixa de Opções e fornece a experiência do usuário de última geração para apresentar comandos em Windows aplicativos.
 
-A faixa de guia é uma barra de comandos que expõe os principais recursos de um aplicativo por meio de uma série de guias na parte superior de uma janela de aplicativo. É semelhante na funcionalidade e na aparência à interface do usuário do Microsoft Office 2007 Fluent. A faixa de faixas fornece um contraponto intuitivo para o processo de avaliação e erro de descoberta de comando que é típico de sistemas de menu padrão do Windows. Otimizado para eficiência e capacidade de descoberta, a faixa de faixas facilita a localização, a compreensão e o uso de comandos com cliques mínimos do mouse e pressionamentos de teclas por meio de um sistema de controles padrão, galerias e visualização dinâmica.
+A faixa de opções é uma barra de comandos que expõe os principais recursos de um aplicativo por meio de uma série de guias na parte superior de uma janela do aplicativo. Ele é semelhante em funcionalidade e aparência à Microsoft Office 2007 Fluent interface do usuário. A faixa de opções fornece um ponto de contraponto intuitivo para o processo de avaliação e erro de descoberta de comando que é típico dos sistemas de menu Windows padrão. Otimizada para eficiência e capacidade de descoberta, a faixa de opções facilita a descoberta, a compreensão e o uso de comandos com cliques mínimos do mouse e teclas por meio de um sistema de controles padrão, galerias e visualização ao vivo.
 
-A imagem a seguir ilustra a implementação da estrutura da faixa de opções no Paint para Windows 7.
+A imagem a seguir ilustra a implementação da estrutura ribbon no Paint para Windows 7.
 
-![captura de tela mostrando a implementação da faixa de Ribbon no Paint para Windows 7.](images/overviews/screenshot-paint-win7transparency-mirror.png)
+![captura de tela mostrando a implementação da faixa de opções em pintura para o Windows 7.](images/overviews/screenshot-paint-win7transparency-mirror.png)
 
 ### <a name="the-contextpopup-view"></a>A exibição ContextPopup
 
-A exibição [**ContextPopup**](windowsribbon-element-contextpopup.md) , por meio do controle [Popup de contexto](windowsribbon-controls-contextpopup.md) , fornece um sistema de menu de contexto mais rico do que o disponível com aplicativos anteriores do Windows. Um pop-up de contexto só pode ser implantado no suporte de uma faixa de faixa, um popup de contexto autônomo não tem suporte na estrutura de faixas.
+A [**Exibição ContextPopup,**](windowsribbon-element-contextpopup.md) por meio do controle [Pop-up](windowsribbon-controls-contextpopup.md) de Contexto, fornece um sistema de menu de contexto mais rico do que o disponível com aplicativos Windows anteriores. Um Pop-up de Contexto só pode ser implantado no suporte a uma faixa de opções, não há suporte para um Pop-up de Contexto autônomo na estrutura da Faixa de Opções.
 
-## <a name="ribbon-architecture"></a>Arquitetura da faixa de das
+## <a name="ribbon-architecture"></a>Arquitetura da faixa de opções
 
-Ao contrário do modelo de desenvolvimento de interface do usuário do Windows baseado em controle tradicional, o desenvolvimento da interface do usuário do Windows da estrutura de faixa de faixas é baseado no conceito mais abstrato de comandos. Concentrando-se nos comandos associados aos controles, em vez dos próprios controles, a estrutura é capaz de ajustar automaticamente a interface do usuário conforme necessário em resposta ao estado de execução do comando recuperado do aplicativo host da faixa de Ribbon.
+Ao contrário do modelo tradicional de desenvolvimento de interface do usuário baseado em controle Windows, o desenvolvimento da interface do usuário da estrutura de faixa de opções Windows ribbon baseia-se no conceito mais abstrato de Comandos. Ao se concentrar nos Comandos associados aos controles, em vez dos próprios controles, a estrutura é capaz de ajustar automaticamente a interface do usuário conforme necessário em resposta ao estado de execução do comando recuperado do aplicativo host da Faixa de Opções.
 
-Um aplicativo que usa a estrutura da faixa de faixas expõe comandos sem ser impedido com os detalhes de como esse comando é representado na interface do usuário. Isso às vezes é chamado de modelo de interface do usuário baseado em intenção. O [**tipo de comando**](/windows/desktop/api/uiribbon/ne-uiribbon-ui_commandtype), suas propriedades e seus recursos definem a intenção do comando para o aplicativo. Por exemplo, entrada do mouse, entrada de teclado ou até mesmo agitando um dispositivo gyroscopic pode resultar na execução do mesmo comando que o aplicativo está preocupado apenas com a execução do comando, e não com como ele foi invocado.
+Um aplicativo que usa a estrutura ribbon expõe Comandos sem ser sobrecarregado com os detalhes de como esse Comando é representado na interface do usuário. Às vezes, isso é chamado de modelo de interface do usuário baseado em intenção. O [**Tipo de**](/windows/desktop/api/uiribbon/ne-uiribbon-ui_commandtype)comando , suas propriedades e seus recursos definem a intenção do Comando para o aplicativo. Por exemplo, a entrada do mouse, a entrada do teclado ou, até mesmo, a replicação de um dispositivo girooco pode resultar na execução do mesmo Comando em que o aplicativo se preocupa apenas com a execução do Comando, não com a forma como ele foi invocado.
 
-A estrutura da faixa de opção fornece essa flexibilidade separando a funcionalidade da apresentação com duas estruturas de desenvolvimento distintas: uma linguagem de marcação baseada em linguagem XAML (XAML) para declarar controles e o layout visual de uma implementação de faixa de opção e interfaces baseadas em C++ para inicializar a estrutura e manipular eventos em tempo de execução. Essa distinção permite que os desenvolvedores e designers da interface do usuário sejam exclusivamente responsáveis pela aparência de um aplicativo da faixa de faixas, enquanto a funcionalidade principal continua sendo o domínio dos engenheiros de software.
+A estrutura da Faixa de Opções fornece essa flexibilidade separando a funcionalidade da apresentação com duas estruturas de desenvolvimento distintas: uma linguagem de marcação baseada em XAML (Extensible Application Markup Language) para declarar controles e o layout visual de uma implementação de Faixa de Opções e interfaces baseadas em COM do C++ para inicializar a estrutura e manipular eventos em tempo de execução. Essa distinção permite que desenvolvedores e designers de interface do usuário sejam exclusivamente responsáveis pela aparência de um aplicativo de Faixa de Opções, enquanto a funcionalidade principal permanece o domínio dos engenheiros de software.
 
-Para obter mais informações, consulte [noções básicas sobre comandos e controles](windowsribbon-commandscontrols.md).
+Para obter mais informações, consulte [Noções básicas sobre comandos e controles.](windowsribbon-commandscontrols.md)
 
-### <a name="the-ribbon-apis"></a>As APIs da faixa de das
+### <a name="the-ribbon-apis"></a>As APIs da Faixa de Opções
 
-As APIs da faixa de visão fornecem as conexões necessárias entre uma exibição e o aplicativo host da faixa de versões. Essas APIs consistem nas seguintes interfaces e chaves de propriedade:
+As APIs da Faixa de Opções fornecem as conexões necessárias entre uma Exibição e o aplicativo host da Faixa de Opções. Essas APIs consistem nas seguintes interfaces e chaves de propriedade:
 
--   Um conjunto de interfaces COM implementadas pela estrutura da faixa de faixas para executar serviços de interface do usuário.
+-   Um conjunto de interfaces COM implementado pela estrutura da Faixa de Opções para executar serviços de interface do usuário.
 
     
 
     | Interface                                                                        | Descrição                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
     |----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-    | [IUIContextualUI****](/windows/desktop/api/uiribbon/nn-uiribbon-iuicontextualui)           | Define os métodos para a funcionalidade principal da exibição [**ContextPopup**](windowsribbon-element-contextpopup.md) .                                                                                                                                                                                                                                                                                                                                                                                                                  |
-    | [IUIFramework****](/windows/desktop/api/uiribbon/nn-uiribbon-iuiframework)                 | Define os métodos que dão suporte à funcionalidade básica das exibições de [**faixa**](windowsribbon-element-ribbon.md) de [**ContextPopup**](windowsribbon-element-contextpopup.md) e de exibição.                                                                                                                                                                                                                                                                                                                                                     |
-    | [IUIRibbon****](/windows/desktop/api/uiribbon/nn-uiribbon-iuiribbon)                       | Define os métodos para especificar as configurações e as propriedades de uma exibição [**da faixa**](windowsribbon-element-ribbon.md) de opções.                                                                                                                                                                                                                                                                                                                                                                                                                   |
-    | [IUISimplePropertySet****](/windows/desktop/api/uiribbon/nn-uiribbon-iuisimplepropertyset) | Define um método para recuperar o valor identificado por uma chave de propriedade. Essa interface é implementada pela estrutura da faixa de faixas e também é implementada pelo aplicativo host para cada item no objeto [**IUICollection**](/windows/desktop/api/uiribbon/nn-uiribbon-iuicollection) de uma galeria de itens.<br/> Quando implementado pelo aplicativo host, o método definido por essa interface é usado para recuperar um valor de chave de propriedade para o item selecionado no [**IUICollection**](/windows/desktop/api/uiribbon/nn-uiribbon-iuicollection).<br/> |
-    | [IUICollection****](/windows/desktop/api/uiribbon/nn-uiribbon-iuicollection)               | Define os métodos para a manipulação dinâmica de controles baseados em coleção, como a faixa de QAT e [galerias](ribbon-controls-galleries.md)baseadas em coleção, em tempo de execução.                                                                                                                                                                                                                                                                                                                                                        |
-    | [IUIImage****](/windows/desktop/api/uiribbon/nn-uiribbon-iuiimage)                         | Define o método para recuperar uma imagem para exibição na interface do usuário da faixa de para.                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-    | [IUIImageFromBitmap****](/windows/desktop/api/uiribbon/nn-uiribbon-iuiimagefrombitmap)     | Define o método de fábrica para criar um objeto [**IUIImage**](/windows/desktop/api/uiribbon/nn-uiribbon-iuiimage) .                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+    | [IUIContextualUI****](/windows/desktop/api/uiribbon/nn-uiribbon-iuicontextualui)           | Define os métodos para a funcionalidade principal da [**Exibição ContextPopup.**](windowsribbon-element-contextpopup.md)                                                                                                                                                                                                                                                                                                                                                                                                                  |
+    | [IUIFramework****](/windows/desktop/api/uiribbon/nn-uiribbon-iuiframework)                 | Define os métodos que suportam a funcionalidade principal das exibições [**Ribbon**](windowsribbon-element-ribbon.md) e [**ContextPopup.**](windowsribbon-element-contextpopup.md)                                                                                                                                                                                                                                                                                                                                                     |
+    | [IUIRibbon****](/windows/desktop/api/uiribbon/nn-uiribbon-iuiribbon)                       | Define os métodos para especificar configurações e propriedades para uma Exibição de Faixa [**de**](windowsribbon-element-ribbon.md) Opções.                                                                                                                                                                                                                                                                                                                                                                                                                   |
+    | [IUISimplePropertySet****](/windows/desktop/api/uiribbon/nn-uiribbon-iuisimplepropertyset) | Define um método para recuperar o valor identificado por uma chave de propriedade. Essa interface é implementada pela estrutura ribbon e também é implementada pelo aplicativo host para cada item no [**objeto IUICollection**](/windows/desktop/api/uiribbon/nn-uiribbon-iuicollection) de uma galeria de itens.<br/> Quando implementado pelo aplicativo host, o método definido por essa interface é usado para recuperar um valor de chave de propriedade para o item selecionado na [**IUICollection**](/windows/desktop/api/uiribbon/nn-uiribbon-iuicollection).<br/> |
+    | [IUICollection****](/windows/desktop/api/uiribbon/nn-uiribbon-iuicollection)               | Define os métodos para manipular dinamicamente controles baseados em coleção, como o QAT da Faixa de Opções e galerias baseadas [em coleção,](ribbon-controls-galleries.md)em tempo de operação.                                                                                                                                                                                                                                                                                                                                                        |
+    | [IUIImage****](/windows/desktop/api/uiribbon/nn-uiribbon-iuiimage)                         | Define o método para recuperar uma imagem para exibição na interface do usuário da Faixa de Opções.                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+    | [IUIImageFromBitmap****](/windows/desktop/api/uiribbon/nn-uiribbon-iuiimagefrombitmap)     | Define o método de fábrica para criar um [**objeto IUIImage.**](/windows/desktop/api/uiribbon/nn-uiribbon-iuiimage)                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 
     
 
      
 
--   Um conjunto de interfaces COM implementadas pelo aplicativo host da faixa de faixas que a estrutura chama em resposta às alterações da interface do usuário.
+-   Um conjunto de interfaces COM implementado pelo aplicativo host da Faixa de Opções que a estrutura chama em resposta às alterações na interface do usuário.
 
     
 
     | Interface                                                                                  | Descrição                                                                                                  |
     |--------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|
-    | [IUIApplication****](/windows/desktop/api/uiribbon/nn-uiribbon-iuiapplication)                       | Define os métodos de ponto de entrada de retorno de chamada do aplicativo para a estrutura da faixa de faixas.                               |
-    | [IUICommandHandler****](/windows/desktop/api/uiribbon/nn-uiribbon-iuicommandhandler)                 | Define os métodos para coletar informações de comando e manipular eventos de comando da estrutura da faixa de faixas. |
-    | [IUICollectionChangedEvent****](/windows/desktop/api/uiribbon/nn-uiribbon-iuicollectionchangedevent) | Define o método necessário para lidar com alterações em uma coleção em tempo de execução.                                   |
+    | [IUIApplication****](/windows/desktop/api/uiribbon/nn-uiribbon-iuiapplication)                       | Define os métodos de ponto de entrada de retorno de chamada do aplicativo para a estrutura ribbon.                               |
+    | [IUICommandHandler****](/windows/desktop/api/uiribbon/nn-uiribbon-iuicommandhandler)                 | Define os métodos para coletar informações de comando e manipular eventos command da estrutura ribbon. |
+    | [IUICollectionChangedEvent****](/windows/desktop/api/uiribbon/nn-uiribbon-iuicollectionchangedevent) | Define o método necessário para lidar com alterações em uma coleção em tempo de operação.                                   |
 
     
 
      
 
--   Um conjunto de chaves de propriedade que definem quais propriedades da interface do usuário o aplicativo tem controle programático.
+-   Um conjunto de chaves de propriedade que definem quais propriedades de interface do usuário o aplicativo tem controle programático.
 
     
 
     | Tipo de chave de propriedade                                                  | Descrição                                              |
     |--------------------------------------------------------------------|----------------------------------------------------------|
-    | [Coleção](windowsribbon-reference-properties-collection.md)    | Define propriedades para controles baseados em coleção da faixa de bits. |
-    | [Seletor de cor](windowsribbon-reference-properties-colorpicker.md) | Define propriedades para controles do seletor de cor da faixa de seleção.     |
+    | [Coleção](windowsribbon-reference-properties-collection.md)    | Define propriedades para controles baseados em coleção da Faixa de Opções. |
+    | [Seletor de cor](windowsribbon-reference-properties-colorpicker.md) | Define propriedades para controles do selador de cores da faixa de opções.     |
     | [Fonte](windowsribbon-reference-properties-fontcontrol.md)         | Define propriedades para o FontControl da Faixa de Opções.           |
     | [Global](windowsribbon-reference-properties-framework.md)         | Define propriedades globais para a estrutura ribbon.      |
     | [Recurso](windowsribbon-reference-properties-resource.md)        | Define as propriedades do recurso da Faixa de Opções.                      |
@@ -144,7 +144,7 @@ As APIs da faixa de visão fornecem as conexões necessárias entre uma exibiç�
 
 A DLL da estrutura de faixa uiribbon.dll faixa de opções é executado em processo e tem os mesmos privilégios que o aplicativo host. A Faixa de Opções aceita apenas o que o aplicativo host fornece como entrada ou entrada do usuário de controles firmemente restritos, como o girador e a caixa de combinação editável.
 
-Além disso, a estrutura não armazena permanentemente nenhuma informação, exceto o que é fornecido pelo aplicativo host ou coletado (conforme autorizado pelo usuário final) por meio do Programa de Experiência do Usuário do Windows de aceitação.
+Além disso, a estrutura não armazena permanentemente nenhuma informação, exceto o que é fornecido pelo aplicativo host ou coletado (conforme autorizado pelo usuário final) por meio do programa de aceitação Windows Experiência do Cliente.
 
 ### <a name="accessibility-and-localization"></a>Acessibilidade e localização
 
@@ -152,13 +152,13 @@ Para fornecer uma interface do usuário altamente acessível, a estrutura ribbon
 
 Para obter mais informações sobre acessibilidade na estrutura ribbon, consulte Trabalhando com [Acessibilidade Ativa no 2007 Office Fluent Interface do Usuário](/previous-versions/office/developer/office-2007/bb404170(v=office.12)).
 
-Além disso, a estrutura ribbon é um recurso do Windows e, como tal, é localizada para todos os idiomas compatíveis com o Windows. No entanto, os desenvolvedores são responsáveis por localizar seus próprios recursos de aplicativo específicos.
+Além disso, a estrutura ribbon é um Windows e, como tal, é localizada para todos os idiomas que Windows dá suporte. No entanto, os desenvolvedores são responsáveis por localizar seus próprios recursos de aplicativo específicos.
 
 ## <a name="conclusion"></a>Conclusão
 
 A Faixa de Opções é uma forma nova e envolvente de apresentação de comando que os desenvolvedores de aplicativos, arquitetos e designers devem considerar ao projetar e criar novos aplicativos ou atualizar os existentes.
 
-O [Fórum de Desenvolvimento da Faixa](https://social.msdn.microsoft.com/Forums/windowsdesktop/home?forum=windowsribbondevelopment) de Opções do Windows está disponível para discutir tópicos e fazer perguntas relacionadas ao desenvolvimento de aplicativos que implementam a estrutura da Faixa de Opções do Windows.
+O [fórum Windows desenvolvimento da faixa](https://social.msdn.microsoft.com/Forums/windowsdesktop/home?forum=windowsribbondevelopment) de opções está disponível para discutir tópicos e fazer perguntas relacionadas ao desenvolvimento de aplicativos que implementam a estrutura Windows Faixa de Opções.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

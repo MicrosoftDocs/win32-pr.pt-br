@@ -1,7 +1,7 @@
 ---
-description: Obtém o identificador de uma função.
+description: Obtém o alça de uma função.
 ms.assetid: 97c82c28-4402-4605-8247-44d6f38bfa20
-title: 'Método ID3DXBaseEffect:: GetFunction (D3DX9Effect. h)'
+title: Método ID3DXBaseEffect::GetFunction (D3DX9Effect.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: de0567b605f4a892c1f8274a346a74acfbbc0442
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: ff3627c27ce6fa4eac0e166276a94dd5f4c1dd62bc4f8b38ccdd52c365a332fc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105784589"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118094163"
 ---
-# <a name="id3dxbaseeffectgetfunction-method"></a>Método ID3DXBaseEffect:: GetFunction
+# <a name="id3dxbaseeffectgetfunction-method"></a>Método ID3DXBaseEffect::GetFunction
 
-Obtém o identificador de uma função.
+Obtém o alça de uma função.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,20 +40,20 @@ D3DXHANDLE GetFunction(
 
 <dl> <dt>
 
-*Índice* \[ do no\]
+*Índice* \[ Em\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 Índice de função.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[D3DXHANDLE](dx9-graphics-reference-effects-constants.md)**
 
-Retorna o identificador da função especificada ou **NULL** se o índice era inválido. Consulte [Handles (Direct3D 9)](handles.md).
+Retorna o handle da função especificada ou **NULL** se o índice era inválido. Consulte [Handles (Direct3D 9)](handles.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -61,8 +61,8 @@ Retorna o identificador da função especificada ou **NULL** se o índice era in
 
 | Requisito | Valor |
 |--------------------|------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3DX9Effect. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>     |
+| parâmetro<br/>  | <dl> <dt>D3DX9Effect.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>     |
 
 
 

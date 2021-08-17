@@ -1,19 +1,19 @@
 ---
-description: A infraestrutura de mesmo nível usa as seguintes construções de programação comuns.
+description: A Infraestrutura par usa os constructos comuns de programação a seguir.
 ms.assetid: 09bdb2fc-9c38-4632-89bd-f9d9123d3b22
-title: Referência comum à infraestrutura de pares
+title: Referência comum da infraestrutura par
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 999de1454c34b52e7951665a772c4f61a530802a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2792b1858561be64ec02938bfa98e4c03f5adfb24797d8f773867a3d2e53db8d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104091639"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117794449"
 ---
-# <a name="peer-infrastructure-common-reference"></a>Referência comum à infraestrutura de pares
+# <a name="peer-infrastructure-common-reference"></a>Referência comum da infraestrutura par
 
-A infraestrutura de mesmo nível usa as seguintes construções de programação comuns.
+A Infraestrutura par usa os constructos comuns de programação a seguir.
 
 -   [Funções comuns](common-functions.md)
 -   [Estruturas comuns](common-structures.md)

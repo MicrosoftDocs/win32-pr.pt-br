@@ -1,5 +1,5 @@
 ---
-description: Fornece eventos para o Microsoft Windows HTTP Services (WinHTTP).
+description: fornece eventos para o Microsoft Windows HTTP Services (WinHTTP).
 ms.assetid: 0721d7f9-2e84-41a9-be52-89c8d638eb90
 title: Interface IWinHttpRequestEvents
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - HttpRequest.idl
-ms.openlocfilehash: 3cdd0bf10c0d4bd75351ddaab6e88ce7182850fd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 42b8355de57ada064e57a129c77ba507a72028b1c38ce115e58db110f2ce976b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105789728"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117744344"
 ---
 # <a name="iwinhttprequestevents-interface"></a>Interface IWinHttpRequestEvents
 
-A interface **IWinHttpRequestEvents** fornece eventos para [o Microsoft Windows http Services (WinHTTP)](about-winhttp.md). Ele usa apenas métodos de evento.
+a interface **IWinHttpRequestEvents** fornece eventos para [o Microsoft Windows HTTP Services (WinHTTP)](about-winhttp.md). Ele usa apenas métodos de evento.
 
 ## <a name="members"></a>Membros
 
@@ -60,7 +60,7 @@ As notificações podem ser encerradas chamando [Unadvise](/windows/win32/api/oc
 Para exibir algum código que se registra para notificações COM, consulte a seção cliente do artigo [pontos de conexão com](/archive/msdn-magazine/2007/september/clr-inside-out-com-connection-points) .
 
 > [!Note]  
-> Para o Windows XP e o Windows 2000, consulte a seção [requisitos de tempo de execução](winhttp-start-page.md) da página inicial do WinHTTP.
+> para Windows XP e Windows 2000, consulte a seção [requisitos de tempo de execução](winhttp-start-page.md) da página inicial do WinHTTP.
 
  
 
@@ -70,9 +70,9 @@ Para exibir algum código que se registra para notificações COM, consulte a se
 
 | Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Somente Windows XP, Windows 2000 Professional com \[ aplicativos de área de trabalho do SP3\]<br/>            |
-| Servidor mínimo com suporte<br/> | Windows Server 2003, Windows 2000 Server com aplicativos de área de trabalho do SP3 \[ somente\]<br/>         |
-| Redistribuível<br/>          | WinHTTP 5,0 e Internet Explorer 5, 1 ou posterior no Windows XP e no Windows 2000.<br/> |
+| Cliente mínimo com suporte<br/> | Windows XP, Windows 2000 Professional somente com \[ aplicativos da área de trabalho do SP3\]<br/>            |
+| Servidor mínimo com suporte<br/> | Windows servidor 2003, Windows 2000 servidor somente com \[ aplicativos de área de trabalho do SP3\]<br/>         |
+| Redistribuível<br/>          | WinHTTP 5,0 e Internet Explorer 5, 1 ou posterior em Windows XP e Windows 2000.<br/> |
 | INSERI<br/>                      | <dl> <dt>HttpRequest. idl</dt> </dl> |
 
 

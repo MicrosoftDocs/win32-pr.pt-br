@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 057607c57db600ca7a28c8a5bb6d75d5570829cb
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c12c0bae91df3baf421638665a5587612e6d1404c3300cf02b0308b7bef7d016
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103645008"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117955426"
 ---
 # <a name="logfilesremove-method"></a>Método LogFiles. Remove
 
@@ -49,13 +49,13 @@ LogFiles.Remove( _
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-**Antes do Windows Vista:** Você não poderá remover arquivos de log da [**coleção de arquivos de log**](systemmonitor-logfiles.md) se o valor de [**SystemMonitor. DataSourceType**](systemmonitor-datasourcetype.md) for definido como sysmonLogFiles.
+**antes do Windows Vista:** Você não poderá remover arquivos de log da [**coleção de arquivos de log**](systemmonitor-logfiles.md) se o valor de [**SystemMonitor. DataSourceType**](systemmonitor-datasourcetype.md) for definido como sysmonLogFiles.
 
 ## <a name="requirements"></a>Requisitos
 

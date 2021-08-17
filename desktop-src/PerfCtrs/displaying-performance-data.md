@@ -4,16 +4,16 @@ ms.assetid: 75e45baf-51c5-400c-a31f-92bdab4ee492
 title: Exibindo dados de desempenho
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 22d913474b794585dd557fae2b1fc232336b637d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c56a2882485c0bf21db6f1f00788fb927442219f020b1241ab4cd64619c7ec56
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105758446"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117794007"
 ---
 # <a name="displaying-performance-data"></a>Exibindo dados de desempenho
 
-A maioria dos contadores requer dois valores de exemplo para computar um valor que possa ser reproduzido. A fórmula para cada contador determina se o contador requer dois exemplos. Para obter uma lista de contadores e suas fórmulas, consulte a seção tipos de contadores do [Kit de implantação do Windows Server 2003](/previous-versions/windows/it-pro/windows-server-2003/cc776490(v=ws.10)).
+A maioria dos contadores requer dois valores de exemplo para computar um valor que possa ser reproduzido. A fórmula para cada contador determina se o contador requer dois exemplos. para obter uma lista de contadores e suas fórmulas, consulte a seção tipos de contadores do [Kit de implantação do Windows Server 2003](/previous-versions/windows/it-pro/windows-server-2003/cc776490(v=ws.10)).
 
 [Coletar dados de desempenho](collecting-performance-data.md) mostra como recuperar dados de exemplo. Depois de obter os exemplos, você normalmente chama [**PdhGetFormattedCounterValue**](/windows/desktop/api/Pdh/nf-pdh-pdhgetformattedcountervalue) para calcular um valor que pode ser displayável.
 

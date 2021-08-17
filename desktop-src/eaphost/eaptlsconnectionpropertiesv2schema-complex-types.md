@@ -9,16 +9,16 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 0d4840545e7b6d262da50d985fbf4b09e78c2e85
-ms.sourcegitcommit: b0ebdefc3dcd5c04bede94091833aa1015a2f95c
+ms.openlocfilehash: 1755297226ce87e46667a313158b905a5d89df46a1c49307acbda885704df3d7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "104454354"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117720169"
 ---
 # <a name="eaptlsconnectionpropertiesv2-schema-complex-types"></a>Tipos complexos de esquema eaptlsconnectionpropertiesv2
 
-O esquema eaptlsconnectionpropertiesv2 define os tipos complexos a seguir.
+O esquema eaptlsconnectionpropertiesv2 define os seguintes tipos complexos.
 
 -   [**TLSExtensionsType**](eaptlsconnectionpropertiesv2schema-tlsextensionstype-complextype.md)
 
@@ -35,9 +35,9 @@ O esquema eaptlsconnectionpropertiesv2 define os tipos complexos a seguir.
 [Esquema eaptlsconnectionpropertiesv2](eaptlsconnectionpropertiesv2schema-schema.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,27 +1,27 @@
 ---
-description: Se essa política do sistema por máquina estiver definida como &\# 0034; 1&\# 0034;, o instalador não avisará os usuários quando os scripts em uma página da Web usarem a interface de automação do instalador.
+description: Se essa política de sistema por computador estiver definida como &\# 0034;1&0034;, o instalador não solicitará aos usuários quando os scripts em uma página da Web usarem a interface de automação do \# instalador.
 ms.assetid: 1365996d-30a2-43f9-8e1b-7704d46a11c9
 title: SafeForScripting
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2907c4b021101ff936bdddf98a5cc1e32a01b991
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5b9a78bded284a687994075fdda1276122df2ab68716c4aaf759b4f5750aeb15
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105756891"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117990146"
 ---
 # <a name="safeforscripting"></a>SafeForScripting
 
-Se essa [política do sistema](system-policy.md) por máquina for definida como "1", o instalador não avisará os usuários quando os scripts em uma página da Web usarem a [interface de automação](automation-interface.md)do instalador.
+Se essa política [](system-policy.md) de sistema por computador estiver definida como "1", o instalador não solicitará aos usuários quando os scripts em uma página da Web usarem a interface de automação [do instalador.](automation-interface.md)
 
-Antes de definir essa política, você deve considerar se, antes do prompt do usuário, ele fornece um nível apropriado de segurança para seus usuários. Se essa política não estiver definida, quando um script hospedado por um navegador da Internet tentar instalar um aplicativo, o sistema avisará o usuário e solicitará que eles aceitem ou recusem a instalação. A definição de SafeForScripting suprime esse aviso e pode permitir a instalação de aplicativos no sistema sem o conhecimento do usuário. Essa política pode ser útil para uma empresa que usa ferramentas baseadas na Web para distribuir programas.
+Antes de definir essa política, você deve considerar se o prompt de usuário anterior fornece um nível apropriado de segurança para seus usuários. Se essa política não estiver definida, quando um script hospedado por um navegador da Internet tentar instalar um aplicativo, o sistema avisará o usuário e pedirá que ele aceite ou recuse a instalação. Definir SafeForScripting suprime esse aviso e pode permitir a instalação de aplicativos no sistema sem o conhecimento do usuário. Essa política pode ser útil para uma empresa que usa ferramentas baseadas na Web para distribuir programas.
 
-Para obter mais informações, consulte [diretrizes para criar instalações seguras](guidelines-for-authoring-secure-installations.md) e [assinaturas digitais e Windows Installer](digital-signatures-and-windows-installer.md) e [baixar uma instalação da Internet](downloading-an-installation-from-the-internet.md).
+Para obter mais informações, consulte Diretrizes para a autor de instalações [seguras](guidelines-for-authoring-secure-installations.md) e [assinaturas](digital-signatures-and-windows-installer.md) digitais e Windows instalador e download de uma instalação da [Internet.](downloading-an-installation-from-the-internet.md)
 
 ## <a name="registry-key"></a>Chave do Registro
 
-**HKEY \_ \_** Políticas de \\ **software** do computador local \\  \\ **Microsoft** \\ **Windows** \\ **Installer**
+**HKEY \_ Instalador \_ do** Microsoft machine \\ **software** \\ **policies** \\  \\ **microsoft Windows** \\ 
 
 ## <a name="data-type"></a>Tipo de Dados
 

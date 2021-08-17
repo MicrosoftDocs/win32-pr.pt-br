@@ -4,12 +4,12 @@ description: Inicie a fase de ponto de controle em um sombreador envoltória.
 ms.assetid: 9CF26691-C04F-4728-8418-40F313ABBE4A
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: aba3f591fcd656e64609513dca7b9126496a86d6
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: 01779bc573b47d3d3a2d8765ee0c1931c646c30503a88a7e5421f2db211116f0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104006912"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117907346"
 ---
 # <a name="hs_control_point_phase-sm5---asm"></a>\_ \_ fase de ponto de controle HS \_ (SM5-ASM)
 
@@ -22,7 +22,7 @@ Inicie a fase de ponto de controle em um sombreador envoltória.
 
 
 
- 
+ 
 
 ## <a name="remarks"></a>Comentários
 
@@ -30,13 +30,13 @@ Essa instrução se aplica aos seguintes estágios de sombreador:
 
 
 
-| Vértice | Envoltória | Domínio | Geometria | 16x16 | Computação |
+| Vértice | Envoltória | Domínio | Geometry | 16x16 | Computação |
 |--------|------|--------|----------|-------|---------|
 |        | X    |        |          |       |         |
 
 
 
- 
+ 
 
 ## <a name="minimum-shader-model"></a>Modelo de sombreamento mínimo
 
@@ -55,7 +55,7 @@ Essa instrução tem suporte nos seguintes modelos de sombreador:
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -64,9 +64,9 @@ Essa instrução tem suporte nos seguintes modelos de sombreador:
 [Assembly do Shader Model 5 (DirectX HLSL)](shader-model-5-assembly--directx-hlsl-.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

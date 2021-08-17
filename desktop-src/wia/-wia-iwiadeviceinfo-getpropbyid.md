@@ -1,7 +1,7 @@
 ---
 description: O método GetPropById do objeto DeviceInfo usa a ID de uma propriedade de dispositivo para retornar seu valor.
 ms.assetid: 9c68e6af-446c-4750-89e6-70862b23b296
-title: Método DeviceInfo. GetPropById
+title: Método DeviceInfo.GetPropById
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Wiascr.dll
-ms.openlocfilehash: adbc8b6a29f97066c8dc5b2e45b7ddc5834f2b60
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c996989661703c4a9c7416cd63904c376fdb7fcca3071d4558551bdd78470d3a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105766556"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118208782"
 ---
-# <a name="deviceinfogetpropbyid-method"></a>Método DeviceInfo. GetPropById
+# <a name="deviceinfogetpropbyid-method"></a>Método DeviceInfo.GetPropById
 
-O método **GetPropById** do objeto [**DEVICEINFO**](-wia-deviceinfo.md) usa a ID de uma propriedade de dispositivo para retornar seu valor.
+O **método GetPropById** do [**objeto DeviceInfo**](-wia-deviceinfo.md) usa a ID de uma propriedade de dispositivo para retornar seu valor.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -48,17 +48,17 @@ Especifica a ID da propriedade.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Tipo: **variante**
+Tipo: **VARIANT**
 
-Esse método retorna o valor da propriedade especificada por *ID*.
+Esse método retorna o valor da propriedade especificada pela *ID*.
 
 ## <a name="remarks"></a>Comentários
 
-Use esse método para localizar o valor de uma propriedade de dispositivo de sua ID. Para obter uma lista de IDs de propriedade, consulte [definições de constante de propriedade WIA](-wia-wia-property-constant-definitions.md). Para obter informações sobre as próprias propriedades de aquisição de imagem do Windows (WIA), consulte [constantes da propriedade WIA](-wia-wia-property-constants.md).
+Use esse método para encontrar o valor de uma propriedade de dispositivo de sua ID. Para ver uma lista de IDs de propriedade, consulte [Definições de constante](-wia-wia-property-constant-definitions.md)de propriedade WIA . Para obter informações sobre Windows wia (aquisição de imagem) em si, consulte [Constantes de propriedade WIA](-wia-wia-property-constants.md).
 
-Para aplicativos Microsoft Visual Basic, adicione uma referência a "biblioteca de tipos do Windows Image Acquisition 1, 1". Estas constantes definidas nesse arquivo são válidas para este método:
+Para aplicativos Visual Basic Microsoft, adicione uma referência à "biblioteca de tipos Windows image acquisition 1.01". As seguintes constantes definidas nesse arquivo são válidas para este método:
 
 ``` syntax
 const DeviceID = 2
@@ -74,7 +74,7 @@ const UIClassID = 10
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo a seguir demonstra o uso do método **GetPropById** para recuperar um valor de propriedade.
+O exemplo a seguir demonstra o uso do **método GetPropById** para recuperar um valor da propriedade.
 
 
 ```JScript
@@ -103,9 +103,9 @@ Next
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 2000 Professional, \[ somente aplicativos da área de trabalho do Windows XP\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                                          |
-| DLL<br/>                      | <dl> <dt>Wiascr.dll (versão 4,90 ou posterior)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 2000 Professional, Windows aplicativos da área de \[ trabalho XP\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                                          |
+| DLL<br/>                      | <dl> <dt>Wiascr.dll (versão 4.90 ou posterior)</dt> </dl> |
 
 
 

@@ -330,34 +330,34 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
+Qualificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
 Identificador pelo qual o objeto atual é conhecido.
 
-Essa propriedade é herdada [**da \_ configuração de CIM**](cim-setting.md).
+Essa propriedade é herdada da [**Configuração cim \_**](cim-setting.md).
 
 </dd> <dt>
 
 **UseSurrogate**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| HKEY \_ local \_ Machine \\ \\ software \\ \\ classes \\ \\ AppID \\ \\ {GUID} \[ DllSurrogate \] ")
+Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| HKEY \_ LOCAL MACHINE SOFTWARE Classes \_ \\ \\ \\ \\ \\ \\ AppID \\ \\ {GUID} \[ DllSurrogate \] ")
 </dt> </dl>
 
-O aplicativo DCOM pode ser ativado como um servidor fora do processo pelo uso de um arquivo executável substituto.
+O aplicativo DCOM pode ser ativado como um servidor fora do processo por meio de um arquivo executável substituto.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-A classe **Win32 \_ DCOMApplicationSetting** é derivada da [**\_ configuração do Win32**](win32-comsetting.md).
+A **classe Win32 \_ DCOMApplicationSetting** é derivada de [**Win32 \_ COMSetting**](win32-comsetting.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -367,8 +367,8 @@ A classe **Win32 \_ DCOMApplicationSetting** é derivada da [**\_ configuração
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| Namespace<br/>                | Raiz \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Namespace<br/>                | RAIZ \\ CIMV2<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -377,7 +377,7 @@ A classe **Win32 \_ DCOMApplicationSetting** é derivada da [**\_ configuração
 
 <dl> <dt>
 
-[**Configuração do Win32 \_**](win32-comsetting.md)
+[**ComSetting do Win32 \_**](win32-comsetting.md)
 </dt> <dt>
 
 [Classes do sistema operacional](/previous-versions//aa392727(v=vs.85))
@@ -386,10 +386,10 @@ A classe **Win32 \_ DCOMApplicationSetting** é derivada da [**\_ configuração
 [**Constantes de privilégio**](/windows/desktop/WmiSdk/privilege-constants)
 </dt> <dt>
 
-[Objetos do descritor de segurança do WMI](/windows/desktop/WmiSdk/wmi-security-descriptor-objects)
+[Objetos do descritor de segurança WMI](/windows/desktop/WmiSdk/wmi-security-descriptor-objects)
 </dt> <dt>
 
-[Alterando a segurança de acesso em objetos protegíveis](/windows/desktop/WmiSdk/changing-access-security-on-securable-objects)
+[Alterando a segurança de acesso em objetos securáveis](/windows/desktop/WmiSdk/changing-access-security-on-securable-objects)
 </dt> </dl>
 
  

@@ -1,8 +1,8 @@
 ---
-description: A \_ classe de chassi CIM representa os elementos físicos que incluem outros elementos e fornece funcionalidade definíveis, como um desktop, nó de processamento, UPS, armazenamento em disco ou fita ou uma combinação desses.
+description: A classe Chassi CIM representa os elementos físicos que delimitam outros elementos e fornecem funcionalidades definíveis, como uma área de trabalho, nó de processamento, UPS, armazenamento em disco ou fita ou uma combinação \_ deles.
 ms.assetid: 4c55dbff-bc4a-4cc9-8f34-29636defaa56
 ms.tgt_platform: multiple
-title: Classe CIM_Chassis
+title: CIM_Chassis classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -49,19 +49,19 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: b1eb7f5e2733056cf48c1c9333453613ace699c6
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 271f01587dc67c14464cfdb06de321d853b8b9a606a99cb1aca8fdcb0ff2ca17
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104089354"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117835031"
 ---
-# <a name="cim_chassis-class"></a>\_Classe de chassi CIM
+# <a name="cim_chassis-class"></a>Classe chassi CIM \_
 
-A classe de **\_ chassi CIM** representa os elementos físicos que incluem outros elementos e fornece funcionalidade definíveis, como um desktop, nó de processamento, UPS, armazenamento em disco ou fita ou uma combinação desses.
+A **classe \_ Chassi CIM** representa os elementos físicos que delimitam outros elementos e fornecem funcionalidades definíveis, como uma área de trabalho, nó de processamento, UPS, armazenamento em disco ou fita ou uma combinação deles.
 
 > [!IMPORTANT]
-> As classes DMTF (Distributed Management Task Force) CIM (modelo CIM) são as classes pai nas quais as classes WMI são criadas. Atualmente, o WMI dá suporte apenas aos [esquemas de versão do CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> As classes CIM (Distributed Management Task Force) do DMTF (Distributed Management Task Force) modelo CIM são as classes pai nas quais as classes WMI são criadas. Atualmente, o WMI dá suporte apenas aos esquemas de versão [do CIM 2.x.](https://dmtf.org/standards/cim/schemas)
 
  
 
@@ -113,20 +113,20 @@ class CIM_Chassis : CIM_PhysicalFrame
 
 ## <a name="members"></a>Membros
 
-A classe de **\_ chassi CIM** tem estes tipos de membros:
+A **classe \_ chassi CIM** tem estes tipos de membros:
 
 -   [Métodos](#methods)
 -   [Propriedades](#properties)
 
 ### <a name="methods"></a>Métodos
 
-A classe de **\_ chassi CIM** tem esses métodos.
+A **classe \_ chassi CIM** tem esses métodos.
 
 
 
 | Método                                                           | Descrição                                                                                                                                      |
 |:-----------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**Iscompatível**](iscompatible-method-in-class-cim-chassis.md) | Verifica se o elemento físico referenciado pode ser contido ou inserido no pacote físico. Não implementado pelo WMI.<br/> |
+| [**IsCompatible**](iscompatible-method-in-class-cim-chassis.md) | Verifica se o elemento físico referenciado pode ser contido ou inserido no pacote físico. Não implementado pelo WMI.<br/> |
 
 
 
@@ -134,22 +134,22 @@ A classe de **\_ chassi CIM** tem esses métodos.
 
 ### <a name="properties"></a>Propriedades
 
-A classe de **\_ chassi CIM** tem essas propriedades.
+A **classe \_ chassi CIM** tem essas propriedades.
 
 <dl> <dt>
 
 **AudibleAlarm**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Se for **true**, o quadro será equipado com um alarme audível.
+Se **TRUE**, o quadro será equipado com um alarme audível.
 
-Essa propriedade é herdada do [**CIM \_ PhysicalFrame**](cim-physicalframe.md).
+Essa propriedade é herdada de [**CIM \_ PhysicalFrame.**](cim-physicalframe.md)
 
 </dd> <dt>
 
@@ -162,12 +162,12 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ PhysicalFrame**](cim-physicalframe.md).**SecurityBreach**")
+Qualificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ PhysicalFrame.**](cim-physicalframe.md)**SecurityBreach**")
 </dt> </dl>
 
 Cadeia de caracteres de forma livre que fornece mais informações se a propriedade **SecurityBreach** indicar que ocorreu uma violação ou algum outro evento relacionado à segurança.
 
-Essa propriedade é herdada do [**CIM \_ PhysicalFrame**](cim-physicalframe.md).
+Essa propriedade é herdada de [**CIM \_ PhysicalFrame.**](cim-physicalframe.md)
 
 </dd> <dt>
 
@@ -180,9 +180,9 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Cadeia de caracteres de forma livre que contém informações sobre como os vários cabos são conectados e agrupados para o quadro. Com muitos cabos de rede, relacionados ao armazenamento e de energia, o gerenciamento de cabos pode ser um esforço complexo e desafiador. Essa propriedade de cadeia de caracteres contém informações para auxiliar no assembly e no serviço do quadro.
+Cadeia de caracteres de forma livre que contém informações sobre como os vários cabos são conectados e agrupados para o quadro. Com muitos cabos de rede, de armazenamento e de energia, o gerenciamento de cabos pode ser um esforço complexo e desafiador. Essa propriedade de cadeia de caracteres contém informações para auxiliar no assembly e no serviço do quadro.
 
-Essa propriedade é herdada do [**CIM \_ PhysicalFrame**](cim-physicalframe.md).
+Essa propriedade é herdada de [**CIM \_ PhysicalFrame.**](cim-physicalframe.md)
 
 </dd> <dt>
 
@@ -195,34 +195,34 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Caption")
+Qualificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Legenda")
 </dt> </dl>
 
-Uma breve descrição textual do objeto.
+Uma breve descrição textual do objeto .
 
-Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **ChassisTypes**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: a matriz **UInt16**
+Tipo de dados: **matriz uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("indexado"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. \|Tabela global de contêiner físico DMTF \| 2,1 "), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) (**" \_ chassi CIM**.**TypeDescriptions**")
+Qualificadores: [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("Indexado"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. Tabela Global do Contêiner Físico DMTF \| \| 002.1"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**Chassi \_ CIM**.**TypeDescriptions**")
 </dt> </dl>
 
-Enumeração, matriz com valor inteiro que indica o tipo de chassi.
+Matriz enumerada com valor inteiro que indica o tipo de chassi.
 
 <dt>
 
 <span id="Other"></span><span id="other"></span><span id="OTHER"></span>
 
-<span id="Other"></span><span id="other"></span><span id="OTHER"></span>**Outro** (1)
+<span id="Other"></span><span id="other"></span><span id="OTHER"></span>**Outros** (1)
 
 
 </dt> <dd>
@@ -244,7 +244,7 @@ Desconhecido.
 
 <span id="Desktop"></span><span id="desktop"></span><span id="DESKTOP"></span>
 
-<span id="Desktop"></span><span id="desktop"></span><span id="DESKTOP"></span>**Área de trabalho** (3)
+<span id="Desktop"></span><span id="desktop"></span><span id="DESKTOP"></span>**Área de** trabalho (3)
 
 
 </dt> <dd>
@@ -277,7 +277,7 @@ Caixa de pizza.
 
 <span id="Mini_Tower"></span><span id="mini_tower"></span><span id="MINI_TOWER"></span>
 
-<span id="Mini_Tower"></span><span id="mini_tower"></span><span id="MINI_TOWER"></span>**Mini-torre** (6)
+<span id="Mini_Tower"></span><span id="mini_tower"></span><span id="MINI_TOWER"></span>**Mini Tower** (6)
 
 
 </dt> <dd>
@@ -288,7 +288,7 @@ Mini-torre.
 
 <span id="Tower"></span><span id="tower"></span><span id="TOWER"></span>
 
-<span id="Tower"></span><span id="tower"></span><span id="TOWER"></span>**Torre** (7)
+<span id="Tower"></span><span id="tower"></span><span id="TOWER"></span>**Tower** (7)
 
 
 </dt> <dd>
@@ -326,18 +326,18 @@ Laptop.
 
 </dt> <dd>
 
-D430.
+Notebook.
 
 </dd> <dt>
 
 <span id="Hand_Held"></span><span id="hand_held"></span><span id="HAND_HELD"></span>
 
-<span id="Hand_Held"></span><span id="hand_held"></span><span id="HAND_HELD"></span>**Mão suspensa** (11)
+<span id="Hand_Held"></span><span id="hand_held"></span><span id="HAND_HELD"></span>**Mão Mantida** (11)
 
 
 </dt> <dd>
 
-Mão.
+Mantido manualmente.
 
 </dd> <dt>
 
@@ -354,18 +354,18 @@ Estação de encaixe.
 
 <span id="All_in_One"></span><span id="all_in_one"></span><span id="ALL_IN_ONE"></span>
 
-<span id="All_in_One"></span><span id="all_in_one"></span><span id="ALL_IN_ONE"></span>**Tudo em um** (13)
+<span id="All_in_One"></span><span id="all_in_one"></span><span id="ALL_IN_ONE"></span>**All in One** (13)
 
 
 </dt> <dd>
 
-Tudo-em-um.
+Tudo em um.
 
 </dd> <dt>
 
 <span id="Sub_Notebook"></span><span id="sub_notebook"></span><span id="SUB_NOTEBOOK"></span>
 
-<span id="Sub_Notebook"></span><span id="sub_notebook"></span><span id="SUB_NOTEBOOK"></span>**Subnotebook** (14)
+<span id="Sub_Notebook"></span><span id="sub_notebook"></span><span id="SUB_NOTEBOOK"></span>**Sub notebook** (14)
 
 
 </dt> <dd>
@@ -420,29 +420,29 @@ Chassi de expansão.
 
 <span id="SubChassis"></span><span id="subchassis"></span><span id="SUBCHASSIS"></span>
 
-<span id="SubChassis"></span><span id="subchassis"></span><span id="SUBCHASSIS"></span>**Subchassi** (19)
+<span id="SubChassis"></span><span id="subchassis"></span><span id="SUBCHASSIS"></span>**SubChassis** (19)
 
 
 </dt> <dd>
 
-Subchassi.
+Subchassis.
 
 </dd> <dt>
 
 <span id="Bus_Expansion_Chassis"></span><span id="bus_expansion_chassis"></span><span id="BUS_EXPANSION_CHASSIS"></span>
 
-<span id="Bus_Expansion_Chassis"></span><span id="bus_expansion_chassis"></span><span id="BUS_EXPANSION_CHASSIS"></span>**Chassi de expansão de barramento** (20)
+<span id="Bus_Expansion_Chassis"></span><span id="bus_expansion_chassis"></span><span id="BUS_EXPANSION_CHASSIS"></span>**Chassi de expansão do barramento** (20)
 
 
 </dt> <dd>
 
-Chassi de expansão de barramento.
+Chassi de expansão do barramento.
 
 </dd> <dt>
 
 <span id="Peripheral_Chassis"></span><span id="peripheral_chassis"></span><span id="PERIPHERAL_CHASSIS"></span>
 
-<span id="Peripheral_Chassis"></span><span id="peripheral_chassis"></span><span id="PERIPHERAL_CHASSIS"></span>**Chassi de periférico** (21)
+<span id="Peripheral_Chassis"></span><span id="peripheral_chassis"></span><span id="PERIPHERAL_CHASSIS"></span>**Chassi periférico** (21)
 
 
 </dt> <dd>
@@ -453,12 +453,12 @@ Chassi periférico.
 
 <span id="Storage_Chassis"></span><span id="storage_chassis"></span><span id="STORAGE_CHASSIS"></span>
 
-<span id="Storage_Chassis"></span><span id="storage_chassis"></span><span id="STORAGE_CHASSIS"></span>**Chassi de armazenamento** (22)
+<span id="Storage_Chassis"></span><span id="storage_chassis"></span><span id="STORAGE_CHASSIS"></span>**Armazenamento chassi** (22)
 
 
 </dt> <dd>
 
-Chassi de armazenamento.
+Armazenamento chassi.
 
 </dd> <dt>
 
@@ -469,18 +469,18 @@ Chassi de armazenamento.
 
 </dt> <dd>
 
-Chassi de montagem de rack.
+Chassi de montagem em rack.
 
 </dd> <dt>
 
 <span id="Sealed-Case_PC"></span><span id="sealed-case_pc"></span><span id="SEALED-CASE_PC"></span>
 
-<span id="Sealed-Case_PC"></span><span id="sealed-case_pc"></span><span id="SEALED-CASE_PC"></span>**PC de caso lacrado** (24)
+<span id="Sealed-Case_PC"></span><span id="sealed-case_pc"></span><span id="SEALED-CASE_PC"></span>**COMPUTADOR com caso lacrado** (24)
 
 
 </dt> <dd>
 
-Computador com casos lacrados.
+Computador com caso lacrado.
 
 </dd> </dl>
 
@@ -1121,7 +1121,7 @@ Qualificadores: [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("i
 Matriz de cadeias de caracteres de forma livre que fornece informações sobre as entradas da matriz **ChassisTypes** .
 
 > [!Note]  
-> Cada entrada de matriz está relacionada à entrada na propriedade **ChassisTypes** , que está localizada no mesmo índice.
+> Cada entrada de matriz está relacionada à entrada na **propriedade ChassisTypes,** que está localizada no mesmo índice.
 
  
 
@@ -1136,27 +1136,27 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
+Qualificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
 </dt> </dl>
 
 Indica a versão do elemento físico.
 
-Essa propriedade é herdada do [**CIM \_ físicoelement**](cim-physicalelement.md).
+Essa propriedade é herdada de [**CIM \_ PhysicalElement.**](cim-physicalelement.md)
 
 </dd> <dt>
 
 **VisibleAlarm**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Se **for true**, o equipamento incluirá um alarme visível.
+Se **TRUE**, o equipamento incluirá um alarme visível.
 
-Essa propriedade é herdada do [**CIM \_ PhysicalFrame**](cim-physicalframe.md).
+Essa propriedade é herdada de [**CIM \_ PhysicalFrame.**](cim-physicalframe.md)
 
 </dd> <dt>
 
@@ -1169,12 +1169,12 @@ Tipo de dados: **real32**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("libras")
+Qualificadores: [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("quilogramas")
 </dt> </dl>
 
-Peso do pacote físico, em libras.
+Peso do pacote físico, em quilogramas.
 
-Essa propriedade é herdada do [**CIM \_ PhysicalPackage**](cim-physicalpackage.md).
+Essa propriedade é herdada de [**CIM \_ PhysicalPackage.**](cim-physicalpackage.md)
 
 </dd> <dt>
 
@@ -1192,17 +1192,17 @@ Qualificadores: [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("po
 
 Largura do pacote físico, em polegadas.
 
-Essa propriedade é herdada do [**CIM \_ PhysicalPackage**](cim-physicalpackage.md).
+Essa propriedade é herdada de [**CIM \_ PhysicalPackage.**](cim-physicalpackage.md)
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-A classe de **\_ chassi CIM** é derivada do [**CIM \_ PhysicalFrame**](cim-physicalframe.md).
+A **classe \_ chassi CIM** é derivada de CIM [**\_ PhysicalFrame.**](cim-physicalframe.md)
 
-O WMI não implementa essa classe. Para obter mais informações sobre classes derivadas **do \_ chassi CIM**, consulte [classes Win32](win32-provider.md).
+O WMI não implementa essa classe. Para obter mais informações sobre classes derivadas do **\_ Chassi CIM,** consulte [Classes Win32](win32-provider.md).
 
-Esta documentação é derivada das descrições da classe CIM publicadas pela DMTF. A Microsoft pode ter feito alterações para corrigir erros secundários, obedecer aos padrões de documentação do Microsoft SDK ou fornecer mais informações.
+Esta documentação é derivada das descrições da classe CIM publicadas pelo DMTF. A Microsoft pode ter feito alterações para corrigir erros secundários, estar em conformidade com os padrões de documentação do SDK da Microsoft ou fornecer mais informações.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -1212,8 +1212,8 @@ Esta documentação é derivada das descrições da classe CIM publicadas pela D
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| Namespace<br/>                | Raiz \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Namespace<br/>                | RAIZ \\ CIMV2<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -1222,7 +1222,7 @@ Esta documentação é derivada das descrições da classe CIM publicadas pela D
 
 <dl> <dt>
 
-[**\_PHYSICALFRAME CIM**](cim-physicalframe.md)
+[**CIM \_ PhysicalFrame**](cim-physicalframe.md)
 </dt> </dl>
 
  

@@ -4,12 +4,12 @@ ms.assetid: 46a81a7b-527c-4d41-8d25-ce65fd87416e
 title: Mensagem de SFVM_GETDETAILSOF (shlobj. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6170c0fc8dc29435b2c6f2bb033f30706ccb7b33
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c6fd850a3f500a1d259ebdcae9e5c549ef76a8eab0d5e1d14c1385fbba8d27ca
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104968067"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118048445"
 ---
 # <a name="sfvm_getdetailsof-message"></a>\_Mensagem SFVM GETDETAILSOF
 
@@ -51,11 +51,11 @@ Um ponteiro para uma estrutura [**DETAILSINFO**](/windows/desktop/api/shlobj_cor
 
 | Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                                         |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho XP\]<br/>                                         |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                |
 | Fim do suporte do cliente<br/>    | Windows XP com SP2<br/>                                                      |
 | Fim do suporte do servidor<br/>    | Windows Server 2003<br/>                                                      |
-| parâmetro<br/>                   | <dl> <dt>Shlobj. h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Shlobj. h</dt> </dl> |
 
 
 

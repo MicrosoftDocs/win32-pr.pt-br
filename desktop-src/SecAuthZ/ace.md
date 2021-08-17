@@ -4,12 +4,12 @@ ms.assetid: 980b8242-2ba2-469f-b834-da7d3fb22e14
 title: ACE (WinNT. h)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9e4d06b3457e4df6aea38d3e35acf4f7aaa4e2f2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: de555170bc8b7c1594b38adaa95d19b7e9ace54c8241fc971ea9f5383cf3e115
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105751326"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117785215"
 ---
 # <a name="ace"></a>PERFEITA
 
@@ -181,9 +181,9 @@ Não há suporte para as ACEs System-Alarm específicas do sistema e do objeto.
 
 | Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                                                            |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                                   |
-| parâmetro<br/>                   | <dl> <dt>Winnt. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho XP\]<br/>                                                            |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                                   |
+| Cabeçalho<br/>                   | <dl> <dt>Winnt. h (incluir Windows. h)</dt> </dl> |
 
 
 
@@ -200,7 +200,7 @@ Não há suporte para as ACEs System-Alarm específicas do sistema e do objeto.
 [**Ace de acesso \_ negado \_**](/windows/desktop/api/Winnt/ns-winnt-access_denied_ace)
 </dt> <dt>
 
-[**LCA**](/windows/desktop/api/Winnt/ns-winnt-acl)
+[**ACL**](/windows/desktop/api/Winnt/ns-winnt-acl)
 </dt> <dt>
 
 [**\_Ace do alarme do sistema \_**](/windows/desktop/api/Winnt/ns-winnt-system_alarm_object_ace)

@@ -1,23 +1,23 @@
 ---
-description: Instala um certificado registrado de um arquivo de troca de informações pessoais (PFX) no repositório de certificados.
+description: instala um certificado registrado de um arquivo Exchange de informações pessoais (PFX) no repositório de certificados.
 ms.assetid: f42379d0-b80e-4d95-ab34-9bb35fde06fd
 title: installResponseFromPFX
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0db435b3d61f5b2e53a9838024f4080bb8028ed1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 540e719f098d227afac4af59fd2d296d9d06606d04b9de80cf1e24081918d6f6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103922444"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117777602"
 ---
 # <a name="installresponsefrompfx"></a>installResponseFromPFX
 
-O exemplo installResponseFromPFX instala um certificado registrado de um arquivo de troca de informações pessoais (PFX) no repositório de certificados.
+o exemplo installResponseFromPFX instala um certificado registrado de um arquivo de Exchange informações pessoais (PFX) para o repositório de certificados.
 
-## <a name="location"></a>Local
+## <a name="location"></a>Localização
 
-Quando você instala o SDK (Software Development Kit) do Microsoft Windows, o exemplo é instalado, por padrão, na pasta *% ProgramFiles%* \\ Microsoft SDKs \\ Windows \\ v 7.0 \\ Samples \\ Security \\ X509 Certificate registro \\ vc \\ installResponseFromPFX.
+quando você instala o Microsoft Windows Software Development Kit (SDK), o exemplo é instalado, por padrão, na pasta *% programfiles%* \\ Microsoft SDKs \\ Windows \\ v 7.0 \\ samples \\ Security \\ X509 Certificate registro \\ VC \\ installResponseFromPFX.
 
 ## <a name="discussion"></a>Discussão
 

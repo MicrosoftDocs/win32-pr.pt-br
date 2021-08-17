@@ -24,17 +24,17 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: d61828a8961ee0cc2deada82bf06ad0a214fc338
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2d980d1be456e7a733a023455e7a6731480fcdad577038ef0c59b36b33a796ec
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104169963"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117896958"
 ---
 # <a name="esentslvpagesnotreservedexception-constructor"></a>Construtor EsentSLVPagesNotReservedException
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -56,6 +56,6 @@ public EsentSLVPagesNotReservedException()
 
 [Classe EsentSLVPagesNotReservedException](./esentslvpagesnotreservedexception-class.md)
 
-[Membros do EsentSLVPagesNotReservedException](./esentslvpagesnotreservedexception-members.md)
+[Membros EsentSLVPagesNotReservedException](./esentslvpagesnotreservedexception-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

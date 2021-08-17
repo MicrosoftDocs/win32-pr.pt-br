@@ -1,6 +1,6 @@
 ---
 title: Classe MDM_Policy_Config01_Bluetooth02
-description: A \_ classe MDM Policy \_ Config01 \_ Bluetooth02 representa as políticas de gerenciamento de Bluetooth disponíveis.
+description: a \_ classe MDM Policy \_ Config01 \_ Bluetooth02 representa as políticas de gerenciamento de Bluetooth disponíveis.
 ms.assetid: 8544c8df-a57b-4e21-87ee-f819aeddc071
 keywords:
 - Classe MDM_Policy_Config01_Bluetooth02
@@ -17,18 +17,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ceeea1cd099fa00d6138a0ff1d37123725f0be2c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 43ebfdb4283f05b54079e1f34c7331f6fa925dfe75ca1fd5df848722a36d03d1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104085382"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118165326"
 ---
 # <a name="mdm_policy_config01_bluetooth02-class"></a>\_Classe MDM \_ Config01 \_ Bluetooth02
 
-\[Algumas informações estão relacionadas ao produto de pré-lançamento que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não faz nenhuma garantia, expressa ou implícita, com relação às informações fornecidas aqui.\]
+\[Algumas informações estão relacionadas ao produto de pré-lançamento que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não oferece garantias, expressas ou implícitas, das informações aqui fornecidas.\]
 
-A classe **MDM \_ Policy \_ Config01 \_ Bluetooth02** representa as políticas de gerenciamento de Bluetooth disponíveis.
+a classe **MDM \_ Policy \_ Config01 \_ Bluetooth02** representa as políticas de gerenciamento de Bluetooth disponíveis.
 
 A sintaxe a seguir é simplificada do código MOF e inclui todas as propriedades herdadas.
 
@@ -153,7 +153,7 @@ Tipo de acesso: leitura/gravação
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10\]<br/>                                                    |
+| Cliente mínimo com suporte<br/> | Windows 10 \[ somente aplicativos da área de trabalho\]<br/>                                                    |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                      |
 | Namespace<br/>                | \\DMMap de \\ MDM \\ CIMv2 raiz<br/>                                                             |
 | MOF<br/>                      | <dl> <dt>DMWmiBridgeProv. mof</dt> </dl> |

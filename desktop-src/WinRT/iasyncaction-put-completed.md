@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Windows.Foundation.idl
-ms.openlocfilehash: ec26401aeeed61445b0f244880864366fd5c6118
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: aff219d5e6847c64034eed1b057e300ea601eedaa8aa7a131f1467aeacc42422
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103920918"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118323159"
 ---
 # <a name="iasyncactionput_completed-method"></a>IAsyncAction::p o \_ método UT Completed
 
@@ -42,15 +42,15 @@ HRESULT put_Completed(
 *manipulador* \[ fora\]
 </dt> <dd>
 
-Tipo: **[**AsyncActionCompletedHandler**](asyncactioncompletedhandler.md) \** _
+Tipo: **[ **AsyncActionCompletedHandler**](asyncactioncompletedhandler.md)\***
 
 O método que manipula a notificação de conclusão.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Tipo: _ *HRESULT**
+Tipo: **HRESULT**
 
 Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
 
@@ -62,7 +62,7 @@ Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, e
 |-------------------------------------|---------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 8<br/>                                                                              |
 | Servidor mínimo com suporte<br/> | Windows Server 2012<br/>                                                                    |
-| parâmetro<br/>                   | <dl> <dt>Windows. Foundation. idl</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Windows. Foundation. idl</dt> </dl> |
 
 
 

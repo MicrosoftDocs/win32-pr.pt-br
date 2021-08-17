@@ -22,7 +22,7 @@ ms.locfileid: "118471669"
 ---
 # <a name="mergeandvalidateprintticketthunk2-function"></a>Função MergeAndValidatePrintTicketThunk2
 
-\[Essa função não tem suporte e pode ser desabilitada ou excluída em versões futuras do Windows. O [**PTMergeAndValidatePrintTicket**](/windows/desktop/api/prntvpt/nf-prntvpt-ptmergeandvalidateprintticket) fornece funcionalidade equivalente e deve ser usado em vez disso.\]
+\[Essa função não tem suporte e pode ser desabilitada ou excluída em versões futuras do Windows. [**PTMergeAndValidatePrintTicket**](/windows/desktop/api/prntvpt/nf-prntvpt-ptmergeandvalidateprintticket) fornece funcionalidade equivalente e deve ser usado em vez disso.\]
 
 Mescla dois tíquetes de impressão e retorna um tíquete de impressão válido e viável.
 
@@ -49,56 +49,56 @@ HRESULT MergeAndValidatePrintTicketThunk2(
 
 <dl> <dt>
 
-*hProvider* \[ no\]
+*hProvider* \[ Em\]
 </dt> <dd>
 
-Um identificador para um provedor de tíquete de impressão aberto. Esse identificador é retornado pela função [**BindPTProviderThunk**](bindptproviderthunk.md) .
+Um handle para um provedor de tíquete de impressão aberto. Esse handle é retornado pela [**função BindPTProviderThunk.**](bindptproviderthunk.md)
 
 </dd> <dt>
 
-*pBasePrintTicket* \[ no\]
+*pBasePrintTicket* \[ Em\]
 </dt> <dd>
 
-O buffer que contém os dados de tíquete de impressão base, expressos em XML, conforme descrito no [esquema de impressão](./printschema.md).
+O buffer que contém os dados de tíquete de impressão base, expressos em XML, conforme descrito no [Esquema de Impressão](./printschema.md).
 
 </dd> <dt>
 
-*basePrintTicketLength* \[ no\]
+*basePrintTicketLength* \[ Em\]
 </dt> <dd>
 
 O tamanho, em bytes, do buffer referenciado por *pBasePrintTicket*.
 
 </dd> <dt>
 
-*pDeltaPrintTicket* \[ em, opcional\]
+*pDeltaPrintTicket* \[ in, opcional\]
 </dt> <dd>
 
-O buffer que contém o tíquete de impressão a ser mesclado. Os dados de tíquete de impressão são expressos em XML, conforme descrito no [esquema de impressão](./printschema.md). O valor desse parâmetro pode ser **nulo**.
+O buffer que contém o tíquete de impressão a ser mesclado. Os dados do tíquete de impressão são expressos em XML, conforme descrito no [Esquema de Impressão](./printschema.md). O valor desse parâmetro pode ser **NULL.**
 
 </dd> <dt>
 
-*deltaPrintTicketLength* \[ no\]
+*deltaPrintTicketLength* \[ Em\]
 </dt> <dd>
 
 O tamanho, em bytes, do buffer referenciado por *pDeltaPrintTicket*.
 
 </dd> <dt>
 
-*escopo* \[ no\]
+*escopo* \[ Em\]
 </dt> <dd>
 
-O valor que especifica se o escopo de *pDeltaPrintTicket* e *ppValidatedPrintTicket* é uma página única, um documento inteiro ou todos os documentos no trabalho de impressão. O valor desse parâmetro deve ser um membro da enumeração [**EPrintTicketScope**](/windows/desktop/api/prntvpt/ne-prntvpt-eprintticketscope) , Cast como um **DWORD**.
+O valor que especifica se o escopo *de pDeltaPrintTicket* e *ppValidatedPrintTicket* é uma única página, um documento inteiro ou todos os documentos no trabalho de impressão. O valor desse parâmetro deve ser um membro da enumeração [**EPrintTicketScope,**](/windows/desktop/api/prntvpt/ne-prntvpt-eprintticketscope) cast como um **DWORD.**
 
 </dd> <dt>
 
-*ppValidatedPrintTicket* \[ fora\]
+*ppValidatedPrintTicket* \[ out\]
 </dt> <dd>
 
-O endereço do buffer que contém o tíquete de impressão mesclado e validado. Essa função chama [**CoTaskMemAlloc**](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemalloc) para alocar esse buffer. Quando o buffer não for mais necessário, o chamador deverá liberá-lo chamando [**CoTaskMemFree**](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemfree).
+O endereço do buffer que contém o tíquete de impressão mesclado e validado. Essa função chama [**CoTaskMemAlloc para**](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemalloc) alocar esse buffer. Quando o buffer não for mais necessário, o chamador deverá libera-lo chamando [**CoTaskMemFree.**](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemfree)
 
 </dd> <dt>
 
-*pValidatedPrintTicketLength* \[ fora\]
+*pValidatedPrintTicketLength* \[ out\]
 </dt> <dd>
 
 O tamanho, em bytes, do buffer referenciado por *ppValidatedPrintTicket*.
@@ -108,13 +108,13 @@ O tamanho, em bytes, do buffer referenciado por *ppValidatedPrintTicket*.
 *pbstrErrorMessage* \[ out, opcional\]
 </dt> <dd>
 
-Um ponteiro para uma cadeia de caracteres que especifica o que, se for algo, é inválido sobre o tíquete de impressão em *pBasePrintTicket* ou *pDeltaPrintTicket*. Se forem válidos, esse valor será **NULL**. Se *pbstrErrorMessage* não for **nulo** quando a função retornar, o chamador deverá liberar a cadeia de caracteres com [**SysFreeString**](/windows/win32/api/oleauto/nf-oleauto-sysfreestring).
+Um ponteiro para uma cadeia de caracteres que especifica o que, se algo, é inválido sobre o tíquete de impressão em *pBasePrintTicket* ou *pDeltaPrintTicket*. Se ambos são válidos, esse valor é **NULL.** Se *pbstrErrorMessage* não for **NULL** quando a função retornar, o chamador deverá liberar a cadeia de [**caracteres com SysFreeString**](/windows/win32/api/oleauto/nf-oleauto-sysfreestring).
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor retornado
 
-Se o método for bem sucedido, ele retornará **S \_ OK**; caso contrário, ele retornará um código de erro **HRESULT** . Para obter mais informações sobre códigos de erro COM, consulte [tratamento de erros](../com/error-handling-in-com.md).
+Se o método for bem-sucedido, ele **retornará S \_ OK;** caso contrário, retornará um **código de erro HRESULT.** Para obter mais informações sobre códigos de erro COM, consulte [Tratamento de erros](../com/error-handling-in-com.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -122,8 +122,8 @@ Se o método for bem sucedido, ele retornará **S \_ OK**; caso contrário, ele 
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho XP\]<br/>                                            |
-| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                   |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho XP\]<br/>                                            |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                   |
 | DLL<br/>                      | <dl> <dt>Prntvpt.dll</dt> </dl> |
 
 
@@ -132,7 +132,7 @@ Se o método for bem sucedido, ele retornará **S \_ OK**; caso contrário, ele 
 
 <dl> <dt>
 
-[Imprimir esquema](./printschema.md)
+[Esquema de impressão](./printschema.md)
 </dt> <dt>
 
 [**PTMergeAndValidatePrintTicket**](/windows/desktop/api/prntvpt/nf-prntvpt-ptmergeandvalidateprintticket)

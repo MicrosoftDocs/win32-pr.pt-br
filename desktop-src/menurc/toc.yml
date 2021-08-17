@@ -4,20 +4,20 @@
     - name: Introdução aos recursos
       href: introduction-to-resources.md
       items:
-        - name: Visões gerais de recursos
+        - name: Visão geral do recurso
           href: resources-overviews.md
           items:
             - name: 'Adicionando, excluindo e substituindo recursos'
               href: adding-deleting-and-replacing-resources.md
             - name: Enumerando recursos
               href: enumerating-resources.md
-            - name: Localizando e carregando recursos
+            - name: Localizar e carregar recursos
               href: finding-and-loading-resources.md
             - name: Formatos de arquivo de recurso
               href: resource-file-formats.md
             - name: Usando recursos
               href: using-resources.md
-        - name: Referência de recurso
+        - name: Referência de recursos
           href: resources-reference.md
           items:
             - name: Funções de recurso
@@ -53,7 +53,7 @@
                   href: /windows/desktop/api/libloaderapi/nf-libloaderapi-enumresourcetypesexw
                 - name: EnumResTypeProc
                   href: /previous-versions/windows/desktop/legacy/ms648041(v=vs.85)
-                - name: FindResource
+                - name: Findresource
                   href: /windows/desktop/api/Winbase/nf-winbase-findresourcea
                 - name: FindResourceEx
                   href: /windows/desktop/api/Winbase/nf-winbase-findresourceexa
@@ -61,9 +61,9 @@
                   href: /windows/desktop/api/libloaderapi/nf-libloaderapi-freeresource
                 - name: IndexFilePath
                   href: /windows/desktop/api/resourceindexer/nf-resourceindexer-indexfilepath
-                - name: LoadImage
+                - name: Loadimage
                   href: /windows/desktop/api/Winuser/nf-winuser-loadimagea
-                - name: LoadResource
+                - name: Loadresource
                   href: /windows/desktop/api/libloaderapi/nf-libloaderapi-loadresource
                 - name: LockResource
                   href: /windows/desktop/api/libloaderapi/nf-libloaderapi-lockresource
@@ -76,7 +76,7 @@
               items:
                 - name: IS_INTRESOURCE
                   href: /windows/desktop/api/Winuser/nf-winuser-is_intresource
-                - name: MAKEINTRESOURCE
+                - name: Makeintresource
                   href: /windows/desktop/api/winuser/nf-winuser-makeintresourcea
             - name: Estruturas de recursos
               href: resources-structures.md
@@ -87,7 +87,7 @@
                   href: cursordir.md
                 - name: CURSORSHAPE
                   href: /windows/win32/api/Winuser/ns-winuser-cursorshape
-                - name: Dialugado
+                - name: DIRENTRY
                   href: direntry.md
                 - name: FONTDIRENTRY
                   href: fontdirentry.md
@@ -121,20 +121,20 @@
                   href: resourceheader.md
             - name: Tipos de recurso
               href: resource-types.md
-    - name: Interpolação
+    - name: Carets
       href: carets.md
       items:
-        - name: Sobre os Cursors
+        - name: Sobre carets
           href: about-carets.md
-        - name: Usando os Cursors
+        - name: Usando pontos de cuidado
           href: using-carets.md
-        - name: Referência de cursor
+        - name: Referência de a caret
           href: caret-reference.md
           items:
-            - name: Funções de cursor
+            - name: Funções de adoção
               href: caret-functions.md
               items:
-                - name: Não importa
+                - name: Createcaret
                   href: /windows/desktop/api/Winuser/nf-winuser-createcaret
                 - name: DestroyCaret
                   href: /windows/desktop/api/Winuser/nf-winuser-destroycaret
@@ -142,13 +142,13 @@
                   href: /windows/desktop/api/Winuser/nf-winuser-getcaretblinktime
                 - name: GetCaretPos
                   href: /windows/desktop/api/Winuser/nf-winuser-getcaretpos
-                - name: HideCaret
+                - name: Hidecaret
                   href: /windows/desktop/api/Winuser/nf-winuser-hidecaret
                 - name: SetCaretBlinkTime
                   href: /windows/desktop/api/Winuser/nf-winuser-setcaretblinktime
-                - name: SetCaretPos
+                - name: Setcaretpos
                   href: /windows/desktop/api/Winuser/nf-winuser-setcaretpos
-                - name: Não importa
+                - name: Showcaret
                   href: /windows/desktop/api/Winuser/nf-winuser-showcaret
     - name: Cursores
       href: cursors.md
@@ -157,7 +157,7 @@
           href: about-cursors.md
         - name: Usando cursores
           href: using-cursors.md
-        - name: Referência do cursor
+        - name: Referência de cursor
           href: cursor-reference.md
           items:
             - name: Funções do cursor
@@ -167,7 +167,7 @@
                   href: /windows/desktop/api/Winuser/nf-winuser-clipcursor
                 - name: CopyCursor
                   href: /windows/desktop/api/Winuser/nf-winuser-copycursor
-                - name: CreateCursor
+                - name: Createcursor
                   href: /windows/desktop/api/Winuser/nf-winuser-createcursor
                 - name: DestroyCursor
                   href: /windows/desktop/api/Winuser/nf-winuser-destroycursor
@@ -181,11 +181,11 @@
                   href: /windows/desktop/api/Winuser/nf-winuser-getcursorpos
                 - name: GetPhysicalCursorPos
                   href: /windows/desktop/api/Winuser/nf-winuser-getphysicalcursorpos
-                - name: LoadCursor
+                - name: Loadcursor
                   href: /windows/desktop/api/Winuser/nf-winuser-loadcursora
                 - name: LoadCursorFromFile
                   href: /windows/desktop/api/Winuser/nf-winuser-loadcursorfromfilea
-                - name: SetCursor
+                - name: Setcursor
                   href: /windows/desktop/api/Winuser/nf-winuser-setcursor
                 - name: SetCursorPos
                   href: /windows/desktop/api/Winuser/nf-winuser-setcursorpos
@@ -193,12 +193,12 @@
                   href: /windows/desktop/api/Winuser/nf-winuser-setphysicalcursorpos
                 - name: SetSystemCursor
                   href: /windows/desktop/api/Winuser/nf-winuser-setsystemcursor
-                - name: Obter cursor
+                - name: ShowCursor
                   href: /windows/desktop/api/Winuser/nf-winuser-showcursor
-            - name: Notificações do cursor
+            - name: Notificações de cursor
               href: cursor-notifications.md
               items:
-                - name: WM_SETCURSOR
+                - name: Wm_setcursor
                   href: wm-setcursor.md
             - name: Estruturas de cursor
               href: cursor-structures.md
@@ -436,7 +436,7 @@
             - name: Estruturas de menu
               href: menu-structures.md
               items:
-                - name: MARDXTMENU
+                - name: MDINEXTMENU
                   href: /windows/win32/api/Winuser/ns-winuser-mdinextmenu
                 - name: MENUBARINFO
                   href: /windows/win32/api/Winuser/ns-winuser-menubarinfo
@@ -448,9 +448,9 @@
                   href: /windows/win32/api/Winuser/ns-winuser-menugetobjectinfo
                 - name: MENUINFO
                   href: /windows/win32/api/Winuser/ns-winuser-menuinfo
-                - name: Menuiteminfo
+                - name: MENUITEMINFO
                   href: /windows/win32/api/Winuser/ns-winuser-menuiteminfoa
-                - name: Menuitemtemplate
+                - name: MENUITEMTEMPLATE
                   href: /windows/desktop/api/Winuser/ns-winuser-menuitemtemplate
                 - name: MENUITEMTEMPLATEHEADER
                   href: /windows/desktop/api/Winuser/ns-winuser-menuitemtemplateheader
@@ -461,7 +461,7 @@
       items:
         - name: Sobre cadeias de caracteres
           href: about-strings.md
-        - name: Sobre Strsafe.h
+        - name: Sobre o strsafe. h
           href: strsafe-ovw.md
         - name: Referência de cadeia de caracteres
           href: string-reference.md
@@ -497,7 +497,7 @@
                   href: /windows/desktop/api/Winuser/nf-winuser-ischarlowera
                 - name: IsCharUpper
                   href: /windows/desktop/api/Winuser/nf-winuser-ischaruppera
-                - name: Loadstring
+                - name: Cadeia de caracteres LoadString
                   href: /windows/desktop/api/Winuser/nf-winuser-loadstringa
                 - name: lstrcat
                   href: /windows/desktop/api/Winbase/nf-winbase-lstrcata
@@ -519,7 +519,7 @@
                   href: /windows/desktop/api/Winuser/nf-winuser-wsprintfa
                 - name: wvsprintf
                   href: /windows/desktop/api/Winuser/nf-winuser-wvsprintfa
-            - name: Funções Strsafe
+            - name: Funções strsafe
               href: string-overviews.md
               items:
                 - name: StringCbCat
@@ -619,7 +619,7 @@
                   href: /windows/desktop/api/Winver/nf-winver-getfileversioninfoa
                 - name: GetFileVersionInfoEx
                   href: /windows/desktop/api/Winver/nf-winver-getfileversioninfoexa
-                - name: GetFileVersionInfoSize
+                - name: Falha em GetFileVersionInfoSize
                   href: /windows/desktop/api/Winver/nf-winver-getfileversioninfosizea
                 - name: GetFileVersionInfoSizeEx
                   href: /windows/desktop/api/Winver/nf-winver-getfileversioninfosizeexa

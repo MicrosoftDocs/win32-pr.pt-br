@@ -1,17 +1,17 @@
 ---
 description: O caminho do namespace do Shell para o item.
 ms.assetid: e0fb2092-0427-40c9-9e09-aefc5ef017e6
-title: System. ParsingPath
+title: System.ParsingPath
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ae62243ff37464617f87654f8ca1f04c3ea606da
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: de98a39806d2db752c72da9706eaf35b4b6b5296cb82f3a75bee4d35add3680c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103828138"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118230394"
 ---
-# <a name="systemparsingpath"></a>System. ParsingPath
+# <a name="systemparsingpath"></a>System.ParsingPath
 
 O caminho do namespace do Shell para o item.
 
@@ -33,15 +33,15 @@ propertyDescription
 
 ## <a name="remarks"></a>Comentários
 
-Os valores de PKEY são definidos em Propkey. h.
+Os valores PKEY são definidos em Propkey.h.
 
-Esse valor pode ser passado para [**SHParseDisplayName**](/windows/win32/api/shlobj_core/nf-shlobj_core-shparsedisplayname) para analisar o caminho para a pasta do Shell correta. Se o item for um arquivo, o valor será idêntico a [System. ItemPathDisplay](./props-system-itempathdisplay.md). Se o item não puder ser acessado por meio do namespace do Shell, esse valor será VT \_ vazio.
+Esse valor pode ser passado para [**SHParseDisplayName**](/windows/win32/api/shlobj_core/nf-shlobj_core-shparsedisplayname) para analisar o caminho para a pasta do Shell correta. Se o item for um arquivo, o valor será idêntico a [System.ItemPathDisplay.](./props-system-itempathdisplay.md) Se o item não puder ser acessado por meio do namespace do Shell, esse valor será VT \_ EMPTY.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[propertyDescription](./propdesc-schema-propertydescription.md)
+[Propertydescription](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -50,19 +50,19 @@ Esse valor pode ser passado para [**SHParseDisplayName**](/windows/win32/api/shl
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[numberFormat](./propdesc-schema-numberformat.md)
+[Numberformat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -77,7 +77,7 @@ Esse valor pode ser passado para [**SHParseDisplayName**](/windows/win32/api/shl
 [editControl](./propdesc-schema-editcontrol.md)
 </dt> <dt>
 
-[filterControl](./propdesc-schema-filtercontrol.md)
+[Filtercontrol](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
 [queryControl](./propdesc-schema-querycontrol.md)

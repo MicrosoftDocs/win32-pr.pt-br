@@ -54,7 +54,7 @@ O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limita�
 
 
 
-| Código de retorno                                                                          | Description                      |
+| Código de retorno                                                                          | Descrição                      |
 |--------------------------------------------------------------------------------------|----------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl> | O método foi bem-sucedido.<br/> |
 

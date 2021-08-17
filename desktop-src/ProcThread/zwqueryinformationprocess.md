@@ -14,12 +14,12 @@ api_type:
 api_location:
 - Ntdll.dll
 - ntoskrnl.exe
-ms.openlocfilehash: 30207c8d3d54c54f77194b542e10e9fee94e055a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7972d3d2e6b98f56829680dd77c4c0a97b51679ffb2d9cfef928d4a279f6b7f9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105782295"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117792910"
 ---
 # <a name="zwqueryinformationprocess-function"></a>Função ZwQueryInformationProcess
 
@@ -93,7 +93,7 @@ O tipo de informações do processo a ser recuperado. Esse parâmetro pode ser u
 <td>Recupera um valor <strong>ULONG</strong> que indica se o processo é considerado crítico.<br/>
 <blockquote>
 [!Note]<br />
-Esse valor pode ser usado a partir do Windows XP com SP3. A partir do Windows 8.1, o <a href="/windows/desktop/api/processthreadsapi/nf-processthreadsapi-isprocesscritical"><strong>IsProcessCritical</strong></a> deve ser usado em vez disso.
+esse valor pode ser usado a partir do Windows XP com SP3. a partir do Windows 8.1, o <a href="/windows/desktop/api/processthreadsapi/nf-processthreadsapi-isprocesscritical"><strong>IsProcessCritical</strong></a> deve ser usado em vez disso.
 </blockquote>
 <br/></td>
 </tr><tr class="even">
@@ -218,7 +218,7 @@ Um ponteiro para uma variável na qual a função retorna o tamanho das informa�
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um código de erro ou de êxito de NTSTATUS.
 
@@ -226,7 +226,7 @@ Os formulários e o significado dos códigos de erro NTSTATUS estão listados no
 
 ## <a name="remarks"></a>Comentários
 
-A função **ZwQueryInformationProcess** e as estruturas que ela retorna são internas ao sistema operacional e estão sujeitas a alterações de uma versão do Windows para outra. Para manter a compatibilidade do seu aplicativo, é melhor usar funções públicas mencionadas na descrição do parâmetro *ProcessInformationClass* em vez disso.
+a função **ZwQueryInformationProcess** e as estruturas que ela retorna são internas ao sistema operacional e estão sujeitas a alterações de uma versão do Windows para outra. Para manter a compatibilidade do seu aplicativo, é melhor usar funções públicas mencionadas na descrição do parâmetro *ProcessInformationClass* em vez disso.
 
 Se você usar **ZwQueryInformationProcess**, acesse a função por meio da [vinculação dinâmica em tempo de execução](../dlls/using-run-time-dynamic-linking.md). Isso dá ao seu código uma oportunidade de responder normalmente se a função tiver sido alterada ou removida do sistema operacional. As alterações de assinatura, no entanto, podem não ser detectáveis.
 
@@ -238,8 +238,8 @@ Esta função não tem biblioteca de importação associada. Você deve usar as 
 
 | Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                                          |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                 |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho XP\]<br/>                                          |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                 |
 | DLL<br/>                      | <dl> <dt>Ntdll.dll</dt> </dl> |
 
 

@@ -146,16 +146,16 @@ Use um controle deslizante se:
 
 ## <a name="labels"></a>Rótulos
 
--   Aplique as [diretrizes de rotulagem da](ctrl-text-boxes.md) caixa de texto para rotular a caixa de texto associada. Controles de rotação nunca são rotulados diretamente.
+-   Aplique as diretrizes de [rotulamento da caixa de texto](ctrl-text-boxes.md) para rotular a caixa de texto associada. Os controles de rotação nunca são rotulados diretamente.
 
 ## <a name="documentation"></a>Documentação
 
 Ao fazer referência a controles de rotação:
 
--   Não consulte controles de rotação na documentação do usuário. Em vez disso, consulte o rótulo da caixa de texto associada.
--   Consulte controles de rotação e caixas de rotação somente na programação e em outras documentações técnicas.
+-   Não consulte os controles de rotação na documentação do usuário. Em vez disso, consulte o rótulo da caixa de texto associada.
+-   Consulte controles de rotação e caixas de rotação somente em programação e outras documentações técnicas.
 
-Exemplo: na caixa **Data,** digite ou selecione a parte da data que você deseja alterar.
+Exemplo: na caixa **Data** , digite ou selecione a parte da data que você deseja alterar.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

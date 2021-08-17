@@ -3,9 +3,9 @@
   items:
     - name: Como o AMSI ajuda
       href: how-amsi-helps.md
-    - name: 'Público-alvo do desenvolvedor, exemplos'
+    - name: 'Público do desenvolvedor, exemplos'
       href: dev-audience.md
-    - name: Referência AMSI
+    - name: Referência de AMSI
       href: antimalware-scan-interface-reference.md
       items:
         - name: Enumerações AMSI
@@ -47,7 +47,7 @@
             - name: IAntimalware
               href: /windows/desktop/api/amsi/nn-amsi-iantimalware
               items:
-                - name: Método CloseSession
+                - name: Método falha em CloseSession
                   href: /windows/desktop/api/amsi/nf-amsi-iantimalware-closesession
                 - name: Método de verificação
                   href: /windows/desktop/api/amsi/nf-amsi-iantimalware-scan

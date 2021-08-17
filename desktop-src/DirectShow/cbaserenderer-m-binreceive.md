@@ -1,7 +1,7 @@
 ---
-description: Sinalizador que indica se o filtro está processando uma chamada receive.
+description: Sinalizador que indica se o filtro está processando uma chamada de recebimento.
 ms.assetid: 4b0d34c4-551a-4674-bda9-be67ed22d09b
-title: Membro CBaseRenderer::m_bInReceive (Renbase.h)
+title: 'Membro CBaseRenderer:: m_bInReceive (Renbase. h)'
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -23,9 +23,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118403058"
 ---
-# <a name="cbaserendererm_binreceive-member"></a>Membro CBaseRenderer::m \_ bInReceive
+# <a name="cbaserendererm_binreceive-member"></a>Membro de CBaseRenderer:: m \_ bInReceive
 
-Sinalizador que indica se o filtro está processando uma **chamada receive.**
+Sinalizador que indica se o filtro está processando uma chamada de **recebimento** .
 
 ## <a name="syntax"></a>Syntax
 
@@ -42,8 +42,8 @@ BOOL m_bInReceive;
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Renbase.h (incluir Fluxos.h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Renbase. h (incluir Fluxos. h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
 
 
 

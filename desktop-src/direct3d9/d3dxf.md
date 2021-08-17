@@ -1,19 +1,19 @@
 ---
-description: X opções de formato de arquivo, carregar e salvar.
+description: Opções de formato de arquivo X, carregamento e salvar.
 ms.assetid: 813a2b4b-6577-4cdf-a2e6-e06870638354
 title: D3DXF
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e230fc08ac4d7f8713959f2025f67262046ecea5
-ms.sourcegitcommit: b40a986d5ded926ae7617119cdd35d99b533bad9
+ms.openlocfilehash: d286ad4cf64133683de026893beb9fa081899e6b170e4b3adb478798eb4b3edf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "110343641"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118096071"
 ---
 # <a name="d3dxf"></a>D3DXF
 
-X opções de formato de arquivo, carregar e salvar.
+Opções de formato de arquivo X, carregamento e salvar.
 
 ## <a name="file-formats"></a>Formatos de arquivo
 
@@ -21,11 +21,11 @@ A tabela a seguir especifica o tipo de dados de arquivo:
 
 
 
-| \#define para o formato de arquivo     | Valor | Descrição                                                                                    |
+| \#define para Formato de Arquivo     | Valor | Descrição                                                                                    |
 |-------------------------------|-------|------------------------------------------------------------------------------------------------|
-| \_Binário de FILEFORMATO D3DXF \_     | 0     | Arquivo binário de formato herdado. Consulte [referência de arquivo X (Herdado)](dx9-graphics-reference-x-file.md). |
-| Texto do D3DXF \_ FILEformat \_       | 1     | Arquivo de texto.                                                                                     |
-| FORMATO de fileD3DXF \_ \_ compactado | 2     | Arquivo compactado. Com esse sinalizador, você também deve especificar o formato binário ou o formato de texto.   |
+| BINÁRIO FILEFORMAT D3DXF \_ \_     | 0     | Arquivo binário de formato herddo. Consulte [Referência de arquivo X (herdou).](dx9-graphics-reference-x-file.md) |
+| D3DXF \_ FILEFORMAT \_ TEXT       | 1     | Arquivo de texto.                                                                                     |
+| FILEFORMAT D3DXF \_ \_ COMPACTADO | 2     | Arquivo compactado. Com esse sinalizador, você também deve especificar o formato binário ou o formato de texto.   |
 
 
 
@@ -33,14 +33,14 @@ A tabela a seguir especifica o tipo de dados de arquivo:
 
 ## <a name="file-load-options"></a>Opções de carregamento de arquivo
 
-A tabela a seguir especifica opções de carregamento de arquivo com arquivos. x:
+A tabela a seguir especifica opções de carregamento de arquivo com arquivos .x:
 
 
 
-| \#definir                      | Valor | Descrição                |
+| \#Definir                      | Valor | Descrição                |
 |-------------------------------|-------|----------------------------|
-| D3DXF \_ fileload \_ defile     | 0     | Carregar dados de um arquivo.     |
-| D3DXF \_ fileload \_ FROMWFILE    | 1     | Carregar dados de um arquivo.     |
+| FILELOAD de D3DXF \_ \_ FromFile     | 0     | Carregar dados de um arquivo.     |
+| D3DXF \_ FILELOAD \_ FROMWFILE    | 1     | Carregar dados de um arquivo.     |
 | D3DXF \_ FILELOAD \_ FROMRESOURCE | 2     | Carregar dados de um recurso. |
 | D3DXF \_ FILELOAD \_ FROMMEMORY   | 3     | Carregar dados da memória.     |
 

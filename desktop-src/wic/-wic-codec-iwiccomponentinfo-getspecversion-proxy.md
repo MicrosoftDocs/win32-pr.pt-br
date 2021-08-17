@@ -1,7 +1,7 @@
 ---
-description: Função de proxy para o método GetSpecVersion.
+description: Função proxy para o método GetSpecVersion.
 ms.assetid: 363e55c2-d6e8-4ddc-a063-c5be08232a67
-title: Função IWICComponentInfo_GetSpecVersion_Proxy
+title: IWICComponentInfo_GetSpecVersion_Proxy função
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - Windowscodecs.dll
 - Wincodec.lib
-ms.openlocfilehash: a7b9b0a44eb5fd8404eecc3ad355ec280583d690
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a29b57e84b7cf9ceee67ac4f64ac090e697366fbe0698a891c8fbcc87e3ff5b4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105765020"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118206579"
 ---
-# <a name="iwiccomponentinfo_getspecversion_proxy-function"></a>\_Função de \_ proxy IWICComponentInfo GetSpecVersion
+# <a name="iwiccomponentinfo_getspecversion_proxy-function"></a>Função \_ proxy GetSpecVersion IWICComponentInfo \_
 
-Função de proxy para o método [**GetSpecVersion**](/windows/desktop/api/Wincodec/nf-wincodec-iwiccomponentinfo-getspecversion) .
+Função proxy para o [**método GetSpecVersion.**](/windows/desktop/api/Wincodec/nf-wincodec-iwiccomponentinfo-getspecversion)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -43,47 +43,47 @@ HRESULT IWICComponentInfo_GetSpecVersion_Proxy(
 
 <dl> <dt>
 
-*Isso \_ PTR* \[\]
+*ESTE \_ PTR* \[ em\]
 </dt> <dd>
 
-Tipo: **[**IWICComponentInfo**](/windows/desktop/api/Wincodec/nn-wincodec-iwiccomponentinfo) \** _
+Tipo: **[ **IWICComponentInfo**](/windows/desktop/api/Wincodec/nn-wincodec-iwiccomponentinfo)\***
 
-Ponteiro para este objeto [_ *IWICComponentInfo* *](/windows/desktop/api/Wincodec/nn-wincodec-iwiccomponentinfo) .
+Ponteiro para este [**objeto IWICComponentInfo.**](/windows/desktop/api/Wincodec/nn-wincodec-iwiccomponentinfo)
 
 </dd> <dt>
 
-*cchSpecVersion* \[ no\]
+*cchSpecVersion* \[ Em\]
 </dt> <dd>
 
-Tipo: **uint**
+Tipo: **UINT**
 
-O tamanho do buffer *wzSpecVersion* .
+O tamanho do *buffer wzSpecVersion.*
 
 </dd> <dt>
 
-*wzSpecVersion* \[ entrada, saída\]
+*wzSpecVersion* \[ in, out\]
 </dt> <dd>
 
-Tipo: **WCHAR \** _
+Tipo: **WCHAR \***
 
-Quando esse método retorna, contém uma cadeia de caracteres invarient de cultura da versão de especificação do componente. O formulário de versão é NN. NN. NN. NN.
+Quando este método retorna, contém uma cadeia de caracteres invariável de cultura da versão de especificação do componente. O formulário de versão é NN.NN.NN.NN.
 
 </dd> <dt>
 
-_pcchActual * \[ out\]
+*pcchActual* \[ out\]
 </dt> <dd>
 
-Tipo: **uint \** _
+Tipo: **UINT \***
 
 Um ponteiro que recebe o comprimento real da versão de especificação do componente.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Tipo: _ *HRESULT**
+Tipo: **HRESULT**
 
-Se essa função for bem sucedido, ela retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
+Se essa função for bem-sucedida, ela retornará **S \_ OK.** Caso contrário, ele retornará um **código de erro HRESULT.**
 
 ## <a name="remarks"></a>Comentários
 
@@ -93,9 +93,9 @@ Se essa função for bem sucedido, ela retornará **S \_ OK**. Caso contrário, 
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows XP com SP2, \[ somente aplicativos da área de trabalho do Windows Vista\]<br/>                                                                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                                                                                             |
-| DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec. lib</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows XP com SP2, Windows aplicativos da área de trabalho do Vista \[\]<br/>                                                                                              |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                                                                                             |
+| DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec.lib</dt> </dl> |
 
 
 

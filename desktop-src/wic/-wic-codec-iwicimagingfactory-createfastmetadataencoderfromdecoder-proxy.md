@@ -1,7 +1,7 @@
 ---
-description: Função de proxy para o método CreateFastMetadataEncoderFromDecoder.
+description: Função proxy para o método CreateFastMetadataEncoderFromDecoder.
 ms.assetid: eae7ed9c-9205-4e41-91b2-461fd1f5d093
-title: Função IWICImagingFactory_CreateFastMetadataEncoderFromDecoder_Proxy
+title: IWICImagingFactory_CreateFastMetadataEncoderFromDecoder_Proxy função
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - Windowscodecs.dll
 - Wincodec.lib
-ms.openlocfilehash: cdeb682139feb03c19cd66e999b6e3b8b7b366d3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8c08e5b60c33e2735272236be87bdf9250f6109f3434c833b353252feac976a7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105783782"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118206391"
 ---
-# <a name="iwicimagingfactory_createfastmetadataencoderfromdecoder_proxy-function"></a>\_Função de \_ proxy IWICImagingFactory CreateFastMetadataEncoderFromDecoder
+# <a name="iwicimagingfactory_createfastmetadataencoderfromdecoder_proxy-function"></a>Função proxy IWICImagingFactory \_ CreateFastMetadataEncoderFromDecoder \_
 
-Função de proxy para o método [**CreateFastMetadataEncoderFromDecoder**](/windows/desktop/api/Wincodec/nf-wincodec-iwicimagingfactory-createfastmetadataencoderfromdecoder) .
+Função proxy para [**o método CreateFastMetadataEncoderFromDecoder.**](/windows/desktop/api/Wincodec/nf-wincodec-iwicimagingfactory-createfastmetadataencoderfromdecoder)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,36 +42,36 @@ HRESULT IWICImagingFactory_CreateFastMetadataEncoderFromDecoder_Proxy(
 
 <dl> <dt>
 
-*pFactory* \[ no\]
+*pFactory* \[ Em\]
 </dt> <dd>
 
-Tipo: **[**IWICImagingFactory**](/windows/desktop/api/Wincodec/nn-wincodec-iwicimagingfactory) \** _
+Tipo: **[ **IWICImagingFactory**](/windows/desktop/api/Wincodec/nn-wincodec-iwicimagingfactory)\***
 
 </dd> <dt>
 
-_pIDecoder * \[ in\]
+*pIDecoder* \[ Em\]
 </dt> <dd>
 
-Tipo: **[**IWICBitmapDecoder**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapdecoder) \** _
+Tipo: **[ **IWICBitmapDecoder**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapdecoder)\***
 
-O decodificador do qual criar o [_ *IWICFastMetadataEncoder* *](/windows/desktop/api/Wincodec/nn-wincodec-iwicfastmetadataencoder) .
+O decodificador de onde [**criar o IWICFastMetadataEncoder.**](/windows/desktop/api/Wincodec/nn-wincodec-iwicfastmetadataencoder)
 
 </dd> <dt>
 
-*ppIFME* \[ fora\]
+*ppIFME* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **IWICFastMetadataEncoder**](/windows/desktop/api/Wincodec/nn-wincodec-iwicfastmetadataencoder)\*\***
 
-Um ponteiro que recebe um ponteiro para o novo [**IWICFastMetadataEncoder**](/windows/desktop/api/Wincodec/nn-wincodec-iwicfastmetadataencoder).
+Um ponteiro que recebe um ponteiro para o [**novo IWICFastMetadataEncoder**](/windows/desktop/api/Wincodec/nn-wincodec-iwicfastmetadataencoder).
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **HRESULT**
 
-Se essa função for bem sucedido, ela retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
+Se essa função for bem-sucedida, ela retornará **S \_ OK.** Caso contrário, ele retornará um **código de erro HRESULT.**
 
 ## <a name="remarks"></a>Comentários
 
@@ -81,9 +81,9 @@ Se essa função for bem sucedido, ela retornará **S \_ OK**. Caso contrário, 
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows XP com SP2, \[ somente aplicativos da área de trabalho do Windows Vista\]<br/>                                                                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                                                                                             |
-| DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec. lib</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows XP com SP2, Windows aplicativos da área de trabalho do Vista \[\]<br/>                                                                                              |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                                                                                             |
+| DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec.lib</dt> </dl> |
 
 
 

@@ -21,7 +21,7 @@ ms.locfileid: "118478352"
 
 
 
-| Métodos IAgentBalloonEx                                  | Description                                                        |
+| Métodos IAgentBalloonEx                                  | Descrição                                                        |
 |----------------------------------------------------------|--------------------------------------------------------------------|
 | [**GetStyle**](https://www.bing.com/search?q=**GetStyle**)                     | Retorna o estilo de saída do balão de palavras.                           |
 | [**SetStyle**](https://www.bing.com/search?q=**SetStyle**)                     | Define o estilo de saída do balão de palavras.                              |
