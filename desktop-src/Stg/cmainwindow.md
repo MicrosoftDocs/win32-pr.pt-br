@@ -6,16 +6,16 @@ keywords:
 - CMainWindow
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bc3e9cb538246dfa6931a2f036ba75cab5e962a7
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 45f67fd2a00bb6f3ab082499e5ca2a4a991a9fb33159a4f43c05923ae393efcf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105769178"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117962463"
 ---
 # <a name="cmainwindow"></a>CMainWindow
 
-O sistema operacional Microsoft Windows converte as seguintes ações do usuário em mensagens de janela padrão e as envia para o procedimento principal no aplicativo **StoClien** :
+o sistema operacional Microsoft Windows converte as seguintes ações do usuário em mensagens de janela padrão e as envia para o procedimento principal no aplicativo **StoClien** :
 
 -   O usuário clica no botão esquerdo do mouse ou na opção de dica de caneta em dispositivos Tablet, para iniciar uma sequência de desenho de linha.
 -   O usuário clica e mantém o botão e move o mouse para desenhar uma linha.
@@ -130,9 +130,9 @@ CMainWindow tem um ponteiro para o objeto CGuiPaper e chama o método [**CGuiPap
 
 Quando o botão esquerdo do mouse é liberado, a mensagem do **WM \_ LBUTTONUP** é recebida. O método [CGuiPaper:: InkStop](cguipaper-methods.md) interrompe a sequência de desenho de linha.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre: EsentStopwatch. Propriedade decorrida'
-title: Propriedade EsentStopwatch. decorrida
+description: 'Saiba mais sobre: propriedade EsentStopwatch.Elapsed'
+title: Propriedade EsentStopwatch.Elapsed
 TOCTitle: 'Elapsed property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.EsentStopwatch.Elapsed
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentstopwatch.elapsed(v=EXCHG.10)
@@ -26,19 +26,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 5609d22ec8702bcf02ff36857e469a0426558e90
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 02d60a19f799d5470711e9479b7ce0b28e190cdc63a23f853aa45a02d60aa70d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104169950"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118490493"
 ---
-# <a name="esentstopwatchelapsed-property"></a>Propriedade EsentStopwatch. decorrida
+# <a name="esentstopwatchelapsed-property"></a>Propriedade EsentStopwatch.Elapsed
 
 Obtém o tempo total decorrido, medido pela instância atual.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Syntax
 
@@ -60,7 +60,7 @@ public TimeSpan Elapsed { get; private set; }
 
 #### <a name="property-value"></a>Valor da propriedade
 
-Tipo: [System. TimeSpan](/dotnet/api/system.timespan)  
+Tipo: [System.TimeSpan](/dotnet/api/system.timespan)  
 
 ## <a name="see-also"></a>Confira também
 
@@ -68,6 +68,6 @@ Tipo: [System. TimeSpan](/dotnet/api/system.timespan)
 
 [Classe EsentStopwatch](./esentstopwatch-class.md)
 
-[Membros do EsentStopwatch](./esentstopwatch-members.md)
+[Membros EsentStopwatch](./esentstopwatch-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

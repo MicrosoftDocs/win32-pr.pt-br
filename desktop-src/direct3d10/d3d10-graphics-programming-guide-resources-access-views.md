@@ -1,5 +1,5 @@
 ---
-description: No Direct3D 10, os recursos de textura são acessados com uma exibição, que é um mecanismo para a interpretação de hardware de um recurso na memória.
+description: No Direct3D 10, os recursos de textura são acessados com uma exibição, que é um mecanismo para interpretação de hardware de um recurso na memória.
 ms.assetid: ccfe6273-0dcf-4b42-9d74-665a0b4cd14a
 title: Exibições de textura (Direct3D 10)
 ms.topic: article
@@ -13,7 +13,7 @@ ms.locfileid: "118101333"
 ---
 # <a name="texture-views-direct3d-10"></a>Exibições de textura (Direct3D 10)
 
-No Direct3D 10, os recursos de textura são acessados com uma exibição, que é um mecanismo para a interpretação de hardware de um recurso na memória. Um modo de exibição permite que um estágio de pipeline específico acesse somente os [sub-recursos](d3d10-graphics-programming-guide-resources-types.md) de que precisa, na representação desejada pelo app.
+No Direct3D 10, os recursos de textura são acessados com uma exibição, que é um mecanismo para interpretação de hardware de um recurso na memória. Um modo de exibição permite que um estágio de pipeline específico acesse somente os [sub-recursos](d3d10-graphics-programming-guide-resources-types.md) de que precisa, na representação desejada pelo app.
 
 Uma exibição dá suporte à noção de um recurso sem tipo. Um recurso sem tipo é um recurso criado com um tamanho específico, mas não um tipo de dados específico. Os dados são interpretados dinamicamente quando são associados ao pipeline.
 
@@ -31,7 +31,7 @@ Crie um objeto de exibição para um destino de renderização chamando CreateRe
 
 Diferenças entre o Direct3D 9 e o Direct3D 10:
 
-- No Direct3D 10, você não associa mais um recurso diretamente ao pipeline, cria uma exibição de um recurso e, em seguida, define a exibição para o pipeline. Isso permite que a validação e o mapeamento no tempo de execução e o driver ocorram na criação da exibição, minimizando a verificação de tipo no momento da associação.
+- No Direct3D 10, você não vincula mais um recurso diretamente ao pipeline, cria uma exibição de um recurso e, em seguida, configura a exibição para o pipeline. Isso permite que a validação e o mapeamento no runtime e no driver ocorram na criação da exibição, minimizando a verificação de tipo no momento da vinculação.
 
 
 

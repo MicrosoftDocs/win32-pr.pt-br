@@ -1,9 +1,9 @@
 ---
 title: Mensagem de ICM_DRAW_CHANGEPALETTE (VFW. h)
-description: A \_ mensagem ICM Draw \_ CHANGEPALETTE notifica um driver de renderização que a paleta de filmes está alterando. Você pode enviar essa mensagem explicitamente ou usando a macro ICDrawChangePalette.
+description: a \_ mensagem ICM DRAW \_ CHANGEPALETTE notifica um driver de renderização que a paleta de filmes está alterando. Você pode enviar essa mensagem explicitamente ou usando a macro ICDrawChangePalette.
 ms.assetid: 974fc0d8-d0c7-4a82-af84-68b53f753259
 keywords:
-- Multimídia do Windows de mensagem ICM_DRAW_CHANGEPALETTE
+- mensagem de ICM_DRAW_CHANGEPALETTE Windows multimídia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6364abb2c535158b2e64ff311041b00490c5958c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e936c7dce397910ef70a80e2efa7f3e031ab8a61b8f59fece158d5c28e9e1270
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103824500"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117987592"
 ---
-# <a name="icm_draw_changepalette-message"></a>\_Mensagem de desenho CHANGEPALETTE de ICM \_
+# <a name="icm_draw_changepalette-message"></a>ICM \_ DESENHAR \_ mensagem CHANGEPALETTE
 
-A mensagem **ICM \_ draw \_ CHANGEPALETTE** notifica um driver de renderização que a paleta de filmes está alterando. Você pode enviar essa mensagem explicitamente ou usando a macro [**ICDrawChangePalette**](/windows/desktop/api/Vfw/nf-vfw-icdrawchangepalette) .
+a mensagem **ICM \_ DRAW \_ CHANGEPALETTE** notifica um driver de renderização que a paleta de filmes está alterando. Você pode enviar essa mensagem explicitamente ou usando a macro [**ICDrawChangePalette**](/windows/desktop/api/Vfw/nf-vfw-icdrawchangepalette) .
 
 
 ```C++

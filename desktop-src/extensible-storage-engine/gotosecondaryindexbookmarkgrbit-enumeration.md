@@ -28,21 +28,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: f38b5f26abc4dfafb95d5560b3ff1def4267527c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 733647a8cf53fa93c9779674890005de4ead1aa57f15853c255c5ac5a8e13904
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105753066"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118487975"
 ---
 # <a name="gotosecondaryindexbookmarkgrbit-enumeration"></a>Enumeração GotoSecondaryIndexBookmarkGrbit
 
-Opções para [JetGotoSecondaryIndexBookmark (JET_SESID, JET_TABLEID, \[ \] , Int32, \[ \] Int32, GotoSecondaryIndexBookmarkGrbit)](./api.jetgotosecondaryindexbookmark-method.md).
+Opções para [JetGotoSecondaryIndexBookmark(JET_SESID, JET_TABLEID, \[ \] , Int32, \[ \] , Int32, GotoSecondaryIndexBookmarkGrbit)](./api.jetgotosecondaryindexbookmark-method.md).
 
 Esta enumeração tem um atributo [FlagsAttribute](/dotnet/api/system.flagsattribute) que permite uma combinação bit a bit dos valores membros dela.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -78,7 +78,7 @@ public enum GotoSecondaryIndexBookmarkGrbit
 <tr class="even">
 <td></td>
 <td>BookmarkPermitVirtualCurrency</td>
-<td>Caso a entrada de índice não possa mais ser encontrada, o cursor será deixado posicionado onde essa entrada de índice foi encontrada anteriormente. A operação ainda falhará com JET_errRecordDeleted; no entanto, será possível mover para a entrada de índice seguinte ou anterior em relação à entrada de índice que agora está ausente.</td>
+<td>Caso a entrada de índice não possa mais ser encontrada, o cursor será posicionado à esquerda onde essa entrada de índice foi encontrada anteriormente. A operação ainda falhará com JET_errRecordDeleted; no entanto, será possível mover para a entrada de índice seguinte ou anterior em relação à entrada de índice que agora está ausente.</td>
 </tr>
 </tbody>
 </table>
@@ -88,4 +88,4 @@ public enum GotoSecondaryIndexBookmarkGrbit
 
 #### <a name="reference"></a>Referência
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

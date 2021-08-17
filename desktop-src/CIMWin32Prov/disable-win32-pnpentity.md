@@ -1,8 +1,8 @@
 ---
-description: Desabilita este dispositivo de Plug and Play.
+description: Desabilita esse Plug and Play dispositivo.
 ms.assetid: 88d60218-7282-4d0e-9a2c-0ad1a8c96650
 ms.tgt_platform: multiple
-title: Método Disable da classe Win32_PnPEntity
+title: Desabilitar o método da Win32_PnPEntity classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 59d08d14f8dbf32941554dcecc372d73c60bef60
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 499e189d7262454e61df9c93a583bc2ed2b62da6bc8a9fa9f12a018c25813de8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104500886"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118419426"
 ---
-# <a name="disable-method-of-the-win32_pnpentity-class"></a>Método Disable da classe Win32 \_ PnPEntity
+# <a name="disable-method-of-the-win32_pnpentity-class"></a>Desabilitar o método da classe \_ Win32 PnPEntity
 
-Desabilita este dispositivo de Plug and Play.
+Desabilita esse Plug and Play dispositivo.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,7 +40,7 @@ Uint32 Disable(
 
 <dl> <dt>
 
-*rebootNeeded* \[ fora\]
+*rebootNeeded* \[ out\]
 </dt> <dd>
 
 Se uma reinicialização é necessária.
@@ -53,10 +53,10 @@ Se uma reinicialização é necessária.
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10\]<br/>                                             |
+| Cliente mínimo com suporte<br/> | \[Windows 10 somente aplicativos da área de trabalho\]<br/>                                             |
 | Servidor mínimo com suporte<br/> | Windows Server 2016<br/>                                                          |
-| Namespace<br/>                | Raiz \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>Cimwin32. mof</dt> </dl> |
+| Namespace<br/>                | RAIZ \\ CIMV2<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>Cimwin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -65,7 +65,7 @@ Se uma reinicialização é necessária.
 
 <dl> <dt>
 
-[**\_PnPEntity Win32**](win32-pnpentity.md)
+[**Win32 \_ PnPEntity**](win32-pnpentity.md)
 </dt> </dl>
 
  

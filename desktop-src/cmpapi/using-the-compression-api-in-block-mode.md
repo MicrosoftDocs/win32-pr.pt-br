@@ -1,7 +1,7 @@
 ---
-description: O exemplo a seguir demonstra o uso da API de Compactação no modo de bloco.
+description: O exemplo a seguir demonstra como usar a API de compactação no modo de bloco.
 ms.assetid: 7483BCE4-3B85-4659-98E3-670D2F7EE52D
-title: Usando a API de Compactação no modo de bloco
+title: Usando a API de compactação no modo de bloco
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: b4b739c1496b43f64f8ceab4312602e9b98f7faebbb29317998a93e8f27b6883
@@ -11,21 +11,21 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117737451"
 ---
-# <a name="using-the-compression-api-in-block-mode"></a>Usando a API de Compactação no modo de bloco
+# <a name="using-the-compression-api-in-block-mode"></a>Usando a API de compactação no modo de bloco
 
-O exemplo a seguir demonstra o uso da API de Compactação no modo de bloco. Para gerar um explorador ou descompactador usando o modo de bloco, seu aplicativo deve incluir o sinalizador **COMPRESS \_ RAW** ao chamar [**CreateCompressor**](/windows/desktop/api/compressapi/nf-compressapi-createcompressor) ou [**CreateDecompressor**](/windows/desktop/api/compressapi/nf-compressapi-createdecompressor). O modo de bloco permite que o desenvolvedor controle o tamanho do bloco, mas exige que mais trabalho seja feito pelo aplicativo.
+O exemplo a seguir demonstra como usar a API de compactação no modo de bloco. Para gerar um compressor ou descompactador usando o modo de bloco, seu aplicativo deve incluir o sinalizador de **compactação \_ bruta** quando chama [**createcompacter**](/windows/desktop/api/compressapi/nf-compressapi-createcompressor) ou [**CreateDecompressor**](/windows/desktop/api/compressapi/nf-compressapi-createdecompressor). O modo de bloqueio permite que o desenvolvedor controle o tamanho do bloco, mas requer que mais trabalho seja feito pelo aplicativo.
 
-O modo de bloco falhará se o tamanho do buffer de entrada for maior que o tamanho do bloco interno do algoritmo de compactação. O tamanho do bloco interno é de 32KB para o MSZIP e 1 GB para os algoritmos de compactação XPRESS. O tamanho do bloco interno para LZMS é configurável até 64 GB com um aumento correspondente no uso de memória. O valor do *parâmetro UncompressedBufferSize* [**de Descompactar**](/windows/desktop/api/compressapi/nf-compressapi-decompress) deve ser exatamente igual ao tamanho original dos dados descompactados e não apenas ao tamanho do buffer de saída. Isso significa que seu aplicativo precisará especificar o tamanho do bloco e salvar o tamanho original exato dos dados descompactados para uso pelo descompactador. O tamanho do buffer compactado não é salvo automaticamente e o aplicativo também precisa salvá-lo para descompactação.
+O modo de bloqueio falhará se o tamanho do buffer de entrada for maior que o tamanho do bloco interno do algoritmo de compactação. O tamanho do bloco interno é 32 KB para MSZIP e 1GB para os algoritmos de compactação do XPRESS. O tamanho do bloco interno para LZMS é configurável até 64 GB com um aumento correspondente no uso de memória. O valor do parâmetro *UncompressedBufferSize* de [**descompactação**](/windows/desktop/api/compressapi/nf-compressapi-decompress) deve ser exatamente igual ao tamanho original dos dados descompactados e não apenas ao tamanho do buffer de saída. Isso significa que seu aplicativo precisará especificar o tamanho do bloco e salvar o tamanho original exato dos dados descompactados para uso pelo descompactador. O tamanho do buffer compactado não é salvo automaticamente e o aplicativo também precisa salvá-lo para descompactação.
 
-O modo de buffer é recomendado na maioria dos casos porque ele divide automaticamente o buffer de entrada em blocos de um tamanho apropriado para o algoritmo de compactação selecionado armazena o tamanho do buffer descompactado no buffer compactado. Para obter informações sobre como usar o modo de buffer, consulte [Usando a API de Compactação no modo de buffer](using-the-compression-api-in-buffer-mode.md).
+O modo de buffer é recomendado na maioria dos casos porque ele divide automaticamente o buffer de entrada em blocos de um tamanho que é apropriado para o algoritmo de compactação selecionado armazena o tamanho do buffer descompactado no buffer compactado. Para obter informações sobre como usar o modo de buffer, consulte [usando a API de compactação no modo de buffer](using-the-compression-api-in-buffer-mode.md).
 
-Os aplicativos que usam o modo de buffer ou de bloco têm a opção de especificar uma rotina de alocação de memória personalizada em sua chamada para [**CreateCompressor**](/windows/desktop/api/compressapi/nf-compressapi-createcompressor) ou [**CreateDecompressor**](/windows/desktop/api/compressapi/nf-compressapi-createdecompressor).
+Os aplicativos que usam o buffer ou o modo de bloco têm a opção de especificar uma rotina de alocação de memória personalizada em sua chamada para [**Createcompacter**](/windows/desktop/api/compressapi/nf-compressapi-createcompressor) ou [**CreateDecompressor**](/windows/desktop/api/compressapi/nf-compressapi-createdecompressor).
 
-**Windows 8 e Windows Server 2012:** Para usar o código de exemplo a seguir, você deve estar executando Windows 8 ou Windows Server 2012 e ter "compressapi.h" e "cabinet.dll" e vincular ao "Cabinet.lib".
+**Windows 8 e Windows Server 2012:** para usar o código de exemplo a seguir, você deve estar executando Windows 8 ou Windows Server 2012 e ter "compressapi. h" e "cabinet.dll" e vincular ao "Cabinet. lib".
 
-O exemplo a seguir demonstra o uso da API de Compactação no modo de bloco para compactar um arquivo usando o algoritmo de compactação LZMS e uma rotina de alocação de memória personalizada. Seu aplicativo deve incluir o sinalizador **COMPRESS \_ RAW** para usar a API de Compactação no modo de bloco. Primeiro, o aplicativo [**chama CreateCompressor**](/windows/desktop/api/compressapi/nf-compressapi-createcompressor) com **COMPRESS \_ ALGORITHM \_ LZMS** \| **COMPRESS \_ RAW** para gerar a máquina. O *parâmetro AllocationRoutines* especifica a rotina de alocação de memória. Em seguida, o aplicativo define o tamanho do bloco para o sets usando [**SetCompressorInformation**](/windows/desktop/api/compressapi/nf-compressapi-setcompressorinformation).
+O seguinte demonstra o uso da API de compactação no modo de bloco para compactar um arquivo usando o algoritmo de compactação LZMS e uma rotina de alocação de memória personalizada. Seu aplicativo deve incluir o sinalizador de **compactação \_ bruta** para usar a API de compactação no modo de bloco. Primeiro, o aplicativo chama [**createcompacter**](/windows/desktop/api/compressapi/nf-compressapi-createcompressor) com **algoritmo de compactação \_ \_ LZMS** \| **Compact \_ RAW** para gerar o compressor. O parâmetro *AllocationRoutines* especifica a rotina de alocação de memória. Em seguida, o aplicativo define o tamanho do bloco para o compressor usando [**SetCompressorInformation**](/windows/desktop/api/compressapi/nf-compressapi-setcompressorinformation).
 
-O aplicativo faz chamadas repetidas para [**Compactar**](/windows/desktop/api/compressapi/nf-compressapi-compress) para compactar o bloco de dados por bloco. O aplicativo grava o tamanho do bloco descompactado, o tamanho do bloco compactado e os dados compactados no buffer de saída.
+O aplicativo faz chamadas repetidas para [**compactar**](/windows/desktop/api/compressapi/nf-compressapi-compress) para compactar o bloco de dados por bloco. O aplicativo grava o tamanho do bloco descompactado, o tamanho do bloco compactado e os dados compactados no buffer de saída.
 
 
 ```C++
@@ -358,7 +358,7 @@ done:
 
 
 
-O exemplo a seguir demonstra a descompactação de arquivos usando a API de Compactação no modo de bloco.
+O seguinte demonstra a descompactação de arquivo usando a API de compactação no modo de bloco.
 
 
 ```C++
@@ -648,9 +648,9 @@ done:
 
 
 
-Um aplicativo que usa o modo de buffer ou bloco tem a opção de personalizar a alocação de memória usada pela API de Compactação quando chama [**CreateCompressor**](/windows/desktop/api/compressapi/nf-compressapi-createcompressor) ou [**CreateDecompressor**](/windows/desktop/api/compressapi/nf-compressapi-createdecompressor). No modo de bloco, o aplicativo deve lidar com informações de bloco de compactação, como tamanho de dados compactados e tamanho de dados descompactados, caso contrário, [**Descompactar**](/windows/desktop/api/compressapi/nf-compressapi-decompress) não poderá descompactar as informações.
+Um aplicativo usando o modo de bloco ou de buffer tem a opção de personalizar a alocação de memória usada pela API de compactação quando ela chama [**Createcompacter**](/windows/desktop/api/compressapi/nf-compressapi-createcompressor) ou [**CreateDecompressor**](/windows/desktop/api/compressapi/nf-compressapi-createdecompressor). No modo de bloco, o aplicativo deve lidar com informações de bloco de compactação, como tamanho de dados compactados e tamanho de dados descompactado, caso contrário, [**descompactar**](/windows/desktop/api/compressapi/nf-compressapi-decompress) não poderá descompactar as informações.
 
-O snippet a seguir mostra uma rotina de alocação personalizada simples.
+O trecho a seguir mostra uma rotina de alocação personalizada simples.
 
 
 ```C++

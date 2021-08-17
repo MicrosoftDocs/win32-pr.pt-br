@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a088a1be640c6653a8a8ccd8b00cf21bd027ecd7
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 5daa2b33fdc356782837aadfe37186bc4cc2b493208fdc78ba645ada9e746582
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105791462"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117884846"
 ---
 # <a name="ienumprogressitemsremotenext-method"></a>Método IEnumProgressItems:: RemoteNext
 
@@ -65,7 +65,7 @@ Número de elementos retornados em rgelt. Você pode definir *pceltFetched* como
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 S \_ OK é retornado quando o número de elementos solicitados (*celt*) é retornado com êxito ou o número de itens retornados (*pceltFetched*) é menor que o número de elementos solicitados.
 
@@ -73,7 +73,7 @@ Outros códigos de êxito podem ser retornados como resultado da implementação
 
 
 
-| Código de retorno                                                                                   | Description                                                                     |
+| Código de retorno                                                                                   | Descrição                                                                     |
 |-----------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------|
 | <dl> <dt>**\_ponteiro E**</dt> </dl>     | O ponteiro não é válido.<br/> Valor: 0x80004003<br/>                   |
 | <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | Falha ao alocar a memória necessária.<br/> Valor: 0x8007000E<br/> |
@@ -94,8 +94,8 @@ Se houver menos do que o número solicitado de elementos restantes na sequência
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Somente Windows Vista, Windows XP com \[ aplicativos de área de trabalho do SP2\]<br/>                     |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                    |
+| Cliente mínimo com suporte<br/> | Windows Vista, somente Windows XP com \[ aplicativos de área de trabalho do SP2\]<br/>                     |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                    |
 | INSERI<br/>                      | <dl> <dt>Imapi2fs. idl</dt> </dl> |
 
 

@@ -4,9 +4,9 @@ description: Retorna uma cadeia de caracteres formatada que contém o texto de u
 ms.assetid: 5f0a5259-8356-4406-8612-34f4921184f0
 ms.tgt_platform: multiple
 keywords:
-- Gerenciamento Remoto do Windows do método GetErrorMessage
-- Método GetErrorMessage Gerenciamento Remoto do Windows, objeto WSMan
-- Gerenciamento Remoto do Windows de objeto WSMan, Método GetErrorMessage
+- Gerenciamento Remoto do Windows do método geterrormessage
+- método geterrormessage Gerenciamento Remoto do Windows, objeto WSMan
+- Gerenciamento Remoto do Windows de objeto WSMan, método geterrormessage
 topic_type:
 - apiref
 api_name:
@@ -17,12 +17,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3d085e6f19c64f609fe1389a2822df1594ee69bc
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 94e7f23a5d2678d3df024c78397aaeb6a388d8b75368f329867f6457b9ad4d84
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104295787"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117742086"
 ---
 # <a name="wsmangeterrormessage-method"></a>Método WSMan. GetErrorMessage
 
@@ -70,7 +70,7 @@ O método C++ correspondente é [**IWSManEx:: GetErrorMessage**](/windows/deskto
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                 |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                           |
-| parâmetro<br/>                   | <dl> <dt>WSManDisp. h</dt> </dl>   |
+| Cabeçalho<br/>                   | <dl> <dt>WSManDisp. h</dt> </dl>   |
 | INSERI<br/>                      | <dl> <dt>WSManDisp. idl</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>WSManDisp. tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>WSMAuto.dll</dt> </dl>   |

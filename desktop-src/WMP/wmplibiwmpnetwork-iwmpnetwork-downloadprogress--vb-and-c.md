@@ -1,11 +1,11 @@
 ---
 title: Propriedade IWMPNetwork downloadProgress
-description: A propriedade downloadProgress Obtém a porcentagem de download concluído.
+description: A propriedade downloadProgress obtém o percentual de download concluído.
 ms.assetid: 40568c81-5bb5-45d9-b654-31072608663d
 keywords:
-- Propriedade downloadProgress Windows Media Player
-- Propriedade downloadProgress Windows Media Player, interface IWMPNetwork
-- Interface IWMPNetwork Windows Media Player, Propriedade downloadProgress
+- propriedade downloadProgress Windows Media Player
+- propriedade downloadProgress Windows Media Player , interface IWMPNetwork
+- Interface IWMPNetwork Windows Media Player , propriedade downloadProgress
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4b10b767845ac951e1364e15c7f6f1d729882e0d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 96c2b47895d595a570191d9aa66b90b1cdc53392f8f111d64307074e5689f2ca
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105781407"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118331966"
 ---
-# <a name="iwmpnetworkdownloadprogress-property"></a>IWMPNetwork: Propriedade ownloadProgress de:d
+# <a name="iwmpnetworkdownloadprogress-property"></a>Propriedade IWMPNetwork::d ownloadProgress
 
-A propriedade **downloadProgress** Obtém a porcentagem de download concluído.
+A **propriedade downloadProgress** obtém o percentual de download concluído.
 
 ## <a name="syntax"></a>Syntax
 
@@ -46,26 +46,26 @@ Public ReadOnly Property downloadProgress As System.Int32
 
 ## <a name="property-value"></a>Valor da propriedade
 
-Um **System. Int32** que é o progresso do download expresso como uma porcentagem.
+Um **System.Int32 que** é o progresso do download expresso como um percentual.
 
 ## <a name="remarks"></a>Comentários
 
-Quando o controle do Windows Media Player está conectado a um arquivo de mídia digital que pode ser reproduzido e baixado ao mesmo tempo, a propriedade **downloadProgress** Obtém a porcentagem do arquivo total que foi baixado. Atualmente, esse recurso tem suporte apenas para arquivos de mídia digital baixados de servidores Web. Um arquivo de qualquer um dos seguintes formatos pode ser baixado e reproduzido simultaneamente:
+Quando o controle Windows Media Player está conectado a um arquivo de mídia digital que pode ser reproduzido e baixado ao mesmo tempo, a propriedade **downloadProgress** obtém a porcentagem do arquivo total que foi baixado. Atualmente, esse recurso tem suporte apenas para arquivos de mídia digital baixados de servidores Web. Um arquivo de qualquer um dos seguintes formatos pode ser baixado e interpretado simultaneamente:
 
 -   Advanced Systems Format (ASF)
 -   Áudio do Windows Media (WMA)
 -   Vídeo do Windows Media (WMV)
 -   MP3
--   FUNCIONALIDADES
+-   Mpeg
 -   WAV
 
-Além disso, alguns arquivos AVI podem ser baixados e reproduzidos simultaneamente.
+Além disso, alguns arquivos AVI podem ser baixados e tocados simultaneamente.
 
-Use o **AxWindowsMediaPlayer. \_ WMPOCXEvents \_ BufferingEvent** para determinar quando o buffer é iniciado ou interrompido.
+Use **o AxWindowsMediaPlayer. \_ WMPOCXEvents \_ BufferingEvent para** determinar quando o buffer é iniciado ou interrompido.
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo de código a seguir usa **downloadProgress** para exibir a porcentagem de download concluído. As informações são exibidas em um rótulo, em resposta ao evento de **buffer** . O exemplo usa um temporizador com um intervalo de 1 segundo para atualizar a exibição. O objeto **AxWMPLib. AxWindowsMediaPlayer** é representado pela variável chamada Player.
+O exemplo de código a seguir **usa downloadProgress** para exibir o percentual de download concluído. As informações são exibidas em um rótulo, em resposta ao **Evento de Buffer.** O exemplo usa um temporizador com um intervalo de 1 segundo para atualizar a exibição. O **objeto AxWMPLib.AxWindowsMediaPlayer** é representado pela variável chamada player.
 
 
 ```CSharp
@@ -145,7 +145,7 @@ End Sub
 
 | Requisito | Valor |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versão<br/>   | Windows Media Player 9 Series ou posterior<br/>                                                                      |
+| Versão<br/>   | Windows Media Player série 9 ou posterior<br/>                                                                      |
 | Namespace<br/> | **WMPLib**<br/>                                                                                                  |
 | Assembly<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 
@@ -155,7 +155,7 @@ End Sub
 
 <dl> <dt>
 
-[**Evento AxWindowsMediaPlayer. buffering (VB e C#)**](axwmplib-axwindowsmediaplayer-buffering.md)
+[**Evento AxWindowsMediaPlayer.Buffering (VB e C#)**](axwmplib-axwindowsmediaplayer-buffering.md)
 </dt> <dt>
 
 [**Interface IWMPNetwork (VB e C#)**](iwmpnetwork--vb-and-c.md)

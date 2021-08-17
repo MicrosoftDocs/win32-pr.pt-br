@@ -4,17 +4,17 @@ ms.assetid: cacb0aec-d438-4875-a96e-4e0239fdc6ba
 title: Códigos de erro do sistema (0-499) (WinError. h)
 ms.topic: reference
 ms.date: 07/18/2019
-ms.openlocfilehash: 413d9674f511bd49df12267b60d6c6c3dac366aa
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: a9eddec2baf098f62bb1c0ad88e632360807e7f3fd0ea045f2565587f13e93a6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103826432"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118405645"
 ---
 # <a name="system-error-codes-0-499"></a>Códigos de erro do sistema (0-499)
 
 > [!NOTE]
-> Essas informações destinam-se a desenvolvedores Depurando erros do sistema. Para outros erros, como problemas com Windows Update, há uma lista de recursos na página códigos de [erro](system-error-codes.md) .
+> Essas informações destinam-se a desenvolvedores Depurando erros do sistema. para outros erros, como problemas com Windows Update, há uma lista de recursos na página códigos de [erro](system-error-codes.md) .
 
 A lista a seguir descreve os [códigos de erro do sistema](system-error-codes.md) (erros 0 a 499). Elas são retornadas pela função [**GetLastError**](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) quando muitas funções falham. Para recuperar o texto de descrição do erro em seu aplicativo, use a função [**FormatMessage**](/windows/desktop/api/WinBase/nf-winbase-formatmessage) com a **mensagem de formato \_ \_ do sinalizador do \_ sistema** .
 
@@ -93,7 +93,7 @@ O sistema não pode abrir o arquivo.
 
 
 
-O acesso foi negado.
+Acesso negado.
 
 
 </dt> </dl> </dd> <dt>
@@ -423,7 +423,7 @@ O sistema não pode ler do dispositivo especificado.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_GEN_FAILURE"></span><span id="error_gen_failure"></span>**\_falha de Gen de erro \_**
+<span id="ERROR_GEN_FAILURE"></span><span id="error_gen_failure"></span>**FALHA \_ DE GERAÇÃO DE \_ ERRO**
 </dt> <dd> <dl> <dt>
 
 31 (0x1F)
@@ -431,12 +431,12 @@ O sistema não pode ler do dispositivo especificado.
 
 
 
-Um dispositivo conectado ao sistema não está funcionando.
+Um dispositivo anexado ao sistema não está funcionando.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_SHARING_VIOLATION"></span><span id="error_sharing_violation"></span>**\_violação de compartilhamento de erro \_**
+<span id="ERROR_SHARING_VIOLATION"></span><span id="error_sharing_violation"></span>**VIOLAÇÃO DE \_ \_ COMPARTILHAMENTO DE ERRO**
 </dt> <dd> <dl> <dt>
 
 32 (0x20)
@@ -449,7 +449,7 @@ O processo não pode acessar o arquivo porque ele está sendo usado por outro pr
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_LOCK_VIOLATION"></span><span id="error_lock_violation"></span>**\_violação de bloqueio de erro \_**
+<span id="ERROR_LOCK_VIOLATION"></span><span id="error_lock_violation"></span>**VIOLAÇÃO \_ DE BLOQUEIO DE \_ ERRO**
 </dt> <dd> <dl> <dt>
 
 33 (0x21)
@@ -462,7 +462,7 @@ O processo não pode acessar o arquivo porque outro processo bloqueou uma parte 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_WRONG_DISK"></span><span id="error_wrong_disk"></span>**ERRO \_ de \_ disco incorreto**
+<span id="ERROR_WRONG_DISK"></span><span id="error_wrong_disk"></span>**ERRO \_ DE DISCO \_ ERRADO**
 </dt> <dd> <dl> <dt>
 
 34 (0x22)
@@ -470,12 +470,12 @@ O processo não pode acessar o arquivo porque outro processo bloqueou uma parte 
 
 
 
-O disquete errado está na unidade. Insira %2 (número de série do volume: %3) na unidade %1.
+O diskette errado está na unidade. Insira %2 (Número de Série do Volume: %3) na unidade %1.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_SHARING_BUFFER_EXCEEDED"></span><span id="error_sharing_buffer_exceeded"></span>**o \_ buffer de compartilhamento de erro \_ \_ foi excedido**
+<span id="ERROR_SHARING_BUFFER_EXCEEDED"></span><span id="error_sharing_buffer_exceeded"></span>**BUFFER \_ DE COMPARTILHAMENTO \_ DE ERRO \_ EXCEDIDO**
 </dt> <dd> <dl> <dt>
 
 36 (0x24)
@@ -488,7 +488,7 @@ Muitos arquivos abertos para compartilhamento.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_HANDLE_EOF"></span><span id="error_handle_eof"></span>**identificador de erro \_ \_ EOF**
+<span id="ERROR_HANDLE_EOF"></span><span id="error_handle_eof"></span>**EOF \_ DO ERROR HANDLE \_**
 </dt> <dd> <dl> <dt>
 
 38 (0x26)
@@ -496,12 +496,12 @@ Muitos arquivos abertos para compartilhamento.
 
 
 
-Fim do arquivo atingido.
+Atingiu o final do arquivo.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_HANDLE_DISK_FULL"></span><span id="error_handle_disk_full"></span>**ERRO de \_ identificador de \_ disco \_ cheio**
+<span id="ERROR_HANDLE_DISK_FULL"></span><span id="error_handle_disk_full"></span>**LIDAR \_ COM ERRO DISCO \_ \_ CHEIO**
 </dt> <dd> <dl> <dt>
 
 39 (0x27)
@@ -514,7 +514,7 @@ O disco está cheio.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_NOT_SUPPORTED"></span><span id="error_not_supported"></span>**ERRO \_ sem \_ suporte**
+<span id="ERROR_NOT_SUPPORTED"></span><span id="error_not_supported"></span>**ERRO \_ SEM \_ SUPORTE**
 </dt> <dd> <dl> <dt>
 
 50 (0x32)
@@ -527,7 +527,7 @@ A solicitação não terá suporte.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_REM_NOT_LIST"></span><span id="error_rem_not_list"></span>**ERRO \_ REM \_ não \_ lista**
+<span id="ERROR_REM_NOT_LIST"></span><span id="error_rem_not_list"></span>**ERRO \_ REM \_ NOT \_ LIST**
 </dt> <dd> <dl> <dt>
 
 51 (0x33)
@@ -535,12 +535,12 @@ A solicitação não terá suporte.
 
 
 
-O Windows não pode localizar o caminho de rede. Verifique se o caminho de rede está correto e se o computador de destino não está ocupado ou desligado. Se o Windows ainda não conseguir localizar o caminho de rede, entre em contato com o administrador da rede.
+Windows pode encontrar o caminho de rede. Verifique se o caminho de rede está correto e se o computador de destino não está ocupado ou desligado. Se Windows ainda não conseguir encontrar o caminho de rede, entre em contato com o administrador de rede.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DUP_NAME"></span><span id="error_dup_name"></span>**\_nome do Dup de erro \_**
+<span id="ERROR_DUP_NAME"></span><span id="error_dup_name"></span>**NOME \_ DO DUP DE \_ ERRO**
 </dt> <dd> <dl> <dt>
 
 52 (0x34)
@@ -548,12 +548,12 @@ O Windows não pode localizar o caminho de rede. Verifique se o caminho de rede 
 
 
 
-Você não estava conectado porque existe um nome duplicado na rede. Se estiver ingressando em um domínio, vá para sistema no painel de controle para alterar o nome do computador e tente novamente. Se estiver ingressando em um grupo de trabalho, escolha outro nome de grupo de trabalho.
+Você não estava conectado porque existe um nome duplicado na rede. Se ingressar em um domínio, vá para Sistema no Painel de Controle para alterar o nome do computador e tente novamente. Se ingressar em um grupo de trabalho, escolha outro nome de grupo de trabalho.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_BAD_NETPATH"></span><span id="error_bad_netpath"></span>**ERRO \_ de \_ netpath insatisfatório**
+<span id="ERROR_BAD_NETPATH"></span><span id="error_bad_netpath"></span>**ERRO \_ \_ NETPATH RUIM**
 </dt> <dd> <dl> <dt>
 
 53 (0x35)
@@ -566,7 +566,7 @@ O caminho da rede não foi encontrado.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_NETWORK_BUSY"></span><span id="error_network_busy"></span>**ERRO de \_ rede \_ ocupado**
+<span id="ERROR_NETWORK_BUSY"></span><span id="error_network_busy"></span>**REDE \_ DE \_ ERRO OCUPADA**
 </dt> <dd> <dl> <dt>
 
 54 (0x36)
@@ -579,7 +579,7 @@ A rede está ocupada.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DEV_NOT_EXIST"></span><span id="error_dev_not_exist"></span>**\_desenvolvimento de \_ erro \_ inexistente**
+<span id="ERROR_DEV_NOT_EXIST"></span><span id="error_dev_not_exist"></span>**O \_ DEV \_ DE ERRO NÃO \_ EXISTE**
 </dt> <dd> <dl> <dt>
 
 55 (0x37)
@@ -587,12 +587,12 @@ A rede está ocupada.
 
 
 
-O dispositivo ou recurso de rede especificado não está mais disponível.
+O recurso de rede ou dispositivo especificado não está mais disponível.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_TOO_MANY_CMDS"></span><span id="error_too_many_cmds"></span>**ERRO em excesso de \_ \_ \_ cmds**
+<span id="ERROR_TOO_MANY_CMDS"></span><span id="error_too_many_cmds"></span>**ERRO \_ MUITOS \_ \_ CMDS**
 </dt> <dd> <dl> <dt>
 
 56 (0x38)
@@ -600,12 +600,12 @@ O dispositivo ou recurso de rede especificado não está mais disponível.
 
 
 
-O limite de comandos do BIOS de rede foi atingido.
+O limite de comando do BIOS de rede foi atingido.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_ADAP_HDW_ERR"></span><span id="error_adap_hdw_err"></span>**ERRO \_ \_ HDW ADAP \_**
+<span id="ERROR_ADAP_HDW_ERR"></span><span id="error_adap_hdw_err"></span>**ERRO \_ ADAP \_ HDW \_ ERR**
 </dt> <dd> <dl> <dt>
 
 57 (0x39)
@@ -618,7 +618,7 @@ Ocorreu um erro de hardware do adaptador de rede.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_BAD_NET_RESP"></span><span id="error_bad_net_resp"></span>**ERRO \_ \_ resp net inadequado \_**
+<span id="ERROR_BAD_NET_RESP"></span><span id="error_bad_net_resp"></span>**ERRO \_ \_ RESP DE NET \_ RUIM**
 </dt> <dd> <dl> <dt>
 
 58 (0x3A)
@@ -631,7 +631,7 @@ O servidor especificado não pode executar a operação solicitada.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_UNEXP_NET_ERR"></span><span id="error_unexp_net_err"></span>**ERRO \_ UNEXP \_ net \_ Err**
+<span id="ERROR_UNEXP_NET_ERR"></span><span id="error_unexp_net_err"></span>**ERRO \_ ERRO UNEXP \_ NET \_ ERR**
 </dt> <dd> <dl> <dt>
 
 59 (0x3B)
@@ -644,7 +644,7 @@ Ocorreu um erro de rede inesperado.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_BAD_REM_ADAP"></span><span id="error_bad_rem_adap"></span>**ERRO \_ de \_ REM \_ .**
+<span id="ERROR_BAD_REM_ADAP"></span><span id="error_bad_rem_adap"></span>**ERRO \_ \_ \_ ADAP DE REM RUIM**
 </dt> <dd> <dl> <dt>
 
 60 (0x3C)
@@ -657,7 +657,7 @@ O adaptador remoto não é compatível.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_PRINTQ_FULL"></span><span id="error_printq_full"></span>**ERRO \_ PRINTQ \_ completo**
+<span id="ERROR_PRINTQ_FULL"></span><span id="error_printq_full"></span>**ERRO \_ PRINTQ \_ FULL**
 </dt> <dd> <dl> <dt>
 
 61 (0x3D)
@@ -665,12 +665,12 @@ O adaptador remoto não é compatível.
 
 
 
-A fila de impressora está cheia.
+A fila da impressora está cheia.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_NO_SPOOL_SPACE"></span><span id="error_no_spool_space"></span>**ERRO \_ nenhum \_ espaço de spool \_**
+<span id="ERROR_NO_SPOOL_SPACE"></span><span id="error_no_spool_space"></span>**ERRO \_ SEM ESPAÇO EM \_ \_ SPOOL**
 </dt> <dd> <dl> <dt>
 
 62 (0x3E)
@@ -678,12 +678,12 @@ A fila de impressora está cheia.
 
 
 
-O espaço para armazenar o arquivo que está aguardando para ser impresso não está disponível no servidor.
+O espaço para armazenar o arquivo que aguarda a impressão não está disponível no servidor.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_PRINT_CANCELLED"></span><span id="error_print_cancelled"></span>**ERRO ao \_ Imprimir \_ cancelado**
+<span id="ERROR_PRINT_CANCELLED"></span><span id="error_print_cancelled"></span>**ERRO \_ DE IMPRESSÃO \_ CANCELADO**
 </dt> <dd> <dl> <dt>
 
 63 (0x3F)
@@ -691,12 +691,12 @@ O espaço para armazenar o arquivo que está aguardando para ser impresso não e
 
 
 
-O arquivo aguardando para ser impresso foi excluído.
+Seu arquivo aguardando para ser impresso foi excluído.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_NETNAME_DELETED"></span><span id="error_netname_deleted"></span>**ERRO \_ NetName \_ excluído**
+<span id="ERROR_NETNAME_DELETED"></span><span id="error_netname_deleted"></span>**ERRO \_ NETNAME \_ EXCLUÍDO**
 </dt> <dd> <dl> <dt>
 
 64 (0x40)
@@ -709,7 +709,7 @@ O nome da rede especificado não está mais disponível.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_NETWORK_ACCESS_DENIED"></span><span id="error_network_access_denied"></span>**ERRO \_ de \_ acesso à rede \_ negado**
+<span id="ERROR_NETWORK_ACCESS_DENIED"></span><span id="error_network_access_denied"></span>**ERRO \_ ACESSO À REDE \_ \_ NEGADO**
 </dt> <dd> <dl> <dt>
 
 65 (0x41)
@@ -717,12 +717,12 @@ O nome da rede especificado não está mais disponível.
 
 
 
-Acesso à rede negado.
+O acesso à rede é negado.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_BAD_DEV_TYPE"></span><span id="error_bad_dev_type"></span>**ERRO \_ \_ tipo de desenvolvimento insatisfatório \_**
+<span id="ERROR_BAD_DEV_TYPE"></span><span id="error_bad_dev_type"></span>**TIPO \_ \_ DEV ERROR BAD \_**
 </dt> <dd> <dl> <dt>
 
 66 (0x42)
@@ -735,7 +735,7 @@ O tipo de recurso de rede não está correto.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_BAD_NET_NAME"></span><span id="error_bad_net_name"></span>**ERRO \_ de \_ nome de rede insatisfatório \_**
+<span id="ERROR_BAD_NET_NAME"></span><span id="error_bad_net_name"></span>**ERRO \_ NOME DE REDE \_ \_ RUIM**
 </dt> <dd> <dl> <dt>
 
 67 (0x43)
@@ -748,7 +748,7 @@ O nome de rede não foi encontrado.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_TOO_MANY_NAMES"></span><span id="error_too_many_names"></span>**ERRO \_ em \_ muitos \_ nomes**
+<span id="ERROR_TOO_MANY_NAMES"></span><span id="error_too_many_names"></span>**ERRO \_ MUITOS \_ \_ NOMES**
 </dt> <dd> <dl> <dt>
 
 68 (0x44)
@@ -756,12 +756,12 @@ O nome de rede não foi encontrado.
 
 
 
-O limite de nome para a placa do adaptador de rede do computador local foi excedido.
+O limite de nome para a placa de adaptador de rede do computador local foi excedido.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_TOO_MANY_SESS"></span><span id="error_too_many_sess"></span>**ERRO em excesso de \_ \_ \_ sess**
+<span id="ERROR_TOO_MANY_SESS"></span><span id="error_too_many_sess"></span>**ERRO \_ MUITO \_ \_ SESS**
 </dt> <dd> <dl> <dt>
 
 69 (0x45)
@@ -774,7 +774,7 @@ O limite de sessão do BIOS de rede foi excedido.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_SHARING_PAUSED"></span><span id="error_sharing_paused"></span>**ERRO ao \_ compartilhar em \_ pausa**
+<span id="ERROR_SHARING_PAUSED"></span><span id="error_sharing_paused"></span>**ERRO AO \_ COMPARTILHAR \_ PAUSADO**
 </dt> <dd> <dl> <dt>
 
 70 (0x46)
@@ -782,12 +782,12 @@ O limite de sessão do BIOS de rede foi excedido.
 
 
 
-O servidor remoto foi pausado ou está em processo de ser iniciado.
+O servidor remoto foi pausado ou está no processo de ser iniciado.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_REQ_NOT_ACCEP"></span><span id="error_req_not_accep"></span>**Req. de erro \_ \_ não \_ ACCEP**
+<span id="ERROR_REQ_NOT_ACCEP"></span><span id="error_req_not_accep"></span>**ERROR \_ REQ \_ NOT \_ ACCEP**
 </dt> <dd> <dl> <dt>
 
 71 (0x47)
@@ -795,12 +795,12 @@ O servidor remoto foi pausado ou está em processo de ser iniciado.
 
 
 
-Não é possível fazer mais conexões com este computador remoto no momento porque já existem tantas conexões quantas o computador pode aceitar.
+Não é possível fazer mais conexões com esse computador remoto no momento porque já há tantas conexões quanto o computador pode aceitar.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_REDIR_PAUSED"></span><span id="error_redir_paused"></span>**ERRO \_ REDIR em \_ pausa**
+<span id="ERROR_REDIR_PAUSED"></span><span id="error_redir_paused"></span>**ERRO \_ REDIR \_ PAUSADO**
 </dt> <dd> <dl> <dt>
 
 72 (0x48)
@@ -813,7 +813,7 @@ A impressora ou o dispositivo de disco especificado foi pausado.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_FILE_EXISTS"></span><span id="error_file_exists"></span>**o \_ arquivo de erro \_ existe**
+<span id="ERROR_FILE_EXISTS"></span><span id="error_file_exists"></span>**ARQUIVO \_ DE \_ ERRO EXISTE**
 </dt> <dd> <dl> <dt>
 
 80 (0x50)
@@ -826,7 +826,7 @@ O arquivo existe.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CANNOT_MAKE"></span><span id="error_cannot_make"></span>**ERRO \_ não é possível \_ fazer**
+<span id="ERROR_CANNOT_MAKE"></span><span id="error_cannot_make"></span>**ERRO \_ NÃO PODE \_ FAZER**
 </dt> <dd> <dl> <dt>
 
 82 (0x52)
@@ -834,12 +834,12 @@ O arquivo existe.
 
 
 
-Não é possível criar o diretório ou arquivo.
+O diretório ou arquivo não pode ser criado.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_FAIL_I24"></span><span id="error_fail_i24"></span>**ERRO \_ falha \_ I24**
+<span id="ERROR_FAIL_I24"></span><span id="error_fail_i24"></span>**ERRO \_ FALHA \_ I24**
 </dt> <dd> <dl> <dt>
 
 83 (0x53)
@@ -847,12 +847,12 @@ Não é possível criar o diretório ou arquivo.
 
 
 
-Falha em INT 24.
+Falha no INT 24.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_OUT_OF_STRUCTURES"></span><span id="error_out_of_structures"></span>**ERRO \_ fora \_ de \_ estruturas**
+<span id="ERROR_OUT_OF_STRUCTURES"></span><span id="error_out_of_structures"></span>**ERRO \_ FORA \_ DE \_ ESTRUTURAS**
 </dt> <dd> <dl> <dt>
 
 84 (0x54)
@@ -860,12 +860,12 @@ Falha em INT 24.
 
 
 
-O armazenamento para processar esta solicitação não está disponível.
+Armazenamento para processar essa solicitação não está disponível.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_ALREADY_ASSIGNED"></span><span id="error_already_assigned"></span>**ERRO \_ já \_ atribuído**
+<span id="ERROR_ALREADY_ASSIGNED"></span><span id="error_already_assigned"></span>**ERRO \_ JÁ \_ ATRIBUÍDO**
 </dt> <dd> <dl> <dt>
 
 85 (0x55)
@@ -878,7 +878,7 @@ O nome do dispositivo local já está em uso.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INVALID_PASSWORD"></span><span id="error_invalid_password"></span>**\_senha inválida do erro \_**
+<span id="ERROR_INVALID_PASSWORD"></span><span id="error_invalid_password"></span>**ERRO \_ SENHA \_ INVÁLIDA**
 </dt> <dd> <dl> <dt>
 
 86 (0x56)
@@ -891,7 +891,7 @@ A senha da rede especificada não está correta.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INVALID_PARAMETER"></span><span id="error_invalid_parameter"></span>**\_parâmetro inválido de erro \_**
+<span id="ERROR_INVALID_PARAMETER"></span><span id="error_invalid_parameter"></span>**ERRO \_ PARÂMETRO \_ INVÁLIDO**
 </dt> <dd> <dl> <dt>
 
 87 (0x57)
@@ -904,7 +904,7 @@ O parâmetro está incorreto.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_NET_WRITE_FAULT"></span><span id="error_net_write_fault"></span>**ERRO \_ de \_ falha de gravação de rede \_**
+<span id="ERROR_NET_WRITE_FAULT"></span><span id="error_net_write_fault"></span>**FALHA \_ DE GRAVAÇÃO DE REDE DE \_ \_ ERRO**
 </dt> <dd> <dl> <dt>
 
 88 (0x58)
@@ -917,7 +917,7 @@ Ocorreu uma falha de gravação na rede.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_NO_PROC_SLOTS"></span><span id="error_no_proc_slots"></span>**ERRO \_ sem \_ \_ Slots proc**
+<span id="ERROR_NO_PROC_SLOTS"></span><span id="error_no_proc_slots"></span>**ERRO \_ SEM \_ \_ SLOTS PROC**
 </dt> <dd> <dl> <dt>
 
 89 (0x59)
@@ -930,7 +930,7 @@ O sistema não pode iniciar outro processo no momento.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_TOO_MANY_SEMAPHORES"></span><span id="error_too_many_semaphores"></span>**ERRO em excesso de \_ \_ \_ semáforos**
+<span id="ERROR_TOO_MANY_SEMAPHORES"></span><span id="error_too_many_semaphores"></span>**ERRO \_ MUITOS \_ \_ SEMÁFOROS**
 </dt> <dd> <dl> <dt>
 
 100 (0x64)
@@ -943,7 +943,7 @@ Não é possível criar outro semáforo do sistema.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_EXCL_SEM_ALREADY_OWNED"></span><span id="error_excl_sem_already_owned"></span>**ERRO \_ excl \_ sem \_ \_ Propriedade já pertencente**
+<span id="ERROR_EXCL_SEM_ALREADY_OWNED"></span><span id="error_excl_sem_already_owned"></span>**ERRO \_ EXCL \_ SEM JÁ \_ \_ PERTENCENTE**
 </dt> <dd> <dl> <dt>
 
 101 (0x65)
@@ -956,7 +956,7 @@ O semáforo exclusivo pertence a outro processo.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_SEM_IS_SET"></span><span id="error_sem_is_set"></span>**o erro \_ sem \_ está \_ definido**
+<span id="ERROR_SEM_IS_SET"></span><span id="error_sem_is_set"></span>**ERRO \_ SEM \_ ESTÁ \_ DEFINIDO**
 </dt> <dd> <dl> <dt>
 
 102 (0x66)
@@ -969,7 +969,7 @@ O semáforo está definido e não pode ser fechado.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_TOO_MANY_SEM_REQUESTS"></span><span id="error_too_many_sem_requests"></span>**ERRO \_ número \_ excessivo \_ de \_ solicitações sem**
+<span id="ERROR_TOO_MANY_SEM_REQUESTS"></span><span id="error_too_many_sem_requests"></span>**ERRO \_ MUITAS \_ SOLICITAÇÕES \_ SEM \_**
 </dt> <dd> <dl> <dt>
 
 103 (0x67)
@@ -982,7 +982,7 @@ O semáforo não pode ser definido novamente.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INVALID_AT_INTERRUPT_TIME"></span><span id="error_invalid_at_interrupt_time"></span>**ERRO \_ inválido \_ no \_ tempo de interrupção \_**
+<span id="ERROR_INVALID_AT_INTERRUPT_TIME"></span><span id="error_invalid_at_interrupt_time"></span>**ERRO \_ INVÁLIDO NO MOMENTO DA \_ \_ \_ INTERRUPÇÃO**
 </dt> <dd> <dl> <dt>
 
 104 (0x68)
@@ -990,12 +990,12 @@ O semáforo não pode ser definido novamente.
 
 
 
-Não é possível solicitar semáforos exclusivos no tempo de interrupção.
+Não é possível solicitar semáforos exclusivos no momento da interrupção.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_SEM_OWNER_DIED"></span><span id="error_sem_owner_died"></span>**ERRO \_ sem \_ proprietário \_ morreu**
+<span id="ERROR_SEM_OWNER_DIED"></span><span id="error_sem_owner_died"></span>**ERRO \_ SEM \_ PROPRIETÁRIO \_ MORTO**
 </dt> <dd> <dl> <dt>
 
 105 (0x69)
@@ -1003,12 +1003,12 @@ Não é possível solicitar semáforos exclusivos no tempo de interrupção.
 
 
 
-A propriedade anterior deste semáforo foi encerrada.
+A propriedade anterior desse semáforo foi encerrada.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_SEM_USER_LIMIT"></span><span id="error_sem_user_limit"></span>**ERRO \_ sem \_ limite de usuário \_**
+<span id="ERROR_SEM_USER_LIMIT"></span><span id="error_sem_user_limit"></span>**ERRO \_ SEM LIMITE DE \_ \_ USUÁRIO**
 </dt> <dd> <dl> <dt>
 
 106 (0x6A)
@@ -1016,12 +1016,12 @@ A propriedade anterior deste semáforo foi encerrada.
 
 
 
-Insira o disquete para a unidade %1.
+Insira o diskette para a unidade %1.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DISK_CHANGE"></span><span id="error_disk_change"></span>**ERRO \_ ao \_ alterar disco**
+<span id="ERROR_DISK_CHANGE"></span><span id="error_disk_change"></span>**ALTERAÇÃO \_ DE DISCO DE \_ ERRO**
 </dt> <dd> <dl> <dt>
 
 107 (0x6B)
@@ -1029,12 +1029,12 @@ Insira o disquete para a unidade %1.
 
 
 
-O programa foi interrompido porque um disquete alternativo não foi inserido.
+O programa foi interrompido porque um diskette alternativo não foi inserido.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DRIVE_LOCKED"></span><span id="error_drive_locked"></span>**unidade de erro \_ \_ bloqueada**
+<span id="ERROR_DRIVE_LOCKED"></span><span id="error_drive_locked"></span>**UNIDADE \_ DE ERRO \_ BLOQUEADA**
 </dt> <dd> <dl> <dt>
 
 108 (0x6C)
@@ -1042,12 +1042,12 @@ O programa foi interrompido porque um disquete alternativo não foi inserido.
 
 
 
-O disco está em uso ou está bloqueado por outro processo.
+O disco está em uso ou bloqueado por outro processo.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_BROKEN_PIPE"></span><span id="error_broken_pipe"></span>**ERRO \_ de \_ pipe interrompido**
+<span id="ERROR_BROKEN_PIPE"></span><span id="error_broken_pipe"></span>**ERRO \_ DE PIPE \_ DESFEITO**
 </dt> <dd> <dl> <dt>
 
 109 (0x6D)
@@ -1060,7 +1060,7 @@ O pipe foi encerrado.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_OPEN_FAILED"></span><span id="error_open_failed"></span>**\_ \_ falha ao abrir erro**
+<span id="ERROR_OPEN_FAILED"></span><span id="error_open_failed"></span>**FALHA \_ AO ABRIR \_ ERRO**
 </dt> <dd> <dl> <dt>
 
 110 (0x6E)
@@ -1073,7 +1073,7 @@ O sistema não pode abrir o dispositivo ou o arquivo especificado.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_BUFFER_OVERFLOW"></span><span id="error_buffer_overflow"></span>**\_estouro de buffer de erro \_**
+<span id="ERROR_BUFFER_OVERFLOW"></span><span id="error_buffer_overflow"></span>**ESTOURO \_ DE BUFFER \_ DE ERRO**
 </dt> <dd> <dl> <dt>
 
 111 (0x6F)
@@ -1086,7 +1086,7 @@ O nome do arquivo é muito longo.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DISK_FULL"></span><span id="error_disk_full"></span>**ERRO de \_ disco \_ cheio**
+<span id="ERROR_DISK_FULL"></span><span id="error_disk_full"></span>**DISCO \_ DE \_ ERRO CHEIO**
 </dt> <dd> <dl> <dt>
 
 112 (0x70)
@@ -1099,7 +1099,7 @@ Espaço insuficiente no disco.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_NO_MORE_SEARCH_HANDLES"></span><span id="error_no_more_search_handles"></span>**ERRO \_ não \_ há \_ mais \_ identificadores de pesquisa**
+<span id="ERROR_NO_MORE_SEARCH_HANDLES"></span><span id="error_no_more_search_handles"></span>**ERRO \_ NÃO HÁ MAIS \_ \_ \_ ALÇAS DE PESQUISA**
 </dt> <dd> <dl> <dt>
 
 113 (0x71)
@@ -1112,7 +1112,7 @@ Não há mais identificadores de arquivo internos disponíveis.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INVALID_TARGET_HANDLE"></span><span id="error_invalid_target_handle"></span>**ERRO \_ de \_ identificador de destino inválido \_**
+<span id="ERROR_INVALID_TARGET_HANDLE"></span><span id="error_invalid_target_handle"></span>**ERRO \_ AO TRATAR DE DESTINO \_ \_ INVÁLIDO**
 </dt> <dd> <dl> <dt>
 
 114 (0x72)
@@ -1125,7 +1125,7 @@ O identificador de arquivo interno de destino está incorreto.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INVALID_CATEGORY"></span><span id="error_invalid_category"></span>**Categoria de erro \_ inválida \_**
+<span id="ERROR_INVALID_CATEGORY"></span><span id="error_invalid_category"></span>**ERRO \_ CATEGORIA \_ INVÁLIDA**
 </dt> <dd> <dl> <dt>
 
 117 (0x75)
@@ -1133,12 +1133,12 @@ O identificador de arquivo interno de destino está incorreto.
 
 
 
-A chamada de IOCTL feita pelo programa de aplicativo não está correta.
+A chamada IOCTL feita pelo programa de aplicativo não está correta.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INVALID_VERIFY_SWITCH"></span><span id="error_invalid_verify_switch"></span>**ERRO \_ ao \_ verificar \_ opção inválida**
+<span id="ERROR_INVALID_VERIFY_SWITCH"></span><span id="error_invalid_verify_switch"></span>**ERRO \_ COM OPÇÃO DE VERIFICAÇÃO \_ \_ INVÁLIDA**
 </dt> <dd> <dl> <dt>
 
 118 (0x76)
@@ -1146,12 +1146,12 @@ A chamada de IOCTL feita pelo programa de aplicativo não está correta.
 
 
 
-O valor do parâmetro de opção verify-on-Write não está correto.
+O valor do parâmetro verify-on-write switch não está correto.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_BAD_DRIVER_LEVEL"></span><span id="error_bad_driver_level"></span>**ERRO \_ de \_ nível de driver insatisfatório \_**
+<span id="ERROR_BAD_DRIVER_LEVEL"></span><span id="error_bad_driver_level"></span>**ERRO \_ NÍVEL DE DRIVER \_ \_ RUIM**
 </dt> <dd> <dl> <dt>
 
 119 (0x77)
@@ -1159,12 +1159,12 @@ O valor do parâmetro de opção verify-on-Write não está correto.
 
 
 
-O sistema não oferece suporte ao comando solicitado.
+O sistema não dá suporte ao comando solicitado.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CALL_NOT_IMPLEMENTED"></span><span id="error_call_not_implemented"></span>**chamada de erro \_ \_ não \_ implementada**
+<span id="ERROR_CALL_NOT_IMPLEMENTED"></span><span id="error_call_not_implemented"></span>**CHAMADA \_ DE ERRO NÃO \_ \_ IMPLEMENTADA**
 </dt> <dd> <dl> <dt>
 
 120 (0x78)
@@ -1172,12 +1172,12 @@ O sistema não oferece suporte ao comando solicitado.
 
 
 
-Esta função não tem suporte neste sistema.
+Não há suporte para essa função nesse sistema.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_SEM_TIMEOUT"></span><span id="error_sem_timeout"></span>**ERRO \_ sem \_ tempo limite**
+<span id="ERROR_SEM_TIMEOUT"></span><span id="error_sem_timeout"></span>**ERRO \_ SEM \_ TEMPOOUT**
 </dt> <dd> <dl> <dt>
 
 121 (0x79)
@@ -1185,12 +1185,12 @@ Esta função não tem suporte neste sistema.
 
 
 
-O período de tempo limite de semáforo expirou.
+O período de tempoout do semáforo expirou.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INSUFFICIENT_BUFFER"></span><span id="error_insufficient_buffer"></span>**ERRO \_ de \_ buffer insuficiente**
+<span id="ERROR_INSUFFICIENT_BUFFER"></span><span id="error_insufficient_buffer"></span>**ERRO \_ BUFFER \_ INSUFICIENTE**
 </dt> <dd> <dl> <dt>
 
 122 (0x7A)
@@ -1203,7 +1203,7 @@ A área de dados passada para uma chamada do sistema é muito pequena.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INVALID_NAME"></span><span id="error_invalid_name"></span>**\_nome inválido do erro \_**
+<span id="ERROR_INVALID_NAME"></span><span id="error_invalid_name"></span>**ERRO \_ NOME \_ INVÁLIDO**
 </dt> <dd> <dl> <dt>
 
 123 (0x7B)
@@ -1211,12 +1211,12 @@ A área de dados passada para uma chamada do sistema é muito pequena.
 
 
 
-A sintaxe FileName, nome do diretório ou rótulo do volume está incorreta.
+A sintaxe de nome de arquivo, nome do diretório ou rótulo de volume está incorreta.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INVALID_LEVEL"></span><span id="error_invalid_level"></span>**ERRO \_ de \_ nível inválido**
+<span id="ERROR_INVALID_LEVEL"></span><span id="error_invalid_level"></span>**ERRO \_ NÍVEL \_ INVÁLIDO**
 </dt> <dd> <dl> <dt>
 
 124 (0x7C)
@@ -1229,7 +1229,7 @@ O nível de chamada do sistema não está correto.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_NO_VOLUME_LABEL"></span><span id="error_no_volume_label"></span>**ERRO \_ sem \_ rótulo de volume \_**
+<span id="ERROR_NO_VOLUME_LABEL"></span><span id="error_no_volume_label"></span>**ERRO \_ NENHUM RÓTULO DE \_ \_ VOLUME**
 </dt> <dd> <dl> <dt>
 
 125 (0x7D)
@@ -1242,7 +1242,7 @@ O disco não tem nenhum rótulo de volume.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_MOD_NOT_FOUND"></span><span id="error_mod_not_found"></span>**ERRO \_ mod \_ não \_ encontrado**
+<span id="ERROR_MOD_NOT_FOUND"></span><span id="error_mod_not_found"></span>**ERRO \_ MOD \_ NÃO \_ ENCONTRADO**
 </dt> <dd> <dl> <dt>
 
 126 (0x7E)
@@ -1255,7 +1255,7 @@ O módulo especificado não pôde ser encontrado.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_PROC_NOT_FOUND"></span><span id="error_proc_not_found"></span>**PROC. de erro \_ \_ não \_ encontrado**
+<span id="ERROR_PROC_NOT_FOUND"></span><span id="error_proc_not_found"></span>**ERRO \_ PROC \_ NÃO \_ ENCONTRADO**
 </dt> <dd> <dl> <dt>
 
 127 (0x7F)
@@ -1697,7 +1697,7 @@ Um ou mais argumentos não estão corretos.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_BAD_PATHNAME"></span><span id="error_bad_pathname"></span>**ERRO \_ nome de caminho insatisfatório \_**
+<span id="ERROR_BAD_PATHNAME"></span><span id="error_bad_pathname"></span>**ERRO \_ NOME DE CAMINHO \_ RUIM**
 </dt> <dd> <dl> <dt>
 
 161 (0xA1)
@@ -1710,7 +1710,7 @@ O caminho especificado é inválido.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_SIGNAL_PENDING"></span><span id="error_signal_pending"></span>**sinal de erro \_ \_ pendente**
+<span id="ERROR_SIGNAL_PENDING"></span><span id="error_signal_pending"></span>**SINAL \_ \_ DE ERRO PENDENTE**
 </dt> <dd> <dl> <dt>
 
 162 (0xA2)
@@ -1718,12 +1718,12 @@ O caminho especificado é inválido.
 
 
 
-Já existe um sinal pendente.
+Um sinal já está pendente.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_MAX_THRDS_REACHED"></span><span id="error_max_thrds_reached"></span>**ERRO \_ Max \_ THRDS \_ atingido**
+<span id="ERROR_MAX_THRDS_REACHED"></span><span id="error_max_thrds_reached"></span>**ERRO \_ MÁXIMO \_ DE THRDS \_ ATINGIDO**
 </dt> <dd> <dl> <dt>
 
 164 (0xA4)
@@ -1736,7 +1736,7 @@ Não é possível criar mais threads no sistema.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_LOCK_FAILED"></span><span id="error_lock_failed"></span>**\_falha no bloqueio de erro \_**
+<span id="ERROR_LOCK_FAILED"></span><span id="error_lock_failed"></span>**FALHA \_ NO BLOQUEIO DE \_ ERRO**
 </dt> <dd> <dl> <dt>
 
 167 (0xA7)
@@ -1749,7 +1749,7 @@ Não é possível bloquear uma região de um arquivo.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_BUSY"></span><span id="error_busy"></span>**ERRO \_ ocupado**
+<span id="ERROR_BUSY"></span><span id="error_busy"></span>**ERRO \_ OCUPADO**
 </dt> <dd> <dl> <dt>
 
 170 (0xAA)
@@ -1762,7 +1762,7 @@ O recurso solicitado está em uso.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DEVICE_SUPPORT_IN_PROGRESS"></span><span id="error_device_support_in_progress"></span>**\_ \_ suporte ao dispositivo \_ de erro em \_ andamento**
+<span id="ERROR_DEVICE_SUPPORT_IN_PROGRESS"></span><span id="error_device_support_in_progress"></span>**SUPORTE \_ AO DISPOSITIVO DE ERRO EM \_ \_ \_ ANDAMENTO**
 </dt> <dd> <dl> <dt>
 
 171 (0xAB)
@@ -1770,12 +1770,12 @@ O recurso solicitado está em uso.
 
 
 
-A detecção de suporte de comando do dispositivo está em andamento.
+A detecção de suporte a comandos do dispositivo está em andamento.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CANCEL_VIOLATION"></span><span id="error_cancel_violation"></span>**ERRO de \_ cancelamento de \_ violação**
+<span id="ERROR_CANCEL_VIOLATION"></span><span id="error_cancel_violation"></span>**VIOLAÇÃO DE \_ CANCELAMENTO \_ DE ERRO**
 </dt> <dd> <dl> <dt>
 
 173 (0xAD)
@@ -1788,7 +1788,7 @@ Uma solicitação de bloqueio não estava pendente para a região de cancelament
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_ATOMIC_LOCKS_NOT_SUPPORTED"></span><span id="error_atomic_locks_not_supported"></span>**ERRO \_ de \_ bloqueios atômicos \_ sem \_ suporte**
+<span id="ERROR_ATOMIC_LOCKS_NOT_SUPPORTED"></span><span id="error_atomic_locks_not_supported"></span>**BLOQUEIOS \_ \_ ATÔMICOS \_ DE ERRO SEM \_ SUPORTE**
 </dt> <dd> <dl> <dt>
 
 174 (0xAE)
@@ -1796,12 +1796,12 @@ Uma solicitação de bloqueio não estava pendente para a região de cancelament
 
 
 
-O sistema de arquivos não dá suporte a alterações atômicas para o tipo de bloqueio.
+O sistema de arquivos não dá suporte a alterações atômicas no tipo de bloqueio.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INVALID_SEGMENT_NUMBER"></span><span id="error_invalid_segment_number"></span>**\_número de \_ segmento \_ inválido do erro**
+<span id="ERROR_INVALID_SEGMENT_NUMBER"></span><span id="error_invalid_segment_number"></span>**ERRO \_ NÚMERO DE SEGMENTO \_ \_ INVÁLIDO**
 </dt> <dd> <dl> <dt>
 
 180 (0xB4)
@@ -1814,7 +1814,7 @@ O sistema detectou um número de segmento que não estava correto.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INVALID_ORDINAL"></span><span id="error_invalid_ordinal"></span>**ERRO \_ \_ ORDINAL inválido**
+<span id="ERROR_INVALID_ORDINAL"></span><span id="error_invalid_ordinal"></span>**ERRO \_ \_ ORDINAL INVÁLIDO**
 </dt> <dd> <dl> <dt>
 
 182 (0xB6)
@@ -1827,7 +1827,7 @@ O sistema operacional não pode executar %1.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_ALREADY_EXISTS"></span><span id="error_already_exists"></span>**o erro \_ já \_ existe**
+<span id="ERROR_ALREADY_EXISTS"></span><span id="error_already_exists"></span>**O \_ ERRO JÁ \_ EXISTE**
 </dt> <dd> <dl> <dt>
 
 183 (0xB7)
@@ -1840,7 +1840,7 @@ Não é possível criar um arquivo quando ele já existe.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INVALID_FLAG_NUMBER"></span><span id="error_invalid_flag_number"></span>**ERRO \_ \_ número de sinalizador inválido \_**
+<span id="ERROR_INVALID_FLAG_NUMBER"></span><span id="error_invalid_flag_number"></span>**ERRO \_ NÚMERO DE SINALIZADOR \_ \_ INVÁLIDO**
 </dt> <dd> <dl> <dt>
 
 186 (0xBA)
@@ -1853,7 +1853,7 @@ O sinalizador passado não está correto.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_SEM_NOT_FOUND"></span><span id="error_sem_not_found"></span>**ERRO \_ sem \_ não \_ encontrado**
+<span id="ERROR_SEM_NOT_FOUND"></span><span id="error_sem_not_found"></span>**ERRO \_ SEM \_ \_ ENCONTRADO**
 </dt> <dd> <dl> <dt>
 
 187 (0xBB)
@@ -1866,7 +1866,7 @@ O nome do semáforo do sistema especificado não foi encontrado.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INVALID_STARTING_CODESEG"></span><span id="error_invalid_starting_codeseg"></span>**erro \_ inválido ao \_ Iniciar \_ CODESEG**
+<span id="ERROR_INVALID_STARTING_CODESEG"></span><span id="error_invalid_starting_codeseg"></span>**ERRO \_ \_ CODESEG INICIAL \_ INVÁLIDO**
 </dt> <dd> <dl> <dt>
 
 188 (0xBC)
@@ -1879,7 +1879,7 @@ O sistema operacional não pode executar %1.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INVALID_STACKSEG"></span><span id="error_invalid_stackseg"></span>**ERRO \_ \_ STACKSEG inválido**
+<span id="ERROR_INVALID_STACKSEG"></span><span id="error_invalid_stackseg"></span>**ERRO \_ \_ STACKSEG INVÁLIDO**
 </dt> <dd> <dl> <dt>
 
 189 (0xBD)
@@ -1892,7 +1892,7 @@ O sistema operacional não pode executar %1.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INVALID_MODULETYPE"></span><span id="error_invalid_moduletype"></span>**ERRO \_ de \_ ModuleType inválido**
+<span id="ERROR_INVALID_MODULETYPE"></span><span id="error_invalid_moduletype"></span>**ERRO \_ \_ MODULETYPE INVÁLIDO**
 </dt> <dd> <dl> <dt>
 
 190 (0xBE)
@@ -1905,7 +1905,7 @@ O sistema operacional não pode executar %1.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INVALID_EXE_SIGNATURE"></span><span id="error_invalid_exe_signature"></span>**ERRO \_ de \_ assinatura exe inválida \_**
+<span id="ERROR_INVALID_EXE_SIGNATURE"></span><span id="error_invalid_exe_signature"></span>**ERRO \_ ASSINATURA \_ EXE \_ INVÁLIDA**
 </dt> <dd> <dl> <dt>
 
 191 (0xBF)
@@ -1918,7 +1918,7 @@ Não é possível executar %1 no modo Win32.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_EXE_MARKED_INVALID"></span><span id="error_exe_marked_invalid"></span>**ERRO \_ exe \_ marcado como \_ inválido**
+<span id="ERROR_EXE_MARKED_INVALID"></span><span id="error_exe_marked_invalid"></span>**ERRO \_ EXE MARCADO COMO \_ \_ INVÁLIDO**
 </dt> <dd> <dl> <dt>
 
 192 (0xC0)
@@ -1931,7 +1931,7 @@ O sistema operacional não pode executar %1.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_BAD_EXE_FORMAT"></span><span id="error_bad_exe_format"></span>**ERRO \_ de \_ formato exe insatisfatório \_**
+<span id="ERROR_BAD_EXE_FORMAT"></span><span id="error_bad_exe_format"></span>**ERRO \_ DE FORMATO EXE \_ \_ RUIM**
 </dt> <dd> <dl> <dt>
 
 193 (0xC1)
@@ -1944,7 +1944,7 @@ O sistema operacional não pode executar %1.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_ITERATED_DATA_EXCEEDS_64k"></span><span id="error_iterated_data_exceeds_64k"></span><span id="ERROR_ITERATED_DATA_EXCEEDS_64K"></span>**\_Dados iterados de erro \_ \_ excedem \_ 64K**
+<span id="ERROR_ITERATED_DATA_EXCEEDS_64k"></span><span id="error_iterated_data_exceeds_64k"></span><span id="ERROR_ITERATED_DATA_EXCEEDS_64K"></span>**O \_ ERRO DE DADOS ITERADOS EXCEDE \_ \_ \_ 64 mil**
 </dt> <dd> <dl> <dt>
 
 194 (0xC2)
@@ -1957,7 +1957,7 @@ O sistema operacional não pode executar %1.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INVALID_MINALLOCSIZE"></span><span id="error_invalid_minallocsize"></span>**ERRO \_ \_ MINALLOCSIZE inválido**
+<span id="ERROR_INVALID_MINALLOCSIZE"></span><span id="error_invalid_minallocsize"></span>**ERRO \_ \_ MINALLOCSIZE INVÁLIDO**
 </dt> <dd> <dl> <dt>
 
 195 (0xC3)
@@ -1970,7 +1970,7 @@ O sistema operacional não pode executar %1.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DYNLINK_FROM_INVALID_RING"></span><span id="error_dynlink_from_invalid_ring"></span>**ERRO \_ DYNLINK \_ de \_ \_ anel inválido**
+<span id="ERROR_DYNLINK_FROM_INVALID_RING"></span><span id="error_dynlink_from_invalid_ring"></span>**ERRO \_ DYNLINK \_ DE ANEL \_ \_ INVÁLIDO**
 </dt> <dd> <dl> <dt>
 
 196 (0xC4)
@@ -1978,12 +1978,12 @@ O sistema operacional não pode executar %1.
 
 
 
-O sistema operacional não pode executar este programa de aplicativo.
+O sistema operacional não pode executar esse programa de aplicativo.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_IOPL_NOT_ENABLED"></span><span id="error_iopl_not_enabled"></span>**ERRO \_ IOPL \_ não \_ habilitado**
+<span id="ERROR_IOPL_NOT_ENABLED"></span><span id="error_iopl_not_enabled"></span>**\_ERRO IOPL \_ NÃO \_ HABILITADO**
 </dt> <dd> <dl> <dt>
 
 197 (0xC5)
@@ -1991,12 +1991,12 @@ O sistema operacional não pode executar este programa de aplicativo.
 
 
 
-O sistema operacional não está configurado atualmente para executar este aplicativo.
+Atualmente, o sistema operacional não está configurado para executar esse aplicativo.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INVALID_SEGDPL"></span><span id="error_invalid_segdpl"></span>**ERRO \_ \_ SEGDPL inválido**
+<span id="ERROR_INVALID_SEGDPL"></span><span id="error_invalid_segdpl"></span>**ERRO \_ \_ SEGDPL INVÁLIDO**
 </dt> <dd> <dl> <dt>
 
 198 (0xC6)
@@ -2009,7 +2009,7 @@ O sistema operacional não pode executar %1.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_AUTODATASEG_EXCEEDS_64k"></span><span id="error_autodataseg_exceeds_64k"></span><span id="ERROR_AUTODATASEG_EXCEEDS_64K"></span>**O erro \_ AUTODATASEG \_ excede \_ 64K**
+<span id="ERROR_AUTODATASEG_EXCEEDS_64k"></span><span id="error_autodataseg_exceeds_64k"></span><span id="ERROR_AUTODATASEG_EXCEEDS_64K"></span>**ERRO \_ AUTODATASEG \_ EXCEDE \_ 64 mil**
 </dt> <dd> <dl> <dt>
 
 199 (0xC7)
@@ -2017,12 +2017,12 @@ O sistema operacional não pode executar %1.
 
 
 
-O sistema operacional não pode executar este programa de aplicativo.
+O sistema operacional não pode executar esse programa de aplicativo.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_RING2SEG_MUST_BE_MOVABLE"></span><span id="error_ring2seg_must_be_movable"></span>**O erro \_ RING2SEG \_ deve \_ ser \_ móvel**
+<span id="ERROR_RING2SEG_MUST_BE_MOVABLE"></span><span id="error_ring2seg_must_be_movable"></span>**O \_ ERRO RING2SEG \_ DEVE SER \_ \_ MÓVEL**
 </dt> <dd> <dl> <dt>
 
 200 (0xC8)
@@ -2035,7 +2035,7 @@ O segmento de código não pode ser maior ou igual a 64K.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_RELOC_CHAIN_XEEDS_SEGLIM"></span><span id="error_reloc_chain_xeeds_seglim"></span>**ERRO \_ realocação \_ Chain \_ XEEDS \_ SEGLIM**
+<span id="ERROR_RELOC_CHAIN_XEEDS_SEGLIM"></span><span id="error_reloc_chain_xeeds_seglim"></span>**ERRO \_ \_ REALOCAR CADEIA \_ XEEDS \_ SEGLIM**
 </dt> <dd> <dl> <dt>
 
 201 (0xC9)
@@ -2048,7 +2048,7 @@ O sistema operacional não pode executar %1.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INFLOOP_IN_RELOC_CHAIN"></span><span id="error_infloop_in_reloc_chain"></span>**ERRO \_ INFLOOP \_ na \_ cadeia de realocação \_**
+<span id="ERROR_INFLOOP_IN_RELOC_CHAIN"></span><span id="error_infloop_in_reloc_chain"></span>**ERRO \_ INFLOOP \_ NA CADEIA DE \_ \_ REALOCAÇÃO**
 </dt> <dd> <dl> <dt>
 
 202 (0xCA)
@@ -2061,7 +2061,7 @@ O sistema operacional não pode executar %1.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_ENVVAR_NOT_FOUND"></span><span id="error_envvar_not_found"></span>**ERRO \_ ENVVAR \_ não \_ encontrado**
+<span id="ERROR_ENVVAR_NOT_FOUND"></span><span id="error_envvar_not_found"></span>**ERRO \_ ENVVAR \_ NÃO \_ ENCONTRADO**
 </dt> <dd> <dl> <dt>
 
 203 (0xCB)
@@ -2074,7 +2074,7 @@ O sistema não pôde encontrar a opção de ambiente que foi inserida.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_NO_SIGNAL_SENT"></span><span id="error_no_signal_sent"></span>**ERRO \_ nenhum \_ sinal \_ enviado**
+<span id="ERROR_NO_SIGNAL_SENT"></span><span id="error_no_signal_sent"></span>**ERRO \_ NENHUM \_ SINAL \_ ENVIADO**
 </dt> <dd> <dl> <dt>
 
 205 (0xCD)
@@ -2082,12 +2082,12 @@ O sistema não pôde encontrar a opção de ambiente que foi inserida.
 
 
 
-Nenhum processo na subárvore de comandos tem um manipulador de sinais.
+Nenhum processo na subárvore de comando tem um manipulador de sinais.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_FILENAME_EXCED_RANGE"></span><span id="error_filename_exced_range"></span>**ERRO \_ de \_ intervalo de EXCED de nome \_**
+<span id="ERROR_FILENAME_EXCED_RANGE"></span><span id="error_filename_exced_range"></span>**INTERVALO \_ EXCEDADO FILENAME \_ DE \_ ERRO**
 </dt> <dd> <dl> <dt>
 
 206 (0xCE)
@@ -2095,12 +2095,12 @@ Nenhum processo na subárvore de comandos tem um manipulador de sinais.
 
 
 
-O nome do arquivo ou a extensão é muito longa.
+O nome do arquivo ou extensão é muito longo.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_RING2_STACK_IN_USE"></span><span id="error_ring2_stack_in_use"></span>**ERRO \_ \_ de pilha RING2 \_ em \_ uso**
+<span id="ERROR_RING2_STACK_IN_USE"></span><span id="error_ring2_stack_in_use"></span>**ERRO \_ RING2 \_ STACK EM \_ \_ USO**
 </dt> <dd> <dl> <dt>
 
 207 (0xCF)
@@ -2108,12 +2108,12 @@ O nome do arquivo ou a extensão é muito longa.
 
 
 
-A pilha de anéis 2 está em uso.
+A pilha do anel 2 está em uso.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_META_EXPANSION_TOO_LONG"></span><span id="error_meta_expansion_too_long"></span>**metaexpansão de erro \_ \_ \_ muito \_ longa**
+<span id="ERROR_META_EXPANSION_TOO_LONG"></span><span id="error_meta_expansion_too_long"></span>**META \_ \_ EXPANSÃO DE ERRO \_ MUITO \_ LONGA**
 </dt> <dd> <dl> <dt>
 
 208 (0xD0)
@@ -2121,12 +2121,12 @@ A pilha de anéis 2 está em uso.
 
 
 
-Os caracteres de nome de arquivo global, \* ou?, foram inseridos incorretamente ou foram especificados muitos caracteres de nome de arquivo global.
+Os caracteres de nome de arquivo global, ou ?, são inseridos incorretamente ou muitos caracteres de nome de arquivo \* global são especificados.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INVALID_SIGNAL_NUMBER"></span><span id="error_invalid_signal_number"></span>**\_número de \_ sinal \_ inválido do erro**
+<span id="ERROR_INVALID_SIGNAL_NUMBER"></span><span id="error_invalid_signal_number"></span>**ERRO \_ NÚMERO DE SINAL \_ \_ INVÁLIDO**
 </dt> <dd> <dl> <dt>
 
 209 (0xD1)
@@ -2199,7 +2199,7 @@ Não é possível aninhar chamadas para LoadModule.
 
 
 
-Esta versão do %1 não é compatível com a versão do Windows que você está executando. Verifique as informações do sistema do seu computador e entre em contato com o fornecedor do software.
+esta versão do %1 não é compatível com a versão do Windows que você está executando. Verifique as informações do sistema do seu computador e entre em contato com o fornecedor do software.
 
 
 </dt> </dl> </dd> <dt>
@@ -2550,12 +2550,12 @@ O identificador de atributo estendido especificado é inválido.
 
 
 
-O sistema de arquivos montado não oferece suporte a atributos estendidos.
+O sistema de arquivos montado não dá suporte a atributos estendidos.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_NOT_OWNER"></span><span id="error_not_owner"></span>**ERRO \_ não \_ proprietário**
+<span id="ERROR_NOT_OWNER"></span><span id="error_not_owner"></span>**ERRO \_ NÃO \_ PROPRIETÁRIO**
 </dt> <dd> <dl> <dt>
 
 288 (0x120)
@@ -2563,12 +2563,12 @@ O sistema de arquivos montado não oferece suporte a atributos estendidos.
 
 
 
-Tentativa de liberar mutex não pertencente ao chamador.
+Tentativa de liberar mutex que não pertence ao chamador.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_TOO_MANY_POSTS"></span><span id="error_too_many_posts"></span>**ERRO \_ em \_ muitas \_ postagens**
+<span id="ERROR_TOO_MANY_POSTS"></span><span id="error_too_many_posts"></span>**ERRO \_ MUITAS \_ \_ POSTAGENS**
 </dt> <dd> <dl> <dt>
 
 298 (0x12A)
@@ -2576,12 +2576,12 @@ Tentativa de liberar mutex não pertencente ao chamador.
 
 
 
-Foram feitas muitas postagens em um semáforo.
+Muitas postagens foram feitas em um semáforo.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_PARTIAL_COPY"></span><span id="error_partial_copy"></span>**ERRO \_ de \_ cópia parcial**
+<span id="ERROR_PARTIAL_COPY"></span><span id="error_partial_copy"></span>**ERRO \_ CÓPIA \_ PARCIAL**
 </dt> <dd> <dl> <dt>
 
 299 (0x12B)
@@ -2589,12 +2589,12 @@ Foram feitas muitas postagens em um semáforo.
 
 
 
-Somente parte de uma solicitação de ReadProcessMemory ou WriteProcessMemory foi concluída.
+Somente parte de uma solicitação ReadProcessMemory ou WriteProcessMemory foi concluída.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_OPLOCK_NOT_GRANTED"></span><span id="error_oplock_not_granted"></span>**ERRO \_ oplock \_ não \_ concedido**
+<span id="ERROR_OPLOCK_NOT_GRANTED"></span><span id="error_oplock_not_granted"></span>**ERRO \_ OPLOCK \_ NÃO \_ CONCEDIDO**
 </dt> <dd> <dl> <dt>
 
 300 (0x12C)
@@ -2602,12 +2602,12 @@ Somente parte de uma solicitação de ReadProcessMemory ou WriteProcessMemory fo
 
 
 
-A solicitação oplock foi negada.
+A solicitação oplock é negada.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INVALID_OPLOCK_PROTOCOL"></span><span id="error_invalid_oplock_protocol"></span>**ERRO \_ de \_ protocolo oplock inválido \_**
+<span id="ERROR_INVALID_OPLOCK_PROTOCOL"></span><span id="error_invalid_oplock_protocol"></span>**ERRO \_ PROTOCOLO \_ OPLOCK \_ INVÁLIDO**
 </dt> <dd> <dl> <dt>
 
 301 (0x12D)
@@ -2620,7 +2620,7 @@ Uma confirmação de oplock inválida foi recebida pelo sistema.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DISK_TOO_FRAGMENTED"></span><span id="error_disk_too_fragmented"></span>**disco de erro \_ \_ muito \_ fragmentado**
+<span id="ERROR_DISK_TOO_FRAGMENTED"></span><span id="error_disk_too_fragmented"></span>**DISCO \_ DE ERRO \_ \_ FRAGMENTADO DEMAIS**
 </dt> <dd> <dl> <dt>
 
 302 (0x12E)
@@ -2628,12 +2628,12 @@ Uma confirmação de oplock inválida foi recebida pelo sistema.
 
 
 
-O volume está muito fragmentado para concluir esta operação.
+O volume está fragmentado demais para concluir essa operação.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DELETE_PENDING"></span><span id="error_delete_pending"></span>**ERRO ao \_ excluir \_ pendente**
+<span id="ERROR_DELETE_PENDING"></span><span id="error_delete_pending"></span>**ERRO \_ DE \_ EXCLUSÃO PENDENTE**
 </dt> <dd> <dl> <dt>
 
 303 (0x12F)
@@ -2641,12 +2641,12 @@ O volume está muito fragmentado para concluir esta operação.
 
 
 
-O arquivo não pode ser aberto porque está em processo de exclusão.
+O arquivo não pode ser aberto porque está no processo de exclusão.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INCOMPATIBLE_WITH_GLOBAL_SHORT_NAME_REGISTRY_SETTING"></span><span id="error_incompatible_with_global_short_name_registry_setting"></span>**ERRO \_ incompatível \_ com \_ a \_ \_ configuração de \_ registro de nome curto global \_**
+<span id="ERROR_INCOMPATIBLE_WITH_GLOBAL_SHORT_NAME_REGISTRY_SETTING"></span><span id="error_incompatible_with_global_short_name_registry_setting"></span>**ERRO \_ INCOMPATÍVEL \_ COM A \_ CONFIGURAÇÃO GLOBAL DE REGISTRO DE \_ NOME \_ \_ \_ CURTO**
 </dt> <dd> <dl> <dt>
 
 304 (0x130)
@@ -2654,12 +2654,12 @@ O arquivo não pode ser aberto porque está em processo de exclusão.
 
 
 
-As configurações de nome curto não podem ser alteradas neste volume devido à configuração do registro global.
+As configurações de nome curto não podem ser alteradas nesse volume devido à configuração global do Registro.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_SHORT_NAMES_NOT_ENABLED_ON_VOLUME"></span><span id="error_short_names_not_enabled_on_volume"></span>**\_nomes curtos \_ \_ de erro não \_ habilitados \_ no \_ volume**
+<span id="ERROR_SHORT_NAMES_NOT_ENABLED_ON_VOLUME"></span><span id="error_short_names_not_enabled_on_volume"></span>**ERROS \_ DE NOMES \_ \_ CURTOS NÃO \_ \_ HABILITADOS NO \_ VOLUME**
 </dt> <dd> <dl> <dt>
 
 305 (0x131)
@@ -2667,12 +2667,12 @@ As configurações de nome curto não podem ser alteradas neste volume devido à
 
 
 
-Os nomes curtos não estão habilitados neste volume.
+Nomes curtos não estão habilitados neste volume.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_SECURITY_STREAM_IS_INCONSISTENT"></span><span id="error_security_stream_is_inconsistent"></span>**o \_ fluxo de segurança do erro \_ \_ está \_ inconsistente**
+<span id="ERROR_SECURITY_STREAM_IS_INCONSISTENT"></span><span id="error_security_stream_is_inconsistent"></span>**O \_ FLUXO DE SEGURANÇA DE ERRO ESTÁ \_ \_ \_ INCONSISTENTE**
 </dt> <dd> <dl> <dt>
 
 306 (0x132)
@@ -2680,12 +2680,12 @@ Os nomes curtos não estão habilitados neste volume.
 
 
 
-O fluxo de segurança para o volume especificado está em um estado inconsistente. Execute CHKDSK no volume.
+O fluxo de segurança para o volume determinado está em um estado inconsistente. Execute CHKDSK no volume.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INVALID_LOCK_RANGE"></span><span id="error_invalid_lock_range"></span>**ERRO \_ de \_ intervalo de bloqueio inválido \_**
+<span id="ERROR_INVALID_LOCK_RANGE"></span><span id="error_invalid_lock_range"></span>**ERRO \_ INTERVALO DE BLOQUEIO \_ \_ INVÁLIDO**
 </dt> <dd> <dl> <dt>
 
 307 (0x133)
@@ -2693,12 +2693,12 @@ O fluxo de segurança para o volume especificado está em um estado inconsistent
 
 
 
-Uma operação de bloqueio de arquivo solicitada não pode ser processada devido a um intervalo de bytes inválido.
+Uma operação de bloqueio de arquivo solicitada não pode ser processada devido a um intervalo de byte inválido.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_IMAGE_SUBSYSTEM_NOT_PRESENT"></span><span id="error_image_subsystem_not_present"></span>**o \_ SUBsistema de imagem de erro \_ \_ não \_ está presente**
+<span id="ERROR_IMAGE_SUBSYSTEM_NOT_PRESENT"></span><span id="error_image_subsystem_not_present"></span>**\_SUBSISTEMA DE IMAGEM DE ERRO NÃO \_ \_ \_ PRESENTE**
 </dt> <dd> <dl> <dt>
 
 308 (0x134)
@@ -2711,7 +2711,7 @@ O subsistema necessário para dar suporte ao tipo de imagem não está presente.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_NOTIFICATION_GUID_ALREADY_DEFINED"></span><span id="error_notification_guid_already_defined"></span>**GUID de notificação de erro \_ \_ \_ já \_ definido**
+<span id="ERROR_NOTIFICATION_GUID_ALREADY_DEFINED"></span><span id="error_notification_guid_already_defined"></span>**\_GUID DE \_ NOTIFICAÇÃO DE ERRO JÁ \_ \_ DEFINIDO**
 </dt> <dd> <dl> <dt>
 
 309 (0x135)
@@ -2724,7 +2724,7 @@ O arquivo especificado já tem um GUID de notificação associado a ele.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INVALID_EXCEPTION_HANDLER"></span><span id="error_invalid_exception_handler"></span>**ERRO \_ de \_ manipulador de exceção inválido \_**
+<span id="ERROR_INVALID_EXCEPTION_HANDLER"></span><span id="error_invalid_exception_handler"></span>**MANIPULADOR DE \_ \_ EXCEÇÃO INVÁLIDO \_ DE ERRO**
 </dt> <dd> <dl> <dt>
 
 310 (0x136)
@@ -2732,12 +2732,12 @@ O arquivo especificado já tem um GUID de notificação associado a ele.
 
 
 
-Uma rotina de manipulador de exceção inválida foi detectada.
+Uma rotina inválida do manipulador de exceção foi detectada.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DUPLICATE_PRIVILEGES"></span><span id="error_duplicate_privileges"></span>**ERRO de \_ duplicação de \_ privilégios**
+<span id="ERROR_DUPLICATE_PRIVILEGES"></span><span id="error_duplicate_privileges"></span>**PRIVILÉGIOS \_ \_ DUPLICADOS DE ERRO**
 </dt> <dd> <dl> <dt>
 
 311 (0x137)
@@ -2745,12 +2745,12 @@ Uma rotina de manipulador de exceção inválida foi detectada.
 
 
 
-Foram especificados privilégios duplicados para o token.
+Privilégios duplicados foram especificados para o token.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_NO_RANGES_PROCESSED"></span><span id="error_no_ranges_processed"></span>**ERRO \_ nenhum \_ intervalo \_ processado**
+<span id="ERROR_NO_RANGES_PROCESSED"></span><span id="error_no_ranges_processed"></span>**ERRO \_ NENHUM \_ INTERVALO \_ PROCESSADO**
 </dt> <dd> <dl> <dt>
 
 312 (0x138)
@@ -2763,7 +2763,7 @@ Nenhum intervalo para a operação especificada pôde ser processado.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_NOT_ALLOWED_ON_SYSTEM_FILE"></span><span id="error_not_allowed_on_system_file"></span>**ERRO \_ não \_ permitido \_ no \_ arquivo do sistema \_**
+<span id="ERROR_NOT_ALLOWED_ON_SYSTEM_FILE"></span><span id="error_not_allowed_on_system_file"></span>**ERRO \_ NÃO PERMITIDO NO ARQUIVO DO \_ \_ \_ \_ SISTEMA**
 </dt> <dd> <dl> <dt>
 
 313 (0x139)
@@ -2776,7 +2776,7 @@ A operação não é permitida em um arquivo interno do sistema de arquivos.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DISK_RESOURCES_EXHAUSTED"></span><span id="error_disk_resources_exhausted"></span>**recursos de disco de erro \_ \_ \_ esgotados**
+<span id="ERROR_DISK_RESOURCES_EXHAUSTED"></span><span id="error_disk_resources_exhausted"></span>**RECURSOS \_ DE DISCO DE ERRO \_ \_ ESGOTADOS**
 </dt> <dd> <dl> <dt>
 
 314 (0x13A)
@@ -2784,12 +2784,12 @@ A operação não é permitida em um arquivo interno do sistema de arquivos.
 
 
 
-Os recursos físicos deste disco foram esgotados.
+Os recursos físicos desse disco foram esgotados.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INVALID_TOKEN"></span><span id="error_invalid_token"></span>**\_token inválido do erro \_**
+<span id="ERROR_INVALID_TOKEN"></span><span id="error_invalid_token"></span>**ERRO \_ TOKEN \_ INVÁLIDO**
 </dt> <dd> <dl> <dt>
 
 315 (0x13B)
@@ -2802,7 +2802,7 @@ O token que representa os dados é inválido.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DEVICE_FEATURE_NOT_SUPPORTED"></span><span id="error_device_feature_not_supported"></span>**recurso de dispositivo de erro \_ \_ \_ sem \_ suporte**
+<span id="ERROR_DEVICE_FEATURE_NOT_SUPPORTED"></span><span id="error_device_feature_not_supported"></span>**RECURSO \_ DE DISPOSITIVO DE ERRO SEM \_ \_ \_ SUPORTE**
 </dt> <dd> <dl> <dt>
 
 316 (0x13C)
@@ -2810,12 +2810,12 @@ O token que representa os dados é inválido.
 
 
 
-O dispositivo não oferece suporte ao recurso de comando.
+O dispositivo não dá suporte ao recurso de comando.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_MR_MID_NOT_FOUND"></span><span id="error_mr_mid_not_found"></span>**ERRO \_ Mr \_ mid \_ não \_ encontrado**
+<span id="ERROR_MR_MID_NOT_FOUND"></span><span id="error_mr_mid_not_found"></span>**ERRO \_ MR MID NÃO \_ \_ \_ ENCONTRADO**
 </dt> <dd> <dl> <dt>
 
 317 (0x13D)
@@ -2823,12 +2823,12 @@ O dispositivo não oferece suporte ao recurso de comando.
 
 
 
-O sistema não pode encontrar o texto da mensagem para o número de mensagem 0x %1 no arquivo de mensagem para %2.
+O sistema não pode encontrar o texto da mensagem para o número da mensagem 0x%1 no arquivo de mensagem para %2.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_SCOPE_NOT_FOUND"></span><span id="error_scope_not_found"></span>**escopo de erro \_ \_ não \_ encontrado**
+<span id="ERROR_SCOPE_NOT_FOUND"></span><span id="error_scope_not_found"></span>**ESCOPO \_ DE ERRO NÃO \_ \_ ENCONTRADO**
 </dt> <dd> <dl> <dt>
 
 318 (0x13E)
@@ -2841,7 +2841,7 @@ O escopo especificado não foi encontrado.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_UNDEFINED_SCOPE"></span><span id="error_undefined_scope"></span>**ERRO de \_ escopo INdefinido \_**
+<span id="ERROR_UNDEFINED_SCOPE"></span><span id="error_undefined_scope"></span>**ERRO \_ ESCOPO INDEFINIDO \_**
 </dt> <dd> <dl> <dt>
 
 319 (0x13F)
@@ -2849,12 +2849,12 @@ O escopo especificado não foi encontrado.
 
 
 
-A política de acesso central especificada não está definida no computador de destino.
+A Política de Acesso Central especificada não está definida no computador de destino.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INVALID_CAP"></span><span id="error_invalid_cap"></span>**\_limite inválido de erro \_**
+<span id="ERROR_INVALID_CAP"></span><span id="error_invalid_cap"></span>**ERRO \_ LIMITE \_ INVÁLIDO**
 </dt> <dd> <dl> <dt>
 
 320 (0x140)
@@ -2862,12 +2862,12 @@ A política de acesso central especificada não está definida no computador de 
 
 
 
-A política de acesso central Obtida de Active Directory é inválida.
+A Política de Acesso Central obtida do Active Directory é inválida.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DEVICE_UNREACHABLE"></span><span id="error_device_unreachable"></span>**dispositivo de erro \_ \_ inacessível**
+<span id="ERROR_DEVICE_UNREACHABLE"></span><span id="error_device_unreachable"></span>**DISPOSITIVO \_ DE \_ ERRO INACESSÍVEL**
 </dt> <dd> <dl> <dt>
 
 321 (0x141)
@@ -2880,7 +2880,7 @@ O dispositivo está inacessível.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DEVICE_NO_RESOURCES"></span><span id="error_device_no_resources"></span>**dispositivo de erro \_ \_ sem \_ recursos**
+<span id="ERROR_DEVICE_NO_RESOURCES"></span><span id="error_device_no_resources"></span>**ERRO \_ DO DISPOSITIVO SEM \_ \_ RECURSOS**
 </dt> <dd> <dl> <dt>
 
 322 (0x142)
@@ -2888,12 +2888,12 @@ O dispositivo está inacessível.
 
 
 
-O dispositivo de destino tem recursos insuficientes para concluir a operação.
+O dispositivo de destino não tem recursos suficientes para concluir a operação.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DATA_CHECKSUM_ERROR"></span><span id="error_data_checksum_error"></span>**\_erro de \_ checksum de dados de erro \_**
+<span id="ERROR_DATA_CHECKSUM_ERROR"></span><span id="error_data_checksum_error"></span>**ERRO \_ DE VERIFICAÇÃO DE DADOS DE \_ \_ ERRO**
 </dt> <dd> <dl> <dt>
 
 323 (0x143)
@@ -2901,12 +2901,12 @@ O dispositivo de destino tem recursos insuficientes para concluir a operação.
 
 
 
-Ocorreu um erro de soma de verificação de integridade de dados. Os dados no fluxo de arquivos estão corrompidos.
+Ocorreu um erro de verificação de integridade de dados. Os dados no fluxo de arquivos estão corrompidos.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INTERMIXED_KERNEL_EA_OPERATION"></span><span id="error_intermixed_kernel_ea_operation"></span>**ERRO de \_ operação de ea de kernel INTERmisturada \_ \_ \_**
+<span id="ERROR_INTERMIXED_KERNEL_EA_OPERATION"></span><span id="error_intermixed_kernel_ea_operation"></span>**ERRO \_ OPERAÇÃO DE \_ EA DE KERNEL \_ INTERMIXADO \_**
 </dt> <dd> <dl> <dt>
 
 324 (0x144)
@@ -2914,12 +2914,12 @@ Ocorreu um erro de soma de verificação de integridade de dados. Os dados no fl
 
 
 
-Foi feita uma tentativa de modificar um KERNEL e um EA (atributo estendido normal) na mesma operação.
+Foi feita uma tentativa de modificar um KERNEL e um EA (Atributo Estendido) normal na mesma operação.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_FILE_LEVEL_TRIM_NOT_SUPPORTED"></span><span id="error_file_level_trim_not_supported"></span>**corte de nível de arquivo de erro \_ \_ \_ \_ sem \_ suporte**
+<span id="ERROR_FILE_LEVEL_TRIM_NOT_SUPPORTED"></span><span id="error_file_level_trim_not_supported"></span>**NÃO \_ HÁ SUPORTE PARA CORTE NO NÍVEL DO ARQUIVO DE \_ \_ \_ \_ ERRO**
 </dt> <dd> <dl> <dt>
 
 326 (0x146)
@@ -2927,12 +2927,12 @@ Foi feita uma tentativa de modificar um KERNEL e um EA (atributo estendido norma
 
 
 
-O dispositivo não dá suporte ao corte em nível de arquivo.
+O dispositivo não dá suporte ao TRIM no nível do arquivo.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_OFFSET_ALIGNMENT_VIOLATION"></span><span id="error_offset_alignment_violation"></span>**\_violação de \_ alinhamento de deslocamento de erro \_**
+<span id="ERROR_OFFSET_ALIGNMENT_VIOLATION"></span><span id="error_offset_alignment_violation"></span>**VIOLAÇÃO DE \_ ALINHAMENTO DE DESLOCAMENTO DE \_ \_ ERRO**
 </dt> <dd> <dl> <dt>
 
 327 (0x147)
@@ -2945,7 +2945,7 @@ O comando especificou um deslocamento de dados que não se alinha à granularida
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INVALID_FIELD_IN_PARAMETER_LIST"></span><span id="error_invalid_field_in_parameter_list"></span>**ERRO \_ \_ de campo \_ inválido \_ na \_ lista de parâmetros**
+<span id="ERROR_INVALID_FIELD_IN_PARAMETER_LIST"></span><span id="error_invalid_field_in_parameter_list"></span>**ERRO \_ CAMPO INVÁLIDO NA LISTA DE \_ \_ \_ \_ PARÂMETROS**
 </dt> <dd> <dl> <dt>
 
 328 (0x148)
@@ -2958,7 +2958,7 @@ O comando especificou um campo inválido em sua lista de parâmetros.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_OPERATION_IN_PROGRESS"></span><span id="error_operation_in_progress"></span>**\_operação \_ de erro em \_ andamento**
+<span id="ERROR_OPERATION_IN_PROGRESS"></span><span id="error_operation_in_progress"></span>**OPERAÇÃO \_ DE ERRO EM \_ \_ ANDAMENTO**
 </dt> <dd> <dl> <dt>
 
 329 (0x149)
@@ -2966,12 +2966,12 @@ O comando especificou um campo inválido em sua lista de parâmetros.
 
 
 
-Uma operação está em andamento no momento com o dispositivo.
+Uma operação está em andamento com o dispositivo.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_BAD_DEVICE_PATH"></span><span id="error_bad_device_path"></span>**ERRO \_ de \_ caminho de dispositivo insatisfatório \_**
+<span id="ERROR_BAD_DEVICE_PATH"></span><span id="error_bad_device_path"></span>**ERRO CAMINHO \_ DO \_ DISPOSITIVO \_ RUIM**
 </dt> <dd> <dl> <dt>
 
 330 (0x14A)
@@ -2984,7 +2984,7 @@ Foi feita uma tentativa de enviar o comando por meio de um caminho inválido par
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_TOO_MANY_DESCRIPTORS"></span><span id="error_too_many_descriptors"></span>**ERRO \_ em \_ muitos \_ descritores**
+<span id="ERROR_TOO_MANY_DESCRIPTORS"></span><span id="error_too_many_descriptors"></span>**ERRO \_ MUITOS \_ \_ DESCRITORES**
 </dt> <dd> <dl> <dt>
 
 331 (0x14B)
@@ -2992,12 +2992,12 @@ Foi feita uma tentativa de enviar o comando por meio de um caminho inválido par
 
 
 
-O comando especificou um número de descritores que excederam o máximo com suporte do dispositivo.
+O comando especificou um número de descritores que excederam o máximo suportado pelo dispositivo.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_SCRUB_DATA_DISABLED"></span><span id="error_scrub_data_disabled"></span>**dados de limpeza de erro \_ \_ \_ desabilitados**
+<span id="ERROR_SCRUB_DATA_DISABLED"></span><span id="error_scrub_data_disabled"></span>**ERRO \_ DE LIMPEZA DE DADOS \_ \_ DESABILITADO**
 </dt> <dd> <dl> <dt>
 
 332 (0x14C)
@@ -3010,7 +3010,7 @@ A limpeza está desabilitada no arquivo especificado.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_NOT_REDUNDANT_STORAGE"></span><span id="error_not_redundant_storage"></span>**ERRO \_ não \_ \_ armazenamento redundante**
+<span id="ERROR_NOT_REDUNDANT_STORAGE"></span><span id="error_not_redundant_storage"></span>**ERRO \_ DE ARMAZENAMENTO NÃO \_ \_ REDUNDANTE**
 </dt> <dd> <dl> <dt>
 
 333 (0x14D)
@@ -3023,7 +3023,7 @@ O dispositivo de armazenamento não fornece redundância.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_RESIDENT_FILE_NOT_SUPPORTED"></span><span id="error_resident_file_not_supported"></span>**\_arquivo residente de erro \_ \_ sem \_ suporte**
+<span id="ERROR_RESIDENT_FILE_NOT_SUPPORTED"></span><span id="error_resident_file_not_supported"></span>**ARQUIVO \_ RESIDENTE DE ERRO SEM \_ \_ \_ SUPORTE**
 </dt> <dd> <dl> <dt>
 
 334 (0x14E)
@@ -3036,7 +3036,7 @@ Não há suporte para uma operação em um arquivo residente.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_COMPRESSED_FILE_NOT_SUPPORTED"></span><span id="error_compressed_file_not_supported"></span>**ERRO \_ arquivo compactado \_ \_ sem \_ suporte**
+<span id="ERROR_COMPRESSED_FILE_NOT_SUPPORTED"></span><span id="error_compressed_file_not_supported"></span>**ERRO \_ ARQUIVO \_ COMPACTADO SEM \_ \_ SUPORTE**
 </dt> <dd> <dl> <dt>
 
 335 (0x14F)
@@ -3049,7 +3049,7 @@ Não há suporte para uma operação em um arquivo compactado.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DIRECTORY_NOT_SUPPORTED"></span><span id="error_directory_not_supported"></span>**\_ \_ não \_ há suporte para o diretório de erros**
+<span id="ERROR_DIRECTORY_NOT_SUPPORTED"></span><span id="error_directory_not_supported"></span>**DIRETÓRIO \_ DE ERRO SEM \_ \_ SUPORTE**
 </dt> <dd> <dl> <dt>
 
 336 (0x150)
@@ -3062,7 +3062,7 @@ Não há suporte para uma operação em um diretório.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_NOT_READ_FROM_COPY"></span><span id="error_not_read_from_copy"></span>**ERRO \_ não \_ lido \_ da \_ cópia**
+<span id="ERROR_NOT_READ_FROM_COPY"></span><span id="error_not_read_from_copy"></span>**ERRO \_ NÃO LIDO DA \_ \_ \_ CÓPIA**
 </dt> <dd> <dl> <dt>
 
 337 (0x151)
@@ -3075,7 +3075,7 @@ Não foi possível ler a cópia especificada dos dados solicitados.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_FAIL_NOACTION_REBOOT"></span><span id="error_fail_noaction_reboot"></span>**ERRO \_ falha na \_ \_ reinicialização de ação**
+<span id="ERROR_FAIL_NOACTION_REBOOT"></span><span id="error_fail_noaction_reboot"></span>**FALHA \_ NA \_ REINICIALIZAÇÃO DE NOACTION \_ DE ERRO**
 </dt> <dd> <dl> <dt>
 
 350 (0x15E)
@@ -3083,12 +3083,12 @@ Não foi possível ler a cópia especificada dos dados solicitados.
 
 
 
-Nenhuma ação foi executada porque uma reinicialização do sistema é necessária.
+Nenhuma ação foi tomada conforme uma reinicialização do sistema é necessária.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_FAIL_SHUTDOWN"></span><span id="error_fail_shutdown"></span>**\_falha no \_ desligamento do erro**
+<span id="ERROR_FAIL_SHUTDOWN"></span><span id="error_fail_shutdown"></span>**DESLIGAMENTO \_ DE FALHA DE \_ ERRO**
 </dt> <dd> <dl> <dt>
 
 351 (0x15F)
@@ -3101,7 +3101,7 @@ Falha na operação de desligamento.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_FAIL_RESTART"></span><span id="error_fail_restart"></span>**ERRO \_ falha ao \_ reiniciar**
+<span id="ERROR_FAIL_RESTART"></span><span id="error_fail_restart"></span>**FALHA \_ NA \_ REINICIALIZAÇÃO DO ERRO**
 </dt> <dd> <dl> <dt>
 
 352 (0x160)
@@ -3114,7 +3114,7 @@ Falha na operação de reinicialização.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_MAX_SESSIONS_REACHED"></span><span id="error_max_sessions_reached"></span>**ERRO \_ máximo de \_ sessões \_ atingido**
+<span id="ERROR_MAX_SESSIONS_REACHED"></span><span id="error_max_sessions_reached"></span>**ERRO \_ MÁXIMO \_ DE SESSÕES \_ ATINGIDAS**
 </dt> <dd> <dl> <dt>
 
 353 (0x161)
@@ -3127,7 +3127,7 @@ O número máximo de sessões foi atingido.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_THREAD_MODE_ALREADY_BACKGROUND"></span><span id="error_thread_mode_already_background"></span>**modo de thread de erro \_ \_ \_ já \_ em segundo plano**
+<span id="ERROR_THREAD_MODE_ALREADY_BACKGROUND"></span><span id="error_thread_mode_already_background"></span>**MODO \_ THREAD DE ERRO JÁ EM SEGUNDO \_ \_ \_ PLANO**
 </dt> <dd> <dl> <dt>
 
 400 (0x190)
@@ -3140,7 +3140,7 @@ O thread já está no modo de processamento em segundo plano.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_THREAD_MODE_NOT_BACKGROUND"></span><span id="error_thread_mode_not_background"></span>**modo de thread de erro \_ \_ \_ não \_ em segundo plano**
+<span id="ERROR_THREAD_MODE_NOT_BACKGROUND"></span><span id="error_thread_mode_not_background"></span>**MODO \_ THREAD DE ERRO NÃO EM SEGUNDO \_ \_ \_ PLANO**
 </dt> <dd> <dl> <dt>
 
 401 (0x191)
@@ -3153,7 +3153,7 @@ O thread não está no modo de processamento em segundo plano.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_PROCESS_MODE_ALREADY_BACKGROUND"></span><span id="error_process_mode_already_background"></span>**modo de processo de erro \_ \_ \_ já \_ em segundo plano**
+<span id="ERROR_PROCESS_MODE_ALREADY_BACKGROUND"></span><span id="error_process_mode_already_background"></span>**MODO \_ DE PROCESSO DE ERRO JÁ EM SEGUNDO \_ \_ \_ PLANO**
 </dt> <dd> <dl> <dt>
 
 402 (0x192)
@@ -3166,7 +3166,7 @@ O processo já está no modo de processamento em segundo plano.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_PROCESS_MODE_NOT_BACKGROUND"></span><span id="error_process_mode_not_background"></span>**modo de processo de erro \_ \_ \_ não \_ em segundo plano**
+<span id="ERROR_PROCESS_MODE_NOT_BACKGROUND"></span><span id="error_process_mode_not_background"></span>**MODO \_ DE PROCESSO DE ERRO NÃO EM SEGUNDO \_ \_ \_ PLANO**
 </dt> <dd> <dl> <dt>
 
 403 (0x193)
@@ -3179,7 +3179,7 @@ O processo não está no modo de processamento em segundo plano.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INVALID_ADDRESS"></span><span id="error_invalid_address"></span>**\_endereço inválido do erro \_**
+<span id="ERROR_INVALID_ADDRESS"></span><span id="error_invalid_address"></span>**ERRO \_ ENDEREÇO \_ INVÁLIDO**
 </dt> <dd> <dl> <dt>
 
 487 (0x1E7)
@@ -3199,9 +3199,9 @@ Tentativa de acessar endereço inválido.
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                                                               |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                                      |
-| parâmetro<br/>                   | <dl> <dt>WinError. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho XP\]<br/>                                                               |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                                      |
+| Cabeçalho<br/>                   | <dl> <dt>WinError.h (incluir Windows.h)</dt> </dl> |
 
 
 

@@ -34,7 +34,7 @@ uint InstanceID();
 
 ## <a name="remarks"></a>Comentários
 
-Essa função pode ser chamada dos seguintes tipos de sombreador de raio:
+Essa função pode ser chamada nos seguintes tipos de sombreador raytracing:
 
 * [**Sombreador de todos os cliques**](any-hit-shader.md)
 * [**Sombreador do clique mais próximo**](closest-hit-shader.md)

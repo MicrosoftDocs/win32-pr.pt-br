@@ -1,6 +1,6 @@
 ---
 title: Tipos de enumeração codec
-description: Para ver a documentação atual Windows codecs de mídia e processadores de sinal digital, consulte Windows codec de áudio e vídeo de mídia e APIs DSP. | Tipos de enumeração codec
+description: Para ver a documentação atual sobre Windows de mídia e processadores de sinal digital, consulte Windows codec de áudio e vídeo de mídia e APIs DSP. | Tipos de enumeração codec
 ms.assetid: 7a6a0a56-7927-431f-a33c-626075b16de6
 keywords:
 - Formato de mídia dos tipos de enumeração codec

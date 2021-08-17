@@ -1,15 +1,15 @@
 ---
-description: Os desenvolvedores de Windows Installer pacotes podem optar por usar um tipo de ação personalizada 18 quando as ações padrão são insuficientes para executar a instalação.
+description: os desenvolvedores de Windows Installer pacotes podem optar por usar um tipo de ação personalizada 18 quando as ações padrão são insuficientes para executar a instalação.
 ms.assetid: 8a7311a6-41c6-431e-982d-60bacf06454e
 title: Tipo de ação personalizada 18
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 48a669fe3caa532b3a365f1056ca2b36f490ab95
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5b3befbb614e9ee78961cf5b8ef969bdb3d6e7b6c0cb713a267cab3d09b4588d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103922693"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118379272"
 ---
 # <a name="custom-action-type-18"></a>Tipo de ação personalizada 18
 

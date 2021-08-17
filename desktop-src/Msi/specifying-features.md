@@ -54,7 +54,7 @@ Use um editor de banco de dados para abrir MNP2000.msi e insira os dados a segui
 | NewYears | Janeiro         | Ano novo | Novos dias de admissão no ano   | 11      | 3     | HOLDIR      | 2          |
 | Bloco de notas  |                 | Bloco de notas       | Bloco de notas Editor             | 1       | 3     | NOTEPADDIR  | 0          |
 | Leiame   | Bloco de notas         | Leiame        | Arquivo Leiame                | 3       | 3     | NOTEPADDIR  | 0          |
-| Esporte    |                 | Eventos de esporte  | Eventos de esporte no Red Park   | 14      | 3     | NOTEPADDIR  | 0          |
+| Esporte    |                 | Eventos de esporte  | Eventos de esporte no parque vermelho   | 14      | 3     | NOTEPADDIR  | 0          |
 
 
 

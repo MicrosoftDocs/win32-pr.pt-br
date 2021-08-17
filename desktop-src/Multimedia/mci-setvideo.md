@@ -3,7 +3,7 @@ title: MCI_SETVIDEO comando (mmsystem. h)
 description: O \_ comando AddVideo do MCI define os valores associados à reprodução de vídeo. Os dispositivos de vídeo digital e VCR reconhecem este comando.
 ms.assetid: b84956d8-01a0-49f6-a96c-2693a25e6f2a
 keywords:
-- Multimídia do Windows de comando MCI_SETVIDEO
+- MCI_SETVIDEO comando Windows multimídia
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 83a20e0cc5466ac9ff28a59543543069fa9acd05
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 23206d169ad5e273927ead247c44194660c8d6b201c725e1b4d4ab24fd5e1544
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455201"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117803373"
 ---
 # <a name="mci_setvideo-command"></a>Comando do vídeo do MCI \_
 
@@ -225,121 +225,121 @@ Um valor de tonalidade de vídeo é especificado como um fator no membro **dwVal
 <span id="MCI_DGV_SETVIDEO_OUTPUT"></span><span id="mci_dgv_setvideo_output"></span>\_saída do DGV do MCI \_ \_
 </dt> <dd>
 
-O **\_ DGV de \_ \_ brilho do MCI**, **a \_ \_ \_ cor do vídeo MCI DGV**, o MCI DGV setvideo **\_ \_ \_ contraste**, o **MCI \_ DGV \_ setvideo \_ gama**, a **\_ \_ \_ nitidez do MCI DGV** ou o sinalizador de **\_ \_ \_ tonalidade do vídeo MCI DGV** é modificado para que ele afete apenas o sinal exibido e não o que é registrado. Se possível, esse é o padrão ao monitorar um arquivo.
+O BRILHO **\_ SETVIDEO MCI DGV \_ SETVIDEO \_**, **MCI \_ DGV \_ SETVIDEO \_ COLOR**, **MCI \_ DGV \_ SETVIDEO \_ CONTRAST**, **MCI \_ DGV \_ SETVIDEO \_ GAMMA**, **MCI \_ DGV \_ SETVIDEO \_ SHARPNESS** ou **MCI \_ DGV \_ SETVIDEO \_ TINT** são modificados para que ele afete apenas o sinal exibido e não o que é registrado. Se possível, esse é o padrão ao monitorar um arquivo.
 
 </dd> <dt>
 
-<span id="MCI_DGV_SETVIDEO_OVER"></span><span id="mci_dgv_setvideo_over"></span>\_DGV de \_ vídeo MCI \_
+<span id="MCI_DGV_SETVIDEO_OVER"></span><span id="mci_dgv_setvideo_over"></span>MCI \_ DGV \_ SETVIDEO \_ OVER
 </dt> <dd>
 
-Um parâmetro de comprimento de transição está incluído no membro **dwOver** da estrutura identificada por *lpSetVideo*. O comprimento da transição especifica quanto tempo (no formato de hora atual) deve ser necessário para fazer uma alteração. Se esse sinalizador não for usado, a alteração ocorrerá imediatamente.
+Um parâmetro de comprimento de transição é incluído no **membro dwOver** da estrutura identificada por *lpSetVideo*. O comprimento da transição especifica quanto tempo (no formato de hora atual) deve levar para fazer uma alteração. Se esse sinalizador não for usado, a alteração ocorrerá imediatamente.
 
 </dd> <dt>
 
-<span id="MCI_DGV_SETVIDEO_QUALITY"></span><span id="mci_dgv_setvideo_quality"></span>\_qualidade de \_ vídeo DGV \_ MCI
+<span id="MCI_DGV_SETVIDEO_QUALITY"></span><span id="mci_dgv_setvideo_quality"></span>MCI \_ DGV \_ SETVIDEO \_ QUALITY
 </dt> <dd>
 
-O membro **lpstrQuality** da estrutura identificada por *lpSetVideo* contém um endereço de um buffer que descreve a qualidade do vídeo. Uma cadeia de texto no buffer especifica as características do algoritmo de compactação de vídeo.
+O **membro lpstrQuality** da estrutura identificada por *lpSetVideo* contém um endereço de um buffer que descreve a qualidade do vídeo. Uma cadeia de caracteres de texto no buffer especifica as características do algoritmo de compactação de vídeo.
 
-O sinalizador de **\_ \_ \_ alg DGV do MCI de vídeo** pode ser usado para selecionar um descritor de qualidade para o algoritmo especificado. Se esse sinalizador for omitido, o algoritmo atual será usado.
+O **sinalizador \_ MCI DGV \_ SETVIDEO \_ ALG** pode ser usado para selecionar um descritor de qualidade para o algoritmo especificado. Se esse sinalizador for omitido, o algoritmo atual será usado.
 
-Os algoritmos e os nomes de descritores disponíveis dependem do dispositivo. Cada dispositivo fornece documentação para os algoritmos disponíveis e uma descrição dos nomes de descritores aplicáveis. O comando de [ \_ qualidade do MCI](mci-quality.md) pode definir nomes de descritores adicionais. Todos os dispositivos dão suporte aos descritores "Low", "Medium" e "High". O padrão é específico do driver.
+Os algoritmos e os nomes de descritor disponíveis dependem do dispositivo. Cada dispositivo fornece documentação para os algoritmos disponíveis e uma descrição dos nomes de descritor aplicáveis. O [comando MCI \_ QUALITY](mci-quality.md) pode definir nomes de descritores adicionais. Todos os dispositivos são compatíveis com os descritores "baixo", "médio" e "alto". O padrão é específico do driver.
 
 </dd> <dt>
 
-<span id="MCI_DGV_SETVIDEO_RECORD"></span><span id="mci_dgv_setvideo_record"></span>\_registro do DGV do MCI \_ \_
+<span id="MCI_DGV_SETVIDEO_RECORD"></span><span id="mci_dgv_setvideo_record"></span>MCI \_ DGV \_ SETVIDEO \_ RECORD
 </dt> <dd>
 
-Especifica se a gravação inclui ou exclui dados de vídeo. Quando combinado com o **MCI \_ definido \_ como ativado**, os dados de vídeo são registrados. Quando combinado com **o \_ MCI \_ definido**, os dados de vídeo são excluídos. O padrão inclui dados de vídeo.
+Especifica se a gravação inclui ou exclui dados de vídeo. Quando combinados com **MCI \_ SET \_ ON,** os dados de vídeo são gravados. Quando combinado com **MCI \_ SET \_ OFF,** os dados de vídeo são excluídos. O padrão inclui dados de vídeo.
 
 </dd> <dt>
 
-<span id="MCI_DGV_SETVIDEO_SRC_NUMBER"></span><span id="mci_dgv_setvideo_src_number"></span>\_ \_ \_ número src de DGV do \_ MCI
+<span id="MCI_DGV_SETVIDEO_SRC_NUMBER"></span><span id="mci_dgv_setvideo_src_number"></span>MCI \_ DGV \_ SETVIDEO \_ SRC \_ NUMBER
 </dt> <dd>
 
-Um número para a fonte de vídeo é especificado no membro **dwSourceNumber** da estrutura identificada por *lpSetVideo*. Se houver mais de uma entrada do tipo especificado pelo **\_ \_ \_ valor de DGV do MCI**, o valor selecionará a entrada. Esse sinalizador deve sempre ser usado com **a \_ \_ \_ fonte de vídeo MCI DGV**. Se **o \_ \_ \_ valor de DGV do MCI** for omitido, no entanto, o número de origem especificado indicará a origem absoluta a ser usada conforme especificado no comando da [ \_ lista de MCI](mci-list.md) .
+Um número para a fonte de vídeo é especificado no **membro dwSourceNumber** da estrutura identificada por *lpSetVideo*. Se houver mais de uma entrada do tipo especificado por **MCI \_ DGV \_ SETVIDEO \_ VALUE**, o valor selecionará a entrada. Esse sinalizador sempre deve ser usado com **MCI \_ DGV \_ SETVIDEO \_ SOURCE**. Se **MCI \_ DGV \_ SETVIDEO \_ VALUE** for omitido, no entanto, o número de origem especificado indicará a origem absoluta a ser usada conforme especificado no comando [MCI \_ LIST.](mci-list.md)
 
 </dd> <dt>
 
-<span id="MCI_DGV_SETVIDEO_STILL"></span><span id="mci_dgv_setvideo_still"></span>o \_ DGV do MCI \_ \_
+<span id="MCI_DGV_SETVIDEO_STILL"></span><span id="mci_dgv_setvideo_still"></span>MCI \_ DGV \_ SETVIDEO \_ STILL
 </dt> <dd>
 
-O nome do algoritmo ou o valor de qualidade especificado se aplica às imagens do ainda.
+O nome do algoritmo ou o valor de qualidade especificado se aplica a imagens ainda.
 
-Cada driver de dispositivo deve dar suporte a um algoritmo de "nenhum", o que significa que não há compactação. Esse é o padrão. Nesse caso, os dispositivos de vídeo digital salvam imagens ainda como bitmaps independentes de dispositivo (DIBs) RGB.
+Cada driver de dispositivo deve dar suporte a um algoritmo de "none", o que significa nenhuma compactação. Esse é o padrão. Nesse caso, os dispositivos de vídeo digital salvam imagens still como DIBs (bitmaps) independentes de dispositivo RGB.
 
 </dd> <dt>
 
-<span id="MCI_DGV_SETVIDEO_VALUE"></span><span id="mci_dgv_setvideo_value"></span>\_valor do DGV do MCI \_ \_
+<span id="MCI_DGV_SETVIDEO_VALUE"></span><span id="mci_dgv_setvideo_value"></span>MCI \_ DGV \_ SETVIDEO \_ VALUE
 </dt> <dd>
 
-Um valor é incluído no membro **dwValue** da estrutura identificada por *lpSetVideo*. O significado do valor é especificado pelo sinalizador de **\_ \_ \_ item de vídeo DGV MCI** .
+Um valor é incluído no **membro dwValue** da estrutura identificada por *lpSetVideo*. O significado do valor é especificado pelo sinalizador **\_ MCI DGV \_ SETVIDEO \_ ITEM.**
 
 </dd> <dt>
 
-<span id="MCI_SET_OFF"></span><span id="mci_set_off"></span>conjunto de MCI \_ \_ desativado
+<span id="MCI_SET_OFF"></span><span id="mci_set_off"></span>MCI \_ SET \_ OFF
 </dt> <dd>
 
-Desabilita a saída de vídeo. Para dispositivos de vídeo digital, desabilitar o vídeo define os pixels no retângulo de destino definido pelo comando [MCI \_ Put](mci-put.md) (ou seu padrão, a região cliente da janela atual) para uma cor sólida, mas não tem efeito sobre o buffer de quadro. Você pode ocultar a janela com o comando de [ \_ janela MCI](mci-window.md) , se desejado. A origem do vídeo, seja o espaço de trabalho ou uma entrada externa, pode continuar armazenando novas imagens no buffer de quadros, mas elas não são exibidas até que o vídeo seja habilitado. Embora os aplicativos devam usar o \_ comando AUTOVIDEO MCI para controlar essa função, os dispositivos de vídeo digital ainda devem dar suporte a esse sinalizador. O valor padrão após um Open é on.
+Desabilita a saída de vídeo. Para dispositivos de vídeo digital, desabilitar vídeo define os pixels no retângulo de destino definido pelo comando [MCI \_ PUT](mci-put.md) (ou seu padrão, a região do cliente da janela atual) para uma cor sólida, mas não tem nenhum efeito no buffer de quadro. Você pode ocultar a janela com o comando [MCI \_ WINDOW,](mci-window.md) se desejado. A origem do vídeo, seja o workspace ou uma entrada externa, pode continuar armazenando novas imagens no buffer de quadros, mas elas não são exibidas até que o vídeo seja habilitado. Embora os aplicativos devem usar o comando MCI SETVIDEO para controlar essa função, os dispositivos de vídeo digital ainda \_ devem dar suporte a esse sinalizador. O valor padrão depois que um aberto está em.
 
 </dd> <dt>
 
-<span id="MCI_SET_ON"></span><span id="mci_set_on"></span>MCI \_ definido \_ em
+<span id="MCI_SET_ON"></span><span id="mci_set_on"></span>MCI \_ SET \_ ON
 </dt> <dd>
 
 Habilita a saída de vídeo.
 
 </dd> </dl>
 
-Para dispositivos de vídeo digital, o parâmetro *lpSetVideo* aponta para uma estrutura de [**\_ \_ \_ parâmetros de vídeo DGV MCI**](/windows/desktop/api/Digitalv/ns-digitalv-mci_dgv_setvideo_parmsa) .
+Para dispositivos de vídeo digital, *o parâmetro lpSetVideo* aponta para uma estrutura [**MCI \_ DGV \_ SETVIDEO \_ PARMS.**](/windows/desktop/api/Digitalv/ns-digitalv-mci_dgv_setvideo_parmsa)
 
-Os seguintes sinalizadores adicionais são usados com o tipo de dispositivo "VCR":
+Os seguintes sinalizadores adicionais são usados com o tipo de dispositivo "vcr":
 
 <dl> <dt>
 
-<span id="MCI_VCR_SETVIDEO_RECORD"></span><span id="mci_vcr_setvideo_record"></span>\_registro de \_ vídeo de VCR MCI \_
+<span id="MCI_VCR_SETVIDEO_RECORD"></span><span id="mci_vcr_setvideo_record"></span>MCI \_ VCR \_ SETVIDEO \_ RECORD
 </dt> <dd>
 
-Define a gravação de vídeo como ativada ou desativada. Usado em conjunto com um dos seguintes sinalizadores:
+Define a gravação de vídeo como on ou off. Usado em conjunto com um dos seguintes sinalizadores:
 
--   **MCI \_ DEFINIDO \_ em**. Gravação de vídeo ativada.
--   **MCI \_ definido como \_ desativado**. Gravação de vídeo desativada. Pode ser necessário primeiro desativar a gravação de montagem (usando o comando [MCI \_ set](mci-set.md) com o conjunto de **VCR MCI Definir sinalizador de \_ \_ \_ \_ registro de montagem** definido como desativado) antes que a gravação de vídeo possa ser desativada.
+-   **MCI \_ SET \_ ON**. Gravação de vídeo em.
+-   **MCI \_ DE \_ SET OFF**. Gravação de vídeo desligada. Pode ser necessário primeiro desligar a gravação de montagem (usando o comando [MCI \_ SET](mci-set.md) com o sinalizador **MCI \_ VCR \_ SET ASSEMBLE \_ \_ RECORD** definido como off) antes que a gravação de vídeo possa ser desligada.
 
 </dd> <dt>
 
-<span id="MCI_TRACK"></span><span id="mci_track"></span>\_faixa MCI
+<span id="MCI_TRACK"></span><span id="mci_track"></span>MCI \_ TRACK
 </dt> <dd>
 
-O membro **dwTrack** da estrutura identificada por *lpSetVideo* especifica qual faixa é afetada pelo comando.
+O **membro dwTrack** da estrutura identificada por *lpSetVideo* especifica qual faixa é afetada pelo comando.
 
 </dd> <dt>
 
-<span id="MCI_VCR_SETVIDEO_SOURCE"></span><span id="mci_vcr_setvideo_source"></span>\_fonte de \_ vídeo do VCR MCI \_
+<span id="MCI_VCR_SETVIDEO_SOURCE"></span><span id="mci_vcr_setvideo_source"></span>MCI \_ VCR \_ SETVIDEO \_ SOURCE
 </dt> <dd>
 
-Define a fonte de vídeo e deve ser usada com a marca de **\_ vídeo do VCR MCI \_ \_ para** sinalizar.
+Define a origem do vídeo e deve ser usado com o **sinalizador \_ \_ SETVIDEO \_ TO do VCR da MCI.**
 
 </dd> <dt>
 
-<span id="MCI_VCR_SETVIDEO_MONITOR"></span><span id="mci_vcr_setvideo_monitor"></span>\_Monitor de \_ vídeo de VCR MCI \_
+<span id="MCI_VCR_SETVIDEO_MONITOR"></span><span id="mci_vcr_setvideo_monitor"></span>MONITOR \_ SETVIDEO DO VCR da MCI \_ \_
 </dt> <dd>
 
-Define o monitor de fonte de vídeo e deve ser usado com o conjunto de \_ vídeos do VCR MCI \_ \_ para sinalizar.
+Define o monitor de origem do vídeo e deve ser usado com o sinalizador \_ VCR \_ SETVIDEO \_ TO da MCI.
 
 </dd> <dt>
 
-<span id="MCI_VCR_SETVIDEO_TO"></span><span id="mci_vcr_setvideo_to"></span>\_vídeo de VCR do MCI \_ \_ para
+<span id="MCI_VCR_SETVIDEO_TO"></span><span id="mci_vcr_setvideo_to"></span>MCI \_ VCR \_ SETVIDEO \_ TO
 </dt> <dd>
 
-O membro **dwTo** da estrutura identificada por *lpSetVideo* contém uma das seguintes constantes:
+O **membro dwTo** da estrutura identificada por *lpSetVideo* contém uma das seguintes constantes:
 
-<dl> <dd>**\_ \_ \_ sintonizador de tipo de src VCR do MCI \_**</dd> <dd>**\_linha de \_ tipo de src VCR \_ MCI \_**</dd> <dd>**\_tipo de \_ src do VCR \_ do MCI \_**</dd> <dd>**\_tipo de src VCR do MCI \_ \_ \_ genérico**</dd> <dd>**\_tipo de src de vídeo MCI \_ \_ \_ sem áudio**</dd> <dd>**\_saída do \_ tipo de src VCR \_ MCI \_**</dd> <dd>**\_tipo de src VCR do MCI \_ \_ \_ RGB**</dd> <dd>**\_número de \_ vídeo do VCR MCI \_**</dd> </dl>
+<dl> <dd>**MCI \_ VCR \_ SRC \_ TYPE \_ TUNER**</dd> <dd>**LINHA DE \_ TIPO \_ SRC DO VCR DA \_ MCI \_**</dd> <dd>**AUX DE \_ TIPO SRC DO VCR \_ \_ \_ da MCI**</dd> <dd>**TIPO \_ \_ SRC DE VCR MCI \_ \_ GENÉRICO**</dd> <dd>**MCI \_ VCR \_ SRC \_ TYPE \_ MUTE**</dd> <dd>**SAÍDA DO TIPO \_ \_ SRC DO VCR MCI \_ \_**</dd> <dd>**MCI \_ VCR \_ SRC \_ TYPE \_ RGB**</dd> <dd>**MCI \_ VCR \_ SETVIDEO \_ NUMBER**</dd> </dl>
 
-O membro **dwNumber** da estrutura identificada por *lpSetVideo* contém a entrada de vídeo (do tipo especificado no membro **dwTo** ) a ser usado.
+O **membro dwNumber** da estrutura identificada por *lpSetVideo* contém a entrada de vídeo (do tipo especificado no **membro dwTo)** a ser usada.
 
 </dd> </dl>
 
-Para dispositivos VCR, o parâmetro *lpSetVideo* aponta para uma estrutura de parâmetros de [**vídeo do \_ VCR \_ \_ MCI**](mci-vcr-setvideo-parms.md) .
+Para dispositivos VCR, *o parâmetro lpSetVideo* aponta para uma estrutura [**\_ MCI VCR \_ SETVIDEO \_ PARMS.**](mci-vcr-setvideo-parms.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -349,7 +349,7 @@ Para dispositivos VCR, o parâmetro *lpSetVideo* aponta para uma estrutura de pa
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                                                |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                      |
-| Cabeçalho<br/>                   | <dl> <dt>Mmsystem. h (incluir Windows. h)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Mmsystem.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -357,7 +357,7 @@ Para dispositivos VCR, o parâmetro *lpSetVideo* aponta para uma estrutura de pa
 
 <dl> <dt>
 
-[MCI](mci.md)
+[Mci](mci.md)
 </dt> <dt>
 
 [Comandos MCI](mci-commands.md)

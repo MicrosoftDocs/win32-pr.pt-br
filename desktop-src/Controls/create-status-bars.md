@@ -4,12 +4,12 @@ description: Você pode criar uma barra de status usando a função CreateStatus
 ms.assetid: 4ED4BFD3-904D-4198-8152-5DD13CA7C189
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c133d7c7e15e5f43d198f21cadff54bcb4be14c2
-ms.sourcegitcommit: 5f33645661bf8c825a7a2e73950b1f4ea0f1cd82
+ms.openlocfilehash: e7075c8d8896d59a5711d5ee80be4af90948ee4ee99a441fbbf1140cd7452c4a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "104008415"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118413184"
 ---
 # <a name="how-to-create-status-bars"></a>Como criar barras de status
 
@@ -20,18 +20,18 @@ Depois de criar a barra de status, você pode dividi-la em partes, definir o tex
 > [!Note]  
 > Para garantir que a DLL de controle comum seja carregada, use a função [**InitCommonControls**](/windows/desktop/api/Commctrl/nf-commctrl-initcommoncontrols) primeiro.
 
- 
+ 
 
 ## <a name="what-you-need-to-know"></a>O que você precisa saber
 
 ### <a name="technologies"></a>Tecnologias
 
--   [Controles do Windows](window-controls.md)
+-   [Windows Controles](window-controls.md)
 
 ### <a name="prerequisites"></a>Pré-requisitos
 
 -   C/C++
--   Programação da interface do usuário do Windows
+-   Windows Programação de interface do usuário
 
 ## <a name="instructions"></a>Instruções
 
@@ -112,9 +112,9 @@ HWND DoCreateStatusBar(HWND hwndParent, int idStatus, HINSTANCE
 [Usando barras de status](using-status-bars.md)
 </dt> <dt>
 
-[Demonstração de controles comuns do Windows (CppWindowsCommonControls)](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/OneCodeTeam/Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/%5BC++%5D-Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/C++/CppWindowsCommonControls)
+[Windows de demonstração de controles comuns (CppWindowsCommonControls)](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/OneCodeTeam/Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/%5BC++%5D-Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/C++/CppWindowsCommonControls)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

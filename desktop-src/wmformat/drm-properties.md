@@ -3,19 +3,19 @@ title: Propriedades de DRM
 description: Propriedades de DRM
 ms.assetid: 862fc8bc-6e40-4496-862a-c12c8a382116
 keywords:
-- SDK do Windows Media Format, propriedades de DRM
+- Windows SDK do formato de mídia, propriedades de DRM
 - Formato de sistema avançado (ASF), propriedades de DRM
 - ASF (formato de sistemas avançados), propriedades de DRM
 - DRM (gerenciamento de direitos digitais), propriedades
 - DRM (gerenciamento de direitos digitais), propriedades
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bb8542d360c38ab3f12406462cefc0454e7eae33
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 9d553d644a6f3ec7130262d0e8567a4aa6ceab53286b24248607b1928991f51d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104006180"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117848262"
 ---
 # <a name="drm-properties"></a>Propriedades de DRM
 
@@ -54,11 +54,11 @@ A tabela a seguir lista as propriedades de DRM que os aplicativos podem obter ou
 | [**\_SAPLEVEL DRM**](drm-saplevel--deprecated.md)                                        | g \_ wszWMDRM \_ SAPLEVEL                           | **Cadeia de caracteres do \_ tipo WMT \_** |
 | [**Usar \_ \_ DRM avançado**](use-advanced-drm.md)                                           | \_wszWMUse \_ Advanced \_ DRM                      | **WMT \_ tipo \_ bool**   |
 | [**Usar \_ DRM**](use-drm.md)                                                              | \_wszWMUse \_ DRM                                | **WMT \_ tipo \_ bool**   |
-| [**\_Revogação de WMDRMNET**](wmdrmnet-revocation.md)                                      | \_wszWMDRMNET \_ revogação de g                      | **Cadeia de caracteres do \_ tipo WMT \_** |
+| [**Revogação de WMDRMNET \_**](wmdrmnet-revocation.md)                                      | g \_ wszWMDRMNET \_ Revocation                      | **CADEIA DE CARACTERES DE \_ TIPO \_ WMT** |
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -67,9 +67,9 @@ A tabela a seguir lista as propriedades de DRM que os aplicativos podem obter ou
 [**Lista de atributos DRM**](drm-attribute-list.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

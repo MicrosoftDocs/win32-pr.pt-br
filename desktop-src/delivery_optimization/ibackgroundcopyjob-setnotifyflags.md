@@ -92,7 +92,7 @@ Use o método **SetNotifyFlags** em conjunto com [**método ibackgroundcopyjob::
 |-------------------------------------|-----------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 10, \[ somente aplicativos da área de trabalho da versão 1709\]<br/>                                           |
 | Servidor mínimo com suporte<br/> | Windows Servidor, versão 1709 \[ aplicativos da área de trabalho\]<br/>                                       |
-| parâmetro<br/>                   | <dl> <dt>Deliveryoptimization. h</dt> </dl>   |
+| Cabeçalho<br/>                   | <dl> <dt>Deliveryoptimization. h</dt> </dl>   |
 | INSERI<br/>                      | <dl> <dt>DeliveryOptimization. idl</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>Dosvc. lib</dt> </dl>                |
 | DLL<br/>                      | <dl> <dt>Dosvc.dll</dt> </dl>                |

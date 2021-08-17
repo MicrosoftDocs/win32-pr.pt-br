@@ -1,5 +1,5 @@
 ---
-title: Propriedades de SystemMonitor
+title: Propriedades do SystemMonitor
 description: A classe SystemMonitor tem as seguintes propriedades
 ms.assetid: 37f8179a-50f8-481c-ae5e-d4081387eea0
 ms.topic: article
@@ -9,34 +9,34 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 16cee42f76a1fc448698ce7245e688279d8624a5
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 17c4a26028219ebf4c1e3a8024493432c30e4c550c5d5e087ddf21a864d5ad27
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104364473"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118882979"
 ---
-# <a name="systemmonitor-properties"></a>Propriedades de SystemMonitor
+# <a name="systemmonitor-properties"></a>Propriedades do SystemMonitor
 
-A classe [**SystemMonitor**](systemmonitor.md) tem as seguintes propriedades:
+A [**classe SystemMonitor**](systemmonitor.md) tem as seguintes propriedades:
 
 -   [**Aparência**](systemmonitor-appearance.md)
--   [**Fundo**](systemmonitor-backcolor.md)
+-   [**Backcolor**](systemmonitor-backcolor.md)
 -   [**BackColorCtl**](systemmonitor-backcolorctl.md)
 -   [**BorderStyle**](systemmonitor-borderstyle.md)
 -   [**ChartScroll**](systemmonitor-chartscroll.md)
 -   [**Contadores**](systemmonitor-counters.md)
 -   [**DataPointCount**](systemmonitor-datapointcount.md)
 -   [**DataSourceType**](systemmonitor-datasourcetype.md)
--   [**TipoDeExibição**](systemmonitor-displaytype.md)
+-   [**DisplayType**](systemmonitor-displaytype.md)
 -   [**EnableDigitGrouping**](systemmonitor-enabledigitgrouping.md)
--   [**EnableToolTips**](systemmonitor-enabletooltips.md)
+-   [**Enabletooltips**](systemmonitor-enabletooltips.md)
 -   [**Fonte**](systemmonitor-font.md)
 -   [**ForeColor**](systemmonitor-forecolor.md)
 -   [**GraphTitle**](systemmonitor-graphtitle.md)
--   [**GridColor**](systemmonitor-gridcolor.md)
+-   [**Gridcolor**](systemmonitor-gridcolor.md)
 -   [**Realce**](systemmonitor-highlight.md)
--   [**LogFileName**](systemmonitor-logfilename.md)
+-   [**Logfilename**](systemmonitor-logfilename.md)
 -   [**arquivos de log**](systemmonitor-logfiles.md)
 -   [**LogSourceStartTime**](systemmonitor-logsourcestarttime.md)
 -   [**LogSourceStopTime**](systemmonitor-logsourcestoptime.md)
@@ -49,10 +49,10 @@ A classe [**SystemMonitor**](systemmonitor.md) tem as seguintes propriedades:
 -   [**ReadOnly**](systemmonitor-readonly.md)
 -   [**ReportValueType**](systemmonitor-reportvaluetype.md)
 -   [**ShowHorizontalGrid**](systemmonitor-showhorizontalgrid.md)
--   [**Conlegenda**](systemmonitor-showlegend.md)
+-   [**ShowLegend**](systemmonitor-showlegend.md)
 -   [**ShowScaleLabels**](systemmonitor-showscalelabels.md)
 -   [**ShowTimeAxisLabels**](systemmonitor-showtimeaxislabels.md)
--   [**MostrarBarraDeFerramentas**](systemmonitor-showtoolbar.md)
+-   [**ShowToolbar**](systemmonitor-showtoolbar.md)
 -   [**ShowValueBar**](systemmonitor-showvaluebar.md)
 -   [**ShowVerticalGrid**](systemmonitor-showverticalgrid.md)
 -   [**SqlDsnName**](systemmonitor-sqldsnname.md)
@@ -61,9 +61,9 @@ A classe [**SystemMonitor**](systemmonitor.md) tem as seguintes propriedades:
 -   [**UpdateInterval**](systemmonitor-updateinterval.md)
 -   [**YAxisLabel**](systemmonitor-yaxislabel.md)
 
- 
+ 
 
- 
+ 
 
 
 

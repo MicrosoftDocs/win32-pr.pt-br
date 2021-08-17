@@ -1,6 +1,6 @@
 ---
 title: Estrutura de atributos de interseção
-description: Uma estrutura declarada em HLSL para representar atributos de acerto para interseção de triângulo de função fixa ou caixa delimitada alinhada por eixo para interseção primitiva de procedimento.
+description: Uma estrutura declarada em HLSL para representar os atributos de acesso para a interseção de triângulo de função fixa ou a caixa delimitadora alinhada por eixo para a interseção de procedimento primitivo.
 ms.assetid: ''
 ms.localizationpriority: low
 ms.topic: language-reference
@@ -14,11 +14,11 @@ ms.locfileid: "118528114"
 ---
 # <a name="intersection-attributes-structure"></a>Estrutura de atributos de interseção 
 
-Uma estrutura declarada em HLSL para representar atributos de acerto para interseção de triângulo de função fixa ou caixa delimitada alinhada por eixo para interseção primitiva de procedimento.
+Uma estrutura declarada em HLSL para representar os atributos de acesso para a interseção de triângulo de função fixa ou a caixa delimitadora alinhada por eixo para a interseção de procedimento primitivo.
 
 ## <a name="fixed-function-triangle-intersection"></a>Interseção de triângulo de função fixa
 
-A seguinte estrutura é declarada em HLSL para representar atributos de acerto para interseção de triângulo de função fixa:
+A seguinte estrutura é declarada em HLSL para representar os atributos de acesso para a interseção de triângulo de função fixa:
 
 
 ```
@@ -28,10 +28,10 @@ struct BuiltInTriangleIntersectionAttributes
 };
 ```
 
-[Todos os sombreadores](any-hit-shader.md) [de acerto e de](closest-hit-shader.md) acerto mais próximos invocados usando interseção de triângulo de função fixa devem usar essa estrutura para atributos de acerto. Considerando os atributos a0, a1 e a2 para os três vértices de um triângulo, barycentrics.x é o peso para a1 e barycentrics.y é o peso para a2.  Por exemplo, o aplicativo pode interpolar fazendo: a = a0 + barycentrics.x * (a1-a0) + barycentrics.y* (a2 – a0).
+[Quaisquer pressionamentos](any-hit-shader.md) de tecla de acesso e [mais próximos](closest-hit-shader.md) invocados usando a interseção de triângulo de função fixa devem usar essa estrutura para os atributos de pressionamento. Determinados atributos a0, a1 e a2 para os 3 vértices de um triângulo, barycentrics. x é o peso para a1 e barycentrics. y é o peso de a2.  Por exemplo, o aplicativo pode se interpolar fazendo: a = a0 + barycentrics. x * (a1-a0) + barycentrics. y * (a2 – a0).
 
-## <a name="axis-aligned-bounding-box-for-procedural-primitive-intersection"></a>Caixa delimitada alinhada por eixo para interseção primitiva de procedimento
+## <a name="axis-aligned-bounding-box-for-procedural-primitive-intersection"></a>Caixa delimitadora alinhada ao eixo para a interseção de procedimento primitivo
 
-Quando caixas delimitadas alinhadas por eixo são usadas para interseção com primitivos de procedimento, um sombreador de interseção é disparado.  Esse sombreador fornece uma estrutura de atributo de interseção definida pelo usuário para a [**chamada ReportHit.**](reporthit-function.md)  Os sombreadores de acerto e de acerto mais próximos vinculados no mesmo grupo de acertos com esse sombreador de interseção devem usar a mesma estrutura para atributos de acerto, mesmo que os atributos não sejam referenciados.  O tamanho máximo da estrutura de atributo é de 32 bytes, definido como **D3D12 \_ RAYTRACING \_ MAX ATTRIBUTE SIZE IN \_ \_ \_ \_ BYTES**.
+Quando caixas delimitadores alinhadas por eixo são usadas para interseção com primitivos de procedimento, um sombreador de interseção é disparado.  Esse sombreador fornece uma estrutura de atributo de interseção definida pelo usuário para a chamada [**ReportHit**](reporthit-function.md) .  Os sombreadores de pressionamento de qualquer clique e mais próximo vinculados no mesmo grupo de acesso com esse sombreador de interseção devem usar a mesma estrutura para atributos de pressionamento, mesmo que os atributos não sejam referenciados.  O tamanho máximo da estrutura de atributo é 32 bytes, definido como **D3D12 \_ RAYTRACING \_ \_ tamanho máximo \_ do atributo \_ em \_ bytes**.
 
 

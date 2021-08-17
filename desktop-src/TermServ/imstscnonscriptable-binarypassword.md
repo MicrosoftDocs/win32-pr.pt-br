@@ -1,24 +1,24 @@
 ---
-title: Propriedade IMsTscNonScriptable BinaryPassword
-description: Esta propriedade não está mais disponível para uso. | Propriedade IMsTscNonScriptable BinaryPassword
+title: Propriedade BinaryPassword IMsTscNonScriptable
+description: Essa propriedade não está mais disponível para uso. | Propriedade BinaryPassword IMsTscNonScriptable
 ms.assetid: b3be7323-a75f-4ec2-9d58-e8ff3338d6ff
 ms.tgt_platform: multiple
 keywords:
-- Serviços de Área de Trabalho Remota da propriedade BinaryPassword
-- Propriedade BinaryPassword Serviços de Área de Trabalho Remota, interface IMsTscNonScriptable
-- Serviços de Área de Trabalho Remota de interface IMsTscNonScriptable, Propriedade BinaryPassword
-- Propriedade BinaryPassword Serviços de Área de Trabalho Remota, objeto MsTscAx
-- Objeto MsTscAx Serviços de Área de Trabalho Remota, Propriedade BinaryPassword
-- Propriedade BinaryPassword Serviços de Área de Trabalho Remota, interface IMsRdpClientNonScriptable
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientNonScriptable, Propriedade BinaryPassword
-- Propriedade BinaryPassword Serviços de Área de Trabalho Remota, interface IMsRdpClientNonScriptable2
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientNonScriptable2, Propriedade BinaryPassword
-- Propriedade BinaryPassword Serviços de Área de Trabalho Remota, interface IMsRdpClientNonScriptable3
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientNonScriptable3, Propriedade BinaryPassword
-- Propriedade BinaryPassword Serviços de Área de Trabalho Remota, interface IMsRdpClientNonScriptable4
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientNonScriptable4, Propriedade BinaryPassword
-- Propriedade BinaryPassword Serviços de Área de Trabalho Remota, interface IMsRdpClientNonScriptable5
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientNonScriptable5, Propriedade BinaryPassword
+- Propriedade BinaryPassword Serviços de Área de Trabalho Remota
+- A propriedade BinaryPassword Serviços de Área de Trabalho Remota , interface IMsTscNonScriptable
+- Interface IMsTscNonScriptable Serviços de Área de Trabalho Remota , propriedade BinaryPassword
+- Propriedade BinaryPassword Serviços de Área de Trabalho Remota objeto , MsTscAx
+- Objeto MsTscAx Serviços de Área de Trabalho Remota , propriedade BinaryPassword
+- A propriedade BinaryPassword Serviços de Área de Trabalho Remota , interface IMsRdpClientNonScriptable
+- Interface IMsRdpClientNonScriptable Serviços de Área de Trabalho Remota , propriedade BinaryPassword
+- A propriedade BinaryPassword Serviços de Área de Trabalho Remota , interface IMsRdpClientNonScriptable2
+- Interface IMsRdpClientNonScriptable2 Serviços de Área de Trabalho Remota , propriedade BinaryPassword
+- A propriedade BinaryPassword Serviços de Área de Trabalho Remota , interface IMsRdpClientNonScriptable3
+- Interface IMsRdpClientNonScriptable3 Serviços de Área de Trabalho Remota , propriedade BinaryPassword
+- A propriedade BinaryPassword Serviços de Área de Trabalho Remota , interface IMsRdpClientNonScriptable4
+- Interface IMsRdpClientNonScriptable4 Serviços de Área de Trabalho Remota , propriedade BinaryPassword
+- A propriedade BinaryPassword Serviços de Área de Trabalho Remota , interface IMsRdpClientNonScriptable5
+- Interface IMsRdpClientNonScriptable5 Serviços de Área de Trabalho Remota , propriedade BinaryPassword
 topic_type:
 - apiref
 api_name:
@@ -47,18 +47,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a1d6eab2a3902968ef4d4c953a8da8b9c884a497
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 3aef3cb62a6ab2c72d39a79ee4cd6e5d64192ae24bc8ef201da603cdbc528859
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105810434"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117757122"
 ---
-# <a name="imstscnonscriptablebinarypassword-property"></a>Propriedade IMsTscNonScriptable:: BinaryPassword
+# <a name="imstscnonscriptablebinarypassword-property"></a>Propriedade IMsTscNonScriptable::BinaryPassword
 
-Esta propriedade não está mais disponível para uso.
+Essa propriedade não está mais disponível para uso.
 
-Esta propriedade é de leitura/gravação.
+Essa propriedade é leitura/gravação.
 
 ## <a name="syntax"></a>Syntax
 
@@ -77,11 +77,11 @@ HRESULT get_BinaryPassword(
 
 ## <a name="property-value"></a>Valor da propriedade
 
-A nova parte da senha, em formato binário codificado.
+A nova parte da senha, em formato codificado binário.
 
 ## <a name="error-codes"></a>Códigos do Erro
 
-Retorna **E \_ NOTIMPL**.
+Retorna **E \_ NOTIMPL.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -91,11 +91,11 @@ Retorna **E \_ NOTIMPL**.
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Nenhum compatível<br/>                                                              |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                              |
-| Fim do suporte do cliente<br/>    | Nenhum compatível<br/>                                                              |
-| Fim do suporte do servidor<br/>    | Nenhum compatível<br/>                                                              |
+| Fim do suporte ao cliente<br/>    | Nenhum compatível<br/>                                                              |
+| Fim do suporte ao servidor<br/>    | Nenhum compatível<br/>                                                              |
 | Biblioteca de tipos<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl> |
-| IID<br/>                      | IID \_ IMsTscNonScriptable é definido como c1e6743a-41c1-4a74-832A-0dd06c1c7a0e<br/> |
+| IID<br/>                      | IID \_ IMsTscNonScriptable é definido como c1e6743a-41c1-4a74-832a-0dd06c1c7a0e<br/> |
 
 
 
@@ -118,7 +118,7 @@ Retorna **E \_ NOTIMPL**.
 [**IMsRdpClientNonScriptable5**](imsrdpclientnonscriptable5.md)
 </dt> <dt>
 
-[**IMsTscNonScriptable**](imstscnonscriptable-interface.md)
+[**Imstscnonscriptable**](imstscnonscriptable-interface.md)
 </dt> </dl>
 
  

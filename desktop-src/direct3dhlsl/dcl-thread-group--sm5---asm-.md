@@ -4,12 +4,12 @@ description: Declare o tamanho do grupo de threads.
 ms.assetid: CB8192C4-100D-49B6-94E7-6CD3AEC28149
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b8141c80e82f1dfd1ae5a4d360d04fac32ba5221
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: 5402e53e2252d8019ba553c6a8ff449200625b1469ee923f3c26234f1faa292e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104006916"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118515474"
 ---
 # <a name="dcl_thread_group-sm5---asm"></a>\_grupo de threads DCL \_ (SM5-ASM)
 
@@ -46,7 +46,7 @@ Essa instrução se aplica aos seguintes estágios de sombreador:
 
 
 
-| Vértice | Envoltória | Domínio | Geometria | 16x16 | Computação |
+| Vértice | Envoltória | Domínio | Geometry | 16x16 | Computação |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          |       | X       |
 

@@ -1,10 +1,10 @@
 ---
-title: Estrutura de RAS_SERVER_0 (Rassapi. h)
-description: A \_ estrutura do servidor RAS \_ 0 é usada pela função RasAdminServerGetInfo para retornar informações sobre as portas configuradas em um servidor RAS.
+title: RAS_SERVER_0 estrutura (Rassapi.h)
+description: A estrutura RAS SERVER 0 é usada \_ pela função RasAdminServerGetInfo para retornar informações sobre as portas \_ configuradas em um servidor RAS.
 ms.assetid: 8818ad68-b528-45fe-9ff4-eea194259f25
 keywords:
-- RAS da estrutura de RAS_SERVER_0
-- RAS de ponteiro de estrutura de PRAS_SERVER_0
+- ras RAS_SERVER_0 estrutura de RAS_SERVER_0
+- PRAS_SERVER_0 RAS do ponteiro de estrutura
 topic_type:
 - apiref
 api_name:
@@ -15,18 +15,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 16f910fdfe53221daf8227d9f3e594133548fee9
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: dbb7a135fd6f8d1d77b59d1085460d51ad5357e47ca1a050e3d1ba6fd89461c3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105752833"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117789380"
 ---
-# <a name="ras_server_0-structure"></a>\_Estrutura do servidor RAS \_ 0
+# <a name="ras_server_0-structure"></a>Estrutura RAS \_ SERVER \_ 0
 
-\[A estrutura do **\_ servidor RAS \_ 0** não tem suporte a partir do Windows Vista.\]
+\[A **estrutura RAS SERVER \_ \_ 0** não é suportada desde Windows Vista.\]
 
-A estrutura do **\_ servidor RAS \_ 0** é usada pela função [**RasAdminServerGetInfo**](rasadminservergetinfo.md) para retornar informações sobre as portas configuradas em um servidor RAS.
+A **estrutura RAS SERVER \_ \_ 0** é usada pela [**função RasAdminServerGetInfo**](rasadminservergetinfo.md) para retornar informações sobre as portas configuradas em um servidor RAS.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -48,7 +48,7 @@ typedef struct _RAS_SERVER_0 {
 **TotalPorts**
 </dt> <dd>
 
-Especifica o número total de portas configuradas no servidor RAS que estão disponíveis para os clientes remotos se conectarem. Por exemplo, se o número total de portas configuradas para discagem em um servidor for de quatro, mas uma das portas estiver em uso no momento para discar, **TotalPorts** será três.
+Especifica o número total de portas configuradas no servidor RAS que estão disponíveis para os clientes remotos se conectarem. Por exemplo, se o número total de portas configuradas para discagem em um servidor for quatro, mas uma das portas estiver em uso no momento para discar, **TotalPorts** será três.
 
 </dd> <dt>
 
@@ -62,15 +62,15 @@ Especifica o número de portas atualmente em uso por clientes remotos.
 **RasVersion**
 </dt> <dd>
 
-Especifica a versão do servidor RAS. Use essas informações para executar a ação específica da versão. Esse membro é um dos valores a seguir.
+Especifica a versão do servidor RAS. Use essas informações para tomar uma ação específica da versão. Esse membro é um dos valores a seguir.
 
 
 
 | Valor                                                                                                                                                                  | Significado                                                                         |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------|
-| <span id="RASDOWNLEVEL"></span><span id="rasdownlevel"></span><dl> <dt>**RASDOWNLEVEL**</dt> </dl>              | Indica um servidor RAS da versão 1,0 do LAN Manager.<br/>                      |
-| <span id="RASADMIN_35"></span><span id="rasadmin_35"></span><dl> <dt>**RASADMIN \_ 35**</dt> </dl>                | Indica um servidor ou cliente RAS do Windows NT Server 3,51 e anterior.<br/> |
-| <span id="RASADMIN_CURRENT"></span><span id="rasadmin_current"></span><dl> <dt>**RASADMIN \_ atual**</dt> </dl> | Indica um cliente ou servidor RAS do Windows NT 4,0.<br/>                     |
+| <span id="RASDOWNLEVEL"></span><span id="rasdownlevel"></span><dl> <dt>**RASDOWNLEVEL**</dt> </dl>              | Indica um servidor RAS versão 1.0 do LAN Manager.<br/>                      |
+| <span id="RASADMIN_35"></span><span id="rasadmin_35"></span><dl> <dt>**RASADMIN \_ 35**</dt> </dl>                | Indica um Windows NT Server 3.51 e o cliente RAS anterior.<br/> |
+| <span id="RASADMIN_CURRENT"></span><span id="rasadmin_current"></span><dl> <dt>**RASADMIN \_ CURRENT**</dt> </dl> | Indica um Windows NT ou cliente RAS 4.0.<br/>                     |
 
 
 
@@ -86,9 +86,9 @@ Especifica a versão do servidor RAS. Use essas informações para executar a a�
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                           |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                 |
-| Fim do suporte do cliente<br/>    | Windows XP<br/>                                                                |
-| Fim do suporte do servidor<br/>    | Windows Server 2003<br/>                                                       |
-| parâmetro<br/>                   | <dl> <dt>Rassapi. h</dt> </dl> |
+| Fim do suporte ao cliente<br/>    | Windows XP<br/>                                                                |
+| Fim do suporte ao servidor<br/>    | Windows Server 2003<br/>                                                       |
+| Cabeçalho<br/>                   | <dl> <dt>Rassapi.h</dt> </dl> |
 
 
 
@@ -96,10 +96,10 @@ Especifica a versão do servidor RAS. Use essas informações para executar a a�
 
 <dl> <dt>
 
-[Visão geral do serviço de acesso remoto (RAS)](about-remote-access-service.md)
+[Visão geral do RAS (Serviço de Acesso Remoto)](about-remote-access-service.md)
 </dt> <dt>
 
-[Estruturas de administração do servidor RAS](ras-server-administration-structures.md)
+[Estruturas de administração de servidor RAS](ras-server-administration-structures.md)
 </dt> <dt>
 
 [**RasAdminServerGetInfo**](rasadminservergetinfo.md)

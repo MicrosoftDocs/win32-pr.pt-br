@@ -1,5 +1,5 @@
 ---
-description: A classe HWConfig é a classe pai para eventos de configuração de hardware no Windows XP. A sintaxe a seguir é simplificada do código MOF.
+description: a classe HWConfig é a classe pai para eventos de configuração de hardware no Windows XP. A sintaxe a seguir é simplificada do código MOF.
 ms.assetid: 47f062c0-fdf0-4beb-906d-257571324de9
 title: Classe HWConfig
 ms.topic: reference
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: cfb194e09701dbc52b00279b624877f09ffac24b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e1d4b8f69784729ffe5d51f3068b03fc0b4154182b2d05f2896e4556a05f7eba
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103837339"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118394676"
 ---
 # <a name="hwconfig-class"></a>Classe HWConfig
 
-A classe **HWConfig** é a classe pai para eventos de configuração de hardware no Windows XP.
+a classe **HWConfig** é a classe pai para eventos de configuração de hardware no Windows XP.
 
 A sintaxe a seguir é simplificada do código MOF.
 
@@ -44,7 +44,7 @@ Esses eventos fornecem a configuração de hardware do computador. Ao contrário
 
 **Windows 2000:** Sem suporte.
 
-Para eventos de configuração de hardware no Windows Vista e no Windows Server 2003, consulte a classe [SystemConfig](systemconfig.md) .
+para eventos de configuração de hardware no Windows Vista e no Windows Server 2003, consulte a classe [SystemConfig](systemconfig.md) .
 
 Os consumidores de rastreamento de eventos podem implementar processamento especial para eventos de configuração de hardware chamando a função [**SetTraceCallback**](/windows/win32/api/evntrace/nf-evntrace-settracecallback) e especificando [**EventTraceConfigGuid**](nt-kernel-logger-constants.md) como o parâmetro *pGuid* . Use os seguintes tipos de evento para identificar o evento de configuração de hardware real ao consumir eventos.
 
@@ -67,7 +67,7 @@ Os consumidores de rastreamento de eventos podem implementar processamento espec
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho XP\]<br/> |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                   |
 
 

@@ -1,5 +1,5 @@
 ---
-description: O ICE57 valida que componentes individuais não misturam dados por computador e por usuário. Essa ação personalizada de ICE verifica entradas de registro, arquivos, caminhos de chave de diretório e atalhos não anunciados.
+description: O ICE57 valida que os componentes individuais não combinam dados por computador e por usuário. Essa ação personalizada ICE verifica entradas, arquivos, caminhos de chave de diretório e atalhos não anunciados.
 ms.assetid: 3c82efa7-9cf3-4bcd-8ec4-b81d1d7aa0a6
 title: ICE57
 ms.topic: article
@@ -13,19 +13,19 @@ ms.locfileid: "118635157"
 ---
 # <a name="ice57"></a>ICE57
 
-O ICE57 valida que componentes individuais não misturam dados por computador e por usuário. Essa ação personalizada de ICE verifica entradas de registro, arquivos, caminhos de chave de diretório e atalhos não anunciados.
+O ICE57 valida que os componentes individuais não combinam dados por computador e por usuário. Essa ação personalizada ICE verifica entradas, arquivos, caminhos de chave de diretório e atalhos não anunciados.
 
-A combinação de dados por usuário e por computador no mesmo componente pode resultar na instalação parcial do componente para alguns usuários em um ambiente de vários usuários.
+A combinação de dados por usuário e por computador no mesmo componente pode resultar em apenas uma instalação parcial do componente para alguns usuários em um ambiente de vários usuários.
 
-Consulte a propriedade [**AllUsers**](allusers.md) .
+Consulte a [**propriedade ALLUSERS.**](allusers.md)
 
-## <a name="result"></a>Result
+## <a name="result"></a>Resultado
 
-O ICE57 posta um erro se encontrar algum componente que contenha entradas de registro por computador e por usuário, arquivos, caminhos de chave de diretório ou atalhos não anunciados.
+O ICE57 postará um erro se encontrar qualquer componente que contenha entradas, arquivos, caminhos de chave de diretório ou atalhos não anunciados por computador e por usuário.
 
 ## <a name="example"></a>Exemplo
 
-ICE57reports os seguintes erros para o exemplo mostrado.
+ICE57reporta os erros a seguir para o exemplo mostrado.
 
 ``` syntax
 Component 'Component1' has both per-user and per-machine 
@@ -47,16 +47,16 @@ Component 'Component4' has both per-user data and
 
 | Componente  | Diretório  | Atributos | KeyPath |
 |------------|------------|------------|---------|
-| Component1 | Directorya | 0          | FileA   |
-| Component2 | Directorya | 4          | RegKeyB |
-| Component3 | Directorya | 0          | FileC   |
-| Component4 | Directorya | 4          | RegKeyD |
+| Component1 | DirectoryA | 0          | FileA   |
+| Component2 | DirectoryA | 4          | RegKeyB |
+| Component3 | DirectoryA | 0          | FileC   |
+| Component4 | DirectoryA | 4          | RegKeyD |
 
 
 
  
 
-[Tabela do registro](registry-table.md) (parcial)
+[Tabela do Registro](registry-table.md) (parcial)
 
 
 
@@ -80,7 +80,7 @@ Component 'Component4' has both per-user data and
 | FileA | Component1  |
 | FileB | Component2  |
 | FileC | Component3  |
-| Arquiva | Component4  |
+| Arquivado | Component4  |
 
 
 
@@ -90,18 +90,18 @@ Component 'Component4' has both per-user data and
 
 
 
-| Diretório  | Pai do diretório \_ | DefaultDir |
+| Diretório  | Pai do \_ Diretório | Defaultdir |
 |------------|-------------------|------------|
-| TARGETDIR  |                   | SourceDir  |
-| Directorya | TARGETDIR         | Directorya |
+| Targetdir  |                   | SourceDir  |
+| DirectoryA | Targetdir         | DirectoryA |
 
 
 
  
 
-Para corrigir os erros, reorganize o aplicativo de modo que cada componente contenha apenas recursos por usuário ou por máquina, e não ambos.
+Para corrigir os erros, reorganize o aplicativo de forma que cada componente contenha apenas recursos por usuário ou por computador, e não ambos.
 
-A primeira mensagem de erro é postada porque Component1 contém fileA (por máquina) e a chave do Registro HKCU RegKeyA (por usuário).
+A primeira mensagem de erro é postada porque Component1 contém FileA (por computador) e a chave do Registro HKCU RegKeyA (por usuário).
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

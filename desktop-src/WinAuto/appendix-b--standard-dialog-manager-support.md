@@ -17,7 +17,7 @@ Microsoft Active Accessibility oferece suporte completo para controles de caixa 
 
 O SDM apresenta problemas para auxiliares de acessibilidade porque usa implementações não padrão de caixas de diálogo. Por exemplo, os botões da caixa de diálogo do SDM não usam os controles de janela da mesma maneira que os elementos de interface do usuário padrão. Você não pode enviar mensagens para botões e os botões não estão contidos na lista de janelas. Um aplicativo que usa o SDM se comunica com o controle por meio de uma interface privada.
 
-A ilustração a seguir mostra uma caixa de diálogo de exemplo do Word. Embora se pareça com uma caixa de Windows de diálogo regular que usa o controle de tabulação, é realmente uma caixa de diálogo SDM.
+A ilustração a seguir mostra uma caixa de diálogo de exemplo do Word. Embora se pareça com uma caixa Windows caixa de diálogo regular que usa o controle de tabulação, é realmente uma caixa de diálogo SDM.
 
 ![captura de tela da caixa de diálogo opções com a guia Exibição selecionada](images/dialog.gif)
 

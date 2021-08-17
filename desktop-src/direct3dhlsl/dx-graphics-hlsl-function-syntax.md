@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 847194c08b865542cff1deb20c8518a7e4b62ab9
-ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
+ms.openlocfilehash: ce8c6ec83963dac74dce32d248b23548c767192a604ddb8afbe35cf932dedee9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113119041"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118514601"
 ---
 # <a name="function-declaration-syntax"></a>Sintaxe de declaração da função
 
@@ -82,7 +82,7 @@ A sintaxe nesta página descreve quase todos os tipos de função HLSL, isso inc
 
 Uma função pode ser sobrecarregada desde que seja dada uma combinação exclusiva de tipos de parâmetro e/ou ordem de parâmetro. O HLSL também implementa um número de funções intrínsecas [**ou intrínsecas.**](dx-graphics-hlsl-intrinsic-functions.md)
 
-Você pode especificar planos de clipe específicos do usuário com o **atributo clipplanes.** O Windows aplica esses planos de clipe a todos os primitivos desenhados. O **atributo clipplanes** funciona como [SV \_ ClipDistance, mas](dx-graphics-hlsl-semantics.md) funciona em todos os recursos de hardware nível 9 x e [](/windows/desktop/direct3d11/overviews-direct3d-11-devices-downlevel-intro) \_ superior. Para obter mais informações, consulte [Planos de clipe de usuário no hardware de nível de recurso 9.](/windows/desktop/direct3dhlsl/user-clip-planes-on-10level9)
+Você pode especificar planos de clipe específicos do usuário com o **atributo clipplanes.** Windows aplica esses planos de clipe a todos os primitivos desenhados. O **atributo clipplanes** funciona como [SV \_ ClipDistance, mas](dx-graphics-hlsl-semantics.md) funciona em todos os recursos de hardware nível 9 x e [](/windows/desktop/direct3d11/overviews-direct3d-11-devices-downlevel-intro) \_ superior. Para obter mais informações, consulte [Planos de clipe de usuário no hardware de nível de recurso 9.](/windows/desktop/direct3dhlsl/user-clip-planes-on-10level9)
 
 ## <a name="examples"></a>Exemplos
 

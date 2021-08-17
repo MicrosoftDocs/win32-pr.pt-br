@@ -4,16 +4,16 @@ ms.assetid: a1cb6e1e-0702-4f73-827e-3f9e9237b4b6
 title: Adicionando certificados a um repositório de certificados
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c6f4c018be697f48e40d52480f49694762fb956f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4e3c4b2fafbcd11bf2d984dfd5b5a575f67dc4f6d3c70337de399ca6076029ff
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104505921"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117774031"
 ---
 # <a name="adding-certificates-to-a-certificate-store"></a>Adicionando certificados a um repositório de certificados
 
-\[O CAPICOM é um componente somente de 32 bits que está disponível para uso nos seguintes sistemas operacionais: Windows Server 2008, Windows Vista, Windows XP. Em vez disso, use o .NET Framework para implementar recursos de segurança. Para obter mais informações, consulte [alternativas ao uso do CApicom](alternatives-to-using-capicom.md).\]
+\[o capicom é um componente somente de 32 bits que está disponível para uso nos seguintes sistemas operacionais: Windows Server 2008, Windows Vista, Windows XP. em vez disso, use o .NET Framework para implementar recursos de segurança. Para obter mais informações, consulte [alternativas ao uso do CApicom](alternatives-to-using-capicom.md).\]
 
 Os [*certificados*](../secgloss/c-gly.md) podem ser adicionados ou removidos de [*repositórios de certificados*](../secgloss/c-gly.md) se o repositório for aberto com permissão de leitura/gravação. A permissão de leitura/gravação não é concedida a repositórios Active Directory. Embora os certificados possam ser adicionados ou removidos dos armazenamentos de memória, as alterações nos armazenamentos de memória não são mantidas entre as sessões.
 

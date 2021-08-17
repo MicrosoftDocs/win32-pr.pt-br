@@ -1,7 +1,7 @@
 ---
-description: Método Reset da classe Msvm_SyntheticMouse – solicita uma redefinição.
+description: Método reset da classe Msvm_SyntheticMouse - Solicita uma redefinição.
 ms.assetid: c28790d8-e731-46a3-8c84-677dd4257b2f
-title: Método Reset da classe Msvm_SyntheticMouse
+title: Método reset da classe Msvm_SyntheticMouse dados
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 3124d1a878d04e9ea79d3f5b900ac111d3e2c0b2
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: bc9999bba539a8cc6bd1f205cd93abe615a0939772ca95c77ca325440d13d893
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108109534"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118391882"
 ---
-# <a name="reset-method-of-the-msvm_syntheticmouse-class"></a>Método Reset da classe Msvm \_ SyntheticMouse
+# <a name="reset-method-of-the-msvm_syntheticmouse-class"></a>Método reset da classe Msvm \_ SyntheticMouse
 
 Solicita uma redefinição.
 
@@ -57,13 +57,13 @@ Esse método retorna um dos seguintes valores:
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 8.1<br/>                                                                                  |
 | Servidor mínimo com suporte<br/> | Windows Server 2012 R2<br/>                                                                       |
-| Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Namespace<br/>                | Virtualização \\ raiz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

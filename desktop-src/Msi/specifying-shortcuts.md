@@ -1,5 +1,5 @@
 ---
-description: A tabela Atalho e as tabelas relacionadas do banco de dados de instalação respetivas informações necessárias para instalar atalhos. Consulte o Grupo de Tabelas de Informações do Programa e Editando Atalhos do Instalador.
+description: A tabela de atalhos e as tabelas relacionadas do banco de dados de instalação armazenam as informações necessárias para instalar atalhos. Consulte o grupo tabelas de informações do programa e os atalhos do instalador de edição.
 ms.assetid: 0f3adf78-e650-414f-b85d-b53b986eafda
 title: Especificando atalhos
 ms.topic: article
@@ -13,22 +13,22 @@ ms.locfileid: "118624680"
 ---
 # <a name="specifying-shortcuts"></a>Especificando atalhos
 
-A [tabela Atalho e](shortcut-table.md) as tabelas relacionadas do banco de dados de instalação respetivas informações necessárias para instalar atalhos. Consulte o [Grupo de Tabelas de Informações do Programa](program-information-tables-group.md) e Editar [Atalhos do Instalador](editing-installer-shortcuts.md).
+A [tabela de atalhos](shortcut-table.md) e as tabelas relacionadas do banco de dados de instalação armazenam as informações necessárias para instalar atalhos. Consulte o [grupo tabelas de informações do programa](program-information-tables-group.md) e os [atalhos do instalador de edição](editing-installer-shortcuts.md).
 
-Nesta seção, você adiciona informações que especificam atalhos anunciados e não anunciados para o Bloco de notas exemplo.
+nesta seção, você adiciona informações que especificam atalhos anunciados e não anunciados para o exemplo de Bloco de notas.
 
-Use o editor de banco de dados para MNP2000.msi e insira os dados a seguir na tabela Atalho.
+Use o editor de banco de dados para abrir MNP2000.msi e insira os dados a seguir na tabela de atalho.
 
 [Tabela de atalho](shortcut-table.md)
 
 
 
-| Atalho  | Diretório\_ | Name         | Componente\_ | Destino             | Argumentos | Descrição | Tecla de acesso | Ícone\_         | IconIndex | ShowCmd | WkDir |
+| Atalho  | Diretório\_ | Nome         | Componente\_ | Destino             | Argumentos | Descrição | Tecla de acesso | Ícone\_         | IconIndex | ShowCmd | WkDir |
 |-----------|-------------|--------------|-------------|--------------------|-----------|-------------|--------|----------------|-----------|---------|-------|
-| sBaseball | MENUDIR     | Baseball.txt | Beisebol    | Beisebol           |           |             |        | orca \_icon.exe |           |         |       |
+| sBaseball | MENUDIR     | Baseball.txt | Beisebol    | Beisebol           |           |             |        | \_icon.exe orca |           |         |       |
 | sConcert  | MENUDIR     | Concert.txt  | Concerto     | \[\#Concert.txt\]  |           |             |        |                |           |         |       |
-| sDance    | MENUDIR     | Dance.txt    | Dança       | \[\#Dance.txt\]    |           |             |        |                |           |         |       |
-| sFootball | MENUDIR     | Football.txt | Futebol    | \[\#Football.txt\] |           |             |        |                |           |         |       |
+| sDance    | MENUDIR     | Dance.txt    | Dance       | \[\#Dance.txt\]    |           |             |        |                |           |         |       |
+| sFootball | MENUDIR     | Football.txt | Comemorar    | \[\#Football.txt\] |           |             |        |                |           |         |       |
 | sHelp     | MENUDIR     | Help.txt     | Ajuda        | \[\#Help.txt\]     |           |             |        |                |           |         |       |
 | sJanuary  | MENUDIR     | January.txt  | Janeiro     | \[\#January.txt\]  |           |             |        |                |           |         |       |
 | sNewYears | MENUDIR     | NewYears.txt | NewYears    | \[\#NewYears.txt\] |           |             |        |                |           |         |       |
@@ -39,15 +39,15 @@ Use o editor de banco de dados para MNP2000.msi e insira os dados a seguir na ta
 
  
 
-A instalação de exemplo precisa habilitar a instalação de um atalho anunciado para o recurso De basebol. Isso requer a especificação de uma chave para a tabela Ícone na coluna \_ Ícone da tabela Atalho. Para os fins deste exemplo, você pode copiar o ícone para o editor de banco de dados Orca fornecido com o SDK do Windows Installer. Exporte [a tabela Ícone](icon-table.md) do Orca.msi e, em seguida, mesce essa tabela no banco de dados MNP2000.msi usando Orca ou outra ferramenta de mesclagem. O Orca também cria um diretório chamado Icon no diretório que contém MNP2000.msi e adiciona o arquivo de dados binários do ícone orca \_icon.exe.ibd. Consulte a coluna Dados na tabela Ícone. A tabela Ícone concluída deve ser a seguinte quando exibida no Orca.
+A instalação de exemplo precisa habilitar a instalação de um atalho anunciado para o recurso de beisebol. Isso requer a especificação de uma chave para a tabela de ícones na \_ coluna ícone da tabela de atalho. para os fins deste exemplo, você pode copiar o ícone do editor de banco de dados Orca fornecido com o SDK do Windows Installer. Exporte a [tabela de ícones](icon-table.md) de Orca.msi e mescle essa tabela no banco de dados de MNP2000.msi usando o Orca ou outra ferramenta de mesclagem. O Orca também cria um diretório chamado Icon no diretório que contém MNP2000.msi e adiciona o ícone arquivo de dados binários Orca \_icon.exe. IBD. Consulte a coluna de dados na tabela de ícones. A tabela de ícones concluídas deve ter a seguinte aparência quando exibida em orca.
 
 [Tabela de ícones](icon-table.md)
 
 
 
-| Name           | Dados            |
+| Nome           | Dados            |
 |----------------|-----------------|
-| orca \_icon.exe | \[Binary Data\] |
+| \_icon.exe orca | \[Binary Data\] |
 
 
 

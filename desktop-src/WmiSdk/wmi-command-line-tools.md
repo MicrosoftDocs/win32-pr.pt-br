@@ -25,7 +25,7 @@ O WMI tem várias ferramentas de linha de comando usadas por administradores e a
 
 | Seção                      | Descrição                                                                                                                                                         |
 |------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**mofcomp**](mofcomp.md)   | Compila Managed Object Format código (MOF) em formato binário armazenado no repositório WMI. Use ao criar ou modificar o arquivo MOF para um provedor WMI.<br/> |
+| [**mofcomp**](mofcomp.md)   | Compila Managed Object Format (MOF) em formato binário armazenado no repositório WMI. Use ao criar ou modificar o arquivo MOF para um provedor WMI.<br/> |
 | [**smi2smir**](smi2smir.md) | Aceita um módulo de informações SNMP como entrada e aceita quaisquer módulos adicionais necessários para resolver referências externas.<br/>                               |
 | [**Winmgmt**](winmgmt.md)   | Executa o serviço WMI. Começando com Windows Vista, várias novas opções foram adicionadas.<br/>                                                                |
 | [**wmiadap**](wmiadap.md)   | Executa a ferramenta de linha de comando do ADAP para analisar e transferir bibliotecas de desempenho para o repositório WMI.<br/>                                                       |

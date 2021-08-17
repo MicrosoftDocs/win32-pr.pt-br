@@ -1,15 +1,15 @@
 ---
-description: 'Saiba mais sobre: usando ganchos'
+description: 'Saiba mais sobre: Usando ganchos'
 ms.assetid: f0ca9e41-a9f7-435f-a601-f0959adcb514
 title: Usando ganchos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9d65d457b4549601aa89c3dae5b6e05c1fe0afed
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 34539855a30a67964acfe671c29de3cacdf23314cbb51bb80027d4b388e47b5f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103836877"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117849626"
 ---
 # <a name="using-hooks"></a>Usando ganchos
 
@@ -20,9 +20,9 @@ Os exemplos de código a seguir demonstram como executar as seguintes tarefas as
 
 ## <a name="installing-and-releasing-hook-procedures"></a>Instalando e liberando procedimentos de gancho
 
-Você pode instalar um procedimento de gancho chamando a função [**SetWindowsHookEx**](/windows/win32/api/winuser/nf-winuser-setwindowshookexa) e especificando o tipo de gancho que está chamando o procedimento, se o procedimento deve ser associado a todos os threads na mesma área de trabalho que o thread de chamada ou com um thread específico, e um ponteiro para o ponto de entrada do procedimento.
+Você pode instalar um procedimento de gancho chamando a função [**SetWindowsHookEx**](/windows/win32/api/winuser/nf-winuser-setwindowshookexa) e especificando o tipo de gancho que chama o procedimento, se o procedimento deve ser associado a todos os threads na mesma área de trabalho que o thread de chamada ou a um thread específico e um ponteiro para o ponto de entrada do procedimento.
 
-Você deve posicionar um procedimento de gancho global em uma DLL separada do aplicativo que está instalando o procedimento de gancho. O aplicativo de instalação deve ter o identificador para o módulo de DLL antes de poder instalar o procedimento de gancho. Para recuperar um identificador para o módulo DLL, chame a função [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) com o nome da dll. Depois de obter o identificador, você pode chamar a função [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) para recuperar um ponteiro para o procedimento de gancho. Por fim, use [**SetWindowsHookEx**](/windows/win32/api/winuser/nf-winuser-setwindowshookexa) para instalar o endereço do procedimento de gancho na cadeia de conexão apropriada. **SetWindowsHookEx** passa o identificador do módulo, um ponteiro para o ponto de entrada do procedimento de gancho e 0 para o identificador de thread, indicando que o procedimento de gancho deve ser associado a todos os threads na mesma área de trabalho que o thread de chamada. Essa sequência é mostrada no exemplo a seguir.
+Você deve colocar um procedimento de gancho global em uma DLL separada do aplicativo que está instalando o procedimento de gancho. O aplicativo de instalação deve ter o handle para o módulo DLL antes de poder instalar o procedimento de gancho. Para recuperar um handle para o módulo DLL, chame a [**função LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) com o nome da DLL. Depois de obter o handle, você pode chamar a [**função GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) para recuperar um ponteiro para o procedimento de gancho. Por fim, use [**SetWindowsHookEx**](/windows/win32/api/winuser/nf-winuser-setwindowshookexa) para instalar o endereço do procedimento de gancho na cadeia de gancho apropriada. **SetWindowsHookEx** passa o identificador de módulo, um ponteiro para o ponto de entrada de procedimento de gancho e 0 para o identificador de thread, indicando que o procedimento de gancho deve ser associado a todos os threads na mesma área de trabalho que o thread de chamada. Essa sequência é mostrada no exemplo a seguir.
 
 ``` syntax
 HOOKPROC hkprcSysMsg;
@@ -39,25 +39,25 @@ hhookSysMsg = SetWindowsHookEx(
                     0); 
 ```
 
-Você pode liberar um procedimento de gancho específico do thread (remova seu endereço da cadeia de gancho) chamando a função [**UnhookWindowsHookEx**](/windows/win32/api/winuser/nf-winuser-unhookwindowshookex) , especificando o identificador para o procedimento de gancho a ser liberado. Libere um procedimento de gancho assim que seu aplicativo não precisar mais dele.
+Você pode liberar um procedimento de gancho específico de thread (remover seu endereço da cadeia de ganchos) chamando a [**função UnhookWindowsHookEx,**](/windows/win32/api/winuser/nf-winuser-unhookwindowshookex) especificando o alça para o procedimento de gancho a ser liberado. Libere um procedimento de gancho assim que seu aplicativo não precisar mais dele.
 
-Você pode liberar um procedimento de gancho global usando [**UnhookWindowsHookEx**](/windows/win32/api/winuser/nf-winuser-unhookwindowshookex), mas essa função não libera a DLL que contém o procedimento de gancho. Isso ocorre porque os procedimentos de gancho global são chamados no contexto do processo de cada aplicativo na área de trabalho, causando uma chamada implícita à função [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) para todos esses processos. Como uma chamada para a função [**FreeLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-freelibrary) não pode ser feita para outro processo, não há nenhuma maneira de liberar a dll. O sistema eventualmente libera a DLL depois que todos os processos explicitamente vinculados à DLL tiverem terminado ou chamado **FreeLibrary** e todos os processos que chamaram o procedimento de gancho retomaram o processamento fora da dll.
+Você pode liberar um procedimento de gancho global usando [**UnhookWindowsHookEx,**](/windows/win32/api/winuser/nf-winuser-unhookwindowshookex)mas essa função não libera a DLL que contém o procedimento de gancho. Isso porque os procedimentos de gancho global são chamados no contexto de processo de cada aplicativo na área de trabalho, causando uma chamada implícita para a [**função LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) para todos esses processos. Como uma chamada para a [**função FreeLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-freelibrary) não pode ser feita para outro processo, não há como liberar a DLL. O sistema eventualmente libera a DLL depois que todos os processos explicitamente vinculados à DLL foram encerrados ou chamados **de FreeLibrary** e todos os processos que chamam o procedimento de gancho retomaram o processamento fora da DLL.
 
-Um método alternativo para instalar um procedimento de gancho global é fornecer uma função de instalação na DLL, juntamente com o procedimento de gancho. Com esse método, o aplicativo de instalação não precisa do identificador para o módulo de DLL. Ao vincular com a DLL, o aplicativo obtém acesso à função de instalação. A função de instalação pode fornecer o identificador do módulo DLL e outros detalhes na chamada para [**SetWindowsHookEx**](/windows/win32/api/winuser/nf-winuser-setwindowshookexa). A DLL também pode conter uma função que libera o procedimento de gancho global; o aplicativo pode chamar essa função de liberação de gancho ao terminar.
+Um método alternativo para instalar um procedimento de gancho global é fornecer uma função de instalação na DLL, juntamente com o procedimento de gancho. Com esse método, o aplicativo de instalação não precisa do handle para o módulo DLL. Ao vincular com a DLL, o aplicativo obtém acesso à função de instalação. A função de instalação pode fornecer o handle do módulo DLL e outros detalhes na chamada para [**SetWindowsHookEx.**](/windows/win32/api/winuser/nf-winuser-setwindowshookexa) A DLL também pode conter uma função que libera o procedimento de gancho global; o aplicativo pode chamar essa função de liberação de gancho ao encerrar.
 
 ## <a name="monitoring-system-events"></a>Monitorando eventos do sistema
 
-O exemplo a seguir usa uma variedade de procedimentos de gancho específicos de thread para monitorar o sistema em busca de eventos que afetam um thread. Ele demonstra como processar eventos para os seguintes tipos de procedimentos de gancho:
+O exemplo a seguir usa uma variedade de procedimentos de gancho específicos de thread para monitorar o sistema quanto a eventos que afetam um thread. Ele demonstra como processar eventos para os seguintes tipos de procedimentos de gancho:
 
--   **QU \_ CALLWNDPROC**
--   **QU \_ CBT**
--   **Depurar do qu \_**
--   **QU \_ GETMESSAGE**
--   **teclado do qu \_**
--   **\_mouse do qu**
--   **QU \_ MSGFILTER**
+-   **WH \_ CALLWNDPROC**
+-   **CBT do WH \_**
+-   **DEPURAÇÃO \_ DE WH**
+-   **WH \_ GETMESSAGE**
+-   **TECLADO \_ WH**
+-   **WH \_ MOUSE**
+-   **WH \_ MSGFILTER**
 
-O usuário pode instalar e remover um procedimento de gancho usando o menu. Quando um procedimento de gancho é instalado e um evento monitorado pelo procedimento ocorre, o procedimento grava informações sobre o evento na área do cliente da janela principal do aplicativo.
+O usuário pode instalar e remover um procedimento de gancho usando o menu . Quando um procedimento de gancho é instalado e ocorre um evento monitorado pelo procedimento, o procedimento grava informações sobre o evento na área do cliente da janela principal do aplicativo.
 
 
 ```

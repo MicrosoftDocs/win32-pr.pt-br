@@ -1,20 +1,20 @@
 ---
-description: Depuração da máquina virtual do DOS
+description: Depuração da máquina virtual dos
 ms.assetid: 031F93ED-D4C7-48F6-A158-6C5D9848A078
-title: Depuração da máquina virtual do DOS
+title: Depuração da máquina virtual dos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: aaa19a48b05fa28687d92b7c1fa5bd6cd6835f98
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 06eb6a68ee2a594c102a480b89ba52e37be2beac26dc66d574787491e0e3094d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104088896"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118404395"
 ---
-# <a name="virtual-dos-machine-debug"></a>Depuração da máquina virtual do DOS
+# <a name="virtual-dos-machine-debug"></a>Depuração da máquina virtual dos
 
 > [!Note]  
-> As funções de depuração da máquina virtual do DOS nesta seção não são mais suportadas e podem ser alteradas ou não disponíveis no futuro.
+> As funções de depuração da Máquina Virtual DOS nesta seção não têm mais suporte e podem ser alteradas ou não disponíveis no futuro.
 
  
 

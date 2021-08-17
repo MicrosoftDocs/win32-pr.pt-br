@@ -4,12 +4,12 @@ ms.assetid: 1527bea2-ec72-4532-9725-0310db68b876
 title: Enumerações WinHTTP
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 229fe5d29ea908fdee18e63e4369b91edb39f05b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f179360dfcced70f66138012c98ec454257dd38622fc64dac4391834e7820fe8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105791529"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117744047"
 ---
 # <a name="winhttp-enumerations"></a>Enumerações WinHTTP
 
@@ -20,46 +20,46 @@ O WinHTTP usa as seguintes enumerações:
 [**WinHttpRequestAutoLogonPolicy**](winhttprequestautologonpolicy.md)
 </dt> <dd>
 
-Configurações possíveis para a [política de logon automática](authentication-in-winhttp.md).
+Configurações possíveis para [a Política de Logon Automático](authentication-in-winhttp.md).
 
 </dd> <dt>
 
 [**WinHttpRequestOption**](winhttprequestoption.md)
 </dt> <dd>
 
-Opções que podem ser definidas ou recuperadas para a sessão atual do WinHTTP.
+Opções que podem ser definidas ou recuperadas para a sessão WinHTTP atual.
 
 </dd> <dt>
 
-[**\_entrada de \_ stat da solicitação WinHTTP \_**](/windows/desktop/api/winhttp/ne-winhttp-winhttp_request_stat_entry)
+[**ENTRADA DE ESTATÍSTICAS \_ DE \_ SOLICITAÇÃO WINHTTP \_**](/windows/desktop/api/winhttp/ne-winhttp-winhttp_request_stat_entry)
 </dt> <dd>
 
 Tipos de estatísticas de solicitação.
 
 </dd> <dt>
 
-[**\_entrada do \_ tempo de solicitação WinHTTP \_**](/windows/desktop/api/winhttp/ne-winhttp-winhttp_request_time_entry)
+[**ENTRADA DE HORA \_ DA \_ SOLICITAÇÃO WINHTTP \_**](/windows/desktop/api/winhttp/ne-winhttp-winhttp_request_time_entry)
 </dt> <dd>
 
-Tipos de intervalos de solicitação.
+Tipos de tempos de solicitação.
 
 </dd> <dt>
 
-[**\_tipo de \_ buffer de soquete da Web WinHTTP \_ \_**](/windows/desktop/api/winhttp/ne-winhttp-winhttp_web_socket_buffer_type)
+[**TIPO DE BUFFER DE \_ \_ SOQUETE WEB \_ WINHTTP \_**](/windows/desktop/api/winhttp/ne-winhttp-winhttp_web_socket_buffer_type)
 </dt> <dd>
 
-Tipos de buffers do WebSocket.
+Tipos de buffers WebSocket.
 
 </dd> <dt>
 
-[**\_status de \_ fechamento do soquete da Web do \_ WinHTTP \_**](/windows/desktop/api/winhttp/ne-winhttp-winhttp_web_socket_close_status)
+[**STATUS DE FECHAMENTO DO \_ \_ SOQUETE WEB \_ WINHTTP \_**](/windows/desktop/api/winhttp/ne-winhttp-winhttp_web_socket_close_status)
 </dt> <dd>
 
 Status de uma operação de fechamento do WebSocket.
 
 </dd> <dt>
 
-[**\_operação de \_ soquete da Web WinHTTP \_**](/windows/desktop/api/winhttp/ne-winhttp-winhttp_web_socket_operation)
+[**OPERAÇÃO DE SOQUETE DA WEB WINHTTP \_ \_ \_**](/windows/desktop/api/winhttp/ne-winhttp-winhttp_web_socket_operation)
 </dt> <dd>
 
 Tipo de operação WebSocket.

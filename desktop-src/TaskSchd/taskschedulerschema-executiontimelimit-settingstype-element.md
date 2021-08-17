@@ -1,9 +1,9 @@
 ---
-title: Elemento ExecutionTimeLimit (settingstype)
-description: Quantidade de tempo permitido para concluir a tarefa.
+title: Elemento ExecutionTimeLimit (settingsType)
+description: Tempo permitido para concluir a tarefa.
 ms.assetid: c42d0f42-4571-44ab-90b1-948fd7ea991b
 keywords:
-- Agendador de Tarefas do elemento ExecutionTimeLimit
+- Elemento ExecutionTimeLimit Agendador de Tarefas
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: dd86f7ae4988211fdf100f69ac82e747e9ea0f49
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f6519495cc16cdff6a30c65f75468bd676ca1f2750faedb5c632972c1affb996
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103824236"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118356412"
 ---
-# <a name="executiontimelimit-settingstype-element"></a>Elemento ExecutionTimeLimit (settingstype)
+# <a name="executiontimelimit-settingstype-element"></a>Elemento ExecutionTimeLimit (settingsType)
 
-Quantidade de tempo permitido para concluir a tarefa. O formato dessa cadeia de caracteres é PnYnMnDTnHnMnS, onde nY é o número de anos, o nM é o número de meses, nD é o número de dias, ' T' é o separador de data/hora, nH é o número de horas, nM é o número de minutos e nS é o número de segundos (por exemplo, PT5M especifica 5 minutos e P1M4DT2H5M especifica um mês, quatro dias, duas horas e cinco minutos). Para obter mais informações sobre o tipo de duração, consulte <https://go.microsoft.com/fwlink/p/?linkid=106886> . Um valor de PT0S permitirá que a tarefa seja executada indefinidamente.
+Tempo permitido para concluir a tarefa. O formato dessa cadeia de caracteres é PnYnMnDTnHnMnS, em que nY é o número de anos, nM é o número de meses, nD é o número de dias, 'T' é o separador de data/hora, nH é o número de horas, nM é o número de minutos e nS é o número de segundos (por exemplo, PT5M especifica 5 minutos e P1M4DT2H5M especifica um mês, quatro dias, duas horas e cinco minutos). Para obter mais informações sobre o tipo de duração, consulte <https://go.microsoft.com/fwlink/p/?linkid=106886> . Um valor de PT0S permitirá que a tarefa seja executado indefinidamente.
 
 ``` syntax
 <xs:element name="ExecutionTimeLimit"
@@ -31,7 +31,7 @@ Quantidade de tempo permitido para concluir a tarefa. O formato dessa cadeia de 
  />
 ```
 
-O elemento **ExecutionTimeLimit** é definido pelo tipo complexo [**settingstype**](taskschedulerschema-settingstype-complextype.md) .
+O **elemento ExecutionTimeLimit** é definido pelo tipo complexo [**settingsType.**](taskschedulerschema-settingstype-complextype.md)
 
 ## <a name="parent-element"></a>Elemento pai
 
@@ -39,15 +39,15 @@ O elemento **ExecutionTimeLimit** é definido pelo tipo complexo [**settingstype
 
 | Elemento                                                           | Derivado de                                                         | Descrição                                                                        |
 |-------------------------------------------------------------------|----------------------------------------------------------------------|------------------------------------------------------------------------------------|
-| [**Configurações**](taskschedulerschema-settings-tasktype-element.md) | [**settingstype**](taskschedulerschema-settingstype-complextype.md) | Contém as configurações que o Agendador de Tarefas usa para executar a tarefa.<br/> |
+| [**Configurações**](taskschedulerschema-settings-tasktype-element.md) | [**settingsType**](taskschedulerschema-settingstype-complextype.md) | Contém as configurações que o Agendador de Tarefas usa para executar a tarefa.<br/> |
 
 
 
 ## <a name="remarks"></a>Comentários
 
-Para desenvolvimento em C++, consulte a [**Propriedade ExecutionTimeLimit de ITaskSettings**](/windows/desktop/api/taskschd/nf-taskschd-itasksettings-get_executiontimelimit).
+Para desenvolvimento em C++, consulte [**Propriedade ExecutionTimeLimit de ITaskSettings**](/windows/desktop/api/taskschd/nf-taskschd-itasksettings-get_executiontimelimit).
 
-Para o desenvolvimento de scripts, consulte [**TaskSettings.ExecutionTimeLimit**](tasksettings-executiontimelimit.md).
+Para desenvolvimento de scripts, [**consulteTaskSettings.ExecutionTimeLimit**](tasksettings-executiontimelimit.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -55,8 +55,8 @@ Para o desenvolvimento de scripts, consulte [**TaskSettings.ExecutionTimeLimit**
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
 
 
 
@@ -64,7 +64,7 @@ Para o desenvolvimento de scripts, consulte [**TaskSettings.ExecutionTimeLimit**
 
 <dl> <dt>
 
-[Elementos do esquema de Agendador de Tarefas](task-scheduler-schema-elements.md)
+[Agendador de Tarefas de esquema](task-scheduler-schema-elements.md)
 </dt> </dl>
 
  

@@ -15,12 +15,12 @@ api_type:
 - HeaderDef
 api_location:
 - Winspool.h
-ms.openlocfilehash: ea73318db7a91fa4d422624b1c3c0c6f09d97cb0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a2b6fd8e548353dbede634d7b3bbaa08023d5e7bc2c8bc4cefbe37f7aba494ab
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105772541"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118470572"
 ---
 # <a name="printer_enum_values-structure"></a>Estrutura de valores de \_ enumeração de impressora \_
 

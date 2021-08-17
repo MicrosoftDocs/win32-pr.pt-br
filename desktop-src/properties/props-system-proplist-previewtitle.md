@@ -4,12 +4,12 @@ ms.assetid: f5ba6fb6-d3d7-4825-8a82-d767147103e7
 title: System. PropList. PreviewTitle
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 307f425d02383f07261d69e6328e44b017c557aa
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 399632707ab414ad07fafd37473cc15bc4e4f5236ef843f918c9bc8a4fb56b45
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105750121"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118465200"
 ---
 # <a name="systemproplistpreviewtitle"></a>System. PropList. PreviewTitle
 

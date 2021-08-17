@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c68e1e763a3b6d04dbcd8c8afec8d29ccc136954
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a4a74e811a3edab92a2c7a17f14f1fbd65ea8abe46176cd121e6f182621db035
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105747480"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118333032"
 ---
 # <a name="videoformat-attribute"></a>Atributo VideoFormat
 
-O atributo **VideoFormat** é um código FOURCC que identifica o formato de vídeo do item.
+O **atributo VideoFormat** é um código FourCC que identifica o formato de vídeo do item.
 
 ## <a name="applies-to"></a>Aplica-se A
 
@@ -29,7 +29,7 @@ O atributo **VideoFormat** é um código FOURCC que identifica o formato de víd
 
 ## <a name="remarks"></a>Comentários
 
-Para determinar se você pode alterar o valor desse atributo, use o método [Media. isReadOnlyItem](media-isreadonlyitem.md) .
+Para determinar se você pode alterar o valor desse atributo, use o [método Media.isReadOnlyItem.](media-isreadonlyitem.md)
 
 ## <a name="requirements"></a>Requisitos
 

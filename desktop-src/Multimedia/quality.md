@@ -3,7 +3,7 @@ title: comando de qualidade
 description: O comando de qualidade define um nível de qualidade personalizado para a compactação de dados de áudio, vídeo ou ainda de imagem. Dispositivos de vídeo digital reconhecem este comando.
 ms.assetid: cc920ec9-362c-43db-808e-b9fb59d1df6d
 keywords:
-- Multimídia do Windows de comando de qualidade
+- comando de qualidade Windows multimídia
 topic_type:
 - apiref
 api_name:
@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2de9cc61d72db541b5f06d8903d7c9dcf153ce07
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f50f019b0e89f21d792f75c13e6c8e755486009d38d242878fec3121333fb9af
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105753433"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118372321"
 ---
 # <a name="quality-command"></a>comando de qualidade
 

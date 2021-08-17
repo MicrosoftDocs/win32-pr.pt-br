@@ -1,6 +1,6 @@
 ---
 title: Usando formas predefinidas
-description: Este artigo descreve como usar formas predefinidas em VML, um recurso que foi preterido a partir do Windows Internet Explorer 9.
+description: este artigo descreve como usar formas predefinidas em VML, um recurso que foi preterido a partir do Windows Internet Explorer 9.
 ms.assetid: 9a2e8b5a-b1d0-4a73-b058-24dac1f0b655
 keywords:
 - Web Workshop, formas predefinidas
@@ -42,19 +42,19 @@ keywords:
 - Elementos de VML, arco
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b410cf288a3ba63e4c1d745fd962a445b0b220b8
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: c1f389a3a2670bd487799063df6bfcec59f28945ed09cad119fccd88e40f01b1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112407679"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117753823"
 ---
 # <a name="using-predefined-shapes"></a>Usando formas predefinidas
 
-Este tópico descreve a VML, um recurso que foi preterido a partir do Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem de VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
+este tópico descreve a VML, um recurso que foi preterido a partir do Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem de VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
 
 > [!Note]  
-> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [conteúdo arquivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obter informações, recomendações e orientações sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
+> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [conteúdo arquivado](/previous-versions/windows/internet-explorer/ie-developer/). para obter informações, recomendações e orientações sobre a versão atual do Windows Internet explorer, consulte [internet explorer developer Center](https://msdn.microsoft.com/ie/).
 
  
 
@@ -64,7 +64,7 @@ Neste tópico:
 
 -   [Rect](#roundrect)
 -   [RoundRect](#roundrect)
--   [line](#polyline)
+-   [descritos](#polyline)
 -   [múltipla](#polyline)
 -   [curva](#curve)
 -   [arco](#arc)

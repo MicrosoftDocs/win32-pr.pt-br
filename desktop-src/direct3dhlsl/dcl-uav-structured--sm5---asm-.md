@@ -54,7 +54,7 @@ A ausência do sinalizador opc significa que, se o sombreador usar instruções 
 Se o sinalizador opc estiver ausente e o sombreador não contém instruções \_ [imm \_ atomic \_ alloc](imm-atomic-alloc--sm5---asm-.md) ou [imm \_ atomic \_ consume,](imm-atomic-consume--sm5---asm-.md) um UAV vinculado ao slot (u) terá permissão para ter sido criado com o sinalizador COUNTER (o contador não seráusado por esse sombreador), nenhum sinalizador (sem contador), mas não com o sinalizador \# APPEND.
 
 > [!Note]  
-> O cs \_ 4 \_ 0 e o cs 4 1 são compatíveis com \_ \_ **\_ dcl tgsm \_** estruturado, mas não [dcl \_ tgsm \_ bruto.](dcl-tgsm-raw--sm5---asm-.md)
+> Cs \_ 4 \_ 0 e cs 4 1 dá suporte \_ a \_ **dcl \_ tgsm \_** estruturado, mas não [dcl \_ tgsm \_ bruto.](dcl-tgsm-raw--sm5---asm-.md)
 
  
 

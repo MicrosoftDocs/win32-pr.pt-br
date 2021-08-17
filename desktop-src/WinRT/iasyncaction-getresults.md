@@ -1,7 +1,7 @@
 ---
 description: Obtém o resultado de uma ação assíncrona.
 ms.assetid: E5AF357D-B1EE-4581-AEBC-6F1C89D7DBB0
-title: 'Método IAsyncAction:: GetResults'
+title: Método IAsyncAction::GetResults
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -20,7 +20,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118561048"
 ---
-# <a name="iasyncactiongetresults-method"></a>Método IAsyncAction:: GetResults
+# <a name="iasyncactiongetresults-method"></a>Método IAsyncAction::GetResults
 
 Obtém o resultado de uma ação assíncrona.
 
@@ -41,11 +41,11 @@ Esse método não tem parâmetros.
 
 Tipo: **HRESULT**
 
-Esse método sempre retorna **S \_ OK**.
+Esse método sempre retorna **S \_ OK.**
 
 ## <a name="remarks"></a>Comentários
 
-Chamar o método **GetResults** não terá efeito se a implementação atual tiver um tipo dinâmico de [**IAsyncAction**](/windows/win32/api/windows.foundation/nn-windows-foundation-iasyncaction).
+Chamar o **método GetResults** não terá nenhum efeito se a implementação atual tiver um tipo dinâmico [**de IAsyncAction.**](/windows/win32/api/windows.foundation/nn-windows-foundation-iasyncaction)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -55,7 +55,7 @@ Chamar o método **GetResults** não terá efeito se a implementação atual tiv
 |-------------------------------------|---------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 8<br/>                                                                              |
 | Servidor mínimo com suporte<br/> | Windows Server 2012<br/>                                                                    |
-| parâmetro<br/>                   | <dl> <dt>Windows. Foundation. idl</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Windows. Foundation.idl</dt> </dl> |
 
 
 

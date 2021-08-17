@@ -20,12 +20,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 7176fa1c78b9910b68d0b3c9e7ce4f7e46519020
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 90eb971716a90cc9e35d996f176835b525d74b69c755183b51e46792e2a4eeef
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105780719"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118084651"
 ---
 # <a name="apiretrievecolumnasdatetime-method-jet_sesid-jet_tableid-jet_columnid"></a>Método API. RetrieveColumnAsDateTime (JET_SESID, JET_TABLEID, JET_COLUMNID)
 
@@ -82,7 +82,7 @@ public static Nullable<DateTime> RetrieveColumnAsDateTime(
     
     O columnid a ser recuperado.
 
-#### <a name="return-value"></a>Retornar valor
+#### <a name="return-value"></a>Valor retornado
 
 Tipo: [System. Nullable](/dotnet/api/system.nullable-1)\<[DateTime](/dotnet/api/system.datetime)\>  
 Os dados recuperados da coluna como um DateTime. NULL se a coluna for nula.  

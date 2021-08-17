@@ -9,17 +9,17 @@ keywords:
 - Agendador de Tarefas, página do portal
 ms.topic: article
 ms.date: 10/18/2019
-ms.openlocfilehash: dfbfb76145e38003e7c501b98c817f4aaca3ff09
-ms.sourcegitcommit: 087843ef08ddcd8bce9ed647b610035925da2b3e
+ms.openlocfilehash: 05edababae87c760f5506d8a40d18ef8dcc59ab35fa78b692cc76b5ad3b46579
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "104084135"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118357739"
 ---
 # <a name="task-scheduler-for-developers"></a>Agendador de Tarefas para desenvolvedores
 
 > [!IMPORTANT]
-> Este tópico e os outros tópicos desta seção são para um público de desenvolvedor. Se você estiver querendo usar o componente de Agendador de Tarefas em sua capacidade como administrador ou um profissional de ti, consulte [Agendador de tarefas](/dynamics365/business-central/dev-itpro/developer/devenv-task-scheduler).
+> Este tópico e os outros tópicos desta seção são para um público de desenvolvedor. se você estiver querendo usar o componente de Agendador de Tarefas em sua capacidade como administrador ou uma Professional de ti, consulte [Agendador de Tarefas](/dynamics365/business-central/dev-itpro/developer/devenv-task-scheduler).
 
 ## <a name="about-the-task-scheduler"></a>Sobre o Agendador de Tarefas
 
@@ -50,8 +50,8 @@ O Agendador de Tarefas fornece APIs nesses formulários.
 
 O Agendador de Tarefas requer os seguintes sistemas operacionais.
 
-- Agendador de Tarefas 2,0: o cliente requer o Windows Vista ou superior. O servidor requer o Windows Server 2008 ou superior.
-- Agendador de Tarefas 1,0: o cliente requer o Windows Vista ou o Windows XP. O servidor requer o Windows Server 2008 ou o Windows Server 2003.
+- Agendador de Tarefas 2,0: o cliente requer o Windows Vista ou superior. o servidor requer o Windows server 2008 ou superior.
+- Agendador de Tarefas 1,0: o cliente requer o Windows Vista ou o Windows XP. o servidor requer Windows server 2008 ou Windows server 2003.
 
 ## <a name="in-this-section"></a>Nesta seção
 

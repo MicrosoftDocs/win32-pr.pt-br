@@ -1,7 +1,7 @@
 ---
-description: Windows O WUA (agente de atualização) usa as estruturas listadas na tabela a seguir para fornecer dados.
+description: Windows O AGENTE de Atualização (WUA) usa as estruturas listadas na tabela a seguir para fornecer dados.
 ms.assetid: 34B04199-5553-427F-B085-B1C24B709C53
-title: estruturas (Windows Update API do agente)
+title: Estruturas (Windows API do Agente de Atualização)
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: e5881174ef4539e1f6edbd23149019065fc89177491c07b00d578a7cfc8c6c98
@@ -11,9 +11,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117737920"
 ---
-# <a name="structures-windows-update-agent-api"></a>estruturas (Windows Update API do agente)
+# <a name="structures-windows-update-agent-api"></a>Estruturas (Windows API do Agente de Atualização)
 
-Windows O WUA (agente de atualização) usa as estruturas listadas na tabela a seguir para fornecer dados.
+Windows O AGENTE de Atualização (WUA) usa as estruturas listadas na tabela a seguir para fornecer dados.
 
 
 

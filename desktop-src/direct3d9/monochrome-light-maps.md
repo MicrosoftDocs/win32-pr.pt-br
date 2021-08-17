@@ -1,17 +1,17 @@
 ---
 description: Algumas placas aceleradoras 3D mais antigas não oferecem suporte à mesclagem de textura com o valor de alfa do pixel de destino.
 ms.assetid: 77d3b9fd-3232-4955-9df2-d4763d3eed6f
-title: Mapas leves monocromáticos (Direct3D 9)
+title: Mapas de luz monocromática (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c9ca63c2e7bb3ed51f1c6c5184536aa51e0a11e3
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: dac6f62aaba08ac6c8e1116a0bc5059fed3dea19da51d83b034bfae79653ed5b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105763903"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117728233"
 ---
-# <a name="monochrome-light-maps-direct3d-9"></a>Mapas leves monocromáticos (Direct3D 9)
+# <a name="monochrome-light-maps-direct3d-9"></a>Mapas de luz monocromática (Direct3D 9)
 
 Algumas placas aceleradoras 3D mais antigas não oferecem suporte à mesclagem de textura com o valor de alfa do pixel de destino. Consulte [mesclagem de textura alfa (Direct3D 9)](alpha-texture-blending.md) para obter mais informações. Em geral, esses adaptadores também não oferecem suporte à mistura de múltipla textura. Se o app for executado em um adaptador desse tipo, ele pode usar a mistura da textura de passagem múltipla para executar o mapeamento de luzes monocromáticas.
 

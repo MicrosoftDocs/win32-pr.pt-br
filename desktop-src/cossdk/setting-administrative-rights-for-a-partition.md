@@ -1,21 +1,21 @@
 ---
-description: Configurando direitos administrativos para uma partição
+description: Definindo direitos administrativos para uma partição
 ms.assetid: d38e4a63-9ff9-4acb-bb7e-d6c96644bd32
-title: Configurando direitos administrativos para uma partição
+title: Definindo direitos administrativos para uma partição
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7c421b37dd50fa21ee9cf146749ec00b0c91d98c
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 33431c5beff76e015d28b6a7e886823620126f2ed9b84db68af9a8f3b8ac1d28
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103646344"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117915819"
 ---
-# <a name="setting-administrative-rights-for-a-partition"></a>Configurando direitos administrativos para uma partição
+# <a name="setting-administrative-rights-for-a-partition"></a>Definindo direitos administrativos para uma partição
 
-Os usuários atribuídos à função de administrador do aplicativo do sistema COM+ têm permissão para criar, modificar e excluir partições COM+. Na ferramenta administrativa serviços de componentes, as funções administrativas podem ser atribuídas aos usuários expandindo a pasta **funções** do aplicativo de sistema com+.
+Os usuários atribuídos à função Administrador do Aplicativo do Sistema COM+ têm permissão para criar, modificar e excluir partições COM+. Na ferramenta administrativa Serviços de Componentes, as funções  administrativas podem ser atribuídas aos usuários expandindo a pasta Funções do Aplicativo do Sistema COM+.
 
-A partir do Windows Server 2003, o recurso de autenticação para o aplicativo de sistema COM+ inclui o valor EOAC \_ Disable \_ AAA. Esse valor, que desabilita as ativações de Activate-as-Activator (AAA), é usado na chamada [**CoInitializeSecurity**](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializesecurity) ao iniciar o aplicativo do sistema. Definir o recurso de autenticação como EOAC \_ Disable \_ AAA permite que um aplicativo executado em uma conta com privilégios (como LocalSystem) ajude a impedir que sua identidade seja usada para iniciar componentes não confiáveis.
+A partir Windows Server 2003, a funcionalidade de autenticação para o aplicativo do sistema COM+ inclui o valor EOAC \_ DISABLE \_ AAA. Esse valor, que desabilita ativações como ativador (AAA), é usado na chamada [**CoInitializeSecurity**](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializesecurity) ao iniciar o aplicativo do sistema. Definir a funcionalidade de autenticação como EOAC DISABLE AAA permite que um aplicativo executado em uma conta privilegiada \_ (como LocalSystem) ajude a impedir que sua identidade seja usada para iniciar componentes não \_ confidenciais.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
