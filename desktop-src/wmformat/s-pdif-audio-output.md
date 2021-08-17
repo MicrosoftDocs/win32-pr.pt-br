@@ -3,9 +3,9 @@ title: Saída de áudio S/PDIF
 description: Saída de áudio S/PDIF
 ms.assetid: 958c4be7-5e53-47fc-96e9-fcf182d27c55
 keywords:
-- Windows Media Format SDK, saída de áudio S/PDIF
-- SDK do Windows Media Format, suporte a áudio
-- SDK do Windows Media Format, formato de interconexão digital Sony/Philips (S/PDIF)
+- Windows SDK de formato de mídia, saída de áudio S/PDIF
+- Windows SDK do formato de mídia, suporte a áudio
+- Windows SDK do formato de mídia, formato de interconexão digital Sony/Philips (S/PDIF)
 - codecs, saída de áudio S/PDIF
 - codecs, suporte a áudio
 - codecs, formato de interconexão digital Sony/Philips (S/PDIF)
@@ -13,16 +13,16 @@ keywords:
 - S/PDIF (formato de interconexão digital Sony/Philips), saída de áudio
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b06a8fb124476660e983ecc7e04c99d0d7f5a816
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 3cd31f4f7d5057edc9e3bcde8259cb2bb62f7ff0d22601798e2a3e2181554277
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103637098"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119084463"
 ---
 # <a name="spdif-audio-output"></a>Saída de áudio S/PDIF
 
-Alguns dispositivos de áudio usam o formato de interconexão digital Sony/Philips (S/PDIF) para transportar dados de áudio. Agora você pode decodificar áudio para S/PDIF do áudio que foi codificado com o codec do Windows Media Professional.
+Alguns dispositivos de áudio usam o formato de interconexão digital Sony/Philips (S/PDIF) para transportar dados de áudio. agora você pode decodificar áudio para S/PDIF do áudio que foi codificado com o codec de Professional de mídia Windows.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -31,9 +31,9 @@ Alguns dispositivos de áudio usam o formato de interconexão digital Sony/Phili
 [**Recursos do codec**](codec-features.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

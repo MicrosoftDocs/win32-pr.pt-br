@@ -1,21 +1,21 @@
 ---
-description: O arquivo VBScript Manifestchk.vbs é uma ferramenta de validação fornecida no SDK (Software Development Kit) do Microsoft Windows que valida os arquivos de manifesto do aplicativo e do assembly.
+description: o arquivo VBScript Manifestchk.vbs é uma ferramenta de validação fornecida no SDK (Software Development Kit) do Microsoft Windows que valida os arquivos de manifesto do aplicativo e do assembly.
 ms.assetid: 8269cb92-bd3f-411f-8395-fe06ed550cc5
 title: Manifestchk.vbs
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 09aff347fbd8b6f44c4e38f123870fa5ee8df572
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 686843d1b4ab099d44a33b715f65564a12834f54ed6e8f62310df0aedbe53de1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104370688"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119142049"
 ---
 # <a name="manifestchkvbs"></a>Manifestchk.vbs
 
-O arquivo VBScript Manifestchk.vbs é uma ferramenta de validação fornecida no SDK (Software Development Kit) do Microsoft Windows que valida os arquivos de manifesto do aplicativo e do assembly.
+o arquivo VBScript Manifestchk.vbs é uma ferramenta de validação fornecida no SDK (Software Development Kit) do Microsoft Windows que valida os arquivos de manifesto do aplicativo e do assembly.
 
-A execução deste exemplo requer o Windows Script Host. Para obter mais informações sobre o Windows Script Host, consulte a seção Windows Script Host do SDK do Windows. O Windows Script Host é, na verdade, dois hosts. CScript.exe é a versão que permite executar scripts no prompt de comando. CScript.exe fornece opções de linha de comando para definir propriedades de script.
+a execução deste exemplo requer Windows Host de Script. para obter mais informações sobre Windows Host de script, consulte a seção host de script Windows do SDK do Windows. Windows O host de script é, na verdade, dois hosts. CScript.exe é a versão que permite executar scripts no prompt de comando. CScript.exe fornece opções de linha de comando para definir propriedades de script.
 
 O formato de linha de comando é o seguinte:
 
@@ -41,7 +41,7 @@ Se o sinalizador/q não for especificado, Manifestchk.vbs exibirá informações
 Este utilitário verifica o seguinte:
 
 -   Uma linha de comando válida.
--   A versão 3 do MSXML está instalada.
+-   se o MSXML versão 3 está instalado.
 -   Se o manifesto usa XML bem formado.
 -   O manifesto concorda com o esquema fornecido. Observe que Manifestchk.vbs verifica o arquivo de manifesto com base apenas no que é especificado no esquema fornecido. Para obter um exemplo de um esquema de manifesto, consulte o [esquema do arquivo de manifesto](manifest-file-schema.md).
 

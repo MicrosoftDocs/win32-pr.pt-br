@@ -13,7 +13,7 @@ ms.locfileid: "119128778"
 ---
 # <a name="debugging-compiled-visual-basic-components"></a>Depurando componentes Visual Basic compilados
 
-Considerando que, em muitos casos, você poderá depurar apenas uma parte da funcionalidade do componente no ambiente do Microsoft Visual Basic, haverá situações em que você precisará depurar componentes compilados com Visual Basic depois que eles foram compilados. Como o Visual Basic ambiente não habilita isso, você deve usar o ambiente Microsoft Visual C++ ambiente.
+Considerando que, em muitos casos, você poderá depurar apenas uma parte da funcionalidade do componente no ambiente do Microsoft Visual Basic, haverá situações em que você precisará depurar componentes compilados com Visual Basic depois que eles foram compilados. Como o Visual Basic ambiente não habilita isso, você deve usar o Microsoft Visual C++ ambiente.
 
 **Para depurar um Visual Basic no ambiente de Visual C++**
 
@@ -23,7 +23,7 @@ Considerando que, em muitos casos, você poderá depurar apenas uma parte da fun
 
 3.  Na caixa **de diálogo Project,** clique em **Opções**.
 
-4.  Na caixa de **Project propriedades,**  na guia Compilar, clique em  **Compilar** em Código Nativo e Sem Otimização e marque a caixa de seleção Criar Informações **de Depuração** Simbólicas .
+4.  Na caixa de **Project propriedades,** na  guia Compilar , clique em  **Compilar** em Código Nativo e Sem Otimização e marque a caixa de seleção Criar Informações **de Depuração** Simbólicas .
 
 5.  Clique **em OK** e em **OK** novamente para compilar seu projeto.
 
@@ -38,9 +38,9 @@ Considerando que, em muitos casos, você poderá depurar apenas uma parte da fun
 
 8.  No menu **Arquivo,** clique em **Abrir Workspace**.
 
-9.  Na caixa **de diálogo Abrir Workspace,** de definido Arquivos do **Tipo** como Todos os **arquivos( . \* \* )**, selecione o componente compilado e clique em **Abrir**.
+9.  Na caixa **de diálogo Abrir Workspace,** de definir Arquivos do **Tipo** como Todos os **arquivos( \* . \* )**, selecione o componente compilado e clique em **Abrir**.
 
-10. No **menu** Arquivo, clique em Abrir **(não** Abrir **Workspace)** e abra o módulo Visual Basic (.bas), o formulário (.frm) ou a classe (.cls) que você deseja depurar.
+10. No menu **Arquivo,** clique em Abrir **(não** Abrir **Workspace)** e abra o módulo Visual Basic (.bas), o formulário (.frm) ou a classe (.cls) que você deseja depurar.
 
 11. No menu **Project,** clique **em Configurações**.
 

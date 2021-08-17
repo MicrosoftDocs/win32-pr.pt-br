@@ -1,9 +1,9 @@
 ---
-title: Função D3DX_R8G8B8A8_UNORM_to_FLOAT4
-description: Desempacota \_ o formato dxgi \_ R8G8B8A8 \_ UNORM dados do sombreador para um XMFLOAT4. | Função D3DX_R8G8B8A8_UNORM_to_FLOAT4
+title: D3DX_R8G8B8A8_UNORM_to_FLOAT4 função
+description: Desempacotar dados do sombreador UNORM DXGI \_ FORMAT \_ R8G8B8A8 \_ para um XMFLOAT4. | D3DX_R8G8B8A8_UNORM_to_FLOAT4 função
 ms.assetid: 94430f29-4872-4ecd-99b9-72f3b77c47f2
 keywords:
-- Função D3DX_R8G8B8A8_UNORM_to_FLOAT4 HLSL
+- D3DX_R8G8B8A8_UNORM_to_FLOAT4 função HLSL
 topic_type:
 - apiref
 api_name:
@@ -21,9 +21,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118793452"
 ---
-# <a name="d3dx_r8g8b8a8_unorm_to_float4-function"></a>D3DX \_ R8G8B8A8 \_ UNORM \_ \_ FLOAT4 function
+# <a name="d3dx_r8g8b8a8_unorm_to_float4-function"></a>Função D3DX \_ R8G8B8A8 \_ UNORM \_ para \_ FLOAT4
 
-Desempacota \_ o formato dxgi \_ R8G8B8A8 \_ UNORM dados do sombreador para um XMFLOAT4.
+Desempacotar dados do sombreador UNORM DXGI \_ FORMAT \_ R8G8B8A8 \_ para um XMFLOAT4.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,13 +40,13 @@ XMFLOAT4 D3DX_R8G8B8A8_UNORM_to_FLOAT4(
 *packedInput* 
 </dt> <dd>
 
-Os dados do sombreador embalado.
+Os dados de sombreador empacotados.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor retornado
 
-Os dados do sombreador desempacotado.
+Os dados do sombreador desempacodados.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,7 +54,7 @@ Os dados do sombreador desempacotado.
 
 | Requisito | Valor |
 |-------------------|--------------------------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>D3DX \_ DXGIFormatConvert. inl</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>D3DX \_ DXGIFormatConvert.inl</dt> </dl> |
 
 
 
@@ -65,7 +65,7 @@ Os dados do sombreador desempacotado.
 [Funções](format-conversion-functions.md)
 </dt> <dt>
 
-[Descompactando e empacotando o \_ formato dxgi para a edição de imagem In-Place](dx-graphics-hlsl-unpacking-packing-dxgi-format.md)
+[Desempacotar e empacotar formato DXGI \_ para In-Place edição de imagem](dx-graphics-hlsl-unpacking-packing-dxgi-format.md)
 </dt> </dl>
 
  

@@ -1,9 +1,9 @@
 ---
-title: Mensagem de TB_SETHOTITEM (commctrl. h)
-description: TB_SETHOTITEM mensagem – define o item ativo em uma barra de ferramentas.
+title: TB_SETHOTITEM mensagem (Commctrl.h)
+description: TB_SETHOTITEM mensagem – define o item quente em uma barra de ferramentas.
 ms.assetid: 15005741-29d2-48c6-b5f0-15178a49b917
 keywords:
-- controles de Windows de mensagem de TB_SETHOTITEM
+- TB_SETHOTITEM controles Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -21,9 +21,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119318836"
 ---
-# <a name="tb_sethotitem-message"></a>TB de \_ mensagem SETHOTITEM
+# <a name="tb_sethotitem-message"></a>Mensagem \_ TB SETHOTITEM
 
-Define o item ativo em uma barra de ferramentas.
+Define o item quente em uma barra de ferramentas.
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -32,7 +32,7 @@ Define o item ativo em uma barra de ferramentas.
 *wParam* 
 </dt> <dd>
 
-Índice do item que se tornará quente. Se esse valor for-1, nenhum dos itens será quente.
+Índice do item que ficará quente. Se esse valor for -1, nenhum dos itens ficará quente.
 
 </dd> <dt>
 
@@ -41,11 +41,11 @@ Define o item ativo em uma barra de ferramentas.
 
 ## <a name="return-value"></a>Valor retornado
 
-Retorna o índice do item ativo anterior, ou-1 se não houver nenhum item ativo.
+Retorna o índice do item quente anterior ou -1 se não houver nenhum item quente.
 
 ## <a name="remarks"></a>Comentários
 
-O comportamento dessa mensagem não é definido para barras de ferramentas que não têm o estilo [**\_ simples TBSTYLE**](toolbar-control-and-button-styles.md) .
+O comportamento dessa mensagem não está definido para barras de ferramentas que não têm o [**estilo TBSTYLE \_ FLAT.**](toolbar-control-and-button-styles.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -53,9 +53,9 @@ O comportamento dessa mensagem não é definido para barras de ferramentas que n
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

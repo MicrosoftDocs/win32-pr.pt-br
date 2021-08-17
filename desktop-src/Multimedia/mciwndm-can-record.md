@@ -1,9 +1,9 @@
 ---
-title: Mensagem de MCIWNDM_CAN_RECORD (VFW. h)
-description: O MCIWNDM \_ pode \_ registrar a mensagem determina se um dispositivo MCI dá suporte à gravação. Você pode enviar essa mensagem explicitamente ou usando a macro MCIWndCanRecord.
+title: MCIWNDM_CAN_RECORD mensagem (Vfw.h)
+description: A mensagem MCIWNDM \_ CAN RECORD determina se um dispositivo \_ MCI dá suporte à gravação. Você pode enviar essa mensagem explicitamente ou usando a macro MCIWndCanRecord.
 ms.assetid: b5a789fa-6a88-487d-a374-8f4798ee5a62
 keywords:
-- mensagem de MCIWNDM_CAN_RECORD Windows multimídia
+- MCIWNDM_CAN_RECORD mensagem Windows Multimídia
 topic_type:
 - apiref
 api_name:
@@ -21,9 +21,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119429646"
 ---
-# <a name="mciwndm_can_record-message"></a>MCIWNDM \_ pode \_ registrar a mensagem
+# <a name="mciwndm_can_record-message"></a>Mensagem MCIWNDM \_ CAN \_ RECORD
 
-O **MCIWNDM \_ pode \_ registrar** a mensagem determina se um dispositivo MCI dá suporte à gravação. Você pode enviar essa mensagem explicitamente ou usando a macro [**MCIWndCanRecord**](/windows/desktop/api/Vfw/nf-vfw-mciwndcanrecord) .
+A **mensagem MCIWNDM \_ CAN \_ RECORD** determina se um dispositivo MCI dá suporte à gravação. Você pode enviar essa mensagem explicitamente ou usando a macro [**MCIWndCanRecord.**](/windows/desktop/api/Vfw/nf-vfw-mciwndcanrecord)
 
 
 ```C++
@@ -36,7 +36,7 @@ lParam = 0;
 
 ## <a name="return-value"></a>Valor Retornado
 
-Retornará **true** se o dispositivo der suporte à gravação ou **false** .
+Retornará **TRUE se** o dispositivo for compatível com gravação ou **FALSE** caso contrário.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -46,7 +46,7 @@ Retornará **true** se o dispositivo der suporte à gravação ou **false** .
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                       |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                             |
-| Cabeçalho<br/>                   | <dl> <dt>VFW. h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Vfw.h</dt> </dl> |
 
 
 

@@ -13,12 +13,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b540ffd87d4350a323577ff5fa317e94f9271f2d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e0ec88eaed682fd16fecb717b851b902d5ba52ce08d5360aa78b881a4b8cb4f3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104499394"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119024194"
 ---
 # <a name="wm_adsprop_sheet_create-message"></a>\_ \_ Página \_ criar mensagem do WM ADSPROP
 
@@ -65,7 +65,7 @@ Não usado. Deve ser **NULL**.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O valor de retorno para essa mensagem é sempre zero.
 

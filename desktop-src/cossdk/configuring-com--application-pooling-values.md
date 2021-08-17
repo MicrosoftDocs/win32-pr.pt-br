@@ -1,7 +1,7 @@
 ---
-description: Você pode usar as instruções a seguir para configurar os valores do pool de aplicativos do COM+ para seu aplicativo COM+.
+description: Você pode usar as instruções a seguir para configurar valores de pool de aplicativos COM+ para seu aplicativo COM+.
 ms.assetid: faba5cb7-745e-4fdf-a3e0-62132da4a843
-title: Configurando valores do pool de aplicativos COM+
+title: Configurando valores de pool de aplicativos COM+
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 25d3407cd644b68cfc3ef279a9e67603aa1dc2db85302b22dbf0c6ae7219fd3b
@@ -11,28 +11,28 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119128968"
 ---
-# <a name="configuring-com-application-pooling-values"></a>Configurando valores do pool de aplicativos COM+
+# <a name="configuring-com-application-pooling-values"></a>Configurando valores de pool de aplicativos COM+
 
-Você pode usar as instruções a seguir para configurar os valores do pool de aplicativos do COM+ para seu aplicativo COM+.
+Você pode usar as instruções a seguir para configurar valores de pool de aplicativos COM+ para seu aplicativo COM+.
 
 > [!Note]  
 > Os aplicativos de biblioteca têm as propriedades de reciclagem e pooling de seu processo de host.
 
  
 
-## <a name="component-services-administrative-tool"></a>Ferramenta administrativa serviços de componentes
+## <a name="component-services-administrative-tool"></a>Ferramenta Administrativa dos Serviços de Componentes
 
 Para configurar o pool de aplicativos COM+ para um aplicativo COM+, use as seguintes etapas:
 
-1.  Na árvore de console da ferramenta administrativa serviços de componentes, clique com o botão direito do mouse no aplicativo COM+ que você deseja agrupar e clique em **Propriedades**.
+1.  Na árvore de console da ferramenta administrativa serviços de componentes, clique com o botão direito do mouse no aplicativo COM+ que você deseja que seja em pool e clique em **Propriedades**.
 
-2.  Na guia **pooling & reciclagem** , em pool de **aplicativos**, insira um valor para o **tamanho do pool**, dependendo do número de instâncias do aplicativo que você deseja executar.
+2.  Na **guia Pooling & Reciclagem,** em **Pooling** de Aplicativos , insira um valor para Tamanho do **Pool**, dependendo do número de instâncias do aplicativo que você deseja ter em execução.
 
 3.  Clique em **OK**.
 
 ## <a name="visual-basic"></a>Visual Basic
 
-a função a seguir no Visual Basic demonstra como você pode definir o valor do pool de aplicativos com+ (representado por sua propriedade ConcurrentApps) para qualquer aplicativo de servidor do com+ que você escolher. para usá-lo de Visual Basic, adicione uma referência à biblioteca de tipos de administrador do COM+.
+A função a seguir no Visual Basic demonstra como você pode definir o valor do pool de aplicativos COM+ (representado por sua propriedade ConcurrentApps) para qualquer aplicativo de servidor COM+ que você escolher. Para usá-lo Visual Basic, adicione uma referência à Biblioteca de Tipos de Administrador COM+.
 
 
 ```VB
@@ -78,7 +78,7 @@ End Function
 
 
 
-Para usar a função, forneça um valor de cadeia de caracteres para o nome do aplicativo do servidor COM+ e um valor inteiro para a configuração Desired Application pooling. o código de Visual Basic a seguir mostra como definir o valor do pool de aplicativos como 15 para o aplicativo chamado "MyApplication":
+Para usar a função , forneça um valor de cadeia de caracteres para o nome do aplicativo do servidor COM+ e um valor inteiro para a configuração de pool de aplicativos desejada. O código Visual Basic a seguir mostra como definir o valor de pooling de aplicativos como 15 para o aplicativo chamado "MyApplication":
 
 
 ```VB
@@ -94,7 +94,7 @@ End Sub
 
 ## <a name="cc"></a>C/C++
 
-A função a seguir no C++ demonstra como você pode definir o valor do pool de aplicativos COM+ (representado por sua propriedade ConcurrentApps) para qualquer aplicativo de servidor do COM+ que você escolher. O método ErrorDescription é descrito em [interpretando códigos de erro](interpreting-error-codes.md).
+A função a seguir no C++ demonstra como você pode definir o valor do pool de aplicativos COM+ (representado por sua propriedade ConcurrentApps) para qualquer aplicativo de servidor COM+ que você escolher. O método ErrorDescription é descrito em [Interpretando códigos de erro.](interpreting-error-codes.md)
 
 
 ```C++
@@ -214,7 +214,7 @@ catch(HRESULT hr) {  // Replace with specific error handling.
 
 
 
-Para usar a função, forneça um valor de cadeia de caracteres para o nome do aplicativo do servidor COM+ e um valor inteiro para a configuração Desired Application pooling. O código C++ a seguir mostra como definir o valor do pool de aplicativos como 15 para o aplicativo chamado "MyApplication":
+Para usar a função , forneça um valor de cadeia de caracteres para o nome do aplicativo do servidor COM+ e um valor inteiro para a configuração de pool de aplicativos desejada. O código C++ a seguir mostra como definir o valor de pooling de aplicativos como 15 para o aplicativo chamado "MyApplication":
 
 ``` syntax
 #define _WIN32_DCOM  // To use CoInitializeEx()
@@ -234,7 +234,7 @@ void main() {
 
 <dl> <dt>
 
-[Conceitos do pool de aplicativos COM+](com--application-pooling-concepts.md)
+[Conceitos de pool de aplicativos COM+](com--application-pooling-concepts.md)
 </dt> </dl>
 
  

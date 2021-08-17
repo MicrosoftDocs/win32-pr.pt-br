@@ -1,11 +1,11 @@
 ---
-title: Telefone-Home-Other atributo
-description: Uma lista de números de telefone home alternativos.
+title: atributo Telefone-Home-Other
+description: Uma lista de números de telefone residencial alternativos.
 ms.assetid: 502e0a9d-301c-4c2e-98c3-8efe75c8b0cf
 ms.tgt_platform: multiple
 keywords:
-- Telefone-Home-Other atributo AD Schema
-- esquema do AD do atributo otherHomePhone
+- Telefone-Home-outro esquema de AD do atributo
+- Esquema de AD do atributo otherHomePhone
 topic_type:
 - apiref
 api_name:
@@ -21,22 +21,22 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118960145"
 ---
-# <a name="phone-home-other-attribute"></a>Telefone-Home-Other atributo
+# <a name="phone-home-other-attribute"></a>atributo Telefone-Home-Other
 
-Uma lista de números de telefone home alternativos.
+Uma lista de números de telefone residencial alternativos.
 
 
 
 | Entrada | Valor |
 |-------------------|----------------------------------------------------------------------------------|
-| CN                | Telefone-Home-Other                                                                 |
-| Ldap-Display-Name | otherHomePhone                                                                   |
+| CN                | Telefone-Home-outro                                                                 |
+| LDAP-Display-Name | otherHomePhone                                                                   |
 | Tamanho              | \-                                                                               |
 | Privilégio de atualização  | Administrador de domínio ou proprietário da conta.                                           |
 | Frequência de atualização  | Quando o registro do usuário é criado e sempre que o número de telefone precisa ser alterado. |
 | Attribute-Id      | 1.2.840.113556.1.2.277                                                           |
-| System-Id-Guid    | f0f8ffa2-1191-11d0-a060-00aa006c33ed                                             |
-| Syntax            | [**String(Unicode)**](s-string-unicode.md)                                      |
+| System-ID-GUID    | f0f8ffa2-1191-11d0-a060-00aa006c33ed                                             |
+| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md)                                      |
 
 
 
@@ -58,10 +58,10 @@ Uma lista de números de telefone home alternativos.
 | ID do link                | \-                                                                 |
 | MAPI-Id                | 0x3A2F                                                             |
 | System-Only            | Falso                                                              |
-| Tem valor único       | Falso                                                              |
+| É de valor único       | Falso                                                              |
 | É indexado             | Falso                                                              |
-| No Catálogo Global      | Falso                                                              |
-| Descritor de segurança NT | O:BAG:BAD:S:                                                       |
+| No catálogo global      | Falso                                                              |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                       |
 | Range-Lower            | 1                                                                  |
 | Range-Upper            | 64                                                                 |
 | Search-Flags           | 0x00000000                                                         |
@@ -79,10 +79,10 @@ Uma lista de números de telefone home alternativos.
 | ID do link                | \-                                                                 |
 | MAPI-Id                | 0x3A2F                                                             |
 | System-Only            | Falso                                                              |
-| Tem valor único       | Falso                                                              |
+| É de valor único       | Falso                                                              |
 | É indexado             | Falso                                                              |
-| No Catálogo Global      | Falso                                                              |
-| Descritor de segurança NT | O:BAG:BAD:S:                                                       |
+| No catálogo global      | Falso                                                              |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                       |
 | Range-Lower            | 1                                                                  |
 | Range-Upper            | 64                                                                 |
 | Search-Flags           | 0x00000000                                                         |
@@ -100,10 +100,10 @@ Uma lista de números de telefone home alternativos.
 | ID do link                | \-                                                                 |
 | MAPI-Id                | 0x3A2F                                                             |
 | System-Only            | Falso                                                              |
-| Tem valor único       | Falso                                                              |
+| É de valor único       | Falso                                                              |
 | É indexado             | Falso                                                              |
-| No Catálogo Global      | Falso                                                              |
-| Descritor de segurança NT | O:BAG:BAD:S:                                                       |
+| No catálogo global      | Falso                                                              |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                       |
 | Range-Lower            | 1                                                                  |
 | Range-Upper            | 64                                                                 |
 | Search-Flags           | 0x00000000                                                         |
@@ -121,10 +121,10 @@ Uma lista de números de telefone home alternativos.
 | ID do link                | \-                                                                 |
 | MAPI-Id                | 0x3A2F                                                             |
 | System-Only            | Falso                                                              |
-| É de valor único       | Falso                                                              |
+| Tem valor único       | Falso                                                              |
 | É indexado             | Falso                                                              |
-| No catálogo global      | Falso                                                              |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                       |
+| No Catálogo Global      | Falso                                                              |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                       |
 | Range-Lower            | 1                                                                  |
 | Range-Upper            | 64                                                                 |
 | Search-Flags           | 0x00000000                                                         |
@@ -142,10 +142,10 @@ Uma lista de números de telefone home alternativos.
 | ID do link                | \-                                                                 |
 | MAPI-Id                | 0x3A2F                                                             |
 | System-Only            | Falso                                                              |
-| É de valor único       | Falso                                                              |
+| Tem valor único       | Falso                                                              |
 | É indexado             | Falso                                                              |
-| No catálogo global      | Falso                                                              |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                       |
+| No Catálogo Global      | Falso                                                              |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                       |
 | Range-Lower            | 1                                                                  |
 | Range-Upper            | 64                                                                 |
 | Search-Flags           | 0x00000000                                                         |
@@ -163,10 +163,10 @@ Uma lista de números de telefone home alternativos.
 | ID do link                | \-                                                                 |
 | MAPI-Id                | 0x3A2F                                                             |
 | System-Only            | Falso                                                              |
-| É de valor único       | Falso                                                              |
+| Tem valor único       | Falso                                                              |
 | É indexado             | Falso                                                              |
-| No catálogo global      | Falso                                                              |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                       |
+| No Catálogo Global      | Falso                                                              |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                       |
 | Range-Lower            | 1                                                                  |
 | Range-Upper            | 64                                                                 |
 | Search-Flags           | 0x00000000                                                         |

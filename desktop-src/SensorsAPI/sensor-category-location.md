@@ -4,12 +4,12 @@ ms.assetid: f82ce6da-fe2d-4931-99dc-4aeb2f0f3317
 title: SENSOR_CATEGORY_LOCATION (sensores. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ec2e9d4c8bb64b9bd8026dd5a8ab05d848a1c975
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: aea3ad5210cdcd8d8082b8963ca2e4a0c17708ec13c28546f5582f0c6cc7ab03
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105762896"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118889494"
 ---
 # <a name="sensor_category_location"></a>\_local da categoria do sensor \_
 
@@ -21,7 +21,7 @@ Essa categoria inclui os seguintes tipos de sensor definidos pela plataforma.
 
 
 
-| Tipo de sensor                                                                                                                                                                                                                                                                                                                     | Description                                                                                                                                      |
+| Tipo de sensor                                                                                                                                                                                                                                                                                                                     | Descrição                                                                                                                                      |
 |:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------|
 | <span id="SENSOR_TYPE_LOCATION_BROADCAST"></span><span id="sensor_type_location_broadcast"></span><dl> <dt>**Sensor \_ Digite \_ a \_ transmissão do local**</dt> <dt>{D26988CF-5162-4039-BB17-4C58B698E44A}</dt> </dl>                  | Sensores que transmitem informações de local usando transmissões, como televisão ou frequências de rádio. <br/>                           |
 | <span id="SENSOR_TYPE_LOCATION_DEAD_RECKONING"></span><span id="sensor_type_location_dead_reckoning"></span><dl> <dt>**Sensor \_ Local do tipo \_ \_ inativo \_ RECKONING**</dt> <dt> {1A37D538-F28B-42DA-9FCE-A9D0A2A6D829}</dt> </dl> | Sensores inativos do Reckoning. Esses sensores calculam primeiro o local atual e, em seguida, atualizam o local atual usando dados de movimento.<br/> |
@@ -43,7 +43,7 @@ Essa categoria inclui os seguintes campos de dados definidos pela plataforma.
 
 
 
-| Nome do campo de dados e PID                                                                                                                                                                                                                                                                                                                                                | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| Nome do campo de dados e PID                                                                                                                                                                                                                                                                                                                                                | Descrição                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 |:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <span id="SENSOR_DATA_TYPE_ADDRESS1"></span><span id="sensor_data_type_address1"></span><dl> <dt>**Sensor \_ Tipo de dados \_ \_ Endereço1**</dt> <dt> (PID = 23)</dt> </dl>                                                                                                  | **LPWStr do VT \_**<br/> Endereço, primeira linha.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 | <span id="SENSOR_DATA_TYPE_ADDRESS2"></span><span id="sensor_data_type_address2"></span><dl> <dt>**Sensor \_ Tipo de dados \_ \_ Endereço2**</dt> <dt> (PID = 24)</dt> </dl>                                                                                                  | **LPWStr do VT \_**<br/> Endereço, segunda linha.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
@@ -93,9 +93,9 @@ Essa categoria inclui os seguintes campos de dados definidos pela plataforma.
 
 | Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>                                           |
+| Cliente mínimo com suporte<br/> | \[somente aplicativos de área de trabalho Windows 7\]<br/>                                           |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                            |
-| parâmetro<br/>                   | <dl> <dt>Sensores. h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Sensores. h</dt> </dl> |
 
 
 

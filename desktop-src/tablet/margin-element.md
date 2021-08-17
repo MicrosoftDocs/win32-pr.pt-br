@@ -58,7 +58,7 @@ Nenhum..
 <tbody>
 <tr class="odd">
 <td><strong>Estilo</strong></td>
-<td><a href="linelayoutstyletype-simple-type.md"><strong>SimpleType LineLayoutStyleType</strong></a></td>
+<td><a href="linelayoutstyletype-simple-type.md"><strong>LineLayoutStyleType</strong></a> simpleType</td>
 <td>Obrigatório</td>
 <td>Especifica o tipo de linha a ser desenhada.</td>
 <td><ul>
@@ -73,16 +73,16 @@ Nenhum..
 </tr>
 <tr class="even">
 <td><strong>Cor</strong></td>
-<td><a href="colortype-simple-type.md"><strong>ColorType</strong></a> simpleType</td>
+<td>SimpleType de <a href="colortype-simple-type.md"><strong>ColorType</strong></a></td>
 <td>Opcional</td>
 <td>Cor do elemento.</td>
-<td>Um valor RGB hexadecimal. Corresponde à seguinte expressão regular: #[0-9a-zA-Z] {6} . Por exemplo, #4a79B5.<br/></td>
+<td>Um valor RGB hexadecimal. Corresponde à seguinte expressão regular: # [0-9A-zA-Z] {6} . Por exemplo, #4a79B5.<br/></td>
 </tr>
 <tr class="odd">
 <td><strong>Tipo</strong></td>
 <td><a href="margintypetype-simple-type.md"><strong>MarginTypeType</strong></a> simpleType</td>
 <td>Opcional</td>
-<td>Indica margem esquerda ou direita.</td>
+<td>Indica a margem esquerda ou direita.</td>
 <td><ul>
 <li>Esquerda</li>
 <li>Direita</li>
@@ -108,9 +108,9 @@ Nenhum..
 
 |  Elemento     | Valor                                                     |
 |--------------|-----------------------------------------------------------|
-| Tipo de elemento | [**ComplexType MarginType**](margintype-complex-type.md) |
-| Namespace    | urn:schemas-microsoft-com:tabletpc:richink                |
-| Nome do esquema  | Leitor de Diário                                            |
+| Tipo de elemento | ComplexType de [**margintype**](margintype-complex-type.md) |
+| Namespace    | urn: esquemas-Microsoft-com: Tablet: RichInk                |
+| Nome do esquema  | Leitor de diário                                            |
 
 
 

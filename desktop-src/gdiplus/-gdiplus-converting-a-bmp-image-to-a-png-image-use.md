@@ -13,7 +13,7 @@ ms.locfileid: "119467146"
 ---
 # <a name="converting-a-bmp-image-to-a-png-image"></a>Convertendo uma imagem BMP em uma imagem PNG
 
-Para salvar uma imagem em um arquivo de disco, chame o [método Save](/windows/win32/api/gdiplusheaders/nf-gdiplusheaders-image-save(inistream_inconstclsid_inconstencoderparameters)) da [**classe Image.**](/windows/win32/api/gdiplusheaders/nl-gdiplusheaders-image) O aplicativo de console a seguir carrega uma imagem BMP de um arquivo de disco, converte a imagem no formato PNG e salva a imagem convertida em um novo arquivo de disco. A função principal se baseia na função auxiliar GetEncoderClsid, que é mostrada em Recuperando o Identificador de Classe para [um Codificador](-gdiplus-retrieving-the-class-identifier-for-an-encoder-use.md).
+Para salvar uma imagem em um arquivo de disco, chame o método [Save](/windows/win32/api/gdiplusheaders/nf-gdiplusheaders-image-save(inistream_inconstclsid_inconstencoderparameters)) da classe [**Image**](/windows/win32/api/gdiplusheaders/nl-gdiplusheaders-image) . O aplicativo de console a seguir carrega uma imagem BMP de um arquivo de disco, converte a imagem no formato PNG e salva a imagem convertida em um novo arquivo de disco. A função main se baseia na função auxiliar GetEncoderClsid, que é mostrada na [recuperação do identificador de classe de um codificador](-gdiplus-retrieving-the-class-identifier-for-an-encoder-use.md).
 
 
 ```

@@ -4,12 +4,12 @@ ms.assetid: 673fb4d0-7b6f-44fe-bfd6-1962e14ccdf5
 title: Tabela de arquivos mestre (notas do desenvolvedor)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9ae8656a44b6dadd7d4ff601ddc64623935f5881
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: ded28a9655c6d3cbba21449b15bd70cf5a24b17e3864dc1b525cb5f6e4e32fca
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103920148"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118955745"
 ---
 # <a name="master-file-table"></a>Tabela de arquivos mestre
 

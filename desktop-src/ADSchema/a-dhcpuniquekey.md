@@ -1,11 +1,11 @@
 ---
-title: Atributo dhcp-Unique-Key
-description: O atributo dhcp-Unique-Key não é usado no momento.
+title: atributo DHCP-Unique-Key
+description: O atributo DHCP-Unique-key não está sendo usado no momento.
 ms.assetid: 5b627db8-cdda-4fd4-9c21-a996df51ddac
 ms.tgt_platform: multiple
 keywords:
-- Esquema do AD do atributo dhcp-Unique-Key
-- Esquema do AD do atributo dhcpUniqueKey
+- DHCP-atributo de chave exclusiva-esquema do AD
+- Esquema de AD do atributo dhcpUniqueKey
 topic_type:
 - apiref
 api_name:
@@ -21,21 +21,21 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118961705"
 ---
-# <a name="dhcp-unique-key-attribute"></a>Atributo dhcp-Unique-Key
+# <a name="dhcp-unique-key-attribute"></a>atributo DHCP-Unique-Key
 
-O **atributo dhcp-Unique-Key** não é usado no momento.
+O atributo **DHCP-Unique-Key** não está sendo usado no momento.
 
 
 
 | Entrada | Valor |
 |-------------------|--------------------------------------|
-| CN                | dhcp-Unique-Key                      |
-| Ldap-Display-Name | dhcpUniqueKey                        |
+| CN                | Chave exclusiva do DHCP                      |
+| LDAP-Display-Name | dhcpUniqueKey                        |
 | Tamanho              | \-                                   |
 | Privilégio de atualização  | \-                                   |
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.698               |
-| System-Id-Guid    | 963d273a-48be-11d1-a9c3-0000f80367c1 |
+| System-ID-GUID    | 963d273a-48be-11d1-a9c3-0000f80367c1 |
 | Syntax            | [**Intervalo**](s-interval.md)       |
 
 
@@ -58,10 +58,10 @@ O **atributo dhcp-Unique-Key** não é usado no momento.
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| Tem valor único       | Verdadeiro                                         |
+| É de valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
-| No Catálogo Global      | Falso                                        |
-| Descritor de segurança NT | O:BAG:BAD:S:                                 |
+| No catálogo global      | Falso                                        |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
@@ -79,10 +79,10 @@ O **atributo dhcp-Unique-Key** não é usado no momento.
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| Tem valor único       | Verdadeiro                                         |
+| É de valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
-| No Catálogo Global      | Falso                                        |
-| Descritor de segurança NT | O:BAG:BAD:S:                                 |
+| No catálogo global      | Falso                                        |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
@@ -100,10 +100,10 @@ O **atributo dhcp-Unique-Key** não é usado no momento.
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| Tem valor único       | Verdadeiro                                         |
+| É de valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
-| No Catálogo Global      | Falso                                        |
-| Descritor de segurança NT | O:BAG:BAD:S:                                 |
+| No catálogo global      | Falso                                        |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |

@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre: campo VistaColtyp. LongLong'
-title: Campo VistaColtyp. LongLong (Microsoft. ISAM. ESENT. Interop. vista)
+description: 'Saiba mais sobre: campo VistaColtyp.LongLong'
+title: Campo VistaColtyp.LongLong (Microsoft.Isam.Esent.Interop.Vista)
 TOCTitle: LongLong field
 ms:assetid: F:Microsoft.Isam.Esent.Interop.Vista.VistaColtyp.LongLong
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.vista.vistacoltyp.longlong(v=EXCHG.10)
@@ -31,12 +31,12 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119471166"
 ---
-# <a name="vistacoltyplonglong-field"></a>Campo VistaColtyp. LongLong
+# <a name="vistacoltyplonglong-field"></a>Campo VistaColtyp.LongLong
 
-Número de bits 64 assinado.
+Número de 64 bits assinado.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -61,4 +61,4 @@ public const JET_coltyp LongLong
 
 [Membros do VistaColtyp](./vistacoltyp-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)

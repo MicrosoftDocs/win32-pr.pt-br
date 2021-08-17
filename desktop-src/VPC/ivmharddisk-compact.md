@@ -63,7 +63,7 @@ Esse método pode retornar um desses valores.
 | <dl> <dt>**DISP \_ E \_ EXCEPTION**</dt> <dt>0x80020009</dt> </dl>                              | Ocorreu um erro inesperado.<br/>                                                                                                    |
 | <dl> <dt>**E \_ PONTEIRO**</dt> <dt>0x80004003</dt> </dl>                                      | O parâmetro é **NULL.**<br/>                                                                                                           |
 | <dl> <dt>**HRESULT \_ FROM \_ WIN32(ERROR \_ SHARING \_ VIOLATION)**</dt> <dt>0X80070020</dt> </dl> | A imagem de disco rígido virtual referenciada por este [**objeto IVMHardDisk**](ivmharddisk.md) está em uso.<br/>                                  |
-| <dl> <dt>**HRESULT \_ FROM \_ WIN32(ERROR \_ DISK \_ FULL)**</dt> <dt>0x80070070</dt> </dl>         | O volume do host não tem espaço suficiente para criar um arquivo temporário necessário para a compactação dessa imagem de disco rígido virtual.<br/>     |
+| <dl> <dt>**HRESULT \_ FROM \_ WIN32(ERROR \_ DISK \_ FULL)**</dt> <dt>0X80070070</dt> </dl>         | O volume do host não tem espaço suficiente para criar um arquivo temporário necessário para a compactação dessa imagem de disco rígido virtual.<br/>     |
 | <dl> <dt>**VM \_ E \_ O APLICATIVO ESTÁ \_ \_ DESLIGANDO**</dt> <dt>0XA0040209</dt> </dl>                      | A imagem do disco rígido virtual não pode ser compactada porque o aplicativo está sendo desligado.<br/>                                            |
 | <dl> <dt>**VM \_ SOMENTE \_ LEITURA \_ DE \_ ARQUIVO E**</dt> <dt>0XA004067A</dt> </dl>                         | A imagem de disco rígido virtual referenciada por este [**objeto IVMHardDisk**](ivmharddisk.md) é marcada como somente leitura.<br/>                     |
 | <dl> <dt>**VM \_ E \_ TIPO DE IMAGEM HD ERRADO \_ \_ \_ 0XA004067B**</dt> <dt></dt> </dl>                   | A imagem de disco rígido virtual referenciada por este [**objeto IVMHardDisk**](ivmharddisk.md) deve ser um tipo de imagem **vmDiskTypeDynamic.**<br/> |
@@ -87,7 +87,7 @@ Para compactar uma imagem de disco rígido de expansão dinâmica, o espaço liv
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                     |
 | Fim do suporte ao cliente<br/>    | Windows 7<br/>                                                                          |
 | Produto<br/>                  | Windows Virtual PC<br/>                                                                 |
-| parâmetro<br/>                   | <dl> <dt>VPCCOMInterfaces.h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>VPCCOMInterfaces.h</dt> </dl> |
 | IID<br/>                      | IID IVMHardDisk é definido como \_ ffa14ae6-48f5-42a4-8a22-186f2e5c7db0<br/>                |
 
 

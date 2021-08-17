@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 760ae7d40742a800556b3d62bc5a1609b89c986b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: df13ccfb0d955714984af82daaf693522ee7d61af9c608107c53dc9f5464b591
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103644611"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119001374"
 ---
 # <a name="imsrdpclientadvancedsettings3-interface"></a>Interface IMsRdpClientAdvancedSettings3
 
-Gerencia configurações avançadas do cliente. Deriva da interface [**IMsRdpClientAdvancedSettings2**](imsrdpclientadvancedsettings2.md) . Essa interface inclui métodos para recuperar e definir propriedades avançadas (opcionais) para o controle ActiveX Área de Trabalho Remota.
+Gerencia configurações avançadas do cliente. Deriva da interface [**IMsRdpClientAdvancedSettings2**](imsrdpclientadvancedsettings2.md) . essa interface inclui métodos para recuperar e definir propriedades avançadas (opcionais) para o controle de ActiveX de Área de Trabalho Remota.
 
 Para obter uma instância dessa interface, use a propriedade [**IMsTscAx:: AdvancedSettings**](imstscax-advancedsettings.md) para obter um ponteiro de interface [**IMsTscAdvancedSettings**](imstscadvancedsettings-interface.md) . Em seguida, chame [**QueryInterface**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-queryinterface(q)) no ponteiro **IMsTscAdvancedSettings** e passe **\_ IMsRdpClientAdvancedSettings3 de IID** para **QueryInterface**.
 

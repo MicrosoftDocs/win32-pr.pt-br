@@ -17,12 +17,12 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 1dca06e32962d35eed7ff52034648299ba0ddc89
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 29617a4c4f8e42fd4c6049a987c98e7edcf11d783a0d226fc9fc751d8d28c2ba
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104163870"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119119070"
 ---
 # <a name="span-idvspixenginexml_resource_idsspanxml_resource_ids-enumeration"></a><span id="vspixengine.xml_resource_ids"></span>Enumeração de IDs de \_ recurso XML \_
 
@@ -178,155 +178,155 @@ ID do recurso para a cadeia de caracteres "estêncil de face frontal" usado em d
 <span id="XML_BACK_FACE_STENCIL"></span><span id="xml_back_face_stencil"></span>**\_estêncil de \_ face de fundo XML \_**  
 ID do recurso para a cadeia de caracteres "estêncil de face traseira" usado em dados XML.
 
-<span id="XML_DEVICE1_CREATION_INFORMATION"></span><span id="xml_device1_creation_information"></span>**\_Informações de \_ criação de DEVICE1 XML \_**  
-ID do recurso para a cadeia de caracteres "informações de criação de Device1" usadas em dados XML.
+<span id="XML_DEVICE1_CREATION_INFORMATION"></span><span id="xml_device1_creation_information"></span>**INFORMAÇÕES DE CRIAÇÃO DE XML \_ DEVICE1 \_ \_**  
+ID do recurso para a cadeia de caracteres "informações de criação device1" usada em dados XML.
 
-<span id="XML_VIEWPORTS"></span><span id="xml_viewports"></span>**\_visores XML**  
-ID de recurso para cadeias de caracteres "viewports" usadas em dados XML.
+<span id="XML_VIEWPORTS"></span><span id="xml_viewports"></span>**XML \_ VIEWPORTS**  
+ID do recurso para a cadeia de caracteres "viewports" usada em dados XML.
 
-<span id="XML_SCISSOR_RECTS"></span><span id="xml_scissor_rects"></span>**retângulos de corte XML \_ \_**  
-ID de recurso para cadeia de caracteres "molas de recorte" usada em dados XML.
+<span id="XML_SCISSOR_RECTS"></span><span id="xml_scissor_rects"></span>**\_RECTS DE TESOURA \_ XML**  
+ID do recurso para "rects de tesoura" de cadeia de caracteres usada em dados XML.
 
-<span id="XML_RASTERIZER"></span><span id="xml_rasterizer"></span>**\_rasterizador XML**  
-ID de recurso da cadeia de caracteres "rasterizador" usada em dados XML.
+<span id="XML_RASTERIZER"></span><span id="xml_rasterizer"></span>**XML \_ RASTERIZER**  
+ID do recurso para a cadeia de caracteres "rasterizador" usada em dados XML.
 
-<span id="XML_SHADER_GENERAL_INFORMATION"></span><span id="xml_shader_general_information"></span>**\_informações gerais do sombreador XML \_ \_**  
-ID do recurso para cadeia de caracteres "informações gerais do sombreador" usadas em dados XML.
+<span id="XML_SHADER_GENERAL_INFORMATION"></span><span id="xml_shader_general_information"></span>**INFORMAÇÕES \_ GERAIS DO \_ SOMBREADOR \_ XML**  
+ID do recurso para a cadeia de caracteres "informações gerais do sombreador" usada em dados XML.
 
-<span id="XML_SHADER_RESOURCES"></span><span id="xml_shader_resources"></span>**\_recursos de sombreador XML \_**  
-ID de recurso da cadeia de caracteres "recursos do sombreador" usado em dados XML.
+<span id="XML_SHADER_RESOURCES"></span><span id="xml_shader_resources"></span>**RECURSOS \_ DO SOMBREADOR \_ XML**  
+ID do recurso para a cadeia de caracteres "recursos de sombreador" usada em dados XML.
 
-<span id="XML_SAMPLER_STATES"></span><span id="xml_sampler_states"></span>**\_Estados de amostra XML \_**  
-ID de recurso para cadeia de caracteres "Estados de amostra" usados em dados XML.
+<span id="XML_SAMPLER_STATES"></span><span id="xml_sampler_states"></span>**ESTADOS \_ DO SAMPLER \_ XML**  
+ID do recurso para a cadeia de caracteres "estados de amostra" usada em dados XML.
 
-<span id="XML_CONSTANT_BUFFERS"></span><span id="xml_constant_buffers"></span>**\_buffers de constantes XML \_**  
-ID de recurso para "buffers constantes" da cadeia de caracteres usada em dados XML.
+<span id="XML_CONSTANT_BUFFERS"></span><span id="xml_constant_buffers"></span>**BUFFERS \_ \_ CONSTANTES XML**  
+ID do recurso para cadeia de caracteres "buffers constantes" usados em dados XML.
 
-<span id="XML_STREAM_OUTPUT_BUFFERS"></span><span id="xml_stream_output_buffers"></span>**\_ \_ buffers de saída de fluxo XML \_**  
-ID de recurso para cadeia de caracteres "buffers de saída de fluxo" usados em dados XML.
+<span id="XML_STREAM_OUTPUT_BUFFERS"></span><span id="xml_stream_output_buffers"></span>**BUFFERS \_ DE SAÍDA DE FLUXO \_ \_ XML**  
+ID do recurso para cadeia de caracteres "buffers de saída de fluxo" usados em dados XML.
 
-<span id="XML_INPUT_LAYOUT_GENERAL_INFORMATION"></span><span id="xml_input_layout_general_information"></span>**\_ \_ informações gerais do layout de entrada XML \_ \_**  
-ID do recurso para a cadeia de caracteres "informações gerais do layout de entrada" usadas em dados XML.
+<span id="XML_INPUT_LAYOUT_GENERAL_INFORMATION"></span><span id="xml_input_layout_general_information"></span>**INFORMAÇÕES \_ GERAIS DO LAYOUT DE ENTRADA \_ \_ \_ XML**  
+ID do recurso para a cadeia de caracteres "informações gerais de layout de entrada" usada em dados XML.
 
-<span id="XML_INPUT_LAYOUTS"></span><span id="xml_input_layouts"></span>**\_layouts de entrada XML \_**  
-ID de recurso para cadeias de caracteres "layouts de entrada" usados em dados XML.
+<span id="XML_INPUT_LAYOUTS"></span><span id="xml_input_layouts"></span>**LAYOUTS \_ DE \_ ENTRADA XML**  
+ID do recurso para cadeia de caracteres "layouts de entrada" usados em dados XML.
 
-<span id="XML_VERTEX_BUFFERS"></span><span id="xml_vertex_buffers"></span>**\_buffers de vértice XML \_**  
-ID de recurso para "buffers de vértice" da cadeia de caracteres usados em dados XML.
+<span id="XML_VERTEX_BUFFERS"></span><span id="xml_vertex_buffers"></span>**BUFFERS \_ DE \_ VÉRTICE XML**  
+ID do recurso para a cadeia de caracteres "buffers de vértice" usada em dados XML.
 
-<span id="XML_INDEX_BUFFERS"></span><span id="xml_index_buffers"></span>**\_buffers de índice XML \_**  
-ID de recurso para "buffers de índice" da cadeia de caracteres usada em dados XML.
+<span id="XML_INDEX_BUFFERS"></span><span id="xml_index_buffers"></span>**BUFFERS \_ DE \_ ÍNDICE XML**  
+ID do recurso para a cadeia de caracteres "buffers de índice" usada em dados XML.
 
-<span id="XML_PRIMITIVE_TOP_GENERAL"></span><span id="xml_primitive_top_general"></span>**\_geral da \_ parte superior XML primitiva \_**  
-ID do recurso para a cadeia de caracteres "primitiva geral superior" usada em dados XML.
+<span id="XML_PRIMITIVE_TOP_GENERAL"></span><span id="xml_primitive_top_general"></span>**XML \_ PRIMITIVE \_ TOP \_ GENERAL**  
+ID do recurso para a cadeia de caracteres "primitivo superior geral" usado em dados XML.
 
-<span id="XML_BLEND_STATE"></span><span id="xml_blend_state"></span>**\_estado de mesclagem XML \_**  
-ID de recurso para a cadeia de caracteres "estado de mistura" usado em dados XML.
+<span id="XML_BLEND_STATE"></span><span id="xml_blend_state"></span>**ESTADO \_ DO BLEND \_ XML**  
+ID do recurso para a cadeia de caracteres "blend state" usada em dados XML.
 
-<span id="XML_UNORDERED_ACCESS_VIEWS"></span><span id="xml_unordered_access_views"></span>**\_exibições de acesso não ordenado XML \_ \_**  
-ID de recurso para cadeias de caracteres "exibições de acesso não ordenado" usada em dados XML.
+<span id="XML_UNORDERED_ACCESS_VIEWS"></span><span id="xml_unordered_access_views"></span>**EXIBIÇÕES DE ACESSO NÃO \_ ORGANIZADO \_ \_ XML**  
+ID do recurso para a cadeia de caracteres "exibições de acesso não organizado" usada em dados XML.
 
-<span id="XML_CLASS_INSTANCES"></span><span id="xml_class_instances"></span>**\_instâncias de classe XML \_**  
-ID de recurso para cadeia de caracteres "instâncias de classe" usadas em dados XML.
+<span id="XML_CLASS_INSTANCES"></span><span id="xml_class_instances"></span>**INSTÂNCIAS \_ DE CLASSE XML \_**  
+ID do recurso para cadeia de caracteres "instâncias de classe" usada em dados XML.
 
-<span id="XML_INSTANCE_INDEX"></span><span id="xml_instance_index"></span>**\_índice de instância XML \_**  
-ID de recurso da cadeia de caracteres "índice de instância" usada em dados XML.
+<span id="XML_INSTANCE_INDEX"></span><span id="xml_instance_index"></span>**XML \_ INSTANCE \_ INDEX**  
+ID do recurso para a cadeia de caracteres "índice de instância" usada em dados XML.
 
-<span id="XML_INSTANCE_NAME"></span><span id="xml_instance_name"></span>**\_nome da instância XML \_**  
-ID de recurso para a cadeia de caracteres "nome da instância" usada em dados XML.
+<span id="XML_INSTANCE_NAME"></span><span id="xml_instance_name"></span>**NOME \_ DA INSTÂNCIA \_ XML**  
+ID do recurso para a cadeia de caracteres "nome da instância" usada em dados XML.
 
-<span id="XML_BASE_SAMPLER"></span><span id="xml_base_sampler"></span>**\_amostra de base XML \_**  
-ID do recurso da cadeia de caracteres "base do classificador" usada em dados XML.
+<span id="XML_BASE_SAMPLER"></span><span id="xml_base_sampler"></span>**XML \_ BASE \_ SAMPLER**  
+ID do recurso para a cadeia de caracteres "amostra base" usada em dados XML.
 
-<span id="XML_BASE_TEXTURE"></span><span id="xml_base_texture"></span>**\_textura de base XML \_**  
-ID do recurso da cadeia de caracteres "textura base" usada em dados XML.
+<span id="XML_BASE_TEXTURE"></span><span id="xml_base_texture"></span>**TEXTURA \_ BASE \_ XML**  
+ID do recurso para a cadeia de caracteres "textura base" usada em dados XML.
 
-<span id="XML_BASE_CONSTANT_BUFFER_OFFSET"></span><span id="xml_base_constant_buffer_offset"></span>**\_deslocamento de \_ buffer de constante base \_ XML \_**  
-ID do recurso da cadeia de caracteres "deslocamento do buffer de constante base" usado em dados XML.
+<span id="XML_BASE_CONSTANT_BUFFER_OFFSET"></span><span id="xml_base_constant_buffer_offset"></span>**DESLOCAMENTO \_ DE BUFFER CONSTANTE BASE \_ \_ \_ XML**  
+ID do recurso para a cadeia de caracteres "deslocamento de buffer constante base" usado em dados XML.
 
-<span id="XML_CONSTANT_BUFFER"></span><span id="xml_constant_buffer"></span>**\_buffer de constantes XML \_**  
-ID de recurso para cadeia de caracteres "buffer constante" usado em dados XML.
+<span id="XML_CONSTANT_BUFFER"></span><span id="xml_constant_buffer"></span>**BUFFER \_ CONSTANTE \_ XML**  
+ID do recurso para a cadeia de caracteres "buffer constante" usado em dados XML.
 
-<span id="XML_TYPE_ID"></span><span id="xml_type_id"></span>**\_ID do tipo XML \_**  
+<span id="XML_TYPE_ID"></span><span id="xml_type_id"></span>**\_ \_ ID DO TIPO XML**  
 ID do recurso para a cadeia de caracteres "ID do tipo" usada em dados XML.
 
-<span id="XML_INSTANCE_ID"></span><span id="xml_instance_id"></span>**\_ID da instância XML \_**  
-ID de recurso da cadeia de caracteres "ID da instância" usada em dados XML.
+<span id="XML_INSTANCE_ID"></span><span id="xml_instance_id"></span>**\_ID DA INSTÂNCIA XML \_**  
+ID do recurso para a cadeia de caracteres "id da instância" usada em dados XML.
 
-<span id="XML_TYPE_NAME"></span><span id="xml_type_name"></span>**\_nome do tipo XML \_**  
-ID de recurso para a cadeia de caracteres "nome do tipo" usada em dados XML.
+<span id="XML_TYPE_NAME"></span><span id="xml_type_name"></span>**NOME \_ DO TIPO \_ XML**  
+ID do recurso para a cadeia de caracteres "nome do tipo" usada em dados XML.
 
-<span id="XML_CREATED_BY"></span><span id="xml_created_by"></span>**XML \_ criado \_ por**  
-ID de recurso para cadeia de caracteres "criado por" usado em dados XML.
+<span id="XML_CREATED_BY"></span><span id="xml_created_by"></span>**XML \_ CRIADO \_ POR**  
+ID do recurso para a cadeia de caracteres "criada por" usada em dados XML.
 
-<span id="XML_CLASS_LINKAGE"></span><span id="xml_class_linkage"></span>**\_vinculação de classe XML \_**  
-ID de recurso da cadeia de caracteres "ligação de classe" usada em dados XML.
+<span id="XML_CLASS_LINKAGE"></span><span id="xml_class_linkage"></span>**VINCULAÇÃO \_ \_ DE CLASSE XML**  
+ID do recurso para a cadeia de caracteres "vinculação de classe" usada em dados XML.
 
-<span id="XML_DESCRIPTION"></span><span id="xml_description"></span>**Descrição de XML \_**  
-ID do recurso para a cadeia de caracteres "Descrição" usada em dados XML.
+<span id="XML_DESCRIPTION"></span><span id="xml_description"></span>**DESCRIÇÃO \_ XML**  
+ID do recurso para a "descrição" da cadeia de caracteres usada em dados XML.
 
-<span id="XML_SEMANTIC_NAME"></span><span id="xml_semantic_name"></span>**\_nome SEMÂNTICO \_ XML**  
-ID de recurso para a cadeia de caracteres "nome semântico" usado em dados XML.
+<span id="XML_SEMANTIC_NAME"></span><span id="xml_semantic_name"></span>**NOME \_ \_ SEMÂNTICO XML**  
+ID do recurso para a cadeia de caracteres "nome semântico" usado em dados XML.
 
-<span id="XML_SEMANTIC_INDEX"></span><span id="xml_semantic_index"></span>**\_índice SEMÂNTICO \_ XML**  
-ID de recurso para cadeia de caracteres "índice semântico" usado em dados XML.
+<span id="XML_SEMANTIC_INDEX"></span><span id="xml_semantic_index"></span>**ÍNDICE \_ \_ SEMÂNTICO XML**  
+ID do recurso para a cadeia de caracteres "índice semântico" usado em dados XML.
 
-<span id="XML_FORMAT"></span><span id="xml_format"></span>**\_formato XML**  
-ID de recurso para cadeia de caracteres "Format" usada em dados XML.
+<span id="XML_FORMAT"></span><span id="xml_format"></span>**FORMATO \_ XML**  
+ID do recurso para a cadeia de caracteres "format" usada em dados XML.
 
-<span id="XML_INPUT_SLOT"></span><span id="xml_input_slot"></span>**\_slot de entrada XML \_**  
-ID de recurso para cadeia de caracteres "slot de entrada" usado em dados XML.
+<span id="XML_INPUT_SLOT"></span><span id="xml_input_slot"></span>**SLOT \_ DE ENTRADA \_ XML**  
+ID do recurso para a cadeia de caracteres "slot de entrada" usada em dados XML.
 
-<span id="XML_ALIGNED_BYTE_OFFSET"></span><span id="xml_aligned_byte_offset"></span>**\_deslocamento de \_ byte ALINHAdo XML \_**  
-ID do recurso da cadeia de caracteres "deslocamento de byte alinhado" usado em dados XML.
+<span id="XML_ALIGNED_BYTE_OFFSET"></span><span id="xml_aligned_byte_offset"></span>**DESLOCAMENTO \_ DE \_ BYTE ALINHADO \_ XML**  
+ID do recurso para a cadeia de caracteres "deslocamento de byte alinhado" usado em dados XML.
 
-<span id="XML_INPUT_SLOT_CLASS"></span><span id="xml_input_slot_class"></span>**\_classe de \_ slot de entrada XML \_**  
-ID de recurso da cadeia de caracteres "classe de slot de entrada" usada em dados XML.
+<span id="XML_INPUT_SLOT_CLASS"></span><span id="xml_input_slot_class"></span>**CLASSE DE \_ \_ SLOT DE ENTRADA \_ XML**  
+ID do recurso para a cadeia de caracteres "classe de slot de entrada" usada em dados XML.
 
-<span id="XML_INSTANCE_DATA_STEP_RATE"></span><span id="xml_instance_data_step_rate"></span>**\_taxa de \_ etapas de dados da instância XML \_ \_**  
-ID de recurso da cadeia de caracteres "taxa de etapas de dados da instância" usada em dados XML.
+<span id="XML_INSTANCE_DATA_STEP_RATE"></span><span id="xml_instance_data_step_rate"></span>**TAXA DE \_ ETAPA DE DADOS DA INSTÂNCIA \_ \_ \_ XML**  
+ID do recurso para a cadeia de caracteres "taxa de etapa de dados da instância" usada em dados XML.
 
-<span id="XML_ADDRESS_U"></span><span id="xml_address_u"></span>**\_endereço XML \_ U**  
-ID de recurso para a cadeia de caracteres "address u" usada em dados XML.
+<span id="XML_ADDRESS_U"></span><span id="xml_address_u"></span>**ENDEREÇO XML \_ \_ U**  
+ID do recurso para a cadeia de caracteres "address u" usada em dados XML.
 
-<span id="XML_ADDRESS_V"></span><span id="xml_address_v"></span>**\_endereço XML \_ V**  
-ID de recurso para a cadeia de caracteres "address v" usada em dados XML.
+<span id="XML_ADDRESS_V"></span><span id="xml_address_v"></span>**ENDEREÇO XML \_ \_ V**  
+ID do recurso para a cadeia de caracteres "address v" usada em dados XML.
 
-<span id="XML_ADDRESS_W"></span><span id="xml_address_w"></span>**\_endereço XML \_ W**  
-ID do recurso para a cadeia de caracteres "endereço w" usado em dados XML.
+<span id="XML_ADDRESS_W"></span><span id="xml_address_w"></span>**ENDEREÇO XML \_ \_ W**  
+ID do recurso para a cadeia de caracteres "address w" usada em dados XML.
 
-<span id="XML_MIN_LOD"></span><span id="xml_min_lod"></span>**\_LOD mín. XML \_**  
-ID de recurso da cadeia de caracteres "min LOD" usada em dados XML.
+<span id="XML_MIN_LOD"></span><span id="xml_min_lod"></span>**XML \_ MIN \_ LOD**  
+ID do recurso para a cadeia de caracteres "min lod" usada em dados XML.
 
-<span id="XML_MAX_LOD"></span><span id="xml_max_lod"></span>**\_LOD máximo de XML \_**  
-ID do recurso para a cadeia de caracteres "Max LOD" usada em dados XML.
+<span id="XML_MAX_LOD"></span><span id="xml_max_lod"></span>**XML \_ MAX \_ LOD**  
+ID do recurso para a cadeia de caracteres "max lod" usada em dados XML.
 
-<span id="XML_FILTER"></span><span id="xml_filter"></span>**\_filtro XML**  
-ID de recurso para cadeia de caracteres "filtro" usada em dados XML.
+<span id="XML_FILTER"></span><span id="xml_filter"></span>**FILTRO \_ XML**  
+ID do recurso para a cadeia de caracteres "filter" usada em dados XML.
 
-<span id="XML_MIP_SLICE"></span><span id="xml_mip_slice"></span>**\_fatia de MIP XML \_**  
-ID de recurso da cadeia de caracteres "fatia MIP" usada em dados XML.
+<span id="XML_MIP_SLICE"></span><span id="xml_mip_slice"></span>**FATIA \_ MIP \_ XML**  
+ID do recurso para a cadeia de caracteres "fatia mip" usada em dados XML.
 
-<span id="XML_MOST_DETAILED_MIP"></span><span id="xml_most_detailed_mip"></span>**\_MIP mais \_ detalhado de XML \_**  
-ID de recurso da cadeia de caracteres "MIP mais detalhado" usada em dados XML.
+<span id="XML_MOST_DETAILED_MIP"></span><span id="xml_most_detailed_mip"></span>**XML \_ \_ MIP MAIS \_ DETALHADO**  
+ID do recurso para a cadeia de caracteres "mip mais detalhada" usada em dados XML.
 
-<span id="XML_MIP_LEVELS"></span><span id="xml_mip_levels"></span>**\_níveis de MIP XML \_**  
-ID de recurso da cadeia de caracteres "níveis de MIP" usados em dados XML.
+<span id="XML_MIP_LEVELS"></span><span id="xml_mip_levels"></span>**NÍVEIS \_ DE MIP \_ XML**  
+ID do recurso para a cadeia de caracteres "níveis mip" usada em dados XML.
 
-<span id="XML_FIRST_ARRAY_SLICE"></span><span id="xml_first_array_slice"></span>**\_fatia da primeira \_ matriz \_ XML**  
-ID de recurso da cadeia de caracteres "primeira fatia da matriz" usada em dados XML.
+<span id="XML_FIRST_ARRAY_SLICE"></span><span id="xml_first_array_slice"></span>**FATIA DA \_ \_ PRIMEIRA MATRIZ \_ XML**  
+ID do recurso para a cadeia de caracteres "primeira fatia de matriz" usada em dados XML.
 
-<span id="XML_ARRAY_SIZE"></span><span id="xml_array_size"></span>**\_tamanho da matriz XML \_**  
-ID de recurso da cadeia de caracteres "tamanho da matriz" usada em dados XML.
+<span id="XML_ARRAY_SIZE"></span><span id="xml_array_size"></span>**TAMANHO DA \_ MATRIZ \_ XML**  
+ID do recurso para a cadeia de caracteres "tamanho da matriz" usada em dados XML.
 
-<span id="XML_RESOURCE"></span><span id="xml_resource"></span>**\_recurso XML**  
-ID do recurso para a cadeia de caracteres "Resource" usada em dados XML.
+<span id="XML_RESOURCE"></span><span id="xml_resource"></span>**RECURSO \_ XML**  
+ID do recurso para a cadeia de caracteres "resource" usada em dados XML.
 
-<span id="XML_RESOURCE_TYPE"></span><span id="xml_resource_type"></span>**\_tipo de recurso XML \_**  
-ID do recurso para a cadeia de caracteres "tipo de recurso" usado em dados XML.
+<span id="XML_RESOURCE_TYPE"></span><span id="xml_resource_type"></span>**TIPO \_ DE RECURSO \_ XML**  
+ID do recurso para a cadeia de caracteres "tipo de recurso" usada em dados XML.
 
-<span id="XML_ELEMENT_OFFSET"></span><span id="xml_element_offset"></span>**\_deslocamento do elemento XML \_**  
-ID do recurso para a cadeia de caracteres "deslocamento do elemento" usado em dados XML.
+<span id="XML_ELEMENT_OFFSET"></span><span id="xml_element_offset"></span>**DESLOCAMENTO \_ DE ELEMENTO \_ XML**  
+ID do recurso para a cadeia de caracteres "deslocamento de elemento" usada em dados XML.
 
 <span id="XML_ELEMENT_WIDTH"></span><span id="xml_element_width"></span>**\_largura do elemento XML \_**  
 ID do recurso para a cadeia de caracteres "largura do elemento" usada em dados XML.
@@ -478,155 +478,155 @@ ID de recurso para cadeia de caracteres "em janelas" usada em dados XML.
 <span id="XML_SWAP_EFFECT"></span><span id="xml_swap_effect"></span>**\_efeito de permuta XML \_**  
 ID do recurso da cadeia de caracteres "efeito de permuta" usado em dados XML.
 
-<span id="XML_STREAM"></span><span id="xml_stream"></span>**fluxo de XML \_**  
-ID de recurso para cadeia de caracteres "Stream" usada em dados XML.
+<span id="XML_STREAM"></span><span id="xml_stream"></span>**FLUXO \_ XML**  
+ID do recurso para a cadeia de caracteres "stream" usada em dados XML.
 
-<span id="XML_OFFSET"></span><span id="xml_offset"></span>**\_deslocamento XML**  
+<span id="XML_OFFSET"></span><span id="xml_offset"></span>**DESLOCAMENTO \_ XML**  
 ID do recurso para a cadeia de caracteres "offset" usada em dados XML.
 
-<span id="XML_TYPE"></span><span id="xml_type"></span>**\_tipo XML**  
-ID do recurso para a cadeia de caracteres "tipo" usada em dados XML.
+<span id="XML_TYPE"></span><span id="xml_type"></span>**TIPO \_ XML**  
+ID do recurso para a cadeia de caracteres "type" usada em dados XML.
 
-<span id="XML_METHOD"></span><span id="xml_method"></span>**\_método XML**  
-ID de recurso para cadeia de caracteres "método" usada em dados XML.
+<span id="XML_METHOD"></span><span id="xml_method"></span>**MÉTODO \_ XML**  
+ID do recurso para a cadeia de caracteres "method" usada em dados XML.
 
-<span id="XML_USAGE_INDEX"></span><span id="xml_usage_index"></span>**\_índice de uso XML \_**  
+<span id="XML_USAGE_INDEX"></span><span id="xml_usage_index"></span>**ÍNDICE \_ DE USO \_ XML**  
 ID do recurso para a cadeia de caracteres "índice de uso" usado em dados XML.
 
-<span id="XML_BLEND_SOURCE"></span><span id="xml_blend_source"></span>**origem do XML \_ Blend \_**  
-ID de recurso da cadeia de caracteres "fonte de mistura" usada em dados XML.
+<span id="XML_BLEND_SOURCE"></span><span id="xml_blend_source"></span>**ORIGEM DO BLEND \_ \_ XML**  
+ID do recurso para a cadeia de caracteres "blend source" usada em dados XML.
 
-<span id="XML_BLEND_DESTINATION"></span><span id="xml_blend_destination"></span>**destino do XML \_ Blend \_**  
-ID de recurso da cadeia de caracteres "destino do Blend" usada em dados XML.
+<span id="XML_BLEND_DESTINATION"></span><span id="xml_blend_destination"></span>**DESTINO \_ DO BLEND \_ XML**  
+ID do recurso para a cadeia de caracteres "blend destination" usada em dados XML.
 
-<span id="XML_BLEND_OP"></span><span id="xml_blend_op"></span>**\_operabilidade do XML Blend \_**  
-ID de recurso para a cadeia de caracteres "Blend op" usada em dados XML.
+<span id="XML_BLEND_OP"></span><span id="xml_blend_op"></span>**XML \_ BLEND \_ OP**  
+ID do recurso para a cadeia de caracteres "blend op" usada em dados XML.
 
-<span id="XML_ALPHA_BLEND_SOURCE"></span><span id="xml_alpha_blend_source"></span>**origem de mistura de XML \_ alfa \_ \_**  
-ID de recurso da cadeia de caracteres "fonte de combinação alfa" usada em dados XML.
+<span id="XML_ALPHA_BLEND_SOURCE"></span><span id="xml_alpha_blend_source"></span>**ORIGEM \_ DO BLEND ALFA \_ \_ XML**  
+ID do recurso para a cadeia de caracteres "fonte de combinação alfa" usada em dados XML.
 
-<span id="XML_ALPHA_BLEND_DEST"></span><span id="xml_alpha_blend_dest"></span>**DEST. XML \_ Alpha \_ Blend \_**  
-ID de recurso para cadeia de caracteres "Alpha Blend dest" usado em dados XML.
+<span id="XML_ALPHA_BLEND_DEST"></span><span id="xml_alpha_blend_dest"></span>**XML \_ ALPHA \_ BLEND \_ DEST**  
+ID do recurso para a cadeia de caracteres "alpha blend dest" usada em dados XML.
 
-<span id="XML_ALPHA_BLEND_OP"></span><span id="xml_alpha_blend_op"></span>**operação de mistura de XML \_ alfa \_ \_**  
-ID de recurso da cadeia de caracteres "Alpha Blend op" usada em dados XML.
+<span id="XML_ALPHA_BLEND_OP"></span><span id="xml_alpha_blend_op"></span>**XML \_ ALPHA \_ BLEND \_ OP**  
+ID do recurso para a cadeia de caracteres "alpha blend op" usada em dados XML.
 
-<span id="XML_RENDER_TARGET_WRITE_MASK"></span><span id="xml_render_target_write_mask"></span>**\_máscara de \_ gravação de destino de renderização XML \_ \_**  
-ID de recurso para cadeia de caracteres "renderizar máscara de gravação de destino" usada em dados XML.
+<span id="XML_RENDER_TARGET_WRITE_MASK"></span><span id="xml_render_target_write_mask"></span>**MÁSCARA DE \_ GRAVAÇÃO DE DESTINO DE \_ \_ RENDERIZAÇÃO \_ XML**  
+ID do recurso para a cadeia de caracteres "renderizar máscara de gravação de destino" usada em dados XML.
 
-<span id="XML_BLEND_ENABLE"></span><span id="xml_blend_enable"></span>**\_Habilitar XML Blend \_**  
-ID de recurso da cadeia de caracteres "habilitar o Blend" usado em dados XML.
+<span id="XML_BLEND_ENABLE"></span><span id="xml_blend_enable"></span>**XML \_ BLEND \_ ENABLE**  
+ID do recurso para a cadeia de caracteres "blend enable" usada em dados XML.
 
-<span id="XML_ALPHA_TO_COVERAGE_ENABLE"></span><span id="xml_alpha_to_coverage_enable"></span>**XML \_ alfa \_ para \_ habilitar a cobertura \_**  
-ID de recurso da cadeia de caracteres "alfa para habilitar a cobertura" usada em dados XML.
+<span id="XML_ALPHA_TO_COVERAGE_ENABLE"></span><span id="xml_alpha_to_coverage_enable"></span>**XML \_ ALPHA \_ TO \_ COVERAGE \_ ENABLE**  
+ID do recurso para a cadeia de caracteres "alpha to coverage enable" usada em dados XML.
 
-<span id="XML_BLEND_STATE_1"></span><span id="xml_blend_state_1"></span>**\_Estado de mesclagem XML \_ \_ 1**  
-ID do recurso da cadeia de caracteres "estado do Blend 1" usado em dados XML.
+<span id="XML_BLEND_STATE_1"></span><span id="xml_blend_state_1"></span>**XML \_ BLEND \_ STATE \_ 1**  
+ID do recurso para a cadeia de caracteres "blend state 1" usada em dados XML.
 
-<span id="XML_INDEPENDENT_BLEND_ENABLE"></span><span id="xml_independent_blend_enable"></span>**\_ \_ habilitação de Blend independente de XML \_**  
-ID de recurso da cadeia de caracteres "habilitação de combinação independente" usada em dados XML.
+<span id="XML_INDEPENDENT_BLEND_ENABLE"></span><span id="xml_independent_blend_enable"></span>**XML \_ INDEPENDENT \_ BLEND \_ ENABLE**  
+ID do recurso para a cadeia de caracteres "habilitação de mesclagem independente" usada em dados XML.
 
-<span id="XML_RENDER_TARGET_NUMBER"></span><span id="xml_render_target_number"></span>**\_número de \_ destino de renderização XML \_**  
-ID de recurso para cadeia de caracteres "número de destino de renderização" usado em dados XML.
+<span id="XML_RENDER_TARGET_NUMBER"></span><span id="xml_render_target_number"></span>**NÚMERO DE \_ DESTINO \_ DE RENDERIZAÇÃO \_ XML**  
+ID do recurso para a cadeia de caracteres "renderizar número de destino" usado em dados XML.
 
-<span id="XML_BUFFER"></span><span id="xml_buffer"></span>**\_buffer XML**  
-ID de recurso para cadeia de caracteres "buffer" usada em dados XML.
+<span id="XML_BUFFER"></span><span id="xml_buffer"></span>**XML \_ BUFFER**  
+ID do recurso para a cadeia de caracteres "buffer" usada em dados XML.
 
-<span id="XML_PRIMITIVE_TOPOLOGY"></span><span id="xml_primitive_topology"></span>**\_topologia primitiva de XML \_**  
-ID de recurso da cadeia de caracteres "topologia primitiva" usada em dados XML.
+<span id="XML_PRIMITIVE_TOPOLOGY"></span><span id="xml_primitive_topology"></span>**TOPOLOGIA \_ PRIMITIVA \_ XML**  
+ID do recurso para a cadeia de caracteres "topologia primitiva" usada em dados XML.
 
-<span id="XML_STRIDE"></span><span id="xml_stride"></span>**\_Stride XML**  
-ID de recurso para a cadeia de caracteres "Stride" usada em dados XML.
+<span id="XML_STRIDE"></span><span id="xml_stride"></span>**XML \_ STRIDE**  
+ID do recurso para cadeia de caracteres "stride" usada em dados XML.
 
-<span id="XML_TOP"></span><span id="xml_top"></span>**\_parte superior do XML**  
-ID do recurso para a cadeia de caracteres "Top" usada em dados XML.
+<span id="XML_TOP"></span><span id="xml_top"></span>**XML \_ TOP**  
+ID do recurso para a cadeia de caracteres "top" usada em dados XML.
 
-<span id="XML_RIGHT"></span><span id="xml_right"></span>**XML \_ à direita**  
-ID de recurso para cadeia de caracteres "Right" usada em dados XML.
+<span id="XML_RIGHT"></span><span id="xml_right"></span>**XML \_ RIGHT**  
+ID do recurso para a cadeia de caracteres "right" usada em dados XML.
 
-<span id="XML_BOTTOM"></span><span id="xml_bottom"></span>**\_parte inferior do XML**  
-ID de recurso para cadeia de caracteres "inferior" usada em dados XML.
+<span id="XML_BOTTOM"></span><span id="xml_bottom"></span>**XML \_ BOTTOM**  
+ID do recurso para a cadeia de caracteres "inferior" usada em dados XML.
 
-<span id="XML_LEFT"></span><span id="xml_left"></span>**XML \_ à esquerda**  
-ID de recurso para a cadeia de caracteres "Left" usada em dados XML.
+<span id="XML_LEFT"></span><span id="xml_left"></span>**XML \_ LEFT**  
+ID do recurso para a cadeia de caracteres "left" usada em dados XML.
 
-<span id="XML_TOP_LEFT_X"></span><span id="xml_top_left_x"></span>**XML \_ superior \_ esquerdo \_ X**  
-ID do recurso para a cadeia de caracteres "superior esquerda x" usada em dados XML.
+<span id="XML_TOP_LEFT_X"></span><span id="xml_top_left_x"></span>**XML \_ TOP \_ LEFT \_ X**  
+ID do recurso para a cadeia de caracteres "x superior esquerdo" usada em dados XML.
 
-<span id="XML_TOP_LEFT_Y"></span><span id="xml_top_left_y"></span>**XML \_ superior \_ esquerdo \_ Y**  
-ID de recurso da cadeia de caracteres "superior esquerda y" usada em dados XML.
+<span id="XML_TOP_LEFT_Y"></span><span id="xml_top_left_y"></span>**XML \_ TOP \_ LEFT \_ Y**  
+ID do recurso para a cadeia de caracteres "y superior esquerdo" usada em dados XML.
 
-<span id="XML_MIN_DEPTH"></span><span id="xml_min_depth"></span>**\_profundidade mínima \_ XML**  
-ID do recurso para a cadeia de caracteres "profundidade mín." usada em dados XML.
+<span id="XML_MIN_DEPTH"></span><span id="xml_min_depth"></span>**PROFUNDIDADE \_ MIN \_ XML**  
+ID do recurso para a cadeia de caracteres "min depth" usada em dados XML.
 
-<span id="XML_MAX_DEPTH"></span><span id="xml_max_depth"></span>**\_profundidade máxima de XML \_**  
+<span id="XML_MAX_DEPTH"></span><span id="xml_max_depth"></span>**PROFUNDIDADE \_ MÁXIMA DE XML \_**  
 ID do recurso para a cadeia de caracteres "profundidade máxima" usada em dados XML.
 
-<span id="XML_STENCIL_REFERENCE_VALUE"></span><span id="xml_stencil_reference_value"></span>**\_valor de \_ referência do estêncil XML \_**  
-ID do recurso para a cadeia de caracteres "valor de referência do estêncil" usado em dados XML.
+<span id="XML_STENCIL_REFERENCE_VALUE"></span><span id="xml_stencil_reference_value"></span>**VALOR \_ DE REFERÊNCIA DE \_ ESTÊNCIL \_ XML**  
+ID do recurso para a cadeia de caracteres "valor de referência de estêncil" usado em dados XML.
 
-<span id="XML_DEPTH_BUFFER"></span><span id="xml_depth_buffer"></span>**\_buffer de profundidade XML \_**  
-ID de recurso para cadeia de caracteres "buffer de profundidade" usado em dados XML.
+<span id="XML_DEPTH_BUFFER"></span><span id="xml_depth_buffer"></span>**BUFFER \_ DE PROFUNDIDADE \_ XML**  
+ID do recurso para a cadeia de caracteres "buffer de profundidade" usado em dados XML.
 
-<span id="XML_BLEND_FACTOR"></span><span id="xml_blend_factor"></span>**\_fator de mistura XML \_**  
-ID do recurso para a cadeia de caracteres "fator de mistura" usado em dados XML.
+<span id="XML_BLEND_FACTOR"></span><span id="xml_blend_factor"></span>**FATOR \_ BLEND \_ XML**  
+ID do recurso para a cadeia de caracteres "blend factor" usada em dados XML.
 
-<span id="XML_SAMPLE_MASK"></span><span id="xml_sample_mask"></span>**\_máscara de exemplo XML \_**  
-ID de recurso para cadeia de caracteres "máscara de exemplo" usada em dados XML.
+<span id="XML_SAMPLE_MASK"></span><span id="xml_sample_mask"></span>**MÁSCARA DE \_ EXEMPLO \_ XML**  
+ID do recurso para a cadeia de caracteres "máscara de exemplo" usada em dados XML.
 
-<span id="XML_DEPTH_STENCIL_STATE"></span><span id="xml_depth_stencil_state"></span>**\_estado do \_ estêncil de profundidade XML \_**  
-ID de recurso para "estado de estêncil de profundidade" da cadeia de caracteres usada em dados XML.
+<span id="XML_DEPTH_STENCIL_STATE"></span><span id="xml_depth_stencil_state"></span>**ESTADO \_ \_ DE ESTÊNCIL DE \_ PROFUNDIDADE XML**  
+ID do recurso para a cadeia de caracteres "estado de estêncil de profundidade" usado em dados XML.
 
-<span id="XML_SCISSOR_RECT"></span><span id="xml_scissor_rect"></span>**\_retângulo de tesoura XML \_**  
-ID do recurso para a cadeia de caracteres "tesoura retangular" usada em dados XML.
+<span id="XML_SCISSOR_RECT"></span><span id="xml_scissor_rect"></span>**XML \_ SCISSOR \_ RECT**  
+ID do recurso para a cadeia de caracteres "rect de tesoura" usada em dados XML.
 
-<span id="XML_SAMPLER"></span><span id="xml_sampler"></span>**\_amostra XML**  
-ID do recurso para a cadeia de caracteres "amostra" usada em dados XML.
+<span id="XML_SAMPLER"></span><span id="xml_sampler"></span>**XML \_ SAMPLER**  
+ID do recurso para a cadeia de caracteres "sampler" usada em dados XML.
 
-<span id="XML_SHADER"></span><span id="xml_shader"></span>**\_sombreador XML**  
-ID de recurso para cadeia de caracteres "Shader" usada em dados XML.
+<span id="XML_SHADER"></span><span id="xml_shader"></span>**SOMBREADOR \_ XML**  
+ID do recurso para a cadeia de caracteres "sombreador" usada em dados XML.
 
-<span id="XML_DEPTH_STENCIL_VIEW"></span><span id="xml_depth_stencil_view"></span>**\_exibição de \_ estêncil de profundidade XML \_**  
-ID do recurso para a cadeia de caracteres "exibição do estêncil de profundidade" usada em dados XML.
+<span id="XML_DEPTH_STENCIL_VIEW"></span><span id="xml_depth_stencil_view"></span>**EXIBIÇÃO \_ \_ DE ESTÊNCIL DE PROFUNDIDADE \_ XML**  
+ID do recurso para a cadeia de caracteres "exibição de estêncil de profundidade" usada em dados XML.
 
-<span id="XML_SHADER_RESOURCE_VIEW"></span><span id="xml_shader_resource_view"></span>**\_exibição de recursos do sombreador XML \_ \_**  
-ID de recurso da cadeia de caracteres "modo de exibição de recurso do sombreador" usado em dados XML.
+<span id="XML_SHADER_RESOURCE_VIEW"></span><span id="xml_shader_resource_view"></span>**EXIBIÇÃO \_ DE RECURSOS DO \_ SOMBREADOR \_ XML**  
+ID do recurso para a cadeia de caracteres "exibição de recurso do sombreador" usada em dados XML.
 
-<span id="XML_INPUT_LAYOUT"></span><span id="xml_input_layout"></span>**\_layout de entrada XML \_**  
+<span id="XML_INPUT_LAYOUT"></span><span id="xml_input_layout"></span>**LAYOUT DE \_ ENTRADA \_ XML**  
 ID do recurso para a cadeia de caracteres "layout de entrada" usado em dados XML.
 
-<span id="XML_CLASS_INSTANCE"></span><span id="xml_class_instance"></span>**\_instância da classe XML \_**  
-ID de recurso da cadeia de caracteres "instância de classe" usada em dados XML.
+<span id="XML_CLASS_INSTANCE"></span><span id="xml_class_instance"></span>**INSTÂNCIA \_ DE CLASSE \_ XML**  
+ID do recurso para a cadeia de caracteres "instância de classe" usada em dados XML.
 
-<span id="XML_STREAM_OUTPUT_BUFFER"></span><span id="xml_stream_output_buffer"></span>**\_buffer de \_ saída de fluxo XML \_**  
-ID de recurso para cadeia de caracteres "buffer de saída de fluxo" usado em dados XML.
+<span id="XML_STREAM_OUTPUT_BUFFER"></span><span id="xml_stream_output_buffer"></span>**BUFFER DE \_ SAÍDA \_ DE FLUXO \_ XML**  
+ID do recurso para cadeia de caracteres "buffer de saída de fluxo" usado em dados XML.
 
-<span id="XML_SHADER_RESOURCE"></span><span id="xml_shader_resource"></span>**\_recurso sombreador XML \_**  
-ID do recurso para a cadeia de caracteres "recurso do sombreador" usado em dados XML.
+<span id="XML_SHADER_RESOURCE"></span><span id="xml_shader_resource"></span>**RECURSO \_ DE SOMBREADOR \_ XML**  
+ID do recurso para a cadeia de caracteres "recurso de sombreador" usado em dados XML.
 
-<span id="XML_RENDER_TARGET_INSTANCE"></span><span id="xml_render_target_instance"></span>**\_instância de \_ destino de renderização XML \_**  
-ID de recurso da cadeia de caracteres "processar instância de destino" usada em dados XML.
+<span id="XML_RENDER_TARGET_INSTANCE"></span><span id="xml_render_target_instance"></span>**INSTÂNCIA \_ DE DESTINO DE \_ RENDERIZAÇÃO \_ XML**  
+ID do recurso para a cadeia de caracteres "renderizar instância de destino" usada em dados XML.
 
-<span id="XML_VERTEX"></span><span id="xml_vertex"></span>**\_vértice XML**  
-ID de recurso para cadeia de caracteres "Vertex" usada em dados XML.
+<span id="XML_VERTEX"></span><span id="xml_vertex"></span>**\_VÉRTICE XML**  
+ID do recurso para a cadeia de caracteres "vértice" usada em dados XML.
 
-<span id="XML_VERTEX_BUFFER"></span><span id="xml_vertex_buffer"></span>**\_buffer de vértice XML \_**  
-ID de recurso para cadeia de caracteres "buffer de vértice" usado em dados XML.
+<span id="XML_VERTEX_BUFFER"></span><span id="xml_vertex_buffer"></span>**BUFFER \_ DE \_ VÉRTICE XML**  
+ID do recurso para a cadeia de caracteres "buffer de vértice" usada em dados XML.
 
-<span id="XML_INSTANCE"></span><span id="xml_instance"></span>**\_instância XML**  
-ID de recurso para a cadeia de caracteres "instance" usada em dados XML.
+<span id="XML_INSTANCE"></span><span id="xml_instance"></span>**INSTÂNCIA \_ XML**  
+ID do recurso para a cadeia de caracteres "instance" usada em dados XML.
 
-<span id="XML_VIEWPORT"></span><span id="xml_viewport"></span>**\_visor XML**  
-ID do recurso para a cadeia de caracteres "visor" usada em dados XML.
+<span id="XML_VIEWPORT"></span><span id="xml_viewport"></span>**XML \_ VIEWPORT**  
+ID do recurso para a cadeia de caracteres "viewport" usada em dados XML.
 
-<span id="XML_FIRSTCONSTANT"></span><span id="xml_firstconstant"></span>**\_FIRSTCONSTANT XML**  
+<span id="XML_FIRSTCONSTANT"></span><span id="xml_firstconstant"></span>**XML \_ FIRSTCONSTANT**  
 ID do recurso para a cadeia de caracteres "firstconstant" usada em dados XML.
 
-<span id="XML_NUMCONSTANTS"></span><span id="xml_numconstants"></span>**\_NUMCONSTANTS XML**  
+<span id="XML_NUMCONSTANTS"></span><span id="xml_numconstants"></span>**XML \_ NUMCONSTANTS**  
 ID do recurso para a cadeia de caracteres "numconstants" usada em dados XML.
 
-<span id="XML_LOGIC_OP"></span><span id="xml_logic_op"></span>**\_operação lógica de XML \_**  
-ID do recurso para a cadeia de caracteres "op lógico" usada em dados XML.
+<span id="XML_LOGIC_OP"></span><span id="xml_logic_op"></span>**XML \_ LOGIC \_ OP**  
+ID do recurso para a cadeia de caracteres "operação lógica" usada em dados XML.
 
 <span id="XML_LOGICOPS_ENABLE"></span><span id="xml_logicops_enable"></span>**\_Habilitar XML LOGICOPS \_**  
 ID de recurso da cadeia de caracteres "logicops Enable" usado em dados XML.
@@ -1078,39 +1078,39 @@ ID do recurso para a cadeia de caracteres "slot do pool de blocos" usado em dado
 <span id="XML_TILE_COORDINATE"></span><span id="xml_tile_coordinate"></span>**\_coordenada de bloco XML \_**  
 ID de recurso da cadeia de caracteres "coordenada de bloco" usada em dados XML.
 
-<span id="XML_HEAP_TYPE"></span><span id="xml_heap_type"></span>**\_tipo de heap XML \_**  
-ID do recurso para a cadeia de caracteres "tipo de heap" usado em dados XML.
+<span id="XML_HEAP_TYPE"></span><span id="xml_heap_type"></span>**TIPO \_ DE HEAP \_ XML**  
+ID do recurso para a cadeia de caracteres "tipo de heap" usada em dados XML.
 
-<span id="XML_RESOURCE_USAGE"></span><span id="xml_resource_usage"></span>**\_uso de recursos XML \_**  
+<span id="XML_RESOURCE_USAGE"></span><span id="xml_resource_usage"></span>**USO \_ DE RECURSOS \_ XML**  
 ID do recurso para a cadeia de caracteres "uso de recursos" usada em dados XML.
 
-<span id="XML_RESOURCE_USAGES"></span><span id="xml_resource_usages"></span>**\_usos de recursos XML \_**  
-ID de recurso para "usos de recursos" da cadeia de caracteres usada em dados XML.
+<span id="XML_RESOURCE_USAGES"></span><span id="xml_resource_usages"></span>**USOS \_ \_ DE RECURSOS XML**  
+ID do recurso para a cadeia de caracteres "usos de recursos" usada em dados XML.
 
-<span id="XML_SUBRESOURCE"></span><span id="xml_subresource"></span>**subrecurso XML \_**  
-ID de recurso para a cadeia de caracteres "subresource" usada em dados XML.
+<span id="XML_SUBRESOURCE"></span><span id="xml_subresource"></span>**XML \_ SUBRESOURCE**  
+ID do recurso para a cadeia de caracteres "sub-recursos" usada em dados XML.
 
-<span id="XML_SUBRESOURCE_USAGE"></span><span id="xml_subresource_usage"></span>**\_uso de SUBRECURSO XML \_**  
-ID do recurso para a cadeia de caracteres "uso do subrecurso" usado em dados XML.
+<span id="XML_SUBRESOURCE_USAGE"></span><span id="xml_subresource_usage"></span>**USO \_ DE SUBRESOURCE \_ XML**  
+ID do recurso para a cadeia de caracteres "uso de sub-recursos" usada em dados XML.
 
-<span id="XML_COMPUTE_SHADER"></span><span id="xml_compute_shader"></span>**\_sombreador de computação XML \_**  
-ID do recurso para a cadeia de caracteres "Compute Shader" usado em dados XML.
+<span id="XML_COMPUTE_SHADER"></span><span id="xml_compute_shader"></span>**SOMBREADOR \_ DE \_ COMPUTAÇÃO XML**  
+ID do recurso para a cadeia de caracteres "sombreador de computação" usado em dados XML.
 
-<span id="XML_COMMAND_LIST_12"></span><span id="xml_command_list_12"></span>**\_Lista de comandos XML \_ \_ 12**  
-ID de recurso da cadeia de caracteres "lista de comandos 12" usada em dados XML.
+<span id="XML_COMMAND_LIST_12"></span><span id="xml_command_list_12"></span>**LISTA \_ DE COMANDOS XML \_ \_ 12**  
+ID do recurso para a cadeia de caracteres "lista de comandos 12" usada em dados XML.
 
-<span id="XML_PSO_RENDER_TARGET_FORMATS"></span><span id="xml_pso_render_target_formats"></span>**\_formatos de \_ destino de RENDERIZAÇÃO PSO \_ XML \_**  
-ID de recurso para cadeia de caracteres "formatos de destino de renderização PSO" usados em dados XML.
+<span id="XML_PSO_RENDER_TARGET_FORMATS"></span><span id="xml_pso_render_target_formats"></span>**FORMATOS \_ DE DESTINO DE \_ \_ RENDERIZAÇÃO PSO \_ XML**  
+ID do recurso para cadeia de caracteres "formatos de destino de renderização pso" usados em dados XML.
 
-<span id="XML_RENDER_TARGET_VIEWS"></span><span id="xml_render_target_views"></span>**\_ \_ exibições de destino de renderização XML \_**  
-ID de recurso para cadeia de caracteres "renderizar exibições de destino" usadas em dados XML.
+<span id="XML_RENDER_TARGET_VIEWS"></span><span id="xml_render_target_views"></span>**EXIBIÇÕES \_ DE \_ DESTINO DE RENDERIZAÇÃO \_ XML**  
+ID do recurso para a cadeia de caracteres "renderizar exibições de destino" usada em dados XML.
 
-<span id="XML_SHADER_RESOURCE_VIEWS"></span><span id="xml_shader_resource_views"></span>**\_ \_ exibições de recursos do SOMBREAdor XML \_**  
-ID do recurso para cadeia de caracteres "exibições de recursos do sombreador" usadas em dados XML.
+<span id="XML_SHADER_RESOURCE_VIEWS"></span><span id="xml_shader_resource_views"></span>**EXIBIÇÕES \_ DE RECURSOS DO \_ SOMBREADOR \_ XML**  
+ID do recurso para a cadeia de caracteres "exibições de recurso do sombreador" usada em dados XML.
 
 ## <a name="requirements"></a>Requisitos
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>parâmetro</p></td><td>Vspixengine. h</td></tr></tbody></table>
+<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Cabeçalho</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
  
 

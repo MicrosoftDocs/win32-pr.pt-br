@@ -1,11 +1,11 @@
 ---
-title: Atributo Description (Esquema do AD)
-description: Contém a descrição a ser exibida para um objeto . Esse valor é restrito como com valor único para compatibilidade com backward em alguns casos, mas tem permissão para ter valores múltiplos em outros. Consulte Observações.
+title: Atributo de descrição (esquema do AD)
+description: Contém a descrição a ser exibida para um objeto. Esse valor é restrito como de valor único para compatibilidade com versões anteriores em alguns casos, mas pode ter vários valores em outros. Consulte Observações.
 ms.assetid: 97dad871-5db0-4d1e-b931-1b053559f9c2
 ms.tgt_platform: multiple
 keywords:
-- Atributo de descrição Esquema do AD
-- atributo description AD Schema
+- Atributo de descrição esquema do AD
+- atributo de descrição esquema do AD
 topic_type:
 - apiref
 api_name:
@@ -21,22 +21,22 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118961720"
 ---
-# <a name="description-attribute-ad-schema"></a>Atributo Description (Esquema do AD)
+# <a name="description-attribute-ad-schema"></a>Atributo de descrição (esquema do AD)
 
-Contém a descrição a ser exibida para um objeto . Esse valor é restrito como com valor único para compatibilidade com backward em alguns casos, mas tem permissão para ter valores múltiplos em outros. Consulte Observações.
+Contém a descrição a ser exibida para um objeto. Esse valor é restrito como de valor único para compatibilidade com versões anteriores em alguns casos, mas pode ter vários valores em outros. Consulte Observações.
 
 
 
 | Entrada | Valor |
 |-------------------|---------------------------------------------|
 | CN                | Descrição                                 |
-| Ldap-Display-Name | descrição                                 |
+| LDAP-Display-Name | descrição                                 |
 | Tamanho              | \-                                          |
 | Privilégio de atualização  | Administrador de domínio ou proprietário da conta.      |
-| Frequência de atualização  | Sempre que a descrição precisar ser mudada.   |
+| Frequência de atualização  | Sempre que a descrição precisar ser alterada.   |
 | Attribute-Id      | 2.5.4.13                                    |
-| System-Id-Guid    | bf967950-0de6-11d0-a285-00aa003049e2        |
-| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
+| System-ID-GUID    | bf967950-0de6-11d0-a285-00aa003049e2        |
+| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
 
 
 
@@ -44,7 +44,7 @@ Contém a descrição a ser exibida para um objeto . Esse valor é restrito como
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**Adam**](#adam)
+-   [**ADAM**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -59,15 +59,15 @@ Contém a descrição a ser exibida para um objeto . Esse valor é restrito como
 | ID do link                | \-                                                                           |
 | MAPI-Id                | 0x806F                                                                       |
 | System-Only            | Falso                                                                        |
-| Tem valor único       | Falso                                                                        |
+| É de valor único       | Falso                                                                        |
 | É indexado             | Falso                                                                        |
-| No Catálogo Global      | Verdadeiro                                                                         |
-| Descritor de segurança NT | O:BAG:BAD:S:                                                                 |
+| No catálogo global      | Verdadeiro                                                                         |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                 |
 | Range-Lower            | 0                                                                            |
 | Range-Upper            | 1024                                                                         |
 | Search-Flags           | 0x00000000                                                                   |
 | System-Flags           | 0x00000010                                                                   |
-| Classes usadas em        | [**Domínio Sam**](c-samdomain.md)<br/> [**Início**](c-top.md)<br/> |
+| Classes usadas em        | [**Sam-domínio**](c-samdomain.md)<br/> [**Início**](c-top.md)<br/> |
 
 
 
@@ -80,19 +80,19 @@ Contém a descrição a ser exibida para um objeto . Esse valor é restrito como
 | ID do link                | \-                                                                                                                                         |
 | MAPI-Id                | 0x806F                                                                                                                                     |
 | System-Only            | Falso                                                                                                                                      |
-| Tem valor único       | Falso                                                                                                                                      |
+| É de valor único       | Falso                                                                                                                                      |
 | É indexado             | Falso                                                                                                                                      |
-| No Catálogo Global      | Verdadeiro                                                                                                                                       |
-| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                                               |
+| No catálogo global      | Verdadeiro                                                                                                                                       |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                               |
 | Range-Lower            | 0                                                                                                                                          |
 | Range-Upper            | 1024                                                                                                                                       |
 | Search-Flags           | 0x00000000                                                                                                                                 |
 | System-Flags           | 0x00000010                                                                                                                                 |
-| Classes usadas em        | [**groupOfUniqueNames**](c-groupofuniquenames.md)<br/> [**Domínio Sam**](c-samdomain.md)<br/> [**Início**](c-top.md)<br/> |
+| Classes usadas em        | [**groupOfUniqueNames**](c-groupofuniquenames.md)<br/> [**Sam-domínio**](c-samdomain.md)<br/> [**Início**](c-top.md)<br/> |
 
 
 
-## <a name="adam"></a>Adam
+## <a name="adam"></a>ADAM
 
 
 
@@ -101,10 +101,10 @@ Contém a descrição a ser exibida para um objeto . Esse valor é restrito como
 | ID do link                | \-                              |
 | MAPI-Id                | 0x806F                          |
 | System-Only            | Falso                           |
-| Tem valor único       | Falso                           |
+| É de valor único       | Falso                           |
 | É indexado             | Falso                           |
-| No Catálogo Global      | Verdadeiro                            |
-| Descritor de segurança NT | O:BAG:BAD:S:                    |
+| No catálogo global      | Verdadeiro                            |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
 | Range-Lower            | 0                               |
 | Range-Upper            | 1024                            |
 | Search-Flags           | 0x00000000                      |
@@ -122,15 +122,15 @@ Contém a descrição a ser exibida para um objeto . Esse valor é restrito como
 | ID do link                | \-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 | MAPI-Id                | 0x806F                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 | System-Only            | Falso                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
-| Tem valor único       | Falso                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| É de valor único       | Falso                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 | É indexado             | Falso                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
-| No Catálogo Global      | Verdadeiro                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
-| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| No catálogo global      | Verdadeiro                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 | Range-Lower            | 0                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 | Range-Upper            | 1024                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 | Search-Flags           | 0x00000000                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 | System-Flags           | 0x00000010                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| Classes usadas em        | [**groupOfUniqueNames**](c-groupofuniquenames.md)<br/> [**Domínio Sam**](c-samdomain.md)<br/> [**Início**](c-top.md)<br/> [**posixAccount**](c-posixaccount.md)<br/> [**shadowAccount**](c-shadowaccount.md)<br/> [**posixGroup**](c-posixgroup.md)<br/> [**ipService**](c-ipservice.md)<br/> [**ipProtocol**](c-ipprotocol.md)<br/> [**oncRpc**](c-oncrpc.md)<br/> [**ipHost**](c-iphost.md)<br/> [**ipNetwork**](c-ipnetwork.md)<br/> [**nisNetgroup**](c-nisnetgroup.md)<br/> [**Nismap**](c-nismap.md)<br/> [**nisObject**](c-nisobject.md)<br/> |
+| Classes usadas em        | [**groupOfUniqueNames**](c-groupofuniquenames.md)<br/> [**Sam-domínio**](c-samdomain.md)<br/> [**Início**](c-top.md)<br/> [**posixAccount**](c-posixaccount.md)<br/> [**shadowAccount**](c-shadowaccount.md)<br/> [**o POSIX**](c-posixgroup.md)<br/> [**ipService**](c-ipservice.md)<br/> [**ipProtocol**](c-ipprotocol.md)<br/> [**oncRpc**](c-oncrpc.md)<br/> [**ipHost**](c-iphost.md)<br/> [**ipNetwork**](c-ipnetwork.md)<br/> [**nisNetgroup**](c-nisnetgroup.md)<br/> [**nisMap**](c-nismap.md)<br/> [**nisObject**](c-nisobject.md)<br/> |
 
 
 
@@ -143,15 +143,15 @@ Contém a descrição a ser exibida para um objeto . Esse valor é restrito como
 | ID do link                | \-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 | MAPI-Id                | 0x806F                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 | System-Only            | Falso                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
-| Tem valor único       | Falso                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| É de valor único       | Falso                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 | É indexado             | Falso                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
-| No Catálogo Global      | Verdadeiro                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
-| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| No catálogo global      | Verdadeiro                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 | Range-Lower            | 0                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 | Range-Upper            | 1024                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 | Search-Flags           | 0x00000000                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 | System-Flags           | 0x00000010                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| Classes usadas em        | [**groupOfUniqueNames**](c-groupofuniquenames.md)<br/> [**Domínio Sam**](c-samdomain.md)<br/> [**Início**](c-top.md)<br/> [**posixAccount**](c-posixaccount.md)<br/> [**shadowAccount**](c-shadowaccount.md)<br/> [**posixGroup**](c-posixgroup.md)<br/> [**ipService**](c-ipservice.md)<br/> [**ipProtocol**](c-ipprotocol.md)<br/> [**oncRpc**](c-oncrpc.md)<br/> [**ipHost**](c-iphost.md)<br/> [**ipNetwork**](c-ipnetwork.md)<br/> [**nisNetgroup**](c-nisnetgroup.md)<br/> [**Nismap**](c-nismap.md)<br/> [**nisObject**](c-nisobject.md)<br/> |
+| Classes usadas em        | [**groupOfUniqueNames**](c-groupofuniquenames.md)<br/> [**Sam-domínio**](c-samdomain.md)<br/> [**Início**](c-top.md)<br/> [**posixAccount**](c-posixaccount.md)<br/> [**shadowAccount**](c-shadowaccount.md)<br/> [**o POSIX**](c-posixgroup.md)<br/> [**ipService**](c-ipservice.md)<br/> [**ipProtocol**](c-ipprotocol.md)<br/> [**oncRpc**](c-oncrpc.md)<br/> [**ipHost**](c-iphost.md)<br/> [**ipNetwork**](c-ipnetwork.md)<br/> [**nisNetgroup**](c-nisnetgroup.md)<br/> [**nisMap**](c-nismap.md)<br/> [**nisObject**](c-nisobject.md)<br/> |
 
 
 

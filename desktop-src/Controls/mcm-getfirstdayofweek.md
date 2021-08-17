@@ -1,9 +1,9 @@
 ---
-title: Mensagem de MCM_GETFIRSTDAYOFWEEK (commctrl. h)
-description: Recupera o primeiro dia da semana para um controle de calendário mensal. Você pode enviar essa mensagem explicitamente ou usando a macro calendário mensal \_ getFirstDayOfWeek.
+title: MCM_GETFIRSTDAYOFWEEK mensagem (Commctrl.h)
+description: Recupera o primeiro dia da semana para um controle de calendário mensal. Você pode enviar essa mensagem explicitamente ou usando a \_ macro MonthCal GetFirstDayOfWeek.
 ms.assetid: bbbc1c45-5693-4a79-908a-ec6e8ef8b218
 keywords:
-- controles de Windows de mensagem de MCM_GETFIRSTDAYOFWEEK
+- MCM_GETFIRSTDAYOFWEEK controles Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -21,9 +21,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119319646"
 ---
-# <a name="mcm_getfirstdayofweek-message"></a>\_Mensagem MCM GETfirstdayofweek
+# <a name="mcm_getfirstdayofweek-message"></a>Mensagem MCM \_ GETFIRSTDAYOFWEEK
 
-Recupera o primeiro dia da semana para um controle de calendário mensal. Você pode enviar essa mensagem explicitamente ou usando a macro [**calendário mensal \_ getFirstDayOfWeek**](/windows/desktop/api/Commctrl/nf-commctrl-monthcal_getfirstdayofweek) .
+Recupera o primeiro dia da semana para um controle de calendário mensal. Você pode enviar essa mensagem explicitamente ou usando a macro [**\_ MonthCal GetFirstDayOfWeek.**](/windows/desktop/api/Commctrl/nf-commctrl-monthcal_getfirstdayofweek)
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -37,7 +37,7 @@ Recupera o primeiro dia da semana para um controle de calendário mensal. Você 
 
 ## <a name="return-value"></a>Valor retornado
 
-Retorna um valor **DWORD** que contém dois valores. A palavra alta é um valor **bool** que é diferente de zero se o primeiro dia da semana for definido como algo diferente de \_ IFIRSTDAYOFWEEK de localidade, caso contrário, zero. A palavra inferior é um valor inteiro que representa o primeiro dia da semana, em que 0 é segunda-feira, 1 é terça-feira e assim por diante.
+Retorna um **valor DWORD** que contém dois valores. A palavra alta será um **valor BOOL** diferente de zero se o primeiro dia da semana for definido como algo diferente de LOCALE \_ IFIRSTDAYOFWEEK ou zero caso contrário. A palavra baixa é um valor INT que representa o primeiro dia da semana, em que 0 é segunda-feira, 1 é terça-feira e assim por diante.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -45,9 +45,9 @@ Retorna um valor **DWORD** que contém dois valores. A palavra alta é um valor 
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

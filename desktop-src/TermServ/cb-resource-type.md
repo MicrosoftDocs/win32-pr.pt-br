@@ -1,10 +1,10 @@
 ---
-title: Enumeração de CB_RESOURCE_TYPE (Cbclient. h)
+title: CB_RESOURCE_TYPE enumeração (Cbclient.h)
 description: Especifica o tipo de recurso ao qual a conexão de entrada está se conectando.
 ms.assetid: 80D921BF-2D84-4A18-9544-50087B81F177
 ms.tgt_platform: multiple
 keywords:
-- Serviços de Área de Trabalho Remota de enumeração de CB_RESOURCE_TYPE
+- CB_RESOURCE_TYPE enumeração Serviços de Área de Trabalho Remota
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 60561e4af54c6d27288d8df311693d51c0b9fc77
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 63dfce0f575147233735dd943645eb51c26141cacaaa61c044698b29b8d118e9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103644420"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119139109"
 ---
-# <a name="cb_resource_type-enumeration"></a>Enumeração de tipo de \_ recurso CB \_
+# <a name="cb_resource_type-enumeration"></a>\_Enumeração CB RESOURCE \_ TYPE
 
-Especifica o tipo de recurso ao qual a conexão de entrada está se conectando. Essa enumeração é usada com a estrutura de [**\_ \_ informações de conexão CB**](cb-connection-info.md) .
+Especifica o tipo de recurso ao qual a conexão de entrada está se conectando. Essa enumeração é usada com a estrutura [**CB \_ CONNECTION \_ INFO.**](cb-connection-info.md)
 
 ## <a name="syntax"></a>Syntax
 
@@ -43,21 +43,21 @@ typedef enum _CB_RESOURCE_TYPE {
 
 <dl> <dt>
 
-<span id="CB_RESOURCE_UNDEFINED"></span><span id="cb_resource_undefined"></span>**\_recurso CB \_ indefinido**
+<span id="CB_RESOURCE_UNDEFINED"></span><span id="cb_resource_undefined"></span>**CB \_ RESOURCE \_ UNDEFINED**
 </dt> <dd>
 
 O tipo de recurso não está definido.
 
 </dd> <dt>
 
-<span id="CB_RESOURCE_SESSION"></span><span id="cb_resource_session"></span>**\_sessão de recurso CB \_**
+<span id="CB_RESOURCE_SESSION"></span><span id="cb_resource_session"></span>**CB \_ RESOURCE \_ SESSION**
 </dt> <dd>
 
 O recurso é uma sessão remota.
 
 </dd> <dt>
 
-<span id="CB_RESOURCE_VM"></span><span id="cb_resource_vm"></span>**\_VM de recurso CB \_**
+<span id="CB_RESOURCE_VM"></span><span id="cb_resource_vm"></span>**\_VM DE RECURSO \_ CB**
 </dt> <dd>
 
 O recurso é uma máquina virtual.
@@ -72,7 +72,7 @@ O recurso é uma máquina virtual.
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 8<br/>                                                                  |
 | Servidor mínimo com suporte<br/> | Windows Server 2012<br/>                                                        |
-| parâmetro<br/>                   | <dl> <dt>Cbclient. h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Cbclient.h</dt> </dl> |
 
 
 
@@ -80,7 +80,7 @@ O recurso é uma máquina virtual.
 
 <dl> <dt>
 
-[**\_informações de conexão CB \_**](cb-connection-info.md)
+[**INFORMAÇÕES \_ DE CONEXÃO \_ CB**](cb-connection-info.md)
 </dt> </dl>
 
  

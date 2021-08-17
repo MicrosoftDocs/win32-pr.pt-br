@@ -1,7 +1,7 @@
 ---
-description: Evento InkPicture.SelectionResizing – ocorre quando o tamanho da seleção atual está prestes a mudar, como por meio de alterações na interface do usuário, procedimentos de recortar e colar ou a propriedade Selection.
+description: Evento InkPicture. SelectionResizing – ocorre quando o tamanho da seleção atual está prestes a ser alterado, como por meio de alterações na interface do usuário, nos procedimentos de recortar e colar ou na Propriedade Selection.
 ms.assetid: da708712-2773-45f5-9d9b-49fabe7fdb5a
-title: Evento InkPicture.SelectionResizing (Msinkaut.h)
+title: Evento InkPicture. SelectionResizing (Msinkaut. h)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: caeae852802599a401c1cdff97436672e0cbfe252f8f1e96d6f4c98367c828ef
@@ -11,9 +11,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118966955"
 ---
-# <a name="inkpictureselectionresizing-event"></a>Evento InkPicture.SelectionResizing
+# <a name="inkpictureselectionresizing-event"></a>Evento InkPicture. SelectionResizing
 
-Ocorre quando o tamanho da seleção atual está prestes a mudar, como por meio de alterações na interface do usuário, procedimentos de recortar e colar ou a [**propriedade Selection.**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkpicture-get_selection)
+Ocorre quando o tamanho da seleção atual está prestes a ser alterado, como por meio de alterações na interface do usuário, nos procedimentos de recortar e colar ou na propriedade [**Selection**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkpicture-get_selection) .
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -30,13 +30,13 @@ void SelectionResizing(
 
 <dl> <dt>
 
-*CurSelectionRect* \[ Em\]
+*CurSelectionRect* \[ no\]
 </dt> <dd>
 
-O retângulo delimitar da seleção após o **evento SelectionResizing.**
+O retângulo delimitador da seleção após o evento **SelectionResizing** .
 
 > [!Note]  
-> Esse retângulo é especificado nas coordenadas da janela do cliente, o que permite cenários como manter a taxa de proporção ao reizing.
+> Esse retângulo é especificado em coordenadas da janela do cliente, o que permite cenários como manter a taxa de proporção ao redimensionar.
 
  
 
@@ -48,7 +48,7 @@ Esse evento não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-Esse método de evento é definido nas interfaces somente de expedição **\_ IInkOverlayEvents** e **\_ IInkPictureEvents** (dispinterfaces) com uma ID de \_ DISPID IOESelectionResizing.
+Esse método de evento é definido nas interfaces somente de expedição **\_ IInkOverlayEvents** e **\_ IInkPictureEvents** (dispinterfaces) com uma ID de DISPID \_ IOESelectionResizing.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -56,9 +56,9 @@ Esse método de evento é definido nas interfaces somente de expedição **\_ II
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho do XP Tablet PC \[ Edition\]<br/>                                                       |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do XP Tablet PC Edition\]<br/>                                                       |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                                           |
-| Cabeçalho<br/>                   | <dl> <dt>Msinkaut.h (também requer Msinkaut \_ i.c)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Msinkaut. h (também requer Msinkaut \_ i. c)</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>InkObj.dll</dt> </dl>                               |
 
 
@@ -67,10 +67,10 @@ Esse método de evento é definido nas interfaces somente de expedição **\_ II
 
 <dl> <dt>
 
-[Inkpicture](inkpicture-control-reference.md)
+[InkPicture](inkpicture-control-reference.md)
 </dt> <dt>
 
-[**Controle \[ InkPicture da propriedade Selection\]**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkpicture-get_selection)
+[**Controle de propriedade de seleção \[ InkPicture\]**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkpicture-get_selection)
 </dt> <dt>
 
 [**Classe InkRectangle**](inkrectangle-class.md)

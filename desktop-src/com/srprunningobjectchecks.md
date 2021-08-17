@@ -1,34 +1,34 @@
 ---
 title: SRPRunningObjectChecks
-description: Determina se as tentativas de conexão com objetos em execução são filtradas para os níveis de confiança da política de restrição de software (SRP) compatíveis.
+description: Determina se as tentativas de se conectar a objetos em execução são teladas para níveis de confiança SRP (política de restrição de software) compatíveis.
 ms.assetid: ab5e74f0-d167-4fb2-af1b-03704039e87c
 keywords:
-- COM valor do registro SRPRunningObjectChecks COM
+- Valor do Registro SRPRunningObjectChecks COM
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0ad307856bcfdd30cfaa6c731551ac6570d2bec6
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: c416b5f430540282873e37c5e74ef2cccc1c564f4a5b27842ba2a49e99cc8769
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103635545"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119129788"
 ---
 # <a name="srprunningobjectchecks"></a>SRPRunningObjectChecks
 
-Determina se as tentativas de conexão com objetos em execução são filtradas para os níveis de confiança da política de restrição de software (SRP) compatíveis.
+Determina se as tentativas de se conectar a objetos em execução são teladas para níveis de confiança SRP (política de restrição de software) compatíveis.
 
 ## <a name="registry-entry"></a>Entrada do Registro
 
 ```
 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Ole
-   SRPRunningObjectChecks = value
+   SRPRunningObjectChecks = value
 ```
 
 ## <a name="remarks"></a>Comentários
 
-Este é um valor de **\_ sz do reg** .
+Esse é um **valor \_ REG SZ.**
 
-Os valores de cadeia de caracteres de {N, N, não, não, não} indicam que as tentativas de conexão com objetos em execução não são filtrados em níveis de confiança do SRP compatíveis. Se esse valor de registro for definido como qualquer outro valor ou não existir, o objeto em execução não poderá ter um nível de confiança SRP menos estrito do que o objeto de cliente. Por exemplo, o objeto em execução não poderá ter um nível de confiança não permitido se o objeto de cliente tiver um nível de confiança irrestrito.
+Valores de cadeia de caracteres {N, n, NO, Não, não} indicam que as tentativas de conexão com objetos em execução não são teladas para níveis de confiança SRP compatíveis. Se esse valor do Registro for definido como qualquer outro valor ou não existir, o objeto em execução não poderá ter um nível de confiança SRP menos rigoroso do que o objeto cliente. Por exemplo, o objeto em execução não poderá ter um nível de confiança Não permitido se o objeto cliente tiver um nível de confiança Irrestrito.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -37,9 +37,9 @@ Os valores de cadeia de caracteres de {N, N, não, não, não} indicam que as te
 [SRPTrustLevel](srptrustlevel.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,5 +1,5 @@
 ---
-description: 'Saiba mais sobre: classe EsentCatalogCorruptedException'
+description: 'Saiba mais sobre: Classe EsentCatalogCorruptedException'
 title: Classe EsentCatalogCorruptedException
 TOCTitle: EsentCatalogCorruptedException class
 ms:assetid: T:Microsoft.Isam.Esent.Interop.EsentCatalogCorruptedException
@@ -24,29 +24,29 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 01b6e9859920ff9e85dff59b1cf71dd5903d7e19
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 49dcd593e10a9ef3166e8157defb20760c35af99e173b6a5ce288568563e2c49
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104505663"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119116956"
 ---
 # <a name="esentcatalogcorruptedexception-class"></a>Classe EsentCatalogCorruptedException
 
-Classe base para JET_err. CatalogCorrupted exceções.
+Classe base para JET_err. Exceções CatalogCorrupted.
 
 ## <a name="inheritance-hierarchy"></a>Hierarquia de herança
 
 [System.Object](/dotnet/api/system.object)  
-  [System. Exception](/dotnet/api/system.exception)  
-    [Microsoft. ISAM. ESENT. EsentException](./esentexception-class.md)  
-      [Microsoft. ISAM. ESENT. Interop. EsentErrorException](./esenterrorexception-class.md)  
-        [Microsoft. ISAM. ESENT. Interop. EsentDataException](./esentdataexception-class.md)  
-          [Microsoft. ISAM. ESENT. Interop. EsentCorruptionException](./esentcorruptionexception-class.md)  
-            Microsoft. ISAM. ESENT. Interop. EsentCatalogCorruptedException  
+  [System.Exception](/dotnet/api/system.exception)  
+    [Microsoft.Isam.Esent.EsentException](./esentexception-class.md)  
+      [Microsoft.Isam.Esent.Interop.EsentErrorException](./esenterrorexception-class.md)  
+        [Microsoft.Isam.Esent.Interop.EsentDataException](./esentdataexception-class.md)  
+          [Microsoft.Isam.Esent.Interop.EsentCorruptionException](./esentcorruptionexception-class.md)  
+            Microsoft.Isam.Esent.Interop.EsentCatalogCorruptedException  
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Syntax
 
@@ -72,6 +72,6 @@ Qualquer membro estático público (Shared no Visual Basic) desse tipo é seguro
 
 #### <a name="reference"></a>Referência
 
-[Membros do EsentCatalogCorruptedException](./esentcatalogcorruptedexception-members.md)
+[Membros EsentCatalogCorruptedException](./esentcatalogcorruptedexception-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

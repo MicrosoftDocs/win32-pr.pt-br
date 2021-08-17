@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: f53343e436ac78b93bcee30c7da5c9d8eb2dc415
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 44c06f0d88558fcb7692218cfe5aa98a2483fd1881dcab2f1d75f2c251bffb91
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103664101"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119123054"
 ---
 # <a name="d3dxloadsurfacefromfile-function"></a>Função D3DXLoadSurfaceFromFile
 
@@ -119,7 +119,7 @@ Ponteiro para uma estrutura de [**\_ informações de D3DXIMAGE**](d3dximage-inf
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
@@ -129,7 +129,7 @@ Se a função for bem sucedido, o valor de retorno será D3D \_ OK. Se a funçã
 
 A configuração do compilador também determina a versão da função. Se o Unicode for definido, a chamada de função será resolvida como D3DXLoadSurfaceFromFileW. Caso contrário, a chamada de função é resolvida como D3DXLoadSurfaceFromFileA porque as cadeias de caracteres ANSI estão sendo usadas.
 
-Essa função manipula a conversão de e para formatos de textura compactados e oferece suporte aos seguintes formatos de arquivo:. bmp,. DDS,. dib,. HDR,. jpg,. PFM,. png,. ppm e. tga. Consulte [**D3DXIMAGE \_ FileFormat**](./d3dximage-fileformat.md).
+Essa função manipula a conversão de e para formatos de textura compactados e dá suporte aos seguintes formatos de arquivo: .bmp,. DDS,. dib,. HDR, .jpg,. PFM, .png,. ppm e. tga. Consulte [**D3DXIMAGE \_ FileFormat**](./d3dximage-fileformat.md).
 
 Gravar em uma superfície de não nível zero não fará com que o retângulo sujo seja atualizado. Se **D3DXLoadSurfaceFromFile** for chamado e a superfície já não tiver sido suja (isso é improvável em cenários de uso normal), o aplicativo precisa chamar [**AddDirtyRect**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3dtexture9-adddirtyrect) explicitamente na superfície.
 

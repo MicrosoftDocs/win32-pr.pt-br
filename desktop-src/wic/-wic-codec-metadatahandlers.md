@@ -1,19 +1,19 @@
 ---
-description: Este tópico apresenta os requisitos para a criação de manipuladores de metadados personalizados para o Windows Imaging Component (WIC), incluindo leitores de metadados e gravadores.
+description: este tópico apresenta os requisitos para a criação de manipuladores de metadados personalizados para o WIC (Windows Imaging Component), incluindo leitores de metadados e gravadores.
 ms.assetid: 08f1872b-6e4d-44ee-abc7-48685e435acc
 title: Visão geral da extensibilidade de metadados
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6576585f7f35628432504086695dd6c64091d3b0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c7d38206fb02c47edbe9744deb6ceb0093277d8354f8717aa89c3f1976bdeb51
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104170307"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119088168"
 ---
 # <a name="metadata-extensibility-overview"></a>Visão geral da extensibilidade de metadados
 
-Este tópico apresenta os requisitos para a criação de manipuladores de metadados personalizados para o Windows Imaging Component (WIC), incluindo leitores de metadados e gravadores. Ele também aborda os requisitos para estender a descoberta de componentes de tempo de execução do WIC para incluir manipuladores de metadados personalizados.
+este tópico apresenta os requisitos para a criação de manipuladores de metadados personalizados para o WIC (Windows Imaging Component), incluindo leitores de metadados e gravadores. Ele também aborda os requisitos para estender a descoberta de componentes de tempo de execução do WIC para incluir manipuladores de metadados personalizados.
 
 Este tópico inclui as seções a seguir.
 
@@ -39,7 +39,7 @@ Este tópico inclui as seções a seguir.
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
-Para entender este tópico, você deve ter uma compreensão aprofundada do WIC, de seus componentes e de metadados para imagens. Para obter mais informações sobre metadados do WIC, consulte a [visão geral dos metadados do WIC](-wic-about-metadata.md). Para obter mais informações sobre os componentes do WIC, consulte [visão geral do Windows Imaging Component](-wic-about-windows-imaging-codec.md).
+Para entender este tópico, você deve ter uma compreensão aprofundada do WIC, de seus componentes e de metadados para imagens. Para obter mais informações sobre metadados do WIC, consulte a [visão geral dos metadados do WIC](-wic-about-metadata.md). para obter mais informações sobre os componentes do WIC, consulte a [visão geral do componente de Windows Imaging](-wic-about-windows-imaging-codec.md).
 
 ## <a name="introduction"></a>Introdução
 
@@ -478,7 +478,7 @@ Portanto, para escrever um leitor de metadados 8BIM para obter informações de 
 **Conceitua**
 </dt> <dt>
 
-[Visão geral do Windows Imaging Component](-wic-about-windows-imaging-codec.md)
+[Windows Visão geral do componente de geração de imagens](-wic-about-windows-imaging-codec.md)
 </dt> <dt>
 
 [Visão geral dos metadados do WIC](-wic-about-metadata.md)

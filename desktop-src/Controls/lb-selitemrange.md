@@ -1,9 +1,9 @@
 ---
-title: LB_SELITEMRANGE mensagem (Winuser.h)
-description: Seleciona ou desmarca um ou mais itens consecutivos em uma caixa de listagem de seleção múltipla.
+title: Mensagem de LB_SELITEMRANGE (WinUser. h)
+description: Seleciona ou anula a seleção de um ou mais itens consecutivos em uma caixa de listagem de seleção múltipla.
 ms.assetid: 817d62df-98a3-40b3-8d62-86bf07ad797f
 keywords:
-- LB_SELITEMRANGE controles de Windows mensagem
+- controles de Windows de mensagem de LB_SELITEMRANGE
 topic_type:
 - apiref
 api_name:
@@ -21,9 +21,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118958595"
 ---
-# <a name="lb_selitemrange-message"></a>Mensagem \_ LB SELITEMRANGE
+# <a name="lb_selitemrange-message"></a>SELITEMRANGE de mensagens de LB \_
 
-Seleciona ou desmarca um ou mais itens consecutivos em uma caixa de listagem de seleção múltipla.
+Seleciona ou anula a seleção de um ou mais itens consecutivos em uma caixa de listagem de seleção múltipla.
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -32,26 +32,26 @@ Seleciona ou desmarca um ou mais itens consecutivos em uma caixa de listagem de 
 *wParam* 
 </dt> <dd>
 
-**TRUE** para selecionar o intervalo de itens ou **FALSE** para desmarcá-lo.
+**True** para selecionar o intervalo de itens ou **false** para desselecioná-lo.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-A [**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) especifica o índice baseado em zero do primeiro item a ser selecionado. O [**HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) especifica o índice baseado em zero do último item a ser selecionado.
+O [**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) especifica o índice de base zero do primeiro item a ser selecionado. O [**HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) especifica o índice de base zero do último item a ser selecionado.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor retornado
 
-Se ocorrer um erro, o valor de retorno será LB \_ ERR.
+Se ocorrer um erro, o valor de retorno será um erro de LB \_ .
 
 ## <a name="remarks"></a>Comentários
 
 Use essa mensagem somente com caixas de listagem de seleção múltipla.
 
-Essa mensagem pode selecionar um intervalo somente dentro dos primeiros 65.536 itens.
+Esta mensagem pode selecionar um intervalo somente dentro dos primeiros 65.536 itens.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -59,9 +59,9 @@ Essa mensagem pode selecionar um intervalo somente dentro dos primeiros 65.536 i
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                                           |
-| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                                     |
-| Cabeçalho<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                                           |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                                     |
+| Cabeçalho<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
 
 
 
@@ -72,10 +72,10 @@ Essa mensagem pode selecionar um intervalo somente dentro dos primeiros 65.536 i
 **Referência**
 </dt> <dt>
 
-[**LB \_ SELITEMRANGEEX**](lb-selitemrangeex.md)
+[**\_SELITEMRANGEEX lb**](lb-selitemrangeex.md)
 </dt> <dt>
 
-[**LB \_ SETSEL**](lb-setsel.md)
+[**\_SETSEL lb**](lb-setsel.md)
 </dt> <dt>
 
 **Outros recursos**

@@ -1,5 +1,5 @@
 ---
-description: Define o tipo que contém informações de posição e limites para o título em uma observação.
+description: Define o tipo que contém informações de posição e limites para o título em uma nota.
 ms.assetid: 45beca78-b88d-414b-90d5-8e7a0ee9cbed
 title: Tipo complexo TitleAreaType
 ms.topic: reference
@@ -21,7 +21,7 @@ ms.locfileid: "118966735"
 ---
 # <a name="titleareatype-complex-type"></a>Tipo complexo TitleAreaType
 
-Define o tipo que contém informações de posição e limites para o título em uma observação.
+Define o tipo que contém informações de posição e limites para o título em uma nota.
 
 ``` syntax
 <xs:complexType name="TitleAreaType" />
@@ -33,7 +33,7 @@ Define o tipo que contém informações de posição e limites para o título em
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho do XP Tablet PC \[ Edition\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do XP Tablet PC Edition\]<br/> |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                     |
 
 

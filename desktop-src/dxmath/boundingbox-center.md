@@ -1,19 +1,19 @@
 ---
-description: O centro do BoundingBox.
+description: O centro da BoundingBox.
 ms.assetid: d6cc1de6-69ad-4bda-af4b-f8c86bd2c11e
-title: BoundingBox. Center (DirectXCollision. h)
+title: BoundingBox.Center (DirectXCollision.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a4e9f0f3377a94bfeebb83c76d6a4ab94c4e7165
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d02d0f7c70491f2259670b6f8db3f883eaa8e5e295683c2a15c5f47208fdfa73
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105789669"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119118613"
 ---
-# <a name="boundingboxcenter"></a>BoundingBox. Center
+# <a name="boundingboxcenter"></a>BoundingBox.Center
 
-O centro do BoundingBox.
+O centro da BoundingBox.
 
 
 ```C++
@@ -27,7 +27,7 @@ public:
 
 ### <a name="platform-requirements"></a>Requisitos de plataforma
 
-Microsoft Visual Studio 2010 ou Microsoft Visual Studio 2012 com o SDK do Windows para Windows 8. Com suporte para aplicativos de área de trabalho Win32, aplicativos da Windows Store e aplicativos Windows Phone 8.
+Microsoft Visual Studio 2010 ou Microsoft Visual Studio 2012 com o SDK do Windows para Windows 8. Com suporte para aplicativos da área de trabalho win32, aplicativos Windows Store e Windows Phone 8 aplicativos.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -35,8 +35,8 @@ Microsoft Visual Studio 2010 ou Microsoft Visual Studio 2012 com o SDK do Window
 
 | Requisito | Valor |
 |----------------------|-----------------------------------------------------------------------------------------------|
-| Namespace<br/> | Use o DirectX.<br/>                                                                       |
-| parâmetro<br/>    | <dl> <dt>DirectXCollision. h</dt> </dl> |
+| Namespace<br/> | Use DirectX.<br/>                                                                       |
+| Cabeçalho<br/>    | <dl> <dt>DirectXCollision.h</dt> </dl> |
 
 
 
@@ -50,7 +50,7 @@ Microsoft Visual Studio 2010 ou Microsoft Visual Studio 2012 com o SDK do Window
 **Referência**
 </dt> <dt>
 
-[**BoundingBox**](/windows/desktop/api/DirectXCollision/ns-directxcollision-boundingbox)
+[**Boundingbox**](/windows/desktop/api/DirectXCollision/ns-directxcollision-boundingbox)
 </dt> </dl>
 
  

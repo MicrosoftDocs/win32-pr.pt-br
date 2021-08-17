@@ -1,7 +1,7 @@
 ---
 description: O elemento Timeline define a linha do tempo. Esse elemento é o nó raiz no arquivo XML.
 ms.assetid: db1da09f-d9b2-43fa-8dec-e3dc11cbfafa
-title: Elemento de linha do tempo (Windows. UI. XAML. Media. Animation. h)
+title: elemento timeline (Windows. interface do usuário. xaml. media. animation. h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - windows.ui.xaml.media.animation.h
-ms.openlocfilehash: 97e87dbbcfbcefb8968f6bbe43e9df94277e3d7a
-ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
+ms.openlocfilehash: f94dd76206aabbe39e443dac5ab277e499face91c94a6a69b3fe5ee29eb67c70
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "107908794"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118951665"
 ---
 # <a name="timeline-element"></a>Elemento Timeline
 
@@ -37,10 +37,10 @@ O `timeline` elemento define a linha do tempo. Esse elemento é o nó raiz no ar
 
 
 
-| Label | Valor |
+| Rótulo | Valor |
 |----------|-------------------------------------------------------|
 | Pai   | Nenhum. Esse elemento deve ser o nó raiz no arquivo. |
-| Children | [**Group**](group-element.md)                        |
+| Children | [**group**](group-element.md)                        |
 
 
 
@@ -61,7 +61,7 @@ O `timeline` elemento define a linha do tempo. Esse elemento é o nó raiz no ar
 
 | Requisito | Valor |
 |-------------------|--------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>Windows. UI. XAML. Media. Animation. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>Windows. ui. xaml. media. animation. h</dt> </dl> |
 
 
 

@@ -3,21 +3,21 @@ title: Acessando mídia
 description: Acessando mídia
 ms.assetid: 18ea844d-98c9-4168-9af2-161dda52f6bd
 keywords:
-- Playlists do metarquivo do Windows Media, acessando mídia
+- Windows Listas de reprodução do metarquivo de mídia, acessando mídia
 - listas de reprodução, acessando mídia
 - listas de reprodução de metarquivo, acesso à mídia
-- Playlists do metarquivo do Windows Media, acesso à mídia
+- Windows Playlists de metarquivo de mídia, acesso à mídia
 - listas de reprodução, acesso à mídia
 - listas de reprodução de metarquivo, acesso à mídia
-- Playlists do metarquivo do Windows Media, controlando a reprodução
+- Windows Playlists de metarquivo de mídia, controlando a reprodução
 - listas de reprodução, controlando a reprodução
 - listas de reprodução de metarquivo, controlando a reprodução
-- Playlists do metarquivo do Windows Media, definindo a duração
+- Windows Playlists de metarquivo de mídia, definindo a duração
 - listas de reprodução, definindo a duração
 - listas de reprodução de metarquivo, definindo duração
 - Windows Media Player, acessando mídia
 - Windows Media Player, acesso à mídia
-- Windows Media Player, controlando a reprodução
+- Windows Media Player, controle de reprodução
 - Windows Media Player, definindo a duração
 - Acessando mídia
 - acesso à mídia
@@ -30,25 +30,25 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: c5a995a6816e3c46a002bd1ea924c9ea9a207000
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: c1a0846be4e8b9b62e424ce24d1b1800bc361c6a28f52a323c6bfa8511ae040b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105794532"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119956396"
 ---
 # <a name="accessing-media"></a>Acessando mídia
 
-Use as listas de reprodução para especificar e controlar a mídia de streaming ou os arquivos de mídia que o Windows Media Player reproduz.
+Use as listas de reprodução para especificar e controlar a mídia de streaming ou os arquivos de mídia que Windows Media Player são executados.
 
-Use o elemento **entry** para especificar um único elemento de mídia (um arquivo de mídia ou uma transmissão ao vivo) e quaisquer elementos filho (como imagens, links **moreinfo** e texto **abstrato** ). Use um elemento **ENTRYREF** para especificar uma lista de reprodução. Uma lista de reprodução pode conter um ou mais elementos de **entrada** ou **ENTRYREF** . O Windows Media Player executa uma lista de reprodução iniciando com a primeira entrada e, em seguida, executando cada entrada por vez até que a lista seja concluída.
+Use o elemento **entry** para especificar um único elemento de mídia (um arquivo de mídia ou uma transmissão ao vivo) e quaisquer elementos filho (como imagens, links **moreinfo** e texto **abstrato** ). Use um elemento **ENTRYREF** para especificar uma lista de reprodução. Uma lista de reprodução pode conter um ou mais elementos de **entrada** ou **ENTRYREF** . Windows Media Player executa uma lista de reprodução iniciando com a primeira entrada e, em seguida, executando cada entrada por vez até que a lista seja concluída.
 
-Um elemento de **entrada** pode apontar para qualquer tipo de mídia que o Windows Media Player possa reproduzir. Isso inclui não apenas arquivos. WMA,. wmv,. ASF e. avi, para citar alguns, mas também fluxos ao vivo. Usando uma série de elementos **entry** ou **ENTRYREF** para fazer referência ao conteúdo de mídia, você pode usar uma lista de reprodução para enviar um único fluxo que consiste em várias fontes. Os fluxos referenciados serão executados em sequência e vistos como um fluxo contínuo pelo Visualizador. Por exemplo, a lista de reprodução pode conter dois elementos de **entrada** : uma introdução padrão de um arquivo de mídia do Windows com uma extensão. WMA e um fluxo do Windows Media ao vivo.
+um elemento de **entrada** pode apontar para qualquer tipo de mídia que Windows Media Player possa reproduzir. Isso inclui não apenas arquivos. WMA,. wmv,. ASF e .avi, para citar alguns, mas também fluxos ao vivo. Usando uma série de elementos **entry** ou **ENTRYREF** para fazer referência ao conteúdo de mídia, você pode usar uma lista de reprodução para enviar um único fluxo que consiste em várias fontes. Os fluxos referenciados serão executados em sequência e vistos como um fluxo contínuo pelo Visualizador. por exemplo, a lista de reprodução pode conter dois elementos de **entrada** : uma introdução padrão de um arquivo de mídia Windows com uma extensão. wma e um fluxo de mídia de Windows ao vivo.
 
 > [!Note]  
-> Uma lista de reprodução não deve conter links para arquivos de mídia que tenham conteúdo criado com versões diferentes do DRM (Rights Management digital). Em uma lista de reprodução de metarquivo, se houver links para arquivos de mídia com conteúdo DRM versão 1 e para arquivos de mídia criados com versões posteriores do DRM, o Windows Media Player só executará o conteúdo do DRM versão 1.
+> Uma lista de reprodução não deve conter links para arquivos de mídia que tenham conteúdo criado com versões diferentes do DRM (Rights Management digital). em uma lista de reprodução de metarquivo, se houver links para arquivos de mídia com conteúdo drm versão 1 e para arquivos de mídia criados com versões posteriores do drm, Windows Media Player reproduzirá apenas o conteúdo do drm versão 1.
 
- 
+ 
 
 ## <a name="controlling-playback"></a>Controlando a reprodução
 
@@ -105,15 +105,15 @@ Use o elemento **Duration** para especificar por quanto tempo reproduzir um clip
 [**Usando listas de reprodução de metarquivo**](using-metafile-playlists.md)
 </dt> <dt>
 
-[**Referência de elementos de metarquivo do Windows Media**](windows-media-metafile-elements-reference.md)
+[**Windows Referência de elementos de metarquivo de mídia**](windows-media-metafile-elements-reference.md)
 </dt> <dt>
 
-[**Guia de metarquivo do Windows Media**](windows-media-metafile-guide.md)
+[**Windows Guia de metarquivo de mídia**](windows-media-metafile-guide.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

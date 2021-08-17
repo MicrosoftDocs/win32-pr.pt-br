@@ -1,7 +1,7 @@
 ---
-description: Saiba mais sobre o método IShellDispatch.RefreshMenu, que atualiza o conteúdo do menu Iniciar. Usado somente com sistemas anteriores Windows XP.
+description: saiba mais sobre o método IShellDispatch. RefreshMenu, que atualiza o conteúdo do menu Iniciar. usado somente com sistemas anteriores Windows XP.
 ms.assetid: D36FA5A0-AF03-4627-86E0-869BF1440958
-title: Método IShellDispatch.RefreshMenu (Shldisp.h)
+title: Método IShellDispatch. RefreshMenu (shldisp. h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -20,9 +20,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118969055"
 ---
-# <a name="ishelldispatchrefreshmenu-method"></a>Método IShellDispatch.RefreshMenu
+# <a name="ishelldispatchrefreshmenu-method"></a>Método IShellDispatch. RefreshMenu
 
-Atualiza o conteúdo **do** menu Iniciar. Usado somente com sistemas anteriores Windows XP.
+Atualiza o conteúdo do menu **Iniciar** . usado somente com sistemas anteriores Windows XP.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -57,13 +57,13 @@ Esse método não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-Esse método é implementado e acessado por meio [**do método Shell.TrayProperties.**](shell-trayproperties.md)
+Esse método é implementado e acessado por meio do método [**shell. trayproperties**](shell-trayproperties.md) .
 
-A funcionalidade que **RefreshMenu** fornece é tratada automaticamente no Windows XP ou posterior. Não chame esse método no Windows XP ou posterior.
+a funcionalidade que o **RefreshMenu** fornece é tratada automaticamente em Windows XP ou posterior. não chame esse método no Windows XP ou posterior.
 
 ## <a name="examples"></a>Exemplos
 
-Os exemplos a seguir mostram o uso de **RefreshMenu** JScript, VBScript e Visual Basic.
+os exemplos a seguir mostram o uso de **RefreshMenu** em JScript, VBScript e Visual Basic.
 
 JScript:
 
@@ -81,7 +81,7 @@ JScript:
 
 
 
-Vbscript:
+VBScript
 
 
 ```VB
@@ -121,11 +121,11 @@ End Sub
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 2000 Professional, Windows aplicativos da área de \[ trabalho XP\]<br/>                                         |
+| Cliente mínimo com suporte<br/> | Windows 2000 Professional, \[ somente aplicativos de área de trabalho do Windows XP\]<br/>                                         |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                           |
-| Cabeçalho<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
-| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
-| DLL<br/>                      | <dl> <dt>Shell32.dll (versão 4.71 ou posterior)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                           |
+| INSERI<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                         |
+| DLL<br/>                      | <dl> <dt>Shell32.dll (versão 4,71 ou posterior)</dt> </dl> |
 
 
 

@@ -35,8 +35,8 @@ ms.locfileid: "119480206"
 
 Inicializa uma nova instância da classe EsentLogBufferTooSmallException.
 
-**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -58,6 +58,6 @@ public EsentLogBufferTooSmallException()
 
 [Classe EsentLogBufferTooSmallException](./esentlogbuffertoosmallexception-class.md)
 
-[Membros EsentLogBufferTooSmallException](./esentlogbuffertoosmallexception-members.md)
+[Membros do EsentLogBufferTooSmallException](./esentlogbuffertoosmallexception-members.md)
 
-[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)

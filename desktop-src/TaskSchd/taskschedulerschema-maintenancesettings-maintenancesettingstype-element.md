@@ -37,7 +37,7 @@ O **elemento MaintenanceSettings** é definido pelo tipo complexo [**maintenance
 
 
 
-| Elemento                                                           | Derivado de                                                         | Description                                                                        |
+| Elemento                                                           | Derivado de                                                         | Descrição                                                                        |
 |-------------------------------------------------------------------|----------------------------------------------------------------------|------------------------------------------------------------------------------------|
 | [**Configurações**](taskschedulerschema-settings-tasktype-element.md) | [**settingsType**](taskschedulerschema-settingstype-complextype.md) | Contém as configurações que o Agendador de Tarefas usa para executar a tarefa.<br/> |
 
@@ -47,7 +47,7 @@ O **elemento MaintenanceSettings** é definido pelo tipo complexo [**maintenance
 
 
 
-| Elemento                                                    | Digite    | Description                                                                                                                                                                                     |
+| Elemento                                                    | Type    | Descrição                                                                                                                                                                                     |
 |------------------------------------------------------------|---------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**Prazo**](taskschedulerschema-deadline-element.md)   |         | Especifica a quantidade de tempo após a qual o agendador de tarefas tentará iniciar a tarefa durante a manutenção automática de emergência, se ela não tiver concluído durante a manutenção regular. <br/> |
 | [**Exclusivo**](taskschedulerschema-exclusive-element.md) | booleano | Se definido como true, a tarefa será iniciada exclusivamente entre outras tarefas de manutenção. <br/>                                                                                                 |

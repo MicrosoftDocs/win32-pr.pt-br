@@ -1,5 +1,5 @@
 ---
-description: A API de banda larga móvel define e usa as interfaces a seguir.
+description: A API de Banda Larga Móvel define e usa as interfaces a seguir.
 ms.assetid: db6c9635-16f9-4266-9d0e-daeb58fac588
 title: Interfaces de API de banda larga móvel
 ms.topic: reference
@@ -13,7 +13,7 @@ ms.locfileid: "118975286"
 ---
 # <a name="mobile-broadband-api-interfaces"></a>Interfaces de API de banda larga móvel
 
-A API de banda larga móvel define e usa as interfaces a seguir.
+A API de Banda Larga Móvel define e usa as interfaces a seguir.
 
 -   [**IMbnConnection**](/windows/desktop/api/mbnapi/nn-mbnapi-imbnconnection)
 -   [**IMbnConnectionContext**](/windows/desktop/api/mbnapi/nn-mbnapi-imbnconnectioncontext)
@@ -33,7 +33,7 @@ A API de banda larga móvel define e usa as interfaces a seguir.
 -   [**IMbnInterfaceEvents**](/windows/desktop/api/mbnapi/nn-mbnapi-imbninterfaceevents)
 -   [**IMbnInterfaceManager**](/windows/desktop/api/mbnapi/nn-mbnapi-imbninterfacemanager)
 -   [**IMbnInterfaceManagerEvents**](/windows/desktop/api/mbnapi/nn-mbnapi-imbninterfacemanagerevents)
--   [**IMbnMultiCarrier**](/windows/desktop/api/mbnapi/nn-mbnapi-imbnmulticarrier)
+-   [**IMbnMultiCa portal**](/windows/desktop/api/mbnapi/nn-mbnapi-imbnmulticarrier)
 -   [**IMbnMultiCarrierEvents**](/windows/desktop/api/mbnapi/nn-mbnapi-imbnmulticarrierevents)
 -   [**IMbnPin**](/windows/desktop/api/mbnapi/nn-mbnapi-imbnpin)
 -   [**IMbnPinEvents**](/windows/desktop/api/mbnapi/nn-mbnapi-imbnpinevents)

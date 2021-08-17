@@ -1,5 +1,5 @@
 ---
-description: Define o tipo que contém informações sobre o título em uma nota de Diário.
+description: Define o tipo que contém informações sobre o título em uma nota do diário.
 ms.assetid: 8289456b-c969-4079-bcb5-36949faa65e0
 title: Tipo complexo TitleInfoType
 ms.topic: reference
@@ -21,7 +21,7 @@ ms.locfileid: "118966745"
 ---
 # <a name="titleinfotype-complex-type"></a>Tipo complexo TitleInfoType
 
-Define o tipo que contém informações sobre o título em uma nota de Diário.
+Define o tipo que contém informações sobre o título em uma nota do diário.
 
 ``` syntax
 <xs:complexType name="TitleInfoType" />
@@ -33,7 +33,7 @@ Define o tipo que contém informações sobre o título em uma nota de Diário.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho do XP Tablet PC \[ Edition\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do XP Tablet PC Edition\]<br/> |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                     |
 
 

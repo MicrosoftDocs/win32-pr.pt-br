@@ -21,14 +21,14 @@ ms.locfileid: "119464166"
 
 Ao criar uma instância com objetos inseridos, execute as seguintes tarefas:
 
--   Você deve declarar um objeto inserido como fortemente digitado ou fracamente digitado.
+-   Você deve declarar um objeto inserido como fortemente tipado ou com tipo fraco.
 
-    Um objeto fortemente digitado aponta para um objeto de uma classe específica e usa o nome da classe. Um objeto fracamente digitado aponta para um objeto de uma classe não especificada e usa a palavra-chave **object.** Ambos os objetos são mapeados para **o tipo VT \_ UNKNOWN.**
+    Um objeto fortemente tipado aponta para um objeto de uma classe específica e usa o nome da classe. Um objeto de tipo fraco aponta para um objeto de uma classe não especificada e usa a palavra-chave **Object** . Ambos os objetos são mapeados para o tipo de **VT \_ desconhecido** .
 
--   Você pode usar **NULL** para o valor padrão de objetos e caminhos inseridos em inicializações e declarações.
--   Ao incorporar um caminho de objeto, não coloque espaço em branco entre os elementos do caminho inserido. Por exemplo, o caminho do objeto "Class1Index=3;" não contém espaço entre o nome da propriedade "Class1index" e o valor que está sendo atribuído, que é "3".
+-   Você pode usar **NULL** para o valor padrão de caminhos e objetos inseridos em inicializações e declarações.
+-   Ao inserir um caminho de objeto, não coloque o espaço em branco entre os elementos do caminho inserido. Por exemplo, o caminho do objeto "Class1Index = 3;" não contém espaço entre o nome da propriedade "Class1index" e o valor que está sendo atribuído, que é "3".
 
-A declaração de classe a seguir mostra como declarar objetos inseridos fortemente digitados e fracamente digitados.
+A declaração de classe a seguir mostra como declarar objetos embutidos fortemente tipados e com tipo fraco.
 
 ``` syntax
 Class MyClass
@@ -38,7 +38,7 @@ Class MyClass
 };
 ```
 
-Os exemplos a seguir descrevem como declarar objetos inseridos dentro de uma declaração de classe.
+Os exemplos a seguir descrevem como declarar objetos incorporados dentro de uma declaração de classe.
 
 ``` syntax
 Class Class1 
@@ -59,7 +59,7 @@ Class Class3
 };
 ```
 
-O exemplo a seguir descreve a inicialização de uma propriedade que é um objeto fortemente digitado e outra propriedade que é uma matriz de objetos de tipo fraco.
+O exemplo a seguir descreve a inicialização de uma propriedade que é um objeto fortemente tipado e outra propriedade que é uma matriz de objetos de tipo fraco.
 
 ``` syntax
 Class EmbedClass1

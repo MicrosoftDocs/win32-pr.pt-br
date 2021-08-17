@@ -1,7 +1,7 @@
 ---
-description: Função D3DXVec3Unproject (D3dx9math. h)-projeta um vetor do espaço da tela no espaço do objeto.
+description: Função D3DXVec3Unproject (D3dx9math.h) – projeta um vetor do espaço da tela no espaço do objeto.
 ms.assetid: 9fd69cae-1d9c-4fae-9e15-8eb9950b4850
-title: Função D3DXVec3Unproject (D3dx9math. h)
+title: Função D3DXVec3Unproject (D3dx9math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 2c3ea6ec1aa60f48589b10575e279bed81b2c94f
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: e213cfd4daa3af2d903f64d7caa1b76e349818c8de5bc50ad4cdb42dc381dbbc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108115554"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119122523"
 ---
-# <a name="d3dxvec3unproject-function-d3dx9mathh"></a>Função D3DXVec3Unproject (D3dx9math. h)
+# <a name="d3dxvec3unproject-function-d3dx9mathh"></a>Função D3DXVec3Unproject (D3dx9math.h)
 
 Projeta um vetor do espaço da tela no espaço do objeto.
 
@@ -45,57 +45,57 @@ D3DXVECTOR3* D3DXVec3Unproject(
 
 <dl> <dt>
 
-*pout* \[ entrada, saída\]
+*pOut* \[ in, out\]
 </dt> <dd>
 
 Tipo: **[ **D3DXVECTOR3**](d3dxvector3.md)\***
 
-Ponteiro para a estrutura [**D3DXVECTOR3**](d3dxvector3.md) que é o resultado da operação.
+Ponteiro para a [**estrutura D3DXVECTOR3**](d3dxvector3.md) que é o resultado da operação.
 
 </dd> <dt>
 
-*VP* \[ no\]
+*pV* \[ Em\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR3**](d3dxvector3.md) \***
 
-Ponteiro para a estrutura de [**D3DXVECTOR3**](d3dxvector3.md) de origem.
+Ponteiro para a estrutura [**D3DXVECTOR3 de**](d3dxvector3.md) origem.
 
 </dd> <dt>
 
-*pViewport* \[ no\]
+*pViewport* \[ Em\]
 </dt> <dd>
 
 Tipo: **const [**D3DVIEWPORT9**](d3dviewport9.md) \***
 
-Ponteiro para uma estrutura [**D3DVIEWPORT9**](d3dviewport9.md) , representando o visor.
+Ponteiro para uma [**estrutura D3DVIEWPORT9,**](d3dviewport9.md) representando o viewport.
 
 </dd> <dt>
 
-*pProjection* \[ no\]
+*pProjection* \[ Em\]
 </dt> <dd>
 
 Tipo: **const [**D3DXMATRIX**](d3dxmatrix.md) \***
 
-Ponteiro para uma estrutura [**D3DXMATRIX**](d3dxmatrix.md) , representando a matriz de projeção.
+Ponteiro para uma [**estrutura D3DXMATRIX,**](d3dxmatrix.md) representando a matriz de projeção.
 
 </dd> <dt>
 
-*pView* \[ no\]
+*pView* \[ Em\]
 </dt> <dd>
 
 Tipo: **const [**D3DXMATRIX**](d3dxmatrix.md) \***
 
-Ponteiro para uma estrutura [**D3DXMATRIX**](d3dxmatrix.md) , representando a matriz de exibição.
+Ponteiro para uma [**estrutura D3DXMATRIX,**](d3dxmatrix.md) representando a matriz de exibição.
 
 </dd> <dt>
 
-*pWorld* \[ no\]
+*pWorld* \[ Em\]
 </dt> <dd>
 
 Tipo: **const [**D3DXMATRIX**](d3dxmatrix.md) \***
 
-Ponteiro para uma estrutura [**D3DXMATRIX**](d3dxmatrix.md) , representando a matriz mundial.
+Ponteiro para uma [**estrutura D3DXMATRIX,**](d3dxmatrix.md) representando a matriz mundial.
 
 </dd> </dl>
 
@@ -103,11 +103,11 @@ Ponteiro para uma estrutura [**D3DXMATRIX**](d3dxmatrix.md) , representando a ma
 
 Tipo: **[ **D3DXVECTOR3**](d3dxvector3.md)\***
 
-Ponteiro para uma estrutura [**D3DXVECTOR3**](d3dxvector3.md) que é o vetor projetado do espaço da tela para o espaço de objeto.
+Ponteiro para uma [**estrutura D3DXVECTOR3**](d3dxvector3.md) que é o vetor projetado do espaço da tela para o espaço do objeto.
 
 ## <a name="remarks"></a>Comentários
 
-O valor de retorno para essa função é o mesmo valor retornado no parâmetro *pout* . Dessa forma, a função **D3DXVec3Unproject** pode ser usada como um parâmetro para outra função.
+O valor retornado para essa função é o mesmo valor retornado no *parâmetro pOut.* Dessa forma, a **função D3DXVec3Unproject** pode ser usada como um parâmetro para outra função.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -115,12 +115,12 @@ O valor de retorno para essa função é o mesmo valor retornado no parâmetro *
 
 | Requisito | Valor |
 |--------------------|----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3dx9math. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| parâmetro<br/>  | <dl> <dt>D3dx9math.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

@@ -3,10 +3,10 @@ title: Criar exemplo de chave de sessão
 description: Criar exemplo de chave de sessão
 ms.assetid: 4347502b-3900-4306-b58c-16d151200e6c
 keywords:
-- Windows SDK de formato de mídia, chaves de sessão
-- Windows SDK do formato de mídia, chaves de conteúdo
-- Windows SDK do formato de mídia, código de exemplo
-- Windows SDK do formato de mídia, exemplos de código
+- Windows SDK de Formato de Mídia, chaves de sessão
+- Windows SDK de Formato de Mídia, chaves de conteúdo
+- Windows SDK de Formato de Mídia, código de exemplo
+- Windows SDK de Formato de Mídia, exemplos de código
 - DRM (gerenciamento de direitos digitais), chaves de sessão
 - DRM (gerenciamento de direitos digitais), chaves de sessão
 - DRM (gerenciamento de direitos digitais), chaves de conteúdo
@@ -36,7 +36,7 @@ ms.locfileid: "118964135"
 ---
 # <a name="create-session-key-example"></a>Criar exemplo de chave de sessão
 
-A chave de sessão é usada para proteger a chave de conteúdo. O código a seguir demonstra como criar uma chave de sessão, mas deixa os detalhes da geração de chave aleatória.
+A chave de sessão é usada para proteger a chave de conteúdo. O código a seguir demonstra como criar uma chave de sessão, mas deixa de fora os detalhes da geração de chave aleatória.
 
 
 ```C++

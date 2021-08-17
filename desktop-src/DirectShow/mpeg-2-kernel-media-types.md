@@ -1,38 +1,38 @@
 ---
-description: Para vários GUIDs de tipo de mídia MPEG-2, o DDK do Windows define nomes que diferem dos nomes usados no DirectShow. A tabela a seguir mostra os nomes do DirectShow (definidos em Ksuuids. h) e os nomes do modo kernel correspondentes (definidos em Ksmedia. h).
+description: Para vários GUIDs de tipo de mídia MPEG-2, o DDK do Windows define nomes que diferem dos nomes usados no DirectShow. A tabela a seguir mostra os nomes DirectShow dados (definidos em Ksuuids.h) e os nomes de modo kernel correspondentes (definidos em Ksmedia.h).
 ms.assetid: ecf94552-5a0f-464c-9f9b-4861faa38d05
-title: Tipos de mídia do kernel MPEG-2 (DShow. h)
+title: Tipos de mídia de kernel MPEG-2 (Dshow.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 37b03e6d3cbc32c987110ceac98e6aeef6617d6d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 41cfbbd93bfb4d9c21a7ab2b496e69458e2754d95ae4427ad163c4f2a06e4165
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105813085"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118952255"
 ---
 # <a name="mpeg-2-kernel-media-types"></a>Tipos de mídia de kernel MPEG-2
 
-Para vários GUIDs de tipo de mídia MPEG-2, o DDK do Windows define nomes que diferem dos nomes usados no DirectShow. A tabela a seguir mostra os nomes do DirectShow (definidos em Ksuuids. h) e os nomes do modo kernel correspondentes (definidos em Ksmedia. h).
+Para vários GUIDs de tipo de mídia MPEG-2, o DDK do Windows define nomes que diferem dos nomes usados no DirectShow. A tabela a seguir mostra os nomes DirectShow dados (definidos em Ksuuids.h) e os nomes de modo kernel correspondentes (definidos em Ksmedia.h).
 
 
 
-| Nome em Ksuuids. h              | Nome em Ksmedia. h                          |
+| Nome em Ksuuids.h              | Nome em Ksmedia.h                          |
 |--------------------------------|--------------------------------------------|
-| WaveFormatEx de formato \_           | \_WAVEFORMATEX especificador KSDATAFORMAT \_      |
-| MPEG2Video de formato \_             | \_Vídeo MPEG2 do especificador KSDATAFORMAT \_ \_      |
-| MEDIASUBTYPE \_ ATSC \_ si         | KSDATAFORMAT \_ subtipo \_ ATSC \_ si            |
-| MEDIASUBTYPE \_ Dolby \_ AC3       | KSDATAFORMAT \_ subtipo \_ AC3 \_ áudio          |
-| \_si MEDIASUBTYPE DVB \_          | KSDATAFORMAT do \_ subtipo \_ DVB \_ si             |
-| \_áudio MEDIASUBTYPE DVD \_ LPCM \_ | KSDATAFORMAT \_ subtipo \_ LPCM \_ áudio         |
-| \_Áudio MEDIASUBTYPE MPEG2 \_     | \_Áudio MPEG2 do SUBTIPO KSDATAFORMAT \_ \_        |
-| \_Programa MEDIASUBTYPE MPEG2 \_   | \_Programa KSDATAFORMAT estático \_ tipo \_ MPEG2 \_ |
-| \_Transporte MEDIASUBTYPE MPEG2 \_ | KSDATAFORMAT \_ tipo \_ de \_ transporte MPEG2       |
-| Vídeo do MEDIASUBTYPE \_ MPEG2 \_     | Vídeo KSDATAFORMAT do \_ subtipo \_ MPEG2 \_        |
-| Seções de MEDIATYPE \_ MPEG2 \_     | KSDATAFORMAT \_ seções do tipo \_ MPEG2 \_        |
-| Áudio de MEDIATYPE \_               | \_áudio do tipo KSDATAFORMAT \_                  |
-| MEDIATYPE \_ MPEG2 \_ PES          | KSDATAFORMAT \_ tipo \_ MPEG2 \_ PES             |
-| Vídeo de MEDIATYPE \_               | \_vídeo do tipo KSDATAFORMAT \_                  |
+| FORMAT \_ WaveFormatEx           | KSDATAFORMAT \_ SPECIFIER \_ WAVEFORMATEX      |
+| FORMATO \_ MPEG2Video             | VÍDEO \_ MPEG2 DO ESPECIFICADOR KSDATAFORMAT \_ \_      |
+| MEDIASUBTYPE \_ ATSC \_ SI         | KSDATAFORMAT \_ SUBTYPE \_ ATSC \_ SI            |
+| MEDIASUBTYPE \_ DOLBY \_ AC3       | KSDATAFORMAT \_ SUBTYPE \_ AC3 \_ AUDIO          |
+| MEDIASUBTYPE \_ DVB \_ SI          | SUBTIPO DE KSDATAFORMAT \_ \_ DVB \_ SI             |
+| ÁUDIO \_ LPCM DE DVD MEDIASUBTYPE \_ \_ | SUBTIPO DE KSDATAFORMAT \_ \_ LPCM \_ AUDIO         |
+| ÁUDIO MEDIASUBTYPE \_ MPEG2 \_     | ÁUDIO \_ MPEG2 DO SUBTIPO KSDATAFORMAT \_ \_        |
+| MEDIASUBTYPE \_ MPEG2 \_ PROGRAM   | PROGRAMA MPEG2 ESTÁTICO \_ DO \_ TIPO \_ KSDATAFORMAT \_ |
+| MEDIASUBTYPE \_ MPEG2 \_ TRANSPORT | KSDATAFORMAT \_ TYPE \_ MPEG2 \_ TRANSPORT       |
+| VÍDEO MEDIASUBTYPE \_ MPEG2 \_     | VÍDEO DO SUBTIPO DE KSDATAFORMAT \_ \_ MPEG2 \_        |
+| SEÇÕES \_ MEDIATYPE MPEG2 \_     | SEÇÕES \_ \_ MPEG2 DO TIPO KSDATAFORMAT \_        |
+| ÁUDIO \_ MEDIATYPE               | ÁUDIO DO TIPO KSDATAFORMAT \_ \_                  |
+| MEDIATYPE \_ MPEG2 \_ PES          | KSDATAFORMAT \_ TYPE \_ MPEG2 \_ PES             |
+| Vídeo \_ MEDIATYPE               | VÍDEO DO TIPO KSDATAFORMAT \_ \_                  |
 
 
 
@@ -44,7 +44,7 @@ Para vários GUIDs de tipo de mídia MPEG-2, o DDK do Windows define nomes que d
 
 | Requisito | Valor |
 |-------------------|------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>DShow. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>Dshow.h</dt> </dl> |
 
 
 

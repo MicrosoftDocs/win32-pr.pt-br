@@ -45,7 +45,7 @@ HRESULT get_Thumbnail(
 
 ## <a name="property-value"></a>Valor da propriedade
 
-Uma variante do tipo VT ARRAY VT VARIANT que contém entradas do tipo \_ \| \_ VT UI4, uma para \_ cada pixel na miniatura.
+Uma variante do tipo VT ARRAY VT VARIANT que contém entradas do tipo \_ \| \_ VT UI4, uma para cada \_ pixel na miniatura.
 
 ## <a name="error-codes"></a>Códigos do Erro
 
@@ -73,7 +73,7 @@ Essa interface retorna a miniatura com menos eficiência do que [**\_ o método 
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                     |
 | Fim do suporte ao cliente<br/>    | Windows 7<br/>                                                                          |
 | Produto<br/>                  | Windows Virtual PC<br/>                                                                 |
-| parâmetro<br/>                   | <dl> <dt>VPCCOMInterfaces.h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>VPCCOMInterfaces.h</dt> </dl> |
 | IID<br/>                      | IID IVMDisplay é definido como \_ 960895e9-f743-4498-96aa-261f867e7fc5<br/>                 |
 
 
