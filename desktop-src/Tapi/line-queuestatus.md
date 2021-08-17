@@ -1,19 +1,19 @@
 ---
-description: A \_ mensagem statusfila de linha é enviada quando o status de uma fila AD é alterado em um manipulador de agente para o qual o aplicativo atualmente tem uma linha aberta. Essa mensagem é gerada usando a função lineProxyMessage.
+description: A mensagem LINE QUEUESTATUS é enviada quando o status de uma fila ACD muda em um manipulador de agente para o qual o aplicativo \_ tem uma linha aberta no momento. Essa mensagem é gerada usando a função lineProxyMessage.
 ms.assetid: 9baacfc5-f26c-41c7-a1f8-f48ec8aa844c
-title: Mensagem de LINE_QUEUESTATUS (TAPI. h)
+title: LINE_QUEUESTATUS mensagem (Tapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3a89785b92009a7531ae693545febaf153cf19bb
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b336a8239e31e5c0bcc70de747cbb48a2028c85e67f44a3e45032f02b37065d9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105779902"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119975526"
 ---
-# <a name="line_queuestatus-message"></a>Mensagem de statusfila de linha \_
+# <a name="line_queuestatus-message"></a>Mensagem LINE \_ QUEUESTATUS
 
-A **mensagem \_ Statusfila de linha** é enviada quando o status de uma fila AD é alterado em um manipulador de agente para o qual o aplicativo atualmente tem uma linha aberta. Essa mensagem é gerada usando a função [**lineProxyMessage**](/windows/desktop/api/Tapi/nf-tapi-lineproxymessage) .
+A **mensagem LINE \_ QUEUESTATUS** é enviada quando o status de uma fila ACD muda em um manipulador de agente para o qual o aplicativo tem uma linha aberta no momento. Essa mensagem é gerada usando a [**função lineProxyMessage.**](/windows/desktop/api/Tapi/nf-tapi-lineproxymessage)
 
 
 ```C++
@@ -29,7 +29,7 @@ A **mensagem \_ Statusfila de linha** é enviada quando o status de uma fila AD 
 *dwDevice* 
 </dt> <dd>
 
-O identificador do aplicativo para o dispositivo de linha. Isso está relacionado ao manipulador do agente.
+O alça do aplicativo para o dispositivo de linha. Isso está relacionado ao manipulador de agente.
 
 </dd> <dt>
 
@@ -40,14 +40,14 @@ A instância de retorno de chamada fornecida ao abrir a linha.
 
 </dd> <dt>
 
-*dwParam1* 
+*Dwparam1* 
 </dt> <dd>
 
 O identificador da fila cujo status foi alterado.
 
 </dd> <dt>
 
-*dwParam2* 
+*Dwparam2* 
 </dt> <dd>
 
 Especifica o status da fila que foi alterado. Pode ser uma ou mais das [**\_ constantes LINEQUEUESTATUS**](linequeuestatus--constants.md).
@@ -67,8 +67,8 @@ Reservado. Definido como zero.
 
 | Requisito | Valor |
 |-------------------------|-----------------------------------------------------------------------------------|
-| Versão da TAPI<br/> | Requer TAPI 2,2<br/>                                                      |
-| parâmetro<br/>       | <dl> <dt>TAPI. h</dt> </dl> |
+| Versão do TAPI<br/> | Requer TAPI 2.2<br/>                                                      |
+| Cabeçalho<br/>       | <dl> <dt>Tapi.h</dt> </dl> |
 
 
 

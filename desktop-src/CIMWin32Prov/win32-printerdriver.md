@@ -36,12 +36,12 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 615d6561e12f67edee34e0de84dade12f250e0f0
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: f28958436ba7ff87aed139bf58129f028c5c3e008f8cc0f291bc3b37091fc5d7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103826416"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119971866"
 ---
 # <a name="win32_printerdriver-class"></a>\_Classe Win32 PrinterDriver
 
@@ -521,7 +521,7 @@ Tipo de acesso: leitura/gravação
 
 Ambientes operacionais para os quais o driver se destina.
 
-Exemplo: "Windows NT x86".
+exemplo: "Windows NT x86".
 
 </dd> <dt>
 

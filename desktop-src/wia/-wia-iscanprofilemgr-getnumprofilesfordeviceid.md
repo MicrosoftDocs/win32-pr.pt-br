@@ -1,7 +1,7 @@
 ---
 description: Obtém o número de perfis de verificação para o dispositivo.
 ms.assetid: fb1f8884-28ef-460e-a8c4-b9608cc89dc6
-title: 'Método IScanProfileMgr:: GetNumProfilesforDeviceID (Scanprofilemgr. h)'
+title: Método IScanProfileMgr::GetNumProfilesforDeviceID (Scanprofilemgr.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - Scanprofilemgr.h
-ms.openlocfilehash: 1a65e1f6571f4ec12a9bd91749c7419f9f9641c7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c2af1e4bc73afee090d947e6bcca0060521cb15cf2faff06be8c9a893534ea4b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104164707"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119264386"
 ---
-# <a name="iscanprofilemgrgetnumprofilesfordeviceid-method"></a>Método IScanProfileMgr:: GetNumProfilesforDeviceID
+# <a name="iscanprofilemgrgetnumprofilesfordeviceid-method"></a>Método IScanProfileMgr::GetNumProfilesforDeviceID
 
 Obtém o número de perfis de verificação para o dispositivo.
 
@@ -40,7 +40,7 @@ HRESULT GetNumProfilesforDeviceID(
 
 <dl> <dt>
 
-*bstrDeviceID* \[ no\]
+*bstrDeviceID* \[ Em\]
 </dt> <dd>
 
 Tipo: **BSTR**
@@ -49,20 +49,20 @@ A ID do dispositivo.
 
 </dd> <dt>
 
-*pulNumProfiles* \[ fora\]
+*pulNumProfiles* \[ out\]
 </dt> <dd>
 
-Tipo: **ULONG \** _
+Tipo: **ULONG \***
 
 Um ponteiro para o número de perfis disponíveis para o dispositivo.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Tipo: _ *HRESULT**
+Tipo: **HRESULT**
 
-Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
+Se esse método for bem-sucedido, ele **retornará S \_ OK.** Caso contrário, ele retornará um **código de erro HRESULT.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -70,10 +70,10 @@ Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, e
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                        |
-| parâmetro<br/>                   | <dl> <dt>Scanprofilemgr. h</dt> </dl> |
-| INSERI<br/>                      | <dl> <dt>Scanprofiles. idl</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                              |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                        |
+| parâmetro<br/>                   | <dl> <dt>Scanprofilemgr.h</dt> </dl> |
+| Idl<br/>                      | <dl> <dt>Scanprofiles.idl</dt> </dl> |
 
 
 
@@ -84,7 +84,7 @@ Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, e
 [**IScanProfileMgr**](-wia-iscanprofilemgr.md)
 </dt> <dt>
 
-[Esquema do perfil de verificação](-wia-scan-profile-schema.md)
+[Esquema de perfil de verificação](-wia-scan-profile-schema.md)
 </dt> </dl>
 
  

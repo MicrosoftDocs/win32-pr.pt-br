@@ -4,16 +4,16 @@ description: IAgentNotifySink ocioso
 ms.assetid: 7770a698-31d9-4f3a-9c7e-858c480b640e
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b43e060f361499b02bc0a83db697938975c76291
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 8263bd9bc62d4fccfad74b18b189c6e4bae426245dd3d4d6a46c826ebacf498d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105811631"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119105162"
 ---
-# <a name="iagentnotifysinkidle"></a>IAgentNotifySink:: Idle
+# <a name="iagentnotifysinkidle"></a>IAgentNotifySink::Idle
 
-\[O Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
+\[O Microsoft Agent foi preterido a partir Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
 
 ``` syntax
 HRESULT Idle(
@@ -22,7 +22,7 @@ HRESULT Idle(
 );                          
 ```
 
-Notifica um aplicativo cliente quando o estado de **deixar** de um caractere é alterado.
+Notifica um aplicativo cliente quando o estado de **Idling** de um caractere é alterado.
 
 -   Sem valor de retorno.
 
@@ -35,23 +35,23 @@ Identificador da solicitação iniciada.
 
 </dd> <dt>
 
-<span id="bStart"></span><span id="bstart"></span><span id="BSTART"></span>*bIniciar*
+<span id="bStart"></span><span id="bstart"></span><span id="BSTART"></span>*bStart*
 </dt> <dd>
 
-Sinalizador de início. Esse valor booliano é **true** quando o caractere começa deixar e **false** quando ele para deixar.
+Sinalizador de início. Esse valor booliana é **True** quando o caractere começa a idling e **False** quando ele para a idling.
 
 </dd> </dl>
 
-Esse evento permite que você acompanhe quando o servidor do Microsoft Agent inicia ou para o processamento ocioso de um caractere.
+Esse evento permite que você acompanhe quando o servidor do Microsoft Agent inicia ou interrompe o processamento ocioso de um caractere.
 
 ## <a name="see-also"></a>Consulte Também
 
-[**IAgentCharacter:: getidlement**](iagentcharacter--getidleon.md), [ **IAgentCharacter:: setidleion**](iagentcharacter--setidleon.md)
+[**IAgentCharacter::GetIdleOn,**](iagentcharacter--getidleon.md) [ **IAgentCharacter::SetIdleOn**](iagentcharacter--setidleon.md)
 
 
- 
+ 
 
- 
+ 
 
 
 

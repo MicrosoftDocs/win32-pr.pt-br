@@ -1,7 +1,7 @@
 ---
 description: Descreve uma matriz.
 ms.assetid: d6b98a32-e745-4724-b8ce-a81a3f5416f3
-title: D3DMATRIX (D3D9Types. h)
+title: D3DMATRIX (D3D9Types.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - D3D9Types.h
-ms.openlocfilehash: 6b4339d2e44e1add46103bae58ad3e02c8a6509b
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: ee4c67a4a743d3bff1cfc5ca88b6691e995f78a9fb01fe36aabc4ae6aca66e6c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105812225"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117732361"
 ---
 # <a name="d3dmatrix"></a>D3DMATRIX
 
@@ -47,7 +47,7 @@ Tipos derivados: \* LPD3DMATRIX
 
 | Item                                                        | Descrição                                                                                                                                                                                                     |
 |-------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="_ij"></span><span id="_IJ"></span>\_Ligatura<br/> | Uma matriz de floats que representa uma matriz 4x4, onde é o número da linha e j é o número da coluna. Por exemplo, \_ 34 significa o mesmo que \[ um ₃ ₄ \] , o componente na terceira linha e a quarta coluna.<br/> |
+| <span id="_ij"></span><span id="_IJ"></span>\_Ij<br/> | Uma matriz de floats que representam uma matriz 4x4, em que i é o número da linha e j é o número da coluna. Por exemplo, \_ 34 significa o mesmo que \[ um , o componente na terceira linha e na quarta \] coluna.<br/> |
 
 
 
@@ -55,7 +55,7 @@ Tipos derivados: \* LPD3DMATRIX
 
 ## <a name="remarks"></a>Comentários
 
-No Direct3D, o \_ elemento 34 de uma matriz de projeção não pode ser um número negativo. Se seu aplicativo precisar usar um valor negativo nesse local, ele deverá dimensionar toda a matriz de projeção em-1 em vez disso.
+No Direct3D, o \_ elemento 34 de uma matriz de projeção não pode ser um número negativo. Se o aplicativo precisar usar um valor negativo nesse local, ele deverá dimensionar toda a matriz de projeção em -1.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -63,7 +63,7 @@ No Direct3D, o \_ elemento 34 de uma matriz de projeção não pode ser um núme
 
 | Requisito | Valor |
 |-------------------|----------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>D3D9Types. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>D3D9Types.h</dt> </dl> |
 
 
 
@@ -71,25 +71,25 @@ No Direct3D, o \_ elemento 34 de uma matriz de projeção não pode ser um núme
 
 <dl> <dt>
 
-[Estruturas do Direct3D](dx9-graphics-reference-d3d-structures.md)
+[Estruturas Direct3D](dx9-graphics-reference-d3d-structures.md)
 </dt> <dt>
 
 [**GetTransform**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-gettransform)
 </dt> <dt>
 
-[**MultiplyTransform**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-multiplytransform)
+[**Multiplytransform**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-multiplytransform)
 </dt> <dt>
 
-[**SetTransform**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-settransform)
+[**Settransform**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-settransform)
 </dt> <dt>
 
-**SetTransform**
+**Settransform**
 </dt> <dt>
 
 [**D3DXMATRIX**](d3dxmatrix.md)
 </dt> <dt>
 
-[Transformações (Direct3D 9)](transforms.md)
+[Transforms (Direct3D 9)](transforms.md)
 </dt> </dl>
 
  

@@ -4,12 +4,12 @@ ms.assetid: 2a16d33c-2d87-4172-a5ff-33ff62e96615
 title: Classe terminal (Tapi3if. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 06d67d7668f9e4e16ad357408c8e9087fce870a1
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6fd20d3e540529b343d1fb848b9e8cb2579a621b40146e0d170fdb175c4c9a18
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105789840"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119975446"
 ---
 # <a name="terminal-class"></a>Classe terminal
 
@@ -102,7 +102,7 @@ Telefone do palestrante.
 
 
 
-falantes.
+Falantes.
 
 
 </dt> </dl> </dd> <dt>
@@ -129,7 +129,7 @@ Janela de exibição de vídeo, criada dinamicamente.
 
 ## <a name="remarks"></a>Comentários
 
-A versão do **BSTR** das classes terminal é designada principalmente para o uso de aplicativos Visual Basic. (Por exemplo, eles são retornados como os elementos da coleção obtidas com [**Get \_ DynamicTerminalClasses**](/windows/win32/api/tapi3if/nf-tapi3if-itterminalsupport-get_dynamicterminalclasses).)
+a versão do **BSTR** das classes terminal é designada principalmente para o uso de aplicativos Visual Basic. (Por exemplo, eles são retornados como os elementos da coleção obtidas com [**Get \_ DynamicTerminalClasses**](/windows/win32/api/tapi3if/nf-tapi3if-itterminalsupport-get_dynamicterminalclasses).)
 
 -   Cadeia de caracteres de CLSID de BSTR \_ \_ HandsetTerminal
 -   Cadeia de caracteres de CLSID de BSTR \_ \_ HeadsetTerminal
@@ -147,7 +147,7 @@ A versão do **BSTR** das classes terminal é designada principalmente para o us
 | Requisito | Valor |
 |-------------------------|--------------------------------------------------------------------------------------|
 | Versão da TAPI<br/> | Requer TAPI 3,0 ou posterior<br/>                                                |
-| parâmetro<br/>       | <dl> <dt>Tapi3if. h</dt> </dl> |
+| Cabeçalho<br/>       | <dl> <dt>Tapi3if. h</dt> </dl> |
 
 
 

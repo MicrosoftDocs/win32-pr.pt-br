@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 44fe28db78980064d8f92c0e4ac5f0cd7fca085b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cad4a2118c494afd0aad094f216c8134fcea40cc63624be59a72db00aad37dc7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104091513"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119973076"
 ---
 # <a name="esentindextuplestextbinarycolumnsonlyexception-class"></a>Classe EsentIndexTuplesTextBinaryColumnsOnlyException
 
@@ -38,7 +38,7 @@ Classe base para JET_err. IndexTuplesTextBinaryColumnsOnly exceções.
 ## <a name="inheritance-hierarchy"></a>Hierarquia de herança
 
 [System.Object](/dotnet/api/system.object)  
-  [System. Exception](/dotnet/api/system.exception)  
+  [System.Exception](/dotnet/api/system.exception)  
     [Microsoft. ISAM. ESENT. EsentException](./esentexception-class.md)  
       [Microsoft. ISAM. ESENT. Interop. EsentErrorException](./esenterrorexception-class.md)  
         [Microsoft. ISAM. ESENT. Interop. EsentApiException](./esentapiexception-class.md)  

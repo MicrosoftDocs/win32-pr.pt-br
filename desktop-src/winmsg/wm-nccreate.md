@@ -1,7 +1,7 @@
 ---
-description: Enviado antes da mensagem de \_ criação do WM quando uma janela é criada pela primeira vez.
+description: Enviado antes da mensagem WM \_ CREATE quando uma janela é criada pela primeira vez.
 ms.assetid: 5dd0eda3-83a6-4077-a7a3-e371c9413b0f
-title: Mensagem de WM_NCCREATE (WinUser. h)
+title: WM_NCCREATE mensagem (Winuser.h)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 84fa5638ef1b97365d202f2049fc79712d0ed3eec167825110f7c7967ce4605c
@@ -11,11 +11,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118200052"
 ---
-# <a name="wm_nccreate-message"></a>Mensagem do WM \_ NCCREATE
+# <a name="wm_nccreate-message"></a>Mensagem \_ WM NCCREATE
 
-Enviado antes da mensagem [**de \_ criação do WM**](wm-create.md) quando uma janela é criada pela primeira vez.
+Enviado antes da mensagem [**WM \_ CREATE**](wm-create.md) quando uma janela é criada pela primeira vez.
 
-Uma janela recebe essa mensagem por meio de sua função [**WindowProc**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85)) .
+Uma janela recebe essa mensagem por meio de [**sua função WindowProc.**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85))
 
 
 ```C++
@@ -38,7 +38,7 @@ Este parâmetro não é usado.
 *lParam* 
 </dt> <dd>
 
-Um ponteiro para a estrutura [**CREATESTRUCT**](/windows/win32/api/winuser/ns-winuser-createstructa) que contém informações sobre a janela que está sendo criada. Os membros de **CREATESTRUCT** são idênticos aos parâmetros da função [**CreateWindowEx**](/windows/win32/api/winuser/nf-winuser-createwindowexa) .
+Um ponteiro para a [**estrutura CREATESTRUCT**](/windows/win32/api/winuser/ns-winuser-createstructa) que contém informações sobre a janela que está sendo criada. Os membros de **CREATETRUCT** são idênticos aos parâmetros da [**função CreateWindowEx.**](/windows/win32/api/winuser/nf-winuser-createwindowexa)
 
 </dd> </dl>
 
@@ -46,7 +46,7 @@ Um ponteiro para a estrutura [**CREATESTRUCT**](/windows/win32/api/winuser/ns-wi
 
 Tipo: **LRESULT**
 
-Se um aplicativo processar essa mensagem, ele deverá retornar **true** para continuar a criação da janela. Se o aplicativo retornar **false**, a função [**CreateWindow**](/windows/win32/api/winuser/nf-winuser-createwindowa) ou [**CreateWindowEx**](/windows/win32/api/winuser/nf-winuser-createwindowexa) retornará um identificador **nulo** .
+Se um aplicativo processa essa mensagem, ele deve retornar **TRUE** para continuar a criação da janela. Se o aplicativo retornar **FALSE,** a [**função CreateWindow**](/windows/win32/api/winuser/nf-winuser-createwindowa) ou [**CreateWindowEx**](/windows/win32/api/winuser/nf-winuser-createwindowexa) retornará um **alça NULL.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -56,7 +56,7 @@ Se um aplicativo processar essa mensagem, ele deverá retornar **true** para con
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                                               |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                     |
-| Cabeçalho<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -67,22 +67,22 @@ Se um aplicativo processar essa mensagem, ele deverá retornar **true** para con
 **Referência**
 </dt> <dt>
 
-[**CreateWindow**](/windows/win32/api/winuser/nf-winuser-createwindowa)
+[**Createwindow**](/windows/win32/api/winuser/nf-winuser-createwindowa)
 </dt> <dt>
 
-[**CreateWindowEx**](/windows/win32/api/winuser/nf-winuser-createwindowexa)
+[**Createwindowex**](/windows/win32/api/winuser/nf-winuser-createwindowexa)
 </dt> <dt>
 
-[**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca)
+[**Defwindowproc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca)
 </dt> <dt>
 
-[**OS CREATESTRUCT**](/windows/win32/api/winuser/ns-winuser-createstructa)
+[**Createstruct**](/windows/win32/api/winuser/ns-winuser-createstructa)
 </dt> <dt>
 
-[**criação do WM \_**](wm-create.md)
+[**WM \_ CREATE**](wm-create.md)
 </dt> <dt>
 
-**Conceitua**
+**Conceitual**
 </dt> <dt>
 
 [Windows](windows.md)

@@ -15,12 +15,12 @@ api_type:
 - DllExport
 api_location:
 - Winspool.drv
-ms.openlocfilehash: 4be073f7832f647e156dbd3b5e12d23ffe6acc06
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bc34feaf5911a706b4977e3f6ab82b8663dde02315dae35ed98b66c7773d89aa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103662571"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119100556"
 ---
 # <a name="deleteprinterkey-function"></a>Função DeletePrinterKey
 
@@ -58,7 +58,7 @@ Se *pKeyName* for uma cadeia de caracteres vazia (""), **DeletePrinterKey** excl
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se a função for bem-sucedida, o valor de retorno será \_ êxito no erro.
 

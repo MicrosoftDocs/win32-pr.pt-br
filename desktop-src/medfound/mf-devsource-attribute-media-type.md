@@ -1,44 +1,44 @@
 ---
 description: Especifica o formato de saída de um dispositivo.
 ms.assetid: 33a1b546-ece2-44ef-a1c0-5579c32be0bc
-title: Atributo MF_DEVSOURCE_ATTRIBUTE_MEDIA_TYPE (Mfidl. h)
+title: MF_DEVSOURCE_ATTRIBUTE_MEDIA_TYPE atributo (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a05283f33fa3b3bf4b9e339b830c2ae6a948ea82
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: eb4685f419658ecf77782a4cef770fd205119bb6cfd95523edb7fbbe001fd700
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "105759845"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119105032"
 ---
-# <a name="mf_devsource_attribute_media_type-attribute"></a>\_Atributo de \_ tipo de mídia de atributo MF DEVSOURCE \_ \_
+# <a name="mf_devsource_attribute_media_type-attribute"></a>Atributo MF \_ DEVSOURCE \_ ATTRIBUTE \_ MEDIA \_ TYPE
 
 Especifica o formato de saída de um dispositivo.
 
 ## <a name="data-type"></a>Tipo de dados
 
-**[**MFT \_ \_ \_ Informações de tipo de registro**](/windows/win32/api/mfobjects/ns-mfobjects-mft_register_type_info)** armazenadas como **byte \[ \]**
+**[**MFT \_ REGISTRAR \_ INFORMAÇÕES \_ DE TIPO**](/windows/win32/api/mfobjects/ns-mfobjects-mft_register_type_info)** armazenadas como **BYTE \[ \]**
 
 ## <a name="getset"></a>Obter/definir
 
-Para obter esse atributo, chame [**IMFAttributes:: getBlob**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getblob).
+Para obter esse atributo, chame [**IMFAttributes::GetBlob.**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getblob)
 
-Para definir esse atributo, chame [**IMFAttributes:: setBlob**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setblob).
+Para definir esse atributo, chame [**IMFAttributes::SetBlob.**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setblob)
 
 ## <a name="remarks"></a>Comentários
 
-Este atributo contém um par de GUIDs: um tipo principal e um subtipo. Essas GUIDs descrevem o formato de saída padrão do dispositivo. O dispositivo pode dar suporte a formatos de saída adicionais.
+Esse atributo contém um par de GUIDs: um tipo principal e um subtipo. Esses GUIDs descrevem o formato de saída padrão do dispositivo. O dispositivo pode dar suporte a formatos de saída adicionais.
 
-Por exemplo, se um dispositivo de captura de vídeo produzir vídeo RGB-32, o valor desse atributo será `{ MFMediaType_Video, MFVideoFormat_RGB32 }` .
+Por exemplo, se um dispositivo de captura de vídeo tiver saída de vídeo RGB-32, o valor desse atributo será `{ MFMediaType_Video, MFVideoFormat_RGB32 }` .
 
-Esse atributo é uma dica para o aplicativo. Para obter o formato de saída exato, crie a origem da mídia para o dispositivo e obtenha o descritor de apresentação da origem de mídia.
+Esse atributo é uma dica para o aplicativo. Para obter o formato de saída exato, crie a fonte de mídia para o dispositivo e obter o descritor de apresentação da fonte de mídia.
 
 Esse atributo é definido nos objetos de ativação retornados pelas seguintes funções:
 
 -   [**MFCreateDeviceSourceActivate**](/windows/desktop/api/mfidl/nf-mfidl-mfcreatedevicesourceactivate)
 -   [**MFEnumDeviceSources**](/windows/desktop/api/mfidl/nf-mfidl-mfenumdevicesources)
 
-A constante de GUID para esse atributo é exportada de mfuuid. lib.
+A constante GUID para esse atributo é exportada de mfuuid.lib.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -46,9 +46,9 @@ A constante de GUID para esse atributo é exportada de mfuuid. lib.
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>                                         |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008 R2\]<br/>                            |
-| parâmetro<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 7 \[ aplicativos da área de trabalho\]<br/>                                         |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho do Server 2008 R2 \[\]<br/>                            |
+| Cabeçalho<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
@@ -56,7 +56,7 @@ A constante de GUID para esse atributo é exportada de mfuuid. lib.
 
 <dl> <dt>
 
-[Lista alfabética de atributos de Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
 [Captura de áudio/vídeo](audio-video-capture.md)

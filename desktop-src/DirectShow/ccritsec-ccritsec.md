@@ -1,7 +1,7 @@
 ---
-description: Construtor de CCritSec. CCritSec-método de construtor.
+description: Construtor CCritSec.CCritSec – Método do construtor.
 ms.assetid: e8e9138a-6c39-41de-a7f8-d9e9c4fe5ab6
-title: Construtor CCritSec. CCritSec (Wxutil. h)
+title: Construtor CCritSec.CCritSec (Wxutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: de2b852ffc9a12622a4560ae834a3347b1e07552
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 9fce4cb5edb9765e7f69726188e5ed0ba2017df7d6fa90cae0bfa059b89fc939
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108119794"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119688986"
 ---
-# <a name="ccritsecccritsec-constructor"></a>Construtor CCritSec. CCritSec
+# <a name="ccritsecccritsec-constructor"></a>Construtor CCritSec.CCritSec
 
-Método de construtor.
+Método do construtor.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -38,11 +38,11 @@ CCritSec();
 
 ## <a name="parameters"></a>Parâmetros
 
-Este construtor não tem parâmetros.
+Esse construtor não tem parâmetros.
 
 ## <a name="remarks"></a>Comentários
 
-Esse método chama a função [**InitializeCriticalSection**](/windows/desktop/api/synchapi/nf-synchapi-initializecriticalsection) para inicializar a seção crítica.
+Esse método chama a [**função InitializeCriticalSection**](/windows/desktop/api/synchapi/nf-synchapi-initializecriticalsection) para inicializar a seção crítica.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,12 +50,12 @@ Esse método chama a função [**InitializeCriticalSection**](/windows/desktop/a
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Wxutil. h (incluir fluxos. h)</dt> </dl>                                                                                    |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Wxutil.h (incluir Fluxos.h)</dt> </dl>                                                                                    |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

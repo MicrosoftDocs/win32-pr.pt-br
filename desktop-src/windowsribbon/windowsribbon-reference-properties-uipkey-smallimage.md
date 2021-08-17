@@ -1,6 +1,6 @@
 ---
 title: UI_PKEY_SmallImage
-description: Identifica a \_ Propriedade PKEY SmallImage da interface do usuário \_ .
+description: Identifica a propriedade \_ SmallImage PKEY \_ da interface do usuário.
 ms.assetid: 247fccfb-4075-4682-974b-efd048e54dac
 ms.topic: article
 ms.date: 05/31/2018
@@ -11,9 +11,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118201338"
 ---
-# <a name="ui_pkey_smallimage"></a>\_SmallImage PKEY \_ UI
+# <a name="ui_pkey_smallimage"></a>PKEY \_ \_ smallImage da interface do usuário
 
-Identifica a \_ Propriedade PKEY SmallImage da interface do usuário \_ .
+Identifica a propriedade \_ SmallImage PKEY \_ da interface do usuário.
 
 ```
 propertyDescription
@@ -27,9 +27,9 @@ propertyDescription
 
 ## <a name="remarks"></a>Comentários
 
-A interface do usuário \_ PKEY \_ SmallImage é usada por um aplicativo para consultar a imagem pequena associada a um controle Ribbon.
+PKEY SmallImage da interface do usuário é usada por um aplicativo para consultar a imagem pequena associada a um controle de faixa \_ \_ de opções.
 
-O valor da propriedade é um objeto [**IUIImage**](/windows/desktop/api/uiribbon/nn-uiribbon-iuiimage) .
+O valor da propriedade é um [**objeto IUIImage.**](/windows/desktop/api/uiribbon/nn-uiribbon-iuiimage)
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -38,7 +38,7 @@ O valor da propriedade é um objeto [**IUIImage**](/windows/desktop/api/uiribbon
 [Propriedades do recurso](windowsribbon-reference-properties-resource.md)
 </dt> <dt>
 
-[Especificando recursos de imagem da faixa de uma](windowsribbon-imageformats.md)
+[Especificando recursos de imagem da faixa de opções](windowsribbon-imageformats.md)
 </dt> </dl>
 
  

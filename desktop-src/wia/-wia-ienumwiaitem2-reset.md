@@ -1,7 +1,7 @@
 ---
 description: Redefine a referência de enumeração para o primeiro objeto IWiaItem2.
 ms.assetid: 392e3471-f7fc-456f-a1cc-ab4eb6d3fe18
-title: 'Método IEnumWiaItem2:: Reset (WIA. h)'
+title: Método IEnumWiaItem2::Reset (Wia.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Wia.h
-ms.openlocfilehash: ab4d5a9effbcb003265da53ddc753f63630df51a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4811ab00cc842712502556a4ab8a315b6b6780031e7fc52852f9a3b6fdde96b1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104164711"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119451116"
 ---
-# <a name="ienumwiaitem2reset-method"></a>Método IEnumWiaItem2:: Reset
+# <a name="ienumwiaitem2reset-method"></a>Método IEnumWiaItem2::Reset
 
-Redefine a referência de enumeração para o primeiro objeto [**IWiaItem2**](-wia-iwiaitem2.md) .
+Redefine a referência de enumeração para o primeiro [**objeto IWiaItem2.**](-wia-iwiaitem2.md)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -37,11 +37,11 @@ HRESULT Reset();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **HRESULT**
 
-Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
+Se esse método for bem-sucedido, ele **retornará S \_ OK.** Caso contrário, ele retornará um **código de erro HRESULT.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -49,10 +49,10 @@ Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, e
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                     |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                               |
-| parâmetro<br/>                   | <dl> <dt>WIA. h</dt> </dl>   |
-| INSERI<br/>                      | <dl> <dt>WIA. idl</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                     |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                               |
+| parâmetro<br/>                   | <dl> <dt>Wia.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>Wia.idl</dt> </dl> |
 
 
 

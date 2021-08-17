@@ -1,11 +1,11 @@
 ---
-title: Propriedade TaskDefinition. Triggers
-description: Para scripts, Obtém ou define uma coleção de gatilhos que são usados para iniciar uma tarefa.
+title: Propriedade TaskDefinition.Triggers
+description: Para scripts, obtém ou define uma coleção de gatilhos usados para iniciar uma tarefa.
 ms.assetid: ff5faa5d-30eb-4ecb-91bc-ae5e42fec69f
 keywords:
-- Agendador de Tarefas da propriedade Triggers
-- Propriedade Triggers Agendador de Tarefas, objeto TaskDefinition
-- Agendador de Tarefas de objeto TaskDefinition, Propriedade Triggers
+- Gatilhos de propriedade Agendador de Tarefas
+- A propriedade Triggers Agendador de Tarefas objeto , TaskDefinition
+- Objeto TaskDefinition Agendador de Tarefas propriedade , Gatilhos
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 914724c8b0f39cafb7328a39acd827eed1ec386e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1c6dc654473b7e6c01e439f48e013b8e758383641f711643098460ce5bdb4960
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455507"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119975016"
 ---
-# <a name="taskdefinitiontriggers-property"></a>Propriedade TaskDefinition. Triggers
+# <a name="taskdefinitiontriggers-property"></a>Propriedade TaskDefinition.Triggers
 
-Para scripts, Obtém ou define uma coleção de gatilhos que são usados para iniciar uma tarefa.
+Para scripts, obtém ou define uma coleção de gatilhos usados para iniciar uma tarefa.
 
 ## <a name="syntax"></a>Syntax
 
@@ -46,9 +46,9 @@ Uma coleção de gatilhos que são usados para iniciar uma tarefa.
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                          |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                    |
-| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd. tlb</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                          |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                    |
+| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 
 
@@ -57,10 +57,10 @@ Uma coleção de gatilhos que são usados para iniciar uma tarefa.
 
 <dl> <dt>
 
-[**Disparador**](triggercollection.md)
+[**Triggercollection**](triggercollection.md)
 </dt> <dt>
 
-[**Of**](trigger.md)
+[**Gatilho**](trigger.md)
 </dt> </dl>
 
  

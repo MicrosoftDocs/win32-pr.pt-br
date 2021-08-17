@@ -4,12 +4,12 @@ description: A alça de tamanho é um ponteiro especial do mouse no canto inferi
 ms.assetid: 886b27b3-e88d-47a1-85f3-a55bd14c7a7c
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9fb7180a8936aff46903257e6be8ca4ab7f0e5b8
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 7315425720ddee8beaf0f7c1f1b2ecbd8ba0fada51e64dc70453f3bb477e1f6c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103637113"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119795636"
 ---
 # <a name="size-grip-msaa-ui-element-reference"></a>Alça de tamanho (referência de elemento de interface do usuário do MSAA)
 
@@ -39,7 +39,7 @@ A alça de tamanho dá suporte às seguintes propriedades de [**IAccessible**](/
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -48,9 +48,9 @@ A alça de tamanho dá suporte às seguintes propriedades de [**IAccessible**](/
 [IAccessible](/windows/desktop/api/oleacc/nn-oleacc-iaccessible)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

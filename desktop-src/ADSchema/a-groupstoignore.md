@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9a50f807a45abfc6117e1899f68b631597b8f71d
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 2163cc17ad473ff225ca11b5e5f4f04e272f457b895e8ef7ee4f083bd122db09
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103919532"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119322996"
 ---
 # <a name="groups-to-ignore-attribute"></a>Atributo de grupos para ignorar
 

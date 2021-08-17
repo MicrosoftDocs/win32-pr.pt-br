@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - mxdc.h
-ms.openlocfilehash: 08b5ae7e44f7b9c35d6a395b78ce514aee050e5f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7ace79404808db750a15b2c17b6fedb336dbd1d72b1581888324a4d87bb7cd67
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105751159"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119460876"
 ---
 # <a name="mxdc_escape-function"></a>\_Função de escape MXDC
 
@@ -100,7 +100,7 @@ Um ponteiro para um buffer que contém os dados de saída.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se a função for realizada com sucesso, o valor de retorno será maior que zero. Se a função falhar ou não tiver suporte, o valor de retorno será menor ou igual a zero.
 
@@ -110,7 +110,7 @@ Esse escape é suportado por MXDC e XPSDrv, mas não pela GDI.
 
 Para determinar se o driver de impressora é o MXDC, chame [**ExtEscape**](/windows/desktop/api/Wingdi/nf-wingdi-extescape) com o escape [**gettechnology**](/previous-versions/windows/desktop/legacy/dd144931(v=vs.85)) . Se o driver for o MXDC, o **ExtEscape** retornará a cadeia de caracteres com terminação zero, " http://schemas.microsoft.com/xps/2005/06 ". Verifique se o buffer referenciado pelo parâmetro *lpszOutData* é grande o suficiente para conter essa cadeia de caracteres.
 
-Para determinar se o driver de impressora é o driver do gravador de documentos XPS da Microsoft para Windows, confirme se o driver de impressora é o MXDC e, em seguida, determine se o nome do driver de impressora é "Microsoft XPS Document Writer".
+para determinar se o driver de impressora é o Windows driver de gravador de documento xps da microsoft, confirme se o driver de impressora é o MXDC e, em seguida, determine se o nome do driver de impressora é "Microsoft xps Document writer".
 
 Para obter o nome do driver de impressora, use uma das técnicas a seguir. <dl> Chame [**GetPrinterDriver**](getprinterdriver.md) com o valor do parâmetro *Level* definido como 1. O nome do driver de impressora é retornado no membro **pname** da [**estrutura \_ info \_ do driver 1**](driver-info-1.md) .  
 ou  
@@ -139,8 +139,8 @@ A tabela a seguir mostra onde encontrar vários objetos no arquivo XPS que vári
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                    |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                              |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                    |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                              |
 | parâmetro<br/>                   | <dl> <dt>Mxdc. h</dt> </dl> |
 
 

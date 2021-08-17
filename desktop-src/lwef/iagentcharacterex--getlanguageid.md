@@ -4,16 +4,16 @@ description: IAgentCharacterEx getlanguageid
 ms.assetid: 4e4e5342-edf9-480b-a9c3-e2626fd89e76
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3d847bf392709b2433b045a357a703173e2de454
-ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
+ms.openlocfilehash: fb0eeee052111ef0acbb843f4362ca0bfd3b40ab7d154ef0c46c43f6c2d0e0f2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113120642"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119105544"
 ---
 # <a name="iagentcharacterexgetlanguageid"></a>IAgentCharacterEx:: getlanguageid
 
-\[O Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
+\[o Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
 
 ``` syntax
 HRESULT GetLanguageID(
@@ -34,7 +34,7 @@ Endereço de uma variável que recebe a configuração de ID de idioma para o ca
 
 </dd> </dl>
 
-Um inteiro longo que especifica a ID de idioma para o caractere. A ID de idioma (LANGid) para um caractere é um valor de 16 bits definido pelo Windows, que consiste em uma ID de idioma primário e uma ID de idioma secundário. Os exemplos a seguir são valores para alguns idiomas. Para determinar os valores de outros idiomas, consulte a documentação do Platform SDK.
+Um inteiro longo que especifica a ID de idioma para o caractere. a id de idioma (langid) para um caractere é um valor de 16 bits definido por Windows, que consiste em uma id de idioma principal e uma id de idioma secundário. Os exemplos a seguir são valores para alguns idiomas. Para determinar os valores de outros idiomas, consulte a documentação do Platform SDK.
 
 
 

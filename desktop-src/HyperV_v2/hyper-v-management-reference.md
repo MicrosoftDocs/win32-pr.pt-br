@@ -21,8 +21,8 @@ Esta seção contém a referência para o gerenciamento do Hyper-V.
 
 | Tópico                                                                               | Descrição                                                                               |
 |-------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
-| [Códigos de controle de gerenciamento do Hyper-V](hyper-v-management-control-codes.md)<br/> | Esta seção identifica os códigos de controle que são usados no gerenciamento do Hyper-V.<br/> |
-| [Estruturas de gerenciamento do Hyper-V](hyper-v-management-structures.md)<br/>       | Esta seção identifica as estruturas que são usadas no gerenciamento do Hyper-V.<br/>    |
+| [Códigos de controle de gerenciamento do Hyper-V](hyper-v-management-control-codes.md)<br/> | Esta seção identifica os códigos de controle usados no gerenciamento do Hyper-V.<br/> |
+| [Estruturas de gerenciamento do Hyper-V](hyper-v-management-structures.md)<br/>       | Esta seção identifica as estruturas usadas no gerenciamento do Hyper-V.<br/>    |
 
 
 

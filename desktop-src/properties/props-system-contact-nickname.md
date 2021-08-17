@@ -4,12 +4,12 @@ ms.assetid: c4470744-0f07-425e-a782-c12ec98af53d
 title: System. Contact. Alcunha
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ebf1b68d64413bdc10f33b090793ec2ba87b9a85
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 883911a65bc46db2e851805793c12889ec31af479647aa6d74bd56c8525325db
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103828477"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120091646"
 ---
 # <a name="systemcontactnickname"></a>System. Contact. Alcunha
 

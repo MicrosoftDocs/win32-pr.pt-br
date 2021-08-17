@@ -36,7 +36,7 @@ O nome diferenciado de um objeto que atende a uma função organizacional.
 | Frequência de atualização  | \-                                      |
 | Attribute-Id      | 2.5.4.33                                |
 | System-Id-Guid    | a8df7465-c5ea-11d1-serb-0080c76670c0    |
-| Sintaxe            | [**Object(DS-DN)**](s-object-ds-dn.md) |
+| Syntax            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
 
@@ -121,10 +121,10 @@ O nome diferenciado de um objeto que atende a uma função organizacional.
 | ID do link                | \-                                                             |
 | MAPI-Id                | 0x8125                                                         |
 | System-Only            | Falso                                                          |
-| Tem valor único       | Falso                                                          |
+| É de valor único       | Falso                                                          |
 | É indexado             | Falso                                                          |
-| No Catálogo Global      | Falso                                                          |
-| Descritor de segurança NT | O:BAG:BAD:S:                                                   |
+| No catálogo global      | Falso                                                          |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                   |
 | Range-Lower            | \-                                                             |
 | Range-Upper            | \-                                                             |
 | Search-Flags           | 0x00000000                                                     |
@@ -142,10 +142,10 @@ O nome diferenciado de um objeto que atende a uma função organizacional.
 | ID do link                | \-                                                             |
 | MAPI-Id                | 0x8125                                                         |
 | System-Only            | Falso                                                          |
-| Tem valor único       | Falso                                                          |
+| É de valor único       | Falso                                                          |
 | É indexado             | Falso                                                          |
-| No Catálogo Global      | Falso                                                          |
-| Descritor de segurança NT | O:BAG:BAD:S:                                                   |
+| No catálogo global      | Falso                                                          |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                   |
 | Range-Lower            | \-                                                             |
 | Range-Upper            | \-                                                             |
 | Search-Flags           | 0x00000000                                                     |
@@ -163,10 +163,10 @@ O nome diferenciado de um objeto que atende a uma função organizacional.
 | ID do link                | \-                                                             |
 | MAPI-Id                | 0x8125                                                         |
 | System-Only            | Falso                                                          |
-| Tem valor único       | Falso                                                          |
+| É de valor único       | Falso                                                          |
 | É indexado             | Falso                                                          |
-| No Catálogo Global      | Falso                                                          |
-| Descritor de segurança NT | O:BAG:BAD:S:                                                   |
+| No catálogo global      | Falso                                                          |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                   |
 | Range-Lower            | \-                                                             |
 | Range-Upper            | \-                                                             |
 | Search-Flags           | 0x00000000                                                     |

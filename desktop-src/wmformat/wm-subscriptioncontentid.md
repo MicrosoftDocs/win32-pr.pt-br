@@ -3,7 +3,7 @@ title: WM/SubscriptionContentID
 description: O atributo WM/SubscriptionContentID contém o identificador de conteúdo da assinatura.
 ms.assetid: c287c324-aa48-48ee-8699-d30e5b30117b
 keywords:
-- Formato de mídia do Windows do WM/SubscriptionContentID
+- Formato de mídia do Windows WM/SubscriptionContentID
 topic_type:
 - apiref
 api_name:
@@ -21,7 +21,7 @@ ms.locfileid: "118195599"
 ---
 # <a name="wmsubscriptioncontentid"></a>WM/SubscriptionContentID
 
-O atributo **WM/SubscriptionContentID** contém o identificador de conteúdo da assinatura.
+O **atributo WM/SubscriptionContentID** contém o identificador de conteúdo da assinatura.
 
 ## <a name="global-constant"></a>Constante global
 
@@ -29,7 +29,7 @@ g \_ wszWMSubscriptionContentID
 
 ## <a name="data-type"></a>Tipo de Dados
 
-**Cadeia de caracteres do \_ tipo WMT \_**
+**CADEIA DE CARACTERES DE \_ TIPO \_ WMT**
 
 ## <a name="see-also"></a>Confira também
 

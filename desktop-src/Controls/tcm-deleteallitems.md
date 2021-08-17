@@ -1,9 +1,9 @@
 ---
-title: Mensagem de TCM_DELETEALLITEMS (commctrl. h)
-description: Remove todos os itens de um controle guia. Você pode enviar essa mensagem explicitamente ou usando a macro TabCtrl \_ DeleteAllItems.
+title: TCM_DELETEALLITEMS mensagem (Commctrl.h)
+description: Remove todos os itens de um controle de tabulação. Você pode enviar essa mensagem explicitamente ou usando a \_ macro DeleteAllItems tabCtrl.
 ms.assetid: 733494c4-38f4-44ba-98d2-c33a8d63c3b7
 keywords:
-- controles de Windows de mensagem de TCM_DELETEALLITEMS
+- TCM_DELETEALLITEMS controles de Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -21,9 +21,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119434146"
 ---
-# <a name="tcm_deleteallitems-message"></a>\_Mensagem DELETEALLITEMS de TCM
+# <a name="tcm_deleteallitems-message"></a>Mensagem TCM \_ DELETEALLITEMS
 
-Remove todos os itens de um controle guia. Você pode enviar essa mensagem explicitamente ou usando a macro [**TabCtrl \_ DeleteAllItems**](/windows/desktop/api/Commctrl/nf-commctrl-tabctrl_deleteallitems) .
+Remove todos os itens de um controle de tabulação. Você pode enviar essa mensagem explicitamente ou usando a [**macro \_ DeleteAllItems tabCtrl.**](/windows/desktop/api/Commctrl/nf-commctrl-tabctrl_deleteallitems)
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -37,7 +37,7 @@ Remove todos os itens de um controle guia. Você pode enviar essa mensagem expli
 
 ## <a name="return-value"></a>Valor retornado
 
-Retorna **verdadeiro** se for bem-sucedido ou **false** caso contrário.
+Retorna **TRUE se** for bem-sucedido ou FALSE **caso** contrário.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -45,9 +45,9 @@ Retorna **verdadeiro** se for bem-sucedido ou **false** caso contrário.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

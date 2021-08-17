@@ -1,9 +1,9 @@
 ---
-title: MIM_OPEN mensagem (Mmsystem.h)
-description: A MIM open é enviada para uma função de retorno de chamada de entrada \_ MIDI quando um dispositivo de entrada MIDI é aberto.
+title: Mensagem de MIM_OPEN (mmsystem. h)
+description: o MIM \_ mensagem aberta é enviado para uma função de retorno de chamada de entrada de midi quando um dispositivo de entrada midi é aberto.
 ms.assetid: c7a8b856-aedd-457d-8a21-0ec2e9303960
 keywords:
-- MIM_OPEN mensagem Windows Multimídia
+- mensagem de MIM_OPEN Windows multimídia
 topic_type:
 - apiref
 api_name:
@@ -21,9 +21,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119428116"
 ---
-# <a name="mim_open-message"></a>\_MIM Mensagem OPEN
+# <a name="mim_open-message"></a>MIM \_ Abrir mensagem
 
-A **MIM \_ open** é enviada para uma função de retorno de chamada de entrada MIDI quando um dispositivo de entrada MIDI é aberto.
+o **MIM mensagem \_ aberta** é enviado para uma função de retorno de chamada de entrada de midi quando um dispositivo de entrada midi é aberto.
 
 
 ```C++
@@ -38,17 +38,17 @@ dwParam2 = reserved
 
 <dl> <dt>
 
-<span id="dwParam1"></span><span id="dwparam1"></span><span id="DWPARAM1"></span>*Dwparam1*
+<span id="dwParam1"></span><span id="dwparam1"></span><span id="DWPARAM1"></span>*dwParam1*
 </dt> <dd>
 
-Reservado; não use.
+Reservado Não use.
 
 </dd> <dt>
 
-<span id="dwParam2"></span><span id="dwparam2"></span><span id="DWPARAM2"></span>*Dwparam2*
+<span id="dwParam2"></span><span id="dwparam2"></span><span id="DWPARAM2"></span>*dwParam2*
 </dt> <dd>
 
-Reservado; não use.
+Reservado Não use.
 
 </dd> </dl>
 
@@ -64,7 +64,7 @@ Essa mensagem não retorna um valor.
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                                                |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                      |
-| Cabeçalho<br/>                   | <dl> <dt>Mmsystem.h (incluir Windows.h)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Mmsystem. h (incluir Windows. h)</dt> </dl> |
 
 
 
@@ -72,7 +72,7 @@ Essa mensagem não retorna um valor.
 
 <dl> <dt>
 
-[MIDI (Instrument Digital Interface)](musical-instrument-digital-interface--midi.md)
+[MIDI (interface digital de instrumento musical)](musical-instrument-digital-interface--midi.md)
 </dt> <dt>
 
 [Mensagens MIDI](midi-messages.md)

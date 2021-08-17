@@ -1,6 +1,6 @@
 ---
 title: HasAudio
-description: O atributo HasAudio é um atributo em nível de arquivo que especifica se o arquivo contém fluxos de áudio.
+description: O atributo HasAudio é um atributo de nível de arquivo que especifica se o arquivo contém fluxos de áudio.
 ms.assetid: 104c9634-611b-4cd9-8493-cfdaddd49b72
 keywords:
 - Formato de mídia do Windows HasAudio
@@ -21,7 +21,7 @@ ms.locfileid: "118198404"
 ---
 # <a name="hasaudio"></a>HasAudio
 
-O atributo **HasAudio** é um atributo em nível de arquivo que especifica se o arquivo contém fluxos de áudio.
+O **atributo HasAudio** é um atributo de nível de arquivo que especifica se o arquivo contém fluxos de áudio.
 
 ## <a name="global-constant"></a>Constante global
 
@@ -29,13 +29,13 @@ g \_ wszWMHasAudio
 
 ## <a name="data-type"></a>Tipo de Dados
 
-**WMT \_ tipo \_ bool**
+**TIPO WMT \_ \_ BOOL**
 
 ## <a name="remarks"></a>Comentários
 
-Este é um atributo codificado.
+Esse é um atributo codificado.
 
-Este atributo não pode ser duplicado no nível do arquivo. se esse atributo for usado para um fluxo individual, ele será tratado como metadados personalizados e não transmitirá seu significado normal para os objetos do SDK do formato de mídia Windows.
+Esse atributo não pode ser duplicado no nível do arquivo. Se esse atributo for usado para um fluxo individual, ele será tratado como metadados personalizados e não transmitirá seu significado normal para os objetos do SDK Windows Formato de Mídia.
 
 ## <a name="see-also"></a>Confira também
 

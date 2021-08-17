@@ -4,9 +4,9 @@ description: Recupera o estado da área de trabalho virtual.
 ms.assetid: 176096ba-2b5f-428c-9216-02e3e97be64e
 ms.tgt_platform: multiple
 keywords:
-- Serviços de Área de Trabalho Remota do método GetVirtualDesktopState
-- Método GetVirtualDesktopState Serviços de Área de Trabalho Remota, classe Win32_RDMSVirtualDesktop
-- Classe Win32_RDMSVirtualDesktop Serviços de Área de Trabalho Remota, método GetVirtualDesktopState
+- Método GetVirtualDesktopState Serviços de Área de Trabalho Remota
+- Método GetVirtualDesktopState Serviços de Área de Trabalho Remota classe Win32_RDMSVirtualDesktop ,
+- Win32_RDMSVirtualDesktop classe Serviços de Área de Trabalho Remota , método GetVirtualDesktopState
 topic_type:
 - apiref
 api_name:
@@ -17,14 +17,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 674e9646f0f41166fbfdc9e4ad35df697023329a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: bb59cf90f436d3d44c20daa2a7f8146f688d012310253bafcf0185fe804b89fd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105779279"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119059464"
 ---
-# <a name="getvirtualdesktopstate-method-of-the-win32_rdmsvirtualdesktop-class"></a>Método GetVirtualDesktopState da classe Win32 \_ RDMSVirtualDesktop
+# <a name="getvirtualdesktopstate-method-of-the-win32_rdmsvirtualdesktop-class"></a>Método GetVirtualDesktopState da classe \_ Win32 RDMSVirtualDesktop
 
 Recupera o estado da área de trabalho virtual.
 
@@ -43,18 +43,18 @@ uint32 GetVirtualDesktopState(
 
 <dl> <dt>
 
-*VMState* \[ fora\]
+*VMState* \[ out\]
 </dt> <dd>
 
 Recebe um valor que indica o estado da máquina virtual.
 
-Esse parâmetro pode apostar definido como um dos seguintes valores:
+Esse parâmetro pode ser definido como um dos seguintes valores:
 
 <dt>
 
 <span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>
 
-<span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>**Desconhecido** (0 (padrão))
+<span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>**Desconhecido** (0 (Padrão))
 
 
 </dt> <dd>
@@ -87,12 +87,12 @@ A máquina virtual está desligada.
 
 <span id="Paused"></span><span id="paused"></span><span id="PAUSED"></span>
 
-<span id="Paused"></span><span id="paused"></span><span id="PAUSED"></span>Em **pausa** (32768)
+<span id="Paused"></span><span id="paused"></span><span id="PAUSED"></span>**Pausado** (32768)
 
 
 </dt> <dd>
 
-A máquina virtual está pausada.
+A máquina virtual está em pausa.
 
 </dd> <dt>
 
@@ -147,13 +147,13 @@ A máquina virtual está sendo desligada.
 
 </dt> <dd>
 
-A máquina virtual está sendo pausada.
+A máquina virtual está pausando.
 
 </dd> <dt>
 
 <span id="Resuming"></span><span id="resuming"></span><span id="RESUMING"></span>
 
-<span id="Resuming"></span><span id="resuming"></span><span id="RESUMING"></span>**Retomando** (32777)
+<span id="Resuming"></span><span id="resuming"></span><span id="RESUMING"></span>**Continuando** (32777)
 
 
 </dt> <dd>
@@ -162,7 +162,7 @@ A máquina virtual está retomando de um estado em pausa.
 
 </dd> </dl> </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna 0 em caso de êxito; caso contrário, retorna um código de erro WMI.
 
@@ -174,8 +174,8 @@ Retorna 0 em caso de êxito; caso contrário, retorna um código de erro WMI.
 |-------------------------------------|---------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Nenhum compatível<br/>                                                                   |
 | Servidor mínimo com suporte<br/> | Windows Server 2012<br/>                                                              |
-| Namespace<br/>                | \\RDMs CIMv2 \\ raiz<br/>                                                                |
-| MOF<br/>                      | <dl> <dt>RDManagement. mof</dt> </dl> |
+| Namespace<br/>                | \\rdms CIMv2 \\ raiz<br/>                                                                |
+| MOF<br/>                      | <dl> <dt>RDManagement.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>RDMS.dll</dt> </dl>         |
 
 
@@ -184,7 +184,7 @@ Retorna 0 em caso de êxito; caso contrário, retorna um código de erro WMI.
 
 <dl> <dt>
 
-[**\_RDMSVirtualDesktop Win32**](win32-rdmsvirtualdesktop.md)
+[**Win32 \_ RDMSVirtualDesktop**](win32-rdmsvirtualdesktop.md)
 </dt> </dl>
 
  

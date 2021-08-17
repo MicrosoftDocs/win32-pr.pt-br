@@ -24,29 +24,29 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 607fb59d6f9f89c33e685ed411ae9dc95eaa6818
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2f29c322b112994159799fd34a7db7a149cf6e7593b132fe4925838335bccdd8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105787644"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119970926"
 ---
 # <a name="esentresource-class"></a>Classe EsentResource
 
-Essa é a classe base para todos os objetos de recurso de ESENT. As subclasses dessa classe podem alocar e liberar recursos não gerenciados.
+Essa é a classe base para todos os objetos de recurso de esent. As subclasses dessa classe podem alocar e liberar recursos não utilizados.
 
 ## <a name="inheritance-hierarchy"></a>Hierarquia de herança
 
 [System.Object](/dotnet/api/system.object)  
-  Microsoft. ISAM. ESENT. Interop. EsentResource  
-    [Microsoft. ISAM. ESENT. Interop. Session](./session-class.md)  
-    [Microsoft. ISAM. ESENT. Interop. Table](./table-class.md)  
-    [Microsoft. ISAM. ESENT. Interop. Transaction](./transaction-class.md)  
-    [Microsoft. ISAM. ESENT. Interop. Update](./update-class.md)  
-    [Microsoft. ISAM. ESENT. Interop. Windows8. DurableCommitCallback](./durablecommitcallback-class.md)  
+  Microsoft.Isam.Esent.Interop.EsentResource  
+    [Microsoft.Isam.Esent.Interop.Session](./session-class.md)  
+    [Microsoft.Isam.Esent.Interop.Table](./table-class.md)  
+    [Microsoft.Isam.Esent.Interop.Transaction](./transaction-class.md)  
+    [Microsoft.Isam.Esent.Interop.Update](./update-class.md)  
+    [Microsoft.Isam.Esent.Interop.Windows8.DurableCommitCallback](./durablecommitcallback-class.md)  
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Syntax
 
@@ -70,6 +70,6 @@ Qualquer membro estático público (Shared no Visual Basic) desse tipo é seguro
 
 #### <a name="reference"></a>Referência
 
-[Membros do EsentResource](./esentresource-members.md)
+[Membros EsentResource](./esentresource-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

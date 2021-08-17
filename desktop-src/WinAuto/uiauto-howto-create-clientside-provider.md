@@ -1,25 +1,25 @@
 ---
-title: Como criar um provedor de automação de interface do usuário Client-Side (proxy)
-description: Este tópico contém um código de exemplo que mostra como implementar um provedor de automação da interface do usuário ou proxy do lado do cliente.
+title: Como criar um provedor Client-Side (proxy) Automação da Interface do Usuário servidor
+description: Este tópico contém um código de exemplo que mostra como implementar um proxy ou do lado do cliente, o provedor Automação da Interface do Usuário Microsoft.
 ms.assetid: 37e54a0f-3d41-4f47-ba73-7f1bf6c365e7
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 62a0b32ae60d6364ea6eac18fae991d1d600e61c
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 7d7623a21681bdb1765d96d89e19b4089b59ab042865dbe5fdd39c37c635e432
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103636177"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119955736"
 ---
-# <a name="how-to-create-a-client-side-proxy-ui-automation-provider"></a>Como criar um provedor de automação de interface do usuário Client-Side (proxy)
+# <a name="how-to-create-a-client-side-proxy-ui-automation-provider"></a>Como criar um provedor Client-Side (proxy) Automação da Interface do Usuário servidor
 
-Este tópico contém um código de exemplo que mostra como implementar um provedor de automação da interface do usuário ou proxy do lado do cliente.
+Este tópico contém um código de exemplo que mostra como implementar um proxy ou do lado do cliente, o provedor Automação da Interface do Usuário Microsoft.
 
--   [Exemplo 1: enumerando a tabela de fábrica de proxy](#example-1-enumerating-the-proxy-factory-table)
--   [Exemplo 2: Implementando um proxy simples para controles de botão](#example-2-implementing-a-simple-proxy-for-button-controls)
+-   [Exemplo 1: Enumerando a tabela do Proxy Factory](#example-1-enumerating-the-proxy-factory-table)
+-   [Exemplo 2: implementando um proxy simples para controles de botão](#example-2-implementing-a-simple-proxy-for-button-controls)
 -   [Tópicos relacionados](#related-topics)
 
-## <a name="example-1-enumerating-the-proxy-factory-table"></a>Exemplo 1: enumerando a tabela de fábrica de proxy
+## <a name="example-1-enumerating-the-proxy-factory-table"></a>Exemplo 1: Enumerando a tabela do Proxy Factory
 
 O código de exemplo a seguir enumera as entradas na tabela de fábrica de proxy e exibe o nome de classe do controle com suporte. Para proxies que não são fornecidos com o sistema operacional, o nome da imagem é exibido.
 
@@ -70,9 +70,9 @@ HRESULT GetProxyTable()
 
 
 
-## <a name="example-2-implementing-a-simple-proxy-for-button-controls"></a>Exemplo 2: Implementando um proxy simples para controles de botão
+## <a name="example-2-implementing-a-simple-proxy-for-button-controls"></a>Exemplo 2: implementando um proxy simples para controles de botão
 
-O código de exemplo a seguir implementa um proxy simples para controles que têm o nome de classe "Button" e adiciona uma entrada para o proxy à tabela de fábrica de proxy. Este exemplo usa a caixa de diálogo fonte do bloco de notas para demonstrar o proxy.
+O código de exemplo a seguir implementa um proxy simples para controles que têm o nome de classe "Button" e adiciona uma entrada para o proxy à tabela de fábrica de proxy. Este exemplo usa a caixa de diálogo Fonte Bloco de notas para demonstrar o proxy.
 
 
 ```C++
@@ -366,18 +366,18 @@ cleanup:
 
 <dl> <dt>
 
-**Conceitua**
+**Conceitual**
 </dt> <dt>
 
-[Implementando um provedor de automação de interface do usuário Client-Side](uiauto-serversideprovider.md)
+[Implementando um provedor Client-Side Automação da Interface do Usuário dados](uiauto-serversideprovider.md)
 </dt> <dt>
 
-[Tópicos de instruções para provedores de automação de interface do usuário](uiauto-howto-topics-for-uiautomation-providers.md)
+[Tópicos de ida e Automação da Interface do Usuário provedores](uiauto-howto-topics-for-uiautomation-providers.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,7 +1,7 @@
 ---
-description: Causa uma exceção de ponto de interrupção e registra a cadeia de caracteres especificada usando a macro DbgLog. Ignorado em compilações de varejo.
+description: Causa uma exceção de ponto de interrupção e registra a cadeia de caracteres especificada usando a macro DbgLog. Ignorado em builds de varejo.
 ms.assetid: 475810db-692b-4727-9ef1-ece74e9618d0
-title: Macro KDbgBreak (Wxdebug. h)
+title: Macro KDbgBreak (Wxdebug.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - Wxdebug.h
-ms.openlocfilehash: 9631dc8d956652137810b25ae5923cc1c6927bee
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3339e69bb10876fe326f5960e6012849664fdbfcb4fe06fffd4029e6170af8b1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105757877"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118952355"
 ---
 # <a name="kdbgbreak-macro"></a>Macro KDbgBreak
 
-Causa uma exceção de ponto de interrupção e registra a cadeia de caracteres especificada usando a macro [**DbgLog**](dbglog.md) . Ignorado em compilações de varejo.
+Causa uma exceção de ponto de interrupção e registra a cadeia de caracteres especificada usando a [**macro DbgLog.**](dbglog.md) Ignorado em builds de varejo.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,17 +42,17 @@ void KDbgBreak(
 *strLiteral* 
 </dt> <dd>
 
-Cadeia de texto.
+Cadeia de caracteres de texto.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Essa macro não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-Ao contrário da macro [**DbgBreak**](dbgbreak.md) , essa macro não exibe uma caixa de mensagem solicitando o usuário. Em compilações de depuração, ele automaticamente faz com que ocorra uma exceção de ponto de interrupção.
+Ao contrário [**da macro DbgBreak,**](dbgbreak.md) essa macro não exibe uma caixa de mensagem solicitando o usuário. Em builds de depuração, isso faz com que ocorra automaticamente uma exceção de ponto de interrupção.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -60,7 +60,7 @@ Ao contrário da macro [**DbgBreak**](dbgbreak.md) , essa macro não exibe uma c
 
 | Requisito | Valor |
 |-------------------|----------------------------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>Wxdebug. h (incluir fluxos. h)</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>Wxdebug.h (incluir Fluxos.h)</dt> </dl> |
 
 
 
@@ -68,7 +68,7 @@ Ao contrário da macro [**DbgBreak**](dbgbreak.md) , essa macro não exibe uma c
 
 <dl> <dt>
 
-[Macros Assert e Breakpoint](assert-and-breakpoint-macros.md)
+[Macros assert e breakpoint](assert-and-breakpoint-macros.md)
 </dt> </dl>
 
  

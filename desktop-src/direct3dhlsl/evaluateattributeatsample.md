@@ -1,9 +1,9 @@
 ---
 title: Função EvaluateAttributeAtSample
-description: Avalia no local de exemplo indexado.
+description: É avaliada no local de exemplo indexado.
 ms.assetid: b5886004-5960-461d-a0d2-f4c3b0d09d94
 keywords:
-- HLSL da função EvaluateAttributeAtSample
+- Função EvaluateAttributeAtSample HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,23 +13,23 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: b183f86599d08a6892e33c169b938dc09a2b55de
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 29191a3790afee2d37fee3d2ee8fb58673ff487af178bd8b1e2b33f26f1ec44c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "103638449"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119982476"
 ---
 # <a name="evaluateattributeatsample-function"></a>Função EvaluateAttributeAtSample
 
-Avalia no local de exemplo indexado.
+É avaliada no local de exemplo indexado.
 
 ## <a name="syntax"></a>Sintaxe
 
 ``` syntax
 numeric EvaluateAttributeAtSample(
-  in attrib numeric value,
-  in uint sampleindex
+  in attrib numeric value,
+  in uint sampleindex
 );
 ```
 
@@ -37,16 +37,16 @@ numeric EvaluateAttributeAtSample(
 
 <dl> <dt>
 
-*valor* \[ do no\]
+*value* \[ Em\]
 </dt> <dd>
 
-Tipo: **Atrib. numérico**
+Tipo: **numérico de atrib**
 
 O valor de entrada.
 
 </dd> <dt>
 
-*sampleindex* \[ no\]
+*sampleindex* \[ Em\]
 </dt> <dd>
 
 Tipo: **uint**
@@ -57,33 +57,33 @@ O local de exemplo.
 
 ## <a name="remarks"></a>Comentários
 
-O modo de interpolação pode ser **linear** ou **linear \_ sem nenhuma \_ perspectiva** na variável. O uso de **centróide** ou de **exemplo** é ignorado. Atributos com interpolação de constante também são permitidos; nesse caso, o índice de exemplo é ignorado.
+O modo de interpolação pode **ser linear** ou linear **sem \_ \_ perspectiva** na variável. O uso **de centroide** **ou amostra** é ignorado. Atributos com interpolação constante também são permitidos, caso em que o índice de exemplo é ignorado.
 
-### <a name="minimum-shader-model"></a>Modelo de sombreamento mínimo
+### <a name="minimum-shader-model"></a>Modelo de sombreador mínimo
 
-Essa função tem suporte nos seguintes modelos de sombreador.
+Essa função tem suporte nos modelos de sombreador a seguir.
 
 
 
 | Modelo de Sombreador                                                                | Com suporte |
 |-----------------------------------------------------------------------------|-----------|
-| [Modelo](d3d11-graphics-reference-sm5.md) de sombreador 5 e modelos de sombreador mais altos | sim       |
+| [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md) e modelos de sombreador superior | sim       |
 
 
 
- 
+ 
 
 Essa função tem suporte nos seguintes tipos de sombreadores:
 
 
 
-| Vértice | Envoltória | Domínio | Geometria | 16x16 | Computação |
+| Vértice | Casco | Domínio | Geometry | Pixel | Computação |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | x     |         |
 
 
 
- 
+ 
 
 ## <a name="see-also"></a>Confira também
 
@@ -95,9 +95,9 @@ Essa função tem suporte nos seguintes tipos de sombreadores:
 [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

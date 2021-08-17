@@ -1,7 +1,7 @@
 ---
-description: Extrai os coeficientes de projeção do PCA (análise de componente principal) por exemplo de um buffer de dados compactado ID3DXPRTCompBuffer e adiciona os dados a um objeto IDirect3DTexture9.
+description: Extrai os coeficientes de projeção de PCA (análise de componente principal) por exemplo de um buffer de dados compactado ID3DXPRTCompBuffer e adiciona os dados a um objeto IDirect3DTexture9.
 ms.assetid: 2159e57d-b8e5-421f-b20a-ac58b29e3c45
-title: 'Método ID3DXPRTCompBuffer:: ExtractTexture (D3DX9Mesh. h)'
+title: Método ID3DXPRTCompBuffer::ExtractTexture (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: a6a2200c680c19019375a5e33d2d8b675992dc38
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 6b6dd2f0a366cf371347d1f8f7289e1ad3c782e069dcd9f7007abbd7c1a5c33d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104012122"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119985646"
 ---
-# <a name="id3dxprtcompbufferextracttexture-method"></a>Método ID3DXPRTCompBuffer:: ExtractTexture
+# <a name="id3dxprtcompbufferextracttexture-method"></a>Método ID3DXPRTCompBuffer::ExtractTexture
 
-Extrai os coeficientes de projeção do PCA (análise de componente principal) por exemplo de um buffer de dados compactado [**ID3DXPRTCompBuffer**](id3dxprtcompbuffer.md) e adiciona os dados a um objeto [**IDirect3DTexture9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dtexture9) .
+Extrai os coeficientes de projeção de PCA (análise de componente principal) por exemplo de um buffer de dados compactado [**ID3DXPRTCompBuffer**](id3dxprtcompbuffer.md) e adiciona os dados a um objeto [**IDirect3DTexture9.**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dtexture9)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,38 +42,38 @@ HRESULT ExtractTexture(
 
 <dl> <dt>
 
-*StartPCA* \[ no\]
+*StartPCA* \[ Em\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 Valor inicial do coeficiente de buffer do qual extrair dados de textura.
 
 </dd> <dt>
 
-*NumPCA* \[ no\]
+*NumPCA* \[ Em\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Número de coeficientes do PCA a serem extraídos do buffer.
+Número de coeficientes PCA a extrair do buffer.
 
 </dd> <dt>
 
-*pTexture* \[ no\]
+*pTexture* \[ Em\]
 </dt> <dd>
 
 Tipo: **[ **LPDIRECT3DTEXTURE9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dtexture9)**
 
-Ponteiro para um objeto de textura [**IDirect3DTexture9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dtexture9) que armazenará os coeficientes do PCA.
+Ponteiro para um [**objeto de textura IDirect3DTexture9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dtexture9) que armazenará coeficientes PCA.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se o método for bem sucedido, o valor de retorno será S \_ OK. Se o método falhar, o valor a seguir será retornado.
+Se o método for bem-sucedido, o valor de retorno será S \_ OK. Se o método falhar, o valor a seguir será retornado.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -81,8 +81,8 @@ Se o método for bem sucedido, o valor de retorno será S \_ OK. Se o método fa
 
 | Requisito | Valor |
 |--------------------|----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| parâmetro<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

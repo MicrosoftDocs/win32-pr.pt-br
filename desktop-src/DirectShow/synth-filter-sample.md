@@ -4,12 +4,12 @@ ms.assetid: 2d087967-3734-463f-bc5e-9552290ddc0b
 title: Exemplo de filtro de sintetizador
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cd569091df92eca3fbff4d8cb200150d6e6bfdca
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 01a3a366a6612aadf653b5af13099dbc8a4f08c2fb828bca6e64514cb1801e4a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103837139"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119291186"
 ---
 # <a name="synth-filter-sample"></a>Exemplo de filtro de sintetizador
 
@@ -21,7 +21,7 @@ Esse filtro ilustra a criação dinâmica de gráficos. Ele pode alternar entre 
 
 Esse filtro aparece em GraphEdit como "filtro de sintetizador de áudio".
 
-Para obter mais informações sobre a criação de grafo dinâmico, consulte [criação de grafo dinâmico](dynamic-graph-building.md).
+para obter mais informações sobre a criação dinâmica de grafo, consulte [dynamic Graph build](dynamic-graph-building.md).
 
 ## <a name="usage"></a>Uso
 
@@ -31,7 +31,7 @@ Para demonstrar o recurso de criação de gráfico dinâmico, faça o seguinte:
 
 1.  Crie o filtro e registre-o com o utilitário regsvr32.
 2.  Inicie o GraphEdit.
-3.  Insira o filtro sintetizador de áudio. Ele aparece na categoria filtros do DirectShow.
+3.  Insira o filtro sintetizador de áudio. ele aparece na categoria filtros de DirectShow.
 4.  Renderizar o pino de saída do filtro.
 5.  Clique no botão **reproduzir** .
 6.  Abra a página de propriedades do filtro.
@@ -65,15 +65,15 @@ A classe CDynamicSourceStream tem os seguintes métodos não encontrados em [**C
 
 ## <a name="downloading-the-sample"></a>Baixando o exemplo
 
-Para baixar os exemplos do SDK do DirectShow, instale a versão mais recente do [SDK do Windows](https://msdn.microsoft.com/windowsvista/bb980924.aspx).
+para baixar os exemplos do SDK do DirectShow, instale a versão mais recente do [SDK do Windows](https://msdn.microsoft.com/windowsvista/bb980924.aspx).
 
-Este exemplo é instalado no seguinte caminho: exemplo de *\[ raiz \] do SDK* \\ exemplos de multimídia do DirectShow de \\ Multimedia \\ \\ \\ .
+este exemplo é instalado no seguinte caminho: exemplos de *\[ raiz \] do SDK* \\ \\ multimídia \\ DirectShow filtros de \\ \\ sintetizador.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[Amostras do DirectShow](directshow-samples.md)
+[DirectShow Amostras](directshow-samples.md)
 </dt> </dl>
 
  

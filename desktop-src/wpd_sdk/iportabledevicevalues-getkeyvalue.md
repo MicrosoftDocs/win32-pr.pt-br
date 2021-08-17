@@ -1,7 +1,7 @@
 ---
-description: O método GetKeyValue recupera um valor de PROPERTYKEY especificado por uma chave.
+description: O método GetKeyValue recupera um valor PROPERTYKEY especificado por uma chave.
 ms.assetid: 2c92b1c0-3ea6-4a14-8b63-d57752b649b8
-title: 'Método IPortableDeviceValues:: GetKeyValue (PortableDeviceTypes. h)'
+title: Método IPortableDeviceValues::GetKeyValue (PortableDeviceTypes.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -21,9 +21,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118194016"
 ---
-# <a name="iportabledevicevaluesgetkeyvalue-method"></a>Método IPortableDeviceValues:: GetKeyValue
+# <a name="iportabledevicevaluesgetkeyvalue-method"></a>Método IPortableDeviceValues::GetKeyValue
 
-O método **GetKeyValue** recupera um valor de **PROPERTYKEY** especificado por uma chave.
+O **método GetKeyValue** recupera um **valor PROPERTYKEY** especificado por uma chave.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -41,31 +41,31 @@ HRESULT GetKeyValue(
 
 <dl> <dt>
 
-*chave* \[ no\]
+*chave* \[ Em\]
 </dt> <dd>
 
-Uma chave **REFPROPERTYKEY** que especifica o item a ser recuperado.
+Uma **chave REFPROPERTYKEY** que especifica o item a ser recuperado.
 
 </dd> <dt>
 
-*valores* \[ fora\]
+*pValue* \[ out\]
 </dt> <dd>
 
-Ponteiro para o valor de **PROPERTYKEY** recuperado.
+Ponteiro para o valor **DE PROPERTYKEY** recuperado.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor retornado
 
-O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
+O método retorna um **HRESULT.** Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
 
 
 
 | Código de retorno                                                                                                            | Descrição                                                               |
 |------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>                                   | O método foi bem-sucedido.<br/>                                          |
-| <dl> <dt>**DISP \_ E \_ TYPEMISMATCH**</dt> </dl>                   | A propriedade especificada pela *chave* não é um tipo **PROPERTYKEY** .<br/> |
-| <dl> <dt>**HRESULT \_ do \_ Win32 (erro \_ não \_ encontrado)**</dt> </dl> | A propriedade especificada pela *chave* não está na coleção.<br/>      |
+| <dl> <dt>**DISP \_ E \_ TYPEMISMATCH**</dt> </dl>                   | A propriedade especificada por *key não* é um **tipo PROPERTYKEY.**<br/> |
+| <dl> <dt>**HRESULT \_ FROM \_ WIN32(ERROR \_ NOT \_ FOUND)**</dt> </dl> | A propriedade especificada pela *chave* não está na coleção.<br/>      |
 
 
 
@@ -77,8 +77,8 @@ O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limita�
 
 | Requisito | Valor |
 |--------------------|----------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>PortableDeviceTypes. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>PortableDeviceGUIDs. lib</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>PortableDeviceTypes.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>PortableDeviceGUIDs.lib</dt> </dl> |
 
 
 
@@ -86,7 +86,7 @@ O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limita�
 
 <dl> <dt>
 
-[**Interface IPortableDeviceValues**](iportabledevicevalues.md)
+[**IPortableDeviceValues Interface**](iportabledevicevalues.md)
 </dt> <dt>
 
 [**IPortableDeviceValues::SetKeyValue**](iportabledevicevalues-setkeyvalue.md)
