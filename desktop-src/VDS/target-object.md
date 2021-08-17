@@ -4,16 +4,16 @@ ms.assetid: e88d65ad-9b56-4620-a0f5-573c5e245b3e
 title: Objeto de Destino
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7e1e81ea94a2f608378eba069defc83a721e0fb9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b528d66fb789e4d237dacae151c3dda596e834f84f529c3677905672de3b7588
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105770587"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119057944"
 ---
 # <a name="target-object"></a>Objeto de Destino
 
-\[A partir do Windows 8 e do Windows Server 2012, a interface com do [serviço de disco virtual](virtual-disk-service-portal.md) é substituída pela [API de gerenciamento de armazenamento do Windows](/previous-versions/windows/desktop/stormgmt/windows-storage-management-api-portal).\]
+\[a partir do Windows 8 e Windows Server 2012, a interface COM do [serviço de disco Virtual](virtual-disk-service-portal.md) é substituída pela [API de gerenciamento de Armazenamento Windows](/previous-versions/windows/desktop/stormgmt/windows-storage-management-api-portal).\]
 
 Um objeto de destino modela um destino iSCSI que está contido em um subsistema iSCSI.
 

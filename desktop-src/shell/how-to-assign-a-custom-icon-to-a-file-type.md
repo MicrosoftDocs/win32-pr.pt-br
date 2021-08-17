@@ -4,20 +4,20 @@ ms.assetid: 84F293C2-BAB1-4BF8-9F89-122B6DAB29C3
 title: Como atribuir um ícone personalizado a um tipo de arquivo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bf625eb6177471702096f462846b8035772177ab
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8d156322bfe0899ed48c6c27f2660b911d9e5c77791c550b6141144d95384b6d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104967917"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119092992"
 ---
 # <a name="how-to-assign-a-custom-icon-to-a-file-type"></a>Como atribuir um ícone personalizado a um tipo de arquivo
 
-Quando nenhum ícone padrão personalizado é atribuído a um tipo de arquivo, a área de trabalho e o Windows Explorer exibem todos os arquivos desse tipo com um ícone padrão genérico. Por exemplo, a captura de tela a seguir mostra esse ícone padrão usado com o arquivo MyDocs4. MYP.
+quando nenhum ícone padrão personalizado é atribuído a um tipo de arquivo, o desktop e o Windows Explorer exibem todos os arquivos desse tipo com um ícone padrão genérico. Por exemplo, a captura de tela a seguir mostra esse ícone padrão usado com o arquivo MyDocs4. MYP.
 
 ![captura de tela do ícone padrão](images/icon.png)
 
-Embora todos os arquivos exibidos nesta captura de tela sejam arquivos de texto simples, somente MyDocs4. MYP exibe o ícone padrão do Windows. Isso ocorre porque a extensão. txt é um tipo de arquivo registrado que tem um ícone padrão personalizado.
+embora todos os arquivos exibidos nesta captura de tela sejam arquivos de texto simples, somente MyDocs4. myp exibe o Windows ícone padrão. Isso ocorre porque a extensão de .txt é um tipo de arquivo registrado que tem um ícone padrão personalizado.
 
 A captura de tela a seguir mostra um ícone personalizado que foi atribuído ao tipo de arquivo. MYP.
 
@@ -68,7 +68,7 @@ HKEY_CLASSES_ROOT
          (Default) = C:\MyDir\MyProgram.exe,2
 ```
 
-Qualquer arquivo que contenha um ícone é aceitável, incluindo arquivos. ico,. exe e. dll. Se houver mais de um ícone no arquivo, o caminho deverá ser seguido por uma vírgula e, em seguida, o índice do ícone.
+Qualquer arquivo que contenha um ícone é aceitável, incluindo arquivos. ico, .exe e .dll. Se houver mais de um ícone no arquivo, o caminho deverá ser seguido por uma vírgula e, em seguida, o índice do ícone.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

@@ -1,9 +1,9 @@
 ---
 title: atan
-description: Retorna o arco tangente do valor especificado.
+description: Retorna o tangente do valor especificado.
 ms.assetid: e3ce3ac3-1012-414f-a193-102208083e39
 keywords:
-- ATAN HLSL
+- atan HLSL
 topic_type:
 - apiref
 api_name:
@@ -22,11 +22,11 @@ ms.locfileid: "117726396"
 ---
 # <a name="atan"></a>atan
 
-Retorna o arco tangente do valor especificado.
+Retorna o tangente do valor especificado.
 
 
 
-| *RET* ATAN (*x*) |
+| *ret* atan(*x*) |
 |-----------------|
 
 
@@ -39,7 +39,7 @@ Retorna o arco tangente do valor especificado.
 
 | Item                                                   | Descrição                            |
 |--------------------------------------------------------|----------------------------------------|
-| <span id="x"></span><span id="X"></span>*w.x.y.*<br/> | \[no \] valor especificado.<br/> |
+| <span id="x"></span><span id="X"></span>*X*<br/> | \[em \] O valor especificado.<br/> |
 
 
 
@@ -47,7 +47,7 @@ Retorna o arco tangente do valor especificado.
 
 ## <a name="return-value"></a>Valor Retornado
 
-O arco tangente do parâmetro *x* . Esse valor está dentro do intervalo de-π/2 a π/2.
+O tangente do parâmetro *x.* Esse valor está dentro do intervalo de -π/2 a π/2.
 
 ## <a name="type-description"></a>Descrição do tipo
 
@@ -55,22 +55,22 @@ O arco tangente do parâmetro *x* . Esse valor está dentro do intervalo de-π/2
 
 | Nome  | [**Tipo de modelo**](dx-graphics-hlsl-intrinsic-functions.md)                                                  | [**Tipo de componente**](dx-graphics-hlsl-intrinsic-functions.md) | Tamanho                           |
 |-------|----------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------|--------------------------------|
-| *x*   | [**escalar**](dx-graphics-hlsl-intrinsic-functions.md), **vetor** ou **matriz** | [**barra**](/windows/desktop/WinProg/windows-data-types)                        | any                            |
-| *RET* | igual ao *x* de entrada                                                                                              | [**barra**](/windows/desktop/WinProg/windows-data-types)                        | mesmas dimensões como entrada *x* |
+| *x*   | [**escalar,**](dx-graphics-hlsl-intrinsic-functions.md) **vetor** ou **matriz** | [**Flutuar**](/windows/desktop/WinProg/windows-data-types)                        | any                            |
+| *Ret* | mesmo que a entrada *x*                                                                                              | [**Flutuar**](/windows/desktop/WinProg/windows-data-types)                        | mesmas dimensões que a entrada *x* |
 
 
 
  
 
-## <a name="minimum-shader-model"></a>Modelo de sombreamento mínimo
+## <a name="minimum-shader-model"></a>Modelo de sombreador mínimo
 
-Essa função tem suporte nos seguintes modelos de sombreador.
+Essa função tem suporte nos modelos de sombreador a seguir.
 
 
 
 | Modelo de Sombreador                                                                       | Com suporte |
 |------------------------------------------------------------------------------------|-----------|
-| [Modelo do sombreador 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) e modelos de sombreador mais altos | sim       |
+| [Modelo de sombreador 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) e modelos de sombreador superior | sim       |
 | [Modelo de sombreador 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md)                          | vs \_ 1 \_ 1  |
 
 

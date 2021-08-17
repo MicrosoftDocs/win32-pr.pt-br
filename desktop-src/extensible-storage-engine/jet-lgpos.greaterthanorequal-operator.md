@@ -25,19 +25,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: a932ea983b3044d1db8395fbf87962cd3b733ae8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ef9f6835d4c65d08eeb6b3765bd5f2319048986daac439b7b2059b02ecf9735a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105759161"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119109263"
 ---
 # <a name="jet_lgposgreaterthanorequal-operator"></a>JET_LGPOS. Operador GreaterThanOrEqual
 
-Determine se uma posição de log é posterior ou igual a outra posição de log.
+Determine se uma posição de log é após ou igual a outra posição de log.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -64,29 +64,29 @@ public static bool operator >=(
 
 #### <a name="parameters"></a>Parâmetros
 
-  - lhs  
-    Tipo: [Microsoft.ISAM.ESENT.Interop.JET_LGPOS](./jet-lgpos-structure2.md)  
+  - Lhs  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_LGPOS](./jet-lgpos-structure2.md)  
     
     A primeira posição de log a ser comparada.
 
 <!-- end list -->
 
   - rhs  
-    Tipo: [Microsoft.ISAM.ESENT.Interop.JET_LGPOS](./jet-lgpos-structure2.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_LGPOS](./jet-lgpos-structure2.md)  
     
-    A segunda posição de log para comparar.
+    A segunda posição de log a ser comparada.
 
-#### <a name="return-value"></a>Retornar valor
+#### <a name="return-value"></a>Valor retornado
 
-Tipo: [System. Boolean](/dotnet/api/system.boolean)  
-True se o LHS vier após ou for igual ao RHS.  
+Tipo: [System.Boolean](/dotnet/api/system.boolean)  
+True se lhs vier após ou for igual a rhs.  
 
 ## <a name="see-also"></a>Confira também
 
 #### <a name="reference"></a>Referência
 
-[Estrutura de JET_LGPOS](./jet-lgpos-structure2.md)
+[JET_LGPOS estrutura](./jet-lgpos-structure2.md)
 
-[Membros do JET_LGPOS](./jet-lgpos-members.md)
+[JET_LGPOS membros](./jet-lgpos-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

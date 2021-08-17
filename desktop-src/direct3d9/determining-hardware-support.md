@@ -4,12 +4,12 @@ ms.assetid: 63afa799-2c2c-432c-993e-dca8f7433d59
 title: Determinando o suporte de hardware (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fc4fbc04343ede671d009054ac3782bbf2563109
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 42dda0aa1e1d5d75d2c8b6f0364c08daa836e7d2f0996252748bbb49b3d2a4a0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105808337"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117730629"
 ---
 # <a name="determining-hardware-support-direct3d-9"></a>Determinando o suporte de hardware (Direct3D 9)
 

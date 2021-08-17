@@ -12,12 +12,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: b689dd95aa1e078572d33de64f245e4844698d5a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d0944b843c8deb38012242111b6c5057ccf7cb8557c69caefe9a87283d2ae418
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104501766"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119328736"
 ---
 # <a name="rt_lostevent-class"></a>\_Classe RT LostEvent
 
@@ -52,7 +52,7 @@ Os eventos perder dependem da frequência com que os eventos são registrados e 
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/> |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                      |
 
 

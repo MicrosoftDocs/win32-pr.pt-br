@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a4852e2d4c1ffa08b1a7ea7b3d8395c1b116cca6
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 57d9c2792282245ad4903d77700f5413bef0d2f769a65753aed60f50ba759707
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918751"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117800106"
 ---
 # <a name="inapclientmanagementgetregisteredsystemhealthagents-method"></a>Método INapClientManagement:: GetRegisteredSystemHealthAgents
 
@@ -62,7 +62,7 @@ Um ponteiro para uma matriz de estruturas [**NapComponentRegistrationInfo**](/wi
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O método retorna um código de status HRESULT, incluindo, mas não se limitando a um dos itens a seguir.
 
@@ -85,9 +85,9 @@ O método retorna um código de status HRESULT, incluindo, mas não se limitando
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                               |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                         |
-| parâmetro<br/>                   | <dl> <dt>NapManagement. h</dt> </dl>   |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                               |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                         |
+| Cabeçalho<br/>                   | <dl> <dt>NapManagement. h</dt> </dl>   |
 | INSERI<br/>                      | <dl> <dt>NapManagement. idl</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Qagent.dll</dt> </dl>        |
 

@@ -1,7 +1,7 @@
 ---
-description: Função de proxy para o método CreateQueryWriterFromBlockWriter.
+description: Função proxy para o método CreateQueryWriterFromBlockWriter.
 ms.assetid: f941e3b1-1645-4ed6-b2c5-180cb4c43fca
-title: Função IWICComponentFactory_CreateQueryWriterFromBlockWriter_Proxy
+title: IWICComponentFactory_CreateQueryWriterFromBlockWriter_Proxy função
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - Windowscodecs.dll
 - Wincodec.lib
-ms.openlocfilehash: c8c94b351e72fd7de367e5dd74a0c7ed62ce84f2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 44af8d96d39afff1eba582f9dea283a09acd69dbd4fc6dc95b3f568919621efe
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104170875"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118965255"
 ---
-# <a name="iwiccomponentfactory_createquerywriterfromblockwriter_proxy-function"></a>\_Função de \_ proxy IWICComponentFactory CreateQueryWriterFromBlockWriter
+# <a name="iwiccomponentfactory_createquerywriterfromblockwriter_proxy-function"></a>Função proxy IWICComponentFactory \_ CreateQueryWriterFromBlockWriter \_
 
-Função de proxy para o método [**CreateQueryWriterFromBlockWriter**](/windows/desktop/api/Wincodecsdk/nf-wincodecsdk-iwiccomponentfactory-createquerywriterfromblockwriter) .
+Função proxy para o [**método CreateQueryWriterFromBlockWriter.**](/windows/desktop/api/Wincodecsdk/nf-wincodecsdk-iwiccomponentfactory-createquerywriterfromblockwriter)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,34 +42,34 @@ HRESULT IWICComponentFactory_CreateQueryWriterFromBlockWriter_Proxy(
 
 <dl> <dt>
 
-*Isso \_ PTR* \[\]
+*ESTE \_ PTR* \[ em\]
 </dt> <dd>
 
-Tipo: **[**IWICComponentFactory**](/windows/desktop/api/Wincodecsdk/nn-wincodecsdk-iwiccomponentfactory) \** _
+Tipo: **[ **IWICComponentFactory**](/windows/desktop/api/Wincodecsdk/nn-wincodecsdk-iwiccomponentfactory)\***
 
-Ponteiro para este objeto [_ *IWICComponentFactory* *](/windows/desktop/api/Wincodecsdk/nn-wincodecsdk-iwiccomponentfactory) .
+Ponteiro para este [**objeto IWICComponentFactory.**](/windows/desktop/api/Wincodecsdk/nn-wincodecsdk-iwiccomponentfactory)
 
 </dd> <dt>
 
-*pIBlockWriter* \[ no\]
+*pIBlockWriter* \[ Em\]
 </dt> <dd>
 
-Tipo: **[**IWICMetadataBlockWriter**](/windows/desktop/api/Wincodecsdk/nn-wincodecsdk-iwicmetadatablockwriter) \** _
+Tipo: **[ **IWICMetadataBlockWriter**](/windows/desktop/api/Wincodecsdk/nn-wincodecsdk-iwicmetadatablockwriter)\***
 
 </dd> <dt>
 
-_ppIQueryWriter * \[ out\]
+*ppIQueryWriter* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **IWICMetadataQueryWriter**](/windows/desktop/api/Wincodec/nn-wincodec-iwicmetadataquerywriter)\*\***
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **HRESULT**
 
-Se essa função for bem sucedido, ela retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
+Se essa função for bem-sucedida, ela retornará **S \_ OK.** Caso contrário, ele retornará um **código de erro HRESULT.**
 
 ## <a name="remarks"></a>Comentários
 
@@ -79,9 +79,9 @@ Se essa função for bem sucedido, ela retornará **S \_ OK**. Caso contrário, 
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows XP com SP2, \[ somente aplicativos da área de trabalho do Windows Vista\]<br/>                                                                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                                                                                             |
-| DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec. lib</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows XP com SP2, Windows aplicativos da área de trabalho do Vista \[\]<br/>                                                                                              |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                                                                                             |
+| DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec.lib</dt> </dl> |
 
 
 

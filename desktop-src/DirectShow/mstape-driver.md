@@ -4,16 +4,16 @@ ms.assetid: aa59f322-09b1-4b0a-be6f-d865c20f76e5
 title: Driver MSTape
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 951084f8827f925bba43028c0792736883d5ff0f
-ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
+ms.openlocfilehash: 23eaf6dd7f0d6713b0db5ba5ed21ba4f7640c1373f23cb0066b0b31f366809cc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "107909394"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118952205"
 ---
 # <a name="mstape-driver"></a>Driver MSTape
 
-Este tópico aplica-se ao Windows XP ou posterior.
+este tópico aplica-se ao Windows XP ou posterior.
 
 O driver MSTape dá suporte a dispositivos de camcorder D-VHS e MPEG. Ele é exposto a aplicativos como o filtro de [captura de vídeo WDM](wdm-video-capture-filter.md) . Sua funcionalidade é semelhante à do [MSDV](msdv-driver.md), o driver DV Camcorder:
 
@@ -27,7 +27,7 @@ O PIN de entrada dá suporte a um tipo de mídia.
 
 
 
-| Label | Valor |
+| Rótulo | Valor |
 |--------------|------------------------------------------------------------|
 | Tipo principal   | Fluxo de MEDIATYPE \_                                          |
 | Subtype      | \_Stride de \_ transporte MEDIASUBTYPE MPEG2 \_                     |
@@ -42,7 +42,7 @@ O pino de saída dá suporte a dois tipos de mídia.
 
 
 
-| Label | Valor |
+| Rótulo | Valor |
 |--------------|----------------------------------------|
 | Tipo principal   | Fluxo de MEDIATYPE \_                      |
 | Subtype      | \_Stride de \_ transporte MEDIASUBTYPE MPEG2 \_ |
@@ -55,7 +55,7 @@ O pino de saída dá suporte a dois tipos de mídia.
 
 
 
-| Label | Valor |
+| Rótulo | Valor |
 |--------------|----------------------------------------|
 | Tipo principal   | Fluxo de MEDIATYPE \_                      |
 | Subtype      | \_Stride de \_ transporte MEDIASUBTYPE MPEG2 \_ |
@@ -98,7 +98,7 @@ Para obter mais informações sobre monikers de dispositivo, consulte [usando o 
 
 <dl> <dt>
 
-[Filtros do DirectShow](directshow-filters.md)
+[DirectShow Filter](directshow-filters.md)
 </dt> <dt>
 
 [Controlando uma camcorder DV](controlling-a-dv-camcorder.md)

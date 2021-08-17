@@ -4,12 +4,12 @@ ms.assetid: d6877063-6cf9-48dc-8208-0f3fc85b6d6b
 title: Introdução com a solução de problemas de WSDAPI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 12396ea656423772d35dbd4ca237c7c536dcdaf1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 413146288e6c7fc6e513f994fbe24d6ee9940897f22bcd5a715ae41f77f83c02
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104165308"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117738612"
 ---
 # <a name="getting-started-with-wsdapi-troubleshooting"></a>Introdução com a solução de problemas de WSDAPI
 
@@ -39,11 +39,11 @@ As tabelas a seguir mostram alguns problemas que podem impedir que clientes e ho
 
 | Problema                                                                                                                                                                                              | Procedimento de diagnóstico                                                                                                                                                                                                                             | Identificação do problema                                                                                                                                                                            |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| O firewall bloqueia o tráfego de descoberta de rede.                                                                                                                                                       | [Inspecionando as configurações de firewall e adaptador](inspecting-adapter-and-firewall-settings.md)                                                                                                                                                         | Habilitar a exceção de descoberta de rede no firewall resolve o problema.                                                                                                                      |
-| As exceções de firewall específicas ao aplicativo estão bloqueando mensagens.                                                                                                                               | [Inspecionando as configurações de firewall e adaptador](inspecting-adapter-and-firewall-settings.md)                                                                                                                                                         | A desabilitação do firewall resolve o problema. O WF. msc mostra regras de firewall específicas do aplicativo.                                                                                                      |
-| O dispositivo não responde às solicitações UDP enviando uma mensagem [ProbeMatches](probematches-message.md) ou [ResolveMatches](resolvematches-message.md) em tempo hábil (menos de 4 segundos). | [Inspecionando as configurações de firewall e adaptador](inspecting-adapter-and-firewall-settings.md)                                                                                                                                                         | A desabilitação do firewall resolve o problema e um host genérico que responde em menos de 4 segundos funciona com êxito.                                                                            |
-| O contexto de segurança do aplicativo está incorreto (ou seja, o cliente e o host não têm as permissões adequadas na rede).                                                                 | [Usando um host genérico e um cliente para o WS-Discovery de UDP](using-a-generic-host-and-client-for-udp-ws-discovery.md) ou [usando um host genérico e um cliente para a troca de metadados http](using-a-generic-host-and-client-for-http-metadata-exchange.md) | O endereço do dispositivo não é mostrado na saída do cliente de depuração WSD. A execução do aplicativo como administrador resolve o problema.                                                                          |
-| Uma política IPSec está bloqueando mensagens.                                                                                                                                                                | [Usando um host genérico e um cliente para o WS-Discovery de UDP](using-a-generic-host-and-client-for-udp-ws-discovery.md) ou [usando um host genérico e um cliente para a troca de metadados http](using-a-generic-host-and-client-for-http-metadata-exchange.md) | O endereço do dispositivo não é mostrado na saída do cliente de depuração WSD. O problema não é resolvido desabilitando o firewall. O problema não pode ser reproduzido em um computador que não esteja sujeito a nenhuma política IPSec. |
+| O firewall bloqueia o tráfego de descoberta de rede.                                                                                                                                                       | [inspecionando Configurações de adaptador e Firewall](inspecting-adapter-and-firewall-settings.md)                                                                                                                                                         | Habilitar a exceção de descoberta de rede no firewall resolve o problema.                                                                                                                      |
+| As exceções de firewall específicas ao aplicativo estão bloqueando mensagens.                                                                                                                               | [inspecionando Configurações de adaptador e Firewall](inspecting-adapter-and-firewall-settings.md)                                                                                                                                                         | A desabilitação do firewall resolve o problema. O WF. msc mostra regras de firewall específicas do aplicativo.                                                                                                      |
+| O dispositivo não responde às solicitações UDP enviando uma mensagem [ProbeMatches](probematches-message.md) ou [ResolveMatches](resolvematches-message.md) em tempo hábil (menos de 4 segundos). | [inspecionando Configurações de adaptador e Firewall](inspecting-adapter-and-firewall-settings.md)                                                                                                                                                         | A desabilitação do firewall resolve o problema e um host genérico que responde em menos de 4 segundos funciona com êxito.                                                                            |
+| O contexto de segurança do aplicativo está incorreto (ou seja, o cliente e o host não têm as permissões adequadas na rede).                                                                 | [Usando um host genérico e um cliente para o WS-Discovery de UDP](using-a-generic-host-and-client-for-udp-ws-discovery.md) ou [usando um host genérico e um cliente para metadados http Exchange](using-a-generic-host-and-client-for-http-metadata-exchange.md) | O endereço do dispositivo não é mostrado na saída do cliente de depuração WSD. A execução do aplicativo como administrador resolve o problema.                                                                          |
+| Uma política IPSec está bloqueando mensagens.                                                                                                                                                                | [Usando um host genérico e um cliente para o WS-Discovery de UDP](using-a-generic-host-and-client-for-udp-ws-discovery.md) ou [usando um host genérico e um cliente para metadados http Exchange](using-a-generic-host-and-client-for-http-metadata-exchange.md) | O endereço do dispositivo não é mostrado na saída do cliente de depuração WSD. O problema não é resolvido desabilitando o firewall. O problema não pode ser reproduzido em um computador que não esteja sujeito a nenhuma política IPSec. |
 
 
 
@@ -149,12 +149,12 @@ Para aplicativos que usam a descoberta direcionada, o <a href="probematches-mess
 <tbody>
 <tr class="odd">
 <td>O endereço de transporte anunciado pelo host está incorreto.</td>
-<td><a href="using-a-generic-host-and-client-for-http-metadata-exchange.md">Usando um host genérico e um cliente para a troca de metadados HTTP</a></td>
+<td><a href="using-a-generic-host-and-client-for-http-metadata-exchange.md">Usando um host genérico e um cliente para metadados HTTP Exchange</a></td>
 <td>A inspeção do XAddrs na saída do cliente de depuração WSD mostra que o endereço de transporte está incorreto ou malformado.</td>
 </tr>
 <tr class="even">
 <td>Não foi possível estabelecer uma conexão TCP para a troca de metadados.</td>
-<td><a href="inspecting-network-traces-for-http-metadata-exchange.md">Inspecionando rastreamentos de rede para troca de metadados HTTP</a></td>
+<td><a href="inspecting-network-traces-for-http-metadata-exchange.md">Inspecionando rastreamentos de rede para metadados HTTP Exchange</a></td>
 <td>A saída do analisador de pacotes não mostra a seguinte troca de pacotes:
 <ul>
 <li>Um pacote TCP SYN enviado do cliente</li>
@@ -164,53 +164,53 @@ Para aplicativos que usam a descoberta direcionada, o <a href="probematches-mess
 </tr>
 <tr class="odd">
 <td>O cliente não enviou uma solicitação HTTP GET válida.</td>
-<td><a href="inspecting-network-traces-for-http-metadata-exchange.md">Inspecionando rastreamentos de rede para troca de metadados HTTP</a></td>
+<td><a href="inspecting-network-traces-for-http-metadata-exchange.md">Inspecionando rastreamentos de rede para metadados HTTP Exchange</a></td>
 <td>Não há uma solicitação HTTP GET na saída do analisador de pacotes ou a solicitação está malformada.</td>
 </tr>
 <tr class="even">
 <td>O cliente não enviou uma mensagem de <a href="get--metadata-exchange--http-request-and-message.md">obtenção</a> de WS-Transfer válida.</td>
-<td><a href="inspecting-network-traces-for-http-metadata-exchange.md">Inspecionando rastreamentos de rede para troca de metadados HTTP</a></td>
+<td><a href="inspecting-network-traces-for-http-metadata-exchange.md">Inspecionando rastreamentos de rede para metadados HTTP Exchange</a></td>
 <td>Não há nenhuma WS-Transfer <a href="get--metadata-exchange--http-request-and-message.md">obter</a> mensagem na saída do analisador de pacotes ou a mensagem está malformada.</td>
 </tr>
 <tr class="odd">
 <td>O host não está escutando no caminho da URL especificado na solicitação HTTP GET.</td>
-<td><a href="inspecting-network-traces-for-http-metadata-exchange.md">Inspecionando rastreamentos de rede para troca de metadados HTTP</a></td>
-<td>Não há nenhuma resposta HTTP na saída do analisador de pacotes.</td>
+<td><a href="inspecting-network-traces-for-http-metadata-exchange.md">Inspecionando rastreamentos de rede para metadados HTTP Exchange</a></td>
+<td>Não há resposta HTTP na saída do analisador de pacotes.</td>
 </tr>
 <tr class="even">
-<td>A mensagem de <a href="get--metadata-exchange--http-request-and-message.md">obtenção</a> de WS-Transfer não contém um elemento <strong>to</strong> ou o elemento <strong>to</strong> está vazio.</td>
-<td><a href="inspecting-network-traces-for-http-metadata-exchange.md">Inspecionando rastreamentos de rede para troca de metadados HTTP</a></td>
-<td>A inspeção da mensagem mostra que o elemento <strong>to</strong> não está presente ou vazio.</td>
+<td>A WS-Transfer <a href="get--metadata-exchange--http-request-and-message.md">mensagem Get</a> não contém um <strong>elemento To</strong> ou o elemento <strong>To</strong> está vazio.</td>
+<td><a href="inspecting-network-traces-for-http-metadata-exchange.md">Inspecionando rastreamentos de rede para metadados HTTP Exchange</a></td>
+<td>A inspeção da mensagem mostra que <strong>o elemento To</strong> não está presente ou vazio.</td>
 </tr>
 <tr class="odd">
-<td>O valor do elemento <strong>to</strong> de uma WS-Transfer <a href="get--metadata-exchange--http-request-and-message.md">obter</a> mensagem não corresponde a um dos endereços de ponto de extremidade do host.</td>
-<td><a href="inspecting-network-traces-for-http-metadata-exchange.md">Inspecionando rastreamentos de rede para troca de metadados HTTP</a></td>
-<td>A inspeção da mensagem mostra que o valor do elemento <strong>to</strong> não corresponde a um dos endereços de ponto de extremidade anunciados na mensagem <a href="probematches-message.md">ProbeMatches</a> ou <a href="resolvematches-message.md">ResolveMatches</a> do host.</td>
+<td>O valor do elemento <strong>To</strong> de uma WS-Transfer <a href="get--metadata-exchange--http-request-and-message.md">Obter</a> mensagem não corresponderá a um dos endereços de ponto de extremidade do host.</td>
+<td><a href="inspecting-network-traces-for-http-metadata-exchange.md">Inspecionando rastreamentos de rede para metadados HTTP Exchange</a></td>
+<td>A inspeção da mensagem mostra que o valor do elemento <strong>To</strong> não corresponderá a um dos endereços de ponto de extremidade anunciados na mensagem <a href="probematches-message.md">ProbeMatches</a> ou <a href="resolvematches-message.md">ResolveMatches</a> do host.</td>
 </tr>
 <tr class="even">
 <td>O host não enviou um cabeçalho de resposta HTTP válido.</td>
-<td><a href="inspecting-network-traces-for-http-metadata-exchange.md">Inspecionando rastreamentos de rede para troca de metadados HTTP</a></td>
-<td>Não há nenhuma resposta HTTP na saída do analisador de pacotes ou a solicitação está malformada.</td>
+<td><a href="inspecting-network-traces-for-http-metadata-exchange.md">Inspecionando rastreamentos de rede para metadados HTTP Exchange</a></td>
+<td>Não há resposta HTTP na saída do analisador de pacotes ou a solicitação está malformada.</td>
 </tr>
 <tr class="odd">
 <td>O cabeçalho de resposta HTTP enviado pelo host indica que a solicitação não pode ser concluída.</td>
-<td><a href="inspecting-network-traces-for-http-metadata-exchange.md">Inspecionando rastreamentos de rede para troca de metadados HTTP</a></td>
+<td><a href="inspecting-network-traces-for-http-metadata-exchange.md">Inspecionando rastreamentos de rede para metadados HTTP Exchange</a></td>
 <td>O cabeçalho de resposta tem um código de status diferente de HTTP/1.1 200.</td>
 </tr>
 <tr class="even">
 <td>O host não enviou uma mensagem <a href="getresponse--metadata-exchange--message.md">GetResponse</a> válida.</td>
-<td><a href="inspecting-network-traces-for-http-metadata-exchange.md">Inspecionando rastreamentos de rede para troca de metadados HTTP</a></td>
-<td>Não há nenhuma mensagem <a href="getresponse--metadata-exchange--message.md">GetResponse</a> na saída do analisador de pacotes ou a mensagem está malformada.</td>
+<td><a href="inspecting-network-traces-for-http-metadata-exchange.md">Inspecionando rastreamentos de rede para metadados HTTP Exchange</a></td>
+<td>Não há nenhuma <a href="getresponse--metadata-exchange--message.md">mensagem GetResponse</a> na saída do analisador de pacotes ou a mensagem está malformada.</td>
 </tr>
 <tr class="odd">
-<td>A mensagem <a href="getresponse--metadata-exchange--message.md">GetResponse</a> não contém um elemento <strong>RelatesTo</strong> , ou o elemento <strong>RelatesTo</strong> está vazio.</td>
-<td><a href="inspecting-network-traces-for-http-metadata-exchange.md">Inspecionando rastreamentos de rede para troca de metadados HTTP</a></td>
-<td>A inspeção da mensagem mostra que o elemento <strong>RelatesTo</strong> não está presente ou vazio.</td>
+<td>A <a href="getresponse--metadata-exchange--message.md">mensagem GetResponse</a> não contém um <strong>elemento RelatesTo</strong> ou o elemento <strong>RelatesTo</strong> está vazio.</td>
+<td><a href="inspecting-network-traces-for-http-metadata-exchange.md">Inspecionando rastreamentos de rede para metadados HTTP Exchange</a></td>
+<td>A inspeção da mensagem mostra que o <strong>elemento RelatesTo</strong> não está presente ou vazio.</td>
 </tr>
 <tr class="even">
-<td>O valor do elemento <strong>RelatesTo</strong> em uma mensagem <a href="getresponse--metadata-exchange--message.md">GetResponse</a> não corresponde ao valor do elemento <strong>MessageId</strong> da mensagem <a href="get--metadata-exchange--http-request-and-message.md">Get</a> correspondente.</td>
-<td><a href="inspecting-network-traces-for-http-metadata-exchange.md">Inspecionando rastreamentos de rede para troca de metadados HTTP</a></td>
-<td>A inspeção da mensagem mostra que o elemento <strong>RelatesTo</strong> contém um valor malformado ou incorreto.</td>
+<td>O valor do <strong>elemento RelatesTo</strong> em uma mensagem <a href="getresponse--metadata-exchange--message.md">GetResponse</a> não corresponde ao valor do <strong>elemento MessageId</strong> da mensagem <a href="get--metadata-exchange--http-request-and-message.md">Get</a> correspondente.</td>
+<td><a href="inspecting-network-traces-for-http-metadata-exchange.md">Inspecionando rastreamentos de rede para metadados HTTP Exchange</a></td>
+<td>A inspeção da mensagem mostra que o <strong>elemento RelatesTo</strong> contém um valor incorreto ou malformado.</td>
 </tr>
 </tbody>
 </table>
@@ -219,5 +219,5 @@ Para aplicativos que usam a descoberta direcionada, o <a href="probematches-mess
 
 <dl> <dt>
 
-[Guia de solução de problemas de WSDAPI](wsdapi-troubleshooting-guide.md)
+[Guia de solução de problemas do WSDAPI](wsdapi-troubleshooting-guide.md)
 </dt> </dl>

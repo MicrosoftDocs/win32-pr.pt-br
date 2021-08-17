@@ -1,5 +1,5 @@
 ---
-description: Define os elementos ServiceID, Types,PnPXHardwareId e PnPXCompatibleId para os serviços definidos pelo host de serviço.
+description: Define os elementos ServiceId, Types, PnPXHardwareId e PnPXCompatibleId para os serviços definidos pelo host de serviço.
 ms.assetid: f901a88f-7e01-4e7f-a0f2-59f2a01b03cd
 title: elemento hospedado
 ms.topic: reference
@@ -13,7 +13,7 @@ ms.locfileid: "117738416"
 ---
 # <a name="hosted-element"></a>elemento hospedado
 
-Define os [**elementos ServiceID**](serviceid.md), [**Types**](types.md),[**PnPXHardwareId**](pnpxhardwareid.md)e [**PnPXCompatibleId**](pnpxcompatibleid.md) para os serviços definidos pelo host de serviço.
+Define os elementos [**ServiceId**](serviceid.md), [**Types**](types.md),[**PnPXHardwareId**](pnpxhardwareid.md)e [**PnPXCompatibleId**](pnpxcompatibleid.md) para os serviços definidos pelo host de serviço.
 
 ## <a name="usage"></a>Uso
 
@@ -33,8 +33,8 @@ Não há atributos.
 
 | Elemento                                                 | Descrição                                                                      |
 |---------------------------------------------------------|----------------------------------------------------------------------------------|
-| [**PnPXCompatibleId**](pnpxcompatibleid.md)<br/> | Especifica o Identificador Compatível com PnP-X do serviço.<br/> <br/> |
-| [**PnPXHardwareId**](pnpxhardwareid.md)<br/>     | Especifica o Identificador de Hardware PnP-X do serviço.<br/> <br/>   |
+| [**PnPXCompatibleId**](pnpxcompatibleid.md)<br/> | Especifica o identificador compatível com PnP-X do serviço.<br/> <br/> |
+| [**PnPXHardwareId**](pnpxhardwareid.md)<br/>     | Especifica o identificador de hardware PnP-X do serviço.<br/> <br/>   |
 | [**ServiceID**](serviceid.md)<br/>               | Define um identificador de serviço para o host de serviço.<br/> <br/>        |
 | [**Tipos**](types.md)<br/>                       | Define uma lista de nomes qualificados XSD.<br/> <br/>                    |
 
@@ -63,11 +63,11 @@ Não há atributos.
 
 ## <a name="remarks"></a>Comentários
 
-Cada serviço fornecido por um host  de serviço deve ter suas próprias informações de elemento hospedado para garantir que o serviço seja publicado corretamente em respostas a solicitações de metadados.
+Cada serviço fornecido por um host de serviço deve ter suas próprias informações de elemento **hospedado** para garantir que o serviço seja publicado corretamente em respostas a solicitações de metadados.
 
-Os [**elementos PnPXHardwareId**](pnpxhardwareid.md) e [**PnPXCompatibleId**](pnpxcompatibleid.md) são opcionais, mas quando usados, eles devem ser usados juntos. Se um estiver presente, o outro também deverá estar presente.
+Os elementos [**PnPXHardwareId**](pnpxhardwareid.md) e [**PnPXCompatibleId**](pnpxcompatibleid.md) são opcionais, mas quando usados, eles devem ser usados juntos. Se um estiver presente, o outro também deverá estar presente.
 
-Se um [**elemento PnPXDeviceCategory**](pnpxdevicecategory.md) estiver presente, pelo menos um elemento hospedado deverá conter elementos [**PnPXHardwareId**](pnpxhardwareid.md) e [**PnPXCompatibleId.**](pnpxcompatibleid.md)  Da mesma forma, se os elementos **PnPXHardwareId** e  **PnPXCompatibleId** estão presentes em um elemento hospedado, pelo menos um elemento **PnPXDeviceCategory** deve estar presente dentro do elemento [**thisModelMetadata.**](thismodelmetadata.md)
+Se um elemento [**PnPXDeviceCategory**](pnpxdevicecategory.md) estiver presente, pelo menos um elemento **hospedado** deverá conter ambos os elementos [**PnPXHardwareId**](pnpxhardwareid.md) e [**PnPXCompatibleId**](pnpxcompatibleid.md) . Da mesma forma, se os elementos **PnPXHardwareId** e **PnPXCompatibleId** estiverem presentes em um elemento **hospedado** , pelo menos um elemento **PnPXDeviceCategory** deverá estar presente dentro do elemento [**thisModelMetadata**](thismodelmetadata.md) .
 
 ## <a name="element-information"></a>Informações do elemento
 

@@ -1,6 +1,6 @@
 ---
-title: 'Métodos Texture2DArray:: Texture2DArray SampleCmp'
-description: Amostras de um Texture2DArray, usando um valor de comparação para rejeitar amostras.
+title: Métodos Texture2DArray::Texture2DArray SampleCmp
+description: Exemplos de texture2DArray, usando um valor de comparação para rejeitar amostras.
 ms.assetid: EDA2239F-8A13-4DD0-9DC5-65B879C9DAAC
 keywords:
 - Métodos SampleCmp HLSL
@@ -19,9 +19,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118786878"
 ---
-# <a name="texture2darraysamplecmp-methods"></a>Métodos Texture2DArray:: SampleCmp
+# <a name="texture2darraysamplecmp-methods"></a>Métodos Texture2DArray::SampleCmp
 
-Amostras de um [**Texture2DArray**](sm5-object-texture2darray.md), usando um valor de comparação para rejeitar amostras.
+Amostra um [**Texture2DArray**](sm5-object-texture2darray.md), usando um valor de comparação para rejeitar amostras.
 
 ### <a name="overload-list"></a>Lista de sobrecargas
 
@@ -29,9 +29,9 @@ Amostras de um [**Texture2DArray**](sm5-object-texture2darray.md), usando um val
 
 | Método                                                                                              | Descrição                                                                                                                                                                           |
 |:----------------------------------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**SampleCmp (S, float, float, int)**](dx-graphics-hlsl-to-samplecmp.md)                               | Amostra uma textura, usando um valor de comparação para rejeitar amostras.<br/>                                                                                                             |
-| [**SampleCmp (S, float, float, int, float)**](t2darray-samplecmp-s-float-float-int-float-.md)           | Amostras de uma textura, usando um valor de comparação para rejeitar amostras, com um valor opcional para fixe os valores de nível de detalhe (LOD) de exemplo para.<br/>                                     |
-| [**SampleCmp (S, float, float, int, float, uint)**](t2darray-samplecmp-s-float-float-int-float-uint-.md) | Amostras de uma textura, usando um valor de comparação para rejeitar amostras, com um valor opcional para fixe os valores de nível de detalhe (LOD) de exemplo para. Retorna o status sobre a operação.<br/> |
+| [**SampleCmp(S,float,float,int)**](dx-graphics-hlsl-to-samplecmp.md)                               | Amostra uma textura usando um valor de comparação para rejeitar amostras.<br/>                                                                                                             |
+| [**SampleCmp(S,float,float,int,float)**](t2darray-samplecmp-s-float-float-int-float-.md)           | Amostra uma textura, usando um valor de comparação para rejeitar amostras, com um valor opcional para fixar valores de LOD (nível de detalhes) de exemplo.<br/>                                     |
+| [**SampleCmp(S,float,float,int, float,uint)**](t2darray-samplecmp-s-float-float-int-float-uint-.md) | Amostra uma textura, usando um valor de comparação para rejeitar amostras, com um valor opcional para fixar valores de LOD (nível de detalhes) de exemplo. Retorna o status sobre a operação.<br/> |
 
 
 

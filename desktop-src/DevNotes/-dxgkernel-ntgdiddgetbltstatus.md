@@ -16,12 +16,12 @@ api_location:
 - Ext-MS-Win-GDI-Internal-Desktop-L1-1-0.dll
 - GDI32.dll
 - GDI32Full.dll
-ms.openlocfilehash: 381de7f8c360f222a004786834fa36e92f1220d9
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 488d0b28da747346b795ef7a1c5a3846d4661c0afb31c65a9e624584b8fe60e6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105756412"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118956355"
 ---
 # <a name="ntgdiddgetbltstatus-function"></a>Função NtGdiDdGetBltStatus
 
@@ -59,7 +59,7 @@ Ponteiro para uma [estrutura \_ GETBLTSTATUSDATA do DD](https://msdn.microsoft.c
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 **NtGdiDdGetBltStatus** retorna um dos seguintes códigos de retorno de chamada.
 

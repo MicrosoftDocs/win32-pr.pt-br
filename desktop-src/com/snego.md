@@ -4,12 +4,12 @@ description: Snego, cujo identificador de serviço de autenticação é RPC \_ C
 ms.assetid: 2087a84c-d302-4511-9f02-2d20ee9e0d8e
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 676b6428d6b7e79893214c2d234dcfc43992e190
-ms.sourcegitcommit: 5f33645661bf8c825a7a2e73950b1f4ea0f1cd82
+ms.openlocfilehash: a82f8da58cc77ebfd4debd0763ad4af6e1c96d3e88d9ede69ff82a28e3d8a5ba
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "104366749"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119129808"
 ---
 # <a name="snego"></a>Snego
 
@@ -22,7 +22,7 @@ Para usar o Snego, o cliente e o servidor devem especificar Snego como o serviç
 > [!Note]  
 > O Schannel não pode estar na lista de serviços de autenticação que o Snego usa.
 
- 
+ 
 
 Os clientes também podem especificar Snego ao chamar [**CoInitializeSecurity**](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializesecurity). Os parâmetros *dwAuthnSvc* e *pAuthInfo* de [**CoSetProxyBlanket**](/windows/desktop/api/combaseapi/nf-combaseapi-cosetproxyblanket) tornam-se membros de uma única estrutura de [**\_ \_ informações de autenticação**](/windows/win32/api/objidlbase/ns-objidlbase-sole_authentication_info) que é passada para **CoInitializeSecurity** por meio de seu parâmetro *pAuthList* . Os detalhes dos valores desses membros são os mesmos descritos no parágrafo anterior.
 
@@ -35,6 +35,6 @@ Se Snego for usado, as chamadas para [**CoQueryProxyBlanket**](/windows/desktop/
 [Pacotes de segurança e COM](com-and-security-packages.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

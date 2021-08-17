@@ -1,21 +1,21 @@
 ---
-description: As funções de serviço de telefone suplementar são listadas por categoria nos tópicos a seguir.
+description: As funções de serviço de telefone suplementares são listadas por categoria nos tópicos a seguir.
 ms.assetid: 0d1a81d2-aa9e-4a85-85d3-aa4eabb26eb5
-title: Funções de serviço de telefone suplementar
+title: Funções de serviço Telefone suplementares
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 527c39441a924a4f9787d22bf8db596882e7f257
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d8ee0e32260ac3821fd06e7e8962ab2a6186fb42f1140eb6cd8f705709f2dfbd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105757199"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118861414"
 ---
-# <a name="supplementary-phone-service-functions"></a>Funções de serviço de telefone suplementar
+# <a name="supplementary-phone-service-functions"></a>Funções de serviço Telefone suplementares
 
-As funções de serviço de telefone suplementar são listadas por categoria nos tópicos a seguir. Uma função será identificada como [*assíncrona*](a-tapgloss.md) se ela indicar conclusão em uma mensagem de resposta para o aplicativo. Se a função sempre retornar seu resultado ao aplicativo imediatamente, a função será considerada [*síncrona*](s-tapgloss.md).
+As funções de serviço de telefone suplementares são listadas por categoria nos tópicos a seguir. Uma função será identificada [*como assíncrona*](a-tapgloss.md) se indicar a conclusão em uma mensagem REPLY para o aplicativo. Se a função sempre retornar seu resultado para o aplicativo imediatamente, a função será considerada [*síncrona.*](s-tapgloss.md)
 
-A seguir está um agrupamento funcional das funções de serviço de telefone suplementar:
+Veja a seguir um grupo funcional das funções de serviço de telefone suplementares:
 
 -   [Botões](#buttons)
 -   [Áreas de dados](#data-areas)
@@ -23,60 +23,60 @@ A seguir está um agrupamento funcional das funções de serviço de telefone su
 -   [Dispositivos Hookswitch](#hookswitch-devices)
 -   [Lâmpadas](#lamps)
 -   [Abrindo e fechando dispositivos de telefone](#opening-and-closing-phone-devices)
--   [Inicialização e desligamento do telefone](#phone-initialization-and-shutdown)
--   [Status e recursos do telefone](#phone-status-and-capabilities)
--   [Negociação de versão do telefone](#phone-version-negotiation)
+-   [Telefone inicialização e desligamento](#phone-initialization-and-shutdown)
+-   [Telefone status e funcionalidades](#phone-status-and-capabilities)
+-   [Telefone de versão](#phone-version-negotiation)
 -   [Anel](#ring)
 -   [Status](#status)
 
-## <a name="phone-initialization-and-shutdown"></a>Inicialização e desligamento do telefone
+## <a name="phone-initialization-and-shutdown"></a>Telefone Inicialização e desligamento
 
 
 
 | Função                                       | Descrição                                                                          |
 |------------------------------------------------|--------------------------------------------------------------------------------------|
-| [**phoneInitializeEx**](/windows/desktop/api/Tapi/nf-tapi-phoneinitializeexa) | Inicializa a abstração de telefone TAPI para uso pelo aplicativo de invocação. Synchronous. |
-| [**phoneShutdown**](/windows/desktop/api/Tapi/nf-tapi-phoneshutdown)         | Desliga o uso de um aplicativo da abstração de telefone da TAPI. Synchronous.            |
+| [**Phoneinitializeex**](/windows/desktop/api/Tapi/nf-tapi-phoneinitializeexa) | Inicializa a abstração de telefone TAPI para uso pelo aplicativo de invocação. Synchronous. |
+| [**Phoneshutdown**](/windows/desktop/api/Tapi/nf-tapi-phoneshutdown)         | Desliga o uso de um aplicativo da abstração de telefone da TAPI. Synchronous.            |
 
 
 
  
 
-## <a name="phone-version-negotiation"></a>Negociação de versão do telefone
+## <a name="phone-version-negotiation"></a>Telefone Negociação de versão
 
 
 
 | Função                                                     | Descrição                                                            |
 |--------------------------------------------------------------|------------------------------------------------------------------------|
-| [**phoneNegotiateAPIVersion**](/windows/desktop/api/Tapi/nf-tapi-phonenegotiateapiversion) | Permite que um aplicativo negocie uma versão TAPI para usar o. Synchronous. |
+| [**Phonenegotiateapiversion**](/windows/desktop/api/Tapi/nf-tapi-phonenegotiateapiversion) | Permite que um aplicativo negocie uma versão tapi a ser usada. Synchronous. |
 
 
 
  
 
-## <a name="opening-and-closing-phone-devices"></a>Abrindo e fechando dispositivos de telefone
+## <a name="opening-and-closing-phone-devices"></a>Abrindo e fechando Telefone dispositivos
 
 
 
 | Função                         | Descrição                                                                                               |
 |----------------------------------|-----------------------------------------------------------------------------------------------------------|
-| [**phoneOpen**](/windows/desktop/api/Tapi/nf-tapi-phoneopen)   | Abre o dispositivo de telefone especificado, concedendo ao aplicativo o proprietário ou o monitor privilégios. Synchronous. |
+| [**phoneOpen**](/windows/desktop/api/Tapi/nf-tapi-phoneopen)   | Abre o dispositivo de telefone especificado, dando ao aplicativo privilégios de proprietário ou monitor. Synchronous. |
 | [**phoneClose**](/windows/desktop/api/Tapi/nf-tapi-phoneclose) | Fecha um dispositivo de telefone aberto especificado. Synchronous.                                                        |
 
 
 
  
 
-## <a name="phone-status-and-capabilities"></a>Status e recursos do telefone
+## <a name="phone-status-and-capabilities"></a>Telefone Status e funcionalidades
 
 
 
 | Função                                       | Descrição                                                                                                                                                      |
 |------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**phoneGetDevCaps**](/windows/desktop/api/Tapi/nf-tapi-phonegetdevcaps)     | Retorna os recursos de um determinado dispositivo de telefone. Synchronous.                                                                                                   |
-| [**phoneGetID**](/windows/desktop/api/Tapi/nf-tapi-phonegetid)               | Retorna uma ID de dispositivo para a classe de dispositivo determinada associada ao dispositivo de telefone especificado. Synchronous.                                                          |
+| [**Phonegetdevcaps**](/windows/desktop/api/Tapi/nf-tapi-phonegetdevcaps)     | Retorna os recursos de um determinado dispositivo de telefone. Synchronous.                                                                                                   |
+| [**phoneGetID**](/windows/desktop/api/Tapi/nf-tapi-phonegetid)               | Retorna uma ID do dispositivo para a classe de dispositivo especificada associada ao dispositivo de telefone especificado. Synchronous.                                                          |
 | [**phoneGetIcon**](/windows/desktop/api/Tapi/nf-tapi-phonegeticon)           | Permite que um aplicativo recupere um ícone para exibição para o usuário. Synchronous.                                                                                  |
-| [**phoneConfigDialog**](/windows/desktop/api/Tapi/nf-tapi-phoneconfigdialog) | Faz com que o provedor do dispositivo de telefone especificado exiba uma caixa de diálogo que permite ao usuário configurar parâmetros relacionados ao dispositivo de telefone. Synchronous. |
+| [**phoneConfigDialog**](/windows/desktop/api/Tapi/nf-tapi-phoneconfigdialog) | Faz com que o provedor do dispositivo de telefone especificado exibe uma caixa de diálogo que permite que o usuário configure parâmetros relacionados ao dispositivo de telefone. Synchronous. |
 
 
 
@@ -88,18 +88,18 @@ A seguir está um agrupamento funcional das funções de serviço de telefone su
 
 | Função                                         | Descrição                                                                                       |
 |--------------------------------------------------|---------------------------------------------------------------------------------------------------|
-| [**phoneSetHookSwitch**](/windows/desktop/api/Tapi/nf-tapi-phonesethookswitch) | Define o estado do gancho de dispositivos Hookswitch de um telefone aberto para um modo especificado. Assíncrono.      |
-| [**phoneGetHookSwitch**](/windows/desktop/api/Tapi/nf-tapi-phonegethookswitch) | Consulta o modo Hookswitch de um dispositivo Hookswitch de um dispositivo de telefone aberto. Synchronous.          |
-| [**phoneSetVolume**](/windows/desktop/api/Tapi/nf-tapi-phonesetvolume)         | Define o volume do alto-falante de um dispositivo Hookswitch de um dispositivo de telefone aberto. Assíncrono.           |
-| [**phoneGetVolume**](/windows/desktop/api/Tapi/nf-tapi-phonegetvolume)         | Retorna a configuração de volume do alto-falante de um dispositivo Hookswitch de um dispositivo de telefone aberto. Synchronous. |
-| [**phoneSetGain**](/windows/desktop/api/Tapi/nf-tapi-phonesetgain)             | Define o lucro do MIC de um dispositivo Hookswitch de um dispositivo de telefone aberto. Assíncrono.                 |
-| [**phoneGetGain**](/windows/desktop/api/Tapi/nf-tapi-phonegetgain)             | Retorna a configuração de obter do MIC de um dispositivo Hookswitch de um telefone aberto. Synchronous.              |
+| [**phoneSetHookSwitch**](/windows/desktop/api/Tapi/nf-tapi-phonesethookswitch) | Define o estado de gancho dos dispositivos hookswitch de um telefone aberto para um modo especificado. Assíncrono.      |
+| [**phoneGetHookSwitch**](/windows/desktop/api/Tapi/nf-tapi-phonegethookswitch) | Consulta o modo hookswitch de um dispositivo hookswitch de um dispositivo de telefone aberto. Synchronous.          |
+| [**phoneSetVolume**](/windows/desktop/api/Tapi/nf-tapi-phonesetvolume)         | Define o volume de um dispositivo hookswitch do alto-falante de um dispositivo de telefone aberto. Assíncrono.           |
+| [**phoneGetVolume**](/windows/desktop/api/Tapi/nf-tapi-phonegetvolume)         | Retorna a configuração de volume de um dispositivo hookswitch do alto-falante de um dispositivo de telefone aberto. Synchronous. |
+| [**phoneSetGain**](/windows/desktop/api/Tapi/nf-tapi-phonesetgain)             | Define o ganho de um microfone do dispositivo hookswitch de um dispositivo de telefone aberto. Assíncrono.                 |
+| [**phoneGetGain**](/windows/desktop/api/Tapi/nf-tapi-phonegetgain)             | Retorna a configuração de ganho de um microfone do dispositivo hookswitch de um telefone aberto. Synchronous.              |
 
 
 
  
 
-## <a name="display"></a>Monitor
+## <a name="display"></a>Exibir
 
 
 
@@ -118,8 +118,8 @@ A seguir está um agrupamento funcional das funções de serviço de telefone su
 
 | Função                             | Descrição                                                              |
 |--------------------------------------|--------------------------------------------------------------------------|
-| [**phoneSetRing**](/windows/desktop/api/Tapi/nf-tapi-phonesetring) | Toca um dispositivo de telefone aberto de acordo com um determinado modo de toque. Assíncrono. |
-| [**phoneGetRing**](/windows/desktop/api/Tapi/nf-tapi-phonegetring) | Retorna o modo de toque atual de um dispositivo de telefone aberto. Synchronous.    |
+| [**phoneSetRing**](/windows/desktop/api/Tapi/nf-tapi-phonesetring) | Anéis de um dispositivo de telefone aberto de acordo com um determinado modo de anel. Assíncrono. |
+| [**phoneGetRing**](/windows/desktop/api/Tapi/nf-tapi-phonegetring) | Retorna o modo de anel atual de um dispositivo de telefone aberto. Synchronous.    |
 
 
 
@@ -144,7 +144,7 @@ A seguir está um agrupamento funcional das funções de serviço de telefone su
 
 | Função                             | Descrição                                                                                 |
 |--------------------------------------|---------------------------------------------------------------------------------------------|
-| [**phoneSetLamp**](/windows/desktop/api/Tapi/nf-tapi-phonesetlamp) | Ilumina uma lâmpada em um dispositivo de telefone aberto especificado em um determinado modo de iluminação. Assíncrono. |
+| [**phoneSetLamp**](/windows/desktop/api/Tapi/nf-tapi-phonesetlamp) | Apaga uma lâmpada em um dispositivo de telefone aberto especificado em um determinado modo de iluminação de lâmpada. Assíncrono. |
 | [**phoneGetLamp**](/windows/desktop/api/Tapi/nf-tapi-phonegetlamp) | Retorna o modo de lâmpada atual da lâmpada especificada. Synchronous.                           |
 
 

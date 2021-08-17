@@ -1,23 +1,23 @@
 ---
-title: Tarefas de animação do Windows
-description: Os tópicos contidos nesta seção descrevem as tarefas básicas necessárias para os aplicativos que usam o Gerenciador de animação do Windows.
+title: Windows Tarefas de animação
+description: Os tópicos contidos nesta seção descrevem as tarefas básicas necessárias para aplicativos que usam Windows Animation Manager.
 ms.assetid: 28103e5e-f00a-4ff5-820b-ece24a7ef21a
 keywords:
-- Animação do Windows animações do Windows, tarefas
+- Windows Animação Windows animação , tarefas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3a2007e53a738494e9b143b3aa8a6cf83290acb1
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 4db8f5116a6e36697e649ad81bfbad883c57aee50440c3ba80734419ce2fb372
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105794579"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119058144"
 ---
-# <a name="windows-animation-tasks"></a>Tarefas de animação do Windows
+# <a name="windows-animation-tasks"></a>Windows Tarefas de animação
 
-Os tópicos contidos nesta seção descrevem as tarefas básicas necessárias para os aplicativos que usam o Gerenciador de animação do Windows.
+Os tópicos contidos nesta seção descrevem as tarefas básicas necessárias para aplicativos que usam Windows Animation Manager.
 
-Essas tarefas, em ordem, incluem:
+Essas tarefas, na ordem, incluem:
 
 ## <a name="in-this-section"></a>Nesta seção
 
@@ -25,12 +25,12 @@ Essas tarefas, em ordem, incluem:
 
 | Tópico                                                                                                | Descrição                                                                                                                                                                                                                                                                                           |
 |------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Criar os objetos de animação principais](adding-animation-to-an-application.md)<br/>               | Para usar a animação do Windows em seu aplicativo, a primeira etapa é criar um pequeno conjunto de objetos de animação principais.<br/>                                                                                                                                                                           |
-| [Criar variáveis de animação](create-animation-variables.md)<br/>                              | Um aplicativo deve criar uma variável de animação para cada característica visual que seja animada usando a animação do Windows.<br/>                                                                                                                                                            |
-| [Atualizar o Gerenciador de animação e desenhar quadros](introducing-windows-animation-manager.md)<br/> | Cada vez que um aplicativo agenda um storyboard, o aplicativo deve fornecer a hora atual ao Gerenciador de animação. A hora atual também é necessária ao direcionar o Gerenciador de animação para atualizar seu estado e definir todas as variáveis de animação para os valores interpolados apropriados.<br/> |
-| [Ler os valores da variável de animação](updating---application-driven-animation.md)<br/>         | Cada vez que seu aplicativo pinta, ele deve ler os valores atuais das variáveis de animação que representam as características visuais a serem animadas.<br/>                                                                                                                                  |
-| [Criar um storyboard e adicionar transições](updating---timer-driven-animation.md)<br/>          | Para criar uma animação, um aplicativo deve construir um Storyboard.<br/>                                                                                                                                                                                                                        |
-| [Agendar um storyboard](scheduling-a-storyboard.md)<br/>                                      | Depois que um Storyboard é criado, ele é agendado pelo Gerenciador de animação.<br/>                                                                                                                                                                                                                   |
+| [Criar os objetos de animação principais](adding-animation-to-an-application.md)<br/>               | Para usar Windows Animação em seu aplicativo, a primeira etapa é criar um pequeno conjunto de objetos de animação principais.<br/>                                                                                                                                                                           |
+| [Criar variáveis de animação](create-animation-variables.md)<br/>                              | Um aplicativo deve criar uma variável de animação para cada característica visual que deve ser animada usando Windows Animação.<br/>                                                                                                                                                            |
+| [Atualizar o Gerenciador de Animação e desenhar quadros](introducing-windows-animation-manager.md)<br/> | Sempre que um aplicativo agenda um storyboard, o aplicativo deve fornecer a hora atual para o gerenciador de animação. A hora atual também é necessária ao direcionar o gerenciador de animação para atualizar seu estado e definir todas as variáveis de animação para os valores interpolados apropriados.<br/> |
+| [Ler os valores de variável de animação](updating---application-driven-animation.md)<br/>         | Cada vez que seu aplicativo pinta, ele deve ler os valores atuais das variáveis de animação que representam as características visuais a serem animadas.<br/>                                                                                                                                  |
+| [Criar um storyboard e adicionar transições](updating---timer-driven-animation.md)<br/>          | Para criar uma animação, um aplicativo deve construir um storyboard.<br/>                                                                                                                                                                                                                        |
+| [Agendar um storyboard](scheduling-a-storyboard.md)<br/>                                      | Depois que um storyboard é criado, ele é agendado pelo gerenciador de animação.<br/>                                                                                                                                                                                                                   |
 
 
 
@@ -40,13 +40,13 @@ Essas tarefas, em ordem, incluem:
 
 <dl> <dt>
 
-[Visão geral da animação do Windows](scenic-animation-api-overview.md)
+[Windows Visão geral da animação](scenic-animation-api-overview.md)
 </dt> <dt>
 
-[Referência de animação do Windows](windows-animation-reference.md)
+[Windows Referência de animação](windows-animation-reference.md)
 </dt> <dt>
 
-[Exemplos de animação do Windows](windows-animation-samples.md)
+[Windows Exemplos de animação](windows-animation-samples.md)
 </dt> </dl>
 
  

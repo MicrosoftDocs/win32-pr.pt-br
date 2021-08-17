@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cae7f3d397982a9e018df73fd3801161436811bb
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: e7613856098f67f87e860743406eddd9acc5b9acb8b258793af0c4fe13e7d80d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104086934"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118960705"
 ---
 # <a name="ms-ds-lockout-threshold-attribute"></a>atributo ms-DS-Lock-Threshold
 
@@ -55,7 +55,7 @@ Limite de bloqueio para o bloqueio de contas de usuário.
 | ID do link                | \-                                                                    |
 | MAPI-Id                | \-                                                                    |
 | System-Only            | Falso                                                                 |
-| É de valor único       | True                                                                  |
+| É de valor único       | Verdadeiro                                                                  |
 | É indexado             | Falso                                                                 |
 | No catálogo global      | Falso                                                                 |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                          |
@@ -63,7 +63,7 @@ Limite de bloqueio para o bloqueio de contas de usuário.
 | Range-Upper            | 65535                                                                 |
 | Search-Flags           | 0x00000000                                                            |
 | System-Flags           | 0x00000010                                                            |
-| Classes usadas em        | [**ms-DS-password-Settings**](c-msds-passwordsettings.md)<br/> |
+| Classes usadas em        | [**ms-DS-Password-Configurações**](c-msds-passwordsettings.md)<br/> |
 
 
 
@@ -76,7 +76,7 @@ Limite de bloqueio para o bloqueio de contas de usuário.
 | ID do link                | \-                                                                    |
 | MAPI-Id                | \-                                                                    |
 | System-Only            | Falso                                                                 |
-| É de valor único       | True                                                                  |
+| É de valor único       | Verdadeiro                                                                  |
 | É indexado             | Falso                                                                 |
 | No catálogo global      | Falso                                                                 |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                          |
@@ -84,7 +84,7 @@ Limite de bloqueio para o bloqueio de contas de usuário.
 | Range-Upper            | 65535                                                                 |
 | Search-Flags           | 0x00000000                                                            |
 | System-Flags           | 0x00000010                                                            |
-| Classes usadas em        | [**ms-DS-password-Settings**](c-msds-passwordsettings.md)<br/> |
+| Classes usadas em        | [**ms-DS-Password-Configurações**](c-msds-passwordsettings.md)<br/> |
 
 
 
@@ -97,7 +97,7 @@ Limite de bloqueio para o bloqueio de contas de usuário.
 | ID do link                | \-                                                                    |
 | MAPI-Id                | \-                                                                    |
 | System-Only            | Falso                                                                 |
-| É de valor único       | True                                                                  |
+| É de valor único       | Verdadeiro                                                                  |
 | É indexado             | Falso                                                                 |
 | No catálogo global      | Falso                                                                 |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                          |
@@ -105,7 +105,7 @@ Limite de bloqueio para o bloqueio de contas de usuário.
 | Range-Upper            | 65535                                                                 |
 | Search-Flags           | 0x00000000                                                            |
 | System-Flags           | 0x00000010                                                            |
-| Classes usadas em        | [**ms-DS-password-Settings**](c-msds-passwordsettings.md)<br/> |
+| Classes usadas em        | [**ms-DS-Password-Configurações**](c-msds-passwordsettings.md)<br/> |
 
 
 

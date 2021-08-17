@@ -3,9 +3,9 @@ title: Método de índice ISearchResult
 description: Reservado.
 ms.assetid: vs|search|~\search\wds2x\activex_control\reference\ifaces\isearchresult\index.htm
 keywords:
-- Método index herdado recursos do ambiente Windows
-- Método index herdado recursos de ambiente do Windows, interface ISearchResult
-- Recursos de ambiente do Windows herdados da interface ISearchResult, método de índice
+- recursos do ambiente herdado do método Index Windows
+- método Index herdado Windows recursos de ambiente, interface ISearchResult
+- ISearchResult interface herdada Windows recursos de ambiente, método de índice
 ms.topic: article
 ms.date: 05/31/2018
 topic_type:
@@ -13,20 +13,20 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 2db8928eddde265f862caed67796ce24815cdb4d
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 21c6cc680fc3420c41b89cd614d4bab603e89eb4c5118e5802e6f76cbaf7a21d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104291751"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118976956"
 ---
 # <a name="isearchresultindex-method"></a>Método ISearchResult:: index
 
 Este método não está implementado.
 
- 
+ 
 
- 
+ 
 
 
 

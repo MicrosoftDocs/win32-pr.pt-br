@@ -1,7 +1,7 @@
 ---
-description: Função D3DXMatrixOrthoLH (D3DX10Math. h) – compila uma matriz de projeção ortográfica de mão esquerda.
+description: Função D3DXMatrixOrthoLH (D3DX10Math.h) – cria uma matriz de projeção ortográfica à esquerda.
 ms.assetid: 67bec4a3-2126-4f5a-9301-97faa6dc6e84
-title: Função D3DXMatrixOrthoLH (D3DX10Math. h)
+title: Função D3DXMatrixOrthoLH (D3DX10Math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 73cd5d9b809a0eb442db57e91c3788d2548a8c33
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: b8b1b64818f4c0903897dc5b1de83b1aaa963461e909edbbfc9ba8dc4a1f10f8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108113094"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119282956"
 ---
-# <a name="d3dxmatrixortholh-function-d3dx10mathh"></a>Função D3DXMatrixOrthoLH (D3DX10Math. h)
+# <a name="d3dxmatrixortholh-function-d3dx10mathh"></a>Função D3DXMatrixOrthoLH (D3DX10Math.h)
 
-Cria uma matriz de projeção ortográfica de mão esquerda.
+Cria uma matriz de projeção ortográfica esquerda.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -44,48 +44,48 @@ D3DXMATRIX* D3DXMatrixOrthoLH(
 
 <dl> <dt>
 
-*pout* \[ entrada, saída\]
+*pOut* \[ in, out\]
 </dt> <dd>
 
 Tipo: **[ **D3DXMATRIX**](../direct3d9/d3dxmatrix.md)\***
 
-Ponteiro para o [**D3DXMATRIX**](d3d10-d3dxmatrix.md)resultante.
+Ponteiro para o [**D3DXMATRIX resultante.**](d3d10-d3dxmatrix.md)
 
 </dd> <dt>
 
 *w* \[ em\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 Largura do volume de exibição.
 
 </dd> <dt>
 
-*h* \[\]
+*h* \[ em\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 Altura do volume de exibição.
 
 </dd> <dt>
 
-*Zn* \[ no\]
+*zn* \[ Em\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Valor z mínimo do volume de exibição que é referido como z-Near.
+Valor z mínimo do volume de exibição, que é conhecido como z-near.
 
 </dd> <dt>
 
-*ZF* \[ no\]
+*zf* \[ Em\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Valor z máximo do volume de exibição que é referido como z-far.
+Valor z máximo do volume de exibição, que é conhecido como z-far.
 
 </dd> </dl>
 
@@ -93,13 +93,13 @@ Valor z máximo do volume de exibição que é referido como z-far.
 
 Tipo: **[ **D3DXMATRIX**](../direct3d9/d3dxmatrix.md)\***
 
-Ponteiro para o [**D3DXMATRIX**](d3d10-d3dxmatrix.md)resultante.
+Ponteiro para o [**D3DXMATRIX resultante.**](d3d10-d3dxmatrix.md)
 
 ## <a name="remarks"></a>Comentários
 
 Todos os parâmetros da função D3DXMatrixOrthoLH são distâncias no espaço da câmera. Os parâmetros descrevem as dimensões do volume de exibição.
 
-O valor de retorno para essa função é o mesmo valor retornado no parâmetro pOut. Dessa forma, a função D3DXMatrixOrthoLH pode ser usada como um parâmetro para outra função.
+O valor retornado para essa função é o mesmo valor retornado no parâmetro pOut. Dessa forma, a função D3DXMatrixOrthoLH pode ser usada como um parâmetro para outra função.
 
 Essa função usa a fórmula a seguir para calcular a matriz retornada.
 
@@ -119,12 +119,12 @@ Essa função usa a fórmula a seguir para calcular a matriz retornada.
 
 | Requisito | Valor |
 |--------------------|-----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3DX10Math. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3DX10. lib</dt> </dl>   |
+| parâmetro<br/>  | <dl> <dt>D3DX10Math.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3DX10.lib</dt> </dl>   |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

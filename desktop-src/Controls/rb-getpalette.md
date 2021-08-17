@@ -1,9 +1,9 @@
 ---
-title: Mensagem de RB_GETPALETTE (commctrl. h)
-description: Recupera a paleta atual do controle rebar.
+title: RB_GETPALETTE mensagem (Commctrl.h)
+description: Recupera a paleta atual do controle de barra de rebar.
 ms.assetid: f9eeefb3-8308-45bf-89e4-4f282ee6d935
 keywords:
-- Controles de RB_GETPALETTE de mensagens do Windows
+- RB_GETPALETTE controles de Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 36dd2764b6a8951a337c990dcbcfb8e5aff9c56b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1e2a4be005392e01bceedd2582c61edfa60b808ef98414237109ec276dc016f8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104085811"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119078700"
 ---
-# <a name="rb_getpalette-message"></a>\_Mensagem RB GETpalette
+# <a name="rb_getpalette-message"></a>Mensagem GETPALETTE do RB \_
 
-Recupera a paleta atual do controle rebar.
+Recupera a paleta atual do controle de barra de rebar.
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -35,9 +35,9 @@ Recupera a paleta atual do controle rebar.
 *lParam* 
 </dt> <dd>Deve ser zero.</dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna um **HPALETTE** que especifica a paleta atual do controle rebar.
+Retorna um **HPALETTE** que especifica a paleta atual do controle de barra de rebar.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -45,9 +45,9 @@ Retorna um **HPALETTE** que especifica a paleta atual do controle rebar.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 
@@ -55,7 +55,7 @@ Retorna um **HPALETTE** que especifica a paleta atual do controle rebar.
 
 <dl> <dt>
 
-[**SetPalette de RB \_**](rb-setpalette.md)
+[**RB \_ SETPALETTE**](rb-setpalette.md)
 </dt> </dl>
 
  

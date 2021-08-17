@@ -1,5 +1,5 @@
 ---
-title: Métodos StructuredBuffer::StructuredBuffer Load
+title: 'Métodos de carga StructuredBuffer:: StructuredBuffer'
 description: Lê dados de buffer de um StructuredBuffer.
 ms.assetid: 4c797f36-d8e6-46ed-8ff0-248c28f82998
 keywords:
@@ -19,9 +19,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117724435"
 ---
-# <a name="structuredbufferload-methods"></a>Métodos StructuredBuffer::Load
+# <a name="structuredbufferload-methods"></a>Métodos StructuredBuffer:: Load
 
-Lê dados de buffer de [**um StructuredBuffer.**](sm5-object-structuredbuffer.md)
+Lê dados de buffer de um [**StructuredBuffer**](sm5-object-structuredbuffer.md).
 
 ### <a name="overload-list"></a>Lista de sobrecargas
 
@@ -29,8 +29,8 @@ Lê dados de buffer de [**um StructuredBuffer.**](sm5-object-structuredbuffer.md
 
 | Método                                                      | Descrição                                                          |
 |:------------------------------------------------------------|:---------------------------------------------------------------------|
-| [**Load(int,uint)**](structuredbuffer-load-float-uint-.md) | Lê dados de buffer e retorna o status sobre a operação.<br/> |
-| [**Load(int)**](structuredbuffer-load-float-.md)           | Lê dados de buffer.<br/>                                        |
+| [**Carga (int, uint)**](structuredbuffer-load-float-uint-.md) | Lê os dados do buffer e retorna o status sobre a operação.<br/> |
+| [**Carga (int)**](structuredbuffer-load-float-.md)           | Lê dados de buffer.<br/>                                        |
 
 
 

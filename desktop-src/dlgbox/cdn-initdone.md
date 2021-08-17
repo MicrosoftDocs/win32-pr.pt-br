@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6594c161d57a5d0772679477ee9bce2cda28ba12
-ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
+ms.openlocfilehash: 032cf03b6205f2184986d28ca115060b3bf7a99991ef6256f3b87f995c33341d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110549831"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117721047"
 ---
-# <a name="cdn_initdone-notification-code"></a>Código de \_ notificação DE CDN INITDONE
+# <a name="cdn_initdone-notification-code"></a>\_CDN Código de notificação INITDONE
 
-\[Começando com o Windows Vista, as **caixas** de **diálogo** Abrir e Salvar como comuns foram superadas pela caixa de diálogo Item [Comum](../shell/common-file-dialog.md). Recomendamos que você use a API de Diálogo de Item Comum em vez dessas caixas de diálogo da Biblioteca de Caixas de Diálogo Comuns.\]
+\[Começando com Windows Vista,  as  caixas de diálogo Abrir e Salvar como comuns foram superadas pela caixa [de diálogo Item Comum](../shell/common-file-dialog.md). Recomendamos que você use a API de Diálogo de Item Comum em vez dessas caixas de diálogo da Biblioteca de Caixas de Diálogo Comuns.\]
 
 Enviado por uma caixa de diálogo **Abrir** ou Salvar **como** no estilo Explorer quando o sistema terminar de organizar os controles na caixa de diálogo. O sistema move os controles padrão para dar espaço aos controles da caixa de diálogo filho.
 
@@ -51,11 +51,11 @@ Este parâmetro não é usado.
 *lParam* 
 </dt> <dd>
 
-Um ponteiro para uma [**estrutura OFNOTIFY.**](/windows/desktop/api/Commdlg/ns-commdlg-ofnotifya) A **estrutura OFNOTIFY** contém uma [**estrutura NMHDR**](/windows/win32/api/richedit/ns-richedit-nmhdr) **cujo** membro de código indica a mensagem **de \_ notificação CDN INITDONE.**
+Um ponteiro para uma [**estrutura OFNOTIFY.**](/windows/desktop/api/Commdlg/ns-commdlg-ofnotifya) A **estrutura OFNOTIFY** contém uma estrutura  [**NMHDR**](/windows/win32/api/richedit/ns-richedit-nmhdr) cujo membro de código indica CDN **mensagem de \_ notificação INITDONE.**
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O valor de retorno é ignorado.
 
@@ -71,7 +71,7 @@ O sistema enviará essa notificação somente se a caixa de diálogo tiver sido 
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                                               |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                     |
-| Cabeçalho<br/>                   | <dl> <dt>Commdlg.h (inclua Windows.h)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Commdlg.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -97,9 +97,9 @@ O sistema enviará essa notificação somente se a caixa de diálogo tiver sido 
 [**Openfilename**](/windows/win32/api/commdlg/ns-commdlg-openfilenamea)
 </dt> <dt>
 
-**Conceitua**
+**Conceitual**
 </dt> <dt>
 
-[Biblioteca de caixa de diálogo comum](common-dialog-box-library.md)
+[Biblioteca de caixas de diálogo comuns](common-dialog-box-library.md)
 </dt> </dl>
 

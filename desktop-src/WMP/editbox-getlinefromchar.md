@@ -1,9 +1,9 @@
 ---
-title: GetLineFromChar de edição
+title: EDITBOX.getLineFromChar
 description: O método getLineFromChar recupera o índice de linha para o índice de caracteres especificado.
 ms.assetid: c3a29bdf-ff63-4b6d-90e8-d414dde87f85
 keywords:
-- Admy. getLineFromChar Windows Media Player
+- EDITBOX.getLineFromChar Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 3462ce628da72ca1e55df79e408fc79e0ec8b63a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 110030c3c756a91c993857cef125c51669f71eb9a358eb7261205fde0b0ad4a9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105780010"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117749302"
 ---
-# <a name="editboxgetlinefromchar"></a>GetLineFromChar de edição
+# <a name="editboxgetlinefromchar"></a>EDITBOX.getLineFromChar
 
-O método **getLineFromChar** recupera o índice de linha para o índice de caracteres especificado.
+O **método getLineFromChar** recupera o índice de linha para o índice de caracteres especificado.
 
 ``` syntax
         elementID.getLineFromChar(index)
@@ -32,7 +32,7 @@ O método **getLineFromChar** recupera o índice de linha para o índice de cara
 
 <dl> <dt>
 
-<span id="index"></span><span id="INDEX"></span>*index*
+<span id="index"></span><span id="INDEX"></span>*Índice*
 </dt> <dd>
 
 **Número** (**longo**) que contém o índice do caractere cujo índice de linha deve ser recuperado.
@@ -41,13 +41,13 @@ O método **getLineFromChar** recupera o índice de linha para o índice de cara
 
 ## <a name="return-value"></a>Valor Retornado
 
-Esse método retorna um **número** (**longo**).
+Esse método retorna um **Número** (**long**).
 
 ## <a name="remarks"></a>Comentários
 
-Se a posição do caractere especificado for 1, esse método recuperará o índice de linha da linha atual.
+Se a posição de caractere especificada for 1, esse método recuperará o índice de linha da linha atual.
 
-Esse método só pode ser chamado depois que o controle se tornar visível.
+Esse método só pode ser chamado depois que o controle se torna visível.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -63,13 +63,13 @@ Esse método só pode ser chamado depois que o controle se tornar visível.
 
 <dl> <dt>
 
-[**Elemento admy**](editbox-element.md)
+[**Elemento EDITBOX**](editbox-element.md)
 </dt> <dt>
 
-[**Paminhar. getline**](editbox-getline.md)
+[**EDITBOX.getLine**](editbox-getline.md)
 </dt> <dt>
 
-[**GetLineIndex de edição**](editbox-getlineindex.md)
+[**EDITBOX.getLineIndex**](editbox-getlineindex.md)
 </dt> </dl>
 
  

@@ -1,7 +1,7 @@
 ---
-description: Verifica se um identificador de evento especificado é válido e se o evento de animação ainda não foi concluído.
+description: Verifica se um alça de evento especificado é válido e se o evento de animação ainda não foi concluído.
 ms.assetid: 242ad1e2-4b04-4ce1-9cdf-f66da9f83f06
-title: 'Método ID3DXAnimationController:: ValidateEvent (D3dx9anim. h)'
+title: Método ID3DXAnimationController::ValidateEvent (D3dx9anim.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: e1a632fa867269f04e8f5f66e6bc352ef1701cd9
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 24c5195d38aeaebefd1713df31f23b6b2ec7b2324a31381027f3442b541678c6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105752755"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118094173"
 ---
-# <a name="id3dxanimationcontrollervalidateevent-method"></a>Método ID3DXAnimationController:: ValidateEvent
+# <a name="id3dxanimationcontrollervalidateevent-method"></a>Método ID3DXAnimationController::ValidateEvent
 
-Verifica se um identificador de evento especificado é válido e se o evento de animação ainda não foi concluído.
+Verifica se um alça de evento especificado é válido e se o evento de animação ainda não foi concluído.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,26 +40,26 @@ HRESULT ValidateEvent(
 
 <dl> <dt>
 
-*hEvent* \[ no\]
+*hEvent* \[ Em\]
 </dt> <dd>
 
 Tipo: **[ **D3DXEVENTHANDLE**](id3dxanimationcontroller.md)**
 
-Identificador de evento para um evento de animação.
+Alça de evento para um evento de animação.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Retornará S \_ OK se o identificador de evento for válido e o evento ainda não tiver sido concluído.
+Retornará S \_ OK se o handle de evento for válido e o evento ainda não tiver sido concluído.
 
-Retornará E \_ falhará se o manipulador de eventos for inválido e/ou se o evento tiver sido concluído.
+Retorna E \_ FAIL se o alça de evento for inválido e/ou se o evento tiver sido concluído.
 
 ## <a name="remarks"></a>Comentários
 
-O método indicará que um identificador de evento é válido mesmo se o evento estiver em execução, mas ainda não tiver sido concluído.
+O método indicará que um handle de evento é válido mesmo se o evento estiver em execução, mas ainda não tiver sido concluído.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -67,8 +67,8 @@ O método indicará que um identificador de evento é válido mesmo se o evento 
 
 | Requisito | Valor |
 |--------------------|----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3dx9anim. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| parâmetro<br/>  | <dl> <dt>D3dx9anim.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

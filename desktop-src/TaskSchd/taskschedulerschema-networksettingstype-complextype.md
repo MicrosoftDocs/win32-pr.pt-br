@@ -1,9 +1,9 @@
 ---
-title: tipo complexo networkSettingsType
-description: Define os elementos que fornecem as configurações que o serviço Agendador de Tarefas usa para obter um perfil de rede.
+title: Tipo complexo networkSettingsType
+description: Define os elementos que fornecem as configurações que o serviço de Agendador de Tarefas usa para obter um perfil de rede.
 ms.assetid: e5df1dda-b691-47ff-a956-50ff1ce9c7cc
 keywords:
-- tipo complexo networkSettingsType Agendador de Tarefas
+- Agendador de Tarefas tipo complexo networkSettingsType
 topic_type:
 - apiref
 api_name:
@@ -20,9 +20,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117758466"
 ---
-# <a name="networksettingstype-complex-type"></a>tipo complexo networkSettingsType
+# <a name="networksettingstype-complex-type"></a>Tipo complexo networkSettingsType
 
-Define os elementos que fornecem as configurações que o serviço Agendador de Tarefas usa para obter um perfil de rede.
+Define os elementos que fornecem as configurações que o serviço de Agendador de Tarefas usa para obter um perfil de rede.
 
 ``` syntax
 <xs:complexType name="networkSettingsType">
@@ -45,8 +45,8 @@ Define os elementos que fornecem as configurações que o serviço Agendador de 
 
 | Elemento                                                              | Type                                                        | Descrição                                                                                 |
 |----------------------------------------------------------------------|-------------------------------------------------------------|---------------------------------------------------------------------------------------------|
-| [**Id**](taskschedulerschema-id-networksettingstype-element.md)     | [**guidType**](taskschedulerschema-guidtype-simpletype.md) | Especifica um valor guid que identifica um perfil de rede. <br/>                       |
-| [**Nome**](taskschedulerschema-name-networksettingstype-element.md) | nonEmptyString                                              | Especifica o nome de um perfil de rede. O nome é usado para fins de exibição. <br/> |
+| [**Sessão**](taskschedulerschema-id-networksettingstype-element.md)     | [**guidtype**](taskschedulerschema-guidtype-simpletype.md) | Especifica um valor de GUID que identifica um perfil de rede. <br/>                       |
+| [**Nome**](taskschedulerschema-name-networksettingstype-element.md) | não vazio                                              | Especifica o nome de um perfil de rede. O nome é usado para fins de exibição. <br/> |
 
 
 
@@ -56,8 +56,8 @@ Define os elementos que fornecem as configurações que o serviço Agendador de 
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/> |
 
 
 

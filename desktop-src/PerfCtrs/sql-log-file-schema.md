@@ -1,26 +1,26 @@
 ---
-description: Os aplicativos podem usar a PDH para extrair contadores de desempenho de logs SQL ou podem extrair contadores formatados ou brutos diretamente do banco de dados por meio de consultas SQL.
+description: Os aplicativos podem usar PDH para extrair contadores de desempenho de logs SQL, ou podem extrair contadores formatados ou brutos diretamente do banco de dados por meio SQL consultas.
 ms.assetid: 89515dd9-2d65-4b19-bb7a-ef9e7d146caa
-title: Esquema do arquivo de log SQL
+title: SQL Esquema de arquivo de log
 ms.topic: article
 ms.date: 08/17/2020
-ms.openlocfilehash: 33b988194a8fda4a99f713e0026aeaddb65e9c26
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a95026c478094d8e71a44c2c57e65c2fa7044b00e982ea43187244838beed2ab
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105756876"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119143809"
 ---
-# <a name="sql-log-file-schema"></a>Esquema do arquivo de log SQL
+# <a name="sql-log-file-schema"></a>SQL Esquema de arquivo de log
 
 > [!IMPORTANT]
-> O suporte da PDH para bancos de dados ODBC SQL pode ser alterado ou indisponível no futuro.
+> Suporte a PDH para bancos de dados ODBC SQL podem ser alterados ou não disponíveis no futuro.
 
-Os aplicativos podem usar as APIs de PDH de leitura e gravação de dados do contador de desempenho em bancos de dado SQL ODBC compatíveis e, em seguida, executar processamento adicional por meio de consultas SQL. Esta seção descreve o esquema SQL usado para armazenar contadores de desempenho. Você pode usar essas informações para criar relatórios e exibições personalizadas. O esquema consiste nas três tabelas a seguir:
+Os aplicativos podem usar apIs PDH para ler e gravar dados do contador de desempenho em bancos de dados compatíveis com SQL ODBC e, em seguida, executar processamento posterior por meio SQL consultas. Esta seção descreve o esquema SQL usado para armazenar contadores de desempenho. Você pode usar essas informações para criar exibições e relatórios personalizados. O esquema consiste nas três tabelas a seguir:
 
-- [**Dados**](counterdata.md)
-- [**Detalhes**](counterdetails.md)
+- [**Counterdata**](counterdata.md)
+- [**CounterDetails**](counterdetails.md)
 - [**DisplayToID**](displaytoid.md)
 
 > [!NOTE]
-> O suporte da PDH para bancos de dados ODBC SQL funciona apenas com drivers ODBC SQL que dão suporte a [extensões de cópia em massa (BCP)](/sql/relational-databases/native-client-odbc-extensions-bulk-copy-functions/sql-server-driver-extensions-bulk-copy-functions).
+> O suporte a PDH para bancos de dados SQL ODBC funciona apenas com drivers de SQL ODBC que dão suporte a extensões de cópia em [massa (BCP).](/sql/relational-databases/native-client-odbc-extensions-bulk-copy-functions/sql-server-driver-extensions-bulk-copy-functions)

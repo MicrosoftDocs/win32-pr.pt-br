@@ -1,7 +1,7 @@
 ---
-description: Identificador para a paleta da janela.
+description: Lidar com a paleta da janela.
 ms.assetid: 0ab7d6b6-fe19-41d1-8a51-fee722148d1c
-title: 'Membro CBaseWindow:: m_hPalette (Winutil. h)'
+title: Membro CBaseWindow::m_hPalette (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: b3a8089b144d7037ab93ba9d8ad66dfa6742af11
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3aa97162af52471080a0f6ad349de28a470495084975bbbfdfe390c6146e67aa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105748209"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118954595"
 ---
-# <a name="cbasewindowm_hpalette-member"></a>Membro de CBaseWindow:: m \_ hPalette
+# <a name="cbasewindowm_hpalette-member"></a>Membro CBaseWindow::m \_ hPalette
 
-Identificador para a paleta da janela.
+Lidar com a paleta da janela.
 
 ## <a name="syntax"></a>Syntax
 
@@ -42,8 +42,8 @@ HPALETTE m_hPalette;
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Winutil. h (incluir fluxos. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Winutil.h (incluir Fluxos.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

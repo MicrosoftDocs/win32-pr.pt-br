@@ -1,7 +1,7 @@
 ---
-description: Pesquisa em um sombreador um comentário específico. O comentário é identificado por um código de quatro caracteres (FOURCC) na primeira DWORD do comentário.
+description: Pesquisa um sombreador em busca de um comentário específico. O comentário é identificado por um código de quatro caracteres (FOURCC) na primeira DWORD do comentário.
 ms.assetid: 86ab8330-fd48-4d14-835c-92399c6c8a38
-title: Função D3DXFindShaderComment (D3DX9Shader. h)
+title: Função D3DXFindShaderComment (D3DX9Shader.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 394c72bcf7076075318cd664cf56bbb464d7e3cf
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 07ff15b77866732f7a2dcab814e1ccf84d5344f640d83300af874e162485879b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105771641"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118096051"
 ---
 # <a name="d3dxfindshadercomment-function"></a>Função D3DXFindShaderComment
 
-Pesquisa em um sombreador um comentário específico. O comentário é identificado por um código de quatro caracteres (FOURCC) na primeira DWORD do comentário.
+Pesquisa um sombreador em busca de um comentário específico. O comentário é identificado por um código de quatro caracteres (FOURCC) na primeira DWORD do comentário.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -43,7 +43,7 @@ HRESULT D3DXFindShaderComment(
 
 <dl> <dt>
 
-*pFunction* \[ no\]
+*pFunction* \[ Em\]
 </dt> <dd>
 
 Tipo: **const [**DWORD**](../winprog/windows-data-types.md) \***
@@ -52,38 +52,38 @@ Ponteiro para o fluxo DWORD da função de sombreador.
 
 </dd> <dt>
 
-*FOURCC* \[ no\]
+*FourCC* \[ Em\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Código FOURCC que identifica o bloco de comentários. Consulte [formatos FOURCC](d3dformat.md).
+Código FOURCC que identifica o bloco de comentário. Consulte [Formatos FourCC](d3dformat.md).
 
 </dd> <dt>
 
-*ppData* \[ no\]
+*ppData* \[ Em\]
 </dt> <dd>
 
 Tipo: **[ **LPCVOID**](../winprog/windows-data-types.md)\***
 
-Retorna um ponteiro para os dados de comentário (sem incluir o token de comentário e o código FOURCC). Esse valor pode ser **nulo**.
+Retorna um ponteiro para os dados de comentário (sem incluir o token de comentário e o código FOURCC). Esse valor pode ser **NULL.**
 
 </dd> <dt>
 
-*pSizeInBytes* \[ fora\]
+*pSizeInBytes* \[ out\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)\***
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)\***
 
-Retorna o tamanho dos dados de comentário em bytes. Esse valor pode ser **nulo**.
+Retorna o tamanho dos dados de comentário em bytes. Esse valor pode ser **NULL.**
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se a função for bem sucedido, o valor de retorno será D3D \_ OK. Se o comentário não for encontrado e nenhum outro erro tiver ocorrido, S \_ false será retornado.
+Se a função for bem-sucedida, o valor de retorno será D3D \_ OK. Se o comentário não for encontrado e nenhum outro erro tiver ocorrido, S \_ FALSE será retornado.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -91,8 +91,8 @@ Se a função for bem sucedido, o valor de retorno será D3D \_ OK. Se o coment�
 
 | Requisito | Valor |
 |--------------------|------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3DX9Shader. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>     |
+| parâmetro<br/>  | <dl> <dt>D3DX9Shader.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>     |
 
 
 

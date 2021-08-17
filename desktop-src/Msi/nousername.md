@@ -4,12 +4,12 @@ ms.assetid: 6e2d18f6-e0f6-4d35-aa8d-35aebe60dcac
 title: Propriedade NOUSERNAME
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2507d359b2d3b75a66ba0ae26c13deefc3f4b98b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 942cd90a2cd4632a57db405678d21b8157a4d6264532929690120f2d6a1865ae
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105779627"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118943353"
 ---
 # <a name="nousername-property"></a>Propriedade NOUSERNAME
 
@@ -25,7 +25,7 @@ Não definido. O instalador define a propriedade [**username**](username.md) aut
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versão<br/> | Windows Installer 5,0 no Windows Server 2012, Windows 8, Windows Server 2008 R2 ou Windows 7. Windows Installer 4,0 ou Windows Installer 4,5 no Windows Server 2008 ou no Windows Vista. Windows Installer no Windows Server 2003 ou no Windows XP. Consulte os [requisitos de Run-Time Windows Installer](windows-installer-portal.md) para obter informações sobre a Service Pack mínima do Windows exigida por uma versão Windows Installer.<br/> |
+| Versão<br/> | Windows instalador 5,0 em Windows Server 2012, Windows 8, Windows Server 2008 R2 ou Windows 7. Windows Installer 4,0 ou Windows Installer 4,5 no Windows Server 2008 ou Windows Vista. Windows instalador no Windows Server 2003 ou Windows XP. consulte os [requisitos de Run-Time Windows Installer](windows-installer-portal.md) para obter informações sobre o service pack mínimo Windows exigido por uma versão Windows Installer.<br/> |
 
 
 

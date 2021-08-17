@@ -128,7 +128,7 @@ As propriedades do efeito da tabela de pesquisa 3D são definidas pela enumeraç
 |--------------------------|---------------------------------------------------|
 | Cliente mínimo com suporte | Windows 10 \[ aplicativos da área de trabalho \| Windows aplicativos da loja\] |
 | Servidor mínimo com suporte | Windows 10 \[ aplicativos da área de trabalho \| Windows aplicativos da loja\] |
-| parâmetro                   | d2d1effects \_ 2. h                                  |
+| Cabeçalho                   | d2d1effects \_ 2. h                                  |
 | Biblioteca                  | d2d1. lib, dxguid. lib                              |
 
 ## <a name="related-topics"></a>Tópicos relacionados

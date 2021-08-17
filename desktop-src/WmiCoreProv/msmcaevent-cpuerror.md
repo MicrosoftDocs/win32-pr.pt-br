@@ -1,7 +1,7 @@
 ---
-description: Representa um evento de erro de CPU. Essa classe está disponível somente em sistemas Windows de 64 bits.
+description: Representa um evento de erro de CPU. Essa classe está disponível somente em sistemas de Windows de 64 bits.
 ms.assetid: 4ee4aa51-a965-4569-b53c-0ba21bf42752
-title: Classe MSMCAEvent_CPUError
+title: MSMCAEvent_CPUError classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -24,18 +24,18 @@ api_type:
 - DllExport
 api_location:
 - Wmiprov.dll
-ms.openlocfilehash: dff990b46d730a1e8b54ef99a24a686745e3dacf
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 42542f9e32bee31e44df65c0d0ade3d337e3fe395315fe28d6fd8b1c66b3b8dd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104501674"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117926869"
 ---
-# <a name="msmcaevent_cpuerror-class"></a>\_Classe MSMCAEvent CPUError
+# <a name="msmcaevent_cpuerror-class"></a>Classe CPUError MSMCAEvent \_
 
-A classe **MSMCAEvent \_ CPUError** representa um evento de erro de CPU. Essa classe está disponível somente em sistemas Windows de 64 bits.
+A **classe \_ CPUError MSMCAEvent** representa um evento de erro de CPU. Essa classe está disponível somente em sistemas de Windows de 64 bits.
 
-A sintaxe a seguir é simplificada do código formato MOF (MOF) e inclui todas as suas propriedades herdadas. As propriedades e os métodos estão em ordem alfabética, não em ordem de MOF.
+A sintaxe a seguir é simplificada Managed Object Format código (MOF) e inclui todas as suas propriedades herdadas. As propriedades e os métodos estão em ordem alfabética, não em ordem MOF.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -58,33 +58,33 @@ class MSMCAEvent_CPUError : WmiEvent
 
 ## <a name="members"></a>Membros
 
-A classe **MSMCAEvent \_ CPUError** tem estes tipos de membros:
+A **classe \_ CPUError MSMCAEvent** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **MSMCAEvent \_ CPUError** tem essas propriedades.
+A **classe \_ CPUError MSMCAEvent** tem essas propriedades.
 
 <dl> <dt>
 
 **Ativo**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-**True**, se esta instância da classe estiver ativa; caso contrário, **false**.
+**TRUE**, se esta instância da classe estiver ativa; caso **contrário, FALSE.**
 
 </dd> <dt>
 
 **AdditionalErrors**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -94,20 +94,20 @@ Número de erros adicionais no registro MCA.
 
 </dd> <dt>
 
-**CPUs**
+**Cpu**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-CPU que relatou o erro. Essa propriedade se aplica somente a um sistema multiprocessador no qual o primeiro processador recebe o número 0, o segundo processador recebe o número 1 e assim por diante.
+CPU que relatou o erro. Essa propriedade só se aplica a um sistema multiprocessador no qual o primeiro processador recebe o número 0, o segundo processador recebe o número 1 e assim por diante.
 
 </dd> <dt>
 
-**ErrorSeverity**
+**Errorseverity**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **uint8**
@@ -122,8 +122,8 @@ Nível de severidade do erro relatado.
 
 | Valor                                                                                                | Significado                |
 |------------------------------------------------------------------------------------------------------|------------------------|
-| <span id="0"></span><dl> <dt>**0**</dt> </dl> | Recuperado<br/> |
-| <span id="1"></span><dl> <dt>**1**</dt> </dl> | Fatais<br/>       |
+| <span id="0"></span><dl> <dt>**0**</dt> </dl> | Recuperável<br/> |
+| <span id="1"></span><dl> <dt>**1**</dt> </dl> | Fatal<br/>       |
 | <span id="2"></span><dl> <dt>**2**</dt> </dl> | Corrigível<br/> |
 
 
@@ -141,17 +141,17 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [ **chave**](/windows/desktop/WmiSdk/standard-qualifiers)
+Qualificadores: [ **Chave**](/windows/desktop/WmiSdk/standard-qualifiers)
 </dt> </dl>
 
-Identificador exclusivo para esta instância da classe.
+Identificador exclusivo para esta instância da classe .
 
 </dd> <dt>
 
 **Level**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -160,55 +160,55 @@ Tipo de acesso: Somente leitura
 Qualificadores: **WmiMissingData** (-1)
 </dt> </dl>
 
-Nível de cache, TLB (buffer de conversão) ou estrutura de micro-arquitetura em que o erro ocorreu. Um valor de 0 (zero) indica o primeiro nível.
+Nível de cache, TLB (buffer de tradução) ou estrutura microtetônica em que o erro ocorreu. Um valor de 0 (zero) indica o primeiro nível.
 
 </dd> <dt>
 
 **LogToEventlog**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Se for zero, esse evento não será registrado no log de eventos do sistema.
+Se zero, esse evento não será registrado no log de eventos do sistema.
 
 </dd> <dt>
 
 **RawRecord**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: matriz **uint8**
+Tipo de dados: **matriz uint8**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Matriz de bytes que contém o registro de erro bruto. O número de elementos na matriz que a propriedade **size** especifica.
+Matriz de bytes que contém o registro de erro bruto. O número de elementos na matriz especificada **pela propriedade** Size.
 
 </dd> <dt>
 
-**RecordId**
+**Recordid**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt64**
+Tipo de dados: **uint64**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Identificador de registro do registro de erro para este erro.
+Identificador de registro do registro de erro para esse erro.
 
-Para obter mais informações sobre como usar valores de **UInt64** em scripts, consulte [scripts no WMI](/previous-versions//aa393262(v=vs.85)).
+Para obter mais informações sobre como **usar valores uint64** em scripts, consulte [Scripts no WMI](/previous-versions//aa393262(v=vs.85)).
 
 </dd> <dt>
 
 **Tamanho**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -221,19 +221,19 @@ Tamanho do registro de erro bruto em bytes.
 **Tipo**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Tipo de mensagem de log de eventos. Essas mensagens correspondem aos códigos de mensagem de log de eventos usados para inserir mensagens de log de eventos pelo provedor de consumidor do log de eventos do Windows quando ele recebe um dos eventos.
+Tipo de mensagem de log de eventos. Essas mensagens correspondem aos códigos de mensagem do log de eventos usados para inserir mensagens de log de eventos pelo provedor de consumidor do Windows log de eventos quando recebe um dos eventos.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-A classe **MSMCAEvent \_ CPUError** é derivada de [**WmiEvent**](wmievent.md).
+A **classe \_ CPUError MSMCAEvent** é derivada de [**WMIEvent**](wmievent.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -243,8 +243,8 @@ A classe **MSMCAEvent \_ CPUError** é derivada de [**WmiEvent**](wmievent.md).
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows XP<br/>                                                                  |
 | Servidor mínimo com suporte<br/> | Windows Server 2003<br/>                                                         |
-| Namespace<br/>                | \\WMI raiz<br/>                                                                   |
-| MOF<br/>                      | <dl> <dt>Wmicore. mof</dt> </dl> |
+| Namespace<br/>                | WMI \\ raiz<br/>                                                                   |
+| MOF<br/>                      | <dl> <dt>Wmicore.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Wmiprov.dll</dt> </dl> |
 
 
@@ -253,10 +253,10 @@ A classe **MSMCAEvent \_ CPUError** é derivada de [**WmiEvent**](wmievent.md).
 
 <dl> <dt>
 
-[Classes MSMCA](msmca-classes.md)
+[MSMCA Classes](msmca-classes.md)
 </dt> <dt>
 
-[**WMIEvent**](wmievent.md)
+[**Wmievent**](wmievent.md)
 </dt> </dl>
 
  

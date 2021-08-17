@@ -3,53 +3,53 @@ title: Criando arquivos MIDI
 description: Criando arquivos MIDI
 ms.assetid: 2fca3b41-14f9-4eaf-9fdb-8f952c834302
 keywords:
-- Multimídia do Windows, criando arquivos MIDI
+- Windows multimídia, criando arquivos MIDI
 - multimídia, criando arquivos MIDI
-- áudio de multimídia, criando arquivos MIDI
+- áudio multimídia, criando arquivos MIDI
 - áudio, criando arquivos MIDI
-- MIDI (interface digital de instrumento musical), criando arquivos
-- MIDI (interface digital de instrumentos musicais), criando arquivos
-- Criando arquivos MIDI, sobre
-- Associação de fabricantes de MIDI (MMA)
-- MMA (Associação de fabricantes de MIDI)
-- Especificação detalhada de MIDI
-- Especificação de arquivos MIDI padrão
-- Especificação MIDI (GM) geral
-- Especificação de GM (MIDI geral)
+- MIDI (Interface Digital do Instrument Instrument), criando arquivos
+- MIDI (Interface Digital do Instrument Instrument), criando arquivos
+- criando arquivos MIDI, sobre
+- MMA (Associação de Fabricantes MIDI)
+- MMA (Associação de Fabricantes MIDI)
+- Especificação detalhada do MIDI
+- Especificação de Arquivos MIDI Padrão
+- Especificação geral de MIDI (GM)
+- Especificação gm (MIDI geral)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e36ccc25e73d6a28afc9001f2862870f1fa1a9ef
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 07e2a229a8e9208645fa7ffae296c004b833156b240f063066be2a8732175054
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104005238"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119144600"
 ---
 # <a name="creating-midi-files"></a>Criando arquivos MIDI
 
-As especificações de MIDI (interface digital de instrumento musical) são publicadas pelo e são materiais com direitos autorais da MMA (Associação de fabricantes de MIDI). A lista a seguir descreve as especificações que são do maior interesse geral:
+As especificações da MIDI (Interface Digital) do Instrument Instrument são publicadas pelo e são material protegido por direitos autorais da MMA (Associação de Fabricantes MIDI). A lista a seguir descreve as especificações que são de maior interesse geral:
 
-## <a name="midi-detailed-specification"></a>Especificação detalhada de MIDI
+## <a name="midi-detailed-specification"></a>Especificação detalhada do MIDI
 
-A especificação de MIDI detalhado explica os protocolos de hardware e software MIDI. Isso é útil para o desenvolvimento de aplicativos multimídia que implementam o suporte a MIDI usando funções de MIDI para gravar, editar e/ou reproduzir dados MIDI.
+A Especificação Detalhada do MIDI explica os protocolos de hardware e software MIDI. Isso é útil para aqueles que desenvolvem aplicativos multimídia que implementam suporte a MIDI usando funções MIDI para registrar, editar e/ou reproduzir dados MIDI.
 
-## <a name="standard-midi-files-10"></a>Arquivos MIDI padrão 1,0
+## <a name="standard-midi-files-10"></a>Arquivos MIDI Padrão 1.0
 
-A especificação de arquivos MIDI padrão define uma maneira de trocar dados de MIDI com carimbo de data/hora entre diferentes aplicativos no mesmo ou em plataformas de hardware diferentes. Isso é útil para desenvolvedores que gravam aplicativos que lêem e analisam arquivos de disco que contêm dados MIDI e/ou gravam arquivos de dados MIDI no disco.
+A especificação de Arquivos MIDI Padrão define uma maneira de trocar dados MIDI com carimbo de data/hora entre diferentes aplicativos na mesma plataforma de hardware ou em diferentes plataformas de hardware. Isso é útil para desenvolvedores que escrevem aplicativos que leem e analisaram arquivos de disco contendo dados MIDI e/ou gravar arquivos de dados MIDI no disco.
 
-## <a name="general-midi-system---level-1"></a>Sistema MIDI geral-nível 1
+## <a name="general-midi-system---level-1"></a>Sistema MIDI geral – Nível 1
 
-A especificação MIDI geral (GM) define uma configuração de MIDI mínima de um "sistema MIDI geral". Esse sistema consiste em uma classe específica de dispositivos de reprodução de MIDI e é de seu interesse para desenvolvedores de multimídia que criam arquivos MIDI. A maioria das placas de som do PC e sintetizadores MIDI fabricados atualmente são compatíveis com a especificação GM. Os arquivos MIDI que são criados para a especificação do GM geralmente devem soar como se destinam a soar, não importa em qual dispositivo compatível com GM eles são executados.
+A especificação geral MIDI (GM) define uma configuração MIDI mínima de um "Sistema MIDI Geral". Esse sistema consiste em uma classe específica de dispositivos de reprodução MIDI e é de interesse para desenvolvedores multimídia que autor de arquivos MIDI. A maioria das placas de som de PC e sintetizadores MIDI fabricados atualmente são compatíveis com a especificação GM. Os arquivos MIDI que são destinados à especificação GM geralmente devem parecer como deveriam parecer, independentemente do dispositivo compatível com GM em que eles são tocadas.
 
-Para permitir que os arquivos MIDI sejam um formato viável para representar música na computação multimídia, o Windows segue a especificação geral do sistema MIDI 1. Os tópicos a seguir fornecem diretrizes adicionais de criação de MIDI:
+Para permitir que os arquivos MIDI sejam um formato viável para representar música na computação multimídia, o Windows segue a especificação Geral do Sistema MIDI Nível 1. Os tópicos a seguir fornecem diretrizes de autor MIDI adicionais:
 
--   [Diretrizes de criação para arquivos MIDI](authoring-guidelines-for-midi-files.md)
--   [Atribuições de patch de MIDI padrão](standard-midi-patch-assignments.md)
+-   [Diretrizes de autor para arquivos MIDI](authoring-guidelines-for-midi-files.md)
+-   [Atribuições de patch MIDI Padrão](standard-midi-patch-assignments.md)
 -   [Atribuições de chave MIDI padrão](standard-midi-key-assignments.md)
 
- 
+ 
 
- 
+ 
 
 
 
