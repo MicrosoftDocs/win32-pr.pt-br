@@ -1,11 +1,11 @@
 ---
 title: Atributo MS-TS-LicenseVersion2
-description: Versão da segunda CAL por usuário do Terminal Server.
+description: Versão do segundo servidor de terminal por CAL de usuário.
 ms.assetid: 9e4bc586-365a-4a46-a623-e686d305a159
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD do atributo MS-TS-LicenseVersion2
-- Esquema de AD do atributo msTSLicenseVersion2
+- Esquema do AD do atributo MS-TS-LicenseVersion2
+- Esquema do AD do atributo msTSLicenseVersion2
 topic_type:
 - apiref
 api_name:
@@ -23,20 +23,20 @@ ms.locfileid: "118960155"
 ---
 # <a name="ms-ts-licenseversion2-attribute"></a>Atributo MS-TS-LicenseVersion2
 
-Versão da segunda CAL por usuário do Terminal Server.
+Versão do segundo servidor de terminal por CAL de usuário.
 
 
 
 | Entrada | Valor |
 |-------------------|---------------------------------------------|
 | CN                | MS-TS-LicenseVersion2                       |
-| LDAP-Display-Name | msTSLicenseVersion2                         |
+| Ldap-Display-Name | msTSLicenseVersion2                         |
 | Tamanho              | \-                                          |
 | Privilégio de atualização  | \-                                          |
 | Frequência de atualização  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.2001                     |
-| System-ID-GUID    | 4b0df103-8d97-45d9-ad69-85c3080ba4e7        |
-| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | 4b0df103-8d97-45d9-ad69-85c3080ba4e7        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -55,10 +55,10 @@ Versão da segunda CAL por usuário do Terminal Server.
 | ID do link                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| É de valor único       | Verdadeiro         |
+| Tem valor único       | Verdadeiro         |
 | É indexado             | Verdadeiro         |
-| No catálogo global      | Falso        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S: |
+| No Catálogo Global      | Falso        |
+| Descritor de segurança NT | O:BAG:BAD:S: |
 | Range-Lower            | 0            |
 | Range-Upper            | 255          |
 | Search-Flags           | 0x00000001   |
@@ -76,10 +76,10 @@ Versão da segunda CAL por usuário do Terminal Server.
 | ID do link                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| É de valor único       | Verdadeiro         |
+| Tem valor único       | Verdadeiro         |
 | É indexado             | Verdadeiro         |
-| No catálogo global      | Falso        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S: |
+| No Catálogo Global      | Falso        |
+| Descritor de segurança NT | O:BAG:BAD:S: |
 | Range-Lower            | 0            |
 | Range-Upper            | 255          |
 | Search-Flags           | 0x00000001   |
@@ -97,10 +97,10 @@ Versão da segunda CAL por usuário do Terminal Server.
 | ID do link                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| É de valor único       | Verdadeiro         |
+| Tem valor único       | Verdadeiro         |
 | É indexado             | Verdadeiro         |
-| No catálogo global      | Falso        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S: |
+| No Catálogo Global      | Falso        |
+| Descritor de segurança NT | O:BAG:BAD:S: |
 | Range-Lower            | 0            |
 | Range-Upper            | 255          |
 | Search-Flags           | 0x00000001   |

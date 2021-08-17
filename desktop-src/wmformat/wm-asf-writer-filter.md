@@ -1,14 +1,14 @@
 ---
-title: filtro de gravador ASF do WM (SDK do formato de mídia do Windows 11)
-description: saiba mais sobre o filtro do gravador ASF do WM para o SDK do Windows Media Format 11. Examine as informações de filtro e consulte os tópicos relacionados.
+title: Filtro do wm asf writer (Windows formato de mídia 11 SDK)
+description: Saiba mais sobre o filtro Wm ASF Writer para o SDK Windows Media Format 11. Revise as informações de filtro e consulte os tópicos relacionados.
 ms.assetid: a902c92e-836d-492c-b2d2-89c216125774
 keywords:
-- Windows SDK do formato de mídia, gravador ASF do WM
-- DirectShow, gravador ASF do WM
-- Filtros do QASF, gravador ASF do WM
-- Gravador ASF do WM, sobre
-- ASF (Advanced Systems Format), gravador ASF do WM
-- ASF (formato de sistemas avançados), gravador ASF do WM
+- Windows SDK de Formato de Mídia, Wm ASF Writer
+- DirectShow,Wm ASF Writer
+- Filtros QASF, Wm ASF Writer
+- WM ASF Writer,about
+- AsF (Advanced Systems Format), WM ASF Writer
+- ASF (Formato de Sistemas Avançados), Wm ASF Writer
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 5182de3bc171a6c70afa03aea32d18c86c174fde0bbc6a2594f31cf41d0f250a
@@ -18,28 +18,28 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118963805"
 ---
-# <a name="wm-asf-writer-filter-windows-media-format-11-sdk"></a>filtro de gravador ASF do WM (SDK do formato de mídia do Windows 11)
+# <a name="wm-asf-writer-filter-windows-media-format-11-sdk"></a>Filtro do wm asf writer (Windows formato de mídia 11 SDK)
 
-O filtro do gravador ASF do WM aceita um número variável de fluxos de entrada e cria um arquivo ASF. O filtro manipula toda a compactação e a multiplexação (embora o mecanismo de compactação possa ser ignorado). Você pode usar o filtro do gravador ASF do WM em vários cenários, incluindo captura Audio-Video de vídeo digital (DV), recompactação de áudio e conversão de arquivos de mídia digital intercalados (AVI) ou MPEG para streaming de rede. esse filtro fornece a única maneira de criar arquivos de vídeo do Microsoft Windows media Audio e do Windows media no DirectShow.
+O filtro Wm ASF Writer aceita um número variável de fluxos de entrada e cria um arquivo ASF. O filtro lida com toda a compactação e multiplexação (embora o mecanismo de compactação possa ser ignorado). Você pode usar o filtro gravador WM ASF em vários cenários, incluindo captura de DV (vídeo digital), re Audio-Video compactação de áudio e conversão de arquivos de mídia digital INTERcalados (AVI) ou MPEG para streaming de rede. Esse filtro fornece a única maneira de criar arquivos de Áudio de Mídia Windows Microsoft Windows e de vídeo de mídia DirectShow.
 
-Para obter mais informações, consulte [criando arquivos ASF no DirectShow](creating-asf-files-in-directshow.md).
+Para obter mais informações, consulte [Criando arquivos ASF no DirectShow](creating-asf-files-in-directshow.md).
 
-A tabela a seguir contém informações sobre o filtro de gravador ASF do WM, como as interfaces e os tipos de mídia aos quais ele dá suporte.
+A tabela a seguir contém informações sobre o filtro Wm ASF Writer, como as interfaces e tipos de mídia aos quais ele dá suporte.
 
 
 
 | Informações de filtro                       |  Tipos                                                                                                                                                                                                                       |
 |------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Filtrar interfaces      | **IAMFilterMiscFlags**, **IBaseFilter**, **IConfigAsfWriter**, **IFileSinkFilter2**, IMediaSeeking, IPersistStream, IServiceProvider, ISpecifyPropertyPages, **IWMIndexer2**, **IWMHeaderInfo**, **IWMWriterAdvanced2** |
-| Tipos de mídia de pino de entrada  | Dependente do perfil. Normalmente, tipos descompactados como \_ vídeo de áudio de MediaType ou MediaType \_ , embora tipos compactados possam ser aceitos se corresponderem ao perfil                                                   |
-| Interfaces de pino de entrada   | **IPin**, **IMemInputPin**, **IAMStreamConfig**, **IServiceProvider**, **IAMWMBufferPass**, **IWMStreamConfig2** (por meio de **IServiceProvider**)                                                                         |
-| Tipos de mídia do pino de saída | Não se aplica                                                                                                                                                                                                          |
+| Interfaces de filtro      | **IAMFilterMiscFlags**, **IBaseFilter,** **IConfigAsfWriter,** **IFileSinkFilter2**, IMediaSeeking, IPersistStream, IServiceProvider, ISpecifyPropertyPages, **IWMIndexer2**, **IWMHeaderInfo**, **IWMWriterAdvanced2** |
+| Tipos de mídia de pino de entrada  | Dependendo do perfil. Normalmente, tipos descompactados, como Áudio MEDIATYPE ou Vídeo MEDIATYPE, embora os tipos compactados possam ser aceitos se corresponderem \_ \_ ao perfil                                                   |
+| Interfaces de pino de entrada   | **IPin,** **IMemInputPin,** **IAMStreamConfig,** **IServiceProvider,** **IAMWMBufferPass,** **IWMStreamConfig2** (por **meio de IServiceProvider**)                                                                         |
+| Tipos de mídia de pino de saída | Não se aplica                                                                                                                                                                                                          |
 | Interfaces de pino de saída  | Não se aplica                                                                                                                                                                                                          |
-| CLSID do filtro           | \_WMASFWRITER CLSID                                                                                                                                                                                                      |
-| CLSID de página de propriedades    | \_WMASFWRITERPROPERTIES CLSID                                                                                                                                                                                            |
+| Filtrar CLSID           | CLSID \_ WMAsfWriter                                                                                                                                                                                                      |
+| CLSID da página de propriedades    | CLSID \_ WMAsfWriterProperties                                                                                                                                                                                            |
 | Executável             | Qasf.dll                                                                                                                                                                                                                |
-| Núcleo                  | MÉRITO \_ \_ não \_ use                                                                                                                                                                                                     |
-| Categoria do filtro        | Não especificado                                                                                                                                                                                                           |
+| Mérito                  | NÃO USE O NÃO \_ \_ USO \_ DE LIMITED                                                                                                                                                                                                     |
+| Categoria de filtro        | Não especificado                                                                                                                                                                                                           |
 
 
 
@@ -47,11 +47,11 @@ A tabela a seguir contém informações sobre o filtro de gravador ASF do WM, co
 
 ## <a name="remarks"></a>Comentários
 
-O número de Pins de entrada no filtro depende do perfil que é passado para o filtro. Um PIN do tipo de mídia apropriado é criado para cada fluxo definido no perfil.
+O número de pinos de entrada no filtro depende do perfil passado para o filtro. Um pino do tipo de mídia apropriado é criado para cada fluxo definido no perfil.
 
-Os Pins de entrada dão suporte a um método da interface **IAMStreamConfig** : **IAMStreamConfig:: GetFormat**. Todos os outros métodos retornam E \_ NOTIMPL. Chame o método **GetFormat** para consultar o formato de compactação de destino do PIN, que é definido pelo perfil atual. Use a interface [**IConfigAsfWriter**](/previous-versions/windows/desktop/legacy/dd743205(v=vs.85)) para definir o perfil.
+Os pinos de entrada suportam um método da interface **IAMStreamConfig:** **IAMStreamConfig::GetFormat**. Todos os outros métodos retornam E \_ NOTIMPL. Chame o **método GetFormat** para consultar o formato de compactação de destino do pino, que é definido pelo perfil atual. Use a interface [**IConfigAsfWriter**](/previous-versions/windows/desktop/legacy/dd743205(v=vs.85)) para definir o perfil.
 
-a interface **IServiceProvider** do filtro permite que os aplicativos recuperem a interface [**IWMWriterAdvanced2**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmwriteradvanced2) , que é definida no SDK do formato de mídia Windows. A interface **IWMWriterAdvanced2** controla o desentrelaçamento de vídeo e será útil se a entrada for uma fonte [*entrelaçada*](wmformat-glossary.md) , como DV (Digital Video). Use os métodos **GetInputSetting** e **SetInputSetting** para controlar o desentrelaçamento. Não é recomendável que os clientes usem qualquer um dos outros métodos nessa interface. Essa interface só pode ser obtida depois que o filtro tiver sido adicionado ao grafo de filtro. O exemplo a seguir mostra como consultar essa interface:
+A interface **IServiceProvider** do filtro permite que os aplicativos recuperem a interface [**IWMWriterAdvanced2,**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmwriteradvanced2) que é definida no SDK Windows Formato de Mídia. A interface **IWMWriterAdvanced2** controla [*a*](wmformat-glossary.md) desintervalação de vídeo e é útil se a entrada for uma fonte entrelaçada, como DV (vídeo digital). Use os **métodos GetInputSetting** **e SetInputSetting** para controlar a desintercalação. Não é recomendável que os clientes usem qualquer um dos outros métodos nessa interface. Essa interface só poderá ser obtida depois que o filtro tiver sido adicionado ao grafo de filtro. O exemplo a seguir mostra como consultar essa interface:
 
 
 ```C++

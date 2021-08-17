@@ -1,5 +1,5 @@
 ---
-title: Método ResetSecondaries da classe MicrosoftDNS_Zone
+title: Método ResetSecondaries da MicrosoftDNS_Zone classe
 description: O método ResetSecondaries redefine os endereços IP para servidores DNS secundários na zona.
 ms.assetid: b9a47714-f180-40cf-831a-f59e804a4ca2
 keywords:

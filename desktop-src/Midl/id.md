@@ -1,9 +1,9 @@
 ---
 title: ID do atributo
-description: O atributo \ ID \ especifica um DISPID para uma função membro (uma propriedade ou um método, em uma interface ou Dispinterface).
+description: O atributo \ id\ especifica um DISPID para uma função de membro (uma propriedade ou um método, em uma interface ou dispinterface).
 ms.assetid: 6f1be049-81b4-4aa2-a893-5dd79bb4d63c
 keywords:
-- atributo de ID MIDL
+- atributo de id MIDL
 topic_type:
 - apiref
 api_name:
@@ -21,7 +21,7 @@ ms.locfileid: "118643062"
 ---
 # <a name="id-attribute"></a>ID do atributo
 
-O atributo **\[ ID \]** especifica um DISPID para uma função membro (uma propriedade ou um método, em uma interface ou Dispinterface).
+O **\[ atributo \] id** especifica um DISPID para uma função de membro (uma propriedade ou um método, em uma interface ou dispinterface).
 
 ``` syntax
 [id(id-num) [,optional-attribute-list]] return-type function-name(optional-parameter-list)
@@ -31,14 +31,14 @@ O atributo **\[ ID \]** especifica um DISPID para uma função membro (uma propr
 
 <dl> <dt>
 
-*ID-num* 
+*id-num* 
 </dt> <dd>
 
 DISPID para a função.
 
 </dd> <dt>
 
-*lista de atributos opcionais* 
+*optional-attribute-list* 
 </dt> <dd>
 
 Especifica uma lista de zero ou mais atributos de interface MIDL.
@@ -59,7 +59,7 @@ Especifica o nome da função no arquivo IDL.
 
 </dd> <dt>
 
-*opcional-lista de parâmetros* 
+*optional-parameter-list* 
 </dt> <dd>
 
 Zero ou mais parâmetros de função.
@@ -68,11 +68,11 @@ Zero ou mais parâmetros de função.
 
 ## <a name="remarks"></a>Comentários
 
-Use o atributo **\[ \] ID** quando desejar atribuir um DISPID padrão (como o valor DISPID \_ , DISPID \_ NEWENUM etc.) a um método ou propriedade, ou quando você implementar seu próprio **IDispatch:: Invoke** em vez de delegar para o **DispInvoke** / **ITypeInfo:: Invoke**.
+Use o atributo **\[ id \]** quando quiser atribuir um DISPID padrão (como DISPID VALUE, DISPID NEWENUM etc.) a um método ou propriedade ou quando você implementar seu próprio \_ \_ **IDispatch::Invoke** em vez de delegar a **DispInvoke** / **ITypeInfo::Invoke**.
 
-Se você não usar o atributo **\[ ID \]** em uma interface, o compilador MIDL atribuirá um DISPID para você. No entanto, ao especificar uma dispinterface usando propriedades e métodos, você deve especificar um DISPID para cada propriedade e método.
+Se você não usar o **\[ atributo id \]** em uma interface, o compilador MIDL atribuirá um DISPID para você. No entanto, ao especificar uma dispinterface usando propriedades e métodos, você deve especificar um DISPID para cada propriedade e método.
 
-O *ID-num* é um valor integral positivo de 32 bits. As IDs negativas são reservadas para uso pela automação.
+O *id-num* é um valor integral positivo de 32 bits. As IDs negativas são reservadas para uso pela Automação.
 
 ## <a name="examples"></a>Exemplos
 
@@ -91,13 +91,13 @@ interface IKnown : IUnknown
 
 <dl> <dt>
 
-[**interface**](interface.md)
+[**Interface**](interface.md)
 </dt> <dt>
 
 [**dispinterface**](dispinterface.md)
 </dt> <dt>
 
-[Sintaxe do arquivo ODL](/previous-versions/windows/desktop/automat/odl-file-syntax)
+[Sintaxe de arquivo ODL](/previous-versions/windows/desktop/automat/odl-file-syntax)
 </dt> <dt>
 
 [Exemplo de arquivo ODL](/previous-versions/windows/desktop/automat/odl-file-example)

@@ -36,7 +36,7 @@ A ordem de classificação da instância atual do SQL Server.
 | Frequência de atualização  | Na configuração do sistema.                            |
 | Attribute-Id      | 1.2.840.113556.1.4.1371                     |
 | System-ID-GUID    | 6ddc42c0-ccee-11d2-9993-0000f87a57d4        |
-| Sintaxe            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
 
 
 
@@ -58,7 +58,7 @@ A ordem de classificação da instância atual do SQL Server.
 | ID do link                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| É de valor único       | True                                                      |
+| É de valor único       | Verdadeiro                                                      |
 | É indexado             | Falso                                                     |
 | No catálogo global      | Falso                                                     |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                              |
@@ -79,7 +79,7 @@ A ordem de classificação da instância atual do SQL Server.
 | ID do link                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| É de valor único       | True                                                      |
+| É de valor único       | Verdadeiro                                                      |
 | É indexado             | Falso                                                     |
 | No catálogo global      | Falso                                                     |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                              |
@@ -100,7 +100,7 @@ A ordem de classificação da instância atual do SQL Server.
 | ID do link                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| É de valor único       | True                                                      |
+| É de valor único       | Verdadeiro                                                      |
 | É indexado             | Falso                                                     |
 | No catálogo global      | Falso                                                     |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                              |
@@ -121,10 +121,10 @@ A ordem de classificação da instância atual do SQL Server.
 | ID do link                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| Tem valor único       | True                                                      |
+| É de valor único       | Verdadeiro                                                      |
 | É indexado             | Falso                                                     |
-| No Catálogo Global      | Falso                                                     |
-| Descritor de segurança NT | O:BAG:BAD:S:                                              |
+| No catálogo global      | Falso                                                     |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
 | Search-Flags           | 0x00000000                                                |
@@ -142,10 +142,10 @@ A ordem de classificação da instância atual do SQL Server.
 | ID do link                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| Tem valor único       | True                                                      |
+| É de valor único       | Verdadeiro                                                      |
 | É indexado             | Falso                                                     |
-| No Catálogo Global      | Falso                                                     |
-| Descritor de segurança NT | O:BAG:BAD:S:                                              |
+| No catálogo global      | Falso                                                     |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
 | Search-Flags           | 0x00000000                                                |
@@ -163,10 +163,10 @@ A ordem de classificação da instância atual do SQL Server.
 | ID do link                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| Tem valor único       | True                                                      |
+| É de valor único       | Verdadeiro                                                      |
 | É indexado             | Falso                                                     |
-| No Catálogo Global      | Falso                                                     |
-| Descritor de segurança NT | O:BAG:BAD:S:                                              |
+| No catálogo global      | Falso                                                     |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
 | Search-Flags           | 0x00000000                                                |

@@ -4,12 +4,12 @@ description: A barra de título na parte superior de uma janela exibe um ícone 
 ms.assetid: f41ab777-6c94-4d8e-b743-c635e93df396
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c1fee3642a67be85b27eac6a73ac7c452f2349d1
-ms.sourcegitcommit: 927b9c371f75f52b8011483edf3a4ba37d11ebe4
+ms.openlocfilehash: f9183e4c4f5364fb45ba2a73dd2d40509c03c7838bbb248e1d95765b675f50cb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "104365481"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118993996"
 ---
 # <a name="title-bar-msaa-ui-element-reference"></a>Barra de título (referência de elemento da interface do usuário do MSAA)
 
@@ -20,7 +20,7 @@ ms.locfileid: "104365481"
 
 A barra de título na parte superior de uma janela exibe um ícone e uma linha de texto definidos pelo aplicativo. O texto especifica o nome do aplicativo e indica a finalidade da janela. A barra de título também torna possível que o usuário mova a janela usando um mouse ou outro dispositivo apontador.
 
-As barras de título contêm pelo menos três botões pequenos que minimizam, maximizam ou restauram e fecham a janela associada à barra de título. As barras de título também contêm um botão de ajuda contextual. Os aplicativos executados na versão Far-East do sistema operacional Windows também podem conter botões do IME (editor de método de entrada). O Microsoft Acessibilidade Ativa expõe esses botões como elementos filho da barra de título.
+As barras de título contêm pelo menos três botões pequenos que minimizam, maximizam ou restauram e fecham a janela associada à barra de título. As barras de título também contêm um botão de ajuda contextual. os aplicativos executados na versão Far-East do sistema operacional Windows também podem conter botões do ime (Editor de método de entrada). O Microsoft Acessibilidade Ativa expõe esses botões como elementos filho da barra de título.
 
 ## <a name="iaccessible-methods"></a>Métodos IAccessible
 

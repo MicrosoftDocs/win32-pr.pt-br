@@ -1,7 +1,7 @@
 ---
-description: Classe Process_TypeGroup1-essa classe é a classe de tipo de evento para eventos de processo. A sintaxe a seguir é simplificada do código MOF.
+description: Process_TypeGroup1 classe - essa classe é a classe de tipo de evento para eventos de processo. A sintaxe a seguir é simplificada do código MOF.
 ms.assetid: 4f06e1af-3f9a-4346-aa50-50f3ee82cd98
-title: Classe Process_TypeGroup1
+title: Process_TypeGroup1 classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -21,14 +21,14 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: bd67059f5257dad9b66e1c21f642fef04f03719e
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: b1a172b7c3c09ca5735e9e58da2003fcb3790f584cda5809e393ae721393e6a1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108106374"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119070026"
 ---
-# <a name="process_typegroup1-class"></a>\_Classe Process TypeGroup1
+# <a name="process_typegroup1-class"></a>Classe \_ Process TypeGroup1
 
 Essa classe é a classe de tipo de evento para eventos de processo.
 
@@ -54,13 +54,13 @@ class Process_TypeGroup1 : Process
 
 ## <a name="members"></a>Membros
 
-A classe **process \_ TypeGroup1** tem estes tipos de membros:
+A **classe \_ Process TypeGroup1** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **process \_ TypeGroup1** tem essas propriedades.
+A **classe \_ Process TypeGroup1** tem essas propriedades.
 
 <dl> <dt>
 
@@ -73,7 +73,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: WmiDataId (9), StringTermination ("NullTerminated"), Format ("w")
+Qualificadores: WmiDataId(9), StringTermination("NullTerminated"), Format("w")
 </dt> </dl>
 
 Linha de comando completa do processo.
@@ -83,16 +83,16 @@ Linha de comando completa do processo.
 DirectoryTableBase
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: WmiDataId (6), ponteiro
+Qualificadores: WmiDataId(6), Pointer
 </dt> </dl>
 
-O endereço físico da tabela de página do processo.
+O endereço físico da tabela de páginas do processo.
 
 </dd> <dt>
 
@@ -105,7 +105,7 @@ Tipo de dados: **sint32**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: WmiDataId (5)
+Qualificadores: WmiDataId(5)
 </dt> </dl>
 
 Status de saída do processo interrompido.
@@ -121,7 +121,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: WmiDataId (8), StringTermination ("NullTerminated")
+Qualificadores: WmiDataId(8), StringTermination("NullTerminated")
 </dt> </dl>
 
 Caminho para o arquivo executável do processo.
@@ -131,61 +131,61 @@ Caminho para o arquivo executável do processo.
 ParentId
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: WmiDataId (3), formato ("x")
+Qualificadores: WmiDataId(3), Format("x")
 </dt> </dl>
 
-Identificador exclusivo do processo que cria esse processo. Os números de identificador de processo são reutilizados, portanto, eles identificam apenas um processo durante o tempo de vida desse processo. É possível que o processo identificado pelo ParentProcessId seja encerrado; portanto, ParentProcessId pode não se referir a um processo em execução. Também é possível que o ParentProcessId incorretamente faça referência a um processo que reutiliza um identificador de processo.
+Identificador exclusivo do processo que cria esse processo. Os números do identificador de processo são reutilizados, portanto, eles identificam apenas um processo durante o tempo de vida desse processo. É possível que o processo identificado por ParentProcessId seja encerrado, portanto, ParentProcessId pode não se referir a um processo em execução. Também é possível que ParentProcessId refere-se incorretamente a um processo que reutiliza um identificador de processo.
 
 </dd> <dt>
 
 ProcessId
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: WmiDataId (2), formato ("x")
+Qualificadores: WmiDataId(2), Format("x")
 </dt> </dl>
 
-Identificador de processo global que você pode usar para identificar um processo. O valor é válido a partir do momento em que um processo é criado até ser encerrado.
+Identificador de processo global que você pode usar para identificar um processo. O valor é válido desde o momento em que um processo é criado até ser encerrado.
 
 </dd> <dt>
 
 SessionId
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: WmiDataId (4)
+Qualificadores: WmiDataId(4)
 </dt> </dl>
 
-Identificador exclusivo que um sistema operacional gera ao criar uma nova sessão. Uma sessão abrange um período de tempo do logon até o logoff de um sistema específico.
+Identificador exclusivo que um sistema operacional gera quando cria uma nova sessão. Uma sessão abrange um período de tempo desde o logon até o logoff de um sistema específico.
 
 </dd> <dt>
 
 UniqueProcessKey
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: WmiDataId (1), ponteiro
+Qualificadores: WmiDataId(1), Pointer
 </dt> </dl>
 
 O endereço do objeto de processo no kernel.
@@ -201,7 +201,7 @@ Tipo de dados: **objeto**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: WmiDataId (7), extensão ("Sid")
+Qualificadores: WmiDataId(7), Extension("Sid")
 </dt> </dl>
 
 SID (identificador de segurança) para o contexto do usuário no qual o evento ocorre.
@@ -210,7 +210,7 @@ SID (identificador de segurança) para o contexto do usuário no qual o evento o
 
 ## <a name="remarks"></a>Comentários
 
-Os tipos de evento DCStart e DCEnd enumeram o processo que está em execução no momento, incluindo o processo de ociosidade e do sistema, no momento em que a sessão do kernel é iniciada e termina, respectivamente.
+Os tipos de evento DCStart e DCEnd enumeram o processo em execução no momento, incluindo processo ocioso e do sistema, no momento em que a sessão do kernel é iniciada e termina, respectivamente.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -223,7 +223,7 @@ Os tipos de evento DCStart e DCEnd enumeram o processo que está em execução n
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

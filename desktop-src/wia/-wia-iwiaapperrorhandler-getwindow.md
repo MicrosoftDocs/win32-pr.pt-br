@@ -57,7 +57,7 @@ Se esse método for bem-sucedido, ele **retornará S \_ OK.** Caso contrário, e
 
 ## <a name="remarks"></a>Comentários
 
-*phwnd* aponta para a janela passada para [**ReportStatus**](-wia-iwiaerrorhandler-reportstatus.md) pelo proxy WIA (Aquisição de Imagem) 2.0 do Windows. Essa janela deve permanecer válida durante a transferência de dados.
+*phwnd* aponta para a janela passada para [**ReportStatus**](-wia-iwiaerrorhandler-reportstatus.md) pelo proxy wia (aquisição de imagem) 2.0 do Windows. Essa janela deve permanecer válida durante a transferência de dados.
 
 ## <a name="requirements"></a>Requisitos
 

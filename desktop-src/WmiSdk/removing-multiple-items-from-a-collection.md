@@ -1,20 +1,20 @@
 ---
-description: Se você tentar remover mais de um item de uma coleção, você verá que alguns itens não são removidos.
+description: Se você tentar remover mais de um item em uma coleção, poderá descobrir que alguns itens não foram removidos.
 ms.assetid: 7c82321e-059f-497c-8561-33c3e9306d41
 ms.tgt_platform: multiple
-title: Removendo vários itens de uma coleção de WMI
+title: Removendo vários itens de uma coleção WMI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3c44203f3279163a1de595cac8a00270dccd31c3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 17795378f5215977e5e7c2d0afd745c5d02fe6b294d062fcdbcf82f7ccc15351
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105785939"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118992436"
 ---
-# <a name="removing-multiple-items-from-a-wmi-collection"></a>Removendo vários itens de uma coleção de WMI
+# <a name="removing-multiple-items-from-a-wmi-collection"></a>Removendo vários itens de uma coleção WMI
 
-Se você tentar remover mais de um item de uma coleção, você verá que alguns itens não são removidos. Não é possível iterar uma coleção durante a remoção de itens, porque quando você remove um elemento de uma coleção, o ponteiro da coleção é movido para o próximo elemento. Por exemplo, uma tentativa de remover todos os itens de uma coleção resulta na remoção de todos os outros itens. Você pode ver esse problema ao remover itens com os métodos [**SWbemQualifierSet. Remove**](swbemqualifierset-remove.md) ou [**SWbemPropertySet. Remove**](swbempropertyset-remove.md) . Você pode evitar esse problema fazendo um loop pela coleção e colocando os nomes dos itens a serem removidos em uma matriz. Em seguida, você pode executar um loop na matriz e excluir os itens nomeados na matriz. As coleções, como [**SWbemNamedValueSet**](swbemnamedvalueset.md), [**SWbemPrivilegeSet**](swbemprivilegeset.md)e [**SWbemRefresher**](swbemrefresher.md), também têm um método que exclui todos os itens no contêiner do atualizador.
+Se você tentar remover mais de um item em uma coleção, poderá descobrir que alguns itens não foram removidos. Não é possível iterar uma coleção ao remover itens, porque quando você remove um elemento de uma coleção, o ponteiro da coleção é movido para o próximo elemento. Por exemplo, uma tentativa de remover todos os itens de uma coleção resulta na remoção de todos os outros itens. Você pode ver esse problema ao remover itens com os métodos [**SWbemQualifierSet.Remove**](swbemqualifierset-remove.md) ou [**SWbemPropertySet.Remove.**](swbempropertyset-remove.md) Você pode evitar esse problema fazendo um loop pela coleção e colocando os nomes dos itens a remover em uma matriz. Em seguida, você pode fazer um loop pela matriz e excluir os itens nomeados na matriz. As coleções, como [**SWbemNamedValueSet,**](swbemnamedvalueset.md) [**SWbemPrivilegeSet**](swbemprivilegeset.md)e [**SWbemRefresher,**](swbemrefresher.md)também têm um método que exclui todos os itens no contêiner de atualização.
 
 O script a seguir ilustra como remover vários itens de uma coleção.
 
@@ -63,9 +63,9 @@ End Sub
 
 
 
-Não é possível remover propriedades e qualificadores em uma instância de classe ou classe derivada que tenha propriedades herdadas. Essa tentativa de exclusão gera um erro e a propriedade ou o qualificador não é removido; em vez disso, o WMI redefine a propriedade ou o qualificador para o valor padrão. No caso de uma classe derivada com propriedades herdadas, o WMI redefine a propriedade herdada como o valor padrão da propriedade na classe pai.
+Não é possível remover propriedades e qualificadores em uma instância de classe ou classe derivada que tenha propriedades herdadas. Essa tentativa de exclusão gera um erro e a propriedade ou qualificador não é removido; em vez disso, o WMI redefine a propriedade ou o qualificador para o valor padrão. No caso de uma classe derivada com propriedades herdadas, o WMI redefine a propriedade herdada para o valor padrão da propriedade na classe pai.
 
-Para obter mais informações, consulte [manipulando informações de classe e instância](manipulating-class-and-instance-information.md), [acessando uma coleção](accessing-a-collection.md)e [removendo um único item de uma coleção](removing-a-single-item-from-a-collection.md).
+Para obter mais informações, consulte [Manipulando informações de classe e instância](manipulating-class-and-instance-information.md), [Acessando](accessing-a-collection.md)uma coleção e [Removendo](removing-a-single-item-from-a-collection.md)um único item de uma coleção .
 
  
 

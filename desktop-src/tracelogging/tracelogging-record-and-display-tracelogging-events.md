@@ -1,35 +1,35 @@
 ---
 title: Registrar e exibir eventos de TraceLogging
-description: Registre eventos do TraceLogging com o gravador de desempenho do Windows (WPR) e exiba-os com o Windows Performance Analyzer (WPA).
+description: registre eventos TraceLogging com o gravador de desempenho de Windows (WPR) e exiba-os com o analisador de desempenho de Windows (WPA).
 ms.assetid: 906589FA-F48D-4105-9E56-1EC8B86542FB
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 09be054d274fc2c2c62635cc7bf12e8cf8acdef3
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 25c77c1a1759988252f57c1ec54dca77cffaa21832878ead6ba8a827df3329fa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103823963"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118966525"
 ---
 # <a name="record-and-view-tracelogging-events"></a>Registrar e exibir eventos de TraceLogging
 
-Registre eventos do TraceLogging com o gravador de desempenho do Windows (WPR) e exiba-os com o Windows Performance Analyzer (WPA).
+registre eventos TraceLogging com o gravador de desempenho de Windows (WPR) e exiba-os com o analisador de desempenho de Windows (WPA).
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
--   Windows 10
--   A versão Windows 10 do gravador de desempenho do Windows (WPR) e a versão do Windows 10 do Windows Performance Analyzer (WPA) que faz parte do Windows ADK (Kit de avaliação e implantação do® Windows).
+-   Windows 10
+-   a versão Windows 10 do gravador de desempenho Windows (WPR) e a versão Windows 10 do Windows do analisador de desempenho (WPA) que faz parte do Windows ADK (Kit de avaliação e implantação®).
 
 > [!IMPORTANT]
-> Os rastreamentos capturados com TraceLogging devem ser capturados com a versão do Windows 10 do gravador de desempenho do Windows e exibidos com a versão do Windows 10 do analisador de desempenho do Windows. Se não for possível capturar ou decodificar seus eventos, verifique se você está usando a versão do Windows 10 das ferramentas.
+> os rastreamentos capturados com TraceLogging devem ser capturados com a versão Windows 10 do gravador de desempenho Windows e exibidos com a versão Windows 10 do analisador de desempenho Windows. se não for possível capturar ou decodificar seus eventos, verifique se você está usando a versão Windows 10 das ferramentas.
 
- 
+ 
 
 ### <a name="1-capture-trace-data-with-wpr"></a>1. capturar dados de rastreamento com WPR
 
-Para capturar um rastreamento em Windows Phone, consulte capturar eventos do TraceLogging no Windows Phone abaixo.
+para capturar um rastreamento em Windows Phone, consulte capturar eventos do TraceLogging no Windows Phone abaixo.
 
-Crie um perfil do gravador de desempenho do Windows (. wprp) para que você possa usar o WPR para capturar seus eventos do Tracelogging.
+crie um Windows perfil do gravador de desempenho (. wprp) para que você possa usar o WPR para capturar seus eventos do Tracelogging.
 
 **Crie um. Arquivo WPRP**
 
@@ -37,7 +37,7 @@ Crie um perfil do gravador de desempenho do Windows (. wprp) para que você poss
 
     > \[! Fundamental\]  
 
-     
+     
 
     Se você estiver usando o início rápido do TraceLogging C/C++, especifique o GUID do provedor no `Name` atributo do `<EventProvider>` elemento. Por exemplo: `<EventProvider Id="EventProvider_SimpleTraceLoggingProvider" Name="3970F9cf-2c0c-4f11-b1cc-e3a1e9958833" />`. Se você estiver usando o início rápido do TraceLogging gerenciado, especifique o nome do provedor precedido por ' \* ' no `Name` atributo do `<EventProvider />` elemento. Por exemplo, `<EventProvider Name="*SimpleTraceLoggingProvider" />`.
 
@@ -97,7 +97,7 @@ Crie um perfil do gravador de desempenho do Windows (. wprp) para que você poss
     > \[! Dicas\]  
     > Para fins de criação de perfil gerais, você também pode adicionar **– iniciar o GeneralProfile** à linha de comando wpr.exe para capturar eventos do sistema junto com os eventos do seu provedor. Se você quiser apenas reunir seus eventos, omita **-Start GeneralProfile**.
 
-     
+     
 
 4.  Execute o aplicativo que contém seus eventos.
 5.  Pare a captura de rastreamento.
@@ -107,7 +107,7 @@ Crie um perfil do gravador de desempenho do Windows (. wprp) para que você poss
     > \[! Dicas\]  
     > Se você adicionou **– inicie o GeneralProfile** para coletar eventos do sistema, adicione **-o GeneralProfile** à linha de comando **wpr.exe** acima.
 
-     
+     
 
 ### <a name="2-capture-tracelogging-events-on-windows-phone"></a>2. capturar eventos do TraceLogging em Windows Phone
 
@@ -130,7 +130,7 @@ Crie um perfil do gravador de desempenho do Windows (. wprp) para que você poss
 
     **getd c: \\ testmerged. etl**
 
-### <a name="3-view-tracelogging-data-using-windows-performance-analyzer"></a>3. exibir dados do TraceLogging usando o analisador de desempenho do Windows.
+### <a name="3-view-tracelogging-data-using-windows-performance-analyzer"></a>3. exibir dados do TraceLogging usando o analisador de desempenho Windows.
 
 Atualmente, o WPA é o único visualizador que você pode usar para exibir arquivos de rastreamento TraceLogging (. ETL).
 
@@ -139,7 +139,7 @@ Atualmente, o WPA é o único visualizador que você pode usar para exibir arqui
     **<path to wpr>\\wpa.exe traceLoggingResults. etl**
 
 2.  Carregue o arquivo de rastreamento (. ETL) que você especificou no comando wpa.exe acima, por exemplo, traceLoggingResults. etl.
-3.  Exiba seus eventos de provedor. No Gerenciador de grafo do WPA, expanda **atividade do sistema**.
+3.  Exiba seus eventos de provedor. no gerenciador de Graph WPA, expanda **atividade do sistema**.
 4.  Clique duas vezes no painel **eventos genéricos** para exibir os eventos no painel **análise** .
 
     ![expandir eventos genéricos](images/expandsystemactivity.png)
@@ -158,7 +158,7 @@ Atualmente, o WPA é o único visualizador que você pode usar para exibir arqui
 
     ![exibir o evento do simpletraceloggingprovider](images/eventview.png)
 
-    Para obter mais informações sobre como usar o WPA, consulte [analisador de desempenho do Windows](/previous-versions/windows/it-pro/windows-8.1-and-8/hh448170(v=win.10)).
+    para obter mais informações sobre como usar o WPA, consulte [Windows analisador de desempenho](/previous-versions/windows/it-pro/windows-8.1-and-8/hh448170(v=win.10)).
 
 ## <a name="summary-and-next-steps"></a>Resumo e próximas etapas
 
@@ -166,6 +166,6 @@ O processo de gravação e exibição de eventos ETW usando WPR e WPA se aplica 
 
 Consulte [exemplos de Tracelogging C/C++](tracelogging-c-cpp-tracelogging-examples.md) para obter exemplos de Tracelogging adicionais.
 
- 
+ 
 
- 
+ 

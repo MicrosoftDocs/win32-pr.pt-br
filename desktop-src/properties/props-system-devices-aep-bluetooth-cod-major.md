@@ -1,19 +1,19 @@
 ---
-description: Classe Bluetooth de código principal do dispositivo.
+description: Bluetooth classe de código principal do dispositivo.
 ms.assetid: ea72cfee-74db-442f-82ad-36742b94cb77
-title: System. Devices. AEP. Bluetooth. Cod. Major
+title: System.Devices.Aep. Bluetooth. Cod.Major
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7478a9053022666229dd83af75bb2a396a11366a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6555a8974c8477e7795d622a085168b6cf84fff0d270b8947e9775f9036555fd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104011266"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119097937"
 ---
-# <a name="systemdevicesaepbluetoothcodmajor"></a>System. Devices. AEP. Bluetooth. Cod. Major
+# <a name="systemdevicesaepbluetoothcodmajor"></a>System.Devices.Aep. Bluetooth. Cod.Major
 
-Classe Bluetooth de código principal do dispositivo.
+Bluetooth classe de código principal do dispositivo.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511"></a>Windows 10, versão 1703, Windows 10, versão 1607, Windows 10, versão 1511
 
@@ -33,13 +33,13 @@ propertyDescription
 
 ## <a name="remarks"></a>Comentários
 
-Os valores de PKEY são definidos em Propkey. h.
+Os valores PKEY são definidos em Propkey.h.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[propertyDescription](./propdesc-schema-propertydescription.md)
+[Propertydescription](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -48,19 +48,19 @@ Os valores de PKEY são definidos em Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[numberFormat](./propdesc-schema-numberformat.md)
+[Numberformat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -75,7 +75,7 @@ Os valores de PKEY são definidos em Propkey. h.
 [editControl](./propdesc-schema-editcontrol.md)
 </dt> <dt>
 
-[filterControl](./propdesc-schema-filtercontrol.md)
+[Filtercontrol](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
 [queryControl](./propdesc-schema-querycontrol.md)

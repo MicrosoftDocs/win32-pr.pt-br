@@ -1,9 +1,9 @@
 ---
-title: LISTBOX. replaceItem
+title: LISTBOX.replaceItem
 description: O método replaceItem substitui o texto no índice especificado pelo texto especificado.
 ms.assetid: 8dc05dc6-4f89-4ae6-8a28-cbc418449694
 keywords:
-- LISTBOX. replaceItem Windows Media Player
+- LISTBOX.replaceItem Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 74592feb9bc58e23853b886ee2383744e36b9cff
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 4524b479490dff81b9a114ca957c7c40282ded130d2bf35dba8c58a6197eab17
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105788977"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119135209"
 ---
-# <a name="listboxreplaceitem"></a>LISTBOX. replaceItem
+# <a name="listboxreplaceitem"></a>LISTBOX.replaceItem
 
-O método **replaceItem** substitui o texto no índice especificado pelo texto especificado.
+O **método replaceItem** substitui o texto no índice especificado pelo texto especificado.
 
 ``` syntax
         elementID.replaceItem(index, text)
@@ -32,17 +32,17 @@ O método **replaceItem** substitui o texto no índice especificado pelo texto e
 
 <dl> <dt>
 
-<span id="index"></span><span id="INDEX"></span>*index*
+<span id="index"></span><span id="INDEX"></span>*Índice*
 </dt> <dd>
 
 **Número** (**longo**) que contém o índice da linha a ser recuperada.
 
 </dd> <dt>
 
-<span id="text"></span><span id="TEXT"></span>*texto*
+<span id="text"></span><span id="TEXT"></span>*Texto*
 </dt> <dd>
 
-**Cadeia de caracteres** que contém o novo texto.
+**Cadeia de** caracteres que contém o novo texto.
 
 </dd> </dl>
 

@@ -1,11 +1,11 @@
 ---
-title: Atributo FSMO-role-Owner
-description: Operação de Single-Master flexível o nome distinto do controlador de domínio em que o esquema pode ser modificado.
+title: Atributo FSMO-Role-Owner
+description: Operação Single-Master flexível O nome diferenciado do DC em que o esquema pode ser modificado.
 ms.assetid: 8eb28524-4bbf-453c-89ab-864ef94b0781
 ms.tgt_platform: multiple
 keywords:
-- FSMO-role-Owner atributo AD Schema
-- Esquema de AD do atributo fSMORoleOwner
+- Esquema do AD do atributo FSMO-Role-Owner
+- Esquema do AD do atributo fSMORoleOwner
 topic_type:
 - apiref
 api_name:
@@ -21,22 +21,22 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118961375"
 ---
-# <a name="fsmo-role-owner-attribute"></a>Atributo FSMO-role-Owner
+# <a name="fsmo-role-owner-attribute"></a>Atributo FSMO-Role-Owner
 
-Operação de Single-Master flexível: o nome distinto do DC em que o esquema pode ser modificado.
+Operação Single-Master flexível: o nome diferenciado do DC em que o esquema pode ser modificado.
 
 
 
 | Entrada | Valor |
 |-------------------|-----------------------------------------|
-| CN                | FSMO-função-proprietário                         |
-| LDAP-Display-Name | fSMORoleOwner                           |
+| CN                | FSMO-Role-Owner                         |
+| Ldap-Display-Name | Fsmoroleowner                           |
 | Tamanho              | \-                                      |
 | Privilégio de atualização  | Administrador de esquema                    |
 | Frequência de atualização  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.369                  |
-| System-ID-GUID    | 66171887-8f3c-11d0-afda-00c04fd930c9    |
-| Syntax            | [**Objeto (DS-DN)**](s-object-ds-dn.md) |
+| System-Id-Guid    | 66171887-8f3c-11d0-afda-00c04fd930c9    |
+| Syntax            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
 
@@ -44,7 +44,7 @@ Operação de Single-Master flexível: o nome distinto do DC em que o esquema po
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adam**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -59,10 +59,10 @@ Operação de Single-Master flexível: o nome distinto do DC em que o esquema po
 | ID do link                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Falso                           |
-| É de valor único       | Verdadeiro                            |
+| Tem valor único       | Verdadeiro                            |
 | É indexado             | Verdadeiro                            |
-| No catálogo global      | Falso                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| No Catálogo Global      | Falso                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000001                      |
@@ -80,10 +80,10 @@ Operação de Single-Master flexível: o nome distinto do DC em que o esquema po
 | ID do link                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Falso                           |
-| É de valor único       | Verdadeiro                            |
+| Tem valor único       | Verdadeiro                            |
 | É indexado             | Verdadeiro                            |
-| No catálogo global      | Falso                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| No Catálogo Global      | Falso                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000001                      |
@@ -92,7 +92,7 @@ Operação de Single-Master flexível: o nome distinto do DC em que o esquema po
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adam
 
 
 
@@ -101,10 +101,10 @@ Operação de Single-Master flexível: o nome distinto do DC em que o esquema po
 | ID do link                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Falso                           |
-| É de valor único       | Verdadeiro                            |
+| Tem valor único       | Verdadeiro                            |
 | É indexado             | Verdadeiro                            |
-| No catálogo global      | Falso                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| No Catálogo Global      | Falso                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000001                      |

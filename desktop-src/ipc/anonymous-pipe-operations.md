@@ -4,12 +4,12 @@ ms.assetid: df81471c-1072-4456-a877-304e76ade4bd
 title: Operações de pipe anônimo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 963d7127c51859b05e570d00291470a49be5ba66
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f0c4c684daab5dd1c18dbf5eb22e2191f193e7ecc3b088ac58e3f680f442897a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105761308"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119350706"
 ---
 # <a name="anonymous-pipe-operations"></a>Operações de pipe anônimo
 

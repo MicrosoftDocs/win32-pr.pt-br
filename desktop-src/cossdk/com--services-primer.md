@@ -13,15 +13,15 @@ ms.locfileid: "119129028"
 ---
 # <a name="com-services-primer"></a>Primer de serviços COM+
 
-O COM+ fornece um modelo de programação simples para usar seus serviços automáticos. Você pode simplesmente definir esses serviços como atributos declarativos em componentes e seus métodos. Quando você definir esses atributos, o COM+ fornecerá automaticamente os serviços solicitados ao objeto conforme necessário.
+O COM+ fornece um modelo de programação simples para usar seus serviços automáticos. Você pode simplesmente definir esses serviços como atributos declarativos em componentes e seus métodos. Quando você define esses atributos, o COM+ entrega automaticamente os serviços solicitados ao objeto, conforme necessário.
 
-Este primer mostra os serviços COM+ em ação, explicando o código do componente de exemplo em três etapas definidas. A complexidade das informações é construída conforme as etapas progridem. O código se concentra no modelo de programação simplificado, usando o processamento de transações para demonstrar princípios COM+ básicos.
+Este primer mostra os serviços COM+ em ação percorrendo o código do componente de exemplo em três etapas definidas. A complexidade das informações é compilada conforme as etapas estão em andamento. O código se concentra no modelo de programação simplificado, usando o processamento de transações para demonstrar princípios COM+ básicos.
 
 Cada uma das etapas a seguir ilustra um aspecto fundamental dos serviços COM+:
 
 -   [Etapa 1: Criando um componente transacional](step-1--creating-a-transactional-component.md)
--   [Etapa 2: Estendendo uma transação entre vários componentes](step-2--extending-a-transaction-across-multiple-components.md)
--   [Etapa 3: Reutilizando componentes](step-3--reusing-components.md)
+-   [Etapa 2: estendendo uma transação entre vários componentes](step-2--extending-a-transaction-across-multiple-components.md)
+-   [Etapa 3: reutilizando os componentes](step-3--reusing-components.md)
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -36,13 +36,13 @@ Cada uma das etapas a seguir ilustra um aspecto fundamental dos serviços COM+:
 [Configurando aplicativos COM+](configuring-com--applications.md)
 </dt> <dt>
 
-[Contextos e modelos de threading COM+](com--contexts-and-threading-models.md)
+[Contextos COM+ e modelos de Threading](com--contexts-and-threading-models.md)
 </dt> <dt>
 
 [Criando aplicativos COM+](creating-com--applications.md)
 </dt> <dt>
 
-[Projetando aplicativos COM+](designing-com--applications.md)
+[Criando aplicativos COM+](designing-com--applications.md)
 </dt> </dl>
 
  

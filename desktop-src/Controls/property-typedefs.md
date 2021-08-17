@@ -1,19 +1,19 @@
 ---
-title: Identificadores de propriedade (controles do Windows)
-description: Este tópico contém informações sobre valores definidos que são usados para recuperar propriedades de estilos visuais. As definições são encontradas em Vssym32. h.
+title: Identificadores de propriedade (Windows controles)
+description: Este tópico contém informações sobre valores definidos que são usados para recuperar propriedades de estilos visuais. As definições são encontradas em Vssym32.h.
 ms.assetid: b0e22022-fea9-43d1-8ef0-7a1c518760f1
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ed0869ac80332a5dbdb146ee255f5c9e73f4a812
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: bf20429d5eb5bd45ea850e3b77c5734ab6b8e0fa0e63fe4c1d2b1c918f837f1e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "103644094"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119078860"
 ---
-# <a name="property-identifiers-windows-controls"></a>Identificadores de propriedade (controles do Windows)
+# <a name="property-identifiers-windows-controls"></a>Identificadores de propriedade (Windows controles)
 
-Este tópico contém informações sobre valores definidos que são usados para recuperar propriedades de estilos visuais. As definições são encontradas em Vssym32. h.
+Este tópico contém informações sobre valores definidos que são usados para recuperar propriedades de estilos visuais. As definições são encontradas em Vssym32.h.
 
 ## <a name="property-types"></a>Tipos de propriedade
 
@@ -23,20 +23,20 @@ A tabela a seguir lista os tipos de propriedade primitivos. Os valores na primei
 
 | Tipo de Dados       | Descrição                              | Tipo retornado                          | Função de recuperação                                                                                                     |
 |-----------------|------------------------------------------|----------------------------------------|------------------------------------------------------------------------------------------------------------------------|
-| \_bool TMT       | **Verdadeiro** ou **falso**                    | Boolean                                | [**GetThemeBool**](/windows/desktop/api/Uxtheme/nf-uxtheme-getthemebool), [ **GetThemeSysBool**](/windows/desktop/api/Uxtheme/nf-uxtheme-getthemesysbool)                                       |
-| \_cor TMT      | Valor de cor RGB                          | Estrutura [**COLORREF**](/windows/desktop/gdi/colorref) | [**GetThemeColor**](/windows/desktop/api/Uxtheme/nf-uxtheme-getthemecolor), [ **GetThemeSysColor**](/windows/desktop/api/Uxtheme/nf-uxtheme-getthemesyscolor)                                   |
-| TMT \_ DISKSTREAM | Fluxo de disco                              | **HINSTANCE**                          | [**GetThemeStream**](/windows/desktop/api/Uxtheme/nf-uxtheme-getthemestream)                                                                               |
-| TMT \_ enum       | Valor enumerado                         | Enumeração                            | [**GetThemeEnumValue**](/windows/desktop/api/Uxtheme/nf-uxtheme-getthemeenumvalue).                                                                        |
-| \_nome de arquivo TMT   | Nome de arquivo relativo ao diretório de tema | Matriz **WCHAR**                        | [**GetThemeFilename**](/windows/desktop/api/Uxtheme/nf-uxtheme-getthemefilename)                                                                           |
-| \_fonte TMT       | Descrição da fonte                         | Estrutura [**LOGFONT**](/windows/win32/api/wingdi/ns-wingdi-logfonta)   | [**GetThemeFont**](/windows/desktop/api/Uxtheme/nf-uxtheme-getthemefont), [ **GetThemeSysFont**](/windows/desktop/api/Uxtheme/nf-uxtheme-getthemesysfont)                                       |
-| TMT \_ HBITMAP    | Bitmap                                   | Identificador de **HBITMAP**                     | [**GetThemeBitmap**](/windows/desktop/api/Uxtheme/nf-uxtheme-getthemebitmap)                                                                               |
-| TMT \_ int        | Número assinado                            | Integer                                | [**GetThemeInt**](/windows/desktop/api/Uxtheme/nf-uxtheme-getthemeint), [**GetThemeSysInt**](/windows/desktop/api/Uxtheme/nf-uxtheme-getthemesysint), [**GetThemeMetric**](/windows/desktop/api/Uxtheme/nf-uxtheme-getthememetric) |
-| TMT \_ intl    | Lista de inteiros                         | Estrutura de [**intl**](/windows/desktop/api/UxTheme/ns-uxtheme-intlist)   | [**GetThemeIntList**](/windows/desktop/api/UxTheme/nf-uxtheme-getthemeintlist)                                                                             |
-| \_margens TMT    | Margens: esquerda, superior, direita e inferior    | Estrutura de [**margens**](/windows/desktop/api/Uxtheme/ns-uxtheme-margins)   | [**GetThemeMargins**](/windows/desktop/api/Uxtheme/nf-uxtheme-getthememargins)                                                                             |
-| \_posição TMT   | Local de um item                      | Estrutura de [**ponto**](/previous-versions//dd162805(v=vs.85))       | [**GetThemePosition**](/windows/desktop/api/Uxtheme/nf-uxtheme-getthemeposition)                                                                           |
-| TMT \_ Rect       | Tamanho e local de um retângulo         | Estrutura [**Rect**](/previous-versions//dd162897(v=vs.85))         | [**GetThemeRect**](/windows/desktop/api/Uxtheme/nf-uxtheme-getthemerect)                                                                                   |
-| tamanho do TMT \_       | Tamanho de um item                          | Estrutura de [**tamanho**](/previous-versions//dd145106(v=vs.85))         | [**GetThemePartSize**](/windows/desktop/api/Uxtheme/nf-uxtheme-getthemepartsize)                                                                           |
-| \_cadeia de caracteres TMT     | Cadeia de caracteres Unicode                           | Matriz **WCHAR**                        | [**Getthemestring**](/windows/desktop/api/Uxtheme/nf-uxtheme-getthemestring), [ **GetThemeSysString**](/windows/desktop/api/Uxtheme/nf-uxtheme-getthemesysstring)                               |
+| TMT \_ BOOL       | **TRUE** ou **FALSE**                    | Boolean                                | [**GetThemeBool,**](/windows/desktop/api/Uxtheme/nf-uxtheme-getthemebool) [ **GetThemeSysBool**](/windows/desktop/api/Uxtheme/nf-uxtheme-getthemesysbool)                                       |
+| COR da \_ TMT      | Valor de cor RGB                          | [**Estrutura COLORREF**](/windows/desktop/gdi/colorref) | [**GetThemeColor**](/windows/desktop/api/Uxtheme/nf-uxtheme-getthemecolor), [ **GetThemeSysColor**](/windows/desktop/api/Uxtheme/nf-uxtheme-getthemesyscolor)                                   |
+| TMT \_ DISKSTREAM | Fluxo de disco                              | **Hinstance**                          | [**GetThemeStream**](/windows/desktop/api/Uxtheme/nf-uxtheme-getthemestream)                                                                               |
+| TMT \_ ENUM       | Valor enumerado                         | Enumeração                            | [**GetThemeEnumValue.**](/windows/desktop/api/Uxtheme/nf-uxtheme-getthemeenumvalue)                                                                        |
+| TMT \_ FILENAME   | Nome do arquivo em relação ao diretório de tema | **Matriz WCHAR**                        | [**GetThemeFilename**](/windows/desktop/api/Uxtheme/nf-uxtheme-getthemefilename)                                                                           |
+| FONTE \_ TMT       | Descrição da fonte                         | [**Estrutura LOGFONT**](/windows/win32/api/wingdi/ns-wingdi-logfonta)   | [**GetThemeFont,**](/windows/desktop/api/Uxtheme/nf-uxtheme-getthemefont) [ **GetThemeSysFont**](/windows/desktop/api/Uxtheme/nf-uxtheme-getthemesysfont)                                       |
+| TMT \_ HBITMAP    | Bitmap                                   | **Alça HBITMAP**                     | [**GetThemeBitmap**](/windows/desktop/api/Uxtheme/nf-uxtheme-getthemebitmap)                                                                               |
+| TMT \_ INT        | Número assinado                            | Integer                                | [**GetThemeInt,**](/windows/desktop/api/Uxtheme/nf-uxtheme-getthemeint) [**GetThemeSysInt,**](/windows/desktop/api/Uxtheme/nf-uxtheme-getthemesysint) [**GetThemeMetric**](/windows/desktop/api/Uxtheme/nf-uxtheme-getthememetric) |
+| TMT \_ INTLIST    | Lista de inteiros                         | [**Estrutura INTLIST**](/windows/desktop/api/UxTheme/ns-uxtheme-intlist)   | [**GetThemeIntList**](/windows/desktop/api/UxTheme/nf-uxtheme-getthemeintlist)                                                                             |
+| MARGENS DO TMT \_    | Margens: esquerda, superior, direita e inferior    | [**Estrutura MARGINS**](/windows/desktop/api/Uxtheme/ns-uxtheme-margins)   | [**GetThemeMargins**](/windows/desktop/api/Uxtheme/nf-uxtheme-getthememargins)                                                                             |
+| POSIÇÃO DO \_ TMT   | Local de um item                      | [**Estrutura POINT**](/previous-versions//dd162805(v=vs.85))       | [**GetThemePosition**](/windows/desktop/api/Uxtheme/nf-uxtheme-getthemeposition)                                                                           |
+| TMT \_ RECT       | Tamanho e localização de um retângulo         | [**Estrutura RECT**](/previous-versions//dd162897(v=vs.85))         | [**GetThemeRect**](/windows/desktop/api/Uxtheme/nf-uxtheme-getthemerect)                                                                                   |
+| TAMANHO DA \_ TMT       | Tamanho de um item                          | [**Estrutura SIZE**](/previous-versions//dd145106(v=vs.85))         | [**GetThemePartSize**](/windows/desktop/api/Uxtheme/nf-uxtheme-getthemepartsize)                                                                           |
+| CADEIA DE CARACTERES TMT \_     | Cadeia de caracteres Unicode                           | **Matriz WCHAR**                        | [**GetThemeString,**](/windows/desktop/api/Uxtheme/nf-uxtheme-getthemestring) [ **GetThemeSysString**](/windows/desktop/api/Uxtheme/nf-uxtheme-getthemesysstring)                               |
 
 
 
@@ -44,27 +44,27 @@ A tabela a seguir lista os tipos de propriedade primitivos. Os valores na primei
 
 ## <a name="property-ids"></a>IDs de propriedade
 
-A seguir estão os valores definidos para propriedades de tema, agrupados por tipo de dados.
+A seguir estão os valores definidos para propriedades de tema, agrupadas por tipo de dados.
 
-**\_bool TMT**
+**TMT \_ BOOL**
 
 
 
 | ID                        | Observações                                                                                                                                                                                                           |
 |---------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| TMT \_ ALWAYSSHOWSIZINGBAR  | **True** se a barra de dimensionamento associada à parte e o estado sempre devem ser mostrados.                                                                                                                           |
-| \_dimensionamento automático de TMT             | **True** se a área de legenda não cliente associada à parte e o estado variarem com a largura do texto.                                                                                                                 |
-| TMT \_ BGFILL               | **True** se as imagens de tamanho real associadas à parte e ao estado forem desenhadas no preenchimento do plano de fundo.                                                                                                        |
-| TMT \_ BORDERONLY           | **True** se a imagem associada à parte e ao estado só deve ter sua borda desenhada.                                                                                                                     |
-| TMT \_ composto           | **True** se o controle associado à parte e ao estado manipular sua própria composição de imagens.                                                                                                           |
+| TMT \_ ALWAYSSHOWSIZINGBAR  | **TRUE** se a barra deizing associada à parte e ao estado sempre deve ser mostrada.                                                                                                                           |
+| TMT \_ AUTOSIZE             | **TRUE** se a área de legenda não dependente associada à parte e ao estado variar com a largura do texto.                                                                                                                 |
+| TMT \_ BGFILL               | **TRUE** se as imagens de tamanho verdadeiro associadas à parte e ao estado devem ser desenhadas no preenchimento da plano de fundo.                                                                                                        |
+| TMT \_ BORDERONLY           | **TRUE** se a imagem associada à parte e ao estado deve ter apenas sua borda desenhada.                                                                                                                     |
+| TMT \_ COMPOSITED           | **TRUE** se o controle associado à parte e ao estado tratará sua própria composição de imagens.                                                                                                           |
 | TMT \_ COMPOSITEDOPAQUE     |                                                                                                                                                                                                                 |
 | TMT \_ DRAWBORDERS          |                                                                                                                                                                                                                 |
-| TMT \_ FLATMENUS            | Consulte [**GetThemeSysBool**](/windows/desktop/api/Uxtheme/nf-uxtheme-getthemesysbool).                                                                                                                                                                 |
-| TMT \_ GLYPHONLY            | **True** se o glifo associado à parte e o estado devem ser desenhados sem um plano de fundo.                                                                                                                  |
-| TMT \_ GLYPHTRANSPARENT     | **True** se o glifo associado à parte e ao estado tiver áreas transparentes. Consulte [**GetThemeColor**](/windows/desktop/api/Uxtheme/nf-uxtheme-getthemecolor) para obter a definição do \_ valor TMT GLYPHCOLOR que define a cor transparente. |
-| TMT \_ INTEGRALSIZING       | **True** se a imagem ou borda truesize associada à parte e o estado precisarem ser dimensionados para um fator de 2.                                                                                                     |
+| TMT \_ FLATMENUS            | Consulte [**GetThemeSysBool.**](/windows/desktop/api/Uxtheme/nf-uxtheme-getthemesysbool)                                                                                                                                                                 |
+| \_GLIFOL TMT            | **TRUE** se o glifo associado à parte e ao estado deve ser desenhado sem uma segundo plano.                                                                                                                  |
+| TMT \_ GLYPHTRANSPARENT     | **TRUE** se o glifo associado à parte e ao estado tiver áreas transparentes. Consulte [**GetThemeColor para**](/windows/desktop/api/Uxtheme/nf-uxtheme-getthemecolor) obter a definição do valor de TMT \_ GLYPHCOLOR que define a cor transparente. |
+| INTEGRALIZAÇÃO DE TMT \_       | **TRUE** se a imagem truesize ou a borda associada à parte e ao estado devem ser dimensionados para um fator de 2.                                                                                                     |
 | TMT \_ LOCALIZEDMIRRORIMAGE |                                                                                                                                                                                                                 |
-| TMT \_ MIRRORIMAGE          | **True** se a imagem associada à parte e ao Estado deve ser invertida se a janela estiver sendo exibida no modo de leitura da direita para a esquerda.                                                                         |
+| TMT \_ MIRRORIMAGE          | **TRUE** se a imagem associada à parte e ao estado deve ser invertida se a janela estiver sendo exibida no modo de leitura da direita para a esquerda.                                                                         |
 | TMT \_ NOETCHEDEFFECT       |                                                                                                                                                                                                                 |
 | TMT \_ SCALEDBACKGROUND     |                                                                                                                                                                                                                 |
 | TMT \_ SOURCEGROW           | **True** se a imagem associada à parte e ao estado for dimensionada em tamanho maior se necessário.                                                                                                                |
@@ -146,8 +146,8 @@ A seguir estão os valores definidos para propriedades de tema, agrupados por ti
 | TMT \_ TEXTCOLOR               | A cor do texto associado a esta parte e estado.                                                                                                                                     |
 | TMT \_ TEXTCOLORHINT           |                                                                                                                                                                                                |
 | TMT \_ TEXTSHADOWCOLOR         | A cor da sombra de texto associada a esta parte e estado.                                                                                                                              |
-| TMT \_ TRANSPARENTCOLOR        | A cor transparente associada a esta parte e o estado. Se o \_ valor transparent TMT para essa parte e o estado for **true**, as partes do gráfico que usam essa cor não serão desenhadas.          |
-| \_janela TMT                  |                                                                                                                                                                                                |
+| TMT \_ TRANSPARENTCOLOR        | A cor transparente associada a essa parte e estado. Se o valor TMT TRANSPARENT dessa parte e estado for TRUE, as partes do gráfico que \_ usam essa cor não serão desenhadas.           |
+| JANELA \_ TMT                  |                                                                                                                                                                                                |
 | TMT \_ WINDOWFRAME             |                                                                                                                                                                                                |
 | TMT \_ WINDOWTEXT              |                                                                                                                                                                                                |
 
@@ -167,51 +167,51 @@ A seguir estão os valores definidos para propriedades de tema, agrupados por ti
 
  
 
-**TMT \_ enum**
+**TMT \_ ENUM**
 
 
 
 | Enumeração         | Valores da propriedade                                                                                                                                                                                                                                            | Observações                                                                                                                                                |
 |---------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
-| BGTYPE              | \_ImageFile de BT, BT \_ BORDERFILL                                                                                                                                                                                                                              | O tipo de desenho básico para esta parte.                                                                                                                |
-| BORDERTYPE          | BT \_ Rect, BT \_ ROUNDRECT, \_ elipse BT                                                                                                                                                                                                                       | O tipo de borda desenhada se esta parte for um preenchimento de borda.                                                                                              |
-| CONTENTALIGNMENT    | CA \_ à esquerda, \_ centro de CA, CA \_ direito                                                                                                                                                                                                                            | O alinhamento do texto na legenda associada a esta parte.                                                                                      |
-| FILLTYPE            | FT \_ sólido, ft \_ VERTGRADIENT, ft \_ HORZGRADIENT, FT \_ RADIALGRADIENT, ft \_ TILEIMAGE                                                                                                                                                                           | O tipo de forma de preenchimento desenhada se esta parte for um preenchimento de borda.                                                                                          |
-| GLIFOtype           | GT \_ nenhum, gt \_ IMAGEGLYPH, gt \_ FONTGLYPH                                                                                                                                                                                                                    | O tipo de glifo desenhado nesta parte.                                                                                                                |
-| GLYPHFONTSIZINGTYPE | GFST \_ None, GFST \_ size, GFST \_ dpi                                                                                                                                                                                                                          | O tipo de método usado para selecionar entre glifos de tamanho diferente.                                                                                    |
-| HALIGN              | HA \_ esquerdo, \_ centro de ha, direito de alta disponibilidade \_                                                                                                                                                                                                                            | O alinhamento horizontal se essa parte usar uma imagem de tamanho real.                                                                                        |
-| ICONEFFECT          | GELO \_ nenhum, \_ brilho de gelo, \_ sombra de gelo, \_ pulso de gelo, Ice de gelo \_                                                                                                                                                                                                  | O tipo de efeito a ser exibido quando essa parte é desenhada usando [**DrawThemeIcon**](/windows/desktop/api/Uxtheme/nf-uxtheme-drawthemeicon).                                             |
-| IMAGELAYOUT         | IL \_ vertical, Il \_ horizontal                                                                                                                                                                                                                               | O tipo de alinhamento usado quando várias imagens são desenhadas.                                                                                           |
-| IMAGESELECTTYPE     | IST \_ nenhum, tamanho do ist \_ , ist \_ dpi                                                                                                                                                                                                                             | O tipo de método usado para selecionar entre imagens dimensionadas para esta parte. Consulte o \_ valor TMT IMAGEFILE1 de [**GetThemeFilename**](/windows/desktop/api/Uxtheme/nf-uxtheme-getthemefilename). |
-| Deslocamento de intervalo          | OT \_ TOPLEFT, OT \_ canto superior, OT \_ TOPMIDDLE, OT \_ BOTTOMLEFT, OT BOTTOMRIGHT, OT BOTTOMMIDDLE, OT MIDDLELEFT, OT MIDDLERIGHT, OT LEFTOFCAPTION, OT RIGHTOFCAPTION, OT LEFTOFLASTBUTTON, OT RIGHTOFLASTBUTTON, OT ABOVELASTBUTTON \_ \_ \_ \_ \_ \_ \_ \_ \_ , OT \_ BELOWLASTBUTTON | O alinhamento desta parte na janela.                                                                                                            |
-| SIZINGtype          | ST \_ TRUESIZE, St \_ Stretch, St \_ Tile, ST \_ TILEHORZ, St \_ TILEVERT, St \_ TILECENTER                                                                                                                                                                            | O método usado para dimensionar uma imagem se essa parte usar um arquivo de imagem.                                                                                    |
-| Textsombreatype      | TST \_ None, TST \_ Single, TST \_ Continuous                                                                                                                                                                                                                    | O tipo de efeito de sombra a ser desenhado atrás do texto associado a esta parte.                                                                             |
-| TRUESIZESCALINGTYPE | TSST \_ None, TSST \_ size, TSST \_ dpi                                                                                                                                                                                                                          | O tipo de dimensionamento usado se esta parte usa uma imagem de tamanho real.                                                                                       |
-| VALIGN              | VA \_ superior, \_ Centro VA, VA \_ inferior                                                                                                                                                                                                                            | O alinhamento vertical se essa parte usar uma imagem de tamanho real.                                                                                          |
+| BGTYPE              | BT \_ IMAGEFILE, BT \_ BORDERFILL                                                                                                                                                                                                                              | O tipo de desenho básico para esta parte.                                                                                                                |
+| Bordertype          | BT \_ RECT, BT \_ ROUNDRECT, BT \_ ELLIPSE                                                                                                                                                                                                                       | O tipo de borda desenhada se esta parte for um preenchimento de borda.                                                                                              |
+| Contentalignment    | CA \_ LEFT, CA \_ CENTER, CA \_ RIGHT                                                                                                                                                                                                                            | O alinhamento do texto na legenda associada a esta parte.                                                                                      |
+| Filltype            | FT \_ SOLID, FT \_ VERTGRADIENT, FT \_ HORZGRADIENT, FT \_ RADIALGRADIENT, FT \_ TILEIMAGE                                                                                                                                                                           | O tipo de forma de preenchimento desenhada se essa parte for um preenchimento de borda.                                                                                          |
+| Glyphtype           | GT \_ NONE, GT \_ IMAGEGLYPH, GT \_ FONTGLYPH                                                                                                                                                                                                                    | O tipo de glifo desenhado nesta parte.                                                                                                                |
+| Glyphfontsizingtype | GFST \_ NONE, GFST \_ SIZE, GFST \_ DPI                                                                                                                                                                                                                          | O tipo de método usado para selecionar entre glifos de tamanho diferente.                                                                                    |
+| HALIGN              | HA \_ LEFT, HA \_ CENTER, HA \_ RIGHT                                                                                                                                                                                                                            | O alinhamento horizontal se essa parte usar uma imagem de tamanho verdadeiro.                                                                                        |
+| Iconeffect          | ICE \_ NONE, \_ ICE BRILHO, ICE \_ SHADOW, ICE \_ PULSE, ICE \_ ALPHA                                                                                                                                                                                                  | O tipo de efeito a ser exibido quando essa parte é desenhada [**usando DrawThemeIcon**](/windows/desktop/api/Uxtheme/nf-uxtheme-drawthemeicon).                                             |
+| Imagelayout         | IL \_ VERTICAL, IL \_ HORIZONTAL                                                                                                                                                                                                                               | O tipo de alinhamento usado quando várias imagens são desenhadas.                                                                                           |
+| Imageselecttype     | IST \_ NONE, IST \_ SIZE, IST \_ DPI                                                                                                                                                                                                                             | O tipo de método usado para selecionar entre imagens dimensionada para esta parte. Consulte o valor imageFILE1 do TMT \_ [**de GetThemeFilename.**](/windows/desktop/api/Uxtheme/nf-uxtheme-getthemefilename) |
+| OFFSETTYPE          | OT \_ TOPLEFT, OT \_ TOPRIGHT, OT \_ TOPMIDDLE, OT \_ BOTTOMLEFT, OT \_ BOTTOMRIGHT, OT \_ BOTTOMMIDDLE, OT \_ MIDDLELEFT, OT \_ MIDDLERIGHT, OT \_ LEFTOFCAPTION, OT \_ RIGHTOFCAPTION, OT \_ LEFTOFLASTBUTTON, OT \_ RIGHTOFLASTBUTTON, OT \_ ABOVELASTBUTTON, OT \_ BELOWLASTBUTTON | O alinhamento dessa parte na janela.                                                                                                            |
+| Sizingtype          | ST \_ TRUESIZE, ST \_ STRETCH, ST \_ TILE, ST \_ TILEHORZ, ST \_ TILEVERT, ST \_ TILECENTER                                                                                                                                                                            | O método usado para tamanho de uma imagem se essa parte usar um arquivo de imagem.                                                                                    |
+| Textshadowtype      | TST \_ NONE, TST \_ SINGLE, TST \_ CONTINUOUS                                                                                                                                                                                                                    | O tipo de efeito de sombra para desenhar atrás do texto associado a esta parte.                                                                             |
+| Truesizescalingtype | TSST \_ NONE, TSST \_ SIZE, TSST \_ DPI                                                                                                                                                                                                                          | O tipo de dimensionamento usado se essa parte usar uma imagem de tamanho verdadeiro.                                                                                       |
+| Valign              | VA \_ TOP, VA \_ CENTER, VA \_ BOTTOM                                                                                                                                                                                                                            | O alinhamento vertical se essa parte usar uma imagem de tamanho verdadeiro.                                                                                          |
 
 
 
  
 
-**\_nome de arquivo TMT**
+**TMT \_ FILENAME**
 
 
 
 | ID                  | Observações                                                                                                                                        |
 |---------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| TMT \_ GLYPHIMAGEFILE | O nome do arquivo para a imagem de glifo associada a esta parte e estado.                                                                        |
-| TMT \_ ImageFile      | O nome do arquivo da imagem associada a esta parte e estado ou o nome do arquivo base para várias imagens associadas a essa parte e estado. |
-| TMT \_ IMAGEFILE1     | O nome do arquivo da primeira imagem dimensionada associada a esta parte e o estado para dar suporte a diferentes resoluções.                            |
+| TMT \_ GLYFILE | O nome do arquivo para a imagem de glifo associada a essa parte e estado.                                                                        |
+| TMT \_ IMAGEFILE      | O nome do arquivo da imagem associada a essa parte e estado ou o nome de arquivo base para várias imagens associadas a essa parte e estado. |
+| TMT \_ IMAGEFILE1     | O nome do arquivo da primeira imagem dimensionada associada a essa parte e estado, para dar suporte a resoluções diferentes.                            |
 | TMT \_ IMAGEFILE2     | O nome do arquivo da segunda imagem dimensionada.                                                                                                     |
 | TMT \_ IMAGEFILE3     | O nome do arquivo da terceira imagem dimensionada.                                                                                                      |
 | TMT \_ IMAGEFILE4     | O nome do arquivo da quarta imagem dimensionada.                                                                                                     |
-| TMT \_ IMAGEFILE5     | O nome de arquivo da quinta imagem dimensionada.                                                                                                      |
+| TMT \_ IMAGEFILE5     | O nome do arquivo da quinta imagem dimensionada.                                                                                                      |
 
 
 
  
 
-**\_fonte TMT**
+**FONTE \_ TMT**
 
 
 
@@ -219,30 +219,30 @@ A seguir estão os valores definidos para propriedades de tema, agrupados por ti
 |-----------------------|------------------------------------------------------------------------------------------------------|
 | TMT \_ BODYFONT         |                                                                                                      |
 | TMT \_ CAPTIONFONT      |                                                                                                      |
-| TMT \_ GLYPHFONT        | A fonte com a qual o glifo associado a esta parte será desenhado, se os glifos baseados em fonte forem usados. |
+| GLIFONT \_ TMT        | A fonte com a que o glifo associado a essa parte será desenhada, se glifos baseados em fonte são usados. |
 | TMT \_ HEADING1FONT     |                                                                                                      |
 | TMT \_ HEADING2FONT     |                                                                                                      |
-| TMT \_ ICONTITLEFONT    |                                                                                                      |
-| TMT \_ MENUFONT         |                                                                                                      |
+| ÍCONE DE \_ TMTTITLEFONT    |                                                                                                      |
+| \_MENU TMTFONT         |                                                                                                      |
 | TMT \_ MSGBOXFONT       |                                                                                                      |
 | TMT \_ SMALLCAPTIONFONT |                                                                                                      |
-| TMT \_ STATUSFONT       |                                                                                                      |
+| STATUS DO \_ TMTFONT       |                                                                                                      |
 
 
 
  
 
-**TMT \_ int**
+**TMT \_ INT**
 
 
 
 | ID                       | Observações                                                                                                                                                                                                            |
 |--------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| TMT \_ ALPHALEVEL          | O valor alfa (0-255) usado para [**DrawThemeIcon**](/windows/desktop/api/Uxtheme/nf-uxtheme-drawthemeicon).                                                                                                                                         |
+| TMT \_ ALPHALEVEL          | O valor alfa (0-255) usado [**para DrawThemeIcon.**](/windows/desktop/api/Uxtheme/nf-uxtheme-drawthemeicon)                                                                                                                                         |
 | TMT \_ ALPHATHRESHOLD      | O valor alfa mínimo (0-255) que um pixel deve ter para ser considerado opaco.                                                                                                                                  |
-| TMT \_ ANIMATIONDELAY      |                                                                                                                                                                                                                  |
-| TMT \_ ANIMATIONDURATION   |                                                                                                                                                                                                                  |
-| bordas TMTdas \_          | A espessura da borda desenhada se essa parte usa um preenchimento de borda.                                                                                                                                               |
+| ANIMAÇÃO \_ TMTDELAY      |                                                                                                                                                                                                                  |
+| ANIMAÇÃO \_ TMTDURATION   |                                                                                                                                                                                                                  |
+| TMT \_ BORDERSIZE          | A espessura da borda desenhada se essa parte usa um preenchimento de borda.                                                                                                                                               |
 | conjunto de \_ caracteres TMT             |                                                                                                                                                                                                                  |
 | TMT \_ COLORIZATIONCOLOR   |                                                                                                                                                                                                                  |
 | TMT \_ COLORIZATIONOPACITY |                                                                                                                                                                                                                  |

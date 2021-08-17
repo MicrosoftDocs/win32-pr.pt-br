@@ -1,7 +1,7 @@
 ---
-description: Inicializa uma cor com os valores Alfa, vermelho, verde e azul fornecidos.
+description: Inicializa uma cor com os valores alfa, vermelho, verde e azul fornecidos.
 ms.assetid: e862ba1b-fdcf-4058-8835-e58b4fc5e21a
-title: Macro D3DCOLOR_ARGB (D3d9types. h)
+title: D3DCOLOR_ARGB macro (D3d9types.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - D3d9types.h
-ms.openlocfilehash: bd0138c435c15c0c2ac026487471554e0edf0afa
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 8b65ae82673e98d666754ae42348cb62b3c336a1e642a5f78607924dc58313dd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104298534"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118805426"
 ---
-# <a name="d3dcolor_argb-macro"></a>\_Macro ARGB D3DCOLOR
+# <a name="d3dcolor_argb-macro"></a>Macro ARGB D3DCOLOR \_
 
-Inicializa uma cor com os valores Alfa, vermelho, verde e azul fornecidos.
+Inicializa uma cor com os valores alfa, vermelho, verde e azul fornecidos.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,7 +42,7 @@ D3DCOLOR D3DCOLOR_ARGB(
 
 <dl> <dt>
 
-*um* 
+*Um* 
 </dt> <dd>
 
 Componente alfa da cor. Esse valor deve estar no intervalo de 0 a 255.
@@ -56,7 +56,7 @@ Componente vermelho da cor. Esse valor deve estar no intervalo de 0 a 255.
 
 </dd> <dt>
 
-*m* 
+*G* 
 </dt> <dd>
 
 Componente verde da cor. Esse valor deve estar no intervalo de 0 a 255.
@@ -70,9 +70,9 @@ Componente azul da cor. Esse valor deve estar no intervalo de 0 a 255.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna o valor de [D3DCOLOR](d3dcolor.md) que corresponde aos valores ARGB fornecidos.
+Retorna o [valor D3DCOLOR](d3dcolor.md) que corresponde aos valores ARGB fornecidos.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -80,7 +80,7 @@ Retorna o valor de [D3DCOLOR](d3dcolor.md) que corresponde aos valores ARGB forn
 
 | Requisito | Valor |
 |-------------------|----------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>D3d9types. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>D3d9types.h</dt> </dl> |
 
 
 
@@ -91,7 +91,7 @@ Retorna o valor de [D3DCOLOR](d3dcolor.md) que corresponde aos valores ARGB forn
 [Macros](dx9-graphics-reference-d3d-macros.md)
 </dt> <dt>
 
-[**\_RGBA D3DCOLOR**](d3dcolor-rgba.md)
+[**D3DCOLOR \_ RGBA**](d3dcolor-rgba.md)
 </dt> <dt>
 
 [**D3DCOLOR \_ XRGB**](d3dcolor-xrgb.md)

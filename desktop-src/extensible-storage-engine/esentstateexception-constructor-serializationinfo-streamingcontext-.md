@@ -29,10 +29,10 @@ ms.locfileid: "118769659"
 ---
 # <a name="esentstateexception-constructor-serializationinfo-streamingcontext"></a>Construtor EsentStateException (SerializationInfo, StreamingContext)
 
-Inicializa uma nova instância da classe EsentStateException. Esse construtor é usado para desserializar uma exceção serializada.
+Inicializa uma nova instância da classe EsentStateException. Esse construtor é usado para desserlizar uma exceção serializada.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -59,14 +59,14 @@ protected EsentStateException(
 #### <a name="parameters"></a>Parâmetros
 
   - informações  
-    Tipo: [System. Runtime. Serialization. SerializationInfo](/dotnet/api/system.runtime.serialization.serializationinfo)  
+    Tipo: [System.Runtime.Serialization.SerializationInfo](/dotnet/api/system.runtime.serialization.serializationinfo)  
     
-    Os dados necessários para desserializar o objeto.
+    Os dados necessários para desterlizar o objeto.
 
 <!-- end list -->
 
   - contexto  
-    Tipo: [System. Runtime. Serialization. StreamingContext](/dotnet/api/system.runtime.serialization.streamingcontext)  
+    Tipo: [System.Runtime.Serialization.StreamingContext](/dotnet/api/system.runtime.serialization.streamingcontext)  
     
     O contexto de desserialização.
 
@@ -76,8 +76,8 @@ protected EsentStateException(
 
 [Classe EsentStateException](./esentstateexception-class.md)
 
-[Membros do EsentStateException](./esentstateexception-members.md)
+[Membros EsentStateException](./esentstateexception-members.md)
 
-[Sobrecarga de EsentStateException](./esentstateexception-constructor.md)
+[Sobrecarga EsentStateException](./esentstateexception-constructor.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

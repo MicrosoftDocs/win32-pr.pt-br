@@ -1,19 +1,19 @@
 ---
-description: Com o Windows Vista, a árvore de itens de aquisição de imagens do Windows (WIA) mudou significativamente.
+description: Com Windows Vista, a árvore de itens wia (aquisição Windows imagem) do Windows foi alterada significativamente.
 ms.assetid: dda87bcc-2315-4f0d-87a0-d5a33d5d929a
-title: Sobre a árvore de itens do IWiaItem2
+title: Sobre a árvore de itens IWiaItem2
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e4d3e7d39319c7b1c94f88612c5d571f17f2a027
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9ae342f5a85e61b6384604dae703881c6888e3e1cf8e61cc8a39a32ac77ad436
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103828458"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119264416"
 ---
-# <a name="about-the-iwiaitem2-item-tree"></a>Sobre a árvore de itens do IWiaItem2
+# <a name="about-the-iwiaitem2-item-tree"></a>Sobre a árvore de itens IWiaItem2
 
-Com o Windows Vista, a árvore de itens de aquisição de imagens do Windows (WIA) mudou significativamente. Os itens [**IWiaItem2**](-wia-iwiaitem2.md) são usados para representar os atributos do dispositivo e os dados do dispositivo. Os aplicativos de geração de imagens veem um dispositivo de aquisição de imagem do Windows (WIA) 2,0 como uma árvore hierárquica de itens, com o item raiz que representa o próprio dispositivo e os itens filho que representam coisas como fontes de dados programáveis, imagens ou pastas que contêm imagens.
+Com Windows Vista, a árvore de itens wia (aquisição Windows imagem) do Windows foi alterada significativamente. [**Os itens IWiaItem2**](-wia-iwiaitem2.md) são usados para representar atributos de dispositivo e dados do dispositivo. Os aplicativos de imagens veem um dispositivo WIA (Aquisição de Imagem) 2.0 do Windows como uma árvore hierárquica de itens, com o item raiz representando o próprio dispositivo e os itens filho que representam itens como fontes de dados programáveis, imagens ou pastas que contêm imagens.
 
 -   [Itens de aplicativo](#application-items)
 -   [Sinalizadores de item](#item-flags)
@@ -24,42 +24,42 @@ Com o Windows Vista, a árvore de itens de aquisição de imagens do Windows (WI
 
 ## <a name="application-items"></a>Itens de aplicativo
 
-A árvore de itens WIA 2,0 que um aplicativo pode ver é separada da árvore criada e mantida por uma minidriver WIA 2,0. Quando um minidriver cria uma árvore, o serviço WIA 2,0 usa essa árvore de itens WIA 2,0 como um guia para criar uma cópia da árvore que pode ser exibida por aplicativos de geração de imagens. Os itens na árvore copiada são chamados de itens de *aplicativo* . Os itens na árvore criados por um minidriver são chamados de itens de *Driver* .
+A árvore de itens do WIA 2.0 que um aplicativo pode ver é separada da árvore criada e mantida por um minidriver WIA 2.0. Quando um minidriver cria uma árvore, o serviço WIA 2.0 usa essa árvore de itens wia 2.0 como um guia para criar uma cópia da árvore que pode ser exibida por aplicativos de imagens. Os itens na árvore copiada são chamados de *itens de* aplicativo. Os itens na árvore criada por um minidriver são chamados de *itens de* driver.
 
-Um item WIA pode representar uma fonte de dados programável para o alimentador de documentos de um scanner ou os dados armazenados nesse dispositivo. Um dispositivo WIA deve ser dividido em itens individuais que descrevem diferentes dados produzidos por esse dispositivo.
+Um item WIA pode representar uma fonte de dados programável para o feed de documentos de um scanner ou os dados armazenados nesse dispositivo. Um dispositivo WIA deve ser dividido em itens individuais que descrevem dados diferentes produzidos por esse dispositivo.
 
-Por exemplo, um scanner WIA que dá suporte à verificação de mesa e à verificação do alimentador de documentos pode ser dividido em dois itens filho. Uma representa a funcionalidade de digitalização de mesa e a outra representa a funcionalidade de verificação do alimentador de documentos.
+Por exemplo, um scanner WIA que dá suporte à verificação de flatbed e à verificação do feeder de documentos pode ser dividido em dois itens filho. Um representa a funcionalidade de verificação de flatbed e o outro representa a funcionalidade de verificação do feeder de documentos.
 
-Várias imagens dispostas em um scanner de mesa e verificadas ao mesmo tempo podem ser colocadas em uma única pasta. Usando o filtro de segmentação ([**IWiaSegmentationFilter**](-wia-iwiasegmentationfilter.md)), cada imagem ou subregião pode ser criada como um item filho da pasta.
+Várias imagens colocadas em um scanner de flatbed e examinadas ao mesmo tempo podem ser colocadas em uma pasta. Usando o filtro de segmentação ([**IWiaSegmentationFilter**](-wia-iwiasegmentationfilter.md)), cada imagem ou sub-região pode ser criada como um item filho da pasta.
 
-A árvore WIA para um dispositivo de câmera que armazena fotos ("filme") pode ser dividida em itens que representam pastas, subpastas e fotos.
+A árvore WIA para um dispositivo de câmera que armazena fotos ("Filme") pode ser dividida em itens que representam pastas, subpastas e fotos.
 
 ## <a name="item-flags"></a>Sinalizadores de item
 
-Os sinalizadores de item WIA ajudam a classificar o conteúdo ou o comportamento com suporte de um determinado item WIA. Os sinalizadores de item WIA se enquadram em dois grupos.
+Os sinalizadores de item WIA ajudam a classificar o conteúdo ou o comportamento com suporte de um item WIA específico. Os sinalizadores de item WIA se enquadram em dois grupos.
 
-1.  Sinalizadores de status do item relatam o estado atual do item WIA, por exemplo, [**WiaItemTypeDisconnected**](-wia-wia-item-type-flags.md), **WiaItemTypeDeleted** e assim por diante.
-2.  Sinalizadores de uso/representação de dados do item relatam os dados que o item WIA representa ou que podem produzir se transferidos. Por exemplo, [**WiaItemTypeImage**](-wia-wia-item-type-flags.md) é um sinalizador de representação de dados que informa ao aplicativo que os dados associados ao item WIA atual são dados de imagem e devem ter propriedades de dados de imagem. **WIA \_ \_ \_ Sinalizadores de item de IPA** é um sinalizador de uso de item que informa ao aplicativo que o item WIA é configurável e segue um conjunto de regras de configuração predefinidas com base na [**\_ \_ \_ categoria de item IPA WIA**](-wia-wiaitempropcommonitem.md) e que a configuração pode, possivelmente, alterar o resultado para cada transferência de dados. (Para obter mais informações sobre definições de categoria, consulte categorias de item [categorias de item](#item-categories) .)
+1.  Os sinalizadores de status do item relatam o estado atual do item WIA, por exemplo, [**WiaItemTypeDisconnected,**](-wia-wia-item-type-flags.md) **WiaItemTypeDeleted** e assim por diante.
+2.  Sinalizadores de representação/uso de dados de item relatam os dados que o item WIA representa ou pode produzir se transferido. Por exemplo, [**WiaItemTypeImage**](-wia-wia-item-type-flags.md) é um sinalizador de representação de dados que informa ao aplicativo que os dados associados ao item WIA atual são dados de imagem e devem ter propriedades de dados de imagem. **WIA \_ SINALIZADORES \_ \_ DE ITEM IPA** é um sinalizador de uso de item que informa ao aplicativo que o item WIA é configurável e segue um conjunto de regras de configuração predefinidos com base na CATEGORIA DE [**ITEM \_ IPA \_ \_**](-wia-wiaitempropcommonitem.md) do WIA e que a configuração pode possivelmente alterar o resultado de cada transferência de dados. (Para obter mais informações sobre definições de categoria, consulte [Categorias de item categorias](#item-categories) de item.)
 
-O gráfico a seguir mostra um exemplo de uma árvore de itens WIA e os vários sinalizadores que podem ser associados a cada item.
+O gráfico a seguir mostra um exemplo de uma árvore de itens wia e os vários sinalizadores que podem ser associados a cada item.
 
 ![exemplos de sinalizadores de item para itens em uma árvore](images/scannertree1.jpg)
 
 ## <a name="item-categories"></a>Categorias de item
 
-Os itens WIA são agrupados em categorias usando os valores de propriedade de [**\_ \_ \_ categoria do item IPA WIA**](-wia-wiaitempropcommonitem.md) . Essas categorias definem como um item WIA deve ser tratado ou usado. Por exemplo, se o item representa um arquivo concluído ( \_ arquivo de categoria WIA \_ concluído \_ ), um aplicativo WIA deve assumir que os dados são estáticos e localizados no dispositivo. Se o item representa um alimentador ( \_ alimentador de categoria WIA \_ ), o aplicativo deve esperar que ele contenha as propriedades necessárias do alimentador de documentos e opere como um alimentador de documentos.
+Os itens do WIA são agrupados em categorias usando os valores de propriedade [**CATEGORIA \_ DE ITEM IPA \_ \_ DO WIA.**](-wia-wiaitempropcommonitem.md) Essas categorias definem como um item WIA deve ser tratado ou usado. Por exemplo, se o item representar um arquivo concluído (WIA CATEGORY FINISHED FILE), um aplicativo WIA deverá supor que os dados são estáticos e \_ \_ \_ localizados no dispositivo. Se o item representa um feeder (WIA CATEGORY FEEDER), o aplicativo deve esperar que ele contenha as propriedades necessárias do feeder de documentos e opere como um \_ \_ feeder de documentos.
 
-As categorias definidas por WIA são:
+As categorias definidas pelo WIA são:
 
--   \_automático da categoria WIA \_
--   \_alimentador de categoria WIA \_
--   \_filme de categoria WIA \_
--   \_arquivo de categoria WIA \_ concluído \_
--   \_superfície da categoria WIA \_
+-   CATEGORIA WIA \_ \_ AUTO
+-   FEEDER \_ DE CATEGORIA \_ WIA
+-   FILME DE \_ CATEGORIA \_ WIA
+-   ARQUIVO CONCLUÍDO \_ DA \_ CATEGORIA WIA \_
+-   CATEGORIA WIA \_ \_ FLATBED
 
-Por exemplo, o item de mesa de um scanner pode ter os [**\_ \_ \_ sinalizadores de item IPA WIA**](-wia-wiaitempropcommonitem.md) definidos como [**WiaItemTypeImage**](-wia-wia-item-type-flags.md), **WiaItemTypeTransfer** e **WiaItemTypeProgrammableDataSource**, e a propriedade de **categoria de \_ item de IPA \_ \_ WIA** definida como a \_ superfície de categoria WIA \_ .
+Por exemplo, o item de flatbed de um scanner pode ter os SINALIZADORES DE [**ITEM IPA WIA \_ \_ \_ definidos**](-wia-wiaitempropcommonitem.md) como [**WiaItemTypeImage**](-wia-wia-item-type-flags.md), **WiaItemTypeTransfer** e **WiaItemTypeProgrammableDataSource** e a propriedade CATEGORIA DE **\_ \_ ITEM \_ IPA WIA** definida como WIA \_ CATEGORY \_ FLATBED.
 
-A tabela a seguir mostra o agrupamento de categorias WIA com sinalizadores de item e itens WIA. Esta tabela não inclui uma lista completa dos sinalizadores de item WIA definidos pelo WIA.
+A tabela a seguir mostra o grupo de categorias wia com sinalizadores de item e itens WIA. Esta tabela não inclui uma lista completa dos sinalizadores de item WIA definidos pelo WIA.
 
 
 
@@ -75,7 +75,7 @@ A tabela a seguir mostra o agrupamento de categorias WIA com sinalizadores de it
 <th>Categoria WIA</th>
 <th>Sinalizadores de item WIA válidos</th>
 <th>Conjunto de propriedades WIA</th>
-<th>Itens WIA</th>
+<th>Itens wia</th>
 </tr>
 </thead>
 <tbody>
@@ -87,8 +87,8 @@ A tabela a seguir mostra o agrupamento de categorias WIA com sinalizadores de it
 <li><a href="-wia-wia-item-type-flags.md"><strong>WiaItemTypeTransfer</strong></a></li>
 <li><a href="-wia-wia-item-type-flags.md"><strong>WiaItemTypeFile</strong></a></li>
 </ul></td>
-<td>O conjunto de propriedades inclui propriedades de scanner configuradas automaticamente.</td>
-<td>O item automático WIA que representa as configurações de verificação automáticas do verificador.</td>
+<td>O conjunto de propriedades inclui propriedades do scanner configuradas automaticamente.</td>
+<td>Item automático do WIA que representa as configurações de verificação configuradas automaticamente do verificador.</td>
 </tr>
 <tr class="even">
 <td>WIA_CATEGORY_FEEDER</td>
@@ -99,8 +99,8 @@ A tabela a seguir mostra o agrupamento de categorias WIA com sinalizadores de it
 <li><a href="-wia-wia-item-type-flags.md"><strong>WiaItemTypeTransfer</strong></a></li>
 <li><a href="-wia-wia-item-type-flags.md"><strong>WiaItemTypeFolder</strong></a></li>
 </ul></td>
-<td>O conjunto de propriedades inclui propriedades do controle do scanner do Feeder (geralmente imagem e conjunto de propriedades específicas do documento).</td>
-<td>Itens do alimentador WIA, incluindo itens filho que representam as páginas de frente e de trás de um documento.</td>
+<td>O conjunto de propriedades inclui propriedades de controle do scanner do feeder (geralmente conjunto de propriedades específicas da imagem e do documento).</td>
+<td>Itens do WiA Feeder, incluindo itens filho que representam as páginas frontal e traseira de um documento.</td>
 </tr>
 <tr class="odd">
 <td>WIA_CATEGORY_FILM</td>
@@ -110,8 +110,8 @@ A tabela a seguir mostra o agrupamento de categorias WIA com sinalizadores de it
 <li><a href="-wia-wia-item-type-flags.md"><strong>WiaItemTypeTransfer</strong></a></li>
 <li><a href="-wia-wia-item-type-flags.md"><strong>WiaItemTypeFolder</strong></a></li>
 </ul></td>
-<td>O conjunto de propriedades inclui propriedades de controle de scanner de filme (geralmente imagem e conjunto de propriedades específicas de documento).</td>
-<td>Itens de filme WIA, incluindo itens filho que representam os quadros de verificação individuais.</td>
+<td>O conjunto de propriedades inclui propriedades de controle do scanner de filmes (geralmente conjunto de propriedades específicas de imagem e documento).</td>
+<td>Itens de filmes do WIA, incluindo itens filho que representam os quadros de verificação individuais.</td>
 </tr>
 <tr class="even">
 <td>WIA_CATEGORY_FINISHED_FILE</td>
@@ -133,11 +133,11 @@ A tabela a seguir mostra o agrupamento de categorias WIA com sinalizadores de it
 <li><a href="-wia-wia-item-type-flags.md"><strong>WiaItemTypeImage</strong></a></li>
 <li><a href="-wia-wia-item-type-flags.md"><strong>WiaItemTypeDocument</strong></a></li>
 <li><a href="-wia-wia-item-type-flags.md"><strong>WiaItemTypeTransfer</strong></a></li>
-<li><a href="-wia-wia-item-type-flags.md"><strong>WiaItemTypeFolder</strong></a>— pode estar presente se o verificador oferecer suporte à verificação de vários itens.</li>
+<li><a href="-wia-wia-item-type-flags.md"><strong>WiaItemTypeFolder</strong></a>— pode estar presente se o verificador dá suporte à verificação de vários itens.</li>
 <li><a href="-wia-wia-item-type-flags.md"><strong>WiaItemTypeGenerated</strong></a>— pode estar presente se o aplicativo gerar um item WIA durante uma sessão de verificação de vários itens.</li>
 </ul></td>
-<td>O conjunto de propriedades inclui as propriedades do controle do scanner de mesa (geralmente imagem e conjunto de propriedades específicas do documento).</td>
-<td>Itens de mesa WIA, incluindo itens filho que representam regiões sendo examinadas no cilindro de mesa do scanner.</td>
+<td>O conjunto de propriedades inclui propriedades de controle do scanner de flatbed (geralmente conjunto de propriedades específicas da imagem e do documento).</td>
+<td>Itens de flatbed do WIA, incluindo itens filho que representam as regiões que estão sendo examinadas na placa de fundo simples do verificador.</td>
 </tr>
 </tbody>
 </table>
@@ -152,7 +152,7 @@ O gráfico a seguir mostra um exemplo de uma árvore de itens WIA e as várias c
 
 ## <a name="root-item"></a>Item raiz
 
-Um item raiz WIA é um item de pasta marcado com sinalizadores [**WiaItemTypeRoot**](-wia-wia-item-type-flags.md) e **WiaItemTypeDevice** que representa o próprio dispositivo. Ele contém atributos de dispositivo, como fabricante, nome do dispositivo e atributos de driver, como versão do driver e identificador de classe de interface do usuário (CLSID). Os aplicativos de geração de imagens obtêm a raiz para a árvore de itens WIA chamando o método [**IWiaDevMgr2:: CreateDevice**](-wia-iwiadevmgr2-createdevice.md) . O aplicativo usa o item raiz para obter acesso aos itens WIA filho individuais enumerando a árvore (consulte [**IEnumWiaItem2**](-wia-ienumwiaitem2.md)).
+Um item raiz do WIA é um item de pasta marcado com sinalizadores [**WiaItemTypeRoot**](-wia-wia-item-type-flags.md) e **WiaItemTypeDevice** que representa o próprio dispositivo. Ele contém atributos de dispositivo, como fabricante, nome do dispositivo e atributos de driver, como a versão do driver e o CLSID (identificador de classe de interface do usuário). Os aplicativos de imagens geram a raiz para a árvore de itens wia chamando [**o método IWiaDevMgr2::CreateDevice.**](-wia-iwiadevmgr2-createdevice.md) O aplicativo usa o item raiz para obter acesso aos itens de WIA filho individuais enumerando a árvore (consulte [**IEnumWiaItem2**](-wia-ienumwiaitem2.md)).
 
 ## <a name="data-item"></a>Item de Dados
 

@@ -1,7 +1,7 @@
 ---
 description: Adicione um objeto de nível superior antes da hierarquia de quadros.
 ms.assetid: ab4bfc3e-58eb-4de6-b080-8b3392b801bf
-title: Método ID3DXSaveUserData::AddTopLevelDataObjectsPre (D3dx9anim.h)
+title: 'Método ID3DXSaveUserData:: AddTopLevelDataObjectsPre (D3dx9anim. h)'
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -21,7 +21,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118801153"
 ---
-# <a name="id3dxsaveuserdataaddtopleveldataobjectspre-method"></a>Método ID3DXSaveUserData::AddTopLevelDataObjectsPre
+# <a name="id3dxsaveuserdataaddtopleveldataobjectspre-method"></a>Método ID3DXSaveUserData:: AddTopLevelDataObjectsPre
 
 Adicione um objeto de nível superior antes da hierarquia de quadros.
 
@@ -40,12 +40,12 @@ HRESULT AddTopLevelDataObjectsPre(
 
 <dl> <dt>
 
-*pXofSave* \[ Em\]
+*pXofSave* \[ no\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXFILESAVEOBJECT**](id3dxfilesaveobject.md)**
 
-Ponteiro para um objeto save de arquivo .x. Use esse ponteiro para chamar [**IDirectXFileSaveObject::CreateDataObject**](idirectxfilesaveobject--createdataobject.md) para criar o objeto de dados a ser salvo. Em [**seguida, chame IDirectXFileSaveObject::SaveData**](idirectxfilesaveobject--savedata.md) para salvar os dados.
+Ponteiro para um arquivo. x salvar objeto. Use este ponteiro para chamar [**IDirectXFileSaveObject:: Createdataobject**](idirectxfilesaveobject--createdataobject.md) para criar o objeto de dados a ser salvo. Em seguida, chame [**IDirectXFileSaveObject:: SaveData**](idirectxfilesaveobject--savedata.md) para salvar os dados.
 
 </dd> </dl>
 
@@ -53,7 +53,7 @@ Ponteiro para um objeto save de arquivo .x. Use esse ponteiro para chamar [**IDi
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Os valores de retorno desse método são implementados por um programador de aplicativos. Em geral, se nenhum erro ocorrer, programe o método para retornar D3D \_ OK. Caso contrário, programe o método para retornar uma mensagem de erro apropriada de [D3DERR](d3derr.md) ou [**D3DXERR,**](./d3dxerr.md)pois isso fará com que [**D3DXLoadMeshHierarchyFromX**](d3dxloadmeshhierarchyfromx.md) falhe também e retorne o erro.
+Os valores de retorno desse método são implementados por um programador de aplicativos. Em geral, se nenhum erro ocorrer, Programe o método para retornar o D3D \_ OK. Caso contrário, Programe o método para retornar uma mensagem de erro apropriada de [D3DERR](d3derr.md) ou [**D3DXERR**](./d3dxerr.md), pois isso fará com que o [**D3DXLoadMeshHierarchyFromX**](d3dxloadmeshhierarchyfromx.md) falhe também e retorne o erro.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -61,8 +61,8 @@ Os valores de retorno desse método são implementados por um programador de apl
 
 | Requisito | Valor |
 |--------------------|----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3dx9anim.h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
+| parâmetro<br/>  | <dl> <dt>D3dx9anim. h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
 
 
 

@@ -4,12 +4,12 @@ ms.assetid: 718a6d56-c869-4340-bbb8-cac5b231c37e
 title: Propriedade AVEncVideoInputColorLighting (Codecapi. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a447642a2f622480240ec653520ef40021e22437
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: c505c8dabc938811f8e672a6247f7b689323d07ab40fabc5b9f4bd911b88cdb4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104010025"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119275366"
 ---
 # <a name="avencvideoinputcolorlighting-property"></a>Propriedade AVEncVideoInputColorLighting
 
@@ -35,8 +35,8 @@ O valor dessa propriedade é um membro da enumeração [**eAVEncVideoColorLighti
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Aplicativos do Windows 2000 Professional \[ Desktop aplicativos \| UWP\]<br/>                     |
-| Servidor mínimo com suporte<br/> | Aplicativos da área de trabalho do Windows 2000 Server aplicativos \[ \| UWP\]<br/>                           |
+| Cliente mínimo com suporte<br/> | aplicativos Windows 2000 Professional \[ desktop aplicativos \| UWP\]<br/>                     |
+| Servidor mínimo com suporte<br/> | Windows \[ aplicativos da área de trabalho do servidor 2000 \| aplicativo UWP\]<br/>                           |
 | parâmetro<br/>                   | <dl> <dt>Codecapi. h</dt> </dl> |
 
 

@@ -36,7 +36,7 @@ Os nomes comuns das classes não padrão que podem ser adicionadas a um grupo de
 | Frequência de atualização  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.1689                     |
 | System-ID-GUID    | 2de144fc-1f52-486f-bdf4-16fcc3084e54        |
-| Sintaxe            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
 
 
 

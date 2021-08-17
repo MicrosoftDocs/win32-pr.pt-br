@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre a propriedade: JET_ENUMCOLUMN. cbData'
-title: Propriedade JET_ENUMCOLUMN. cbData
+description: 'Saiba mais sobre: JET_ENUMCOLUMN.cbData'
+title: JET_ENUMCOLUMN.cbData
 TOCTitle: 'cbData property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.JET_ENUMCOLUMN.cbData
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_enumcolumn.cbdata(v=EXCHG.10)
@@ -33,12 +33,12 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118766002"
 ---
-# <a name="jet_enumcolumncbdata-property"></a>Propriedade JET_ENUMCOLUMN. cbData
+# <a name="jet_enumcolumncbdata-property"></a>JET_ENUMCOLUMN.cbData
 
-Obtém o tamanho do valor que foi enumerado para a coluna. Esse membro só será usado se [Err](./jet-enumcolumn.err-property.md) for igual a [ColumnSingleValue](./jet-wrn-enumeration.md).
+Obtém o tamanho do valor que foi enumerado para a coluna. Esse membro só será usado se [err](./jet-enumcolumn.err-property.md) for igual [a ColumnSingleValue.](./jet-wrn-enumeration.md)
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Syntax
 
@@ -60,14 +60,14 @@ public int cbData { get; internal set; }
 
 #### <a name="property-value"></a>Valor da propriedade
 
-Tipo: [System. Int32](/dotnet/api/system.int32)  
+Tipo: [System.Int32](/dotnet/api/system.int32)  
 
 ## <a name="see-also"></a>Confira também
 
 #### <a name="reference"></a>Referência
 
-[Classe JET_ENUMCOLUMN](./jet-enumcolumn-class.md)
+[JET_ENUMCOLUMN classe](./jet-enumcolumn-class.md)
 
-[Membros do JET_ENUMCOLUMN](./jet-enumcolumn-members.md)
+[JET_ENUMCOLUMN membros](./jet-enumcolumn-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

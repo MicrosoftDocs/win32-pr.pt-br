@@ -4,19 +4,19 @@ ms.assetid: ceaa5ca4-799e-4801-96cd-aeea3dfd7d52
 title: Mensagem de WM_POWER (WinUser. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dc53fd165ee1cefe8970f85daea04b931a673b33
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5fd525b4bf229fdb04dac4c1d1492a52dad44317344f58a2f0807ba9afbdc962
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105770135"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119143179"
 ---
 # <a name="wm_power-message"></a>Mensagem de energia do WM \_
 
 Notifica os aplicativos que o sistema, normalmente, um computador pessoal alimentado por bateria, está prestes a entrar em um modo suspenso.
 
 > [!Note]  
-> A mensagem de **\_ energia do WM** está obsoleta. Ele é fornecido apenas para compatibilidade com aplicativos baseados no Windows de 16 bits. Os aplicativos devem usar a mensagem [**\_ POWERBROADCAST do WM**](wm-powerbroadcast.md) .
+> A mensagem de **\_ energia do WM** está obsoleta. ele é fornecido apenas para compatibilidade com aplicativos baseados em Windows de 16 bits. Os aplicativos devem usar a mensagem [**\_ POWERBROADCAST do WM**](wm-powerbroadcast.md) .
 
  
 
@@ -78,7 +78,7 @@ Este parâmetro não é usado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O valor que um aplicativo retorna depende do valor do parâmetro *wParam* . Se *wParam* for **PWR \_ SUSPENDREQUEST**, o valor de retorno será **PWR \_ falha** ao impedir que o sistema entre no estado suspenso; caso contrário, será **PWR \_ OK**. Se *wParam* for **PWR \_ SUSPENDRESUME** ou **PWR \_ CRITICALRESUME**, o valor de retorno será zero.
 
@@ -94,9 +94,9 @@ O modo suspenso é o estado em que ocorre a maior quantidade de economia de ener
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                                     |
-| parâmetro<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho XP\]<br/>                                                              |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                                     |
+| Cabeçalho<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
 
 
 

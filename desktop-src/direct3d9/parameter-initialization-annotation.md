@@ -1,5 +1,5 @@
 ---
-description: Use essa anotação para definir o conteúdo de um arquivo externo como o valor de inicialização de um parâmetro de efeito.
+description: Use esta anotação para definir o conteúdo de um arquivo externo como o valor de inicialização para um parâmetro de efeito.
 ms.assetid: 3da1f951-cb8b-49ce-aba2-0badb3178093
 title: Anotação de inicialização de parâmetro
 ms.topic: article
@@ -13,7 +13,7 @@ ms.locfileid: "118798649"
 ---
 # <a name="parameter-initialization-annotation"></a>Anotação de inicialização de parâmetro
 
-Use essa anotação para definir o conteúdo de um arquivo externo como o valor de inicialização de um parâmetro de efeito. Por exemplo:
+Use esta anotação para definir o conteúdo de um arquivo externo como o valor de inicialização para um parâmetro de efeito. Por exemplo:
 
 
 ```
@@ -22,7 +22,7 @@ string SasResourceAddress = "Value";
 
 
 
-em que Value é uma cadeia de caracteres de texto ASCII que pode conter um caminho absoluto ou relativo. Um caminho relativo é relativo ao diretório que contém o arquivo de efeito.
+em que value é uma cadeia de caracteres de texto ASCII que pode conter um caminho absoluto ou relativo. Um caminho relativo é relativo ao diretório que contém o arquivo de efeito.
 
 Veja um exemplo:
 

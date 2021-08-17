@@ -1,10 +1,10 @@
 ---
-title: Métodos de propriedade IADsService (IADs. h)
-description: Leia e grave as propriedades descritas neste tópico.
+title: Métodos de propriedade IADsService (Iads.h)
+description: Leia e escreva as propriedades descritas neste tópico.
 ms.assetid: ff05ab0c-b4fe-4c67-8894-9ac8427ce5b8
 ms.tgt_platform: multiple
 keywords:
-- ADSI de métodos de propriedade IADsService
+- Métodos de propriedade IADsService ADSI
 topic_type:
 - apiref
 api_name:
@@ -60,7 +60,7 @@ ms.locfileid: "118690975"
 ---
 # <a name="iadsservice-property-methods"></a>Métodos de propriedade IADsService
 
-Os métodos de propriedade da interface [**IADsService**](/windows/desktop/api/Iads/nn-iads-iadsservice) lêem e gravam as propriedades descritas neste tópico. Para obter mais informações, consulte [interface Property Methods](interface-property-methods.md).
+Os métodos de propriedade da interface [**IADsService**](/windows/desktop/api/Iads/nn-iads-iadsservice) leem e escrevem as propriedades descritas neste tópico. Para obter mais informações, consulte [Métodos de propriedade de interface](interface-property-methods.md).
 
 ## <a name="properties"></a>Propriedades
 
@@ -69,14 +69,14 @@ Os métodos de propriedade da interface [**IADsService**](/windows/desktop/api/I
 **Dependências**
 </dt> <dd> <dl>
 
-Matriz de nomes **BSTR** de serviços ou grupos de carregamento que devem ser carregados para que esse serviço seja carregado. A sintaxe da entrada é "serviço:" seguida do nome do serviço ou "Grupo:" seguido pelo nome do grupo de carregamento.
+Matriz de **nomes BSTR** de serviços ou grupos de carga que devem ser carregados para que esse serviço seja carregado. A sintaxe para a entrada é "Service:" seguida pelo nome do serviço ou "Group:" seguido pelo nome do grupo de carga.
 
 <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
-Tipo de dados de script: **Variant**
+Tipo de dados de script: **VARIANT**
 </dt> <dt>
 
 
@@ -101,7 +101,7 @@ O nome amigável do serviço.
 
 <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
 Tipo de dados de script: **BSTR**
@@ -125,24 +125,24 @@ HRESULT put_DisplayName(
 **ErrorControl**
 </dt> <dd> <dl>
 
-A ação a ser executada se esse serviço falhar na inicialização. Veja a seguir os valores válidos para essa propriedade.
+A ação a ser executada se esse serviço falhar na inicialização. A seguir estão os valores válidos para essa propriedade.
 
 <dt>
 
 <span id="ADS_SERVICE_ERROR_IGNORE"></span><span id="ads_service_error_ignore"></span>
 
-<span id="ADS_SERVICE_ERROR_IGNORE"></span><span id="ads_service_error_ignore"></span>erro de serviço do ADS \_ \_ \_ ignorar * * * *
+<span id="ADS_SERVICE_ERROR_IGNORE"></span><span id="ads_service_error_ignore"></span>ERRO \_ DO SERVIÇO ADS \_ \_ IGNORE****
 
 
 </dt> <dd>
 
-O programa de inicialização registra o erro, mas continua a operação de inicialização.
+O programa de inicialização registra o erro em logs, mas continua a operação de inicialização.
 
 </dd> <dt>
 
 <span id="ADS_SERVICE_ERROR_NORMAL"></span><span id="ads_service_error_normal"></span>
 
-<span id="ADS_SERVICE_ERROR_NORMAL"></span><span id="ads_service_error_normal"></span>\_erro de serviço ADS \_ \_ normal * * * *
+<span id="ADS_SERVICE_ERROR_NORMAL"></span><span id="ads_service_error_normal"></span>ERRO \_ DE SERVIÇO ADS \_ \_ NORMAL****
 
 
 </dt> <dd>
@@ -153,30 +153,30 @@ O programa de inicialização registra o erro e apresenta uma caixa de mensagem,
 
 <span id="ADS_SERVICE_ERROR_SEVERE"></span><span id="ads_service_error_severe"></span>
 
-<span id="ADS_SERVICE_ERROR_SEVERE"></span><span id="ads_service_error_severe"></span>\_erro de serviço ADS \_ \_ grave * * * *
+<span id="ADS_SERVICE_ERROR_SEVERE"></span><span id="ads_service_error_severe"></span>ERRO DO SERVIÇO ADS \_ \_ \_ GRAVE****
 
 
 </dt> <dd>
 
-O programa de inicialização registra o erro. Se a última configuração válida for iniciada, a operação de inicialização continuará. Caso contrário, o sistema será reiniciado com a última configuração válida.
+O programa de inicialização registra o erro em logs. Se a última configuração boa conhecida for iniciada, a operação de inicialização continuará. Caso contrário, o sistema será reiniciado com a última configuração boa conhecida.
 
 </dd> <dt>
 
 <span id="ADS_SERVICE_ERROR_CRITICAL"></span><span id="ads_service_error_critical"></span>
 
-<span id="ADS_SERVICE_ERROR_CRITICAL"></span><span id="ads_service_error_critical"></span>\_erro crítico do serviço ADS \_ \_ * * * *
+<span id="ADS_SERVICE_ERROR_CRITICAL"></span><span id="ads_service_error_critical"></span>ERRO \_ CRÍTICO DO SERVIÇO \_ \_ ADS****
 
 
 </dt> <dd>
 
-O programa de inicialização registra o erro, se possível. Se a última configuração válida estiver sendo iniciada, a operação de inicialização falhará. Caso contrário, o sistema será reiniciado com a última configuração válida conhecida.
+O programa de inicialização registra o erro, se possível. Se a última configuração conhecida estiver sendo iniciada, a operação de inicialização falhará. Caso contrário, o sistema será reiniciado com a última configuração boa conhecida.
 
 </dd> </dl> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
-Tipo de dados de script: **longo**
+Tipo de dados de script: **LONG**
 </dt> <dt>
 
 
@@ -197,11 +197,11 @@ HRESULT put_ErrorControl(
 **HostComputer**
 </dt> <dd> <dl>
 
-A cadeia de caracteres ADsPath do host deste serviço.
+A cadeia de caracteres ADsPath do host desse serviço.
 
 <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
 Tipo de dados de script: **BSTR**
@@ -225,11 +225,11 @@ HRESULT put_HostComputer(
 **LoadOrderGroup**
 </dt> <dd> <dl>
 
-Nome do grupo de ordem de carregamento do qual este serviço é membro.
+Nome do grupo de ordem de carregamento que esse serviço é membro.
 
 <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
 Tipo de dados de script: **BSTR**
@@ -253,11 +253,11 @@ HRESULT put_LoadOrderGroup(
 **Caminho**
 </dt> <dd> <dl>
 
-Caminho e nome de arquivo para o executável deste serviço.
+Caminho e nome do arquivo para o executável desse serviço.
 
 <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
 Tipo de dados de script: **BSTR**
@@ -285,7 +285,7 @@ Nome da conta que esse serviço usa para se autenticar na inicialização.
 
 <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
 Tipo de dados de script: **BSTR**
@@ -309,11 +309,11 @@ HRESULT put_ServiceAccountName(
 **ServiceAccountPath**
 </dt> <dd> <dl>
 
-Caminho da conta especificada pela propriedade **ServiceAccountPath** .
+Caminho da conta especificada pela propriedade **ServiceAccountPath.**
 
 <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
 Tipo de dados de script: **BSTR**
@@ -343,36 +343,36 @@ A descrição de como um serviço se apresenta no computador host. Essa propried
 
 <span id="ADS_SERVICE_KERNEL_DRIVER"></span><span id="ads_service_kernel_driver"></span>
 
-Driver de kernel de serviço do ADS * * * * \_ \_ \_ (0x00000001)
+\_DRIVER DE KERNEL DO SERVIÇO \_ \_ ADS*** (0x00000001)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="ADS_SERVICE_FILE_SYSTEM_DRIVER"></span><span id="ads_service_file_system_driver"></span>
 
-Driver do sistema de arquivos do serviço ADS * * * * \_ \_ \_ \_ (0x00000002)
+\_DRIVER DO SISTEMA DE ARQUIVOS DO SERVIÇO \_ \_ \_ ADS*** (0x00000002)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="ADS_SERVICE_OWN_PROCESS"></span><span id="ads_service_own_process"></span>
 
-Processo próprio de serviço do ADS * * * * \_ \_ \_ (0x00000010)
+PROCESSO \_ PRÓPRIO DO SERVIÇO \_ \_ ADS**** (0x00000010)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="ADS_SERVICE_SHARE_PROCESS"></span><span id="ads_service_share_process"></span>
 
-\_Processo de \_ compartilhamento do serviço ADS \_ * * * * (0x00000020)
+PROCESSO \_ DE \_ \_ COMPARTILHAMENTO DO SERVIÇO ADS**** (0x00000020)
 
 
 </dt> <dd></dd> </dl> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
-Tipo de dados de script: **longo**
+Tipo de dados de script: **LONG**
 </dt> <dt>
 
 
@@ -393,13 +393,13 @@ HRESULT put_ServiceType(
 **StartType**
 </dt> <dd> <dl>
 
-Determina como iniciar o serviço. Veja a seguir os valores válidos para essa propriedade.
+Determina como iniciar o serviço. A seguir estão os valores válidos para essa propriedade.
 
 <dt>
 
 <span id="ADS_SERVICE_BOOT_START"></span><span id="ads_service_boot_start"></span>
 
-<span id="ADS_SERVICE_BOOT_START"></span><span id="ads_service_boot_start"></span>\_início da inicialização do serviço ADS \_ \_ * * * *
+<span id="ADS_SERVICE_BOOT_START"></span><span id="ads_service_boot_start"></span>INÍCIO \_ DE \_ INICIALIZAÇÃO DO SERVIÇO \_ ADS****
 
 
 </dt> <dd>
@@ -410,52 +410,52 @@ O serviço é um driver de dispositivo iniciado pelo carregador do sistema. Esse
 
 <span id="ADS_SERVICE_SYSTEM_START"></span><span id="ads_service_system_start"></span>
 
-<span id="ADS_SERVICE_SYSTEM_START"></span><span id="ads_service_system_start"></span>\_início do sistema de serviço ADS \_ \_ * * * *
+<span id="ADS_SERVICE_SYSTEM_START"></span><span id="ads_service_system_start"></span>INÍCIO \_ DO SISTEMA DE SERVIÇO \_ \_ ADS****
 
 
 </dt> <dd>
 
-O serviço é um driver de dispositivo iniciado pela função **IoInitSystem** . Esse valor só é válido para serviços do driver.
+O serviço é um driver de dispositivo iniciado pela **função IoInitSystem.** Esse valor só é válido para serviços do driver.
 
 </dd> <dt>
 
 <span id="ADS_SERVICE_AUTO_START"></span><span id="ads_service_auto_start"></span>
 
-<span id="ADS_SERVICE_AUTO_START"></span><span id="ads_service_auto_start"></span>\_início automático do serviço ADS * * * \_ \_ *
+<span id="ADS_SERVICE_AUTO_START"></span><span id="ads_service_auto_start"></span>INÍCIO \_ AUTOMÁTICO DO SERVIÇO \_ \_ ADS****
 
 
 </dt> <dd>
 
-O serviço será iniciado automaticamente pelo Gerenciador de controle de serviço durante a inicialização do sistema.
+O serviço será iniciado automaticamente pelo gerenciador de controle de serviço durante a inicialização do sistema.
 
 </dd> <dt>
 
 <span id="ADS_SERVICE_DEMAND_START"></span><span id="ads_service_demand_start"></span>
 
-<span id="ADS_SERVICE_DEMAND_START"></span><span id="ads_service_demand_start"></span>\_início da demanda de serviço ADS \_ \_ * * * *
+<span id="ADS_SERVICE_DEMAND_START"></span><span id="ads_service_demand_start"></span>INÍCIO \_ DA DEMANDA DO SERVIÇO \_ \_ ADS****
 
 
 </dt> <dd>
 
-O serviço será iniciado pelo Gerenciador de controle de serviço quando um processo chamar a função [**StartService**](/windows/desktop/api/winsvc/nf-winsvc-startservicea) .
+O serviço será iniciado pelo gerenciador de controle de serviço quando um processo chamar a [**função StartService.**](/windows/desktop/api/winsvc/nf-winsvc-startservicea)
 
 </dd> <dt>
 
 <span id="ADS_SERVICE_DISABLED"></span><span id="ads_service_disabled"></span>
 
-<span id="ADS_SERVICE_DISABLED"></span><span id="ads_service_disabled"></span>\_serviço ADS \_ desabilitado * * * *
+<span id="ADS_SERVICE_DISABLED"></span><span id="ads_service_disabled"></span>SERVIÇO \_ ADS \_ DESABILITADO****
 
 
 </dt> <dd>
 
-Não é possível iniciar o serviço. As tentativas de iniciar o serviço resultam no código de erro **serviço de erro \_ \_ desabilitado**.
+Não é possível iniciar o serviço. Tenta iniciar o resultado do serviço no código de erro **SERVIÇO \_ DE ERRO \_ DESABILITADO**.
 
 </dd> </dl> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
-Tipo de dados de script: **longo**
+Tipo de dados de script: **LONG**
 </dt> <dt>
 
 
@@ -480,7 +480,7 @@ Parâmetros passados para o serviço na inicialização.
 
 <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
 Tipo de dados de script: **BSTR**
@@ -508,7 +508,7 @@ Versão do serviço.
 
 <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
 Tipo de dados de script: **BSTR**
@@ -533,7 +533,7 @@ HRESULT put_Version(
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo de código a seguir mostra como listar todos os serviços do sistema disponíveis em execução no computador host, "mymachine", junto com o local para encontrar os executáveis dos serviços.
+O exemplo de código a seguir mostra como listar todos os serviços do sistema disponíveis em execução no computador host, "myMachine", junto com o local para localizar os executáveis dos serviços.
 
 
 ```VB
@@ -565,9 +565,9 @@ Cleanup:
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| parâmetro<br/>                   | <dl> <dt>IADs. h</dt> </dl>       |
+| Cabeçalho<br/>                   | <dl> <dt>Iads.h</dt> </dl>       |
 | DLL<br/>                      | <dl> <dt>Activeds.dll</dt> </dl> |
-| IID<br/>                      | IID \_ IADsService é definido como 68AF66E0-31CA-11CF-A98A-00AA006BC149<br/>          |
+| IID<br/>                      | IID IADsService é definido como \_ 68AF66E0-31CA-11CF-A98A-00AA006BC149<br/>          |
 
 
 
@@ -578,7 +578,7 @@ Cleanup:
 [**IADsService**](/windows/desktop/api/Iads/nn-iads-iadsservice)
 </dt> <dt>
 
-[Métodos de propriedade de interface](interface-property-methods.md)
+[Métodos de propriedade interface](interface-property-methods.md)
 </dt> </dl>
 
  

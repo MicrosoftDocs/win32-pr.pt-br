@@ -4,12 +4,12 @@ ms.assetid: 0d5c8299-14d7-41e5-8ff6-f57a732acb26
 title: Opções de soquete NSPROTO_IPX (Wsnwlink. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 433e1fabed1963c3549d2d5a34fb432cac795e07
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e6803b5ab6cdf3002a60726c30648a1ae61bb59430820f049aeb8b011f367e73
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105748092"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118993626"
 ---
 # <a name="nsproto_ipx-socket-options"></a>\_Opções de soquete IPX NSPROTO
 
@@ -42,26 +42,26 @@ Para enumerar protocolos e descobrir Propriedades com suporte para cada protocol
 
  
 
-</dt> </dl> </dd> <dt><span id="Windows_Support_for_NSPROTO_IPX_options"></span><span id="windows_support_for_nsproto_ipx_options"></span><span id="WINDOWS_SUPPORT_FOR_NSPROTO_IPX_OPTIONS"></span>**Suporte do Windows para \_ Opções de IPX NSPROTO**</dt> <dd> <dl> <dt> 
+</dt> </dl> </dd> <dt><span id="Windows_Support_for_NSPROTO_IPX_options"></span><span id="windows_support_for_nsproto_ipx_options"></span><span id="WINDOWS_SUPPORT_FOR_NSPROTO_IPX_OPTIONS"></span>**Windows Suporte para opções de NSPROTO \_ IPX**</dt> <dd> <dl> <dt> 
 
-| Opção                      | Windows Vista e posterior | Windows Server 2003 | Windows XP | Windows 2000 | Windows NT4 | Windows 9x/me |
+| Opção                      | Windows Vista e posterior | Windows Server 2003 | Windows XP | Windows 2000 | Windows NT4 | Windows 9x/Me |
 |-----------------------------|-------------------------|---------------------|------------|--------------|-------------|---------------|
 | \_Endereço IPX                |                         | x                   | x          | x            | x           | x             |
-| \_notificação de Endereço IPX \_        |                         | x                   | x          | x            | x           | x             |
-| \_DSTYPE IPX                 |                         | x                   | x          | x            | x           | x             |
-| \_Endereço IPX estendido \_      |                         | x                   | x          | x            | x           | x             |
-| \_FILTERPTYPE IPX            |                         | x                   | x          | x            | x           | x             |
-| \_GETNETINFO IPX             |                         | x                   | x          | x            | x           | x             |
-| \_NORIP GETNETINFO \_ IPX      |                         | x                   | x          | x            | x           | x             |
-| \_IMMEDIATESPXACK IPX        |                         | x                   | x          | x            | x           | x             |
-| \_número máximo de \_ adaptador \_ IPX      |                         | x                   | x          | x            | x           | x             |
-| \_MaxSize IPX                |                         | x                   | x          | x            | x           | x             |
-| \_PTYPE IPX                  |                         | x                   | x          | x            | x           | x             |
-| \_difusão de recebimento de IPX \_     |                         | x                   | x          | x            | x           | x             |
-| \_RECVHDR IPX                |                         | x                   | x          | x            | x           | x             |
-| \_RERIPNETNUMBER IPX         |                         | x                   | x          | x            | x           | x             |
-| \_SPXGETCONNECTIONSTATUS IPX |                         | x                   | x          | x            | x           | x             |
-| \_STOPFILTERPTYPE IPX        |                         | x                   | x          | x            | x           | x             |
+| NOTIFICAÇÃO DE ENDEREÇO IPX \_ \_        |                         | x                   | x          | x            | x           | x             |
+| IPX \_ DSTYPE                 |                         | x                   | x          | x            | x           | x             |
+| ENDEREÇO \_ ESTENDIDO IPX \_      |                         | x                   | x          | x            | x           | x             |
+| IPX \_ FILTERPTYPE            |                         | x                   | x          | x            | x           | x             |
+| IPX \_ GETNETINFO             |                         | x                   | x          | x            | x           | x             |
+| IPX \_ GETNETINFO \_ NORIP      |                         | x                   | x          | x            | x           | x             |
+| IPX \_ IMMEDIATESPXACK        |                         | x                   | x          | x            | x           | x             |
+| IPX \_ MAX \_ ADAPTER \_ NUM      |                         | x                   | x          | x            | x           | x             |
+| IPX \_ MAXSIZE                |                         | x                   | x          | x            | x           | x             |
+| IPX \_ PTYPE                  |                         | x                   | x          | x            | x           | x             |
+| IPX \_ RECEIVE \_ BROADCAST     |                         | x                   | x          | x            | x           | x             |
+| IPX \_ RECVHDR                |                         | x                   | x          | x            | x           | x             |
+| IPX \_ RERIPNETNUMBER         |                         | x                   | x          | x            | x           | x             |
+| IPX \_ SPXGETCONNECTIONSTATUS |                         | x                   | x          | x            | x           | x             |
+| IPX \_ STOPFILTERPTYPE        |                         | x                   | x          | x            | x           | x             |
 
 
 
@@ -70,15 +70,15 @@ Para enumerar protocolos e descobrir Propriedades com suporte para cada protocol
 
 </dt> </dl> </dd> </dl>
 
-As opções de soquete **\_ IPX NSPROTO** a seguir foram definidas no Windows sockets 2 Protocol-Specific anexo, mas não são implementadas pelo protocolo IPX/SPX do Windows.
+As seguintes opções de **soquete \_ IPX NSPROTO** foram definidas no Windows Sockets 2 Protocol-Specific Anexo, mas não são implementadas pelo protocolo Windows IPX/SPX.
 
-*nível* **=** do **NSPROTO \_ IPX**
+*nível* **=** **NSPROTO \_ IPX**
 
 
 
 | Opção           | Type | Padrão                         | Significado                                                                                                                                                       |
 |------------------|------|---------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| \_soma de verificação IPX    | Bool | Desligar                             | Quando definido, o IPX executa uma soma de verificação em pacotes de saída e verifica a soma de verificação de pacotes de entrada.                                                          |
+| IPX \_ CHECKSUM    | Bool | Desligar                             | Quando definido, o IPX executa uma soma de verificação em pacotes de saída e verifica a soma de verificação de pacotes de entrada.                                                          |
 | \_TXPKTSIZE IPX   | INT  | Tamanho da mídia para um máximo de 1466 | Define o tamanho máximo de datagrama de envio. Esse tamanho não inclui o cabeçalho IPX ou todos os cabeçalhos de mídia que também podem ser usados. Pode ser aumentado para o tamanho da mídia.    |
 | \_RXPKTSIZE IPX   | INT  | Tamanho da mídia para um máximo de 1466 | Define o tamanho máximo de datagramas de recebimento. Esse tamanho não inclui o cabeçalho IPX ou todos os cabeçalhos de mídia que também podem ser usados. Pode ser aumentado para o tamanho da mídia. |
 | \_TXMEDIASIZE IPX | INT  | Placa principal                   | Retorna o tamanho da mídia de envio que define um limite superior para o tamanho do datagrama.                                                                                       |
@@ -89,7 +89,7 @@ As opções de soquete **\_ IPX NSPROTO** a seguir foram definidas no Windows so
 
  
 
-As opções de soquete **NSPROTO \_ SPX** a seguir foram definidas no Windows sockets 2 Protocol-Specific anexo, mas não são implementadas no Windows pelo protocolo IPX/SPX do Windows.
+as opções de soquete **NSPROTO \_ SPX** a seguir foram definidas no Windows sockets 2 Protocol-Specific anexo, mas não são implementadas em Windows pelo protocolo Windows IPX/SPX.
 
 *nível* **=** do **NSPROTO \_ SPX**
 

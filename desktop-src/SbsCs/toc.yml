@@ -23,11 +23,11 @@
           items:
             - name: Configuração padrão
               href: default-configuration.md
-            - name: Configuração do Publicador
+            - name: Publisher Configuração
               href: publisher-configuration.md
             - name: Configuração por aplicativo
               href: per-application-configuration.md
-            - name: Configuração por aplicativo no Windows XP
+            - name: configuração por aplicativo no Windows XP
               href: per-application-configuration-on-windows-xp.md
         - name: Contextos de ativação
           href: activation-contexts.md
@@ -67,7 +67,7 @@
               href: searching-for-assemblies.md
             - name: Pesquisando arquivos de assembly
               href: searching-for-assembly-files.md
-            - name: Criando classes lado a lado do Windows
+            - name: criando Classes de Windows lado a lado
               href: creating-side-by-side-windows-classes.md
             - name: Criando Registration-Free objetos COM
               href: creating-registration-free-com-objects.md
@@ -98,7 +98,7 @@
           href: should-you-provide-a-shared-component-as-a-side-by-side-assembly.md
         - name: Criando uma DLL para um assembly lado a lado
           href: authoring-a-dll-for-a-side-by-side-assembly.md
-        - name: Criação de armazenamento de estado para assemblies lado a lado
+        - name: Armazenamento de estado de criação para Assemblies lado a lado
           href: authoring-state-storage-for-side-by-side-assemblies.md
     - name: Referência de assemblies lado a lado
       href: side-by-side-assemblies-reference.md
@@ -178,13 +178,13 @@
               href: application-manifests.md
             - name: Arquivos de configuração de aplicativo
               href: application-configuration-files.md
-            - name: Arquivos de configuração do Publicador
+            - name: Publisher Arquivos de configuração
               href: publisher-configuration-files.md
             - name: Esquema do arquivo de manifesto
               href: manifest-file-schema.md
             - name: Esquema do arquivo de configuração de aplicativo
               href: application-configuration-file-schema.md
-            - name: Esquema do arquivo de configuração do Publicador
+            - name: Publisher Esquema do arquivo de configuração
               href: publisher-configuration-file-schema.md
         - name: Referência de contexto de ativação
           href: activation-context-reference.md
@@ -246,7 +246,7 @@
               href: mt-exe.md
             - name: Pktextract.exe
               href: pktextract-exe.md
-        - name: Objeto Microsoft. Windows. ActCtx
+        - name: O. Windows. Objeto ActCtx
           href: microsoft-windows-actctx-object.md
           items:
             - name: Propriedade de manifesto

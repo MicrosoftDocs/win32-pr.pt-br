@@ -41,7 +41,7 @@ CUSTOMVERTEX Vertices[] =
 
 
 
-O exemplo de código abaixo mostra como renderizar uma faixa de linha no Direct3D 9 usando [**IDirect3DDevice9::D rawPrimitive.**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-drawprimitive)
+O exemplo de código abaixo mostra como renderizar uma faixa de linha no Direct3D 9 usando [**IDirect3DDevice9::D rawprimitive**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-drawprimitive) .
 
 
 ```

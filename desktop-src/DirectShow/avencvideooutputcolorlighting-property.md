@@ -1,21 +1,21 @@
 ---
-description: Especifica as condições de iluminação pretendidas para exibir o vídeo codificado.
+description: Especifica as condições de iluminação pretendido para exibir o vídeo codificado.
 ms.assetid: 67b69d02-db5d-474c-9df4-146c5283d76e
-title: Propriedade AVEncVideoOutputColorLighting (Codecapi. h)
+title: Propriedade AVEncVideoOutputColorLighting (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 98b3c9ae40e35de92028001b7e5ad74a3376747f
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 0216d8d075050a31e5aa1a6225bd46ce6295d2f41658f88526573a3929b5c570
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104370139"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119274906"
 ---
 # <a name="avencvideooutputcolorlighting-property"></a>Propriedade AVEncVideoOutputColorLighting
 
-Especifica as condições de iluminação pretendidas para exibir o vídeo codificado.
+Especifica as condições de iluminação pretendido para exibir o vídeo codificado.
 
-Esta propriedade é de leitura/gravação.
+Essa propriedade é leitura/gravação.
 
 ## <a name="data-type"></a>Tipo de dados
 
@@ -27,7 +27,7 @@ Esta propriedade é de leitura/gravação.
 
 ## <a name="property-value"></a>Valor da propriedade
 
-O valor dessa propriedade é um membro da enumeração [**eAVEncVideoColorLighting**](/windows/desktop/api/codecapi/ne-codecapi-eavencvideocolorlighting) .
+O valor dessa propriedade é um membro da enumeração [**eAVEncVideoColorLighting.**](/windows/desktop/api/codecapi/ne-codecapi-eavencvideocolorlighting)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -35,9 +35,9 @@ O valor dessa propriedade é um membro da enumeração [**eAVEncVideoColorLighti
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Aplicativos do Windows 2000 Professional \[ Desktop aplicativos \| UWP\]<br/>                     |
-| Servidor mínimo com suporte<br/> | Aplicativos da área de trabalho do Windows 2000 Server aplicativos \[ \| UWP\]<br/>                           |
-| parâmetro<br/>                   | <dl> <dt>Codecapi. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 2000 Professional \[ aplicativos UWP da área de \| trabalho\]<br/>                     |
+| Servidor mínimo com suporte<br/> | Windows aplicativos da área de trabalho do servidor 2000 \[ \| aplicativos UWP\]<br/>                           |
+| parâmetro<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
@@ -45,10 +45,10 @@ O valor dessa propriedade é um membro da enumeração [**eAVEncVideoColorLighti
 
 <dl> <dt>
 
-[Propriedades da API do codec](codec-api-properties.md)
+[Propriedades da API do Codec](codec-api-properties.md)
 </dt> <dt>
 
-[**Interface ICodecAPI**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)
+[**ICodecAPI Interface**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)
 </dt> </dl>
 
  

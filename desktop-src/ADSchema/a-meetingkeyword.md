@@ -35,7 +35,7 @@ Uma palavra-chave que é usada para ajudar a encontrar uma reunião.
 | Frequência de atualização  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.568                      |
 | System-ID-GUID    | 11b6cc7f-48c4-11d1-a9c3-0000f80367c1        |
-| Sintaxe            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
 
 
 
@@ -120,10 +120,10 @@ Uma palavra-chave que é usada para ajudar a encontrar uma reunião.
 | ID do link                | \-                                      |
 | MAPI-Id                | \-                                      |
 | System-Only            | Falso                                   |
-| Tem valor único       | Falso                                   |
+| É de valor único       | Falso                                   |
 | É indexado             | Falso                                   |
-| No Catálogo Global      | Falso                                   |
-| Descritor de segurança NT | O:BAG:BAD:S:                            |
+| No catálogo global      | Falso                                   |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |
@@ -141,10 +141,10 @@ Uma palavra-chave que é usada para ajudar a encontrar uma reunião.
 | ID do link                | \-                                      |
 | MAPI-Id                | \-                                      |
 | System-Only            | Falso                                   |
-| Tem valor único       | Falso                                   |
+| É de valor único       | Falso                                   |
 | É indexado             | Falso                                   |
-| No Catálogo Global      | Falso                                   |
-| Descritor de segurança NT | O:BAG:BAD:S:                            |
+| No catálogo global      | Falso                                   |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |
@@ -162,10 +162,10 @@ Uma palavra-chave que é usada para ajudar a encontrar uma reunião.
 | ID do link                | \-                                      |
 | MAPI-Id                | \-                                      |
 | System-Only            | Falso                                   |
-| Tem valor único       | Falso                                   |
+| É de valor único       | Falso                                   |
 | É indexado             | Falso                                   |
-| No Catálogo Global      | Falso                                   |
-| Descritor de segurança NT | O:BAG:BAD:S:                            |
+| No catálogo global      | Falso                                   |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |

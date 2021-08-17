@@ -5,12 +5,12 @@ ms.tgt_platform: multiple
 title: Acessando classes de desempenho de WMI pré-instalado
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0265f9b4008913a463545ed03cd6f1025b58ef5a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 656c3434d2f20bd73ae9ff5273f7e67439fc6caa01ac9ee5bf0283850e64b34a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105781370"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119131889"
 ---
 # <a name="accessing-wmi-preinstalled-performance-classes"></a>Acessando classes de desempenho de WMI pré-instalado
 

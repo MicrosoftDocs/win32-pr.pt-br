@@ -1,7 +1,7 @@
 ---
-description: A função InstallWiaDevice instala um Windows WIA (Aquisição de Imagem) como dispositivo enumerado como raiz. Ele poderá abrir um aviso de segurança se qualquer arquivo ou coinstalador de instalação não for assinado digitalmente e confiável.
+description: a função InstallWiaDevice instala um dispositivo de aquisição de imagem Windows (WIA) como dispositivo enumerado por raiz. Ele poderá avisar um aviso de segurança se qualquer arquivo de instalação ou o instalador não for assinado digitalmente e confiável.
 ms.assetid: c7de27f5-5994-4fce-a6ec-6e7cfae2e591
-title: Função InstallWiaDevice (Wia.h)
+title: Função InstallWiaDevice (WIA. h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -23,7 +23,7 @@ ms.locfileid: "118965835"
 ---
 # <a name="installwiadevice-function"></a>Função InstallWiaDevice
 
-A **função InstallWiaDevice** instala um Windows WIA (Aquisição de Imagem) como dispositivo enumerado como raiz. Ele poderá abrir um aviso de segurança se qualquer arquivo ou coinstalador de instalação não for assinado digitalmente e confiável.
+a função **InstallWiaDevice** instala um dispositivo de aquisição de imagem Windows (WIA) como dispositivo enumerado por raiz. Ele poderá avisar um aviso de segurança se qualquer arquivo de instalação ou o instalador não for assinado digitalmente e confiável.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,12 +40,12 @@ DWORD WINAPI InstallWiaDevice(
 
 <dl> <dt>
 
-*pWiaDeviceInstall* \[ Em\]
+*pWiaDeviceInstall* \[ no\]
 </dt> <dd>
 
 Tipo: **PWIADEVICEINSTALL \***
 
-Ponteiro para uma estrutura WIADEVICEINSTALL. O *membro szFriendlyName* da estrutura deve ser definido como o dispositivo FriendlyName real.
+Ponteiro para uma estrutura WIADEVICEINSTALL. O membro *szFriendlyName* da estrutura deve ser definido como o dispositivo amigável como real.
 
 </dd> </dl>
 
@@ -53,7 +53,7 @@ Ponteiro para uma estrutura WIADEVICEINSTALL. O *membro szFriendlyName* da estru
 
 Tipo: **DWORD**
 
-Se a função for bem-sucedida, o valor de retorno será ERROR \_ SUCCESS.
+Se a função for bem-sucedida, o valor de retorno será \_ êxito no erro.
 
 Se a função falhar, ela retornará um código de erro Win32.
 
@@ -63,10 +63,10 @@ Se a função falhar, ela retornará um código de erro Win32.
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                         |
-| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                   |
-| Cabeçalho<br/>                   | <dl> <dt>Wia.h</dt> </dl>       |
-| Biblioteca<br/>                  | <dl> <dt>Wiaguid.lib</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                         |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                   |
+| Cabeçalho<br/>                   | <dl> <dt>WIA. h</dt> </dl>       |
+| Biblioteca<br/>                  | <dl> <dt>Wiaguid. lib</dt> </dl> |
 
 
 

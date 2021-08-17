@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre: método DateTimeColumnValue. GetValueFromBytes'
-title: Método DateTimeColumnValue. GetValueFromBytes
+description: 'Saiba mais sobre: Método DateTimeColumnValue.GetValueFromBytes'
+title: Método DateTimeColumnValue.GetValueFromBytes
 TOCTitle: 'GetValueFromBytes method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.DateTimeColumnValue.GetValueFromBytes(System.Byte[],System.Int32,System.Int32,System.Int32)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.datetimecolumnvalue.getvaluefrombytes(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 0b30acf865a31c7dcaccffab0d156eacbb0e59ce
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 88ab0291e21839ccb666a3d9343a79787a5dad48c8ab8debbd1aafd17a8ab573
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103663576"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119117526"
 ---
-# <a name="datetimecolumnvaluegetvaluefrombytes-method"></a>Método DateTimeColumnValue. GetValueFromBytes
+# <a name="datetimecolumnvaluegetvaluefrombytes-method"></a>Método DateTimeColumnValue.GetValueFromBytes
 
-Dados obtidos recuperados do ESENT, decodifique os dados e defina o valor no objeto Columnvalue.
+Dados recuperados do ESENT, decodificar os dados e definir o valor no objeto ColumnValue.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -69,31 +69,31 @@ protected override void GetValueFromBytes(
 
 #### <a name="parameters"></a>Parâmetros
 
-  - value  
-    Escreva \[\]  
+  - valor  
+    Tipo: \[\]  
     
     Uma matriz de bytes.
 
 <!-- end list -->
 
   - startIndex  
-    Tipo: [System. Int32](/dotnet/api/system.int32)  
+    Tipo: [System.Int32](/dotnet/api/system.int32)  
     
     A posição inicial dentro dos bytes.
 
 <!-- end list -->
 
   - count  
-    Tipo: [System. Int32](/dotnet/api/system.int32)  
+    Tipo: [System.Int32](/dotnet/api/system.int32)  
     
     O número de bytes a serem decodificados.
 
 <!-- end list -->
 
-  - erra  
-    Tipo: [System. Int32](/dotnet/api/system.int32)  
+  - Err  
+    Tipo: [System.Int32](/dotnet/api/system.int32)  
     
-    O erro retornado de ESENT.
+    O erro retornado do ESENT.
 
 ## <a name="see-also"></a>Confira também
 
@@ -101,6 +101,6 @@ protected override void GetValueFromBytes(
 
 [Classe DateTimeColumnValue](./datetimecolumnvalue-class.md)
 
-[Membros do DateTimeColumnValue](./datetimecolumnvalue-members.md)
+[Membros DateTimeColumnValue](./datetimecolumnvalue-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

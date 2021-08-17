@@ -33,10 +33,10 @@ ms.locfileid: "118763850"
 ---
 # <a name="jet_recposdeepclone-method"></a>JET_RECPOS. Método DeepClone
 
-Retorna uma cópia profunda do objeto.
+Retorna uma cópia profunda do objeto .
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -56,19 +56,19 @@ public JET_RECPOS DeepClone()
 
 #### <a name="return-value"></a>Valor retornado
 
-Tipo: [Microsoft.ISAM.ESENT.Interop.JET_RECPOS](./jet-recpos-class.md)  
+Tipo: [Microsoft.Isam.Esent.Interop.JET_RECPOS](./jet-recpos-class.md)  
 Uma cópia profunda do objeto.  
 
 #### <a name="implements"></a>Implementações
 
-[IDeepCloneable \<T\> . DeepClone()](./ideepcloneable-t-.deepclone-method.md)  
+[IDeepCloneable. \<T\> DeepClone()](./ideepcloneable-t-.deepclone-method.md)  
 
 ## <a name="see-also"></a>Confira também
 
 #### <a name="reference"></a>Referência
 
-[Classe JET_RECPOS](./jet-recpos-class.md)
+[JET_RECPOS classe](./jet-recpos-class.md)
 
-[Membros do JET_RECPOS](./jet-recpos-members.md)
+[JET_RECPOS membros](./jet-recpos-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

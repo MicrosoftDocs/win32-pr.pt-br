@@ -13,7 +13,7 @@ ms.locfileid: "118749558"
 ---
 # <a name="iagentnotifysinkexhelpcomplete"></a>IAgentNotifySinkEx::HelpComplete
 
-\[O Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
+\[O Microsoft Agent foi preterido a partir Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
 
 ``` syntax
 HRESULT HelpComplete(

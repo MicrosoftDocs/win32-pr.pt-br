@@ -1,5 +1,5 @@
 ---
-description: 'Saiba mais sobre: estrutura de JET_ENUMCOLUMN'
+description: 'Saiba mais sobre: estrutura JET_ENUMCOLUMN dados'
 title: Estrutura JET_ENUMCOLUMN
 TOCTitle: JET_ENUMCOLUMN Structure
 ms:assetid: f8f512fd-5fcf-47ed-a5db-2fb3bd76c2d7
@@ -29,7 +29,7 @@ _**Aplica-se a:** Windows | Windows Servidor_
 
 ## <a name="jet_enumcolumn-structure"></a>Estrutura JET_ENUMCOLUMN
 
-A estrutura de **JET_ENUMCOLUMN** enumera os valores de coluna de um registro quando a função [JetEnumerateColumns](./jetenumeratecolumns-function.md) é usada. [JetEnumerateColumns](./jetenumeratecolumns-function.md) retorna uma matriz de estruturas de **JET_ENUMCOLUMN** . A matriz é retornada na memória que é alocada usando o retorno de chamada compatível com [realocação](/cpp/c-runtime-library/reference/realloc?view=vs-2019) que foi fornecido para essa API.
+A **JET_ENUMCOLUMN** enumera os valores de coluna de um registro quando a [função JetEnumerateColumns](./jetenumeratecolumns-function.md) é usada. [JetEnumerateColumns retorna](./jetenumeratecolumns-function.md) uma matriz de **JET_ENUMCOLUMN** estruturas. A matriz é retornada na memória alocada usando o retorno de chamada compatível com [realocação](/cpp/c-runtime-library/reference/realloc?view=vs-2019) que foi fornecido para essa API.
 
 ```cpp
     typedef struct {
@@ -50,11 +50,11 @@ A estrutura de **JET_ENUMCOLUMN** enumera os valores de coluna de um registro qu
 
 ### <a name="members"></a>Membros
 
-**columnid**
+**Columnid**
 
 A ID da coluna que foi enumerada.
 
-**erra**
+**Err**
 
 O código de status da coluna que resulta da enumeração da coluna.
 
@@ -80,19 +80,19 @@ O código de status da coluna que resulta da enumeração da coluna.
 </tr>
 <tr class="odd">
 <td><p>JET_wrnColumnNull</p></td>
-<td><p>Todos os valores desta coluna são nulos.</p></td>
+<td><p>Todos os valores dessa coluna são NULL.</p></td>
 </tr>
 <tr class="even">
 <td><p>JET_wrnColumnPresent</p></td>
-<td><p>JET_bitEnumeratePresenceOnly foi especificado e pelo menos um valor de coluna não nulo teria sido retornado para esta coluna.</p></td>
+<td><p>JET_bitEnumeratePresenceOnly foi especificado e pelo menos um valor de coluna não NULL teria sido retornado para essa coluna.</p></td>
 </tr>
 <tr class="odd">
 <td><p>JET_wrnColumnSingleValue</p></td>
-<td><p>JET_bitEnumerateCompressOutput foi especificado e exatamente um valor de coluna não nulo foi retornado para esta coluna. Como resultado, a forma compactada de <strong>JET_ENUMCOLUMN</strong> foi retornada. Consulte <strong>JET_ENUMCOLUMN</strong> para obter mais informações.</p></td>
+<td><p>JET_bitEnumerateCompressOutput foi especificado e exatamente um valor de coluna não NULL foi retornado para essa coluna. Como resultado, a forma compactada <strong>de JET_ENUMCOLUMN</strong> foi retornada. Consulte <strong>JET_ENUMCOLUMN</strong> para obter mais informações.</p></td>
 </tr>
 <tr class="even">
 <td><p>JET_wrnColumnSkipped</p></td>
-<td><p>A ID da coluna no struct <a href="gg269251(v=exchg.10).md">JET_ENUMCOLUMNID</a> correspondente a este <strong>JET_ENUMCOLUMN</strong> struct era zero.</p></td>
+<td><p>A ID da coluna <a href="gg269251(v=exchg.10).md">no JET_ENUMCOLUMNID</a> struct correspondente a <strong>esse JET_ENUMCOLUMN</strong> struct era zero.</p></td>
 </tr>
 </tbody>
 </table>
@@ -100,39 +100,39 @@ O código de status da coluna que resulta da enumeração da coluna.
 
 **cEnumColumnValue**
 
-A matriz de valores de coluna que foi enumerada para a coluna. O buffer de saída é retornado na memória que foi alocada usando o retorno de chamada compatível com [realocação](/cpp/c-runtime-library/reference/realloc?view=vs-2019) que foi fornecido para [JetEnumerateColumns](./jetenumeratecolumns-function.md).
+A matriz de valores de coluna que foi enumerada para a coluna. O buffer de saída é retornado na memória que foi alocada usando o retorno de chamada compatível com [realloc](/cpp/c-runtime-library/reference/realloc?view=vs-2019) fornecido para [JetEnumerateColumns.](./jetenumeratecolumns-function.md)
 
-Esse buffer de saída é usado quando o código de status da coluna não é igual a JET_wrnColumnSingleValue. Para obter mais informações, consulte [JetEnumerateColumns](./jetenumeratecolumns-function.md).
+Esse buffer de saída é usado quando o código de status da coluna não é igual a JET_wrnColumnSingleValue. Para obter mais informações, [consulte JetEnumerateColumns](./jetenumeratecolumns-function.md).
 
-Isso será retornado se "Err \! = JET_wrnColumnSingleValue".
+Isso será retornado se "err \! = JET_wrnColumnSingleValue".
 
 **rgEnumColumnValue**
 
-A matriz de valores de coluna que foi enumerada para a coluna. O buffer de saída é retornado na memória que foi alocada usando o retorno de chamada compatível com [realocação](/cpp/c-runtime-library/reference/realloc?view=vs-2019) que foi fornecido para [JetEnumerateColumns](./jetenumeratecolumns-function.md).
+A matriz de valores de coluna que foi enumerada para a coluna. O buffer de saída é retornado na memória que foi alocada usando o retorno de chamada compatível com [realloc](/cpp/c-runtime-library/reference/realloc?view=vs-2019) fornecido para [JetEnumerateColumns.](./jetenumeratecolumns-function.md)
 
-Esse buffer de saída é usado quando o código de status da coluna não é igual a JET_wrnColumnSingleValue. Para obter mais informações, consulte [JetEnumerateColumns](./jetenumeratecolumns-function.md).
+Esse buffer de saída é usado quando o código de status da coluna não é igual a JET_wrnColumnSingleValue. Para obter mais informações, [consulte JetEnumerateColumns](./jetenumeratecolumns-function.md).
 
-Isso será retornado se "Err \! = JET_wrnColumnSingleValue".
+Isso será retornado se "err \! = JET_wrnColumnSingleValue".
 
 **cbData**
 
 O valor da coluna que foi enumerado para a coluna.
 
-O buffer de saída é retornado na memória que foi alocada usando o retorno de chamada compatível com [realocação](/cpp/c-runtime-library/reference/realloc?view=vs-2019) que foi fornecido para [JetEnumerateColumns](./jetenumeratecolumns-function.md).
+O buffer de saída é retornado na memória que foi alocada usando o retorno de chamada compatível com [realloc](/cpp/c-runtime-library/reference/realloc?view=vs-2019) fornecido para [JetEnumerateColumns.](./jetenumeratecolumns-function.md)
 
-Esse buffer de saída só é usado quando o código de status da coluna é JET_wrnColumnSingleValue. Para obter mais informações, consulte [JetEnumerateColumns](./jetenumeratecolumns-function.md).
+Esse buffer de saída só é usado quando o código de status da coluna é JET_wrnColumnSingleValue. Para obter mais informações, [consulte JetEnumerateColumns](./jetenumeratecolumns-function.md).
 
-Isso será retornado se "Err = = JET_wrnColumnSingleValue".
+Isso será retornado se "err == JET_wrnColumnSingleValue".
 
-**pvData**
+**Pvdata**
 
 O valor da coluna que foi enumerado para a coluna.
 
-O buffer de saída é retornado na memória que foi alocada usando o retorno de chamada compatível com [realocação](/cpp/c-runtime-library/reference/realloc?view=vs-2019) que foi fornecido para [JetEnumerateColumns](./jetenumeratecolumns-function.md).
+O buffer de saída é retornado na memória que foi alocada usando o retorno de chamada compatível com [realloc](/cpp/c-runtime-library/reference/realloc?view=vs-2019) fornecido para [JetEnumerateColumns.](./jetenumeratecolumns-function.md)
 
-Esse buffer de saída só é usado quando o código de status da coluna é JET_wrnColumnSingleValue. Para obter mais informações, consulte [JetEnumerateColumns](./jetenumeratecolumns-function.md).
+Esse buffer de saída só é usado quando o código de status da coluna é JET_wrnColumnSingleValue. Para obter mais informações, [consulte JetEnumerateColumns](./jetenumeratecolumns-function.md).
 
-Isso será retornado se "Err = = JET_wrnColumnSingleValue".
+Isso será retornado se "err == JET_wrnColumnSingleValue".
 
 ### <a name="requirements"></a>Requisitos
 
@@ -144,15 +144,15 @@ Isso será retornado se "Err = = JET_wrnColumnSingleValue".
 <tbody>
 <tr class="odd">
 <td><p><strong>Cliente</strong></p></td>
-<td><p>requer o Windows Vista, Windows XP ou Windows 2000 Professional.</p></td>
+<td><p>Requer Windows Vista, Windows XP ou Windows 2000 Professional.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Servidor</strong></p></td>
-<td><p>requer o Windows server 2008, Windows server 2003 ou Windows servidor 2000.</p></td>
+<td><p>Requer Windows Server 2008, Windows Server 2003 ou Windows 2000 Server.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Cabeçalho</strong></p></td>
-<td><p>Declarado em ESENT. h.</p></td>
+<td><p>Declarado em Esent.h.</p></td>
 </tr>
 </tbody>
 </table>

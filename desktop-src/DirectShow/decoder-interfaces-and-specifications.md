@@ -4,12 +4,12 @@ ms.assetid: 51e00392-8557-4c79-a687-434ba993c1cb
 title: Interfaces e especificações do decodificador
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 995659b9689a1498bbf0dbf8fb7961f2e1bd8907
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 9c0a98d0dec2cfa05e4888c5dedcdd556ee9f0c98487613a51140c71db5b4733
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103920059"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118953165"
 ---
 # <a name="decoder-interfaces-and-specifications"></a>Interfaces e especificações do decodificador
 

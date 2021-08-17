@@ -1,5 +1,5 @@
 ---
-description: O ICE36 valida que cada ícone na tabela Icon está listado pelo menos uma vez na propriedade ARPPRODUCTICON ou nas tabelas Classe, ProgId ou Atalho.
+description: ICE36 valida que cada ícone na tabela de ícones é listado pelo menos uma vez na propriedade ARPPRODUCTICON ou nas tabelas de classe, ProgId ou atalho.
 ms.assetid: d502c0a9-17e5-467a-8b02-8b254e77b96b
 title: ICE36
 ms.topic: article
@@ -13,15 +13,15 @@ ms.locfileid: "118635299"
 ---
 # <a name="ice36"></a>ICE36
 
-ICE36 valida que cada ícone na tabela Ícone está listado pelo menos uma vez na propriedade [**ARPPRODUCTICON**](arpproducticon.md) ou nas tabelas [Classe](class-table.md), [ProgId](progid-table.md)ou [Atalho.](shortcut-table.md)
+ICE36 valida que cada ícone na tabela de ícones é listado pelo menos uma vez na propriedade [**ARPPRODUCTICON**](arpproducticon.md) ou nas tabelas de [classe](class-table.md), [ProgID](progid-table.md)ou [atalho](shortcut-table.md) .
 
-Durante o anúncio, o instalador instala todos os ícones listados na tabela [Ícone](icon-table.md) no computador do usuário. Ter ícones não .msi na tabela Ícone não impede que a instalação seja executado, no entanto, ele aumenta desnecessariamente o tamanho do arquivo .msi e o tempo e o espaço necessários para anunciar um recurso.
+Durante o anúncio, o instalador instala todos os ícones listados na [tabela de ícones](icon-table.md) no computador do usuário. Ter ícones não utilizados na tabela de ícones não impede que a instalação seja executada, no entanto, ela não aumenta desnecessariamente o tamanho do arquivo de .msi e a hora e o espaço necessários para anunciar um recurso.
 
-Se um ícone não for referenciado na propriedade ou tabela e não houver nenhuma interface do usuário fornecida para criar uma referência em tempo de execução, você deverá remover o ícone para obter um melhor desempenho.
+Se um ícone não for referenciado na propriedade ou tabela e não houver interface do usuário fornecida para criar uma referência em tempo de execução, você deverá remover o ícone para obter um melhor desempenho.
 
-## <a name="result"></a>Result
+## <a name="result"></a>Resultado
 
-ICE36 posta uma mensagem se houver um ícone na tabela Icon que não seja referenciado nas tabelas [Classe](class-table.md), [ProgId](progid-table.md)ou [Atalho](shortcut-table.md) e se não houver nenhuma interface do usuário fornecida para criar essa referência em tempo de run.
+ICE36 posta uma mensagem se houver um ícone na tabela de ícones que não é referenciado nas tabelas de [classe](class-table.md), [ProgID](progid-table.md)ou [atalho](shortcut-table.md) e se não houver nenhuma interface do usuário fornecida para criar essa referência em tempo de execução.
 
 ## <a name="example"></a>Exemplo
 
@@ -35,7 +35,7 @@ Icon Bloat. Icon Icon4 is not used in the Class, Shortcut, or ProgID table. This
 
 
 
-| Name  | Dados     |
+| Nome  | Dados     |
 |-------|----------|
 | Icon1 | Control1 |
 | Icon2 | Control2 |
@@ -58,7 +58,7 @@ Icon Bloat. Icon Icon4 is not used in the Class, Shortcut, or ProgID table. This
 
  
 
-[Tabela de Classe](class-table.md) (parcial)
+[Tabela de classes](class-table.md) (parcial)
 
 
 
@@ -76,7 +76,7 @@ Icon Bloat. Icon Icon4 is not used in the Class, Shortcut, or ProgID table. This
 
 | Atalho  | Ícone\_ |
 |-----------|--------|
-| Atalho1 | Icon2  |
+| Shortcut1 | Icon2  |
 
 
 

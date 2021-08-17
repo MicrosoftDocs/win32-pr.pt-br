@@ -23,7 +23,7 @@ Não se aplica.
 
 ## <a name="visual-basic"></a>Visual Basic
 
-O seguinte fragmento Visual Basic código da Microsoft ilustra o uso de um serviço Web XML no modo WKO.
+O fragmento de código Visual Basic Microsoft a seguir ilustra o uso de um serviço Web XML no modo WKO.
 
 
 ```VB

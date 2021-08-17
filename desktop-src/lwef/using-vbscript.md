@@ -13,9 +13,9 @@ ms.locfileid: "118975496"
 ---
 # <a name="using-vbscript"></a>Usando o VBScript
 
-\[o Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
+\[O Microsoft Agent foi preterido a partir Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
 
-O VBScript é uma linguagem de programação incluída no Microsoft Internet Explorer. Para outros navegadores, entre em contato com seu fornecedor sobre o suporte. O VBScript 2,0 (ou posterior) é recomendado para uso com o Agent. Embora as versões anteriores do VBScript possam funcionar com o Agent, elas não têm determinadas funções que talvez você queira usar. Você pode baixar o VBScript 2,0 e obter mais informações sobre o VBScript no site de downloads da Microsoft e no site do Microsoft VBScript.
+O VBScript é uma linguagem de programação incluída no Microsoft Internet Explorer. Para outros navegadores, entre em contato com o fornecedor sobre o suporte. O VBScript 2.0 (ou posterior) é recomendado para uso com o Agent. Embora as versões anteriores do VBScript possam funcionar com o Agent, elas não têm determinadas funções que talvez você queira usar. Você pode baixar o VBScript 2.0 e obter mais informações sobre o VBScript no site downloads da Microsoft e no site do Microsoft VBScript.
 
 Para programar o Microsoft Agent do VBScript, use o HTML <SCRIPT> tags. To access the programming interface, use the name of control you assign in the <OBJECT> tag, followed by the subobject (if any), the name of the method or property, and any parameters or values supported by the method or property:
 
@@ -40,9 +40,9 @@ statements
 </SCRIPT>
 ```
 
-Embora o Microsoft Internet Explorer ofereça suporte a essa última sintaxe, nem todos os navegadores fazem. Para compatibilidade, use apenas a sintaxe anterior para eventos.
+Embora o Microsoft Internet Explorer seja compatível com essa última sintaxe, nem todos os navegadores o fazem. Para compatibilidade, use apenas a sintaxe anterior para eventos.
 
-Com o VBScript (2,0 ou posterior), você pode verificar se o Microsoft Agent está instalado tentando criar o objeto e verificando se ele existe. O exemplo a seguir demonstra como verificar o controle do agente sem disparar um download automático do controle (como aconteceria se você incluísse uma <OBJECT> marca para o controle na página):
+Com o VBScript (2.0 ou posterior), você pode verificar se o Microsoft Agent está instalado tentando criar o objeto e verificando se ele existe. O exemplo a seguir demonstra como verificar o controle Agent sem disparar um download automático do controle (como ocorreria se você incluísse uma marca para o controle <OBJECT> na página):
 
 ``` syntax
 <!-- WARNING - This code requires VBScript 2.0.

@@ -37,7 +37,7 @@ Endereço de uma variável que recebe o número de contexto do tópico de ajuda 
 Se você tiver criado um arquivo de Ajuda Windows para seu aplicativo e tiver definido a propriedade [**HelpFile**](helpfile-property.md) do caractere para esse arquivo, o Microsoft Agent chamará automaticamente a Ajuda quando [**HelpModeOn**](helpmodeon-property.md) estiver definido como **True** e o usuário selecionar o comando. Se houver um número de contexto no [**HelpContextID,**](helpcontextid-property-com.md)o Agent chamará a Ajuda e procurará o tópico identificado pelo número de contexto atual. O número de contexto atual é o valor **de HelpContextID** para o comando.
 
 > [!Note]  
-> A criação de um arquivo de Ajuda requer o Compilador Windows Ajuda da Microsoft.
+> A criação de um arquivo de Ajuda requer o Microsoft Windows Help Compiler.
 
  
 

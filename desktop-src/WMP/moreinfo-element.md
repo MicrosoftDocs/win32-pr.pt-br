@@ -3,7 +3,7 @@ title: Elemento MOREINFO
 description: O elemento MOREINFO especifica uma URL para um site, endereço de email ou comando de script associado a um show, clip ou banner.
 ms.assetid: b817ef1d-4ca0-45f4-942b-695eaf537110
 keywords:
-- Elemento MOREINFO do Windows Media Player
+- Windows Media Player do elemento MOREINFO
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: efc54fe9745566ec7eaa87b7f0f4645b07a055f0
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 925783b6bd48fbc8b944d7b8fd2a2b94a9954c7036114145b99b015b90cbb6d4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105772970"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119134949"
 ---
 # <a name="moreinfo-element"></a>Elemento MOREINFO
 
@@ -48,7 +48,7 @@ Pode ser uma cadeia de caracteres que contém um nome de janela ou um dos valore
 | Valor    | Descrição                                                                                                              |
 |----------|--------------------------------------------------------------------------------------------------------------------------|
 | \_ficará  | O documento é carregado em uma nova janela do navegador.                                                                              |
-| \_auto-restauração   | O documento é carregado no mesmo quadro que o documento atual que contém o controle do Windows Media Player.                |
+| \_self   | o documento é carregado no mesmo quadro que o documento atual que contém o controle de Windows Media Player.                |
 | \_primária | O documento é carregado no quadro pai imediato do quadro atual ou no quadro atual, se não houver quadro pai. |
 | \_Início    | O documento é carregado na janela completa do navegador, substituindo todos os outros quadros ou documentos.                                  |
 
@@ -83,9 +83,9 @@ Se o atributo **href** especificar uma URL para um site, o navegador será abert
 
 Se o elemento **moreinfo** aparecer dentro de um elemento **ASX** ou **entry** , quando o cursor do mouse for mantido sobre o título do show (para um elemento **ASX** ) ou um clip (para um elemento de **entrada** ), a URL definida no atributo **href** poderá ser selecionada e acessada pelo Windows Media Player.
 
-O atributo de **destino** define o quadro ou a janela em que o navegador irá abrir a página definida pelo atributo **href** . Os valores para esse atributo seguem a sintaxe HTML padrão e as definições. No caso de um controle inserido em uma página da Web, se nenhum atributo de **destino** for definido, a URL carregará a janela atual do navegador e substituirá a página existente, o que significa que o conteúdo parará de ser reproduzido. Portanto, é recomendável que você sempre especifique um atributo de **destino** ao inserir o controle do Windows Media Player em uma página da Web.
+O atributo de **destino** define o quadro ou a janela em que o navegador irá abrir a página definida pelo atributo **href** . Os valores para esse atributo seguem a sintaxe HTML padrão e as definições. No caso de um controle inserido em uma página da Web, se nenhum atributo de **destino** for definido, a URL carregará a janela atual do navegador e substituirá a página existente, o que significa que o conteúdo parará de ser reproduzido. portanto, é recomendável que você sempre especifique um atributo de **destino** ao inserir o controle de Windows Media Player em uma página da web.
 
-Se o metarquivo é aberto no Windows Media Player autônomo, o atributo de **destino** é ignorado e a URL é carregada em uma janela de navegador existente. Se não houver janela do navegador aberta no momento, a URL será carregada em uma nova janela do navegador.
+se o metarquivo é aberto no Windows Media Player autônomo, o atributo de **destino** é ignorado e a URL é carregada em uma janela de navegador existente. Se não houver janela do navegador aberta no momento, a URL será carregada em uma nova janela do navegador.
 
 ## <a name="examples"></a>Exemplos
 
@@ -122,10 +122,10 @@ Se o metarquivo é aberto no Windows Media Player autônomo, o atributo de **des
 
 <dl> <dt>
 
-[**Referência de elementos de metarquivo do Windows Media**](windows-media-metafile-elements-reference.md)
+[**Windows Referência de elementos de metarquivo de mídia**](windows-media-metafile-elements-reference.md)
 </dt> <dt>
 
-[**Referência do metarquivo do Windows Media**](windows-media-metafile-reference.md)
+[**Windows Referência de metarquivo de mídia**](windows-media-metafile-reference.md)
 </dt> </dl>
 
  

@@ -86,7 +86,7 @@ Parte superior
 <thead>
 <tr class="header">
 <th> </th>
-<th>Name</th>
+<th>Nome</th>
 <th>Descrição</th>
 </tr>
 </thead>

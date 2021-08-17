@@ -1,5 +1,5 @@
 ---
-description: MBNProfileExt... \/ \/ Compactação (v4)
+description: MBNProfileExt \/ ... \/ Compactação (v4)
 MS-HAID: WWAN\_profile\_v4.element\_Compression
 MSHAttr:
 - PreferredSiteName:MSDN
@@ -23,11 +23,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118745099"
 ---
-# <a name="span-idwwan_profile_v4element_compressionspanmbnprofileextcompression-v4"></a><span id="WWAN_profile_v4.element_Compression"></span>MBNProfileExt... \/ \/ Compactação (v4)
+# <a name="span-idwwan_profile_v4element_compressionspanmbnprofileextcompression-v4"></a><span id="WWAN_profile_v4.element_Compression"></span>MBNProfileExt \/ ... \/ Compactação (v4)
 
-Especifica se a compactação será usada no link de dados para transferência de dados e de título.
+Especifica se a compactação será usada no link de dados para a transferência de dados e de cabeçalho.
 
-Para obter mais informações, consulte a documentação do elemento [**Compression**](./schema-compression-contexttype-element.md) v1.
+Para obter mais informações, consulte a documentação do elemento de [**compactação**](./schema-compression-contexttype-element.md) v1.
 
 ## <a name="element-hierarchy"></a>Hierarquia de elementos
 
@@ -39,7 +39,7 @@ Para obter mais informações, consulte a documentação do elemento [**Compress
 &nbsp;&nbsp;[\<Context\>](element-1-context.md)  
 &nbsp;&nbsp;&nbsp;&nbsp;**\<Compression\>**
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ``` syntax
 <Compression>
