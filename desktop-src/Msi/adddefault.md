@@ -13,22 +13,22 @@ ms.locfileid: "118639700"
 ---
 # <a name="adddefault-property"></a>Propriedade ADDDEFAULT
 
-O valor da **propriedade ADDDEFAULT** é uma lista de recursos delimitados por vírgulas, que devem ser instalados em sua configuração padrão. Os recursos devem estar presentes na coluna Recurso da Tabela [de Recursos.](feature-table.md) Para instalar todos os recursos em suas configurações padrão, use ADDDEFAULT=ALL na linha de comando.
+O valor da propriedade **ADDDEFAULT** é uma lista de recursos delimitados por vírgulas, que devem ser instalados em sua configuração padrão. Os recursos devem estar presentes na coluna recurso da tabela de [recursos.](feature-table.md) Para instalar todos os recursos em suas configurações padrão, use ADDDEFAULT = todos na linha de comando.
 
-Um recurso listado na propriedade **ADDDEFAULT** é instalado no mesmo estado de instalação como se o usuário solicitava uma instalação sob demanda do recurso. O estado é determinado pelos bits definidos para o recurso na coluna Atributos da Tabela de Recursos [e](feature-table.md)quais bits são definidos para os componentes do recurso na coluna Atributos da Tabela [de Componentes](component-table.md).
+Um recurso listado na propriedade **ADDDEFAULT** é instalado no mesmo estado de instalação como se o usuário solicitasse uma instalação sob demanda do recurso. O estado é determinado pelos bits que são definidos para o recurso na coluna atributos da [tabela de recursos](feature-table.md)e quais bits são definidos para os componentes de recurso na coluna atributos da [tabela de componentes](component-table.md).
 
 ## <a name="remarks"></a>Comentários
 
-Os nomes de recursos são sensíveis a minúsculas.
+Os nomes dos recursos diferenciam maiúsculas de minúsculas.
 
 O instalador sempre avalia as seguintes propriedades na seguinte ordem:
 
 1.  [**ADDLOCAL**](addlocal.md)
-2.  [**Remover**](remove.md)
-3.  [**ADDSOURCE**](addsource.md)
+2.  [**EXCLU**](remove.md)
+3.  [**Addsource**](addsource.md)
 4.  **ADDDEFAULT**
-5.  [**Reinstalar**](reinstall.md)
-6.  [**Anunciar**](advertise.md)
+5.  [**Install**](reinstall.md)
+6.  [**ANUNCI**](advertise.md)
 7.  [**COMPADDLOCAL**](compaddlocal.md)
 8.  [**COMPADDSOURCE**](compaddsource.md)
 9.  [**COMPADDDEFAULT**](compadddefault.md)
@@ -38,10 +38,10 @@ O instalador sempre avalia as seguintes propriedades na seguinte ordem:
 
 Por exemplo:
 
--   Se a linha de comando especificar: ADDLOCAL=ALL, ADDSOURCE = MyFeature, todos os recursos serão definidos primeiro como run-local e, em seguida, **MyFeature** será definido como run-from-source.
--   Se a linha de comando for: ADDSOURCE=ALL, ADDLOCAL=MyFeature, primeiro **MyFeature** será definido como run-local e, em seguida, quando ADDSOURCE=ALL for avaliado, todos os recursos (incluindo **MyFeature**) serão redefinidos para run-from-source.
+-   Se a linha de comando especificar: ADDLOCAL = todos, addsource = MyFeature, todos os recursos serão definidos primeiro como Run-local e **MyFeature** será definido como Run-from-Source.
+-   Se a linha de comando for: addsource = todos, ADDLOCAL = MyFeature, primeiro **MyFeature** estiver definido como Run-local e, quando addsource = All for avaliado, todos os recursos (incluindo **MyFeature**) serão redefinidos para execução-da-source.
 
-O instalador define a propriedade [**Pré-selecionada**](preselected.md) como um valor de "1" durante a retomada de uma instalação suspensa ou quando qualquer uma das propriedades acima é especificada na linha de comando.
+O instalador define a propriedade [**preselecionada**](preselected.md) com um valor de "1" durante a retomada de uma instalação suspensa ou quando qualquer uma das propriedades acima é especificada na linha de comando.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -49,7 +49,7 @@ O instalador define a propriedade [**Pré-selecionada**](preselected.md) como um
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versão<br/> | Windows Instalador 5.0 no Windows Server 2012, Windows 8, Windows Server 2008 R2 ou Windows 7. Windows Instalador 4.0 ou Windows Instalador 4.5 no Windows Server 2008 ou Windows Vista. Windows Instalador no Windows Server 2003 ou Windows XP. Consulte o [Windows instalador Run-Time para](windows-installer-portal.md) obter informações sobre o Windows service pack mínimo exigido por uma versão Windows Installer.<br/> |
+| Versão<br/> | Windows instalador 5,0 em Windows Server 2012, Windows 8, Windows Server 2008 R2 ou Windows 7. Windows Installer 4,0 ou Windows Installer 4,5 no Windows Server 2008 ou Windows Vista. Windows instalador no Windows Server 2003 ou Windows XP. consulte os [requisitos de Run-Time Windows Installer](windows-installer-portal.md) para obter informações sobre o service pack mínimo Windows exigido por uma versão Windows Installer.<br/> |
 
 
 

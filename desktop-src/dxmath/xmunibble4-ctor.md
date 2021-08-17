@@ -56,7 +56,7 @@ Isso só está disponível para desenvolvimento baseado em C++.
 </tr>
 <tr class="even">
 <td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmunibble4-xmunibble4(uint16_t)"><strong>XMUNIBBLE4 (uint16_t)</strong></a></td>
-<td style="text-align: left;">Inicializa uma nova instância de de <code>XMUNIBBLE</code> uma <code>uint16_t</code> variável que contém dados de componente em um formato empacotado. <br/> Esse construtor inicializa uma nova instância de <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmunibble4"><strong>XMUNIBBLE4</strong></a> de uma variável que contém dados de componente <code>uint16_t</code> em um formato empacotado. <br/>
+<td style="text-align: left;">Inicializa uma nova instância de de uma <code>XMUNIBBLE</code> <code>uint16_t</code> variável que contém dados de componente em um formato empacotado. <br/> Esse construtor inicializa uma nova instância de <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmunibble4"><strong>XMUNIBBLE4</strong></a> de uma variável que contém dados de componente <code>uint16_t</code> em um formato empacotado. <br/>
 <blockquote>
 [!Note]<br />
 Esse construtor só está disponível em C++.

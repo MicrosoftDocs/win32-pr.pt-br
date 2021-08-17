@@ -1,10 +1,10 @@
 ---
-title: Habilitando a conta de serviço para acessar as propriedades do SCP
-description: O exemplo de código a seguir define um par de ACEs (entradas de controle de acesso) em um objeto SCP (ponto de conexão de serviço).
+title: Habilitando a conta de serviço para acessar propriedades SCP
+description: O exemplo de código a seguir define um par de ACEs (Entradas de Controle de Acesso) em um objeto SCP (ponto de conexão de serviço).
 ms.assetid: 663dcf55-5f0d-49af-8b51-4c1e35b79ef1
 ms.tgt_platform: multiple
 keywords:
-- Habilitando a conta de serviço para acessar as propriedades do SCP AD
+- Habilitando a conta de serviço para acessar o AD de propriedades SCP
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 260b08d4a7255813e2811c02ebd0e597a518f153db84f35cdb978a44369e5e8c
@@ -14,35 +14,35 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118695305"
 ---
-# <a name="enabling-service-account-to-access-scp-properties"></a>Habilitando a conta de serviço para acessar as propriedades do SCP
+# <a name="enabling-service-account-to-access-scp-properties"></a>Habilitando a conta de serviço para acessar propriedades SCP
 
-O exemplo de código a seguir define um par de ACEs (entradas de controle de acesso) em um objeto SCP (ponto de conexão de serviço). As ACEs concedem acesso de leitura/gravação à conta de usuário ou computador sob a qual a instância de serviço será executada. O instalador do serviço usa um código semelhante ao seguinte para garantir que o serviço possa atualizar suas propriedades em tempo de execução. Se as ACEs semelhantes a essas não estiverem definidas, o serviço não terá acesso às propriedades do SCP.
+O exemplo de código a seguir define um par de ACEs (Entradas de Controle de Acesso) em um objeto SCP (ponto de conexão de serviço). As ACEs concedem acesso de leitura/gravação à conta de usuário ou computador na qual a instância de serviço estará em execução. O instalador de serviço usa código semelhante ao seguinte para garantir que o serviço possa atualizar suas propriedades em tempo de executar. Se ACEs semelhantes a esses não estão definidos, o serviço não terá acesso às propriedades do SCP.
 
-Normalmente, um instalador de serviço definirá essas ACEs depois de criar o objeto SCP. Para obter mais informações e um exemplo de código que cria um SCP e chama essa função, consulte [como os clientes encontram e usam um ponto de conexão de serviço](how-clients-find-and-use-a-service-connection-point.md). Se o serviço for reconfigurado para ser executado em uma conta diferente, as ACEs deverão ser atualizadas. Para ser executado com êxito, este exemplo de código deve ser executado no contexto de segurança de um administrador de domínio.
+Normalmente, um instalador de serviço definirá essas ACEs depois de criar o objeto SCP. Para obter mais informações e um exemplo de código que cria um SCP e chama essa função, consulte Como os clientes encontram e [usam um ponto de conexão de serviço](how-clients-find-and-use-a-service-connection-point.md). Se o serviço for reconfigurado para ser executado em uma conta diferente, as ACEs deverão ser atualizadas. Para ser executado com êxito, este exemplo de código deve ser executado no contexto de segurança de um administrador de domínio.
 
-O primeiro parâmetro da função de exemplo especifica o nome da conta de usuário a ser concedida ao acesso. A função pressupõe que o nome esteja no formato * domínio * **\\** _nome de usuário_ . Se nenhuma conta for especificada, a função assumirá que o serviço usa a conta LocalSystem. Isso significa que a função deve conceder acesso à conta de computador do servidor host no qual o serviço está em execução. Para fazer isso, o exemplo de código chama a função [**GetComputerObjectName**](/windows/desktop/api/secext/nf-secext-getcomputerobjectnamea) para obter o domínio e o nome de usuário do computador local.
+O primeiro parâmetro da função de exemplo especifica o nome da conta de usuário a ser concedida acesso. A função presume que o nome está no formato #Domain* **\\** _UserName._ Se nenhuma conta for especificada, a função assumirá que o serviço usa a conta LocalSystem. Isso significa que a função deve conceder acesso à conta de computador do servidor host no qual o serviço está em execução. Para fazer isso, o exemplo de código chama a [**função GetComputerObjectName**](/windows/desktop/api/secext/nf-secext-getcomputerobjectnamea) para obter o domínio e o nome de usuário do computador local.
 
-O exemplo de código a seguir pode ser modificado para conceder ao serviço acesso completo ao objeto SCP, mas a prática recomendada é conceder apenas os direitos de acesso específicos que o serviço requer em tempo de execução. Nesse caso, a função concede acesso a duas propriedades.
+O exemplo de código a seguir pode ser modificado para conceder ao serviço acesso completo ao objeto SCP, mas a melhor prática é conceder apenas os direitos de acesso específicos que o serviço requer em tempo de executar. Nesse caso, a função concede acesso a duas propriedades.
 
 
 
 | Propriedade                                                              | Descrição                                                          |
 |-----------------------------------------------------------------------|----------------------------------------------------------------------|
 | [**serviceDNSName**](/windows/desktop/ADSchema/a-servicednsname)                       | O nome do servidor host no qual o serviço está em execução.         |
-| [**serviceBindingInformation**](/windows/desktop/ADSchema/a-servicebindinginformation) | Informações de associação privada que o serviço atualiza quando é iniciado. |
+| [**serviceBindingInformation**](/windows/desktop/ADSchema/a-servicebindinginformation) | Informações de associação privada que o serviço atualiza quando ele é iniciado. |
 
 
 
  
 
-Cada propriedade é identificada pelo **schemaIDGUID** da classe **attributeSchema** da propriedade. Cada propriedade no esquema tem seu próprio **schemaIDGUID** exclusivo. O exemplo de código a seguir usa cadeias de caracteres para especificar os GUIDs. As cadeias de caracteres GUID têm o seguinte formato em que cada "X" é substituído por um dígito hexadecimal: {XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX}.
+Cada propriedade é identificada pelo **schemaIDGUID** da classe **attributeSchema da** propriedade. Cada propriedade no esquema tem seu próprio **esquema exclusivoIDGUID.** O exemplo de código a seguir usa cadeias de caracteres para especificar os GUIDs. As cadeias de caracteres GUID têm o seguinte formato, em que cada "X" é substituído por um dígito hexadecimal: {XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX}.
 
-Consulte as páginas de referência do esquema de Active Directory para os valores de **schemaIDGUID** atribuídos às propriedades para conceder ou negar acesso ao.
+Consulte as páginas de referência de esquema do Active Directory para os valores **schemaIDGUID** atribuídos às propriedades às qual conceder ou negar acesso.
 
-O exemplo de código a seguir usa as interfaces [**IADsSecurityDescriptor**](/windows/desktop/api/iads/nn-iads-iadssecuritydescriptor), [**IADsAccessControlList**](/windows/desktop/api/iads/nn-iads-iadsaccesscontrollist)e [**IADsAccessControlEntry**](/windows/desktop/api/iads/nn-iads-iadsaccesscontrolentry) para executar as seguintes operações.
+O exemplo de código a seguir usa as interfaces [**IADsSecurityDescriptor**](/windows/desktop/api/iads/nn-iads-iadssecuritydescriptor), [**IADsAccessControlList**](/windows/desktop/api/iads/nn-iads-iadsaccesscontrollist)e [**IADsAccessControlEntry**](/windows/desktop/api/iads/nn-iads-iadsaccesscontrolentry) para executar as operações a seguir.
 
 1.  Obtenha o descritor de segurança do objeto SCP.
-2.  Defina as ACEs apropriadas na DACL (lista de controle de acesso discricionário) do descritor de segurança.
+2.  Definir as ACEs apropriadas na DACL (lista de controle de acesso discricionário) do descritor de segurança.
 3.  Modifique o descritor de segurança do objeto SCP.
 
 

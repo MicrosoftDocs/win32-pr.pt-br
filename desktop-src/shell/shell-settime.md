@@ -1,7 +1,7 @@
 ---
-description: Exibe a caixa de diálogo Propriedades de data e hora. Esse método tem o mesmo efeito que clicar com o botão direito do mouse no relógio na área de status da barra de tarefas e selecionar ajustar data/hora.
+description: Exibe a caixa de diálogo Propriedades de Data e Hora. Esse método tem o mesmo efeito que clicar com o botão direito do mouse no relógio na área de status da barra de tarefas e selecionar Ajustar Data/Hora.
 ms.assetid: 01694607-3fc2-4d0d-ba48-5bdbb40da000
-title: Método Shell. setTime (shldisp. h)
+title: Método Shell.SetTime (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -20,9 +20,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118452832"
 ---
-# <a name="shellsettime-method"></a>Método Shell. setTime
+# <a name="shellsettime-method"></a>Método Shell.SetTime
 
-Exibe a caixa de diálogo **Propriedades de data e hora** . Esse método tem o mesmo efeito que clicar com o botão direito do mouse no relógio na área de status da barra de tarefas e selecionar **Ajustar data/hora**.
+Exibe a caixa **de diálogo Propriedades de Data** e Hora. Esse método tem o mesmo efeito que clicar com o botão direito do mouse no relógio na área de status da barra de tarefas e selecionar **Ajustar Data/Hora.**
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -47,7 +47,7 @@ Esse método não tem parâmetros.
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo a seguir mostra **setTime** em uso. o uso adequado é mostrado para JScript, VBScript e Visual Basic.
+O exemplo a seguir mostra **SetTime** em uso. O uso adequado é mostrado para JScript, VBScript e Visual Basic.
 
 JScript:
 
@@ -65,7 +65,7 @@ JScript:
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -105,11 +105,11 @@ End Sub
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 2000 Professional, \[ somente aplicativos de área de trabalho do Windows XP\]<br/>                                         |
+| Cliente mínimo com suporte<br/> | Windows 2000 Professional, Windows somente aplicativos da \[ área de trabalho XP\]<br/>                                         |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                           |
-| Cabeçalho<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                           |
-| INSERI<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                         |
-| DLL<br/>                      | <dl> <dt>Shell32.dll (versão 4,71 ou posterior)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
+| DLL<br/>                      | <dl> <dt>Shell32.dll (versão 4.71 ou posterior)</dt> </dl> |
 
 
 

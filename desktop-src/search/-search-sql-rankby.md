@@ -105,7 +105,7 @@ A tabela a seguir descreve as configurações de operação de coerção dispon�
 
 
 
-| Operação de coerção | Description                                                                                    | Intervalo de valor  |
+| Operação de coerção | Descrição                                                                                    | Intervalo de valor  |
 |--------------------|------------------------------------------------------------------------------------------------|--------------|
 | ABSOLUTE           | O valor de classificação retornado é o valor especificado no valor de coerção.                          | 0 a 1000    |
 | ADD                | O valor de classificação retornado é a soma do valor de classificação bruta e o valor de coerção especificado.     | 0, 1 a 1,0 |

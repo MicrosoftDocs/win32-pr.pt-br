@@ -13,7 +13,7 @@ ms.locfileid: "118549493"
 ---
 # <a name="com-events"></a>Eventos COM+
 
-O serviço de eventos COM+ é um sistema de eventos automatizado e menos rígido que armazena informações de eventos de editores diferentes no catálogo COM+. Os assinantes podem consultar esse armazenamento e selecionar os eventos sobre os quais desejam saber.
+O serviço de eventos COM+ é um sistema de eventos automatizado e desa coupleado que armazena informações de eventos de diferentes publicações no catálogo COM+. Os assinantes podem consultar esse armazenamento e selecionar os eventos que eles querem ouvir.
 
 
 

@@ -1,9 +1,9 @@
 ---
 title: Atributo max_is
-description: O atributo \ Max \_ is \ designa o valor máximo para um índice de matriz válido.
+description: O atributo \ max \_ is\ designa o valor máximo para um índice de matriz válido.
 ms.assetid: 8d09f610-cae6-45f6-815c-5ba916d8a5e7
 keywords:
-- max_is do atributo MIDL
+- max_is atributo MIDL
 topic_type:
 - apiref
 api_name:
@@ -19,9 +19,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118642962"
 ---
-# <a name="max_is-attribute"></a>\_atributo Max é
+# <a name="max_is-attribute"></a>max \_ is attribute
 
-O atributo **\[ Max \_ é \]** designa o valor máximo para um índice de matriz válido.
+O **\[ atributo max \_ is \]** designa o valor máximo para um índice de matriz válido.
 
 ``` syntax
 [max_is(limited-expression-list )]
@@ -31,20 +31,20 @@ O atributo **\[ Max \_ é \]** designa o valor máximo para um índice de matriz
 
 <dl> <dt>
 
-*lista de expressões limitadas* 
+*limited-expression-list* 
 </dt> <dd>
 
-Especifica uma ou mais expressões de linguagem C. Cada expressão é avaliada como um inteiro que representa o índice de matriz válido mais alto. O compilador MIDL oferece suporte a expressões condicionais, expressões lógicas, expressões relacionais e expressões aritméticas. MIDL não permite invocações de função em expressões e não permite operadores de incremento e decréscimo. Separe várias expressões com vírgulas.
+Especifica uma ou mais expressões da linguagem C. Cada expressão é avaliada como um inteiro que representa o índice de matriz válido mais alto. O compilador MIDL dá suporte a expressões condicionais, expressões lógicas, expressões relacionais e expressões aritméticas. MIDL não permite invocações de função em expressões e não permite operadores de incremento e decremento. Separe várias expressões com vírgulas.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-O atributo **\[ Max \_ is \]** não corresponde necessariamente ao número de elementos na matriz. Para uma matriz de tamanho *n* em C, em que o primeiro elemento de matriz é o número de elemento zero, o valor máximo para um índice de matriz válido é *n*– 1.
+O **\[ atributo \_ max \]** is não corresponde necessariamente ao número de elementos na matriz. Para uma matriz de tamanho *n* em C, em que o primeiro elemento de matriz é o número de elemento zero, o valor máximo de um índice de matriz válido *é n*–1.
 
-O atributo **\[ Max \_ is \]** não pode ser usado como um atributo Field ao mesmo tempo que o **\[** [**tamanho \_ é**](size-is.md) **\]** Attribute.
+O **\[ atributo max \_ is \]** não pode ser usado como um atributo de campo ao mesmo tempo que **\[** [**o tamanho \_ é**](size-is.md) **\]** atributo.
 
-Embora seja legal usar o atributo **\[ Max \_ is \]** com uma expressão constante, fazer isso é ineficiente e desnecessário. Por exemplo, use uma matriz de tamanho fixo:
+Embora seja legal usar o **\[ atributo max \_ is \]** com uma expressão constante, fazer isso é ineficiente e desnecessário. Por exemplo, use uma matriz de tamanho fixo:
 
 ``` syntax
 /* transmits values of a[0]... a[MAX_SIZE-1] */ 
@@ -79,13 +79,13 @@ HRESULT Proc2(
 [Atributos de campo](/windows/desktop/Rpc/field-attributes)
 </dt> <dt>
 
-[Arquivo de definição de interface (IDL)](interface-definition-idl-file.md)
+[Arquivo IDL (definição de interface)](interface-definition-idl-file.md)
 </dt> <dt>
 
-[**mín. \_ é**](min-is.md)
+[**min \_ é**](min-is.md)
 </dt> <dt>
 
-[**o tamanho \_ é**](size-is.md)
+[**size \_ é**](size-is.md)
 </dt> </dl>
 
  

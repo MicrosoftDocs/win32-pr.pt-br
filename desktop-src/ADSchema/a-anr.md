@@ -36,7 +36,7 @@ Atributo de resolução de nome ambíguo a ser usado ao escolher entre objetos.
 | Frequência de atualização  | Quando um atributo precisa ser adicionado ou removido da lista ANR. |
 | Attribute-Id      | 1.2.840.113556.1.4.1208                                           |
 | System-ID-GUID    | 45b01500-c419-11d1-bbc9-0080c76670c0                              |
-| Sintaxe            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md)                       |
+| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md)                       |
 
 
 
@@ -59,7 +59,7 @@ Atributo de resolução de nome ambíguo a ser usado ao escolher entre objetos.
 | ID do link                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| É de valor único       | True         |
+| É de valor único       | Verdadeiro         |
 | É indexado             | Falso        |
 | No catálogo global      | Falso        |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S: |
@@ -80,7 +80,7 @@ Atributo de resolução de nome ambíguo a ser usado ao escolher entre objetos.
 | ID do link                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| É de valor único       | True         |
+| É de valor único       | Verdadeiro         |
 | É indexado             | Falso        |
 | No catálogo global      | Falso        |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S: |
@@ -101,7 +101,7 @@ Atributo de resolução de nome ambíguo a ser usado ao escolher entre objetos.
 | ID do link                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| É de valor único       | True         |
+| É de valor único       | Verdadeiro         |
 | É indexado             | Falso        |
 | No catálogo global      | Falso        |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S: |
@@ -122,10 +122,10 @@ Atributo de resolução de nome ambíguo a ser usado ao escolher entre objetos.
 | ID do link                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| Tem valor único       | True         |
+| É de valor único       | Verdadeiro         |
 | É indexado             | Falso        |
-| No Catálogo Global      | Falso        |
-| Descritor de segurança NT | O:BAG:BAD:S: |
+| No catálogo global      | Falso        |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
@@ -143,10 +143,10 @@ Atributo de resolução de nome ambíguo a ser usado ao escolher entre objetos.
 | ID do link                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| Tem valor único       | True         |
+| É de valor único       | Verdadeiro         |
 | É indexado             | Falso        |
-| No Catálogo Global      | Falso        |
-| Descritor de segurança NT | O:BAG:BAD:S: |
+| No catálogo global      | Falso        |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
@@ -164,10 +164,10 @@ Atributo de resolução de nome ambíguo a ser usado ao escolher entre objetos.
 | ID do link                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| Tem valor único       | True         |
+| É de valor único       | Verdadeiro         |
 | É indexado             | Falso        |
-| No Catálogo Global      | Falso        |
-| Descritor de segurança NT | O:BAG:BAD:S: |
+| No catálogo global      | Falso        |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
@@ -185,10 +185,10 @@ Atributo de resolução de nome ambíguo a ser usado ao escolher entre objetos.
 | ID do link                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| Tem valor único       | True         |
+| É de valor único       | Verdadeiro         |
 | É indexado             | Falso        |
-| No Catálogo Global      | Falso        |
-| Descritor de segurança NT | O:BAG:BAD:S: |
+| No catálogo global      | Falso        |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |

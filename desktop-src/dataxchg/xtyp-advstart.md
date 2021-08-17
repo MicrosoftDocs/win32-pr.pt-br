@@ -99,7 +99,7 @@ Uma função de retorno de chamada do servidor deve retornar **TRUE** para permi
 
 ## <a name="remarks"></a>Comentários
 
-Se um cliente solicitar um loop de consultoria em um nome de tópico, nome do item e formato de dados para um loop de consultoria já estabelecido, a DDEML (Biblioteca de Gerenciamento do Dados Dinâmicos Exchange) não criará um loop de consultoria duplicado, mas, em vez disso, alterará os sinalizadores de loop de consultoria **\_ (XTYPF ACKREQ** e **XTYPF \_ NODATA)** para corresponder à solicitação mais recente.
+Se um cliente solicitar um loop de consultoria em um nome de tópico, nome do item e formato de dados para um loop de consultoria que já está estabelecido, a DDEML (Biblioteca de Gerenciamento do Dados Dinâmicos Exchange) não criará um loop de consultoria duplicado, mas, em vez disso, alterará os sinalizadores de loop de consultoria (**XTYPF \_ ACKREQ** e **XTYPF \_ NODATA**) para corresponder à solicitação mais recente.
 
 Essa transação será filtrada se o aplicativo de servidor especificar o sinalizador **CBF \_ FAIL \_ ADVISES** na [**função DdeInitialize.**](/windows/desktop/api/Ddeml/nf-ddeml-ddeinitializea)
 
@@ -134,7 +134,7 @@ Essa transação será filtrada se o aplicativo de servidor especificar o sinali
 **Conceitual**
 </dt> <dt>
 
-[biblioteca Dados Dinâmicos Exchange gerenciamento do Dados Dinâmicos Exchange](dynamic-data-exchange-management-library.md)
+[biblioteca de Dados Dinâmicos Exchange gerenciamento do Dados Dinâmicos Exchange](dynamic-data-exchange-management-library.md)
 </dt> </dl>
 
  

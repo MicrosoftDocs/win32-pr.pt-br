@@ -23,40 +23,40 @@ ms.locfileid: "118548015"
 
 Contém uma lista dos protocolos a serem usados pelo DCOM. Ele contém um objeto para cada protocolo.
 
-Esta coleção dá suporte aos métodos [**Add**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-add) e [**Remove**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-remove) do objeto [**COMAdminCatalogCollection**](comadmincatalogcollection.md) .
+Essa coleção dá suporte [**aos métodos Add**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-add) e [**Remove**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-remove) do [**objeto COMAdminCatalogCollection.**](comadmincatalogcollection.md)
 
 ## <a name="members"></a>Membros
 
-A coleção **DCOMProtocols** herda da interface [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) , mas não tem membros adicionais.
+A **coleção DCOMProtocols** herda da interface [**IUnknown,**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) mas não tem membros adicionais.
 
 ## <a name="related-collections"></a>Coleções relacionadas
 
 Você pode navegar desta coleção para qualquer uma das seguintes coleções:
 
 -   [**ErrorInfo**](errorinfo.md)
--   [**PropertyInfo**](propertyinfo.md)
+-   [**Propertyinfo**](propertyinfo.md)
 -   [**RelatedCollectionInfo**](relatedcollectioninfo.md)
 
 Você pode navegar até essa coleção das seguintes coleções:
 
--   [**Básica**](root.md)
+-   [**Raiz**](root.md)
 
 ## <a name="properties"></a>Propriedades
 
-As propriedades a seguir têm suporte pelo objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) dentro da coleção:
+As propriedades a seguir têm suporte no [**objeto COMAdminCatalogObject**](comadmincatalogobject.md) dentro da coleção:
 
 -   [Nome](#name)
 -   [Ordem](#order)
 -   [ProtocolCode](#protocolcode)
 
-### <a name="name"></a>Name
+### <a name="name"></a>Nome
 
 
 
 | Entrada | Valor |
 |----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Descrição    | O nome do protocolo. Essa propriedade é retornada quando o método de propriedade [**Name**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_name) é chamado em um objeto desta coleção. |
-| Acesso         | ReadWrite                                                                                                                                                   |
+| Descrição    | O nome do protocolo. Essa propriedade é retornada quando o [**método de**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_name) propriedade Name é chamado em um objeto desta coleção. |
+| Access         | ReadWrite                                                                                                                                                   |
 | Type           | String                                                                                                                                                      |
 | Padrão        | "Novo protocolo"                                                                                                                                              |
 | Sistema mínimo | Windows 2000                                                                                                                                                |
@@ -72,8 +72,8 @@ As propriedades a seguir têm suporte pelo objeto [**COMAdminCatalogObject**](co
 | Entrada | Valor |
 |----------------|-----------------------------------------|
 | Descrição    | A ordem na qual tentar o protocolo. |
-| Acesso         | ReadWrite                               |
-| Digite           | Longo (0-65000)                          |
+| Access         | ReadWrite                               |
+| Tipo           | Long (0-65000)                          |
 | Padrão        | 0                                       |
 | Sistema mínimo | Windows 2000                            |
 
@@ -87,8 +87,8 @@ As propriedades a seguir têm suporte pelo objeto [**COMAdminCatalogObject**](co
 
 | Entrada | Valor |
 |----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Descrição    | O código que especifica a sequência de protocolo RPC. Os códigos de protocolo com suporte incluem o seguinte: ncacn \_ IP \_ TCP, ncacn \_ http, ncacn \_ SPX. Essa propriedade é retornada quando o método de propriedade de [**chave**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_key) é chamado em um objeto desta coleção. |
-| Acesso         | WriteOnce                                                                                                                                                                                                                                                                   |
+| Descrição    | O código que especifica a sequência de protocolo RPC. Os códigos de protocolo com suporte incluem o seguinte: ncacn \_ ip \_ tcp, ncacn \_ http, ncacn \_ spx. Essa propriedade é retornada quando o [**método de**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_key) propriedade Key é chamado em um objeto desta coleção. |
+| Access         | WriteOnce                                                                                                                                                                                                                                                                   |
 | Type           | String                                                                                                                                                                                                                                                                      |
 | Padrão        | ""                                                                                                                                                                                                                                                                          |
 | Sistema mínimo | Windows 2000                                                                                                                                                                                                                                                                |

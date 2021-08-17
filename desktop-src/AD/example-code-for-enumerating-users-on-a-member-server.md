@@ -4,7 +4,7 @@ description: Este tópico inclui exemplos de código que enumeram usuários em u
 ms.assetid: a856281a-7f84-44d0-9123-b27fda56e0ea
 ms.tgt_platform: multiple
 keywords:
-- Exemplos de Active Directory Active Directory, enumerando usuários em um servidor membro
+- Exemplos do Active Directory do Active Directory , enumerando usuários em um servidor membro
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 03064d2030cd84ea75c1225bc6592c33e5af5a20b2fe6946987d4ca7caf7497f
@@ -16,7 +16,7 @@ ms.locfileid: "118693695"
 ---
 # <a name="example-code-for-enumerating-users-on-a-member-server"></a>Código de exemplo para enumerar usuários em um servidor membro
 
-o exemplo de código a seguir Visual Basic enumera todos os usuários em um servidor membro ou Windows 2000 Professional.
+O exemplo Visual Basic código a seguir enumera todos os usuários em um servidor membro ou Windows 2000 Professional.
 
 
 ```VB
@@ -73,7 +73,7 @@ End Sub
 
 
 
-o exemplo de código C++ a seguir enumera todos os objetos de uma classe especificada, como um usuário, e exibe os membros contidos em cada objeto em um servidor membro ou Windows 2000 Professional.
+O exemplo de código C++ a seguir enumera todos os objetos de uma classe especificada, como um usuário, e exibe os membros contidos em cada objeto em um servidor membro ou Windows 2000 Professional.
 
 
 ```C++

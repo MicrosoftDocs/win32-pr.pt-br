@@ -1,11 +1,11 @@
 ---
-title: ACS-atributo de hora do dia
+title: Atributo ACS-Time-Of-Day
 description: Horas do dia em que essa política se aplica.
 ms.assetid: aacd604a-45cb-4815-bc6b-332cf090f4a2
 ms.tgt_platform: multiple
 keywords:
-- ACS-esquema de AD de atributo de tempo de dia
-- Esquema de AD do atributo aCSTimeOfDay
+- Esquema do AD do atributo ACS-Time-Of-Day
+- Esquema do AD do atributo aCSTimeOfDay
 topic_type:
 - apiref
 api_name:
@@ -21,7 +21,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118689262"
 ---
-# <a name="acs-time-of-day-attribute"></a>ACS-atributo de hora do dia
+# <a name="acs-time-of-day-attribute"></a>Atributo ACS-Time-Of-Day
 
 Horas do dia em que essa política se aplica.
 
@@ -29,14 +29,14 @@ Horas do dia em que essa política se aplica.
 
 | Entrada | Valor |
 |-------------------|---------------------------------------------|
-| CN                | ACS-hora do dia                             |
-| LDAP-Display-Name | aCSTimeOfDay                                |
+| CN                | ACS-time-of-day                             |
+| Ldap-Display-Name | aCSTimeOfDay                                |
 | Tamanho              | \-                                          |
 | Privilégio de atualização  | \-                                          |
 | Frequência de atualização  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.756                      |
-| System-ID-GUID    | 7f561279-5301-11d1-a9c5-0000f80367c1        |
-| Sintaxe            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | 7f561279-5301-11d1-a9c5-0000f80367c1        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -58,15 +58,15 @@ Horas do dia em que essa política se aplica.
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | True                                         |
+| Tem valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
-| No catálogo global      | Falso                                        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
+| No Catálogo Global      | Falso                                        |
+| Descritor de segurança NT | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classes usadas em        | [**ACS-política**](c-acspolicy.md)<br/> |
+| Classes usadas em        | [**ACS-Policy**](c-acspolicy.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Horas do dia em que essa política se aplica.
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | True                                         |
+| Tem valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
-| No catálogo global      | Falso                                        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
+| No Catálogo Global      | Falso                                        |
+| Descritor de segurança NT | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classes usadas em        | [**ACS-política**](c-acspolicy.md)<br/> |
+| Classes usadas em        | [**ACS-Policy**](c-acspolicy.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Horas do dia em que essa política se aplica.
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | True                                         |
+| Tem valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
-| No catálogo global      | Falso                                        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
+| No Catálogo Global      | Falso                                        |
+| Descritor de segurança NT | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classes usadas em        | [**ACS-política**](c-acspolicy.md)<br/> |
+| Classes usadas em        | [**ACS-Policy**](c-acspolicy.md)<br/> |
 
 
 
@@ -121,7 +121,7 @@ Horas do dia em que essa política se aplica.
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| Tem valor único       | True                                         |
+| Tem valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
 | No Catálogo Global      | Falso                                        |
 | Descritor de segurança NT | O:BAG:BAD:S:                                 |
@@ -142,7 +142,7 @@ Horas do dia em que essa política se aplica.
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| Tem valor único       | True                                         |
+| Tem valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
 | No Catálogo Global      | Falso                                        |
 | Descritor de segurança NT | O:BAG:BAD:S:                                 |
@@ -163,7 +163,7 @@ Horas do dia em que essa política se aplica.
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| Tem valor único       | True                                         |
+| Tem valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
 | No Catálogo Global      | Falso                                        |
 | Descritor de segurança NT | O:BAG:BAD:S:                                 |

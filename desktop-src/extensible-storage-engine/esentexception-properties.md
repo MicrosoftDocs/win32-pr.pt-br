@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre: Propriedades de EsentException'
-title: Propriedades EsentException (Microsoft. ISAM. ESENT)
+description: 'Saiba mais sobre: propriedades EsentException'
+title: Propriedades EsentException (Microsoft.Isam.Esent)
 TOCTitle: EsentException properties
 ms:assetid: Properties.T:Microsoft.Isam.Esent.EsentException
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.esentexception_properties(v=EXCHG.10)
@@ -14,12 +14,12 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118496890"
 ---
-# <a name="esentexception-properties"></a>Propriedades de EsentException
+# <a name="esentexception-properties"></a>Propriedades EsentException
 
 Incluir membros protegidos  
 Incluir membros herdados  
 
-O tipo [EsentException](./esentexception-class.md) expõe os membros a seguir.
+O [tipo EsentException](./esentexception-class.md) expõe os membros a seguir.
 
 ## <a name="properties"></a>Propriedades
 
@@ -39,7 +39,7 @@ O tipo [EsentException](./esentexception-class.md) expõe os membros a seguir.
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
-<td><a href="/dotnet/api/system.exception.helplink#System_Exception_HelpLink">HelpLink</a></td>
+<td><a href="/dotnet/api/system.exception.helplink#System_Exception_HelpLink">Helplink</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="odd">
@@ -84,4 +84,4 @@ Parte superior
 
 [Classe EsentException](./esentexception-class.md)
 
-[Namespace Microsoft. ISAM. ESENT](./microsoft.isam.esent-namespace.md)
+[Namespace Microsoft.Isam.Esent](./microsoft.isam.esent-namespace.md)

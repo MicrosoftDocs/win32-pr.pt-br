@@ -15,9 +15,9 @@ ms.locfileid: "118635137"
 
 ICE55 valida que todos os objetos LockPermission existem e têm valores de permissão válidos.
 
-## <a name="result"></a>Result
+## <a name="result"></a>Resultado
 
-ICE55 poste um erro se um lockobject listado na [Tabela LockPermissions](lockpermissions-table.md) não existir ou se nenhum nível de privilégio for especificado na coluna permissão.
+ICE55 postará um erro se um LockObject listado na tabela [LockPermissions](lockpermissions-table.md) não existir ou se nenhum nível de privilégio for especificado na coluna Permissão.
 
 ## <a name="example"></a>Exemplo
 
@@ -56,9 +56,9 @@ Could not find item 'File3' in table 'File' which is referenced
 
  
 
-O objeto arquivo1 tem um nulo na coluna de permissão. Cada linha deve ter um valor na coluna permissões. Para corrigir esse erro, especifique um valor numérico nesta coluna. Se nenhum privilégio for necessário para esse objeto, você deverá remover a linha.
+O objeto File1 tem um nulo na coluna Permissão. Cada linha deve ter um valor na coluna Permissões. Para corrigir esse erro, especifique um valor numérico nesta coluna. Se nenhum privilégio for necessário para esse objeto, você deverá remover a linha.
 
-O objeto arquivo3 descrito na Tabela LockPermissions não está listado na tabela de arquivos. Para corrigir esse erro, consulte um objeto válido.
+O objeto File3 descrito na tabela LockPermissions não está listado na tabela Arquivo. Para corrigir esse erro, consulte um objeto válido.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

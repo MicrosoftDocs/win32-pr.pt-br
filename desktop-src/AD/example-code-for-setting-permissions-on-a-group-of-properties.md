@@ -1,10 +1,10 @@
 ---
 title: Código de exemplo para definir permissões em um grupo de propriedades
-description: Os exemplos de código C e C++ a seguir criam uma ACE que atribui acesso de leitura e gravação aos atributos do conjunto de propriedades de informações pessoais de objetos de usuário para o objeto de confiança especificado.
+description: Os exemplos de código C e C++ a seguir criam uma ACE que atribui acesso de leitura e gravação aos atributos do conjunto de propriedades Informações Pessoais de objetos de usuário ao objeto de confiança especificado.
 ms.assetid: 46d53b41-02eb-4830-b625-2d9ffa21a312
 ms.tgt_platform: multiple
 keywords:
-- Exemplos de Active Directory Active Directory, definindo permissões em um grupo de propriedades
+- Exemplos do Active Directory do Active Directory, definindo permissões em um grupo de propriedades
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 220a9f306a4691aed53ec5c769405ae5db9f9c53fcb192cc383fbf9e8235def4
@@ -16,7 +16,7 @@ ms.locfileid: "118190094"
 ---
 # <a name="example-code-for-setting-permissions-on-a-group-of-properties"></a>Código de exemplo para definir permissões em um grupo de propriedades
 
-Os exemplos de código C e C++ a seguir criam uma ACE que atribui acesso de leitura e gravação aos atributos do conjunto de propriedades de [**informações pessoais**](/windows/desktop/ADSchema/r-personal-information) de objetos de usuário para o objeto de confiança especificado.
+Os exemplos de código C e C++ a seguir criam uma [](/windows/desktop/ADSchema/r-personal-information) ACE que atribui acesso de leitura e gravação aos atributos do conjunto de propriedades Informações Pessoais de objetos de usuário ao objeto de confiança especificado.
 
 
 ```C++

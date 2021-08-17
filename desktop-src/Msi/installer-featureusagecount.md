@@ -1,7 +1,7 @@
 ---
 description: A propriedade FeatureUsageCount é uma propriedade somente leitura que retorna o número de vezes que o recurso foi usado.
 ms.assetid: 70171e22-d73a-4718-a360-df9d1722761b
-title: Propriedade Installer.FeatureUsageCount
+title: Propriedade Installer. FeatureUsageCount
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -20,9 +20,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118631195"
 ---
-# <a name="installerfeatureusagecount-property"></a>Propriedade Installer.FeatureUsageCount
+# <a name="installerfeatureusagecount-property"></a>Propriedade Installer. FeatureUsageCount
 
-A **propriedade FeatureUsageCount** é uma propriedade somente leitura que retorna o número de vezes que o recurso foi usado.
+A propriedade **FeatureUsageCount** é uma propriedade somente leitura que retorna o número de vezes que o recurso foi usado.
 
 Esta propriedade é somente para leitura.
 
@@ -47,9 +47,9 @@ O uso dos métodos [**UseFeature**](installer-usefeature.md), [**ProvideComponen
 
 | Requisito | Valor |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versão<br/> | Windows Instalador 5.0 no Windows Server 2012, Windows 8, Windows Server 2008 R2 ou Windows 7. Windows Instalador 4.0 ou Windows Instalador 4.5 no Windows Server 2008 ou Windows Vista. Windows Instalador no Windows Server 2003 ou Windows XP<br/> |
+| Versão<br/> | Windows instalador 5,0 em Windows Server 2012, Windows 8, Windows Server 2008 R2 ou Windows 7. Windows Installer 4,0 ou Windows Installer 4,5 no Windows Server 2008 ou Windows Vista. Windows instalador no Windows Server 2003 ou Windows XP<br/> |
 | DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                      |
-| IID<br/>     | O IInstaller IID é definido como \_ 000C1090-0000-0000-C000-000000000046<br/>                                                                                                                                                                           |
+| IID<br/>     | IID \_ IInstaller é definido como 000C1090-0000-0000-C000-000000000046<br/>                                                                                                                                                                           |
 
 
 

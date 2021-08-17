@@ -1,5 +1,5 @@
 ---
-description: A propriedade Instalado será definida somente se o produto estiver instalado por computador ou para o usuário atual.
+description: A propriedade instalada será definida somente se o produto estiver instalado por computador ou para o usuário atual.
 ms.assetid: 139a6324-58fb-485e-8b3e-c5cf2881d5d1
 title: Propriedade instalada
 ms.topic: reference
@@ -13,11 +13,11 @@ ms.locfileid: "118633519"
 ---
 # <a name="installed-property"></a>Propriedade instalada
 
-A **propriedade Instalado** será definida somente se o produto estiver instalado por computador ou para o usuário atual. Essa propriedade não será definida se o produto estiver instalado para um usuário diferente.
+A propriedade **instalada** será definida somente se o produto estiver instalado por computador ou para o usuário atual. Essa propriedade não será definida se o produto for instalado para um usuário diferente.
 
-A **propriedade Installed** pode ser usada em expressões condicionais para determinar se um produto está instalado por computador ou para o usuário atual. Por exemplo, a propriedade pode ser usada na coluna condicional de uma tabela de sequência ou para diferenciar entre uma primeira instalação e uma instalação de manutenção.
+A propriedade **installed** pode ser usada em expressões condicionais para determinar se um produto está instalado por computador ou para o usuário atual. Por exemplo, a propriedade pode ser usada na coluna condicional de uma tabela de sequência ou para diferenciar entre uma primeira instalação e uma instalação de manutenção.
 
-Para determinar se o produto está instalado para um usuário diferente, verifique a [**propriedade ProductState.**](productstate.md)
+Para determinar se o produto está instalado para um usuário diferente, verifique a propriedade [**productstate**](productstate.md) .
 
 O valor da propriedade [**ProductVersion**](productversion.md) é a versão do produto no formato de cadeia de caracteres.
 
@@ -27,7 +27,7 @@ O valor da propriedade [**ProductVersion**](productversion.md) é a versão do p
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versão<br/> | Windows Instalador 5.0 no Windows Server 2012, Windows 8, Windows Server 2008 R2 ou Windows 7. Windows Instalador 4.0 ou Windows Instalador 4.5 no Windows Server 2008 ou Windows Vista. Windows Instalador no Windows Server 2003 ou Windows XP. Consulte o [Windows instalador Run-Time para](windows-installer-portal.md) obter informações sobre o Windows service pack mínimo exigido por uma versão Windows Installer.<br/> |
+| Versão<br/> | Windows instalador 5,0 em Windows Server 2012, Windows 8, Windows Server 2008 R2 ou Windows 7. Windows Installer 4,0 ou Windows Installer 4,5 no Windows Server 2008 ou Windows Vista. Windows instalador no Windows Server 2003 ou Windows XP. consulte os [requisitos de Run-Time Windows Installer](windows-installer-portal.md) para obter informações sobre o service pack mínimo Windows exigido por uma versão Windows Installer.<br/> |
 
 
 

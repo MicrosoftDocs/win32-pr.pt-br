@@ -1,5 +1,5 @@
 ---
-description: Página de navegação para Windows do provedor de serviços de namespace SPI winsock (Soquetes de rede).
+description: Página de navegação para funções Windows provedor de serviços de namespace SPI (Winsock) soquetes.
 ms.assetid: fb48cc4e-5225-4ad9-9fcd-7a7992f01e6d
 title: Resumo das funções do provedor de namespace
 ms.topic: article
@@ -25,7 +25,7 @@ As seções a seguir identificam as funções em cada categoria e descrevem brev
 
 -   [Instalação e configuração do provedor de namespace](name-space-provider-configuration-and-installation-2.md)
 -   [Inicialização e limpeza do provedor de namespace](name-space-provider-initialization-and-cleanup-2.md)
--   [Instalação do serviço na SPI Windows Soquetes 2](service-installation-in-the-windows-sockets-2-spi-2.md)
+-   [Instalação do serviço na SPI Windows Sockets 2](service-installation-in-the-windows-sockets-2-spi-2.md)
 -   [Consulta de serviço](service-query-2.md)
 -   [Funções auxiliares na SPI](helper-functions-in-the-spi-2.md)
 

@@ -1,5 +1,5 @@
 ---
-description: Esses sinalizadores identificam uma superfície a ser redefinida ao chamar Clear.
+description: Esses sinalizadores identificam uma superfície a ser redefinida ao chamar Limpar.
 ms.assetid: 5d76e9a3-7afc-4db7-bffe-64bc7b9f83ac
 title: D3DCLEAR
 ms.topic: article
@@ -13,14 +13,14 @@ ms.locfileid: "118527606"
 ---
 # <a name="d3dclear"></a>D3DCLEAR
 
-Esses sinalizadores identificam uma superfície a ser redefinida ao chamar [**Clear**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-clear).
+Esses sinalizadores identificam uma superfície a ser redefinida ao chamar [**Limpar**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-clear).
 
 
 
-| \#definir          | Descrição                                                                                                                                 |
+| \#Definir          | Descrição                                                                                                                                 |
 |-------------------|---------------------------------------------------------------------------------------------------------------------------------------------|
-| \_Estêncil D3DCLEAR | Limpe o buffer do estêncil.                                                                                                                   |
-| \_Destino D3DCLEAR  | Limpar um destino de renderização ou todos os destinos em um destino de vários processamentos. Consulte [vários destinos de renderização (Direct3D 9)](multiple-render-targets.md). |
+| ESTENCIL D3DCLEAR \_ | Limpe o buffer de estêncil.                                                                                                                   |
+| DESTINO D3DCLEAR \_  | Limpe um destino de renderização ou todos os destinos em um destino de renderização múltipla. Consulte [Vários destinos de renderização (Direct3D 9)](multiple-render-targets.md). |
 | D3DCLEAR \_ ZBUFFER | Limpe o buffer de profundidade.                                                                                                                     |
 
 
@@ -33,7 +33,7 @@ Esses sinalizadores identificam uma superfície a ser redefinida ao chamar [**Cl
 
 | Requisito                         |  Valor           |
 |--------------------------|-------------|
-| parâmetro                   | d3d9types. h |
+| parâmetro                   | d3d9types.h |
 | Sistema operacional mínimo | Windows 98  |
 
 
@@ -44,7 +44,7 @@ Esses sinalizadores identificam uma superfície a ser redefinida ao chamar [**Cl
 
 <dl> <dt>
 
-[Constantes do Direct3D](dx9-graphics-reference-d3d-constants.md)
+[Constantes Direct3D](dx9-graphics-reference-d3d-constants.md)
 </dt> </dl>
 
  

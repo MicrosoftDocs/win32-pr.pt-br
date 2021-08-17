@@ -3,7 +3,7 @@ title: WM/VideoFrameRate
 description: O atributo WM/VideoFrameRate contém a taxa, em quadros por segundo, do vídeo em um fluxo.
 ms.assetid: dcab75b3-6d08-4551-9145-c8307eb70557
 keywords:
-- Formato de mídia do Windows do WM/VideoFrameRate
+- Formato de mídia do Windows WM/VideoFrameRate
 topic_type:
 - apiref
 api_name:
@@ -21,7 +21,7 @@ ms.locfileid: "118698306"
 ---
 # <a name="wmvideoframerate"></a>WM/VideoFrameRate
 
-O atributo **WM/VideoFrameRate** contém a taxa, em quadros por segundo, do vídeo em um fluxo.
+O **atributo WM/VideoFrameRate** contém a taxa, em quadros por segundo, do vídeo em um fluxo.
 
 ## <a name="global-constant"></a>Constante global
 
@@ -29,7 +29,7 @@ g \_ wszWMVideoFrameRate
 
 ## <a name="data-type"></a>Tipo de Dados
 
-**WMT \_ tipo \_ DWORD**
+**WMT \_ TYPE \_ DWORD**
 
 ## <a name="see-also"></a>Confira também
 

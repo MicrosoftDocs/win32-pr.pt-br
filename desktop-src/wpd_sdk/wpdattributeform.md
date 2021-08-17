@@ -24,7 +24,7 @@ ms.locfileid: "118696264"
 
 O **tipo de enumeração WpdAttributeForm** descreve como uma propriedade armazena seus valores.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 ```C++

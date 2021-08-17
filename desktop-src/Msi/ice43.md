@@ -15,7 +15,7 @@ ms.locfileid: "118635202"
 
 O ICE43 valida que os atalhos que não fazem referência a um recurso como seu destino (atalhos não anunciados) estão em componentes que têm uma entrada de Registro HKCU como seu caminho de chave.
 
-## <a name="result"></a>Result
+## <a name="result"></a>Resultado
 
 ICE43 posta uma mensagem de erro se um atalho não anunciado estiver em um componente que não tem uma entrada de Registro HKCU como seu caminho de chave.
 

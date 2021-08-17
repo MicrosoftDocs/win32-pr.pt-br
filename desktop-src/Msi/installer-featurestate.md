@@ -1,7 +1,7 @@
 ---
-description: A propriedade Featurestate somente leitura retorna o estado instalado de um recurso.
+description: A propriedade FeatureState somente leitura retorna o estado instalado de um recurso.
 ms.assetid: a3d30296-191e-4446-b5b1-a92f8991926a
-title: Propriedade Installer. Featurestate
+title: Propriedade Installer.FeatureState
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -20,9 +20,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118631270"
 ---
-# <a name="installerfeaturestate-property"></a>Propriedade Installer. Featurestate
+# <a name="installerfeaturestate-property"></a>Propriedade Installer.FeatureState
 
-A propriedade **featurestate** somente leitura retorna o estado instalado de um recurso.
+A propriedade **FeatureState** somente leitura retorna o estado instalado de um recurso.
 
 Esta propriedade é somente para leitura.
 
@@ -46,7 +46,7 @@ Essa propriedade retorna um dos valores a seguir.
 | Valor                     | Descrição                                      |
 |---------------------------|--------------------------------------------------|
 | msiInstallStateAbsent     | O recurso não está instalado.                    |
-| msiInstallStateAdvertised | O recurso é anunciado.                       |
+| msiInstallStateAdvertd | O recurso é anunciado.                       |
 | msiInstallStateLocal      | O recurso é instalado para ser executado localmente.         |
 | msiInstallStateSource     | O recurso é instalado para ser executado da origem.     |
 | msiInstallStateInvalidArg | Um parâmetro inválido foi passado para a função. |
@@ -59,7 +59,7 @@ Essa propriedade retorna um dos valores a seguir.
 
  
 
-A propriedade **featurestate** não valida se o recurso está acessível.
+A **propriedade FeatureState** não valida se o recurso está acessível.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -67,9 +67,9 @@ A propriedade **featurestate** não valida se o recurso está acessível.
 
 | Requisito | Valor |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versão<br/> | Windows instalador 5,0 em Windows Server 2012, Windows 8, Windows Server 2008 R2 ou Windows 7. Windows Installer 4,0 ou Windows Installer 4,5 no Windows Server 2008 ou Windows Vista. Windows instalador no Windows Server 2003 ou Windows XP<br/> |
+| Versão<br/> | Windows Instalador 5.0 no Windows Server 2012, Windows 8, Windows Server 2008 R2 ou Windows 7. Windows Instalador 4.0 ou Windows Instalador 4.5 no Windows Server 2008 ou Windows Vista. Windows Instalador no Windows Server 2003 ou Windows XP<br/> |
 | DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                      |
-| IID<br/>     | IID \_ IInstaller é definido como 000C1090-0000-0000-C000-000000000046<br/>                                                                                                                                                                           |
+| IID<br/>     | O IInstaller IID é definido como \_ 000C1090-0000-0000-C000-000000000046<br/>                                                                                                                                                                           |
 
 
 
