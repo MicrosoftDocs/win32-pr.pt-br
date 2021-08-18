@@ -4,12 +4,12 @@ description: Usando IConnectionPointContainer
 ms.assetid: a87afb25-4d45-4ce2-9b27-840da5107bce
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d4d0b7c691e1ba6a8445af56978b43a2ccbf33e7
-ms.sourcegitcommit: 85688bbfbe5b121bc05ddf112d54c23a469dfbc0
+ms.openlocfilehash: 9a8d53e9051796cafa4a8c7825d810b18784d58a4dd5d531eb38872b87cb32c4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "105771338"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119992026"
 ---
 # <a name="using-iconnectionpointcontainer"></a>Usando IConnectionPointContainer
 
@@ -30,9 +30,9 @@ Como o enumerador é um objeto separado, o cliente deve chamar **IEnumConnection
 [Interfaces de objeto conectáveis](connectable-object-interfaces.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

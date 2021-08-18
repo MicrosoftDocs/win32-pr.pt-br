@@ -1,7 +1,7 @@
 ---
 description: O método BreakConnect libera o pino de entrada de uma conexão.
 ms.assetid: e295cec1-8c8f-471c-8832-075ac7708cb1
-title: Método CBaseRenderer. BreakConnect (Renbase. h)
+title: Método CBaseRenderer.BreakConnect (Renbase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 98c1e01c15740616541706ca4d9da3ab5e66538c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: cefaa91578f397a5ce967dc9cb6200acbe45f016e81f4552b9d185ad9ffa2609
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105787417"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120044056"
 ---
-# <a name="cbaserendererbreakconnect-method"></a>Método CBaseRenderer. BreakConnect
+# <a name="cbaserendererbreakconnect-method"></a>Método CBaseRenderer.BreakConnect
 
 O `BreakConnect` método libera o pino de entrada de uma conexão.
 
@@ -40,17 +40,17 @@ virtual HRESULT BreakConnect();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna um dos valores **HRESULT** mostrados na tabela a seguir.
+Retorna um dos **valores HRESULT** mostrados na tabela a seguir.
 
 
 
 | Código de retorno                                                                                         | Descrição                            |
 |-----------------------------------------------------------------------------------------------------|----------------------------------------|
-| <dl> <dt>**\_falso**</dt> </dl>             | O PIN não foi conectado.<br/>  |
+| <dl> <dt>**S \_ FALSE**</dt> </dl>             | O pino não estava conectado.<br/>  |
 | <dl> <dt>**S \_ OK**</dt> </dl>                | Êxito.<br/>                    |
-| <dl> <dt>**VFW \_ E \_ não \_ parado**</dt> </dl> | O filtro ainda está ativo.<br/> |
+| <dl> <dt>**VFW \_ E \_ NÃO INTERROMPIDO \_**</dt> </dl> | O filtro ainda está ativo.<br/> |
 
 
 
@@ -58,7 +58,7 @@ Retorna um dos valores **HRESULT** mostrados na tabela a seguir.
 
 ## <a name="remarks"></a>Comentários
 
-O pino de entrada do filtro chama esse método de dentro de seu próprio `BreakConnect` método. (Para obter mais informações, consulte [**CBasePin:: BreakConnect**](cbasepin-breakconnect.md).) O filtro executa alguma escrituração interna, como redefinir o sinalizador de fim de fluxo.
+O pino de entrada do filtro chama esse método de dentro de seu `BreakConnect` próprio método. (Para obter mais informações, [**consulte CBasePin::BreakConnect**](cbasepin-breakconnect.md).) O filtro executa alguma contabilidade interna, como redefinir o sinalizador de fim do fluxo.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -66,8 +66,8 @@ O pino de entrada do filtro chama esse método de dentro de seu próprio `BreakC
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Renbase. h (incluir fluxos. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Renbase.h (incluir Fluxos.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

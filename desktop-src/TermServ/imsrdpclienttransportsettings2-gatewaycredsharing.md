@@ -19,16 +19,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 329e425631b674e050f246c4105115bd4326be3d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d6d489678006e842a6da82f5d2f9489f84a9a20fd70bfe8f18018aaa6d412c5c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104454783"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119974646"
 ---
 # <a name="imsrdpclienttransportsettings2gatewaycredsharing-property"></a>Propriedade IMsRdpClientTransportSettings2:: GatewayCredSharing
 
-Especifica ou recupera a configuração para se o recurso de compartilhamento de credenciais do gateway de Área de Trabalho Remota (Gateway RD) está habilitado. Quando o recurso está habilitado, o controle ActiveX Área de Trabalho Remota tenta usar as mesmas credenciais para autenticar o servidor de Host da Sessão da Área de Trabalho Remota (Host da Sessão RD) e o servidor de gateway de área de trabalho remota.
+Especifica ou recupera a configuração para se o recurso de compartilhamento de credenciais do gateway de Área de Trabalho Remota (Gateway RD) está habilitado. quando o recurso é habilitado, o Área de Trabalho Remota ActiveX controle tenta usar as mesmas credenciais para autenticar o servidor Host da Sessão da Área de Trabalho Remota (Host da Sessão RD) e o servidor de Gateway de área de trabalho remota.
 
 Esta propriedade é de leitura/gravação.
 
@@ -57,7 +57,7 @@ Retornará **S \_ OK** se for bem-sucedido.
 
 ## <a name="remarks"></a>Comentários
 
-Essa propriedade é usada pelo controle ActiveX para implementar um único prompt para o compartilhamento de credenciais entre o servidor de Host da Sessão RD e o servidor de gateway de área de trabalho remota. O compartilhamento de credenciais não oferece suporte ao compartilhamento de senha baseado na Web com [**GatewayPassword**](imsrdpclienttransportsettings2-gatewaypassword.md) ou [**clearTextPassword**](imstscnonscriptable-cleartextpassword.md).
+essa propriedade é usada pelo controle de ActiveX para implementar um único prompt para o compartilhamento de credenciais entre o servidor de Host da Sessão RD e o servidor de Gateway de área de trabalho remota. O compartilhamento de credenciais não oferece suporte ao compartilhamento de senha baseado na Web com [**GatewayPassword**](imsrdpclienttransportsettings2-gatewaypassword.md) ou [**clearTextPassword**](imstscnonscriptable-cleartextpassword.md).
 
 ## <a name="requirements"></a>Requisitos
 

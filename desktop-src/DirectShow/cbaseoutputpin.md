@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 21949d772c44f02e364013dd98c905b8f59ccdc2
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 67a4051f904b27b75273d553e1d0604b068b3910fbfb322b5a2df716c996a1ba
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105750067"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119872577"
 ---
 # <a name="cbaseoutputpin-class"></a>Classe CBaseOutputPin
 
@@ -57,7 +57,7 @@ Sua classe derivada deve substituir o método [**CBasePin:: CheckMediaType**](cb
 | [**InitAllocator**](cbaseoutputpin-initallocator.md)           | Cria um alocador de memória. VirtuaisLUNs.                                       |
 | [**CheckConnect**](cbaseoutputpin-checkconnect.md)             | Determina se uma conexão de PIN é adequada.                           |
 | [**BreakConnect**](cbaseoutputpin-breakconnect.md)             | Libera o PIN de uma conexão.                                        |
-| [**Activo**](cbaseoutputpin-active.md)                         | Notifica o PIN de que o filtro está ativo agora.                            |
+| [**Ativo**](cbaseoutputpin-active.md)                         | Notifica o PIN de que o filtro está ativo agora.                            |
 | [**Inativo**](cbaseoutputpin-inactive.md)                     | Notifica o PIN de que o filtro não está mais ativo.                      |
 | [**DeliverEndOfStream**](cbaseoutputpin-deliverendofstream.md) | Entrega uma notificação de fim de fluxo para o PIN de entrada conectado. VirtuaisLUNs. |
 | [**DeliverBeginFlush**](cbaseoutputpin-deliverbeginflush.md)   | Solicita que o PIN de entrada conectado inicie uma operação de liberação. VirtuaisLUNs.      |
@@ -80,7 +80,7 @@ Sua classe derivada deve substituir o método [**CBasePin:: CheckMediaType**](cb
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Amfilter. h (incluir fluxos. h)</dt> </dl>                                                                                  |
+| parâmetro<br/>  | <dl> <dt>Amfilter. h (incluir Fluxos. h)</dt> </dl>                                                                                  |
 | Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
 
 

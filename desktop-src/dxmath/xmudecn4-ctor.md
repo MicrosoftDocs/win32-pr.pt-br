@@ -11,12 +11,12 @@ api_name: ''
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: f7a634618386a88c26ec072a6e60a020d4e827d8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0b9a78a505e390032d091ae5325f7d9b50913e2f69989101e811e3abf8b39ed3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105793833"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119739846"
 ---
 # <a name="xmudecn4-constructors"></a>Construtores XMUDECN4
 

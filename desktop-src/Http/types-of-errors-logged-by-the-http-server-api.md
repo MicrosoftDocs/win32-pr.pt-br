@@ -6,12 +6,12 @@ keywords:
 - API do servidor HTTP, tipos de erros registrados
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 450d298ab5b045fe4b28a683e456de3cfe84224e
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 36974edf1748ab70ff8b99ad27881a1b5f772b243eb97c5dc4b26d6df41f16c9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104292311"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120042076"
 ---
 # <a name="types-of-errors-logged-by-the-http-server-api"></a>Tipos de erros registrados pela API do servidor HTTP
 

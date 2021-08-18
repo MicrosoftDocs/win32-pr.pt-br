@@ -20,12 +20,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 6f75ce51e942cfde7fddc4f9ec0154feae985e02
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e2c8f0fe8b4034ad8687c2dd82b4de76e53810048aa05c5d517fbbfdc7fc1f40
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105781140"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119976986"
 ---
 # <a name="apiretrievecolumnsize-method-jet_sesid-jet_tableid-jet_columnid"></a>Método API. RetrieveColumnSize (JET_SESID, JET_TABLEID, JET_COLUMNID)
 
@@ -82,7 +82,7 @@ public static Nullable<int> RetrieveColumnSize(
     
     O columnid a ser recuperado.
 
-#### <a name="return-value"></a>Retornar valor
+#### <a name="return-value"></a>Valor retornado
 
 Tipo: [System. Nullable](/dotnet/api/system.nullable-1)\<[Int32](/dotnet/api/system.int32)\>  
 O tamanho da coluna. 0 se a coluna for nula.  

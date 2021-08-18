@@ -1,19 +1,19 @@
 ---
-description: O <mode> elemento especifica se a URL deve ser incluída ou excluída do escopo do conector de pesquisa. Os valores permitidos são include e exclude. Este elemento não tem elementos filho e nenhum atributo.
+description: O <mode> elemento especifica se a URL deve ser incluída ou excluída do escopo do conector de pesquisa. Os valores permitidos são Incluir e Excluir. Esse elemento não tem nenhum elemento filho e nenhum atributos.
 ms.assetid: 7654c04a-31c4-4260-a51c-0600804e62a9
-title: Elemento Mode (esquema do conector de pesquisa)
+title: Elemento mode (Esquema do Conector de Pesquisa)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ec8c09b4c6de138e6e390d2c31a82fe5d1f56566
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 32a210abf5c9c2bbc4cd5d53978866a729d834928cf39e54bfb6e6fcc9c42c7f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103646856"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119944316"
 ---
-# <a name="mode-element-search-connector-schema"></a>Elemento Mode (esquema do conector de pesquisa)
+# <a name="mode-element-search-connector-schema"></a>Elemento mode (Esquema do Conector de Pesquisa)
 
-O <mode> elemento especifica se a URL deve ser incluída ou excluída do escopo do conector de pesquisa. Os valores permitidos são `Include` e `Exclude` . Este elemento não tem elementos filho e nenhum atributo.
+O <mode> elemento especifica se a URL deve ser incluída ou excluída do escopo do conector de pesquisa. Os valores permitidos são `Include` e `Exclude` . Esse elemento não tem nenhum elemento filho e nenhum atributos.
 
 ## <a name="syntax"></a>Syntax
 
@@ -68,11 +68,11 @@ O <mode> elemento especifica se a URL deve ser incluída ou excluída do escopo 
 
 ## <a name="remarks"></a>Comentários
 
-Um escopo excluído não pode ser pesquisado ou procurado. Você pode aninhar URLs scopeItem. Por exemplo, você pode incluir um escopo pai e todos os seus filhos, exceto um adicionando a URL pai como incluído, com um valor de profundidade profundo e excluindo a URL filho.
+Um escopo excluído não pode ser pesquisado ou pesquisado. Você pode aninhar URLs scopeItem. Por exemplo, você pode incluir um escopo pai e todos os seus filhos, exceto um, adicionando a URL pai como incluída, com o valor de profundidade Deep e excluindo a URL filho.
 
 ## <a name="example"></a>Exemplo
 
-O exemplo a seguir mostra um escopo de pesquisa que inclui C: \\ ExampleFolder e todas as suas pastas filho, exceto c: \\ ExampleFolder \\ ExcludeMe.
+O exemplo a seguir mostra um escopo de pesquisa que inclui C: ExampleFolder e todas as suas pastas filho, exceto \\ C: \\ ExampleFolder \\ ExcludeMe.
 
 
 ```

@@ -4,12 +4,12 @@ ms.assetid: 8ee592ff-387e-449e-8e3f-4f6407166fe5
 title: Ciclo de vida de um provedor de serviços de telefonia
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 830bc16ca606bb5bd38c4bce7c1e6e39dadb65a6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6282f4e7b946ffb79bd6233688869616cc0b0259a1d491834452290474c552a0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104554928"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120012688"
 ---
 # <a name="life-cycle-of-a-telephony-service-provider"></a>Ciclo de vida de um provedor de serviços de telefonia
 
@@ -29,7 +29,7 @@ A negociação de uma versão de extensão específica do dispositivo pode ocorr
 
 Isso confirma a TAPI e o provedor de serviços para operar nesse nível de versão de extensão até que a seleção seja cancelada. Durante o tempo em que uma extensão específica do dispositivo está em vigor, uma tentativa de negociar um nível de versão de extensão deve permitir apenas o nível de versão atualmente em vigor. Depois que a extensão específica do dispositivo for cancelada, uma versão diferente poderá ser negociada e selecionada.
 
-As operações de telefone no par **abrir/fechar** são mostradas na ilustração a seguir. Algumas dessas operações são síncronas, outras são assíncronas. Se uma operação for concluída de forma assíncrona, outra operação poderá ser solicitada antes da conclusão da primeira relatórios. Portanto, as operações podem se sobrepor de qualquer forma. O provedor de serviços deve eventualmente relatar a conclusão para qualquer operação assíncrona solicitada. Fechar um telefone força a conclusão de operações assíncronas pendentes (possivelmente com uma indicação de "falha").
+Telefone operações dentro do par **abrir/fechar** são mostradas na ilustração a seguir. Algumas dessas operações são síncronas, outras são assíncronas. Se uma operação for concluída de forma assíncrona, outra operação poderá ser solicitada antes da conclusão da primeira relatórios. Portanto, as operações podem se sobrepor de qualquer forma. O provedor de serviços deve eventualmente relatar a conclusão para qualquer operação assíncrona solicitada. Fechar um telefone força a conclusão de operações assíncronas pendentes (possivelmente com uma indicação de "falha").
 
 O ciclo de vida para dispositivos de linha é semelhante ao ciclo de vida de telefones, exceto que as linhas têm seus próprios procedimentos de negociação, inicialização, abertura e fechamento. As operações em linhas abertas estão entredas por seu próprio par de **abertura/fechamento** . Esse par é, por sua vez, emparelhado entre o mesmo par de **inicialização/desligamento** que o telefone **abre/fecha**.
 

@@ -1,11 +1,11 @@
 ---
-title: Método SetButton IVMMouse (VPCCOMInterfaces. h)
+title: Método IVMMouse SetButton (VPCCOMInterfaces.h)
 description: Define o estado atual (para cima ou para baixo) do botão do mouse especificado.
 ms.assetid: 52b24472-68d6-4a42-8ae5-b1434a6d67f3
 keywords:
-- Método SetButton Virtual PC
-- Método SetButton Virtual PC, interface IVMMouse
-- IVMMouse interface virtual PC, método SetButton
+- Computador Virtual do método SetButton
+- Método SetButton Pc Virtual, interface IVMMouse
+- INTERFACE IVMMouse Virtual PC , método SetButton
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c2d30ae131ac33eeff339b98511fd2da60a1e606
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 04bdd3d7e0075b050c5184beee0a5da21f184040a03731317f2d61e09c07fd9c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104086221"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119974106"
 ---
-# <a name="ivmmousesetbutton-method"></a>Método IVMMouse:: SetButton
+# <a name="ivmmousesetbutton-method"></a>Método IVMMouse::SetButton
 
-\[O Windows Virtual PC não está mais disponível para uso a partir do Windows 8. Em vez disso, use o [provedor WMI do Hyper-V (v2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
+\[Windows O PC virtual não está mais disponível para uso a partir Windows 8. Em vez disso, use o provedor WMI do [Hyper-V (V2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
 
 Define o estado atual (para cima ou para baixo) do botão do mouse especificado.
 
@@ -45,33 +45,33 @@ HRESULT SetButton(
 
 <dl> <dt>
 
-*buttonIndex* \[ no\]
+*buttonIndex* \[ Em\]
 </dt> <dd>
 
-O índice do botão. Para obter uma lista de valores, consulte [**VMMouseButton**](vmmousebutton.md).
+O índice do botão. Para ver uma lista de valores, [**consulte VMMouseButton**](vmmousebutton.md).
 
 </dd> <dt>
 
-*para baixo* \[ no\]
+*para baixo* \[ Em\]
 </dt> <dd>
 
-O novo estado do botão. Use **true** se o estado do botão for para ser definido como Down e **false** se for definido como up.
+O novo estado do botão. Use **TRUE** se o estado do botão for definido como inobado e **FALSE** se for para ser definido como.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método pode retornar um desses valores.
 
 
 
-| Código/valor de retorno                                                                                                                                                        | Descrição                                                                                                                                       |
+| Valor/código de retorno                                                                                                                                                        | Descrição                                                                                                                                       |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> <dt>0</dt> </dl>                              | A operação foi bem-sucedida.<br/>                                                                                                          |
-| <dl> <dt>**E \_ INVALIDARG**</dt> <dt>0x80000003</dt> </dl>             | O parâmetro *buttonIndex* não é válido.<br/>                                                                                              |
-| <dl> <dt>**VM \_ E a \_ VM \_ não \_ está executando**</dt> <dt>0xA0040206</dt> </dl>   | A máquina virtual à qual este dispositivo de mouse está anexado não está em execução no momento.<br/>                                                   |
-| <dl> <dt>**VM \_ E \_ mouse \_ não \_ ativo**</dt> <dt>0xA0040800</dt> </dl> | A operação não pôde ser concluída porque o dispositivo de mouse não está ligado ou não está ativo no momento na máquina virtual.<br/> |
-| <dl> <dt>**DISP \_ E \_**</dt> <dt>0x80020009</dt> de exceção </dl>        | Ocorreu um erro inesperado.<br/>                                                                                                      |
+| <dl> <dt>**E \_ INVALIDARG**</dt> <dt>0x80000003</dt> </dl>             | O *parâmetro buttonIndex* não é válido.<br/>                                                                                              |
+| <dl> <dt>**VM \_ E \_ VM \_ NÃO \_ EXECUTANDO**</dt> <dt>0XA0040206</dt> </dl>   | A máquina virtual à qual este dispositivo do mouse está anexado não está em execução no momento.<br/>                                                   |
+| <dl> <dt>**VM \_ E \_ MOUSE NÃO ATIVO \_ \_ 0XA0040800**</dt> <dt></dt> </dl> | A operação não pôde ser concluída porque o dispositivo do mouse não está ligado ou não está ativo na máquina virtual no momento.<br/> |
+| <dl> <dt>**DISP \_ E \_ EXCEPTION**</dt> <dt>0x80020009</dt> </dl>        | Ocorreu um erro inesperado.<br/>                                                                                                      |
 
 
 
@@ -83,12 +83,12 @@ Esse método pode retornar um desses valores.
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>                                                    |
+| Cliente mínimo com suporte<br/> | Windows 7 \[ aplicativos da área de trabalho\]<br/>                                                    |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                     |
-| Fim do suporte do cliente<br/>    | Windows 7<br/>                                                                          |
+| Fim do suporte ao cliente<br/>    | Windows 7<br/>                                                                          |
 | Produto<br/>                  | Windows Virtual PC<br/>                                                                 |
-| parâmetro<br/>                   | <dl> <dt>VPCCOMInterfaces. h</dt> </dl> |
-| IID<br/>                      | IID \_ IVMmouse é definido como ac903f6d-6346-4f29-8875-5d511a13895e<br/>                   |
+| Cabeçalho<br/>                   | <dl> <dt>VPCCOMInterfaces.h</dt> </dl> |
+| IID<br/>                      | IID IVMmouse é definido como \_ ac903f6d-6346-4f29-8875-5d511a13895e<br/>                   |
 
 
 

@@ -3,7 +3,7 @@ title: Métodos ID2D1Ink StreamAsGeometry
 description: Recupera uma representação geométrica desse objeto de tinta.
 ms.assetid: f97d3e67-1530-14b2-1be9-7048e0dfc60f
 keywords:
-- Métodos StreamAsGeometry Direct2D
+- Direct2D métodos de StreamAsGeometry
 topic_type:
 - apiref
 api_type:
@@ -12,12 +12,12 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
 api_location: ''
-ms.openlocfilehash: e2978bf39c1e2f7a7490216149e4bde16d54769b
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: fed8f2a9adc8ec228769b4b11834b5750ac05d5b8eac29c0c9dc6feddf1e3f8b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104294388"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119917476"
 ---
 # <a name="id2d1inkstreamasgeometry-methods"></a>Métodos ID2D1Ink:: StreamAsGeometry
 

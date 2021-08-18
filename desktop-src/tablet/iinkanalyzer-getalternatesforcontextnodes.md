@@ -1,7 +1,7 @@
 ---
 description: Recupera alternativas de análise para os nós em uma coleção IContextNodes especificada.
 ms.assetid: 7d047808-4360-442d-8fd9-4ee4aeeed2c9
-title: 'Método IInkAnalyzer:: GetAlternatesForContextNodes (IACom. h)'
+title: Método IInkAnalyzer::GetAlternatesForContextNodes (IACom.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - IACom.dll
-ms.openlocfilehash: 71c53e4a8e0989d836d63db5c5cae8c89d56fcf8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bc282906bae70a28f612a8c1fd0a5a67ea1343c73f5ededf0d6c85a8bfd60aa0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104090526"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119939852"
 ---
-# <a name="iinkanalyzergetalternatesforcontextnodes-method"></a>Método IInkAnalyzer:: GetAlternatesForContextNodes
+# <a name="iinkanalyzergetalternatesforcontextnodes-method"></a>Método IInkAnalyzer::GetAlternatesForContextNodes
 
 Recupera alternativas de análise para os nós em uma coleção [**IContextNodes**](icontextnodes.md) especificada.
 
@@ -41,43 +41,43 @@ HRESULT GetAlternatesForContextNodes(
 
 <dl> <dt>
 
-*pContextNodes* \[ no\]
+*pContextNodes* \[ Em\]
 </dt> <dd>
 
-A coleção [**IContextNodes**](icontextnodes.md) para a qual as alternativas de análise são retornadas.
+A [**coleção IContextNodes**](icontextnodes.md) para a qual as alternativas de análise são retornadas.
 
 </dd> <dt>
 
-*ulMaximumAlternates* \[ no\]
+*ulMaximumAlternates* \[ Em\]
 </dt> <dd>
 
-O número máximo de alternativas a serem retornadas.
+O número máximo de alternativas a retornar.
 
 </dd> <dt>
 
-*ppAlternates* \[ fora\]
+*ppAlternates* \[ out\]
 </dt> <dd>
 
-O objeto [**IAnalysisAlternates**](ianalysisalternates.md) que contém as alternativas de análise.
+O [**objeto IAnalysisAlternates**](ianalysisalternates.md) que contém as alternativas de análise.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Para obter uma descrição dos valores de retorno, consulte [classes e interfaces – análise de tinta](classes-and-interfaces---ink-analysis.md).
+Para ver uma descrição dos valores de retorno, consulte [Classes e interfaces – Análise de Tinta.](classes-and-interfaces---ink-analysis.md)
 
 ## <a name="remarks"></a>Comentários
 
 > [!Caution]  
-> Para evitar um vazamento de memória, chame [**IUnknown:: Release**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-release) em *ppAlternates* quando você não precisar mais usar o objeto.
+> Para evitar uma perda de memória, chame [**IUnknown::Release**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-release) em *ppAlternates* quando você não precisar mais usar o objeto .
 
  
 
-O [**IAnalysisAlternate**](ianalysisalternate.md) superior é retornado como a primeira alternativa da coleção.
+O [**IAnalysisAlternate superior**](ianalysisalternate.md) é retornado como a primeira alternativa da coleção.
 
-Os objetos [**IContextNode**](icontextnode.md) em *pContextNodes* não precisam representar áreas adjacentes do documento.
+Os [**objetos IContextNode**](icontextnode.md) *em pContextNodes* não têm que representar áreas adjacentes do documento.
 
-Para cada dica de análise em nós, o [**IInkAnalyzer**](iinkanalyzer.md) retorna apenas a alternativa superior.
+Para cada dica de análise em nós, [**o IInkAnalyzer**](iinkanalyzer.md) retorna apenas a principal alternativa.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -85,9 +85,9 @@ Para cada dica de análise em nós, o [**IInkAnalyzer**](iinkanalyzer.md) retorn
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Somente aplicativos de área de trabalho do Windows XP Tablet PC Edition \[\]<br/>                                                 |
+| Cliente mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho do XP Tablet PC \[ Edition\]<br/>                                                 |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                                     |
-| parâmetro<br/>                   | <dl> <dt>IACom. h (também requer IACom \_ i. c)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>IACom.h (também requer IACom \_ i.c)</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |
 
 
@@ -105,16 +105,16 @@ Para cada dica de análise em nós, o [**IInkAnalyzer**](iinkanalyzer.md) retorn
 [**IAnalysisAlternates**](ianalysisalternates.md)
 </dt> <dt>
 
-[**Método IInkAnalyzer:: getalternations**](iinkanalyzer-getalternates.md)
+[**Método IInkAnalyzer::GetAlternates**](iinkanalyzer-getalternates.md)
 </dt> <dt>
 
-[**Método IInkAnalyzer:: GetAlternatesForStrokes**](iinkanalyzer-getalternatesforstrokes.md)
+[**Método IInkAnalyzer::GetAlternatesForRogkes**](iinkanalyzer-getalternatesforstrokes.md)
 </dt> <dt>
 
-[**Método IInkAnalyzer:: ModifyTopAlternate**](iinkanalyzer-modifytopalternate.md)
+[**Método IInkAnalyzer::ModifyTopAlternate**](iinkanalyzer-modifytopalternate.md)
 </dt> <dt>
 
-[**Método IInkAnalyzer:: ModifyTopAlternateWithConfirmation**](iinkanalyzer-modifytopalternatewithconfirmation.md)
+[**Método IInkAnalyzer::ModifyTopAlternateWithConfirmation**](iinkanalyzer-modifytopalternatewithconfirmation.md)
 </dt> <dt>
 
 [Referência de análise de tinta](ink-analysis-reference.md)

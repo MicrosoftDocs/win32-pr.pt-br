@@ -4,12 +4,12 @@ ms.assetid: f44e234e-b45a-40be-993d-956b8966c321
 title: Tipos semânticos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 69c2a0798a9ae7be3c2c0b56483707e3a09f67d5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 01845bd7790f618794816182bb4b11fc0d13baf9216d17bbd15c63a390a52a90
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105787492"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120040296"
 ---
 # <a name="semantic-types"></a>Tipos semânticos
 
@@ -25,7 +25,7 @@ As entradas a seguir nas colunas Format, Type e ContextData da [Tabela ModuleCon
 | Texto   | Enumeração       | <A>=<a>;<B>=<b>;<C>=<c> | Valor selecionado de um conjunto. Consulte [tipo de enumeração](enum-type.md).                                                 |
 | Texto   | Formatado  |                                                             | Valor que atende à definição do texto formatado no instalador. Consulte [tipo formatado](formatted-type.md). |
 | Texto   | RTF        |                                                             | Uma cadeia de texto RTF. Consulte [tipo de RTF](rtf-type.md).                                                          |
-| Texto   | Identificador |                                                             | Uma cadeia de texto em conformidade com um [identificador](identifier.md)de Windows Installer.                              |
+| Texto   | Identificador |                                                             | uma cadeia de texto em conformidade com um [identificador](identifier.md)de Windows Installer.                              |
 
 
 
@@ -60,7 +60,7 @@ As entradas a seguir nas colunas Format, Type e ContextData da [Tabela ModuleCon
 | Chave    | Diretório | IsolationDir     | Chave estrangeira para uma linha de tabela de diretório na qual os arquivos isolados pertencem. Consulte [tipo de diretório](directory-type.md).            |
 | Chave    | Diretório | ShortcutLocation | Chave estrangeira para uma linha de tabela de diretório na qual um atalho deve ser instalado. Consulte [tipo de diretório](directory-type.md).   |
 | Chave    | Propriedade  |                  | Chave estrangeira para uma linha de propriedade. Consulte [tipo de propriedade](property-type.md).                                                 |
-| Chave    | Propriedade  | Público           | Chave estrangeira para uma linha de propriedade. Consulte [tipo de propriedade](property-type.md).                                                 |
+| Chave    | Propriedade  | Públicos           | Chave estrangeira para uma linha de propriedade. Consulte [tipo de propriedade](property-type.md).                                                 |
 | Chave    | Propriedade  | Privados          | Chave estrangeira para uma linha de propriedade. Consulte [tipo de propriedade](property-type.md).                                                 |
 
 

@@ -1,19 +1,19 @@
 ---
-description: Classe Bluetooth de transferência de objeto do serviço de dispositivo.
+description: Bluetooth classe de transferência de objeto do serviço de dispositivo.
 ms.assetid: 2dbaccc5-7fe0-4041-b317-bbfb4a603e1b
 title: System. Devices. AEP. Bluetooth. Cod. Services. ObjectXfer
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: adf3730bdfddb037bd06ac482136d855c5242116
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e44528ab4740b8e365c56578e1318f3c7feaa692f136108593f1cabbdb0c2889
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104169321"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120010876"
 ---
 # <a name="systemdevicesaepbluetoothcodservicesobjectxfer"></a>System. Devices. AEP. Bluetooth. Cod. Services. ObjectXfer
 
-Classe Bluetooth de transferência de objeto do serviço de dispositivo.
+Bluetooth classe de transferência de objeto do serviço de dispositivo.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511"></a>Windows 10, versão 1703, Windows 10, versão 1607, Windows 10, versão 1511
 

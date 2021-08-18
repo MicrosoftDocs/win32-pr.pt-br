@@ -1,6 +1,6 @@
 ---
 title: Métodos 10Level9 ID3D11DeviceContext
-description: Esta seção lista as diferenças entre cada nível de recurso 10Level9 e o nível de recurso do D3D \_ \_ \_ 11 \_ 0 e superior para os métodos ID3D11DeviceContext.
+description: Esta seção lista as diferenças entre cada nível de recurso 10Level9 e o nível de recurso D3D FEATURE LEVEL 11 0 e superior para os métodos \_ \_ \_ \_ ID3D11DeviceContext.
 ms.assetid: 84478b56-0306-491a-9545-0849b06d8342
 ms.topic: reference
 ms.date: 05/31/2018
@@ -13,7 +13,7 @@ ms.locfileid: "118990066"
 ---
 # <a name="10level9-id3d11devicecontext-methods"></a>Métodos 10Level9 ID3D11DeviceContext
 
-Esta seção lista as diferenças entre cada nível de recurso 10Level9 e o nível de recurso do D3D \_ \_ \_ 11 \_ 0 e superior para os métodos [**ID3D11DeviceContext**](/windows/desktop/api/D3D11/nn-d3d11-id3d11devicecontext) .
+Esta seção lista as diferenças entre cada nível de recurso 10Level9 e o nível de recurso D3D FEATURE LEVEL 11 0 e superior para os métodos \_ \_ \_ \_ [**ID3D11DeviceContext.**](/windows/desktop/api/D3D11/nn-d3d11-id3d11devicecontext)
 
 -   [ID3D11DeviceContext::CopySubresourceRegion](#id3d11devicecontextcopysubresourceregion)
 -   [ID3D11DeviceContext::CopyResource](#id3d11devicecontextcopyresource)
@@ -80,7 +80,7 @@ Esta seção lista as diferenças entre cada nível de recurso 10Level9 e o nív
 <tbody>
 <tr class="odd">
 <td>D3D_FEATURE_LEVEL_9_1</td>
-<td rowspan="3"> Somente Texture2D e buffers podem ser copiados na memória acessível por GPU.<br/> Texture3D não pode ser copiado da memória acessível por GPU para a memória acessível pela CPU.<br/> Qualquer recurso que tenha apenas D3D10_BIND_SHADER_RESOURCE não pode ser copiado da memória acessível por GPU para memória acessível por CPU.<br/> Não é possível copiar as texturas do volume mipmapped. <br/> $ {REMOVER} $<br />
+<td rowspan="3"> Somente Texture2D e buffers podem ser copiados na memória acessível por GPU.<br/> Texture3D não pode ser copiado da memória acessível por GPU para a memória acessível pela CPU.<br/> Qualquer recurso que tenha apenas D3D10_BIND_SHADER_RESOURCE não pode ser copiado da memória acessível por GPU para a memória acessível pela CPU.<br/> Não é possível copiar texturas de volume mapeadas. <br/> ${REMOVE}$<br />
 </td>
 </tr>
 <tr class="even">
@@ -112,7 +112,7 @@ Esta seção lista as diferenças entre cada nível de recurso 10Level9 e o nív
 <tbody>
 <tr class="odd">
 <td>D3D_FEATURE_LEVEL_9_1</td>
-<td rowspan="3"> Somente Texture2D e buffers podem ser copiados na memória acessível por GPU.<br/> Texture3D não pode ser copiado da memória acessível por GPU para a memória acessível pela CPU.<br/> Qualquer recurso que tenha apenas D3D10_BIND_SHADER_RESOURCE não pode ser copiado da memória acessível por GPU para memória acessível por CPU.<br/> $ {REMOVER} $<br />
+<td rowspan="3"> Somente Texture2D e buffers podem ser copiados na memória acessível por GPU.<br/> Texture3D não pode ser copiado da memória acessível por GPU para a memória acessível pela CPU.<br/> Qualquer recurso que tenha apenas D3D10_BIND_SHADER_RESOURCE não pode ser copiado da memória acessível por GPU para a memória acessível pela CPU.<br/> ${REMOVE}$<br />
 </td>
 </tr>
 <tr class="even">
@@ -144,7 +144,7 @@ Esta seção lista as diferenças entre cada nível de recurso 10Level9 e o nív
 <tbody>
 <tr class="odd">
 <td>D3D_FEATURE_LEVEL_9_1</td>
-<td rowspan="3">Sem suporte em nenhum nível de recurso de 9. *. $ {REMOVE} $<br />
+<td rowspan="3">Não há suporte para nenhum nível de recurso 9.* .${REMOVE}$<br />
 </td>
 </tr>
 <tr class="even">
@@ -176,7 +176,7 @@ Esta seção lista as diferenças entre cada nível de recurso 10Level9 e o nív
 <tbody>
 <tr class="odd">
 <td>D3D_FEATURE_LEVEL_9_1</td>
-<td rowspan="3">Sem suporte em nenhum nível de recurso de 9. *. $ {REMOVE} $<br />
+<td rowspan="3">Não há suporte para nenhum nível de recurso 9.* .${REMOVE}$<br />
 </td>
 </tr>
 <tr class="even">
@@ -208,7 +208,7 @@ Esta seção lista as diferenças entre cada nível de recurso 10Level9 e o nív
 <tbody>
 <tr class="odd">
 <td>D3D_FEATURE_LEVEL_9_1</td>
-<td rowspan="3">Sem suporte em nenhum nível de recurso de 9. *. $ {REMOVE} $<br />
+<td rowspan="3">Não há suporte para nenhum nível de recurso 9.* .${REMOVE}$<br />
 </td>
 </tr>
 <tr class="even">
@@ -240,7 +240,7 @@ Esta seção lista as diferenças entre cada nível de recurso 10Level9 e o nív
 <tbody>
 <tr class="odd">
 <td>D3D_FEATURE_LEVEL_9_1</td>
-<td rowspan="3">Somente a primeira fatia da matriz será limpa. Os aplicativos devem criar uma exibição de destino de renderização para cada fatia de face ou matriz e, em seguida, limpar cada exibição individualmente.${REMOVE}$<br />
+<td rowspan="3">Somente a primeira fatia da matriz será apagada. Os aplicativos devem criar uma exibição de destino de renderização para cada fatia de face ou matriz e, em seguida, limpar cada exibição individualmente. $ {REMOVE} $<br />
 </td>
 </tr>
 <tr class="even">
@@ -272,7 +272,7 @@ Esta seção lista as diferenças entre cada nível de recurso 10Level9 e o nív
 <tbody>
 <tr class="odd">
 <td>D3D_FEATURE_LEVEL_9_1</td>
-<td rowspan="3">Não há suporte para nenhum nível de recurso 9.* .${REMOVE}$<br />
+<td rowspan="3">Sem suporte em nenhum nível de recurso de 9. *. $ {REMOVE} $<br />
 </td>
 </tr>
 <tr class="even">
@@ -304,7 +304,7 @@ Esta seção lista as diferenças entre cada nível de recurso 10Level9 e o nív
 <tbody>
 <tr class="odd">
 <td>D3D_FEATURE_LEVEL_9_1</td>
-<td rowspan="3">Não há suporte para nenhum nível de recurso 9.* .${REMOVE}$<br />
+<td rowspan="3">Sem suporte em nenhum nível de recurso de 9. *. $ {REMOVE} $<br />
 </td>
 </tr>
 <tr class="even">
@@ -336,7 +336,7 @@ Esta seção lista as diferenças entre cada nível de recurso 10Level9 e o nív
 <tbody>
 <tr class="odd">
 <td>D3D_FEATURE_LEVEL_9_1</td>
-<td rowspan="3">Não há suporte para nenhum nível de recurso 9.* .${REMOVE}$<br />
+<td rowspan="3">Sem suporte em nenhum nível de recurso de 9. *. $ {REMOVE} $<br />
 </td>
 </tr>
 <tr class="even">
@@ -368,7 +368,7 @@ Esta seção lista as diferenças entre cada nível de recurso 10Level9 e o nív
 <tbody>
 <tr class="odd">
 <td>D3D_FEATURE_LEVEL_9_1</td>
-<td rowspan="3">Não há suporte para nenhum nível de recurso 9.* .${REMOVE}$<br />
+<td rowspan="3">Sem suporte em nenhum nível de recurso de 9. *. $ {REMOVE} $<br />
 </td>
 </tr>
 <tr class="even">
@@ -400,7 +400,7 @@ Esta seção lista as diferenças entre cada nível de recurso 10Level9 e o nív
 <tbody>
 <tr class="odd">
 <td>D3D_FEATURE_LEVEL_9_1</td>
-<td rowspan="3">Não há suporte para nenhum nível de recurso 9.* .${REMOVE}$<br />
+<td rowspan="3">Sem suporte em nenhum nível de recurso de 9. *. $ {REMOVE} $<br />
 </td>
 </tr>
 <tr class="even">
@@ -432,7 +432,7 @@ Esta seção lista as diferenças entre cada nível de recurso 10Level9 e o nív
 <tbody>
 <tr class="odd">
 <td>D3D_FEATURE_LEVEL_9_1</td>
-<td rowspan="3">Não há suporte para nenhum nível de recurso 9.* .${REMOVE}$<br />
+<td rowspan="3">Sem suporte em nenhum nível de recurso de 9. *. $ {REMOVE} $<br />
 </td>
 </tr>
 <tr class="even">
@@ -464,7 +464,7 @@ Esta seção lista as diferenças entre cada nível de recurso 10Level9 e o nív
 <tbody>
 <tr class="odd">
 <td>D3D_FEATURE_LEVEL_9_1</td>
-<td rowspan="3">Não há suporte para nenhum nível de recurso 9.* .${REMOVE}$<br />
+<td rowspan="3">Sem suporte em nenhum nível de recurso de 9. *. $ {REMOVE} $<br />
 </td>
 </tr>
 <tr class="even">
@@ -488,9 +488,9 @@ Esta seção lista as diferenças entre cada nível de recurso 10Level9 e o nív
 
 | Nível de recursos             | Diferenças de comportamento                                                                                                               |
 |---------------------------|------------------------------------------------------------------------------------------------------------------------------------|
-| D3D \_ FEATURE \_ LEVEL \_ 9 \_ 1 | O número de primitivos pode não exceder 65535.<br/> Texturas não podem se repetir em um primitivo mais de 128 vezes.<br/>    |
-| D3D \_ FEATURE \_ LEVEL \_ 9 \_ 2 | O número de primitivos pode não exceder 1048575.<br/> As texturas não podem se repetir em um primitivo mais de 2048 vezes.<br/> |
-| D3D \_ FEATURE \_ LEVEL \_ 9 \_ 3 | O número de primitivos pode não exceder 1048575.<br/> Texturas não podem se repetir em um primitivo mais de 8192 vezes.<br/> |
+| Nível de recurso do D3D \_ \_ \_ 9 \_ 1 | O número de primitivos não pode exceder 65535.<br/> As texturas não podem se repetir em um primitivo mais de 128 vezes.<br/>    |
+| Nível de recurso do D3D \_ \_ \_ 9 \_ 2 | O número de primitivos não pode exceder 1048575.<br/> As texturas não podem se repetir em um primitivo mais de 2048 vezes.<br/> |
+| Nível de recurso do D3D \_ \_ \_ 9 \_ 3 | O número de primitivos não pode exceder 1048575.<br/> As texturas não podem se repetir em um primitivo mais de 8192 vezes.<br/> |
 
 
 
@@ -510,7 +510,7 @@ Esta seção lista as diferenças entre cada nível de recurso 10Level9 e o nív
 <tbody>
 <tr class="odd">
 <td>D3D_FEATURE_LEVEL_9_1</td>
-<td rowspan="3">Não há suporte para nenhum nível de recurso 9.* .${REMOVE}$<br />
+<td rowspan="3">Sem suporte em nenhum nível de recurso de 9. *. $ {REMOVE} $<br />
 </td>
 </tr>
 <tr class="even">
@@ -534,9 +534,9 @@ Esta seção lista as diferenças entre cada nível de recurso 10Level9 e o nív
 
 | Nível de recursos             | Diferenças de comportamento                                                                                                                                                                                                            |
 |---------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| D3D \_ FEATURE \_ LEVEL \_ 9 \_ 1 | O número de primitivos pode não exceder 65535.<br/> Texturas não podem se repetir em um primitivo mais de 128 vezes.<br/> Os valores de índice não podem exceder 65534.<br/> Não há suporte para listas de pontos indexados.<br/>      |
-| D3D \_ FEATURE \_ LEVEL \_ 9 \_ 2 | O número de primitivos pode não exceder 1048575.<br/> As texturas não podem se repetir em um primitivo mais de 2048 vezes.<br/> Os valores de índice não podem exceder 1048575.<br/> Não há suporte para listas de pontos indexados.<br/> |
-| D3D \_ FEATURE \_ LEVEL \_ 9 \_ 3 | O número de primitivos pode não exceder 1048575.<br/> Texturas não podem se repetir em um primitivo mais de 8192 vezes.<br/> Os valores de índice não podem exceder 1048575.<br/> Não há suporte para listas de pontos indexados.<br/> |
+| Nível de recurso do D3D \_ \_ \_ 9 \_ 1 | O número de primitivos não pode exceder 65535.<br/> As texturas não podem se repetir em um primitivo mais de 128 vezes.<br/> Os valores de índice não podem exceder 65534.<br/> Não há suporte para listas de pontos indexados.<br/>      |
+| Nível de recurso do D3D \_ \_ \_ 9 \_ 2 | O número de primitivos não pode exceder 1048575.<br/> As texturas não podem se repetir em um primitivo mais de 2048 vezes.<br/> Os valores de índice não podem exceder 1048575.<br/> Não há suporte para listas de pontos indexados.<br/> |
+| Nível de recurso do D3D \_ \_ \_ 9 \_ 3 | O número de primitivos não pode exceder 1048575.<br/> As texturas não podem se repetir em um primitivo mais de 8192 vezes.<br/> Os valores de índice não podem exceder 1048575.<br/> Não há suporte para listas de pontos indexados.<br/> |
 
 
 
@@ -560,7 +560,7 @@ Esta seção lista as diferenças entre cada nível de recurso 10Level9 e o nív
 <tbody>
 <tr class="odd">
 <td>D3D_FEATURE_LEVEL_9_1</td>
-<td rowspan="2">Sem suporte${REMOVE}$<br />
+<td rowspan="2">Sem suporte $ {REMOVE} $<br />
 </td>
 </tr>
 <tr class="even">
@@ -569,7 +569,7 @@ Esta seção lista as diferenças entre cada nível de recurso 10Level9 e o nív
 </tr>
 <tr class="odd">
 <td>D3D_FEATURE_LEVEL_9_3</td>
-<td>O número de primitivos pode não exceder 1048575.<br/> Texturas não podem se repetir em um primitivo mais de 8192 vezes.<br/> Os valores de índice não podem exceder 1048575.<br/>
+<td>O número de primitivos não pode exceder 1048575.<br/> As texturas não podem se repetir em um primitivo mais de 8192 vezes.<br/> Os valores de índice não podem exceder 1048575.<br/>
 <blockquote>
 [!Note]<br />
 Quando você chama o método <a href="/windows/desktop/api/D3D11/nf-d3d11-id3d11devicecontext-drawindexedinstanced"><strong>DrawIndexedInstanced</strong></a> com um sombreador de vértice que está associado ao pipeline e que não importa nenhum dado por instância, alguns hardwares de gráficos do Direct3D 9 podem não desenhar nada. Em particular, se o sombreador de vértice não usar nenhum dado por instância, chamar <strong>DrawIndexedInstanced</strong> com 1 instância não será equivalente a chamar <a href="/windows/desktop/api/D3D11/nf-d3d11-id3d11devicecontext-draw"><strong>draw</strong></a>.
@@ -1037,7 +1037,7 @@ Quando você chama o método <a href="/windows/desktop/api/D3D11/nf-d3d11-id3d11
 <tbody>
 <tr class="odd">
 <td>D3D_FEATURE_LEVEL_9_1</td>
-<td rowspan="5">Sem suporte em qualquer nível de recurso 9. * ou 10. *. $ {REMOVE} $<br />
+<td rowspan="5">Sem suporte em nenhum nível de recurso 9.* ou 10.* .${REMOVE}$<br />
 </td>
 </tr>
 <tr class="even">
@@ -1077,7 +1077,7 @@ Quando você chama o método <a href="/windows/desktop/api/D3D11/nf-d3d11-id3d11
 <tbody>
 <tr class="odd">
 <td>D3D_FEATURE_LEVEL_9_1</td>
-<td rowspan="5">Sem suporte em qualquer nível de recurso 9. * ou 10. *. $ {REMOVE} $<br />
+<td rowspan="5">Sem suporte em nenhum nível de recurso 9.* ou 10.* .${REMOVE}$<br />
 </td>
 </tr>
 <tr class="even">
@@ -1117,7 +1117,7 @@ Quando você chama o método <a href="/windows/desktop/api/D3D11/nf-d3d11-id3d11
 <tbody>
 <tr class="odd">
 <td>D3D_FEATURE_LEVEL_9_1</td>
-<td rowspan="5">Sem suporte em qualquer nível de recurso 9. * ou 10. *. $ {REMOVE} $<br />
+<td rowspan="5">Sem suporte em nenhum nível de recurso 9.* ou 10.* .${REMOVE}$<br />
 </td>
 </tr>
 <tr class="even">
@@ -1157,11 +1157,11 @@ Quando você chama o método <a href="/windows/desktop/api/D3D11/nf-d3d11-id3d11
 <tbody>
 <tr class="odd">
 <td>D3D_FEATURE_LEVEL_9_1</td>
-<td>O formato pode ser diferente daquele especificado na criação do buffer, mas uma tradução cara será incorrida.<br/> Permite apenas buffers de índice com o formato DXGI_FORMAT_R16_UINT. <br/></td>
+<td>O formato tem permissão para ser diferente do especificado na criação do buffer, mas uma conversão cara será incorrida.<br/> Permite apenas buffers de índice com o formato DXGI_FORMAT_R16_UINT dados. <br/></td>
 </tr>
 <tr class="even">
 <td>D3D_FEATURE_LEVEL_9_2</td>
-<td rowspan="2"> O formato pode ser diferente daquele especificado na criação do buffer, mas uma tradução cara será incorrida.<br/> Permite buffers de índice com os formatos DXGI_FORMAT_R16_UINT e DXGI_FORMAT_R32_UINT como D3D_FEATURE_LEVEL_10_0 e superior. <br/> $ {REMOVER} $<br />
+<td rowspan="2"> O formato tem permissão para ser diferente do especificado na criação do buffer, mas uma conversão cara será incorrida.<br/> Permite buffers de índice com os formatos DXGI_FORMAT_R16_UINT e DXGI_FORMAT_R32_UINT como D3D_FEATURE_LEVEL_10_0 e superior. <br/> ${REMOVE}$<br />
 </td>
 </tr>
 <tr class="odd">
@@ -1189,7 +1189,7 @@ Quando você chama o método <a href="/windows/desktop/api/D3D11/nf-d3d11-id3d11
 <tbody>
 <tr class="odd">
 <td>D3D_FEATURE_LEVEL_9_1</td>
-<td rowspan="3">Não há suporte para topologias primitivas com adjacência $ {REMOVE} $<br />
+<td rowspan="3">Não há suporte para topologias primitivas com adjacência${REMOVE}$<br />
 </td>
 </tr>
 <tr class="even">
@@ -1221,7 +1221,7 @@ Quando você chama o método <a href="/windows/desktop/api/D3D11/nf-d3d11-id3d11
 <tbody>
 <tr class="odd">
 <td>D3D_FEATURE_LEVEL_9_1</td>
-<td rowspan="3">SampleMask não pode ser zero $ {REMOVE} $<br />
+<td rowspan="3">SampleMask não pode ser zero${REMOVE}$<br />
 </td>
 </tr>
 <tr class="even">
@@ -1253,7 +1253,7 @@ Quando você chama o método <a href="/windows/desktop/api/D3D11/nf-d3d11-id3d11
 <tbody>
 <tr class="odd">
 <td>D3D_FEATURE_LEVEL_9_1</td>
-<td rowspan="2">Somente um destino de renderização tem suporte para $ {REMOVE} $<br />
+<td rowspan="2">Apenas um destino de renderização com suporte${REMOVE}$<br />
 </td>
 </tr>
 <tr class="even">
@@ -1262,7 +1262,7 @@ Quando você chama o método <a href="/windows/desktop/api/D3D11/nf-d3d11-id3d11
 </tr>
 <tr class="odd">
 <td>D3D_FEATURE_LEVEL_9_3</td>
-<td>Somente quatro destinos de renderização têm suporte e todos os recursos associados devem ter a mesma profundidade de bits.</td>
+<td>Somente quatro destinos de renderização têm suporte e todos os recursos vinculados devem ter a mesma profundidade de bits.</td>
 </tr>
 </tbody>
 </table>
@@ -1285,7 +1285,7 @@ Quando você chama o método <a href="/windows/desktop/api/D3D11/nf-d3d11-id3d11
 <tbody>
 <tr class="odd">
 <td>D3D_FEATURE_LEVEL_9_1</td>
-<td rowspan="3">Sem suporte em nenhum nível de recurso de 9. *. $ {REMOVE} $<br />
+<td rowspan="3">Não há suporte para nenhum nível de recurso 9.* .${REMOVE}$<br />
 </td>
 </tr>
 <tr class="even">
@@ -1317,7 +1317,7 @@ Quando você chama o método <a href="/windows/desktop/api/D3D11/nf-d3d11-id3d11
 <tbody>
 <tr class="odd">
 <td>D3D_FEATURE_LEVEL_9_1</td>
-<td rowspan="3">Consulte nível de recurso 10,0, mas o número total de constantes usadas pelo sombreador não pode exceder 32 $ {REMOVE} $<br />
+<td rowspan="3">Consulte o nível de recurso 10.0, mas o número total de constantes usadas pelo sombreador não pode exceder 32${REMOVE}$<br />
 </td>
 </tr>
 <tr class="even">
@@ -1349,7 +1349,7 @@ Quando você chama o método <a href="/windows/desktop/api/D3D11/nf-d3d11-id3d11
 <tbody>
 <tr class="odd">
 <td>D3D_FEATURE_LEVEL_9_1</td>
-<td rowspan="3">No máximo 16 amostras podem ser associadas $ {REMOVE} $<br />
+<td rowspan="3">Não mais de 16 amostras podem ser bound${REMOVE}$<br />
 </td>
 </tr>
 <tr class="even">
@@ -1381,7 +1381,7 @@ Quando você chama o método <a href="/windows/desktop/api/D3D11/nf-d3d11-id3d11
 <tbody>
 <tr class="odd">
 <td>D3D_FEATURE_LEVEL_9_1</td>
-<td rowspan="2">Somente ps_4_0_level_9_1 $ {REMOVE} $<br />
+<td rowspan="2">Somente ps_4_0_level_9_1${REMOVE}$<br />
 </td>
 </tr>
 <tr class="even">
@@ -1413,7 +1413,7 @@ Quando você chama o método <a href="/windows/desktop/api/D3D11/nf-d3d11-id3d11
 <tbody>
 <tr class="odd">
 <td>D3D_FEATURE_LEVEL_9_1</td>
-<td rowspan="3">Não mais que 8 recursos de sombreador vinculados simultaneamente $ {REMOVE} $<br />
+<td rowspan="3">Não mais de 8 recursos de sombreador simultaneamente vinculados${REMOVE}$<br />
 </td>
 </tr>
 <tr class="even">
@@ -1445,7 +1445,7 @@ Quando você chama o método <a href="/windows/desktop/api/D3D11/nf-d3d11-id3d11
 <tbody>
 <tr class="odd">
 <td>D3D_FEATURE_LEVEL_9_1</td>
-<td rowspan="3">Somente a rect de tesoura zero está disponível${REMOVE}$<br />
+<td rowspan="3">Somente o Rect inicial de tesoura está disponível $ {REMOVE} $<br />
 </td>
 </tr>
 <tr class="even">
@@ -1477,7 +1477,7 @@ Quando você chama o método <a href="/windows/desktop/api/D3D11/nf-d3d11-id3d11
 <tbody>
 <tr class="odd">
 <td>D3D_FEATURE_LEVEL_9_1</td>
-<td rowspan="3">Somente o zero viewport está disponível${REMOVE}$<br />
+<td rowspan="3">Somente o visor inicial está disponível $ {REMOVE} $<br />
 </td>
 </tr>
 <tr class="even">
@@ -1495,9 +1495,9 @@ Quando você chama o método <a href="/windows/desktop/api/D3D11/nf-d3d11-id3d11
 
  
 
-Embora você especifique valores float para os membros da estrutura [**\_ VIEWPORT D3D11**](/windows/desktop/api/D3D11/ns-d3d11-d3d11_viewport) para a matriz *pViewports* em uma chamada para [**ID3D11DeviceContext::RSSetViewports**](/windows/desktop/api/D3D11/nf-d3d11-id3d11devicecontext-rssetviewports) para níveis de recurso [9](overviews-direct3d-11-devices-downlevel-intro.md) \_ x, **RSSetViewports** usa DWORDs internamente. Devido a esse comportamento, quando você usa um canto superior esquerdo negativo para o viewport, a chamada para **RSSetViewports** para níveis de recurso 9 \_ x falha. Essa falha ocorre porque **RSSetViewports** para 9 x transforma os valores de ponto flutuante em inteiros sem sinal sem validação, o que resulta em estouro \_ de inteiro.
+Embora você especifique valores float para os membros da estrutura do [**\_ visor D3D11**](/windows/desktop/api/D3D11/ns-d3d11-d3d11_viewport) para a matriz *pViewports* em uma chamada para [**ID3D11DeviceContext:: RSSetViewports**](/windows/desktop/api/D3D11/nf-d3d11-id3d11devicecontext-rssetviewports) para [os níveis de recursos](overviews-direct3d-11-devices-downlevel-intro.md) 9 \_ x, **RSSetViewports** usa DWORDs internamente. Devido a esse comportamento, quando você usa um canto superior esquerdo negativo para o visor, a chamada para **RSSetViewports** para os níveis de recursos 9 \_ x falha. Essa falha ocorre porque o **RSSetViewports** para 9 \_ x converte os valores de ponto flutuante em inteiros não assinados sem validação, o que resulta em um estouro de número inteiro.
 
-A chamada para [**ID3D11DeviceContext::RSSetViewports**](/windows/desktop/api/D3D11/nf-d3d11-id3d11devicecontext-rssetviewports) para os níveis [de](overviews-direct3d-11-devices-downlevel-intro.md) recurso 10 x e 11 x funciona como esperado mesmo quando você usa um canto superior esquerdo negativo para o \_ \_ viewport.
+A chamada para [**ID3D11DeviceContext:: RSSetViewports**](/windows/desktop/api/D3D11/nf-d3d11-id3d11devicecontext-rssetviewports) para [os níveis de recurso](overviews-direct3d-11-devices-downlevel-intro.md) 10 \_ x e 11 \_ x funciona como esperado mesmo quando você usa um canto superior esquerdo negativo para o visor.
 
 ## <a name="id3d11devicecontextsetpredication"></a>ID3D11DeviceContext::SetPredication
 
@@ -1513,7 +1513,7 @@ A chamada para [**ID3D11DeviceContext::RSSetViewports**](/windows/desktop/api/D3
 <tbody>
 <tr class="odd">
 <td>D3D_FEATURE_LEVEL_9_1</td>
-<td rowspan="3">Não há suporte para nenhum nível de recurso 9.* .${REMOVE}$<br />
+<td rowspan="3">Sem suporte em nenhum nível de recurso de 9. *. $ {REMOVE} $<br />
 </td>
 </tr>
 <tr class="even">
@@ -1545,7 +1545,7 @@ A chamada para [**ID3D11DeviceContext::RSSetViewports**](/windows/desktop/api/D3
 <tbody>
 <tr class="odd">
 <td>D3D_FEATURE_LEVEL_9_1</td>
-<td rowspan="3">Não há suporte para nenhum nível de recurso 9.* .${REMOVE}$<br />
+<td rowspan="3">Sem suporte em nenhum nível de recurso de 9. *. $ {REMOVE} $<br />
 </td>
 </tr>
 <tr class="even">
@@ -1577,7 +1577,7 @@ A chamada para [**ID3D11DeviceContext::RSSetViewports**](/windows/desktop/api/D3
 <tbody>
 <tr class="odd">
 <td>D3D_FEATURE_LEVEL_9_1</td>
-<td rowspan="3">Consulte o nível de recurso 10.0, mas o número total de constantes usadas pelo sombreador não pode exceder 255${REMOVE}$<br />
+<td rowspan="3">Consulte nível de recurso 10,0, mas o número total de constantes usadas pelo sombreador não pode exceder 255 $ {REMOVE} $<br />
 </td>
 </tr>
 <tr class="even">
@@ -1609,7 +1609,7 @@ A chamada para [**ID3D11DeviceContext::RSSetViewports**](/windows/desktop/api/D3
 <tbody>
 <tr class="odd">
 <td>D3D_FEATURE_LEVEL_9_1</td>
-<td rowspan="3">Não há suporte para nenhum nível de recurso 9.* .${REMOVE}$<br />
+<td rowspan="3">Sem suporte em nenhum nível de recurso de 9. *. $ {REMOVE} $<br />
 </td>
 </tr>
 <tr class="even">
@@ -1641,7 +1641,7 @@ A chamada para [**ID3D11DeviceContext::RSSetViewports**](/windows/desktop/api/D3
 <tbody>
 <tr class="odd">
 <td>D3D_FEATURE_LEVEL_9_1</td>
-<td rowspan="2">Somente vs_4_0_level_9_1${REMOVE}$<br />
+<td rowspan="2">Somente vs_4_0_level_9_1 $ {REMOVE} $<br />
 </td>
 </tr>
 <tr class="even">
@@ -1673,7 +1673,7 @@ A chamada para [**ID3D11DeviceContext::RSSetViewports**](/windows/desktop/api/D3
 <tbody>
 <tr class="odd">
 <td>D3D_FEATURE_LEVEL_9_1</td>
-<td rowspan="3">Não há suporte para nenhum nível de recurso 9.* .${REMOVE}$<br />
+<td rowspan="3">Sem suporte em nenhum nível de recurso de 9. *. $ {REMOVE} $<br />
 </td>
 </tr>
 <tr class="even">
@@ -1695,7 +1695,7 @@ A chamada para [**ID3D11DeviceContext::RSSetViewports**](/windows/desktop/api/D3
 
 <dl> <dt>
 
-[Referência 10Level9](d3d11-graphics-reference-10level9.md)
+[Referência de 10Level9](d3d11-graphics-reference-10level9.md)
 </dt> </dl>
 
  

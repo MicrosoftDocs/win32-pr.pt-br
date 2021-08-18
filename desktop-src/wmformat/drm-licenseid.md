@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a8d9174e364e186056e63375b8ed322875dfb868
-ms.sourcegitcommit: 48d1c892045445bcbd0f22bafa2fd3861ffaa6e7
+ms.openlocfilehash: d9dea32903de18dd1bde8f132b8acf993d3eba2deb0d45c814f0572ce8591ca3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "104293796"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119930946"
 ---
 # <a name="drm_licenseid"></a>\_Licenseid DRM
 
@@ -44,9 +44,9 @@ A ID da licença é armazenada em uma licença, não em um arquivo ASF. Cada lic
 [**Lista de Atributos**](attribute-list.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

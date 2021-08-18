@@ -1,28 +1,28 @@
 ---
 description: Identifique uma chave usando um identificador HCRYPTKEY.
 ms.assetid: 23569104-a302-40de-a31a-a4ee22d5f7f2
-title: 'Programa de exemplo C: importando uma chave de texto não criptografado'
+title: 'Exemplo de programa C: importando uma chave de texto não criptografado'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 92341f4118770b963a9ea3dd47a153da0fe406b8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 58632d7dd3f7411788e26538906c41d1b33ce30888696516e29642f8dbaf00c4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104297675"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119874016"
 ---
-# <a name="example-c-program-importing-a-plaintext-key"></a>Programa de exemplo C: importando uma chave de texto não criptografado
+# <a name="example-c-program-importing-a-plaintext-key"></a>Exemplo de programa C: importando uma chave de texto não criptografado
 
-Muitas das funções neste SDK exigem que você identifique uma chave usando um identificador **HCRYPTKEY** . Se a chave estiver contida em uma matriz de bytes, você poderá criar um identificador usando a função [**CryptImportKey**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptimportkey) , conforme mostrado no exemplo a seguir.
+Muitas das funções neste SDK exigem que você identifique uma chave usando um identificador **HCRYPTKEY.** Se sua chave estiver contida em uma matriz de byte, você poderá criar um handle usando a [**função CryptImportKey,**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptimportkey) conforme mostrado no exemplo a seguir.
 
-Este exemplo demonstra as seguintes tarefas e funções de CryptoAPI:
+Este exemplo demonstra as seguintes tarefas e funções CryptoAPI:
 
--   Adquirir um identificador para um [*provedor de serviços de criptografia*](../secgloss/c-gly.md) chamando [**CryptAcquireContext**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptacquirecontexta).
--   Importar uma chave de texto sem formatação para o contêiner de chave do CSP chamando [**CryptImportKey**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptimportkey).
--   Exportando uma chave do contêiner de chave chamando [**CyptExportKey**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptexportkey).
+-   Adquirir um handle para um provedor [*de serviços criptográfico*](../secgloss/c-gly.md) chamando [**CryptAcquireContext**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptacquirecontexta).
+-   Importar uma chave de texto não criptografado para o contêiner de chave CSP chamando [**CryptImportKey**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptimportkey).
+-   Exportando uma chave do contêiner de chaves chamando [**CyptExportKey**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptexportkey).
 -   Imprimindo a chave exportada no console para verificar se a chave de texto não criptografado foi realmente importada para o contêiner.
 -   Liberando a memória reservada para a chave de texto não criptografado.
--   Liberando o CSP chamando [**CryptReleaseContext**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptreleasecontext).
+-   Liberando o CSP chamando [**CryptReleaseContext.**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptreleasecontext)
 
 
 ```C++

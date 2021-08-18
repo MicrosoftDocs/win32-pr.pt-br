@@ -1,10 +1,10 @@
 ---
-title: Elemento AllowHardTerminate (settingstype)
+title: Elemento AllowHardTerminate (settingsType)
 description: Especifica que a tarefa pode ser encerrada usando TerminateProcess.
 ms.assetid: 093a3cc6-d3e1-48e3-bc9e-0b15df2a54de
 keywords:
-- Elemento AllowHardTerminate (settingstype) Agendador de Tarefas
-- Agendador de Tarefas do elemento AllowHardTerminate
+- Elemento AllowHardTerminate (settingsType) Agendador de Tarefas
+- Elemento AllowHardTerminate Agendador de Tarefas
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: eba987b42206121b91b3c096f298eac32cf52b38
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d7a143dfb0024cced8a67595e17b12fba9d037b335b425272e1ad2a7999e0b11
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105800011"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120010916"
 ---
-# <a name="allowhardterminate-settingstype-element"></a>Elemento AllowHardTerminate (settingstype)
+# <a name="allowhardterminate-settingstype-element"></a>Elemento AllowHardTerminate (settingsType)
 
 Especifica que a tarefa pode ser encerrada usando TerminateProcess.
 
@@ -33,7 +33,7 @@ Especifica que a tarefa pode ser encerrada usando TerminateProcess.
  />
 ```
 
-O elemento **AllowHardTerminate** é definido pelo tipo complexo [**settingstype**](taskschedulerschema-settingstype-complextype.md) .
+O **elemento AllowHardTerminate** é definido pelo tipo complexo [**settingsType.**](taskschedulerschema-settingstype-complextype.md)
 
 ## <a name="parent-element"></a>Elemento pai
 
@@ -41,19 +41,19 @@ O elemento **AllowHardTerminate** é definido pelo tipo complexo [**settingstype
 
 | Elemento                                                           | Derivado de                                                 | Descrição                                                                        |
 |-------------------------------------------------------------------|--------------------------------------------------------------|------------------------------------------------------------------------------------|
-| [**Configurações**](taskschedulerschema-settings-tasktype-element.md) | [**taskType**](taskschedulerschema-tasktype-complextype.md) | Contém as configurações que o Agendador de Tarefas usa para executar a tarefa.<br/> |
+| [**Configurações**](taskschedulerschema-settings-tasktype-element.md) | [**Tasktype**](taskschedulerschema-tasktype-complextype.md) | Contém as configurações que o Agendador de Tarefas usa para executar a tarefa.<br/> |
 
 
 
 ## <a name="remarks"></a>Comentários
 
-Para desenvolvimento em C++, consulte a [**Propriedade AllowHardTerminate de ITaskSettings**](/windows/desktop/api/taskschd/nf-taskschd-itasksettings-get_allowhardterminate).
+Para desenvolvimento em C++, consulte a [**propriedade AllowHardTerminate de ITaskSettings**](/windows/desktop/api/taskschd/nf-taskschd-itasksettings-get_allowhardterminate).
 
-Para desenvolvimento de script, consulte [**TaskSettings. AllowHardTerminate**](tasksettings-allowhardterminate.md).
+Para desenvolvimento de scripts, [**consulte TaskSettings.AllowHardTerminate**](tasksettings-allowhardterminate.md).
 
 ## <a name="examples"></a>Exemplos
 
-Para obter um exemplo completo do XML para uma tarefa que permite um encerramento rígido, consulte [exemplo de gatilho de tempo (XML)](time-trigger-example--xml-.md).
+Para ver um exemplo completo do XML para uma tarefa que permite o encerramento rígido, consulte Exemplo [de gatilho de tempo (XML).](time-trigger-example--xml-.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -61,8 +61,8 @@ Para obter um exemplo completo do XML para uma tarefa que permite um encerrament
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
 
 
 
@@ -70,7 +70,7 @@ Para obter um exemplo completo do XML para uma tarefa que permite um encerrament
 
 <dl> <dt>
 
-[Elementos do esquema de Agendador de Tarefas](task-scheduler-schema-elements.md)
+[Agendador de Tarefas de esquema](task-scheduler-schema-elements.md)
 </dt> </dl>
 
  

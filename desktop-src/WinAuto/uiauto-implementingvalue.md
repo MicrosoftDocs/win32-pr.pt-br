@@ -15,12 +15,12 @@ keywords:
 - interfaces, IValueProvider
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 40633a21fdd6b59a2aa35c34258037582a647f05
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 28b30d8c84bc5f998d55ee17d7699bb37f33b7e19c52a2694578c3d11ef1d888
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104366353"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119997797"
 ---
 # <a name="value-control-pattern"></a>Padrão de controle de valor
 
@@ -45,7 +45,7 @@ Ao implementar o padrão de controle de **valor** , observe as seguintes diretri
 - Os controles de edição single e multi-line devem implementar [**ITextProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-itextprovider) para expor seu conteúdo somente leitura.
 - Os controles de edição de várias linhas devem implementar [**IValueProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-ivalueprovider) se seu conteúdo puder ser alterado.
 - [**IValueProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-ivalueprovider) não oferece suporte à recuperação de informações de formatação ou valores de subcadeias. Implemente [**ITextProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-itextprovider) nesses cenários.
-- [**IValueProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-ivalueprovider) deve ser implementado por controles como o controle de seleção do seletor de cores do Microsoft Word (consulte a imagem a seguir), que dá suporte ao mapeamento de cadeia de caracteres entre um valor de cor (por exemplo, "amarelo") e um valor [RGB](/windows/win32/api/wingdi/nf-wingdi-rgb) interno equivalente.
+- [**IValueProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-ivalueprovider) deve ser implementado por controles como o controle de seleção do seletor de cores de Microsoft Word (consulte a imagem a seguir), que dá suporte ao mapeamento de cadeia de caracteres entre um valor de cor (por exemplo, "amarelo") e um valor [RGB](/windows/win32/api/wingdi/nf-wingdi-rgb) interno equivalente.
 
     ![ilustração mostrando mapeamento de cadeia de caracteres de amostra de cor](images/uia-valuepattern-colorpicker.jpg)
 
@@ -65,7 +65,7 @@ As propriedades e os métodos a seguir são necessários para implementar a inte
 
 
 
- 
+ 
 
 Este padrão de controle não tem eventos associados.
 
@@ -85,6 +85,6 @@ Este padrão de controle não tem eventos associados.
 [Padrões de controle Text e TextRange](uiauto-implementingtextandtextrange.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

@@ -1,19 +1,19 @@
 ---
-description: Define uma matriz de 4 bytes que contém valores ASCII de 4 8 bits de espaço, A-Z ou a-z para identificar marcas de recurso de fonte, idioma e script OpenType.
+description: Define uma matriz de 4 byte que contém quatro valores ASCII de 8 bits de espaço, A-Z ou a-z para identificar marcas de recurso de fonte, idioma e script OpenType.
 ms.assetid: 188ad9a1-e0eb-411f-b6df-8c394d122d6f
-title: OPENTYPE_TAG (Usp10. h)
+title: OPENTYPE_TAG (Usp10.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bf973c03f26bdb8f8b3799e1780fed5075d315cb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d7c784fa7f6243e7e5444dcbc64c690ce7184d6ace469759c19be9de87854732
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105810332"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120040776"
 ---
-# <a name="opentype_tag"></a>\_marca OPENTYPE
+# <a name="opentype_tag"></a>MARCA \_ OPENTYPE
 
-Define uma matriz de 4 bytes que contém valores ASCII de 4 8 bits de espaço, A-Z ou a-z para identificar marcas de recurso de fonte, idioma e script OpenType.
+Define uma matriz de 4 byte que contém quatro valores ASCII de 8 bits de espaço, A-Z ou a-z para identificar marcas de recurso de fonte, idioma e script OpenType.
 
 
 ```C++
@@ -26,9 +26,9 @@ typedef ULONG OPENTYPE_TAG;
 
 Os exemplos a seguir definem representações de marcas de recurso OpenType.
 
--   A marca de recurso para o recurso ligadura é "liga".
--   As marcas de idioma para romeno, urdu e persa são "ROM", "URD" e "distante", respectivamente. Observe que cada uma dessas marcas termina com um espaço.
--   As marcas de script para scripts latinos e árabes são "Latn" e "árabe", respectivamente.
+-   A marca de recurso para o recurso de ligadura é "liga".
+-   As marcas de idioma para Romeno, Urdu e Árabe são "ROM", "URD" e "FAR", respectivamente. Observe que cada uma dessas marcas termina com um espaço.
+-   As marcas de script para scripts latinos e em árabe são "latn" e "árabe", respectivamente.
 
 Para obter mais informações sobre marcas de recurso OpenType e a especificação OpenType, consulte <https://www.microsoft.com/typography/otspec/featuretags.htm> .
 
@@ -40,8 +40,8 @@ Para obter mais informações sobre marcas de recurso OpenType e a especificaç�
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                         |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                               |
-| Redistribuível<br/>          | Usp10.dll versão 1,600 ou superior, o Windows xpandir mais tarde<br/>                |
-| parâmetro<br/>                   | <dl> <dt>Usp10. h</dt> </dl> |
+| Redistribuível<br/>          | Usp10.dll versão 1.600 ou superior noWindows XPand posteriormente<br/>                |
+| Cabeçalho<br/>                   | <dl> <dt>Usp10.h</dt> </dl> |
 
 
 
@@ -49,10 +49,10 @@ Para obter mais informações sobre marcas de recurso OpenType e a especificaç�
 
 <dl> <dt>
 
-[Cancelar](uniscribe.md)
+[Uniscribe](uniscribe.md)
 </dt> <dt>
 
-[Estruturas do Uniscribe](uniscribe-structures.md)
+[Estruturas Uniscribe](uniscribe-structures.md)
 </dt> <dt>
 
 [**ScriptGetFontAlternateGlyphs**](/windows/desktop/api/Usp10/nf-usp10-scriptgetfontalternateglyphs)

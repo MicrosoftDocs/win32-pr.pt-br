@@ -4,12 +4,12 @@ description: Este artigo se concentra na melhor maneira de otimizar o desempenho
 ms.assetid: 0138a248-e8e0-a392-564e-7a9229b94b56
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7ebe2abd9487d95b8fe12aa3c6938e21d72d8e2f
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 7d7a6efe6916ad8605e3cdc056ffd716ac5113b66c022b0a95fd8a78b1a62e30
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104366396"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120042386"
 ---
 # <a name="taking-advantage-of-high-definition-mouse-movement"></a>Aproveitando o movimento do High-Definition mouse
 
@@ -43,7 +43,7 @@ case WM_MOUSEMOVE:
 
 A principal desvantagem dos dados do WM \_ MOUSEMOVE é que ele é limitado à resolução da tela. Isso significa que se você mover um pouco o mouse, mas não o suficiente para fazer com que o ponteiro se mova para o próximo pixel —, nenhuma \_ mensagem MOUSEMOVE do WM será gerada. Portanto, o uso desse método para ler o movimento do mouse nega os benefícios da entrada de alta definição.
 
-\_No entanto, a vantagem do WM MOUSEMOVE é que o Windows aplica a aceleração do ponteiro (também conhecida como Ballistics) aos dados brutos do mouse, o que faz com que o ponteiro do mouse se comporte como os clientes esperam. Isso torna \_ o WM MOUSEMOVE a opção preferida para controle de ponteiro (sobre \_ entrada ou DIRECTINPUT do WM), pois resulta em um comportamento mais natural para os usuários. Embora \_ o WM MOUSEMOVE seja ideal para mover ponteiros do mouse, não é tão bom para mover uma câmera de primeira pessoa, pois a precisão de alta definição será perdida.
+\_no entanto, a vantagem do WM MOUSEMOVE é que Windows aplica a aceleração do ponteiro (também conhecida como ballistics) aos dados brutos do mouse, o que faz com que o ponteiro do mouse se comporte como os clientes esperam. Isso torna \_ o WM MOUSEMOVE a opção preferida para controle de ponteiro (sobre \_ entrada ou DIRECTINPUT do WM), pois resulta em um comportamento mais natural para os usuários. Embora \_ o WM MOUSEMOVE seja ideal para mover ponteiros do mouse, não é tão bom para mover uma câmera de primeira pessoa, pois a precisão de alta definição será perdida.
 
 Para obter mais informações sobre o WM \_ MouseMove, consulte [**WM \_ MouseMove**](/windows/desktop/inputdev/wm-mousemove).
 
@@ -93,7 +93,7 @@ case WM_INPUT:
 
 A vantagem de usar a \_ entrada do WM é que seu jogo recebe dados brutos do mouse no nível mais baixo possível.
 
-A desvantagem é que a entrada do WM \_ não tem nenhum Ballistics aplicado a seus dados, portanto, se você quiser impulsionar um cursor com esses dados, será necessário um esforço extra para que o cursor se comporte da mesma forma que no Windows. Para obter mais informações sobre como aplicar o ponteiro Ballistics, consulte [ponteiro Ballistics para Windows XP](https://www.microsoft.com/whdc/archive/pointer-bal.mspx).
+A desvantagem é que a entrada do WM \_ não tem nenhum Ballistics aplicado a seus dados, portanto, se você quiser impulsionar um cursor com esses dados, será necessário um esforço extra para que o cursor se comporte da mesma forma que no Windows. para obter mais informações sobre como aplicar o ponteiro ballistics, consulte [ponteiro ballistics para Windows XP](https://www.microsoft.com/whdc/archive/pointer-bal.mspx).
 
 Para obter mais informações sobre a entrada do WM \_ , consulte [sobre a entrada bruta](/windows/desktop/inputdev/about-raw-input).
 
@@ -161,4 +161,4 @@ int yPosRelative = dims2.lY;
 
 ## <a name="summary"></a>Resumo
 
-De modo geral, o melhor método para receber dados de movimentação de mouse de alta definição é a entrada do WM \_ . Se os usuários estiverem apenas movendo um ponteiro do mouse, considere usar o WM \_ MOUSEMOVE para evitar a necessidade de executar o ponteiro Ballistics. Essas duas mensagens de janela funcionarão bem mesmo se o mouse não for um mouse de alta definição. Ao dar suporte à alta definição, os jogos do Windows podem oferecer controle mais preciso aos usuários.
+De modo geral, o melhor método para receber dados de movimentação de mouse de alta definição é a entrada do WM \_ . Se os usuários estiverem apenas movendo um ponteiro do mouse, considere usar o WM \_ MOUSEMOVE para evitar a necessidade de executar o ponteiro Ballistics. Essas duas mensagens de janela funcionarão bem mesmo se o mouse não for um mouse de alta definição. ao dar suporte à alta definição, Windows jogos podem oferecer controle mais preciso aos usuários.

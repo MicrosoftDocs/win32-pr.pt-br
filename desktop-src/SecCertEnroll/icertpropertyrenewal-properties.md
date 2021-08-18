@@ -4,12 +4,12 @@ ms.assetid: 966C4584-625C-49BE-B4EF-5FB8311BE4E2
 title: Propriedades de ICertPropertyRenewal
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cc3070e17a547ece8f1a0683351056dd6e3abbd0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2a14cfc76d2a9ff034ee67a47c324096c7d78589e7665894f87947d3c60b1f19
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105758169"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119976736"
 ---
 # <a name="icertpropertyrenewal-properties"></a>Propriedades de ICertPropertyRenewal
 

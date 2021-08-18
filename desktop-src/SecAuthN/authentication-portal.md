@@ -4,12 +4,12 @@ ms.assetid: 7863dbee-aa48-4024-886c-1056d7141e60
 title: Autenticação (autenticação)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a3989944068ade080b6b819dc34b77c914ed2e73
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 84b1fc677271518df764fefb3bb53ee6b2761b779c0433df963ec06a2ee09055
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103921247"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119883746"
 ---
 # <a name="authentication-authentication"></a>Autenticação (autenticação)
 
@@ -21,7 +21,7 @@ As tecnologias de autenticação da Microsoft incluem autenticação LSA, gerenc
 
 ## <a name="developer-audience"></a>Público de desenvolvedores
 
-As tecnologias de autenticação da Microsoft são destinadas ao uso por desenvolvedores de aplicativos baseados nos sistemas operacionais Windows Server, Windows Vista e Windows que autenticam clientes. Os desenvolvedores devem estar familiarizados com a programação baseada no Windows. Embora não seja necessário, é recomendável compreender a autenticação ou os assuntos relacionados à segurança.
+as tecnologias de autenticação da Microsoft são destinadas ao uso por desenvolvedores de aplicativos baseados no Windows Server, Windows Vista e Windows sistemas operacionais que autenticam clientes. os desenvolvedores devem estar familiarizados com a programação baseada em Windows. Embora não seja necessário, é recomendável compreender a autenticação ou os assuntos relacionados à segurança.
 
 ## <a name="run-time-requirements"></a>Requisitos de tempo de execução
 

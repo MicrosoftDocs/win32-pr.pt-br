@@ -1,5 +1,5 @@
 ---
-description: Representa informações sobre destinos de chamada para a proteção de fluxo de controle (CFG).
+description: representa informações sobre destinos de chamada para Control Flow Guard (CFG).
 ms.assetid: 8DEF907F-3F23-4122-95CE-F413FC7FD96B
 title: Estrutura de CFG_CALL_TARGET_INFO (Ntmmapi. h)
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - ntmmapi.h
-ms.openlocfilehash: 66177f6b478264a10c1ce0e50297d943a16407c4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e3bd7d351e890a968f2fa01ddffa6c8e3be16164d78393894055f55660c516bd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105775552"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120040276"
 ---
 # <a name="cfg_call_target_info-structure"></a>CFG \_ chamar \_ estrutura de informações de destino \_
 
-Representa informações sobre destinos de chamada para a proteção de fluxo de controle (CFG).
+representa informações sobre destinos de chamada para Control Flow Guard (CFG).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -60,9 +60,9 @@ Sinalizadores que descrevem a operação a ser executada no endereço. Se o dest
 
 | Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10\]<br/>                                          |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2016\]<br/>                                 |
-| parâmetro<br/>                   | <dl> <dt>Ntmmapi. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 10 \[ somente aplicativos da área de trabalho\]<br/>                                          |
+| Servidor mínimo com suporte<br/> | Windows Server 2016 \[ somente aplicativos da área de trabalho\]<br/>                                 |
+| Cabeçalho<br/>                   | <dl> <dt>Ntmmapi. h</dt> </dl> |
 
 
 

@@ -3,7 +3,7 @@ title: Mensagem de BCM_GETNOTE (commctrl. h)
 description: Obtém o texto da nota associada a um botão de link de comando. Você pode enviar essa mensagem explicitamente ou usar a macro do botão \_ getnote.
 ms.assetid: ddaf4227-1316-49b5-abf0-00215472c46c
 keywords:
-- Controles de BCM_GETNOTE de mensagens do Windows
+- controles de Windows de mensagem de BCM_GETNOTE
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 758dac90ba4c0f3087a6df90d9acf2c1321b1d73
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 55b552f79e1d6c7bda2808b99701ff11e45deb169232b8bb52c4ecf231cdcbfd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105752950"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119921696"
 ---
 # <a name="bcm_getnote-message"></a>\_Mensagem de GETnote do BCM
 
@@ -43,7 +43,7 @@ O buffer de cadeia de caracteres para receber o texto. O buffer deve ser grande 
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se a mensagem tiver sucesso, retornará **true**. Caso contrário, retornará **false**.
 
@@ -62,9 +62,9 @@ A mensagem do **BCM \_ getnote** funciona apenas com botões que têm o estilo d
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 
 

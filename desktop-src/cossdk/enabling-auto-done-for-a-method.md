@@ -4,12 +4,12 @@ ms.assetid: d699b85c-441f-4ea6-8d03-d1fa9a8a357f
 title: Habilitando o auto-pronto para um método
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0130e5f8b2fde6c6755ef4174892aa35be8a24cd
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 58eec7a7b87284145ea880338bfe61db2aa1afca06f1f83ee811e4375a1e473c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105771645"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119637686"
 ---
 # <a name="enabling-auto-done-for-a-method"></a>Habilitando o auto-pronto para um método
 

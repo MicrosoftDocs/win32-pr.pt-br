@@ -8,12 +8,12 @@ keywords:
 - ADSI de extensões, resolvendo conflitos de nome de função e Propriedade na automação
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d9a7ac99b99ecdf0ee1b940f066d9e8166a15542
-ms.sourcegitcommit: b0ebdefc3dcd5c04bede94091833aa1015a2f95c
+ms.openlocfilehash: 53701c95672fe209cb57a15e3292e1269dc37e66e36f041110dd502f8a8a1486
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "104366706"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119637536"
 ---
 # <a name="resolution-of-functionproperty-name-conflicts-in-automation-in-extensions"></a>Resolução de conflitos de nome de função/Propriedade em automação em extensões
 
@@ -49,10 +49,10 @@ Para minimizar esse problema, os desenvolvedores de extensão podem prefixar seu
 
 Se ocorrer um conflito de nomes, os clientes ADSI poderão evitar o problema pelo acesso direto vtable se a interface for uma interface dupla. Se o acesso Direct vtable não for possível, os clientes ADSI devem chamar [**IDispatch:: GetIDsOfNames**](/windows/win32/api/oaidl/nf-oaidl-idispatch-getidsofnames) com vários nomes, especificando os nomes de função, bem como os parâmetros na matriz *rgszNames* descrita anteriormente.
 
-Visual Basic 5 não chama a função [**IDispatch:: GetIDsOfNames**](/windows/win32/api/oaidl/nf-oaidl-idispatch-getidsofnames) com vários nomes. Ou seja, ele passa apenas o nome da função para **GetIDsOfNames**, mas não para argumentos. No entanto, Visual Basic 5 permite que os usuários invoquem uma função pelo acesso Direct vtable, em vez de invocar a função **IDispatch:: GetIDsOfNames** se a interface for uma interface dupla. Os desenvolvedores devem usar o acesso Direct vtable, se possível.
+Visual Basic 5 não chama a função [**IDispatch:: GetIDsOfNames**](/windows/win32/api/oaidl/nf-oaidl-idispatch-getidsofnames) com vários nomes. Ou seja, ele passa apenas o nome da função para **GetIDsOfNames**, mas não para argumentos. no entanto, Visual Basic 5 permite que os usuários invoquem uma função pelo acesso direct vtable, em vez de invocar a função **IDispatch:: GetIDsOfNames** se a interface for uma interface dupla. Os desenvolvedores devem usar o acesso Direct vtable, se possível.
 
 Para obter mais informações sobre a resolução de conflitos de nome, consulte o [exemplo para resolver conflitos de nome de função](example-for-resolving-function-name-conflicts.md).
 
- 
+ 
 
- 
+ 

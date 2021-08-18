@@ -1,21 +1,21 @@
 ---
-description: O controle bitmap exibe um bitmap ou um arquivo de imagem estática JPEG. O Windows Installer determinará automaticamente o formato dos dados binários e exibirá a imagem. O controle não oferece suporte à animação.
+description: O controle bitmap exibe um bitmap ou um arquivo de imagem estática JPEG. o Windows Installer determinará automaticamente o formato dos dados binários e exibirá a imagem. O controle não oferece suporte à animação.
 ms.assetid: 4b511d8a-1819-4a9b-a942-dc32fade75c6
 title: Controle de bitmap
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 058b67d52266906735719976bf7311b4f562b474
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f677a7745d3920d5fee44cd64489f9f2c69f8cdb1fb697a0020046a92583e569
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105757529"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120045226"
 ---
 # <a name="bitmap-control"></a>Controle de bitmap
 
-O controle bitmap exibe um bitmap ou um arquivo de imagem estática JPEG. O Windows Installer determinará automaticamente o formato dos dados binários e exibirá a imagem. O controle não oferece suporte à animação.
+O controle bitmap exibe um bitmap ou um arquivo de imagem estática JPEG. o Windows Installer determinará automaticamente o formato dos dados binários e exibirá a imagem. O controle não oferece suporte à animação.
 
-**Windows 8 e Windows Server 2012:** O arquivo de imagem pode estar em qualquer formato padrão com suporte pelo Windows Imaging Component (WIC), incluindo TIFF, JPEG, PNG, GIF, BMP e HDPhoto. O controle não oferece suporte à animação.
+**Windows 8 e Windows Server 2012:** o arquivo de imagem pode estar em qualquer formato padrão com suporte pelo componente de Windows Imaging (WIC), incluindo TIFF, JPEG, PNG, GIF, BMP e HDPhoto. O controle não oferece suporte à animação.
 
 ## <a name="control-attributes"></a>Atributos de controle
 

@@ -4,20 +4,20 @@ ms.assetid: d9e01767-f6e8-4fd6-a848-8d5acf57407e
 title: enrollSimpleMachineCert
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8582bc73fdee7e8be6b2cff8d0aec81b84487307
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: eb533dc2c0d262a64f8fd1d2245c310880586c04900ef028e7c2609f1a6b4577
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105813120"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119976896"
 ---
 # <a name="enrollsimplemachinecert"></a>enrollSimpleMachineCert
 
 O exemplo enrollSimpleMachineCert registra um computador em uma hierarquia de certificado usando um modelo, um nome de exibição de certificado e a descrição do certificado.
 
-## <a name="location"></a>Local
+## <a name="location"></a>Localização
 
-Quando você instala o SDK (Software Development Kit) do Microsoft Windows, uma versão em C++ do exemplo é instalada, por padrão, na pasta *% ProgramFiles%%* \\ Microsoft SDKs \\ Windows \\ v 7.0 \\ Samples \\ Security \\ X509 Certificate registro \\ vc \\ EnrollSimpleMachineCert. Uma versão do VBScript é instalada no diretório *% ProgramFiles%* \\ Microsoft SDKs \\ Windows \\ v 7.0 \\ Samples \\ Security \\ X509 Certificate Enroll \\ \\ EnrollSimpleMachineCert Folder.
+quando você instala o SDK (Software Development Kit) do Microsoft Windows, uma versão em C++ do exemplo é instalada, por padrão, na pasta *% programfiles%%* \\ Microsoft SDKs \\ Windows \\ v 7.0 \\ samples \\ Security \\ X509 Certificate registro \\ VC \\ EnrollSimpleMachineCert. uma versão do VBScript é instalada na pasta *% programfiles%* \\ Microsoft SDKs \\ Windows \\ v 7.0 \\ samples \\ Security \\ X509 Certificate registro \\ VBS \\ EnrollSimpleMachineCert.
 
 ## <a name="discussion"></a>Discussão
 

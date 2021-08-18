@@ -1,19 +1,19 @@
 ---
-description: O exemplo de script neste tópico mostra como usar o WUA (Windows Update Agent) para verificar, baixar e instalar atualizações.
+description: o exemplo de script neste tópico mostra como usar o WUA (Windows Update Agent) para verificar, baixar e instalar atualizações.
 ms.assetid: 4b2b1898-64f1-4908-98b7-ea87a6fcb71d
 title: Pesquisando, baixando e instalando atualizações
 ms.topic: article
 ms.date: 01/16/2020
-ms.openlocfilehash: 289e0535bc39ca3fb39ddb33bbc67d009898b556
-ms.sourcegitcommit: 168d11879cb9fd89d26f826482725c0a626be00f
+ms.openlocfilehash: bfb112533dd30ed203ab44104a0ef241ccf93504376637c07f1527ff3cca79f2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "105788923"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119994236"
 ---
 # <a name="searching-downloading-and-installing-updates"></a>Pesquisando, baixando e instalando atualizações
 
-O exemplo de script neste tópico mostra como usar o WUA (Windows Update Agent) para verificar, baixar e instalar atualizações.
+o exemplo de script neste tópico mostra como usar o WUA (Windows Update Agent) para verificar, baixar e instalar atualizações.
 
 O exemplo pesquisa todas as atualizações de software aplicáveis e, em seguida, lista essas atualizações. Em seguida, ele cria uma coleção de atualizações para baixar e, em seguida, baixa esses itens. Por fim, ele cria uma coleção de atualizações para instalar e, em seguida, as instala.
 
@@ -23,14 +23,14 @@ Antes de tentar executar este exemplo, observe o seguinte:
 
 -   O WUA deve estar instalado no computador. Para obter mais informações sobre como determinar a versão do WUA que está instalada, consulte [determinando a versão atual do WUA](determining-the-current-version-of-wua.md).
 -   O exemplo pode baixar atualizações somente usando o WUA. Ele não pode baixar atualizações de um servidor SUS (Software Update Services) 1,0.
--   A execução deste exemplo requer o WSH (Windows Script Host). Para obter mais informações sobre o WSH, consulte a seção WSH do kit de desenvolvimento de software de plataforma (SDK). Se o exemplo for copiado para um arquivo chamado WUA \_SearchDownloadInstall.vbs, você poderá executar o exemplo abrindo uma janela de prompt de comando e digitando o comando a seguir no prompt de comando.
+-   a execução deste exemplo requer o Host de Script do Windows (WSH). Para obter mais informações sobre o WSH, consulte a seção WSH do kit de desenvolvimento de software de plataforma (SDK). Se o exemplo for copiado para um arquivo chamado WUA \_SearchDownloadInstall.vbs, você poderá executar o exemplo abrindo uma janela de prompt de comando e digitando o comando a seguir no prompt de comando.
 
     **SearchDownloadInstall.vbsdo cscript WUA \_**
 
 ## <a name="example"></a>Exemplo
 
 > [!IMPORTANT]
-> Esse script destina-se a demonstrar o uso das APIs do agente de Windows Update e fornece um exemplo de como os desenvolvedores podem usar essas APIs para resolver problemas. Esse script não se destina como código de produção e o próprio script não tem suporte da Microsoft (embora haja suporte para as APIs de agente de Windows Update subjacentes).
+> esse script destina-se a demonstrar o uso das apis do agente de Windows Update e fornece um exemplo de como os desenvolvedores podem usar essas apis para resolver problemas. esse script não se destina como código de produção e o próprio script não tem suporte da Microsoft (embora haja suporte para as APIs de agente de Windows Update subjacentes).
 
  
 

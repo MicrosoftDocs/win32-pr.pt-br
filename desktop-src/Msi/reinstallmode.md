@@ -4,19 +4,19 @@ ms.assetid: 756d2899-2cfe-473a-bebf-a7f7bbe7d229
 title: Propriedade REINSTALLMODE
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ab48043ef92770cbc3a1f5ab92e459128c9945ed
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 227a069fa0974758bf623c83ef23d40902d9feb140f69446c57c2d723468054f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105812911"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119637870"
 ---
 # <a name="reinstallmode-property"></a>Propriedade REINSTALLMODE
 
 A propriedade **REinstallmode** é uma cadeia de caracteres que contém letras especificando o tipo de reinstalação a ser executado. As opções não diferenciam maiúsculas de minúsculas e independentes de ordem. Essa propriedade normalmente deve ser sempre usada em conjunto com a propriedade [**REINSTALL**](reinstall.md) . No entanto, essa propriedade também pode ser usada durante a instalação, não apenas reinstalar.
 
 > [!Note]  
-> O Windows Installer ignora a propriedade **REinstallmode** durante uma [instalação administrativa](administrative-installation.md).
+> o Windows Installer ignora a propriedade **reinstallmode** durante uma [instalação administrativa](administrative-installation.md).
 
  
 
@@ -58,7 +58,7 @@ Os códigos de opção para essa propriedade correspondem à [opção de linha d
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versão<br/> | Windows Installer 5,0 no Windows Server 2012, Windows 8, Windows Server 2008 R2 ou Windows 7. Windows Installer 4,0 ou Windows Installer 4,5 no Windows Server 2008 ou no Windows Vista. Windows Installer no Windows Server 2003 ou no Windows XP. Consulte os [requisitos de Run-Time Windows Installer](windows-installer-portal.md) para obter informações sobre a Service Pack mínima do Windows exigida por uma versão Windows Installer.<br/> |
+| Versão<br/> | Windows instalador 5,0 em Windows Server 2012, Windows 8, Windows Server 2008 R2 ou Windows 7. Windows Installer 4,0 ou Windows Installer 4,5 no Windows Server 2008 ou Windows Vista. Windows instalador no Windows Server 2003 ou Windows XP. consulte os [requisitos de Run-Time Windows Installer](windows-installer-portal.md) para obter informações sobre o service pack mínimo Windows exigido por uma versão Windows Installer.<br/> |
 
 
 

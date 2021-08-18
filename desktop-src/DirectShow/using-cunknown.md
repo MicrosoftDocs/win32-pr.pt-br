@@ -1,19 +1,19 @@
 ---
-description: O DirectShow implementa IUnknown em uma classe base chamada CUnknown.
+description: DirectShow implementa IUnknown em uma classe base chamada CUnknown.
 ms.assetid: 1fc74db6-c23a-464f-b9fa-b19d7e8672b7
 title: Usando CUnknown
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0c1758065e8d618bf6ca74b37d98b0a8b5425919
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e211ebf8c581502665c5f07b3720759efc7afab75a05a49a68f9945029dd6cce
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105755133"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120051376"
 ---
 # <a name="using-cunknown"></a>Usando CUnknown
 
-O DirectShow implementa [**IUnknown**](/windows/win32/api/unknwn/nn-unknwn-iunknown) em uma classe base chamada [**CUnknown**](cunknown.md). Você pode usar **CUnknown** para derivar outras classes, substituindo somente os métodos que mudam entre os componentes. A maioria das outras classes base no DirectShow deriva de **CUnknown**, de modo que seu componente pode herdar diretamente do **CUnknown** ou de outra classe base.
+DirectShow implementa [**IUnknown**](/windows/win32/api/unknwn/nn-unknwn-iunknown) em uma classe base chamada [**CUnknown**](cunknown.md). Você pode usar **CUnknown** para derivar outras classes, substituindo somente os métodos que mudam entre os componentes. a maioria das outras classes base em DirectShow deriva de **CUnknown**, de modo que seu componente pode herdar diretamente do **CUnknown** ou de outra classe base.
 
 ## <a name="inondelegatingunknown"></a>INonDelegatingUnknown
 
@@ -120,7 +120,7 @@ Este exemplo ilustra os seguintes pontos:
 -   Para dar suporte a uma interface diferente de [**IUnknown**](/windows/win32/api/unknwn/nn-unknwn-iunknown), a classe derivada deve substituir o método [**NonDelegatingQueryInterface**](cunknown-nondelegatingqueryinterface.md) e testar o IID da nova interface.
 -   O construtor de classe invoca o método de construtor para [**CUnknown**](cunknown.md).
 
-A próxima etapa na escrita de um filtro é habilitar um aplicativo para criar novas instâncias do componente. Isso requer uma compreensão das DLLs e de sua relação com as fábricas de classes e métodos de construtor de classes. Para obter mais informações, consulte [como criar uma DLL de filtro do DirectShow](how-to-create-a-dll.md).
+A próxima etapa na escrita de um filtro é habilitar um aplicativo para criar novas instâncias do componente. Isso requer uma compreensão das DLLs e de sua relação com as fábricas de classes e métodos de construtor de classes. para obter mais informações, consulte [como criar uma DLL de filtro de DirectShow](how-to-create-a-dll.md).
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

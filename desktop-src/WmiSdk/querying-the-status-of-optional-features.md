@@ -1,22 +1,22 @@
 ---
-description: No Windows 7, a WMI implementou a \_ classe Win32 OptionalFeature. Essa classe recupera o status dos recursos opcionais que estão presentes em um computador.
+description: No Windows 7, o WMI implementou a classe \_ OptionalFeature do Win32. Essa classe recupera o status dos recursos opcionais que estão presentes em um computador.
 ms.assetid: d756b0c0-b9f4-4b71-9f07-963a0dd5e585
 ms.tgt_platform: multiple
 title: Consultando o status de recursos opcionais
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7c190b2a2143dae1e22c30b3e5e803908bcb4116
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ec27457336adcc5c358aad0a5e139c1c7c07f6bcb72335ec549f9ca98cc1e5a0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103661840"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119996026"
 ---
 # <a name="querying-the-status-of-optional-features"></a>Consultando o status de recursos opcionais
 
-No Windows 7, a WMI implementou a classe [**Win32 \_ OptionalFeature**](/windows/desktop/CIMWin32Prov/win32-optionalfeature) . Essa classe recupera o status dos recursos opcionais que estão presentes em um computador.
+No Windows 7, o WMI implementou a [**classe \_ OptionalFeature do Win32.**](/windows/desktop/CIMWin32Prov/win32-optionalfeature) Essa classe recupera o status dos recursos opcionais que estão presentes em um computador.
 
-Você pode usar os cmdlets do Windows PowerShell para consultar o status dos recursos opcionais. Todos os exemplos neste tópico usam o cmdlet Get-WmiObject. Para obter mais informações, consulte [Get-WmiObject](/previous-versions//dd315295(v=technet.10)).
+Você pode usar Windows PowerShell cmdlets para consultar o status dos recursos opcionais. Todos os exemplos neste tópico usam o cmdlet Get-WmiObject. Para obter mais informações, [consulte Get-WmiObject](/previous-versions//dd315295(v=technet.10)).
 
 **Para recuperar todas as instâncias de recursos opcionais presentes em um computador**
 
@@ -61,7 +61,7 @@ Você pode usar os cmdlets do Windows PowerShell para consultar o status dos rec
     
 
     > [!Note]  
-    > A propriedade **Name** diferencia maiúsculas de minúsculas.
+    > A **propriedade name** é sensível a minúsculas.
 
      
 
@@ -86,13 +86,13 @@ Você pode usar os cmdlets do Windows PowerShell para consultar o status dos rec
 
     
 
-    Para obter mais informações sobre os valores possíveis para a propriedade **InstallState** , consulte [**Win32 \_ OptionalFeature**](/windows/desktop/CIMWin32Prov/win32-optionalfeature).
+    Para obter mais informações sobre os valores possíveis para a **propriedade InstallState,** consulte [**Win32 \_ OptionalFeature**](/windows/desktop/CIMWin32Prov/win32-optionalfeature).
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[**\_OptionalFeature Win32**](/windows/desktop/CIMWin32Prov/win32-optionalfeature)
+[**Win32 \_ OptionalFeature**](/windows/desktop/CIMWin32Prov/win32-optionalfeature)
 </dt> </dl>
 
  

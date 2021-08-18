@@ -1,7 +1,7 @@
 ---
-description: 'O método de redefinição redefine a sequência de enumeração para o início. Esse método implementa o método IEnumPins:: Reset.'
+description: O método Reset redefine a sequência de enumeração para o início. Esse método implementa o método IEnumPins::Reset.
 ms.assetid: b2e86304-bb14-495b-a922-8868b3898d85
-title: Método CEnumPins. Reset (Amfilter. h)
+title: Método CEnumPins.Reset (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 154899176d342b4630f8c93ab4b4cb86a54e13ea
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 0bbef967736261ca6e177bd0cb31e399f7d68bad1ab1a8ef9601e717213c82be
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105747386"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119999486"
 ---
-# <a name="cenumpinsreset-method"></a>Método CEnumPins. Reset
+# <a name="cenumpinsreset-method"></a>Método CEnumPins.Reset
 
-O `Reset` método redefine a sequência de enumeração para o início. Esse método implementa o método [**IEnumPins:: Reset**](/windows/desktop/api/Strmif/nf-strmif-ienumpins-reset) .
+O `Reset` método redefine a sequência de enumeração para o início. Esse método implementa o [**método IEnumPins::Reset.**](/windows/desktop/api/Strmif/nf-strmif-ienumpins-reset)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,7 +40,7 @@ HRESULT Reset();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna S \_ OK.
 
@@ -50,8 +50,8 @@ Retorna S \_ OK.
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Amfilter. h (incluir fluxos. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Amfilter.h (incluir Fluxos.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 
