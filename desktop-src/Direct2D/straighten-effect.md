@@ -1,5 +1,5 @@
 ---
-title: Efeito de retificação
+title: Efeito de ressarção
 description: Gira e, opcionalmente, dimensiona uma imagem.
 ms.assetid: aa37cdf1-bbb6-db4e-45a7-67c7cc16b7b4
 ms.topic: article
@@ -11,7 +11,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118664954"
 ---
-# <a name="straighten-effect"></a>Efeito de retificação
+# <a name="straighten-effect"></a>Efeito de ressarção
 
 Gira e, opcionalmente, dimensiona uma imagem.
 
@@ -19,7 +19,7 @@ O CLSID para esse efeito é CLSID \_ D2D1Straighten.
 
 -   [Imagem de exemplo](#example-image)
 -   [Código de exemplo](#sample-code)
--   [Propriedades do efeito](#effect-properties)
+-   [Propriedades de efeito](#effect-properties)
 -   [Requirements](#requirements)
 -   [Tópicos relacionados](#related-topics)
 
@@ -46,9 +46,9 @@ m_d2dContext->EndDraw();
 
 
 
-## <a name="effect-properties"></a>Propriedades do efeito
+## <a name="effect-properties"></a>Propriedades de efeito
 
-As propriedades para o efeito de retificação são definidas pela enumeração [**d2d1 \_ retifica \_ prop**](/windows/desktop/api/d2d1effects_2/ne-d2d1effects_2-d2d1_straighten_prop) .
+As propriedades para o efeito de reconciliação são definidas pela [**enumeração D2D1 \_ \_ TAMBÉM.**](/windows/desktop/api/d2d1effects_2/ne-d2d1effects_2-d2d1_straighten_prop)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -56,10 +56,10 @@ As propriedades para o efeito de retificação são definidas pela enumeração 
 
 | Requisito | Valor |
 |--------------------------|---------------------------------------------------|
-| Cliente mínimo com suporte | Windows 10 \[ aplicativos da área de trabalho \| Windows aplicativos da loja\] |
-| Servidor mínimo com suporte | Windows 10 \[ aplicativos da área de trabalho \| Windows aplicativos da loja\] |
-| parâmetro                   | d2d1effects \_ 2. h                                  |
-| Biblioteca                  | d2d1. lib, dxguid. lib                              |
+| Cliente mínimo com suporte | \[Windows 10 aplicativos da \| área Windows Aplicativos da Store\] |
+| Servidor mínimo com suporte | \[Windows 10 aplicativos da \| área Windows Aplicativos da Store\] |
+| Cabeçalho                   | d2d1effects \_ 2.h                                  |
+| Biblioteca                  | d2d1.lib, dxguid.lib                              |
 
 
 ## <a name="related-topics"></a>Tópicos relacionados

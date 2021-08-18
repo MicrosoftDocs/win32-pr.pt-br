@@ -17,7 +17,7 @@ O evento SetInstallLevel altera o nível de instalação para o valor especifica
 
 Esse evento pode ser publicado por um [controle PushButton ou](pushbutton-control.md)um [controle SelectionTree](selectiontree-control.md). Esse evento deve ser autor na [tabela ControlEvent](controlevent-table.md).
 
-Esse ControlEvent exige que a interface do usuário seja executado no [*nível completo da interface do*](f-gly.md) usuário. Esse evento não funcionará com uma interface [*do usuário reduzida ou*](r-gly.md) interface do usuário [*básica.*](b-gly.md) Para obter informações, consulte [Interface do Usuário níveis .](user-interface-levels.md)
+Esse ControlEvent exige que a interface do usuário seja executado no [*nível completo da interface do*](f-gly.md) usuário. Esse evento não funcionará com uma interface [*do usuário reduzida ou*](r-gly.md) interface do usuário [*básica.*](b-gly.md) Para obter informações, consulte [Interface do Usuário níveis](user-interface-levels.md).
 
 ## <a name="published-by"></a>Publicada por
 

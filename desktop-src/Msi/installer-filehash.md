@@ -1,7 +1,7 @@
 ---
-description: O método FileHash do objeto instalador usa o caminho para um arquivo e retorna um hash de 128 bits desse arquivo. As informações de hash do arquivo são retornadas como um objeto de registro. O hash do arquivo de 128 bits inteiro é retornado como campos de propriedade IntegerData de 4 32 bits.
+description: O método FileHash do Objeto do Instalador leva o caminho para um arquivo e retorna um hash de 128 bits desse arquivo. As informações de hash do arquivo são retornadas como um Objeto de Registro. Todo o hash de arquivo de 128 bits é retornado como quatro campos de propriedade IntegerData de 32 bits.
 ms.assetid: 065ffde1-4d7c-4e71-9315-7926d4cd38ed
-title: Método Installer. FileHash
+title: Método Installer.FileHash
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -20,11 +20,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118630787"
 ---
-# <a name="installerfilehash-method"></a>Método Installer. FileHash
+# <a name="installerfilehash-method"></a>Método Installer.FileHash
 
-O método **FileHash** do [**objeto instalador**](installer-object.md) usa o caminho para um arquivo e retorna um hash de 128 bits desse arquivo. As informações de hash do arquivo são retornadas como um [**objeto de registro**](record-object.md). O hash do arquivo de 128 bits inteiro é retornado como campos de propriedade [**IntegerData**](record-integerdata.md) de 4 32 bits.
+O **método FileHash** do [**Objeto do Instalador**](installer-object.md) leva o caminho para um arquivo e retorna um hash de 128 bits desse arquivo. As informações de hash do arquivo são retornadas como um [**Objeto de Registro**](record-object.md). Todo o hash de arquivo de 128 bits é retornado como quatro campos de propriedade [**IntegerData**](record-integerdata.md) de 32 bits.
 
-Os valores retornados no [**objeto de registro**](record-object.md) correspondem aos quatro campos da estrutura [**MSIFILEHASHINFO**](/windows/desktop/api/Msi/ns-msi-msifilehashinfo) retornados por [**MsiGetFileHash**](/windows/desktop/api/Msi/nf-msi-msigetfilehasha). A numeração de quatro campos é baseada em 1 na [tabela MsiFileHash](msifilehash-table.md).
+Os valores retornados no [**Objeto de**](record-object.md) Registro correspondem aos quatro campos da estrutura [**MSIFILEHASHINFO**](/windows/desktop/api/Msi/ns-msi-msifilehashinfo) retornados por [**MsiGetFileHash**](/windows/desktop/api/Msi/nf-msi-msigetfilehasha). A numeração de quatro campos é baseada em 1 na [tabela MsiFileHash](msifilehash-table.md).
 
 -   O campo 1 corresponde à coluna HashPart1.
 -   O campo 2 corresponde à coluna HashPart2.
@@ -50,7 +50,7 @@ Installer.FileHash(
 *FilePath* 
 </dt> <dd>
 
-Caminho para o arquivo cujo hash deve ser feito.
+Caminho para o arquivo que deve ser com o hashed.
 
 </dd> <dt>
 
@@ -65,7 +65,7 @@ O valor desse parâmetro deve ser 0 (zero).
 
 ## <a name="return-value"></a>Valor retornado
 
-Se for bem-sucedido, esse método retornará um [**objeto de registro**](record-object.md) que contém o hash do arquivo.
+Se for bem-sucedido, esse método retornará [**um Objeto de Registro**](record-object.md) que contém o hash do arquivo.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -73,9 +73,9 @@ Se for bem-sucedido, esse método retornará um [**objeto de registro**](record-
 
 | Requisito | Valor |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versão<br/> | Windows instalador 5,0 em Windows Server 2012, Windows 8, Windows Server 2008 R2 ou Windows 7. Windows Installer 4,0 ou Windows Installer 4,5 no Windows Server 2008 ou Windows Vista. Windows instalador no Windows Server 2003 ou Windows XP<br/> |
+| Versão<br/> | Windows Instalador 5.0 no Windows Server 2012, Windows 8, Windows Server 2008 R2 ou Windows 7. Windows Instalador 4.0 ou Windows Instalador 4.5 no Windows Server 2008 ou Windows Vista. Windows Instalador no Windows Server 2003 ou Windows XP<br/> |
 | DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                      |
-| IID<br/>     | IID \_ IInstaller é definido como 000C1090-0000-0000-C000-000000000046<br/>                                                                                                                                                                           |
+| IID<br/>     | O IInstaller IID é definido como \_ 000C1090-0000-0000-C000-000000000046<br/>                                                                                                                                                                           |
 
 
 
@@ -83,10 +83,10 @@ Se for bem-sucedido, esse método retornará um [**objeto de registro**](record-
 
 <dl> <dt>
 
-[Controle de versão de arquivo padrão](default-file-versioning.md)
+[Versão do arquivo padrão](default-file-versioning.md)
 </dt> <dt>
 
-[Gerenciar tamanhos e versões de arquivo](manage-file-sizes-and-versions.md)
+[Gerenciar tamanhos e versões de arquivos](manage-file-sizes-and-versions.md)
 </dt> <dt>
 
 [Tabela MsiFileHash](msifilehash-table.md)

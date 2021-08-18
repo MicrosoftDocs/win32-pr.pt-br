@@ -1,9 +1,9 @@
 ---
-title: Estrutura de WM_INDIVIDUALIZE_STATUS (Drmexternals. h)
-description: A \_ estrutura de status de individualização do WM \_ registra o status do processo de individualização.
+title: WM_INDIVIDUALIZE_STATUS estrutura (Drmexternals.h)
+description: A estrutura WM \_ INDIVIDUALIZE \_ STATUS registra o status do processo de individualização.
 ms.assetid: 3779ed6f-c133-4a9d-b60c-ef8c41fcc4af
 keywords:
-- Formato de mídia do Windows de estrutura de WM_INDIVIDUALIZE_STATUS
+- WM_INDIVIDUALIZE_STATUS formato de mídia do Windows
 topic_type:
 - apiref
 api_name:
@@ -21,9 +21,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118699016"
 ---
-# <a name="wm_individualize_status-structure-drmexternalsh"></a>Estrutura de WM_INDIVIDUALIZE_STATUS (Drmexternals. h)
+# <a name="wm_individualize_status-structure-drmexternalsh"></a>WM_INDIVIDUALIZE_STATUS estrutura (Drmexternals.h)
 
-A estrutura de **\_ \_ status de individualização do WM** registra o status do processo de [*individualização*](wmformat-glossary.md) .
+A **estrutura WM \_ INDIVIDUALIZE \_ STATUS** registra o status do processo [*de individualização.*](wmformat-glossary.md)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -49,14 +49,14 @@ typedef struct _WMIndividualizeStatus {
 **h**
 </dt> <dd>
 
-Código de retorno **HRESULT** .
+**Código de retorno HRESULT.**
 
 </dd> <dt>
 
 **enIndiStatus**
 </dt> <dd>
 
-Valor do tipo de enumeração de [**\_ \_ status de individualização de DRM**](drm-individualization-status.md) .
+Valor do tipo [**de enumeração \_ DRM INDIVIDUALIZATION \_ STATUS.**](drm-individualization-status.md)
 
 </dd> <dt>
 
@@ -70,14 +70,14 @@ Ponteiro para uma cadeia de caracteres terminada em nulo que contém a URL de re
 **dwHTTPRequest**
 </dt> <dd>
 
-**DWORD** que indica o número de viagens de ida e volta http para o serviço de individualização que foram concluídas.
+**DWORD** que indica o número de viagens de ida e volta HTTP para o serviço de individualização que foram concluídas..
 
 </dd> <dt>
 
 **enHTTPStatus**
 </dt> <dd>
 
-Valor do tipo de enumeração de [**\_ \_ status http DRM**](drm-http-status.md) .
+Valor do tipo [**de enumeração \_ STATUS HTTP \_ DO DRM.**](drm-http-status.md)
 
 </dd> <dt>
 
@@ -91,13 +91,13 @@ Valor do tipo de enumeração de [**\_ \_ status http DRM**](drm-http-status.md)
 **dwHTTPReadTotal**
 </dt> <dd>
 
-**DWORD** que contém o número total de bytes a serem baixados. Use esse valor e **dwHTTPReadProgress** para exibir uma interface do usuário que indica a quantidade de download concluído e quanto resta ser feito.
+**DWORD** que contém o número total de bytes a serem baixados. Use esse valor e **dwHTTPReadProgress** para exibir uma interface do usuário que indica quanto do download foi concluído e quanto ainda deve ser feito.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-Essa estrutura é preenchida pelos componentes de tempo de execução do DRM e é enviada para aplicativos no *parâmetro época* do método Applications [**IWMStatusCallback:: OnStatus**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmstatuscallback-onstatus) quando o evento é igual a WMT \_ individualize. O aplicativo recebe esse evento várias vezes durante o processo de download.
+Essa estrutura é preenchida pelos componentes de tempo de run time do DRM e é enviada aos aplicativos no parâmetro *pValue* do método [**IWMStatusCallback::OnStatus**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmstatuscallback-onstatus) quando o evento é igual a WMT \_ INDIVIDUALIZE. O aplicativo recebe esse evento várias vezes durante o processo de download.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -107,8 +107,8 @@ Essa estrutura é preenchida pelos componentes de tempo de execução do DRM e �
 |-------------------------------------|-------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                                |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                      |
-| Versão<br/>                  | Windows SDK do Media Format 7 ou versões posteriores do SDK<br/>                       |
-| parâmetro<br/>                   | <dl> <dt>Drmexternals. h</dt> </dl> |
+| Versão<br/>                  | Windows SDK de Formato de Mídia 7 ou versões posteriores do SDK<br/>                       |
+| Cabeçalho<br/>                   | <dl> <dt>Drmexternals.h</dt> </dl> |
 
 
 
@@ -116,7 +116,7 @@ Essa estrutura é preenchida pelos componentes de tempo de execução do DRM e �
 
 <dl> <dt>
 
-[**\_status do http DRM \_**](drm-http-status.md)
+[**STATUS \_ HTTP DO DRM \_**](drm-http-status.md)
 </dt> <dt>
 
 [**Estruturas**](structures.md)

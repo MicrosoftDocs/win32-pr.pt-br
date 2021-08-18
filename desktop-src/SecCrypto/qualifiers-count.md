@@ -1,7 +1,7 @@
 ---
-description: Recupera o número de objetos de qualificador na coleção.
+description: Recupera o número de objetos qualificador na coleção.
 ms.assetid: 9dafb83a-ff7f-4317-8ed4-2a46dcebf409
-title: Propriedade qualifierrs. Count
+title: Propriedade Qualifiers.Count
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -20,13 +20,13 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118900942"
 ---
-# <a name="qualifierscount-property"></a>Propriedade qualifierrs. Count
+# <a name="qualifierscount-property"></a>Propriedade Qualifiers.Count
 
-\[A propriedade **Count** está disponível para uso nos sistemas operacionais especificados na seção requisitos. Em vez disso, use a [**classe X509Extension**](/dotnet/api/system.security.cryptography.x509certificates.x509extension?view=netcore-3.1) no namespace [**System. Security. Cryptography. X509Certificates**](/dotnet/api/system.security.cryptography.x509certificates.publickey.-ctor?view=netcore-3.1) chamando o construtor que usa um OID como parâmetro e, em seguida, use o OID para políticas de certificado para processar qualificadores que fazem parte das informações de política na extensão de políticas de certificado.\]
+\[A **propriedade Count** está disponível para uso nos sistemas operacionais especificados na seção Requisitos. Em vez disso, use a Classe [**X509Extension**](/dotnet/api/system.security.cryptography.x509certificates.x509extension?view=netcore-3.1) no namespace [**System.Security.Cryptography.X509Certificates**](/dotnet/api/system.security.cryptography.x509certificates.publickey.-ctor?view=netcore-3.1) chamando o construtor que usa um OID como parâmetro e, em seguida, use o OID para Políticas de Certificado para processar qualificadores que fazem parte das informações de política na extensão políticas de certificado.\]
 
-A propriedade **Count** recupera o número de objetos de [**qualificador**](qualifier.md) na coleção.
+A **propriedade Count** recupera o número de objetos [**qualificador**](qualifier.md) na coleção.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 ```VB
@@ -37,7 +37,7 @@ Qualifiers.Count As Long
 
 ## <a name="property-value"></a>Valor da propriedade
 
-Número de objetos de [**qualificador**](qualifier.md) na coleção.
+Número de [**objetos qualificador**](qualifier.md) na coleção.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -45,7 +45,7 @@ Número de objetos de [**qualificador**](qualifier.md) na coleção.
 
 | Requisito | Valor |
 |----------------------------|----------------------------------------------------------------------------------------|
-| Redistribuível<br/> | capicom 2,0 ou posterior no Windows Server 2003 e Windows XP<br/>                  |
+| Redistribuível<br/> | CAPICOM 2.0 ou posterior no Windows Server 2003 e Windows XP<br/>                  |
 | DLL<br/>             | <dl> <dt>Capicom.dll</dt> </dl> |
 
 

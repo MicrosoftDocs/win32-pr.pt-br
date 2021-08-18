@@ -1,11 +1,11 @@
 ---
-title: Moniker-atributo Display-Name
+title: Atributo Moniker-Display-Name
 description: O nome de exibição de um moniker.
 ms.assetid: 6c352e25-5834-414d-af3f-c4a17b6bee7d
 ms.tgt_platform: multiple
 keywords:
-- Atributo moniker-Display-Name-Schema esquema do AD
-- Esquema de AD do atributo monikerDisplayName
+- Esquema do AD do atributo Moniker-Display-Name
+- Esquema do AD do atributo monikerDisplayName
 topic_type:
 - apiref
 api_name:
@@ -21,7 +21,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118687069"
 ---
-# <a name="moniker-display-name-attribute"></a>Moniker-atributo Display-Name
+# <a name="moniker-display-name-attribute"></a>Atributo Moniker-Display-Name
 
 O nome de exibição de um moniker.
 
@@ -29,14 +29,14 @@ O nome de exibição de um moniker.
 
 | Entrada | Valor |
 |-------------------|---------------------------------------------|
-| CN                | Moniker-nome de exibição                        |
-| LDAP-Display-Name | monikerDisplayName                          |
+| CN                | Moniker-Display-Name                        |
+| Ldap-Display-Name | monikerDisplayName                          |
 | Tamanho              | \-                                          |
 | Privilégio de atualização  | \-                                          |
 | Frequência de atualização  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.83                       |
-| System-ID-GUID    | bf9679c8-0de6-11d0-a285-00aa003049e2        |
-| Sintaxe            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | bf9679c8-0de6-11d0-a285-00aa003049e2        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -58,15 +58,15 @@ O nome de exibição de um moniker.
 | ID do link                | \-                                                                                                      |
 | MAPI-Id                | \-                                                                                                      |
 | System-Only            | Falso                                                                                                   |
-| É de valor único       | Falso                                                                                                   |
+| Tem valor único       | Falso                                                                                                   |
 | É indexado             | Falso                                                                                                   |
-| No catálogo global      | Falso                                                                                                   |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                            |
+| No Catálogo Global      | Falso                                                                                                   |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                            |
 | Range-Lower            | \-                                                                                                      |
 | Range-Upper            | \-                                                                                                      |
 | Search-Flags           | 0x00000000                                                                                              |
 | System-Flags           | 0x00000010                                                                                              |
-| Classes usadas em        | [**Ponto de conexão com**](c-comconnectionpoint.md)<br/> [**Armazenamento**](c-storage.md)<br/> |
+| Classes usadas em        | [**Ponto de conexão**](c-comconnectionpoint.md)<br/> [**Storage**](c-storage.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ O nome de exibição de um moniker.
 | ID do link                | \-                                                                                                      |
 | MAPI-Id                | \-                                                                                                      |
 | System-Only            | Falso                                                                                                   |
-| É de valor único       | Falso                                                                                                   |
+| Tem valor único       | Falso                                                                                                   |
 | É indexado             | Falso                                                                                                   |
-| No catálogo global      | Falso                                                                                                   |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                            |
+| No Catálogo Global      | Falso                                                                                                   |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                            |
 | Range-Lower            | \-                                                                                                      |
 | Range-Upper            | \-                                                                                                      |
 | Search-Flags           | 0x00000000                                                                                              |
 | System-Flags           | 0x00000010                                                                                              |
-| Classes usadas em        | [**Ponto de conexão com**](c-comconnectionpoint.md)<br/> [**Armazenamento**](c-storage.md)<br/> |
+| Classes usadas em        | [**Ponto de conexão**](c-comconnectionpoint.md)<br/> [**Storage**](c-storage.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ O nome de exibição de um moniker.
 | ID do link                | \-                                                                                                      |
 | MAPI-Id                | \-                                                                                                      |
 | System-Only            | Falso                                                                                                   |
-| É de valor único       | Falso                                                                                                   |
+| Tem valor único       | Falso                                                                                                   |
 | É indexado             | Falso                                                                                                   |
-| No catálogo global      | Falso                                                                                                   |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                            |
+| No Catálogo Global      | Falso                                                                                                   |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                            |
 | Range-Lower            | \-                                                                                                      |
 | Range-Upper            | \-                                                                                                      |
 | Search-Flags           | 0x00000000                                                                                              |
 | System-Flags           | 0x00000010                                                                                              |
-| Classes usadas em        | [**Ponto de conexão com**](c-comconnectionpoint.md)<br/> [**Armazenamento**](c-storage.md)<br/> |
+| Classes usadas em        | [**Ponto de conexão**](c-comconnectionpoint.md)<br/> [**Storage**](c-storage.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ O nome de exibição de um moniker.
 | ID do link                | \-                                                                                                      |
 | MAPI-Id                | \-                                                                                                      |
 | System-Only            | Falso                                                                                                   |
-| É de valor único       | Falso                                                                                                   |
+| Tem valor único       | Falso                                                                                                   |
 | É indexado             | Falso                                                                                                   |
-| No catálogo global      | Falso                                                                                                   |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                            |
+| No Catálogo Global      | Falso                                                                                                   |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                            |
 | Range-Lower            | \-                                                                                                      |
 | Range-Upper            | \-                                                                                                      |
 | Search-Flags           | 0x00000000                                                                                              |
 | System-Flags           | 0x00000010                                                                                              |
-| Classes usadas em        | [**Ponto de conexão com**](c-comconnectionpoint.md)<br/> [**Armazenamento**](c-storage.md)<br/> |
+| Classes usadas em        | [**Ponto de conexão**](c-comconnectionpoint.md)<br/> [**Storage**](c-storage.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ O nome de exibição de um moniker.
 | ID do link                | \-                                                                                                      |
 | MAPI-Id                | \-                                                                                                      |
 | System-Only            | Falso                                                                                                   |
-| É de valor único       | Falso                                                                                                   |
+| Tem valor único       | Falso                                                                                                   |
 | É indexado             | Falso                                                                                                   |
-| No catálogo global      | Falso                                                                                                   |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                            |
+| No Catálogo Global      | Falso                                                                                                   |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                            |
 | Range-Lower            | \-                                                                                                      |
 | Range-Upper            | \-                                                                                                      |
 | Search-Flags           | 0x00000000                                                                                              |
 | System-Flags           | 0x00000010                                                                                              |
-| Classes usadas em        | [**Ponto de conexão com**](c-comconnectionpoint.md)<br/> [**Armazenamento**](c-storage.md)<br/> |
+| Classes usadas em        | [**Ponto de conexão**](c-comconnectionpoint.md)<br/> [**Storage**](c-storage.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ O nome de exibição de um moniker.
 | ID do link                | \-                                                                                                      |
 | MAPI-Id                | \-                                                                                                      |
 | System-Only            | Falso                                                                                                   |
-| É de valor único       | Falso                                                                                                   |
+| Tem valor único       | Falso                                                                                                   |
 | É indexado             | Falso                                                                                                   |
-| No catálogo global      | Falso                                                                                                   |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                            |
+| No Catálogo Global      | Falso                                                                                                   |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                            |
 | Range-Lower            | \-                                                                                                      |
 | Range-Upper            | \-                                                                                                      |
 | Search-Flags           | 0x00000000                                                                                              |
 | System-Flags           | 0x00000010                                                                                              |
-| Classes usadas em        | [**Ponto de conexão com**](c-comconnectionpoint.md)<br/> [**Storage**](c-storage.md)<br/> |
+| Classes usadas em        | [**Ponto de conexão**](c-comconnectionpoint.md)<br/> [**Storage**](c-storage.md)<br/> |
 
 
 

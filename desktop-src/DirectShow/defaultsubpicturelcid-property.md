@@ -1,15 +1,15 @@
 ---
-description: A propriedade DVDAdm. DefaultSubpictureLCID define ou recupera a configuração do registro para o LCID padrão especificado pelo usuário para o fluxo de subimagem.
+description: A propriedade DVDAdm.DefaultSubpictureLCID define ou recupera a configuração do Registro para o LCID padrão especificado pelo usuário para o fluxo de subpicture.
 ms.assetid: 12dd308e-483b-489d-8d81-8da399bfac4d
 title: Propriedade DefaultSubpictureLCID
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8353f52227dc220bef474e872cbd695c78dc65f9
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: ebc67be112349a050df45f625fda6488c91b22dee357c820724de5842c156894
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104500733"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118952985"
 ---
 # <a name="defaultsubpicturelcid-property"></a>Propriedade DefaultSubpictureLCID
 
@@ -18,7 +18,7 @@ ms.locfileid: "104500733"
 
  
 
-A `DVDAdm.DefaultSubpictureLCID` propriedade define ou recupera a configuração do registro para o LCID padrão especificado pelo usuário para o fluxo de subimagem.
+A propriedade define ou recupera a configuração do Registro para o LCID padrão especificado pelo `DVDAdm.DefaultSubpictureLCID` usuário para o fluxo de subpicture.
 
 ``` syntax
 [ iSubpictureLCID = ] DVD.DVDAdm.DefaultSubpictureLCID
@@ -26,11 +26,11 @@ A `DVDAdm.DefaultSubpictureLCID` propriedade define ou recupera a configuração
 
 ## <a name="return-value"></a>Valor Retornado
 
-Retorna um valor inteiro que representa o LCID da subimagem padrão especificado pelo usuário como armazenado nas configurações do registro para o aplicativo de DVD. Esse valor não é necessariamente o mesmo que o fluxo de subimagem padrão como criado no DVD. Para obter o intervalo de LCIDs válidos, consulte a documentação do Win32 no SDK da plataforma.
+Retorna um valor Inteiro que representa o LCID da subpicture padrão especificado pelo usuário, conforme armazenado nas configurações do Registro para o aplicativo de DVD. Esse valor não é necessariamente o mesmo que o fluxo de subpicture padrão, conforme o autor no DVD. Para o intervalo de LCIDs válidos, consulte a documentação do Win32 no SDK da Plataforma.
 
 ## <a name="remarks"></a>Comentários
 
-Esta propriedade é de leitura/gravação sem valor padrão. Se nenhum LCID de subimagem padrão for especificado, o objeto MSDVDAdm reproduzirá o fluxo de subimagem marcado como o fluxo padrão no disco.
+Essa propriedade é de leitura/gravação sem valor padrão. Se nenhum LCID de subpicture padrão for especificado, o objeto MSDVDAdm reproduzirá o fluxo de subpicture marcado como o fluxo padrão no disco.
 
 ## <a name="see-also"></a>Confira também
 

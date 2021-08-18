@@ -1,10 +1,10 @@
 ---
-title: Exemplo de código para associação ao contêiner do usuário
-description: Este tópico inclui um exemplo de código que será associado ao contêiner de usuários no domínio atual e a interface de retorno e IADsContainer para o contêiner.
+title: Código de exemplo para associação ao contêiner do usuário
+description: Este tópico inclui um exemplo de código que se vinculará ao contêiner de usuários no domínio atual e retornará a interface IADsContainer para o contêiner.
 ms.assetid: 78524b05-f57a-4816-92eb-e37be74dd245
 ms.tgt_platform: multiple
 keywords:
-- Active Directory exemplos Active Directory, associação ao contêiner do usuário
+- Exemplos do Active Directory active directory , associação ao contêiner do usuário
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 21f270f1814f996e84b3fa57f9753219c957cb05cd7cf29a9622f4a64f3b907d
@@ -14,9 +14,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118694559"
 ---
-# <a name="example-code-for-binding-to-the-users-container"></a>Exemplo de código para associação ao contêiner do usuário
+# <a name="example-code-for-binding-to-the-users-container"></a>Código de exemplo para associação ao contêiner do usuário
 
-O exemplo de código C++ a seguir é associado ao contêiner de usuários no domínio atual e à interface de retorno e [**IADsContainer**](/windows/desktop/api/iads/nn-iads-iadscontainer) para o contêiner. Para obter mais informações sobre associação a objetos conhecidos, consulte [Binding to Well-Known Objects using WKGUID](binding-to-well-known-objects-using-wkguid.md).
+O exemplo de código C++ a seguir se vincula ao contêiner de usuários no domínio atual e retorna e a interface [**IADsContainer**](/windows/desktop/api/iads/nn-iads-iadscontainer) para o contêiner. Para obter mais informações sobre a associação a objetos conhecidos, consulte [Associação a objetos Well-Known usando WKGUID](binding-to-well-known-objects-using-wkguid.md).
 
 
 ```C++

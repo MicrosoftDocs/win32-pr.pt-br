@@ -1,16 +1,16 @@
 ---
-title: Estruturas de prevenção de perda de dados do ponto de extremidade
+title: Estruturas de prevenção contra perda de dados do ponto de extremidade
 description: Estruturas usadas pelo recurso de prevenção de perda de dados do ponto de extremidade.
 ms.topic: article
 ms.date: 03/18/2021
-ms.openlocfilehash: 1e35013aa0a51ff5f35c924c2fd3e0a9a66e63e9
-ms.sourcegitcommit: 91110c16e4713ed82d7fb80562d3ddf40b5d76b2
+ms.openlocfilehash: 85414f655fee9d9e739e9fdcf0ee1327cb6518552da41dd7a0c9b83d258427a6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "107495305"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118479407"
 ---
-# <a name="endpoint-data-loss-prevention-structures"></a>Estruturas de prevenção de perda de dados do ponto de extremidade
+# <a name="endpoint-data-loss-prevention-structures"></a>Estruturas de prevenção contra perda de dados do ponto de extremidade
 
 Estruturas usadas pelo recurso de prevenção de perda de dados do ponto de extremidade.
 

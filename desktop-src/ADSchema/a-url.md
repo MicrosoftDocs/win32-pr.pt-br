@@ -4,8 +4,8 @@ description: Uma lista de páginas da Web alternativas.
 ms.assetid: 834a0020-2f0c-41e5-a0b0-5ef393df2b47
 ms.tgt_platform: multiple
 keywords:
-- Esquema do AD do atributo WWW-Page-Other
-- esquema do AD do atributo url
+- WWW-Page-outro esquema do AD de atributos
+- Esquema de URL do atributo do AD
 topic_type:
 - apiref
 api_name:
@@ -29,14 +29,14 @@ Uma lista de páginas da Web alternativas.
 
 | Entrada | Valor |
 |-------------------|-----------------------------------------------------------------------------|
-| CN                | WWW-Page-Other                                                              |
-| Ldap-Display-Name | url                                                                         |
+| CN                | WWW-página-outro                                                              |
+| LDAP-Display-Name | url                                                                         |
 | Tamanho              | \-                                                                          |
 | Privilégio de atualização  | Administrador de domínio ou proprietário da conta.                                      |
-| Frequência de atualização  | Quando o registro do usuário é criado e sempre que a página da Web precisa ser mudada. |
+| Frequência de atualização  | Quando o registro do usuário é criado e sempre que a página da Web precisa ser alterada. |
 | Attribute-Id      | 1.2.840.113556.1.4.749                                                      |
-| System-Id-Guid    | 9a9a0221-4a5b-11d1-a9c3-0000f80367c1                                        |
-| Sintaxe            | [**String(Unicode)**](s-string-unicode.md)                                 |
+| System-ID-GUID    | 9a9a0221-4a5b-11d1-a9c3-0000f80367c1                                        |
+| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md)                                 |
 
 
 
@@ -44,7 +44,7 @@ Uma lista de páginas da Web alternativas.
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**Adam**](#adam)
+-   [**ADAM**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -59,10 +59,10 @@ Uma lista de páginas da Web alternativas.
 | ID do link                | \-                              |
 | MAPI-Id                | 0x8175                          |
 | System-Only            | Falso                           |
-| Tem valor único       | Falso                           |
+| É de valor único       | Falso                           |
 | É indexado             | Falso                           |
-| No Catálogo Global      | Falso                           |
-| Descritor de segurança NT | O:BAG:BAD:S:                    |
+| No catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -80,10 +80,10 @@ Uma lista de páginas da Web alternativas.
 | ID do link                | \-                              |
 | MAPI-Id                | 0x8175                          |
 | System-Only            | Falso                           |
-| Tem valor único       | Falso                           |
+| É de valor único       | Falso                           |
 | É indexado             | Falso                           |
-| No Catálogo Global      | Falso                           |
-| Descritor de segurança NT | O:BAG:BAD:S:                    |
+| No catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -92,7 +92,7 @@ Uma lista de páginas da Web alternativas.
 
 
 
-## <a name="adam"></a>Adam
+## <a name="adam"></a>ADAM
 
 
 
@@ -101,10 +101,10 @@ Uma lista de páginas da Web alternativas.
 | ID do link                | \-                              |
 | MAPI-Id                | 0x8175                          |
 | System-Only            | Falso                           |
-| Tem valor único       | Falso                           |
+| É de valor único       | Falso                           |
 | É indexado             | Falso                           |
-| No Catálogo Global      | Falso                           |
-| Descritor de segurança NT | O:BAG:BAD:S:                    |
+| No catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -122,10 +122,10 @@ Uma lista de páginas da Web alternativas.
 | ID do link                | \-                              |
 | MAPI-Id                | 0x8175                          |
 | System-Only            | Falso                           |
-| Tem valor único       | Falso                           |
+| É de valor único       | Falso                           |
 | É indexado             | Falso                           |
-| No Catálogo Global      | Falso                           |
-| Descritor de segurança NT | O:BAG:BAD:S:                    |
+| No catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -143,10 +143,10 @@ Uma lista de páginas da Web alternativas.
 | ID do link                | \-                              |
 | MAPI-Id                | 0x8175                          |
 | System-Only            | Falso                           |
-| Tem valor único       | Falso                           |
+| É de valor único       | Falso                           |
 | É indexado             | Falso                           |
-| No Catálogo Global      | Falso                           |
-| Descritor de segurança NT | O:BAG:BAD:S:                    |
+| No catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -164,10 +164,10 @@ Uma lista de páginas da Web alternativas.
 | ID do link                | \-                              |
 | MAPI-Id                | 0x8175                          |
 | System-Only            | Falso                           |
-| Tem valor único       | Falso                           |
+| É de valor único       | Falso                           |
 | É indexado             | Falso                           |
-| No Catálogo Global      | Falso                           |
-| Descritor de segurança NT | O:BAG:BAD:S:                    |
+| No catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -185,10 +185,10 @@ Uma lista de páginas da Web alternativas.
 | ID do link                | \-                              |
 | MAPI-Id                | 0x8175                          |
 | System-Only            | Falso                           |
-| Tem valor único       | Falso                           |
+| É de valor único       | Falso                           |
 | É indexado             | Falso                           |
-| No Catálogo Global      | Falso                           |
-| Descritor de segurança NT | O:BAG:BAD:S:                    |
+| No catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |

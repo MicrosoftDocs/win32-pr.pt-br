@@ -1,10 +1,10 @@
 ---
-title: MPSCAN_RESOURCES estrutura (MpClient.h)
+title: Estrutura de MPSCAN_RESOURCES (MpClient. h)
 description: Informações de recurso passadas durante uma operação de verificação.
 ms.assetid: D97712A6-547D-44CC-B55D-039A5CCE20BF
 keywords:
-- MPSCAN_RESOURCES estrutura herdada Windows recursos de ambiente
-- PMPSCAN_RESOURCES de estrutura herdado Windows recursos de ambiente
+- recursos de ambiente de Windows herdado da estrutura de MPSCAN_RESOURCES
+- Windows recursos de ambiente herdados do ponteiro de estrutura do PMPSCAN_RESOURCES
 topic_type:
 - apiref
 api_name:
@@ -22,7 +22,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118747345"
 ---
-# <a name="mpscan_resources-structure"></a>Estrutura DE RECURSOS DO MPSCAN \_
+# <a name="mpscan_resources-structure"></a>\_Estrutura de recursos MPSCAN
 
 Informações de recurso passadas durante uma operação de verificação.
 
@@ -53,14 +53,14 @@ Contagem de recursos.
 
 </dd> <dt>
 
-**pResourceList**
+**origem**
 </dt> <dd>
 
-Tipo: **PMPRESOURCE \_ INFO**
+Tipo: **\_ informações de PMPRESOURCE**
 
 </dd> <dd>
 
-Matriz de recursos. Consulte [**INFORMAÇÕES DO MPRESOURCE. \_**](mpresource-info.md)
+Matriz de recursos. Consulte [**MPRESOURCE \_ info**](mpresource-info.md).
 
 </dd> </dl>
 
@@ -70,9 +70,9 @@ Matriz de recursos. Consulte [**INFORMAÇÕES DO MPRESOURCE. \_**](mpresource-in
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Windows 8 somente aplicativos da área de trabalho\]<br/>                                            |
-| Servidor mínimo com suporte<br/> | \[Windows Server 2012 somente aplicativos da área de trabalho\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>MpClient.h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 8 \[ somente aplicativos da área de trabalho\]<br/>                                            |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 \[ somente aplicativos da área de trabalho\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>MpClient. h</dt> </dl> |
 
 
 
@@ -80,7 +80,7 @@ Matriz de recursos. Consulte [**INFORMAÇÕES DO MPRESOURCE. \_**](mpresource-in
 
 <dl> <dt>
 
-[**INFORMAÇÕES DO MPRESOURCE \_**](mpresource-info.md)
+[**informações de MPRESOURCE \_**](mpresource-info.md)
 </dt> </dl>
 
  

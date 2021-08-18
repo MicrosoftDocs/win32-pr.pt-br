@@ -1,11 +1,11 @@
 ---
 title: Address-Type atributo
-description: Uma cadeia de caracteres que descreve o formato do endereço do usuário. Os tipos de endereço são mapeados para formatos de endereço. Ou seja, examinando o tipo de endereço de um destinatário, os aplicativos cliente podem determinar como formatar um endereço apropriado para o destinatário.
+description: Uma cadeia de caracteres que descreve o formato do endereço do usuário. Os tipos de endereço mapeiam para formatos de endereço. Ou seja, observando o tipo de endereço de um destinatário, os aplicativos cliente podem determinar como formatar um endereço apropriado para o destinatário.
 ms.assetid: ff39b1f5-1844-43e9-a4a5-2b5f7c396f34
 ms.tgt_platform: multiple
 keywords:
-- Esquema de Address-Type do atributo AD
-- Esquema do atributo do ADtype
+- Address-Type atributo AD Schema
+- esquema do AD do atributo addressType
 topic_type:
 - apiref
 api_name:
@@ -23,20 +23,20 @@ ms.locfileid: "118688483"
 ---
 # <a name="address-type-attribute"></a>Address-Type atributo
 
-Uma cadeia de caracteres que descreve o formato do endereço do usuário. Os tipos de endereço são mapeados para formatos de endereço. Ou seja, examinando o tipo de endereço de um destinatário, os aplicativos cliente podem determinar como formatar um endereço apropriado para o destinatário.
+Uma cadeia de caracteres que descreve o formato do endereço do usuário. Os tipos de endereço mapeiam para formatos de endereço. Ou seja, observando o tipo de endereço de um destinatário, os aplicativos cliente podem determinar como formatar um endereço apropriado para o destinatário.
 
 
 
 | Entrada | Valor |
 |-------------------|---------------------------------------------------------------------------------------------------------------------------|
 | CN                | Address-Type                                                                                                              |
-| LDAP-Display-Name | addressType                                                                                                               |
-| Tamanho              | Tipos de endereço: 3COM, ATT, CCMAIL, COMPUSERVE, EX, FAX, MSFAX, MCI, MHS, MS, MSA, MSN, PROFs, SMTP, SNADS, TELEX, X400, X500 |
+| Ldap-Display-Name | Addresstype                                                                                                               |
+| Tamanho              | Tipos de endereço: 3COM, ATT, CCMAIL, COMPUSERVE, EX, FAX, MSFAX, MCI, MHS, MS, MSA, MSN, PROFS,SMTP, SNADS, TELEX, X400, X500 |
 | Privilégio de atualização  | Esse valor é definido pelo sistema.                                                                                          |
-| Frequência de atualização  | Defina quando o objeto é criado.                                                                                           |
+| Frequência de atualização  | Definido quando o objeto é criado.                                                                                           |
 | Attribute-Id      | 1.2.840.113556.1.2.350                                                                                                    |
-| System-ID-GUID    | 5fd42464-1262-11d0-a060-00aa006c33ed                                                                                      |
-| Sintaxe            | [**Cadeia de caracteres (Teletex)**](s-string-teletex.md)                                                                               |
+| System-Id-Guid    | 5fd42464-1262-11d0-a060-00aa006c33ed                                                                                      |
+| Syntax            | [**String(Teletex)**](s-string-teletex.md)                                                                               |
 
 
 
@@ -58,15 +58,15 @@ Uma cadeia de caracteres que descreve o formato do endereço do usuário. Os tip
 | ID do link                | \-                                                       |
 | MAPI-Id                | 0x8048                                                   |
 | System-Only            | Falso                                                    |
-| É de valor único       | True                                                     |
+| Tem valor único       | Verdadeiro                                                     |
 | É indexado             | Falso                                                    |
-| No catálogo global      | Falso                                                    |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                             |
+| No Catálogo Global      | Falso                                                    |
+| Descritor de segurança NT | O:BAG:BAD:S:                                             |
 | Range-Lower            | 1                                                        |
 | Range-Upper            | 32                                                       |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Classes usadas em        | [**Endereço-modelo**](c-addresstemplate.md)<br/> |
+| Classes usadas em        | [**Modelo de endereço**](c-addresstemplate.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Uma cadeia de caracteres que descreve o formato do endereço do usuário. Os tip
 | ID do link                | \-                                                       |
 | MAPI-Id                | 0x8048                                                   |
 | System-Only            | Falso                                                    |
-| É de valor único       | True                                                     |
+| Tem valor único       | Verdadeiro                                                     |
 | É indexado             | Falso                                                    |
-| No catálogo global      | Falso                                                    |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                             |
+| No Catálogo Global      | Falso                                                    |
+| Descritor de segurança NT | O:BAG:BAD:S:                                             |
 | Range-Lower            | 1                                                        |
 | Range-Upper            | 32                                                       |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Classes usadas em        | [**Endereço-modelo**](c-addresstemplate.md)<br/> |
+| Classes usadas em        | [**Modelo de endereço**](c-addresstemplate.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Uma cadeia de caracteres que descreve o formato do endereço do usuário. Os tip
 | ID do link                | \-                                                       |
 | MAPI-Id                | 0x8048                                                   |
 | System-Only            | Falso                                                    |
-| É de valor único       | True                                                     |
+| Tem valor único       | Verdadeiro                                                     |
 | É indexado             | Falso                                                    |
-| No catálogo global      | Falso                                                    |
-| Descritor de segurança NT | O:BAG:BAD:S:                                             |
+| No Catálogo Global      | Falso                                                    |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                             |
 | Range-Lower            | 1                                                        |
 | Range-Upper            | 32                                                       |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Classes usadas em        | [**Modelo de endereço**](c-addresstemplate.md)<br/> |
+| Classes usadas em        | [**Endereço-modelo**](c-addresstemplate.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Uma cadeia de caracteres que descreve o formato do endereço do usuário. Os tip
 | ID do link                | \-                                                       |
 | MAPI-Id                | 0x8048                                                   |
 | System-Only            | Falso                                                    |
-| Tem valor único       | True                                                     |
+| É de valor único       | Verdadeiro                                                     |
 | É indexado             | Falso                                                    |
-| No Catálogo Global      | Falso                                                    |
-| Descritor de segurança NT | O:BAG:BAD:S:                                             |
+| No catálogo global      | Falso                                                    |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                             |
 | Range-Lower            | 1                                                        |
 | Range-Upper            | 32                                                       |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Classes usadas em        | [**Modelo de endereço**](c-addresstemplate.md)<br/> |
+| Classes usadas em        | [**Endereço-modelo**](c-addresstemplate.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Uma cadeia de caracteres que descreve o formato do endereço do usuário. Os tip
 | ID do link                | \-                                                       |
 | MAPI-Id                | 0x8048                                                   |
 | System-Only            | Falso                                                    |
-| Tem valor único       | True                                                     |
+| É de valor único       | Verdadeiro                                                     |
 | É indexado             | Falso                                                    |
-| No Catálogo Global      | Falso                                                    |
-| Descritor de segurança NT | O:BAG:BAD:S:                                             |
+| No catálogo global      | Falso                                                    |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                             |
 | Range-Lower            | 1                                                        |
 | Range-Upper            | 32                                                       |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Classes usadas em        | [**Modelo de endereço**](c-addresstemplate.md)<br/> |
+| Classes usadas em        | [**Endereço-modelo**](c-addresstemplate.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Uma cadeia de caracteres que descreve o formato do endereço do usuário. Os tip
 | ID do link                | \-                                                       |
 | MAPI-Id                | 0x8048                                                   |
 | System-Only            | Falso                                                    |
-| Tem valor único       | True                                                     |
+| É de valor único       | Verdadeiro                                                     |
 | É indexado             | Falso                                                    |
-| No Catálogo Global      | Falso                                                    |
-| Descritor de segurança NT | O:BAG:BAD:S:                                             |
+| No catálogo global      | Falso                                                    |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                             |
 | Range-Lower            | 1                                                        |
 | Range-Upper            | 32                                                       |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Classes usadas em        | [**Modelo de endereço**](c-addresstemplate.md)<br/> |
+| Classes usadas em        | [**Endereço-modelo**](c-addresstemplate.md)<br/> |
 
 
 

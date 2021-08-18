@@ -1,7 +1,7 @@
 ---
-description: Destrói um objeto de dispositivo do Microsoft DirectDraw no modo de kernel criado anteriormente.
+description: Destrói um objeto de dispositivo Microsoft DirectDraw no modo kernel criado anteriormente.
 ms.assetid: 0b2e1bae-8291-4fe4-9528-980680906e0a
-title: Função NtGdiDdDeleteDirectDrawObject (Ntgdi. h)
+title: Função NtGdiDdDeleteDirectDrawObject (Ntgdi.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,18 +16,18 @@ api_location:
 - Ext-MS-Win-GDI-Internal-Desktop-L1-1-0.dll
 - GDI32.dll
 - GDI32Full.dll
-ms.openlocfilehash: 9ac10798f83fe7e1a07a0803dd29cfa9cd8b1c98
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 866624e35c5c05afa14692a2e83d1c15293af9435aa68deddf9c602b80820708
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104088917"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118956545"
 ---
 # <a name="ntgdidddeletedirectdrawobject-function"></a>Função NtGdiDdDeleteDirectDrawObject
 
-\[Essa função está sujeita a alterações em cada revisão do sistema operacional. Em vez disso, use o DirectDraw e o Microsoft Direct3DAPIs; essas APIs isolam os aplicativos dessas alterações do sistema operacional e ocultam muitas outras dificuldades envolvidas na interação direta com os drivers de vídeo.\]
+\[Essa função está sujeita a alterações com cada revisão do sistema operacional. Em vez disso, use o DirectDraw e o Microsoft Direct3DAPIs; essas APIs isolam aplicativos dessas alterações do sistema operacional e ocultam muitas outras dificuldades envolvidas na interação diretamente com drivers de exibição.\]
 
-Destrói um objeto de dispositivo do Microsoft DirectDraw no modo de kernel criado anteriormente.
+Destrói um objeto de dispositivo Microsoft DirectDraw no modo kernel criado anteriormente.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -47,17 +47,17 @@ BOOL APIENTRY NtGdiDdDeleteDirectDrawObject(
 *hDirectDrawLocal* 
 </dt> <dd>
 
-Identificador para o objeto de dispositivo do DirectDraw no modo kernel.
+Identificador para o objeto de dispositivo DirectDraw no modo kernel.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Se for bem-sucedida, essa função retornará **true**; caso contrário, retornará **false**.
+Se for bem-sucedida, essa função **retornará TRUE;** caso contrário, **retornará FALSE.**
 
 ## <a name="remarks"></a>Comentários
 
-Os aplicativos são aconselhados a usar as APIs do DirectDraw e do [Direct3D](../direct3d10/d3d10-graphics-reference.md) para criar e gerenciar objetos de dispositivo de gráficos. Essas construções abstraem o processo de criação de dispositivos de maneira simplificada e independente do sistema operacional.
+Os aplicativos são aconselhados a usar as APIs DirectDraw e [Direct3D](../direct3d10/d3d10-graphics-reference.md) para criar e gerenciar objetos de dispositivo gráfico. Esses constructos abstraem o processo de criação do dispositivo de maneira simplificada e independente do sistema operacional.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -67,7 +67,7 @@ Os aplicativos são aconselhados a usar as APIs do DirectDraw e do [Direct3D](..
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                         |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                               |
-| Cabeçalho<br/>                   | <dl> <dt>Ntgdi. h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Ntgdi.h</dt> </dl> |
 
 
 

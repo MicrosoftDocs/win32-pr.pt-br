@@ -1,9 +1,9 @@
 ---
-title: 'Função RWTexture2DArray:: Load (int)'
-description: 'Lê dados de textura. | Função RWTexture2DArray:: Load (int)'
+title: Função RWTexture2DArray::Load(int)
+description: Lê dados de textura. | Função RWTexture2DArray::Load(int)
 ms.assetid: BC247B2A-1744-4E37-A501-22E4A592A32D
 keywords:
-- Carregar função HLSL
+- Função de carregamento HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: b23439d471f4d22c807c8d45bb00c23a7d814e3f
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 7459e0bfacda9075fd587be69f8a3d69adbefb855608e5f949e250d0e35de786
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104298247"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118790832"
 ---
-# <a name="rwtexture2darrayloadint-function"></a>Função RWTexture2DArray:: Load (int)
+# <a name="rwtexture2darrayloadint-function"></a>Função RWTexture2DArray::Load(int)
 
 Lê dados de textura.
 
@@ -39,7 +39,7 @@ Lê dados de textura.
 
 <dl> <dt>
 
-*Local* \[ do no\]
+*Localização* \[ Em\]
 </dt> <dd>
 
 Tipo: **int**
@@ -48,11 +48,11 @@ O local da textura.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo:
 
-O tipo de retorno corresponde ao tipo na declaração para o objeto [**RWTexture2DArray**](sm5-object-rwtexture2darray.md) .
+O tipo de retorno corresponde ao tipo na declaração para o [**objeto RWTexture2DArray.**](sm5-object-rwtexture2darray.md)
 
 ## <a name="remarks"></a>Comentários
 
@@ -60,7 +60,7 @@ Essa função tem suporte para os seguintes tipos de sombreadores:
 
 
 
-| Vértice | Envoltória | Domínio | Geometria | 16x16 | Computação |
+| Vértice | Casco | Domínio | Geometry | Pixel | Computação |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | x     | x       |
 

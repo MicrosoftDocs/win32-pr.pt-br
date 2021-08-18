@@ -3,17 +3,17 @@ title: Diversos
 description: Diversos
 ms.assetid: 39e5187d-1f71-4ca8-814c-0ea1d5367a2e
 keywords:
-- Capas do Windows Media Player, atributos especializados
+- aparências de Windows Media Player, atributos especializados
 - capas, atributos especializados
 - referência para capas, atributos especializados
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cafb901aceab1ada6af93ce03dafda6dac04fbfa
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 53a2dfd7f6a54b10b3997288b0b207713a4231caf96a0e7a9aaa7a6ab02f0959
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104005629"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118996186"
 ---
 # <a name="miscellaneous"></a>Diversos
 
@@ -31,7 +31,7 @@ Os tópicos a seguir são abordados.
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -40,9 +40,9 @@ Os tópicos a seguir são abordados.
 [**Referência de programação de capa**](skin-programming-reference.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 5a007a400acdc2dd0d7af71cf1cb03c73baa0b78
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a8ba84ab4967518fdd4a4894b9f6307fe23f0da46f8e85edd1fb6c173f44adf1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104091261"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118780040"
 ---
 # <a name="esentdatabasestreamingfilemismatchexception-class"></a>Classe EsentDatabaseStreamingFileMismatchException
 
@@ -38,7 +38,7 @@ Classe base para JET_err. DatabaseStreamingFileMismatch exceções.
 ## <a name="inheritance-hierarchy"></a>Hierarquia de herança
 
 [System.Object](/dotnet/api/system.object)  
-  [System. Exception](/dotnet/api/system.exception)  
+  [System.Exception](/dotnet/api/system.exception)  
     [Microsoft. ISAM. ESENT. EsentException](./esentexception-class.md)  
       [Microsoft. ISAM. ESENT. Interop. EsentErrorException](./esenterrorexception-class.md)  
         [Microsoft. ISAM. ESENT. Interop. EsentApiException](./esentapiexception-class.md)  

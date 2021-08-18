@@ -1,5 +1,5 @@
 ---
-title: MPSAMPLE_DATA estrutura (MpClient.h)
+title: MPSAMPLE_DATA (MpClient.h)
 description: Dados de notificação passados para a função de retorno de chamada de envio de exemplo.
 ms.assetid: 58F348C6-411D-4545-9D4D-A80095FD139B
 keywords:
@@ -60,7 +60,7 @@ Tipo: **DWORD**
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | \[Windows 8 somente aplicativos da área de trabalho\]<br/>                                            |
 | Servidor mínimo com suporte<br/> | \[Windows Server 2012 somente aplicativos da área de trabalho\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>MpClient.h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>MpClient.h</dt> </dl> |
 
 
 

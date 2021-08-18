@@ -1,7 +1,7 @@
 ---
-description: ocorre quando um aplicativo da Windows Store é ativado.
+description: Ocorre quando um aplicativo Windows Store é ativado.
 ms.assetid: CA0DB2D4-3417-48F5-8455-D87D0F323A1E
-title: 'Evento ICoreApplicationView:: Activated (Windows. ApplicationModel. Core. h)'
+title: Evento ICoreApplicationView::Activated (Windows. ApplicationModel.Core.h)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 93e736d0fb5403fe76d6d402c261e6b7e5336dfc096d8c39d7b3300b93ab1332
@@ -11,9 +11,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118560990"
 ---
-# <a name="icoreapplicationviewactivated-event"></a>Evento ICoreApplicationView:: Activated
+# <a name="icoreapplicationviewactivated-event"></a>Evento ICoreApplicationView::Activated
 
-ocorre quando um aplicativo da Windows Store é ativado.
+Ocorre quando um aplicativo Windows Store é ativado.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -30,7 +30,7 @@ void Activated(
 
 <dl> <dt>
 
-*manipulador* \[ no\]
+*manipulador* \[ Em\]
 </dt> <dd></dd> </dl>
 
 ## <a name="return-value"></a>Valor retornado
@@ -49,8 +49,8 @@ Não chame o método [**Exit**](/previous-versions//hh438368(v=vs.85)) de dentro
 |-------------------------------------|--------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 8<br/>                                                                                         |
 | Servidor mínimo com suporte<br/> | Windows Server 2012<br/>                                                                               |
-| parâmetro<br/>                   | <dl> <dt>Windows. ApplicationModel. Core. h</dt> </dl>   |
-| INSERI<br/>                      | <dl> <dt>Windows. ApplicationModel. Core. idl</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Windows. ApplicationModel.Core.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>Windows. ApplicationModel.Core.idl</dt> </dl> |
 
 
 

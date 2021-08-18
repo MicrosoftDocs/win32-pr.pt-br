@@ -1,6 +1,6 @@
 ---
 title: PlayerApplication.playerDocked
-description: A propriedade playerDocked recupera um valor que indica se o Windows Media Player está em um estado encaixado.
+description: a propriedade playerDocked recupera um valor que indica se Windows Media Player está em um estado encaixado.
 ms.assetid: c6f82188-0826-4854-992c-85ad84701fb7
 keywords:
 - PlayerApplication. playerDocked Windows Media Player
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c53ac92aac82c19dd9e58d389dee340a5951457b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b2c3ad74dcc21eec386f70f00ed0fa1a6e205c5d702dcfa63949d35f4fdd6adf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105765643"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118995816"
 ---
 # <a name="playerapplicationplayerdocked"></a>PlayerApplication.playerDocked
 
-A propriedade **playerDocked** recupera um valor que indica se o Windows Media Player está em um estado encaixado.
+a propriedade **playerDocked** recupera um valor que indica se Windows Media Player está em um estado encaixado.
 
 ## <a name="syntax"></a>Syntax
 
@@ -35,7 +35,7 @@ Esta propriedade é um **booliano** somente leitura.
 
 ## <a name="remarks"></a>Comentários
 
-Essa propriedade é usada somente quando você faz a comunicação remota do controle do Windows Media Player.
+essa propriedade é usada somente quando o controle de Windows Media Player de comunicação remota é usado.
 
 **Windows Media Player 10 Mobile:** Essa propriedade sempre retorna **false**.
 

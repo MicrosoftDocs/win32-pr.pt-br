@@ -1,6 +1,6 @@
 ---
 title: UI_PKEY_NoColorLabel
-description: Identifica a \_ Propriedade PKEY NoColorLabel da interface do usuário \_ .
+description: Identifica a propriedade \_ PKEY \_ NoColorLabel da interface do usuário.
 ms.assetid: b5bf8b4e-1dc9-4d03-bbe3-c221057f6678
 ms.topic: article
 ms.date: 05/31/2018
@@ -11,9 +11,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118705965"
 ---
-# <a name="ui_pkey_nocolorlabel"></a>\_NoColorLabel PKEY \_ UI
+# <a name="ui_pkey_nocolorlabel"></a>Interface \_ do usuário PKEY \_ NoColorLabel
 
-Identifica a \_ Propriedade PKEY NoColorLabel da interface do usuário \_ .
+Identifica a propriedade \_ PKEY \_ NoColorLabel da interface do usuário.
 
 ```
 propertyDescription
@@ -27,17 +27,17 @@ propertyDescription
 
 ## <a name="remarks"></a>Comentários
 
-A interface do usuário \_ PKEY \_ NoColorLabel é usada por um aplicativo para consultar o valor do rótulo associado ao botão **sem cor** de um [**DropDownColorPicker**](windowsribbon-element-dropdowncolorpicker.md).
+A interface do usuário PKEY NoColorLabel é usada por um aplicativo para consultar o valor do rótulo associado ao botão Sem cor de \_ \_ um [**DropDownColorPicker.**](windowsribbon-element-dropdowncolorpicker.md) 
 
-O valor da propriedade é uma cadeia de caracteres que representa o rótulo associado ao botão **sem cor** de um [**DropDownColorPicker**](windowsribbon-element-dropdowncolorpicker.md).
+O valor da propriedade é uma cadeia de caracteres que representa o rótulo associado ao **botão Sem cor** de um [**DropDownColorPicker.**](windowsribbon-element-dropdowncolorpicker.md)
 
-A interface do usuário \_ PKEY \_ NoColorLabel é válida para todos os valores de atributo **colortemplate** .
+A \_ interface do usuário PKEY \_ NoColorLabel é válida para todos os valores de atributo **ColorTemplate.**
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[Propriedades do seletor de cores](windowsribbon-reference-properties-colorpicker.md)
+[Seletor de Cor propriedades](windowsribbon-reference-properties-colorpicker.md)
 </dt> </dl>
 
  

@@ -186,7 +186,7 @@ O restante dos tipos destina-se apenas a guiar o uso por SHAs e SHVs.
 |-------------------------------------|--------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                             |
 | Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                       |
-| parâmetro<br/>                   | <dl> <dt>NapProtocol. h</dt> </dl>   |
+| Cabeçalho<br/>                   | <dl> <dt>NapProtocol. h</dt> </dl>   |
 | INSERI<br/>                      | <dl> <dt>NapProtocol. idl</dt> </dl> |
 
 

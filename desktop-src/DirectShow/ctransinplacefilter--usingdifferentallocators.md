@@ -1,7 +1,7 @@
 ---
-description: O método UsingDifferentAllocators determina se os Pins de entrada e de saída estão usando alocadores diferentes.
+description: O método UsingDifferentAllocators determina se os pinos de entrada e saída estão usando alocadores diferentes.
 ms.assetid: 75feaa6e-6395-4d47-ae92-10a857f8764b
-title: Método CTransInPlaceFilter. UsingDifferentAllocators (TRANSip. h)
+title: Método CTransInPlaceFilter.UsingDifferentAllocators (Transip.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: f20802836adb665614e2bbfb8cb79bdccd5a36ef
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 0033c0f5ded1fe741d27397078367049d72061c40a993833f714686d9f8a96fc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105752682"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118953415"
 ---
-# <a name="ctransinplacefilterusingdifferentallocators-method"></a>Método CTransInPlaceFilter. UsingDifferentAllocators
+# <a name="ctransinplacefilterusingdifferentallocators-method"></a>Método CTransInPlaceFilter.UsingDifferentAllocators
 
-O `UsingDifferentAllocators` método determina se os Pins de entrada e de saída estão usando alocadores diferentes.
+O `UsingDifferentAllocators` método determina se os pinos de entrada e saída estão usando alocadores diferentes.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,9 +40,9 @@ BOOL UsingDifferentAllocators() const;
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retornará **true** se os Pins de entrada e saída estiverem usando alocadores diferentes ou **false** caso contrário.
+Retornará **TRUE** se os pinos de entrada e saída estão usando alocadores diferentes ou **FALSE** caso contrário.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,8 +50,8 @@ Retornará **true** se os Pins de entrada e saída estiverem usando alocadores d
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>TRANSip. h (incluir fluxos. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Transip.h (incluir Fluxos.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

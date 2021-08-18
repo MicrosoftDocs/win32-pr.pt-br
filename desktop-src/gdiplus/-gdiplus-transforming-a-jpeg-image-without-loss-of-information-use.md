@@ -4,33 +4,33 @@ description: Quando você compacta uma imagem JPEG, algumas das informações na
 ms.assetid: d7342195-9634-4968-87c1-a94bc6a7e112
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 25ea7011f25a97a228c44bdb87ba09ca8b284ddd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 67152084f95220db3fe7afecfa4be07b366a92b31eb713ec192a2805ecb42ea9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104967398"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118977286"
 ---
 # <a name="lossless-transform-of-a-jpeg-image"></a>Transformação sem perdas de uma imagem JPEG
 
-Quando você compacta uma imagem JPEG, algumas das informações na imagem são perdidas. Se você abrir um arquivo JPEG, alterar a imagem e salvá-la em outro arquivo JPEG, a qualidade diminuirá. Se você repetir esse processo muitas vezes, verá uma degradação substancial na qualidade da imagem.
+Quando você compacta uma imagem JPEG, algumas das informações na imagem são perdidas. Se você abrir um arquivo JPEG, alterar a imagem e salvá-la em outro arquivo JPEG, a qualidade diminuirá. Se você repetir esse processo muitas vezes, verá uma degradação significativa na qualidade da imagem.
 
-Como o JPEG é um dos formatos de imagem mais populares na Web, e como as pessoas frequentemente gostam de modificar imagens JPEG, a GDI+ fornece as seguintes transformações que podem ser executadas em imagens JPEG sem perda de informações:
+Como JPEG é um dos formatos de imagem mais populares na Web e como as pessoas geralmente gostam de modificar imagens JPEG, o GDI+ fornece as seguintes transformações que podem ser executadas em imagens JPEG sem perda de informações:
 
 -   Girar 90 graus
--   Girar 180 graus
--   Girar 270 graus
+-   Girar 180 graus graus
+-   Girar 270 graus graus
 -   Inverter horizontalmente
 -   Inverter verticalmente
 
-Você pode aplicar uma das transformações mostradas na lista anterior ao chamar o método [Save](/windows/win32/api/gdiplusheaders/nf-gdiplusheaders-image-save(inistream_inconstclsid_inconstencoderparameters)) de um objeto [**Image**](/windows/win32/api/gdiplusheaders/nl-gdiplusheaders-image) . Se as condições a seguir forem atendidas, a transformação continuará sem perda de informações:
+Você pode aplicar uma das transformações mostradas na lista anterior ao chamar o [método Save](/windows/win32/api/gdiplusheaders/nf-gdiplusheaders-image-save(inistream_inconstclsid_inconstencoderparameters)) de um [**objeto Image.**](/windows/win32/api/gdiplusheaders/nl-gdiplusheaders-image) Se as seguintes condições são atendidas, a transformação prosseguirá sem perda de informações:
 
--   O arquivo usado para construir o objeto de [**imagem**](/windows/win32/api/gdiplusheaders/nl-gdiplusheaders-image) é um arquivo JPEG.
+-   O arquivo usado para construir o [**objeto Image**](/windows/win32/api/gdiplusheaders/nl-gdiplusheaders-image) é um arquivo JPEG.
 -   A largura e a altura da imagem são múltiplos de 16.
 
-Se a largura e a altura da imagem não forem ambas múltiplas de 16, a GDI+ fará o melhor para preservar a qualidade da imagem quando você aplicar uma das transformações de rotação ou inversão mostradas na lista anterior.
+Se a largura e a altura da imagem não são múltiplos de 16, o GDI+ fará o melhor para preservar a qualidade da imagem quando você aplicar uma das transformações de rotação ou invertida mostradas na lista anterior.
 
-Para transformar uma imagem JPEG, inicialize um objeto [**EncoderParameters**](/windows/win32/api/gdiplusimaging/nl-gdiplusimaging-encoderparameters) e passe o endereço desse objeto para o método [Save](/windows/win32/api/gdiplusheaders/nf-gdiplusheaders-image-save(inistream_inconstclsid_inconstencoderparameters)) da classe [**Image**](/windows/win32/api/gdiplusheaders/nl-gdiplusheaders-image) . Inicialize o objeto **EncoderParameters** para que ele tenha uma matriz que consiste em um objeto [**EncoderParameter**](/windows/win32/api/gdiplusimaging/nl-gdiplusimaging-encoderparameter) . Inicialize esse objeto **EncoderParameter** para que seu membro de **valor** aponte para uma variável **ULONG** que contém um dos seguintes elementos da enumeração [**EncoderValue**](/windows/win32/api/Gdiplusenums/ne-gdiplusenums-encodervalue) :
+Para transformar uma imagem JPEG, inicialize um objeto [**EncoderParameters**](/windows/win32/api/gdiplusimaging/nl-gdiplusimaging-encoderparameters) e passe o endereço desse objeto para o [método Save](/windows/win32/api/gdiplusheaders/nf-gdiplusheaders-image-save(inistream_inconstclsid_inconstencoderparameters)) da [**classe Image.**](/windows/win32/api/gdiplusheaders/nl-gdiplusheaders-image) Inicialize o **objeto EncoderParameters** para que ele tenha uma matriz que consiste em um [**objeto EncoderParameter.**](/windows/win32/api/gdiplusimaging/nl-gdiplusimaging-encoderparameter) Inicialize esse objeto **EncoderParameter** para que seu membro **Value** aponta para uma variável **ULONG** que contém um dos seguintes elementos da enumeração [**EncoderValue:**](/windows/win32/api/Gdiplusenums/ne-gdiplusenums-encodervalue)
 
 -   EncoderValueTransformRotate90,
 -   EncoderValueTransformRotate180,
@@ -38,11 +38,11 @@ Para transformar uma imagem JPEG, inicialize um objeto [**EncoderParameters**](/
 -   EncoderValueTransformFlipHorizontal,
 -   EncoderValueTransformFlipVertical
 
-Defina o membro **GUID** do objeto [**EncoderParameter**](/windows/win32/api/gdiplusimaging/nl-gdiplusimaging-encoderparameter) como EncoderTransformation.
+De definir **o membro** Guid do objeto [**EncoderParameter**](/windows/win32/api/gdiplusimaging/nl-gdiplusimaging-encoderparameter) como EncoderTransformation.
 
-O aplicativo de console a seguir cria um objeto de [**imagem**](/windows/win32/api/gdiplusheaders/nl-gdiplusheaders-image) a partir de um arquivo JPEG e salva a imagem em um novo arquivo. Durante o processo de salvamento, a imagem é girada 90 graus. Se a largura e a altura da imagem forem múltiplos de 16, o processo de girar e salvar a imagem não causará perda de informações.
+O aplicativo de console a seguir cria um [**objeto Image**](/windows/win32/api/gdiplusheaders/nl-gdiplusheaders-image) de um arquivo JPEG e salva a imagem em um novo arquivo. Durante o processo de salvar, a imagem é girada em 90 graus. Se a largura e a altura da imagem são múltiplos de 16, o processo de girar e salvar a imagem não causará perda de informações.
 
-A função main se baseia na função auxiliar GetEncoderClsid, que é mostrada na [recuperação do identificador de classe de um codificador](-gdiplus-retrieving-the-class-identifier-for-an-encoder-use.md).
+A função principal se baseia na função auxiliar GetEncoderClsid, que é mostrada em Recuperando o Identificador de Classe para [um Codificador](-gdiplus-retrieving-the-class-identifier-for-an-encoder-use.md).
 
 
 ```

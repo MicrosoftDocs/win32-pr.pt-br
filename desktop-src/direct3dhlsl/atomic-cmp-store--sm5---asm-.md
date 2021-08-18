@@ -1,5 +1,5 @@
 ---
-title: atomic_cmp_store (SM5-ASM)
+title: atomic_cmp_store (sm5 – asm)
 description: Comparação atômica e gravação na memória.
 ms.assetid: 1B97E983-11A9-47E4-B274-E94083837C6E
 ms.topic: reference
@@ -11,13 +11,13 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118795158"
 ---
-# <a name="atomic_cmp_store-sm5---asm"></a>\_armazenamento CMP atômico \_ (SM5-ASM)
+# <a name="atomic_cmp_store-sm5---asm"></a>atomic \_ cmp \_ store (sm5 - asm)
 
 Comparação atômica e gravação na memória.
 
 
 
-| o \_ DST da loja atômica do CMP \_ , o dstAddress \[ . swizzle \] , o \[ componente src0. Select \_ , o \] \[ componente src1. Select \_\] |
+| atomic \_ cmp \_ store dst, dstAddress \[ .swizzle \] , src0 \[ .select component , \_ \] src1 \[ .select \_ component\] |
 |--------------------------------------------------------------------------------------------------------|
 
 
@@ -28,10 +28,10 @@ Comparação atômica e gravação na memória.
 
 | Item                                                                                                           | Descrição                                                                                                                                                                               |
 |----------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="dst"></span><span id="DST"></span>*DST*<br/>                                                   | \[nos \] componentes para comparar com *src0*. Esse valor deve ser uma exibição de acesso não ordenada (UAV) (u \# ). No sombreador de computação, ele também pode ser a memória compartilhada do grupo de threads (g \# ). <br/> |
-| <span id="dstAddress"></span><span id="dstaddress"></span><span id="DSTADDRESS"></span>*dstAddress*<br/> | \[no \] endereço de memória.<br/>                                                                                                                                                     |
-| <span id="src0"></span><span id="SRC0"></span>*src0*<br/>                                                | \[no \] valor de 32 bits para comparar com o *horário de verão*.<br/>                                                                                                                                 |
-| <span id="src1"></span><span id="SRC1"></span>*src1*<br/>                                                | \[no \] valor a ser gravado na memória se os valores de comparação forem idênticos. <br/>                                                                                                     |
+| <span id="dst"></span><span id="DST"></span>*Dst*<br/>                                                   | \[em \] Os componentes a comparar com *src0*. Esse valor deve ser uma UAV (exibição de acesso não organizado) (u \# ). No sombreador de computação, ele também pode ser a memória compartilhada do grupo de threads (g \# ). <br/> |
+| <span id="dstAddress"></span><span id="dstaddress"></span><span id="DSTADDRESS"></span>*dstAddress*<br/> | \[em \] O endereço de memória.<br/>                                                                                                                                                     |
+| <span id="src0"></span><span id="SRC0"></span>*src0*<br/>                                                | \[no \] valor de 32 bits a ser comparado com *dst.*<br/>                                                                                                                                 |
+| <span id="src1"></span><span id="SRC1"></span>*src1*<br/>                                                | \[em \] O valor a ser escrito na memória se os valores comparados são idênticos. <br/>                                                                                                     |
 
 
 
@@ -39,31 +39,31 @@ Comparação atômica e gravação na memória.
 
 ## <a name="remarks"></a>Comentários
 
-Esta instrução executa um único componente de 32 bits Compare of operando *src0* com o *DST* em 32 bits por endereço de componente *dstAddress*.
+Essa instrução executa uma comparação de valor de 32 bits de componente único do *operand src0* com *dst* em 32 bits por endereço de componente *dstAddress*.
 
-Se os valores de comparação forem idênticos, o valor de 32 bits de componente único em *src1* será gravado na memória de destino. Caso contrário, o destino não será alterado.
+Se os valores comparados são idênticos, o valor de 32 bits de componente único em *src1* é gravado na memória de destino. Caso contrário, o destino não será alterado.
 
-A operação de comparação e de gravação inteira é executada atomicamente.
+Toda a operação de comparação e gravação é executada atomicamente.
 
-Se o *DST* for um u \# , ele poderá ser declarado como RAW, tipado ou estruturado. Se digitado, ele deve ser declarado como UINT/Santo com o formato de recurso ligado sendo R32 \_ uint/ \_ Santo.
+Se *dst* for um u \# , ele poderá ser declarado como bruto, digitado ou estruturado. Se digitado, ele deve ser declarado como UINT/SINT com o formato de recurso vinculado sendo R32 \_ \_ UINT/SINT.
 
-Se o *DST* for g \# , ele deverá ser declarado como bruto ou estruturado.
+Se *dst* for g \# , ele deverá ser declarado como bruto ou estruturado.
 
-O número de componentes extraídos do endereço é determinado pela dimensionalidade do DST u \# ou g \# .
+O número de componentes retirados do endereço é determinado pela dimensionalidade de dst u \# ou g \# .
 
 Nada é retornado para o sombreador.
 
-Se a invocação de sombreador estiver inativa, por exemplo, se o pixel tiver sido descartado anteriormente em sua execução, ou se uma instrução de pixel/amostra não alterar a memória de *DST* (silenciosamente).
+Se a invocação do sombreador estiver inativa, por exemplo, se o pixel tiver sido descartado anteriormente em sua execução ou se uma instrução de pixel/exemplo não alterar a memória *dst* (silenciosamente).
 
-O endereçamento fora dos limites em u não \# faz nada a ser gravado na memória, exceto se o u \# for estruturado e o deslocamento de byte na estrutura (segundo componente do endereço) estiver causando o acesso fora dos limites, todo o conteúdo do UAV se tornará indefinido.
+O endereçamento fora dos limites em u faz com que nada seja gravado na memória, exceto se o u estiver estruturado e o deslocamento de byte no struct (segundo componente do endereço) estiver causando o acesso fora dos limites e, em seguida, todo o conteúdo do UAV se tornará \# \# indefinido.
 
-O endereçamento fora dos limites em g \# (os limites desse g específico \# , em oposição a toda a memória compartilhada) faz com que todo o conteúdo de toda a memória compartilhada se torne indefinido.
+O endereçamento fora dos limites em g (os limites desse g específico, em vez de toda a memória compartilhada) faz com que todo o conteúdo de toda a memória compartilhada se torne \# \# indefinido.
 
-Essa instrução se aplica aos seguintes estágios de sombreador:
+Essa instrução se aplica aos seguintes estágios do sombreador:
 
 
 
-| Vértice | Envoltória | Domínio | Geometry | 16x16 | Computação |
+| Vértice | Casco | Domínio | Geometry | Pixel | Computação |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | X     | X       |
 
@@ -71,11 +71,11 @@ Essa instrução se aplica aos seguintes estágios de sombreador:
 
  
 
-Como UAVs estão disponíveis em todos os estágios do sombreador para o Direct3D 11,1, essa instrução se aplica a todos os estágios do sombreador para o tempo de execução do Direct3D 11,1, que está disponível a partir do Windows 8.
+Como os UAVs estão disponíveis em todos os estágios do sombreador para o Direct3D 11.1, essa instrução se aplica a todos os estágios do sombreador para o runtime do Direct3D 11.1, que está disponível a partir do Windows 8.
 
 
 
-| Vértice | Envoltória | Domínio | Geometry | 16x16 | Computação |
+| Vértice | Casco | Domínio | Geometry | Pixel | Computação |
 |--------|------|--------|----------|-------|---------|
 | X      | X    | X      | X        | X     | X       |
 
@@ -83,7 +83,7 @@ Como UAVs estão disponíveis em todos os estágios do sombreador para o Direct3
 
  
 
-## <a name="minimum-shader-model"></a>Modelo de sombreamento mínimo
+## <a name="minimum-shader-model"></a>Modelo de sombreador mínimo
 
 Essa instrução tem suporte nos seguintes modelos de sombreador:
 
@@ -92,7 +92,7 @@ Essa instrução tem suporte nos seguintes modelos de sombreador:
 | Modelo de Sombreador                                              | Com suporte |
 |-----------------------------------------------------------|-----------|
 | [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)        | sim       |
-| [Modelo do sombreador 4,1](dx-graphics-hlsl-sm4.md)              | não        |
+| [Modelo de sombreador 4.1](dx-graphics-hlsl-sm4.md)              | não        |
 | [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md)                | não        |
 | [Modelo de sombreador 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | não        |
 | [Modelo de sombreador 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | não        |
@@ -106,7 +106,7 @@ Essa instrução tem suporte nos seguintes modelos de sombreador:
 
 <dl> <dt>
 
-[Assembly do Shader Model 5 (DirectX HLSL)](shader-model-5-assembly--directx-hlsl-.md)
+[Assembly do modelo de sombreador 5 (DirectX HLSL)](shader-model-5-assembly--directx-hlsl-.md)
 </dt> </dl>
 
  

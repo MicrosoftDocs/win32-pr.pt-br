@@ -3,7 +3,7 @@ title: Mensagem de EM_SETAUTOCORRECTPROC (RichEdit. h)
 description: Define o procedimento de retorno de chamada da AutoCorreção atual.
 ms.assetid: 2FA48CFC-0D7C-41EF-8207-5EDC644FF3BC
 keywords:
-- Controles de EM_SETAUTOCORRECTPROC de mensagens do Windows
+- controles de Windows de mensagem de EM_SETAUTOCORRECTPROC
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a7359c86c3fdabe4c410f600d0af3100dde4c4ed
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b46e838cf18a345272b7983de1522a0c55a2565c5df3e11e3c89cd820653fb73
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455771"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118958715"
 ---
 # <a name="em_setautocorrectproc-message"></a>\_Mensagem em SETAUTOCORRECTPROC
 
@@ -50,7 +50,7 @@ Não usado; deve ser zero
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se a operação for concluída com sucesso, o valor de retorno será zero. Se a operação falhar, o valor de retorno será um valor diferente de zero.
 
@@ -60,9 +60,9 @@ Se a operação for concluída com sucesso, o valor de retorno será zero. Se a 
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                            |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 8 \[ somente aplicativos da área de trabalho\]<br/>                                            |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 \[ somente aplicativos da área de trabalho\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
 
 
 

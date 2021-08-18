@@ -1,10 +1,10 @@
 ---
-title: Estrutura de MPCOMPONENT_VERSION (MpClient. h)
+title: MPCOMPONENT_VERSION estrutura (MpClient.h)
 description: Versão e tempo de atualização para um componente individual.
 ms.assetid: 43468230-EE13-4630-8C09-F8DF983EF748
 keywords:
-- Recursos do ambiente Windows herdado da estrutura de MPCOMPONENT_VERSION
-- Ponteiro de estrutura de PMPCOMPONENT_VERSION recursos de ambiente herdados do Windows
+- MPCOMPONENT_VERSION estrutura herdada Windows recursos de ambiente
+- PMPCOMPONENT_VERSION de estrutura herdado Windows recursos de ambiente
 topic_type:
 - apiref
 api_name:
@@ -15,14 +15,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9a1d4b5011bb185dc8ca0892e0a0e65bc4a7d8b2
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6092fe2f3ec7ba921b1ef3adfc9355feeeae67f2381836056f2af65b276921cb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918395"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118976066"
 ---
-# <a name="mpcomponent_version-structure"></a>Estrutura de versão do MPCOMPONENT \_
+# <a name="mpcomponent_version-structure"></a>Estrutura MPCOMPONENT \_ VERSION
 
 Versão e tempo de atualização para um componente individual.
 
@@ -49,18 +49,18 @@ Tipo: **ULONGLONG**
 
 </dd> <dd>
 
-Campo de versão. Cada **palavra** representa principal, secundária, compilação e revisão.
+Campo de versão. Cada **WORD** representa principal, secundário, build e revisão.
 
 </dd> <dt>
 
 **UpdateTime**
 </dt> <dd>
 
-Tipo: **ULARGE \_ inteiro**
+Tipo: **ULARGE \_ INTEGER**
 
 </dd> <dd>
 
-Hora da última atualização do componente, no formato **FILETIME** .
+Hora da última atualização do componente, no **formato FILETIME.**
 
 </dd> </dl>
 
@@ -70,9 +70,9 @@ Hora da última atualização do componente, no formato **FILETIME** .
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                            |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>MpClient. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[Windows 8 somente aplicativos da área de trabalho\]<br/>                                            |
+| Servidor mínimo com suporte<br/> | \[Windows Server 2012 somente aplicativos da área de trabalho\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>MpClient.h</dt> </dl> |
 
 
 

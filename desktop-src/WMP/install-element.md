@@ -1,9 +1,9 @@
 ---
 title: Elemento de instalação
-description: Observação Esta seção descreve a funcionalidade projetada para uso por lojas online. Não há suporte para o uso dessa funcionalidade fora do contexto de uma loja online. O elemento install especifica os valores usados pelo Windows Media Player para instalar uma loja online.
+description: Observação Esta seção descreve a funcionalidade projetada para uso por lojas online. Não há suporte para o uso dessa funcionalidade fora do contexto de uma loja online. o elemento Install especifica os valores usados pelo Windows Media Player para instalar uma loja online.
 ms.assetid: 9a5e15ee-ec36-48d3-a1c2-bf20b6d2da48
 keywords:
-- Instalar o elemento Windows Media Player
+- Windows Media Player de elemento de instalação
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: bba56240651f789b45c18b006b16e5e07b10676e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 05a946cbab6a6334faa7483c0f3201a98ff0abe32dca32fe1f4f7eed5d0a2408
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105760255"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118996516"
 ---
 # <a name="install-element"></a>Elemento de instalação
 
@@ -27,7 +27,7 @@ ms.locfileid: "105760255"
 
  
 
-O elemento **install** especifica os valores usados pelo Windows Media Player para instalar uma loja online.
+o elemento **Install** especifica os valores usados pelo Windows Media Player para instalar uma loja online.
 
 ``` syntax
 <Install
@@ -47,14 +47,14 @@ O elemento **install** especifica os valores usados pelo Windows Media Player pa
 <span id="EULAURL__required_"></span><span id="eulaurl__required_"></span><span id="EULAURL__REQUIRED_"></span>**EULAURL** (obrigatório)
 </dt> <dd>
 
-URL totalmente qualificada para um arquivo com uma extensão de nome de arquivo. txt que o Windows Media Player usa para exibir um EULA (contrato de licença de usuário final). Esse arquivo deve ser codificado no formato ANSI.
+URL totalmente qualificada para um arquivo com uma extensão de nome de arquivo .txt que Windows Media Player usa para exibir um contrato de licença de usuário final (EULA). Esse arquivo deve ser codificado no formato ANSI.
 
 </dd> <dt>
 
 <span id="CodeURL__required_"></span><span id="codeurl__required_"></span><span id="CODEURL__REQUIRED_"></span>**CodeURL** (obrigatório)
 </dt> <dd>
 
-URL totalmente qualificada para um pacote, com uma extensão de nome de arquivo. cab, que é usada para instalar a loja online. O pacote e todos os módulos de código no pacote devem ser assinados. Para obter informações sobre assinatura de código, consulte [introdução à assinatura de código](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/ms537361(v=vs.85)) na biblioteca MSDN.
+URL totalmente qualificada para um pacote, com uma extensão de nome de arquivo .cab, usada para instalar a loja online. O pacote e todos os módulos de código no pacote devem ser assinados. para obter informações sobre assinatura de código, consulte [introdução à assinatura de código](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/ms537361(v=vs.85)) no Biblioteca MSDN.
 
 </dd> <dt>
 
@@ -101,7 +101,7 @@ URL totalmente qualificada para o catálogo compilado do repositório online.
 
 ## <a name="remarks"></a>Comentários
 
-Se algum dos atributos necessários estiver ausente ou não estiver disponível, a instalação do Windows Media Player não tentará baixar e instalar o código do provedor de loja online. A instalação configurará os valores padrão offline, conforme especificado no documento do **serviceInfo** . O **serviceInfo** pode ser usado quando não estiver conectado à Internet, passando o nome do provedor padrão e as informações do **serviceInfo** como parâmetros de linha de comando. Consulte [redistribuindo o software do Windows Media Player](redistributing-windows-media-player-software.md) para obter detalhes sobre as opções de linha de comando.
+se algum dos atributos necessários estiver ausente ou não estiver disponível, Windows Media Player a instalação não tentará baixar e instalar o código do provedor de loja online. A instalação configurará os valores padrão offline, conforme especificado no documento do **serviceInfo** . O **serviceInfo** pode ser usado quando não estiver conectado à Internet, passando o nome do provedor padrão e as informações do **serviceInfo** como parâmetros de linha de comando. consulte [redistribuindo Windows Media Player Software](redistributing-windows-media-player-software.md) para obter detalhes sobre as opções de linha de comando.
 
 > [!Note]  
 > O uso deste elemento requer que você assine um contrato de redistribuição com a Microsoft. Entre em contato com seu representante de negócios para obter detalhes.

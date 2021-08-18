@@ -1,11 +1,11 @@
 ---
 title: Método PlayerApplication. switchToPlayerApplication
-description: O método switchToPlayerApplication alterna um controle remoto do Windows Media Player para o modo completo do Player.
+description: o método switchToPlayerApplication alterna um controle de Windows Media Player remoto para o modo completo do Player.
 ms.assetid: 2f028687-a62f-4df3-b8a2-2812939ad883
 keywords:
-- método switchToPlayerApplication Windows Media Player
+- Windows Media Player do método switchToPlayerApplication
 - método switchToPlayerApplication Windows Media Player, classe PlayerApplication
-- Classe PlayerApplication Windows Media Player, método switchToPlayerApplication
+- classe PlayerApplication Windows Media Player, método switchToPlayerApplication
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8c30756307a6fdc44b82640a10a71cc003303d94
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f61d5ee16dc3a2aee047af372d1017b1c9c28eeefa43bdba74865eb9e114e4b7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105796190"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118995806"
 ---
 # <a name="playerapplicationswitchtoplayerapplication-method"></a>Método PlayerApplication. switchToPlayerApplication
 
-O método **switchToPlayerApplication** alterna um controle remoto do Windows Media Player para o modo completo do Player.
+o método **switchToPlayerApplication** alterna um controle de Windows Media Player remoto para o modo completo do Player.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,13 +40,13 @@ PlayerApplication.switchToPlayerApplication()
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-Esse método é usado somente quando você faz a comunicação remota do controle do Windows Media Player.
+esse método é usado somente quando você faz a comunicação remota do controle de Windows Media Player.
 
 **Windows Media Player 10 Mobile:** Não há suporte para esse método.
 

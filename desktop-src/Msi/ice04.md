@@ -1,5 +1,5 @@
 ---
-description: ICE04 valida que o número de sequência de cada arquivo na tabela de arquivos é menor ou igual ao maior número de sequência na coluna LastSequence da tabela de mídia.
+description: ICE04 valida que o número de sequência de cada arquivo na tabela Arquivo é menor ou igual ao maior número de sequência na coluna LastSequence da tabela Mídia.
 ms.assetid: ecde1389-50ea-479e-bbc1-a36ce3aceccd
 title: ICE04
 ms.topic: article
@@ -13,13 +13,13 @@ ms.locfileid: "118635658"
 ---
 # <a name="ice04"></a>ICE04
 
-ICE04 valida que o número de sequência de cada arquivo na [tabela de arquivos](file-table.md) é menor ou igual ao maior número de sequência na coluna LastSequence da [tabela de mídia](media-table.md).
+ICE04 valida que o número de [](file-table.md) sequência de cada arquivo na tabela Arquivo é menor ou igual ao maior número de sequência na coluna LastSequence da tabela [Mídia](media-table.md).
 
-Cada registro na tabela de mídia representa um disco na mídia de origem que contém todos os arquivos com um número de sequência menor ou igual ao valor na coluna LastSequence e maior que o valor de LastSequence no registro do disco anterior.
+Cada registro na tabela Mídia representa um disco na mídia de origem que contém todos os arquivos com um número de sequência menor ou igual ao valor na coluna LastSequence e maior que o valor LastSequence no registro do disco anterior.
 
-## <a name="result"></a>Result
+## <a name="result"></a>Resultado
 
-ICE04 posta uma mensagem de erro se houver um arquivo com um número de sequência maior que o maior número de LastSequence para a mídia de origem.
+ICE04 posta uma mensagem de erro se houver um arquivo com um número de sequência maior que o maior número LastSequence para a mídia de origem.
 
 ## <a name="example"></a>Exemplo
 
@@ -35,7 +35,7 @@ File: MyFile, Sequence: 210 Greater Than Max Allowed by Media Table.
 
 | Arquivo   | Sequência |
 |--------|----------|
-| MyFile | 210      |
+| Myfile | 210      |
 
 
 

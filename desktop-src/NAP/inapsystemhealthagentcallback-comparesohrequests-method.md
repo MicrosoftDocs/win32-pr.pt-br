@@ -76,7 +76,7 @@ Esse método pode retornar um desses valores.
 
 
 
-| Código de retorno                                                                               | Description                                           |
+| Código de retorno                                                                               | Descrição                                           |
 |-------------------------------------------------------------------------------------------|-------------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>      | Indica êxito.<br/>                         |
 | <dl> <dt>**E \_ NOTIMPL**</dt> </dl> | O método não foi implementado pelo SHA.<br/> |
@@ -103,7 +103,7 @@ Se os SHAs não tiverem colocado carimbos de data/hora ou IDs em seus SoHs, eles
 |-------------------------------------|-----------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                                      |
 | Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                                |
-| parâmetro<br/>                   | <dl> <dt>NapSystemHealthAgent. h</dt> </dl>   |
+| Cabeçalho<br/>                   | <dl> <dt>NapSystemHealthAgent. h</dt> </dl>   |
 | INSERI<br/>                      | <dl> <dt>NapSystemHealthAgent. idl</dt> </dl> |
 
 

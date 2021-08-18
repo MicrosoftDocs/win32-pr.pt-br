@@ -1,11 +1,11 @@
 ---
-title: atributo ms-DS-OIDToGroup-link-BL
-description: Link para trás para MS-DS-OIDToGroup-link. Identifica a política de emissão, representada por um objeto OID, que é mapeada para esse grupo.
+title: Atributo ms-DS-OIDToGroup-Link-BL
+description: Link para trás para ms-DS-OIDToGroup-Link. Identifica a política de emissão, representada por um objeto OID, mapeada para esse grupo.
 ms.assetid: e8c52b91-faba-4b8e-a378-70b92e2aa6cb
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD do atributo ms-DS-OIDToGroup-link-BL
-- atributo msDS-OIDToGroupLinkBl do AD Schema
+- Esquema do AD do atributo ms-DS-OIDToGroup-Link-BL
+- Esquema do AD do atributo msDS-OIDToGroupLinkBl
 topic_type:
 - apiref
 api_name:
@@ -21,22 +21,22 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118683436"
 ---
-# <a name="ms-ds-oidtogroup-link-bl-attribute"></a>atributo ms-DS-OIDToGroup-link-BL
+# <a name="ms-ds-oidtogroup-link-bl-attribute"></a>Atributo ms-DS-OIDToGroup-Link-BL
 
-Link para trás para [**MS-DS-OIDToGroup-link**](a-msds-oidtogrouplink.md). Identifica a política de emissão, representada por um objeto OID, que é mapeada para esse grupo.
+Link para trás [**para ms-DS-OIDToGroup-Link.**](a-msds-oidtogrouplink.md) Identifica a política de emissão, representada por um objeto OID, mapeada para esse grupo.
 
 
 
 | Entrada | Valor |
 |-------------------|-----------------------------------------|
-| CN                | ms-DS-OIDToGroup-link-BL                |
-| LDAP-Display-Name | msDS-OIDToGroupLinkBl                   |
+| CN                | ms-DS-OIDToGroup-Link-BL                |
+| Ldap-Display-Name | msDS-OIDToGroupLinkBl                   |
 | Tamanho              | \-                                      |
 | Privilégio de atualização  | \-                                      |
 | Frequência de atualização  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.2052                 |
-| System-ID-GUID    | 1a3d0d20-5844-4199-ad25-0f5039a76ada    |
-| Sintaxe            | [**Objeto (DS-DN)**](s-object-ds-dn.md) |
+| System-Id-Guid    | 1a3d0d20-5844-4199-ad25-0f5039a76ada    |
+| Syntax            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
 
@@ -53,11 +53,11 @@ Link para trás para [**MS-DS-OIDToGroup-link**](a-msds-oidtogrouplink.md). Iden
 |------------------------|---------------------------------|
 | ID do link                | 2165                            |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| É de valor único       | Falso                           |
+| System-Only            | Verdadeiro                            |
+| Tem valor único       | Falso                           |
 | É indexado             | Falso                           |
-| No catálogo global      | Falso                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| No Catálogo Global      | Falso                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -74,11 +74,11 @@ Link para trás para [**MS-DS-OIDToGroup-link**](a-msds-oidtogrouplink.md). Iden
 |------------------------|---------------------------------|
 | ID do link                | 2165                            |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| É de valor único       | Falso                           |
+| System-Only            | Verdadeiro                            |
+| Tem valor único       | Falso                           |
 | É indexado             | Falso                           |
-| No catálogo global      | Falso                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| No Catálogo Global      | Falso                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |

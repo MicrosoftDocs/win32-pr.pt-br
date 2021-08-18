@@ -1,11 +1,11 @@
 ---
-title: Método INapEnforcementClientConnection GetEnforcerPrivateData (NapEnforcementClient. h)
-description: É usado pelo imforcer para obter dados privados.
+title: Método INapEnforcementClientConnection GetEnforcerPrivateData (NapEnforcementClient.h)
+description: É usado pelo executor para obter dados privados.
 ms.assetid: a1f5b5a7-c862-4e5b-bf9c-b137f99f6165
 keywords:
-- Método GetEnforcerPrivateData NAP
-- Método GetEnforcerPrivateData NAP, interface INapEnforcementClientConnection
-- INapEnforcementClientConnection interface NAP, método GetEnforcerPrivateData
+- Nap do método GetEnforcerPrivateData
+- Método NAP getEnforcerPrivateData, interface INapEnforcementClientConnection
+- INapEnforcementClientConnection interface NAP , método GetEnforcerPrivateData
 topic_type:
 - apiref
 api_name:
@@ -23,14 +23,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118940059"
 ---
-# <a name="inapenforcementclientconnectiongetenforcerprivatedata-method"></a>Método INapEnforcementClientConnection:: GetEnforcerPrivateData
+# <a name="inapenforcementclientconnectiongetenforcerprivatedata-method"></a>Método INapEnforcementClientConnection::GetEnforcerPrivateData
 
 > [!Note]  
-> A plataforma de proteção de acesso à rede não está disponível a partir do Windows 10
+> A plataforma de Proteção de Acesso à Rede não está disponível a partir do Windows 10
 
  
 
-O método **INapEnforcementClientConnection:: GetEnforcerPrivateData** é usado pelo imforcer para obter dados privados.
+O **método INapEnforcementClientConnection::GetEnforcerPrivateData** é usado pelo executor para obter dados privados.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -47,16 +47,16 @@ HRESULT GetEnforcerPrivateData(
 
 <dl> <dt>
 
-*privateData* \[ fora\]
+*privateData* \[ out\]
 </dt> <dd>
 
-Um ponteiro para um ponteiro para um blob de dados opaco [**PrivateData**](/windows/win32/api/naptypes/ns-naptypes-privatedata) que apenas o imforcer pode interpretar.
+Um ponteiro para um ponteiro para um blob de dados opaco [**PrivateData**](/windows/win32/api/naptypes/ns-naptypes-privatedata) que somente o executor pode interpretar.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor retornado
 
-Outros códigos de erro específicos de COM também podem ser retornados.
+Outros códigos de erro específicos do COM também podem ser retornados.
 
 
 
@@ -64,7 +64,7 @@ Outros códigos de erro específicos de COM também podem ser retornados.
 |-------------------------------------------------------------------------------------------------|--------------------------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>           | Êxito na operação.<br/>                                    |
 | <dl> <dt>**E \_ ACCESSDENIED**</dt> </dl> | Erro de permissões, acesso negado.<br/>                       |
-| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl>  | O limite de recursos do sistema não pôde executar a operação.<br/> |
+| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl>  | Limite de recursos do sistema, não foi possível executar a operação.<br/> |
 
 
 
@@ -76,10 +76,10 @@ Outros códigos de erro específicos de COM também podem ser retornados.
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                                      |
-| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                                |
-| Cabeçalho<br/>                   | <dl> <dt>NapEnforcementClient. h</dt> </dl>   |
-| INSERI<br/>                      | <dl> <dt>NapEnforcementClient. idl</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                                      |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                                |
+| Cabeçalho<br/>                   | <dl> <dt>NapEnforcementClient.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>NapEnforcementClient.idl</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Qagent.dll</dt> </dl>               |
 
 

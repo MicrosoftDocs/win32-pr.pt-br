@@ -4,12 +4,12 @@ ms.assetid: fa6239ea-0478-41f1-9515-d67a7fad11db
 title: Método SelectAndActivateButton
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 717af00becd5f00f55b166353246f92ea7dfd1bd
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: d141616356db5daf2ebcb19579b924f6d4cab956e03d876d0254666d55b5702b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105768780"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118951905"
 ---
 # <a name="selectandactivatebutton-method"></a>Método SelectAndActivateButton
 
@@ -28,10 +28,10 @@ MSWebDVD.SelectAndActivateButton(iButton)
 
 <dl> <dt>
 
-<span id="iButton"></span><span id="ibutton"></span><span id="IBUTTON"></span>*iButton*
+<span id="iButton"></span><span id="ibutton"></span><span id="IBUTTON"></span>*Ibutton*
 </dt> <dd>
 
-Especifica o botão como um inteiro.
+Especifica o botão como um Inteiro.
 
 </dd> </dl>
 
@@ -41,7 +41,7 @@ Sem valor de retorno.
 
 ## <a name="remarks"></a>Comentários
 
-Use esse método ao implementar a manipulação de mouse personalizada depois de definir [**DisableAutoMouseProcessing**](disableautomouseprocessing-property.md) como **true**.
+Use esse método ao implementar a manipulação personalizada do mouse depois de [**definir DisableAutoMouseProcessing**](disableautomouseprocessing-property.md) como **true.**
 
 Esse método realça o botão especificado e o ativa automaticamente.
 
@@ -49,7 +49,7 @@ Esse método realça o botão especificado e o ativa automaticamente.
 
 <dl> <dt>
 
-[**ButtonsAvailable**](buttonsavailable-property.md)
+[**BotõesAvailable**](buttonsavailable-property.md)
 </dt> <dt>
 
 [**CurrentButton**](currentbutton-property.md)

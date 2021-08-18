@@ -1,7 +1,7 @@
 ---
-description: O método CopyValuesToPropertyStore copia todos os valores de uma coleção em uma interface IPropertyStore.
+description: O método CopyValuesToPropertyStore copia todos os valores de uma coleção para uma interface IPropertyStore.
 ms.assetid: 417a8723-fa46-44c8-9bdc-412c0f20969a
-title: Método IPortableDeviceValues::CopyValuesToPropertyStore (PortableDeviceTypes.h)
+title: 'Método IPortableDeviceValues:: CopyValuesToPropertyStore (PortableDeviceTypes. h)'
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -21,9 +21,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118697243"
 ---
-# <a name="iportabledevicevaluescopyvaluestopropertystore-method"></a>Método IPortableDeviceValues::CopyValuesToPropertyStore
+# <a name="iportabledevicevaluescopyvaluestopropertystore-method"></a>Método IPortableDeviceValues:: CopyValuesToPropertyStore
 
-O **método CopyValuesToPropertyStore** copia todos os valores de uma coleção em uma interface **IPropertyStore.**
+O método **CopyValuesToPropertyStore** copia todos os valores de uma coleção para uma interface **IPropertyStore** .
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,16 +40,16 @@ HRESULT CopyValuesToPropertyStore(
 
 <dl> <dt>
 
-*pStore* \[ Em\]
+*Pstore* \[ no\]
 </dt> <dd>
 
-Ponteiro para um objeto de armazenamento.
+Ponteiro para um objeto de repositório.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor retornado
 
-O método retorna um **HRESULT.** Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
+O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
 
 
 
@@ -63,9 +63,9 @@ O método retorna um **HRESULT.** Os possíveis valores incluem, mas sem limita�
 
 ## <a name="remarks"></a>Comentários
 
-Esse método não converte valores de VT \_ LPWSTR em VT \_ BSTR. Muitos aplicativos externos ou componentes que se comunicam com seu aplicativo, como alguns aplicativos shell, usam a interface **IPropertyStore.** Esse método fornece uma maneira rápida e fácil de trocar dados com esses programas.
+Este método não converte valores de VT \_ LPWSTR em VT \_ BSTR. Muitos aplicativos externos ou componentes que se comunicam com seu aplicativo, como alguns aplicativos de Shell, usam a interface **IPropertyStore** . Esse método fornece uma maneira rápida e fácil de trocar dados com esses programas.
 
-Esse método tem suporte no Windows Vista e versões posteriores do Windows.
+esse método tem suporte no Windows Vista e em versões posteriores do Windows.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -73,8 +73,8 @@ Esse método tem suporte no Windows Vista e versões posteriores do Windows.
 
 | Requisito | Valor |
 |--------------------|----------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>PortableDeviceTypes.h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>PortableDeviceGUIDs.lib</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>PortableDeviceTypes. h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>PortableDeviceGUIDs. lib</dt> </dl> |
 
 
 
@@ -82,7 +82,7 @@ Esse método tem suporte no Windows Vista e versões posteriores do Windows.
 
 <dl> <dt>
 
-[**IPortableDeviceValues Interface**](iportabledevicevalues.md)
+[**Interface IPortableDeviceValues**](iportabledevicevalues.md)
 </dt> <dt>
 
 [**IPortableDeviceValues::CopyValuesFromPropertyStore**](iportabledevicevalues-copyvaluesfrompropertystore.md)

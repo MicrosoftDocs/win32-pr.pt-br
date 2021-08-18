@@ -4,12 +4,12 @@ description: Ponteiros de referência de Out-Only inseridos
 ms.assetid: b0fcba9e-b285-4d29-9ffc-c8d6d7818824
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4072e9aa3cc3f0f673e4bb737016bc035a3ac496
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: d36fc6229c0b155e3fa9a7f66e6cd1fbd742d7ec876264a8706ce81c4150d6ba
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "105759599"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118930501"
 ---
 # <a name="embedded-out-only-reference-pointers"></a>Ponteiros de referência de Out-Only inseridos
 
@@ -43,6 +43,6 @@ Proc2([out, ref] STRUCT_TOP_TYPE * psTop);
 
 No exemplo anterior, os stubs de servidor alocam o ponteiro *psTop* e **o \_ \_ tipo** de estrutura superior de struct. O ponteiro de referência *ps1* no **tipo de estrutura \_ superior \_** está definido como nulo. O stub do servidor não aloca todos os níveis da estrutura de dados, nem aloca o **\_ tipo STRUCT1** ou seu ponteiro incorporado, *psValue*.
 
- 
+ 
 
- 
+ 

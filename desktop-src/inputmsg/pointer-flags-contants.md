@@ -1,6 +1,6 @@
 ---
 title: Sinalizadores de ponteiro
-description: Os valores que podem aparecer no campo pointerFlags da estrutura de POINTER_INFO.
+description: Valores que podem aparecer no campo pointerFlags da estrutura POINTER_INFO dados.
 ms.assetid: CC3F8E21-F4FF-495C-922E-A3708D3F2093
 topic_type:
 - apiref
@@ -39,7 +39,7 @@ ms.locfileid: "118482032"
 ---
 # <a name="pointer-flags"></a>Sinalizadores de ponteiro
 
-Os valores que podem aparecer no campo **pointerFlags** da estrutura de [**POINTER_INFO**](/previous-versions/windows/desktop/api) .
+Valores que podem aparecer no **campo pointerFlags** da [**estrutura POINTER_INFO**](/previous-versions/windows/desktop/api) dados.
 
 <dl> <dt>
 
@@ -77,9 +77,9 @@ Indica a chegada de um novo ponteiro.
 
 
 
-Indica que esse ponteiro continua a existir. Quando esse sinalizador não é definido, ele indica que o ponteiro tem um intervalo de detecção à esquerda.
+Indica que esse ponteiro continua a existir. Quando esse sinalizador não está definido, ele indica que o ponteiro tem o intervalo de detecção à esquerda.
 
-Esse sinalizador normalmente não é definido somente quando um ponteiro em foco deixa o intervalo de detecção (**POINTER_FLAG_UPDATE** é definido) ou quando um ponteiro em contato com uma superfície de janela sai do intervalo de detecção (**POINTER_FLAG_UP** é definido).
+Normalmente, esse sinalizador não é definido apenas quando um ponteiro de foco sai do intervalo de detecção **(POINTER_FLAG_UPDATE** está definido) ou quando um ponteiro em contato com uma superfície de janela sai do intervalo de detecção **(POINTER_FLAG_UP** está definido).
 
 
 </dt> </dl> </dd> <dt>
@@ -92,7 +92,7 @@ Esse sinalizador normalmente não é definido somente quando um ponteiro em foco
 
 
 
-Indica que esse ponteiro está em contato com a superfície digitalizadora. Quando esse sinalizador não é definido, ele indica um ponteiro em foco.
+Indica que esse ponteiro está em contato com a superfície do digitalizador. Quando esse sinalizador não está definido, ele indica um ponteiro de foco.
 
 
 </dt> </dl> </dd> <dt>
@@ -107,11 +107,11 @@ Indica que esse ponteiro está em contato com a superfície digitalizadora. Quan
 
 Indica uma ação primária, análoga a um botão esquerdo do mouse para baixo.
 
-Um ponteiro de toque tem esse sinalizador definido quando ele está em contato com a superfície digitalizadora.
+Um ponteiro de toque tem esse sinalizador definido quando ele está em contato com a superfície do digitalizador.
 
-Um ponteiro de caneta tem esse sinalizador definido quando está em contato com a superfície digitalizadora sem botões pressionados.
+Um ponteiro de caneta tem esse sinalizador definido quando está em contato com a superfície do digitalizador sem botões pressionados.
 
-Um ponteiro do mouse tem esse sinalizador definido quando o botão esquerdo do mouse está inativo.
+Um ponteiro do mouse tem esse sinalizador definido quando o botão esquerdo do mouse está ino mouse.
 
 
 </dt> </dl> </dd> <dt>
@@ -124,13 +124,13 @@ Um ponteiro do mouse tem esse sinalizador definido quando o botão esquerdo do m
 
 
 
-Indica uma ação secundária, análoga a um botão direito do mouse.
+Indica uma ação secundária, análoga a um botão direito do mouse para baixo.
 
 Um ponteiro de toque não usa esse sinalizador.
 
-Um ponteiro de caneta tem esse sinalizador definido quando está em contato com a superfície digitalizadora com o botão de rosca de caneta pressionado.
+Um ponteiro de caneta tem esse sinalizador definido quando está em contato com a superfície do digitalizador com o botão de caneta pressionado.
 
-Um ponteiro do mouse tem esse sinalizador definido quando o botão direito do mouse está inativo.
+Um ponteiro do mouse tem esse sinalizador definido quando o botão direito do mouse está ino mouse.
 
 
 </dt> </dl> </dd> <dt>
@@ -149,7 +149,7 @@ Um ponteiro de toque não usa esse sinalizador.
 
 Um ponteiro de caneta não usa esse sinalizador.
 
-Um ponteiro do mouse tem esse sinalizador definido quando o botão da roda do mouse está inativo.
+Um ponteiro do mouse tem esse sinalizador definido quando o botão de roda do mouse está ino mouse.
 
 
 </dt> </dl> </dd> <dt>
@@ -162,13 +162,13 @@ Um ponteiro do mouse tem esse sinalizador definido quando o botão da roda do mo
 
 
 
-Análogo a um botão do primeiro mouse estendido (XButton1).
+Análogo a um primeiro botão estendido do mouse (XButton1) para baixo.
 
 Um ponteiro de toque não usa esse sinalizador.
 
 Um ponteiro de caneta não usa esse sinalizador.
 
-Um ponteiro do mouse tem esse sinalizador definido quando o botão do primeiro mouse estendido (XBUTTON1) está inoperante.
+Um ponteiro do mouse tem esse sinalizador definido quando o primeiro botão estendido do mouse (XBUTTON1) está inoc baixo.
 
 
 </dt> </dl> </dd> <dt>
@@ -181,13 +181,13 @@ Um ponteiro do mouse tem esse sinalizador definido quando o botão do primeiro m
 
 
 
-Análogo a um segundo botão do mouse estendido (XButton2).
+Análogo a um segundo botão de mouse estendido (XButton2) para baixo.
 
 Um ponteiro de toque não usa esse sinalizador.
 
 Um ponteiro de caneta não usa esse sinalizador.
 
-Um ponteiro do mouse tem esse sinalizador definido quando o segundo botão do mouse estendido (XBUTTON2) está inoperante.
+Um ponteiro do mouse tem esse sinalizador definido quando o segundo botão estendido do mouse (XBUTTON2) está inoc baixo.
 
 
 </dt> </dl> </dd> <dt>
@@ -200,9 +200,9 @@ Um ponteiro do mouse tem esse sinalizador definido quando o segundo botão do mo
 
 
 
-Indica que esse ponteiro foi designado como o ponteiro principal. Um ponteiro principal é um único ponteiro que pode executar ações além daquelas disponíveis para ponteiros não primários. Por exemplo, quando um ponteiro principal faz contato com uma superfície da janela, ele pode fornecer à janela uma oportunidade de ativação, enviando a ele uma mensagem [**WM_POINTERACTIVATE**](wm-pointeractivate.md) .
+Indica que esse ponteiro foi designado como o ponteiro primário. Um ponteiro primário é um único ponteiro que pode executar ações além daquelas disponíveis para ponteiros não primários. Por exemplo, quando um ponteiro primário faz contato com a superfície de uma janela, ele pode fornecer à janela uma oportunidade de ativar enviando uma mensagem [**WM_POINTERACTIVATE**](wm-pointeractivate.md) janela.
 
-O ponteiro principal é identificado de todas as interações atuais do usuário no sistema (mouse, toque, caneta e assim por diante). Como tal, o ponteiro principal pode não estar associado ao seu aplicativo. O primeiro contato em uma interação multitoque é definido como o ponteiro principal. Depois que um ponteiro principal é identificado, todos os contatos devem ser levantados antes que um novo contato possa ser identificado como um ponteiro principal. Para aplicativos que não processam a entrada do ponteiro, somente os eventos do ponteiro principal são promovidos para eventos do mouse.
+O ponteiro primário é identificado de todas as interações atuais do usuário no sistema (mouse, toque, caneta e assim por diante). Dessa forma, o ponteiro primário pode não estar associado ao seu aplicativo. O primeiro contato em uma interação com vários toques é definido como o ponteiro primário. Depois que um ponteiro primário é identificado, todos os contatos devem ser retirados antes que um novo contato possa ser identificado como um ponteiro primário. Para aplicativos que não processam a entrada de ponteiro, somente os eventos do ponteiro primário são promovidos para eventos do mouse.
 
 
 </dt> </dl> </dd> <dt>
@@ -215,7 +215,7 @@ O ponteiro principal é identificado de todas as interações atuais do usuário
 
 
 
-Confiança é uma sugestão do dispositivo de origem sobre se o ponteiro representa uma interação pretendida ou acidental, que é especialmente relevante para ponteiros de PT_TOUCH em que uma interação acidental (como com a palma da mão) pode disparar a entrada. A presença desse sinalizador indica que o dispositivo de origem tem alta confiança de que essa entrada faz parte de uma interação pretendida.
+A confiança é uma sugestão do dispositivo de origem sobre se o ponteiro representa uma interação pretendido ou acidental, que é especialmente relevante para ponteiros de PT_TOUCH em que uma interação acidental (como com a mão) pode disparar a entrada. A presença desse sinalizador indica que o dispositivo de origem tem alta confiança de que essa entrada faz parte de uma interação pretendido.
 
 
 </dt> </dl> </dd> <dt>
@@ -228,7 +228,7 @@ Confiança é uma sugestão do dispositivo de origem sobre se o ponteiro represe
 
 
 
-Indica que o ponteiro está se deparando de forma anormal, por exemplo, quando o sistema recebe uma entrada inválida para o ponteiro ou quando um dispositivo com ponteiros ativos faz parte abruptamente. Se o aplicativo que está recebendo a entrada estiver em uma posição para fazer isso, ele deverá tratar a interação como não concluída e inverter os efeitos do ponteiro preocupado.
+Indica que o ponteiro está partindo de uma maneira anormal, como quando o sistema recebe entrada inválida para o ponteiro ou quando um dispositivo com ponteiros ativos sai de forma anormal. Se o aplicativo que recebe a entrada estiver em uma posição para fazer isso, ele deverá tratar a interação como não concluída e reverter os efeitos do ponteiro em questão.
 
 
 </dt> </dl> </dd> <dt>
@@ -241,7 +241,7 @@ Indica que o ponteiro está se deparando de forma anormal, por exemplo, quando o
 
 
 
-Indica que esse ponteiro fez a transição para um estado inativo; ou seja, ele fez contato com a superfície digitalizadora.
+Indica que esse ponteiro fez a transição para um estado de inoção; ou seja, ele entrou em contato com a superfície do digitalizador.
 
 
 </dt> </dl> </dd> <dt>
@@ -254,7 +254,7 @@ Indica que esse ponteiro fez a transição para um estado inativo; ou seja, ele 
 
 
 
-Indica que se trata de uma atualização simples que não inclui alterações de estado de ponteiro.
+Indica que essa é uma atualização simples que não inclui alterações de estado do ponteiro.
 
 
 </dt> </dl> </dd> <dt>
@@ -267,7 +267,7 @@ Indica que se trata de uma atualização simples que não inclui alterações de
 
 
 
-Indica que esse ponteiro fez a transição para um estado ativo; ou seja, o contato com a superfície do digitalizador terminou.
+Indica que esse ponteiro fez a transição para um estado para cima; ou seja, o contato com a superfície do digitalizador terminou.
 
 
 </dt> </dl> </dd> <dt>
@@ -293,7 +293,7 @@ Indica a entrada associada a uma roda de ponteiro. Para ponteiros do mouse, isso
 
 
 
-Indica a entrada associada a um ponteiro h-Wheel. Para ponteiros do mouse, isso é equivalente à ação da roda de rolagem horizontal do mouse ([**WM_MOUSEHWHEEL**](../inputdev/wm-mousehwheel.md)).
+Indica a entrada associada a um ponteiro h-wheel. Para ponteiros do mouse, isso é equivalente à ação da roda de rolagem horizontal do mouse ([**WM_MOUSEHWHEEL**](../inputdev/wm-mousehwheel.md)).
 
 
 </dt> </dl> </dd> <dt>
@@ -306,7 +306,7 @@ Indica a entrada associada a um ponteiro h-Wheel. Para ponteiros do mouse, isso 
 
 
 
-Indica que esse ponteiro foi capturado por (associado a) outro elemento e o elemento original perdeu a captura (consulte [**WM_POINTERCAPTURECHANGED**](wm-pointercapturechanged.md)).
+Indica que esse ponteiro foi capturado por (associado a) outro elemento e o elemento original perdeu a [**captura (consulte WM_POINTERCAPTURECHANGED**](wm-pointercapturechanged.md)).
 
 
 </dt> </dl> </dd> <dt>
@@ -326,7 +326,7 @@ Indica que esse ponteiro tem uma transformação associada.
 
 ## <a name="remarks"></a>Comentários
 
-XBUTTON1 e XBUTTON2 são botões adicionais usados em vários dispositivos de mouse. Eles retornam os mesmos dados que os botões padrão do mouse.
+XBUTTON1 e XBUTTON2 são botões adicionais usados em muitos dispositivos do mouse. Eles retornam os mesmos dados que os botões padrão do mouse.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -334,9 +334,9 @@ XBUTTON1 e XBUTTON2 são botões adicionais usados em vários dispositivos de mo
 
 | Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 8 \[ somente aplicativos da área de trabalho\]<br/>                                           |
-| Servidor mínimo com suporte<br/> | Windows Server 2012 \[ somente aplicativos da área de trabalho\]<br/>                                 |
-| parâmetro<br/>                   | <dl> <dt>Winuser.h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[Windows 8 somente aplicativos da área de trabalho\]<br/>                                           |
+| Servidor mínimo com suporte<br/> | \[Windows Server 2012 somente aplicativos da área de trabalho\]<br/>                                 |
+| Cabeçalho<br/>                   | <dl> <dt>Winuser.h</dt> </dl> |
 
 
 

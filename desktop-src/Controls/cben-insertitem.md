@@ -1,9 +1,9 @@
 ---
-title: CBEN_INSERTITEM código de notificação (commctrl. h)
-description: Enviado quando um novo item é inserido no controle. Esse código de notificação é enviado na forma de uma mensagem de notificação do WM \_ .
+title: CBEN_INSERTITEM de notificação (Commctrl.h)
+description: Enviado quando um novo item foi inserido no controle . Esse código de notificação é enviado na forma de uma mensagem WM \_ NOTIFY.
 ms.assetid: caf60156-10d2-4cfb-91c4-def6ee99c471
 keywords:
-- CBEN_INSERTITEM de código de notificação controles do Windows
+- CBEN_INSERTITEM código de notificação Windows Controles
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 63ccd05ea75015479ef32415d920bbe639664ac2
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 3a58c1f8b14f4983e2f7e7444a8110f0407220b0c5bc682cfc73f72bee078ab6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103645229"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118413662"
 ---
-# <a name="cben_insertitem-notification-code"></a>Código de notificação do CBEN \_ INSERTITEM
+# <a name="cben_insertitem-notification-code"></a>Código de notificação CBEN \_ INSERTITEM
 
-Enviado quando um novo item é inserido no controle. Esse código de notificação é enviado na forma de uma mensagem de [**\_ notificação do WM**](wm-notify.md) .
+Enviado quando um novo item foi inserido no controle . Esse código de notificação é enviado na forma de uma mensagem [**WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -41,13 +41,13 @@ CBEN_INSERTITEM
 *lParam* 
 </dt> <dd>
 
-Um ponteiro para uma estrutura [**NMCOMBOBOXEX**](/windows/desktop/api/Commctrl/ns-commctrl-nmcomboboxexa) que contém informações sobre o código de notificação e o item que foi inserido.
+Um ponteiro para uma [**estrutura NMCOMBOBOXEX**](/windows/desktop/api/Commctrl/ns-commctrl-nmcomboboxexa) que contém informações sobre o código de notificação e o item que foi inserido.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-O aplicativo que processa esse código de notificação deve retornar zero.
+O aplicativo que está processando esse código de notificação deve retornar zero.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -55,9 +55,9 @@ O aplicativo que processa esse código de notificação deve retornar zero.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

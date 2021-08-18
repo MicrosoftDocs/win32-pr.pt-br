@@ -1,7 +1,7 @@
 ---
-description: Wi-Fi do Serviço de Serviços Diretos.
+description: Endereço de serviço do Wi-Fi Direct Services.
 ms.assetid: 6b29c244-685f-4eb7-9c80-d6b4fc591efc
-title: System.Devices.WiFiDirectServices.ServiceAddress
+title: System. Devices. WiFiDirectServices. fileaddress
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 1bbd7ded4af427b4ac15b62ffeca1856ca31984121f14600b5fc08d24da04304
@@ -11,9 +11,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118727874"
 ---
-# <a name="systemdeviceswifidirectservicesserviceaddress"></a>System.Devices.WiFiDirectServices.ServiceAddress
+# <a name="systemdeviceswifidirectservicesserviceaddress"></a>System. Devices. WiFiDirectServices. fileaddress
 
-Wi-Fi do Serviço de Serviços Diretos
+Endereço de serviço do Wi-Fi Direct Services
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507"></a>Windows 10, versão 1703, Windows 10, versão 1607, Windows 10, versão 1511, Windows 10, versão 1507
 
@@ -33,13 +33,13 @@ propertyDescription
 
 ## <a name="remarks"></a>Comentários
 
-Os valores PKEY são definidos em Propkey.h.
+Os valores de PKEY são definidos em Propkey. h.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[Propertydescription](./propdesc-schema-propertydescription.md)
+[propertyDescription](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -48,19 +48,19 @@ Os valores PKEY são definidos em Propkey.h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Typeinfo](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[Stringformat](./propdesc-schema-stringformat.md)
+[stringFormat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numberformat](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -75,7 +75,7 @@ Os valores PKEY são definidos em Propkey.h.
 [editControl](./propdesc-schema-editcontrol.md)
 </dt> <dt>
 
-[Filtercontrol](./propdesc-schema-filtercontrol.md)
+[filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
 [queryControl](./propdesc-schema-querycontrol.md)

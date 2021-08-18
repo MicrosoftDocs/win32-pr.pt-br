@@ -4,12 +4,12 @@ description: Há duas versões do formato de serialização do conjunto de propr
 ms.assetid: 10544118-5e80-47e2-b75b-c1a43be15b2e
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 52d8dfc1c51a6d33d6eb6f9c22b513a9a5397c87
-ms.sourcegitcommit: 5a78723ad484955ac91a23cf282cf9c176c1eab6
+ms.openlocfilehash: 9412fd2a83ab7c71b97888d4ae7911a96fdc4cfe5a9ebbceb5d985b3a5e2b418
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/22/2021
-ms.locfileid: "114436281"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118886471"
 ---
 # <a name="property-set-serialization"></a>Serialização do conjunto de propriedades
 
@@ -44,7 +44,7 @@ Os itens a seguir identificam as diferenças entre os formatos de serialização
     | VT_VARIANT  |          |             |           |
     |             |          |             |           |
 
-    Quando o VT_VARIANT de dados é especificado, ele indica que o SafeArray em si contém estruturas [**PROPVARIANT.**](/windows/win32/api/propidlbase/ns-propidlbase-propvariant) Os tipos para esses elementos devem ser da lista anterior, exceto que não podem conter tipos VT_VARIANT aninhados.
+    Quando o VT_VARIANT de dados é especificado, ele indica que o safeArray em si contém estruturas [**PROPVARIANT.**](/windows/win32/api/propidlbase/ns-propidlbase-propvariant) Os tipos para esses elementos devem ser da lista anterior, exceto que não podem conter tipos VT_VARIANT aninhados.
     
     Observe que as implementações [**de IPropertyStorage**](/windows/desktop/api/Propidl/nn-propidl-ipropertystorage) devem ser capazes de se recuperar normalmente retornando um erro quando um novo tipo é encontrado; por exemplo, tipos VARENUM.
 

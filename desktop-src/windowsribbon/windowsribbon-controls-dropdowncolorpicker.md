@@ -1,6 +1,6 @@
 ---
 title: Drop-Down Seletor de Cor
-description: A Windows faixa de opções do Drop-Down Seletor de Cor fornece um controle de Drop-Down Seletor de Cor especializado que expõe uma variedade de configurações de cores por meio de um botão de divisão e seletor de cores de lista listada personalizável.
+description: A Windows ribbon do Drop-Down Seletor de Cor fornece um controle Drop-Down Seletor de Cor que expõe uma variedade de configurações de cores por meio de um botão de divisão e do seletor de cores da lista de opções.
 ms.assetid: 65e1fc23-7ac0-4bb3-9359-28ce88acf356
 ms.topic: article
 ms.date: 05/31/2018
@@ -13,22 +13,22 @@ ms.locfileid: "118707650"
 ---
 # <a name="drop-down-color-picker"></a>Drop-Down Seletor de Cor
 
-A Windows faixa de opções do Drop-Down Seletor de Cor fornece um controle de Drop-Down Seletor de Cor especializado que expõe uma variedade de configurações de cores por meio de um botão de divisão e seletor de cores de lista listada personalizável.
+A Windows ribbon do Drop-Down Seletor de Cor fornece um controle Drop-Down Seletor de Cor que expõe uma variedade de configurações de cores por meio de um botão de divisão e do seletor de cores da lista de opções.
 
 -   [Introdução](#introduction)
 -   [Marcação](#markup)
 -   [Código](#code)
     -   [Propriedades](#properties)
-    -   [Manipuladores de comandos](#command-handlers)
+    -   [Manipuladores de comando](#command-handlers)
 -   [Tópicos relacionados](#related-topics)
 
 ## <a name="introduction"></a>Introdução
 
-Ao emular a aparência e a funcionalidade do selador de cores Microsoft Office, a estrutura da Faixa de Opções pode se beneficiar e contribuir com a consistência e a familiaridade em uma ampla variedade de aplicativos.
+Ao emular a aparência e a funcionalidade do selador de cores Microsoft Office, a estrutura da Faixa de Opções é capaz de se beneficiar e contribuir com a consistência e a familiaridade em uma ampla variedade de aplicativos.
 
 ## <a name="markup"></a>Marcação
 
-Como todos os controles de Faixa de Opções, Drop-Down Seletor de Cor é facilmente implementado e personalizado por meio da marcação. A estrutura fornece vários atributos de elemento para o Drop-Down Seletor de Cor expor vários níveis de funcionalidade. A tabela a seguir lista os Drop-Down Seletor de Cor atributos.
+Como todos os controles da Faixa de Opções, Drop-Down Seletor de Cor é facilmente implementado e personalizado por meio da marcação. A estrutura fornece vários atributos de elemento para o Drop-Down Seletor de Cor expor vários níveis de funcionalidade. A tabela a seguir lista os Drop-Down Seletor de Cor atributos.
 
 
 
@@ -97,7 +97,7 @@ Como todos os controles de Faixa de Opções, Drop-Down Seletor de Cor é facilm
 
  
 
-As capturas de tela a seguir ilustram os layouts Drop-Down Seletor de Cor padrão para os três modelos de cor.
+As capturas de tela a seguir ilustram os layouts Drop-Down Seletor de Cor padrão para os três modelos de cores.
 
 
 
@@ -255,72 +255,72 @@ A tabela a seguir lista as chaves de propriedade associadas ao controle Drop-Dow
 </tr>
 <tr class="even">
 <td><a href="windowsribbon-reference-properties-uipkey-smallhighcontrastimage.md">UI_PKEY_SmallHighContrastImage</a></td>
-<td>Define a pequena imagem de alto contraste a ser exibida para um controle.<br/></td>
-<td>Só pode ser atualizado por meio de invalidação.<br/> Para obter mais informações sobre formatos de imagem, consulte <a href="windowsribbon-imageformats.md">especificando recursos de imagem da faixa de Ribbon</a>.<br/></td>
+<td>Define a pequena imagem de alto contraste a ser exibida para um controle .<br/></td>
+<td>Só pode ser atualizado por meio de invalidação.<br/> Para obter mais informações sobre formatos de imagem, consulte <a href="windowsribbon-imageformats.md">Especificando recursos de</a>imagem da faixa de opções .<br/></td>
 </tr>
 <tr class="odd">
 <td><a href="windowsribbon-reference-properties-uipkey-smallimage.md">UI_PKEY_SmallImage</a></td>
-<td>Define a imagem pequena a ser exibida para um controle.<br/></td>
-<td>Só pode ser atualizado por meio de invalidação.<br/> Para obter mais informações sobre formatos de imagem, consulte <a href="windowsribbon-imageformats.md">especificando recursos de imagem da faixa de Ribbon</a>.<br/></td>
+<td>Define a imagem pequena a ser exibida para um controle .<br/></td>
+<td>Só pode ser atualizado por meio de invalidação.<br/> Para obter mais informações sobre formatos de imagem, consulte <a href="windowsribbon-imageformats.md">Especificando recursos de</a>imagem da faixa de opções .<br/></td>
 </tr>
 <tr class="even">
 <td><a href="windowsribbon-reference-properties-uipkey-standardcolors.md">UI_PKEY_StandardColors</a></td>
-<td>Define uma matriz de valores <a href="/windows/win32/gdi/colorref">COLORREF</a> para as amostras de um seletor de cor Drop-Down.<br/> Cada seletor de cor Drop-Down <em>colortemplate</em> contém uma <code>StandardColors</code> grade. <br/>
+<td>Define uma matriz de <a href="/windows/win32/gdi/colorref">valores COLORREF</a> para as travas de um Drop-Down Seletor de Cor.<br/> Cada Drop-Down Seletor de Cor <em>ColorTemplate contém</em> uma <code>StandardColors</code> grade. <br/>
 <blockquote>
 [!Note]<br />
-Os valores de <a href="/windows/win32/gdi/colorref">COLORREF</a> das colunas <em>StandardColorGridRows</em> x <em></em> iniciais da matriz são exibidos. Se a matriz definir menos cores do que o número de <code>StandardColors</code> amostras declaradas na marcação, espaços vazios serão exibidos para os chips ausentes.
+Os <a href="/windows/win32/gdi/colorref">valores COLORREF</a> das Colunas <em>StandardColorGridRows</em> x <em>iniciais</em> da matriz são exibidos. Se a matriz definir menos cores do que o número de travas declaradas na marcação, espaços vazios serão exibidos <code>StandardColors</code> para os chips ausentes.
 </blockquote>
 <br/></td>
-<td>Dá suporte a <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-getuicommandproperty"><strong>IUIFramework:: GetUICommandProperty</strong></a> e <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setuicommandproperty"><strong>IUIFramework:: SetUICommandProperty</strong></a>.</td>
+<td>Dá <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-getuicommandproperty"><strong>suporte a IUIFramework::GetUICommandProperty</strong></a> <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setuicommandproperty"><strong>e IUIFramework::SetUICommandProperty.</strong></a></td>
 </tr>
 <tr class="odd">
 <td><a href="windowsribbon-reference-properties-uipkey-standardcolorscategorylabel.md">UI_PKEY_StandardColorsCategoryLabel</a></td>
-<td>Define o rótulo para a categoria <strong>cores padrão</strong> .<br/> Válido somente quando <em>colortemplate</em> tem um valor de <code>ThemeColors</code> . Esse é o único modelo que contém categorias rotuladas.<br/></td>
-<td>Dá suporte a <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-getuicommandproperty"><strong>IUIFramework:: GetUICommandProperty</strong></a> e <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setuicommandproperty"><strong>IUIFramework:: SetUICommandProperty</strong></a>.</td>
+<td>Define o rótulo para a <strong>categoria Cores</strong> padrão.<br/> Válido somente quando <em>ColorTemplate</em> tem um valor de <code>ThemeColors</code> . Esse é o único modelo que contém categorias rotuladas.<br/></td>
+<td>Dá <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-getuicommandproperty"><strong>suporte a IUIFramework::GetUICommandProperty</strong></a> <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setuicommandproperty"><strong>e IUIFramework::SetUICommandProperty.</strong></a></td>
 </tr>
 <tr class="even">
 <td><a href="windowsribbon-reference-properties-uipkey-standardcolorstooltips.md">UI_PKEY_StandardColorsTooltips</a></td>
-<td>Define uma matriz de cadeia de caracteres de dicas de ferramentas de amostra de cor para a <code>StandardColors</code> grade.<br/> Cada seletor de cor Drop-Down <em>colortemplate</em> contém uma <code>StandardColors</code> grade. <br/>
+<td>Define uma matriz de cadeia de caracteres de dicas de ferramenta de amostra de cor para a <code>StandardColors</code> grade.<br/> Cada Drop-Down Seletor de Cor <em>ColorTemplate contém</em> uma <code>StandardColors</code> grade. <br/>
 <blockquote>
 [!Note]<br />
-Somente as dicas de ferramenta necessárias para rotular as amostras de cor exibidas na <code>StandardColors</code> grade são usadas. Se menos rótulos forem fornecidos do que o número de amostras na <code>StandardColors</code> grade, um padrão será fornecido para as amostras de remainining.
+Somente as dicas de ferramenta necessárias para rotular as travas de cores exibidas na <code>StandardColors</code> grade são usadas. Se menos rótulos são fornecidos do que o número de travas na grade, um padrão é fornecido para as <code>StandardColors</code> travas que permanecem.
 </blockquote>
 <br/></td>
-<td>Dá suporte a <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-getuicommandproperty"><strong>IUIFramework:: GetUICommandProperty</strong></a> e <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setuicommandproperty"><strong>IUIFramework:: SetUICommandProperty</strong></a>.</td>
+<td>Dá <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-getuicommandproperty"><strong>suporte a IUIFramework::GetUICommandProperty</strong></a> <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setuicommandproperty"><strong>e IUIFramework::SetUICommandProperty.</strong></a></td>
 </tr>
 <tr class="odd">
 <td><a href="windowsribbon-reference-properties-uipkey-themecolors.md">UI_PKEY_ThemeColors</a></td>
-<td>Define uma matriz de valores <a href="/windows/win32/gdi/colorref">COLORREF</a> para as amostras de um seletor de cor Drop-Down.<br/> Válido somente quando <em>colortemplate</em> tem um valor de <code>ThemeColors</code> . <br/>
+<td>Define uma matriz de <a href="/windows/win32/gdi/colorref">valores COLORREF</a> para as travas de um Drop-Down Seletor de Cor.<br/> Válido somente quando <em>ColorTemplate</em> tem um valor de <code>ThemeColors</code> . <br/>
 <blockquote>
 [!Note]<br />
-Os valores de <a href="/windows/win32/gdi/colorref">COLORREF</a> das colunas <em>ThemeColorGridRows</em> x <em></em> iniciais da matriz são exibidos. Se a matriz definir menos cores do que o número de <code>ThemeColors</code> amostras declaradas na marcação, espaços vazios serão exibidos para os chips ausentes.
+Os <a href="/windows/win32/gdi/colorref">valores COLORREF</a> das <em>colunas</em> <em>ThemeColorGridRows</em> x iniciais da matriz são exibidos. Se a matriz definir menos cores do que o número de travas declaradas na marcação, espaços vazios serão exibidos <code>ThemeColors</code> para os chips ausentes.
 </blockquote>
 <br/></td>
-<td>Dá suporte a <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-getuicommandproperty"><strong>IUIFramework:: GetUICommandProperty</strong></a> e <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setuicommandproperty"><strong>IUIFramework:: SetUICommandProperty</strong></a>.</td>
+<td>Dá <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-getuicommandproperty"><strong>suporte a IUIFramework::GetUICommandProperty</strong></a> <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setuicommandproperty"><strong>e IUIFramework::SetUICommandProperty.</strong></a></td>
 </tr>
 <tr class="even">
 <td><a href="windowsribbon-reference-properties-uipkey-themecolorstooltips.md">UI_PKEY_ThemeColorsTooltips</a></td>
-<td>Define a matriz de cadeia de caracteres das dicas de ferramentas de amostra de cor para a <code>ThemeColors</code> grade.<br/> Válido somente quando <em>colortemplate</em> tem um valor de <code>ThemeColors</code> . <br/>
+<td>Define a matriz de cadeia de caracteres de dicas de ferramenta de amostra de cor para a <code>ThemeColors</code> grade.<br/> Válido somente quando <em>ColorTemplate</em> tem um valor de <code>ThemeColors</code> . <br/>
 <blockquote>
 [!Note]<br />
-Somente as dicas de ferramenta necessárias para rotular as amostras de cor exibidas na <code>ThemeColors</code> grade são usadas. Se menos rótulos forem fornecidos do que o número de amostras na <code>ThemeColors</code> grade, um padrão será fornecido para as amostras de remainining.
+Somente as dicas de ferramenta necessárias para rotular as travas de cores exibidas na <code>ThemeColors</code> grade são usadas. Se menos rótulos são fornecidos do que o número de travas na grade, um padrão é fornecido para as <code>ThemeColors</code> travas que permanecem.
 </blockquote>
 <br/></td>
-<td>Dá suporte a <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-getuicommandproperty"><strong>IUIFramework:: GetUICommandProperty</strong></a> e <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setuicommandproperty"><strong>IUIFramework:: SetUICommandProperty</strong></a>.</td>
+<td>Dá <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-getuicommandproperty"><strong>suporte a IUIFramework::GetUICommandProperty</strong></a> <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setuicommandproperty"><strong>e IUIFramework::SetUICommandProperty.</strong></a></td>
 </tr>
 <tr class="odd">
 <td><a href="windowsribbon-reference-properties-uipkey-themecolorscategorylabel.md">UI_PKEY_ThemeColorsCategoryLabel</a></td>
-<td>Define o rótulo para a categoria <strong>cores do tema</strong> .<br/> Válido somente quando <em>colortemplate</em> tem um valor de <code>ThemeColors</code> . Esse é o único modelo que contém categorias rotuladas.<br/></td>
-<td>Dá suporte a <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-getuicommandproperty"><strong>IUIFramework:: GetUICommandProperty</strong></a> e <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setuicommandproperty"><strong>IUIFramework:: SetUICommandProperty</strong></a>.</td>
+<td>Define o rótulo para a <strong>categoria Cores do</strong> tema.<br/> Válido somente quando <em>ColorTemplate</em> tem um valor de <code>ThemeColors</code> . Esse é o único modelo que contém categorias rotuladas.<br/></td>
+<td>Dá <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-getuicommandproperty"><strong>suporte a IUIFramework::GetUICommandProperty</strong></a> <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setuicommandproperty"><strong>e IUIFramework::SetUICommandProperty.</strong></a></td>
 </tr>
 <tr class="even">
 <td><a href="windowsribbon-reference-properties-uipkey-tooltipdescription.md">UI_PKEY_TooltipDescription</a></td>
-<td>Define a cadeia de caracteres para uma descrição da dica de ferramenta associada a um <a href="windowsribbon-reference-properties-uipkey-tooltiptitle.md">UI_PKEY_TooltipTitle</a>.<br/></td>
+<td>Define a cadeia de caracteres para uma descrição de dica de ferramenta associada a um <a href="windowsribbon-reference-properties-uipkey-tooltiptitle.md">UI_PKEY_TooltipTitle</a>.<br/></td>
 <td>Só pode ser atualizado por meio de invalidação.</td>
 </tr>
 <tr class="odd">
 <td><a href="windowsribbon-reference-properties-uipkey-tooltiptitle.md">UI_PKEY_TooltipTitle</a></td>
-<td>Define a cadeia de caracteres para uma dica de ferramenta de comando.<br/></td>
+<td>Define a cadeia de caracteres para uma dica de ferramenta Command.<br/></td>
 <td>Só pode ser atualizado por meio de invalidação.</td>
 </tr>
 </tbody>
@@ -330,9 +330,9 @@ Somente as dicas de ferramenta necessárias para rotular as amostras de cor exib
 
  
 
-### <a name="command-handlers"></a>Manipuladores de comandos
+### <a name="command-handlers"></a>Manipuladores de comando
 
-O método [**IUICommandHandler:: updateproperty**](/windows/desktop/api/uiribbon/nf-uiribbon-iuicommandhandler-updateproperty) é usado para personalizar um seletor de cores Drop-Down por meio das chaves de propriedade listadas acima. O exemplo a seguir demonstra como definir as amostras de cor de um seletor de cor Drop-Down, com base em uma preferência de estilo personalizado ou em uma grade de amostra personalizada que é declarada na marcação.
+O [**método IUICommandHandler::UpdateProperty**](/windows/desktop/api/uiribbon/nf-uiribbon-iuicommandhandler-updateproperty) é usado para personalizar um Drop-Down Seletor de Cor por meio das chaves de propriedade listadas acima. O exemplo a seguir demonstra como definir as travas de cor de um Drop-Down Seletor de Cor, com base em uma preferência de estilo personalizado ou em uma grade de amostra personalizada declarada na marcação.
 
 
 ```C++
@@ -394,7 +394,7 @@ STDMETHODIMP DropDownColorPickerHandler::UpdateProperty(
 
 
 
-O exemplo a seguir demonstra uma implementação do método [**IUICommandHandler:: execute**](/windows/desktop/api/uiribbon/nf-uiribbon-iuicommandhandler-execute) que expõe as cores de amostra do seletor de cor Drop-Down para o aplicativo da faixa de opções.
+O exemplo a seguir demonstra uma implementação do método [**IUICommandHandler::Execute**](/windows/desktop/api/uiribbon/nf-uiribbon-iuicommandhandler-execute) que expõe as cores Drop-Down Seletor de Cor swatch ao aplicativo ribbon.
 
 
 ```C++
@@ -443,16 +443,16 @@ STDMETHODIMP DropDownColorPickerHandler::Execute(
 
 <dl> <dt>
 
-[Windows Biblioteca de controle da estrutura de faixa](windowsribbon-controls-entry.md)
+[Windows Biblioteca de Controle da Estrutura de Faixa de Opções](windowsribbon-controls-entry.md)
 </dt> <dt>
 
 [**Elemento de marcação DropDownColorPicker**](windowsribbon-element-dropdowncolorpicker.md)
 </dt> <dt>
 
-[Propriedades do seletor de cores](windowsribbon-reference-properties-colorpicker.md)
+[Seletor de Cor propriedades](windowsribbon-reference-properties-colorpicker.md)
 </dt> <dt>
 
-[Personalizando uma faixa de guia por meio de definições de tamanho e políticas de dimensionamento](windowsribbon-templates.md)
+[Personalização de uma faixa de opções por meio de definições de tamanho e políticas de dimensionamento](windowsribbon-templates.md)
 </dt> <dt>
 
 [Exemplo de DropDownColorPicker](windowsribbon-dropdowncolorpickersample.md)

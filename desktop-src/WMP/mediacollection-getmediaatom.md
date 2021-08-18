@@ -3,9 +3,9 @@ title: Método mediacollection. getMediaAtom
 description: O método getMediaAtom recupera o índice no qual um atributo especificado reside dentro do conjunto de atributos disponíveis.
 ms.assetid: 17501a95-1196-43ff-9a4e-a78cf28e7a2d
 keywords:
-- método getMediaAtom Windows Media Player
-- método getMediaAtom Windows Media Player, classe Mediacollection
-- Classe mediacollection Windows Media Player, método getMediaAtom
+- Windows Media Player do método getMediaAtom
+- método getMediaAtom Windows Media Player, classe mediacollection
+- classe mediacollection Windows Media Player, método getMediaAtom
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 16728b20c26b90c10f144f278f7dec24195b536a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8f537b759516d5fa0f382d0c72aabbc0edb836ad8e4ae6d7f210d012fa19ea60
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105788151"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118837199"
 ---
 # <a name="mediacollectiongetmediaatom-method"></a>Método mediacollection. getMediaAtom
 
@@ -45,11 +45,11 @@ retVal = MediaCollection.getMediaAtom(
 *atributo* \[ no\]
 </dt> <dd>
 
-**Cadeia de caracteres** que contém o nome do atributo. Para obter informações sobre os atributos com suporte do Windows Media Player, consulte a [referência de atributo](attribute-reference.md)do Windows Media Player.
+**Cadeia de caracteres** que contém o nome do atributo. para obter informações sobre os atributos com suporte pelo Windows Media Player, consulte a [referência de atributo](attribute-reference.md)Windows Media Player.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método retorna um **número** (**longo**).
 
@@ -86,10 +86,10 @@ Para usar esse método, é necessário ter acesso de leitura à biblioteca. Para
 [**Objeto mediacollection**](mediacollection-object.md)
 </dt> <dt>
 
-[**Settings. mediaAccessRights**](settings-mediaaccessrights.md)
+[**Configurações. mediaAccessRights**](settings-mediaaccessrights.md)
 </dt> <dt>
 
-[**Settings. requestMediaAccessRights**](settings-requestmediaaccessrights.md)
+[**Configurações. requestMediaAccessRights**](settings-requestmediaaccessrights.md)
 </dt> </dl>
 
  

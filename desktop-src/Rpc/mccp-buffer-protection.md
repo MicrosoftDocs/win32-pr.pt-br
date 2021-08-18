@@ -1,19 +1,19 @@
 ---
 title: Proteção de buffer MCCP
-description: A partir do Windows Vista, o mecanismo de Marshalling de RPC executa etapas adicionais para tentar evitar estouros de buffer do lado do cliente devido a dados retornados. Esse recurso é chamado de proteção de conformidade de mini computação (MCCP).
+description: a partir do Windows Vista, o mecanismo de marshalling de RPC executa outras etapas para tentar evitar saturações de buffer do lado do cliente devido a dados retornados. Esse recurso é chamado de proteção de conformidade de mini computação (MCCP).
 ms.assetid: 37fe743b-c64e-469d-b8f4-abab9f05c813
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a70d04de57974bd9665d659129590d72513eb83e
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: c6b95234eed76c3d8f0fdc34b0b53e9cf02bcae2fd6db62694e1a3aadd602076
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103641724"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118928402"
 ---
 # <a name="mccp-buffer-protection"></a>Proteção de buffer MCCP
 
-A partir do Windows Vista, o mecanismo de Marshalling de RPC executa etapas adicionais para tentar evitar estouros de buffer do lado do cliente devido a dados retornados. Esse recurso é chamado de proteção de conformidade de mini computação (MCCP).
+a partir do Windows Vista, o mecanismo de marshalling de RPC executa outras etapas para tentar evitar saturações de buffer do lado do cliente devido a dados retornados. Esse recurso é chamado de proteção de conformidade de mini computação (MCCP).
 
 Quando o cliente passa um ponteiro para um buffer existente para um \[ parâmetro [**out**](/windows/desktop/Midl/out-idl) \] ou \[ [**in**](/windows/desktop/Midl/in),**out** , \] os dados retornados para esse parâmetro são copiados para o buffer existente. Se os dados retornados forem maiores que o buffer passado, uma saturação de buffer poderá ocorrer quando o RPC copiar os dados retornados para o buffer muito pequeno. Consulte [ponteiros de nível superior e inseridos](top-level-and-embedded-pointers.md).
 
@@ -29,6 +29,6 @@ HRESULT PassString( [in] DWORD Length, [in, unique, string, size_is( Length )]LP
 
 Se *MyString* for **NULL**, o RPC rejeitará a chamada, a menos que *Length* esteja definido como 0. Observe que o RPC permitirá que o *comprimento* seja 0 enquanto o *MyString* não for **nulo** e o RPC tratará *MyString* como uma alocação de buffer de comprimento 0.
 
- 
+ 
 
- 
+ 

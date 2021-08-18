@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - Ncrypt.dll
-ms.openlocfilehash: cb2a50a7f16062f271a89b6061e3f2fa2dd16685
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b020f41822185dfc9e4e2513fc9e299bc35d9bbb258aaeddf6f1e1e8ea7b8cf9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103826991"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118905655"
 ---
 # <a name="sslverifysignature-function"></a>Função SslVerifySignature
 
@@ -94,7 +94,7 @@ Esse parâmetro é reservado para uso futuro.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se a função for realizada com sucesso, ela retornará zero.
 
@@ -114,7 +114,7 @@ Os códigos de retorno possíveis incluem, mas não se limitam a, o seguinte.
 
 ## <a name="remarks"></a>Comentários
 
-A função **SslVerifySignature** não é chamada atualmente pelo Windows. Essa função é uma parte necessária da interface do provedor SSL e deve ser totalmente implementada para garantir a compatibilidade com o futuro.
+A função **SslVerifySignature** não é chamada atualmente por Windows. Essa função é uma parte necessária da interface do provedor SSL e deve ser totalmente implementada para garantir a compatibilidade com o futuro.
 
 As implementações atuais do lado do servidor da conexão do [*protocolo*](/windows/desktop/SecGloss/t-gly) TLS chamam a função [**NCryptVerifySignature**](/windows/desktop/api/Ncrypt/nf-ncrypt-ncryptverifysignature) durante a autenticação do cliente para processar a mensagem de verificação de certificado.
 
@@ -124,8 +124,8 @@ As implementações atuais do lado do servidor da conexão do [*protocolo*](/win
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                     |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                           |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                     |
 | parâmetro<br/>                   | <dl> <dt>Sslprovider. h</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Ncrypt.dll</dt> </dl>    |
 

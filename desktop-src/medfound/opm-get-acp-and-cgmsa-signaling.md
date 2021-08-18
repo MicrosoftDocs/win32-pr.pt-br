@@ -4,12 +4,12 @@ ms.assetid: d477fe3e-4498-450b-93b7-ce74ae9ed005
 title: OPM_GET_ACP_AND_CGMSA_SIGNALING (Opmapi. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5bf6294c3f1d90ac8a2292c65b3c1b8558e69220
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a6c06da78ea9ae1a4f0ea58f0fb8770dffadff6a34d577fd2328816ffc100e4c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105793618"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119102060"
 ---
 # <a name="opm_get_acp_and_cgmsa_signaling"></a>os OPM \_ Get \_ ACP \_ e \_ CGMSA \_ Signaling
 
@@ -41,9 +41,9 @@ Essa consulta é equivalente à consulta DXVA \_ COPPQuerySignaling usada no pro
 
 | Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                      |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                |
-| parâmetro<br/>                   | <dl> <dt>Opmapi. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                      |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                |
+| Cabeçalho<br/>                   | <dl> <dt>Opmapi. h</dt> </dl> |
 
 
 

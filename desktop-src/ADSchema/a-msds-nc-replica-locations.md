@@ -36,7 +36,7 @@ Uma lista de servidores que são o conjunto de réplicas para o contexto de nome
 | Frequência de atualização  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.1661                 |
 | System-Id-Guid    | 97de9615-b537-46bc-ac0f-10720f3909f3    |
-| Sintaxe            | [**Object(DS-DN)**](s-object-ds-dn.md) |
+| Syntax            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
 
