@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 9bd5ef8ea4218890c025fdebc87154ca1224d33c
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: e5ace74e275ae63a62306d47d50924e9c4e9a9771027e75659ef72345f69906d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103917329"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118792666"
 ---
 # <a name="defb---vs"></a>DEFB-vs
 
@@ -29,7 +29,7 @@ Define um valor constante booliano, que deve ser carregado sempre que um sombrea
 
 
 
- 
+ 
 
 onde
 
@@ -46,7 +46,7 @@ onde
 
 
 
- 
+ 
 
 A instrução DEFB-vs define uma constante de sombreador booliana cujo valor é carregado sempre que um sombreador é definido como um dispositivo. Elas são chamadas de constantes imediatas. Constantes imediatas têm precedência sobre constantes definidas pelo método de API SetVertexShaderConstantB.
 
@@ -69,6 +69,6 @@ Há duas maneiras de definir uma constante booliana em um sombreador.
 [defi-vs](defi---vs.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

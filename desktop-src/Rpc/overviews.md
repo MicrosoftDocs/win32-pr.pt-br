@@ -6,12 +6,12 @@ keywords:
 - RPC de chamada de procedimento remoto, descrito
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1ea90c08dc075fdd90ae604b0d347ba6ac5baf9a
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: f97c7735976428ffc4128b0c6a566ac56228921a3bf1070eda69af1579d90b99
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104292530"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118927555"
 ---
 # <a name="overviews"></a>Visões gerais
 
@@ -37,9 +37,9 @@ Essa parte do guia e da referência do programador de chamada de procedimento re
 -   O [balanceamento de carga RPC](rpc-load-balancing.md) descreve a distribuição de grandes volumes de tráfego RPC sobre http entre vários servidores RPC em um farm de servidores.
 -   Os [exemplos](examples.md) contêm uma descrição dos programas de RPC de exemplo fornecidos com o kit do desenvolvedor de software de plataforma Microsoft.
 
- 
+ 
 
- 
+ 
 
 
 

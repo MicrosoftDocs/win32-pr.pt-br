@@ -16,12 +16,12 @@ api_location:
 api_name:
 - D3DPERF_SetOptions
 targetos: Windows
-ms.openlocfilehash: 8bd877469864ccdaa833ce80d00eb06ae5fc18de
-ms.sourcegitcommit: 517a888e0370b9ec64c451635f12d60245ff5ae3
+ms.openlocfilehash: 579c07d8f93696e4e3c83b1e61c1ff5fca65e12b5a7cf0a5937a254ecc6dc306
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "104453869"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118805731"
 ---
 # <a name="d3dperf_setoptions-function"></a>Função D3DPERF_SetOptions
 
@@ -41,7 +41,7 @@ int WINAPI D3DPERF_SetOptions(
 
 Opções de usuário reconhecíveis pelo PIX. Defina isso como 1 para notificar o PIX de que o programa de destino não dá permissão para ser criado.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Essa função não retorna um valor.
 

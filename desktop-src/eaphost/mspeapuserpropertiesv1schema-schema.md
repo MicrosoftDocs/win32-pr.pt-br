@@ -1,6 +1,6 @@
 ---
 title: Esquema mspeapuserpropertiesv1
-description: Define as credenciais de autenticação e as opções de credenciais usando PEAP (protocolo de autenticação extensível protegida).
+description: Define as credenciais de autenticação e as opções de credencial usando o PEAP (Protocolo de Autenticação Extensível Protegido).
 ms.assetid: b7cc9ac0-b4b2-4b32-8b9a-981574721a9b
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,18 +9,18 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 3048e87e4345e9dbc29ab5ac11141461825b84d4
-ms.sourcegitcommit: c20a43b333f03175ac23823c55f3204bfe8cd243
+ms.openlocfilehash: 63606636fdeb6db616f20dffe05d25a80f981aa22f546d57c70c32fe59f30f91
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "104006954"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118784886"
 ---
 # <a name="mspeapuserpropertiesv1-schema"></a>Esquema mspeapuserpropertiesv1
 
-O esquema mspeapuserpropertiesv1 define credenciais de autenticação e opções de credenciais usando o protocolo PEAP.
+O esquema mspeapuserpropertiesv1 define as credenciais de autenticação e as opções de credenciais usando o PEAP (Protocolo de Autenticação Extensível Protegido).
 
--   [Elementos do esquema mspeapuserpropertiesv1](mspeapuserpropertiesv1schema-elements.md)
+-   [Elementos de esquema mspeapuserpropertiesv1](mspeapuserpropertiesv1schema-elements.md)
 -   [Tipos complexos de esquema mspeapuserpropertiesv1](mspeapuserpropertiesv1schema-complex-types.md)
 
 ## <a name="related-topics"></a>Tópicos relacionados
@@ -30,9 +30,9 @@ O esquema mspeapuserpropertiesv1 define credenciais de autenticação e opções
 [EAPHost e esquema herdado](eaphost-schemas.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -4,12 +4,12 @@ ms.assetid: 65bb8822-5eb0-46a3-ab9e-c55ae466e982
 title: Coletores de mídia ASF
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2d6bcd3e6b91403185342607e8c4374eb32069c7
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: 50af8530b1c2b8d9131243cafa67e841289cbbe0691cfcb499b57df68b60b141
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "105759159"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118744207"
 ---
 # <a name="asf-media-sinks"></a>Coletores de mídia ASF
 
@@ -20,7 +20,7 @@ Media Foundation fornece dois tipos de coletores de mídia ASF:
 -   O *coletor de arquivos ASF* é usado para arquivar dados de mídia ASF em um arquivo.
 -   O *coletor de streaming ASF* é usado para gravar conteúdo ASF em um fluxo de bytes que pode ser transmitido pela rede.
 
-Os coletores de mídia ASF contêm um ou mais coletores de fluxo, que representam os dados a serem gravados para cada fluxo no arquivo ASF de saída. Para codificar aplicativos executados no Windows Vista, você deve configurar manualmente a topologia de codificação criando e Configurando o coletor de mídia ASF e, em seguida, adicionando-o à topologia. No Windows 7, se você estiver usando os objetos de transcodificação rápida para criar a topologia, você não terá criar o coletor de mídia diretamente e o aplicativo não chamará nenhum método no coletor de mídia ou qualquer um dos coletores de fluxo. Os objetos de transcodificação rápida instanciam os coletores de mídia necessários e os adicionam à topologia antes de retornar uma referência ao aplicativo chamador. No entanto, para objetos de transcodificação rápidos, há algumas restrições que se aplicam dependendo do tipo de codificação.
+Os coletores de mídia ASF contêm um ou mais coletores de fluxo, que representam os dados a serem gravados para cada fluxo no arquivo ASF de saída. para codificar aplicativos executados no Windows Vista, você deve configurar manualmente a topologia de codificação criando e configurando o coletor de mídia ASF e, em seguida, adicionando-o à topologia. no Windows 7, se você estiver usando os objetos de transcodificação rápida para criar a topologia, você não terá criar o coletor de mídia diretamente e o aplicativo não chamará nenhum método no coletor de mídia ou qualquer um dos coletores de fluxo. Os objetos de transcodificação rápida instanciam os coletores de mídia necessários e os adicionam à topologia antes de retornar uma referência ao aplicativo chamador. No entanto, para objetos de transcodificação rápidos, há algumas restrições que se aplicam dependendo do tipo de codificação.
 
 -   [Modelo de objeto de coletor de mídia ASF](#asf-media-sink-object-model)
 -   [Coletor de arquivo ASF](#asf-file-sink)

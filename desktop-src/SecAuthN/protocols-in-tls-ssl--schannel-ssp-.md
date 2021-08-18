@@ -5,12 +5,12 @@ title: Protocolos em TLS/SSL (SSP Schannel)
 ms.topic: article
 ms.date: 01/20/2021
 ms.custom: contperf-fy21q3
-ms.openlocfilehash: 0aa3c3900a422a1460a2163043fb736e590ca2fe
-ms.sourcegitcommit: 5a78723ad484955ac91a23cf282cf9c176c1eab6
+ms.openlocfilehash: a03264a40ab6d632165fe4cf75aa0dfd7ee85ac0474ef391c36a2b1980010422
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/22/2021
-ms.locfileid: "114436261"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118920654"
 ---
 # <a name="protocols-in-tlsssl-schannel-ssp"></a>Protocolos em TLS/SSL (SSP Schannel)
 
@@ -70,11 +70,11 @@ O exemplo a seguir lista o suporte do Provedor Schannel da Microsoft de versões
 | Windows 10, versão 20H2                              | habilitado         | habilitado         | habilitado         | habilitado         |
 | Windows 10, versão 21H1                              | habilitado         | habilitado         | habilitado         | habilitado         |
 
-## <a name="pre-tls-standard-protocols-support"></a>Suporte a protocolos padrão pré-TLS
+## <a name="pre-tls-standard-protocols-support"></a>Suporte a protocolos pré-TLS padrão
 
-Veja a seguir a lista de suporte do Provedor Schannel da Microsoft de protocolos padrão pré-TLS:
+A seguir está a lista do suporte do provedor Microsoft Schannel de protocolos pré-TLS padrão:
 
-*Dica: talvez seja necessário rolar horizontalmente para exibir todas as colunas nesta tabela:*
+*Dica: Talvez seja necessário rolar horizontalmente para exibir todas as colunas nesta tabela:*
 
 | Sistema operacional Windows                                            | PCT 1.0       | Cliente SSL2   | Servidor SSL2   | Cliente SSL3 | Servidor SSL3 |
 |-------------------------------------------------------|---------------|---------------|---------------|-------------|-------------|
@@ -97,7 +97,7 @@ Veja a seguir a lista de suporte do Provedor Schannel da Microsoft de protocolos
 
 
 > [!IMPORTANT]
-> A partir Windows 10, versão 1607 e Windows Server 2016, o SSL 2.0 foi removido e não tem mais suporte.
+> a partir do Windows 10, versão 1607 e Windows Server 2016, o SSL 2,0 foi removido e não tem mais suporte.
 
 > [!TIP]  
-> Todas as versões Windows aceitarão uma mensagem de formato unificado "ClientHello" mesmo quando a versão 2 do SSL estiver desabilitada ou não for mais suportada.
+> todas as versões do Windows aceitarão uma mensagem de formato unificado "ClientHello" mesmo quando a versão 2 do SSL estiver desabilitada ou não tiver mais suporte.

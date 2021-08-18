@@ -4,12 +4,12 @@ ms.assetid: d63d0129-7c47-417c-bec1-965f58fcf090
 title: Sistema. GPS. Track
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 71767c3606e98aba14d9be64d43b88b46c2d21e6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7c84d6d2c8fb551e4437703b8c251c76573eeba686f5902363230896f1323052
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105761624"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118727157"
 ---
 # <a name="systemgpstrack"></a>Sistema. GPS. Track
 

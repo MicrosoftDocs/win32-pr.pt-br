@@ -1,21 +1,21 @@
 ---
-description: Saiba mais sobre o elemento PageBlackGenerationProcessingTotalInkCoverageLimit, que especifica a soma máxima permitida das quatro coberturas de tinta em qualquer lugar em uma imagem.
+description: Saiba mais sobre o elemento PageBlackGenerationProcessingTotalInkCoverageLimit, que especifica a soma máxima permitida de quatro cobertura de tinta em qualquer lugar em uma imagem.
 ms.assetid: 7ccd02c2-7cec-4d9d-83c1-512f25f4045c
 title: PageBlackGenerationProcessingTotalInkCoverageLimit
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 68410cabdfafa5ce82450821e4ae45709ee8d4c9
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: e10b97916ec8bad8b0a977e4a92af6083aa554da4f1fd21c123226bc6c9dfb91
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112408439"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119098890"
 ---
 # <a name="pageblackgenerationprocessingtotalinkcoveragelimit"></a>PageBlackGenerationProcessingTotalInkCoverageLimit
 
-Este tópico não é atual. Para obter as informações mais atuais, consulte a [Especificação de Esquema de Impressão](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Este tópico não é atual. Para obter as informações mais atuais, consulte a [especificação do esquema de impressão](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Especifica a soma máxima permitida das quatro coberturas de tinta em qualquer lugar em uma imagem.
+Especifica a soma máxima permitida da cobertura de quatro tinta em qualquer lugar em uma imagem.
 
 -   [Informações do elemento](#element-information)
 -   [Conteúdo da estrutura](#structure-content)
@@ -24,10 +24,10 @@ Especifica a soma máxima permitida das quatro coberturas de tinta em qualquer l
 
 
 
-| Name | Valor |
+| Nome | Valor |
 |----------------------------|------------------------------------------------------------|
 | Tipo de elemento <br/>   | ParameterDef<br/>                                    |
-| Prefixo de definição de scoping <br/> | ?<br/>                                            |
+| Prefixo de escopo <br/> | ?<br/>                                            |
 | Observações <br/>          | Vinculado ao elemento PageBlackGenerationProcessing<br/> |
 
 
@@ -75,10 +75,10 @@ A tabela a seguir descreve as características das variáveis definidas na estru
 | Tipo de dados<br/>     | string<br/>  | xs:integer<br/>      |
 | DefaultValue<br/> | string<br/>  | não definido<br/>       |
 | MaxValue<br/>     | Número inteiro<br/> | 400<br/>             |
-| Minvalue<br/>     | Número inteiro<br/> | 200<br/>             |
+| MinValue<br/>     | Número inteiro<br/> | 200<br/>             |
 | Vários<br/>     | integer<br/> | 1<br/>               |
-| Obrigatório<br/>    | string<br/>  | psk:Conditional<br/> |
-| Unittype<br/>     | string<br/>  | {1&gt;percent&lt;1}<br/>         |
+| Obrigatório<br/>    | string<br/>  | PSK: condicional<br/> |
+| UnitType<br/>     | string<br/>  | {1&gt;percent&lt;1}<br/>         |
 
 
 

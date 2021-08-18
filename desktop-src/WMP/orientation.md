@@ -3,23 +3,23 @@ title: Orientation
 description: Orientation
 ms.assetid: 88aabf9c-0283-4b23-bd13-d305f2a8be79
 keywords:
-- Capas móveis do Windows Media Player, orientação de dispositivos
-- Capas móveis do Windows Media Player, orientação do dispositivo
+- Windows Media Player Capas móveis, orientação de dispositivos
+- Windows Media Player Capas móveis, orientação do dispositivo
 - orientação de dispositivos em capas
 - orientação do dispositivo em capas
 - capas, orientação do dispositivo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6c73b997c78dc891e3976418360477455f4ef8d9
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 975be1dbe44a9f31a7ff4f6e9e536da570d2adcc538c9ee538900a27d35da1c1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103635342"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118996046"
 ---
 # <a name="orientation"></a>Orientation
 
-Alguns dispositivos baseados no Windows Mobile podem ser usados em orientações físicas diferentes. As orientações disponíveis incluem:
+alguns Windows dispositivos baseados em dispositivos móveis podem ser usados em orientações físicas diferentes. As orientações disponíveis incluem:
 
 -   **Retrato**. O dispositivo é mantido em uma forma vertical para que seja mais alto do que o número.
 -   **Paisagem**. O dispositivo é mantido de forma horizontal para que seja mais largo do que a altura.
@@ -31,12 +31,12 @@ Cada capa que você cria deve especificar uma única orientação. Você deve fo
 
 <dl> <dt>
 
-[**Funcionalidade móvel do Windows Media Player**](windows-media-player-mobile-functionality.md)
+[**Windows Media Player Funcionalidade móvel**](windows-media-player-mobile-functionality.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,11 +1,11 @@
 ---
-title: atributo netboot-Limit-Clients
-description: O atributo netboot-Limit-Clients é reservado para uso interno.
+title: atributo netboot-Limit-clients
+description: O atributo netboot-Limit-clients é reservado para uso interno.
 ms.assetid: e39bed0f-44ff-47f3-a350-cc006c65881b
 ms.tgt_platform: multiple
 keywords:
-- Esquema do AD do atributo netboot-Limit-Clients
-- Atributo netbootLimitClients Esquema do AD
+- atributo netboot-Limit-clients AD Schema
+- Esquema de AD do atributo netbootLimitClients
 topic_type:
 - apiref
 api_name:
@@ -21,22 +21,22 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118682417"
 ---
-# <a name="netboot-limit-clients-attribute"></a>atributo netboot-Limit-Clients
+# <a name="netboot-limit-clients-attribute"></a>atributo netboot-Limit-clients
 
-O **atributo netboot-Limit-Clients** é reservado para uso interno.
+O atributo **netboot-Limit-clients** é reservado para uso interno.
 
 
 
 | Entrada | Valor |
 |-------------------|--------------------------------------|
-| CN                | netboot-Limit-Clients                |
-| Ldap-Display-Name | netbootLimitClients                  |
+| CN                | netboot – limite-clientes                |
+| LDAP-Display-Name | netbootLimitClients                  |
 | Tamanho              | \-                                   |
 | Privilégio de atualização  | Esse valor é definido pelo sistema.     |
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.850               |
-| System-Id-Guid    | 07383077-91df-11d1-aebc-0000f80367c1 |
-| Sintaxe            | [**Boolean**](s-boolean.md)         |
+| System-ID-GUID    | 07383077-91df-11d1-aebc-0000f80367c1 |
+| Syntax            | [**Boolean**](s-boolean.md)         |
 
 
 
@@ -58,15 +58,15 @@ O **atributo netboot-Limit-Clients** é reservado para uso interno.
 | ID do link                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | Falso                                                      |
-| Tem valor único       | True                                                       |
+| É de valor único       | Verdadeiro                                                       |
 | É indexado             | Falso                                                      |
-| No Catálogo Global      | Falso                                                      |
-| Descritor de segurança NT | O:BAG:BAD:S:                                               |
+| No catálogo global      | Falso                                                      |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
 | System-Flags           | 0x00000010                                                 |
-| Classes usadas em        | [**Intellimirror-SCP**](c-intellimirrorscp.md)<br/> |
+| Classes usadas em        | [**IntelliMirror-SCP**](c-intellimirrorscp.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ O **atributo netboot-Limit-Clients** é reservado para uso interno.
 | ID do link                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | Falso                                                      |
-| Tem valor único       | True                                                       |
+| É de valor único       | Verdadeiro                                                       |
 | É indexado             | Falso                                                      |
-| No Catálogo Global      | Falso                                                      |
-| Descritor de segurança NT | O:BAG:BAD:S:                                               |
+| No catálogo global      | Falso                                                      |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
 | System-Flags           | 0x00000010                                                 |
-| Classes usadas em        | [**Intellimirror-SCP**](c-intellimirrorscp.md)<br/> |
+| Classes usadas em        | [**IntelliMirror-SCP**](c-intellimirrorscp.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ O **atributo netboot-Limit-Clients** é reservado para uso interno.
 | ID do link                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | Falso                                                      |
-| Tem valor único       | True                                                       |
+| É de valor único       | Verdadeiro                                                       |
 | É indexado             | Falso                                                      |
-| No Catálogo Global      | Falso                                                      |
-| Descritor de segurança NT | O:BAG:BAD:S:                                               |
+| No catálogo global      | Falso                                                      |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
 | System-Flags           | 0x00000010                                                 |
-| Classes usadas em        | [**Intellimirror-SCP**](c-intellimirrorscp.md)<br/> |
+| Classes usadas em        | [**IntelliMirror-SCP**](c-intellimirrorscp.md)<br/> |
 
 
 
@@ -121,7 +121,7 @@ O **atributo netboot-Limit-Clients** é reservado para uso interno.
 | ID do link                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | Falso                                                      |
-| É de valor único       | True                                                       |
+| É de valor único       | Verdadeiro                                                       |
 | É indexado             | Falso                                                      |
 | No catálogo global      | Falso                                                      |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                               |
@@ -142,7 +142,7 @@ O **atributo netboot-Limit-Clients** é reservado para uso interno.
 | ID do link                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | Falso                                                      |
-| É de valor único       | True                                                       |
+| É de valor único       | Verdadeiro                                                       |
 | É indexado             | Falso                                                      |
 | No catálogo global      | Falso                                                      |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                               |
@@ -163,7 +163,7 @@ O **atributo netboot-Limit-Clients** é reservado para uso interno.
 | ID do link                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | Falso                                                      |
-| É de valor único       | True                                                       |
+| É de valor único       | Verdadeiro                                                       |
 | É indexado             | Falso                                                      |
 | No catálogo global      | Falso                                                      |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                               |

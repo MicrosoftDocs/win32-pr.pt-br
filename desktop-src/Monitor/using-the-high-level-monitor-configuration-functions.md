@@ -16,18 +16,18 @@ keywords:
 - configurações de monitor contínuo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ff494388aac91d8aacd92ed4fe345722ea18659f
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 827d19ef0006dc89208061c18ef34c28c8f993c3e0d6ebd0d1c1005daf2cd640
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "105757133"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119066596"
 ---
 # <a name="using-the-high-level-monitor-configuration-functions"></a>Usando as funções de configuração do monitor de High-Level
 
 ## <a name="enumerating-physical-monitors"></a>Enumerando monitores físicos
 
-Há várias funções que enumeram dispositivos de exibição, incluindo [**EnumDisplayMonitors**](/windows/desktop/api/winuser/nf-winuser-enumdisplaymonitors) e [**MonitorFromWindow**](/windows/desktop/api/winuser/nf-winuser-monitorfromwindow). Essas funções são documentadas na documentação do Windows GDI, no tópico [vários monitores de exibição](/windows/desktop/gdi/multiple-display-monitors). Essas funções retornam identificadores **HMONITOR** . Apesar do nome, no entanto, um identificador **HMONITOR** pode ser associado a mais de um monitor físico. Para definir as configurações em um monitor, o aplicativo deve obter um identificador exclusivo para o monitor físico chamando [**GetPhysicalMonitorsFromHMONITOR**](/windows/desktop/api/PhysicalMonitorEnumerationAPI/nf-physicalmonitorenumerationapi-getphysicalmonitorsfromhmonitor).
+Há várias funções que enumeram dispositivos de exibição, incluindo [**EnumDisplayMonitors**](/windows/desktop/api/winuser/nf-winuser-enumdisplaymonitors) e [**MonitorFromWindow**](/windows/desktop/api/winuser/nf-winuser-monitorfromwindow). essas funções são documentadas na documentação do Windows GDI, no tópico [vários monitores de exibição](/windows/desktop/gdi/multiple-display-monitors). Essas funções retornam identificadores **HMONITOR** . Apesar do nome, no entanto, um identificador **HMONITOR** pode ser associado a mais de um monitor físico. Para definir as configurações em um monitor, o aplicativo deve obter um identificador exclusivo para o monitor físico chamando [**GetPhysicalMonitorsFromHMONITOR**](/windows/desktop/api/PhysicalMonitorEnumerationAPI/nf-physicalmonitorenumerationapi-getphysicalmonitorsfromhmonitor).
 
 Se seu aplicativo usar o Direct3D, você poderá obter um identificador de monitor de um dispositivo Direct3D chamando [**GetPhysicalMonitorsFromIDirect3DDevice9**](/windows/desktop/api/PhysicalMonitorEnumerationAPI/nf-physicalmonitorenumerationapi-getphysicalmonitorsfromidirect3ddevice9).
 
@@ -35,7 +35,7 @@ Se seu aplicativo usar o Direct3D, você poderá obter um identificador de monit
 
 Um monitor pode não dar suporte a todas as funções de configuração do monitor. Para descobrir a quais funções um monitor dá suporte, chame [**GetMonitorCapabilities**](/windows/desktop/api/HighLevelMonitorConfigurationAPI/nf-highlevelmonitorconfigurationapi-getmonitorcapabilities).
 
-## <a name="continuous-monitor-settings"></a>Configurações de monitor contínuo
+## <a name="continuous-monitor-settings"></a>Configurações de Monitor contínuo
 
 Uma configuração de monitor *contínua* é aquela que pode variar entre alguns valores mínimo e máximo. A maioria das funções de configuração do monitor de alto nível controla as configurações de monitor contínuas. Por exemplo, brilho e contraste são configurações contínuas.
 
@@ -52,7 +52,7 @@ Um monitor pode alterar Estados por vários motivos, incluindo:
 
 Todos esses eventos podem alterar as configurações do monitor. Eles também podem alterar o valor mínimo e máximo de uma configuração.
 
-## <a name="dependencies-among-monitor-settings"></a>Dependências entre as configurações do monitor
+## <a name="dependencies-among-monitor-settings"></a>dependências entre Configurações do Monitor
 
 Alterar a temperatura de cor pode alterar a unidade atual e obter as configurações, e o inverso também é verdadeiro. Essas são as únicas dependências entre as funções de configuração de monitor de alto nível. Outras configurações podem ser acessíveis somente por meio das funções de monitor de baixo nível. Pode haver dependências entre essas configurações e as configurações de alto nível. Essas dependências são específicas do fornecedor. Um aplicativo pode lidar com esse problema de várias maneiras:
 
@@ -60,7 +60,7 @@ Alterar a temperatura de cor pode alterar a unidade atual e obter as configuraç
 -   Depois de chamar uma função de nível baixo, obtenha o valor atual de cada configuração de monitor. Infelizmente, essa abordagem pode ser lenta, pois obter cada configuração leva cerca de 40 milissegundos.
 -   Use funções de nível baixo somente com modelos de monitor específicos cujo comportamento você entende.
 
-## <a name="disabled-monitor-settings"></a>Configurações do monitor desabilitadas
+## <a name="disabled-monitor-settings"></a>Monitor desabilitado Configurações
 
 Um aplicativo não pode desabilitar nenhuma configuração de monitor chamando as funções de monitor de alto nível. No entanto, um aplicativo pode desabilitar acidentalmente uma configuração se usar as funções de nível baixo para alterar uma configuração de monitor que não é suportada pelas funções de alto nível. Além disso, um usuário pode desabilitar uma configuração usando o controle de painel frontal. Esses comportamentos são específicos do fornecedor.
 
@@ -76,6 +76,6 @@ Se uma configuração de monitor for desabilitada, qualquer função que definir
 [Usando a configuração do monitor](using-monitor-configuration.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

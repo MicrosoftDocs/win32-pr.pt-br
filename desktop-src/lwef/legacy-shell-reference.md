@@ -1,23 +1,23 @@
 ---
-title: Referência de shell herdado
-description: Esta seção é uma referência de desenvolvedor herdada para o Shell do Windows. Alguns desses recursos foram substituídos por novos recursos do Windows.
+title: Referência de Shell Herddo
+description: Esta seção é uma referência de desenvolvedor herdado para Windows Shell. Alguns desses recursos foram superados por novos recursos no Windows.
 ms.assetid: 007FA4A4-5914-4B67-8C01-2F970AF79E1F
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2d9f7b460771dcdd89d6f93dec6f676a082600f9
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: fe07d080e041b4d98040a3da2fedf4a8d745998cbbab124ddccac35cd5e273db
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104292686"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118748667"
 ---
-# <a name="legacy-shell-reference"></a>Referência de shell herdado
+# <a name="legacy-shell-reference"></a>Referência de Shell Herddo
 
-Esta seção é uma referência de desenvolvedor herdada para o Shell do Windows. Alguns desses recursos foram substituídos por novos recursos do Windows.
+Esta seção é uma referência de desenvolvedor herdado para Windows Shell. Alguns desses recursos foram superados por novos recursos no Windows.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -13,7 +13,7 @@ ms.locfileid: "118648561"
 ---
 # <a name="obtaining-the-size-of-a-compressed-file"></a>Obtendo o tamanho de um arquivo compactado
 
-Use a [**função GetCompressedFileSize**](/windows/desktop/api/fileapi/nf-fileapi-getcompressedfilesizea) para obter o tamanho compactado de um arquivo. Se o arquivo for compactado, seu tamanho compactado será menor que seu tamanho descompactado. Use a [**função GetFileSize**](/windows/desktop/api/FileAPI/nf-fileapi-getfilesize) para determinar o tamanho descompactado de um arquivo.
+Use a função [**GetCompressedFileSize**](/windows/desktop/api/fileapi/nf-fileapi-getcompressedfilesizea) para obter o tamanho compactado de um arquivo. Se o arquivo estiver compactado, seu tamanho compactado será menor que seu tamanho descompactado. Use a função [**GetFiles**](/windows/desktop/api/FileAPI/nf-fileapi-getfilesize) para determinar o tamanho descompactado de um arquivo.
 
  
 

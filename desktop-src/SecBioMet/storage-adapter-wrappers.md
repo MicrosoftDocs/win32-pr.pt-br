@@ -1,17 +1,17 @@
 ---
-title: Wrappers do adaptador de armazenamento
+title: Armazenamento Wrappers de adaptador
 description: Funções que você pode usar para chamar funções em seu adaptador de armazenamento. Essas funções são definidas em WinBio \_ Adapter. h.
 ms.assetid: 3e7ff098-b8f3-4745-aa75-712a392c6c78
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c5dfdf562546e1520ee85c5a9a0164acdff53904
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 6308dda71cd279ae07e0849c0760526f116de6295bb0555f530f31a0033a5851
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104364058"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118911599"
 ---
-# <a name="storage-adapter-wrappers"></a>Wrappers do adaptador de armazenamento
+# <a name="storage-adapter-wrappers"></a>Armazenamento Wrappers de adaptador
 
 As seguintes funções de wrapper são definidas em WinBio \_ Adapter. h. Você pode usá-los para chamar funções em seu adaptador de armazenamento.
 
@@ -53,7 +53,7 @@ As seguintes funções de wrapper são definidas em WinBio \_ Adapter. h. Você 
 
 <dl> <dt>
 
-[Funções do adaptador de armazenamento](storage-adapter-functions.md)
+[Armazenamento Funções de adaptador](storage-adapter-functions.md)
 </dt> <dt>
 
 [Funções de plug-in](plug-in-functions.md)

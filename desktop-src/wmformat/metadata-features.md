@@ -3,8 +3,8 @@ title: Recursos de metadados
 description: Os metadados são usados em arquivos ASF para descrever o conteúdo e as propriedades do arquivo.
 ms.assetid: 01ba09d7-11be-46b1-a0f2-4e35ca5502a8
 keywords:
-- SDK do Windows Media Format, recursos de metadados
-- SDK do Windows Media Format, recursos
+- Windows SDK do formato de mídia, recursos de metadados
+- Windows SDK do formato de mídia, recursos
 - ASF (Advanced Systems Format), recursos de metadados
 - ASF (formato de sistemas avançados), recursos de metadados
 - ASF (Advanced Systems Format), recursos
@@ -12,18 +12,18 @@ keywords:
 - metadados, recursos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 80ea31885a1c1635ee4778683858876572e32262
-ms.sourcegitcommit: ad672d3a10192c5ccac619ad2524407109266e93
+ms.openlocfilehash: 6865e54f2eeabcb96dd88df27aba578a9169ed84857d17af5602848041f24118
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/25/2020
-ms.locfileid: "104365751"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118700448"
 ---
 # <a name="metadata-features"></a>Recursos de metadados
 
-Os metadados são usados em arquivos ASF para descrever o conteúdo e as propriedades do arquivo. Todos os arquivos ASF que você criar deverão incluir metadados apropriados. (Para obter uma visão geral, consulte [metadados](metadata.md).) O Windows Media Format SDK inclui suporte para a edição de metadados por meio do objeto Writer, o objeto editor de metadados e os objetos leitor e leitor síncrono. O suporte nativo para uma ampla variedade de atributos de metadados está incluído. Consulte [atributos](attributes.md) para obter uma lista dos atributos predefinidos.
+Os metadados são usados em arquivos ASF para descrever o conteúdo e as propriedades do arquivo. Todos os arquivos ASF que você criar deverão incluir metadados apropriados. (Para obter uma visão geral, consulte [metadados](metadata.md).) o SDK do formato de mídia Windows inclui suporte para a edição de metadados por meio do objeto writer, o objeto editor de metadados e os objetos leitor e leitor síncrono. O suporte nativo para uma ampla variedade de atributos de metadados está incluído. Consulte [atributos](attributes.md) para obter uma lista dos atributos predefinidos.
 
-O suporte de metadados fornecido pelos vários objetos do SDK do Windows Media Format é flexível e poderoso. Os principais recursos de metadados são resumidos na lista a seguir:
+o suporte de metadados fornecido pelos vários objetos do SDK do formato de mídia Windows é flexível e poderoso. Os principais recursos de metadados são resumidos na lista a seguir:
 
 -   Tamanho de atributo flexível. Os atributos de metadados não são limitados em tamanho.
 -   Atributos de nível de fluxo. Os metadados em arquivos ASF podem ser atribuídos ao arquivo como um todo ou a um fluxo específico.
@@ -37,12 +37,12 @@ Os tópicos a seguir abordam os outros recursos de metadados com suporte.
 
 | Tópico                                  | Descrição                                                                             |
 |----------------------------------------|-----------------------------------------------------------------------------------------|
-| [Suporte a ID3](id3.md)                 | Discute o suporte para quadros ID3 usando os objetos do Windows Media Format SDK. |
+| [Suporte a ID3](id3.md)                 | discute o suporte para quadros ID3 usando os objetos do SDK do formato de mídia Windows. |
 | [Metadados personalizados](custom-metadata.md) | Discute as implicações do uso de metadados personalizados.                                    |
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -63,9 +63,9 @@ Os tópicos a seguir abordam os outros recursos de metadados com suporte.
 [**Metadados**](metadata.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

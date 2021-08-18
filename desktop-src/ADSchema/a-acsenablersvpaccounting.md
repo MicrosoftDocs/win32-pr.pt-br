@@ -1,11 +1,11 @@
 ---
-title: Atributo ACS-Enable-RSVP-Accounting
-description: True se a contabilidade do RSVP estiver habilitada.
+title: ACS-Enable-RSVP-atributo de contabilidade
+description: True se a contabilidade de RSVP estiver habilitada.
 ms.assetid: 9899a695-e414-4e8d-8651-794efa457d67
 ms.tgt_platform: multiple
 keywords:
-- Esquema do AD do atributo ACS-Enable-RSVP-Accounting
-- aCSEnableRSVPAccounting attribute AD Schema
+- ACS-Enable-RSVP-contabilidade de atributo do AD
+- Esquema de AD do atributo aCSEnableRSVPAccounting
 topic_type:
 - apiref
 api_name:
@@ -21,22 +21,22 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118689621"
 ---
-# <a name="acs-enable-rsvp-accounting-attribute"></a>Atributo ACS-Enable-RSVP-Accounting
+# <a name="acs-enable-rsvp-accounting-attribute"></a>ACS-Enable-RSVP-atributo de contabilidade
 
-True se a contabilidade do RSVP estiver habilitada.
+True se a contabilidade de RSVP estiver habilitada.
 
 
 
 | Entrada | Valor |
 |-------------------|--------------------------------------|
 | CN                | ACS-Enable-RSVP-Accounting           |
-| Ldap-Display-Name | aCSEnableRSVPAccounting              |
+| LDAP-Display-Name | aCSEnableRSVPAccounting              |
 | Tamanho              | 4 bytes                              |
 | Privilégio de atualização  | \-                                   |
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.899               |
-| System-Id-Guid    | f072230e-aef5-11d1-bdcf-0000f80367c1 |
-| Sintaxe            | [**Boolean**](s-boolean.md)         |
+| System-ID-GUID    | f072230e-aef5-11d1-bdcf-0000f80367c1 |
+| Syntax            | [**Boolean**](s-boolean.md)         |
 
 
 
@@ -58,15 +58,15 @@ True se a contabilidade do RSVP estiver habilitada.
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| Tem valor único       | True                                         |
+| É de valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
-| No Catálogo Global      | Falso                                        |
-| Descritor de segurança NT | O:BAG:BAD:S:                                 |
+| No catálogo global      | Falso                                        |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classes usadas em        | [**Sub-rede do ACS**](c-acssubnet.md)<br/> |
+| Classes usadas em        | [**ACS-sub-rede**](c-acssubnet.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ True se a contabilidade do RSVP estiver habilitada.
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| Tem valor único       | True                                         |
+| É de valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
-| No Catálogo Global      | Falso                                        |
-| Descritor de segurança NT | O:BAG:BAD:S:                                 |
+| No catálogo global      | Falso                                        |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classes usadas em        | [**Sub-rede do ACS**](c-acssubnet.md)<br/> |
+| Classes usadas em        | [**ACS-sub-rede**](c-acssubnet.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ True se a contabilidade do RSVP estiver habilitada.
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| Tem valor único       | True                                         |
+| É de valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
-| No Catálogo Global      | Falso                                        |
-| Descritor de segurança NT | O:BAG:BAD:S:                                 |
+| No catálogo global      | Falso                                        |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classes usadas em        | [**Sub-rede do ACS**](c-acssubnet.md)<br/> |
+| Classes usadas em        | [**ACS-sub-rede**](c-acssubnet.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ True se a contabilidade do RSVP estiver habilitada.
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | True                                         |
+| Tem valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
-| No catálogo global      | Falso                                        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
+| No Catálogo Global      | Falso                                        |
+| Descritor de segurança NT | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classes usadas em        | [**ACS-sub-rede**](c-acssubnet.md)<br/> |
+| Classes usadas em        | [**Sub-rede do ACS**](c-acssubnet.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ True se a contabilidade do RSVP estiver habilitada.
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | True                                         |
+| Tem valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
-| No catálogo global      | Falso                                        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
+| No Catálogo Global      | Falso                                        |
+| Descritor de segurança NT | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classes usadas em        | [**ACS-sub-rede**](c-acssubnet.md)<br/> |
+| Classes usadas em        | [**Sub-rede do ACS**](c-acssubnet.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ True se a contabilidade do RSVP estiver habilitada.
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | True                                         |
+| Tem valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
-| No catálogo global      | Falso                                        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
+| No Catálogo Global      | Falso                                        |
+| Descritor de segurança NT | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classes usadas em        | [**ACS-sub-rede**](c-acssubnet.md)<br/> |
+| Classes usadas em        | [**Sub-rede do ACS**](c-acssubnet.md)<br/> |
 
 
 

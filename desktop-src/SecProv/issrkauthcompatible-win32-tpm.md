@@ -1,5 +1,5 @@
 ---
-description: O método IsSrkAuthCompatible da classe Win32 \_ TPM indica se a autorização da chave de raiz de armazenamento (SRK) é compatível com o valor esperado pelo Windows Vista.
+description: o método IsSrkAuthCompatible da classe Win32 \_ Tpm indica se a autorização de chave raiz do Armazenamento (SRK) é compatível com o valor esperado pelo Windows Vista.
 ms.assetid: ce6d05b8-673a-40ab-a1d7-3fedfd099306
 title: Método IsSrkAuthCompatible da classe Win32_Tpm
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Win32_tpm.dll
-ms.openlocfilehash: f5250f8d3f9ad38f9d4c46350e06e0fe32f756dc
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 435829389749d7f7e81552aa88dd00aa211fd74ae079c93c97b5baff3c7a3c4d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103829308"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118891847"
 ---
 # <a name="issrkauthcompatible-method-of-the-win32_tpm-class"></a>Método IsSrkAuthCompatible da classe Win32 \_ TPM
 
-O método **IsSrkAuthCompatible** da classe [**Win32 \_ TPM**](win32-tpm.md) indica se a autorização da chave de raiz de armazenamento (SRK) é compatível com o valor esperado pelo Windows Vista.
+o método **IsSrkAuthCompatible** da classe [**Win32 \_ Tpm**](win32-tpm.md) indica se a autorização de chave raiz do Armazenamento (SRK) é compatível com o valor esperado pelo Windows Vista.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -48,7 +48,7 @@ Se **for true**, o valor de autorização de SRK terá um valor igual a zero.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **UInt32**
 
@@ -68,7 +68,7 @@ Os códigos de retorno comuns são listados abaixo.
 
 ## <a name="remarks"></a>Comentários
 
-Os arquivos de formato MOF (MOF) contêm as definições de classes de Instrumentação de Gerenciamento do Windows (WMI). Os arquivos MOF não são instalados como parte do SDK do Windows. Eles são instalados no servidor quando você adiciona a função associada usando o Gerenciador do Servidor. Para obter mais informações sobre arquivos MOF, consulte [formato MOF (MOF)](../wmisdk/managed-object-format--mof-.md).
+os arquivos de formato MOF (MOF) contêm as definições de classes de Instrumentação de Gerenciamento do Windows (WMI). os arquivos MOF não são instalados como parte do SDK do Windows. Eles são instalados no servidor quando você adiciona a função associada usando o Gerenciador do Servidor. Para obter mais informações sobre arquivos MOF, consulte [formato MOF (MOF)](../wmisdk/managed-object-format--mof-.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -76,8 +76,8 @@ Os arquivos de formato MOF (MOF) contêm as definições de classes de Instrumen
 
 | Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                            |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                      |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                            |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                      |
 | Namespace<br/>                | \\MicrosoftTpm de \\ segurança \\ cimv2 raiz<br/>                                            |
 | MOF<br/>                      | <dl> <dt>\_TPM. mof do Win32</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>\_tpm.dllWin32</dt> </dl> |

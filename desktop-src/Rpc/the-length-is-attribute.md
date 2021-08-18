@@ -1,21 +1,21 @@
 ---
-title: O atributo length_is
-description: O atributo \ Size \_ is \ permite que você especifique o tamanho máximo da matriz.
+title: O length_is atributo
+description: O atributo \ size \_ is\ permite que você especifique o tamanho máximo da matriz.
 ms.assetid: 577a1efd-2d16-40d6-99bb-998d81ee2f8c
 keywords:
 - length_is
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9f49ad63b2546d39dcc00d251f39143b7eec354c
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 436559961d815adb417d83de5ffa8c06d8497fa0899644411d252c84d6e34ea0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103641722"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118924255"
 ---
-# <a name="the-length_is-attribute"></a>O \[ comprimento \_ é o \] atributo
+# <a name="the-length_is-attribute"></a>O \[ comprimento \_ é \] Attribute
 
-O \[ atributo [**Size \_ is**](/windows/desktop/Midl/size-is) \] permite que você especifique o tamanho máximo da matriz. Quando esse for o único atributo, todos os elementos da matriz serão transmitidos. Em vez de enviar todos os elementos da matriz, você pode especificar os elementos transmitidos usando o \[ [**comprimento \_ é**](/windows/desktop/Midl/length-is) o \] atributo, da seguinte maneira:
+O \[ [**atributo size \_ is**](/windows/desktop/Midl/size-is) \] permite que você especifique o tamanho máximo da matriz. Quando esse é o único atributo, todos os elementos da matriz são transmitidos. Em vez de enviar todos os elementos da matriz, você pode especificar os elementos transmitidos usando \[ [**o atributo \_ length,**](/windows/desktop/Midl/length-is) \] da seguinte forma:
 
 ``` syntax
 /* IDL file */
@@ -32,8 +32,8 @@ interface arraytest
 }
 ```
 
-Tamanho descreve a alocação enquanto o comprimento descreve a transmissão. O número de elementos transmitidos deve ser sempre menor ou igual ao número de elementos alocados. O valor associado ao **comprimento \_** é sempre menor ou igual ao **tamanho \_**.
+Tamanho descreve a alocação enquanto o comprimento descreve a transmissão. O número de elementos transmitidos sempre deve ser menor ou igual ao número de elementos alocados. O valor associado ao **comprimento \_ é sempre** menor ou igual ao tamanho **\_ é**.
 
- 
+ 
 
- 
+ 

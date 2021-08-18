@@ -1,5 +1,5 @@
 ---
-description: Especifica um SPC (certificado do fornecedor de software) e uma cadeia de certificados usados para assinar um documento.
+description: especifica um SPC (Software Publisher certificate) e uma cadeia de certificados usados para assinar um documento.
 ms.assetid: b65b4129-df92-410c-b372-b0c004f8bb03
 title: Estrutura de SIGNER_SPC_CHAIN_INFO
 ms.topic: reference
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 60279a60e6cdfbf43a1e2d9c45735b885d97a055
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ff646da815604082024f7a811f21e786abaece7b8e34944d9bd229c4624ed511
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104091621"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118898629"
 ---
 # <a name="signer_spc_chain_info-structure"></a>\_Estrutura de \_ informações da cadeia do SPC do signatário \_
 
-A estrutura de **\_ \_ \_ informações da cadeia SPC do signatário** especifica um certificado do fornecedor de [*software*](../secgloss/s-gly.md) (SPC) e uma cadeia de certificados usados para assinar um documento.
+a estrutura de **\_ \_ \_ informações da cadeia SPC do signatário** especifica um SPC ( [*Software Publisher Certificate*](../secgloss/s-gly.md) ) e uma cadeia de certificados usados para assinar um documento.
 
 > [!Note]  
 > Essa estrutura não está definida em nenhum arquivo de cabeçalho. Para usar essa estrutura, você deve defini-la por conta própria, conforme mostrado neste tópico.
@@ -92,8 +92,8 @@ Opcional. Um identificador para um repositório de certificados adicional.
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>          |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho XP\]<br/>          |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/> |
 
 
 

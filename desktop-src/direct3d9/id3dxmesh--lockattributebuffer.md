@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 901cb98a9d75d08b6412d6fdca841d403064354b
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 8ca767c6bc223c40d6013b93162de057aac9f4fb1b71303990f9128e4eca1ee6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105760487"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118802149"
 ---
 # <a name="id3dxmeshlockattributebuffer-method"></a>Método ID3DXMesh:: LockAttributeBuffer
 
@@ -41,7 +41,7 @@ HRESULT LockAttributeBuffer(
 
 <dl> <dt>
 
-*Flags* \[in\]
+*Sinalizadores* \[ de no\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
@@ -66,7 +66,7 @@ Endereço de um ponteiro para um buffer que contém um DWORD para cada face na m
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 

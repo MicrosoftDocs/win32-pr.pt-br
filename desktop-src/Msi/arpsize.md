@@ -1,5 +1,5 @@
 ---
-description: A propriedade ARPSIZE é o tamanho estimado do aplicativo em kilobytes.
+description: A propriedade ARPSIZE é o tamanho estimado do aplicativo em quilobytes.
 ms.assetid: f8327f5e-4b79-4707-8dd2-78dcfeaa0301
 title: Propriedade ARPSIZE
 ms.topic: reference
@@ -13,7 +13,7 @@ ms.locfileid: "118639400"
 ---
 # <a name="arpsize-property"></a>Propriedade ARPSIZE
 
-A propriedade **ARPSIZE** é o tamanho estimado do aplicativo em kilobytes.
+A **propriedade ARPSIZE** é o tamanho estimado do aplicativo em quilobytes.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -21,7 +21,7 @@ A propriedade **ARPSIZE** é o tamanho estimado do aplicativo em kilobytes.
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versão<br/> | Windows instalador 5,0 em Windows Server 2012, Windows 8, Windows Server 2008 R2 ou Windows 7. Windows Installer 4,0 ou Windows Installer 4,5 no Windows Server 2008 ou Windows Vista. Windows instalador no Windows Server 2003 ou Windows XP. consulte os [requisitos de Run-Time Windows Installer](windows-installer-portal.md) para obter informações sobre o service pack mínimo Windows exigido por uma versão Windows Installer.<br/> |
+| Versão<br/> | Windows Instalador 5.0 no Windows Server 2012, Windows 8, Windows Server 2008 R2 ou Windows 7. Windows Instalador 4.0 ou Windows Instalador 4.5 no Windows Server 2008 ou Windows Vista. Windows Instalador no Windows Server 2003 ou Windows XP. Consulte o [Windows instalador Run-Time para](windows-installer-portal.md) obter informações sobre o Windows service pack mínimo exigido por uma versão Windows Installer.<br/> |
 
 
 

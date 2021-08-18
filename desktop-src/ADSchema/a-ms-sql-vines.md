@@ -36,7 +36,7 @@ O ponto de conexão de Vines.
 | Frequência de atualização  | Na inicialização do sistema.                          |
 | Attribute-Id      | 1.2.840.113556.1.4.1379                     |
 | System-ID-GUID    | 94c56394-ccee-11d2-9993-0000f87a57d4        |
-| Sintaxe            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
 
 
 
@@ -58,7 +58,7 @@ O ponto de conexão de Vines.
 | ID do link                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| É de valor único       | True                                                      |
+| É de valor único       | Verdadeiro                                                      |
 | É indexado             | Falso                                                     |
 | No catálogo global      | Falso                                                     |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                              |
@@ -79,7 +79,7 @@ O ponto de conexão de Vines.
 | ID do link                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| É de valor único       | True                                                      |
+| É de valor único       | Verdadeiro                                                      |
 | É indexado             | Falso                                                     |
 | No catálogo global      | Falso                                                     |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                              |
@@ -100,7 +100,7 @@ O ponto de conexão de Vines.
 | ID do link                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| É de valor único       | True                                                      |
+| É de valor único       | Verdadeiro                                                      |
 | É indexado             | Falso                                                     |
 | No catálogo global      | Falso                                                     |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                              |
@@ -121,10 +121,10 @@ O ponto de conexão de Vines.
 | ID do link                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| Tem valor único       | True                                                      |
+| É de valor único       | Verdadeiro                                                      |
 | É indexado             | Falso                                                     |
-| No Catálogo Global      | Falso                                                     |
-| Descritor de segurança NT | O:BAG:BAD:S:                                              |
+| No catálogo global      | Falso                                                     |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
 | Search-Flags           | 0x00000000                                                |
@@ -142,10 +142,10 @@ O ponto de conexão de Vines.
 | ID do link                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| Tem valor único       | True                                                      |
+| É de valor único       | Verdadeiro                                                      |
 | É indexado             | Falso                                                     |
-| No Catálogo Global      | Falso                                                     |
-| Descritor de segurança NT | O:BAG:BAD:S:                                              |
+| No catálogo global      | Falso                                                     |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
 | Search-Flags           | 0x00000000                                                |
@@ -163,10 +163,10 @@ O ponto de conexão de Vines.
 | ID do link                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| Tem valor único       | True                                                      |
+| É de valor único       | Verdadeiro                                                      |
 | É indexado             | Falso                                                     |
-| No Catálogo Global      | Falso                                                     |
-| Descritor de segurança NT | O:BAG:BAD:S:                                              |
+| No catálogo global      | Falso                                                     |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
 | Search-Flags           | 0x00000000                                                |

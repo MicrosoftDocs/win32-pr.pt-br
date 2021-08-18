@@ -13,12 +13,12 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 258a885ddaf61b45df1cfff9f9c77ce37a233dd0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9a74f0716eed49a964002e7f6bb1fa8b513fa968eff32d9ed67fa26a1364bcfb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104967963"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118967955"
 ---
 # <a name="smc_shchangenotify-message"></a>Mensagem do SMC \_ SHCHANGENOTIFY
 
@@ -44,7 +44,7 @@ Um ponteiro para uma estrutura [**SMCSHCHANGENOTIFYSTRUCT**](/windows/win32/api/
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retornar S \_ OK.
 

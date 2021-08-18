@@ -1,9 +1,9 @@
 ---
 title: Player. stretchToFit
-description: A propriedade stretchToFit especifica ou recupera um valor que indica se o vídeo exibido pelo controle do Windows Media Player é dimensionado automaticamente para se ajustar à janela de vídeo, quando a janela de vídeo é maior do que as dimensões da imagem de vídeo.
+description: a propriedade stretchToFit especifica ou recupera um valor que indica se o vídeo exibido pelo controle de Windows Media Player é dimensionado automaticamente para se ajustar à janela de vídeo, quando a janela de vídeo é maior do que as dimensões da imagem de vídeo.
 ms.assetid: 9ea02959-602e-4bac-a8aa-dce502d1bb54
 keywords:
-- Player. stretchToFit Windows Media Player
+- Windows Media Player Player. stretchToFit
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fb7b68042cf2a5bd0e7f718d1e19641edecdf548
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 570d0b9bf7e266af769944b675a85c0ac1518c321d11038ff94cab035dfb316c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105797641"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118995836"
 ---
 # <a name="playerstretchtofit"></a>Player. stretchToFit
 
-A propriedade **stretchToFit** especifica ou recupera um valor que indica se o vídeo exibido pelo controle do Windows Media Player é dimensionado automaticamente para se ajustar à janela de vídeo, quando a janela de vídeo é maior do que as dimensões da imagem de vídeo.
+a propriedade **stretchToFit** especifica ou recupera um valor que indica se o vídeo exibido pelo controle de Windows Media Player é dimensionado automaticamente para se ajustar à janela de vídeo, quando a janela de vídeo é maior do que as dimensões da imagem de vídeo.
 
 ## <a name="syntax"></a>Syntax
 
@@ -46,9 +46,9 @@ Esta propriedade é um **booliano** de leitura/gravação.
 
 ## <a name="remarks"></a>Comentários
 
-Quando **stretchToFit** é definido como true, o controle do Windows Media Player mantém a taxa de proporção original do vídeo. Se a taxa de proporção do vídeo não corresponder à taxa de proporção da janela de vídeo, as áreas de máscara preta poderão aparecer na parte superior e inferior, ou à esquerda e à direita da imagem de vídeo.
+quando **stretchToFit** é definido como true, o controle de Windows Media Player mantém a taxa de proporção original do vídeo. Se a taxa de proporção do vídeo não corresponder à taxa de proporção da janela de vídeo, as áreas de máscara preta poderão aparecer na parte superior e inferior, ou à esquerda e à direita da imagem de vídeo.
 
-Essa propriedade se aplica ao controle do Windows Media Player somente quando inserida em uma página da Web.
+essa propriedade aplica-se ao controle de Windows Media Player somente quando inserido em uma página da web.
 
 **Windows Media Player 10 Mobile:** Não há suporte para essa propriedade.
 

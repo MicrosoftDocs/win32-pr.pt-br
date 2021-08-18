@@ -1,21 +1,21 @@
 ---
-title: Como preparar itens e imagens do ComboBoxEx
+title: Como preparar itens e imagens comboBoxEx
 description: Este tópico demonstra como adicionar itens a um controle ComboBoxEx.
 ms.assetid: 2603DFBE-9E7A-4B2F-BE33-418997D323B2
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1a7474b46e5227d91b1cc2b51462a43a0fb75d8b
-ms.sourcegitcommit: 5f33645661bf8c825a7a2e73950b1f4ea0f1cd82
+ms.openlocfilehash: e0ea0b6defc7e99bd98c3dac551346280f0650da9e58a948e77ccc98aec81cda
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "103824000"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118958695"
 ---
-# <a name="how-to-prepare-comboboxex-items-and-images"></a>Como preparar itens e imagens do ComboBoxEx
+# <a name="how-to-prepare-comboboxex-items-and-images"></a>Como preparar itens e imagens comboBoxEx
 
 Este tópico demonstra como adicionar itens a um controle ComboBoxEx.
 
-Para adicionar um item a um controle ComboBoxEx, primeiro defina uma estrutura [**COMBOBOXEXITEM**](/windows/win32/api/commctrl/ns-commctrl-comboboxexitema) . Em seguida, defina o membro **Mask** da estrutura para indicar quais membros você deseja que o controle use. Por fim, defina os membros especificados da estrutura para os valores desejados e envie a mensagem [**CBEM \_ INSERTITEM**](cbem-insertitem.md) para adicionar o item ao controle.
+Para adicionar um item a um controle ComboBoxEx, primeiro defina uma [**estrutura COMBOBOXEXITEM.**](/windows/win32/api/commctrl/ns-commctrl-comboboxexitema) Em seguida, de **definir o** membro de máscara da estrutura para indicar quais membros você deseja que o controle use. Por fim, de definir os membros especificados da estrutura para os valores desejados e enviar a mensagem [**CBEM \_ INSERTITEM**](cbem-insertitem.md) para adicionar o item ao controle.
 
 A função definida pelo aplicativo a seguir adiciona 15 itens a um controle ComboBoxEx existente.
 
@@ -23,18 +23,18 @@ A função definida pelo aplicativo a seguir adiciona 15 itens a um controle Com
 
 ### <a name="technologies"></a>Tecnologias
 
--   [Controles do Windows](window-controls.md)
+-   [Windows Controles](window-controls.md)
 
 ### <a name="prerequisites"></a>Pré-requisitos
 
 -   C/C++
--   Programação da interface do usuário do Windows
+-   Windows Interface do Usuário programação
 
 ## <a name="instructions"></a>Instruções
 
 ### <a name="step-1"></a>Etapa 1:
 
-Para adicionar um item a um controle ComboBoxEx, primeiro defina uma estrutura [**COMBOBOXEXITEM**](/windows/win32/api/commctrl/ns-commctrl-comboboxexitema) .
+Para adicionar um item a um controle ComboBoxEx, primeiro defina uma [**estrutura COMBOBOXEXITEM.**](/windows/win32/api/commctrl/ns-commctrl-comboboxexitema)
 
 
 ```C++
@@ -72,7 +72,7 @@ ITEMINFO IInf[ ] = {
 
 ### <a name="step-2"></a>Etapa 2:
 
-Defina o membro **Mask** da estrutura para indicar quais membros você deseja que o controle use. Observe que o membro **Mask** da estrutura [**COMBOBOXEXITEM**](/windows/win32/api/commctrl/ns-commctrl-comboboxexitema) inclui valores de sinalizador que dizem ao controle para exibir imagens para cada item.
+De definir **o membro** de máscara da estrutura para indicar quais membros você deseja que o controle use. Observe que o **membro de** máscara da estrutura [**COMBOBOXEXITEM**](/windows/win32/api/commctrl/ns-commctrl-comboboxexitema) inclui valores de sinalizador que informam ao controle para exibir imagens para cada item.
 
 
 ```C++
@@ -85,7 +85,7 @@ cbei.mask = CBEIF_TEXT | CBEIF_INDENT |
 
 ### <a name="step-3"></a>Etapa 3:
 
-Defina os membros especificados da estrutura com os valores desejados e, em seguida, envie a mensagem [**CBEM \_ INSERTITEM**](cbem-insertitem.md) para adicionar o item ao controle.
+Defina os membros especificados da estrutura para os valores que você deseja e, em seguida, envie a mensagem [**CBEM \_ INSERTITEM**](cbem-insertitem.md) para adicionar o item ao controle.
 
 
 ```C++
@@ -109,7 +109,7 @@ for(iCnt=0;iCnt<MAX_ITEMS;iCnt++){
 
 ### <a name="step-4"></a>Etapa 4:
 
-Atribua a lista de imagens existente ao controle ComboBoxEx e defina o tamanho do controle.
+Atribua a lista de imagens existente ao controle ComboBoxEx e de definido o tamanho do controle.
 
 
 ```C++
@@ -214,9 +214,9 @@ BOOL WINAPI AddItems(HWND hwndCB)
 [Usando controles ComboBoxEx](/windows/desktop/Controls/using-comboboxex)
 </dt> <dt>
 
-[ComboBoxEx](comboboxex-control-reference.md)
+[Comboboxex](comboboxex-control-reference.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

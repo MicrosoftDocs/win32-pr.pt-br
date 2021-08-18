@@ -4,33 +4,33 @@ ms.assetid: 451587bd-a7ab-446b-b647-be98de251915
 title: Interfaces de gerenciamento de segurança
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9b3a205757a3bf324a5308a5f6fbc3d63374b4af
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6adc6cbaa24be46508e2a4f72181c96d4ccb65e589fdad95808c65a57262b73b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105779345"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118894323"
 ---
 # <a name="security-management-interfaces"></a>Interfaces de gerenciamento de segurança
 
 Esta seção contém páginas de referência para os seguintes grupos de interfaces:
 
--   [Interfaces do mecanismo de anexo](#attachment-engine-interfaces)
+-   [Interfaces do Mecanismo de Anexo](#attachment-engine-interfaces)
 
-## <a name="attachment-engine-interfaces"></a>Interfaces do mecanismo de anexo
+## <a name="attachment-engine-interfaces"></a>Interfaces do Mecanismo de Anexo
 
 
 
 | Interface                                                            | Descrição                                                                                                                                                                                                                                                                                                                |
 |----------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**ISceSvcAttachmentData**](/windows/desktop/api/Scesvc/nn-scesvc-iscesvcattachmentdata)               | Recupera dados de configuração e análise sobre um serviço de segurança especificado dos snap-ins de configuração de segurança. Os snap-ins de configuração de segurança expõem essa interface, que são chamadas de extensões de snap-in de conexão para informações de análise ou configuração de consulta.                                                 |
-| [**ISceSvcAttachmentPersistInfo**](/windows/desktop/api/Scesvc/nn-scesvc-iscesvcattachmentpersistinfo) | Recupera informações modificadas de configuração ou análise de um snap-in de anexo. Os snap-ins de configuração de segurança chamam essa interface para recuperar qualquer informação modificada da extensão de snap-in de anexo. O snap-in de configuração de segurança, em seguida, armazena esses dados adequadamente no banco de dado de segurança. |
+| [**ISceSvcAttachmentData**](/windows/desktop/api/Scesvc/nn-scesvc-iscesvcattachmentdata)               | Recupera dados de configuração e análise sobre um serviço de segurança especificado dos snap-ins de Configuração de Segurança. Os snap-ins de Configuração de Segurança expõem essa interface, que as extensões de snap-in de anexo chamam para informações de configuração ou análise de consulta.                                                 |
+| [**ISceSvcAttachmentPersistInfo**](/windows/desktop/api/Scesvc/nn-scesvc-iscesvcattachmentpersistinfo) | Recupera informações de configuração ou análise modificadas de um snap-in de anexo. Os snap-ins de Configuração de Segurança chamam essa interface para recuperar todas as informações modificadas da extensão de snap-in de anexo. O snap-in Configuração de Segurança armazena esses dados adequadamente no banco de dados de segurança. |
 
 
 
  
 
-Para obter mais informações sobre as interfaces COM que devem ser implementadas por extensões de snap-in, consulte a documentação do [console de gerenciamento Microsoft](/previous-versions/windows/desktop/mmc/microsoft-management-console-start-page) .
+Para obter mais informações sobre as interfaces COM que devem ser implementadas por extensões de snap-in, consulte a [documentação Console de Gerenciamento Microsoft](/previous-versions/windows/desktop/mmc/microsoft-management-console-start-page) aplicativo.
 
  
 

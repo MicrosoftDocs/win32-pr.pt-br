@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cc29fdc6bc32273113c5daab2482465535dee145
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: c7c438269199f55533d2d379a2cd059dc421d80060f504ed18e0ff72ab37bd97
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105762790"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118961355"
 ---
 # <a name="generation-qualifier-attribute"></a>Generation-Qualifier atributo
 
@@ -58,7 +58,7 @@ Indica uma geração de pessoa. Por exemplo, Jr. ou II.
 | ID do link                | \-                                                                 |
 | MAPI-Id                | 0x8C53                                                             |
 | System-Only            | Falso                                                              |
-| É de valor único       | True                                                               |
+| É de valor único       | Verdadeiro                                                               |
 | É indexado             | Falso                                                              |
 | No catálogo global      | Falso                                                              |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                       |
@@ -79,7 +79,7 @@ Indica uma geração de pessoa. Por exemplo, Jr. ou II.
 | ID do link                | \-                                                                 |
 | MAPI-Id                | 0x8C53                                                             |
 | System-Only            | Falso                                                              |
-| É de valor único       | True                                                               |
+| É de valor único       | Verdadeiro                                                               |
 | É indexado             | Falso                                                              |
 | No catálogo global      | Falso                                                              |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                       |
@@ -100,7 +100,7 @@ Indica uma geração de pessoa. Por exemplo, Jr. ou II.
 | ID do link                | \-                                                                 |
 | MAPI-Id                | 0x8C53                                                             |
 | System-Only            | Falso                                                              |
-| É de valor único       | True                                                               |
+| É de valor único       | Verdadeiro                                                               |
 | É indexado             | Falso                                                              |
 | No catálogo global      | Falso                                                              |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                       |
@@ -121,7 +121,7 @@ Indica uma geração de pessoa. Por exemplo, Jr. ou II.
 | ID do link                | \-                                                                 |
 | MAPI-Id                | 0x8C53                                                             |
 | System-Only            | Falso                                                              |
-| É de valor único       | True                                                               |
+| É de valor único       | Verdadeiro                                                               |
 | É indexado             | Falso                                                              |
 | No catálogo global      | Falso                                                              |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                       |
@@ -142,7 +142,7 @@ Indica uma geração de pessoa. Por exemplo, Jr. ou II.
 | ID do link                | \-                                                                 |
 | MAPI-Id                | 0x8C53                                                             |
 | System-Only            | Falso                                                              |
-| É de valor único       | True                                                               |
+| É de valor único       | Verdadeiro                                                               |
 | É indexado             | Falso                                                              |
 | No catálogo global      | Falso                                                              |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                       |
@@ -163,7 +163,7 @@ Indica uma geração de pessoa. Por exemplo, Jr. ou II.
 | ID do link                | \-                                                                 |
 | MAPI-Id                | 0x8C53                                                             |
 | System-Only            | Falso                                                              |
-| É de valor único       | True                                                               |
+| É de valor único       | Verdadeiro                                                               |
 | É indexado             | Falso                                                              |
 | No catálogo global      | Falso                                                              |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                       |

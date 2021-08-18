@@ -1,14 +1,14 @@
 ---
-description: Especifica se o SA (Alocador de Exemplo) do MFT deve alocar a Textura Direct3D subjacente usando o sinalizador D3D11_RESOURCE_MISC_SHARED_DISPLAYABLE dados.
+description: Especifica se o SA (Alocador de Exemplo) do MFT deve alocar a Textura Direct3D subjacente usando o sinalizador D3D11_RESOURCE_MISC_SHARED_DISPLAYABLE.
 title: MF_SA_D3D11_ALLOCATE_DISPLAYABLE_RESOURCES (Mftransform.h)
 ms.topic: reference
 ms.date: 03/31/2018
-ms.openlocfilehash: fedcfbe98344dd9b424c1a8ce90e847e98f1af51
-ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
+ms.openlocfilehash: b039eff2c46281dcad4754d73f05ecd982f7fe3e75ed1aa9c8b576fe573f921c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110548701"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119102596"
 ---
 # <a name="mf_sa_d3d_allocate_displayable_resources-attribute"></a>Atributo MF \_ SA \_ D3D \_ ALLOCATE \_ \_ DISPLAYABLE RESOURCES
 
@@ -20,7 +20,7 @@ Especifica se o SA (Alocador de Exemplo) do MFT deve alocar a Textura Direct3D s
 
 ## <a name="remarks"></a>Comentários
 
-Esse atributo está disponível com Windows 10 build 20348. 
+Esse atributo está disponível com o Windows 10 build 20348. 
 
 > [!NOTE]
 > O **D3D11_RESOURCE_MISC_SHARED_DISPLAYABLE** de membro da [enumeração D3D11_RESOURCE_MISC_FLAG](/windows/win32/api/d3d11/ne-d3d11-d3d11_resource_misc_flag) estará disponível em uma versão futura do SDK.

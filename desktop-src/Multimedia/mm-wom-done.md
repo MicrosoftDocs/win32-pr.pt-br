@@ -3,7 +3,7 @@ title: Mensagem de MM_WOM_DONE (mmsystem. h)
 description: A \_ mensagem mm wom \_ concluído é enviada para uma janela quando o buffer de saída fornecido está sendo retornado para o aplicativo. Os buffers são retornados para o aplicativo quando eles são reproduzidos ou como resultado de uma chamada para a função waveOutReset.
 ms.assetid: bbdebb68-82e5-4963-90bb-f93f8a91a8cf
 keywords:
-- Multimídia do Windows de mensagem MM_WOM_DONE
+- mensagem de MM_WOM_DONE Windows multimídia
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7198aa2f60a7f5a0e6d839a3ee5b453a3a4d3f59
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 225ba32f780831ab8b40f487a312a940219abc2e976be75a4e903648344afc89
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103645253"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119065456"
 ---
 # <a name="mm_wom_done-message"></a>MM \_ wom de \_ mensagens concluídas
 

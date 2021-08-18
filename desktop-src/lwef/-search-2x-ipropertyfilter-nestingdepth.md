@@ -1,11 +1,11 @@
 ---
-title: Propriedade IPropertyFilter NestingDepth (WdsSharedIDL. h)
-description: Profundidade de filtros em um conjunto aninhado de parênteses.
+title: Propriedade IPropertyFilter NestingDepth (WdsSharedIDL.h)
+description: Filtra a profundidade em um conjunto aninhado de parênteses.
 ms.assetid: a52992b3-d232-46a5-907c-8df6bd5ad6fc
 keywords:
-- Recursos do ambiente Windows herdado da propriedade NestingDepth
-- Propriedade NestingDepth recursos de ambiente do Windows herdados, interface IPropertyFilter
-- Recursos do ambiente Windows herdado da interface IPropertyFilter, Propriedade NestingDepth
+- Propriedade NestingDepth Herdada Windows Recursos de Ambiente
+- Propriedade NestingDepth Herdada Windows Recursos de Ambiente, interface IPropertyFilter
+- Interface IPropertyFilter Herdada Windows recursos de ambiente, propriedade NestingDepth
 topic_type:
 - apiref
 api_name:
@@ -18,21 +18,21 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2a2bda4e12bb68b501fa42003ac145113dade3ff
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 2499d7a3d5505f4cb428cbc8831ec0ea4e0a71843693f5a8ba1250995071df32
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104369589"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118481204"
 ---
-# <a name="ipropertyfilternestingdepth-property"></a>Propriedade IPropertyFilter:: NestingDepth
+# <a name="ipropertyfilternestingdepth-property"></a>Propriedade IPropertyFilter::NestingDepth
 
 > [!NOTE]
-> O Windows Desktop Search 2. x é uma tecnologia obsoleta que originalmente estava disponível como um suplemento para o Windows XP e o Windows Server 2003. Em versões posteriores, use a [API de pesquisa do Windows](../search/-search-reference-entry-page.md) em vez disso. 
+> Windows A Pesquisa de Área de Trabalho 2.x é uma tecnologia obsoleta que estava originalmente disponível como um complemento para Windows XP e Windows Server 2003. Em versões posteriores, use a [API Windows Search.](../search/-search-reference-entry-page.md) 
 
-Profundidade de filtros em um conjunto aninhado de parênteses.
+Filtra a profundidade em um conjunto aninhado de parênteses.
 
-Esta propriedade é de leitura/gravação.
+Essa propriedade é leitura/gravação.
 
 ## <a name="syntax"></a>Syntax
 
@@ -51,7 +51,7 @@ HRESULT get_NestingDepth(
 
 ## <a name="property-value"></a>Valor da propriedade
 
-Define o número que indica a profundidade de parênteses aninhados.
+Define o número que indica a profundidade dos parênteses aninhados.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -59,10 +59,10 @@ Define o número que indica a profundidade de parênteses aninhados.
 
 | Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows XP com SP2\]<br/>                                      |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003 com SP1\]<br/>                             |
-| Redistribuível<br/>          | Windows Desktop Search (WDS) 2.6.5<br/>                                             |
-| parâmetro<br/>                   | <dl> <dt>WdsSharedIDL. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows XP somente com \[ aplicativos da área de trabalho SP2\]<br/>                                      |
+| Servidor mínimo com suporte<br/> | Windows Servidor 2003 somente com aplicativos da área de trabalho SP1 \[\]<br/>                             |
+| Redistribuível<br/>          | Windows Pesquisa de Área de Trabalho (WDS) 2.6.5<br/>                                             |
+| Cabeçalho<br/>                   | <dl> <dt>WdsSharedIDL.h</dt> </dl> |
 
 
 

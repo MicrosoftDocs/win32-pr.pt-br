@@ -4,22 +4,22 @@ description: Requisitos de sensor para biometria segura
 ms.assetid: 6D5709E9-7B6B-4D6C-BF85-C6FB5DF5A7EE
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 82f4e41f8300a124115c2b6cd380f904f216f491
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: ba76ee3b114f79d3c60adfa252f59cd2b8f98aa135e50faf93cf5ecf7314ad99
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "105810523"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118911788"
 ---
 # <a name="sensor-requirements-for-secure-biometrics"></a>Requisitos de sensor para biometria segura
 
 A Microsoft aproveita Trusted Platform Module (TPM) 2,0 para garantir que, no hardware apropriado, o software (até e incluindo o malware no nível do kernel) não possa produzir uma autenticação biométrica válida se a biométrica do usuário não tiver sido fornecida no momento da autenticação.
 
-Para fazer isso, usamos autorizações baseadas em sessão do TPM 2,0 e o sensor que executa a extração de recursos e a correspondência em um ambiente de execução confiável. Na primeira vez que o Windows Biometric Framework vê um sensor seguro (conforme relatado pelo recurso de sensor seguro), ele provisiona um segredo que é compartilhado entre o sensor biométrico seguro e o TPM. Esse segredo nunca é novamente exposto ao sistema operacional e é exclusivo para cada sensor.
+Para fazer isso, usamos autorizações baseadas em sessão do TPM 2,0 e o sensor que executa a extração de recursos e a correspondência em um ambiente de execução confiável. na primeira vez que o Windows Biometric Framework vê um sensor seguro (conforme relatado pelo recurso de sensor seguro), ele provisiona um segredo que é compartilhado entre o sensor biométrico seguro e o TPM. Esse segredo nunca é novamente exposto ao sistema operacional e é exclusivo para cada sensor.
 
-Para executar uma autenticação, a Windows Biometric Framework abre uma sessão com o TPM e Obtém um nonce. O nonce é passado para o sensor seguro como parte de uma operação de correspondência segura. O sensor executa a correspondência no ambiente de execução confiável e, se for bem-sucedido, calcula um HMAC sobre esse nonce e a identidade do usuário que foi identificado.
+para executar uma autenticação, a Windows Biometric Framework abre uma sessão com o TPM e obtém um nonce. O nonce é passado para o sensor seguro como parte de uma operação de correspondência segura. O sensor executa a correspondência no ambiente de execução confiável e, se for bem-sucedido, calcula um HMAC sobre esse nonce e a identidade do usuário que foi identificado.
 
-Esse HMAC pode ser usado pelo Windows Biometric Framework para executar operações criptográficas no TPM para o usuário que foi identificado. O HMAC é de curta duração e expira após alguns segundos.
+esse HMAC pode ser usado pelo Windows Biometric Framework para executar operações criptográficas no TPM para o usuário que foi identificado. O HMAC é de curta duração e expira após alguns segundos.
 
 Usando esse protocolo, após o provisionamento inicial, não há dados confidenciais contidos no sistema operacional. Os segredos são mantidos pelo TPM e pelo sensor seguro, e a única coisa exposta durante a autenticação é o HMAC de curta duração.
 
@@ -279,6 +279,6 @@ typedef struct _WINBIO_ENGINE_INTERFACE {
 
 Windows 10
 
- 
+ 
 
- 
+ 

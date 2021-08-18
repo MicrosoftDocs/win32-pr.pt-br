@@ -4,12 +4,12 @@ ms.assetid: 18693b2d-6b0f-4f9c-b3cf-e50c36e2f2e1
 title: Funções de lista de Disk-Space
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f520cc7a3ddcd0b12b27bd11768a95231a8ed4b3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7e20e6f656110cc3b8c2ebd607f28b5d701ce3007b4ce8812f7e3bcad2f7f5b4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104296952"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118887362"
 ---
 # <a name="disk-space-list-functions"></a>Funções de lista de Disk-Space
 

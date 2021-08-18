@@ -1,10 +1,10 @@
 ---
-title: atributo meetingIP
-description: O endereço TCP/IP da reunião.
+title: Atributo meetingIP
+description: O endereço TCP/IP para a reunião.
 ms.assetid: ed18a170-aca9-4721-af36-77c120eadde1
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD do atributo meetingIP
+- Esquema do AD do atributo meetingIP
 topic_type:
 - apiref
 api_name:
@@ -20,22 +20,22 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118687796"
 ---
-# <a name="meetingip-attribute"></a>atributo meetingIP
+# <a name="meetingip-attribute"></a>Atributo meetingIP
 
-O endereço TCP/IP da reunião.
+O endereço TCP/IP para a reunião.
 
 
 
 | Entrada | Valor |
 |-------------------|----------------------------------------------------------------------------------|
 | CN                | meetingIP                                                                        |
-| LDAP-Display-Name | meetingIP                                                                        |
+| Ldap-Display-Name | meetingIP                                                                        |
 | Tamanho              | \-                                                                               |
 | Privilégio de atualização  | Qualquer pessoa pode atualizar esse objeto com base na segurança do objeto que está sendo criado. |
 | Frequência de atualização  | \-                                                                               |
 | Attribute-Id      | 1.2.840.113556.1.4.580                                                           |
-| System-ID-GUID    | 11b6cc89-48c4-11d1-a9c3-0000f80367c1                                             |
-| Sintaxe            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md)                                      |
+| System-Id-Guid    | 11b6cc89-48c4-11d1-a9c3-0000f80367c1                                             |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md)                                      |
 
 
 
@@ -57,10 +57,10 @@ O endereço TCP/IP da reunião.
 | ID do link                | \-                                      |
 | MAPI-Id                | \-                                      |
 | System-Only            | Falso                                   |
-| É de valor único       | True                                    |
+| Tem valor único       | Verdadeiro                                    |
 | É indexado             | Falso                                   |
-| No catálogo global      | Falso                                   |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                            |
+| No Catálogo Global      | Falso                                   |
+| Descritor de segurança NT | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |
@@ -78,10 +78,10 @@ O endereço TCP/IP da reunião.
 | ID do link                | \-                                      |
 | MAPI-Id                | \-                                      |
 | System-Only            | Falso                                   |
-| É de valor único       | True                                    |
+| Tem valor único       | Verdadeiro                                    |
 | É indexado             | Falso                                   |
-| No catálogo global      | Falso                                   |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                            |
+| No Catálogo Global      | Falso                                   |
+| Descritor de segurança NT | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |
@@ -99,10 +99,10 @@ O endereço TCP/IP da reunião.
 | ID do link                | \-                                      |
 | MAPI-Id                | \-                                      |
 | System-Only            | Falso                                   |
-| É de valor único       | True                                    |
+| Tem valor único       | Verdadeiro                                    |
 | É indexado             | Falso                                   |
-| No catálogo global      | Falso                                   |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                            |
+| No Catálogo Global      | Falso                                   |
+| Descritor de segurança NT | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |
@@ -120,10 +120,10 @@ O endereço TCP/IP da reunião.
 | ID do link                | \-                                      |
 | MAPI-Id                | \-                                      |
 | System-Only            | Falso                                   |
-| Tem valor único       | True                                    |
+| É de valor único       | Verdadeiro                                    |
 | É indexado             | Falso                                   |
-| No Catálogo Global      | Falso                                   |
-| Descritor de segurança NT | O:BAG:BAD:S:                            |
+| No catálogo global      | Falso                                   |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |
@@ -141,10 +141,10 @@ O endereço TCP/IP da reunião.
 | ID do link                | \-                                      |
 | MAPI-Id                | \-                                      |
 | System-Only            | Falso                                   |
-| Tem valor único       | True                                    |
+| É de valor único       | Verdadeiro                                    |
 | É indexado             | Falso                                   |
-| No Catálogo Global      | Falso                                   |
-| Descritor de segurança NT | O:BAG:BAD:S:                            |
+| No catálogo global      | Falso                                   |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |
@@ -162,10 +162,10 @@ O endereço TCP/IP da reunião.
 | ID do link                | \-                                      |
 | MAPI-Id                | \-                                      |
 | System-Only            | Falso                                   |
-| Tem valor único       | True                                    |
+| É de valor único       | Verdadeiro                                    |
 | É indexado             | Falso                                   |
-| No Catálogo Global      | Falso                                   |
-| Descritor de segurança NT | O:BAG:BAD:S:                            |
+| No catálogo global      | Falso                                   |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |

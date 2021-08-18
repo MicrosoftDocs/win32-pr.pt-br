@@ -1,11 +1,11 @@
 ---
-title: ACS-atributo total-n-de-fluxos
+title: Atributo ACS-Total-No-Of-Flows
 description: O número total de fluxos que um determinado usuário pode ter.
 ms.assetid: cfbb4bc3-8233-47aa-8b67-88454d44e359
 ms.tgt_platform: multiple
 keywords:
-- ACS-esquema de AD do atributo de total de fluxos
-- Esquema de AD do atributo aCSTotalNoOfFlows
+- Esquema do AD do atributo ACS-Total-No-Of-Flows
+- Esquema do AD do atributo aCSTotalNoOfFlows
 topic_type:
 - apiref
 api_name:
@@ -21,7 +21,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118689182"
 ---
-# <a name="acs-total-no-of-flows-attribute"></a>ACS-atributo total-n-de-fluxos
+# <a name="acs-total-no-of-flows-attribute"></a>Atributo ACS-Total-No-Of-Flows
 
 O número total de fluxos que um determinado usuário pode ter.
 
@@ -29,14 +29,14 @@ O número total de fluxos que um determinado usuário pode ter.
 
 | Entrada | Valor |
 |-------------------|--------------------------------------|
-| CN                | ACS-total-sem fluxos                |
-| LDAP-Display-Name | aCSTotalNoOfFlows                    |
+| CN                | ACS-Total-No-Of-Flows                |
+| Ldap-Display-Name | aCSTotalNoOfFlows                    |
 | Tamanho              | 4 bytes                              |
 | Privilégio de atualização  | \-                                   |
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.763               |
-| System-ID-GUID    | 7f561280-5301-11d1-a9c5-0000f80367c1 |
-| Sintaxe            | [**Enumeração**](s-enumeration.md) |
+| System-Id-Guid    | 7f561280-5301-11d1-a9c5-0000f80367c1 |
+| Syntax            | [**Enumeração**](s-enumeration.md) |
 
 
 
@@ -58,15 +58,15 @@ O número total de fluxos que um determinado usuário pode ter.
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | True                                         |
+| Tem valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
-| No catálogo global      | Falso                                        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
+| No Catálogo Global      | Falso                                        |
+| Descritor de segurança NT | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classes usadas em        | [**ACS-política**](c-acspolicy.md)<br/> |
+| Classes usadas em        | [**ACS-Policy**](c-acspolicy.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ O número total de fluxos que um determinado usuário pode ter.
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | True                                         |
+| Tem valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
-| No catálogo global      | Falso                                        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
+| No Catálogo Global      | Falso                                        |
+| Descritor de segurança NT | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classes usadas em        | [**ACS-política**](c-acspolicy.md)<br/> |
+| Classes usadas em        | [**ACS-Policy**](c-acspolicy.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ O número total de fluxos que um determinado usuário pode ter.
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | True                                         |
+| Tem valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
-| No catálogo global      | Falso                                        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
+| No Catálogo Global      | Falso                                        |
+| Descritor de segurança NT | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classes usadas em        | [**ACS-política**](c-acspolicy.md)<br/> |
+| Classes usadas em        | [**ACS-Policy**](c-acspolicy.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ O número total de fluxos que um determinado usuário pode ter.
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | True                                         |
+| Tem valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
-| No catálogo global      | Falso                                        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
+| No Catálogo Global      | Falso                                        |
+| Descritor de segurança NT | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classes usadas em        | [**ACS-política**](c-acspolicy.md)<br/> |
+| Classes usadas em        | [**ACS-Policy**](c-acspolicy.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ O número total de fluxos que um determinado usuário pode ter.
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | True                                         |
+| Tem valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
-| No catálogo global      | Falso                                        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
+| No Catálogo Global      | Falso                                        |
+| Descritor de segurança NT | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classes usadas em        | [**ACS-política**](c-acspolicy.md)<br/> |
+| Classes usadas em        | [**ACS-Policy**](c-acspolicy.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ O número total de fluxos que um determinado usuário pode ter.
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | True                                         |
+| Tem valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
-| No catálogo global      | Falso                                        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
+| No Catálogo Global      | Falso                                        |
+| Descritor de segurança NT | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classes usadas em        | [**ACS-política**](c-acspolicy.md)<br/> |
+| Classes usadas em        | [**ACS-Policy**](c-acspolicy.md)<br/> |
 
 
 

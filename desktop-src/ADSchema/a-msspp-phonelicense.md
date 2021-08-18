@@ -1,11 +1,11 @@
 ---
-title: MS-SPP-Phone-atributo de licença
-description: Licença usada durante a ativação online da floresta de Active Directory | MS-SPP-Phone-atributo de licença
+title: Atributo ms-SPP-Telefone-License
+description: Licença usada durante a ativação online da floresta do Active Directory | Atributo ms-SPP-Telefone-License
 ms.assetid: 15ba6bde-8c22-4e87-8428-04c88633e9e6
 ms.tgt_platform: multiple
 keywords:
-- MS-SPP-Phone-License atributo AD Schema
-- Esquema de AD do atributo msSPP-PhoneLicense
+- Esquema do AD do atributo ms-SPP-Telefone-License
+- Esquema do AD do atributo msSPP-PhoneLicense
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 65d4d2887f88ae33684e7d4a3abb11e33db19d13
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 1543557771938e166c070ce6de525c71ce7a3ab15b67012b456b676b5a6e8b05
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105750967"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118960285"
 ---
-# <a name="ms-spp-phone-license-attribute"></a>MS-SPP-Phone-atributo de licença
+# <a name="ms-spp-phone-license-attribute"></a>Atributo ms-SPP-Telefone-License
 
-Licença usada durante a ativação online da floresta de Active Directory
+Licença usada durante a ativação online da floresta do Active Directory
 
 
 
 | Entrada | Valor |
 |-------------------|-------------------------------------------------------|
-| CN                | MS-SPP-telefone-licença                                  |
-| LDAP-Display-Name | msSPP-PhoneLicense                                    |
+| CN                | ms-SPP-Telefone-License                                  |
+| Ldap-Display-Name | msSPP-PhoneLicense                                    |
 | Tamanho              | \-                                                    |
 | Privilégio de atualização  | \-                                                    |
 | Frequência de atualização  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.2086                               |
-| System-ID-GUID    | 67e4d912-f362-4052-8c79-42f45ba7b221                  |
-| Syntax            | [**Objeto (link de réplica)**](s-object-replica-link.md) |
+| System-Id-Guid    | 67e4d912-f362-4052-8c79-42f45ba7b221                  |
+| Syntax            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
 
@@ -53,15 +53,15 @@ Licença usada durante a ativação online da floresta de Active Directory
 | ID do link                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| É de valor único       | True                                                                    |
+| Tem valor único       | Verdadeiro                                                                    |
 | É indexado             | Falso                                                                   |
-| No catálogo global      | Falso                                                                   |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                            |
+| No Catálogo Global      | Falso                                                                   |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Classes usadas em        | [**MS-SPP-Activation-Object**](c-msspp-activationobject.md)<br/> |
+| Classes usadas em        | [**ms-SPP-Activation-Object**](c-msspp-activationobject.md)<br/> |
 
 
 

@@ -1,17 +1,17 @@
 ---
 description: Este tópico ajuda você a começar a criar aplicativos preparados para o mundo, especificando pré-requisitos, resumindo tecnologias e apresentando um tutorial de introdução.
 ms.assetid: 80c10bc2-b7e3-4f24-8bac-826149a376c7
-title: Introdução com desenvolvimento internacional do Windows
+title: Introdução com o desenvolvimento de Windows internacional
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 36cc77a86b652f1b713b29517b513cddc26ed801
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c346f03717b5f50c27911891daaea8aa4ed55ce199e7ca807690d2f3185d8114
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105759663"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118949425"
 ---
-# <a name="getting-started-with-international-windows-development"></a>Introdução com desenvolvimento internacional do Windows
+# <a name="getting-started-with-international-windows-development"></a>Introdução com o desenvolvimento de Windows internacional
 
 Este tópico ajuda você a começar a criar aplicativos preparados para o mundo, especificando pré-requisitos, resumindo tecnologias e apresentando um tutorial de introdução.
 
@@ -34,14 +34,14 @@ Além disso, esteja atento aos artigos mais extensivos que podem ser encontrados
 
 ## <a name="learning-paths"></a>Roteiros de aprendizagem
 
-O caminho a seguir no aprendizado para criar software internacional depende dos cenários que você enfrenta. Os cenários a seguir se baseiam naqueles introduzidos no tópico principal da seção, [internacionalização para aplicativos do Windows](international-support.md).
+O caminho a seguir no aprendizado para criar software internacional depende dos cenários que você enfrenta. os cenários a seguir se baseiam naqueles introduzidos no tópico principal da seção, [internacionalização para aplicativos Windows](international-support.md).
 
 -   **Crie aplicativos que podem ser implantados em várias regiões em vários idiomas.**
 
     O desafio é desenvolver um aplicativo que não precise ser reescrito para cada idioma ou cultura.
 
-    -   Leia o artigo [noções básicas sobre o MUI (Multilingual User interface)](./about-multilingual-user-interface.md).
-    -   Explore a documentação da [interface do usuário multilíngue](multilingual-user-interface.md).
+    -   leia o artigo [noções básicas sobre Interface de Usuário Multilíngue (MUI)](./about-multilingual-user-interface.md).
+    -   Explore a documentação do [Interface de Usuário Multilíngue](multilingual-user-interface.md).
     -   Introdução ao aplicativo [Hello MUI](#the-hello-mui-application) .
 
 -   **Suporte à entrada e exibição de idiomas, conjuntos de caracteres e fontes diferentes.**
@@ -70,7 +70,7 @@ O caminho a seguir no aprendizado para criar software internacional depende dos 
 
     Se seu aplicativo puder determinar o idioma no qual o texto e a entrada do usuário são gravados, ele poderá exibir o conteúdo, como prompts ou ajuda em uma linguagem compreensível.
 
-    -   Leia o artigo [escrevendo aplicativos preparados para o mundo no Windows: serviços lingüísticos estendidos no Windows](./using-extended-linguistic-services.md).
+    -   leia o artigo [escrevendo aplicativos preparados para o mundo em Windows: serviços lingüísticos estendidos na Windows](./using-extended-linguistic-services.md).
     -   Explore a documentação de [Els (serviços lingüísticos estendidos)](extended-linguistic-services.md).
 
 ## <a name="internationalization-technologies-in-the-sdk"></a>Tecnologias de internacionalização no SDK
@@ -79,7 +79,7 @@ A seção de suporte ao desenvolvimento internacional do SDK fornece tecnologias
 
 Os [Serviços lingüísticos estendidos](extended-linguistic-services.md) oferecem tecnologia patenteada pela Microsoft para a identificação de idiomas e scripts em texto. Seu aplicativo pode determinar os serviços disponíveis com base na categoria, bem como no tipo de conteúdo, script e linguagem de entrada e saída.
 
-As [fontes internacionais e a exibição de texto](international-fonts-and-text-display.md) fornecem informações sobre fontes internacionais, glifos e scripts complexos e o processamento correto da tipografia na plataforma Windows.
+as [fontes internacionais e a exibição de texto](international-fonts-and-text-display.md) fornecem informações sobre fontes internacionais, glifos e scripts complexos e o processamento correto da tipografia na plataforma Windows.
 
 O [IMM (Input Method Manager)](input-method-manager.md) é uma tecnologia que ajuda o aplicativo a receber entradas do software IME (Input Method Editor), que, por sua vez, permite a entrada de caracteres e símbolos, como o japonês kanji, para outros idiomas usando um teclado padrão.
 
@@ -87,11 +87,11 @@ O [IMM (Input Method Manager)](input-method-manager.md) é uma tecnologia que aj
 
 Uma tarefa comum no desenvolvimento internacional começa com um aplicativo multilíngue que você deve tornar preparado para o mundo. Você precisa adicionar suporte para idiomas adicionais, mas de uma maneira que não exija que você reescreva o código para cada nova linguagem ou cultura.
 
-Esta tarefa fornece a oportunidade de apresentar um tutorial que o conduz passo a passo por meio da criação de um aplicativo de Hello MUI, usando o modelo de recurso [MUI (Multilingual User interface)](multilingual-user-interface.md) e o suporte associado fornecido no Windows.
+esta tarefa oferece a oportunidade de apresentar um tutorial que o conduz passo a passo por meio da criação de um aplicativo de Hello mui, usando o modelo de recurso de [Interface de Usuário Multilíngue (MUI)](multilingual-user-interface.md) e o suporte associado fornecido no Windows.
 
 O tutorial adota o conceito do aplicativo Olá, Mundo familiar, demonstrando o uso do MUI para criar um aplicativo básico multilíngüe.
 
-Você pode começar o tutorial de Hello MUI ao [Adicionar suporte à interface do usuário multilíngüe a um aplicativo](creating-a-multilingual-user-interface-application.md).
+você pode iniciar o tutorial Hello MUI em [adicionando Interface de Usuário Multilíngue suporte a um aplicativo](creating-a-multilingual-user-interface-application.md).
 
  
 

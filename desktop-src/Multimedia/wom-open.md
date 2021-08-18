@@ -3,7 +3,7 @@ title: Mensagem de WOM_OPEN (mmsystem. h)
 description: A \_ mensagem de abertura wom é enviada para uma função de retorno de chamada de saída de áudio de forma de onda quando um dispositivo de saída de wave-áudio é aberto.
 ms.assetid: 7fa175d3-7c07-4ca0-a0bd-4526fbc24f8d
 keywords:
-- Multimídia do Windows de mensagem WOM_OPEN
+- mensagem de WOM_OPEN Windows multimídia
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3cfca721019b28a5bf039e8c56c75892d85bd5e1
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 77d0e145bf533bf9b48b88a87d449679e7728b679e72ed70a787168b5936f5aa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104085141"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118940653"
 ---
 # <a name="wom_open-message"></a>WOM \_ Abrir mensagem
 

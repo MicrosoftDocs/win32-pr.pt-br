@@ -15,12 +15,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: b152e5889ad83440a48e178be0b89a97d2a9f664
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 3e459324d96f031ab3433f0d8bfe8ba5de562d76c95f51affd7b72d130655fab
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "103640745"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118735482"
 ---
 # <a name="imediarendererfactorycreatemediarendererasync-method"></a>Método IMediaRendererFactory:: CreateMediaRendererAsync
 
@@ -56,7 +56,7 @@ Recebe uma referência a um objeto [**CreateMediaRendererOperation**](createmedi
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
 

@@ -4,12 +4,12 @@ ms.assetid: db0d899e-dbd4-40d3-98d8-4d9668c01453
 title: Registrando DLLs SSP/AP
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6d279459b91633e0ef45e6e6d57b43489699a657
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a6405dc5ddce32ad5e4d87ed44f9344240b491fdc0ea789c30d5475ac6e73aaf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103662130"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118919496"
 ---
 # <a name="registering-sspap-dlls"></a>Registrando DLLs SSP/AP
 
@@ -17,7 +17,7 @@ Depois de desenvolver uma biblioteca de vínculo dinâmico do pacote de autentic
 
 **HKEY \_ Sistema de \_ máquina local** \\  \\ **CurrentControlSet** \\ **controlar** \\ pacotes de \\ **segurança** LSA
 
-Os dados para esse valor de registro são uma lista dos nomes de DLLs SSP/PA, sem a extensão ". dll". O tipo de dados dessa lista é **reg \_ multi \_ sz** , portanto deve haver um caractere nulo (' \\ 0 ') entre cada nome de dll na lista.
+Os dados para esse valor de registro são uma lista dos nomes de DLLs SSP/PA, sem a extensão ".dll". O tipo de dados dessa lista é **reg \_ multi \_ sz** , portanto deve haver um caractere nulo (' \\ 0 ') entre cada nome de dll na lista.
 
 Normalmente, as DLLs do SSP/AP são armazenadas no diretório% SystemRoot%/system32 Se esse for o caminho para sua DLL de SSP/PA personalizada, não inclua o caminho como parte do nome da DLL. Se, no entanto, a DLL estiver em um caminho diferente, inclua o caminho completo para a DLL no nome.
 

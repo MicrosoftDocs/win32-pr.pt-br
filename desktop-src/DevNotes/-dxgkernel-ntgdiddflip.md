@@ -16,12 +16,12 @@ api_location:
 - Ext-MS-Win-GDI-Internal-Desktop-L1-1-0.dll
 - GDI32.dll
 - GDI32Full.dll
-ms.openlocfilehash: 1fd2d6f84f602fd07cc29a0efeae28209cb970a5
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 18113c841c22b31c9768d42491a63ead8cafee3c3b598bc46f442068592e67b9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103826378"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118956485"
 ---
 # <a name="ntgdiddflip-function"></a>Função NtGdiDdFlip
 
@@ -83,7 +83,7 @@ Ponteiro para uma [estrutura \_ FLIPDATA do DD](https://msdn.microsoft.com/libra
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 **NtGdiDdFlip** retorna um dos seguintes códigos de retorno de chamada.
 

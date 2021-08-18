@@ -1,11 +1,11 @@
 ---
-title: Atributo ms-DS-Principal-Name
+title: atributo ms-DS-principal-Name
 description: Nome da conta para a entidade de segurança (construída).
 ms.assetid: f7e0fa7a-8b5f-48e1-bcb9-a4c6879a8297
 ms.tgt_platform: multiple
 keywords:
-- Atributo ms-DS-Principal-Name Esquema do AD
-- Esquema do AD do atributo msDS-PrincipalName
+- atributo do AD de atributos MS-DS-principal-Name
+- atributo msDS-PrincipalName do AD Schema
 topic_type:
 - apiref
 api_name:
@@ -21,7 +21,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118683362"
 ---
-# <a name="ms-ds-principal-name-attribute"></a>Atributo ms-DS-Principal-Name
+# <a name="ms-ds-principal-name-attribute"></a>atributo ms-DS-principal-Name
 
 Nome da conta para a entidade de segurança (construída).
 
@@ -29,25 +29,25 @@ Nome da conta para a entidade de segurança (construída).
 
 | Entrada | Valor |
 |-------------------|---------------------------------------------|
-| CN                | ms-DS-Principal-Name                        |
-| Ldap-Display-Name | msDS-PrincipalName                          |
+| CN                | ms-DS-principal-Name                        |
+| LDAP-Display-Name | msDS-PrincipalName                          |
 | Tamanho              | \-                                          |
 | Privilégio de atualização  | \-                                          |
 | Frequência de atualização  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.1865                     |
-| System-Id-Guid    | 564e9325-d057-c143-9e3b-4f9e5ef46f93        |
-| Sintaxe            | [**String(Unicode)**](s-string-unicode.md) |
+| System-ID-GUID    | 564e9325-d057-c143-9e3b-4f9e5ef46f93        |
+| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
 
 
 
 ## <a name="implementations"></a>Implementações
 
--   [**Adam**](#adam)
+-   [**ADAM**](#adam)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
 -   [**Windows Server 2012**](#windows-server-2012)
 
-## <a name="adam"></a>Adam
+## <a name="adam"></a>ADAM
 
 
 
@@ -56,15 +56,15 @@ Nome da conta para a entidade de segurança (construída).
 | ID do link                | \-                                                      |
 | MAPI-Id                | \-                                                      |
 | System-Only            | Falso                                                   |
-| Tem valor único       | True                                                    |
+| É de valor único       | Verdadeiro                                                    |
 | É indexado             | Falso                                                   |
-| No Catálogo Global      | Falso                                                   |
-| Descritor de segurança NT | O:BAG:BAD:S:                                            |
+| No catálogo global      | Falso                                                   |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                            |
 | Range-Lower            | \-                                                      |
 | Range-Upper            | \-                                                      |
 | Search-Flags           | 0x00000000                                              |
 | System-Flags           | 0x00000014                                              |
-| Classes usadas em        | [**ms-DS-Bind-Proxy**](c-msds-bindproxy.md)<br/> |
+| Classes usadas em        | [**ms-DS-BIND-proxy**](c-msds-bindproxy.md)<br/> |
 
 
 
@@ -77,10 +77,10 @@ Nome da conta para a entidade de segurança (construída).
 | ID do link                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Falso                           |
-| Tem valor único       | True                            |
+| É de valor único       | Verdadeiro                            |
 | É indexado             | Falso                           |
-| No Catálogo Global      | Falso                           |
-| Descritor de segurança NT | O:BAG:BAD:S:                    |
+| No catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -98,10 +98,10 @@ Nome da conta para a entidade de segurança (construída).
 | ID do link                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Falso                           |
-| Tem valor único       | True                            |
+| É de valor único       | Verdadeiro                            |
 | É indexado             | Falso                           |
-| No Catálogo Global      | Falso                           |
-| Descritor de segurança NT | O:BAG:BAD:S:                    |
+| No catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -119,7 +119,7 @@ Nome da conta para a entidade de segurança (construída).
 | ID do link                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Falso                           |
-| É de valor único       | True                            |
+| É de valor único       | Verdadeiro                            |
 | É indexado             | Falso                           |
 | No catálogo global      | Falso                           |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |

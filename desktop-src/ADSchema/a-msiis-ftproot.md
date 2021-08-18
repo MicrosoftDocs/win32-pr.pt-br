@@ -1,11 +1,11 @@
 ---
-title: atributo ms-IIS-FTP-root
-description: Esse atributo determina o compartilhamento do servidor de arquivos. Ele é usado em conjunto com MS-IIS-FTP-dir para determinar o diretório base do usuário de FTP.
+title: Atributo ms-IIS-FTP-Root
+description: Esse atributo determina o compartilhamento do servidor de arquivos. Ele é usado em conjunto com ms-IIS-FTP-Dir para determinar o diretório home do usuário FTP.
 ms.assetid: b86dcafb-0b0d-4225-924c-690f739092a8
 ms.tgt_platform: multiple
 keywords:
-- Esquema do AD do MS-IIS-FTP-root
-- Esquema de AD do atributo msIIS-FTPRoot
+- Esquema do AD do atributo ms-IIS-FTP-Root
+- Esquema do AD do atributo msIIS-FTPRoot
 topic_type:
 - apiref
 api_name:
@@ -21,22 +21,22 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118682520"
 ---
-# <a name="ms-iis-ftp-root-attribute"></a>atributo ms-IIS-FTP-root
+# <a name="ms-iis-ftp-root-attribute"></a>Atributo ms-IIS-FTP-Root
 
-Esse atributo determina o compartilhamento do servidor de arquivos. Ele é usado em conjunto com MS-IIS-FTP-dir para determinar o diretório base do usuário de FTP.
+Esse atributo determina o compartilhamento do servidor de arquivos. Ele é usado em conjunto com ms-IIS-FTP-Dir para determinar o diretório home do usuário FTP.
 
 
 
 | Entrada | Valor |
 |-------------------|---------------------------------------------------------------------------------------------------------------------------------|
-| CN                | MS-IIS-FTP-root                                                                                                                 |
-| LDAP-Display-Name | msIIS-FTPRoot                                                                                                                   |
-| Tamanho              | 30-50 caracteres (15-25 caracteres Unicode para cada propriedade)                                                                   |
+| CN                | ms-IIS-FTP-Root                                                                                                                 |
+| Ldap-Display-Name | msIIS-FTPRoot                                                                                                                   |
+| Tamanho              | 30 a 50 caracteres (15 a 25 caracteres Unicode para cada propriedade)                                                                   |
 | Privilégio de atualização  | Administrador de domínio & sistema local                                                                                             |
-| Frequência de atualização  | Essa propriedade é definida quando o administrador cria o site e define o isolamento de FTP. Ele raramente será alterado depois disso. |
+| Frequência de atualização  | Essa propriedade é definida quando o administrador cria o site e define o isolamento de FTP. Ele raramente mudará depois disso. |
 | Attribute-Id      | 1.2.840.113556.1.4.1785                                                                                                         |
-| System-ID-GUID    | 2a7827a4-1483-49a5-9d84-52e3812156b4                                                                                            |
-| Sintaxe            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md)                                                                                     |
+| System-Id-Guid    | 2a7827a4-1483-49a5-9d84-52e3812156b4                                                                                            |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md)                                                                                     |
 
 
 
@@ -57,10 +57,10 @@ Esse atributo determina o compartilhamento do servidor de arquivos. Ele é usado
 | ID do link                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| É de valor único       | True                              |
+| Tem valor único       | Verdadeiro                              |
 | É indexado             | Falso                             |
-| No catálogo global      | Falso                             |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |
+| No Catálogo Global      | Falso                             |
+| Descritor de segurança NT | O:BAG:BAD:S:                      |
 | Range-Lower            | 1                                 |
 | Range-Upper            | 256                               |
 | Search-Flags           | 0x00000000                        |
@@ -78,10 +78,10 @@ Esse atributo determina o compartilhamento do servidor de arquivos. Ele é usado
 | ID do link                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| É de valor único       | True                              |
+| Tem valor único       | Verdadeiro                              |
 | É indexado             | Falso                             |
-| No catálogo global      | Falso                             |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |
+| No Catálogo Global      | Falso                             |
+| Descritor de segurança NT | O:BAG:BAD:S:                      |
 | Range-Lower            | 1                                 |
 | Range-Upper            | 256                               |
 | Search-Flags           | 0x00000000                        |
@@ -99,10 +99,10 @@ Esse atributo determina o compartilhamento do servidor de arquivos. Ele é usado
 | ID do link                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| É de valor único       | True                              |
+| Tem valor único       | Verdadeiro                              |
 | É indexado             | Falso                             |
-| No catálogo global      | Falso                             |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |
+| No Catálogo Global      | Falso                             |
+| Descritor de segurança NT | O:BAG:BAD:S:                      |
 | Range-Lower            | 1                                 |
 | Range-Upper            | 256                               |
 | Search-Flags           | 0x00000000                        |
@@ -120,7 +120,7 @@ Esse atributo determina o compartilhamento do servidor de arquivos. Ele é usado
 | ID do link                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| É de valor único       | True                              |
+| É de valor único       | Verdadeiro                              |
 | É indexado             | Falso                             |
 | No catálogo global      | Falso                             |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |
@@ -141,7 +141,7 @@ Esse atributo determina o compartilhamento do servidor de arquivos. Ele é usado
 | ID do link                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| É de valor único       | True                              |
+| É de valor único       | Verdadeiro                              |
 | É indexado             | Falso                             |
 | No catálogo global      | Falso                             |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |

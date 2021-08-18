@@ -1,9 +1,9 @@
 ---
-title: /o switch
-description: A opção /o redireciona a saída, como mensagens de erro e avisos, da saída padrão para o arquivo especificado.
+title: opção/o
+description: A opção/o redireciona a saída, como mensagens de erro e avisos, da saída padrão para o arquivo especificado.
 ms.assetid: 68398a38-bda6-499a-a4ee-6e90937eccd0
 keywords:
-- /o alternar MIDL
+- /o mudar MIDL
 topic_type:
 - apiref
 api_name:
@@ -19,22 +19,22 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118643898"
 ---
-# <a name="o-switch"></a>/o switch
+# <a name="o-switch"></a>opção/o
 
-A **opção /o** redireciona a saída, como mensagens de erro e avisos, da saída padrão para o arquivo especificado.
+A opção **/o** redireciona a saída, como mensagens de erro e avisos, da saída padrão para o arquivo especificado.
 
 ``` syntax
 midl /o outputfile
 ```
 
-## <a name="switch-options"></a>Opções de opção
+## <a name="switch-options"></a>Opções de comutação
 
 <dl> <dt>
 
-*Outputfile* 
+*OutputFile* 
 </dt> <dd>
 
-Especifica o nome do arquivo para o qual o compilador MIDL redireciona a saída, como mensagens de erro e avisos.
+Especifica o nome do arquivo para o qual o compilador MIDL redirecionará a saída, como mensagens de erro e avisos.
 
 </dd> </dl>
 
@@ -42,7 +42,7 @@ Especifica o nome do arquivo para o qual o compilador MIDL redireciona a saída,
 
 <dl> <dt>
 
-[Sintaxe geral da linha de comando MIDL](general-midl-command-line-syntax.md)
+[Sintaxe de linha de comando MIDL geral](general-midl-command-line-syntax.md)
 </dt> </dl>
 
  

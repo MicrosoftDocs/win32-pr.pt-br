@@ -1,19 +1,19 @@
 ---
-description: 'Cryptography API: próxima geração (CNG) define as funções a seguir que são usadas para executar operações de armazenamento de chaves CNG.'
+description: 'API de Criptografia: CNG (Próxima Geração) define as seguintes funções que são usadas para executar operações de armazenamento de chaves CNG.'
 ms.assetid: b0fb174b-75d7-4203-88ab-8469fa85f208
-title: Funções de armazenamento de chaves CNG
+title: Funções de Armazenamento CNG
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8c40a56fdff27b78d733421ad33a4c88289156cb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a006807dce61ef5bb9e64f74b27c4513c8baa1386a3d8945d72fd809c37ba112
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103646672"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118908257"
 ---
-# <a name="cng-key-storage-functions"></a>Funções de armazenamento de chaves CNG
+# <a name="cng-key-storage-functions"></a>Funções de Armazenamento CNG
 
-Cryptography API: próxima geração (CNG) define as funções a seguir que são usadas para executar operações de armazenamento de chaves CNG.
+API de Criptografia: CNG (Próxima Geração) define as seguintes funções que são usadas para executar operações de armazenamento de chaves CNG.
 
 -   [**NCryptCreatePersistedKey**](/windows/desktop/api/Ncrypt/nf-ncrypt-ncryptcreatepersistedkey)
 -   [**NCryptDecrypt**](/windows/desktop/api/Ncrypt/nf-ncrypt-ncryptdecrypt)

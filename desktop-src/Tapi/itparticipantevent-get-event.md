@@ -4,16 +4,16 @@ ms.assetid: 6b5e6358-2ba6-48b5-8d55-bc896fbb9962
 title: 'Método ITParticipantEvent:: get_Event (Confpriv. h)'
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9b6cbfcf709b1f9f3f49047504bf5d9e8c02b159
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2d45e8f6aab556eb1b6f5c6dc1b4b0cbadf9653e06fd77f4fb806b7ef89d7813
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105779308"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118864697"
 ---
 # <a name="itparticipanteventget_event-method"></a>Método de evento ITParticipantEvent:: get \_
 
-\[**obter \_ O evento** não está disponível para uso no Windows Vista, no Windows Server 2008 e em versões subsequentes do sistema operacional. A API do cliente RTC fornece funcionalidade semelhante.\]
+\[**obter \_ o evento** não está disponível para uso no Windows Vista, no Windows Server 2008 e em versões subsequentes do sistema operacional. A API do cliente RTC fornece funcionalidade semelhante.\]
 
 O método **Get \_ Event** Obtém um descritor de [**\_ evento participante**](participant-event.md) do tipo de evento que ocorreu.
 
@@ -39,7 +39,7 @@ Ponteiro para um descritor de [**\_ evento de participante**](participant-event.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método pode retornar um desses valores.
 
@@ -62,7 +62,7 @@ Esse método pode retornar um desses valores.
 | Requisito | Valor |
 |-------------------------|---------------------------------------------------------------------------------------|
 | Versão da TAPI<br/> | Requer TAPI 3,0 ou posterior<br/>                                                 |
-| parâmetro<br/>       | <dl> <dt>Confpriv. h</dt> </dl> |
+| Cabeçalho<br/>       | <dl> <dt>Confpriv. h</dt> </dl> |
 | Biblioteca<br/>      | <dl> <dt>UUID. lib</dt> </dl>   |
 | DLL<br/>          | <dl> <dt>Tapi3.dll</dt> </dl>  |
 

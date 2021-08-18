@@ -3,15 +3,15 @@ title: Limitações
 description: Limitações
 ms.assetid: 5f41620d-dde0-4e82-92f0-ada9d4acf127
 keywords:
-- OpenGL no Windows, limitações
+- OpenGL em Windows, limitações
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 478a139326f74c236ca0109fddbbc3d4ffb46e1a
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: d058570c049f471dcf6e92c4eb55eb1365948d581127c68a46deb8d863ccc34d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103635643"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118937413"
 ---
 # <a name="limitations"></a>Limitações
 
@@ -27,11 +27,11 @@ A implementação genérica tem as seguintes limitações:
 
 -   Não há paletas de cores de hardware por janela.
 
-    O Windows tem uma paleta de cores de hardware de sistema único, que se aplica à tela inteira. Uma janela OpenGL não pode ter sua própria paleta de hardware, mas pode ter sua própria paleta lógica. Para fazer isso, ele deve se tornar um aplicativo com reconhecimento de paleta. Para obter mais informações, consulte [OpenGL Color Modes e Windows Palette Management](opengl-color-modes-and-windows-palette-management.md).
+    Windows tem uma paleta de cores de hardware de sistema único, que se aplica à tela inteira. Uma janela OpenGL não pode ter sua própria paleta de hardware, mas pode ter sua própria paleta lógica. Para fazer isso, ele deve se tornar um aplicativo com reconhecimento de paleta. para obter mais informações, consulte [modos de cor OpenGL e gerenciamento de paleta de Windows](opengl-color-modes-and-windows-palette-management.md).
 
 -   Não há suporte direto para a área de transferência, DDE (Dynamic Data Exchange) ou OLE.
 
-    Uma janela com gráficos OpenGL não dá suporte diretamente a esses recursos do Windows. No entanto, há soluções alternativas para o uso da área de transferência. Para obter mais informações, consulte [copiando uma imagem OpenGL para a área de transferência](copying-an-opengl-image-to-the-clipboard.md).
+    uma janela com gráficos OpenGL não dá suporte diretamente a esses recursos de Windows. No entanto, há soluções alternativas para o uso da área de transferência. Para obter mais informações, consulte [copiando uma imagem OpenGL para a área de transferência](copying-an-opengl-image-to-the-clipboard.md).
 
 -   A biblioteca de classes C++ do inventário 2,0 não está incluída.
 
@@ -41,9 +41,9 @@ A implementação genérica tem as seguintes limitações:
 
     Há, no entanto, suporte para vários buffers auxiliares, incluindo: buffer de estêncil, buffer de acumulação, buffer de fundo (buffer duplo), sobreposição e buffer de plano underlay e buffer de profundidade (eixo z).
 
- 
+ 
 
- 
+ 
 
 
 

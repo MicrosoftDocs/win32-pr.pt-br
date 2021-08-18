@@ -4,16 +4,16 @@ ms.assetid: 254A1C0D-B24B-4014-8D15-662FC7F2AB81
 title: Use a marca meta para garantir a compatibilidade futura
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6a69180470c60dffc772f20fe6c515ba3803cbf2
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 9c0cff3dab146d67303d57c97b2298614c5ae0142b18a3bd2d141fbf90e86ce8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108084164"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118994586"
 ---
 # <a name="use-the-meta-tag-to-ensure-future-compatibility"></a>Use a marca meta para garantir a compatibilidade futura
 
-O Windows Internet Explorer 8 permite que você controle modos de compatibilidade de documentos, para que você possa instruir o navegador a renderizar páginas da Web da mesma forma que as versões mais antigas do navegador. Você também pode escolher quando atualizar a página da Web, enquanto ela continua a ser usada e funciona corretamente.
+Windows O Internet Explorer 8 permite controlar modos de compatibilidade de documentos, para que você possa instruir o navegador a renderizar páginas da Web da mesma forma que as versões mais antigas do navegador. Você também pode escolher quando atualizar a página da Web, enquanto ela continua a ser usada e funciona corretamente.
 
 ## <a name="setting-the-meta-element"></a>Configurando o elemento meta
 
@@ -23,16 +23,16 @@ O **meta** Element inclui um atributo **Content** que permite que você especifi
 
 | Valor | Modo de renderização                                                 |
 |-------|----------------------------------------------------------------|
-| IE = 9  | Usar o modo de renderização de padrões do Windows Internet Explorer 9   |
+| IE = 9  | usar o Windows modo de renderização de padrões do Internet Explorer 9   |
 | IE = 8  | Usar o modo de renderização de padrões do Internet Explorer 8           |
-| IE = 7  | Usar o modo de renderização de padrões do Windows Internet Explorer 7   |
+| IE = 7  | usar o modo de renderização de padrões do Windows Internet Explorer 7   |
 | IE=5  | Usar o modo de renderização de padrões do Microsoft Internet Explorer 5 |
 
 
 
  
 
-Para obter mais informações sobre compatibilidade e o cabeçalho de X-UA-Compatible, consulte [definindo a compatibilidade de documentos](/previous-versions/windows/internet-explorer/ie-developer/compatibility/cc288325(v=vs.85)) na biblioteca MSDN.
+para obter mais informações sobre compatibilidade e o cabeçalho de X-UA-Compatible, consulte [definindo a compatibilidade de documentos](/previous-versions/windows/internet-explorer/ie-developer/compatibility/cc288325(v=vs.85)) no Biblioteca MSDN.
 
 O exemplo de código a seguir demonstra como forçar uma página da Web a ser renderizada no modo do Internet Explorer 8.
 

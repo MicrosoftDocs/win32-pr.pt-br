@@ -4,8 +4,8 @@ description: Uma gramática para codificar as propriedades da tabela de exibiç�
 ms.assetid: 809981da-8572-4a9f-a4c3-06cff95c8bdc
 ms.tgt_platform: multiple
 keywords:
-- Esquema de Address-Syntax do atributo AD
-- Esquema de AD do atributo addressSyntax
+- Address-Syntax atributo AD Schema
+- esquema do AD do atributo addressSyntax
 topic_type:
 - apiref
 api_name:
@@ -30,13 +30,13 @@ Uma gramática para codificar as propriedades da tabela de exibição como uma c
 | Entrada | Valor |
 |-------------------|-------------------------------------------------------|
 | CN                | Address-Syntax                                        |
-| LDAP-Display-Name | addressSyntax                                         |
+| Ldap-Display-Name | addressSyntax                                         |
 | Tamanho              | \-                                                    |
 | Privilégio de atualização  | \-                                                    |
 | Frequência de atualização  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.2.255                                |
-| System-ID-GUID    | 5fd42463-1262-11d0-a060-00aa006c33ed                  |
-| Sintaxe            | [**Objeto (link de réplica)**](s-object-replica-link.md) |
+| System-Id-Guid    | 5fd42463-1262-11d0-a060-00aa006c33ed                  |
+| Syntax            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
 
@@ -58,15 +58,15 @@ Uma gramática para codificar as propriedades da tabela de exibição como uma c
 | ID do link                | \-                                                       |
 | MAPI-Id                | 0x8018                                                   |
 | System-Only            | Falso                                                    |
-| É de valor único       | True                                                     |
+| Tem valor único       | Verdadeiro                                                     |
 | É indexado             | Falso                                                    |
-| No catálogo global      | Falso                                                    |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                             |
+| No Catálogo Global      | Falso                                                    |
+| Descritor de segurança NT | O:BAG:BAD:S:                                             |
 | Range-Lower            | 1                                                        |
 | Range-Upper            | 4096                                                     |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Classes usadas em        | [**Endereço-modelo**](c-addresstemplate.md)<br/> |
+| Classes usadas em        | [**Modelo de endereço**](c-addresstemplate.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Uma gramática para codificar as propriedades da tabela de exibição como uma c
 | ID do link                | \-                                                       |
 | MAPI-Id                | 0x8018                                                   |
 | System-Only            | Falso                                                    |
-| É de valor único       | True                                                     |
+| Tem valor único       | Verdadeiro                                                     |
 | É indexado             | Falso                                                    |
-| No catálogo global      | Falso                                                    |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                             |
+| No Catálogo Global      | Falso                                                    |
+| Descritor de segurança NT | O:BAG:BAD:S:                                             |
 | Range-Lower            | 1                                                        |
 | Range-Upper            | 4096                                                     |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Classes usadas em        | [**Endereço-modelo**](c-addresstemplate.md)<br/> |
+| Classes usadas em        | [**Modelo de endereço**](c-addresstemplate.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Uma gramática para codificar as propriedades da tabela de exibição como uma c
 | ID do link                | \-                                                       |
 | MAPI-Id                | 0x8018                                                   |
 | System-Only            | Falso                                                    |
-| É de valor único       | True                                                     |
+| Tem valor único       | Verdadeiro                                                     |
 | É indexado             | Falso                                                    |
-| No catálogo global      | Falso                                                    |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                             |
+| No Catálogo Global      | Falso                                                    |
+| Descritor de segurança NT | O:BAG:BAD:S:                                             |
 | Range-Lower            | 1                                                        |
 | Range-Upper            | 4096                                                     |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Classes usadas em        | [**Endereço-modelo**](c-addresstemplate.md)<br/> |
+| Classes usadas em        | [**Modelo de endereço**](c-addresstemplate.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Uma gramática para codificar as propriedades da tabela de exibição como uma c
 | ID do link                | \-                                                       |
 | MAPI-Id                | 0x8018                                                   |
 | System-Only            | Falso                                                    |
-| É de valor único       | True                                                     |
+| Tem valor único       | Verdadeiro                                                     |
 | É indexado             | Falso                                                    |
-| No catálogo global      | Falso                                                    |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                             |
+| No Catálogo Global      | Falso                                                    |
+| Descritor de segurança NT | O:BAG:BAD:S:                                             |
 | Range-Lower            | 1                                                        |
 | Range-Upper            | 4096                                                     |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Classes usadas em        | [**Endereço-modelo**](c-addresstemplate.md)<br/> |
+| Classes usadas em        | [**Modelo de endereço**](c-addresstemplate.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Uma gramática para codificar as propriedades da tabela de exibição como uma c
 | ID do link                | \-                                                       |
 | MAPI-Id                | 0x8018                                                   |
 | System-Only            | Falso                                                    |
-| É de valor único       | True                                                     |
+| Tem valor único       | Verdadeiro                                                     |
 | É indexado             | Falso                                                    |
-| No catálogo global      | Falso                                                    |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                             |
+| No Catálogo Global      | Falso                                                    |
+| Descritor de segurança NT | O:BAG:BAD:S:                                             |
 | Range-Lower            | 1                                                        |
 | Range-Upper            | 4096                                                     |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Classes usadas em        | [**Endereço-modelo**](c-addresstemplate.md)<br/> |
+| Classes usadas em        | [**Modelo de endereço**](c-addresstemplate.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Uma gramática para codificar as propriedades da tabela de exibição como uma c
 | ID do link                | \-                                                       |
 | MAPI-Id                | 0x8018                                                   |
 | System-Only            | Falso                                                    |
-| É de valor único       | True                                                     |
+| Tem valor único       | Verdadeiro                                                     |
 | É indexado             | Falso                                                    |
-| No catálogo global      | Falso                                                    |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                             |
+| No Catálogo Global      | Falso                                                    |
+| Descritor de segurança NT | O:BAG:BAD:S:                                             |
 | Range-Lower            | 1                                                        |
 | Range-Upper            | 4096                                                     |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Classes usadas em        | [**Endereço-modelo**](c-addresstemplate.md)<br/> |
+| Classes usadas em        | [**Modelo de endereço**](c-addresstemplate.md)<br/> |
 
 
 

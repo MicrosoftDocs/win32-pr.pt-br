@@ -1,10 +1,10 @@
 ---
-title: Enumeração de WINBIO_ANTI_SPOOF_POLICY_ACTION (WinBio \_ Types. h)
-description: Especifica os tipos de ações que você assume para a política de antifalsificação de um usuário.
+title: WINBIO_ANTI_SPOOF_POLICY_ACTION enumeração (Tipos \_ Winbio.h)
+description: Especifica os tipos de ações que você toma para a política antispoofing de um usuário.
 ms.assetid: 846C0725-1796-49E4-883C-44AC7D618317
 keywords:
-- API de Windows Biometric Framework de enumeração de WINBIO_ANTI_SPOOF_POLICY_ACTION
-- PWINBIO_ANTI_SPOOF_POLICY Windows Biometric Framework API do ponteiro de enumeração
+- WINBIO_ANTI_SPOOF_POLICY_ACTION enumeração Windows API do Biometric Framework
+- PWINBIO_ANTI_SPOOF_POLICY de enumeração Windows API do Biometric Framework
 topic_type:
 - apiref
 api_name:
@@ -15,18 +15,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5905624bad252475cdde12c003f31a734e64dd2e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f65fec198a0784bf076eb90224318bd36a88ba3ed96258ffd2014a27da5c8f8d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918672"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118911265"
 ---
-# <a name="winbio_anti_spoof_policy_action-enumeration"></a>\_Enumeração de \_ ação de política de antifalsificação WINBIO \_ \_
+# <a name="winbio_anti_spoof_policy_action-enumeration"></a>Enumeração WINBIO \_ ANTI \_ SPOOF \_ POLICY \_ ACTION
 
-Especifica os tipos de ações que você assume para a política de antifalsificação de um usuário.
+Especifica os tipos de ações que você toma para a política antispoofing de um usuário.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 
 ```C++
@@ -43,24 +43,24 @@ typedef enum _WINBIO_ANTI_SPOOF_POLICY_ACTION {
 
 <dl> <dt>
 
-<span id="WINBIO_ANTI_SPOOF_DISABLE"></span><span id="winbio_anti_spoof_disable"></span>**\_ \_ desabilitar antifalsificação do WINBIO \_**
+<span id="WINBIO_ANTI_SPOOF_DISABLE"></span><span id="winbio_anti_spoof_disable"></span>**WINBIO \_ ANTI \_ SPOOF \_ DISABLE**
 </dt> <dd>
 
-Desativa a detecção de falsificação para um fator biométrico.
+Desliga a detecção de fraudes para um fator biométrico.
 
 </dd> <dt>
 
-<span id="WINBIO_ANTI_SPOOF_ENABLE"></span><span id="winbio_anti_spoof_enable"></span>**\_ \_ habilitar antifalsificação do WINBIO \_**
+<span id="WINBIO_ANTI_SPOOF_ENABLE"></span><span id="winbio_anti_spoof_enable"></span>**WINBIO \_ ANTI \_ SPOOF \_ ENABLE**
 </dt> <dd>
 
-Ativa a detecção de falsificação para um fator biométrico.
+Liga a detecção de fraudes para um fator biométrico.
 
 </dd> <dt>
 
-<span id="WINBIO_ANTI_SPOOF_REMOVE"></span><span id="winbio_anti_spoof_remove"></span>**\_remoção de \_ antifalsificação do WINBIO \_**
+<span id="WINBIO_ANTI_SPOOF_REMOVE"></span><span id="winbio_anti_spoof_remove"></span>**WINBIO \_ ANTI \_ SPOOF \_ REMOVE**
 </dt> <dd>
 
-Remove toda a política antifalsificação para o fator biométrico da conta.
+Remove toda a política antispoofing do fator biométrico da conta.
 
 </dd> </dl>
 
@@ -70,9 +70,9 @@ Remove toda a política antifalsificação para o fator biométrico da conta.
 
 | Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10\]<br/>                                                                                                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2016\]<br/>                                                                                                                     |
-| parâmetro<br/>                   | <dl> <dt>WinBio \_ Types. h (inclui WinBio. h para aplicativos cliente ou WinBio \_ Adapters. h para adaptadores)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[Windows 10 somente aplicativos da área de trabalho\]<br/>                                                                                                                              |
+| Servidor mínimo com suporte<br/> | \[Windows Server 2016 somente aplicativos da área de trabalho\]<br/>                                                                                                                     |
+| parâmetro<br/>                   | <dl> <dt>Winbio \_ types.h (inclua Winbio.h para aplicativos cliente ou \_ adaptadores Winbio.h para adaptadores)</dt> </dl> |
 
 
 
@@ -80,10 +80,10 @@ Remove toda a política antifalsificação para o fator biométrico da conta.
 
 <dl> <dt>
 
-[**\_ação da \_ política antifalsificação do \_ WINBIO \_**](winbio-anti-spoof-policy-action.md)
+[**AÇÃO DE POLÍTICA \_ WINBIO ANTI \_ \_ SPOOF \_**](winbio-anti-spoof-policy-action.md)
 </dt> <dt>
 
-[**\_origem da política de WINBIO \_**](winbio-policy-source.md)
+[**FONTE DE POLÍTICA DO WINBIO \_ \_**](winbio-policy-source.md)
 </dt> </dl>
 
  

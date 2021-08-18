@@ -1,11 +1,11 @@
 ---
-title: Método CreateObject IWMDRMProvider (wmdrmsdk. h)
+title: Método CreateObject IWMDRMProvider (Wmdrmsdk.h)
 description: O método CreateObject recupera um ponteiro para uma interface especificada, criando o objeto de implementação, se necessário.
 ms.assetid: d408f7f3-9e49-4747-ac8f-d39db31d1240
 keywords:
-- Método CreateObject Windows Media Format
-- Método CreateObject Windows Media Format, interface IWMDRMProvider
-- Formato de mídia do Windows da interface IWMDRMProvider, método CreateObject
+- Formato de mídia do windows do método CreateObject
+- Formato de mídia do windows do método CreateObject, interface IWMDRMProvider
+- Formato de mídia da interface IWMDRMProvider, método CreateObject
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0c0422138391b0d6f5e38fbc81fd5141bd3d8535
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f50341e33092b33b19ec3f41d968e0a1b7bc883ae959b200f6c7062e4c69996b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105747868"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118700772"
 ---
-# <a name="iwmdrmprovidercreateobject-method"></a>Método IWMDRMProvider:: CreateObject
+# <a name="iwmdrmprovidercreateobject-method"></a>Método IWMDRMProvider::CreateObject
 
-O método **CreateObject** recupera um ponteiro para uma interface especificada, criando o objeto de implementação, se necessário.
+O **método CreateObject** recupera um ponteiro para uma interface especificada, criando o objeto de implementação, se necessário.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -44,29 +44,29 @@ HRESULT CreateObject(
 
 <dl> <dt>
 
-*riid* \[ no\]
+*riid* \[ Em\]
 </dt> <dd>
 
-Identificador da interface a ser criada. Defina como um dos valores a seguir.
+Identificador da interface a ser criada. De definido como um dos valores a seguir.
 
--   IWMDRMLicenseManagement de IID \_
--   IWMDRMLicenseQuery de IID \_
--   IWMDRMNetReceiver de IID \_
--   IWMDRMNetTransmitter de IID \_
--   IWMDRMSecurity de IID \_
+-   IID \_ IWMDRMLicenseManagement
+-   IID \_ IWMDRMLicenseQuery
+-   IID \_ IWMDRMNetReceiver
+-   IID \_ IWMDRMNetTransmitter
+-   IID \_ IWMDRMSecurity
 
 </dd> <dt>
 
-*ppvObject* \[ fora\]
+*ppvObject* \[ out\]
 </dt> <dd>
 
 Endereço de um ponteiro que recebe o endereço da interface solicitada.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
+O método retorna um **HRESULT.** Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
 
 
 
@@ -88,8 +88,8 @@ Nenhum.
 
 | Requisito | Valor |
 |--------------------|-----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Wmdrmsdk. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>Wmdrmsdk. lib</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Wmdrmsdk.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>Wmdrmsdk.lib</dt> </dl> |
 
 
 
@@ -97,22 +97,22 @@ Nenhum.
 
 <dl> <dt>
 
-[**Interface IWMDRMProvider**](iwmdrmprovider.md)
+[**IWMDRMProvider Interface**](iwmdrmprovider.md)
 </dt> <dt>
 
-[**Interface IWMDRMLicenseManagement**](iwmdrmlicensemanagement.md)
+[**IWMDRMLicenseManagement Interface**](iwmdrmlicensemanagement.md)
 </dt> <dt>
 
-[**Interface IWMDRMLicenseQuery**](iwmdrmlicensequery.md)
+[**IWMDRMLicenseQuery Interface**](iwmdrmlicensequery.md)
 </dt> <dt>
 
-[**Interface IWMDRMNetReceiver**](iwmdrmnetreceiver.md)
+[**IWMDRMNetReceiver Interface**](iwmdrmnetreceiver.md)
 </dt> <dt>
 
-[**Interface IWMDRMNetTransmitter**](iwmdrmnettransmitter.md)
+[**IWMDRMNetTransmitter Interface**](iwmdrmnettransmitter.md)
 </dt> <dt>
 
-[**Interface IWMDRMSecurity**](iwmdrmsecurity.md)
+[**IWMDRMSecurity Interface**](iwmdrmsecurity.md)
 </dt> </dl>
 
  

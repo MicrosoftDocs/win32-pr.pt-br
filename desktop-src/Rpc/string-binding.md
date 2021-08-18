@@ -4,12 +4,12 @@ description: A associação de cadeia de caracteres é uma cadeia de caracteres 
 ms.assetid: 5e55ddd0-d71c-42ef-90cc-dd1f0b9ed305
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8b3f925c03c85be3c47ab174a85f31e72e40d828
-ms.sourcegitcommit: cb87082135319cbdc5df541e3071eebb83a58972
+ms.openlocfilehash: 10b2219aa4bb9ed77d2c59732a87a138f620e1910a4ca9f518c22c39a59a7dfa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111386975"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118924984"
 ---
 # <a name="string-binding"></a>Associação de cadeia de caracteres
 
@@ -41,7 +41,7 @@ Cadeia de caracteres que representa uma combinação válida de um protocolo RPC
 Endereço de rede do sistema para receber chamadas de procedimento remoto.
 
 > [!Note]  
-> As seguintes sequências de protocolo não têm suporte a partir do Windows XP:
+> As seguintes sequências de protocolo não têm suporte a partir Windows XP:
 
  
 
@@ -94,7 +94,7 @@ O formato e o conteúdo de um ponto de extremidade dependem da sequência de pro
 <span id="Option"></span><span id="option"></span><span id="OPTION"></span>*Opção*
 </dt> <dd>
 
-Opções específicas do protocolo. O campo de opção não é obrigatório. Cada opção é especificada por um par {name, value} que usa o valor da opção *de nome de* sintaxe = *.* As opções são definidas para cada sequência de protocolo, conforme mostrado na tabela Ponto de Extremidade/Opção a seguir.
+Opções específicas do protocolo. O campo de opção não é obrigatório. Cada opção é especificada por um par {name, value} que usa o valor da opção de *nome de* sintaxe = *.* As opções são definidas para cada sequência de protocolo, conforme mostrado na tabela Ponto de Extremidade/Opção a seguir.
 
 
 
@@ -192,11 +192,11 @@ Uma associação de cadeia de caracteres contém a representação de caractere 
 
 Além disso, uma associação de cadeia de caracteres não contém todas as informações de um alça de associação. Por exemplo, as informações de autenticação, se alguma, associadas a um alça de associação não são convertida na associação de cadeia de caracteres retornada chamando [**RpcBindingToStringBinding**](/windows/desktop/api/Rpcdce/nf-rpcdce-rpcbindingtostringbinding).
 
-Durante o desenvolvimento de um aplicativo distribuído, os servidores podem comunicar suas informações de associação aos clientes usando vinculações de cadeia de caracteres para estabelecer uma relação cliente-servidor sem usar o banco de dados endpoint-map ou o banco de dados name-service. Para estabelecer essa relação, use a função [**RpcBindingToStringBinding**](/windows/desktop/api/Rpcdce/nf-rpcdce-rpcbindingtostringbinding) para converter um ou mais alças de associação de um vetor de alça de associação em uma associação de cadeia de caracteres e forneça a associação de cadeia de caracteres ao cliente.
+Durante o desenvolvimento de um aplicativo distribuído, os servidores podem comunicar suas informações de associação com os clientes usando associações de cadeia de caracteres para estabelecer uma relação de cliente-servidor sem usar o banco de dados do mapa de ponto de extremidade ou o banco de dados de serviço de nome. Para estabelecer essa relação, use a função [**RpcBindingToStringBinding**](/windows/desktop/api/Rpcdce/nf-rpcdce-rpcbindingtostringbinding) para converter um ou mais identificadores de associação de um vetor de identificador de associação para uma associação de cadeia de caracteres e forneça a associação de cadeia de caracteres ao cliente.
 
 ## <a name="examples"></a>Exemplos
 
-A seguir estão exemplos de vinculações de cadeia de caracteres válidas. Nesses exemplos, *obj-uuid* é usado para conveniência para representar um UUID válido no formato de cadeia de caracteres. Em vez de mostrar o UUID 308FB580-1EB2-11CA-923B-08002B1075A7, os exemplos mostram *obj-uuid*.
+Veja a seguir exemplos de associações de cadeia de caracteres válidas. Nestes exemplos, *obj-UUID* é usado para conveniência para representar um UUID válido no formato de cadeia de caracteres. Em vez de mostrar o UUID 308FB580-1EB2-11CA-923B-08002B1075A7, os exemplos mostram *obj-UUID*.
 
 ``` syntax
 obj-uuid@ncadg_mq:mymqserver

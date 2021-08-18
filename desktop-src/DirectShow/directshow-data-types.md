@@ -1,19 +1,19 @@
 ---
-description: Tipos de dados do DirectShow
+description: DirectShow Tipos de dados
 ms.assetid: 33c79747-9187-47bb-acb1-c63b39e7cd81
-title: Tipos de dados do DirectShow
+title: DirectShow Tipos de dados
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9e28f111423264f867cdf1ad79a798d96272138c
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: c5b75a2f1f053f050d80d4b62b35aad2ad05b1938ad9a922db898d75234b93fa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103645726"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118952925"
 ---
-# <a name="directshow-data-types"></a>Tipos de dados do DirectShow
+# <a name="directshow-data-types"></a>DirectShow Tipos de dados
 
-O DirectShow fornece as seguintes definições de tipo.
+DirectShow fornece as definições de tipo a seguir.
 
 
 
@@ -36,7 +36,7 @@ O DirectShow fornece as seguintes definições de tipo.
 
 <dl> <dt>
 
-[Referência do DirectShow](directshow-reference.md)
+[DirectShow Referência](directshow-reference.md)
 </dt> </dl>
 
  

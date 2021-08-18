@@ -1,102 +1,102 @@
 ---
-description: Este tópico descreve dois conceitos relacionados, a taxa de proporção de imagem e a taxa de proporção de pixel.
+description: Este tópico descreve dois conceitos relacionados, taxa de proporção de imagem e taxa de proporção de pixel.
 ms.assetid: 384bdeaa-5360-42af-9f95-b791af2dcafc
 title: Taxa de proporção da imagem
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 74e81f1b8e26af753a5c8c1bc7ecb09d8a658582
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 71ae59cf213a9d44c9075f33be4bd422b81ced6dea270cf4fc9408990442529e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104164897"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118972939"
 ---
 # <a name="picture-aspect-ratio"></a>Taxa de proporção da imagem
 
-Este tópico descreve dois conceitos relacionados, a taxa de proporção de imagem e a taxa de proporção de pixel. Em seguida, ele descreve como esses conceitos são expressos em Microsoft Media Foundation usando tipos de mídia.
+Este tópico descreve dois conceitos relacionados, taxa de proporção de imagem e taxa de proporção de pixel. Em seguida, ele descreve como esses conceitos são expressos em Microsoft Media Foundation usando tipos de mídia.
 
 -   [Taxa de proporção da imagem](#picture-aspect-ratio)
-    -   [Formato Letterbox](#letterboxing)
-    -   [Panorâmica e verificação](#pan-and-scan)
+    -   [Letterboxing](#letterboxing)
+    -   [Pan-and-Scan](#pan-and-scan)
 -   [Taxa de proporção de pixel](#pixel-aspect-ratio)
 -   [Trabalhando com taxas de proporção](#working-with-aspect-ratios)
 -   [Exemplos de código](#code-examples)
-    -   [Localizando a área de exibição](#finding-the-display-area)
-    -   [Convertendo taxas de proporção de pixel](#converting-between-pixel-aspect-ratios)
-    -   [Calculando a área Letterbox](#calculating-the-letterbox-area)
+    -   [Localizar a área de exibição](#finding-the-display-area)
+    -   [Convertendo entre taxas de proporção de pixel](#converting-between-pixel-aspect-ratios)
+    -   [Calculando a área letterbox](#calculating-the-letterbox-area)
 -   [Tópicos relacionados](#related-topics)
 
 ## <a name="picture-aspect-ratio"></a>Taxa de proporção da imagem
 
-A *taxa de proporção da imagem* define a forma da imagem de vídeo exibida. A taxa de proporção da imagem é X:Yda, em que X:Y é a proporção da largura da imagem até a altura da imagem. A maioria dos padrões de vídeo usa a taxa de proporção de imagem 4:3 ou 16:9. A taxa de proporção de 16:9 é geralmente chamada de *widescreen*. O filme cinema geralmente usa uma taxa de proporção de 1:85:1 ou 1:66:1. A taxa de proporção da imagem também é chamada de *exibição de taxa de proporção* (dar).
+*A taxa de proporção* da imagem define a forma da imagem de vídeo exibida. A taxa de proporção da imagem é notada X:Y, em que X:Y é a proporção da largura da imagem para a altura da imagem. A maioria dos padrões de vídeo usa a taxa de proporção de imagem 4:3 ou 16:9. A taxa de proporção 16:9 normalmente é chamada *de widescreen*. O filme normalmente usa uma taxa de proporção de 1:85:1 ou 1:66:1. A taxa de proporção da imagem também é chamada de DAR *(taxa de proporção de exibição).*
 
 ![diagrama mostrando as taxas de proporção 4:3 e 16:9](images/aspect-ratio01.png)
 
-Às vezes, a imagem de vídeo não tem a mesma forma que a área de exibição. Por exemplo, um vídeo 4:3 pode ser mostrado em uma televisão widescreen (16 × 9). No vídeo do computador, o vídeo pode ser mostrado dentro de uma janela que tem um tamanho arbitrário. Nesse caso, há três maneiras pelas quais a imagem pode ser ajustada na área de exibição:
+Às vezes, a imagem de vídeo não tem a mesma forma que a área de exibição. Por exemplo, um vídeo 4:3 pode ser mostrado em uma tv de tela larga (16×9). No vídeo do computador, o vídeo pode ser mostrado dentro de uma janela que tem um tamanho arbitrário. Nesse caso, há três maneiras pelas quais a imagem pode ser feita para caber na área de exibição:
 
--   Alongar a imagem ao longo de um eixo para se ajustar à área de exibição.
--   Dimensione a imagem para ajustá-la à área de exibição, mantendo a taxa de proporção da imagem original.
--   Cortar a imagem.
+-   Alonge a imagem ao longo de um eixo para se ajustar à área de exibição.
+-   Dimensione a imagem para se ajustar à área de exibição, mantendo a taxa de proporção da imagem original.
+-   Corte a imagem.
 
-Esticar a imagem para se ajustar à área de exibição está quase sempre errado, pois não preserva a taxa de proporção da imagem correta.
+Alongar a imagem para se ajustar à área de exibição quase sempre está errado, porque ela não preserva a taxa de proporção de imagem correta.
 
-### <a name="letterboxing"></a>Formato Letterbox
+### <a name="letterboxing"></a>Letterboxing
 
-O processo de dimensionamento de uma imagem widescreen para se ajustar a uma exibição de 4:3 é chamado de *formato Letterbox*, mostrado no próximo diagrama. As áreas rectanglular resultantes na parte superior e inferior da imagem normalmente são preenchidas com preto, embora outras cores possam ser usadas.
+O processo de dimensionamento de uma imagem widescreen para se ajustar a uma exibição 4:3 é chamado *letterboxing*, mostrado no diagrama a seguir. As áreas retanglulares resultantes na parte superior e inferior da imagem normalmente são preenchidas com preto, embora outras cores possam ser usadas.
 
-![diagrama mostrando a maneira correta de Letterbox](images/aspect-ratio02.png)
+![diagrama mostrando a maneira correta de fazer a caixa de texto](images/aspect-ratio02.png)
 
-O caso inverso, dimensionando uma imagem 4:3 para se ajustar a uma tela widescreen, às vezes é chamado de *pillarboxing*. No entanto, o termo *Letterbox* também é usado em um sentido geral, para significar o dimensionamento de uma imagem de vídeo para se ajustar a qualquer área de exibição específica.
+O caso inverso, dimensionando uma imagem 4:3 para se ajustar a uma tela widescreen, às vezes é chamado *de pillarboxing*. No entanto, o *termo letterbox* também é usado em um sentido geral, para significar o dimensionamento de uma imagem de vídeo para se ajustar a qualquer área de exibição determinada.
 
 ![diagrama mostrando pillarboxing](images/aspect-ratio03.png)
 
-### <a name="pan-and-scan"></a>Panorâmica e verificação
+### <a name="pan-and-scan"></a>Pan-and-Scan
 
-A panorâmica e a verificação é uma técnica na qual uma imagem em tela larga é cortada em uma área retangular de 4 × 3, para exibição em um dispositivo de vídeo 4:3. A imagem resultante preenche toda a tela, sem a necessidade de áreas Letterbox pretas, mas partes da imagem original são cortadas fora da imagem. A área cortada pode passar de um quadro para um quadro, como a área de deslocamentos de juros. O termo "panorâmica" em *panorâmica e digitalização* refere-se ao efeito de panorâmica que é causado pela movimentação da área de panorâmica e exame.
+O painel e a verificação são uma técnica na qual uma imagem de tela larga é cortada para uma área retangular 4×3, para exibição em um dispositivo de exibição 4:3. A imagem resultante preenche toda a exibição, sem exigir áreas de caixa de texto pretas, mas partes da imagem original são cortadas da imagem. A área cortada pode mudar de quadro para quadro, conforme a área de interesse muda. O termo "panorâmico" em *pan-and-scan refere-se* ao efeito de panorâmico causado pela movimentação da área de panorâmico e de verificação.
 
-![diagrama mostrando a panorâmica e a verificação](images/aspect-ratio04.png)
+![diagrama mostrando a pan-and-scan](images/aspect-ratio04.png)
 
 ## <a name="pixel-aspect-ratio"></a>Taxa de proporção de pixel
 
-*Taxa de proporção de pixel* (par) mede a forma de um pixel.
+*A PAR (taxa de* proporção de pixel) mede a forma de um pixel.
 
-Quando uma imagem digital é capturada, a imagem é amostrada vertical e horizontalmente, resultando em uma matriz retangular de amostras quantificadas, chamadas de *pixels* ou *pixels*. A forma da grade de amostragem determina a forma dos pixels na imagem digitalizada.
+Quando uma imagem digital é capturada, a imagem é amostrada vertical e horizontalmente, resultando em uma matriz retangular de amostras quantizadas, chamadas *pixels* ou *pels.* A forma da grade de amostragem determina a forma dos pixels na imagem digitalizada.
 
-Aqui está um exemplo que usa números pequenos para manter a matemática simples. Suponha que a imagem original seja quadrada (ou seja, a taxa de proporção da imagem é 1:1); e suponha que a grade de amostragem contenha 12 elementos, organizados em uma grade 4 × 3. A forma de cada pixel resultante será mais alta do que a largura. Especificamente, a forma de cada pixel será 3 × 4. Os pixels que não são quadrados são chamados *de pixels não quadrados*.
+Aqui está um exemplo que usa números pequenos para manter a matemática simples. Suponha que a imagem original seja quadrada (ou seja, a taxa de proporção da imagem é 1:1); e suponha que a grade de amostragem contenha 12 elementos, organizados em uma grade 4×3. A forma de cada pixel resultante será mais alta do que larga. Especificamente, a forma de cada pixel será 3×4. Pixels que não são quadrados são chamados *de pixels não quadrados.*
 
 ![diagrama mostrando uma grade de amostragem não quadrada](images/aspect-ratio05.png)
 
-A taxa de proporção de pixel também se aplica ao dispositivo de vídeo. A forma física do dispositivo de vídeo e a resolução de pixels físicos (horizontalmente) determinam o PAR do dispositivo de vídeo. Os monitores de computador geralmente usam pixels quadrados. Se a imagem PAR e o PAR de exibição não coincidirem, a imagem deverá ser dimensionada em uma dimensão, vertical ou horizontalmente, para ser exibida corretamente. A fórmula a seguir relaciona o PAR, a taxa de proporção de exibição (DAR) e o tamanho da imagem em pixels:
+A taxa de proporção de pixel também se aplica ao dispositivo de exibição. A forma física do dispositivo de exibição e a resolução de pixel físico (entre e para baixo) determinam o PAR do dispositivo de exibição. Os monitores de computador geralmente usam pixels quadrados. Se a imagem PAR e o PAR de exibição não corresponderem, a imagem deverá ser dimensionada em uma dimensão, vertical ou horizontalmente, para ser exibida corretamente. A fórmula a seguir relaciona PAR, DAR (taxa de proporção de exibição) e tamanho da imagem em pixels:
 
-*Dar* = (*largura da imagem em pixels*,  /  *altura da imagem em pixels*) × *par*
+*DAR* = ( largura *da imagem em pixels*  /  *altura da imagem em pixels*) × *PAR*
 
-Observe que a largura da imagem e a altura da imagem nessa fórmula referem-se à imagem na memória, não à imagem exibida.
+Observe que a largura da imagem e a altura da imagem nesta fórmula se referem à imagem na memória, não à imagem exibida.
 
-Aqui está um exemplo do mundo real: o vídeo analógico da NTSC-M contém 480 linhas de digitalização na área de imagem ativa. ITU-R rec. BT. 601 especifica uma taxa de amostragem horizontal de 704 pixels visíveis por linha, produzindo uma imagem digital com 704 x 480 pixels. A taxa de proporção de imagem pretendida é 4:3, produzindo um PAR de 10:11.
+Aqui está um exemplo do mundo real: o vídeo análogo NTSC-M contém 480 linhas de verificação na área de imagem ativa. ITU-R Rec. BT.601 especifica uma taxa de amostragem horizontal de 704 pixels visíveis por linha, ingando uma imagem digital com 704 x 480 pixels. A taxa de proporção da imagem pretendido é de 4:3, ingando um PAR de 10:11.
 
 -   DAR: 4:3
 -   Largura em pixels: 704
 -   Altura em pixels: 480
--   PAR: 10/11
+-   PAR: 11/10
 
-4/3 = (704/420) x (10/11)
+4/3 = (704/420) x (11/10)
 
-Para exibir essa imagem corretamente em um dispositivo de vídeo com pixels quadrados, você deve dimensionar a largura em 10/11 ou a altura em 11/10.
+Para exibir essa imagem corretamente em um dispositivo de exibição com pixels quadrados, você deve dimensionar a largura em 10/11 ou a altura em 11/10.
 
 ## <a name="working-with-aspect-ratios"></a>Trabalhando com taxas de proporção
 
-A forma correta de um quadro de vídeo é definida pela *taxa de proporção de pixel* (par) e pela *área de exibição*.
+A forma correta de um quadro de vídeo é definida pela PAR (taxa de *proporção de pixel)* e pela área *de exibição*.
 
--   O PAR define a forma dos pixels em uma imagem. Pixels quadrados têm uma taxa de proporção de 1:1. Qualquer outra taxa de proporção descreve um pixel não quadrado. Por exemplo, a televisão NTSC usa um PAR de 10:11. Supondo que você esteja apresentando o vídeo em um monitor de computador, a exibição terá pixels quadrados (1:1 PAR). O PAR do conteúdo de origem é fornecido no atributo [**de \_ \_ taxa de \_ proporção \_ MF MT pixel**](mf-mt-pixel-aspect-ratio-attribute.md) no tipo de mídia.
+-   O PAR define a forma dos pixels em uma imagem. Pixels quadrados têm uma taxa de proporção de 1:1. Qualquer outra taxa de proporção descreve um pixel não quadrado. Por exemplo, a tv NTSC usa um PAR 10:11. Supondo que você está apresentando o vídeo em um monitor de computador, a exibição terá pixels quadrados (1:1 PAR). O PAR do conteúdo de origem é dado no atributo [**\_ MF MT \_ PIXEL ASPECT \_ \_ RATIO**](mf-mt-pixel-aspect-ratio-attribute.md) no tipo de mídia.
 -   A área de exibição é a região da imagem de vídeo que deve ser mostrada. Há duas áreas de exibição relevantes que podem ser especificadas no tipo de mídia:
-    -   Abertura de panorâmica e digitalização. A abertura de panorâmica e digitalização é uma região de 4 × 3 de vídeo que deve ser exibida no modo de panorâmica/digitalização. Ele é usado para mostrar o conteúdo de tela larga em uma exibição de 4 × 3 sem formato letterbox. A abertura de Pan-and-scan é fornecida no atributo [**MF \_ MT Pan de \_ \_ \_ abertura da varredura**](mf-mt-pan-scan-aperture-attribute.md) e deve ser usada somente quando o atributo de verificação de Pan do [**MF \_ MT \_ \_ \_ habilitado**](mf-mt-pan-scan-enabled-attribute.md) for **true**.
-    -   Exibir abertura. Essa abertura é definida em alguns padrões de vídeo. Qualquer coisa fora da abertura de exibição é a região de sobrevarredura e não deve ser exibida. Por exemplo, a televisão NTSC tem 720 × 480 pixels com uma abertura de exibição de 704 × 480. A abertura de exibição é fornecida no atributo de [**\_ \_ \_ \_ abertura de exibição mínima de MF MT**](mf-mt-minimum-display-aperture-attribute.md) . Se estiver presente, ele deverá ser usado quando o modo Pan-and-scan for **false**.
+    -   Abertura pan-and-scan. A abertura de pan-and-scan é uma região de 4×3 do vídeo que deve ser exibida no modo de verificação/pan. Ele é usado para mostrar conteúdo de tela larga em uma exibição 4×3 sem caixa de texto. A abertura de pan e scan é dada no atributo [**\_ \_ \_ \_ APERTURE MF MT PAN SCAN e**](mf-mt-pan-scan-aperture-attribute.md) deve ser usada somente quando o atributo [**MF \_ MT PAN SCAN \_ \_ \_ ENABLED**](mf-mt-pan-scan-enabled-attribute.md) for **TRUE.**
+    -   Exibir a abertura. Essa abertura é definida em alguns padrões de vídeo. Qualquer coisa fora da abertura de exibição é a região de varredura em excesso e não deve ser exibida. Por exemplo, a tv NTSC tem 720×480 pixels com uma abertura de exibição de 704×480. A abertura de exibição é dada no atributo [**\_ MF MT \_ MINIMUM DISPLAY \_ \_ APERTURE.**](mf-mt-minimum-display-aperture-attribute.md) Se estiver presente, ele deverá ser usado quando o modo de pan-and-scan for **FALSE.**
 
-Se o modo Pan-and-can for **false** e nenhuma abertura de exibição for definida, o quadro de vídeo inteiro deverá ser exibido. Na verdade, esse é o caso para a maioria dos conteúdos de vídeo além do vídeo de televisão e DVD. A taxa de proporção de toda a imagem é calculada como (altura da área de exibição da *largura da área de exibição*  /  ) × *par*.
+Se o modo pan-and-can for **FALSE** e nenhuma abertura de exibição for definida, todo o quadro de vídeo deverá ser exibido. Na verdade, esse é o caso da maioria dos conteúdos de vídeo que não seja a tv e o vídeo de DVD. A taxa de proporção de toda a imagem é calculada como *(* altura da área de exibição da largura da área de  /  exibição ) × *PAR*.
 
 ## <a name="code-examples"></a>Exemplos de código
 
-### <a name="finding-the-display-area"></a>Localizando a área de exibição
+### <a name="finding-the-display-area"></a>Localizar a área de exibição
 
 O código a seguir mostra como obter a área de exibição do tipo de mídia.
 
@@ -184,9 +184,9 @@ MFVideoArea MakeArea(float x, float y, DWORD width, DWORD height)
 
 
 
-### <a name="converting-between-pixel-aspect-ratios"></a>Convertendo taxas de proporção de pixel
+### <a name="converting-between-pixel-aspect-ratios"></a>Convertendo entre taxas de proporção de pixel
 
-O código a seguir mostra como converter um retângulo de uma taxa de proporção de pixel (PAR) para outro, preservando a taxa de proporção da imagem.
+O código a seguir mostra como converter um retângulo de PAR (taxa de proporção) de um pixel para outro, preservando a taxa de proporção da imagem.
 
 
 ```C++
@@ -246,9 +246,9 @@ RECT CorrectAspectRatio(const RECT& src, const MFRatio& srcPAR, const MFRatio& d
 
 
 
-### <a name="calculating-the-letterbox-area"></a>Calculando a área Letterbox
+### <a name="calculating-the-letterbox-area"></a>Calculando a área letterbox
 
-O código a seguir calcula a área Letterbox, dado um retângulo de origem e de destino. Supõe-se que os dois retângulos têm o mesmo PAR.
+O código a seguir calcula a área da caixa de texto, considerando um retângulo de origem e de destino. Supõe-se que ambos os retângulos tenham o mesmo PAR.
 
 
 ```C++
@@ -300,16 +300,16 @@ RECT LetterBoxRect(const RECT& rcSrc, const RECT& rcDst)
 [Tipos de mídia de vídeo](video-media-types.md)
 </dt> <dt>
 
-[**\_abertura de \_ \_ exibição mínima \_ de MF MT**](mf-mt-minimum-display-aperture-attribute.md)
+[**MF \_ MT \_ MINIMUM \_ DISPLAY \_ APERTURE**](mf-mt-minimum-display-aperture-attribute.md)
 </dt> <dt>
 
-[**\_abertura de \_ digitalização de Pan MT \_ MF \_**](mf-mt-pan-scan-aperture-attribute.md)
+[**ABERTURA DO \_ MF MT \_ PAN \_ SCAN \_**](mf-mt-pan-scan-aperture-attribute.md)
 </dt> <dt>
 
-[**\_exame de Pan MT do MF \_ \_ \_ habilitado**](mf-mt-pan-scan-enabled-attribute.md)
+[**MF \_ MT \_ PAN \_ SCAN \_ ENABLED**](mf-mt-pan-scan-enabled-attribute.md)
 </dt> <dt>
 
-[**taxa de proporção de pixel do MF \_ MT \_ \_ \_**](mf-mt-pixel-aspect-ratio-attribute.md)
+[**TAXA DE \_ PROPORÇÃO DO PIXEL MT \_ \_ \_ MF**](mf-mt-pixel-aspect-ratio-attribute.md)
 </dt> </dl>
 
  

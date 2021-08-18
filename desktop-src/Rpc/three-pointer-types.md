@@ -4,12 +4,12 @@ description: O MIDL dá suporte a três tipos de ponteiros para acomodar uma amp
 ms.assetid: 6684c252-6fbe-49ca-9967-6d4baf5dc298
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: efdcc9548568c8fca24d8abb40bf0eaa8b6e7da3
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 9627c71b07c86ab2deb7e28bddcf6d30b1747cf7d44874620f4053383a5a948a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103917347"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118923455"
 ---
 # <a name="three-pointer-types"></a>Três tipos de ponteiro
 
@@ -35,6 +35,6 @@ No modo extensões da Microsoft, os atributos de ponteiro podem ser determinados
 
 O **\[** atributo de interface [**\_ padrão do ponteiro**](/windows/desktop/Midl/pointer-default) **\]** especifica os atributos de ponteiro padrão a serem aplicados a um Declarador de ponteiro em um tipo, parâmetro ou declaração de tipo de retorno quando essa declaração não tem um atributo de ponteiro explícito aplicado a ele. O atributo de interface **\[ \_ padrão \] do ponteiro** não se aplica a um ponteiro de nível superior não atributo de um parâmetro, que é considerado como **\[ ref \]**.
 
- 
+ 
 
- 
+ 
